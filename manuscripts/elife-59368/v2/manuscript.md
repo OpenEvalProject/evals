@@ -24,11 +24,27 @@ Many stem cells divide asymmetrically to generate daughter cells with distinct f
 
 Drosophila male germline stem cells (GSCs) divide asymmetrically by orienting their spindle perpendicular toward the hub cells, the major niche component (Yamashita et al., 2003; Figure 1A). During male GSC divisions, the mother centrosome is always located near the hub-GSC junction, whereas the daughter centrosome migrates to the other side of the cell, leading to spindle orientation perpendicular to the hub and consistent inheritance of the mother centrosome by GSCs (Figure 1A; Yamashita et al., 2007). Previously, we reported that Klp10A, a microtubule-depolymerizing kinesin of kinesin-13 family, is enriched on GSC centrosomes, but not on centrosomes of differentiating germ cells (i.e. gonialblasts (GBs) and spermatogonia (SGs)) (Chen et al., 2016). Klp10A is the first protein reported to exhibit stem-cell-specific centrosome localization. RNAi-mediated depletion of klp10A leads to abnormal elongation of the mother centrosomes in GSCs. The abnormally elongated mother centrosome in klp10A-depleted GSCs result in mitotic spindles with an asymmetric morphology (large vs. small half spindles) and the generation of a large GSC and a small GB that often dies, likely due to an insufficient cell size (Chen et al., 2016). These results suggested that stem cell centrosomes are indeed under unique regulation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig1-v2.jpg)
+
+**Figure 1.:** (A) Asymmetric centrosome inheritance in Drosophila male GSCs. (B) Scheme of Klp10A pulldown and mass spectrometry. The Klp10A pull down was conducted using either upd-induced tumor (GSC-enriched) or dpp-induced tumor (SG-enriched) extract, followed by mass spectrometry analysis. (C) An apical tip of the Drosophila testis stained for Alms1a (red), γ-Tub (centrosome/pericentriolar matrix, blue) and Vasa (germ cells, green). Asterisk indicates the hub. GSCs are outlined with yellow dotted lines. Arrowheads (yellow) indicate examples of GSC centrosomes. Arrows (cyan) indicate examples of SG centrosomes. Bar: 5 μm. (D) Co-immunoprecipitation of Klp10A and Alms1a. Control GFP and GFP-Klp10A was immunoprecipitated from GSC-enriched extracts (nos-gal4>UAS-upd) using an anti-GFP antibody and blotted with anti-Alms1a and anti-GFP. (E) Schematic of full-length Alms1a, Klp10A and constructs used for GST-pulldown. (F) Direct interaction of Klp10A and Alms1a C-terminal fragment. GST control and recombinant GST-Alms1a-C were immobilized on glutathione agarose beads, incubated with His-Klp10A E. coli lysate, and blotted with anti-GST and anti-His antibody. (G–H) Bimolecular fluorescence complementation (BiFC) analysis of Alms1a-Klp10A interaction. (G) An example of the apical tip in nos-gal4>UAS-alms1a-VNm9 (control) testis, showing no signal. (H) An example of the apical tip in nos-gal4>UAS-alms1a-VNm9, UAS-VC155-klp10A testis, showing signal specifically at GSC centrosomes. Flies are raised at 18°C to minimize ectopic protein expression. Green: BiFC (Venus YFP fluorescence). Red: γ-Tub. Blue: Vasa. Arrowheads (yellow) indicate examples of GSC centrosomes positive for BiFC. Arrows (cyan) indicate examples of SG centrosomes negative for BiFC. Bar: 5 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Examples of Alms1a staining in control germline stem cells (GSCs) (A), control spermatids (B) and nos-gal4>UAS-alms1RNAi GSCs (C). Green: Vasa. Red: Asl. White: Alms1a. Blue: DAPI. Asterisk indicates the hub. Arrowheads (yellow) indicate GSC centrosomes. Arrows (cyan) indicate SG centrosomes. Bar: 10 μm. (D–F) Examples of Alms1b staining in control (D) GSCs, control (E) spermatids and nos-gal4>UAS-alms1RNAi (F) spermatids. Green: Vasa. Red: Asl. White: Alms1a. Blue: DAPI. Bar: 5 μm. (G–H) Western blot analyses of Alms1a (G) or Alms1b (H) protein in the lysate of either control or tub-gal4>UAS-alms1RNAi testes. α-Tubulin expression was used as a loading control.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Two recombinant plasmids (pNKT25-alms1a and pUT18C-klp10A) are co-transformed into competent cells. Transformants are plated on MacConkey selective plate. Positive interaction results in red colonies on the selective plates, while colonies will be colorless if no interaction occurs. Co-transformation of pKT25-zip and pUT18C-zip with competent cells was used as a positive control. Co-transformation of pKNT25 or pUT18C with one of the recombinant plasmids served as negative controls.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** p-Value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. GSC/SG numbers for BiFC signals scored in centrosomes n = 12 for each panel.
+
 To obtain further insights into the mechanism and regulation of GSC centrosome asymmetry, we aimed to identify additional proteins that exhibit GSC-specific centrosome localization by taking advantage of Klp10A’s enrichment on GSC centrosomes. Here, we identify Alms1a, a Drosophila homolog of the causative gene for the human ciliopathy Alstrom syndrome, as a GSC-specific Klp10A-interacting protein. Human ALMS1 is reported to localize to the centrosome/basal body in many cells and function in formation/maintenance of the cilia (Andersen et al., 2003; Hearn et al., 2005). However, the underlying molecular mechanisms of its function remain poorly understood. We found that Drosophila Alms1a exhibits a unique asymmetric localization between mother and daughter centrosomes in GSCs, in which the GSC mother centrosomes have a higher amount of Alms1a than the GSC daughter centrosome. We found that alms1a depletion leads to a failure in centrosome replication, due to a failure to duplicate centrioles (the core of the centrosome), specifically in asymmetrically dividing GSCs. In contrast, alms1a is not required for centriole duplication in symmetrically dividing differentiating cells and GSCs induced to divide symmetrically. We show that Alms1a physically interacts with Sak, a key kinase that promotes centriole duplication, preferentially in GSCs. Taken together, our study begins to reveal the unique molecular composition and regulation of stem cell centrosome, paving the way to understand how stem cell centrosome asymmetry may contribute to asymmetric stem cell divisions.
 
 ## Results
 
-## Identification of Alms1a as a GSC-specific Klp10A interactor
+### Identification of Alms1a as a GSC-specific Klp10A interactor
 
 We previously reported that Klp10A, a microtubule-depolymerizing kinesin of kinesin-13 family, is enriched on GSC centrosomes, but not the centrosomes of differentiating germ cells (i.e. GBs and SGs) (Chen et al., 2016). We reasoned that identifying Klp10A-interacting proteins may uncover proteins that regulate the asymmetric behavior of the mother and/or daughter centrosomes in GSCs. As Klp10A localizes to the central spindle of all germ cells in addition to its GSC-specific centrosome localization (Chen et al., 2016; Figure 1B), we compared the results of anti-Klp10A immunopurification-mass spectrometry analysis using GSC-enriched extract vs. SG-enriched extract. We immunopurified Klp10A from testis extract that is enriched for either (1) GSCs due to the overexpression of the self-renewal factor, Upd (Kiger et al., 2001; Tulina and Matunis, 2001) or (2) SGs due to the overexpression of Dpp, a bone morphogenic protein (BMP) (Bunt and Hime, 2004; Kawase et al., 2004; Schulz et al., 2004). We reasoned that GSC centrosome-specific proteins would be enriched in the Klp10A-pulldown from GSC-enriched extracts compared to the Klp10A-pulldown from SG-enriched extracts.
 
@@ -38,9 +54,21 @@ Alms1a and Klp10A co-immunoprecipitated in GSC-enriched extract but not in SG-en
 
 We further assessed the interaction between Alms1a and Klp10A using the bimolecular fluorescence complementation (BiFC) method (Hu et al., 2002), which reveals protein-protein interactions in vivo via reconstitution of a functional Venus YFP from two non-fluorescent fragments (VNm9 and VC155) (Saka et al., 2007). Upon co-expression of alms1a-VNm9 and VC155-klp10A in the germline (nos-gal4>UAS-alms1a-VNm9, UAS-VC155-klp10A), we observed a YFP signal at centrosomes in GSCs, but not in the GB and SGs (Figure 1G,H and Figure 1—figure supplement 3). The lack of BiFC signals in the GB and SG serves as an internal negative control and confirms that the interaction between Alms1a and Klp10A is GSC-specific. These results imply that, although Alms1a localizes to the centrosomes of both GSCs and SGs, Alms1a might have a specific function in GSCs via its interaction with Klp10A.
 
-## Alms1a localizes asymmetrically between mother versus daughter centrosomes in male GSCs
+### Alms1a localizes asymmetrically between mother versus daughter centrosomes in male GSCs
 
 To begin to understand the function of Alms1a, we first examined its centrosomal localization in GSCs and SGs in more detail. Each centrosome consists of two centrioles, the mother centriole (‘m’ in Figure 2A) and daughter centriole (‘d’ in Figure 2A). Centrosome duplication generates a mother centrosome that contains the original mother centriole (‘M’ in Figure 2A), and a daughter centrosome that contains the original daughter centriole, now a new mother (‘D’ in Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of centrosome structure. Each cell contains two centrosomes, mother centrosome (M, pink) and daughter centrosome (D, blue). Each centrosome consists of two centrioles: mother centriole (m, dark purple) and daughter centriole (d, light purple). (B–D) A HyVolution image of wild-type GSC centrosomes (B). (C–D) Magnified images of a mother centrosome (C) and a daughter centrosome (D) from panel (B). Green: Centrobin (Cnb). Red: Alms1a. Blue: Asl. Asterisk indicates the hub. Arrowheads indicate GSC centrosomes. Arrow indicates mother centrosome. Bar: 5 μm. (E–G) A HyVolution image of wild type SG centrosomes (E). (F–G) Magnified images of SG centrosomes from panel (E). (H–J) A HyVolution image of klp10ARNAi GSC centrosomes (H). (I–J) Magnified images of a mother centrosome (I) and a daughter centrosome (J) from panel (H). (K) Ratio of integrated pixel density of Alms1a signal between mother and daughter centrosomes (M/D) in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. 14 cells were scored for each data point. (L–O) Lightning images of a GSC mother centrosome (L), a daughter centrosome (M), a GB/SG centrosome (N) and a SC centrosome (O). Green: Cp110-GFP. Red: Alms1a. Blue: Ana1. Bar: 0.5 μm. Cartoon shows the interpretation of protein localization to the mother and daughter centrioles. (P–R) Stimulated emission depletion (STED) super-resolution images of wild-type GSC mother centrosome (O), a GSC daughter centrosome (P), and a SG centrosome (Q). Red: Alms1a. Blue: Asl. Green: Cnb. Bar: 0.5 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Localization of Alms1a remains intact in klp10ARNAi SGs. Green: Vasa. Red: Asl. White: Alms1a. Blue: DAPI. Asterisk indicates the hub. SG is indicated by a dotted line. Arrows indicate SG centrosomes. Bar: 5 μm. (B) Ratio of Alms1a signal (integrated pixel density) between mother and daughter centrosomes (M/D) in the indicated genotypes. p-Value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. Twelve cells were scored for Alms1a signals for each data point. (C–D) Localization of Klp10A in control (C) and alms1RNAi (D) GSCs. Green: Vasa. Red: Klp10A. White: γ-Tub. Blue: DAPI. Note that alms1RNAi results in centrosome loss, thus Klp10A localization was assessed on the remaining mother centrosome. Asterisk indicates the hub. Bar: 5 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Red: Cep135. Blue: Asl. Bar: 0.5 μm. n = GSC centrosomes numbers scored for each panel.
 
 We found that, although Alms1a localized to centrosomes in all cell types, it was more enriched on the mother centrosome than the daughter centrosome in GSCs (Figure 2B–D,K). In contrast, the two centrosomes in SGs had an equivalent amount of Alms1a (Figure 2E–G,K). Knockdown of klp10A in the male germline (nos-gal4>UAS-klp10ATRiP.HMS00920, UAS-klp10ARNAi hereafter [Chen et al., 2016]) abolished the asymmetric enrichment of Alms1a to the mother centrosome in GSCs (Figure 2H–K), suggesting that Klp10A is necessary to create the asymmetrical distribution of Alms1a to the mother vs. daughter centrosomes in GSCs. klp10ARNAi did not affect Alms1a localization to the SG centrosomes (Figure 2—figure supplement 1A). Germline knockdown of alms1a (nos-gal4>alms1TRiP.HMJ30289, referred as to alms1RNAi hereafter) did not compromise Klp10A localization in GSCs (Figure 2—figure supplement 1B,C).
 
@@ -50,15 +78,31 @@ In addition to this localization at the proximal end of the mother centriole, Al
 
 It should be noted that, although Klp10A was reported to be more concentrated at the distal end of the centriole in Drosophila spermatocytes (Delgehyr et al., 2012; Riparbelli et al., 2018), Klp10A exhibits pan centrosomal (broadly pericentrosomal) localization in GSCs (Chen et al., 2016). We suggest that Klp10A-Alms1a interaction likely occurs at the proximal end of the centrioles, where Alms1a is most concentrated, although other possibilities as to the site of their functional interaction cannot be excluded.
 
-## Depletion of alms1a leads to centrosome loss due to defective centriole duplication
+### Depletion of alms1a leads to centrosome loss due to defective centriole duplication
 
 To understand the function of alms1a, we examined the phenotypes arising from depletion of alms1a. Depletion of alms1a was confirmed using a specific antibody against Alms1a (Figure 1—figure supplement 1A–C and G). UAS-alms1RNAi is expected to knockdown both alms1a and alms1b, due to the high degree of their sequence similarity: However, because alms1b is not visibly expressed in GSCs/SGs (Figure 1—figure supplement 1D), the phenotypes caused by alms1RNAi in GSCs are likely due to the loss of alms1a (see Materials and methods). Expression of the full-length Alms1a (nos-gal4>alms1a-GFP, made to be insensitive to RNAi, see Materials and methods) rescued the centrosome loss phenotype of alms1RNAi phenotype partially, suggesting that the phenotype is caused, at least in part, by the loss of alms1a (Figure 3—figure supplement 1). The partial rescue may be due to an insufficient level of transgene expression, as nos-gal4 often causes variable expression levels among cells. Alternatively, GFP-tagging of Alms1a in the rescue transgene may partially compromise its functionality, although GFP-tagged Alms1a exhibits identical localization pattern as endogenous Alms1a detected by antibody staining. Also, the possibility of off-target effect of RNAi construct cannot be entirely excluded, although it is unlikely, given that the target sequence of alms1RNAi does not have any other similar sequences within the Drosophila genome.
 
 Knockdown of alms1a (nos-gal4>UAS-alms1RNAi, whereby RNAi is induced starting from embryogenesis) resulted in the complete loss of centrosomes from all germ cells, except for the mother centrosomes in GSCs, suggesting that alms1a is required for generating new centrosomes/centrioles (Figure 3A,B). Wild-type GSCs normally contain mother and daughter centrosomes, each of which contains both mother and daughter centrioles, throughout the cell cycle, due to early duplication of the centrosome right after the previous mitosis (Figure 3C). In contrast, many alms1RNAi GSCs contained only one centrosome (i.e. mother), visualized by Asl as well as γ-Tubulin (Figure 3D). Interestingly, the remaining centrosome in alms1RNAi GSCs gradually elongated (Figure 3D and Figure 3—figure supplement 2), similar to our earlier observation with klp10ARNAi (Chen et al., 2016): in klp10ARNAi GSCs, the mother centrosome gradually elongated, whereas the daughter centrosome was slightly smaller than normal, although it was not lost as is observed in alms1RNAi GSCs. These data suggest that klp10A and alms1a share a similar function, possibly balancing the growth of mother vs. daughter centrosomes (see Discussion). We conclude that alms1a is required for centrosome duplication in GSCs.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Examples of apical tips in control (A) and nos-gal4>UAS-alms1RNAi (B) testes (in this genotype, RNAi is induced since embryogenesis). Green: Vasa. Red: Asl. Blue: DAPI. Asterisk indicates the hub. Arrowheads indicate remaining centrosomes in alms1RNAi GSCs. Bar: 10 μm. (C–D) Examples of centrosomes in control (C) and nos-gal4>UAS-alms1RNAi (D) GSCs. Green: GFP-α-tubulin. Red: Asl. White: γ-Tub. Blue: DAPI. GSCs are outlined with yellow dotted lines. Arrowheads indicate GSC centrosomes. Bar: 5 μm. (E) Quantification of centrosome number in temporarily controlled alms1RNAi GSCs. (0–4 days after RNAi induction, nos-gal4ΔVP16, tub-gal80ts>UAS-alms1RNAi). Centrosome number was quantified by Asl and γ-Tub double staining. Error bars indicate the standard deviation. n = GSC numbers scored for each data point. (F, G) Examples of GSCs in control GSC (F) and alms1RNAi GSC (G, 2 days after RNAi induction, nos-gal4ΔVP16, tub-gal80ts>UAS-alms1RNAi) stained for daughter centriole protein Cnb. Green: Vasa. Red: Cnb. White: γ-Tub. Blue: DAPI. Arrowheads indicate GSC centrosomes. Arrow indicates mother centrosome in alms1RNAi GSC lacking Cnb staining (2 days after RNAi induction). The daughter centrioles are marked by Cnb. Cartoon shows interpretation of centriole composition. The color scheme is the same as Figure 2A. Bar: 5 μm. N = 30 GSCs for each genotype. (H) Quantification of Cnb amount (integrated pixel density) on the mother (M) vs. daughter (D) centrosomes in the indicated genotypes. p-Value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. Twelvecells were scored for each data point. (I, J) Lightning images of GSCs in control (I) and nos-gal4>UAS-alms1RNAi (J) testes. Green: Vasa. Red: Asl. White: Cp110. Asterisk indicates the hub. Bar: 10 μm. (K) Quantification of Cp110 dot number/centrosome in control vs. alms1RNAi GSCs. (L) Model of centrosome loss in alms1RNAi GSCs. Red centriole: the original mother centriole. Green centriole: the original daughter centriole that becomes a mother for the first time after centriole duplication. Blue centriole: the newest daughter centriole generated in the latest cell cycle.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F) Examples of centrosomes in control germline stem cells (GSCs) (A), nos-gal4>UAS-alms1RNAi GSCs (B), nos-gal4>UAS-alms1a-GFP GSCs (C), nos-gal4>alms1a-GFP, UAS-alms1RNAi GSCs (D), nos-gal4>UAS GFP-ALMS motif GSCs (E), nos-gal4>GFP-ALMS motif, UAS-alms1RNAi GSCs (F). Green: Vasa. Red: Asl. White: GFP. Blue: DAPI. Asterisk indicates the hub. Bar: 5 μm. (G) Quantification of centrosome numbers in the indicated genotypes. p-Value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. n = 150 GSCs were scored for each data point.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** nos-gal4ΔVP16, tub-gal80ts>UAS-alms1RNAi GSCs were shifted to 29°C to induce RNAi. Centrosome size was examined at 0–7 days after RNAi induction. Error bars indicate the standard deviation. n = 20 GSCs were scored for each data point.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Error bars indicate the standard deviation. Ten independent crosses were used for each genotype. Note that the sterility of nos-gal4>UAS-alms1RNAi flies likely reflects the depletion of both alms1a and alms1b. However, the depletion of alms1 (bam-gal4>UAS-alms1RNAi) leads to milder fertility defect, suggesting that centrosome depletion in early germ cells due to alms1a depletion compromises fertility.
+
 To understand the precise steps of daughter centrosome loss upon depletion of alms1a, we induced alms1RNAi in a temporally controlled manner (nos-gal4ΔVP16, tub-gal80ts>UAS-alms1RNAi): alms1RNAi was induced upon eclosion and the outcome was monitored thereafter. This approach confirmed that GSCs lose their daughter centrosomes as fast as 1–2 days (2–4 GSC cell cycles) upon RNAi-mediated knockdown of alms1a (Figure 3E), and allowed us to examine the process of centrosome loss. In control GSCs, the daughter-centriole-specific protein Cnb always marked both mother and daughter centrosomes, as expected because both centrosomes contain a daughter centriole (Figure 3F,H). However, upon knockdown of alms1a, Cnb is lost or diminished from the mother centrosome prior to centrosome loss: when GSCs still contained two γ-Tubulin-positive centrosomes, the mother centrosome lacked Cnb staining, suggesting that it does not contain the daughter centriole (Figure 3G,H). Based on these results, we infer that centriole duplication is compromised in GSCs upon alms1 depletion: mother centriole (lacking Cnb) and daughter centriole (marked by Cnb) of the GSC mother centrosome likely split from each other, and segregate into GSC and GB, respectively, without duplicating centrioles (Figure 3L). In the following cell cycle, the GSCs that are incapable of duplicating centrioles will continue to divide without passing any new centrosomes to GBs. The inability of alms1RNAi GSCs to duplicate centrioles was further comfirmed by detailed examination of centrosomes upon complete loss of the daughter centrosomes in alms1RNAi GSCs. In contrast to control GSCs, which contain two centrosomes, each of which contains two centrioles marked by Cp110 (Figure 3I,K), alms1RNAi GSCs contained only one centrosome, which contains only one centriole (Figure 3J,K), demonstrating that alms1RNAi compromises centriole duplication. The lack of centriole duplication in GSCs would lead to loss of centrosomes/centrioles in all germ cells, which must inherit the first template for centriole duplication from GSCs (Figure 3L). nos-gal4>UAS-alms1RNAi flies were sterile, likely due to the complete loss of centrosomes, although knockdown of alms1b also contributes to this sterility (Figure 3—figure supplement 3). Taken together, we conclude that alms1a plays a critical role in ensuring centrosome duplication in GSCs, which is essential for the production of centrosomes/centrioles in all downstream germ cells.
 
-## alms1a is dispensable for centrosome duplication in differentiating germ cells and GSCs that are induced to divide symmetrically
+### alms1a is dispensable for centrosome duplication in differentiating germ cells and GSCs that are induced to divide symmetrically
 
 The above results show that alms1a is required to ensure the duplication of daughter centrioles in GSCs. Considering the unique asymmetric localization of Alms1a only in GSCs but not in differentiating cells, we wondered whether Alms1a is required for centriole duplication in differentiating cells.
 
@@ -66,19 +110,35 @@ To address this question, we depleted alms1a from differentiating cells. The SG-
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig4-v2.jpg)
 
-**Figure 4.:** alms1a is dispensable for centrosome duplication in symmetrically dividing cells.(A) An example of Alms1a staining in bam-gal4>UAS-GFP, UAS-alms1 testis. The boundary of bam-gal4-positive vs. -negative SGs is indicated by the yellow line (note that bam expression marked by GFP is initially weak). Green: GFP. White: Alms1a. Red: Asl. Blue: Vasa. Asterisk indicates the hub. Yellow box inset indicates an example of Alms1a staining in germline stem cell (GSC). Cyan box inset indicates an example of Alms1a staining in SG. Bar: 10 μm. (RNAiB–C) Examples of upd-induced GSCs without alms1 (B, RNAinos-gal4>UAS-upd) or with alms1 (C, RNAinos-gal4>UAS-upd, UAS-alms1). Green: Vasa. Red: Asl. White: Alms1a. Blue: DAPI. Inset is magnified image of a single GSC. Arrows indicate centrosomes. Bar: 10 μm. (RNAiD) Quantification of centrosome numbers (quantified by Asl and γ-Tub double staining) in the indicated genotypes. Error bars indicate the standard deviation. n = GSC numbers scored.
+**Figure 4.:** (A) An example of Alms1a staining in bam-gal4>UAS-GFP, UAS-alms1RNAi testis. The boundary of bam-gal4-positive vs. -negative SGs is indicated by the yellow line (note that bam expression marked by GFP is initially weak). Green: GFP. White: Alms1a. Red: Asl. Blue: Vasa. Asterisk indicates the hub. Yellow box inset indicates an example of Alms1a staining in germline stem cell (GSC). Cyan box inset indicates an example of Alms1a staining in SG. Bar: 10 μm. (B–C) Examples of upd-induced GSCs without alms1RNAi (B, nos-gal4>UAS-upd) or with alms1RNAi (C, nos-gal4>UAS-upd, UAS-alms1RNAi). Green: Vasa. Red: Asl. White: Alms1a. Blue: DAPI. Inset is magnified image of a single GSC. Arrows indicate centrosomes. Bar: 10 μm. (D) Quantification of centrosome numbers (quantified by Asl and γ-Tub double staining) in the indicated genotypes. Error bars indicate the standard deviation. n = GSC numbers scored.
 
 To test whether the unique requirement of alms1a in GSCs is due to their asymmetric division or to their stem cell identity, we examined whether symmetrically dividing GSCs require alms1a for centriole duplication (Figure 4B–C). We induced symmetric divisions in GSCs by expressing upd together with alms1RNAi (nos-gal4>UAS-upd, UAS-alms1RNAi). Alms1a protein was undetectable under this condition, confirming efficient knockdown (Figure 4C). Importantly, these symmetrically dividing GSCs retained their centrosomes (Figure 4C–D), suggesting that alms1a is required for centriole duplication only in asymmetrically dividing cells.
 
-## Alms1a interacts with the core centriole duplication machinery
+### Alms1a interacts with the core centriole duplication machinery
 
 To further understand how Alms1a regulates centriole duplication in the GSCs, we examined whether Alms1a interacts with key proteins for centriole biogenesis. Sak is a homolog of the Plk4 kinase, a master regulator required for centriole duplication (Bettencourt-Dias et al., 2005; Habedanck et al., 2005), whereas Sas-6 is a component for cartwheel assembly to promote centriole formation (Nakazawa et al., 2007; Rodrigues-Martins et al., 2007a). Alms1a physically interacted with Sak and Sas-6 in testes lysates enriched with GSCs, as indicated by co-immunoprecipitation (Figure 5A–B). Moreover, GST-pulldown experiments using bacterial extracts as well as bacterial two hybrid experiments showed that Sak directly binds to Alms1a via the ALMS motif. In contrast, Sas-6-ALMS motif did not interact in bacterial extract (Figure 5C–E and Figure 5—figure supplement 1), suggesting that the interaction between Alms1a and Sas-6 in testis extract is indirect.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig5-v2.jpg)
+
+**Figure 5.:** (A) Co-immunoprecipitation of Sak and Alms1a. Control GFP and Alms1a-GFP were immunoprecipitated from GSC-enriched extracts (nos-gal4>UAS-upd) using an anti-GFP antibody and blotted with anti-Sak and anti-GFP. (B) Co-immunoprecipitation of Sas-6 and Alms1a. Control GFP and Alms1a-GFP were immunoprecipitated from GSC-enriched extracts (nos-gal4>UAS-upd) using an anti-GFP antibody and blotted with anti-Sas-6 and anti-GFP. (C–H) BiFC analysis of Alms1a-Sak interaction. (C) Schematic of Alms1a, Sak and Sas-6 and constructs used for in vitro pull-down experiments. (D–E) GST-pulldown of Sak, Sas-6 and Alms1a C-terminal fragment. GST control and recombinant GST-Alms1a-C was immobilized on glutathione agarose beads and incubated with His-Sak (D) or His-Sas-6 (E) lysate for pull-down assay and blotted with anti-GST and anti-His antibody. (F–G) Examples of apical tips in nos-gal4 >UAS-alms1a-VNm9 (control) and nos-gal4>UAS-alms1a-VNm9, UAS-VC155-sak testes. Flies are raised at 18°C to minimize centrosome over-duplication due to ectopic protein expression. (H–K) Magnified images of a GSC mother centrosome (H), a GSC daughter centrosome (I) and two SG centrosomes (J–K) from panel (G). Green: BiFC. Red: γ-Tub. Blue: Vasa. Asterisk indicates the hub. GSCs are outlined with yellow dotted lines. Arrowheads (yellow) indicate examples of GSC centrosomes. Arrows (cyan) indicate examples of SG centrosomes. Bar: 5 μm. (L) Quantification of BiFC integrated pixel density in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. Twenty cells were scored for BiFC signals for each data point.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Recombinant plasmids (pNKT25-alms1a and pUT18C-sak/pUT18C-sas-6) are co-transformed into competent cells. Transformants are plated on MacConkey selective plate. Positive interaction results in red colonies on the selective plates, while colonies will be colorless if no interaction occurs. Co-transformation of pKT25-zip and pUT18C-zip with competent cells was used as a positive control. Co-transformation of pKNT25 or pUT18C with one of the recombinant plasmids served as negative controls.
+
 To further characterize these interactions, we performed the BiFC analysis between Alms1a and Sak. We observed a weak BiFC signal at centrosomes in general, but the BiFC signal was significantly higher at the GSC mother centrosome (Figure 5F–L). Given that Alms1a localizes to the mother centriole in all centrosomes, but to the daughter centriole only in GSCs (Figure 2), we infer that the Alms1a-Sak interaction preferentially occurs at the daughter centriole of the GSC mother centrosome.
 
-## Alms1a promotes centriole duplication together with Sak
+### Alms1a promotes centriole duplication together with Sak
 
 How does Alms1a regulate centriole duplication, and why it is required only in GSCs? Alms1a’s direct interaction with Sak (Figure 5) indicates that Alms1a might promote centriole duplication together with Sak. Indeed, we found that overexpression of Alms1a dramatically enhanced centrosome overduplication caused by Sak overexpression. Overexpression of alms1a (nos-gal4 >UAS-alms1a-GFP, 25°C) alone did not result in an obvious increase in centrosome number compared to the control (2.09 ± 0.38 centrosomes/cell in alms1a overexpression, vs. 2.00 ± 0.00 centrosomes/cell in control) (Figure 6A,B,E). Sak overexpression increased centrosome numbers slightly (2.79 ± 1.07 centrosomes/cell) (Figure 6C,E), similar to observations in other cell types (Habedanck et al., 2005; Peel et al., 2007; Rodrigues-Martins et al., 2007b). Strikingly, co-expression of alms1a and sak (nos-gal4>UAS-alms1a-GFP, UAS-GFP-sak, 25°C) dramatically enhanced centrosome overduplication (Figure 6D–E and Figure 6—figure supplement 1) (4.61 ± 1.91 centrosomes/cell). These results suggest that Alms1a promotes centrosome duplication together with Sak, possibly by recruiting Sak to the site of centriole duplication in GSCs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig6-v2.jpg)
+
+**Figure 6.:** (A–E) Alms1a overexpression enhances centrosome overduplication induced by Sak overexpression. Examples of germ cells in control (A), nos-gal4>UAS-alms1a-GFP (B), nos-gal4>UAS-GFP-sak (C) and nos-gal4>UAS-alms1a-GFP, UAS-GFP-sak (D). Flies were raised at 25°C to drive a higher level of protein expression. Green: GFP. Red: Asl. Blue: Vasa. Germ cells are outlined with yellow dotted lines. Bar: 5 μm. (E) Quantification of centrosome number (quantified by Asl and γ-Tub double staining) in GSCs/SGs in indicated genotypes. p-Value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. n = 100 cells were scored for each data point. (F–K) Sak and Sas-6 accumulate on the remaining mother centrioles in alms1RNAi GSCs. (F–G) Examples of GSC centrosomes in control (F) and nos-gal4>UAS-alms1RNAi (G) testes stained for Sak (white), Asl (red), and Vasa (green). Asterisk indicates the hub. GSCs are outlined with yellow dotted lines. Bar: 5 μm. (H) Quantification of Sak integrated pixel density in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. n = 20 GSCs were scored for Sak signals for each data point. (I–J) Examples of GSC centrosomes in control (I) and nos-gal4>UAS-alms1RNAi (J) testes stained for Sas-6 (white), Asl (red), and Vasa (green). Bar: 5 μm. (K) Quantification of Sas-6 integrated pixel density in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. n = 20 GSCs were scored for Sas-6 signals for each data point.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59368/elife-59368-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Examples of Sas-6 staining in nos-gal4>UAS-alms1a-GFP (A), nos-gal4>UAS-GFP-sak (B) and nos-gal4>UAS-alms1a-GFP, UAS-GFP-sak (C) germ cells. Flies were raised at 25°C to drive a higher level of protein expression. Green: GFP. Red: Sas-6. Blue: DAPI. (D–F) Examples of in nos-gal4>UAS-alms1a-GFP (D), nos-gal4>UAS-GFP-sak (E) and nos-gal4>UAS-alms1a-GFP, UAS-GFP-sak (F) germ cells. Flies were raised at 25°C to drive a higher level of protein expression. Green: GFP. Red: Spd2. Blue: DAPI. Germ cells are outlined with yellow dotted lines. Bar: 5 μm.
 
 Why is Alms1a’s function to promote centriole duplication together with Sak only required in GSCs but not in SGs? Interestingly, we found that RNAi-mediated knockdown of alms1a in GSCs resulted in the excessive enrichment of both Sak and Sas-6 at the elongated mother centriole that remains after all other centrosomes are depleted (Figure 6F–K). The excess amount of Sak and Sas-6 on the remaining mother centriole in alms1RNAi GSCs may explain why it continues to elongate. In parallel, the accumulation of Sak and Sas-6 on the mother centriole may deplete Sak and Sas-6 from the site of the daughter centriole production, leading to the failure in daughter centriole duplication. Therefore, the GSC-specific function of Alms1a may be to promote daughter centriole duplication by recruiting Sak to the ‘seeding site’ for daughter centriole duplication (see Discussion).
 
@@ -96,7 +156,388 @@ In summary, our study identified Alms1a as a protein that exhibits asymmetric lo
 
 ## Materials and methods
 
-## Fly husbandry, strains and transgenic flies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>nos-gal4</td>
+      <td>PMID:9501989</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>bam-gal4</td>
+      <td>PMID:12571107</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>tub-gal4</td>
+      <td>Bloomington Stock Center</td>
+      <td>ID_BSC: 5138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-upd</td>
+      <td>PMID:10346822</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>tub-gal80ts</td>
+      <td>PMID:14657498</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>nos-gal4 without VP16 (nos-gal4ΔVP16)</td>
+      <td>PMID:26131929</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-EGFP</td>
+      <td>Bloomington Stock Center</td>
+      <td>ID_BSC: 5430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-dpp</td>
+      <td>Bloomington Stock Center</td>
+      <td>ID_BSC: 1486</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>yw</td>
+      <td>Bloomington Stock Center</td>
+      <td>ID_BSC: 189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-GFP-alpha-tubulin84B</td>
+      <td>Bloomington Stock Center</td>
+      <td>ID_BSC: 7373</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-klp10ARNAi</td>
+      <td>Bloomington Stock Center</td>
+      <td>ID_BSC: 33963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-klp10A-EGFP</td>
+      <td>PMID:26131929</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>centrobin-YFP</td>
+      <td>PMID:21407209</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>ubi-asl-tdTomato</td>
+      <td>PMID:21694707</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>ubi-ana1-tdTomato</td>
+      <td>PMID:18854586</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>ubi-Cp110-GFP</td>
+      <td>PMID:27185836</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-alms1RNAi</td>
+      <td>Bloomington Stock Center</td>
+      <td>ID_BSC: 63721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-alms1a-EGFP</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-alms1a-EGFP (insensitive to RNAi)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-alms1a-VNm9</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-VC155-klp10A</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-VC155-sak</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-EGFP-ALMS motif</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>cep135-EGFP</td>
+      <td>Bloomington Stock Center</td>
+      <td>ID_BSC: 60183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-vasa (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>ID_SCB: d-26</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha-Tubulin (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td></td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-vasa (Rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td></td>
+      <td>IF: 1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-gamma-Tubulin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>ID_Sigma:T6557</td>
+      <td>IF: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Asl (Rabbit polyclonal)</td>
+      <td>A gift from Jordan Raff</td>
+      <td></td>
+      <td>IF: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sas-6 (Rabbit polyclonal)</td>
+      <td>A gift from Jordan Raff</td>
+      <td></td>
+      <td>IF: 1:5000 WB: 1:40000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sak (Rabbit polyclonal)</td>
+      <td>A gift from Monica Bettencourt-Dias</td>
+      <td></td>
+      <td>IF: 1:400 WB: 1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Spd2 (Rabbit polyclonal)</td>
+      <td>A gift from Maurizio Gatti</td>
+      <td></td>
+      <td>IF: 1:25</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chick monoclonal)</td>
+      <td>Aves Labs</td>
+      <td>ID_aves: GFP-1020</td>
+      <td>WB: 1:6000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GST (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>WB: 1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His (Mouse monoclonal)</td>
+      <td>Millipore-Sigma</td>
+      <td></td>
+      <td>WB: 1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Alms1a (Guinea pig polyclonal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>IF: 1:4000 WB: 1:40000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Alms1b (Guinea pig polyclonal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>IF: 1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Centrobin (Rabbit polyclonal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>IF: 1:4000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-4T-LP (plasmid)</td>
+      <td>Addgene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCSG7 (plasmid)</td>
+      <td>Addgene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-alms1a-C (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCSG7-klp10A (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCSG7-sak (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMCSG7-sas-6 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKNT-25 (plasmid)</td>
+      <td>Euromedex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUT18C (plasmid)</td>
+      <td>Euromedex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKT25-zip (plasmid)</td>
+      <td>Euromedex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUT18C-zip (plasmid)</td>
+      <td>Euromedex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKNT-alms1a (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUT-klp10A (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUT-sak (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUT-sas-6 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly husbandry, strains and transgenic flies
 
 All fly stocks were raised on standard Bloomington medium at 25°C, and young flies (0- to 1-day-old adults) were used for all experiments unless otherwise noted. The following fly stocks were used: nos-gal4 (Van Doren et al., 1998), UAS-upd (Zeidler et al., 1999), UAS-dpp (Stock #1486, Bloomington Drosophila Stock Center (BDSC)) (Staehling-Hampton et al., 1994), tub-gal80ts (Stock # 7017, BDSC) (McGuire et al., 2003), UAS-EGFP (Stock #5430, BDSC), yw (Stock #189, BDSC), cep135-EGFP (Stock#60183, BDSC) bam-gal4 (Chen and McKearin, 2003), tub-gal4 (Stock # 5138, BDSC) (Lee and Luo, 1999), UAS-klp10A-GFP (Inaba et al., 2015), UAS-GFP-α-tubulin84B (Stock #7373, BDSC) (Grieder et al., 2000), UAS-klp10ARNAi (TRiP.HMS00920, BDSC), UAS-alms1RNAi (TRiP.HMJ30289, BDSC), nos-gal4 without VP16 (nos-gal4ΔVP16) (Inaba et al., 2015), centrobin-YFP (Januschke et al., 2011) (a gift from Cayetano Gonzalez), ubi-asl-tdTomato (Gopalakrishnan et al., 2011) and ubi-ana1-tdTomato (Blachon et al., 2008) (gifts from Tomer Avidor-Reiss), ubi-Cp110-GFP (Galletta et al., 2016) (a gift from Nasser Rusan). Note that UAS-alms1RNAi is expected to knockdown both alms1a and alms1b. However, because alms1b is not expressed in GSCs, the phenotypes resulting from expression of this RNAi construct in GSCs are due to the loss of alms1a. Although we attempted to generate alms1a-specific RNAi lines, none of them efficiently knocked down alms1a as evidenced by western blotting.
 
@@ -104,17 +545,17 @@ For the construction of UAS-alms1a-VNm9, the VNm9 fragment was PCR-amplified fro
 
 Recombinant protein expression and GST pull-down assays cDNAs for alms1a, klp10A, sak and sas-6 were purchased from Drosophila Genomics Resource center as described above. Full-length or fragments of these genes were generated by PCR amplification of the cDNAs. For the construction of pGEX-alms1a-C, the alms1a-C fragment was PCR-amplified from cDNA, and subcloned into BamHI/NotI sites of pGEX-4T-LP (Addgene). Glutathione S-transferase (GST)-tagged Alms1a-C (1115-1322aa) or GST alone as a control were expressed in Rosetta (DE3) competent cells (Novagen). For the construction of pMCSG7-klp10A, pMCSG7-sak and pMCSG7-sas-6, full-length genes were amplified from cDNAs, and subcloned into KpnI/EcoRI, KpnI/NotI and KpnI/BamHI sites of pMCSG7 (Addgene), respectively. N-terminal 6xHis-tagged klp10A, sak and sas-6 were expressed in Rosetta competent cells as described above. Cells were grown at 37°C in Terrific Broth (TB) (Millipore) in the presence of ampicillin (100 μg/mL). After optical density (OD) values reaches to 0.6, protein expression was induced by isopropyl β-D-1-thiogalactopyranoside at a final concentration of 0.3 mM for an additional 20 hr at 16°C. The cells were harvested by centrifugation at 5000 rpm for 5 min, and lysed by sonication in lysis buffer (20 mM Tris-HCl (pH 7.4), 150 mM NaCl, and 1 mM EDTA, 1% NP-40 and 5% glycerol) supplemented with complete protease inhibitor cocktail (Roche) and 1 mM phenylmethyl sulphonyl fluoride (PMSF). The immunoprecipitations between Alms1a-C and Klp10A/Sak/Sas-6 were performed by in vitro GST pull-down assay using Pierce GST Protein Interaction Pull-Down kit (Thermo Scientific). The cell lysates were incubated for 30 min at 4°C followed by centrifugation at 14,000 rpm for 10 min at 4°C. GST and GST-Alms1a-C lysates with equal total protein level were incubated with glutathione agarose beads for 1 hr at 4°C, and washed three times in lysis buffer. Then, His-Klp10A, His-Sak and His-Sas-6 lysates with equal total protein level were incubated with washed beads for 2 hr at 4°C, and washed five times in lysis buffer. Before the last wash, the beads were moved to a fresh tube, and eluted with 2xLaemmli buffer (Bio-Rad) containing 5% β-mercaptoethanol, and boiled for 10 min. SDS-PAGE and Western blot were then conducted to examine the protein interactions.
 
-## Bacterial two-hybrid analysis
+### Bacterial two-hybrid analysis
 
 The bacterial two-hybrid analysis was performed to detect direct protein-protein interactions using bacterial adenylate cyclase-based two-hybrid, BACTH systems (Euromedex). For the construction of pKNT-alms1a, the alms1a full-length was PCR-amplified from cDNA, and subcloned into HindIII/SmaI sites of pKNT25. For the construction of pUT-klp10A, pUT-sak and pUT-sas-6, full-length genes were amplified from cDNAs, and subcloned into KpnI/EcoRI, PstI/KpnI and KpnI/EcoRI sites of pUT18C, respectively. Two recombinant plasmids encoding alms1a-T25 and T18-klp10A/T18-sak/T18-sas-6 are co-transformed into BTH101 competent cells. Transformants are plated on MacConkey selective plate in the presence of maltose, ampicillin (100 μg/mL) and kanamycin (50 μg/mL), and incubated at 30°C for 24 hr. Complementation can be detected as red colonies on the MacConkey-maltose (Sigma) plates, while colonies will be colorless if no interaction occurs. Co-transformation of pKT25-zip and pUT18C-zip with BTH101 competent cells was used as a positive control. Co-transformation of pKNT25 or pUT18C with one of the recombinant plasmids served as negative controls.
 
-## Immunofluorescent staining and confocal microscopy
+### Immunofluorescent staining and confocal microscopy
 
 Drosophila testes were dissected in phosphate-buffered saline (PBS), transferred to 4% formaldehyde in PBS and fixed for 30 min. The testes were then washed in PBST (PBS containing 0.1% Triton X-100) for at least 30 min, followed by incubation with primary antibody in 3% bovine serum albumin (BSA) in PBST at 4°C overnight. Samples were washed for 60 min (three 20 min washes) in PBST, incubated with secondary antibody in 3% BSA in PBST at 4°C overnight, washed as above, and mounted in VECTASHIELD with 4',6-diamidino-2-phenylindole (DAPI; Vector Labs).
 
 The primary antibodies used were as follows: rat anti-Vasa (1:20; developed by A. Spradling and D. Williams, obtained from Developmental Studies Hybridoma Bank (DSHB)); mouse anti-γ-Tubulin (GTU-88; 1:100; Sigma-Aldrich); rabbit anti-Vasa (d-26; 1:200; Santa Cruz Biotechnology); rabbit anti-Asl (1:2000; a gift from Jordan Raff); rabbit anti-Sas-6 (1:2000; a gift from Jordan Raff); rabbit anti-Sak (1:200; a gift from Monica Bettencourt-Dias); rabbit anti-Spd2 (1:25; a gift from M. Gatti); chicken anti-GFP (1:1000, Aves Labs). Anti-Alms1a and Alms1b antibody were generated by injecting peptides (QEMEVEPKKQLEKEQHQNDMQQGEPKGREC) and (CNISQRGNHLEKIE) into guinea pigs (Covance). Affinity purification was used to purify the antibodies. Specificity of the antibodies was validated by the lack of staining in alms1RNAi testis (Figure 1—figure supplement 1). Anti-Centrobin antibody was generated by injecting a peptide (GRPSRELHGMVHSTPKSGSVEPLRHRPLDDNIC) into rabbits (Covance). Alexa Fluor-conjugated secondary antibodies (Life Technologies) were used with a dilution of 1:200. Images were taken using an upright Leica TCS SP8 confocal microscope with a 63 × oil immersion objective (NA = 1.4) and processed using Adobe Photoshop software. As necessary, better resolution was obtained with HyVolution/Lightning on TCS SP8 confocal microscopy or STED imaging.
 
-## Co-immunoprecipitation and western blotting
+### Co-immunoprecipitation and western blotting
 
 For immunoprecipitation using Drosophila testis lysate, testes enriched with GSCs due to ectopic Upd expression (100 pairs/sample) were dissected into PBS at room temperature within 30 min. Testes were then homogenized and solubilized with lysis buffer (10 mM Tris-HCl pH 7.5; 150 mM NaCl; 0.5 mM EDTA supplemented with 0.5% NP40 and protease inhibitor cocktail (EDTA-free, Roche)) for 30 min at 4°C. Testes lysates were centrifuged at 13,000 rpm for 15 min at 4°C using a table centrifuge, and the supernatants were incubated with GFP-Trap magnetic agarose beads (ChromoTek) for 4 hr at 4°C. The beads were washed three times with wash buffer (10 mM Tris-HCl pH 7.5; 150 mM NaCl; 0.5 mM EDTA). Bound proteins were resolved in SDS-PAGE and analyzed by western blotting.
 
@@ -122,10 +563,10 @@ For anti-Klp10A pull-down and mass spectrometry assays, testes enriched with GSC
 
 For western blotting, samples subjected to SDS-PAGE (NuPAGE Bis-Tris gels (8%; Invitrogen)) were transferred onto polyvinylidene fluoride (PVDF) membranes (Immobilon-P; Millipore). Membranes were blocked in PBS containing 5% nonfat milk and 0.1% Tween-20, followed by incubation with primary antibodies diluted in PBS containing 5% nonfat milk and 0.1% Tween-20. Membranes were washed with PBS containing 5% nonfat milk and 0.1% Tween-20, followed by incubation with secondary antibody. After washing with PBS, detection was performed using an enhanced chemiluminescence system (Amersham). Primary antibodies used were rabbit anti-GFP (abcam; 1:4000), guinea pig anti-Alms1a (this study; 1:5000), rabbit anti-Sas-6 (1:10000; a gift from Jordan Raff), rabbit anti-Sak (1:2000; a gift from Monica Bettencourt-Dias), mouse anti-GST (Biolegend; 1:1500), and mouse anti-His (Millipore-Sigma; 1:2500). Secondary antibodies used were goat anti-guinea pig IgG, goat anti-rabbit IgG and goat anti-mouse IgG conjugated with horseradish peroxidase (HRP) (abcam; 1:5000).
 
-## Data analyses
+### Data analyses
 
 Statistical analysis was performed using GraphPad Prism seven software. Data are shown as means ± standard deviation. The p-value (two-tailed Student’s t-test) is provided for comparison with the control. Integrated pixel intensity was used to measure the amount of proteins at mother and daughter centrosomes. Regions of interest were manually drawn in ImageJ and background intensity was subtracted from each value.
 
-## Fertility assays
+### Fertility assays
 
 Individual males of the genotypes shown were allowed to mate with two yw virgin female flies for 1 week. The flies were removed after a week, and the numbers of progenies were scored.

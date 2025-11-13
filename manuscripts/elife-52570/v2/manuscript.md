@@ -44,47 +44,91 @@ Increasing levels of reactive oxygen species (ROS), another main feature of agin
 
 ## Results
 
-## p16 was upregulated in the NP of degenerated human intervertebral discs
+### p16 was upregulated in the NP of degenerated human intervertebral discs
 
 To explore the role of p16 in IVDD, p16 expression was first verified in the NP tissues of patients with various degrees of disc degeneration, as examined by histological staining (Pfirrmann grades 2–5, Figure 1—figure supplement 1). H and E staining showed a substantially disordered tissue texture in samples with a high Pfirrmann grade, in which hypertrophic and vacuole-like cells and multinuclear giant cells were present at the end of the sample (Figure 1A). Masson and Safranin O staining showed smaller amounts of proteoglycans (PGs) and increased levels of fibrosis in NP tissues that had a high Pfirrmann grade (Figure 1A). These results confirm that severely degenerated NP tissue is correlated with a high Pfirrmann grade. In addition, immunohistochemistry (IHC) and western blotting (WB) revealed that degenerated discs with a higher Pfirrmann grade expressed a higher level of p16 than those with a lower Pfirrmann grade (Figure 1B,C,D; with p16 expression levels and their corresponding Pffirmann grades being shown in Figure 1—figure supplement 2). These results confirm that p16 accumulates in NP tissues as IVDD progresses.
 
-## p16 regulated NP cell proliferation and senescence under IL-1β stimulation by mediating oxidative stress and the cell cycle
+![Figure 1.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative images of H and E staining showing cell/tissue general morphology. Safranin O staining with collagen and NP cells appearing orange and fibers blue/violet. Masson staining with collagen and NP cells appearing blue and fibers red; and immunohistochemical staining for p16. (B) Quantification of p16-positive cells (%). p16 protein levels were assessed by (C) western blotting and (D) measured by densitometric analyses and expressed as folds relative to grade 2 (G2) NP samples. Data are presented as mean ± SD (n = 3); *p<0.05; **p<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Grades 2–5: G2–5. The yellow arrow indicates the surgical site.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig1-figsupp2-v2.jpg)
+
+### p16 regulated NP cell proliferation and senescence under IL-1β stimulation by mediating oxidative stress and the cell cycle
 
 To uncover how p16 participates in IVDD progression, NP cells with mild degeneration were isolated from Pfirrmann grade 2 tissues and cultured in vitro. IL-1β was used to induce NP cell degeneration. Immunofluorescent (IF) and SA-β-gal staining clearly illustrated that IL-1β greatly increased the percentage of senescent NP cells and p16 protein expression when compared with control levels (Figure 2A,D,E). In addition, the effect of altering p16 expression levels on NP cell degeneration and proliferation was investigated. p16 expression was down- and upregulated by siRNA or plasmid transfection, respectively. The transfection efficiencies of targeted siRNAs and plasmids, compared with those of null siRNA and empty plasmid, respectively, are presented in Figure 2—figure supplement 1. p16 expression decreased after siRNA-mediated knockdown, which decreased the proportion of NP cells that demonstrated a senescent phenotype. By contrast, p16 overexpression caused a marked opposite effect (Figure 2B,H). In addition to the degree of aging, proliferative ability is another indicator of cellular degeneration. Cell counting kit-8 (CCK-8) analyses confirmed that NP cell proliferation was reduced by p16 overexpression and promoted by p16 knockdown when compared with the levels seen after treatment with IL-1β treatment alone (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig2-v2.jpg)
+
+**Figure 2.:** Human NP cells were grouped as follows: normal cultured cells (control), IL-1β treated cells (IL-1β), p16-siRNA-transfected cells treated with IL-1β (IL-1β+siRNA), and p16 plasmid-transfected cells treated with IL-1β (IL-1β+p16). (A) Representative immunofluorescent micrographs stained for p16. (B) p16 protein levels as assessed by western blotting. (C) Cell proliferation as assessed by CCK-8 assays. (D) SA-β-gal staining. (E) Total p16‐positive and β-gal‐positive cells (%). (F) ROS levels and the cell-cycle distribution of freshly collected human NP cells as determined by flow cytometry. (G) Quantitation of ROS levels. (H) p16 level measured by densitometric analysis and expressed relative to the control. (I) Cell-cycle distribution. Data are presented as mean ± SD (n = 3); *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative immunofluorescence micrographs stained for null siRNA, p16 siRNA, empty plasmid, and p16 plasmid. (B) Total p16-positive cells (%). P16 expression is significantly different between NP cells transfected with null siRNA and p16 siRNA or with empty plasmid and p16 plasmid. Data are presented as the mean ± SD (n = 3); *p<0.05.
+
 To determine the potential mechanism by which p16 modulates NP cell physiological behavior, flow cytometry was used to analyze ROS levels and the cell cycle. ROS levels were obviously higher when p16 expression was increased (Figure 2F,G). As p16 expression gradually increased from the p16+IL-1β group to the IL-1β group and the control group, the cells presented cell-cycle arrest in the G0/G1 phase. Interestingly, considerably more NP cells progressed through G0/G1 to S phase following p16 downregulation (Figure 2F,I). These results demonstrate that p16 might regulate senescence by mediating oxidative stress and promoting proliferation by accelerating the movement of cells through the G1/S checkpoint.
 
-## Rapamycin inhibited p16 expression and promoted NP cell proliferation by reducing oxidative stress and mediating the cell cycle
+### Rapamycin inhibited p16 expression and promoted NP cell proliferation by reducing oxidative stress and mediating the cell cycle
 
 Recent studies have reported that rapamycin prevents IVDD by inhibiting cell senescence via the mTOR signaling pathway (Choi et al., 2016; Ito et al., 2017). Therefore, the application of rapamycin was used to inhibit cell senescence in order to explore the interplay between this cellular event and p16 in IVDD prevention. Rapamycin antagonized the effect of IL-1β, decreasing p16 expression and the percentage of senescent NP cells (Figure 3A,B,C,E,F). Flow cytometry analyses revealed significantly lower ROS levels in the IL-1β+rapamycin group than in the IL-1β-alone group, and showed that rapamycin treatment reduced the ratio of cells in the G0/G1 phase; meanwhile, the ratio of cells in S phase was higher after rapamycin treatment (Figure 3D,G,H). CCK-8 assays also showed a higher level of proliferation in the IL-1β+rapamycin group when compared with the IL-1β alone group (Figure 3I). These changes parallel the above described impact of p16 siRNA. These findings demonstrate that rapamycin can prevent NP cell degeneration by reducing ROS levels and mediating the cell cycle, which might be associated with p16 inhibition.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig3-v2.jpg)
 
-**Figure 3.:** Human NP cells were grouped as follows: normal cultured cells (control), IL-1β treated cells (IL-1β), and rapamycin-stimulated cells treated with IL-1β (IL-1β+rapa). (A) Representative immunofluorescent micrographs stained for p16. p16 protein levels as (B) assessed by western blotting and (C) measured by densitometric analysis, with results expressed relative to the control. (D) Quantitation of ROS levels. (E) SA-β-gal staining. (F) Total p16‐positive and β-gal‐positive cells (%). (G) ROS levels and the cell-cycle distribution of freshly collected human NP cells as determined by flow cytometry. (H) Cell-cycle distribution. (I) Cell proliferation as assessed by CCK-8 assays. Data are presented as mean ± SD (n = 3). *p<0.05; **p<0.01; ***p<0.001.Figure 3—source data 1.Figure 3B, E, G and I.
+**Figure 3.:** Human NP cells were grouped as follows: normal cultured cells (control), IL-1β treated cells (IL-1β), and rapamycin-stimulated cells treated with IL-1β (IL-1β+rapa). (A) Representative immunofluorescent micrographs stained for p16. p16 protein levels as (B) assessed by western blotting and (C) measured by densitometric analysis, with results expressed relative to the control. (D) Quantitation of ROS levels. (E) SA-β-gal staining. (F) Total p16‐positive and β-gal‐positive cells (%). (G) ROS levels and the cell-cycle distribution of freshly collected human NP cells as determined by flow cytometry. (H) Cell-cycle distribution. (I) Cell proliferation as assessed by CCK-8 assays. Data are presented as mean ± SD (n = 3). *p<0.05; **p<0.01; ***p<0.001.
 
-## p16 deletion partly postponed mouse IVDD
+### p16 deletion partly postponed mouse IVDD
 
 To further assess whether p16 deletion plays a positive role in IVDD prevention in vivo, the Cdkn2a gene knock out (p16 KO) mice and the tail suspension (TS) method were used to establish a mouse IVDD model. After 4 weeks of TS, muscles around the spine were congested with varying degrees of injury (Figure 4—figure supplement 1B). Based on the morphological and histological changes among different groups, disc height index (DHI) analyses showed that mouse disc heights were decreased by TS but were maintained in p16 KO mice when compared with WT mice (Figure 4A,C). Furthermore, micro-magnetic resonance imaging (MRI) demonstrated that TS reduced water content in the disc and that p16 deletion significantly protected against this effect (Figure 4H, Figure 4—figure supplements 2, 3). After TS, disc heights decreased and more vesicular cells appeared, and the discs in p16 KO mice exhibited obviously higher glycosaminoglycan (GAG) levels with or without TS than those in WT mice (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig4-v2.jpg)
+
+**Figure 4.:** WT and p16 KO mice were fed on the ground or with tail suspension (TS). (A) Radiographs of overall mouse length. (B) After H and E staining and Safranin O staining, collagen and NP cells are orange, and fibers are blue. (C) The intervertebral disc height index as calculated on the basis of lumbar vertebrae. (D) Associated protein levels as assessed by western blotting and (E) as measured by densitometric analysis, with results expressed relative to those in WT mice. (F) Target mRNA expression assessed by RT-PCR relative to GAPDH expression. (G) IL-1β, IL-6 and TNF-α levels in disc tissues as determined by ELISA. (H) The modified Thompson classification as assessed on the basis of lumbar disc signals. (I) Safranin O-positive area (%). Data are presented as mean ± SD (n = 3); *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A specialized cage used to suspend the tails of mice. The mice could obtain food and water freely in the cage. (B) Mice were sacrificed after 4 weeks of suspension. The muscles around the spine were bloodshot with varying degrees of injury. Tail suspension (TS) caused visibly bloodshot muscles, which were alleviated by p16 KO.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The larger white area that the disc has, the more water it contains, and this is positively related to the degree of disc degeneration. The yellow arrow indicates the disc site.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** *p<0.05; ***p<0.001.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig4-figsupp4-v2.jpg)
 
 Inflammation is a vital part of the disc degeneration process. To examine the effects of systemic p16 knockout, the levels of inflammatory factors in the NP tissues of mice were analyzed. There was a clear difference in inflammation between p16 KO and WT mice, as p16 deletion reduced the expression of TNF-α, IL-1β, and IL-6 (Figure 4G). These results were confirmed when RNA expression was assessed (Figure 4F). Furthermore, because NF-κB-p65 has a vital function in regulating inflammatory responses and is activated by various stimuli, including stress, we conducted analyses on NF-κB-p65 expression levels. Western blot analyses showed higher p65 levels in the TS group than in the control group. After p16 gene deletion, p65 expression decreased significantly (Figure 4D,E).
 
 Matrix metallopeptidases (MMPs) can degrade all types of ECM proteins, decreasing the aggrecan and collagen II content of the tissue. Thus, we evaluated MMP3, MMP9, MMP10, and MMP13 mRNA and protein expression levels. The levels of these MMPs mostly increased after TS, and p16 deletion partly reversed these changes (Figure 4D,E). Treatment effects on the expression levels of the typical components of ECM, aggrecan, collagen I, collagen II, and collagen X, were measured by western blot or qRT-PCR. Aggrecan and collagen II, which are protective ECM components, were slightly degraded in p16 KO mice compared to WT mice; whereas collagens I and X, which are harmful ECM components, were expressed at low levels in p16 KO mice (Figure 4D,E). In summary, these results suggest that p16 deletion partly postpones IVDD in mice as assessed in terms of changes in disc height, water content, inflammation, and ECM components.
 
-## p16 deletion exerted an antioxidant effect and affected progression from G1 to S phase in vivo
+### p16 deletion exerted an antioxidant effect and affected progression from G1 to S phase in vivo
 
 To further determine the potential mechanism by which p16 functions in IVDD in vivo, multiple biological indicators were explored. Specifically, we assessed the degree of senescence, proliferative capacity, oxidative stress level, and the expression of cell-cycle proteins in p16 KO and WT mice with or without TS. IHC analyses of β-gal and western blot of p19 and p53 revealed that the discs of WT mice exhibited a more senescent phenotype than those of p16–/– mice in both the TS and control groups (Figure 5A,C,D,F). The proportions of PCNA- and Ki67-positive cells, the percentages of proliferative cells, and the IGF1 protein levels in the discs were substantially higher in p16 KO mice than in WT mice, even after TS (Figure 5A). Interestingly, the levels of vascular endothelial growth factor (VEGF), a microangiogenesis marker, were decreased in p16 KO mice, suggesting a protective function of p16 in disc degeneration (Figure 5C,D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig5-v2.jpg)
 
-**Figure 5.:** WT and p16 KO mice were fed on the ground or with tail suspension (TS). (A) Representative micrographs of slices stained immunohistochemically for 8-hydroxy-2 deoxyguanosine (8-OHdG), senescence-associated β-galactosidase (SA-β-gal), Ki67 and proliferating cell nuclear antigen (PCNA). (B) Reactive oxygen species (ROS) levels, cell proliferation (PRL) and cell-cycle distribution in freshly collected mouse NP cells, as measured by flow cytometry. (C) Associated protein levels were assessed by western blotting and (D, E) measured by densitometric analysis with results expressed relative to those in WT mice. (F) Percentage of total immuno-positive cells (%). (G) Target mRNA expression as assessed by RT-PCR relative to GAPDH expression. (H) Cell-cycle distribution. (I) ROS and PRL (%) quantitation. Data are presented with mean ± SD (n = 3); *p<0.05, **p<0.01, ***p<0.001.Figure 5—source data 1.Figure 5A, B and C.
+**Figure 5.:** WT and p16 KO mice were fed on the ground or with tail suspension (TS). (A) Representative micrographs of slices stained immunohistochemically for 8-hydroxy-2 deoxyguanosine (8-OHdG), senescence-associated β-galactosidase (SA-β-gal), Ki67 and proliferating cell nuclear antigen (PCNA). (B) Reactive oxygen species (ROS) levels, cell proliferation (PRL) and cell-cycle distribution in freshly collected mouse NP cells, as measured by flow cytometry. (C) Associated protein levels were assessed by western blotting and (D, E) measured by densitometric analysis with results expressed relative to those in WT mice. (F) Percentage of total immuno-positive cells (%). (G) Target mRNA expression as assessed by RT-PCR relative to GAPDH expression. (H) Cell-cycle distribution. (I) ROS and PRL (%) quantitation. Data are presented with mean ± SD (n = 3); *p<0.05, **p<0.01, ***p<0.001.
 
 Because ROS levels decreased in human NP cells upon silencing p16, as described above, the antioxidant enzyme gene expression and ROS levels were determined in mouse disc tissues. SOD1, SOD2, GPX1, GPX3, and CAT mRNA expression increased upon p16 deletion, and p16 KO mice had lower total ROS levels than did WT mice, even after TS (Figure 5B,G,I). The mouse IVDD model also revealed the same effects on Sirt1, SOD1, and SOD2 protein levels (Figure 5C,D). The DNA injury marker 8-hydroxy-deoxyguanosine (8-OHdG) can be induced by oxidative stress. When compared to WT mice, the proportions of 8-OHdG-positive cells were greatly decreased in p16 KO mice, indicating that p16 deletion plays a protective role in the antioxidant process in the disc (Figure 5A).
 
 To explore whether p16 affects proliferation by mediating the cell cycle, cell-cycle progression and cell-cycle-related proteins were analyzed by flow cytometry and western blotting. p16 KO mice showed increased progression of cells from G0/G1 into S phase compared with WT mice, with or without TS (Figure 5B,H). CDK4, CDK6, pRb, E2F1 and E2F2 protein expression levels were upregulated in p16 KO mice compared to WT mice. Conversely, the expression level of RB protein was downregulated in p16 KO mice (Figure 5C,E). These results demonstrate that p16 deletion can partially inhibit aging-related senescence by reducing disc oxidative stress injury and enhancing NP cell proliferation by promoting progression through the G1/S checkpoint.
 
-## NF-κB-p65 promoted p16 expression in human NP cells by activating the p16 promoter
+### NF-κB-p65 promoted p16 expression in human NP cells by activating the p16 promoter
 
 Because expression of the transcription factor NF-κB-p65 differed between p16 KO and WT mice, it was hypothesized that NF-κB-p65 might control p16 protein levels. To confirm that NF-κB-p65 controls p16 at the transcriptional level, five putative NF-κB-p65 binding sites in the CDKN2A promoter region were identified and chromatin immunoprecipitation (ChIP) primers were designed using Primer Premier (Supplementary file 1). First, when we assessed whether NF-κB-p65 binds to the five putative promoter sequences, only two sites were verified by ChIP as efficient binding sites. One putative promoter sequence that was bound effectively is shown in Figure 6A, and another promoter sequence with no binding is shown in Figure 6—figure supplement 1. Using human genomic DNA as a template, the whole CDKN2A promoter segment was amplified by PCR (lane 1 of Figure 6A). Clear DNA amplification was examined after immunoprecipitation without the irrelevant control IgG (lane 2 of Figure 6A), and with the anti-p65 antibody (lane 3 of Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig6-v2.jpg)
+
+**Figure 6.:** (A) CDKN2A promoter sequences were recovered by PCR from p65 immunoprecipitates. (B) p65‐like elements in the human CDKN2A promoter region and the mutated sequence are marked in red (upper panels). Below: structural schematic of the WT and mutant pGL4.23-p16 promoter reporter plasmids. (C) Luciferase activity driven by the CDKN2A promoter was more pronounced following NF-κB treatment. By contrast, luciferase activity that was not driven by the CDKN2A luciferase reporter decreased in the absence of NF-κB, and luciferase activity not driven by the mutant CDKN2A luciferase reporter decreased upon NF-κB treatment. Data are shown with mean ± SD (n = 3); ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52570/elife-52570-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) p16 promoter sequences were recovered by PCR from p65 immunoprecipitates but not preimmune IgG immunoprecipitates. (B) p65-like elements in the human CDKN2A promoter region and the mutated sequence are highlighted in red (upper panels). Below: structural schematic of the pGL4.23-p16 promoter reporter plasmid and the mutant pGL4.23-p16 promoter reporter plasmid. (C) Luciferase activity was driven by the CDKN2A promoter, and was more dramatic following NF-κB treatment, but not by the CDKN2A luciferase reporter without NF-κB treatment. No significant difference in luciferase activity was observed following NF-κB treatment when the CDKN2A luciferase reporter was mutated. Data are presented as the mean ± SD (n = 3); *p<0.05.
 
 Next, the WT and binding-site mutant CDKN2A promoter sequences were cloned into the pGL4.23‐basic vector (producing pGL4.23-wt and pGL4.23-mut, respectively), and the resulting plasmids were transiently transfected into human NP cells (Figure 6B). Transfection with the empty plasmid (pGL4.23) without the CDKN2A promoter sequence and the Renilla expression plasmid (vector+pGL+pRL) or with the p65 plasmid, and pGL4.23 without the CDKN2A promoter sequence and the Renilla expression plasmid (p65+pGL+pRL) served as the negative controls. Luciferase activity was significantly higher in NP cells transfected with the p65 and pGL-wt plasmids than in those transfected with empty plasmid and the pGL-wt plasmid, indicating that p65 successfully activated the CDKN2A promoter. By contrast, luciferase activity was significantly lower in NP cells transfected with the p65 and pGL-mut plasmids than in those transfected with the p65 and pGL-wt plasmids (Figure 6C). The findings confirm that the CDKN2A promoter region with the predicted NF-κB-p65 binding sites is sufficient to promote transcription, providing a molecular mechanism that emphasizes p65‐dependent p16 transcriptional activation in NP cells.
 
@@ -114,66 +158,419 @@ Taken together, from the data in the current study, a model illustrating the rol
 
 ## Materials and methods
 
-## Human NP collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>p16 plasmid</td>
+      <td>Invitrogen</td>
+      <td>Addgene plasmid # 10916; RRID: Addgene_10916</td>
+      <td>Vector backbone: pcDNA3</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Empty plasmid</td>
+      <td>Invitrogen</td>
+      <td>Addgene plasmid # 45346; RRID: Addgene_45346</td>
+      <td>Vector backbone: pcDNA3</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>p16 siRNA</td>
+      <td>GenePharma; Lau et al., 2007</td>
+      <td>A09004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Null siRNA</td>
+      <td>GenePharma</td>
+      <td>A06001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pGL4.23-p16-wt plasmids</td>
+      <td>Promoterbio Lab</td>
+      <td></td>
+      <td>pGL4.23‐basic luciferase vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pGL4.23-p16-mut plasmids</td>
+      <td>Promoterbio Lab</td>
+      <td></td>
+      <td>pGL4.23‐basic luciferase vector</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Nucleus pulposus cells</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from human nucleus pulposus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p16 ARC antibody (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab51243, RRID: AB_2059963</td>
+      <td>IF (1:100); WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLB1/beta-galactosidase antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab203749</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-8-hydroxy-2'-deoxyguanosine antibody (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab48508, RRID: AB_867461</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab15580, RRID: AB_443209</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA antibody (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab92552, RRID: AB_10561973</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-collagen I antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab34710, RRID: AB_731684</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-collagen X (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab58632, RRID: AB_879742</td>
+      <td>WB (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-collagen II antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab34712, RRID: AB_731688)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SIRT1 antibody (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab110304, RRID: AB_10864359</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-superoxide dismutase one antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab13498, RRID: AB_300402</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOD2/MnSOD antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab13533, RRID: AB_300434</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MMP3 antibody (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab52915, RRID: AB_881243</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MMP13 antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab39012, RRID: AB_776416</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta actin antibody (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab8226, RRID: AB_306371</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IGF1 antibody (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab9572, RRID: AB_308724</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VEGF 165A antibody (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab69479, RRID: AB_1271452</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cdk6 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab131469, RRID: AB_11156738</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cdk4 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab199728</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p53 antibodies (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-126, RRID: AB_628082</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p19 antibody (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-1665, RRID: AB_628069</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rb antibody (mouse Monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-74562, RRID: AB_2177334)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-Rb antibody (rat monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-56175, RRID: AB_785453</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-E2F-1 antibody (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-137059, RRID: AB_2096771</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-E2F-2 antibody (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-633, RRID: AB_2096793</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NFκB p65 antibody (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-71675, RRID: AB_1126640</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-1β human</td>
+      <td>Sigma Aldrich</td>
+      <td>SRP6169</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Diacetyl dichlorofluorescein staining</td>
+      <td>Sigma Aldrich</td>
+      <td>35848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EdU Flow Cytometry Assay Kits</td>
+      <td>Invitrogen</td>
+      <td>C10425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CCK-8 assay</td>
+      <td>KeyGen</td>
+      <td>KGA317s-3000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Propidium iodide staining</td>
+      <td>KeyGen</td>
+      <td>KGA512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-1β, IL-6 and TNF-α ELISA kit</td>
+      <td>KeyGen</td>
+      <td>KGEMC001b-1; KGEMC004-1; KGEMC102a-1.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vectastain Elite ABC reagent</td>
+      <td>Fisher Scientific</td>
+      <td>NC9461324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein Extraction Kit</td>
+      <td>Thermo Fisher</td>
+      <td>AM1556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine2000</td>
+      <td>Thermo Fisher</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL</td>
+      <td>Beyotime</td>
+      <td>P0018FS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol reagent</td>
+      <td>Beyotime</td>
+      <td>R0016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript RT Master Mix</td>
+      <td>TaKaRa</td>
+      <td>Cat. #RR036Q</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChIP kit</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Sigma Aldrich</td>
+      <td>R8781</td>
+      <td>50 nM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID: SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad</td>
+      <td>GraphPad Prism</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human NP collection
 
 Thirty-two fresh human intervertebral disc tissue samples were harvested from patients undergoing intervertebral disc surgery at the First Affiliated Hospital of Nanjing Medical University (patients’ information is listed in Supplementary file 2). Before the operation, the informed consents of the patients were obtained. These consents included the voluntary donation of the diseased nucleus pulposus tissue extracted from the operations, and consent for the use of all specimens for scientific research and for publication of the results obtained in scientific journals. This project was implemented by the approval of the Ethics Committee of the First Affiliated Hospital of Nanjing Medical University (registered number 2018 SR-233). All the samples were divided into four groups using the Pfirrmann score, which was determined on the basis of MRI results from each patient before surgery.
 
-## Human NP cell isolation and culture
+### Human NP cell isolation and culture
 
 The NP tissues were cut into small pieces and digested at 37°C overnight with collagenase XI (Sigma, Ohio, USA), dispase II (Sigma, Ohio, USA) and cell culture medium (containing 2% penicillin/streptomycin and 10% fetal bovine serum, Thermo, Massachusetts, USA). The cell solution was centrifuged to obtain the cell pellets. NP cells were stimulated with 10 ng/mL IL-1β (Sigma, Ohio, USA) to establish a degeneration model (Shen et al., 2017). We also cotreated IL-1β-treated NP cells with 50 nM rapamycin (Gao et al., 2018) (Sigma, Ohio, USA) to determine its function during NP cell degeneration.
 
-## Plasmid transfection and siRNA interference
+### Plasmid transfection and siRNA interference
 
 Human p16 plasmid vectors and siRNA were provided by Invitrogen (Massachusetts, USA) and GenePharma (Shanghai, China). The CDKN2A gene was inserted into the pcDNA3.1 plasmid. On the basis of the manufacturer's instructions, NP cells were transfected with Lipo6000 (Beyotime, Shanghai, China). Then cells were transfected by siRNA against CDKN2A (Lau et al., 2007). 24 hr later, IL-1β (10 ng/mL) was used to treat the cells for 4 days, and the cells were harvested for subsequent experiments. The transfection efficiency was examined by quantitative real-time polymerase chain reaction (qRT-PCR), immunofluorescence (IF), and western blot (WB).
 
-## p16 KO mice and tail suspension (TS) IVDD model
+### p16 KO mice and tail suspension (TS) IVDD model
 
 The Cdkn2a heterozygous mice (FVB N2 background) were a gift from Baojie Li (Shanghai Jiao Tong University, Shanghai, China) and had been backcrossed on the C57BL/6J background. These mice were mated to produce Cdkn2a knock-out (p16 KO) and wild-type (WT) littermates. Animal use was approved by the Institutional Animal Care and Use Committee of Nanjing Medical University (approval number: IACUC-1709021). As an IVDD model (Hutton et al., 2002; Nakamura et al., 2013), TS was carried out in mice for 4 weeks. A specialized cage was made to suspend the mice (Figure 4—figure supplement 1A). Forty-eight 16-week-old WT and p16 KO mice were randomly separated into two groups that were divided into two subgroups: WT control (WT), p16 KO control (p16 KO), tail-suspended WT (WT+TS), and tail-suspended p16 KO (p16 KO+TS) groups. At the appropriate time point, the mice were humanely killed, and the lumbar vertebrae (from lumbar 1 to 5) were removed for examination.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cultured NP cells were rinsed three times using phosphate-buffered saline (PBS), fixed by 4% formaldehyde for 15 min, incubated in 0.25% Triton X‐100 for 15 min, and blocked by 5% bovine serum albumin (BSA, Sigma, Ohio, USA) in PBS for 30 min at room temperature. Then, the cells were treated with primary antibody against p16 (ab51243, Abcam, Cambridge, UK) for one night at 4°C, and incubated with DyLight 488-conjugated goat anti-rabbit IgG antibody (Abbkine, California, USA) for 2 hr in the dark at room temperature. The cells were visualized using a fluorescence microscope (Leica, Wetzlar, Germany), and nuclei were counterstained with DAPI (Beyotime, Shanghai, China).
 
-## Radiological study
+### Radiological study
 
 Before the animals were sacrificed, X-ray images and micro-MRI scans were taken. X-rays were used to measure the disc height and vertebral body. The intervertebral disc height index (DHI) was obtained by calculating the average values of the posterior, middle and anterior parts of the intervertebral disc, and these values were divided by the average height of the adjacent vertebral body (Figure 4—figure supplement 4). Micro-MRI was performed using T2-weighted sections. On the basis of changes in signal intensity with four grades (1, normal; 2, minimal decrease; 3, moderate decrease; and 4, severe decrease), a revised Thompson classification was used to evaluate disc status.
 
-## Histological staining
+### Histological staining
 
 Mouse lumbar spines (L3–L6) were decalcified for 14 days after fixation in 4% paraformaldehyde (PFA) solution. Human NP tissues and mouse spines were processed for paraffin embedding and sectioning into 5-μm-thick slices for histological staining or immunohistochemistry (IHC), as described below. To evaluate disc degeneration, deparaffinization, hydration, and hematoxylin and eosin (H and E) staining were used to treat the paraffinized slices (Wang et al., 2009) so that cells and tissue morphology could be observed. Masson’s stain (Nagatoya et al., 2002) was added to analyze NP fibrosis; Safranin O (Kiviranta et al., 1985) was added to analyze proteoglycans (PGs); and senescence-associated beta-galactosidase (SA-β-gal) (Ji et al., 2012) was added to identify senescent cells.
 
-## IHC
+### IHC
 
 IHC was performed as in a previous study (Yukata et al., 2018). Briefly, sections were treated with sodium citrate (10 mM, 100°C) (for antigen retrieval) and H2O2 (10% in PBS) (for endogenous peroxidase inactivation). Next, the slices were blocked with 10% goat serum, and incubated overnight at 4°C using primary antibodies against β-galactosidase (ab203749, Abcam, Cambridge, UK), 8-hydroxy-2 deoxyguanosine (8-OHdG) (ab48508, Abcam, Cambridge, UK), Ki67 (ab15580, Abcam, Cambridge, UK), and PCNA (ab92552, Abcam, Cambridge, UK). Then, biotinylated goat anti-mouse or anti‐rabbit IgG (Sigma, Ohio, USA) were used to treat the slices, before they were incubated with Vectastain Elite ABC reagent (Fisher Scientific, Hampton, New Hampshire, USA) for 30 min. 3,3‐diaminobenzidine was used for staining, followed by counterstaining with hematoxylin. 8-OHdG, Ki67, and PCNA are mostly expressed in the nucleus; p16 and β-galactosidase are expressed in both the nucleus and the cytoplasm. The positive cell rate for 8-OHdG, Ki67 and PCNA is the ratio of the number of positive nuclei to the number of all hematoxylin-labeled cells. The positive cell rate for p16 and β-galactosidase is the ratio of the number of positive nuclei or/and cytoplasm to the number of all hematoxylin-labeled cells.
 
-## Protein extraction and western blot (WB)
+### Protein extraction and western blot (WB)
 
 Proteins were harvested from human NP tissues or mouse disc tissues with a Protein Extraction Kit (Thermo, Massachusetts, USA). Immunoblotting was performed as in a previous study (Miao et al., 2008), using primary antibodies, against collagen I/X (ab34710/ab58632, Abcam, Cambridge, UK), collagen II (ab34712, Abcam, Cambridge, UK), Sirt1 (ab110304, Abcam, Cambridge, UK), superoxide dismutase 1/2 (SOD1/2) (ab13498/ab13533, Abcam, Cambridge, UK), matrix metalloproteinases-13 (MMP-13) (ab52915/ab39012, Abcam, Cambridge, UK), nuclear factor kappa-B-p65 (NF-κB-p65) (SC-71675, Santa Cruz, California, USA), insulin-like growth factor 1 (IGF-1) (ab9572, Abcam, Cambridge, UK), vascular endothelial growth factor (VEGF) (ab69479, Abcam, Cambridge, UK), p19/53 (SC-1665/SC-126, Santa Cruz, California, USA), cyclin-dependent kinases 4/6 (CDK4/6) (ab199728/ab131469, Abcam, Cambridge, UK), retinoblastoma protein/phosphorylated retinoblastoma protein (Rb/pRB) (SC-74562/SC-56175, Santa Cruz, California, USA), transcription factor E2F1/2 (E2F1/2) (SC-137059/SC-633, Santa Cruz, California, USA), and β‐actin (ab8226, Abcam, Cambridge, UK). Immunoreactive bands were analyzed by Scion Image Beta 4.02 and visualized with ECL (Beyotime, Shanghai, China).
 
-## RNA extraction and quantitative real-time PCR (qRT-PCR)
+### RNA extraction and quantitative real-time PCR (qRT-PCR)
 
 Total RNA was harvested from human NP cells and mouse disc tissues with TRIzol reagent (Beyotime, Shanghai, China). PrimeScript RT Master Mix (Perfect Real Time, TaKaRa, California, USA) was used to reverse transcribe RNA to cDNA. Supplementary file 3 tabulates the qRT-PCR primer sequences. GAPDH was used for normalization. Relative mRNA expression levels were determined by the 2−ΔΔCt method.
 
-## Enzyme-linked immunosorbent assay (ELISA)
+### Enzyme-linked immunosorbent assay (ELISA)
 
 Serum samples were obtained from blood collected from the eyeballs of mice in each group. Mouse NP cells were also collected by the method described above. The levels of IL-1β, IL-6 and TNF-α in NP cell supernatants were determined using an ELISA kit (KeyGen, Nanjing, China).
 
-## Flow cytometry analyses
+### Flow cytometry analyses
 
 Total ROS production, NP cell proliferation and cell-cycle progression were separately assessed using diacetyl dichlorofluorescein staining (Sigma Aldrich, Ohio, USA), propidium iodide staining (KeyGen, Nanjing, China), and EdU Flow Cytometry Assay Kits (Invitrogen, Massachusetts, USA), respectively. Human and mouse NP single-cell suspensions were prepared in PBS, and the cells were treated with the corresponding specialized reagent. The cell pellets were incubated at 37°C for 30 min and obtained by centrifugation. Finally, the specimens were investigated by flow cytometry with a FACSCalibur flow cytometer.
 
-## CCK-8 cell viability assay
+### CCK-8 cell viability assay
 
 Cell proliferation was evaluated with a CCK-8 assay (KeyGen, Nanjing, China). In brief, cells in each group (5000/well) were allowed to grow for 24, 48, and 72 hr. Ten microliters of CCK reagent in a total volume of 100 μl was put into each well, before incubation for 3–4 hr. The absorbance at 450 nm was measured by an ELISA plate reader (Thermo Electron, Massachusetts, USA).
 
-## Chromatin immunoprecipitation (ChIP) assay
+### Chromatin immunoprecipitation (ChIP) assay
 
 The 2000-bp region upstream of the p16 gene was selected as the promoter region according to the National Center for Biotechnology Information database (http://www.ncbi.nlm.nih.gov/). After predicting DNA-binding sites for the NF-κB-p65 transcription factor in the p16 promoter using the JASPAR core database (Bryne et al., 2008), five putative binding sites were identified close to the transcription start site. ChIP primers targeting these sites were designed by Primer Premier. ChIP assays were carried out using a ChIP kit (CST, Massachusetts, USA) and a p65 antibody obtained from Abcam. The relative binding of NF-κB-p65 to p16 was assessed by PCR, followed by digital imaging of agarose gels.
 
-## Plasmid constructs and luciferase reporter gene assay
+### Plasmid constructs and luciferase reporter gene assay
 
 WT and mutant CDKN2A gene promoter segments were synthesized by Promoterbio Lab (Taizhou, China) and then cloned into the pGL4.23‐basic luciferase vector to obtain the pGL4.23-p16-wt and pGL4.23-p16-mut plasmids: control plasmid (0.1 μg)+pGL4.23‐basic vector (0.1 μg)+Renilla plasmid (0.01 μg), control plasmid+pGL4.23‐WT p16 promoter vector+Renilla plasmid, control plasmid+pGL4.23‐mutant p16 promoter vector+Renilla plasmid, NF-κB-p65 sequence plasmid+pGL4.23‐basic vector+Renilla plasmid, NF-κB-p65 sequence plasmid+pGL4.23‐WT p16 promoter vector+Renilla plasmid, and NF-κB-p65 sequence plasmid+pGL4.23‐mutant p16 promoter vector+Renilla plasmid, separately with Lipofectamine2000 (Thermo Fisher, Massachusetts, USA). The cells were incubated in normal culture medium for 48 hr after transfection. Luciferase assays was implemented after the cells were collected and lysed. And then luciferase activity was standardized to Renilla luciferase activity.
 
-## Statistical analyses
+### Statistical analyses
 
 All analyses were carried out by SPSS software (version 20.0, USA). Mean ± SD was used to present the data. To compare differences between groups, one‐way ANOVA and student's t-test were used. After analysis using a chi‐square test, qualitative data are presented as percentages. All graphs were generated using GraphPad Software (version 5.0.0, USA). P values were two‐sided, and p<0.05 indicated statistical significance.

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01hcx6992 Humboldt Universität Berlin Germany
+1. Humboldt Universität Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ Autopilot also uses a swarm of Raspberry Pis. However, it implements a hierarchy
 
 ## Results
 
-## System overview
+### System overview
 
 We designed LabNet as a distributed system (network) where LabNet presents a node running on a RasPi. We had two important requirements for this system: openness and scalability (see van Steen and Tanenbaum, 2017). Openness means that each node can control an experimental chamber on its own or together with a number of other nodes (for experimental system examples, see Figure 1 and 4). Scalability means that there can be any number of nodes and thus experimental chambers in the system. However, a node or a chamber has to be removable from the system without adjustments on the other nodes. To ensure this, each node in our system is controlled by a RasPi, each RasPi is configured in the same way and controlled by the same software. However, this also comes with the restriction that at most one experimental system can be connected to each RasPi to be removable without electrical adjustments. But this also means a simplification: LabNet only needs to accept a single connection and does not need resource management for multiple connections, because only one experiment runs on one system and the hardware is not shared.
 
@@ -45,7 +45,7 @@ Extensions with new functionalities is generally possible in two ways: (i) softw
 
 Since its version 2 the Raspberry Pi has 4 cores. In addition, most of its hardware controllers, such as USB or Ethernet, operate asynchronously, thus they do not require CPU capacity because of DMA (Direct Memory Access), and they report their work completion via interrupt messages. LabNet needed an architecture that optimally leverages this already available hardware asynchrony for parallel execution. Handling GPIO lines is fast, but accessing a UART may lead to considerable delays in sequentially executed software. This presupposes the use of multiple threads. Since programming with many parallel threads is a very error-prone and time-consuming task, we decided to develop an actor-based software (see sections Actor model and SObjectizer). This also provides higher flexibility and software modularity.
 
-## Example
+### Example
 
 The following example and the corresponding listings (1–3) show how a client can initialize and control the hardware together with a LabNet server on a RasPi with a simple hardware setup. The client could run on a PC and use any language that has support for Protobuf-like Python, C++, C#, etc. Since we use C# in our experiments, the C# notation is also used in the listings. Basically, it shows the use of some of the LabNet messages, but the communication via TCP/IP is omitted for simplicity. We simply assume that a TCP/IP client exists and handles all operations like send, receive, and serialization.
 
@@ -55,7 +55,7 @@ During experiments, animals must usually perform some operant behaviour. This ca
 
 A typical experiment in combination with LabNet comprises several phases:
 
-## Performance evaluation
+### Performance evaluation
 
 Because the neurons in the brain work in the millisecond range, the response times in behavioural experiments are critical and should match that range.
 
@@ -87,7 +87,7 @@ var sine = new DefineSineTone {
    Volume = 0.5
 };
 
-## Listing 1
+#### Listing 1
 
 Each generated object represents an initialization message to be serialized with Protobuf and transmitted to LabNet. The first message initializes the digital I/O interface with WiringPi pin notation. The next three initialize an LED, a valve, and a poke sensor on the WiringPi interface. The fifth creates the sound generator on the headphone jack. The last, initializes a sine tone with 1 kH frequency and 50% volume. Object initialization in C# notation. Serialization and TCP/IP communication not listed.
 
@@ -104,7 +104,7 @@ var pulseSound = new DigitalOutPulse {
    Pulses =10
 };
 
-## Listing 2
+#### Listing 2
 
 Information for transmission via Protobuf, building on the initialization from Listing 2.2. The LED is set to ON state (until an OFF command). A sound, defined as 1 kHz in Listing 2.2, is emitted as 10 pulses of 500 ms. Object initialization code in C# notation.
 
@@ -118,7 +118,7 @@ if (pokeState.State) // if new state true -> on
    };
 }
 
-## Listing 3
+#### Listing 3
 
 In this example, LabNet has transmitted via Protobfuf a new poke sensor state (pokeState) to the PC. If the new poke state is true, a new message directs LabNet to deliver a reward by opening valve at pin 26 for 100 ms, as initialized in Listing 1. Code shown in C# notation.
 
@@ -130,7 +130,7 @@ LabNet was also compiled with different optimizations to investigate the perform
 
 Each test was run 10,000 times and was performed on three different RaspberryPi boards: RasPi 2B, 3B+, and 4B with 1 GB RAM. Statistical variables such as: mean, STD, median, and percentiles were calculated from the time measurements.
 
-## Set digital out test
+#### Set digital out test
 
 In the ‘set out test’, a digital output is alternately set to 0 and 1. After the command for setting the pin has been received and processed, LabNet automatically sends back an acknowledgement. In this test, the time between sending the set command and receiving this confirmation was measured. Because of the simplicity, this test can also be seen as a type of ping measurement.
 
@@ -142,13 +142,13 @@ The results are shown in Figure 2a. The median for C# was between 0.36 ms for 4 
 
 **Figure 2.:** (a) Time to set a digital output as a Ping equivalent. (b, d) Latency to set a digital output in response to a change on a digital input. (c) Run the ‘read and set’ test for up to 14 IO-pin pairs in parallel. LabNet ran on RasPi 4. Tests were repeated 10,000 times and results are in milliseconds. Tests were performed on three different RaspberryPi boards: Rv2 is 2B, Rv3 is 3B+, and Rv4 is 4B with 1 GB RAM. optimized refers to the LabNet with some additional optimization flags (see main text). 1 kHz refers to the version without optimizations running on Rv4 with 1 kHz polling and max refers to non-stop polling. Box plots in (a–c) show median, lower and upper quartile, and whiskers the 2.5th and 97.5th percentiles. Data in (d) given as means and STD.
 
-## Read and set GPIO
+#### Read and set GPIO
 
 In this test, the reaction time to external events was measured. LabNet first had to detect the interruption of a photogate by an animal’s nose, send a message to the client and in response the client had to initiate the change of a digital output state through a message to LabNet. To simulate the nose-poke events, a second RasPi was used. Two pins between the two RasPis were connected: one for the test signal from the second RasPi and one for the response from LabNet. The second RasPi was only responsible for switching the first pin to 1, stopping the time and waiting until the RasPi with LabNet had also switched the second pin to 1 in response. The time between these two high events is the latency (see Figure 3b). The measurement software on the second RasPi was written in C++ and ran on RasPi 3B+. We also verified how fast this software can detect the response signal. To do this, we simply connected test and response pins on the second RasPi together. This way the response pin goes immediately high if the test pin is set. The latency in this case was only 0.7 ± 0.6 µs. This means that the second RasPi acts like a 1 MHz oscilloscope. This is entirely sufficient in our case.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77973/elife-77973-fig3-v1.jpg)
 
-**Figure 3.:** (a) Comparison of execution latencies. All tools performed the same ‘read and set’ task to achieve comparability, except Whisker. Whisker server implements a 1 kHz polling frequency on the PC. LabNet for digital input polling depends on the internal RasPi 4 kHz polling frequency. Only for LabNet do the latencies include the message transfer over the Ethernet wire. Values give means with STD. LabNet was operated with a C# client. LabNet and Autopilot use the RasPi 4. (b) The latency measurement in Read and set GPIO test. The measurement RasPi generates the high ‘test’ signal, saves the time, and waits until the ‘response’ signal is also high. The time t between these two high events is the latency. The test RasPi repeats this for 10,000 times and saves the results in a CSV file. RasPi acts here as 1 MHz oscilloscope. All packages (Autopilot, Bpod, pyControl, and LabNet) were tested in the same way. In the Stress test we have multiple ‘test’ and ‘response’ lines.k
+**Figure 3.:** (a) Comparison of execution latencies. All tools performed the same ‘read and set’ task to achieve comparability, except Whisker. Whisker server implements a 1 kHz polling frequency on the PC. LabNet for digital input polling depends on the internal RasPi 4 kHz polling frequency. Only for LabNet do the latencies include the message transfer over the Ethernet wire. Values give means with STD. LabNet was operated with a C# client. LabNet and Autopilot use the RasPi 4. (b) The latency measurement in Read and set GPIO test. The measurement RasPi generates the high ‘test’ signal, saves the time, and waits until the ‘response’ signal is also high. The time tk between these two high events is the latency. The test RasPi repeats this for 10,000 times and saves the results in a CSV file. RasPi acts here as 1 MHz oscilloscope. All packages (Autopilot, Bpod, pyControl, and LabNet) were tested in the same way. In the Stress test we have multiple ‘test’ and ‘response’ lines.
 
 The digital input state message from LabNet is 22 bytes long, and includes the timestamp. The set command from the client has 10 bytes. LabNet has to send two messages to indicate the input state. The client has also to send two messages to switch the output state. Additionally, LabNet sends two messages to acknowledge the output state switch. Thus, there is a total of six messages per iteration.
 
@@ -160,7 +160,7 @@ As a further result, the compiler optimization flags did not influence any of th
 
 The 1 GigE update of the RasberryPi 4 causes a performance increase over models 2 and 3. Despite the differences in implementation, all clients are relatively close with their performance. The results also show that the language used at the client side is not important, at least for the simple cases considered here.
 
-## Stress test
+#### Stress test
 
 This is an extension of the ‘read and set’ tests. But now 14 pairs of pins were connected; all 28 GPIOs on both RasPis were used. The C++ program on the second RasPi ran up to 14 tests in parallel, each in an own thread. The pause between single measurement runs was set to 1 ms. We needed this pause to give all threads a chance to be executed. The C++ measurement program ran on the RasPi 3B+ as before and LabNet on 4.
 
@@ -168,7 +168,7 @@ The results in Figure 2c show that LabNet can monitor and control up to 14 pairs
 
 Additionally, we looked at how many latency measurements per second the second RasPi could execute. With a single test signal this was just over 400 events per second. With the maximum of 14 tests each single pin switched only 200 but all pins together a total of 2800 times per second. The drop in the number of events per second from 400 for a single IO-pin occurs as soon as more than 4 IO-pin pairs are handled. This is a consequence of the four CPU cores on the RasberryPi. As soon as the test signal has been set, the software continuously monitors the state of the response pin. This keeps one CPU core fully busy and prevents the execution of the other test threads. However, this performance evaluation also shows that LabNet has no problems to process several thousand messages per second in each direction.
 
-## Comparison
+#### Comparison
 
 Our comparison of LabNet latency performance with other software tools is summarized in Figure 3a. We implemented an adapted version of the ‘read and set’ test for Autopilot, Bpod, and pyControl to achieve measurement comparability. The latency measurements were performed in exactly the same way as previously with LabNet. Two pins were connected to the measurement RasPi. The same C++ measurement program ran again on a RasPi 3b+, set the test pin to 1, and waited until the response pin was also set to 1. Tests were repeated 10,000 times. Different from LabNet all tools ran locally and did not send commands over the wire in the network. For source code and data, see the Code availability section.
 
@@ -192,7 +192,7 @@ We also perform behavioural experiments with rodents. In a study on rational cho
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77973/elife-77973-fig4-v1.jpg)
 
-**Figure 4.:** On the left is the touchscreen chamber. (a) Feeder magazine with a nose-poke sensor and a pellet dispenser, (b) a row of LEDs, (c) a tone generator, (d) monitor displays for visual stimuli with IR touch frame sensor. In the middle is the sorting module. () three RFID readers. r1-r3r2 and r3 are positioned so that the animals can be read anywhere inside the sorter and r1 so that the animal is read when it leaves the sorter. (d) Two doors to catch the animal inside the sorter and guide it to the experimental chamber or the home cage. The animals live inside the home cage and can participate voluntarily and unsupervised in the experiments in the touchscreen chamber via the sorter. Both the touchscreen system and the sorter are each equipped with their own RasPi and connected to PC via Ethernet. The sorter can be removed without electrical adjustments, because it is controlled by its own RasPi and is therefore completely independent from the touchscreen system. Then experiments can be conducted with manually introduced animals.1, d2
+**Figure 4.:** On the left is the touchscreen chamber. (a) Feeder magazine with a nose-poke sensor and a pellet dispenser, (b) a row of LEDs, (c) a tone generator, (d) monitor displays for visual stimuli with IR touch frame sensor. In the middle is the sorting module. ($r_{1}-r_{3}$) three RFID readers. r2 and r3 are positioned so that the animals can be read anywhere inside the sorter and r1 so that the animal is read when it leaves the sorter. (d1, d2) Two doors to catch the animal inside the sorter and guide it to the experimental chamber or the home cage. The animals live inside the home cage and can participate voluntarily and unsupervised in the experiments in the touchscreen chamber via the sorter. Both the touchscreen system and the sorter are each equipped with their own RasPi and connected to PC via Ethernet. The sorter can be removed without electrical adjustments, because it is controlled by its own RasPi and is therefore completely independent from the touchscreen system. Then experiments can be conducted with manually introduced animals.
 
 More recently we have implemented an experimental touchscreen system for group housed mice that is fully under RasPi and LabNet control (Figure 4). This consists of a touchscreen system, a sorter, and a home cage. The touchscreen system has a monitor with an IR touch frame, a pellet magazine with pose-poke sensor, a row of LEDs, and a tone generator. All components are connected to a RasPi with LabNet control. Listings 2.2–2.2 show how this hardware can be initialized and controlled from the PC. The sorter has three RFID readers, two motorized doors, and two hall effect sensors, all connected to a RasPi. The readers connect via UART-USB converters, motors are controlled via UART, and the hall effect sensors for door state connect to IO ports. The sorting procedure, that is, when which door goes up or down, is realized by the PC, the client. The animals live inside the home cage and participate voluntarily and unsupervised in the experiments in the touchscreen chamber. Figure 4 shows only one system, but we had up to four systems connected and controlled by one PC. This also shows the advantage of a distributed system like LabNet. In order to control more systems, they were simply connected to the network without further adjustments. With identical systems, the same experiments could run everywhere at the same time.
 
@@ -206,9 +206,61 @@ In the future, we plan to implement a software plug-in system. This will make it
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species)or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pyControl</td>
+      <td>https://github.com/pyControl/code.git</td>
+      <td>RRID:SCR_021612</td>
+      <td>pyControl sourcecode repository, v1.7.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Autopilot</td>
+      <td>https://github.com/auto-pi-lot/autopilot.git</td>
+      <td>RRID:SCR_021518</td>
+      <td>Autopilot sourcecode repository, v0.4.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bpod</td>
+      <td>https://github.com/sanworks/Bpod_Gen2.git</td>
+      <td>RRID:SCR_015943</td>
+      <td>MATLAB softwarefor Bpod, Gen2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bpod</td>
+      <td>https://www.sanworks.io/index.php</td>
+      <td>RRID:SCR_015943</td>
+      <td>r2 Bpod State Machine</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabNet</td>
+      <td>https://github.com/WinterLab-Berlin/LabNet.git</td>
+      <td>SHA-1: 333bd58</td>
+      <td>LabNet sourcecode repository</td>
+    </tr>
+  </tbody>
+</table>
+
 Data of the performance measurements, the source code for Autopilot, Bpod, and pyControl tasks and the source code for the graphs are included in the article’s data and source code repository.
 
-## Actor model
+### Actor model
 
 Developing a system with multiple threads still requires much care and can be challenging. Thread local state and program global state have to be protected. Some type of locking mechanism is required. Unfortunately, the locking mechanism itself increases not only the scalability but also the code complexity and error-proneness due to the locking order. Locking problems such as race conditions or dead-locks must be avoided. But time and execution order-dependent errors can be difficult to find and fix.
 
@@ -218,7 +270,7 @@ Hewitt, Bishop, and Steiger (Hewitt et al., 1973) proposed in 1973 with their ac
 
 This has further developed to a level of abstraction from only considering shared memory to independent actors that communicate through a well-defined message protocol. In the late 1980s, Ericsson developed Erlang (Armstrong, 1996), an actor-based programming language, and successfully used it in ATM network switches. The Akka (Lightbend, 2021) actors framework was released in 2009 for Java and Scala.
 
-## SObjectizer
+#### SObjectizer
 
 From the several actor model libraries that are available for C++ such as the C++ Actor Framework (CAF) (Charousset et al., 2013), SObjectizer (Stiffstream, 2021), or Theron (Mason, 2019) we chose SObjectizer.
 
@@ -232,7 +284,7 @@ One important feature of SObjectizer is the built-in support for hierarchical st
 
 Dispatchers are another important cornerstone of SObjectizer. Dispatchers provide an actor with the working context. They manage all message queues and execute the actors if there are messages in the queue (Mbox). We have chosen the dispatcher with a thread pool. It provides a good compromise between thread management overhead and parallelism. But it is still possible to use other dispatcher types (e.g. one with one thread per actor) without having to adapt the actors.
 
-## Message protocol
+### Message protocol
 
 Our criteria for choosing the serialization tool were good performance, small message size, and support in as many programming languages as possible. Text-based serialization formats, such as XML, JSON, or ASCII-based plain-text, have the advantage of being human-readable. The Whisker server uses an ASCII-based format (Cardinal and Aitken, 2010). The disadvantages are the message size, higher computing requirements, and, at least for the ASCII version, a custom message parser.
 
@@ -242,7 +294,7 @@ Protobuf uses a special meta-language to define messages. With protoc-generator,
 
 One Protobuf disadvantage must be mentioned. A serialized Protobuf message contains no information about the byte length nor the message type. Protobuf leaves this information to the transmission medium. We have solved this simply: each message begins with two pieces of information: type and size. This is also the officially recommended approach. Both are encoded as a number in Protobuf’s varint notation and are easy to parse with the Protobuf API.
 
-## Implementation
+### Implementation
 
 The current implementation does not contain configuration files for LabNet. The hardware initialization is exclusively performed through client messages. LabNet comprises several loosely coupled actors. The most important are briefly described below (see also Figure 5).
 
@@ -258,17 +310,17 @@ Many pins on the Raspberry Pi offer more than one functionality. Clear responsib
 
 The ‘interfaces’ with digital outputs offer only the possibility to switch the output pin state. More complex procedures are implemented by the digital out helper actor. This actor can automatically turn off a pin after a defined time or generate pulses by specifying the on/off duration and number of pulses. Additionally, a group of pins can be automatically switched on and off together in a loop.
 
-## Related work
+### Related work
 
 Most of the comparable software control tools published for behavioural experiments are more general packages. In addition to hardware control, they offer a more or less powerful tool for creating experiments, a user interface and a possibility to visualize the data. Although LabNet is only responsible for the hardware, a comparison is still worthwhile.
 
-## Wisker-Server
+#### Wisker-Server
 
 The development of Whisker control suite started in 1999 by Cardinal and Aitken at the Department of Experimental Psychology, University of Cambridge, and is ongoing (Cardinal and Aitken, 2010). Initially, the aim was to use the existing resources of a PC and plugged-in IO cards to control behavioural experiments with visual stimuli and touchscreens in several boxes simultaneously. This was solved by an additional software layer where Whisker operates as the server and controls the hardware. The clients must connect to the server over TCP/IP, and each one controls an experiment in one of the chambers. The clients themselves can be written in any programming language. Communication occurs through a plain-text protocol.
 
 Because of the outsourcing of the experiments to the clients, Whisker’s approach is similar to ours. Due to the flexibility in implementing the clients, complex experiments can be realized with Whisker. Hardware support includes digital I/O devices (National Instruments, Advantech, etc.), visual stimuli on computer monitors, touchscreens, audio, and more. Whisker is commercially used in ‘ABET II’ by Campden Instruments Ltd.
 
-## pyControl
+#### pyControl
 
 pyControl (Akam et al., 2022) is an open-source hardware and software framework for controlling behavioural experiments. The hardware is based on the MicroPython microcontroller that typically controls a single experimental box each. Several pyControl breakout boards can connect to a PC via USB. Each board has six so-called behaviour ports and four BNC ports. Each port can be connected to a module: to drive LEDs, nose-poke sensors, stepper motors, and speakers. Two behaviour ports have I2C internally and can drive a port expander module to increase the number of ports.
 
@@ -276,13 +328,13 @@ Tasks on the MicroPython microcontroller and pyControl on the PC use Python. A t
 
 pyControl provides sufficient I/O ports to realize most tasks on a system. However, for the hardware types, we are limited to the firmware capabilities and available modules, although free wiring is also possible. The mandatory requirement to define the task as a state machine can be useful but may also become a limitation.
 
-## Bpod
+#### Bpod
 
 Bpod Sanders, 2021 was originally developed in the Brody lab and is now maintained by Josh Sanders (Sanworks LLC.). It also has been expanded to PyBpod as a python port of the Bpod MATLAB project by members of the Champalimaud Foundation. Bpod offers only four I/O ports but has additional module ports that each provide an interface to Arduino-powered modules. Thus, Bpod gains additional flexibility: analog I/O, I2C, Ethernet, and more can be accessed via these modules.
 
 A MATLAB package is offered to write experimental tasks. Unfortunately, the package documentation is limited. The tasks are also defined as finite-state machines. After starting the task, the state machine is transferred to the Bpod. From there, it communicates with the MATLAB frontend. This design results in the restriction that only a single Bpod can be controlled per MATLAB session. Therefore, Bpod is much more limited regarding software than pyControl or Whisker. Multiple systems cannot run simultaneously, and the functionality is limited by the firmware and the state machine.
 
-## Autopilot
+#### Autopilot
 
 Autopilot Saunders and Wehr, 2019 is an open-source framework for behavioural experiments developed in the Wehr Lab at the University of Oregon. It uses Python, and the target platform is the Raspberry Pi.
 
@@ -292,7 +344,7 @@ Terminal agents are the only user-oriented with a graphical user interface. They
 
 Among all tools discussed here, Autopilot offers most flexibility. It already supports a whole range of hardware. This includes digital I/O, audio, cameras, and some sensors such as temperature. Moreover, since it is open-source, support for additional hardware can be added. New behavioural experiments can also be implemented. However, in both cases, we are limited to Python.
 
-## Code availability
+### Code availability
 
 The source code of LabNet is available over the GitHub repository under a GPL-3.0 license.
 

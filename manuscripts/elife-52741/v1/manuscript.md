@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Chytrids are early-diverging fungi that share features with animals that have been lost in most other fungi. They hold promise as a system to study fungal and animal evolution, but we lack genetic tools for hypothesis testing. Here, we generated transgenic lines of the chytrid Spizellomyces punctatus , and used fluorescence microscopy to explore chytrid cell biology and development during its life cycle. We show that the chytrid undergoes multiple rounds of synchronous nuclear division, followed by cellularization, to create and release many daughter ‘zoospores’. The zoospores, akin to animal cells, crawl using actin-mediated cell migration. After forming a cell wall, polymerized actin reorganizes into fungal-like cortical patches and cables that extend into hyphal-like structures. Actin perinuclear shells form each cell cycle and polygonal territories emerge during cellularization. This work makes Spizellomyces a genetically tractable model for comparative cell biology and understanding the evolution of fungi and early eukaryotes.
+Chytrids are early-diverging fungi that share features with animals that have been lost in most other fungi. They hold promise as a system to study fungal and animal evolution, but we lack genetic tools for hypothesis testing. Here, we generated transgenic lines of the chytrid Spizellomyces punctatus, and used fluorescence microscopy to explore chytrid cell biology and development during its life cycle. We show that the chytrid undergoes multiple rounds of synchronous nuclear division, followed by cellularization, to create and release many daughter ‘zoospores’. The zoospores, akin to animal cells, crawl using actin-mediated cell migration. After forming a cell wall, polymerized actin reorganizes into fungal-like cortical patches and cables that extend into hyphal-like structures. Actin perinuclear shells form each cell cycle and polygonal territories emerge during cellularization. This work makes Spizellomyces a genetically tractable model for comparative cell biology and understanding the evolution of fungi and early eukaryotes.
 
 ## Introduction
 
@@ -31,13 +31,13 @@ Chytrids are unique in that they have retained ancestral cellular features, shar
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig1-v1.jpg)
 
-**Figure 1.:** Spizellomyces punctatus.Timeline and events as measured in this work. The chytrid produces globular zoospores (3–5 µm) that swim with a motile cilium (20–24 µm). (A) The uninucleate zoospore (nucleus in blue) has a cilium associated with a basal body. Swimming zoospores can also crawl on surfaces using amoeboid-like motion (polymerized actin in red). (B) The start of encystment (before 1 hr) occurs when the cilium retracts by a lash-around mechanism, followed by formation of cell wall (Koch, 1968). (C) The cyst then germinates and forms a single germ tube (at 1–3 hr) that later expands and branches into a rhizoidal system. The nucleus remains in the cyst during germ tube expansion as the cyst develops into a single reproductive structure called the sporangium. The first mitotic event (at 8–12 hr) usually correlates with the ramification of rhizoids from the germ tube. (D) Mitosis in the sporangium is coordinated with growth, as nuclei replicate and divide in a shared compartment. There can be a total of five to eight synchronous mitotic cycles as each sporangium develops a branched rhizoid system with subsporangial swelling in the main rhizoid. (E) Mitosis halts and zoospore formation begins in the sporangium. Ciliogenesis likely occurs before cellularization as in other chytrids (Renaud and Swift, 1964). (F) The nuclei cellularize and develop into zoospores while the sporangium develops discharge papillae. Once cellularization is complete and environmental conditions are favorable, the zoospores will escape the sporangium through the discharge papillae (at 20–30 hr). Diagram not drawn to scale. Times are relative to the start of microscopy after zoospore harvest.
+**Figure 1.:** Timeline and events as measured in this work. The chytrid produces globular zoospores (3–5 µm) that swim with a motile cilium (20–24 µm). (A) The uninucleate zoospore (nucleus in blue) has a cilium associated with a basal body. Swimming zoospores can also crawl on surfaces using amoeboid-like motion (polymerized actin in red). (B) The start of encystment (before 1 hr) occurs when the cilium retracts by a lash-around mechanism, followed by formation of cell wall (Koch, 1968). (C) The cyst then germinates and forms a single germ tube (at 1–3 hr) that later expands and branches into a rhizoidal system. The nucleus remains in the cyst during germ tube expansion as the cyst develops into a single reproductive structure called the sporangium. The first mitotic event (at 8–12 hr) usually correlates with the ramification of rhizoids from the germ tube. (D) Mitosis in the sporangium is coordinated with growth, as nuclei replicate and divide in a shared compartment. There can be a total of five to eight synchronous mitotic cycles as each sporangium develops a branched rhizoid system with subsporangial swelling in the main rhizoid. (E) Mitosis halts and zoospore formation begins in the sporangium. Ciliogenesis likely occurs before cellularization as in other chytrids (Renaud and Swift, 1964). (F) The nuclei cellularize and develop into zoospores while the sporangium develops discharge papillae. Once cellularization is complete and environmental conditions are favorable, the zoospores will escape the sporangium through the discharge papillae (at 20–30 hr). Diagram not drawn to scale. Times are relative to the start of microscopy after zoospore harvest.
 
 The major bottleneck to studying chytrids in molecular detail has been the lack of a model organism with tools for genetic transformation. Here, we describe the successful adaptation of Agrobacterium-mediated transformation to generate reliable and stable genetic transformation of the soil chytrid Spizellomyces punctatus. We expressed fluorescent proteins fused to histone and actin-binding proteins to characterize the development and cell biology of Spizellomyces throughout its life cycle using live-cell imaging. Below, we will show that Spizellomyces is a well-suited model system for uncovering molecular mechanisms of cell cycle regulation, cell motility, and development because it is fast-growing, displays both crawling and swimming motility, and possesses a characteristic chytrid developmental life cycle. These tools allow, for the first time, direct molecular probing to test new hypotheses about the evolution and regulation of the cell cycle (Medina et al., 2016), cell motility (Fritz-Laylin et al., 2017b), and development in chytrid fungi.
 
 ## Results
 
-## Developing tools for genetic transformation
+### Developing tools for genetic transformation
 
 The plant pathogen Agrobacterium tumefaciens normally induces plant tumors by injecting and integrating a segment of transfer DNA (T-DNA) from a tumor-inducing plasmid (Ti-plasmid) into the plant genome. Researchers have exploited this feature to integrate foreign genes in plants by cloning them into the T-DNA region of the Ti-plasmid, inducing virulence genes for processing/transport of T-DNA, and co-culturing induced Agrobacterium with the desired plant strain. Because Agrobacterium-mediated transformation has been adapted for transformation of diverse animals and fungi (Bundock et al., 1995; Kunik et al., 2001; Covert et al., 2001; Ianiri et al., 2017; Vieira and Camilo, 2011), we chose to use this system in Spizellomyces punctatus. To this end, we modified an Agrobacterium plasmid to integrate and express a selectable marker (e.g. drug resistance) in Spizellomyces.
 
@@ -47,21 +47,131 @@ Next, we identified Spizellomyces promoters that can drive gene expression at su
 
 With active promoters and effective selection, we performed Agrobacterium-mediated transformation by co-culturing Spizellomyces zoospores with Agrobacterium carrying H2Bpr-hph-GFP; see Materials and methods. Although Hygromycin-resistant, none of the GFP transformants (Figure 2—figure supplement 1B) exhibited green fluorescence above background. This has been seen in other emerging model systems (i.e. choanoflagellate Salpingoeca Booth et al., 2018) and is likely due to GFP misfolding. When GFP was replaced by tdTomato, we obtained transformants that exhibited both Hygromycin resistance (Figure 2—figure supplement 1B) and cytoplasmic fluorescence (Figure 2—figure supplement 2). Further tests with other fluorescent protein fusions showed that mClover3, mCitrine, and mCerulean3 are functional in Spizellomyces (Figure 2—figure supplement 2). We then designed a construct with greater applicability, in which the selectable marker and fluorescent protein are expressed independently and where the fluorescent protein (tdTomato) is fused in-frame to the C-terminus of a protein of interest (POI). This design exploits the compact and divergent architecture of the Spizellomyces H2A/H2B promoters to express (POI)-tdTomato in an upstream direction (H2B promoter) while expressing hph in a downstream direction (H2A promoter). As a proof of concept and because we were interested in following nuclear dynamics to measure the timing and synchrony of mitotic events (e.g. DNA segregation, see next section), our first protein of interest was histone H2B; see Figure 2A.
 
-## Mitotic cycles are fast and highly synchronous during sporangiogenesis
+![Figure 2.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig2-v1.jpg)
+
+**Figure 2.:** (A) Plasmid GI3EM20C takes advantage of the divergent architecture of H2A/H2B to express an H2B-tdTomato fusion in an upstream direction (H2B promoter) while expressing hph in a downstream direction (H2A promoter). (B) Representative images from wild type (left), and transformants expressing cytoplasmic hph-tdTomato (plasmid GI3EM18) (center) and nuclear-localized H2B-tdTomato (right). Top row shows DIC and the middle row shows fluorescence microscopy at 561 nm with overlaid images on the bottom row. For comparable results, all strains are presented at the same intensity levels used for H2B-tdTomato fluorescence image. Scale bar indicates ten microns. Image acquisition conditions: POL: transmittance 32%, exposure 0.15 s; TRITC filter, maximal projection, transmittance 32%, Exposure 0.2 s, 0.3 micrometers slice thickness. (C) Southern blot of four transformants, in which genomic DNA was digested either with XbaI or KpnI and probed using the Hygromycin resistance gene (hph). We used plasmid GI3EM20C as a positive control (+). (D) Four independent transformants were transferred, every two days, in both selective and non-selective medium at 30°C for a total of 27 days (minimum of 23 life cycles or 116–185 mitotic cycles), followed by a challenge on selective medium. These strains were spotted in a twofold dilution series on non-selective and selective (+Hygromycin) plates, and incubated for 2 days at 30°C.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fluorescence distribution of yeast strains transformed with plasmids pGI3EM09 (Hsp70pr-hph-GFP) and pGI3EM11 (H2Bpr-hph-GFP) relative to untransformed wild-type (WT). Flow cytometry data were collected on a MacsQuant VYB with a 488 nm excitation laser and FITC emission filter (525/50 nm). Data were collected from two independent transformants. The large width of the fluorescence distribution arises from copy number fluctuations of the 2µ plasmid in Saccharomyces cerevisiae. (B) Typical time scale and transformation efficiency using Agrobacterium-mediated transformation of Spizellomyces. Data is shown for pGI3EM11 (H2Bpr-hph-GFP) and pGI3EM18 (H2Bpr-hph-tdTomato) in the absence and presence of selection (200 mg/L Hygromycin). Ampicillin and tetracycline (50 mg/L) are included to kill any Agrobacterium transferred from the co-culture plate; see Materials and methods. Small red arrows indicate three examples of tiny colonies that appeared on pGI3EM11 plate on Day 4. Photos are shown with inverted contrast to better highlight colonies.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** DIC and fluorescence images were taken with a Deltavision Elite microscope using POL Transmission 32%, exposure time 0.5 s; Filter Transmission 32%, exposure time 0.3 s. TRITC filter set excitation (542/27 nm) and emission (597/45 nm); GFP filter set excitation (475/28 nm) and emission (525/48 nm); YFP filter set excitation (513/17 nm) and emission (548/22 nm); CFP filter set excitation (438/24 nm) and emission (475/24 nm). Paired wild-type and fluorescent protein strains are plotted with the same intensity range.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Primer locations and amplicon sizes of different pGI3EM20C primer pairs. RB and LB correspond to the ‘right border’ and ‘left border’ of the T-DNA plasmid. These sequences define the T-DNA fragment that is excised and transferred into the host cell by the Agrobacterium virulence machinery. The total size of the T-DNA (LB to RB) is 4280 bp. (B) Gel electrophoresis of different PCR reactions using genomic DNA of untransformed (WT) and four independent Spizellomyces transformants. (+) control used pGI3EM20C plasmid DNA as template.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Diagram of T-DNA integration and the location of PCR/sequencing primers and restriction sites used for inverse PCR (invPCR). We only show primers adjacent to the left border (LB) because they consistently amplified for all transformants, unlike the primers adjacent to the right border. (B) Example of amplification by invPCR of the LB-genome border after EcoRI genomic digestion and ligation for an untransformed strain (WT), four independent transformants and non-template control. (C) Amplification by invPCR of the LB-genome border after HindIII genomic digestion and ligation. T-DNA location for all transformants was confirmed by two independent biological replicates (i.e. independent genomic extractions, ligation and invPCR). (D) T-DNA insertion sites in four independent transformants of Spizellomyces. In strain EM20C-3, invPCR for EcoRI indicated LB is located toward SPPG_02523, while invPCR for HindIII shows same insertion site but with an inverted direction. The divergent invPCR results might represent an insertion of a tandem inverted T-DNA. (E) Three of the four strains (EM20C-2,3,4) have similar tdTomato fluorescence levels as determined by flow cytometry.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Timing of germ tube emergence ($t_{g}$), mitosis ($t_{1,2,3,…}$), and bursting of the sporangium ($t_{b}$) (i.e. zoospore release) was determined through brightfield and fluorescence microscopy. Cell cycle period is the interval of time between mitotic events ($t_{i+1}$ - $t_{i}$). (A) Timing of mitotic events and B) Cell cycle period in transformant EM20C-1. (C) Timing of mitotic events and D) Cell cycle period in transformant EM20C-2. Two biological replicates (yellow and purple) per transformant. Number of measured events per replicate are shown in the top panels. For a given strain, the variability between replicates is mostly due to a 1–2 hr shift in germ tube formation and early mitotic events. Both EM20C-1 and EM20C-2 form germ tubes at 1–3 hr, the first mitosis occurs between 8 and 12 hr, the cell cycle periods are ∼150 min before shortening in late development. EM20C-2 tends to have a shorter developmental cycle than EM20C-1 (bursting at 20–25 hr versus 25–30 hr) through a combination of shorter cell cycle periods in late development and fewer cycles before bursting. Not all germ tubes were visible and some sporangia had fewer mitotic cycles before bursting; thus, $t_{g}$, $t_{6}$, $t_{7}$, $t_{8}$ have smaller sample sizes. Asterix above each plot reflects the p-value of a two-sample Kolmogorov-Smirnov test of equality of distributions between replicates (*, p<0.05; **, p<0.01; ***, p<0.001).
+
+### Mitotic cycles are fast and highly synchronous during sporangiogenesis
 
 Chytrid transformation with H2B-tdTomato resulted in bright nuclear localization of fluorescence when compared to cytoplasmic tdTomato (Figure 2B). The presence of the T-DNA (total size of 4280 bp) in the transformants was confirmed using PCR for hph and H2B-tdTomato (Figure 2—figure supplement 3) and through Southern blot analysis of hph (Figure 2C). The results were consistent with random, single T-DNA genomic integration events in each transformant. To determine the location of the T-DNA integrations, we identified the genomic region adjacent to the left border (LB) of the T-DNA by inverse PCR (Figure 2—figure supplement 4). In three of the four transformants (EM20C-1, 2, 3), the T-DNA LB was located within 200 bp upstream of the transcription start site (TSS) of a gene (SPPG_04375 an M48 peptidase, SPPG_03425 an adenine nucleotide hydrolase, and SPPG_02523 a PHO-like cyclin, respectively). For strain EM20C-3, two different DNA:genome junctions were detected in the 5’UTR of the gene SPPG_02523, suggesting an irregular T-DNA insertion. Last, for strain EM20C-4, the LB T-DNA was inserted 844 bp from the closest TSS (SPPG_08788 a hypothetical protein). As observed in Arabidopsis, we might expect variation in gene expression based on the genomic locus of integration of the T-DNA fragment. To quantify this variation, we measured H2B-tdTomato expression in our EM20C transformants using flow cytometry (Figure 2—figure supplement 4). The data show that strains EM20C-2, 3, 4 showed similar and unimodal levels of tdTomato fluorescence at the population level, despite the different sites of genomic integration. The exception is EM20C-1, which exhibits bimodal gene expression: the top mode is identical to the other transformants, but the bottom mode is half the intensity. Last, we established that the transformants had transgenerational stability by passaging them in non-selective medium for several weeks, followed by a challenge in selective medium (Figure 2D).
 
-To quantify the timing and synchrony of the Spizellomyces cell cycle, we used live cell epi-fluorescence imaging of H2B-tdTomato strains EM20C-1 and EM20C-2 at 2 min intervals (Figure 2—figure supplement 5). Our results show that zoospores have a single nucleus, they retract their flagellum and encyst in less than 1 hr, the germ tube emerges at ∼1−3 hr, the first mitotic event (i.e. one nucleus to two nuclei) occurs at ∼8−12 hr, and sporangia develop and undergo 5–8 mitotic cycles in less than 30 hr before completing their life cycles and releasing 32–256 zoospores; see Figure 2—video 1. To measure all nuclei within a sporangium with better temporal and z-resolution, we followed nuclear dynamics of EM20C-1 at 1 min time intervals using live-cell confocal microscopy of a H2B-tdTomato strain (Figure 3—video 1). We measured the number of nuclei over time per sporangium (Figure 3A) to estimate the synchrony of nuclear division waves and the period of time between waves of nuclear division. Wave time (Δt) is the time for a wave of synchronous nuclear divisions to propagate across the sporangium. The cell cycle period (τ) is the interval of time between nuclear division waves. We found that the average cell cycle period was ∼150 min and that each wave of nuclear division was completed within 1 min (Figure 3B). In addition, by following the compaction and localization of H2B-tdTomato we show that all measurable mitotic events occurred within 5 min, or less than 3.3% of the cell cycle period (Figure 3B and C). Altogether, these results show that Spizellomyces is mitotically inactive in its early life cycle (zoospore and germination stages) but, once committed, the cell cycle is fast and nuclear divisions within each sporangium are highly synchronous; see Table 1.
+To quantify the timing and synchrony of the Spizellomyces cell cycle, we used live cell epi-fluorescence imaging of H2B-tdTomato strains EM20C-1 and EM20C-2 at 2 min intervals (Figure 2—figure supplement 5). Our results show that zoospores have a single nucleus, they retract their flagellum and encyst in less than 1 hr, the germ tube emerges at ∼1−3 hr, the first mitotic event (i.e. one nucleus to two nuclei) occurs at ∼8−12 hr, and sporangia develop and undergo 5–8 mitotic cycles in less than 30 hr before completing their life cycles and releasing 32–256 zoospores; see Figure 2—video 1. To measure all nuclei within a sporangium with better temporal and z-resolution, we followed nuclear dynamics of EM20C-1 at 1 min time intervals using live-cell confocal microscopy of a H2B-tdTomato strain (Figure 3—video 1). We measured the number of nuclei over time per sporangium (Figure 3A) to estimate the synchrony of nuclear division waves and the period of time between waves of nuclear division. Wave time ($Δt$) is the time for a wave of synchronous nuclear divisions to propagate across the sporangium. The cell cycle period ($\tau$) is the interval of time between nuclear division waves. We found that the average cell cycle period was ∼150 min and that each wave of nuclear division was completed within 1 min (Figure 3B). In addition, by following the compaction and localization of H2B-tdTomato we show that all measurable mitotic events occurred within 5 min, or less than 3.3% of the cell cycle period (Figure 3B and C). Altogether, these results show that Spizellomyces is mitotically inactive in its early life cycle (zoospore and germination stages) but, once committed, the cell cycle is fast and nuclear divisions within each sporangium are highly synchronous; see Table 1.
 
-## Actin polymerization drives zoospore motility
+![Figure 3.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig3-v1.jpg)
 
-Like their pre-fungal ancestors, chytrids swim with a motile cilium. Some chytrids can also crawl across and between solid substrates, much like amoeba and animal immune cells (Fuller, 1976; Sparrow, 1960; Whisler et al., 1975; Couch, 1945; Deacon and Saxena, 1997; Held, 1973; Dorward and Powell, 1983; Fritz-Laylin et al., 2017b). Eukaryotes employ multiple strategies to crawl (filopodia, pseudopodia and blebs) that depend on distinct molecular mechanisms (Fritz-Laylin et al., 2017a). One form of crawling, the pseudopod-based α-motility, relies on the expansion of branched-actin filament networks that are assembled by the Arp2/3 complex and allow cells to navigate complex environments at speeds exceeding 20 μm/min. The activators of branched-actin assembly WASP and SCAR/WAVE have been described as a molecular signature of the capacity for α-motility (Fritz-Laylin et al., 2017b). Spizellomyces has homologs of WASP (SPPG_00537), SCAR/WAVE (SPPG_02302), and its zoospores are proficient crawlers.
+**Figure 3.:** (A) Number of nuclei as a function of time during the development of a sporangium, along with H2B-tdTomato fluorescence images from select time points. Each colored line corresponds to a different sporangium. The cell cycle period ($\tau$) is the interval of time between waves of nuclear division (i.e. metaphase to anaphase transition). The wave time ($Δ⁢t$) is the interval of time for a synchronous wave of nuclear division to sweep across the sporangium. (B) Distribution of cell cycle period ($\tau$), wave time ($Δ⁢t$) and duration of mitosis ($\tau_{M}$) across multiple cell cycles. (C) Timing of mitotic events. H2B-tdTomato permits observation of (1) leakage from the nucleus likely due to fenestration of nuclear envelope by the mitotic spindle (Heath, 1980; Fuller, 1976), followed by chromosome condensation, and (2) chromosome separation during anaphase. Dotted line highlights the cell wall of the sporangium. This particular example shows a mitosis duration of 4 min ($\tau_{M}$=time from nuclear leakage to anaphase). Time in hr:min. Scale 2.5 micrometers. Distributions are from one time-lapse movie of EM20C-1 (6 cells).
 
-To test whether Spizellomyces zoospores crawl using α-motility, we expressed a LifeAct-tdTomato fusion. LifeAct is a 17 amino acid peptide that binds specifically to polymerized actin in a wide variety of cell types, such as actin patches and cables in yeast and actin-filled protrusions of crawling animal cells (Riedl et al., 2008; Belin et al., 2014). To confirm that our LifeAct-tdTomato fusion binds specifically to polymerized actin in Spizellomyces, we first fixed and stained actin in zoospores (Figure 4) and sporangia (Figure 5) with fluorescent phalloidin. We then compared the fluorescent images of cells expressing LifeAct-tdTomato and those expressing hph-tdTomato (negative control) relative to phalloidin-staining.
+**Table 1.**
+ Comparison of nuclear division synchrony for different coenocytic organisms.Wave time ($Δt$) is defined as the average interval of time for a wave of synchronized nuclear divisions to propagate across the coenocytic nuclei. The nuclear division period ($\tau$) is the average interval of time between waves. Organisms are listed from highest to lowest synchrony index.
 
-In contrast to the relatively homogeneous distribution of fluorescence in hph-tdTomato zoospores, both fixed (Figure 4A–C) and living zoospores (Figure 4D–E, and Figure 4—video 1) of the LifeAct-tdTomato strain showed a thin layer of fluorescence at the cell cortex, and high levels of fluorescence in the pseudopods at the leading edge. Because the LifeAct fusion localization nearly perfectly correlated with phalloidin intensities in fixed cells, but the hph fusion did not, we presume that this fluorescence represents polymerized actin. The minor deviations between Lifeact and phalloidin can be explained by intrinsic biases of the probes. All live-cell probes of filamentous actin (e.g. Lifeact, F-tractin, Utrophin actin-binding domain) have different biases in their patterns of F-actin localization and dynamics (Belin et al., 2014). None of them can fully recapitulate the patterns seen with phalloidin, but they do provide new insights into the live cell dynamics of actin. The distribution and dynamics of actin that we see in zoospores is in agreement with α-motility and actin localization observed for fixed cells during zoospore crawling of Neocallimastix (Li and Heath, 1994) and Batrachochytrium (Fritz-Laylin et al., 2017b).
 
-## Actin polymerization during sporangiogenesis
+<table>
+  <thead>
+    <tr>
+      <th>Coenocytic organism</th>
+      <th>Length scale</th>
+      <th>Wave time</th>
+      <th>Wave speed</th>
+      <th>Nuclear division</th>
+      <th>Synchrony index</th>
+      <th>References</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>(µm)</th>
+      <th>Δt (min)</th>
+      <th>(µm min-1)</th>
+      <th>Period τ (min)</th>
+      <th>100%⋅(1-Δ⁢t/τ)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Physarum polycephalum (amoeba)</td>
+      <td>1000</td>
+      <td>2</td>
+      <td>500</td>
+      <td>840</td>
+      <td>99.8%</td>
+      <td>Halvorsrud et al., 1995</td>
+    </tr>
+    <tr>
+      <td>Spizellomyces punctatus (fungi)</td>
+      <td>5–10</td>
+      <td>1</td>
+      <td>5–10</td>
+      <td>150</td>
+      <td>99.3%</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>Creolimax fragrantissima (holozoa)</td>
+      <td></td>
+      <td>20</td>
+      <td></td>
+      <td>300</td>
+      <td>93.3%</td>
+      <td>Suga and Ruiz-Trillo, 2013</td>
+    </tr>
+    <tr>
+      <td>Drosophila melanogaster (metazoa)</td>
+      <td>500</td>
+      <td>1.5</td>
+      <td>360</td>
+      <td>10</td>
+      <td>85.5%</td>
+      <td>Deneke et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Aspergillus nidulans (fungi)</td>
+      <td>700</td>
+      <td>20</td>
+      <td>35</td>
+      <td>60</td>
+      <td>66.7%</td>
+      <td>Clutterbuck, 1970; Momany and Taylor, 2000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Actin polymerization drives zoospore motility
+
+Like their pre-fungal ancestors, chytrids swim with a motile cilium. Some chytrids can also crawl across and between solid substrates, much like amoeba and animal immune cells (Fuller, 1976; Sparrow, 1960; Whisler et al., 1975; Couch, 1945; Deacon and Saxena, 1997; Held, 1973; Dorward and Powell, 1983; Fritz-Laylin et al., 2017b). Eukaryotes employ multiple strategies to crawl (filopodia, pseudopodia and blebs) that depend on distinct molecular mechanisms (Fritz-Laylin et al., 2017a). One form of crawling, the pseudopod-based $\alpha$-motility, relies on the expansion of branched-actin filament networks that are assembled by the Arp2/3 complex and allow cells to navigate complex environments at speeds exceeding 20 μm/min. The activators of branched-actin assembly WASP and SCAR/WAVE have been described as a molecular signature of the capacity for $\alpha$-motility (Fritz-Laylin et al., 2017b). Spizellomyces has homologs of WASP (SPPG_00537), SCAR/WAVE (SPPG_02302), and its zoospores are proficient crawlers.
+
+To test whether Spizellomyces zoospores crawl using $\alpha$-motility, we expressed a LifeAct-tdTomato fusion. LifeAct is a 17 amino acid peptide that binds specifically to polymerized actin in a wide variety of cell types, such as actin patches and cables in yeast and actin-filled protrusions of crawling animal cells (Riedl et al., 2008; Belin et al., 2014). To confirm that our LifeAct-tdTomato fusion binds specifically to polymerized actin in Spizellomyces, we first fixed and stained actin in zoospores (Figure 4) and sporangia (Figure 5) with fluorescent phalloidin. We then compared the fluorescent images of cells expressing LifeAct-tdTomato and those expressing hph-tdTomato (negative control) relative to phalloidin-staining.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig4-v1.jpg)
+
+**Figure 4.:** (A) Zoospores from wild type (left), and transformants expressing hph-tdTomato (center) and LifeAct-tdTomato (right) were fixed and stained with fluorescent phalloidin (green). Top row shows DIC and second row shows DNA stain (DAPI). The bottom row shows the phalloidin stain and 561 nm images overlaid. Scale bar indicates two microns. (B and C) Line scan of fixed and stained hph-tdTomato (B) and LifeAct-tdTomato fusion (C). The plot shows line scans of normalized fluorescence intensity of the respective fusion protein (magenta) and fluorescent phalloidin (green). The location for generating the line scans is shown by a yellow dotted line in the image above each plot. Scale bars indicate 1 µm. (D) Stills taken at 20-s intervals from timelapse microscopy of crawling zoospores from the indicated strains at the given timepoints. Images were taken using DIC microscopy (top) and 561 nm fluorescence microscopy (middle), also shown with images merged (bottom). Scale bar indicates 5 µm. E+F) Line scan of fixed and stained hph-tdTomato (E) and LifeAct-tdTomato fusion (F). The plot shows line scans of normalized fluorescence intensity of the respective fusion protein (magenta) and fluorescent phalloidin (green). The location for generating the line scans is shown by a yellow dotted line in the image above each plot. Scale bars indicate 2 µm.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52741/elife-52741-fig5-v1.jpg)
+
+**Figure 5.:** (A) Sporangia from wild type (left), and transformants expressing hph-tdTomato (center) and LifeAct-tdTomato (right) were fixed and stained with fluorescent phalloidin (green). The third row shows DNA stain (DAPI). The bottom row shows the phalloidin stain and 561 nm images overlaid. Scale bar indicates 5 µm. Arrows point to examples of actin patches present in sporangia and rhizoids (‘p’), cables (‘c’) and perinuclear actin shells (‘ns’). (B) Selected stills taken from timelapse microscopy of developing sporangia from the LifeAct-tdTomato transformant strain at times indicated (hr: min). Formation of polygonal territories precedes cellularization. Images taken using DIC (top) and 561 nm (middle), also shown with images merged (bottom). Scale bar indicates ten microns. (C) Multiple planes of a single sporangium show how polygonal territories formed during later stages of cellularization encompass the entire cytoplasm.
+
+In contrast to the relatively homogeneous distribution of fluorescence in hph-tdTomato zoospores, both fixed (Figure 4A–C) and living zoospores (Figure 4D–E, and Figure 4—video 1) of the LifeAct-tdTomato strain showed a thin layer of fluorescence at the cell cortex, and high levels of fluorescence in the pseudopods at the leading edge. Because the LifeAct fusion localization nearly perfectly correlated with phalloidin intensities in fixed cells, but the hph fusion did not, we presume that this fluorescence represents polymerized actin. The minor deviations between Lifeact and phalloidin can be explained by intrinsic biases of the probes. All live-cell probes of filamentous actin (e.g. Lifeact, F-tractin, Utrophin actin-binding domain) have different biases in their patterns of F-actin localization and dynamics (Belin et al., 2014). None of them can fully recapitulate the patterns seen with phalloidin, but they do provide new insights into the live cell dynamics of actin. The distribution and dynamics of actin that we see in zoospores is in agreement with $\alpha$-motility and actin localization observed for fixed cells during zoospore crawling of Neocallimastix (Li and Heath, 1994) and Batrachochytrium (Fritz-Laylin et al., 2017b).
+
+### Actin polymerization during sporangiogenesis
 
 Once the chytrid zoospore encysts, it builds a sporangium by growing both radially and in polarized fashion during germ tube extension and rhizoid formation (Figure 1). During early sporangiogenesis, the nuclei are very dynamic while replicating and dividing but then slow down in late sporangiogenesis, presumably during cellularization and zoospore formation (Figure 2—video1). Actin has been reported to play fundamental roles during cellularization in another chytrid, Allomyces macrogynus (Lowry et al., 1998; Lowry et al., 2004). Thus, we expect polymerized actin to play a role in the nuclear dynamics and cellularization during sporangiogenesis in Spizellomyces.
 
@@ -81,15 +191,308 @@ Finally, we showed that polymerized actin is likely involved in the formation of
 
 ## Materials and methods
 
-## Strains and growth conditions
+### Strains and growth conditions
 
 We used Spizellomyces punctatus (Koch type isolate NG-3) Barr (ATCC 48900) for all chytrid experiments. Unless otherwise stated, Spizellomyces were grown at 30°C in Koch’s K1 medium (1L; 0.6 g peptone, 0.4 g yeast extract, 1.2 g glucose, 15 g agar if plates; Koch, 1957). Two days prior to harvesting zoospores, we aliquoted and spread 1 mL of active, liquid culture pregrown in K1 medium onto K1 plates and incubated them to allow zoospores to encyst, mature, and colonize the agar surface. We flooded each active Spizellomyces plate with 1 mL of dilute salt (DS) solution (Machlis, 1953) and incubated at room temperature. After 1 hr, released zoospores were retrieved by harvesting the DS medium and purified by slowly filtering the harvest in Luer-Lok syringe through an autoclaved syringe filter holder (Advantec REF:43303010) preloaded with a 25 mm Whatman Grade one filter paper (CAT No. 1001–325). Strains listed in Table 3 are available from the Buchler lab upon request.
 
-## Plasmids
+### Plasmids
 
 We initially tried to transform Spizellomyces via zoospore electroporation using a protocol developed in zoosporic protists, such as Phytophthora (Ah-Fong et al., 2018). This was unsuccessful and we turned to Agrobacterium-mediated transformation because it has worked in other fungi. We used the pGI3 plasmid backbone for Agrobacterium-mediated transformation (Ianiri et al., 2017), which contains the Saccharomyces cerevisiae 2µ replication origin and the URA3 selectable marker. This allows pGI3 and its derivatives to replicate in E. coli, A. tumefaciens and S. cerevisiae. Complete details of primers and plasmid construction are in Table 2 and the Appendix. All plasmids are available from Addgene and their RRIDs are listed in the Appendix.
 
-## Agrobacterium-mediated transformation of Spizellomyces
+**Table 2.**
+ Primers used in this study.Capital letters in SLIC and Gibson primers indicate template binding regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid creation</th>
+      <th>Target amplicon (Source DNA)</th>
+      <th>Primer name</th>
+      <th>Primer sequence (5’→ 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pEM01</td>
+      <td>CMV promoter (pAB1T7)</td>
+      <td>CMV_F</td>
+      <td>ccctcactaaagggaacaaaagctggagctgagctcGACATTGATTATTGACTAGTTATTAATAG</td>
+    </tr>
+    <tr>
+      <td>pEM01</td>
+      <td>CMV promoter (pAB1T7)</td>
+      <td>CMV_R</td>
+      <td>ctttttacccatgttaattaaAGCTCTGCTTATATAGACCTCC</td>
+    </tr>
+    <tr>
+      <td>pEM01</td>
+      <td>hph (pRS306H)</td>
+      <td>Hyg_F</td>
+      <td>tatataagcagagctttaattaacATGGGTAAAAAGCCTGAACTC</td>
+    </tr>
+    <tr>
+      <td>pEM01</td>
+      <td>hph (pRS306H)</td>
+      <td>Hyg_R</td>
+      <td>tagaagtggcgcgccaTTATTCCTTTGCCCTCGGAC</td>
+    </tr>
+    <tr>
+      <td>pEM01</td>
+      <td>ADH1 terminator (pNB780)</td>
+      <td>ADH1t_F</td>
+      <td>agggcaaaggaataatggcgcgccACTTCTAAATAAGCGAATTTCTTATG</td>
+    </tr>
+    <tr>
+      <td>pEM01</td>
+      <td>ADH1 terminator (pNB780)</td>
+      <td>ADH1t_R</td>
+      <td>tgacccggcggggacgaggcaagctaaacaATATTACCCTGTTATCCCTAGC</td>
+    </tr>
+    <tr>
+      <td>pEM03</td>
+      <td>Hsp70 promoter (Spun gDNA)</td>
+      <td>HSP70_F</td>
+      <td>actaaagggaacaaaagctggagctgagctcTTTTAAAATCTTGTCTTTGTGC</td>
+    </tr>
+    <tr>
+      <td>pEM03</td>
+      <td>Hsp70 promoter (Spun gDNA)</td>
+      <td>HSP70_R</td>
+      <td>ggtgagttcaggctttttacccatgttaattaaATTGTGCTGATCTTTGGTCC</td>
+    </tr>
+    <tr>
+      <td>pEM09</td>
+      <td>hph (pFA6-GFP(S65T)-hph)</td>
+      <td>HygR_F</td>
+      <td>aagatcagcacaatttaattaATGGGTAAAAAGCCTGAACTCAC</td>
+    </tr>
+    <tr>
+      <td>pEM09</td>
+      <td>hph (pFA6-GFP(S65T)-hph)</td>
+      <td>HygR_R</td>
+      <td>tcctcctcctcctccTTCCTTTGCCCTCGGACG</td>
+    </tr>
+    <tr>
+      <td>pEM09</td>
+      <td>GFP (pFA6-GFP(S65T)-hph)</td>
+      <td>GFP_F</td>
+      <td>gcaaaggaaggaggaggaggaggaggaAGTAAAGGAGAAGAACTTTTCAC</td>
+    </tr>
+    <tr>
+      <td>pEM09</td>
+      <td>GFP (pFA6-GFP(S65T)-hph)</td>
+      <td>GFP_R</td>
+      <td>cgcttatttagaagtggcgcgccTATTTGTATAGTTCATCCATGC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sequencing</td>
+      <td>pRS-up</td>
+      <td>aacataggagccggaagcataaagtg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sequencing</td>
+      <td>ADHt-dn</td>
+      <td>ctgccggtagaggtgtggtcaataag</td>
+    </tr>
+    <tr>
+      <td>pGI3EM9</td>
+      <td>Hsp70pr-hph-GFP (pEM09)</td>
+      <td>GI3EM9IIF</td>
+      <td>cgttgtaaaacgacggccagtgccaagcttttttaaaatcttgtctttgtgcac</td>
+    </tr>
+    <tr>
+      <td>pGI3EM9</td>
+      <td>Hsp70pr-hph-GFP (pEM09)</td>
+      <td>GI3EM9IIR</td>
+      <td>aggaaacagctatgacatgattacgaattcccggtagaggtgtggtcaataag</td>
+    </tr>
+    <tr>
+      <td>pGI3EM11</td>
+      <td>H2B promoter (Spun gDNA)</td>
+      <td>prH2B_F</td>
+      <td>cgttgtaaaacgacggccagtgccaagCTTTTATGCTCCAAGCGGAG</td>
+    </tr>
+    <tr>
+      <td>pGI3EM11</td>
+      <td>H2B promoter (Spun gDNA)</td>
+      <td>prH2B_R</td>
+      <td>gagttcaggctttttacccattaattaaTTTGTGTGTGTGATGGATGAG</td>
+    </tr>
+    <tr>
+      <td>pGI3EM11</td>
+      <td>HygR_up</td>
+      <td>GI3EM11up</td>
+      <td>ggatcctcctcctccTTCCTTTGCCCTCGGACG</td>
+    </tr>
+    <tr>
+      <td>pGI3EM18</td>
+      <td>tdTomato (pKT356)</td>
+      <td>HygtdTom_F</td>
+      <td>cagcactcgtccgagggcaaaggaaggaggaggaggatccATGGTGAGCAAGGGCGAG</td>
+    </tr>
+    <tr>
+      <td>pGI3EM18</td>
+      <td>tdTomato (pKT356)</td>
+      <td>AdhtdTom_R</td>
+      <td>tcgcttatttagaagtggcgcgcctTTACTTGTACAGCTCGTCCATG</td>
+    </tr>
+    <tr>
+      <td>pGI3EM20C</td>
+      <td>H2A/H2B promoter (Spun gDNA)</td>
+      <td>H2B2D_F</td>
+      <td>gctttttacccatttaattaatgctgtgtaaggtgtgcg</td>
+    </tr>
+    <tr>
+      <td>pGI3EM20B/C</td>
+      <td>H2A/H2B promoter (Spun gDNA)</td>
+      <td>H2B2D_R</td>
+      <td>gggtgccatgtcgacttgtgtgtgtgatggatgag</td>
+    </tr>
+    <tr>
+      <td>pGI3EM20B/C</td>
+      <td>H2B CDS (Spun cDNA)</td>
+      <td>H2Bgen_F</td>
+      <td>atcacacacacaagtcgacatggcacccaaggaagctc</td>
+    </tr>
+    <tr>
+      <td>pGI3EM20B/C</td>
+      <td>H2B CDS (Spun cDNA)</td>
+      <td>H2Bgen_R</td>
+      <td>gacctcctcgcccttgctcaccatggatccggaggaggatttagcagactggtacttcgtcac</td>
+    </tr>
+    <tr>
+      <td>pGI3EM20B/C</td>
+      <td>HygR (pEM03)</td>
+      <td>AdhHygF</td>
+      <td>cgttgtaaaacgacggccagtgccaagcttccggtagaggtgtggtcaataag</td>
+    </tr>
+    <tr>
+      <td>pGI3EM20B/C</td>
+      <td>HygR (pEM03)</td>
+      <td>AdhHygR</td>
+      <td>ccttacacagcattaattaaatgggtaaaaagcctgaactc</td>
+    </tr>
+    <tr>
+      <td>pGI3EM20B/C</td>
+      <td>invPCR T-DNA (LB)</td>
+      <td>4_LB_R</td>
+      <td>tgtggaattgtgagcggata</td>
+    </tr>
+    <tr>
+      <td>pGI3EM20B/C</td>
+      <td>invPCR/sequencing T-DNA (LB)</td>
+      <td>ai077_F</td>
+      <td>agaggcggtttgcgtattgg</td>
+    </tr>
+    <tr>
+      <td>pGI3EM22C</td>
+      <td>LifeAct (Synthesized DNA)</td>
+      <td>TwistLifeact_F</td>
+      <td>ctataaaaggcgggcgtgt</td>
+    </tr>
+    <tr>
+      <td>pGI3EM22C</td>
+      <td>LifeAct (Synthesized DNA)</td>
+      <td>TwistLifeact_R</td>
+      <td>gcgcatgaactctttgatga</td>
+    </tr>
+    <tr>
+      <td>pGI3EM29</td>
+      <td>mCitrine (mCitrine-PCNA-19-SV40NLS-4)</td>
+      <td>EM18Citrine_F</td>
+      <td>ccgagggcaaaggaaggaggaggaggatccATGGTGAGCAAGGGCGAG</td>
+    </tr>
+    <tr>
+      <td>pGI3EM29</td>
+      <td>mCitrine (mCitrine-PCNA-19-SV40NLS-4)</td>
+      <td>EM18Citrine_R</td>
+      <td>aagaaattcgcttatttagaagtggcgcgcCTTGTACAGCTCGTCCATGC</td>
+    </tr>
+    <tr>
+      <td>pGI3EM30</td>
+      <td>mClover3 (pKK-mClover3-TEV)</td>
+      <td>EM18Clover3_F</td>
+      <td>gagggcaaaggaaggaggaggaggatccATGGTGAGCAAGGGCGAG</td>
+    </tr>
+    <tr>
+      <td>pGI3EM30</td>
+      <td>mClover3 (pKK-mClover3-TEV)</td>
+      <td>EM18Clover3_R</td>
+      <td>gaaattcgcttatttagaagtggcgcgcCTTGTACAGCTCGTCCATGC</td>
+    </tr>
+    <tr>
+      <td>pGI3EM31</td>
+      <td>mCerulean3 (mCerulean3-N1)</td>
+      <td>EM18Cerulean3_F</td>
+      <td>ccgagggcaaaggaaggaggaggaggatccATGGTGAGCAAGGGCGAG</td>
+    </tr>
+    <tr>
+      <td>pGI3EM31</td>
+      <td>mCerulean3 (mCerulean3-N1)</td>
+      <td>EM18Cerulean3_R</td>
+      <td>aagaaattcgcttatttagaagtggcgcgccTTACTTGTACAGCTCGTCCATG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>mCitrine/Clover/Cerulean Sequencing</td>
+      <td>mClover_Down</td>
+      <td>gtccaagctgagcaaagacc</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCR screen (Set C)/H2Bpr/Sequencing</td>
+      <td>H2BprF1</td>
+      <td>tttatgctccaagcggagac</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCR screen (Set C)/Sequencing</td>
+      <td>TomR1</td>
+      <td>cttgtacagctcgtccatgc</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCR screen (Set D)/H2Bpr/Sequencing</td>
+      <td>H2BprF2</td>
+      <td>cgttaaatgacctgctcgaa</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCR screen (Set D)/H2Bpr/Sequencing</td>
+      <td>TomR2</td>
+      <td>ccatgccgtacaggaacag</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCR screen (Set A)/Southern Blot/Sequencing</td>
+      <td>HygF1</td>
+      <td>gatgtaggagggcgtggata</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCR screen (Set A)/Southern Blot/Sequencing</td>
+      <td>HygR1</td>
+      <td>atttgtgtacgcccgacagt</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCR screen (Set B)/Sequencing</td>
+      <td>HygF2</td>
+      <td>gtcctgcgggtaaatagctg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCR screen (Set B)/Sequencing</td>
+      <td>HygR2</td>
+      <td>cgtctgctgctccatacaag</td>
+    </tr>
+  </tbody>
+</table>
+
+### Agrobacterium-mediated transformation of Spizellomyces
 
 We prepared competent Agrobacterium EHA105 strains following the protocol of Weigel and Glazebrook (2006). Plasmids were transformed into competent Agrobacterium using 0.2 cm cuvettes in a Gene Pulser electroporator (Bio-Rad, USA) at 25 µF, 200 Ω , 2.5kV. Single colonies were streaked on selective plates (Kanamycin). A colony of transformed Agrobacterium containing pGI3-derived plasmid was grown overnight at 30°C in 5 mL of Luria-Bertani broth supplemented with Kanamycin (50 mg/L). After centrifugation, the cell pellet was resuspended in 5 mL of IM (Bundock et al., 1995), diluted to an OD660 of 0.1 and grown under agitation at 30°C until achieving a final OD660 of 0.6, at which point the culture was ready for co-culturing with the chytrid (300 µL per transformation). IM is composed of MM salts (Hooykaas et al., 1979) and 40M 2-(N-morpholino)ethanesulfonic acid (MES) pH 5.3, 10 mM glucose, 0.5% (w/v) glycerol and 200µM acetosyringone.
 
@@ -97,20 +500,97 @@ In parallel, chytrid zoospores were harvested and pelleted by centrifugation at 
 
 After co-incubation, we added 1 mL of DS solution and gently scraped the plate with a razor blade, pooling the different cell ratios into a single 50 mL centrifuge tube, raising the volume to 20 mL with DS solution, and re-suspending clumps by inversion. The mixture was centrifuged at 1000 g for 10 min and the liquid phase was discarded. The remaining pellet was carefully resuspended with DS solution, plated on K1 plates containing Ampicillin (50 mg/L) and Tetracycline (50 mg/L) to select against Agrobacterium and Hygromycin (200 mg/L) to select for transformed Spizellomyces. Spizellomyces survival controls were performed by plating transformations after co-culture in non-selective K1 media (Ampicillin (50 mg/L), Tetracycline (50 mg/L)). Transformation plates and controls were incubated at 30°C until colonies were observed (5–6 days). All plates were sealed with parafilm to prevent desiccation. Single colony isolates were retrieved with a sterile needle, resuspended in DS solution and re-plated on a selective Hygromycin plate. Chytrid strains listed in Table 3 are available from the Buchler lab upon request.
 
-## Nucleic acid manipulation
+**Table 3.**
+ Chytrid strains available from the Buchler lab upon request.Plasmid column lists Agrobacterium plasmids from Appendix 1 used to create chytrid strains. Integrated gene(s) are described using yeast genetic nomenclature.
 
-High-molecular-weight genomic DNA extraction was performed using CTAB/Chloroform protocol (CTAB/PVP buffer: 100 mM Tris-HCl pH7.5; 1.4M NaCl; 10 mM EDTA; 1% CTAB; 1% PVP; 1% β- Mercaptoethanol (added just before use)). Briefly, 10 plates of the selected strain were grown at 30°C for 2 days and zoospores were harvested and purified as described before. The pellet of zoospores was resuspended directly in 900µL of CTAB/PVP buffer pre-warmed to 65°C and transferred to 2 mL centrifuge tubes. Tubes were centrifuged briefly and incubated at room temperature for 1 hr in a nutating mixer. After 5 min incubation on ice, DNA was extracted with Chloroform (Sigma-Aldrich REF:288306) twice followed by treatment of supernatant with 100 ng RNase A (Biobasic; 60 U/mg Ref:XRB0473) for 30 min at room temperature. DNA was then precipitated by adding 0.2 vol of 10M Ammonium acetate and one volume of absolute Isopropanol and incubated at 4°C overnight. DNA pellet was washed with 70% ethanol thrice and resuspended in TE buffer. DNA quality and concentration were determined by gel electrophoresis.
 
-Detection of transgene integration by Southern blot. 1 µg of high-molecular-weight gDNA from each strain was treated overnight at 37°C with 10U of XbaI or KpnI-HF restriction enzymes, resolved on a 1% Agarose 1X TAE (Tris-Acetate-EDTA) gel and blotted to a GE Healthcare Amersham Hybond-N+ membrane. The membrane was hybridized with a 809 bp fragment of the Hygromycin resistance gene amplified with primers HygF1 and HygR1 and radiolabeled with [α-32P]-dCTP using the Prime-It II Random Primer Labelling Kit (Agilent Technologies; REF:300385) following manufacturer’s instructions.
+<table>
+  <thead>
+    <tr>
+      <th>Request ID</th>
+      <th>Strain name</th>
+      <th>Plasmid</th>
+      <th>Integrated gene(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NBC24</td>
+      <td>EM11-1</td>
+      <td>pGI3EM11</td>
+      <td>H2Bpr-hph-GFP-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC34</td>
+      <td>EM18-1</td>
+      <td>pGI3EM18</td>
+      <td>H2Bpr-hph-tdTomato-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC25</td>
+      <td>EM20C-1</td>
+      <td>pGI3EM20C</td>
+      <td>H2Bpr-H2B-tdTomato-ScADH1ter:H2Apr-hph-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC26</td>
+      <td>EM20C-2</td>
+      <td>pGI3EM20C</td>
+      <td>H2Bpr-H2B-tdTomato-ScADH1ter:H2Apr-hph-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC27</td>
+      <td>EM20C-3</td>
+      <td>pGI3EM20C</td>
+      <td>H2Bpr-H2B-tdTomato-ScADH1ter:H2Apr-hph-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC28</td>
+      <td>EM20C-4</td>
+      <td>pGI3EM20C</td>
+      <td>H2Bpr-H2B-tdTomato-ScADH1ter:H2Apr-hph-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC1</td>
+      <td>EM22C-1</td>
+      <td>pGI3EM22C</td>
+      <td>H2Bpr-Lifeact-tdTomato-ScADH1ter:H2Apr-hph-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC71</td>
+      <td>EM29-1</td>
+      <td>pGI3EM29</td>
+      <td>H2Bpr-hph-mCitrine-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC55</td>
+      <td>EM30-1</td>
+      <td>pGI3EM30</td>
+      <td>H2Bpr-hph-mClover3-ScADH1ter</td>
+    </tr>
+    <tr>
+      <td>NBC44</td>
+      <td>EM31-1</td>
+      <td>pGI3EM31</td>
+      <td>H2Bpr-hph-mCerulean3-ScADH1ter</td>
+    </tr>
+  </tbody>
+</table>
+
+### Nucleic acid manipulation
+
+High-molecular-weight genomic DNA extraction was performed using CTAB/Chloroform protocol (CTAB/PVP buffer: 100 mM Tris-HCl pH7.5; 1.4M NaCl; 10 mM EDTA; 1% CTAB; 1% PVP; 1% $\beta$- Mercaptoethanol (added just before use)). Briefly, 10 plates of the selected strain were grown at 30°C for 2 days and zoospores were harvested and purified as described before. The pellet of zoospores was resuspended directly in 900µL of CTAB/PVP buffer pre-warmed to 65°C and transferred to 2 mL centrifuge tubes. Tubes were centrifuged briefly and incubated at room temperature for 1 hr in a nutating mixer. After 5 min incubation on ice, DNA was extracted with Chloroform (Sigma-Aldrich REF:288306) twice followed by treatment of supernatant with 100 ng RNase A (Biobasic; 60 U/mg Ref:XRB0473) for 30 min at room temperature. DNA was then precipitated by adding 0.2 vol of 10M Ammonium acetate and one volume of absolute Isopropanol and incubated at 4°C overnight. DNA pellet was washed with 70% ethanol thrice and resuspended in TE buffer. DNA quality and concentration were determined by gel electrophoresis.
+
+Detection of transgene integration by Southern blot. 1 µg of high-molecular-weight gDNA from each strain was treated overnight at 37°C with 10U of XbaI or KpnI-HF restriction enzymes, resolved on a 1% Agarose 1X TAE (Tris-Acetate-EDTA) gel and blotted to a GE Healthcare Amersham Hybond-N+ membrane. The membrane was hybridized with a 809 bp fragment of the Hygromycin resistance gene amplified with primers HygF1 and HygR1 and radiolabeled with [$\alpha$-32P]-dCTP using the Prime-It II Random Primer Labelling Kit (Agilent Technologies; REF:300385) following manufacturer’s instructions.
 
 Identification of T-DNA insertion sites by inverse PCR. 2.5 µg of genomic DNA of wild type (WT) and the four transformed strains of Spizellomyces (EM20C-1,2,3,4) was digested in a final volume of 50μL with 100U of EcoRI-HF (NEB R3101S) or HindIII-HF (NEB R3104S) for 24 hr at 37°C. After assessing the quality of the digestion by gel electrophoresis, the reaction was heat inactivated and 48µL of the digested DNA was incubated with 1µL of T4 ligase (400u/µL) for 48 hr at 4°C. The ligation was purified by chloroform extraction twice, followed by DNA precipitation and resuspended in 30µL of nuclease-free water. 100 ng of ligated product was used for touch-down Inverse PCR reactions in a final volume of 50µL using NEB Phusion high-fidelity DNA polymerase and 3% DMSO following manufacturer instructions and primers ai77_F and 4_LB_R. Touch-down PCR amplification protocol included an initial denaturation step at 98°C for 3 min followed by 10 cycles of amplification in which the annealing temperature was decreased 1C/cycle until an annealing temperature of 62°C was achieved, followed by 20 amplification cycles at 62°C. Annealing and elongation time during all these cycles was 30 s and 6 min, respectively. Amplification was assessed by gel electrophoresis and bands were retrieved using a razor blade, purified using the Promega Wizard SV Gel and PCR Clean-Up System, and Sanger-sequenced using the primer ai77_F.
 
-## Microscopy
+### Microscopy
 
 H2B-tdTomato-expressing chytrids were harvested from plates, placed in a glass-bottom dish (Mattek), and covered with a 1.5% K1 agarose pad to keep cells healthy and in the plane of focus (Young et al., 2012). We harvested zoospores from plates and re-suspended them in Leu/Lys paralyzing solution (Dill and Fuller, 1971 ) before putting them in glass-bottom dishes, as above. Live-cell epifluorescence was performed on a temperature-controlled Deltavision Elite inverted microscope equipped with 60x/1.42 oil objective and Evolve-512 EMCCD camera using optical axis integration. Optical axis integration (OAI) is a setting on the Deltavision microscope that opens the shutter and continuously excites and measures fluorescence emission while sweeping from top (+20 microns) to bottom of the z-axis (−20 microns) in 0.5 s, integrating directly the intensities onto the CCD chip. OAI has the advantage that total exposure time is reduced relative to a traditional z-stack. Excitation light was 542/27 nm (7 Color InsightSSI) and emission to the camera was filtered by 594/45 nm (TRITC). Epifluorescence live-cell imaging was done at 30°C. Live-cell confocal microscopy was performed on a Nikon Eclipse Ti inverted microscope equipped with a 100x/N.A. 1.49 CFI Apo TIRF oil objective and fitted with a Yokogawa CSU-X1 spinning disk and Andor iXon 897 EMCCD camera. Excitation light was via 488 nm laser. Confocal live-cell imaging was done at 27°C.
 
 LifeAct-expressing zoospores were collected in DS solution and transferred to cover-glass bottom dishes. For phalloidin staining, glass coverslips were plasma cleaned and immediately coated with 0.1% polyethyleneimine for 5 min, washed thrice with water, then overlaid with zoospores or sporangia suspended in DS solution. Cells were allowed to adhere for 5 min before fixation by adding four volumes of 4% paraformaldehyde in 50 mM Cacodylate buffer (pH 7.2). Cells were fixed for 20 min on ice, washed once with PEM buffer (100 mM PIPES, 1 mM EGTA, 0.1 mM MgSO4), permeabilized and stained with 0.1% Triton X in PEM with 1:1000 Alexa Fluor 488 Phalloidin (66 nM in DMSO, Sigma D2660) for 10 min at room temperature, washed with PEM, then mounted onto glass slides using Prolong Gold with DAPI (Invitrogen P36931). Zoospores were imaged on a Nikon Ti2-E inverted microscope equipped with 100x oil PlanApo objective and sCMOS 4mp camera (PCO Panda). Excitation light was via epi fluorescence illuminator at 405 nm, 488 nm, and 561 nm. Sporangia were imaged on a Nikon Ti-E inverted microscope equipped with 100X oil objective and fitted with a Yokogawa X1 spinning disk (CSU-W1) with 50 μm pinholes and Andor xIon EMCCD camera. Excitation light was via 405 nm laser, 488 nm laser, and 561 nm laser. Z-stack fluorescent images were deconvolved with NIS Elements v5.11 using 20 iterations of the Richardson-Lucy algorithm. Image analysis was performed with the ImageJ bundle Fiji (Schindelin et al., 2012). All imagings were done at room temperature.
 
-## Flow cytometry
+### Flow cytometry
 
 Zoospores from wild-type and EM20C-(1-4) transformants were harvested from plates and put on ice until fluorescence measurement. Flow cytometry was performed on a MACSQuant VYB using the yellow laser (561 nm) to measure forward scatter (FSC), side scatter (SSC), and tdTomato fluorescence (Y2, 615/20 nm filter). The FSC, SSC, Y2 voltage gain settings for each PMT were 350 V, 350 V, and 510 V, respectively. We recorded the pulse height, width, area for a minimum of 100,000 events per strain. Singlets were identified using FSC/SSC width versus height, and a histogram of singlet tdTomato fluorescence (Y2 height) was plotted using the FlowJo software package.

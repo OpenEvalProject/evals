@@ -36,15 +36,11 @@ Following the suggestions of the reviewers, we now repeated some key experiments
 
 3) The reviewers acknowledge the use of reporters as an output for CLV3/WUS activity, but also wonder whether some of the basic observations could be confirmed by qPCR analysis of the endogenous genes?
 
-Many conclusions of our manuscript are based on the analysis of the WUS reporter line because it is by far the most sensitive and robust way to quantify WUS promoter activity. We have characterized these reporters in great detail and found them to faithfully recapitulate in many different settings, including other transgenes, suggesting that positional effects have minor influence on their output (see Author response image 1pWUS:mCHERRY-GUS reporter in 4 day old seedlings as an example).10.7554/eLife.17023.015Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.17023.015
-
-DOI: http://dx.doi.org/10.7554/eLife.17023.015
+Many conclusions of our manuscript are based on the analysis of the WUS reporter line because it is by far the most sensitive and robust way to quantify WUS promoter activity. We have characterized these reporters in great detail and found them to faithfully recapitulate in many different settings, including other transgenes, suggesting that positional effects have minor influence on their output (see Author response image 1pWUS:mCHERRY-GUS reporter in 4 day old seedlings as an example).10.7554/eLife.17023.015Author response image 1.
 
 As suggested by the reviewers, we have now quantified WUS expression by qRT-PCR to independently verify our results obtained with the reporter line. We were able to confirm our findings, however the lack of spatial resolution and the small number of expressing cells translated to low signal to noise ratio in the qRT assays. Therefore, we only detected mild expression changes of WUS with some variation in 4 day old seedlings grown in darkness, red light or in presence of sucrose (see Author response image 2). We therefore decided to test 7 day old seedlings, which showed very reliable results (Figure 2—figure supplement 1D and E and Figure 4—figure supplement 1B). The qRT-PCR analysis confirmed all key findings, including the induction of WUS expression by light and sucrose (Figure 2—figure supplement 1D) as well as the positive effect of the cop1 mutation (Figure 2—figure supplement 1D and E) and the ckx5/ckx6 double mutant (Figure 4—figure supplement 1B) on WUS expression.
 
-We want to point out that quantitative analysis of WUS expression by qRT-PCR is problematic, since we need to compare plants of different morphology and thus an appropriate reference gene is not available (the issue was discussed in detail by Demidenko and Penin, 2012 2). We believe it to be essential to analyze WUS expression with cellular resolution and thus view the qRT-PCR results as a qualitative rather than a quantitative confirmation of our reporter gene analysis.10.7554/eLife.17023.016Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.17023.016
-
-DOI: http://dx.doi.org/10.7554/eLife.17023.016
+We want to point out that quantitative analysis of WUS expression by qRT-PCR is problematic, since we need to compare plants of different morphology and thus an appropriate reference gene is not available (the issue was discussed in detail by Demidenko and Penin, 2012 2). We believe it to be essential to analyze WUS expression with cellular resolution and thus view the qRT-PCR results as a qualitative rather than a quantitative confirmation of our reporter gene analysis.10.7554/eLife.17023.016Author response image 2.
 
 Please find the reviewer comments attached below for more details, and please respond to them to the best of your capacity.
 
@@ -76,15 +72,11 @@ We now clarify the percentage of plants with shoot formation in the text. We see
 
 4) One of the two ML1 transgenic lines deviates from the highlighted phenotype (Figure 2—figure supplement 1D). Why is that? Is it an expression problem? As I understand, the phyB mutant was not tagged? Maybe the authors can present evidence from additional lines and/or correlation with expression levels. As is, their statement regarding ML1 is misleading, because one out of two lines shows the other phenotype, so it's a 50:50 choice.
 
-When we grew pML1:PHYB Y276H expressing lines in darkness, some showed a cop-like phenotype, while others resembled WT seedlings. We now show that this correlates with the expression level of PHYB by analyzing the total and endogenous PHYB expression by qRT PCR. Line AP88.2.1 (cop phenotype in darkness) shows 15x higher level of PHYB than line AP88.1.3 (WT phenotype) (Figure 2—figure supplement 1I). Additionally we also analyzed the expression level of several lines expressing pML1:PHYB Y276H-YFP and also saw a clear negative correlation of hypocotyl length and PHYB Y276-YFP expression strength (see Author response image 3 pictures of 2 seedlings of each line grown for 4 days in darkness and above each line corresponding epifluorescence pictures of the YFP signal of hypocotyl cells with intensity coded in FIJI LUT "fire").10.7554/eLife.17023.017Author response image 3.DOI: http://dx.doi.org/10.7554/eLife.17023.017
-
-DOI: http://dx.doi.org/10.7554/eLife.17023.017
+When we grew pML1:PHYB Y276H expressing lines in darkness, some showed a cop-like phenotype, while others resembled WT seedlings. We now show that this correlates with the expression level of PHYB by analyzing the total and endogenous PHYB expression by qRT PCR. Line AP88.2.1 (cop phenotype in darkness) shows 15x higher level of PHYB than line AP88.1.3 (WT phenotype) (Figure 2—figure supplement 1I). Additionally we also analyzed the expression level of several lines expressing pML1:PHYB Y276H-YFP and also saw a clear negative correlation of hypocotyl length and PHYB Y276-YFP expression strength (see Author response image 3 pictures of 2 seedlings of each line grown for 4 days in darkness and above each line corresponding epifluorescence pictures of the YFP signal of hypocotyl cells with intensity coded in FIJI LUT "fire").10.7554/eLife.17023.017Author response image 3.
 
 5) With regard to the cytokinin experiments, and the sometimes inconclusive contribution, I wonder whether the actual cytokinin used is of importance? Given the variety of cytokinins and their reported shoot- and root-specific activities, the authors might find a "better" cytokinin, which might have a more clear effect on WUS expression.
 
-To elucidate the role of different cytokinin molecules we now assayed the effect of Kinetin and Zeatin on WUS expression. However, we did not see striking differences in the activation of WUS expression (see Author response image 4, plants were grown for 6 days in darkness and treated with 0.5 µM of cytokinin during the last 3 days).10.7554/eLife.17023.018Author response image 4.DOI: http://dx.doi.org/10.7554/eLife.17023.018
-
-DOI: http://dx.doi.org/10.7554/eLife.17023.018
+To elucidate the role of different cytokinin molecules we now assayed the effect of Kinetin and Zeatin on WUS expression. However, we did not see striking differences in the activation of WUS expression (see Author response image 4, plants were grown for 6 days in darkness and treated with 0.5 µM of cytokinin during the last 3 days).10.7554/eLife.17023.018Author response image 4.
 
 6) Because of the importance of the fluorescence measurements, I would like the authors to confirm that samples analyzed for one graph were grown in parallel and analyzed with identical settings.
 
@@ -92,9 +84,7 @@ All datasets were grown and analyzed in parallel with the reference sample (whic
 
 "For all these experiments plants of one experimental set were always grown and analyzed in parallel to the untreated (dark-grown) and the corresponding reference sample."
 
-We already mentioned in the Methods that microscope settings were identical during all measurements. To illustrate that the measurements were highly reproducible we present an example of two experiments, which were not done at the same time. The plot shows WUS expression in dark-grown WT, red-light-grown WT and red-light-grown phyB mutants grown and analyzed days apart (box 1-3 and box 4-6).10.7554/eLife.17023.019Author response image 5.DOI: http://dx.doi.org/10.7554/eLife.17023.019
-
-DOI: http://dx.doi.org/10.7554/eLife.17023.019
+We already mentioned in the Methods that microscope settings were identical during all measurements. To illustrate that the measurements were highly reproducible we present an example of two experiments, which were not done at the same time. The plot shows WUS expression in dark-grown WT, red-light-grown WT and red-light-grown phyB mutants grown and analyzed days apart (box 1-3 and box 4-6).10.7554/eLife.17023.019Author response image 5.
 
 Reviewer #2:
 

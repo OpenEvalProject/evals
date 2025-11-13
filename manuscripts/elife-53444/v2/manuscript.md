@@ -26,11 +26,27 @@ Cholesterol, the 'central lipid of mammalian cells' (Maxfield and van Meer, 2010
 
 We recently reported crystal structures of the second StARkin domain of Lam4 (here termed Lam4S2) in apo- and sterol-bound states (Jentsch et al., 2018). The protein has an overall α/β helix-grip fold that forms a capacious binding pocket into which the sterol appears to be admitted head-first, through an aperture at one end, such that its 3-β-hydroxyl head-group is stabilized by direct or water-mediated interactions with polar residues (Figure 1A; Figure 1—figure supplement 1A). The interior surface of the binding pocket is surprisingly polar (Figure 1—figure supplement 1B) considering the hydrophobicity of its sterol clients, which include cholesterol, ergosterol, dehydroergosterol (DHE) and 25-hydroxycholesterol (25HC) (Results [also see Gatta et al., 2015; Jentsch et al., 2018; Gatta et al., 2018]). The surface of the protein near the entrance to the pocket is decorated with lysine residues, accounting for the enhanced ability of Lam4S2 to transfer sterol between anionic vesicles compared with its ability to transfer sterol between neutral vesicles (Jentsch et al., 2018); the entryway itself is partially occluded by a flexible loop, termed Ω1 (Figure 1A), whose functional importance in the StARkin family has been well-documented through mutagenesis studies (Horenkamp et al., 2018; Gatta et al., 2018; Iaea et al., 2015). The structures of other Lam/GramD1 StARkin domains are similar (Sandhu et al., 2018; Horenkamp et al., 2018; Tong et al., 2018), broadly resembling structures of other members of the StARkin superfamily except for one striking feature. The wall of the sterol binding cavity in all Lam/GramD1 StARkin domains is fractured along part of its length, not unlike one of Lucio Fontana's slashed canvases (Candela, 2019), exposing the sterol backbone to bulk solvent (Figure 1—figure supplement 2A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig1-v2.jpg)
+
+**Figure 1.:** (A) Structural elements of the Lam4S2 domain used to construct collective variables (CVs) for time-structure independent components analysis (tICA). Residues Q121, S181, D61 are labeled. Also highlighted are the locations of the Ω1 loop (purple), the C-terminal helix (yellow), the N-terminus (green), and the C-terminus (red). Cholesterol is shown in space-filling representation colored cyan except for the oxygen atom in red. (B) Initial positioning of Lam4S2 (cartoon) near the membrane. In this configuration, the distance between any atom of the protein and any atom of a lipid molecule was ≥10 Å. The cholesterol molecule bound to Lam4S2 is shown in space-fill representation. The water box including solution ions is omitted for clarity. (C) For each residue of Lam4S2, the fraction of trajectory frames from Stage 1 simulations in which the residue is in contact with the membrane was determined and plotted. A residue was considered to be in contact with the bilayer if the z-coordinate of the Cα atom of this residue was within 1 Å of the average z-position of the neighboring lipid phosphate atoms (identified as those located within 10 Å of this Cα atom). The relevant protein segments are labeled and colored using the color-code used in panel (A). (D, E) Two modes of Lam4S2-membrane association. The lipids in the membrane are shown as lines. The relevant protein segments are colored using the color-code used in panel (A). For completeness, panels (D, E) also show the protein-bound cholesterol molecule in space-fill, as well as residues K163, K167, K62, K90, K98, K203, and Q121.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Lam4S2 with bound 25HC. This figure shows an ergosterol molecule in the binding site, surrounded by its electron density, as well as key residues that engage the sterol molecule. (B) Polarity of the Lam4S2 binding pocket. The structure shows a bound cholesterol molecule (taken from Figure 1A) and the key Q121 residue. The color code used for the protein ribbon indicates positive (blue), negative (red), polar (green), and hydrophobic (white) residues.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Crystal structures (surface representation) of Lam/GramD1 domains with bound sterol. The structures (PDB ID: 6CAY (Lam2S1), 5YS0 (Lam2S2), 6GQF (GramD1a), 6BYM (Lam4S2)) are oriented with their sterol entry/exit site at the bottom, displaying the lateral fracture (side-opening) through which the bound sterol is visible from the bulk solvent. (B) Competition assay showing that both ergosterol and 25HC compete with DHE for binding to Lam4S2. The assay, performed as described by Gatta et al. (2015), reports Förster resonance energy transfer (FRET) between a tryptophan residue in Lam4S2 and bound DHE. Lam4S2 (1 μM) was mixed with 3 μM DHE (in the absence or presence of 3 μM ergosterol or 25HC [all sterols were added from stock solutions in methanol]) and incubated for 30 min at room temperature. A fluorescence emission spectrum was obtained over the range 300–450 nm (λex = 290 nm) and, after background subtraction, the ratio of intensities at 373 nm and 340 nm was used as an index of FRET. Results were normalized by setting the average FRET Index for the Lam4S2–DHE complex in the absence of competitor as 100. (C) Model of ergosterol bound to Lam4S2 from an atomistic MD simulation. The protein is shown in cartoon, and the sterol as well as selected protein residues are shown in space fill and are labeled. The ergosterol–Lam4S2 complex was built by docking an ergosterol molecule into Lam4S2 using the cholesterol–Lam4S2 structure, which was the starting point for the Stage 2 ensemble simulations. The resulting ergosterol–Lam4S2 system was then subjected to MD simulations using NAMD 2.13. The model was first energy-minimized and then equilibrated with unbiased MD for ~23 ns. (D) Model of 25HC bound to Lam4S2 from the X-ray structure with PDBID 6BYM. The protein is shown in cartoon, and the sterol as well as selected protein residues are shown in space fill and are labeled.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A, B) Electrostatic potential of wild type Lam4S2 (A) and the K163D/K167D double mutant (B). The blue and red wireframes represent +1kt/e and −1kt/e electrostatic potential iso-surfaces, respectively, and were obtained by solving the non-linear Poisson-Boltzmann (NLPB) equation with APBS (see Methods). The protein is shown in cartoon and all the basic residues are illustrated in space-fill representation. Residues K62, K90, K98, and K203 are labeled, and the amino acids at positions 163 and 167 are highlighted in yellow and are labeled. (C) Binding of wild-type and K163D/K167D Lam4S2 to membranes. The binding assay was performed as described in ‘Materials and methods (Sterol extraction assay)’, and the relative amount of protein in the supernatant (S) and pellet (P) fractions was quantified by Coomassie-stained SDS-PAGE analysis of sample equivalents. A representative gel is shown (molecular weight [MW] markers are indicated). The percentage of protein bound was (mean ± SD, n = 3) 48.5 ± 0.5 (wild-type) and 46.0 ± 2.0 (K163D/K167D mutant). (D, E) Positioning of K163D/K167D Lam4S2 at the start (D) and end (E) of a 43 ns MD simulation. The protein is engaged with the membrane via Mode 2 at the start of the simulation and re-orients over time to interact with the membrane via Mode 1. The lipids in the membrane are shown as lines. The relevant protein segments are colored using the following color-code: Ω1 loop (purple), C-terminal helix (yellow), N-terminus (green), and C-terminus (red). The cholesterol molecule, as well as selected protein residues, are shown in space fill and are labeled.
+
 We considered whether this unusual structural feature — henceforth termed 'side-opening' — might provide a mechanism to control the stability of sterol within the binding pocket. We posited that the ability to load sterol into the pocket, or to discharge it from the pocket into the membrane, might be controlled by water permeation via the side-opening. We used a combination of large-scale atomistic molecular dynamics (MD) simulations and functional tests to explore this hypothesis. Analysis of extensive ensemble and umbrella sampling MD trajectories revealed that sterol egress from Lam4S2 is associated with widening of the side-entrance to the binding pocket, penetration of water molecules into the cavity, and consequent destabilization of the bound sterol. The simulations identified several polar residues that line the side-opening to the pocket and that appear to play a critical role in the initial steps of the release process. The functional importance of these residues was validated experimentally by showing that their replacement with alanine compromises the ability of Lam4S2 to rescue the nystatin-sensitivity of lam2Δ yeast cells. Furthermore, these substitutions reduce the efficiency with which the purified protein is able to extract membrane-bound sterol and catalyze sterol exchange between populations of vesicles in vitro. These data suggest an unprecedented, water-controlled mechanism of sterol acquisition and discharge from a StARkin domain.
 
 ## Results
 
-## Lam4S2 associates with the membrane via its Ω1 loop and C-terminal helix
+### Lam4S2 associates with the membrane via its Ω1 loop and C-terminal helix
 
 We used atomistic MD simulations of Lam4S2 to explore the impact of the unique side-opening in Lam/GramD1 StARkin domains on the stability of bound sterol and its ability to exit the binding pocket. We chose cholesterol-bound Lam4S2 for these analyses because we (Gatta et al., 2015) and others (Gatta et al., 2018) have previously showed that Lam4S2 binds cholesterol. The protein also binds ergosterol, dehydroergosterol (DHE) (Gatta et al., 2015) and 25-hydroxycholesterol (25HC) (Jentsch et al., 2018). All these sterols appear to bind equivalently, as the extent of DHE binding to Lam4S2 is reduced in the presence of competing amounts of cholesterol or ergosterol (Gatta et al., 2015), and also of 25HC (Figure 1—figure supplement 2B). This point is highlighted by inspection of models of Lam4S2 loaded with cholesterol (Figure 1A; Figure 1—figure supplement 1B), ergosterol (Figure 1—figure supplement 2C) and 25HC (Figure 1—figure supplement 2D) in which all three sterols are seen to be positioned in essentially the same way in the binding pocket.
 
@@ -42,9 +58,37 @@ We hypothesized that Mode 2, in which the protein appears to be situated correct
 
 On the basis of these results, we chose not to explore Mode 1 further, but rather to test the premise that Mode 2 mediates release of sterol into the membrane. To this end, we enhanced the sampling of this mode of Lam4S2–membrane interaction by initiating a new set of 100 independent MD simulations (with random starting velocities) from 10 conformations of the system in which the Ω1 loop and the C-terminal helix were simultaneously engaged with lipids (Stage 2 ensemble simulations, 37.5 µs cumulative time). As described next, these trajectories revealed detailed mechanistic steps leading to spontaneous release of the protein-bound cholesterol into the membrane.
 
-## Mechanistic steps of cholesterol transfer from Lam4S2 to the membrane
+### Mechanistic steps of cholesterol transfer from Lam4S2 to the membrane
 
 To facilitate analyses of the conformational dynamics of the membrane-bound Lam4S2–cholesterol complex in Stage 2 simulations, we used the time-structure-based independent component analysis (tICA) approach to reduce the dimensionality of the system (see 'Materials and methods'). To this end, we considered a set of collective variables (CVs) to describe the dynamics of cholesterol and relevant segments of the protein (i.e. the Ω1loop and the C-terminal helix) as well as to quantify the solvent exposure of the sterol-binding site (see 'Materials and methods' for details). All of the trajectory frames from Stage 2 simulations were projected onto the first two tICA vectors (Figure 2A), which represented ~90% of the total dynamics of the system (Figure 2—figure supplement 1A). The resulting 2D space (Figure 2A) was discretized for structural analyses into 100 microstates using the automated k-means clustering algorithm (Figure 2—figure supplement 1B). These microstates cover the conformational space of the system as the cholesterol molecule is transferred from the protein-bound state to the membrane.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig2-v2.jpg)
+
+**Figure 2.:** (A) 2-D landscape representing all of the Stage 2 MD trajectories mapped with the tICA transformation in the space of the first two tICA eigenvectors (tIC 1 and tIC 2). The lighter shades (from red to light green to yellow) indicate the most populated regions of the 2D space (see the color bar). Microstates representing the most populated states in these simulations are indicated by the numbered circles (1-7) and represent various stages in the lipid translocation process. (B) Characteristics of the selected microstates. The columns record the probability distributions of the cholesterol RMSD, number of water oxygens in the sterol-binding pocket, and distances between residues 61 and 181 (d61–181) and between residues 95 and 169 (d95–169). (C) Structural models representing selected microstates. In these snapshots, Lam4S2 is shown in cartoon, and cholesterol as well as selected protein residues (Q121, D61, K89, S181, I95, A169) are shown in space fill (the residues are labeled in the snapshot of Microstate 1). Water oxygens in the sterol-binding site are drawn as gold spheres.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Contribution of each tIC vector to the total fluctuation of the system in Stage 2 simulations. (B) The full set of Stage 2 trajectories mapped on the 2D landscape of the first two tICA eigenvectors (tIC 1 and tIC 2). Also shown are the locations of the 100 microstates (red squares) obtained from the k-means clustering analysis of the conformational space. The lighter shades on the two-dimensional space indicate the most populated regions (see also Figure 2).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Two-dimensional (2-D) landscape (reproduced from Figure 2A for ease of reference) representing all of the Stage 2 MD trajectories mapped with the tICA transformation in the space of the first two tIC vectors. The lighter shades (from red to light green to yellow) indicate the most populated regions of the 2D space (see the color bar). Microstates representing the most populated states in these simulations are indicated by the numbered circles (1-7) (Maxfield and van Meer, 2010; Menon, 2018; Holthuis and Menon, 2014; Wong et al., 2019; Wong and Levine, 2016; Alpy and Tomasetto, 2005; Gatta et al., 2015) and represent various stages in the lipid translocation process. (B) Structural characteristics of selected microstates. The columns from left to right record the probability distributions of dchol–121 distance, dZ(chol–121) distance, number of lipids within 3 Å of cholesterol, and d61–89 distance. (C) Structural snapshot of Microstate 1 zoomed at the side-entrance to the sterol binding pocket highlighting the juxtaposition of D61, K89, and S181 residues (labeled). For completeness, the cholesterol molecule is also shown in space-fill representation and is labeled. (D) Structural models representing microstates from panel (B). These snapshots illustrate gradual immersion of the cholesterol molecule into the membrane as it exits the binding site. In these models, lipids within 3 Å of cholesterol are shown in licorice, cholesterol in space-fill, and residue Q121 is colored in ice blue and labeled. In addition, the C-terminal helix and the Ω1 loop are depicted in yellow and purple, respectively, and the z-axis direction is highlighted.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The high degree of hydration of the binding pocket seen for the apo protein recapitulates the level of solvation observed in the MD simulations of the cholesterol-bound Lam4S2 after sterol exit (see Microstates 5–7 in Figure 2B).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Projection on the 2D tICA landscape from Figure 2A of each individual trajectory from Stage 2 simulations. The 2D tICA map is drawn as in Figure 2A but using smaller-size transparent dots. The colors of the larger dots indicate the time-frames in the evolution of the trajectories: darker colors (blue, cyan) represent the initial stages of the simulations, lighter colors dots (yellow, green) correspond to the middle part of the trajectories, and shades of red show the last third of the trajectories. The tICA landscapes boxed in red represent simulations in which the cholesterol translocation process was sampled in its entirety. The landscapes marked with a green star are simulations in which the system evolved from Microstate 1 to Microstate 5 but did not progress further.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Time-evolution of d61–181 distance (A), minimum distance between cholesterol and Q121 residue (dchol–121) (B), and number of water oxygens in the sterol-binding site (C) during one of the Stage 2 simulations of the wild-type protein in which sterol release was observed. The two trajectory frames that were selected for initiating simulations of the mutants are marked by arrows (120 ns and 150 ns time-points). Simulation of the D61A, S181A, and K89A mutants is shown in Figure 2—figure supplement 6.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Number of water oxygens in the sterol-binding site as a function of time in simulations of S181A, K89A, and D61A Lam4S2 (top, middle, and bottom panels, respectively). The results for 10 statistically independent replicates in the corresponding ensemble of trajectories are shown in different color traces. (B) Minimum distance between cholesterol and residue Q121 (dchol–121) as a function of time in simulations of S181A, K89A, and D61A Lam4S2 (top, middle, and bottom panels, respectively). The results for 10 statistically independent replicates in the corresponding ensemble of trajectories are shown in different color traces. (C) Histograms of number of water oxygens corresponding to the time-traces in panel (A) (data from the entire time-period were used to construct the histograms). (D) Histograms of dchol–121 corresponding to the time-traces in panel (B) (data from the entire time-period were used to construct the histograms).
 
 Structural analyses of selected microstates on the tICA landscape (labeled 1–7 in Figure 2A), characterized by relevant CVs (Figure 2B) and visualized in structural snapshots (Figure 2C), describe key mechanistic steps of the sterol-release process. Microstate 1 represents an ensemble of states in which the sterol-binding cavity is occluded from both the solvent and the membrane. Thus, in Microstate 1 conformations (Figure 2B,C), cholesterol is stably bound in the protein (‘chol RMSD’ histogram [bottom panel, Figure 2B]), while the sterol-binding pocket is dehydrated (‘water count’ histogram [bottom panel, Figure 2B]) and sealed from the side by the side-chains of residues S181 and D61 that line the side-opening of the pocket (d61–181 distance histogram [bottom panel, Figure 2B]). In addition, the Ω1 loop is positioned close to the C-terminal helix so that the Cα atoms of residues I95 in the Ω1 loop and A169 in the C-terminal helix are within ~10 Å of each other (d95–169 distance histogram [bottom panel, Figure 2B]; see the middle structure in Figure 2C for the location of A169), thus occluding the sterol-binding pocket from below, that is the vantage point of the membrane. Indeed, in the ensemble of conformations representing Microstate 1, cholesterol has essentially no contact with membrane lipids (‘number of lipids’ histogram [bottom panel, Figure 2—figure supplement 2A and B]).
 
@@ -56,19 +100,43 @@ Cholesterol egress then proceeds through Microstates 5–7 in which the sterol-b
 
 The sterol translocation process outlined above was sampled in its entirety in 5 out of 100 Stage 2 simulations (trajectories highlighted in red in Figure 2—figure supplement 4). Another 19 trajectories in this set sampled the evolution of the system from Microstate 1 to Microstate 5 (trajectories marked with a green star in Figure 2—figure supplement 4), but on the time scales of these simulations, the system either did not progress further (i.e. to Microstates 6 and 7) or returned to Microstate 4 or 3 where it remained (see also below). In the remaining Stage 2 simulations, the system fluctuated between Microstates 1, 2, and 3 (unmarked trajectories in Figure 2—figure supplement 4).
 
-## The side-opening to the sterol-binding pocket is a key structural element of the release mechanism
+### The side-opening to the sterol-binding pocket is a key structural element of the release mechanism
 
 The MD simulations indicate that widening of the side-opening to facilitate water penetration into the binding site (Figure 3) is a key step in the mechanism by which bound cholesterol leaves the protein to enter the membrane. To investigate in more detail the interplay between increased hydration of the sterol-binding pocket, widening of the side-entrance to the binding cavity, and stability of cholesterol within the pocket, we analyzed the dynamics of D61 and S181 and their interactions with other residues in the binding site during the simulations. We found that D61 is engaged in electrostatic interactions with residue K89 located in the β2 strand preceding the Ω1 loop. Thus, the side-chain of K89 faces the entrance of the binding pocket where it interacts with the anionic side-chain of D61 (Figure 2—figure supplement 2C, Figure 3). This interaction is maintained in the initial stages of the translocation process (Microstates 1–4), but becomes unstable as the hydration of the sterol-binding pocket reaches its highest levels after cholesterol leaves the site (Figure 3—figure supplement 1; also note sampling of a wide range of d61–89 distances for Microstates 5–7 in Figure 2—figure supplement 2B). These data suggest that D61, S181 and K89 together participate in stabilizing the closed conformation of the side-entrance to the binding pocket.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Top view of the sterol-binding pocket in Lam4S2, illustrating closed (A) and open (B) conformations of the side-opening to the binding site (the protein models are representative structures from Microstates 1 and 7, respectively). In both snapshots, residues D61, K89, and S181 (which line the side-opening) and residue Q121 (which coordinates the cholesterol hydroxyl group) are highlighted (in space-fill and labeled). The gold spheres in panels (A) and (B) represent the superposition of water oxygens in the binding site and near the side-entrance from one of the Stage 2 trajectories before (panel A) and after (panel B) the side-entrance opens. In panel (A), the cholesterol is shown as licorice. A water pathway to the binding pocket, formed when the side-entrance is open, but not when it is closed, is illustrated in panel (B) by the yellow arrow.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The time-traces show that cholesterol destabilization is preceded by increases in the d61–181 distance (>4 Å) and that its departure is followed by larger fluctuations in the d61–89 distance.
+
 On the basis of these results and considering the position of the K89 side-chain near the protein-solvent interface, we hypothesized that replacing the polar and relatively long side-chain of K89 with a smaller hydrophobic moiety would promote widening of the side entrance, leading to destabilization of cholesterol in the binding pocket. Likewise, substituting D61 and S181 with residues with smaller-sized hydrophobic side-chains should also have a destabilizing effect on bound cholesterol.
 
-## Substitution of residues D61, S181, and K89 by Ala promotes hydration of the binding site and destabilizes bound cholesterol
+### Substitution of residues D61, S181, and K89 by Ala promotes hydration of the binding site and destabilizes bound cholesterol
 
 To test these hypotheses, we computationally generated K89A, D61A, and S181A point-mutants of Lam4S2, and probed their dynamics using atomistic MD simulations. Specifically, we considered two snapshots taken at different time points (120 ns and 150 ns, respectively) from one of the Stage 2 trajectories (350 ns-long) of the wild-type protein system in which sterol release was observed. For the wild-type protein at these time points, the side-opening to the pocket is closed (Figure 2—figure supplement 5A), the cholesterol molecule is stably bound (Figure 2—figure supplement 5B), and the level of hydration is relatively low (between 5–10 water molecules as shown in Figure 2—figure supplement 5C). We introduced the three mutations separately into these two snapshots, and (for each construct) carried out 150-ns-long unbiased MD simulations in 10 replicates (1.5 µs total simulation time). Analysis of these trajectories revealed that for all three of the mutants, the hydration level of the sterol-binding site increased rapidly during the initial 4–5 ns of the simulations (Figure 2—figure supplement 6A). Note that in the original wild-type trajectory, reaching the same high level of hydration (>20 water molecules, Figure 2—figure supplement 6C) required a considerably longer time (~180 ns, Figure 2—figure supplement 5C). Furthermore, in the trajectories for the mutant proteins, cholesterol was destabilized in its binding pocket (Figure 2—figure supplement 6B,D). On the simulation timescales, rapid destabilization was especially notable for the K89A system in which, for all but one replicate, the sterol was unstable in its binding site (panel labeled K89A, Figure 2—figure supplement 6D).
 
-## K89A-Lam4S2 has a lower energy barrier for cholesterol release
+### K89A-Lam4S2 has a lower energy barrier for cholesterol release
 
-To address the effect of the K89A mutation on cholesterol stability quantitatively, we compared the energetics of sterol release in the K89A mutant versus the wild-type system using umbrella sampling MD simulations. We constructed the potential of mean force (PMF) for cholesterol release by constraining the z-distance between the sterol hydroxyl oxygen and the Cα atom of residue Q121, dZ(chol–121) to different values in the range ∈ [2Å; 20 Å] along the release pathway (dZ(chol–121) histogram (Figure 2—figure supplement 2B)). The results are shown in Figure 4A. For the wild-type system, the PMF calculations indicate that cholesterol release requires that an energy barrier of ~6 kcal/mole is overcome, and proceeds through two major steps that were also identified in our tICA analysis of Stage 2 simulations. Thus, the PMF has a global minimum at dZ(chol–121) ~2 Å, corresponding to the position of cholesterol in the binding site where its polar head-group is coordinated by residue Q121 (snapshot at the top right of Figure 4A), and two local minima (LM-1 and LM-2) at dZ(chol–121) ~10–14 Å and > 18 Å, respectively. The global minimum represents the ensemble of states found in Microstate 1-3 (dZ(chol–121) histogram, Figure 2—figure supplement 2B), whereas LM-1 corresponds to the ensemble of states found in Microstate 5 (dZ(chol-121) histogram, Figure 2—figure supplement 2B).
+To address the effect of the K89A mutation on cholesterol stability quantitatively, we compared the energetics of sterol release in the K89A mutant versus the wild-type system using umbrella sampling MD simulations. We constructed the potential of mean force (PMF) for cholesterol release by constraining the z-distance between the sterol hydroxyl oxygen and the Cα atom of residue Q121, dZ(chol–121) to different values in the range $\in$ [2Å; 20 Å] along the release pathway (dZ(chol–121) histogram (Figure 2—figure supplement 2B)). The results are shown in Figure 4A. For the wild-type system, the PMF calculations indicate that cholesterol release requires that an energy barrier of ~6 kcal/mole is overcome, and proceeds through two major steps that were also identified in our tICA analysis of Stage 2 simulations. Thus, the PMF has a global minimum at dZ(chol–121) ~2 Å, corresponding to the position of cholesterol in the binding site where its polar head-group is coordinated by residue Q121 (snapshot at the top right of Figure 4A), and two local minima (LM-1 and LM-2) at dZ(chol–121) ~10–14 Å and > 18 Å, respectively. The global minimum represents the ensemble of states found in Microstate 1-3 (dZ(chol–121) histogram, Figure 2—figure supplement 2B), whereas LM-1 corresponds to the ensemble of states found in Microstate 5 (dZ(chol-121) histogram, Figure 2—figure supplement 2B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig4-v2.jpg)
+
+**Figure 4.:** (A) Potential of mean force (PMF) as a function of dZ(chol–121) distance for wild-type (red) and K89A (black) Lam4S2, calculated from umbrella sampling MD simulations at each dZ(chol–121). The structural representations on the right side of the panel illustrate locations of cholesterol corresponding to dZ(chol–121) ~2 Å (top) and dZ(chol–121) ~20 Å (bottom). Residues Q121 and K89 in these snapshots are also shown. (B) Histograms of the number of water oxygens in the sterol-binding site constructed from analysis of trajectories representing various windows in the range of dZ(chol–121)∈ (2Å; 20Å) from the umbrella MD simulations of the wild-type (left panels) and K89A (right panels) systems.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Histograms of dchol–121 (A, B) and d61–181 (C, D) distances constructed from analysis of trajectories representing various windows in the range of dZ(chol–121)∈ (2Å; 11Å) from the umbrella MD simulations of the wild type (A, C) and K89A (B, D) systems.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Potential of mean force (PMF) as a function of dZ(chol–121) distance for the membrane-bound (red) and soluble (black) wild-type Lam4S2 calculated from umbrella sampling MD simulations at each dZ(chol–121). The structural representations on the right side of the panel illustrate locations of cholesterol corresponding to dZ(chol–121) ~2 Å (top) and dZ(chol–121) ~20 Å (bottom). Residues Q121 and K89 in these snapshots are also shown for reference. (B) Graphs of the number of water oxygens within 3 Å of cholesterol (left panels) and of d65–169 distance (right panels) constructed from analysis of trajectories representing various windows in the range of dZ(chol–121)∈ [2 Å–20 Å] from the umbrella MD simulations of the membrane-bound (red) and soluble (black) wild-type Lam4S2 systems.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A, B) Probability distributions of dZ(chol–121) distance in different windows sampled during the umbrella MD simulations for the wild-type (A) and the K89A mutant (B) systems. The data for the different umbrella windows are represented in different colors. (C, D) Auto-correlation function (ACF) vs. time in different windows sampled during the umbrella MD simulations for the wild-type (C) and the K89A mutant (D) systems. The color-code is the same as in panels (A) and (B).
 
 The PMF calculations reveal that the energy barrier that separates LM-1 from the global minimum is ~5 kcal/mole (red trace in Figure 4). This high energy cost is associated with the clear change in hydration of the sterol-binding site and the concomitant opening of the side-opening to the pocket (see WT profiles in Figure 4B). Indeed, the water count increases and the D61–S181 interaction is destabilized when the system transitions from dZ(chol–121)∈ [2 Å; 6 Å] to dZ(chol–121) ≥ 7 Å (Figure 4, Figure 4—figure supplement 1A, C). LM-2 represents the ensemble of states in which cholesterol is on the verge of exiting the protein, that is, states in which cholesterol is mostly engaged by lipids and with its head-group on the level of the Ω1 loop (see Microstate 6 in Figure 2—figure supplement 2D). LM-1 and LM-2 are separated by an energy barrier of ~2 kcal/mole. Overall, the presence of multiple minima on the PMF plot is consistent with our findings from the tICA analysis of the unbiased MD simulations described above: in some of the Stage 2 trajectories, the system evolved from Microstate 1 to Microstate 5 (i.e. transitioned from the global minimum to LM-1 on the PMF plot), but either did not progress further to complete sterol egress (i.e. they did not reach LM2) or returned to the conformational space of the tICA landscape characterized by relatively low hydration of the sterol-binding pocket (i.e. they returned to the global energy minimum). For comparison, we also investigated the energetics of sterol release from wild-type Lam4S2 in water. In this case, the PMF profile no longer has LM-1 and LM-2 minima (Figure 4—figure supplement 2A). Instead, only one global minimum can be found, corresponding to the position of cholesterol in the binding site. The energy difference between the bound and released states on the PMF profile in water is >10 kcal/mole, at least ~2-fold higher than the energy barrier for sterol release into the membrane. These differences can be explained by the different solvent exposure of the hydrophobic tail of cholesterol during the egress process in water versus that in the membrane (Figure 4—figure supplement 2B).
 
@@ -76,7 +144,7 @@ Remarkably, comparison of the PMF plots for the wild-type and the K89A systems (
 
 Interestingly, the global minimum on the PMF profile of the K89A mutant is shifted compared to its location on the PMF plot of the wild-type system, from dZ(chol–121) ~2 Å to ~5 Å (Figure 4A). We found that, at the shortest dZ(chol–121) distances, cholesterol–Q121 interactions in the mutant are mostly mediated by water molecules, whereas at dZ(chol–121) ~5 Å, the hydroxyl group of cholesterol is in direct contact with Q121 (see sharp peak at ~2 Å for the dZ(chol–121) = 5 Å plot in Figure 4—figure supplement 1B; note that dZ(chol–121) is the Z-distance between the hydroxyl and the Cα of Q121). This may also explain why the water content in the cavity is skewed towards lower values for dZ(chol–121) ~5 Å (Figure 4B). Thus, for both the wild-type and K89A systems (and for the wild type simulated in water, Figure 4—figure supplement 2A), the global minimum on the PMF plot corresponds to the ensemble of states in which cholesterol is engaged in direct interactions with Q121. Overall, the PMF calculations reveal that the K89A substitution lowers the energy barrier for cholesterol release from Lam4S2 into the membrane and suggests that cholesterol is consequently less stable in the binding pocket.
 
-## Alanine substitution of residues at the side-entrance to the sterol-binding pocket impacts the function of Lam4S2 in cells and in vitro
+### Alanine substitution of residues at the side-entrance to the sterol-binding pocket impacts the function of Lam4S2 in cells and in vitro
 
 Our computational studies indicate that substitution of D61, K89 or S181 with alanine affects the degree of hydration of the sterol-binding pocket and the stability of bound sterol, with the most significant effects seen for the K89A mutant. We tested the functionality of K89A and the other mutants using three types of experiments.
 
@@ -84,7 +152,7 @@ We previously showed that yeast cells lacking Ysp2/Lam2 (lam2Δ cells) are sensi
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53444/elife-53444-fig5-v2.jpg)
 
-**Figure 5.:** lam2Δ cells.(A) Cells (lam2Δ) were transformed with an empty vector (top row) or with a vector for the expression of GFP–Lam4S2 wild-type (WT) or point mutants as indicated. Serial 10-fold dilutions were spotted onto agar plates containing defined minimal media (lacking [–] or containing 2 μg/ml [+] or 8 μg/ml [++] nystatin). The plates were photographed after 72 hr at room temperature. (B) Cell-equivalent amounts of cytosol from lam2Δ cells expressing GFP–Lam4S2 wild-type or mutants were analyzed by SDS-PAGE and immunoblotting using anti-GFP antibodies to detect the fusion proteins and anti-GAPDH as a loading control.
+**Figure 5.:** (A) Cells (lam2Δ) were transformed with an empty vector (top row) or with a vector for the expression of GFP–Lam4S2 wild-type (WT) or point mutants as indicated. Serial 10-fold dilutions were spotted onto agar plates containing defined minimal media (lacking [–] or containing 2 μg/ml [+] or 8 μg/ml [++] nystatin). The plates were photographed after 72 hr at room temperature. (B) Cell-equivalent amounts of cytosol from lam2Δ cells expressing GFP–Lam4S2 wild-type or mutants were analyzed by SDS-PAGE and immunoblotting using anti-GFP antibodies to detect the fusion proteins and anti-GAPDH as a loading control.
 
 To test explicitly the ability of the mutants to extract sterol from membranes and to catalyze sterol exchange between populations of vesicles, we expressed His-tagged versions of the proteins in Escherichia coli and purified them by affinity chromatography and size exclusion. The D61A mutant proved unexpectedly problematic on account of its low yield and apparent instability, and so we focused on the S181A and K89A mutants (Figure 6A). Like wild-type Lam4S2, these mutants displayed monodisperse profiles on size exclusion (Figure 6B) and yielded circular dichroism spectra that were indicative of well-folded structures (Figure 6C).
 
@@ -108,23 +176,97 @@ Lam/GramD1 StARkin domains specifically bind sterols (Gatta et al., 2015), admit
 
 Our MD simulations reveal that Lam4S2 docks onto anionic phospholipid membranes mainly via two modes, one of which (termed Mode 2 here) is likely to be physiologically relevant. In this mode, the protein engages the membrane via its Ω1 loop and C-terminal helix, two structural regions that have been identified previously as being functionally important in StART domains (Jentsch et al., 2018; Horenkamp et al., 2018; Gatta et al., 2018; Iaea et al., 2015). Once membrane-bound, the protein adopts diverse conformations that are characterized by different extents of widening of the side-opening to the sterol-binding pocket. The side-opening in sterol-loaded Lam4S2 can be occluded by the polar side-chains of residues S181, D61, and K89, resulting in a low level of hydration within the cavity. In this condition, the cholesterol molecule is stably bound, with its hydroxyl group forming hydrogen-bonding interactions with residue Q121. Cholesterol egress is triggered stochastically, by gradual widening of the side-opening and concomitant penetration of water into the binding site. These dynamic events destabilize cholesterol in the binding site by ~4–5 kcal/mole, driving it from the binding site towards the membrane. The subsequent steps of the release process are enabled by repositioning of the Ω1 loop away from the C-terminal helix. This fully exposes the binding pocket to the membrane, that is widens the axial aperture, thus creating a continuous passageway to the membrane. The sequence of events by which sterol exits Lam4S2 and enters the membrane is shown in Video 1.
 
+![Video 1.](https://cdn.elifesciences.org/articles/53444/elife-53444-video1.mp4.jpg)
+
+**Video 1.:** The movie is based on one of the Stage 2 simulations of wild-type Lam4S2. The total length of the trajectory is 350 ns. In the movie, Lam4S2 is shown in white cartoon, the cholesterol molecule is represented in ice-blue colored space-fill, S181, D61, and K89 residues are drawn in space-fill, the oxygen atoms of water molecules in the sterol-binding site are depicted as pink spheres, the membrane leaflet to which Lam4S2 is bound is represented by the nearby lipid phosphate atoms (golden spheres), and lipid molecules within 3 Å of the cholesterol are shown in licorice representation. The rest of the simulation box is omitted. For clarity, the trajectory frames are smoothed for the movie.
+
 The overall process of cholesterol release requires that an energy barrier of ~6 kcal/mole is overcome. This value is in reasonable agreement with the ~10–15 kcal/mole estimate for the energy barrier for sterol extraction by Lam4S2 based on (i) measurement of its transport rate, (ii) the assumption that intermembrane sterol transfer is rate-limited by sterol pick-up/delivery, and (iii) the observation that the rate constant for this process can be described by a simple Arrhenius relationship (Dittman and Menon, 2017). Thus, using the measured transport rate of ~0.8 sterol molecules per second per Lam4S2 (Jentsch et al., 2018), and Arrhenius prefactors in the range 109–1010 s−1 (Dittman and Menon, 2017), we estimate the energy barrier to be 20.9–23.2 kBT, equivalent to ~12.5–14 kcal/mole. Overall, the computational findings reported here reveal that the conformational state of the side-opening to the sterol-binding cavity in the Lam4S2 StARkin domain plays a major role in regulating the energetic stability of the sterol in the pocket.
 
 This prediction was probed first computationally by analyzing MD trajectories of Lam4S2 in which residues that line the side-entrance to the binding site were substituted with alanine. For all three mutations (S181A, D61A and K89A), we found destabilization of cholesterol in the binding site. Using potential of mean force calculations, we found that the K89A mutation lowered the energy barrier for cholesterol release by ~2 fold compared with that for wild type Lam4S2. Experimental tests confirmed that the K89A mutant was non-functional, whereas the S181A mutant was only partially compromised in its ability to bind sterol, a defect that did not appear to influence its ability to rescue the nystatin-sensitivity of lam2Δ cells or to exchange sterols between membranes in vitro. Our test of the D61A mutant was limited to a cell-based assay in which it performed as well as the wild-type protein in rescuing the nystatin-sensitivity of lam2Δ cells.
 
 Considering the functional importance of K89, and to a lesser extent S181, we examined the conservation of these residues in the Lam/GramD1 family using a previously reported structure-based sequence alignment (Horenkamp et al., 2018). We found that the positions aligning with K89 and S181 were among the residues with the highest conservation score. Interestingly, it has been noted that the side-chain of residue K910 in the S1 domain of Lam2 (Lam2S1), which aligns with K89 of Lam4S2 (note that K89 in Lam4S2 corresponds to K1031 in the full-length protein [Table 1]) is positioned slightly differently in the ergosterol-bound and apo structures (Horenkamp et al., 2018). This led to speculation that a path for ergosterol movement into and out of Lam2S1 could be enabled by movement of K910. Consistent with this, our study reveals that residue K89 in Lam4S2 does indeed reposition when cholesterol is released from the protein. Importantly, we find that this movement is a part of larger-scale dynamic changes involving neighboring polar residues, D61 and S181, that lead to widening of the side-opening to the binding pocket.
 
+**Table 1.**
+ Constructs and strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Bacterial plasmids (all constructs are in the pTrcHis6A expression vector and start with the sequence MGGSHHHHHHGMASHHHHHARALEVLFQGPM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lam4S21</td>
+      <td>Lam4 946–1145</td>
+    </tr>
+    <tr>
+      <td>Lam4S2(D61A)3</td>
+      <td>Lam4 946–1145 (D1003A)</td>
+    </tr>
+    <tr>
+      <td>Lam4S2(K89A)3</td>
+      <td>Lam4 946–1145 (K1031A)</td>
+    </tr>
+    <tr>
+      <td>Lam4S2(S181A)3</td>
+      <td>Lam4 946–1145 (S1123A)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Yeast plasmids</td>
+    </tr>
+    <tr>
+      <td>GFP only2</td>
+      <td>pRS416 (CEN URA3): GFP + GFP</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam4S22</td>
+      <td>pRS416 (CEN URA3): GFP + Lam4 946–1155 + DV4</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam4S2(D61A)3</td>
+      <td>pRS416 (CEN URA3): GFP + Lam4 946–1155 (D1003A) + DV4</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam4S2(K89A)3</td>
+      <td>pRS416 (CEN URA3): GFP + Lam4 946–1155 (K1031A) + DV4</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam4S2(S181A)3</td>
+      <td>pRS416 (CEN URA3): GFP + Lam4 946–1155 (S1123A) + DV4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Bacterial strain</td>
+    </tr>
+    <tr>
+      <td>E. cloni EXPRESS BL21(DE3)</td>
+      <td>F– ompT hsdSB (rB– mB–) gal dcm lon λ(DE3 [lacI lacUV5-T7 gene one ind1 sam7 nin5])</td>
+    </tr>
+    <tr>
+      <td>Yeast strain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>lam2Δ (also called ysp2Δ)5</td>
+      <td>MATa his3∆1 leu2∆0 met15∆0 ura3∆0 ysp2∆::hphNT1</td>
+    </tr>
+  </tbody>
+</table>
+
+_1 Described in Jentsch et al. (2018).2 Described in Gatta et al. (2015).3 Parentheses indicate point mutations, for example K89A, using the Lam4S2 numbering system of Jentsch et al. (2018); residue numbering based on the entire Lam4 sequence is provided in the right-hand column.4Two amino acids (DV) appended to the end of the Lam4S2 sequence.5Described in Roelants et al. (2018)._
+
 Our computational analysis points to the key role that solvation of the sterol-binding pocket plays in the process of cholesterol release. We find that water penetration destabilizes hydrogen-bonding interactions between the 3-β-OH of cholesterol and the side-chain of Q121, leading to initiation of sterol egress. Although the current computations have not directly addressed the mechanism of sterol entry into the binding site, the PMF profile that we report here suggests that the continuous water pathway connecting the binding site to the bulk solution, as observed in our simulations of apo Lam4S2 (Figure 2—figure supplement 3), should play an important role in the delivery of sterol into the binding site. In this respect, it is important to note that similar to Lam4S2 (Figure 1—figure supplement 1B), the sterol-binding pocket in all other Lam/GramD1 domains with known structure show strong polar characteristics. Furthermore, although in some X-ray structures of Lam/GramD1 StARkin domains, the polar head-group of the bound sterol is seen in direct contact with neighboring polar residues, in others it is engaged with the protein indirectly through water-mediated interactions. The former mode is observed in Lam4S2, Lam2S2 and GramD1a, whereas the latter mode is seen in Lam2S1. Interestingly, in both Lam4S2 and Lam2S2, the head-group of the bound sterol hydrogen-bonds to the side-chain of a Gln residue (Q121 in Lam4S2). In Lam2S1, on the other hand, the position aligning with Q121 is occupied by a small-size polar residue, Ser. Therefore, the head-group of the sterol does not form a direct hydrogen bond within the binding pocket of Lam2S1 but rather associates with the protein through water-mediated interactions. In GramD1a, in which the residue analogous to Q121 of Lam4S2 is also Ser, the bound sterol is seen in direct contact with another adjacent polar residue (Tyr). Similar to Lam/GramD1 StARkin domains, structural information on yeast Osh4/Kes1 (Im et al., 2005) in complex with different sterols reveals the prominence of water-mediated interactions between the 3-β-OH group of the bound sterol and a cluster of polar residues in the binding site. Furthermore, steered MD simulations of cholesterol release from Osh4 into water (Singh et al., 2009) suggested that the release process unfolds via a molecular ladder mechanism whereby the 3-β-OH group switches between different sets of water-mediated interactions with the binding-site residues as it leaves the protein. Taken together, the structural information highlights the importance of polar interactions for the stability of the sterol molecule in the binding site, consistent with our results demonstrating that disruption of these interactions by influx of water through the cavity side-opening leads to sterol release. Therefore, the molecular mechanism of sterol release that we have identified in Lam4S2 is likely to be generalizable to other homologous domains.
 
 ## Materials and methods
 
-## Computational methods
+### Computational methods
 
-## Molecular constructs of wild-type Lam4S2
+#### Molecular constructs of wild-type Lam4S2
 
 The computations were based on the X-ray structures of the second StARkin domain of Lam4, Lam4S2 (PDBIDs 6BYM and 6BYD) (Jentsch et al., 2018). In the 6BYM structure, Lam4S2 (residue sequence 4–196 in the numbering used in Jentsch et al., 2018, where residue 4 corresponds to Thr-946 in native Lam4) is in complex with 25-hydroxycholesterol, which is bound in the canonical sterol-binding pocket identified also in the StARkin domains of other Lam proteins (Horenkamp et al., 2018; Tong et al., 2018). In the 6BYD model, Lam4S2 (residue sequence 4–200) is in the apo form. For the computational studies described here, the oxysterol in the 6BYM structure was replaced by cholesterol and the molecular models of Lam4S2 in both 6BYM and 6BYD structures were completed using modeller 9v1 (RRID:SCR_008395) (Eswar et al., 2006) to add respective missing residue stretches, that is residues 1–3 and 197–203 to the 6BYM structure, and residues 1–3 and 201–203 to the 6BYD structure.
 
-## Unbiased MD simulations of sterol-bound wild-type Lam4S2
+### Unbiased MD simulations of sterol-bound wild-type Lam4S2
 
 An all-atom model lipid membrane with the composition of ‘Acceptor’ liposomes in sterol transport assays (Jentsch et al., 2018) was prepared using the CHARMM-GUI web server (RRID:SCR_014892) (Jo et al., 2009). Thus, symmetric lipid bilayer containing 70% DOPC, 15% PI, 10% DOPE, and 5% DOPS (400 lipids in total on the two leaflets) was assembled, solvated (using water/lipid number ratio of 50) and ionized with 0.1M K+Cl– salt. This system was subjected to MD simulations for 30 ns using NAMD version 2.13 (RRID:SCR_014894) (Phillips et al., 2005) and the standard multi-step equilibration protocol provided by CHARMM-GUI.
 
@@ -134,15 +276,15 @@ The Lam4S2–membrane complex was equilibrated using a multi-step protocol (Shi 
 
 As described in 'Results', Stage 1 simulations sampled events of spontaneous binding of Lam4S2 to the membrane. We randomly selected 10 frames from Stage 1 trajectories in which Lam4S2 was seen to be interacting with the lipid bilayer as in Figure 1E, and initiated a new set of simulations with ACEMD (Stage 2 ensemble simulations) in which the 10 chosen structures were run in 10 statistically independent replicates each (i.e. 100 independent simulations). Each of the 100 copies were simulated for 375 ns, resulting in a cumulative time of 37.5 µs for Stage 2 runs.
 
-## Unbiased MD simulations of apo wild-type Lam4S2
+### Unbiased MD simulations of apo wild-type Lam4S2
 
 Simulations of the apo wild-type Lam4S2 protein (6BYD) followed the same protocol as described above for Stage 1 simulations of sterol-bound Lam4S2, with the only difference being the lipid membrane composition. Thus, in the manner identical to the sterol-bound Lam4S2, the apo protein was placed near the surface of the all-atom model lipid membrane (assembled with CHARMM-GUI) with the composition of ‘Donor’ liposomes in sterol transport assays (Jentsch et al., 2018). This symmetric bilayer contained 31% DOPC, 23% DOPE, 23% DOPS, and 23% cholesterol (400 lipids in total on the two leaflets). As the purpose of these simulations was to quantify solvation of the empty sterol-binding site, this system was only considered for Stage 1 simulations (cumulative time of 3.2 µs) and was not subjected to a subsequent (Stage 2) phase.
 
-## Unbiased MD simulations of the mutant Lam4S2 systems
+### Unbiased MD simulations of the mutant Lam4S2 systems
 
 Using the FoldX server (RRID:SCR_008522) (Schymkowitz et al., 2005), three single mutations, K89A, S181A, and D79A in Lam4S2 were introduced into two separate frames of one of the Stage two ensemble trajectories of the wild type protein system (see 'Results'). The resulting structures (two per mutant) were energy-minimized for 100 steps and then simulated in five independent replicates each for 150 ns using ACEMD. This resulted in 10 statistically independent MD trajectories per mutant, totaling 1.5 µs.
 
-## Parameters and force-field for MD simulations
+### Parameters and force-field for MD simulations
 
 All the simulations performed with NAMD 2.13 implemented the all option for rigidbonds, 2fs integration time-step, and PME for electrostatics interactions (Essmann et al., 1995), and were carried out in NPT ensemble under semi-isotropic pressure coupling conditions, at a temperature of 310 K. The Nose-Hoover Langevin piston algorithm (Phillips et al., 2005) was used to control the target p=1 atm pressure with the LangevinPistonPeriod set to 100 fs and LangevinPistonDecay set to 50 fs. The van der Waals interactions were calculated by applying a cutoff distance of 12 Å and switching the potential from 10 Å. In addition, the vdwforceswitching option was set to on.
 
@@ -150,7 +292,7 @@ The simulations carried out with ACEMD software implemented the PME method for e
 
 For all the simulations, the CHARMM36 force field parameters were used for proteins, lipids, sterols, and ions (Phillips et al., 2005; Lee et al., 2016).
 
-## Umbrella sampling MD simulations of wild-type and K89A Lam4S2
+### Umbrella sampling MD simulations of wild-type and K89A Lam4S2
 
 Biased MD simulations of cholesterol release from the wild-type and the K89A mutant Lam4S2 were performed using the umbrella sampling approach. The position of the translocated cholesterol was restrained to different locations along the translocation pathway (see 'Results') using as a collective variable the z-directional distance (dZ(chol–121)along the axis perpendicular to the membrane plane), between the cholesterol oxygen and the Cα atom of residue Q121 (see Figure 1A). 19 windows spaced 1Å apart in the range of dZ(chol–121)∈ [2Å; 20Å] were considered, and the dynamics of the sterol molecule in each window was restrained by applying a force constant of 2.5 kcal/mol ∙ Å2. The rest of the parameters for the umbrella sampling runs were as follows: width – 2Å, and both lowerwallconstant and upperwallconstant set to 25 kcal/mol ∙ Å2. Each umbrella window was simulated for 50 ns, which resulted in good overlap between adjacent windows (Figure 4—figure supplement 3A,B).
 
@@ -158,31 +300,62 @@ The potential of mean force (PMF) along the collective variable was constructed 
 
 Umbrella sampling MD simulations were also carried out on wild-type Lam4S2 in solution. To this end, structures of the protein–cholesterol complexes from the same 19 windows were extracted and immersed into a water box and the dynamics of the system was studied by restraining the sterol molecule in each window as described above. To prevent the protein–cholesterol complex from rotating in solution, we applied an additional harmonic bias (force-constant of 4000 kcal/mol ∙ Å2) on the protein backbone around the identity rotation matrix (1.0, 0.0, 0.0, 0.0) using the colvar ‘orientation’ module in NAMD 2.13. We note that this rotational restraint does not influence internal degrees of freedom but rather ensures that in each window, the protein–cholesterol complex remains aligned along the z axis throughout the umbrella sampling protocol.
 
-## Dimensionality reduction using the time-structure-based independent component analysis (tICA)
+### Dimensionality reduction using the time-structure-based independent component analysis (tICA)
 
 To facilitate analysis of the process of cholesterol release from the Lam4S2 domain in the MD simulations, we performed dimensionality reduction using the tICA approach (Molgedey and Schuster, 1994; Naritomi and Fuchigami, 2011; Pérez-Hernández et al., 2013; Schwantes and Pande, 2013) as described previously (Morra et al., 2018; Lee et al., 2018; Razavi et al., 2018). To define the tICA space, we used several dynamic variables extracted from the analysis of the ensemble MD trajectories that quantify the dynamics of the cholesterol, the extent of exposure of the sterol binding site to the solvent, and the dynamics of the functionally important Ω1 loop. These variables include (see Figure 1A): (1)-the minimum distance between the hydroxyl oxygen atom of the translocated cholesterol and residue Q121 (dchol–121); (2)-the root-mean-square deviation (RMSD) of the cholesterol molecule from its position in the binding site; (3)- distance between the hydroxyl oxygen of S181 and Cγ carbon of D61 (d61–181); (4)-Cα – Cα distance between residue I95 in the Ω1 loop and residue A169 in the C-terminal helix (d95–169); (5)-number of water molecules in the interior of the protein (defined as the number of water oxygens found within 5 Å of the side-chains of the following protein residues – 189, 185, 181, 154, 152, 136, 138, 140, 142, 123, 121, 119, 117, 102, 104, 106, 108, but farther than 5 Å from the following residues – 116, 118, 109, 86, 103, 105); (6)-the number of lipid phosphate atoms with 3 Å of the translocated cholesterol molecule.
 
 Using these six CVs as components of the data vector X, the slowest reaction coordinates of a system were found as described previously (Morra et al., 2018; Razavi et al., 2018; Razavi et al., 2017), by constructing a time-lagged covariance matrix (TLCM): CTL(τ)=<X(t)XT(t+τ)> and the covariance matrix C=< X(t)XT(t)>, where X(t) is the data vector at time t, τ is the lag-time of the TLCM, and the symbol <…> denotes the time average. The slowest reaction coordinates are then identified by solving the generalized eigenvalue problem: CTLV = CVΛ, where Λ and V are the eigenvalue and eigenvector matrices, respectively. The eigenvectors corresponding to the largest eigenvalues define the slowest reaction coordinates.
 
-## Calculation of electrostatic potential
+### Calculation of electrostatic potential
 
 The electrostatic potential for the wild-type and the K163D/K167D double mutant Lam4S2 constructs was calculated by solving the non-linear Poisson-Boltzmann (NLPB) equation with APBS software (Baker et al., 2001) as described before (Khelashvili, 2019). The protein and solvent dielectric constants were set to 2 and 78.54, respectively. The solution contained 150 mM of monovalent mobile ions. The NLPB equation was solved on a 3D cubic grid of 256 Å3 volume discretized into 1 Å3 grid elements, using the multigrid method (mg-manual) and multipole boundary conditions.
 
-## Experimental methods
+### Experimental methods
 
-## Lam4S2 mutants
+#### Lam4S2 mutants
 
 Point mutants of Lam4S2 (D61A, K89A and S181A) were generated by PCR mutagenesis and confirmed by sequencing. The constructs and PCR primers are detailed in Table 1 and Table 2.
 
-## Protein expression and purification
+**Table 2.**
+ Primers used for mutagenesis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D61A</td>
+      <td>CAGAAAGTTATCACTAGAGCTAAGAATAATGTCAATGTGG</td>
+      <td>CCACATTGACATTATTCTTAGCTCTAGTGATAACTTTCTG</td>
+    </tr>
+    <tr>
+      <td>K89A</td>
+      <td>CACTATGAGTACACGGCGAAATTGAACAATTCTATC</td>
+      <td>GATAGAATTGTTCAATTTCGCCGTGTACTCATAGTG</td>
+    </tr>
+    <tr>
+      <td>S181A</td>
+      <td>GAGGGTCAGAAGGTTGCTGTCGATTACATGCTA</td>
+      <td>TAGCATGTAATCGACAGCAACCTTCTGACCCTC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Lam4S2 and point mutants were expressed in E. coli as His-tagged proteins (Table 1), and purified by affinity chromatography on Ni-NTA resin, followed by size exclusion chromatography (SEC) using a Superdex 200 Increase 15/300 GL column. The purification procedure was as previously described (Jentsch et al., 2018), except that the proteolysis step to remove the affinity tag was omitted and SEC was carried out in 20 mM HEPES [pH 7.5] and 150 mM NaCl. The purified protein was snap frozen in small aliquots and stored at −80°C. Prior to use, aliquots were thawed and subjected to brief microcentrifugation to remove any aggregated material. Purified proteins were quantified by absorbance at 280 nm; quality control included analysis by circular dichroism (CD) as described previously (Jentsch et al., 2018), and re-analysis by SEC using the buffer conditions described above.
 
-## Sterol transport assay
+### Sterol transport assay
 
 The assay (illustrated in Figure 7A) was performed and analyzed as previously described (Jentsch et al., 2018; Chauhan et al., 2019) using anionic donor and acceptor liposomes (donor lipid composition: DOPC, DOPE, DOPS, DHE [31, 23, 23, and 23 mol %, respectively]; acceptor lipid composition: DOPC, DOPE, liver PI, DOPS, dansyl-PE [70, 7, 15, 5, and 3 mol %, respectively]). Briefly, assays were carried out at 23°C in a quartz cuvette with constant stirring using a temperature-controlled Horiba Fluoromax Plus-C spectrofluorometer. The total sample volume was 2 ml, with 0.1 mM each of donor and acceptor liposomes (final concentration, based on measurement of inorganic phosphate after acid hydrolysis of the vesicles) and 0.05 μM or 0.1 μM Lam4S2 (final concentration) in 20 mM PIPES (pH 6.8), 3 mM KCl and 10 mM NaCl (assay buffer). Fluorescence was monitored for ~2500 s using λex = 310 nm and λem = 525 nm and a data acquisition frequency of 1 Hz. Acceptor liposomes were added to donor liposomes in the cuvette, and after 60 s, 200 µl of Lam4S2 (or Lam4S2-mutant), diluted as needed in assay buffer, was added. For control assays, 200 µl of assay buffer was added. All traces were offset-corrected such that the fluorescence signal and time at the point of Lam4S2 (or buffer) addition were each set to zero. The maximum possible FRET signal was determined from assays using 0.1 µM wild-type Lam4S2, where the fluorescence readout reached a plateau value within 2000 s. Traces from such assays (done in replicate) were fit to a mono-exponential function, and the plateau value obtained (FRETmax) was used to constrain the mono-exponential fits of all other traces. Traces from different assays were compiled after data fitting by setting FRETmax = 1.
 
-## Sterol-extraction assay
+### Sterol-extraction assay
 
 Sucrose-loaded liposomes were prepared as follows. Lipids (2 μmol total, of a mixture of DOPC, DOPE, DOPS, cholesterol (49, 23, 23, 5 mol %, respectively, containing a trace amount of [3H]cholesterol and N-rhodamine-DHPE) were dried in a glass screw-cap tube under a stream of nitrogen, then resuspended in 1 ml assay buffer (20 mM PIPES [pH 6.8], 3 mM KCl, and 10 mM NaCl) supplemented with 250 mM sucrose, by agitating on a Vibrax orbital shaker for 30 min at 1200 rpm. The resulting suspension was subjected to five cycles of freeze–thaw (immersion in liquid nitrogen, followed by thawing at room temperature), before being extruded 11 times through a 200 nm membrane filter using the Avanti Mini-Extruder. After extrusion, extravesicular sucrose was removed by diluting the vesicles 4x in assay buffer and centrifuging in a Beckman TLA100.3 rotor (75,000 rpm, 1 hr, 4°C). The supernatant was carefully removed from the pelleted vesicles (easily discernable because of their pink color due to rhodamine-DHPE), before resuspending the vesicles in 1 ml of assay buffer. Aliquots of the sample (5 μl) were removed at different points of preparation (after the freeze–thaw step, post-extrusion and after final resuspension) and taken for liquid scintillation counting to track lipid recovery by monitoring [3H]cholesterol.
 

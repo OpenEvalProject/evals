@@ -19,16 +19,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01413r497 Department of Breast Medical Oncology, Shandong Cancer Hospital and Institute, Shandong First Medical University and Shandong Academy of Medical Sciences Jinan China
-2. https://ror.org/01y1kjr75 School of Medicine, Nankai University Tianjin China
+1. Department of Breast Medical Oncology, Shandong Cancer Hospital and Institute, Shandong First Medical University and Shandong Academy of Medical Sciences Jinan China ([ROR:01413r497](https://ror.org/01413r497))
+2. School of Medicine, Nankai University Tianjin China ([ROR:01y1kjr75](https://ror.org/01y1kjr75))
 3. Department of Bioinformatics, Berry Oncology Corporation Beijing China
-4. https://ror.org/01413r497 Department of Radiation Oncology, Shandong Cancer Hospital and Institute, Shandong First Medical University and Shandong Academy of Medical Sciences Jinan China
+4. Department of Radiation Oncology, Shandong Cancer Hospital and Institute, Shandong First Medical University and Shandong Academy of Medical Sciences Jinan China ([ROR:01413r497](https://ror.org/01413r497))
 
 † Corresponding author
 
 ## Abstract
 
-Limited data are available on applying circulating tumor DNA (ctDNA) in metastatic triple-negative breast cancer (mTNBC) patients. Here, we investigated the value of ctDNA for predicting the prognosis and monitoring the treatment response in mTNBC patients. We prospectively enrolled 70 Chinese patients with mTNBC who had progressed after ≤2 lines of chemotherapy and collected blood samples to extract ctDNA for 457-gene targeted panel sequencing. Patients with ctDNA+, defined by 12 prognosis-relevant mutated genes, had a shorter progression-free survival (PFS) than ctDNA− patients (5.16 months vs . 9.05 months, p=0.001), and ctDNA +was independently associated with a shorter PFS (HR, 95% CI: 2.67, 1.2–5.96; p=0.016) by multivariable analyses. Patients with a higher mutant-allele tumor heterogeneity (MATH) score (≥6.316) or a higher ctDNA fraction (ctDNA%≥0.05) had a significantly shorter PFS than patients with a lower MATH score (5.67 months vs .11.27 months, p=0.007) and patients with a lower ctDNA% (5.45 months vs . 12.17 months, p<0.001), respectively. Positive correlations with treatment response were observed for MATH score ( R =0.24, p=0.014) and ctDNA% ( R =0.3, p=0.002), but not the CEA, CA125, or CA153. Moreover, patients who remained ctDNA +during dynamic monitoring tended to have a shorter PFS than those who did not (3.90 months vs . 6.10 months, p=0.135). ctDNA profiling provides insight into the mutational landscape of mTNBC and may reliably predict the prognosis and treatment response of mTNBC patients. This work was supported by the National Natural Science Foundation of China (Grant No. 81902713), Natural Science Foundation of Shandong Province (Grant No. ZR2019LZL018), Breast Disease Research Fund of Shandong Provincial Medical Association (Grant No. YXH2020ZX066), the Start-up Fund of Shandong Cancer Hospital (Grant No. 2020-PYB10), Beijing Science and Technology Innovation Fund (Grant No. KC2021-ZZ-0010-1).
+Background:Limited data are available on applying circulating tumor DNA (ctDNA) in metastatic triple-negative breast cancer (mTNBC) patients. Here, we investigated the value of ctDNA for predicting the prognosis and monitoring the treatment response in mTNBC patients.Methods:We prospectively enrolled 70 Chinese patients with mTNBC who had progressed after ≤2 lines of chemotherapy and collected blood samples to extract ctDNA for 457-gene targeted panel sequencing.Results:Patients with ctDNA+, defined by 12 prognosis-relevant mutated genes, had a shorter progression-free survival (PFS) than ctDNA− patients (5.16 months vs. 9.05 months, p=0.001), and ctDNA +was independently associated with a shorter PFS (HR, 95% CI: 2.67, 1.2–5.96; p=0.016) by multivariable analyses. Patients with a higher mutant-allele tumor heterogeneity (MATH) score (≥6.316) or a higher ctDNA fraction (ctDNA%≥0.05) had a significantly shorter PFS than patients with a lower MATH score (5.67 months vs.11.27 months, p=0.007) and patients with a lower ctDNA% (5.45 months vs. 12.17 months, p<0.001), respectively. Positive correlations with treatment response were observed for MATH score (R=0.24, p=0.014) and ctDNA% (R=0.3, p=0.002), but not the CEA, CA125, or CA153. Moreover, patients who remained ctDNA +during dynamic monitoring tended to have a shorter PFS than those who did not (3.90 months vs. 6.10 months, p=0.135).Conclusions:ctDNA profiling provides insight into the mutational landscape of mTNBC and may reliably predict the prognosis and treatment response of mTNBC patients.Funding:This work was supported by the National Natural Science Foundation of China (Grant No. 81902713), Natural Science Foundation of Shandong Province (Grant No. ZR2019LZL018), Breast Disease Research Fund of Shandong Provincial Medical Association (Grant No. YXH2020ZX066), the Start-up Fund of Shandong Cancer Hospital (Grant No. 2020-PYB10), Beijing Science and Technology Innovation Fund (Grant No. KC2021-ZZ-0010-1).
 
 ## Introduction
 
@@ -44,7 +44,7 @@ Hence, in this study, we investigated the mutational characteristics of ctDNA an
 
 ## Methods
 
-## Study design
+### Study design
 
 This was a prospective, single-center, observational study. All patients were enrolled at Shandong Cancer Hospital and Institute between 2018 and 2021.
 
@@ -52,45 +52,389 @@ Inclusion criteria were defined as follows: (1) Age >18 years and <80 years; (2)
 
 Exclusion criteria were defined as follows: (1) Patients who had previously been treated with more than two lines of chemotherapy in an advanced stage; (2) Treated with local therapy (e.g. radiotherapy); (3) Lost to follow-up; (4) Failed to be evaluated for efficacy during treatment; (5) Unable to obtain plasma samples at baseline.
 
-## Efficacy evaluation and follow-up
+### Efficacy evaluation and follow-up
 
 All target lesions were measured Using computed tomography (CT) or magnetic resonance imaging (MRI) after every two treatment cycles. Efficacy was evaluated according to RECIST 1.1 criteria. The endpoint observed in this study was progression-free survival (PFS), defined as the time interval between patient enrollment and confirmation of disease progression using CT/MRI scans or death from any cause. After enrollment, baseline characteristics of patients and chemotherapy-based treatment options jointly determined by the clinician and patient were recorded. Peripheral blood samples, hematological data of tumor markers such as carcinoembryonic antigen (CEA), cancer antigen 125 (CA125), and cancer antigen 153 (CA153), as well as the number and size of measurable lesions on CT/MRI were collected at the time of patient enrollment and each radiological examination for efficacy evaluation until the patients reached the endpoint of the study. During the investigation, we liaised with the patients and patients' physicians when patients revisited the hospital every time.
 
-## Sample collection and preparation
+### Sample collection and preparation
 
 A 10 mL sample of peripheral blood was collected into an EDTA anticoagulant tube (STRECK Cell-Free DNA BCT) from patients at different time points (i.e. before treatment, during treatment [treatment cycle 3, day 1], and at progression). Within 2 hr of collection, blood samples were centrifuged at 1600×g for 10 min at 4°C to obtain plasma, followed by secondary centrifugation at 16,000×g for 10 min at 4°C to obtain peripheral blood cells. Plasma and peripheral blood cells were stored at −80°C until ctDNA and genomic DNA (gDNA) were extracted. Paraffin-embedded primary or metastatic tumor tissues were collected before treatment and stored at room temperature for later use.
 
-## DNA extraction and targeted capture-based NGS
+### DNA extraction and targeted capture-based NGS
 
 ctDNA was extracted from peripheral blood using the QIAamp Circulating Nucleic Acid Kit (Qiagen, Germany), while tumor DNA (tDNA) was extracted from the paraffin-embedded tumor tissues using the AllPrep DNA/RNA FFPE Kit (50) (Qiagen, Germany). Standard control gDNA was extracted from white blood cells using the DNeasy Kit (Qiagen, Germany) according to the manufacturer’s instructions. The sequencing library was prepared from the ctDNA and tDNA samples using the KAPA DNA Library Preparation Kit (KAPA Biosystems, USA), while the gDNA sequencing library was constructed using the Illumina TruSeq DNA Library Preparation Kit (Illumina, USA). Library concentration was determined using real-time quantitative PCR and the KAPA Library Quantification Kit (KAPA Biosystems, USA). The library fragments were then size-selected using agarose gel electrophoresis. A targeted NGS panel of 457 genes (Supplementary file 1), known to be frequently mutated in tumors, was designed to capture the target DNA fragments. All of the individuals were sequenced at a depth of at least 20,000 X. Sequencing libraries were loaded onto a NovaSeq 6000 platform (Illumina, USA) with a 150 bp read length in paired-end mode.
 
-## Sequencing data analysis
+### Sequencing data analysis
 
 Quality control of the raw sequencing data involved using FASTP to trim adapters and remove low-quality sequences (Chen et al., 2018). The clean reads were aligned against the Ensemble GRCh37/hg19 reference genome using BWA software (Li and Durbin, 2009). PCR duplications were processed using the Gencore tool (Chen et al., 2019), and generated uniquely mapped reads. The SAMtools suite was used to detect single-nucleotide variants (SNVs), insertions, and deletions (Li et al., 2009). CNVs were called using CONTRA (Li et al., 2012), with copy number ˃ 3 as the threshold of copy number gain and <1 as the threshold of copy number loss. The maximal tumor somatic variant allelic frequency (max-VAF) describes the highest mutated frequency of ctDNA detected in the cfDNA (Maron et al., 2019). The ctDNA fraction (ctDNA%) was calculated based on the autosomal somatic allele fractions. The mutant allele fraction (MAF) and ctDNA% are related as follows: MAF = (ctDNA ×1)/([(1 – ctDNA)×2] + [ctDNA ×1]); thus, ctDNA = 2/(1/MAF +1) (Vandekerkhove et al., 2017). The mutant-allele tumor heterogeneity (MATH) score was calculated as the percentage ratio of the width (median absolute deviation [MAD] scaled by a constant factor so that the expected MAD of a sample from a normal distribution equals the standard deviation) to the center of the distribution of MAFs among the tumor-specific mutated loci; thus, MATH = 100 × MAD/median (Mroz and Rocco, 2013). Tumor mutational burden (TMB) was defined as the number of non-synonymous somatic mutations per megabase of genome examined (Chalmers et al., 2017).
 
-## Statistical analysis
+### Statistical analysis
 
 The longest diameter (mm) of the tumor was measured by examining the radiological images. The response evaluation was carried out according to the Response Evaluation Criteria in Solid Tumors (RECIST) guidelines (version 1.1) (Eisenhauer et al., 2009). The Kaplan–Meier method was used for the survival analyses; the comparison of the median PFS was performed using the log-rank test and hazard ratios (HRs) from the Cox proportional hazards model. The optimal cut-off values for ctDNA%, MATH score, and TMB were determined by the R package ‘survminer’. Univariate Cox regression was carried out to analyze the mutations related to PFS; only genes mutated in >5% of the patients were included in the analysis. The correlation between variables was analyzed using the Spearman correlation test, and group comparisons were performed using the Wilcoxon rank-sum test. Statistical analysis and data visualization were conducted using R (version 4.0.1). The statistical significance was defined as bilateral p<0.05.
 
 ## Results
 
-## Study cohort and sample information
+### Study cohort and sample information
 
 A total of 126 patients with mTNBC were considered for screening, and 70 patients were eventually included in the study. Fifty-six patients were excluded, comprising 21 patients who had previously been treated with more than two lines of chemotherapy, 16 patients who were treated with combination local therapy (e.g. chemotherapy with radiotherapy), 11 patients who were lost to follow-up, and 8 patients who failed to be evaluated for efficacy. Finally, 139 plasma samples (baseline samples from 70 patients and dynamic samples from 38/70 patients) from 70 patients and paired tumor tissues from 13 patients were collected and sequenced (Figure 1A and B). Some patients did not have surgery, or were operated on in other hospitals, or had no lesion suitable for biopsy, or the tumor tissue was too small, resulting in 57 patients not obtaining tumor tissue for sequencing. The blood samples during treatment were not collected on time, or the quality control of samples was unqualified or did not reach the endpoint of the study, resulting in 32 patients only having baseline blood samples. The patient baseline characteristics are shown in Table 1. The median age of all patients was 46 (26–75) years. Overall, 82.9% of patients were diagnosed with invasive ductal carcinoma, and most developed visceral metastases at study entry. Table 2 shows that all patients received chemotherapy-based treatment with the most common chemotherapy drugs, such as gemcitabine, taxane, or platinum. Eleven patients were also treated with immunotherapy. The objective response rate was 38.6%, and 4, 23, 31, and 12 patients had complete response (CR), partial response (PR), stable disease (SD), and progressive disease (PD), respectively. The median PFS (mPFS) for all patients was 6.15 months (Figure 1—figure supplement 1A). There was no significant difference in PFS among different treatment lines or regimens (Figure 1—figure supplement 1B-H), although patients treated in the first line had a trend towards improved survival compared with those treated in the second and third lines.
 
-## Mutation characteristics of patients with mTNBC
+![Figure 1.](https://cdn.elifesciences.org/articles/90198/elife-90198-fig1-v1.jpg)
+
+**Figure 1.:** (A) Study flowchart. After excluding 56 patients, 70 patients with mTNBC were included in the final analysis. Baseline blood samples were collected from all patients (n=70), and paired tumor tissues were collected from 13 patients for NGS. (B) Blood-sample-derived ctDNA was dynamically monitored at baseline (yellow), during treatment (green), and at progression (orange) for 38 of the 70 patients. ctDNA, circulating tumor DNA; mTNBC, metastatic triple-negative breast cancer; NGS, next-generation sequencing.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90198/elife-90198-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Kaplan–Meier analysis of PFS in all patients with mTNBC. (B) Kaplan–Meier analysis of PFS in patients with different lines of treatment. (C–H) Kaplan–Meier analysis of PFS in patients treated with distinct treatment regimens. GP, gemcitabine- and platinum-based treatment; IC, immunotherapy plus chemotherapy; mTNBC, metastatic triple-negative breast cancer; P, platinum-based treatment; PFS, progression-free survival; T, taxane-based treatment; TP, taxane- and platinum-based treatment. A p-value <0.05 was used as a measure of statistical significance.
+
+**Table 1.**
+ The baseline characteristics in study population.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>All patients-no. (%)(n=70)</th>
+      <th>Dynamic monitoring patients-no. (%)(n=38)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (yrs), median (range)</td>
+      <td>46 (26–75)</td>
+      <td>47 (27–75)</td>
+    </tr>
+    <tr>
+      <td>≤50</td>
+      <td>45 (64.3)</td>
+      <td>26 (68.4)</td>
+    </tr>
+    <tr>
+      <td>˃50</td>
+      <td>25 (35.7)</td>
+      <td>12 (31.6)</td>
+    </tr>
+    <tr>
+      <td>Histopathologic diagnosis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Invasive ductal carcinoma</td>
+      <td>58 (82.9)</td>
+      <td>29 (76.3)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>10 (14.3)</td>
+      <td>7 (18.4)</td>
+    </tr>
+    <tr>
+      <td>NA</td>
+      <td>2 (2.9)</td>
+      <td>2 (5.3)</td>
+    </tr>
+    <tr>
+      <td>Pathological grade</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I-II</td>
+      <td>12 (17.1)</td>
+      <td>10 (26.3)</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>39 (55.7)</td>
+      <td>20 (52.6)</td>
+    </tr>
+    <tr>
+      <td>NA</td>
+      <td>19 (27.1)</td>
+      <td>8 (21.1)</td>
+    </tr>
+    <tr>
+      <td>Disease stage at initial diagnosis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>7 (10.0)</td>
+      <td>5 (13.2)</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>20 (28.6)</td>
+      <td>10 (26.3)</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>33 (47.1)</td>
+      <td>20 (52.6)</td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>7 (10.0)</td>
+      <td>3 (7.9)</td>
+    </tr>
+    <tr>
+      <td>NA</td>
+      <td>3 (4.3)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Disease-free interval (months)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≤12 (including stage IV at initial diagnosis)</td>
+      <td>23 (32.9)</td>
+      <td>11 (28.9)</td>
+    </tr>
+    <tr>
+      <td>&gt;12</td>
+      <td>47 (67.1)</td>
+      <td>27 (71.1)</td>
+    </tr>
+    <tr>
+      <td>Sites of metastasis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Visceral</td>
+      <td>56 (80.0)</td>
+      <td>33 (86.8)</td>
+    </tr>
+    <tr>
+      <td>Non-visceral</td>
+      <td>14 (20.0)</td>
+      <td>5 (13.2)</td>
+    </tr>
+    <tr>
+      <td>Previous lines of chemotherapy during metastatic stage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>46 (65.7)</td>
+      <td>22 (57.9)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>19 (27.1)</td>
+      <td>11 (28.9)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>5 (7.1)</td>
+      <td>5 (13.2)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ The treatment characteristics and responses of patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment characteristics and responses</th>
+      <th>All patients-no. (%)(n=70)</th>
+      <th>Dynamic monitoring patients-no. (%)(n=38)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Treatment regimens</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Contained gemcitabine +platinum</td>
+      <td>17 (24.3)</td>
+      <td>10 (26.3)</td>
+    </tr>
+    <tr>
+      <td>Contained taxane +platinum</td>
+      <td>16 (22.9)</td>
+      <td>7 (18.4)</td>
+    </tr>
+    <tr>
+      <td>Contained vinorelbine +platinum</td>
+      <td>4 (5.7)</td>
+      <td>1 (2.6)</td>
+    </tr>
+    <tr>
+      <td>Contained taxane but no platinum</td>
+      <td>22 (31.4)</td>
+      <td>14 (36.8)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>11 (15.7)</td>
+      <td>6 (15.8)</td>
+    </tr>
+    <tr>
+      <td>Treatment modalities</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Immunotherapy +chemotherapy</td>
+      <td>11 (15.7)</td>
+      <td>6 (15.8)</td>
+    </tr>
+    <tr>
+      <td>Chemotherapy</td>
+      <td>59 (84.3)</td>
+      <td>32 (84.2)</td>
+    </tr>
+    <tr>
+      <td>Treatment responses</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CR</td>
+      <td>4 (5.7)</td>
+      <td>4 (10.5)</td>
+    </tr>
+    <tr>
+      <td>PR</td>
+      <td>23 (32.9)</td>
+      <td>9 (23.7)</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>31 (44.3)</td>
+      <td>18 (47.4)</td>
+    </tr>
+    <tr>
+      <td>PD</td>
+      <td>12 (17.1)</td>
+      <td>7 (18.4)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mutation characteristics of patients with mTNBC
 
 Plasma samples were obtained from 70 patients with mTNBC before treatment and submitted for targeted NGS. In total, 203 mutated genes were identified using our panel of 457 genes, including 301 missense mutations, 45 frame-shift indels, 16 in-frame indels, 13 splice-site mutations, and 31 stop-gain mutations. The ten most frequently mutated genes were TP53 (69%), PIK3CA (24%), ARID1A (9%), KMT2C (9%), CIC (7%), KMT2D (7%), NOTCH4 (7%), PBRM1 (7%), PTEN (7%), and DNMT3A (6%). In addition, gene CNVs were detected in 351/457 genes, 296 of which showed copy number gain (CNG), 38 showed copy number loss, and 17 had both gain and loss mutations. The most prevalent genes with CNVs were HLA-C (50%), HLA-A (33%), HLA-B (33%), HLA-DRB1 (23%), SPPL3 (21%), BTG2 (19%), C8orf34 (16%), HLA-DQA1 (16%), HLA-E (16%), and LTBP1 (16%) (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90198/elife-90198-fig2-v1.jpg)
+
+**Figure 2.:** (A) The landscape of ctDNA mutations in 70 patients with mTNBC before treatment initiation. The patients (n=70) were divided into four groups (PD, SD, PR, and CR) according to the best treatment response (from left to right). The top half of the figure shows SNVs with a mutation frequency ≥5%, and the bottom half shows CNVs with a mutation frequency ≥10%; the different colored rectangles represent different types of variation. (B) Concordance between the genomic alterations in the blood-derived ctDNA and the tissue-derived tDNA. The mutated genes detected in at least two samples are shown here. The concordance rate = shared mutated genes/(all genes × the number of comparisons)×100% = (1 – [ctDNA-specific and tissue-specific mutated genes]/[all genes × the number of comparisons])×100% = (1 – [37+37]/[457×13])×100% = 98.75%. CNVs, copy number variants; CR, complete response; ctDNA, circulating tumor DNA; tDNA, tumor DNA; mTNBC, metastatic triple-negative breast cancer; PD, progressive disease; PR, partial response; SD, stable disease; SNVs, single-nucleotide variants.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90198/elife-90198-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The mutation frequency in ctDNA was significantly lower than in tissues (p<0.001). ctDNA, circulating tumor DNA. A p-value <0.05 was used as a measure of statistical significance.
+
 We also used NGS to evaluate the discrepancy and consistency of genomic alterations in ctDNA samples and paired tumor tissues from 13 patients. The mutation frequency in plasma ctDNA was significantly lower than that in the tumor tissues (0.049% ± 0.113% vs 0.168 ± 0.173%, p<0.001) (Figure 2—figure supplement 1). A total of 115 mutations in 85 genes were detected, which included 84 mutations in 63 genes from plasma ctDNA and 81 mutations in 55 genes from tDNA. The number of ctDNA-specific and tDNA-specific mutated genes was 37 in both cases. Hence, the concordance rate between mutations in ctDNA and tDNA was 98.75% (Figure 2B).
 
-## A ctDNA+/− status correlates with the treatment response and survival of patients with mTNBC
+### A ctDNA+/− status correlates with the treatment response and survival of patients with mTNBC
 
 Univariate Cox regression analysis showed that 12 mutated genes, including HLA-B (HR, 95% confidence interval [CI]: 1.89, 1.08–3.32), BTG2 (HR, 95% CI: 2.23, 1.15–4.31), MCL1 (HR, 95% CI: 2.31, 1.1–4.84), H3F3A (HR, 95% CI: 2.36, 1.08–5.16), MYC (HR, 95% CI: 3.45, 1.58–7.54), KMT2C (HR, 95% CI: 2.75, 1.14–6.63), KYAT3 (HR, 95% CI: 3.66, 1.48–9.04), ARID4B (HR, 95% CI: 4.04, 1.51–10.76), CD22 (HR, 95% CI: 3.66, 1.25–10.68), TGFB1 (HR, 95% CI: 3.94, 1.35–11.56), SGK1 (HR, 95% CI: 3.37, 1.15–9.82), and RSPO2 (HR, 95% CI: 4.19, 1.42–12.34), indicated a higher risk for recurrence or progression in patients with mTNBC (Figure 3A). Moreover, these 12 mutated genes were significantly associated with worse survival (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90198/elife-90198-fig3-v1.jpg)
+
+**Figure 3.:** (A) Twelve mutated genes, comprising HLA-B (CNG), BTG2 (CNG), MCL1 (CNG), H3F3A (CNG), MYC (CNG), KMT2C (SNV), KYAT3 (CNG), ARID4B (CNG), CD22 (CNG), TGFB1 (CNG), SGK1 (CNG), and RSPO2 (CNG) were identified as being associated with a higher risk of recurrence or progression in patients with mTNBC (all had HRs >1 and a p<0.05). (B) The left half of the figure summarizes the ctDNA status of all patients (n=70) at different time points; 38 patients also had their ctDNA status recorded during treatment and at progression. Solid dots represent ctDNA + patients, while unfilled dots represent ctDNA– patients. The length of line segments in the right half of the figure denotes the PFS of patients, whereby the bars indicate the best response (PD, SD, PR, or CR) observed during treatment. (C) Comparison of ctDNA status (ctDNA+, red; ctDNA−, blue) among all the blood samples (n=139) from patients with different treatment responses (PD, SD, PR, or CR). (D) The tumor size of the ctDNA + group at baseline was significantly greater than that of the ctDNA− group at baseline. (E) ctDNA + at baseline was significantly associated with a shorter PFS. CNG, copy number gain; CR, complete response; ctDNA, circulating tumor DNA; ctDNA−, ctDNA negative; ctDNA+, ctDNA positive; HR, hazard ratio; mTNBC, metastatic triple-negative breast cancer; PD, progressive disease; PFS, progression-free survival; PR, partial response; SD, stable disease; SNV, single-nucleotide variant. A p-value <0.05 was used as a measure of statistical significance.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90198/elife-90198-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Patients with mutated HLA-B (A), MYC (B), CD22 (C), BTG2 (D), KMT2C (E), TGFB1 (F), MCL1 (G), KYAT3 (H), SGK1 (I), H3F3A (J), ARID4B (K), or RSPO2 (L) had a significantly shorter PFS. Gain = copy number gain; mTNBC, metastatic triple-negative breast cancer patients; Mut, mutated; PFS, progression-free survival. WT, wild type. A p-value <0.05 was used as a measure of statistical significance.
+
 ctDNA was collected and evaluated at different time points, and a plasma ctDNA sample with at least one of the above 12 prognosis-relevant mutated genes was defined as ctDNA-positive (ctDNA+) (Figure 3B). The right half of Figure 3B shows that the mPFS in 70 patients with mTNBC was 6.15 months at a median follow-up of 19.13 months. As shown, ctDNA + patients tended to have a shorter survival duration and less clinical benefit. At baseline, the ctDNA + rates were 25%, 43%, 55%, and 33% in patients with CR, PR, SD, and PD, respectively (Figure 3B). By comparing the ctDNA +/−status at all the time points, we found that the amount of ctDNA + positively correlated with a worse treatment response. The proportion of ctDNA + at different time points was 46% (at baseline), 29% (during treatment), and 44% (at progress) (Figure 3B), while that in the different treatment response groups was 0% (CR), 22% (PR), 39% (SD), and 45% (PD; Figure 3C). Before treatment, the tumor size of the ctDNA +group was significantly larger than that of the ctDNA− group (52.56±34.65 mm vs. 40.18±35.49 mm, p<0.001; Figure 3D). We also found that patients who were ctDNA + at baseline had a shorter PFS than those who were ctDNA− at baseline (5.16 months vs. 9.05 months, p=0.001; Figure 3E). Multivariate Cox regression analysis, which included multiple clinical factors and ctDNA status, showed that ctDNA +was independently associated with a shorter PFS (HR, 95% CI: 2.67, 1.2–5.96; p=0.016; Table 3).
 
-## Baseline ctDNA-related markers are associated with mTNBC patient survival and treatment response
+**Table 3.**
+ Multivariate cox regression analysis of multiple clinical factors and ctDNA status with PFS of patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>HR (95 CI)</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (≤50 vs. ˃ 50 years)</td>
+      <td>1.21 (0.47–3.1)</td>
+      <td>0.694</td>
+    </tr>
+    <tr>
+      <td>Histopathologic diagnosis (IDC vs. non-IDC)</td>
+      <td>0.64 (0.15–2.73)</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>Pathological grade (III vs. I-II)</td>
+      <td>1.23 (0.53–2.86)</td>
+      <td>0.629</td>
+    </tr>
+    <tr>
+      <td>DFI (≤12 months vs. ˃ 12 months)</td>
+      <td>1.69 (0.6–4.71)</td>
+      <td>0.319</td>
+    </tr>
+    <tr>
+      <td>ctDNA status (ctDNA +vs. ctDNA-)</td>
+      <td>2.67 (1.2–5.96)</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>T stage (T1 vs. T2 vs. T3)</td>
+      <td>0.75 (0.38–1.47)</td>
+      <td>0.397</td>
+    </tr>
+    <tr>
+      <td>N stage (N1 vs. N2 vs. N3)</td>
+      <td>0.79 (0.57–1.1)</td>
+      <td>0.161</td>
+    </tr>
+    <tr>
+      <td>CEA elevation (Yes vs. No)</td>
+      <td>1.75 (0.64–4.81)</td>
+      <td>0.278</td>
+    </tr>
+    <tr>
+      <td>CA125 elevation (Yes vs. No)</td>
+      <td>0.67 (0.24–1.88)</td>
+      <td>0.445</td>
+    </tr>
+    <tr>
+      <td>CA153 elevation (Yes vs. No)</td>
+      <td>1.86 (0.62–5.57)</td>
+      <td>0.268</td>
+    </tr>
+    <tr>
+      <td>Ki-67 (≥30% vs.&lt;30%)</td>
+      <td>0.78 (0.33–1.88)</td>
+      <td>0.582</td>
+    </tr>
+    <tr>
+      <td>Site of metastasis (visceral vs. non-visceral)</td>
+      <td>0.54 (0.18–1.61)</td>
+      <td>0.267</td>
+    </tr>
+    <tr>
+      <td>TMB (High vs. Low)</td>
+      <td>1.08 (0.38–3.09)</td>
+      <td>0.88</td>
+    </tr>
+  </tbody>
+</table>
+
+_Footnotes: Disease-free interval (DFI) was defined as the time from the initial surgery to the disease progression; IDC: invasive ductal carcinoma._
+
+### Baseline ctDNA-related markers are associated with mTNBC patient survival and treatment response
 
 To further explore the value of ctDNA in predicting clinical outcomes in mTNBC, we examined the association between the pre-treatment ctDNA-related markers (i.e. TMB, MATH score, and ctDNA%) and PFS and the treatment response. Thus, we performed Kaplan–Meier analyses of TMB, MATH score, ctDNA%, and PFS in patients with mTNBC. Although not statistically significant, TMB-high (≥2.63) patients tended to have a shorter mPFS than the TMB-low (<2.63) patients (5.87 months vs. 10.03 months, p=0.057; Figure 4A). Meanwhile, patients with a higher MATH score (≥6.316) had significantly shorter mPFS than patients with a lower MATH score (<6.316) (5.67 months vs.11.27 months, p=0.007; Figure 4B). Moreover, the higher ctDNA% (≥0.05) patient group had a significantly shorter mPFS than the lower ctDNA% (<0.05) group (5.45 months vs. 12.17 months, p<0.001; Figure 4C). Patients with mTNBC were categorized into the PD, SD, PR, and CR groups according to their response to treatment. Further comparative analysis of baseline ctDNA parameters in different treatment response groups revealed that TMB was progressively lower across the four groups, showing a decreasing trend from the PD group to the CR group. Compared with other treatment response groups, the PD group had a larger TMB (p=0.032), greater MATH score (p=0.003), and higher ctDNA% (p=0.002; Figure 4D–F).
 
@@ -98,7 +442,7 @@ To further explore the value of ctDNA in predicting clinical outcomes in mTNBC, 
 
 **Figure 4.:** Higher TMB (≥2.63) (A), MATH score (≥6.316) (B), and ctDNA% (≥0.05) (C) were linked to a shorter PFS. The optimal cut-off values for TMB, MATH score, and ctDNA% were determined using the R package ‘survminer’. Comparison of TMB (D), MATH score (E), and ctDNA% (F) in patients with different treatment responses (PD, SD, PR, or CR). CR, complete response; ctDNA, circulating tumor DNA; ctDNA%, ctDNA fraction; mTNBC, metastatic triple-negative breast cancer; PFS, progression-free survival; PD, progressive disease; PR, partial response; SD, stable disease; TMB, tumor mutational burden. A p-value <0.05 was used as a measure of statistical significance.
 
-## Dynamic changes in ctDNA are associated with treatment response of patients with mTNBC
+### Dynamic changes in ctDNA are associated with treatment response of patients with mTNBC
 
 Figure 5A–D highlights the dynamic changes in ctDNA levels (i.e. mutations in 12 prognosis-relevant genes) and traditional tumor markers in each patient with PD (Patient 32), SD (Patient 31), PR (Patient 29), or CR (Patient 18). For instance, in Patient 32, the MAF of MYC ctDNA increased significantly and was accompanied by increased CA125 and CA153 levels but decreased CEA levels at the time of disease progression (Figure 5A). Figure 5B–D shows evidence of ctDNA mutations in Patient 31 (BTG2, ARID4B, CD22, H3F3A, HLA-B, MCL1, MYC, RSPO2), Patient 29 (BTG2, ARID4B, H3F3A, HLA-B, MCL1, MYC), and Patient 18 (BTG2, ARID4B, H3F3A, HLA-B, SGK1), their mutational rates dropped to the lowest level during the best response to treatment and rose again during progression. CA125 levels varied in line with treatment response and disease progression, but no similar fluctuations were observed in CA153 and CEA. Compared with these traditional tumor markers used in clinical for a long time, dynamic changes in ctDNA mutations seemed to mirror treatment-induced changes in tumor size better. Therefore, we analyzed the correlation between the levels of serum tumor markers and tumor size on CT/MRI scans during treatment (Figure 5E). We found that tumor size positively correlated with the MATH score (R=0.24, p=0.014) and ctDNA% (R=0.3, p=0.002) but not CEA, CA125, or CA153 levels. There were also strong positive correlations among the three ctDNA-related markers, TMB, MATH score, and ctDNA%. Moreover, the dynamic changes in ctDNA status may predict the prognosis of mTNBC. Kaplan–Meier analysis found that patients who remained ctDNA +during dynamic monitoring had a shorter PFS than those who did not (3.90 months vs. 6.10 months, p=0.135; Figure 5F); however, this difference did not achieve statistical significance, most likely due to the limited sample size.
 
@@ -122,6 +466,6 @@ Breast cancer is a highly heterogeneous and dynamic disease; therefore, longitud
 
 Several limitations exist in our study. First, this was a single-center study with a small sample size. Second, the relatively short median follow-up duration was insufficient for capturing a clinically significant association between ctDNA mutations and overall survival. Third, several patients were lost to follow-up, which may have biased the results. Fourth, the potential influence of different treatment lines and regimens was not evaluated; nevertheless, no differences were found in survival based on these factors. Finally, compared with whole-exome sequencing or whole-genome sequencing, NGS with a panel of 457 selected genes, as used in our study, provided limited mutation data.
 
-## Conclusions
+### Conclusions
 
 ctDNA profiling is a good alternative to tumor tissue sequencing and provides valuable insights into the mutational landscape of mTNBC. Furthermore, our study addressed the value of ctDNA in predicting the prognosis and monitoring the treatment response of patients with mTNBC. The results revealed that higher ctDNA%, MATH score, TMB, ctDNA + status, and mutation rate were associated with a poor prognosis and a worse treatment response in mTNBC. Moreover, the longitudinal monitoring of genetic biomarkers in ctDNA was more sensitive and accurate for discerning treatment response or progression than traditional tumor markers such as CEA, CA125, and CA153. Taken together, these findings will contribute to a better understanding of ctDNA in mTNBC and may facilitate the development of a more accurate and non-invasive clinical strategy for managing patients with this condition. However, larger clinical trials are necessary to validate our results.

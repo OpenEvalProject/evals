@@ -44,21 +44,17 @@ A) The mutations R62M and R66H are expected to eliminate the inhibitory effect o
 
 B) These same mutations would also disrupt the formation of hydrogen bonds across the interdomain cleft by R62 and R66, thereby eliminating the interactions that favor receptor activation.
 
-C) Residue R66 is involved in the binding of anion at both sites 2 and 3. Since anion-binding site 2 appears to be crucial for structural integrity of the receptor, disruption of this site by the R66H mutation would negatively affect receptor function.10.7554/eLife.13662.023Author response image 1.Effect of SO42- on Ca2+-stimulated IP accumulation in cells transiently expressing wild-type (WT) or mutant CaSR.The mutations R62M and R66H affect arginine residues at anion-binding sites 1 and 3 that form hydrogen bonds formed across the interdomain cleft in the absence of any bound anion.DOI: http://dx.doi.org/10.7554/eLife.13662.023
+C) Residue R66 is involved in the binding of anion at both sites 2 and 3. Since anion-binding site 2 appears to be crucial for structural integrity of the receptor, disruption of this site by the R66H mutation would negatively affect receptor function.10.7554/eLife.13662.023Author response image 1.Effect of SO42- on Ca2+-stimulated IP accumulation in cells transiently expressing wild-type (WT) or mutant CaSR.The mutations R62M and R66H affect arginine residues at anion-binding sites 1 and 3 that form hydrogen bonds formed across the interdomain cleft in the absence of any bound anion.
 
 The mutations R62M and R66H affect arginine residues at anion-binding sites 1 and 3 that form hydrogen bonds formed across the interdomain cleft in the absence of any bound anion.
-
-DOI: http://dx.doi.org/10.7554/eLife.13662.023
 
 3) To demonstrate the potentiating effect of L-Trp on the response to Ca2+, compare responses (IP accumulation) to extracellular Ca2+ in the presence and absence of L-Trp, in wt and mutants of the L-tryptophan binding sites.
 
 Following the referee’s suggestion, we have measured the potentiating effect of L-Trp on the response of wild-type CaSR to extracellular Ca2+. During the course of our study, we found that it was very difficult to measure the functional effect of L-Trp through IP accumulation. Instead, we monitored the effect of L-Trp on CaSR-mediated intracellular Ca2+ mobilization. As predicted by the referee, Ca2+-induced receptor activation is higher in the presence of L-Trp than in the absence. The new data are presented in Figure 4G.
 
-We have shown using IP accumulation measurements that most alanine mutants of the L-Trp- binding site abolished Ca2+-dependent receptor response in the absence of any amino acid. Therefore, these mutants would not be suitable for the study of the L-Trp effect. For the two mutants that displayed partial receptor activity (S147A and Y218S), we found that they did not respond to 10 mM L-Trp in the presence of 2 mM extracellular Ca2+.10.7554/eLife.13662.024Author response image 2.Effect of various concentrations of L-Trp (1, 2, 0, 10 mM) on intracellular Ca2+ mobilization in the presence of 2 mM extracellular Ca2+.(A) Wild-type (WT) CaSR. (B) S147A mutant. (C) Y218A mutant.DOI: http://dx.doi.org/10.7554/eLife.13662.024
+We have shown using IP accumulation measurements that most alanine mutants of the L-Trp- binding site abolished Ca2+-dependent receptor response in the absence of any amino acid. Therefore, these mutants would not be suitable for the study of the L-Trp effect. For the two mutants that displayed partial receptor activity (S147A and Y218S), we found that they did not respond to 10 mM L-Trp in the presence of 2 mM extracellular Ca2+.10.7554/eLife.13662.024Author response image 2.Effect of various concentrations of L-Trp (1, 2, 0, 10 mM) on intracellular Ca2+ mobilization in the presence of 2 mM extracellular Ca2+.(A) Wild-type (WT) CaSR. (B) S147A mutant. (C) Y218A mutant.
 
 (A) Wild-type (WT) CaSR. (B) S147A mutant. (C) Y218A mutant.
-
-DOI: http://dx.doi.org/10.7554/eLife.13662.024
 
 Reviewer #1:
 
@@ -118,9 +114,7 @@ We agree with the referee and have added a superimposed image of the agonist-bin
 
 In the crystal structure of mGluR1, a binding site for Gd3+ was identified at the dimer interface (Tsuchiya et al., PNAS 2002). I would like to have explanations whether or not a similar structure was identified in CaSR.
 
-We think the referee’s question is very interesting, and have superimposed the structures of CaSR and mGluR to compare this region of the dimer interface. As shown in Author response image 3, the Gd3+ ion in the mGluR1 structure is coordinated by two acid residues, E238 and D242 from each subunit. The corresponding residues in the CaSR structure are R220 and E224. The basic residue R220 would not be compatible with the binding of a cation to CaSR at this location.10.7554/eLife.13662.025Author response image 3.Superposition of the CaSR and mGluR1 structures in the region of the Gd3+-binding site in mGluR1 structure.DOI: http://dx.doi.org/10.7554/eLife.13662.025
-
-DOI: http://dx.doi.org/10.7554/eLife.13662.025
+We think the referee’s question is very interesting, and have superimposed the structures of CaSR and mGluR to compare this region of the dimer interface. As shown in Author response image 3, the Gd3+ ion in the mGluR1 structure is coordinated by two acid residues, E238 and D242 from each subunit. The corresponding residues in the CaSR structure are R220 and E224. The basic residue R220 would not be compatible with the binding of a cation to CaSR at this location.10.7554/eLife.13662.025Author response image 3.Superposition of the CaSR and mGluR1 structures in the region of the Gd3+-binding site in mGluR1 structure.
 
 Reviewer #3:
 
@@ -150,9 +144,7 @@ We appreciate the referee’s observation that the coordination of Ca2+ ions at 
 
 The alteration in receptor activity of the G557E mutant may have resulted from a change in the conformation of the loop containing residue 557 such that the carbonyl oxygen is no longer optimally positioned to coordinate the binding of a Ca2+ ion at this site. Nevertheless, the effect of the G557E mutation is not as substantial as some of the other Ca2+-binding site mutations including I81M, T100I and N102I, which nearly abolished Ca2+-induced receptor activation. The EC50 for Ca2+-induced IP accumulation increased approximately two fold from 1.6 mM for the wild-type receptor to 3.4 mM for the G557E mutant, while the Emax of the receptor response remained essentially the same.
 
-Following the referee’s suggestion, we have tested the mutation D234A, and found that its effect on receptor activity was negligible, as shown by the IP accumulation dose response curves for wild-type receptor and the D234A mutant (Author response image 4). This may be due to the fact that the side chain of D234 is somewhat flexible, and does not contribute to the binding of Ca2+ ion at site 4 as much as the backbone carbonyl oxygen atoms of E231 and G557.10.7554/eLife.13662.026Author response image 4.Dose-dependent Ca2+-stimulated IP accumulation in cells transiently expressing the D234A mutant CaSR.DOI: http://dx.doi.org/10.7554/eLife.13662.026
-
-DOI: http://dx.doi.org/10.7554/eLife.13662.026
+Following the referee’s suggestion, we have tested the mutation D234A, and found that its effect on receptor activity was negligible, as shown by the IP accumulation dose response curves for wild-type receptor and the D234A mutant (Author response image 4). This may be due to the fact that the side chain of D234 is somewhat flexible, and does not contribute to the binding of Ca2+ ion at site 4 as much as the backbone carbonyl oxygen atoms of E231 and G557.10.7554/eLife.13662.026Author response image 4.Dose-dependent Ca2+-stimulated IP accumulation in cells transiently expressing the D234A mutant CaSR.
 
 The provided mutational studies of I181 m, T100I, and N102I all have significantly reduced maximal amplitudes in both IP and intracellular calcium activities in addition to increased EC50. These results suggest that the surface expression of the mutated protein variants are largely reduced. Thus, the effect for these residues in calcium binding cannot be unambiguously revealed. It is important to provide the results for the mutational effect of these identified ligand residues on direct calcium binding affinity.
 

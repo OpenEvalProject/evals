@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/03qjsrb10 Department of Anatomy, Soonchunhyang University College of Medicine Cheonan Republic of Korea
-2. https://ror.org/0461cvh40 Department of Periodontology and Research Institute of Oral Sciences, College of Dentistry, Gangneung-Wonju National University Gangneung Republic of Korea
-3. https://ror.org/03ryywt80 Department of Internal Medicine and Laboratory of Genomics and Translational Medicine, Gachon University College of Medicine Incheon Republic of Korea
-4. https://ror.org/053fp5c05 Department of Oral and Maxillofacial Surgery, Research Institute for Intractable Osteonecrosis of the Jaw, College of Medicine, Ewha Womans University Seoul Republic of Korea
+1. Department of Anatomy, Soonchunhyang University College of Medicine Cheonan Republic of Korea ([ROR:03qjsrb10](https://ror.org/03qjsrb10))
+2. Department of Periodontology and Research Institute of Oral Sciences, College of Dentistry, Gangneung-Wonju National University Gangneung Republic of Korea ([ROR:0461cvh40](https://ror.org/0461cvh40))
+3. Department of Internal Medicine and Laboratory of Genomics and Translational Medicine, Gachon University College of Medicine Incheon Republic of Korea ([ROR:03ryywt80](https://ror.org/03ryywt80))
+4. Department of Oral and Maxillofacial Surgery, Research Institute for Intractable Osteonecrosis of the Jaw, College of Medicine, Ewha Womans University Seoul Republic of Korea ([ROR:053fp5c05](https://ror.org/053fp5c05))
 
 † Corresponding author
 
 ## Abstract
 
-This study investigates the effects of two parathyroid hormone (PTH) analogs, rhPTH(1-34) and dimeric R25C PTH(1-34), on bone regeneration and osseointegration in a postmenopausal osteoporosis model using beagle dogs. Twelve osteoporotic female beagles were subjected to implant surgeries and assigned to one of three groups: control, rhPTH(1-34), or dimeric R25C PTH(1-34). Bone regeneration and osseointegration were evaluated after 10 weeks using micro-computed tomographic (micro-CT), histological analyses, and serum biochemical assays. Results showed that the rhPTH(1-34) group demonstrated superior improvements in bone mineral density, trabecular architecture, and osseointegration compared to controls, while the dimeric R25C PTH(1-34) group exhibited similar, though slightly less pronounced, anabolic effects. Histological and TRAP assays indicated both PTH analogs significantly enhanced bone regeneration, especially in artificially created bone defects. The findings suggest that both rhPTH(1-34) and dimeric R25C PTH(1-34) hold potential as therapeutic agents for promoting bone regeneration and improving osseointegration around implants in osteoporotic conditions, with implications for their use in bone-related pathologies and reconstructive surgeries.
+This study investigates the effects of two parathyroid hormone (PTH) analogs, rhPTH(1-34) and dimeric R25CPTH(1-34), on bone regeneration and osseointegration in a postmenopausal osteoporosis model using beagle dogs. Twelve osteoporotic female beagles were subjected to implant surgeries and assigned to one of three groups: control, rhPTH(1-34), or dimeric R25CPTH(1-34). Bone regeneration and osseointegration were evaluated after 10 weeks using micro-computed tomographic (micro-CT), histological analyses, and serum biochemical assays. Results showed that the rhPTH(1-34) group demonstrated superior improvements in bone mineral density, trabecular architecture, and osseointegration compared to controls, while the dimeric R25CPTH(1-34) group exhibited similar, though slightly less pronounced, anabolic effects. Histological and TRAP assays indicated both PTH analogs significantly enhanced bone regeneration, especially in artificially created bone defects. The findings suggest that both rhPTH(1-34) and dimeric R25CPTH(1-34) hold potential as therapeutic agents for promoting bone regeneration and improving osseointegration around implants in osteoporotic conditions, with implications for their use in bone-related pathologies and reconstructive surgeries.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Therefore, in this study, the authors used a large animal model that mimics post
 
 ## Results
 
-## Microarchitectural and histological analysis of titanium osseointegration
+### Microarchitectural and histological analysis of titanium osseointegration
 
 "Our study aims to evaluate and compare the efficacy of rhPTH(1-34) and dimeric R25CPTH(1-34) in promoting bone regeneration and healing using a clinically relevant animal model. Beagle dogs were chosen for their anatomical similarity to human oral structures, suitable size for surgical procedures, human-like bone turnover rates, and well-established oral health profiles, providing a reliable and ethically sound basis for research."
 
@@ -48,13 +48,21 @@ Various characteristics of the right mandible were evaluated in this analysis, i
 
 Histological analysis further clarified the micro-CT results. The implants in the control group showed physiological bone osseointegration around the titanium implant; however, insufficient bone–implant contact and exposure of implant threads were observed (Figure 2, Figure 2—figure supplement 1). This was especially evident on the buccal side of the implant, which was more vulnerable due to the bundle bone structure. Alternatively, the titanium implants in the rhPTH(1-34) group were in full contact with the green-stained mineralized bone. The dimeric R25CPTH(1-34) group showed a better pattern of osseointegration compared to the control group, although the bone–implant contact was lower than in the rhPTH(1-34) group (Figure 2A–C). Notably, both the rhPTH(1-34) and dimeric R25CPTH(1-34) groups presented evidence of bone regeneration for the second implant, whereby a bone defect was created prior to placing the implant. The measured bone–implant contact ratio was 18.32 ± 16.19% for the control group, 48.13 ± 29.81% for the rhPTH(1-34) group, and 39.53 ± 26.17% for the dimeric R25CPTH(1-34) group, illustrating the significant improvement in osseointegration. (p<0.05 for the control group compared to both PTH groups; however, the difference between the PTH groups was not significant.)
 
-## Histological and TRAP analyses of bone regeneration
+![Figure 2.](https://cdn.elifesciences.org/articles/93830/elife-93830-fig2-v1.jpg)
+
+**Figure 2.:** (A–I) Histological analysis of the different groups stained in Goldner’s trichrome. The presence of bone is marked by the green color and soft tissue in red. Red arrows indicate the position with soft tissues without bone around the implant threads. The area of bone formed was the widest in the rhPTH(1-34)-treated group. In the dimeric R25CPTH(1-34)-treated group, there is a greater amount of bone than vehicle-treated group. Green arrows represent the bone formed over the implant; blue dotted line, margin of bone and soft tissue; Scale bars, 1 mm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93830/elife-93830-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Three-dimensional reconstructed images of the peri-implant bone depicting the osseointegration after different therapeutic interventions. (A) Represents the bone response to recombinant human parathyroid hormone fragment (rhPTH 1–34) treatment, showing the most robust degree of bone formation around the implant in the three groups. (B) Shows the bone response to a modified PTH fragment (dimeric R25CPTH(1-34)), indicating a similar level of bone growth and integration as seen with rhPTH(1-34), although to a slightly lesser extent. (C) Serves as the control group, demonstrating the least amount of bone formation and osseointegration. The upper panel provides a top view of the bone–implant interface, while the lower panel offers a cross-sectional view highlighting the extent of bony ingrowth and integration with the implant surface.
+
+### Histological and TRAP analyses of bone regeneration
 
 Artificial bilateral bone defects were created in the left mandible and the effects of the two PTH analogs were evaluated on the bone regeneration, with one left unfilled and the other filled with a bone graft. Figure 3 demonstrates the effects of rhPTH(1-34) and dimeric R25CPTH(1-34) on bone regeneration compared to the control group (Figure 3A–L). Following the formation of the bone defects, the rhPTH(1-34) and dimeric R25CPTH(1-34) groups achieved sufficient morphological bone regeneration over a period of 10 weeks, while the control group exhibited morphological incompleteness over the same period. The rhPTH(1-34) group exhibited a mature trabecular architecture, while the dimeric R25CPTH(1-34) group showed a similar morphology, although some immature bone formation remained stained blue in the Masson trichrome staining analysis (Figure 3A–L). While there was no clear difference in the bone defect between the sites with and without bone grafting (Figure 3E, F, K, and L), the site where bone grafting occurred exhibited a more mature bone morphology, indicating that a xenograft-maintained space for new bone formation with osteoconductive effects.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93830/elife-93830-fig3-v1.jpg)
 
-**Figure 3.:** R25CPTH(1-34)-treated group.(A–L) Masson trichrome-stained sections of cancellous bone in the mandibular bone. The formed bone is marked by the color red. Collagen is stained blue. Black dotted box magnification region of trabecular bone in the mandible. Scale bars, A–C, G–I: 1 mm; D–F, J–L: 200 µm.
+**Figure 3.:** (A–L) Masson trichrome-stained sections of cancellous bone in the mandibular bone. The formed bone is marked by the color red. Collagen is stained blue. Black dotted box magnification region of trabecular bone in the mandible. Scale bars, A–C, G–I: 1 mm; D–F, J–L: 200 µm.
 
 The capability of rhPTH(1-34) and dimeric R25CPTH(1-34) in bone remodeling were evaluated by tartrate-resistant acid phosphatase (TRAP) immunohistochemical staining (Figure 4). Both the rhPTH(1-34) and dimeric R25CPTH(1-34) groups showed a significantly higher number of TRAP+ cells at both bone defects, with and without a xenograft, compared to the control group (Figure 4M and N) (p<0.05). In addition, the number of TRAP+ cells in the dimeric R25CPTH(1-34) group was significantly higher than in the vehicle, yet lower than in the rhPTH(1-34) group (Figure 4M and N).
 
@@ -62,7 +70,7 @@ The capability of rhPTH(1-34) and dimeric R25CPTH(1-34) in bone remodeling were 
 
 **Figure 4.:** (A–L) TRAP staining is used to evaluate bone remodeling by staining osteoclasts. Osteoclasts is presented by the purple color. Black dotted box magnification region of trabecular bone in the mandible. (M, N) The number of TRAP-positive cells in the mandible with and without xenograft in the rhPTH(1-34) and dimeric R25CPTH(1-34)-treated beagle groups. Scale bars, A–C, G–I: 1 mm; D–F, J–L: 200 µm. Error bars indicate standard deviation. Data are shown as mean ± SD. *p<0.05, **p<0.01, n.s., not significant.
 
-## Serum biochemical analysis
+### Serum biochemical analysis
 
 The levels of calcium, phosphorus, CTX, and P1NP were analyzed over time using RM-ANOVA (Figure 5). There were no significant differences between the groups for calcium and phosphorus at time points T0 and T1 (Figure 5A). However, after the PTH analog was administered at T2 (Figure 5A), the levels were highest in the rhPTH(1-34) group, followed by the dimeric R25CPTH(1-34) group, and then, lowest in the control group, which was statistically significant (Figure 5B and C) (p<0.05). The differences between the groups over time for CTX and P1NP were not statistically significant (Figure 5D and E).
 
@@ -94,13 +102,13 @@ Overall, the study demonstrated the therapeutic effects of rhPTH(1-34) and dimer
 
 ## Materials and methods
 
-## Animal preparation
+### Animal preparation
 
 This study was conducted in compliance with the ARRIVE guidelines and approved by the Animal Research Committee of Cronex Co., Ltd., Hwaseong, South Korea (CRONEX-IACUC 201801002). All animal experiments, including animal selection, management, preparation, and surgical protocols, were conducted in compliance with the Ewha Womans University rules for animal experiments. The animals were housed in a standard laboratory environment (21±1°C with 40–70% humidity; 12 hr light/dark cycle) with a standardized food/water supply.
 
 Beagles were chosen for this study because the bone size and dentition could accommodate human dental implants and the application of mechanical force to implants. To induce osteoporosis, 12 female beagles underwent bilateral OVX at 12 weeks of age, followed by osteoporosis development for 12 weeks before being used for the next experiments at the age of 24 weeks. Health and oral hygiene were checked and maintained daily (Figure 1A).
 
-## Experiment protocol
+### Experiment protocol
 
 Anesthesia was induced using zolazepam/tiletamine (10 mg/kg body weight, Zoletil; Virbac Laboratories, Carros, France) and xylazine hydrochloride (Rumpun, Bayer, Leverkusen, Germany), by intramuscular injection. The beagles were anesthetized using inhalation anesthesia for the implant surgery, and antibiotics (Ceftriaxone, Kyungdong Pharm, Seoul, South Korea) were administered for 3 days.
 
@@ -108,20 +116,20 @@ Both mandibular premolars 1–4 were extracted at 12 weeks after OVX. Then, 12 w
 
 After 2 weeks of healing, 12 female OVX beagles were randomly designated into three groups as follows: (1) control group with normal saline injection, (2) PTH (1-34) group with daily 40 μg/day rhPTH(1-34) injection (Forsteo, Eli Lilly and Company, Indianapolis, IN, USA), and (3) dimeric R25CPTH(1-34) group with 40 μg/day injection (dimeric R25CPTH(1-34), chemically synthesized by the Anygen, Gwangju, Republic of Korea). Each animal received one injection per day, aimed at replicating the intermittent rhPTH(1-34) exposure proven beneficial for bone regeneration and overall skeletal health in clinical settings (Neer et al., 2001; Kendler et al., 2018). This regimen was chosen to investigate the potential anabolic effects of these specific PTH analogs under conditions closely resembling therapeutic use. Animals were injected subcutaneously for 10 weeks, after which, they were euthanized and the bone regeneration and implant osseointegration were evaluated (Figure 1A–C).
 
-## Micro-CT analysis
+### Micro-CT analysis
 
 To examine the microarchitectural effects of rhPTH(1-34) and dimeric R25CPTH(1-34) on bone regeneration and osseointegration, radiographic analysis was performed using micro-CT on the right mandible (Figure 1D). The specimens were fixed in 4% paraformaldehyde for 48 hr before being assessed by micro-CT (SkyScan1173 ver. 1.6, Bruker-CT, Kontich, Belgium). The specimens were imaged with a pixel size of 29.83 µm. The voltage and current intensities of the images were 130 kV and 60 µA, respectively. The regions of interest were determined as the 10×10 mm2 square area, located 3 mm from the bottom of the implant. BMD, BV (mm3), Tb.N (1/mm), Tb.Th (µm), and Tb.Sp (µm) were analyzed.
 
-## Histological and histomorphometric analysis
+### Histological and histomorphometric analysis
 
 Bone histomorphometric parameters were computed and shown in accordance with recommendations by the ASBMR histomorphometric nomenclature committee (Dempster et al., 2013). Goldner’s trichrome and Masson trichrome staining were performed on both the right implantation and left bone defect sites, respectively. Specimens were dehydrated in increasing concentrations of ethanol and embedded in a mixture of ethanol and Technovit 7200 resin (Heraeus Kulzer, Wehrheimm, Germany), with an increasing ratio of resin. Following resin infiltration, the specimens were hardened in a UV embedding system (KULZER EXAKT 520, Norderstedt, Germany) for a day. The undecalcified specimens were cut using an EXAKT diamond cutting system (EXAKT 300 CP, Norderstedt, Germany), and the soft tissue and bone were attached to an acryl slide by an adhesive system. The section width of the specimen was adjusted to 40±5 µm using a grinding system (EXAKT 400CS, KULZER, Norderstedt, Germany). The specimens on the right implantation site were stained with Goldner’s trichrome and photographed by a Panoramic 250 Flash III system (3DHISTECH Ltd., Budapest, Hungary). The bone–implant contact ratio (%) was assessed as the linear percentage of the interface with direct contact between the bone and implant to the total interface of the implant using CaseViewer program software (3DHISTECH Ltd.).
 
 TRAP assay was performed on the left bone defect sites. The bone specimens were fixed in 4% paraformaldehyde overnight and decalcified in 10% ethylenediaminetetraacetic acid for 7 days. The decalcifying solution was changed every other day. The specimens were embedded in paraffin and cut into sections. According to the manufacturer’s instructions, the sections were deparaffinized and stained using a TRAP staining kit (Sigma, St. Louis, MO, USA). The number of TRAP-positive cells in the sections was counted under a microscope (DM2500, Leica Microsystems, Wetzlar, Germany).
 
-## Serum biochemical analysis
+### Serum biochemical analysis
 
 Fasting blood samples were drawn in the morning at baseline (T0; 12 weeks), the start of the injection at 26th week (T1), and euthanasia at 36th week (T2) for P1NP (procollagen type I N-terminal propeptide), PTH, CTX (C-terminal telopeptide), and calcium and phosphorus (Figure 5A). Calcium and phosphorus were analyzed using the Beckman AU480 Chemistry Analyzer (Beckman Coulter AU480). P1NP (procollagen type I N-terminal propeptide ELISA kit, Mybiosource), PTH (parathyroid hormone ELISA kit, Aviva Systems Biology), and CTX (C-terminal telopeptide [CTx-I] ELISA kit, Mybiosource) were analyzed by the ELISA method, according to the ELISA kit manufacturer’s instructions. In all analyses, the measured values were below the limit of quantification for the standard curve.
 
-## Statistical analysis
+### Statistical analysis
 
 Data for microarchitectural, histomorphometric, and serum biochemical analyses were expressed as mean and standard deviation (SD). Non-parametric tests were performed, including the Mann–Whitney and Kruskal–Wallis tests. Group differences in serum markers over time were compared by repeatedly measuring the analysis of variance. Statistical analysis was performed using SPSS 26 (IBM Corp., USA) and Prism 10 (GraphPad, San Diego, CA, USA). p-Values of <0.05 were set as statistically significant.

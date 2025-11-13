@@ -28,22 +28,22 @@
 
 ### Affiliations
 
-1. https://ror.org/05qrfxd25 Center for Precision Genome Editing and Genetic Technologies for Biomedicine, Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation
-2. https://ror.org/00ab9fg88 Blokhin National Medical Research Center of Oncology Moscow Russian Federation
-3. https://ror.org/05qrfxd25 Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation
-4. https://ror.org/010pmpe69 Belozersky Institute of Physico-Chemical Biology, Lomonosov Moscow State University Moscow Russian Federation
-5. https://ror.org/003pa2681 Endocrinology Research Centre Moscow Russian Federation
-6. https://ror.org/00v0z9322 Life Sciences Research Center, Moscow Institute of Physics and Technology Dolgoprudny Russian Federation
-7. https://ror.org/010pmpe69 Institute of Mitoengineering MSU Moscow Russian Federation
-8. https://ror.org/02b6qw903 Department of Drug Discovery and Biomedical Sciences, University of South Carolina Columbia United States
-9. https://ror.org/05w1q8228 Senex Biotechnology, Inc Columbia United States
-10. https://ror.org/027hwkg23 The Engelhardt Institute of Molecular Biology, Russian Academy of Sciences Moscow Russian Federation
+1. Center for Precision Genome Editing and Genetic Technologies for Biomedicine, Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation ([ROR:05qrfxd25](https://ror.org/05qrfxd25))
+2. Blokhin National Medical Research Center of Oncology Moscow Russian Federation ([ROR:00ab9fg88](https://ror.org/00ab9fg88))
+3. Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation ([ROR:05qrfxd25](https://ror.org/05qrfxd25))
+4. Belozersky Institute of Physico-Chemical Biology, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
+5. Endocrinology Research Centre Moscow Russian Federation ([ROR:003pa2681](https://ror.org/003pa2681))
+6. Life Sciences Research Center, Moscow Institute of Physics and Technology Dolgoprudny Russian Federation ([ROR:00v0z9322](https://ror.org/00v0z9322))
+7. Institute of Mitoengineering MSU Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
+8. Department of Drug Discovery and Biomedical Sciences, University of South Carolina Columbia United States ([ROR:02b6qw903](https://ror.org/02b6qw903))
+9. Senex Biotechnology, Inc Columbia United States ([ROR:05w1q8228](https://ror.org/05w1q8228))
+10. The Engelhardt Institute of Molecular Biology, Russian Academy of Sciences Moscow Russian Federation ([ROR:027hwkg23](https://ror.org/027hwkg23))
 
 † Corresponding author
 
 ## Abstract
 
-CDK8 and CDK19 paralogs are regulatory kinases associated with the transcriptional Mediator complex. We have generated mice with the systemic inducible Cdk8 knockout on the background of Cdk19 constitutive knockout. Cdk8/19 double knockout (iDKO) males, but not single Cdk8 or Cdk19 KO, had an atrophic reproductive system and were infertile. The iDKO males lacked postmeiotic spermatids and spermatocytes after meiosis I pachytene. Testosterone levels were decreased whereas the amounts of the luteinizing hormone were unchanged. Single-cell RNA sequencing showed marked differences in the expression of steroidogenic genes (such as Cyp17a1, Star, and Fads ) in Leydig cells concomitant with alterations in Sertoli cells and spermatocytes, and were likely associated with an impaired synthesis of steroids. Star and Fads were also downregulated in cultured Leydig cells after iDKO. The treatment of primary Leydig cell culture with a CDK8/19 inhibitor did not induce the same changes in gene expression as iDKO, and a prolonged treatment of mice with a CDK8/19 inhibitor did not affect the size of testes. iDKO, in contrast to the single knockouts or treatment with a CDK8/19 kinase inhibitor, led to depletion of cyclin C (CCNC), the binding partner of CDK8/19 that has been implicated in CDK8/19-independent functions. This suggests that the observed phenotype was likely mediated through kinase-independent activities of CDK8/19, such as CCNC stabilization.
+CDK8 and CDK19 paralogs are regulatory kinases associated with the transcriptional Mediator complex. We have generated mice with the systemic inducible Cdk8 knockout on the background of Cdk19 constitutive knockout. Cdk8/19 double knockout (iDKO) males, but not single Cdk8 or Cdk19 KO, had an atrophic reproductive system and were infertile. The iDKO males lacked postmeiotic spermatids and spermatocytes after meiosis I pachytene. Testosterone levels were decreased whereas the amounts of the luteinizing hormone were unchanged. Single-cell RNA sequencing showed marked differences in the expression of steroidogenic genes (such as Cyp17a1, Star, and Fads) in Leydig cells concomitant with alterations in Sertoli cells and spermatocytes, and were likely associated with an impaired synthesis of steroids. Star and Fads were also downregulated in cultured Leydig cells after iDKO. The treatment of primary Leydig cell culture with a CDK8/19 inhibitor did not induce the same changes in gene expression as iDKO, and a prolonged treatment of mice with a CDK8/19 inhibitor did not affect the size of testes. iDKO, in contrast to the single knockouts or treatment with a CDK8/19 kinase inhibitor, led to depletion of cyclin C (CCNC), the binding partner of CDK8/19 that has been implicated in CDK8/19-independent functions. This suggests that the observed phenotype was likely mediated through kinase-independent activities of CDK8/19, such as CCNC stabilization.
 
 ## Introduction
 
@@ -55,23 +55,41 @@ We have now generated mice with a conditional knockout of the Cdk8 gene on the c
 
 ## Results
 
-## Spermatogenesis is blocked in CDK8/19 iDKO males
+### Spermatogenesis is blocked in CDK8/19 iDKO males
 
 Previously, we have crossed Cdk8fl/fl mice with ROSA26CreERT2 with tamoxifen-inducible Cre activity (Figure 1A; Figure 1—figure supplement 1A) and demonstrated effective KO in all tissues except for ovaries and uterus (Ilchuk et al., 2022). However, Cdk8 inactivation in the male reproductive system (testes) was efficient at both genomic and protein levels (Figure 1—figure supplement 1B; Figure 1B). To investigate the effects of the double knockout of Cdk8 and Cdk19, we crossed Cdk8fl/fl/ROSA26CreERT2 mice with Cdk19-/- mice (Zhang et al., 2022) [MGI:5607862, Cdk19em1(IMPC)J]. All the substrains were then maintained as homozygotes. We injected tamoxifen into 2-mo-old Cdk8fl/fl/Cdk19-/-/ROSA26CreERT2 male mice 2 mo after tamoxifen injection. iDKO mice had significantly lower body weight than tamoxifen-injected control mice (Figure 1C). The most noticeable difference was the reduction of the male reproductive system - testes, epididymis, and prostate (Figure 1D). Changes observed in iDKO intestines resembled those detected in Cdk8iIEC-KO/Cdk19–/– (Dannappel et al., 2022): the number of Paneth cells and goblet cells was significantly decreased (Figure 1—figure supplement 1C and D). Age-matched tamoxifen-treated ROSA26CreERT2 mice served as a control.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig1-v1.jpg)
+
+**Figure 1.:** (A) Crossing of Cdk8fl/fl, Cdk19-/- and Cre/ERT2 mice and formation of experimental (Cdk8fl/fl/Cdk19-/-/ ROSA26CreERT2+tamoxifen, Cdk8fl/fl/ROSA26CreERT2+tamoxifen, and Cdk19-/-) and control (Cdk8fl/fl/Cdk19-/-/ROSA26CreERT2 without tamoxifen and wild-type +tamoxifen) groups. (B) Confirmation of tamoxifen-induced CDK8 iKO in testes by Western blot. (C) After 2 mo of KO induction, iDKO mice had significantly lower body weight [nonparametric t-test, ***p<0.001, n=6]. (D) Male urogenital system atrophy in iDKO mice. (E) Sexual behavior and fertility of tamoxifen-treated control, single KOs, and iDKO male mice.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Crossing of Cdk8fl/fl, Cdk19-/-, and Cre/ERT2 mice. The red square indicates mice that were maintained in a homozygous state. (B) Proof of Cdk8 2nd exon excision by PCR and agarose gel electrophoresis as described in Ilchuk et al., 2022 Cre and Cdk8fl/wt probes on first and third lanes for comparison, mQ as negative control. (C) Confirmation of CDK8 and Cyclin C absence in the intestine 2 mo after inducible double knockout (iDKO) induction. (D) Periodic acid–Schiff stained sections of intestine of tamoxifen-treated R26/Cre/ERT2 (Cre +Tam) and iDKO mice. Red arrows indicate goblet cells, black arrows indicate Paneth cells. Both cell types numbers are significantly reduced in iDKOs. Magnification 100 X [nonparametric t-test, n=173 and 178 crypt and n=240 and 261 villus for control and iDKO respectivelly, ****p<0.0001].
 
 Next, we decided to assess if the morphological changes in the reproductive system in the iDKO result in changes in their sexual behavior or the number of pups they fathered. As tamoxifen has an impact on the male reproductive system (Willems et al., 2011), the experiments were performed at least 6 wk post-injection and we used tamoxifen-treated C57BL/6 J mice as a control. Four groups were enrolled in the experiment: tamoxifen-treated C57BL/6 J (WT+Tam), tamoxifen-treated Cdk8fl/flROSA-Cre/ERT2 (CDK8 iKO), Cdk8fl/flCdk19-/-ROSA26CreERT2 (CDK19 KO) and tamoxifen-treated Cdk8fl/flCdk19-/-ROSA26CreERT2 (iDKO). Three males in each group were kept separately with two outbred CD1 females each for 3 mo. Copulative plugs and the number of pups were checked 5 d a week (Figure 1E). Tamoxifen-treated wild-type mice demonstrated normal fertility: 10 plugs were detected and 86 pups were born. The CDK19 KO group showed slightly reduced fertility: 32 pups along with an increased number of the plugs (16) probably caused by the lower rate of pregnancy onset. Surprisingly, only two plugs and no pups were observed in the CDK8 iKO group despite normal appearance and behavior of males. Neither plugs nor pups were detectable in the iDKO cohort (Figure 1E). These experiments showed that both CDK8 iKO and iDKO are infertile, and the cause of CDK8 iKO infertility is likely to be the lack of sexual activity.
 
 We injected tamoxifen into 2-mo-old Cdk8fl/fl/Cdk19-/-/ROSA26CreERT2 male mice. Age-matched tamoxifen-treated wild-type mice served as a control. To investigate iDKO effects we performed an autopsy with subsequent H&E staining, 8 wk post tamoxifen treatment (Figure 2A). The prostate, testes, and the epididymis were significantly smaller compared to single KOs and tamoxifen-treated wild-type mice (Figure 2A), the diameter of testicular tubules was reduced (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig2-v1.jpg)
+
+**Figure 2.:** (A) H&E staining of prostate, epididymis, and testes of inducible double knockout (iDKO) mice and tamoxifen-treated control. 100 X magnification (B) H&E staining of wild-type (WT) and iDKO seminiferous tubules. 400 X magnification. (С) Time course of experiments. CDK8 iKO was activated by tamoxifen administration in 8–10 wk old males. Urogenital abnormalities became visible in 2 wk. Spermatogenesis was analyzed by flow cytometry and immunofluorescence (IF) after 2, 8, and 20 wk since activation. Single-cell RNA sequencing was performed at 7 wk after KO. (D) Western blot analysis of Cre/ERT2 (Cre+Tam), single (CDK8 iKO and CDK19 KO), and double (iDKO) knockout testes, 2 mo after tamoxifen injections. CCNC protein is absent in iDKO, but not in the single KO in the testes. pSTAT1 727 is independent of CDK8/19 KO. Stars mark nonspecific staining by CDK19 antibodies. (E) CDK8 and CDK19 IHC staining of testes sections, 200 x (upper row) and 630 x magnification (bottom row) showing staining in various types of testicular cells. (F–K). Flow cytometry analysis of CDK8/CCNC expression in different testicular cell types. Figures F and I show major CDK8 (50.68%) and CCNC populations (44.52%), figures G and J show that 1 n (round, but not elongated spermatids), 2 n and 4 n cells can be CDK8 and CCNC positive, figures H and K indicate, not only cKit+ cells among 2 n-4n can be CDK8 and CCNC positive.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) H&E staining of testes and prostate of wild-type (WT) mice and CDK8 iKO mice. Despite the lack of sexual behavior CDK8 iKO mice have normal urogenital system. (B) Western blot of cultured mouse embryonic fibroblasts (MEFs) with knockout induced in vitro by 4-hydroxytamoxifen. Single KOs have compensatory elevated levels of paralogous kinase.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig2-figsupp2-v1.jpg)
+
 The germinal epithelium of the tubules was presented by Sertoli cells with typical large light nuclei and some spermatogonia or spermatocytes. Cells at the postmeiotic stages of spermatogenesis were completely absent. Among the spermatocytes, there were only early prophase cells. In contrast, we detected an increased number of apoptotic cells (Figure 2B). Thus, in these mice the spermatogenesis progenitor cells were present but their differentiation and/or meiosis was blocked. In Sertoli cells, the vacuoles are the sign of the loss of contact between these cells and spermatogenic elements (Figure 2A and B). Leydig cells were significantly smaller and were almost depleted of secretory vacuoles suggesting the lack of hormonal activity. The epididymis contained empty tubules; the epithelium appeared undifferentiated, that is, neither typical borders between epithelial cells nor clear Golgi zone were visible. The prostate and the epididymis were also atrophic (Figure 2A). These changes were detectable from 2 wk after tamoxifen treatment and persisted for at least 6 m (Figure 2C). However, surprisingly they were not observed in CDK8 iKO (Figure 2—figure supplement 1A), which despite showing no microscopic changes, fathered no offspring and had no apparent sexual behavior (Figure 1E).
 
-## CDK8/19 distribution in testes
+### CDK8/19 distribution in testes
 
 Spermatogenesis failure in iDKO can be caused both by events in testes and extratesticular regulation. Internal events require expression of CDK8/19 at least in some testicular cells and an efficient KO of CDK8, which was not achieved in the female reproductive system (Ilchuk et al., 2022). Both CDK8 and CDK19 were present in testes and knockout was efficient after 7 d of daily treatment with 3 mg of tamoxifen (Figure 2D). We have also analyzed the levels of the CDK8/19 binding partner CCNC after single and double KOs in mouse embryonic fibroblasts (MEFs) (Figure 2—figure supplement 1B) and in mouse testes after iDKO (Figure 2D). In agreement with the previous observations in human cell lines (Chen et al., 2023), CCNC was present if either CDK8 or CDK19 were present, but undetectable in the iDKO embryonic fibroblasts, as well as in iDKO testes. As CDK8 and CDK19 functions are considered to significantly overlap (Chen et al., 2023), it is possible that in the absence of one of the proteins the level of the other will increase, obscuring a possible single KO phenotype. Indeed, we observed such a compensation for MEFs, but not for testes (Figure 2D; Figure 2—figure supplement 1B), indicating tissue specificity of this mechanism. Decrease in the phosphorylation of STAT1 serine 727 is often used as CDK8/19 inhibition marker (Rzymski et al., 2017) despite the fact that different kinases can phosphorylate it (Chen et al., 2019). However, pSTAT1 727 level was not decreased in single or double KOs (Figure 2D) indicating that pSTAT1 727 is not a suitable marker of CDK8/19 kinase activity.
 
 Different testicular cell types contribute to the successful spermatogenesis and little is known about CDK8/19 expression in each type. McCleland et al., 2015 performed IHC on different tissues and found CDK8 only in spermatogonia of all testicular cell types. Our IHC analysis showed that CDK8 and CDK19 are present in several types of testicular cells, including Leydig cells, and cells inside the tubule. Interestingly, CDK8 and CDK19 appear to be expressed in different types of cells in the seminiferous tubules, with CDK8 mostly expressed in the periphery of the tubule and in lower levels in the center of the tubule, while CDK19 was mostly expressed in the center of the tubule (Figure 2; Figure 2—figure supplement 2). We also used flow cytometry to identify cell types expressing CDK8/19. To detect cells with the expression of at least one kinase we used anti-CCNC antibodies. In wild-type male mice, CDK8 (Figure 2F–H) and CCNC (Figure 2I–K) positive cells were detected among 1 n (round, but not elongated spermatids), 2 n and 4 n cells, indicating their role at all spermatogenesis stages. In agreement with (McCleland et al., 2015) report, all c-Kit+ cells were positive for CCNC and CDK8, but other 2 n/4 n c-Kit negative cells were also positive for both proteins (Figure 2H and K).
 
-## Spermatogenic cells of iDKO mice are unable to advance through meiosis I prophase
+### Spermatogenic cells of iDKO mice are unable to advance through meiosis I prophase
 
 To obtain a quantitative spermatogenesis pattern, we performed cell cycle analysis by flow cytometry with propidium iodide staining. We examined wild-type, single KOs, and iDKO animals sacrificed 2 mo after tamoxifen treatment. Cell cycle analysis revealed striking differences in iDKO mice, with a disappearance of elongated spermatids, almost all round spermatids, and massive cell death (Figure 3A and B). All other groups had the same normal cell distribution (Figure 3B). Noticeably, the 4 n population and cells in the S-phase were not affected by iDKO, indicating that iDKO spermatogonia successfully entered meiosis but could not produce haploid spermatids. This ongoing ‘meiotic catastrophe’ led to an almost full depopulation of the testes in iDKO mice (Figure 3C). Due to fast transition from meiosis I to meiosis II, it is difficult to detect secondary spermatocytes by flow cytometry. To specify the stage of CDK8/19-dependent spermatogenesis failure, we performed phospho-γH2A.X and SYCP3 immunofluorescent staining of seminiferous tubules. Phospho-γH2A.X is a DNA damage marker which marks double-strand breaks in leptotene, zygotene, and sex chromosomes during the pachytene. SYCP3 is a component of the synaptonemal complex, expressed during meiosis I prophase, which forms distinct patterns in the late zygotene/pachytene. In the wild-type tubules, all the meiotic stages were visible (Figure 3D). At the same time, almost all meiotic cells in iDKO were blocked in the pachytene (Figure 3D), indicating that iDKO cells enter meiosis but cannot traverse through meiosis I prophase and subsequently undergo cell death.
 
@@ -79,17 +97,25 @@ To obtain a quantitative spermatogenesis pattern, we performed cell cycle analys
 
 **Figure 3.:** (A) Distinctive histograms of wild-type (left) and iDKO (right) mice. Violet - 4 n population, red - 2 n population, green - round spermatids, blue - elongated spermatids, orange - apoptotic subG1 cells. (B) Quantitative distribution of testicular cells between these groups. Wild-type, with and without tamoxifen, as control groups, have similar distribution to that of CDK8 and CDK19 single KO. iDKO testes have a greatly reduced number of round spermatids and no elongated spermatids [repeated measurements two-way ANOVA, mean ± SD, n=5]. (C) Overall cellularity is significantly reduced only in the iDKO testes [nonparametric t-test, n > 3, ***p<0.001, ****p<0.0001]. (D) IF staining of the control and iDKO testes frozen sections. Nuclei are stained by DAPI (blue pseudocolor), SYCP3 is depicted as green, γH2A.X - as red. All stages of spermatogenesis are visible in control testes, while pachytene is the last detected stage in iDKO. Confocal microscopy, magnification 600 X. M - meiotic entry spermatocytes; L - leptotene; Ph - pachytene; PM - post-meiotic stages.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 To investigate molecular mechanisms of CDK8/19 mediated alterations in meiosis, we performed single-cell RNA sequencing (scRNAseq) of the testes. We analyzed cell suspensions from testes of two tamoxifen-treated wild-type С57BL/6 J and two iDKO animals whose phenotype had previously been confirmed by cell cycle analysis (Figure 4—figure supplement 1).
 
 The analysis of cell type composition confirmed the reduced number of post-pachytene spermatocytes and almost complete absence of spermatids, while meiotic entry, leptotene, and zygotene cell numbers remained unaffected (Figure 4A and B). At the same time, the percentage of undifferentiated spermatogonial stem cells in iDKO animals was unchanged, nor was the proportion of Leydig cells altered. Sertoli cells became the most abundant cell type in iDKO mice with reduced testes cellularity, however their absolute number didn’t change significantly.
 
-## Differential gene expression
+![Figure 4.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig4-v1.jpg)
+
+**Figure 4.:** Raw data single-cell RNA sequencing (scRNA) sequencing are available in the SRA (SRP470231). (A) UMAP projection and relative cell numbers for all testicular cell types in control and iDKO samples. Number of secondary spermatocytes is significantly decreased and spermatids are almost absent in iDKO samples. (B) UMAP projection and relative cell numbers for spermatogonia and primary spermatocytes. Post-pachytene spermatocytes are severely depleted in iDKO samples. (C) GO Biological Processes pathways enriched among the Leydig cells differentially expressed genes (DEGs). Lipid metabolism and steroid biosynthesis are severely perturbed. (D) Violin plots for key Leydig cells genes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** DKO cells do not contain elongated spermatids and only small fraction of round spermatids.
+
+### Differential gene expression
 
 Differentiation of sperm lineage is a tightly controlled process, where changes in functioning in a certain type of cells can affect the viability and differentiation of other cells. To understand the underlying mechanism of meiotic cell death in iDKOs, we compared gene expression in each type of cell clusters present both in wild-type and knockout animals.
 
-## Leydig cells
+### Leydig cells
 
 Leydig cells are the primary source of testosterone in the testes, a hormone required for spermatogenesis. scRNAseq analysis showed significant transcriptomic changes in Leydig cells. Among 126 genes that were differentially expressed (|log2FC|>0.4; p<0.01) in WT vs iDKO Leydig cells, 30 were down-regulated, however, among 14 strongly affected genes with |log2FC|>1 11 were down-regulated. Strikingly, 9 of 14 strongly downregulated genes were associated with lipid (specifically, steroid) metabolism (Supplementary file 1), and 3 of these 9 genes were linked to male infertility (Aherrahrou et al., 2020; Stoffel et al., 2008; Song, 2007).
 
@@ -103,9 +129,23 @@ The Kit gene (down-regulated), encoding a tyrosine kinase receptor, and Kitl gen
 
 We hypothesize that the observed upregulation of several steroidogenesis regulators may be a part of a compensation feedback loop in response to the decreased testosterone level.
 
-## Sertoli cells
+### Sertoli cells
 
 ScRNAseq (Figure 4A) shows that Sertoli cell fraction is greatly increased in iDKO specimens, however, this is mostly due to the reduction of the total germ cell number. At the same time, analysis of cell cycle-specific genes revealed that in iDKO, Sertoli cells can re-enter the cell cycle. In particular, genes involved in G0-S transition and G2-M transition were upregulated (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig5-v1.jpg)
+
+**Figure 5.:** (A) Violin plots for Reactome cell cycle gene sets indicate that Sertoli cells in iDKO lose terminal differentiation and re-enter cell cycle. Percentage of cells in G1-S and G2-M transitions are increased in iDKOs. (B) Violin plots for key cytoskeleton and intercellular contacts related to differentially expressed genes (DEGs). (C) Immunofluorescence (IF) staining for vimentin demonstrates the blood-testis barrier (BTB) integrity disruption and a loss of characteristic striation cytoskeleton patterns in iDKOs. Magnification 600 X. (D) Enrichment of GO stress pathways in Sertoli cells indicates their dysfunction in iDKOs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Graphs were made by GraphPad Prism.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Area of each square is proportional to the number of the genes in the term. The graph is built with R Treemap library.
 
 According to downregulation of the steroid hormone biosynthesis in Leydig cells, we expected to see in Sertoli cells patterns similar to those in mice with Sertoli cell-specific KOs of androgen receptor (AR) – SCARKO (Sertoli Cells Androgen Receptor KnockOut) (Larose et al., 2020; De Gendt et al., 2014) and luteinizing hormone (LH) receptor – LURKO (Griffin et al., 2010). However, it must be noted that these mice have constitutive receptor KOs and do not fully develop their reproductive system, whereas our KO model mice develop normally and become fertile before the knockout induction.
 
@@ -117,15 +157,23 @@ According to the GO Cellular Compartment (Supplementary file 2), both up- and do
 
 This molecular evidence of Sertoli cell spatial organization disturbance and disruption of cell contacts is in good agreement with the patterns observed during histological examination.
 
-## Germ cells
+### Germ cells
 
 As primary spermatocytes of double knockout mice stop their differentiation in pachytene, we compared gene expression in two groups of germ cells: undifferentiated spermatogonia and meiosis-entry (leptotene-zygotene-pachytene) spermatocytes. 1107 DEGs were identified for undifferentiated cells, 1650 for spermatocytes, and 874 of these genes were common. Almost all the DEGs were up-regulated (99.2%) (Figure 5—figure supplement 2). This overlap may be explained by the fact that undifferentiated and differentiated spermatogonia represent a continuous spectrum with gradually changing transcription patterns. Unique genes for the Early Spermatogonia cluster were attributed by GO as genes related to the RNA processing and biosynthesis and ribosome biogenesis, whereas no stem cell-specific pathways were found. We conclude that Cdk8/19 knockout and disruption of steroid biosynthesis and testosterone production have no significant impact specifically on the early spermatogonia.
 
 Most cells in knockout testes do not progress to stages after pachytene. Accordingly, apoptosis-related pathways, stress response pathways, and the autophagy pathway were upregulated (Supplementary file 2; Figure 5—figure supplement 3). More specifically, a set of meiosis-specific genes was also up-regulated. These genes were related to chromosome pairing, DNA recombination, and histone modification, which are known to be involved in meiosis. We hypothesize that this effect might be caused by compensatory mechanisms triggered by inability to proceed through meiosis.
 
-## Validation of single-cell RNA data
+### Validation of single-cell RNA data
 
 In control testes, CYP17A1 protein was localized outside of seminiferous tubules, in Leydig cells. In iDKO animals, CYP17A1 staining was completely absent (Figure 6A), despite Leydig cells being present in histological sections (Figure 2A and B). Western blot analysis of all genotypes further confirmed this finding (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig6-v1.jpg)
+
+**Figure 6.:** (A) Immunofluorescence (IF) staining for CYP17A1 of testes frozen sections, magnification 600 X. CYP17A1 is visualized in extratubular space in Leydig cells in control mice and is completely absent in inducible double knockout (iDKOs). (B) Western blot for CYP17A1 confirms disappearance of the protein in iDKOs, but not in other genotypes [nonparametric t-test, n=5, **p<0.01, ***p<0.001]. (C) Testosterone blood level is decreased only in iDKO mice. (D) Luteinizing hormone production is not impaired by CDK8 iKO and CDK19 KO or iDKO [nonparametric t-test, n=5].
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Magnification 200 X (A) and 400 X (B). There increased lipid accumulation is observed in the interstitial space of testes in iDKO mice. To further prove the steroid hypothesis, we performed CYP17A1 immunostaining of testicular cross sections and western blotting, as well as direct testosterone measurement in the blood via LC-MS and cell culture experiments with ex vivo Leydig cells.
 
 CYP17A1 catalyzes several key reactions leading to transformation of pregnenolone into testosterone. We measured the concentration of the key androgen hormone -- testosterone in the blood of wild-type mice, single KOs, and iDKO. Only iDKO showed significantly lower levels of testosterone, consistent with only this genotype presenting abnormal spermatogenesis (Figure 6C).
 
@@ -133,15 +181,15 @@ Changes in steroid synthesis in Leydig cells can be caused by several mechanisms
 
 CDK8 was also shown to positively regulate lipid metabolism in D. melanogaster (Tang et al., 2018; Li et al., 2022). In this case, a lack of steroidogenesis could be explained by the lack of its precursor cholesterol. We detected OilRed-positive stained cells in the intertubular space in good agreement with the Leydig cells localization. Moreover, iDKO staining was more intense than in wild-type mice, indicating an accumulation of lipids, which are not converted to testosterone (Figure 6—figure supplement 1).
 
-## Spermatogenesis in iDKO mice slightly recovers with time
+### Spermatogenesis in iDKO mice slightly recovers with time
 
 To address the question of the persistence of spermatogenesis failure, we performed histological and flow cytometry analysis of mice, 5 mo after tamoxifen treatment. A certain percentage of 1 n cells (primarily round spermatids) have reappeared 3–5 mo after tamoxifen treatment (Figure 7A), nevertheless the total number of cells and 1 n cells remained low compared to control (Figure 7B). H&E staining of prostate and epididymis also revealed slight alleviation of the phenotype, but no mature sperm (Figure 7C). Immunofluorescent staining of seminiferous tubules confirmed this finding, demonstrating solitary tubules with postmeiotic cells (Figure 7D). However, the levels of CYP17A1 were not restored in Leydig cells (Figure 7E).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/96465/elife-96465-fig7-v1.jpg)
 
-**Figure 7.:** (A) Round and elongated spermatids become detectable by flow cytometry 5 mo after iDKO [repeated measurements two-way ANOVA, mean ± SD, n=3]. (B) The overall testes cellularity is only slightly increased [nonlinear regression, mean ± SD, n=3]. (C) The postmeiotic cells become visible with H&E staining of the tubules, however, epididymal ducts remain empty. (D) Post-pachytene and post-meiotic (PM) cells became visible on the SYCP3 + γH2A.X-stained frozen sections, magnification 600 X. (E) CYP17A1 level remains at the background level, 5 mo after KO induction.Figure 7—source data 1.Figure 7E indicating the relevant bands and treatments.Figure 7—source data 2.Figure 7E.
+**Figure 7.:** (A) Round and elongated spermatids become detectable by flow cytometry 5 mo after iDKO [repeated measurements two-way ANOVA, mean ± SD, n=3]. (B) The overall testes cellularity is only slightly increased [nonlinear regression, mean ± SD, n=3]. (C) The postmeiotic cells become visible with H&E staining of the tubules, however, epididymal ducts remain empty. (D) Post-pachytene and post-meiotic (PM) cells became visible on the SYCP3 + γH2A.X-stained frozen sections, magnification 600 X. (E) CYP17A1 level remains at the background level, 5 mo after KO induction.
 
-## Pharmacological inhibition of CDK8/19 does not affect spermatogenesis
+### Pharmacological inhibition of CDK8/19 does not affect spermatogenesis
 
 Recent findings have established that CDK8/19 may have kinase-independent functions (Steinparzer et al., 2019), including stabilization of CCNC in a kinase-independent manner (Chen et al., 2023). Depletion of CDK8/19 in testes of iDKO mice leads to the CCNC degradation (Figure 2D). To examine if the observed phenotype is related to the kinase activity of CDK8/19 or is kinase-independent, we treated WT mice with a pharmacological CDK8/19 inhibitor – SNX631-6 (Li et al., 2024). 11 wk-old male C57BL/6 J mice were treated with SNX631-6 medicated chow (500 ppm, 40–60 mg/kg/d dosage, on average) or control diet for 3 wk. The same SNX631-6 dosing regimen was highly efficacious in suppressing the castration-resistant prostate cancer growth in male mice (Li et al., 2024). No abnormal clinical observations were identified in the treated mice through the whole treatment period. Testes were weighed and fixed in 10% formalin for H&E staining. There were no significant differences between the control and treatment groups in histology analysis or in testes weights (Figure 8A and B), in contrast to the iDKO testes. The drug concentration in the testes as measured by LCMS/MS was lower than in blood (Figure 8C), suggesting the effects of the blood-testis barrier, but this concentration (50 ng/mL) was still ~10 times higher than the drug’s IC50 in the cell-based assay (~5 ng/mL).
 
@@ -185,13 +233,13 @@ The results of the present study reveal for the first time the role of CDK8/19/C
 
 ## Materials and methods
 
-## Animals and conditional iDKO
+### Animals and conditional iDKO
 
 Cdk8fl/fl and ROSA26CreERT2 (Jax:008463; B6.129-Gt(ROSA)26Sortm1(cre/ERT2)Tyj/J) provenance and genotyping procedures were described previously (Ilchuk et al., 2022). Cdk19-/-, mutant mouse strain C57BL/6N-Cdk19em1(IMPC)J/Mmucd was obtained from the MMRRC at UC Davis KOMP, RRID:MMRRC_047035-UCD.
 
 Mice were genotyped by real-time PCR using oligonucleotides listed in Supplementary file 5. Animals were maintained under controlled room conditions (22–24°C and a 14 hr light: 10 hr dark photoperiod) on standard coniferous (pine) wood shavings bedding with ad libitum access to water and chow approved by the Institutional Animal Care and Use Committee. All studies were conducted in accordance with the principles of biomedical ethics set out in the Helsinki Declaration (1996), approved by the Ethics Committee of the Institute of Gene Biology of the Russian Academy of Sciences (Protocol No. 3 of April 24, 2022) and carried out in accordance with the provisions of Directive 2010/63/EU of the European Parliament and of the Council of the European Union of September 22, 2010, on the protection of animals used for scientific purposes. Tamoxifen treatment was performed as described previously: 8–10 wk-old males were injected with 3 mg of tamoxifen daily for seven consecutive days (Ilchuk et al., 2022). Tamoxifen used for KO induction is an estrogen receptor modulator and can by itself affect the mouse organism, especially fertility and hormonal levels (Willems et al., 2011). To ensure that the observed effects are caused by the KOs and not by tamoxifen treatment we used tamoxifen-treated controls in every experiment and conducted all experiments but one (Figure 2C) at least 1 mo after tamoxifen treatment. Mice were sacrificed by cervical dislocation. To evaluate fertility, males were kept with two CD-1 outbred female mice each. Copulative plugs and newborn pups were monitored daily in the morning.
 
-## Histology
+### Histology
 
 For primary tissue examination, organs were fixed in 10% formaldehyde, paraffin-embedded, sectioned on a microtome and stained with H&E. We used Periodic acid-Shiff (PAS) staining to highlight molecules with a high percentage of carbohydrate content to identify Paneth cells and goblet cells in the ileum.
 
@@ -201,7 +249,7 @@ For immunofluorescent staining, frozen sections of organs were collected in tiss
 
 For Oil Red O staining, frozen sections (10 μm) were used as described above. Staining was carried out according to the manufacturer’s protocol (Sigma, MAK194).
 
-## Flow cytometry
+### Flow cytometry
 
 For the isolation of cells from seminiferous tubules we used a modified protocol from Jeyaraj et al., 2003. In testicular cells, this method allows one to distinguish between 4 n primary spermatocytes that entered meiosis, 2 n cells (Leidyg, Sertoli, and other somatic cells, spermatogonia stem cells and secondary spermatocytes, that completed first meiotic division) and two 1 n groups: round spermatids and elongated spermatids after DNA compaction, as well as apoptotic (subG1) cells (Figure 3A, left) (de Lourdes Pereira et al., 2016; Jeyaraj et al., 2003). The testes of mature mice were placed in phosphate-buffered saline (PBS), the tunica albuginea was opened, and the contents were transferred to a solution of 0.5 µg/mL collagenase IV (PanEco, Russia) in PBS and incubated for 15 min at 32 °C with shaking at 220 rpm. The seminiferous tubules were washed twice with 1 U DNAse (NE Biolabs, Ipswich, MA) in PBS, transferred to 0.01% trypsin (PanEco), and shaken for 15 min at 32 °C, 220 rpm. Trypsin was inactivated with 0.01% bovine serum albumin in PBS; cells were thoroughly resuspended, passed through 70 μm nylon mesh cell strainers (Wuxi NEST Biotechnology, China) and reconstituted in 1 mL PBS. For flow cytometry cells were fixed with 0.75% PFA for 15 min at 37 °C, then washed in PBS. Cells were lysed in the buffer containing 50 μg/mL propidium iodide (PI), 100 μg/mL RNAse A, 0.1% sodium citrate, 0.3% NP-40 (VWR Life Science) for 30 min at 4 °C in the dark followed by flow cytometry analysis on a CytoFlex 26 (Beckman Coulter, Indianapolis, IN) in PE-A and PerCP-A channels. At least 10,000 fluorescents ‘events’ were collected per sample.
 
@@ -209,48 +257,48 @@ For antibody staining for flow cytometry analysis, cells were fixed with 90% met
 
 All the data were analyzed using CytExpert software (Beckman Coulter).
 
-## 10x Chromium library preparation and sequencing
+### 10x Chromium library preparation and sequencing
 
 2 R26-Cre-ERT2 and 2 Cdk8fl/flCdk19-/-R26-Cre-ERT2 tamoxifen-treated male mice at seventh week after activation were sacrificed and tissue cell suspension was prepared as described above. The phenotype was confirmed by cell cycle analysis of a portion of cell suspension used for the 10 X library preparation. Flow cytometry analysis showed a complete absence of haploid cells in one iDKO animal while the other had a subpopulation of round but not elongated spermatids (Supplementary file 4).
 
 Single-cell 3’ v3 kit and Chromium controller (10 X Genomics) (Zheng et al., 2017) were used to generate GEMs for further processing. RT and other stages of single-cell library preparation were performed as per manufacturer instructions, with the exception of AMPure XP Reagent used instead of SPRIselect. These sample libraries were sequenced with Illumina Novaseq6000.
 
-## Single-cell data processing
+### Single-cell data processing
 
 Raw fastq files generation, alignment and read filtering were done by 10 x Genomics Cell Ranger 6.1.1 with default settings. Read quality was additionally assessed with FastQC. Reads were aligned to the GRCm38 genome, with an average 95% alignment rate. Raw counts, generated by Cell Ranger 6.1.1, were piped to Seurat (Hao et al., 2021), where additional filtering was applied. Cells with aberrant UMI vs. genes relations were filtered with pagoda2 genes vs. molecule filter (https://github.com/kharchenkolab/pagoda2; Barkas and Biederstedt, 2024) where minimal counts were set as 1000 and minimal genes as 500. Next, cells with high percentages of mitochondrial gene expression per cell were excluded, threshold for filtering set as 25%. After that Scrublet doublet (Wolock et al., 2019) score was calculated, cells with scores higher than 0.20 were marked as doublets and excluded. Each sample had more than 5000 high quality cells remaining after filtering. These cells were normalized with the default Seurat method and piped to further filtering and analysis.
 
 To account for ambient gene expression, DecontX (Yang et al., 2020) was used, for which cluster-assigned data are required. For stable cluster assignment, a reference dataset was formed of WT samples, which were integrated via Harmony (Korsunsky et al., 2018) and then clustered with Seurat. Clustering was checked against the testicular cell type markers (Hermann et al., 2018; Cao et al., 2021) to ensure selection of true clusters that would reiterate across samples. Cluster of cells belonging to the IGB_2 WT sample only, which did not correspond to any cell type and was missing essential housekeeping genes, was discarded as a cluster of low-quality cells with no biological relevance. This reference dataset was used for automatic cluster mapping with Seurat for all samples, and received labels were used with DecontX to lessen share of ambient gene expression in data.
 
-## Single-cell data analysis
+### Single-cell data analysis
 
 Corrected counts for all cells were piped back to Seurat. Then normalized WT and double knockout samples were integrated with Harmony to account for samples’ batch effects. 3480 variable genes were used for PCA and following integration, none of them mitochondrial or ribosomal. Harmony-integrated data was UMAP dimension-reduced and clustered with Seurat. Visualizations were also made with the Seurat package. Cell type was assigned according to their marker genes (Hermann et al., 2018; Cao et al., 2021). Both cells and microenvironment in the testes were detected in wild-type as well as in KO samples.
 
 Spermatogonia cell cluster was reintegrated and reclustered separately for discovery of spermatogonia subtypes. Integration and clusterization were done as before, with 798 features at the start of the process. Spermatogonia subclusters were assigned types according to literature-curated marker genes (Hermann et al., 2018; Cao et al., 2021). Differential expression tests (negative binomial Seurat implementation) were conducted for each chosen cell cluster with WT compared against double knockout, batch effect between samples accounted for with the linear model. All mitochondria, ribosomal, and high ambient genes (by DecontX) were excluded from testing. Genes with absolute logFC <0.4 and genes expressed in less than 20% cells in class were also excluded. Additionally, after testing, all genes with no or almost no expression in double knockout, high expressions in WT, and high expression in WT spermatids were excluded as their differential expression might be caused by different ambient composition in WT, heavily influenced by larger spermatid cell proportion. For Sertoli cells, a small subcluster, potentially caused by technical effects, was excluded before testing.
 
-## Assignment of groups and cell count
+### Assignment of groups and cell count
 
 The clustering analysis was performed according to markers described in previous studies (reviewed in Suzuki, 2023). This analysis allowed us to identify nine populations with respective genes: Sertoli cells (Wt1, Sox9, NR5a1, Clu), Leydig cells (Hsd3b1, Cyp17a1), macrophages (Cd74, C1qa, Cd45, Ccl5), T-cells, fibroblasts (Pdfrgfra, Cd34, Dcn, Gcn), and the differentiating sperm lineage divided into five clusters: undifferentiated/early spermatogonia (Crabp1, Tcea3, Kit), meiotic entry (Stra8, Rhox13) leptotene/zygotene (Sycp3, Dmc1), two clusters for pachytene (Piwil1, Id4) and pachytene/diplotene (Acr, Pgk2) (Supplementary file 4).
 
-## Hormone measurement
+### Hormone measurement
 
 To measure the concentration of hormones in the serum, blood was taken from the left ventricle of the heart, transferred to sterile test tubes, and left at 4 °C overnight. Measurement of luteinizing hormone was performed using ELISA (CEA441Mu, CloudClone, China). The testosterone concentration was measured by the LC-MS method as described previously (Povaliaeva et al., 2020). 17α-Hydroxyprogesterone-d8 was used as a standard, proteins were precipitated by adding ZnSO4 and MeOH. The measurement was performed using an on-line extraction method with Agilent Bond Elut C18 cartridges as trap column and Waters Aquity UPLC BEH C18 column, Agilent 1290 Infinity II LC, and AB Sciex Triple Quad 5500 mass-spectrometer.
 
-## Generation of antibodies against CDK19
+### Generation of antibodies against CDK19
 
 Coding sequences for aa 377–473 of CDK19 (Q8BWD8) were cloned into pGEX5.1 expression vector. Recombinant GST-tagged CDK19 epitope proteins were purified with Glutathione Sepharose and used for immunization of rabbits to generate target-specific polyclonal antibodies. Animals were immunized every 2 wk with an intradermal injection of a Complete Freund’s Adjuvant (Sigma, F5881) and 500 μg of recombinant CDK19. After 6–8 mo of immunization, blood was collected and antibodies were purified with BrCN-activated Sepharose (Pharmacia).
 
-## Immunoblotting
+### Immunoblotting
 
 Protein lysis and western blotting were performed as described in Ilchuk et al., 2022. Briefly, cells were lysed in RIPA buffer supplemented with protein inhibitor cocktail (Sigma-Aldrich, St. Louis, MO). Total protein concentration was quantified by the Bradford method. Absorbance at 560 nm was measured with a CLARIOstar Plate Reader (BMG Labtech, Germany). Proteins were separated by SDS-PAGE and transferred onto 0.2 μm nitrocellulose membrane (Bio-Rad, Hercules, CA). After blocking with 5% skimmed milk, membranes were treated with primary antibodies (Supplementary file 5) and incubated at 4°C overnight. Membranes were washed with Tris-borate saline with Tween 20 (TBS-T) and incubated for 1 hr at room temperature with secondary antibodies (Supplementary file 5). Membranes were visualized with the Clarity Western ECL Substrate (Bio-Rad) using iBright FL1500 Imaging System (Invitrogen, Waltham, MA).
 
-## Leydig cell culture
+### Leydig cell culture
 
 Seminiferous tubules were isolated as described above for flow cytometry but after collagenase IV (1 µg/mL) digestion, the supernatant was passed through 70 μm nylon mesh cell strainers and centrifuged at 1000 rpm. The cells were resuspended in the medium for Leydig cells (low glucose DMEM (PanEco) with 10% fetal bovine serum (FBS, HyClone, GE Healthcare Life Sciences, Chicago, IL), 1% penicillin/streptomycin (PanEco), 0.3 mg/ml L-glutamine (PanEco)) and seeded on Costar 6-well plates (Corning, New York, NY) pre-coated by 0.01% poly-L-lysyne (Sigma-Aldrich, P0899), incubated at 37 oC in 5% CO2 for 1 hr and carefully washed with the medium. After 24 hr cells were treated with 0.56% potassium chloride hypotonic solution for 5 min to remove unattached cells. On the seventh day, 1 µM Senexin B (SenB, Senex Biotechnology, Columbia, SC) or 1 µM 4-hydroxytamoxifen (4-OHT, Sigma-Aldrich) was added to the cells. After 7 d of incubation, the cells were lysed with ExtractRNA (Evrogen, Russia).
 
-## qRT PCR
+### qRT PCR
 
 Total RNA from cell suspension was extracted with ExtractRNA (Evrogen) and quantified using NanoDrop. Equal amounts of RNA were reverse-transcribed to generate cDNA using Superscript II reverse transcription Supermix for qRT-PCR (Invitrogen). qRT-PCR was then performed with SYBR PCR Mix (Evrogen) using the Thermal Cycler system (Bio-Rad). The data thus obtained were analyzed following the comparative (ΔΔCt) method. Actb was used as a housekeeping gene. Sequences of primers used are listed in Supplementary file 5.
 
-## Statistics
+### Statistics
 
 The normality of data was tested using the Shapiro–Wilk test, all datasets met the condition for normality (p>0.05). Two-way analysis of variance (ANOVA) followed by Holm-Sidak’s post hoc test for multiple comparisons was used (GraphPad Prism 8; GraphPad Software, San Diego, CA). p-value <0.05 was taken as evidence of statistical significance. 114 mice were used for experiments described here: 34 wild-type and ROSA26CreERT2 control mice, 16 CDK8 iKO mice, 15 CDK19 KO mice, and 46 iDKO mice. All experiments had at least two biological replicates.

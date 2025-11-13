@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03x08qn04 School of Life Sciences, State Key Laboratory of Microbial Technology, Shandong University Qingdao China
-2. https://ror.org/026sv7t11 Laboratory for Marine Biology and Biotechnology, Qingdao Marine Science and Technology Center Qingdao China
+1. School of Life Sciences, State Key Laboratory of Microbial Technology, Shandong University Qingdao China ([ROR:03x08qn04](https://ror.org/03x08qn04))
+2. Laboratory for Marine Biology and Biotechnology, Qingdao Marine Science and Technology Center Qingdao China ([ROR:026sv7t11](https://ror.org/026sv7t11))
 
 † Corresponding author
 

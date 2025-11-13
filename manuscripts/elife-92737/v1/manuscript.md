@@ -23,17 +23,17 @@
 
 ### Affiliations
 
-1. https://ror.org/033nbnf69 Shanghai Key Laboratory of Tuberculosis, Shanghai Pulmonary Hospital, Tongji University School of Medicine Shanghai China
-2. https://ror.org/033nbnf69 Clinical and Translational Research Center, Shanghai Pulmonary Hospital, Tongji University School of Medicine Shanghai China
-3. https://ror.org/013q1eq08 Department of Infectious Diseases, National Medical Centre for Infectious Diseases, National Clinical Research Centre for Aging and Medicine, Shanghai Key Laboratory of Infectious Diseases and Biosafety Emergency Response, Huashan Hospital, Fudan University Shanghai China
+1. Shanghai Key Laboratory of Tuberculosis, Shanghai Pulmonary Hospital, Tongji University School of Medicine Shanghai China ([ROR:033nbnf69](https://ror.org/033nbnf69))
+2. Clinical and Translational Research Center, Shanghai Pulmonary Hospital, Tongji University School of Medicine Shanghai China ([ROR:033nbnf69](https://ror.org/033nbnf69))
+3. Department of Infectious Diseases, National Medical Centre for Infectious Diseases, National Clinical Research Centre for Aging and Medicine, Shanghai Key Laboratory of Infectious Diseases and Biosafety Emergency Response, Huashan Hospital, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))
 4. Abmart Inc Shanghai China
-5. https://ror.org/0046gcs23 Max Planck Institute for Infection Biology Berlin Germany
-6. https://ror.org/03av75f26 Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
-7. https://ror.org/01f5ytq51 Hagler Institute for Advanced Study, Texas A&M University College Station United States
+5. Max Planck Institute for Infection Biology Berlin Germany ([ROR:0046gcs23](https://ror.org/0046gcs23))
+6. Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))
+7. Hagler Institute for Advanced Study, Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
 8. Multitude Therapeutics Shanghai China
-9. https://ror.org/013q1eq08 School of Life Science, Fudan University Shanghai China
-10. https://ror.org/033nbnf69 Department of Tuberculosis, Shanghai Pulmonary Hospital, Tongji University School of Medicine Shanghai China
-11. https://ror.org/033nbnf69 Central Laboratory, Shanghai Pulmonary Hospital, Tongji University School of Medicine Shanghai China
+9. School of Life Science, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))
+10. Department of Tuberculosis, Shanghai Pulmonary Hospital, Tongji University School of Medicine Shanghai China ([ROR:033nbnf69](https://ror.org/033nbnf69))
+11. Central Laboratory, Shanghai Pulmonary Hospital, Tongji University School of Medicine Shanghai China ([ROR:033nbnf69](https://ror.org/033nbnf69))
 
 † Corresponding author
 
@@ -55,7 +55,7 @@ Recently, we identified AG as a virulence factor of Mtb that is recognized by ga
 
 ## Results
 
-## Galectin-9 inhibits mycobacterial growth
+### Galectin-9 inhibits mycobacterial growth
 
 Our previous work demonstrated that galectin-9 directly interacts with AG and AG-containing bacteria (Wu et al., 2021). Given the capacity of galectin-4 and galectin-8 to kill E. coli (Stowell et al., 2010), we interrogated whether galectin-9 directly interferes with mycobacterial replication. Real-time monitoring of in vitro cultures revealed that recombinant galectin-9 protein inhibits the growth of Mtb at a concentration as low as 10 ng/mL (Figure 1A). Native structural conformation of galectin-9 was required for its bacteriostatic effect since heat inactivation at 95℃ for 5 min abrogated this activity (Figure 1B). CFU assays further validated that galectin-9 inhibited Mtb growth (Figure 1C). Galectin-9 also impaired the replication of the fast-growing Mycobacterium smegmatis in a dose-dependent manner (Figure 1D). Consistently, ELISA revealed a profoundly higher abundance of galectin-9 in serum from TB patients than that from heathy donors, implying that galectin-9 contributes to resistance against Mtb infection (Figure 1E). Of note, the average concentration of galectin-9 in the sera of healthy donors was 3.602 ng/mL (Figure 1E). We speculate that this high abundance of galectin-9 contributes to the maintenance of latent TB infection by restricting Mtb spreading from granuloma, where the pathogen is contained. In sum, we conclude that galectin-9 directly inhibits mycobacterial growth.
 
@@ -65,15 +65,15 @@ Our previous work demonstrated that galectin-9 directly interacts with AG and AG
 
 Macrophages are part of the first line of defense against invading mycobacteria. When human monocytic THP-1 cells were infected with Mycobacterium bovis BCG fused with DsRed, immunofluorescence assays revealed recruitment of galectin-9 to mycobacteria in a time-dependent manner (Figure 1F and G). In line with this observation, a robust accumulation of galectin-9 around invading Mtb H37Rv-GFP was also observed in THP-1 cells post infection (Figure 1H and I). Though galectin-9 has been reported to be critical for initiation of mTOR signaling and induction of autophagy (Jia et al., 2018; Jia et al., 2020; Bell et al., 2021), our work revealed a novel cell-autonomous mechanism whereby galectin-9 recruitment restricts mycobacterial growth in an autophagy-independent manner.
 
-## Carbohydrate recognition is essential for galectin-9-mediated inhibition of mycobacterial growth
+### Carbohydrate recognition is essential for galectin-9-mediated inhibition of mycobacterial growth
 
 Given that galectin-9 binds to β-galactoside, we interrogated whether carbohydrate recognition by galectin-9 is essential for inhibition of mycobacterial growth. Addition of lactose rich in β-galactoside (generally used for neutralization of carbohydrate-binding of galectin-9) completely reversed mycobacterial growth inhibition by galectin-9 in vitro (Figure 2A). In contrast, the addition of glucose had no such effect (Figure 2B). These results indicate that the β-galactose binding property of galectin-9 is involved in mycobacterial activity. Moreover, the addition of AG reversed growth inhibition by galectin-9 (Figure 2C), indicating that the AG-binding property of galectin-9 is involved in an anti-mycobacterial activity. Our previous work had demonstrated that CRD2, but not CRD1, of galectin-9, mediated its interaction with AG (Wu et al., 2021). As expected, the addition of purified CRD2, but not of CRD1, to some extent hindered Mtb growth, emphasizing that AG binding to galectin-9 was sufficient for anti-mycobacterial effects (Figure 2D). Taken together, carbohydrate recognition is essential for galectin-9-mediated inhibition of mycobacterial growth.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92737/elife-92737-fig2-v1.jpg)
 
-**Figure 2.:** Mycobacterium tuberculosis (Mtb) growth.(A) Growth profile of Mtb H37Rv (Rv) in Middlebrook 7H9 liquid medium with or without galectin-9 (Gal9, 10 μg/mL) and lactose (1 μg/mL). (B) Growth profile of Mtb H37Rv (Rv) in Middlebrook 7H9 liquid medium with or without galectin-9 (Gal9, 10 μg/mL) and D-glucose (10 μg/mL). (C) Growth profile of Mtb H37Rv (Rv) in Middlebrook 7H9 liquid medium with or without galectin-9 (Gal9, 10 μg/mL) and AG (1 μg/mL). (D) Growth profile of Mtb H37Rv (Rv) in Middlebrook 7H9 liquid medium with 1 μg/mL CRD1 or CRD2 of galectin-9. Data are shown as mean ± SD, n=3 biologically independent experiments performed in triplicate (A–D). Two-tailed unpaired Student’s t test (A–D). p<0.05 was considered statistically significant.
+**Figure 2.:** (A) Growth profile of Mtb H37Rv (Rv) in Middlebrook 7H9 liquid medium with or without galectin-9 (Gal9, 10 μg/mL) and lactose (1 μg/mL). (B) Growth profile of Mtb H37Rv (Rv) in Middlebrook 7H9 liquid medium with or without galectin-9 (Gal9, 10 μg/mL) and D-glucose (10 μg/mL). (C) Growth profile of Mtb H37Rv (Rv) in Middlebrook 7H9 liquid medium with or without galectin-9 (Gal9, 10 μg/mL) and AG (1 μg/mL). (D) Growth profile of Mtb H37Rv (Rv) in Middlebrook 7H9 liquid medium with 1 μg/mL CRD1 or CRD2 of galectin-9. Data are shown as mean ± SD, n=3 biologically independent experiments performed in triplicate (A–D). Two-tailed unpaired Student’s t test (A–D). p<0.05 was considered statistically significant.
 
-## Identification of anti-AG antibodies from TB patients
+### Identification of anti-AG antibodies from TB patients
 
 Given the higher abundance of galectin-9 in serum from active TB patients, we next interrogated whether anti-AG antibodies are present in the serum of TB patients. An ELISA assay was developed for the identification of anti-AG antibodies by coating AG on plates (Figure 3A). An adequate window of serum dilutions allowed a linear correlation between OD450 and dilution over an appropriate range (Figure 3B). Subsequently, we determined the relative abundance of anti-AG serum antibodies in 17 healthy donors and 25 active TB patients, all of whom had received BCG vaccination within 24 hr after birth. Our findings revealed a significant increase in the abundance of anti-AG antibodies among TB patients when compared to healthy donors (Figure 3C). We speculate that during Mtb infection, anti-AG IgG antibodies are induced, which potentially contribute to protection against TB by directly inhibiting Mtb replication albeit seemingly in vain. Whether anti-AG antibody levels at the site of Mtb growth in patients are too low or whether growth inhibition is nullified by excessive replication of Mtb remains to be solved in the future.
 
@@ -81,7 +81,7 @@ Given the higher abundance of galectin-9 in serum from active TB patients, we ne
 
 **Figure 3.:** (A) Schematic presentation of ELISA assay for detecting anti-AG IgG antibodies in the serum of TB patients. (B) Linear correlation between OD and serum dilution ratio determined by ELISA assay. (C) Anti-AG IgG antibody levels in TB patients (n=25) and healthy BCG-immunized controls (n=17) were determined via ELISA. Data are representative of three independent experiments with similar results (B). Mann-Whitney U test (C). p<0.05 was considered statistically significant.
 
-## Generation of anti-AG mAb
+### Generation of anti-AG mAb
 
 Based on the finding that AG binding of galectin-9 inhibits mycobacterial growth, we embarked on the development of anti-AG mAbs with blocking acivity. Given the high affinity between galectin-9 and AG, we developed an antibody chip comprising 62,208 mAbs to screen for anti-AG activity (Wu et al., 2021). Briefly, the antibody chip was incubated with AG, and bound AG was subsequently detected using galectin-9 in conjunction with FITC-labeled anti-galectin-9 monoclonal antibody (Figure 4A). We filtered out 12 candidate mAbs exhibiting binding affinity to AG (Figure 4A and B). Subsequently, we validated their AG-binding capacity using ELISA. AG was coated on plates, and mAbs were added in twofold serial dilutions (Figure 4C). The ELISA assay revealed a robust AG-binding curve for CL010746 (referred to as mAb1) and CL046999 (referred to as mAb2) (Figure 4D). Furthermore, both mAbs exhibited specific binding to Mtb H37Rv-GFP as demonstrated by immunofluorescent assay (Figure 4E and F). Therefore, we have successfully developed anti-AG mAbs that bind Mtb directly.
 
@@ -89,7 +89,7 @@ Based on the finding that AG binding of galectin-9 inhibits mycobacterial growth
 
 **Figure 4.:** (A) Schematic presentation of mAb screening for AG specificity. (B) Representative image of chip hybridization for mAb screening. Bright spots in the bottom mark the end line of each array block. Other spots represent AG binding to mAbs. CL010746 (mAb1) and CL046999 (mAb2) were labeled with red arrow and blue arrow, respectively. (C) Schematic presentation of candidate anti-AG mAbs validation by ELISA. (D) Binding curve of mAb1 and mAb2 to AG was determined by ELISA assay. (E) Confocal microscopy of Mycobacterium tuberculosis (Mtb) H37Rv-GFP (Rv-GFP, green) and anti-AG mAbs (red). 100x oil immersion.Scar bar, 10 μm. (F) Quantification of colocalization between anti-AG mAb and Mtb H37Rv-GFP by calculating Mander’s coefficients in (E). tM2, Mander’s coefficient of red above the autothreshold of green. Data are representative of three independent experiments with similar results (D, E). Data are shown as mean ± SD, n=10 (F). Two-tailed unpaired Student’s t-test (F). p<0.05 was considered statistically significant.
 
-## Anti-AG antibody inhibits Mtb growth
+### Anti-AG antibody inhibits Mtb growth
 
 For functional characterization, we monitored the in vitro mycobacterial growth in the presence or absence of anti-AG mAbs. Both mAb1 and mAb2 demonstrated inhibition of Mtb growth (Figure 5A). This finding was further confirmed through CFU determination (Figure 5B). Likewise, both mAbs markedly inhibited the growth of Mycobacterium smegmatis as evidenced by real-time OD monitoring (Figure 5C) and CFU assay (Figure 5D). In conclusion, the newly identified anti-AG mAbs demonstrated direct blockade of mycobacterial growth through binding to AG. Direct inhibitory effects on Mtb growth by anti-AG antibodies emphasize that AG expresses features of protective antigens.
 
@@ -97,15 +97,15 @@ For functional characterization, we monitored the in vitro mycobacterial growth 
 
 **Figure 5.:** (A) Growth profile of Mycobacterium tuberculosis (Mtb) H37Rv (Rv) in Middlebrook 7H9 liquid medium with or without mAb1/mAb2 (1 μg/mL). (B) CFU of Mtb H37Rv (Rv) on Middlebrook 7H10 solid medium with or without mAb1/mAb2 (1 μg/mL). Cultures were grown at 37 °C for 4–8 weeks. (C) Growth profile of Mycobacterium smegmatis (MS) in Middlebrook 7H9 liquid medium with or without mAb1/mAb2 (1 μg/mL). (D) CFU of Mycobacterium smegmatis (MS) on Middlebrook 7H10 solid medium with or without mAb1/mAb2 (1 μg/mL). Cultures were grown at 37 °C for 5–10 days. Data are shown as mean ± SD, n=3 (A, C) and n=3 biologically independent experiments performed in triplicate (B, D). Two-tailed unpaired Student’s t-test (A–D). p<0.05 was considered statistically significant.
 
-## Proteomics profiling of the mycobacterial response to anti-AG mAb
+### Proteomics profiling of the mycobacterial response to anti-AG mAb
 
 To elucidate the molecular mechanisms underlying the inhibition of mycobacterial growth by anti-AG antibodies, we conducted proteomic profiling of Mtb in response to anti-AG mAb1 treatment. Gene ontology (GO) enrichment analysis revealed significant enrichment of numerous cellular and metabolic processes, primarily related to the biosynthesis of the outer membrane, upon treatment with anti-AG mAb1. These processes include cell periphery, external encapsulating structure, organic substance metabolic process, cellular metabolic process, primary metabolic process, nitrogen compound metabolic process, and biosynthetic process (Figure 6A). Moreover, the formamidopyrimidine-DNA glycosylase N-terminal domain was enriched based on the analysis of functional enrichment and protein domain of differentially expressed antigens (Figure 6B and C). Additionally, the KEGG pathway analysis demonstrated a significant enrichment of lipoarabinomannan (LAM) biosynthesis pathways (Figure 6D). Consistently, the upregulated proteins Rv0236.1 and Rv3806c were involved in the biosynthesis of the mycobacterial cell wall arabinan (Figure 6E). In the re-annotated genome sequence of Mtb, Rv0236.1 consists of Rv0236c and Rv0236A. Rv0236c is predicted to be a cognate of the GT-C superfamily of glycosyltransferases and likely acts as arabinofuranosyltransferase involved in AG synthesis (Skovierová et al., 2009). On the other hand, Rv0236A is a small secreted protein involved in cell walls and cell processes (Marmiesse et al., 2004). Additionally, Rv3806c is a decaprenylphosphoryl-5-phosphoribose (DPPR) synthase involved in AG synthesis (He et al., 2015). These data provide compelling evidence to suggest that anti-AG mAbs regulate AG biosynthesis.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/92737/elife-92737-fig6-v1.jpg)
 
-**Figure 6.:** Mycobacterium tuberculosis (Mtb) to anti-arabinogalactan (AG) antibody.(A) Gene ontology (GO) class of differentially expressed proteins in Mtb H37Rv treated with mAb1 (1 μg/mL) for 30 hr followed by proteomics analysis. IgG was set as control. (B) Functional enrichment of differentially expressed proteins in Mtb H37Rv in (A). (C) Protein domain of differentially expressed proteins in Mtb H37Rv in (A). (D) KEGG class of differentially expressed proteins in Mtb H37Rv in (A). (E) Upregulation or downregulation genes in Mtb H37Rv in (A).
+**Figure 6.:** (A) Gene ontology (GO) class of differentially expressed proteins in Mtb H37Rv treated with mAb1 (1 μg/mL) for 30 hr followed by proteomics analysis. IgG was set as control. (B) Functional enrichment of differentially expressed proteins in Mtb H37Rv in (A). (C) Protein domain of differentially expressed proteins in Mtb H37Rv in (A). (D) KEGG class of differentially expressed proteins in Mtb H37Rv in (A). (E) Upregulation or downregulation genes in Mtb H37Rv in (A).
 
-## Targeting AG by mAbs modulates the cell wall of Mtb
+### Targeting AG by mAbs modulates the cell wall of Mtb
 
 To verify the impact of anti-AG mAbs on the biosynthesis of the mycobacterial cell wall, we characterized the morphological changes of Mtb treated with or without mAbs. Intriguingly, mAb1 and mAb2 treatment both led to a dispersed distribution of Mtb in cultures (Figure 7A). Acid-fast staining further revealed the formation of a cord-like structure in Mtb treated with mAb1 or mAb2, which was not observed following ethambutol (EMB) treatment (Figure 7B). Moreover, electron microscopy demonstrated that anti-AG mAbs treatment markedly increased the thickness of the Mtb cell wall (Figure 7C and D). Based on these findings, we conclude that targeting AG by specific antibodies, and likely by galectin-9 as well, impairs the growth of Mtb and other mycobacteria by modulating cell wall structure.
 
@@ -133,35 +133,35 @@ In conclusion, we (i) discovered a novel cell-autonomous mechanism by which gale
 
 ## Materials and methods
 
-## Bacteria
+### Bacteria
 
 Mtb H37Rv, Mycobacterium bovis BCG, and Mycobacterium smegmatis mc2 155, were from Shanghai Key Laboratory of Tuberculosis. H37Rv-GFP, and Mycobacterium bovis BCG-DsRed were generated and provided by Stefan HE Kaufman Lab. They were grown in Middlebrook 7H9 (Becton Dickinson, Cockeysville, MD) liquid medium supplemented with 0.25% glycerol, 10% oleic acid–albumin-dextrose-catalase (OADC) (Becton Dickinson, Sparks, MD) and 0.05% Tween-80.
 
-## Cell lines
+### Cell lines
 
 THP-1 cell line (human, acute monocytic leukemia, TIB-202) were from the American Type Culture Collection (ATCC). The identity of THP-1 has been authenticated with STR profiling by a provider. THP-1 cell line was tested negative for mycoplasma contamination.
 
-## Clinical serum specimens
+### Clinical serum specimens
 
 Clinical serum specimens were collected from Shanghai Pulmonary Hospital (Shanghai, PR China) from individuals who had all received BCG vaccination within 24 hr after birth. The diagnosis of TB was based on sputum culture, the presence of acid-fast bacilli in sputum smear, clinical presentation, and radiological signs. Patients who were culture-positive, sputum smear-positive, and showed signs, symptoms, or abnormal chest X-ray results were considered to have active TB. All TB patients were human immunodeficiency virus (HIV) negative and had not received anti-TB treatment. The controls were recruited from a pool of individuals who participated in a health examination program and had not been tested for antibodies to HIV. To detect the concentrations of galectin-9 in serum, 40 active TB patients and 40 healthy donors were included. For the analysis of anti-AG IgG antibody levels, 25 active TB patients and 17 healthy donors were included. All participants were between the ages of 50 and 65, of Han ethnicity, with an equal representation of males and females.
 
-## Recombinant galectin-9 preparation
+### Recombinant galectin-9 preparation
 
 Recombinant galectin-9 protein was generated and purified as previously described (Wu et al., 2021). In brief, human galectin-9 cDNA was subcloned into a pET28a vector and subsequently transfected into BL21 (DE3) competent E. coli. Bacteria were cultivated in a Luria-Bertani (LB) liquid medium and induced overnight at 16 °C with isopropyl β-D-1-thiogalactopyranoside. Recombinant proteins were then purified from the bacterial lysates using a Ni-chelating Sepharose Fast Flow (SFF) column (GE Healthcare, Little Chalfont, UK). The concentration of galectin-9 protein was determined using a Pierce BCA Protein Assay Kit (Thermo Fisher Scientific, 23227).
 
-## In vitro growth of mycobacteria
+### In vitro growth of mycobacteria
 
 Mycobacteria were harvested at the mid-log phase and diluted to a calculated starting OD600 of 0.25 and added to 96-well culture plates containing Middlebrook 7H9 liquid medium together with antibody or galectin-9. OD600 of each time point of each strain was tested in real time by a Bioscreen C microplate incubator (Labsystems, USA, 23227) at 37℃.
 
-## CFU assay
+### CFU assay
 
 Mycobacteria were harvested at mid-log phase and diluted to a calculated starting OD600 of 0.25 and incubated in Middlebrook 7H9 liquid medium with or without antibody or galectin-9 for 30 hr at 37 ℃. Appropriate dilutions were plated on 7H10 agar plates for enumeration of CFU.
 
-## Quantification of galectin-9 by ELISA
+### Quantification of galectin-9 by ELISA
 
 The concentration of galectin-9 in serum was determined with the Human Galectin-9 ELISA Kit (Abcam, ab213786) according to the manufacturer’s instructions.
 
-## Immunofluorescence assay
+### Immunofluorescence assay
 
 For colocalization of galectin-9 and mycobacteria, immunofluorescence assays were performed as described previously (Liu et al., 2018). Briefly, THP-1 cells (ATCC, TIB-202) were infected with bacteria for 2 hr, fixed with 4% formaldehyde for 30 min at R.T., permeabilized with 0.1% Triton X-100 in PBS for 5 min, and blocked with 5% BSA in PBS for 60 min at R.T. Cells were stained with the anti-galectin-9 antibody (Cell Signaling Technology, Cat#54330, RRID:AB_2799456), antibodies at a dilution of 1:200 in 5% BSA in PBS overnight at 4 °C and then incubated with Alexa Fluor 488 or 555 conjugated secondary antibodies (Thermo Fisher Scientific, Cat# A-11008; RRID: AB_143165; Cat# A32732, RRID:AB_2633281) at a dilution of 1:1000 for 2 hr at R.T. Nuclei were stained with DAPI.
 
@@ -169,40 +169,40 @@ For binding of anti-AG mAb with Mtb, H37Rv-GFP strains were harvested at mid-log
 
 Images were acquired using a Leica TCS SP8 confocal laser microscopy system (Leica Microsystems) at 63x magnification.
 
-## Validation of anti-AG antibodies by ELISA
+### Validation of anti-AG antibodies by ELISA
 
 AG antigen (10 μg in 100 μL 0.1 mol/L NaHCO3 buffer, pH 9.4) was added to wells of microwell plates and incubated overnight at 4 °C. After four rinses with PBST (PBS containing 0.05% Tween 20, pH 7.4), the wells were saturated with a blocking buffer. After four additional PBST rinses, serum or candidate anti-AG mAbs were added to each well and incubated for 1 hr at 37 °C. The wells were rinsed three times with PBS containing 0.05% Tween 20 and horseradish-peroxidase-labeled rabbit anti-human or anti-mouse IgG (100 μL/well; Sigma-Aldrich, Germany) was added to each well and incubated for 1 hr at 37 °C. Finally, the TMB substrate was added and the absorbance was measured with the Thermo Fisher Scientific Multiskan FC microplate photometer. Clinical serum specimens were collected from 17 healthy volunteers and 25 pulmonary TB patients before undergoing treatment at Shanghai Pulmonary Hospital (Shanghai, PR China), all of whom had received BCG vaccination within 24 hr after birth. The donors are between the ages of 50 and 65, ethnic Han, with an equal representation of males and females.
 
-## High throughput screening of anti-AG antibody
+### High throughput screening of anti-AG antibody
 
 Screening of anti-AG antibodies was based on a selection platform for Proteome Epitope Tag Antibody Library (PETAL) to pinpoint antibodies with high specificity for AG (Wang et al., 2020). In Brief, an antibody chip harboring 62208 mAbs was incubated with 10 μg AG in 10 mL incubation buffer (1 x PBS buffer containing 10% BSA) for 1 hr, followed by incubation with 10 μg galectin-9 protein in 10 mL incubation buffer for 1 hr. The chip was incubated with rabbit anti-galetin-9 antibody (1:5000 diluted in 10 mL incubation buffer; ab227046, Abcam, UK) followed by staining with FITC-labelled anti-rabbit IgG (1:5000 diluted in 10 mL incubation buffer; ab6717, Abcam, UK). Then the chip was scanned by GenePix 4200 A Microarray Scanner (Molecular Devices LLC) and analyzed by GenePix Pro 6.0 software.
 
-## Chemical synthesis of AG
+### Chemical synthesis of AG
 
 Mycobacterial AG containing 92 mono-saccharide units was synthesized following the reported procedure Wu et al., 2017 and was used throughout the study.
 
-## Proteomics analysis
+### Proteomics analysis
 
-## LC-MS/MS
+#### LC-MS/MS
 
 Mycobacteria at the mid-log phase were diluted to a calculated starting OD600 of 0.25 and incubated in Middlebrook 7H9 liquid medium with or without mAb1 for 30 hr at 37℃. The bacterial pellets were collected followed by three washes with sterile saline. The bacterial pellets were resuspended in lysis buffer (8 M urea, 1% Protease Inhibitor Cocktail) and inactivated for 10 min at 100℃. The lysate was sonicated three times on ice using a high-intensity ultrasonic processor (Scientz) and centrifuged. The protein concentration of the lysate was determined with a BCA kit according to the manufacturer’s instructions.
 
 After trypsin digestion, peptides were dissolved in 0.1% formic acid and separated with nanoElute UHPLC system (Bruker, Germany) and subjected to Capillary source followed by the timsTOF Pro mass spectrometry. The resulting MS/MS data were processed using the Maxquant search engine (v1.6.6.0). Tandem mass spectra were searched against Mtb strain ATCC 25618 83332 PR 20191210 database (3993 entries) concatenated with reverse decoy database.
 
-## Enrichment of Gene Ontology analysis
+#### Enrichment of Gene Ontology analysis
 
 GO annotations of proteins are divided into three broad categories: Biological Process, Cellular Component, and Molecular Function. For each category, a two-tailed Fisher’s exact test was employed to test the enrichment of the differentially expressed protein against all identified proteins. The GO with a corrected p-value <0.05 was considered significant. Enrichment of pathway analysis The Kyoto Encyclopedia of Genes and Genomes (KEGG) database was used to identify enriched pathways by a two-tailed Fisher’s exact test to test the enrichment of the differentially expressed protein against all identified proteins. The pathway with a corrected p-value <0.05 was considered significant. These pathways were classified into hierarchical categories according to the KEGG website. Enrichment of protein domain analysis For each category of proteins, the InterPro database (a resource that provides functional analysis of protein sequences by classifying them into families and predicting the presence of domains and important sites) was researched and a two-tailed Fisher’s exact test was employed to test the enrichment of the differentially expressed protein against all identified proteins. Protein domains with a corrected p-value <0.05 were considered significant.
 
-## Morphologic characterization of Mtb
+### Morphologic characterization of Mtb
 
 Mtb strains were cultured in 96 U well culture plates containing Middlebrook 7H9 liquid medium with anti-AG antibody or without anti-AG antibody at 37℃, and were grown for 10–14 days until the formation of colonies. Morphologic characterization of tested strains in liquid medium were observed by 2 x magnifier. At the same time, 10 µl of culture were spread onto a glass slide. Smears on glass slides were fixed under ultraviolet light overnight. Glass slides were stained with Ziehl–Neelsen stain using a TB Stain Kit (Baso DIAGNOTICS TAIWAN, Zhuhai, China). Morphological characteristics or cell lengths of tested strains were observed using a Leica DM2500 microscope using the 100x objective.
 
 For ultrastructural characteristics, strains at mid-log phase were collected, and analyzed by Tecnai transmission electron microscopy (TEM) with 160 kV according to the procedures of the manufacturer (GOODBIO, Wuhan, China). A 107–108 bacterial suspension was used for TEM examination.
 
-## Statistical analysis
+### Statistical analysis
 
 The statistical significance of comparisons was analyzed with two-tailed unpaired Student’s t-test or Mann-Whitney U test in GraphPad Prism version 8.0.1. p<0.05 was considered statistically significant. All data are shown as mean ± SD of two or more independent experiments performed in triplicate. Detailed statistical information on each experiment is provided in the respective figure legends.
 
-## Materials availability statement
+### Materials availability statement
 
 Bacterial strains and monoclonal antibodies generated in this study are available from the Lead Contact upon reasonable request.

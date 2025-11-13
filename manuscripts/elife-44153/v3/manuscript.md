@@ -46,17 +46,45 @@ Zebrafish, unlike mammals, exhibit a remarkable capacity to regenerate their hea
 
 ## Results
 
-## Morphological and molecular heterogeneity of zebrafish cardiac lymphatics
+### Morphological and molecular heterogeneity of zebrafish cardiac lymphatics
 
 In contrast to the zebrafish systemic lymphatic vasculature, which develops within the first days of embryonic development (Nicenboim et al., 2015; Yaniv et al., 2006), we find that cardiac lymphatics start reaching the heart only after the larva-to-juvenile transition (Parichy et al., 2009). The first lymphatic vessels, labeled by the TgBAC(prox1a:KalTA4,UAS:uncTagRFP) (hereafter termed ‘prox1a’) and Tg(lyve1b:dsRed2) (hereafter termed ‘lyve1b’) transgenes, are detected in the OFT at ~21–34 days post-fertilization (dpf) (fish size 9–12 mm) (Figure 1a–d). These large collecting lymphatics expand during the following weeks (Figure 1c,d), until they cover the entire OFT by ~8 weeks post-fertilization (wpf) (fish size 14–24 mm) (Figure 1b) and reach their mature form, which remains stable throughout adulthood (Figure 1—figure supplement 1a–d). It is not until ~12–16 wpf (fish size 25–32 mm), however, that blind-ended lymphatics arising at the base of the OFT sprout towards the ventricle, in close proximity to the major coronary vessels (Figure 1e–h, white arrows). At similar stages, we also detected isolated clusters of LECs spread throughout the ventricle, which were not connected to the OFT or ventricular lymphatics (Figure 1e,f,h, blue arrows), as well as a dense lymphatic network associated with the epicardial adipose tissue (Figure 1—figure supplement 2a, yellow arrows). As with other lymphatic vessels in zebrafish (Yaniv et al., 2006; Jung et al., 2017), cardiac lymphatics lack open connections with the blood vasculature as confirmed by intravascular injection of Qdots 705 (Figure 1k, arrows).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig1-v3.jpg)
+
+**Figure 1.:** (a) Diagram of ~7 wpf zebrafish heart depicting the outflow tract (OFT), ventricle (V) and lymphatics (red). (b) At 10 wpf (fish size 16–24 mm) prox1a-labeled collecting lymphatics are clearly detected in the OFT, but absent on the ventricular surface (n = 9). (c,d) Quantification of 21–34 dpf (fish size 7–14 mm) OFT lymphatic development in prox1a (c) (n21dpf=48, n28dpf=38, n34dpf=19) andlyve1b (d) (n21dpf=12, n28dpf=11, n34dpf=13) transgenic zebrafish. (e) Diagram of adult zebrafish heart depicting ventricular lymphatics (white arrows), fat-associated lymphatics (yellow arrows) and isolated lymphatic clusters (blue arrows). OFT and ventricular lymphatics as well as isolated lymphatic clusters in 22–24 wpf (fish size 25–30 mm) are labeled by the flt4 (f), lyve1b (g), prox1a (f,h) and mrc1a (g,h) (nf = 4, ng = 5, nh = 5) transgenic reporters. (i) 1–5 cells at the tip of ventricular lymphatics are labeled primarily by the flt4 transgene (arrows). Nuclei are labeled by DAPI (blue) (48wpf, fish size 25–30 mm, n = 5). (j) Ventricular lymphatics are not labelled by the blood vessel/endocardial- marker Tg(kdrl:nls-mCherry) (23wpf, fish size 25–30 mm, n = 5). (k) Angiogram of 28 wpf (fish size 28 mm) Tg(flt1_9a_cFos:GFP);Tg(lyve1b:dsRed2) heart. Cardiac lymphatics (arrows) are not labeled following intravascular injection of Qdot705 (blue) (n = 6). Scale bars are 200 µm in b, f-h, j, k; 50 µm in i. Posterior view in b, anterior view in f-k.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** OFT of 8 wpf (fish size 14–24 mm) (a,c,e) and 96 wpf (fish size 25–32 mm) (b,d,f) Tg(fli1:EGFP);Tg(prox1a:KalTA4-UAS:uncTagRFP) (a,b), Tg(flt1_9a_cFos:GFP);Tg(lyve1b:dsRed2) (c,d) and Tg(kdrl:nls-mCherry);Tg(flt4BAC:mCitrine) (e,f) showing well-established lymphatic vessels, which remain stable through adulthood. Scale bars are 100 µm. Posterior view.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Lymphatics associated with cardiac fat tissue (yellow arrow), in 24 wpf (fish size 29 mm) Tg(mrc1a:EGFP);Tg(lyve1b:dsRed2) animals presented in Figure 1g. Light sheet image super imposed on a bright-field image (n = 3). (b) prox1a transgene is detected in blood vessels labeled by the flt1_9a arterial marker and highlighted following intravascular injection of Qdot705 (blue) (n = 4) (insets). (c) intravascularly injected Qdot705 is detected in blood capillaries labeled by prox1a only (yellow arrows), but not in double-positive flt4;prox1a lymphatic vessels (white arrows). (d,e) Prox1 immunostaining (green) confirms Prox1 expression in OFT lymphatics (d, inset, arrows) but not in prox1a transgene labeled (red) blood vessels (e, inset, yellow arrows). Erythrocyte nuclei inside prox1a-positive blood vessels are labeled by DAPI (blue). Prox1 also labels cardiomyocytes (n = 3). Scale bars are 200 µm. Anterior view in a,b,c,e, lateral view in d.
 
 Examination of transgenic zebrafish with labeled LECs, revealed clear expression of lyve1b (Okuda et al., 2012), prox1a (van Impel et al., 2014), Tg(flt4BAC:mCitrine) (hereafter termed ‘flt4’) (van Impel et al., 2014), and Tg(mrc1a:EGFP) (hereafter termed ‘mrc1a’) (Jung et al., 2017), in all cardiac lymphatic subsets (Figure 1f–h, Figure 1—videos 1 and 2). Since these markers are absent from the blood vascularized ventricles prior to the appearance of lymphatic vessels (Harrison et al., 2015), we concluded that they specifically highlight LECs in the adult heart. Interestingly, we noticed that 1–5 cells at the tip of ventricular lymphatic vessels were labeled primarily by the flt4 transgene (Figure 1i, arrows). Finally, we could verify that the main cardiac lymphatics were not labeled by the blood vessel marker Tg(kdrl:nls-mCherry) (Figure 1j, Figure 1—figure supplement 1e,f) and arterial-specific marker Tg(flt1_9a_cFos:GFP) (Figure 1k), which were clearly detected in coronary arteries and arterial capillaries.
 
 Strikingly, we also detected sporadic expression of the prox1a transgene in few arterioles, that were co-labeled by the arterial enhancer Tg(flt1_9a_cFos:GFP) and highlighted by intravascular injection of Qdot705 (Figure 1—figure supplement 2b, inset). In similar fashion, assessment of hearts extracted from prox1a;flt4 double transgenic zebrafish following Qdot705 angiography revealed two vessel populations labelled by the prox1a transgene– one, where the expression fully overlapped with that of the flt4 reporter and was devoid of Qdot705 labeling (Figure 1—figure supplement 2c, white arrows), and a second one labelled only by prox1a and Qdot705 (Figure 1—figure supplement 2c, yellow arrows). In order to investigate whether both populations indeed express Prox1a, we carried out immunostaining with anti-Prox1 antibody. As seen in Figure 1—figure supplement 2d only prox1a positive LECs, but not prox1a-positive blood ECs were labelled by the Prox1 antibody (Figure 1—figure supplement 2e, insets), suggesting that the expression in blood ECs could be a result of post-transcriptional regulation or may represent an artefact of the transgenic reporter.
 
-## Development of OFT lymphatics
+### Development of OFT lymphatics
 
 Live imaging of the different LEC-transgenic reporters revealed that the first lymphatic sprouts reach the OFT at 21–28 dpf (Figure 2a,b, arrows). At this stage, no Tg(flt1_9a_cFos:GFP) or Tg(fli1:EGFP)-labeled blood vessels are detected in the heart (Figure 2a,b). Surprisingly, we found that these sprouts originated in four facial lyve1b+ vessels that run parallel to the ventral aorta (VA) (Figure 2c,d, yellow arrows) (Isogai et al., 2001) before reaching both sides of the OFT (Figure 2d; white arrows). These vessels, which we named ‘ventral facial lymphatic (VFLs)', are also labeled by the prox1a transgene (Figure 2e, arrow) and connect to the lymphatics of the branchial arches (Figure 2c (LAA); e, inset). The VFLs were devoid of blood flow, as reflected by the absence of Tg(gata1a:dsRed2) labelled erythrocytes (Figure 2f, arrows), which were readily detected in the surrounding aorta and gills.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig2-v3.jpg)
+
+**Figure 2.:** (a–b) Blood vessels are not detected in the OFT (outlined) of 21–28 dpf (fish size 5–7 mm) (a) Tg(flt1_9a_cFos:GFP); Tg(lyve1b:dsRed2) hearts (n = 6) or (b) Tg(fli1:EGFP);Tg(prox1a:KalTA4-UAS:uncTagRFP) (n = 4) fish, prior to OFT lymphatic sprouting (white arrows). (c) Diagram depicting a ventral view of a zebrafish larval head, indicating the approximate region imaged in (d-f). Facial lymphatics are colored in red (adapted from Okuda et al., 2012), yellow arrow points to the VFL. (d) OFT lymphatic sprouts (white arrows) arising from the VFL (outlined, yellow arrow) are detected at 24 dpf (Fish size 5–7 mm) in Tg(kdrl:EGFP);Tg(lyve1b:dsRed2);casper larvae (n = 5). (e) The VFL (arrow) connects to the LAA (inset). (f) No blood flow is detected in the VFL (arrows) of 22 dpf (fish size 5—7 mm) Tg(fli:EGFP);Tg(gata1a:dsRed2) larvae (n = 10). (g) Quantification of OFT lymphatics in 35 dpf (fish size 9–13 mm) prox1a transgenic zebrafish treated with 100 µM Atenolol (ncontrol = 43, nAtenolol = 43, *p<0.001). (h) mRNA levels of vegfc, cxcl12a and cxcl12b (nindependent experiments=5, *p<0.01) in the OFTs of 14–34 dpf larvae. (i–k) OFT of 19 wpf (22–25 mm) wt sibling (i) and flt4-/- (j) in the background of lyve1b demonstrating severe lymphatic defects in flt4 -/- hearts, quantified in (k) (nwt = 4, nflt4 -/-=5, *p<0.001). (l–n) OFT of 15 wpf (20–21 mm) wt sibling (l) and vegfc +/- (m) in the background of lyve1b showing malformed lymphatics in vegfc +/-, quantified in (n) (nwt = 8, nvegfc+/-=6, *p<0.01, **p<0.05). (o–q) OFT of 12 wpf (19–21 mm) age-matched wt control (o) and vegfd -/- (p) in the background of lyve1b showing normal OFT lymphatics in vegfd -/- hearts, quantified in (q) (nwt = 4, nvegfd-/-=5) (r–t) OFT lymphatics of 9.5 wpf (20–23 mm) wt sibling (r) and cxcr4a-/- (s) in the background of lyve1b showing mild defects in cxcr4a-/- OFT lymphatics, quantified in (t) (nwt = 4, ncxcr4a-/-=10, *p<0.01). (u–w) OFT lymphatics of 20 wpf (19–24 mm) wt sibling (u) and cxcl12b-/- (v) in the background of prox1a showing normal OFT lymphatics in cxcl12b-/- hearts, quantified in (w) (nwt = 4, ncxcl12b -/-=8). VFL, ventral facial lymphatics; LFL, lateral facial lymphatic; LAA, lymphatic branchial arches; MFL, medial facial lymphatic. Scale bars are 50 µm in a-f, 200 µm in i-v. Error bars, mean ± S.E.M.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Heart rate peaks at ~21 dpf in zebrafish larvae. (b) Heartbeat of 35 dpf fish is reduced following treatment with 100 µM atenolol. (c,d) OFT lymphatics development is delayed in 35 dpf atenolol (d) treated fish as compared to sibling control (c) (ncontrol = 14, nAtenolol = 15, *p<0.001). Scale bars are 50 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (a–h) ventral view of 22dpf (fish size 5–7 mm) fish. (a,b) while medial facial lymphatics are shorter in Tg(lyve1b:dsRed2);flt4-/- as compared to wt siblings (yellow arrows), VFL forms normally (white arrow). Normal VFL is also detected in vegfc+/- heterozygous (c,d), vegfd-/- (e,f) cxcr4a-/- (g) and cxcl12b-/- mutants (h) as compared to wt siblings or age-matched control. Scale bars are 50 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (a) gRNA was designed to target sequences within exon 2 (E2) of the Vegfd protein. The gRNA target site is highlighted in yellow, and the PAM site in purple. Red letters shown in the vegfd allele indicate the CRISPR-induced fifty-nine nucleotide insertion. (b) Schematic diagram of wt and predicted vegfd protein products composed of 272 amino acids (aa) and 55 aa, respectively. SP: signal peptide, VHD: Vegf homology domain. (c) Sequence alignment of part of vegfd exon two from the vegfd+/+ and vegfd -/- allele shows the CRISPR-induced indels leading to the substitution of TAC (tyrosine residue at position 56) for TGA (stop codon) as indicated by red lines. A fifty-nine nucleotide insertion (GATGTTGACATTGGACATTGGATTTTGGTTGCCATACCTGATAAATAAATCTGATGTTG) in vegfd-/- was confirmed by the sequence chromatograms of the PCR products generated using vegfd+/+ and vegfd -/- adult fish genomic DNA as templates (n = 3 for vegfd+/+, n = 8 for vegfd -/-). (d–g) Confocal images showing the facial region of two independent 154 hpf vegfd+/+ (d,e) and vegfd -/- (f,g) larvae carrying the lyve1b reporter. Arrows in each panel point to the vessel terminals of the lateral facial lymphatics (LFL), medial facial lymphatics (MFL), and otolithic lymphatic vessel (OLV). (h) Quantification of average vessel lengths of LFL, MFL, and OLV of 154 hpf vegfd+/+ (n = 8) and vegfd -/- (n = 12) larvae demonstrate significant reduction in average vessel lengths of LFL and MFL. Scale bars are 100 µm.
 
 In zebrafish, the first facial lymphatic sprouts (FLS) were shown to arise in the common cardinal vein (CCV) and primary head sinus (PHS) (Eng et al., 2019; Okuda et al., 2012). Subsequently, a population of lymphangioblasts of unknown origins joins the sprouts emanating from the FLS to form individual facial lymphatic vessels. These angioblast cells, which form close to the ventral aorta and are initially devoid of both venous and lymphatic markers, contribute not only to facial lymphatics but also to the hypobranchial artery, confirming their multipotent ability (Eng et al., 2019). Thus, facial lymphatics, most probably including the VFLs from which the OFT lymphatics sprout, originate from local sources within the facial domain.
 
@@ -66,19 +94,39 @@ We then investigated the potential role of the Cxcr4/Cxcl12 axis in OFT lymphati
 
 Altogether, our results suggest that changes in heart rate during larva to juvenile transition modulate OFT lymphatic development in a Vegfc/Flt4-dependent manner, whereas Cxcr4a/Cxcl12b involvement is restricted to remodeling of the OFT lymphatic plexus.
 
-## Establishment of ventricular lymphatics
+### Establishment of ventricular lymphatics
 
 Despite the fact that OFT lymphatics are established at 3–4 wpf, it is not until ~2 months later that they begin sprouting toward the ventricle (Figure 1e–h; 3a, inset). Preceding lymphatic sprouting, the zebraﬁsh myocardium undergoes signiﬁcant expansion, which was proposed to trigger the formation of the coronary vasculature (Harrison et al., 2015; Gupta et al., 2013). Interestingly, we found that ventricular lymphatics sprout in close proximity to the major coronary vessels and continue to grow and branch over the following months (Figure 3b). Similar association between developing lymphatics and the blood vasculature has been described in the mouse heart (Klotz et al., 2015). To test whether coronary vessels play an active role in ventricular lymphatic development, we treated juvenile zebrafish with Phenylhydrazine hydrochloride (PHZ), which induces CM hypertrophy and enhanced vascularization (Sun et al., 2009). PHZ treatment starting at ~8 wpf- coinciding with the initial development of the coronary plexus-, resulted in enlarged hearts accompanied by enhanced growth and remodeling of coronary vessels (Figure 3c,d). Interestingly, we also detected significantly longer lymphatic vessels in the ventricles of these animals, which closely followed major coronary vessels (Figure 3c,d), suggesting a possible role for the coronary vasculature in lymphatic vessel growth. To further confirm these results, we induced hypervascularization by conditionally over-expressing Vegfaa in CMs using Tg(cmlc2:CreER);(βactin2:loxP-mTagBFP-STOP-loxP-vegfaa) fish (hereafter termed Vegfaa-OE) (Karra et al., 2018) (Figure 3e–g, insets; Figure 3—figure supplement 1a). Vegfaa-OE was induced at ~7 wpf by administration of 4-hydroxytamoxifen and hearts were analyzed 17 days later. As previously reported (Karra et al., 2018), we detected a significant increase in blood vessel coverage, especially those of small caliber (Figure 3e–g, insets; Figure 3—figure supplement 1b), which was accompanied by a massive expansion of the lymphatic plexus (Figure 3e–g), supporting a tight association between blood and lymphatic vessel growth.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig3-v3.jpg)
+
+**Figure 3.:** Insets are magnifications of dashed boxes. (a) 13 wpf (fish size 17 mm) Tg(fli1:EGFP);Tg(prox1a:KalTA4-UAS:uncTagRFP) hearts showing ventricular lymphatic sprouting at the base of the OFT (inset) (n = 11). (b) Ventricular lymphatics grow in close proximity to coronary arteries (inset) in 116 wpf (fish size 25–32 mm) Tg(flt1_9a_cFos:GFP);Tg(lyve1b:dsRed2) hearts (n = 15). (c) Heart of 11wpf (fish size 16–22 mm) Tg(fli1:EGFP);Tg(prox1a:KalTA4-UAS:uncTagRFP) fish treated with 100 µg/ml Phenylhydrazine hydrochloride (PHZ), showing increased ventricle size and total length of blood and lymphatic vessels following PHZ treatment, quantified in (d) (ncontrol = 21, nPHZ = 15, *p<0.005). (e,f) 12 wpf (fish size 19–22 mm) Tg(βactin2:loxP-mTagBFP-STOP-loxP-vegfaa)pd262; Tg(cmlc2:CreER) fish in the background of Tg(flt1_9a_cFos:GFP);Tg(prox1a:KalTA4-UAS:uncTagRFP). Induction of Vegfaa-OE results in increased blood vessel (insets) and lymphatic vessel coverage, as compared to vehicle (Vegfaa-VEH) treated sibling control, quantified in (g) (nVegfaa-VEH = 9, nVegfaa-OE = 10, *p<0.001). (h–j) Immature coronary plexus, lacking the stereotypical tree-patterning results in nearly absent ventricular lymphatics in cxcr4a-/- hearts of 22 wpf (fish size 25–28 mm) (i), as compared to wt siblings (h), quantified in (j) (nwt = 5, ncxcr4a-/-=6, *p<0.05). (k–m) Ventricular lymphatics are absent in Tg(fli1:EGFP); Tg(lyve1b:dsRed2); flt4-/- hearts (l) at 19–23 wpf (fish size 25–30 mm) as compared to wt siblings (k). (m) Quantification of blood and lymphatic vessel phenotype in flt4 -/- hearts (nwt = 4, nflt4 -/-=5 *p<0.01). (n–p) Tg(fli1:EGFP); Tg(lyve1b:dsRed2); vegfc +/- hearts at 26 wpf (fish size 25–30 mm) display severely defective ventricular lymphatics. (p) Quantification of blood vessel coverage and lymphatic sprout length and number, in vegfc +/- hearts (nwt = 3, nvegfc+/-=5 *p<0.005). (q–t) 12 wpf (fish size 19–22 mm) Tg(βactin2:loxP-mTagBFP-STOP-loxP-vegfaa)pd262; Tg(cmlc2:CreER) fish in the background of Tg(fli1:EGFP);Tg(lyve1b:dsRed2). The increase in lymphatic, but not blood vessel coverage induced by Vegfaa-OE (r), is reversed in vegfc+/- heterozygous animals (s). (t) Quantification of blood and lymphatic vessel coverage in (q–s) (nVegfaa-VEH = 3, nVegfaa-OE = 3, nVegfaa-VEH-blood vessel coverage=3, nVegfaa-OE-lymphatic vessel coverage=10 nVegfaa-OE;vegfc +/- -lymphatic vessel coverage=4, *p<0.01, relative to vehicle treated sibling control, **p<0.001 relative to Vegfaa-OE). Scale bars are 200 µm. Error bars, mean ± S.E.M. All panels show anterior views.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Ventricular size is increased following induction of Vegfaa-OE (nVegfaa-VEH = 9, nVegfaa-OE = 10, *p<0.01) (a), but remains unchanged in cxcr4a-/- mutants (c) (nwt = 4, ncxcr4a-/-=4). (b) Lymphatic sprouts (red) follow coronary vessels, labeled by intravascular injection of Qdot705 (cyan), in 12 wpf (fish size 19–22 mm) Vegfaa-OE hearts (n = 4) (d, e) Color-coded maps of vessel thickness show mis-patterned coronary arteries and absent major OFT vessels (e, asterisk) in cxcr4a -/-, as compared to wt siblings (d, yellow arrow). (f) cxcr4a -/- hearts display partially perfused blood coronary vessels (yellow arrows) following intravascular injection of Qdots705 at 25wpf (25–30 mm) (n = 4). (g) The number of ventricular lymphatic sprouts is reduced in 22 wpf (fish size 25–28 mm) Tg(flt1_9a_cFos:GFP);Tg(lyve1b:dsRed2) cxcr4a-/- hearts (nwt = 4, ncxcr4a-/-=4, *p<0.01). (h,i) Quantification of the number of major blood vessels in 19–23 wpf (fish size 25–30 mm) wt sibling and flt4 -/- hearts (h) (nwt = 5, nflt4 = 6) or 24 wpf (fish size 25–30 mm) wt sibling and vegfc+/- hearts (i) (nwt = 3, nvegfc +/-=5). (j,k) Quantification of ventricular size in 19–23 wpf (fish size 25–30 mm) wt sibling and flt4 -/- hearts (j) (nwt = 4, nflt4 = 5) and in 24 wpf (fish size 25–30 mm) wt sibling and vegfc +/- animals (k) (nwt = 3, nvegfc+/-=5). (l) 12 wpf (fish size 19–22 mm) Vegfaa-VEH;vegfc+/- fish in the background of Tg(fli1:EGFP);Tg(lyve1b:dsRed2). (m) Increased ventricular size is not reverted in 12 wpf (fish size 19–22 mm) Vegfaa-OE; vegfc+/- animals (nVegfaa-VEH = 5, nVegfaa-VEH;vegfc+/-=5, nVegfAa-OE-lymphatic vessel coverage=10 nVegfaa-OE;vegfc+/-lymphatic vessel coverage = 9, *p<0.01, relative to Vehicle treated sibling control). Error bars are 200 µm, mean ± S.E.M. All panels show anterior views.
+
 In order to understand whether coronary vessels are required for proper ventricular lymphatic sprouting, we first examined hearts of cxcr4a-/- fish, which have previously been reported to fail to develop coronary vasculature (Harrison et al., 2015). Surprisingly, we found that neither blood vessel coverage (Figure 3h–j), nor ventricle size (Figure 3—figure supplement 1c) was affected in cxcr4a-/- hearts. Instead, the coronary plexus appeared immature, lacked its stereotypic hierarchical pattern and the main arteries that run over the OFT and connect to the gills were severely malformed or absent (Figure 3—figure supplement 1d, yellow arrow; e, asterisk). These defects impede the establishment of proper connections with the circulatory network and rendering the cardiac muscle only partially perfused (Figure 3—figure supplement 1f, yellow arrows). Similar phenotypes have been described in Cxcl12 and Cxcr4 mutant mice, where ECs of the peritruncal plexus fail to properly connect to the aortic endothelium, resulting in impaired coronary artery stem formation and establishment of an immature coronary plexus (Ivins et al., 2015). Interestingly, the underdeveloped coronary plexus observed in cxcr4a -/- hearts was associated with severe ventricular lymphatic abnormalities, characterized by markedly shorter and less branched lymphatic sprouts (Figure 3h–j, white arrow, Figure 3—figure supplement 1g), suggesting that the presence of blood ECs per se, is not sufficient to support lymphatic growth, but rather a mature coronary tree is required. To further investigate the nature of the interaction between coronary vessels and ventricular lymphatics, we assessed hearts of flt4 -/- and vegfc+/- animals (Figure 3k–p). In contrast to cxcr4a-/- hearts, we detected no significant differences in blood vessel coverage and patterning (Figure 3k–p, Figure 3—figure supplement 1h,i) as well as in ventricle size (Figure 3—figure supplement 1j,k) in these animals. Yet, ventricular lymphatics were severely affected in vegfc+/- and nearly absent in flt4-/- hearts (Figure 3k–p), indicating that Vegfc/Flt4 signaling is absolutely required for ventricular lymphatic formation. Taken together, the mutant analyses support the idea that a mature coronary plexus could serve as a source of Vegfc, a hypothesis substantiated also by the observation that mouse coronary ECs begin expressing Vegfc as they differentiate into arteries (Su et al., 2018). In order to test this hypothesis, we over expressed Vegfaa in vegfc+/ - fish. While the reduced levels of Vegfc did not impede Vegfaa-OE induced cardiomegaly and hypervascularization (Figure 3q–t Figure 3—figure supplement 1l,m), the increase of lymphatic coverage (Figure 3e–g) was abrogated in these animals (Figure 3q–t), supporting the idea that a mature coronary plexus serves as a scaffold for ventricular lymphatic development, in a Vegfc-dependent manner. Moreover, these results demonstrate that the increased lymphatic growth observed in Vegfaa-OE hearts results from the expanded blood vasculature and, most probably, from enhanced Vegfc production, and not from a direct effect of Vegfaa on LECs. In the future, it will be interesting to investigate whether the Cxcl12/Cxcr4 signaling pathway somehow regulates Vegfc secretion from the coronary ECs.
 
-## A novel population of isolated LECs is detected in the hearts of zebrafish and mice
+### A novel population of isolated LECs is detected in the hearts of zebrafish and mice
 
 Besides the ‘regular’ lymphatic vessels, the zebrafish ventricle holds an additional population of isolated LECs (Figure 1e,f,h), labeled by the prox1a, lyve1b, mrc1a and flt4 transgenic reporters (Figure 1f,h Figure 4a-d, Figure 4—video 1), and positively stained by Prox1 antibody (Figure 4e, arrows). Light sheet imaging of explanted hearts revealed that these lymphatic structures initially appear as single cells (~12–13 wpf, fish size 20–22 mm), that later on expand to form isolated capillaries (~16 wpf, fish size 23–28 mm) (Figure 4b–d, Figure 4—video 1), through a process that resembles lymph-vasculogenesis (Semo et al., 2016). While we could not determine the exact source of these isolated LECs, we could confirm the lack of connections to ventricular lymphatics (Figure 1f,h; Figure 4c,f) and/or to the arterial network (Figure 4f, inset) suggesting that they may have a separate origin.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig4-v3.jpg)
+
+**Figure 4.:** Insets are magnification of dashed boxes. (a) Tg(fli1:EGFP);Tg(prox1a:KalTA4-UAS:uncTagRFP) 16 wpf (fish size 23–28 mm) heart showing isolated lymphatic clusters (n = 8). (b,c) Double labeled prox1a+;flt4+ isolated LECs are first detected at ~13 wpf (20–22 mm) (b, arrows) and coalesce to generate isolated capillaries by 16wpf (fish size 25–28 mm) (c, arrows). (d) Quantification of double-labeled prox1a+;flt4+ isolated LECs in the ventricles of 14–28 mm fish (n14-19mm=4, n20-22mm=5, n23-28mm=5). (e) prox1a+ isolated LECs are also labeled by Prox1 antibody (inset, arrow). (f) 20 wpf (fish size 28 mm) double-transgenic prox1a;flt4 hearts demonstrate that isolated LECs are not labeled following intravascular injection of Qdot705 (inset, arrow) (image in f) is an additional view of Figure 2—figure supplement 1c). (g) Isolated LEC clusters develop normally in 22 wpf (fish size 25–30 mm) Tg(flt1_9a_cFos:GFP);Tg(lyve1b:dsRed2); cxcr4a-/- hearts, quantified in (h) (nwt20-22mm=8, ncxcr4a-/- 20-22mm = 6, nwt23-28mm=7, ncxcr4a-/-23-28mm = 8). (i,j) lyve1b+ isolated LEC clusters are not precociously detected in Vegfaa-OE hearts (12.5 wpf, fish size 19–22 mm), in (i) (nveh = 7, nTam = 8) or PHZ treatment (j) (ncontrol = 9, nPHZ = 9) (k). No isolated LECs are detected in 19-23wpf (fish size 23–28 mm) Tg(fli1:EGFP);Tg(lyve1b:dsRed2);flt4 -/- hearts, quantified in (l) (nwt = 5, nflt4-/-=6). (m) Significantly reduced numbers of isolated LECs are detected in Tg(fli1:EGFP);Tg(lyve1b:dsRed2);vegfc+/- animals at 26 wpf (fish size 25–28 mm), quantified in (n) (nwt = 3, nvegfc+/-=5). Scale bars are 200 µm. Error bars, mean ± s.e.m. Anterior view in a-c, e,f,k,m. Posterior view in g.
 
 Unlike ventricular lymphatics, the isolated LEC clusters appeared normal in cxcr4a-/- hearts (Figure 4g,h, Figure 3—figure supplement 1e, blue arrows, Figure 4—videos 2 and 3). Moreover, while Vegfaa-OE induced precocious sprouting of ventricular lymphatics (Figure 3q,r,t) at ~12.5, when they were still absent from control hearts (Figure 3q,t), no effects were detected in the numbers and/or distribution of the isolated LEC following Vegfaa-OE (Figure 4i) or PHZ treatment (Figure 4j). Thus, coronaries appear to be dispensable for the formation of this lymphatic subpopulation. On the other hand, isolated LECs were completely absent from flt4-/- hearts (Figure 4k,l) and markedly reduced in vegfc+/ - hearts (Figure 4m,n). Taken together, these results suggest that distinct lymphatic populations respond differently to the same molecular cues, as is the case of Cxcl12/Cxcr4 signaling which prevented ventricular lymphatic growth but did not impair the appearance of the isolated LEC clusters. In contrast, Vegfc/Flt4 signaling was absolutely required for formation of both populations, indicating its crucial role as key regulator of lymphatic development.
 
 In order to investigate whether similar isolated LECs are also present in mammals, we examined mouse hearts stained with PROX1 and VE-Cadherin antibodies at different embryonic stages (Figure 5a–f). At embryonic day E13.5, coronary vessels were already present in the dorsal side of the heart (Figure 5a, red), but no PROX1+ LECs were detected. CMs were the only PROX1+ cells detected over the ventricle at this stage (Figure 5a, green). One day later at E14.5, lymphatic sprouts emanating from the sinus venosus region were clearly visualized on the dorsal aspect of the heart, consistent with previous reports (Klotz et al., 2015) (Figure 5b, white arrows). In addition to these lymphatics with clear vessel morphology, we also detected isolated PROX1+ LECs throughout the surface of the ventricle (Figure 5b, inset, blue arrows), similar to the isolated LECs found in the zebrafish heart (Figure 4d). Both the main lymphatic vessels and the isolated LECs also expressed VE-Cadherin. Staining with the lymphatic membrane resident receptor LYVE1 at E15.5, confirmed that these LECs clusters, positive for both PROX1 and LYVE1, were not connected to the main lymphatic vessels (Figure 5c, inset, arrows, Figure 5—figure supplement 1a). Clusters could still be found at E17.5 (Figure 5e, inset, arrows, Figure 5—figure supplement 1b–c, Figure 5—video 1), but were no longer detected at day P23 (Figure 5f). Interestingly, similar to flt4 mutant fish, Ccbe1 mutant mice lacked both ventricular sprouts and isolated LECs (Figure 5g,h). Ccbe1 is required for lymphangiogenesis in mice (Bos et al., 2011) and fish (Hogan et al., 2009), acting as a regulator of VEGF-C processing (Jha et al., 2017). Thus, the requirement for VEGF-C/Vegfr3 signaling in both cardiac lymphatic populations is evolutionarily conserved.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig5-v3.jpg)
+
+**Figure 5.:** (a,b) Whole mount confocal images of mouse hearts immunonstained for VE-Cadherin and PROX1. (a) At E13.5 coronary (red) but not lymphatic vessels (green) are present on the ventricle surface (n = 6) (Low levels of PROX1 are detected in cardiomyocytes). (b) In addition to regular lymphatic vessels (white arrows), isolated PROX1+ LECs are observed in close proximity to the coronaries at E14.5 (inset, blue arrows) (n = 6). (c) Whole mount confocal images of E15.5 mouse hearts immunonstained for LYVE1 and PROX1. Isolated PROX1+/LYVE1+ LECs (blue arrows) are not connected to the main lymphatic sprouts (white arrow). (d,e) Whole mount confocal images of mouse hearts immunonstained for VE-Cadherin and PROX1. Isolated LECs gradually expand to form multicellular lumenized structures (inset, arrows) (n = 4). (f) PROX1+ isolated LECs are no longer detected at P23 (n = 4). (g,h) Whole mount confocal images of E15.5 mouse hearts immunonstained for LYVE1 and PROX1. PROX1+ LECs are absent from Ccbe1 mutant hearts (h) (nwt = 3, nCcbe1 = 3). (i) Lineage-tracing strategies for identification of cardiac LEC origins. (j) Dorsal view of AplnCreERT2,RosamTmG heart from embryo dosed with tamoxifen at E12.5 and analyzed at E14.5, showing no AplnCreERT2;PROX1+ LECs. Cre recombination is labeled in red, ECs in blue (Erg) and lymphatics in green (PROX1). Insets are magnification of dashed boxes. (n = 7). (k) Dorsal view of ApjCreERT2,RosamTmG heart, showing that PROX1+ LECs are not labeled by ApjCreERT2 in embryos dosed with tamoxifen at E12.5 and analyzed at E14.5. Cre recombination is marked in blue, ECs in red (ERG) and lymphatics in green (PROX1). Insets are magnification of dashed boxes (n = 4). (l) Ventral view of heart from BmxCreERT2, RosaTdTom embryos dosed with tamoxifen at E8.5 and analyzed at E15.5, showing that PROX1+ LECs are not labeled by BmxCreER. Cre recombination is marked in green, ECs in red (ERG) and lymphatics in blue (PROX1). Inset is magnification of dashed boxes. (n = 5). Dorsal (m) and ventral (n) views of ApjCreERT2,RosamTmG embryos dosed with tamoxifen at E9.5 and 10.5 and analyzed at E15.5, showing PROX1+ isolated LECs and lymphatic vessels, labeled by ApjCreERT2. Cre recombination is marked in blue, ECs in red (ERG) and lymphatics in green (PROX1). (o) Quantification of mTmG labeling shows reduced ApjCreERT2 lineage traced PROX1+ cells as compared to ERG ECs (recombination efficiency). D;Dorsal, V;Ventral (nD = 5, nV = 6) Insets are magnification of dashed boxes. (nDorsal = 6, nVentral = 5). Scale bars are 200 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (a,b) Whole mount images of embryonic hearts with isolated LEC clusters. (a) Co-staining with the nuclear lymphatic marker PROX1, and the membrane lymphatic marker, LYVE1, revealed that isolated LECs (blue arrow) do not connect to the main lymphatic vessel (white arrow, outline). (b) Isolated LEC clusters (blue arrows) were found as late at E17.5. Insets show increasing magnifications of a cluster that did not contact either VE-Cadherin+ blood ECs or developing lymphatic sprouts (white arrow). (c) An orthogonal view of the cluster highlighted in b) shows that blood vessels from deeper in the tissue do not connect. Scale bars are 200 µm. (d,e) Tissue sections through E11.5 ApjCreERT2,RosamTmG embryos dosed with tamoxifen at E9.5 and 10.5 showing labeling in the jugular lymph sacs (JLS) (green) (d), co-localized with PROX1 (red) and LYVE1 (blue) (inset, arrows). The cardinal vein (CV) is also labeled by mTmG (e) as well as a cluster of PROX1 labeled cell cluster budding from the CV (inset, arrows) (f) Inset is magnification of dashed box. Base of the aorta view of ApjCreER, RosamTmG embryos dosed with tamoxifen at E9.5 and 10.5 and analyzed at E15.5. Cre recombination is marked with GFP (blue), endothelial cells with VE-Cadherin (red) and lymphatics with PROX1 (green). Scale bars are 200 µm.
 
 We then asked what is the origin of these isolated LECs. The majority of mouse cardiac lymphatics (78%) has been shown to originate from TIE2+ ECs, which emerge from the common cardinal vein (CCV) and migrate toward the heart (Klotz et al., 2015). Additionally, a contribution from the hemogenic endothelium has also been proposed, albeit the exact identity of these cells has remained controversial (Klotz et al., 2015; Ulvmar and Mäkinen, 2016). Individual vessels contained cells from both origins, making cardiac lymphatics a mosaic of different sources. In order to identify the cellular origins of the new population of isolated LECs, we used different lineage-tracing strategies (Figure 5i). Since these LEC clusters are often found in close proximity to the developing coronary vessels (Figure 5b,d), a feature that was also evident in the zebrafish heart (Figure 4g), we decided to investigate whether they originate from the local vasculature (i.e. coronary vessels). To this end, we used AplnCreERT2 mice, which speciﬁcally labels sprouting ECs, but not endocardial or lymphatic cells (Liu et al., 2015). AplnCreERT2 mice were crossed to the Cre-dependent ﬂuorescent reporter ROSA26mTmG/+ (Muzumdar et al., 2007) and Cre-mediated recombination was induced by Tamoxifen administration at day E12.5, after the coronary vasculature has formed, but prior to the appearance of lymphatics over the ventricle. Staining with PROX1 and the EC-specific ERG antibodies at E14.5 rendered no PROX1+ cells that were labeled also by the mTmG reporter (Figure 5j). This result was also obtained with another Cre that labeled coronary vessels when induced at later stages, ApjCreERT2 dosed at E12.5 (Figure 5k, inset), further confirming that LECs do not originate from the local coronary vasculature, as previously reported (Angeli and Harvey, 2015). Yet, we cannot exclude the possibility that ECs acquire a lymphatic fate before exiting the blood vasculature, and as a consequence, were not labeled by AplnCreERT2 or ApjCreERT2.
 
@@ -88,13 +136,25 @@ Strikingly, we noted that lineage labeling was lower than expected in APJCreERT2
 
 Taken together, our results show that mammalian cardiac lymphatics form by both sprouting lymphangiogenesis and coalescence of isolated LECs (lymph-vasculogenesis). Using multiple lineage-tracing strategies, we show that neither the local coronary vasculature nor the endocardium, contribute to the different cardiac lymphatic subsets. Yet, it is important to keep in mind that despite the high recombination efficiency of the BmxCreERT2, we cannot rule out the existence of additional progenitor populations nested within the endocardium that are not labeled by this tracer.
 
-## Differential response of cardiac lymphatics to injury
+### Differential response of cardiac lymphatics to injury
 
 Given the importance of lymphatic vessels for immune surveillance and fluid homeostasis, it seems reasonable to hypothesize that they play similar roles during organ regeneration. Previous studies have highlighted a clear association between increased lymphatic vessel density following MI and improved cardiac function (Klotz et al., 2015; Henri et al., 2016; Ishikawa et al., 2007). In addition, enhancing the lymphangiogenic response after MI has been shown to augment immune cell trafficking (Vieira et al., 2018). Nevertheless, the cellular origins and mechanisms of response of different lymphatic subtypes to cardiac injury have not been addressed. Unlike mammals, zebrafish have a remarkable ability to regenerate their heart, making it an ideal model to study the origins and functions of the lymphatic system during organ regeneration. We employed the well-established model of cardiac cryoinjury, which closely models MI and allows visualization of the vascularization process (González-Rosa et al., 2011; Marín-Juez et al., 2016) (Figure 6a), to investigate the response of different cardiac lymphatic subsets to injury. Injuries were performed on 6–18 mpf (fish size 25–32 mm) transgenic zebrafish, hearts were harvested at 40 hr post cryoinjury (hpci) or at 7, 14, 21, and 73 days post cryoinjury (dpci). Notably, we found that prox1a+ sprouts (Figure 6b,c, white arrows), as well as new prox1a+ isolated LECs (Figure 6b,c, yellow arrows) were the first to be detected in the injured area, as early as at ~40 hpci. While part of these sprouts were also labeled by the blood EC marker flt1_9a (Figure 6c insets, white arrows) and may represent blood arterioles (Marín-Juez et al., 2016), the isolated LECs in the injured area were not marked by the arterial-specific transgene (Figure 6c, insets, yellow arrows), supporting their lymphatic identity. As a whole, the large majority of lymphatics in the injured area between 40 hpci-14 dpci, were not connected to large collecting lymphatics of the OFT, or to ventricular lymphatics (Figure 6d–i, Figure 6—figure supplement 1a,b,d,f). While we could not determine the origins of the injury-specific LEC clusters, which did not appear in sham operated hearts (Figure 6—figure supplement 1c,e,g), they were highly heterogeneous both in morphology and gene expression. We could detect cells expressing combinations of LEC markers, such as prox1a and flt4 (Figure 6f, inset, white arrow, Figure 6—video 1), as well as cells expressing prox1a (Figure 6f) or flt4 only (Figure 6f, inset, blue arrow). Interestingly, isolated LECs in the injured area developed into long sprouts (Figure 6h–j, inset, Figure 6—video 3), which continued growing throughout the regenerative phase and could be detected even after 2 months pci (Figure 6l,m, Figure 6—figure supplement 1g,h, Figure 6—video 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig6-v3.jpg)
+
+**Figure 6.:** (a) Diagram depicting the cryoinjury procedure. Injured area is outlined in all images, insets show high-magnification of dashed boxes. (b) flt4;prox1a transgenic hearts at 40 hpci showing prox1a+ sprouts (yellow arrow) and isolated LECs (blue arrow) in the injured area (n = 5). (c) Tg(flt1_9a_cFos:GFP);Tg(prox1a:KalTA4-UAS:uncTagRFP) double labeled coronary sprouts (inset, yellow arrow), as well as prox1a+ isolated LECs (inset, blue arrow) are detected in the injured area at 40 hpci. (d–f) seven dpci injured hearts of (d) Tg(kdrl:nls-mCherry);Tg(flt4BAC:mCitrine) (n = 5), (e) Tg(kdrl:nls-mCherry);Tg(mrc1a:EGFP) (n = 5), and (f) Tg(prox1a:KalTA4-UAS:uncTagRFP);Tg(flt4BAC:mCitrine) (n = 5) fish, with white arrows pointing to OFT-connected ventricular lymphatics, and blue arrows pointing to isolated LECs in the injured area. (g–i) 14 dpci ventricles of (g) Tg(flt1_9a_cFos:GFP;Tg(lyve1b:dsRed2) (n = 8), (h) Tg(prox1a:KalTA4-UAS:uncTagRFP) (n = 5) and (i) Tg(prox1a:KalTA4-UAS:uncTagRFP);Tg(flt4BAC:mCitrine) (n = 5) showing isolated lymphatic sprouts in the injured area (blue arrows), which are not connected to ventricular lymphatics (white arrow) (j) Double labeled prox1a;flt4 ventricular lymphatic sprouts invade the injured area at 14 dpci (inset, white arrows) (n = 3). (k) 73 dpci Tg(kdrl:nls-mCherry);Tg(flt4BAC:mCitrine) heart showing increased lymphatic coverage in the injured vs. uninjured areas of the ventricle, quantified in (l). Error bars, mean ± s.e.m. *p<0.001. Scale bars are 200 µm. Fish size 25–30 mm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Injured area is outlined in all images. (a,b) seven dpci ventricles of Tg(kdrl:nls-mCherry);Tg(flt4BAC:mCitrine) (a) and Tg(prox1a:KalTA4-UAS:uncTagRFP); Tg(flt4BAC:mCitrine) (b) showing the opposite side of the hearts presented in Figure 6d,f, confirming the lack of connections between isolated LECs (blue arrows) and OFT originating ventricular lymphatics (white arrows). (c,e) Sham operated Tg(mrc1:EGFP);Tg(prox1a:KalTA4-UAS:uncTagRFP) hearts at seven dpci (c) (n = 3), and 65 dpci (g) (n = 2) and Tg(prox1a:KalTA4-UAS:uncTagRFP); Tg(flt4BAC:mCitrine) hearts at 14 dpci (e) (n = 3), showing no changes in lymphatic vasculature. (d,f) Opposite side of the hearts presented in Figure 6h,i, confirming the lack of connections between isolated LECs (blue arrows) and OFT originating ventricular lymphatics (white arrows). (h) Tg(mrc1:EGFP);Tg(prox1a:KalTA4-UAS:uncTagRFP) heart at 65 dpci showing increased lymphatic coverage in the injured vs. the uninjured areas of the ventricle (n = 4). Scale bars are 200 µm. All fish are 25–30 mm.
 
 Contrary to the rapid lymph-vasculogenic response, OFT-derived ventricular lymphatics reached the regenerating area only at ~1–3 weeks pci (Figure 6j, arrows), mostly following their own-damage, as lymphatic vessels that were remote from the injury site, did not respond at all (data not shown).
 
 We then asked whether the same cues controlling the development of cardiac lymphatics are reactivated during injury. In line with the reduction in ventricular lymphatics (Figure 3m–p) and isolated lymphatic clusters (Figure 4j–m) observed in flt4 -/- and vegfc+/- hearts, these were nearly absent in the vicinity, as well as within the injured area of ~1 month post-cryoinjury (mpci) mutant hearts (Figure 7a–f, arrows). Even at ~2 mpci, when an extensive lymphatic network covered the injury in wt hearts, vegfc+/- hearts remained largely devoid of lymphatic vessels (Figure 7g–i, arrows). In line with the impaired post-injury neo-lymphangiogenesis (Figure 7a–i), the scar area was increased in injured flt4 -/- and vegfc+/- hearts (Figure 7j–o, arrow). Acid Fuchsin Orange-G (AFOG) staining of heart sections showed that while in control hearts the fibrotic scar was mostly resolved by ~1 mpci and replaced by new muscle tissue, flt4 -/- hearts displayed a prominent scar composed of a collagenous core and a thin layer of fibrin at the border of the wound (Figure 7j–l, arrow). Similarly, the scar was not resolved in vegfc+/- hearts even at ~2 mpci (Figure 7m–o, arrow).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44153/elife-44153-fig7-v3.jpg)
+
+**Figure 7.:** Injured area is outlined in all images (a,b) lyve1b+ lymphatic capillaries (blue arrows) are detected in the injured area of 36 dpci Tg(fli1:EGFP); Tg(lyve1b:dsRed2) wt sibling (a) but not in flt4-/- hearts (b). (c) Quantification of lyve1b+ lymphatic vessel coverage in the injured area of 35–38 dpi flt4-/- hearts (nwt = 3, nflt4-/-=8, *p<0.001). (d–i) lyve1b+ lymphatic capillaries (blue arrows) are detected in the injured area of 28 dpci (d) and 65 dpci (g) Tg(fli1:EGFP); Tg(lyve1b:dsRed2) wt siblings, but not in vegfc+/- heterozygous fish (e,h). (f,i) Quantification of lyve1b+ lymphatic vessel coverage in the injured area of 21–28 dpi vegfc+/- hearts (nwt = 3 hearts, nvegfc +/-=4, *p<0.005) and 65–66 dpi vegfc +/- hearts (nwt = 10 hearts, nvegfc+/-=10, *p<0.005). (j,k) AFOG-stained sections at 36 dpci showing lack of regeneration in flt4 -/- hearts (k) as compared to wt siblings (j). Collagenous scar is stained in blue, fibrin in red, and cardiac muscle in orange. Black arrow points to scar. (l) Increased scar area (calculated as percent of ventricle) in flt4-/- hearts (nwt = 8 hearts, nflt4-/-=11, *p<0.05). (m,n) AFOG-stained sections at 65 dpci showing lack of regeneration in vegfc+/- hearts (n) as compared to wt siblings (m). Black arrow points to scar. (o) Increased scar area (calculated as percent of ventricle) in vegfc+/- hearts (nwt = 6 hearts, nvegfc+/-=3, *p<0.001). (p,q) lyve1b+ isolated LEC clusters (blue arrows) are normally detected in the injured area of 29 dpci Tg(flt1_9a_cFos:GFP);Tg(lyve1b:dsRed);cxcr4a-/- (q) and wt sibling (p) hearts. (r) Quantification of lyve1b+ lymphatic vessel coverage (relative to wt sibling) in 29 dpi cxcr4a -/- hearts (nwt = 4 hearts, ncxcr4a-/-=5). (s,t) AFOG-stained sections at 77 dpci showing impaired regeneration in cxcr4a-/- mutant (t) as compared to wt siblings (s). Black arrow points to scar. (u) Increased scar area (calculated as percent of ventricle) in cxcr4a-/- mutant hearts (nwt = 5 hearts, ncxcr4a-/-=5, *p<0.005). Scale bars are 200 µm. All fish size are 25–30 mm.
 
 In contrast to these results, isolated lymphatic clusters, which develop normally in cxcr4-/- hearts (Figure 4h–i), could be readily detected following injury as well (Figure 7p–r), suggesting that similar programs control lymphatic growth during development and repair. Nevertheless, scar area was increased in cxcr4-/- mutant hearts at 77 dpci (Figure 7s–u, arrow), supporting previous studies suggesting a cell-autonomous requirement of Cxcl12/Cxcr4 signaling for CM and/or coronary migration (Harrison et al., 2015; Itou et al., 2012).
 
@@ -122,7 +182,318 @@ Most recently, an additional study has also examined cardiac lymphatics in zebra
 
 ## Materials and methods
 
-## Zebrafish husbandry and transgenic lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(fli1:EGFP)yl</td>
+      <td>(Nicenboim et al., 2015)</td>
+      <td>ZDB-ALT-011017–8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(lyve1b:dsRed2)nz101</td>
+      <td>(Nicenboim et al., 2015)</td>
+      <td>ZDB-ALT-120723–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(gata1a:dsRed)sd2</td>
+      <td>(Nicenboim et al., 2015)</td>
+      <td>ZDB-ALT-051223–6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>TgBAC(prox1a:KalTA4-4xUAS-E1b:uncTagRFP)nim5</td>
+      <td>(Nicenboim et al., 2015)</td>
+      <td>ZDB-ALT-140521–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(flt1_9a_cFos:GFP)wz2</td>
+      <td>(Nicenboim et al., 2015)</td>
+      <td>ZDB-ALT-150723–14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(flt4BAC:mCitrine)hu7135</td>
+      <td>(van Impel et al., 2014)</td>
+      <td>ZDB-ALT-140521–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(mrc1a:EGFP)y251</td>
+      <td>(Jung et al., 2017)</td>
+      <td>ZDB-ALT-170717–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(kdrl:nls-mCherry)y173</td>
+      <td>(Fujita et al., 2011)</td>
+      <td>ZDB-ALT-110429–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(kdrl:EGFP)s843</td>
+      <td>(Jin et al., 2005)</td>
+      <td>ZDB-ALT-050916–14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>cxcr4aum20</td>
+      <td>(Siekmann et al., 2009)</td>
+      <td>ZDB-ALT-091124–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>cxcl12bmu100</td>
+      <td>(Bussmann et al., 2011)</td>
+      <td>ZDB-ALT-110513–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>vegfcum18</td>
+      <td>(Villefranc et al., 2013)</td>
+      <td>ZDB-ALT-130718–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>Tg(βactin2:loxP-mTagBFP-STOP-loxP-vegfaa)pd262; Tg(cmlc2:CreER)</td>
+      <td>(Karra et al., 2018)</td>
+      <td>ZDB-ALT-181129–18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>flt4um203</td>
+      <td>(Kok et al., 2015)</td>
+      <td>ZDB-ALT-160721–30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Danio rerio)</td>
+      <td>vegfdbns257</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CRISPR/Cas9 generated. Prof. Didier YR Stainier (Max Planck Institute for Heart and Lung Research, Germany)</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>CD1 (wild type)</td>
+      <td>Charles River Laboratories</td>
+      <td>Strain# 022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>FVB (wild type)</td>
+      <td>Charles River Laboratories</td>
+      <td>Strain# 207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>ApjCreERT2</td>
+      <td>(Chen et al., 2014b)</td>
+      <td>MGI:5689869</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>BmxCreERT2</td>
+      <td>(Ehling et al., 2013)</td>
+      <td>MGI:5513853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>AplnCreERT2</td>
+      <td>(Liu et al., 2015)</td>
+      <td>MGI:5637737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>Ccbe1</td>
+      <td>(Bos et al., 2011)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>RosamTmG</td>
+      <td>(Muzumdar et al., 2007)</td>
+      <td>Stock# 007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>RosaTdTomato</td>
+      <td>(Muzumdar et al., 2007)</td>
+      <td>Stock #007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cxcl12a_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGTAGTAGTCGCT CTGATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cxcl12a_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGGACTGTGTTG ACTGTGGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cxcl12b_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGAGCATCCGAGA GATCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cxcl12b_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTTCTTCAGCTT GGCAATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vegfc_F</td>
+      <td>(Astin et al., 2014)</td>
+      <td>PCR primers</td>
+      <td>AAGGGCCCTAACA GAATGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vegfc_R</td>
+      <td>(Astin et al., 2014)</td>
+      <td>PCR primers</td>
+      <td>TTTGAATGAAGGG TGTCAGG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PROX1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# 11941</td>
+      <td>IF(1:700)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VE-Cadherin (Rat polyclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 550548</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PROX1 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat#: AF2727</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- ERG (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab92513</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- LYVE-1 (Rat monoclonal)</td>
+      <td>eBiosciences</td>
+      <td>Cat#: 14-0443-80</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor Conjugated Secondary Antibodies (488,594,633,635,647)</td>
+      <td>Life Technologies</td>
+      <td>N/A</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atenolol</td>
+      <td>Sigma Aldrich</td>
+      <td>A7655</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylhydrazine hydrochloride (PHZ)</td>
+      <td>Sigma Aldrich</td>
+      <td>78690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-hydroxytamoxifen</td>
+      <td>Sigma Aldrich</td>
+      <td>H7904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qtracker705</td>
+      <td>Invitrogen</td>
+      <td>Q21061MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Acid Fuchsin Orange-G (AFOG)</td>
+      <td>DIAPATH</td>
+      <td>010307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Angiotool</td>
+      <td>(Zudaire et al., 2011)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH (https://www.nih.gov/ij/)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry and transgenic lines
 
 Zebrafish were raised by standard methods (Gibbs-Bar et al., 2016) and handled according to the guidelines of the Weizmann Institute Animal Care and Use Committee. Zebrafish lines used in this study were: Tg(fli1:EGFP)yl, Tg(lyve1b:dsRed2)nz101, Tg(gata1a:dsRed)sd2, TgBAC(prox1a:KalTA4-4xUAS-E1b:uncTagRFP)nim5 and Tg(flt1_9a_cFos:GFP)wz2 (Nicenboim et al., 2015); Tg(flt4BAC:mCitrine)hu7135 (van Impel et al., 2014), Tg(mrc1a:EGFP)y251 (Jung et al., 2017), Tg(kdrl:nls-mCherry)y173 (Fujita et al., 2011), Tg(kdrl:EGFP)s843 (Jin et al., 2005), Tg(myl7:GFP) (González-Rosa et al., 2011), cxcr4aum20 (Siekmann et al., 2009), cxcl12bmu100 (Bussmann et al., 2011), vegfcum18 (Villefranc et al., 2013) flt4um203 (Kok et al., 2015), Tg(βactin2:loxP-mTagBFP-STOP-loxP-vegfaa)pd262; Tg(cmlc2:CreER) (Karra et al., 2018). vegfdbns257 mutants were generated by targeted genome editing using the CRISPR/Cas9 system as previously described (Matsuoka et al., 2016). The second exon of vegfd, which encodes part of the Vegfd protein coding sequences prior to the Vegf homology domain was targeted. The vegfdbns257 mutant allele harbors a 59 base-pair insertion in the exon 2 of vegfd predicted to lead to a premature stop codon at tyrosine residue 56 thus yielding a truncated polypeptide containing a stretch of 55 amino acids of Vegfd. The following guide RNA (gRNA) sequence was used to target the exon 2 of vegfd: 5’- GATGTTGACCGAATACC −3’. 1 nl of a solution containing 250 ng/µl of Cas9 mRNA and 100 ng/µl of gRNA was injected at the one-cell stage. Wt and vegfdbns257 animals were identified by PCR using the following primers at expected PCR product sizes (127 bp for wt allele and 186 bp for vegfdbns257 allele): vegfdbns257 forward primer: 5’- GACACAAATCAGGAAAAGTGG −3’ vegfdbns257 reverse primer: 5’- CATCGAAGTGCTTCAGCTTG −3’
 
@@ -130,21 +501,21 @@ Experiments were conducted on fish from the same clutch, which were of same age 
 
 For imaging of up to four wpf larvae, embryos were either treated for 7 days with 0.003% N-phenylthiourea (PTU) (Sigma, St Louis, MO) to inhibit pigment formation or casper (roy-/-;nacre-/-) mutant fish were used (White et al., 2008).
 
-## Mice
+### Mice
 
 Mouse use followed Stanford IACUC guidelines. Strains used were wild type (CD1 and FVB, Charles River Laboratories), ApjCreERT2 (51), BmxCreERT2 (Ehling et al., 2013), AplnCreERT2 (Liu et al., 2015) and Ccbe1 (Bos et al., 2011).
 
 Cre lines were crossed to RosamTmG or to RosaTdTomato (Muzumdar et al., 2007). Pregnant females were dosed intraperitoneally (4 mg of tamoxifen in corn oil at E8.5 for BmxCreERT2, E9.5+E10.5 ApjCreERT2 or E12.5 for AplnCreERT2 and ApjCreERT2). Hearts were analyzed at E13.5-P23.
 
-## Cryoinjury
+### Cryoinjury
 
 Cryoinjury was performed as described (González-Rosa et al., 2011). Briefly, 6–12 mpf (month post fertilization) fish were anesthetized by immersion into 0.04% tricaine (Sigma, St Louis, MO). A small incision was made through the body wall and the pericardium using microdissection scissors, and a cryoprobe cooled in liquid nitrogen, was placed on the ventricular surface until thawing was observed. Fish were then returned to fresh water for recovery.
 
-## Angiography
+### Angiography
 
 Angiography was performed on anesthetized fish by retro-orbital injection (Pugach et al., 2009) of Qtracker705 (Invitrogen Q21061MP). Fish were euthanized 2–5 min following injection.
 
-## qRT–PCR
+### qRT–PCR
 
 qRT–PCR was carried out as previously described (Avraham-Davidi et al., 2012) using the following primers: vegfc (Astin et al., 2014)
 
@@ -156,7 +527,7 @@ cxcl12b_F 5’- GGAGCATCCGAGAGATCAAG-3’
 
 cxcl12b_R 5’- TGTTCTTCAGCTTGGCAATG-3’
 
-## Pharmacological treatments
+### Pharmacological treatments
 
 To reduce heart rate, zebrafish larvae were treated daily with 100 µM of the beta-adrenergic antagonist Atenolol (Sigma-Aldrich, A7655) added to the fish water for 2.5 weeks starting at 17 dpf (Hein et al., 2015).
 
@@ -164,7 +535,7 @@ To induce cardiomegaly, 8 wpf fish were treated for 3 weeks with 2.5 µg/ml phen
 
 To induce Vegfaa-OE, 67 dpf Tg(βactin2:loxP-mTagBFP-STOP-loxP-vegfaa)pd262 fish were treated for 24 hr with 5 µM 4-hydroxytamoxifen (Sigma, H7904) or 0.05% ethanol (vehicle control).
 
-## Immunohistochemistry and imaging
+### Immunohistochemistry and imaging
 
 Zebrafish hearts were isolated from terminally anesthetized zebrafish and fixed briefly (30 s) in 4%PFA/PBS. For immunostaining, hearts were fixed in 4%PFA/PBS overnight, incubated in blocking solution (1% goat serum, 2% Triton X-100, 1%BSA in PBS) for 2–3 days and then with anti-PROX1 antibody (Abcam, 11941, 1:700) in staining solution (1% goat or donkey serum, 0.25% Triton X-100 in PBS) for 4–5 days at 4°C. Following PBST (PBS with 0.25% Triton X-100) washes for 6 hr, hearts were incubated with Alexa Fluor 488 conjugates secondary antibodies (Jackson ImmunoResearch, 111-485-045) diluted in blocking solution for 3–4 days at 4°C and washed again. Hearts were then mounted into glass capillaries (Brand) in 1.5% low-melting point agarose/PBS solution (ROTH) and imaged using a light sheet Z.1 microscope (Zeiss Ltd.) equipped with 2 sCMOS cameras PCO- Edge, 10X/0.2 excitation objectives and W-Plan Apochromat 20x/0.1 detection (water immersion). In vivo confocal imaging of larvae up to 4 wpf was performed using a Zeiss LSM 700 upright confocal microscope (Carl Zeiss) with a W-Plan Apochromat 20 × objective, NA 1.0.
 
@@ -176,7 +547,7 @@ Samples were imaged in Vectashield (Vector Labs) using either a Zeiss LSM-700 or
 
 Acid Fuchsin Orange-G (AFOG) staining was performed on paraffin-embedded tissue sections using an AFOG staining kit (DIAPATH, 010307) following manufacturer’s instructions. Samples were imaged using Panoramic SCAN II (3DHISTECH) slide scanner.
 
-## Statistical analyses
+### Statistical analyses
 
 Coronary blood and lymphatic vessel coverage area and total length, as well as ventricle and OFT size, were calculated from max. projected confocal images of the hearts, using Angiotool (Zudaire et al., 2011). OFT lymphatic sprouts and loops were manually counted using ImageJ/Fiji. Color coded local thickness maps of cxcr4 mutant hearts were generated using ImageJ/Fiji. Scar area following cryoinjury was measured in single section images using ImageJ, and the percent scar area was calculated with respect to the ventricle total area.
 

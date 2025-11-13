@@ -20,16 +20,16 @@
 
 ### Affiliations
 
-1. https://ror.org/02j46qs45 RECETOX, Faculty of Science, Masarykova Univerzita Brno Czech Republic
-2. https://ror.org/01p7k1986 Central European Institute of Technology, Masarykova Univerzita Brno Czech Republic
-3. https://ror.org/0270ceh40 Masaryk Memorial Cancer Institute Brno Czech Republic
-4. https://ror.org/02j46qs45 Faculty of Medicine, Masarykova Univerzita Brno Czech Republic
-5. https://ror.org/01p7k1986 Central European Institute of Technology, Department of Biology, Faculty of Medicine, Masarykova Univerzita Brno Czech Republic
-6. https://ror.org/02j46qs45 Department of Pharmacology and Toxicology, Faculty of Pharmacy, Masarykova Univerzita Brno Czech Republic
-7. https://ror.org/001w7jn25 Institute of Pathology, Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, Humboldt-Universität zu Berlin, Berlin Institute of Health Berlin Germany
-8. https://ror.org/0493xsw21 Berlin Institute of Health Berlin Germany
-9. https://ror.org/04cdgtt98 German Cancer Research Center (DKFZ), German Cancer Consortium (DKTK) Heidelberg Germany
-10. https://ror.org/05f950310 Faculty of Medicine, Digestive Oncology Unit, Katholieke Universiteit Leuven Leuven Belgium
+1. RECETOX, Faculty of Science, Masarykova Univerzita Brno Czech Republic ([ROR:02j46qs45](https://ror.org/02j46qs45))
+2. Central European Institute of Technology, Masarykova Univerzita Brno Czech Republic ([ROR:01p7k1986](https://ror.org/01p7k1986))
+3. Masaryk Memorial Cancer Institute Brno Czech Republic ([ROR:0270ceh40](https://ror.org/0270ceh40))
+4. Faculty of Medicine, Masarykova Univerzita Brno Czech Republic ([ROR:02j46qs45](https://ror.org/02j46qs45))
+5. Central European Institute of Technology, Department of Biology, Faculty of Medicine, Masarykova Univerzita Brno Czech Republic ([ROR:01p7k1986](https://ror.org/01p7k1986))
+6. Department of Pharmacology and Toxicology, Faculty of Pharmacy, Masarykova Univerzita Brno Czech Republic ([ROR:02j46qs45](https://ror.org/02j46qs45))
+7. Institute of Pathology, Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität Berlin, Humboldt-Universität zu Berlin, Berlin Institute of Health Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+8. Berlin Institute of Health Berlin Germany ([ROR:0493xsw21](https://ror.org/0493xsw21))
+9. German Cancer Research Center (DKFZ), German Cancer Consortium (DKTK) Heidelberg Germany ([ROR:04cdgtt98](https://ror.org/04cdgtt98))
+10. Faculty of Medicine, Digestive Oncology Unit, Katholieke Universiteit Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
@@ -51,7 +51,7 @@ Building on our previous results (Budinska et al., 2013), we based our study on 
 
 ## Results
 
-## Data
+### Data
 
 From n=111 unique cases of primary CRC tumors (stages: II: 59, III:32, IV:20), n=202 regions were macrodissected representing either tumor morphological regions (n=149), tumor-adjacent normal tissue (NR, n=17), supportive stroma (ST, n=8), or whole tumor (n=28), respectively. Among the tumor morphological regions, n=126 ‘core samples’ were identified based on ‘morphological purity’, indicating regions containing at least 80% of a unique morphological pattern. The six morphotypes of interest (Figure 1) consisted of (in brackets the additional non-core samples) 41 (+11) CT, 13 (+2) DE, 18 (+3) MU, 10 (+2) PP, 33 (+7) SE, and 9 TB samples, respectively. The distribution of associated main clinical parameters is given in Supplementary file 1. The only statistically significant associations found were between MU or TB and grade 3 tumors, and SE and lower grade tumors (p=0.019, Supplementary file 2), respectively.
 
@@ -61,19 +61,119 @@ From n=111 unique cases of primary CRC tumors (stages: II: 59, III:32, IV:20), n
 
 To complement the results presented here, we created a web application https://morphogene.recetox.cz allowing the interrogation of gene expression in various morphological regions.
 
-## Morphotype cellular admixtures
+### Morphotype cellular admixtures
 
 The transcriptomic profile of solid tumor sample is a mixture of gene expression profiles of individual cell types and their specific programs, including cancer cells at different levels of differentiation, specific immune cells, or supportive fibroblasts. As a first step, we performed in-silico deconvolution of the expression profiles to identify the most prevalent cell types in each of the morphotypes and GSEA to score cell-type-specific gene sets (see Materials and methods) in each morphotype, and NR and ST regions (used as controls, Figure 2, Supplementary files 3–4).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig2-v1.jpg)
+
+**Figure 2.:** (A) Boxplots of the tumor purity (epithelial content – ESTIMATE method) in each tumor morphotype and the two non-tumor regions, ordered by increasing median values. (B) Signatures specific to colon crypt compartments and major cell types estimated from gene expression data in terms of normalized enrichment scores (NES): only statistically significant scores are shown. (C) Immune cell fractions (and unassigned fractions) inferred from gene expression data using quanTIseq method. (D) Types of cancer-associated fibroblasts (CAFs) as estimated from gene expression using the signatures from Khaliq et al., 2022; Kieffer et al., 2020.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Only statistically significant scores (NES) are shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Only statistically significant scores (NES) are shown.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Only statistically significant scores (NES) are shown.
 
 The results from ESTIMATE indicated, as expected, a high stromal content for ST, DE, and MU and a high epithelial tumor cell content for normal region and TB and SE morphotypes, respectively (Figure 2A). A more balanced situation was observed for CT and PP morphotypes (similar to NR). This agreed with the (stroma-related) ‘Isella signatures’ (Isella et al., 2015) where ST, DE, and MU were enriched in endothelial cells, CAFs and immune cells (Figure 2B). When investigating the categories of epithelial cells, the signatures of top of the normal colon crypt cells (Kosinski et al., 2007) and colon differentiated epithelial cells (Merlos-Suárez et al., 2011) were enriched solely in NR regions, while DE, MU, CT, SE, and TB were depleted in these cell types (Figure 2B). On the other hand, MU, CT, PP, and TB regions expressed genes specific for the basal crypt cells (Kosinski et al., 2007) and ST, DE, and MU were enriched in signatures of intestinal stem cells. These observations are in perfect agreement with the definition of the morphotypes and confirm the proper selection of the samples. quanTIseq revealed that all tumor morphotypes were enriched in M1 macrophages (with maximal presence in MU and DE), while M2 macrophages, NK cells and myeloid dendritic cells where highly present in supporting stroma and tumor-adjacent normal regions (Figure 2C). Additionally, TB morphotype had the lowest scores for regulatory T cells (TREGs) and B cells.
 
 Further we refined the morphotype cell admixtures by testing signatures of different cell types and their active programs as derived from single-cell sequencing studies. We evaluated more than 150 signatures of stromal, epithelial, and immune cell population (supplemental tables of Pelka et al., 2021) and cancer associated fibroblasts (CAFs) (Khaliq et al., 2022; Kieffer et al., 2020) (see Supplementary files 3–4 for full signatures). Interestingly, the morphotypes differed in the signatures of CAFs subpopulations (Figure 2D). ST, MU, and DE had high GSEA scores of most of the CAFs subpopulations, while the rest (CT, PP, SE, and TB) had mostly negative scores, indicative of depletion of corresponding cell types. DE and MU were most strongly enriched in signatures of ECM-myCAF S1 – associated with immunosuppressive microenvironment and pro-metastatic functions (Kieffer et al., 2020) – and wound-healing myCAF S1 populations, while the adjacent stroma mainly showed signatures of normal fibroblasts, detox-iCAF S1 and IL-iCAF S1 populations, both characterized by detoxification and inflammatory signaling. NR regions were enriched only in normal fibroblasts and detox-iCAF S1. By exploring the signatures from Pelka et al., 2021, we observed even finer differences between morphotypes within all three cell type populations and their programs (Figure 2—figure supplements 1–3). For instance, CT, TB, and SE had enriched pS04 (ribosomal) and pS12 (proliferation) stromal cell signatures, in addition, CT and TB expressed pS05 (interferon-stimulated genes, ISGs) and pS21 (FOS, JUN) signatures. Also, NR had a specific enrichment in mitochondrial (pS09), metallothionein (pS16) and BMP-producing (pS17) fibroblasts. CT and TB resembled MU in expressing pS20 signature and, additionally, TB showed similar levels of pS13 (inflammatory) signature as MU and DE. ST regions and DE and MU morphotypes had significantly increased pS02 (Fibro.matrix/stem cell niche) signature. Full results for other cell types and programs are provided in the Supplementary file 4.
 
-## CRC morphotypes and molecular programs
+### CRC morphotypes and molecular programs
 
 The molecular programs and pathways represented in MSigDB were scored by performing GSEA on differentially expressed genes (DEGs) in all morphotypes (and NR and ST).
 
 For the first analysis, the ordered lists of DEGs per morphotype were obtained by contrasting the individual expression profiles to the average profile of pooled samples (Supplementary file 5 contains all DEGs). This allowed the identification of all molecular programs significantly de-/activated in each morphotype (Table 1, Figure 3; Supplementary file 6). When considering only the hallmark signatures (H collection), the discriminative gradients between the morphotypes (and NR and ST) were along the EMT and TNF-α signaling axes at one end, and the MYC and E2F targets at the other end (Table 1, Figure 3A). Desmoplastic and mucinous shared active pathways involved in immune system response (TNF-α signaling via NF-κB, interferon gamma response, complement, IL2-STAT5 signaling), neoangiogenesis, and increased metastatic potential (EMT, coagulation, TGF-β, NF-kB, NOTCH, Apical junction). At the other end of the spectrum, CT and TB morphotypes had activated major pathways involved in proliferation processes (P53, MTORC 1, Myc targets, G2M checkpoint, Mitotic spindle, NOTCH signaling, Protein secretion). In contrast with CT, TB morphotype shared with MU and DE active TGF-β signaling, apoptosis, and most pathways involved in immune system response. PP and SE morphotypes had activated MYC and E2F targets, with PP morphotype exhibiting downregulation of the KRAS signaling and upregulation of the WNT-β catenin signaling.
+
+**Table 1.**
+ Results of comparison of each morphotype (and the two non-tumoral regions) with the average profile.The table shows the top 20 up- and down- regulated genes and significantly activated hallmark pathways and processes (as result of GSEA). The genes not significant after p-value adjustment (at FDR = 0.15) have their symbols greyed. See also Supplementary files 5–6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Morph</th>
+      <th>Top 20 up-regulated genes (compared to mean)</th>
+      <th>Top 20 down-regulated genes (compared to mean)</th>
+      <th>Hallmark pathways with high score</th>
+      <th>Active processes (based on the active hallmark pathways)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MU</td>
+      <td>ARF4, MUC2, SULF1, FNDC1, LOXL1, LGALS1, ANTXR1, BGN, COL12A1, PALLD, MEG8, DKK3, ACVR1, GPX8, CALD1, FBN1, MLLT11, CSRP2, TUSC3, GREM1</td>
+      <td>TIMD4, PRELID3BP3, EREG, KDM4A, CCDC175, TDP2, CHMP1B2P, ACE2, NLRP7, UGT2A3, SLC26A3, A1CF, TSPAN6, CLDN10, TMIGD1, BMP5, MS4A12, FAM3B, CLCA4, MEP1A</td>
+      <td>EMT, TNF a signaling via NFKB, Complement, IL2 STAT5 signaling, hypoxia, inflammatory response, KRAS signaling, UV response, myogenesis, coagulation, apical junction, allograft rejection, IL6 JAK STAT3 signaling, interferon gamma response, apoptosis, TGF-beta signaling, angiogenesis, hedgehog signaling, estrogen response early, NOTCH signaling, WNT beta catenin signaling, cholesterol homeostasis</td>
+      <td>Inflammation, neoangiogenesis, increased metastatic potential, apoptosis, development</td>
+    </tr>
+    <tr>
+      <td>DE</td>
+      <td>OLFML2B, INHBA, LUM, SULF1, PTPN14, PRDM6, SPOCK1, RDX, EDNRA, COL12A1, CTHRC1, PRRX1, LGALS1, COPZ2, COL10A1, TNFAIP6, IGFL1P1, ST6GAL2, FAP, BGN</td>
+      <td>SLC17A4, ANPEP, DEFA5, RAP1GAP, MRAP2, ADH1C, TRIQK, REG1A, SLC4A4, UGT2B15, REG4, SEMA6A, L1TD1, MS4A12, SI, SPINK4, CLCA4, MUC2, CLCA1, CA1</td>
+      <td>EMT, TNF a signaling via NFKB, Complement, IL2 STAT5 signaling, hypoxia, inflammatory response, KRAS signaling, UV response, myogenesis, coagulation, apical junction, apoptosis, TGF-beta signaling, angiogenesis, hedgehog signaling, estrogen response early</td>
+      <td>Inflammation, neoangiogenesis, increased metastatic potential, apoptosis</td>
+    </tr>
+    <tr>
+      <td>PP</td>
+      <td>PTPRD, KNDC1, MIMT1, UPK3B, MPZ, MMP15, CYP4F12, SNORD4A, SNAR-C3, TMTC4, LRCOL1, GATA5, SNAR-E, EPHA7, IPO4, SNAR-I, CASC21, NUTF2, SNAR-B2, RPL31P50</td>
+      <td>IGKV3-11, IGHV4-39, ANPEP, OR4F8P, HEPACAM2, ADAM28, CPS1, TMIGD1, NPY6R, ITLN1, SI, ADH1C, CAV1, MMP2, FDCSP, CLU, REG1A, RSPO3, PAX8-AS1, PALMD</td>
+      <td>MYC targets V1, MYC targets V2, E2F targets, KRAS signaling DOWN, WNT beta catenin signaling,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SE</td>
+      <td>PPAN-P2RY11, TUBB4BP7, JADE3, PFDN6, CLDN2, YAF2, BOLL, SLAMF9, SLC12A2, CCDC175, GRIN2B, TUBB3P2, GAPDHP71, RPS2P25, MAT1A, NOX1, SNORD12C, SMAD6, MECOM, EXTL2</td>
+      <td>IGKV2D-29, MYLK, TAGLN, CNTNAP3P2, GLI3, CPXM2, NR3C1, CNN1, PECAM1, COLEC12, IGKV4-1, IGKV2D-30, DPYD, CLU, TSHZ2, ADH1B, IL10RA, PDE7B, ABCA8, CDC42SE2</td>
+      <td>MYC targets V1, MYC targets V2, E2F targets, G2M checkpoint,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CT</td>
+      <td>TMEM97, RPL13, CLDN1, TFDP1, CKS2, CDCA7, TPX2, ANLN, RAD54B, KRT18, HSPH1, CCT6A, PLK1, TMEM97P2, CSE1L, MIPEP, SNORA71D, SNORA71C, PTTG1, PLBD1</td>
+      <td>CR2, OGN, SNORD114-21, SLC30A10, CLCA4, SNORD114-12, DCLK1, FAT4, CPA3, ADH1B, SLC26A2, SNORD114-20, SFRP1, ZG16, FGF7, SNORD113-1, ABCA8, B4GALNT2, MS4A12, CA1</td>
+      <td>MYC targets V1, MYC targets V2, E2F targets, G2M checkpoint, MTORC1 signaling, unfolded protein response, Glycolysis, oxidative phosphorylation, fatty acid metabolism, protein secretion</td>
+      <td>Proliferation, Catabolism, oxidative stress, cell cycle disruption</td>
+    </tr>
+    <tr>
+      <td>TB</td>
+      <td>CKAP2, HSP90AA1, PPP3CA, REEP4, MSH6, TOP2A, HSPE1, PPP2R5C, TBCA, VRK2, NIFK, TXNL4A, MNAT1, ERI1, XPO1, VTRNA1-2, ANP32A, ARF6, RNF2, EIF4A1P7</td>
+      <td>FLJ22763, TMEM236, NPY6R, IGKV3D-20, IGKV2D-30, OLFM4, SELENBP1, LRRC19, CDHR1, IGHA1, SNORD123, SLC26A3, CXCL14, SLC3A1, SEMA5A, MS4A12, IGHA2, CLCA4, NXPE4, NXPE1</td>
+      <td>MYC targets V1, MYC targets V2, E2F targets, G2M checkpoint, MTORC1 signaling, unfolded protein response, Glycolysis, oxidative phosphorylation, fatty acid metabolism, protein secretion, cholesterol homeostasis,</td>
+      <td>Inflammation, catabolism, apoptosis, oxidative stress, proliferation, cell cycle disruption</td>
+    </tr>
+    <tr>
+      <td>NR</td>
+      <td>PIGR, SLC26A3, ADH1B, NXPE1, IGHA2, CLCA1, JCHAIN, IGHA1, FCGBP, IGK, NXPE4, SLC9A2, MUC2, NR3C2, TMEM236, MS4A12, FABP1, IGLC3, IGKV1D-39, LRRC19</td>
+      <td>TACSTD2, FAM83D, ASPN, CXCL11, CTHRC1, SLC39A6, IFNE, SULF1, HSPH1, ELFN1-AS1, THBS2, CLDN1, SIM2, SLC22A3, SPARC, FN1, AHNAK2, COL11A1, SPP1, INHBA</td>
+      <td>Heme metabolism, bile acid metabolism, xenobiotic metabolism, fatty acid metabolism</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ST</td>
+      <td>SFRP2, ADH1B, EMCN, STEAP4, ADAMTS1, ABI3BP, SPARCL1, DCN, PTGDS, PALMD, NOVA1, SLIT3, OGN, SERPINF1, RSPO3, CPA3, FBLN5, C3, EFEMP1, PBX3</td>
+      <td>FRK, AADACP1, CKS2, HOOK1, CLDN1, ANLN, S100P, UGT8, MACC1, EXPH5, CYP3A5, OCIAD2, SLC12A2, GK, EVADR, TMC5, REG4, TFF1, TCN1, CXCL8</td>
+      <td>EMT, TNF a signaling via NFKB, Complement, IL2 STAT5 signaling, hypoxia, inflammatory response, KRAS signaling, UV response, myogenesis, coagulation, apical junction, allograft rejection, IL6 JAK STAT3 signaling, interferon gamma response</td>
+      <td>Inflammation, neoangiogenesis, increased metastatic potential</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig3-v1.jpg)
+
+**Figure 3.:** (A) GSEA scores for hallmark pathways in the six morphotypes and two non-tumoral regions. Only pathways with statistically significant scores are shown. (B) Principal component analysis of hallmark pathways: the median profiles of the six morphotypes (CT: complex tubular, DE: desmoplastic, MU: mucinous, PP: papillary, SE: serrated, and TB: solid/trabecular) and the two non-tumoral regions (NR: tumor-adjacent normal and ST: supportive stroma) are projected onto the space defined by first two principal components (74% of the total variance). The top pathways contributing to the principal axes are shown as well. See also Figure 3—figure supplement 1. (C) Heatmap of top 5 up- and down-regulated genes for each of the six morphotypes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Here we compare the results from GSEA applied to differentially expressed genes between pairs of morphotypes originating from all cases to results of GSEA applied to differentially expressed genes between pairs of morphotypes originating from the same section (tumor; i.e., matched pairs of morphotypes). All results are shown, including the statistically not significant ones. First, four columns correspond to pairs of morphotypes from all cases, while the last four, to matched pairs of morphotypes.
 
 We performed principal component analysis (PCA) of the GSEA scores of hallmark pathways. Their projection onto the first two principal components revealed a specific bi-dimensional clustering of the morphotypes and illustrated the gradient of changes between morphotypes (Figure 3B, Figure 3—figure supplement 1). At one end, MU and DE shared the same region in PCA space with positive coordinates on the axis defined, among others, by EMT, inflammatory response, and UV response. At the same time, they had opposite projections on the second axis of variation, defined by p53, unfolded protein response and cholesterol homeostasis. In contrast, SE and PP shared the same quadrant with negative coordinates on the first axis, but positive on the second axis. The CT and TB fell between the two previous groups with respect to the first axis of variation, while having similar activations of pathways defining the principal components. Overlaid on top of the transcriptomics layer, an additional gradient could be observed: epithelial cell differentiation. Indeed, while SE, PP, and CT were well or moderately differentiated, TB, DE and MU had low or undifferentiated morphology.
 
@@ -83,19 +183,41 @@ Several macrodissected regions originated from the same section allowing for pai
 
 We also performed comparison between all pairs of morphotypes (Supplementary files 11–12). This comparison shows that, despite similar content in terms of fibroblasts or epithelial cells (discussed above), there are still differences both in terms of differentially expressed genes (Supplementary file 11) and activated molecular programs (Supplementary file 12) between DE and MU, on one side, and CT, PP, SE, and TB. These results refine those presented above and allow an ordering of morphotypes in terms of relative activation of pathways. For example, KRAS signaling appears to be highest in PP, followed by CT.
 
-## Morphotypes and molecular subtypes
+### Morphotypes and molecular subtypes
 
 The molecular subtyping taxonomies of CRC were derived from datasets representing profiles of whole tumor sections, therefore aggregating the expression of many cell types. In our previous work (Budinska et al., 2013), we associated molecular subtypes with morphotypes assessed on the whole tumor and hence we were interested to see how this observation translated to the case of macrodissected morphological regions. We predicted both the consensus (CMS) (Guinney et al., 2015) and intrinsic (iCMS) (Joanito et al., 2022) molecular subtypes.
 
 All ST regions were predicted as CMS4, and 82.4% of NR regions as CMS3. For the morphotypes, the predictions were more distributed across subtypes: DE and MU were most often assigned to CMS4 (63.6% and 58.8%), PP, SE, and CT to CMS2 (62.5%, 41.7% and 41.9%) and TB to CMS1 (80%; Figure 4A, Figure 4—figure supplement 1). More importantly, this heterogeneity was also observed intra-tumoral, with regions within the same tumor section being assigned to different subtypes (Figures 4A and 5, Figure 5—figure supplements 1 and 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig4-v1.jpg)
+
+**Figure 4.:** Only cases with at least two distinct morphotypes present are shown. (A) Left: CMS assignment for tumors represented by multiple regions. Right: CMS assignment per morphotype (and two non-tumoral patterns). (B) Left: iCMS assignment for tumors represented by multiple regions. Right: iCMS assignment per morphotype (and two non-tumoral patterns). (C) Differences between paired signatures: morphotypes vs whole tumor (each signature was normalized to [0,1] prior to computing the differences). Only four (morphotype, whole tumor) pairs were represented enough in the data. (D) Boxplots for the ten (normalized) signatures across morphotypes. The ‘Eschrich’ and ‘Jorissen’ signatures vary significantly (Kruskal-Wallis’s test) across morphotypes. For equivalent plots for all samples, including non-core, see Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Note that the sets of samples in A and C are the same as in Figure 4, as only core samples also had at least two distinct morphological regions.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig5-v1.jpg)
+
+**Figure 5.:** For the same case, different CMS labels are assigned to regions and whole tumor profile. The hallmark pathways show various levels of activation (as computed by GSVA) within same section. The relative change in prognostic scores indicate potential underestimation of risk for some signatures, while others appear to be stable across tumor. See also Figure 5—figure supplements 1 and 2. Note that in the pathology section image, the original annotations were preserved, and they are not identical to the ones used in the main text. Here, MUC stands for mucinous (MU) in the text. Also, N indicates a tumor-adjacent normal epithelial region and S a supportive stroma region, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig5-figsupp2-v1.jpg)
+
 In contrast, intrinsic molecular subtypes (iCMS2/3) were much more stable, most of the time all the morphotypes within a tumor sharing the same iCMS label (Figure 4B, Figure 4—figure supplement 1) and agreeing with the whole-tumor assignment. NR, MU, TB, and ST regions were classified most of the time as iCMS3 (100%, 94,4%, 71.4%, 66.7%), while PP, CT and DE were predominantly classified as iCMS2 (77.8%, 70.3%, 66.7%). The serrated morphotype was almost equally assigned to each of the iCMSs (iCMS2: 58%, iCMS3:42%).
 
-## Prognostic and predictive gene-based signatures
+### Prognostic and predictive gene-based signatures
 
 The morphotypes generally differed in terms of score distributions, with two signatures reaching statistical significance (Kruskal-Wallis’s test: Eschrich p=0.0228, Jorissen p=0.00085, Figure 4C–D). A more pronounced variability was observed when comparing tumor regions to matched whole tumor, with amplitude of the differences (region vs whole tumor) larger than 50% of the whole tumor score in some cases (Figure 4C). Figure 5 shows a case study with three different morphological regions (CT, MU, SE) which manifest rather large deviations from the whole tumor-based risk scores for most of the prognostic signatures (see also Figure 5—figure supplements 1 and 2).
 
 The predicted resistance/sensitivity to different therapeutics varied across morphotypes: MU resistance to gefitinib; DE sensitivity to azaticidine, dasatinib, and aplidin, and resistance to tamoxifen and gefitinib; PP resistance to cantharidin, SE resistance to aplidin, CT sensitivity to alkylating agents (Figure 6). The differences were observed even within tumor (Figure 5), with some of the supposedly sensitive tumors (whole tumor scoring) having regions of predicted resistance (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig6-v1.jpg)
+
+**Figure 6.:** Only significant scores are shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86655/elife-86655-fig6-figsupp1-v1.jpg)
 
 ## Discussion
 
@@ -119,7 +241,7 @@ We have analyzed the gene expression profiles of six morphotypes (and two peritu
 
 From a molecular pathology practice perspective, the molecular descriptors found to vary across morphotypes may help in patient stratification and provide hints for further, more targeted investigations. Several questions call for further investigation: (i) how much of a tumor needs to be embedded to achieve a precise molecular diagnostic? and (ii) what precise tumor region(s) are needed for a molecular diagnostic? The morphotypes selected here may need further refinement and achieving consensus among pathologists regarding their exact definition, a point that could potentially be addressed by automatic image analysis approaches.
 
-## Ideas and speculation
+### Ideas and speculation
 
 Our analyses indicate that both prognostic and response to therapy signatures may predict more severe cases (shorter relapse free survival or resistance to therapy) when applied to subregions than to the whole tumor. This might be one of the reasons the said signatures may fail their real-world validation. Therefore, morphologically heterogeneous tumors need several sampling locations to provide a more sensible result. Sensitivity and cost analyses need to be performed to estimate the benefits of multi-regional sampling.
 
@@ -127,21 +249,21 @@ Further, the fact that we were able to identify specific molecular programs asso
 
 ## Materials and methods
 
-## Samples
+### Samples
 
 This retrospective cross-sectional study used tumor samples from patients with CRC who were examined at Masaryk Memorial Cancer Institute, Brno, Czech Republic in years 2002–2015. The study was reviewed and approved by the Committee for Ethics of Masaryk Memorial Cancer Institute, Brno, Czech Republic (number 2018/861/MOU). All patients gave written informed consent for the use of their biological samples for research purposes. Fundamental ethical principles and rights promoted by the European Union EU (2000/C364/01) were followed. All patients’ data were processed according to the Declaration of Helsinki (last revision 2013). Inclusion criteria for this study were: age >18 years, clinical and histopathologically confirmed diagnosis of primary CRC. Standard clinical and histopathological variables (TNM, grade etc.) were retrieved for all patients. Failure of laboratory analyses (problematic sample preparation, low quality and/or quantity of isolated RNA, low quality of expression data) was a reason for excluding these samples from the study.
 
-## Sample preparation
+### Sample preparation
 
 A total of 111 colon cancers (unique patients) were identified in the tumor archive of the Masaryk Memorial Cancer Institute and were assessed by two expert pathologists. Morphological regions of interest, representing complex tubular (CT), desmoplastic (DE), mucinous (MU), papillary (PP), serrated (SE) and solid/trabecular (TB) morphologies, respectively (see Figure 1), were digitally marked in scanned whole slide images (at 20 x magnification) and macrodissected for RNA extraction. Additionally, from several slides, tumor-adjacent normal (NR) and tumor-associated stroma (ST). Tumor samples with limited contamination of additional morphologies (<20%) were called ‘core samples’ and used morphotype molecular characterization. The labelling of the regions was repeated after 1 year to ensure a stable assignment. For n=28 cases, whole-tumor regions were macrodissected from the histology section immediately adjacent to the section used for morphological regions. Standard clinical and histopathological variables were retrieved for most of the patients.
 
-## Gene expression profiling
+### Gene expression profiling
 
 The RNA extraction was performed from formalin-fixed paraffin-embedded histopathological slides using AllPrep DNA/RNA Kits (Qiagen, Hilden, Germany) according to their specific manufacturer’s instructions. A few modifications were made to the protocol: FFPE slides (2x3 μm) were bathed in a solution to remove paraffin (3 x in xylene for 5 min and 3 x in ethanol for 5 min). Tumor tissue was spotted with 8 ul PKD puffer and collected from slides using a scalpel. Purification was done for total RNA, including small RNAs. For elution, 20 ul RNA free water (1 min. incubation) was used and then repeated with eluate. The extracted RNA served as input for a GeneChip WT Pico Reagent Kit (Thermo Fisher Scientific, Waltham, MA, USA) for analysis of the transcriptome on whole-transcriptome arrays. We selected the input amount from the recommended range according to the manufacturer’s instructions. Total RNA from HeLa cells provided in the kit was used as a positive control together with a high-quality low-concentration RNA isolated from a serum as a low input control. Clariom D Array for human samples (Thermo Fisher Scientific, Waltham, MA, USA) was used for target hybridization to capture both coding and multiple forms of non-coding RNA. Finally, the arrays were scanned using Affymetrix GeneChip Scanner 3000 7 G (Thermo Fisher Scientific, Waltham, MA, USA). The sample preparation and analysis were performed according to the manufacturer’́s instructions. The protocol included several control points in which the workflow was monitored. All the samples complied with the quality control requirements and none of the samples were excluded from the analysis.
 
 The data generated in this study are publicly available in ArrayExpress under accession number E-MTAB-12599 (https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-12599).
 
-## Bioinformatics analyses
+### Bioinformatics analyses
 
 All resulting CEL files were processed using Bioconductor (RRID:SCR_006442) (Huber et al., 2015) (v.3.15) packages oligo (Carvalho and Irizarry, 2010) (v.1.60), affycoretools (v1.68) and, for Clariom D chip annotation, pd.clariom.d.human (v.3.14). For the quality control we used AffyPLM (v.147) and imposed a maximal median Normalized Unscaled Standard Errors (NUSE) of 1.12. In all, n=202 passed all the quality control steps and were normalized together using RMA (oligo) with core-probeset summarization. Further, the array data was summarized at gene level by selecting the most variable probeset per unique EntrezID and entries corresponding to missing HUGO symbols, speculative transcripts, and short non-coding RNA were discarded resulting in a reduced list of 27,302 unique genes. Batch effects were removed using ComBat (Johnson et al., 2007) from package sva (v.3.44.0).
 

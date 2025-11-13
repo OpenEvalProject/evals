@@ -33,7 +33,7 @@ Criticism of the “black box” nature of peer review has also been a topic of 
 
 In the current study, we survey editors of ecology, economics, medicine, physics and psychology journals about how they employ peer review. Amongst other things, we investigated the degree of anonymity and interaction between stakeholders, the availability of review documentation, and the outsourcing of peer review. We also collected information about policies on recommending reviewers, voluntary disclosure of identities, editors altering reviewers’ reports, and the sharing of data, materials and code. In addition, we sought editors’ views on a number of issues in academic publishing: the appropriateness of reviewers co-writing reviews with colleagues or “co-reviewing” (McDowell et al., 2019); reviewers suggesting citations to their work; and editors publishing research in the journals they edit. We also gauged editors’ views on reviewers requesting access to raw data during review, the value and role of replication studies, and innovation of their own peer review procedures.
 
-## Study participants
+### Study participants
 
 A total of 1490 unique editors representing 1500 journals (eight editors represented more than one journal) were invited to participate in this study, which involved two surveys. The first survey (Survey A) contained questions about peer review policies and practices; the second survey (Survey B) covered five issues related to publication ethics (see Materials and methods for further information). In the 13.5 weeks between invitation and deactivation, 336 unique editors entered Survey A, of which 332 consented to participate. Of the 332 journal editors that consented, 300 completed the survey, 22 started but didn’t finish, eight opened the survey but provided no responses and two withdrew consent following completion, giving an overall response rate of 21% (322/1500). Following completion of Survey A, 233 (78%) entered and finished Survey B.
 
@@ -41,31 +41,606 @@ Of the 322 editors who provided at least one response to Survey A, 293 (91%) ide
 
 ## Results: Peer review policies and practices
 
-## Pre-review policies
+### Pre-review policies
 
 Just under half of editors reported that their journal routinely checks all incoming manuscripts for plagiarism (49%, 154, Table 1). The lowest rate of uniform plagiarism checks was reported in the economics group (31%, 24 of 78). The majority of journal editors reported that their journal allows authors to recommend both for and against specific reviewers (61%, 197), with just under a quarter (23%, 73) not providing any routine avenue for authors to influence who reviews their article. One medical journal and one physics journal also reported outsourcing peer review to a commercial third party.
 
-## Interactions and blinding systems
+**Table 1.**
+ Pre-review policies for all journals and by discipline.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">All journals</th>
+      <th colspan="2">Ecology</th>
+      <th colspan="2">Psychology</th>
+      <th colspan="2">Economics</th>
+      <th colspan="2">Medicine</th>
+      <th colspan="2">Physics</th>
+    </tr>
+    <tr>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="13">Plagiarism software usage (N=317)</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>7</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Always</td>
+      <td>154</td>
+      <td>49</td>
+      <td>46</td>
+      <td>51</td>
+      <td>45</td>
+      <td>54</td>
+      <td>24</td>
+      <td>31</td>
+      <td>25</td>
+      <td>64</td>
+      <td>14</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>If suspicion has been raised</td>
+      <td>84</td>
+      <td>26</td>
+      <td>24</td>
+      <td>27</td>
+      <td>19</td>
+      <td>23</td>
+      <td>30</td>
+      <td>38</td>
+      <td>4</td>
+      <td>10</td>
+      <td>7</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>At editor's discretion</td>
+      <td>54</td>
+      <td>17</td>
+      <td>14</td>
+      <td>16</td>
+      <td>13</td>
+      <td>15</td>
+      <td>18</td>
+      <td>23</td>
+      <td>5</td>
+      <td>13</td>
+      <td>4</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>I don't know</td>
+      <td>5</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>13</td>
+      <td>4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>13</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="13">Recommending reviewers (N=321)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>73</td>
+      <td>23</td>
+      <td>0</td>
+      <td>0</td>
+      <td>18</td>
+      <td>21</td>
+      <td>47</td>
+      <td>59</td>
+      <td>4</td>
+      <td>10</td>
+      <td>4</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Yes - Recommend for only</td>
+      <td>27</td>
+      <td>8</td>
+      <td>11</td>
+      <td>12</td>
+      <td>6</td>
+      <td>7</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>10</td>
+      <td>4</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Yes - Recommend against only</td>
+      <td>12</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>5</td>
+      <td>6</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Yes - Recommend for and against</td>
+      <td>197</td>
+      <td>61</td>
+      <td>75</td>
+      <td>83</td>
+      <td>51</td>
+      <td>61</td>
+      <td>23</td>
+      <td>29</td>
+      <td>29</td>
+      <td>72</td>
+      <td>19</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>12</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>2</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td colspan="13">Outsourcing peer review (N=318)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>315</td>
+      <td>99</td>
+      <td>90</td>
+      <td>100</td>
+      <td>82</td>
+      <td>100</td>
+      <td>78</td>
+      <td>100</td>
+      <td>38</td>
+      <td>95</td>
+      <td>27</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Interactions and blinding systems
 
 While most editors reported that their journals encourage interaction between reviewers and the handling editor (73%, 230), few reported encouraging dialogue between fellow reviewers (2%, 7) and authors and reviewers (6%, 20). As to blinding procedures (see Table 2), we note the predominance of single-blind systems (author identities are known to the reviewers, but the identities of the reviewers are not known to the authors). We also note that 16 editors (5%) reported using hybrid systems in which authors have the option to conceal their identity in a single-blind system, or reveal it in a double-blind system where authors’ and reviewers’ identities are hidden from each other. Similarly, 55 editors (18%) of blinded journals reported that reviewers are free to reveal their identities to authors if they wish.
 
+**Table 2.**
+ Blinding policies for all journals and by discipline.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">All journals</th>
+      <th colspan="2">Ecology</th>
+      <th colspan="2">Psychology</th>
+      <th colspan="2">Economics</th>
+      <th colspan="2">Medicine</th>
+      <th colspan="2">Physics</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Open identities</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Single-blind</td>
+      <td>176</td>
+      <td>57</td>
+      <td>68</td>
+      <td>78</td>
+      <td>16</td>
+      <td>20</td>
+      <td>33</td>
+      <td>43</td>
+      <td>33</td>
+      <td>87</td>
+      <td>26</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Single-blind (hybrid)</td>
+      <td>12</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>8</td>
+      <td>10</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Double-blind (hybrid)</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Double-blind</td>
+      <td>109</td>
+      <td>36</td>
+      <td>15</td>
+      <td>17</td>
+      <td>51</td>
+      <td>65</td>
+      <td>40</td>
+      <td>52</td>
+      <td>3</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Triple-blind</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 Lastly, 24 (8%) and 19 (6%) editors reported that their journal accepts Registered Reports or uses results-free review respectively i.e. uses ‘results-blind’ review (Button et al., 2016). Registered Reports were most commonly offered by psychology journals (20%, 16 of 82) and results-free review most often used by economics journals (11%, 8 of 72).
 
-## Peer review documentation
+### Peer review documentation
 
 Only four editors (1%) reported publishing reviewer reports (signed or unsigned) and decision letters. However, while public sharing of peer review documentation remains rare, most editors did report that both reviewer reports (79%, 199) and editorial decision letters (82%, 233) were shared with all reviewers.
 
 Editors were also asked whether an editor at their journal would ‘be permitted to edit a reviewer's report’ under certain circumstances, and the process they would follow in that case. While most editors stated that their journal didn’t have an official policy on editing reports (84%, 258), 276 (91%) identified at least one situation where editors at their journal would be permitted to alter a reviewer’s report with or without the reviewer’s permission (for an overview of possible situations, see Table 3). The two most common circumstances where editing was deemed acceptable were when the review contained offensive language (85%, 247) or discriminatory comments (83%, 242). For example, among medical journal editors, 100% of respondents reported it would be acceptable to edit the report under both of these circumstances. Further to this, 39% of responding editors reported that it would be acceptable to edit a review without the reviewer’s permission if they identified themselves (e.g. signed their review) in a blinded review system. Beyond removing offensive material, inappropriate references and identifying features, 55 editors (19%) reported that it would be acceptable to edit a reviewer’s report if they disagreed with the recommendation; 22 of whom reported this would be acceptable to do so without the reviewer’s permission.
 
-## Research output sharing
+**Table 3.**
+ Situations where an editor may edit a reviewer’s report.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Never acceptable to edit the report</th>
+      <th colspan="2">Acceptable to edit without reviewer's permission</th>
+      <th colspan="2">Acceptable to edit, but only with reviewer's permission</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>When a reviewer identifies themselves in a blinded peer review framework (N=276)</td>
+      <td>93</td>
+      <td>34</td>
+      <td>109</td>
+      <td>39</td>
+      <td>74</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>When a reviewer has used inappropriate or offensive language (N=291)</td>
+      <td>44</td>
+      <td>15</td>
+      <td>170</td>
+      <td>58</td>
+      <td>77</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>When the reviewer has made an inappropriate reference to an author's gender, age etc (N=290)</td>
+      <td>48</td>
+      <td>17</td>
+      <td>163</td>
+      <td>56</td>
+      <td>79</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>When there are spelling and/or grammatical errors in the review (N=294)</td>
+      <td>104</td>
+      <td>35</td>
+      <td>141</td>
+      <td>48</td>
+      <td>49</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>When the review has English language problems (N=292)</td>
+      <td>95</td>
+      <td>33</td>
+      <td>124</td>
+      <td>42</td>
+      <td>73</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>When the reviewer has left in their comments to the editor (N-290)</td>
+      <td>50</td>
+      <td>17</td>
+      <td>179</td>
+      <td>62</td>
+      <td>61</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>When the editor disagrees with the reviewer's recommendation (N=293)</td>
+      <td>238</td>
+      <td>81</td>
+      <td>22</td>
+      <td>8</td>
+      <td>33</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+
+### Research output sharing
 
 The last set of policies in our survey focussed on the sharing of data, research materials and analysis scripts. When asked ‘what is the journal’s current policy on the availability of research data, materials and code following publication’, the two most commonly observed policies were ‘Encourages sharing, but it is not required’ and ‘No policy’ (Table 4). Editors of 20%, 15% and 14% of surveyed ecology, medical and economics journals, respectively, declared having mandatory data sharing policies. In contrast, mandatory policies were noted at only one of the surveyed psychology journals, and none of the physics journals. While relatively few editors reported policies requiring data to be shared, 52 (18%) reported that they mandate including a data availability statement specifying whether any data will be shared, and if so, how to access it.
+
+**Table 4.**
+ Journal policies on the sharing of research data, materials and code.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Research data (N=294)</th>
+      <th colspan="2">Research materials (N=264)</th>
+      <th colspan="2">Research code (N=255)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Encourages sharing but it is not required</td>
+      <td>168</td>
+      <td>57</td>
+      <td>143</td>
+      <td>54</td>
+      <td>133</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>Must make available if requested</td>
+      <td>41</td>
+      <td>14</td>
+      <td>29</td>
+      <td>11</td>
+      <td>32</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>In-text statement required</td>
+      <td>52</td>
+      <td>18</td>
+      <td>34</td>
+      <td>13</td>
+      <td>29</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Requires posting to a trusted repository</td>
+      <td>34</td>
+      <td>12</td>
+      <td>16</td>
+      <td>6</td>
+      <td>19</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>No policy</td>
+      <td>65</td>
+      <td>22</td>
+      <td>69</td>
+      <td>26</td>
+      <td>65</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Not applicable</td>
+      <td>10</td>
+      <td>3</td>
+      <td>13</td>
+      <td>5</td>
+      <td>11</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>I don't know</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>8</td>
+      <td>3</td>
+      <td>7</td>
+      <td>3</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+_Percentages do not add up to 100% due to multiple answers being possible_
 
 ## Results: Editors' views on publication ethics
 
 Participating editors were also asked about their views on five issues related to publication ethics issues, and asked to describe what, if anything, they would change about how their journal conducts peer review (Figure 1).
 
-## Co-writing reviews with colleagues (co-reviewing)
+![Figure 1.](https://cdn.elifesciences.org/articles/62529/elife-62529-fig1-v2.jpg)
+
+**Figure 1.:** The figures presented are limited to statements that provided a clear view for or against the topic of interest. An interactive version of this figure reporting results by discipline can be viewed at https://plotly.com/~dghamilton/9/ (Supplementary file 1). Source data for the figure can be found at https://doi.org/10.17605/osf.io/cy2re.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62529/elife-62529-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62529/elife-62529-fig1-figsupp2-v2.jpg)
+
+### Co-writing reviews with colleagues (co-reviewing)
 
 Of the 203 editors that provided a codable position on the topic, 88 (43%) personally encouraged co-reviewing, 70 (34%) reported that it is an acceptable practice at their journal, and 4 (2%) responded that they would allow it despite personally discouraging the practice. Of the editors who expressed support for co-reviewing, one in three added that they think it is a good way to develop the next generation of reviewers. The belief that co-reviewing results in a better review and helps connect journals with future reviewers and editors were also cited as reasons to support the practice. In contrast, editors who discouraged the practice, expressed disinterest in the written opinions of reviewers they did not solicit themselves, as well as concerns about decreased review quality and efficiency.
 
@@ -77,7 +652,7 @@ While endorsement of co-reviewing was high, editors often qualified the need to 
 
 “… I feel this would violate confidentiality and open submitters to the risk of leaking their manuscript or parts of their submission that the authors might find problematic. Also, we ask for the reviewer's expertise purposefully. This is not intended to be a pedagogic exercise.” (Psychology journal editor).
 
-## Reviewers suggesting citations of their work
+### Reviewers suggesting citations of their work
 
 Fewer than 5% of editors overall objected to reviewers suggesting citations of their own work. In fact, a common view was that this should be expected given invited reviewers have likely done relevant work. Despite few objections to this practice, respondents expressed the need for editors to stay vigilant and arbitrate cases. For example, editors were often described as responsible for ensuring that recommended citations are relevant, address significant gaps or mischaracterisations, and display balance or restraint (often to prevent unblinding of reviewers). A common view was that editors should ultimately leave it to authors to determine whether to cite the suggested paper or not. Interestingly, three editors also stated that gratuitous requests would be grounds for editing a report. The following statements touch upon many of these themes:
 
@@ -87,7 +662,7 @@ Fewer than 5% of editors overall objected to reviewers suggesting citations of t
 
 “Yes. But only if their work is so significant on the topic that to leave it out would be a significant indication of a large scholarly oversight. I do dislike this practice and often discontinue the use of the reviewer if the suggestions are not germane or if it happens consistently.” (Economics journal editor).
 
-## Reviewers requesting access to raw data
+### Reviewers requesting access to raw data
 
 Of the 210 editors that provided codable views, 200 (95%) stated that they would support and mediate a request from a reviewer to access a manuscript’s raw data if they felt it was needed. This high level of support was noted to be consistent across all disciplines. However, of these respondents, approximately one in six added that they would need a compelling reason to do so, such as if credible ethical or quality concerns were raised. Furthermore, despite the high levels of in principle support, some also conceded that respecting data protections would need to be prioritised. Some editors expressed that while they would attempt to circumnavigate confidentiality issues by offering investigation through an independent intermediary, disclosure would ultimately be left at the authors’ discretion. Consequently, few editors outside those of journals adopting mandatory data sharing policies stated that manuscript acceptance would be contingent on sharing. Some of these views were captured in the following responses:
 
@@ -97,7 +672,7 @@ Of the 210 editors that provided codable views, 200 (95%) stated that they would
 
 “I definitely would support a request from a peer reviewer to see a manuscript's raw data if they feel it's necessary. Acquisition, processing and (statistical) evaluation of data in ecology is often complex, and the reviewer can assess the validity of data interpretation sometimes only when seeing original data and experimental design.” (Ecology journal editor).
 
-## Editors publishing in the journals they edit
+### Editors publishing in the journals they edit
 
 When asked how often an editor should publish their own original articles in a journal they edit, 176 (79%) editors described a scenario where they thought it would be acceptable for any editor to do so. A smaller proportion of respondents stated that this would not be acceptable for the lead editor (8%, 17), or for any editor (13%, 29). Once again, support was often qualified with prerequisites, most commonly processes to protect against conflicts of interest. Suggested processes included: independent editing and reviewing, preventing the submitting editor knowing the identities of the handling editor and reviewers (and vice-versa), and providing a statement declaring the handling editor’s identity on the final article.
 
@@ -111,7 +686,7 @@ Interestingly, views on how often an editor should submit research were more pol
 
 “Not very often. In [my country], though, there are not so many (recognized) outlets for economists, while there is a need for decent local work to be done. Thus, I do publish an article here and there. I have absolutely no access to the article while it is under review; so, at least in principle, I cannot influence its 'passage' through the system.” (Economics journal editor).
 
-## Direct replications
+### Direct replications
 
 When asked their views on direct replication studies (i.e. research that follows the methods of another study as closely as possible), of the 183 editors that provided a clear stance, 86% stated that they support the practice or allow replication studies to be submitted to their journals. However, while respondents often perceived direct replications as an important and informative line of research, many also stressed the need for replication studies to be accompanied by novel work or offer new insights as a condition for publication, with the discovery of findings contradicting or undermining the original study being preferable for some. Similarly, the importance of the original study, as well as the number of existing replication attempts were also highlighted as important factors influencing the likelihood of acceptance of direct replication studies.
 
@@ -125,7 +700,7 @@ In contrast, the few editors who discouraged, or were ambivalent towards replica
 
 “Replication studies are essential as one of the points of scientific research is to be able replicate the results of other research. An inability to replicate a study should make us question the results of that study. Journals like [redacted] have a section devoted to Replication Studies with an Editor in charge of these studies. This is best practice as far as I am concerned.” (Economics journal editor).
 
-## Changes to existing peer review practices
+### Changes to existing peer review practices
 
 Lastly, when asked if they would change anything about how their journal conducts peer review, of the 196 editors who responded, only 35% indicated that they were satisfied with the current system. The remaining two-thirds discussed changes they were contemplating, implementing or had implemented recently. The most frequently mentioned changes included: modifying the blinding system (most often increasing anonymity); improving how the journal finds reviewers; and improving the overall efficiency of the process. Another common theme was incentives and rewards for reviewers: the ideas put forward included remuneration, acknowledgment via Publons, the waiving of article processing charges, and professional development credits.
 
@@ -155,7 +730,7 @@ Due to its closed nature, peer review continues to be difficult to examine. Our 
 
 ## Materials and methods
 
-## Journal selection strategy
+### Journal selection strategy
 
 Clarivate Analytics' InCites Journal Citation Reports (“Browse by Journal” function) was used to identify journals within five broad fields of interest to members of the authorship team, specifically: ecology, economics, medicine, physics and psychology. Lists of journals sorted by 2017 Journal Impact Factor were generated for each discipline on April 9th, 2019. Journals flagged as duplicate entries across disciplinary lists were subjectively removed from the less subject-appropriate list (e.g. The Journal of Comparative Psychology was removed from the ecology list) and then replaced with the next entry. The list of categories used in InCites to define disciplines can be found in Supplementary file 2. Foreign-language journals, book series and data repositories were excluded from this study.
 
@@ -163,15 +738,15 @@ Aiming for a minimum of 50 responses per discipline, the top 300 journals in eac
 
 The lead editor for each of the 1500 journals was identified via the journal’s website, and contact emails obtained via a reliable source e.g. journals’ and academic institutions’ websites or recent publications. In the event that the same individual was found to edit multiple journals (duplicate editor) a co-lead editor or deputy editor was invited if available, or the editor was contacted by email and asked whether they would complete the survey on behalf of each of the journals they edit. As indicated above, in the final sample eight editors represented more than one journal.
 
-## Survey themes and questions
+### Survey themes and questions
 
 Two separate surveys were created for this study. The first (Survey A) aimed to characterise journals’ peer review policies and practices as understood and reported by a member of the journal’s editorial team. The second (Survey B) was designed to capture editors’ opinions on five current peer review and publication ethics issues. For Survey A, participants were informed prior to commencing that information on routine peer review policies and practices were going to be collected, and provided consent allowing the study team to link responses back to the journal. For Survey B, participants were informed that all statements would be kept anonymous. Participants provided consent prior to beginning each survey. All questions for both surveys can be found in Supplementary file 3. De-identified responses to Survey A and coding data for Survey B are publicly available (Hamilton et al., 2020). The survey and data collection strategy was approved by the University of Melbourne’s Faculty of Science Human Ethics Advisory Group (Project ID: 1954490.1) prior to commencement.
 
-## Survey platform and distribution
+### Survey platform and distribution
 
 Qualtrics Solutions’ Online Survey Software (Qualtrics, Provo, UT) was used to create and distribute the two surveys. Email invitations housing a personalised link to Survey A were generated and sent to all editors between June 26th and July 18th, 2019. Participants who completed Survey A were automatically redirected to the anonymous Survey B. Throughout the course of the project, three reminder emails were sent in July, August and September 2019 to editors who had not started (and not opted-out of future email reminders), or not completed Survey A. Both surveys were deactivated, and all responses recorded on October 1 st, 2019.
 
-## Statistical analysis and reporting
+### Statistical analysis and reporting
 
 Descriptive statistics were used to analyse answers to multiple choice survey questions in R (R Foundation for Statistical Computing, Vienna, Austria, v3.6.0). Missing responses were omitted from the proportions reported in the results section. The full breakdown of Survey A responses by discipline can be seen in Supplementary file 4. All figures were created in R using the ggplot2 (v3.2.0), plotly (v4.9.2) and viridis packages (v0.5.1) (Wickham, 2016; Sievert, 2018; Garnier, 2018).
 

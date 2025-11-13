@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00y4zzh67 Department of Anatomy and Cell Biology and the GW Cancer Center, George Washington University School of Medicine and Health Sciences Washington United States
-2. https://ror.org/017zqws13 Department of Genetics, Cell Biology & Development and the Developmental Biology Center, University of Minnesota Minneapolis United States
+1. Department of Anatomy and Cell Biology and the GW Cancer Center, George Washington University School of Medicine and Health Sciences Washington United States ([ROR:00y4zzh67](https://ror.org/00y4zzh67))
+2. Department of Genetics, Cell Biology & Development and the Developmental Biology Center, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
 
 † Corresponding author
 
@@ -39,13 +39,35 @@ Here, we show that the activity of BMPs is further fine-tuned by a previously un
 
 ## Results
 
-## Genome-wide expression profiling in Drosophila wing imaginal discs identifies nord as a novel target gene of the Hh signaling pathway
+### Genome-wide expression profiling in Drosophila wing imaginal discs identifies nord as a novel target gene of the Hh signaling pathway
 
 The imaginal discs of Drosophila melanogaster, where most known Hh signaling target genes are expressed with a restricted pattern (Strigini and Cohen, 1997), offer an accessible model system for identifying novel targets of the Hh signaling pathway. In wing discs, cells near the A/P compartment boundary (B: ptc+) receive the highest level of Hh stimulation while A cells (A: hh-), located further from the border, receive lower levels of stimulation. In contrast, P cells (P: hh+) do not respond to Hh due to lack of the receptor Ptc and the transcription factor Ci (Eaton and Kornberg, 1990; Figure 1A, Figure 1—figure supplement 1). To identify target genes whose expression is controlled, directly or indirectly, by Hh signaling activity, we performed a systematic comparison of gene expression profiles among the three cell types. After genetic labeling, wing discs were dissected, cells dissociated, and then sorted using fluorescence-activated cell sorting (FACS). RNA was extracted from the sorted cell populations and subjected to microarray analysis (Figure 1A, Figure 1—figure supplement 1). Previously, by comparing genes differentially expressed in the A/P boundary adjacent cells (B: ptc+) and P cells (P: hh+), we identified an unknown Hh pathway target dTRAF1/TRAF4 and established that the Hh signal mediates JNK activity by regulating the expression of dTRAF1/TRAF4 in developmental organ size control (Willsey et al., 2016; Figure 1B). Here, we modified the gene expression analysis method by including additional transcriptome comparisons between the A/P boundary adjacent cells (B: ptc+) and A cells (A: hh-), and between A cells (A: hh-) and P cells (P: hh+). Genes whose expression is not only higher in A cells than P cells (FoldA/P > 1.2), but also higher in the A/P boundary adjacent cells than general A cells (FoldB/A > 1.5) were selected as potential Hh-induced target genes (Figure 1B and C). Hh-responsive genes known to be differentially expressed in the wing discs were found, including ptc and dpp, (Figure 1B–D, Supplementary file 1). We then focused on nord (FlyBase, CG30418), one of the top-ranking A/P boundary-enriched genes, with no previously characterized expression pattern or functional analysis (Figure 1B–D). We first verified the differential expression of nord across the Drosophila wing imaginal discs via quantitative reverse transcription PCR using RNA isolated from FACS sorted A, B, and P cells (Figure 1E). We also performed in situ hybridization to localize nord transcripts in the wing imaginal discs (Figure 1F). Like the known Hh signaling target gene ptc (Figure 1E and F), nord transcripts were absent from the P compartment and primarily detected in the A cells adjacent to the A/P compartment boundary (Figure 1E and F). Of note, unlike ptc and most other Hh pathway target genes, nord expression was not detected in the central wing pouch (Figure 1F). Collectively, these results suggested that nord is a potential target gene of the Drosophila Hh signaling pathway.
 
-## Hh signaling regulates nord expression in the wing discs
+![Figure 1.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of Drosophila wing imaginal disc: posterior compartment (P: hh+), anterior compartment (A: hh-), and anterior compartment cells adjacent to the A/P boundary (B: ptc+). A, P, and B cells from wing imaginal discs of third instar larvae carrying hh-Gal4 or ptc-Gal4-driven UAS-mCD8-GFP were dissociated and sorted by fluorescence-activated cell sorting (FACS). RNA was isolated and hybridized to microarrays. Differentially expressed genes were identified. (B) Dot plot shows all 14,448 annotated probe sets. Each dot indicates one probe set. The x-axis represents the log2 fold change of each gene in B vs. A cells, and the y-axis represents the log2 fold change of each gene in A vs. P cells. The blue dash lines indicated the threshold used to select differentially expressed genes in each group. Colored dots indicate known or novel Hh pathway targets dTraf1/Traf4 (orange), dpp (red), ptc (red), and nord (blue) in the graph. (C) Zoomed view of the bottom-right corner in panel (B) to show 59 differentially expressed genes, whose expression is significantly increased in B (ptc+) cells but decreased in P (hh+) cells compared with A (hh-) cells. (D) Heatmap shows the expression level of the 59 top-ranking differentially expressed genes in A, B, and P cells. The fold change in B vs. A cells was used to rank the order. (E) Fold changes of ci, hh, ptc, and nord mRNA expression, measured by quantitative reverse transcription PCR and normalized by the expression of the housekeeping gene pkg, in FACS-sorted A, B, or P cells. (F) In situ hybridization of ptc and nord in the third instar larval Drosophila wing discs. Scale bar, 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Posterior compartment cells (P: hh+; blue), anterior compartment cells (A: hh-; white), and anterior compartment cells at the A/P boundary (B: ptc+; red) from third instar Drosophila wing imaginal disc were dissociated and sorted by fluorescence-activated cell sorting (FACS). RNA from the sorted cells was isolated and subjected to either microarray or quantitative reverse transcription PCR. (B) Dissociation and FACS-based purification of P and A cells from wing imaginal discs of third instar larvae carrying hh-Gal4 and UAS-mCD8-GFP. (C) Dissociation and FACS-based purification of B cells from wing imaginal discs of third instar larvae carrying ptc-Gal4 and UAS-mCD8-GFP.
+
+### Hh signaling regulates nord expression in the wing discs
 
 To further analyze the expression pattern and investigate the function of Nord, we identified and characterized two Minos-Mediated Integration Cassette (MiMIC) lines from the Drosophila Gene Disruption Project (GDP) collection (Venken et al., 2011), one a gene-trap nord allele Mi{MIC}nordMI06414 and the second a protein-trap nord allele Mi{PT-GFSTF.2}nordMI06414-GFSTF.2. We also generated an additional protein-trap nord allele Mi{PT-RFPHA.2}nordMI06414-RFPHA.2. The nord gene-trap allele Mi{MIC}nordMI06414 contains a MiMIC consisting of a splice acceptor site followed by stop codons in all three reading frames. This transposon was inserted into the first coding intron of nord and thus interrupted transcription and translation of nord (Figure 2—figure supplement 1). This nord gene-trap allele was used in the functional analysis of Nord. The two protein-trap nord alleles Mi{PT-GFSTF.2}nordMI06414-GFSTF.2 and Mi{PT-RFPHA.2}nordMI06414-RFPHA.2 were derived from the Mi{MIC}nordMI06414 line by replacing the original gene-trap cassette with either an EGFP-FlAsH-StrepII-3xFLAG (GFSTF) or a TagRFP-T-3xHA (RFPHA) protein-trap cassette using Recombinase-Mediated Cassette Exchange strategies (Nagarkar-Jaiswal et al., 2015; Figure 2A). In these nord protein-trap alleles, the GFSTF or RFPHA tag was inserted in the appropriate orientation and reading frame of nord between amino acids 103R and 104F (Figure 2—figure supplement 2), which permitted visualization of the Nord protein localization in vivo. Immunostaining of wing imaginal discs from the nord protein-trap alleles showed that Nord is expressed along the A/P boundary within the hinge and notum but avoids the central wing pouch (Figure 2B and C), identical to the pattern of endogenous nord transcripts revealed by in situ hybridization (Figure 1F).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram of the wild-type nord locus and the protein-trap alleles of nord. The EGFP-FlAsH-StrepII-3xFLAG (GFSTF) or TagRFP-T-3xHA (RFPHA) tag was inserted in the appropriate orientation and reading frame of nord, which permitted visualization of the Nord protein localization in vivo. (B) Wing imaginal discs from late third instar larvae carrying nord-GFP (Mi{PT-GFSTF.2}nordMI06414-GFSTF.2/+) were immunostained for GFP (green), Ptc (red), and Ci (blue). Maximum intensity z-projection and 3D reconstruction from a confocal image stack show nord expression in a representative wing imaginal disc. White brackets indicate the expression range of Ptc or Nord-GFP. (C, D) Wing imaginal discs from late third instar larvae carrying nord-RFP (Mi{PT-RFPHA.2}nordMI06414-RFPHA.2/+) and flip-out clones expressing the indicated UAS-transgenes were immunostained for HA (Nord-RFP, red), GFP (flip-out clones, green), and Ci (A compartment, blue). (D’–D”’) Zoomed view of the indicated area from panel (D). Note that ectopic nord-RFP is induced in UAS-SmoGlu-expressing clones located in the A compartment flanking the wing pouch (D’), but not in the P compartment (D”’). In the central wing pouch (D”), little (yellow star) or none (blue star) ectopic Nord-RFP was detected in SmoGlu-expressing flip-out clones. Dashed white lines indicate the clone boundary; dashed blue lines indicate the A/P compartment boundary, which is determined by the expression of endogenous Ci. Scale bar, 50 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic diagram of the wild-type nord locus, the gene-trap, and the protein-trap alleles of nord. A Minos-Mediated Integration Cassette (MiMIC) consisting of a splice acceptor site followed by stop codons in all three reading frames was inserted into the first coding intron of nord in the nord gene-trap allele Mi{MIC}nordMI0641. The EGFP-FlAsH-StrepII-3xFLAG (GFSTF) or TagRFP-T-3xHA (RFPHA) protein-trap cassette was inserted into the first coding intron in the appropriate orientation and reading frame of nord, which resulted in the Nord-GFP or Nord-RFP fusion. Note that the gene Ir60a (light blue) is transcribed from the opposite strand. (B) Schematic diagram of the predicted protein or polypeptide products from the wild-type nord locus, the gene-trap, and the protein-trap alleles of nord. (C–F) RT-PCR confirmation of the predicted transcripts from the wild-type nord locus, the gene-trap, and the protein-trap alleles of nord. RNA is isolated and reverse-transcribed from the indicated fly lines. The location of PCR primers is marked in (A).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A–C) Larvae carrying nord-GFP (Mi{PT-GFSTF.2}nordMI06414-GFSTF.2/+) and hs-Gal4 in combination with the indicated transgenes were heat shocked at 37°C for 30 min. 24–48 hr later, the wing imaginal discs were collected and immunostained for GFP (green), Ptc (red), and Ci (blue). Note that Nord-GFP expression domain is expanded anteriorly with ectopic expression of Hh (B), but reduced with ectopic expression of Ptc (C). White brackets indicate the expression range of Nord-GFP. Scale bar, 50 μm.
 
 The selective upregulation of nord in the wing imaginal disc A cells adjacent to the A/P boundary indicated that nord expression may be controlled by Hh signaling activity.
 
@@ -53,27 +75,73 @@ We next examined this issue directly by following endogenous Nord expression in 
 
 To investigate whether Hh signaling activity can cell-autonomously induce the expression pattern of nord, we performed clonal analyses using the flip-out technique to ectopically activate the Hh signaling pathway (Ito et al., 1997). The expression of endogenous Nord was examined in the third instar wing discs carrying the protein-trap nord allele Mi{PT-RFPHA.2}nordMI06414-RFPHA.2 (hereafter referred to as nord-RFP) and flip-out clones expressing UAS-mCD8-GFP alone or in combination with a constitutively active form of Smo (UAS-SmoGlu) (Zhang et al., 2004; Figure 2C and D). We found that activation of Hh signaling via the constitutively active SmoGlu autonomously induced ectopic nord expression in the A compartment in clones that flanked the wing pouch (Figure 2D and D’). Consistent with the observation that endogenous nord expression is restricted to the A compartment and mostly absent from the center of the wing pouch (Figures 1F, 2B and C, Figure 2—figure supplement 3A), we noted that little or no ectopic Nord-RFP was detected in SmoGlu-expressing flip-out clones located in the central wing pouch region or those located in the P compartment, respectively (Figure 2D” and D”’). Furthermore, ectopic Hh, which is sufficient to activate the expression of the high-threshold target ptc, failed to induce nord expression in the center of the wing pouch (Figure 2—figure supplement 3B), indicating another mechanism excludes nord expression from this region. Nevertheless, these data demonstrated that nord expression in the hinge, the notum, and the edge of the wing pouch is regulated by Hh signaling activity. We thus identified nord as a novel target gene of the Drosophila Hh signaling pathway.
 
-## Nord belongs to an evolutionarily conserved family of secreted proteins
+### Nord belongs to an evolutionarily conserved family of secreted proteins
 
 The Drosophila nord gene is associated with only one protein-coding transcript and one polypeptide containing 587 amino acids. It has a single homolog in the mouse genome, called NDNF (Kuang et al., 2010). Nord and NDNF belong to a family of evolutionarily conserved secreted proteins with a predicted signal peptide followed by one or two fibronectin type III-like repeats (FN3) and a domain of unknown function (pfam10179: DUF2369). Analyses of the genome and EST sequences from various organisms suggest that nearly all bilaterian animals have either single or multiple orthologous genes for Nord/Ndnf (Figure 3A). We cloned the full-length cDNAs from Drosophila Nord and NDNF from several different species into a mammalian expression vector and found that both Nord and various NDNF proteins were secreted into the medium after transient transfection into HEK 293T cells (Figure 3B). We immunostained unpermeabilized HEK 293T cells that were co-transfected with plasmids expressing Myc-tagged Nord or various NDNFs together with cytoplasmic-localized GFP proteins and detected a significant amount of Nord/NDNF proteins on the surface of the transfected cells (marked by cytoplasmic GFP expression), as well as the surrounding extracellular matrix within several cell diameters (Figure 3C, arrows). Consistent with the observations in cultured cells, when wing imaginal discs from third instar larvae carrying nord-GFP were immunostained in the absence of detergent, secreted Nord-GFP was noticed both flanking the A/P boundary and throughout the wing disc albeit at a much lower level (Figure 3D). Furthermore, when flip-out clones expressing an HA-tagged Nord were induced in the third instar wing imaginal discs, secreted Nord was detected outside of flip-out clones (Figure 3E). Together, these data demonstrated that Nord and its homolog NDNF belong to a family of secreted proteins, which likely exist in two spatially distinct pools: diffusible Nord/NDNF proteins that can reach a longer distance and membrane/matrix-associated Nord/NDNF proteins near the source cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig3-v2.jpg)
 
-**Figure 3.:** (A) Phylogenetic analysis of Nord homologs from different species. The phylogenetic analysis of Nord homologs was performed with eggNOG (http://eggnogdb.embl.de/#/app/home). The phylogenetic tree is shown with domains predicted using Pfam (https://www.ebi.ac.uk/interpro/). The protein diagrams were then drawn proportional in length to the number of residues. Red stars (*) and red arrows (→) indicate the Ndnf/Nord proteins selected for further analysis. SP, signal peptide; FN3, fibronectin type 3 domain; DUF2369, domain of unknown function 2369. (B) Western blot analysis of HisMyc-tagged Nord or Ndnf protein in medium (M) and cell lysate (L) from transiently expressed in HEK-293 cells. Smeared band (*) indicates a portion of slow migrating Ndnf/Nord protein that may undergo extensive post-translational modification. Blue arrow (→) indicates Ndnf/Nord proteins that migrate as their predicted size. Hs, Homo sapiens; Dm, Drosophila melanogaster; Ce, Caenorhabditis elegans; Dr, Danio rerio; Xt, Xenopus tropicalis. (C) HEK-293 cells co-transfected with GFP and HisMyc-tagged Nord or Ndnf followed by cell-surface staining with anti-Myc antibody to reveal secreted Nord or Ndnf protein (yellow arrows). Note that secreted Nord-Myc and Ndnf-Myc (anti-Myc, red) were also detected several cell diameters away from the expressing cells (GFP, green). Scale bar, 10 μm. (D) Wing imaginal discs from third instar WT or nord-GFP (Mi{PT-GFSTF.2}nord) larvae were immunostained for GFP (red) without detergent treatment to label the secreted pool of Nord-GFP proteins. The total Nord-GFP proteins were detected by fluorescence from the GFP tag (green). Scale bar, 20 μm. (MI06414-GFSTF.2/+E) Wing imaginal discs from third instar larvae carrying flip-out clones expressing UAS-DsRed alone or in combination with UAS-Nord. The discs were immunostained in the absence of detergent to label the secreted pool of HA-tagged UAS-Nord (anti-HA, blue). Flip-out clones were detected by fluorescence from the UAS-DsRed transgene (red). Scale bar, 20 μm.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Phylogenetic analysis of Nord homologs from different species. The phylogenetic analysis of Nord homologs was performed with eggNOG (http://eggnogdb.embl.de/#/app/home). The phylogenetic tree is shown with domains predicted using Pfam (https://www.ebi.ac.uk/interpro/). The protein diagrams were then drawn proportional in length to the number of residues. Red stars (*) and red arrows (→) indicate the Ndnf/Nord proteins selected for further analysis. SP, signal peptide; FN3, fibronectin type 3 domain; DUF2369, domain of unknown function 2369. (B) Western blot analysis of HisMyc-tagged Nord or Ndnf protein in medium (M) and cell lysate (L) from transiently expressed in HEK-293 cells. Smeared band (*) indicates a portion of slow migrating Ndnf/Nord protein that may undergo extensive post-translational modification. Blue arrow (→) indicates Ndnf/Nord proteins that migrate as their predicted size. Hs, Homo sapiens; Dm, Drosophila melanogaster; Ce, Caenorhabditis elegans; Dr, Danio rerio; Xt, Xenopus tropicalis. (C) HEK-293 cells co-transfected with GFP and HisMyc-tagged Nord or Ndnf followed by cell-surface staining with anti-Myc antibody to reveal secreted Nord or Ndnf protein (yellow arrows). Note that secreted Nord-Myc and Ndnf-Myc (anti-Myc, red) were also detected several cell diameters away from the expressing cells (GFP, green). Scale bar, 10 μm. (D) Wing imaginal discs from third instar WT or nord-GFP (Mi{PT-GFSTF.2}nordMI06414-GFSTF.2/+) larvae were immunostained for GFP (red) without detergent treatment to label the secreted pool of Nord-GFP proteins. The total Nord-GFP proteins were detected by fluorescence from the GFP tag (green). Scale bar, 20 μm. (E) Wing imaginal discs from third instar larvae carrying flip-out clones expressing UAS-DsRed alone or in combination with UAS-Nord. The discs were immunostained in the absence of detergent to label the secreted pool of HA-tagged UAS-Nord (anti-HA, blue). Flip-out clones were detected by fluorescence from the UAS-DsRed transgene (red). Scale bar, 20 μm.
 
-## Nord is required for proper growth and crossvein patterning of the Drosophila wing
+### Nord is required for proper growth and crossvein patterning of the Drosophila wing
 
 To investigate the function of Nord, we generated and characterized several nord loss-of-function alleles by using different genetic strategies. We first analyzed the phenotypes of two nord mutant alleles, nord3D and nord22A, created by the CRISPR/Cas9 strategy. Both alleles carry short deletions in the fourth coding exon that cause frameshifts and premature stop codons within the DUF2369 domain of Nord (Figure 4A, Figure 4—figure supplement 1). Animals homozygous or trans-heterozygous for nord22A and nord3D are viable and fertile. As homozygous or trans-heterozygotes, they show no obvious defects in the shape of the wing blade. However, a consistent and significant decrease in wing size was observed in both male and female flies (Figure 4—figure supplement 2). We next characterized the nord gene-trap allele Mi{MIC}nordMI06414 (hereafter referred to as nordMI06414) from the GDP collection (Venken et al., 2011), in which the transcription and translation of nord are interrupted after the first coding exon, resulting in a predicted truncated peptide containing only the first 103 amino acids without the conserved DUF2369 and FN3 domains (Figure 2—figure supplement 1, Figure 4A, Figure 4—figure supplement 1). Similar to the CRISPR-derived nord mutant alleles, the nordMI06414 homozygous flies are viable and fertile, and both male and female nord mutants showed a significant wing size reduction when compared to their wild-type counterpart (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig4-v2.jpg)
+
+**Figure 4.:** (A) Upper panel: schematic diagram of the wild-type nord locus, the gene-trap, and the CRISPR alleles of nord. A Minos-Mediated Integration Cassette (MiMIC) cassette consisting of a splice acceptor site followed by stop codons in all three reading frames was inserted into the first coding intron of nord in the nord gene-trap allele nordMI0641. Detailed view of the deleted regions in the nord mutant alleles generated by the CRISPR/Cas9 system. Lower panel: schematic diagram of the human Neuron-Derived Neurotrophic Factor (NDNF) protein, Drosophila Nord protein, and the predicted polypeptide products from the indicated nord mutant alleles. (B) Adult wings obtained from male or female flies with indicated genotypes were pseudo-colored and overlapped to show the size difference. ACV, anterior crossvein; PCV, posterior crossvein; LV, longitudinal veins (L1–L5). (C) Quantification of wing size, distance between distal ends of LVs L2 and L5 (dL2–L5), L3 and L4 (dL3–L4), and the ratio of dL3–L4 /dL2–L5. Each bar shows the mean ± SD from n = 20 wings. All flies were grown at 25°C. One-way ANOVA followed by Sidak’s multiple comparison test or unpaired two-tailed t-test was used for statistical analysis. ***p<0.001, ****p<0.0001, ns, not significant; au, arbitrary units. (D) Adult wings of flies with the indicated genotypes. Yellow arrowhead indicates ectopic vein near posterior crossvein (PCV) or L5. (E) Quantification of the ectopic venation phenotype in adult wings from flies with the indicated genotypes. n > 50. Two-sided Fisher’s exact tests were used for statistical analysis. ***p<0.001, ****p<0.0001, ns, not significant. Scale bar, 500 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Overlapped adult wings obtained from male flies with indicated genotypes. Scale bar, 500 μm. (B) Quantification of the size of adult wing from flies with indicated genotypes. Each bar shows the mean ± SD from n > 14 adults wings, and representative images are shown in panel (A). All flies were grown at 25°C. One-way ANOVA followed by Sidak’s multiple comparison test was used for statistical analysis. ****p<0.0001, ns, not significant.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Mi{MIC}nordMI06414 allele failed to complement deficiency lines (red) harboring nord deletion for ectopic crossvein formation. The deficiency lines that complemented the Mi{MIC}nordMI06414 allele for ectopic crossvein formation are indicated in black.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A, B) Quantification of the size of adult wing from male and female flies with indicated genotypes. Each bar shows the mean ± SD from n > 10 adults wings. All flies were grown at 25°C. The unpaired two-tailed t-test was used for statistical analysis. **p<0.01, ****p<0.0001, ns, not significant.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A, B) Quantitation of wing hair cell density in a fixed area in the posterior wing between the L4 and L5 wing veins (see Materials and methods) for nord MI06414/ Df(2R)BSC155 or nord22A/ Df(2R)BSC155 compared to heterozygous (nordMI06414/+ or nord22A/+) controls. Each bar shows the mean ± SD, n = 10. The unpaired two-tailed t-test was used for statistical analysis. ns, not significant (p>0.05).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A) Adult wings were dissected, mounted, and imaged using a ×4 objective. The box indicates the regions in which wing hairs/trichome were counted for each wing. Scale bar, 500 μm. (A’) Wing trichomes from the dorsal wing surface were imaged with a ×40 objective in the region between veins 4 and 5 just distal to the posterior crossvein (PCV). Trichomes were counted manually within the imaged area (37,500 µm2). Scale bar, 50 μm.
 
 Along with the growth defects in the wing, we also noted that 61% of females (59/97) and 21% (17/82) of males of the nord22A allele showed ectopic venation in the vicinity of the PCV of one or both wings (Figure 4D and E). The ectopic vein tissue was also found emanating from the PCV in the wing of adult flies homozygous for the nordMI06414 allele. Like nord22A, the ectopic venation displayed higher penetrance in females than in males, with 86% of mutant females and 36% of mutant males showing additional vein material at one or both wings (Figure 4D and E). This ectopic venation phenotype was not observed in nord3D homozygotes.
 
 To further address whether the ectopic venation phenotype is caused by loss of nord, we performed genetic complementation tests between nordMI06414, nord3D, and nord22A with various deficiency lines covering the nord locus (Figure 4—figure supplement 3). All available deficiency lines in which the nord locus was entirely removed did not rescue the ectopic PCV phenotype of nordM106414, whereas adjacent deficiency lines with an intact nord locus fully rescued the crossvein defects in the nordMI06414 adult wings (Figure 4D and E, Supplementary file 2). We next tested Df(2R)BSC155 in trans to either nord22A and nord3D and once again found that nord22A exhibited high-frequency ectopic venation (Figure 4D and E; 69% females and 26% males), while nord3D showed a modest interaction (14% females and <1% males). Similar to the homozygotes, both nord22A and nord3D in trans to Df(2R)BSC155 also produced smaller wings compared to controls (Figure 4—figure supplement 4). To examine whether this size difference was the result of reduced cell proliferation or a smaller cell size, we examined wing trichome density as a proxy for cell size (Brummel et al., 1999; Dobzhansky, 1929; Martín-Castellanos and Edgar, 2002). We found no difference for nord MI06414/Df(2R)BSC155 or nord22A/Df(2R)BSC155 compared to heterozygous (nord MI06414/+ or nord22A/+) controls (Figure 4—figure supplements 5 and 6), suggesting that the alteration in wing size is caused by reduced cell proliferation. Together, these experiments indicate that Nord is required in wing imaginal discs for both proper growth and crossvein patterning and that the nord3D allele may retain some function.
 
-## Spatial-temporal overlapping expression of nord and dpp in the developing Drosophila wing
+### Spatial-temporal overlapping expression of nord and dpp in the developing Drosophila wing
 
 Both wing growth and crossvein patterning require precisely controlled BMP signaling activity (Affolter and Basler, 2007; De Celis, 2003). During wing development, BMP signaling activity is an output of the combined action of two BMP ligands, the Drosophila BMP2/4 homolog Dpp and the BMP5/6/7/8 homolog Gbb (Bangi and Wharton, 2006). Gbb is broadly and uniformly expressed in the larval and pupal wing, while Dpp, a well-known target of Hh signaling, is expressed in a stripe of cells in the anterior compartment along the A/P compartmental boundary of the larval wing imaginal disc. From this source, Dpp protein is thought to spread and form a concentration gradient to control the patterning and growth of the wing imaginal disc. In agreement with our finding that like dpp, nord is a target gene of the Hh signaling pathway in the wing imaginal discs (Figures 1 and 2), we observed a spatial-temporal correspondence between nord and dpp expression. Both Nord protein indicated by the Nord-GFP fusion derived from the nord-GFP protein-trap allele and Dpp precursor protein detected via an anti-Dpp prodomain antibody were present along the A/P boundary flanking the central wing pouch through the larval stage (Figure 5A). In the pupal wing, both Nord and Dpp expression does not change during the first 8 hr after pupation (AP) (Figure 5A). Subsequently, dpp disappears from the A/P boundary and commences expression in the differentiating LVs (deCelis, 1997; Yu et al., 1996); however, the Hh-dependent expression of nord along the A/P boundary remains for about 30 hr after pupation and diminishes after Dpp expression was detectable in both the LV and PCV regions (Figure 5A, Figure 5—figure supplement 1). Taken together, Nord proteins secreted from the A/P boundary stripe are expressed together or in close proximity with Dpp through the larval and early pupal (0–30 hr AP) stages.
 
-## Opposing effects of Nord in modulating BMP signaling activity during wing growth and PCV patterning
+![Figure 5.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig5-v2.jpg)
+
+**Figure 5.:** (A) Expression of Nord in the wing discs through the third instar larval and early pupal stage. Upper panel: the third instar wing discs from nord-GFP (Mi{PT-GFSTF.2}nordMI06414-GFSTF.2/+) larvae were collected at indicated time points after egg laying (AEL) and were immunostained for GFP (Nord, green) and the pro-domain of Dpp (red). Bottom panel: pupal wings from pupae carrying both nord-GFP were collected at indicated time points after pupation (AP) and were immunostained for GFP (Nord, green) and the pro-domain of Dpp (red). Scale bar, 100 μm. (B) Wing imaginal discs from third instar wild-type and nord mutant (nordMI06414) larvae were immunostained for pMad (green) and Ptc (red). Scale bar, 50 μm. (C) Plotted pixel intensity of pMad or Ptc as a function of A/P position. Each point shows the mean ± SD. n = 15. au, arbitrary units. (D) Anti-pMad staining in wild-type and nordMI06414 pupal wings at indicated hours AP. Scale bar, 100 μm. (E) Quantification of the width (yellow dashed line in panel D) of pMad signal at primordial posterior crossvein (PCV) at indicated time points. Each bar shows the mean ± SD from n > 10 pupal wings. The unpaired two-tailed t-test was used for statistical analysis. ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) The early pupal wing discs from nord-GFP (Mi{PT-GFSTF.2}nordMI06414-GFSTF.2/+) pupae were collected at indicated time points after pupation (AP) and were immunostained for GFP (Nord, green) and pMad (red). Note that Nord is expressed in the early pupal wing during the pMad refinement at the posterior crossvein (PCV) primordia. The yellow arrows indicate the PCV primordia. Scale bar, 100 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Wing imaginal discs from late third instar wild-type and nord mutant (nordMI06414) larvae were immunostained for the pro-domain of Dpp (green) and Ptc (red). Scale bar, 20 μm. (B) Plotted pixel intensity of Dpp as a function of anteroposterior (A/P) position. The A/P position is determined by the expression of Ptc. Each point shows the mean ± SD. n = 10 wing discs. au, arbitrary units. Scale bar, 50 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Representative images of the ectopic venation phenotype in adult wings from female flies with the indicated genotypes. Scale bar, 500 μm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Quantification of the ectopic venation phenotype in adult wings from female flies with the indicated genotypes. n > 50. Two-sided Fisher’s exact tests were used for statistical analysis. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns, not significant.
+
+### Opposing effects of Nord in modulating BMP signaling activity during wing growth and PCV patterning
 
 Both the wing growth and patterning defects observed in nord mutant animals and the overlapping expression patterns of Nord and the BMP ligand Dpp point to a possible role of Nord in mediating Dpp/BMP signal transduction (Figures 4 and 5A). We, therefore, asked whether elimination of Nord alters the level of phosphorylated Mad (pMad), the primary downstream signal transducer of BMP signaling in the wing disc. We quantified pMad signal intensity in nord mutant wing discs and compared it to that of wild-type controls. We found that the pMad intensity was slightly reduced in nord mutant wing discs, and this reduction of pMad levels was more evident in the A compartment where Nord is expressed (Figure 5B and C, arrow). In contrast, by measuring the expression of high-threshold target gene ptc and low-threshold gene dpp, we found no obvious difference in the Hh signaling activity in the wild-type and nord mutant discs (Figure 5B and C, Figure 5—figure supplement 2).
 
@@ -83,27 +151,47 @@ During pupal wing development, BMP signaling is activated in the prospective CV 
 
 During early pupal stage, it is notable that Nord expression was seen neither in the LV nor primordia PCV (Figure 5A, Figure 5—figure supplement 1). In agreement, we did not notice any ectopic PCV in the adult flies when UAS-nord-RNAi was selectively expressed in the P compartment of the larval and pupal wing via the hh-Gal4 driver (Figure 5—figure supplements 3 and 4). Given that Nord is a secreted protein (Figure 3), Nord proteins secreted from the A/P boundary would likely play a role in reducing excessive BMP signaling in the L4–L5 intervein region to prevent ectopic venation. To test this possibility, we analyzed the ectopic venation phenotype in flies carrying ptc-Gal4-driven expression of UAS-nord-RNAi. Although ectopic venation phenotype was observed when nord was selectively knocked down in the Hh-responding cells (Figure 5—figure supplement 3), the frequency of flies carrying ectopic PCV was lower when compared to nord mutant flies (Figure 4D and E, Figure 5—figure supplement 4). This weaker phenotype likely resulted from residual Nord protein either due to incomplete ptc-Gal4>UAS-nord-RNAi-mediated nord knock down in the cells flanking the A/P boundary or due to possible Nord expression and secretion from other tissues. Nevertheless, opposite to the positive role of enhancing BMP signaling activity to promote growth of the larval wing discs, endogenous Nord also plays a negative role in inhibiting BMP signaling activity in the early pupal wing to prevent the formation of ectopic crossveins in the posterior compartment.
 
-## Nord is a biphasic modulator of BMP signaling during wing growth
+### Nord is a biphasic modulator of BMP signaling during wing growth
 
 To better understand the role of Nord in modulating BMP signaling in vivo, we generated transgenic flies carrying a Gal4-inducible UAS-Nord transgene. Under control of the ubiquitous wing blade driver nub-Gal4, ectopic Nord expression resulted in reduced range and level of the pMad gradient in the third instar wing imaginal discs (Figure 6A and B, 25°C), and accordingly decreased wing size in both adult males and females (Figure 6C and D, 25°C; Figure 6—figure supplement 1). In flies, minimal Gal4 activity is present at 16°C, while 29°C provides a balance between maximal Gal4 activity with minimal effects on fertility and viability due to growth at a high temperature (Duffy, 2002). Taking advantage of the temperature-dependent nature of Gal4 activity in Drosophila, we compared the dosage effect of Nord on pMad intensity in larvae raised at two different temperatures, 25 and 29°C. Indeed, in animals raised at 29°C expressing higher levels of exogenous Nord, we detected both a much reduced pMad gradient in the larval wing discs and more severely decreased wing size in the adult flies (Figure 6A–D, Figure 6—figure supplement 1). In contrast, Hh signaling activity is relatively normal in the wing discs expressing ectopic Nord. Although the Ptc-expressing domain became narrower, we did not notice any obvious decrease in the levels of Ptc expression. (Figure 6A and B). Consistently, ectopic Nord expression did not cause any specific reduction in the distance of L3 and L4 based on the dL3–L4/dL2–L5 ratio (Figure 6D), suggesting that the wing growth defect caused by ectopic Nord is unlikely due to inhibition of Hh signaling. Interestingly, partial L5 and PCV loss was also noticed in the wings with more dramatic size reduction (Figure 6C, arrowheads and arrows), and the frequency of disrupted L5 and PCV was more dramatic when the flies were raised at higher temperatures and expressed higher levels of ectopic Nord (Figure 6C). Therefore, our observations indicate that ectopic Nord attenuates BMP signaling, leading to inhibition of wing growth and vein patterning. Along with the positive role of endogenous Nord in enhancing BMP signaling to promote wing growth, we propose a model that Nord has both positive and negative effects in modulating BMP signaling activity, where low (endogenous) levels of Nord enhance and high (ectopic) levels of Nord inhibit BMP signaling.
 
-## Nord is a dosage-dependent modulator of BMP signaling during PCV patterning
+![Figure 6.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig6-v2.jpg)
+
+**Figure 6.:** (A) Larvae expressing the indicated transgenes driven by nub-Gal4 were raised at 25 or 29°C. Wing imaginal discs were collected from these larvae in the late third instar stage, and then immunostained for anti-pMad (red), anti-Ptc (blue), and anti-GFP (green). Scale bar, 20 μm. (B) Plotted pixel intensity of pMad or Ptc as a function of anteroposterior (A/P) position. Each point shows the mean ± SD. 25°C: n = 12. 29°C: n = 7. (C) Adult wings from male flies, which expressed the indicated transgenes driven by nub-Gal4 and were raised at 25 and 29°C. Scale bar, 500 μm. Arrows indicate reduced L5, and arrowheads indicate reduced crossveins. (D) Quantification of distance between distal ends of longitudinal veins L2 and L5 (dL2–L5), L3 and L4 (dL3–L4), and the ratio of dL3–L4 /dL2–L5. Each bar shows the mean ± SD from n > 14 wings. au, arbitrary units. The unpaired two-tailed t-test was used for statistical analysis. ****p<0.0001, ns, not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Quantification of the adult wing size reduction associated with ectopic Nord expression driven by nub-Gal4. The comparisons were made separately in males and females at indicated temperatures. Each box shows the mean ± SD from n = 30 adults wings, and representative images are shown in Figure 7C. Two-tailed unpaired t-test was used for statistical analysis. ****p<0.0001.
+
+### Nord is a dosage-dependent modulator of BMP signaling during PCV patterning
 
 To further examine the model that Nord is a dosage-dependent modulator of BMP signaling, we sought to manipulate Nord levels during pupal wing development in the posterior compartment and examine the effects on PCV formation since with this structure it is possible to assay both positive and negative roles by looking for an ectopic versus a loss of crossvein formation. Accordingly, we used both hh-Gal4 and en-Gal4 to drive different levels of ectopic Nord in the P compartment of the wing disc, including the PCV primordia where Nord is not normally expressed. To avoid the influence of prior larval stage Nord expression on the role of BMP signaling specifically during PCV pupal development, we used Gal4 together with tub-Gal80ts (a temperature-sensitive version of Gal80) to temporally control UAS-Nord expression. At a low temperature (18°C), Gal80ts represses the function of Gal4 bound to a UAS sequence but is unable to do so at the restrictive temperature (29°C) (McGuire et al., 2003). We performed temperature-shift experiments (from 18 to 29°C) to initiate ectopic Nord expression at different times during pupal development and characterized the impact on PCV patterning in the resulting adult wings. Consistent with a previous report (Roberts, 1998), the length of pupal period became shorter after the temperature was raised from 18 to 29°C due to temperature-dependent effects on the growth rate, and we found that shifting the temperature to 29°C right after pupation led to eclosion ~84–96 hr later (Figure 7A). We found that activation of UAS-Nord expression by temperature shifts at 78 hr or earlier before eclosion caused the most severe PCV phenotype, but activation at 66 hr before eclosion or later resulted in essentially normal PCV (Figure 7B and C, Figure 7—figure supplement 1). More importantly, we found that the abnormal PCV phenotypes relied on the levels of exogenous Nord: expression of a lower level of Nord (1XUAS-Nord) led to ectopic PCV, moderate levels (2XUAS-Nord) yielded a mixed phenotype with both ectopic and slightly reduced PCV, whereas high levels (3XUAS-Nord) gave rise to nearly complete loss of PCV (Figure 7B and C, Figure 7—figure supplement 1). Of note, consistent with the fact that Nord is a secreted protein, exogenous Nord expressed within the hh-Gal4 or en-Gal4-expressing domains was also able to influence crossvein patterning in the A compartment although with a lower frequency (Figure 7B, blue arrows and blue arrowheads, Figure 7—figure supplement 2).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig7-v2.jpg)
+
+**Figure 7.:** (A) Upper row: schematic diagram of temporal UAS-Nord expression in the posterior compartment of wing discs using the temperature-sensitive Gal80 (Gal80ts) system. At the permissive temperature (18°C), Gal4 activity is blocked by Gal80ts. At the restrictive temperature (29°C), Gal80ts is unable to repress Gal4, which then induces expression of the UAS-transgenes. Middle and lower rows: timing of temperature shift. Embryos and larvae are grown at 18°C, and prepupae are transferred to 29°C at the indicated time points before eclosion (middle row) or before dissection (lower row). (B) Representative adult wings from flies that carry the indicated transgenes under the control of tub-Gal80ts together with hh-Gal4 or en-Gal4. The animals were grown at 18°C till prepupa stage, and then transferred to 29°C at 78 hr before eclosion. Yellow arrowhead indicates ectopic posterior crossvein (PCV); yellow arrow indicates reduced PCV; blue arrowhead indicates ectopic anterior crossvein (ACV); blue arrow indicates reduced ACV. Scale bar, 500 μm. (C) Quantification of PCV phenotypes in adult wings of female and male flies with indicated genotypes. The animals were grown at 18°C till prepupa stage, and then transferred to 29°C around 78, 72, or 66 (±1) hr before eclosion. n > 30 wings for each genotype at a given temperature shift time point. (D) Representative pupal wing from larvae that carry the indicated transgenes under the control of tub-Gal80ts together with en-Gal4. The animals were grown at 18°C till prepupa stage, and then transferred to 29°C at 12 hr before dissection. The collected pupal wings were immunostained for anti-pMad (red), anti-Ptc (blue), and anti-GFP (Nord-GFP, green). Yellow arrowhead indicates ectopic pMad around the primordial PCV; yellow arrow indicates reduced pMad signal around the primordial PCV. Scale bar, 100 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Quantification of PCV phenotypes in adult wings from female and male flies carrying tub-Gal80ts together with hh-Gal4-driven UAS-GFP or UAS-Nord. The animals were grown at 18°C till prepupa stage, and then transferred to 29°C around 78, 72, or 66 (±1) hr before eclosion. n > 30 wings for each genotype at a given temperature shift time point. Representative adult wings are shown in Figure 8D.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Adult wings from flies that carry 2XUAS-Nord under the control of tub-Gal80ts together with hh-Gal4. The animals were grown at 18°C till prepupa stage, and then transferred to 29°C at 78 hr before eclosion. Yellow arrowhead indicates ectopic posterior crossvein (PCV); yellow arrow indicates reduced PCV; blue arrowhead indicates ectopic crossvein in the anterior compartment. Scale bar, 500 μm.
+
 The critical time window in which the primordial PCV responds to exogenously expressed Nord (66–78 hr before eclosion at 29°C) coincides with the stage during which BMP signaling induces PCV formation. We next tested whether the PCV phenotypes caused by ectopic Nord were correlated with alterations of BMP signaling activity. As shown in Figure 7D, adult PCV defects and pMad patterns in pupal wings showed a correlation with the level of ectopic Nord, where the temperature shift occurred 12 hr after the start of pupal development. In pupal wings expressing a low level of exogenous Nord (1XUAS-Nord), ectopic pMad and ectopic crossveins were detected, while moderate overexpression (2XUAS-Nord) led to a mixed phenotype of partial pMad and crossvein vein loss or wider pMad and ectopic veins. When high Nord levels (3XUAS-Nord) were expressed in the pupal wings, pMad and the PCV were largely absent. Although the temporal resolution is somewhat limited, the results clearly indicate that the level of Nord influences the outcome of PCV patterning during the early pupal development where a lower level of exogenous Nord resulted in enhanced BMP signaling and ectopic PCV, while higher levels of exogenous Nord inhibited BMP signaling and caused disrupted or depleted PCVs. Taken together, these results demonstrated that Nord is a dosage-dependent modulator of BMP signaling both in wing growth and crossvein patterning.
 
-## Nord binds to Dpp and interferes with BMP signaling in vitro
+### Nord binds to Dpp and interferes with BMP signaling in vitro
 
 The activity of BMPs is modulated by a large variety of binding proteins that can either enhance or inhibit their signaling in a context-dependent manner (Chang, 2016; Umulis et al., 2009). Given the spatial-temporal overlapping expression of nord and dpp and the dosage-dependent modulation of Nord on BMP signaling in wing growth and crossvein patterning, we assessed whether Nord modulates BMP signaling via binding to either of the two BMP ligands, Dpp and Gbb, that are expressed in the developing Drosophila wing. We turned to an in vitro model to examine possible interactions of Nord with Dpp and Gbb by carrying out co-immunoprecipitation assays. We added a GFP tag to the C-terminus of Nord and expressed the fusion protein in Drosophila S2 cells. The conditioned medium from Nord-GFP-expressing cells was collected and mixed with medium from cells transfected with FLAG-tagged Dpp and HA-tagged Gbb alone or in combination. The mixed-media were then incubated with anti-FLAG or anti-HA antibody-coupled beads to precipitate the BMP ligands. We found that Nord co-precipitated with Dpp and, to a lesser extent, with Gbb (Figure 8A). Additionally, we observed an increased level of Nord proteins co-precipitated with Dpp or Gbb when Dpp and Gbb were co-expressed (Figure 8A), indicating that Nord may have a higher affinity for Dpp-Gbb heterodimers formed in cells co-expressing Dpp and Gbb.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig8-v2.jpg)
 
-**Figure 8.:** in vitro.(A) Co-immunoprecipitation of Nord with the BMP ligands Dpp and Glass-bottom boat (Gbb). Medium from S2 cells transfected for expression of GFP-tagged Nord were mixed with medium from cells expressing FLAG-tagged Dpp and HA-tagged Gbb alone or in combination, followed by incubation with anti-FLAG or anti-HA antibody-coupled beads overnight at 4°C. Precipitated proteins were analyzed by Western blotting with indicated antibodies. Nord was immunoprecipitated with Dpp and, to a lesser extent, with Gbb. The amount of immunoprecipitated Nord was increased when Dpp and Gbb were co-transfected. (B) S2 cells were transfected for expression of FLAG-tagged Dpp or Gbb with or without GFP-tagged Nord (source cell). Both cell lysate and conditioned medium from the source cells were collected and followed by Western blot analysis. Loading was controlled by probing the blot for tubulin. The amount of Dpp or Dpp-Gbb ligands released into the medium was reduced when Nord was co-expressed in the source cells. (C) Comparison of BMP signaling activities of conditioned media in a cell-based signaling assay. After incubating the conditioned media collected in (B) with S2 cells stably expressing the FLAG-Mad transgene (Mad-S2, responding cell) for 1 hr at room temperature, the responding cells were washed and lysed. The lysates were probed with anti-pMad and anti-FLAG antibodies to detect both the phosphorylated Mad and total Mad protein, respectively. (D, E) Quantification of the Western blot data in panels (B) and (C). The levels of the secreted BMP ligands from the medium (anti-FLAG in panel B), phosphorylated Mad (anti-pMad in panel C), and total Mad (anti-FLAG in panel C) were measured based on the band intensity. The signaling activity from an equal volume of conditioned medium was determined by the ratio of pMad and the corresponding total Mad (pMad/Mad) in panel (C), which was then normalized to the condition without the exogenous Nord-GFP to calculate a relative signaling activity (D), or normalized to the secreted ligand amount to calculate the relative ligand activity ([pMad/Mad]/BMPs) (E). (F) Mad-S2 cells were treated with a recombinant Dpp peptide (rDpp) in the absence or presence of conditioned medium containing raising levels of Nord for 1 hr at room temperature, the responding cells were washed and lysed. The lysates were probed with anti-pMad and anti-FLAG antibodies to detect both the phosphorylated Mad and total Mad protein, respectively. (G) Quantification of the Western blot data in panel (F). The phosphorylated Mad (anti-pMad) and total Mad (anti-FLAG) levels were measured based on the band intensity. The signaling activity from each conditioned medium was determined by the ratio of pMad and the corresponding total Mad (pMad/Mad), which was then normalized to the condition with 2 nM Dpp but no additional Nord. Panel (F) is representative of n = 3 independent experiments. Each point shows the mean ± SD. One-way ANOVA test with Tukey’s multiple comparison was used for statistical analysis, and a significant difference was considered by *p<0.05. (H) Mad-S2 cells were transiently transfected for expression of GFP or Nord-GFP. 48 hr after transfection, the cells were treated with recombinant Dpp peptides for 1 hr. Upon treatment, the cells were washed, fixed, and stained by anti-FLAG to detect total Mad and anti-pMad to detect phosphorylated Mad. The average pMad levels were measured and normalized to the total Mad levels, and then plotted against different Dpp concentrations (0–5 nM). Each point shows the mean ± SD, n > 10. au, arbitrary units. The unpaired two-tailed t-test was used for statistical analysis. ***p<0.001, ****p<0.0001. (I) Representative images of Mad-S2 cells treated by 0.625 nM Dpp. Scale bar, 10 μm.Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Co-immunoprecipitation of Nord with the BMP ligands Dpp and Glass-bottom boat (Gbb). Medium from S2 cells transfected for expression of GFP-tagged Nord were mixed with medium from cells expressing FLAG-tagged Dpp and HA-tagged Gbb alone or in combination, followed by incubation with anti-FLAG or anti-HA antibody-coupled beads overnight at 4°C. Precipitated proteins were analyzed by Western blotting with indicated antibodies. Nord was immunoprecipitated with Dpp and, to a lesser extent, with Gbb. The amount of immunoprecipitated Nord was increased when Dpp and Gbb were co-transfected. (B) S2 cells were transfected for expression of FLAG-tagged Dpp or Gbb with or without GFP-tagged Nord (source cell). Both cell lysate and conditioned medium from the source cells were collected and followed by Western blot analysis. Loading was controlled by probing the blot for tubulin. The amount of Dpp or Dpp-Gbb ligands released into the medium was reduced when Nord was co-expressed in the source cells. (C) Comparison of BMP signaling activities of conditioned media in a cell-based signaling assay. After incubating the conditioned media collected in (B) with S2 cells stably expressing the FLAG-Mad transgene (Mad-S2, responding cell) for 1 hr at room temperature, the responding cells were washed and lysed. The lysates were probed with anti-pMad and anti-FLAG antibodies to detect both the phosphorylated Mad and total Mad protein, respectively. (D, E) Quantification of the Western blot data in panels (B) and (C). The levels of the secreted BMP ligands from the medium (anti-FLAG in panel B), phosphorylated Mad (anti-pMad in panel C), and total Mad (anti-FLAG in panel C) were measured based on the band intensity. The signaling activity from an equal volume of conditioned medium was determined by the ratio of pMad and the corresponding total Mad (pMad/Mad) in panel (C), which was then normalized to the condition without the exogenous Nord-GFP to calculate a relative signaling activity (D), or normalized to the secreted ligand amount to calculate the relative ligand activity ([pMad/Mad]/BMPs) (E). (F) Mad-S2 cells were treated with a recombinant Dpp peptide (rDpp) in the absence or presence of conditioned medium containing raising levels of Nord for 1 hr at room temperature, the responding cells were washed and lysed. The lysates were probed with anti-pMad and anti-FLAG antibodies to detect both the phosphorylated Mad and total Mad protein, respectively. (G) Quantification of the Western blot data in panel (F). The phosphorylated Mad (anti-pMad) and total Mad (anti-FLAG) levels were measured based on the band intensity. The signaling activity from each conditioned medium was determined by the ratio of pMad and the corresponding total Mad (pMad/Mad), which was then normalized to the condition with 2 nM Dpp but no additional Nord. Panel (F) is representative of n = 3 independent experiments. Each point shows the mean ± SD. One-way ANOVA test with Tukey’s multiple comparison was used for statistical analysis, and a significant difference was considered by *p<0.05. (H) Mad-S2 cells were transiently transfected for expression of GFP or Nord-GFP. 48 hr after transfection, the cells were treated with recombinant Dpp peptides for 1 hr. Upon treatment, the cells were washed, fixed, and stained by anti-FLAG to detect total Mad and anti-pMad to detect phosphorylated Mad. The average pMad levels were measured and normalized to the total Mad levels, and then plotted against different Dpp concentrations (0–5 nM). Each point shows the mean ± SD, n > 10. au, arbitrary units. The unpaired two-tailed t-test was used for statistical analysis. ***p<0.001, ****p<0.0001. (I) Representative images of Mad-S2 cells treated by 0.625 nM Dpp. Scale bar, 10 μm.
 
 We next collected conditioned medium from S2 cells expressing Dpp or Dpp-Gbb with or without co-expressed Nord (source cell) and compared the levels of processed Dpp or Dpp-Gbb within the different conditioned media. We found that far less cleaved Dpp protein was released into the conditioned medium when Nord was co-expressed (Figure 8B, compare lane M3 with M2). Likewise, the same negative effect of Nord was observed when the medium was collected from cells expressing both Dpp and Gbb (Figure 8B, compare lane M5 with M4), albeit the increased total amount of ligands likely reflects the release of Dpp-Gbb heterodimers (Figure 8B, compare lane M4 with M2). Thus, the presence of Nord affected the release into the media of both Dpp and Dpp-Gbb, likely via binding to the BMP ligand. We then determined the activity of the collected conditioned media in an S2 cell-based signaling assay. Because endogenous levels of Mad protein in S2 cells are low, we established Mad-S2 responding cells that stably express a FLAG epitope-tagged Mad transgene (FLAG-Mad) (Ross et al., 2001). Upon incubation of the Mad-S2 responding cells with conditioned medium collected from the source cells, BMP signaling activity was monitored by measuring the pMad signal intensity. Conditioned medium containing either Dpp or Dpp-Gbb, but not that containing Nord alone, was able to induce Mad phosphorylation (Figure 8C). In agreement with the dramatically reduced amount of Dpp or Dpp-Gbb ligands (Figure 8B), the conditioned medium collected from source cells co-expressing Nord showed lower pMad signal intensity compared to that collected from source cells lacking Nord co-expression (Figure 8C and D). Of note, Nord is not a membrane-tethered protein (Figure 3A), but we observed noticeable amounts of Nord deposited on the surface of source cells, as well as the surrounding extracellular matrix (Figure 3C and D). Thus, the matrix-associated Nord may sequester Dpp and Dpp-Gbb ligands to the source cells and thereby reduce ligand level in the media, which in turn leads to decreased BMP signaling activity in the responding cells (Figure 8C and D).
 
-## Dosage-dependent modulation of BMP signaling by Nord in vitro
+### Dosage-dependent modulation of BMP signaling by Nord in vitro
 
 In vivo, our loss- and gain-of-function analyses suggested that Nord is a dosage-dependent modulator of BMP signaling in wing growth and crossvein patterning. In the in vitro signaling assay, ectopically expressing Nord in the source cells led to reduced BMP ligand release and thus decreased the signaling activity (pMad/Mad) from an equal volume of conditioned medium (Figure 8D). However, when the signaling activity was further normalized to the ligand amount (Figure 8B), the relative ligand activity ([pMad/Mad]/BMPs) from the medium without Nord is lower than that with Nord (Figure 8E), suggesting that while ectopic Nord expressed in the source cells reduced the levels of released ligand, that soluble ligand appears to have a higher signaling activity perhaps as a result of an association with Nord (Figure 8E). To further assess whether Nord directly modulates the signaling activity of released BMP ligands in a dosage-dependent manner, we treated Mad-S2 cells with a recombinant Dpp peptide (rDpp) in the absence or presence of conditioned medium containing increasing amounts of Nord (Figure 8F). Consistent with our in vivo analyses, in vitro, we also observed a dosage-dependent signaling profile of rDpp in the presence of increasing concentrations of Nord where the lowest tested level of Nord enhanced signaling while higher Nord levels reduced Dpp signaling activity (Figure 8F and G).
 
@@ -117,9 +205,9 @@ Combining the genetic and biochemical evidence, we propose that Nord mediates BM
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/73357/elife-73357-fig9-v2.jpg)
 
-**Figure 9.:** nord.Illustration of potential concentration- and location-dependent mechanism of Nord as a dosage-dependent BMP signaling modulator. The source cells of Nord (and Decapentaplegic [Dpp]) are labeled in blue, and the responding cells in focus are indicated by the dashed line. Note that Nord could be either diffusible or membrane/matrix-associated. (A, A’) In the wild-type wing discs, nord is induced by the Hh signal along the anteroposterior (A/P) compartment boundary flanking the central wing pouch, and thus is expressed in a subset of Dpp-secreting cells. We propose that membrane/matrix-associated Nord-mediated binding of Dpp and Dpp-Gbb both enhances the local BMP signaling activity by augmenting ligand concentration near the Nord/Dpp-secreting cells and impedes the mobilization of Dpp, especially the long-range BMP signaling mediator Dpp-Gbb heterodimer. The diffusible pool of Nord is more likely to interfere with BMP reception. (B, B’) Loss of nord simultaneously leads to reduced local BMP and increased long-range BMP activities, and therefore gives rise to the seemingly opposite phenotypes of reduced wing size and ectopic posterior crossvein (PCV), both of which are attributable to alteration of BMP activity at the level of Mad phosphorylation (pMad). (C–E, C’-E’) Nord misexpression experiments. Low levels of ectopic Nord in the P compartment increase BMP signaling activity (C, C’), whereas high levels of Nord, either in the P compartment (D, D’) or throughout the wing pouch (E, E’), inhibit BMP signaling activity. The altered BMP signaling activities are reflected by the pMad levels.
+**Figure 9.:** Illustration of potential concentration- and location-dependent mechanism of Nord as a dosage-dependent BMP signaling modulator. The source cells of Nord (and Decapentaplegic [Dpp]) are labeled in blue, and the responding cells in focus are indicated by the dashed line. Note that Nord could be either diffusible or membrane/matrix-associated. (A, A’) In the wild-type wing discs, nord is induced by the Hh signal along the anteroposterior (A/P) compartment boundary flanking the central wing pouch, and thus is expressed in a subset of Dpp-secreting cells. We propose that membrane/matrix-associated Nord-mediated binding of Dpp and Dpp-Gbb both enhances the local BMP signaling activity by augmenting ligand concentration near the Nord/Dpp-secreting cells and impedes the mobilization of Dpp, especially the long-range BMP signaling mediator Dpp-Gbb heterodimer. The diffusible pool of Nord is more likely to interfere with BMP reception. (B, B’) Loss of nord simultaneously leads to reduced local BMP and increased long-range BMP activities, and therefore gives rise to the seemingly opposite phenotypes of reduced wing size and ectopic posterior crossvein (PCV), both of which are attributable to alteration of BMP activity at the level of Mad phosphorylation (pMad). (C–E, C’-E’) Nord misexpression experiments. Low levels of ectopic Nord in the P compartment increase BMP signaling activity (C, C’), whereas high levels of Nord, either in the P compartment (D, D’) or throughout the wing pouch (E, E’), inhibit BMP signaling activity. The altered BMP signaling activities are reflected by the pMad levels.
 
-## Nord is a novel, multifunctional BMP-binding protein
+### Nord is a novel, multifunctional BMP-binding protein
 
 The activity of TGF-β type factors, including the BMP subfamily, is modulated by a large variety of binding proteins that can either enhance or inhibit their signaling in a context-dependent manner (Chang, 2016; Umulis et al., 2009). These modulator proteins vary broadly in structure, location, and mechanism of action. Well-known extracellular and freely diffusible proteins include Noggin, Tsg, Follistatin, the CR (cysteine-rich) domain containing proteins such as Chordin/Sog, and the Can family named after two founding members, Dan and Cerberus (Chang, 2016). With the exception of Tsg and Tsg/Sog or Tsg/Chordin complexes that in some cases can promote BMP signaling, all of these factors behave as antagonists, where BMP binding prevents association of the ligand with the receptor complex.
 
@@ -129,7 +217,7 @@ The situation with respect to signal modulation becomes even more complex for fa
 
 In the case of Nord, its mechanism of action is likely compatible with a variety of these and/or alternative models. While we have shown that Nord is a BMP-binding protein and Akiyama et al., 2021 have shown that it also binds HSPGs, it is not clear whether the BMP and HSPG-binding sites overlap or are distinct and where they are positioned relative to the FN3 and DUF2369 domains. This is an important issue to consider with respect to the two CRISPR mutants that we generated that truncate Nord within the DUF2369 domain. Interestingly, the nord3D allele appears to retain some function since it does not generate ectopic crossveins as do the nordMI06414 or nord22A alleles, yet nord3D still produces small wings in transheterozygous combination with a deficiency or nord22A, consistent with having lost the BMP growth-promoting ability. The discrepancy in crossvein patterning between the different nord alleles may be explained by a difference in residual function of the various truncated Nord protein products (Figure 4). Because the nordMI06414 allele yields a much shorter predicted Nord peptide compared to the two CRISPR alleles, it is likely to behave as a protein null with a stronger phenotype. The two nord CRISPR alleles, although similar in the sequence deleted from the C-terminus, differ in how many non-nord encoded amino acids occur between the frameshift and the stop codon. The nord22A allele has additional 14 amino acids relative to nord3D. Perhaps this extension of the truncated fragment destabilizes or interferes with residual function found in the nord3D allele. Additional biochemical studies defining the BMP and HSPG-binding sites, the stability of truncated Nord fragments, and whether Nord can also associate with either the type I or II receptors will aid in formulating a more precise mechanistic model.
 
-## Is Nord structure and function conserved across species?
+### Is Nord structure and function conserved across species?
 
 Nord shows some sequence similarity to the NDNF family of proteins (Figure 3A). Based on a very recent study, like many other neurotrophic factors, NDNF arose in the ancestor of bilaterians or even later (Heger et al., 2020). In agreement, by analyzing the genome and EST sequences from various organisms, we found that nearly all bilaterian animals have either single or multiple orthologous genes for Nord/Ndnf (Figure 3A). Of note, we did not identify any Ndnf homologs in the flatworm Planarian, but these factors are highly conserved across vertebrates (Kuang et al., 2010). All vertebrate family members contain a signal peptide, two FN3-like repeats, and a domain of unknown function (DUF2369) that is now referred to as the NDNF domain. The NDNF domain partially overlaps with the first FN3 but shows some additional conservation that extends between the two FN3 domains (Figure 3A). The FN3 module is quite diverse in sequence but is thought to exhibit a common fold that is used as an interaction surface or spacer (Campbell and Spitzfaden, 1994; Koide et al., 1998). The function of the NDNF domain is not clear, but it may also provide a protein interaction surface.
 
@@ -141,68 +229,855 @@ Taken together, these studies have suggested some possible functions for vertebr
 
 ## Materials and methods
 
-## Drosophila maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>hs-FLP</td>
+      <td>Golic and Lindquist, 1989</td>
+      <td>FBti0000785</td>
+      <td>Chr X</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Actin&gt;y+&gt;Gal4</td>
+      <td>Ito et al., 1997</td>
+      <td>FBti0009983</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ptc-Gal4</td>
+      <td>Hinz et al., 1994</td>
+      <td>FBal0287777</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hh-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_67046</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>en-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_30564</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nub-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_25754</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MS1096-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_8860</td>
+      <td>Chr X</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MS1096-Gal4; UAS-Dcr-2</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_25706</td>
+      <td>Chr X; Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>A9-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_8761</td>
+      <td>Chr X</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hs-Gal4</td>
+      <td>Halfon et al., 1997</td>
+      <td>FBtp0065595</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub-Gal80ts</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_7019</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub-Gal80ts</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_7018</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dicer-2</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_24650</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dicer-2</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_24651</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GFP</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_1521</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GFP</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_1522</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8-GFP</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_5137</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DsRed</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_6282</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Ptc</td>
+      <td>Johnson et al., 1995</td>
+      <td></td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Hh</td>
+      <td>Lee et al., 1992</td>
+      <td></td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-SmoGlu</td>
+      <td>Zhang et al., 2004</td>
+      <td></td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-nord-RNAi-1</td>
+      <td>VDRC</td>
+      <td>RRID:VDRC_v38151</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-nord-RNAi-2</td>
+      <td>VDRC</td>
+      <td>RRID:VDRC_v38152</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[1,118]; Df(2R)BSC770/SM6a</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_26867</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>[1,118]; Df(2 R)BSC356/SM6a</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_24380</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y(1) w[1,118]; Df(2R)BSC155/CyO-Df(2R)B80, y[+]</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9691</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[1,118]; Df(2R)BSC780/SM6a</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_27352</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[1,118]; Df(2R)BSC603/SM6a</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_25436</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[1,118]; Df(2R)ED4061, P{w[+ mW.Scer\FRT.hs3] = 3'.RS5 + 3.3'}ED4061/SM6a</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9068</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118; PBac{y[+ mDint2]=vas-Cas9}VK00027</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_51324</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y w</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_1495</td>
+      <td>Chr X</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y w; Mi{MIC}nordMI06414</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_42389</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y w; Mi{PT-GFSTF.2}nordMI06414-GFSTF.2/CyO</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_60250</td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118; PBac{y[+ mDint2]=vas-Cas9}VK00027</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_51324</td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y w; Mi{PT-RFPHA.2}nordMI06414-RFPHA.2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Nord-HA-GFP (Chr.2)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Nord-HA-GFP (Chr.3)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chr 3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w; nord22A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w; nord3D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chr 2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ci (rat monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# 2A1; RRID:AB_2109711</td>
+      <td>IF: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ptc (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# Apa 1; RRID:AB_528441</td>
+      <td>IF: (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dpp prodomain (rabbit polyclonal)</td>
+      <td>Akiyama and Gibson, 2015</td>
+      <td>A gift from M. Gibson</td>
+      <td>IF: (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>IF: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab13970, RRID:AB_300798</td>
+      <td>IF: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta tubulin (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#E7; RRID:AB_2315513</td>
+      <td>WB: (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA.11 (mouse monoclonal, 16B12)</td>
+      <td>Covance</td>
+      <td>Cat# MMS-101P-1000; RRID: AB_291259</td>
+      <td>IF: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (rabbit polyclonal, SG77)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 71-5500; RRID:AB_2533988</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal, M2)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F3165; RRID:AB_259529</td>
+      <td>WB: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F7425; RRID:AB_439687</td>
+      <td>WB: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-40; RRID:AB_627268</td>
+      <td>WB: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-anti-phospho-Smad1/5 (rabbit polyclonal, Ser463/465)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9516; RRID:AB_491015</td>
+      <td>IF: (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal, M2) Magnetic Beads</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M8823; RRID:AB_2637089</td>
+      <td>IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (rat monoclonal, 3F10) Affinity Matrix</td>
+      <td>Roche</td>
+      <td>Cat# 11815016001;RRID:AB_390914</td>
+      <td>IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fluorophore-conjugated secondary antibodies</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>NA</td>
+      <td>IF: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated secondary antibodies</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>NA</td>
+      <td>WB: (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# D9542</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal bovine serum</td>
+      <td>Omega Scientific</td>
+      <td>Cat# FB-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Schneider’s Drosophila Media</td>
+      <td>Invitrogen</td>
+      <td>Cat# 21720</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco’s Modification of Eagle’s Medium (DMEM)</td>
+      <td>Corning</td>
+      <td>Cat# 10-013CM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Blasticidin S HCl</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R21001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Penicillin-Streptomycin-Glutamine (100×)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10378016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Antifade mounting media</td>
+      <td>VECTASHIELD</td>
+      <td>Cat# H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FuGENE HD transfection reagent</td>
+      <td>Promega</td>
+      <td>Cat# E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>16% paraformaldehyde aqueous solution</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat# 15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dissociation buffer</td>
+      <td>Sigma</td>
+      <td>Cat# C-1544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Recombinant Dpp</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# 59-DP-020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Elastase</td>
+      <td>Sigma</td>
+      <td>Cat# E-0258</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium iodide</td>
+      <td>Invitrogen</td>
+      <td>Cat# P3566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNAse I</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM2222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Maxima Reverse Transcriptase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# EP0742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1708880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNeasy Mini</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAcSV-Nord-GFP</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td>Nord coding sequence (NM_138056) was fused in frame with C-terminal GFP tag and cloned into pAcSV vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-Nord-HisMyc</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td>Nord coding sequence (NM_138056) was fused in frame with C-terminal HisMyc tag and cloned into pcDNA3.1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-HsNDNF-HisMyc</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td>HsNDNF coding sequence (NM_024574) was fused in frame with C-terminal HisMyc tag and cloned into pcDNA3.1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-CeNdnf-HisMyc</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td>CeNdnf coding sequence (NM_067881) was fused in frame with C-terminal HisMyc tag and cloned into pcDNA3.1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-DrNdnf-HisMyc</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td>DrNdnf coding sequence (XM_684842) was fused in frame with C-terminal HisMyc tag and cloned into pcDNA3.1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-XtNdnf-HisMyc</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td>XtNdnf coding sequence (NM_001122800) was fused in frame with C-terminal HisMyc tag and cloned into pcDNA3.1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBRAcpA- Dpp-FLAG</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBRAcpA- Gbb-FLAG</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBRAcpA-Gbb-HA</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBRAcpA-FLAG-Mad</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: pkgForward: GTCCCAAGACCCGTGAGCTCTTCGC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: pkgReverse: TCCGTGTTCCACTTGGCGCAGCAAG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: ciForward: CGACCACCAGGAGGAAGTAT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: ciReverse: AATCGGAATAAGGCGATGAC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: hhForward: GGATTCGATTGGGTCTCCTA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: hhReverse: GAATCTGACTTGACGGAGCA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: ptcForward: CGATGTGGTCGATGAGAAAT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: ptcReverse: CGAGGTGGGACTGGAATACT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: nordForward: CACCGCAAAAGTGTCCTTCG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: nordReverse: CAGGTTCAGCACAAATCGCT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 1 for quantitative reverse transcription PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: ptcForward: atggaccgcgacagcctccca</td>
+      <td>Hsia et al., 2017</td>
+      <td>Anti-sense probe (600 bp) for ptc</td>
+      <td>Primers used in Figure 1 for generating in situ probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: ptcReverse: TAATACGACTCACTATAGGGgaggtggcgcaggatctgctc</td>
+      <td>Hsia et al., 2017</td>
+      <td>Anti-sense probe (600 bp) for ptc</td>
+      <td>Primers used in Figure 1 for generating in situ probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: nordForward: gaaatccgggtgaagctgctacg</td>
+      <td>This paper</td>
+      <td>Anti-sense probe (666 bp) for nord</td>
+      <td>Primers used in Figure 1 for generating in situ probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: nordReverse: TAATACGACTCACTATAGGGatgcagcgaagctttgggtatgg</td>
+      <td>This paper</td>
+      <td>Anti-sense probe (666 bp) for nord</td>
+      <td>Primers used in Figure 1 for generating in situ probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P1: nord exon 1Forward: GCAAGTGGCAAGAGCTGAAC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 2—figure supplement 1 for confirming the predicted transcripts from different Nord alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P2: nord exon 1/2Reverse: GTGTTCTGCGGTTTTGCCTG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 2—figure supplement 1 for confirming the predicted transcripts from different Nord alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P3: nord exon 2Forward: CGCACTCAGAGGTTGTTTCA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 2—figure supplement 1 for confirming the predicted transcripts from different Nord alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P4: nord exon 4/5Reverse: GCTCCTTTCCCACTTGACGA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 2—figure supplement 1 for confirming the predicted transcripts from different Nord alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P5: nord exon 6Forward: AGGCTCTGTTCCGGGATTTG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 2—figure supplement 1 for confirming the predicted transcripts from different Nord alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P6: nord exon 8Reverse: AAATGCAGCGAAGCTTTGGG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 2—figure supplement 1 for confirming the predicted transcripts from different Nord alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GapdhForward: GCCACCTATGACGAAATCAAGGCTA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 2—figure supplement 1 for confirming the predicted transcripts from different Nord alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GapdhReverse: GGAGTAACCGAACTCGTTGTCGTAC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primers used in Figure 2—figure supplement 1 for confirming the predicted transcripts from different Nord alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5′-GGACCTGTTCGGAATCCACC-3′</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Guide RNA sequence used to generate different Nord alleles using CRISPR/Cas9 system</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5′-GGGTGAGGTTCTGTCTACCC-3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Guide RNA sequence used to generate different Nord alleles using CRISPR/Cas9 system</td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>DGRC</td>
+      <td>S2-DGRC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>embryonic kidney cell line HEK 293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila maintenance
 
 Animals were grown on standard food containing molasses at room temperature unless otherwise indicated. The hs-FLP and actin>y+>Gal4 (Ito et al., 1997) driver was used to generate random flip-out clones expressing various UAS-transgenes. The hs-Gal4 was used to induce random ectopic expression of UAS-Hh or UAS-Ptc (Figure 2—figure supplement 3). Larvae of the corresponding genotypes were incubated at 37°C for 30–60 min during the second instar larval stage (Figure 2, Figure 2—figure supplement 3) or 15–20 min in the mid-third larval stage (Figure 3) to induce flip-out clones. Wing imaginal discs were dissected from the larvae containing flip-out clones or hs-Gal4-expressing clones at the wondering larva stage. The hh-Gal4 or en-Gal4 driver together with tub-Gal80ts (McGuire et al., 2003) was used for transient expression of transgenic constructs. Fly crosses, embryos, and larvae were maintained at 18°C, and the Gal80ts repressor was inactivated for the indicated number of hours at restrictive temperature (29°C) before adult fly eclosion or dissection (see Figure 7 legend for details). The genotypes of larvae, pupae, or adult flies used in each figure are listed in Supplementary file 3. Drosophila stocks used in this study are listed in the Key resources table.
 
-## Dissociation and sorting of imaginal disc cells
+### Dissociation and sorting of imaginal disc cells
 
 Wing imaginal discs were dissected from wandering third instar larvae of the genotypes hh-Gal4; UAS-mCD8-GFP or ptc-Gal4; UAS-mCD8-GFP. Discs were stored in Schneider’s Drosophila Media (21720, Invitrogen) plus 10% fetal bovine serum (FBS) (10438, Invitrogen) on ice for less than 2 hr prior to cell dissociation. Discs were washed twice with 1 mL cell dissociation buffer (Sigma, C-1544). Elastase (Sigma, E-0258) was diluted to 0.4 mg/mL in fresh cell dissociation buffer once discs were ready. Discs were incubated for 20 min at room temperature in 0.4 mg/mL elastase with stirring by a magnetic micro-stir bar. Undissociated tissue was spun out, cell viability was measured (>80%), and cells were immediately isolated using the BD FACSAria system. Dead cells labeled with propidium iodide (P3566, Invitrogen) were excluded during FACS, and purity of sorted cells was greater than 99% by post-sorting FACS analysis. Total RNA was extracted from sorted cells (RNeasy, QIAGEN) and stored at −80°C. Quality was assessed with the Agilent Bioanalyzer 2100 (RIN > 7.0).
 
-## Identification of target genes of the Hh signaling pathway
+### Identification of target genes of the Hh signaling pathway
 
 As described in Willsey et al., 2016, using total RNA extracted from sorted A (hh-), B (ptc+), and P (hh+) cells (see details in ‘Dissociation and sorting of imaginal disc cells’), we acquired three primary transcriptome datasets via the Affymetrix D. mel GeneChip Genome 2.0 microarrays. The raw microarray data were deposited to the Gene Expression Omnibus public repository (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE180120; Gene Expression Omnibus series no. GSE180120). In our previous analysis (Willsey et al., 2016), we focused on two datasets and searched for genes differentially expressed in the A/P boundary adjacent cells (B: ptc+) and P cells (P: hh+). Here, we modified the gene expression analysis method by including the third dataset from A cells (hh-) and additional transcriptome comparisons between the A/P boundary adjacent B cells (ptc+) and A cells (hh-), and between A cells (hh-) and P cells (hh+).
 
 Briefly, all analyses were conducted in R version 4.0.2. Expression values were determined using the affy package (Gautier et al., 2004), available from BioConductor (http://bioconductor.org). The Drosophila 2.0 CDF environment was utilized. Probe-level data from the CEL files were imported using the function ReadAffy and converted to expression values using rma with default settings. This method implemented the multi-array average (RMA) for background correction followed by quantile normalization. Expression values were log2 transformed. Probe sets were mapped to genes using the Drosophila_2.na30.annot.xml annotation file, available from the Affymetrix website. 14,448 of 18,952 (76.2%) probe sets map to gene isoforms—13,016 (90.1%) of which correspond to unique genes (some genes are mapped by ≥1 probe set). Probe sets mapping to the same gene were not combined to minimize technical artifacts. Genes (probe sets) whose expression is not only higher in A cells than P cells (FoldA/P > 1.2), but also higher in the A/P boundary adjacent cells than general A cells (FoldB/A > 1.5), were selected as potential Hh-induced target genes (Figure 1). A total of 61 probe sets (59 unique genes) were identified as potential Hh signaling target genes (Supplementary file 1). The heatmap was generated in R with the ggplot2 package, and the genes were ordered by the FoldB/A change.
 
-## Quantitative reverse transcription PCR
+### Quantitative reverse transcription PCR
 
 Total RNA was extracted from FACS-sorted A, B, and P cells (see details in ‘Dissociation and sorting of imaginal disc cells’). Possible contamination of genomic DNA was excluded by treatments of DNAse I (AM2222, Thermo Fisher Scientific). RNA was reverse-transcribed to cDNA using Maxima Reverse Transcriptase (EP0742, Thermo Fisher Scientific) with random hexamers. All samples within an experiment were reverse-transcribed at the same time; the resulting cDNA was stored in aliquots at –80°C until used. cDNA was PCR-amplified using SYBR Green Supermix (1708880; Bio-Rad). qPCR was carried out with an ABI PRISM Sequence Detection System (Applied Biosystems). Reactions were run in triplicate in three independent experiments. Expression data were normalized to the geometric mean of the housekeeping gene pkg and were analyzed using the 2–ΔΔCT method. The primer sequences are provided in the Key resources table.
 
-## In situ hybridization
+### In situ hybridization
 
 In situ hybridization of wing discs was performed as previously described (Hsia et al., 2017). Briefly, RNA probes were created from in vitro transcription of PCR products carrying the T7 RNA polymerase recognition sequence at one end and synthesized by using a digoxigenin (Dig)-labeling kit (Roche). Wing discs of L3 larvae were hybridized with probes overnight at 56°C using standard procedures and visualized using anti-Dig-AP (1:1000; Roche). Primers used for generating PCR templates are listed in the Key resources table.
 
-## Generation of Nord Crispr alleles
+### Generation of Nord Crispr alleles
 
 The nord3D and nord22A alleles were generated using the Crispr/Cas9 system. The following guides 5′-GGACCTGTTCGGAATCCACC-3′ and 5′-GGGTGAGGTTCTGTCTACCC-3 were separately cloned into the BbsI site of pU6-BbsI-chiRNA plasmid (obtained from Addgene) and both were simultaneously injected by Best Gene into w1118; PBac{y[+ mDint2]=vas-Cas9}VK00027 on chromosome 3 (Bloomington Stock Center #51324). G0 flies were crossed to a balancer stock (w; Pin/CyoStar) and then individual males were crossed to w; Gla, Bc/CyO{GFP} to establish stocks. DNA from homozygous adults was amplified by PCR using primers that flanked the two Crispr target sites and sequenced. The nord22A allele was a 5 bp deletion generated at guide sequence 2 site, while the nord3D allele was an 11 bp deletion generated at the guide 1 site.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Drosophila S2 cells (S2- DGRC) were obtained directly from the Drosophila Genomics Resource Center (DGRC) and cultured in Drosophila Schneider’s medium supplemented with 10% of FBS (Omega Scientific) and 1% Penicillin-Streptomycin-Glutamine (Thermo Fisher) at 25°C in a humidified incubator. S2 cells stably expressing the FLAG-Mad transgene (Mad-S2) cells were generated by co-transfecting pBRAcpA-FLAG-Mad (Jensen et al., 2009) and pCoBlast, and then followed by selection with 12.5 μg/mL blasticidin. HEK 293 cells were obtained directly from ATCC and cultured in Dulbecco’s Minimal Essential Medium with 10% FBS (Omega Scientific) and 1% Penicillin-Streptomycin-Glutamine (Thermo Fisher) at 37°C in a humidified incubator with 5% CO2. Transfection was performed with FuGENE 6 transfection reagent (Promega). All the cell lines were regularly confirmed to be free of contamination (e.g., mycoplasma) through PCR-based tests as recommended by the NIH.
 
-## Antibodies
+### Antibodies
 
 Antibodies and dilutions used were mouse anti-Ptc antibody 1:50 (DSHB, Apa1; 1/50); rat anti-Ci antibody 1:50 (DSHB, 2A1; 1/50); rabbit anti-Dpp prodomain (Akiyama and Gibson, 2015; 1/100); rabbit anti-GFP (Invitrogen, A-11122; 1/1000); chicken anti-GFP (Abcam Cat# ab13970; 1/2000); rabbit anti-phospho-Smad1/5 (Ser463/465) (Cell Signaling Technology, 9516; 1/100); mouse anti-HA.11 (Covance, Cat#101P; 1/1000); rabbit anti-HA (Thermo Fisher Scientific, Cat# 71-5500; 1/1000); mouse anti-β-tubulin (DSHB, E7; 1/5000); mouse anti-β-galactosidase (Promega, Z378A; 1/100); mouse anti-Myc (Santa Cruz Biotechnology, 9E10; 1/200); mouse anti-FLAG (Sigma-Aldrich, M2; 1/200); rabbit anti-FLAG (Sigma-Aldrich, Cat# F7425; 1/200); HRP-conjugated and fluorophore-conjugated secondary antibodies were from Jackson ImmunoResearch Lab and Thermo Fisher. The antibody information is also listed in the Key resources table.
 
-## Constructs
+### Constructs
 
 The coding sequence of Nord or Ndnf from various species was fused in frame with C-terminal GFP tag or HisMyc tag, and cloned into the pAcSV vector for expression in the Drosophila S2 cells, or into the pcDNA3.1 vector for expression in the HEK 293 cells. The coding sequence of Nord was fused with a C-terminal HA-GFP tag and cloned into the pUAST vector to generate the transgenic UAS-Nord line. Constructs expressing Dpp-FLAG, Gbb-FLAG, Gbb-HA, and FLAG-Mad were generated using PCR methods to tag and amplify the gene of interest from a full-length cDNA and then cloned into the S2 cell constitutive expression vector pBRAcpA (Cherbas et al., 1994). The sequences are provided in Supplementary file 4.
 
-## Imaginal discs and pupal wing immunostaining and imaging
+### Imaginal discs and pupal wing immunostaining and imaging
 
 Wing discs from third instar larvae were dissected, fixed in 4% formaldehyde in PBS, blocked and permeabilized by 5% normal goat serum (NGS) and 0.3% Triton X-100 in PBS, incubated with primary antibody in PBS containing 5% NGS and 0.3% Triton X-100 overnight at 4°C, washed three times with 0.3% Triton X-100/PBS, incubated with secondary antibody, and washed with 0.3% Triton X-100/PBS. To selectively stain the secreted Nord (Figure 3), the above immunostaining procedure was carried out in the absence of Triton X-100 (PBS alone for blocking and antibody incubation buffer; 0.01% Tween-20/in PBS for washing buffer). Pupal wings were collected and pre-fixed as previously described (Classen et al., 2008), then followed by the procedure described above for immunostaining of the larval wing discs. The stained larval wing discs or pupal wings were mounted and imaged with a Zeiss spinning disc confocal microscope.
 
-## Image collection and quantification of fluorescence intensity
+### Image collection and quantification of fluorescence intensity
 
 To compare the expression profile of pMad, Dpp, or Ptc in different genotypes, we used wing imaginal discs at the same developmental stage, which were dissected from wandering larvae, corresponding to 1–6 hr before the entry into the pupal stage. Larvae from the control and corresponding experimental group were raised at the same temperature and density. Wing discs were dissected, fixed, immunostained, and mounted by following the same protocol. All images were taken using the same confocal microscope settings. The pixel intensities of pMad, Dpp, or Ptc were obtained within a fixed rectangular region across both ventral and dorsal compartments using the Plot Proﬁle function of Fiji. Then, the average pixel intensities from multiple discs were plotted using the GraphPad Prism software. The number of wing imaginal discs used in each experiment is provided in the corresponding figure legend.
 
-## Cell immunostaining
+### Cell immunostaining
 
 48 hr after transfection, NIH 293 cells were washed twice with PBS, ﬁxed in 4% formaldehyde in PBS, blocked by 1.5% NGS in PBS, incubated with the primary antibody in PBS containing 1.5% NGS for overnight at 4° (to stain surface Nord or Ndnf), washed with 0.01% Tween-20/1× PBS, incubated with secondary antibody, and washed with 0.01% Tween-20/PBS. Mad-S2 cells immunostaining was carried out through similar procedures but in the presence of 0.1% Triton X-100 during blocking, antibody incubation, and washing steps. The stained cells were mounted and imaged with a Zeiss spinning disc confocal microscope.
 
-## Immunoprecipitation assay
+### Immunoprecipitation assay
 
 S2 cells were separately transfected to express Nord with a C-terminal GFP tag, or the FLAG-tagged Dpp, HA-tagged Gbb alone, or Dpp-FLAG/Gbb-HA in combination. >72 hr after transfection, conditioned medium from transfected cells were collected. The medium containing Nord or the BMP ligands were mixed, followed by incubation with anti-FLAG or anti-HA antibody-coupled beads (anti-M2 Affinity Matrix from Sigma; anti-HA Affinity Matrix from Roche) overnight at 4°C. Precipitated proteins were analyzed by Western blotting using anti-GFP, anti-HA, and anti-FLAG antibodies. Beads were washed five times with washing buffer (50 mM Tris-HCl at pH 6.8, 150 mM NaCl, and 1% NP40). Proteins bound to the beads were recovered in the SDS-PAGE sample buffer. Procedures from the medium collection were carried out at 4°C or on ice. Proteins samples were resolved by SDS-PAGE and transferred to PVDF membranes (Millipore) for Western blot analysis.
 
-## S2 cell-based BMP signaling assay
+### S2 cell-based BMP signaling assay
 
 The S2 cell-based BMP signaling assay was adopted from assays as previously described (Shimmi and O’Connor, 2003). Recombinant Dpp (159-DP-020, R&D Systems) was diluted in the culture medium according to the manufacturer’s recommendations. To prepare BMP ligands secreting source cells, briefly, Drosophila S2 cells were transfected with plasmids to express Dpp-FLAG or/and Gbb-FLAG with or without Nord-HA-GFP. >72 hr after transfection, the conditioned medium was collected, and the cells were lysed in lysis buffer (50 mM Tris-HCl at pH 6.8, 150 mM NaCl, 1% NP40, and protease inhibitors). S2 cells stably expressing the FLAG-Mad transgene (Mad-S2) cells were generated and used as BMP responding cells. Alternatively, we also transiently transfected S2 cells or Mad-S2 cells with plasmids to express GFP or Nord-GFP as described in the figure legends. >48 hr after transfection, the responding cells were incubated with the conditioned medium collected from the source cells for 1 hr. After incubation, the responding cells were washed and then lysed in the lysis buffer. Both the conditioned medium and the lysates were clarified by centrifugation, and proteins were recovered directly in the SDS-PAGE sample buffer. Proteins were separated by SDS-PAGE under reducing conditions and then transferred onto PVDF membranes (Millipore). The membranes were blocked and immunostained with primary antibodies and HRP-conjugated secondary antibodies. Blots were developed using Immobilon Forte Western HRP substrate (MilliporeSigma, WBLUF0100) with GeneSys Imaging System (Syngene). In Figure 8, Western blot quantification was performed using the Fiji software. Following background subtraction, the intensity of each band was measured by the function of plot lanes (GelAnalyzer). Then, the band intensity was used to calculate the signaling activity from an equal volume of conditioned medium (pMad/Mad) or the relative ligand activity ([pMad/Mad]/BMPs) as indicated in the figure legend.
 
-## Wing size and wing trichome measurements
+### Wing size and wing trichome measurements
 
 Adult wings were dissected from animals in 100% ethanol and mounted in 1:1 Wintergreen oil-Canadian balsam medium. The wings were imaged using a ×4 objective and area was measured using Fiji (ImageJ). Measurements were taken from the end of the costa on the anterior portion of the wing hinge to the end of the alula on the posterior. Area in pixels squared was converted to millimeters squared with a calibration value determined using a hemocytometer under the ×4 objective. Wing trichomes from the dorsal wing surface were imaged with a ×40 objective in the region between veins 4 and 5 just distal to the PCV (Figure 4—figure supplement 6). Trichomes were counted manually within the imaged area (37,500 µm2).
 
-## Statistical analysis
+### Statistical analysis
 
 All data in column graphs are shown as mean values with SD and plotted using GraphPad Prism software. As described in the figure legends, one-way ANOVA followed by Sidak’s multiple comparison test, unpaired two-tailed t-test, or two-sided Fisher’s exact test was used for statistical analysis. The sample sizes were set based on the variability of each assay and are listed in the figure legends. Independent experiments were performed as indicated to guarantee reproducibility of findings. Differences were considered statistically significant when p<0.01.

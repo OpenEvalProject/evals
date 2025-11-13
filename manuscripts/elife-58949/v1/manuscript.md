@@ -60,9 +60,25 @@ Based on genetic, molecular, and biochemical studies in mice (Mosialou et al., 2
 
 ## Results
 
-## Serum LCN2 levels are postprandially increased in individuals with normal and overweight but not in individuals with obesity or with severe obesity
+### Serum LCN2 levels are postprandially increased in individuals with normal and overweight but not in individuals with obesity or with severe obesity
 
 To assess the postprandial regulation of serum LCN2, we used data from four separate studies where healthy individuals with normal weight, overweight, obesity, and severe obesity were challenged with a meal after an overnight fast. In Study 1 with young healthy lean women (BMI: 21.8 ± 0.6 Kg/m²; Supplementary file 1A), analysis revealed a tendency for increase of circulating LCN2 levels with time (F7, 70=3.07, p=0.065; Figure 1A), although not significant. LCN2 serum concentration at baseline (t = 0 min) trended to differ from the one at t = 30 min (F1, 10=3.8, p=0.080), t = 45 min (F1, 10=4.6, p=0.058), t = 60 min (F1, 10=4.87, p=0.052), and t = 90 min (F1, 10=3.9, p=0.076), a similar magnitude of postprandial upregulation to what was previously reported (Paton et al., 2013). Interestingly, postprandial LCN2 serum levels (mean concentration at each timepoint) were robustly inversely correlated with hunger scores (mean hunger scores at each timepoint) of the challenged subjects (Spearman r = −0.98, p=0.0004) after the consumption of the liquid meal (Figure 1B). Serum LCN2 levels peaked at 45 min after meal ingestion, increasing by 16% (Supplementary file 1A, Figure 1—figure supplement 1, A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig1-v1.jpg)
+
+**Figure 1.:** (A–B) Study 1: (A) Serum LCN2 levels and hunger and (B) Spearman correlation between serum LCN2 levels and hunger in normal-weight women (n = 11). (C) Study 2: serum LCN2 levels in normal-weight women (n = 9). (D–L) Study 3: (D–E) serum LCN2 levels in (D) all subjects (n = 47) and (E) subcategories of the cohort classified according to their postprandial response in raising LCN2 (R [n = 25]; NR [n = 22]). (F) Spearman correlation between serum LCN2 levels and hunger in the responders of the mixed cohort. (G) Serum LCN2 levels, (H) Spearman correlation between serum LCN2 levels and hunger and (I) BMI and waist circumference in female R (n = 15) and NR (n = 13) individuals. (J) Serum LCN2 levels, (K) Spearman correlation between serum LCN2 levels and hunger and (L) BMI and waist circumference in male R (n = 10) and NR (n = 9) individuals. (M–O) Study 4: (M) Fold change in serum LCN2 levels in female and male individuals with obesity, before (pre) and after (post) gastric bypass (n = 12). The asterisk denotes the difference before and after surgery at the indicated timepoint. (N–O) Spearman correlation between serum LCN2 levels and hunger in individuals with severe obesity (N) before and (O) after bariatric surgery. Values represent mean ± SEM. * indicates p<0.05, ‡ indicates p<0.06, and † indicates p<0.1 of each timepoint versus baseline, unless otherwise stated. ‘Serum LCN2’ represents log-transformed postprandial levels and ‘hunger’ represents hunger scores BMI = basic metabolic Index, LCN2 = Lipocalin-2, R = responders (elevated LCN2 levels in multiple timepoints after the meal), NR = non-responders (reduced LCN2 levels after the meal), RYGB = Roux en-Y Gastric Bypass.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Postprandial serum (A) LCN2, (B) GLP-1, and (C) insulin levels and hunger score of n = 11 normal-weight women of Study 1. Spearman correlation between postprandial (D) LCN2, (E) GLP-1, and (F) insulin levels and hunger score of Study 1. Postprandial serum LCN2 (G), GLP-1 (H), insulin (I) levels of n = 9 normal-weight women of Study 2. Values represent mean ± SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Postprandial serum (A) LCN2, (G) GLP-1, and (M) insulin levels and hunger score of the whole, sex-mixed overweight/obese cohort (n = 47) of the study 3. Spearman correlation between postprandial (D) LCN2, (J) GLP-1, and (P) insulin levels and hunger score in the same 47 subjects. Postprandial serum (B, C) LCN2, (H, I) GLP-1, (N, O) insulin of n = 28 overweight/obese women and n = 19 men, respectively. Spearman correlation between postprandial (E, F) LCN2, (K, L) GLP-1, and (Q, R) insulin levels and hunger score in the same 28 women and 19 men, respectively. Filled symbols represent the responders- ‘R’ and open symbols represent the non-responders-NR’. Values represent mean ± SEM.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Pre-operative serum (A) LCN2, (E) GLP-1, and (I) insulin and hunger score of n = 12 individuals with severe obesity from Study 4. Spearman correlation between pre-operative postprandial (B) LCN2, (F) GLP-1, and (J) insulin levels and hunger score in the same individuals. Post-operative postprandial serum (C) LCN2, (G) GLP-1, (K) insulin levels of n = 12 individuals from Study 4 with normalized weight after bariatric Roux-en-Y surgery. Spearman correlation between post-operative postprandial (D) LCN2, (H) GLP-1, and (L) insulin levels and hunger score in the same individuals. Values represent mean ± SEM.
 
 Similarly, postprandial circulating LCN2 levels were significantly altered with time (F2, 16=27.87, p=0.002) in a separate, second study of young healthy lean women (BMI: 20.8 ± 0.5 Kg/m²; Supplementary file 1A). Specifically, serum LCN2 concentration at t = 60 min (F1, 8=59.64, p=0.002) and t = 105 min (F1, 8=15.36, p=0.009; Figure 1C) were significantly increased from baseline. Here serum LCN2 levels peaked at 60 min increasing by 54% (Supplementary file 1A, Figure 1—figure supplement 1, G).
 
@@ -82,7 +98,7 @@ In order to place in context the regulation of postprandial LCN2 serum levels an
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig2-v1.jpg)
 
-**Figure 2.:** (A–B) Study 1: (A) serum LCN2, GLP-1, and insulin levels of n = 11 normal-weight women and (B) area under the curve comparison for LCN2 and GLP-1. (C–D) Study 2: (C) serum LCN2, GLP-1, and insulin levels of n = 9 normal-weight women and (D) area under the curve comparison for LCN2 and GLP-1. (E–J) Study 3: (E) serum LCN2, GLP-1, and insulin levels of n = 47 overweight and obese subjects (whole, sex-mixed cohort), (F) of n = 28 overweight and obese women and (G) of n = 19 overweight and obese men and subcategorization of the cohort to responders and non-responders. Continuous lines were used for the whole, sex-mixed cohort (-A), the dashed line for the responders (-R) and the dash-and-dots line for the non-responders (-NR). Symbols mark the significant differences between each timepoint and baseline. (H) Area under the curve comparison for LCN2 and GLP-1 of the sex-mixed cohort, (I) women and (J) men. (K–M) Study 4: serum LCN2, GLP-1, and insulin levels of n = 12 obese subjects before/pre and (L) after/post gastric bypass. (M) Area under the curve comparison for LCN2 and GLP-1 pre- and post-gastric bypass surgery. Values represent mean ± SEM. * indicates p<0.05, ‡ indicates p<0.06 and † indicates p<0.1 of each timepoint versus baseline. ‘Serum LCN2, GLP-1 and insulin’ represent log-transformed postprandial levels. The units for log LCN2 and GLP-1 concentrations are in ng/mL, whereas for insulin in mIU/mL. LCN2 = Lipocalin-2, GLP-1 = Glucagon like peptide 1, RYGB = Roux en-Y Gastric Bypass.Figure 2—source data 1.
+**Figure 2.:** (A–B) Study 1: (A) serum LCN2, GLP-1, and insulin levels of n = 11 normal-weight women and (B) area under the curve comparison for LCN2 and GLP-1. (C–D) Study 2: (C) serum LCN2, GLP-1, and insulin levels of n = 9 normal-weight women and (D) area under the curve comparison for LCN2 and GLP-1. (E–J) Study 3: (E) serum LCN2, GLP-1, and insulin levels of n = 47 overweight and obese subjects (whole, sex-mixed cohort), (F) of n = 28 overweight and obese women and (G) of n = 19 overweight and obese men and subcategorization of the cohort to responders and non-responders. Continuous lines were used for the whole, sex-mixed cohort (-A), the dashed line for the responders (-R) and the dash-and-dots line for the non-responders (-NR). Symbols mark the significant differences between each timepoint and baseline. (H) Area under the curve comparison for LCN2 and GLP-1 of the sex-mixed cohort, (I) women and (J) men. (K–M) Study 4: serum LCN2, GLP-1, and insulin levels of n = 12 obese subjects before/pre and (L) after/post gastric bypass. (M) Area under the curve comparison for LCN2 and GLP-1 pre- and post-gastric bypass surgery. Values represent mean ± SEM. * indicates p<0.05, ‡ indicates p<0.06 and † indicates p<0.1 of each timepoint versus baseline. ‘Serum LCN2, GLP-1 and insulin’ represent log-transformed postprandial levels. The units for log LCN2 and GLP-1 concentrations are in ng/mL, whereas for insulin in mIU/mL. LCN2 = Lipocalin-2, GLP-1 = Glucagon like peptide 1, RYGB = Roux en-Y Gastric Bypass.
 
 In study 3, the total GLP-1 response was significantly higher than LCN2 (p<0.0001). For consistency purposes, we also analyzed GLP-1 and serum levels in responders and non-responders, although segregation in these two groups was based on LCN2 serum levels. The response of LCN2 was significantly different between responders and non-responders (p=0.014; Figure 2H) and this was more pronounced in females (Figure 2I), than males (Figure 2J). GLP-1 or insulin response between responders and non-responders was not in the opposite direction, as in the case of LCN2 (Figure 2E-G; Figure 1—figure supplement 2, G–I,M–O). Within the responders, an inverse correlation with hunger was present for insulin (Figure 1—figure supplement 2, P–R) but not for LCN2 (Figure 1—figure supplement 2, D–F) or GLP-1 (Figure 1—figure supplement 2, J–L,).
 
@@ -90,21 +106,45 @@ In study 4, the improvement of body weight and BMI after gastric bypass surgery 
 
 Combined, our studies in humans show a postprandial increase in circulating LCN2 levels in humans with normal weight, which notably correlates with a drop in hunger sensation in the same individuals. Furthermore, subjects with overweight or obesity lose postprandial regulation of LCN2 and this may be a new mechanism of resistance that contributes to obesity.
 
-## LCN2 crosses the blood-brain barrier of vervets and binds to the hypothalamus of human, baboon, and rhesus macaque brain sections
+### LCN2 crosses the blood-brain barrier of vervets and binds to the hypothalamus of human, baboon, and rhesus macaque brain sections
 
 Next, we examined whether the mechanism of action of LCN2 is conserved in primates. As a first approach we evaluated whether [124I] rh-LCN2 crosses the blood-brain barrier in non-human primates. Combined analysis of MRI and PET representative images of vervet monkey brain demonstrated an initial peak of activity throughout the brain during the first 30 s after the end of intravenous administration of [124I] rh-LCN2 that is characteristic of BBB permeability. The sagittal, coronal, and axial MRI T1-weighted template images show a volume of interest (VOI) in the anatomical area of the hypothalamus where there is an indication of tracer binding although it may partially be spillover from an adjacent area outside the brain that also shows substantial tracer uptake (Figure 3A-I, Figure 3—figure supplement 1A–M).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig3-v1.jpg)
+
+**Figure 3.:** (A, D, G) MRI, (B, E, H) PET/MRI and (C, F, I) PET representative images of monkey brain 30 s after infusion of [124I]-rh-LCN2. (A, B, C) Sagittal, (D, E, F) coronal, and (G, H, I) axial MRI T1-weighted template images (Invia19) demonstrate the volume of interest (VOI) and the anatomy of the hypothalamus (outlined with white and black line). (J–M) Time-activity curves (TACs) for the (J) left thalamus and (K) hypothalamus and (L) right thalamus, and (M) hypothalamus in a chase and a no-chase experiment in the same animal; TACs are reported in standard uptake value (SUV) units.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, E, I) MRI, and PET representative images of vervet monkey brain (B, F, J) 5 min, (C, G, K) 30 min, and (D, H, L) 120 min after infusion of 124I-rh-LCN2: (A, B, C, D) Sagittal, (E, F, G, H) coronal, and (I, J, K, L) axial images demonstrate the volume of interest (VOI) and the anatomy of the hypothalamus (outlined with white square). (M) Time-activity curves for various brain areas and comparison to the hypothalamus in a no-chase experiment.
 
 PET acquisition was repeated using a chase/blocking paradigm to determine whether there is specific binding of [124I] rh-LCN2 in the hypothalamus. The results from the chase experiment—standard uptake values at every timepoint—were compared to those of the no-chase experiment, by using the same procedure, software and atlas. Infusion of the MC4R receptor ligand, α-MSH, 15 min after [124I] rh-LCN2 did not seem to affect the tracer uptake in the thalamic region (Figure 3J and L), whereas it did reduce uptake compared with the no-chase condition in the hypothalamus (Figure 3K and M). We observed a 6.3% and 5.7% difference in the standard uptake value (SUV) in the left and right thalamus respectively, and a 49.8% and 51.2% reduction in the left and right hypothalamus. These results indicate that [124I] rh-LCN2 penetrates the BBB and shows specific binding defined by displacement with α-MSH in the hypothalamus but not in the thalamus.
 
 To further prove that LCN2 can bind to the hypothalamic feeding center of primates and to also exclude the possibility, inherent to PET studies, that a spillover signal from outside the brain may confound the findings, we examined LCN2 binding to brain sections where no such potential confounder exists. Rhesus macaque, baboon, and human brain sections containing the hypothalamus were incubated with either [125I] rh-LCN2 alone or in the presence of excess unlabeled LCN2 or α-MSH to assess the specificity of binding. [125I] rh-LCN2 binding was observed in the hypothalamic area of the baboon (Figure 4A; Figure 4—figure supplement 1B,F) and the rhesus macaque (Figure 4—figure supplement 1, C–D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Autoradiographic images showing (A) [125I] rh-LCN2 binding and (B) blocking of [125I] rh-LCN2 binding with not radiolabeled rh-LCN2 on the baboon hypothalamus; the hypothalamic area is outlined with a black line. (C–E) Autoradiographic images showing (C) [125I] rh-LCN2 binding, (D) blocking of [125I] rh-LCN2 binding with α-MSH, and (E) blocking of [125I] rh-LCN2 binding with not radiolabeled rh-LCN2 on the human hypothalamus. (F–G) Binding of biotinylated LCN2 to the hypothalamic area (outlined in A, B from baboon brain sections) in the (F) absence or (G) presence of hundred-fold excess of non-biotinylated LCN2 and (I) quantitation of LCN2-positive cells in both conditions (as percent of total cells in each field of view; n = 1 brain section and n = 4 fields of view for (F) and n = 2 for (G)). Bar graphs were obtained from a single brain section and therefore depict qualitative representations of binding. (H) Binding of biotinylated LCN2 to the hypothalamic area (outlined in C-E) from the human brain. (J) Quantification of specific [125I] rh-LCN2 binding to human brain sections (n = 3). Values are mean ± standard deviation of the mean. DM = dorsomedial, PVN = paraventricular nucleus of the hypothalamus, VM = ventromedial, VL = ventrolateral nucleus of the hypothalamus.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Rh-LCN2 binding in hemisphere tissue sections in the coronal plane from brains from a (A) human, (B) baboon, and a (C) rhesus macaque. (D) Quantification of [125I] rh-LCN2 binding in the human and rhesus hypothalamus, which was blocked with α-MSH. The human data of (D) are presented also in Figure 4J, but are included here for comparison with the rhesus macaque data. Values are mean ± SEM. (E) Quantification of [125I] rh-LCN2 binding from one experiment where α-MSH and LCN2 blocking were compared in brain sections from n = 1 human subject. (F) Quantification of binding [125I] rh-LCN2 binding in n = 1 baboon brain; bar graphs in E and F depict qualitative representations of binding. Rh-LCN2 = recombinant human Lipocalin-2.
+
 In the baboon, the specificity of binding was confirmed by the use of unlabeled LCN2 which blocked part of the [125I] rh-LCN2 binding (Figure 4B). Specific binding was observed in the paraventricular nucleus of the hypothalamus (PVN) and both the dorsomedial (DM) and ventrolateral (VL) nuclei of the human hypothalamus, all areas where MC4R is expressed (Figure 4C, and Figure 4—figure supplement 1, A). Unlabeled LCN2 blocked part of the binding of labeled LCN2 (Figure 4E; Figure 4—figure supplement 1, E), indicating specific binding. Similarly, unlabeled a-MSH also blocked some LCN2 binding to the hypothalamus, indicating that LCN2 binds to MC4R (Figure 4D; Figure 4—figure supplement 1, E). That a-MSH blocked less [125I] rh-LCN2 binding than non-radiolabeled LCN2 may suggest that, at least in primates [125I] rh-LCN2 has a higher binding affinity for MC4R than α-MSH.
 
 To enhance the rigor of the autoradiography experiments, we also examined LCN2 binding using immunofluorescence in baboon (Figure 4F, G) and human brain sections (Figure 4H) containing the hypothalamus. Binding was again shown in both human and baboon brain sections and quantified as the average of LCN2-positive cells (21.3 ± 1.3% and 17.6 ± 1.8%, respectively) and it was specific since it was competed by non-biotinylated LCN2 (Figure 4G, I). The reduction in binding was approximately 75%. If the concentration of the blocking agent is insufficient then the block may be incomplete and explain why 25% nonspecific or non-displaceable binding is observed even when the tracer and blocking drugs are almost the same. It is also possible that a slightest difference in structure may mean differences in nonspecific binding or off-target high-affinity binding (Hamill et al., 2005). Of note, bar graphs were obtained from a single brain section and therefore depict qualitative representations of binding. Overall, we observed a consistent and comparable degree of binding in the hypothalamus, among the three species examined (Figure 4—figure supplement 1A–F), which indicates that the PET findings are evidence of specific binding in the non-human primate hypothalamus and supports the premise of a common interspecies target of action for LCN2.
 
-## rh-LCN2 treatment suppresses food intake and body weight in vervets within five days of treatment
+### rh-LCN2 treatment suppresses food intake and body weight in vervets within five days of treatment
 
 Having established that rh-LCN2 is able to cross the BBB of vervets and localize to the hypothalamus, we then sought to examine whether a daily treatment of lean monkeys with intravenously administered rh-LCN2 would lead to appetite suppression. As described in Materials and methods, this was a cross-over study with two treatment weeks and one washout period in between (Figure 5A). The LCN2 dose was extrapolated from our studies in mice (Mosialou et al., 2017). In the mouse hypothalamus, the amount of naturally occurring LCN2 is 28 pg/mg and in the adult mouse and human serum, it is on average 100–150 ng/mL. In mice, the administration of LCN2 by intraperitoneal injection of 150 ng/g daily crosses the blood-brain barrier and suppresses appetite. Using interspecies conversion per m2, we calculated the monkey dose to be 0.0375 mg/kg. This dose is equivalent to the amount used to treat mice and it is calculated based on body surface area; it takes into account the interspecies variation in several physiological parameters including oxygen utilization, caloric expenditure, basal metabolism, and blood volume (Reagan-Shaw et al., 2008).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig5-v1.jpg)
+
+**Figure 5.:** (A) Timeline in weeks showing the design and major events of the non-human primate study. (B) Change in food intake of saline- and LCN2-treated vervets during the first week of treatment (n = 3 monkeys/treatment). (C) Change in food intake of saline- and LCN2-treated vervets during the baseline, the first week of treatment, and the subsequent washout period (n = 3 monkeys/treatment). (D–E) Change in food intake of saline- and LCN2-treated vervets during (D) the second week of treatment (n = 3 monkeys/treatment) and (E) when treatment weeks were combined and values were averaged (n = 6 monkeys/treatment). (F) Circulating levels of monkey and human LCN2 in the treated monkeys. Two different ELISA assays were used; one for human and one for monkey LCN2. Each ELISA has selective reactivity for the designated species. In G, gray bars indicate serum levels of monkey whereas red bars represent human LCN2 following its administration. Values represent mean ± SEM. * indicates p<0.05 and † indicates p<0.1. B = Baseline, T = Treatment, mLCN2 = monkey Lipocalin-2, hLCN2 = human Lipocalin-2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Coomassie blue staining of recombinant human LCN2 showing purity and N-glycosylation of the protein. Lane 1, recombinant human LCN2, Lane 2, recombinant human LCN2 digested with N-glycanase. M, molecular weight marker.
 
 Digestion of an LCN2 aliquot with N-glycanase showed that the recombinant protein is pure and N-glycosylated (Figure 5—figure supplement 1). In addition, each of the non-human primates received a maximum endotoxin of 0.03 EU/kg/hr, a dose well below the endotoxin limit (5 EU/kg/hr) defined as acceptable by the U.S. Food and Drug Administration (Office of Regulatory Affairs, 2014).
 
@@ -116,11 +156,156 @@ To examine if the observed anorexigenic effect of LCN2 affected body weight or a
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/58949/elife-58949-fig6-v1.jpg)
 
-**Figure 6.:** (A) Body weight, (B) serum leptin, and (C) serum triglycerides at baseline and after saline- and LCN2-treatment of vervets (n = 3 monkeys/treatment). Change in body weight (D), serum leptin (E), and serum triglycerides (F) at the end of treatment week 1. Values represent mean ± SEM. rh-LCN2 = recombinant human Lipocalin-2.Figure 6—source data 1.
+**Figure 6.:** (A) Body weight, (B) serum leptin, and (C) serum triglycerides at baseline and after saline- and LCN2-treatment of vervets (n = 3 monkeys/treatment). Change in body weight (D), serum leptin (E), and serum triglycerides (F) at the end of treatment week 1. Values represent mean ± SEM. rh-LCN2 = recombinant human Lipocalin-2.
 
-## LCN2 treatment causes negligible toxicity in vervets
+### LCN2 treatment causes negligible toxicity in vervets
 
 To determine whether the rh-LCN2 treatment causes major side effects we measured several biomarkers in the serum of the monkeys, both before and after treatment. As shown in Table 1, serum samples from two timepoints were collected before the first week of treatment, whose values were averaged for each subject and indicated as ‘baseline 1’ (n = 6 subjects). Furthermore, we collected serum samples from the end of the first and second treatment week. ‘Saline’ and ‘LCN2’ groups consisted of n = 6 subjects/serum samples, three from the first and three from the second treatment week.
+
+**Table 1.**
+ Acute-phase, toxicological, and metabolic markers in the treated vervets.Table 1—source data 1.Acute-phase, toxicological, and metabolic markers in the treated vervets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Baseline</th>
+      <th>Saline</th>
+      <th>LCN2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primate LCN2 (ng/mL)</td>
+      <td>9.4 ± 3.2</td>
+      <td>11.1 ± 3.0</td>
+      <td>12.4 ± 3.3</td>
+    </tr>
+    <tr>
+      <td>CRP (ng/mL)</td>
+      <td>464.4 ± 253.4</td>
+      <td>453.1 ± 191.1</td>
+      <td>935.5 ± 618.7</td>
+    </tr>
+    <tr>
+      <td>GGT (u/L)</td>
+      <td>51.0 ± 4.5</td>
+      <td>52.2 ± 5.1</td>
+      <td>49.5 ± 4.0</td>
+    </tr>
+    <tr>
+      <td>AST(SGOT) (u/L)</td>
+      <td>52.8 ± 3.8</td>
+      <td>106.7 ± 14.8(*)</td>
+      <td>131.3 ± 12.3(*)</td>
+    </tr>
+    <tr>
+      <td>ALT(SGPT) (u/L)</td>
+      <td>91.7 ± 21.1</td>
+      <td>104.8 ± 29.3</td>
+      <td>93.3 ± 25.1</td>
+    </tr>
+    <tr>
+      <td>ALP (u/L)</td>
+      <td>100.3 ± 11.3</td>
+      <td>79.5 ± 14.6</td>
+      <td>82.5 ± 7.1</td>
+    </tr>
+    <tr>
+      <td>BUN (mg/dL)</td>
+      <td>13.8 ± 0.5</td>
+      <td>15.5 ± 0.8</td>
+      <td>16.3 ± 0.6(*)</td>
+    </tr>
+    <tr>
+      <td>Creatinine (mg/dL)</td>
+      <td>0.7 ± 0.1</td>
+      <td>0.8 ± 0.0</td>
+      <td>0.8 ± 0.0(*)</td>
+    </tr>
+    <tr>
+      <td>BUN/Creatinine ratio</td>
+      <td>19.9 ± 2.1</td>
+      <td>20.7 ± 0.9</td>
+      <td>20.5 ± 1.1</td>
+    </tr>
+    <tr>
+      <td>Total protein (g/dL)</td>
+      <td>6.6 ± 0.2</td>
+      <td>6.6 ± 0.4</td>
+      <td>6.7 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Albumin (g/dL)</td>
+      <td>4.0 ± 0.2</td>
+      <td>3.5 ± 0.5</td>
+      <td>4.1 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Globulin (g/dL)</td>
+      <td>2.5 ± 0.1</td>
+      <td>2.9 ± 0.2</td>
+      <td>2.6 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Phosphorus (mg/dL)</td>
+      <td>3.7 ± 0.2</td>
+      <td>4.6 ± 0.4</td>
+      <td>5.0 ± 0.5(*)</td>
+    </tr>
+    <tr>
+      <td>Calcium (mg/dL)</td>
+      <td>8.6 ± 0.2</td>
+      <td>8.5 ± 0.3</td>
+      <td>8.8 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Glucose (mg/dL)</td>
+      <td>80.3 ± 3.3</td>
+      <td>64.7 ± 2.6(*)</td>
+      <td>68.2 ± 4.4(*)</td>
+    </tr>
+    <tr>
+      <td>Insulin (mIU/mL)</td>
+      <td>83.0 ± 16.0</td>
+      <td>61.5 ± 14.5</td>
+      <td>50.8 ± 11.8</td>
+    </tr>
+    <tr>
+      <td>Cholesterol (mg/dL)</td>
+      <td>141.4 ± 16.3</td>
+      <td>147.2 ± 20.1</td>
+      <td>143.8 ± 20.8</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>71.3 ± 17.2</td>
+      <td>51.2 ± 11.1</td>
+      <td>50.7 ± 11.4(†)</td>
+    </tr>
+    <tr>
+      <td>Leptin (ng/mL)</td>
+      <td>1.3 ± 0.1</td>
+      <td>1.3 ± 0.1</td>
+      <td>1.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Amylase (u/L)</td>
+      <td>1336.8 ± 190.9</td>
+      <td>1699.8 ± 283.8</td>
+      <td>1744.5 ± 352.5</td>
+    </tr>
+    <tr>
+      <td>Lipase (u/L)</td>
+      <td>71.2 ± 7.2</td>
+      <td>85.0 ± 11.8</td>
+      <td>77.2 ± 11.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values represent mean ± SEM. * indicates p<0.05 and † indicates p<0.1 versus baseline, with two-tailed paired Student’s t-tests. LCN2 = Lipocalin-2, CRP = C reactive protein, GGT = Gamma glutamyl transferase, AST = Aspartate transaminase, SGOT = Serum glutamate-oxaloacetate transaminase, ALT = Alanine transaminase, SGPT = Serum glutamic pyruvic transaminase, ALP = Alkaline phosphatase, BUN = Blood urea nitrogen._
 
 First, we examined whether our recombinant protein preparation caused any acute-phase response to the treated monkeys. To test this, we measured serum CRP levels before and after the treatment. As shown in Table 1, while CRP levels appear to increase during the time of LCN2 injections, the effect was mostly driven by the extreme value for one animal in the first week of treatment. Rhabdomyolysis is indicated as a rare cause of CRP increase, and may account for the high levels of CRP in that subject (Landry et al., 2017). It is possible that the animal did not tolerate well the daily intramuscular injections of dexmetodimine, which is also evident by the AST data (the value for this animal was the highest). As we mention in the next paragraph, high levels of AST may indicate muscle inflammation or injury. Furthermore, a subject of the saline-treated group was difficult to dose throughout the study, and this stress may account for the high CRP concentrations in this subject at each time point. Nevertheless, serum CRP levels did not change with LCN2 treatment. Similarly, saline-treated monkeys had normal CRP levels compared with baseline.
 
@@ -148,13 +333,261 @@ In the future, larger and well-controlled studies are needed to more precisely c
 
 ## Materials and methods
 
-## Human studies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-biotin antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab53494, RRID:AB_867860</td>
+      <td>10 ug/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Alexa Fluor 488</td>
+      <td>Life technologies</td>
+      <td>Cat# A-21206, RRID:AB_2535792</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>RNA from human osteoblasts</td>
+      <td>Laboratory of Prof. Stavroula Kousteni</td>
+      <td></td>
+      <td>The coding sequence of human LCN2 was amplified and the amplified insert was cloned into the πα-SHP-H vector. Additional information can be found in section: ‘Production of recombinant human LCN2 (rh-LCN2)”.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens, Female)</td>
+      <td>Study 1 serum samples</td>
+      <td>Columbia University Irving Medical Center</td>
+      <td></td>
+      <td>Additional information can be found in section: ‘Subjects, protocols and test meals’.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens, Female)</td>
+      <td>Study 2 serum samples</td>
+      <td>University of Lyon - INSERM UMR 1033 institute</td>
+      <td></td>
+      <td>Additional information can be found in section: ‘Subjects, protocols and test meals’.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens, Male and Female)</td>
+      <td>Study 3 serum samples</td>
+      <td>Rutgers University</td>
+      <td></td>
+      <td>Additional information can be found in section: ‘Subjects, protocols and test meals’.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens, Male and Female)</td>
+      <td>Study 4 plasma samples</td>
+      <td>Columbia University Irving Medical Center</td>
+      <td></td>
+      <td>Additional information can be found in section: ‘Subjects, protocols and test meals’.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Chlorocebus aethiops sabeus, Male)</td>
+      <td>African Green Monkeys serum samples</td>
+      <td>Wake Forest School of Medicine</td>
+      <td></td>
+      <td>Additional information can be found in section: ‘Non-human primate study’.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens, Male)</td>
+      <td>Post-mortem human brain sections</td>
+      <td>Columbia University – New York State Psychiatric Institute</td>
+      <td></td>
+      <td>Additional information can be found in section: ‘Autoradiography and immunofluorescence on brain sections from primates’.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Papio anubis, Male)</td>
+      <td>Baboon brain sections</td>
+      <td>Columbia University – New York State Psychiatric Institute</td>
+      <td></td>
+      <td>Additional information can be found in section: ‘Autoradiography and immunofluorescence on brain sections from primates’.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Macaca fascicularis, Male)</td>
+      <td>Macaque brain sections</td>
+      <td>Columbia University – New York State Psychiatric Institute</td>
+      <td></td>
+      <td>Additional information can be found in section: ‘Autoradiography and immunofluorescence on brain sections from primates’.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEI max</td>
+      <td>Polysciences Inc</td>
+      <td>Cat# 24765–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Radioactive sodium iodide (Na125I)</td>
+      <td>Perkin Elmer</td>
+      <td>Cat# NEZ033001MC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alpha MSH</td>
+      <td>Tocris</td>
+      <td>Cat# 2584</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human LCN2 (rh-LCN2)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Additional information can be found in section ‘Production of recombinant human LCN2 (rh-LCN2)”.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>N-glycanase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P9120</td>
+      <td>0.1 U</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NHS Biotin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 20217</td>
+      <td>Additional information can be found in section: ‘Autoradiography and immunofluorescence on brain sections from primates’.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Lipocalin-2/NGAL DuoSet ELISA</td>
+      <td>R and D Systems</td>
+      <td>Cat# DY1757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Insulin ELISA</td>
+      <td>Crystal Chem</td>
+      <td>Cat# 90095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human GLP-1 ELISA</td>
+      <td>Merck Millipore</td>
+      <td>Cat# EZGLP1T-36K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monkey Lipocalin-2 ELISA</td>
+      <td>LifeSpan BioSciences</td>
+      <td>Cat# LS-F38530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monkey Insulin ELISA</td>
+      <td>LifeSpan BioSciences</td>
+      <td>Cat# LS-F10306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Primate CRP</td>
+      <td>Helica Biosystems</td>
+      <td>Cat# 911CRP01P-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monkey Leptin</td>
+      <td>Cusabio</td>
+      <td>Cat# CSB-E14936Mk</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Raw data (Human studies 1–4)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Raw data can be found in the source data files‘Figure 1—source data 1’,‘Figure 1—figure supplement 1—source data 1’.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Raw data (Non-human primate study)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Raw data can be found in the source data files of Figures 3–6.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Raw data (Autoradiography studies)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Raw data can be found in the source data files‘Figure 4—source data 1’ and ‘Figure 4—figure supplement 1—source data 1’.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens, Female)</td>
+      <td>HEK-293</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1573, RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens, Female)</td>
+      <td>Expi293</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A14527 RRID:CVCL_D615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: πα-SHP-H-LCN2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Additional information can be found in section ‘Production of recombinant human LCN2 (rh-LCN2)”.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAS v9.4</td>
+      <td>SAS</td>
+      <td>RRID:SCR_008567</td>
+      <td>https://www.sas.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pmod software</td>
+      <td>Pmod Technologies</td>
+      <td>RRID:SCR_016547</td>
+      <td>https://www.pmod.com/web/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human studies
 
 Data from four separate studies were used to assess the relationship between LCN2 levels and postprandial regulation in healthy, overweight, obese, and severely obese humans. Study 1 was performed at the Department of Medicine-Endocrinology of Columbia University Medical Center (CUMC), Study 2 at the INSERM UMR 1033 institute of the University of Lyon, Study 3 at the Department of Nutritional Sciences of Rutgers University and Study 4 at New York Obesity Nutrition Research Center of CUMC.
 
-## Subjects, protocols, and test meals
+### Subjects, protocols, and test meals
 
-## Study 1
+#### Study 1
 
 This study was designed to examine whether the ingestion of a liquid meal by healthy normal-weight women after an overnight fast has any effect on serum LCN2 concentrations and whether this correlates with hunger reduction. Eleven young women (mean age ± SEM: 27.9 ± 0.7 years) with normal body weight (BMI ± SEM: 21.8 ± 0.6 kg/m²) participated in the study.
 
@@ -162,11 +595,11 @@ A total of 63 participants were screened and 11 participants were eligible for r
 
 All visits took place between days 3 through 9 of the follicular phase of the menstrual cycle. Subjects received a liquid meal (732 kcal: 65% fat, 5% protein, 30% carbohydrates) at 8:00 am following an overnight fast (no food or drink excluding water for 8–12 hr). Participants had 15 min to drink all of the meal. A visual analog score (VAS) was used to assess hunger sensation before and after the ingestion of the meal. The scale has a 100 mm horizontal line with the most positive and the most negative rating at each end. Participants chose a point on the line representative of their current perception of hunger. The distance in mm between the leftmost (zero) point and the point marked by the participant was measured and used to determine the VAS score. All of the participants successfully completed the liquid-meal tolerance test. LCN2, glucose, and insulin serum concentrations were measured before and after ingestion of the meal.
 
-## Study 2
+#### Study 2
 
 This study was conducted in Lyon, France and it has been designed to investigate whether LCN2 levels change after a meal challenge in a small cohort of young normal-weight women. Volunteers were eligible if they were ≥18 years old, had a body mass index (BMI) between 18 and 25 kg/m², performed less than 120 min of physical activity per week, and had a normal rest electrocardiogram. Participants were excluded if they were pregnant, had any cardiovascular risk factor or had any chronic disease including diabetes history and hypertension. Participants were informed about the protocol and provided a signed informed. Participants were given a mixed breakfast-type meal (212 kcal: 34% fat, 8% protein, 58% carbs) following an overnight fast. LCN2 serum levels were measured before and after the ingestion of the test meal. Participants remained seated at rest during the experiment. This study included nine young (mean age ± SEM: 26.1 ± 1.0 years) normal-weight women (mean BMI ± SEM: 20.8 ± 0.5 Kg/m²) whose characteristics are presented in Supplementary file 1A.
 
-## Study 3
+#### Study 3
 
 With this study, we sought to address whether postprandial regulation of LCN2 is conserved in overweight and obese people. To this end, 47 overweight or obese individuals (mean age ± SEM: 32.4 ± 1.8 years) who were otherwise healthy, with a BMI between 25–35 kg/m2 were recruited.
 
@@ -174,15 +607,15 @@ Individuals were excluded if there was a diagnosis of an eating disorder, gastro
 
 After an overnight fast (no food intake after 9 pm) body weight, blood pressure, body fat, and waist circumstance were measured and a baseline fasting (0 min) blood sample drawn. Participants also completed multiple visual analog scales (VAS) before breakfast to measure their subjective appetite sensations (hunger, fullness, prospective food consumption, and satiety). After baseline blood withdrawal and VAS evaluation, each participant was served a breakfast meal (275 kcal; 50% carbohydrate; 30% fat; 20% protein). Afterward, postprandial blood was drawn and VAS measurements were taken over a 3 hr period. Some data from this study has been published elsewhere (Hao et al., 2017).
 
-## Study 4
+#### Study 4
 
 Here we sought to address whether postprandial regulation of LCN2 is restored in individuals with severe obesity after a Roux-en-Y gastric bypass (RYGB). Fasting and postprandial LCN2 concentrations were measured for 4 hr after a liquid test meal ingested after an overnight fast by 12 individuals (11 women, 1 man) with severe obesity and without type 2 diabetes (mean age ± SEM: 39.3 ± 5.3 years, BMI = 45.8 ± 3.0 kg/m2), before and again one year after Roux-en-Y gastric bypass surgery. The timing of meal ingestion was controlled for in all subjects. A visual analog score (VAS) of 150 mm was used to assess hunger before and after the ingestion of the meal. Details of the experimental protocol and some data from this study have been published elsewhere (Stano et al., 2017). The study was registered at clinicaltrials.gov (NCT02929212).
 
-## Human blood sampling
+### Human blood sampling
 
 An intravenous catheter was placed in the antecubital vein and fasting-baseline blood sample was taken (t = 0). A normal saline (0.9%) flush was used after each blood draw. Following ingestion of the test meal, blood samples were taken at 15, 30, 45, 60, 90, 120, and 180 min for Study 1, at 60 and 105 min for Study 2, at 30, 60, 90, 120, and 180 min for Study 3 and at 15, 30, 45, 60, 90, 120, 180, 240, 300, and 360 min for Study 4. Each blood draw consisted of a total of 10 mL of blood and was collected into serum-separator tubes (Becton Dickinson, Franklin Lakes, NJ). Blood samples were left to clot at room temperature for 30 min and were subsequently spun at 3400 rpm for 15 min at 4°C. In Study 4, blood was collected in chilled EDTA tubes with aprotinin (500 kallikrein inhibitory units/mL of blood) and dipeptidyl peptidase-4 inhibitor (10 μL/mL of blood; Millipore, Burlington, MA). Serum or plasma was then aliquoted and stored at −80°C in cryovials until assayed.
 
-## Production of recombinant human LCN2 (rh-LCN2)
+### Production of recombinant human LCN2 (rh-LCN2)
 
 Total RNA from human osteoblasts was extracted using standard protocols. The coding sequence of human LCN2 was amplified and the amplified insert was cloned into the πα-SHP-H vector, kindly provided by Prof. Shapiro. The correct clone was verified by sequencing. Before proceeding to a full-scale production of the protein, we tested the expression in HEK-293 (ATCC) cells by qRT-PCR.
 
@@ -192,21 +625,21 @@ Four days after transfection, supernatants were harvested and purified over 13 m
 
 The purity and integrity of recombinant human LCN2 stocks was assessed by SDS–PAGE followed by Coomassie blue staining. To verify proper N-glycosylation of the protein, 15 ug of the protein were digested with N-glycanase (Sigma-Aldrich, St. Louis, MO) for 16 hr at 37°C, according to the manufacturer’s instructions. In addition, in the same stocks, we measured endotoxin levels by a chromogenic LAL assay (Genscript, Piscataway, NJ). We then used an endotoxin removal kit (Genscript) to further lower the endotoxin levels.
 
-## Radiosynthesis of [125I] rh-LCN2
+### Radiosynthesis of [125I] rh-LCN2
 
 The radiolabeling of rh-LCN2 was achieved by following a modified protocol by Dong (Dong et al., 2002). Rh-LCN2 (200 µL, 1.0 mg/mL solution) was added to a yellow-capped iodogen tube (Pierce Iodination Tube; Thermo Fisher Scientific, Waltham, MA). This was then diluted in 100 µL of Dulbecco's phosphate buffer saline (DPBS, 1×, with calcium chloride and magnesium chloride, pH 7.0–7.2; Gibco-Thermo Fisher Scientific) to bring to a calculated 0.75 mg/mL concentration. Twenty-five microliters (25 μL) of radioactive sodium iodide (Na125I in 0.1 M NaOH; Perkin Elmer, Waltham, MA) was added to this solution (assay 635 µCi). The reaction mixture was sealed and incubated for 60 min at room temperature. After 60 min, the reaction mixture was passed through a preconditioned (with 100 mL of DPBS, 1× solution) size-exclusion column (PD-10 Sephadex G-25M column, Part No. 17085101OL/AG; GE Healthcare, Chicago, IL) with the use of DPBS. Fractions were collected in 1.0 mL increments. The resulting eluent (~2 mL) was assayed to give 150 µCi (24% rcy) of [125I]-I-rh-LCN2. TLC: 1 µL of [125I]-I-rh-LCN2 sample was spot on the iTLC-SG plate and developed in 70:30 MeOH: H2O. ‘Free’ (i.e. unlabeled) iodine moved with the solvent up the iTLC-SG plate, while the desired I-125 labeled complex stuck to the baseline. The strip was then cut into thirds, placed in tubes for gamma counter analysis (Hidex Automatic Gamma Counter; Hidex, Turku, Finland) and run on an open window.
 
-## Autoradiography and immunofluorescence on brain sections from primates
+### Autoradiography and immunofluorescence on brain sections from primates
 
-## Autoradiography
+#### Autoradiography
 
 Postmortem human brain sections (20 μm) from non-psychiatric controls (n = 3) that included the hippocampus, hypothalamus and thalamus were used. Baboon (Papio anubis, n = 1) and rhesus macaque monkey (Macaca fascicularis, n = 3) brain sections (20 μm) from midcallosal levels were used for in vitro studies. Tissue sections were pre-incubated in Tris buffer (pH 7.4) containing 0.1% BSA for 30 min. Tissues sections were then added to a solution of Tris/BSA buffer solution with 200pM [125I] rh-LCN2 (~1.50 µCi/mL) for 60 min at RT. Adjacent sections were incubated with 1 µM rh-LCN2 or 1 µM α-MSH to determine non-specific binding. Sections were washed for 15 min (1 × 10 min followed by 1 × 5 min) in Tris/BSA buffer solution at 4°C followed by a dip in cold distilled H2O to remove buffer salts. Sections were then dried under a stream of desiccated cold air. All slides were laid out in X-ray film cassettes and exposed to Biomax MR film (Kodak, Rochester, NY) for 1–2 days, developed using Kodak D-19 developer and fixative. The autoradiograms were sampled using a computer-based image analysis system (MCID; Imaging Research Inc, Ontario, Canada) as previously described (Arango et al., 1995; Arango et al., 1993; Boldrini et al., 2008). All the sections were corrected for light transmission inhomogeneities and binding was quantified by relative optical density (ROD, a grayscale which does allow for scaling of the amount of darkness in the film).
 
-## Immunofluorescence
+#### Immunofluorescence
 
 Human and baboon brain sections were rehydrated in ice-cold binding buffer (50 nM Tris-HCl [pH 7.4], 10 nM MgCl2, 0.1 mM EDTA, and 0.1% BSA) for 15 min and incubated 1 hr at room temperature in the presence of biotinylated LCN2 (25 pg/mL−1). After washing in harvesting buffer (50 mM Tris-HCl [pH 7.4]), samples were fixed in 4% PFA for 15 min, washed in PBS, and incubated with rabbit anti-biotin antibody (ab53494, Abcam, Cambridge, UK) overnight at 4°C. The signal was visualized, after incubation with anti-rabbit Alexa Fluor 488 (A21206, Life Technologies, Carlsbad, CA) followed by DAPI counterstaining. To test for assay specificity, the procedure described above was performed in the presence of hundred-fold excess of non-biotinylated LCN2 (2.5 ng/mL). The binding was quantitated using the ‘Cell Counter’ analysis in ImageJ, by counting total cells (DAPI-stained/blue) and LCN2-positive cells (LCN2-stained/green) and subsequently calculating the percent of LCN2-positive cells in the two conditions.
 
-## Non-human primate study
+### Non-human primate study
 
 Based on our previous mouse studies where we observed an 18% reduction in food intake in wild-type lean mice that were treated with recombinant LCN2, we calculated that in order to have an 18% reduction (SD=+/-5 g), and error a = 0.05 and power of analysis 0.90, we needed n = 6 monkeys per group (Brant, 2020). To minimize the number of animals we employed a cross-over design, in which each animal served as its control. There were two treatment weeks with one washout period of 9 days in between. In the first treatment week, three monkeys were treated with saline and three with rh-LCN2. After the washout period monkeys were assigned to the opposite treatment group (Figure 4A).
 
@@ -216,24 +649,24 @@ Vervets were initially anesthetized with ketamine (15 mg/kg, intramuscularly-i.m
 
 Food consumption was measured daily as described above. At the end of day 5, a blood sample was collected for analyses, under ketamine anesthesia (10 mg/kg). A washout period of 9 days followed and then monkeys were subjected to a second baseline food consumption for 5 days. Then animals were switched to the opposite group. Again three animals were injected daily with saline and three with rh-LCN2 for 5 days. Food consumption was measured daily as described above. At the end of day 5, a small blood sample was collected for analyses. After the end of the second treatment week, monkeys were left to washout for 10 days. Two out of the six monkeys underwent PET imaging with a no-chase or chase design, as described below. At the end of all the studies, monkeys were anesthetized as described before and vascular access ports were surgically removed and the animals were left to recover for 14 days.
 
-## PET imaging of [124I] rh-LCN2 in vervets
+### PET imaging of [124I] rh-LCN2 in vervets
 
 PET scans were performed in two of the six vervets using a GE 64-slice PET/CT Discovery VCT scanner (General Electric). The day prior to the PET scan, animals were administered a solution (0.5 mL) containing 4% potassium iodide and 2% iodine via oral gavage under ketamine anesthesia (10 mg/kg, i.m.). For each scan, the fasted animal was initially immobilized with ketamine (15 mg/kg, i.m.) and maintained on 1.5–2.0% isoflurane anesthesia via an endotracheal tube. The core temperature was kept constant at 37°C with a heated water blanket. An intravenous infusion line with 0.9% NaCl was maintained during the experiment and used for hydration and radiotracer injection. The head was positioned at the center of the field of view, and a 10 min transmission scan was performed before the tracer injection. [124I] rh-LCN2 radiotracer was injected (407 ± 80 MBq) as an intravenous bolus over 30 s, and emission data were collected for 120 min in three-dimensional mode.
 
 In a subsequent chase experiment, α-MSH—ligand of the MC4 receptor—was given 15 min after the administration of [124I] rh-LCN2 to block non-specific binding in the areas of interest. The same procedure, software and atlas, as in the no-chase experiment, were used to extract time-activity curves (TACs) in the thalamus and hypothalamus, bilaterally. The TACs from the chase experiment were then compared to the corresponding TACs from the first, no-chase experiment in the same regions. We compared the average standard uptake value (SUV) between the two experiments, using the formula: 100*[SUV (no-chase) – SUV (chase)]/SUV (no-chase), to calculate the percent difference. Animals had MRI scans performed 1 week before PET scans using similar anesthesia procedures. MRI scans were performed using a Siemens MAGNETOM Skyra 3T MRI Scanner (Siemens, Munich, Germany) with the following sequences: large fov localizer, small fov localizer 128 mm, MPRAGE Axial_ND, and MPRAGE Axial (TE = 3.39 ms, TR = 2700 ms, TI = 880 ms, resolution = 0.5 × 0.5 × 0.5 mm; FOV = 128 mm × 128 mm; matrix size = 256 × 256). All PET images were coregistered to the corresponding MRI (see volume of interest (VOIs) and outcome variable of SUV on PET).
 
-## PET data analysis reconstruction
+### PET data analysis reconstruction
 
 PET scans were reconstructed using the iterative ordered-subset expectation-maximization (OSEM) algorithm, which were corrected for attenuation, scatter, and dead time. The radioactivity was corrected for physical decay to the injection time and rebinned to 23 dynamic PET frames of 256 (left-to-right) by 256 (nasion-to-inion) by 000 (neck-to-cranium) voxels. The frame schedules were two 30 s, three 60 s, five 120 s, four 240 s, and nine 600 s for 120 mins. The final spatial resolution is expected to be less than 00-mm-full width half maximum in three directions.
 
-## Volume of interest (VOIs) and outcome variable of SUV on PET
+### Volume of interest (VOIs) and outcome variable of SUV on PET
 
 For spatial normalization, tissue segmentation, and anatomical labeling, PMod software (version 3.7; PMod Technologies Ltd, Zürich, Switzerland) was used with INIA 19 rhesus high-quality template for non-human primate brains (Rohlfing T, 2012). INIA 19 template was created from high-resolution, T1-weighted magnetic resonance (MR) images of 19 rhesus macaque (Macaca mulatta) animals (Collaboratory, 2020), including > 100 brain regions per side and transferred to individual animal’s magnetic resonance imaging (MRI) using MRI-to-MRI spatial normalization (target: INIA 19 monkey MRI). Then VOIs were transferred to the PET scan of the animal using the MRI-to-PET co-registration module, and minimally adjusted for radioactivity distribution of the scan. Averaged SUV images and time-activity curves (TACs) were generated.
 
-## Quantitation of circulating factors
+### Quantitation of circulating factors
 
 Human serum LCN2, insulin, and GLP-1 were quantitated using commercially available ELISA kits and following the manufacturer’s instructions (#DY1757, R and D Systems, Minneapolis, MN;#90095, CrystalChem, Inc, Elk Grove Village, IL,; #EZGLP1T-36K, Merck, Burlington, MA, respectively). Monkey LCN2 and insulin were assayed with ELISA kits from LifeSpan BioSciences (#LS-F38530 and LS-F10306 respectively; Lifespan Biosciences, Inc, Seattle, WA) and leptin with an ELISA kit from Cusabio (#CSB-E14936Mk, Cusabio, Houston, TX). Circulating levels of primate CRP were determined using a commercially available ELISA kit using the manufacturer’s instructions (911CRP01P-96; Helica Biosystems, Inc, Santa Ana, CA). Blood chemistry was performed using a Heska Element DC Veterinary Chemistry Analyzer (Heska, Loveland, CO) at Columbia University’s Institute of Comparative Medicine Diagnostic Laboratory.
 
-## Statistical analysis
+### Statistical analysis
 
 Analyses were performed with SAS 9.4 (SAS Institute, Inc, Cary, NC) and GraphPad Prism 8 (GraphPad, San Diego, CA), with a level of significance at p<0.05. Since serum LCN2 concentration for each sample was measured multiple times over time, a one- or two-way Analysis of Variance (ANOVA) repeated measures design was appropriate for examining whether statistically significant differences in means exist in each experiment. Data were examined for normality using the Shapiro-Wilk test. Variables were log-transformed. Variables were log-transformed using the natural logarithm (ln) when appropriate, and nonparametric tests were used when necessary. Using the F-ratio statistic, we examined whether the repeated measured variable, time, had an overall statistically significant effect, implying that the corresponding values of the outcome that is examined in each experiment is statistically different from values obtained at other points of time. To correct for any violations of the assumption of sphericity (ϵ), degrees of freedom for each F value were adjusted according to the estimated epsilon obtained in each analysis. For values of ϵ < 0.75, the Greenhouse-Geisser Epsilon correction was used, while in cases when ϵ > 0.75, the less conservative Huynh-Feldt Epsilon correction was preferred. Using the CONTRAST option in PROC General Linear Model (GLM) in SAS, we investigated whether and which mean values at each time point were statistically different from baseline, at t = 0. Pearson’s correlation coefficient, or Spearman’s correlation for data not normally distributed, were used. For non-repeated observations either two-tailed Student’s t-tests, Mann-Whitney or rank-sum Wilcoxon non-parametric tests were used depending on the normality of distribution. For the vervet studies, comparisons were made with paired or unpaired t-tests as needed. Data are reported as mean ± SEM. */# indicates p<0.05, ‡ indicates p<0.06, and † indicate p<0.1. n indicates the number of human subjects or animals tested in each experiment.

@@ -27,35 +27,91 @@ We have previously characterized the roles of the Trx1 and GSH/Grx1 systems in T
 
 ## Results
 
-## The Trx1 system is dispensable for myeloid-cell but not T-cell development and homeostatic maintenance
+### The Trx1 system is dispensable for myeloid-cell but not T-cell development and homeostatic maintenance
 
 To investigate the requirement of the Trx1 system in myeloid cells during development and homeostatic maintenance, we crossed mice carrying tamoxifen (TAM)-inducible Rosa26-CreERT2 with mice carrying loxP-flanked Txnrd1 alleles to generate progeny (Txnrd1fl/fl;Rosa26-CreERT2) in which Txnrd1 is globally deleted upon TAM administration. Cre-mediated deletion in total bone marrow cells and in CD11b+ splenocytes of Txnrd1fl/fl;Rosa26-CreERT2 mice was complete at the genomic DNA and mRNA levels (Figure 1—figure supplement 1). TAM injection into Txnrd1fl/fl;Rosa26-CreERT2 mice completely abolished the development of T cells in the thymus, leading to a massive reduction of CD4+CD8+ double positive, CD4+ and CD8+ single positive thymocytes (Figure 1A), as shown previously (Muri et al., 2018). In striking contrast, numbers of eosinophils, neutrophils, monocytes and DCs were comparable in the bone marrow of TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 and control (Txnrd1fl/fl) mice (Figure 1B and Figure 1—figure supplement 2A), indicating that the Trx1 system is dispensable for the process of hematopoiesis in these cells. Despite their short lifespan, monocytes, neutrophils and eosinophils were also present in the blood with a similar frequency in the absence and presence of Txnrd1 (Figure 1C and Figure 1—figure supplement 2B). Moreover, Txnrd1 deficiency also did not affect total numbers of alveolar macrophages, eosinophils, neutrophils, monocytes and conventional type 1 and 2 DCs (cDC1 and cDC2) in the lungs (Figure 1D and Figure 1—figure supplement 2C). Similarly, these populations were also unchanged in the spleen apart from a reduction in total numbers of cDC2 (Figure 1E and Figure 1—figure supplement 2D). Taken together, these results demonstrate that, in contrast to its critical role in T cells, the Trx1 system is dispensable for the development and the homeostatic maintenance of various types of myeloid-cell populations.
 
-## Txnrd1-deficient bone marrow can partially refill the myeloid but not the T-cell compartment of irradiated recipients
+![Figure 1.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig1-v2.jpg)
+
+**Figure 1.:** (A–E) Txnrd1fl/fl;Rosa26-CreERT2 mice and Txnrd1fl/fl littermates were injected with TAM to delete the Txnrd1 gene and were analyzed by flow cytometry 2 weeks later. Depicted are the total numbers or percentages of the indicated populations in the thymus (A), bone marrow (BM; B), blood (C), lungs (D), spleen (E); n = 4–5 mice). (F–I) Lethally irradiated WT mice (CD45.1+CD45.2+) were reconstituted with a 1:1 mixture of WT (CD45.1+) and TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 (CD45.2+) bone marrows (or Txnrd1fl/fl as control). After reconstitution, the percentage of donor CD45.2+ cells among the indicated cell populations was determined by flow cytometry (n = 4–5 mice). (F) Schematic showing the experimental setup. (G) Depicted are the CD45.2+ percentages of total TCRβ+ T cells in the indicated organs. (H, I) The percentages of CD45.2+ cells among the indicated myeloid populations in the bone marrow (BM; H) and lungs (I) are shown. DP, CD4+CD8+ double positive thymocytes; CD4+ T, CD4+ single positive thymocytes; CD8+ T, CD8+ single positive thymocytes; Eo, eosinophils; Neutro, neutrophils; Mono, monocytes; DC, dendritic cells; AlvMac, alveolar macrophages; cDC1/2, type 1/2 conventional dendritic cells; Mac, macrophages; LN, lymph nodes. Bar graphs show mean + standard deviation (A–E, G–I). Data are representative of three independent experiments. For each panel, a representative experiment with biological replicates (A–E,G–I) is shown. Student’s t test (two-tailed, unpaired) was used for the comparison of two groups (A–E, G–I): *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001; ns, not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Txnrd1fl/fl;Rosa26-CreERT2 mice and Txnrd1fl/fl littermates were injected with TAM to delete the Txnrd1 gene and were analyzed by flow cytometry 2 weeks later. Depicted is the analysis of genomic Txnrd1 DNA (A) and Txnrd1 mRNA (B) in total bone marrow (BM) cells (left) and in MACS-enriched CD11b+ cells from the spleen (right) determined by RT-PCR (n = 3 mice). Bar graphs show mean + standard deviation. Data are representative of two independent experiments. For each panel, a representative experiment with biological replicates is shown. Student’s t test (two-tailed, unpaired) was used for the comparison of two groups: *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001; ns, not significant.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Shown are the gating strategies utilized for the analysis of the indicated myeloid-cell populations in the bone marrow (BM; A), blood (B), lungs (C), and spleen (D). Eo, eosinophils; Neutro, neutrophils; Mono, monocytes; DC, dendritic cells; AlvMac, alveolar macrophages; cDC1/2, type 1/2 conventional dendritic cells; Mac, macrophages.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Lethally irradiated WT mice (CD45.1+CD45.2+) were reconstituted with a 1:1 mixture of WT (CD45.1+) and TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 (CD45.2+) bone marrows (or Txnrd1fl/fl as control). After reconstitution, the percentage of donor CD45.2+ cells among the indicated cell populations was determined by flow cytometry (n = 4–5 mice). (A, B) The percentages of CD45.2+ cells among the indicated myeloid populations in the blood (A) and spleen (B) are shown. (C) Depicted are the CD45.2+ percentages of total CD19+ B cells in the indicated organs. Mono, monocytes; Neutro, neutrophils; Eo, eosinophils; Mac, macrophages; cDC1/2, type 1/2 conventional dendritic cells. Bar graphs show mean + standard deviation. Data are representative of three independent experiments. For each panel, a representative experiment with biological replicates is shown. Student’s t test (two-tailed, unpaired) was used for the comparison of two groups: *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001; ns, not significant.
+
+### Txnrd1-deficient bone marrow can partially refill the myeloid but not the T-cell compartment of irradiated recipients
 
 Since distinct myeloid populations were not reduced in the absence of the Trx1 system at the steady-state, we next investigated whether bone marrow lacking Txnrd1 could efficiently reconstitute the hematopoietic compartment of irradiated wild type (WT) hosts in a competitive situation with WT cells. To test this, we generated mixed-bone marrow chimeras by reconstituting the hematopoietic compartment of irradiated C57BL/6 mice (CD45.1+CD45.2+) with an equal ratio of congenically marked donor bone marrow cells from WT (CD45.1+) and TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 (CD45.2+) or Txnrd1fl/fl (CD45.2+) mice as control (Figure 1F). Expectedly, Txnrd1-deficient bone marrow completely failed to refill the T-cell compartment of irradiated recipients (Figure 1G), consistent with our previous findings reporting a crucial role of Trx1 for T-cell proliferation (Muri et al., 2018). Notably, eosinophils, neutrophils, monocytes, DCs and macrophages lacking Txnrd1 were reduced by 30–50% in the bone marrow, blood, spleen and lungs, as compared to WT counterparts, thus indicating a small contribution of Txnrd1 for the expansion of myeloid-cell precursors that could be revealed in a competitive situation with WT cells (Figure 1H,I and Figure 1—figure supplement 3A,B), similar to B-cell development (Figure 1—figure supplement 3C; Muri et al., 2019b). Together, these results confirm that, in contrast to its crucial role during thymic T-cell development, the Trx1 pathway is largely dispensable for the development and the maintenance of myeloid cells.
 
-## The GSH/Grx system sustains steady-state hematopoiesis of myeloid cells lacking the Trx1 system
+### The GSH/Grx system sustains steady-state hematopoiesis of myeloid cells lacking the Trx1 system
 
 To investigate whether the GSH/Grx system may compensate for the absence of the Trx1 system, thereby allowing normal development and homeostatic maintenance of myeloid cells, we took advantage of L-buthionine-sulfoximine (BSO), which is known to deplete GSH levels upon oral administration in vivo (Watanabe et al., 2003). Therefore, we first generated mixed-bone marrow chimeras as described above. After reconstitution, mice were injected with TAM to delete the Txnrd1 gene and subsequently treated with BSO over a period of 22 days to deplete GSH (Figure 2A). Expectedly, BSO-treated mice showed a significant reduction in total GSH levels compared to controls in the bone marrow and in the spleen (Figure 2B,C). In keeping with the data presented above, TAM administration led to a partial defect displayed by Txnrd1-deficient blood neutrophils, eosinophils and monocytes in a competitive setting with WT cells (Figure 2D,E and Figure 2—figure supplement 1). Interestingly, however, additional depletion of GSH strikingly reduced Txnrd1-deficient granulocytes within 5 days after oral BSO administration (Figure 2D,E and Figure 2—figure supplement 1). Neutrophils, eosinophils and monocytes lacking the Trx1 system from the bone marrow, lungs and spleen also displayed a similar sensitivity to GSH depletion as observed in the blood (Figure 2F–H). Although DCs were similarly affected, Txnrd1-deficient tissue resident macrophages in the lungs and in the spleen only showed a minor reduction upon BSO administration, consistent with their fetal origin and local persistence by slow turnover during adult life (Figure 2G,H). In keeping with the data presented above, Txnrd1-deficient CD4+CD8+ double positive, CD4+ and CD8+ single positive thymocytes were completely outcompeted by WT cells irrespective of BSO treatment (Figure 2I), consistent with the critical role of the Trx1 system and dispensability of the GSH/Grx system for T-cell proliferation (Muri et al., 2018). We further observed that oral administration of BSO to WT mice did not affect numbers of blood neutrophils and monocytes over time (Figure 2J). Moreover, the numbers of various myeloid populations in the bone marrow, spleen and lungs were not affected by GSH depletion in WT mice (Figure 2K and Figure 2—figure supplement 2), therefore suggesting that the GSH/Grx system is only utilized as a backup system to compensate for the absence of the Trx1 pathway. Overall, these data demonstrate that in striking contrast to T cells, myeloid cells can tap both the Trx and GSH/Grx pathways to sustain thiol-based redox reactions during development and homeostatic maintenance.
 
-## Bone marrow expansion during emergency hematopoiesis requires the Trx1 system
+![Figure 2.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig2-v2.jpg)
+
+**Figure 2.:** (A–I) Lethally irradiated WT mice (CD45.1+CD45.2+) were reconstituted with a 1:1 mixture of WT (CD45.1+) and Txnrd1fl/fl;Rosa26-CreERT2 (CD45.2+) bone marrows. After reconstitution, mice were injected with TAM to delete the Txnrd1 gene, and after 12 days BSO was administered in the drinking water to deplete GSH levels. Cell populations in the blood were monitored over time, and animals were analysed on day 22 upon BSO administration (n = 4–5 mice). (A) Schematic showing the experimental setup. (B, C) Depicted are the total glutathione (GSH) levels in the lysates from total bone marrow (BM) cells (B) and spleen (C). (D, E) The percentages of CD45.2+ neutrophils (D) and eosinophils (E) in the blood were monitored over the indicated period of time. (F–H) The percentages of the indicated myeloid-cell populations coming from the Txnrd1fl/fl;Rosa26-CreERT2 (CD45.2+CD45.1-) donors were analyzed in the bone marrow (BM; F), lungs (G) and spleen (H) on day 22 upon BSO administration. (I) The percentages of the indicated thymocyte populations coming from the Txnrd1fl/fl;Rosa26-CreERT2 (CD45.2+CD45.1-) donors were analyzed 22 days after BSO administration. (J, K) WT mice were treated with BSO in the drinking water and analyzed 2 weeks later (n = 4–5 mice). (J) Total neutrophils (above) and monocytes (below) in the blood were monitored over the period of 2 weeks. The percentages at the indicated times were normalized with the percentage on day 0. (K) Shown are the total numbers of the indicated myeloid-cell populations in the spleen 2 weeks after BSO administration. Neutro, neutrophils; Eo, eosinophils; Mono, monocytes; AlvMac, alveolar macrophages; cDC1/2, type 1/2 conventional dendritic cells; Mac, macrophages; DP, CD4+CD8+ double positive thymocytes; CD4+ T, CD4+ single positive thymocytes; CD8+ T, CD8+ single positive thymocytes. Bar graphs and dot plots show mean + standard deviation (B–K). Data are representative of two independent experiments. For each panel, a representative experiment with biological replicates (B–K) is shown. Student’s t test (two-tailed, unpaired) was used for the comparison of two groups (B, C, F–I, K): *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001; ns, not significant. Two-way ANOVA adjusted by Bonferroni's multiple comparison test was used in D, E, J: ****, p≤0.0001; ns, not significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Lethally irradiated WT mice (CD45.1+CD45.2+) were reconstituted with a 1:1 mixture of WT (CD45.1+) and Txnrd1fl/fl;Rosa26-CreERT2 (CD45.2+) bone marrows. After reconstitution, mice were injected with TAM to delete the Txnrd1 gene, and BSO was administered in the drinking water to deplete GSH after 12 days. Monocytes in the blood were monitored over the period of 22 days. Depicted is the percentage of CD45.2+ monocytes (n = 4–5 mice). Data are representative of two independent experiments, a representative experiment with biological replicates is shown for each panel. Two-way ANOVA adjusted by Bonferroni's multiple comparison test was used for statistical analysis: ***, p≤0.0002; ****, p≤0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) WT mice were treated with BSO in the drinking water and analyzed 2 weeks later (n = 4–5 mice). Shown are the total counts of the indicated myeloid populations in the bone marrow (BM; A) and lungs (B). Neutro, neutrophils; Eo, eosinophils; Mono, monocytes; AlvMac, alveolar macrophages; DC, dendritic cells; cDC1/2, type 1/2 conventional dendritic cells. Data are representative of two independent experiments, a representative experiment with biological replicates is shown for each panel. Student’s t test (two-tailed, unpaired) was used for the comparison of two groups: ns, not significant.
+
+### Bone marrow expansion during emergency hematopoiesis requires the Trx1 system
 
 Since the Trx1 system was dispensable for steady-state hematopoiesis of myeloid cells, we next investigated whether Txnrd1-deficient cells could also efficiently expand during emergency myelopoiesis, where proliferative stress in the bone marrow and blood neutrophilia are induced by a sublethal dose of LPS (Boettcher et al., 2012). To test this, we intraperitoneally administered LPS twice in a 48 hr interval to TAM-treated Txnrd1fl/fl and Txnrd1fl/fl;Rosa26-CreERT2 mice before sacrificing them for analysis 24 hr later (Figure 3A). While both groups of mice increased the numbers of CD11b+Ly-6G-Ly-6Cintbone marrow precursors upon LPS administration, Txnrd1-deficient mice displayed a limited capacity (Figure 3B,C). Moreover, accumulation of neutrophils in peripheral blood was also impaired in the absence of the Trx1 system (Figure 3D,E). Overall, these results demonstrate that the GSH/Grx pathway does not efficiently compensate for the absence of the Trx1 system during emergency hematopoiesis when massive proliferation occurs due to LPS stress. The observed defect in expansion was therefore comparable to the one shown in competitive chimera settings.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig3-v2.jpg)
 
-**Figure 3.:** (A–E) TAM-treated Txnrd1;Rosa26-CreERT2 mice (or fl/flTxnrd1 littermate controls) were intraperitoneally injected with 35 μg LPS in a 48 hr interval and sacrificed 24 hr later for analysis (n = 3 mice). (fl/flA) Schematic showing the experimental setup. (B, C) Shown are the gating strategy (B) and percentages (C) of CD11b+Ly-6G-Ly-6Cint cells in the bone marrow (BM). (D, E) Depicted are the gating strategy (D) and percentages (E) of CD11b+Ly-6G+ neutrophils in the blood. Numbers in the FACS plots indicate the average percentages of the depicted gate. Bar graphs show mean + standard deviation (C, E). Data are representative of three independent experiments. For each panel, a representative experiment with biological replicates (B–E) is shown. One-way ANOVA adjusted by Tukey’s multiple comparison test was used in C, E: *p≤0.0332; **p≤0.0021; ***p≤0.0002; ****p≤0.0001.
+**Figure 3.:** (A–E) TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 mice (or Txnrd1fl/fl littermate controls) were intraperitoneally injected with 35 μg LPS in a 48 hr interval and sacrificed 24 hr later for analysis (n = 3 mice). (A) Schematic showing the experimental setup. (B, C) Shown are the gating strategy (B) and percentages (C) of CD11b+Ly-6G-Ly-6Cint cells in the bone marrow (BM). (D, E) Depicted are the gating strategy (D) and percentages (E) of CD11b+Ly-6G+ neutrophils in the blood. Numbers in the FACS plots indicate the average percentages of the depicted gate. Bar graphs show mean + standard deviation (C, E). Data are representative of three independent experiments. For each panel, a representative experiment with biological replicates (B–E) is shown. One-way ANOVA adjusted by Tukey’s multiple comparison test was used in C, E: *p≤0.0332; **p≤0.0021; ***p≤0.0002; ****p≤0.0001.
 
-## The Trx1 system is critical for the transcription of pro-inflammatory cytokines in BMDCs
+### The Trx1 system is critical for the transcription of pro-inflammatory cytokines in BMDCs
 
 So far, we have shown that the function of the Trx1 system in various myeloid cells unlike in T cells is largely dispensable for maintenance and homeostasis, and that it can be efficiently substituted by the GSH/Grx pathway. Next, we aimed at addressing whether the Trx1 system is important for the immune function of myeloid cells, such as the secretion of pro-inflammatory cytokines. Bone marrow harvested from TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 and Txnrd1fl/fl littermate control mice was differentiated in the presence of granulocyte-macrophage colony-stimulating factor (GM-CSF) to obtain BMDCs in culture. We first confirmed that Txnrd1 deletion was complete at the mRNA level in knockout BMDCs (Figure 4A) and that cell survival was not compromised (Figure 4B). To study inflammatory responses, we stimulated Txnrd1-deficient and -sufficient BMDCs with various TLR ligands, namely CpG (TLR9 agonist), LPS (TLR4 agonist), LTA (TLR2 agonist), R837 (TLR7 agonist) and zymosan (TLR2 and dectin-1 agonist), and subsequently assessed cytokine secretion via ELISA. Interestingly, expression of Txn1 was upregulated upon TLR-driven stimulation, potentially indicating an involvement of the Trx1 pathway in inflammatory responses (Figure 4C). Indeed, while WT BMDCs readily produced pro-inflammatory cytokines including IL-6, IL-12p40 and TNF-α in responses to each of the stimuli, this was strikingly impaired in Txnrd1-deficient BMDCs (Figure 4D,E and Figure 4—figure supplement 1), which was also evident at the transcriptional level (Figure 4F,G). Similarly, the secretion of IL-1β by TLR-primed BMDCs upon ATP, alum (Al(OH)3) or nigericin stimulation was also defective in the absence of Txnrd1 due to impaired transcription of the Il1b gene (Figure 4H,I and Figure 4—figure supplement 2). Together, these data suggest that the Trx1 system positively regulates the transcriptional program triggered by TLR ligands.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig4-v2.jpg)
+
+**Figure 4.:** (A–J) Txnrd1fl/fl;Rosa26-CreERT2 mice and Txnrd1fl/fl littermates were injected with TAM to delete the Txnrd1 gene. Bone marrow cells were differentiated with GM-CSF to obtain BMDCs. (A) Analysis of Txnrd1 mRNA by RT-PCR in cultured Txnrd1fl/fl;Rosa26-CreERT2 and Txnrd1fl/fl BMDCs for confirmation of gene deletion (n = 3). (B) Viability (eFluor780-Annexin-V-) of BMDCs was assessed via flow cytometry (n = 3). (C) BMDCs were primed with CpG (100 nM), LPS (100 ng/ml), LTA (1 μg/ml), R837 (5 μg/ml) for 7 hr, and expression of Txn1 at the mRNA level was determined via RT-PCR (n = 3). (D, E) BMDCs were stimulated for 7 hr with CpG (100, 20 nM), LPS (100, 20 ng/ml), LTA (5, 1 μg/ml), R837 (5, 1 μg/ml), or zymosan (10, 2 μg/ml). ‘High’ and ‘Low’ indicate the concentration of the utilized stimulus. IL-6 (D) and IL-12p40 (E) were measured in supernatants by ELISA (n = 3). (F, G) BMDCs were stimulated for 7 hr with CpG (100 nM), LPS (100 ng/ml), LTA (1 μg/ml) or R837 (5 μg/ml), and the expression of Il6 (F) and Il12b (G) was determined by RT-PCR (n = 3). (H) BMDCs were stimulated with CpG (100 nM), LPS (400 ng/ml), LTA (5 μg/ml), R837 (5 μg/ml) or zymosan (10 μg/ml) before the addition of 2 mM ATP or 200 μg/ml alum for 1 hr or 4 hr, respectively. The concentration of IL-1β in supernatants was determined by ELISA (n = 3). (I) BMDCs were stimulated with TLR ligands as in F,G), and expression of Il1b at the mRNA level was determined via RT-PCR (n = 3). (J) Naive, splenic, Smarta-1 transgenic CD4+ T cells were co-cultured with Txnrd1-deficient BMDCs (or Txnrd1-sufficient BMDCs as a control) and the indicated concentrations of the GP61-80 peptide. Shown are the frequencies of CD4+ T cells producing IFN-γ+ after restimulation with PMA/ionomycin (n = 3). Bar graphs represent mean + standard deviation. Data are representative of two (A–C, F, G, I, J) or four (D, E, H) independent experiments. For each panel, a representative experiment with replicates of in vitro culture conditions is shown. Student's t test (two-tailed, unpaired) was used to compare Txnrd1fl/fl;Rosa26-CreERT2 and control Txnrd1fl/fl groups in (A, B, D–J): *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001; ns, not significant. One-way ANOVA followed by Dunnett’s correction was used in C (comparison to the unstimulated control): *p≤0.0332; **p≤0.0021.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Txnrd1fl/fl;Rosa26-CreERT2 mice and Txnrd1fl/fl littermates were injected with TAM to delete the Txnrd1 gene, and bone marrow cells were differentiated with GM-CSF to obtain BMDCs. BMDCs were then stimulated for 7 hr with CpG (100, 20 nM), LPS (100, 20 ng/ml), LTA (5, 1 μg/ml), R837 (5, 1 μg/ml), or zymosan (10, 2 μg/ml). ‘High’ and ‘Low’ indicate the concentration of the utilized stimulus. TNF-α was then measured in supernatants by ELISA (n = 3). Bar graphs represent mean + standard deviation. Data are representative of three independent experiments, and a representative experiment with triplicates of in vitro culture conditions is shown for each panel. Student's t test (two-tailed, unpaired) was used to compare Txnrd1fl/fl;Rosa26-CreERT2 and control Txnrd1fl/fl groups: *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001; ns, not significant.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Txnrd1fl/fl;Rosa26-CreERT2 mice and Txnrd1fl/fl littermates were injected with TAM to delete the Txnrd1 gene, and bone marrow cells were differentiated with GM-CSF to obtain BMDCs. BMDCs were then stimulated with CpG (100 nM), LPS (400 ng/ml), LTA (5 μg/ml), R837 (5 μg/ml) or zymosan (10 μg/ml) before the addition of 15 μM nigericin (Nig) for 1 hr; and IL-1β was measured in supernatants by ELISA (n = 3). Bar graphs represent mean + standard deviation. Data are representative of three independent experiments, and a representative experiment with triplicates of in vitro culture conditions is shown for each panel. Student's t test (two-tailed, unpaired) was used to compare Txnrd1fl/fl;Rosa26-CreERT2 and control Txnrd1fl/fl groups: *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001; ns, not significant.
+
 Considering the important role of IL-12 in the polarization of T helper type 1 (Th1) cells (Langenkamp et al., 2000), we next wondered whether reduced IL-12 production by Txnrd1-deficient BMDCs would affect their ability to drive Th1 polarization of CD4+ T cells. Indeed, we measured a lower frequency of IFN-γ-producing CD4+ T cells when naïve CD4+ T cells were co-cultured with Txnrd1-deficient BMDCs (Figure 4J) compared to when they were co-cultured with WT controls. Therefore, the absence of the Trx1 system in BMDCs inhibits their capacity to induce pro-inflammatory, IFN-γ-producing Th1 cells.
 
-## The Trx1 system regulates the DNA-binding activity of NF-κB to its response element
+### The Trx1 system regulates the DNA-binding activity of NF-κB to its response element
 
 We next aimed to elucidate the mechanism of impaired pro-inflammatory responses in Txnrd1-deficient BMDCs. Upon binding of microbial ligands, TLR associate with adaptor molecules such as MyD88 to activate the IKK complex and mitogen-activated protein kinases, such as extracellular receptor kinase (Erk), p38 and c-Jun N-terminal kinase (JNK), which in turn influence the activity of the transcription factors NF-κB, AP1 and CREB, thereby ultimately regulating expression of pro-inflammatory cytokines (Akira and Takeda, 2004). Interestingly, we observed intact TLR signaling in Txnrd1-deficient BMDCs upon stimulation with LPS or R837, as assessed by the phosphorylation and consequent degradation of IκB-α and phosphorylation of Erk1/2 (Figure 5A and Figure 5—figure supplement 1), thus supporting the idea that early downstream events upon TLR stimulation are not affected by the absence of the Trx1 system.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig5-v2.jpg)
+
+**Figure 5.:** (A–E) Txnrd1fl/fl;Rosa26-CreERT2 mice and Txnrd1fl/fl littermates were injected with TAM to delete the Txnrd1 gene, and bone marrow cells were differentiated with GM-CSF to obtain BMDCs. (A) BMDCs were stimulated with LPS (400 ng/ml) for 10, 30, or 60 min and lysed for western blot. Expression of phospho-IκB-α, respective IκB-α, NF-κB p65, phospho-Erk1/2 and respective Erk1/2 was assessed with β-actin as a loading control. (B, C) WT or Txnrd1-deficient BMDCs were fixed at the indicated time points post LPS treatment, stained for DNA (DAPI), NF-κB p65 and actin (Phalloidin), and imaged using a DeltaVision system. Approximately 10 randomly chosen imaging fields encapturing a total of 50–100 nuclei were analyzed per sample per condition. (B) Nuclear and whole-cell masks were made using the DAPI and phalloidin channels, and NF-κB signal intensity within the masks was quantified. Shown is the nuclear NF-κB signal strength plotted as percentage of whole-cell NF-κB signal. (C) Depicted are example images of the samples of indicated times points post LPS treatment. In the merged images, DAPI and anti-NF-κB channels are shown in red and green, respectively. Scale bar represents 10 μm (top-left panel). Squares indicate fields, which are magnified in Figure 5—figure supplement 2. (D) WT or Txnrd1-deficient BMDCs were stimulated with LPS (400 ng/ml) for 100 min, and the recruitment of NF-κB p65 to the Il12b (top-left), Il1b (top-right), Il6 (bottom-left) and Nfkbia (bottom-right) promoters was assessed by p65 chromatin immunoprecipitation (ChIP) analysis and quantified by RT-PCR. ‘Promoter’ indicates the utilization of a primer pairs that amplify a fragment close to the NF-κB binding sites at the promoter region of the indicated genes, whereas ‘Ctr primers’ indicate primer pairs that were used as a control to amplify a region several kilobases away from the NF-κB binding sites (n = 2). (E) The NF-κB p65 binding activity to its DNA response element in nuclear extracts from BMDCs stimulated with LPS (400 ng/ml) for 40 min was assessed by an ELISA-based method (n = 3). Bar graphs and dot plots represent mean + standard deviation. Data are representative of two (A–D) or three (E) independent experiments. For each panel, a representative experiment with technical replicates is shown (D, E). Two-way ANOVA adjusted by Bonferroni's multiple comparison test was used in B: ns, not significant. One-way ANOVA adjusted by Tukey’s multiple comparison test was used in D, E: *p≤0.0332; **p≤0.0021; ***p≤0.0002; ****p≤0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Txnrd1fl/fl;Rosa26-CreERT2 mice and Txnrd1fl/fl littermates were injected with TAM to delete the Txnrd1 gene, and bone marrow cells were differentiated with GM-CSF to obtain BMDCs. BMDCs were then stimulated with R837 (5 μg/ml) for 10, 30, or 60 min and lysed for western blot. Expression of phospho-IκB-α, respective IκB-α, NF-κB p65, phospho-Erk1/2 and respective Erk1/2 was assessed with β-actin as a loading control. Data are representative of two independent experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The highlighted areas in anti-NF-κB channels in Figure 5C are shown here in higher magnification.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Txnrd1fl/fl;Rosa26-CreERT2 mice and Txnrd1fl/fl littermates were injected with TAM to delete the Txnrd1 gene, and bone marrow cells were differentiated with GM-CSF to obtain BMDCs. (A) Quantification of ROS levels in unstimulated BMDCs as control or after 4 hr of stimulation with LPS (400 ng/ml) stained with CM-H2DCFDA via flow cytometry (n = 2 for the untreated group and n = 4 for the LPS-treated group). (B, C) BMDCs were then treated overnight with the antioxidants N-acetyl-L-cysteine (NAC; 0.9 mM), ascorbic acid (AA; 5 μM), DL-dithiothreitol (DTT; 1000 μM), diphenyleneiodonium chloride (DPI; 62.5 nM) (B) or catalase-polyethylene glycol (Cat; 250 U/ml) (C) before stimulation with R837 (5 ng/ml) for 7 hr. The concentration of IL-12p40 in supernatants was subsequently determined by ELISA (n = 3). (D) BMDCs were treated overnight with the antioxidant catalase-polyethylene glycol (Cat) before stimulation with LPS (400 ng/ml) for 3 hr. Shown are the ROS levels measured by staining with CM-H2DCFDA (n = 3). Bar graphs represent mean + standard deviation. Data are representative two independent experiments. For each panel, a representative experiment with replicates of in vitro culture conditions is shown. Student's t test (two-tailed, unpaired) was used for two-groups analysis (A–D): *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001.
 
 Proteolysis of IκB-α results in the release and translocation of NF-κB p65 and p50 to the nucleus, where it induces the transcription of genes encoding pro-inflammatory cytokines (Akira and Takeda, 2004). Since no degradation defects of IκB-α were observed in the absence of Txnrd1, we next analyzed the translocation of NF-κB into the nucleus by microscopy. However, we observed no significant defects in the nuclear translocation of NF-κB p65 between Txnrd1-deficient and sufficient BMDCs (Figure 5B,C). Apart from this, we noticed the presence of cytosolic p65 punctate in the absence of the Trx1 system (Figure 5—figure supplement 2), but the relevance and the potential cellular consequences of this pattern are unknown at present and need further investigations. Overall, the microscopy analysis demonstrates that Txnrd1 deficiency does not affect the nuclear translocation of NF-κB p65, therefore suggesting a downstream defect.
 
@@ -63,11 +119,27 @@ We next hypothesized that Txnrd1 deficiency might affect the binding of NF-κB p
 
 As the Trx1 system is an important player in maintaining cellular redox homeostasis (Mustacich and Powis, 2000), we next investigated whether deletion of Txnrd1 would impact ROS levels and consequently cytokine secretion in BMDCs. Despite a significant increase in total cellular ROS levels (Figure 5—figure supplement 3A), the reduction in IL-12p40 secretion by Txnrd1-deficient BMDCs was not restored by the supplementation of a panel of antioxidants (Figure 5—figure supplement 3B,C). Importantly, we verified as a control that the antioxidant catalase scavenged excessive ROS in the absence of the Txnrd1 (Figure 5—figure supplement 3D). Together, these results suggest that the defect in pro-inflammatory cytokine secretion is not a consequence of a general increase of ROS but is due to the compromised Trx1-mediated regulation of the redox status of NF-κB, which interferes with NF-κB p65 binding to the DNA.
 
-## The Trx1 system promotes M1 macrophage polarization
+### The Trx1 system promotes M1 macrophage polarization
 
 The BMDC culture is known to comprise both conventional DCs and monocyte-derived macrophages (Helft et al., 2015) with the latter only possessing the capacity of inflammasome activation and IL-1β release (Erlich et al., 2019). To address the role of the Trx1 system in pro-inflammatory responses of macrophages, we harvested bone marrow from TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 and Txnrd1fl/fl littermate controls and generated BMDMs in culture with macrophage colony-stimulating factor (M-CSF). We first verified how the deletion of Txnrd1 would affect classical (M1) and alternative (M2) macrophage activation (Figure 6A), which are known to mediate inflammatory responses and tissue repair, respectively. Interestingly, we observed increased expression of Txnrd1 and Txn1 in M1 compared to M2 macrophages and in BMDMs stimulated with a variety of TLR ligands (Figure 6B,C and Figure 6—figure supplement 1A), consistent with a possible role in maintaining redox homeostasis in ROS-generating M1 macrophages; however, no difference in expression of the Trx1 system inhibitor Txnip was detected (Figure 6—figure supplement 1B). In keeping with the induction of the Trx1 system in M1 macrophages, we observed lower expression of the M1 markers Nos2, Cd38, Hif1a and Gpr18 in M1-polarized Txnrd1-deficient cells compared to the WT controls (Figure 6D and Figure 6—figure supplement 1C–E). A similar impairment in Nos2 expression was additionally confirmed at the protein level by flow cytometry (Figure 6E). However, Txnrd1 deletion did not affect M2 polarization as measured by the RNA expression of the known M2 markers Fizz1, Arg1 and Ym1 (Figure 6F and Figure 6—figure supplement 1F,G), and protein levels of Relmα, CD301b, PDL2 and CD206 (Figure 6G and Figure 6—figure supplement 1H–J). Importantly, we excluded that defective M1 polarization was a consequence of cell death, since Txnrd1-deficient and sufficient BMDMs underwent cell death to a similar extent (Figure 6H and Figure 6—figure supplement 1K). Taken together, these results demonstrate that the Trx1 system is induced by LPS/IFN-γ stimulation and promotes a M1-macrophage phenotype.
 
-## The GSH/Grx system can promote the DNA-binding activity of NF-κB in Txnrd1-deficient BMDMs
+![Figure 6.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig6-v2.jpg)
+
+**Figure 6.:** (A–P) Bone marrows from Txnrd1fl/fl;Rosa26-CreERT2 mice and control Txnrd1fl/fl littermates treated with TAM were differentiated with M-CSF to obtain BMDMs. (A–H) BMDMs were polarized toward M1 and M2 with LPS/IFN-γ and IL-4, respectively, or left untreated (M0). (A) Schematic showing the polarization assay. (B, C) Shown are the expression levels of Txnrd1 (B) and Txn1 (C) at the mRNA level determined by RT-PCR (n = 3). (D, E) Depicted is the level of the M1 marker Nos2 at the mRNA level determined by RT-PCR (D); n = 3) and at the protein level assessed by flow cytometry (E). (F, G) Shown is the level of the M2 marker Relmα at the mRNA level (Fizz1) determined by RT-PCR (F); n = 3) and at the protein level assessed by flow cytometry (G). (H) Cell survival of M1 macrophages (eFluor780-Annexin-V-) polarized either for 1 or 2 days with LPS/IFN-γ was assessed via flow cytometry (n = 3). (I, J) BMDMs were stimulated for 7 hr with CpG (400, 100 nM), LPS (100, 20 ng/ml), LTA (5, 1 μg/ml), or R837 (5, 1 μg/ml), and IL-12p40 (I) and IL-6 (J) were measured in supernatants by ELISA. ‘High’ and ‘Low’ indicate the concentration of the utilized stimulus (n = 3). (K) Analysis of Txnrd1 mRNA in BMDMs assessed by RT-PCR for confirmation of gene deletion (n = 3). (L, M) Shown is the mRNA expression of Il12b (L) and Il6 (M) determined via RT-PCR in BMDMs stimulated for 7 hr with CpG (100 nM), LPS (100 ng/ml), LTA (1 μg/ml) or R837 (5 μg/ml; n = 3). (N) Shown are the expression levels of the indicated Grx isoforms in WT BMDCs and BMDMs (n = 3). (O) BMDMs were treated overnight with BSO (3 μM) before stimulation with LPS (400 ng/ml) for 7 hr. The concentration of IL-12p40 in supernatants was subsequently determined by ELISA (n = 3). (P) Shown is the DNA binding activity of NF-κB p65 in nuclear extracts from Txnrd1fl/fl;Rosa26-CreERT2 and control Txnrd1fl/fl BMDMs treated overnight with 3 μM BSO (or medium as a control) before stimulation with LPS (400 ng/ml) for 90 min (n = 3). Bar graphs represent mean + standard deviation. Data are representative of two (B–H, K–P) or three (I, J) independent experiments. For each panel, a representative experiment with replicates of in vitro culture conditions is shown (B–D, F, H–P). One-way ANOVA adjusted by Tukey’s multiple comparison test was used in B-D, F, O, P: *p≤0.0332; **p≤0.0021; ***p≤0.0002; ****p≤0.0001; ns, not significant. Student's t test (two-tailed, unpaired) was used for two-group analysis in H–N: *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001; ns, not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–K) Bone marrows from Txnrd1fl/fl;Rosa26-CreERT2 mice and control Txnrd1fl/fl littermates treated with TAM were differentiated with M-CSF to obtain BMDMs. (A) Shown are the expression levels of Txn1 in WT BMDMs upon stimulation with CpG (100 nM), LPS (100 ng/ml), LTA (1 μg/ml) or R837 (5 μg/ml; n = 3). (B–K) BMDMs were polarized toward M1 and M2 with LPS/IFN-γ and IL-4, respectively, or left untreated (M0). (B) Shown is the expression levels of Txnip at the mRNA level determined by RT-PCR (n = 3). (C–E) Depicted are the levels of the M1 markers Cd38 (C), Hif1a (D) and Gpr18 (E) at the mRNA level determined by RT-PCR (n = 3). (F–J) Shown are the levels of the M2 markers Arg1 (F) and Ym1 (G) at the mRNA level determined by RT-PCR (n = 3), and of CD301b (H), PDL2 (I) and CD206 (J) at the protein level assessed by flow cytometry. (K) Lactate dehydrogenase (LDH) release into culture supernatant after 1 or 2 days of LPS/IFN-γ (M1) polarization (n = 4). Bar graphs represent mean + standard deviation. Data are representative of two independent experiments, and a representative experiment with replicates of in vitro culture conditions is shown for each panel. One-way ANOVA followed by Dunnett’s correction was used in A (comparison to the unstimulated control): ***p≤0.0002; ****p≤0.0001. One-way ANOVA adjusted by Tukey’s multiple comparison test was used in B–G: *p≤0.0332; **p≤0.0021; ***p≤0.0002; ****p≤0.0001; ns, not significant. Student's t test (two-tailed, unpaired) was used in K: *p≤0.05; ns, not significant.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Bone marrows from Txnrd1fl/fl;Rosa26-CreERT2 mice and control Txnrd1fl/fl littermates treated with TAM were differentiated with M-CSF to obtain BMDMs. BMDMs were then stimulated for 7 hr with CpG (400, 100 nM), LPS (100, 20 ng/ml), LTA (5, 1 μg/ml), or R837 (5, 1 μg/ml). ‘High’ and ‘Low’ indicate the concentration of the utilized stimulus. TNF-α was measured in supernatants by ELISA (n = 3). Bar graphs represent mean + standard deviation. Data are representative of three independent experiments, and a representative experiment with triplicates of in vitro culture conditions is shown for each panel. Student's t test (two-tailed, unpaired) was used for two-group analysis: *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001; ns, not significant.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Bone marrows from Txnrd1fl/fl;Rosa26-CreERT2 mice and control Txnrd1fl/fl littermates treated with TAM were differentiated with M-CSF to obtain BMDMs. (A) BMDMs were treated overnight with BSO (3 μM) before addition of LTA (5 μg/ml) for 7 hr stimulation. The concentration of IL-12p40 in supernatants was subsequently determined by ELISA. Bar graphs represent mean + standard deviation (n = 3). (B) Representative FACS plots quantifying the viability of Txnrd1fl/fl;Rosa26-CreERT2 and control Txnrd1fl/f BMDMs treated with indicated concentrations of BSO via eFluor780 staining; the gate in the FACS plots indicates the viable cells. Data are representative of two independent experiments. One-way ANOVA adjusted by Tukey’s multiple comparison test was used in A: ****p≤0.0001.
+
+### The GSH/Grx system can promote the DNA-binding activity of NF-κB in Txnrd1-deficient BMDMs
 
 Since M1 macrophages secrete pro-inflammatory cytokines during immune responses, we next stimulated Txnrd1-deficient and sufficient BMDMs with a variety of TLR ligands. To our surprise and in striking contrast to the results obtained with BMDCs, IL-12p40 levels remained unaffected (Figure 6I), while production of IL-6 (Figure 6J) and TNF-α (Figure 6—figure supplement 2) was even increased in Txnrd1-deficient BMDMs compared to controls. Importantly, Txnrd1 gene deletion in knockout cells was confirmed at the mRNA level (Figure 6K). Along the same lines, Txnrd1fl/fl;Rosa26-CreERT2 BMDMs displayed significantly higher Il12b and Il6 expression at the transcriptional level compared to Txnrd1fl/fl control BMDMs (Figure 6L,M) upon stimulation, which may suggest the presence of a compensatory mechanism.
 
@@ -75,9 +147,33 @@ Overlapping activities of the Trx and GSH/Grx systems have been suggested in dif
 
 We next investigated how Txnrd1 deficiency influences DNA binding activity of NF-κB to its response element in BMDMs. In keeping with no decrease in IL-6, IL-12p40 and TNF-α secretion in the absence of the Trx1 system, we observed that NF-κB p65 DNA binding activity was not affected by Txnrd1 deletion (Figure 6P). Interestingly, however, blocking the GSH/Grx pathway by BSO treatment in Txnrd1-deficient BMDMs turned out to completely abrogate the DNA-binding capacity of NF-κB p65, thereby confirming the compensatory activity of the GSH/Grx system in BMDMs (Figure 6P). Overall, here we show that while BMDCs are critically dependent on the Trx1 system for NF-κB-mediated pro-inflammatory cytokine secretion, BMDMs can utilize both the Trx1 and GSH/Grx systems to fuel redox reactions aimed at promoting NF-κB-binding activity and consequent transcription of pro-inflammatory target genes.
 
-## The Trx1 system but not Txnip positively regulates NLRP3 inflammasome-driven IL-1β maturation
+### The Trx1 system but not Txnip positively regulates NLRP3 inflammasome-driven IL-1β maturation
 
 An intact signal one in Txnrd1-deficient BMDMs, in contrast to Txnrd1-deficient BMDCs, allowed us to study the quality of signal two and inflammasome activation in the absence of Txnrd1. Interestingly, release of mature IL-1β induced by the NLRP3 activators ATP and alum following priming with various TLR ligands was abrogated in Txnrd1-deficient BMDMs (Figure 7A and Figure 7—figure supplement 1A) as shown using an ELISA assay known to display a much higher sensitivity for mature IL-1β than for its pro-form (Dick et al., 2016). This was additionally confirmed by western blotting showing strikingly reduced release of processed IL-1β upon NLRP3 inflammasome activation, while levels of pro-IL-1β in cell lysates (Figure 7B and Figure 7—figure supplement 1B) and transcription of Il1b mRNA were unaffected in Txnrd1-deficient BMDMs upon TLR priming (Figure 7C). Consistent with a defective NLRP3 inflammasome, the processing of caspase-1 to its active form was also dramatically impaired (Figure 7B and Figure 7—figure supplement 1B). Overall, these data demonstrate that the Trx1 system promotes NLRP3 inflammasome activation and consequently secretion of the mature IL-1β.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig7-v2.jpg)
+
+**Figure 7.:** (A–C, F–L) Bone marrows from the indicated genotypes (from TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 and control Txnrd1fl/fl littermates or from Txnipfl/fl;Vav1-Cre and Txnipfl/fl control mice) were differentiated with M-CSF to obtain BMDMs. (A) Txnrd1-deficient and control BMDMs were primed with CpG (100 nM), LPS (400 ng/ml), LTA (5 μg/ml), R837 (5 μg/ml) or zymosan (10 μg/ml) before stimulation with 2 mM ATP for 1 hr. The concentration of IL-1β in supernatants was then determined by ELISA (n = 3). (B) Txnrd1fl/fl (WT) and Txnrd1fl/fl;Rosa26-CreERT2 (KO) BMDMs were primed with LPS (400 ng/ml) before stimulation with 2 mM ATP or 200 μg/ml alum. Levels and processing of IL-1β and caspase-1 in the cell lysate (CL) and supernatant (SN) were assessed by western blot with β-actin as a loading control. (C) Txnrd1-deficient and control BMDMs were stimulated with CpG (100 nM), LPS (100 ng/ml), LTA (1 μg/ml), R837 (5 μg/ml) for 7 hr, and expression of Il1b at the mRNA level was determined via RT-PCR (n = 3). (D, E) TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 and control Txnrd1fl/fl littermates were intraperitoneally injected with MSU crystals, and peritoneal lavage fluid was collected 8 hr later. Depicted are the total counts of infiltrating neutrophils (D) and the IL-1β levels measured by ELISA (E); n = 2 mice for controls, and n = 6 mice for MSU-treated groups). (F, G) Quantification of ROS levels in unstimulated BMDMs as control or after 4 hr of stimulation with LPS (400 ng/ml) or R837 (5 μg/ml) stained with CM-H2DCFDA via flow cytometry. Representative FACS plots (F) and mean fluorescence intensities (MFI; G) are shown (n = 3). (H) BMDMs were treated overnight with the antioxidant catalase-polyethylene glycol (Cat; 62.5 U/ml) before priming with LPS (400 ng/ml; left) or R837 (5 μg/ml; right) followed by stimulation with ATP. The secreted IL-1β was determined by ELISA (n = 3). (I, J) BMDMs were treated overnight with the antioxidant catalase-polyethylene glycol (Cat; ‘low’ is 62.5 U/ml; ‘medium’ is 250 U/ml; ‘high’ is 1000 U/ml) before stimulation (n = 3). (I) IL-1β secretion after priming with LPS (400 ng/ml) and stimulation with ATP was determined by ELISA. (J) Quantification of ROS levels after 4 hr of stimulation with LPS (400 ng/ml) was performed by flow cytometric staining with CM-H2DCFDA. (K, L) Txnip-deficient and control BMDMs were primed with CpG (100 nM), LPS (400 ng/ml), LTA (5 μg/ml), or R837 (5 μg/ml) before stimulation with 2 mM ATP (K) or 15 μM nigericin (Nig; L) for 1 hr. The concentration of IL-1β in supernatants was determined by ELISA (n = 3). (M) Txnipfl/fl;Vav1-Cre and Txnipfl/fl control mice were intraperitoneally injected with MSU crystals, and peritoneal lavage fluid was collected 8 hr later. Shown are the total counts of infiltrating neutrophils (n = 2 mice for controls, and n = 5 mice for MSU-treated groups). Bar graphs represent mean + standard deviation, and dots in the plots indicate individual mice. Data are representative of four (A), two (B–J, M), or three (K, L) independent experiments. For each panel, a representative experiment with either biological replicates (D, E, M) or replicates of in vitro culture conditions (A, C, G–L) is shown. Student's t test (two-tailed, unpaired) was used for two-groups analysis (A, C, G, K, L): *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001; ns, not significant. One-way ANOVA adjusted by Tukey’s multiple comparison test was used in D, E, H-J, M: *p≤0.0332; **p≤0.0021; ***p≤0.0002; ****p≤0.0001. Legends for Figure supplements.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A, B) Bone marrows from Txnrd1fl/fl;Rosa26-CreERT2 mice (KO) and control Txnrd1fl/fl littermates (WT) treated with TAM were differentiated with M-CSF to obtain BMDMs. (A) Txnrd1-deficient and control BMDMs were primed with CpG (100 nM), LPS (400 ng/ml), LTA (5 μg/ml), R837 (5 μg/ml) or zymosan (10 μg/ml) before stimulation with 200 μg/ml alum for 4 hr. The concentration of IL-1β in supernatants was then determined by ELISA (n = 3). (B) BMDMs were primed with R837 (5 μg/ml) before stimulation with 2 mM ATP or 200 μg/ml alum. Levels and processing of IL-1β and caspase-1 in the cell lysate (CL) and supernatant (SN) were assessed by western blot with β-actin as a loading control. Data are representative of two independent experiments. A representative experiment with replicates of in vitro culture conditions is shown (A). Student's t test (two-tailed, unpaired) was used for two-groups analysis (A): ***p≤0.001; ****p≤0.0001.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Bone marrows from TAM-treated Txnrd1fl/fl;Rosa26-CreERT2 and control Txnrd1fl/fl littermates were differentiated with M-CSF to obtain BMDMs. BMDMs were then treated overnight with the antioxidant catalase-polyethylene glycol (Cat; 62.5 U/ml) before priming with LPS (400 ng/ml; left) or R837 (5 μg/ml; right) followed by stimulation with alum. The secreted IL-1β was determined by ELISA (n = 3).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Bone marrows from Txnrd1fl/fl;Rosa26-CreERT2 mice and control Txnrd1fl/fl littermates treated with TAM were differentiated with M-CSF to obtain BMDMs. (A, B) BMDMs were treated overnight with the antioxidant catalase-polyethylene glycol (Cat; 62.5 U/ml) before priming with LPS (400 ng/ml; A) or CpG (100 nM; B) for 7 hr. Expression of Il1b at the mRNA level was determined via RT-PCR (n = 3, replicates of in vitro culture conditions). Bar graphs represent mean + standard deviation.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Bone marrows from Txnrd1fl/fl;Rosa26-CreERT2 mice and control Txnrd1fl/fl littermates treated with TAM were differentiated with M-CSF to obtain BMDMs. (A, B) Txnrd1-deficient and control BMDMs were treated overnight with the antioxidants N-acetyl-L-cysteine (NAC; 0.9 mM), ascorbic acid (AA; 1.25 μM), DL-dithiothreitol (DTT; 62.5 μM), diphenyleneiodonium chloride (DPI; 1000 nM) before priming with R837 (5 μg/ml) and subsequently stimulated with either 2 mM ATP (A) or 200 μg/ml alum (B). The concentration of IL-1β in supernatants was subsequently determined by ELISA (n = 3). Bar graphs represent mean + standard deviation. Data are representative of two independent experiments, and a representative experiment with triplicates of in vitro culture conditions is shown for each panel. Student's t test (two-tailed, unpaired) was used for two-groups analysis: *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/53627/elife-53627-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** Bone marrows from Txnipfl/fl;Vav1-Cre mice and Txnipfl/fl control littermates were differentiated with M-CSF to obtain BMDMs. (A) Depicted is the analysis of Txnip mRNA in BMDMs determined by RT-PCR (n = 3). (B) Txnip-deficient and control BMDMs were stimulated with CpG (400, 100 nM), LPS (400, 100 ng/ml), LTA (5, 1 μg/ml), R837 (5, 1 μg/ml), or zymosan (10, 2 μg/ml), and IL-12p40 in supernatants was determined by ELISA. ‘High’ and ‘Low’ indicate the concentration of the utilized stimulus (n = 3). (C) Txnip-deficient and control BMDMs were primed with CpG (100 nM), LPS (400 ng/ml), LTA (5 μg/ml), or R837 (5 μg/ml) before stimulation with 200 μg/ml alum for 4 hr. The concentration of IL-1β in supernatants was determined by ELISA (n = 3). Bar graphs represent mean + standard deviation. Data are representative of two (A) or three (B, C) independent experiments, and a representative experiment with triplicates of in vitro culture conditions is shown for each panel. Student's t test (two-tailed, unpaired) was used for two-groups analysis (A–C): *p≤0.05; **p≤0.01; ns, not significant.
 
 Intraperitoneal administration of monosodium urate (MSU) is well known to elicit NLRP3-dependent production of mature IL-1β in mouse peritoneum leading to a massive infiltration of neutrophils (Martinon et al., 2006). In line with the in vitro defects, we found that Txnrd1-deficient mice display an impaired neutrophil influx (Figure 7D) and reduced IL-1β production (Figure 7E) upon MSU injection compared to WT mice. Therefore, these results further confirm that the Trx1 system plays a critical role in NLRP3 inflammasome activation and IL-1β secretion in vivo.
 
@@ -103,70 +199,780 @@ In conclusion, our study reveals a key role of the Trx1 system for NF-κB-mediat
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#JAX:000664; RRID: IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6 Ptprca (CD45.1)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#JAX:002014, RRID:IMSR_JAX:002014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Txnrd1fl/fl</td>
+      <td>PMID: 15713651</td>
+      <td></td>
+      <td>Kindly provided by Marcus Conrad</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26-CreERT2</td>
+      <td>PMID: 17456738</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Txnipfl/fl</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# JAX:016847, RRID:IMSR_JAX:016847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Vav1-Cre</td>
+      <td>PMID: 12548562</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B220 PerCP-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 103234, RRID:AB_893353</td>
+      <td>Flow cytometry, cell surface (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD103 FITC-conjugated (armenian hamster, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 121420, RRID:AB_10714791</td>
+      <td>Flow cytometry, cell surface (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b BV605-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 101237, RRID:AB_11126744</td>
+      <td>Flow cytometry, cell surface (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b PerCP-Cy5.5-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 101228, RRID:AB_893232</td>
+      <td>Flow cytometry, cell surface (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11c APC-conjugated (armenian hamster, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 17-0114-82, RRID:AB_469346</td>
+      <td>Flow cytometry, cell surface (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11c BV605-conjugated (armenian hamster, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 117333, RRID:AB_11204262</td>
+      <td>Flow cytometry, cell surface (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11c PE-Cy7-conjugated (armenian hamster, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 117318, RRID:AB_493568</td>
+      <td>Flow cytometry, cell surface (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD19 BV650-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 115541, RRID:AB_11204087</td>
+      <td>Flow cytometry, cell surface (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD206 PerCP-Cy5.5-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 141716, RRID:AB_2561992</td>
+      <td>Flow cytometry, intracellular (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PD-L2 PE-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 107206, RRID:AB_2162011</td>
+      <td>Flow cytometry, cell surface (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD301b PE-Cy7-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 146808, RRID:AB_2563390</td>
+      <td>Flow cytometry, cell surface (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4 PerCP-Cy5.5-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 100540, RRID:AB_893326</td>
+      <td>Flow cytometry, cell surface (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45 BV785-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 103149, RRID:AB_2564590</td>
+      <td>Flow cytometry, cell surface (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.1 APC-conjugated (mouse, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 110714, RRID:AB_313503</td>
+      <td>Flow cytometry, cell surface (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.1 biotin-conjugated (mouse, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553774, RRID:AB_395042</td>
+      <td>Flow cytometry, cell surface (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.2 APC-conjugated (mouse, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 17-0454-82, RRID:AB_469400</td>
+      <td>Flow cytometry, cell surface (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45.2 FITC-conjugated (mouse, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11-0454-82, RRID:AB_465061</td>
+      <td>Flow cytometry, cell surface (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8 PE-Cy7-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 100722, RRID:AB_312761</td>
+      <td>Flow cytometry, cell surface (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 AF488-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 123120, RRID:AB_893479</td>
+      <td>Flow cytometry, cell surface (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 BV421-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 123131, RRID:AB_10901171</td>
+      <td>Flow cytometry, cell surface (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IFN-γ APC-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 505810, RRID:AB_315404</td>
+      <td>Flow cytometry, intracellular (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly-6G BV421-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 127627, RRID:AB_10897944</td>
+      <td>Flow cytometry, cell surface (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly-6G PerCP-Cy5.5-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 127616, RRID:AB_1877271</td>
+      <td>Flow cytometry, cell surface (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly-6C APC-Cy7-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 128026, RRID:AB_10640120</td>
+      <td>Flow cytometry, cell surface (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly-6C PE-Cy7-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 128018, RRID:AB_1732082</td>
+      <td>Flow cytometry, cell surface (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHCII PE-Cy7-conjugated (rat, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 107635, RRID:AB_2561397</td>
+      <td>Flow cytometry, cell surface (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nos2 AF647-conjugated (mouse, monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-7271, RRID:AB_627810</td>
+      <td>Flow cytometry, intracellular (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG(H+L) FITC-conjugated (goat, polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 4055–02, RRID:AB_2795979</td>
+      <td>Flow cytometry, Microscopy (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Relmα (rabbit, polyclonal)</td>
+      <td>PeproTech</td>
+      <td>Cat# 500-P214bt-50ug, RRID:AB_1268707</td>
+      <td>Flow cytometry, intracellular (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Siglec-F PE-conjugated (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 552126, RRID:AB_394341</td>
+      <td>Flow cytometry, cell surface (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCRβ APC-conjugated (armenian hamster, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 109212, RRID:AB_313435</td>
+      <td>Flow cytometry, cell surface (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF-κB p65 (rabbit, polyclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 622604, RRID:AB_2728469</td>
+      <td>ChIP, 3 μg antibody for 40 μg chromatin</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4 MicroBeads</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-049-201, RRID:AB_2722753</td>
+      <td>MACS enrichment</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11b MicroBeads</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-049-601,</td>
+      <td>MACS enrichment</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-1β (armenian hamster, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 14-7012-81, RRID:AB_468396</td>
+      <td>ELISA, coating antibody (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-1β biotin-conjugated (rabbit, polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 13-7112-85, RRID:AB_466925</td>
+      <td>ELISA, detection antibody (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-12/IL-23 p40 (rat, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 14-7125-81, RRID:AB_468444</td>
+      <td>ELISA, coating antibody (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-12/IL-23 p40 biotin-conjugated (rat, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 13-7123-81, RRID:AB_466928</td>
+      <td>ELISA, detection antibody (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-6 (rat, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 16-7061-81, RRID:AB_469216</td>
+      <td>ELISA, coating antibody (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-6 biotin-conjugated (rat, monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 36-7062-85, RRID:AB_469761</td>
+      <td>ELISA, detection antibody (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TNF-α (rat, monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 551225, RRID:AB_394102</td>
+      <td>ELISA, coating antibody (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TNF-α biotin-conjugated (rabbit, polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 13-7341-81, RRID:AB_466950</td>
+      <td>ELISA, detection antibody (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Erk1/2 (rabbit, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9101, RRID:AB_331646</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Erk1/2 (rabbit, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9102, RRID:AB_330744</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-IκB-α, (mouse, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9246, RRID:AB_2267145</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IκB-α, (rabbit, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9242, RRID:AB_331623</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF-κB p65 (rabbit, polyclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 622602, RRID:AB_315956</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-1β (mouse, polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF-401-NA, RRID:AB_416684</td>
+      <td>WB (1:800), ‘Mouse IL-1 beta/IL-1F2 antibody’</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-caspase-1 p10 (rabbit, polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-514, RRID:AB_2068895</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin peroxidase- conjugated (mouse, monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A3854, RRID:AB_262011</td>
+      <td>WB (1:50000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NF-κB p65 (rabbit, polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-7151, RRID:AB_650213</td>
+      <td>Microscopy (1:250)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IFN-γ</td>
+      <td>PeproTech</td>
+      <td>Cat# 315–05</td>
+      <td>M1 polarization (50 ng/ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-4</td>
+      <td>PeproTech</td>
+      <td>Cat# 214–14</td>
+      <td>M2 polarization (20 ng/ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-CSF</td>
+      <td>PeproTech</td>
+      <td>Cat# 315–02</td>
+      <td>BMDM differentiation (20 ng/ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>gp61-80 peptide (LCMV)</td>
+      <td>NeoMPS</td>
+      <td>Cat# SP990990</td>
+      <td>Sequence: GLNGPDIYKGVYQFKSVEFD</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen (TAM)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T5648-1G</td>
+      <td>To delete Txnrd1 in Txnrd1fl/fl;Rosa26-CreERT2 mice</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysaccharides (LPS)</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-3pelps</td>
+      <td>TLR4 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imiquimod (R837)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 3700</td>
+      <td>TLR7 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CpG oligodeoxynucleotides</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-1826–1</td>
+      <td>TLR9 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipoteichoic (LTA)</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-slta</td>
+      <td>TLR2 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zymosan A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# Z4250-250MG</td>
+      <td>TLR2/Dectin-1 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nigericin (Nig)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# N7143</td>
+      <td>NLRP3 inflammasome inducer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine triphosphate (ATP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A7699</td>
+      <td>NLRP3 inflammasome inducer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alu-Gel-S (Alum)</td>
+      <td>SERVA Electrophoresis</td>
+      <td>Cat# 12261.01</td>
+      <td>NLRP3 inflammasome inducer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Monosodium urate (MSU) crystals</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-msu-25</td>
+      <td>NLRP3 inflammasome inducer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-Buthionine-(S,R)-sulfoximine (BSO )</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B2640-500MG</td>
+      <td>Glutathione synthesis inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Catalase-polyethylene glycol (Cat)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C4963</td>
+      <td>Antioxidant</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Ascorbic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A92902-25G</td>
+      <td>Antioxidant</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphenyleneiodonium chloride (DPI)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D2926-10MG</td>
+      <td>Antioxidant</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-Dithiothreitol (DTT)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 43815–5G</td>
+      <td>Antioxidant</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Acetyl-L-Cysteine (NAC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A7250-10G</td>
+      <td>Antioxidant</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase I</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 4716728001</td>
+      <td>Tissue digestion (0.02 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase IV</td>
+      <td>Worthington</td>
+      <td>Cat# LS004189</td>
+      <td>Tissue digestion (2 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P-8139</td>
+      <td>T-cell restimulation (10−7 mol/L)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I-0634</td>
+      <td>T-cell restimulation (1 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Monensin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M5273</td>
+      <td>Used at 2 μg/ml during T-cell restimulation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NF-κB p65 Transcription Factor Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat# ab133112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nuclear Extraction Kit</td>
+      <td>Abcam</td>
+      <td>Cat# ab113474</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glutathione Assay Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# CS0260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce LDH Cytotoxicity Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 88954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo Software (version 10.4.2)</td>
+      <td>Three Star</td>
+      <td>https://www.flowjo.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (for image analysis)</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8 (version 8.0.0)</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9542</td>
+      <td>Microscopy, nuclei visualization (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin, AF-647-conjugated</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A22287</td>
+      <td>Microscopy, actin staining (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>eFluor 780</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 65-0865-14</td>
+      <td>Live/Dead staining (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zombie Aqua</td>
+      <td>Biolegend</td>
+      <td>Cat# 423101</td>
+      <td>Live/Dead staining (1:400)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zombie Red</td>
+      <td>Biolegend</td>
+      <td>Cat# 423109</td>
+      <td>Live/Dead staining (1:800)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CM-H2DCFDA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C6827</td>
+      <td>General oxidative stress indicator (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Annexin-V APC-conjugated</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 88-8007-74</td>
+      <td>Apoptosis detection (1:50)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin BV711-conjugated</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 563262</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10004D</td>
+      <td>For the ChIP experiment</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Txnrd1fl/fl mice (Jakupoglu et al., 2005) were provided by Marcus Conrad (Helmholtz Zentrum, Munich, Germany) and were backcrossed for more than eight generations to C57BL/6. To generate Txnrd1fl/fl;Rosa26-CreERT2 mice, Txnrd1fl/fl mice were crossed with Rosa26-CreERT2 (Hameyer et al., 2007) mice. Txnipfl/fl mice (Yoshioka et al., 2007) were purchased from The Jackson Laboratory (Bar Harbor, Maine, USA) and crossed with B6.Cg-Tg(Vav1-Cre)A2Kio/J (Vav1-Cre) mice (de Boer et al., 2003). B6 Ptprca (CD45.1) animals were also purchased from The Jackson Laboratory (Bar Harbor, Maine, USA). About 6–12 week-old age- and sex-matched mice (either female or male) were used for the experiments. Mice were kept in individually ventilated cages under specific pathogen free conditions at the ETH Phenomics Center (EPIC; Zurich, Switzerland). All animal experiments were approved by the local animal ethics committee (Kantonales Veterinärsamt Zürich) and were performed according to local guidelines (TschV, Zurich) and the Swiss animal protection law (TschG). For deletion of the Txnrd1 gene in Txnrd1fl/fl;Rosa26-CreERT2 mice, animals were intraperitoneally injected with 2 mg TAM (Sigma-Aldrich) on two consecutive days and used for experiments at least 10 days later. For in vivo GSH depletion, L-buthionine-(S,R)-sulfoximine (BSO; Sigma-Aldrich) was supplemented in the drinking water at a concentration of 20 mM for the indicated time.
 
-## Bone marrow chimeras
+### Bone marrow chimeras
 
 For bone marrow chimeras, C57BL/6 (CD45.1+CD45.2+) recipients were irradiated twice with 4.75 Gy with a 4 hr break in a RS 2000 (Rad Source Technologies Inc, Alpharetta, USA). The following day, mice were reconstituted by intravenous injection of 1−3 × 106 bone marrow cells of the donor mice (1 to 1 mixture of bone marrow from CD45.1+ and CD45.2+ donors). Animals were analyzed 8–10 weeks after reconstitution. Either Txnrd1fl/fl;Rosa26-CreERT2 (and Txnrd1fl/fl as control) donor mice or CD45.1+CD45.2+ recipient mice after reconstitution were intraperitoneally treated twice with 2 mg TAM to delete Txnrd1 gene.
 
-## Emergency hematopoiesis
+### Emergency hematopoiesis
 
 Mice were intraperitoneally injected twice with 35 μg LPS (Ultrapure E. coli 0111:B4, InvivoGen) in a 48 hr interval and were sacrificed for analysis 24 hr later. Bone marrow and blood were then taken and processed for analysis.
 
-## MSU-induced peritonitis
+### MSU-induced peritonitis
 
 Mice were intraperitoneally injected with 1.8 mg MSU crystals (InvivoGen) dissolved in 0.2 ml sterile PBS. After 8 hr, mice were euthanized by CO2 exposure, and peritoneal cavities were washed with 10 ml PBS + 2 mM EDTA (Sigma-Aldrich). Neutrophil infiltration in peritoneal lavage fluids was subsequently assessed by CD11b and Ly-6G flow cytometry staining, whereas concentration of IL-1β was determined by ELISA.
 
-## Cell-suspension preparations
+### Cell-suspension preparations
 
 Mice were sacrificed by an intraperitoneal overdose of sodium pentobarbital. Organs were removed and then processed according to the following procedure. Lungs and spleens were minced and then digested for 45 min at 37°C in IMDM medium (Life Technologies) containing 2 mg/ml of type IV collagenase (Worthington) and 0.02 mg/ml DNaseI (Sigma). All other organs were directly disrupted and passed through a 70 μm cell strainer (Corning). Bone marrow cells were flushed from femurs and tibia, and then directly passed through the 70 μm cell strainer. Leukocytes from the liver were isolated by using Percoll gradient centrifugation (GE Healthcare). ACK buffer was used for erythrocyte lysis for all organs.
 
-## Cell culture
+### Cell culture
 
 Bone-marrow cells from femur and tibia of sex-matched 6–12 week-old mice were differentiated into BMDCs in RPMI-1640 medium (Gibco) supplemented with GM-CSF (supernatant from X63-GMCSF cell line), 2 mM L-glutamine (GE Healthcare), 10 mM HEPES (Lonza), 100 U/mL penicillin, 100 μg/mL streptomycin (Gibco), 10% FCS (Gibco). Fresh medium was added on day 3 and day 6 of culture, and non-adherent cells were harvested and used in experiments on day 7 of culture. BMDMs were cultured analogously, but with medium supplemented with 20 ng/ml recombinant M-CSF (PeproTech). Adherent BMDMs detached by washing plates with cold PBS + 2 mM EDTA (Sigma-Aldrich) were used in experiments. For differentiation of BMDMs toward M1 and M2, cells were polarized in the presence of ultra-pure LPS from Escherichia coli O111:B4 (20 ng/ml; InvivoGen) + IFN-γ (50 ng/ml; PeproTech) and IL-4 (20 ng/ml; PeproTech), respectively. For analysis of M1/M2 markers at the RNA and protein levels, BMDMs were polarized for 24 and 48 hr, respectively. For BMDC/BMDM stimulation, cells were generally primed with R837 (Tocris Bioscience), CpG (InvivoGen), Ultra-pure LPS from Escherichia coli O111:B4 (InvivoGen), lipoteichoic acid from Staphylococcus aureus (InvivoGen), and zymosan A (Sigma-Aldrich). Cells were generally primed with the indicated TLR ligands for 3 hr before stimulation for 4 hr with 200 μg/ml alum (Al(OH)3; SERVA Electrophoresis), or for 6 hr before stimulation for 1 hr with 2 mM adenosine 5’-triphosphate disodium salt (ATP; Sigma-Aldrich) or 5 μM nigericin sodium salt (Sigma-Aldrich) or as indicated in each figure legend. Other compounds used were applied overnight and consisted of the following: L-ascorbic acid (Sigma-Aldrich), L-buthionine-sulfoximine (BSO; Sigma-Aldrich), catalase-polyethylene glycol (catalase-PEG; Sigma-Aldrich), diphenyleneiodonium chloride (DPI; Sigma-Aldrich), DL-dithiothreitol (DTT; Sigma-Aldrich), and N-acetyl-L-Cysteine (NAC; Sigma-Aldrich). The concentrations at which all the compounds were used are indicated in each figure legend.
 
-## In vitro CD4+ T cell-DC co-culture
+### In vitro CD4+ T cell-DC co-culture
 
 5 × 103 Txnrd1-deficient and sufficient BMDCs were co-cultured with GP61-80-specific, MACS-enriched naïve CD4+ T cells (25 × 103/well) in the presence of the indicated doses of GP61-80 peptide (GLNGPDIYKGVYQFKSVEFD, I-Ab-restricted). Co-cultures were performed in IMDM + GlutaMAX, 10% FCS, 100 U/ml penicillin, 100 μg/ml streptomycin, 50 μM β-mercaptoethanol (all Gibco). After 4 days, CD4+ T cells were analyzed for the intracellular expression of IFN-γ upon restimulation with phorbol 12-myristate 13-acetate (PMA; 10−7 mol/L; Sigma) + ionomycin (1 μg/ml; Sigma) in the presence of monensin (2 μg/ml; Sigma) for 4 hr at 37°C.
 
-## Flow cytometry
+### Flow cytometry
 
 For dead cell exclusion, cells were stained with either eFluor 780 (eBioscience) or with the Zombie Aqua or Red Fixable Viability kits (Biolegend). Prior to surface staining with antibodies, Fc gamma receptors were blocked by incubating cells with anti-CD16/CD32 antibody (2.4G2, homemade). Antibodies for extracellular stains were then incubated with cells for 15 min in FACS buffer (PBS + 2% FCS). When intracellular staining was required (for IFN-γ, Relmα, CD206 and Nos2 stainings), cells were additionally fixed with 4% formalin, permeabilized with PBS supplemented with 2% FCS and 0.5% saponin (permeabilization buffer), and intracellularly stained for 30 min in permeabilization buffer. The anti-Relmα antibody was detected with an anti-rabbit secondary antibody labeled with the FITC fluorophore. To analyze cell death, cells were stained with Annexin-V-APC (BD Bioscience) and eFluor 780 (eBioscience) in Annexin-V binding buffer. Total cellular ROS were quantified by CM-H2DCFDA staining (Life Technologies) and measuring fluorescein signal after 30 min recovery in supplemented medium. Cells were acquired on LSRFortessa (BD Bioscience), or sorted on FACSAria III (BD Bioscience). Data were analyzed in FlowJo software (Tree Star). All antibodies and staining reagents with their respective dilutions used in this study can be found in the Key resources table.
 
-## DNA binding activity of NF-κB p65
+### DNA binding activity of NF-κB p65
 
 To measure the NF-κB p65 transcription factor DNA binding activity, nuclear extracts from LPS-primed BMDCs or BMDMs were first isolated using the Nuclear Extraction Kit (Abcam), and the NF-κB binding activity was subsequently measured using the NF-κB p65 Transcription Factor Assay Kit (Abcam). Both kits were used following the manufacturer’s instructions. Values obtained from the Transcription Factor Assay Kit were normalized for the total protein concentrations in the nuclear extracts, which were determined using the Pierce BCA Protein Assay Kit (Thermo Scientific).
 
-## Magnetic cell sorting
+### Magnetic cell sorting
 
 CD11b+ and CD4+ enrichments were achieved by positive selection using a MACS system with microbeads conjugated to monoclonal anti-mouse CD11b and CD4 antibodies (MACS, Miltenyi Biotec), respectively, following the manufacturer’s instructions.
 
-## Glutathione measurement
+### Glutathione measurement
 
 To measure total GSH levels in cell lysates, the Glutathione Assay Kit (Sigma-Aldrich) was used following the manufacturer’s instructions.
 
-## ELISA
+### ELISA
 
 Cytokines in supernatants were quantified by sandwich ELISA using the following pairs of capture and detection antibodies: B122 and 13-7112-85 (eBioscience) for IL-1β, C15.6 and C17.8 (eBioscience) for IL-12p40, MP5-20F3 and MP5-32C11 (Biolegend) for IL-6, and G281-2626 (BD Pharmingen) and biotinylated anti-TNF-α polyclonal antibody (13-7341-85; eBioscience) for TNF-α. After the coating and detection steps, alkaline phosphatase (AP)-conjugated streptavidin (SouthernBiotech) was provided, and the alkaline phosphatase p-nitrophenyl phosphate (pNPP; Sigma-Aldrich) substrate was subsequently added to each well. The plates were finally read at 405 nm.
 
-## RNA analysis by real-time quantitative PCR
+### RNA analysis by real-time quantitative PCR
 
 Total RNA was extracted using TRIzol (Life Technologies), followed by reverse transcription using GoScript Reverse Transcriptase (Promega) according to the manufacturer’s instructions. Real-time quantitative PCR (RT-PCR) was performed using Brilliant SYBR Green (Stratagene) on an i-Cycler (Bio-Rad Laboratories) according to manufacturer’s protocol. Expression was normalized to the housekeeping gene Tbp for mRNA expression, or to genomic Txnrd1 for addressing DNA recombination efficiency in cells lacking the Txnrd1 gene. The sequences of all used primers are listed in Supplementary file 1.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 5 × 106 BMDCs per genotype were fixed with 1% formaldehyde (10 min at 37°C), and cross-linking was stopped by adding glycine to a final concentration of 0.125 M. Cells were washed using ice-cold PBS, resuspended in swelling buffer (25 mM HEPES [pH 8], 1.5 mM MgCl2, 10 mM KCl, 0.5% NP-40) with protease inhibitors for 15 min, spun down and finally resuspended in 400 μl lysis buffer (PBS [1x], 1% SDS, 1% NP-40, 0.5% sodium deoxycholate) with protease inhibitors for 10 min. Sonication was subsequently performed using the Bioruptor (Diagenode; 30 cycles of 30 s on, 30 s off) at 4°C to shear chromatin into ca. 200–300 base-pair DNA fragments. Sonicated samples were diluted with 1.6 ml of lysis buffer without SDS (PBS [1x], 1% NP-40, 0.5% sodium deoxycholate). 40 μg sonicated chromatin in 1 ml volume was precleared by adding 50 μl of dynabeads (Thermo Scientific) and incubation on a wheel for 2 hr at 4°C. At this stage, 10% of chromatin was taken as input DNA. Supernatant was then collected, 3 μg of p65 antibody (Biolegend) was added, and samples were incubated overnight at 4°C on a wheel. Chromatin-antibody complexes were then retrieved by adding 50 μl of dynabeads (Thermo Scientific) and incubation for 4 hr at 4°C on a wheel. Beads were washed once with ice-cold low-salt wash buffer (16.7 mM Tris-HCl [pH 8], 0.167 M NaCl, 0.1% SDS, 1% Triton-X), once with ice-cold high-salt wash buffer (16.7 mM Tris-HCl [pH 8], 0.5 M NaCl, 0.1% SDS, 1% Triton-X), twice using LiCl wash buffer (0.25 M LiCl, 10 mM Tris-HCl [pH 8], 1 mM EDTA [pH 8], 0.5% sodium deoxycholate, 0.5% NP40), and once with TE buffer (10 mM Tris-HCl [pH 8], 5 mM EDTA [pH 8]). DNA was then eluted in elution buffer (1% SDS, 100 mM NaHCO3) by gentle shaking for 30 min at 37°C, and cross-links were reversed by overnight incubation at 65°C. After RNase A and proteinase K treatment, DNA was purified via phenol/chloroform extraction and ethanol precipitation.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were lysed on ice with RIPA buffer (20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 5 mM EDTA, 1 mM Na3VO4, 1% Triton X-100, supplemented with protease inhibitor [Sigma-Aldrich] and phosphatase inhibitor [Sigma-Aldrich]). Cell debris was then removed by spinning for 10 minutes at 4°C. Protein concentrations were determined using the Pierce BCA Protein Assay Kit (Thermo Scientific). Whole cell extracts (30 μg of proteins) were fractionated by SDS-PAGE and transferred to a polyvinylidene difluoride (PVDF) membrane using a transfer apparatus according to manufacturer’s instructions (Bio-Rad). Membranes were blocked with 4% nonfat milk in TBST (50 mM Tris, pH 8.0, 150 mM NaCl, 0.1% Tween20) for 45 minutes, washed and incubated with primary antibodies (1:1000 in TBST with 4% BSA) at 4°C for 12 hours. After washing, membranes were incubated with a 1:2000 dilution (in TBST with 4% nonfat milk) of horseradish peroxidase-conjugated anti-rabbit or anti-mouse antibodies for 1 hour. Blots were washed with TBST three times and developed with the ECL system (Thermo Scientific) according to manufacturer’s instructions. All antibodies for immunoblotting used in this study can be found in the Key resources table.
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 BMDCs were stimulated with LPS (400 ng/ml) on glass coverslips for the indicated times. After stimulation, cells were fixed in 2% paraformaldehyde and subsequently permeabilized in 0.25% Triton X-100 in PBS. For staining, cells were incubated with anti-NF-κB p65 antibody (Santa Cruz) in 0.1% Triton X-100 containing 2% goat serum in PBS. Secondary antibodies were anti-rabbit IgG, ads-FITC (Southern Biotech). During incubation with the secondary antibody, cells were additionally stained for DNA with DAPI (Sigma-Aldrich) and for actin with phalloidin-647 (Thermo Scientific). The coverslips were mounted on glass slides with Vectashield mounting medium (AdipoGen) for immunofluorescence analysis. Microscopy was performed using an oil immersion objective (UPlanSApo, Olympus; Magnification 100×, NA = 1.4) on a DeltaVision microscope system coupled to a sCMOS camera (pco.edge 5.5, PCO). For quantification of NF-κB nuclear translocation, DAPI and actin stainings were used to create masks for nuclei and whole cell. NF-κB signal intensity within these masks were separately quantified.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed using either a Student’s t test (two-tailed, unpaired), or one-way ANOVA followed by either Tukey’s or Dunnett’s corrections, or a two-way ANOVA adjusted by Bonferroni's multiple comparison test. The data are represented as mean + standard deviation. The method of statistical evaluation and the significance levels are also described in each figure legend.

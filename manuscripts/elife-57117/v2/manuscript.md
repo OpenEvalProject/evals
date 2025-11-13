@@ -37,9 +37,173 @@ To gain insights into these molecular steps and to identify proteins involved at
 
 ## Results
 
-## HELLS interacts with PRDM9
+### HELLS interacts with PRDM9
 
 To identify proteins that interact with PRDM9 we first chose to express a tagged version of human PRDM9 in HeLa S3 cells, which do not express PRDM9 (Morin et al., 2008), and performed immunoprecipitation (IP) followed by mass spectrometry analysis allowing us to identify candidates that are not germline-specific. We generated two stable cell lines that express the human PRDM9A allele (Baudat et al., 2010) with an epitope tag (FLAG-HA) inserted at the amino- (Nt) or carboxy-terminal (Ct) end (see Materials and methods). Unmodified HeLa S3 cells were used as negative control. We purified tagged PRDM9A-containing complexes from HeLa S3 cell nuclear extracts by FLAG affinity, followed by HA affinity purification (Table 1—source data 1).
+
+**Table 1.**
+ HELLS is co-immunoprecipitated with PRDM9.Two independent immunoprecipitation experiments were performed using HeLa cells and mouse testis extracts. In the first experiment, HeLa S3 cells that express N-terminally (Nter) or C-terminally (Cter) tagged human PRDM9 or without PRDM9 expression vector (no PRDM9) were used to identify proteins that interacts with PRDM9 after size selection (95–120 kD and 70–80 kD), and without size selection. Mouse testis extracts were prepared without (rep1) or after incubation with benzonase (rep2) (in duplicate). IP were performed with an anti-PRDM9 antibody or with normal rabbit serum (mock). For each protein (PRDM9 and HELLS), the total number of peptides, the protein rank in the whole set of proteins with at least one peptide, and ranked by number of peptides, and the sequence coverage are indicated; na: not applicable. For mouse testis extracts, the rank difference of the label free quantification intensity (LFQ) between IPs with anti-PRDM9 and mock are indicated. The full list of the identified peptides is in Supplementary file 1. Extracts analysis by electrophoresis are presented in Table 1—source data 1.Table 1—source data 1.Purification of protein complexes.(A) Western blot analysis after complex purification by Flag-HA of extracts from HeLa S3 cells. HeLa S3 cells without PRDM9 expression vector, or expressing human PRDM9 tagged with Flag-HA at the C-terminus (PRDM9-Ct) or N-terminus (PRDM9-Nt) were used. Protein fractions of the extracts before IP (S1: cytoplasmic fraction, S2: nuclear fraction as input for IPs, ppt: insoluble pellet) and after the affinity purification steps were analyzed by western blotting using an anti-PRDM9 antibody. (B) Analysis of affinity-purified proteins after silver staining (sample without size selection). Eluates 1, 2 and resin fractions obtained from affinity purification (HA) of extracts initially prepared from HeLa S3 cells without PRDM9 expression vector (M), or expressing human PRDM9 tagged with Flag-HA at the C-terminus (Ct) or at the N-terminus (Nt) were separated by electrophoresis and silver stained. Mixtures of Eluate 1 and 2 were used for mass spectrometry analysis. (C) Western blot analysis of complex purification using an anti-PRDM9 antibody and mouse testes extracts (Mouse testis rep1). Protein extracts obtained during the Dignam-based purification (S1: cytoplasmic fraction, S2: nuclear fraction, S3: DNase-treated, and ppt: pellet) were loaded. Input (S2), unbound (UB), and proteins immunoprecipitated (IP) with an anti-PRDM9 antibody or normal rabbit serum (mock) were analyzed by western blotting. Detection was with an anti-PRDM9 antibody. Loading: 1 and 10% of input and IP samples, respectively. (D) Analysis of affinity-purified proteins by silver staining (Mouse testis rep1). Input, and samples IP with an anti-PRDM9 antibody or with normal rabbit serum (mock) were loaded. Bovine serum albumin (BSA) was used as control. Proteins were separated by electrophoresis and silver stained. (E) Western blot analysis of complex purification using an anti-PRDM9 antibody in extracts from mouse testes incubated with benzonase (Mouse testis rep 2), in duplicate (a and b). Protein extracts obtained during the Dignam-based purification steps (S1: cytoplasmic fraction, S2: nuclear fraction, S3: DNase-treated, and ppt: pellet) were loaded. Input (S2) and proteins IP with an anti-PRDM9 antibody or rabbit serum (mock) were analyzed by western blotting. Detection was with an anti-PRDM9 antibody. Loading: 1% and 10% of input and IP samples. (F) Analysis of affinity purified proteins by silver staining (Mouse testis rep2). Input, and samples IP with an anti-PRDM9 antibody or with normal rabbit serum (mock) were loaded. BSA was used as control. Proteins were separated by electrophoresis and stained with silver.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>IP</th>
+      <th>Total peptides PRDM9</th>
+      <th>Rank PRDM9</th>
+      <th>Sequence coverage PRDM9 (%)</th>
+      <th>Total peptides HELLS</th>
+      <th>Rank HELLS</th>
+      <th>Sequence coverage HELLS (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HeLa with size selection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HeLa PRDM9 Nter 95–120 KD 70–80 KD</td>
+      <td>0 7</td>
+      <td>na 1/21</td>
+      <td>na 6.4</td>
+      <td>11 0</td>
+      <td>1/16 na</td>
+      <td>11.9 na</td>
+    </tr>
+    <tr>
+      <td>HeLa PRDM9 Cter 95–120 KD 70–80 KD</td>
+      <td>0 7</td>
+      <td>na 3/34</td>
+      <td>na 7.3</td>
+      <td>4 0</td>
+      <td>2/32 na</td>
+      <td>4.4 na</td>
+    </tr>
+    <tr>
+      <td>HeLa no PRDM9 95–120 KD 70–80 KD</td>
+      <td>0 0</td>
+      <td>na</td>
+      <td>na</td>
+      <td>0 0</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>HeLa without size selection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HeLa PRDM9 Nter</td>
+      <td>38</td>
+      <td>6/447</td>
+      <td>29.4</td>
+      <td>97</td>
+      <td>1/447</td>
+      <td>48.1</td>
+    </tr>
+    <tr>
+      <td>HeLa PRDM9 Cter</td>
+      <td>35</td>
+      <td>4/364</td>
+      <td>33.7</td>
+      <td>44</td>
+      <td>1/364</td>
+      <td>37.6</td>
+    </tr>
+    <tr>
+      <td>HeLa no PRDM9</td>
+      <td>0</td>
+      <td>na</td>
+      <td>na</td>
+      <td>0</td>
+      <td>na</td>
+      <td>na</td>
+    </tr>
+    <tr>
+      <td>Mouse testis rep1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IP PRDM9</td>
+      <td>24</td>
+      <td>27/571</td>
+      <td>35.1</td>
+      <td>14</td>
+      <td>75/571</td>
+      <td>24.1</td>
+    </tr>
+    <tr>
+      <td>mock</td>
+      <td>1</td>
+      <td>538/571</td>
+      <td>1.2</td>
+      <td>6</td>
+      <td>211/571</td>
+      <td>9.3</td>
+    </tr>
+    <tr>
+      <td>LFQ Rank difference</td>
+      <td></td>
+      <td>441</td>
+      <td></td>
+      <td></td>
+      <td>113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse testis rep2 (+benzonase)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IP PRDM9</td>
+      <td>14 15</td>
+      <td>39/890 41/948</td>
+      <td>26.3</td>
+      <td>6 7</td>
+      <td>187/890 178/948</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>mock</td>
+      <td>1 0</td>
+      <td>782/890 na</td>
+      <td>1.4</td>
+      <td>5 1</td>
+      <td>323/890 506/948</td>
+      <td>7.2</td>
+    </tr>
+    <tr>
+      <td>LFQ Rank difference</td>
+      <td></td>
+      <td>870 688</td>
+      <td></td>
+      <td></td>
+      <td>122 468</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 First, we carried out pilot experiments by selecting proteins with a size that ranged between 70 and 80 kD and between 95 and 120 kD after silver staining to potentially identify PRDM9 and other proteins, respectively. PRDM9 peptides were the first and the third most abundant peptides for Nt- and Ct-tagged PRDM9, respectively, only in the 70–80 kD size range (Table 1). Although the predicted molecular weight (MW) of tagged PRDM9 is 103 kD, its detection in the 70–80 kD size range is compatible with its faster than predicted migration during denaturing gel electrophoresis (see western blots in Table 1—source data 1). HELLS peptides were the first and the second most abundant peptides for Nt- and Ct-tagged PRDM9, respectively, only in the 95–120 kD size range, in agreement with HELLS predicted MW (97 kD) (Jarvis et al., 1996). Then, we repeated the experiments, but without size selection and by analyzing the full protein content after affinity purification. This analysis confirmed the pilot experiment findings, and highlighted HELLS as a major PRDM9 partner. In this condition, with both Nt- and Ct-tagged PRDM9, HELLS was the first in the list of proteins identified by mass spectrometry and ranked by peptide abundance. We did not detect HELLS peptides in IP experiments from HeLa S3 cells without the PRDM9-expressing vector. The PRDM9 and HELLS peptide counts, and protein coverages are shown in Table 1 (see Supplementary file 1 for the full list of proteins). We did not perform any other analysis or quantification of the proteome present in these samples for this study.
 
@@ -47,7 +211,15 @@ As HELLS is expressed in gonads and is essential for gametogenesis (De La Fuente
 
 As a complementary approach to proteomics, we searched for PRDM9 partners by yeast two-hybrid screening. Using mouse PRDM9 without zinc fingers as bait and a mouse juvenile testis cDNA bank, we identified six clones that corresponded to HELLS, indicating a direct interaction between PRDM9 and HELLS. All six clones shared a domain that included residues 30 to 448 of HELLS (Figure 1). To better map the HELLS region involved in the interaction with PRDM9, we generated different HELLS constructs and found that the C-terminal region (569-821) of HELLS was dispensable for this interaction (Figure 1B). We could not detect any interaction with PRDM9 upon deletions at the N-terminus or C-terminus of the 1–569 region, such as in the HELLS constructs 193–569 and 1–408, respectively. This suggests the potential involvement of the N-terminal (1-193) and of the central (408-569) regions of HELLS in the interaction with PRDM9 (Figure 1B and Figure 1—figure supplement 1).
 
-## HELLS is required for PRDM9-dependent meiotic DSB formation
+![Figure 1.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domains of PRDM9 and HELLS PRDM9 includes a Krüppel-associated box domain (KRAB), a synovial sarcoma-X break point-repression domain (SSXRD), a Su(var)3–9, Polycomb-group protein enhancer of zeste and trithorax-group protein TRX domain (PR/SET) that is preceded and followed by zinc-finger domains (ZK and ZF, respectively), and a C2H2-type zinc-finger array (C2H2 ZF array). HELLS contains a coiled-coil domain, a helicase ATPase domain, and a helicase C-terminal domain. (B) Interaction between PRDM9 and HELLS by yeast two-hybrid assays. Full-length and four fragments of mouse HELLS were used to test for interaction with mouse PRDM9 (full length). HELLS domains were fused to the Gal4 activation domain (GAD), and PRDM9 was fused to the Gal4 DNA-binding domain (GBD). A positive interaction was detected for full-length HELLS and fragment 1–569. Growth was tested on medium without leucine and tryptophan (LW), without leucine, tryptophan and histidine (LWH), and without leucine, tryptophan and histidine with 5 mM amino-triazole (LWH + 5 mM AT). A diploid strain that expresses pGAD-REC114 and pGBD-MEI4 (Kumar et al., 2010) was used as positive control. The HELLS region of the cDNAs isolated by yeast two-hybrid screening is shown. Controls are shown in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Negative controls for the different mouse HELLS domains analyzed by yeast two-hybrid assays. Growth of diploid strains that express the indicated HELLS construct or the empty GBT9 vector were tested on medium without leucine and tryptophan (LW) and on medium without leucine, tryptophan and histidine with 5 mM amino-triazole (LWH + 5 mM AT). Positive control was a diploid strain that expresses pGAD-REC114 and pGBD-MEI4. (B) Western blot analysis of the GAD-HELLS and GBD-PRDM9 fusion proteins expressed in the various diploid strains used in the yeast two-hybrid assays. Blots were probed with anti-GAD, anti-GBD, or anti-tubulin (internal control) antibodies, as indicated.
+
+### HELLS is required for PRDM9-dependent meiotic DSB formation
 
 To evaluate the functional role of HELLS in meiotic recombination, we generated a mouse line in which Hells was conditionally ablated only during male meiosis by meiotic-specific expression of CRE under the control of the Stra8 promoter on a transgene (Sadate-Ngatchou et al., 2008) (Hells cKO) (Figure 2—figure supplement 1), because HELLS is essential for mouse development (Geiman et al., 2001). A previous study where HELLS-deficient testes were analyzed by allografting embryonic tissues showed that HELLS is required for meiotic progression during spermatogenesis (Zeng et al., 2011). A potential interpretation for this meiotic defect was that alterations of DNA methylation in the absence of HELLS may affect, directly or indirectly, some properties of meiotic prophase and synapsis between homologous chromosomes (Zeng et al., 2011). This phenotype shares some similarity with the defects observed in Hells KO oocytes (defects in meiotic recombination and homologous synapsis, and changes in DNA methylation at repetitive DNA elements and pericentric heterochromatin) (De La Fuente et al., 2006).
 
@@ -55,21 +227,69 @@ Therefore, to test whether HELLS is directly implicated in meiotic recombination
 
 Western blot analysis of wild-type mouse testis whole cell extracts showed that HELLS protein could be detected from 4 days post-partum (dpp) to 15 dpp and in adults. PRDM9 was detected from nine dpp when cells have entered meiosis, but not at 4 and 6 dpp before meiosis entry (Figure 2—figure supplement 2). In testis nuclear extracts from 22 dpp Hells cKO animals, HELLS level was greatly reduced (Figure 2A), but not the nuclear PRDM9 protein level. The residual HELLS protein expression in testis nuclear extracts from Hells cKO mice might be due to incomplete CRE-induced deletion of Hells in some spermatocytes, as suggested by the cytological analysis presented below. We analyzed HELLS staining by immunofluorescence on spread spermatocytes of adult Hells CTRL and Hells cKO mice (Figure 2B). In Hells CTRL nuclei, we could detect HELLS as punctuate staining that covered nuclear chromatin, with the highest intensity at leptotene and zygotene and absence of specific staining at later stages (Figure 2—figure supplement 3). In Hells cKO nuclei, we did not detect HELLS staining in 75% of leptotene and zygotene nuclei, but could observe a weak HELLS staining in about 25% of nuclei (not shown). Thus, in some Hells cKO spermatocytes, HELLS expression was not completely abolished, and the protein was still present in the nucleus. Histological analysis of Hells cKO mice revealed spermatogenesis defects with 89% of tubules without haploid cells (Figure 2C,D), suggesting an arrest of spermatocyte differentiation. The presence of 11% of tubules with some haploid cells might be explained by incomplete HELLS depletion in some spermatocytes. Moreover, the percentage of tubules with one or more TUNEL-positive cells was increased, indicative of apoptotic cells undergoing massive genomic DNA breakage (Figure 2E and Figure 2—figure supplement 4).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig2-v2.jpg)
+
+**Figure 2.:** (A) Detection of PRDM9, HELLS and SYCP3 expression in nuclear fractions of testes from Hells CTRL (Hellsfl/+ and Hellsfl/-) and Hells cKO mice at 22 dpp. Hells alleles are presented in Figure 2—figure supplement 1. HELLS and PRDM9 expression are presented in Figure 2—figure supplement 2. (B) Representative spreads of early zygotene spermatocyte nuclei from synchronized testes from Hells CTRL and Hells cKO mice after staining for DNA (DAPI, white or blue), SYCP3 (white or red) and HELLS (white or green) (top panels) or PRDM9 (white or green) (bottom panels). Anti-HELLS antibody from rabbit was used for these staining. Scale bar, 10 μm. HELLS and PRDM9 detection kinetics are presented in Figure 2—figure supplements 3 and 5. (C) Periodic acid-Schiff (PAS) staining of testis sections from 40 dpp Hells CTRL and Hells cKO mice. To visualize the glycoproteins/acrosomes (violet) and nuclei (blue), testis sections were stained with PAS and counterstained with hematoxylin. Hells CTRL testis sections (left panel) show normal spermatogenesis with well-organized stages of germ cell development, round spermatids with PAS-positive normal acrosomal caps, elongating and elongated spermatids. Hells cKO testis sections (right panel) show defective spermatogenesis with only few elongated spermatids (black arrow). Scale bar, 50 μm. (D) Proportions of seminiferous tubules without and with spermatids (mean ± SD) in testis sections from Hells CTRL and Hells cKO mice at 40 dpp. n = 4 testis sections from two mice. Data are available in Figure 2—source data 1. (E) Apoptosis detected by TUNEL assay in Hells CTRL and Hells cKO testes at 40 dpp. n = 2 testis sections from one mouse. TUNEL-positive cells are shown in Figure 2—figure supplement 4. Data are available in Figure 2—source data 1. (F) SYCP3 (red) and SYCP1 (green) staining of pachytene (Hells CTRL) and pachytene-like (Hells cKO) spermatocyte nuclei from 40 dpp mice. Arrowheads, unsynapsed chromosomes. White arrow, non-homologous synapsis. Blue arrows, sex chromosomes. Scale bar, 10 μm. (G) Representative spreads of early zygotene and pachytene or pachytene-like spermatocyte nuclei from 40 dpp Hells CTRL and Hells cKO mice, respectively, after staining for SYCP3 (white or red), DMC1 (white or green) and γH2AFX (white or blue). Scale bar, 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic diagram of the Hells alleles used in this study. (B) Schematic diagram (top) and predicted sequence (bottom) of wild-type (from WT or floxed allele) and mutant (KO) HELLS proteins.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Testis extracts from RJ2 mice at the indicated days post-partum (dpp) and from adult were analyzed by western blotting. The same amount of extracts was loaded in parallel on two different gels. One membrane (left) was probed with anti-PRDM9 and anti-tubulin α antibodies, the other membrane (right) with an anti-HELLS antibody. The star on the right panel indicates non-specific bands.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) And Hells cKO (B) Mice after staining for DNA (DAPI, white), SYCP3(white or blue), and HELLS using a rabbit (white or green) and a mouse (white or red) antibody. Scale bar, 10 μm. Both rabbit and mouse anti-HELLS antibodies display a nucleus-wide, punctate staining in leptotene and zygotene stages, attributable to HELLS. In addition to this specific signal, both antibodies showed also a different non-specific signal. The mouse antibody showed a colocalization with SYCP3 at every stage, that was not seen with the rabbit antibody and is therefore most likely not attributable to HELLS. The rabbit antibody showed a nucleus-wide staining in late pachytene and diplotene stage nuclei, not seen with the mouse antibody, likely due to cross-reaction.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Sections from 40dpp Hells CTRL and Hells cKO mice were stained for DNA (DAPI, purple) and TUNEL (green). Asterisks mark tubules containing round spermatids. Scale bar, 10 μm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Representative spreads of spermatocyte nuclei from Hells CTRL (A) and Hells cKO (B) mice after staining for DNA (DAPI, white), SYCP3 (white or blue), PRDM9 (white or green) and HELLS (white or red). Scale bar, 10 μm. In addition to bona fides HELLS staining, the mouse anti-HELLS antibody displays additional, non-specific staining marking the chromosome axes, as described in the legend to Figure 2—figure supplement 3.
+
 By immunostaining of spread spermatocytes, we showed that in Hells cKO mice, spermatocytes entered meiotic prophase and progressed until a pachytene-like stage with chromosomes only partially synapsed in most nuclei, whereas some nuclei had fully synapsed chromosomes (Figure 2F), consistent with previous observations on Hells-deficient spermatocytes (Zeng et al., 2011). We detected chromosome axes by the presence of the axial protein SYCP3, and synapses by the presence of the central element protein SYCP1. Ninety three percent of Hells CTRL nuclei that showed full-length axes were at the pachytene stage with 19 fully synapsed autosomes and a γH2AFX-positive chromatin domain containing the X and Y-chromosomes, called sex body. In contrast, only 13% of Hells cKO nuclei with full-length axes were similar to wild-type looking pachytene nuclei. This population of wild-type pachytene nuclei in Hells cKO mice could be due to incomplete depletion of HELLS in some spermatocytes, as discussed above.
 
 Interestingly, in most Hells cKO spermatocytes, despite the normal level of nuclear PRDM9 detected by western blotting (Figure 2A), the PRDM9 signal detected by immunostaining was much reduced compared with wild-type (Figure 2B, Figure 2—figure supplement 5). As in nuclear spreads proteins that are not tightly bound to chromatin can be partially lost, this low PRDM9 signal in Hells cKO samples could indicate that in the absence of HELLS, PRDM9 localizes in the nucleus, but does not bind to chromatin efficiently. Overall, the DSB activity did not seem to be affected because we detected a large number of DMC1 foci. Conversely, DSB repair appeared to be defective, as indicated by the persistence of DMC1 and γH2AFX foci, and the absence of a normal XY sex body at the pachytene-like stage (Figure 2G).
 
 To directly test DSB activity and localization in the absence of HELLS, we performed chromatin IP with an anti-DMC1 antibody followed by single-strand DNA sequencing (DMC1 ChIP-SSDS). DMC1 ChIP-SSDS allows recovering single-strand DNA bound by the strand exchange protein DMC1 (Khil et al., 2012). We performed these experiments in two wild-type (Hells CTRL) and two Hells cKO mice. Both wild-type and mutant mice express the PRDM9Dom2 variant that binds to a specific set of genomic sites and promotes DSB formation at those sites (Brick et al., 2012; Grey et al., 2017). We detected 11133 and 17117 peaks of DMC1 enrichment in the Hells CTRL and Hells cKO samples, respectively. This indicated the presence of DSB activity in both genetic contexts, as observed by immunofluorescence. However, only 1129 peaks were common, representing 10% of Hells CTRL peaks, and 6.6% of Hells cKO peaks (Figure 3A, Figure 3—figure supplement 1). Analysis of the signal intensity in the genotype-specific peaks (Hells CTRL -specific and Hells cKO-specific) showed the absence of detectable signal in one genotype within peaks specific to the other genotype (Figure 3B). In the 1129 common peaks, the average DMC1 enrichment intensity was higher in Hells CTRL than in Hells cKO samples (Figure 3B). Among these common peaks, analysis of individual peak intensities revealed three subgroups, one subgroup with stronger intensity in Hells CTRL (n = 898 peaks), one subgroup with stronger intensity in Hells cKO (n = 154 peaks), and a smaller subgroup (n = 77 peaks) where the peak intensity was similar in both genotypes (Figure 3—figure supplement 2A). The group of 898 peaks with stronger intensity in Hells CTRL corresponded to DSB sites specified by PRDM9Dom2. Indeed, an enrichment for H3K4me3 at these sites was observed specifically in the B6 strain that expresses PRDM9Dom2, but not in the congenic RJ2 strain that expresses PRDM9Cst, which binds to distinct genomic sites (Figure 3—figure supplement 2B). This suggests that these 898 peaks with stronger DMC1 intensity (in the cell population) in Hells CTRL may have a lower DSB level in Hells cKO, or may be active only in a smaller cell fraction in Hells cKO mice. We favor the second hypothesis, because our cytological analyses showed that HELLS is still detected in a small fraction of Hells cKO spermatocytes. The group of 154 peaks with higher DMC1 enrichment in Hells cKO were in regions with PRDM9-independent H3K4me3 enrichment (Figure 3—figure supplement 2B), suggesting a specific induction of DSB activity at these sites in the absence of HELLS. The group of 77 peaks with similar DMC1 intensity in Hells CTRL and Hells cKO showed a weak PRDM9-independent H3K4me3 enrichment. A low level of DSB activity at PRDM9-independent sites has been detected in mice that express PRDM9, and could account for these peaks (Smagulova et al., 2016).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig3-v2.jpg)
+
+**Figure 3.:** (A) Limited overlapping between DSB hotspots from Hells CTRL and Hells cKO testis samples. Only hotspot centers (DMC1-SSDS peaks) that overlapped within a 400bp-window were considered as common. The others were considered as Hells CTRL- or Hells cKO-specific hotspots. Controls are shown in Figure 3—figure supplement 1. (B) Distribution of the DMC1-SSDS signal from Hells CTRL and Hells cKO testis samples around Hells CTRL, Hells cKO and common hotspots (as defined in (A)). The heatmaps show the DMC1-SSDS normalized fragments per million, calculated in a −5 kb to +5 kb window around hotspot centers and averaged within 10bp-bins. For the Hells CTRL - or Hells cKO-specific hotspots, the sites on the heatmaps were ranked by decreasing DMC1 intensity (from top to bottom) in the genotype where the peaks were detected. For the common hotspots, the sites were ranked by decreasing DMC1 intensity (from top to bottom) in Hells CTRL mice. The averaged profiles represent the mean DMC1-SSDS signal for each group. The analysis of common hotspots is shown in Figure 3—figure supplement 2. (C) Wide overlapping of DSB hotspots from Hells cKO and Prdm9 KO testis samples. Hotspot (DMC1-SSDS peaks) centers that overlapped within a 400bp-window were considered as common. The others were considered to be Hells cKO- or Prdm9 KO-specific hotspots. Prdm9 KO data were from GSE99921 (Brick et al., 2012). (D) The DMC1-SSDS signal in Prdm9 KO testis samples is either Prdm9 KO-specific (i.e. not overlapping) or overlapping with Hells cKO-specific hotspots (as defined in (C)). Density of hotspot number is plotted as a function of the DMC1 signal in Prdm9 KO mice, expressed as FPMtype1 (type1-single-strand DNA fragments Per Million of mapped reads, see Materials and methods and Khil et al., 2012 for details). (E) DSB maps for Hells CTRL (blue) and Hells cKO (orange) testis samples (this study, two replicates for each genotype) and Prdm9 KO testis samples (black, GSE99921; Brick et al., 2012) at a representative region of chromosome 1 (185.1Mb-185.5Mb). (F) Enrichment of PRDM9 and H3K4me3 is reduced at hotspots in Hells cKO compared with Hells CTRL samples. PRDM9 and H3K4me3 ChIP/Input ratios were calculated at several B6 (PRDM9Dom2)-specific hotspots (Pbx1a, 14a, A3, 17b), at the Sycp1 promoter (only for H3K4me3), and at two control regions that contain PRDM9Cst-specific hotspots (Psmb9.8 and Hlx1.6). All ratios were normalized to the ratios at Hlx1.6. At the four B6-specific hotspots, the difference between Hells cKO and Hells CTRL was statistically significant (two-tailed Mann-Whitney, p=0.0002). Data are available in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The DSB map obtained using Hells CTRL testis samples reproduces the DSB map obtained using B6 testis samples. Hotspot (DMC1 ChIP-SSDS peaks) centers that overlapped within a 400bp-window were considered as common. The others were unique to Hells CTRL or B6. (B) Comparison of the DMC1 ChIP-SSDS signal distribution in Hells CTRL replicates. (C) Comparison of the DMC1 ChIP-SSDS signal distribution in Hells cKO replicates. (B–C) The red dotted line represents the x = y. The gray scale represents the density calculated with the density2d function from R. The correlation coefficient r is indicated with the significance level (p).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Comparison of the DMC1 ChIP-SSDS signals in Hells CTRL and Hells cKO samples at the common hotspots (n = 1129), defined in Figure 3A. Three groups were identified: (i) hotspots in which the signal was stronger in Hells CTRL than in Hells cKO (log2(Hells CTRL/Hells cKO)>1) (blue dots) (n = 898 peaks); (ii) hotspots in which the signal was stronger in Hells cKO than in Hells CTRL (log2(Hells CTRL/Hells cKO)<-1) (green dots) (n = 154 peaks); and (iii) hotspots with comparable signal intensity in both genotypes (−1 < log2(Hells CTRL/Hells cKO)<1) (black dots) (n = 77 peaks). The black dotted line represents x = y. (B) H3K4me3 signal distribution in testis samples from the B6 (blue) and RJ2 (red) strains (GSE93955, Grey et al., 2017) around the three categories of common hotspots, as defined in (A). B6 carries a Dom2 allele of Prdm9 (like Hells CTRL and Hells cKO), whereas RJ2 carries the Cast allele. The heatmaps show a PRDM9-dependent H3K4me3 signal at the common hotspots with stronger signal in Hells CTRL (blue group from (A)), but not at the others.
+
 To better understand the low overlap of DMC1 peaks in Hells CTRL and Hells cKO mice, we compared the Hells cKO peaks with those mapped in Prdm9 KO mice. When PRDM9 is defective (such as in Prdm9 KO mice) DSBs are formed at a different set of genomic sites, also called default sites. These sites overlap mainly with promoters and enhancers and are enriched in H3K4me3 (Brick et al., 2012). Remarkably, 85% of Hells cKO peaks overlapped with peaks detected in Prdm9 KO mice (Figure 3C and E). This demonstrated that in the absence of HELLS, DSBs are no longer formed at PRDM9 sites, but are induced at default sites, similarly to what observed in Prdm9 KO mice (Figure 3E). The lower number of peaks detected in Hells cKO samples (17117) compared with Prdm9 KO mice (27732) could be due to a lower signal in Hells cKO samples. We hypothesized that mainly low intensity peaks in Prdm9 KO mice should be undetectable in Hells cKO mice, and mainly high intensity peaks in Prdm9 KO should be detected in Hells cKO mice, thus contributing to the population of the 14543 overlapping peaks. Indeed, among the peaks mapped in Prdm9 KO samples, the peaks that were identified as overlapping with Hells cKO peaks were biased toward higher intensity compared with non-overlapping peaks (Figure 3D). The lower signal detected in Hells cKO could be explained by a difference in the sensitivity of the current ChIP-SSDS experiment and/or by a difference in DSB activity.
 
 PRDM9-dependent DSB sites are characterized by several features that are implemented independently of DSB formation: PRDM9 binding, and enrichment for H3K4me3, H3K36me3 and H3K9ac on adjacent nucleosomes (Buard et al., 2009; Davies et al., 2016; Grey et al., 2017; Lam et al., 2019; Powers et al., 2016; Spruce et al., 2020). To identify the step of PRDM9-dependent DSB site designation affected by the absence of HELLS, we tested by ChIP-qPCR, PRDM9 binding and H3K4me3 levels at four representative PRDM9Dom2 binding sites (Pbx1a, A3, 14a, 17b) that were used as reference in previous studies (Billings et al., 2013; Diagouraga et al., 2018). Enrichment for PRDM9 and for H3K4me3 were strongly reduced (at least by four-fold) at all four sites in Hells cKO spermatocytes compared with Hells CTRL cells (Figure 3F). This indicates that HELLS is required for efficient PRDM9 binding to its sites, consistent with the strong reduction in PRDM9 signal detected by immunofluorescence (Figure 2B). Moreover, this result provides a molecular interpretation for the absence of DSB activity at PRDM9-binding sites in Hells cKO spermatocytes.
 
-## HELLS and PRDM9 are required for 5hmC enrichment at meiotic hotspots
+### HELLS and PRDM9 are required for 5hmC enrichment at meiotic hotspots
 
 Recently, it was shown that HELLS interacts with all three TET methylcytosine dioxygenases (de Dieuleveult et al., 2020; Jia et al., 2017). Upon oxidation, the activity of TET enzymes on methylated cytosines (5mC) leads to a first product, 5-hydroxymethylcytosine (5hmC). It has been proposed that 5mC conversion to 5hmC allows regulating 5mC levels for proper gene expression (reviewed in Williams et al., 2012). Unlike 5mC, 5hmC is globally associated with euchromatin and is depleted on heterochromatin in somatic cells (Ficz et al., 2011). Interestingly, in mouse male germ cells, 5hmC is enriched at some enhancers and promoters (Gan et al., 2013; Hammoud et al., 2014), and at meiotic DSB hotspots in pachytene spermatocytes (Brick et al., 2018).
 
 To test whether 5hmC enrichment was correlated with the DNA-binding specificity of PRDM9, we took advantage of two congenic mouse strains (B6 and RJ2) that express PRDM9 variants with distinct DNA-binding specificities (PRDM9Dom2 and PRDM9Cst, respectively). In both strains, the sites of PRDM9 binding and activity have been mapped, and localize to distinct sets of genomic sites (Grey et al., 2017). As the mapping of PRDM9-dependent DSB hotspots can be done with different molecular approaches (ChIP with anti-PRDM9, -H3K4me3, or -DMC1 antibodies), we used the DMC1 ChIP-SSDS data that provide the optimal specificity and sensitivity, as reference for hotspots (Grey et al., 2017). We performed the 5hmC analysis using genomic DNA isolated from 95% pure leptotene/zygotene cell populations (see Methods). In both B6 and RJ2 mouse strains, the 5hmC signal was correlated with DMC1 enrichment (Figure 4A and B), demonstrating that 5hmC enrichment depends on PRDM9 binding to its genomic targets.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig4-v2.jpg)
+
+**Figure 4.:** (A) Average read enrichment and heatmaps showing 5hmC enrichment in the B6 (blue) and RJ2 (red) strains. Signal was calculated in a +/- 2 kb window around hotspot centers (determined by DMC1-SSDS). 5hmC enrichment was calculated from pooled replicates within 50bp bins and normalized by reads per million (RPM) and input. The sites on the heatmaps are ranked by decreasing DMC1-SSDS signal intensity from top to bottom. (B) Read distribution from DMC1 and 5hmC ChIP-seq experiments in the B6 (blue) and RJ2 (red) strains at representative DMC1 PRDM9Dom2 (B6) and PRDM9Cst (RJ2) specific sites on chromosome 1. Read distribution was calculated from pooled replicates within 50bp bins and normalized by library size and input, except for the DMC1 ChIP experiments. (C) Average read enrichment showing 5hmC enrichment (left y axis) and PRDM9 read enrichment (right y axis) in the B6 (blue) and RJ2 (red) strains centered in a +/- 2 kb window around DMC1 B6 and DMC1 RJ2 sites, respectively. Read distribution was calculated from pooled replicates within 50bp bins and normalized by library size and input. (D) 5hmC signal at hotspots is HELLS-dependent. Average read enrichment showing 5hmC in the B6 (blue) and Hells cKO (orange) strains centered in a +/- 2 kb window around the hotspot centers (DMC1-SSDS B6 sites). 5hmC enrichment was calculated from pooled replicates within 50bp bins and normalized by read per million (RPM) and input. (E) 5hmC signal at hotspots is dependent on PRDM9 methyltransferase activity. Average read enrichment showing 5hmC in the B6 (blue), RJ2 (red) and B6-Tg(YF)(magenta) strains centered in a +/- 2 kb window around the hotspot centers (DMC1-SSDS B6 and RJ2 sites). 5hmC enrichment was calculated from pooled replicates within 50bp bins and normalized by read per million (RPM) and input. (F) 5hmC signal at hotspots is independent of DSB formation. Average read enrichment showing 5hmC enrichment in the B6 (blue) and Spo11 KO (green) strain centered in a +/- 2 kb window around the hotspot centers (DMC1-SSDS B6 sites). 5hmC enrichment was calculated form pooled replicates within 50bp bins and normalized by read per million (RPM) and input. The duplicate analysis for all genotypes is shown in Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Average read enrichment and heatmaps showing 5hmC enrichment in B6 (blue) and RJ2 (red) strains centered in a +/- 2 kb window around the PRDM9 B6 and RJ2 sites, respectively. 5hmC enrichment was calculated from pooled replicates within 50 bp bins and normalized by read per million and input. The sites on the heatmaps are ranked by decreasing PRDM9 signal intensity from top to bottom. (B) Average read enrichment showing 5hmC enrichment (left y axis) and H3K4me3 or DMC1 read enrichment (right y axis) in the B6 (blue) and RJ2 (red) strains centered in a +/- 2 kb window around the DMC1 B6 and DMC1 RJ2 sites, respectively. Read distribution was calculated from pooled replicates within 50 bp bins, and normalized by library size and input, except for the DMC1 ChIP experiments. (C) Top panels: Scatter plots of 5hmC enrichment versus PRDM9 and H3K4me3 enrichment in the B6 (blue) and RJ2 (red) strain at the DMC1 B6 and DMC1 RJ2 sites, respectively (only sites featuring the strongest 5hmC signals, containing at least 6 CpGs in a window within +/- 250 bp around hotspots were considered, see Figure 5 and Materials and methods). Read enrichment was calculated in a window within +/- 250 bp around hotspots (DMC1-SSDS) normalized by library size and input. Bottom panels: Scatter plot of 5hmC read enrichment versus SPO11-oligos peak strength (data available only for B6; Lange et al., 2016) and DMC1 peak strength. Rho is the Spearman correlation coefficient.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Reproducibility of 5hmC enrichment in B6, RJ2, Hells cKO, B6-Tg(YF), and Spo11 KO samples. Scatter plots of 5hmC read enrichment (RPM) in replicate 1 versus replicate 2. Blue: B6, Red: RJ2, Orange: Hells cKO, Purple: B6-Tg(YF), Green: Spo11 KO. Read enrichment was calculated in a +/- 250 bp window around the center of DMC1 sites normalized by library size and input. 5hmC enrichment was calculated at DMC1 B6 sites for the B6, Hells cKO and Spo11 KO strains, and at DMC1 RJ2 sites for the RJ2 strain.
 
 The heatmaps of 5hmC enrichment at DMC1 sites revealed a correlation between the strength of the DMC1 hotspots and that of 5hmC (Figure 4A). We obtained similar results when the heatmaps were generated based on sites defined by PRDM9 ChIP (Figure 4—figure supplement 1A). We also noted that the mean 5hmC signal at hotspots was higher in RJ2 than in B6 samples (Figure 4A, Figure 4—figure supplement 1A). This correlated with the greater occupancy of the PRDM9Cst variant (expressed in RJ2 mice) compared with the PRDM9Dom2 variant (expressed in B6 mice) (Grey et al., 2017). The 5hmC enrichment analysis and specifically the average enrichment plots showed a narrow distribution of the 5hmC enrichment that extended about +/- 250 bp from the peak center and overlapped closely with the enrichment profile of PRDM9 (Figure 4C). Peak centers were defined based on the DMC1 ChIP-SSDS signal and have been previously shown to overlap with PRDM9 DNA-binding motifs (Smagulova et al., 2011). However, 5hmC distribution was narrower than DMC1 distribution, which extends to the single-stranded DNA generated upon DSB end processing (Figure 4—figure supplement 1B). Moreover, the 5hmC maximum intensity was between the H3K4me3 peaks that delineate the positioned nucleosomes flanking the PRDM9 -binding sites (Baker et al., 2014; Figure 4—figure supplement 1B). Thus, 5hmC was predominantly taking place in the nucleosome-depleted region at and around PRDM9-binding sites.
 
@@ -81,9 +301,17 @@ As 5hmC level at hotspots may depend on the density of CpG dinucleotides and of 
 
 We then evaluated the correlation between CpG content and 5hmC enrichment, by clustering hotspots according to their number of CpG dinucleotides within a region of +/- 250 bp around the center. We defined four groups of sites: (i) no CpG, (ii) 1–2 CpG, (iii) 3–5 CpG, and (iv)≥6 CpG dinucleotides. The average plots revealed that sites with higher numbers of CpGs tended to have higher 5hmC enrichment, in agreement with the fact that CpGs are the substrates for this modification (Figure 5A–B, Figure 5—figure supplement 1C). In contrast, the number of CpGs was not correlated with hotspot activity. This is shown by the overlapping curves of average plots for the four groups of CpG content of PRDM9, H3K4me3, and DMC1 enrichment (Figure 5—figure supplement 1D). Heatmaps within each group of hotspots with similar numbers of CpGs revealed also that for a given CpG content, the 5hmC level correlated with the PRDM9, H3K4me3, and DMC1 site intensity (Figure 5—figure supplement 1D), an observation coherent with the functional dependency on PRDM9 binding and methyltransferase activity reported above.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig5-v2.jpg)
+
+**Figure 5.:** (A) Average read enrichment and heatmaps showing 5hmC enrichment at DMC1-SSDS B6 sites. (B) Average read enrichment and heatmaps showing 5hmC enrichment at DMC1-SSDS RJ2 sites. In both panels, the signal was calculated in the B6 (blue) and RJ2 (red) strain in a +/- 2 kb window around the hotspot centers (determined by DMC1-SSDS) and sorted by CpG content with hotspots clustered in four groups: hotspots without CpGs, and three groups of similar size containing increasing numbers of CpGs (1–2, 3–5, and at least 6 CpGs). The number of sites for each group is indicated in the Methods section. For a given CpG content, the sites are ranked by decreasing DMC1-SSDS signal intensity from top to bottom. CpG content was calculated in a +/- 250 bp window around the hotspot centers. The same analysis but at PRDM9 sites is shown in Figure 5—figure supplement 1C. (C) Model for the targeting of DSB activity by PRDM9/HELLS in mouse male meiosis. (a) A potential PRDM9-binding site is a specific DNA motif in a region of chromatin with no specific feature. For each nucleosome, only two histone tails (H3) are shown. (b) The zinc-finger domain of PRDM9 (ZnF) interacts with specific DNA motifs. PRDM9 may be interacting as a complex with HELLS before binding to its target sites as suggested by Spruce et al., 2020. (c) HELLS promotes chromatin remodeling, enhancing accessibility of PRDM9 to its DNA motif and a stable interaction. (d) PRDM9 methyltransferase catalyzes H3K4me3 and H3K36me3 on adjacent nucleosomes. These histone modifications may or not be symmetric (Lange et al., 2016). H3K9Ac is also known to be enriched near PRDM9 -binding site at this stage (not shown). (e) Putative methylated cytosines (5mC) near the PRDM9-binding site are converted to 5hmC, suggesting the recruitment of a TET enzyme. (f) DSB forms at or adjacent to the PRDM9-binding site.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57117/elife-57117-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Average plot of CpG content in 100bp bins centered in a +/- 2 kb window around the DMC1 B6 and DMC1 RJ2 sites. (B) Boxplot of cytosine methylation level in the B6 mouse strain at different genomic sites. Boxes show the interquartile range (IQR; the middle 50% of scores) extending from the lower quartile (Q1; 25% of scores fall below this value) to the upper quartile (Q3; 25% of scores fall above this value). Black horizontal lines within boxes show median values. Upper and lower whiskers represent scores outside of IQR. Maximum and minimum scores show highest or lowest scores excluding outliers. DSB sites (B6 (PRDM9Dom2): blue, and RJ (PRDM9Cast): red), LINE (dark gray), IAP (gray), male imprinted control regions (light blue), female imprinted control regions (pink). Genome average (white). Only regions containing at least one CpG and one informative read were considered. (C) Average read enrichment and heatmaps showing 5hmC enrichment in the B6 (blue) and RJ2 (red) strains centered in a +/- 2 kb window around the PRDM9 B6 and RJ2 sites sorted by CpG content. CpG content was calculated within a window of +/- 250bp from the center of the PRDM9 sites. For a given CpG content, the sites on the heatmaps are ranked by decreasing PRDM9 signal intensity from top to bottom. (D) Average plots and heat maps of 5hmC, PRDM9, H3K4me3, H3K36me3 and DMC1 centered in a +/- 2 kb window around DMC1 B6 sites, sorted by CpG content. For a given CpG content, the sites on the heatmaps are ranked by decreasing PRDM9, H3K4me3, H3K36me3 and DMC1 signal intensity, from top to bottom.
+
 ## Discussion
 
-## A chromatin remodeler for PRDM9 binding
+### A chromatin remodeler for PRDM9 binding
 
 In 2010, the discovery that PRDM9 is the factor directing the location of meiotic DSBs in mammals raised several questions about the underlying molecular process. One of them was how the zinc- finger domain of PRDM9 gains access to its DNA-binding motifs. These DNA sites have no other reported function than being bound by PRDM9, and this occurs specifically in meiotic cells where Prdm9 is expressed. These sites are located throughout the genome, in genic and intergenic regions, and they do not appear to have any intrinsic feature beyond their DNA sequence. The only identified landmark is their higher GC content relative to their flanking regions that appears progressively over generations due to the process of GC-biased gene conversion during meiotic DSB repair at these sites (Clément and Arndt, 2013; Grey et al., 2017). Moreover, PRDM9-binding sites can differ between mouse strains because the PRDM9 DNA-binding domain is highly mutable, and multiple variants with distinct DNA-binding specificity are present in Mus musculus (Buard et al., 2014; Kono et al., 2014; Vara et al., 2019).
 
@@ -95,7 +323,7 @@ Could HELLS have additional role(s) beyond promoting PRDM9 binding? As observed 
 
 In other cellular contexts, HELLS is a major regulator of DNA methylation, specifically for the silencing of repeated DNA elements, and through the recruitment of the DNA methyltransferase DNMT3B (Myant and Stancheva, 2008; Zhu et al., 2006). This has an impact on DNA methylation genome-wide (Ren et al., 2019; Yu et al., 2014a). Besides altering epigenetic features and the expression of transposable elements (TE), HELLS absence in mouse tissues (brain and liver) and in fibroblasts has very limited consequences on gene expression (Huang et al., 2004; Yu et al., 2014b). In Hells KO mouse oocytes, the DNA methylation level of some TE families is reduced and their expression is increased; however, the expression of several meiotic genes is not affected (De La Fuente et al., 2006). The consequences of Hells deficiency on DNA methylation and expression have not been tested in spermatocytes. However, in the absence of HELLS, major epigenomic alterations in non-repeated DNA are not expected during meiosis, and consistently, H3K4me3 level at promoters is not altered in Hells cKO spermatocytes (Spruce et al., 2020).
 
-## The implication of 5-hydroxymethylcytosine at meiotic DSB sites
+### The implication of 5-hydroxymethylcytosine at meiotic DSB sites
 
 The presence of 5hmC at DSB hotspots was first reported by Brick and colleagues (Brick et al., 2018) using genome-wide data on cytosine methylation and hydroxyl-methylation patterns in mouse spermatocytes, mainly at the pachytene stage (Hammoud et al., 2014). Here, we found that this DNA modification is also present at hotspots earlier in meiosis, at leptotene-zygotene stages, when DSB formation takes place. By assessing 5hmC in mouse strains that carry different Prdm9 alleles (Prdm9Dom2 and Prdm9Cst), we found that 5hmC deposition depends on PRDM9 DNA-binding specificity. Moreover, we detected 5hmC enrichment in a narrow window of about +/- 250bp around the center of PRDM9-binding sites. Remarkably, PRDM9 binding is not sufficient and PRDM9 methyltransferase activity also is required for 5hmC enrichment. As we showed that 5hmC presence at hotspots does not require SPO11, we propose that 5hmC is promoted by a PRDM9-dependent chromatin modification step before DSB formation (Figure 5C). Therefore, 5hmC is a new feature of the local signature of active hotspots, like the histone modifications H3K4me3, H3K4me36 and H3K9ac (Buard et al., 2009; Davies et al., 2016; Grey et al., 2017; Lam et al., 2019; Powers et al., 2016).
 
@@ -107,29 +335,484 @@ The control of initiation sites of meiotic recombination by PRDM9 underlies a so
 
 ## Materials and methods
 
-## Mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Mouse strains</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C57BL/6JOlaHsd</td>
+      <td>Envigo</td>
+      <td>C57BL/6JOlaHsd</td>
+      <td colspan="2">Named B6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>B10.MOLSGR(A)-(D17Mit58-D17Jcs11)/Bdm (RJ2)</td>
+      <td>Grey et al., 2009</td>
+      <td>MGI:5319075</td>
+      <td colspan="2">Named RJ2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>B6;129P2 &lt; Prdm9tm1Ymat&gt;/J</td>
+      <td>Hayashi et al., 2005</td>
+      <td>MGI:3624989</td>
+      <td colspan="2">Named Prdm9 KO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Spo11 &lt; tm1Mjn&gt;</td>
+      <td>Baudat et al., 2000</td>
+      <td>MGI:2178805</td>
+      <td colspan="2">Named Spo11 KO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hells &lt; tm1a(EUCOMM)Wtsi/Ieg&gt;</td>
+      <td>EUCOM Bradley et al., 2012</td>
+      <td>MGI:4431905</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C57BL/6 Tg(CAG-Flpo)1Afst</td>
+      <td>Kranz et al., 2010</td>
+      <td>MGI:4453967</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C57BL/6 Tg(CMV-cre)1Cgn</td>
+      <td>Schwenk et al., 1995</td>
+      <td>MGI:2176180</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tg(Stra8-icre)1Reb/J &lt;(Stra8-iCre)&gt;</td>
+      <td>Sadate-Ngatchou et al., 2008</td>
+      <td>MGI:3779079</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tg(RP23-159N6*)23Bdm</td>
+      <td>Diagouraga et al., 2018</td>
+      <td>MGI:5565212</td>
+      <td colspan="2">Named B6-Tg(YF)</td>
+    </tr>
+    <tr>
+      <td colspan="6">Cell lines</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>HeLa S3 ATCC CCL-2.2</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="6">Yeast strains</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AH109</td>
+      <td>James et al., 1996</td>
+      <td></td>
+      <td colspan="2">S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y187</td>
+      <td>Harper et al., 1993</td>
+      <td></td>
+      <td colspan="2">S. cerevisiae</td>
+    </tr>
+    <tr>
+      <td colspan="6">Recombinant DNA reagents</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PRDM9A-Flag-HA-Nt into retroviral pOZ-FH-N vector</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Vector from Addgene DB3781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PRDM9A-Flag-HA-Ct into retroviral pOZ-FH-C vector</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Vector from Addgene cat# 32516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pGAD GH for fusion to Gal4 activation domain, modified for Gateway cloning</td>
+      <td>Van Aelst et al., 1993</td>
+      <td>Clontech No. 638853</td>
+      <td colspan="2">LEU2 marker</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pAS2dd for fusion to Gal4 DNA-binding domain, modified for Gateway cloning</td>
+      <td>Fromont-Racine et al., 1997</td>
+      <td></td>
+      <td colspan="2">TRP1 marker</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pB29 for PRDM9 (aa 1–511) expression fused to LexA for yeast two-hybrid screen</td>
+      <td>Hybrigenics</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="6">Antibodies</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Guinea-pig anti-SYCP3</td>
+      <td>Grey et al., 2009</td>
+      <td>N/A</td>
+      <td colspan="2">Home-made WB: 1/2000 IF: 1/500</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-SYCP1</td>
+      <td>Abcam</td>
+      <td>Cat# ab15090 RRID:AB_301636</td>
+      <td colspan="2">IF: 1/400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-DMC1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# scH100 RRID:AB_2277191</td>
+      <td colspan="2">IF: 1/200</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Goat anti-DMC1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# scC20 RRID:AB_2091206</td>
+      <td colspan="2">ChIP: 24 µg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-HELLS</td>
+      <td>Novus</td>
+      <td>Cat# NB 100–278 RRID:AB_350198</td>
+      <td colspan="2">WB: 1/2000 IF: 1/200</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse monoclonal anti-HELLS</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc46665 RRID:AB_627895</td>
+      <td colspan="2">IF: 1/100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse monoclonal anti-phospho-histone H2AFX (Ser139)</td>
+      <td>Millipore</td>
+      <td>Cat# MP05-636 RRID:AB_309864</td>
+      <td colspan="2">Named γH2AFX IF: 1/10000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-Gal4 activation domain (GAD) (Millipore, 06–283)</td>
+      <td></td>
+      <td>Now at Sigma-Aldrich Cat# ABE476</td>
+      <td colspan="2">WB: 1/3000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-Gal4 DNA-Binding domain</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# G3042 RRID:AB_439688</td>
+      <td colspan="2">WB: 1/2000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rat monoclonal anti-Tubulin [YOL1/34]</td>
+      <td>Abcam</td>
+      <td>Cat# ab 6161 RRID:AB_305329</td>
+      <td colspan="2">WB: 1/3000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-5hmC</td>
+      <td>Active Motif</td>
+      <td>Cat# AM 39791 RRID:AB_2630381</td>
+      <td colspan="2">hMeDIP: 5 µg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-PRDM9</td>
+      <td>Grey et al., 2017</td>
+      <td>N/A</td>
+      <td colspan="2">Home-made WB: 1/2000 IF: 1/200 ChIP: 4 µg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit anti-H3K4me3</td>
+      <td>Abcam</td>
+      <td>ab8580 RRID:AB_306649</td>
+      <td colspan="2">ChIP: 4 µg</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Goat anti-rabbit IgG-HRP</td>
+      <td>Pierce</td>
+      <td>Cat# 1858415 RRID:AB_1185567</td>
+      <td colspan="2">WB: 1/10000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Goat anti-Guinea-pig IgG-HRP</td>
+      <td>Jackson Immuno Research</td>
+      <td>Cat# 706-035-148 RRID:AB_2340447</td>
+      <td colspan="2">WB: 1/3000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Goat anti-rabbit IgG-Alexa 555</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# ab150078 RRID:AB_2535849</td>
+      <td colspan="2">IF: 1/400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Goat anti-guinea-pig IgG-Alexa 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# ab150185 RRID:AB_2534117</td>
+      <td colspan="2">IF: 1/400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Donkey anti-mouse IgG-Alexa 680</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# ab175774 RRID:AB_2534014</td>
+      <td colspan="2">IF: 1/100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Donkey anti-mouse IgG-Alexa 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# ab150107 RRID:AB_162542</td>
+      <td colspan="2">IF: 1/400</td>
+    </tr>
+    <tr>
+      <td colspan="6">Oligonucleotides</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Genotyping Hells cKO mice, see Supplementary file 2</td>
+      <td>This study</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>RT-qPCR, see Supplementary file 3</td>
+      <td>This study, Buard et al., 2009, Diagouraga et al., 2018</td>
+      <td>N/A</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="6">Commercial assays or kits</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DeadEnd Fluorometric TUNEL System</td>
+      <td>Promega</td>
+      <td>Cat# G3250</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-HA beads</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-500773</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EZview anti-FLAG M2 Affinity Gel</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# F2426</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hMeDIP Kit</td>
+      <td>Actif Motif</td>
+      <td>Cat# AM55010</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NEB Next Ultra Library Preparation Kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat# NEB7370S</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ChIP-IT High Sensitivity Kit</td>
+      <td>Actif Motif</td>
+      <td>Cat# AM53040</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MMLV-based retroviral transduction system</td>
+      <td>Nakatani and Ogryzko, 2003</td>
+      <td>N/A</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="6">Chemical compounds</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>HA peptide</td>
+      <td>Covance</td>
+      <td>Cat #PEP-101P-1000</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FLAG peptide</td>
+      <td>Sigma</td>
+      <td>Cat #F4799</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Optiprep Idoixanol</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# D1556</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sytox Green</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# S70020</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WIN 18466</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 4736</td>
+      <td colspan="2">Hogarth et al., 2013</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Retinoic Acid</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# R2625</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="6">Deposited data</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mass spectrometry proteomics</td>
+      <td>ProteomeXchange Consortium</td>
+      <td>Dataset identifier PXD017337</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NGS SSDS ChIP (DMC1) and hMeDIP</td>
+      <td>GEO</td>
+      <td>GSE145768</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="6">Softwares and Algorithms</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bowtie 2</td>
+      <td></td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Modified BWA algorithm</td>
+      <td>Khil et al., 2012</td>
+      <td>N/A</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tim Galore!</td>
+      <td></td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bismark</td>
+      <td></td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/bismark/</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Bedtools suite</td>
+      <td></td>
+      <td>https://bedtools.readthedocs.io/en/latest/content/bedtools-suite.html</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains
 
 The following mouse strains were used: C57BL/6JOlaHsd (hereafter B6), B10.MOLSGR(A)-(D17Mit58-D17Jcs11)/Bdm (RJ2) (Grey et al., 2009), B6;129P2-Prdm9tm1Ymat/J (B6 PRDM9KO) (Hayashi et al., 2005), Spo11tm1Mjn (B6 SPO11KO) (Baudat et al., 2000), C57BL/6J-Tg(RP23-159N6*)23Bdm (B6-Tg(YF)) (Diagouraga et al., 2018). Hellstm1a(EUCOMM)Wtsi/Ieg mice EUCOM consortium Bradley et al., 2012 have a C57BL/6N genetic background with the Prdm9Dom2 allele. These mice were mated with mice expressing FLP from the CMV promoter (C57BL/6 Tg(CAG-Flpo)1Afst) (Kranz et al., 2010) to generate a floxed (Hellsfl) allele. Hellsfl/fl mice were mated with mice that express CRE under the control of the CMV promoter (C57BL/6 Tg(CMV-cre)1Cgn) (Schwenk et al., 1995) to generate Hells-deleted heterozygous mice (Hells+/-). Hells+/- mice were mated with Tg(Stra8-icre)1Reb/J (Stra8-CreTg) mice (Sadate-Ngatchou et al., 2008) to generate Hells+/-;Stra8-CreTg mice. By crossing Hellsfl/fl mice with Hells+/-;Stra8-CreTg mice, Hellsfl/-;Stra8-CreTg (Hells cKO) mice and Hellsfl/+, Hellsfl/+ Stra8-CreTg or Hellsfl/- (Hells CTRL) mice were obtained. RJ2 mice have a C57BL/10 genetic background, very similar to that of B6, and carry the Prdm9Cst allele. B6-Tg(YF) mice carry both the endogenous wild-type Prdm9Dom2 allele and the transgenic methyltransferase-dead Prdm9Cst-YF allele (Y357F mutation on Prdm9Cst allele) on a BAC transgene. All experiments were carried out according to the CNRS guidelines and were approved by the ethics committee on live animals (project CE-LR-0812 and 1295).
 
-## HeLa cells
+### HeLa cells
 
-## Generation of HeLa cells that express human PRDM9A tagged with Flag-HA
+#### Generation of HeLa cells that express human PRDM9A tagged with Flag-HA
 
 To generate HeLa S3 cells that express PRDM9 tagged with Flag and HA, the previously described MMLV-based retroviral transduction system was used (Nakatani and Ogryzko, 2003). Human PRDM9A was cloned in the pOZ-FH-N and pOZ-FH-C derivative vectors to express PRDM9A-Flag-HA-Nt and PRDM9A-Flag-HA-Ct, respectively. The HeLa S3 cell lines expressing PRDM9A-Flag-HA-Nt and PRDM9A-Flag-HA-Ct were generated. HeLa S3 cells were authenticated by STR profiling through Eurofins. Cells were regularly tested with MycoAlert mycoplasma detection kit (Lonza, LT07-218), the ratio of ATP level before and after the addition of the MycoAlert reagent was below 0.9, indicating that the HeLa cells used for these experiments were mycoplasma free.
 
-## Preparation of HeLa cell protein extracts
+#### Preparation of HeLa cell protein extracts
 
 Nuclear protein extracts were prepared from 1 L (~108 cells) of cell culture using the Dignam protocol (Dignam et al., 1983) with minor modifications. Extracts were prepared from cells that express PRDM9A-Flag-HA-Nt, PRDM9A-Flag-HA-Ct or without expression vector.
 
-## Immunoprecipitation of HeLa cell protein extracts
+#### Immunoprecipitation of HeLa cell protein extracts
 
 The PRDM9 complex was purified by immunoprecipitation (IP) using anti-FLAG (IP-FLAG) and -HA antibodies (IP-HA). About 35 mg of proteins from each nuclear fraction were used. FLAG affinity purification was performed with EZview anti-FLAG M2 Affinity Gel (Sigma). Elution was performed with 0.2 mg/ml of FLAG peptide. HA affinity purification was performed with anti-HA beads (Santa Cruz). Elution was performed with 0.4 mg/ml HA peptide (eluate 1 and 2) and 2 mg/ml HA peptide (eluate 3). Eluates 1 and 2 were analyzed on 4–15% acrylamide gels by silver staining (Silver Quest Staining Kit, Invitrogen).
 
-## Mass spectrometry of HeLa cell immunoprecipitates
+#### Mass spectrometry of HeLa cell immunoprecipitates
 
 Eluates 1 and 2 of IP-HA were pooled and analyzed by mass spectrometry. The pooled proteins were precipitated with the TCA method using the ProteoExtract Protein Precipitation Kit (Calbiochem). All samples purified from protein extracts of PRDM9-Nt- and -Ct-expressing, or non-PRDM9-expressing HeLa cells were analyzed using a Velos-Orbitrap Pro mass spectrometer (Thermo Scientific) at the Taplin Mass Spectrometry Facility. The mass spectrometry data were analyzed with GFY, an application developed in Gygi’s laboratory (Harvard University). Pilot experiments were performed with size separation by gel electrophoresis and protein extraction from slices corresponding to the MW of 70–80 kD and of 95–120 kD before mass spectrometry (130927, samples 43346 to 43351). For the full proteomic analysis, whole samples were sequenced (131026, samples 43738 to 43740). The list of proteins is in Supplementary file 1. Proteins defined as contaminants according to the Crapome and Mitocheck databases (www.crapome.org and www.mitocheck.org/) were removed.
 
-## Preparation of mouse testis protein extracts
+### Preparation of mouse testis protein extracts
 
 For mass spectrometry experiments, nuclear extracts were prepared from mouse testes from 12 to 13 dpp B6 mice (n = 18). Proteins were extracted from nuclei following the Dignam protocol (Dignam et al., 1983).
 
@@ -137,78 +820,78 @@ For analysis of PRDM9 and HELLS expression during mouse spermatogenesis, whole c
 
 For PRDM9 and HELLS expression analysis in testes from 22 dpp Hells CTRL and Hells cKO mice, nuclear extracts were prepared. Testes were homogenized in hypotonic buffer (10 mM Hepes, pH 8.0, 320 mM sucrose, 1 mM PMSF, 1x Complete protease inhibitor cocktail EDTA-free (Roche, Cat. Number 11873580001)) in a Dounce homogenizer. After centrifugation (1000xg at 4°C for 10 min), supernatants were collected and used as cytoplasmic fractions. Nuclear fractions were from pellets that were resuspended in RIPA buffer (50 mM Tris–HCl, pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% NP-40, 0.5% Na-deoxycholate, 0.1% SDS, 1x Complete protease inhibitor EDTA-free (Roche)), sonicated and centrifuged to remove debris.
 
-## Western blotting
+### Western blotting
 
 For PRDM9 and HELLS expression analysis in testes from 22 dpp Hells CTRL and Hells cKO mice, nuclear fractions (40 µg) were analyzed by western blotting with affinity-purified rabbit anti-PRDM9 (1/2,000) (Grey et al., 2017) and rabbit anti-HELLS (NB100-278, Novus) (1/2,000) antibodies and Guinea-pig serum raised against the mouse SYCP3 residues 24–44 (1/2,000). Secondary antibodies were goat anti-rabbit IgG-HRP (1/10,000) (1858415, Pierce) and goat anti-Guinea-pig IgG-HRP (1/3,000) (706-035-148, Jackson Immuno Research).
 
 For PRDM9 and HELLS expression during mouse spermatogenesis, 50 μg of whole cell extracts were analyzed by western blotting with affinity-purified rabbit anti-PRDM9 (Grey et al., 2017), mouse anti-HELLS (SC-46665, Santa Cruz) and rat anti-tubulin (ab6161, Abcam) antibodies.
 
-## Immunoprecipitation of mouse testis nuclear protein extracts
+### Immunoprecipitation of mouse testis nuclear protein extracts
 
 IP-PRDM9 and IP-Control (mock) were performed with 4 µg of anti-PRDM9 antibody (Grey et al., 2017) or normal rabbit serum and 3.6–3.8 mg of nuclear proteins after pre-clearing with protein A or G Dynabeads (Invitrogen).
 
-## Mass spectrometry of mouse testis protein samples
+### Mass spectrometry of mouse testis protein samples
 
 IP samples were analyzed after separation on 7.5% acrylamide gels and silver staining (Silver QuestTM Staining Kit, Invitrogen). Protein extraction and purification were monitored by western blotting with an anti-PRDM9 antibody (Grey et al., 2017). IP samples were analyzed on an LTQ Velos Pro Orbitrap Elite mass spectrometer (Thermo Scientific), and the obtained data were processed with the MaxQuant software at the Functional Proteomics Platform (IGF, Montpellier). The data outputs include the intensity-based absolute quantification (iBAQ) and label-free quantification (LFQ) intensities for each protein. The iBAQ value is the sum of the intensities of all tryptic peptides for each protein. Therefore, iBAQ values are proportional to the protein molar quantities. LFQ intensities are based on the intensities of each protein and are normalized at multiple levels to ensure that the LFQ intensity profiles across samples accurately reflect the protein relative amounts. Raw data are available at Proteome Exchange. Samples are: 150310_MS_ver3, Res_PRMD9_150805 (two duplicates). The protein list with the quantifications is in Supplementary file 1. Data have been deposited in ProteomeXchange, reference PXD017337.
 
-## Yeast two-hybrid assays
+### Yeast two-hybrid assays
 
 All plasmids used in yeast two-hybrid assays were cloned with the Gateway Gene Cloning Technology (Invitrogen) and transformed in the AH109 and Y187 haploid strains. These strains were transformed with Gal4 DNA-binding domain (GBD) and Gal4 activation domain (GAD) fusion plasmids, respectively. Purified colonies of diploid strains were streaked on SD media plates lacking leucine and tryptophan (LW), or leucine, tryptophan and histidine (LWH), or leucine, tryptophan and histidine with 5 mM amino-triazole (LWH+5mMAT). Interactions between GAD- and GBD-fusion proteins were evaluated after cell growth at 30°C for 3 days. For verification of protein expression, protein extracts were prepared and analyzed by western blotting, as previously described (Imai et al., 2017). The yeast two-hybrid screen was performed by Hybrigenics using a mouse cDNA library prepared using RNA from testes of 14–16 dpp mice.
 
-## Antibodies
+### Antibodies
 
 Guinea pig anti-SYCP3 (Grey et al., 2009), rabbit anti-SYCP1 (Abcam, 15090), rabbit anti-DMC1 (Santa Cruz, H100), rabbit anti-HELLS (Novus, NB100-278), mouse monoclonal anti-HELLS (Santa Cruz, sc46665), and mouse monoclonal anti-phospho-histone H2AFX (Ser139) antibody (γH2AFX) (Millipore, 05–636) were used for immunostaining. For IP, a home-made anti-PRDM9 antibody was used (Grey et al., 2017). For western blots, anti-PRDM9 (Grey et al., 2017), anti-HELLS (Novus, NB100-278), anti-SYCP3 (Grey et al., 2009), anti-GAD (Millipore, 06–283), anti-GBD (Sigma, G3042), and anti-tubulin (Abcam, ab6161) antibodies were used. For 5hmC analysis, a rabbit anti-5hmC antibody (Active Motif, 39791) was used. For DMC1 ChIP-SSDS, a goat anti-DMC1 antibody (Santa Cruz, C-20) was used. For conventional ChIP experiments, rabbit anti-PRDM9 (Grey et al., 2017) and rabbit anti-H3K4me3 (Abcam, ab8580) antibodies were used.
 
-## Histological analysis of paraffin sections and TUNEL assay
+### Histological analysis of paraffin sections and TUNEL assay
 
 Mouse testes were fixed in Bouin’s solution for periodic acid schiff (PAS) staining, or in 4% paraformaldehyde/1X PBS for immunostaining or TUNEL assay, at room temperature overnight. Testes were then embedded in paraffin and cut in 3µm-thick slices. PAS-stained sections were scanned using the automated tissue slide-scanning tool of a Hamamatsu NanoZoomer Digital Pathology system. TUNEL assay was performed with the DeadEnd Fluorometric TUNEL System (Promega), according to the manufacturer's protocol.
 
-## Immunostaining of nuclei spreads and fixed nuclei
+### Immunostaining of nuclei spreads and fixed nuclei
 
 Characterization of Hells cKO spermatocytes and meiotic staging of spermatocytes after synchronization were performed on nuclei spreads. Meiotic staging after Fluorescence-Activated Cell Sorting (FACS) was performed using fixed nuclei deposited on poly-lysine coated slides. Spreads were prepared with the dry down technique, as described (Peters et al., 1997), and immunostaining was performed as described (Grey et al., 2009). Staging criteria were the following: pre-leptotene nuclei had weak SYCP3 nuclear signal and no or very weak γH2AFX signal; leptotene nuclei were γH2AFX-positive and SYCP1-negative; early/mid zygotene nuclei had less than nine fully synapsed chromosomes; late zygotene had nine or more fully synapsed chromosomes; and pachytene cells had all chromosomes fully synapsed, excepted for the sex chromosomes. The following antibodies were used: rabbit anti-PRDM9 (Grey et al., 2017), (1:200), rabbit anti-HELLS (NB100-278, Novus, 1:200), mouse anti-HELLS (sc46665, Santa Cruz, 1:100), rabbit anti-DMC1 (H-100, Santa Cruz, 1:200), guinea-pig anti-SYCP3 (Grey et al., 2009, 1:500), anti-SYCP1 (ab15090, Abcam, 1:400) and anti-γH2AFX (05–636, Millipore, 1:10,000).
 
-## Synchronization of meiosis in male mice
+### Synchronization of meiosis in male mice
 
 The first wave of spermatogonia entry into meiosis initiates at 8 days postpartum (8 dpp). Then, spermatocytes progress to meiotic prophase and reach the leptotene, zygotene and pachytene stages at approximately 11, 13 and 15 dpp, respectively. Hence, the proportion of cells at leptotene/zygotene is 55%, 41% and 26% at these three ages, respectively (Goetz et al., 1984). To obtain a more enriched proportion of leptotene/zygotene spermatocytes, germ cell development was synchronized in vivo by manipulating the retinoic acid metabolism, as described in Romer et al., 2018. Briefly, at day two post-partum, mice were treated daily (by pipette feeding) with WIN 18,446 (100µg/gram of body weight), an inhibitor of retinoic acid synthesis that blocks the differentiation of spermatogonia and thus meiosis entry (Hogarth et al., 2013). After 8 to 10 days of treatment, meiosis was initiated synchronously by a single intraperitoneal injection of 100 µg of retinoic acid in 10 µL of DMSO. Between 8 and 9 days after the injection, mice were sacrificed and testes were harvested. At this time point, about 80–85% of spermatocytes were at leptotene/zygotene stage, as assessed by SYCP3, SYCP1 and γH2AFX staining on spermatocyte spreads performed using a small proportion of testis tissue. The remaining testis tissue was processed for nuclei purification and FACS sorting.
 
-## Purification of spermatocyte nuclei and FACS sorting
+### Purification of spermatocyte nuclei and FACS sorting
 
 Synchronized decapsulated testes were fixed in 1% formaldehyde for 10 min. After quenching the reaction, tissues were homogenized and cells were lysed by homogenization with a tight fit homogenizer in homogenizing buffer (50 mM sucrose, 25mM KCl, 5 mM MgCl2, 50 mM NH4Cl, 120 mM Tris pH7.4). After centrifugation, cells were resuspended in iodixanol-based Optiprep density gradient solution (Sigma-Aldrich D1556). First, a 50% iodixanol working solution was prepared by diluting the Optiprep density gradient solution in working solution (150 mM KCl, 30 mM MgCl2, 120 mM Tris pH 7.4) at a ration 1:5. Then, the 50% iodixanol working solution was diluted to a final concentration of 27% in diluent solution (250 mM sucrose, 25 mM KCl, 5 mM MgCl2, 20 mM Tris pH7.4). Resuspended cells were centrifuged at 10,000 g at 4°C for 30 min. After discarding the supernatants, isolated nuclei were labeled in labeling solution (1x Sytox green (Thermo Fisher Scientific, S70020) in 250 mM sucrose, 25 mM KCl, 5 mM MgCl2, 20 mM tris pH7.4, 1% BSA) at room temperature for 2 hr. Labeled nuclei were filtered through a 70 µm cell strainer and FACS-sorted with a BD FACS Melody sorter (100 µm sort nozzle, 2,000–4,000 events/sec, 34 kHz). First, single nuclei were gated based on their light scatter (forward and reverse side scatter) properties. Second, 4C nuclei were gated based on their DNA content assessed through the fluorescence emitted by the Sytox green fixed on DNA observed with the 488 nm laser. Third, 4C nuclei were separated based on light scatter to gate leptotene-zygotene nuclei. Then, about 10 000 sorted nuclei were deposited on each poly-lysine-coated slide and immunostained with anti-SYCP3, -γH2AFX and -SYCP1 antibodies to verify the prophase I stage. Staining conditions and dilutions are the same as described above. Only samples containing ≥90% of nuclei in leptotene and zygotene stage were used for experiments (see below).
 
-## Immunoprecipitation of genomic DNA containing 5-hydroxymethylcytosine (hMeDIP)
+### Immunoprecipitation of genomic DNA containing 5-hydroxymethylcytosine (hMeDIP)
 
 hMeDIP was performed using 5 µg of genomic DNA extracted from a population of 1.5 to 2 *106 leptotene/zygotene spermatocytes (95% pure) (see above). Genomic DNA was obtained by phenol/chloroform extraction and then sonicated to a size of ~150 bp with a Bioruptor pico apparatus (Diagenode, B01060010). Then, Illumina adaptors were added using the NEB Next Ultra Library Preparation Kit (NEB7370S), without the final PCR step. Finally, hMeDIP was performed with the Active Motif hMeDIP Kit (AM, 55010), according to the manufacturers’ manual. Enriched fragments were then amplified by PCR using 12 cycles, as recommended by the NEB Next Ultra Library Preparation Kit. Sequencing was performed on a HiSeqX (2 × 150 bp).
 
-## Chromatin immunoprecipitation of PRDM9 and H3K4me3
+### Chromatin immunoprecipitation of PRDM9 and H3K4me3
 
 ChIP experiments were performed with the ChIP-IT High Sensitivity Kit (Active-motif, 53040). Briefly, testes from two or three synchronized mice (see above) were de-capsulated and fixed in complete tissue fixation solution for 10 min. After quenching the reaction, tissues were homogenized, and cell suspensions prepared by filtering samples through a 40 µm cell strainer. Cells were washed twice with ice-cold 1x PBS, and chromatin was extracted and immunoprecipitated according to the manufacturers’ instructions. 30–40 µg of chromatin was used per IP. The following antibodies (amount) were used: affinity purified anti-PRDM9 (4 µg), anti-H3K4me3 (4 µg).
 
-## Quantitative PCR
+### Quantitative PCR
 
 Immunoprecipitated DNA was quantified using real-time PCR, as described in Buard et al., 2009. The immunoprecipitated fraction at all Dom2-specific hotspots (ChIP/Input ratio) was normalized to the immunoprecipitated fraction at the Cast-specific hotspot Hlx1.6, where no PRDM9 or H3K4me3 enrichment is detected in B6 mice that express PRDM9Dom2 (Diagouraga et al., 2018). As a control for the sample and IP quality, H3K4me3 level was measured at the Sycp1 promoter. The primer sequences and PCR conditions for the studied sequence tagged sites (STS) (Pbx1a, 14a, A3, 17b, Hlx1.6, Psmb9.8 and Sycp1 promoter) were described previously (Buard et al., 2009) and are listed in Supplementary file 3.
 
-## DMC1 ChIP-SSDS
+### DMC1 ChIP-SSDS
 
 DMC1 ChIP-SSDS and library preparation were performed as described in Grey et al., 2017. Two testes from 5-week-old Hellsfl/- (named Hells CTRL in the main text) and three testes from 9-week-old Hells cKO mice were used for each replicate. Sequencing was performed on an HiSeq 2500 Rapidmode apparatus (2 × 150 b).
 
-## Next generation sequencing data computational analysis
+### Next generation sequencing data computational analysis
 
-## Read alignment
+#### Read alignment
 
 After quality control, 5hMeDIP-seq and DMC1 ChIP-SSDS reads were trimmed to 50 bp and filtered to keep the sequencing read quality Phred score > 28. Reads were then mapped to the UCSC mouse genome assembly build GRCm38/mm10. Mapping was done with Bowtie 2 (version 2.3.2) for the 5hMeDIP-seq experiment, using the single-end mode. DMC1 ChIP-SSDS reads were mapped using the previously published tools (Khil et al., 2012) that allow dealing with the specificities of this experiment. Only non-duplicated and uniquely mapped reads were kept after all alignments and used for the subsequent analysis.
 
-## Identifying meiotic hotspots using DMC1 ChIP-SSDS data
+#### Identifying meiotic hotspots using DMC1 ChIP-SSDS data
 
 To identify meiotic hotspots from biologically replicated samples analyzed by DMC1 ChIP-SSDS, the Irreproducible Discovery Rate (IDR) methodology was used, as previously described for this experiment (Diagouraga et al., 2018). This method was developed for ChIP-seq analysis and extensively used in the ENCODE and modENCODE projects (Landt et al., 2012). The framework developed by Qunhua Li and Peter Bickel's group (https://sites.google.com/site/anshulkundaje/projects/idr) was followed. Briefly, this method allows testing the reproducibility within and between replicates by using the IDR statistics. Following their pipeline, peak calling was performed using MACS version 2.0.10 with relaxed conditions (--pvalue=0.1 --bw1000 --nomodel --shift400) for each of the two replicates, the pooled dataset, and pseudo-replicates that were artificially generated by randomly sampling half of the reads twice for each replicate and the pooled dataset. Then IDR analyses were performed, and reproducibility was checked. Final peak sets were built by selecting the top N peaks from pooled datasets (ranked by increasing p values), with N defined as the highest value between N1 (the number of overlapping peaks with an IDR < 0.01, when comparing pseudo-replicates from pooled datasets) and N2 (the number of overlapping peaks with an IDR < 0.05 when comparing the true replicates), as recommended for the mouse genome. Reproducibility between DMC1 replicates was double-checked by testing their peak strength correlation calculated on the peaks recovered after IDR (Pearson’s correlation coefficients were: 0.99 and 0.96 for Hells CTRL and Hells cKO; Figure 3—figure supplement 1).
 
-## Comparisons of DSB hotspot maps
+#### Comparisons of DSB hotspot maps
 
 All DSB hotspot maps were compared by identifying overlapping (and non-overlapping) peak centers ± 200 bp. First, it was confirmed that the control (i.e. Hells CTRL mice) DSB map reflected the wild-type situation, with 96% of Hells CTRL DSB hotspots overlapping with the DSB map in B6 mice (Grey et al., 2017), and up to 99% when compared with another DSB map in B6 mice (Smagulova et al., 2016). Then, the Hells CTRL and Hells cKO and the Hells cKO and Prdm9 KO DSB maps were compared (Figure 3A and C). DSB hotspots and signals were also visually inspected along the genome (a representative view around position 185 Mb of chromosome one is shown in Figure 3E).
 
-## Signal normalization and quantitative analysis (DMC1, 5hmC and 5mC)
+#### Signal normalization and quantitative analysis (DMC1, 5hmC and 5mC)
 
 If not otherwise stated, all read distributions and signal intensities presented in this work were calculated after pooling reads from both replicates and were expressed as read per millions of mapped reads or fragments. DMC1 ChIP-SSDS signal at DSB hotspots was calculated after peak re-centering, and fragment count was normalized to the local background, as previously described (Brick et al., 2012), then normalized to the library size (estimated as the sum of type1-ssDNA, type2-ssDNA and dsDNA). As we previously stated (Papanikos et al., 2019), normalization between Hells CTRL and Hells cKO samples could not be computed because of altered DMC1 dynamics in the Hells cKO. The 5hMeDIP-seq signal was calculated at different genomic regions (the region type and size are detailed in the figure legends) by subtracting the library-normalized input signal from the library-normalized 5hMeDIP-seq signal. For Figure 5 and Figure 5—figure supplement 1C and D, DMC1-SSDS B6 or RJ2 sites were divided in four groups, containing an increasing number of CpGs (0, 1–2, 3–5, and ≥ 6) within a window of +/- 250 bp around the peak center. Besides the group without CpGs, groups were defined to have similar numbers of DMC1-SSDS sites, as follows: 0 CpGs (812 and 821 for the B6 and RJ2 strains respectively); 1–2 CpGs (3915 and 4126 for the B6 and RJ2 strains, respectively); 3–5 CpGs (5649 and 5851 for the B6 and RJ2 strains, respectively);≥6 CpGs (4384 and 4377 for the B6 and RJ2 strains, respectively). The 5mC signal at whole-genome scale, at DSB sites, in LINE, IAPs and ICRs was calculated from whole-genome bisulfite sequencing data from Gaysinskaya et al., 2018. (PRJNA326117). After removing adapter contamination and low-quality reads using trim galore, bisulfite-converted reads were mapped to the UCSC mouse genome assembly build GRCm38/mm10. Mapping in a paired-end mode and methylation call was done using Bismark. Duplicates were not discarded. For the subsequent analysis, only regions with at least one CpG and one informative read were considered. Using the Bedtools suite, the DNA methylation ratio was averaged in 1 kb sliding, non-overlapping windows at the whole genome scale and in the whole interval at DSB sites, in LINE, IAP and ICRs. Median values of 5mC were higher than those reported by Gaysinskaya et al., 2018 and by Chen et al., 2020. For instance, at leptonema, we obtained a genome-wide median DNA methylation level of 91% compared to 77% and 81% respectively in these two studies. These differences, which do not alter the conclusions could be due to the procedures used for reads selection and/or quantification.
 
-## Statistical analysis
+### Statistical analysis
 
 The statistical analysis of cytological observations was done with GrapPad Prism 7. Statistical tests for DMC1 ChIP-SSDS were done using R version 3.6.0, and for hMeDIP with python 3.7.4. All tests and p-values are provided in the corresponding legends and/or figures.

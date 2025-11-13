@@ -16,13 +16,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01703db54 Biomedical Research Institute, National Institute of Advanced Industrial Science and Technology (AIST) Tsukuba Japan
-2. https://ror.org/026v1ze26 Research Center for Functional Materials, National Institute for Materials Science Tsukuba Japan
-3. https://ror.org/035t8zc32 Institute for Protein Research, Osaka University Osaka Japan
-4. https://ror.org/030bhh786 SLST and Gene Editing Center, ShanghaiTech University Shanghai China
-5. https://ror.org/057zh3y96 Graduate School of Science, The University of Tokyo Tokyo Japan
-6. https://ror.org/02278tr80 Kyushu Institute of Technology Fukuoka Japan
-7. https://ror.org/0495fxg12 Institut Pasteur Paris France
+1. Biomedical Research Institute, National Institute of Advanced Industrial Science and Technology (AIST) Tsukuba Japan ([ROR:01703db54](https://ror.org/01703db54))
+2. Research Center for Functional Materials, National Institute for Materials Science Tsukuba Japan ([ROR:026v1ze26](https://ror.org/026v1ze26))
+3. Institute for Protein Research, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+4. SLST and Gene Editing Center, ShanghaiTech University Shanghai China ([ROR:030bhh786](https://ror.org/030bhh786))
+5. Graduate School of Science, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+6. Kyushu Institute of Technology Fukuoka Japan ([ROR:02278tr80](https://ror.org/02278tr80))
+7. Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
 
 † Corresponding author
 
@@ -44,9 +44,29 @@ To reconstitute the regular arrangement of outer-arm dyneins, which allow neighb
 
 ## Results
 
-## Geometry of dynein-MT complexes
+### Geometry of dynein-MT complexes
 
 Dynein preparations extracted with high salt from Chlamydomonas flagella axonemes were mixed with taxol-stabilized MTs polymerized from brain tubulin (Figure 1B). As previously reported (Aoyama and Kamiya, 2010; Haimo et al., 1979; Oda et al., 2007), the MTs became bundled with the crossbridging molecules bound with a period of ~24 nm (Figure 2A and B). In the dynein-MT complexes prepared with high concentrations of dynein, a pair of MTs in bundles are crossbridged by two continuous arrays of dynein, so that superposition of two rows of dynein molecules is observed in electron microscopy (EM) images (Haimo et al., 1979; Oda et al., 2007). On the other hand, when a low concentration of the dynein preparation (6.25–12.5 µg/ml [corresponding to ~3–6 nM outer-arm dynein]) was mixed with 20–25 µg/ml MTs (200–250 nM tubulin dimers), the MTs were only partially decorated with dynein, so that we were able to observe single layers of crossbridges without superposition in many regions. Negative-stain EM observation of the individual crossbridges showed characteristic shapes of outer-arm dynein, with stacked heads and a tail (Heuser et al., 2009; Movassagh et al., 2010; Figure 2C), confirming that the crossbridging proteins are mostly outer-arm dyneins. The average number of dyneins per 1 µm of a MT pair was about 12 when 6.25 µg/ml dynein was used.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) Negative stain images of the dynein-MT-DNA-origami complex in the absence (A) and presence (B) of 0.1 mM ATP. DNA rods crosslinking the MTs are indicated by purple arrowheads. Dynein molecules tend to bind in patches and the neighboring dyneins usually have the same orientation. Patches of dynein cross-bridging the MTs in two different orientations are indicated by pink and cyan boxes. Enlarged views show examples of dyneins in two orientations, with their tails (indicated by orange arrowheads) on different MTs. Magenta lines show a periodicity of 24 nm. The typical shape of an outer-arm dynein is illustrated. Bars: 50 nm in low magnification images and 20 nm in enlarged views. (C) Images of individual dynein molecules crossbridging two MTs. As illustrated on the left, the characteristic shapes of a Chlamydomonas outer-arm dynein molecule (Heuser et al., 2009; Movassagh et al., 2010) with a tail and three heads are observed. Bar: 20 nm. (D) A negative stain image of a DNA origami rod. Bar: 50 nm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A – B) A diagram showing two different geometries of the dynein-MT complex. An outer-arm dynein molecule cross-bridges two MTs by binding to one of the MTs with the MT-binding domain at the end of the stalk and to another MT with the tail. The stalk of each dynein is oriented closer to the minus end of the MT to which the stalk binds. Therefore, there are two possible orientations for dynein bound between a pair of MTs, depending on which MT its stalk binds to. If the two MTs have the same polarity as in vivo, two groups of dynein molecules produce opposing force (A). On the other hand, if the MTs are anti-parallel, all the dynein molecules produce force in the same direction (B). (C – D) Electron microscopy (EM) images of dynein-MT complexes showing two different geometries as illustrated in (A) and (B). When high-salt extracted Chlamydomonas dynein was used, ~80% of the complexes (36 out of 44 complexes) had MTs with the same polarity, as judged by the negative stain images. The positions of the dynein tails are indicated by orange arrowheads.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Linkers are observed for some DNA origami rods (an example indicated by red arrows). Bar: 50 nm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic of the classification method. Images of individual dynein molecules in each dynein-microtubule-DNA-origami (dynein-MT-DNA-origami) complex were classified into two groups depending on the orientation. The averaged image for each group was calculated. (B – C) Examples of individual and averaged images. Images from three complexes in the absence of ATP (B) and three in the presence of ATP (C) are shown. The top and bottom rows show oppositely oriented dyneins, rotated so that the MT minus end is toward the left. For each group, two individual images (left) and the averaged image (right) are shown (n=30 and 5, 11 and 11, 15 and 12, 22 and 2, 20 and 9, 14 and 19 for the complexes #1–6, respectively). (D) 2D-projected images of cryo-electron tomograms of Chlamydomonas outer-arm dynein without nucleotide and with ADP•Vi (EMDB maps emd_1696 and emd_1697) (Movassagh et al., 2010). Dynein heads are indicated by red squares in (B – D). Bars: 20 nm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The histogram shows distribution of the average lengths (L) of MT-bound dynein molecules along the MT axis, calculated for each dynein-MT complex. The average and standard deviation (n=24 and 16 for the absence and presence of ATP, respectively) are indicated. Also see Figure 2—source data 1.
 
 When a dynein molecule crossbridges a pair of MTs, its tail is fixed onto one of the MTs and the stalks interact with the other MT in a nucleotide-dependent manner. Therefore, depending on which MT the tail binds to, there are two possible orientations (Figure 1B). EM images confirmed that dyneins crossbridge MTs in two different orientations (Figure 2A and B). As observed previously with sea urchin dynein (Hirose, 2012; Ueno et al., 2008), the crossbridging dyneins made patches, and the adjacent dynein molecules within one patch tended to have the same orientation. In vivo, outer-arm dynein binds to MTs with its head + stalk oriented toward the minus end of the MTs, and its tail oriented toward the plus end (Goodenough and Heuser, 1982; Heuser et al., 2009; Movassagh et al., 2010), so that the two MTs crosslinked with dyneins have the same polarity.
 
@@ -54,49 +74,109 @@ We have previously shown by cryo-EM analysis that in vitro also, dynein’s head
 
 In the complex with parallel MTs, the dynein molecules in two opposite orientations are expected to produce force in opposite directions (Figure 1B and Figure 2—figure supplement 1A), as in the models previously proposed (Camalet and Jülicher, 2000; Mitchison and Mitchison, 2010; Riedel-Kruse et al., 2007). Compared to the continuous dynein arrays in axonemes, the arrays of dynein in our complex were much shorter and discontinuous because we used low concentrations of dynein. Nevertheless, the arrangement of dyneins in our complex is analogous to a combination of two dynein arrays on the opposite sides of an axoneme, in the sense that both systems contain two subsets of regularly arranged dynein molecules, and the subsets produce antagonistic forces (compare the axial views in Figure 1B and C). The resemblance in their geometries led us to the idea that these dynein-MT complexes might work as a simple model system to investigate the minimum components required for oscillatory movements that occur in cilia and flagella.
 
-## Motile properties of the dynein-MT complex
+### Motile properties of the dynein-MT complex
 
 The outer-arm dynein preparations used here supported movement of MTs in gliding assays at a speed comparable to those in previous work (Alper et al., 2013; Furuta et al., 2009; Figure 3A, Figure 3—source data 1). We then tested the motility of dynein-MT complexes that contain a pair of MTs crossbridged by dyneins in two different orientations (Figure 3B). When the dynein-MT complexes are adsorbed to a glass surface, the MTs that are directly attached to the glass cannot move, but other MTs in the same complex are allowed to slide relative to the glass-attached MTs. Relative sliding of the MTs leads to disassembly of the complex as soon as the complexes are exposed to an ATP-containing solution. Therefore we used caged ATP and observed the movement of MTs immediately after the ATP was uncaged locally by photolysis. Even though the majority of the complexes are thought to contain groups of dynein molecules that produce force in opposite directions, many of the complexes showed unidirectional sliding of MTs (Video 1), probably because the numbers of molecules in the two groups are not equal and the dominant group would ‘win’. The velocity was variable (Figure 3B, Figure 3—source data 1), with some MTs sliding much faster than those observed in gliding assays. Fast sliding was previously observed with similar dynein-MT complexes but with much higher concentration of dynein, and was interpreted as the effect of cooperation of dyneins aligned with 24 nm periodicity (Aoyama and Kamiya, 2010).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig3-v1.jpg)
+
+**Figure 3.:** (A) Distributions of the MT gliding velocities in usual MT gliding assays in which MTs move over dynein-coated glass surfaces. (B) Relative sliding velocities of the MTs in a dynein-MT complex that contains dyneins in two opposite orientations. Average (mean ± SEM) and median values of the velocities are indicated (n=104 and 94 for A and B, respectively). Also see Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Schematic representation of the experiment (not to scale) and two examples of the traces are shown. Larger beads (500 nm in diameter) were used to measure the maximum force. Red arrows indicate the timing of UV photolysis of caged ATP. In both cases, the maximum force was 30–35 pN.
+
+![Video 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-video1.mp4.jpg)
+
+**Video 1.:** Dynein-MT complexes were adsorbed to the glass surface. Upon photolysis of caged ATP, some MTs (indicated by arrowheads) moved unidirectionally and slid out of the bundles. Recorded at 400 ms/frame.
+
 We have also measured the force produced by the dynein-MT complexes using optical trapping methods (Figure 3—figure supplement 1). The average number of dyneins that crossbridge the pair of MTs was estimated to be ~35 from inspection of the EM images (12 molecules/µm) and the average length of the MT (2.9 ± 0.9 μm [mean ± SD]). Typical traces showed a maximum force of ~30 pN. The value is several times larger than the force produced by single molecules of outer-arm dynein from sea urchin (5–6 pN) (Shingyoji et al., 2015) or Tetrahymena (4.7 pN) (Hirakawa et al., 2000), indicating cooperative force production. On the other hand, it is smaller than the simple sum of the forces produced by each dynein. Dependence of the maximum force on the number of motors differs in different motors (Furuta et al., 2013; Soppina et al., 2009). The fact that the dependence observed here is not proportional to the dynein number may be related to the weak processivity of the molecule. Alternatively, the dynein molecules oriented in the opposite direction may act as a load.
 
-## Crosslinking of the dynein-MT complex with DNA origami structures
+### Crosslinking of the dynein-MT complex with DNA origami structures
 
 The above results showed that a dynein-MT complex alone is not sufficient to generate oscillatory movement, even though it contains two groups of dyneins that produce force in opposite directions: the movement was mostly in one direction and the complex disassembled. To prevent disassembly and mimic axonemal doublet MTs that are interconnected with linkers, we crosslinked the MTs of the dynein-MT complex. A rod-shaped DNA origami of ~84 nm in length was attached to the dynein-MT complex via immotile mutant kinesin motor domains (E237A) (Rice et al., 1999; Figure 1D and E, and Figure 2—figure supplement 2). In vitro motility assays confirmed that addition of enough DNA origami rods (e.g. 2.5 nM DNA rods for the dynein-MT complex with 6.25 µg/ml dynein) can actually prevent disassembly of the complex in the presence of ATP, so that movement of MTs was not detected by fluorescence microscopy (Figure 4—video 1).
 
 In order to allow relative sliding of the MTs and possible oscillation in the presence of ATP, flexible poly-T linkers were inserted between the DNA rod and kinesin (Figure 4, Figure 4—figure supplement 1A). The maximum relative sliding distance was estimated to be ~96 nm in both directions in the ideal situation where all the DNA rods are bound perpendicular to the MTs. The actual sliding distance is expected to be shorter because the initial binding of the DNA rods is not necessarily perpendicular (Figure 4—figure supplement 1B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig4-v1.jpg)
+
+**Figure 4.:** The two groups of dyneins produce opposing forces. DNA rods are expected to crosslink the two MTs of the complex and restrict their relative movement. When the total force produced by one of the groups is stronger, the upper MT moves in one direction and the DNA rods tilt. Movement of the MT would stop when the linkers between the MTs and DNA rods are fully extended. The MT would then move in the opposite direction until the movement is again stopped by the DNA rods.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The ideal situation in which the initial binding angles of all the DNA rods are perpendicular to the microtubules (MTs). Upon addition of ATP, the MTs slide relative to each other, the linkers become stretched (illustrated in red boxes), and the DNA rods would tilt. Assuming the center-to-center distance between the MTs to be 50 nm, and the length of the linker between DNA rods and the MT-binding site 29 nm (see Materials and methods), the maximum sliding distance and tilt angle (θ) are calculated to be ~96 nm and ~62° in both directions. (B) In cases where the initial binding angles are variable, the maximum sliding distance and tilt angle are expected to be smaller than the maximum values.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** In the absence of ATP, the bin with tilt angle less than 5° has the highest population. In the presence of ATP, the tilt angles have a wider distribution, with no apparent preference for smaller angles. The n=324 and 316 for in the absence and presence of ATP, respectively. Also see Figure 4—source data 1 and Figure 4—source data 2.
+
 DNA origami rods crosslinking the dynein-MT complex were clearly visible by EM (Figure 2A and B, indicated by purple arrowheads; Figure 2D). The average number of DNA rods crosslinking a pair of MTs was ~2.4 per µm when 2.5 nM DNA rods were used. As expected, the binding angle in the absence of ATP was variable but centered around the perpendicular (Figure 4—source data 1, Figure 4—figure supplement 2). When ATP was added to the complex, the deviation of the rod angle from the perpendicular increased (p<0.002, Mann-Whitney U-test; Figure 4—source data 2), indicating that the DNA rods tilted because of relative sliding of the MTs.
 
-## Dynein-MT-DNA-origami complexes show oscillatory movements
+### Dynein-MT-DNA-origami complexes show oscillatory movements
 
 We then investigated the motility of the dynein-MT-DNA-origami complexes in detail. Since the expected relative sliding of the MTs was too small to be detected by fluorescence microscopy, we attached a bead to the complex and measured the displacement after photolysis of caged ATP (Figure 5). In some cases, the bead bound to a MT moved unidirectionally and then abruptly went back to the trap center, probably because of detachment of dynein from the MT (e.g. the first ~100 ms after the UV flash in Figure 5A), as observed in previous work using single dynein molecules (e.g. Hirakawa et al., 2000; Sakakibara et al., 1999; Toba et al., 2006).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig5-v1.jpg)
+
+**Figure 5.:** (A) Trace showing displacement of a bead attached to the dynein-MT-DNA-origami complex after UV photolysis of caged ATP (red arrow). Schematic of the experimental set-up is shown in inset (not to scale). A streptavidin-coated bead was captured by the optical trap (trap stiffness 0.052 pN/nm) and attached to a dynein-MT-DNA-origami complex adsorbed to a glass surface. A part of the trace shows oscillatory movement (pink arrowheads). (B) The frequency of the oscillatory movement was measured by the power spectral density (PSD). (C) Steps (blue) detected for the same region by the step-finding algorithm (Kerssemakers et al., 2006). Steps are found in both forward (away from the trap center) and backward (toward the trap center) movements.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Four examples of traces, recorded under the similar conditions as in Figure 5 (trap stiffness 0.021 pN/nm for A and B, 0.052 pN/nm for C and D) are shown. The power spectral density of a part of the trace is shown to the right of each trace, with the peak value indicated. In the trace in (A), the bead showed oscillatory movement (pink arrowheads) after photolysis of caged ATP and then moved for ~200 nm unidirectionally. Steps detected for the boxed region is shown in blue. The trace in (B) was recorded ~100 ms after the UV flash. The bead moved in both directions from the trap center (0 nm of the vertical axis).
 
 The most notable feature observed in the optical trapping measurement of the dynein-MT-DNA-origami complex was oscillatory movements. Typical traces are shown in Figure 5A and Figure 5—figure supplement 1. Although the oscillation was irregular, it was clearly different from the noisy vibration before the UV flash (compare the trace before the UV flash and the region boxed in orange in Figure 5A), and the power spectrum density showed clear peaks (Figure 5B and Figure 5—figure supplement 1, right panels), which were not observed before the UV flash. Since caged ATP was locally photolyzed using a UV spot with a full width at half maximum of ~20 µm and the released ATP diffuses in the solution, we analyzed the traces typically within ~0.5 s after photolysis of ATP. About 48 out of 94 such traces showed sliding movement, and 65% of them exhibited oscillatory movement (at least two forward and two backward displacements, each displacement larger than 10 nm, and the velocity of each movement between 0.1 and 50 µm/s) in some parts of the trace. The amplitude of the oscillatory movements was variable, but typically within the expected maximum displacement (~96 × 2 nm, see above), with the averages of 26.6 and 26.4 nm for the forward (away from the trap center) and backward (back toward the trap center) movement, respectively (Figure 6A and B and Figure 6—source data 1). The velocities of the forward and backward movements during oscillation were also variable (Figure 6A and D and Figure 6—source data 1), but they were both in the same range as the velocity observed in the gliding assay of the dynein-MT complex without DNA rods (Figure 3B; 4.4 µm/s in average). The difference between the averaged velocities of the forward and backward movements (3.8 and 6.4 µm/s, respectively) may be because the force of the optical trap works as a load for the forward movement, whereas it assists the backward movement. Some detachment may also contribute to the faster velocity of the backward movement. However, the average time required for the forward and backward movements (10.1 and 8.3 ms, respectively; Figure 6A and C and Figure 6—source data 1) was substantially longer than the time required for simple detachment from a MT, which was usually less than 1 ms. The frequencies of the oscillation were measured using the power spectrum of the traces (Figure 5B and Figure 5—figure supplement 1, right panels). The frequencies were variable, with an average of 32.9 Hz (Figure 6E, Figure 6—source data 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig6-v1.jpg)
 
-**Figure 6.:** (A) Definition of the distance (df, db), time (tf, tb), and velocity (vf, vb) used for the histograms in (B – D). (B – D) Histograms of the distance (B), time (C), and velocity (D) during the forward (df, tf, vf) and backward (db, tb, vb) movements of the bead attached to the dynein-MT-DNA-origami complex. Average (mean ± SEM) and median values are indicated in each histogram (n=35 for df, tf, vf, and 21 for db, tb, db). (E) A histogram of the frequency of the oscillatory movements (n=29). (F) Histograms of the step size during unidirectional movement (top; n=211) and oscillatory movement (bottom; n=72 for forward and n=44 for backward), fit with multiple Gaussian curves. Main peak positions of the Gaussian functions are indicated. Also see Figure 6—source data 1.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Definition of the distance (df, db), time (tf, tb), and velocity (vf, vb) used for the histograms in (B – D). (B – D) Histograms of the distance (B), time (C), and velocity (D) during the forward (df, tf, vf) and backward (db, tb, vb) movements of the bead attached to the dynein-MT-DNA-origami complex. Average (mean ± SEM) and median values are indicated in each histogram (n=35 for df, tf, vf, and 21 for db, tb, db). (E) A histogram of the frequency of the oscillatory movements (n=29). (F) Histograms of the step size during unidirectional movement (top; n=211) and oscillatory movement (bottom; n=72 for forward and n=44 for backward), fit with multiple Gaussian curves. Main peak positions of the Gaussian functions are indicated. Also see Figure 6—source data 1.
 
 Although many of the traces were noisy, a step-finding algorithm (Kerssemakers et al., 2006) detected stepwise movements in both the unidirectional and oscillatory movements of some traces (Figure 5C, Figure 5—figure supplement 1A). Previous work using single Tetrahymena dynein molecules reported steps of ~8 nm at an extreme condition: very low concentration of ATP (3 µM) (Hirakawa et al., 2000). Cytoplasmic dynein also showed predominantly 8 nm steps (Reck-Peterson et al., 2006; Toba et al., 2006), but the step size depended on load (Belyy et al., 2014; Gennerich et al., 2007). Although many of the traces of our dynein-MT-DNA-origami complex were noisy and we could not accurately measure the step sizes, the peaks of the step sizes were close to 8 nm (6.2, 8.4, and 9.5 nm for unidirectional movement, forward, and backward displacements of the oscillatory movement, respectively; Figure 6F, Figure 6—source data 1). If the oscillatory movements we observed are simply the cycles of unidirectional movement and dissociation of dyneins, we would not detect multiple steps during the backward movements. Thus, the results indicate that both forward and backward displacements during the oscillatory movement are steps of dynein.
 
-## An ensemble of uniformly oriented dynein molecules moves a MT unidirectionally
+### An ensemble of uniformly oriented dynein molecules moves a MT unidirectionally
 
 The above results show that a dynein-MT complex containing two groups of oppositely oriented dyneins can move in an oscillatory manner when the MTs are connected with DNA origami linkers, whereas a dynein-MT complex without the linkers does not oscillate. However, previous work using single or a few molecules of outer-arm dynein also reported bi-directional movements over a range of several tens of nanometers (Shingyoji et al., 1998; Shingyoji et al., 2015). We thus examined whether the oscillatory movement was also observed with a MT interacting with multiple dyneins but in the absence of oppositely oriented dyneins. Two experimental designs were used: optical trapping measurements of MTs gliding over dynein-coated surfaces (Figure 7—figure supplement 1), and dynein-MT complexes in which all the dyneins are in the same orientation (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig7-v1.jpg)
+
+**Figure 7.:** (A) Relative sliding of the MTs observed by fluorescence microscopy. As illustrated in the diagram, dynein-MT complexes that contain dyneins in two opposite orientations were prepared using less brightly fluorescent MTs and adsorbed to the glass. Addition of ATP disassembles the complex, leaving MTs with dyneins oriented in the same way. New MTs (more brightly fluorescent) were added in the absence of ATP to make the complexes. Average (mean ± SEM) and median values of the velocities are indicated (n=65). (B) Relative sliding of the MTs measured in optical trapping assays. Trap stiffness: 0.055 pN/nm. Also see Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Trap stiffness: 0.015 pN/nm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Four examples recorded under the same condition as in Figure 7B.
 
 For the experiments in Figure 7—figure supplement 1, a bead (200 nm in diameter) was attached to a MT that was bound to the dynein-coated surface, and displacement after UV photolysis of caged ATP was measured in optical trapping assays. The number of dynein molecules interacting with a MT (4.7 ± 1.9 µm [mean ± SD]) was roughly estimated to be 24 at a dynein concentration of 12.5 µg/ml (see Materials and methods). In contrast to the previous results using single or a few dyneins (Shingyoji et al., 1998; Shingyoji et al., 2015), the MTs moved smoothly in one direction (Figure 7—figure supplement 1).
 
 We have also examined the motility powered by a unidirectional array of dyneins. Dynein-MT-complexes that normally contain oppositely oriented dyneins were disassembled by ATP, and new MTs were added in the absence of ATP to make dynein-MT complexes in which all the dyneins are oriented in the same way (illustrated in Figure 7A). The newly added MTs were biotinylated to enable binding of avidin-coated beads in optical trapping experiments and were also more brightly labeled so that they could be identified in the dynein-MT complex. In gliding assays, the MTs in these complexes moved in one direction with an average speed of 6.8 µm/s (Figure 7A, Figure 7—source data 1), which is faster than those in the usual surface-gliding assay, as reported previously (Aoyama and Kamiya, 2010). Optical trapping experiments also showed at a higher resolution that the movement was unidirectional (Figure 7B and Figure 7—figure supplement 2), clearly different from the traces observed with the complex containing oppositely oriented dyneins (Figure 5A and Figure 5—figure supplement 1). Thus, we conclude that an ensemble of multiple uniformly oriented dynein molecules moves a MT unidirectionally, and that two groups of oppositely oriented dyneins are required for oscillation.
 
-## Structures of dynein in the dynein-MT-DNA-origami complex
+### Structures of dynein in the dynein-MT-DNA-origami complex
 
 During oscillatory movement, the two groups of oppositely oriented dynein molecules are likely to have different conformations. Although preliminary, we have extracted dynein images from the negative-stain EM images and tested if we could detect structural differences (Figure 2—figure supplement 3). Previous structural analysis of axonemes revealed that the heads of dynein are shifted toward the MT minus end in the presence of ATP or ADP·vanadate, or in beating flagella (Burgess, 1995; Lin and Nicastro, 2018; Movassagh et al., 2010; Sale et al., 1985; Ueno et al., 2014), so that the length of the dynein molecule measured along a MT increases. Thus, we have also measured the length of dynein in our negative stain images. Although the apparent length measured in 2D images is thought to be affected by the viewing angle so that the measured values are not precise, increase of the length was detected for both orientations of dyneins in the presence of ATP (p<0.00001, T-test), suggesting that their structures are different from the rigor structure (Figure 2—figure supplement 4, Figure 2—source data 1). No difference was detected between the average lengths of the two oppositely oriented dyneins.
 
 Previous EM studies reported differences in the arrangement of the heads between Chlamydomonas outer-arm dynein in the rigor state and in the presence of ATP or ADP·vanadate (Goodenough and Heuser, 1982; Lin and Nicastro, 2018; Movassagh et al., 2010). Our no-nucleotide images (Figure 2—figure supplement 3B) seemed to agree with the 2D projection of the previously reported cryo-electron tomography structure in the apo state (Figure 2—figure supplement 3D; Movassagh et al., 2010), in which the three heads were arranged like stacked plates. However, the head arrangement was more variable in our images with ATP (Figure 2—figure supplement 3C). Although the current analysis using negative-stain 2D images did not allow us to prove structural changes, comparison of the two oppositely oriented dyneins suggested differences in the arrangement of the heads in the two groups. The results show that our dynein-MT-DNA-origami complex is a useful system for future structural analysis of dynein during oscillation.
 
-## Bending motions of the dynein-MT-DNA-origami complex
+### Bending motions of the dynein-MT-DNA-origami complex
 
 In cilia and flagella, which are free to move in water, relative movements of the neighboring doublet MTs lead to bending motions. On the other hand, the dynein-MT-DNA-origami complexes in our optical trapping experiments were fixed to the glass surface along the whole length. In order to investigate whether the dynein-MT-DNA-origami complex has an ability to produce bending motions, we searched for a complex which is held at one point. Whereas a majority of the complexes seemed to be fixed to the glass along their entire length, there were some complexes attached only partially either to a bead or to the glass. Some examples are shown in Figure 8, Figure 8—figure supplement 1, Videos 2 and 3. Although our fluorescence microscopy setup did not allow us to detect high-frequency oscillations, repetitive bending motions were indeed observed. The plot in Figure 8B shows that the complex can bend in both directions compared to the position before ATP release. Thus, it is likely that the bending motions in the opposite directions are powered by oppositely oriented dyneins, not just the cycles of force production and detachment. Sometimes a part of the MT bundle separated during bending motions as in Figure 8—figure supplement 1A, probably because this region did not have DNA origami attachment or because the DNA origami was pulled away during bending. Using these regions, relative sliding distances of the MTs were estimated to be approximately 130 and 370 nm for the frames #38 of Figure 8A and #13 of Figure 8—figure supplement 1A, respectively. Sliding distances longer than the expected maximum value (~190 nm; see Figure 4—figure supplement 1) are thought to be caused by rearrangement of the DNA origami during MT sliding. Future studies at a higher resolution may reveal bending motions at higher frequencies without separation of MTs. Nevertheless, the bending motions observed here indicate that a system composed of MTs, oppositely oriented dyneins, and inter-MT crosslinkers has the ability to bend repetitively.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig8-v1.jpg)
+
+**Figure 8.:** (A) Snapshots during movement of the dynein-MT-DNA-origami complex shown in Video 2. The number indicated in each frame corresponds to the frame number in the movie (recorded at 10 frames/s). The UV was flashed at frames #16, 18, and 21, each for 50 ms. The complex is attached to a bead while one end (red arrowheads) is free, which moves with respect to the position before the UV flash (cyan arrowhead) as the complex bends repeatedly. Bar: 5 µm. (B) Displacement of the complex during bending motion. The plot shows the lateral (x) positions of the complex observed in the boxed region in A. The average position before the UV flash (frames #5–15) was taken as 0 on the vertical axis. Note that the displacement is to both the plus and minus directions. (C) Diagram illustrating a model explaining the movement.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/76357/elife-76357-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Movement of the complex was observed under the same experimental conditions as in Figure 8, but in this example, one end of the complex (bottom of the images) seemed to be attached to the glass. The movie of this complex is shown in Video 3. The numbers indicated in A and B correspond to the frame numbers in Video 3 (recorded at 10 frames/s). (A) Snapshots during movement. UV was flashed at frames #5, 15, 25, 35, 45, and 55, each for 50 ms. After the UV flash, the middle part of the complex repetitively bows outward and becomes separated (orange arrowheads), presumably because there are not enough DNA origami and dynein molecules to hold the two MTs together when they are bent. Bar: 5 µm. (B) Displacement of the complex during bending motion. The plot shows the lateral (x) positions of the two MTs (or MT bundles) observed in the boxed region in A, where the complex separated and one of the MTs bowed outward repeatedly. The average position before UV flash was taken as 0 on the vertical axis. (C) Diagram illustrating a model explaining the movement.
+
+![Video 2.](https://cdn.elifesciences.org/articles/76357/elife-76357-video2.mp4.jpg)
+
+**Video 2.:** Movie of the dynein-MT-DNA-origami shown in Figure 8. The complex is fixed to beads while one of the ends is free in solution. After UV photolysis of caged ATP (frames #16, 19, 21), the complex bends repeatedly. Recorded at 100 ms/frame.
+
+![Video 3.](https://cdn.elifesciences.org/articles/76357/elife-76357-video3.mp4.jpg)
+
+**Video 3.:** Movie of the dynein-MT-DNA-origami shown in Figure 8—figure supplement 1. Movement of the dynein-MT-DNA-origami complex was recorded under the same conditions as in Video 2 but without beads. One end of the complex is attached to the glass surface, while the MTs in the upper part of the image slide relative to each other, which causes bending and separation of the MTs in the middle part. UV flash at frames #5, 15, and 25. Recorded at 100 ms/frame.
 
 ## Discussion
 
@@ -114,7 +194,7 @@ The dynein-MT-DNA-origami complex developed here contains multiple dynein molecu
 
 ## Materials and methods
 
-## Dynein, kinesin, and microtubules
+### Dynein, kinesin, and microtubules
 
 A wild-type strain (137c-) of Chlamydomonas reinhardtii was used. Flagella were isolated using dibucaine and demembranated as described previously (Yagi et al., 2009). For extraction of dynein, axonemes were incubated in 0.6 M KCl in HMDE solution (30 mM HEPES, 5 mM MgSO4, 1 mM dithiothreitol, 1 mM EGTA, pH = 7.4) for 30 min at 4°C. For some preparations, axonemes were first incubated in HMDEK (HMDE with 50 mM CH3COOK) containing 0.1 mM ADP for 1 min, centrifuged, and then incubated in 0.6 M KCl in HMDE for 20 min two times. After centrifugation, the excess salt was removed from the supernatant fraction either by overnight dialysis or by Amicon Ultra-4 100 K centrifugal filter using HMDEK. The resulting dynein suspension was mixed with 23% sucrose, aliquoted, and stored in liquid nitrogen.
 
@@ -122,7 +202,7 @@ The E237A mutant of human ubiquitous kinesin, which is ATPase-defective with the
 
 Tubulin was purified from porcine brain tissue (Castoldi and Popov, 2003). Rhodamine-labeled and biotinylated tubulin was prepared using tetramethylrhodamine (C-1171, Molecular Probes) and Sulfo-NHS-LC-LC-Biotin (Thermo Scientific), respectively. For fluorescently labeled MTs, rhodamine-labeled tubulin and unlabeled tubulin were mixed in the ratio 1:9. For MTs used to bind beads in the optical trapping experiments, rhodamine-labeled tubulin, biotinylated tubulin, and unlabeled tubulin were mixed in the ratio 1:2:7. MTs were polymerized in a polymerizing solution (80 mM PIPES (pH 6.8), 1 mM EGTA, 5 mM MgSO4, 1 mM DTT, 0.5 mM GTP, and 5 or 10% DMSO) for 30 min, stabilized with taxol and stored in liquid nitrogen.
 
-## DNA origami
+### DNA origami
 
 Single-stranded P8064 DNA purchased from tilibit nanosystems GmbH (Garching, Germany) was used as the scaffold for DNA origami. Unmodified staple strands were purchased from Sigma-Genosys as Oligonucleotide Purification Cartridge (OPC) grade. Amino-modified staples, which have three amino-modified C6dT oligonucleotides near the 5’ end, were purchased from IDT as Dual-HPLC-purified, or from Japan Bio Service (Tsukuba, Japan) as HPLC-purified. The SNAP-ligand was covalently attached to the amino-modified staples by mixing the staples and BG-GLA-NHS (NEB, dissolved in DMSO) as previously described (Derr et al., 2012; Masubuchi et al., 2018). The label efficiency of the SNAP-ligand was estimated to be 95–98% by a gel-shift assay using purified SNAP-tag protein. The modified staples are described in Supplementary file 1.
 
@@ -130,15 +210,15 @@ The rod type DNA origami nanostructure composed of 30 helices was designed using
 
 The maximum length of the linker was estimated assuming the following: the unit length of ssDNA: 0.63 nm, the unit length of amino acids: 0.34 nm, the unit length of a carbon chain: 0.13 nm, and the size of the SNAPf part: 2 nm. Using these values, the maximum length of the linker including 30 nucleotides of poly-thymidine, C6dT oligonucleotide, SNAPf, and an amino acid linker between kinesin and SNAPf, was calculated to be approximately 29 nm.
 
-## Dynein-MT-DNA-origami complex
+### Dynein-MT-DNA-origami complex
 
 About 15–20 nM DNA rods were incubated with kinesin E237A at a molar ratio of 1:8 in HEM buffer (20 mM HEPES, 1 mM EGTA, 10 mM MgSO4, pH = 7.8) for 30 min at room temperature. Meanwhile, the dynein-MT complex was prepared by incubating 10–20 µg/ml dynein preparation with ~40 µg/ml MTs in HEM for 8–10 min at room temperature. Dynein-MT and DNA-kinesin were then mixed so that the final concentrations of dynein, MTs, DNA, and kinesin were 6.25 or 12.5 µg/ml, 25 µg/ml, 2.5 nM, and 20 nM, respectively, and incubated for 10 min at room temperature. For the dynein-MT complex without DNA-kinesin, HEM was added instead of DNA-kinesin.
 
-## Preparation of the dynein-MT-DNA complex with a unidirectional array of dynein
+### Preparation of the dynein-MT-DNA complex with a unidirectional array of dynein
 
 For preparation of the dynein-MT complex that has dyneins oriented in the same way (Figure 7), dynein-MT complexes were prepared using less-brightly fluorescent MTs (rhodamine tubulin: unlabeled tubulin = 3:97) at a final concentration of dynein and MTs of 30 and 15 µg/ml, respectively, and adsorbed to the glass surface of a chamber. The complexes, which are thought to contain oppositely oriented dyneins, were then separated by addition of 0.5 mM ATP in HEM. After perfusion of HEM containing 1 mM ADP, brighter MTs (rhodamine tubulin:biotinylated tubulin:unlabeled tubulin = 1:2:7) were added to make dynein-MT complexes that contain dyneins in a single orientation. Biotinylated tubulin was used for binding to avidin-coated beads in optical trapping experiments.
 
-## EM and image analysis
+### EM and image analysis
 
 The sample was applied onto a carbon-coated grid and stained with 1–2% uranyl acetate. For observing the complex in the presence of ATP, ADP (final: 1 mM) was first added to the sample on a grid (Yagi, 2000). After 1 min, ATP (final: 0.1 mM) was added and the sample was immediately stained with uranyl acetate. The samples were observed using an FEI Tecnai F-20 electron microscope equipped with a Gatan Orius 831 CCD camera. The images were adjusted for contrast and Gaussian-filtered in Adobe Photoshop to reduce noise.
 
@@ -150,7 +230,7 @@ Image segments that belong to the same group were aligned and averaged in the fo
 
 The length of the dynein molecule along the MT axis was measured in each average image. The length of the dynein image projected onto the MT axis was defined as the dynein length (Figure 2—figure supplement 4, inset). Distributions of the lengths in the presence and absence of ATP were compared statistically (Welch’s T-test; Figure 2—source data 1).
 
-## In vitro motility assays
+### In vitro motility assays
 
 Glass chambers were made using two pieces of cover glass (24 mm × 32 mm [No. 24321, Muto pure chemicals, Japan] and 18 mm × 18 mm [No. 0101030, Marienfeld]). The glass was cleaned with KOH, and then rinsed with H2O and ethanol for MT-gliding assays (Inoue and Shingyoji, 2007). For optical trapping experiments of the dynein-MT complex, uncleaned glass was used because more beads adhered non-specifically to the cleaned glass. The size of the chamber was ~18 mm × 5 mm.
 
@@ -158,7 +238,7 @@ MT-gliding assays over dynein-coated glass surfaces (Figure 3A) were performed b
 
 For motility assays of the dynein-MT complex with and without DNA (Figure 3B, Video 1, and Figure 4—video 1), the complex preformed in solution was perfused into the chamber. After applying the ADP solution and assay buffer (without MTs), the MT movement after caged ATP photolysis was observed as above. The velocities were calculated from the videos recorded at the frame rates of 100–400ms.
 
-## Optical trapping
+### Optical trapping
 
 Optical trapping experiments were performed as previously described using a custom-made microscope system (Kinoshita et al., 2018). After perfusion of the dynein MT-complex with and without DNA-kinesin, 1 mM ADP in the HEM buffer, and then the assay buffer (1 mM caged ATP [Dojin], 0.1 mM taxol, 20 mM glucose, 0.5% [v/v] β-mercaptoethanol, 20 mg/ml catalase, 100 μg/ml glucose oxidase, and 1 unit/ml hexokinase in HEM) with streptavidin-coated beads and 0.2 mg/ml casein were introduced into the glass chamber.
 
@@ -168,7 +248,7 @@ For the optical trapping experiments of MTs gliding over dynein-coated surfaces 
 
 Stepping events were analyzed by a step-finding algorithm by Kerssemakers et al., 2006. To statistically optimize the step finding procedure, they defined a parameter S, which is the ratio of the χ2 of the counter fit to χ2 of the best fit. The S changes with number of steps, and the highest peak S gives the best fit. For the analysis shown in Figure 6F, only those data that had a clear peak in S were used. The detected step sizes were calibrated with attenuation factors to account for the compliance of the bead-MT linkage and that of dynein (Kinoshita et al., 2018). Fitting with Gaussian functions was performed by graphic software (Datagraph, Visual Data Tools, Inc).
 
-## Observation of bending motions
+### Observation of bending motions
 
 Avidin-coated beads (200 nm in diameter) were perfused into a glass chamber. After washing with HEM buffer, dynein-MT-DNA-origami complexes prepared as above using 6.25 µg/ml (final) dynein and rhodamine-labeled MTs were introduced into a chamber and incubated for 5 min. The assay buffer containing 1 mM caged ATP, 0.5 mM ADP, and 0.3 mg/ml casein was then perfused and the sample was observed under a fluorescence microscope. Although the majority of complexes firmly attached to the glass and did not show movement, some complexes appeared to be attached only by a part of their length while the other ends were free and showed movement. For some experiments, avidin-coated beads were first introduced to the chamber, and dynein-MT-DNA-origami complexes made with rhodamine and biotin-labeled MTs were bound to the beads.
 

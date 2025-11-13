@@ -36,7 +36,7 @@ Here, the molecular mechanisms underlying vessel leakage in eye diseases were st
 
 ## Results
 
-## Reduced vessel leakage from KdrY949F/Y949F retinopathy models
+### Reduced vessel leakage from KdrY949F/Y949F retinopathy models
 
 The Vegfr2Y949F/Y949F mouse (henceforth denoted KdrY949F/Y949F), lacks the pY949 phosphosite of VEGFR2 and therefore fails to induce activation of c-Src. We have previously shown that KdrY949F/Y949F exhibits suppressed vessel permeability in the dermis specifically in response to VEGFA (Li et al., 2016a). The stringent BRB of the retinal vasculature is not expected to be regulated by VEGFA, however, in ocular disease such as retinopathy, the BRB may be broken down (Urias et al., 2017); in accordance, proliferative retinopathies are characterized by increased transvessel flow and edema (Campochiaro, 2015; Kim et al., 2016; Luo et al., 2011; Stahl et al., 2010a). We therefore set out to determine whether the pY949 signaling pathway regulates pathologic leakage in the setting of proliferative retinopathy.
 
@@ -44,17 +44,84 @@ To induce retinopathy, KdrY949F/Y949F mice and their wild-type littermates (henc
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54056/elife-54056-fig1-v2.jpg)
 
-**Figure 1.:** Kdr retinas at D14.Y949F/Y949F(A) Representative CNV lesions imaged from whole mount choroid tissue, collected at day (D) 14 after laser injury, from Kdr and Y949F/Y949FKdr littermates, immunostained for isolectin B4 (IB4). Scale bar = 100 µm. Dotted red line highlights the extent of lesion formation. (+/+B) Quantification of average lesion size at D14 after injury. n = 60–67 lesions per group from 9 to 11 mice per group. ns = not significant p=0.6882. (C) Representative images of D14 lesions from Kdr and Y949F/Y949FKdr littermates immunostained for IB4 (red), showing accumulation of tail-vein injected, fluorescent 100 nm microspheres (white) in the tissue around the lesions. Insets enlarged (right) with microspheres shown as black dots on white background. Scale bar = 100 µm. Inset scale bar = 25 µm. Arrows point to areas of microsphere accumulation. (+/+D) Quantification of the average area of accumulated microspheres per image after 2 min of circulation. n = 35–74 lesions per group from 7 to 14 mice per group. ***p<0.001 p=0.0006.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** (A) Representative CNV lesions imaged from whole mount choroid tissue, collected at day (D) 14 after laser injury, from KdrY949F/Y949F and Kdr+/+ littermates, immunostained for isolectin B4 (IB4). Scale bar = 100 µm. Dotted red line highlights the extent of lesion formation. (B) Quantification of average lesion size at D14 after injury. n = 60–67 lesions per group from 9 to 11 mice per group. ns = not significant p=0.6882. (C) Representative images of D14 lesions from KdrY949F/Y949F and Kdr+/+ littermates immunostained for IB4 (red), showing accumulation of tail-vein injected, fluorescent 100 nm microspheres (white) in the tissue around the lesions. Insets enlarged (right) with microspheres shown as black dots on white background. Scale bar = 100 µm. Inset scale bar = 25 µm. Arrows point to areas of microsphere accumulation. (D) Quantification of the average area of accumulated microspheres per image after 2 min of circulation. n = 35–74 lesions per group from 7 to 14 mice per group. ***p<0.001 p=0.0006.
 
 To extend this finding we applied another common retinopathy model, oxygen-induced retinopathy (OIR). In the OIR model, mice are exposed to 75% oxygen during postnatal (P) days 7–12 after which they are returned to normal atmosphere (21% oxygen). During the first stage, VEGFA expression is suppressed which leads to apoptosis of capillaries in the central region of the retina (Lange et al., 2009). In the second stage, retinal VEGFA expression is induced as a consequence of moving mice from high oxygen to normal atmosphere (relative hypoxia), leading to the formation of pathological neovascular tufts, characterized by being disorganized and leaky (Connor et al., 2009). To determine the role of VEGFR2 pY949 signaling in regulating leakage from neovascular tufts, 25 nm fluorescent microspheres, a particle size chosen as the smallest commercially available, were injected in the tail vein of P17 pups, and allowed to circulate for 15 min before the remaining microspheres were flushed away by cardiac perfusion.
 
 As expected, retinas from P17 Kdr+/+ pups submitted to OIR had a considerable central avascular region remaining following the early phase of vessel destruction and also abundant retinal neovascular tuft formation. Of note, at P17, KdrY949F/Y949F mice had a reduction in tuft formation compared to the Kdr+/+ mice (Figure 2A–C; see Figure 2—figure supplement 1A for images without overlay). This was not due to differences in body weight of P17 pups (Table 1). The reduced tuft formation was a result of suppressed pathological angiogenesis during the P12-17 period when mice were kept in normal atmosphere following the hyperoxia period. At P12, the morphology of the retina vasculature was similar for KdrY949F/Y949F and Kdr+/+ littermates (Figure 2—figure supplement 1B–C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54056/elife-54056-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative images of whole mount retinas from KdrY949F/Y949F and Kdr+/+ mice, collected on postnatal day (P)17 after OIR challenge, stained with isolectin B4 (IB4). Avascular tissue in the central retina is marked with purple overlay and neovascular tufts, clusters of disordered vessels, are indicated with blue overlay in the insets. See Figure 2—figure supplement 1A for corresponding images without color overlays. Scale bar = 500 µm. Inset scale bar = 100 µm. (B) Neovascular tuft coverage as percentage of total retina area. (C) Avascular area as percentage of total retina area. n = 10–14 mice, mean value of both eyes;***, p<0.00 p=0.003; ns, not significant p=0.0775. (D) Representative images of tufts from KdrY949F/Y949F and Kdr+/+ mice immunostained for isolectin B4 (IB4;red), showing accumulation of tail-vein injected green-fluorescent 25 nm microspheres (white) in the tissue around the tufts. Insets enlarged (right) with microspheres shown as black dots on white background. Scale bar = 25 µm. Inset scale bar = 10 µm. Dotted line representing the region of IB4 staining. Arrows point to accumulated microspheres; red arrows for microspheres within the IB4 positive region, blue arrows for microspheres away from the vessel wall. (E) Quantification of D, showing average area of accumulated extravasated microspheres, normalized to tuft area, per image after 15 min of circulation. n = 6–7 mice per group, 3–11 images per mouse; **p<0.01 p=0.0033.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54056/elife-54056-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Whole mount retinas from KdrY949F/Y949F and Kdr+/+ as shown in Figure 2 but displayed without overlays. Panels showing close up of tuft detail are placed to the right-hand side of each full retina image. Scale bar = 500 µm. Inset scale bar = 100 µm. (B) Whole mount retinas collected at P12, after the vessel destruction phase of OIR and before extensive vessel regrowth, stained with isolectin B4 (IB4), showing no difference in the extent of vessel loss between KdrY949F/Y949F and Kdr+/+ mice, Scale bar = 500 µm. Avascularity shown with purple overlay. (C) Quantification of B).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54056/elife-54056-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative images of CD68 (green) and CD45 (purple) positive inflammatory cells within tuft regions of KdrY949F/Y949F and Kdr+/+ mice with IB4 (white) vessel area shown in the far right panel. (B) CD68 area and (C) CD45 area shown as the percentage of the total tuft area. Scale bar = 100 µm.
+
+**Table 1.**
+ Body weight at P17 of mice subjected to OIR.Table 1—source data 1.Excel file containing the bodyweight information for individual mice used in OIR experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mouse strain/genotype</th>
+      <th>Body weight (+ / - SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kdr+/+</td>
+      <td>6.53 (0.94)</td>
+    </tr>
+    <tr>
+      <td>KdrY949F/Y949F</td>
+      <td>6.86 (0.65)</td>
+    </tr>
+    <tr>
+      <td>Sh2d2aiECWT</td>
+      <td>5.75 (0.76)</td>
+    </tr>
+    <tr>
+      <td>Sh2d2aiECKO</td>
+      <td>5.68 (1.02)</td>
+    </tr>
+    <tr>
+      <td>VEC-Y685F – wildtype littermates</td>
+      <td>6.49 (1.02)</td>
+    </tr>
+    <tr>
+      <td>VEC-Y685F</td>
+      <td>6.37 (1.02)</td>
+    </tr>
+    <tr>
+      <td>VEC-WT – wildtype littermates</td>
+      <td>5.83 (0.76)</td>
+    </tr>
+    <tr>
+      <td>VEC-WT</td>
+      <td>5.94 (0.92)</td>
+    </tr>
+  </tbody>
+</table>
+
 Importantly, extravascular accumulation of microspheres in regions of neovascular tuft growth was significantly suppressed in KdrY949F/Y949F retinas compared to Kdr+/+ (Figure 2D–E). Note that vessel-proximal microspheres, sticking to the either side of the wall of the disorganized tufts, were not included in the quantification. We conclude that disrupting pY949 signaling during OIR leads to a suppression of pathological vessel leakage and also to a reduction in pathological neoangiogenesis. The decrease in tuft formation in itself results in reduced overall leakage, however, it should be noted that remaining tufts leaked less in OIR-challenged KdrY949F/Y949F mice (Figure 2E). Moreover, the extent of infiltration of inflammatory CD68+ and CD45+ cells were similar at P17 for the KdrY949F/Y949F and Kdr+/+ strains indicating that the enhanced barrier in the KdrY949F/Y949F pups was specific for macromolecules and did not exclude inflammatory cells (Figure 2—figure supplement 2A–C).
 
-## pY949 signaling axis results in altered VE-cadherin phosphorylation
+### pY949 signaling axis results in altered VE-cadherin phosphorylation
 
 The canonical signalling pathway downstream of the pY949 phosphosite consists of the Src Homology 2 (SH2) containing adaptor-protein TSAd (gene designation Sh2d2a), which binds to pY949 with high affinity. TSAd in turn recruits c-Src, leading to the phosphorylation of VE-cadherin (illustrated in Figure 3A; Li et al., 2016a; Sun et al., 2012). To assess the role of these downstream players in retinopathy, we expanded our studies using mice treated with tamoxifen at P12 to specifically delete TSAd expression in endothelial cells, Sh2d2afl/fl; Cdh5-CreERT2 (denoted Sh2d2a iECKO). After OIR challenge of Sh2d2aiECKO mice along with their wild-type littermates (Sh2d2afl/fl; referred to as Sh2d2aiECWT), tuft formation was reduced in Sh2d2a iECKO mice to a similar extent as seen with KdrY949F/Y949F mice (Figure 3B–C: see Figure 3—figure supplement 1A for images without overlay) while the avascular area was similar in the Sh2d2aiECKO and Sh2d2aiECWT mice at P17 (Figure 3D). Cre recombination in the Sh2d2aiECKO model was approximately 80% as assessed by vessel area (Figure 3—figure supplement 1B,C), in agreement with immunoblotting analysis performed earlier to show the efficiency of Sh2d2a excision in this model (Gordon et al., 2016). The distribution of recombined endothelial cells was similar between neoangiogenic tufts and the normal vasculature.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54056/elife-54056-fig3-v2.jpg)
+
+**Figure 3.:** (A) Graphic representation of VEGFR2 signaling cascade initiated by Y949 phosphorylation. (B) Representative images of whole mount retinas from Sh2d2aiECKO and Sh2d2aiECWT mice, collected on postnatal day (P)17 after OIR challenge, stained with isolectin B4 (IB4) with green color marking GFP-positive cells indicating TSAd-deficiency. Avascular area shown with purple overlay, neovascular tufts shown as blue overlay in inset. Scale bar = 500 µm. Inset scale bar = 100 µm. (C) Neovascular tuft coverage as percentage of total retina area. (D) Avascular area as percentage of total retina area. n = 10–15 mice, mean value of both eyes ***, p<0.001 p=0.0001; ns, not significant p=0.3680 E) Representative maximum intensity projections of tufts from KdrY949F/Y949F and Kdr+/+ mice immunostained for isolectin B4 (IB4; white), VE-cadherin (green), and pY418 c-Src (magenta). Scale bar = 25 µm. (F) Quantification shows percentage tuft junctional area, as defined by VE-cadherin immunostaining, positive for pY418 c-Src. n = 7–8 retinas from four mice per group; mean value from four images per retina ns = not significant p=0.6334. (G–H) Representative maximum intensity projections of tufts from KdrY949F/Y949F and Kdr+/+, as well as non-tuft regions from Kdr+/+ retinas immunostained for VE-cadherin (green) and G) VE-cadherin pY658 (red) or H) for VE-cadherin pY685 (red). (I) Quantification of percentage pY658 immunostaining in tufts, in relation to total tuft junctional (VE-cadherin) area. (J) Quantification of percentage pY685 immunostaining as in I. Scale bars in G, H = 50 µm. Inset scale bar = 10 µm. n = 4–6 mice, one retina per mouse, from three independent experiments, 5–9 images per group. ns, not significant p=0.4845, **p<0.01 p=0.0086.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54056/elife-54056-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Whole mount retinas from Shd2daiECKO and Sh2d2aiECWT mice, as shown in Figure 3 but displayed without overlays. Panels showing close up of tuft detail are placed to the right-hand side of each full retina image. Scale bar = 500 µm. Inset scale bar = 100 µm. (B) OIR timeline, showing the period of increased oxygen concentration with timing of tamoxifen administration given for the experiments on Shd2daiECKO and Sh2d2aiECWT mice. (C) Bar graph showing the observed Cre-induced recombination in Sh2d2afl/fl animals crossed with an mT/mG strain. Recombination calculated as the GFP fluorescent area divided by the IB4 positive total vascular area. (D) Kdr+/+ retinas, immunostained for VE-cadherin (green) and VE-cadherin pY658 (magenta; upper) or VE-cadherin pY685 (magenta;l ower) showing phosphorylation of VE-cadherin in capillaries and veins and increased staining in neovascular tufts. Scale bar = 25 µm. A, artery.
 
 The cytoplasmic tyrosine kinase c-Src phosphorylates VE-cadherin in vitro (Adam et al., 2010; Orsenigo et al., 2012) and its activity correlates with detection of phosphorylated VE-cadherin in vivo (Orsenigo et al., 2012). Immunostaining for pY418, a tyrosine residue in c-Src kinase domain required for maximal kinase activity, revealed active c-Src at the periphery of the retina and elevated levels in the neovascular tufts of KdrY949F/Y949F and Kdr+/+ mice (Figure 3E). Of interest, some pY418 c-Src immunostaining was localized at cell-cell junctions as indicated by co-staining with VE-cadherin. Notably, the level of junctional pY418 c-Src was similar in tufts from KdrY949F/Y949F and Kdr+/+ mice (Figure 3F), indicating that pY949 signaling does not account for c-Src activity at cell-cell junctions in this model. Thus, signaling through pY949 in VEGFR2 appeared not to contribute to regulation of c-Src kinase activity at endothelial junctions in the retina vasculature.
 
@@ -62,9 +129,17 @@ As VE-cadherin is the major component of adherens junctions and thus vital for v
 
 The underlying vascular plexus showed positive immunostaining with the VE-cadherin phosphoantibodies as well, though to a lesser degree (Figure 3G,H). Arteries throughout the retina, including in the neovascularized regions, essentially lacked immunostaining for pY685 and pY658 (Figure 3—figure supplement 1C), in keeping with previous findings on the lack of arterial VE-cadherin phosphorylation at these residues (Orsenigo et al., 2012).
 
-## Involvement of VE-cadherin pY685 in lesion formation and vessel leakage
+### Involvement of VE-cadherin pY685 in lesion formation and vessel leakage
 
 To corroborate the role of pY685 VE-cadherin in VEGFR2-regulated neovascular lesion formation, we performed immunostaining for VE-cadherin and pY685 VE-cadherin on choroid tissue from KdrY949F/Y949F and Kdr+/+ mice after CNV. Lesions at D14 displayed pY685 VE-cadherin immunostaining, though the intensity of the pY685 signal was significantly lower in the KdrY949F/Y949F lesions (Figure 4A,B). This result suggests that junctional VE-cadherin phosphorylation at Y685 is dependent on pY949 VEGFR2 signaling also in the choroid vasculature.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54056/elife-54056-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative CNV lesions imaged from whole mount choroid tissue, collected at D14 from KdrY949F/Y949F and Kdr+/+ littermates, immunostained for VE-cadherin (green), pY685 (magenta) and isolectin B4 (IB4; white). Scale bar = 100 µm; dotted red line highlights the extent of lesion formation in the IB4 channel. (B) Quantification of junctional pY685 immunostaining in the lesions. Junctional intensity expressed as the fold reduction of intensity as compared to the average Kdr+/+ lesion intensity. n = 14–28 lesions per group from 3 to 5 mice per group, **p<0.01 p=0.0071. (C) Whole mount retinas from VEC-Y685F mice and VEC-WT mice, collected on P17 after OIR challenge, stained for IB4. Avascular area shown with purple overlay, neovascular tufts shown as blue overlay in inset. Scale bar = 500 µm. Inset scale bar = 100 µm. (D) Tuft coverage and E) avascular area. n = 8–11 mice per group, average of two retinas per mouse. **p<0.05 p=0.0012; ns = not significant, p=0.1535. (F) Representative images of accumulation of 25 nm green-fluorescent microspheres (white) in VEC-Y685F and VEC-WT control mice stained for isolectin B4 (IB4; red), showing accumulation in the tissue around the tufts. Insets enlarged (right) with microspheres shown as black dots on white background. Scale bar = 25 µm. Inset scale bar = 10 µm. Dotted line representing the region of IB4 staining. Arrows point to accumulated microspheres; red arrows for microspheres within the IB4 positive region, blue arrows for microspheres away from the vessel wall. (G) Quantification of F showing average area of accumulated extravasated microspheres, normalized to tuft area, per image after 15 min of circulation. n = 5–7 mice per group; 10–18 images per mouse **p<0.01, p=0.0016.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54056/elife-54056-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Whole mount retinas collected at P17 from VEC-WT and WT littermate controls stained with isolectin B4 (IB4). Insets to show detail. Scale bar = 500 µm. Inset scale bar = 50 µm. Avascularity shown with purple overlay, neovascular tuft formation shown with blue overlay. (B) Quantification of tuft formation. (C) Quantification of avascular area. (D) Whole mount retinas collected at P12, after the vessel destruction phase of OIR and before extensive vessel regrowth, stained with isolectin B4 (IB4), showing no difference in the extent of vessel loss between VEC-WT and littermate controls (C57Bl/6 WT), and VEC-Y685F and littermate controls (C57Bl/6 WT). Scale bar = 500 µm. Avascularity shown with purple overlay. (E) Quantification of D. (F) Representative maximum intensity projections of tufts from VEC-WT and VEC-Y685F mutant mice immunostained for VE-cadherin pY658 and pY685, Scale bar = 25 µm. (G) Extravasation of 25 nm microspheres in VEC-WT and WT littermate controls stained with isolectin B4 (IB4). Insets to show detail. Insets enlarged (right) with microspheres shown as black dots on white background. Dotted line representing the region of IB4 staining. Scale bar = 25 µm. Inset scale bar = 10 µm. Arrows point to accumulated microspheres.; red arrows for microspheres within the IB4 positive region, blue arrows for microspheres away from the vessel wall. (H) Quantification of microsphere extravasation normalized to tuft area in G. n = 5–6.
 
 The importance of VE-cadherin Y685 phosphorylation in the development of retinopathy was further demonstrated using a VE-cadherin Y685F mutant mouse model and its corresponding wild-type construct (VEC-Y685F and VEC-WT, respectively) (Wessel et al., 2014), in the OIR model. In these strains, wild-type and mutant CDH5 cDNA is introduced, replacing the endogenous mouse Cdh5 gene. The two strains were maintained separately and each therefore had their separate C57Bl/6 wild-type littermates carrying the intact mouse Cdh5 gene. The extent of oxygen-induced neovascular tuft formation as well as the avascular area in VEC-WT P17 mice was indistinguishable from wild-type C57Bl/6 littermates (Figure 4—figure supplement 1A–C) and the avascular area at P12 was likewise indistinguishable for these strains (Figure 4—figure supplement 1D–E). At P17, however, tuft formation was reduced in the VEC-Y685F pups compared to VEC-WT controls (Figure 4C–D), to a similar extent as seen for the KdrY949F/Y949F and Sh2d2aiECKO strains in relation to their respective controls (Figures 2 and 3). As for the KdrY949F/Y949F and Sh2d2aiECKO strains strains, the avascular area after high oxygen-exposure was equivalent between VEC-Y685F and VEC-WT mice (Figure 4E).
 
@@ -90,46 +165,210 @@ At this point, VEGFA-targeting is the only pharmacological strategy exploited cl
 
 ## Materials and methods
 
-## Animal studies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>KdrY949F/Y949F</td>
+      <td>DOI: 10.1038/ncomms11017</td>
+      <td></td>
+      <td>C57Bl/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain; strain background (Mus musculus)</td>
+      <td>Sh2d2afl/fl; Cdh5-CreERT2</td>
+      <td>DOI: 10.1126/scisignal.aad9256</td>
+      <td></td>
+      <td>C57Bl/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain; strain background (Mus musculus)</td>
+      <td>mT/mG</td>
+      <td>DOI: 10.1002/dvg.20335</td>
+      <td></td>
+      <td>C57Bl/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain; strain background (Mus musculus)</td>
+      <td>VEC-Y685F</td>
+      <td>DOI: 10.1038/ni.2824</td>
+      <td></td>
+      <td>C57Bl/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain; strain background (Mus musculus)</td>
+      <td>VEC-WT</td>
+      <td>DOI: 10.1038/ni.2824</td>
+      <td></td>
+      <td>C57Bl/6 background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-VE-cadherin</td>
+      <td>BD Biosciences</td>
+      <td>Catalogue no: 555289 RRID:AB_395707</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-VE-cadherin pY658</td>
+      <td>DOI: 10.1038/ncomms2199</td>
+      <td></td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-VE-cadherin pY688</td>
+      <td>DOI: 10.1038/ncomms2199</td>
+      <td></td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-phospho-Src (Tyr418)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue no: 44–660G RRID:AB_1500523</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-CD45</td>
+      <td>BD Biosciences</td>
+      <td>Catalogue no: 553076 RRID:AB_394606</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD68</td>
+      <td>BioRad Laboratories</td>
+      <td>Catalogue no: MCA1957 RRID:AB_322219</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rat</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue no: A-21208 RRID:AB_141709</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue no: A-31572 RRID:AB_162543</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue no: A-21432 RRID:AB_2535853</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>NIH, Bethesda, MD, USA</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 488-Isolectin B4</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue no I21411 RRID:AB_2314662</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 594-Isolectin B4</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cataolgue no: I21413 RRID:AB_2313921</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 647-Isolectin B4</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue no: I32450 RRID:SCR_014365</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluoro-Max Dyed Blue Aqueous Fluorescent Particles</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue no: B0100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluoro-Max Dyed Green Aqueous Fluorescent Particles</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue no: G25</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal studies
 
 Mouse husbandry and oxygen-induced retinopathy (OIR) challenge took place at Uppsala University, and the University board of animal experimentation approved all animal work for those studies. Choroidal neovascularization (CNV) experiments took place at Karolinska Institutet, St. Erik Eye Hospital, Stockholm; the procedures were approved by the Stockholm’s Committee for Ethical Animal Research. Animal handling was in accordance to the ARVO statement for the Use of Animals in Ophthalmologic and Vision Research. All animal experiments were repeated at least three independent times with wildtype and mutant mice compared within the same litter when possible. Sample size was chosen to ensure reproducibility and allow stringent statistical analysis. Randomization of mice and blinding of the investigators were not performed. No mice were excluded from analyses, though CNV lesions that fused with neighboring lesions were excluded from analysis.
 
 A knock-in mutation in the VEGFR2 gene, Kdr, was created by homologous recombination using VelociGene technology (Regeneron Pharmaceuticals, New York, USA), wherein the tyrosine (Y) at position 949 was replaced with phenylalanine (F) (Li et al., 2016a). The KdrY949F/Y949F mice, initially on mixed 129S6/C57BL/6 background, were extensively backcrossed to C57BL/6J (Taconic Biosciences). Sh2d2afl/fl; Cdh5-CreERT2 mice, referred to as inducible Endothelial Cell-specific Knock Out Sh2d2aiECKO mice (previously denoted TsadiECKO mice), were generated as described (Gordon et al., 2016). Inducible deletion was by intraperitoneal injection of tamoxifen (Sigma, T5648) at P12, upon removal from hypoxia, and 24 hr later at P13 (400 µg/dose). To track recombination, the Sh2d2aiECKO strain was crossed with the mT/mG strain (JAX stock #007676). Cre-driven recombination resulted in mTmG-dependent conversion to green fluorescent protein (GFP) (Muzumdar et al., 2007). VE-cadherin (VEC)-Y685F and VEC-WT mice were generated using either WT or Y685F mutant human CDH5 (VE-cadherin gene designation) cDNA to replace the endogenous mouse Cdh5 gene (Wessel et al., 2014).
 
-## OIR
+### OIR
 
 A standard OIR model was used as described with minor modification (Connor et al., 2009). Briefly, each litter of pups was placed, along with the mother, into a chamber that maintained an oxygen concentration of 75.0% (ProOx 110 sensor and A-Chamber, Biospherix, Parish, NY). Mice remained in the chamber for 5 days, beginning at P7 and extending until P12, when they were returned to normal atmosphere (~21% oxygen) until termination at P17. While the pups remained at 75% oxygen throughout, lactating adult females were removed from the chamber on P8, P9, P10, and P11 for 2 hr a day, to prevent oxygen toxicity-related death. At P17, pups were weighed and sacrificed and eyes enucleated and fixed in 4% paraformaldehyde (PFA) at room temperature for 30 min. For microsphere extravasation experiments, mice at P17 were briefly warmed under a heat lamp to dilate tail veins before a tail vein-injection of microspheres (1% solution of 25 nm green fluorescent polystyrene beads; 50 µl per mouse (ThermoFisher Cat.no. G25). Microsphere size was chosen based on previous experience in analyzing VEGFA-regulated leakage from non-fenestrated vessels (Li et al., 2016a). Microspheres were allowed to circulate for 15 min before final sacrifice and tissue collection. To remove blood and microspheres from the retinal vessels, mice were perfused with phosphate-buffered saline (PBS). Mice were fully anesthetized using isofluorane inhalation or alternately by an intraperitoneal injection of a mixture of ketamine/xylazine (100 mg/kg ketamine; 20 mg/kg xylazine), after which room temperature PBS was flushed through the vasculature. Litters of mice exposed to OIR protocol were excluded from analysis when the average weight of pups at P17 was less than 5.5 grams, as low weight may indicate maternal neglect or other reasons for inability to thrive (Stahl et al., 2010b). See Table 1 for average weight of pups at P17.
 
-## CNV
+### CNV
 
 A standard protocol of laser-induced CNV was employed (Lambert et al., 2013; André et al., 2015). Briefly, 6–14 week-old KdrY949F/Y949F mice were anesthetized (ketamine/xylazine; 30 mg/kg, 5 mg/kg respectively) and pupils dilated using a topical administration of tropicamide (0.5%; Alcon, Puurs, Belgium). Choroidal neovascularization lesions were induced in both eyes by diode laser (532 nm; IRIS Medical, Mountain View, CA, USA) with settings: 75 µm spot, 200 mW intensity, 100 ms duration. All visual hemorrhagic lesions were excluded from the study. After laser-induction, animals were treated twice with 1 mL of saline (9 mg/mL NaCl; B. Braun, Melsungen, Germany) subcutaneously under the back skin to prevent dehydration and the eyes were kept lubricated by topical administration of a paraffin and Vaseline mix (APL, Gothenburg, Sweden). At post-laser day 8, or 14, mice were culled and eyes immediately enucleated. The retina tissue was carefully dissected away to expose the choroid and CNV lesions. At day 14, prior to sacrifice, mice were warmed on heating pads and given a tail vein-injection of microspheres (1% solution of 100 nm Blue-fluorescent polystyrene beads; 100 µl per mouse (ThermoFisher Cat.no. B100) followed by 2 min of circulation and perfusion with fixative via cardiac puncture under isoflurane anesthesia. A larger microsphere size (100 nm) was chosen than for the OIR analyses (25 nm) to avoid spontaneous passage of small microspheres through the fenestrated choroidal vasculature. When the CNV lesions created in one eye grew and fused together, all fused lesions were excluded from further analysis.
 
-## Antibodies
+### Antibodies
 
 Retinal vasculature and CNV lesions were immunostained with directly conjugated Alexa Fluor 488-Isolectin B4, Alexa Fluor 594-Isolectin B4, or Alexa Fluor 647-Isolectin B4 (Sigma). Endothelial cell junctions and phosphorylated VE-cadherin were stained with anti-VE-cadherin antibody (1:100; BD Rat 555289) and affinity purified rabbit antibodies against VE-cadherin pY658 and pY685 (Orsenigo et al., 2012). Phosphorylated c-Src was assessed using anti-phospho-Src (Tyr418) Antibody (1:100; Invitrogen Rabbit 44–660G). Secondary antibodies used were Alexa488 anti-Rat (1:500; Invitrogen Donkey A-21208) and Alexa555 anti-Rabbit (1:500; Donkey A-31572). Inflammatory cells were stained with anti-CD45 (1:300; BD Biosciences Goat 553076) and anti-CD68 (1:300; BioRad Rat MCA1957). Secondary antibodies used were Alexa488 anti-Rat (1:500; Invitrogen Donkey A-21208). Alexa555 anti-Goat (1:500; Invitrogen Donkey A-21432).
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Whole mount immunostaining of retinas and choroids was performed following OIR and CNV experiments. Dissected issues, fixed in PFA were first incubated in blocking buffer (1% bovine serum albumin/2% fetal calf serum/0.05% Na-deoxycholate/0.5% Triton X-100/0.02% Na Azide in PBS) for 2 hr to block unspecific binding. Incubation with primary antibodies and secondary antibodies was carried out sequentially over night at 4°C on a rocking platform. Tissues were mounted on slides with Fluormount G mounting media (SouthernBiotech).
 
 Microscopy was done using a Zeiss LSM700 microscope or a Leica SP8 confocal microscope. Images were acquired with the 20x, 40x or 63x objective. Processing and quantification of images was done with ImageJ software (NIH).
 
-## Quantification of avascular area and neovascular tufts
+### Quantification of avascular area and neovascular tufts
 
 Neovascular tuft formation and avascular area were determined by immunostaining retinas followed by image analysis. Quantification of total vascularized area, central avascular area, and tuft area was performed by outlining images manually in ImageJ. Using a tilescan of the IB4 channel for each whole mounted retina, the freehand selection tool was used to demarcate the vascular front, creating an ROI (region of interest) for the total vascularized area. The freehand selection tool was also used to outline IB4 positive vessels from neovascular tufts – regions with disorganized dilated vessels often with markedly intense IB4 staining. The ROIs for tufts were merged into a single ROI corresponding to the all the neovascular tuft area for a given retina. The tuft area normalized to the total vascularized area was reported as a percentage of the total retina that contained tufts. Similarly, the avascular region was determined using the freehand selection tool to outline the central avascular regions. Regions where the superficial layer of capillaries was absent were determined and merged to form a single ROI corresponding to all of the avascular regions for a given retina. The avascular area normalized to the total vascularized area was reported as a percentage of the total retina that was still avascular. The researcher was blinded to the genotype of the sample when performing quantifications.
 
-## Quantification of fluorescent microspheres in CNV
+### Quantification of fluorescent microspheres in CNV
 
 The quantity of extravasated fluorescent microspheres, marking sites of leakage, was measured in digital fluorescent images of CNV lesions from images taken with a Leica SP8 confocal microscope (63X objective) equipped with single and dual fluorescence filters charge-coupled device (CCD) camera. Camera settings were constant for images from all groups in each experiment. Using ImageJ software (NIH, Bethesda, MD), a guassian blur filter (sigma 1) was applied to each image and a threshold was applied to the microsphere channel (405 for Blue fluorescence) using the Triangle algorithm. Microsphere area was calculated using the Analyze Particles function with an upper limit of 500 pixels to avoid the inclusion of large staining artifacts.
 
-## Quantification of fluorescent microspheres in OIR
+### Quantification of fluorescent microspheres in OIR
 
 For the OIR model, the quantity of extravasated fluorescent microspheres, marking sites of leakage, was measured in digital fluorescent images of regions of retina over 10 to 15 images in each eye taken with a Leica SP8 confocal microscope (63X objective) equipped with single and dual fluorescence filters charge-coupled device (CCD) camera. Camera settings were constant for images from all groups in each experiment. Using ImageJ software (NIH, Bethesda, MD), the microsphere channel and IB4-vessel channel (488 for Green fluorescence and 647 for IB4) were adjusted with threshold (Huang for Ib4 and Triangle for FITC) for each channel. Extravasated microsphere area was calculated by measuring the signal in the green fluorescence channel after removing any signal contained within the ROI (region of interest) corresponding to the IB4-positive area. The Analyze Particles function was employed to quantify the microspheres. A lower limit of 10 pixels was selected to distinguish the microsphere signal from background noise. The mean area density for each group of mice was calculated from the median value of all images of the eyes of each mouse (Fuxe et al., 2011). To quantify leakage based on microscopic images, the amount of tracer extravasation was normalized to blood vessel density. The researcher was blinded to the genotype of the sample when performing quantifications.
 
-## Quantification of inflammatory cells in OIR
+### Quantification of inflammatory cells in OIR
 
 Immunostaining for CD68, CD45, and IB4 was performed on retinas from Kdr+/+ and KdrY949F/Y949F mice. Confocal images were analyzed using ImageJ software for the presence of inflammatory cells within neovascular tufts. For each image, the tuft area was manually outlined using the freehand selection tool and then each channel was thresholded (CD68 with Zen; CD45 with Triangle) and the positive area within these tuft regions was calculated as the percentage of total tuft area. The average of five regions per retina are presented for each animal.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with GraphPad Prism (GraphPad). An unpaired Student’s T test was used to compare means between experimental groups. A Mann Whitney U test was used to compare the medians between experimental groups with similar outcome. All tests were two-tailed and p<0.05 was considered a statistically significant result. Values shown are the mean, with standard deviation used as the dispersion measure. Biological replicates refer to individual mice for OIR experiments and to individual lesions for CNV experiments. Independent experiments refer to experiments done in different days with independently generated material. A statistical method of sample size calculation was not used during study design. For in vivo experiments, we used an average of 6 animals per experiment, with a minimum of 3 (detailed number of animals used is given in figure legends). The investigators were blind to the genotype of the animal for data analysis.

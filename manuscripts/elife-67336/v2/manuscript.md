@@ -34,11 +34,31 @@ The ideal experiment to determine the relative roles of chance, contingency, and
 
 Here we implement this strategy using the B-cell lymphoma-2 (BCL-2) protein family as a model system and the specificity of protein–protein interactions (PPIs) as the target of selection. BCL-2 family proteins are involved in the regulation of apoptosis (Chipuk et al., 2010; Danial and Korsmeyer, 2004; Kale et al., 2018; Petros et al., 2004) through PPIs with coregulators (Chen et al., 2005; Chen et al., 2013; Dutta et al., 2010; Lomonosova and Chinnadurai, 2008). Although there are many dimensions to BCL-2 family proteins’ cellular effects, different binding specificities for coregulator proteins are a critical determinant of their particular biological functions. Among BCL-2 family members, the myeloid cell leukemia sequence 1 protein (MCL-1) class strongly binds both the BID and NOXA coregulators, whereas the BCL-2 class (a subset of the larger BCL-2 protein family) strongly binds BID but not NOXA (Figure 2A; Certo et al., 2006). The two classes share an ancient evolutionary origin: both are found throughout the Metazoa (Banjara et al., 2020; Lanave et al., 2004) and are structurally similar, using the same cleft to interact with their coregulators (Figure 2B, Figure 2—figure supplement 1), despite having only 20% sequence identity.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig2-v2.jpg)
+
+**Figure 2.:** (A) Protein binding specificities of extant BCL-2 family members. Human MCL-1 (hsMCL-1, purple) strongly binds BID (blue) and NOXA (red), while human BCL-2 (hsBCL-2, green) strongly binds BID but not NOXA. (B) Crystal structures of MCL-1 (purple) bound to NOXA (red, PDB 2nla), and BCL-xL (green, a closely related paralog of BCL-2) bound to BID (blue, PDB 4qve). (C) Reduced maximum likelihood phylogeny of BCL-2 family proteins. Purple bar, MCL-1 class; green bar, BCL-2 class. The phylogeny was rooted using as outgroups the paralogs BOX, BAK, and BAX (black bar). Heatmaps indicate BID (blue) and NOXA (red) binding measured using the luciferase assay. Each shaded box shows the normalized mean of three biological replicates. Red dotted lines, interval during which NOXA binding was lost, yielding BID specificity in the BCL-2 proteins of vertebrates (green box). Purple box, vertebrate MCL-1. Silhouettes, representative species in each terminal group. AncMB1-M and -B are alternative reconstructions using different approaches to alignment ambiguity (see Materials and methods). For complete phylogeny, see Figure 2—figure supplement 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Crystal structures and overlays of BCL-xL (a vertebrate paralog of BCL-2, light green) bound to BID (light blue; PDB: 4qve); BCL-2 (green) bound to BAX (a protein with a BID-like binding profile, blue; PDB: 2xa0); MCL-1 (purple) bound to BAX (blue; PDB: 3pk1); and MCL-1 bound to NOXA (red; PDB: 2nla). The BCL-2 family proteins bind the coregulator proteins at the same interface.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (1) Sequences are collected, including those of proteins conferring different functions (red v. blue)and others with unknown functions (black). These sequences may be orthologs from various species, paralogs related by gene duplication events, or both. (2) Sequences are aligned. (3) A phylogeny is inferred. (4) Using the inferred phylogeny, the aligned sequences, and a model of sequence evolution, the most likely state at each ancestral node is determined. (5) Ancestral sequences are synthesized and tested for function. (6) Functional differences among successive ancestral proteins indicate functional changes during evolutionary history (red bar).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Light green, vertebrate BCL-2; light-medium and dark-medium green, vertebrate BCLX and BCLW, respectively; dark green, non-vertebrate sequences most closely related to vertebrate BCL-2; red, vertebrate MCL-1; maroon, vertebrate BFL1; light purple, vertebrate NRH; dark purple, non-vertebrate sequences most closely related to vertebrate MCL-1; dark blue, BAX; medium blue, BAK; light blue, BOK; black, ctenophore sequences. Parentheses, number of sequences in each clade. Black squares, ancestral sequences reconstructed and tested. Node labels, approximate likelihood ratio statistics and transfer bootstrap values. Asterisks, nodes constrained to be congruent with known taxonomic relationships.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Schematic of the luciferase reporter assay to assess PPIs. If a BCL-2 family protein (black) binds a coregulator protein (blue), the split T7 RNAP biosensor (gray) assembles and drives luciferase expression. If a coregulator (pink) is not bound, no luciferase is expressed. (B) Interactions of human BCL-2 and MCL-1 with BID (blue bars) and NOXA (red) in the luciferase assay, compared to no-coregulator control (gray). Activity is scaled relative to no-coregulator control with no-BCL-2 protein. Columns and error bars, mean ± SD of three biological replicates (circles). Shaded boxes above show the same data in heatmap form: BID activity is normalized relative to hsBCL-2 with BID; NOXA activity is normalized to hsMCL-1 with NOXA. (C) Interactions of ancestral reconstructed proteins with BID (blue) and NOXA (red) in the luciferase assay, compared to no-coregulator control (gray). Activity is scaled relative to no-coregulator control with no-BCL-2 family protein. Columns and error bars, mean ± SD of three biological replicates. hsBCL-2 with BID (dashed blue line). hsMCL-1 with NOXA (dashed red line). (D) Same as (C), but for extant species Hydra magnapapillata (Cnidaria), Octopus bimaculoides (Lophotrochozoa), Saccoglossus kowalevskii (Hemichordata), Branchiostoma belcheri (Cephalochordata), Trichoplax adhaerens (Placozoa), and Stegodyphus mimosarum (Ecdysozoa). (E) Same as (C), but contains alternative reconstructions (Alt) for each ancestral protein, which combine all plausible alternative amino acid states (PP > 0.2) in a single ‘worst-case’ alternative reconstruction. (F) Same as (C), but contains multiple alternative reconstructions for AncMB1_B. In each case, all plausible alternative amino acid states with PP greater than the listed value are included in a single ‘worst-case’ alternative reconstruction.
+
 To drive the evolution of new PPI specificities, we developed a new high-throughput phage-assisted continuous evolution (PACE) system (Esvelt et al., 2011) that can simultaneously select for and against particular PPIs (Pu et al., 2019; Pu et al., 2017b). We applied this technique to a series of reconstructed ancestral BCL-2 family members, repeatedly evolving each starting genotype to acquire PPI specificities found among extant family members. By comparing sequence outcomes among PACE replicates from the same starting point, we quantified the role of chance in the evolution of historically relevant molecular functions under strong and identical selection pressures; by comparing outcomes of PACE initiated from different starting points, we quantified the effect of contingency generated by the sequence changes that accumulated during these proteins’ histories. This design also allowed us to characterize how these factors have changed over phylogenetic time and dissect the underlying genetic basis by which they emerged.
 
 ## Results
 
-## BID specificity is derived from an ancestor that bound both BID and NOXA
+### BID specificity is derived from an ancestor that bound both BID and NOXA
 
 We first characterized the historical evolution of PPI specificity in the BCL-2 family using ancestral protein reconstruction (Figure 2—figure supplement 2). We inferred the maximum likelihood phylogeny of the family, which recovered the expected sister relationship between the metazoan BCL-2 and MCL-1 classes (Figure 2C, Figure 2—figure supplement 3). We then reconstructed the most recent common ancestor (AncMB1) of the two classes – a gene duplication that occurred before the last common ancestor (LCA) of all animals – and 11 other ancestral proteins that existed along the lineages leading from AncMB1 to human BCL-2 (hsBCL-2) and to human MCL-1 (hsMCL-1) (Supplementary file 1).
 
@@ -46,13 +66,57 @@ We synthesized genes coding for these proteins and experimentally assayed their 
 
 To further test this inferred history, we characterized the coregulator specificity of extant BCL-2 class proteins from taxonomic groups in particularly informative phylogenetic positions. Those from Cnidaria were activated by both BID and NOXA, whereas those from protostomes and invertebrate deuterostomes were BID-specific (Figure 2C, Figure 2—figure supplement 4, Supplementary file 1). These results corroborate the inferences made from ancestral proteins, indicating that BID specificity evolved when the ancestral ability to bind NOXA was lost between AncB2 (in the ancestral eumetazoan) and AncB4 (in the ancestral deuterostome).
 
-## A directed continuous evolution system for rapid changes in PPI specificity
+### A directed continuous evolution system for rapid changes in PPI specificity
 
 To rapidly evolve BCL-2 family proteins to acquire the same PPI specificities that existed during the family’s history, we developed a new PACE system (Esvelt et al., 2011; Figure 3A–B, Figure 3—figure supplement 1). Previous PACE systems have evolved binding to new protein partners using a bacterial 2-hybrid approach (Badran et al., 2016), but evolving PPI specificity requires simultaneous selection for a desired PPI and against an undesired PPI. For this purpose, we used two orthogonal proximity-dependent split RNAPs that recognize different promoters in the same cell and – if reconstituted by a PPI – activate transcription of positive and negative selectable markers. Specifically, the N-terminal fragment of RNAP was fused to the BCL-2 protein of interest and encoded in the phage genome, and two C-terminal RNAP fragments (RNAPc), each fused to a different BCL-2 coregulator, were encoded on host cell plasmids. One RNAPc is fused to the selected-for coregulator and drives expression of an essential viral gene (gIII) when reconstituted by binding to the BCL-2 protein; the other RNAPc, fused to the counter-selected coregulator, drives expression of a dominant-negative version of gIII (Pu et al., 2017a). Phage containing BCL-2 variants that bind the positive selection protein but not the counterselection protein produce infectious phage. After optimizing this system, we used activity-dependent plaque assays and phage growth assays to confirm that it imposes strong selection for the PPI specificity profiles of extant hsBCL-2 and hsMCL1 (Figure 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig3-v2.jpg)
+
+**Figure 3.:** (A) Top: Components of the PACE system for evolving PPI specificity. Solid arrows show potential binding events. Dashed arrows show potential protein expression. The protein targeted for altered specificity (black) is fused to the N-terminus of RNA polymerase (RNAPN, dark gray) and placed into the M13 phage genome (SP, selection plasmid). Upon infection of host E. coli, the target gene-RNAPN fusion is expressed. Host cells carry accessory plasmids (+AP and −AP) that contain the C-terminus of RNAP (RNAPC) fused to peptides for which specificity is desired (blue, positive selection protein; pink, counterselection protein). Binding of the target protein to either the selection protein or counterselection protein reconstitutes a functional RNAP. Binding of RNAP to the corresponding promoter results in the expression of either gIII (teal) or gIIIneg (gold). gIII is necessary to produce infectious phage. gIIIneg is a dominant-negative version of gIII which results in the production of non-infectious phage. An arabinose-inducible mutagenesis plasmid in the system (MP) increases the mutation rate of the evolving protein. Bottom: PACE schemes for evolving PPI specificities. To select for BCL-2 like specificity, positive selection to bind BID was imposed with counterselection to avoid binding NOXA (blue arrow and red bar). To evolve MCL-1 like activity, positive selection to bind NOXA (red arrow) was imposed after a phase of selection for BID binding, both with counterselection to avoid nonspecific binding using a control zipper peptide (ZBneg). (B) Map of the phage SP, the positive and counterselection accessory plasmids (+AP and −AP), and the MP. (C) Selection for protein variants with the desired specificity. Upper left: Infection by a phage carrying a protein variant that binds neither the positive selection nor the counterselection protein results in production of little to no progeny phage. Upper right: Infection by a phage carrying a protein variant that binds only the positive selection protein results in expression of gIII and production of infectious phage. Lower left: Infection by a phage carrying a protein variant that binds only the counterselection protein results in expression of gIIIneg and production of non-infectious phage. Lower right: Infection by a phage carrying a protein variant that binds the positive selection and counterselection proteins results in expression of both gIII and gIIIneg, leading to production of primarily non-infectious phage. (D) Growth assays to assess selection and counterselection. Plaque forming units (PFU) after culturing 1000 phage-containing hsBCL-2 (green) or hsMCL-1 (purple) on E. coli containing various APs. Detection limit 103 PFU/mL. Bars show mean ± SD of three replicates (circles). (E) Phylogenetic relations of starting genotypes used in PACE. Each starting genotype was selected to acquire a new specificity in four independent replicates. Green, proteins selected to gain NOXA binding; purple, proteins selected to lose NOXA binding. Red dashed line, interval during which NOXA binding was historically lost, yielding BID specificity in the BCL-2 clade. Letters, index of phylogenetic intervals between ancestral proteins referred to in Figure 5.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of a PACE experiment. Davis Rich carboy media flows into the chemostat, which contains E. coli with the positive selection (+AP), counterselection (−AP), and mutagenesis plasmids (MP). The cells then flow into the lagoons, which contain phage with the evolving BCL-2 family protein. Arabinose is pumped into the lagoons to induce the mutagenesis plasmid in the E. coli. Both chemostats and lagoons are connected to the waste to maintain proper volume, cell density, and flow rate. (B) Picture of representative PACE experiment from this work.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Timeline of PACE experiments when hsMCL-1, AncM6, and AncB1 were evolved to lose NOXA binding. ZBneg is a control zipper peptide. (B) Phage titers (PFU/mL) over time (bottom) and activity-dependent phage titers at the end of the PACE experiments (top) when hsMCL-1 was evolved to lose NOXA binding. Activity-dependent plaque assays used plasmids 28–46 and Jin 487. (C) Same as (E) for AncM6. ‘dim’ means plaques were visible but weak, and therefore not quantifiable. (D) Same as (E) for AncB1. (E) Timeline of PACE experiments when hsBCL-2, AncB5, and AncB4 were evolved to gain NOXA binding. (F) Phage titers (PFU/mL) over time (bottom) and activity-dependent phage titers at the end of the PACE experiments (top) when hsBCL-2 was evolved to gain NOXA binding. Activity-dependent plaque assays used plasmids 28–48 and 29–39. (G) Same as (H) for AncB5. (H) Same as (H) for AncB4.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) BID fluorescence polarization for hsMCL-1 variants evolved to lose NOXA binding. Bars are the mean of three replicates; error bars, SD. mFP, normalized measured fluorescent polarization. Kd estimates are shown below in the table. (B) Same as (A), but for NOXA binding. (C) BID fluorescence polarization for hsBCL-2 variants evolved to gain NOXA binding. (D) Same as (C), but for NOXA binding.
+
 The simplicity of this platform allowed us to drive extant and reconstructed ancestral proteins to recapitulate or reverse the historical evolution of the BCL-2 family’s PPI specificity in multiple replicates in just days, without severe experimental bottlenecks. Three proteins that bound both BID and NOXA – hsMCL-1, AncM6, and AncB1 – were selected to acquire the derived BCL-2 phenotype, retaining BID binding and losing NOXA binding. Conversely, hsBCL-2, AncB5, and AncB4 were evolved to gain NOXA binding, reverting to the ancestral phenotype (Figure 3C and E, Figure 3—figure supplement 2). For each starting genotype, we performed four replicate experimental evolution trajectories (Supplementary file 3). Each experiment was run for 4 days, corresponding to approximately 100 rounds of viral replication (Esvelt et al., 2011). All trajectories yielded the target PPI specificity, which we confirmed by experimental analysis of randomly isolated phage clones using activity-dependent plaque assays and in vivo and in vitro binding assays (Figure 4A–B, Figure 3—figure supplement 2, Figure 3—figure supplement 3). As in prior PACE experiments, variation in the selected phenotype was observed among individual phage isolates within the final populations (Dickinson et al., 2013), presumably because of large populations, high mutation rates, and/or inadequate time for fixation.
 
-## Chance and contingency erase necessity in the evolution of PPI specificity
+![Figure 4.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig4-v2.jpg)
+
+**Figure 4.:** (A) Phenotypic outcome of PACE experiments when proteins with MCL-1-like specificity were selected to maintain BID and lose NOXA binding. For each starting genotype, the BID (blue) and NOXA (red) binding activity of the starting genotype and three phage variants isolated from each evolved replicate (number) are shown as heatmaps. (B) Phenotypic outcome of PACE experiments when proteins with BCL-2-like specificity were selected to gain NOXA binding. (C) Frequency of acquired states in PACE experiments when proteins with MCL-1-like specificity were selected to maintain BID and lose NOXA binding. Rows, outcomes of each replicate trajectory. Columns, sites that acquired one or more non-wild-type amino acids (letters in cells) at frequency >5%; color saturation shows the frequency of the acquired state. Site numbers and wild-type amino acid (WT AA) states are listed. Gray, sites that do not exist in AncB1. (D) Frequency of acquired states when BCL-2-like proteins were selected to gain NOXA binding. (E) Repeatability of acquired states across replicates. The 100 non-WT states acquired in all experiments were categorized as occurring in 1 or >1 replicate trajectory from 1 or >1 unique starting genotype, with the number in each category shown. The vast majority of states evolved in just one replicate from one starting point (black). (F) Historical substitutions that contributed to the change in PPI specificity rarely occur or revert during PACE. Rows, substitutions that historically occurred between AncB1 and AncB4, the ancestral proteins that flank the loss of NOXA on the phylogeny. For each substitution, columns show whether the historical ancestral or derived state was acquired in PACE trajectories from each ancestral starting point. Purple and green boxes, PACE acquisition of ancestral or derived state, respectively, in each replicate. White boxes, neither state acquired.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** After isolation of phage DNA, the coding region of the evolving BCL-2 family protein was amplified in three overlapping fragments, each of which was smaller than 300 bp. The DNA fragments were then amplified using sequence-specific primers. MiSeq adapters were added in a second PCR step. These fragment libraries were combined and used for MiSeq sequencing. Blue, target gene coding region. Gray, adjacent vector sequence. Green, forward adapter and barcode sequence. Orange, reverse adapter and barcode sequence. Magenta, index one sequence. Purple, index two sequence.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Allele frequency of frameshifts in replicate PACE experiments started from hsMCL-1, AncM6, and AncB1 evolved to lose NOXA binding. Site numbers and wild-type (WT) amino acid states are listed above each sequence. Each row represents an independent replicate population. Non-wild-type insertions and deletions that reached >5% in frequency are shown, with frequency proportional to color saturation. Split cells show populations with multiple non-WT states > 5%. Plus (+) indicates an addition of a nucleotide. Delta (Δ) indicates a deletion of a nucleotide. (B) Same as (A), but for replicate PACE experiments of hsBCL-2, AncB5, and AncB4 evolved to gain NOXA binding.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Black box with white letters, mutant states observed in only one replicate. Teal, mutant states observed in multiple replicates from the same starting genotype. Orange, mutant states observed in a single replicate from multiple different starting genotypes. Brown, mutant states observed in multiple replicates from the same starting genotype and in at least one other replicate from a different starting genotype. Black box outline, mutant states observed in multiple replicates from the same starting genotype and from multiple replicates from a different starting genotype. Gray boxes are sites that do not exist in a particular sequence.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Activity is scaled relative to the control experiment with no- BCL-2 family protein and no-coregulator peptide. Bars show the mean ± SD of three biological replicates (circles). Gray bar, no-coregulator peptide. Blue bar, BID. Red bar, NOXA. Blue dotted lines mark the average signal of hsBCL-2 with BID, and red dotted lines mark the average signal of hsMCL-1 with NOXA.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Historical WT states for each starting genotype are listed. Green, hsBCL-2 link function. Purple, hsMCL-1 like function. Solid vertical line, historical interval in which function changed. Dashed vertical line, location of the phylogeny root. For each PACE mutation, the genotype on which it arose is in a square. The nearest historical state that the mutation matches is in a circle. PACE mutations can either recapitulate historical substitutions, revert to historical states, or switch to a state found in a sister lineage. PACE mutations that revert historical states that changed during the interval at the same time as the change in function or outlined in red.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Mutation state and position are given above each cladogram. Lowercase letters, WT state for PACE. Uppercase letters, mutant state for PACE. Each cladogram shows the estimated most likely state for each ancestral node and the majority state for each extant clade. Gray boxes; same WT state as the sequence in which the PACE mutation emerged. Black boxes; same WT state as the PACE mutation. Arrows point from the starting genotype for PACE (larger font) to the closest genotype with the PACE mutation. Red boxes show the two instances in which substitutions that occurred during the historical interval in which NOXA specificity was lost (red hash marks on phylogeny) also occurred during PACE.
+
+### Chance and contingency erase necessity in the evolution of PPI specificity
 
 We used deep sequencing to compare the sequence outcomes of evolution across trajectories initiated from the same and different starting points (Figure 4—figure supplement 1). Necessity was almost entirely absent. Across all trajectories, 100 mutant amino acid states at 75 different sites evolved to frequency > 5% in at least one replicate (Figure 4C–D, Figure 4—figure supplement 2, Supplementary file 4). Of these acquired states, 73 appeared in only a single trajectory, and only four arose in more than one replicate from multiple starting points (Figure 4E, Figure 4—figure supplement 3). When selection was imposed for binding to both BID and NOXA, no states were predictably acquired in all trajectories from all starting points. The only mutation universally acquired under any selection regime was a nonsense mutation at codon 271, which was acquired in all trajectories selected for BID specificity, but experimental analysis of this mutation shows that it has no detectable effect on coregulator binding (Figure 4—figure supplement 4).
 
@@ -62,15 +126,23 @@ These starting points are separated by different amounts of evolutionary diverge
 
 These experiments indicate an almost complete lack of necessity in the evolution of PPI specificity in PACE. To gain insight into the extent of necessity in the historical evolution of BCL-2 PPI specificity, we asked whether substitutions that occurred during the phylogenetic interval when NOXA binding was lost (between AncB1 and AncB4) were either repeated or reversed during PACE trajectories to lose or regain NOXA binding from any starting point (Figure 4F, Figure 4—figure supplement 5, Figure 4—figure supplement 6). In PACE experiments to lose NOXA binding from proteins that initially bound both peptides, none of the acquired states recapitulated substitutions from the branch on which NOXA binding was historically lost. In PACE experiments to reacquire NOXA binding from proteins with BCL2-like specificity for BID, only two states reversed historical substitutions that occurred on that branch. Both of these reacquisitions occurred in PACE trajectories launched from AncB4, the immediate daughter node of this branch, suggesting that in other proteins, contingency accumulated over phylogenetic time restricted their accessibility. Furthermore, both of these states were acquired in only a subset of trajectories from AncB4, indicating a role for chance even from this starting point. Some substitutions that occurred during other historical intervals were recapitulated or reversed during PACE trajectories, indicating that these states are compatible with BCL-2 family protein functions, but these substitutions could not have contributed to historical changes in PPI specificity, which remained unchanged on these branches. Our experiments therefore suggest strong effects of chance and contingency in the historical evolution of BCL-2’s derived PPI specificity.
 
-## Historical contingency is the major cause of sequence variation under selection for new functions
+### Historical contingency is the major cause of sequence variation under selection for new functions
 
 We next sought to directly quantify the relative effects of chance and historically generated contingency on sequence outcomes in our experiments. We analyzed the genetic variance – defined as the probability that two variable sites, chosen at random, are different in state – within and between trajectories from the same and different starting genotypes. To estimate the effects of chance, we compared the genetic variance between replicates initiated from the same starting genotype (Vg) to the within-replicate genetic variance (Vr). We found that Vg was on average 30% greater than Vr, indicating that chance causes evolution to produce divergent genetic outcomes between independent lineages even with strong selection for a change in function (Figure 5A). We quantified contingency by comparing the pooled genetic variance among replicates from different starting genotypes (Vt) to that among replicates from the same starting genotype (Vg). Contingency’s effect was even larger than that of chance, increasing Vt by an average of 80% across all pairs of starting points compared to Vg when selecting for a new function. Together, chance and contingency had a multiplicative effect, increasing the genetic variance among trajectories from different starting genotypes (Vt) by an average of 2.4-fold compared to the genetic variance within trajectories (Vr). The effects of chance and contingency were not significantly different between PACE experiments in which protein interactions were gained and those in which they were lost (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig5-v2.jpg)
+
+**Figure 5.:** (A) Variation in evolutionary sequence outcomes caused by chance (orange), contingency (teal), and both (black). Inset: schematic for estimating the effects of chance and contingency. Chance was estimated as the average genetic variance among replicates from the same starting genotype (Vg) divided by the within-replicate genetic variance (Vr). Contingency was estimated as the average genetic variance among replicates from different starting genotypes (Vt) divided by the average genetic variance among replicates from the same starting genotype (Vg). Combined effects of chance and contingency were estimated as the average genetic variance among replicates from different starting genotypes (Vt) compared to the within-replicate genetic variance (Vr). Genetic variance is the probability that two randomly drawn alleles are different in state. Error bars, 95% confidence intervals on the mean by bootstrapping PACE replicates. (B) Change in the effects of chance and contingency over phylogenetic distance. Each point is for a pair of starting proteins used for PACE, comparing the phylogenetic distance (the total length of branches separating them, in substitutions per site) to the effects of chance (orange), contingency (teal), or both (black), when PACE outcomes are compared between them. Solid lines, best-fit linear regression. Letters indicate the phylogenetic branch indexed in Figure 3E. The combined effect of chance and contingency increased significantly with phylogenetic distance (slope = 0.19, p=2×10−5), as did the effect of contingency alone (slope = 0.11, p=0.007). The effect of chance alone did not depend on phylogenetic distance (slope = 0.02, p=0.5). The combined effect of chance and contingency increased significantly faster than the effect of contingency alone (0.08, p=0.04). Arrow, phylogenetic distance between extant hsMCL-1 and hsBCL-2 proteins, which share AncMB1 as their most recent common ancestor.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Relationship between phylogenetic distance between pairs of starting genotypes for experimental evolution (ancestral or extant proteins, as the total branch lengths separating them) and the effects of chance (orange), contingency (teal), or both (black) on the outcomes of evolution between them. Lines are best fits from linear models. Circles are observed values. Diamonds are averages of 1000 permutations of starting genotype labels. This shuffling of genotype labels results in more genetic variance among samples from the same ‘starting genotype’ than the observed data, and less genetic variance between samples from different ‘starting genotypes’ than the observed data. Letters indicate the specific branch from Figure 3E. (B) Change in chance over time. Green, both starting genotypes had BCL-2 like function. Purple, both starting genotypes had MCL-1 like function. Black, starting genotypes differed in function. Phylogenetically independent comparison are shown as diamonds. The effect of chance did not change with phylogenetic distance when restricting analysis to comparisons that are phylogenetically independent (slope = 0.042, p=0.71) and genotypes selected for the same function (slope = 0.029, p=0.82). (C) Change in contingency over time. Green, both starting genotypes had BCL-2 like function. Purple, both starting genotypes had MCL-1 like function. Black, starting genotypes differed in function. Phylogenetically independent comparison are shown as diamonds. The effect of contingency increased with phylogenetic distance and was marginally significant when restricting analysis to comparisons that are phylogenetically independent (slope = 0.31, p=0.07), and genotypes selected for the same function (slope = 0.42, p=0.05). (D) Change in the combined effect of chance and contingency over time. Green, both starting genotypes had BCL-2 like function. Purple, both starting genotypes had MCL-1 like function. Black, starting genotypes differed in function. Phylogenetically independent comparison are shown as diamonds. The combined effect of chance and contingency increased with phylogenetic distance when restricting analysis to comparisons that are phylogenetically independent (slope = 0.50, p=0.009) and genotypes selected for the same function (slope = 0.63, p=0.01). (E) Effects of chance and contingency do not depend on the selection regime. Each column shows the portion of genetic variance among trajectories that was caused by chance or contingency, relative to the within-population variance (see Figure 5A). Green, trajectories in which BCL-2 like starting genotypes were selected to gain NOXA binding. Purple, trajectories in which MCL-1 like starting genotypes were selected to lose NOXA binding but maintain BID binding (purple). Error bars, 95% confidence intervals on the mean. p-values estimated by t-test.
 
 The preceding analyses do not account for phylogenetic structure or the extent of divergence between starting points. We therefore assessed how chance and contingency changed with phylogenetic distance using linear regression (Figure 5B, Figure 5—figure supplement 1). We found that the effect of contingency on genetic variance increased significantly with phylogenetic divergence among starting points. The effect of chance did not increase with divergence, but the combined effect of contingency and chance increased even more rapidly than contingency alone because the total impact on genetic variance of these two factors is multiplicative by definition.
 
 We next compared the impact of contingency to that of chance as phylogenetic divergence increases. On the timescale of metazoan evolution, contingency’s effect (an increase in genetic variance by about 100%) was three times greater than that of chance when evolution was launched from extant starting points whose LCA was AncMB1, near the base of Metazoa (Figure 5B). The combined effect of chance and contingency on this timescale was a 3.2-fold increase in variance among single trajectories launched from these starting points. Even across the shortest phylogenetic intervals we studied, contingency’s effect was larger than that of chance, although to a smaller extent. Taken together, these data indicate that contingency, magnified by chance, steadily increases the unpredictability of evolutionary outcomes as protein sequences diverge across history.
 
-## Contingency is caused by epistasis between historical substitutions and specificity-changing mutations
+### Contingency is caused by epistasis between historical substitutions and specificity-changing mutations
 
 Contingency is expected to arise in our experiments if historical substitutions (which separate ancestral starting points) interact epistatically with mutations that occur during PACE, causing the mutations that can confer selected PPI specificities to differ among starting points. To experimentally test this hypothesis and characterize underlying epistatic interactions, we first identified sets of candidate causal mutations that arose repeatedly during PACE replicates from each starting genotype. We then verified their causal effect on specificity by introducing only these mutations into the protein that served as the starting point for the PACE experiment in which they were observed and measuring their effects on BID and NOXA binding. We found that all sets were sufficient to confer the selected-for specificity in their ‘native’ background (Figure 6A, B).
 
@@ -84,23 +156,67 @@ To characterize the timing and effect of these epistatic substitutions during hi
 
 We found that both permissive and restrictive epistatic substitutions occurred on almost every branch of the phylogeny and affected both BID and NOXA binding. The only exception was the branch from AncB4 to AncB5, on which only restrictive substitutions affecting NOXA binding occurred. This is the branch immediately after NOXA function changed during history; it is also the shortest of all branches examined and the one with the smallest effect of contingency on genetic variance (Figure 5B). Even across this branch, however, the PACE mutations that restore the ancestral PPI specificity in AncB4 can no longer do so in AncB5. These results indicate that the paths through sequence space leading to historical PPI specificities changed repeatedly during the BCL-2 family’s history, even during intervals when the proteins’ PPI binding profiles did not evolve.
 
-## Chance is caused by degeneracy in sequence–function relationships
+### Chance is caused by degeneracy in sequence–function relationships
 
 For chance to strongly influence the outcomes of adaptive evolution, multiple paths to a selected phenotype must be accessible with similar probabilities of being taken. This situation could arise if several different mutations (or sets of mutations) can confer a new function or if mutations that have no effect on function accompany function-changing mutations by chance. To distinguish between these possibilities, we measured the functional effect of different sets of mutations that arose in replicates when hsMCL-1 was evolved to lose NOXA binding (Figure 7A, Figure 7—figure supplement 1). One mutation (v189G) was found at high frequency in all four replicates, but it was always accompanied by other mutations, which varied among trajectories. We found that v189G was a major contributor to the loss of NOXA binding, but it had this effect only in the presence of the other mutations, which did not decrease NOXA binding on their own. Mutation v189G therefore required permissive mutations to occur during directed evolution, and there were multiple sets of mutations with the potential to exert that effect; precisely which permissive mutations occurred in any replicate was a matter of chance. All permissive mutations were located near the NOXA binding cleft, suggesting a common mechanistic basis (Figure 7B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig7-v2.jpg)
+
+**Figure 7.:** (A) Dissecting the effects of sets of mutations (white boxes) that caused hsMCL-1 to lose NOXA binding during four PACE trajectories. Filled boxes show the effect of introducing a subset of mutations into hsMCL-1 (normalized mean relative from three biological replicates). Solid lines show the effect of introducing v189G, which was found in all four sets. Dotted lines, effects of the other mutations in each set. (B) Structural location of mutations in (A). Alpha-carbon atom of mutated residues are shown as purple spheres on the structure of MCL-1 (light gray) bound to NOXA (red, PDB 2nla). (C) Location of repeated mutations when hsMCL-1, AncM6, and AncB1 were selected to lose NOXA binding (purple spheres), represented on the structure of MCL-1 (gray) bound to NOXA (red, PDB 2nla). (D) Location of repeated mutations when hsBCL-2, AncB5, and AncB4 were selected to gain NOXA binding (green spheres), on the structure of hsBCL-xL (gray) bound to BID (blue, PDB 4qve).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Each panel shows NOXA binding (y-axis) for a unique variant as additional mutations are added (x-axis). Values are the mean of three biological replicates. Heatmaps show the effects of each mutation on BID (blue) and NOXA (red) activity, and each shaded box represents the normalized mean of three biological replicates. Lines connect genotypes that differ by a single mutation. Solid lines show the effects of the v189G mutation. Dashed lines show the effects of all other mutations. Mutations come from variants L1-1 (A), L3-1 (B), L3-3 (C), and L4-3 (D).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Individual variants were isolated from PACE experiments that selected for the gain of NOXA binding in hsBCL-2 (A) and AncB4 (B) and the loss of NOXA binding in hsMCL-1 (C), AncM6 (D), and AncB1 (E). For each variant, non-WT states are colored. Sites and WT amino state are indicated at top. Heatmaps on the left show binding to BID and NOXA in the luciferase assay for each variant and their corresponding mutant without the key mutation. Each shaded box represents the normalized mean of three biological replicates.
+
 Other starting genotypes showed a similar pattern of multiple sets of mutations capable of conferring the selected function (Figure 7—figure supplement 2). In addition, when mapped onto the protein structure, all sites that were mutated in more than one replicate either directly contacted the bound peptide or were on secondary structural elements that did so (Figure 7C–D), suggesting a limited number of structural mechanisms by which PPIs can be altered. Taken together, these results indicate that chance arose because from each starting genotype, there were multiple mutational paths to the selected specificity; partial determinism arose because the number of accessible routes was limited by the structure-function relationships required for peptide binding in this family of proteins.
 
-## Partial determinism is attributable to a limited number of function-changing mutations
+### Partial determinism is attributable to a limited number of function-changing mutations
 
 We next analyzed the genetic basis for the limited degree of determinism that we observed in our experiments. Specifically, we sought to distinguish whether, from a given BID-specific starting point, only a few genotypes can confer NOXA binding while retaining BID binding or, alternatively, whether there are many such genotypes, but under strong selection a few are favored over others.
 
 We performed PACE experiments in which we selected hsBCL-2 to retain its BID binding, without selection for or against NOXA binding; we then screened for variants that fortuitously gained NOXA binding using an activity-dependent plaque assay (Figure 8A–B). All four replicate populations produced clones that neutrally gained NOXA binding at a frequency of ~0.1% to 1% – lower than when NOXA binding was directly selected for but five orders of magnitude higher than when NOXA binding was selected against (Figure 8A, Figure 8—figure supplement 1). From each replicate, we then sequenced three NOXA-binding clones and found that all but one of them contained mutation r165L (Figure 8B), which also occurred at high frequency when the same protein was selected to gain NOXA binding (Figure 8—figure supplement 2). We introduced r165L into hsBCL-2 and found that it conferred significant NOXA binding with little effect on BID binding (Figure 8—figure supplement 3). Several other mutations appeared repeatedly in clones that fortuitously acquired NOXA binding, and these mutations were also acquired under selection for NOXA binding (Figure 8B, Figure 8—figure supplement 2). A similar pattern of common mutations was observed in AncB4 and AncB5 clones that fortuitously or selectively evolved NOXA binding (Figure 8—figure supplement 4). These observations indicate that the partial determinism we observed arises because from these starting points only a few mutations have the potential to confer NOXA binding while retaining BID binding.
 
-## Contingency can affect accessibility of new functions
+![Figure 8.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig8-v2.jpg)
+
+**Figure 8.:** (A) Evolution of NOXA-binding phage under various selection regimes. Frequency was calculated as the ratio of plaque forming units (PFU) per milliliter on E. coli cells that require NOXA binding to the PFU on cells that require BID binding to form plaques. Wild-type hsBCL-2 (green) and hsMCL-1 (purple) are shown as controls. Arrow, positive selection for function. Bar, counterselection against function. Blue, BID. Red, NOXA. Bars are the mean of four trajectories for each condition (points). (B) Phenotypes and genotypes of hsBCL-2 variants that evolved NOXA binding under selection to maintain only BID binding. Sites and WT amino state are indicated at top. For each variant, non-WT states acquired are shown in green. Heatmaps show binding to BID and NOXA in the luciferase assay for each variant (normalized mean of three biological replicates).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Timeline of PACE experiments when hsBCL-2 was evolved with positive selection to maintain only BID binding. Selection conditions shown as arrows and blunt bars: arrow, selection for binding to BID (blue); blunt bar, selection against binding to ZBneg (gray). (B) Phage titers (PFU/mL) over time (bottom) and activity-dependent phage titers on NOXA at the end of the PACE experiment (top) when hsBCL-2 was evolved to maintain BID binding. Activity-dependent plaque assays used plasmid 28–48. (C) Timeline of PACE experiments when hsBCL-2 was evolved with positive selection to maintain BID binding and negative selection against NOXA binding. Selection conditions shown as arrows and blunt bars: arrow, selection for binding to BID (blue); gray blunt bar, selection against binding to Zbneg; red blunt bar, selection against binding to NOXA. (D) Same as (B), but for hsBCL-2 evolved to bind BID and not NOXA. Activity-dependent plaque assays used plasmids 28–48 and Jin 487.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Allele frequency of non-wild-type states when hsBCL-2 was evolved to maintain BID binding (top) or when hsBCL-2 was evolved to simultaneously maintain BID binding and lose NOXA binding (middle). For comparison, the same sites are also shown for when hsBCL-2 was evolved to gain NOXA binding (bottom). Site numbers and wild-type (WT) amino acid states are listed above each sequence. Each row represents an independent replicate population. Non-wild-type amino acids that reached > 5% in frequency are shown, with frequency proportional to color saturation.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Bars are the mean ± SD of three biological replicates (circles). Solid lines show the effects of the r165L mutation while dotted lines show the effect of a frameshift (fs) at site 262.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** (A) Timeline of PACE experiments when AncB4 was evolved with positive selection to maintain only BID binding. Selection conditions shown as arrows and blunt bars: arrow, selection for binding to BID (blue); blunt bar, selection against binding to ZBneg (gray). (B) Phage titers (PFU/mL) over time when AncB4 was evolved to maintain BID binding. (C) Phenotypes and genotypes of individual AncB4 variants that were isolated from PACE when selecting for BID binding and screened for the gain of NOXA binding. Site numbers and wild-type (WT) amino acid states are indicated at the top. Heatmaps on the left show binding to BID (blue) and NOXA (red) in the luciferase assay for each variant, and each shaded box represents the normalized mean of three biological replicates. (D) Non-wild-type amino acid states that reached >5% in frequency are shown for PACE when AncB4 was evolved to gain NOXA binding, for comparison with (C). Frequency is proportional to color saturation. Split cells show populations with multiple non-WT states > 5%. Each row represents an independent replicate lagoon. Color of WT state indicate if the mutation was seen among multiple replicates of the same starting genotype (teal), a single replicate from multiple starting genotypes (orange), or in multiple replicates and multiple starting genotypes (brown). Black box outline indicates mutant states observed in multiple replicates from the same starting genotype and from multiple replicates from a different starting genotype. (E) Same as (A) but for AncB5. (F) Same as (B) but for AncB5. (G) Same as (C) but for AncB5. (H) Same as (D) but for AncB5.
+
+### Contingency can affect accessibility of new functions
 
 Although we found that chance and contingency strongly influenced sequence outcomes in our experiments, all trajectories acquired the historically relevant PPI specificities that were selected for, indicating strong necessity at the level of protein function. This was true whether evolution began from more ‘promiscuous’ starting points that bound both BID and NOXA or from more specific proteins that bound only BID.
 
 To further probe the evolutionary accessibility of new functions, we used PACE to select for a PPI specificity that never arose during historical evolution – binding of NOXA but not BID. We found that trajectories launched from hsMCL-1 (which binds both coregulators) readily evolved the selected phenotype, but two PACE-evolved variants of hsBCL-2, which had acquired the same PPI profile as hsMCL-1, went extinct under the same selection conditions (Figure 9, Figure 9—figure supplement 1). The inability of the derived hsBCL-2 genotypes to acquire NOXA specificity was not attributable to a general lack of functional evolvability by these proteins because they successfully evolved in a separate PACE experiment to lose their NOXA binding but retain BID binding (Figure 9—figure supplement 2). These results establish that contingency can influence the accessibility of new functions and that the sequence by which a specific functional phenotype is encoded can play important roles in subsequent phenotypic evolution.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig9-v2.jpg)
+
+**Figure 9.:** Starting genotypes that can bind both BID and NOXA (left) were selected to lose only BID or NOXA binding. Heatmaps show binding to BID and NOXA in the luciferase assay for each starting genotype (on the left) and for three individual variants picked at the end of one or more PACE trajectories (index numbers). Each box displays the normalized mean of three biological replicates for one variant. Trajectories initiated from starting points produced by PACE (green) and then selected for a non-historical function (loss of BID binding) went extinct .
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Timeline of PACE experiments where hsMCL-1 and two previously evolved NOXA-binding hsBCL-2 variants were evolved to maintain NOXA binding and lose BID binding. Selection conditions: arrow, selection for binding NOXA (red); blunt bar, selection against binding a specific peptide (BID [blue] or ZBneg [gray]). (B) Phage titers (PFU/mL) over time (bottom) and activity-dependent phage titers at the end of the PACE experiment (top) where hsMCL-1 and NOXA-binding hsBCL-2 variants were evolved for binding NOXA and against BID. Activity-dependent plaque assays used plasmids 28–48 and Jin 518. Limit of detection = 103 PFU/mL. (C) Allele frequency of non-wild-type states after hsMCL-1 was evolved to maintain NOXA binding and lose BID binding. Site numbers and wild-type (WT) amino acid states are listed above each sequence. Each row represents an independent replicate lagoon. Non-wild-type amino acid frameshifts that reached >5% in frequency are shown, with frequency proportional to color saturation.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/67336/elife-67336-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Phage titers (PFU/mL) over time (bottom) and activity-dependent phage titers at the end of the PACE experiment (top) where NOXA-binding hsBCL-2 variants were evolved to lose NOXA binding.Activity-dependent plaque assays used plasmids 28–46 and Jin 487.
 
 ## Discussion
 
@@ -124,7 +240,143 @@ Finally, our work has implications for understanding the processes of protein e
 
 ## Materials and methods
 
-## Phylogenetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>S1030</td>
+      <td>Carlson et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>1059</td>
+      <td>Carlson et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB 10-beta</td>
+      <td>NEB</td>
+      <td>Cat# C3019I</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BCL21 (DE3)</td>
+      <td>NEB</td>
+      <td>Cat# C2530H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BID</td>
+      <td>GenScript</td>
+      <td>This Study</td>
+      <td>Human BID peptide used for fluorescence polarization (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NOXA</td>
+      <td>Genscript</td>
+      <td>This study</td>
+      <td>Human NOXA peptide used for fluorescence polarization (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA clean and concentrator kit</td>
+      <td>Zymo</td>
+      <td>Cat# D4013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MiSeq Reagent Kit v3</td>
+      <td>Illumina</td>
+      <td>Cat# MS-102–3003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q5 DNA Polymerase</td>
+      <td>NEB</td>
+      <td>Cat# M0491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phusion DNA polymerase</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# F518L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopropyl-b-D-thiogalactopyranoside (IPTG)</td>
+      <td>bioWORLD</td>
+      <td>Cat# 21530057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>His60 Ni Superflow Resin</td>
+      <td>Takara</td>
+      <td>Cat# 635660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious</td>
+      <td>Geneious</td>
+      <td>10.1.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>CRAN</td>
+      <td>3.5.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio</td>
+      <td>1.1.456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PROT Test</td>
+      <td>Abascal et al., 2005</td>
+      <td>3.4.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAXML-ng</td>
+      <td>Kozlov and Stamatakis, 2019</td>
+      <td>0.6.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Phylogenetics
 
 Amino acid sequences of the human BCL-2, BCLW, BCL-xL, MCL-1, NRH, BFL1, BAK, BAX, and BOK paralogs were used as starting points for identifying BCL-2 family members in other species. For each paralog, tblastn and protein BLAST on NCBI BLAST were used to identify orthologous sequences between January and March of 2018 (Altschul et al., 1997). Sequences for each paralog were aligned using MAFFT (G-INS-I) with the –allowshift option and –unalignlevel set at 0.1. For each paralog, phylogenetic structure was determined using fasttree 2.1.11 within Geneious 10.1.3. Missing clades based on known species relationships were then identified, and specific tblastn searches were used within Afrotheria (taxid:311790), Marsupials (taxid:9263), Monotremes (taxid:9255), Squamata (taxid:8509), Archosauria (taxid:8492), Testudinata (taxid:8459), Amphibia (taxid:8292), Chondrichthyes (taxid:7777), Actinopterygii (taxid:7898), Dipnomorpha (taxid:7878), Actinistia (taxid:118072), Agnatha (taxid:1476529), Cephalochordata (taxid:7735), and Tunicata (taxid:7712) as needed. Additional sequences were added by downloading genome and transcriptome data for tuatara (Miller et al., 2012), sharks and rays (Wyffels et al., 2014), gar (Zerbino et al., 2018), ray-finned fish (Hughes et al., 2018), lamprey (Smith et al., 2018), hagfish (Takechi et al., 2011), Ciona savignyi (Zerbino et al., 2018), tunicates (Delsuc et al., 2018), echinoderms (Reich et al., 2015), porifera (Riesgo et al., 2014), and ctenophores (Moroz et al., 2014). In each case, local BLAST databases were created in Geneious and searched using tblastn. Finally, we used BCL-2DB to add missing groups as needed (Rech de Laval et al., 2014).
 
@@ -136,7 +388,7 @@ Overall, we recovered three clades: a pro-apoptotic clade; a clade containing th
 
 The BCL-2-like and MCL-1-like paralogs formed a clade with the BHP1 and BHP2 sequences from porifera. The sister relationships among these four clades were unresolved. In addition, we recovered a sister relationship between the BAK and BAX paralogs. While both paralogs contained copies from porifera, these clades evolved quickly and had relatively low support, and they may be artifactual. We identified only a single clade of ctenophores. Finally, the placement of BOK was unresolved; BOK may be sister to the BAK/BAX clade or an outgroup to all clades and the most ancient copy of the BCL-2 family.
 
-## Ancestral reconstruction
+### Ancestral reconstruction
 
 Posterior probabilities of each amino acid at each site were inferred using Lazarus (Finnigan et al., 2012) to run codeml within PAML. We used the same model and alignment as used to infer the phylogeny. We used the branch lengths and topology of the constrained maximum likelihood phylogeny found by raxml-ng.
 
@@ -144,7 +396,7 @@ We first reconstructed the LCAs of all BCL-2 and MCL-1 like sequences, AncMB1-M,
 
 For the BCL-2 like clade, we also reconstructed AncMB1, this time using human BCL-2 sequence to fill in the N and C terms and the loop between the first and second alpha helices (AncMB1-B). We then reconstructed sequences from AncMB1 to modern human BCL-2. These included AncB1 (LCA of BCL-2-related sequences), AncB2 (LCA of BCL-2-related Bilaterian and Cnidaria), AncB3 (LCA of BCL-2-related deuterostomes and protostomes), AncB4 (LCA of BCL-2 deuterostomes), AncB5 (LCA of BCL-2, BCLW, and BCLX like copies in vertebrates), AncBCL-2 (LCA of BCL-2 like copies), AncBCL-2-G (LCA of BCL-2 like gnathostomes), AncBCL-2-O (LCA of BCL-2 like osteichthyes), and AncBCL-2-T (LCA of BCL-2 like tetrapods), using human BCL-2 sequences for the N and C terms and the loop between the first and second alpha helices. Average posterior probabilities for ancestors in the BCL-2 clade ranged from 0.87 (AncB1) to 0.95 (AncBCL-2-T) with an average of 0.9 (sd 0.04).
 
-## Test of robustness of ancestral inference
+### Test of robustness of ancestral inference
 
 To determine the robustness of our conclusions on the phenotype of ancestral sequences, we synthesized and cloned alternative reconstructions for key ancestors. In each case, sequences contained the most likely alternative state with posterior probability > 0.2 for all such sites where such a state existed. Alternative reconstructions contained an average of 24 alternative states and represent a conservative test of function (min: 4, max: 44, Supplementary file 2). In our luciferase assay, all but two alternative reconstructions retained similar BID and NOXA binding as the maximum likelihood ancestral sequences. The first alternative reconstruction that differed from the maximum likelihood reconstruction was AltAncB3, which bound both BID and NOXA, while the ML for AncB3 bound BID, but NOXA only weakly. As a result, the exact branch upon which NOXA binding was lost historically is not resolved by this data.
 
@@ -152,102 +404,306 @@ The second alternative reconstruction that differed from the ML reconstruction w
 
 Finally, we synthesized and tested modern sequences from key groups to determine the robustness of our inference on the timing of NOXA binding loss. These included BCL-2-related sequences from groups that diverged prior to the predicted loss of NOXA binding (Trichoplax adhaerens and Hydra magnapapillata), sequences from groups that diverged around the time of predicted NOXA binding loss (Octopus bimaculoides and Stegodyphus mimosarum), or sequences from groups predicted to have diverged after NOXA binding lost (Saccoglossus kowalevskii and Branchiostoma belcheri). In each case, we used human BCL-2 sequence to replace extant N and C terms and the loop between the first and second alpha helices. The T. adhaerens and B. belcheri sequences were non-functional in our luciferase assays, binding neither BID nor NOXA. However, recent work has comprehensively characterized binding in BCL-2 family members within T. adhaerens, finding that the BCL copy can bind both BID and NOXA as predicted (Popgeorgiev et al., 2020). H. magnapapillata bound both BID and NOXA in our assay and the remaining sequences bound only BID, suggesting a loss of NOXA binding prior to the divergence of protostomes and deuterostomes in the BCL-2 related clade, consistent with the conclusion drawn using reconstructed proteins.
 
-## Escherichia coli strains
+### Escherichia coli strains
 
 E. coli 10-beta cells were used for cloning and were cultured in 2xYT media. E. coli BL21 (BE3) cells were used for protein expression and were cultured in Luria-Bertain (LB) broth. E. coli S1030 cells cultured in LB broth were used for activity-dependent plaque assays, phage growth assays, and luciferase assays. S1030 cells cultured in Davis Rich media were used for PACE experiments (Carlson et al., 2014). E. coli 1059 cells were used for cloning phage and assessing phage titers and were cultured in 2xYT media.
 
-## Cloning and general methods
+### Cloning and general methods
 
 Plasmids were constructed by using Q5 DNA Polymerase (NEB) to amplify fragments that were then ligated via Gibson Assembly. Primers were obtained from IDT, and all plasmids were sequenced at the University of Chicago Comprehensive Cancer Center DNA Sequencing and Genotyping Facility. Vectors and gene sequences used in this study are listed in Supplementary file 5, with links to fully annotated vector maps on Benchling. Key vectors are deposited at Addgene, and all vectors are available upon request. The following working concentrations of antibiotics were used: 50 µg/mL carbenicillin, 50 µg/mL spectinomycin, 40 µg/mL kanamycin, and 33 µg/mL chloramphenicol. Protein structures and alignments were generated using the program PyMOL (Schrödinger, 2018).
 
-## Luciferase assay
+### Luciferase assay
 
 Cloned expression vectors contained the following: (1) a previously evolved, isopropyl β-D-1-thiogalactopyranoside (IPTG)-inducible N-terminal half of T7 RNAP (Zinkus-Boltz et al., 2019) fused to a BCL-2 family protein; (2) the C-terminal half of T7 RNAP fused to a peptide from a BH3-only protein; and (3) T7 promoter-driven luciferase reporter. Chemically competent S1030 E. coli cells (Carlson et al., 2014) were prepared by culturing to an OD600 of 0.3, washing twice with a calcium chloride/HEPES solution (60 mM CaCl2, 10 mM HEPES pH 7.0, 15% glycerol), and then resuspending in the same solution. Vectors were transformed into chemically competent S1030 cells via heat shock at 42°C for 45 s, followed by 1 hr recovery in 3× volume of 2xYT media, and then plated on agar with the appropriate antibiotics (carbenicillin, spectinomycin, and chloramphenicol) to incubate overnight at 37°C. Individual colonies (three to four biological replicates per condition) were picked and cultured in 1 mL of LB media containing the appropriate antibiotics overnight at 37°C in a shaker. The next morning, 50 µL of each culture was diluted into 450 µL of fresh LB media containing the appropriate antibiotics, as well as 1 µM of IPTG. The cells were incubated in a shaker at 37°C, and OD600 and luminescence measurements were recorded between 2.5 and 4.5 hr after the start of the incubation. Measurements were taken on a Synergy Neo2 Microplate Reader (BioTek) by transferring 150 µL of the daytime cultures into Corning black, clear-bottom 96-well plates. Data were analyzed in Microsoft Excel and plotted in GraphPad Prism, as previously reported (Pu et al., 2017a).
 
 Protein expression hsBCL-2, hsMCL-1, and evolved variants were constructed as N-terminal 6xHis-GST tagged proteins. The recombinant proteins were expressed in BL21 E. coli (NEB) and purified following standard Ni-NTA resin purification protocols (ThermoFisher Scientific) (Zhou et al., 2019). Briefly, BL21 E. coli containing an N-terminal 6xHis-GST tagged BCL-2 family protein were cultured in 5 mL LB with carbenicillin overnight. The following day, the culture was added to 0.5 L of LB with carbenicillin, incubated at 37°C until it reached an OD600 of 0.6, induced with IPTG (final concentration: 200 µM), and cultured overnight at 16°C. The cell pellet was harvested by centrifugation followed by resuspension in 30 mL of lysis buffer (50 mM Tris 1 M NaCl, 20% glycerol, 10 mM TCEP, pH 7.5) supplemented by protease inhibitors (200 nM Aprotinin, 10 µM Bestatin, 20 µM E-64, 100 µM Leupeptin, 1 mM AEBSF, 20 µM Pepstatin A). Cells were lysed via sonication and were then centrifuged at 12,000 g for 40 min at 4°C. Solubilized proteins, located in the supernatant, were incubated with His60 Ni Superflow Resin (Takara) for 1 hr at 4°C, and the protein was eluted using a gradient of imidazole in lysis buffer (50–250 mM). Fractions with the protein, as determined by SDS-PAGE, were concentrated in Ulta-50 Centrifugal Filter Units (Amicon, EMD Millipore). Proteins were purified via a desalting column with storage buffer (50 mM Tris–HCl [pH 7.5], 300 mM NaCl, 10% glycerol, 1 mM DTT) and further concentrated. The concentration of the purified BCL-2 family proteins was determined by BCA assay (ThermoFisher Scientific), and they were flash-frozen in liquid nitrogen and stored at −80°C.
 
-## Fluorescent polarization binding assays
+### Fluorescent polarization binding assays
 
-Fluorescent polarization (FP) was used to measure the affinity of BCL-2 family proteins with peptide fragments of the BH3-only proteins in accordance with previously described methods (Zhang et al., 2002). hsBCL-2, hsMCL-1, and evolved variants were purified as described above. The fluorescent NOXA and BID peptides (95+% purity) were synthesized by GenScript and were N-terminally labeled with 5-FAM-Ahx and C-terminally modified by amidation. These peptides were dissolved and stored in DMSO. Corning black, clear-bottom 384-well plates were used to measure FP, and three replicates were prepared for each data point. Each well contained the following 100 µL reaction: 20 nM BH3-only protein, 0.05 nM to 3 µM of BCL-2 family protein (1/3 serial dilutions), 20 mM Tris (pH 7.5), 100 mM NaCl, 1 mM EDTA, and 0.05% pluronic F-68. FP values (in milli-polarization units; mFP) of each sample were read by a Synergy Neo2 Microplate Reader (BioTek) with the FP 108 filter (485/530) at room temperature 5–15 min after mixing all the components. Data were analyzed in GraphPad Prism 8, using the following customized fitting equation, to calculate Kd (Zhou et al., 2019):y=B+C(D+Kd+x-D+Kd+x2-4Dx)where y is normalized measured FP, x is the concentration of BCL-2 protein, D is the concentration of the BH3-only protein, B and C are parameters related to the FP value of free and bound BH3-only protein, and Kd is the dissociation constant.
+Fluorescent polarization (FP) was used to measure the affinity of BCL-2 family proteins with peptide fragments of the BH3-only proteins in accordance with previously described methods (Zhang et al., 2002). hsBCL-2, hsMCL-1, and evolved variants were purified as described above. The fluorescent NOXA and BID peptides (95+% purity) were synthesized by GenScript and were N-terminally labeled with 5-FAM-Ahx and C-terminally modified by amidation. These peptides were dissolved and stored in DMSO. Corning black, clear-bottom 384-well plates were used to measure FP, and three replicates were prepared for each data point. Each well contained the following 100 µL reaction: 20 nM BH3-only protein, 0.05 nM to 3 µM of BCL-2 family protein (1/3 serial dilutions), 20 mM Tris (pH 7.5), 100 mM NaCl, 1 mM EDTA, and 0.05% pluronic F-68. FP values (in milli-polarization units; mFP) of each sample were read by a Synergy Neo2 Microplate Reader (BioTek) with the FP 108 filter (485/530) at room temperature 5–15 min after mixing all the components. Data were analyzed in GraphPad Prism 8, using the following customized fitting equation, to calculate Kd (Zhou et al., 2019):
 
-## Phage-assisted continuous evolution
+$$
+y=B+C(D+K_{d}+x-\sqrt{D+K_{d}+x^{2}-4Dx})
+$$
+
+where y is normalized measured FP, x is the concentration of BCL-2 protein, D is the concentration of the BH3-only protein, B and C are parameters related to the FP value of free and bound BH3-only protein, and Kd is the dissociation constant.
+
+### Phage-assisted continuous evolution
 
 PACE was used to evolve hsBCL-2, hsMCL-1, and ancestral proteins in accord with previously reported technical methods (Carlson et al., 2014; Esvelt et al., 2011; Pu et al., 2019; Pu et al., 2017b) using a new vector system. Briefly, combinations of accessory plasmids and the MP6 mutagenesis plasmid (Badran and Liu, 2015) were transformed into S1030 E. coli., plated on agar containing the appropriate antibiotics (carbenicillin, kanamycin, and chloramphenicol) and 10 mM glucose, and incubated overnight at 37°C. Colonies were grown overnight in 5 mL of LB containing the appropriate antibiotics and 20 mM glucose. Davis Rich media was prepared in 5–10 L carboys and autoclaved, and the PACE flasks and corresponding pump tubing were autoclaved as well. The following day, PACE was set up in a 37°C environmental chamber (Forma 3960 environmental chamber, ThermoFisher Scientific). For each replicate, an overnight culture was added to ~150 mL of Davis Rich carboy media in chemostats and grown for 2–3 hr until reaching an OD600 of approximately 0.6. Lagoons containing 20 µL of phage from saturated phage stocks (108–109 phage) were then connected to the chemostat. Magnetic stir bars were used to agitate chemostats and lagoons. The chemostat cultures were flowed into the lagoons at a rate of approximately 20 mL/h. Waste output flow rates were adjusted to maintain a constant volume of 20 mL in the lagoons, 150 mL in the chemostat, and an OD600 close to 0.6 in the chemostat. A 10% w/v arabinose solution was pumped into the lagoons at a rate of 1 mL/h. If the experiment included a mixing step (two separate chemostats flowed together into one lagoon for a mixed selection pressure), a chemostat was prepared the next day (as described above) and connected to the lagoons. During this step, lagoon volumes were increased to 40 mL, and the arabinose inflow rate was increased to 2 mL/h. After disconnecting the first chemostat the next day, the lagoon volumes and arabinose inflow were both lowered to 20 mL and 1 mL/h, respectively. During the experiment, samples were collected from the lagoons every 24 hr and centrifuged at 13,000 rpm for 3 min to collect the phage-containing supernatant, as well as the cell pellet for DNA extraction. PACE experiments are listed in Supplementary file 3. A single replicate of AncB5 was removed because of contamination. No statistical method was used to determine the number of replicates as only four independent replicate experiments could be performed simultaneously.
 
 During PACE, the media volume of each lagoon turned over once per hour for 4 days, or ~100 times. For a phage population to survive this amount of dilution, a similar number of generations must have occurred between the starting phage and the phage in the lagoon at the end of the experiment (Esvelt et al., 2011). This is expected to be a conservative estimate; as a more fit phage rises in frequency in the population, it will undergo a greater number of generations than less-fit phage in the population. The mutagenesis plasmid MP6 induces a mutation rate of approximately 6 × 10−6 per bp per generation. The BCL2 family proteins used in the PACE experiments were ~230 amino acids long, indicating that a mutation occurred on average every ~250 phage replications. Phage population sizes ranged from 105 per mL to 1010 per mL over the course of a PACE experiment, indicating a rate of 400–40,000,000 new mutations every generation. Conservative estimates thus suggest that a during each individual replicate, phage populations sampled at least 40,000 mutations, and upwards of 4 × 109 mutations. While not all mutations were equally likely each generation because MP6 enriches for transitions (i.e. G→A, A→G, C→T, and T→C), the high number of mutations sampled suggests that the vast majority of possible single point mutations (approximately 230*3*4 = 2760 potential mutations) were sampled over the course of each experiment, with higher population sizes generating all potential single point mutations each generation.
 
-## Plaque assays
+### Plaque assays
 
-Plaque assays were performed on 1059 E. coli cells (Carlson et al., 2014; Hubbard et al., 2015), which supply gene III (gIII) to phage in an activity-independent manner, to measure phage titers. Additionally, activity-dependent plaque assays were done on S1030 E. coli containing the desired accessory plasmids to determine the number of phage encoding a BCL-2 family protein with a given peptide-binding profile. All cells were grown to an OD600 of approximately 0.6 during the day. Four serial dilutions were done in Eppendorf tubes by serially pipetting 1 μL of phage into 50 µL of cells to yield the following dilutions: 1/50, 1/2500, 1/125,000, and 1/6,250,000. 650 µL of top agar (0.7% agar with LB media) was added to each tube, which was then immediately spread onto a quad plate containing bottom agar (1.5% agar with LB media). Plates were incubated overnight at 37°C. Plaques were counted the following day, and plaque forming units (PFU) per mL was calculated using the following equation:PFU=1000*A*504-B
+Plaque assays were performed on 1059 E. coli cells (Carlson et al., 2014; Hubbard et al., 2015), which supply gene III (gIII) to phage in an activity-independent manner, to measure phage titers. Additionally, activity-dependent plaque assays were done on S1030 E. coli containing the desired accessory plasmids to determine the number of phage encoding a BCL-2 family protein with a given peptide-binding profile. All cells were grown to an OD600 of approximately 0.6 during the day. Four serial dilutions were done in Eppendorf tubes by serially pipetting 1 μL of phage into 50 µL of cells to yield the following dilutions: 1/50, 1/2500, 1/125,000, and 1/6,250,000. 650 µL of top agar (0.7% agar with LB media) was added to each tube, which was then immediately spread onto a quad plate containing bottom agar (1.5% agar with LB media). Plates were incubated overnight at 37°C. Plaques were counted the following day, and plaque forming units (PFU) per mL was calculated using the following equation:
+
+$$
+PFU=1000*A*50^{4-B}
+$$
 
 Where A is the number of plaques in a given quadrant, and B is the quadrant number where the phage were counted, in which one is the least dilute quadrant and four is the most dilute quadrant.
 
-## Phage growth assays
+### Phage growth assays
 
 Phage growth assays were performed by adding the following to a culture tube and shaking at 37°C for 6 hr: 1 mL of LB with the appropriate antibiotics (carbenicillin and kanamycin), 10 µL of saturated S1030 E. coli containing the accessory plasmids of interest, and ~1000 phage. Phage were then isolated by centrifugation at 13,000 rpm for 3 min, and PFU was determined by plaque assays using 1059 E. coli and the plaque assay protocol described above.
 
-## High-throughput sequencing library construction
+### High-throughput sequencing library construction
 
 PACE samples were collected from each lagoon every 24 hr. The lagoon samples were centrifuged at 13,000 rpm for 3 min on a bench top centrifuge to separate supernatant and cell pellet. The phage-containing supernatants were stored at 4°C prior to the creation of sequencing libraries. To prepare Illumina sequencing libraries, each phage sample was cultured overnight with 1059 E. coli cells, followed by phage DNA purification (Qiagen plasmid purification reagent buffer), P1 (catalog number 19051), P2 (catalog number 19052), N3 (catalog number 19064), PE (catalog number 19065), and spin column for DNA (EconoSpin, catalog number 1920–250). The resulting DNA concentration was ~50 ng/µL. Freshly generated DNA samples were then used as template for PCR amplification. For each library sample, we amplified three overlapping fragments of the BCL-2 family protein, which are 218–241 bp in length (Figure 4—figure supplement 1). Each primer also included 6–9 ‘N’s to introduce length variation (Supplementary file 4). In total, 12 PCRs were used for each library. Phusion DNA polymerases and buffers (ThermoFisher Scientific, catalog number F518L) were used in the first PCR round to amplify all three fragments for all library sequencing. The 25 µL reaction contained: 0.5 µL of 50 mM MgCl2, 0.75 µL of 10 mM dNTP, 0.75 µL Phusion DNA polymerase, 20 ng library DNA, and 0.5 µL of 10 µM primer (each). The PCR were run on a C1000 Touch Thermal Cycler (Bio-Rad), with the following parameters: 98°C for 1 min, followed by 16 cycles of 98°C for 12 s, 58°C for 15 s and 72°C for 45 s, and finally 72°C for 5 min. PCR were purified using the ZYMO DNA clean and concentrator kit (catalog number D4013) and 96 well filter plate (EconoSpin, catalog number 2020–001). The DNA products were dissolved in 30 µL ddH2O. All 12 reactions for each library were combined, and 1 µL was used as the template for a second PCR round. PCR components and thermocycler parameters were the same as above, except that the annealing temperature was 56°C, and only 15 rounds of amplification were conducted. The primer and sample combinations are listed in Supplementary file 4. PCRs were then purified following the same procedure as previous step. Equal volumes of all 72 library samples were combined and concentration was measured using a Qubit 4 Fluorometer. The total DNA sample was 2.68 ng/µL (equivalent to 10 nM, according to the average length of PCR fragments). DNA samples were diluted to 4 nM from step 4 following the Illumina MiSeq System Denature and Dilute Libraries Guide and then diluted to 12 pM for high-throughput sequencing. The final sample contained 100 µL of 20 pM PhiX spike-in plus 500 µL of the 12 pM library sample. Sequencing was performed on the Illumina MiSeq System using MiSeq Reagent Kit v3 (600-cycle) with paired-end reads according to the manufacturer’s instructions.
 
-## Processing of Illumina data
+### Processing of Illumina data
 
 Illumina sequencing yielded 22 million reads, 13 million of which could be matched to a specific sample (Supplementary file 4). One replicate for AncB5 was found to be contaminated and removed from further analysis. To process the remaining data, we first used Trim Galore with default settings to trim reads based on quality (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/). Then, we used BBMerge, a script in BBTools (https://jgi.doe.gov/data-and-tools/bbtools/), to merge paired-end reads. Next, we used Clumpify to remove repeated barcode sequences. We then used Seal to identify and bin reads by sample and fragment. Finally, we used BBDuk to remove any primer or adapter sequence present. Scripts and reference sequences are available on Github (Thornton, 2021).
 
-## Illumina sequencing analysis
+### Illumina sequencing analysis
 
 Reads were binned by experiment and then aligned to the appropriate WT sequence using Geneious (low sensitivity, five iterations, gaps allowed). Sequences were then processed in R to remove sequences containing ‘N’s or that were not full length. Insertions found in less than 1% of the population and sites that extended outside of the coding region were removed from all sequences. Remaining gaps were standardized among replicates and within an experiment. Finally, allele frequencies were calculated for each site and amino acid, as well as remaining insertions and deletions.
 
-## Quantifying the effects of chance and contingency on the outcomes of evolution
+### Quantifying the effects of chance and contingency on the outcomes of evolution
 
-## Estimating the effects of chance
+#### Estimating the effects of chance
 
-Allele frequency differences among replicates started from the same genotype can only be caused by chance events. Thus, to determine the effects of chance (C1) on the outcomes of evolution, we compared allele frequencies from replicate PACE experiments started from the same genotype. We compared allele frequencies of individual replicates to the average allele frequencies among replicates started from the same genotype by estimating the probability that two randomly chosen alleles would be different, i.e. the genetic variance, for each replicate individually (Vr) and the pooled sample of all replicates from a given starting genotype (Vg):C1≡VgVr=1-Qg1-Qrwhere Qr is the probability that two randomly chosen alleles in the same replicate are identical in state and Qg is the probability that two randomly chosen alleles from the pooled replicates started from the same genotype are identical in state. C1 is related to Wright’s Fis statistic as:Fis≡Frg≡Qr-Qg1-Qg1-Frg=1-Qg-Qr+Qg1-Qg=1-Qr1-Qg11-Frg=1-Qg1-Qr=C1
+Allele frequency differences among replicates started from the same genotype can only be caused by chance events. Thus, to determine the effects of chance ($C_{1}$) on the outcomes of evolution, we compared allele frequencies from replicate PACE experiments started from the same genotype. We compared allele frequencies of individual replicates to the average allele frequencies among replicates started from the same genotype by estimating the probability that two randomly chosen alleles would be different, i.e. the genetic variance, for each replicate individually ($V_{r}$) and the pooled sample of all replicates from a given starting genotype ($V_{g})$:
 
-We used count data from Illumina sequencing to estimate allele frequencies and followed the approach of Hivert et al., 2018, which developed a methods of moments estimator, F^stpool, that is appropriate for pooled data and accounts for both the sampling of individuals within a population and the sampling of reads during sequencing. We treated each amino acid site independently and defined the following:R1:rgs≡# of reads in replicate r of starting genotype g at site sπ^a:rgs≡ observed allele frequency of allele a in replicate r of starting genotype g at site sπ^a:gs≡ observed allele frequency of allele a in pooled replicates of starting genotype g at site s
+$$
+C_{1}≡\frac{V_{g}}{V_{r}}=\frac{1-Q_{g}}{1-Q_{r}}
+$$
 
-Using these values, we used the estimator of F^stpool defined in Hivert et al., 2018 to estimate Frg for a single site:F^stpool≡F^rgs≡MSGgs-MSRgsMSGgs+ℛgs-1MSRgswhere:
+where $Q_{r}$ is the probability that two randomly chosen alleles in the same replicate are identical in state and $Q_{g}$ is the probability that two randomly chosen alleles from the pooled replicates started from the same genotype are identical in state. $C_{1}$ is related to Wright’s Fis statistic as:
 
-MSGgs≡1R1:gs−R2:gs∑a=121∑r=1nr:gR1:rgs(π^a:rgs−π^a:gs)2 is the mean sum-of-squares for pooled replicates.
+$$
+F_{is}≡F_{rg}≡\frac{Q_{r}-Q_{g}}{1-Q_{g}}
+$$
 
-MSRgs≡1R1:gs−R1:gs∑a=121∑r=1nr:gR1:rgsπ^a:rgs(1−π^a:rgs) is the mean sum-of-squares within replicates.
 
-Rgs≡R1:gs−R2:gsR1:gsR1:gs−R2:gs, is the effective number of individuals after accounting for sampling, withR1:gs≡∑r=1nr:gR1:rgs,R2:gs≡∑r=1nr:gR1:rgs2R1:gs≡∑r=1nr:gR1:rgs+ni:rg−1ni:rg,andR2:gs≡1R1:gs∑r=1nr:gR1:rgs(R1:rgs+ni:rg−1)ni:rg.
 
-Here, nr:g is the number of replicates started from genotype g and ni:rg is the number of individual phage in replicate r of starting genotype g in the sample used to make the sequencing library.
+$$
+1-F_{rg}=\frac{1-Q_{g}-Q_{r}+Q_{g}}{1-Q_{g}}=\frac{1-Q_{r}}{1-Q_{g}}
+$$
 
-From the relationship between C1 and Frg, we approximated the site-specific effects of chance for a particular starting genotype as:C^1:gs≡11−F^rgs=11−MSGgs−MSRgsMSGgs+(Rgs−1)MSRgs=1MSGgs+(Rgs−1)MSRgs−MSGgs+MSRgsMSGgs+(Rgs−1)MSRgs=MSGgs+(Rgs−1)MSRgsRgsMSRgs=1+MSGgs−MSRgsRgsMSRgs
 
-When there were replicates from more than one starting genotype, we calculated MSGgs, MSRgs, and Rgs separately for each starting genotype and averaged these values together, using weights proportional to the number of replicates for that genotype. Thus:C^1s=1+∑g=1ngnr:g∑g=1ngnr:g(MSGgs−MSRgs)∑g=1ngnr:gRgs∑g=1ngnr:gMSRgswhere ng is the number of distinct starting genotypes.
 
-We then took the average numerator and average denominator as suggested by Hivert et al., 2018 and Weir and Cockerham, 1984 for estimating Fst:C^1=1+∑s=1ns∑g=1ngnr:g∑g=1ngnr:gs(MSGgs−MSRgs)∑s=1ns∑g=1ngnr:gRgs∑g=1ngnr:gMSRgswhere ns is the number of sites.
+$$
+\frac{1}{1-F_{rg}}=\frac{1-Q_{g}}{1-Q_{r}}=C_{1}
+$$
 
-## Estimating the effects of contingency
+We used count data from Illumina sequencing to estimate allele frequencies and followed the approach of Hivert et al., 2018, which developed a methods of moments estimator, $F^_{st}^{pool}$, that is appropriate for pooled data and accounts for both the sampling of individuals within a population and the sampling of reads during sequencing. We treated each amino acid site independently and defined the following:
 
-To determine the effects of contingency (C2) on the outcomes of evolution, we compared the average allele frequency of replicate PACE experiments between different starting genotypes. For each starting genotype, we pooled all replicates started from that genotype and treated it as a single sample. We compared allele frequencies among genotypes by estimating the probability that two randomly chosen alleles in a sample would be different if they were both drawn from the same starting genotype (Vg) or drawn from different starting genotypes (Vt):C2≡VtVg≡1−Qg1≠g21−Qg1=g2where Qg1=g2 is the probability that two randomly chosen alleles from the same starting genotype are identical in state and Qg1≠g2 is the probability that two randomly chosen alleles from different starting genotypes are identical in state. To calculate 1−Qg1≠g2, we note that the probability of two randomly drawn alleles being different when chosen irrespective of starting genotype is simply the average of the probability of two randomly drawn alleles being different when they are drawn from the same and different starting genotypes, that is:(1−Qt)=12(1−Qg1=g2)+12(1−Qg1≠g2)where Qt is the probability that two randomly chosen alleles irrespective of starting genotype are identical in state. From this we have:2(1−Qt)=(1−Qg1=g2)+(1−Qg1≠g2)(1−Qg1≠g2)=2(1−Qt)−(1−Qg1=g2)(1−Qg1≠g2)=1−2Qt+Qg1=g2
+$$
+R_{1:rgs}≡# of reads in replicate r of starting genotype g at site s
+$$
 
-Using this and the fact that Qg1=g2 is equivalent to Qg used above to calculate the effects of chance, we have:C2=1−2Qt+Qg1=g21−Qg1=g2=1−Qt1−Qg1=g2+Qg1=g2−Qt1−Qg1=g2=1−Qt1−Qg+Qg−Qt1−Qg
 
-This statistic is related to Wright’s Fst as:Fst≡Fgt≡Qg−Qt1−Qt1−Fgt=1−Qt−Qg+Qt1−Qt=1−Qg1−Qtand1+Fgt=1−Qt1−Qt+Qg−Qt1−Qt1+Fgt1−Fgt=1−Qt1−Qt+Qg−Qt1−Qt1−Qg1−Qt=1−Qt1−Qg+Qg−Qt1−Qg
 
-As with the effects of chance, we used the method of moments estimator defined in Hivert et al., 2018 to estimate the effects of contingency:F^gt≡MSTs−MSGsMSTs+(Rts−1)MSGswhere:
+$$
+\pi^_{a:rgs}≡ observed allele frequency of allele a in replicate r of starting genotype g at site s
+$$
 
-MSTs≡1R1:s−R2:s∑a=121∑g=1ngR1:gs(π^a:gs−π^a:s)2 is the mean sum-of-squares for the entire pooled sample.
 
-MSGs≡1R1:s−R1:s∑a=121∑g=1ngR1:gsπ^a:gs(1−π^a:gs) is the mean sum-of-squares for a starting genotype.
 
-Rts≡R1:s−R2:sR1:sR1:s−R2:s, is the effective number of individuals after accounting for sampling, with
+$$
+\pi^_{a:gs}≡ observed allele frequency of allele a in pooled replicates of starting genotype g at site s
+$$
 
-π^a:s≡ the observed allele frequency of allele  a among all genotypes at site s,R1:s≡∑g=1ngR1:gs,R2:s≡∑g=1ngR1:gs2,R1:s≡∑g=1ngR1:gs+ni:g−1ni:g,andR2:s≡1R1:s∑g=1ngR1:gs(R1:gs+ni:g−1)ni:g.
+Using these values, we used the estimator of $F^_{st}^{pool}$ defined in Hivert et al., 2018 to estimate $F_{rg}$ for a single site:
 
-With ni:g being the number of individual phage used to make the libraries for starting genotype g.
+$$
+F^_{st}^{pool}≡F^_{rg}^{s}≡\frac{MSG_{gs}-MSR_{gs}}{MSG_{gs}+ℛ_{gs}-1MSR_{gs}}
+$$
 
-From the relationship between Fgt and C2, we approximated the effects of contingency as:C^2s=1+F^gts1−F^gts=1+MSPts−MSItsMSPts+(Rts−1)MSIts1−MSPts−MSItsMSPts+(Rts−1)MSIts=MSPts+(Rts−1)MSIts+MSPts−MSItsMSPts+(Rts−1)MSItsMSPts+(Rts−1)MSIts−MSPts+MSItsMSPts+(Rts−1)MSIts=MSPts+(Rts−1)MSIts+MSPts−MSItsMSPts+(Rts−1)MSIts−MSPts+MSIts=RtsMSIts+2MSPts−2MSItsRtsMSIts=1+2MSPts−MSItsRtsMSIts
+where:
 
-Again, we treated all sites as independent and summed the numerator and denominators to estimate the effects of contingency:C^2=1+2∑s=1ns(MSPts−MSIts)∑s=1nsRtsMSIts
+$MSG_{gs}≡\frac{1}{R_{1:gs}−R_{2:gs}}\suma=121\sumr=1n_{r:g}R_{1:rgs}(\pi^_{a:rgs}−\pi^_{a:gs})^{2}$ is the mean sum-of-squares for pooled replicates.
 
-## Estimating the combined effect of chance and contingency
+$MSR_{gs}≡\frac{1}{R_{1:gs}−R_{1:gs}}\suma=121\sumr=1n_{r:g}R_{1:rgs}\pi^_{a:rgs}(1−\pi^_{a:rgs})$ is the mean sum-of-squares within replicates.
 
-To determine the combined effects of chance and contingency (C3) on the outcomes of evolution, we compared allele frequencies from individual replicates to the average allele frequency among replicates from different starting genotypes. In each case, we pooled replicates started from a genotype and treated it as a single sample and compared it to the individual replicates started from different genotypes. We compared allele frequencies by estimating the probability that two randomly chosen alleles would be different if they were both drawn from the same replicate or if they were drawn from a different starting genotype:C3≡1−Qg1≠g21−Qr=1−Qg1−Qr∗1−Qg1≠g21−Qg=C1∗C2=VtVr
+$R_{gs}≡\frac{R_{1:gs}−\frac{R_{2:gs}}{R_{1:gs}}}{R_{1:gs}−R_{2:gs}}$, is the effective number of individuals after accounting for sampling, with
 
-We thus used:C^3=C^1∗C^2as our estimate of the combined effects of chance and contingency. This estimator indicates that the combined effects of chance and contingency are multiplicative and thus amplify each other’s effects as they get larger.
+$$
+R_{1:gs}≡\sumr=1n_{r:g}R_{1:rgs},R_{2:gs}≡\sumr=1n_{r:g}R_{1:rgs}^{2}R_{1:gs}≡\sumr=1n_{r:g}\frac{R_{1:rgs}+n_{i:rg}−1}{n_{i:rg}},
+$$
+
+and
+
+$$
+R_{2:gs}≡\frac{1}{R_{1:gs}}\sumr=1n_{r:g}\frac{R_{1:rgs}(R_{1:rgs}+n_{i:rg}−1)}{n_{i:rg}}.
+$$
+
+Here, $n_{r:g}$ is the number of replicates started from genotype $g$ and $n_{i:rg}$ is the number of individual phage in replicate $r$ of starting genotype $g$ in the sample used to make the sequencing library.
+
+From the relationship between $C_{1}$ and $F_{rg}$, we approximated the site-specific effects of chance for a particular starting genotype as:
+
+$$
+C^_{1:g}^{s}≡\frac{1}{1−F^_{rg}^{s}}=\frac{1}{1−\frac{MSG_{gs}−MSR_{gs}}{MSG_{gs}+(R_{gs}−1)MSR_{gs}}}=\frac{1}{\frac{MSG_{gs}+(R_{gs}−1)MSR_{gs}−MSG_{gs}+MSR_{gs}}{MSG_{gs}+(R_{gs}−1)MSR_{gs}}}=\frac{MSG_{gs}+(R_{gs}−1)MSR_{gs}}{R_{gs}MSR_{gs}}=1+\frac{MSG_{gs}−MSR_{gs}}{R_{gs}MSR_{gs}}
+$$
+
+When there were replicates from more than one starting genotype, we calculated $MSG_{gs}$, $MSR_{gs}$, and $R_{gs}$ separately for each starting genotype and averaged these values together, using weights proportional to the number of replicates for that genotype. Thus:
+
+$$
+C^_{1}^{s}=1+\frac{\sumg=1n_{g}n_{r:g}\sumg=1n_{g}n_{r:g}(MSG_{gs}−MSR_{gs})}{\sumg=1n_{g}n_{r:g}R_{gs}\sumg=1n_{g}n_{r:g}MSR_{gs}}
+$$
+
+where $n_{g}$ is the number of distinct starting genotypes.
+
+We then took the average numerator and average denominator as suggested by Hivert et al., 2018 and Weir and Cockerham, 1984 for estimating $F_{st}$:
+
+$$
+C^_{1}=1+\frac{\sums=1n_{s}\sumg=1n_{g}n_{r:g}\sumg=1n_{g}n_{r:gs}(MSG_{gs}−MSR_{gs})}{\sums=1n_{s}\sumg=1n_{g}n_{r:g}R_{gs}\sumg=1n_{g}n_{r:g}MSR_{gs}}
+$$
+
+where $n_{s}$ is the number of sites.
+
+#### Estimating the effects of contingency
+
+To determine the effects of contingency ($C_{2}$) on the outcomes of evolution, we compared the average allele frequency of replicate PACE experiments between different starting genotypes. For each starting genotype, we pooled all replicates started from that genotype and treated it as a single sample. We compared allele frequencies among genotypes by estimating the probability that two randomly chosen alleles in a sample would be different if they were both drawn from the same starting genotype $(V_{g})$ or drawn from different starting genotypes $(V_{t})$:
+
+$$
+C_{2}≡\frac{V_{t}}{V_{g}}≡\frac{1−Q_{g1\neqg2}}{1−Q_{g1=g2}}
+$$
+
+where $Q_{g1=g2}$ is the probability that two randomly chosen alleles from the same starting genotype are identical in state and $Q_{g1\neqg2}$ is the probability that two randomly chosen alleles from different starting genotypes are identical in state. To calculate $1−Q_{g1\neqg2}$, we note that the probability of two randomly drawn alleles being different when chosen irrespective of starting genotype is simply the average of the probability of two randomly drawn alleles being different when they are drawn from the same and different starting genotypes, that is:
+
+$$
+(1−Q_{t})=\frac{1}{2}(1−Q_{g1=g2})+\frac{1}{2}(1−Q_{g1\neqg2})
+$$
+
+where $Q_{t}$ is the probability that two randomly chosen alleles irrespective of starting genotype are identical in state. From this we have:
+
+$$
+2(1−Q_{t})=(1−Q_{g1=g2})+(1−Q_{g1\neqg2})
+$$
+
+
+
+$$
+(1−Q_{g1\neqg2})=2(1−Q_{t})−(1−Q_{g1=g2})
+$$
+
+
+
+$$
+(1−Q_{g1\neqg2})=1−2Q_{t}+Q_{g1=g2}
+$$
+
+Using this and the fact that $Q_{g1=g2}$ is equivalent to $Q_{g}$ used above to calculate the effects of chance, we have:
+
+$$
+C_{2}=\frac{1−2Q_{t}+Q_{g1=g2}}{1−Q_{g1=g2}}=\frac{1−Q_{t}}{1−Q_{g1=g2}}+\frac{Q_{g1=g2}−Q_{t}}{1−Q_{g1=g2}}=\frac{1−Q_{t}}{1−Q_{g}}+\frac{Q_{g}−Q_{t}}{1−Q_{g}}
+$$
+
+This statistic is related to Wright’s Fst as:
+
+$$
+F_{st}≡F_{gt}≡\frac{Q_{g}−Q_{t}}{1−Q_{t}}
+$$
+
+
+
+$$
+1−F_{gt}=\frac{1−Q_{t}−Q_{g}+Q_{t}}{1−Q_{t}}=\frac{1−Q_{g}}{1−Q_{t}}
+$$
+
+and
+
+$$
+1+F_{gt}=\frac{1−Q_{t}}{1−Q_{t}}+\frac{Q_{g}−Q_{t}}{1−Q_{t}}
+$$
+
+
+
+$$
+\frac{1+F_{gt}}{1−F_{gt}}=\frac{\frac{1−Q_{t}}{1−Q_{t}}+\frac{Q_{g}−Q_{t}}{1−Q_{t}}}{\frac{1−Q_{g}}{1−Q_{t}}}=\frac{1−Q_{t}}{1−Q_{g}}+\frac{Q_{g}−Q_{t}}{1−Q_{g}}
+$$
+
+As with the effects of chance, we used the method of moments estimator defined in Hivert et al., 2018 to estimate the effects of contingency:
+
+$$
+F^_{gt}≡\frac{MST_{s}−MSG_{s}}{MST_{s}+(R_{ts}−1)MSG_{s}}
+$$
+
+where:
+
+$MST_{s}≡\frac{1}{R_{1:s}−R_{2:s}}\suma=121\sumg=1n_{g}R_{1:gs}(\pi^_{a:gs}−\pi^_{a:s})^{2}$ is the mean sum-of-squares for the entire pooled sample.
+
+$MSG_{s}≡\frac{1}{R_{1:s}−R_{1:s}}\suma=121\sumg=1n_{g}R_{1:gs}\pi^_{a:gs}(1−\pi^_{a:gs})$ is the mean sum-of-squares for a starting genotype.
+
+$R_{ts}≡\frac{R_{1:s}−\frac{R_{2:s}}{R_{1:s}}}{R_{1:s}−R_{2:s}}$, is the effective number of individuals after accounting for sampling, with
+
+$\pi^_{a:s}≡ the observed allele frequency of allele  a among all genotypes at site s$,
+
+$$
+R_{1:s}≡\sumg=1n_{g}R_{1:gs},
+$$
+
+
+
+$$
+R_{2:s}≡\sumg=1n_{g}R_{1:gs}^{2},
+$$
+
+
+
+$$
+R_{1:s}≡\sumg=1n_{g}\frac{R_{1:gs}+n_{i:g}−1}{n_{i:g}},
+$$
+
+and
+
+$$
+R_{2:s}≡\frac{1}{R_{1:s}}\sumg=1n_{g}\frac{R_{1:gs}(R_{1:gs}+n_{i:g}−1)}{n_{i:g}}.
+$$
+
+With $n_{i:g}$ being the number of individual phage used to make the libraries for starting genotype $g$.
+
+From the relationship between $F_{gt}$ and $C_{2}$, we approximated the effects of contingency as:
+
+$$
+C^_{2}^{s}=\frac{1+F^_{gt}^{s}}{1−F^_{gt}^{s}}=\frac{1+\frac{MSP_{ts}−MSI_{ts}}{MSP_{ts}+(R_{ts}−1)MSI_{ts}}}{1−\frac{MSP_{ts}−MSI_{ts}}{MSP_{ts}+(R_{ts}−1)MSI_{ts}}}
+$$
+
+
+
+$$
+=\frac{\frac{MSP_{ts}+(R_{ts}−1)MSI_{ts}+MSP_{ts}−MSI_{ts}}{MSP_{ts}+(R_{ts}−1)MSI_{ts}}}{\frac{MSP_{ts}+(R_{ts}−1)MSI_{ts}−MSP_{ts}+MSI_{ts}}{MSP_{ts}+(R_{ts}−1)MSI_{ts}}}
+$$
+
+
+
+$$
+=\frac{MSP_{ts}+(R_{ts}−1)MSI_{ts}+MSP_{ts}−MSI_{ts}}{MSP_{ts}+(R_{ts}−1)MSI_{t}s−MSP_{ts}+MSI_{ts}}
+$$
+
+
+
+$$
+=\frac{R_{ts}MSI_{ts}+2MSP_{ts}−2MSI_{ts}}{R_{ts}MSI_{ts}}
+$$
+
+
+
+$$
+=1+2\frac{MSP_{ts}−MSI_{ts}}{R_{ts}MSI_{ts}}
+$$
+
+Again, we treated all sites as independent and summed the numerator and denominators to estimate the effects of contingency:
+
+$$
+C^_{2}=1+2\frac{\sums=1n_{s}(MSP_{ts}−MSI_{ts})}{\sums=1n_{s}R_{ts}MSI_{ts}}
+$$
+
+#### Estimating the combined effect of chance and contingency
+
+To determine the combined effects of chance and contingency $(C_{3})$ on the outcomes of evolution, we compared allele frequencies from individual replicates to the average allele frequency among replicates from different starting genotypes. In each case, we pooled replicates started from a genotype and treated it as a single sample and compared it to the individual replicates started from different genotypes. We compared allele frequencies by estimating the probability that two randomly chosen alleles would be different if they were both drawn from the same replicate or if they were drawn from a different starting genotype:
+
+$$
+C_{3}≡\frac{1−Q_{g1\neqg2}}{1−Q_{r}}=\frac{1−Q_{g}}{1−Q_{r}}∗\frac{1−Q_{g1\neqg2}}{1−Q_{g}}=C_{1}∗C_{2}=\frac{V_{t}}{V_{r}}
+$$
+
+We thus used:
+
+$$
+C^_{3}=C^_{1}∗C^_{2}
+$$
+
+as our estimate of the combined effects of chance and contingency. This estimator indicates that the combined effects of chance and contingency are multiplicative and thus amplify each other’s effects as they get larger.

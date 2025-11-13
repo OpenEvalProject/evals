@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00mkhxb43 Department of Biological Sciences, College of Science, University of Notre Dame Notre Dame United States
-2. https://ror.org/01adr0w49 Department of Chemical and Biomedical Engineering, College of Engineering, University of Maine Orono United States
-3. https://ror.org/01adr0w49 Graduate School of Biomedical Science and Engineering, University of Maine Orono United States
-4. https://ror.org/00mkhxb43 Department of Chemistry and Biochemistry, College of Science, University of Notre Dame Notre Dame United States
+1. Department of Biological Sciences, College of Science, University of Notre Dame Notre Dame United States ([ROR:00mkhxb43](https://ror.org/00mkhxb43))
+2. Department of Chemical and Biomedical Engineering, College of Engineering, University of Maine Orono United States ([ROR:01adr0w49](https://ror.org/01adr0w49))
+3. Graduate School of Biomedical Science and Engineering, University of Maine Orono United States ([ROR:01adr0w49](https://ror.org/01adr0w49))
+4. Department of Chemistry and Biochemistry, College of Science, University of Notre Dame Notre Dame United States ([ROR:00mkhxb43](https://ror.org/00mkhxb43))
 
 † Corresponding author
 
 ## Abstract
 
-Microbial adhesion to medical devices is common for hospital-acquired infections, particularly for urinary catheters. If not properly treated these infections cause complications and exacerbate antimicrobial resistance. Catheter use elicits bladder inflammation, releasing host serum proteins, including fibrinogen (Fg), into the bladder, which deposit on the urinary catheter. Enterococcus faecalis uses Fg as a scaffold to bind and persist in the bladder despite antibiotic treatments. Inhibition of Fg–pathogen interaction significantly reduces infection. Here, we show deposited Fg is advantageous for uropathogens E. faecalis , Escherichia coli , Pseudomonas aeruginosa , K. pneumoniae , A. baumannii , and C. albicans , suggesting that targeting catheter protein deposition may reduce colonization creating an effective intervention for catheter-associated urinary tract infections (CAUTIs). In a mouse model of CAUTI, host-protein deposition was reduced, using liquid-infused silicone catheters, resulting in decreased colonization on catheters, in bladders, and dissemination in vivo. Furthermore, proteomics revealed a significant decrease in deposition of host-secreted proteins on liquid-infused catheter surfaces. Our findings suggest targeting microbial-binding scaffolds may be an effective antibiotic-sparing intervention for use against CAUTIs and other medical device infections.
+Microbial adhesion to medical devices is common for hospital-acquired infections, particularly for urinary catheters. If not properly treated these infections cause complications and exacerbate antimicrobial resistance. Catheter use elicits bladder inflammation, releasing host serum proteins, including fibrinogen (Fg), into the bladder, which deposit on the urinary catheter. Enterococcus faecalis uses Fg as a scaffold to bind and persist in the bladder despite antibiotic treatments. Inhibition of Fg–pathogen interaction significantly reduces infection. Here, we show deposited Fg is advantageous for uropathogens E. faecalis, Escherichia coli, Pseudomonas aeruginosa, K. pneumoniae, A. baumannii, and C. albicans, suggesting that targeting catheter protein deposition may reduce colonization creating an effective intervention for catheter-associated urinary tract infections (CAUTIs). In a mouse model of CAUTI, host-protein deposition was reduced, using liquid-infused silicone catheters, resulting in decreased colonization on catheters, in bladders, and dissemination in vivo. Furthermore, proteomics revealed a significant decrease in deposition of host-secreted proteins on liquid-infused catheter surfaces. Our findings suggest targeting microbial-binding scaffolds may be an effective antibiotic-sparing intervention for use against CAUTIs and other medical device infections.
 
 ## Introduction
 
@@ -36,19 +36,35 @@ Thus, we hypothesized that reducing availability of binding scaffolds, in this c
 
 ## Results
 
-## Uropathogens interact with Fg during CAUTI
+### Uropathogens interact with Fg during CAUTI
 
 Due to the understood interaction between Fg and some uropathogens and Fg accumulation on catheters over time in human and mice, we assessed potential interaction of E. faecalis OG1RF (positive control) uropathogenic E. coli UTI89, P. aeruginosa PAO1, K. pneumoniae TOP52, A. baumannii UPAB1, and C. albicans SC5314 with Fg in vivo, using a CAUTI mouse model, which recapitulates human CAUTI pathophysiology (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b). Mice catheterized and infected with the respective uropathogen were sacrificed at 24 hours post infection (hpi). Catheters and bladders were harvested, stained, and imaged. Visual and quantitative analysis of the catheters showed all uropathogens colocalizing strongly with Fg deposits exhibiting preference for Fg (Figure 1A, B) and robust Fg deposition on catheters, validating previous studies on human catheters (Flores-Mireles et al., 2019; Flores-Mireles et al., 2014; Flores-Mireles et al., 2016a; Flores-Mireles et al., 2016b). Importantly, immunofluorescence (IF) analysis of bladder sections showed that all uropathogens interact with Fg on the bladder urothelium or in the lumen during CAUTI (Figure 1C and montages in Figure 1—figure supplement 1). Although we show interaction between the pathogens and Fg, further studies are needed to characterize each pathogen–Fg interaction mechanism, as previously done with E. faecalis and S. aureus (Flores-Mireles et al., 2014; Flores-Mireles et al., 2016b; Walker et al., 2017).
 
-## Fg on urinary catheter material enhances microbial binding
+![Figure 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig1-v2.jpg)
+
+**Figure 1.:** (A) Urinary catheters stained with immunofluorescence (IF) for Fg deposition (Fg; green) and microbe binding (respective pathogen; red). Unimplanted catheters were used as controls for autofluorescence, n = 3–4. (B) Quantification of uropathogen–Fg colocalization on catheters from panel A. (C) Representative images from a single bladder illustrating the interaction of uropathogens (red), Fg (green), and nuclei (blue) on the bladder urothelium (U) and in the lumen (L). Scale bar, 50 nm. Montages can be found in Figure 1—figure supplement 1. For all graphs error bars show the standard error of the mean (SEM). Between 3 and 5 replicates of n = 4–12 each were performed for each pathogen and condition.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Mice were implanted and infected with 1 × 106 CFU of the respective uropathogens. At 24 hpi, bladder tissues were harvested, fixed, and parafilm embedded. Bladder were subjected to immunofluorescence (IF) analysis, antibody staining was used to detect fibrinogen (anti-Fg; green), uropathogens (red), and DAPI (blue) for cell nuclei. Scale bar, 50 µm. Magnification ×100.
+
+### Fg on urinary catheter material enhances microbial binding
 
 Based on our in vivo findings, we assessed whether Fg could promote initial binding of the uropathogens to silicone catheters as previously seen for E. faecalis (Flores-Mireles et al., 2014). In addition to Fg, bovine serum albumin (BSA) was tested since serum albumin is one of the most abundant proteins on human and mouse urinary catheters (Molina et al., in preparation; Supplementary file 2). We compared uropathogen binding to Fg-, BSA-, and uncoated silicone, finding that Fg significantly enhanced the binding to the catheter for all uropathogens when compared with uncoated and BSA-coated silicone catheters (Figure 2). Interestingly, P. aeruginosa and A. baumannii binding to BSA-coated silicone was ~14% and ~10% higher than uncoated controls, respectively (Figure 2C, E), alluding to a role for other host-secreted proteins during infection. However, these values were still significantly lower than the increase in binding observed on Fg-coated silicone (Figure 2C, E). Taken together, these data suggest that uropathogen interaction with host proteins deposited on silicone surfaces, particularly Fg, increases the ability of uropathogens to colonize urinary catheters.
 
-## Characterization of liquid-infused catheters to prevent host-protein deposition
+![Figure 2.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig2-v2.jpg)
+
+**Figure 2.:** (A–F) Uropathogens were tested for their ability to bind to protein coated and uncoated (UC) silicone catheters. For all graphs, error bars show the standard error of the mean (SEM). Between 3 and 5 replicates of n = 4–12 each were performed for each pathogen and condition. (G) Kinetics of silicone oil infusion on silicone and Tygon tubes, as well as (H) mouse silicone catheters. Differences between groups were tested for significance using the Mann-Whitney U test. *, P < 0.05; **, P < 0.005; and ****, P < 0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Weight of silicone tubes were measured in designated time points before and during silicone oil infusion, the mean ( ± standard error of the mean [SEM]) of n = 5 silicone tubes over infusion time was shown in this figure. (B) Weight of Tygon tubes were measured in designated time points before and during silicone oil infusion, the mean ( ± SEM) of n = 5 silicone tubes over infusion time was shown in this figure. (C) Weight of mouse catheters were measured in designated time points before and during silicone oil infusion, the mean ( ± SEM) of n = 5 mouse catheter over infusion time was shown in this figure. The length, outer diameter, and inner diameter of (D) silicone catheters (n = 5) or (E) mouse catheters (n = 5–10) were measured before and after infusion and the percentage change was calculated.
+
+### Characterization of liquid-infused catheters to prevent host-protein deposition
 
 Based on the exploitative interaction of uropathogens with deposited Fg, we hypothesized that development of a material to prevent protein deposition would also reduce microbial colonization. Recent work with liquid-infused surfaces have demonstrated resistance to protein and bacterial fouling (Goudie et al., 2017; Howell et al., 2018; Leslie et al., 2014; Sotiri et al., 2018). This prompted us to develop a LIS material by modifying medical-grade silicone using inert trimethyl-terminated polydimethylsiloxane fluid (silicone oil) (Goudie et al., 2017). Infusion was completed by submerging silicone into medical-grade silicone oil, the oil was then naturally taken up by the silicone tube creating a fully infused silicone tube with a slippery surface. Analysis of the oil’s infusion rate showed a significant increase in silicone weight during the first 3 days of infusion then a gradual decrease in infusion until a plateau was reached after ~50 hr (raw weight in Figure 2G and Figure 2—figure supplement 1A). Plastic Tygon tubes (nonsilicone) were used as negative controls (Figure 2—figure supplement 1B). Full infusion of mouse silicone catheters was achieved by 10 min of infusion (Figure 2H and Figure 2—figure supplement 1C). Investigation of silicone tube dimensions showed an increase in length, outer diameter, and inner diameter of ~41.3%, ~ 103.1%, and ~27.6%, respectively (Figure 2—figure supplement 1D) and mouse catheters showed an increase of ~30.7%, ~28.7%, and ~39.8%, respectively (Figure 2—figure supplement 1E). Based on these results, to ensure full infusion for further assays, silicone tubing was submerged in silicone oil for a minimum of 5 days and for mouse catheters for a minimum of 30 min.
 
-## LIS modification reduces Fg deposition and microbial-binding in vitro
+### LIS modification reduces Fg deposition and microbial-binding in vitro
 
 The ability of the LIS-catheters to reduce Fg deposition in vitro was tested for infused medical-grade silicone material and two commercially available urinary catheters, Dover and Bardex with UM versions of each used as controls. The UM- and LIS-catheters were incubated with Fg overnight and assessment of Fg deposition by IF. We found that Fg deposition was reduced in all LIS-catheters, showing ~90% decrease on Dover and ~100% on the Bardex and medical-grade silicone tubing when compared with the corresponding UM controls (Figure 3A, B).
 
@@ -58,19 +74,35 @@ The ability of the LIS-catheters to reduce Fg deposition in vitro was tested for
 
 Based on previous reports of the biofouling ability of liquid-infused surfaces and our LIS’s success in reducing Fg deposition, we tested its ability to prevent microbial surface binding (Howell et al., 2018). Our six uropathogens were grown in urine supplemented with BSA at 37°C (Supplementary file 1), cultures were normalized in urine, added to UM control and LIS-catheters, incubated under static conditions and quantified via IF. Binding analysis by each of the uropathogens showed that all were able to bind in significantly higher densities to the UM-catheters than to the LIS-catheters (Figure 3C). These results further demonstrate the capability of silicone LIS-catheters to reduce not only protein deposition but to also impede microbial colonization.
 
-## Fg deposition and microbial biofilms on catheters was reduced by LIS
+### Fg deposition and microbial biofilms on catheters was reduced by LIS
 
 Mice were catheterized with either an UM- or LIS-catheter and infected with one of six uropathogens for 24 hr. Bladders and catheters were harvested and assessed for microbial burden by CFU enumeration or fixed for staining. Kidneys, spleens, and hearts were collected to determine microbial burden. We found that mice with LIS-catheters significantly reduced microbial colonization in the bladder and on catheters when compared with UM-catheterized mice regardless of the infecting uropathogen (Figure 4). Additionally, colonization was significantly lower in LIS-catheterized mouse kidneys for P. aeruginosa, A. baumannii, and E. coli infections (Figure 4C, E, G) and LIS-catheterized mice infected with E. coli or C. albicans showed significantly less colonization of the spleen (Figure 4G, K). K. pneumoniae kidney and spleen colonization difference was not statistically significant, however they showed a trend of less colonization and there was significantly less colonization of the heart (Figure 4I).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig4-v2.jpg)
+
+**Figure 4.:** Mice were catheterized and infected with one of six uropathogens. (A, C, E, G, I, K) Organ and catheter CFUs from mice with either an unmodified (UM)-catheter (closed circles) or liquid-infused silicone (LIS)-catheter (open circles) show the dissemination profile of the pathogen. (B, D, F, H,J,L) Imaging of catheters for Fg (green), respective uropathogen (red), and a merged image compare deposition on UM-catheters (left) with LIS-catheters (right); nonimplanted catheters as controls. Quantification of microbial colonization and colocalization on the catheters can be found in Figure 4—figure supplement 1. All animal studies for CFUs, catheter and bladder imaging had at least 10 animals per strain and catheter type. Differences between groups were tested for significance using the Mann-Whitney U test. *, P < 0.05; **, P < 0.005; ***, P < 0.0005; and ****, P < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Quantification of uropathogen–Fg colocalization on unmodified (UM)- and liquid-infused silicone (LIS)-catheters from mice catheterized and infected with (A) E. faecalis, (B) E. coli, (C) P. aeruginosa, (D) K. pneumoniae, (E) A. baumannii, and (F) C. albicans. Quantification was done using pixel color counter from Fiji where colocalization (yellow) of Fg (green) and pathogen (red) were quantified and compared to the total pathogen colonization of the catheter.
+
 Furthermore, IF imaging and quantification of catheters confirmed decreased Fg deposition and microbial biofilms on LIS-catheters compared to UM (Figure 4B, D, F, H, J, I and Figure 4—figure supplement 1). These data demonstrate pathogens preferentially bind to Fg, and that the LIS modification successfully reduced Fg deposition (the microbes’ binding platform), disrupts uropathogen biofilm formation on catheters, and colonization of the bladder in vivo. Importantly, hematoxylin and eosin (H&E) analysis shows the LI-catheter does not exacerbate bladder inflammation regardless of the presence of infection or not (Figure 5A–G), an important factor to account for when developing a new medical device. In fact, for some pathogens, the LI-catheter results in less inflammation than bladders catheterized with an UM-catheter (Figure 5B, C, G). Furthermore, we examine Fg presence, uropathogen colonization, and neutrophil recruitment in UM- and LIS-catheterized and infected bladders by IF microscopy. This analysis revealed a reduction of microbial colonization as well as decreased neutrophil recruitment (Figure 5H–M).
 
-## LIS modification reduces protein deposition on catheters in CAUTI mouse model of E. faecalis
+![Figure 5.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig5-v2.jpg)
+
+**Figure 5.:** Mice were catheterized and inoculated one of six strains. (A) Naive or bladders catheterized with an unmodified (UM)- or LIS-catheter were uninfected controls. (B–G) Bladder sections were stained with hematoxylin and eosin (H&E) to compare inflammation from UM-catheters (left) and LIS-catheters (right). (C–M) ×20 images of immunofluorescence (IF) stained bladders catheterized with an UM-catheter (left panels) or a LIS-catheter (right panels). Bladders stained for nuclei (blue), fibrinogen (Fg; green), respective uropathogens (red), and neutrophils (white). The urothelial/lumen boundaries are outlined in white dotted lines and labeled U (urothelium) and L (lumen) and all scale bars are 500 µm. Montages can be found in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Mice were implanted with either an unmodified catheter or a liquid-infused catheter and infected with 1 × 106 CFU of the respective uropathogens. At 24 hpi, bladders tissues were harvested, fixed, and parafilm embedded. Bladder were subjected to immunofluorescence (IF) analysis, antibody staining was used to detect Fg (anti-Fg; green), uropathogens (red), neutrophils (anti-Ly6G; white), and DAPI (4',6-diamidino-2-phenylindole) (blue) for cell nuclei. Scale bars, 500 µm. Images are stitched 2 × 2 tiles at ×20 magnification.
+
+### LIS modification reduces protein deposition on catheters in CAUTI mouse model of E. faecalis
 
 A quantitative-proteomics comparison was performed to identify proteins deposited on UM- and LIS-catheters retrieved 24 hpi with E. faecalis. Harvested catheters were prepared and protease digested with trypsin as in Zougman et al., 2014. nLC–MS/MS was performed in technical duplicate and label-free-proteomics (LFQ) processed as in Cox and Mann, 865 proteins were identified at a 1% False Discovery Rate (FDR) (Cox and Mann, 2008). Total abundance of protein was significantly reduced in LIS- vs UM-catheters (Figure 6A and Supplementary file 2). Additionally, abundance of Fg and over 130 other proteins significantly decreased while only three proteins showed a significant increase (UDP-glucose 6-dehydrogenase, filamin-B, and proteasome subunit beta type-5) (Figure 6B and Supplementary file 2). These data further demonstrate that the LIS modification not only reduced Fg deposition but also a wide variety of host proteins, which could play a role in microbial colonization and biofilm formation as demonstrated earlier with BSA (Figure 2C, E).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75798/elife-75798-fig6-v2.jpg)
 
-**Figure 6.:** A subset of unmodified (UM)- and LIS-catheters taken from mice 24 hpi with E. faecalis were assessed for protein deposition via mass spectrometry four UM-catheters and five LIS-catheters were used. (A) Intensities of the 95% most abundant proteins were summed in a total proteome approach and compared between the UM- and LIS-catheter groups. (B) A volcano plot for a subset of proteins. Negative mean rank difference indicates less protein on the LIS-catheter then on the UM-catheter and a significant difference is a −log10(p value) over 1.3. The fibrinogen (Fg) chains (α, β, and γ) are highlighted in green, serum albumin in orange, UDP-glucose 6-dehydrogenase, filamin-B, and proteasome subunit beta type-5 in yellow. Differences between groups were tested for significance using the Mann-Whitney U test. ***, P < 0.0005.Figure 6—source data 1.Individual data from all figures involving small datasets displayed in individual tabs of this source file. This includes Figures 1B and 2A-F, Figure 3B, Figure 4, Figure 1—figure supplement 1 and Figure 2—figure supplement 1.
+**Figure 6.:** A subset of unmodified (UM)- and LIS-catheters taken from mice 24 hpi with E. faecalis were assessed for protein deposition via mass spectrometry four UM-catheters and five LIS-catheters were used. (A) Intensities of the 95% most abundant proteins were summed in a total proteome approach and compared between the UM- and LIS-catheter groups. (B) A volcano plot for a subset of proteins. Negative mean rank difference indicates less protein on the LIS-catheter then on the UM-catheter and a significant difference is a −log10(p value) over 1.3. The fibrinogen (Fg) chains (α, β, and γ) are highlighted in green, serum albumin in orange, UDP-glucose 6-dehydrogenase, filamin-B, and proteasome subunit beta type-5 in yellow. Differences between groups were tested for significance using the Mann-Whitney U test. ***, P < 0.0005.
 
 ## Discussion
 
@@ -94,56 +126,245 @@ A deeper understanding of the pathogenesis of CAUTI is critical to moving beyond
 
 ## Materials and methods
 
-## Mouse infection models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Enterococcus faecalis)</td>
+      <td>OG1RF</td>
+      <td>ATCC</td>
+      <td>47,077</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>UTI89</td>
+      <td>Obtained from Dr, Scott Hultgren lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PA01</td>
+      <td>ATCC</td>
+      <td>BAA-47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Klebsiella pneumoniae)</td>
+      <td>TOP52 1721</td>
+      <td>Obtained from Dr. Scott Hultgren lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Acetobacter baumannii)</td>
+      <td>UPAB1 + CUP1,2</td>
+      <td>Obtained from Dr Mario Feldman lab Di Venanzio et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>SC5314</td>
+      <td>ATCC</td>
+      <td>MYA-2876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homosapian female)</td>
+      <td>Urine</td>
+      <td>This study</td>
+      <td></td>
+      <td>IRB #19-04-5273</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) antifibrinogen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F8512, RRID:AB_259765</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-strep group d</td>
+      <td>From Dr. Scott Hultgren lab Flores-Mireles et al., 2014</td>
+      <td></td>
+      <td>1:1000 (in vitro)1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-E. coli serotype O/K</td>
+      <td>Invitrogen</td>
+      <td>Cat# PA1-25636 RRID:AB_780488</td>
+      <td>1:1000 (in vitro)1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti P. aeruginosa</td>
+      <td>Invitrogen</td>
+      <td>Cat# PA173117 RRID:AB_1018279</td>
+      <td>1:1000 (in vitro)1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-K. pneumoniae polyclonal</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# PA17226 RRID:AB_559816</td>
+      <td>1:1000 (in vitro)1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti A. baumannii</td>
+      <td>Di Venanzio et al., 2019</td>
+      <td></td>
+      <td>1:1000 (in vitro)1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti C. albicans</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PA1-27158 RRID:AB_779500</td>
+      <td>1:1000 (in vitro)1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat polyclonal) anti-Ly6G</td>
+      <td>BioLegend</td>
+      <td>Cat# 127602 RRID:AB_1089180</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-goat 800CW</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-32214, RRID:AB_621846</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-rabbit 680RD</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-68073, RRID:AB_10954442</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-rat 680</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21472, RRID:AB_2535875</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-goat 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11055 RRID:AB_2534102</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-rabbit 550</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A31572 RRID:AB_162543</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fibrinogen</td>
+      <td>Enzyme Research Laboratories</td>
+      <td>Cat# FIB 3</td>
+      <td>Adjusted to 150 µg/ml in PBS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zeiss pro Software</td>
+      <td>Carl Zeiss Microscopy</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image studio software</td>
+      <td>Licor Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Silicone oil</td>
+      <td>Gelest</td>
+      <td>63148-62-9</td>
+      <td>20 cst</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse infection models
 
 Mice used in this study were ~6-week-old female wild-type C57BL/6 mice purchased from Jackson Laboratory and The National Institute of Cancer Research. Mice were subjected to transurethral implantation and inoculated as previously described (Conover et al., 2015). Briefly, mice were anesthetized by inhalation of isoflurane and implanted with a 6-mm-long UM-silicone or LIS-catheter. Mice were infected immediately following catheter implantation with 50 μl of ~2 × 107 CFU/ml in phosphate-buffered saline (PBS) introduced into the bladder lumen by transurethral inoculation (unless otherwise noted [Supplementary file 1]). For all mouse experiments microbes were grown in their corresponding media (Supplementary file 1). To harvest the catheters and organs, mice were sacrificed at 24 hpi by cervical dislocation after anesthesia inhalation; the silicone catheter, bladder, kidneys, heart, and spleen were aseptically harvested. Catheters were either subjected to sonication (Branson, Ultrasonic Bath) for CFU enumeration analysis, fixed for imaging via standard IF described below, or sent for proteomic analysis as described below using nonimplanted catheters as controls for all assays. Bladders for IF and histology were fixed and processed as described below. Kidneys, spleens, and hearts were all used for CFU analysis. The University of Notre Dame Institutional Animal Care and Use Committee approved all mouse infections and procedures as part of protocol number 18-08-4792MD. All animal care was consistent with the Guide for the Care and Use of Laboratory Animals from the National Research Council.
 
-## Bladder Immunohistochemistry (IHC) and H&E staining of mouse bladders
+### Bladder Immunohistochemistry (IHC) and H&E staining of mouse bladders
 
 Mouse bladders were fixed in 10% neutralized formalin (Leica) overnight, before being processed and sectioned by ND CORE. Staining was done as previously described (Walker et al., 2017). Briefly, bladder sections were deparaffinized, rehydrated, and rinsed with water. Antigen retrieval was accomplished by boiling the samples in Na-citrate, washing in water, and then incubating in PBS three times. Sections were then blocked (1× PBS, 1.5% BSA, 0.1% sodium azide), washed in PBS, and incubated with appropriate primary antibodies overnight at 4°C. Next, sections were washed with PBS, incubated with secondary antibodies for 2 hr at RT, and washed once more in PBS prior to Hoechst dye staining. H&E stain for light microscopy was done by the CORE facilities at the University of Notre Dame (ND CORE). All imaging was done using a Zeiss inverted light microscope (Carl Zeiss, Axio Observer). Zen Pro (Carl Zeiss, Thornwood, NY) and ImageJ software were used to analyze the images.
 
-## Quantifying catheter colonization and Fg deposition
+### Quantifying catheter colonization and Fg deposition
 
 As previously described (Colomer-Winter et al., 2019). Briefly, catheters were fixed with 10% neutralized formalin, blocked, and stained using Goat anti-Fg primary antibody (Sigma) (1:1000) and Rabbit anti-pathogen (Supplementary file 1) followed by Donkey anti-Goat IRD800 antibody (Invitrogen) (1:5000) and Donkey anti-Rabbit IRD680 antibody (Invitrogen) (1:5000) secondary. Catheters were then dried over night at 4°C and imaged on an Odyssey Imaging System (LI-COR Biosciences) to examine the infrared signal. Images of the signals (Fg in green and pathogens in red) were analyzed in ImageJ using Pixel color counter (Gaston et al., 2020).
 
-## Human urine collection
+### Human urine collection
 
 Human urine was collected and pooled from at least two healthy female donors between 20 and 40 years of age. Donors had no history of kidney disease, diabetes, or recent antibiotic treatment. Urine was sterilized using a 0.22 μm filter (Sigma-Aldrich) and pH adjusted to 6.0–6.5. When supplemented with BSA (VWR Lifesciences), urine was filter sterilized again following BSA addition. All participants signed an informed consent form and protocols were approved by the local Internal Review Board at the University of Notre Dame under study #19-04-5273.
 
-## Microbial growth conditions in supplemented urine
+### Microbial growth conditions in supplemented urine
 
 E. faecalis and C. albicans were grown static for ~5 hr in 5 ml of respective media (Supplementary file 1) followed by static overnight culture in human urine supplemented with 20 mg/ml BSA (urine BSA20). E. coli, K. pneumoniae, P. mirabilis, A. baumanii, and P. aeruginosa were grown 5 hr shaking at 37°C in LB then static in fresh urine BSA for 24 hr then, supplemented into fresh urine BSA for an additional 24 hr static (2 × 24 hr) in urine BSA20. All cultures were washed in PBS (Sigma) three times and resuspended in assay appropriate media.
 
-## Silicone disk preparation
+### Silicone disk preparation
 
 Disks of UM-silicone (Nalgene 50 silicone tubing, Brand Products) or LIS were cut using an 8 mm leather hole punch. UM disks were washed three times in PBS and air dried. LIS disks were stored in filter sterilized silicone oil at RT. Disks were skewered onto needles (BD) to hold them in place and put in 5 ml glass tubes (Thermo Scientific) or placed on the bottom of 96-well plate wells (Fisher Scientific) (UM-silicone only). Plates and glass tubes were UV sterilized for >30 min prior to use.
 
-## Protein-binding assays
+### Protein-binding assays
 
 Human Fg free from plasminogen and von Willebrand factor (Enzyme Research Laboratory #FB3) was diluted to 150 µg/ml in PBS. 500 µL of 150 µg/ml Fg was added to each disk in glass tubes, sealed, and left over night at 4°C. Disks were then processed according to standard IF procedure as described above (Colomer-Winter et al., 2019). Briefly, disks were washed three times in PBS, fixed with 10% neutralized formalin (Leica), blocked, and stained using Goat anti-Fg primary antibody (Sigma) (1:1000) and Donkey anti-Goat IRD800 secondary antibody (Invitrogen) (1:5000). Disks were then dried over night at 4°C and imaged on an Odyssey Imaging System (LI-COR Biosciences) to examine the infrared signal. Intensities for each catheter piece were normalized against a negative control and then made relative to the pieces coated with Fg which was assigned to 100%. Images were processed using Image Studio Software (LI-COR, Lincoln, NE) Microsoft Excel and graphed on GraphPad Prism (GraphPad Software, San Diego, CA).
 
-## Microbial-binding assays
+### Microbial-binding assays
 
 For assessing the effect of protein deposition on microbial binding, 100 µl of 150 µg/ml Human Fg, 100 µl of 150 µg/ml BSA, or 100 µl of PBS were incubated on UM-silicone disks in 96-well plates overnight at 4°C. The following day disks were washed three times with PBS followed by a 2-hr RT incubation in 100 µl of urine containing microbes at a concentration of ~108 CFU/ml.
 
 For assessing microbial binding to UM-silicone vs LIS, 500 µl of microbe containing media was added to prepared disks in glass tubes. Standard IF procedure was then followed as described above using goat anti-Fg and rabbit anti-microbe primary antibodies (1:1000) (see Supplementary file 1 for details). Secondary antibodies used were Donkey anti-Goat IRD800 and Donkey anti-Rabbit IRD680 (1:5000). Quantification of binding was done using ImageStudio Software (LI-COR). Intensities for each catheter piece were normalized against a negative control and then made relative to the pieces coated with Fg which was assigned to 100%.
 
-## Silicone and Tygon tube infusion
+### Silicone and Tygon tube infusion
 
 Five samples of 20-cm Tygon tube (14-171-219, Saint-Gobain Tygon S3 TM 3603 Flexible Tubings, Fisher Scientific, USA) or silicone tube (8060-0030, NalgeneTM 50 Platinum-cured Silicone Tubing, Thermo Scientific, USA) was utilized in weight measurement. Weight of the tubes prior to infusion were measured with an analytical balance (AL204, Analytical Balance, Mettler Toledo, Germany). After the measurement of the initial weights, the tubes were submerged in silicone oil (DMS-T15, polydimethylsiloxane, trimethylsiloxy, 50 cSt, GelestSInc, USA) and weighed at designated time points. For each time point, tubes were removed from the oil with forceps and held vertically for 30 s for the excess silicone oil to flow out of the tube. The bottoms of the tubes were then gently dabbed with Kimwipes (Kimwipe, Kimberly-Clark Corp., USA). After measurement, the tubes were again submerged in silicone oil until the next time point. Tubes were measured every 3 hr for the first 2 days; every 6 hr from days 3 to 6; and every 24 hr from day 6 and onwards. Measurements were taken until data showed no significant increase, and that the plateau trendline consist of at least three data points. Based on these data, for all the protein- and microbial-binding assays, silicone catheters were submerged in silicone oil for 5 days prior to use to ensure full infusion.
 
-## Mouse catheter infusion
+### Mouse catheter infusion
 
 Five samples of 20-cm mouse catheter (SIL 025, RenaSil Silicone Rubber Tubing, Braintree Scientific, Inc, USA) were utilized in weight measurement. Weight of the tubes prior to infusion were measured with an analytical balance. After the measurement of the initial weights, the tubes were submerged in silicone oil for different time points. For each time point, catheters were removed from the oil with forceps and a Kimwipes was immediately pressed against the bottom of the catheters to remove the excess silicone oil via capillary action. After the excess oil was drained, catheters were weighed and placed back into silicone oil to continue with the infusion until the next time point. Catheters were measured every 1 min for the first 5 min of the experiment; every 2 min from 5 to 15 min; and every 5 min from 15 min and onwards. Measurements were taken until weight showed no significant increase, and that the plateau trendline consist of at least three data points. Silicone catheters modified and used in mouse infections were submerged in silicone oil for at least 30 min prior to use.
 
-## Parameter measurement of silicone tube before and after infusion
+### Parameter measurement of silicone tube before and after infusion
 
-The length, inner diameter, and outer diameter of silicone tubes were measured before silicone oil infusion and following complete infusion (after incubating with silicone oil for >5 days). All parameters were measured using a digital caliper (06-664-16, Fisherbrand Traceable Digital Calipers, Fisher Scientific, USA). For mouse catheters, length was measured using a digital caliper. For inner and outer diameter measurement, photos of the tube openings of the catheters and a scale of known length were taken and estimated using ImageJ. Percentage weight change of Tygon tube, silicone tube, and mouse catheters were calculated based on the formula below:Weight of the tube−Initial weight of the tubeInitial weight of the tube∗100%
+The length, inner diameter, and outer diameter of silicone tubes were measured before silicone oil infusion and following complete infusion (after incubating with silicone oil for >5 days). All parameters were measured using a digital caliper (06-664-16, Fisherbrand Traceable Digital Calipers, Fisher Scientific, USA). For mouse catheters, length was measured using a digital caliper. For inner and outer diameter measurement, photos of the tube openings of the catheters and a scale of known length were taken and estimated using ImageJ. Percentage weight change of Tygon tube, silicone tube, and mouse catheters were calculated based on the formula below:
 
-## Proteomic analysis of mouse catheters
+$$
+\frac{Weight of the tube−Initial weight of the tube}{Initial weight of the tube}∗100%
+$$
+
+### Proteomic analysis of mouse catheters
 
 Five mice catheterized with a LIS-catheter and four mice were catheterized with an UM-catheter were sacrificed after 24 hr of infection with E. faecalis OG1RF. Catheters were harvested and put into 100 µl of sodium dodecyl sulfate (SDS buffer (100 mM Tris–HCl, pH 8.8, 10 mM Dithiothreitol (DTT), and 2% SDS)), then vortexed for 30 s, heated for 5 min at 90°C, sonicated for 30 min and the process repeated once more. Samples were sent to the Mass Spectrometry and Proteomics Facility at Notre Dame (MSPF) for proteomic analysis. Proteins were further reduced in DTT, alkylated and digested with trypsin using Suspension Trap and protocols (Zougman et al., 2014). nLC–MS–MS/MS was performed essentially as described in Sanchez et al., 2020 on a Q-Exactive instrument (Thermo). Proteins were identified and quantified using MaxLFQ (Label Free Quantification) within MaxQuant and cutoff at a 1% FDR (Cox and Mann, 2008). This generated a total of eight data records from UM-catheters and 10 from LIS-catheters. Data reduction was performed by removing contaminants proteins. Protein abundance for each catheter type was then calculated by summing the LFQ intensity of proteins which comprised 95% of the total abundance on the catheters. Strict filtering criteria of at least two replicates with technical duplication from the UM-catheters and three replicates with technical duplication from the LIS-catheters were required to keep an identification. Abundance of the reduced proteins was plotted using GraphPad Prism. Statistical significance was tested using Mann–Whitney U. A volcano plot was created using the ranked mean difference for each protein and −log of calculated p values with alpha = 0.05.
 
-## Statistical analysis
+### Statistical analysis
 
 Unless otherwise stated, data from at least three experiments were pooled for each assay. Significance of experimental results was assessed by Mann–Whitney U test using GraphPad Prism, version 7.03 (GraphPad Software, San Diego, CA). Significance values on graphs are *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.0001, and ****p ≤ .00001.

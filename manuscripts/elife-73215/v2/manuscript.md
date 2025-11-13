@@ -33,15 +33,23 @@ In the present study, using genetic mouse models, we have investigated the role 
 
 ## Results
 
-## Myofiber-specific ablation of IRE1α attenuates skeletal muscle regeneration in adult mice
+### Myofiber-specific ablation of IRE1α attenuates skeletal muscle regeneration in adult mice
 
 We first investigated how the phosphorylation of IRE1α and levels of spliced XBP1 (sXBP1) protein are regulated in skeletal muscle after injury. Left side tibialis anterior (TA) muscle of wild-type (WT) mice was injected with 1.2 % BaCl2 solution, a widely used myotoxin for experimental muscle injury (Hindi et al., 2017; Xiong et al., 2017), whereas contralateral TA muscle was injected with saline only to serve as control. Results showed that the levels of phosphorylated IRE1α were significantly increased in TA muscle at day 5 post-injury compared to contralateral control muscle. Furthermore, the levels of spliced XBP1 (sXBP1) protein were also found to be considerably increased in injured TA muscle of mice suggesting the activation of the IRE1α/XBP1 pathway in injured muscle (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left side TA muscle of wild-type mice was injected with 50 µl of 1.2 % BaCl2 solution, whereas contralateral TA muscle was injected with normal saline to serve as uninjured control. After 5d, the TA muscles were harvested and analyzed by performing western blotting. Representative immunoblots presented here demonstrate the levels of p-IRE1, IRE1, and sXBP1 protein in uninjured and injured TA muscle. Ponceau S staining confirmed equal loading of protein in each lane (n = 4 mice per group). (B) Immunoblots presented here show levels of IRE1α protein in TA and soleus muscle and liver of Ern1fl/fl and Ern1cKO mice. GAPDH was used as loading control (n = 3 mice per group). (C) Representative photomicrographs of Hematoxylin and Eosin (HE)-stained sections of TA muscles of Ern1fl/fl and Ern1cKO mice at days 0, 5, and 14 after intramuscular injection of BaCl2 solution. Scale bar: 50 µm. Quantification of average myofiber (D) cross-sectional area (CSA) (n = 9 mice per group) and (E) Minimal Feret’s diameter in TA muscle at day 5 post-injury (n = 6-8 mice per group). (F) Average myofiber CSA in TA muscle of Ern1fl/fl and Ern1cKO mice after 14 days of BaCl2-mediated injury (n = 3 mice per group). (G) Percentage of myofibers containing two or more centrally located nuclei in TA muscle at day 5 (n = 4 mice per group) and day 14 (n = 3 mice per group) after BaCl2-mediated injury. After 21 days of first injury, TA muscle of Ern1fl/fl and Ern1cKO mice was again given intramuscular injection of 50 µl of 1.2 % BaCl2 solution, and the muscle was analyzed at day 5. Representative photomicrograph of (H) H&E-stained TA muscle sections and quantitative estimation of (I) average myofiber CSA and (J) percentage of myofibers containing two or more centrally located nuclei. Scale bar: 50 µm. n = 3 mice per group. Data are presented as mean ± SEM. *p ≤ 0.05, values significantly different from corresponding injured TA muscle of Ern1fl/fl mice by unpaired t test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Average body weight and (B) average wet weight of tibialis anterior (TA), soleus (Sol), and gastrocnemius (GA) muscle normalized with body weight (BW) of 3-month-old Ern1fl/fl and Ern1cKO mice.(C) After 21 days of first injury, TA muscle of Ern1fl/fl and Ern1cKO mice again given intramuscular injection of 1.2 % BaCl2 solution, and the muscle was analyzed after 5 days. Representative photomicrograph of TA muscle sections after Masson’s trichrome staining. Scale bar: 50 µm. n = 3 mice per group.
 
 We next sought to investigate the role of IRE1α (gene name: Ern1) in skeletal muscle regeneration. Floxed Ern1 (henceforth Ern1fl/fl) mice were crossed with muscle creatine kinase (Mck)-Cre mice to generate Ern1fl/fl;Mck-Cre (henceforth Ern1cKO) and littermate Ern1fl/fl mice. There was no significant difference in body weight or muscle weight of Ern1fl/fl and Ern1cKO mice in naïve conditions (Figure 1—figure supplement 1A and B). Western blot analysis confirmed that levels of IRE1α protein were considerably reduced in TA and soleus muscle, but not in liver of Ern1cKO mice (Figure 1B). To understand the role of IRE1α signaling in muscle regeneration, TA muscle of 3-month-old littermate Ern1fl/fl and Ern1cKO mice was injected with 50 µl of 1.2 % BaCl2 solution to induce necrotic muscle injury. Muscle regeneration was evaluated at day 5 and day 14 post-BaCl2 injection by performing Hematoxylin and Eosin (H&E) staining (Figure 1C). Results showed that the regeneration of TA muscle was attenuated in Ern1cKO mice compared to Ern1fl/fl mice at day 5 post-injury. There was an apparent decrease in the size of centronucleated myofibers (CNFs) and an increase in the cellular infiltrate in Ern1cKO mice compared to Ern1fl/fl mice (Figure 1C). Morphometric analysis of H&E-stained TA muscle sections revealed a significant decrease in the average cross-sectional area (CSA) and minimal Feret’s diameter of regenerating myofibers in Ern1cKO mice compared with Ern1fl/fl mice (Figure 1D–F). Moreover, the percentage of myofibers containing two or more centrally located nuclei was significantly reduced in injured TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 1G). Deficits in muscle regeneration in Ern1cKO mice were also present at day 14 after muscle injury (Figure 1C, F and G).
 
 Successive muscle injuries are used to study satellite cell pool maintenance or depletion after more than one round of regeneration. In this approach, second injury is carried out three to four weeks apart, which is enough time elapse to allow the regeneration of the muscle after first injury (Hardy et al., 2016; Hindi and Kumar, 2016). Therefore, we next examined muscle regeneration in Ern1fl/fl and Ern1cKO mice after performing double injury. At day 21 of first injury, TA muscle of Ern1fl/fl and Ern1cKO mice was injured again by intramuscular injection of 50 μl 1.2 % BaCl2 solution. After 5 days, the muscle was isolated and analyzed by performing H&E staining (Figure 1H). Results showed that defect in muscle regeneration in Ern1cKO mice was more pronounced after second round of injury (Figure 1H, J). Moreover, Masson’s Trichrome staining of TA muscle sections showed considerable increase in fibrotic tissue deposition at day 5 after second injury (Figure 1—figure supplement 1C).
 
-## Targeted ablation of IRE1α reduces the expression of early markers of muscle regeneration in adult mice
+### Targeted ablation of IRE1α reduces the expression of early markers of muscle regeneration in adult mice
 
 To further understand the role of IRE1α in skeletal muscle regeneration, we studied the expression of early markers of skeletal muscle regeneration, such as embryonic myosin heavy chain (Myh3) and myogenic regulatory factors (MRFs). We first analyzed 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice by immunostaining for embryonic myosin heavy chain (eMyHC) and laminin proteins. Nuclei were counterstained with DAPI (4′,6-diamidino-2-phenylindole). Results showed that the proportion of eMyHC+ myofibers within laminin staining with higher cross-sectional area (CSA) was reduced in TA muscle of Ern1cKO mice compared to Ern1fl/fl mice (Figure 2A and B). Moreover, the percentage of eMyHC+ myofibers containing two or more centrally located nuclei was significantly reduced in regenerating TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 2C). Skeletal muscle regeneration involves a sequential up-regulation of Myf5, Myod1, Myog (myogenin), and eMyHC. Our qPCR analysis showed that there was no significant difference in the mRNA levels of Myh3, Myf5, Myod1, and Myog in uninjured TA muscle of Ern1fl/fl and Ern1cKO mice. However, mRNA levels of Myf5, Myod1, Myog, and Myh3 were found to be significantly reduced in 5d-injured TA muscle of Ern1cKO mice compared to 5d-injured TA muscle of Ern1fl/fl mice (Figure 2D-G). Furthermore, western blot analysis showed that protein levels of MyoD and eMyHC, but not myogenin, were considerably reduced in 5d-injured TA muscle of Ern1cKO mice compared to Ern1fl/fl mice (Figure 2H). Collectively, these results suggest that myofiber-specific ablation of IRE1α attenuates regenerative myogenesis in adult mice.
 
@@ -49,7 +57,7 @@ To further understand the role of IRE1α in skeletal muscle regeneration, we stu
 
 **Figure 2.:** (A) Representative photomicrographs of 5d-injured TA muscle sections of Ern1fl/fl and Ern1cKO mice after immunostaining for eMyHC (red) and laminin (green) protein. Nuclei were counterstained with DAPI (blue). (B) Frequency distribution of eMyHC+ Laminin+ myofiber CSA in 5d-injured TA muscle of Ern1cKO and Ern1fl/fl mice (n = 4 for Ern1fl/fl and n = 3 for Ern1cKO group). (C) Percentage of eMyHC+ myofibers with two or more centrally located nuclei in 5d-injured TA muscle sections of Ern1fl/fl and Ern1cKO mice (n = 4 for Ern1fl/fl and n = 6 for Ern1cKO group). Data expressed as mean ± SEM. *p ≤ 0.05, values significantly different from 5d-injured TA muscle of Ern1fl/fl mice by unpaired t test. Relative mRNA levels of (D) Myf5, (E) Myod1, (F) Myog, and (G) Myh3 in uninjured and 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice. n = 3-5 mice per group (H) Representative western blot showing levels of eMyHC, MyoD, myogenin, and GAPDH in uninjured and 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice (n = 3 for Uninjured Ern1fl/fl, n = 3 for Uninjured Ern1cKO, n = 4 for Injured Ern1fl/fl and n = 5 for Injured Ern1cKO group). Data are presented as mean ± SEM and analyzed by one-way analysis of variance (ANOVA) followed by Tukey’s multiple comparison test. *p ≤ 0.05, values significantly different from contralateral uninjured TA muscle of Ern1fl/fl or Ern1cKO mice. #p ≤ 0.05, values significantly different from 5d-injured TA muscle of Ern1fl/fl mice. U, uninjured; I, injured.
 
-## Ablation of IRE1α reduces abundance of satellite cells in regenerating skeletal muscle
+### Ablation of IRE1α reduces abundance of satellite cells in regenerating skeletal muscle
 
 Since satellite cells are indispensable for muscle repair (Yin et al., 2013), we next investigated whether myofiber-specific ablation of IRE1α affects the number of satellite cells in injured skeletal muscle. Pax7 is a transcription factor that is expressed in both quiescent and activated satellite cells (Dumont et al., 2015). Indeed, Pax7 has been widely used as a marker to label and quantify satellite cells on muscle sections (Hindi and Kumar, 2016; Ogura et al., 2015). Transverse sections generated from uninjured and 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice were immunostained for Pax7 to detect satellite cells. In addition, the sections were immunostained for laminin to mark the boundary of the myofibers and DAPI was used to stain nuclei (Figure 3A). There was no significant difference in the number of satellite cells in uninjured TA muscle of Ern1fl/fl and Ern1cKO mice (Figure 3A). However, the number of satellite cells per unit area was significantly reduced in injured TA muscle of Ern1cKO mice compared with injured TA muscle of Ern1fl/fl mice (Figure 3A and B). Moreover, mRNA levels of Pax7 were found to be significantly reduced in injured TA muscle of Ern1cKO mice compared to that of Ern1fl/fl mice (Figure 3C). Similarly, protein levels of Pax7 were also found to be markedly reduced in 5d-injured TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 3D).
 
@@ -59,29 +67,53 @@ Since satellite cells are indispensable for muscle repair (Yin et al., 2013), we
 
 Fluorescence-activated cell sorting (FACS) analysis using a combination of cell surface markers (i.e. CD45-, CD31-, Ter119−, Sca-1-, and α7-β1 Integrin+) is another approach to quantify the number of satellite cells in skeletal muscle of mice (Hindi and Kumar, 2016; Ogura et al., 2015). We next performed FACS to quantify the abundance of satellite cells in skeletal muscle of Ern1fl/fl and Ern1cKO mice. There was no significant difference in the numbers of satellite cells between uninjured TA muscle of Ern1fl/fl and Ern1cKO mice (data not shown). However, our analysis showed that the proportion of satellite cells was significantly reduced in 5d-injured TA muscle of Ern1cKO mice compared to injured TA muscle of Ern1fl/fl mice (Figure 3E and F). Collectively, these results suggest that myofiber-specific ablation of IRE1α reduces the number of satellite cells in injured muscle microenvironment.
 
-## Targeted ablation of IRE1α reduces proliferation of satellite cells in injured muscle
+### Targeted ablation of IRE1α reduces proliferation of satellite cells in injured muscle
 
 Using EdU labelling for proliferating cells, we sought to investigate whether myofiber-specific deletion of IRE1α affects satellite cell proliferation in regenerating skeletal muscle of mice. TA muscle of Ern1fl/fl and Ern1cKO mice were injured by intramuscular injection of 1.2 % BaCl2 solution. After 72 hr, the mice were given a single intraperitoneal injection of EdU and the TA muscle was isolated 11 days later, and stained for the detection of EdU+ myonuclei. The boundaries of myofibers were identified by staining for laminin protein whereas nuclei were counterstained using DAPI (Figure 4A). Intriguingly, we found that the number of EdU+ nuclei per myofiber was significantly reduced in TA muscle of Ern1cKO mice compared with corresponding Ern1fl/fl mice (Figure 4B). Moreover, the proportion of myofibers containing two or more EdU+ nuclei in TA muscle sections was significantly reduced in Ern1cKO mice compared with Ern1fl/fl mice (Figure 4C). Our analysis also showed that percentage of EdU+ nuclei to total nuclei was also significantly reduced in regenerating TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 4D). These results suggest that myofiber-specific deletion of IRE1α reduces the proliferation of satellite cells in regenerating skeletal muscle of adult mice.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left side TA muscle of Ern1fl/fl and Ern1cKO mice was given intramuscular injection of 1.2 % BaCl2 solution. After 3 days, the mice were given an intraperitoneal injection of EdU and 11 days later, the TA muscles were collected and muscle sections prepared were stained to detect EdU, laminin, and nuclei. Representative photomicrographs of TA muscle sections after EdU, anti-laminin, and DAPI staining are presented here. Scale bar: 50 µm. (B) Average number of EdU+ nuclei per myofiber, (C) percentage of myofibers containing two or more centrally located EdU+ nuclei (D) percentage of EdU+ nuclei to total nuclei in TA muscle of Ern1fl/fl and Ern1cKO mice (n = 3-4 mice per group). Data are presented as mean ± SEM. *p ≤ 0.05, values significantly different from corresponding TA muscle of Ern1fl/fl mice by unpaired t test. (E) Single myofibers were isolated from the EDL muscle of Ern1fl/fl and Ern1cKO mice and cultured for 72 hr. Representative images of myofiber-associated cells after immunostaining for Pax7 (red) and MyoD (green) protein. Nuclei were counterstained with DAPI (blue). Scale bar: 20 μm. Average number of (F) cellular clusters per myofiber, (G) cells per cluster, (H) Pax7+/MyoD- cells per cluster, (I) Pax7-/MyoD+ cells per cluster, and (J) Pax7+/MyoD+ cells per cluster in Ern1fl/fl and Ern1cKO cultures. (K) In a separate experiment, single myofibers after being cultured for 72 hr were pulse labelled with EdU for 90 min and then immunostained for Pax7 protein and detection of EdU incorporation. Average number of Pax7+/EdU+ cells per cluster on Ern1fl/fl and Ern1cKO myofibers (n = 3 mice per group). Data are presented as mean ± SEM. *p ≤ 0.05, values significantly different from myofiber cultures prepared from Ern1fl/fl mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Single myofibers were isolated from the EDL muscle of Ern1fl/fl and Ern1cKO mice and cultured for 72 hr. Following pulse labelling with EdU for 90 min, the myofibers were immunostained for Pax7 protein and EdU. Representative images of myofibers immunostained for Pax7 (red) and EdU (green). Nuclei were counterstained with DAPI (blue). Scale bar: 20 μm.
+
 We next sought to investigate whether IRE1α influences the self-renewal or differentiation of satellite cells in a cell non-autonomous manner. We employed a suspension culture of EDL myofiber explants that represents an ex vivo model representing muscle injury in vivo with respect to the activation, proliferation, and differentiation of satellite cells (Hindi and Kumar, 2016; Xiong et al., 2017). In this system, each freshly isolated myofiber is associated with a fixed number of quiescent (Pax7+/MyoD−) satellite cells. About 24 hr in cultures, satellite cells upregulate Myod1 (Pax7+/MyoD+) and start proliferating to form cell aggregates on myofibers. Cells on cultured myofiber then either terminally differentiate (Pax7-/MyoD+) or undergo self-renewal (Pax7+/MyoD-) and enter quiescence (Hindi and Kumar, 2016; Ogura et al., 2015). Immunostaining of freshly isolated myofibers from EDL muscle of Ern1fl/fl and Ern1cKO mice showed no significant difference in the numbers of (Pax7+/MyoD-) cells (data not shown). After 72 hr in suspension culture, the number of clusters per myofiber and number of cells per cluster were found to be significantly reduced in myofiber cultures prepared from Ern1cKO mice compared with Ern1fl/fl mice (Figure 4E–G). Our analysis also showed that there was a significant decrease in the number of self-renewing (Pax7+/MyoD-), proliferating (Pax7+/MyoD+), and differentiating (Pax7-/MyoD+) satellite cells per myofiber in Ern1cKO cultures compared to Ern1fl/fl (Figure 4H–J) suggesting that depletion of IRE1α in myofibers reduces the overall pool of satellite cells without influencing their self-renewal, proliferation, or differentiation. To directly investigate the role of IRE1α in the proliferation of myofiber-associated satellite cells, we pulse-labeled satellite cells with EdU followed by immunostaining for Pax7 and detection of EdU (Figure 4—figure supplement 1). Results showed that average number of Pax7+/EdU+ satellite cells per cluster on myofiber was significantly reduced in Ern1cKO cultures compared to those established from Ern1fl/fl mice (Figure 4K).
 
-## IRE1α improves skeletal muscle regeneration through XBP1
+### IRE1α improves skeletal muscle regeneration through XBP1
 
 IRE1α is an endonuclease that causes the alternative splicing of Xbp1 mRNA to generate a potent transcription factor sXBP1 (the spliced form of XBP1). In addition, IRE1α activation can cause the cleavage of other ER-localized mRNAs, cytosolic mRNAs, and microRNAs, leading to their degradation through a process named RIDD (Hollien and Weissman, 2006; Maurel et al., 2014). By performing qPCR, we first compared the levels of various mRNAs that are known to be degraded by RIDD process in uninjured and injured TA muscle of Ern1fl/fl and Ern1cKO mice. Results showed that there was no significant difference in mRNA levels of known RIDD targets such as Bloc1s1, Hgsnat, ERdj4, Col6, Pdqfrb, Scara3, and Sparc in uninjured or 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice. A recent study showed that IRE1α reduces the levels myostatin in muscle cells through RIDD (He et al., 2021). However, we did not find any significant difference in mRNA levels of myostatin (Mtsn) between uninjured or 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice (Figure 5—figure supplement 1). By contrast, mRNA levels of sXbp1 were found to be drastically reduced in TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 5—figure supplement 1A).
 
 To understand whether IRE1α promotes satellite cell proliferation and skeletal muscle regeneration in adult mice through activating XBP1 transcription factor, we crossed floxed Xbp1 (Xbp1fl/fl) mice with Mck-Cre line to generate muscle-specific Xbp1-knockout (Xbp1cKO) and littermate Xbp1fl/fl mice. Levels of both unspliced XBP1 and sXBP1 are drastically reduced in skeletal muscle of Xbp1cKO mice compared with littermate Xbp1fl/fl mice, as described (Bohnert et al., 2019; Parveen et al., 2021). Finally, TA muscle of littermate Xbp1fl/fl and Xbp1cKO mice was injured through intramuscular injection of 1.2 % BaCl2 solution and muscle regeneration was studied at day 5 and day 14 post-injury. H&E staining of TA muscle sections showed that there was a considerable reduction in the regeneration of TA muscle of Xbp1cKO mice compared to Xbp1fl/fl mice (Figure 5A). Morphometric analysis also showed that there was a significant decrease in the average myofiber CSA and minimal Feret’s diameter and proportion of myofibers containing two or more centrally located nuclei in 5d-injured TA muscle of Xbp1cKO mice compared with Xbp1fl/fl mice (Figure 5B–D). Moreover, the size of the regenerating myofibers was also found to be significantly reduced in 14d-injured TA muscle of Xbp1cKO mice compared with Xbp1fl/fl mice (Figure 5A, E and F).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig5-v2.jpg)
+
+**Figure 5.:** Left side TA muscle of Xbp1fl/fl and Xbp1cKO mice was injured by intramuscular injection of 50 µl of 1.2 % BaCl2 solution whereas right side TA muscle was injected with saline and served as control. The muscles were harvested at day 5 and 14 post-BaCl2 injection. (A) Representative photomicrographs of H&E-stained sections of 5d- and 14d-injured TA muscle of Xbp1fl/fl and Xbp1cKO mice. Scale bar: 20 µm. Quantification showing (B) Average myofiber CSA (n = 4-6 mice per group) (C) average minimal Feret’s diameter (n = 4-6 mice per group), and (D) Percentage of myofibers containing two or more centrally located nuclei in TA muscle sections of Xbp1fl/fl and Xbp1cKO mice at day 5 post-injury. Quantification of average (E) myofiber CSA and (F) minimal Feret’s diameter in TA muscle of Xbp1fl/fl and Xbp1cKO mice at day 14 post-injury. (n = 4-5 mice per group) (G) Representative photomicrographs of 5d-injured TA muscle sections from Xbp1fl/fl and Xbp1cKO mice after immunostaining for Pax7 (red) and laminin (green) protein. Nuclei were stained with DAPI (blue). Scale bar: 20 µm. (H) Average number of Pax7+ cells per centrally nucleated myofiber in 5d-injured TA muscle of Xbp1fl/fl and Xbp1cKO mice. n = 3 mice per group. Data are presented as mean ± SEM. *P ≤ 0.05, values significantly different from Xbp1fl/fl mice. (I) Relative levels of Pax7 mRNA in uninjured and 5d-injured TA muscle of Xbp1fl/fl and Xbp1cKO mice. n = 3 per group. Data are presented as mean ± SEM and analyzed by one-way analysis of variance (ANOVA) followed by Tukey’s multiple comparison test. *p ≤ 0.05, values significantly different from uninjured TA muscle of Xbp1fl/fl mice. #p ≤ 0.05, values significantly different from 5d-injured TA muscle of Xbp1fl/fl mice.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Relative mRNA levels of Bloc1s1, Hgsnat, Erdj4, Col6, PdgfR, Scara3, Sparc, Mstn, and sXbp1 in uninjured TA muscle of Ern1fl/fl and Ern1cKO mice (n = 5-6 mice per group).(B) Relative mRNA levels of Bloc1s1, Hgsnat, Erdj4, Col6, PdgfR, Scara3, and Mstn in 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice (n = 4-6 mice per group). Data are presented as mean ± SEM. *p ≤ 0.05, values significantly different from corresponding uninjured or injured TA muscle of Ern1fl/fl mice.
+
 By performing immunostaining for Pax7 protein, we also quantified the number of satellite cells in Xbp1fl/fl and Xbp1cKO mice. There was no significant difference in the number of Pax7+ cells in uninjured TA muscle of Xbp1fl/fl and Xbp1cKO mice (data not shown). However, the abundance of satellite cells was found to be significantly reduced in 5d-injured TA muscle of Xbp1cKO mice compared with Xbp1fl/fl mice (Figure 5G and H). Moreover, mRNA levels of Pax7 were also found to be significantly reduced in 5d-injured TA muscle of Xbp1cKO mice compared with Xbp1fl/fl mice (Figure 5I). While we observed a significant reduction in the number of Pax7+ cells in regenerating TA muscle of Xbp1cKO mice, it remains unknown whether this is due to reduced proliferation or survival of satellite cells. Future studies will determine how XBP1 signaling within myofibers regulates the satellite cell number in injured muscle microenvironment. Altogether, these results suggest that IRE1α promotes skeletal muscle regeneration potentially through the activation of XBP1 transcription factor.
 
-## IRE1α regulates Notch signaling in injured muscle microenvironment
+### IRE1α regulates Notch signaling in injured muscle microenvironment
 
 To understand the mechanisms by which IRE1α-mediated signaling promotes proliferation of satellite cells, we first studied the gene expression of insulin growth factor-1 (Igf1), fibroblast growth factor (Fgf) 1 and 2, hepatocyte growth factor (Hgf), and stromal-derived factor 1 (Sdf1) which are known to promote satellite cell proliferation (Yin et al., 2013). We found no significant difference in mRNA levels of Igf1, Fgf1, Hgf, or Sdf1 in 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice. However, a small but significant increase in mRNA levels of Fgf2 was observed in 5d-injured muscle of Ern1cKO mice compared with littermate Ern1fl/fl mice (Figure 6—figure supplement 1).
 
 Several studies have demonstrated that Notch signaling is essential for the self-renewal and proliferation of satellite cells during regenerative myogenesis. To further understand the potential mechanisms through which IRE1α signaling in myofibers regulates satellite cell proliferation and skeletal muscle regeneration, we first measured mRNA levels of Notch ligands (Jagged1, Jagged2, Dll1, and Dll4), Notch receptors (Notch1, Notch2, and Notch3) and Notch target genes (Hes1, Hes6, Hey1, and Heyl) by performing qPCR assay. Interestingly, mRNA levels of Notch1, Notch2, Notch3, Jagged1, Jagged2, Hes6, Hey1, and Heyl were found to be significantly reduced in 5d-injured TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 6A–C). Western blot analysis also showed that the protein levels of Notch1 and Hes6 were considerably reduced in injured TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 6D). These results suggest that myofiber-specific ablation of IRE1α reduces the activation of Notch signaling during skeletal muscle regeneration.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig6-v2.jpg)
+
+**Figure 6.:** TA muscle of Ern1fl/fl and Ern1cKO mice were injected with 1.2 % BaCl2 solution. After 5d, the muscles were isolated and processed for qPCR and western blot analysis. Relative mRNA levels of (A) Notch receptors Notch1, Notch2, and Notch3; (B) Notch ligands Jagged1, Jagged2, Dll1, and Dll4; and (C) Notch targets Hes1, Hes6, Hey1, and Heyl in 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice (n = 6–9 mice per group). (D) Immunoblot presented here demonstrate protein levels of Notch1, Hes6, and unrelated protein GAPDH in uninjured and 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice. Relative mRNA levels of (E) Wnt ligands Wnt4, Wnt5A, Wnt7A and Wnt11; (F) Wnt receptors Fzd1, Fzd2, Fzd4, and Fzd6, and (G) Wnt targets Axin2 in 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice (n = 5-7 per group). Data are presented as mean ± SEM. *p ≤ 0.05, values significantly different from corresponding 5d-injured TA muscle of Ern1fl/fl mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Relative mRNA levels of Igf1, Fgf1, Fgf2, Hgf, and Sdf1 in 5d-injured TA muscle of Ern1fl/fl and Ern1cKO mice (n = 4–8 mice per group). Data are presented as mean ± SEM. *p ≤ 0.05, values significantly different from 5d-injured TA muscle of Ern1fl/fl mice.
+
 Wnt signaling also plays an important role during skeletal muscle regeneration (Hindi et al., 2013). The levels of various Wnt ligands and receptors are increased in skeletal muscle upon injury. Moreover, Wnt signaling has been found to promote myoblast fusion both in vivo and in vitro (Brack et al., 2008; Hindi et al., 2017; Hindi et al., 2013). We investigated whether targeted ablation of IRE1α influences the activation of Wnt pathway during skeletal muscle regeneration. However, we found no significant difference in the gene expression of Wnt ligands Wnt4, Wnt5a, Wnt7a, and Wnt11, Wnt receptors Fzd1, Fzd2, Fzd4, and Fzd6, and Wnt target gene Axin2 (Figure 6E–G). These results suggest that IRE1α specifically regulates Notch signaling to promote satellite cell proliferation.
 
-## IRE1α regulates NF-κB signaling in regenerating skeletal muscle
+### IRE1α regulates NF-κB signaling in regenerating skeletal muscle
 
 NF-κB is a major transcription factor that controls the expression of a plethora of molecules involved in cell proliferation, survival, and differentiation and inflammatory response (Hayden and Ghosh, 2004; Razani et al., 2011). NF-κB signaling has also been found to play an important role in skeletal muscle regeneration (Enwere et al., 2012; Hindi et al., 2013). There are multiple reports suggesting a crosstalk between Notch and NF-κB signaling pathways in diverse experimental model. Indeed, Notch1 has been shown to increase the expression of various subunits of NF-κB complex. Notch1 intracellular domain (N1ICD) activates canonical NF-κB pathway through physically interacting with IKK signalosome and through repressing the deubiquitinase CYLD, a negative IKK complex regulator (Espinosa et al., 2010; Ferrandino et al., 2018; Osipo et al., 2008). By performing western blot, we first measured levels of phosphorylated and total p65 protein (a marker for activation of the canonical NF-κB signaling). A drastic increase in the levels of both phosphorylated p65 (p-p65) and total p65 was observed in 5d-injured TA muscle of both Ern1fl/fl and Ern1cKO mice. However, the levels of p-p65 protein were found to be significantly reduced in 5d-injured TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 7A and B). We also measured the levels of p100 and p52, the markers of activation of the non-canonical NF-κB signaling pathway. Muscle injury drastically increased the levels of p100 and p52 protein in TA muscle of both Ern1fl/fl and Ern1cKO mice. Intriguingly, protein levels of both p100 and p52 were found to be significantly higher in injured TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 7A and C).
 
@@ -91,11 +123,19 @@ NF-κB is a major transcription factor that controls the expression of a plethor
 
 We also measured mRNA levels of a few cytokines that regulate myogenesis. Our qPCR analysis showed that mRNA levels of Tnfa, Tnfr2, and Tnfrsf12a were found to be significantly reduced in injured TA muscle of Ern1cKO mice compared with Ern1fl/fl mice (Figure 7D). By contrast, mRNA levels of Il4, Il10, and Ifng were significantly increased in injured TA muscle of Ern1cKO mice compared to Ern1fl/fl mice. There was no significant difference in the mRNA levels of Tnfr1, Tnfsf12, and Il6 between injured muscle of Ern1fl/fl and Ern1cKO mice (Figure 7D). Taken together, these results suggest that myofiber-specific ablation of IRE1α influences the activation of canonical and non-canonical NF-κB pathways and regulates the expression of key cytokines and their receptors during regenerative myogenesis.
 
-## Myofiber-specific ablation of IRE1α exacerbates the dystrophic phenotype of Mdx mice
+### Myofiber-specific ablation of IRE1α exacerbates the dystrophic phenotype of Mdx mice
 
 In the preceding experiments, we used a mouse model that involves single acute injury to TA muscle followed by its regeneration. However, the role of IRE1 signaling in skeletal muscle regeneration in response to chronic injury is not known. The mdx mouse, which lacks dystrophin protein due to a mutation that results in a premature stop codon in exon 23, is widely used as a mouse model for studying chronic muscle injury and pathophysiology of Duchenne muscular dystrophy (Chang et al., 2016; Shin et al., 2013). Thus, we employed mdx mice to evaluate the role of IRE1α in muscle regeneration in the ‘settings’ of chronic muscle injury and myopathy.
 
 We first investigated how IRE1/XBP1α pathway is affected in skeletal muscle of mdx mice. Results showed that the levels of phosphorylated IRE1α (p-IRE1α) was significantly increased whereas levels of total IRE1α protein were significantly reduced in skeletal muscle of mdx mice compared to corresponding WT mice. Indeed, the ratio of phosphorylated versus total IRE1α as well as levels of sXBP1 protein were significantly higher in skeletal muscle of mdx mice compared with WT mice (Figure 8A and B) suggesting activation of IRE1α/XBP1 pathway in dystrophic muscle of mdx mice. To understand the role of IRE1α in regeneration of dystrophic muscle, we crossed Ern1cKO mice with mdx mice to generate littermate mdx;Ern1fl/fl and mdx;Ern1cKO mice. There was no significant difference in the body weight of 12-week-old littermate mdx;Ern1fl/fl and mdx;Ern1cKO mice (Figure 8C). However, there was a significant reduction in four paw grip strength (normalized with body weight) of mdx;Ern1cKO mice compared with mdx;Ern1fl/fl mice (Figure 8D). We next isolated hind limb muscle from these mice and performed H&E staining (Figure 8E). Interestingly, our results showed that average CSA of the regenerating myofiber (centronucleated) was significantly reduced in TA muscle of mdx;Ern1cKO mice compared to mdx;Ern1fl/fl mice (Figure 8E and F). Furthermore, there was a significant reduction in number of myofibers containing two or more centrally located nuclei in TA muscle sections of mdx;Ern1cKO mice compared with mdx;Ern1fl/fl mice (Figure 8G). Similarly, muscle regeneration was also considerably reduced in GA muscle of Ern1cKO mice compared with mdx;Ern1fl/fl mice (Figure 8—figure supplement 1A and B). We also investigated how myofiber-specific deletion of IRE1α affects the frequency of satellite cells in dystrophic muscle of mdx mice. TA muscle sections generated from littermate mdx;Ern1fl/fl and mdx;Ern1cKO mice were immunostained for Pax7 and laminin, whereas nuclei were counterstained with DAPI. Finally, the number of Pax7+ cells within laminin staining was counted. Results showed that frequency of satellite cells per myofiber was significantly reduced in TA muscle of mdx;Ern1cKO mice compared with mdx;Ern1fl/fl mice (Figure 8H and I). There was also a significant reduction in the mRNA levels of Pax7 in TA muscle of mdx;Ern1cKO mice compared with mdx;Ern1fl/fl mice (Figure 8J). Our qPCR analysis showed that there was no significant difference in mRNA levels Bloc1s1 or Mtsn (myostatin) in dystrophic muscle of mdx;Ern1fl/fl and mdx;Ern1cKO mice (Figure 8—figure supplement 1C). By contrast, mRNA levels of Notch targets Hes1, Hey1, and Heyl were found to be significantly reduced in skeletal muscle of mdx;Ern1cKO mice compared with mdx;Ern1fl/fl mice (Figure 8—figure supplement 1D). These results further suggest that IRE1α signaling in myofibers stimulates muscle regeneration through augmenting the proliferation of satellite cells in both normal and dystrophic mice.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig8-v2.jpg)
+
+**Figure 8.:** (A) Western blots showing the levels of p-IRE1, IRE1, sXBP1 and unrelated protein GAPDH in TA muscle of 12-week-old wild-type (WT) and mdx mice. (B) Densitometry analysis showing levels of p-IRE1, IRE1, sXBP1 and GAPDH protein in TA muscle of wild-type and mdx mice (n = 3-4 mice in each group). *p < 0.05, values significantly different from WT mice. (C) Average body weight (BW), and (D) Four limb grip strength normalized with body weight of 10-week-old mdx;Ern1fl/fl and mdx;Ern1cKO mice (n = 3 in each group). (E) Representative photomicrographs of H&E-stained TA muscle section from 10-week-old mdx;Ern1fl/fl and mdx;Ern1cKO mice. Scale bar: 50 µm. (F) Average myofiber CSA and (G) percentage of myofibers containing ≥2 centrally located nuclei in TA muscle sections of mdx;Ern1fl/fl and mdx;Ern1cKO mice (n = 4 in each group). (H) Representative photomicrographs of TA muscle sections after immunostaining for Pax7 (red) and laminin (green) protein. Nuclei were stained with DAPI (blue). Scale bar: 50 µm. White arrows point to Pax7+ satellite cells. (I) Frequency of Pax7+ cells per centrally nucleated myofibers in TA muscle of mdx;Ern1fl/fl and mdx;Ern1cKO mice (n = 4 in each group). (J) Relative mRNA levels of Pax7 in TA muscle of mdx;Ern1fl/fl and mdx;Ern1cKO mice assayed by performing qPCR (n = 4-5 mice in each group). Data are presented as mean ± SEM. *p ≤ 0.05, values significantly different from TA muscle of mdx;Ern1fl/fl mice.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/73215/elife-73215-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative photomicrographs of H&E-stained GA muscle sections prepared from 10-month-old mdx;Ern1fl/fl and mdx;Ern1cKO mice. Scale bar: 50 μm. (B) Number of centrally nucleated myofibers (CNFs) per field (∼0.15 mm2) in GA muscle of mdx;Ern1fl/fl and mdx;Ern1cKO mice (n = 3 mice per group). Relative mRNA levels of (C) Mstn and Bloc1s1 (n = 4 mice for mdx;Ern1fl/fl group and n = 5 mice for mdx;Ern1cKO group), and (D) Notch target genes Hes6, Hey1 and Heyl in GA muscle of mdx;Ern1fl/fl and mdx;Ern1cKO mice (n = 4 mice per group). Data are presented as mean ± SEM. *p ≤ 0.05, values significantly different from mdx;Ern1fl/fl mice by unpaired t test.
 
 ## Discussion
 
@@ -119,44 +159,229 @@ One caveat of our study is that we have used Cre-loxP system to delete Ern1 or X
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>Wild type mice/C57BL/6</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td>Also known as B6, B6J, B6/J mice</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>Mdx mice/C57BL/10ScSn-Dmdmdx/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:001801</td>
+      <td>Also known as mdx mice</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>MCK-Cre Mice/Tg(Ckmm-cre)5Khn</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:006475</td>
+      <td>Also known Ckmm-cre mice</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ern1fl/fl Mice/B6;129S4-Ern1tm2.1Tiw</td>
+      <td>Kanazawa Medical University, Japan</td>
+      <td>RRID:IMSR_RBRC05515</td>
+      <td>Also known as floxed Ern1 mice</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Mus musculus)</td>
+      <td>Xbp1fl/fl mice/Xbp1tm2Glm</td>
+      <td>Dana-Farber Cancer Institute, Boston, MA</td>
+      <td>RRID:MGI:3774017</td>
+      <td>Also known as floxed Xbp1 mice</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-IRE1α(rabbit monoclonal)</td>
+      <td>Novus Biologicals,Cat# NB 100–2323</td>
+      <td>RRID:AB_10145203</td>
+      <td>Dilution used (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IRE1α(rabbit monoclonal)</td>
+      <td>Cell Signaling Technology,Cat #3,294</td>
+      <td>RRID:AB_823545</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-sXBP-1(rabbit monoclonal)</td>
+      <td>Cell Signaling Technology,Cat #12,782</td>
+      <td>RRID:AB_2687943</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pax7(mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB), Cat# pax7,</td>
+      <td>RRID:AB_528428</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eMyHC(mouse monoclonal)</td>
+      <td>DSHB.Cat# F1.652</td>
+      <td>RRID:AB_528358</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MyoD(mouse monoclonal)</td>
+      <td>SantaCruz Biotechnology, sc-377460</td>
+      <td>RRID:AB_2813894</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myogenin(mouse monoclonal)</td>
+      <td>DSHB,Cat# F5D</td>
+      <td>RRID:AB_528355</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p65 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology,Cat #3,033</td>
+      <td>RRID:AB_331284</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p65(rabbit monoclonal)</td>
+      <td>Cell Signaling Technology,Cat # 8,242</td>
+      <td>RRID:AB_10859369</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p100/p52(rabbit polyclonal)</td>
+      <td>Cell Signaling Technology,Cat #4,882</td>
+      <td>RRID:AB_10695537</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Notch1(mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology,Cat # sc-6015</td>
+      <td>RRID:AB_831604</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hes6(mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology,Cat # sc-133196</td>
+      <td>RRID:AB_2118109</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH(rabbit monoclonal)</td>
+      <td>Cell Signaling Technology,Cat. #2,118</td>
+      <td>RRID:AB_561053</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-laminin(rabbit polyclonal)</td>
+      <td>Sigma-Aldrich,Cat# L9393</td>
+      <td>RRID:AB_477163</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Integrin α7-APC (mouse monoclonal)</td>
+      <td>Miltenyi Biotec, Cat# 130-102-717</td>
+      <td>RRID:AB_2652466</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45 Antibody (30-F11), PE, (mouse monoclonal)</td>
+      <td>ThermoFisher Scientific,Cat # 12-0451-82</td>
+      <td>RRID:AB_465668</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31 (PECAM-1) (390), PE, (mouse monoclonal)</td>
+      <td>ThermoFisher Scientific,Cat # 12-0311-82</td>
+      <td>RRID:AB_465632</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TER-119 (TER-119), PE, (mouse monoclonal)</td>
+      <td>ThermoFisher Scientific,Cat# 12-5921-82</td>
+      <td>RRID:AB_466042</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly-6A/E (Sca-1) (D7), PE, (mouse monoclonal)</td>
+      <td>ThermoFisher Scientific,Cat # 12-5981-83</td>
+      <td>RRID:AB_466087</td>
+      <td>(1:400)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 C57BL/6 mice and mdx (strain: C57BL/10ScSn-Dmdmdx/J) mice were purchased from Jackson Laboratories (Bar Harbor, ME, USA) and breeding colonies were maintained at the University of Houston animal resource facility. Floxed Ern1 (Ern1fl/fl) mice as described (Iwawaki et al., 2009) were crossed with Mck-Cre mice (Jax strain: B6.FVB(129S4)-Tg (Ckmm-cre)5Khn/J) to generate muscle-specific Ern1-knockout (i.e. Ern1cKO) mice. Ern1cKO mice were also crossed with mdx mice to generate littermate mdx;Ern1fl/fl and mdx;Ern1cKO mice. Skeletal muscle specific Xbp1-knockout mice (Xbp1cKO) mice were generated by crossing Xbp1fl/fl (MGI strain: Xbp1tm2Glm) mice as described (Hetz, 2012) with Mck-Cre mice. All mice were in the C57BL6 background and their genotype was determined by PCR from tail DNA. We used 10–12 weeks old mice for our experimentation. All the experiments were performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All the animals were handled according to approved institutional animal care and use committee (IACUC) protocols of the University of Houston. All surgeries were performed under anesthesia, and every effort was made to minimize suffering.
 
-## Grip strength measurements
+### Grip strength measurements
 
 To measure total four-limb grip strength of mice, a digital grip-strength meter (Columbus Instruments, Columbus, OH, USA) was used. In brief, the mice were acclimatized for 5 min and then allowed to grab the metal pull bar with all four paws. The mouse tail was then gently pulled backward in the horizontal plane until it could no longer grasp the bar. The force at the time of release was recorded as the peak tension. Each mouse was tested five times with a 1 min break between tests. The average peak tension from five attempts normalized against total body weight was defined as grip strength.
 
-## Skeletal muscle injury and in vivo fusion assay
+### Skeletal muscle injury and in vivo fusion assay
 
 Muscle necrotic injury in adult mice was performed by injection of 50 µl of 1.2 % BaCl2 (Sigma Chemical Co.) dissolved in saline into the TA muscle as described (Hindi and Kumar, 2016; Hindi et al., 2012). At various time points after intramuscular injection of BaCl2, the mice were euthanized and TA muscle was collected for biochemical and histological studies. To study myoblast fusion in vivo, the mice were given an intraperitoneal injection of EdU (4 μg per gram body weight) at day 3 after intramuscular injection of 1.2 % BaCl2 into the TA muscle. After 11 days of EdU injection, the TA muscle was isolated and sectioned in a microtome cryostat. The sections were subsequently immunostained with anti-Laminin for marking boundaries of myofibers and processed for the detection of EdU+ nuclei similar to as described (Hindi et al., 2017). The EdU+ nuclei on muscle sections were detected as instructed in the Click-iT EdU Alexa Fluor 488 Imaging Kit (Invitrogen). Finally, images were captured and the number of intramyofiber EdU+ myonuclei/myofiber, percentage of 2 or more EdU+ centrally nucleated fibers and percentage of EdU+ myonuclei/total nuclei were quantified using NIH ImageJ software. For calculating the EdU+ nuclei, the images were split into single channels and green channel was scanned to count the EdU+ nuclei. Similarly, the red and blue channels were scanned to count the numbers of myofibers and myonuclei, respectively. While counting, it was ensured that EdU fluorescence is indeed from nucleus. This was achieved by keeping the merged image open in a parallel window and scrutinizing whether the fluorescence overlapped with DAPI and coincided with nuclear location. To reduce variations, three to four different sections from mid-belly of each muscle were included for analysis.
 
-## Histology and morphometric analysis
+### Histology and morphometric analysis
 
 Uninjured and injured TA muscles were isolated from mice, snap frozen in liquid nitrogen, and sectioned with a microtome cryostat. For the assessment of muscle morphology and to quantify fiber cross-sectional area (CSA), 10-μm-thick transverse sections of TA muscle were stained with hematoxylin and eosin (H&E). The sections were examined under an Eclipse TE 2000-U microscope (Nikon, Tokyo, Japan). For quantitative analysis, cross-sectional area (CSA) and minimal Feret’s diameter of myofibers were analyzed in H&E-stained TA muscle sections using Nikon NIS Elements BR 3.00 software (Nikon). For each muscle, the distribution of fiber CSA was calculated by analyzing approximately 300 myofibers. Masson’s trichrome staining was performed to analyze fibrosis using a commercially available kit and following a protocol suggested by the manufacturer (Richard-Allan Scientific).
 
-## Isolation and culturing of myofiber
+### Isolation and culturing of myofiber
 
 Single myofiber cultures were established from EDL muscle after digestion with collagenase II (Worthington Biochemical Corporation, Lakewood, NJ) and trituration as described (Hindi and Kumar, 2016). Suspended myofibers were cultured in 60 mm horse serum-coated plates in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10 % fetal bovine serum (FBS; Invitrogen), 2 % chicken embryo extract (Accurate Chemical, Westbury, NY), 10 ng/ml basis fibroblast growth factor (Peprotech, Rocky Hill, NJ), and 1 % penicillin-streptomycin for three days.
 
-## Immunofluorescence
+### Immunofluorescence
 
 For the immunohistochemistry studies, frozen TA muscle sections or cultured myofibers were fixed in 4 % paraformaldehyde (PFA) in PBS, blocked in 2 % bovine serum albumin in PBS for 1 hr and incubated with anti-Pax7 (1:10, Developmental Studies Hybridoma Bank (DSHB) Iowa City, IA, Cat# pax7, RRID:AB_528428), anti-eMyHC (1:200, DSHB Cat# F1.652 RRID:AB_528358), anti-laminin (1:500, Sigma-Aldrich Cat# L9393 RRID:AB_477163), or anti-MyoD (1:200, Santa Cruz Biotechnology Cat# sc-377460 RRID:AB_631992) in blocking solution at 4 °C overnight under humidified conditions. The sections were washed briefly with PBS before incubation with Alexa Fluor 488 (Thermo Fisher Scientific, Cat# A-11034 also A11034 RRID:AB_2576217) or Alexa Fluor 594 (Thermo Fisher Scientific, Cat# A-11037 also A11037 RRID:AB_2534095) secondary antibody for 1 h at room temperature and then washed 3 times for 5 min with PBS. The slides were mounted using fluorescence medium (Vector Laboratories) and visualized at room temperature on Nikon Eclipse TE 2000-U microscope (Nikon), a digital camera (Nikon Digital Sight DS-Fi1), and Nikon NIS Elements BR 3.00 software (Nikon). Image levels were equally adjusted using Abode Photoshop CS6 software (Adobe).
 
 For quantification of number of Pax7+ cells in TA muscle, the images were split into single channels and the red channel was scanned to count the Pax7+ cells. To confirm that red staining is specific to Pax7+ cells, a parallel window with the corresponding merged image was kept open. Care was taken to scrutinize that red fluorescence overlapped with DAPI fluorescence and was also located underneath the basal lamina (laminin staining) to be considered as real Pax7 staining. Similarly, the green and blue channels were scanned to count the numbers of myofibers and nuclei, respectively. For minimizing variation based on muscle size, the satellite cells were quantified from three to four separate regions from the mid-belly of each muscle. A minimum of 500 myofibers were scanned per mouse to count the associated Pax7+ cells.
 
-## Fluorescence-activated cell sorting (FACS)
+### Fluorescence-activated cell sorting (FACS)
 
 Satellite cells were analyzed by performing FACS analysis as described (Hindi and Kumar, 2016). For satellite cell isolation from heterogeneous cell population, cells were immunostained with antibodies against CD45, CD31, Sca-1, and Ter-119 for negative selection (all PE conjugated, Thermo Fisher Scientific), and with APC-α7-integrin (MBL International) for positive selection.
 
-## Total RNA extraction and qPCR assay
+### Total RNA extraction and qPCR assay
 
 RNA isolation and qPCR were performed using similar protocol as described (Paul et al., 2012; Paul et al., 2010). In brief, total RNA was extracted from uninjured and injured TA muscle of mice using TRIzol reagent (Thermo Fisher Scientific) and an RNeasy Mini Kit (Qiagen, Valencia, CA, USA) according to the manufacturers’ protocols. First-strand cDNA for PCR analyses was made with a commercially available kit (iScript cDNA Synthesis Kit, Bio-Rad Laboratories). The quantification of mRNA expression was performed using the SYBR Green dye (Bio-Rad SsoAdvanced - Universal SYBR Green Supermix) method on a sequence detection system (CFX384 Touch Real-Time PCR Detection System - Bio-Rad Laboratories). Primers were designed with Vector NTI software (Thermo Fisher Scientific Life Sciences) and are available from the authors on request. Data normalization was accomplished with the endogenous control (β-actin), and the normalized values were subjected to a 2-ΔΔCt formula to calculate the fold change between control and experimental groups.
 
-## Western blot analysis
+### Western blot analysis
 
 Estimation of levels of various proteins was done by performing Western blot analysis as described (Hindi and Kumar, 2016; Ogura et al., 2015). TA muscle of mice were washed with sterile PBS and homogenized in lysis buffer: 50 mM Tris-Cl (pH 8.0), 200 mM NaCl, 50 mM NaF, 1 mM dithiothreitol, 1 mM sodium orthovanadate, 0.3 % IGEPAL, and protease inhibitors. Approximately 100 μg protein was resolved in each lane on 10 % SDS-polyacrylamide gels, electrotransferred onto nitrocellulose membranes, and probed with the following antibodies: anti-phospho-IRE1α (1:500; Novus, NB 100–2323), anti-IRE1α (1:500; Cell Signaling Technology, #3294), anti-sXBP-1 (1:1000; Cell Signaling Technology, #12782), anti-Pax7 (1:100; DSHB Cat# pax7, RRID:AB_528428), anti-eMyHC (1:200, DSHB Cat# F1.652 RRID:AB_528358), anti-MyoD (Santa Cruz Biotechnology sc-377460), anti-Myogenin (1:100; DSHB Cat# F5D), anti-phospho-p65 (1:500; Cell Signaling Technology, #3033), anti-p65 (1:500; Cell Signaling Technology, # 8242), anti-p100/p52 (1:500; Cell Signaling Technology, #4882), anti-Notch1 (Santa Cruz Biotechnology, #SC-6015), anti-Hes6 (Santa Cruz Biotechnology, #SC-25396), and anti-GAPDH (1:2000; Cell Signaling Technology, #2118). Antibodies were detected by chemi-luminescence. Quantitative estimation of the bands’ intensity was performed with ImageJ software (NIH).
 
-## Statistical analyses and general experimental design
+### Statistical analyses and general experimental design
 
 We calculated sample size using size power analysis methods for a priori determination based on the standard error of mean (SEM) and the effect size was previously obtained using the experimental procedures employed in the study. For animal studies, we estimated sample size from expected number of Ern1cKO or Xbp1cKO mice and littermate Ern1fl/fl or Xbp1fl/fl controls. We calculated the sample size for each group as eight animals. Considering a likely drop-off effect of 10%, we set sample size of each group of six mice. For some experiments, three to four animals were found sufficient to obtain statistical differences. Animals with same sex and same age were employed to minimize physiological variability and to reduce SEM from mean. The exclusion criteria for animals were established in consultation with IACUC members and experimental outcomes. In case of death, skin injury, sickness or weight loss of >10%, the animal was excluded from analysis. Muscle tissue samples were not used for analysis in cases such as freeze artefacts on histological section or failure in extraction of RNA or protein of suitable quality and quantity. Animals from different breeding cages were included by random allocation to the different experimental groups. Animal experiments including morphometric analysis of myofiber CSA, percentage of Pax7+, or EdU+ cells on TA muscle sections were blinded using number codes till the final data analyses were performed. Statistical tests were used as described in the Figure legends. Results are expressed as mean ± SEM. Statistical analyses used two-tailed Student’s t-test or one-way ANOVA followed by Tukey’s multiple comparison test. A value of p < 0.05 was considered statistically significant unless otherwise specified.

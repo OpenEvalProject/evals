@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/036rp1748 Luiz de Queiroz College of Agriculture (ESALQ), University of São Paulo Piracicaba Brazil
-2. https://ror.org/036rp1748 Center of Nuclear Energy in Agriculture (CENA), University of São Paulo Piracicaba Brazil
+1. Luiz de Queiroz College of Agriculture (ESALQ), University of São Paulo Piracicaba Brazil ([ROR:036rp1748](https://ror.org/036rp1748))
+2. Center of Nuclear Energy in Agriculture (CENA), University of São Paulo Piracicaba Brazil ([ROR:036rp1748](https://ror.org/036rp1748))
 
 † Corresponding author
 

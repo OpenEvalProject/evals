@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01xtthb56 Department of Informatics, University of Oslo Oslo Norway
-2. https://ror.org/01xtthb56 Department of Physics, University of Oslo Oslo Norway
-3. https://ror.org/04a1mvv97 Department of Data Science, Norwegian University of Life Sciences Ås Norway
-4. https://ror.org/03cpe7c52 MindScope Program, Allen Institute Seattle United States
-5. https://ror.org/04a1mvv97 Department of Physics, Norwegian University of Life Sciences Ås Norway
+1. Department of Informatics, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+2. Department of Physics, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+3. Department of Data Science, Norwegian University of Life Sciences Ås Norway ([ROR:04a1mvv97](https://ror.org/04a1mvv97))
+4. MindScope Program, Allen Institute Seattle United States ([ROR:03cpe7c52](https://ror.org/03cpe7c52))
+5. Department of Physics, Norwegian University of Life Sciences Ås Norway ([ROR:04a1mvv97](https://ror.org/04a1mvv97))
 
 † Corresponding author
 
@@ -55,13 +55,27 @@ A schematic of the six probes used to perform the recordings in individual mice 
 
 **Figure 1.:** (A) Schematic of the experimental setup, with six Neuropixels probes inserted into six cortical (V1, latero-medial [LM], rostro-lateral [RL], antero-lateral [AL], postero-medial [PM], AM) and two thalamic areas (LGN, LP). (B) Top: spikes from many simultaneously recorded neurons in V1 during a single trial. Bottom: spikes from a single neuron recorded across multiple trials. In both cases, the stimulus was a full-field bright flash (onset at time 0, offset at 250 ms). (C) Top: local field potential (LFP) across all layers of V1 in response to the full-field bright flash, averaged over 75 trials in a single animal. Bottom: current source density (CSD) computed from the LFP with the delta iCSD method. (D) Histology displaying trace of the Neuropixels probe across layers in V1, subiculum (SUB) and dentate gyrus (DG). (E) Visualization of the V1 model with the Neuropixels probe in situ. (Image made using VND.)
 
-## Uncovering a canonical visually evoked CSD response
+### Uncovering a canonical visually evoked CSD response
 
 We first established a ‘typical’ experimentally recorded CSD pattern to be reproduced with the model. Though there is substantial inter-trial and inter-animal variability in the evoked CSD response, we find that most trials and animals have several salient features in common. In Figure 2A, the trial-averaged evoked CSDs from five individual mice are displayed. In the first four animals (#1–4), we observe an early transient sink arising in layer 4 (L4) ~40 ms after flash onset, followed by a sustained source starting ~60 ms, which covers L4 and parts of layers 2/3 (L2/3) and layer 5 (L5). We also observe a sustained sink covering layers 5 and 6 (L6) emerging around 50 ms, as well as a sustained sink covering layers 1 and 2/3 around 60 ms. An animal that does not fully exhibit what we term the ‘canonical’ pattern is shown in the rightmost plot (#5 in Figure 2A); it has an early L4 sink arising at 40 ms, but this sink is not followed by the sustained sinks and sources from 50 to 60 ms and onward observed in the other animals. The timing and location of sinks and sources are, overall, similar to those described earlier by Givre et al., 1994; Schroeder et al., 1998, Niell and Stryker, 2008, and Senzai et al., 2019.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig2-v2.jpg)
+
+**Figure 2.:** (A) Evoked CSD response to a full-field flash averaged over 75 trials, from five animals in the dataset. (B) The first principal component (PC) computed from the CSD of all n = 44 animals, explaining 50.4% of the variance. (C) Illustration of movement of sinks and sources in the calculation of the Wasserstein distance (WD) between the CSD of two animals in the dataset. The gray lines in the rightmost panels display how the sinks or sources of one animal are moved to match the distribution of sinks or sources of the other animal. (D) Left: WDs from each animal to the PC 1 CSD. Right: pairwise WDs between all 44 animals sorted by their distance to the first PC. (E) CSD from five individual trials in example animal 1. (F) Distribution of pairwise distances between single-trial CSD (red) and pairwise distances between trial-averaged CSD of individual animals (blue). Both are normalized to the maximum pairwise distance between the trial-averaged CSD of individual animals. (G) Pairwise WDs between trials in each of 44 animals (white boxplots), normalized to maximal pairwise WDs between trial-averaged CSD of animals. Gray-colored boxplot shows the distribution of pairwise WDs between trial-averaged CSD of individual animals, and the red stars indicate the n = 5 animals for which the inter-trial variability was greater than the inter-animal variability (assessed with Kolmogorov–Smirnov [KS] tests, p < 0.001 in all cases, see Figure 2—figure supplement 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Left: cumulative variance explained by principal components. Right: variance explained by first 10 components. (B) CSD plots of the first 10 principal components explaining in total >90% of the variance in trial-averaged CSD across animals.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Cumulative distributions of pairwise WDs between trial-averaged current source density (CSD) of individual animals (blue line) and pairwise WDs between single trial CSD in each animal (red lines). The black line denotes the point of maximal distance between the two distributions.
+
 To identify the robust features across animals in this dataset, we performed principal component analysis (PCA) on the trial-averaged evoked CSD from all animals. Out of the 58 animals in the dataset, 5 did not have readable recordings of LFP in V1 during the presentation of the full-field flash stimuli, and the exact probe locations in V1 could not be recovered for 9 other animals due to fading of fluorescent dye or artifacts in the optical projection tomography (OPT) volume (see ‘Materials and methods’). The remaining 44 (out of the 58) animals in the dataset were retained for the CSD analysis. The trial-averaged CSD plots of all these 44 animals are displayed in Figure 2—figure supplement 1. The first principal component (PC 1) (Figure 2B) constitutes a sum of weighted contributions of the CSD patterns from all 44 animals and explains half (50.4%) of the variance. The salient features typically observed in individual animals are also prominent in the PC 1 CSD pattern (Figure 2B), that is, the canonical pattern. In Figure 2—figure supplement 2, the first 10 principal components cumulatively explaining 90% of the variance are plotted.
 
-## Quantifying CSD pattern similarity
+### Quantifying CSD pattern similarity
 
 We use the Wasserstein, or Earth Mover’s, distance (WD) to quantify the differences in CSD patterns (see ‘Materials and methods’), which can then be used to assess how well the simulated CSD matches the CSD typically observed in experiments. The WD reflects the cost of transforming one distribution into another by moving its ‘distribution mass’ around (Rubner et al., 1998; Arjovsky et al., 2017). An often-used analogy refers to the two distributions as two piles of dirt, where the WD tells us the minimal amount of work that must be done to move the mass of one pile around until its distribution matches the other pile (Rubner et al., 1998). In the context of CSD patterns, the WD reflects the cost of transforming the distribution of sinks and sources in one CSD pattern into the distribution of sinks and sources in another pattern, with larger WD indicating greater dissimilarity between CSD patterns. The WDs are computed between the sinks of two CSD patterns and between the sources of two CSD patterns independently, and then summed to form a total WD between the CSD patterns (Figure 2C). The sum of all sinks and the sum of all sources in each CSD pattern are normalized to –1 and +1, respectively, so the WD only reflects differences in patterns, and not differences in the overall amplitude. The WD scales linearly with shifts in space and time.
 
@@ -69,11 +83,23 @@ When computing the WDs between the evoked CSD patterns of individual animals and
 
 The onset of the evoked response is less conspicuous in the single-trial CSD due to pronounced, ongoing sinks and sources, but there is still a visible increase in magnitude from 40 to 50 ms onward (Figure 2E), compatible with the latency of spiking responses to full-field flashes in V1 (Siegle et al., 2021). An oscillation of sinks and sources with a periodicity of ~20 ms, that is, in the gamma range is apparent in the region stretching from L2/3 to the top of L5, which appears to be either partially interrupted or drowned out by more sustained sinks and sources emerging at about 60 ms. At least some of this gamma-range activity derives from the visual flash that covers the entire visual field and that drives retinal neurons and postsynaptic targets in the lateral geniculate nucleus (LGN) in an oscillatory manner (see the pronounced gamma-range oscillation in the LGN firing rate in Figure 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig3-v2.jpg)
+
+**Figure 3.:** (A) Trial-averaged laminar population firing rates of regular-spiking (RS) cells, differentiated by layer, and fast-spiking (FS) cells across all layers in response to full-field flash. Black line: average across all animals. Gray shaded area: ±1 standard deviation. (B) Kolmogorov–Smirnov (KS) similarities (see ‘Materials and methods’) between the trial-averaged firing rates of each individual animal and the average firing rate over cells from all animals (black line in A) at baseline (the interval of 250 ms before flash onset), peak evoked response (from 35 to 60 ms after flash onset), and during the sustained period (from 60 to 100 ms). (C) Correlations between trial-averaged firing rates of individual mice and all mice (0–100 ms after flash onset). (D) Baseline-subtracted evoked firing rates for excitatory cells in seven visual areas (average over trials, neurons, and mice). Note the strong, stimulus-triggered gamma-range oscillations in the firing of lateral geniculate nucleus (LGN) neurons (blue). (E) Mean (μ) ± standard deviation (σ) of population firing rates during baseline, peak evoked response, and the sustained period. Averaged across trials, neurons and time windows defined above.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Distributions of waveform duration in cells from lateral geniculate nucleus (LGN), V1, and latero-medial (LM) and the threshold (red line) between classifying as regular-spiking (RS) or fast-spiking (FS).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Left: number of regular-spiking (RS) and fast-spiking (FS) in each layer in individual animals. Right: number of FS cells across all layers in V1 in individual animals.
+
 The inter-trial variability is roughly comparable to the inter-animal variability of the trial-averaged responses. By computing the pairwise Wasserstein distances between single trial CSDs within each animal and comparing it to the pairwise WD between the trial-averaged CSD of each animal, we find that inter-trial variability in CSD is significantly lower than the inter-animal variability in trial-averaged CSD (Kolmogorov–Smirnov distance = 0.33; p<0.001) (Figure 2F).
 
 The majority of animals (39 out of 44) have a WD to the first principal component, PC 1, of the CSD that is less than half of the greatest WD between the CSD of individual animals and the PC 1 CSD (Figure 2D); the pairwise WDs between animals are also less than half of the maximum pairwise WD for most animals (921 out of the total 946 pairwise WDs; Figure 2E). This supports the view that most animals exhibit the canonical CSD pattern captured by the PC 1 CSD (Figure 2B). The total inter-trial variability is smaller than the inter-animal variability, both estimated by pairwise WDs (Figure 2F and G), though there are n = 5 animals for which the inter-trial WDs are larger than the inter-animal WDs (Figure 2G, marked by red stars; determined with KS tests on the distribution of pairwise WDs between animals and pairwise WDs between trials in each animal; see Figure 2—figure supplement 3).
 
-## Quantifying firing rate variability
+### Quantifying firing rate variability
 
 For the spike analysis, we distinguish between fast-spiking (FS; putative Pvalb inhibitory) neurons and regular-spiking (RS; putative excitatory and non-Pvalb inhibitory) neurons (see ‘Materials and methods’ and Figure 3—figure supplement 1). All FS-neurons are grouped together into one population across all layers, while the RS-neurons are divided into separate populations for each layer (Figure 3A). The FS-neurons are merged across layers because we set a criterion of at least 10 recorded neurons in any one layer when comparing the population firing rate in individual animals to the average population firing rate in all animals, and only one animal had 10 FS-neurons or more in any layer (Figure 3—figure supplement 2). This criterion was set to have a more reliable estimate of the population firing rates in individual animals.
 
@@ -81,9 +107,17 @@ We use the KS similarity (defined as one minus the KS distance, see ‘Materials
 
 The population firing rates for FS neurons are more than twice as high as RS cells during baseline, peak, and sustained. Among the RS populations, the firing rate in L5 is the highest in all periods, followed by L4 and L6, while L2/3 has the lowest firing rates (Figure 3E).
 
-## Discrepancy between the original model and experimental observations
+### Discrepancy between the original model and experimental observations
 
 We simulated the response to a full-field flash stimulus with the biophysical network model of mouse primary visual cortex as presented in Billeh et al., 2020. As input to the model, we used experimentally recorded LGN spike trains (Figure 4C; see ‘Materials and methods’). A Poisson source, firing at a constant rate of 1 kHz, provides additional synaptic input to all cells, representing the influence from the rest of the brain (‘background’ input). The thalamocortical input consists of spike trains from 17,400 LGN units (Arkhipov et al., 2018; Billeh et al., 2020). The public Neuropixels data contain recordings from 1263 regular-spiking LGN neurons across 32 mice during 75 trials of full-field bright flash presentations, resulting in 94,725 spike trains. To construct the input for each of our 10 simulation trials, we randomly sampled 10 unique subsets of spike trains from this pool until all 17,400 units had been assigned a spike train in each trial.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig4-v2.jpg)
+
+**Figure 4.:** (A) Top: raster plot of all ~50,000 cells in the model’s 400 μm radius ‘core’ region spanning all layers, in a simulation of a single trial with the flash stimulus. Bottom: raster plot and histogram of spikes from 10 trials for an example cell. (B) Top: simulated LFP averaged over 10 trials of flash stimulus. Bottom: CSD calculated from the LFP via the delta iCSD method. (C) Firing rate of experimentally recorded lateral geniculate nucleus (LGN) spike trains used as input to the model. (D) Wasserstein distance between CSD from the original model (blue diamond) and PC 1 CSD from experiments together with the Wasserstein distances from experimental CSD in every animal to PC 1 CSD (boxplot), normalized to maximal distance for animals. (E) Experimentally recorded firing rates (black) and simulated firing rates (blue). (F) Kolmogorov–Smirnov (KS) similarity between firing rates in original model (blue diamond) or individual animals (boxplots) and firing rates in experiments at baseline, peak evoked response, and during the sustained period (defined in Figure 3). (G) Correlation between firing rates of model (blue diamond) or individual animals in experiments (boxplots) and average population firing rates in experiments (0–100 ms). (H) Mean (μ) ± standard deviation (σ) of model firing rates during baseline, peak evoked response, and the sustained period. Averaged across trials, neurons and time windows defined above.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Laminar population firing rates in the original model (blue line), in the model after reduction of recurrent excitatory synaptic weights to all Pvalb cells by 30% (brown line), and in experiments (black line).
 
 Figure 4A, B displays the resulting spiking pattern across all layers with its associated LFP. The inferred CSD exhibits a strong sink in the L5 and L6 region, matched by a strong source below it, both starting at ~50 ms after flash onset (Figure 4B, bottom). However, the early L4 sink, the later sustained L4 source, and the sustained L2/3 sink typically observed in the experimental CSD (Figure 2A, B) are either absent or too weak compared to the sink and source in L5 and L6. The WD from the simulated CSD to the experimental PC 1 CSD is greater than the WD between the CSD of the farthest outlier animal and the PC 1 CSD (WD = 1.84, normalized to the largest WD between CSD of individual animals and PC 1 CSD). Thus, using experimental variability as a reference, the CSD from this simulation is an outlier (Figure 4C).
 
@@ -91,15 +125,35 @@ The population firing rates of the model, the KS similarities and correlation be
 
 The original model studied in Figure 4 produced firing rates and orientation and direction tuning consistent with recordings in vivo (Billeh et al., 2020) with some shortcomings, such as relatively slow responses of V1 to the onset of visual stimuli (Arkhipov et al., 2018; Billeh et al., 2020). Here, we see even more inconsistencies reflected clearly in the CSD pattern. This demonstrates the importance of multi-modal characterization of such biologically detailed models. To investigate the properties of the cortical circuit that sculpt the CSD, we manipulated the model and observed how both the CSD and firing rate responses were improved to match the experimental data.
 
-## Adjusting the model to fit experimental firing rates
+### Adjusting the model to fit experimental firing rates
 
 Due to the discrepancy between the magnitudes of the model firing rates and the experimental firing rates, especially with respect to the outliers of the modeled RS L6 and FS neurons, we selectively adjusted the recurrent synaptic weights. We left the synaptic weights between LGN and the V1 model unchanged since they were well constrained by data (Billeh et al., 2020).
 
 We first reduced the synaptic weights from all excitatory populations to the FS PV-neurons by 30% to bring their firing rates closer to the average firing rate in this population in the experiments. This resulted in increased firing rates in all other (RS) populations due to the reduced activity of the inhibitory Pvalb-neurons (Figure 4—figure supplement 1). Therefore, we further applied reductions in the synaptic weights from all excitatory neurons to RS neurons and increases in the synaptic weights from inhibitory neurons to the RS neurons to bring their firing rates closer to the experimental average firing rates. We multiplied the recurrent synaptic weights with factors in the [0.2, 2.5] range until we arrived at a set of weights where none of the model firing rates were among the experimental outliers in any time window (KSSb = 0.73, KSSp = 0.77, and KSSs = 0.70; average across RS populations and the FS population) and temporal profiles (RS L2/3: r = 0.49***, RS L4: r = 0.63***, RS L5: r = 0.71***, RS L6: r = 0.87***, FS: r = 0.86***; *** p<0.001) (Figure 5A–C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig5-v2.jpg)
+
+**Figure 5.:** (A) Average experimentally (black) and simulated firing rates of experiments in the model with adjusted recurrent synaptic weights (green) and original model (blue). Synaptic adjustments included scaling the weights from all excitatory populations to the PV cells down by 30% to reduce the firing rates in these fast-spiking populations, reducing the synaptic weights from excitatory populations to all others and increasing synaptic weights from all PV cells to all other populations to compensate for the reduced inhibition. (B) Kolmogorov–Smirnov (KS) similarity between firing rates of model versions (markers) or individual animals in experiments (boxplots) and firing rates of experiments at baseline, peak evoked response, and during the sustained (defined in Figure 3). (C) Correlation between simulated firing rates or individual animals (boxplots) and measured firing rates (0–100 ms). (D) Left: PC 1 current source density (CSD) from experiments (see Figure 2). Right: CSD resulting from simulation on model with adjusted recurrent synaptic weights. (E) Wasserstein distance between CSD from model versions and PC 1 CSD from experiments together with Wasserstein distances from CSD in animals to PC 1 CSD (boxplot). (F) Effect of different patterns of placing excitatory synapses onto layer 4 excitatory cells on this population’s contribution to the simulated CSD (left) and to the total simulated CSD (right). These synaptic placement schemes with accompanying inflowing (blue arrows) and outflowing (orange arrows) currents are illustrated in the middle. (G) Effect of synaptic placement on the simulated population firing rate. (H) Contribution of L4 excitatory cells to the simulated CSD in the model where all recurrent connections have been cut (left) and when all active channels have been removed from all cells in the model (right).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) CSD of original model. (B) CSD of intermediate model where synaptic weights between populations in V1 have been adjusted. (C) CSD of final model. (D) Pairwise Wasserstein distance between CSD different model versions normalized to the largest pairwise Wasserstein distance between trial-averaged CSD of individual animals. Green star: Wasserstein distance (WD) between CSD of original model (A) and intermediate model (B). Blue star: WD between CSD of original model (A) and final model (C). Orange star: WD between CSD of intermediate model (B) and final model (C).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Blue line: original model where excitatory synapses onto L4 excitatory cells were placed on both basal and apical dendrites. Green line: all excitatory synapses onto L4 excitatory cells were placed only onto apical dendrites. Pink line: all excitatory synapses onto L4 excitatory cells were placed only onto basal dendrites. (B) Kolmogorov–Smirnov (KS) similarity between the model variants in (A) for average firing rates across cells in different time periods (defined in Figure 3). Boxplots represent distribution of pairwise KS similarities between animals. (C) Correlation between firing rates of model variants in (A). (D) Difference in moments of distributions of peak firing rates across cells between model variants in (A). Boxplots represent pairwise differences between animals. (E) Difference in moments of distributions of latencies to peak firing rate across cells between model variants in (A) and pairwise differences between animals (boxplots).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) CSD generated by L2/3 excitatory cells in (left) the original configuration with synapses on both apical and basal dendrites, (middle) all excitatory synapses placed on apical dendrites, and (right) all excitatory synapses placed on basal dendrites. (B) Population firing rates of L2/3 excitatory cells with different synaptic placement. Blue line: original model. Green line: all excitatory synapses onto L2/3 excitatory cells were placed only onto apical dendrites. Pink line: all excitatory synapses onto L2/3 excitatory cells were placed only onto basal dendrites. (C) Kolmogorov–Smirnov (KS) similarity between the model variants in (B) for average firing rates across cells in different time periods (defined in Figure 3). Boxplots represent distribution of pairwise KS similarities between animals. (D) Correlation between firing rates of model variants in (B). (E) Difference in moments of distributions of peak firing rates across cells between model variants in (B). Boxplots represent pairwise differences in moments between animals. (F) Difference in moments of distributions of latencies to peak firing rate across cells between model variants in (B) and between animals (boxplots).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) CSD generated by L5 excitatory cells in (left) the original configuration with synapses on both apical and basal dendrites, (middle) all excitatory synapses placed on apical dendrites, and (right) all excitatory synapses on basal dendrites. In all cases, the synapses were placed within 200 μm from the soma to have the same ranges as was used for L4 and L2/3 cells in Figure 5 and Figure 5—figure supplement 3, respectively. (B) Population firing rates of L5 excitatory cells with different synaptic placement. Blue line: original model configuration with synapses on both apical and basal dendrites, Green line: all excitatory synapses onto L5 excitatory cells were placed only onto apical dendrites. Pink line: all excitatory synapses onto L5 excitatory cells were placed only onto basal dendrites. (C) Kolmogorov–Smirnov (KS) similarity in average firing rates across cells in different time periods (defined in Figure 3) between the model variants in (B). Boxplots represent distribution of pairwise KS-similarities in animals. (D) Correlation between firing rates of model variants in (A). (E) Difference in moments of distributions of peak firing rates across cells between model variants in (B). Boxplots represent pairwise differences in moments between animals. (F) Difference in moments of distributions of latencies to peak firing rate across cells between model variants in (B) and between animals (boxplots).
+
 The resulting pattern (but not the magnitude) of the CSD, however, was largely unchanged (Figure 5D) compared to the original CSD (Figure 4B). The overall magnitude was reduced, and there were some traces of a sink arising at 40 ms after flash onset, and a L2/3 (and L1) sink after 60 ms, but they were substantially weaker relative to the L5/L6 dipole than they were in the experiments. Furthermore, the large and sustained L4 source after 60 ms was still either absent or too weak to be visible. The WD between the CSD from this version of the model and the experimental PC 1 CSD remained among the outliers of the animals (Figure 5E) (normalized WD = 1.26).
 
-## Two-way dissociation between spikes and CSD
+### Two-way dissociation between spikes and CSD
 
 Simulations demonstrate that the LFP, and the associated CSD, can be significantly altered by changes to synaptic placement (Einevoll et al., 2007; Pettersen and Einevoll, 2008; Lindén et al., 2010; Lindén et al., 2011; Łęski et al., 2013; Hagen et al., 2017; Ness et al., 2018). As observed in Figure 5A–E and Figure 5—figure supplement 1, adjustments to synaptic weights can modify the population firing rates substantially, yet without substantially changing the pattern of the CSD, that is, the placement and timing of sinks and sources. The inverse can also occur; that is, the CSD pattern can be altered extensively with only minor effects on firing rates (Figure 5F and G, Figure 5—figure supplements 2–4).
 
@@ -109,11 +163,51 @@ We quantified the changes in CSD of the full model resulting from changes in rec
 
 These results indicate a two-way dissociation that can occur between CSD and firing rates of excitatory neurons. The firing rates can be changed without substantially changing the CSD by modifying the strength of synapses, while the CSD can be changed without substantially changing the firing rates by modifying synaptic location. This suggests that utilizing the CSD in the optimization of the model can provide constraints on the circuit architecture that could not be obtained from spikes alone.
 
-## Effects of feedback from higher visual areas to the model
+### Effects of feedback from higher visual areas to the model
 
 Hartmann et al., 2019 found that feedback from higher visual areas (HVAs) can exert a powerful influence on the magnitude of the evoked LFP response recorded in V1 of macaque monkeys, particularly in the period 80–100 ms after stimulus onset. The sustained L2/3 sink and L4 source we observe in the experimental CSD emerge at 60 ms (Figure 2A and B), which roughly coincides with the peak firing rates in the latero-medial (LM), rostro-lateral (RL), antero-lateral (AL), and postero-medial (PM) cortical areas (Figure 3C). Furthermore, anatomical data indicate that synapses from HVAs terminate on L1 and L2/3 apical dendrites of pyramidal cells (whose cell bodies reside in L2/3 or L5) (Glickfeld and Olsen, 2017; Marques et al., 2018; Hartmann et al., 2019; Keller et al., 2020; Shen et al., 2020). Together, these observations suggest that the sustained L2/3 sink and L4 source might, in part, be induced by feedback from HVAs, where the sink is generated from the input to the apical tufts in L1 and L2/3, and the source may be the return currents of this input.
 
 Of these HVAs, the feedback from LM to V1 is best characterized (Marques et al., 2018; Keller et al., 2020; Shen et al., 2020) and has the highest connection density to V1 (Harris et al., 2019). Based on these considerations, we decided to test the hypothesis that the large sinks and sources in the upper layers were caused, at least in part, by feedback from LM. In addition to the earlier feedforward LGN input and the background input representing the influence of the rest of the brain, we introduced a feedback input constructed from experimentally recorded spike trains in LM. In total, the public Neuropixels dataset has 2075 neurons recorded in LM (simultaneously with the recordings in LGN, V1, and other visual areas) from 42 animals during presentations of the full-field flash stimulus. 1823 of the 2075 neurons were classified as RS, and spike trains from these were used to generate the feedback input to the model (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-v2.jpg)
+
+**Figure 6.:** (A) Firing rate of the experimentally recorded lateral geniculate nucleus (LGN) and LM units used as input to the model. (B) Total current source density (CSD) resulting from simulation with input only from the LM. (C) Left: PC 1 CSD from experiments (see Figure 2). Right: total CSD from simulation with both LGN input and LM input. (D) Wasserstein distance between CSD from model versions and PC 1 CSD from experiments together with Wasserstein distances from CSD in animals to PC 1 CSD (boxplot). (E) Population contributions from populations that receive input from LM. (F) Average population firing rates of experiments (black line) and model versions. (G) Kolmogorov–Smirnov (KS) similarity between simulated firing rates or individual animals (boxplots) and recorded firing rates at baseline, peak evoked response, and the sustained period (defined in Figure 3). (H) Correlation between simulated and experimentally recorded firing rates (0–100 ms).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Contributions to the total current source density (CSD) from L6 excitatory cells with the original placement of recurrent excitatory synapses uniformly along the whole length of their dendrites (left) and after moving all recurrent excitatory synapses within 150 μm from the soma.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Boxplots represent data for different animals, diamonds represent model versions. (A) First moment (mean). (B) Second moment (standard deviation). (C) Third moment (skewness). (D) Fourth moment (kurtosis).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Boxplots represent data for different animals, diamonds represent model versions. (A) First moment (mean). (B) Second moment (standard deviation). (C) Third moment (skewness). (D) Fourth moment (kurtosis).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) From regular-spiking (RS) cells in L2/3 to RS cells in L4. (B) From RS cells in L4 to RS cells in L5. (C) From RS cells in L5 to RS cells in L6. (D) From all RS cells in V1 to all FS cells in V1. Boxplots represent data for different animals, diamonds represent model versions.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Diamonds represent model versions and boxplots represent moments calculated for different animals. (A) First moment (mean). (B) Second moment (standard deviation). (C) Third moment (skew). (D) Fourth moment (kurtosis).
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** Rate at preferred direction (A), direction selectivity index (B), and orientation selectivity index (C) in layer populations of model (blue) and in experiments (gray).
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** (A) Example CSD plot with landmarks used for alignment marked (white stars). (B) Top: PC 1 CSD after application of principal component analysis (PCA) on trial-averaged CSD from all animals. Bottom: Wasserstein distances to PC 1 CSD after aligning CSD to landmarks for all animals. Diamonds denote WD from CSD of model versions and boxplots denote distances from individual animals. (C) Top: CSD average across all animals after aligning to landmarks. Bottom: Wasserstein distances to average CSD after alignment to landmarks for both model versions and animals.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp8-v2.jpg)
+
+**Figure 6—figure supplement 8.:** (A) Left: cumulative variance explained by components. Right: variance explained by first 10 components. (B) CSD plots of the first 10 principal components explaining in total >90% of the variance in trial-averaged CSD across animals.
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig6-figsupp9-v2.jpg)
+
+**Figure 6—figure supplement 9.:** Wasserstein distance from model versions and individual animal CSD to plain average of trial-averaged CSD from all animals. (A) CSD averaged over trial-averaged CSD from all animals. CSD aligned to histology. (B) Wasserstein distance from CSD of model versions (diamonds) and individual animals (boxplot) to CSD averaged over all animals (normalized to largest distance from the CSD of an individual animal to the average CSD).
 
 The synapses from this LM source were placed on the apical dendrites of L2/3 excitatory neurons (within 150 μm from the soma), on the apical tufts (>300 μm from the soma) and the basal dendrites (within 150 μm from the soma) of L5 excitatory neurons, and on the somata and basal dendrites of L2/3, and L5 inhibitory (Pvalb and Sst) neurons (at any distance from the soma). The input onto L2/3 excitatory neurons did generate a sink in L1 and L2/3 and a source below in L4 (Figure 6B–E).
 
@@ -127,9 +221,25 @@ With respect to the distribution of latencies to the peak firing rates, all mode
 
 To check if the model continued to exhibit appropriate orientation and direction tuning after the adjustments made, we ran a simulation with the final model configuration and the same drifting grating stimulus that was utilized in Billeh et al., 2020. We found that the model still displayed firing rates at preferred directions and direction and orientation selectivity indices comparable to those observed experimentally (Figure 6—figure supplement 6).
 
-## Identifying the biophysical origins of the canonical CSD
+### Identifying the biophysical origins of the canonical CSD
 
 With the canonical CSD (Figure 2B) reproduced, we can use the model to probe the biophysical origins of its sinks and sources. We began by removing all recurrent connections and only feeding the LGN input to the model to find the contribution from the thalamocortical synapses onto excitatory and inhibitory neurons (Figure 7A). The main thalamic contribution to the CSD is from synapses onto excitatory neurons, in line with the expectation that neurons with a spatial separation between synaptic input currents and the return currents dominate the cortical LFP generation (Einevoll et al., 2013). (Neurons without apical dendrites will have largely overlapping synaptic input currents and return currents, resulting in a cancellation of current sinks and sources.).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig7-v2.jpg)
+
+**Figure 7.:** (A) Sinks and sources generated from thalamocortical and (B) feedback synapses. The schematics illustrate which synapses cause the observed sinks and sources. Blue arrows indicate inflowing current (sinks), while orange arrows indicate outflowing current (sources). (C) Total CSD from thalamocortical and feedback synapses (without recurrent connections) with (left) and without (right) active channels in the V1 neurons. (D) Total CSD of model with both thalamocortical and feedback input when inhibitory synapses are removed (cross indicates removed connection). (E) Population contributions to the total CSD in final model with both lateral geniculate nucleus (LGN) and feedback input and recurrent connections. (F) Summary of biophysical origins of the main contributions to the sinks and sources in the canonical CSD in different periods of the first 100 ms after flash onset. More arrows mean more current. Left: before onset of evoked response (0–35 ms). The average inflowing and outflowing current in V1 neurons is zero in this time window. Middle: initial evoked response (35–50 ms). The L4 sink is primarily generated by inflowing current thalamocortical synapses onto L4 excitatory cells. Right: sustained evoked response (50–100 ms). The L5/L6 sink is primarily due to inflowing currents from thalamocortical synapses and recurrent excitatory synapses. Inflowing current at synapses from higher visual areas (HVAs) onto apical tufts of L2/3 and L5 excitatory cells generates, in part, the L2/3 sink, and the resulting return current generates, in part, the L4 source in this time window.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Population contributions to the total CSD and (B) laminar population firing rates in a simulation where all inhibitory synapses have been removed.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** CSD contribution of L4 inhibitory cells with original orientation (left) and scrambled orientation (right).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/87169/elife-87169-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Current source density (CSD) of (A) PC 1 computed from experiments, (B) final model, and (C) final model with feedback turned off at 60ms. (D) Trial-averaged population firing rates in experiments (black line), final model (orange line), and final model with feedback turned off at 60ms (brown line).
 
 We further observed that the early L4 and the sustained L5/L6 sinks are present in the CSD contributions of excitatory neurons, though the magnitude of the L5/L6 sink is substantially reduced compared to its magnitude when the model is configured with recurrent synapses intact (Figures 4B—6). The sustained L2/3 sink and L4 source, on the other hand, were not visible. This suggests that the early L4 sink and the L5/L6 sink are at least partly generated by thalamocortical synapses. However, the substantially diminished magnitude of the L5/L6 sink indicates that recurrent synapses also contribute significantly to the generation of this sink.
 
@@ -187,118 +297,126 @@ In this study, we developed a systematic framework to quantify experimental vari
 
 ## Materials and methods
 
-## Experiments
+### Experiments
 
-## Quality control
+#### Quality control
 
 Of the 58 mice in the visual coding dataset, 9 were excluded because the exact probe location could not be recovered due to fading of fluorescent dye or artifacts in the OPT volume (Siegle et al., 2021). Another five animals were excluded because they were missing LFP recordings from V1 during presentation of the flash stimulus. Thus, data for 44 animals were retained for the CSD analysis.
 
 For the spike analysis, the same nine animals for which the exact probe location could not be recovered were excluded, and two additional animals were excluded because they did not have any cells recorded in V1, leaving a total of 47 animals for this part of the data analysis.
 
-## Neuronal classification
+#### Neuronal classification
 
 We distinguished between RS and FS cells by the time from trough to peak of the spike waveforms (Barthó et al., 2004). For cortical cells, the spike duration was bimodally distributed with a dip at ~0.4 ms, while for thalamic cells, it was bimodally distributed with a dip at ~0.3 ms (Figure 3—figure supplement 1). Thus, the cutoff in the classification of cells as RS or FS was set at 0.4 ms for LM and V1, and at 0.3 ms for cells in LGN. Note that several studies have demonstrated that some pyramidal neurons may have spike waveforms short enough to be classified as FS cells (Vigneswaran et al., 2011; Lemon et al., 2021). Thus, some caution is warranted when interpreting the population firing rates.
 
 When comparing the model firing rates to the experimental firing rates, the excitatory and non-Pvalb populations were grouped together in each layer of the model to make up the RS cells in L2/3, L4, L5, and L6, while the Pvalb cells across all layers were grouped together to make up the FS cells of V1. The layer boundaries were taken from the Allen CCF (Oh et al., 2014), allowing for the assignment of each neuron’s position to a specific cortical layer (Siegle et al., 2021).
 
-## Model
+### Model
 
 The model consists of both biophysically detailed multicompartment neurons and leaky-integrate-and-fire (LIF) point-neurons. In total, there are 51,978 multicompartment neurons with Hodgkin–Huxley conductances at the soma and only passive conductances at the dendrites. These are arranged in a cylinder of radius of 400 μm and height 860 μm (corresponding to the average cortical thickness of V1 taken from the Allen CCF; Billeh et al., 2020; Oh et al., 2014). This cylinder makes up the ‘core’ of the model and is surrounded by an annulus of 178,946 are LIF neurons which has the same height and a thickness of 445 μm. This makes the total number of neurons in the model 230,924 and the radius of the whole cylinder with both biophysically detailed and LIF neurons 845 μm. There are 17 different classes of neuron models. In each layer from 2/3 to 6, there are one excitatory and three inhibitory classes (Pvalb, Sst, Htr3a), while in layer 1 there is a single Htr3a class. The LGN module providing thalamocortical input to the model consists of 17,400 units selectively connected to the excitatory neurons and Pvalb neurons in L2/3 to L6, as well as the non-Pvalb neurons in L1. The background input to all neurons in the model comes from a single Poisson source firing at 1 kHz and represents influence from the rest of the brain. The feedback input to L2/3 and L5 excitatory, Pvalb, and Sst neurons comes from a node representing LM.
 
-## Simulation configuration
+### Simulation configuration
 
 Instructions on how to run simulations of the model are provided in Billeh et al., 2020. The files and code necessary to run the model versions presented in Figures 4—6 are provided in the directories old_model_fig4 intermediate_model_fig5, and final_model_fig6, respectively, on Dryad (see ‘Data availability’).
 
-## Data processing
+### Data processing
 
-## LFP and CSD
+#### LFP and CSD
 
 The LFP in simulations was obtained from the extracellular potential by first downsampling to every other electrode along the probe (resulting in a spatial separation of 40 μm between each recording electrode, equal to the spacing in the public Neuropixels data) and using a low-pass fifth-order Butterworth filter with a cutoff frequency of 500 Hz (utilizing functions scipy.signal.butter and scipy.signal.filtfilt). The same filtering was applied to get the experimental LFP. The CSD was calculated from the experimental and model LFP using the delta iCSD method (Pettersen et al., 2006), where the radius of laterally (orthogonal to the probe axis) constant CSD was assumed to be 400 μm – the radius of the V1 model’s ‘core’ region consisting of biophysically detailed multicompartment neurons. For the experimental CSD, this radius was set to 800 μm, roughly corresponding to the size of mouse V1.
 
-## Visual stimulus
+### Visual stimulus
 
 The stimulus used to compare the model and the experiments was full-field flashes. In the experiments, the mice were presented with gray screens for 1 s, followed by 250 ms of white screen, and then 750 ms of gray screen over 75 trials. In the simulations, both the stimulus presentation and the pre- and the poststimulus gray screen periods lasted 250 ms, and the number of trials was 10.
 
-## Input from LGN)
+#### Input from LGN)
 
 Originally, the LGN spike trains used as input to the model were generated with the FilterNet module provided with the model, using 17,400 ‘LGN units’ (Billeh et al., 2020). However, when this input was used for simulations, the onset of the evoked response in V1 was 20–30 ms delayed in comparison with experiments. Therefore, we used experimentally recorded LGN spike trains as input to the model instead. We assigned a recorded spike train to each of the 17,400 LGN units in all trials. In total, the public Neuropixels data contain recordings from 1263 regular-spiking LGN neurons across 32 animals during 75 trials of full-field flash presentations. We divided the total pool of spike trains into 10 subsets, and then randomly sampled spike trains from one subset in each trial until all 17,400 LGN units had been assigned a spike train in all trials.
 
-## Input from LM
+#### Input from LM
 
 The experimentally recorded spike trains in the LM were used to construct the feedback input to V1. In total, the public Neuropixels data contain recordings from 1823 RS LM neurons across 42 animals during presentations of the full-field flash stimulus. Spikes were randomly sampled from the pool of all spike trains to construct a spike train that was used as input to all the cells that were targeted by the feedback in the model. All neurons received the same spike train.
 
-## Background input
+#### Background input
 
 The input from the Poisson source firing at 1 kHz was not stimulus dependent. It is a coarse representation of the continuous influence of the rest of the brain on V1.
 
-## Dendritic targeting
+### Dendritic targeting
 
 The rules for placement of synapses were set in Billeh et al., 2020 and were based on reviews of literature on anatomy.
 
-## LGN to V1
+#### LGN to V1
 
 In the original model, the synapses from LGN onto excitatory V1 neurons were placed on apical and basal dendrites within 150 μm from the soma, while synapses onto inhibitory V1 neurons were placed on their soma and on their basal dendrites without distance limitations (Billeh et al., 2020). This placement was left unchanged in this study.
 
-## V1-V1
+#### V1-V1
 
 The synapses for recurrent connections were placed according to the following rules in the original model (Billeh et al., 2020):
 
-## Excitatory-to-excitatory connections
+##### Excitatory-to-excitatory connections
 
 All synapses from excitatory V1 neurons onto other excitatory V1 neurons were placed along the dendrites and avoided the soma. In layers 2/3 and 4, the placement of synapses was restricted to be within 200 μm from the somata, while in layers 5 and 6, they could be placed anywhere along the dendrites.
 
-## Excitatory-to-inhibitory connections
+##### Excitatory-to-inhibitory connections
 
 All synapses from excitatory V1 neurons onto inhibitory V1 neurons were placed on their somata or dendrites without any distance limitations.
 
-## Inhibitory-to-excitatory connections
+##### Inhibitory-to-excitatory connections
 
 Synapses from Pvalb neurons onto excitatory V1 neurons were placed on the soma and on the dendrites within 50 μm from the soma. Synapses from Sst neurons were placed only on dendrites and only more than 50 μm from the soma. Synapses from Htr3a neurons were placed on dendrites between 50 and 300 μm from the soma.
 
-## Inhibitory-to-inhibitory connections
+##### Inhibitory-to-inhibitory connections
 
 Synapses from inhibitory neurons to other inhibitory neurons were placed according to the same rules as the inhibitory-to-excitatory connections described above.
 
 These placement rules were kept in this study, except for the synapses from excitatory neurons to excitatory L6 neurons. Here, they were restricted to be within 150 μm of the soma. The purpose of this restriction was to reduce the spatial separation between the current sink and source, and thereby decrease the magnitude of the L6 sink-source dipole.
 
-## LM-V1
+### LM-V1
 
 The synapses from the node representing LM to V1 were placed on the apical dendrites of L2/3 neurons (within 150 μm from the soma), on the apical tufts (>300 μm from the soma) and the basal dendrites (within 150 μm from the soma) of L5 excitatory cells, and on the somata and basal dendrites of L2/3 and L5 inhibitory cells (at any distance from the soma).
 
-## Adjusting synaptic weights
+### Adjusting synaptic weights
 
 In the original model, the synaptic weights of thalamocortical connections were based on experimental recordings of synaptic current, while the synaptic weights for recurrent connections were initially set to estimates from literature, then optimized to a drifting gratings stimulus until the model reproduced experimental values of orientation and direction selectivity. In this study, the synaptic weights for thalamocortical connections were left unchanged from the original model. Before the addition of feedback from higher visual areas to the model, the synaptic weights for recurrent connections in V1 were multiplied by factors in the range [0.2, 2.5].
 
 In the original model, the input from the background node represented the influence of the rest of the brain on V1, which included the influence from higher visual areas such as LM. This means that some of the feedback influence from LM on V1 should be present (though coarsely represented) in the input from the background node. When the influence of input from LM to feedback-targeted cells is modeled on its own, the influence of the background node must be updated accordingly. Thus, after the addition of feedback, the synaptic weights from the background node to the populations targeted by feedback (the L2/3 and L5 excitatory, Pvalb, and Sst cells) were multiplied by factors in the range [0.2, 0.5]. The synaptic weights from the node representing LM were initially set equal to the original weights between the background node and the populations targeted by the feedback, but this led to too high firing rates compared to the experimental firing rates in these populations, so they were multiplied by factors in the range [0.2, 0.5]. Finally, the connections from Pvalb neurons in V1 to L2/3 excitatory neurons and L5 excitatory cells were re-scaled in the range [0.8, 1.2] times the weights set prior to the addition of feedback. The ranges reported here were set after experimenting with different ranges to find what would allow the model to reproduce the experimental observations. Only a single value within each range was used in the final model.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Firing rates
+#### Firing rates
 
 The time-resolved population firing rates (bin size 1 ms, filtered using scipy.ndimage.gaussian_filter with sigma = 2) were computed by averaging the spike count over all cells in a population and over all trials (10 trials in the simulations and 75 trials in the experiments). The distribution of firing rates across cells used in the calculation of the KS similarities was computed by averaging over the time windows baseline, initial peak, and sustained activity (defined in Figure 3) and over all trials.
 
-## Kolmogorov–Smirnov similarity
+#### Kolmogorov–Smirnov similarity
 
 The KS similarity scores (Billeh et al., 2020) were computed by first calculating the KS distance (using the function scipy.stats.ks_2samp) between two distributions of firing rates across cells, and subtracting this number from 1, such that a KS similarity score of 1 implies identity and a score of 0 implies no overlap between the two distributions. In the comparison of the model to the experimental data, the KS similarity was computed between the distribution of firing rates across cells in each RS and the FS population of the model and the distribution of firing rates across cells from all animals in the corresponding populations. To assess the variability in the experiments, the KS similarity was calculated between the distribution of firing rates across cells in the same RS and FS populations in individual animals, provided there were more than 10 cells recorded in a given population in this animal, and the distribution of firing rates across cells from all other animals.
 
-## Correlation
+#### Correlation
 
 We computed the similarity in the profile of time-resolved population firing rates with the Pearson correlation coefficient (using the function scipy.stats.pearsonr). The correlation between the model and the experimental firing rates was calculated between model population firing rates and the population firing rates averaged across cells from all animals. The level of experimental variability was assessed by calculating the correlation between population firing rates in each animal and the population firing rates averaged across cells from all other animals.
 
-## CSD analysis
+### CSD analysis
 
-Since the number of recording electrodes in V1 are not the same in all animals, we interpolated the CSD of each animal and the CSD from simulations onto dimensions of the same lengths (M=30 points along the depth and K=100 points along the time axis for 100 ms time windows) before we quantitatively analyzed the CSD.
+Since the number of recording electrodes in V1 are not the same in all animals, we interpolated the CSD of each animal and the CSD from simulations onto dimensions of the same lengths ($M=30$ points along the depth and $K=100$ points along the time axis for 100 ms time windows) before we quantitatively analyzed the CSD.
 
-## PCA
+#### PCA
 
-The trial-averaged CSD of each animal was flattened into a vector of length M×K=3000, and the vectors of all N=44 animals were stacked together into a matrix of size 44 × 3000. Then, we performed PCA (using sklearn.decomposition.PCA) on this matrix to obtain the principal components that would constitute sums of weighted contributions of the trial-averaged CSD patterns.
+The trial-averaged CSD of each animal was flattened into a vector of length $M\timesK=3000$, and the vectors of all $N=44$ animals were stacked together into a matrix of size 44 × 3000. Then, we performed PCA (using sklearn.decomposition.PCA) on this matrix to obtain the principal components that would constitute sums of weighted contributions of the trial-averaged CSD patterns.
 
-## Wasserstein distance (WD)
+#### Wasserstein distance (WD)
 
-The first Wasserstein distance W(P1,P2) between two distributions P1 and P2 is defined asWP1,P2= infγ∈Γ(P1,P2)⁡∫c(x,y)γ(x,y)dxdy
+The first Wasserstein distance $W(P_{1},P_{2})$ between two distributions $P_{1}$ and $P_{2}$ is defined as
 
-where c(x,y) is the cost of moving a unit ‘mass’ from position x to y following the optimal transport plan γ(x,y) in all transport plans Γ(P1, P2) (Rubner et al., 1998; Arjovsky et al., 2017).
+$$
+WP_{1},P_{2}= inf\gamma\inΓ(P_{1},P_{2})⁡\intc(x,y)\gamma(x,y)dxdy
+$$
 
-In the utilization of WD to quantify the similarity between two CSD patterns, the distance between the distribution of sinks in the two patterns W(Psinks,  1,Psinks,2) and the distance between distribution of sources of the two patterns W(Psources,  1,Psources,2) are calculated separately and summed to form a total WD between the two CSD patterns:WCSDP1,P2=WPsinks,1,Psinks,2+W(Psources,1,Psources,2)
+where $c(x,y)$ is the cost of moving a unit ‘mass’ from position $x$ to $y$ following the optimal transport plan $\gamma(x,y)$ in all transport plans $Γ(P_{1}, P_{2})$ (Rubner et al., 1998; Arjovsky et al., 2017).
+
+In the utilization of WD to quantify the similarity between two CSD patterns, the distance between the distribution of sinks in the two patterns $W(P_{sinks,  1},P_{sinks,2})$ and the distance between distribution of sources of the two patterns $W(P_{sources,  1},P_{sources,2})$ are calculated separately and summed to form a total WD between the two CSD patterns:
+
+$$
+W_{CSD}P_{1},P_{2}=WP_{sinks,1},P_{sinks,2}+W(P_{sources,1},P_{sources,2})
+$$
 
 where P1 and P2 refer to the two CSD patterns. The Python Optimal transport library (https://pythonot.github.io/index.html) was used to implement this calculation.

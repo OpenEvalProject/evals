@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00g30e956 Department of Cognitive Psychology, Institute of Psychology, Universität Hamburg Hamburg Germany
-2. https://ror.org/016xsfp80 Radboud University, Donders Institute for Brain, Cognition and Behaviour Nijmegen Netherlands
-3. https://ror.org/01tvrq624 Kavli Institute for Systems Neuroscience, Centre for Neural Computation, The Egil and Pauline Braathen and Fred Kavli Centre for Cortical Microcircuits, Jebsen Centre for Alzheimer’s Disease, Norwegian University of Science and Technology Trondheim Norway
-4. https://ror.org/0387jng26 Max-Planck-Insitute for Human Cognitive and Brain Sciences Leipzig Germany
-5. https://ror.org/03s7gtk40 Wilhelm Wundt Institute of Psychology, Leipzig University Leipzig Germany
+1. Department of Cognitive Psychology, Institute of Psychology, Universität Hamburg Hamburg Germany ([ROR:00g30e956](https://ror.org/00g30e956))
+2. Radboud University, Donders Institute for Brain, Cognition and Behaviour Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
+3. Kavli Institute for Systems Neuroscience, Centre for Neural Computation, The Egil and Pauline Braathen and Fred Kavli Centre for Cortical Microcircuits, Jebsen Centre for Alzheimer’s Disease, Norwegian University of Science and Technology Trondheim Norway ([ROR:01tvrq624](https://ror.org/01tvrq624))
+4. Max-Planck-Insitute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+5. Wilhelm Wundt Institute of Psychology, Leipzig University Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
 
 † Corresponding author
 
@@ -36,9 +36,156 @@ To test this hypothesis and determine the causal role of this area in insight-re
 
 ## Results
 
-## cTBS to the angular gyrus reduces insight-related memory boost
+### cTBS to the angular gyrus reduces insight-related memory boost
 
 The angular gyrus has been implicated in a myriad of tasks and functions, including long-term memory (Bonnici et al., 2018; Kwon et al., 2022; Wang et al., 2014) and imagination (Ramanan et al., 2018; Thakral et al., 2017). Here, we hypothesized that these functions of the angular gyrus are directly linked to one another. Specifically, we postulated that the angular gyrus plays a crucial role in the integration of imagination-related insights into long-term memory representations and that it thus represents a key player in the dynamic reconfiguration of memory in light of new information. To test this hypothesis and the causal role of the angular gyrus in insight-related memory reconfigurations, we combined the life-like video-based narrative-insight task with representational similarity analysis of EEG data and (double-blind) neuro-navigated TMS over the left angular gyrus in a comprehensive investigation within a single day. During the narrative-insight task, participants first saw three video events (A, B, and X; pre-phase), which were then either linked into a narrative (A and B) or not (A and X) in a subsequent insight-phase. Critically, before the insight-phase, we applied either sham stimulation (31 participants, 15 females) or continuous theta burst stimulation (cTBS; 34 participants, 16 females) to the left angular gyrus. Notably, the groups did not differ on levels of subjective chronic stress (TICS), state and trait anxiety (STAI-S, STAI-T), depressive mood (BDI), imaginative capacities (FFIS), personality dimensions (BFI), age, and motor thresholds (for descriptive statistics see Table 1; all p>0.056).
+
+**Table 1.**
+ Control variables.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Sham</th>
+      <th colspan="2">cTBS</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Measure</td>
+      <td>M</td>
+      <td>SD</td>
+      <td>M</td>
+      <td>SD</td>
+      <td>puncorr</td>
+    </tr>
+    <tr>
+      <td>FFIS-C</td>
+      <td>24.06</td>
+      <td>4.24</td>
+      <td>23.59</td>
+      <td>4.64</td>
+      <td>0.066</td>
+    </tr>
+    <tr>
+      <td>FFIS-D</td>
+      <td>16.84</td>
+      <td>5.42</td>
+      <td>17.86</td>
+      <td>5.22</td>
+      <td>0.446</td>
+    </tr>
+    <tr>
+      <td>FFIS-E</td>
+      <td>13.84</td>
+      <td>7.16</td>
+      <td>15.00</td>
+      <td>7.10</td>
+      <td>0.514</td>
+    </tr>
+    <tr>
+      <td>FFIS-F</td>
+      <td>27.87</td>
+      <td>8.96</td>
+      <td>28.21</td>
+      <td>9.63</td>
+      <td>0.885</td>
+    </tr>
+    <tr>
+      <td>STAI-T</td>
+      <td>34.13</td>
+      <td>9.27</td>
+      <td>38.62</td>
+      <td>11.15</td>
+      <td>0.082</td>
+    </tr>
+    <tr>
+      <td>STAI-S</td>
+      <td>35.35</td>
+      <td>7.60</td>
+      <td>39.65</td>
+      <td>10.08</td>
+      <td>0.056</td>
+    </tr>
+    <tr>
+      <td>TICS</td>
+      <td>11.97</td>
+      <td>8.54</td>
+      <td>13.41</td>
+      <td>9.95</td>
+      <td>0.531</td>
+    </tr>
+    <tr>
+      <td>BDI</td>
+      <td>6.84</td>
+      <td>6.88</td>
+      <td>7.65</td>
+      <td>7.57</td>
+      <td>0.654</td>
+    </tr>
+    <tr>
+      <td>BFI-2 E</td>
+      <td>43.10</td>
+      <td>5.66</td>
+      <td>40.59</td>
+      <td>8.54</td>
+      <td>0.165</td>
+    </tr>
+    <tr>
+      <td>BFI-2 N</td>
+      <td>27.13</td>
+      <td>6.94</td>
+      <td>30.12</td>
+      <td>10.09</td>
+      <td>0.166</td>
+    </tr>
+    <tr>
+      <td>BFI-2 O</td>
+      <td>47.16</td>
+      <td>6.99</td>
+      <td>46.68</td>
+      <td>6.89</td>
+      <td>0.779</td>
+    </tr>
+    <tr>
+      <td>BFI-2 C</td>
+      <td>40.42</td>
+      <td>8.06</td>
+      <td>40.71</td>
+      <td>6.78</td>
+      <td>0.878</td>
+    </tr>
+    <tr>
+      <td>BFI-2 A</td>
+      <td>48.94</td>
+      <td>5.06</td>
+      <td>46.74</td>
+      <td>5.76</td>
+      <td>0.106</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>25.45</td>
+      <td>4.62</td>
+      <td>23.62</td>
+      <td>3.82</td>
+      <td>0.088</td>
+    </tr>
+    <tr>
+      <td>MT</td>
+      <td>53.03</td>
+      <td>14.59</td>
+      <td>54.82</td>
+      <td>12.93</td>
+      <td>0.608</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. The questionnaires FFIS with its dimensions: FFIS-C (complexity of imagination), FFIS-D (directedness of imagination), FFIS-E (emotional valence of imagination), FFIS-F (frequency of imagination); STAI-T and STAI-S; TICS; BDI; BFI-2 with its dimensions: BFI-2 E (extraversion), BFI-2 N (neuroticism), BFI-2 O (openness to experience), BFI-2 C (conscientiousness), BFI-2 A (agreeableness) were completed during the 30-min break after the insight-phase. Age in years. Motor thresholds (MT) in percent of maximum stimulator capacity. No significant group differences were observed on any of these measures. p Values are displayed uncorrected for multiple comparisons. Data represents means (+/-SD)._
 
 Following the insight-phase and a 30-min break to mitigate potential TMS aftereffects (Huang et al., 2005; Jannati et al., 2023), participants completed a free recall task, which provided a measure of insight-related changes in subsequent memory. Thereafter, participants saw the same video events (A, B, and X) again in a post-phase. EEG was measured during all stages of the narrative-insight task. Contrasting neural representation patterns from the pre- and post-phases allowed us to assess insight-related memory reconfiguration and its modulation by cTBS to the angular gyrus. Due to its specific relevance in imaginative processes (Ramanan et al., 2018; Thakral et al., 2017; Thakral et al., 2020), we expected that the angular gyrus would be particularly relevant if insight relies strongly on imagination. Therefore, participants gained insight into half of the stories by imagining the link themselves, while they observed the link as a video in the other half of the stories. Participants’ ratings showed that they adhered well to these instructions during the linking phase. When linking events via imagination, they reported imagining the linking events very well (M = 3.38, SD = 0.47) and their imagination as depictive (M = 3.35, SD = 0.46). When linking via observation, they reported a high level of understanding of the linking events (M = 3.37, SD = 0.51) and found the linking events meaningful (M = 3.35, SD = 0.52) on a 1–4 Likert scale. Furthermore, participants demonstrated a high level of attention throughout the narrative-insight task, responding to target stimuli with near-ceiling performance (M = 99.25%; SD = 1.40 %) without any group differences (t(63.00) = 0.42, p = 0.675, d = –0.10).
 
@@ -48,13 +195,41 @@ As expected, all participants gained insight into which events were linked in th
 
 To investigate the causal role of the left angular gyrus in insight-related episodic memory integration, the key question of this study, we first analyzed the detailedness of participants’ memory for both linked and non-linked events during free recall. Across groups, linked events were generally recalled in more detail than non-linked events (LMM: link: β = 1.20, 95% CI [0.86, 1.54], t(406.00) = 6.75, p<0.001), suggesting a memory boost for integrated narratives. Most interestingly, cTBS to the left angular gyrus through cTBS reduced this insight-related memory boost for linked events significantly (LMM: group × link: β = –0.54, 95% CI [-1.02,–0.06], t(406.00) = –2.17, p = 0.030; Figure 2A). Pairwise comparisons revealed a significantly lower number of recalled details for linked events in the cTBS compared to the sham group, while there was no significant difference for non-linked events (LMM: link: β = –0.40, 95% CI [-0.79,–0.02], t(85.50) = –2.79, p = 0.033; LMM: non-link: β = –0.09, 95% CI [–0.29, 0.42], t(406.00) = –0.62, p = 0.926). Additionally, we observed that all participants showed better memory for central compared to peripheral details of the plot when recalling linked events, which was not observed to the same extent for non-linked events (LMM: link × detail: β = 0.61, 95% CI [0.12, 1.09], t(406.00) = 2.43, p = 0.016).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/91033/elife-91033-fig2-v1.jpg)
+
+**Figure 2.:** (A) Significantly reduced recall of details for linked events in the cTBS group compared to the sham group, with no significant difference for the non-linked events. (B) Significantly reduced recall of the linking events in the cTBS group compared to the sham group. (C) Schematic overview of electric field modeling: Simulation was performed for the angular gyrus coordinate (MNI: x = –48, y = –67, z = 30) using a Magstim 70 mm figure-of eight coil at 80% of individual motor thresholds, reflecting the applied setup. The resulting electric field was averaged within a 10 mm spherical ROI and centered on the target coordinate and extracted for subsequent analyses. Please note that in the study, the coil handle was oriented upwards; however, in this illustration, it has been intentionally depicted as pointing downwards for better visibility purposes. (D) Significantly reduced number of details recalled for linked events specifically in the high cTBS group (based on a median-split on simulated electric field strengths). (E) Significantly reduced recall of the linking events specifically in the high cTBS group (based on a median-split on simulated electric field strengths). Boxplots show the median for each group. Boxplot whiskers extend to the minimum or maximum value within 1.5 times the interquartile range. Points within the boxplot indicate individual data points per each group. Density plots indicate data distribution per group. The belongingness ratings for the linked and non-linked events are shown in Figure 2—figure supplement 1, the data of the multiple arrangements task in Figure 2—figure supplement 2, and the data of the forced-choice recognition test in Figure 2—figure supplement 3. Statistical differences stem from pairwise post-hoc tests of marginal means. *p<0.05, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91033/elife-91033-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Significant increases in ratings for linked events from the pre- to the post-phase for both, the sham and the cTBS groups. There were no significant group differences. (B) Significant decreases in ratings for non-linked events from the pre- to the post-phase for both, the sham and the cTBS groups. There were no significant group differences. Boxplots show the median link ratings for each group at each time point. Boxplot whiskers extend to the minimum or maximum value within 1.5 times the interquartile range. Points within the boxplot indicate individual data points in each group. Density plots indicate data distribution per group and time. Statistical differences stem from pairwise post-hoc tests of marginal means. ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91033/elife-91033-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Both groups arranged linked events closer to each other than non-linked events, without differences between groups. Boxplots show the median Euclidian distance for each group at each time point. Boxplot whiskers extend to the minimum or maximum value within 1.5 times the interquartile range. Points within the boxplot indicate individual data points in each group. Density plots indicate data distribution per group.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/91033/elife-91033-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Both groups performed very well in this task, without group differences. Boxplots show the median correct responses (%) for each group. Boxplot whiskers extend to the minimum or maximum value within 1.5 times the interquartile range. Points within the boxplot indicate individual data points in each group. Density plots indicate data distribution per group.
+
 In a second step, we analyzed whether cTBS to the angular gyrus affected, in addition to memory detailedness for initially separate but now linked events, also the memory for the linking events themselves. Our results showed that cTBS (vs. sham) significantly reduced the frequency with which participants recalled the linking events (LMM: group: β = –0.66, 95% CI [-1.13,–0.18], t(98.13) = –2.71, p = 0.008; Figure 2B). Interestingly, this TMS effect appeared to be particularly pronounced when events were linked via imagination (cTBS vs. sham: t(61.46) = –2.53, p = 0.014, d = –0.63) and was less prominent when they were linked via direct observation (cTBS vs. sham: t(58.59) = - 1.63, p = 0.107, d = –0.40), although it is important to note that the interaction was not significant (LMM: group × mode: β = 0.30, 95% CI [–0.18, 0.77], t(62) = 1.23, p = 0.225).
 
 To assess the effect of cTBS stimulation on the angular gyrus (Pizem et al., 2022; Zhang et al., 2022), we performed electric field simulations at 80% of the individual motor threshold, averaging the estimated field strength within a 10 mm sphere centered around the angular gyrus coordinate (MNI: −48,–67, 30). In order to examine whether the behavioral effects were dependent on the simulated electric field strength (Figure 2C), we next included electric field strength (strong vs. weak via median split) and repeated the previous linear mixed model predicting the number of details for linked events including a group factor reflecting stimulation strength (sham, low, high). This model yielded a significant group × link interaction (LMM: β = –0.78, 95% CI [-1.35,–0.21,], t(399.00) = –2.63, p = 0.009; Figure 2D), suggesting a dependency of memory on stimulation strength. Pairwise comparisons for linked events confirmed that a stronger electric field induction in the angular gyrus significantly reduced the memory boost for linked events, while there was no such effect for weak cTBS stimulation (LMM: sham vs. low: β = 0.05, 95% CI [–0.45, 0.55], t(87.70) = 0.28, p = 1.000; sham vs. high: β = 0.74, 95% CI [0.25, 1.23], t(87.7) = 4.45, p<0.001, low vs. high: β = 0.69, 95% CI [0.13, 1.26], t(87.7) = 3.60, p = 0.007). We further included the electric field strength (strong vs. weak via median split) and repeated the previous linear mixed model predicting the naming of the linking events including the group factor stimulation strength (sham, low, high). This analysis yielded a significant effect of group (LMM: β = –0.92, 95% CI [-1.50,–0.35], t(97.79) = –3.11, p = 0.003; Figure 2E), suggesting that the memory for the linking events was dependent on the angular gyrus stimulation strength.
 
-## Angular gyrus stimulation disrupts neural pattern reconfiguration following imagination-based insight
+### Angular gyrus stimulation disrupts neural pattern reconfiguration following imagination-based insight
 
 Our behavioral data showed that cTBS to the angular gyrus reduced the insight-related memory boost. In a next step, we tested whether cTBS to the angular gyrus may also alter the insight-related reconfiguration of neural memory representations, taking the mode of insight (i.e. imagination vs. observation) into account. To this end, we leveraged representational similarity analysis (RSA) of EEG data and compared changes in multivariate oscillatory theta power patterns for linked and non-linked events from pre- to post-insight (Figure 3A). We focused exclusively on the theta band since theta has been shown to hold a key role in episodic memory integration (Backus et al., 2016; Nicolás et al., 2021). For this analysis, similarity maps (time × time) were computed by correlating story-specific theta frequency patterns within linked (A with B) and within non-linked (A with X) events in the pre- and post-phase, separately. Subsequently, we examined insight-induced effects on neural representations for linked (vs. non-linked) events by comparing the change from pre- to post-insight (post-pre) and the difference between imagination and observation (imagination - observation) between cTBS and sham groups using an independent cluster-based permutation t-test.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91033/elife-91033-fig3-v1.jpg)
+
+**Figure 3.:** (A), Conceptual overview of the representational similarity analysis (RSA) on theta oscillations. First, time-frequency data was computed, and the theta power values (4–7 Hz) were extracted. Using these feature vectors, Pearson’s correlations were computed to compare the power patterns across time points of events (here: event A and B). These correlations resulted in a time × time similarity map. (B), Significant cluster, denoted by white dotted line for illustrative purposes, for the change from post-pre and imagination-observation between the cTBS and sham groups using an independent sample cluster-based permutation t-test for linked events (A and B). In the middle panel, follow-up tests on stories linked via imagination revealed increased similarity for the sham group, while no significant effect was observed for the cTBS group. In the lower panel, follow-up tests on stories linked via observation showed decreased similarity for the sham group and increased similarity for the cTBS group. (C), Significant cluster, denoted by white dotted line for illustrative purposes, for the change from post-pre and imagination-observation between the cTBS and sham groups using an independent sample cluster-based permutation t-test for non-linked events (A and X). In the middle panel, follow-up tests on stories linked via imagination revealed increased similarity for the cTBS group, while no significant effect was observed for the sham group. In the lower panel, follow-up tests on stories linked via observation showed decreased similarity for the cTBS group and no significant effect for the sham cTBS group. Boxplots show the median similarity for each group at each time point. Boxplot whiskers extend to the minimum or maximum value within 1.5 times the interquartile range. Points within the boxplot indicate individual data points in each group. Density plots indicate data distribution per group and time. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91033/elife-91033-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Time × time similarity maps depict Pearson’s r between theta frequency vectors of event A and B at each time point. The grey line denotes the average significant cluster for the change from pre to post, the difference between imagination and observation and between the cTBS and the sham groups as found for linked events across the electrodes T7, TP7, and P7.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91033/elife-91033-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Time × time similarity maps depict Pearson’s r between theta frequency vectors of event A and X at each time point. The grey line denotes the average significant cluster for the change from pre to post, the difference between imagination and observation and between the cTBS and the sham groups as found for non-linked events at the electrode FT7.
 
 First, we included the within-subject factors time (pre vs. post), mode of insight (imagination vs. observation) and link (vs. non-link) by calculating the difference waves. Subsequently we conducted a cluster-based permutation test comparing the cTBS and the sham groups. This analysis yielded a four-way interaction within a negative cluster in a fronto-temporal region (electrode: FT7; p = 0.007, ci-range = 0.00, SD = 0.00). This result indicates that the impact of cTBS over the angular gyrus on the neural pattern reconfiguration following imagination- vs. observation-based insight may differ between linked and non-linked events. For linked events, this analysis yielded a negative cluster (p = 0.032, ci-range = 0.00, SD = 0.00) in the parieto-temporal region (electrodes: T7, Tp7, P7; Figure 3B; Figure 3—figure supplement 1). Follow-up tests on the extracted similarity cluster analyzed the representational pattern change and its modulation by TMS separately for the imagination and observation condition. For stories linked via imagination, we obtained an increase in representational similarity from pre- to post-insight in the sham group (t(30) = 3.48, p = 0.002, drepeated measures = 0.62), whereas there was no such increase and even a trend for a decrease in representational similarity for linked events from pre- to post-insight in the cTBS group (t(30) = –2.01, p = 0.053, drepeated measures = –0.36; group × time: F(1, 60) = 14.03, p<0.001, ηG = 0.09; Figure 3B middle panel). Interestingly, we observed that a lower change (post - pre) in representational similarity of events linked via imagination (vs. observation) was associated, across groups, with a reduced probability of recall of the linking events (r = 0.27, t(59) = 2.17, p = 0.034), suggesting a direct association between neural pattern reconfiguration and subsequent memory. Furthermore, to address a deviation from the normality assumption, the correlational analysis was repeated using the Spearman method, which indicated a stronger correlation (r(59) = 0.32, p = 0.012).
 
@@ -64,7 +239,7 @@ Interestingly, we observed a different pattern of insight-related representation
 
 For stories linked via observation, we observed, again, a seemingly opposite pattern (group × time: F(1, 60) = 10.32, p = 0.002, ηG = 0.07): no representational change in the sham group (t(30) = 1.65, p = 0.110, drepeated measures = 0.34) but decreased neural similarity for non-linked events from pre- to post-insight in the cTBS group (t(30) = –2.40, p = 0.023, drepeated measures = –0.42). Again, these representational changes should be interpreted with caution, as the differences appear to be at least in part driven by group differences in the pre-insight phase.
 
-## cTBS to the angular gyrus diminishes fronto-temporal connectivity associated with imagination-based insight
+### cTBS to the angular gyrus diminishes fronto-temporal connectivity associated with imagination-based insight
 
 To further elucidate the neural mechanisms involved in the changes in insight-related memory reconfiguration after cTBS to the left angular gyrus, we next examined changes in functional connectivity using the same contrast as in the previous RSA analyses. More specifically, we computed imaginary coherence for the mean theta frequency using a sliding window approach and tested the change in connectivity from pre- to post-insight for linking via imagination vs. observation between the cTBS and the sham groups using an independent sample cluster-based permutation t-test.
 
@@ -76,7 +251,7 @@ This analysis yielded a negative cluster (p = 0.044, ci-range = 0.00, SD = 0.00;
 
 For stories linked via observation, we found a seemingly opposite pattern (group × time: F(1, 60) = 12.73, p<0.001, ηG = .080; Figure 4D): decreased functional connectivity for the sham group (t(30) = –2.75, p = 0.010, drepeated measures = –0.47), while the cTBS group exhibited increased connectivity (t(30) = 2.28, p = 0.030, drepeated measures = 0.36). Since these differences appeared to be again already present prior to gaining insight, the functional connectivity changes obtained for the observation condition should be interpreted with caution. Regarding non-linked events (X), we did not find any significant cluster in this coherence analysis (all clusters p>0.221), indicating that the reported connectivity changes were specific to linked events.
 
-## Control variables
+### Control variables
 
 Overall, levels of subjective chronic stress, anxiety, and depressive mood were relatively low and not different between groups. The groups did further not differ in terms of personality traits, imagination capacity, age or motor thresholds (all p>0.056; see Table 1).
 
@@ -102,21 +277,94 @@ In conclusion, our data point to a causal involvement of the angular gyrus in (i
 
 ## Materials and methods
 
-## Preregistration
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Psychophysics Toolbox</td>
+      <td>Brainard, D. H., &amp; Vision, S. (1997). The psychophysics toolbox. Spatial vision, 10(4), 433–436.</td>
+      <td>RRID: SCR_002881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>The MathWorks Inc, Natick, Massachussetts, USA</td>
+      <td>RRID: SCR_002881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ActiView</td>
+      <td>BioSemi B.V., Amsterdam, the Netherlands</td>
+      <td>RRID: SCR_023671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PowerMag View! System</td>
+      <td>MAG &amp; More GmbH, Munich, Germany</td>
+      <td>RRID: SCR_023670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FieldTrip</td>
+      <td>Oostenveld et al., 2011</td>
+      <td>RRID: SCR_004849</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SimNIBS 4</td>
+      <td>Thielscher, A., Antunes, A., &amp; Saturnino, G. B. (2015, August). Field modeling for transcranial magnetic stimulation: a useful tool to understand the physiological effects of TMS?. In 2015 37th annual international conference of the IEEE engineering in medicine and biology society (EMBC) (pp. 222–225). IEEE, https://doi.org/10.1109/EMBC.2015.7318340</td>
+      <td>RRID: SCR_014109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nonparametric cluster-based statistical testing of EEG data</td>
+      <td>Maris and Oostenveld, 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 4.04</td>
+      <td>R Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL http://www.R-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Preregistration
 
 This study was preregistered before the start of data collection at the German Clinical Trials Register (DRKS-ID: DRKS00025202; https://drks.de/search/de/trial/DRKS00025202). For translation to English, please adjust the page settings located in the top right corner.
 
-## Participants
+### Participants
 
 Sixty-five healthy right-handed individuals (34 males, 31 females, age: M = 24.49 years, SD = 4.29 years) with normal or corrected-to-normal vision volunteered to participate in this study. Participants were screened using a standardized interview for exclusion criteria that comprised a history of neurological and psychiatric disease, medication use and substance abuse, cardiovascular, thyroid, or renal disease, evidence of COVID-19 infection or exposure, and any contraindications to MRI examination or TMS. Additionally, participants with a body mass index (BMI) below 19 or above 26 kg/m² were excluded. This decision stemmed from recruiting some participants from prior studies that incorporated stress induction protocols, which imposed this specific criterion (Herhaus and Petrowski, 2018; Schmalbach et al., 2020). All participants gave written informed consent before participation and received a monetary compensation at the end of the experiment. The procedures were approved by the local ethics committee (Faculty of Psychology and Human Movement Science, Universität Hamburg, Hamburg, Germany, 2020_301 Grob Schwabe) and adhered to the Declaration of Helsinki. The sample size is in line with recent studies on episodic memory integration using the same task (Grob et al., 2023a; Grob et al., 2023b). Additionally, an a-priori power calculation using G*Power (Faul et al., 2007) indicates that a sample size of N = 54 is sufficient for detecting a medium-sized group × link effect (f = 0.25) with a power of 0.95.
 
 We implemented a mixed-design including the within-subject factors link (linked vs. non-linked events), session (pre- vs. post-link), and mode (imagination vs. observation) as well as the between-subjects factor group (cTBS to the angular gyrus vs. sham) to mitigate the risk of carry-over effects and sequence biases of the crucial cTBS manipulation. Participants were pseudo-randomly assigned to the cTBS group (n = 34, 16 females) and the sham group (n = 31, 15 females) to achieve a comparable distribution of men and women in each group. Due to technical issues, three cTBS participants were excluded from EEG analyses.
 
-## Procedure
+### Procedure
 
 After obtaining participants’ written informed consent, we determined their individual motor thresholds for transcranial magnetic stimulation (TMS). Thereafter, they completed a training session of the modified narrative-insight task (Milivojevic et al., 2015), a life-like video-based task that tests the integration of initially separate events into coherent episodes (see below). During this training, participants were equipped with electroencephalography (EEG) caps and electrodes. Following the training session, participants completed the pre-phase of the narrative-insight task. After completing a German mood questionnaire (MDBF; Steyer et al., 1997), participants underwent either sham or cTBS targeting the left angular gyrus before commencing the insight-phase, with an additional stimulation session administered before the second half of the insight-phase. Crucially, this study was double-blind, ensuring that both the participant and the experimenter were unaware of the stimulation condition. Upon completion of the insight-phase, participants transitioned to another experimental room where they were given a 30-min break, during which they completed the German mood questionnaire (MDBF) again, along with assessments of their imagination capacity (FFIS; Zabelina and Condon, 2020), trait-anxiety (STAI-T; Laux et al., 1981), and state-anxiety (STAI-S; Laux et al., 1981), depressive symptoms (BDI; Hautzinger et al., 2006), chronic stress (TICS; Schulz and Schlotz, 1999), and personality dimensions (BFI-2; Stober et al., 2016). This break was crucial for minimizing potential aftereffects of TMS that could have affected performance during the post-phase and memory tasks (Huang et al., 2005; Jannati et al., 2023). After this break, participants engaged in a self-paced free recall task, after which they returned to the EEG room to complete the post-phase of the narrative-insight task. The comparison of neural activity patterns between the pre- and post-phases allowed the analysis of insight-related changes in neural memory representations. EEG recordings were obtained during the pre-, insight-, and post-phase of the narrative-insight task. Finally, participants completed a multi-arrangements task (Kriegeskorte and Mur, 2012) and a forced-choice recognition task. In total, the experiment took about 4.5 hr per participant and was completed within a single day.
 
-## Narrative-insight task
+### Narrative-insight task
 
 To examine insight-related mnemonic integration processes, participants completed a modified version of the narrative-insight task (Milivojevic et al., 2015; Figure 1), while their brain activity was measured using EEG. The task involved watching life-like videos from the computer game The Sims 3, representing different storylines. Each storyline consisted of events that could either be integrated (A and B) into narratives or not (A and X). Participants were unaware that each narrative had two versions. The two versions shared event A but had different events B. Event X from one version served as event B in the other version. Thus, all participants viewed the same events A, B, and X, with 37 participants linking events A and X and 28 participants linking events A and B. Counterbalancing which events were linked over participants controlled for non-specific stimulus effects and visual similarity. Throughout this manuscript, the linked events are referred to as events A and B, while the non-linked event is referred to as X. Given the role of the angular gyrus in imagination (Benoit and Schacter, 2015; Thakral et al., 2017) and recent research highlighting distinct neural underpinnings when gaining insight via imagination vs. observation, we introduced two insight modes: imagination-based linking for half of the stories and observation-based linking for the other half.
 
@@ -126,53 +374,53 @@ The subsequent insight-phase comprised two parts. For five stories, participants
 
 Participants were instructed to imagine specific scenes only when specifically asked to do so; otherwise, they were told to simply relax and watch the videos or answer the rating questions. In the observation condition, the linking video (L) depicted the main characters from videos A and B interacting with each other, while the control video (C) featured an unrelated activity involving an unknown character (e.g. two women engaged in conversation). In the imagination condition, a written linking instruction (I) prompted participants to imagine the main characters from video A and B interacting with each other, while the control instruction (CI) asked them to imagine an unknown character engaged in an unrelated activity (e.g. two women talking to each other). Following the insight-phase, participants provided ratings regarding their comprehension of the link and adherence to instructions on a scale ranging from 1 (not at all) to 4 (very much). After the insight-phase, participants were taken to another room for a 30-min break, during which they completed several questionnaires. After the break, they performed the free recall task (see below). Subsequently, in the final post-phase, events A, B, and X were again displayed for 2 s, repeated 18 times with ITIs between 700 and 1300ms (on average ~1000ms). Each video was preceded by a 1-s title. The post-phase order was pseudorandomized to minimize sequence effects. Its purpose was to examine neural representation changes for events A and B after participants learned that these were linked. Participants then rated the extent to which they perceived the events as belonging together on a scale of 1 (not at all) to 4 (very much). Participants received visual feedback in the form of highlighted selected responses when entering a rating question. In addition to the presentation of A, B, and X events in the pre- and post-phases, we included target events to ensure sustained attention throughout the experiment. These target events, accounting for 11% of pre- and post-phase trials, required participants to press a button in response to a 2-s animated video of a girl on a pink scooter.
 
-## Free recall
+### Free recall
 
 To assess the extent to which insight into the relationship of initially unrelated events affects subsequent memory, participants performed a free recall test in which they were instructed to recall all presented events in as much detail as possible (Figure 1). During free recall, participants were voice recorded for a maximum of 20 min. To assess the level of detailedness of the integrated episodes, audio recordings from free recall were scored according to how much detail of the different video events (A, B, and X) were recalled from day one and whether the linking events (L, and I) were named. A rating system was employed that allowed for distinct coding of details associated with each specific event (A, B, X, L, and I) and distinguished between central and peripheral details. Central details refer to elements that are crucial to the plot and directly impact the linking process. These details include significant aspects such as distinctive features of the protagonist in each event. Peripheral details encompass any observable details in the video events that are not central to the plot. For example, these could include features like the presence of a carpet in a room or the color of the curtains. Importantly, there was no difference in the number of details that could be named among the video events A, B, and X across different stories (event: F(1.35, 12.14) = 2.09, p = 0.173). However, it is worth noting that a greater number of peripheral details could be named compared to central details (detail: F(1, 9) = 83.24, p<0.001), which was expected as there were more details visible in the video events that were unrelated to the plot and, consequently, had no direct influence on the linking process. We engaged four independent raters and instructed them to assign details only to events for which it was clear that they belonged exclusively to that event, thereby avoiding any confusion between different events. The raters further scored whether the participants named the linking events or not. The scoring process involved two raters evaluating the first half of the data, while another two raters assessed the second half. All raters were blinded to the experimental conditions. To assess inter-rater reliability, all raters rated the first five participants, and on average, these ratings were highly correlated with each other (mean correlation = 0.80, SD = 0.14). To enhance inter-subjectivity, these ratings were averaged. The details of the different event types (A, B, and X) were combined across stories to generate a comprehensive rating of event details for both imagined and observed links. The average rating of the linked events (A and B) was then calculated to represent the overall measure of linked events. The non-linked event (X) remained unchanged. The naming of the linking events were combined across stories, separately for imagination and observation. Following the free recall, participants proceeded to the post-phase of the narrative-insight task.
 
-## Multi-arrangements task
+### Multi-arrangements task
 
 In order to ensure that participants accurately retained the structure of the events they gained insight into, we assessed their representational structure through a multi-arrangements task (Kriegeskorte and Mur, 2012). In this task, participants were instructed to arrange representative images (A, B, and X) from each story based on their relatedness. Using a computer mouse, participants dragged and dropped the images within a circular two-dimensional arena displayed on the computer screen. This task served to assess whether participants could successfully bring the linked images (A and B) closer together than the non-linked images (A and X). Each trial was self-paced and could be concluded by the participant by selecting ‘Done’. In the first trial, participants had to arrange all images by similarity and were instructed to do so carefully. Subsequent trials consisted of subsets of the first trial selected based on an adaptive procedure designed to minimize uncertainty and better approximate the high-dimensional perceptual representational space. This procedure is based on an algorithm optimized to provide optimal evidence for the dissimilarity estimates (Kriegeskorte and Mur, 2012). Distances in this MA task were computed by initially computing the squared on-screen distance (Euclidian distance) between all items in the first trial to produce a roughly estimated representative dissimilarity matrix (RDM) and by iteratively updating this RDM by the weighted average of scaled trial estimates. The completion of the MA task required approximately 15 min. Distances for linked (A and B) and non-linked events (A and X) were averaged across stories for both imagined and observed links.
 
-## Forced-choice recognition
+### Forced-choice recognition
 
 To further ensure participants' accurate identification of linked and non-linked events following the narrative-insight task, a forced-choice recognition task was administered to assess participants’ comprehension. They were presented with an image of event A at the top of the computer screen and had to indicate whether the image of B or X in the bottom half of the screen was linked to A. Participants were presented with these forced-choice options for each of the stories they had seen before. After indicating for a story which event was linked to event A, they had to rate how confident they were in their answer. Confidence was rated on a scale from not at all (1) to very sure (4). This process was repeated for all ten stories. Participants were presented with the forced-choice question and the confidence rating for 5.5 s each, with 1-s inter-stimulus intervals. Participants received visual feedback when submitting their ratings, as the selected response was highlighted. The forced-choice recognition test lasted approximately 5 min. Data from the forced-choice recognition task were pooled across stories and the percentage of correct responses was calculated, separately for imagined and observed links.
 
-## Transcranial magnetic stimulation
+### Transcranial magnetic stimulation
 
 Transcranial magnetic stimulation (TMS) was applied over the left angular gyrus before participants gained insight into the relationship of initially unrelated events. We used a PowerMAG Research 100 stimulator (MAG & More GmbH, München, Germany) for stimulation, that is specifically designed for delivering repetitive transcranial magnetic stimulation (rTMS) in both clinical and research applications. Two identically looking but different 70 mm figure-of-eight-shaped coils were used depending on the TMS condition: The PMD70-pCool coil (MAG & More GmbH, München, Germany) with a 2T maximum field strength was used for cTBS, while the PMD70-pCool-SHAM coil (MAG & More GmbH, München, Germany), with minimal magnetic field strength, was employed for sham, providing a similar sensory experience, with stimulation pulses being scattered over the scalp and not penetrating the skull.
 
-## Motor threshold determination
+### Motor threshold determination
 
 The motor threshold (MT) was assessed at the beginning of the experiment while participants were at rest, wearing an EEG cap without electrodes attached. This measurement was utilized to determine the appropriate strength of TMS required to pass through the cap. Disposable Ag/AgCL surface electromyography (EMG) electrodes were placed on the right abductor pollicis brevis (ABP) muscle, with the reference electrode on the bony landmark of the index finger and the ground electrode on the right elbow. To locate the motor hotspot, we identified the center of the head and moved 5 cm to the left and 3.5 cm forward at a 45° angle, marking it as the center point of a 9-point grid search area with each point spaced 1 cm apart from adjacent points. Starting at 40% of the maximum stimulator output (MSO), we gradually increased the intensity in 5% increments while positioning the TMS coil at a 45° angle and moving it around the search area, delivering single pulses until we identified the motor hotspot. Once the motor hotspot was located, the MT was determined at that site. It was defined as the minimum percentage of maximum stimulator output (MSO) over the left motor cortex needed to elicit motor evoked potentials (MEPs) with a peak-to-peak amplitude of 50 μV in eight out of 16 consecutive pulses.
 
-## Neuro-navigation
+### Neuro-navigation
 
 Before the experimental session, we obtained individual T1-weighted structural MR images using a 3T Siemens PRISMA scanner from each participant. These images were used for neuro-navigation with the PowerMag View! System (MAG & More GmbH, München, Germany). The system utilizes two infrared cameras (Polaris Spectra) to track the positions of the participant’s head and TMS coil in space. Based on the individual T1 MR images, we created 3D reconstructions of the participants' heads, allowing us to precisely locate the left angular gyrus coordinate (MNI: −48,–67, 30), initially derived from previous work (MNI: −48,–64, 30; Thakral et al., 2017), for TMS stimulation. Despite a minor deviation in coordinates due to necessary MNI to Talairach transformations for software compatibility (Powermag View! by MAG & More GmbH, München, Germany), our methodology ensured precise localization of the angular gyrus target area. The coordinates were entered as TAL coordinates. Once the TAL coordinate was entered, the coil was positioned in accordance with the template provided by the neuro-navigation system, aiming for a brain-to-target distance of less than 3 cm. This procedure ensured precise coil placement tailored to the unique anatomy of each participant, while maintaining the shortest and therefore optimal distance to the cortex.
 
-## Continuous theta burst stimulation
+### Continuous theta burst stimulation
 
 Depending on the experimental condition, we administered continuous Theta Burst Stimulation (cTBS) using either the cTBS or the sham figure-of-eight coil at 80% of the MT intensity. The experiment was conducted in a double-blind manner, where neither the participant nor the experimenter were aware of the stimulation condition (cTBS vs. sham). Previous evidence has demonstrated the inhibitory effect of cTBS on the targeted brain region under stimulation (Huang et al., 2005; Jannati et al., 2023). Nonetheless, the effects of cTBS appear to vary based on the targeted region, with cTBS to parietal regions demonstrating the capability to enhance hippocampal connectivity (Hermiller et al., 2019; Hermiller et al., 2020). Following the standard cTBS protocol, participants received a series of bursts comprising three magnetic pulses (pulse triplets) at a frequency of 50 Hz, with the triplets repeated at a rate of five Hz (i.e. five pulse triplets per second). Each participant received a total of 600 magnetic pulses delivered over a 40-s duration. The coil was positioned tangentially on the head and mechanically fixed in a coil holder, with its handle pointing upwards to maintain its position. Throughout the stimulation, it was ensured via neuro-navigation that the brain-to-target distance remained below 3 cm from the left angular gyrus coordinate (MNI: −48,–67, 30).
 
-## Electric field modeling
+### Electric field modeling
 
 Electric field simulations were performed in SimNIBS v4.0.1 to perform TMS simulations for the cTBS group. To assess the potential stimulation strength based on individual motor thresholds and T1 images, we segmented and meshed these MRI scans into tetrahedral head models using the SimNIBS charm pipeline. All head models were visually inspected to exclude segmentation errors. In a next step, we performed the TMS simulation at 80% of individual motor thresholds (M = 54.82%; SD = 12.93 %). We modeled the Magstim 70 mm figure-of-eight coil placed over the left angular gyrus target coordinates (MNI: −48,–67, 30), accounting for the presence of the EEG cap during stimulation. Next, to estimate the average field strength in the region of interest (ROI), we extracted the gray matter regions and created a 10 mm spherical ROI centered around the target coordinate and averaged the estimated field strength for the sphere. This approach enabled us to evaluate the potential stimulation strength and its impact on the target brain area (Pizem et al., 2022; Zhang et al., 2022).
 
-## EEG data acquisition
+### EEG data acquisition
 
 EEG data was recorded using a 64-electrode BioSemi ActiveTwo system (BioSemi B.V., Amsterdam, the Netherlands) following the international 10–20 system. The sampling rate was set to 1024 Hz, and a band-pass filter of 0.03–100 Hz was applied online. Additional electrodes were placed at the mastoids, above and below the orbital ridge of the right eye, and at the outer canthi of both eyes. We maintained impedances within a range of ±20 μV using the common mode sense (CMS) and driven right leg (DRL) electrodes, serving as active reference and ground, respectively.
 
-## Behavioral data analysis
+### Behavioral data analysis
 
 For our behavioral analyses we opted to employ linear-mixed models (LMM), given their high robustness regarding the underlying distribution and high sensitivity to individual variation (Pinheiro and Bates, 2000; Schielzeth et al., 2020). To illuminate the impact of gaining insight into the relationship between initially unrelated events on subsequent memory, we subjected the number of details remembered during free recall to a LMM implemented with the lme4 package (Bates et al., 2015) including group (cTBS/sham), mode (imagination/observation), link (link/non-link), and detail (central/peripheral) and their interactions as fixed effects, with a random intercept per participant. As a follow-up analysis, we calculated a median split on the cTBS group, based on simulations of the electric field strength and re-analyzed this data with a new group variable (sham/low stim/high stim), mode (imagination/observation), link (link/non-link), and detail (central/peripheral) and their interactions as fixed effects, with a random intercept per participant. To further examine mnemonic integration based on memory of the linking phase, naming of the linking events were entered into an LMM including group (cTBS/sham), and mode (imagination/observation), and their interactions as fixed effects. Additionally, a random intercept per participant was included to account for individual variability. As a follow-up analysis, we re-analyzed this data with a new group variable (sham/low stim/high stim), mode (imagination/observation), link (link/non-link), and detail (central/peripheral) and their interactions as fixed effects, with a random intercept per participant to estimate the effect of stimulation strength on this outcome. To verify that all participants acquired insight into the relationship between events, we analyzed the ratings for the event duplets of interest (linked events AB and non-linked events AX) from the pre- and post-phase of the narrative-insight task. This analysis was conducted using a LMM including group (cTBS/sham), mode (imagination/observation), time (pre/post), and link (link/non-link) and their interactions as fixed effects and a random intercept per participant. To confirm the retention of the representational structure of the narrative-insight task in memory, Euclidean distance estimates were extracted from the multi-arrangements task for linked (AB) and non-linked events (AX), averaged across stories, and then entered into an LMM including group (cTBS/sham), mode (imagination/observation), and link (link/non-link), and their interactions as fixed effects and a random intercept per participant. Additionally, to further ensure participants' accurate identification of linked and non-linked events, we assessed performance in the forced-choice recognition task by calculating the proportion of correct answers. These performance measures (in %) were then entered into an LMM including group (cTBS/sham), and mode (imagination/observation), and their interactions as fixed effects and a random intercept per participant.
 
 All analyses were performed in R version 4.0.4 and for all analyses standardized betas are reported. Prior to the analysis, the data were examined for outliers, defined as mean +/-3 SD. For the modified narrative-insight task analysis, three outliers (two from the sham and one from the cTBS group) were identified and excluded. For the analysis of the forced-choice recognition task, two outliers (one from each group) were identified and excluded. For the analysis of the multi-arrangements task, four outliers (one from the sham and three from the cTBS group) were identified and excluded. For the free recall analysis, five outliers (two from the sham and three from the cTBS group) were identified and excluded. After outlier correction, we identified non-normality in our data using a Shapiro-Wilk test (narrative-insight task: W = 0.92, p<0.001; multi-arrangements task: W = 0.94, p<0.001; forced-choice recognition: W = 0.50, p<0.001; free recall details: W = 0.85, p<0.001; free recall naming of linking events: W = 0.94, p<0.001). However, we mitigated this by employing linear-mixed models (LMMs), recognized for their robustness even with non-normally distributed data (Schielzeth et al., 2020).
 
-## EEG preprocessing
+### EEG preprocessing
 
 The offline analysis of EEG data from the narrative-insight task was conducted using the FieldTrip toolbox (Oostenveld et al., 2011) and custom scripts implemented in Matlab (TheMathWorks). Pre- and post-phase trials were segmented from –2 to 3 relative to stimulus onset and then re-referenced to the mean average of all scalp electrodes. The data were demeaned based on the average signal of the entire trial and de-trended. To eliminate power-line noise, a discrete Fourier-Transform filter (DFT) at 50 Hz was applied. Any electrodes that did not record or exhibited constant noise were removed (max. one per participant) and interpolated using weighted neighboring electrodes. Noisy trials were removed after visual inspection, on average 2.32 (+/-SD 1.34) of the 540 pre-phase trials and 2.63 (+/-SD 1.74) of the 540 post-phase trials. Following artifact rejection, the epochs were down-sampled to 256 Hz. Next, we performed an extended infomax independent component analysis (ICA) using the 'runica' method with a stop criterion of weight change <10–7 to identify and reject components associated with eye blinks and other sources of noise. In a two-step procedure, we first correlated the signals from the horizontal and vertical EOG electrodes with each independent component. Components exhibiting a correlation higher than 0.9 were immediately removed from further analysis. In a second step, the remaining components were identified through visual inspection of their time courses and corresponding brain topographies. On average, 3.32 (+/-SD 1.38) components were removed before back projecting the signals into electrode space.
 
-## Representational similarity analysis
+### Representational similarity analysis
 
 To investigate how the brain processes insight-induced changes in the relationships between unrelated events, we conducted a representational similarity analysis (RSA) at the EEG electrode level (Heinbockel et al., 2022; Pacheco Estefan et al., 2021). This method is ideally suited to measure neural representation changes and was specifically chosen as it has been previously identified as the preferred approach for quantifying insight-induced neural changes (Grob et al., 2023b; Milivojevic et al., 2015). RSA allows us to estimate neural activity patterns associated with specific events by measuring their correlations, thus providing insights into the underlying neural processes (Kriegeskorte et al., 2008). To measure the insight-induced representational changes, we focused on assessing the similarity of linked and non-linked events before and after gaining insight, separately for events that were linked via imagination and events that were linked via observation. We performed the RSA in the theta frequency range as prior evidence highlighted the key role of theta activity in episodic memory integration (Backus et al., 2016; Nicolás et al., 2021).
 
@@ -180,16 +428,16 @@ To perform this analysis, we first calculated time-frequency representations uti
 
 We performed statistical analyses on the RDMs using cluster-based permutation t-tests in the Fieldtrip toolbox (10.000 permutations; Oostenveld et al., 2011). This approach allows for testing statistical differences while controlling for multiple comparisons without spatial constraints (Maris and Oostenveld, 2007). The samples were clustered at a level of αcluster = 0.001 to allow for more refined clusters. Clusters with a corrected Monte Carlo p-value <0.05 were considered statistically significant. The RDMs for the change from pre- to post-phase in linked events (post - pre) that were linked via imagination (vs. observation; imagination - observation) were contrasted between the cTBS (vs. the sham) groups via an independent sample cluster-based permutation t-test. Similarly, the RDMs for the change from the pre- to post-phase (post - pre) in non-linked events that were linked via imagination (vs. observation) were contrasted between the cTBS (vs. sham) groups via an independent sample cluster-based permutation t-test.
 
-## Coherence analysis
+### Coherence analysis
 
 Due to the robust connectivity between the angular gyrus and other brain regions (Petit et al., 2023; Seghier, 2013), we proceeded with a connectivity analysis as a next step. To gain a deeper understanding of the connectivity changes between linked (A and B) events before and after gaining insight, we conducted a sliding window coherence analysis in electrode-space on the same contrasts that we found in our RSA analyses. Therefore, this analysis specifically focused on the comparison between imagined and observed links, utilizing the concept of imaginary coherence (Nolte et al., 2004). Imaginary coherence quantifies the synchronization between two electrodes, accounting for phase-lag at a specific frequency and minimizing the influence of volume conduction effects. We first computed a frequency analysis focusing on the mean theta frequency (5.5 Hz; dpss-taper = 1.5 Hz). Then, we computed imaginary coherence for all possible electrode combinations. To capture the temporal dynamics, we employed a sliding window approach that spanned the duration of the video display (0–2 s) in 500ms windows, sliding forward in steps of 50ms. By applying this sliding window analysis, we obtained a coherence spectrum matrix of 64 (electrodes) × 64 (electrodes) for each of the 31 time windows in each participant. We calculated the average coherence matrices for both A and B, resulting in a single coherence matrix that represents the connectivity patterns of the linked events. Subsequently, we focused on the same interaction that was yielded by the previous RSA by examining the changes in coherence spectra from pre- to post-phase (post - pre) for the imagined (vs. observed) linked events. To determine the statistical significance of the observed differences between groups (sham vs. cTBS), we utilized an independent sample cluster-based permutation t-test across all 31 time windows, correcting for the multiple comparisons of channels and time windows.
 
 In order to investigate the changes in connectivity from pre- to post-phase for the non-linked event (X), we conducted a sliding window coherence analysis following the same procedure as described above. Please note that the non-linked event was treated separately and not averaged with any other event to maintain its distinct characteristics. Similar to the linked events analysis, we obtained 31 time windows representing the change from pre- to post-phase (post - pre) for the imagined (vs. observed) non-linked event, which was the same interaction as in the previous RSA. To evaluate the statistical significance of these changes between the groups (sham vs. cTBS), we employed an independent sample cluster-based permutation t-test.
 
-## Correlational analysis
+### Correlational analysis
 
 To relate the findings from the RSA and the coherence analyses to the behavioral results, we extracted the significant clusters. We then proceeded to estimate the correlation between the extracted neural cluster activity and behavioral outcomes. Specifically, we correlated neural similarity and activity with behavioral outcomes separately for the cTBS and sham groups. Subsequently, we compared these correlations to determine if they differed significantly from each other (Eid et al., 2017).
 
-## Control variables
+### Control variables
 
 In order to ensure that the observed effects were solely attributable to the TMS manipulation and not influenced by other factors, we comprehensively evaluated several trait and state variables. To account for potential variations in anxiety levels that could impact our results, we specifically measured state and trait anxiety using STAI-S and STAI-T (Laux et al., 1981), thus minimizing the potential confounding effects of anxiety on our findings (Charpentier et al., 2021). Additionally, we evaluated participants’ chronic stress levels using the TICS (Schulz and Schlotz, 1999) to exclude any group variations that might explain the effect on memory, cosidering the well-established impact of stress on memory (Sandi and Pinelo-Nava, 2007; Schwabe et al., 2012). Moreover, we assessed participants’ depressive symptoms employing the BDI (Hautzinger et al., 2006), to guarantee group comparability on this clinical measure. We further assessed fundamental personality dimensions using the BFI-2 (Stober et al., 2016) to exclude any potential group discrepancies that could account for differences observed. Lastly, we assessed participants’ imaginative capacities using the FFIS (Zabelina and Condon, 2020), to ensure uniformity across groups regarding this central variable, considering the significant role of imagination in relation to the cTBS-targeted angular gyrus (Thakral et al., 2017).

@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03czfpz43 Department of Orthopaedics, Emory University School of Medicine Atlanta United States
-2. https://ror.org/04z89xx32 Atlanta VA Medical Center Decatur United States
+1. Department of Orthopaedics, Emory University School of Medicine Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+2. Atlanta VA Medical Center Decatur United States ([ROR:04z89xx32](https://ror.org/04z89xx32))
 3. Emory Orthopaedics and Spine Center Atlanta United States
-4. https://ror.org/01pxwe438 Department of Surgery, McGill University Montreal Canada
+4. Department of Surgery, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 
 † Corresponding author
 
@@ -35,63 +35,201 @@ PDGF is a major constituent of platelet-rich plasma (PRP), which is widely used 
 
 ## Methods
 
-## Sample collection and cell extraction
+### Sample collection and cell extraction
 
 This study was conducted in accordance with the ethical principles outlined in the Declaration of Helsinki. All experiments and procedures were reviewed and approved by the institutional review board of Emory University (IRB #00099028) approval. Human degenerated NP and AF tissues (Grade IV or V on Pfirrman grade; 64.6±8.5 y old) were obtained as the surgical waste from donors with disc herniation, with each donor providing written informed consent. Healthy NP and AF cells (23.0±3.7 y old) were gifted by Professor Lisbet Haglund from McGill University (Tissue Biobank #2019–4896). The donor information was listed in Table 1. NP and AF cells were extracted as previously described (Zhang et al., 2024). Isolated cells were expanded in growth media containing low glucose DMEM, 10% FBS, 1 X antibiotic-antimycotic (Thermo Fisher Scientific, 15240062), and 50 µg/ml L-Ascorbic acid 2-phosphate (Sigma, A8960). Cells were grown at 37 °C under 5% CO2 and 20% O2. To minimize the variability between experiments that may be caused by changes in cell behavior with each passage, cells of passage 3 were used for each experiment.
 
-## PDGF treatment in human intervertebral disc cells
+**Table 1.**
+ Donor information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Grade</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Cell type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4</td>
+      <td>67</td>
+      <td>M</td>
+      <td>NP &amp; AF</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>61</td>
+      <td>M</td>
+      <td>NP &amp; AF</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>61</td>
+      <td>M</td>
+      <td>NP &amp; AF</td>
+    </tr>
+    <tr>
+      <td>4 or 5</td>
+      <td>65</td>
+      <td>F</td>
+      <td>NP &amp; AF</td>
+    </tr>
+    <tr>
+      <td>4 or 5</td>
+      <td>81</td>
+      <td>F</td>
+      <td>AF</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>53</td>
+      <td>F</td>
+      <td>AF</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>64</td>
+      <td>F</td>
+      <td>NP</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>19</td>
+      <td>M</td>
+      <td>NP &amp; AF</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>21</td>
+      <td>M</td>
+      <td>NP &amp; AF</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>25</td>
+      <td>F</td>
+      <td>NP &amp; AF</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>27</td>
+      <td>F</td>
+      <td>NP &amp; AF</td>
+    </tr>
+  </tbody>
+</table>
+
+### PDGF treatment in human intervertebral disc cells
 
 To synchronize cells and enhance the sensitivity of cells to PDGF stimulation, degenerated NP (n=5/each group) and AF cells (n=6/each group) were serum-deprived in low glucose media containing 0.2% FBS for 1 d. Cells were then treated with recombinant human PDGF-AB (40 ng/ml; PeproTech, 10770584) or -BB (20 ng/ml; PeproTech, 10771918) for 5 d.
 
-## RNA-sequencing
+### RNA-sequencing
 
 Total RNA was isolated with TRIzol (Thermo Fisher Scientific, 15596018) and purified using miRNeasy kit (Qiagen, 217084). Genomic DNA contamination was eliminated through on-column DNase digestion. The concentration and quality of RNA were determined using Nanodrop and RNA integrity was assessed by Agilent 2200 Bioanalyzer. RNA samples (NP: n=5, AF: n=6) with RIN >7 were shipped in dry ice to Novogene for RNA sequencing, which was carried out using NovaSeq 6000 (Novogene Corporation Inc). Each sample represents a unique biological replicate, and no technical replicates were performed for RNA sequencing. Libraries were constructed from 0.2 μg RNA using the TruSeq Stranded Total RNA Sample Prep Kit (Illumina). Quality control was performed for the distribution of sequencing error rate and GC content and data filtering was performed to remove the low-quality reads and reads containing adapters. The resulting sequences were uploaded into the NCBI Sequence Read Archive (SRA) database (PRJNA1150962). The clean reads were mapped to the human reference genome sequence using DNASTAR.
 
-## Differential gene expression analysis of RNA-seq data
+### Differential gene expression analysis of RNA-seq data
 
 Unnormalized raw counts exported from DNASTAR were used for pairwise gene expression comparison between untreated and PDGF-AB/BB samples. Differential expression genes (DEGs) were identified using the DESeq2 package in R and DEGs with a fold change greater than 1.5 and adjusted p value less than 0.05 were considered statistically significant. Heatmap and volcano plots and principal component analysis were performed to visualize the DEGs between untreated and PDGF-AB/BB samples.
 
-## Pathway enrichment analysis
+### Pathway enrichment analysis
 
 To identify the biological process that DEGs were enriched, Gene ontology (GO) analysis was performed using upregulated and downregulated DEGs separately in R. The significantly enriched GO terms were visualized by dot plot analysis. GeneRatio in the X-axis was calculated by the ratio of gene counts enriched in a particular GO term to all the gene counts annotated in the GO term.
 
 Gene Set Enrichment Analysis (GSEA) was performed on all the genes to determine whether a predefined set of genes is significantly enriched in untreated or PDGF-BB samples. GSEA was conducted based on the KEGG (Kyoto Encyclopedia of Genes and Genomes) database using the clusterProfiler package in R (Wu et al., 2021) and a gene set was considered significantly enriched when the false discovery rate (FDR) was less than 0.05. Enrichment score (ES) was calculated to reflect the degree to which a gene set is overrepresented in our dataset, which was ranked based on fold change. Normalized enrichment score (NES) is the ES normalized to the gene set size.
 
-## Protein-protein interaction network analysis
+### Protein-protein interaction network analysis
 
 The interactions among DEGs were performed using the Search Tool for the Retrieval of Interacting Genes (STRING) database (v12.0) with an interaction score greater than 0.4. Discrete proteins were removed, and the node files were exported and visualized in Cytoscape (v3.10.0). To identify essential nodes in the interaction network, the betweenness centrality among the nodes was calculated using the CytoNCA plugin (v2.1.6) in Cytospace (Tang et al., 2015) and the top 10 hub nodes were identified using the CyoHubba plugin (v0.1) (Chin et al., 2014).
 
-## Cellular senescence induction by irradiation
+### Cellular senescence induction by irradiation
 
 To induce cellular senescence, cells were seeded in a six-well plate at a density of 5×104 cells/ml and cultured in low glucose DMEM supplemented with 10% FBS, 1 X antibiotic-antimycotic (Thermofisher Scientific, 15240062), and 50 µg/ml L-Ascorbic acid 2-phosphate (Sigma, A8960). After 48 hr of culture, growth media was removed, and cells were washed with 1 X PBS once. To minimize the interference of culture media with the irradiation process, 500 μl PBS was added before irradiation. Healthy NP and AF cells (n=4/each group) were exposed to a single dose of 5 Gy, 10 Gy, or 15 Gy of X-ray in a CellRad benchtop X-ray irradiator (Precision X-Ray) at a rate of 2.6 Gy/min. The irradiation doses and rate were selected based on prior studies (Ungvari et al., 2013; Zhong et al., 2024) and optimized to effectively induce senescence-associated changes in human IVD cells without triggering excessive cell death, which is often observed at higher irradiation doses. After irradiation, cells were immediately incubated with growth media. Cells exposed to 10 Gy of irradiation showed the most pronounced senescent phenotype on day 10 and were used for further experiments. For treatment experiments, cells were exposed to 10 Gy of X-ray and treated with PDGF-AB/BB (20 ng/ml) immediately after irradiation for 10 d. The culture of media was changed every other day.
 
-## Senescence-associated β-galactosidase (SA-β-Gal) staining
+### Senescence-associated β-galactosidase (SA-β-Gal) staining
 
 SA-β-Gal staining was performed according to the manufacturer’s protocol (Cell Signaling Technology, #9860). In brief, cells cultured in six-well plates were washed in PBS and fixed with 1 X fixative solution for 10 min. 1 ml of β-Gal staining solution (containing 1 mg/ml X-Gal) was added and the cells were incubated at 37 °C in the absence of CO2 overnight. Cells were washed in PBS and observed under a bright-field microscope (ECHO Revolve). Technical triplicates were performed for each sample.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Cells cultured on glass coverslips were washed in 1 X PBS and fixed in 4% (v/v) formaldehyde for 10 min. After washing in 1 X PBS, cells were premetallized in PBS with 0.1% Triton X-100 for 15 min. Non-specific binding sites were blocked in 0.1% Tween-20/PBS with 1% bovine serum albumin for 30 min, followed by incubating with primary antibodies against P21 (1:500, Cell Signaling Technology, #2947), P16 (1:500, Cell Signaling Technology, #80772), or Lamin B1 (1:500, Cell Signaling Technology, #68591 S). After overnight incubation at 4 °C, the cells were washed and incubated with the corresponding host-specific secondary antibodies goat anti-mouse Alex Fluor 488 (1:1000, #ab150113), or goat anti-rabbit Alex Fluro 647 (1:1000, #ab150079) for 1 hr. Cells were counterstained and mounted with mounting medium with DAPI (Abcam, #ab104139) and visualized using an Olympus BX63 automated fluorescence microscope. Technical triplicates were performed for each sample.
 
-## Quantitative real-time PCR assays
+### Quantitative real-time PCR assays
 
 Total RNA was extracted from cells collected in TRIzol reagent (Thermo Fisher Scientific, #15596018) and RNA quality was measured using a NanoDrop-1000 spectrophotometer (Thermo Fisher Scientific, #ND-2000). 1 μg of RNA was reverse transcribed using Verso cDNA synthesis kit (Thermo Fisher Scientific, #AB-1453B). Quantification of mRNA expression was determined by SYBR-based real-time PCR using PowerUp SYBR Green Master Mix (Applied Biosystems, #A25742). PCR primer sequences were listed in Table 2. Values were normalized to ACTB. mRNA levels were presented as fold change compared to untreated cells according to the 2-ΔΔCT method. Each qPCR assay was performed in technical triplicates for each sample.
 
-## Immunoblotting
+**Table 2.**
+ Sequence of primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Primer sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P21</td>
+      <td>Forward: 5’-GAC ACCACT GGA GGG TGA CT-3’Reverse: 5’-CAGGTC CAC ATG GTC TTC CT-3’</td>
+    </tr>
+    <tr>
+      <td>P16</td>
+      <td>Forward: 5’-CCAACGCACCGAATAGTTACG-3’Reverse: 5’-GCGCTGCCCATCATCATG-3’</td>
+    </tr>
+    <tr>
+      <td>IL6</td>
+      <td>Forward: 5’-CCGGGAACGAAAGAGAAGCT-3’Reverse: 5’-GCGCTTGTGGAGAAGGAGTT-3’</td>
+    </tr>
+    <tr>
+      <td>CCNB1</td>
+      <td>Forward: 5’-ACTGGGTCGGGAAGTCACTG-3’Reverse: 5’-CATTCTTAGCCAGGTGCTGC-3’</td>
+    </tr>
+    <tr>
+      <td>CCND1</td>
+      <td>Forward: 5’-CTGTGCTGCGAAGTGGAAAC-3’Reverse: 5’-TCTGTTTGTTCTCCTCCGCC-3’</td>
+    </tr>
+    <tr>
+      <td>CASP3</td>
+      <td>Forward: 5’-TGG TTC ATC CAG TCG CTT TG-3’Reverse: 5’-ATT CTG TTG CCA CCT TTC G-3’</td>
+    </tr>
+    <tr>
+      <td>MKI67</td>
+      <td>Forward: 5’-ATTTGCTTCTGGCCTTCCCC-3’Reverse: 5’-CCAAACAAGCAGGTGCTGAG-3’</td>
+    </tr>
+    <tr>
+      <td>ACTB</td>
+      <td>Forward: 5’-CTC TTC CAG CCT TCC TTC CT-3’Reverse: 5’-AGC ACT GTG TTG GCG TAC AG-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Immunoblotting
 
 Whole-cell protein extraction and immunoblotting analysis were performed as previously described (Zhang et al., 2024). Briefly, cells were lysed using RIPA lysis buffer with 1 X protease and phosphatase inhibitor (Thermo Fisher Scientific, #PI78440). Protein concentration was determined using a Pierce BCA protein assay kit (Thermo Fisher Scientific, #23225) and 20 μg of cell lysate from each sample was used to determine the protein expression of P21 (1:2000, Cell Signaling Technology, #2947), NF-kB (1:2000, Cell Signaling Technology, #8242 S), and PDGFRα (1:1000, Cell Signaling Technology, #3164 S). All proteins were normalized to β-actin (1:2000, Cell Signaling Technology, #5125 S). Technical triplicates were performed for each sample.
 
-## Statistics
+### Statistics
 
 One-way analysis of variance (ANOVA) testing was performed to assess the effects of treatment on NP and AF cells with subsequent Dunnett post hoc testing. To analyze the effects of ionizing radiation on the expression of senescence markers in cells, a t-test was utilized. Data are presented as mean ± standard deviations. There were no samples were excluded from the analysis. The statistical analyses were performed using GraphPad Prism 9. A p-value < 0.05 was considered statistically significant.
 
 ## Results
 
-## Transcriptomics of AF and NP cells in response to PDGF-AB/BB
+### Transcriptomics of AF and NP cells in response to PDGF-AB/BB
 
 Bulk RNA sequencing was performed to investigate the global changes in gene expression of degenerated AF and NP cells in response to rhPDGF-AB/BB treatment. Principal component analysis (PCA) on all detected genes revealed distinct clusters between untreated and rhPDGF-AB/BB-treated samples, while clusters of rhPDGF-AB and rhPDGF-BB-treated samples were overlapping (Figure 1—figure supplement 1). As shown in volcano plots, differential expression analysis (|FC|>1.5 and FDR <0.05) revealed 880 downregulated and 740 upregulated genes in AF cells treated with rhPDGF-AB and 996 downregulated and 821 upregulated genes induced by rhPDGF-BB treatment after 5 d of exposure (Figure 1A). In contrast, NP cells had 563 downregulated and 423 upregulated genes in rhPDGF-AB-treated group and 409 downregulated and 404 upregulated genes in rhPDGF-BB-treated group. The top differentially expressed genes (DEGs) were annotated according to FDR and most of these genes exhibited similarity between treatment groups in both AF and NP cells (Figure 1A and B). Furthermore, a heat map visualizing the top 50 DEGs by fold change revealed variability among donors while demonstrating an overall consistent response to rhPDGF-AB/BB treatment across the samples (Figure 1C and D). Tissue-specific changes were observed in AF and NP cells when treated with rhPDGF-AB/BB. For example, SLC26A4 (Pendrin) and CA2, regulators of the process of transporting and producing bicarbonate, are involved in the homeostatic control of pH in various types of cells (Vince and Reithmeier, 1998; Silagi et al., 2018) and their expression was upregulated in NP cells when treated with rhPDGF-AB/BB (Figure 1D). MAMDC2 and COL21A1, involved in extracellular matrix organization (Chou and Li, 2002; Mavillard et al., 2023), were also upregulated in NP cells, while WISP2 (Ruiz-Fernández et al., 2022) and RARRES2 (Liu-Chittenden et al., 2017), modulators of the induction of inflammatory mediators and immune response, were downregulated after treatment. In contrast, in addition to the commonly upregulated CA2, MDMC2 and RARRES2, AF cells showed alterations in genes involved in mechanical stress, pain sensation, and angiogenesis, such as CSRP3 (Rashid et al., 2015), PI16 (Singhmar et al., 2020), EFEMP1 (Song et al., 2011), and SLC26A4-AS1 (Li et al., 2021; Figure 1C). Notably, PRELP, potentially associated with Hutchinson-Gilford progeria (Lewis, 2003), was also downregulated in rhPDGF-AB/BB-treated AF cells (Figure 1A).
 
-## Functional analysis of AF cells treated with PDGF-AB/BB
+![Figure 1.](https://cdn.elifesciences.org/articles/103073/elife-103073-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Volcano plots showing the differentially expressed genes (DEGs) in AF (A) and NP (B) cells treated with rhPDGF-AB/BB for 5 d (cutoff: |FC|>1.5 and FDR < 0.05). DEGs were annotated in the plot according to false discovery rate (FDR). (C, D) Heatmap plots showing the top 50 DEGs in rhPDGF-AB/BB-treated AF (C) and NP (D) cells based on fold change. NP: n=5 samples. AF: n=6 samples.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103073/elife-103073-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) PCA plot of NP (A) cells and AF cell (B) showed the distinct cluster between untreated and treated samples. The clusters of PDGF-AB and BB samples were overlapping. NP: n=5 each group. AF: n=6 each group.
+
+### Functional analysis of AF cells treated with PDGF-AB/BB
 
 To investigate the enriched biological processes (BP) induced by rhPDGF-AB/BB treatment in AF cells, gene ontology (GO) analysis was performed using upregulated and downregulated DEGs separately. As expected, the biological processes between rhPDGF-AB and -BB-treated samples were mostly overlapping (Figure 2A and B). In AF cells, upregulated DEGs were significantly enriched in biological processes including regulation of cell cycle and chromosome segregation. Furthermore, AF cells demonstrated upregulated pathways including mesenchymal cell differentiation and response to oxygen levels and downregulated pathways including response to ROS and oxidative stress (Figure 2A). Moreover, the treatment downregulated groups of genes related to neurogenesis and response to mechanical stimulus (Figure 2B). In line with the results of GO analysis, GSEA analysis revealed an overrepresentation of cell cycle pathway in rhPDGF-AB/BB-treated cells (Figure 2C). Additionally, the ErbB signaling pathway, proteasome pathway, and cytosolic DNA-sensing pathway were enriched, suggesting that PDGF-AB/BB treatment promoted cell growth, protein turnover, and maintenance of cellular homeostasis. The leading-edge genes that contributed most significantly to these pathways include CCNB1, CCND1, AREG, PSMB9, TREX1, and POLR3A, as shown in Figure 2D. Protein-protein interaction (PPI) network was employed to further investigate the potential connectivity of DEGs between untreated and treated groups using the STRING and Cytoscape softwares (Figure 2E). PPI analysis revealed that the hub genes in rhPDGF-AB-treated samples were associated with inflammation (CCN2, CSF3, OASL, and SOCS1), macrophage function (CSF1R), neurogenesis (NGF, APOE), and angiogenesis (PTGS2). In rhPDGF-BB-treated AF cells, PXDNL, a member of the peroxidase enzyme family and participating in scavenging ROS interacted with IL-18, an activator of NF-kB signaling. Additionally, CD36, involved in angiogenesis, was among the top 10 hub genes. Taken together, these findings suggest that PDGF treatment promoted cell mitogenesis while inhibiting oxidative stress, inflammation, neurogenesis, and response to mechanical stimulus.
 
@@ -99,33 +237,41 @@ To investigate the enriched biological processes (BP) induced by rhPDGF-AB/BB tr
 
 **Figure 2.:** (A, B) Gene ontology (GO) analysis for biological process using upregulated (A) and downregulated (B) differential expression genes (DEGs) in AF cells. Y-axis label represents gene ontology (GO) terms, and x-axis represents geneRatio (geneRatio refers to the proportion of genes that are annotated in specific GO term within all the input genes). The size of the bubble represents the gene counts enriched in a particular GO term and the color indicates the false discovery rate (FDR) of GO terms. (C) Gene set enrichment analysis (GSEA) on the entire transcriptome profile demonstrated an upregulation of the cell cycle, cytosolic DNA-sensing pathway, ErbB signaling pathway, and proteasome and a downregulation of drug metabolism-cytochrome P450 pathway in rhPDGF-BB-treated NP cells. (D) The leading edge genes associated with these pathways were shown using a chord diagram. (E) Protein-protein interaction network using DEGs was constructed in STRING and visualized in Cytoscape.
 
-## Functional analysis of NP cells treated with PDGF-AB/BB
+### Functional analysis of NP cells treated with PDGF-AB/BB
 
 GO analysis revealed similar yet distinct responses to rhPDGF-AB/BB treatment between NP and AF cells. In NP cells, rhPDGF-AB and -BB treatment upregulated groups of genes related to cartilage development, cell-matrix adhesion, Wnt signaling pathway, and response to decreased oxygen levels, which were all important to maintaining NP phenotype (Figure 3A). Downregulated DEGs were enriched in GO terms associated with fatty acid metabolism, cellular respiration, mitochondrial function, and reactive oxygen species production (Figure 3B), suggesting alterations in cellular metabolism and oxidative stress. Gene set enrichment analysis (GSEA) on the entire transcriptomics also revealed that Wnt signaling pathway and neuroactive ligand-receptor interaction were upregulated, while the pathways related to oxidative phosphorylation and ribosome were downregulated in rhPDGF-BB-treated NP cells (Figure 3C). The core enrichment genes associated with these pathways were visualized in a chord diagram (Figure 3D). Specifically, the leading-edge DEGs enriched in Wnt signaling pathway include WNT7B, WNT5A, NKD1, and SFRP1 and oxidative phosphorylation pathway showed enrichment in NDUFB7, NDUFA11, COX5B, and CYC1.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/103073/elife-103073-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Gene ontology (GO) analysis for biological process using upregulated (A) and downregulated (B) differential expression genes (DEGs) in NP cells. Y-axis label represents GO terms, and x-axis represents geneRatio (geneRatio refers to the proportion of genes that are annotated in specific GO term within all the input genes). The size of the bubble represents the gene counts enriched in a particular GO term and the color indicates the false discovery rate (FDR) of GO terms. (C) Gene set enrichment analysis (GSEA) on the entire transcriptome profile demonstrated an upregulation of Wnt signaling pathway and a downregulation of oxidative phosphorylation and ribosome in rhPDGF-BB-treated NP cells. (D) The leading-edge genes associated with these pathways were shown using a chord diagram. (E) Protein-protein interaction network using DEGs was constructed in STRING and visualized in Cytoscape. (F, G) The changes in the gene expression of PDGFRA and IL6 were verified in NP (F) and annulus fibrosus (AF) (G) cells treated with rhPDGF-AB (40 ng/ml) or -BB (20 ng/ml) for 5 d. One-way ANOVA testing was performed to assess the effects of treatment on NP and AF cells with subsequent Dunnett post hoc testing. Data are presented as mean with SD. NP: n=5; AF: n=6. *p<0.05. **p<0.01. ***p<0.001. ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103073/elife-103073-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images of western blot of PDGFRA in NP (left) and AF (right) cells. (B) Quantification of western blot results showing decreased PDGFRA expression in treated samples compared to the untreated group. NP: n=5; AF: n=6. One-way ANOVA with Dunnett post hoc testing was performed. The data is presented as mean with SD. *p<0.05. **p<0.01.
+
 To better understand the regulatory mechanisms of PDGF-AB/BB in degenerated NP cells, DEGs between untreated and treated groups were used to construct PPI networks. The network of the top 10 hub nodes based on betweenness was demonstrated in Figure 3E and it revealed the strong correlation between PDGFRA (PDGF receptor alpha) and IL6, MDM2, MDM2, CCND1, PIK3R1, NOP53, FN1, and IDH2. The enrichment of hub gene IDH2, which plays a role in generating NADPH within mitochondria, further validated the alterations in oxidative phosphorylation pathway and subsequent ROS production, as indicated by GSEA and GO analysis in rhPDGF-AB/BB-treated NP cells. MDM2 (a negative regulator of P53) and predicted NOP53 (a regulator of P53 binding activity) suggested that PDGF-BB interfered with P53 signaling pathway. The interaction between these genes and inflammatory cytokine IL6 indicated a potential involvement of PDGF-AB/BB in cellular senescence. The gene expression of top hub genes PDGFRA and IL6 was further verified in both NP (Figure 3F) and AF (Figure 3G) cells by qPCR. PDGF-AB/BB increased the gene expression of PDGFRA in only NP cells and reduced the IL6 gene expression in both types of cells. Interestingly, the protein expression of PDGFRA was decreased in treated NP and AF cells compared to untreated groups (Figure 3—figure supplement 1). The discrepancy in changes between gene and protein expression levels reflects the complexity in the dynamic regulation of PDGFRA (Figure 3—figure supplement 1). Taken together, NP and AF cells responded differently to PDGF-AB/BB treatment, but both cell types showed a positive regulation of cell cycle and inhibited inflammation, response to ROS, oxidative stress, and mitochondrial dysfunction, indicating a role of PDGF-AB/BB in IVD cell senescence.
 
-## Induction of NP cellular senescence through X-ray radiation
+### Induction of NP cellular senescence through X-ray radiation
 
 To test our hypothesis that PDGF-AB/BB provides protection against the progression of cellular senescence in the IVD, we first created a cellular senescence model using X-ray radiation. The healthy NP cells were exposed to 5, 10, and 15 Gy of irradiation and cultured for 7–10 d to develop a senescent phenotype. SA-β-gal staining was performed to detect senescent cells. We found that non-irradiated, proliferating NP cells showed elongated, spindle-shaped morphology and faint SA-β-gal staining at day 7 (Figure 4A). In contrast, cells exposed to 5 and 10 Gy of irradiation developed characteristics of a senescent cell phenotype — enlarged cell size, low cell number, and a higher percentage of SA-β-gal positive cells. However, cells exposed to 15 Gy of radiation underwent significant cell death, showing negligible SA-β-gal staining. As a result, we excluded the 15 Gy dosage group in subsequent studies. To quantify cell growth, the MTT assay was performed, which revealed reduced cell proliferation under 5 and 10 Gy of irradiation compared to the non-irradiated group (Figure 4B). Furthermore, we examined the expression of senescence-related markers — Lamin B1, P21, and P16. Lamin B1 is a structural component of the nucleus, and its loss is a senescence-associated biomarker (Freund et al., 2012). Non-irradiated cells displayed nuclear Lamin B1 expression, while its expression was lost in healthy NP cells exposed to 5 and 10 Gy of irradiation for 7 d (Figure 4C). Meanwhile, nuclear localization of P21 (Figure 4C) and P16 (Figure 4D) was observed in irradiated cells, with little immunopositivity in non-irradiated cells at day 7. However, the transcripts of P21 and P16 were not significantly decreased until day 10 (Figure 4E and F). Caspase 3 (CASP3) gene expression was reduced at both timepoints, suggesting that the irradiated cells were resistant to apoptosis. Furthermore, the gene expression of PDGFRA was significantly decreased in cells under 10 Gy of irradiation at day 10. Taken together, when exposed to irradiation for 10 d, healthy human NP cells developed a senescent phenotype, accompanied by decreased PDGFRA expression.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/103073/elife-103073-fig4-v1.jpg)
 
-**Figure 4.:** (A) Senescence-associated β-galactosidase (SA-β-gal) staining in healthy nucleus pulposus (NP) cells under different doses of irradiation at day 7. Images were captured under 10 X magnification using Echo microscope. ROI: region of interest. Scale bar = 200 µm. (B) MTT assay showed decreased cell proliferation after irradiation at day 7. One-way ANOVA testing was performed to assess the effects of irradiation dosage on NP and annulus fibrosus (AF) cells with subsequent Dunnett post hoc testing. Data are presented as mean with SD. n=4. **p<0.01. (C) Immunocytochemistry staining on Lamin B1 and P21 in irradiated cells at day 7. Scale bar = 50 µm. (D) Quantification of P21-positive cells. One-way ANOVA testing was performed to assess the effects of irradiation dosage on NP and AF cells with subsequent Dunnett post hoc testing. Data are presented as mean with SD. n=4. ***p<0.001. ****p<0.0001. (E) Immunocytochemistry staining on P16 in irradiated cells at day 7. Scale bar = 50 µm. (F) Quantification of P16 positive cells. One-way ANOVA testing was performed to assess the effects of irradiation dosage on NP and AF cells with subsequent Dunnett post hoc testing. Data are presented as mean with SD. n=4. *p<0.05. ***p<0.001. (G) Changes in the gene expression levels of P21, P16, and CASP3 in NP cells under 10 Gy of irradiation compared to the non-irradiated group at day 7 and 10 timepoints. (H) The gene expression of PDGFRA was reduced under 10 Gy of irradiation compared to the non-irradiated group at day 10. t-test was utilized to analyze the effects of ionizing radiation on the expression of senescence markers in cells (G, H). Data are presented as mean with SD. n=4. *p<0.05. **p<0.01. ***p<0.001.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Senescence-associated β-galactosidase (SA-β-gal) staining in healthy nucleus pulposus (NP) cells under different doses of irradiation at day 7. Images were captured under 10 X magnification using Echo microscope. ROI: region of interest. Scale bar = 200 µm. (B) MTT assay showed decreased cell proliferation after irradiation at day 7. One-way ANOVA testing was performed to assess the effects of irradiation dosage on NP and annulus fibrosus (AF) cells with subsequent Dunnett post hoc testing. Data are presented as mean with SD. n=4. **p<0.01. (C) Immunocytochemistry staining on Lamin B1 and P21 in irradiated cells at day 7. Scale bar = 50 µm. (D) Quantification of P21-positive cells. One-way ANOVA testing was performed to assess the effects of irradiation dosage on NP and AF cells with subsequent Dunnett post hoc testing. Data are presented as mean with SD. n=4. ***p<0.001. ****p<0.0001. (E) Immunocytochemistry staining on P16 in irradiated cells at day 7. Scale bar = 50 µm. (F) Quantification of P16 positive cells. One-way ANOVA testing was performed to assess the effects of irradiation dosage on NP and AF cells with subsequent Dunnett post hoc testing. Data are presented as mean with SD. n=4. *p<0.05. ***p<0.001. (G) Changes in the gene expression levels of P21, P16, and CASP3 in NP cells under 10 Gy of irradiation compared to the non-irradiated group at day 7 and 10 timepoints. (H) The gene expression of PDGFRA was reduced under 10 Gy of irradiation compared to the non-irradiated group at day 10. t-test was utilized to analyze the effects of ionizing radiation on the expression of senescence markers in cells (G, H). Data are presented as mean with SD. n=4. *p<0.05. **p<0.01. ***p<0.001.
 
-## PDGF-AB/BB inhibited senescent phenotype in NP and AF cells
+### PDGF-AB/BB inhibited senescent phenotype in NP and AF cells
 
 To investigate the protective effects of PDGF-AB/BB against cell senescence in the IVD, healthy human NP and AF cells were exposed to 10 Gy of irradiation, followed by immediate treatment with 20 ng/ml rhPDGF-AB/BB for 10 d. We first examined the cell cycle progression using DAPI-stained cells and found that rhPDGF-BB significantly increased the percentage of cell population in the S phase in irradiated NP (Figure 5A and B) and AF (Figure 5C and D) cells at day 10. In rhPDGF-AB-treated cells, the percentage of cell population in the S phase was increased in AF cells, but not significantly in NP cells. These findings suggested that PDGF-AB/BB rescued IVD cells from cell cycle arrest in irradiation-induced senescent cells. Additionally, SA-β-gal staining demonstrated an increase in the number of senescent cells after irradiation at day 10, whereas a decrease was examined in rhPDGF-AB/BB-treated NP and AF cells (Figure 5E).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/103073/elife-103073-fig5-v1.jpg)
 
-**Figure 5.:** (A-F) Cell cycle analysis by DAPI staining in irradiated healthy NP (A–C) and AF (D–F) cells treated with rhPDGF-AB (40 ng/ml) or BB (20 ng/ml) for 10 d. The upper panel shows the data obtained from NP cells, and lower panel shows the data from AF cells. Representative graphs (A, D) showing the changes in cell cycle progression in NP and AF cells after treatment. (B, E) Quantification of cell cycle analysis showed the cell percentage in each phase. Two-way ANOVA with Dunnett post hoc testing was performed. n=4 each group. Data are presented as mean with SD. *p<0.05. (C, F) The cell percentage in the S phase was shown to examine the effects of treatment on cell proliferation. One-way ANOVA with Dunnett post hoc testing was performed. n=4 each group. Data are presented as mean with SD. *p<0.05. **p<0.01. (G) SA-β-gal staining in irradiated healthy NP (upper panel) and AF cells (lower panel) showing the reduced senescence-associated β-galactosidase (SA-β-gal) positive cells after treatment. Images were captured under 10 X magnification using the Echo microscope. ROI: region of interest. Scale bar = 200 µm.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A-F) Cell cycle analysis by DAPI staining in irradiated healthy NP (A–C) and AF (D–F) cells treated with rhPDGF-AB (40 ng/ml) or BB (20 ng/ml) for 10 d. The upper panel shows the data obtained from NP cells, and lower panel shows the data from AF cells. Representative graphs (A, D) showing the changes in cell cycle progression in NP and AF cells after treatment. (B, E) Quantification of cell cycle analysis showed the cell percentage in each phase. Two-way ANOVA with Dunnett post hoc testing was performed. n=4 each group. Data are presented as mean with SD. *p<0.05. (C, F) The cell percentage in the S phase was shown to examine the effects of treatment on cell proliferation. One-way ANOVA with Dunnett post hoc testing was performed. n=4 each group. Data are presented as mean with SD. *p<0.05. **p<0.01. (G) SA-β-gal staining in irradiated healthy NP (upper panel) and AF cells (lower panel) showing the reduced senescence-associated β-galactosidase (SA-β-gal) positive cells after treatment. Images were captured under 10 X magnification using the Echo microscope. ROI: region of interest. Scale bar = 200 µm.
 
 At day 10, we analyzed the expression of PDGFRA and key senescence regulators of cell cycle inhibitors P21 and P16, CASP3, and SASP mediator IL6. The treatment of rhPDGF-BB to irradiated NP cells significantly increased the gene expression of PDGFRA and decreased the gene expression of P21, P16, and IL6, while playing no effect in the gene expression of CASP3 (Figure 6A). Comparably, the treatment of rhPDGF-AB to irradiated NP cells significantly decreased the gene expression of P21 and IL6 and played no effect on the gene expression of PDGFRA, P16, and CASP3 (Figure 6A). In AF cells, the results show that the treatment of rhPDGF-BB and rhPDGF-AB reduced the gene expression of P21 to those of NP cells (Figure 6B). However, the treatment of either rhPDGF-BB or rhPDGF-AB had no effect on the gene expression of other genes examined (Figure 6B). The lack of change in the gene expression of PDGFRA from the treatment of either rhPDGF-BB or rhPDGF-AB suggested that PDGF-BB reduced senescent phenotype through other receptors in AF cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/103073/elife-103073-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) Changes in the gene expression of PDGFRA, P21, P16, CASP3, and IL6 in irradiated nucleus pulposus (NP) (A) and annulus fibrosus (AF) (B) cells treated with rhPDGF-AB/BB. (C, D) Protein expression levels of P21 and NF-κB in irradiated NP (C) and AF (D) cells treated with rhPDGF-AB/BB. n=4 each group. One-way ANOVA with Dunnett post hoc testing was performed. The data is presented as mean with SD. *p<0.05. **p<0.01. ****p<0.0001.Figure 6—source data 1.Figure 6.Figure 6—source data 2.Figure 6, indicating the bands and treatments.Figure 6—source data 3.Figure 6.
+**Figure 6.:** (A, B) Changes in the gene expression of PDGFRA, P21, P16, CASP3, and IL6 in irradiated nucleus pulposus (NP) (A) and annulus fibrosus (AF) (B) cells treated with rhPDGF-AB/BB. (C, D) Protein expression levels of P21 and NF-κB in irradiated NP (C) and AF (D) cells treated with rhPDGF-AB/BB. n=4 each group. One-way ANOVA with Dunnett post hoc testing was performed. The data is presented as mean with SD. *p<0.05. **p<0.01. ****p<0.0001.
 
 Furthermore, compared to irradiation group, the protein levels of P21 and NF-κB, a major regulator stimulating SASP, were inhibited in rhPDGF-BB-treated NP cells (Figure 6C). In irradiated AF cells, the protein expression of P21 was significantly reduced by rhPDGF-BB treatment. The expression of NF-kB showed a decreasing trend in rhPDGF-BB-treated cells. rhPDGF-AB had no effects on the protein expression of P21 and NF-kB. Overall, PDGF-BB mitigated the progression of senescent phenotype in both human NP and AF cells.
 

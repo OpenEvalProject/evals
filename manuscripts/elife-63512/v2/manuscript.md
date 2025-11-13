@@ -41,6 +41,14 @@ To analyze the effects of promoter H3K18/27ac on Pol2 elongation through the ear
 
 We infected HBTECs with the wt E1A vector or the DM-E1A vector expressing mutant E1A with polyAla substitutions of the two highly acidic peptides flanking CR3 (Figure 1—figure supplement 1). Wt E1A binds CBP/p300 through these highly acidic peptides, inducing histone H3 acetylation at K18 and K27 by the CBP/p300 acetyl transferase domain at the viral E2early, E3, and E4 promoter regions (Hsu et al., 2018). In cells expressing DM-E1A, which does not interact in vivo with CBP/p300 through the E1A activation domain (E1A-AD) (Hsu et al., 2018), there was far less H3K18/27ac at these viral early promoter regions (Figure 1a). To express equal steady-state levels of the wt E1A and less stable DM-E1A proteins, infections were performed at a twentyfold higher multiplicity of infection for the DM-E1A vector than for the wt E1A vector (Hsu et al., 2018; Figure 1—figure supplement 1). Cells infected with the wt E1A vector were also coinfected with sufficient E1A deletion mutant dl312 to maintain the same number of viral DNA molecule templates for the viral early regions (~100 viral DNA molecules per nucleus) in cells expressing the same level of wt E1A and the DM-E1A protein (Hsu et al., 2018; Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig1-v2.jpg)
+
+**Figure 1.:** (a, bottom) Map of the major human adenovirus 5 early E2, E3, and E4 mRNAs. Deletions in the E3 regions of dl312 and the E1A-DM vector are shown by cross-hatched horizontal bars. Shared E3 sequence used as the E3 gene body is indicated by the gray bar above E3. Vertical stripes highlighted in yellow indicate promoter-proximal regions. Global Run-On sequencing (GRO-seq) counts from primary human bronchial-tracheal epithelial cells infected with wt+dl312 or DM vectors at 12 hr post-infection were plotted on the Ad5 genome with H3K18ac, H3K27ac, and H3K9ac ChIP-seq data (Hsu et al., 2018). GRO-seq tracks are shown for the two viral DNA strands (+, transcribed to the right; and –, transcribed to the left), with two different y-axis scales to allow visualization of high- and low-amplitude peaks. The double-headed arrows in the GRO-seq plots in the E4 region refer to gene body regions discussed in the text. (b) Average fold change in pause index for E2early, E3, and E4 in cells expressing DM-E1A compared to wt E1A. Pause index is the ratio of reads in the promoter region (transcription start site [TSS] to +200) to reads in the gene body (+200 to TTS). Error bars represent standard deviation of three biological replicates. Paired t-test comparing wt E1A and DM-E1A for E2, E3, and E4. * indicates a significant difference (p-value<0.05) between cells expressing wt E1A and DM-E1A. ‘ns’ indicates no significant difference.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) E1A interaction maps for large E1A (289 aa) and small e1a (243 aa). Colored portions and horizontal black bars above them represent regions of E1A that interact with the indicated cellular protein. Dashed lines connect conserved regions of E1A that bind the indicated targets together. Conserved regions (CR) 1–4 are indicated in brackets. (b) Sequences of Ad5 mutants from E1A (aa 121–223), with alanine substitutions in red. (c) Western blot showing wt and DM large E1A protein levels at 12 hr post-infection (p.i). Human bronchial-tracheal epithelial cells were coinfected with the wt E1A-expressing virus at an MOI (multiplicity of infection) of 5 and dl312 at an MOI (multiplicity of infection) of 95 or infected with the DM virus alone at an MOI (multiplicity of infection) of 100. Ku-86 protein levels were used as loading controls.
+
 GRO-seq data at 12 hr p.i. with the vector expressing wt E1A revealed peaks of paused Pol2 with the expected orientation and location of promoter-proximal paused Pol2, ~40–60 bp downstream from the E3 and E4 TSSs (Figure 1a, highlighted, Figure 2a). At 12 hr p.i., very low GRO-seq signal was observed at the E2 early promoter or within the E2 gene body in wt E1A expressing cells compared to E3 and E4 (Figure 1a). This is probably because E2early transcription is delayed compared to E3 and E4 in these primary cells and increases by 18 hr p.i. (Hsu et al., 2018). The low GRO-seq signal in the E2early promoter region and gene body was decreased further in cells expressing DM-E1A compared to wt E1A (Figure 1a), supporting our previous conclusion that E2early transcription is regulated by H3K18/27ac in the promoter region because it is required for rapid PIC assembly (Hsu et al., 2018).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig2-v2.jpg)
@@ -51,7 +59,7 @@ To determine the degree of promoter-proximal pausing in the E2, E3, and E4 promo
 
 After activation by DM-E1A, the PI at E4 increased 2.5-fold on average in three biological replicate GRO-seq experiments, a significant increase compared to the degree of pausing at E4 when activated by wt E1A (Figure 1b). Because the vectors expressing wt E1A and DM-E1A had different size deletions in E3 due to differences in their constructions (Figure 1a, bottom), the calculation of PI for E3 was based on the ~1.1 kb region of E3 common to both vectors (gray line above E3 in the Ad5 map, Figure 1a, bottom). In contrast to E4, there was no significant change in PI at E3 where promoter H3K18/27 acetylation had only a modest effect on transcription (Hsu et al., 2018; Figure 1b). Similar to E3, the low level of GRO-seq counts at the E2early promoter region showed an insignificant change in PI between wt E1A and DM E1A (Figure 1b), suggesting that H3K18/27ac acetylation does not affect pause release at the E2early promoter and primarily promotes Pol2 initiation. Therefore, loss of H3K18/27 promoter acetylation produced a smaller defect on promoter-proximal Pol2 pause release at the E2 and E3 promoters than at the E4 promoter.
 
-## Decreased Pol2 pause release in the E4 promoter-proximal region correlated with decreased association of SEC subunits CDK9, AF9, and ENL
+### Decreased Pol2 pause release in the E4 promoter-proximal region correlated with decreased association of SEC subunits CDK9, AF9, and ENL
 
 The CDK7 subunit of TFIIH phosphorylates Ser5 of the Pol2 CTD repeat during transcription initiation, and subsequently the CDK9 subunit of P-TEFb phosphorylates Ser2 of the CTD repeat, NELF, and DSIF causing release of Pol2 arrested by NELF binding in the promoter-proximal region, and the transition to productive elongation (Cramer, 2019; Jonkers and Lis, 2015; Rahl et al., 2010; Yamada et al., 2006). To characterize these mechanisms on the HAdV-5 genome, we performed ChIP-seq for Pol2 Ser5-P, Pol2 Ser2-P, NELF, and CDK9 in cells expressing wt E1A (Figure 2a). At E2early, Ser5-P peaked near the TSS and decreased throughout the gene body, a distribution that is typical in yeast that also has short genes with few introns (Buratowski, 2009), as well as mouse ES cells (Rahl et al., 2010) with the much longer, multi-exon, long-intron genes typical of vertebrates. We observed two Ser2-P peaks in the E2early gene body, one positioned just downstream of the TSS probably corresponding to paused Pol2 in complex with NELF, and a second peak upstream of the E2early second exon. A small Ser5-P peak was also observed at this position (Figure 2a). These Pol2 peaks just upstream of the E2 second exon may be explained by a previously reported reduction in elongation rate over some exons, proposed to influence splice site recognition and spliceosome assembly (Jonkers et al., 2014; Martin et al., 2013).
 
@@ -61,43 +69,79 @@ We next asked if defective paused Pol2 release after activation by DM-E1A was du
 
 The ChIP-seq counts for AF9 and ENL in cells expressing wt E1A were twofold to fourfold higher at the E3 promoter compared to the E2early and E4 promoters. In cells expressing the DM-E1A, which caused hypoacetylation of H3K18/27 at the early viral promoters, the ChIP-seq signals for AF9 and ENL at the E2early and E4 promoters were virtually eliminated, but clear peaks for AF9 and ENL persisted at the E3 promoter region, although they were reduced considerably compared to cells expressing wt E1A (Figure 1, Figure 2b; Hsu et al., 2018). BRD4 association at the E2early, E3, and E4 TSSs changed very little in cells infected with the DM-E1A vector compared to the wt E1A vector, although it was reduced to about 50% the level with wt E1A within the transcription units (Figure 2b). These data suggest that association of the wt E1A-AD with CBP/p300 and the resulting acetylation of H3K18/27 in the early promoter regions are required for maximal recruitment of the SEC to the viral early promoters.
 
-## CBP/p300 acetyl transferase activity is required for efficient Pol2 pause release and recruitment of AF9, ENL, and BRD4 at E4
+### CBP/p300 acetyl transferase activity is required for efficient Pol2 pause release and recruitment of AF9, ENL, and BRD4 at E4
 
 A-485 is a potent and specific small molecule inhibitor of CBP/p300 acetyl transferase activity that competes with acetyl-CoA for binding to the acetyl transferase domain active site (Lasko et al., 2017). Decreased total cell H3K18ac after A-485 treatment in HBTECs was confirmed by western blot (Figure 3a). ChIP-seq for H3K9ac, H3K18ac, and H3K27ac in wt E1A vector-infected cells treated with A-485 for 2 hr demonstrated A-485 inhibition of H3K18/27ac, as expected (Lasko et al., 2017; Weinert et al., 2018), while H3K9ac was modestly affected at viral early promoters (Figure 3b). As a measure of the transcription rate of the early viral genes, we assayed pre-mRNA levels using qRT-PCR of intronic RNA isolated from HBTECs expressing wt E1A treated with 10 µM A-485 or control DMSO (dimethyl sulfoxide) vehicle alone for 2 hr. We observed significant decreases in E2early and E4 pre-mRNA after A-485 treatment, while E3 pre-mRNA was not decreased significantly (Figure 3c). This result confirms that E3 transcription is less dependent on promoter H3K18/27ac than E2early and E4 transcription (Hsu et al., 2018).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig3-v2.jpg)
 
-**Figure 3.:** (a) Western blot for H3K18ac, H3K9ac, and total H3 in human bronchial-tracheal epithelial cells treated with control vehicle DMSO (dimethyl sulfoxide) or 10 µM A-485 after 2, 3, or 4 hr. (b) H3K18ac, H3K27ac, and H3K9ac ChIP-seq at early viral promoters in cells treated with control vehicle DMSO (dimethyl sulfoxide) or 10 µM A-485 for 2 hr. (c) qRT-PCR for E2early, E3, and E4 pre-mRNA transcripts in cells treated with DMSO (dimethyl sulfoxide) or 10 µM A-485 for 2 hr. Averages and standard deviations shown for three successive experiments. Paired t-test, *p<0.05 between cells treated with DMSO (dimethyl sulfoxide) and A-485. ‘ns’ indicates no significant difference between cells treated with DMSO (dimethyl sulfoxide) and A-485.Figure 3—source data 1.
+**Figure 3.:** (a) Western blot for H3K18ac, H3K9ac, and total H3 in human bronchial-tracheal epithelial cells treated with control vehicle DMSO (dimethyl sulfoxide) or 10 µM A-485 after 2, 3, or 4 hr. (b) H3K18ac, H3K27ac, and H3K9ac ChIP-seq at early viral promoters in cells treated with control vehicle DMSO (dimethyl sulfoxide) or 10 µM A-485 for 2 hr. (c) qRT-PCR for E2early, E3, and E4 pre-mRNA transcripts in cells treated with DMSO (dimethyl sulfoxide) or 10 µM A-485 for 2 hr. Averages and standard deviations shown for three successive experiments. Paired t-test, *p<0.05 between cells treated with DMSO (dimethyl sulfoxide) and A-485. ‘ns’ indicates no significant difference between cells treated with DMSO (dimethyl sulfoxide) and A-485.
 
 To determine if A-485-induced H3K18/27 hypoacetylation correlates with changes in elongation, we performed GRO-seq in DMSO or A-485-treated cells and calculated the pausing indices for transcription of the viral early genes (Figure 4a, b). There was little difference in PI with A-485 treatment at the E2early (DMSO (dimethyl sulfoxide) PI = 0.13, A-485 PI = 0.12) or E3 (DMSO (dimethyl sulfoxide) PI = 1.20, A-485 PI = 1.19) promoters, but a clear increase in PI was observed for E4 (DMSO (dimethyl sulfoxide) PI = 0.79, A-485 PI = 1.13) (Figure 4b). These results indicate that release of paused Pol2 in the E4 promoter-proximal region depends on CBP/p300 HAT activity and is consistent with a requirement for promoter H3K18/27 acetylation for maximal E4 elongation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig4-v2.jpg)
 
-**Figure 4.:** (a) Global Run-On sequencing (GRO-seq) in cells expressing wt E1A treated with DMSO (dimethyl sulfoxide) or 10 µM A-485 for 2 hr. GRO-seq tracks are plotted with ChIP-seq for AF9, ENL, and BRD4 in cells treated with DMSO (dimethyl sulfoxide) or 10 µM A-485 for 2 hr. Both AF9 and ENL ChIP-seq tracks are shown with two different y-axes. (b) Pause indexes for E2early, E3, and E4 in cells treated with DMSO (dimethyl sulfoxide) versus A-485. (c) Model for regulation of E4 elongation by SEC recognition of CBP/p300-E1A-mediated H3K18/27ac.Figure 4—source data 1.
+**Figure 4.:** (a) Global Run-On sequencing (GRO-seq) in cells expressing wt E1A treated with DMSO (dimethyl sulfoxide) or 10 µM A-485 for 2 hr. GRO-seq tracks are plotted with ChIP-seq for AF9, ENL, and BRD4 in cells treated with DMSO (dimethyl sulfoxide) or 10 µM A-485 for 2 hr. Both AF9 and ENL ChIP-seq tracks are shown with two different y-axes. (b) Pause indexes for E2early, E3, and E4 in cells treated with DMSO (dimethyl sulfoxide) versus A-485. (c) Model for regulation of E4 elongation by SEC recognition of CBP/p300-E1A-mediated H3K18/27ac.
 
 To determine if inhibition of CBP/p300 HAT activity resulted in defective SEC recruitment at E4, we performed AF9, ENL, and BRD4 ChIP-seq in cells infected with the wt E1A vector after DMSO (dimethyl sulfoxide) or A-485 treatment. As with cells expressing DM-E1A, A-485 treatment greatly decreased AF9 association at the E2early, E3, and E4 promoter regions, and decreased total ENL ChIP-seq counts from the E2early TTS to the right end of the genome from 13,712,875 to 10,804,279 reads, an ~20% decrease (Figure 4a). We also observed decreased BRD4 throughout the transcribed early regions in A-485-treated cells. Taken together, these data show that maximal recruitment of SEC complexes to viral early promoters requires H3K18/27ac by the CBP/p300 acetyl transferase catalytic domain targeted to the promoter region by the interaction between CBP/p300 and the E1A-AD acidic regions (Figure 4c).
 
-## CBP/p300 HAT inhibition by A-485 affects H3 acetylation of cellular chromatin differently at promoters and enhancers
+### CBP/p300 HAT inhibition by A-485 affects H3 acetylation of cellular chromatin differently at promoters and enhancers
 
 To determine if the effects of H3K18/27ac on Pol2 pause release at E4 is a general mechanism that also applies to transcription of cellular genes, we shifted our study to the human genome. First, we characterized the changes in H3K18/27ac in HBTECs after 2 hr treatment with 10 µM A-485. Western blotting demonstrated an extensive decrease in total cellular H3K18ac, which approached steady state by 2 hr after addition of A-485, as expected (Lasko et al., 2017; Weinert et al., 2018; Figure 3a). H3K18ac and H3K27ac enriched genomic regions were determined by separate ChIP-seq analyses with antibodies specific for either H3K18ac or H3K27ac. H3K18/27ac are enriched at both active promoters and enhancers. Enhancers can be divided into typical enhancers and super-enhancers, which are dense clusters of neighboring enhancers that often activate highly expressed cell identity genes (Whyte et al., 2013). We used the ranking of super-enhancers algorithm (Whyte et al., 2013; Lovén et al., 2013; Hnisz et al., 2013) with H3K27ac ChIP-seq data to determine super-enhancer regions in HBTECs (Zemke et al., 2019). H3K27ac peaks >2.5 kb from the nearest TSS but outside of super-enhancers were classified as typical enhancers. Comparing the average signals for H3K18ac and H3K27ac, we observed the expected decreases due to A-485 treatment at both typical and super-enhancers (Figure 5a). But, on average, A-485 caused greater decreases in both H3K18ac and H3K27ac at super-enhancers than typical enhancers (Figure 5a). This pattern was also true for H3K9ac, although the hypoacetylation by A-485 was to a much lesser extent (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig5-v2.jpg)
+
+**Figure 5.:** (a) Plots of average H3K18ac and H3K27ac signals at all human transcription start sites (TSSs), typical enhancers, and at super-enhancers in primary cells treated with A-485 or DMSO (dimethyl sulfoxide). (b) Venn diagram showing number of protein-coding genes with defects during transcription by A-485 during initiation (greater than twofold decrease in counts in the promoter region) and elongation (greater than twofold increase in pausing index). (c) Boxplots showing distributions of distances (log10 bp) from the nearest super-enhancer to the TSS for 2XPI genes and 2Xin genes versus the same numbers of genes without defects in transcription after A-485. p-Values are from two-sided t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Average H3K9ac and BRD4 at typical enhancers and super-enhancers in cells treated with DMSO (dimethyl sulfoxide) or A-485 treatment. (b) Percentage of genes with consensus TATA boxes in all active genes, 2XPI, and 2XIn genes. * indicates a statistically significant difference (two-sided t-test) compared to the average for all active promoters.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Percentage of H3K27ac, H3K18ac, H3K9ac, and BRD4 peaks called in indicated annotated regions from DMSO versus A-485-treated cells. (b) Total number of H3K27ac, H3K18ac, H3K9ac, and BRD4 peaks observed by ChIP-seq. See Experimental procedures for the method for determining the numbers and positions of peaks across the human genome from ChIP-seq data. (c) Number of H3K27ac, H3K18ac, and H3K9ac and BRD4 peaks at promoters, typical enhancers, and super-enhancers.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a) Motif analysis of promoter-proximal de novo motifs in 2XPI and 2Xin genes. (b) Gene ontology of 2XPI and 2Xin genes.
+
 An unexpected result was the increase in the average level of H3K18ac and H3K27ac at all TSSs in cells treated with A-485 (Figure 5a). Furthermore, the percentage of total H3K27ac and H3K18ac peaks increased at promoters and decreased at enhancers after A-485 treatment, while the effects on H3K9ac peaks were minimal (Figure 5—figure supplement 2). These observations indicate that homeostatic mechanisms function to maintain H3K18/27ac at promoters when CBP/p300, the principal cellular acetyl transferases for these sites (Weinert et al., 2018; Horwitz et al., 2008; Ferrari et al., 2014), are extensively inhibited.
 
-## A-485 affects cellular genes during both transcriptional initiation and elongation
+### A-485 affects cellular genes during both transcriptional initiation and elongation
 
 We were also curious about whether A-485 treatment affected transcription of human genes during both initiation and elongation and whether or not there are variations in the effects of A-485 at different human promoters, as observed on the HAdV-5 genome. GRO-seq reads from control DMSO (dimethyl sulfoxide) and A-485-treated cells were aligned to the human genome to determine the fraction of genes affected by A-485 at different stages in transcription. We limited our analysis to protein-coding genes with active promoters containing at least 20 GRO-seq counts in the promoter region (TSS to +200) and a significant promoter H3K9ac peak (q-value <0.05). Out of 10,062 such active protein-coding genes, we found 674 (∼4.3%) with defective pause release after A-485 treatment (greater than twofold increase in PI, referred to as ‘2XPI’ genes). In total, 157 genes (∼0.1% of active genes) were inhibited for initiation (<50% the GRO-seq counts in the promoter region [TSS – 200 bp] compared to control DMSO-treated cells). We refer to these genes as ‘2XIn’ genes for twofold decreased initiation from A-485. Also, 101 genes passed the criteria for both groups, indicating that both transcription initiation and promoter-proximal pause release were reduced by A-485 treatment for this small set of genes (~0.6% of active genes, Figure 5b). Gene ontology analysis of 2XPI genes (Figure 5—figure supplement 3) revealed enrichment of genes involved in the development of multiple tissues (Figure 5—figure supplement 3), which is typical of genes regulated by enhancers (Bulger and Groudine, 2011; Levine, 2010). We also performed motif analysis for transcription factor binding sites in promoter regions of the 2XPI genes, revealing enrichment for several transcription factors involved in developmental regulation including serum response factor known to regulate angiogenesis as well as neural development and to be a key regulator of mammalian mesoderm formation (Arsenian et al., 1998; Schwartz et al., 2014; Franco and Li, 2009; Knöll and Nordheim, 2009). For 2XIn genes, there was enrichment of binding motifs associated with NKX6-3, which functions in the development of various tissues, most notably those in the central nervous system and gastrointestinal tissues (Yoon et al., 2015).
 
 Since we observed that super-enhancers and transcription of genes involved in development are particularly sensitive to A-485, we asked if 2XPI and 2XIn genes are more likely than most genes to be associated with super-enhancers. We found that, indeed, both 2XPI and 2XIn genes were significantly closer to super-enhancers than randomly selected genes (Figure 5c). This suggests that super-enhancer-associated genes are more dependent on H3K18/K27ac for transcription initiation and elongation than the average expressed gene.
 
-## A-485-sensitive Pol2 pause release and SEC recruitment at genes with low promoter region H3 acetylation
+### A-485-sensitive Pol2 pause release and SEC recruitment at genes with low promoter region H3 acetylation
 
 We plotted the average H3K18ac, K27ac, and K9ac ChIP-seq counts ±5 kb from the TSS for all active genes, 2XPI genes, and 2XIn genes (Figure 6a). H3K18ac and K27ac at TSSs for 2XPI and 2XIn genes decreased in response to A-485, as expected for a specific competitive inhibitor of the CBP/p300 acetyl transferase. But this was in contrast to the surprising increase in H3K18 and K27 acetylation on average near the TSSs for all active genes in response to A-485. Thus H3K18/27 acetylation in the promoter regions of 2XPI and 2XIn genes was decreased by A-485 as it is throughout the vast majority of the genome (Figure 3a), whereas the average H3K18/27 acetylation in the promoter regions for all active genes was increased by treatment with A-485 (Figure 6a). In contrast, H3K9ac did not change at the TSS in the average plot for all active genes or 2XPI genes after A-485 treatment, but did decrease for 2XIn genes (Figure 6a). This suggests that H3K9ac may be sufficient for initiation but not elongation of genes with promoter H3K18/27 hypoacetylation.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig6-v2.jpg)
+
+**Figure 6.:** (a) Average H3K18ac, H3K27ac, and H3K9ac near transcription start sites (TSSs) for all active genes, 2XPI genes, and 2Xin genes after DMSO (dimethyl sulfoxide) or A-485 treatment. (b) Metagene plots of AF9 and ENL ChIP-seq counts across all active genes and 2XPI genes after DMSO (dimethyl sulfoxide) or A-485 treatment. (c) Average BRD4 near TSSs for all active genes and 2XPI genes after DMSO (dimethyl sulfoxide) or A-485 treatment.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Metagene plots of AF9 and ENL ChIP-seq counts across 2XPI genes in cells treated with DMSO (dimethyl sulfoxide) or A-485 treatment. (b) Average BRD4 binding near transcription start sites of 2XIn genes in cells treated with DMSO (dimethyl sulfoxide) or A-485.
+
 To determine if these decreases in H3 acetylation at 2XPI genes were correlated with decreased SEC component binding, we plotted metagene profiles of AF9 and ENL ChIP-seq counts for all active genes and 2XPI genes after DMSO- or A-485 treatment (Figure 6b). Remarkably, AF9 and ENL were extensively enriched at TSSs and throughout gene bodies of 2XPI genes compared to the average for all active genes. Further, after A-485 treatment, AF9 and ENL association with 2XPI genes fell to the average level for all genes, which did not change with A-485 treatment. Thus, genes with an increase in PI after A-485 treatment (2XPI genes) had a very high association of SEC complexes throughout their transcription units that was selectively sensitive to A-485 treatment. Similarly, we found enrichment of AF9 and ENL at TSSs and throughout gene bodies in 2XIn genes, which fell to the level of the average for all genes after A-485 treatment (Figure 6c, Figure 6—figure supplement 1). This decrease in elongation factor association with 2XIn genes is likely explained in part because this group of genes was selected for having decreased Pol2 in the gene body with which elongation factors associate (Figure 6—figure supplement 1). BRD4 association at the TSSs of all active genes was increased with A-485, while association near the TSS of 2XPI and 2XIn genes was reduced by A-485, but to a far less extent than the decrease in AF9 and ENL.
 
-## H3K9ac is sufficient for enhancer association with BRD4 that stimulates pause release at nearby genes
+### H3K9ac is sufficient for enhancer association with BRD4 that stimulates pause release at nearby genes
 
 It was evident that BRD4 peaks were enriched at enhancers. Fifty-six percent of identified BRD4 peaks (see Materials and methods) were >2.5 kb from the nearest TSS in control cells treated with DMSO (dimethyl sulfoxide). Of these distal peaks, 84% overlapped with peaks of H3K27ac, indicating that these peaks were primarily at enhancers. We subsequently clustered all BRD4 peaks >2.5 kb from a TSS (i.e., within an enhancer) based on whether BRD4 association decreased to <50% of DMSO (dimethyl sulfoxide) control after A-485 treatment for 2 hr. There were 7554 peaks where BRD4 decreased to <50% of control after A-485 treatment and 6324 peaks where BRD4 association remained unaltered or was not reduced to <50% of control (referred to as A-485-sensitive and -resistant BRD4 enhancer peaks, respectively; Figure 7). At both A-485-resistant and -sensitive BRD4 enhancer peaks, H3K18/27ac decreased following A-485 treatment (Figure 7a). In contrast, H3K9ac decreased only at the A-485-sensitive BRD4 peaks but not at A-485-resistant BRD4 peaks. These observations indicate that enhancer H3K9ac correlates with BRD4 association and suggest that H3K9ac is sufficient for BRD4 association at enhancers.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig7-v2.jpg)
+
+**Figure 7.:** (a) Heatmaps of BRD4, H3K9ac, H3K18ac, and H3K27ac ChIP-seq data. BRD4 enhancer peaks are divided into those that are A-485-resistant (top cluster) or A-485-sensitive (bottom cluster). (b) Gene browser plots of ChIP-seq data for the indicated histone modifications and BRD4, and GRO-seq counts for regions including the COPS8 (left) and PTPRF (right) genes. (c) Boxplots comparing the change in pausing index (PI) after A-485 treatment (log2 (A-485 PI/DMSO PI)) for all genes versus genes near A-485-sensitive enhancer BRD4 peaks. *p<0.05, two-sided t-test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig7-figsupp2-v2.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig7-figsupp3-v2.jpg)
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/63512/elife-63512-fig7-figsupp4-v2.jpg)
 
 We next asked if BRD4 enhancer association correlated with the extent of Pol2 pause release in the promoter-proximal region of nearby genes. For example, COPS8 has enhancers downstream from the TSS in the first intron and beyond its TTS as indicated by H3K18/27ac peaks in control DMSO-treated cells (Figure 7b). H3K18/27ac, H3K9ac, and BRD4 association with these enhancer peaks was A-485 sensitive, but not their associations near the TSS (Figure 7b). A-485 caused only a modest decrease in the GRO-seq reads at the Pol2 pause site (~30%, Figure 7b) and, therefore, only an ~30% decrease in the amount of Pol2 that had initiated transcription at the COPS8 TSS in this population of cells compared to control DMSO-treated cells. But A-485 caused a much greater decrease in GRO-seq reads relative to control DMSO-treated cells downstream from the COPS8 promoter-proximal pause site, indicating that A-485 reduced the rate of Pol2 pause release for this gene (Figure 7b, Figure 7—figure supplement 1). Additionally, NDRG1 and PAG1 are examples of other genes with nearby enhancers that have A-485-sensitive BRD4 association (Figure 7—figure supplements 2 and 3). Similar to COPS8, A-485 treatment caused a decrease in release of promoter-proximal paused Pol2, but little decrease in Pol2 initiation at these genes (Figure 7—figure supplements 2 and 3). These results indicate that genes with A-485-sensitive BRD4 enhancer association are transcriptionally inhibited by A-485 during elongation.
 
@@ -107,7 +151,7 @@ In contrast to COPS8, NDRG1, and PAG1, PTPRF is a gene with A-485-resistant BRD4
 
 There is a substantial base of knowledge establishing a correlation between histone N-terminal tail lysine acetylation and transcriptional activity. However, understanding of the mechanisms underlying this correlation remains incomplete. In addition to regulating PIC assembly and Pol2 initiation, our results support a mechanism by which histone H3 N-terminal tail acetylation in the promoter-proximal region regulates Pol2 release from promoter-proximal pause sites in a subset (~4.3%) of active cellular promoters in primary human airway epithelial cells.
 
-## H3K18/27 acetylation by CBP/p300 stimulates BRD4 and SEC association and promoter-proximal Pol2 pause release
+### H3K18/27 acetylation by CBP/p300 stimulates BRD4 and SEC association and promoter-proximal Pol2 pause release
 
 Initially we observed that SEC recruitment through association with promoter region histone H3 acetylated at K18 and K27 stimulates paused Pol2 release at the HAdV-5 E4 promoter (Figure 1a, Figure 2b). To do this study, we used a multi-site E1A mutant (DM-E1A) defective for association of the large E1A AD (amino acids 121—225, Figure 1—figure supplement 1) with CBP/p300 (Hsu et al., 2018). GRO-seq studies following infection of human primary airway epithelial cells (HBTECs) with Ad5 vectors expressing wt or DM-E1A revealed that the E4 pausing index increased when the DM-E1A failed to stimulate H3K18/27ac at the E4 promoter. This result suggested that promoter H3K18/27ac contributes to paused Pol2 release at the E4 promoter.
 
@@ -117,13 +161,13 @@ Defective pause release and decreased SEC recruitment at E4 also were observed 
 
 The principal effect of E4 promoter H3K18/27 hypoacetylation on E4 transcription was on promoter-proximal pause release, causing a decrease in transcribing Pol2 downstream from the pause site, revealed by low GRO-seq counts in the gene body (Figure 1a). This correlated with lower SEC subunit association at the E4 TSS and reduced BRD4 throughout the E4 gene body after activation by DM-E1A compared to wt E1A (Figure 2b).
 
-## A subset of cellular promoters requires H3K18/27 acetylation by CBP/p300 for maximal promoter-proximal Pol2 release
+### A subset of cellular promoters requires H3K18/27 acetylation by CBP/p300 for maximal promoter-proximal Pol2 release
 
 Analysis of the ChIP-seq and GRO-seq data for cellular chromatin from cells treated with A-485 established that regulation of Pol2 pause release and SEC recruitment by promoter region H3K18/27ac also occurs at a small fraction of highly regulated cellular promoters. Following A-485 treatment, we observed the expected decreases in H3K18/27ac at typical enhancers and to an even greater extent at super-enhancers (Figure 5a). This accounts for the average total cell H3K18/27 hypoacetylation observed by western blotting of total cell protein (Figure 3a) since most H3K18/27 acetylation occurs in enhancers (Figure 5—figure supplement 2b). However, we observed a striking and unexpected increase in average H3K18/27ac at TSSs of all active genes, even in the presence of a concentration of A-485 sufficient to decrease total cell H3K18/27ac by >90% (Figure 3a, Figure 5a). These observations indicate that the dynamics of HAT and/or histone deacetylase activities differ in response to A-485 at promoters versus enhancers.
 
 A-485 also resulted in defects in pause release assayed by GRO-seq at ~4.3% of active promoters in primary respiratory epithelial cells. These ~4.3% of promoters are similar to each other and different from most promoters in that promoter region acetylation was decreased after A-485 treatment as opposed to the increase in promoter H3K18/27ac observed for the average of all active genes (Figure 6a).
 
-## Higher rate of H3K18/27 acetylation at promoters compared to enhancers
+### Higher rate of H3K18/27 acetylation at promoters compared to enhancers
 
 The steady-state level of H3K18/27ac on any specific nucleosome is determined by the relative rates of its acetylation and deacetylation (Weinert et al., 2018; Shahbazian and Grunstein, 2007). A-485 inhibits CBP/p300 acetyl transferase activity by competing with acetyl-CoA for binding to the enzyme’s active site (Lasko et al., 2017). No evidence for inhibition of a histone deacetylase by A-485 was detected (Lasko et al., 2017) and is very unlikely given the highly specific interactions of A-485 with the CBP acetyl-CoA binding pocket (Lasko et al., 2017). Consequently, the decrease in average enhancer H3K18/27ac in A-485-treated cells (Figure 5a) suggests that the rate of H3K18/27 acetylation at enhancers in A-485-treated cells is greatly reduced compared to the normal rate in control DMSO-treated cells, as expected from the mechanism of a competitive inhibitor. In striking contrast to the expected decrease in H3K18/27ac at enhancers, at promoters the average H3K18/27ac increased during treatment with this specific inhibitor of the CBP/p300 acetyl transferase activity. This result suggests that H3K18/27ac is more stable at promoters than at enhancers and/or that the rate of H3K18/27 acetylation at promoters is higher than at enhancers. These results also suggest that there is an uncharacterized homeostatic mechanism that maintains promoter region H3K18/27ac in the face of extensive inhibition of the known lysine acetyl transferases that acetylate these sites, the closely related CBP and p300 (Jin et al., 2011).
 
@@ -137,30 +181,222 @@ A consensus TATA box (TATAWAWR) in the promoter regions of cellular genes corre
 
 ## Materials and methods
 
-## Ad5 mutant vectors
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HBTEC (human bronchial/tracheal epithelial cells, primary)</td>
+      <td>Lifeline Cell Technology</td>
+      <td>FC-0035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5 mutant vector wt E1A</td>
+      <td>Constructed as previously described (Hsu et al., 2018)</td>
+      <td></td>
+      <td>PMID:29976669</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5 mutant vector DM E1A</td>
+      <td>Constructed as previously described (Hsu et al., 2018)</td>
+      <td></td>
+      <td>PMID:29976669</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K18ac (rabbit polyclonal)</td>
+      <td>Prepared and validated as described previously (Ferrari et al., 2012)</td>
+      <td></td>
+      <td>PMID:22499665 WB (1:2000) ChIP-seq (2 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K9ac (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>07-352</td>
+      <td>WB (1:1000) ChIP-seq (2 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27ac (rabbit polyclonal)</td>
+      <td>Active Motif</td>
+      <td>39133</td>
+      <td>ChIP-seq (5 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab10799</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF9 (rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>GTX102835</td>
+      <td>ChIP-seq (2 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ENL/MLLT1 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>14893</td>
+      <td>ChIP-seq (10 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BRD4 (rabbit polyclonal)</td>
+      <td>Bethyl</td>
+      <td>A301-985A50</td>
+      <td>ChIP-seq (2 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NELF TH1L (D5G6W) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>12265S</td>
+      <td>ChIP-seq (7 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pol2 Ser2-P (31Z3G) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>13499</td>
+      <td>ChIP-seq (10 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pol2 Ser5-P (D9N5I) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>13523</td>
+      <td>ChIP-seq (10 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CDK9 (C12F7) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>2316</td>
+      <td>ChIP-seq (10 μL/ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BrdU antibody, agarose conjugated</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-32323 AC</td>
+      <td>50 μL/IP</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TruSeq Small RNA Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>RS-200–0012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>KAPA Hyper Prep kit</td>
+      <td>KAPA Biosystems</td>
+      <td>KK8504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEXTflex ChIP-seq barcodes</td>
+      <td>Bio Scientific</td>
+      <td>NOVA-514120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A-485</td>
+      <td>MedChemExpress</td>
+      <td>HY-107455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISTAT2</td>
+      <td>HISTAT2</td>
+      <td></td>
+      <td>PMID:31375807</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTseq</td>
+      <td>HTseq</td>
+      <td></td>
+      <td>PMID:25260700</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Homer</td>
+      <td>Homer</td>
+      <td></td>
+      <td>PMID:20513432</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Bowtie2</td>
+      <td></td>
+      <td>PMID:22388286</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>MACS2</td>
+      <td></td>
+      <td>PMID:18798982</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CEAS</td>
+      <td>CEAS</td>
+      <td></td>
+      <td>PMID:19689956</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ad5 mutant vectors
 
 Ad5 mutant vectors expressing wt E1A and DM E1A were constructed as previously described (Hsu et al., 2018).
 
-## Cell culture
+### Cell culture
 
 HBTECs (catalog number FC-0035, lot number 02196; Lifeline Cell Technology) were grown at 37°C in a BronchiaLife medium complete kit (LL-0023; Lifeline Cell Technology) in a 5% CO2 incubator until they reached confluence. Cells were then incubated 3 days more without addition of fresh medium and were infected for 12 hr with the indicated HAdV-5 mutants in the conditioned medium. A-485 (MedChemExpress) was added to a final concentration of 10 µM, or the same volume of DMSO (dimethyl sulfoxide) vehicle was added, and cells were incubated for an additional 2 hr.
 
-## GRO-seq
+### GRO-seq
 
 Cells were harvested and incubated in swelling buffer (10 µM Tris-HCl, 2 mM MgCl2, 3 mM CaCl2). Nuclei were isolated with lysis buffer (10 µM Tris-HCl, 2 mM MgCl2, 3 mM CaCl2, 10% glycerol, 1% NP-40). Nuclear run-on was performed at 30°C for 7 min in 10 mM Tris-HCl pH 8, 5 mM MgCl2, 300 mM KCl, 1 mM DTT, 500 µM ATP, 500 µM GTP, 500 µM Br-UTP, 2 µM CTP, 200 U/mL Superase In RNase Inhibitor (Invitrogen), and 1% sarkosyl. Nuclear RNA was isolated with Trizol (Invitrogen). DNAse treatment was performed with Turbo DNA-free kit (Invitrogen). RNA was purified with Micro Bio-Spin P-30 Gel Columns (Bio-Rad), fragmented with RNA Fragmentation Kit (Invitrogen), and treated with 10 units RppH (NEB) and 30 units T4 PNK (NEB). RNA immunoprecipitation was performed with anti-BrdU-conjugated agarose beads (Santa Cruz Biotechnologies). Library preparation was performed with TruSeq Small RNA Library Preparation Kit (Illumina). GRO-seq reads were aligned with HISTAT2 software to Ad5 and human (hg19) genomes and normalized to the number of reads aligned to hg19. Pause indexes (TSS to +200 counts)/(+201 to TTS counts) were calculated using HTSeq software. Genes determined to be affected by A-485 underwent additional profiling using Homer software (http://homer.ucsd.edu/homer/; Heinz et al., 2010) for biological processes gene ontology enrichment as well as TF motif analysis in promoter regions (± 300 bp from TSSs).
 
-## qRT-PCR
+### qRT-PCR
 
 Total RNA extracted from HTBECs using a PureLink RNA minikit (Ambion) was reverse transcribed with random hexamer priming using Superscript III (Invitrogen). RNA was treated with DNase I with Turbo DNA-free kit (Ambion). Quantitative reverse transcription-PCRs (qRT-PCRs) were carried out with the Applied Biosystems 7500 real-time PCR system with FastStart universal SYBR green master mix (Roche). All values were normalized to 18S RNA levels.
 
-## ChIP-seq
+### ChIP-seq
 
 Preparation of cross-linked HBTEC chromatin, sonication, and immunoprecipitation was as described in Ferrari et al., 2014. Sequencing libraries were constructed from 1 ng of immunoprecipitated and input DNA using the KAPA Hyper Prep kit (KAPA Biosystems) and NEXTflex ChIP-seq barcodes (Bio Scientific).
 
-## Data analysis of ChIP-seq
+### Data analysis of ChIP-seq
 
 ChIP-seq libraries were sequenced using HiSeq 4000 or NovaSeq 6000. For analysis on the Ad5 genome, sequence tags were aligned using Bowtie2 software and normalized to the following formula: (number of Ad5-aligned reads in the input sample/number of human-aligned reads in the input sample) × (number of Ad5-aligned reads in the ChIP sample). For analysis on the human genome, reads were mapped to the hg19 human genome reference using Bowtie2 software. Only reads that aligned to a unique position in the genome with no more than two sequence mismatches were retained for further analysis. Duplicate reads that mapped to the same exact location in the genome were counted only once to reduce clonal amplification effects. MACS2 software was used for peak calling (q-value <0.05 was considered significant). The total counts of the input and ChIP samples were normalized to each other. Samples were normalized for equal number of uniquely mapped reads. The input sample was used to estimate the expected counts in a window. Wiggle files were generated using a custom algorithm and present the data as normalized tag density as seen in all figures with genome browser shots. Metagene plots displaying normalized average relative ChIP-seq signals were generated using CEAS software.
 
-## Antibodies
+### Antibodies
 
 Antibodies included H3K18ac (814), prepared and validated as described previously (Ferrari et al., 2012), H3K9ac (07-352; Millipore), H3K27ac (39133; Active Motif), H3 (ab10799, Abcam), AF9 (GTX102835, Genetex), ENL/MLLT1 (14893, Cell Signaling), BRD4 (A301-985A50), NELF TH1L D5G6W (12265S, Cell Signaling), Pol2 Ser2-P 31Z3G (13499, Cell Signaling), Pol2 Ser5-P D9N5I (13523, Cell Signaling), and CDK9 C12F7 (2316, Cell Signaling).

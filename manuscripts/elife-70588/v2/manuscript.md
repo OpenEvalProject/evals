@@ -28,29 +28,85 @@ Animal reproduction requires that oocytes undergo a specialized cell cycle calle
 
 The female meiotic cell cycle is distinct from mitosis in several ways, necessitating a unique regulatory control. First, oocytes remain in an extended primary arrest in a cell cycle state termed prophase I until receiving an extrinsic hormonal signal (Conti and Chang, 2016; Jaffe and Norris, 2010; Kishimoto, 2018; Von Stetina and Orr-Weaver, 2011). Second, the meiotic divisions use a small asymmetrically positioned spindle to partition chromosomes into polar bodies, which do not contribute to the developing embryo (Severson et al., 2016). In addition, the first meiotic division segregates bivalent pairs of homologous chromosomes, whereas for MII, this configuration is reversed and instead sister chromatids are segregated (Figure 1A; Watanabe, 2012). Finally, meiosis lacks a DNA replication phase between the polar body divisions, which enables the reduction of ploidy to haploid. How the cell division machinery is specialized to perform the distinct functions of MI, and then is rapidly reorganized for the unique requirements of MII while remaining in meiosis and not exiting into gap or S-phase, is an important open question.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of meiotic progression in sea star oocytes, representing the six stages collected for mass spectrometry analysis. (B) Proteomics workflow diagram, in which protein samples were collected in biological triplicates, digested, tandem mass tag (TMT) labeled, fractionated, and analyzed by liquid chromatography with mass spectrometry (LC-MS). (C) Hierarchical clustering of the relative abundance of 4635 proteins detected across three replicates. Individual proteins are clustered (vertically) by the six isolated meiotic stages (horizontally). (D) Histogram of proteins binned by their maximum fold change in abundance, indicating 98.99% of all proteins undergo a fold change of less than 2. (E) Abundance histogram of proteins identified in our analysis reveals a normal distribution. (F) Relative abundances of selected proteins across stages (Pro, prophase I; GVBD, germinal vesicle breakdown; MI, meiosis I; MII, meiosis II; 2-PN, two pronucleus; FC, first cleavage). Light blue shading represents standard deviation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative time-course immunofluorescence images of oocytes collected to assess synchrony. Images were scaled individually and nonlinearly to facilitate visualization of cellular events. Scale bars = 10 μm. (B) Quantification of oocytes in the indicated cell cycle stage over time after addition of 1-methyladenine (1-MeAd). Each time point represents at least 49 oocytes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Venn diagram representation of the proteins identified in three biological replicates.
+
 In this study, we define phosphoregulatory mechanisms that drive the MI/MII transition. We undertook a proteomic and phosphoproteomic strategy using oocytes of the sea star Patiria miniata, which undergoes meiosis with high synchrony (Swartz et al., 2019). Prior analyses have revealed proteome-wide changes in animal models including Xenopus, Drosophila, and sea urchins (Guo et al., 2015; Krauchunas et al., 2012; Presler et al., 2017; Zhang et al., 2019). However, the biology of these organisms limits access to a comprehensive series of time points spanning prophase I through the embryonic divisions, including the critical MI/MII transition. Our sea star proteomics dataset spans the entire developmental window from prophase I arrest through both meiotic divisions, fertilization, and the first embryonic division (Figure 1A). We identified a surprising differential behavior between serine and threonine dephosphorylation at the MI/MII transition that we propose to underlie key regulatory differences between these meiotic divisions. This regulatory switch is driven by PP2A-B55, which is reactivated after MI to preferentially dephosphorylate threonine residues, thereby creating temporally distinct reversals of cyclin-dependent kinase (CDK) and mitogen-activated protein kinase (MAPK) phosphorylation. We propose a model in which the usage of threonine vs serine endows substrates with different responsivity to a common set of kinases and phosphatases, temporally coordinating individual proteins with meiotic cell cycle progression to achieve specific behaviors for MI and MII without exiting from meiosis.
 
 ## Results
 
-## Proteomic analysis reveals stable protein abundance during the oocyte-to-embryo transition
+### Proteomic analysis reveals stable protein abundance during the oocyte-to-embryo transition
 
 The oocyte-to-embryo transition involves an ordered series of events including fertilization, chromosome segregation, polarization, and cortical remodeling. To determine the basis for these cellular transitions and their corresponding physical changes, we analyzed the proteome during the oocyte-to-embryo transition using quantitative tandem mass tag (TMT)-multiplexed mass spectrometry (MS) (Thompson et al., 2003). We obtained prophase I-arrested oocytes from the sea star P. miniata and treated them with the maturation-inducing substance 1-methyladenine (1-MeAd) to trigger the resumption of meiotic progression in seawater culture (Kanatani et al., 1969). In an initial trial, we collected oocytes for immunofluorescence every 10 min after 1-MeAd stimulation and determined that oocytes proceed through meiosis with high synchrony (over 90% synchrony of oocytes at germinal vesicle breakdown (GVBD), MI, MII, and pronuclear stages; Figure 1—figure supplement 1). Live-imaging experiments further supported synchronous progression through meiosis and early development in this species (Figure 1—video 1). Leveraging these features, we cultured isolated oocytes and collected biological triplicate samples at the following stages: (1) prophase I arrest (Pro), (2) GVBD, (3) metaphase of MI, (4) prometaphase of MII, (5) just prior to pronuclear fusion (2-PN), and (6) metaphase of the first embryonic cleavage (FC) (Figure 1A).
 
 We first tested whether protein abundance changes could regulate the oocyte-to-embryo transition (Figure 1B). Using MS, we identified 8026 total proteins, of which 6212 were identified in two independent time-course series and 4635 in all three series (Figure 1—figure supplement 2, supplementary file 1). Surprisingly, only a limited number of proteins changed in abundance across these different stages (Figure 1C). In fact, 99% of the 4635 proteins reproducibly identified in all three time-course series displayed a maximum fold change of less than 2 from prophase I to the first embryonic cleavage, with 74.8% of proteins displaying less than a 1.2-fold change (Figure 1D). The absence of changes in protein levels was not due to a bias in our analysis as protein abundance followed a normal distribution (Figure 1E). We also note that this limited protein turnover during meiosis is consistent with prior reports in other organisms (Kishimoto, 2018; Peuchen et al., 2017; Presler et al., 2017). However, despite this broad stability of protein levels, there were several notable exceptions (Figure 1F). Gene ontology (GO) analysis (Liao et al., 2019) of significantly regulated proteins with a fold change of 1.2 or more revealed an enrichment in cytoskeletal proteins, proteins involved in RNA binding, and ribosomal components (Supplementary file 2). Moreover, cyclin B levels were high in prophase I, GVBD, and MI, but declined sharply in MII, before being partially restored in the first cleavage stage (Figure 1F). These dynamics are consistent with Anaphase Promoting Complex/Cyclosome (APC/C) mediated destruction of cyclin B during cell cycle progression (Evans et al., 1983; Kishimoto, 2018; Okano-Uchida et al., 1998). In addition, we identified the serine/threonine kinase Proviral integration site for Moloney murine leukemia virus-1 (PIM-1) (Figure 1F), previously proposed to be a potential mitotic regulator (Bachmann et al., 2006), as a protein that is absent in prophase I oocytes but translated de novo following meiotic resumption. Thus, although the overall proteome is highly stable, selected proteins are translationally or proteolytically regulated with meiotic cell cycle progression.
 
-## New translation of selected proteins is required for meiotic progression
+### New translation of selected proteins is required for meiotic progression
 
 Although protein levels are largely constant across the oocyte-to-embryo transition, de novo translation could act to maintain steady-state levels or may be required to produce a limited set of factors involved in meiotic progression. To test this, we globally prevented translation using the 40S ribosomal inhibitor emetine (Jimenez et al., 1977). Emetine-treated oocytes responded to 1-MeAd stimulation to initiate MI, consistent with prior work (Houk and Epel, 1974). However, instead of progressing to MII, the maternal DNA decondensed and formed a pronucleus with oocytes remaining arrested even at time points when control oocytes had initiated first cleavage (Figure 2A,B). Based on a proteomic analysis of MII and pronuclear stage oocytes, we found that only 108 out of 7610 proteins identified in our analysis significantly changed with emetine treatment (Figure 2—figure supplement 1, supplementary file 3). These emetine-sensitive proteins fell into diverse categories but were overrepresented for cytoskeletal elements and actomyosin-related proteins (Supplementary file 4). Notably, we identified the DNA replication factor Cdt1, whose nascent translation may be required for the initiation of DNA replication after meiotic exit. Moreover, we again identified PIM-1 as a factor sensitive to emetine treatment, consistent with our steady-state analysis (Figure 1F). In summary, most proteins are insensitive to translational inhibition, indicating a general lack of turnover between MI and MII, but new protein synthesis is required for progression past MI.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig2-v2.jpg)
+
+**Figure 2.:** (A) Immunofluorescence of control or emetine-treated oocytes, with DNA provided in single-channel grayscale images. While controls proceed to meiosis II (MII) and first cleavage, emetine-treated oocytes decondense DNA after meiosis I (MI), arrest in a pronuclear state, and fail to incorporate the male DNA. Microtubules were scaled nonlinearly. Scale bars = 10 μm. (B) Fraction of oocytes that successfully extruded both polar bodies and underwent first cleavage (MI: control n = 107, emetine n = 113; MII: control n = 107, emetine n = 114; first cleavage: control n = 31, emetine n = 47 oocytes; ****p<0.0001 by Fisher’s exact test). (C) Immunofluorescence of oocytes in which nascent synthesis of cyclin A, cyclin B, or both was blocked. Control oocytes extruded both polar bodies and initiated first cleavage. Blocking cyclin A synthesis did not affect the meiotic divisions but caused an arrest prior to the first cleavage. Blocking cyclin B instead selectively disrupted the second mitotic division, but the first meiosis and initiation of first cleavage proceeded normally. Combined translational inhibition of both cyclin A and cyclin B resulted in an interphase arrest following the first meiotic division. Microtubules were scaled nonlinearly. Scale bars = 10 μm. (D) Fraction of oocytes that successfully extruded polar bodies and underwent first cleavage (cyclin A n = 82, cyclin B n = 66, cyclin A + B n = 52 oocytes).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Volcano plots of protein abundance changes in emetine-treated oocytes vs controls when control oocytes were in meiosis II (A) or the pronuclear stage (B). Proteins with abundance changes of greater than 2 fold change and a p-value of less than 0.05 are colored green (108 out of 7609 proteins).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Embryos in metaphase of first cleavage (75 embryos per lane) were analyzed by western blot using antibodies against pTPxK CDK consensus antibodies, cyclin B, or alpha-tubulin, following injection of nontargeting control, cyclin A, or cyclin B morpholinos.
+
 The requirement of protein synthesis for meiotic progression could reflect the need to translate selected cell cycle factors. To test whether established cell cycle regulators must be translated de novo, we used morpholino injection to specifically prevent new translation of cyclin B, one of the few proteins that varies in abundance (Figure 2C,D), as well as cyclin A, which is synthesized in late MI in the related sea star species Patiria pectinifera (Hara et al., 2009; Okano-Uchida et al., 1998). Morpholino injection specifically reduced cyclin B protein levels and reduced total CDK-consensus phosphorylation (Figure 2—figure supplement 2). We stimulated oocytes with 1-MeAd immediately following morpholino injection to ensure that pre-existing cyclin protein was unaffected. When new cyclin A synthesis was blocked, oocytes underwent both meiotic divisions normally and the maternal and paternal pronuclei fused, but these zygotes then arrested with a single fused pronucleus and failed to progress to the first cleavage (Figure 2C,D). This is consistent with a role for cyclin A in mitotic entry in cultured cells, and the transition to embryogenesis in P. pectinifera (Hara et al., 2009; Okano-Uchida et al., 2003; Pagano et al., 1992). In contrast, preventing cyclin B synthesis resulted in a normal MI division but failure to extrude the second polar body and retention of an additional centriole. Surprisingly, these oocytes successfully underwent pronuclear fusion, entered the first cleavage, and formed a mitotic spindle. This suggests that cyclin B must be translated de novo following anaphase I to drive meiosis II but is dispensable for the initial transition from meiosis to embryonic mitosis. Finally, when we simultaneously prevented the new translation of both cyclin A and B, oocytes completed MI and then arrested in a pronuclear-like state without conducting MII (Figure 2C,D), similar to the effect of translational inhibition by emetine (Figure 2A,B). We further attempted to prevent translation of PIM-1 but did not observe a substantial phenotype, which could reflect technical challenges in its knockdown. Taken together, our results suggest that the proteome during the oocyte-to-embryo transition is highly stable but that the de novo translation of cyclins is required for meiotic progression.
 
-## Defining the phosphorylation landscape of the oocyte-to-embryo transition
+### Defining the phosphorylation landscape of the oocyte-to-embryo transition
 
 The two meiotic divisions, fertilization, pronuclear fusion, and the first mitotic cleavage all occur within less than 3 hr in the absence of substantial changes in protein abundance (Figure 1C,D). This suggests that there are alternative mechanisms to rapidly re-organize the cell division apparatus during these transitions. Therefore, we next assessed phosphorylation across the oocyte-to-embryo transition using phosphopeptide enrichment followed by MS (Figure 3A). Our analysis identified a total of 25,228 phosphopeptides across three multiplexed time courses. Among those phosphopeptides, 16,691 were identified in two, and 11,430 in three, multiplexes (Figure 3—figure supplement 1A, supplementary file 5). We detected 79.3% of phosphorylation on serine residues, 19.6% on threonine, and 1.1% on tyrosine residues based on a phosphorylation localization probability of ≥0.9 (Figure 3—figure supplement 1B). Prior work found similar ratios of S:T:Y phosphorylation based on autoradiographic measurements in chicken cells (92%:7.7%:0.3%) and based on phosphoproteomics in human cells (84.1%:15.5%:0.4%) (Hunter and Sefton, 1980; Sharma et al., 2014).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig3-v2.jpg)
+
+**Figure 3.:** (A) Proteomics workflow diagram, in which a phosphopeptide enrichment step was performed prior to tandem mass tag (TMT) labeling. (B) Hierarchical clustering of 10,645 phosphorylation events (a localization score of 0.9 or higher, a p-value of 0.05 or less, and stage-specific peak phosphorylation) clustered by phosphosite (rows) and meiotic stage (columns). (C) Percentage of sites that reach their peak phosphorylation levels across stages, revealing peaks at meiosis I (MI) and first cleavage. (D) Average abundance of all phosphorylation events per stage. (E, G) Temporal phosphorylation levels of conserved sites on the kinase Cdk1/2 and the MAP kinase Erk (blue trace, light blue areas are standard deviations; orange trace represents total relative protein abundance). (H, F) Western blots with antibodies recognizing the inhibitory phosphorylation on Cdk1Y15 and activating phosphorylation on ERK Y193, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Venn diagram representation of the phosphorylation events identified across three biological replicates. (B) Distribution of phosphorylation sites identified by phosophoproteomics on serine, threonine, and tyrosine.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Phosphorylation profile of T316 within the activation segment of S﻿erum- and Glucocorticoid-inducible Kinase (SGK). (B) Phosphorylation of double and triple phosphopeptides of Myt1 including S75, an SGK consensus site. (C) Phosphorylation of the SGK consensus site S188 on Cdc25. (D) Motif analysis of phosphopeptides with RxxRxpS/T motifs that undergo a greater than or less than threefold increase following germinal vesicle breakdown (GVBD). The more substantially changing sites more closely resemble an SGK-like consensus. (E) Phosphorylation profile of Greatwall kinase at T204, within its activation segment. (F) Phosphorylation of the conserved inhibitory site T316 on PP1G. (G) Average phosphorylation profile of RVxF motifs with a phosphorylated S or T at the ‘x’ position or within two amino acids before and after the RVxF motif. Light blue represents the standard deviation.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Time-course western blots of meiotic oocytes using antibodies against RVp[S/T]F motif. Ponceau staining is provided for loading control. (B) Quantification of western blots in (A).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A, B) Phosphorylation of conserved nuclear inhibitor of PP1 (NIPP1) sites that disrupts their interaction with PP1. Light blue represents the standard deviation. (C) Sequence alignment of sea star NIPP1 with orthologs in Danio rerior (drer), Canis lupus (clup), Equus caballus (ecab), Homo sapiens (hsap), Monodelphis domestica (mdom), Macaca mulatta (mmul), Mus musculus (mmus), Ornithorhynchus anatinus (oana), Pan troglodytes (ptro), and Gallus gallus (ggal). (D) Immunoprecipitation of wild-type or phosphonull NIPP1 mutants tagged with FLAG, followed by western blot to test PP1 association. Calyculin treatment was performed to increase phosphorylation on NIPP1 that decreases association with PP1 (lane 4), but phosphonull mutations (S197A, S199A) increases the association with PP1 (compare lanes 6 and 8 to lane 4).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Sequence alignment of amino acids surrounding the Greatwall phosphorylation site on human ARPP19 and α-endosulfine (ENSA) and sea star ARPP19. (B) Western blot of Cdc25 and pENSA in control cell lysate (lane 1) or lysate to which thiophosphorylated PmArpp19WT (lane 2) or PmArpp19S106A (lane 3) was added. Thiophosphorylation of Arpp19WTresults in a phosphorylation shift of the band for PP2A-B55 substrate Cdc25, indicating inhibition of the phosphatase. (C) Temporal phosphorylation profile of the Greatwall phosphorylation on S106 and the Cdk phosphorylation on S69.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Differential interference contrast (DIC) images of oocytes treated with dimethyl sulfoxide (DMSO) control or 1 μM calyculin A. (B) In vitro phosphatase assay using PP1c in the presence of the indicated concentrations of calyculin A and tautomycetin. (C) Dose responsivity curve of percentage of oocytes undergoing germinal vesicle breakdown (GVBD) in response to different concentrations of calyculin. Error bars represent the standard error of the mean of three experiments containing at least 50 oocytes per condition. (D) Immunofluorescence of oocytes in meiosis I (MI) or meiosis II (MII) treated with DMSO or 16 μM tautomycetin. Phenotypes are summarized with bar graphs to the left (MI: control n = 67, tautomycetin n = 78; MII: control n = 122, tautomycetin n = 109 oocytes).
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** (A) Hierarchical clustering of phosphorylation events (a localization score of 0.9 or higher, a p-value of 0.05 or less, and stage-specific peak phosphorylation) clustered by phosphosite (vertically) and meiotic stage (columns) as in Figure 3B with phosphorylation changes upon calyculin A treatment. (B) Comparison of average phosphorylation abundance changes upon calyculin A treatment for 0 min, 30 min, or 70 min in a stage-specific manner. Statistical comparison was performed by Fisher’s exact test (*p-value<0.05). (C) Immunofluorescence images for tubulin, centromere protein C (CENP-C), and phalloidin staining for actin following stimulation with 1-methyladenine or calyculin. Scale bars = 10 μm.
+
 Hierarchical clustering of the dynamic phosphorylation behavior from prophase I to the first embryonic cleavage revealed several striking transitions in global phosphorylation status (Figure 3B). First, prophase I-arrested oocytes are distinct from those in the other stages in that they not only display a limited number of phosphorylation sites at the relative maximum phosphorylation levels (Figure 3C) but also have the lowest overall phosphorylation state of the samples tested (Figure 3D). Second, more than half of the total phosphorylation sites identified were maximally phosphorylated in MI, whereas phosphorylation was substantially reduced in MII (Figure 3C). These patterns of phosphorylation imply a critical role for phosphoregulation in specializing the two meiotic and first cleavage divisions and suggest a role for a low phosphorylation state in maintaining the prophase I arrest.
 
-## Kinase activity across the oocyte-to-embryo transition
+### Kinase activity across the oocyte-to-embryo transition
 
 To remain arrested in prophase I, CDKs must be kept inactive. As our proteomics analysis indicated that the majority of proteins in the oocytes, including kinases, are present constitutively (Figure 1C), kinase activity must be controlled post-translationally. We, therefore, analyzed the pattern of phosphorylation events on established cell cycle kinases. We first identified inhibitory phosphorylation sites on Cdk1 or Cdk2 (Y21 or Y15, respectively) by proteomics and western blotting using phospho-specific antibodies against these conserved sites (Figure 3E,F). These sites are phosphorylated in prophase I arrest, and to a lesser extent at first cleavage, but not during meiosis. This phosphorylation pattern suggests that Cdk is inactive in prophase I-arrested oocytes but active throughout the meiotic divisions. In addition to Cdk, the meiotic divisions and secondary arrest that occurs in the absence of fertilization require MAP kinase activity downstream of the conserved activator Mos (Dupré et al., 2011; Tachibana et al., 2000). Based on our phosphoproteomics and western blotting, we found that a conserved activating phosphorylation on the MAP kinase p42/ERK phosphorylation (Y204) was undetectable in prophase I-arrested oocytes, high in MI and MII, and low in first cleavage (Figure 3G,H).
 
@@ -58,7 +114,7 @@ Meiotic resumption in sea star oocytes requires the action of kinases downstream
 
 Finally, meiotic progression also requires Greatwall kinase (Kishimoto, 2018), which acts upstream to inhibit PP2A-B55. Greatwall is sequestered in the germinal vesicle in prophase I sea star oocytes and is activated downstream of Cdk1/cyclin B (Hara et al., 2012). We identified a conserved activating phosphorylation within the activation segment of Greatwall kinase (T194 in humans; T204 in sea star) (Figure 3—figure supplement 2E; Blake-Hodek et al., 2012; Gharbi-Ayachi et al., 2010), indicative of high Greatwall kinase activity during GVBD and MI, and reduced activity in later stages. In summary, our phosphoproteomic time course reveals orchestrated transitions in the activity of regulatory kinases during the oocyte-to-embryo transition.
 
-## Prophase I arrest is enforced by high phosphatase activity
+### Prophase I arrest is enforced by high phosphatase activity
 
 Our phosphoproteomics analysis indicated that prophase I is characterized by low global phosphorylation. To determine whether this state is reinforced by phosphatase activity, we next examined modifications to the major cell cycle phosphatases, Protein Phosphatase 1 (PP1) and Protein Phosphatase 2A (PP2A), and their regulators (Nasa and Kettenbach, 2018). PP1 activity is inhibited by phosphorylation of its catalytic subunits (phosphorylation of T320 (human) by Cdk1) (Dohadwala et al., 1994; Kwon et al., 1997). PP1 T316 (corresponding to T320 in humans) is hypo-phosphorylated in prophase I-arrested oocytes (Figure 3—figure supplement 2F), which would result in high PP1 activity. PP1 activity is also controlled through regulatory subunits, which it recognizes through short-linear motifs, most prominently the ‘RVxF’ motif (Bollen et al., 2010; Heroes et al., 2013). Phosphorylation of the ‘x’ position within an RVxF motif or of adjacent residues disrupts the interaction between regulatory and catalytic subunits (Nasa et al., 2018). Analysis of the phosphorylation abundance of RVxF motifs across the phosphoproteomics time course revealed low RVxF phosphorylation occupancy in prophase I, which increased in GVBD and MI, before decreasing in later stages (Figure 3—figure supplement 2G). To validate this observation, we performed western blots using an antibody raised against a phosphorylated RVp[S/T]F epitope (Nasa et al., 2018) and observed similar trends (Figure 3—figure supplement 3). This suggests that, in prophase I, the PP1 catalytic subunit is maximally bound to regulatory subunits to promote substrate dephosphorylation.
 
@@ -70,9 +126,21 @@ To test the functional requirement for these phosphatases in maintaining the pro
 
 To test the contributions of PP1 and PP2A, we next conducted a phosphoproteomic analysis of calyculin A-treated oocytes. This analysis revealed a broad upregulation of phosphorylation (Supplementary file 5), with 85% of phosphorylation sites displaying a high level of phosphorylation after 70 min of calyculin A treatment (Figure 3—figure supplement 7A,B). However, phosphorylation sites with a normal maximal phosphorylation occupancy in prophase I (when PP2A displays high activity) decreased after 70 min of calyculin A treatment (Figure 3—figure supplement 7B). Although global phosphorylation levels increased similarly to those observed upon meiotic entry, calyculin A-treated oocytes failed to progress past this GVBD-like state based on the absence of a contractile actin network, chromosome congression, or spindle formation (Figure 3—figure supplement 7C). Therefore, although PP2A phosphatase activity is required to maintain a normal prophase I arrest, its inhibition is not sufficient to recapitulate physiological meiotic resumption. Collectively, our phosphoproteomic and functional analyses reveal high PP2A activity in prophase I-arrested oocytes, which enables a low global phosphorylation state, with additional waves of PP1 and PP2A phosphatase activity controlling subsequent phases of meiotic phosphorylation.
 
-## PP2A-B55 drives selective dephosphorylation at the MI/MII transition
+### PP2A-B55 drives selective dephosphorylation at the MI/MII transition
 
 During meiosis, oocytes must undergo two consecutive chromosome segregation events without exiting into an interphase state. These rapid divisions occur within 30 min of each other in the sea star, but they each achieve distinct functions. Therefore, a subset of MI-associated phosphorylation events must be reversed to allow progression to MII, whereas others must be maintained to remain in meiosis. Of the stages tested, MI displayed the largest number of sites with maximal phosphorylation (Figure 3A), including a large number of sites with a TP or SP consensus motif indicative of CDK- or MAPK-dependent phosphorylation (Supplementary file 5). Moreover, phosphorylation of these sites increased when oocytes were treated with the calyculin A, indicating that they are putative substrates for PP1 or PP2A (Figure 3—figure supplement 7A,B, supplementary file 5). Hierarchical clustering of peptides with a single phosphorylation site maximally phosphorylated in MI revealed three distinct clusters (Figure 4A). A subset of sites sharply decreased in their phosphorylation after MI (Figure 4B, cluster 3), whereas other sites remained phosphorylated during MII and the first embryonic cleavage (Figure 4B, cluster 2). A third cluster displayed intermediate dephosphorylation kinetics (Figure 4B, cluster 1). These differential behaviors could provide a mechanism by which the meiotic divisions are specified and underlie the transition from MI to MII.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig4-v2.jpg)
+
+**Figure 4.:** (A) Heatmap representation of a subset of sites that peak in phosphorylation in meiosis I (MI). Hierarchical clustering identifies three phosphorylation clusters with distinct temporal behaviors, indicated by green (cluster 1), cyan (cluster 2), and black (cluster 3) vertical lines. (B) Line graphs of temporal phosphorylation levels of sites within each of the three clusters. Color scale represents the distance from the mean. The number of single phosphorylation sites is indicated. (C) Sequence logos for over and underrepresented motifs within the three clusters. Threonine with proline in the +1 position followed by basic amino acids is overrepresented in cluster 3, which is dephosphorylated after MI. In contrast, cluster 3 is depleted for serine followed by acidic amino acids. Instead, cluster 1, which is more stably phosphorylated, is enriched for serine but depleted for threonine as the phosphoacceptor. (D) Cumulative frequency distribution of phosphopeptides with proline-directed serine or threonine phosphorylation. Significant differences in the population distribution as determined by Kolmogorov-Smirnov (KS) statistics (****p<0.0001). Only cluster 2 shows a significant difference in the dephosphorylation of SP vs TP phosphorylation sites. (E) Cumulative frequency distribution of phosphopeptides with proline-directed threonine phosphorylation with different amino acids in the +2 position. Only the most significant differences are indicated (****p<0.0001). (F) The average phosphorylation abundance of sites that peak in MI, comparing threonine (black bar) vs serine (gray bars) phosphorylation sites across stages as determined by phosphoproteomics. (G) Quantification of western blots with an antibody recognizing phosphorylated TPxK vs K/HpSP, revealing distinct behaviors at the meiosis I/meiosis II (MI/MII) transition for these phosphorylation sites.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Table depicting all significant differences in the population distribution as determined by Kolmogorov-Smirnov (KS) statistics in Figure 4E (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). (B) Relative abundance of single, localized SP vs TP phosphorylation sites in prophase I arrest. TP site abundances are significantly lower on average, suggesting these sites are more readily opposed by phosphatase activity. (C) Time-course western blots of meiotic oocytes using antibodies against pTPxK or (H/K)pSP. Ponceau staining is provided for loading control.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Time-course western blots of meiotic oocytes using antibodies against pSPP or pTPP. Ponceau staining is provided for loading control. (B) Quantification of western blots in (A).
 
 To determine the mechanisms controlling these differential phosphorylation behaviors, we analyzed the specific phosphorylation events that are eliminated after MI (Figure 4B, cluster 3). Motif analysis of single phosphorylation sites in cluster 3 revealed that they predominantly occur on threonine with proline in the +1 position (TP sites). Indeed, by directly comparing the phosphorylation of SP vs TP sites in the three clusters, we found that TP phosphorylation declined more substantially than SP after MI (Figure 4D). On average, the mean phosphorylation of TP motifs detected by phosphoproteomics peaked in MI, but then declined substantially in MII. In contrast, SP motif phosphorylation decreased to a lesser extent (Figure 4F). To evaluate differential SP vs TP phosphorylation at other cell cycle stages, we additionally analyzed their relative abundances in prophase I-arrested oocytes and found that TP phosphorylation is lower on average (Figure 4—figure supplement 1B). Thus, our analysis reveals an unanticipated difference in the phosphorylation behavior of serine- vs threonine-containing sites at the MI/MII transition.
 
@@ -82,17 +150,33 @@ In addition to differences in the phosphorylated residue (T vs S), we also found
 
 PP2A-B55 inhibition is required for meiotic resumption from prophase I into MI in response to hormonal stimulation (Hara et al., 2012; Okumura et al., 2014), but a role for PP2A-B55 at the MI/MII transition has not been defined directly. To determine the activation state of PP2A-B55 at the MI/MII transition, and whether it could selectively dephosphorylate TP residues, we assessed the conserved PP2A-B55 regulatory pathway in our MS datasets. Cdk1 phosphorylation activates Greatwall kinase, which then phosphorylates and activates the B55 inhibitor ARPP19 (Figure 5A; Hara et al., 2012; Okumura et al., 2014). Therefore, a drop in cyclin B levels and CDK activity would drive the reactivation of PP2A-B55. Indeed, following MI, our dataset reveals a decrease in cyclin B levels and a corresponding reduction in the activating phosphorylation on Greatwall kinase (T204) and ARPP19 (S106). This would result in the release of PP2A-B55 to dephosphorylate its substrates at the MI/MII transition (Figure 5B, Figure 3—figure supplement 5C). Together, these observations suggest that PP2A-B55 is reactivated at the MI/MII transition to preferentially dephosphorylate specific substrates with TP/basic consensus motifs, through a conserved pathway involving ARPP19, Greatwall, and CDK/cyclin B (Figure 5B).
 
-## Selective dephosphorylation of TP vs SP residues is a conserved feature of meiosis
+![Figure 5.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of the Cdk-Gwl-ARPP19 pathway regulating PP2A-B55. (B) Relative phosphorylation levels of Gwl T204 and protein abundance of cyclin B. PP2A-B55 activity trace values are derived from the substrates in Figure 5—figure supplement 3A–C (1-mean phosphorylation levels). (C) Crystal structure of PP2A holoenzyme with the B subunit colored cyan. Mutated residues within the acidic surface are indicated in orange. (D) Immunofluorescence of meiotic time course of oocytes expressing wild-type or mutant B55 constructs. In contrast to wild-type oocytes, DE/A mutants successfully complete MI but fail in MII. The DE/K mutant oocytes successfully form the first meiotic spindle but fail to undergo homologous chromosome or sister centromere separation. The spindle poles do separate, ultimately resulting in two semi-distinct spindles. Microtubules were scaled nonlinearly. (E) Percentage of oocytes successfully completing MI and MII (control n = 65, DE/A n = 65, DE/K n = 49 oocytes; ****p<0.0001 by Fisher’s exact test). (F) Centrin2 staining of B55 wild-type- and DE/K mutant-expressing oocytes stained for Centrin2 reveals centriole separation at the spindle poles. Scale bars = 10 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Regulatory phosphorylations on Cdk1/2 and PP1 were used to determine the temporal correspondence between our sea star time course (A) and a previously published Xenopus laevis dataset (Peuchen et al., 2017). Using these phosphorylation signatures, we chose to compare the ‘mature oocyte’ and ‘at fertilization’ samples from X. laevis, indicated with orange rectangles. (C) Motif analysis of phosphorylation events that decrease by at least threefold in levels from ‘mature oocyte’ to ‘at fertilization’ time points revealed an enrichment for TP-basic sequences and depletion for SP-acidic sequences compared to all other phosphorylation sites identified in this analysis. This is in striking similarity to the MI/MII transition in sea stars.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Oocytes expressing wild-type B55 or B55DE/A following 24 hr of in vitro culture. Scale bars = 100 μm. (B) Percentage of surviving arrested oocytes with intact germinal vesicles over 3 days of in vitro culture.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/70588/elife-70588-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–C) Relative phosphorylation levels and sequence alignment of PP2A-B55-dependent sites on PRC1, TPX2, and INCENP with orthologs in Danio rerior (drer), Canis lupus (clup), Equus caballus (ecab), Homo sapiens (hsap), Monodelphis domestica (mdom), Macaca mulatta (mmul), Mus musculus (mmus), Ornithorhynchus anatinus (oana), Pan troglodytes (ptro), Gallus gallus (ggal), Takifugu rubripes (trub), and Rattus norvegicus (rnor). Light blue shading represents standard deviation. (D, E) Heat map representation of TP and SP sites on Prc1 (D) and Tpx2 (E). (F) Immunofluorescence of INCENP-GFP during meiosis I and meiosis II. Scale bars = 5 μm.
+
+### Selective dephosphorylation of TP vs SP residues is a conserved feature of meiosis
 
 The selective dephosphorylation behavior that we observed suggests an important role for PP2A-B55 at the MI/MII transition. Preferential TP dephosphorylation has been previously reported to create a temporal order to the cellular events during mitotic exit (Cundell et al., 2016; Hein et al., 2017; McCloy et al., 2015; Touati et al., 2019). However, our work suggests that, in addition to temporal regulation of dephosphorylation at mitotic exit, preferential dephosphorylation of these motifs could provide a mechanism to specify the two meiotic divisions in oocytes. To test whether differential dephosphorylation is a conserved feature of meiosis, we reanalyzed a published phosphoproteomics dataset of early development in Xenopus laevis oocytes (Peuchen et al., 2017). Although the samples collected in this previous study did not have the temporal resolution to definitively capture the different stages of meiosis or the MI/MII transition, we used conserved inhibitory phosphorylation events on Cdk2 and PP1 to align these time points to corresponding samples from our analysis of synchronized sea star oocytes (Figure 5—figure supplement 1A,B). With this analysis, we identified time points that appear to correspond to an MI sample and an MII sample. Strikingly, we found that the phosphorylation sites that decrease in abundance between these samples in Xenopus oocytes were also enriched for TP-basic sequences but depleted for SP-acidic sequences (Figure 5—figure supplement 1C). Thus, based on this cross-species comparison, the differential behavior of SP and TP phosphorylation may represent a conserved regulatory mechanism for meiosis in animals and suggests that PP2A-B55 is an important conductor of the MI/MII transition.
 
-## Selective dephosphorylation by PP2A-B55 is required for the MI/MII transition
+### Selective dephosphorylation by PP2A-B55 is required for the MI/MII transition
 
 Our data are consistent with a model in which PP2A-B55 reactivation at the MI/MII transition drives the selective dephosphorylation of substrates to reorganize the cell division machinery and distinguish these divisions. We therefore sought to test the functional contribution of PP2A-B55 to the MI/MII transition. As the small molecule used to inhibit PP2A also inactivates other phosphoprotein phosphatases (e.g., Figure 3—figure supplement 7), we instead altered its specificity through mutations designed to disrupt B55 interactions with the downstream basic patch in its substrates (Cundell et al., 2016; Xu et al., 2008; Figure 5C). We generated mutations in complementary acidic residues in B55, changing these to alanine or creating charge-swap substitutions of these sites to lysine. Compared to wild-type B55, ectopic expression of the alanine mutant (DE/A) induced spontaneous GVBD and apoptosis in prophase I-arrested oocytes (Figure 5—figure supplement 2A,B). This result, along with the effect that we observed following calyculin A treatment (Figure 3—figure supplement 6A,C), further supports our model in which PP2A is specifically required to maintain the prophase I arrest.
 
 We next tested the functional contributions of B55 to meiosis. Following hormonal stimulation, the expression of either of the B55 mutants had a potent dominant effect on meiotic progression. Oocytes expressing the alanine mutant (DE/A) successfully assembled the MI spindle and completed cytokinesis of polar body I. However, events after MI did not occur, with the MII spindles failing to form properly and displaying a ball-like morphology. Furthermore, anaphase and cytokinesis did not progress normally, resulting in a reduced rate of polar body II extrusion (Figure 5D,E). Oocytes expressing the charge-swap mutations (DE/K) displayed a more severe phenotype: the first meiotic spindle formed normally, but remained arrested, with the bivalent chromosomes maintaining cohesion and the co-oriented centromeres remaining fused, even at time points where wild-type control oocytes completed MII. However, although normal anaphase I and cytokinesis did not occur, the spindle poles eventually separated, ultimately resulting in two semi-distinct spindles. Staining for Centrin2 revealed that pole fragmentation was due to the separation of the pair of centrioles in the spindle pole (Figure 5F). Therefore, alterations to PP2A-B55 substrate specificity allow MI events to occur, but prevent changes to the cell division machinery that occur at the MI/MII transition. We, therefore, propose that PP2A-B55 serves as an essential regulator of the MI/MII transition by selectively dephosphorylating substrates to achieve exit from MI, but retaining sites that must remain phosphorylated for MII to occur.
 
-## Threonine-specific dephosphorylation is essential for the spatiotemporal control of PP2A-B55 substrates
+### Threonine-specific dephosphorylation is essential for the spatiotemporal control of PP2A-B55 substrates
 
 The selective TP dephosphorylation at the MI/MII transition suggests a potential mechanism to encode MI- or MII-specific functions directly into substrates. The evolution and conservation of phosphorylation sites with higher or lower affinity for PP2A-B55 may provide temporal control for individual protein behaviors in meiosis. We identified several conserved phosphorylation sites on PRC1 (T470 in humans, T411 in sea star), TPX2 (T369 in humans, T508 in sea star), and Inner Centromere Protein (INCENP) (T59 in humans, T61 in sea star) (Figure 5—figure supplement 3A–C) that are known substrates of PP2A-B55 (Cundell et al., 2016; Hein et al., 2017; Hümmer and Mayer, 2009; Jiang et al., 1998). Consistent with the reactivation of PP2A-B55, these substrates display a stark decrease in phosphorylation following MI. In contrast to the behavior of these conserved PP2A-B55 substrate sites, we identified an SP phosphorylation event on Prc1 (S571), whose levels remain relatively constant during the meiotic divisions (Figure 5—figure supplement 3D). Furthermore, relative to other TP sites, an SP phosphorylation in Tpx2 (S625) was dephosphorylated to a lesser degree following MI (Figure 5—figure supplement 3E). To test the contributions of these sites, we focused on the chromosome passenger complex (CPC) subunit INCENP, which contains both stable serine phosphorylations as well as MI-specific threonine phosphorylations (Figure 6A). During anaphase of mitosis, the CPC transitions from the inner centromere to the central spindle, where it is required for cytokinesis (Carmena et al., 2012; Kaitna et al., 2000). However, the localization dynamics and impact of phosphorylation are not well defined in meiosis. Using a green fluorescent protein (GFP) fusion construct, we found that INCENP-GFP localized to centromeres in metaphase of MI, but then translocated to the central spindle at anaphase of MI. In MII, INCENP localization to centromeres was reduced, but it then returned at the midzone in anaphase II. As the maternal pronucleus formed at meiotic exit, INCENP localized to nucleolar structures (Figure 5—figure supplement 3F).
 
@@ -118,15 +202,270 @@ Our data from sea stars indicate that phosphatase activity is critical not only 
 
 ## Materials and methods
 
-## Experimental models and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Patiria miniata)</td>
+      <td></td>
+      <td>South Coast Bio, LLC</td>
+      <td></td>
+      <td>Wild-caught animals</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CENP-C (rabbit polyclonal)</td>
+      <td>Swartz et al., 2019</td>
+      <td></td>
+      <td>IF(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cyclin B (rabbit polyclonal)</td>
+      <td>Ookata et al., 1992</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha tubulin, DM1alpha (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T9026, RRID:AB_477593</td>
+      <td>IF(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phoshpo-Cdk1 Y15</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 4539</td>
+      <td>WB(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho ERK1/2 T202/Y204</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 9101</td>
+      <td>WB(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pTPxK CDK consensus</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 14371</td>
+      <td>WB(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-(K/H)pSP CDK consensus</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 9477</td>
+      <td>WB(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pTPP CDK consensus</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 5757</td>
+      <td>WB(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP booster</td>
+      <td>Chromotek</td>
+      <td>gba488-100, RRID:AB_2631386</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZS281 (plasmid)</td>
+      <td>This paper</td>
+      <td>To be deposited to Addgene</td>
+      <td>Wild-type B55-GFP (pCS2+eight backbone)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZS282 (plasmid)</td>
+      <td>This paper</td>
+      <td>To be deposited to Addgene</td>
+      <td>DE/A mutant B55-GFP (pCS2+eight backbone)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZS283 (plasmid)</td>
+      <td>This paper</td>
+      <td>To be deposited to Addgene</td>
+      <td>DE/K mutant B55-GFP (pCS2+eight backbone)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZS294 (plasmid)</td>
+      <td>This paper</td>
+      <td>To be deposited to Addgene</td>
+      <td>B55-mCherry (pCS2+eight backbone)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZS295 (plasmid)</td>
+      <td>This paper</td>
+      <td>To be deposited to Addgene</td>
+      <td>DE/A mutant B55-mCherry (pCS2+eight backbone)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZS13 (plasmid)</td>
+      <td>This paper</td>
+      <td>To be deposited to Addgene</td>
+      <td>INCENP-GFP (pCS2+eight backbone)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZS259 (plasmid)</td>
+      <td>This paper</td>
+      <td>To be deposited to Addgene</td>
+      <td>INCENP-GFP T61S mutant (pCS2+eight backbone)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-ARPP19</td>
+      <td>This paper</td>
+      <td>To be deposited to Addgene</td>
+      <td>For protein expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+eight backbone</td>
+      <td>Gökirmak et al., 2012</td>
+      <td>RRID:Addgene_34952</td>
+      <td>Pol III-based shRNA backbone</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Standard Control Morpholino</td>
+      <td>Gene-Tools, LLC</td>
+      <td></td>
+      <td>CCT CTT ACC TCA GTT ACA ATT TAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cyclin A morpholino</td>
+      <td>Gene-Tools, LLC</td>
+      <td>Morpholino antisense oligo</td>
+      <td>TTCACTTTGTTCCCGAGATTAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cyclin B morpholino</td>
+      <td>Gene-Tools, LLC</td>
+      <td>Morpholino antisense oligo</td>
+      <td>TAACCAATGCGAGTTCCGAGGAG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage mMachine SP6 in vitro transcription kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Poly(A) tailing kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# AM1350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Can Get Signal Immunoreaction Enhancer Solution</td>
+      <td>Cosmo Bio USA</td>
+      <td>Cat# TYB-NKB-101T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Methyladenine</td>
+      <td>Acros Organics</td>
+      <td>AC20131-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calyculin A</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SC-24000A</td>
+      <td>PP1 and PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emetine</td>
+      <td>Sigma Aldrich</td>
+      <td>E2375-500MG</td>
+      <td>Translation inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tautomycetin</td>
+      <td>Gift from Dr. Richard Honkanen</td>
+      <td></td>
+      <td>PP1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342 stain</td>
+      <td>Life Technologies</td>
+      <td>Cat# H1399</td>
+      <td>(2 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prolong Gold Antifade Reagent</td>
+      <td>Life Technologies</td>
+      <td>P36930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMT10plex Isobaric Label Reagent Set plus TMT11-131C Label Reagent</td>
+      <td>Thermo Scientific</td>
+      <td>A34808</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Select Fe-NTA Phosphopeptide Enrichment Kit</td>
+      <td>Thermo Scientific</td>
+      <td>A32992</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental models and subject details
 
 Sea stars (P. miniata) were wild-caught by South Coast Bio Marine (http://scbiomarine.com/) and kept in artificial seawater aquariums at 15°C. Intact ovary and testis fragments were surgically extracted as previously described (Swartz et al., 2019). Oocyte samples for proteomics were collected from a single female within the same season to maximize synchrony between time courses. Stereotypical meiotic timings were visually confirmed in live oocytes using GVBD and polar body emission as metrics, before snap freezing samples in liquid nitrogen. The synchrony data in Figure S1B were performed with oocytes from a second animal collected at the same season and location that was confirmed to undergo meiosis at a similar rate. 293T cells were obtained from commercial sources and were routinely tested for mycoplasma by polymerase chain reaction (PCR).
 
-## Ovary and oocyte culture
+### Ovary and oocyte culture
 
 Ovary fragments were maintained in artificial seawater containing 100 units/ml pen/strep solution. Intact ovary fragments were cultured this way for up to 1 week until oocytes were needed, with media changes every 2–3 days. Isolated oocytes were cultured for a maximum of 24 hr in artificial seawater with pen/strep. To induce meiotic re-entry, 1-MeAd (Acros Organics) was added to the culture at a final concentration of 10 μM. For fertilization, extracted sperm was added to the culture at 1:1,000,000 dilution prior to emission of the first polar body. For emetine treatments (Figure 2), oocytes were pre-treated with 10 μM emetine (Sigma-Aldrich) for 30 min prior to hormonal stimulation.
 
-## Mass-spectrometry sample preparation
+### Mass-spectrometry sample preparation
 
 Oocytes were collected by centrifugation at 200 xg and resuspending pellets and washed one time with wash buffer (50 mM 4-(2-hydroxyethyl) -1-piperazineethanesulfonic acid (HEPES), pH 7.4, 1 mM ethylene glycol tetraacetic acid (EGTA), 1 mM MgCl2, 100 mM KCl, 10% glycerol), pelleted with all excess buffer removed, and snap frozen in liquid nitrogen. Samples were lysed and proteins were digested into peptides with trypsin. Oocyte pellets were lysed in ice-cold lysis buffer (8 M urea, 25 mM Tris-HCl, pH 8.6, 150 mM NaCl, phosphatase inhibitors (2.5 mM beta-glycerophosphate, 1 mM sodium fluoride, 1 mM sodium orthovanadate, 1 mM sodium molybdate), and protease inhibitors (one mini-Complete EDTA-free tablet per 10 ml lysis buffer; Roche Life Sciences)) and sonicated three times for 15 s each with intermittent cooling on ice. Lysates were centrifuged at 15,000 xg for 30 min at 4°C. Supernatants were transferred to a new tube and the protein concentration was determined using bicinchoninic acid (BCA) assay (Pierce/ThermoFisher Scientific). For reduction, dithiothreitol (DTT) was added to the lysates to a final concentration of 5 mM and incubated for 30 min at 55°C. Afterwards, lysates were cooled to room temperate and alkylated with 15 mM iodoacetamide at room temperature for 45 min. The alkylation was then quenched by the addition of an additional 5 mM DTT. After sixfold dilution with 25 mM Tris-HCl, pH 8, the samples were digested overnight at 37°C with 1:100 (w/w) trypsin (Promega). The next day, the digest was stopped by the addition of 0.25% trifluoroacetic acid (TFA) (final v/v), centrifuged at 3500 xg for 15 min at room temperature to pellet precipitated lipids, and peptides were desalted (Zecha et al., 2019). Peptides were lyophilized and stored at −80°C until further use.
 
@@ -142,27 +481,27 @@ High-resolution tandem mass spectra were searched using COMET with a precursor i
 
 The P. miniata proteome sequence database was generated using published paired-end RNA-seq data for a P. miniata ovary sample (SRX445851/SRR1138705), with the Agalma transcriptome pipeline (Dunn et al., 2013). Each protein sequence from this transcriptome was assessed for similarity with known proteins in the NCBI nr (nonredundant) sequence database using NCBI BLAST. Transcriptome sequences were annotated with the accession and sequence similarity metrics of their top BLAST hits. This annotation procedure was repeated for an unannotated protein database sourced from EchinoBase to generate a composite database. Duplicate sequences and subsequences within the composite database were removed to reduce redundancy.
 
-## Construct generation
+### Construct generation
 
 P. miniata INCENP was identified using the genomic resources at echinobase.org and previously published ovary transcriptomes (Kudtarkar and Cameron, 2017; Reich et al., 2015). Wild-type INCENP was amplified from first-strand complementary DNA (cDNA) reverse transcribed from total ovary mRNA. T61S mutants were generated by overlap extension PCR. These cDNAs were then cloned into pCS2+eight as c-terminal GFP fusions (Gökirmak et al., 2012). Wild-type and mutant versions of B55 were synthesized (Twist Biosciences) and cloned into pCS2+eight with standard restriction enzyme methods.
 
-## Oocyte microinjection
+### Oocyte microinjection
 
 For expression of constructs in oocytes, plasmids were linearized with NotI to yield the linear template DNA. mRNA was transcribed in vitro using mMessage mMachine SP6 and the polyadenylation kit (Life Technologies), then precipitated using lithium chloride solution. Prophase I-arrested oocytes were injected horizontally in Kiehart chambers with approximately 10–20 picoliters of mRNA solution in nuclease-free water. B55 constructs were injected at 500 ng/μl, and INCENP constructs were injected at 1000 ng/μl. After microinjection, oocytes were cultured for 18–24 hr to allow time for the constructs to translate before 1-MeAd stimulation. Custom-synthesized cyclin morpholinos, or the Gene Tools standard control, were injected at 500 μM immediately before 1-MeAd stimulation (Gene Tools).
 
-## Immunofluorescence, imaging, and immunoblots
+### Immunofluorescence, imaging, and immunoblots
 
 Oocytes were fixed at various stages in a microtubule stabilization buffer as described previously (2% paraformaldehyde, 0.1% triton X-100, 100 mM HEPES, pH 7.0, 50 mM EGTA, 10 mM MgSO4, 400 mM dextrose) for 24 hr at 4° C (von Dassow et al., 2009). The oocytes were then washed three times in phosphate-buffered saline (PBS) with 0.1% triton X-100 and blocked for 15 min in AbDil (3% bovine serum albumin (BSA), 1 X tris-buffered saline (TBS), 0.1% triton X-100, 0.1% sodium azide). Primary antibodies diluted in AbDil were then applied and the oocytes were incubated overnight at 4°C. Anti-CENP-C and alpha-tubulin (DM1α, Sigma) antibodies were used at 1:5000 ratio. DNA was stained with Hoechst. GFP booster (Chromotek) was used at 1:500 to improve the signal from GFP fusion constructs. The oocytes were compressed under coverslips in ProLong Gold antifade Mountant (Thermo Fisher). Images were collected with a DeltaVision Core microscope (Applied Precision/GE Healthsciences) with a CoolSnap HQ2 CCD camera and a x100 1.40 NA Olympus U-PlanApo objective. Confocal images (Figure 2G) were collected with a Yokogawa W1 spinning disk microscope. Images were processed with Fiji and scaled equivalently across conditions unless otherwise specified (Schindelin et al., 2012). For western blot analyses, oocytes were lysed in Laemmli samples buffer, separated by sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE), and analyzed by western blotting. Antibodies were diluted in 3% milk in TBST (TBS with Tween 20) and phosphatase inhibitors anti-phospho Cdk1 Y15 (Cell Signaling, #4539), anti-phospho ERK1/2 T202/Y204 (Cell Signaling, #9101; this antibody detects singly and dually phosphorylated ERK1/2 and the total intensity of singly and dually phosphorylated ERK1/2 in sea stars suggests that Y193 is the dominant phosphoform), phospho CDK substrate [pTPXK] (Cell Signaling, #14371), [(K/H)pSP] (Cell Signaling, #9477), [pSPP] (Cell Signaling, #14390), and [pTPP] (Cell Signaling, #5757). Antibodies raised against phosphorylation sites on human proteins were evaluated for cross-reactivity and judged to do if (1) they only recognized one band, (2) the size of the band migrated at the expected molecular weight, and (3) the phosphorylation pattern matched the MS quantification. Anti-P. pectinifera cyclin B antibody was a gift from the Kishimoto laboratory (Ookata et al., 1992). Cyclin B western blotting was conducted by diluting the primary and secondary antibodies into Can Get Signal Immunoreaction Enhancer Solution as described by the manufacturer’s instructions (Cosmo Bio USA).
 
-## Protein expression
+### Protein expression
 
 P. miniata ARPP19 was identified using the genomic resources at echinobase.org and previously published ovary transcriptomes (Kudtarkar and Cameron, 2017; Reich et al., 2015). Wild-type ARPP19 was amplified from first-strand cDNA reverse transcribed from total ovary mRNA and cloned into pCS2+8. ARPP19 was sub-cloned into pGEX4T3 and transformed into Rosetta (DE3). Expression, purification, and thiophosphorylation were performed as previously described (Gharbi-Ayachi et al., 2010).
 
-## In vitro phosphatase assay
+### In vitro phosphatase assay
 
 PP1c was diluted in assay buffer (0.15 M NaCl, 30 mM HEPES, pH 7.0, 1 mM DTT, 0.1 mg/ml BSA, 1 mM ascorbate, 1 mM MnCl2) with a final assay concentration of 0.5 nM PP1c and 75 μM 6,8-difluoro-4-methylumbelliferyl phosphate (DiFMUP) (Invitrogen, D6567). 6,8-difluro-4-methylumbelliferone (DiFMU) was measured every minute for 45 min (Ex 360 nm, Em 460 nm) in the presence of indicated concentrations of calyculin A and tautomycetin.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 For the time-course proteomic analysis, peptide TMT intensities were summed on a per protein basis. Replicate multiplexes were normalized to each other based on an internal standard consisting of a mixture of oocytes from all investigated stages. Protein intensities were adjusted based on the total TMT reporter ion intensity in each channel. Individual protein intensity across each time course was scaled between 0 and 1. For the time-course phosphoproteomic analysis, replicate multiplexes were normalized to each other based on the internal standard. Phosphopeptide intensities were adjusted based on the total amount of protein input in the respective channel to account for differences in input and the median total TMT reporter ion intensity of the respective condition. Individual phosphopeptide intensity across each time course was scaled between 0 and 1. A Pearson correlation coefficient for the time-course data was calculated as pairwise correlation for proteins and phosphopeptides identified in two time-course series and as multiple correlations for proteins identified in three time-course series in Excel. A p-value was calculated from the Pearson correlation coefficient. Proteins quantified in all three time-course series were analyzed by hierarchical clustering using Euclidean distance and average linkage in Perseus. Phosphorylation sites with a localization score of 0.9 or higher and quantified with a correlation coefficient of 0.8 more (corresponding to a p-value of 0.05 or less) were analyzed by hierarchical clustering using Euclidean distance and average linkage in Perseus. For the calyculin A treatment, the 0-min and 30-min and the 0-min and 70-min time points were compared. p-values were calculated using a two-tailed Student’s t-test assuming unequal variance. Average phosphorylation abundances of phosphorylation site upon 0-, 30-, and 70-min calyculin A treatment were compared between prophase I and other phases by 2x3 Fisher's exact test.
 

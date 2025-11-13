@@ -44,15 +44,31 @@ Here, we present a pipeline to automatically generate fully 3D atlases from exis
 
 ## Results
 
-## Allen developmental mouse brain atlas
+### Allen developmental mouse brain atlas
 
 The ADMBA contains data for eight mouse brains, each at a different development stage: embryonic day (E)11.5, E13.5, E15.5, E18.5, postnatal day (P) 4, P14, P28, and P56. The data are generated from 158 to 456 serial 2D sagittal sections of 20–25 µm stained with Nissl or Feulgen-HP yellow and imaged with a light microscope at a lateral resolution of 0.99 to 1.049 µm. For the three earliest stages of development, E11.5, E13.5, E15.5, the entire embryo was imaged, rather than just the brain. Each of the eight atlases are annotated with expertly curated labels of brain structures (Thompson et al., 2014b; Allen Institute for Brain Science, 2013b) in a hierarchy starting with the largest structures (e.g. neural plate) extending through 13 sublevels to the smallest annotated structures (e.g. parvicellular part of Lat). Viewed sagittally, these labels cover the majority of tissue in each brain with smooth, anatomically aligned edges (Figure 2A); however, only sections on the left side of each brain are annotated and, for six atlases, labels are not present for the most lateral 14–24% sagittal planes of the brain (4–5% by volume; Figure 2—figure supplement 1; Figure 2B). Labels extend slightly beyond the midline for several atlases, helping to annotate brains with a midline skew, yielding a median label to atlas volume ratio of 51%.
 
-## Atlas similarity
+![Figure 2.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig2-v2.jpg)
+
+**Figure 2.:** (A) The original E18.5 atlas labels (bottom left), viewed sagittally, demonstrate smooth borders and close correspondence with the underlying microscopy images (upper left; overlaid on right). The dashed blue lines show the sections viewed in ‘B’ and ‘C’. (B) When viewed axially, the most lateral sections lack labels, one hemisphere lacks labels entirely, and label borders are jagged. Slight rotation of the underlying microscopy images leads to asymmetry between its two hemispheres. (C) Similar findings are apparent in the coronal view. (D) The Dice Similarity Coefficient (DSC), a measure of the completeness of labeling compared to the thresholded atlases, for the labeled hemispheres increased for all brains in the ADMBA after lateral edge extension (original median = 0.91, extended median = 0.93; p=0.02, Wilcoxon signed-rank test (WSRT); ‘Mus musculus’ level −1, ID 15564 in the Allen ontology). (E) To fill in the lateral edges using existing labels, a representative lateral label plane was iteratively resized to fit the underlying microscopy images. The plane for each subsequent microscopy plane was thresholded, the bounding box extracted, and the labels resized to fit this bounding box, followed by conforming labels to the underlying gross anatomical boundaries (Figure 2—figure supplement 2). A stretch of compressed planes was expanded (Figure 2—figure supplement 3), and the completed hemisphere of labels mirrored to the other hemisphere after rotation for symmetry to complete the labeling. (F) Coronal view after the lateral edge extension.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The fraction of unlabeled planes in a given hemisphere is taken as the number of sagittal planes without any labels over the total number of sagittal planes in the hemisphere that should have labels. By definition the extended atlases have no detected unlabeled planes because any plane determined to require labeling was filled. (B) Unlabeled volume fractions are measured by taking label volume over the thresholded histology foreground in the hemisphere. Each hemisphere is taken as the predominantly labeled hemisphere of the given atlas.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Example labeled sagittal section toward the lateral edge in the ADMBA E18.5 atlas. (B) Overview of the extension algorithm. Plane 38 represents one of the farthest lateral labeled planes. For each discrete structure, the labels are extracted to serve as templates for the subsequent plane. In plane 37, the corresponding template is resized to the bounding box of the microscopy image in that plane. To further fit labels to the underlying anatomy, gross anatomical edges are found in 3D for the full volumetric microscopy images. Labels are eroded, skeletons are added back to avoid loss of thin sections, and labels are regrown by a compact watershed guided by the anatomical edges in the plane. This refined plane of labels thus becomes the template for the next plane. As the extension progresses, some labels disappear during the erosion step, preferentially central labels, modeling the tapering of labels laterally. (C) Every fifth label in a stack after the original template plane in (left) the original atlas and (right) after label extension.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Example plane from a stretch of sagittal planes in the original ADMBA E18.5 atlas where the labels are compressed dorsoventrally. The original labels (top) were re-expanded (bottom) to match the extent of the underlying histology section. (B) The stack of original (left) and re-expanded (right) planes from just before until just after this stretch of compressed label planes.
+
+### Atlas similarity
 
 To focus our analysis on the brain tissue, we excluded non-CNS tissue for the three embryos for which the brain was not dissected prior to imaging. Across all eight atlases the similarity between the microscopy images and the original label annotations was estimated by taking the threshold of each sagittal section on the left hemisphere of the brain as an approximation of ground truth and comparing the label coverage using the Dice Similarity Coefficient (DSC) (Dice, 1945), calculated by the Insight Segmentation and Registration Toolkit (ITK) (Tustison and Gee, 2009). Higher DSCs reflect greater similarity between the images and labels, with a maximum possible value of 1. The observed DSCs for the original labels in the annotated hemisphere ranged from 0.85 to 0.97 (median 0.91; Figure 2).
 
-## Atlas extension
+### Atlas extension
 
 To generate labels across the entire brain, we extended the existing labels to the lateral edges by following histological boundaries, before mirroring the labels on the opposite hemisphere (Figure 2). The most lateral labeled sagittal section provided the initial seed from which to grow labels laterally. First, we resized this plane to match the extent of corresponding microscopy signal in the next, unlabeled lateral sagittal section (Figure 2—figure supplement 2A,B). Next, we refined label boundaries by eroding each label and regrowing it along histological boundaries, which we call ‘edge-aware’ refinement. To model these boundaries, we generated gross anatomical maps in 3D using edge-detection methods on the volumetric histology images. Taking the Laplacian of Gaussian (Marr and Hildreth, 1980) of each histological volumetric image highlighted broad regions of similar intensities, using a relatively large Gaussian sigma of 5 to capture only well-demarcated boundaries. A zero-crossing detector converted this regional map into a binary anatomical edge map (Figure 2—figure supplement 2B). After eroding each label, we next used this anatomical map to guide the regrowth of labels by a compact watershed algorithm (Neubert and Protzel, 2014) step, which adds a size constraint to the classic watershed algorithm. Distances of each pixel to its nearest edge map pixel formed anatomically based watershed catchment areas, while each eroded label served as a large seed from which filling of the nearest catchment areas began and grew until meeting neighboring labels. Thus, we extended a labeled sagittal plane to an unlabeled one, refined by the histology.
 
@@ -60,9 +76,25 @@ This process was repeated iteratively across all remaining lateral sections (Fig
 
 After completing label coverage for the left hemisphere, both the labels and underlying microscopy images were reflected across the sagittal midline to cover the remaining hemisphere. Care was taken to ensure that the sagittal midline was identified correctly by inspecting and rotating the 3D image and midline plane from multiple angles (Figure 2C). Recalculating the DSC between the microscopy images and labels for the left hemisphere showed greater similarity across all eight atlases with a median DSC improvement of 0.02 (p=0.02, WSRT) and a resulting DSC range of 0.87 to 0.97 (median 0.93, Figure 2D). Equivalent analysis of DSC for the whole brain would show substantial improvement due to the absence of labels on the right side in the original.
 
-## Label smoothing
+### Label smoothing
 
 The ADMBA atlases have been provided as 3D volumetric images, combined computationally from the original 2D sagittal reference plates; 2D sections can be generated from these 3D images in orthogonal dimensions to the original sagittal view. Visual inspection of labels in the axial and coronal planes reveals high-frequency artifacts along most edge borders, likely from the difficulty of drawing contiguous borders in dimensions orthogonal to the drawing plane (Figure 1, Figure 3). To quantify the degree of label smoothness, we used the unit-less compactness metric (Ballard and Brown, 1982). The compactness measure applied in 3D incorporates both surface area and volume, allowing for quantification of smoothness to measure shape irregularity. Of note, compactness is independent of scale or orientation, facilitating comparison across all labels, despite size differences, and its sensitivity to noise allows finer detection of label irregularity (Bribiesca, 2008). Measuring the compactness of each label and taking the weighted mean based on label volume for each atlas gave a median compactness of 13,343 (mean: 34,099, standard deviation (SD): 44,988). For context, across all eight atlases the thresholded 3D whole-brain microscopy images were more compact (median compactness: 1895, mean: 2615, SD: 2305; p=0.02, WSRT, Bonferroni corrected for three comparisons; Figure 3—figure supplement 1A), consistent with the observed irregularity in the label images compared to anatomical images (Figure 2B and Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig3-v2.jpg)
+
+**Figure 3.:** (A) Irregularities at the label edges in the original (mirrored) E18.5 atlas (top) were smoothed by applying an adaptive morphological opening filter iteratively to each label, starting from the largest to the smallest labels (bottom). 3D renderings (outer columns) are depicted for two representative labels before (top) and after (bottom) smoothing in the axial (middle left) and coronal (middle right) views. (B, C) The view in ‘A’ is repeated for E15.5 and P14, respectively. (D) To identify the optimal filter structuring element size, we devised an ‘atlas-wide smoothing quality’ metric to incorporate the balance between smoothing (compaction) and changes in size and shape (displacement). While compaction continued to improve with increasing structuring element size, displacement eventually caught up, giving an optimal atlas-wide smoothing quality with a structuring element size of 4 for the E18.5 atlas (left). We also assessed the number of labels that were lost (none in this example) and the surface area to volume ratio, for which lower values reflect smoother shapes (right). Vertical dashed lines indicate the optimal filter structuring element size, based on ‘atlas-wide smoothing quality’. (E, F) This plot is repeated for E15.5 and P14, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Compactness of the whole brain histology can serve as a proxy for compactness of a biological structure since the whole brain is a well-defined structure whose boundaries are broadly accepted, unlike those of individual labels. After thresholding the microscopy images and taking their compactness, we found this compactness to be significantly lower (i.e. more compact) compared with that of the original (stripped) labels (p=0.02, WSRT, Bonferroni corrected across all three comparisons) but (B) similar to that of smoothed labels (p=1.0). (C) Original (stripped) were also significantly less compact (higher compactness) than smoothed labels were (p.=0.02).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Example of the E18.5 atlas before (left) and after (right) smoothing by a Gaussian filter with a sigma of 0.25. (B) Smoothing quality metrics show increased compaction with a relatively slower increase in displacement with increasing filter sizes, leading to a peak smoothing quality at sigma of 1. This smoothing comes at a cost of label loss at all tested sigmas, including 15% at even the lowest tested sigma of 0.25. (C) Compared with Gaussian smoothing at this sigma across all ADMBA atlases, the adaptive opening filter approach showed a significant increase in atlas-wide smoothing quality (median 0.53 by Gaussian vs. 0.62 by adaptive opening filter; p=0.008, WSRT; mean 0.53 vs. 0.63).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Smoothing quality metrics for each atlas in the ADMBA across filter structuring elements sizes, with size 0 corresponding to the original (mirrored) atlas. For each atlas, the top plot depicts the overall, brain-wide smoothing quality along with its separate compaction and displacement components, with peak smoothing quality lying between filter sizes 2–7. The bottom plot for each atlas shows the overall surface area to volume across labels as well as fraction of labels lost during smoothing, typically occurring at larger sizes, starting at four or higher.
 
 To reduce this irregularity, we applied a smoothing filter iteratively to the 3D image of each label. Prior approaches to this problem used a Gaussian filter (kernel SD of 0.5, applied in two passes) (Niedworok et al., 2016). While this visually improved the smoothness of label edges, we observed sharp angles along the edges, presumably from the limitation of rounding blurred pixel values to the integers required for label identities rather than allowing the subtler floating-point gradients from the Gaussian kernel (Figure 3—figure supplement 2A). In addition, the Gaussian filter expanded the volume of each label, leading to label loss as larger labels enveloped smaller ones (Figure 3—figure supplement 2B).
 
@@ -70,15 +102,43 @@ Optimal smoothing would maximize the smoothness of each label (i.e. compactness;
 
 To refine smoothing while minimizing label loss, we changed the filter from a Gaussian to a morphological opening filter (Serra, 1983). This filter first erodes each label to remove artifacts, followed by dilation to restore its original volume. To avoid label loss caused by excessive erosion of small labels, we halved the size of its structuring element for labels with ≤5000 pixels. A few labels were split into numerous tiny fragments that would disappear with an opening filter. For these small labels, the opening filter was replaced by a closing filter, reversing the process by dilating before eroding to reconnect these components. With this adaptive opening filter approach, labels became more compact with smoother edges, while retaining their overall shape as seen in both 2D and 3D visualizations (Figure 3A).
 
-## Smoothing quality across filter sizes for all ADMBA atlases
+### Smoothing quality across filter sizes for all ADMBA atlases
 
 Quantifying the improvement with the adaptive opening filter approach, using only filter sizes that completely eliminated label loss, we obtained a median atlas-wide smoothing quality of 0.61 (mean 0.62) across all eight atlases, and improvement over the Gaussian filter approach (sigma 0.25; p=0.008; Figure 3—figure supplement 2C). The optimal filter size varied between atlases, ranging from 2 to 7 (E15.5 and P14 shown in Figure 3C,D; all ADMBA shown in Figure 3—figure supplement 3). The median overall compactness improved significantly (13,343 (SD = 44,988) for unsmoothed labels vs. 2527 (SD = 2634) for smoothed labels, p=0.02, WSRT, Bonferroni corrected for the three comparisons; mean 34,099 vs. 3172) to a level that did not differ from that observed for the microscopy images of whole brains (p=1.00, WSRT, Bonferroni corrected for the three comparisons; Figure 3—figure supplement 1B,C).
 
 Because morphological filters such as erosion classically operate globally, a drawback to these filters is the potential loss of thin structures, such as loss of the thin portion of the alar plate of the evaginated telencephalic vesicle (Figure 3A). Smoothing in-place also does not address gross anatomical misalignment. We address these issues in subsequent steps.
 
-## Label refinement by detected anatomical edges
+### Label refinement by detected anatomical edges
 
 The extending, mirroring, and smoothing steps lead to a more complete set of labels for the ADMBA and correct the irregular borders in orthogonal planes to which the original labels were drawn; however, in several locations the labels do not align closely to the anatomical edges seen in the underlying histology images, for example the basal ganglia do not follow the curve of the lateral septal nuclei (Figure 2C). To better map the anatomical fidelity of annotations in all dimensions, without manual relabeling, we leveraged our method for extending labels laterally based on gross anatomical edges to further refine all labels (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig4-v2.jpg)
+
+**Figure 4.:** (A) Edge detection of the volumetric histology image delineated gross anatomical edges (left), shown here with the E18.5 atlas. To compare these histology-derived anatomical edges with the extended and mirrored but unsmoothed label edges (center left), we used a distance transform method to find the distance from each label edge pixel to the nearest anatomical edge (center right), shown here as a heat map of edge distances (right). (B) Eroded labels served as seeds (left) from which to grow edge-aware labels through a watershed algorithm (center left), guided by the gross anatomical edges. After smoothing, borders matched the anatomical edges more closely (center right), as shown in the edge distance heat map for the modified labels (right), using the same intensity scale. (C) The final E18.5 atlas after edge-aware reannotation and label smoothing to minimize edge artifacts. (D) To evaluate the level of edge match by label, we mapped differences in the intensity coefficient of variation weighted by relative volume for each label before and after label refinement onto each corresponding label for the E18.5 atlas (left) and across all ADMBA atlases (right). For both, the anatomical map depicts this metric as a color gradient across all of the sublevel labels present in a cross-section of the E18.5 atlas. Improvements of this metric with the refined atlas are colored in blue, minimal change is shown in white, while red represents better performance with the original atlas. (E) Applied across the full ADMBA, edge-aware reannotation and smoothing led to a significant improvement in the overall variation of intensities, taken as a weighted mean across all labels to incorporate parcellation changes while weighting by label volume (central nervous system, or ‘neural plate,’ level 0, ID 15565 in the Allen ontology; p=0.008, n = 8 atlases, WSRT). (F) Distances from labels to anatomical edges taken as the sum across all labels similarly showed a significant improvement across atlases (p=0.008, n = 8, WSRT).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Distances between labels and gross anatomical edges in the ADMBA E18.5 atlas show improvement from the original (top left) with either smoothing (top right) or edge-aware reannotation (bottom left) alone, but even more so when combining the two approaches through edge aware reannotation followed by label smoothing (bottom right).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The change in volume from each mirrored to its smoothed (edge-aware) atlas is shown by total volume for each label. Scaling is log-modulus transformed to log-scale all values including non-positive volumes. 3132 labels are present where x < 0.2.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) The asymmetry of the right hemisphere, contralateral to that of the left, originally annotated hemisphere, in the original atlas microscopy image is apparent when the mirrored labels are overlaid as illustrated here in the E18.5 atlas, notably in the olfactory bulb (top, axial view) and lateral cortex (bottom, coronal view). (B–E) Image registration of the mirrored (top, illustrated on the E18.5 atlas) or smoothed (edge-aware, bottom) atlases allows separate assessment of the original hemisphere (left) as an internal control for the contralateral (right) hemisphere within each atlas. In the original, left hemispheres, the (B) intensity coefficient of variation decreased from a median of 0.340 to 0.331 (p=0.008, WSRT) across the ADMBA, and (C) edge distances decreased from a median of 91 million to 50 million µm (p=0.008, WSRT), similarly to the full mirrored atlases. Findings were similar in the contralateral, right hemispheres, from which neither the original labels nor the 3D reconstruction were derived, where both (D) variation decreased from a median of 0.298 to 0.291 (p=0.008, WSRT) and (E) edge distances decreased from a median of 89 million to 41 million (µm, p=0.008, WSRT).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A–C) The original P28 atlas contains partially labeled lateral planes that were not included in the 3D reconstruction as seen in the axial (A), coronal (B), and sagittal (C) views. (D) To measure the accuracy of the computationally generated labels with these partially labeled planes, we manually annotated the most clearly demarcated structures in these planes (center column; brown = hippocampus, green = cortical layer 1). (E–G) Computationally generated labels in the lateral planes of the smoothed (edge-aware) atlases as seen in the sagittal (E), axial (F), and coronal planes (G). The similarity between the composite set of labels corresponding to each manual annotation as measured by the Dice Similarity Coefficient (DSC) for the original and generated labels increased with the computationally generated labels, more prominently in layer 1 and the average weighted by volume. Manual annotations were cropped to the extent of all labels to only compare the partially labeled original planes where they were annotated.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) The ventromedial hypothalamus (VMH) is a region with low contrast as shown here in the microscopy images (top row) in each orthogonal view of the P28 atlas along with its original labels (upper middle row; originally annotated, sagittal planes are shown in the left column alongside their orthogonal planes in the center and right columns). Erosion of each label (lower middle row) preserves the core of highest confidence annotation while removing artifacts that were particularly visible in the axial and coronal views. Eroded label edges near anatomical boundaries (light purple lines) take advantage of them during watershed-based regrowth (bottom row; see the green structure), while edges far from these boundaries meet in-between neighboring labels (green and tan structures). The relatively coarse anatomical edge map captures only clearly demarcated boundaries with strong contrast differential, limiting the number of artifactual boundaries around low-contrast regions, while the erosion and regrowth remove artifacts in the axial and coronal views. (B) Similar views in the pontine hindbrain.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A) Wnt3a is selectively expressed in the cortical hem at E13.5 (orange structure) and used by Thompson et al., 2014b to define its boundaries based on in-situ hybridization (ISH). The region corresponding to Wnt3a (dashed circle) remains contained within the cortical hem in the original (middle row) and 3D reconstructed (bottom row) atlases. (B) Similarly, the Hoxa2 ISH signal was used to demarcate the border between the pontine hindbrain (PH) and prepontine hindbrain (PPH) in the E15.5 atlas. This boundary remains well-demarcated before (lower middle row) and after (bottom row) 3D reconstruction.
 
 Using the same gross anatomical map in 3D (shown for an example plane in Figure 4A, second from left), we first quantified the distances from 3D label edges to the expected anatomical position. Assuming that the nearest gross anatomical edge was the correct one, we measured the distance from each label edge to the nearest gross anatomical edge. We can visualize this distance as a color gradient, in which higher intensity of color represents a greater distance to each anatomical edge (Figure 4A, right columns).
 
@@ -88,11 +148,19 @@ Normally, the erosion step would lead to loss of thin structures within labels b
 
 After performing this edge-aware step, we ran the adaptive morphological opening filter smoothing step (Figure 4B). Because the edge-aware step partially smooths structures, we could use smaller filter sizes for smoothing to avoid loss of thin structures. The resulting labels show considerable improvement, for example the basal ganglia now curve around the lateral septal nuclei (Figure 4C). By adapting the morphological filter sizes during both the edge-aware and final smoothing steps, we avoid label loss and minimize volume changes relative to label size as seen in the smaller labels (Figure 4—figure supplement 2). Visualization of the color gradient of distances to anatomical edges also confirms substantial improvement in label alignment compared with the original labels or smoothing or edge-aware steps alone (Figure 4—figure supplement 1B). To quantify this improvement brain-wide, we calculated the sum of edge distances for each pixel at label surfaces across the ADMBA. We observed a significant reduction from a median of 187 million to 86 million µm (p=0.008, WSRT; Figure 4B,C,F), with a median Dice Similarity Coefficient between original (mirrored) and smoothed (edge-aware) labels of 0.76 (mean 0.80) and 9% median (mean 12%) volume reassignment. Example planes from all atlases in the ADMBA before and after refinement are depicted in Figure 5, and movies across all planes are shown in Figure 5—videos 1–16.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig5-v2.jpg)
+
+**Figure 5.:** (A-H) Representative axial planes from all atlases. For each pair of images, a plane of the original (left) atlas is depicted next to the refined (right) atlas after undergoing the full refinement pipeline. Complete atlases before and after refinement are shown as movies in Figure 5—videos 1–16.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (column 1) The distal cord of the ADMBA E11.5 atlas specimen is skewed laterally as seen in the axial view (top), preventing mirroring without duplicating the distal cord (bottom). (columns 2–4) A series of three successive piecewise affine transformations straightened the cord to avoid duplication with mirroring.
+
 Anatomical edges in microscopy images reflect differences in intensity between regions. Therefore, we would expect accurate labels to have smaller variation in intensity in the underlying microscopy images than inaccurate labels, although such a difference would need to be apparent even though the majority of the label is unchanged. We used the coefficient of variation of intensity values within each label to quantify this expectation and demonstrated significantly lower variation with edge-aware labeling (median from all labels weighted by size decreased from 0.290 to 0.282, p=0.008, for all eight atlases, WSRT; Figure 4D,E). Furthermore, edge-aware labeling decreased the absolute coefficient of variation for 92 of the 100 individual labels represented by all atlases. The few labels that showed increased variation were frequently in regions of relatively subtle intensity changes, such as the hindbrain, where histological edges were less well-defined (Figure 4D).
 
 As an internal control, we also registered the atlases to their original, asymmetric microscopy images to compare the impact of atlas reconstruction in the originally labeled hemispheres and the contralateral, asymmetric hemispheres on which the atlases were not derived and found similar improvement in anatomical fidelity (Figure 4—figure supplement 3). We also compared the computationally generated labels and partially labeled lateral regions not included in the 3D reconstruction with manually annotated regions in the P28 atlas, which showed an increase in the Dice Similarity Coefficient in the reconstructed labels (Figure 4—figure supplement 4). To explore how the edge-aware approach handles delicate sub-regions, which may not have clearly demarcated anatomical boundaries, we focused in greater depth on two complicated sub-regions in the P28 atlas (Figure 4—figure supplement 5) and two regions described in the original ADMBA paper (Thompson et al., 2014b) as demarcated by in-situ hybridization markers in the E13.5 and E15.5 atlases (Figure 4—figure supplement 6), showing that if anatomical data does not support moving the boundary, our approach smooths the boundary in the axial and coronal planes without moving the location in any of the planes.
 
-## Application to tissue-cleared whole brains
+### Application to tissue-cleared whole brains
 
 A major goal of 3D atlas refinement is for automated label propagation to optically sectioned, volumetric microscopy images generated from intact tissue using recently developed tissue clearing techniques. As the accuracy of atlas registration is ultimately dependent on the fidelity of the underlying atlas in all dimensions, we sought to test and quantify improvement from our atlas refinements in cleared mouse whole brains.
 
@@ -100,13 +168,49 @@ Among the many available methods to clear whole organs, we chose CUBIC (Susaki e
 
 To detect nuclei throughout cleared whole brains automatically, we implemented a 3D blob detection algorithm using the Laplacian of Gaussian filter, which has been shown to work well in equivalent image data (Schmid et al., 2010; Figure 6). To make the nuclei approximately spherical for blob detection, we interpolated the images axially to match the lateral resolution. Due to the large quantity of data, processing was performed in parallel on small chunks. Preprocessing and detection settings were optimized using hyperparameter tuning against a ‘truth set’ of 1118 nuclei selected from multiple brain regions that had been verified by manual visualization (Figure 6—figure supplement 2A,B). The resulting model achieved a recall (sensitivity) of 90% and precision (positive predictive value) of 92%. Furthermore, the model showed high correlation with total lightsheet microscopy intensity levels brain-wide (r > 0.99, p≤1 × 10−16, Spearman’s rank correlation coefficient (SRCC) for both original (mirrored) and smoothed (edge-aware) atlases) and nuclei vs. intensity densities (original: r = 0.89; smoothed: r = 0.93; p≤1 × 10−16 for both, SRCC), suggesting the performance was accurate outside the narrow target of the truth set (Figure 6—figure supplement 2C–E).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig6-v2.jpg)
+
+**Figure 6.:** (A) Overview of the nuclei detection and assignment pipeline. After tissue clearing by CUBIC and nuclear staining, we imaged intact whole P0 mouse brains by lightsheet microscopy (Figure 6—figure supplement 1). The E18.5 mouse brain atlas was registered to volumetric sample images. Nuclei were identified brain-wide with a 3D blob detector algorithm, and the nuclei coordinates were used to map to specific region labels, allowing quantification of nuclei counts and density for each label. (B) Axial view of the hippocampus of a P0 mouse brain at the original magnification of 5x (left) and zoomed to 20x (right), with the same region of interest (ROI) depicted by the yellow box in both. (C) Serial 2D planes along the ROI shown by the yellow box in part ‘B’ show the emergence and disappearance of nuclei while progressing vertically (z-axis) through the ROI. Each of four individual nuclei is assigned a unique colored circle. The most central image of the nuclei is indicated by a solid circle and asterisk, while images above or below have dashed circles. (D) 3D schematic of the four nuclei from part ‘C’ demonstrating their spatial orientation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mount schematic and orientation in the chamber. The lightsheet chamber requires the specimen to be suspended between the two illumination objectives producing a plane of light and detection objective perpendicular to this plane. To hold the brain in place while immersed in the refractive index matching solution, we devised a mount with a platform to maximize surface contact with the ventral surface of the brain, attached by super glue. To allow full latitude of the specimen within the chamber, we added a mount neck to center the specimen between the illumination objectives when the manipulator was approximately centered. (B) Photograph of mount and custom mount holder to facilitate gluing the specimen to the mount platform. Cotton buds were used to dry the ventral surface of the brain before attachment. We used the rod end of another mount to gently press the brain into the glue. (C) Photograph of specimen suspended and centered between the illumination objections, facing the detection objective.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Example receiver operating characteristic (ROC) curves. (top) Example ROC of nuclei detection across varying isotropic scaling factors along the z-axis. Scaling is shown as the fraction of isotropy along the z-axis, where 1 = isotropic. For example, 0.5 indicates that each ROI was resized so that the z-axis was half of the size it would need to be for full isotropy with the x- and y-axes. (bottom) Example ROC evaluating two hyperparameters, the minimum and maximum standard deviations for the Gaussian kernel used for multi-scale detection, to find the optimal size bounds for blob detection. Inset shows a zoomed view of the clustered points. (B) Total nuclei vs. intensity by label showed a linear relationship using labels defined by either the original (mirrored; r = 0.997, p≤1×10−16) or smoothed (edge-aware; r = 0.997, p≤1×10−16) atlases. In the correlation plot (bottom), the size of the circle indicates the size of the correlation coefficient (r). (C) Similarly, nuclei density vs. intensity density relationships were approximately linear in the original (mirrored; r = 0.894, p≤1×10−16) and smoothed (edge-aware; r = 0.929, p≤1×10−16) atlases. (D) Sensitivity and False Discovery Rate stratified by nuclei density in manually annotated truth sets as seen in the histogram (left) showed a similar distribution by region (middle) and overall metrics (right) by density group, with numerically lower recall and slightly higher precision in denser regions.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Overlays of each registered atlas microscopy image on its corresponding downsampled wild-type brain. All examples are shown at the same plane. (B) Composite image of wild-type sample brains registered in reverse, using the same settings but registering the sample to the atlas to evaluate overall alignment of registered brains. (C) Overall registration quality as expressed by the DSC between the foreground of each sample and its registered atlas showed a median of 0.91 (mean 0.90).
+
 Using the E18.5 brain as the closest atlas to our P0 C57BL/6J wild-type mouse brains (birth typically at E19 Murray et al., 2010), we then registered the atlas volumetric histology images to each sample brain. We chose to register brains using the Elastix toolkit (Klein et al., 2010; Shamonin et al., 2014), which has been validated on CUBIC cleared brains and balances computational efficiency and accuracy (Nazib et al., 2018). After downsampling the volumetric images to the same dimensions as the atlas for efficiency, we applied rigid, followed by non-rigid, deformable registration based on a multi-resolution scheme, optimizing the cross-correlation similarity metric as implemented by the SimpleElastix (Nazib et al., 2018; Marstal et al., 2016) programmable interface to the Elastix toolkit (Klein et al., 2010; Hammelrath et al., 2016). After registration, the median DSC between the registered atlas volumetric histology images and the lightsheet microscopy images of each sample brain was 0.91 (mean: 0.91; 95% confidence interval: 0.90–0.92; Figure 6—figure supplement 3), although inspection of registered brains also revealed slight misalignments with the atlas, mostly in caudal regions including the cerebellum, a structure known to be challenging for registration (Nazib et al., 2018). Variations in sample preparation, including the completeness of the dissected hindbrain and expansion of the third ventricle during tissue clearing may also have contributed to these misalignments.
 
 To evaluate whether our updated, smoothed 3D labels improved the analysis of true volumetric data, we registered both the original and refined labels to these 15 tissue-cleared, nuclei-labeled whole wild-type mouse brains (10 male, five female). We would expect improved 3D labels to correspond more closely to the underlying anatomy. To test this expectation, we generated gross anatomical edge maps for each cleared brain and measured distances from label borders to anatomical edges. Edge distances significantly improved for almost all labels (overall decrease from a median of 153 million µm to 96 million µm, p=0.007, WSRT, Bonferroni corrected for all 120 labels across all hierarchical levels, mean 152 million to 99 million µm; Figure 7A,C–D; Figure 7—figure supplement 1A). We would also expect improved 3D labels to have lower variation in image intensity within each label, as we observed in assessing the refined labels with the original brain images from which they were derived (Figure 4E). We observed a small, but significant decrease in the intensity coefficient of variation at the whole-brain level (0.309 to 0.301, p=0.007, WSRT, Bonferroni corrected for the 120 comparisons, mean 0.311 to 0.304) and most sub-labels (Figure 7—figure supplement 1B). For 22 labels (18% of all labels) the variability worsened, however this was only significant (p=0.04) for a single label. The majority of these 22 labels describe small structures (combined 7% of total volume) and therefore sensitive to slight perturbations in border location, and located ventrally in the brain, where signal was prone to being distorted by glue artifacts from the mount for lightsheet imaging. For context, variability improved for 98 labels (82% of all labels) with 27 labels showing significant improvement.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig7-v2.jpg)
+
+**Figure 7.:** (A) Example of the original (mirrored, left) and smoothed (edge-aware, right) E18.5 atlases registered to a representative cleared, optically-sectioned P0 wild-type mouse brain. Edge distances between the registered labels and the brain’s own anatomical edge map are reduced for this example brain, shown by the color gradient for each edge (bottom). (B) Label alignment at higher resolution. The top row depicts the registered original (mirrored) atlas at 20x and 100x around a region of interest highlighted by a yellow box. This same brain region is depicted in the bottom row, but overlaid with the refined atlas registered using identical transformations as in the original atlas. (C) Summation of the edge distances across all 15 wild-type brains with color gradient showing the edge distances with the original (top) and smoothed (bottom) labels. (D) Total edge distance at the whole-brain level before and after atlas refinement for each of these brains. (E) Density-based nuclei clustering within each label. Many of the isolated nuclei that could not be clustered in the original labels were clustered in the refined labels, with differences in unclustered nuclei shown from 16 regions selected across the hierarchy of labels from the grossest (neural plate, L0, left) to the finest (e.g. dorsal pallidum, L7, right). Error bars represent 95% confidence intervals. (F) The differences between the original and refined labels’ unclustered nuclei are depicted on an anatomical map showing this metric as a color gradient across all the sublevel labels present in a cross section. Improvements with the refined atlas are colored in blue, while red represents better performance with the original atlas. A complete list of differences for each metric in each label is provided in Supplementary file 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The differences between the original (mirrored) and smoothed (edge-aware) labels’ edge distance sum and (B) intensity and (C) nuclei density coefficients of variation as reflections of region homogeneity are quantified with bar plots (left) for selected regions across the hierarchy of labels. Error bars represent 95% confidence intervals. Anatomical maps depict these metrics as a color gradient across all of the finest labels present in a cross section (right). Increases in a metric with the original atlas are colored in blue, while red represents increases with the refined atlas.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) The differences between the original (mirrored) and smoothed (edge-aware) labels’ volume, (B) nuclei, and (C) nuclei densities (bottom) are quantified with bar (right) and volcano (left) plots. Selected regions are shown across the hierarchy of labels from the grossest (neural plate, L0, left) to the finest (e.g. dorsal pallium, L7, right). Positive values indicate decreased size in the refined atlas. Error bars represent 95% confidence intervals. Volcano plots depict each label as a separate point with point size correlating with label size and colors corresponding to major parent structure (neural plate = light blue, forebrain = dark blue, midbrain = light green, hindbrain = dark green). Points higher and farther from 0 have stronger statistical significance and effect size, respectively. p-Values are calculated by the WSRT, Bonferroni corrected for all 120 labels within each measurement. Effect sizes are standardized based on the WSRT Z-statistic.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A-B) To determine the appropriate cluster neighborhood distance parameter, the fifth nearest neighbor distances for all nuclei in each wild-type brain are plotted in ascending order (right), following the convention in DBSCAN of taking the 2·ndim−1th neighbor (Schubert et al., 2017). (left) The zoomed view allows identification of the distance at the ‘elbow’ or ‘knee,’ or maximum curvature, typically at 20 µm or higher. (C) Nuclei clustering within each label in the smoothed (edge-aware) atlas as a fraction of that of the original (mirrored) atlas across a range of distance values. The number of isolated, unclustered nuclei and total clusters, indicative of nuclei isolation and cluster fragmentation, respectively, decreased in the smoothed atlas relative to the original atlas, starting even prior to the minimum distance based on the max curvature seen in part ‘B.’ (E) Example using a conservative neighbor distance of 20 µm for clustering in a brain before (top) and after (bottom) label refinement. Light gray lines show label boundaries. Unclustered nuclei are depicted as white points. All other points are clustered nuclei. Within each region, nuclei are colored by cluster size, where blue represents nuclei in the largest cluster, followed by orange, green, and red for the next successively smaller clusters. (D) Differences in unclustered nuclei and (E) number of clusters by region across all wild-type brains with this distance setting for selected regions across label hierarchies in bar plots (left) and as color gradients on an anatomical map (right).
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/61408/elife-61408-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (A) ROI serial 2D viewer and annotation editor GUI. The viewer provides overview images at increasing magnifications, zooming into the ROI outlined in yellow. Overview images are scrollable to show how the z-planes change through the ROI in place. Sequential z-planes of the ROI alone depict the original 2D images side-by-side through the entire 3D ROI, with a few additional opacified planes shown above and below the ROI for context. Overlaid labels show an example of automated nuclei segmentation. (B) Another example of the ROI viewer, here in nuclei annotation and verification mode. Automated nuclei centroid ‘blob detections’ are depicted as interactive circles corresponding to blob positions and radii. For building truth sets, circles provide drag-n-drop and copy-paste controls to reposition, add, or subtract these detections for accuracy. Green and red flags allow scoring for detection correctness. To compare with truth sets, blue and purple dots depict previously annotated nuclei positions pulled in from a database. Automated verification of current blob detections against the truth set shows blue dots as correctly detected truth blobs, purple as missed truth blobs, green circles as correct detections based on a matched truth blob, and red as incorrect detections (no remaining truth blob matches). (C) ROI selector and 3D visualization GUI. The right panel displays ROI offset and size controls, 2D and 3D display options, label controls including ontology depth, and an editable blob table. The left panel shows an example whole atlas 3D visualization using the ADMBA E11.5 atlas. (D) Atlas editor GUI. The GUI provides simultaneous orthogonal views in all three dimensions, with planes corresponding to the crosshairs. With ‘Editing’ selected, labels can be painted into adjacent labels as shown in the intermediate stratum of Str label in the left hemisphere of the z-plane. Editing a second, non-contiguous z-plane in the same label will enable the ‘Fill’ button to perform edge interpolation for this label through all intervening planes.
+
 These two analyses support an overall improved performance of the refined 3D labels with the volumetric images, however we can also test nuclei density - a key use case for whole-brain imaging methods (Murakami et al., 2018). After detecting nuclei throughout each brain (Figure 6), we assigned each nucleus to an atlas label based on the 3D location of the nucleus. Using the numbers of nuclei per label and the volume per registered label, we calculated nuclei densities using the original and refined labels (Figure 7—figure supplement 2). As with the volumetric image data, we would expect accurate labels to encapsulate regions with more constant nuclei density. We therefore assessed the coefficient of variation for nuclei density and observed a small, but significant improvement with the refined labels overall (median 0.629–0.625, p=0.007, WSRT, Bonferroni corrected for the 120 hierarchical labels, mean 0.629–0.625) and across the majority of labels in the hierarchy (Figure 7—figure supplement 1C). A median of 13.5% (4.7 million) nuclei (mean 13.2% [4.6 million] nuclei) were reassigned from original to refined labels. Examples of these nuclei reassignments in a wild-type mouse forebrain are depicted in Figure 7B. As an independent assessment of label alignment based on nuclei density alone, we measured nuclei clustering within each label under the expectation that well-aligned labels would group nuclei of similar densities, whereas poorly aligned labels would form isolated pockets of nuclei along borders between regions of contrasting nuclei densities. We employed Density-Based Spatial Clustering of Applications with Noise (DBSCAN) (Ester et al., 1996), an algorithm useful for both clustering and noise or anomaly detection (Ali et al., 2010), and indeed found that label refinement reduced isolated, unclustered nuclei by 30% (median 4.4 × 105 to 3.1 × 105 nuclei; p=0.007, WSRT, Bonferroni corrected for the 120 labels; mean 4.4 × 105 to 3.1 × 105; Figure 7E–F; Figure 7—figure supplement 3), suggesting greater nuclei assignment to labels with nuclei clusters of similar density.
 
-## MagellanMapper as a tool
+### MagellanMapper as a tool
 
 To facilitate both automated atlas refinement and visual inspection of large 3D microscopy images, we developed the open-source MagellanMapper software suite. This Python-based (Oliphant, 2007; Millman and Aivazis, 2011) image processing software consists of both a graphical user interface (GUI) for visualization and a command-line interface for automation (Figure 7—figure supplement 4). A major goal of the suite’s GUI is to enable unfiltered, raw visualization and annotation of original 2D images in a 3D context. The GUI consists of three main components: (1) A region of interest (ROI) selector and 3D visualizer with 3D rendering, (2) A serial 2D ROI visualizer and annotator, tailored for building truth sets of 3D nuclei positions, and (3) A simultaneous orthogonal plane viewer with atlas label editing tools, including painting designed for use with a pen and edge interpolation to smoothly fill in changes between two edited, non-adjacent planes. The command-line interface provides automated pipelines for processing of large (terabyte-scale) volumetric images, including 3D nuclei detection at full image resolution.
 
@@ -130,17 +234,69 @@ While the refined labels are superior to the original ones in both the ADMBA ima
 
 Recent methodological advances may further improve the refined 3D labels. Chon et al., 2019 integrated the Franklin-Paxinos atlas with the CCFv3 atlas and additional cell-type specific markers, addressing discrepancies between these standard references. Integrating our anatomical edge maps with in-situ hybridization expression patterns (Allen Institute for Brain Science, 2017; Thompson et al., 2014b) may similarly improve label boundaries. A deep learning model utilized histological textures to generate labels (Chen et al., 2019). Training the model required substantial manual annotation to serve as the initial ground truth; in this context, our automated approach to atlases generation may be able to replace or augment this manual step. Another recent approach used fractional differential operators to preserve texture as well as edge information for segmentation of single-cell resolution data (Xu et al., 2019b). This could be incorporated into the 3D anatomical edge map generation step to further delineate labels at higher or even full resolution.
 
-## Conclusion
+### Conclusion
 
 Mouse whole-brain imaging has been used to understand models of human traits, including sexual dimorphism (Kim et al., 2017) and models of human disorders, including Alzheimer’s disease (Liebmann et al., 2016; Delafontaine-Martel et al., 2018; Whitesell et al., 2019), serotonin dysregulation (Ellegood et al., 2018), epilepsy (Intson et al., 2019), and autism spectrum disorder (ASD) (Suetterlin et al., 2018). Such analyses would be augmented by accurate 3D reference atlases, allowing the detection of subtle quantitative changes not readily appreciable in individual slices. As we have described and demonstrated here, anatomically guided completion and refinement of reference atlases more fully leverages the many existing and established atlases by expanding them to full coverage and greater accuracy at cellular resolution. The completed and refined 3D ADMBA serves as a resource to help identify biological differences in the multiple models of human disorders and traits across brain development.
 
 ## Materials and methods
 
-## Original atlases
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664 RRID:MGI_3028467</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYTO 16</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: S7578</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI/ImageJ software</td>
+      <td>FIJI/ImageJ</td>
+      <td>RRID:SCR002285</td>
+      <td>Version 1.52</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MagellanMapper software</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zeiss Zen software</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_018163</td>
+      <td>Version 2014</td>
+    </tr>
+  </tbody>
+</table>
+
+### Original atlases
 
 The ADMBA series provides atlases for multiple developmental time points from embryonic through adult stages (Thompson et al., 2014b). Each atlas consists of two main images given in a volumetric format (.mhd and its associated .raw file), a microscopy image (‘atlasVolume’) and a labels image (‘annotation’), which are each composed of multiple 2D sagittal planes. As outlined in the ADMBA technical white paper (Allen Institute for Brain Science, 2013a) and online application programming interface (API) documentation (Allen Institute for Brain Science, 2018), each microscopy plane is from imaging of a C57BL/6J mouse brain specimen cryosectioned into 20 µm (E11.5-P4) or 25 µm (P14-P56) thick sagittal sections stained with Feulgen-HP yellow nuclear stain (E11.5-E18.5) or Nissl staining (P4-P56), and imaging planes were assembled into a 3D volume. To create the atlas labeling, an expert anatomist used Adobe Illustrator CS to annotate 2D planes, which were interpolated to create annotations in 3D (Thompson et al., 2014b; Allen Institute for Brain Science, 2013b; Allen Institute for Brain Science, 2018). The annotation planes correspond to each microscopy plane, with integer values at each pixel denoting the label at the finest structural level annotated for the corresponding microscopy voxel.
 
-## Lateral labels extension
+### Lateral labels extension
 
 While the ADMBA covers a large proportion of unique areas within each brain, the atlas labels leave the lateral edges of one hemisphere and the entire other hemisphere unlabeled. To fill in missing areas without requiring further manual annotation, we made use of the existing labels to sequentially extend them into the lateral unlabeled histology sections. This process involves (1) resizing the last labeled plane to the next, unlabeled plane, (2) refitting the labels to the underlying histology, and (3) recursively labeling the next plane until all unlabeled planes are complete (Figure 2—figure supplement 2).
 
@@ -152,13 +308,13 @@ After identifying each structure and its labels, we fit the labels to the next l
 
 Spline interpolation, anti-aliasing, and range rescaling were turned off during the resize operation to avoid introducing new label values. Some atlas labels contain empty space such as ventricles. To ensure that the ventricles close as they progress laterally, we employed an in-painting approach. Using the Euclidean distance transform method from the Scipy (Virtanen et al., 2020) library (ndimage.distance_transform_edt), we identified the indices of the nearest neighboring pixel for any unlabeled pixel whose corresponding histology intensity value was above threshold and filled this missing pixel label with the value of this neighbor.
 
-## Edge map generation
+### Edge map generation
 
 While the labels from one plane could serve as an approximate template for the next plane, we curated this template to fit the underlying anatomy. To map this anatomy, we generated gross anatomical edge maps of the histology images through 3D edge detection. First, we smoothed the volumetric microscopy image using a Gaussian filter with a sigma of 5 followed by an edge detection with a Laplacian filter using a default operator size of 3, using both filters implemented in scikit-image (filters.gaussian and filters.laplace, respectively). This relatively large Gaussian sigma allowed for capture of broad anatomical edges such as the cortex and basal ganglia while minimizing detection of artifactual boundaries. To enhance edge detection of the outermost boundaries, we identified and removed background by thresholding the original microscopy image with an Otsu threshold (filters.threshold_otsu) and combining it with a mask of all the original labels to fill in any missing holes in the thresholded image.
 
 Finally, we reduced the edge-detected image to a binary image of edges alone by applying a zero-crossing detector. This detector separately erodes and dilates (morphology.erosion and morphology.dilation, respectively, with a ball-shaped structuring element of size 1) the edge-detected image to find borders, taking all pixels where this image changed signs as gross anatomical edges (Figure 4A).
 
-## Anatomically guided serial 2D reannotation
+### Anatomically guided serial 2D reannotation
 
 This edge map allowed us to conform labels to local anatomy. To refit labels, we eroded and regrew them in a watershed transformation guided by the anatomical edge map.
 
@@ -170,7 +326,7 @@ In atlases such as the ADMBA E18.5 atlas, a few spurious labeled pixels from oth
 
 Each plane of labels thus conformed to its underlying anatomy and became the template for the next plane, keeping labels inherently connected from one plane to the next. While this approach is in serial 2D rather than fully 3D because the starting labeled plane is 2D, a subsequent step will further refine labels in 3D.
 
-## Atlas 3D rotation and mirroring
+### Atlas 3D rotation and mirroring
 
 To fill the missing hemisphere in the labels image, we initially simply mirrored the present labels and underlying histology planes across the first unlabeled sagittal plane on the opposite side. We noticed, however, that this mirroring frequently duplicated midline structures because the labels extend slightly past the true sagittal midline. When we shifted the mirroring to the sagittal plane closest to midline, we found that many labels were lost in the final image.
 
@@ -178,7 +334,7 @@ Many of the developing atlases contain at least a few labels positioned solely a
 
 Upon closer inspection, many of the brains are slightly rotated in two or three dimensions, which contributed to loss of midline labels during mirroring. To rotate images volumetrically in 3D, we applied the scikit-image rotate function to all 2D planes along any given axis for each rotation. For each atlas, we applied this volumetric rotation along all necessary axes until the sagittal midline was parallel to an image edge, manually inspecting each brain in our 2D/3D orthogonal viewer to ensure symmetry. In some cases, such as the E18.5 atlas, the brain skewed laterally along its rostrocaudal axis. To avoid introducing a gap between midline labels and the corrected midline after rotation, we filled all planes on the unlabeled hemisphere side with the last labeled plane before rotation. Mirroring would then overwrite all of these repeated labels except those that filled in potential gaps left by rotation. After rotation, we noticed that mirroring reduced label loss in at least some atlases (e.g. E13.5).
 
-## Piecewise 3D affine transformation
+### Piecewise 3D affine transformation
 
 The distal spinal cord of the E11.5 atlas is strongly skewed and would be duplicated during mirroring. The skew is complicated by the cord’s coiling back on itself and progressive skew along its length. To bend the distal cord to the sagittal midline, we developed a method for piecewise 3D affine transformation. This transformation allows a cuboid ROI within a volumetric image to be sheared while maintaining a specified attachment point along another axis, reducing discontinuity with neighboring areas.
 
@@ -188,13 +344,13 @@ Applied to the skewed spinal cord, this approach allowed us to shear the cord on
 
 After mirroring the resulting brain and cord, no duplication could be seen. This piecewise, overlapping affine of targeted regions allowed straightening of the cord without breakages or alteration of surrounding areas. Although surrounding non-CNS tissue suffered noticeable breakage, they were stripped out as described below.
 
-## Stripping non-CNS signal
+### Stripping non-CNS signal
 
 The extended labels allowed us to mask and crop out non-CNS tissue, including the rest of the embryo present in several of the embryonic stage atlases. While distinguishing this tissue based on intensity characteristics alone would be challenging, especially for areas where the spinal cord extends the length of the embryo, the extended, mirrored labels provide a map of relevant CNS tissue.
 
 For each of the atlases with non-CNS tissue (E11.5-E15.5), we first cropped the atlas to the bounding box of these labels along with a small padding (5px) to remove much of the non-CNS tissue, such as the entire unlabeled body in the E15.5 atlas. We removed non-CNS tissue remaining within the cropped areas by using the labels as a mask to remove all histology pixels outside of the labels mask, including the body surrounding the labeled spinal cord in E11.5. To avoid missing tissue that may have been unlabeled, we dilated the labels mask slightly (morphology.binary_dilation with a ball-shaped structuring element of size 2) so that the mask encompasses both the labels and its immediate surroundings. The resulting histology thus contains all pixels in the near vicinity of labels, including pixels that should be labeled but are not.
 
-## Label smoothing
+### Label smoothing
 
 While labels appear generally smooth when viewed from the sagittal plane, label edges are noticeably jagged when seen from the orthogonal directions. A previous smoothing solution proposed by Niedworok et al., 2016 utilized a Gaussian blur with a sigma of 0.5 in two iterations to minimize ragged edges in an atlas derived from the Allen Reference Atlas P56 mouse brain atlas. We applied this approach by iteratively applying the Gaussian filter implemented in scikit-image (filters.gaussian) with a range of sigmas (0.25–1.25) to each label in 3D (Figure 3—figure supplement 2).
 
@@ -202,27 +358,53 @@ To extract each label in 3D, we found the bounding box of the label using the sc
 
 To enhance smoothing while retaining the original underlying contour of each label, we devised an adaptive opening morphological filter approach. The morphological opening filter first erodes the label to remove artifacts such as ragged edges, followed by dilation of the smoothed label to bring it back toward its original size. In place of the Gaussian filter, we applied this opening filter (morphology.binary_opening in scikit-image). For smaller labels, the filter occasionally caused the label the disappear, particularly for sparsely populated labels with disconnected pixels. To avoid label loss, we employed an adaptive filter approach by halving the size of the filter’s structuring element for small labels (≤5000 pixels). For any label lost in spite of this filter size reduction, we switched the filter to a closing morphological filter (morphology.binary_closing), which dilates first before eroding and tends to preserve these sparse labels at the expense of potentially amplifying artifact.
 
-## Smoothing quality metric
+### Smoothing quality metric
 
 To evaluate the quality of smoothing and to optimize morphological filter structuring element sizes, we developed a smoothing quality metric with the goal of balancing smoothness while maintaining the overall original shape and placement. Since the major effect of label smoothing is to minimize high frequency aberrations at label borders and thus make each label more compact, we measured this amount of smoothing by the 3D compactness metric. We termed the difference in compactness before and after smoothing as ‘compaction.’ As the goal of smoothing is to remove these artifacts while preserving the overall shape of the label, we introduced a penalty term of ‘displacement,’ measured by the volume shifted outside of the label’s original bounds.
 
-We used the classical measure of volumetric compactness, where lower values are more compact (Ballard and Brown, 1982):(1)Compactness=SA3/Vol2
+We used the classical measure of volumetric compactness, where lower values are more compact (Ballard and Brown, 1982):
 
-To measure the surface area of each label in 3D, we employed the marching cubes algorithm (Lorensen and Cline, 1987) as implemented in scikit-image (measure.marching_cubes_lewiner), which also accounts for anisotropy. The algorithm extracts surfaces in 3D by dividing the volume into cubes and marching through these cubes to find where isosurfaces intersect with each cube, forming triangular surfaces within each cube wherever an isosurface passes through the cube. Using a mask of each label, we obtained the edge surface as a mesh from which we measured the surface area (measure.mesh_surface_area). We took the volume as the total number of mask pixels and multiplied by the product of the voxel spacing to account for anisotropy. With the surface area and volume, we calculated the labels compactness (1). To quantify the fractional change in compactness before and after smoothing, we took the original compactness minus the smoothed compactness and normalized the difference to the original compactness to give the unitless value that we termed ‘compaction’:(2)Compaction=Corig−CsmoothCorigwhere C is the 3D compactness given above.
+$$
+Compactness=SA^{3}/Vol^{2}
+$$
 
-To measure ‘displacement,’ we measured the volume shifted outside of the label’s original bounds. Taking the mask of the smoothed label, we combined it with the inverse of the mask of the original label through a boolean ‘and’ before totaling the number of pixels. Similarly to the compactness measure, we normalized the displacement volume to generate a unitless value constrained between 0 and 1, dividing this displaced smoothed volume by the total smoothed volume:(3)Displacement=Volsmooth∉VolorigVolsmoothwhere Vol is the volume of the given label.
+To measure the surface area of each label in 3D, we employed the marching cubes algorithm (Lorensen and Cline, 1987) as implemented in scikit-image (measure.marching_cubes_lewiner), which also accounts for anisotropy. The algorithm extracts surfaces in 3D by dividing the volume into cubes and marching through these cubes to find where isosurfaces intersect with each cube, forming triangular surfaces within each cube wherever an isosurface passes through the cube. Using a mask of each label, we obtained the edge surface as a mesh from which we measured the surface area (measure.mesh_surface_area). We took the volume as the total number of mask pixels and multiplied by the product of the voxel spacing to account for anisotropy. With the surface area and volume, we calculated the labels compactness (1). To quantify the fractional change in compactness before and after smoothing, we took the original compactness minus the smoothed compactness and normalized the difference to the original compactness to give the unitless value that we termed ‘compaction’:
 
-As a measure of smoothness quality, we took the difference of the compaction and displacement:(4)Smoothingquality=Compaction−Displacement
+$$
+Compaction=\frac{C_{orig}−C_{smooth}}{C_{orig}}
+$$
 
-To quantify the smoothing quality for the entire atlas, we took the weighted arithmetic mean of all the labels’ smoothing qualities, weighting by each label’s volume. The atlas-wide smoothing quality metric can be summarized in the following equation:(5)Atlas−WideSmoothingQuality=∑i=1NSmoothingQualityiVoli,orig∑i=1NVoli,origwhere N is the total number of original labels. While maximizing compaction would reduce surface area the most by transforming the label into a perfect sphere, the displacement from the label’s original space would penalize this over-compaction, allowing us to target the balance of compaction and displacement to find the optimal smoothing quality.
+where C is the 3D compactness given above.
 
-## Anatomical to label edge distance quantification
+To measure ‘displacement,’ we measured the volume shifted outside of the label’s original bounds. Taking the mask of the smoothed label, we combined it with the inverse of the mask of the original label through a boolean ‘and’ before totaling the number of pixels. Similarly to the compactness measure, we normalized the displacement volume to generate a unitless value constrained between 0 and 1, dividing this displaced smoothed volume by the total smoothed volume:
+
+$$
+Displacement=\frac{Vol_{smooth}∉Vol_{orig}}{Vol_{smooth}}
+$$
+
+where Vol is the volume of the given label.
+
+As a measure of smoothness quality, we took the difference of the compaction and displacement:
+
+$$
+Smoothingquality=Compaction−Displacement
+$$
+
+To quantify the smoothing quality for the entire atlas, we took the weighted arithmetic mean of all the labels’ smoothing qualities, weighting by each label’s volume. The atlas-wide smoothing quality metric can be summarized in the following equation:
+
+$$
+Atlas−WideSmoothingQuality=\frac{\sumi=1NSmoothingQuality_{i}Vol_{i,orig}}{\sumi=1NVol_{i,orig}}
+$$
+
+where N is the total number of original labels. While maximizing compaction would reduce surface area the most by transforming the label into a perfect sphere, the displacement from the label’s original space would penalize this over-compaction, allowing us to target the balance of compaction and displacement to find the optimal smoothing quality.
+
+### Anatomical to label edge distance quantification
 
 As an automated method of quantifying the correspondence between labels and anatomical edges, we used the anatomical edge maps generated earlier to measure the distance between anatomical and label edges. We reduced each label to its edges in 3D by eroding the very outer surface of each label (morphology.binary_erosion with a cross-shaped structuring element with connectivity of one) and subtracting this eroded label from the original label.
 
 To measure distances between label and anatomical borders, we performed the Euclidean distance transform (ndimage.distance_transform_edt in Scipy) on the anatomical edge map to measure distances from any given voxel to the anatomical edges, using the sampling parameter to specify the microscopy image spacing in µm. Using the labels edge map, we next took only the voxels in the distance map corresponding to these label borders as a map of distances from each label voxel to its nearest anatomical edge. As overall measures of distance from label borders to the nearest anatomical border, we summed the edge distances for each label to compare before and after label refinement.
 
-## Anatomically guided 3D reannotation
+### Anatomically guided 3D reannotation
 
 Generating edge images provided a map of the boundaries between anatomically distinct regions not only to measure distances between borders, but also to curate the labels themselves with these anatomical edges. To reannotate the existing unsmoothed labels, we eroded and regrew them through an anatomically guided watershed transformation similar to the approach described above but now in 3D. We tested seeds with multiple erosion filter sizes and found that a structuring element size of 8 reduced the seed size sufficiently to correct label bounds around several grossly abnormal labels, including the lateral septal nuclei and basal ganglia.
 
@@ -230,11 +412,11 @@ As a global operator, erosion typically leads to loss of thin structures, especi
 
 The resulting watershed segmentation also served as preliminary smoothing but introduced its own label edge artifacts, though of lower frequency than in the original labels. We thus deferred the smoothing algorithm until after this watershed step and could use smaller filter sizes to generate a final smooth image.
 
-## Application to the full ADMBA series
+### Application to the full ADMBA series
 
 Each atlas in the ADMBA required a different set of refinement features and settings, including specialized adjustments such as the 3D piecewise affine only for a specific atlas (E11.5). To allow for customized settings, we defined separate profiles of parameters within our software suite for each atlas.
 
-## E11.5
+### E11.5
 
 The microscopy images depict a specimen in embryonic stage with the caudal end including the spinal cord wrapping around itself and deviated laterally from the rest of the body. As with most other atlases in this series, one half of the labels were missing. Making the image symmetric would allow us to mirror labels from the existing side onto this missing side and minimize bias when using the atlas for automated registration tasks. We started by rotating the image by 5° in the axial planes toward the left of the brain and 1° in the coronal planes to raise the right side of the brain, bringing the sagittal midline parallel to an image edge. To shift the distal end of the spinal cord back toward the sagittal midline, we applied the piecewise 3D affine transformation described above (Figure 5—figure supplement 1). Prior to the affine, we applied an additional rotation of 30° in the sagittal planes to position the skewed distal cord within a single cuboid ROI parallel to the image.
 
@@ -242,37 +424,37 @@ With the embryo now symmetric, we mirrored the labels and microscopy signal alon
 
 The E11.5 atlas uniquely contains labeled ventricles. To ensure that the Laplacian of Gaussian edge-detection algorithm appropriately found ventricular edges, we used only the thresholded atlas rather than incorporating the labels to find the background. We also included the ventricular space as foreground for purposes of the DSC calculations between microscopy and labels to account for the ventricular labeling. This atlas did not require lateral extension.
 
-## E13.5
+### E13.5
 
 This atlas also contains the full embryo, but the spinal cord is symmetric along the sagittal midline of the brain and did not require the affine transformations as in the E11.5 atlas. After extending the lateral edges, we rotated the atlas by 4° in the axial planes toward the left of the brain and 2° in the coronal planes to lift the right side of the brain, making the atlas symmetric before mirroring the atlas at 48% along the sagittal planes. We again stripped non-CNS tissue the same way as for the E11.5 atlas.
 
-## E15.5
+### E15.5
 
 This atlas is the final one to include the complete embryo, although only the very rostral end of the spinal cord includes labels. We extended the lateral edges, rotated the images by 4° in the axial planes toward the left side of the brain, mirrored the atlas at 49% along the sagittal planes, and stripped away the entire embryo outside of the brain. A stepwise shift in sagittal planes is apparent at several planes (e.g. 104 and 129) in both the histology and label images in the original atlas, which we smoothed slightly in the labels during the smoothing step.
 
-## E18.5
+### E18.5
 
 A small subset of labels from sagittal planes 103–107 were compressed along the dorsoventral axis. To match them with their neighboring label planes and the underlying atlas, we resized them similarly to the lateral edge extension. Starting with the first plane in this subset, we thresholded the microscopy image, removed small objects, and obtained the largest bounding box of connected histology components. Taking only this largest connected structure allowed us to avoid including extraneous tissue visible on the ventral aspect of the brain, which was unlabeled. We repeated the process on the labels to obtain its compressed bounding box and resized it to the size of the microscopy bounding box. Finally, we repeated the entire process on the rest of the planes in this subset (Figure 2—figure supplement 3).
 
 For the lateral edge extension, we noted that the basal ganglia in the most lateral planes are slightly larger than in more medial planes. Under the assumption that the basal ganglia would be tapering laterally, we skipped these planes and started the extension at 13.7% along the sagittal planes to take the plane with smallest basal ganglia label. After rotating the atlas by 1.5° in the axial planes toward the right of the brain and 2° in the coronal planes to lift the left side of the brain, we mirrored microscopy and labels at 52.5% along the sagittal planes for symmetry.
 
-## P4
+### P4
 
 This atlas is reminiscent of E18.5 but without the necessity of setting the lateral edge extension starting plane explicitly or expanding any compressed labels. After lateral edge extension and rotating the atlas by 0.22° in the axial planes toward the right of the brain, we mirrored microscopy and labels at 48.7% along the sagittal planes for symmetry.
 
-## P14
+### P14
 
 The most laterally labeled plane is discontinuous with the rest of the labeled planes in this atlas, so we skipped this plane during lateral extension and started extending only from the first contiguous set of planes. After rotating the atlas by 0.4° in the axial planes toward the left of the brain, we mirrored the microscopy and labels images at the 50% mark along the sagittal planes.
 
-## P28
+### P28
 
 The most lateral planes had incomplete labels, requiring use of a more medial plane with complete labels at 11% along the sagittal planes for the lateral edge extension. After rotating the atlas by 1° in the axial planes toward the right of the brain, we mirrored the microscopy and labels images at the 48% mark along the sagittal planes.
 
-## P56
+### P56
 
 The ADMBA contains a P56 mouse similar to the adult P56 but following the same ontological labeling scheme as in the rest of the ADMBA. This atlas uniquely contains bilateral labels, although the far lateral section is still missing. We again extended the lateral edges and mirrored the microscopy and labels images, starting extension at 13.8% and mirroring at 50% along the sagittal planes, respectively. The most lateral labeled plane contains two distinct labeled structures, the cortex and cerebellum, requiring separate extension for each distinct structure as outlined in our method above.
 
-## Animals and tissue clearing
+### Animals and tissue clearing
 
 All procedures and animal care were approved and performed in accordance with institutional guidelines from the University of California, San Francisco Laboratory Animal Research Center (LARC). All strains were maintained on a C57BL/6J background. Animals were housed as one breeding pair per cage in a vivarium with a 12 hr light, 12 hr dark cycle. For timed pregnancies, noon on the day of the vaginal plug was counted as embryonic day 0.5. Pups were harvested at P0 (postnatal day 0). For assessing the eight atlases in the ADMBA, sample size was determined by the number of atlases available in the original 2D resource (n = 8). The size of our validation cohort (P0 wild-type mouse brains, n = 15) was chosen to detect an effect size of 1.5 after correction for multiple comparisons using a power calculation based on a paired t-test.
 
@@ -280,7 +462,7 @@ At the time of experiment, P0 pups were anesthetized on ice and perfused transca
 
 Samples were cleared using the advanced CUBIC clearing protocol for whole-brain and whole-body clearing (Susaki et al., 2015). In short, samples were immersed in 1/2-water-diluted Reagent-1 containing 1 µM SYTO 16 (Thermo Fisher) and incubated at 37°C for 6 hr (Reagent-1: 25 weight% (w%) Urea, 25 wt% Quadrol, 15 wt% Triton X-100, and dH2O). 1/2 diluted Reagent-1 was replaced with Reagent-1 containing 1 µM SYTO 16 and incubated overnight at 37°C on a rotator. The next day, solution was replaced with fresh Reagent-1 containing 1 µM SYTO 16 and was incubated overnight at 37°C. Reagent-1 was replaced with fresh Reagent-1 containing 1 µM SYTO 16 every 48 hr for a total of 8 days. Tissue clearing was stopped by washing the sample with 1X PBS supplemented with 0.01% (wt/vol) sodium azide at RT once for 2 hr, once overnight and again once for 2 hr. After the wash step, samples were immersed in 10 mL of 1/2-PBS-diluted Reagent-2 (Reagent-2: 25 wt% Urea, 50 wt% sucrose, 10 wt% Triethanolamine, and dH2O). Vials containing brains in 1/2-PBS-diluted Reagent-2 were placed in a vacuum desiccator with gentle shaking overnight at RT. The following day, the solution was replaced with Reagent-2 and incubated at 37°C overnight on a rotator. The next day, Reagent-2 solution was replaced with fresh Reagent-2 and incubated at 37°C overnight on a rotator. This step was repeated four times. We imaged and processed a total of n = 15 from 5 female and 10 male mice.
 
-## Lightsheet imaging
+### Lightsheet imaging
 
 Samples were imaged within 7 days of completing the clearing protocol at the Gladstone Institutes Histology and Light Microscopy Core on a Zeiss Lightsheet Z.1 microscope. Lightsheet imaging of a mouse P0 brain required approximately 50 tiles (5 × 10) per brain at 5x (Zeiss EC Plan-Neofluar 5x, NA 0.16, RI 1.45, WD 5.6 mm), which afforded a level of resolution that allowed for nuclei detection (0.913 µm/px lateral resolution).
 
@@ -290,7 +472,7 @@ To glue the brain to the mount, we placed the brain, ventral surface facing up, 
 
 With the lasers initiated, we aligned the two opposite illuminators along the z-axis by visual inspection at a central region of the brain. We ranged the z-stack from just beyond the first and last z-planes with visible nuclei, typically 800–1000 planes using a slice interval of 4.935 µm with a lightsheet thickness of 10.44 µm, and set the image tiling to include the farthest lateral and anterior-posterior nuclei with a 10% overlap per tile. We illuminated the brain with 488 nm excitation and 30 ms dwell time through the Z.1 LSFM 5x/0.1 illuminators, LBF 405/488/561/640 laser blocking filter, SBS LP 560 secondary beam splitter, and BP 505–545 band pass filter. The microscope paused for 20 s between each tile to allow tissue settling after repositioning for the next tile. We controlled the microscope through the Zeiss Zen microscopy software suite and saved images in a CZI multi-tile format with all tiles stored in a single archive.
 
-## Image stitching
+### Image stitching
 
 To stitch the tiled microscopy images in an automated fashion, we used the Fiji/ImageJ (Schindelin et al., 2012; Rueden et al., 2017) BigStitcher plugin (Hörl et al., 2019), a successor to the Stitching plugin (Preibisch et al., 2009) that allows for better memory management and multiprocessing as well as a graphical interface to verify alignments. As we needed to stitch multiple brains, we accessed this plugin headlessly through its scriptable interface, manually intervening only to visually verify alignments before proceeding with the fusion step.
 
@@ -298,7 +480,7 @@ After importing the CZI file into the BigStitcher HDF5-based format, the plugin 
 
 The plugin calculated tile shifts using a phase correlation method, and we filtered out links below a correlation threshold of r = 0.8 before applying shifts through the two-round iterative global optimization strategy. To account for occasional tile misalignments, we manually inspected every pre-stitched brain to reposition any misaligned tiles, which occurred in approximately 10% of brains. Once tiles aligned, the plugin fused them into a single large TIFF image per channel. We imported this fused file via Python-Bioformats and Javabridge, libraries that allow access to life science formats via Bio-Formats, to a Numpy array format for image processing in our Python-based software as outlined below.
 
-## Automated nuclei detection
+### Automated nuclei detection
 
 We detected nuclei in cleared mouse brains using a 3D Laplacian of Gaussian blob detection technique throughout each whole brain. To perform detections in large images several hundred gigabytes (GB) to over a terabyte (TB) in size, we subdivided the image into many smaller chunks to reduce RAM requirements and maximize parallel processing. We loaded images through the Numpy library’s memory mapped method (load with the mmap_mode option) to load only the necessary parts of the image on-the-fly, allowing us to load small images a chunk at a time without reading the entire volumetric image into memory. We divided the image shape into overlapping chunks to ensure that nuclei at borders would not be missed, with overlap size of approximately the nucleus diameter. After determining the offset and shape of each chunk, we set the image array as a class attribute, initiated multiprocessing (the multiprocessing.Pool in the standard Python library), and accessed each chunk as a view in a separate process via class methods to avoid duplicating arrays in memory. Thus, we could control total memory usage by the size of chunks and the number of CPU (central processing unit) cores available for separate processes.
 
@@ -308,9 +490,19 @@ To detect blobs, we implemented the 3D Laplacian of Gaussian blob detector from 
 
 Overlapping chunks minimized missing nuclei at edges but also necessitated pruning blobs duplicately detected in adjacent chunks. Pruning involves checking for duplicates within all potentially overlapping regions. Since the overlapping portions of the regularly spaced chunks collectively form a grid pattern throughout the full volumetric image, we could limit our search to these grid planes along each axis. After completing detection on the whole image, we first pooled all detected blobs into a single array. Along a given axis of the full image, we determined the boundaries for each overlapping region and all of its blobs. Within each overlapping region, we found all blobs close to another blob by taking the absolute value of the difference between all blobs with one another and finding blobs within a given tolerance in all dimensions. The tolerance was titrated so that the ratio of final blobs in overlapping regions to the next adjacent regions of same volume was about 1:1. For each close pair of blobs found, we replaced both blobs with a new blob that took the mean of their coordinates. To minimize memory usage, we checked smaller groups of blobs against one another until completing all comparisons. We checked overlapping regions simultaneously in multiprocessing along a given axis for efficiency, re-pooled all blobs, and pruned along the next axis to account for blobs that may have been duplicately detected in overlapping chunks along multiple axes, at grid intersections.
 
-Parameters for preprocessing, detections, and pruning steps were optimized through a Grid Search approach, a type of hyperparameter tuning, to check combinations of parameters systematically. To evaluate the accuracy of each set of parameters, two students in our lab generated truth sets of nuclei locations and radii using our serial 2D nuclei annotation tool, taking ROIs of size 42×42×32 pixels (x, y, z) from representative ROIs of all major brain structures (n = 15 forebrain, eight midbrain, and seven hindbrain; n = 2766 nuclei). They separately generated additional truth sets at a slightly lower magnification (4x), size 60×60×14 pixels (n = 40 ROIs, 1116 nuclei) to increase representation. After detecting nuclei on these images with a given set of parameters, matches between detections and ground truth was determined using the Hungarian algorithm, a combinatorial optimization method to determine optimal assignments between two sets (Kuhn, 1955), as implemented in optimize.linear_sum_assignment in Scipy. After scaling nuclei coordinates for isotropy, we found the Euclidean distances between detected and truth nuclei points through distance.cdist, which serves as the cost matrix input to optimize.linear_sum_assignment to find optimal pairings between points based on closest distance. We took correctly identified detections, or true positives (TP), as pairings within a given tolerance distance. Unpaired detections or those in pairs exceeding this threshold were considered false positives (FP), and the same for ground truth were false negatives (FN). Since a match for a given nucleus within the ROI may lie outside of it and thus go unseen, we first searched for pairings only within an inner sub-ROI, followed by a secondary search for pairings between only unmatched inner sub-ROI objects and the rest of the ROI (Ho et al., 2017). This approach reduced the total number of nuclei available (n = 1118 nuclei) but avoided missed border matches. As measures of performance of our detection compared with ground truth, we used the following standard equations:(6)Sensitivity(Recall)=TPTP+FN(7)PositivePredictiveValue(PPV,orPrecision)=TPTP+FP
+Parameters for preprocessing, detections, and pruning steps were optimized through a Grid Search approach, a type of hyperparameter tuning, to check combinations of parameters systematically. To evaluate the accuracy of each set of parameters, two students in our lab generated truth sets of nuclei locations and radii using our serial 2D nuclei annotation tool, taking ROIs of size 42×42×32 pixels (x, y, z) from representative ROIs of all major brain structures (n = 15 forebrain, eight midbrain, and seven hindbrain; n = 2766 nuclei). They separately generated additional truth sets at a slightly lower magnification (4x), size 60×60×14 pixels (n = 40 ROIs, 1116 nuclei) to increase representation. After detecting nuclei on these images with a given set of parameters, matches between detections and ground truth was determined using the Hungarian algorithm, a combinatorial optimization method to determine optimal assignments between two sets (Kuhn, 1955), as implemented in optimize.linear_sum_assignment in Scipy. After scaling nuclei coordinates for isotropy, we found the Euclidean distances between detected and truth nuclei points through distance.cdist, which serves as the cost matrix input to optimize.linear_sum_assignment to find optimal pairings between points based on closest distance. We took correctly identified detections, or true positives (TP), as pairings within a given tolerance distance. Unpaired detections or those in pairs exceeding this threshold were considered false positives (FP), and the same for ground truth were false negatives (FN). Since a match for a given nucleus within the ROI may lie outside of it and thus go unseen, we first searched for pairings only within an inner sub-ROI, followed by a secondary search for pairings between only unmatched inner sub-ROI objects and the rest of the ROI (Ho et al., 2017). This approach reduced the total number of nuclei available (n = 1118 nuclei) but avoided missed border matches. As measures of performance of our detection compared with ground truth, we used the following standard equations:
 
-## Image downsampling and registration
+$$
+Sensitivity(Recall)=\frac{TP}{TP+FN}
+$$
+
+
+
+$$
+PositivePredictiveValue(PPV,orPrecision)=\frac{TP}{TP+FP}
+$$
+
+### Image downsampling and registration
 
 To assign nuclei to the proper brain label, we employed automated label propagation by registering the E18.5 atlas to each of our imaged mouse brains using SimpleElastix (Marstal et al., 2016), a toolkit that combines the programmatic access of SimpleITK (Lowekamp et al., 2013) to the Insight Segmentation and Registration Toolkit (ITK) (Yoo et al., 2002) with the Elastix (Klein et al., 2010; Shamonin et al., 2014) image registration framework. Elastix has been recently validated as a computationally efficient and accurate tool for registration of mouse brains cleared by CUBIC (Nazib et al., 2018).
 
@@ -318,31 +510,43 @@ As stitched images are typically several hundreds of GBs per file, image downsam
 
 Registration involved rigid followed by non-rigid alignment. For rigid registration, we employed a translation (translation parameter map in SimpleElastix) with default settings except increasing to 2048 iterations (MaximumNumberOfIterations setting) followed by an affine (affine parameter map) with 1024 iterations, applied with an ElastixImageFilter, to shift, resize, and shear the atlas microscopy image to the same space as that of the sample brain. For non-rigid alignment, we employed a b-spline strategy (bspline parameter map) guided by the AdvancedNormalizedCorrelation similarity metric (Nazib et al., 2018; Hammelrath et al., 2016) with grid spacing of size 60, measured in voxels rather than physical units (FinalGridSpacingInVoxels setting in place of FinalGridSpacingInPhysicalUnits), over 512 iterations. The TransformixImageFilter in SimpleElastix allowed us to apply the identical registration transformation to the atlas labels image, except that we set the final b-spline interpolation order (FinalBSplineInterpolationOrder) to 0 to avoid interpolating any new values, preserving the labels’ specific set of integer values. We applied this identical transformation to both the mirrored and edge-refined atlas labels.
 
-To evaluate the level of alignment from registration, we measured the similarity between each registered atlas histology and its corresponding sample image using a Dice Similarity Coefficient (DSC) (Dice, 1945) as implemented by the GetDiceCoefficient function in SimpleElastix/SimpleITK, given by the equation (Tustison and Gee, 2009):(8)DiceSimilarityCoefficient(DSC)=2|S∩T||S|+|T|where S and T are two different sets of voxels. We took the foreground of each atlas and sample microscopy image to be its mean threshold (filters.threshold_mean function in scikit-image) and input them to a LabelOverlapMeasuresImageFilter to take the DSC.
+To evaluate the level of alignment from registration, we measured the similarity between each registered atlas histology and its corresponding sample image using a Dice Similarity Coefficient (DSC) (Dice, 1945) as implemented by the GetDiceCoefficient function in SimpleElastix/SimpleITK, given by the equation (Tustison and Gee, 2009):
 
-## Whole-brain nuclei measurements by label
+$$
+DiceSimilarityCoefficient(DSC)=2\frac{|S∩T|}{|S|+|T|}
+$$
+
+where S and T are two different sets of voxels. We took the foreground of each atlas and sample microscopy image to be its mean threshold (filters.threshold_mean function in scikit-image) and input them to a LabelOverlapMeasuresImageFilter to take the DSC.
+
+### Whole-brain nuclei measurements by label
 
 Registration of the atlas to our volumetric nuclear-stained brain microscopy images allowed us to quantify nuclei per label for comparison with the original (mirrored) and smoothed (edge-aware) atlases. We first measured volumes per label by taking a mask of each registered label and summing the foreground pixels within each mask before multiplying this volume by the microscopy pixel resolution (scaled for downsampling) to obtain volumes in physical units (mm3).
 
 For nuclei densities, we first constructed a nuclei heat map by converting the nuclei coordinates to nuclei per voxel within the downsampled image. We scaled the coordinates to the scaling of the downsampled image, rounding to the nearest integer, and found the counts of nuclei at each coordinate (unique with return_counts option in Numpy). We next indexed these coordinates directly into an empty Numpy array of the same shape as that of the downsampled image to assign them to the corresponding nuclei counts at each voxel. We used the same label mask previously obtained to find the number of nuclei within each given label. Dividing the number of nuclei by the volume within each label gave the label nuclei density.
 
-To measure the variability of nuclei within each label before and after label reannotation, we measured the coefficient of variation within each label given by the standard equation:(9)Coefficientofvariation(CV)=σμwhere σ is the standard deviation, and µ is the mean. A lower coefficient of variation indicates lower variability and thus tighter capture of a more homogeneous label. As a raw proxy for nuclei variation, we first measured the variation of intensities within the nuclear-stained lightsheet images. Using the same label masks, we took the standard deviation of voxel intensities and divided it by the mean of intensities within the label (std and mean, respectively, in Numpy) to obtain the intensity coefficient of variation. Similarly, we measured the nuclei coefficient of variation by measuring the standard deviation and mean values of nuclei counts per label within the nuclei heat map. We also stratified nuclei ROIs into low/medium and high-density regions by taking the Otsu threshold of their density, which corresponded with their density histogram, and separately measured recall and precision in each group (Figure 6—figure supplement 2D).
+To measure the variability of nuclei within each label before and after label reannotation, we measured the coefficient of variation within each label given by the standard equation:
 
-## Nuclei clustering
+$$
+Coefficientofvariation(CV)=\frac{\sigma}{\mu}
+$$
+
+where σ is the standard deviation, and µ is the mean. A lower coefficient of variation indicates lower variability and thus tighter capture of a more homogeneous label. As a raw proxy for nuclei variation, we first measured the variation of intensities within the nuclear-stained lightsheet images. Using the same label masks, we took the standard deviation of voxel intensities and divided it by the mean of intensities within the label (std and mean, respectively, in Numpy) to obtain the intensity coefficient of variation. Similarly, we measured the nuclei coefficient of variation by measuring the standard deviation and mean values of nuclei counts per label within the nuclei heat map. We also stratified nuclei ROIs into low/medium and high-density regions by taking the Otsu threshold of their density, which corresponded with their density histogram, and separately measured recall and precision in each group (Figure 6—figure supplement 2D).
+
+### Nuclei clustering
 
 As another measure of label alignment at the nuclei level, we measured nuclei clustering using Density-Based Spatial Clustering of Applications with Noise (DBSCAN) (Ester et al., 1996) as implemented by the scikit-learn library (Pedregosa et al., 2018). DBSCAN clusters tightly packed points within a neighbor distance defined by the parameter E and a minimum number of points given as another parameter, with isolated points in lower density regions that cannot be clustered considered ‘outliers’ or ‘noise.’ The minimum number of samples is typically taken as 2 · ndim, where ndim is the number of dimensions (Schubert et al., 2017), thus giving 6 for our 3D nuclei point cloud. To find E, the nearest-neighbor distance of the 2 · ndim − 1 neighbor for each point is sorted and plotted to find the distance at the ‘elbow’ point, the point of maximum curvature (Schubert et al., 2017), which we found to be at least 20 µm (Figure 7—figure supplement 3A).
 
 For each label in the original (mirrored) atlas registered to each wild-type brain, we extracted the nuclei coordinates within the label and clustered them by DBSCAN to find the number of clusters, nuclei per cluster, and ‘noise,’ or number of isolated nuclei that remained unclustered. We repeated the same process using the same nuclei coordinates for each brain but with the smoothed (edge-aware) atlas registered identically to the brain. As the ‘elbow’ distance of maximum curvature can be difficult to define, and E can strongly influence the clustering, we repeated this process for a range of E values through the elbow region (Figure 7—figure supplement 3B) and highlighted a conservative distance of 20 µm (Figure 7—figure supplement 3C–E).
 
-## Statistics
+### Statistics
 
 Statistical tests used for comparisons are described in the relevant Results sections and figure legends. Bonferroni correction for p-values is applied when multiple statistical tests are performed for each figure sub-panel as indicated for the number of tests.
 
-## MagellanMapper software suite
+### MagellanMapper software suite
 
 We provide the MagellanMapper image software suite as a tool to assist with visualization, annotation, and automated processing of volumetric images (Figure 7—figure supplement 4). The suite consists of a graphical user interface (GUI) to aid visualization of 2D images in a 3D context and command-line interface (CLI) for non-interactive processing in workstation and cloud environments.
 
-## Graphical interface
+### Graphical interface
 
 The main GUI integrates ROI selection with 3D point and surface rendering through the Mayavi toolkit (Ramachandran and Varoquaux, 2011). Users can load volumetric image files and specify ROI boundaries through sliders and text boxes or load a previously saved ROI. 3D point rendering provides a voxel-based visualization of the ROI with minimal filtering, whereas the 3D surface rendering utilizes VTK (The Visualization Toolkit) (Schroeder et al., 1998) for cleaner images. The interface is implemented in TraitsUI for integration with Mayavi.
 
@@ -354,7 +558,7 @@ As a method for simple, rapid editing of these labels, the user can enter an edi
 
 The annotation interfaces are implemented in Matplotlib (Hunter, 2007). Blobs are stored in an SQLite (Hipp et al., 2021) database, while atlas edits are saved directly to their underlying 3D image file.
 
-## Headless pipelines
+### Headless pipelines
 
 In addition to a GUI for interactive visualization and verification, MagellanMapper provides automated pipelines for non-interactive image processing such as whole brain nuclei detection in cloud-based work environments. Users can access the suite via its CLI, and the suite provides Bash scripts to connect MagellanMapper with other tools such as Fiji/ImageJ for image stitching and Amazon Web Services (AWS) in a platform-independent manner.
 
@@ -362,13 +566,13 @@ For input/output (I/O), the suite utilizes standard 3D image formats for portabi
 
 As an example of an automated pipeline for image import, a user can launch the script from a cloud-based server instance to first retrieve and decompress an archived microscopy file previously saved in a cloud storage location. After extracting the microscopy image, the pipeline script launches Fiji/ImageJ to run a custom headless script for the BigStitcher plugin, which stitches the tiled microscopy image as described above. After allowing the user to verify and adjust tile placements through the BigStitcher interface, the script continues the BigStitcher tile fusion operation, resulting in TIFF formatted images for each channel. The pipeline script next calls MegellanMapper to import these TIFF images into a single Numpy array archive. Subsequent pipelines can be run to process the imported image for automated nuclei detections, downsample or transpose the image, register images to an atlas, or automatically refine new atlases in 3D.
 
-## Software access
+### Software access
 
 We provide MagellanMapper as open-source software in the hope of facilitating both interactive and headless processing of large volume microscopy images and the atlases to which they will be registered.
 
 The suite API includes 3D image processing functions designed to be useful as library methods for other applications. Library functions for the Python and R plots depicted here are also provided to reproduce similar graphs. As an open-source, Python-based tool, our vision for the suite is that it will work alongside, integrate with, and itself become refined by the many other excellent image processing software suites and libraries available to the scientific community.
 
-## Software versions
+### Software versions
 
 The MagellanMapper suite is written in Python with the following versions and Python libraries: Python 3.6, Numpy 1.15, Scipy 1.1, scikit-image 0.14, scikit-learn 0.21, Matplotlib 3.0, Matplotlib ScaleBar 0.6, Mayavi 4.6, TraitsUI 6.0, PyQt 5.11, Python-Bioformats 1.1, Javabridge 1.0, SimpleElastix 1.1, and Pandas 0.23. We used Conda 4.7 for Python library management. We stitched images with Fiji/ImageJ 1.52 using BigStitcher 0.2.10. We computed additional statistics in R 3.5 with RStudio 1.1. To interact with AWS, we used AWS CLI 1.16 and Boto3 1.9. For image acquisition, we used Zeiss Zen 2014.
 

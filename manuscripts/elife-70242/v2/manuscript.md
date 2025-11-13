@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Causal mutations and their frequency in agricultural fields are well-characterized for herbicide resistance. However, we still lack understanding of their evolutionary history: the extent of parallelism in the origins of target-site resistance (TSR), how long these mutations persist, how quickly they spread, and allelic interactions that mediate their selective advantage. We addressed these questions with genomic data from 19 agricultural populations of common waterhemp ( Amaranthus tuberculatus ), which we show to have undergone a massive expansion over the past century, with a contemporary effective population size estimate of 8 x 10 7 . We found variation at seven characterized TSR loci, two of which had multiple amino acid substitutions, and three of which were common. These three common resistance variants show extreme parallelism in their mutational origins, with gene flow having shaped their distribution across the landscape. Allele age estimates supported a strong role of adaptation from de novo mutations, with a median age of 30 suggesting that most resistance alleles arose soon after the onset of herbicide use. However, resistant lineages varied in both their age and evidence for selection over two different timescales, implying considerable heterogeneity in the forces that govern their persistence. Two such forces are intra- and inter-locus allelic interactions; we report a signal of extended haplotype competition between two common TSR alleles, and extreme linkage with genome-wide alleles with known functions in resistance adaptation. Together, this work reveals a remarkable example of spatial parallel evolution in a metapopulation, with important implications for the management of herbicide resistance.
+Causal mutations and their frequency in agricultural fields are well-characterized for herbicide resistance. However, we still lack understanding of their evolutionary history: the extent of parallelism in the origins of target-site resistance (TSR), how long these mutations persist, how quickly they spread, and allelic interactions that mediate their selective advantage. We addressed these questions with genomic data from 19 agricultural populations of common waterhemp (Amaranthus tuberculatus), which we show to have undergone a massive expansion over the past century, with a contemporary effective population size estimate of 8 x 107. We found variation at seven characterized TSR loci, two of which had multiple amino acid substitutions, and three of which were common. These three common resistance variants show extreme parallelism in their mutational origins, with gene flow having shaped their distribution across the landscape. Allele age estimates supported a strong role of adaptation from de novo mutations, with a median age of 30 suggesting that most resistance alleles arose soon after the onset of herbicide use. However, resistant lineages varied in both their age and evidence for selection over two different timescales, implying considerable heterogeneity in the forces that govern their persistence. Two such forces are intra- and inter-locus allelic interactions; we report a signal of extended haplotype competition between two common TSR alleles, and extreme linkage with genome-wide alleles with known functions in resistance adaptation. Together, this work reveals a remarkable example of spatial parallel evolution in a metapopulation, with important implications for the management of herbicide resistance.
 
 ## Introduction
 
@@ -39,17 +39,105 @@ Here, we investigate the evolutionary histories of mutations that have been prev
 
 ## Results
 
-## Types of target-site mutations
+### Types of target-site mutations
 
 To test hypotheses about the origins of TSR in Amaranthus tuberculatus, we used whole-genome sequence information from 19 agricultural fields in the Midwestern US and Southwestern Ontario, Canada. It is important to note that these populations were obtained from fields where A. tuberculatus was only poorly controlled, potentially overrepresenting the frequency of resistance across the landscape.
 
 Having previously characterized two types of target-site glyphosate resistance in these samples (coding sequence substitutions and gene amplification; Kreiner et al., 2019), here we focus on all other characterized mutations known to confer resistance in the genus Amaranthus. We examined our sequence data for the presence of eight such substitutions in ALS, three in PPO, and one in photosystem II protein D1 (psbA - the target of a class of herbicides that inhibits electron transfer). Across 152 individuals, we found segregating variation at six out of eight known ALS mutations, and one of the three known PPO mutations (Table 1). We did not find any mutation in psbA.
 
+**Table 1.**
+ Number and frequency of resistant individuals and mutations at loci known to be causal for resistance to PPO and ALS herbicides, both totals, and within each agricultural region.Relative frequencies given in parentheses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PPO</th>
+      <th colspan="8">ALS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>ΔGly210</td>
+      <td>Trp-574-Leu</td>
+      <td>Ser-653-Asn</td>
+      <td>Ser-653-Thr</td>
+      <td>Gly-654-Phe</td>
+      <td>Pro-197-Leu</td>
+      <td>Pro-197-His</td>
+      <td>Ala-122-Ser</td>
+      <td>Asp-376-Glu</td>
+    </tr>
+    <tr>
+      <td>Total number of individuals with TSR mutations</td>
+      <td>22 (0.145)</td>
+      <td>80(0.526)</td>
+      <td>48 (0.316)</td>
+      <td>2(0.013)</td>
+      <td>1(0.007)</td>
+      <td>1(0.007)</td>
+      <td>1(0.007)</td>
+      <td>2(0.013)</td>
+      <td>3(0.020)</td>
+    </tr>
+    <tr>
+      <td>Total number ofTSR mutations</td>
+      <td>25 (0.082)</td>
+      <td>106 (0.349)</td>
+      <td>59 (0.194)</td>
+      <td>2(0.007)</td>
+      <td>1(0.003)</td>
+      <td>1(0.003)</td>
+      <td>1(0.003)</td>
+      <td>2(0.007)</td>
+      <td>3(0.010)</td>
+    </tr>
+    <tr>
+      <td>TSR mutations in Walpole,Ontario, Canada</td>
+      <td>0</td>
+      <td>12(0.162)</td>
+      <td>12(0.162)</td>
+      <td>1(0.0135)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TSR mutations in Essex,Ontario, Canada</td>
+      <td>1(0.0125)</td>
+      <td>23(0.288)</td>
+      <td>35(0.438)</td>
+      <td>0</td>
+      <td>1(0.0125)</td>
+      <td>0</td>
+      <td>1(0.0125)</td>
+      <td>2(0.025)</td>
+      <td>3(0.0375)</td>
+    </tr>
+    <tr>
+      <td>TSR mutations in Midwestern US</td>
+      <td>24(0.16)</td>
+      <td>71(0.47)</td>
+      <td>12(0.08)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1(0.0067)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 The nine unique PPO and ALS target-site resistant mutations occur at seven distinct codons, with two positions segregating for multiallelic resistance: two non-synonymous changes at codons 197 and 653 in the ALS gene. Six out of nine variants are rare, with five or fewer instances, in contrast to the common Trp-574-Leu and Ser-653-Asn nonsynonymous substitutions in ALS, and the PPO ΔGly210 deletion (Table 1). Notably, the most common resistance mutation (referring to identity-by-state), Trp-574-Leu, is found in 53% of agricultural individuals, and the second most common, Ser-653-Asn, in 32% of individuals (Table 1). From these two most frequent ALS mutations alone, 74% of individuals sampled had resistance to ALS-inhibiting herbicides. Accounting for rare ALS resistance mutations only increases this percentage to 75%, because these rare variants are almost exclusively found in individuals already harboring one of the two common ALS mutations.
 
 Regardless of the geographic region (within Essex County, Walpole Island, and the Midwestern US), multiple causal changes confer ALS resistance. Furthermore, the majority of populations (5/8 populations within the Midwestern US, 5/5 populations in Essex County, and 4/6 populations in Walpole) harbor multiple causal ALS mutations (Table 1). Thus, at just the level of these distinct mutational types, we observe genetic convergence in adaptation to ALS-inhibiting herbicides at global, regional, and population scales.
 
-## Regional selective sweep signals
+### Regional selective sweep signals
 
 To learn how and how often the individual mutations might have arisen, we first visualized regional selective sweep patterns at PPO and ALS genes—two genes that are located only ~250 kb apart in the genome—with respect to the common Trp-574-Leu, Ser-653-Asn, ΔGly210 alleles. In particular, we assayed the extent to which selection from herbicides at these genes has led to reductions in diversity, and increases in homozygosity and linkage across the haplotype, as would be expected if TSR alleles have increased in frequency rapidly enough that recombination has yet to unlink these alleles from the background on which they arose. We found that corresponding selective sweep signals appear to be highly heterogeneous across geographic regions and across resistance mutations (Figure 1). The most pronounced selective sweep signal at the regional level is for the ALS Ser-653-Asn mutation, in our large collection of nearby populations from Essex County. These resistant haplotypes show a dramatic excess of homozygosity over susceptible haplotypes for nearly 10 Mb (XPEHH, Figure 1 top-left green line). The breadth of the impact of selection on local chromosome-wide linkage disequilibrium (LD) is worth noting—this extended sweep signal is even larger than what was seen for an EPSPS-related gene amplification whose selective sweep in response to glyphosate herbicides spanned 6.5 Mb in these same individuals (Kreiner et al., 2019). This pattern of a hard selective sweep is also apparent in patterns of pairwise diversity and in LD of the focal Ser-653-Asn mutation with missense SNPs (r2) (Figure 1, top middle/right). In contrast, the Trp-574-Leu mutation in Essex actually shows a slight excess of heterozygosity and excess diversity compared to susceptible haplotypes, but nearly as strong LD with other missense SNPs (Figure 1, purple line top row).
 
@@ -61,11 +149,33 @@ Selective sweep signals are much subtler in Walpole and especially in the Midwes
 
 Despite inconsistent sweep signals, the mutations we describe here are extremely likely to have experienced selection over their history, but varying over space and time. We know from previous functional validation that these mutations are causal for resistance to ALS or PPO inhibiting herbicides [in Amaranthus tuberculatus for the PPO deletion, as well as ALS Trp-574-Leu, and both Ser-653-Asn and Ser-653-Thr substitutions (Foes et al., 2017; Patzoldt and Tranel, 2017; Shoup et al., 2003), and in congeners for the remaining mutations (McNaughton et al., 2001; Nakka et al., 2017; Singh et al., 2018; Whaley et al., 2004)]. Thus, we set out to identify the extent to which repeated origins and gene flow have influenced regional signatures of selection, as well as identify key processes that may underlie heterogeneity in their recent evolutionary histories.
 
-## Inferring the genealogical history of target-site resistance mutations
+### Inferring the genealogical history of target-site resistance mutations
 
 We first took a gene tree approach to reconstruct the evolutionary history of TSR mutations, based on phased haplotypes inferred from performing the most up-to-date joint population and read-backed phasing methods (SHAPEIT4 Delaneau et al., 2019; WhatsHap v1.0 Martin et al., 2016). We found that patterns of similarity among phased haplotypes at ALS and PPO (including 5 kb upstream and downstream of either gene) indicated numerous origins for every common resistance mutation: PPO ΔGly210, ALS Trp-574-Leu, and Ser-653-Asn (Figure 2—figure supplement 1). A gene tree based on raw pairwise differences between haplotypes, as illustrated here, sets an upper limit on the number of independent origins for each mutation. Because recombination causes ancestral haplotypes to decay in size as they are passed down through time, linked sites may not necessarily have identical genealogies as a single mutational origin may be recombined onto distinct haplotypes. In cases such as this, ancestral recombination graphs (ARGs) can allow for more accurate inferences of genealogical history by generalizing the inference of coalescent history along a recombining unit (Griffiths and Marjoram, 1997; Griffiths and Marjoram, 1996; Hudson, 1983).
 
 We reconstructed the ARG for 20,000 SNPs encompassing both ALS and PPO genes (a ~ 1 and ~ 10 kb gene, respectively, separated by 250 kb on the same chromosome) using ARGweaver (Hubisz and Siepel, 2020; Rasmussen et al., 2014). We assessed the likelihood of the ARG inferences under varying constant recombination rates and over two time step parameters (Figure 2—figure supplements 2 and 3). From our most likely parameter values (recombination = 10–8, time steps = 30), and based on the MCMC sample that maximizes the likelihood of our data across 1,250 iterations, we extracted the tree corresponding to each focal TSR locus. For all three common TSR mutations, ALS Trp-574-Leu, ALS Ser-653-Asn, and PPO ΔGly210, we found evidence for multiple independent origins producing the same resistant variant—three for ALS Trp-574-Leu, two for ALS Ser-653-Asn, and two for PPO ΔGly210 (Figure 2A). Support for these origins was generally very high, with 5/7 origins showing that 100% of MCMC samples were consistent with each cluster of haplotypes being monophyletic. The two origins with less than full support were haplotypes harbouring the ALS Trp-574-Leu, where one high-frequency origin had 85% support (105/125 MCMC samples) and a low-frequency origin had 45% support (56/125), implying that occasionally haplotypes mapping to these origins belonged to other groupings across MCMC samples. The findings of multiple origins of identical resistance mutations, and most specific origin scenarios, are consistent even across less likely recombination rate parameterizations (Figure 2—figure supplements 2 and 3). Compared to the gene trees based on the average mutational history across the PPO and ALS (Figure 2—figure supplements 1 and 4), accounting for recombination has clearly further resolved the origins of these target-site resistance alleles. In comparison to susceptible haplotypes, resistant haplotypes at each origin are apparently more homozygous but retain some diversity, presumably driven by both mutation and recombination subsequent to their origin (Figure 2—figure supplements 4–6).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig2-v2.jpg)
+
+**Figure 2.:** (A) Trees at focal TSR loci corresponding to an ARG estimated across 20 kb SNPs. Bold numbers around trees identify clusters of resistant haplotypes consistent with independent origins. The presence of an asterisk at each origin number implies significant evidence of selection since the mutation arose de novo at p < 0.05 against the null distribution, as in C. Support for monophyly for each origin across 125 samples of 1250 MCMC iterations is depicted by the fraction found outside each cluster. (B) Geographic distribution of haplotypes originating from distinct mutational lineages as inferred from A. TSR mutational lineages are found across numerous populations and agricultural regions, although regions show clear differences in the frequency of some mutations. (C) Results of tree-based tests of non-neutral allele frequency change (Speidel et al., 2019) from each mutational origin of TSR under two alternative models of selection; selection on a mutation since its origin versus selection over more recent timescales (on the last 0.01% of the tree). The horizontal dashed line denotes the p-value cutoff of α = 0.05, after false discovery rate correction.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Colored grids indicate a haplotype harboring a focal resistance SNP (ALS Trp-574-Leu mutations in purple, ALS Ser-653-Asn mutations in green, and PPO ΔGly210 deletions in pink). Numerous multiple origins are apparent for all resistance mutations, in excess of the number inferred from ARG-based approaches.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Haplotypes corresponding to each named origin in Figure 2 depicted by number on the bottom right of each set.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig2-figsupp5-v2.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** A hamming distance of 5 was used, collapsing haplotypes that have fewer than five differences in each 100 SNP window.
 
 When haplotypes belonging to distinct mutational lineages are mapped across populations (Figure 2B), it is clear that, despite the many independent origins, gene flow has also played a major role in the spread of resistance across the landscape. Haplotypes from the three most common origins of resistance to ALS herbicides —Trp-574-Leu #1, #2, and Ser-653-Asn #5 (corresponding to 39, 25, and 47 haplotypes, respectively)—were identified in 15, 10, and 14 populations. To test if mutational lineages were more geographically structured than expected given their frequency, we performed a permutation of haplotype assignment to a geographic region. All but two mutational lineages were consistent with expectations under this null, suggesting near panmixia between the Midwestern US and Ontario (Essex + Walpole) for most resistant lineages. The exceptions were ALS Trp-574-Leu #2, which is exclusive to the Midwestern US (44/47 resistant haplotypes mapping to the Midwest or 94%; 95% CIs of regional permutations [0.383,0.638]), and Ser-653-Asn #5, which is at a much higher frequency in Ontario populations (87% found in either Essex or Walpole; 95% CIs of regional permutation [0.370, 0.630]), suggesting that these mutations arose locally in these geographic regions and have not yet had the chance to spread extensively.
 
@@ -79,17 +189,37 @@ While our previous test provides insight into the consistency of selection acros
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig3-v2.jpg)
 
-**Figure 3.:** A. tuberculatus and corresponding ages of TSR variants.(A) Relate-inferred effective population size through time, illustrating a remarkable population expansion occurring over the last 100 years. The bold line indicates results from genome-wide SNPs, whereas thinner lines represent results from chromosome-by-chromosome analyses, with the shaded area showing the bounds of the variance in the chromosome-by-chromosome data. (B) Allele age inferred from the geometric mean effective population size estimate over the timescale of contemporary herbicide use ( < 50 years ago, GM[Ne] = 83,294,700). Horizontal dashed lines for ALS Trp-574-Leu and ALS Ser-653-Asn, and PPO origins represent the approximate onset of ALS and PPO herbicide use, respectively.Figure 3—source data 1.Figure 3—source data 2.Scaling was performed by dividing the raw age (based on an assumed Ne = 500,000) by 166.5894 (corresponding to the geometric mean contemporary Ne estimate of 83,294,700).
+**Figure 3.:** (A) Relate-inferred effective population size through time, illustrating a remarkable population expansion occurring over the last 100 years. The bold line indicates results from genome-wide SNPs, whereas thinner lines represent results from chromosome-by-chromosome analyses, with the shaded area showing the bounds of the variance in the chromosome-by-chromosome data. (B) Allele age inferred from the geometric mean effective population size estimate over the timescale of contemporary herbicide use ( < 50 years ago, GM[Ne] = 83,294,700). Horizontal dashed lines for ALS Trp-574-Leu and ALS Ser-653-Asn, and PPO origins represent the approximate onset of ALS and PPO herbicide use, respectively.
 
 Based on our contemporary Ne estimates relevant to the timescale of herbicide use, we rescaled allelic ages for distinct mutational origins across our ARG-inferred trees, accounting for variation across 1250 MCMC ancestral recombination graph iterations. We found considerable variation in the estimated age of resistance mutations across distinct lineages of the same mutation and across the three different TSR loci, according to haplotype groupings from the most likely ARG (Figure 3B). Across all mutational lineages, even for those with slightly lower support for monophyly (ALS Trp-574-Leu #1, #3), the 95% confidence interval of allele ages show these estimates are highly consistent across MCMC sampling of the ARG (Figure 3B). Our estimates of the age of the PPO ΔGly210 lineages are extremely recent and much less variable compared to ALS Trp-574-Leu and ALS Ser-653-Asn lineages (median PPO ΔGly210 age = 3.7 years [SE = 0.2]; ALS Ser-653-Asn = 37.8 [SE = 7.1]; ALS Trp-574-Leu = 37.2 [SE = 106.3]). With ALS-inhibiting herbicides having been introduced in the early 1980s, only one lineage (ALS Trp-574-Leu #3) appears to substantially predate herbicide, with an estimated age of ~350 years. However, this lineage is also the one with the least support for monophyly, which will upwardly bias estimates of allele age. Thus, while the exact timescales highly depend on accurate estimation of contemporary effective population sizes, the results are generally consistent with most mutations arising very recently after the onset of herbicide use.
 
 In aggregate, our analyses have uncovered multiple independent origins of large-effect resistance mutations, along with heterogeneity in their evolutionary histories, from the timescale over which they have persisted to their associated signatures of selection. The spread of these parallel origins across the landscape further allows us to observe how these alleles interact when they meet (Ralph and Coop, 2010), and how this interaction may be modified by other alleles across the genome.
 
-## Haplotype competition and inter-locus interactions of target-site resistance mutations
+### Haplotype competition and inter-locus interactions of target-site resistance mutations
 
 While 16 individuals harbour both the common ALS Trp-574-Leu and ALS Ser-653-Asn mutations, haplotype-level analyses indicate that no single haplotype harbours both mutations (Figure 2—figure supplements 1 and 4). This lack of double resistant haplotypes is a strong violation of expectations under linkage equilibrium (χ2df=1 = 16.18, p = 5.77 × 10–5), further suggesting that no or very little recombination has occurred between these sites. Given how globally common these resistance alleles are (Table 1; 53% and 32% of individuals harbour ALS Trp-574-Leu or Ser-653-Asn), their coexistence, yet independence, suggests that allelic competition may be important in adaptation to ALS-inhibiting herbicides.
 
 Locally in Essex, where haplotypes carrying either the ALS Trp-574-Leu or ALS Ser-653-Asn mutations segregate at intermediate frequencies (29% and 44% respectively; Table 1), signed linkage disequilibrium (LD) between genotypes at these two sites is considerably negative (r = –0.67). In comparison to other non-synonymous SNPs at similar frequencies (minor allele frequency > 0.20) and separated by similar distances (≤ 500 bp) across the genome, this level of repulsion is unexpected (one-tailed p = 0.033; Figure 4—figure supplement 1). However, this repulsion is not restricted to these two resistance mutations, which are only 237 bp apart. Rather, when we visualized the distribution of signed LD between all bi-allelic missense SNPs around the ALS locus, and the two TSR mutations, we observed a predominance of positive association with the focal ALS Trp-574-Leu mutation (n = 19), but a negative association with the ALS Ser-653-Asn mutation (n = 34), across an extended 10 Mb region (Figure 4A). This long-range repulsion is not seen for other pairs of loci that are outliers for particularly strong repulsion within 500 bps (Figure 4—figure supplement 2). The divergence associated with these two TSR mutations segregating in Essex is also apparent with a genotype-based PCA—structure that is otherwise absent across the genome (Figure 4B, Figure 4—figure supplement 3). Together, this indicates that selection for these alternative resistance variants from ALS-inhibiting herbicides within Essex must occur through the competition of extended haplotypes up to ⅓ the size of this focal chromosome.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig4-v2.jpg)
+
+**Figure 4.:** (A) The breadth of haplotype competition between TSR mutations, illustrated by repulsion linkage disequilibrium (opposite signed LD, r) between two target-site-resistance mutations and bi-allelic missense SNPs surrounding them on Scaffold 11 in Essex. Each point shows mean LD in non-overlapping 10 kb windows. A smoothing spline shows that missense SNPs tend to be in positive LD with ALS Trp-574-Leu but negative LD with ALS Ser-653-Asn in Essex. (B) Signatures of population structure for 2 Mb around ALS compared to genome-wide, based on PCAs of genotypes in Essex. Ellipses represent 95% CIs assuming a multivariate distribution. (C) Distribution of mean signed LD of ALS TSR resistance mutations (ALS 574 or 653) with 1 Mb windows genome-wide in Essex, excluding the ALS containing Scaffold 11. Upper and lower 1% quantile indicated by dashed vertical lines. (D) Distribution of p-values from top 2% of genome-wide windows with high absolute signed LD with ALS TSR mutations, from permuting individual assignment within genomic windows and recalculating LD 1,000 times. (E) GO terms significantly enriched for biological process after FDR correction from the set of 348 genes mapping to the top 13, 1 Mb windows that show significantly extreme LD with ALS TSR mutations in Essex. Number of asterisks represent significance level after bonferroni correction (** = p < 0.01, * = p < 0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Observed signed LD between ALS Trp-574-Leu and ALS Ser-653-Asn in Essex indicated by the vertical line (r = −0.69).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The first five Figures show the limited breadth of repulsion associated with these pairwise comparisons, in contrast to the extended repulsion between ALS Trp-574-Leu and ALS Ser-653-Asn (bottom right).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Ellipses represent 95% CIs assuming a multivariate distribution.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/70242/elife-70242-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Each point represents the mean r between all synonymous or missense mutations and an ALS mutation in a non-overlapping 1 Mb window.
 
 While the competition of haplotypes harbouring these TSR mutations may be important for shaping the distribution of resistance alleles across populations, the selective advantage of a given TSR haplotype may also depend on other modifier loci across the genome. In particular, we might expect that individuals that have withstood many generations of herbicide applications due to large-effect resistance mutations may have also accumulated compensatory and tolerance-conferring mutations across the genome (stacking of resistance alleles; Busi et al., 2013; ffrench-Constant et al., 2004; Kreiner et al., 2020; Petit et al., 2010; Preston, 2003). Considering that haplotype competition seems to have manifested itself in patterns of signed LD within the ALS containing chromosome, we posited that physically unlinked modifiers of resistance (Busi et al., 2013; ffrench-Constant et al., 2004; Kreiner et al., 2020; Petit et al., 2010; Preston, 2003) could be identified due to strong linkage with focal TSR loci.
 
@@ -101,17 +231,17 @@ Of the 24 outlier windows, 13 had p-values consistent with significantly extreme
 
 The application of herbicides to manage agronomically important weeds has led to one of the best-studied examples of parallel evolution outside the laboratory, with target-site-resistance mutations to ALS-inhibiting herbicides identified in more than 150 species (Heap, 2014). We have studied the evolution of resistance mutations at two genes, ALS and PPO, from a genome-wide perspective across a large fraction of the range of one of the most problematic weeds in the US and Canada, A. tuberculatus. We found rampant evidence for both independent origins and gene flow, competition among resistant haplotypes, and the interaction of large-effect TSR mutations with physically unlinked alleles with resistance-related functions. These results paint a picture of the rise, spread, and fate of adaptive alleles in the face of extreme selection, with important implications for the management of herbicide-resistant agricultural weeds.
 
-## Repeated origins and the spread of resistance via gene flow
+### Repeated origins and the spread of resistance via gene flow
 
 We detected strong evidence for parallel evolution to herbicides within A. tuberculatus agricultural weed populations at multiple levels. Target-site mutations conferring resistance to PPO and ALS herbicides in the sampled population were found at seven distinct codons, with nine distinct variants, three of which are common. These three common mutations have arisen repeatedly seven times across our sampled populations, based on ARG inference (Table 1, Figure 2), consistent with the largely soft selective sweep signals we observe at a regional scale (Figure 1). ARGs have seen limited implementation outside of human populations for examining patterns of local adaptation but recently have been used to infer the evolutionary processes that govern islands of differentiation across birds (Hejase et al., 2020). In comparison to gene trees that illustrate the average coalescent history of these genomic regions (Figure 2—figure supplement 1), we show that accounting for intragenic recombination through ARG inference has been extremely valuable for further resolving independent origins of adaptive mutations.
 
-From a mutation-limited view of adaptation, the extent of parallelism in target-site herbicide resistance that we observe here is particularly extreme. However, given the estimate of North American A. tuberculatus 4Neµ ~ Θπ = 0.041 for putatively neutral sites (Kreiner et al., 2019), a new TSR mutation at any of the eight adaptive ALS mutations should arise at a rate of Θπ/2—once every six generations (i.e. 0.041/2 x 8 known TSR loci = 0.164 TSR mutations per generation; see also Charlesworth, 2009; Karasov et al., 2010). Furthermore, the estimated Θπ we use to infer the rate of new mutations may even be an underestimate given contemporary population size, which may be closer to census size than long-term estimates of Ne from neutral polymorphism, should determine the mutational supply for rapid adaptation under models of evolutionary rescue (Bell, 2013; Karasov et al., 2010; Kreiner et al., 2018; Neve et al., 2014). Indeed, if we modify this value to reflect the contemporary estimate of Ne over the last 50 years (~8 × 108) and assume an A. thaliana mutation rate of 7 × 10–9 (Ossowski et al., 2010; Weng et al., 2019), our Θ becomes >1 and a new mutation at any TSR codon should arise every generation—consistent with the remarkably parallel mutational origins we describe here. From these inferences, parallelism in simple target-site herbicide resistance adaptation in A. tuberculatus appears to be on par with prokaryotic adaptation and pesticide resistance adaptation in Drosophila melanogaster, where population sizes on the order of Θ ~ 1 facilitate adaptation to occur rapidly, without being limited by mutational input at single sites (Karasov et al., 2010).
+From a mutation-limited view of adaptation, the extent of parallelism in target-site herbicide resistance that we observe here is particularly extreme. However, given the estimate of North American A. tuberculatus 4Neµ ~ $Θ_{\pi}$ = 0.041 for putatively neutral sites (Kreiner et al., 2019), a new TSR mutation at any of the eight adaptive ALS mutations should arise at a rate of Θπ/2—once every six generations (i.e. 0.041/2 x 8 known TSR loci = 0.164 TSR mutations per generation; see also Charlesworth, 2009; Karasov et al., 2010). Furthermore, the estimated $Θ_{\pi}$ we use to infer the rate of new mutations may even be an underestimate given contemporary population size, which may be closer to census size than long-term estimates of Ne from neutral polymorphism, should determine the mutational supply for rapid adaptation under models of evolutionary rescue (Bell, 2013; Karasov et al., 2010; Kreiner et al., 2018; Neve et al., 2014). Indeed, if we modify this value to reflect the contemporary estimate of Ne over the last 50 years (~8 × 108) and assume an A. thaliana mutation rate of 7 × 10–9 (Ossowski et al., 2010; Weng et al., 2019), our $Θ$ becomes >1 and a new mutation at any TSR codon should arise every generation—consistent with the remarkably parallel mutational origins we describe here. From these inferences, parallelism in simple target-site herbicide resistance adaptation in A. tuberculatus appears to be on par with prokaryotic adaptation and pesticide resistance adaptation in Drosophila melanogaster, where population sizes on the order of $Θ$ ~ 1 facilitate adaptation to occur rapidly, without being limited by mutational input at single sites (Karasov et al., 2010).
 
 In the context of such extreme recurrent evolution, we still find an important role of gene flow in the spread of herbicide resistance across the range. Not only do agricultural regions and populations within them harbour multiple origins of TSR, but distinct recombinational units harbouring these mutational origins also map to many populations (Figure 2B). The widespread impact of gene flow is further consistent with our inference of near panmixia for all but two resistant lineages, although our permutation test is limited in power for rare origins. In part, widespread movement of A. tuberculatus and TSR variants across the North American range is likely to reflect the massive recent expansion we see here (Figure 3A)—population size increasing by four orders of magnitude over the last 100 years. This expansion also corresponds well with A. tuberculatus’s contemporary agricultural association (Sauer, 1957), suggesting that agronomic regimes are likely to have in large part facilitated the success of this weed species. Thus, both extreme mutational parallelism and a complex network of haplotype sharing, via gene flow and colonization, characterize the distribution of herbicide resistance across our sampled agricultural populations.
 
 While the role of repeated origins and widespread gene flow we characterized here fit well with the cosmopolitan and highly convergent nature of herbicide resistance adaptation, the patterns we observe may be influenced by the sensitivity of ARG inference to both phasing quality and fine-scale recombination rate variation. We performed a two-step phasing method, performing population-level phasing with SHAPEIT4, a powerful up-to-date method (Delaneau et al., 2019), after performing read-backed phasing with WhatsHap (Martin et al., 2016). Nonetheless, phase switching remains a challenge for haplotype inference in naturally occurring populations in lieu of long-read population resequencing. Phase-switching between haplotypes is likely to be interpreted as a recombination event during ARG inference, however, by explicitly modeling how these ‘recombinational’ units relate to one another, ARG inference should still be better able to resolve independent origins of adaptive haplotypes than traditional reconstruction methods. Nonetheless, to adjust for the potential phase-switching that may artificially inflate recombination rates, we ran ARGweaver over three magnitudes of recombination rate values (r = 10–7 to 10–9), as well as two resolutions of discrete time steps (t = 20, 30) (Figure 2—figure supplement 2), to find the parameter values that maximized the likelihood of our phased data (r = 10–8 and t = 30). Even across less likely parameter values, we find consistent support for multiple origins across all TSR loci (Figure 2—figure supplement 3).
 
-## The selective history of target-site resistance lineages
+### The selective history of target-site resistance lineages
 
 Detrimental effects of monogenic resistance mutations as a result of pleiotropic tradeoffs and fluctuating ecological selective pressures (Lenormand et al., 2018) have led to the question of whether such costs could be leveraged to prevent the persistence of resistance mutations (Vila-Aiub, 2019). We were able to evaluate evidence for TSR alleles that predated the onset of herbicide usage, and thus learn about how long these alleles persist, by rescaling allelic age estimates by the geometric mean effective population size estimate over the last 50 years (Figure 3). We found evidence for one mutational lineage vastly predating the onset of ALS herbicide use, arising nearly 350 years ago; however, this lineage only showed 45% support for a monophyletic origin across MCMC iterations of the ARG inference. By and large, our results suggest that the ALS resistance mutations we have sampled arose repeatedly, soon after the introduction of ALS-inhibiting herbicides in the 1980s. The haplotypes on which they arose have since been subject to widespread gene flow, which can facilitate a rapid response to selection across a large geographic range. In comparison to these non-synonymous substitutions within the ALS gene, the single-codon deletion that confers resistance to PPO-inhibiting herbicides appears to be much younger, estimated to have only arisen within the last 3–4 years prior to population sampling.
 
@@ -121,7 +251,7 @@ Given the challenges of allele age estimation, we also used a conceptually relat
 
 While the intensification of herbicide use over the last half-century may be one source of temporally varying selection, rotating herbicide and cropping regimes may also contribute to fine-scale fluctuations in selection for or against particular TSR mutations. For example, in corn and soy production systems (where the focal crop alternates each season), PPOs were typically used only in soy, whereas ALS herbicides were heavily used in both crops (Salas et al., 2016; Tranel and Wright, 2002). Thus, the lower net-positive selection from PPO-inhibiting herbicides along with their recent resurgence in popularity (Tranel, 2021) may explain the more recent origins and thus shorter persistence of the PPO ΔGly210 alleles. Similarly, while the ALS Trp-574-Leu mutation tends to confer resistance broadly across all ALS herbicides, the ALS Ser-653-Asn mutation confers resistance to fewer types of ALS-inhibiting herbicides, which also happen to be used more commonly in soy (Patzoldt and Tranel, 2017). This may contribute to the relatively lower frequency of ALS Ser-653-Asn compared to ALS Trp-574-Leu across the A. tuberculatus range, or even suggest that a lack of both focal crop and herbicide rotation facilitated strong recent selection on the high-frequency Ontario ALS Ser-653-Asn lineage.
 
-## Intra and inter-locus allelic interactions shape the history of TSR mutations
+### Intra and inter-locus allelic interactions shape the history of TSR mutations
 
 The outcome of parallel adaptation in a continuous species range has been thoroughly described by Ralph and Coop, 2010. When the geographic spread of an adaptive mutation is migration limited, partial sweeps for parallel adaptive mutational origins that occur in distinct geographic regions will be common. However, as ‘waves of advance’ of these distinct mutational origins expand, eventually coming into contact, beneficial haplotypes will compete on their way to fixation (Ralph and Coop, 2010). Given our evidence for highly parallel TSR adaptation across the range, we expect that this scenario fits the evolution of resistance particularly well. The widespread gene flow we observe sets up a scenario where independent origins of TSR mutations have now met and must interact. Under such a scenario, further background-dependent fitness effects, additive and epistatic interactions with both physically linked and unlinked loci, may shape the success of particular mutational lineages.
 
@@ -135,7 +265,7 @@ While we find that intra-chromosomal interactions such as competition between al
 
 Alleles in windows on different chromosomes with the strongest evidence of linkage with ALS target-site resistance mutations function in biological processes related to known organismal responses to ALS herbicides. ALS-inhibiting herbicides disrupt biosynthesis of branched amino acids, and a rapid response after exposure leads to amino-acid remobilization through enhanced protein degradation (autophagy) and reduced synthesis (Orcaray et al., 2011; Trenkamp et al., 2009; Zhao et al., 2018; Zulet et al., 2013). We observe significant enrichment for functions in both amino acid production and cell death. These alleles may thus provide additional levels of tolerance on the large-effect TSR background, by compensating for homeostatic disturbances caused by ALS exposure or the potential costs of large-effect resistance mutations (as seen for antibiotic resistance, MacLean et al., 2010).
 
-## Conclusion
+### Conclusion
 
 In conclusion, adaptation to herbicides and the emergence of well-characterized target-site resistance mutations provide a powerful system for characterizing rapid and repeated evolution in plant populations, as well as the consequences of extreme selection on local and genome-wide patterns of diversity. Studies of herbicide resistance evolution have highlighted how extreme selection can modify life-history and plant mating systems (Kuester et al., 2017; Van Etten et al., 2020) and vice versa (Kreiner et al., 2018), as well as the role of small- versus large-effect mutations (or monogenic versus polygenic adaptation) (Kreiner et al., 2021; reviewed in Délye, 2013; Powles and Yu, 2010), costs of adaptation under fluctuating environments (Vila-Aiub, 2019; Vila-Aiub et al., 2009), and mutational repeatability (e.g. Heap, 2014; Menchari et al., 2006) (see Baucom, 2019). The work here contributes to this literature by characterizing not only the parallel origins and spatial distribution of target-site-resistance alleles across a broad collection of agricultural populations, but also heterogeneity in their evolutionary history and key contributing processes, such as fluctuating selection, haplotype competition, and cross chromosomal linkage with putative resistance alleles.
 
@@ -143,11 +273,11 @@ From a practical perspective, this work highlights A. tuberculatus as a worst-ca
 
 ## Materials and methods
 
-## Amaranthus tuberculatus sequence data
+### Amaranthus tuberculatus sequence data
 
 Sequencing and resequencing data were from a published study (Kreiner et al., 2019). Whole-genome Illumina sequencing data are available at European Nucleotide Archive (ENA), while the reference genome and its annotation are available on CoGe (reference ID = 54057). The analyses in this paper focus on herbicide resistance in 158 agricultural samples, collected from eight fields with high A. tuberculatus densities across Missouri and Illinois in the Midwestern US (collected 2010), and from newly infested counties in Ontario, Canada, Walpole Island, and Essex County (collected 2016). The eight Midwestern US populations previously had been surveyed for resistance to glyphosate (Chatham et al., 2017). Ten additional samples collected from natural populations in Ontario, Canada are also included, but only for tree-based inference. These samples have been recently analyzed with respect to the convergent evolutionary origins of amplification of the glyphosate-targeted gene, 5-enolpyruvylshikimate-3-phosphate (Kreiner et al., 2019), as well as the polygenic architecture of glyphosate resistance (Kreiner et al., 2020).
 
-## SNP calling and phasing genotypes
+### SNP calling and phasing genotypes
 
 Filtered VCFs were obtained from Kreiner et al., 2019 for all analyses. Briefly, freebayes-called SNPs were filtered based on missing data ( > 80% present), repeat content, allelic bias ( > 0.25 and < 0.75), read paired status, and mapping quality (> Q30). Six individuals were removed due to excess missing data, leaving 152 for agricultural and 10 natural samples for further analyses.
 
@@ -155,7 +285,7 @@ Known TSR mutations were assayed for presence/absence in our set of 162 A. tuber
 
 To phase genotypes into haplotypes, we first used WhatsHap (Martin et al., 2016), which performs readback phasing, and passed these phase sets to SHAPEIT4 (Delaneau et al., 2013) which further phases haplotypes based on population-level information. Since phasing is very sensitive to data quality, we also applied a more stringent threshold of no more than 10% missing data for each SNP. SHAPEIT4 also requires a genetic map; with no recombination map for A. tuberculatus yet available, we used LDhat to infer recombination rates across the genome in our samples (as in Kreiner et al., 2019). Specifically, we used the interval function to estimate variable recombination rates within each of the 16 chromosomes of the pseudoassembly, using a precomputed lookup table for a θ of 0.01 for 192 chromosomes. We then converted rho estimates to genetic distance-based recombination rates (100/4Ner; Ne = 500,000), and used a monotonic spline to extrapolate genetic distance to each SNP in our VCF. We provided SHAPEIT4 an effective population size estimate of 500,000, inferred from previous demographic modeling in dadi (Kreiner et al., 2019).
 
-## Tree inference
+### Tree inference
 
 Gene trees were inferred based on haplotypes within focal target-site genes (ALS and PPO), and 5 kb on either side around them. This resulted in 296 SNPs and 622 SNPs for inference of ALS and PPO trees respectively. Using the phased data around these genes, we first converted each phased haplotype to FASTA format, performed realignment with clustal omega (Madeira et al., 2019), and then ran clustal-w2 (Rédei, 2008) to infer the maximum likelihood tree, once for each gene, with 1,000 bootstraps. We then plotted mutational status for each focal TSR mutation (ALS Trp-574-Leu, ALS Ser-653-Asn, and PPO ΔGly210) at each tip of both gene trees using ggtree (Yu, 2020).
 
@@ -163,23 +293,31 @@ We ran ARGweaver (Hubisz and Siepel, 2020; Rasmussen et al., 2014) on a region o
 
 As a test for panmixia, we performed a permutation test of the proportion of a mutational lineage (i.e. haplotypes belonging to a particular origin) mapping to Ontario (Essex and Walpole) compared to the Midwest. To do so, we randomized haplotype assignment to either Ontario or the Midwest, and recalculated the proportion of haplotypes belonging to each origin found in each region, 1000x. We then calculated the 95% CI of the proportion of haplotypes mapping to either Essex or the Midwest, as the null expectation under panmixia. When our observed value for a given origin exceeded the null expectation, we took this as significant evidence for stratification in the geographic distribution of a mutational lineage.
 
-## Coalescent tree-based tests for selection
+### Coalescent tree-based tests for selection
 
 RELATE (Speidel et al., 2021; Speidel et al., 2019), a scalable method for estimating ARGs across large genomic datasets implements a tree-based test for detecting positive selection (Griffiths and Tavaré, 1998; Speidel et al., 2019). Under the standard coalescent model (i.e. assuming selective neutrality of mutations), the number of descendants in a particular lineage is exchangeable. Thus, one can compute the probability of some observed skew in the number of descendants using the hypergeometric distribution (Griffiths and Tavaré, 1998; Speidel et al., 2019). This approach gives us a p-value for this skew under the null (i.e. no selection). We did this on an origin-by-origin basis, comparing the rate of allele frequency change across the tree for a focal resistant lineage compared to all other susceptible haplotypes across the tree. Since this statistic is simply based on the order of coalescents, rather than branch lengths, it should be robust to misspecified effective population sizes used to infer our ARG (Speidel et al., 2019). Since RELATE assumes an infinite sites model and thus is unsuitable for testing hypotheses about multiple origins, we performed our own implementation of this method for trees outputted from Argweaver (Rasmussen et al., 2014).
 
-Briefly, the statistic works as follows. Let fN be the number of carriers of our focal mutation in the current day, N be the total present-day sample size, and kS be the number of susceptible lineages present when the mutation increases in count from 1 to 2. We sum each individual probability that a mutation spreads to at least a given frequency, from fN to N-ks + 2.(1)pR,denovo=∑f=fNN−kS+2(f−1)(N−f−1kS−3)N−1kS−1
+Briefly, the statistic works as follows. Let fN be the number of carriers of our focal mutation in the current day, N be the total present-day sample size, and kS be the number of susceptible lineages present when the mutation increases in count from 1 to 2. We sum each individual probability that a mutation spreads to at least a given frequency, from fN to N-ks + 2.
+
+$$
+p_{R,denovo}=\sumf=f_{N}N−k_{S}+2\frac{(f−1)(\frac{N−f−1}{k_{S}−3})}{\frac{N−1}{k_{S}−1}}
+$$
 
 The null hypothesis, that allele frequency change occurred under drift, is rejected when this one-side p-value is sufficiently small (i.e. α < 0.05), implying selection has governed the spread of this mutation since it first arose.
 
-We also modified this statistic to test for selection on more recent timescales, and thus the scenario of adaptation from standing genetic variation. Here, we need to define kR, the number of resistant lineages at some time (t) before the present day, in addition to kS(t).(2)pR,sgv=∑f=fNN−kS+2f−1N−f−1(kR(t)−1)(kS(t)−1)(N−1kR(t)+kS(t)−1)
+We also modified this statistic to test for selection on more recent timescales, and thus the scenario of adaptation from standing genetic variation. Here, we need to define kR, the number of resistant lineages at some time (t) before the present day, in addition to kS(t).
+
+$$
+p_{R,sgv}=\sumf=f_{N}N−k_{S}+2\frac{\frac{f−1N−f−1}{(k_{R}(t)−1)(k_{S}(t)−1)}}{(\frac{N−1}{k_{R}(t)+k_{S}(t)−1})}
+$$
 
 The null hypothesis that the frequency change (between the current day and some time in the past more recent than when the mutation first arose (t) happened under random drift (and hence no selective pressures)) is rejected if this p-value is sufficiently small.
 
-## Ne estimation through time
+### Ne estimation through time
 
 We used RELATE 1.1.6 to estimate tree sequence from distinct recombinational units across the genome from our phased dataset. Relate requires polarized ancestral allele calls, such that alternate alleles represent the derived state. To do so, we performed a multiple alignment of our A. tuberculatus genome to A. palmeri (Montgomery et al., 2020) using lastz (Harris, 2007), retained the best orthologous chain from the alignment, and extracted variant sites. We modified the A. tuberculatus reference genome with the derived allele states from our multiple alignment, using this modified reference to polarize allele calls. On each chromosome, we then ran RelateParallel.sh --mode All, using the output from all chromosomes to first estimate mutation rate (RelateMutationRate --mode Avg), reestimate branch lengths with this updated mutation rate (ReEstimateBranchLengths), and then lastly estimate population size through time (EstimatePopulationSize.sh). Population sizes were estimated from 0 years ago to 10,000,000 years ago, in epochs timesteps of 100.25 years, to obtain particularly fine-scale estimates in the recent past.
 
-## Selection scans and LD-based analyses
+### Selection scans and LD-based analyses
 
 The phased data used as input for ARGweaver was also used to extract selective sweep summary statistics in selscan (Szpiech and Hernandez, 2014). In selscan, we estimated both XPEHH (Sabeti et al., 2007), in this case, the difference in the integrated extended haplotype homozygosity between resistant and susceptible haplotypes, and mean pairwise difference estimates. For both of these statistics, we provided LD-based recombination maps, inferred from LDhat. Because some individuals in Essex always carried at least one resistant ALS haplotype through either mutations at ALS Trp-574-Leu or ALS Ser-653-Asn, to compare patterns of selection associated with resistance and susceptibility, these statistics were calculated at the haplotype, rather than individual level. For each independent origin as inferred from ARGweaver, we similarly inferred XPEHH, as well as H12 (Garud and Petrov, 2016; Garud and Rosenberg, 2015) across the chromosome containing ALS.
 

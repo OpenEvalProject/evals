@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.38356.001 The cohesin ring complex is required for numerous chromosomal transactions including sister chromatid cohesion, DNA damage repair and transcriptional regulation. How cohesin engages its chromatin substrate has remained an unresolved question. We show here, by determining a crystal structure of the budding yeast cohesin HEAT-repeat subunit Scc3 bound to a fragment of the Scc1 kleisin subunit and DNA, that Scc3 and Scc1 form a composite DNA interaction module. The Scc3-Scc1 subcomplex engages double-stranded DNA through a conserved, positively charged surface. We demonstrate that this conserved domain is required for DNA binding by Scc3-Scc1 in vitro, as well as for the enrichment of cohesin on chromosomes and for cell viability. These findings suggest that the Scc3-Scc1 DNA-binding interface plays a central role in the recruitment of cohesin complexes to chromosomes and therefore for cohesin to faithfully execute its functions during cell division.
+The cohesin ring complex is required for numerous chromosomal transactions including sister chromatid cohesion, DNA damage repair and transcriptional regulation. How cohesin engages its chromatin substrate has remained an unresolved question. We show here, by determining a crystal structure of the budding yeast cohesin HEAT-repeat subunit Scc3 bound to a fragment of the Scc1 kleisin subunit and DNA, that Scc3 and Scc1 form a composite DNA interaction module. The Scc3-Scc1 subcomplex engages double-stranded DNA through a conserved, positively charged surface. We demonstrate that this conserved domain is required for DNA binding by Scc3-Scc1 in vitro, as well as for the enrichment of cohesin on chromosomes and for cell viability. These findings suggest that the Scc3-Scc1 DNA-binding interface plays a central role in the recruitment of cohesin complexes to chromosomes and therefore for cohesin to faithfully execute its functions during cell division.
 
 ## Introduction
 
@@ -40,15 +40,185 @@ To investigate whether cohesin can similarly establish direct contacts with DNA,
 
 To investigate the DNA-binding properties of cohesin, we co-expressed and purified defined globular domains and subcomplexes of the cohesin complex from the budding yeast Saccharomyces cerevisiae (Figure 1A, Figure 1—figure supplement 1, Figure 1—figure supplement 2). These encompassed the Smc3 ATPase head domain bound to an N-terminal fragment of Scc1 (Smc3hd-NScc1), the Smc1 ATPase head domain bound to a C-terminal fragment of Scc1 (Smc1hd-CScc1), as well as an Scc3-Scc1 subcomplex (Scc3T-Scc1K) (Figure 1B). In addition, we produced an Smc1-Smc3 hinge heterodimer, Pds5 bound to a Scc1 fragment (Muir et al., 2016) as a full-length (Pds5fl) or truncated variant (Pds5T), as well as Wapl as full-length (Waplfl) or truncated variants (WaplC; Figure 1—figure supplement 1). Consistent with prior studies (Murayama and Uhlmann, 2014), we found that the Scc3T-Scc1K subcomplex and the Smc1-Smc3 hinge heterodimer bound DNA, as seen by the appearance of slower-migrating species in electrophoretic mobility shift assays (EMSAs), as did the Smc3hd-NScc1 module, which has previously been implicated as a DNA sensor in cohesin (Murayama and Uhlmann, 2014) (Figure 1C, Figure 1—figure supplement 2). As expected for non-sequence specific DNA-binding factors, longer DNA fragments (>21 base pairs (bp)) bound more efficiently than shorter DNA duplexes (15 bp) (Figure 1C, Figure 1—figure supplement 2). The ability of the Scc3T-Scc1K subcomplex to bind DNA depended on the presence of Scc1K. Conversely, the other HEAT-repeat-kleisin subcomplex of cohesin, Pds5-Scc1, the Smc1hd-CScc1 subcomplex and the Wapl subunit did not interact with DNA in this assay. Thus, as in the paralogous condensin complex, the HEAT-repeat protein bound to the C-terminal region of the kleisin subunit directly engages DNA (Kschonsak et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon of the cohesin complex. (B) Domain structure of Scc3 and Scc1. Construct boundaries used and their acronyms are shown below. (C) SDS-PAGE analysis of purified Scc3T-Scc1K and DNA binding analysis by EMSA. Scc3 binds to longer DNA more efficiently compared to shorter DNA. The DNA binding capacity of Scc3T is enhanced by Scc1K.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The domain boundaries of different cohesin components and subcomplexes are indicated. Expression constructs and acronyms used in the text are indicated below each cohesin component. NScc1 comprises an expression construct spanning amino acids 1–112 of Scc1. Scc1P (amino acids 126–142). Scc1K (amino acids 309–400). CScc1 (amino acids 482–564). Scc3T (amino acids 134–1064). Wapl fl (amino acids 1–647). WaplC (amino acids 250–647). Pds5 fl (amino acids 1–1277). Pds5T (amino acids 1–701).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) SDS-PAGE and DNA binding analysis of the Smc3hd/NScc1 complex. (B) SDS-PAGE and DNA binding analysis of the Smc3/Smc1 hinge heterodimer. (C) SDS-PAGE of the purified Smc1hd/CScc1 complex and DNA binding analysis. (D) SDS-PAGE and DNA binding analysis of Pds5FL and Pds5T. (E) SDS-PAGE and DNA binding analysis of WaplC and WaplFL. For the gel showing WaplFL, the black vertical line indicates the position where the gel has been cropped. Concentration of the DNA duplex in the EMSA analysis was 1 μM. The DNA was incubated at different molar ratios, as indicated on top of each lane, with the indicated protein preparation. Native EMSA PAGE gels were stained with Sybr Safe Nucleic Acid Gel Stain. SDS-PAGE gels were stained with Coomassie.
+
 To identify the molecular basis of this interaction, we crystallized the Scc3T-Scc1K complex from budding yeast bound to 19 bp of dsDNA. Optimized crystals diffracted anisotropically to a minimum Bragg spacing of 3.6 Å in the best, and ~5.7 Å in the worst direction (Table 1). We determined the structure by molecular replacement, using the structures of an Scc3 ortholog from Zygosaccharomyces rouxii and a C-terminal fragment of Saccharomyces cerevisiae Scc3 as search models (Roig et al., 2014). The resulting electron-density map provided a continuous trace of the polypeptide main chain, but with a limited level of detail owing to the anisotropy of the data. Despite these drawbacks, we successfully traced the structure using a selenomethionine derivative and refined a model encompassing amino acid residues 134 to 1064 of Scc3 in complex with residues 309 to 400 of Scc1, bound to a 19 bp DNA molecule (Table 1).
 
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Scc3T/Scc1K native</th>
+      <th>Scc3T/Scc1K SeMet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P21212</td>
+      <td>P21212</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>109.9, 115.4, 295.6</td>
+      <td>109.9, 115.6, 296.2</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.282</td>
+      <td>1.282</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–3.60</td>
+      <td>49.9–4.79</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>20963</td>
+      <td>10279</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>5.8 (122.6)*</td>
+      <td>4.6 (112.3)*</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>11.9 (1.6)*</td>
+      <td>10.6 2(.1)</td>
+    </tr>
+    <tr>
+      <td>CC 1/2</td>
+      <td>0.99 (0.56)</td>
+      <td>0.99 (0.52)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>91.4 (63.5)*</td>
+      <td>93.6 (71.2)*</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>4.4 (6.0)*</td>
+      <td>1.8 (1.8)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–3.60</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.28/0.31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>16465</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>14909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNA</td>
+      <td>1556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B-factors (mean)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>254.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNA</td>
+      <td>266.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for highest-resolution shell._
+
 As seen in other structures of Scc3, the protein is hook-shaped in the C-terminal section and contains an N-terminal ‘nose’ formed by a pair of extended antiparallel α-helices (Figure 2A). Similarly to the interaction of human Scc1 with Scc3, the yeast Scc1 in our structure binds along the convex surface of the hook-shaped HEAT-repeat subunit. We detected additional electron density corresponding to dsDNA within the cradle of this hook (Figure 2—figure supplement 1A,B). Whereas the DNA duplexes aligned to form pseudocontinuous double helices throughout the crystal, the DNA duplex was slightly too short for tight end-to-end stacking (Figure 2—figure supplement 1A,B). As a result, the DNA density was only partially resolved, apparently due to rotational and translational disorder of the DNA in the binding cavity.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cartoon representation of the Scc3-Scc1 complex bound to a 19 bp dsDNA substrate. The N- and C- termini of Scc3 (violet) and Scc1 subunits (green) are shown. The inset shows a close-up view of the Scc1 amino acid K363. (B) Electrostatic surface potential representation of the Scc3-Scc1 subcomplex with bound dsDNA (calculated with APBS and displayed with Pymol).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) View of the DNA binding site of the Scc3-Scc1 subcomplex. DNA is shown as stick, along with its 2Fo-Fc electron density Fourier map (blue mesh) contoured at 1.0 σ. (B) Fo-Fc omit electron density Fourier map (grey mesh) contoured at 1.0 σ. (C) N-terminal ‘nose’ of Scc3 which interacts through a set of positively charged amino acid residues with the DNA of a neighbouring complex related by crystallographic symmetry. (D) Anomalous difference Fourier map (yellow mesh) contoured at 2.8 σ of a selenomethionine–substituted crystal, confirming the location of Scc1 residue M373. Blue mesh: 2Fo-Fc electron density Fourier map around Scc1 contoured at 1.5 s. K363 of Scc1 is located in close proximity to the DNA phosphate backbone.
 
 To identify amino acid residues potentially involved in DNA binding, we mapped the electrostatic surface potential onto the Scc3-Scc1 structure (Figure 2B). This revealed that DNA is nested within an extended cradle spanning the majority of Scc3-Scc1, lined by a set of positively charged residues that directly contact the DNA phosphate backbone. The DNA is aligned almost parallel to the N-terminal ‘nose’ of Scc3, which interacts through a set of positively charged amino acid residues with the DNA of a neighbouring complex related by crystallographic symmetry (Figure 2—figure supplement 1C). We observed no direct nucleotide base–amino acid interactions, which explains the apparent lack of DNA sequence specificity.
 
 To ascertain the amino-acid register of Scc1, we used an anomalous difference map peak for M373 in the selenomethionine-derivative data (Figure 2—figure supplement 1D). The deduced register places Scc1 residue K363 in close proximity to the DNA (Figure 2A, Figure 2—figure supplement 1D). Direct interactions between Scc1 and the DNA phosphate backbone potentially explain why the Scc3T-Scc1K subcomplex has greater DNA binding affinity than does isolated Scc3T (Figure 1C).
 
 Mapping of sequence conservation onto the structure revealed that amino acid residues in the DNA binding groove are generally well conserved among yeast Scc3 orthologs (Figure 3A). In particular, amino acid residues that are located proximal to the DNA phosphate backbone showed strong conservation. To further evaluate the contributions made by individual segments of the DNA-binding surface, we subdivided participating residues into a series of three patches, based on their physical proximity to the DNA (Figure 3B), and subjected these patches to site-directed mutagenesis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig3-v2.jpg)
+
+**Figure 3.:** (A) Surface amino acid conservation of yeast Scc3. Residues in the DNA binding domain are well conserved. (B) DNA binding residues are located in three surface patches of Scc3. (C) DNA binding fluorescence polarization of 6-FAM labelled 32 bp dsDNA by variants of the Scc3-Scc1 subcomplex. Data points corresponding to the average of three independent experiments were fitted to a standard binding equation assuming a single binding site using Kaleidagraph. Standard deviations are depicted as vertical error bars. Apparent dissociation constants (KD) are noted below. (D) Tetrad analysis of diploid budding yeast strains expressing ectopic wild-type or mutant versions of Scc3 under control of the endogenous promoter in an SCC3/scc3Δ background (strains C5013, C5014, C5015, C5043, C5033). Images were recorded after three days at 30°C on rich media. Genetic marker analysis identified Scc3(mutant), scc3Δ cells (circles). (E) ChIP-qPCR analysis of binding to centromeric (cen), pericentromeric (pericen) or chromosome arm (arm) regions (chromosomes IV, V, and VI as indicated) of untagged (strain C3) or PK6-tagged wild-type or mutant versions of Scc3 expressed from an ectopic locus under its endogenous promoter (strains C5013, C5043, C5033). The fractions of immunoprecipitated DNA relative to input DNA are plotted as circles for two biological repeats with two technical repeats each (same colour pairs). Mean values of all four data points are shown as lines.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Size-exclusion chromatography of Scc1-Scc1 complexes. Arrows indicate the elution volume of molecular weight size markers. (B) SDS-PAGE analysis of Scc3-Scc1 complexes from peak fractions in panel (A), showing that the mutants do not impact Scc1 binding in vitro. (C) Alignment of Scc3 amino acid sequences. Residues that that were probed by mutagenesis are labeled with red stars (*). Magenta boxes indicate fully conserved amino acid residues while chemically conserved residues are colored magenta. Blue residues indicate divergent residues.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38356/elife-38356-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Protein levels of ectopically expressed wild-type and mutant versions of Scc3 tagged with PK6 (strains C1073, C5013, C5014, C5015, C5043, C5033) measured by western blotting of whole cell lysates against the PK tag (top) and α-tubulin as loading control (bottom). (B) Co-immunoprecipitation of Scc1-HA6 with wild-type or mutant versions of PK6-tagged Scc3 expressed from an ectopic locus under the endogenous promoter (strains C501, C5165, C5166).
 
 We measured the DNA equilibrium dissociation constant by fluorescence polarization, using a 32-bp 6-FAM labelled DNA substrate, which is sufficient to bridge the entire DNA binding surface present in the Scc3-Scc1 crystal structure (Figure 3C). Whereas the wild-type Scc3T-Scc1K complex bound this substrate with an equilibrium dissociation constant of 2.2 μM, charge-inversion mutations in patches 1 and 3, located at the crest of and within the Scc3 cradle, had only modest effects on affinity (equilibrium dissociation constants of 9.5 μM and 7.3 μM, respectively). Patch 2 mutants, residing in the Scc3 'nose', exhibited essentially unaltered DNA binding affinity. In contrast, the simultaneous mutation of all three patches (a heptamutant) reduced the binding affinity of the patch 1 or 3 mutants even further (to 29.3 μM, Figure 3C). The defect in binding DNA was not due to any impact of the mutations on the structural integrity of Scc3-Scc1, as all mutant complexes eluted indistinguishably from wild-type Scc3-Scc1 during size-exclusion chromatography (Figure 3—figure supplement 1A) and efficiently formed a complex with Scc1 in vitro (Figure 3—figure supplement 1B) or in vivo (see below). We conclude that the positively charged Scc3 cradle comprises the major DNA-binding surface of Scc3 and that the positively charged amino acid residues located in patch 1 and 3 constitute a composite DNA binding surface. The distribution of these residues across an extended surface of Scc3 might explain why their significance has thus far eluded cell-biological and genetic characterization. To test whether the direct interactions between Scc1 and the DNA phosphate backbone contribute to DNA binding we introduced the double mutation K363E/R364E into Scc1K. This mutant showed an essentially indistinguishable equilibrium dissociation constant as compared to that of the wild-type complex, thus indicating that this positively charged patch of Scc1 does not contribute to DNA binding (Figure 3C).
 
@@ -76,7 +246,7 @@ Binding of condensin to DNA is further stabilized by the entrapment of the bound
 
 ## Materials and methods
 
-## Constructs, expression and purification
+### Constructs, expression and purification
 
 Scc3, Scc1 and other cohesin subunits were amplified from yeast Genomic DNA (Millipore). Scc3 and mutant variants thereof were cloned into pETM-30 vector using NcoI and NotI restriction enzyme cleavage sites. Scc1 constructs were cloned using the NcoI and NotI sites of a pACYC-DUET vector for co-expression with Scc3, or into vectors containing the cognate Smc head domain in their second ORF for Smc/kleisin complexes (see below). Codon optimised genes comprising the Smc1 and Smc3 ATPase domains were produced by gene synthesis (Thermofisher), to include C-terminal 6xHistidine tags, and ligated into the NdeI-XhoI sites of pRsf-DUET1 and pACYC-DUET1 respectively via Gibson Assembly (NEB). Pds5 and Wapl were cloned and expressed as described previously (Muir et al., 2016). For the expression and purification of Pds5, media and buffers were supplemented with 20 μM and 5 μM of inositol hexa-kis-phosphate, respectively (Ouyang et al., 2016).
 
@@ -84,32 +254,32 @@ Proteins were expressed in Escherichia coli BL21(DE3) by auto-induction (Studier
 
 The HIS-GST tag, protease and uncleaved protein were removed by passing this mixture over Co2+ IMAC resin. The flow through was concentrated using an Amicon Ultra −15 concentrator (Millipore) and applied onto a MonoQ 5/50 GL column (GE healthcare) in buffer 3 (150 mM NaCl, 40 mM TRIS, pH7.5, 0.5 mM TCEP). Proteins were eluted using a linear gradient in buffer 4 (1 M NaCl, 40 mM TRIS, pH 7.5, 0.5 mM TCEP). The final purification step was performed by using a HiLoad 16/60 Superdex 200 prep–grade column in buffer 5 (150 mM NaCl, 20 mM TRIS, pH7.5, 0.5 mM TCEP).
 
-## DNA binding assays
+### DNA binding assays
 
 For analysis of DNA-binding by EMSA and for co-crystallization, DNA substrates were generated by annealing complementary oligonucleotides (MWG Eurofins) at a final concentration of 1 mM in 20 mM TRIS, pH 7.5, 150 mM NaCl (Supplementary file 1). Successful annealing and purity of the oligonucleotides were confirmed by native PAGE on a 6% gel.
 
 For EMSA experiments, varying concentrations of protein samples were incubated at the indicated molar ratios with 1 μM the 32mer DNA in 150 mM NaCl, 20 mM TRIS, pH 7.5, 0.5 mM TCEP. Samples were incubated on ice for 30 min. 5% Glycerol was added and the samples were analysed on a 6% native 1x TRIS-Glycine (25 mM TRIS, 250 mM glycine, pH 8.3, 5% Glycerol) polyacrylamide gel using 1x TRIS-Glycine running buffer. Gels were stained with SYBR Safe (Thermo Fisher Scientific) to visualize DNA-bound complexes or Coomassie Blue for protein staining.
 
-## Fluorescence Polarization (FP)
+### Fluorescence Polarization (FP)
 
 32 bp 6-FAM labelled DNA was prepared by annealing two complementary DNA strands, essentially as described for the crystallisation oligonucleotides, albeit under low-light conditions (Supplementary file 1). Fluoresence polarisation assays were conducted in a buffer containing 50 mM TRIS pH 7.5, 150 mM NaCl, 0.1% tween and 0.5 mM TCEP. A series of protein concentrations, ranging from 0.5 μM to 25 μM, were incubated in the presence of 50 nM DNA for 30 min at room temperature in order to attain equilibrium. Immediately thereafter, fluorescence polarization was recorded using 485 nm and 520 nm excitation and emission filters, respectively (CLARIOstar, BMG Labtech, Germany). The change in fluorescence polarization was then plotted as mean values of three independent replicates and the dissociation constant for each complex determined.
 
-## Crystallization and data collection
+### Crystallization and data collection
 
 Crystals of the Scc3-Scc1-DNA complex were obtained by mixing 8 mg ml−1 protein with DNA at a 1:1.1 ratio. 1 μl of the protein:DNA complex were mixed with 1 μl 10% PEG 8000, 0.1M Bis-TRIS, pH 6.5 crystallization buffer and equilibrated against the crystallization buffer at 4°C. Initial crystals with a 17 mer DNA were obtained after 5 days. These crystals were used as seeds for crystallization of Scc3-Scc1 bound to a 19mer DNA using the same crystallization condition. Crystals were cryo protected by adding 20% Glycerol to the crystallization buffer and flash frozen in liquid nitrogen. Diffraction data for native and selenomethionine-derivatised Scc3-Scc1-DNA crystals were collected at 100 K at an X-ray wavelength of 0.966 Å at beamline ID30A-1/MASSIF-1 (Bowler et al., 2015) of the European Synchrotron Radiation Facility, with a Pilatus3 2M detector using automatic protocols for the location and optimal centring of crystals (Svensson et al., 2015). The beam diameter was selected automatically to match the crystal volume of highest homogeneous quality (Svensson et al., 2018). Data were processed with XDS (Kabsch, 2010) and imported into CCP4 format using AIMLESS (Winn et al., 2011).
 
-## Structure determination refinement and analysis
+### Structure determination refinement and analysis
 
 The structure of the Scc3-Scc1-DNA complex was determined by molecular replacement by Phaser (McCoy et al., 2007) using a Scc3 structure from Zygosaccharomyces rouxii (PDB code 4UVK) and a structure of a C-terminal fragment of Scc3 from Saccharomyces cerevisiae (PDB code 4UVL) (Roig et al., 2014) in spacegroup P21212 at a resolution of 3.6 Å (Table 1). The model was build by iterative rounds of manual adjustments with Coot and of restrained refinements with Phenix (Afonine et al., 2012; Emsley et al., 2010). Sequence register was confirmed using a selenomethionine-derivatized crystal. Analysis of the refined structure in MolProbity showed that there were no residues in the disallowed and 94% in the favoured region of the Ramachandran plot. The MolProbity all atom clash score was 4.1 (Chen et al., 2010). Structures were visualized with PyMOL (Schrödinger, LLC). Surface conservation graphics were created using the ConSurf server (Ashkenazy et al., 2016) using a multi-sequence alignment containing Scc3 orthologs from Saccharomyces_cerevisiae (P40541), Saccharomyces_kudriavzevii (J5PHP0), Candida glabrata (A0A0W0DN34), Naumovozyma castellii (G0VFI2), Vanderwaltozyma polyspora (A7TNN6), Tetrapisispora phaffii (G8BRB9), Saccharomyces kudriavzevii (J5PHP0), Zygosaccharomyces rouxii (A0A1Q3A0R6), Torulaspora delbrueckii (G8ZZR1), Kluyveromyces lactis (Q6CIC3), Lachancea quebecensis (A0A0P1KU08), Eremothecium cymbalariae (G8JTR2), Ashbya gossypii (Q75AL6), Pichia sorbitophila (G8YM42) and Yarrowia lipolytica(Q6C144). The electrostatic surface potential graph was created with APBS (Baker et al., 2001).
 
-## Chromatin immunoprecipitation and ChIP-qPCR
+### Chromatin immunoprecipitation and ChIP-qPCR
 
 Chromatin immunoprecipitation followed by quantitative PCR ChIP-qPCR was performed from asynchronous yeast cell cultures as described (Cuylen et al., 2011), with the exception that sonication was performed with a Bioruptor Plus (Diagenode) at 4°C using 6 cycles of 30 s on, 60 s off at ‘high’ level. Quantitative PCR was performed with primers listed Supplementary file 3.
 
-## Tetrad analysis
+### Tetrad analysis
 
 Wild-type or mutant alleles of Scc3 fused to a C-terminal PK6 epitope tag were integrated into the ura3 locus of a SCC3/scc3::HIS3 heterozygous diploid yeast strain (C1073). Correct integration was confirmed by PCR (Supplementary file 2). Following sporulation, strains were tetrad dissected and cultured on YPAD media for 3 days at 30°C before genotyping by replica plating.
 
-## Data availability
+### Data availability
 
 Coordinates for the Scc3-Scc1-DNA complex are available from the Protein Data Bank under accession number 6H8Q.

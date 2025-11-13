@@ -17,10 +17,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05apxxy63 Department of Biological Sciences, KAIST Daejeon Republic of Korea
-2. https://ror.org/00y0zf565 Center for Synaptic Brain Dysfunctions, Institute for Basic Science (IBS) Daejeon Republic of Korea
-3. https://ror.org/01wjejq96 Department of Anatomy, College of Medicine, Yonsei University Seoul Republic of Korea
-4. https://ror.org/05apxxy63 Department of Bio and Brain Engineering, KAIST Daejeon Republic of Korea
+1. Department of Biological Sciences, KAIST Daejeon Republic of Korea ([ROR:05apxxy63](https://ror.org/05apxxy63))
+2. Center for Synaptic Brain Dysfunctions, Institute for Basic Science (IBS) Daejeon Republic of Korea ([ROR:00y0zf565](https://ror.org/00y0zf565))
+3. Department of Anatomy, College of Medicine, Yonsei University Seoul Republic of Korea ([ROR:01wjejq96](https://ror.org/01wjejq96))
+4. Department of Bio and Brain Engineering, KAIST Daejeon Republic of Korea ([ROR:05apxxy63](https://ror.org/05apxxy63))
 
 † Corresponding author
 
@@ -40,9 +40,25 @@ To study the neural abnormalities of the mPFC associated with social dysfunction
 
 ## Results
 
-## Social impairments in IRSp53-KO mice in the linear-chamber social-interaction test
+### Social impairments in IRSp53-KO mice in the linear-chamber social-interaction test
 
 To compare neuronal activities in the mPFC of WT and IRSp53-KO mice during social interaction, we performed single-unit recordings in mice engaged in social interaction in a linear-chamber social-interaction apparatus (Figure 1A). The chamber, a long corridor connected with two side chambers with targets, was designed to measure neuronal activity during social interaction (Lee et al., 2016). A subject mouse was first placed in a separate circular rest box for 5 min for recording of resting neural activity. The mouse was then placed into the linear social-interaction chamber and allowed to explore the chamber with both side chambers being empty (empty-empty/E-E session) for 10 min. This was followed by a session in which one of the side chambers contained a novel social target (S; a conspecific male mouse) and the other contained a novel inanimate object (O) (first S-O session), and another session where the S and O were switched (second S-O session), which was included to control for side (or location)-specific as opposed to target-specific neural activity. The positions of mice in the linear chamber during experiments were determined using the DeepLabCut program (Lauer et al., 2022; Mathis et al., 2018), which automatically marked the subject mouse’s nose, ears, body center, and tail base as well as the social target’s nose and body center (Figure 1B). Sniffing time was defined as the time when the mouse’s nose was within a distance of 3 cm from the front face of the target chamber. In-zone time was defined as the time when the body center (midpoint between the nose and tail base) fell in the area within 9 cm from the front face of the target chamber.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the linear-chamber social-interaction test used to measure social approach towards a novel conspecific mouse (S, social) versus a novel non-social target (O, object). A tetrode-implanted mouse was first placed in the rest box for 5 min and moved to the linear social-interaction chamber to perform the following three sessions: empty-empty (E–E) session, social-object (first S-O) session, and object-social (second S-O) session. The in-zone area, falling within 9 cm from the front face of the chambers, is indicated by a dashed line. The sniffing zone, falling within 3 cm from the front face of the chambers, is indicated by green, orange, and blue colors. (B) An example video frame of subject mouse and social target mouse body parts automatically tracked by the DeepLabCut program. (C) Schematic (left) and a representative coronal brain section (right) showing the locations of the implanted tetrodes. PrL, prelimbic cortex; IL, infralimbic cortex; Cg1, cingulate cortex, area 1; M2, secondary motor cortex. (D–F) Mean (± standard error of mean/SEM) sniffing duration for left (L) vs. right (R) empty targets during the E-E session (D) and the social (S) vs. object (O) targets during the first S-O (E) and second S-O (F) sessions. (n=6 mice [WT], 8 mice [IRSp53-KO], *P<0.05, ***P<0.001, ns, not significant, two-way repeated-measures (RM)-ANOVA with Sidak’s multiple comparisons test). (G and H) Mean (± SEM) duration of the interaction between subject and social target mice as a function of the distance between the noses of the two mice during the first (G) and second (H) S-O sessions (top). Cumulative duration of proximal and distal social interactions (bottom). (n=47 experiments from 6 mice [WT], 58, 8 [IRSp53-KO], *p<0.05, **p<0.01, ***p<0.001, ns, not significant, two-way RM-ANOVA with Sidak’s multiple comparison test). (I and J) Mean (± SEM) duration of the interaction between subject mice and object target as a function of the distance between the subject mouse’s nose and the center of the object chamber face during the first (I) and second (J) S-O session (top). Cumulative duration of proximal and distal object interactions (bottom). (n=47 experiments from 6 mice [WT], 58, 8 [IRSp53-KO], ***p<0.001, ns, not significant, two-way RM-ANOVA with Sidak’s multiple comparison test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Final location of tetrodes implanted into the mPFC of WT (black) and IRSp53-KO (red) mice. Coronal sections of the mPFC shown in this figure represent +1.70 –+2.10 mm away from the bregma. PrL, prelimbic cortex; IL, infralimbic cortex; Cg1, cingulate cortex, area 1; M2; secondary motor cortex.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Mean (± SEM) in-zone duration for left (L) vs. right (R) empty targets during the E-E session and social (S) vs. object (O) targets during the first and second S-O sessions. (n=6 mice [WT], 8 mice [IRSp53-KO], *p<0.05, **p<0.01, ns, not significant, two-way RM-ANOVA with Sidak’s multiple comparison test). (D and E) The mean number of sniffing visits (D) and mean duration of time spent sniffing per valid sniffing trial (E) for each target during the E-E, first S-O, and second S-O sessions. (n=57 experiments from 6 mice [WT], 69, 8 [IRSp53-KO], *p<0.05, **p<0.01, ***p<0.001, ns, not significant, two-way RM-ANOVA with Sidak’s multiple comparison test). (F and G) The mean (± SEM) distance moved in the linear social-interaction test across three consecutive sessions (E-E, first S-O, and second S-O) in an experiment (F) and across different recording experiments (1st, 5th, and 10th experiments used as examples; G). (n=6 mice [WT], 8 mice [IRSp53-KO], ***p<0.001, ns, not significant, two-way RM-ANOVA with Sidak’s multiple comparison test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 1—figure supplement 2—source data 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Mean composition of behavior in social target sniffing zones according to proximity (d, distance) between the noses of the subject mouse and the social target mouse during the first and second S-O sessions (n=47 experiments from 6 mice [WT], 58, 8 [IRSp53-KO]). (B) Mean composition of behavior in object target sniffing zones according to proximity between the nose of the subject mouse and the center of the object chamber face during the first and second S-O sessions (n=47 experiments from 6 mice [WT], 58, 8 [IRSp53-KO]). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 1—figure supplement 3—source data 1.
 
 The single-unit activity was recorded with tetrodes from the prelimbic (PrL), infralimbic (IL), and cingulate cortex (Cg1) regions. Eight tetrodes, four tetrodes in each hemisphere, were implanted into the mPFC and lowered after each round of recording experiment to record neurons at different depths. After the last recording, the locations of all tetrodes were assessed via histology, and data from those falling within the area of interest were used for analysis (Figure 1C, Figure 1—figure supplement 1A).
 
@@ -54,19 +70,31 @@ Before comparing the activity of excitatory mPFC neurons during target sniffing,
 
 These behavioral results collectively indicate that IRSp53-KO mice display social impairments in the linear social-interaction chamber, similar to the social impairments previously determined using the three-chamber test, direct/dyadic social-interaction test, and ultrasonic vocalization test (Chung et al., 2015).
 
-## Increased resting firing rate in IRSp53-KO pExc mPFC neurons
+### Increased resting firing rate in IRSp53-KO pExc mPFC neurons
 
 We next compared neuronal firing patterns in the mPFC of WT and IRSp53-KO mice during the abovementioned linear-chamber social-interaction test. To this end, we first analyzed rest-period firing rates in awake and freely moving WT and IRSp53-KO mice. We segregated the neurons into putative excitatory (pExc) and putative inhibitory (pInh) neurons based on their half-valley width (pExc >200ms; pInh <200ms) and peak-to-valley ratio (pExc >1.4; pInh <1.4) (Figure 2A and B). The firing rate of total neurons at rest was higher in the mPFC of IRSp53-KO mice compared with WT mice (Figure 2C). However, only the IRSp53-KO pExc neurons, but not IRSp53-KO pInh neurons, showed a significant increase in firing rate (Figure 2D and E), suggesting that pExc neurons mainly contribute to the increase in the total firing rate. These results differ from those previously obtained from anesthetized IRSp53-KO mice (Chung et al., 2015), which exhibited decreases in total and pExc firing. This highlights the importance of measuring cortical neuronal activity in awake, behaving mice.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig2-v2.jpg)
 
-**Figure 2.:** (A) Classification of recorded neurons into putative excitatory (pExc) and putative inhibitory (pInh) neurons based on the half-valley width (200ms) and peak-to-valley ratio (1.4). P, peak; V, valley; HVW, half-valley width. (B) Average waveforms of WT and IRSp53-KO pExc (top) and pInh (bottom) neurons (n=366 [WT-pExc], 359 [KO-pExc], 17 [WT-pInh], 24 [KO-pInh]). The waveforms of each neuron were normalized by their peak values. (C–E) Firing rates of WT and IRSp53-KO total (C), pExc (D), and pInh (E) neurons in the mPFC during the 5-min rest period. (n=391 [WT-total], 394 [KO-total], 366 [WT-pExc], 359 [KO-pExc], 17 [WT-pInh], 24 [KO-pInh], ***p<0.001, ns, not significant, Mann-Whitney test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 2—source data 1.Figure 2—source data 1.Figure 2.The excel file contains the numerical data used to generate Figure 2A–E.
+**Figure 2.:** (A) Classification of recorded neurons into putative excitatory (pExc) and putative inhibitory (pInh) neurons based on the half-valley width (200ms) and peak-to-valley ratio (1.4). P, peak; V, valley; HVW, half-valley width. (B) Average waveforms of WT and IRSp53-KO pExc (top) and pInh (bottom) neurons (n=366 [WT-pExc], 359 [KO-pExc], 17 [WT-pInh], 24 [KO-pInh]). The waveforms of each neuron were normalized by their peak values. (C–E) Firing rates of WT and IRSp53-KO total (C), pExc (D), and pInh (E) neurons in the mPFC during the 5-min rest period. (n=391 [WT-total], 394 [KO-total], 366 [WT-pExc], 359 [KO-pExc], 17 [WT-pInh], 24 [KO-pInh], ***p<0.001, ns, not significant, Mann-Whitney test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 2—source data 1.
 
 It should be noted that the majority of recorded neurons were pExc neurons (WT: 366 neurons, 93.6%, IRSp53-KO: 359 neurons, 91.1%), and that relatively few recordings were obtained from pInh neurons (WT: 17 neurons, 4.3%, IRSp53-KO: 24 neurons, 6.1%). Because IRSp53 is expressed primarily in the excitatory pyramidal (not inhibitory) neurons of the cortex (Burette et al., 2014), we hypothesized that the main effects of IRSp53 loss are seen in pExc neurons. Therefore, only pExc neurons were used for further analysis. Of all pExc neurons recorded, only those with a mean firing rate ≥0.5 Hz were included for further analysis in order to avoid low sampling errors arising from the inclusion of neurons with low firing rates (Supplementary file 1).
 
-## Fewer social-responsive pExc mPFC neurons in IRSp53-KO mice
+### Fewer social-responsive pExc mPFC neurons in IRSp53-KO mice
 
 We compared target-dependent mPFC neuronal activity between IRSp53-KO and WT mice to test whether the social behavioral deficit found in IRSp53-KO mice is mirrored in mPFC neuronal activity. For this, we analyzed neuronal activity during the three linear chamber sessions (E-E, first S-O, and second S-O sessions) and determined empty, social, and object target-responsive neurons (termed empty, social, and object neurons hereafter) as those whose firing at the target sniffing zone differed significantly from that in the center zone (Figure 3A; see Methods).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig3-v2.jpg)
+
+**Figure 3.:** (A) Distributions of instantaneous firing rates (FR) during social sniffing and center zone (top) and the receiver operating characteristic curves (ROCs; bottom) of increasing (left) and decreasing (right) social neuron examples. (B) Average spike density functions (SDFs) of firing rate responses to empty (green), social (orange), and object (blue) targets (aligned to the onset of sniffing) for all social (S) neurons. Social neurons are divided by genotype (WT left, IRSp53-KO right) and response direction (increasing (+) top, decreasing (-) bottom). Total numbers of neurons are indicated at the upper right corner of each SDF. Shading indicates ± SEM. (C and D) Proportions of total social (C) and object (D) neurons (both increasing and decreasing neurons) out of the total recorded neurons. (*p<0.05, ns, not significant, Fisher’s exact test). (E) Venn diagram summary of empty (E), social (S), and object (O) neuronal proportions for WT (left) and IRSp53-KO (right) pExc neurons. Numbers indicate neuronal proportion % (n neurons). See Supplementary file 2 for statistics.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Average spike density functions (SDFs) of firing rate responses to object empty (green), social (orange), and object (blue) targets (aligned to the onset of sniffing) for all object (O; A) and empty (E; B) neurons. Target neurons are divided by genotype (WT left, IRSp53-KO right) and response direction (increasing (+) top, decreasing (-) bottom). Total numbers of neurons are indicated at the upper right corner of each SDF. Shading indicates ± SEM. (C) Proportion of total empty neurons out of the total recorded neurons. (ns, not significant, Fisher’s exact test).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) Scatterplot of firing responses (in z-score) to social (A) and object (B) targets and left (C) and right (D) sidedness during the first S-O session against those during the second S-O session. Solid lines indicate simple linear regressions for WT (black) and KO (red) neurons. (n=233 [WT-pExc] and 258 [KO-pExc]), ***p<0.001, ns, not significant, simple linear regression with slope comparison test (see Methods). (E and F) Firing rate response magnitude (in |z-score|) to social (E) and object (F) targets according to proximity. (n=198 [WT-pExc] and 214 [KO-pExc], ***p<0.001, ns, not significant, two-way RM-ANOVA). (G) Heatmap showing trial-by-trial activity (in z-score) of WT (top) and IRSp53-KO (bottom) increasing and decreasing social neurons during proximal social target interactions. (n=53 [WT-pExc] and 32 [KO-pExc]). (H and I) Trial consistency (%) during social (H) and object (I) interaction trials in social and object neurons, respectively. (n=99, 86 [social, object neurons WT-pExc] and 72, 83 [social, object neurons KO-pExc], ns, not significant, Mann-Whitney test, ###p<0.001 (above chance level), One sample t-test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 3—figure supplement 2—source data 1.
 
 In order to determine whether the classified social, object, and empty neurons increase or decrease their firing rates upon target sniffing, we generated the average spike density functions (SDFs) for WT and IRSp53-KO target neurons. We found both increasing and decreasing target neurons (i.e., those increasing and decreasing their firing rates upon target sniffing onset, respectively) in WT as well as IRSp53-KO mice (Figure 3B, Figure 3—figure supplement 1A and B).
 
@@ -74,13 +102,25 @@ A significantly lower proportion was classified as social neurons among IRSp53-K
 
 Reduction in social/non-social neuronal proportion in mPFC is a phenomenon that is shared by several autism mouse models, such as Shank2-KO (Lee et al., 2021a) and Cntnap2-KO mice (Levy et al., 2019), and therefore, may be causally related to the social impairment seen in IRSp53-KO mice.
 
-## Robust target-dependent responses of pExc mPFC neurons
+### Robust target-dependent responses of pExc mPFC neurons
 
 We then tested whether the classified target neurons respond consistently to specific targets across sessions and across trials. The firing responses of WT and IRSp53-KO mPFC pExc neurons to social, object, and sidedness were consistent across the first and second S-O sessions, as indicated by positively correlated z-scores across the two sessions (Figure 3—figure supplement 2A–D). When we compared the response magnitude of neurons concerning the proximity to targets, both WT and IRSp53-KO neurons showed significantly higher response magnitudes during proximal than distal interactions with social and object targets (Figure 3—figure supplement 2E and F). In addition, social neurons in the mPFC do not respond to all social interactions but rather display ‘trial-to-trial stochasticity’ (Liang et al., 2018). This stochasticity was also present in the increasing and decreasing social neurons in the WT and IRSp53-KO mPFC (Figure 3—figure supplement 2G). Both WT and IRSp53-KO target neurons displayed trial consistencies that are higher than 50%, which corroborates that the responses of social and object neurons to the targets do not occur by chance. Although the proportion of mPFC social neurons was reduced in IRSp53-KO mice, their consistencies in firing rate responses to proximal target interactions were comparable to that in WT mice (Figure 3—figure supplement 2H1).
 
-## Limited social versus object firing-rate discriminability in IRSp53-KO pExc mPFC neurons
+### Limited social versus object firing-rate discriminability in IRSp53-KO pExc mPFC neurons
 
 To test whether the firing-rate discriminability between social and object targets may also be limited in IRSp53-KO neurons, we compared social- versus object-target in-zone firing rates. The slopes of linear regression and the degrees of dispersion (indicated by 95% confidence interval) for the left versus right (L vs. R) in-zone firing rates in the E-E session were comparable between genotypes (Figure 4A). In contrast, the slopes of the linear regression lines relating social and object (S vs. O) firing rates were biased towards the social firing rate in both genotypes in the first and second S-O sessions, indicating preferential responses to social to object targets (Figure 4B, Figure 4—figure supplement 1A). Additionally, the confidence interval tended to be narrower for IRSp53-KO pExc neurons, especially in the first S-O session, compared to WT pExc neurons for the S versus O firing rates, suggestive of limited discriminability (Figure 4B). Consistently, the absolute difference in firing rate for S versus O (an indication of discriminability) in the first S-O session was significantly lower in IRSp53-KO pExc neurons than WT pExc neurons (Figure 4C). Nevertheless, IRSp53-KO pExc neurons could still discriminate between social and object targets significantly better compared to the left versus right side discrimination in the E-E session (Figure 4C). This result suggests that IRSp53-KO mice have the ability to recognize social and object stimuli, albeit in a reduced degree than WT mice.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig4-v2.jpg)
+
+**Figure 4.:** (A and B) Scatterplot of left in-zone firing rate (FRL) against right in-zone firing rate (FRR) during the E-E session (A) and social in-zone firing rate (FRS) against object in-zone firing rate (FRO) during the first S-O session (B) for WT and IRSp53-KO pExc neurons. Solid lines indicate simple linear regressions for WT (black) and KO (red) neurons. Shaded areas indicate the 95% confidence intervals for the WT (black) and KO (red) firing rates. Blue dashed lines are 45 degree lines. (n=233 [WT-pExc] and 258 [KO-pExc]), **p<0.01, ns, not significant, simple linear regression with slope comparison test (see Methods). (C) Absolute changes in left versus right in-zone firing rates (E-E session) and social versus object in-zone firing rates (first (fS-O) and second (sS-O) S-O sessions) for WT and IRSp53-KO pExc neurons. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, **p<0.01, ***p<0.001, ns, not significant, two-way RM-ANOVA with Sidak’s test). (D and E) Neural decoding of left versus right sidedness during the E-E session (D) and social versus object target during the first S-O session (E) as a function of ensemble size (left) and their decoding performance at maximum comparable ensemble size (indicated by blue dashed line) (right). Ensemble sizes vary due to the limitation of sniffing trials in some experiments (minimum trial number for the SVM decoding was set to 10 per target). Note that the decoding accuracies of WT (pink) and KO (grey) neurons remain similar to chance level (50%) across all tested ensemble sizes after target shuffling. (n=100 decoding trials for 170 and 109 pExc neurons in the E-E and first S-O sessions, respectively [WT] and 100, 158, 58 [KO], ***p<0.001, ns, not significant, Mann-Whitney test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Scatterplot of social in-zone firing rate (FRS) against object in-zone firing rate (FRO) during the second S-O session for WT and IRSp53-KO pExc neurons. Solid lines indicate simple linear regressions for WT (black) and KO (red) neurons. Shaded areas indicate the 95% confidence intervals for WT (black) and KO (red) firing rates. Blue dashed lines are 45 degree lines. (n=233 [WT-pExc] and 258 [KO-pExc], **p<0.01, simple linear regression with slope comparison test). (B–D) Histogram plotting the decoding performance of left versus right sidedness during the E-E session (B) social versus object target during the first S-O session (C) and second S-O session (D) in individual neurons (left) and the decoding performance of correct neurons (right). The correct neurons were defined as those with decoding accuracies >55% because decoding accuracies fall within 45% and 55% after target shuffling. (n=78, 73, and 47 correct pExc neurons in the E-E, first S-O, and second S-O sessions, respectively [WT] and 69, 34, and 37 [KO], **p<0.01, ns, not significant, Mann-Whitney test (B, D) and unpaired t-test (C)). (E) Neural decoding of social versus object target during the second S-O session as a function of ensemble size (left) and their decoding performance at maximum comparable ensemble size (indicated by blue dashed line) (right). (n=100 decoding trials for 94 pExc neurons in the second S-O session [WT] and 100, 67 [KO], ***p<0.001, ns, not significant, Mann-Whitney test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 4—figure supplement 1—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A and B) Neural decoding of social versus object target during proximal (A) and distal (B) target interaction in the first S-O session as a function of ensemble size (left) and their decoding performance at maximum comparable ensemble size (right). The blue dashed line indicates the maximum comparable ensemble size based on the first S-O session. Ensemble sizes over 80 neurons were not shown for better comparison between proximal and distal conditions. (n=100 decoding trials for 74 and 145 pExc neurons during proximal and distal interactions [WT] and 100, 89, 177 [KO], ***p<0.001, Mann-Whitney test). (C and D) Neural decoding of social versus object target during proximal (C) and distal (D) target interaction in the second S-O session as a function of ensemble size (left) and their decoding performance at maximum comparable ensemble size (right). The blue dashed line indicates the maximum comparable ensemble size based on the first S-O session. Ensemble sizes over 50 neurons were not shown for better comparison between proximal and distal conditions. (n=100 decoding trials for 66 and 145 pExc neurons during proximal and distal interactions [WT] and 100, 151, 151 [KO], ***p<0.001, ns, not significant, Mann-Whitney test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 4—figure supplement 2—source data 1.
 
 We next performed both single cell and ensemble decoding analyses using the support vector machine to further assess the ability of neurons to discriminate between social and object targets. The decoding performances of individual neurons and neuronal population were both comparable between genotypes for left versus right sidedness discriminability in the E-E session (Figure 4D, Figure 4—figure supplement 1B). In contrast, these decoding performances were significantly lower in IRSp53-KO neurons for social versus object target discriminability in the first S-O session (Figure 4E, Figure 4—figure supplement 1C). In the second S-O session, although the individual neurons’ decoding performances were comparable between genotypes, population decoding performances were significantly poorer in IRSp53-KO than WT neurons (Figure 4—figure supplement 1D and E).
 
@@ -88,9 +128,21 @@ Moreover, we examined whether the discriminability between social and object tar
 
 These results collectively suggest weakened social versus object discriminability in IRSp53-KO pExc mPFC neurons at both individual neuronal and population levels.
 
-## Limited firing-rate range and variability of IRSp53-KO pExc mPFC neurons
+### Limited firing-rate range and variability of IRSp53-KO pExc mPFC neurons
 
 The pExc mPFC neurons of IRSp53-KO mice showed significantly higher mean firing rates than those of WT mice during the initial 5-min rest period (Figure 2D), but comparable mean firing rates during the 30 min linear chamber test period (Figure 5B). However, we noticed in our preliminary analysis that temporal profiles of instantaneous firing rate (3 s time-bin advanced in 1 s steps) differ substantially between WT and IRSp53-KO neurons during the 30 min linear chamber test, as shown by representative examples in Figure 5A.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig5-v2.jpg)
+
+**Figure 5.:** (A) Instantaneous firing-rate traces of representative WT (top) and IRSp53-KO (bottom) pExc neurons (3 s window advanced in 1 s steps) during a sample linear chamber experiment (30 min). Solid horizontal lines indicate the overall mean firing rates (μ). Shaded regions indicate one standard deviation ($\sigma$, sigma). (B) Mean firing rate of WT and IRSp53-KO pExc neurons during the 30 min linear chamber test. (n=233 [WT-pExc] and 258 [KO-pExc], ns, not significant, Mann-Whitney test). (C) Firing-rate ranges (maximum – minimum instantaneous firing rate) of WT and IRSp53-KO pExc neurons during the linear chamber test (n=233 [WT-pExc] and 258 [KO-pExc], **p<0.01, Mann-Whitney test). (D) Mean (± SEM) histograms of normalized instantaneous firing rate during the linear chamber test. For each neuron, instantaneous firing rates were normalized by its maximum instantaneous firing rates. (n=233 [WT-pExc] and 258 [KO-pExc], **p<0.01, ***p<0.001, ns, not significant, two-way RM-ANOVA with Bonferroni’s multiple comparisons test). (E) Sigma values of the instantaneous firing rates of WT and IRSp53-KO pExc neurons during the linear chamber test. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, Mann-Whitney test). (F) Log-scale scatter plot of sigma values against mean firing rates of WT and IRSp53-KO pExc neurons during the linear chamber test. Solid lines indicate simple linear regression of WT (black) and KO (red) values. (n=233 [WT-pExc] and 258 [KO-pExc], ***p<0.001, ns, not significant, slope comparison test (see Methods)). (G) Sigma values for the instantaneous firing rates of WT (left) and IRSp53-KO (right) pExc neurons during the E-E, first S-O (fS-O), and second S-O (sS-O) sessions of the linear chamber test. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, ns, not significant, Friedman test followed by Dunn’s multiple comparisons test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A and B) Minimum (A) and maximum (B) instantaneous firing rates of WT and IRSp53-KO pExc neurons during the 30 min linear chamber test. (n=233 [WT-pExc] and 258 [KO-pExc], **p<0.01, Mann-Whitney test). (C) Firing-rate ranges of WT (left) and IRSp53-KO (right) pExc neurons during the E-E, first S-O (fS-O), and second S-O (sS-O) sessions of the linear chamber test. (n=233 [WT-pExc] and 258 [KO-pExc], **p<0.01, ns, not significant, Friedman test). (D–G) Comparison of firing-rate ranges of WT and IRsp53-KO pExc neurons during 5 min rest period (D), E-E (E), first S-O (F), and second S-O (G) sessions of the linear chamber test. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, **p<0.01, ns, not significant, Mann-Whitney test). (H) Mean (± SEM) sigma values of instantaneous firing rates during the 30 min linear chamber test calculated using different time-bin sizes (0.25–5 s). Window sizes were set to be the same as the time-bin size. Note that the overall sigma values of IRSp53-KO neurons are significantly smaller than those of the WT neurons for all analyzed time-bin sizes. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, ***p<0.001, ns, not significant, two-way RM-ANOVA). (I–L) Sigma values for the instantaneous firing rates (3 s window advanced in 1 s steps) during the 5-min rest period (I), E-E (J), first S-O (K), and second S-O (L) sessions in WT and IRSp53-KO pExc neurons. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, **p<0.01, ns, not significant, Mann-Whitney test). (M) Mean instantaneous firing rates of WT (left) and IRSp53-KO (right) pExc neurons during the E-E, first S-O, and second S-O sessions of the linear chamber test. (n=233 [WT-pExc] and 258 [KO-pExc], ns, not significant, Friedman test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 5—figure supplement 1—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Definition of in-zone and center zone. The first and fifth of the equally divided five 9-cm-long areas were defined as in-zones (I1 and I2, respectively) while the third area was defined as the center zone (C). For each neuron, the maximum Δ firing rate is defined as the higher value among the firing rate differences between the center zone and two in-zones (left and right for E-E session, social and object for S-O sessions). (B–D) Maximum Δ firing rates of WT and IRSp53-KO pExc neurons during the E-E (B), first S-O (C), and second S-O (D) sessions. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, ns, not significant, Mann-Whitney test). (E) Normalized maximum Δ firing rates of WT and IRSp53-KO pExc neurons during the E-E, first S-O (fS-O), and second S-O sessions (sS-O). Normalized maximum Δ firing rates = max (|(FRI1 - FRC) / (FRI1 +FRC)|, |(FRI2 - FRC) / (FRI2 +FRC)|). (n=233 [WT-pExc] and 258 [KO-pExc], ***p<0.001, ns, not significant, two-way RM-ANOVA). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 5—figure supplement 2—source data 1.
 
 Further examinations of instantaneous firing rate revealed that the maximum instantaneous firing rate during the linear chamber test was significantly lower in IRSp53-KO pExc neurons than WT pExc neurons. In contrast, there was a trend for higher minimum instantaneous firing rates in IRSp53-KO pExc neurons than WT pExc neurons (p=0.0544; Figure 5—figure supplement 1A and B). Consequently, the dynamic range of firing rate (the difference between the maximum and minimum instantaneous firing rates) during the linear chamber test was significantly narrower for IRSp53-KO pExc neurons than WT pExc neurons (Figure 5C).
 
@@ -102,31 +154,51 @@ Given the reduced firing-rate range, we hypothesized that the firing rate variab
 
 The reduced variability was specific to the recordings from social conditions but not the rest period and non-social conditions (Figure 5—figure supplement 1I–L). Similar to firing-rate range, WT neurons showed increased variability in instantaneous firing rate during the first S-O session compared to the E-E session, while IRSp53-KO neurons showed similar levels of variability across the three sessions (Figure 5G). The increase in the variability of IRSp53-KO neuronal activity during the first S-O session could not be accounted for by the difference in mean firing rate (Figure 5—figure supplement 1M). These results collectively indicate that excitatory mPFC neurons in IRSp53-KO mice have reduced firing-rate range and variability.
 
-## Weak responses to social and object targets in IRSp53-KO pExc mPFC neurons
+### Weak responses to social and object targets in IRSp53-KO pExc mPFC neurons
 
 Limited firing-rate range and variability may indicate limited firing-rate changes in response to social and object targets in IRSp53-KO pExc mPFC neurons. We defined the maximum Δ firing rate of each session as the maximum absolute difference in mean firing rates between the center zone (FRc) and the two in-zones (FRI1, FRI2; left and right for E-E session, social and object for S-O sessions) (Figure 5—figure supplement 2A).
 
 Compared to WT mice, IRSp53-KO mice displayed a decreased maximum Δ firing rate only in the first S-O session of the linear-chamber test, but not in the E-E or second S-O session (Figure 5—figure supplement 2B–D). IRSp53-KO pExc neurons showed a general decrease in the normalized maximum Δ firing rate across all three sessions (Figure 5—figure supplement 2E). It is notable that the response magnitudes of both WT and IRSp53-KO pExc neurons were the highest during the first S-O session, in response to novel social and object targets. This fits well with our behavioral data, in which only WT mice, but not IRSp53-KO mice, show social preference in the first, but not second, S-O session (Figure 1D–F, Figure 1—figure supplement 2A–C).
 
-## Impaired burst firing in IRSp53-KO pExc mPFC neurons
+### Impaired burst firing in IRSp53-KO pExc mPFC neurons
 
 Given that firing-rate range and variability is reduced in IRSp53-KO pExc neurons, we reasoned that there may be a shift in the distribution of interspike intervals (ISIs) in IRSp53-KO pExc neurons. Contrary to the comparable levels of average ISI histograms between WT and IRSp53-KO pExc neurons at rest, those during the linear chamber test varied across genotype. In particular, there was a pronounced reduction in the proportion of ISIs ≤10ms in IRSp53-KO pExc neurons (Figure 6A and B). This result suggests that the ability to exhibit an abrupt increase in firing rate may be impaired in IRSp53-KO pExc neurons.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig6-v2.jpg)
+
+**Figure 6.:** (A and B) Mean (± SEM) histogram of interspike intervals (ISI) during the 5-min rest (A) and the 30 min linear chamber (B) periods. Dashed lines denote the peaks of mean ISI distributions for WT (black) and IRSp53-KO (red) neurons (8ms [WT] and 10ms [KO] for rest, 12ms [WT] and 16ms [KO] for linear chamber periods). (n=233 [WT-pExc] and 258 [KO-pExc]). (C) Burst proportion (proportion of burst spikes out of total spikes) of WT and IRSp53-KO pExc neurons during the rest and linear chamber (LC) periods for burst ISI threshold of 10ms. (n=233 [WT-pExc] and 258 [KO-pExc], **p<0.01, ***p<0.001, ns, not significant, two-way RM-ANOVA with Sidak’s multiple comparisons test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–E) Burst proportions of WT and IRSp53-KO pExc neurons during the rest (A) and linear chamber (B) periods, as well as, E-E (C), first (D) and second (E) S-O sessions, for different burst ISI thresholds. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, **p<0.01, ***p<0.001, ns, not significant, two-way RM-ANOVA with Sidak’s multiple comparisons test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 6—figure supplement 1—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Mean (± SEM) histogram of interspike intervals (ISI) during 30 min linear chamber sessions after burst spike (ISI ≤10ms) elimination. Note that the peaks of mean ISI distributions for WT (12ms, green) and IRSp53-KO (16ms, blue) neurons are indicated by dashed lines. (n=233 [WT-pExc] and 258 [KO-pExc]). (B and C) Firing-rate (FR) variability (B) and range (C) during 30 min linear chamber sessions after burst spike elimination. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, **p<0.01, Mann-Whitney test). (D and E) Maximum Δ firing rates of WT and IRSp53-KO pExc neurons during the E-E (D) and first S-O (E) sessions after burst spike elimination. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, Mann-Whitney test). (F and G) Neural decoding of left versus right sidedness during the E-E session (F) and social versus object target during the first S-O session (G) as a function of ensemble size (left) and their decoding performance at maximum comparable ensemble size (indicated by blue dashed line) (right) after burst spike elimination. Note that the decoding accuracies of WT (pink) and KO (grey) neurons remain similar to chance level (50%) across all tested ensemble sizes after target shuffling. (n=100 decoding trials for 170, 109 pExc neurons before burst elimination and 168, 107 pExc neurons after burst elimination in the E-E and first S-O sessions, respectively [WT] and 100, 158, 58, 157, 57 [KO], *p<0.05, ***p<0.001, ns, not significant, two-way RM-ANOVA). (H) Mean (± SEM) histogram of interspike intervals (ISI) during 30 min linear chamber sessions after tonic spike (ISI >10ms) elimination. Note that the peaks of mean ISI distributions for WT (10ms, brown) and IRSp53-KO (10ms, purple) neurons are indicated by dashed lines. (n=233 [WT-pExc] and 258 [KO-pExc]). (I and J) Firing-rate variability (I) and range (J) during 30 min linear chamber sessions after tonic spike elimination. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, Mann-Whitney test) (K and L) Maximum Δ firing rates of WT and IRSp53-KO pExc neurons during the E-E (K) and first S-O (L) sessions after tonic spike elimination. (n=233 [WT-pExc] and 258 [KO-pExc], *p<0.05, Mann-Whitney test). (M and N) Neural decoding of left versus right sidedness during the E-E session (M) and social versus object target during the first S-O session (N) as a function of ensemble size (left) and their decoding performance at maximum comparable ensemble size (right) after tonic spike elimination. (n=100 decoding trials for 50, 54 pExc neurons before burst elimination and 50, 32 pExc neurons after burst elimination in the E-E and first S-O sessions, respectively [WT] and 100, 50, 54, 32, 14 [KO], ***p<0.001, ns, not significant, two-way RM-ANOVA with Tukey’s multiple comparisons test). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 6—figure supplement 2—source data 1.
+
 Because there was a shift in the ISI distribution of IRSp53-KO pExc neurons, we reasoned that burst firing might be reduced in IRSp53-KO mice. We defined burst spikes as those with short ISIs (≤10ms) (Figure 6B). We found that burst firing increased significantly during the linear chamber-exploring state compared to the resting state in WT pExc neurons. Such change, however, was not observed in IRSp53-KO pExc neurons (Figure 6C). Burst firing did not differ significantly between WT and IRSp53-KO pExc neurons during the rest period, but was significantly lower in IRSp53-KO than WT pExc neurons during the linear chamber exploration (Figure 6C). The same conclusion was obtained when we increased the cut-off value for burst spikes up to 30ms (Figure 6—figure supplement 1A and B). Similar to the firing-rate range, decreased burst firing in IRSp53-KO neurons was observed in both social and non-social conditions (Figure 6—figure supplement 1C–E). Taken together, these results indicate that KO pExc neurons show diminished burst firing.
 
-## Burst firing is sufficient for discrimination between social and object targets
+### Burst firing is sufficient for discrimination between social and object targets
 
 To assess the role of burst firing in firing rate variability and social information encoding, we eliminated the burst spikes (ISI ≤10ms) from the spike trains of WT and IRSp53-KO mPFC pExc neurons (Figure 6—figure supplement 2A). After burst elimination, the variability, firing-rate range, and response magnitude to social and object targets during the first S-O session remained to be reduced in IRSp53-KO neurons (Figure 6—figure supplement 2B–E). The abilities to discriminate between left and right sidedness and social and object targets were also maintained in both WT and IRSp53-KO neurons, although the decoding performance of IRSp53-KO neurons still remained to be lower than that of WT neurons for target discrimination (Figure 6—figure supplement 2F and G).
 
 Although these results seem to suggest the unimportance of burst on social information encoding, it is well known that burst spikes increase the probability of post-neuronal spike more effectively than tonic spikes (Krahe and Gabbiani, 2004; Lisman, 1997), and that simple elimination of burst spikes, post-recording, do not eliminate the real-time effects of burst on neighboring neurons. We therefore alternatively eliminated the tonic spikes (ISI >10ms) to assess whether burst alone is sufficient to support the observed genotypic differences in firing rates (Figure 6—figure supplement 2H). The spike variability, firing-rate range, and response magnitude to social and object targets were still reduced in the KO neurons after tonic spike elimination (Figure 6—figure supplement 2I–L). In addition, the decoding performance between social and object targets was maintained in both WT and IRSp53-KO neurons, and still lower in the KO neurons (Figure 6—figure supplement 2N). Interestingly, the left versus right side discriminability during the E-E session was maintained by the burst spikes in WT neurons but not in KO neurons, suggesting that burst spikes may also play a role in side discriminability (Figure 6—figure supplement 2M). While the reduced burst in IRSp53-KO neurons may affect left versus right side discriminability, tonic spikes may be sufficient for overcoming this weakness. On the other hand, tonic spikes may not be sufficient to overcome the weakened social versus object discriminability in KO neurons.
 
-## Memantine treatment increases burst firing in IRSp53-KO mPFC neurons
+### Memantine treatment increases burst firing in IRSp53-KO mPFC neurons
 
 A previous study has shown that treatment of memantine, an NMDA receptor antagonist, rescues social deficits in IRSp53-KO mice (Chung et al., 2015). We thus tested if memantine could affect burst firing in the IRSp53-KO mPFC using electrophysiological experiments on brain slice preparations. We did not attempt chronic in vivo recordings in awake animals because of the acute nature of memantine treatment involving a short half-life. We targeted layer 5 neurons because mPFC deep layers have been implicated in cognitive and social functions in mouse models of psychiatric disorders (Brumback et al., 2018; Kim et al., 2020a; Murugan et al., 2017; Paulsen et al., 2022; Peixoto et al., 2016; Phillips et al., 2019; Rapanelli et al., 2021; Willsey et al., 2013; Yamamuro et al., 2020; Yan and Rein, 2022).
 
 When neuronal firing was induced by current injection in layer 5 pyramidal neurons in the prelimbic mPFC, WT and IRSp53-KO neurons did not display a genotype difference in baseline firing (Figure 7—figure supplement 1A). In addition, there were no genotype differences in action potential (AP)-related parameters, including input resistance, AP threshold, AP amplitude, full width at half maximum (FWHM), and afterhyperpolarization (AHP) amplitude (Figure 7—figure supplement 1B–F). Interspike interval (ISI) analysis indicated a decreasing tendency of burst firing (ISI <10ms) in IRSp53-KO neurons, as indicated by burst proportion (proportion of spikes in bursts) (Figure 7—figure supplement 1G and H), similar to the results from in vivo recording (Figure 6).
 
 Upon memantine treatment, WT or IRSp53-KO neurons displayed largely unaltered current-firing curve and AP-related parameters, compared with untreated neurons (Figure 7B and C, Figure 7—figure supplement 1B–F). However, memantine induced increases in FWHM in both WT and IRSp53-KO neurons and in AP amplitude in IRSp53-KO but not WT neurons (Figure 7—figure supplement 1D and E), which may contribute to the increasing tendency of current-firing curve in memantine-treated WT and IRSp53-KO neurons (Figure 7B and C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig7-v2.jpg)
+
+**Figure 7.:** (A) Examples of firing traces induced by current injections in memantine-untreated and memantine-treated (+mem) WT and IRSp53-KO layer 5 pyramidal neurons in mouse brain slices containing the prelimbic region of the mPFC. Timings of the first three action potentials are indicated by raster plots (red). (B and C) Differences in intrinsic excitability between memantine-untreated and memantine-treated layer 5 pyramidal neurons in the prelimbic region of the mPFC in WT (B) and IRSp53-KO mice (C) (3–6 months), indicated by current-firing curves. (n=24 neurons from 3 mice [WT], 18, 3 [WT +mem], 23, 3 [KO], 17, 3 [KO +mem], ***p<0.001, ns, not significant, two-way RM-ANOVA). (D and E) Interspike interval (ISI) histogram (D) and burst firing patterns (E, current-burst firing curve) in layer 5 pyramidal neurons in the mPFC prelimbic region in WT mice (3–6 months) in the presence and absence of memantine treatment. ISIs below the dashed lines (10ms) are classified as burst firing. (n=24, 3 [WT], 18, 3 [WT +mem], **p<0.01, mixed-effects ANOVA). (F and G) ISI histograms (F) and burst firing patterns (G, current-burst firing curve) in layer 5 pyramidal neurons in the mPFC prelimbic region in IRSp53-KO mice (3–6 months) in the presence and absence of memantine treatment. ISIs below the dashed lines (10ms) are classified as burst firing. (n=23, 3 [KO], 17, 3 [KO +mem], *p<0.05, mixed-effects ANOVA). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74998/elife-74998-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Baseline intrinsic excitability in layer 5 pyramidal neurons in the prelimbic region of the mPFC in WT and IRsp53-KO mice (3–6 months), indicated by current-firing curve. (n=24 neurons from 3 mice [WT], 23, 3 [KO], ns, not significant, two-way RM-ANOVA). (B–F) Action potential (AP)-related parameters in layer 5 pyramidal neurons in memantine-treated/untreated slices containing the mPFC prelimbic region in WT and IRSp53-KO mice (3–6 months), as indicated by input resistance (B), AP threshold (C), AP amplitude (D), full width at half maximum (FWMH) (E), and afterhyperpolarization (AHP) amplitude (F). (n=24, 3 [WT], 18, 3 [WT +mem], 23, 3 [KO], 17, 3 [KO +mem], *p<0.05, **p<0.01, ns, not significant, two-way RM-ANOVA with Sidak’s multiple comparisons test). (G and H) ISI histograms (G) and burst firing patterns (H, current-burst firing curve) in layer 5 pyramidal neurons in the mPFC prelimbic region in IRSp53-KO mice (3–6 months) in the absence of memantine treatment. ISIs below the dashed lines (10ms) are classified as burst firing. (n=24, 3 [WT], 23, 3 [KO], ns, not significant, mixed-effects ANOVA). See Supplementary file 2 for statistics. Numerical data used to generate the figure are available in the Figure 7—figure supplement 1—source data 1.
 
 Importantly, memantine treatment induced opposite changes in burst proportion in WT and IRSp53-KO neurons; memantine decreased burst proportion in WT neurons, whereas it increased burst proportion in IRSp53-KO neurons (Figure 7D–G).
 
@@ -156,33 +228,148 @@ In summary, our results indicate that IRSp53-KO mice display elevated spontaneou
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>IRSp53 (Baiap2)</td>
+      <td>Kim et al., 2009</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut</td>
+      <td>Lauer et al., 2022; Mathis et al., 2018</td>
+      <td>Ver 2.0, 2.2</td>
+      <td>Used for tracking of mice body parts.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision XT 13</td>
+      <td>Noldus https://www.noldus.com/</td>
+      <td>Ver 13</td>
+      <td>Used for measuring the locomotion of mice.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9.0</td>
+      <td>GraphPad https://www.graphpad.com/</td>
+      <td>Ver 9.0</td>
+      <td>Used for all statistics used in the current study.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks https://www.mathworks.com/</td>
+      <td>Ver 2020a</td>
+      <td>Used for spike analysis.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MClust 4.0</td>
+      <td>David Redish http://redishlab.neuroscience.umn.edu/MClust/MClust.html</td>
+      <td>Ver 4.0</td>
+      <td>Used for manual single-unit isolation.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex</td>
+      <td>Molecular devices</td>
+      <td>Ver 10.7</td>
+      <td>Used for recording electrophysiological signals from cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit</td>
+      <td>Molecular devices</td>
+      <td>Ver 10.7</td>
+      <td>Used for analysing electrophysiological data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pCLAMP</td>
+      <td>Molecular devices</td>
+      <td>Ver 10</td>
+      <td>Used for recording electrophysiological signals from cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IntrinsicVIEW</td>
+      <td>https://github.com/parkgilbong/IntrinsicVIEW; Kim and Kim, 2020</td>
+      <td>N/A</td>
+      <td>Used for intrinsic property analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Digital lynx SX</td>
+      <td>Neuralynx https://neuralynx.com/</td>
+      <td></td>
+      <td>Used for in vivo single-unit recording</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Multiclamp 700B</td>
+      <td>Molecular devices</td>
+      <td></td>
+      <td>Used for recording electrophysiological signals from cells</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Digidata 1550</td>
+      <td>Molecular devices</td>
+      <td></td>
+      <td>Used for recording electrophysiological signals from cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Memantine hydrochloride ≥98% (GC)</td>
+      <td>Sigma</td>
+      <td>M9292</td>
+      <td>Used for slice electrophysiology experiment</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult (3–6 months old) C57B/6 J male WT (n=6) and IRSp53-KO (n=8) mice were used for single-unit recording and slice electrophysiology. Mice were fed ad libitum and maintained under 12 hr light/dark cycle (light period 1 am–1 pm). All experiments were conducted during the dark phase (1 pm–1 am) of the light/dark cycle. The mouse facility and experimental setting were always maintained at 21 °C and 50–60% humidity. Mice were maintained according to the Animal Research Requirements of KAIST. All experiments were conducted with approval from the Committee on Animal Research at Korea Institute of Science and Technology (approval number KA2020-94).
 
-## Linear-chamber social-interaction test
+### Linear-chamber social-interaction test
 
 Before linear-chamber social-interaction test (Lee et al., 2016), the subject mouse was placed in a white 7.5 cm radius x 15 cm opaque acryl container for neural recording at rest for 5 min. The mouse was then allowed to explore the 45 cm x 10 cm x 21 cm linear chamber with empty-empty chambers (E-E session), social and object chambers (first S-O session), and then the same object-social chambers with the side exchanged (second S-O session), for 10 minutes each. The social and object targets used for each experiment were always novel. Novel male 129/Sv mice of similar age were used as the social target. For the first S-O session, the placement of social and object targets into left or right chambers were randomly chosen. All recordings were conducted at 30 lux. A total of 12 recording experiments were conducted for each mouse, with 3 days of isolation interval.
 
-## Mice movement tracking
+### Mice movement tracking
 
 Mice movements were monitored by a digital camera mounted on the ceiling, directly above the linear chamber assay. The position of the subject mice (nose, right and left ears, body center, and tail-base), social target (nose and body center), and four corner points of the linear chamber were trained using a pose estimation software DeepLabCut (version 2.0 Mathis et al., 2018 and 2.2 Lauer et al., 2022).
 
-## Behavioral analysis
+### Behavioral analysis
 
 Sniffing time was defined as the time when the nose point is within 3 cm from the face of each target chamber. In-zone time was defined as the time when the body center (midpoint between nose point and tail base) is within 9 cm from the face of each target chamber. Social and object target interactions were further classified into proximal and distal interactions. Social proximal interaction was when the distance between the noses of the subject mouse and the social target was within 0 and 2.5 cm, while social distal interaction was when the nose-to-nose distance was within 2.5 and 10 cm. For object interaction, the distance between subject mouse’s nose and the center of object chamber face was assessed.
 
 The distance moved was based on the body center of the subject mice and automatically measured via video tracking software, Ethovision XT 13 (Noldus Information Technology).
 
-## Single-unit recording
+### Single-unit recording
 
 Eight tetrodes were implanted in the mPFC (four tetrodes per hemisphere; 1.7–2.1 mm anterior and 0.1–0.5 mm lateral from bregma, and 1.5–2.3 mm ventral from brain surface). 36-channel electrode interface board (EIB-36; Neuralynx, Bozeman, MT, USA) and hyperdrive (modified version of Flex drive from Open Ephys) were used. Mice were subjected to 3 days of handling (10 min each day) after 1 week of recovery from surgery. At first exposure to the linear chamber test, mice were habituated to the environment and the tether but without recording. After habituation, mice were subjected to 12 linear-chamber experiments with recording. 10,000 x amplified single-unit recording signals with 32 kHz sampling frequency were filtered using a bandpass filter of 600–6000 Hz. Signals were recorded via Digitalynx (hardware; Neuralynx, Bozeman, MT, USA) and Cheetah data-acquisition system (software version 5.0; Neuralynx, Bozeman, MT, USA) and stored in a personal computer. In order to record different units at each recording experiment, the positions of tetrodes were lowered by 62.5 µm after the recording.
 
-## Histology
+### Histology
 
 After the 12th recording, mice were deeply anesthetized and the locations of the tetrodes were marked by electrolytic lesion (100 µA unipolar current for 7 s for each electrode) and brains were extracted and perfused in 4% Paraformaldehyde (PFA) solution for at least 72 hr. The fixed brains were sliced coronally (50 µm) using a vibratome (VT1000; Leica, Buffalo Grove, IL, USA), stained with DAPI, and the positions of lesions were assessed by post hoc histological evaluation using a confocal microscope (LSM780; Carl Zeiss, Oberkochen, Germany).
 
-## Spike analysis
+### Spike analysis
 
 Single-unit spike clusters were isolated manually by spike waveform features, such as, energy, peak, valley, and principal components, using MClust (version 4.4, available online at http://redishlab.neuroscience.umn.edu/mclust/MClust.html; credits to A. David Redish). Only units with isolation distance above 25 and L-ratio below 0.1 were used for analysis.
 
@@ -190,7 +377,7 @@ Only valid sniffing trials, valid in-zone (and center zone) trials, and valid pr
 
 Except for the comparison of mean firing rate at rest (total number of spikes within 5 min resting duration), only pExc neurons with the average firing rate of ≥0.5 Hz during the 30 min linear chamber assay were used for further analysis. After ≥0.5 Hz filtration, the total number of pExc neurons were WT n=233 neurons from 6 mice and IRSp53-KO n=258 neurons from 8 mice (see Supplementary file 1 for details).
 
-## Target (empty, social, object) neuronal proportion analysis
+### Target (empty, social, object) neuronal proportion analysis
 
 For each neuron, the valid sniffing bouts towards each of empty (E), social (S), and object (O) targets were divided into 0.5 s time-bin and its instantaneous firing rates were calculated. The instantaneous firing rates at the center zone across the E-E, first S-O and second S-O sessions were also calculated. To calculate the area under the receiver operating characteristic curves (auROCs), we generated histograms comparing the distribution of instantaneous firing rates across target sniffing trials and the distribution of instantaneous firing rates at the center zone (Britten et al., 1992; Li et al., 2017). The target sniffing and center zone firing rate distributions were compared by moving a threshold from minimum to the maximum firing rate (x-axis of the histogram). The range of threshold was divided into 100 bins. ROC curves were generated by plotting the probability that the target sniffing firing rate was greater than the threshold against the probability that the center zone firing rate was greater than the threshold. The calculated auROCs (0–1.0) indicate the response of each neuron to targets relative to the center zone. Neurons with less than 40 instantaneous firing rates (i.e. shorter than 20 s) for any targets or center zone were removed from analysis.
 
@@ -198,31 +385,31 @@ We also randomly shuffled these target sniffing and center zone instantaneous fi
 
 For generating spike density functions (SDFs), firing rates of each neuron were calculated in 250 ms bins (from –1.5 sec to 3 s after the onset of target sniffing) and averaged across the sniffing trials. For the averaged SDF of target neurons, the averaged firing rates of individual neurons were normalized by their maximum firing rate, and then averaged across all target neurons.
 
-## Target neuron consistency analysis
+### Target neuron consistency analysis
 
-To analyze the consistency of neuronal response to the targets across sessions, the z-scores for social and object targets and left and right sidedness in the first S-O session were plotted against those in the second S-O session and their correlation were tested. The z-scores for each neuron were defined as (FRT - µC)/σ C, in which FRT is the mean firing rate during sniffing of each target (E, S, or O), while µC and σC are the mean and one standard deviation (SD) of the instantaneous firing rates at the center zone, respectively.
+To analyze the consistency of neuronal response to the targets across sessions, the z-scores for social and object targets and left and right sidedness in the first S-O session were plotted against those in the second S-O session and their correlation were tested. The z-scores for each neuron were defined as (FRT - µC)/$\sigma$ C, in which FRT is the mean firing rate during sniffing of each target (E, S, or O), while µC and $\sigma$C are the mean and one standard deviation (SD) of the instantaneous firing rates at the center zone, respectively.
 
 For examining the effect of proximity on magnitude of firing rate response to the targets, the absolute z-scores during proximal and distal interactions were calculated for both S and O targets, normalized to the firing rate at the center zone.
 
 Trial-to-trial consistency (%) of neuronal response to targets was calculated for social and object neurons. For each target neuron, z-scores were calculated for each sniffing trial (from onset of interaction to the end). Trial consistency of each increasing and decreasing target neuron was evaluated through calculating the percentage of trials with a positive or negative z-score, respectively.
 
-## Neural decoding of target via the support vector machine (SVM)
+### Neural decoding of target via the support vector machine (SVM)
 
 Single and population neuronal decoding of targets were assessed by SVM classifier. For individual neuron analysis, 10 left and 10 right sniffing trials (for E-E session) or 10 social and 10 object sniffing trials (for S-O session) were randomly selected. We adopted leave-one-out cross validation, in which a single trial was removed from each of the two groups (left and right groups or social and object groups) and tested for prediction. Based on the firing rates of the remaining 18 sniffing trials (training trials), we predicted which side (left or right) or target (social or object) the 2 removed trials (test trials) belong to. Each of the 10 trials was removed one at a time for prediction. For each neuron, this process was repeated 100 times, and the average prediction accuracy (%) was calculated. Correct neurons were defined as neurons with a decoding accuracy >55% (above chance level).
 
 For population decoding, given number of neurons were randomly selected according to the ensemble size and their trials were combined for decoding analysis. This process of random selection of neurons was repeated 100 times to derive 100 decoding accuracy values per ensemble size. Since at least 10 sniffing trials were required for each group, neurons with less than 10 sniffing trials for any of left and right sidedness or social and object targets were removed from analysis. We have modified an open source code (Bae et al., 2021), which uses MATLAB ‘fitcsvm’ function for SVM decoding.
 
-## Instantaneous firing rate and firing rate variability analysis
+### Instantaneous firing rate and firing rate variability analysis
 
 For instantaneous firing rate analysis, 30 min linear chamber sessions were divided into 1800 time-bins (3 s time-bin of 1 s steps). Firing rate range is the difference between maximum and minimum instantaneous firing rate. The normalized instantaneous firing rate of each neuron was calculated by dividing each instantaneous firing rate by the maximum instantaneous firing rate. Sigma (Hz) for each neuron was defined as 1 standard deviation (1SD; includes 68% of data) value of the 1800 instantaneous firing rates.
 
-## Maximum Δ firing rate analysis
+### Maximum Δ firing rate analysis
 
 We divided the linear chamber into five equal-area sections (each 9 cm in length), and the firing rates in in-zone areas were compared to that of the center zone. Maximum Δ firing rate of a neuron is the maximum value between absolute firing rate differences between the firing rates at two in-zones and the firing rate at center zone ((|FRI1 – FRC| and |FRI2 – FRC|) where FRc is the firing rate at the center zone and FRI1 and FRI2 are the firing rates at two in-zones). The two in-zones are left and right in the E-E session, and social and object in the first and second S-O sessions.
 
 The normalized maximum Δ firing rate is the maximum value between absolute normalized firing rate differences between the firing rates at two in-zones and the firing rate at the center zone (|(FRI1 – FRC)/(FRI1 +FRC)| and |(FRI2 – FRC)/(FRI2 +FRC)|).
 
-## Burst analysis
+### Burst analysis
 
 Interspike interval (ISI) is the time between two consecutive spikes (in ms). For the average ISI histogram, ISI ≤200ms were extracted for each neuron, and the ISI histogram values of individual neurons were averaged.
 
@@ -230,7 +417,7 @@ Burst proportion (%) was defined as the number of burst spikes out of total spik
 
 For burst elimination, two spikes that make up ISIs ≤10ms were all eliminated. For tonic elimination, all spikes other than the two spikes that make up ISIs ≤10ms were all eliminated.
 
-## Slice electrophysiology
+### Slice electrophysiology
 
 Mice were anesthetized with isoflurane and decapitated. After brain dissection, coronal slices of medial prefrontal cortex (300 µm) were cut in ice-cold oxygenated sucrose-based cutting solution containing (in mM): 75 Sucrose, 76 NaCl, 2.5 KCl, 25 NaHCO3, 25 Glucose, 1.25 NaH2PO4, 7 MgSO4, 0.5 CaCl2 with pH 7.3, and 310 mOsm by using vibratome 7000smz-2 (Campden instruments, England), and then recovered in the same solution for 30 min at 33–34°C. Slices were then transferred to an incubation chamber filled with oxygenated artificial cerebral spinal fluid (ACSF) containing (in mM): 124 NaCl, 2.5 KCl, 1.3 MgCl2, 2.5 CaCl2, 1.0 NaH2PO4, 26.2 NaHCO3, 20 Glucose with pH 7.4 and 310–313 mOsm at room temperature and slices were kept in less than 7 hr before recordings.
 
@@ -244,12 +431,12 @@ For intrinsic excitability recording, Hyperpolarization currents and action pote
 
 To validate the effect of memantine on NMDA receptors in the pyramidal neurons, memantine 1 µM was bath applied with brain slices for at least 30 min. During bath application of memantine for over 10 min, if the holding current of a neuron exceeded 500 pA or the series resistance (Rs) was altered by 15%, that neuron was discarded from the analysis.
 
-## Analysis
+### Analysis
 
 Current-clamp recordings were analyzed with IntrinsicView (LabVIEW program made available at https://github.com/parkgilbong/IntrinsicVIEW; Kim, 2022 Kim and Kim, 2020). To evaluate intrinsic excitability, 500 ms-long depolarizing currents were injected from –300–400 pA with increments of 50 pA, and the mean firing rate was calculated based on the number of evoked APs in response to a depolarizing current injection. The input resistance (Rin) was determined by measuring the difference between the baseline and the steady-state (post-sag) Vm deflection generated by −100 pA square current. The voltage threshold of AP was defined by measuring the membrane potential at which its 1st derivatives exceeded 5 mV/ms. The differences between the AP threshold and the positive and negative peaks of the trace were defined as the AP amplitude and the AHP amplitude, respectively. The FWHM was defined as the time difference between two points that is equal to the half of the amplitude.
 
 For burst analysis, every two or more spikes that make up ISIs ≤10ms were classified as burst spikes. Burst proportion (%) was calculated for each neuron for every depolarizing currents and statistically compared between genotypes.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance was determined via repeated measures of Two-Way ANOVA with Sidak’s (or Bonferroni’s or Tukey’s) multiple comparisons test, Friedman test with Dunn’s multiple comparisons test, Mann-Whitney test, unpaired t-test, one sample t-test, simple linear regression with slope comparisons test, Chi-square test, and mixed-effects ANOVA (all via Prism 9.0; GraphPad, San Diego, CA, USA). Kolmogorov-Smirnov normality test was used to determine whether to use a parametric or nonparametric test. Graphs were generated by MATLAB 2020a (MathWorks; Natick, MA, USA) and Prism 9.0. All box and whisker plots show median, interquartile range, and 2.5 and 97.5 percentile. All violin plots show median and interquartile range. See Supplementary file 2 for details on statistics and source files for raw data.

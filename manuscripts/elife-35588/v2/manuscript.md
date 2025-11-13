@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.35588.001 Gradients of PtdIns4 P between organelle membranes and the endoplasmic reticulum (ER) are thought to drive counter-transport of other lipids via non-vesicular traffic. This novel pathway requires the SAC1 phosphatase to degrade PtdIns4 P in a ‘cis’ configuration at the ER to maintain the gradient. However, SAC1 has also been proposed to act in ‘trans’ at membrane contact sites, which could oppose lipid traffic. It is therefore crucial to determine which mode SAC1 uses in living cells. We report that acute inhibition of SAC1 causes accumulation of PtdIns4 P in the ER, that SAC1 does not enrich at membrane contact sites, and that SAC1 has little activity in ‘trans’, unless a linker is added between its ER-anchored and catalytic domains. The data reveal an obligate ‘cis’ activity of SAC1, supporting its role in non-vesicular lipid traffic and implicating lipid traffic more broadly in inositol lipid homeostasis and function.
+Gradients of PtdIns4P between organelle membranes and the endoplasmic reticulum (ER) are thought to drive counter-transport of other lipids via non-vesicular traffic. This novel pathway requires the SAC1 phosphatase to degrade PtdIns4P in a ‘cis’ configuration at the ER to maintain the gradient. However, SAC1 has also been proposed to act in ‘trans’ at membrane contact sites, which could oppose lipid traffic. It is therefore crucial to determine which mode SAC1 uses in living cells. We report that acute inhibition of SAC1 causes accumulation of PtdIns4P in the ER, that SAC1 does not enrich at membrane contact sites, and that SAC1 has little activity in ‘trans’, unless a linker is added between its ER-anchored and catalytic domains. The data reveal an obligate ‘cis’ activity of SAC1, supporting its role in non-vesicular lipid traffic and implicating lipid traffic more broadly in inositol lipid homeostasis and function.
 
 ## Introduction
 
@@ -30,13 +30,13 @@ A critical requirement for the PPInMF is that SAC1 acts in a ‘cis’ configura
 
 ## Results
 
-## Evidence for a ‘cis’ acting SAC1
+### Evidence for a ‘cis’ acting SAC1
 
 Loss of SAC1 ‘trans’ activity would cause accumulation of its PtdIns4P substrate in membranes like the PM and Golgi where the lipid is synthesized, whereas loss of ‘cis’ activity predicts accumulation of PtdIns4P in the ER (Figure 1D). Saccharomyces cerevisiae with deletions of their Sac1 gene show 6–10 fold increases in PtdIns4P mass (Rivas et al., 1999; Hughes et al., 2000; Guo et al., 1999), with PtdIns4P reported at both the PM (Roy and Levine, 2004; Stefan et al., 2011) and the ER (Roy and Levine, 2004; Tahirovic et al., 2005; Cai et al., 2014), depending on the probe used. RNAi of SAC1 in mammalian cells causes 1–2 fold accumulation of PtdIns4P (Cheong et al., 2010; Dickson et al., 2016; Goto et al., 2016), with accumulation reported in the ER (Cheong et al., 2010; Blagoveshchenskaya et al., 2008). On the other hand, acute knock-out of SAC1 in HeLa cells with CRISPR/Cas9 was reported to induce PtdIns4P accumulation on the PM and endosomes (Dong et al., 2016). However, these experiments are hard to interpret, since the SACM1L gene is essential to the survival of single mammalian cells (Blomen et al., 2015; Wang et al., 2015; Liu et al., 2008). Phenotypes in RNAi and knock-out experiments are therefore observed during the rundown of SAC1 protein levels before the cells die. The phenotype observed may thus be exquisitely sensitive to the precise amount of SAC1 protein remaining in the cell at the time of the experiment.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35588/elife-35588-fig1-v2.jpg)
 
-**Figure 1.:** (A) A soluble fragment of SAC1 (SAC1∆TMD) is inhibited by peroxide and bpV(HOpic). (B) SAC1 expression depletes PM PtdIns4P. COS-7 cells transfected with GFP-P4M and either FKBP-mCherry (Ctrl), SAC1∆TMD-FKBP-mCherry or catalytically inactive SAC1∆TMD/C389S-FKBP-mCherry were imaged live by confocal microscopy. Representative images are shown (bar = 10 µm). The graph shows P4M intensity at the plasma membrane (defined by CellMask deep red dye) normalized to total cell intensity; box and whisker plot shows quartiles and 5–95 percentiles of 90 cells from three independent experiments. P values derive from Dunn’s multiple comparison test compared to Ctrl after a Kruskal-Wallis test (p<10–4). (C) Peroxide and bpV(HOpic) inhibit SAC1 in live cells. COS-7 cells were transfected with P4M and SAC1∆TMD as in B and imaged by time-lapse confocal microscopy. 500 µM peroxide or 10 µM bpV(HOpic) were added at time 0. P4M intensity was quantified as in B. Data are means ± s.e. of 44 or 45 cells from four independent experiments. Scale bar = 10 µm. (D) Predicted PtdIns4P accumulation for ‘cis’ and ‘trans’ operation of SAC1. (E) Peroxide does not disrupt ORP5 localization at ER-PM MCS. Images show TIRF images of COS-7 cells expressing GFP-ORP5 at the indicated times. Traces are means with s.e. shaded for 31–32 cells from three independent experiments. (F–G) SAC1 inhibitors cause PtdIns4P accumulation in the ER. Time-lapse images of representative COS-7 cells expressing GFP-P4M (F) or GFP-P4C (G) and treated with inhibitors at time 0. The insets are 10 µm squares, and are expanded at right and show PtdIns4P accumulation relative to a co-expressed ER marker, iRFP-Sec61β. Graphs show P4M intensity at the ER (defined by iRFP-Sec61β) normalized to total cell intensity; data are means ± s.e. of 38–41 (F) or 29–30 (G) cells from three (G) or four (F) independent experiments.10.7554/eLife.35588.003Figure 1—source data 1.10.7554/eLife.35588.004Figure 1—source data 2.10.7554/eLife.35588.005Figure 1—source data 3.10.7554/eLife.35588.006Figure 1—source data 4.10.7554/eLife.35588.007Figure 1—source data 5.
+**Figure 1.:** (A) A soluble fragment of SAC1 (SAC1∆TMD) is inhibited by peroxide and bpV(HOpic). (B) SAC1 expression depletes PM PtdIns4P. COS-7 cells transfected with GFP-P4M and either FKBP-mCherry (Ctrl), SAC1∆TMD-FKBP-mCherry or catalytically inactive SAC1∆TMD/C389S-FKBP-mCherry were imaged live by confocal microscopy. Representative images are shown (bar = 10 µm). The graph shows P4M intensity at the plasma membrane (defined by CellMask deep red dye) normalized to total cell intensity; box and whisker plot shows quartiles and 5–95 percentiles of 90 cells from three independent experiments. P values derive from Dunn’s multiple comparison test compared to Ctrl after a Kruskal-Wallis test (p<10–4). (C) Peroxide and bpV(HOpic) inhibit SAC1 in live cells. COS-7 cells were transfected with P4M and SAC1∆TMD as in B and imaged by time-lapse confocal microscopy. 500 µM peroxide or 10 µM bpV(HOpic) were added at time 0. P4M intensity was quantified as in B. Data are means ± s.e. of 44 or 45 cells from four independent experiments. Scale bar = 10 µm. (D) Predicted PtdIns4P accumulation for ‘cis’ and ‘trans’ operation of SAC1. (E) Peroxide does not disrupt ORP5 localization at ER-PM MCS. Images show TIRF images of COS-7 cells expressing GFP-ORP5 at the indicated times. Traces are means with s.e. shaded for 31–32 cells from three independent experiments. (F–G) SAC1 inhibitors cause PtdIns4P accumulation in the ER. Time-lapse images of representative COS-7 cells expressing GFP-P4M (F) or GFP-P4C (G) and treated with inhibitors at time 0. The insets are 10 µm squares, and are expanded at right and show PtdIns4P accumulation relative to a co-expressed ER marker, iRFP-Sec61β. Graphs show P4M intensity at the ER (defined by iRFP-Sec61β) normalized to total cell intensity; data are means ± s.e. of 38–41 (F) or 29–30 (G) cells from three (G) or four (F) independent experiments.
 
 As an alternative approach, we exploited acute chemical inhibition of SAC1. As a member of an especially redox-sensitive family of lipid phosphatases, SAC1 is inherently sensitive to inhibition by oxidizing compounds including bis-peroxovanadates (bpVs) and hydrogen peroxide (Rosivatz et al., 2006; Ross et al., 2007). In fact, treatment of cells with 500 µM peroxide was shown to induce a massive 7-fold accumulation of PtdIns4P in mammalian cells (Ross et al., 2007). We therefore sought to determine where such PtdIns4P accumulations occur, using our unbiased probe GFP-P4M that detects all cellular pools of PtdIns4P (Hammond and Balla, 2015; Hammond et al., 2014).
 
@@ -46,7 +46,7 @@ Inhibition of SAC1 with these oxidative stress-inducing compounds is likely to i
 
 We then sought to inhibit endogenous SAC1 with these compounds. Cells were treated with peroxide or bpV(HOpic) for one hour, which stimulated a rapid (commencing within 5 min) accumulation of ER PtdIns4P with peroxide and a slower, but robust accumulation in the ER with bpV(HOpic) (Figure 1F). ER localization of the accumulated PtdIns4P pool was verified by co-expression with iRFP-tagged Sec61β (Figure 1F). We observed a similar accumulation of ER-signal with a second, high affinity PtdIns4P biosensor GFP-P4C (Weber et al., 2014) as shown in Figure 1G. The rapid accumulation at the ER explains the internal accumulation seen in SAC1∆TMD over-expressing cells in Figure 1B. The most parsimonious explanation for these data is that upon acute inhibition of SAC1, transfer of PtdIns4P to the ER continues, but SAC1 is unable to dephosphorylate it, leading to massive accumulation of the lipid in this compartment (Ross et al., 2007). These data are therefore consistent with previous observations (Cheong et al., 2010; Blagoveshchenskaya et al., 2008) that SAC1 exhibits ‘cis’ activity in the ER of mammalian cells, though they do not rule out the occurrence of additional ‘trans’ activity a priori.
 
-## SAC1 does not enrich at ER-PM MCS
+### SAC1 does not enrich at ER-PM MCS
 
 Dynamic recruitment of SAC1 to ER-PM MCS was recently proposed as a mechanism to modulate ‘trans’ activity of the enzyme (Dickson et al., 2016). Although this is not inconsistent with the firmly established localization of SAC1 throughout the ER (Rohde et al., 2003; Nemoto et al., 2000), most proteins known to function at MCS are enriched at them too (Gatta et al., 2017). Therefore, a clue as to SAC1’s preferred mode of activity may be gleaned from a careful analysis of its enrichment (or lack of enrichment) at MCS.
 
@@ -54,7 +54,7 @@ We attempted to use immunofluorescence to localize SAC1, though we failed to ide
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35588/elife-35588-fig2-v2.jpg)
 
-**Figure 2.:** (A) Strategy for tagging endogenous SAC1: a guide RNA is complexed with Cas9 protein and electroplated into HEK-293A cells with a short single-stranded homology-directed repair (HDR) template. This adds a short tag encoding the 11th strand of the GFP beta barrel. When expressed, this strand assembles with co-expressed GFP1-10 to make functional GFP. (B) Specificity of genomic tagging. 293A cells stably over-expressing GFP1-10 and edited with the indicated GFP11 tags were genotyped with GFP11 specific forward primers and a gene-specific reverse primer located ~200 bp downstream in exon 1. (C) Confocal images of GFP11 gene edited cells co-expressing mKo-Manosidase II as a cis/medial Golgi marker, or mCherry-VAPB as an ER marker. (D) E-Syt1 shows enrichment at the PM relative to SAC1 and Sec61β. Cells were imaged in both TIRF and epi-illumination, and the fluorescence intensity ratio of the two images was calculated. Boxes represent quartiles, whiskers 5–95 percentile. P values are from Dunn’s Multiple Comparisons following a Kruskall-Wallis test (p<10–4). Data are from 180 (E-Syt1), 234 (SAC1) or 246 (Sec61β) cells imaged across five independent experiments. Insets = 10 µm. (E) Expressed SAC1 is not enriched at ER-PM MCS in COS-7 cells. TIRF images of COS-7 cells transfected for 24 hr with the indicated GFP-tagged plasmid and mCherry-MAPPER to label ER-PM MCS along with iRFP-Sec61β to label total ER. Scale bar = 10 µm. The MCS index is the ‘difference of differences’ between GFP and iRFP-Sec61β as well as GFP and MAPPER signals. P values are from Dunn's Multiple Comparison test relative to GFP-Sec61β, run as a post-hoc to a Kruskal-Wallis test (p<10–4). Box and whiskers are quartiles with 10–90 percentiles of 90 (Sec61β), 92 (Calreticulin), 91 (SAC1), 93 (MAPPER) or 92 (E-Syt2, ORP5) cells imaged across three independent experiments.10.7554/eLife.35588.009Figure 2—source data 1.10.7554/eLife.35588.010Figure 2—source data 2.
+**Figure 2.:** (A) Strategy for tagging endogenous SAC1: a guide RNA is complexed with Cas9 protein and electroplated into HEK-293A cells with a short single-stranded homology-directed repair (HDR) template. This adds a short tag encoding the 11th strand of the GFP beta barrel. When expressed, this strand assembles with co-expressed GFP1-10 to make functional GFP. (B) Specificity of genomic tagging. 293A cells stably over-expressing GFP1-10 and edited with the indicated GFP11 tags were genotyped with GFP11 specific forward primers and a gene-specific reverse primer located ~200 bp downstream in exon 1. (C) Confocal images of GFP11 gene edited cells co-expressing mKo-Manosidase II as a cis/medial Golgi marker, or mCherry-VAPB as an ER marker. (D) E-Syt1 shows enrichment at the PM relative to SAC1 and Sec61β. Cells were imaged in both TIRF and epi-illumination, and the fluorescence intensity ratio of the two images was calculated. Boxes represent quartiles, whiskers 5–95 percentile. P values are from Dunn’s Multiple Comparisons following a Kruskall-Wallis test (p<10–4). Data are from 180 (E-Syt1), 234 (SAC1) or 246 (Sec61β) cells imaged across five independent experiments. Insets = 10 µm. (E) Expressed SAC1 is not enriched at ER-PM MCS in COS-7 cells. TIRF images of COS-7 cells transfected for 24 hr with the indicated GFP-tagged plasmid and mCherry-MAPPER to label ER-PM MCS along with iRFP-Sec61β to label total ER. Scale bar = 10 µm. The MCS index is the ‘difference of differences’ between GFP and iRFP-Sec61β as well as GFP and MAPPER signals. P values are from Dunn's Multiple Comparison test relative to GFP-Sec61β, run as a post-hoc to a Kruskal-Wallis test (p<10–4). Box and whiskers are quartiles with 10–90 percentiles of 90 (Sec61β), 92 (Calreticulin), 91 (SAC1), 93 (MAPPER) or 92 (E-Syt2, ORP5) cells imaged across three independent experiments.
 
 Confocal imaging revealed the expected ER/Golgi localization of GFP11-SAC1 in edited cells, showing co-localization with the ER marker VAPB and the cis/medial Golgi marker Mannosidase II (Figure 2C). Medial confocal optical sections of GFP11-E-Syt1 and GFP-11-Sec61β also revealed exclusively ER localization (Figure 2C), consistent with previous reports (Saheki et al., 2016; Leonetti et al., 2016). To look for ER-PM MCS, we used total internal reflection fluorescence (TIRF) microscopy. Like GFP11-Sec61β, GFP11-SAC1 exhibited a reticular distribution, though unlike Sec61β, it also showed juxta-nuclear enrichment likely corresponding to the bottom of the Golgi (Figure 2D). GFP11-E-Syt1 also revealed a reticular distribution by TIRF, but with numerous bright puncta that are most likely ER-PM MCS (Figure 2D). Quantitative analysis of the ratio of fluorescence intensity via TIRF imaging (selective for signal within ~100 nm of the coverslip) vs conventional epi-illumination (exciting fluorescence throughout the entire volume of the cell) revealed no enrichment of GFP11-SAC1 close to the basal PM as compared to ER-localized GFP11-Sec61β, whereas GFP11-E-Syt1 showed a marked enrichment (Figure 2D). So, it appeared we could not detect enrichment of SAC1 at ER-PM MCS.
 
@@ -64,13 +64,13 @@ Dynamic recruitment of SAC1 to ER-PM MCS has been proposed as a mechanism by whi
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/35588/elife-35588-fig3-v2.jpg)
 
-**Figure 3.:** (A) Transfected SAC1 does not dynamically re-distribute to ER-PM MCS in COS-7 cells. Time-lapse TIRF microscopy of COS-7 cells transfected with the indicated GFP-tagged proteins for 6–7 hr. Cells were stimulated with 100 µM ATP as indicated. Insets = 10 µm. The traces at right show ∆(Ft/Fpre) and are means ± s.e. of 30 (Sec61β, SAC1, Calreticulin), 27 (STIM1), 29 (ESyt1) or 20 (Nir2) cells imaged across three independent experiments. (B) Gene edited alleles do not perturb calcium signals. Edited 293AGFP1-10 cells were loaded with Fura-red and the ratio of fluorescence intensity with respect to 405 and 488 nm excitation was measured. Cells were stimulated with carbachol (CCh) at 30 s to activate phospholipase C signaling. Data are grand means of four experiments (shaded regions represent s.e.). The P value represents results of a two-way ANOVA comparing cell lines. (C) Endogenous SAC1 does not recruit to ER-PM contact sites in 293AGFP1-10 cells. Images show representative gene-edited cells at the indicated times during time-lapse TIRF imaging. Carbachol was added to stimulate phospholipase C signaling at time 0. Images are averages of 5 frames acquired over 10 s to improve signal to noise. Traces represent mean change in fluorescence intensity (normalized to pre-stimulation levels) with s.e. of 40 (E-Syt1), 38 (SAC1) or 37 (Sec61β) cells imaged across five independent experiments.10.7554/eLife.35588.012Figure 3—source data 1.10.7554/eLife.35588.013Figure 3—source data 2.10.7554/eLife.35588.014Figure 3—source data 3.
+**Figure 3.:** (A) Transfected SAC1 does not dynamically re-distribute to ER-PM MCS in COS-7 cells. Time-lapse TIRF microscopy of COS-7 cells transfected with the indicated GFP-tagged proteins for 6–7 hr. Cells were stimulated with 100 µM ATP as indicated. Insets = 10 µm. The traces at right show ∆(Ft/Fpre) and are means ± s.e. of 30 (Sec61β, SAC1, Calreticulin), 27 (STIM1), 29 (ESyt1) or 20 (Nir2) cells imaged across three independent experiments. (B) Gene edited alleles do not perturb calcium signals. Edited 293AGFP1-10 cells were loaded with Fura-red and the ratio of fluorescence intensity with respect to 405 and 488 nm excitation was measured. Cells were stimulated with carbachol (CCh) at 30 s to activate phospholipase C signaling. Data are grand means of four experiments (shaded regions represent s.e.). The P value represents results of a two-way ANOVA comparing cell lines. (C) Endogenous SAC1 does not recruit to ER-PM contact sites in 293AGFP1-10 cells. Images show representative gene-edited cells at the indicated times during time-lapse TIRF imaging. Carbachol was added to stimulate phospholipase C signaling at time 0. Images are averages of 5 frames acquired over 10 s to improve signal to noise. Traces represent mean change in fluorescence intensity (normalized to pre-stimulation levels) with s.e. of 40 (E-Syt1), 38 (SAC1) or 37 (Sec61β) cells imaged across five independent experiments.
 
 We also checked for transient re-localization of SAC1 in our endogenous labelled 293AGFP1-10 cells. In this case, stimulation with 100 µM carbachol was used to stimulate PLC via endogenously expressed muscarinic M3 receptors (Luo et al., 2008). Carbachol elicited a typical, transient elevation of cytosolic calcium (measured with Fura-red) with a sustained plateau that was unchanged by tagging endogenous proteins with GFP11 (Figure 3B). Stimulation caused the rapid, transient recruitment of GFP11-E-Syt1 to puncta (Figure 3C), as seen previously with endogenously tagged GFP-E-Syt1 in HeLa cells (Saheki et al., 2016). However, no change in the localization of endogenous GFP11-SAC1 or GFP11-Sec61β was observed (Figure 3C).
 
 Together, these results show that SAC1 is not specifically enriched at (nor depleted from) ER-PM MCS, even when other proteins are being recruited to these sites to facilitate calcium and inositol lipid homeostasis. The limited and unchanging localization of SAC1 at MCS therefore appears co-incidental with its well-known distribution throughout the ER.
 
-## ‘cis’ and ‘trans’ activity of SAC1 in cells
+### ‘cis’ and ‘trans’ activity of SAC1 in cells
 
 Although the data presented so far failed to show compelling evidence for ‘trans’ activity of SAC1, neither could we completely exclude it. Notably, SAC1 was not excluded from ER-PM MCS, so the possibility remained that SAC1 may, given the right circumstances, be able to operate in a ‘trans’ configuration at MCS. We decided to devise experiments to deduce whether such activity is possible in living cells.
 
@@ -78,7 +78,7 @@ To this end, we designed a strategy utilizing chemically-induced dimerization of
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35588/elife-35588-fig4-v2.jpg)
 
-**Figure 4.:** (A) Strategy to recruit SAC1 to the PM in ‘cis’ or ‘trans’ using the FRB/FKBP12 heterodimerization system. (B) PM PtdIns4P is still detectable at the PM with P4M × 2 after transfection with SAC1∆TMD. COS-7 cells transfected with GFP-P4M and either FKBP-mCherry (Ctrl), SAC1∆TMD-FKBP-mCherry or catalytically inactive SAC1∆TMD/C389S were imaged live by confocal microscopy. Representative images are shown (bar = 20 µm). The graph shows P4M intensity at the plasma membrane (defined by CellMask deep red dye) normalized to total cell intensity; box and whisker plot shows quartiles and 5–95 percentiles of 90 cells from three independent experiments. P values derive from Dunn's multiple comparison test compared to Ctrl after a Kruskal-Wallis test (p<10–4). (C) Recruitment of SAC1 to the PM in ‘cis’ is far more effective in depleting PtdIns4P than it is in ‘trans’. TIRF images of COS-7 cells transfected with a Lyn11-FRB-iRFP PM recruiter, the indicated mCherry-tagged SAC1-FKBP or FKBP-SAC1, and GFP-P4M × 2. Graphs show means ± s.e. Images are representative of n cells, x independent experiments: 57, 6 (FKBP-SAC1); 41, 4 (FKBP-SAC1C389S); 28, 3 (SAC1-FKBP); 30, 3 (SAC1-FKBP); 57, 6 (SAC1-FKBP); 36, 4 (SAC1-FKBP); 26, 3 (FKBP-SAC1); 29, 3 (SAC1∆452-587). Inset graphs show the raw change in signal intensity for the mCherry-FKBP tagged SAC1 chimeras. Images of GFP-P4M × 2 are normalized to the mean pre-stimulation pixel intensity, that is Ft/Fpre with the color coding reflected in the graph y-axis. Scale bar = 20 µm.10.7554/eLife.35588.016Figure 4—source data 1.10.7554/eLife.35588.017Figure 4—source data 2.10.7554/eLife.35588.018Figure 4—source data 3.
+**Figure 4.:** (A) Strategy to recruit SAC1 to the PM in ‘cis’ or ‘trans’ using the FRB/FKBP12 heterodimerization system. (B) PM PtdIns4P is still detectable at the PM with P4M × 2 after transfection with SAC1∆TMD. COS-7 cells transfected with GFP-P4M and either FKBP-mCherry (Ctrl), SAC1∆TMD-FKBP-mCherry or catalytically inactive SAC1∆TMD/C389S were imaged live by confocal microscopy. Representative images are shown (bar = 20 µm). The graph shows P4M intensity at the plasma membrane (defined by CellMask deep red dye) normalized to total cell intensity; box and whisker plot shows quartiles and 5–95 percentiles of 90 cells from three independent experiments. P values derive from Dunn's multiple comparison test compared to Ctrl after a Kruskal-Wallis test (p<10–4). (C) Recruitment of SAC1 to the PM in ‘cis’ is far more effective in depleting PtdIns4P than it is in ‘trans’. TIRF images of COS-7 cells transfected with a Lyn11-FRB-iRFP PM recruiter, the indicated mCherry-tagged SAC1-FKBP or FKBP-SAC1, and GFP-P4M × 2. Graphs show means ± s.e. Images are representative of n cells, x independent experiments: 57, 6 (FKBP-SAC1); 41, 4 (FKBP-SAC1C389S); 28, 3 (SAC1-FKBP); 30, 3 (SAC1-FKBP); 57, 6 (SAC1-FKBP); 36, 4 (SAC1-FKBP); 26, 3 (FKBP-SAC1); 29, 3 (SAC1∆452-587). Inset graphs show the raw change in signal intensity for the mCherry-FKBP tagged SAC1 chimeras. Images of GFP-P4M × 2 are normalized to the mean pre-stimulation pixel intensity, that is Ft/Fpre with the color coding reflected in the graph y-axis. Scale bar = 20 µm.
 
 The results of these experiments are presented in Figure 4C. Overall, there were substantial differences in PM PtdIns4P changes reported by GFP-P4M × 2 depending on the SAC1 chimera used (p<10–4, repeated-measures two-way ANOVA). A fusion of FKBP to the N-terminus of SAC1 showed robust recruitment of the enzyme to ER-PM MCS within 1 min of rapamycin addition (see the inset graphs), and we detected a very subtle decline of PM PtdIns4P as compared to the catalytically inactive C389S control, though this did not reach statistical significance (p=0.15, Tukey's multiple comparison test). Fusion of FKBP to the C-terminus of the protein produced a greater depletion of PtdIns4P relative to its C389S control (p=0.007), perhaps because this C-terminal fusion could pull the catalytic domain closer to the PM after complex formation. Therefore, we could induce a very limited ‘trans’ activity of over-expressed SAC1.
 
@@ -90,7 +90,7 @@ Collectively, these results demonstrate that SAC1 has very robust activity when 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/35588/elife-35588-fig5-v2.jpg)
 
-**Figure 5.:** (A) Helical linkers (HL) added to FKBP-SAC1 at the end of the first transmembrane domain. Each helical repeat consists of the amino acids EAAAR, expected to form a helix approximately 0.75 nm long. (B) TIRF imaging of PtdIns4P before and after direct recruitment of SAC1 to ER-PM MCS. TIRF images of COS-7 cells transfected with a Lyn11-FRB-iRFP PM recruiter, the indicated mCherry-tagged SAC1-FKBP and GFP-P4M × 2. Images are representative of 30 cells from three independent experiments. Images of GFP-P4M × 2 are normalized to the mean pre-stimulation pixel intensity, that is Ft/Fpre with the color coding reflected in the graph y-axis of D. Scale bar = 20 µm. (C) Helical linkers do not impair recruitment efficiency of FKBP-SAC1. (D) FKBP-SAC1-HLx8 and -HLx10 have ‘trans’ activity. Graphs in C and D show fluorescence intensity in the TIRF footprint of each cell for mCherry-tagged FKBP-SAC1 or GFP-tagged P4M × 2, respectively. Data are means ± s.e., 30 cells for all except WT, with 57 cells. Data for the wild-type FKBP-SAC1 is re-plotted from Figure 4.10.7554/eLife.35588.020Figure 5—source data 1.10.7554/eLife.35588.021Figure 5—source data 2.
+**Figure 5.:** (A) Helical linkers (HL) added to FKBP-SAC1 at the end of the first transmembrane domain. Each helical repeat consists of the amino acids EAAAR, expected to form a helix approximately 0.75 nm long. (B) TIRF imaging of PtdIns4P before and after direct recruitment of SAC1 to ER-PM MCS. TIRF images of COS-7 cells transfected with a Lyn11-FRB-iRFP PM recruiter, the indicated mCherry-tagged SAC1-FKBP and GFP-P4M × 2. Images are representative of 30 cells from three independent experiments. Images of GFP-P4M × 2 are normalized to the mean pre-stimulation pixel intensity, that is Ft/Fpre with the color coding reflected in the graph y-axis of D. Scale bar = 20 µm. (C) Helical linkers do not impair recruitment efficiency of FKBP-SAC1. (D) FKBP-SAC1-HLx8 and -HLx10 have ‘trans’ activity. Graphs in C and D show fluorescence intensity in the TIRF footprint of each cell for mCherry-tagged FKBP-SAC1 or GFP-tagged P4M × 2, respectively. Data are means ± s.e., 30 cells for all except WT, with 57 cells. Data for the wild-type FKBP-SAC1 is re-plotted from Figure 4.
 
 As shown in Figure 5B and C, all of these helical linker SAC1 chimeras were efficiently recruited to ER-PM MCS within 1 min of the addition of rapamycin. Insertion of 2–6 repeats did not produce a significant enhancement of PM PtdIns4P hydrolysis (Figure 5B and D; p≥0.44, 57 WT or 30 HLxN cells, Tukey’s multiple comparisons test after a repeated measure 2-way ANOVA, p<10–4). However, insertion of 8 helical repeats produced substantial depletion of PM PtdIns4P after recruitment to ER-PM MCS (p<10–4), which was not enhanced by the addition of a further two helical repeats to produce HLx10 (p=0.96, 30 cells each). No depletion of PtdIns4P was observed with a catalytically inactive C389S mutant SAC1 containing the HLx8 linker (p=0.96, 30 cells). Clearly, the addition of between 6 and 7.5 nm of additional linker between the catalytic domain and the TMD endows a robust ‘trans’ catalytic activity on SAC1.
 
@@ -98,7 +98,7 @@ These experiments demonstrated a weak capacity of SAC1 chimeras to act in ‘tra
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/35588/elife-35588-fig6-v2.jpg)
 
-**Figure 6.:** (A) Induction of artificial ER-PM MCS using rapamycin-induced dimerization of PM Lyn11-FRB and ER FKBP-CYB5Atail. (B) Over-expression of E-Syt2 does not deplete PtdIns4P. COS-7 cells over-expressing GFP-tagged E-Syt2, ORP5 along with mCherry-P4M × 2; scale bar = 10 µm. Graph shows P4M intensity at the plasma membrane (defined by CellMask deep red dye) normalized to total cell intensity; box and whisker plot shows quartiles and 5–95 percentiles of 89–90 cells from three independent experiments. P values derive from Dunn’s multiple comparison test compared to Ctrl after a Kruskal-Wallis test (p<10–4). (C) FKBP-CYB5tail induces narrower contact sites than those occupied by E-Syt2 or ORP5. COS-7 cells expressing the indicated GFP-fusion protein, Lyn11-FRB-iRFP or mCherry-FKBP-CYB5tail (not shown), dimerization induced with Rapa as indicated. Graph shows the fraction of induced contact sites occupied by GFP-fluorescence after 5 min of rapa treatment; box and whisker plot shows quartiles and 5–95 percentiles of 14–19 cells from four independent experiments. P values derive from Dunn’s multiple comparison test compared to Ctrl after a Kruskal-Wallis test (p<10–4). (D) An extended helical linker is required for robust ‘trans’ activity of SAC1 at ER-PM MCS. Images of TagBFP2-tagged FKBP-CYB5 and GFP-P4M × 2 in COS-7 cells co-transfected with iRFP-tagged Lyn11-FRB and the indicated mCherry-tagged SAC1 construct, or mCherry alone as control. Images of GFP-P4M × 2 are normalized to the mean pre-stimulation pixel intensity, that is Ft/Fpre with the color coding reflected in the graph y-axis. Scale bar = 20 µm. Graphs show the fluorescence intensity of GFP-P4M × 2 in the TIRF footprint of each cell (means ± s.e., 29–30 cells from three independent experiments) normalized to the mean pre-stimulation level (Fpre).10.7554/eLife.35588.023Figure 6—source data 1.10.7554/eLife.35588.024Figure 6—source data 2.10.7554/eLife.35588.025Figure 6—source data 3.
+**Figure 6.:** (A) Induction of artificial ER-PM MCS using rapamycin-induced dimerization of PM Lyn11-FRB and ER FKBP-CYB5Atail. (B) Over-expression of E-Syt2 does not deplete PtdIns4P. COS-7 cells over-expressing GFP-tagged E-Syt2, ORP5 along with mCherry-P4M × 2; scale bar = 10 µm. Graph shows P4M intensity at the plasma membrane (defined by CellMask deep red dye) normalized to total cell intensity; box and whisker plot shows quartiles and 5–95 percentiles of 89–90 cells from three independent experiments. P values derive from Dunn’s multiple comparison test compared to Ctrl after a Kruskal-Wallis test (p<10–4). (C) FKBP-CYB5tail induces narrower contact sites than those occupied by E-Syt2 or ORP5. COS-7 cells expressing the indicated GFP-fusion protein, Lyn11-FRB-iRFP or mCherry-FKBP-CYB5tail (not shown), dimerization induced with Rapa as indicated. Graph shows the fraction of induced contact sites occupied by GFP-fluorescence after 5 min of rapa treatment; box and whisker plot shows quartiles and 5–95 percentiles of 14–19 cells from four independent experiments. P values derive from Dunn’s multiple comparison test compared to Ctrl after a Kruskal-Wallis test (p<10–4). (D) An extended helical linker is required for robust ‘trans’ activity of SAC1 at ER-PM MCS. Images of TagBFP2-tagged FKBP-CYB5 and GFP-P4M × 2 in COS-7 cells co-transfected with iRFP-tagged Lyn11-FRB and the indicated mCherry-tagged SAC1 construct, or mCherry alone as control. Images of GFP-P4M × 2 are normalized to the mean pre-stimulation pixel intensity, that is Ft/Fpre with the color coding reflected in the graph y-axis. Scale bar = 20 µm. Graphs show the fluorescence intensity of GFP-P4M × 2 in the TIRF footprint of each cell (means ± s.e., 29–30 cells from three independent experiments) normalized to the mean pre-stimulation level (Fpre).
 
 For a more acute interrogation of ‘trans’ activity, we next induced dimerization between PM targeted FRB and an ER-localized FKBP (fused to the membrane anchor of cytochrome B5A; Komatsu et al., 2010) to generate new ER-PM MCS (Figure 6A). These induced contact sites formed in under a minute at existing ER-PM MCS marked by GFP-E-Syt2 or GFP-ORP5 (Figure 6C). In fact, as soon as they formed, the induced contact sites forced E-Syt2 and ORP5 to the periphery, indicating that the newly formed contacts were too narrow to accommodate native contact site proteins (Figure 6C). This ‘squeezing out’ of the contact site markers was dependent on ER-PM bridging, since GFP-Sec61β, which is not constrained to the PM-facing side of the ER, was not pushed to the periphery (Figure 6C).
 
@@ -126,33 +126,284 @@ To conclude, we present evidence that SAC1 is an obligate ‘cis’ acting enzym
 
 ## Materials and methods
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 COS-7 African Green monkey fibroblasts were obtained from ATCC (CRL-1651; RRID: CVCL_0224) and 293A cells (a HEK 293 subclone with flat morphology; R70507; RRID:CVCL_6910) were obtained from ThermoFisher. Cell lines were handled independently to prevent cross-contamination, and were screened regularly for mycoplasma contamination with Hoechst staining. Cell lines were propagated to no more than passage 30. They were cultivated in growth medium consisting of DMEM (low glucose, glutamax supplement, pyruvate; ThermoFisher 10567022) supplemented with 10% heat-inactivated fetal bovine serum (ThermoFisher 10438–034), 100 u/ml penicillin, 100 µg/ml streptomycin (ThermoFisher 15140122) and 0.1% chemically-defined lipid supplement (ThermoFisher 11905031) in 75 cm2 vented tissue culture flasks. Twice per week, almost confluent cultures were rinsed in PBS and suspended with 1 ml TrpLE Express (no phenol red; ThermoFisher 12604039) and diluted 1:5 for propagation in fresh flasks. For experiments, cells were seeded at 12.5–50% confluence on 10 µg/ml fibronectin (ThermoFisher 33016–015)-coated 35 mm dishes containing 20 mm #1.5 glass bottoms (CellVis D35-22-1.5-N) in 2 ml growth medium.
 
 Cells were transfected 1–24 hr after seeding, once they had reached 25% (TIRF) or 50% (confocal) confluence. 0.5–1 µg plasmid DNA was complexed with 3 µg Lipofectamine 2000 (ThermoFisher 11668019) in 200 µl Opti-MEM (ThermoFisher 51985091) for >5 min before adding to the cells. Cells were then used for experiments 6 or 18–24 hr post transfection.
 
-## Reagents
+### Reagents
 
 Rapamycin (Fisher Scientific BP2963-1) was dissolved in DMSO to 1 mM. ATP (Sigma 10127523001) was dissolved to 100 mM in 200 mM Tris base with 100 mM MgCl2. Carbachol (Fisher Scientific AC10824-0050) was dissolved in water to 50 mM. bpV(HOpic) (EMD Millipore 203701) was dissolved in DMSO at 10 mM. All were stored as aliquots at –20 ˚C. Hydrogen peroxide (30% solution; EMD Millipore HX0635-3) was stored at 4 ˚C and diluted fresh before use. Fura-red -AM (ThermoFisher F3021) was dissolved in 20% pluronic F-127 (ThermoFisher P3000MP) to 1 mg/ml before use and stored at –20 ˚C. CellMask deep red (ThermoFisher C10046) was stored at –20 ˚C and thawed before dilution.
 
-## Plasmids
+### Plasmids
 
 Plasmids were constructed in the former Clontech pEGFP-C1 and -N1 backbones. For the most part, the following fluorescent protein fusions were utilized: Unless stated, EGFP refers to Aequorea victoria GFP with F64L and S65T mutations (Cormack et al., 1996) with human codon optimization. mCherry is an optimized Discoma DsRed monomeric variant (Shaner et al., 2004). iRFP is the iRFP713 variant of Rhodopseudomonas palustris bacteriophytochrome BphP2-derived near-infrared fluorescent protein (Shcherbakova and Verkhusha, 2013). mTagBFP2 is an optimized blue-fluorescing mutant of the sea anemone Entacmaea quadricolor GFP-like protein eqFP578 (Subach et al., 2011).
 
 Plasmids in Table 1 were constructed using NEB HiFi assembly (New England Biolabs E5520S) or standard restriction cloning.
 
+**Table 1.**
+ Plasmids used in this study.Genes are human unless otherwise stated
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Backbone</th>
+      <th>Insert</th>
+      <th>Ref</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>APX1-GFP1-10</td>
+      <td>APX1</td>
+      <td>super-folder GFP</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CDV-hyPBase</td>
+      <td>pigg</td>
+      <td>piggyBAC transposase</td>
+      <td>(Yusa et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>NES-EGFP-P4M × 1</td>
+      <td>pEGFP-C1</td>
+      <td>X.leavis map2k1.L(32-44):EGFP:L. pneumophila SidM(546-647)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>FKBP-mCherry</td>
+      <td>pmCherry-N1</td>
+      <td>FKBP1A(isoform a, 3–108):mCherry</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SAC1∆TMD-FKBP-mCherry</td>
+      <td>pmCherry-N1</td>
+      <td>SACM1L(1-521):FKBP1A(3-108):mCherry</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SAC1C389S∆TMD-FKBP-mCherry</td>
+      <td>pmCherry-N1</td>
+      <td>SACM1L(C389S; 1–521):FKBP1A(3-108):mCherry</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>iRFP-Sec61β</td>
+      <td>piRFP-C1</td>
+      <td>iRFP:SEC61B</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mKO-ManII</td>
+      <td>pmKO-N1</td>
+      <td>Kusabira Orange 2:Man2a(1-102)</td>
+      <td>Tamas Balla</td>
+    </tr>
+    <tr>
+      <td>mCherry-VAPB</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:VAPB</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-MAPPER</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:MAPPER</td>
+      <td>(Chang et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>EGFP-MAPPER</td>
+      <td>pEGFP-C1</td>
+      <td>EGFP:MAPPER</td>
+      <td>(Chang et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>GFP-ORP5</td>
+      <td>pEGFP-C1</td>
+      <td>EGFP:OSBPL5(isoform a)</td>
+      <td>(Sohn et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>GFP-E-Syt2</td>
+      <td>pEGFP-C1</td>
+      <td>EGFP:ESYT2</td>
+      <td>(Giordano et al., 2013) Addgene plasmid #66831</td>
+    </tr>
+    <tr>
+      <td>EGFP-SAC1</td>
+      <td>pEGFP-C1</td>
+      <td>EGFP:SACM1L</td>
+      <td>(Sohn et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>mEmerald-N16-Calreticulin</td>
+      <td>pmEmerald-N1</td>
+      <td>mEmerald:CALR</td>
+      <td>Michael Davidson (Addgene plasmid #54023)</td>
+    </tr>
+    <tr>
+      <td>GFP-Sec61β</td>
+      <td>pAcGFP-C1-Sec61β</td>
+      <td>Aequorea coerulescens GFP:SEC61B</td>
+      <td>(Voeltz et al., 2006) Addgene plasmid #15108</td>
+    </tr>
+    <tr>
+      <td>EGFP-E-Syt1</td>
+      <td>pEGFP-C1</td>
+      <td>EGFP-ESYT1</td>
+      <td>(Giordano et al., 2013) Addgene plasmid #66830</td>
+    </tr>
+    <tr>
+      <td>EGFP-STIM1</td>
+      <td>pEGFP-C1</td>
+      <td>STIM1(isoform 1 1–22):EGFP:STIM1(23–791)</td>
+      <td>(Várnai et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>EGFP-Nir2</td>
+      <td>pEGFP-N1</td>
+      <td>EGFP:PITPNM1(isoform 2)</td>
+      <td>(Kim et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>EGFP-P4M × 2</td>
+      <td>pEGFP-C1</td>
+      <td>EGFP:L. pneumophila SidM(546-647):SidM(546-647)</td>
+      <td>(Hammond et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Lyn11-FRB-iRFP</td>
+      <td>piRFP-N1</td>
+      <td>LYN(1-11):MTOR(2021–2113):iRFP</td>
+      <td>(Hammond et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG</td>
+      <td>(Hammond et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG:SACM1L</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1C389S</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG:SACM1LC389S</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-SAC1-FKBP</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:SACM1L:FKBP1A(3-108)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-SAC1C389S-FKBP</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:SACM1LC389S:FKBP(3-108)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SAC1∆452-587-FKBP-mCherry</td>
+      <td>pmCherry-N1</td>
+      <td>SACM1L(1-451):FKBP1A(3-108):mCherry</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1∆TMD</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG:SACM1L(1-521)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1-HLx2</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG::SACM1L(1-520):[EAAAR]2:SACM1L(521-587)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1-HLx4</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG::SACM1L(1-520):[EAAAR]4:SACM1L(521-587)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1-HLx6</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG:SACM1L(1-520):[EAAAR]6:SACM1L(521-587)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1-HLx8</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG:SACM1L(1-520):[EAAAR]8:SACM1L(521-587)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1-HLx10</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG:SACM1L(1-520):[EAAAR]10:SACM1L(521-587)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-FKBP-SAC1C389S-HLx8</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:FKBP1A(3-108):[GGSA]4GG:SACM1LC389S(1-520):[EAAAR]8:SACM1L(521-587)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry</td>
+      <td>(Hammond et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>mCherry-SAC1</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:SAC1ML</td>
+      <td>(Sohn et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>mCherry-SAC1-HLx8</td>
+      <td>pmCherry-C1</td>
+      <td>mCherryLSACM1L(1-520):[EAAAR]8:SACM1L(521-587)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mCherry-SAC1C389S-HLx8</td>
+      <td>pmCherry-C1</td>
+      <td>mCherry:SACM1LC389S(1-520):[EAAAR]8:SACM1L(521-587)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>mTagBFP2-FKBP-CYB5Atail</td>
+      <td>pmTagBFP2-C1</td>
+      <td>mTagBFP2:FKBP1A(3-108):[GGSA]4GG:CYB5A(100-134)</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
 All plasmids were verified by Sanger sequencing; plasmids generated in this study are available from Addgene (www.addgene.org). Note, the SACM1L gene used in this study and previous publications (Sohn et al., 2016) contains a missense mutation Y433F relative to the human genome reference sequence. However, the short Genetic Variations database (dbSNP) shows that this allele (rs1468542) represents approximately 60% of alleles present in the human population sampled to date. This allele can therefore be viewed as ‘wild-type’.
 
-## Generation on 293AGFP1-10 cell line
+### Generation on 293AGFP1-10 cell line
 
 To create a cell line stably expressing GFP-1–10 for complementation with GFP-11 tags, the PiggyBac Transposon system was applied via transfection in 293A cells. Cells were seeded onto 6-well plates and plasmid containing the GFP-1–10 sequence under a CAG promoter and flanked by the proper inverted terminal repeats (APX1-GFP-1–10) was transfected along with plasmid coding the PiggyBac Transposase (CDV-hyPBase) (0.7 µg and 0.3 µg, respectively) as described above. Following overnight transfection, media was replaced with fresh growth media and cells were propagated for 1 week to allow dilution of any free plasmid. Eight independent samples were split in limiting 1:2 dilutions across 12 columns of a 96-well plate. After growth, populations were chosen from the last four columns and a sample of each was screened using an mCherry-SACM1L-GFP-11 reporter plasmid to observe GFP-complementation and assess the efficiency of GFP-1–10 insertion. The polyclonal population of a single well that showed >90% GFP complementation of visibly transfected cells was chosen and propagated for use in future gene-editing experiments (named here as 293AGFP-1-10).
 
-## Generation of endogenously tagged cell lines
+### Generation of endogenously tagged cell lines
 
 Single-guide RNA (sgRNA) and homologous-directed repair (HDR) template design followed the method described by (Leonetti et al., 2016), utilizing the published sequences available for targeting SEC61B and SACM1L. ESYT1 sgRNA design was informed by the published sequence used by (Saheki et al., 2016). All HDR templates included 70 bp homology-arms and the following GFP-11 and flexible linker sequence for genomic insertion (CGTGACCACATGGTCCTTCATGAGTATGTAAATGCTGCTGGGATTACAGGTGGCGGC). Single-stranded HDR templates were ordered from IDT as ultramers. ssDNA primers to serve as templates for sgRNA production were ordered from ThermoFisher. Templates were made by annealing published primers ML611, T25 and BS7 with each site-specific primer following the procedure of Leonetti et al. Annealed products were column purified using the GeneJet Gel Extraction and DNA Cleanup Micro Kit (Thermo Scientific, #K0832). The GeneArt Precision gRNA Synthesis Kit (Thermo Fisher Scientific, A29377) was used for in vitro transcription of DNA templates to produce column-purified sgRNAs. Purity was checked by agarose gel electrophoresis. Cas9 Ribonucleoprotein (RNP) formation and delivery followed the procedure outlined by New England BioLabs (https://www.neb.com/protocols/2016/07/26/electroporation-of-cas9-rnp-ribonucleoprotein-into-adherent-cells-using-the-neon-electroporation). 2.1 µL of GeneArt Platinum Cas9 Nuclease (ThermoFisher, B25640) was incubated with 0.5 µL sgRNA (~10 µM) in Buffer R of the Neon Electroporation System (ThermoFisher, MPK1025) at room temperature for 20 min to form Cas9 RNP complexes. Meanwhile 293AGFP-1-10 cells were prepared from 90% confluent T75 culture flasks to obtain 1−2 × 106 cells suspended in 50 µL Buffer R. 2 µL of HDR template (100 mM) was then added to the incubating RNPs. 5 µL of the prepared cells were then added to the RNP incubation tubes, and 10 µL of this mixture was aspirated with the Neon pipette and electroporated (1500 V, 20 ms, one pulse). Contents of the Neon tip were then immediately transferred to a single well of a 6-well plate containing 2 mL of pre-warmed antibiotic-free complete DMEM and allowed to recover. After recovery and growth, electroporated cells were screened with confocal microscopy. Populations containing correctly edited cells were enriched by fluorescence-activated cells sorting using a Rheum Aria sorter (University of Pittsburgh Flow Cytometry Core). After sorting, genomic DNA was isolated using the PureLink Genomic DNA Mini Kit (ThermoFisher K1820-01). A standard GFP-11 forward primer and gene-specific reverse primers were used to compare the presence of ~200 bp amplicons from each edited cell line to the non-edited 293AGFP-1-10 cells. Additionally, using gene-specific primers ~ 75 bp upstream of the GFP-11 insertions, amplicons were produced and sequenced with the GFP-11 forward primer to ensure correct in-frame addition of the cassettes.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 For imaging, cells were placed in complete imaging medium consisting of Fluorobrite DMEM (ThermoFisher, A1896702), 10% heat-inactivated fetal bovine serum, 0.1% chemically-defined lipid supplement, 2 mM Glutamax (ThermoFisher 35050061) and 25 mM NaHEPES, pH 7.4. Where indicated, cells were stained with 1 µg/ml CellMask deep red in this medium for 3 min before exchanging for fresh media. For experiments in Figure 3, serum was omitted from the media. Cells were imaged on a Nikon Eclipse TiE inverted microscope using a 100x, plan apochromatic, 1.45 NA oil-immersion objective lens (Nikon). Excitation in either imaging mode was achieved using a dual fiber-coupled LUN-V 4-line laser launch with 405 nm (for TagBFP2), 488 nm (GFP), 561 nm (mCherry) or 640 nm (iRFP, CellMask Deep Red) laser lines. Cells were imaged in 2 ml imaging medium, or else 1.6 ml with the addition of 0.4 ml of imaging medium containing five-fold the final concentration of agonist or inhibitor during time-lapse acquisition, as indicated. A motorized stage (Nikon) was used to move between up to 16 consecutive positions in the dish for each time point with high precision. Acquisition was controlled using ‘Elements’ software (Nikon) and raw data including metadata were saved in ‘nd2’ format.
 
@@ -160,7 +411,7 @@ For confocal imaging, a Nikon A1R confocal scan head was used operating in reson
 
 For TIRF imaging, a TIRF illuminator arm (Nikon) was used to deliver wide-field illumination at an acute angle. Emission for blue and yellow/orange (420–480 nm and 570–620 nm) along with green and far red/infrared (505–550 nm and 650–850 nm) was acquired using dual-pass filters (Chroma), mounted in adjacent positions in a Lamda 10–2 filter wheel (Sutter). Images were collected with a Zyla 5.5 sCMOS camera (Andor).
 
-## Data analysis
+### Data analysis
 
 Images were imported into the open-access image analysis platform Fiji (Schindelin et al. 2012) for analysis. Quantitative image analysis of multiple positions on the dish was performed in parallel by first assembling the images from each position into a single montage, and then generating regions of interest (ROI) of each cell to be analyzed.
 

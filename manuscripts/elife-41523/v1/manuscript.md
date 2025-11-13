@@ -13,4 +13,4 @@
 
 ## Abstract
 
-A genetic pathway that times development works together with the sex-determination pathway to control the timing of sexually dimorphic neural development in C. elegans .
+A genetic pathway that times development works together with the sex-determination pathway to control the timing of sexually dimorphic neural development in C. elegans.

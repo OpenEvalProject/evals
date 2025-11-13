@@ -40,27 +40,118 @@ To test the hypothesis that abnormalities of interoception are associated with s
 
 ## Results
 
-## Demographic and clinical characteristics
+### Demographic and clinical characteristics
 
 We found that both participant groups were well-matched in terms of demographic and clinical characteristics, showing no significant differences in age, BMI, sex, diagnosis, or levels of self-reported depression, anxiety, substance use, or eating disorder symptoms (Table 1). We noticed that the groups showed a significant difference in their usage of psychotropic medication, with a greater proportion of the suicide attempters reporting taking such medications. We provide further details regarding our participants, including psychiatric diagnoses, use of psychotropic medications, missing data values, and scores on self-report measures in Appendix 1.
 
-## Breath-hold challenge
+**Table 1.**
+ Participant demographics and clinical characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Suicide attempters (n = 34)</th>
+      <th>Non-attempters (n = 68)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age, years</td>
+      <td>31 (11)</td>
+      <td>33 (10)</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>27.1 (6.3)</td>
+      <td>28.6 (5.0)</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>% Female</td>
+      <td>56 (n = 19)</td>
+      <td>70 (n = 47)</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Clinical Features</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHQ-9</td>
+      <td>12.1 (5.4)</td>
+      <td>11.2 (5.7)</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>PHQ-9 SI question</td>
+      <td>0.5 (0.8)</td>
+      <td>0.3 (0.5)</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>OASIS</td>
+      <td>9.2 (4.6)</td>
+      <td>8.5 (4.2)</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>DAST</td>
+      <td>3.7 (4.2)</td>
+      <td>3.5 (4.0)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>SCOFF</td>
+      <td>1.7 (1.6)</td>
+      <td>1.3 (1.4)</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>% Medicated</td>
+      <td>85 (n = 29)</td>
+      <td>59 (n = 40)</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: All values reported are in the format of Mean (SD) unless otherwise indicated.BMI = Body Mass Index; PHQ-9 = Patient Health Questionnaire; SI = Suicidal Ideation; OASIS = Overall Anxiety Severity and Impairment Scale; DAST = Drug Abuse Screening Test; SCOFF = Eating Disorders Screening Tool. All scores on clinical measures reflect total scores unless otherwise specified. For all clinical measures, higher numbers indicate greater endorsement of the construct assessed._
+
+### Breath-hold challenge
 
 We found that suicide attempters held their breath for significantly longer than non-attempters, approximately 10 s longer on average across both trials (F (1, 121.84) = 4.48, p = 0.036, R2 = 0.042) (see Figure 1). We also observed a repetition effect, such that all participants held their breath longer during the second trial (F(1,97.01) = 20.18, p < 0.001, R2 = 0.173), replicating previous results with this task (Willem Van der Does, 1997). We did not find a significant interaction between group and trial. We report a summary of the Linear Mixed Effects (LME) output for the model examining breath-hold duration, including fixed effects estimates and standardized regression coefficients in Supplementary file 1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51593/elife-51593-fig1-v2.jpg)
+
+**Figure 1.:** They also exhibited greater increases in carbon dioxide (CO2) and decreases in oxygen (O2). The mean breath-hold duration across the two trials is displayed below. Error bars indicate + / - 1 standard error, *p < 0.05.
+
+![Figure 1—figure supplement 1 .](https://cdn.elifesciences.org/articles/51593/elife-51593-fig1-figsupp1-v2.jpg)
 
 Concordant with the increased breath-hold duration in suicide attempters, we found that suicide attempters had higher concentrations of exhaled carbon dioxide (CO2) than non-attempters after the breath-hold trials (F(1,120.33) = 5.52, p < 0.001, R2 = 0.043). However, we did not find an effect of trial or interaction between group and trial. We also found that suicide attempters had lower concentrations of exhaled oxygen (O2) following the breath-hold trials relative to non-attempters (F(1,132.27) = 5.00, p = 0.027, R2 = 0.036). We observed a significant main effect of trial (F(1,91.09) = 6.16, p = 0.015, R2 = 0.020), such that reductions in O2 were greater after the second breath-hold across both groups. We report summaries of the LME outputs for the O2 and CO2 models, including fixed effects estimates and standardized regression coefficients in Supplementary file 1.
 
 Despite the prolonged breath-hold duration and elevations in CO2, we found that suicide attempters did not report any differences in perceived breathlessness (p = 0.70), feelings of suffocation (p = 0.95), fear of suffocation (p = 0.97), urge to breathe (p = 0.76), breathing sensation intensity (p = 0.53), unpleasantness (p = 0.63), task difficulty (p = 0.48), or effort expended during the breath-hold (p = 0.27) relative to non-attempters (Figure 1—figure supplement 1 ).
 
-## Cold-pressor challenge
+### Cold-pressor challenge
 
 We found that the cold-pressor challenge elicited increased pain ratings over time in both groups (F(3,276.16) = 86.78, p < 0.001, R2 = 0.589). However, this effect was qualified by a significant interaction between timepoint and group (F(3,277.39) = 2.89, p = 0.036, R2 = 0.030). On closer examination of the LME fixed effects, we observed that suicide attempters kept their hands submerged in the cold water for significantly longer than non-attempters after reaching their peak pain level (t(278.56) = 2.78, p = 0.006, β = 0.13), without any significant differences in the amount of time taken to reach mild, moderate, and peak pain levels (Figure 2). Overall, suicide attempters kept their hands submerged in the icy water for approximately 18 s longer than the non-attempters. We report fixed effects and model summary values in Supplementary file 2. Additionally, although suicide attempters provided slightly lower average ratings of unpleasantness, pain, difficulty, and stress than non-attempters, these differences were not statistically significant (unpleasantness: U = 1107, p = 0.117, FDR-p = 0.144, r = 0.16; pain: U = 1067, p = 0.122, FDR-p = 0.144, r = 0.15; difficulty: U = 1123, p = 0.090, FDR-p = 0.144, r = 0.17; stress: U = 1095, p = 0.144, FDR-p = 0.144, r = 0.15).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/51593/elife-51593-fig2-v2.jpg)
 
-**Figure 2.:** However, they did not significantly differ in their retrospective ratings of overall pain, unpleasantness, difficulty, or stress experienced during the task. Error bars indicate + / - 1 standard error; *p < 0.05.Figure 2—source data 1.
+**Figure 2.:** However, they did not significantly differ in their retrospective ratings of overall pain, unpleasantness, difficulty, or stress experienced during the task. Error bars indicate + / - 1 standard error; *p < 0.05.
 
-## Heartbeat perception task
+### Heartbeat perception task
 
 Our initial LME model examining heartbeat perception accuracy as a function of group, condition (i.e. guess, no-guess, and perturbation), and their interaction, showed a significant effect of condition (F(2,195.08) = 12.72, p < 0.001, R2 = 0.200). However, there was no significant effect of group and no group by condition interaction. By examining the fixed effects we noticed that, relative to guessing trials, accuracies on the no-guess (t(195.08) = −4.61, p < 0.001, β = −0.33) and breath-hold perturbation trials (t(195.07) = −4.013, p < 0.001, β = −0.29) were significantly lower.
 
@@ -68,25 +159,100 @@ We made a post-hoc decision to apply a second model that omitted the guessing sc
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/51593/elife-51593-fig3-v2.jpg)
 
-**Figure 3.:** There were no perceived differences in reported in task difficulty or confidence in performance across the no-guess and perturbation conditions. Suicide attempters also provided lower ratings of heartbeat intensity across these conditions, although this was no longer significant after correction for multiple comparisons. Error bars indicate + / - 1 standard error; *p < 0.05, +p < 0.10.Figure 3—source data 1.
+**Figure 3.:** There were no perceived differences in reported in task difficulty or confidence in performance across the no-guess and perturbation conditions. Suicide attempters also provided lower ratings of heartbeat intensity across these conditions, although this was no longer significant after correction for multiple comparisons. Error bars indicate + / - 1 standard error; *p < 0.05, +p < 0.10.
 
-## Interoceptive attention task during fMRI
+### Interoceptive attention task during fMRI
 
 We also found that, relative to non-attempters, suicide attempters exhibited reduced BOLD activation in the right dorsal mid-insula and right posterior insula during interoceptive attention to the heartbeat versus the exteroceptive attention condition (p < 0.005, corrected at α <0.05; Figure 4). There was also a cluster of reduced BOLD activation within the left dorsal mid-insula, but this did not survive correction. The whole-brain analysis revealed four additional clusters with significantly reduced BOLD activation during attention to heart sensations among suicide attempters: one cluster within the right precuneus, one within the right superior temporal gyrus, one within the right posterior cingulate cortex, and one within the right dorsomedial prefrontal cortex (p < 0.0005, ACF corrected at α < 0.05; Table 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51593/elife-51593-fig4-v2.jpg)
 
-**Figure 4.:** Error bars indicate + / - 1 standard error.Figure 4—source data 1.
+**Figure 4.:** Error bars indicate + / - 1 standard error.
 
-## Correlations across interoceptive tasks and measures
+**Table 2.**
+ Brain regions exhibiting significantly decreased blood oxygen level-dependent (BOLD) signal during attention to heartbeat sensations relative to exteroceptive sensations in suicide attempters relative to non-attempters
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th colspan="3">MNI Coordinates</th>
+      <th>Peak t</th>
+      <th>Volume (mm3)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Right Dorsal Posterior Insula</td>
+      <td>31</td>
+      <td>−19</td>
+      <td>15</td>
+      <td>−3.7</td>
+      <td>469</td>
+    </tr>
+    <tr>
+      <td>Right Dorsal Mid-Insula</td>
+      <td>39</td>
+      <td>-1</td>
+      <td>13</td>
+      <td>−3.4</td>
+      <td>352</td>
+    </tr>
+    <tr>
+      <td>Right Precuneus and Posterior Cingulate</td>
+      <td>5</td>
+      <td>−61</td>
+      <td>27</td>
+      <td>−4.8</td>
+      <td>1568</td>
+    </tr>
+    <tr>
+      <td>Right Superior Temporal Gyrus</td>
+      <td>65</td>
+      <td>−29</td>
+      <td>5</td>
+      <td>−5.2</td>
+      <td>784</td>
+    </tr>
+    <tr>
+      <td>Right Middle Cingulate Cortex</td>
+      <td>11</td>
+      <td>-7</td>
+      <td>45</td>
+      <td>−5.0</td>
+      <td>712</td>
+    </tr>
+    <tr>
+      <td>Right Superior Medial Gyrus</td>
+      <td>1</td>
+      <td>57</td>
+      <td>17</td>
+      <td>−5.2</td>
+      <td>544</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: A voxel-wise threshold of p < 0.005 was set for the insula, and a voxel-wise threshold of p < 0.0005 for the rest of the brain; all significant activations passed a cluster-size correction for multiple comparisons of α < . 05._
+
+### Correlations across interoceptive tasks and measures
 
 We report exploratory correlations across all behavioral and neuroimaging variables in Appendix 1—figure 1.
 
-## Role of psychotropic medication status
+### Role of psychotropic medication status
 
 We conducted additional analyses to examine potential confounding effects of medication status on our primary interoception variables of interest, due to the statistically significant difference observed in the proportion of individuals taking psychotropic medications in each group. Our results remained largely unchanged after accounting for medication status, as detailed in Appendix 2.
 
-## Role of suicidal ideation
+### Role of suicidal ideation
 
 We did not initially account for the role of suicidal ideation in the current study, focusing instead on interoceptive processing differences between individuals with a history of suicide attempts within the last 5 years and individuals with no suicide attempt history. To rectify this issue, we conducted additional analyses examining whether suicidal ideation history might explain the observed abnormalities of interoception across subjective, behavioral, and neural levels. Our observation of diminished interoception in suicide attempters was largely unchanged after accounting for lifetime suicidal ideation intensity, as detailed in Appendix 2 and displayed in Appendix 2—figure 1.
 
@@ -106,7 +272,7 @@ We found that suicide attempters exhibited reduced activation within cortical mi
 
 Our findings provide some key empirical support for modern theoretical models of suicide that are built upon desire-capability frameworks (Klonsky et al., 2017), such as the motivational-volitional model (O'Connor and Kirtley, 2018), the interpersonal-psychological theory of suicide (Ribeiro and Joiner, 2009; Van Orden et al., 2010), and the three-step theory (Klonsky and May, 2015). One assertion shared by each of these models is that, for suicide attempts and/or death by suicide to occur, the suicidal individual must express the capacity to approach (rather than avoid) bodily harm. According to these theories, individuals who engage in suicidal behavior demonstrate an ability to ignore—or override—the natural aversion to bodily harm that protects humans against physical injury. Our observations are consistent with these theories and provide early experimental evidence for the role of blunted interoception and heightened tolerance for homeostatic threat in suicidal attempts.
 
-## Limitations and future directions
+### Limitations and future directions
 
 Although our study represents the most comprehensive investigation related to interoception and suicide to date, we must acknowledge certain limitations. We evaluated evidence for interoceptive processing focusing on individuals with a history of suicide attempts within the last 5 years, based on the report that self-reported interoceptive deficits may be greater among individuals with more recent suicide attempts (Forrest et al., 2015). An alternative approach for future research might be to compare performance on neural and behavioral constructs related to interoception in individuals with more recent suicide attempts. Another limitation is that, while our findings suggest that individuals with suicide attempts exhibit abnormal interoception, we did not fully examine whether a history of suicidal ideation—versus a suicide attempt—has an independent impact on interoception. To begin to address this point, we conducted additional analyses which suggested that the observation of diminished interoception in suicide attempters was largely unchanged after accounting for lifetime suicidal ideation. But prospective studies are needed to conclusively discern whether the relationship between interoception and suicide attempt history can be attributed to group differences in suicidal ideation. Additionally, after matching our suicide attempter and non-attempter samples on measures of psychopathology, we found that the proportion of participants taking psychotropic medications at the time of data collection was significantly greater in the suicide attempters. Accounting for these differences in subsequent analyses did not substantially affect our results. One possibility is that the greater psychotropic medication usage in this group might reflect an effort by clinicians to reduce further suicide attempts.
 
@@ -114,66 +280,66 @@ From our cross-sectional study, it is difficult to judge whether the observed di
 
 We also used an imprecise, albeit commonly employed, measure of pain perception in the cold-pressor challenge. It would be advantageous to clarify whether suicidal action is differentially linked to impaired processing of other pain signals. Examples include visceral pain, which tends to be poorly localized, often referred to somatic structures and produces strong autonomic and affective responses, as well as other somatic pain signals (e.g. thermal or mechanical pain), which tend to be discretely localized to somatic structures and produce more variable autonomic and affective responses (Sikandar and Dickenson, 2012). Beyond stimulating visceral and somatic pain processing via different neuroanatomical pathways, it would be helpful to evaluate the degree to which altered pain responding is directly driven by differences in nociception per se as opposed to indirectly modulated by differences in interoceptive processing (Pollatos et al., 2012). Additionally, it is increasingly understood that cardiac interoception is rather difficult to assess (Khalsa and Lapidus, 2016). Heartbeat perception tasks such as the one employed in the current study are widely used, but have been the subject of criticism (Desmedt et al., 2018), and there is evidence to suggest that performance on this type of task can be influenced by one’s a priori knowledge about their heartbeat (Murphy et al., 2018). We addressed some of these potential confounds in our heartbeat perception task by including a no-guess trial condition, and a trial in which an inspiratory perturbation was used to putatively increase the intensity of heartbeat sensations. We also conducted analyses with and without the inclusion of the guessing trial. Overall, it appeared that suicide attempters had lower heartbeat perception accuracy across all three trials, with the strongest differences occurring during the least confounded condition (i.e. the no-guess trial). We did not investigate cardiac interoception using a more rigorous and ecologically valid form of perturbation, such as double-blinded infusions of isoproterenol (Khalsa et al., 2009), but would expect that blunted interoception in suicide attempters in a similar context would constitute robust evidence replicating the present findings. Lastly, we should note that none of the interoceptive tasks applied in this study have demonstrated sufficient reliability to be considered appropriate for implementation in prognostic assessments of suicidality in clinical settings.
 
-## Conclusion
+### Conclusion
 
 We find that suicide attempters exhibit evidence of ‘interoceptive numbing’ characterized by increased tolerance for aversive respiratory and nociceptive sensations, reduced awareness of the heartbeat, and blunted activity in the dorsal mid and posterior insular cortex, a region of the brain associated with the primary representation of visceral afferent signals. The presence of these specific interoceptive deficits among individuals with prior suicide attempts reveals a possible role of interoceptive dysfunction in distinguishing individuals at risk of suicide.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We performed a retrospective analysis from a pre-existing dataset containing the first 500 participants of the Tulsa-1000 (T-1000) cohort, a naturalistic longitudinal study of 1000 individuals with mood, anxiety, substance use, and/or eating disorders (Victor et al., 2018). Participants were considered eligible for T-1000 study entry if they fulfilled any of the following symptom criteria: Patient Health Questionnaire (PHQ-9; Kroenke et al., 2001)≥10 and/or Overall Anxiety Severity and Impairment Scale (OASIS; Campbell-Sills et al., 2009)≥8, and/or Drug Abuse Screening Test (DAST-10; McCabe et al., 2006) score >3, and/or Eating Disorder Screen (SCOFF; Morgan et al., 2000) score ≥2. Please refer to Victor et al. (2018) for a detailed description of the T-1000 inclusion criteria and study procedures. All participants provided written informed consent and received financial compensation for their involvement, and all procedures were approved by the Western Institutional Review Board.
 
 Participants were included in the suicide attempter group (n = 34) if they endorsed making a suicide attempt at any point during the previous five years as documented in the Columbia Suicide Severity Rating Scale (CSSRS; Posner et al., 2011) and/or life-chart interviews (Aupperle et al., 2020), which were conducted during the baseline data collection period, and used to gather information about each participant’s lifetime psychosocial, medical, educational, occupational, and treatment history (Victor et al., 2018). We used a propensity score matching algorithm for psychiatric reference sample identification (MatchIt package in R De et al., 2011, 1:2 nearest neighbor method without replacement), resulting in a group of non-attempter participants who denied having ever made a suicide attempt, and who exhibited similar screening symptoms on the PHQ-9, SCOFF, DAST, and OASIS scales (Table 1). To maximize the amount of data available for analysis, non-attempter participants (N = 239) were only matched to suicide attempters if their data had been manually checked and they had complete observations of the behavioral and psychophysiological variables examined. Further information regarding participant inclusion and exclusion criteria, matching procedures, and suicide attempt method are provided in Appendix 1.
 
-## Procedures
+### Procedures
 
 For a detailed description of general study procedures, please see Appendix 1.
 
-## Breath-hold challenge
+#### Breath-hold challenge
 
 Each participant completed two inspiratory breath-hold trials, providing a brief measure of sensitivity to respiratory perturbation (i.e. air hunger). Participants were seated in front of a computer screen, fitted with a respiration belt (Biopac Systems, Inc), provided with a nose clip, and a tube-like breathing apparatus was placed into the mouth. During normal breathing, concentrations of O2 and carbon dioxide CO2 were analyzed from exhaled air, providing a baseline measurement. Participants were then instructed to inhale maximally and, at the end of inhalation, to begin holding their breath for as long as they were able to tolerate. Trial duration was limited to 2 min, with a 2-min rest period between each trial; participants were instructed to stop and breathe if they reached the time limit, but they were not informed of how long the time limit would be beforehand. Participants were instructed to exhale into the breathing apparatus when they were no longer able to tolerate the breath-hold. Following each breath-hold, participants provided ratings of the task (i.e. respiratory sensation intensity, unpleasantness, and difficulty) as well as ratings of associated psychological experiences (i.e., stress, required effort, breathlessness, urge to breathe, breathlessness, sensations of suffocation, fear of suffocation) on a visual analogue scale (VAS) ranging from 0 (‘Not at all’) to 100 (‘Extremely’).
 
-## Cold-pressor challenge
+#### Cold-pressor challenge
 
 Participants immersed their dominant hand in a circulating pool of water cooled to six degrees Celsius. They were asked to keep their hand submerged for as long as they could tolerate. Maximum trial duration was limited to 2 min, although, as in the breath-hold task, this was not disclosed beforehand. Throughout the task, participants made continuous real-time pain intensity ratings with their dominant hand on a scale ranging from 0 (‘No pain’) to 100 (‘Worst pain imaginable’). These ratings were used to calculate each participant’s peak pain rating, as well as the time elapsed prior to the ratings of mild (25 out of 100), moderate (50 out of 100), and peak pain (100 out of 100 or the participant’s maximum pain rating). Afterwards each participant provided ratings of task unpleasantness, difficulty, and stress on a visual analogue scale (VAS) ranging from 0 (‘Not at all’) to 100 (‘Extremely’).
 
-## Heartbeat perception task
+#### Heartbeat perception task
 
 To assess cardiac interoception, participants performed three trials of a heartbeat tapping task. Participants were instructed to tap a key on a keyboard every time they felt their heartbeat, without taking their pulse. Each trial was 60 s in duration. In the first trial (‘guess’), subjects were instructed to tap every time they felt their heartbeat without taking their pulse. Guessing was encouraged if they felt unsure. In the next trial (‘no guess’), guessing was discouraged and participants were asked to tap only when they felt confident in feeling their heartbeat. In the final trial (‘perturbation’), participants were instructed to inhale deeply, hold their breath, and tap along with their perceived heartbeats while sustaining the breath-hold. The breath-hold perturbation was expected to amplify cardiac sensations and presumably increase heartbeat perception accuracy. Guessing was also discouraged in this trial. Heartbeat perception accuracy was calculated using a common accuracy metric (Schandry, 1981). Afterwards, participants provided VAS ratings ranging from ‘Not at all’ (0) to ‘Extremely’ (100) to indicate their perceived heartbeat intensity, confidence in their ability to accurately estimate their heartbeat, and their assessment of task-related difficulty.
 
-## Interoceptive attention task during fMRI
+#### Interoceptive attention task during fMRI
 
 The interoceptive attention task engages selective attention toward naturally-occurring interoceptive sensations in order to amplify activity in brain regions underlying interoceptive processing. We and others have previously demonstrated that this task is effective at mapping the neural basis of interoceptive attention in healthy individuals and those with, depression, substance use disorders, or eating disorders (Avery et al., 2014; Kerr et al., 2016; Simmons et al., 2013a; Avery et al., 2017; Stewart et al., 2019). The task consisted of two types of trials: interoceptive trials and exteroceptive trials. During the interoceptive trials, the words ‘HEART’ or ‘STOMACH’ were presented in a black font against a white background with each trial lasting 10 s. During the interoceptive trials, participants were instructed to focus on the sensations in their heart or stomach. Trials involving stomach interoception were not examined in the current study. Each interoceptive and exteroceptive stimulus was presented 12 times. During the exteroceptive trials, the word ‘TARGET’ was presented on the screen in black text against a white background. The color of the word periodically changed from black to various lighter shades of gray; throughout the duration of the 10 s trial, participants were instructed to focus on the intensity of the color change. To ensure that participants remained attentive during the task, following one-half of the trials, participants were asked to rate the intensity of the sensations from their heart or stomach or the intensity of the color change, on a scale from 0 to 6, with 0 indicating ‘No sensation’ (interoceptive) or ‘No change in color’ (exteroceptive) and six indicating an ‘Extremely’ intense sensation (interoceptive) or an ‘Extremely’ intense color change (exteroceptive). Participants performed this task over two scanning runs, each lasting 360 s.
 
-## Analysis of demographic, behavioral, and physiological data
+### Analysis of demographic, behavioral, and physiological data
 
 We conducted analyses of demographic, clinical, behavioral, and physiological data using the R base statistical software package version 3.5.1 (R Development Core Team, 2013). The ‘TableOne’ package (version 0.9.3; Yoshida et al., 2019) was used to display summaries of clinical characteristics between groups. LME analyses were conducted using the ‘lmerTest’ package version 3.1.1 (Kuznetsova et al., 2017). A marginal ANOVA was used on each LME model to examine F-tests for interactions and main effects. In the event of significant interactions, the summaries of LME fixed effects were examined to clarify which factors were driving the effect. The Kenward-Roger approximation of degrees of freedom was used for all LME analyses. R-squared estimates for fixed-effects were computed using the ‘r2glmm’ package in R (Jaeger, 2017) as described in Edwards et al. (2008). Tables depicting model output were generated using the ‘sjPlot’ package (version 2.6.2; Lüdecke, 2018) and figures were created using the ‘ggplot2’ package (version 3.0.0; Wickham, 2011). VAS ratings for each task were also compared between groups. Since a proportion of the VAS ratings were not normally distributed, Mann-Whitney tests, which are robust to deviations from normality, were used to compare ratings between groups. Where applicable, a Benjamini-Hochberg correction was applied to minimize the false discovery rate (FDR) associated with repeated testing. We provide specific details for the analysis of each task below. The source code for our primary analyses and figures has also been provided.
 
-## Breath-hold challenge
+#### Breath-hold challenge
 
 Three LME models were used to examine the relationship between group, trial repetition, the interaction between group and trial, and three outcome variables: breath-hold duration, post breath-hold CO2 concentration, and post breath-hold O2 concentration. For each model, group, timepoint, and their interaction were included as fixed effects. A participant identifier was included as a random effect, and hold duration, post-hold CO2 concentration, or post-hold O2 concentration were specified as dependent measures. A Benjamini-Hochberg correction was applied across these three models. Additionally, Benjamini-Hochberg corrected Mann-Whitney tests were used to examine group differences in VAS ratings of intensity, unpleasantness, difficulty, stress, required effort, breathlessness, urge to breathe, breathlessness, sensations of suffocation, and fear of suffocation following the breath-hold tasks.
 
-## Cold-pressor challenge
+#### Cold-pressor challenge
 
 We used a LME model to examine the relationship between group and the amount of time (seconds) elapsed from the start of the cold-pressor challenge until the participant reached four markers of pain intensity: mild pain, moderate pain, peak pain, and task discontinuation (i.e. hand removal from the water). Group, timepoint, and the interaction between group and timepoint were included as fixed effects. A participant identifier was included as a random effect, and duration in seconds was the specified dependent measure. VAS ratings of pain intensity, unpleasantness, difficulty, and stress were also compared between groups using Benjamini-Hochberg corrected Mann-Whitney tests.
 
-## Heartbeat perception task
+#### Heartbeat perception task
 
 We used a LME model to examine the relationship between group and heartbeat tapping accuracy across the three task conditions (i.e. guess, no-guess and breath-hold). Heartbeat tapping accuracy was included as the dependent measure, the interaction between group and condition was modeled as a fixed effect, and a participant identifier was specified as a random effect. Additionally, based on a recent study indicating that heartbeat perception accuracy scores are potentially confounded by guessing (Desmedt et al., 2018), a post-hoc decision was made to apply a second model that omitted the guessing score from the analysis, focusing only on the no-guess and breath-hold perturbation trials. Benjamini-Hochberg corrected Mann-Whitney tests were used to examine group differences in mean VAS ratings of heartbeat perception confidence, task difficulty, and heartbeat intensity across the no-guess and breath-hold trials.
 
-## Analysis of interoceptive attention task during fMRI
+### Analysis of interoceptive attention task during fMRI
 
-## Data acquisition and imaging parameters
+#### Data acquisition and imaging parameters
 
 Structural and functional magnetic resonance images were acquired using a General Electric (GE) Discovery MR750 3 Tesla MRI scanner. A 3D MPRAGE sequence obtained high-resolution anatomical images (FOV = 240 mm x 192 mm, slices/volume (axial) = 186, slice thickness = 0.9 mm, image matrix = 256×256, voxel volume = 0.938×0.938 × 0.9 mm, TR/TE = 5/2.012 ms, acceleration factor R = 2, flip angle = 8°, inversion/delay time TI/TD = 725/1400 ms, scan time = 340377 ms) using an 8-channel receive-only head coil (GE). Functional data were collected as echo-planar image (EPI) volumes depicting BOLD contrast (180 EPI volumes per run, slice thickness = 2.9 mm, voxel volume = 1.875×1.875 × 2.9 mm, acquisition matrix = 96×96, TR = 2000 ms, TE = 27 ms, flip angle = 78°, axial-oblique slices, 39 slices per volume, scan time = 360 s) using an eight-channel head array coil (GE), with a sensitivity encoding (SENSE) factor of 2 to minimize EPI distortions while also increasing the number of slices collected per TR.
 
-## Preprocessing, and subject-level analysis
+#### Preprocessing, and subject-level analysis
 
 Data preprocessing was conducted using afni_proc.py (Cox, 1996). The first three volumes of the functional scans were discarded to allow the signal to reach T1 equilibrium, and a despiking algorithm was used to remove any transient signal spikes from the data. For each participant, the remaining volumes were corrected for differences in slice acquisition time; head motion was corrected by rigid body translation and rotation; the first volume of the functional run (before discarding three volumes) was coregistered to the anatomical coordinates of the participant’s structural scan by linear warping, then normalized to the Montreal Neurological Institute (MNI) template and resampled to 2 × 2 × 2 mm3 voxels. The EPI data were then smoothed using a 4 mm full-width at half-maximum Gaussian kernel, and the value for each EPI volume was normalized to percent signal change using each voxel’s average signal across the time course.
 
 The imaging data were analyzed at the subject level using a multiple linear regression model, with regressors for each task condition (i.e. cardiac attention, stomach attention, exteroceptive attention, and response periods). To adjust the model for the shape and delay of the BOLD function, task regressors were constructed by convolution of a block function having a 5- or 10 s width (depending on the trial duration) beginning at the onset of occurrence of each condition. Nuisance regressors included each run mean, linear, quadratic, and cubic signal trends, as well as six head motion variables (three translations, three rotations).
 
-## Group analysis
+#### Group analysis
 
 We identified the insular cortex as an a priori region of interest due to its well-documented involvement in interoceptive attention (Avery et al., 2014; Kerr et al., 2016; Simmons et al., 2013a; Avery et al., 2017; Stewart et al., 2019), and focused our analysis on cardiac interoception. A mask of the left and right insula was defined using the N27 anatomical atlas within AFNI. The AFNI program 3dttest++ was used to examine group differences in interoceptive attention. For the interoceptive attention condition, all subject-level beta coefficients represented signal change relative to the exteroceptive condition. A small volume correction of p<0.005 was applied within the insula, and a voxel-wise threshold of p<0.0005 was set for the rest of the brain. Results were then corrected using a cluster-size threshold of α <0.05. To accurately estimate the cluster sizes necessary to achieve familywise error correction, we applied the --Clustsim correction in 3dttest++, which employs randomization and permutation simulation to produce cluster-level threshold values that adequately control the false positive rate (Cox et al., 2017).

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.40487.001 One output arm of the sleep homeostat in Drosophila appears to be a group of neurons with projections to the dorsal fan-shaped body (dFB neurons) of the central complex in the brain. However, neurons that regulate the sleep homeostat remain poorly understood. Using neurogenetic approaches combined with Ca 2+ imaging, we characterized synaptic connections between dFB neurons and distinct sets of upstream sleep-regulatory neurons. One group of the sleep-promoting upstream neurons is a set of circadian pacemaker neurons that activates dFB neurons via direct glutaminergic excitatory synaptic connections. Opposing this population, a group of arousal-promoting neurons downregulates dFB axonal output with dopamine. Co-activating these two inputs leads to frequent shifts between sleep and wake states. We also show that dFB neurons release the neurotransmitter GABA and inhibit octopaminergic arousal neurons. We propose that dFB neurons integrate synaptic inputs from distinct sets of upstream sleep-promoting circadian clock neurons, and arousal neurons.
+One output arm of the sleep homeostat in Drosophila appears to be a group of neurons with projections to the dorsal fan-shaped body (dFB neurons) of the central complex in the brain. However, neurons that regulate the sleep homeostat remain poorly understood. Using neurogenetic approaches combined with Ca2+ imaging, we characterized synaptic connections between dFB neurons and distinct sets of upstream sleep-regulatory neurons. One group of the sleep-promoting upstream neurons is a set of circadian pacemaker neurons that activates dFB neurons via direct glutaminergic excitatory synaptic connections. Opposing this population, a group of arousal-promoting neurons downregulates dFB axonal output with dopamine. Co-activating these two inputs leads to frequent shifts between sleep and wake states. We also show that dFB neurons release the neurotransmitter GABA and inhibit octopaminergic arousal neurons. We propose that dFB neurons integrate synaptic inputs from distinct sets of upstream sleep-promoting circadian clock neurons, and arousal neurons.
 
 ## Introduction
 
@@ -33,9 +33,21 @@ Here we explore the sleep-regulatory neurons that function upstream of dFB neuro
 
 ## Results
 
-## Circadian (LPN) and SLP neurons promote sleep and function upstream of the sleep-homeostat
+### Circadian (LPN) and SLP neurons promote sleep and function upstream of the sleep-homeostat
 
 To identify sleep-regulatory neurons that might function upstream of dFB neurons we employed the Drosophila Activity Monitoring system and scored sleep as inactivity for a minimum of 5 min, as previously described (Pfeiffenberger et al., 2010a; Pfeiffenberger et al., 2010b; Shaw et al., 2000). To assess the effects of chronically or acutely hyperactivating different classes of neurons, we used the Gal4/UAS system to express the depolarization-activated Na+ channel (NaChBac) (Nitabach et al., 2006), or the red-shifted channelrhodopsin (CsChrimson) (Klapoetke et al., 2014). Control flies harboring UAS-NaChBac without any Gal4 display typical sleep patterns characterized by minimal sleep at dawn and dusk (near ZT0 and ZT12, respectively), which rises to high levels during the middle of the day (near ZT6; Figure 1A and E). At night (ZT12—24), the control flies exhibit nearly maximal levels of sleep, which is 720 min (Figure 1A and F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig1-v1.jpg)
+
+**Figure 1.:** (A—D) Sleep profiles of the indicated flies during the day (ZT0—ZT12) and night (ZT12—ZT24). The white and black bars beneath the sleep profiles indicate the day and night cycles. The amounts of sleep (0—30 min) are plotted per 30 min bins. (A) Control flies (UAS-NaChBac/+). (B) Flies expressing NaChBac (UAS-NaChBac) using the 23E10-Gal4. Note that the 23E10-Gal4 > NaChBac annotation indicates transgenic flies that bear one copy of the 23E10-Gal4 transgene and one copy of the UAS-NaChBac transgene. Similar annotation applies elsewhere as all flies contain one copy each of the UAS and Gal4 transgenes. (C) 65D05-Gal4 > NaChBac. (D) Combined sleep profiles from A—C. (E,F) Quantification of daytime and nighttime sleep exhibited by the indicated flies. The genotypes are indicated below. (G) Bin crosses/min during the wake periods. The genotypes are indicated below. Error bars, SEMs. **p<0.01, one-way ANOVA with Dunnett’s test. n = 16 for UAS-NaChBac/+, n = 48 for 23E10-Gal4/+, n = 35 for 23E10-Gal4 > NaChBac, and n = 30 for 65D05-Gal4 > NaChBac. (H) Illustration of the AstALexA allele containing the LexA gene inserted at the position of the normal translation start codon for AstA. The numbers indicate the genomic nucleotide residues, with one defined as the first nucleotide of the start codon of the wild-type AstA gene. (I,J) Whole-mount AstA+ + AstALexA brains stained with anti-AstA. The scale bars represent 40 µm. (K) Sleep profiles of flies exposed to optogenetic stimulation with CsChrimson. Flies were entrained under 12 hr blue light/12 hr dark cycles for 3 days, and then shifted to a red light/dark cycle on the 4th day. Blue light does not activate CsChrimson. Shown are the sleep profiles under the blue and red light conditions as indicated by the blue and red bars. The total sleep time (0—30 min) is plotted in 30 min bins. The genotypes are indicated below. The flies include one copy of each of the indicated transgenes. LexOp-CsChrimson/+and UAS-CsChrimson/+were expressed under control of either the AstALexA/+or 65D04-Gal4/+, respectively. (L) Quantification of the change in daytime and nighttime sleep induced by CsChrimson activation. AstALexA/+serves as the control. n = 10–32. Error bars, SEMs. **p < 0.01, one-way ANOVA with Dunnett’s test. n = 32 for AstALexA/+, n = 10 for AstALexA >CsChrimson, n = 70 for 65D05-Gal4 > CsChrimson, and n = 23 for AstALexA >CsChrimson and 65D05-Gal4 > TNT..
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Paradigm for testing arousal. Flies were maintained for five days under 12 hr light/12 hr dark cycles. On the 5th night we exposed the flies to three 5 min light pulses delivered at ZT16, ZT18, and ZT20. The white and black horizontal bars indicate the day/night cycles and the small orange vertical bars indicate the light pulses. (B) Reductions in sleep during the 30 min period following the onset of the light stimuli. Each 30 min period includes the 5 min light pulse plus the following 25 min. Control, the sleep time during the same 30 min period of the 4th night. (C—E) Sleep profiles of the indicated flies during the 4th and 5th days. The profile during the 4th day (black traces) establishes baseline sleep (black line) and the profile during the 5th day (red) includes the effects on sleep (arousal) due to the three 5 min light pulses (orange traces). n = 24 for all flies. Error bars, SEMs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A—E) Sleep profiles of the indicated flies during a single day (ZT0—ZT12) and night (ZT12—ZT24). The amount of sleep is plotted per 30 min bins. (F) Quantification of total daytime and nighttime sleep exhibited by the indicated flies (see color coding of the genotypes in A—D). (G) Quantification of daytime and nighttime sleep-bout length of the indicated flies (see color coding of the genotypes in A—D). Error bars, SEMs. **p<0.01, one way ANOVA with Dunnett’s test. n = 32 for 65D05-Gal4/+, n = 32 for UAS-NaChBac/+, n = 28 for AstALexA >Gal80 and 65D05 > NaChBac, and n = 23 for 65D05-Gal4 > NaChBac.
 
 Hyperactivation of dFB neurons using UAS-NaChBac and the 23E10-Gal4 (Donlea et al., 2018; Pimentel et al., 2016), which includes an enhancer from the Allatostatin-A receptor 1 (AstA-R1) gene, greatly increases daytime sleep to levels that normally occur at night (Figure 1B,D,E and F). Consistent with a previous report (Chen et al., 2016), we found that hyperactivation of neurons with UAS-NaChBac and 65D05-Gal4 (a Gal4 containing an enhancer from the AstA gene) phenocopied the sleep-promoting effects caused by hyperactivating dFB neurons with NaChBac (Figure 1C,D and E). The neuronal hyperactivation with NaChBac did not impair locomotion since the levels of activity during the wake periods were similar between the control flies and the animals expressing UAS-NaChBac (Figure 1G).
 
@@ -49,7 +61,7 @@ The 65D05-Gal4 reporter labeled several regions in the brain, including sensory 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig2-v1.jpg)
 
-**Figure 2.:** AstA circadian pacemaker neurons are labeled by AstA reporters (65D05-Gal4 and AstA) and anti-AstA.LexA(A) Whole-mount of a brain expressing UAS-mCD8::GFP under the control of the 65D05-Gal4. Green, anti-GFP; blue: anti-nc82 (a pan-neuronal marker labeling active zones). The dashed box indicates the region shown at higher magnification in B. The scale bar represents 40 µm. (B) Zoomed-in view of boxed region in A. The arrow and arrowhead indicate SLPAstA and LPNAstA neurons, respectively. The scale bar represents 20 µm. (C) Immunostaining of a brain whole-mount (AstA >LexAmCD8::GFP) with anti-GFP (green) and anti-nc82 (magenta) The scale bar represents 40 µm. The inset at the right bottom corner shows the three LPNAstA neurons. (D—L) Immunostaining of LPNAstA neurons in brain whole-mounts from 65D05-Gal4 > mCD8::GFP flies. (D—F) Co-staining with anti-GFP (green) and anti-Tim (magenta). The scale bar represents 10 µm. (G—I) Co-staining with anti-GFP (green) and anti-Per (magenta). The scale bar represents 10 µm. (J—K) Co-staining with anti-GFP (green) and anti-AstA (red), the scale bar represents 10 µm.
+**Figure 2.:** (A) Whole-mount of a brain expressing UAS-mCD8::GFP under the control of the 65D05-Gal4. Green, anti-GFP; blue: anti-nc82 (a pan-neuronal marker labeling active zones). The dashed box indicates the region shown at higher magnification in B. The scale bar represents 40 µm. (B) Zoomed-in view of boxed region in A. The arrow and arrowhead indicate SLPAstA and LPNAstA neurons, respectively. The scale bar represents 20 µm. (C) Immunostaining of a brain whole-mount (AstALexA >mCD8::GFP) with anti-GFP (green) and anti-nc82 (magenta) The scale bar represents 40 µm. The inset at the right bottom corner shows the three LPNAstA neurons. (D—L) Immunostaining of LPNAstA neurons in brain whole-mounts from 65D05-Gal4 > mCD8::GFP flies. (D—F) Co-staining with anti-GFP (green) and anti-Tim (magenta). The scale bar represents 10 µm. (G—I) Co-staining with anti-GFP (green) and anti-Per (magenta). The scale bar represents 10 µm. (J—K) Co-staining with anti-GFP (green) and anti-AstA (red), the scale bar represents 10 µm.
 
 We tested whether LPNAstA are the key AstALexA-positive neurons required for promoting sleep by using tetanus toxin to inhibit neurotransmission from LPNAstA neurons while activating the remaining AstALexA neurons. To do so, we took advantage of the observation that the only neurons labeled by both the 65D05-Gal4 and AstALexA reporters are LPNAstA neurons. Therefore, we introduced the 65D05-Gal4 and UAS-tetanus toxin (TNT) (Sweeney et al., 1995) into the AstALexA/+ > CsChrimson background. We treated these animals with red lights and found that the sleep-promoting effect induced in AstALexA/+ > CsChrimson flies was abolished (Figure 1K and L). Based on this evidence we conclude that LPNAstA neurons are sleep-promoting circadian pacemaker neurons.
 
@@ -59,7 +71,19 @@ To identify the additional group of sleep-promoting neurons labeled by the 65D05
 
 Next, we tested if neuronal activity in the dFB was required for LPNAstA and SLPAstA neurons to promote sleep. To do so, we monitored sleep in flies in which we activated LPNAstA and SLPAstA neurons and tested the effects of this activation after suppressing neurotransmission from dFB neurons. To stimulate LPNAstA and SLPAstA neurons, we expressed CsChrimson (LexOp-CsChrimson) using a 65D05-LexA reporter (constructed with the same DNA regulatory sequences as the 65D05-Gal4), which also labels LPNAstA and SLPAstA neurons similar to the 65D05-Gal4 (Figure 3—figure supplement 2). To maintain flies under 12 hr light/12 hr dark cycles without stimulating the red-light activated CsChrimson, we exposed the flies to blue light during the 12 hr light periods for 3 days. On the 4th day, we replaced the blue with red lights to stimulate the neurons. As expected, red light induced an increase in daytime sleep and consolidated daytime sleep into longer bouts (Figure 3A—F). However, when we blocked neurotransmission from dFB neurons with TNT (23E10-Gal4 and UAS-TNT), optogenetic activation of LPNAstA and SLPAstA neurons no longer promoted sleep or sleep bout consolidation (Figure 3A—F). Taken together, we identified two groups of neurons, which promote sleep and appear to function presynaptic to dFB neurons. The finding that one of the groups of neurons are bona fide circadian pacemaker neurons suggests a direct neuronal pathway through which the circadian system regulates the sleep homeostat.
 
-## SLPAstA and LPNAstA neurons form close associations and function presynaptic to dFB neurons
+![Figure 3.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig3-v1.jpg)
+
+**Figure 3.:** (A—D) Sleep profiles of the indicated flies under 12 hr blue light/12 hr dark and 12 hr red light/12 hr dark cycles. Red but not blue lights activate CsChrimson. (E) Quantification of changes in daytime and nighttime sleep due to neuronal activation by red lights in 65D05 neurons expressing CsChrimson. (F) Quantification of changes in daytime and nighttime sleep bout length due to neuronal activation by red lights in 65D05 neurons expressing CsChrimson. The changes in total sleep time and the average bout lengths were calculated by subtracting these sleep parameter values obtained during the blue-light/dark cycles from those obtained during the red-light/dark cycles. Error bars, SEMs. **p < 0.01, one-way ANOVA with Dunnett’s test. n = 15 for lexAOp-CsChrimson/+, n = 24 for 65D05-LexA > CsChrimson, and n = 31 for 65D05-LexA > CsChrimson and 23E10-Gal4 > TNT. (G) Anti-tdTomato (magenta) and anti-GFP (green) staining of a whole-mount brain expressing tdTomato in dFB neurons (23E10-LexA > tdTom) and GFP in SLPAstA neurons (65D05-Gal4 > GFP). Both reporters showed innervation in the SMP. The scale bar represents 20 µm. (H) Anti-tdTomato (magenta) and anti-GFP (green) staining of a whole-mount brain expressing tdTomato in dFB neurons and GFP in LPNAstA neurons (AstALexA >GFP). Both reporters stained the SMP region. The scale bar represents 40 µm. (I) Cartoon illustrating the GRASP assay. Fluorescence is produced only when the two segments of GFP associate on the extracellular surfaces of adjacent cells. (J) Image of GRASP GFP fluorescence revealing close association between 65D05-Gal4 and AstAR1-LexA labeled neurons in the brain. The scale bar represents 60 µm. (K) Representative images of GCaMP3 fluorescence in dFB neurons upon activating the ATP-gated P2X2 cation channel in LPNAstA and SLPAstA neurons (65D05-Gal4 > P2X2) Shown are images before and during application of the imaging buffer (AHL) only, or ATP (2.5 mM final concentration) in imaging buffer. The scale bars represent 20 µm. (L) Quantification of the changes in GCaMP3 fluorescence in dFB neurons before and after adding the imaging buffer only or during exposure to 2.5 mM ATP to activate P2X2 expressing neurons. The effects of adding ATP versus the imaging buffer only were compared. Error bars, SEM. **p<0.01, unpaired Student’s t-test. n = 14 for ATP treatment and 16 for treatment with the imaging buffer from three independent imaging experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Diagrams of the FlpOut method used to express mCherry::TRPA1 in random subsets of 65D05-Gal4 neurons. The flies were then maintained under light/dark cycles at 22°C (no TRPA1 activation) and then switched to a light/dark cycle at 29°C to activate TRPA1. The sleep at the two temperatures was compared. The flies used in this analysis included the following four transgenes: 1) 65D05-Gal4, 2) UAS-FRT-CD2-stop-FRT-mCherry::trpA1, 3) hs-Flp, and 4) UAS-mCD8::GFP. However, for brevity, they are referred to as 65D05 > FRT-stop-FRT-mCherry::trpA1. Regardless of whether or not there was heat shock treatment to induce expression of the Flp, the UAS-mCD8::GFP was expressed in all 65D05-Gal4 neurons. (A) If the flies were not exposed to a heat shock treatment, the Flp would not be expressed and the stop cassette would not be excised, thereby precluding expression of mCherry::trpA1. (B) All flies used in this analysis were exposed to a heat shock treatment resulting in excision of the stop codon and expression of mCherry::trpA1 in random subsets of 65D05-Gal4 neurons. These flies are referred to as 65D05 > FlpOut-mCherry::trpA1. (C) Percentages of heat-shock treated flies (AstA >FlpOut-mCherry::trpA1) with the indicated sleep change due to thermal activation by TRPA1 at 29°C relative to the sleep level exhibited by the same animals at 22°C. The positive control was heat-shock treated flies expressing UAS-trpA1 in all 65D05-Gal4 neurons (65D05 > trpA1) and the negative control was heat-shock treated UAS-trpA1 flies. The vertical dashed line indicates no sleep change. n = 63 for 65D05 > FlpOut- mCherry::trpA1, n = 71 for 65D05-Gal4 > trpA1, and n = 49 for UAS-trpA1 only. (D) No increase of total sleep time in 65D05 > FRT-CD2-stop-FRT-mCherry::trpA1 flies, which do not express mCherry::trpA1 due to absence of a heat shock treatment. Error bar, SEMs. ns, not significant. Unpaired Student’s t-test. n = 16 for each temperature condition. (E—J) 65D05 > FlpOut-mCherry::trpA1 flies. Because the FlpOut is stochastic different subsets of 65D05 neurons express trpA1. However, all AstA1 positive neurons express mCD8::GPF. TRPA1 is activated at 29°C but not 22°C. Therefore, we analyzed sleep in flies first at 22°C and then at 29°C. Some flies showed an increase in sleep, and others did not. All 65D05-Gal4 neurons are labeled with anti-GFP (green), while mCherry::trpA1 expressing 65D05-Gal4 neurons are labeled with anti-mCherry. The scale bars represent 20 µm. (E, G and I) Immunostaining of different regions of a brain from a representative fly that exhibited an increase in sleep due thermoactivation of mCherry::TRPA1 at 29°C. (F, H and J) Immunostaining of different regions of a brain from a fly that did not show an increase in sleep due thermoactivation of mCherry::TRPA1 at 29°C. (K, L) Negative controls for GRASP analysis shown in Figure 3J. The scale bars represent 60 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** A whole-mount fly brain expressing lexAOp-mCD8::GFP and UAS-mCD8::RFP under the control of the 65D05-LexA and 65D05-Gal4, respectively. The brain was stained with anti-GFP (green), anti-RFP (red), and anti-nc82 (blue). The anterior and posterior views of the brain are presented separately for better visualization of the SLPAstA and LPNAstA neurons. (A—C) Anterior brain. (D—F) Posterior brain.
+
+### SLPAstA and LPNAstA neurons form close associations and function presynaptic to dFB neurons
 
 To address whether SLPAstA and LPNAstA neurons form close associations with dFB neurons, we performed double-labeling experiments. We examined the relative positions of the projections of SLPAstA, LPNAstA and dFB neurons by expressing different fluorescent reporters. Both SLPAstA and LPNAstA neurons send their projections to the superior median protocerebrum (SMP) region, which is also innervated by projections from dFB neurons (Figure 3G and H), indicating the potential for a direct neuronal connectivity.
 
@@ -67,7 +91,7 @@ We then used GFP reconstitution across synaptic partners (GRASP) (Feinberg et al
 
 To investigate functional connectivity, we expressed the ATP-activated cation channel P2X2 (UAS-P2X2) (Yao et al., 2012) in SLPAstA and LPNAstA neurons under control of the 65D05-Gal4, and monitored changes in the activity of dFB neurons with GCaMP3 (UAS-GCaMP3), a genetically encoded Ca2+ indicator (Tian et al., 2009). After applying ATP to activate the SLPAstA and LPNAstA neurons, there was a significant increase in GCaMP3 fluorescence in dFB neurons relative to applying the imaging buffer only (Figure 3K and L).
 
-## Glutamate is a sleep-promoting neurotransmitter used by LPNAstA and SLPAstA to activate dFB neurons
+### Glutamate is a sleep-promoting neurotransmitter used by LPNAstA and SLPAstA to activate dFB neurons
 
 Based on the results described above we propose the existence of sleep-promoting excitatory synaptic connections from LPNAstA and SLPAstA neurons to the downstream dFB neurons. To identify the relevant neurotransmitter, we used RNAi to knock-down genes essential for the synthesis or packaging of various neurotransmitters. These include the vesicular glutamate transporter (VGlut) (Daniels et al., 2006), the vesicular monoamine transporter (VMAT) (Greer et al., 2005), choline acetyltransferase (ChAT) (Itoh et al., 1986) and glutamic acid decarboxylase 1(Gad1) (Jackson et al., 1990).
 
@@ -75,19 +99,39 @@ To screen for RNAi lines that lead to a large reduction of target gene expressio
 
 We first expressed these RNAi transgenes in flies expressing UAS-NaChBac under control of the 65D05-Gal4, which results in hyperactivation of AstA-positive neurons, including LPNAstA and SLPAstA neurons (65D05 > NaChBac and RNAi). We found that the increase in sleep due to hyperactivation by NaChBac (65D05 > NaChBac) was reduced when RNAi was directed against VGlut—the transporter required for packaging glutamate in synaptic vesicles (Figure 4A and F). In contrast, the elevation in sleep induced by NaChBac was not affected when we used RNAi to knockdown genes required for the synthesis or packaging of other major neurotransmitters including acetylcholine (ChAT), γ-aminobutyric acid (GABA; Gad1) and biogenic amines (VMAT) (Figure 4B—F). These observations suggest an important role for glutamate in conferring the sleep-promoting contributions of LPNAstA and SLPAstA neurons.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig4-v1.jpg)
+
+**Figure 4.:** (A) Sleep profile of 65D05-Gal4 > NaChBac flies with and without the VGlut RNAi (UAS-VGlut) expressed under control of the 65D05-Gal4. (B—D) Sleep profiles of 65D05-Gal4 > NaChBac flies expressing VMAT-RNAi, ChAT-RNAi or Gad1-RNAi transgenes under control of the 65D05-Gal4. (E) Combination of sleep profiles shown in A—D. (F) Quantification of daytime and nighttime sleep of 65D05-Gal4 > NaChBac flies expressing the indicated RNAi lines. Error bars, SEM. **p<0.01, one way ANOVA with Dunnett’s test. n = 85 for no RNAi, n = 51 for VGlut RNAi, n = 42 for VMAT RNAi, n = 46 for ChAT RNAi, and n = 40 for Gad1 RNAi. (G) Representative images of GCaMP6f fluorescence before and after bath application of 50 mM glutamate. (H) Representative traces of changes in GCaMP6f fluorescence (∆F/F0) upon bath application of 50 mM glutamate. (I) Representative images of GCaMP6f fluorescence before and after bath application of 50 mM acetylcholine. (J) Representative traces showing changes in GCaMP6f fluorescence (∆F/F0) upon bath application of 50 mM acetylcholine. The scale bars in panels G and I represent 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Quantification of VGlut and VMAT mRNA expression assessed by quantitative real-time (RT) PCR. Total RNAs were extracted from control flies (w1118) or flies expressing the indicated UAS-RNAi transgene in all neurons under control of the elav-Gal4, and used for reverse transcription. Expression of VGlut or VMAT RNAs was quantified by RT-PCR. Error bars, SEMs. *p < 0.05, **p < 0.01. For VGlut RT-PCR: n = 4 for control flies, and n = 5 for VGlut RNAi. For VMAT RT-PCR: n = 5 for control flies, and n = 5 for VMAT RNAi. (C, D) A whole-mount control brain immunostained with anti-VGlut (green) and anti-nc82 (red). (E, F) A whole-mount brain that expressed VGlut-RNAi in all neurons immunostained with anti-VGlut (green) and anti-nc82 (red). (G–L) Quantification of parameters of daytime and nighttime sleep of the indicated flies. 65D05-Gal4/+served as the control. (G, H) Total sleep. (I—L) Bout length. Error bars, SEMs. *p < 0.05, **p < 0.01. Unpaired Student’s t-test for G—J, and one way ANOVA with Dunnett’s test for K and L. In panels G—J, n = 27 for the control, and n = 12 for 65D05-Gal4 > VGlut RNAi. In panels K and L, n = 32 for the control, n = 27 for 65D05-Gal4 > kir2.1, and n = 29 for 65D05-Gal4 > TNT.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Sleep profiles of the indicated flies. (B) Quantification of daytime and nighttime sleep of the indicated flies. Error bars, SEMs. n = 48 for all flies. (C) Sleep profiles of the indicated flies. (D) Quantification of daytime and nighttime sleep of the indicated flies. Error bars, SEMs. n = 48 for 65D05-Gal4 > NaChBac in AstALexA/+. n = 46 for 65D05-Gal4 > NaChBac in AstALexA. *p < 0.05, **p < 0.01. Unpaired Student’s t-test of the indicated two groups.
+
 To investigate the role of glutamate in basal sleep, we expressed the VGlut-RNAi without neuronal hyperactivation (no NaChBac expression). While overall sleep time was unaffected (Figure 4—figure supplement 1G and H), knocking down VGlut in 65D05-Gal4 positive neurons increased fragmented nighttime sleep as indicated by a significant reduction of nighttime sleep bout length (Figure 4—figure supplement 1J). The small reduction in daytime sleep bout length was not statistically significant (Figure 4—figure supplement 1I). A greater reduction of sleep bout length (both day and night) occurred when we hyperpolarized (65D05 > kir2.1) or blocked neurotransmission (65D05 > TNT) from SLPAstA and LPNAstA neurons (Figure 4—figure supplement 1K and L).
 
 To test whether the dFB neurons respond to glutamate, we employed an ex-vivo brain preparation amenable to imaging neuronal activity in freshly dissected brains. We expressed a fluorescent Ca2+ sensor (UAS-GCaMP6f) (Chen et al., 2013) to image the activities of dFB neurons after applying glutamate to the bath. We found that addition of glutamate caused an increase in GCaMP6f fluorescence (Figure 4G and H). In contrast, these neurons did not respond to acetylcholine—another major excitatory neurotransmitter in the Drosophila brain (Figure 4I and J).
 
-## Sleep-promoting role of AstA and a central clock component in LPNAstA neurons
+### Sleep-promoting role of AstA and a central clock component in LPNAstA neurons
 
 LPNAstA neurons express both the neuropeptide AstA and central clock genes (Figure 2D—L). To test for a potential contribution of the central clock for the sleep-promoting function of LPNAstA neurons we expressed a dominate-negative isoform of the clock component, Clock (UAS-Clk∆) (Tanoue et al., 2004) in LPNAstA neurons under control of the 65D05-Gal4. We found that the sleep-promoting effect of neuronal hyperactivation of LPNAstA neurons (65D05-Gal4 > NaChBac) during the daytime was reduced by expression of Clk∆ (Figure 4—figure supplement 2A and B). This indicates that the central clock in LPNAstA neurons contributes to the sleep promoting function of these neurons.
 
 To address whether AstA functions in LPNAstA neurons to promote sleep, we examined whether removal of AstA impacted on the sleep-promoting effect induced by hyperactivation of these neurons (65D05-Gal4 > NaChBac). We found that the AstALexA mutation significantly decreased the sleep-promoting effect caused by expression of NaChBac (Figure 4—figure supplement 2C and D). The reduction in sleep due to the AstALexA mutation was most pronounced during the second half of the daytime period. These results indicate that in addition to glutamate (Figure 4A) AstA also contributes to the sleep-promoting function of LPNAstA neurons.
 
-## Synaptic inputs from sleep- and arousal-promoting neurons target different dFB projections
+### Synaptic inputs from sleep- and arousal-promoting neurons target different dFB projections
 
 Dopamine is released by tyrosine hydroxylase (TH)-expressing neurons and is an arousal-promoting molecule (Liu et al., 2012; Pimentel et al., 2016; Ueno et al., 2012b), which inhibits the activity of dFB neurons (Figure 5—figure supplement 1A and B). We imaged the relative innervation patterns of dopamine arousal (DAA) neurons and dFB neurons to address whether they were in close association. We labeled dFB neurons with tdTomato (23E10-LexA > tdTomato; Figure 5A and B), and DAA neurons with a GFP reporter (TH-Gal4 >GFP, Figure 5A and B), which was expressed in a majority of neurons that stained with anti-TH (Figure 5—figure supplement 1C—E). The soma of the DAA and dFB neurons were distinct, although many were juxtaposed (Figure 5—figure supplement 1F). We found that the DAA neurons project to two layers within the FB: the dorsal FB layer (dFB) and the ventral FB layer (vFB; Figure 5B). The dorsal layer innervation of DAA neurons overlapped with the projections from dFB neurons (Figure 5B), suggesting possible synaptic connection between DAA and dFB neurons.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Brains expressing GFP in dopaminergic neurons (TH-Gal4 >GFP) and tdTomato in dFB neurons (23E10-LexA > tdTomato) stained with anti-GFP (green), anti-tdTomato (magenta) and anti-nc82. The dFB and vFB regions are indicated in B. The scale bars represent 60 and 20 µm in A and B, respectively. (C) GRASP GFP fluorescence revealing close associations between sleep-promoting dFB neurons and dopaminergic neurons in the brain. The dFB (23E10-LexA positive) and dopaminergic neurons (TH-Gal4 positive) expressed the GFP11 and GFP1-10 fragments, respectively. The scale bar represents 60 µm. (D) Representative images of GCaMP3 fluorescence in dFB neurons (23E10-LexA positive) upon activating the ATP-gated P2X2 cation channel (UAS-P2X2) expressed in DAA neurons under control of the TH-Gal4. Shown are images before and during application of the imaging buffer (AHL) only, or ATP (2.5 mM final concentration) in the imaging buffer. The scale bars represent 20 µm. (E) Quantification of the changes in GCaMP3 fluorescence in dFB neurons before and after adding the imaging buffer (AHL) only or during exposure to 2.5 mM ATP to activate P2X2 expressing DAA neurons. The genotype of the flies is as indicated in (D). **p < 0.01. Unpaired Student’s t-test. n = 24 for ATP treatment and n = 26 for treatment with the imaging buffer only from three independent imaging experiments. (F) Cartoon showing the positions of the dendrites and axons of LPNAstA/SLPAstA neurons and DAA neurons relative to the processes of the dFB neurons. (G, H) Whole-mount brain expressing dendritic (UAS-DenMark) and axonal (UAS-syt-eGFP) markers in dFB neurons under control of the 23E10-Gal4. The brain was stained with anti-dsRed and anti-GFP to detect DenMark and syt::eGFP, respectively, and with anti-nc82. The boxed region in (G) indicates the superior medial protocerebrum (SMP). The scale bars represent 40 µm. (I) Representative images showing syt::GCaMP6s fluorescence in axonal terminals of dFB neurons before the after bath application of 10 mM dopamine. UAS-syt::GCaMP6s was expressed in dFB neurons under control of the 23E10-Gal4. The scale bar represents 20 µm. (J) Representative trace showing the change in syt::GCaMP fluorescence (∆F/F0) in axons of dFB neurons (23E10-Gal4 > syt::GCaMP6s) upon bath application of 10 mM dopamine.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative images of GCaMP6f fluorescence in the soma of dFB (23E10-Gal4) neurons before and during bath application of 10 mM dopamine. The scale bar represents 20 µm. (B) Representative traces showing changes in GCaMP6f fluorescence (∆F/F0) in the soma of 7 dFB neurons soma before and during bath application of 10 mM dopamine. (C—E) Whole-mount brains expressing UAS-GFP under control of the TH-Gal4 immunostained with anti-GFP and anti-TH. The scale bars represent 60 µm. (F) Immunostaining of whole-mount brain expressing GFP in dFB neurons. Anti-GFP (green). Anti-TH (red) labels dopaminergic neurons. The scale bar represents 60 µm. (G) Cartoon showing the GRASP analysis shown in Figure 5C. (H) Negative control for GRASP analysis shown in Figure 5C. The scale bar represents 60 µm. (I) Representative traces showing lack of changes in syt::GCaMP6s fluorescence (∆F/F0) in dFB (AstAR1) neurons (23E10-Gal4 > syt::GCaMP6s) upon bath application of 10 mM octopamine (OA) and 10 mM tyramine (TA). 3—four independent samples were imaged.
 
 We used GRASP to assess whether the DAA and dFB neuronal membranes were in close proximity, which would support a model that they make synaptic connections. To test this possibility, we imaged brains from flies expressing two fragments of GFP (UAS-CD4::spGFP1-10 and lexAOp-CD4::spGFP11) under the control of the TH-Gal4 and the 23E10-LexA (Figure 5—figure supplement 1G). We observed GRASP signals in regions of the brain containing dFB neuronal projections, including the SMP region and the dFB (Figure 5C). We did not detect GFP signals in brains expressing only one of the two GFP fragments (Figure 3—figure supplement 1L and Figure 5—figure supplement 1H).
 
@@ -97,27 +141,27 @@ While LPNAstA and SLPAstA sleep promoting neurons only synapse onto the SMP proj
 
 One possible role of the synaptic connections from DAA neurons to the axonal terminals of dFB neurons is pre-synaptic regulation of dFB neuronal output. Therefore, we asked if dopamine suppresses Ca2+ dynamics in axonal terminals of dFB neurons located in the dorsal layer, thereby negatively regulating the output from dFB neurons. To test this idea, we imaged Ca2+ dynamics locally in the axonal terminals of dFB neurons. To do so, we expressed syt::GCaMP6s (Cohn et al., 2015) (a protein consisting of synaptotagmin fused to GCaMP6s) in dFB neurons and performed imaging using an ex-vivo brain preparation. When we applied dopamine to the bath, we observed a reduction in Ca2+levels in the axonal terminals of the dFB neurons (Figure 5I and J). In contrast, application of either of two other major invertebrate biogenic amines (octopamine and tyramine) did not change the Ca2+dynamics in dFB neurons (Figure 5—figure supplement 1I).
 
-## Effect of simultaneous activation of dFB and DAA neurons
+### Effect of simultaneous activation of dFB and DAA neurons
 
 Since the activity of dFB neurons are regulated by LPNAstA/SLPAstA neurons and DAA neurons in opposite directions, we tested the effects on sleep when these two groups of dFB regulatory neurons (LPNAstA/SLPAstA and DAA neurons) were activated simultaneously. Activating DAA neurons (TH-Gal4 >NaChBac) led to a drastic reduction in total sleep time (158 ± 37 min), relative to the controls (849 ± 32 min for UAS-NaChBac/+and 982 ± 38 forTH-Gal4/+; Figure 6A and B). As described above, activating 65D05-Gal4 positive neurons (LPNAstA and SLPAstA) promotes sleep (1343 ± 36 min; Figure 6A and B). Of significance, co-activating DAA and LPNAstA/SLPAstA neurons with NaChBac led to a level of total sleep time (881 ± 46 min) similar to the control flies (Figure 6A and B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig6-v1.jpg)
 
-**Figure 6.:** AstA and SLPAstA (65D05-positive) neurons.(A) Effects on sleep profiles due to hyperactivation of TH-positive (dopaminergic) and 65D05-positive (includes LPNAstA and SLPAstA neurons) with NaChBac. See the legend at the bottom right for the genotypes. (B) Quantification of total sleep time during a 24 hr light/dark cycle by the flies indicated in (A). (C—E) Quantification of daytime and nighttime sleep and awake parameters in flies of the indicated genotypes. (C) Sleep bout length. (D) Sleep bout number. (E) Awake bout length. n = 12—24. Error bars, SEMs. *p < 0.05, **p < 0.01. One-way ANOVA with Dunnett’s test. n = 16 for TH-Gal4/+, n = 47 for 65D05-Gal4/+, n = 16 for UAS-NaChBac/+, n = 12 for 65D05-Gal4 > NaChBac, n = 14 for TH-Gal4 >NaChBac, and n = 24 for 65D05-Gal4 and TH-Gal4 >NaChBac.
+**Figure 6.:** (A) Effects on sleep profiles due to hyperactivation of TH-positive (dopaminergic) and 65D05-positive (includes LPNAstA and SLPAstA neurons) with NaChBac. See the legend at the bottom right for the genotypes. (B) Quantification of total sleep time during a 24 hr light/dark cycle by the flies indicated in (A). (C—E) Quantification of daytime and nighttime sleep and awake parameters in flies of the indicated genotypes. (C) Sleep bout length. (D) Sleep bout number. (E) Awake bout length. n = 12—24. Error bars, SEMs. *p < 0.05, **p < 0.01. One-way ANOVA with Dunnett’s test. n = 16 for TH-Gal4/+, n = 47 for 65D05-Gal4/+, n = 16 for UAS-NaChBac/+, n = 12 for 65D05-Gal4 > NaChBac, n = 14 for TH-Gal4 >NaChBac, and n = 24 for 65D05-Gal4 and TH-Gal4 >NaChBac.
 
 To characterize the consequences of co-activating DAA and LPNAstA/SLPAstA neurons in greater detail, we analyzed two features of sleep patterns: sleep bout number and sleep bout length. When we only used the 65D05-Gal4 to express NaChBac, daytime sleep bouts were significantly lengthened (Figure 6C). Conversely, activating DAA neurons (TH >NaChBac) resulted in fragmented sleep with a significantly reduced sleep bout length, which was most obvious for nighttime sleep (Figure 6C). When we simultaneously activated LPNAstA/SLPAstA and DAA neurons with the 65D05-Gal4 and TH-Gal4, respectively, the sleep bouts were shorter than those exhibited by the control but were comparable to flies in which only the DAA neurons were activated (TH >NaChBac; Figure 6C). Additionally, activating both LPNAstA/SLPAstA and DAA neurons caused the flies to initiate many more sleep episodes, as indicated by a significant increase in the sleep bout number (Figure 6D).
 
 We then compared the episodes of wakefulness of these flies. In control flies, wake bout length is much longer during the day than night (Figure 6E). Activating sleep-promoting LPNAstA/SLPAstA neurons (65D05-Gal4 > NaChBac) led to a reduction in the bout length of daytime wakefulness, while activating arousal-promoting DAA neurons increased the bout length of nighttime wakefulness (Figure 6E). Remarkably, when the two groups of neurons were activated simultaneously, both daytime and nighttime activities were fragmented (Figure 6E).
 
-## GABA production is required in dFB neurons to promote sleep
+### GABA production is required in dFB neurons to promote sleep
 
 To screen for the neurotransmitter synthesized in dFB neurons that is essential for conveying sleep-promoting signals, we silenced expression of genes required for neurotransmitter synthesis or packaging. Thermoactivation of dFB neurons with TRPA1 (23E10 > trpA1) enhances sleep (Figure 7A, B, D—F). However, this effect was eliminated when we used RNAi to knockdown Gad1 in dFB neurons (23E10 > trpA1 and Gad1 RNAi; Figure 7C, D and G). In contrast, we still observed significant sleep-promoting effects resulting from TRPA1-induced activation of dFB neurons when we used RNAi to suppress production of other major neurotransmitters (Figure 7H—J). These results suggest that GABA is a necessary sleep-enhancing neurotransmitter synthesized in dFB neurons. This observation is in consistent with a previous report that dFB neurons communicate through inhibitory neurotransmitters and express the vesicular GABA transporter (Donlea et al., 2018).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/40487/elife-40487-fig7-v1.jpg)
 
-**Figure 7.:** 23E10-Gal4 positive) depends on GABA produced by dFB neurons.(A—D) Elevated sleep due to thermal hyperactivation of dFB neurons with TRPA1 (23E10-Gal4 > trpA1) is reduced by expression of the Gad1 RNAi in dFB neurons. TRPA1 is activated at 29°C but not 22°C. (E—J) Quantification of total sleep-time at 22°C and 29°C exhibited by 23E10-Gal4 > trpA1 flies with or without RNAi transgenes directed at genes required for neurotransmitter synthesis or packaging. **p < 0.01. Paired Student’s t-test. n = 24 for 23E10-Gal4/+, n = 24 for 23E10-Gal4 > trpA1 no RNAi, n = 13 for 23E10-Gal4 > trpA1 and Gad1 RNAi, n = 32 for 23E10-Gal4 > trpA1 and ChAT RNAi, n = 28 for 23E10-Gal4 > trpA1 and VGlut RNAi, and n = 9 for 23E10-Gal4 > trpA1 and VMAT RNAi.
+**Figure 7.:** (A—D) Elevated sleep due to thermal hyperactivation of dFB neurons with TRPA1 (23E10-Gal4 > trpA1) is reduced by expression of the Gad1 RNAi in dFB neurons. TRPA1 is activated at 29°C but not 22°C. (E—J) Quantification of total sleep-time at 22°C and 29°C exhibited by 23E10-Gal4 > trpA1 flies with or without RNAi transgenes directed at genes required for neurotransmitter synthesis or packaging. **p < 0.01. Paired Student’s t-test. n = 24 for 23E10-Gal4/+, n = 24 for 23E10-Gal4 > trpA1 no RNAi, n = 13 for 23E10-Gal4 > trpA1 and Gad1 RNAi, n = 32 for 23E10-Gal4 > trpA1 and ChAT RNAi, n = 28 for 23E10-Gal4 > trpA1 and VGlut RNAi, and n = 9 for 23E10-Gal4 > trpA1 and VMAT RNAi.
 
-## dFB sleep-promoting neurons inhibit arousal-promoting neurons
+### dFB sleep-promoting neurons inhibit arousal-promoting neurons
 
 Octopamine (OA) appears to increase wakefulness as nighttime sleep is reduced upon feeding flies OA (Crocker and Sehgal, 2008) or by activating tyrosine decarboxylase 2 (TDC2)-expressing neurons with NaChBac (tdc2-Gal4 > NaChBac) (Crocker et al., 2010) (Figure 8A). Nighttime sleep in tdc2-Gal4 > NaChBac flies is fragmented as the number of sleep bouts increases dramatically, and the average length of each nighttime sleep bout is reduced greatly (Figure 8B and C).
 
@@ -145,11 +189,399 @@ Activation of dFB neurons inhibits the dopaminergic neurons that project to the 
 
 ## Materials and methods
 
-## Drosophila culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-NaChBac</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock # 9469; RRID:BDSC_9469</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TetxLC.tnt</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 28997; RRID:BDSC_28997</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TrpA1(B).K</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 26263; RRID:BDSC_26263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GCaMP6f</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 42747; RRID:BDSC_42747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VGlut-Gal80</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 58448; RRID:BDSC_58448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tdc2-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 9313; RRID:BDSC_9313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>AstAR1-Gal423E10</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 49032; RRID:BDSC_49032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Shits</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 44222; RRID:BDSC_44222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gad1-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 28079; RRID:BDSC_28079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VMAT-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 31257; RRID:BDSC_31257</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hs-FLP,UAS-mCD8::GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 28832; RRID:BDSC_28832</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexAOp2-CsChrimson.mVenus</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 55139; RRID:BDSC_55139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CsChrimson.mVenus</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 55136; RRID:BDSC_55136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DenMark,UAS-syt.eGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 33064; RRID:BDSC_33064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 5137; RRID:BDSC_5137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexAOp2-Gal80</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 32217; RRID:BDSC_32217</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tdc2-LexA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 52242; RRID:BDSC_52242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>AstAR1-LexA23E10</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 53618; RRID:BDSC_53618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>AstA-LexA65D05</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 53625; RRID:BDSC_53625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ChAT-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 60028; RRID:BDSC_60028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VGlut-RNAi</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>stock# 40927; RRID:BDSC_40927</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Clk.Δ</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 36318; RRID:BDSC_36318</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>AstA-Gal465D05</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 39351; RRID:BDSC_39351</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8-RFP, LexAOp2-mCD8-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 32229; RRID:BDSC_32229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TH-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>stock# 8848; RRID:BDSC_8848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FRT-CD2-stop-FRT-mCherry::trpA1</td>
+      <td>PMID: 24860455</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-P2X2, lexOp-GCaMP3</td>
+      <td>PMID: 22539819</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-cd4::spGFP1-10, lexAOp-cd4::spGFP11</td>
+      <td>PMID: 19217375</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>AstALexA</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-dsRed (rabbit polyclonal)</td>
+      <td>Takara</td>
+      <td>Cat. 632496</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit polyclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. A11122</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. A10262</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. G6539</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Brp (termed as nc82, mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DHSB: nc82</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Timeless (rat polyclonal)</td>
+      <td>other</td>
+      <td></td>
+      <td>Obtained from Amita Sehgal's lab; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TH (rabbit polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat. AB152</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VGlut</td>
+      <td>other</td>
+      <td></td>
+      <td>Obtained from Aaron Dianonio's lab; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AstA (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DHSB: 5F10</td>
+      <td>(1: 50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG1</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>Alexa Fluor 488, 568, 647; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rat IgG</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>Alexa Fluor 555; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>Alexa Fluor 488, 568; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-chicken</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>Alexa Fluor 488; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBPLexA::p65Uw</td>
+      <td>Addgene</td>
+      <td>Cat. 26231</td>
+      <td>pBPLexA::p65Uw was a gift from Gerald Rubin (Addgene plasmid # 26231; http://n2t.net/addgene:26231; RRID:Addgene_26231)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion cloning kit</td>
+      <td>Takara</td>
+      <td>Cat. 121416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mounting media</td>
+      <td>Vector Laboratories</td>
+      <td>Cat. H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamic Acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. G1251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. 10519987001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Octopamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. O0250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tyramine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. T2879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dopamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. H8502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sleeplab</td>
+      <td>other</td>
+      <td></td>
+      <td>shared by Dr. William Joiner</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Drosophila Embryo Injection Services</td>
+      <td>BestGene Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila culture conditions
 
 Flies (Drosophila melanogaster) were cultured on cornmeal-agar-molasses medium under 12 hr light/12 hr dark cycles at room-temperature and ambient humidity. Detailed information regarding specific stains and genotypes is provided in the Key Resources Table section.
 
-## Generation of AstALexA flies
+### Generation of AstALexA flies
 
 To generate the AstALexA line with an insertion of the LexA reporter in place of endogenous AstA coding region (nucleotides 1–385 starting from endogenous start codon; Figure 1G), we used the CRISPR-HDR (clustered regularly interspaced short palindromic repeats – homology directed repair) method. We chose upstream (5’) and a downstream (3’) guide RNAs using the CRISPR Optimal Target Finder: http://tools.flycrispr.molbio.wisc.edu/targetFinder/. We annealed the following oligonucleotides to form two primer dimers. Each of the two primer dimers were cloned into the BbsI site of pU6-BbsI-ChiRNA (Addgene #45946) to generate two guide RNA expression plasmids: pU6-BbsI-ChiRNA-AstA_up, pU6-BbsI-ChiRNA-AstA_down
 
@@ -173,41 +605,41 @@ AstALexA downstream_Rev: ATGTCGACAAGCCGAACATACACATAAATTCTTAGACCATG
 
 We used the In-Fusion cloning kit (Clontech) to insert the upstream and downstream homology arms into the KpnI and NdeI sites of pBPLexA::p65Uw (Addgene #26231), respectively (to create the pBPLexA::p65Uw-AstA_LA + RA plasmid). The pU6-BbsI-ChiRNA-AstA_up, pU6-BbsI-ChiRNA-AstA_down, and pBPLexA::p65Uw-AstA_LA + RA plasmids were injected into the BDSC #51323 strain, which provided the source of Cas9 (BestGene Inc.).
 
-## Screening for RNAi lines that targets VGlut, VMAT, ChAT and Gad1
+### Screening for RNAi lines that targets VGlut, VMAT, ChAT and Gad1
 
 To screen for RNAi lines that lead to effective gene silencing upon expression in neurons, we screened a panel of available TRiP RNAi lines designed against VGlut, VMAT, ChAT and Gad1. We crossed these RNAi lines with UAS-Dicer;;elav-Gal4 flies, which lead to pan-neuronal expression of these RNAi transgenes. We then screened for lines that either lead to lethality (line BL60028 for ChAT RNAi and line BL28079 for Gad1 RNAi) or a large reduction of the corresponding gene products measured by quantitative RT-PCR or immunohistochemistry (Figure 4—figure supplement 1A—F)
 
-## Sleep behavior
+### Sleep behavior
 
 To measure sleep, we used 3—7 day-old female flies. Individual flies were loaded into glass tubes (provided with the Drosophila Activity Monitoring system (TriKinetics Inc.). The tubes each contained 5% sucrose and 1% agarose as the food source at one end and a small cotton plug at the other end. Flies were entrained for ≥2 days before activity data were collected for analysis. The activity data were collected in one-minute bins for further processing using MATLAB (MathWorks)-based software (Koh et al., 2008). If no activity was detected by the Drosophila Activity Monitoring system for more than 5 min, the fly was considered to be in a sleep state. Sleep assays were performed under white LED lights during the light period at 25°C unless otherwise indicated. For optogenetic stimulation, flies were cultured in regular food supplied with all-trans retinal in the dark for 24 hr before loading the animals into the glass tubes to perform activity measurements.
 
 To test arousal, flies were maintained for 5 days under 12 hr light/12 hr dark cycles. On the 5th night, 5 min light pulses were delivered at ZT16, ZT18, and ZT20. To analyze the effects of the nighttime light stimuli on arousal, we quantified total sleep during the 30 min period beginning with the 5 min light stimuli and continuing an additional 25 min.
 
-## Activation of neurons using optogenetics and thermogenetics
+### Activation of neurons using optogenetics and thermogenetics
 
 To measure sleep upon optogenetic stimulation, we used 3—7 day-old female flies. Flies were cultured in regular food supplied with all-trans retinal in the dark for 24 hr before loading individual flies into the same type of glass tubes mentioned above. The tubes contained 5% sucrose and 1% agarose as the food source at one end and a small cotton plug at the other end. Flies were entrained for 3 days under blue LED lights. On the 4th day, the LED lights were switched to red. Activity data were collected in one-minute bins for further processing using Sleep-Lab software. The effects on sleep as a result of optogenetic activation of neurons were quantified as the sleep change under red lights on day four verses blue lights on day 3.
 
 We used the heat-activated channel, TRPA1, in combination with the Gal4/UAS system to activate neurons. To conduct these analyses, we introduced 3—7 day old female flies that were cultured on standard food into TriKinetics glass tubes with 5% sucrose +1% agarose as the food source at one end and a small cotton plug at the other end. Flies were entrained for 3 days under white LED lights at 22°C and the temperature was switched to 29°C on the day four to activate TRPA1. Activity data were collected in one-minute bins for further process using MATLAB-based software (Joiner et al., 2013). The effects on sleep as a result of thermogenetic manipulation of neuronal activity were quantified as the sleep change (in minutes) at 29°C (4th day) verses 22°C (3rd day).
 
-## Whole-mount brain immunohistochemistry
+### Whole-mount brain immunohistochemistry
 
 For whole-mount brain immunohistochemistry, brains were dissected in phosphate buffered saline and 0.3% Triton X-100 (PBST). The brains were fixed with 4% paraformaldehyde (PFA) in PBST at room temperature for 20 min. Brains were briefly washed two times in PBST, blocked with PBST and 5% normal goat serum (NGS) at 4°C for 1 hr, and incubated overnight with primary antibodies diluted in PBST and 5% NGS at the following dilutions: 1) (1:1000) chicken anti-GFP, rabbit anti-dsRed, rabbit anti-TH antibody, and rat anti-Timeless, 2) (1:500) rabbit anti-GFP, 3) (1:200) nc82, 4) mouse anti-GFP antibody (1:100), and 5) (1:50) mouse anti-AstA. After three washes in PBST, we incubated the brains overnight in secondary antibodies corresponding to the primary antibodies used. Secondary antibodies were diluted 1:1000 in PBST and 5% NGS (refer to the Key Resource Table for the list of secondary antibodies). The brains were washed three times in PBST, and mounted in VECTASHIELD (Vector Laboratories) on glass slides. Images were acquired with an upright Zeiss LSM 700 confocal microscope using 20X, 40X (oil) or 63X (oil) lenses.
 
-## Mosaic expression of mCherry::trpA1 using the FlpOut method
+### Mosaic expression of mCherry::trpA1 using the FlpOut method
 
 To use mCherry::TRPA1 to activate different subsets of neurons that express the AstA-Gal4, we conducted a mosaic analysis to express mCherry::trpA1 in random subsets of AstA-Gal4 neurons. To do so, we combined hs-Flp and AstA-Gal4 transgenes with the UAS-mCD8::GPF transgene, and the UAS-FRT-CD2-stop-FRT-mCherry::trpA1 transgene (Vasmer et al., 2014). The animals were maintained at room temperature (~22°C). To remove the stop cassette, we induced hs-FLP expression by heat shocking 3rd instar larval at 37°C for 1 hr. The animals were then returned to room temperature (~22°C) after the heat shock. We refer to these animals as AstA >FlpOut-mCherry::trpA1 flies. We used 3—7 day-old female AstA >FlpOut-mCherry::trpA1 flies to conduct the sleep measurements following the thermogenetic procedure described above. To tabulate the percentage of flies with a given amount of sleep change due to thermal activation of mCherry::TRPA1, we used the following calculation: sleep at 29°C minus sleep at 22°C.
 
 To image the neurons, we dissected the brains of AstA >FlpOut-mCherry::trpA1 flies that showed either sleep-promoting effects (sleep change >100 min) and that did not show sleep-promoting effects (sleep change <100 min). We then stained the brains with anti-GFP and anti-dsRed as described above (see Whole-mount Brain Immunohistochemistry).
 
-## GRASP analyses
+### GRASP analyses
 
 To conduct the GRASP analyses (Feinberg et al., 2008; Gordon and Scott, 2009), we expressed lexAOp-CD4::spGFP11 and UAS-CD4::spGFP1-10under control of the 23E10 (AstAR1)-LexA and either the 65D05 (AstA-Gal4) or the TH-Gal4.To image GRASP signals, the brains were dissected in PBST, fixed with 4% PFA in PBST at room temperature for 20 min, and briefly washed with PBST before mounting in VECTASHIELD (Vector Laboratories) and viewing the fluorescence. To enhance GRASP signals, we performed immunostaining using mouse anti-GFP.
 
-## Ca2+ imaging in brains
+### Ca2+ imaging in brains
 
 To perform Ca2+imaging on whole-mount brains, expressing GCaMP3, GCaMP6f or syt::GCaMP6s, the flies were anaesthetized on ice and the brains were dissected into AHL buffer (108 mM NaCl, 5 mM KCl, 8.2 mM MgCl2, 2 mM CaCl2, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM trehalose, 5 mM sucrose, and 5 mM HEPES pH 7.5), and transferred to an imaging chamber with a glass bottom, which was made from cover slides. The brains were immobilized with a metal harp and imaged using an inverted Zeiss LSM 800 confocal microscope. The regions of interest in the soma and neuronal processes were scanned in the time-lapse mode using 4—6 Z stacks. 30 or more cycles (60—90 s total) were imaged for checking the stability of the sample in the imaging chamber prior to adding chemicals to the bath. The average intensity during the last 10 of these 30 pre-cycles (before adding the chemicals) was used as the baseline (F) to calculate ΔF.
 
-## Quantification and statistical analyses
+### Quantification and statistical analyses
 
 No statistical method was applied to compute sample sizes when the study was designed. An appropriate sample size was adopted empirically according to published studies in the same field. No outlier data points were excluded in the statistical analyses. Animals were randomly selected into experimental groups. No masking was applied during group allocation, data collection and analysis.
 

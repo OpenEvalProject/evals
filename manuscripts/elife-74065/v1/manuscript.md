@@ -15,16 +15,16 @@
 
 ### Affiliations
 
-1. https://ror.org/056d84691 Unit of Integrative Epidemiology, Institute of Environmental Medicine, Karolinska Institutet Stockholm Sweden
-2. https://ror.org/00m8d6786 SLL- ME Neurologi, Karolinska University Hospital Stockholm Sweden
-3. https://ror.org/056d84691 Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden
-4. https://ror.org/056d84691 Department of Medical Epidemiology and Biostatistics, Karolinska Institutet Stockholm Sweden
+1. Unit of Integrative Epidemiology, Institute of Environmental Medicine, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+2. SLL- ME Neurologi, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))
+3. Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+4. Department of Medical Epidemiology and Biostatistics, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
 
 † Corresponding author
 
 ## Abstract
 
-The prognostic role of immune cells in amyotrophic lateral sclerosis (ALS) remains undetermined. Therefore, we conducted a longitudinal cohort study including 288 ALS patients with up to 5-year follow-up during 2015–2020 recruited at the only tertiary referral center for ALS in Stockholm, Sweden, and measured the levels of differential leukocytes and lymphocyte subpopulations. The primary outcome was risk of death after diagnosis of ALS and the secondary outcomes included functional status and disease progression rate. Cox model was used to evaluate the associations between leukocytes and risk of death. Generalized estimating equation model was used to assess the correlation between leukocytes and functional status and disease progression rate. We found that leukocytes, neutrophils, and monocytes increased gradually over time since diagnosis and were negatively correlated with functional status, but not associated with risk of death or disease progression rate. For lymphocyte subpopulations, NK cells (HR= 0.61, 95% CI = [0.42–0.88] per SD increase) and Th2-diffrentiated CD4 + central memory T cells (HR= 0.64, 95% CI = [0.48–0.85] per SD increase) were negatively associated with risk of death, while CD4 + effector memory cells re-expressing CD45RA (EMRA) T cells (HR= 1.39, 95% CI = [1.01–1.92] per SD increase) and CD8 + T cells (HR= 1.38, 95% CI = [1.03–1.86] per SD increase) were positively associated with risk of death. None of the lymphocyte subpopulations was correlated with functional status or disease progression rate. Our findings suggest a dual role of immune cells in ALS prognosis, where neutrophils and monocytes primarily reflect functional status whereas NK cells and different T lymphocyte populations act as prognostic markers for survival.
+The prognostic role of immune cells in amyotrophic lateral sclerosis (ALS) remains undetermined. Therefore, we conducted a longitudinal cohort study including 288 ALS patients with up to 5-year follow-up during 2015–2020 recruited at the only tertiary referral center for ALS in Stockholm, Sweden, and measured the levels of differential leukocytes and lymphocyte subpopulations. The primary outcome was risk of death after diagnosis of ALS and the secondary outcomes included functional status and disease progression rate. Cox model was used to evaluate the associations between leukocytes and risk of death. Generalized estimating equation model was used to assess the correlation between leukocytes and functional status and disease progression rate. We found that leukocytes, neutrophils, and monocytes increased gradually over time since diagnosis and were negatively correlated with functional status, but not associated with risk of death or disease progression rate. For lymphocyte subpopulations, NK cells (HR= 0.61, 95% CI = [0.42–0.88] per SD increase) and Th2-diffrentiated CD4+ central memory T cells (HR= 0.64, 95% CI = [0.48–0.85] per SD increase) were negatively associated with risk of death, while CD4+ effector memory cells re-expressing CD45RA (EMRA) T cells (HR= 1.39, 95% CI = [1.01–1.92] per SD increase) and CD8+ T cells (HR= 1.38, 95% CI = [1.03–1.86] per SD increase) were positively associated with risk of death. None of the lymphocyte subpopulations was correlated with functional status or disease progression rate. Our findings suggest a dual role of immune cells in ALS prognosis, where neutrophils and monocytes primarily reflect functional status whereas NK cells and different T lymphocyte populations act as prognostic markers for survival.
 
 ## Introduction
 
@@ -36,27 +36,221 @@ The main purpose of this study was to determine cellular immune changes occurrin
 
 ## Results
 
-## Leukocytes and lymphocyte subtypes in ALS
+### Leukocytes and lymphocyte subtypes in ALS
 
 Supplementary file 2 shows the distribution of leukocyte populations (N = 288 patients) and lymphocyte subpopulations (N = 92 patients) across all measures after ALS diagnosis. The vast majority of the cell populations were within the normal range, except for CD8+ central memory (CM) cells, CD4+HLA-DR+CD38+ cells and CD8+HLA-DR+CD38+ cells, which were above the normal range.
 
 In the main cohort, the levels of leukocytes, neutrophils, and monocytes increased progressively over time, especially from 20 months after diagnosis onward (Figure 1). These trends were statistically significant, with or without adjustment for age and sex, and remained statistically significant after correction for multiple testing (Table 1) . In contrast, no clear temporal trend was noted for lymphocytes. These results remained largely similar when stratifying the patients by sex, site of onset, or presence of C9orf72 expansions (Figure 1—figure supplement 1). The levels of leukocytes, neutrophils, and monocytes increased, whereas the levels of lymphocytes decreased, after Riluzole treatment, compared with before such treatment (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74065/elife-74065-fig1-v1.jpg)
+
+**Figure 1.:** The black lines show measured levels of leukocyte populations for each patient. The blue lines and shadow areas show the mean levels of leukocyte populations with 95% confidence intervals. Pink areas indicate normal range. p for trend shows the p value of within-individual temporal change of each cell population after taking into account the relatedness of repeated measurements.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74065/elife-74065-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74065/elife-74065-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74065/elife-74065-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/74065/elife-74065-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/74065/elife-74065-fig1-figsupp5-v1.jpg)
+
+**Table 1.**
+ Temporal changes of leukocyte populations after diagnosis of amyotrophic lateral sclerosis (ALS), a cohort study of 288 patients with ALS in Stockholm, Sweden†.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Cell type</th>
+      <th colspan="3">Unadjusted</th>
+      <th colspan="3">Adjusted*</th>
+    </tr>
+    <tr>
+      <th>Coefficient</th>
+      <th>p value</th>
+      <th>FDR</th>
+      <th>Coefficient</th>
+      <th>p value</th>
+      <th>FDR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Leukocyte (109/l)</td>
+      <td>0.19</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.22</td>
+      <td>2.4E−03</td>
+      <td>4.7E−03</td>
+    </tr>
+    <tr>
+      <td>Neutrophil (109/l)</td>
+      <td>0.18</td>
+      <td>3.6E−03</td>
+      <td>0.01</td>
+      <td>0.21</td>
+      <td>1.5E−03</td>
+      <td>4.7E−03</td>
+    </tr>
+    <tr>
+      <td>Lymphocyte (109/l)</td>
+      <td>3.7E−03</td>
+      <td>0.73</td>
+      <td>0.73</td>
+      <td>4.1E−05</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Monocyte (109/l)</td>
+      <td>0.01</td>
+      <td>0.03</td>
+      <td>0.04</td>
+      <td>0.01</td>
+      <td>4.2E−03</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_Bold values denote statistical significance of p < 0.05.*Adjusted for age at diagnosis and sex.†Linear mixed model was applied to derive the coefficient estimates, per year and p value for trend.FDR: false discovery rate._
+
 In the FlowC cohort, no clear temporal trend was noted for any lymphocyte subpopulation, although ALS patients demonstrated persistently higher proportions of CD8+ CM, CD4+HLA-DR+CD38+, and CD8+HLA-DR+CD38+ cells than the reference ranges (Figure 1—figure supplement 3). After adjustment for age and sex, there was a decreasing % of naive CD4+ T cells whereas increasing %s of CD4+ EMRA, CD4+HLA-DR+CD38−, and CD8+HLA-DR+CD38− cells since ALS diagnosis (Supplementary file 3). Male patients showed lower levels of CD4+, naive CD4+, and Th2 of CD4+ CM cells, but higher levels of CD4+ effector memory (EM, CD4+ EMRA, CD8+, CD4+HLA-DR+CD38−, and CD4+HLA-DR+CD38+ cells, compared with female patients, especially early stage after diagnosis (Figure 1—figure supplement 4)). Patients with limb onset had lower levels of CD8+ CM and CD4+HLA-DR+CD38+ cells compared with patients with other site of onset, whereas carriers of C9orf72 expansions had higher levels of natural killer (NK) cells and T cells, but lower levels of naive CD4+ T cells and CD8+ EM cells, than other patients (Figure 1—figure supplement 5).
 
-## Survival
+### Survival
 
 During a median follow-up of 1.1 years, we observed 163 deaths or use of invasive ventilation among the 288 patients of the main cohort. No association was noted between the level of leukocytes, neutrophils, lymphocytes, or monocytes with risk of death (Supplementary file 4). This result did not change after excluding patients diagnosed before the start of the Motor Neuron Disease (MND) Quality Registry, focusing on first cell measure only, or excluding patients with C9orf72 expansions (Supplementary file 5). Per standard deviation (SD) increase of neutrophil-to-lymphocyte ratio (NLR), there was a higher risk of death (hazard ratio [HR] = 1.31, 95% confidence interval [CI]: 1.13–1.52).
 
 In the FlowC cohort, we found higher NK cell counts and %s of Th2-diffrentiated CD4+ CM cells to be associated with lower risk of death, whereas higher %s of CD4+ EMRA cells and CD8+ T cells were associated with higher risk of death (Figure 2). These results were largely similar after restricting the analysis to first measure of lymphocytes (data not shown) or after excluding patients with C9orf72 expansions (Figure 2—figure supplement 1).
 
-## Functional status and disease progression rate
+![Figure 2.](https://cdn.elifesciences.org/articles/74065/elife-74065-fig2-v1.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74065/elife-74065-fig2-figsupp1-v1.jpg)
+
+### Functional status and disease progression rate
 
 In the main cohort, a higher level of leukocytes, neutrophils, or monocytes was associated with a lower Amyotrophic Lateral Sclerosis Functional Rating Scale – revised (ALSFRS-R) score measured at the time of sampling, whereas no such correlation was evident for lymphocyte counts (Table 2). There was, however, no association of leukocytes, neutrophils, lymphocytes, or monocytes with disease progression rate. Disease progression rate differed however between patients with different NLRs (e.g., p = 0.04, comparing group with above third tertile NLR to the group with below first tertile NLR). A greater longitudinal increase of leukocytes, neutrophils, and monocytes was associated with a greater longitudinal decline in ALSFRS-R score (Table 3).
 
+**Table 2.**
+ Cross-sectional correlations between leukocyte populations and amyotrophic lateral sclerosis (ALS) Functional Rating Scale-revised (ALSFRS-R) score and disease progression rate, a cohort study of 288 ALS patients in Stockholm, Sweden*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Cell type</th>
+      <th colspan="3">ALSFRS-R</th>
+      <th colspan="3">Progression rate</th>
+    </tr>
+    <tr>
+      <th>Coefficient</th>
+      <th>p value</th>
+      <th>FDR</th>
+      <th>Coefficient</th>
+      <th>p value</th>
+      <th>FDR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Leukocyte (109/l)</td>
+      <td>−2.80</td>
+      <td>4.0E−03</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>0.74</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>Neutrophil (109/l)</td>
+      <td>−3.10</td>
+      <td>1.0E−03</td>
+      <td>4.0E−03</td>
+      <td>0.05</td>
+      <td>0.33</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>Lymphocyte (109/l)</td>
+      <td>1.48</td>
+      <td>0.15</td>
+      <td>0.15</td>
+      <td>−0.08</td>
+      <td>0.32</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>Monocyte (109/l)</td>
+      <td>−2.75</td>
+      <td>2.0E−03</td>
+      <td>4.0E−03</td>
+      <td>−0.03</td>
+      <td>0.52</td>
+      <td>0.69</td>
+    </tr>
+  </tbody>
+</table>
+
+_Bold values denote statistical significance of p < 0.05.*Generalized estimating equation model was applied to derive the coefficient estimates and p values, with adjustment for age at diagnosis and sex. ALSFRS-R score ranges from 0 to 48, with higher score showing better motor function status. Progression rate indicates the decline of motor function per month.FDR: false discovery rate._
+
+**Table 3.**
+ Associations between longitudinal changes in cell measures and longitudinal changes in Amyotrophic Lateral Sclerosis Functional Rating Scale – revised (ALSFRS-R) score, a cohort study of 288 patients with ALS in Stockholm, Sweden†.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Cell type</th>
+      <th colspan="2">Unadjusted</th>
+      <th colspan="2">Adjusted*</th>
+    </tr>
+    <tr>
+      <th>Coefficient</th>
+      <th>p value</th>
+      <th>Coefficient</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Leukocyte (109/l)</td>
+      <td>−5.72</td>
+      <td>0.010</td>
+      <td>−5.41</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Neutrophil (109/l)</td>
+      <td>−4.05</td>
+      <td>0.020</td>
+      <td>−3.85</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>Lymphocyte (109/l)</td>
+      <td>−0.49</td>
+      <td>0.839</td>
+      <td>−0.22</td>
+      <td>0.925</td>
+    </tr>
+    <tr>
+      <td>Monocyte (109/l)</td>
+      <td>−12.90</td>
+      <td>0.001</td>
+      <td>−12.14</td>
+      <td>0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_Bold values denote statistical significance of p < 0.05.*Adjusted for age at diagnosis and sex.†Generalized estimating equation model was applied to derive the coefficient estimates and p values, per unit change of log-transformed leukocyte counts._
+
 In the FlowC cohort, none of the lymphocyte subtypes was associated with ALSFRS-R score or disease progression rate measured at the time of sampling (Supplementary file 6).
 
-## Sensitivity analysis for ongoing infection
+### Sensitivity analysis for ongoing infection
 
 We excluded 15 patients in the main cohort who had been sampled with the presence of infection. The results on risk of death, ALSFRS-R score and disease progression rate remained similar although some results lost statistical significance (Supplementary files 7 and 8). There was no patient with sampling during ongoing infection in the FlowC cohort.
 
@@ -84,29 +278,199 @@ In conclusion, our findings suggest a dual role of immune responses in ALS progn
 
 ## Materials and methods
 
-## Study cohort
+### Study cohort
 
 The Swedish Motor Neuron Disease (MND) Quality Registry was established in 2015, collecting information on clinical characteristics, biological test results, and quality of life outcomes from >80% of MND patients in Sweden (Longinetti et al., 2018). Since 2017, the MND Quality Registry has included 99% of MND patients in the Stockholm area among whom 97.1% are diagnosed with ALS. All ALS diagnoses were made by a specialist in neurology and followed up by a neuromuscular specialist, and met the diagnostic requirement of definite, probable, probable laboratory supported, or possible ALS according to the revised El Escorial criteria (Ludolph et al., 2015; Brooks et al., 2000). To ensure the accuracy of diagnosis, all patients in the registry are re-evaluated annually to update diagnosis, whenever needed.
 
 Through the MND Quality Registry, we first identified 420 patients with ALS diagnosed from the start of the registry until October 7, 2020, in Stockholm. We reviewed the medical records of these patients to identify information on peripheral leukocyte populations (i.e., differential leukocyte counts). During this process, we excluded 12 patients who were not diagnosed at the ALS Research and Care Center, Karolinska University Hospital – the only tertiary referral center for ALS in Stockholm, three patients with unknown time of symptom onset, 82 patients lacking leukocyte counts, and 35 patients with counts outside of the stipulated observation period (i.e., from 3 months before date of diagnosis until October 7, 2020). The final analysis cohort included 288 patients (68.6%), with at least one recorded differential leukocyte count during the observation period. The included patients did not differ significantly in terms of demographic and clinical characteristics from the excluded patients (Table 4). About half of the patients had a single measurement of leukocytes whereas the other half had been sampled two or more times.
 
+**Table 4.**
+ Characteristics of the 288 patients with amyotrophic lateral sclerosis (ALS) included in the study, compared with the entire population of ALS patients during the study period in Stockholm, Sweden.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>Patients included in the study (N = 288)</th>
+      <th>All patients in Stockholm (N = 420)</th>
+      <th>p value for difference*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex, N (%)</td>
+      <td></td>
+      <td></td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>134 (47%)</td>
+      <td>201 (48%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>154 (53%)</td>
+      <td>219 (52%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Age at diagnosis, years</td>
+      <td></td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Median (Q1, Q3)</td>
+      <td>65 (56, 71)</td>
+      <td>66 (57, 72)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Diagnostic delay, months</td>
+      <td></td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Median (Q1, Q3)</td>
+      <td>12.30 (7.88, 19.93)</td>
+      <td>12.35 (7.59, 20.54)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene mutation, N (%)†</td>
+      <td></td>
+      <td></td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>SOD1</td>
+      <td>7 (2.88%)</td>
+      <td>9 (2.56%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C9orf72</td>
+      <td>22 (9.05%)</td>
+      <td>30 (8.55%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4 (1.65%)</td>
+      <td>5 (1.42%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Site of onset, N (%)</td>
+      <td></td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Limb</td>
+      <td>182 (63%)</td>
+      <td>250 (60%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bulbar</td>
+      <td>78 (27%)</td>
+      <td>118 (28%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>20 (7%)</td>
+      <td>32 (8%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>8 (3%)</td>
+      <td>20 (5%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Family history, N (%)</td>
+      <td></td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>19 (7%)</td>
+      <td>30 (7%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>144 (50%)</td>
+      <td>201 (48%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Not clear</td>
+      <td>3 (1%)</td>
+      <td>7 (2%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>122 (42%)</td>
+      <td>182 (43%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">No. of measurements for cell count (%)</td>
+      <td></td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>One</td>
+      <td>146 (51%)</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Two</td>
+      <td>75 (26%)</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Three</td>
+      <td>35 (12%)</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Four or more</td>
+      <td>32 (11%)</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*p value for the differences between patients included in the study and patients not included in the study; Wilcoxon rank sum test was used for the comparison of continuous variables whereas chi-square test was used for the comparison of categorical variables.†Results available for 243 of the 288 patients included in the study, and 351 of the entire 420 patients in Stockholm._
+
 Among the ALS patients diagnosed at the Karolinska University Hospital and with a date of symptom onset (N = 405), we further performed flow cytometry in 92 patients (‘FlowC cohort’) to determine lymphocyte subpopulations (i.e., T, B, and NK cells) as well as an extended T lymphocyte panel ‘FITMaN’ – an internationally standardized panel reported by the Flow Immunophenotyping Technical Meeting at NIH (Maecker et al., 2012). Compared to the main study cohort, patients of the FlowC cohort were slightly younger and more likely to have a limb onset (Supplementary file 1). In both the main and FlowC cohorts, we followed the ALS patients from date of diagnosis or first cell measurement (differential leukocyte counts or FlowC), whichever came later, until occurrence of the outcome of interest (i.e., death or use of invasive ventilation) or October 7, 2020, whichever came first.
 
-## Blood samples and flow cytometric analysis
+### Blood samples and flow cytometric analysis
 
 All samples were freshly collected. The sample processing and analyzing procedures were according to the validated protocol at the Departments of Clinical Chemistry (differential leukocyte counts) and Clinical Immunology and Transfusion Medicine (FlowC), Karolinska University Hospital. All analyses were performed during daytime, within 24 hr of sampling. Differential leukocyte counts were done on a Sysmex XN-9000 (Sysmex, Kobe, Japan). FlowC was implemented in clinical routine based on the standardized phenotyping panel by the Human Immunophenotyping Consortium with a set of defined 8-color antibody cocktails (Maecker et al., 2012). The experiments were performed on a triple-laser Beckman Coulter Gallios and analyzed by Kaluza Software (Beckman Coulter, Brea, CA).
 
 Differential leukocyte counts included neutrophils, lymphocytes, monocytes, eosinophils, and basophils. We did not include eosinophils and basophils in the analysis as they in most cases were low to undetectable. In addition to studying leukocytes individually, we also analyzed NLR as suggested by previous studies (Choi et al., 2020; Wei et al., 2022). The FITMaN panel included measures of 23 lymphocyte subpopulations, including (1) counts of B cells, NK cells, and T cells; (2) %s of CD4+ and CD8+ T cell subtypes (i.e., naive, CM, EM, and effector memory cells re-expressing CD45RA [EMRA] T cells based on CCR7 and CD45RA expression, as well as Th1, Th2, and Th17 of CM and EM CD4+ T cells based on CXCR3 and CCR6 expression); and (3) %s of subtypes of activated CD4+ and CD8+ T cells based on the expression of HLA-DR and CD38 (i.e., CD4+HLA-DR+CD38− cells, CD4+HLA-DR+CD38+ cells, CD8+HLA-DR+CD38− cells, and CD8+HLA-DR+CD38+ cells). T cells were gated from a lymphocyte (FCS/SSC) gate as cells expressing CD45 and CD3. The unit of cell count was 109/l whereas the %s were expressed as the proportions of the immune cell populations out of their parent populations. The normal references for leukocytes (main cohort) were reported by the Department of Clinical Chemistry, Karolinska University Hospital, based on the Nordic Reference Interval Project (NORIP) (Nordin et al., 2004) (leukocyte: 3.5–8.8; neutrophil: 1.6–5.9; lymphocyte: 1.1–3.5; monocyte: 0.2–0.8; 109/l). The reference values for FlowC were reported in the form of 5th to 95th percentiles using reference normal ranges obtained from 50 healthy adults. All cell counts and %s were retrieved from patient medical records.
 
-## Outcomes of interest
+### Outcomes of interest
 
 The primary study outcome was risk of death or use of invasive ventilation after ALS diagnosis, identified from the MND Quality Registry. The secondary study outcomes included functional status measured through the ALSFRS-R and disease progression rate. ALSFRS-R is a questionnaire-based scale that measures the motor function and disease severity of ALS patients and is considered the gold standard measure of disability progression (Makary et al., 2021). Higher ALSFRS-R score indicates better functional status. We acquired information on all available ALSFRS-R scores for the ALS patients from the MND Quality Registry. Progression rate measures the rate of ALSFRS-R decline and were calculated by dividing the difference between 48 (the full score) and measured ALSFRS-R score at a specific time point by the time difference between time of symptom onset to the measurement time of ALSFRS-R (in months). Progression rate is an independent prognostic predictor for ALS (Labra et al., 2016).
 
-## Other clinical characteristics
+### Other clinical characteristics
 
 Data on sex, age at diagnosis, diagnostic delay, gene mutation, site of onset, family history, and body mass index (BMI) were collected from the MND Quality Registry or medical records. Diagnostic delay was calculated as time difference between date of onset and date of diagnosis. Site of onset was categorized as ‘limb’, ‘bulbar’, ‘other’, and ‘missing’. The definition of family history was based on whether a clear history of ALS existed among the relatives and categorized as ‘yes’, ‘no’, ‘not clear’, and ‘missing’. Genetic testing was offered to all patients with ALS around the time of diagnosis at the ALS Research and Care Center at Karolinska University Hospital. A total of 88 of the most common ALS-contributing genes, including SOD1, C9orf72, FUS, TARDBP, TBK1, OPTN, VCP, etc., were screened.
 
-## Statistical analysis
+### Statistical analysis
 
 To better understand the studied cell populations in ALS, we first performed a few analyses focusing on the different cell populations alone. We first calculated the mean levels of measured cell populations among ALS patients, by summarizing all measurements from 3 months before diagnosis until end of follow-up. To visualize the temporal patterns of the cell populations, we drew a trajectory line of all measurements for each cell type and each patient. We then used the locally estimated scatterplot smoothing curves with 95% CIs to show the temporal pattern of the predicted median level of each cell type after ALS diagnosis. If the CIs did not overlap with the normal ranges of the cell populations, we considered the observed levels among ALS patients to be statistically deviant from normal ranges. We also used linear mixed model to assess the within-individual temporal changes of cell populations after ALS diagnosis. In this analysis, we included a random intercept to account for the initial differences between individuals and adjusted for age at diagnosis and sex. We analyzed all ALS patients together first and then separately by sex, site of onset and presence of C9orf72 expansions. Patients with C9orf72 expansions have been suggested to demonstrate a different immune phenotype compared with ALS patients without such expansions (Pinilla et al., 2021; McCauley et al., 2020). To evaluate whether ALS treatment would influence the cell counts, we further visualized the temporal patterns of differential leukocyte counts before and after Riluzole treatment.
 

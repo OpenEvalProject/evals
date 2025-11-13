@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.11290.001 The ability of the adult brain to undergo plastic changes is of particular interest in medicine, especially regarding recovery from injuries or improving learning and cognition. Matrix metalloproteinases (MMPs) have been associated with juvenile experience-dependent primary visual cortex (V1) plasticity, yet little is known about their role in this process in the adult V1. Activation of MMPs is a crucial step facilitating structural changes in a healthy brain; however, upon brain injury, upregulated MMPs promote the spread of a lesion and impair recovery. To clarify these seemingly opposing outcomes of MMP-activation, we examined the effects of MMP-inhibition on experience-induced plasticity in healthy and stoke-affected adult mice. In healthy animals, 7-day application of MMP-inhibitor prevented visual plasticity. Additionally, treatment with MMP-inhibitor once but not twice following stroke rescued plasticity, normally lost under these conditions. Our data imply that an optimal level of MMP-activity is crucial for adult visual plasticity to occur. DOI: http://dx.doi.org/10.7554/eLife.11290.001
+The ability of the adult brain to undergo plastic changes is of particular interest in medicine, especially regarding recovery from injuries or improving learning and cognition. Matrix metalloproteinases (MMPs) have been associated with juvenile experience-dependent primary visual cortex (V1) plasticity, yet little is known about their role in this process in the adult V1. Activation of MMPs is a crucial step facilitating structural changes in a healthy brain; however, upon brain injury, upregulated MMPs promote the spread of a lesion and impair recovery. To clarify these seemingly opposing outcomes of MMP-activation, we examined the effects of MMP-inhibition on experience-induced plasticity in healthy and stoke-affected adult mice. In healthy animals, 7-day application of MMP-inhibitor prevented visual plasticity. Additionally, treatment with MMP-inhibitor once but not twice following stroke rescued plasticity, normally lost under these conditions. Our data imply that an optimal level of MMP-activity is crucial for adult visual plasticity to occur.
 
 ## Introduction
 
@@ -32,55 +32,283 @@ Using a combination of in vivo optical imaging of intrinsic signals and behavior
 
 ## Results
 
-## Inhibition of MMPs prevented experience-induced adult visual cortex plasticity
+### Inhibition of MMPs prevented experience-induced adult visual cortex plasticity
 
-MMPs were shown to be critical for open eye potentiation after 7 days of MD in
+MMPs were shown to be critical for open eye potentiation after 7 days of MD in juvenile rats (Spolidoro et al., 2012). Since it is believed that the mechanisms underlying juvenile and adult OD-plasticity are different (Hofer et al., 2006; Sato and Stryker, 2008; Ranson et al., 2012), we aimed to test whether MMPs also play a significant role in adult V1-plasticity, in which open-eye potentiation is a major component mediating these changes. First, we induced 7-day-MD in 3-month-old mice and examined whether treatment with GM6001 (50mg/kg/day, for 7days), a broad-spectrum MMP-inhibitor, can prevent ocular dominance (OD) plasticity, measured by in vivo intrinsic signal optical imaging in V1. Figure 1 shows representative examples of optically recorded activity and polar maps after visual stimulation of the right (deprived, contralateral) and left (open, ipsilateral) eye in the binocular region of the left V1 in vehicle-treated (control, Figure 1A,C) and GM6001-treated adult mice (GM6001, Figure 1B,D). In both, control and GM6001-treated mice without MD (Figure 1A,B) the activity patch induced by stimulation of the contralateral eye was darker than that of the ipsilateral eye; the OD-index (ODI) was positive and warm colors dominated the OD-map, indicating typical contralateral eye dominance in V1. 7 days of MD induced an OD-shift towards the open eye in control (Figure 1C) but not in GM6001-treated mice (Figure 1D): in control mice after MD visual stimulation of the contralateral and ipsilateral eye activated V1 rather equally strong; the OD-histogram was shifted to the left and cooler colors appeared in the 2-dimensional OD-map. In contrast, V1-activation of GM6001-treated mice after MD was similar to values without MD and the deprived eye still dominated V1-activity (compare Figure 1B and D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11290/elife-11290-fig1-v3.jpg)
 
-**Figure 1.:** Representative examples of optically recorded activity and polar maps in V1 of both vehicle-treated mice (control, A, C) and animals treated with the MMP-inhibitor GM6001 (GM6001, B, D), before (no MD, A, B) and after monocular deprivation (7 days MD, C, D). V1-maps after visual stimulation of the contra- (contra) and ipsilateral (ipsi) eye in the binocular region of V1. Top panels (A–D) display grayscale-coded response magnitude maps (V1-activation) and their quantification on the right: histogram of (C-I)/(C+I). V1-activation is illustrated as fractional change in reflection ×10-4. Average V1-activation is illustrated as a number at the lower right corner of each magnitude map; the average OD-index (ODI) as a number in the upper right corner of the histograms. Bottom panels represent color-coded polar maps of retinotopy, and the color-coded OD-map. In both control and GM6001-treated mice without MD, V1-activity was dominated by input from the contralateral eye: activity patches after contralateral eye stimulation were darker than after ipsilateral eye stimulation, the average ODI was positive, and warm colors prevailed in the OD-map, illustrating contralateral dominance. After 7 days of MD, OD-plasticity occurred only in control (C) but not in GM6001-treated mice (D): in control mice, both eyes activated V1 rather equally strong, the OD-histogram was shifted to the left (blue arrow in C), and colder colors appeared in the OD-map. In contrast, in GM6001-treated mice, the deprived (contralateral) eye continued to dominate V1, the ODI was not reduced and warm colors still dominated the OD-map. Scale bar: 1mm.DOI: http://dx.doi.org/10.7554/eLife.11290.003
+**Figure 1.:** Representative examples of optically recorded activity and polar maps in V1 of both vehicle-treated mice (control, A, C) and animals treated with the MMP-inhibitor GM6001 (GM6001, B, D), before (no MD, A, B) and after monocular deprivation (7 days MD, C, D). V1-maps after visual stimulation of the contra- (contra) and ipsilateral (ipsi) eye in the binocular region of V1. Top panels (A–D) display grayscale-coded response magnitude maps (V1-activation) and their quantification on the right: histogram of (C-I)/(C+I). V1-activation is illustrated as fractional change in reflection ×10-4. Average V1-activation is illustrated as a number at the lower right corner of each magnitude map; the average OD-index (ODI) as a number in the upper right corner of the histograms. Bottom panels represent color-coded polar maps of retinotopy, and the color-coded OD-map. In both control and GM6001-treated mice without MD, V1-activity was dominated by input from the contralateral eye: activity patches after contralateral eye stimulation were darker than after ipsilateral eye stimulation, the average ODI was positive, and warm colors prevailed in the OD-map, illustrating contralateral dominance. After 7 days of MD, OD-plasticity occurred only in control (C) but not in GM6001-treated mice (D): in control mice, both eyes activated V1 rather equally strong, the OD-histogram was shifted to the left (blue arrow in C), and colder colors appeared in the OD-map. In contrast, in GM6001-treated mice, the deprived (contralateral) eye continued to dominate V1, the ODI was not reduced and warm colors still dominated the OD-map. Scale bar: 1mm.
 
-Quantification of all imaging data is illustrated in
+Quantification of all imaging data is illustrated in Figure 2. In control mice OD-indices were significantly reduced after MD (control, n=6, 0.27 ± 0.03 vs. control+MD, n=5, 0.02 ± 0.01, t-test, p<0.001, Figure 2A), and the OD-shift was mediated by an increase in open eye responses in V1 (control, 1.3 ± 0.2 vs. control+MD, 1.8 ± 0.1, t-test, p<0.05, Figure 2B), with no concomitant changes in visually driven activity after deprived eye stimulation (control, 1.9 ± 0.2 vs. control+MD, n=5, 1.8 ± 0.1, t-test, p>0.05), indicating a typical adult type of OD-plasticity. Thus, the vehicle treatment did not interfere with the induction of experience-dependent cortical plasticity in adult mouse V1. In contrast, in GM6001-treated mice OD-indices were indistinguishable before and after MD (GM6001, n=5, 0.23 ± 0.02 vs. GM6001+MD, n=5, 0.24 ± 0.02, t-test, p>0.05 Figure 2A). Likewise, V1-activations via the ipsilateral (GM6001, 1.2 ± 0.2 vs. GM6001+MD, 1.2 ± 0.04) or contralateral eye (GM6001, 1.9 ± 0.2 vs. GM6001+MD, 1.9 ± 0.1) were similar before and after MD (for all, t-test, p>0.05, Figure 2B), indicating that the deprived, contralateral eye still dominated V1. This absence of any detectable OD-shift during MMP-inhibition strongly suggests a crucial role of MMPs for mediating visual cortical plasticity in the adult brain.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11290/elife-11290-fig2-v3.jpg)
 
-**Figure 2.:** (A) Optically imaged OD-indices in animals without MD (solid symbols) and after 7 days of MD (right half of symbols is black) in control (vehicle-treated, black) and in GM6001-treated mice (grey). Symbols illustrate ODI-values of individual cases; means are marked by horizontal lines. (B) V1-activation elicited by stimulation of the contralateral (C) or ipsilateral (I) eye in animals before (open circles) and after MD (closed eye marked as a black filled circle, and striped bar). The OD-shift in control mice was mediated by an increase of open eye responses in V1, while no OD-shift and no changes in V1-actiavtion were observed in GM6001-treated mice after MD. Mean ± SEM, *p<0.05, **p<0.01, ***p<0.001. ANOVA followed by multiple comparisons with Bonferroni correction was used in A; two-tailed t-test was used in B.DOI: http://dx.doi.org/10.7554/eLife.11290.00410.7554/eLife.11290.005Figure 2—source data 1.Figure 2.DOI: http://dx.doi.org/10.7554/eLife.11290.005
+**Figure 2.:** (A) Optically imaged OD-indices in animals without MD (solid symbols) and after 7 days of MD (right half of symbols is black) in control (vehicle-treated, black) and in GM6001-treated mice (grey). Symbols illustrate ODI-values of individual cases; means are marked by horizontal lines. (B) V1-activation elicited by stimulation of the contralateral (C) or ipsilateral (I) eye in animals before (open circles) and after MD (closed eye marked as a black filled circle, and striped bar). The OD-shift in control mice was mediated by an increase of open eye responses in V1, while no OD-shift and no changes in V1-actiavtion were observed in GM6001-treated mice after MD. Mean ± SEM, *p<0.05, **p<0.01, ***p<0.001. ANOVA followed by multiple comparisons with Bonferroni correction was used in A; two-tailed t-test was used in B.
 
 To test whether injections of GM6001 or vehicle influenced basic properties of V1, we analyzed V1-activation and the quality of the retinotopic maps in all experimental groups without MD. Essentially, there were no significant differences between control (vehicle-treated) and GM6001-treated mice in both map quality and V1-activation (control/GM6001, elevation, map scatter: 0.9 ± 0.2/1.1 ± 0.1; V1-activation: 3.8 ± 0.5/3.2 ± 0.4; azimuth, map scatter: 12.1 ± 2.9/4.8 ± 1.9, V1-activation: 3.1 ± 0.5/2.8 ± 0.3; t-test, p>0.05 for all comparisons), indicating that GM6001/vehicle-treatment did not impact basic map quality nor magnitude of V1-activation.
 
-## Inhibition of MMPs prevented experience-enabled improvements in visual capabilities
+### Inhibition of MMPs prevented experience-enabled improvements in visual capabilities
 
-In addition to our optical imaging experiments, we also performed behavioral assessments of visual abilities in the same groups of mice. While the experience-induced improvements in the spatial frequency and contrast thresholds of the optomotor reflex of the open eye after MD are cortex-dependent (
+In addition to our optical imaging experiments, we also performed behavioral assessments of visual abilities in the same groups of mice. While the experience-induced improvements in the spatial frequency and contrast thresholds of the optomotor reflex of the open eye after MD are cortex-dependent (Prusky et al., 2006), the mechanism underlying these enhancements is not yet fully understood. Using the virtual-reality optomotor setup (Prusky et al., 2004) and daily testing, we examined the role of MMPs in this kind of interocular plasticity. Spatial frequency and contrast sensitivity thresholds of the optomotor reflex were measured in both vehicle-treated (control) and GM6001-treated mice before and during the 7-day MD-period. Mice without MD did not show any experience-induced changes in the spatial frequency (n=6, day 0: 0.37 ± 0.002 cyc/deg vs. day 7: 0.37 ± 0.001 cyc/deg, t-test, p>0.05, Figure 3A) or contrast sensitivity thresholds of the optomotor reflex (day 0 vs. day 7, for all spatial frequencies, ANOVA, p>0.05, Figure 3B and Table 1). In contrast, vehicle-treated (control) mice with 7 days of MD showed the typical enhancements of both the spatial frequency and contrast thresholds of the optomotor reflex: the spatial frequency threshold of the open eye increased on average by 22 ± 1% from day 0 to day 7 (day 0/7: 0.37 ± 0.002/0.46 ± 0.0001 cyc/deg, n=5, t-test, p<0.001, Figure 3A) and was thus significantly different from control mice without MD (n=6) that displayed no experience-driven changes (ANOVA, p<0.001, Figure 3A). Likewise, contrast sensitivity of the open eye of control mice increased after MD (for all spatial frequencies, ANOVA, p<0.001, Table 1), and was different on day 7 compared to control mice without MD (control, n=5 vs. control+MD, n=5, t-test, p<0.001, Figure 3B). In contrast, in GM6001-treated mice MD did neither induce an improvement of the spatial frequency (day 0/day 7: 0.37 ± 0.002/0.38 ± 0.002 cyc/deg, n=5, t-test, p>0.05 Figure 3A), nor of contrast sensitivity thresholds of the optomotor reflex of the open eye (at all spatial frequencies, ANOVA, p>0.05, Figure 3B). Treatment in the no MD groups (control, GM6001) had no effect on baseline spatial frequency and contrast thresholds (for all measurements, ANOVA, p>0.05, Table 1, Figure 3), demonstrating that MMP-inhibition did not affect the ability to exhibit the optomotor reflex but prevented the experience-enabled changes induced by MD. Together, our behavioral vision tests indicate an essential role for MMPs in this cortex-dependent interocular plasticity paradigm: MMP-inhibition completely abolished the experience-enabled improvements of the optomotor reflex of the open eye.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11290/elife-11290-fig3-v3.jpg)
 
-**Figure 3.:** A) and contrast sensitivity (B) thresholds of the optomotor reflex of the open eye in adult mice after MD.Values of vehicle-treated (control) mice are displayed in black (triangles), values of GM6001-treated mice in grey (circles); values of animals with monocular deprivation (+MD) are marked by displaying the right half of the symbol in black. (A) Spatial frequency threshold values in cycles/degree (cyc/deg), measured in the optomotor setup plotted against days. (B) Contrast sensitivity values on day 7 at 6 different spatial frequencies. Mean ± SEM; ***p<0.001, ns p>0.05. ANOVA followed by multiple comparisons with Bonferroni correction was used; two-tailed t-test was used within the group analysis in A.DOI: http://dx.doi.org/10.7554/eLife.11290.00610.7554/eLife.11290.007Figure 3—source data 1.Figure 3.DOI: http://dx.doi.org/10.7554/eLife.11290.007
+**Figure 3.:** Values of vehicle-treated (control) mice are displayed in black (triangles), values of GM6001-treated mice in grey (circles); values of animals with monocular deprivation (+MD) are marked by displaying the right half of the symbol in black. (A) Spatial frequency threshold values in cycles/degree (cyc/deg), measured in the optomotor setup plotted against days. (B) Contrast sensitivity values on day 7 at 6 different spatial frequencies. Mean ± SEM; ***p<0.001, ns p>0.05. ANOVA followed by multiple comparisons with Bonferroni correction was used; two-tailed t-test was used within the group analysis in A.
 
-## Brief inhibition of MMPs rescued experience-induced visual cortex plasticity after stroke
+**Table 1.**
+ Optomotry-measured contrast sensitivity improvements after MD
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="4">Contrast sensitivity</th>
+    </tr>
+    <tr>
+      <th colspan="4">Day 0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spatial frequency (cyc/deg)</td>
+      <td>Control</td>
+      <td>GM6001</td>
+      <td>Control+MD</td>
+      <td>GM6001+MD</td>
+    </tr>
+    <tr>
+      <td>0.031</td>
+      <td>3.6 ± 0.04</td>
+      <td>3.5 ± 0.02</td>
+      <td>3.5 ± 0.01</td>
+      <td>3.5 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>0.064</td>
+      <td>12.7 ± 0.52</td>
+      <td>11.8 ± 0.16</td>
+      <td>11.6 ± 0.23</td>
+      <td>12.0 ± 0.15</td>
+    </tr>
+    <tr>
+      <td>0.092</td>
+      <td>11.7 ± 0.51</td>
+      <td>10.9 ± 0.18</td>
+      <td>10.7 ± 0.22</td>
+      <td>11.3 ± 0.17</td>
+    </tr>
+    <tr>
+      <td>0.103</td>
+      <td>10.3 ± 0.54</td>
+      <td>10.2 ± 0.10</td>
+      <td>10.0 ± 0.16</td>
+      <td>10.6 ± 0.12</td>
+    </tr>
+    <tr>
+      <td>0.192</td>
+      <td>6.9 ± 0.07</td>
+      <td>6.9 ± 0.12</td>
+      <td>7.0 ± 0.11</td>
+      <td>6.8 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>0.272</td>
+      <td>3.5 ± 0.04</td>
+      <td>3.5 ± 0.02</td>
+      <td>3.5 ± 0.01</td>
+      <td>3.5 ± 0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Day 7</td>
+    </tr>
+    <tr>
+      <td>0.031</td>
+      <td>3.6 ± 0.04</td>
+      <td>3.5 ± 0.02</td>
+      <td>5.1 ± 0.17</td>
+      <td>3.6 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>0.064</td>
+      <td>12.7 ± 0.47</td>
+      <td>11.8 ± 0.18</td>
+      <td>26.9 ± 2.35</td>
+      <td>12.6 ± 0.29</td>
+    </tr>
+    <tr>
+      <td>0.092</td>
+      <td>11.7 ± 0.44</td>
+      <td>11.0 ± 0.15</td>
+      <td>23.3 ± 2.17</td>
+      <td>12.0 ± 0.22</td>
+    </tr>
+    <tr>
+      <td>0.103</td>
+      <td>10.5 ± 0.49</td>
+      <td>10.3 ± 0.10</td>
+      <td>21.8 ± 1.83</td>
+      <td>11.3 ± 0.17</td>
+    </tr>
+    <tr>
+      <td>0.192</td>
+      <td>7.0 ± 0.08</td>
+      <td>7.0 ± 0.10</td>
+      <td>13.5 ± 1.08</td>
+      <td>7.5 ± 0.21</td>
+    </tr>
+    <tr>
+      <td>0.272</td>
+      <td>3.5 ± 0.04</td>
+      <td>3.5 ± 0.01</td>
+      <td>4.9 ± 0.17</td>
+      <td>3.8 ± 0.25</td>
+    </tr>
+  </tbody>
+</table>
+
+### Brief inhibition of MMPs rescued experience-induced visual cortex plasticity after stroke
 
 Upregulated activity of MMPs can negatively contribute to the pathology of stroke as well as other neurodegenerative diseases (Rosenberg et al., 1996; Rosenberg, 2002; Agrawal et al., 2008). Furthermore, increased MMP-activity was observed within 24 hours of a photothrombotically (PT) induced stroke, and application of a broad spectrum MMP-inhibitor at the time of the stroke partially rescued impaired barrel cortex plasticity (Cybulska-Klosowicz et al., 2011; Liguz-Lecznar et al., 2012). Here we tested if the stroke-induced impairment of visual cortical plasticity (Greifzu et al., 2011) can be rescued by inhibiting MMPs after stroke. We examined a total of six groups of mice: all mice received a PT-stroke in their left S1 cortex, about 1 mm anterior to the anterior border of V1. Groups 1 and 2 received vehicle injections 1 h after PT (PT vehicle, PT+MD vehicle), groups 3 and 4 a single injection of the broad spectrum MMP-inhibitor GM6001 1h after stroke (PT 1xGM6001 and PT+MD 1xGM6001 1 h), group 5 received a single injection of GM6001 24 h after stroke (PT+MD+1xGM6001 24 h) and group 6 received 2 injections of GM6001 1 h and 24 h after PT (PT+MD 2xGM6001 1 h+24 h). Groups 2, 4, 5 and 6 were additionally subjected to MD.
 
 Histological analysis showed no difference in the volume of the lesion between vehicle- and GM6001-treated mice (vehicle/1xGM6001 1 h/1xGM6001 24 h/2xGM6001 1 h+24 h: 0.6 ± 0.2/1.1 ± 0.3/0.6 ± 0.3/1.2 ± 0.2 mm3, ANOVA, p>0.05). Since there was no difference in the volume of the lesion between mice that received GM6001 once or twice (ANOVA, p>0.05), we pooled these data for further analysis of lesion size and position. The PT-lesion of vehicle-treated mice measured on average 1.1 ± 0.01 mm in medio-lateral and 1.0 ± 0.02 mm in anterior-posterior direction. The lesion center was located 1.2 ± 0.4 mm anterior to the anterior border of V1, 1.7 ± 0.2 mm lateral to the midline, and 1.0 ± 0.3 mm posterior to the Bregma. For GM6001-treated mice, PT-lesion measured on average 1.2 ± 0.09 mm in medio-lateral and 1.0 ± 0.01 mm in anterior-posterior direction. Center of the lesion was situated 0.9 ± 0.3 mm anterior to the anterior border of V1, 1.9 ± 0.1 mm lateral to the midline, and 1.2 ± 0.2 mm posterior to the Bregma. There was no significant difference in the location nor the size of the lesion between vehicle- and GM6001-treated mice (ANOVA, p>0.05 for every measurement).
 
+Figure 4 shows representative examples of optically recorded activity and polar maps in V1 of adult S1-lesioned mice before and after MD. In both vehicle- and GM6001-treated mice without MD (Figure 4A,B), the activity patch induced by stimulation of the contralateral eye appeared darker than that of the ipsilateral eye, the ODI was positive and warm colors dominated in the OD-map, indicating that treatment with the MMP-inhibitor or vehicle after the PT-lesion did not influence baseline ocular dominance and sensory-induced activity in binocular V1 (Figure 4A,B). As previously observed in untreated mice, MD after small S1-lesions was also not able to induce an OD-shift towards the open eye in vehicle-treated mice (Figure 4C): V1-activity of PT-lesioned mice after MD was almost indistinguishable from animals without MD (compare Figure 4A and C), and V1 remained dominated by the deprived, contralateral eye. In contrast, GM6001-treatment rescued the OD-shift, since after MD V1 was activated equally strongly by both eyes, the ODI-histogram shifted to the left and colder colors appeared in the OD-map (Figure 4D).
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/11290/elife-11290-fig4-v3.jpg)
 
-**Figure 4.:** Representative examples of optically recorded activity and polar maps in V1 of both vehicle- (PT+vehicle, A, C) and single GM6001-treated mice (PT+1xGM6001, B, D), before (no MD, A, B) and after 7 days of MD (7days MD, C, D). V1-maps after visual stimulation of the contra- (contra) and ipsilateral (ipsi) eye in the binocular region in V1. Figure layout and data display as in Figure 1. In both vehicle- (A) and GM6001-treated PT-lesioned mice without MD (B), V1 activation was dominated by the contralateral eye: activity patches induced by contralateral eye stimulation were darker than after ipsilateral eye stimulation, the average ODI was positive, and warm colors dominated the OD-map. (C) While 7 days of MD did not induce an OD-shift in vehicle-treated PT mice, and deprived (contra) eye patches still dominated V1, a single treatment with GM6001 rescued OD-plasticity in PT mice (D): both eyes activated V1 about equally strong, the histogram of ODIs shifted to the left (blue arrow) and colder colors appeared in the OD-map. Scale bar: 1mmDOI: http://dx.doi.org/10.7554/eLife.11290.009
+**Figure 4.:** Representative examples of optically recorded activity and polar maps in V1 of both vehicle- (PT+vehicle, A, C) and single GM6001-treated mice (PT+1xGM6001, B, D), before (no MD, A, B) and after 7 days of MD (7days MD, C, D). V1-maps after visual stimulation of the contra- (contra) and ipsilateral (ipsi) eye in the binocular region in V1. Figure layout and data display as in Figure 1. In both vehicle- (A) and GM6001-treated PT-lesioned mice without MD (B), V1 activation was dominated by the contralateral eye: activity patches induced by contralateral eye stimulation were darker than after ipsilateral eye stimulation, the average ODI was positive, and warm colors dominated the OD-map. (C) While 7 days of MD did not induce an OD-shift in vehicle-treated PT mice, and deprived (contra) eye patches still dominated V1, a single treatment with GM6001 rescued OD-plasticity in PT mice (D): both eyes activated V1 about equally strong, the histogram of ODIs shifted to the left (blue arrow) and colder colors appeared in the OD-map. Scale bar: 1mm
 
-Quantification of all individual cases is presented in
+Quantification of all individual cases is presented in Figure 5. In vehicle-treated mice, OD-plasticity was abolished after PT (PT vehicle, n=4, 0.25 ± 0.02 vs. PT+MD vehicle, n=4, 0.22 ± 0.04, t-test, p>0.05, Figure 5A) and there was no change in visually driven activity in V1 from either the deprived (C: PT vehicle, 1.9 ± 0.1 vs. PT+MD vehicle, 2.2 ± 0.3, t-test p>0.05) or the open eye (I: PT, 1.2 ± 0.1 vs. PT+MD, 1.5 ± 0.3, t-test, p>0.05) (Figure 5B). In contrast, treatment once, but not twice, with GM6001 rescued OD-plasticity after stroke. Specifically, mice which received a single injection of GM6001 1 h or 24 h after PT-induction showed a significant OD-shift, while mice receiving two injections (1 h+24 h) after the injury did not display OD-plasticity (PT+GM6001, n=5, ODI=0.26 ± 0.04 vs. PT+MD+1xGM6001 1 h, n=5, 0.05 ± 0.04, p<0.01; vs PT+MD+1xGM6001 24 h, n=4, 0.05 ± 0.01, p<0.01 and vs. PT+MD+2xGM6001 1 h+24 h, n=4, 0.17 ± 0.04, p>0.05, ANOVA Figure 5A). Interestingly, in the three MD groups treated with GM6001, deprived eye responses were reduced compared to GM6001-treated mice without MD (PT+GM6001, 2.3. ± 0.1 vs. PT+MD+1xGM6001 1 h, 1.7 ± 0.1, ANOVA, p<0.01; vs PT+MD+1xGM6001 24 h, 1.4 ± 0.1, p<0.001; and vs. PT+MD+2xGM6001 1 h+24 h, 1.8 ± 0.1, p<0.05, ANOVA) and there was no change in open eye responses in V1 (PT+GM6001, 1.5 ± 0.1 vs. PT+MD+1xGM6001 1 h, 1.5 ± 0.1; vs PT+MD+1xGM6001 24 h, 1.3 ± 0.1; and vs. PT+MD+2xGM6001 1 h+24 h, 1.3 ± 0.1, for all p>0.05, ANOVA), indicating strongly reduced but not entirely absent plasticity-promoting effect in the two-days treatment group (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/11290/elife-11290-fig5-v3.jpg)
 
-**Figure 5.:** Quantification of the imaging data, layout and data display as in Figure 2. (A) Optically imaged OD-indices in mice without MD and after 7 days of MD in vehicle-treated 1h after PT (black) mice and single GM6001-treated (PT 1xGM6001; PT+MD 1xGM6001 1 hr and PT+MD 1xGM6001 24 h, light grey) or two-times GM6001-treated (PT+MD 2xGM6001 1 h+24 h, dark grey) after PT mice. (B) V1-activation elicited by stimulation of the contralateral (C) or ipsilateral (I) eye in animals before (open circles) and after MD. V1-activation did not change after MD in vehicle-treated PT mice. In contrast, 1xGM6001 (either 1 h or 24 h) but not 2xGM6001 (1 h+24 h) treatment rescued OD-plasticity after the PT-lesion (A). There was a significant reduction in deprived eye responses in V1 in the GM6001- but not vehicle-treated mice after MD (B). Mean ± SEM, *p<0.05, **p<0.01, ***p<0.001. ANOVA followed by multiple comparisons with Bonferroni correction was used; two-tailed t-test was used within the group analysis in B.DOI: http://dx.doi.org/10.7554/eLife.11290.01010.7554/eLife.11290.011Figure 5—source data 1.Figure 5.DOI: http://dx.doi.org/10.7554/eLife.11290.011
+**Figure 5.:** Quantification of the imaging data, layout and data display as in Figure 2. (A) Optically imaged OD-indices in mice without MD and after 7 days of MD in vehicle-treated 1h after PT (black) mice and single GM6001-treated (PT 1xGM6001; PT+MD 1xGM6001 1 hr and PT+MD 1xGM6001 24 h, light grey) or two-times GM6001-treated (PT+MD 2xGM6001 1 h+24 h, dark grey) after PT mice. (B) V1-activation elicited by stimulation of the contralateral (C) or ipsilateral (I) eye in animals before (open circles) and after MD. V1-activation did not change after MD in vehicle-treated PT mice. In contrast, 1xGM6001 (either 1 h or 24 h) but not 2xGM6001 (1 h+24 h) treatment rescued OD-plasticity after the PT-lesion (A). There was a significant reduction in deprived eye responses in V1 in the GM6001- but not vehicle-treated mice after MD (B). Mean ± SEM, *p<0.05, **p<0.01, ***p<0.001. ANOVA followed by multiple comparisons with Bonferroni correction was used; two-tailed t-test was used within the group analysis in B.
 
-## Inhibition of MMPs after induction of a cortical lesion rescued experience-induced improvements in visual capabilities in adult mice
+### Inhibition of MMPs after induction of a cortical lesion rescued experience-induced improvements in visual capabilities in adult mice
 
 We have previously shown that even a small PT-lesion in S1, i.e. close to but not within V1, can prevent the experience-induced enhancement of the optomotor reflex of the open eye after MD (Greifzu et al., 2011): the S1-lesion abolished improvements in both the spatial frequency and contrast sensitivity thresholds of the optomotor reflex. Since upregulated MMPs can have a detrimental effect on experience-dependent plasticity (Cybulska-Klosowicz et al., 2011), and thus on recovery from brain injuries (Rosell and Lo, 2008; Yang et al., 2013; Chaturvedi and Kaczmarek, 2014), here we tested whether a brief inhibition of MMPs after a cortical stroke can also rescue lost optomotor enhancement of the open eye after MD.
 
-In vehicle-treated mice, MD did not induce any improvements in the spatial frequency thresholds of the optomotor reflex of the open eye (PT+MD vehicle): on day 0, acuity was 0.38 ± 0.002 cyc/deg and 0.38 ± 0.004 cyc/deg on day 7 (n=4, t-test, p>0.05,
+In vehicle-treated mice, MD did not induce any improvements in the spatial frequency thresholds of the optomotor reflex of the open eye (PT+MD vehicle): on day 0, acuity was 0.38 ± 0.002 cyc/deg and 0.38 ± 0.004 cyc/deg on day 7 (n=4, t-test, p>0.05, Figure 6A); values were not different from vehicle-treated mice without MD (PT vehicle, n=4, vs. PT+MD vehicle, n=4, p>0.05, Figure 6A). Thus, visual improvements after MD in vehicle-treated animals were as compromised as previously described for wild type mice after PT (Greifzu et al., 2011). Similarly, we did not observe any improvements in contrast sensitivity thresholds of the optomotor reflex at all spatial frequencies (n=4, ANOVA, for all p>0.05, Table 2), and values were similar for mice with or without MD (PT vehicle, n=4 vs. PT+MD vehicle, n=4, p>0.05, Figure 6B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/11290/elife-11290-fig6-v3.jpg)
 
-**Figure 6.:** A) and contrast sensitivity (B) thresholds of the optomotor reflex in adult mice.Values of vehicle-treated PT-mice are shown in black and values of GM6001-treated mice in grey. Layout and data presentation as in figure 3. Mean ± SEM, ***p<0.001, ns p>0.05. ANOVA followed by multiple comparisons with Bonferroni correction and two-tailed t-test was used in A within the group analysis.DOI: http://dx.doi.org/10.7554/eLife.11290.01210.7554/eLife.11290.013Figure 6—source data 1.Figure 6.DOI: http://dx.doi.org/10.7554/eLife.11290.013
+**Figure 6.:** Values of vehicle-treated PT-mice are shown in black and values of GM6001-treated mice in grey. Layout and data presentation as in figure 3. Mean ± SEM, ***p<0.001, ns p>0.05. ANOVA followed by multiple comparisons with Bonferroni correction and two-tailed t-test was used in A within the group analysis.
+
+**Table 2.**
+ Optomotry-measured contrast sensitivity improvements after MD
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="4">Contrast sensitivity</th>
+    </tr>
+    <tr>
+      <th colspan="4">Day 0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spatial frequency (cyc/deg)</td>
+      <td>PT+vehicle</td>
+      <td>PT+GM6001</td>
+      <td>PT+MDvehicle</td>
+      <td>PT+MDGM6001</td>
+    </tr>
+    <tr>
+      <td>0.031</td>
+      <td>3.5 ± 0.02</td>
+      <td>3.5 ± 0.04</td>
+      <td>3.5 ± 0.02</td>
+      <td>3.5 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>0.064</td>
+      <td>11.4 ± 0.35</td>
+      <td>11.4 ± 0.32</td>
+      <td>11.8 ± 0.57</td>
+      <td>11.8 ± 0.15</td>
+    </tr>
+    <tr>
+      <td>0.092</td>
+      <td>10.5 ± 0.36</td>
+      <td>10.5 ± 0.34</td>
+      <td>10.7 ± 0.39</td>
+      <td>11.0 ± 0.16</td>
+    </tr>
+    <tr>
+      <td>0.103</td>
+      <td>9.8 ± 0.26</td>
+      <td>9.9 ± 0.28</td>
+      <td>10.0 ± 0.37</td>
+      <td>10.0 ± 0.32</td>
+    </tr>
+    <tr>
+      <td>0.192</td>
+      <td>6.9 ± 0.12</td>
+      <td>6.7 ± 0.09</td>
+      <td>6.7 ± 0.13</td>
+      <td>6.5 ± 0.26</td>
+    </tr>
+    <tr>
+      <td>0.272</td>
+      <td>3.5 ± 0.03</td>
+      <td>3.5 ± 0.04</td>
+      <td>3.4 ± 0.01</td>
+      <td>3.5 ± 0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Day 7</td>
+    </tr>
+    <tr>
+      <td>0.031</td>
+      <td>3.5 ± 0.02</td>
+      <td>3.5 ± 0.04</td>
+      <td>3.5 ± 0.01</td>
+      <td>5.0 ± 0.11</td>
+    </tr>
+    <tr>
+      <td>0.064</td>
+      <td>11.4 ± 0.39</td>
+      <td>11.5 ± 0.32</td>
+      <td>12.1 ± 0.42</td>
+      <td>25.2 ± 1.53</td>
+    </tr>
+    <tr>
+      <td>0.092</td>
+      <td>10.5 ± 0.36</td>
+      <td>10.5 ± 0.34</td>
+      <td>11.4 ± 0.28</td>
+      <td>21.9. ± 1.14</td>
+    </tr>
+    <tr>
+      <td>0.103</td>
+      <td>9.9 ± 0.24</td>
+      <td>9.9 ± 0.28</td>
+      <td>10.6 ± 0.26</td>
+      <td>19.7 ± 1.25</td>
+    </tr>
+    <tr>
+      <td>0.192</td>
+      <td>6.9 ± 0.11</td>
+      <td>6.8 ± 0.07</td>
+      <td>7.0 ± 0.02</td>
+      <td>12.8 ± 0.91</td>
+    </tr>
+    <tr>
+      <td>0.272</td>
+      <td>3.5 ± 0.02</td>
+      <td>3.5 ± 0.04</td>
+      <td>3.5 ± 0.02</td>
+      <td>4.9 ± 0.12</td>
+    </tr>
+  </tbody>
+</table>
 
 As there was no significant difference in the spatial frequency (ANOVA, p>0.05) or contrast sensitivity thresholds of the optomotor reflex (ANOVA, p>0.05) between mice receiving a single or two injections of GM6001, we pooled data for analysis. In contrast to vehicle-treated, PT-lesioned mice receiving a single or two-times injections of the MMP-inhibitor (PT+MD+GM6001) displayed the typical experience-enabled enhancements in the spatial frequency threshold of the optomotor reflex of the open eye after MD: values increased from 0.38 ± 0.002 on day 0 to 0.45 ± 0.003 on day 7 after MD (n=14, t-test, p<0.001). GM6001-treated PT-lesioned mice also improved contrast sensitivity thresholds of the optomotor reflex of the open eye at all measured spatial frequencies (n=14, ANOVA, for all p<0.001, Table 2), and exhibited significant increases in contrast sensitivity on day 7, when compared to mice without MD (PT+GM6001, n=4, vs. PT+MD+GM6001, n=14, ANOVA, p<0.001, Figure 6B). Altogether, these data show that brief inhibition of MMPs after the induction of a cortical stroke lesion completely rescued experience-induced enhancements in both the spatial frequency and contrast sensitivity thresholds of the optomotor reflex of the open eye after MD. This finding also suggests that upregulated MMPs in the immediate post-injury period can have a detrimental influence on interocular plasticity in adult mice.
 
@@ -104,48 +332,48 @@ In conclusion, our present data highlight a critical role of MMPs in adult visua
 
 All experimental procedures were approved by the local government (Niedersächsisches Landesamt für Verbraucherschutz und Lebensmittelsicherheit, registration number 33.9-42502-04-10/0326).
 
-## Animals
+### Animals
 
 Male adult (n=49, P77-91) wild-type C57Bl/6J mice housed in standard cages (26×20×14 cm) on a 12 h light/dark cycle with food and water available ad libitum were used.
 
-## Behavioral vision tests
+### Behavioral vision tests
 
 To assess basic visual capabilities and experience-induced changes of all experimental animals, we measured both the spatial frequency threshold and contrast thresholds of the optomotor reflex using a virtual-reality optomotor system (Prusky et al., 2004). Briefly, freely moving mice were positioned on a small platform surrounded by four computer monitors forming a square. A rotating virtual cylinder covered with vertical sine wave gratings (with a drift speed of 12°/s) were projected on the monitors. The mice reflexively tracked the gratings by head movements as long as they could see the visual stimuli. Spatial frequency at full contrast and contrast at six different spatial frequencies [0.031, 0.064, 0.092, 0.103, 0.192, 0.272 cycles/degree (cyc/deg)] were varied by the experimenter until the threshold of tracking was determined. Contrast sensitivity thresholds measured in percent were converted into Michelson contrasts as described previously (Goetze et al., 2010). To stimulate experience-enabled enhancement of visual capabilities behavioral testing was performed daily for 7 days in all mice, starting before MD (day 0) in the MD-groups.
 
-## Monocular deprivation
+### Monocular deprivation
 
 To induce plasticity and to study the influence of a stroke on experience-dependent plasticity we used monocular deprivation paradigm (Gordon and Stryker, 1996). The right eye was closed as described previously (Greifzu et al., 2011). Mice were anesthetized with 2% isoflurane in a mixture of O2/N2O (75/25%), their eye-lids were sutured, and mice returned to their home cages for recovery. For stroke experiments MD was performed directly after surgery for induction of a photothrombotic stroke. Animals were checked daily to ensure that the eye remained closed. Mice in which the eye was not closed completely were excluded from the experiment.
 
-## MMP-inhibitor administration
+### MMP-inhibitor administration
 
 The broad spectrum MMP-inhibitor GM6001 (USBiological, Swampscott, Massachusetts) was used and prepared as previously described with slight modifications (Gursoy-Ozdemir et al., 2004; Wang and Tsirka, 2005; Chen et al., 2009). Specifically, mice were injected intraperitoneally with either 50 mg/kg GM6001 diluted in 3% DMSO and 2% cyclodextrin in saline to a total volume of 200 µl, or with 200 µl vehicle (3% DMSO and 2% cyclodextrin in saline). This type of systemic application of GM6001 was used before and shown to successfully inhibit MMPs activity in the brain tissue (Gursoy-Ozdemir et al., 2004; Wang and Tsirka, 2005; Chen et al., 2009). For the healthy brain group, the injections were applied daily for 7 days, starting 1 h after MD/no MD. For the stroke group, treatment started 1 h after stroke induction, with an additional injection 24 h after stroke in one group of animals.
 
-## Induction of a photothrombotic stroke
+### Induction of a photothrombotic stroke
 
 The cortical stroke was induced by photothrombosis (PT) in the left primary somatosensory cortex (S1) using the Rose Bengal technique (Watson et al., 1985) as described previously (Greifzu et al., 2011). The PT-technique was chosen because it allows small lesions with a reproducible localization, which is particularly relevant when studying post-lesion changes in specific cortical areas in proximity of the lesion. Briefly, mice were box-anesthetized with 2% isoflurane in a mixture of 75/25% of O2/N2O; during surgery, anesthesia was maintained with 0.8-1% isoflurane delivered via an inhalation mask. The body temperature was maintained at 37°C via a heating pad. The animals’ head was placed in a stereotaxic frame. The skin above the skull was incised and an optic fiber bundle (aperture: 1.0 mm) mounted on a cold light source (Schott KL 1500, Germany) was positioned 2 mm lateral to the midline and 1 mm posterior to the bregma. 100 μl Rose Bengal (0.1% in normal saline) dye was injected into the tail vein. 5 min after the dye injection, the illumination (lasting 15 min) began. The skin above the skull was sutured and animals returned to their home cages for recovery. Lesion size was determined at the end of the behavioral and optical imaging experiments by Nissl staining.
 
-## Optical imaging of intrinsic signals and visual stimuli
+### Optical imaging of intrinsic signals and visual stimuli
 
-## Surgery
+#### Surgery
 
 Mice were initially box-anesthetized with 2% halothane in a mixture of O2/N2O (50/50%). During imaging anesthesia was reduced and kept at 0.4-0.6% halothane. The animals received an injection of atropine (Franz Köhler, 0.3 mg/mouse, subcutaneously), dexamethasone (Ratiopharm, 0.2 mg/mouse, subcutaneously), and chlorprothixene (Sigma, 0.2 mg/mouse, intramuscularly) and were place in a stereotaxic apparatus. Lidocaine (2% xylocain jelly) was applied locally to all incisions. The body temperature was maintained at 37°C and heart rate was monitored throughout the experiment via attached electrocardiograph leads. An incision of the skin was made over the visual cortex and low-melting point agarose (2.5% in 0.9% NaCl) and a glass coverslip were placed over the exposed area.
 
-## Optical imaging
+#### Optical imaging
 
 Mouse visual cortical responses were recorded through the skull using the Fourier imaging technique developed by Kalatsky and Stryker (2003) and optimized for the assessment of ocular dominance plasticity as described by Cang et al. (2005a). In this method, a temporally periodic stimulus is continuously presented to the animal and the visual cortical responses at the specific stimulus frequency are extracted by Fourier analysis. Optical images of intrinsic cortical signals were obtained by a Dalsa 1M30 CCD camera (Dalsa, Waterloo, Canada) controlled by commercially available software. Using a 135 mm×50 mm (imaging of one hemisphere) or 50 mm×50 mm (simultaneous imaging of both hemispheres) tandem lens configuration (Nikon, Inc., Melville, NY) a cortical area of 2.67x2.67 mm2 or 3.6x3.6 mm2 and was imaged, respectively. The surface vascular pattern and intrinsic signal images were visualized with illumination wavelengths set by a green (550 ± 10 nm) or red (610 ± 10 nm) interference filter, respectively. After acquisition of a surface image, the camera was focused 600 μm below the cortical surface. Frames were acquired at a rate of 30 Hz temporally binned to 7.5 Hz and stored as 512×512 pixel images after spatial binning of the camera image.
 
-## Visual stimuli
+#### Visual stimuli
 
 Drifting horizontal bars (2° wide) were presented to the animal at a distance of 25 cm on a high refresh-rate monitor (Hitachi, ACCUVUE, HM-4921-D, 20 inches). The distance between two bars was 70° and they were presented at a temporal frequency of 0.125 Hz. For calculating ocular dominance, the visual stimulus was restricted to the binocular visual field of the left V1 (−5° to +15° azimuth, 0° azimuth corresponding to frontal direction) and animals were stimulated through either the left or the right eye in alternation. For determining the quality of retinotopic maps, we used full-field stimulation through the contralateral eye with a horizontal (elevation maps) or vertical (azimuth map) moving bar, extending 62x92°of the visual field contralateral to the recorded hemisphere.
 
-## Data analysis
+#### Data analysis
 
 Visual cortical maps were calculated from the acquired frames by Fourier analysis to extract the signal at the stimulation frequency using commercially available software (Kalatsky and Stryker, 2003). While the phase component of the signal is used for the calculation of retinotopy, the amplitude component represents the intensity of neuronal activation (expressed as fractional change in reflectance ×10−4) and was used to calculate OD. For that, the ipsilateral eye magnitude map was first smoothed to reduce pixel shot noise by low-pass filtering using a uniform kernel of 5x5 pixels, and then thresholded at 30% of peak response amplitude to eliminate the background noise. Then an OD-index (ODI) for every pixel in this region was calculated as: (C−I)/(C+I), with C and I representing the response magnitudes of each pixel to visual stimulation of the contralateral and ipsilateral eye, respectively (Cang et al., 2005a). The ODI ranges from −1 to +1, with negative values representing ipsilateral and positive values representing contralateral dominance. We then computed an ODI as the average of the OD-scores of all responsive pixels (all pixels with response amplitude above 30% of peak response). Consequently, we calculated ODIs from blocks of 4 runs in which the averaged maps for each eye had at least a response magnitude of 1×10−4. All ODIs of one animal (typically 3–5) were averaged for further quantification and data display. In the polar maps, hue encodes visual field position (retinotopy) and lightness encodes the magnitude of the visual responses. The quality of the retinotopic maps was assessed by the calculation described by Cang et al. (2005b) on contralateral eye. We selected the most responsive area (in the number of 20,000 pixels) within V1 by thresholding at 30% of peak response amplitude of the activity map. For each of the pixels within this area the difference between its visual field position and the mean position of its surrounding 24 pixels was calculated. For maps of high quality, the position differences are quite small because of smooth progression. The standard deviation of the position difference was then used as an index of the quality of retinotopic maps with small values indicating high map quality and vice versa.
 
-## Perfusion and histology
+### Perfusion and histology
 
 Following optical imaging experiments, mice were deeply anesthetized with an intraperitoneal injection of 50 mg/kg pentobarbital and perfused transcardially with Phosphate-Buffered Saline (PBS) (pH 7.4, 0.1M) for 2 min followed by 4% paraformaldehyde (pH 7.4) for 8 min. The brain was removed and postfixed in 4% paraformaldehyde (pH 7.4) for one day, then transferred to a 10% sucrose solution in PBS for one day followed by a 30% sucrose solution in PBS for one or two days. The brains were frozen in methylbutane at -40°C and stored at -80°C. 40 μm thick coronal brain sections were cut on a microtome and Nissl-stained. To determine size and location of the cortical lesions every third section was analyzed under the microscope (Axioskop, Carl Zeiss) using AxioVision (AxioVs 40 4.5.0.0.). Animals in which the lesion extended into the white matter or V1 were excluded from further analyses.
 
-## Data and statistical analyses
+### Data and statistical analyses
 
 We used the Shapiro-Wilk test to check if the data are normally distributed within the group and the F-test to look for equality of variance within the groups. All intra- and intergroup comparisons were analyzed either by a two-tailed t-test or one-way ANOVA followed by multiple comparisons Bonferroni correction. The intergroup comparison of the enhancement of the spatial frequency, and contrast sensitivity thresholds were analyzed by two-way ANOVA with repeated measurements and Bonferroni correction. Significance levels were set as *p<0.05, **p<0.01, and ***p<0.001. Data are represented as means ± SEM.

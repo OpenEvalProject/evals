@@ -72,11 +72,9 @@ We agree and have revised the discussion of the potential interactions with nega
 
 It is interesting that the 426c gp120 interaction with germline Fabs appears to involve little conformational change in the Fab. However, the authors seem to be making a leap when they attempt to contrast this finding with their previous observation that the CDRH3 of NIH45-46CHIM was disordered in the interaction with an "unmodified" gp120 is (Discussion, eighth paragraph). Could that difference not also be due to different crystal packing?
 
-Neither the CDRH3 loop of the NIH45-46CHIM/93TH057 gp120 complex nor the CDRH3 loop of the NIH45-46GL/426c.TM1△V1-3 gp120 complex structure are involved in crystal packing interactions (see Author response image 1).10.7554/eLife.13783.016Author response image 1.CDR3HC positions in NIH45-46CHIM/93TH057 gp120 (left) and NIH45-46GL/426c.TM1△V1-3 gp120 (right) complexes relative to symmetry mates (different views shown for clarity).One complex of gp120 (grey) with antibody VH (pink) and VL (light pink) is shown with the nearest two symmetry mates (blue and green). The disordered region of NIH45-46CHIM CDRH3 is indicated by a dashed line. The CDRH3 loop is not engaged in crystal packing interactions in either complex.DOI: http://dx.doi.org/10.7554/eLife.13783.016
+Neither the CDRH3 loop of the NIH45-46CHIM/93TH057 gp120 complex nor the CDRH3 loop of the NIH45-46GL/426c.TM1△V1-3 gp120 complex structure are involved in crystal packing interactions (see Author response image 1).10.7554/eLife.13783.016Author response image 1.CDR3HC positions in NIH45-46CHIM/93TH057 gp120 (left) and NIH45-46GL/426c.TM1△V1-3 gp120 (right) complexes relative to symmetry mates (different views shown for clarity).One complex of gp120 (grey) with antibody VH (pink) and VL (light pink) is shown with the nearest two symmetry mates (blue and green). The disordered region of NIH45-46CHIM CDRH3 is indicated by a dashed line. The CDRH3 loop is not engaged in crystal packing interactions in either complex.
 
 One complex of gp120 (grey) with antibody VH (pink) and VL (light pink) is shown with the nearest two symmetry mates (blue and green). The disordered region of NIH45-46CHIM CDRH3 is indicated by a dashed line. The CDRH3 loop is not engaged in crystal packing interactions in either complex.
-
-DOI: http://dx.doi.org/10.7554/eLife.13783.016
 
 Alternatively, could this be due to interaction with a different strain of gp120? Or due to the fact that one antibody is "germline" while the other is a chimera of "germline"-H with mature-L?
 

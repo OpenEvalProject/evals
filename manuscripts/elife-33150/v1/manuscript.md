@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.33150.001 The Drosophila Pan Gu (PNG) kinase complex regulates hundreds of maternal mRNAs that become translationally repressed or activated as the oocyte transitions to an embryo. In a previous paper (Hara et al., 2017), we demonstrated PNG activity is under tight developmental control and restricted to this transition. Here, examination of PNG specificity showed it to be a Thr-kinase yet lacking a clear phosphorylation site consensus sequence. An unbiased biochemical screen for PNG substrates identified the conserved translational repressor Trailer Hitch (TRAL). Phosphomimetic mutation of the PNG phospho-sites in TRAL reduced its ability to inhibit translation in vitro. In vivo, mutation of tral dominantly suppressed png mutants and restored Cyclin B protein levels. The repressor Pumilio (PUM) has the same relationship with PNG, and we also show that PUM is a PNG substrate. Furthermore, PNG can phosphorylate BICC and ME31B, repressors that bind TRAL in cytoplasmic RNPs. Therefore, PNG likely promotes translation at the oocyte-to-embryo transition by phosphorylating and inactivating translational repressors.
+The Drosophila Pan Gu (PNG) kinase complex regulates hundreds of maternal mRNAs that become translationally repressed or activated as the oocyte transitions to an embryo. In a previous paper (Hara et al., 2017), we demonstrated PNG activity is under tight developmental control and restricted to this transition. Here, examination of PNG specificity showed it to be a Thr-kinase yet lacking a clear phosphorylation site consensus sequence. An unbiased biochemical screen for PNG substrates identified the conserved translational repressor Trailer Hitch (TRAL). Phosphomimetic mutation of the PNG phospho-sites in TRAL reduced its ability to inhibit translation in vitro. In vivo, mutation of tral dominantly suppressed png mutants and restored Cyclin B protein levels. The repressor Pumilio (PUM) has the same relationship with PNG, and we also show that PUM is a PNG substrate. Furthermore, PNG can phosphorylate BICC and ME31B, repressors that bind TRAL in cytoplasmic RNPs. Therefore, PNG likely promotes translation at the oocyte-to-embryo transition by phosphorylating and inactivating translational repressors.
 
 ## Introduction
 
@@ -31,29 +31,61 @@ PNG is likely to have many targets, given that it controls both mRNAs that becom
 
 ## Results and discussion
 
-## PNG is a threonine kinase
+### PNG is a threonine kinase
 
 As an initial approach to identify substrates for the PNG kinase, predicted to be a Ser/Thr kinase, we sought to determine whether PNG phosphorylation occurs at consensus sequences. A positional scanning peptide library (Mok et al., 2010) was treated with active PNG kinase complex or a complex with catalytically inactive PNG (KD: kinase dead) purified from Sf9 cells. Peptides were robustly phosphorylated by the active PNG kinase complex in contrast to the kinase-dead control (Figure 1A). PNG exhibited a strong preference to phosphorylate threonine, because peptides whose phospho-acceptor site (position 0) was fixed with threonine were strongly phosphorylated, whereas serine peptides were phosphorylated at reduced levels (Figure 1A,B). Although no strong consensus sequence was identified, PNG was most strongly selective for hydrophobic amino acids at −3 relative to the phosphorylated residue, and it had some preferences for aromatic residues at position −2 and for arginine at position +2 (Figure 1B and Figure 1—figure supplement 1). Increased phosphorylation of peptides with threonine present outside of the intended phospho-acceptor position was likely an artifact resulting from the presence of two potential phosphorylation sites.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) PNG kinase prefers threonine as a phosphoacceptor site. The peptide library was phosphorylated with PNG kinase wild type (WT) or kinase dead (KD) using radiolabeled ATP (A). The signals were quantified and visualized with WebLogo 3.0. (B) Ten thousand peptide sequences were generated according to the probabilities predicted from the quantified peptide library data. The colors designate classes of amino acids. (C) Alignment of the amino acid sequences near the DFG motif of known threonine-specific kinases and PNG. PNG has a beta-branched residue, isoleucine, immediately downstream of the DFG motif as do other threonine-selective kinases (boxed with magenta (Chen et al., 2014). The peptide library screen with WT was repeated in four replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Peptide array data were quantified and normalized to an average value of 1 within a position.
+
 Kinases with a preference for threonine over serine are atypical, and this specificity is conferred by a beta-branched amino acid residue immediately downstream of the conserved DFG sequence in the kinase activation loop (Chen et al., 2014). In PNG, the corresponding amino acid is an isoleucine, which would be predicted to produce a threonine preference (Figure 1C).
 
-## Identification of PNG substrates
+### Identification of PNG substrates
 
 The peptide arrays did not yield a consensus sequence for PNG of sufficient specificity to be used to identify putative substrates. We previously had identified a limited number of substrates by DIVEC screening, in vitro transcribing and translating Drosophila cDNAs, adding recombinant PNG, and scoring for phosphorylation by gel mobility shift (Lee et al., 2005). Because of the limitations of this approach, we designed an unbiased biochemical screen. First, we attempted to introduce a mutation into the gatekeeper residue in the ATP-binding pocket of PNG kinase. Replacing the gatekeeper residue, which is a bulky residue, with a small amino acid allows kinases to utilize ATP analogs to label substrates (Bishop et al., 2000; Alaimo et al., 2001). Unfortunately, the desired PNG mutants were inactive (Figure 2—figure supplement 1).
 
 The alternative strategy we employed to isolate PNG substrates was to use purified recombinant PNG kinase to thio-phosphorylate substrates in embryonic extracts, identifying them by recovery of thio-phosphorylated peptides by mass spectrometry (Figure 2A). The endogenous kinases in the extracts from early embryos were inactivated by treatment with 5’-(4-fluorosulphonylbenzoyl)adenosine (FSBA), which covalently binds to kinases at a conserved lysine in the ATP hydrolysis site (Knight et al., 2012) (Figure 2—figure supplement 2). Wild-type or kinase-dead PNG complex was expressed in Sf9 cells, purified, and added to the extracts with ATP-γS. Western blot analysis with an antibody against alkylated-thio-phosphate (Allen et al., 2007) showed that endogenous kinases in the extract had been inactivated, and phosphorylation occurred with wild-type PNG but not the kinase-dead form (Figure 2B). Thio-phosphorylated peptides were recovered on iodoacetyl agarose and identified by mass spectrometry (MS) (Blethrow et al., 2008; Rothenberg et al., 2016). To call a protein a PNG substrate we demanded that at least two independent phosphopeptides were recovered. A pilot screen was done with wild-type PNG kinase and 45 proteins were phosphorylated. A second screen was done in which extracts were treated in parallel with wild-type and kinase-dead PNG. In this second screen, the total representation of peptides in the extract was quantified by doing mass spec analysis of the peptides that did not bind to iodoacetyl agarose. In the second experiment, 36 proteins had at least two independent peptides phosphorylated by wild-type but not kinase-dead PNG. These included 27 of the proteins identified in the pilot experiment (Figure 2—source data 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig2-v1.jpg)
+
+**Figure 2.:** (A) A schematic representation of the substrate screen. Embryo extracts were gel-filtrated to exchange the buffer and treated with 5’-(4-Fluorosulfonylbenzoyl)adenosine (FSBA) to inactivate endogenous kinases, followed ammonium sulfate fractionation. The fractionated extracts were dialyzed to remove ammonium sulfate. The recombinant active PNG kinase complex was added to the FSBA-treated fractions with ATP-γS to thio-phosphorylate PNG kinase substrates. To examine thio-phosphorylated proteins by immunoblot, they were alkylated with p-Nitrobenzyl mesylate (PNBM), and the alkylated thiophosphate was detected by its specific antibody. For identification of the thio-phosphorylated peptides, the PNG kinase-treated fractions were pooled and digested with trypsin. Thio-phosphorylated peptides were purified specifically with iodoacetyl beads and oxsone and identified by mass spectrometry. (B) Detection of thio-phosphoproteins in the fractions by immunoblots. The FSBA-treated fractions were incubated with wild-type (WT) or kinase-dead (KD) PNG kinase complexes. Thio-phosphorylated proteins were detected as shown in (A). The PNG kinase complexes added into the fraction were examined by immunoblots using anti-FLAG (PNG-FLAG), anti-PLU (PLU-His) and anti-GST (GST-GNU) antibodies. (C) A list of PNG substrates identified in the second experiment that were recovered with wild-type but not kinase-dead PNG. The proteins found by mass spectrometry following purification of the thio-phosphorylated peptides are listed in the order of the number of total spectrum count of phosphorylated peptides from the sample treated with the wild-type PNG kinase complex. The top 11 of the 36 substrates identified are shown. (D) Phosphorylation sites analysis. Peptides identified with >95% probability according to Scaffold were used for thio-phosphorylation motif analysis. Phosphopeptides identified in the samples treated with the PNG WT kinase complex but absent from the samples treated with KD kinase were further analyzed. Since elution of the peptides was performed under oxidizing conditions, peptides that differed only in the oxidation state of their methionines were regarded as equal. A total of 112 unique phosphopeptides belonging to 70 different proteins were considered. Using these phosphopeptides, a list of motifs was constructed centered on the phosphosite and including the 5 N-terminal and 4 C-terminal residues found adjacent to the phosphosite on the protein and analyzed with WebLogo 3.0. The screen with the WT kinase was done as a pilot screen, and a second experiment was done in which the results were compared with kinase-dead PNG.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Alignment of the gatekeeper residue with its surrounding sequence in PNG and other kinases whose analog-sensitive mutants have been reported (Banko et al., 2011; Niswender et al., 2002; Polson et al., 2001; Ubersax et al., 2003). The gatekeeper residues of the kinases are boxed in magenta. Methionine 87 of PNG is likely the gatekeeper residue. (B) Substitution of the gatekeeper residue to small amino acids reduced PNG kinase activity. Methionine 87 of PNG was changed to the small amino acid glycine or alanine (M87G or M87A). Kinase activity of the mutants and wild-type (WT) PNG kinase with GST-GNU was examined using myelin basic protein (MBP) as an in vitro substrate in the presence of ATP-γS or its analogs as indicated. Thio-phosphorylated proteins were alkylated and detected by immunoblot using anti alkylated thiophosphate antibody. Protein levels of PNG-FLAG also were examined using anti-FLAG.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Extracts made from embryos collected for 2 hr were dialyzed to remove ATP and treated with the indicated concentration of FSBA. After removal of free FSBA, the extracts were incubated with radioactive ATP. Radioactivity incorporated into proteins was detected by autoradiography (left panel). Proteins in the extracts were examined by Coomassie staining (right panel. CBB).
+
 A high representation of phosphopeptides was recovered for the translational repressor Trailer Hitch (TRAL) with wild-type but not kinase-dead PNG (Figure 2C). Other phosphorylated proteins were ribosomal proteins and translation factors, as well as the PLU activating subunit of the PNG complex. Out of 36 substrates identified, 19 were proteins known to be involved in mRNA translation. Note that the recovery of substrates was not due solely to the abundance of the proteins in the extracts (Figure 2—source data 1).
 
 79% of the identified unique peptides had threonine as the phospho-acceptor residue (Figure 2D). The threonine preference is consistent with the scanning peptide library result (Figure 1B). The identified peptides showed an enrichment of hydrophobic residues at −3 position as in the peptide library, confirming that PNG tends to phosphorylate threonine three residues downstream of a hydrophobic amino acid (Figure 2D). The threonine preference was also highly significant (log-odds value of 80.5) in the context of the Drosophila proteome (O'Shea et al., 2013). The correspondence with the peptide sequence preference of PNG is further confirmation that the observed phosphopeptides likely reflect direct phosphorylation by PNG. Although the substrates don’t reveal a strong PNG consensus sequence, it is possible that interaction between substrates and the PLU or GNU activating subunits may provide specificity beyond that at the phosphorylation site.
 
-## Phosphorylation of TRAL by PNG in vitro
+### Phosphorylation of TRAL by PNG in vitro
 
 We focused on TRAL, because although there were many more abundant proteins in the extracts, we recovered a high number of PNG-phosphorylated peptides for TRAL. TRAL is a member of the (L)Sm protein family composed of RAP55 in vertebrates, CAR1 in C. elegans, and Sdc6 in yeast (Wilhelm et al., 2005; Marnef et al., 2009). We tested whether PNG can phosphorylate TRAL in vitro. A powerful aspect of the thio-phosphate substrate screen is that the MS analysis identifies the phosphorylated amino acids. 15 amino acids (13 of them threonine), clustered in the C-terminal half of the protein, were phosphorylated by PNG in embryonic extracts (Figure 3A). MBP fusions of purified full length TRAL, or the N- and C- terminal fragments were incubated with purified PNG and [γ 32P]-ATP and analyzed by autoradiography. The full-length protein and the C-terminal half, but not the N-terminal half, were phosphorylated by PNG in vitro (Figure 3B). To determine whether PNG-dependent phosphorylation required the amino acids identified in the substrate screens, all 15 were changed to alanine. For both the full-length protein and the C-terminal half, the level of phosphorylation by PNG was reduced with the alanine-substituted forms (Figure 3B). Residual phosphorylation of the alanine-substituted form of TRAL raises the possibility that there are other potential PNG phosphorylation sites in the C-terminus of TRAL that were not detected in the screen.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of Trailer hitch (TRAL) protein. Drosophila melanogaster TRAL consists of 652 amino acids and has conserved domains: the LSm (Like Sm) domain is essential for P-body localization of TRAL; the FDF domain binds to ME31B, a translational repressor (Marnef et al., 2009). The phosphorylation sites of TRAL identified in the screen map exclusively to the C-terminus. (B) PNG kinase phosphorylates the C-terminus of TRAL in vitro. Maltose-binding protein (MBP)-fused full length (FL) and N- and C-terminal fragments (N: 1–355 and C: 356–652, respectively) of TRAL were expressed and purified from bacteria (A). The MBP-fused TRAL proteins were incubated with the active PNG kinase complex in the presence of radioactive ATP. Incorporated radioactivity in the TRAL proteins was detected by autoradiography. The levels of the MBP-fused TRAL proteins were examined by coomassie staining (CBB). The active PNG kinase complex in the reactions also was examined by immunoblot using anti-GST (GST-GNU), anti-FLAG (PNG-FLAG) and anti-PLU (PLU-His) antibodies. Substitution of the phosphosites in TRAL to alanine (FL-A and C-A) reduced phosphorylation by PNG. The kinase assay was repeated three times. Representative results are shown. (C) Phosphomimetic mutation of the PNG phosphorylation sites in TRAL suppresses translational repression activity of TRAL in vitro. In vitro transcribed GFP-3xMyc mRNA was translated in rabbit reticulocyte lysate with or without MBP-fused TRAL wild-type (WT) or MBP-TRAL mutant proteins, which have alanine or aspartic acid in the PNG phosphorylation sites (Ala or Phos-mimic). MBP was used as a control. Translation of GFP-3xMyc mRNA was examined by GFP-3xMyc protein levels on an immunoblot using anti-Myc antibody. MBP and MBP-fused TRAL protein levels were examined by immunoblot using anti-MBP antibody. GFP-3xMyc protein levels were quantified and normalized to its levels in the control reaction. Error bars represent standard deviation (n = 4, unpaired t-test; mean ± SD). Representative blots are shown. (D, E) tral dominantly suppresses png phenotypes. (D) Embryos from females whose genotype were png1058/png3318 with Df(3L)ED4483/+ (Df/+) or tral1/+ (tral/+) were collected, fixed, and DNA stained with DAPI. Nuclear numbers in the embryos were quantified by fluorescent microscopy. TM6C, cu1 Sb1/+ (TM6/+) and TM3, Sb1 Ser1/+ (TM3/+) were used as controls for Df/+ and tral/+, respectively. The results are the sum of three experiments, and their significance was tested with Fisher’s exact test. (E) Cyclin A and B (CycA, CycB) protein levels of the embryos from the females with the indicated genotypes were examined by immunoblot. Alpha-tubulin (TUB) was used as a loading control. The asterisk shows a non-specific band.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** TRAL was immunoprecipitated from extracts of oocytes, in vitro activated oocytes and embryos of OrR (WT, blue line) or png1058/png1058 (png/png, red line). The precipitated TRAL proteins were analyzed by mass spectrometry. Identified phosphopeptides were manually validated. Threonine 644 is one of the phosphorylation sites identified in the biochemical PNG substrate screen (boxed in magenta). This was done one time. The Y-axes designate a relative value for peptide abundance.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Three embryos from png1058/png3318; TM6/+ sibling control mothers are shown. The embryo in the middle has six nuclei and the two flanking have five or less nuclei. (B) Two embryos from png1058/png3318; Df(3L)ED4483/+ (Df/+) experimental mothers. These have greater than five nuclei, and mitotic figures can be seen in the embryo on the left. (C) Two embryos with five or less nuclei from png1058/png3318; TM3/+ sibling control mothers. (D) Two embryos from png1058/png3318; tral1/+ (tral/+) experimental mothers. The images show the range of ploidy in the nuclei and apparent bridges from failed mitoses, even with high ploidy. All panels are at the same magnification, and the scale bar is 100 μm.
+
 We next wanted to investigate whether phosphorylation of TRAL by PNG inhibits its activity. RAP55 from Xenopus and Sdc6 from yeast are able to inhibit translation in vitro (Tanaka et al., 2006; Nissan et al., 2010), in yeast apparently by blocking the function of the eIF4G subunit of the eIF4F initiation factor (Rajyaguru et al., 2012). We examined translation of an mRNA encoding Myc-tagged GFP in reticulocyte lysates and found that as for other family members, addition of Drosophila TRAL inhibited translation (Figure 3C). Because in the in vitro reaction purified PNG does not phosphorylate TRAL to full stoichiometry, we evaluated the effect of PNG phosphorylation by generating a phosphomimetic form of TRAL in which aspartic acid was substituted for the fifteen PNG phosphorylation sites. Strikingly, the phosphomimetic mutations suppressed the translational repression by TRAL (Figure 3C). The potential existence of additional PNG phosphorylation sites in the C-terminus of TRAL could account for why suppression of translational repression by the phosphomimetic form of TRAL was not complete. In contrast, TRAL in which these residues were replaced by alanine still inhibited translation of the reporter mRNA in the extracts (Figure 3C). These results are consistent with phosphorylation of TRAL by PNG relieving its ability to repress translation.
 
-## Interaction between PNG and TRAL in vivo
+### Interaction between PNG and TRAL in vivo
 
 To confirm that PNG phosphorylates TRAL in vivo we analyzed TRAL phosphorylation by MS following immunoprecipitation from extracts of mature oocytes, in vitro activated oocytes or early embryos. The phosphorylation pattern of TRAL during egg activation was very complex, with many sites. As a consequence, we could find only a small number of phospho-peptides in our quantitative MS analysis, because multiple phosphorylation in a peptide can impede detection of other phosphosites on the peptide after LC/MS. Nevertheless, we did observe that one of the threonine residues (T644) phosphorylated in vitro became phosphorylated at egg activation in wild-type but not png mutant eggs (Figure 3—figure supplement 1). Phosphorylation levels of several residues (T35, S59, S472) were reduced in the activated oocytes from the png mutant, although they were not found in the substrate screen. These might be potential PNG kinase target sites, but they also could be phosphorylated downstream of PNG indirectly. The proposal of phosphorylation downstream of PNG is consistent with two of these being in the N-terminus of TRAL that is not phosphorylated by PNG in vitro, and the observation that S214 phosphorylation is increased in png mutant activated oocytes. Together these results support the conclusion that TRAL is a PNG substrate, but they reveal that TRAL phosphorylation is developmentally dynamic and involves several kinases.
 
@@ -67,9 +99,9 @@ Taken together, the in vitro and in vivo phosphorylation results and the genetic
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/33150/elife-33150-fig4-v1.jpg)
 
-**Figure 4.:** (A) TRAL granules in oocytes diminished after egg activation independently of png. Heterozygous (png) or homozygous 1058/FM7B wapng (png) oocytes expressing GFP-Tral (1058/png1058GFP-Tral) were activated in vitro. GFP-TRAL signal in the oocytes was observed by confocal microscopy. Time in the images indicates time after egg activation. Bar indicates 100 μm. Representative oocytes images, taken with the same exposure settings, are shown (WT: n = 8, 89/TM3 Sbpng: n = 3) (B) PNG kinase phosphorylates Bicaudal C (BICC) and Pumilio (PUM). GST-fused BICC and PUM were incubated with or without wild-type (WT) or kinase-dead (KD) PNG kinase activated with MBP-GNU in the presence of radioactive ATP. Radioactivity incorporated into proteins was detected by autoradiography (left panel). The substrate protein levels were examined by coomassie staining (right panel, CBB). MBP-GNU and PNG protein levels were examined by immunoblot using anti-MBP (MBP-GNU) and anti-FLAG (PNG-FLAG) (bottom panels, WB). The kinase assay was repeated in two replicates. Representative results are shown. (C) PNG kinase phosphorylates ME31B in vitro. Recombinant His-ME31B was incubated with or without PNG kinase complex in the presence of radioactive ATP. Because PNG kinase complex requires additional recombinant GNU (GST-GNU) for its full kinase activation, His-ME31B was phosphorylated with or without GST-GNU. Radioactivity incorporated into His-ME31B was detected by autoradiography (left panel). Protein levels of His-ME31B were examined by coomassie staining (right panel, CBB). The white arrowhead indicates phosphorylated His-ME31B protein. The kinase assay was repeated in two replicates. Representative results are shown.
+**Figure 4.:** (A) TRAL granules in oocytes diminished after egg activation independently of png. Heterozygous (png1058/FM7B wa) or homozygous png (png1058/png1058) oocytes expressing GFP-Tral (GFP-Tral89/TM3 Sb) were activated in vitro. GFP-TRAL signal in the oocytes was observed by confocal microscopy. Time in the images indicates time after egg activation. Bar indicates 100 μm. Representative oocytes images, taken with the same exposure settings, are shown (WT: n = 8, png: n = 3) (B) PNG kinase phosphorylates Bicaudal C (BICC) and Pumilio (PUM). GST-fused BICC and PUM were incubated with or without wild-type (WT) or kinase-dead (KD) PNG kinase activated with MBP-GNU in the presence of radioactive ATP. Radioactivity incorporated into proteins was detected by autoradiography (left panel). The substrate protein levels were examined by coomassie staining (right panel, CBB). MBP-GNU and PNG protein levels were examined by immunoblot using anti-MBP (MBP-GNU) and anti-FLAG (PNG-FLAG) (bottom panels, WB). The kinase assay was repeated in two replicates. Representative results are shown. (C) PNG kinase phosphorylates ME31B in vitro. Recombinant His-ME31B was incubated with or without PNG kinase complex in the presence of radioactive ATP. Because PNG kinase complex requires additional recombinant GNU (GST-GNU) for its full kinase activation, His-ME31B was phosphorylated with or without GST-GNU. Radioactivity incorporated into His-ME31B was detected by autoradiography (left panel). Protein levels of His-ME31B were examined by coomassie staining (right panel, CBB). The white arrowhead indicates phosphorylated His-ME31B protein. The kinase assay was repeated in two replicates. Representative results are shown.
 
-## PNG phosphorylates other translational repressors
+### PNG phosphorylates other translational repressors
 
 Given the hundreds of mRNAs whose regulation at egg activation is dependent on PNG, it seemed probable that PNG affects translation through multiple mechanisms and may have multiple substrate targets. We previously showed that the translational repressor pumilio (pum) dominantly suppresses png; a heterozygous mutation of pum restores both Cyclin B protein levels and mitosis in png mutant embryos (Vardy and Orr-Weaver, 2007). Even PUM nonphosphorylated peptides were not recovered in the substrate screen (Figure 2—source data 1), therefore, the possibility of PUM being a PNG substrate could not be evaluated. Consequently, we tested for a direct interaction between png and pum by asking whether PNG can phosphorylate PUM in vitro. A GST-PUM fusion protein is phosphorylated by purified wild-type PNG kinase but not by the kinase-dead form (Figure 4B).
 
@@ -81,7 +113,7 @@ These results raise the possibility that PNG acts on a number of translational r
 
 In addition to its effects at egg activation, PNG may indirectly affect translational repressors later in embryogenesis, at a developmental time when PNG appears to be inactivated (Hara et al., 2017). In the embryo the TRAL, ME31B, and Cup proteins form an inhibitory complex that represses the translation of maternal mRNAs. These proteins have been shown to be degraded during the maternal-to-zygotic transition, and functional PNG is a prerequisite for this degradation (Wang et al., 2017).
 
-## Conclusions
+### Conclusions
 
 We previously showed that the PNG kinase is activated by a signal downstream of egg activation and thus controls massive changes in maternal mRNA translation (Kronja et al., 2014; Hara et al., 2017). We now have found TRAL is a PNG substrate using a biochemical screen. Phosphorylation by PNG suppressed TRAL’s ability to repress mRNA translation. This antagonism also was supported by genetic interaction between png and tral in fertilized embryos, suggesting that TRAL phosphorylation by PNG during the oocyte-to-embryo transition is a key to remodel maternal mRNAs’ translation activity.
 
@@ -89,19 +121,484 @@ The PNG kinase functions as a signal transducer for the external egg activation 
 
 ## Materials and methods
 
-## Fly stocks and embryo collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>Bicaudal C (BicC)</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0000182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>giant nuclei (gnu)</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0001120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>maternal expression at 31B (me31B)</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0004419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>pan gu (png)</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0000826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>plutonium (plu)</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0003114</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>pumilio (pum)</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0003165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (D. melanogaster)</td>
+      <td>trailer hitch (tral)</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0041775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (D. melanogaster)</td>
+      <td>WT: OregonR</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>Df(3L)ED4483</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:8070; RRID:BDSC_8070; FLYB:FBst0008070</td>
+      <td>FlyBase symbol: Df(3L)ED4483; Genotype: w[1118]; Df(3L)ED4483, P{w[+mW. Scer\FRT.hs3]=3'.RS5+3.3'} ED4483/TM6C, cu[1] Sb[1]</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>gfp-tral89</td>
+      <td>The Flytrap Project; (Morin et al., 2001); PMID:11742088</td>
+      <td>Flytrap:G00089; DGRC:110584; RRID:DGGR_110584</td>
+      <td>Genotype: w[*]; P{w[+mC]=PTT-un1}G00089</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>png1058</td>
+      <td>(Shamanski and Orr-Weaver, 1991); PMID:1913810</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>png3318</td>
+      <td>(Shamanski and Orr-Weaver, 1991); PMID:1913810</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>tral1</td>
+      <td>Bloomington Drosophila Stock Center; (Wilhelm et al., 2005); PMID: 16256742</td>
+      <td>BDSC:14933; RRID:BDSC_14933; FLYB:FBst0014933</td>
+      <td>Genotype: y[1]; P{y[+mDint2] w[BR.E.BR]= SUPorP}tral[KG08052] ry[506]/TM3, Sb[1] Ser[1]</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>alkylated thiophosphate antibody (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab92570; RRID:AB_10562142</td>
+      <td>Anti-Thiophosphate ester antibody [51-8] (1/2000 in 5% Skim milk TBS-T)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PNG (Rabbit polyclonal)</td>
+      <td>(Hara et al., 2017); PMID: 28555567</td>
+      <td></td>
+      <td>(1/1000 in Hikari solution A)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PLU (Rabbit polyclonal)</td>
+      <td>(Elfring et al., 1997); PMID: 9247640</td>
+      <td></td>
+      <td>Affinity-purified (1/200 in Hikari solution A)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GNU (Guinea pig polyclonal)</td>
+      <td>(Lee et al., 2003); PMID: 14665672</td>
+      <td></td>
+      <td>(1/5000 in TBS-T)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TRAL (Rat polyclonal)</td>
+      <td>(Tritschler et al., 2008); PMID:18765641</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-FLAG (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:F1804; RRID:AB_262044</td>
+      <td>(1/2000 in TBS-T)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-MBP (Rat monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:SAB4200082</td>
+      <td>(1/2000 in Hikari solution A)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Myc (Mouse monoclonal)</td>
+      <td>Covance</td>
+      <td>Covance:MMS-150R-1000; RRID:AB_291325</td>
+      <td>9E10; (1/2000 in TBS-T)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GST (Mouse monoclonal)</td>
+      <td>MBL</td>
+      <td>MBL:PM013-7; RRID:AB_10598029</td>
+      <td>Anti-GST-tag pAb-HRP-DirecT; (1/5000 in Hikari solution A)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>HRP-conjugated anti-rabbit IgG</td>
+      <td>Jackson Immuno Research</td>
+      <td>Jackson ImmunoResearch: 711-035-152; RRID:AB_10015282</td>
+      <td>(1/10000 in TBS-T or Hikari solution B)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>HRP-conjugated anti-guinea pig IgG</td>
+      <td>Jackson Immuno Research</td>
+      <td>Jackson Immuno Research:706-035-148: RRID:AB_2340447</td>
+      <td>(1/50000 in TBS-T)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>HRP-conjugated anti-mouse IgG</td>
+      <td>Jackson Immuno Research</td>
+      <td>Jackson Immuno Research:115-035-164: RRID:AB_2338510</td>
+      <td>(1/20000 in TBS-T)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>HRP-conjugated anti-rat IgG</td>
+      <td>Jackson Immuno Research</td>
+      <td>Jackson Immuno Research:112-035-062: RRID:AB_2338133</td>
+      <td>(1/5000 in TBS-T)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse monoclonalanti-Cyclin A</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB Cat #A12RRID:AB_528188</td>
+      <td>1/100 in Hikari Solution A</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mouse monoclonalanti-Cyclin B</td>
+      <td>Developmental StudiesHybridoma Bank</td>
+      <td>DSHB Cat#F2F4RRID:AB_528189</td>
+      <td>1/200 in Hikari Solution B</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pFastBac Dual</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher:10712024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pFastBac1</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fihser:10359016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGEX-6P-1</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare:28954648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAL-c2X</td>
+      <td>New England Biolabs</td>
+      <td>New England Biolabs:N8076S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pSP64 Poly(A)</td>
+      <td>Promega</td>
+      <td>Promega:P1241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pET28b</td>
+      <td>Merck</td>
+      <td>Merck:69865-﻿3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pFastBac Dual PNG/PLU</td>
+      <td>(Hara et al., 2017); PMID: 28555567</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pFastBac Dual PNG172/PLU</td>
+      <td>This paper</td>
+      <td></td>
+      <td>png172:kinase dead mutant (G157E)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pFastBac1 GNU</td>
+      <td>(Lee et al., 2003); PMID: 14665672</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pFastBac Dual PNG M87G/PLU</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PNG M87G: gatekeeper mutant</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pFastBac Dual PNG M87A/PLU</td>
+      <td>This paper</td>
+      <td></td>
+      <td>PNG M87A: gatekeeper mutant</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGEX-6P-1 GNU</td>
+      <td>(Hara et al., 2017); PMID: 28555567</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGEX-6P-1 BICC</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pGEX-6P-1 PUMILIO</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAL-c2X GNU</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAL-c2X TRAL FL</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAL-c2X TRAL N</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TRAL 1–355</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAL-c2X TRAL C</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TRAL 356–652</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAL-c2X TRAL FL A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T438A, T441A, T444A, T446A, T448A, T526A, T528A, S532A, S533A, T534A, T630A, T631A, T633A, T634A, T644A</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAL-c2X TRAL C A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T438A, T441A, T444A, T446A, T448A, T526A, T528A, S532A, S533A, T534A, T630A, T631A, T633A, T634A, T644A</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAL-c2X TRAL FL Phos-mimic</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T438D, T441D, T444D, T446D, T448D, T526D, T528D, S532D, S533D, T534D, T630D, T631D, T633D, T634D, T644D</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pSP64 Poly(A) EGFP-3xMyc</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pET28b ME31B-3xMyc</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE SP6 Transcription Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher:AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Rabbit Reticulocyte Lysate System, Nuclease Treated</td>
+      <td>Promega</td>
+      <td>Promega: L4960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>TMTsixplex Isobaric Label Reagent Set</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher:90061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>FSBA</td>
+      <td>SIGMA-Aldrich</td>
+      <td>SIGMA-Aldrich:F9128</td>
+      <td>5’-(4-fluorosulphonylbenzoyl)adenosine</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>PNBM</td>
+      <td>Abcam</td>
+      <td>Abcam:ab138910</td>
+      <td>p-Nitrobenzyl mesylate</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>N6(benzyl) ATP-γS</td>
+      <td>Axxora</td>
+      <td>Axxora:BLG-B072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>N6(phenethyl) ATP-γS</td>
+      <td>Axxora</td>
+      <td>Axxora:BLG-P026</td>
+      <td>N6(Phenylethyl) ATP-γ-S</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>N6(furfuryl) ATP-γS</td>
+      <td>Axxora</td>
+      <td>Axxora:BLG-F008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>HIKARI signal enhancer</td>
+      <td>Nacalai</td>
+      <td>Nacalai:02270–81</td>
+      <td>Signal Enhancer HIKARI for Western Blotting and ELISA</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>WebLogo</td>
+      <td>(Crooks et al., 2004); PMID:15173120</td>
+      <td>RRID:SCR_010236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Proteome Discoverer</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:SCR_014477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Mascot</td>
+      <td>Matrix Science</td>
+      <td>RRID:SCR_014322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>CAMV</td>
+      <td>(Curran et al., 2013); PMID:23500044</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and embryo collection
 
 Oregon R was used as the wild-type control. The mutants we used were: png1058 and png3318 (Shamanski and Orr-Weaver, 1991); tral1 and Df(3L)ED4483 (Wilhelm et al., 2005) (Bloomington stock center); GFP-Tral89 (Morin et al., 2001) (FlyTrap project). Flies were maintained at 22 or 25˚C on standard Drosophila cornmeal molasses food.
 
-## Positional scanning peptide libraries
+### Positional scanning peptide libraries
 
 To examine whether PNG kinase had preferred phospho motifs, we screened a positional scanning peptide library as described (Mok et al., 2010). Peptide mixtures (50 µM) having the general sequence Y-x-x-x-x-x-S/T-x-x-x-x-A-G-K-K(biotin) were incubated with 1.5 ng/µL of either of the purified recombinant active wild-type or kinase-deficient (PNG172) (Fenger et al., 2000) PNG kinase (Hara et al., 2017) and 4.9 ng/µL GST-GNU at 30 ˚C for 2 hr in kinase reaction buffer (50 mM Tris-HCl pH 7.5, 10 mM MgCl2, 3 mM MnCl2, 1 mM DTT, 80 mM β-glycerophosphate (βGP), 0.1% BSA, 0.1% Tween 20) containing 50 µM γ[33P]-ATP (0.03 µCi/µL). Peptide aliquots were transferred to streptavidin-coated membrane, which was processed as described (Mok et al., 2010). Radiolabel incorporation was quantified by phosphor imaging using Quantity One software (Bio Rad). The phosphorylation motifs were visualized using WebLogo (Crooks et al., 2004).
 
-## PNG kinase substrate screen
+### PNG kinase substrate screen
 
 Wild-type embryos (0–2 hr) were collected (Hara et al., 2017), homogenized in embryo lysis buffer [50 mM Tris-HCl pH8.0, 150 mM NaCl, 15 NP-40, 1 mM DTT, 2.5 mM EGTA, Complete EDTA-free protease inhibitor (Roche, Indianapolis, IN)], and then sonicated. After centrifugation at 14 krpm for 15 min at 4˚C, the supernatant was applied to a PD10 desalting column (GE Healthcare, Waukesha, WI) to change its buffer into kinase buffer [20 mM Tris-HCl pH7.5, 3 mM MnCl2, 10 mM MgCl2, 80 mM βGP, 0.5mM DTT, Complete EDTA-free protease inhibitor (Roche, Indianapolis, IN)] and treated with 1 mM FSBA for 45 min at room temperature. The extracts were fractionated with ammonium sulfate precipitation at 25%, 40%, 50%, 60% and 75% saturation, and the precipitates of each fraction were frozen in liquid N2 and stored at −80˚C. They were separately resuspended in the same volume of kinase buffer as the initial extract volume and were dialyzed in kinase buffer to remove ammonium sulfate and free FSBA. If fractions had remaining endogenous kinase activities, they were treated with FSBA again and dialyzed to remove it. To thio-phosphorylate proteins in the fractions, 500 μL of each fraction was incubated with the recombinant wild-type or kinase-dead PNG kinase complex (600 ng of PNG-FLAG), GST-GNU (2 μg) to activate the kinase (Hara et al., 2017), and 1 mM ATP-γS in kinase buffer supplemented with 0.1 μM okadaic acid at 30˚C for 30 min. Twenty microliters of the reaction were taken from each and alkylated with PNBM to test for thio-phosphorylation by immunoblot using an alkylated thiophosphate antibody (Anti-Thiophosphate ester antibody [51-8]; Abcam. Cambridge, MA) (Allen et al., 2007). The remainder of each reaction was methanol-chloroform extracted and trypsinized. In the first experiment, the 25% ammonium sulfate fraction and a pooled fraction (40%, 50%, 60% and 75%) were analyzed, whereas all ammonium sulfate fractions were combined and analyzed in the second experiment. Thio-phosphorylated peptides were captured onto an iodoacetyl resin, stringently rinsed, eluted by oxidation with Oxone, and identified by MS as previously described (Rothenberg et al., 2016).
 
-## Recombinant proteins
+### Recombinant proteins
 
 The regions of the tral cDNA corresponding to coding frame for full length (FL: 1–652 amino acids), the N-terminus (1–355 amino acids) or the C-terminus (356–652 amino acids) of the TRAL protein were cloned into pMAL-c2x (NEB, Ipswich, MA) to express maltose binding protein (MBP) fusion proteins in bacteria. Phosphomutants of the residues identified as PNG phosphorylation sites in the substrate screen were made in the tral C-terminus cDNA. The threonine or serine phosphosites were substituted to alanine (A) or aspartic acid (Phos-mimic) by gene synthesis (GENEWIZ, South Plainfield, NJ). The mutated cDNAs were cloned into pMAL-c2x (NEB, Ipswich, MA) for analysis of solely the C-terminal fragment or were swapped with the C-terminus of the pMAL-c2x TRAL Full Length (FL) cDNA clone to make pMAP-c2x TRAL FL A or Phos-mimic. MBP-fusion proteins were expressed and purified from bacteria following manufacturer protocols (NEB, Ipswich, MA) and dialyzed in TBS with 0.05% NP-40 and 1 mM DTT.
 
@@ -111,23 +608,23 @@ To make MBP-fused GNU, GNU cDNA was cloned into pMAL-c2x (NEB, Ipswich, MA), exp
 
 ME31B fused with 3xMyc was cloned into pET28b to express as a His-tagged protein in bacteria. The protein was purified using Ni-NTA beads (Qiagen) and following manufacturer protocols.
 
-## In vitro kinase assay
+### In vitro kinase assay
 
 Two μg of MBP-TRAL were incubated with the recombinant PNG kinase complex (6 ng of PNG-FLAG) and 20 ng GST-GNU to activate PNG kinase at 30˚C for 5 min in 10 μL of kinase buffer2 [20 mM Tris-HCl pH7.5, 3 mM MnCl2, 10 mM MgCl2, 80 mM βGP, 10 μM ATP, Complete EDTA-free protease inhibitor (Roche, Indianapolis, IN)] in the presence of 11.1 MBq/mL [γ-32P]ATP. Reactions were terminated by adding 5 μL of 3x Laemmli sample buffer (LSB) with 25 mM EDTA and boiling. Samples were separated on 7.5% SDS-PAGE, and after Coomassie Brilliant Blue (CBB) staining phosphorylated TRAL was detected by autoradiography. The recombinant PNG kinase components were examined by immunoblot as described before (Hara et al., 2017). GST-PUM and GST-BICC were treated with WT or kinase-dead PNG kinase complex, and their phosphorylation was detected as above except that MBP-GNU was used to activate PNG kinase instead of GST-GNU.
 
-## In vitro translation assay
+### In vitro translation assay
 
 EGFP-3x Myc cDNA mRNA was in vitro transcribed from its cDNA cloned into pSP64 poly(A) using mMESSAGE mMACHINE (ThermoFisher, Waltham, MA). The mRNA was translated in the rabbit reticulocyte lysate system (Promega, Madison, WI) with or without 1 μM (final) MBP or MBP-TRAL proteins. Synthesized EGFP-3x Myc protein and MBP or MBP-TRAL proteins from the reaction were examined by immunoblot with anti-Myc (9E10; Covance, Princeton, NJ) or Anti-MBP antibody (Sigma-Aldrich, St. Louis, MO).
 
-## Embryo collection and staining
+### Embryo collection and staining
 
 Fertilized embryos were collected for 2 hr and aged for 1 hr, dechorionated, fixed and the DNA stained with DAPI (Pesin and Orr-Weaver, 2007). Their nuclear number was scored as previously described (Lee et al., 2001). For immunoblots, dechorionated embryos were lysed in 1x LSB and Cyclin A and B proteins were probed as described (Hara et al., 2017).
 
-## In vitro activation and GFP-TRAL imaging
+### In vitro activation and GFP-TRAL imaging
 
 Stage 14 oocytes were collected from png1058/FM7wa;GFP-Tral89/TM3Sb or png1058/png1058;GFP-Tral89/TM3Sb females in isolation buffer and placed between a glass slide and cover slip separated with double sticky tape as a spacer. The oocytes in the chamber were activated with activation buffer (Mahowald et al., 1983). GFP-TRAL in the cytoplasm was inspected by confocal microscopy (Zeiss LSM700).
 
-## Trailer Hitch phospho-site mapping
+### Trailer Hitch phospho-site mapping
 
 Stage 14 oocytes, in vitro activated eggs (30 min) and fertilized embryos (1 hr collection) from WT (OrR) or png mutant (png1058/1058) females were homogenized in lysis buffer supplemented with RNase A (0.1 mg/mL). Soluble fractions were recovered after centrifugation and their protein concentration was adjusted to 5 μg/μL. Forty μL of the soluble fractions was used for immunoprecipitaion for TRAL. Protein G Dynabeads (Thermo Fisher Scientific, Waltham, MA) were incubated with anti-TRAL antibody (a gift from Izaurralde lab), washed and cross-linked by BS3 (Thermo Fisher Scientific, Waltham, MA) following protocols from the manufacturer. The beads were incubated with the soluble fractions from above for 2 hr at 4oC. After washing the beads three times with lysis buffer, immunoprecipitated proteins were eluted by adding LSB followed by boiling for 5 min. The eluted proteins were run on an SDS-PAGE and stained with CBB.
 

@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02yxnh564 Key Laboratory of Saline-Alkali Vegetation Ecology Restoration, Northeast Forestry University, Ministry of Education Harbin China
-2. https://ror.org/02yxnh564 College of Life Sciences, Northeast Forestry University Harbin China
-3. https://ror.org/02vj4rn06 State Key Laboratory of Subtropical Silviculture, Zhejiang A&F University Hangzhou China
-4. https://ror.org/057zh3y96 Asian Natural Environmental Science Center (ASNESC), University of Tokyo Tokyo Japan
+1. Key Laboratory of Saline-Alkali Vegetation Ecology Restoration, Northeast Forestry University, Ministry of Education Harbin China ([ROR:02yxnh564](https://ror.org/02yxnh564))
+2. College of Life Sciences, Northeast Forestry University Harbin China ([ROR:02yxnh564](https://ror.org/02yxnh564))
+3. State Key Laboratory of Subtropical Silviculture, Zhejiang A&F University Hangzhou China ([ROR:02vj4rn06](https://ror.org/02vj4rn06))
+4. Asian Natural Environmental Science Center (ASNESC), University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
 
 † Corresponding author
 
@@ -32,11 +32,19 @@ Urea serves not only the primary nitrogen source that plants actively absorb fro
 
 Beyond its hydrolysis by arginase to yield urea, arginine also serves as a substrate for nitric oxide (NO) and polyamine (PA) biosynthesis in plants by nitric oxide synthase (NOS) and arginine decarboxylase (ADC) (Siddappa and Marathe, 2020), respectively. Consequently, arginine becomes a shared substrate, competitively utilized by the three enzymes ARGAH, NOS, and ADC (Figure 1). Many recent studies suggested that the improved salt tolerance observed in arginase-deficient mutants is attributed to an indirect upregulation of NOS and ADC pathways, thereby enhancing NO and PA-mediated plant defense responses (Flores et al., 2008; Shi and Chan, 2013a; She et al., 2017; Wang et al., 2011; Winter et al., 2015). However, this raises the question of how the presence of arginase activity still allows urea-deficient mutants to significantly alleviate salt-induced inhibition of seed germination (SISG) and bolster seedling growth (Bu et al., 2015).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig1-v3.jpg)
+
+**Figure 1.:** (a) A simple model of arginine metabolism in Arabidopsis thaliana. This model outlines the conversion of arginine into (1) nitric oxide (NO) and citrulline by nitric oxide synthase (NOS); (2) polyamine (PA) by arginine decarboxylase (ADC); and (3) ornithine and urea by arginase, with urea further decomposed to ammonia by urease. It highlights arginine as a shared competitive substrate for the three enzymes ARGAH, NOS, and ADC, illustrating the competitive enzymatic interactions. NOHA: NG-hydroxy-l-arginine, an arginase inhibitor; PPD: phenyl phosphorodiamidate, a urease inhibitor. (b) Comparison of germination rates of WT seeds on half-strength MS (½ MS) medium containing 0 mM (control) or 135 mM NaCl with 5 μM NOHA or without NOHA. Photographs were taken at the 48 hr after 2 days at 4°C. A representative result from one of three independent experiments, all yielding similar outcomes, is shown. Scale bar represents 1 mm. (c) Seeds were germinated on ½ MS medium containing either 0 mM or 135 mM NaCl and varying concentrations of NOHA (0, 1.5, 2.5, 5 μM); photographs were taken 14 days after germination. (d) Germination rates of WT seeds in either 0 mM or 135 mM NaCl medium with or without 5 μM NOHA or 15 μM PPD. Stratification consisted of pretreatment of seeds for 2 days at 4°C in the darkness. In all experiments, seeds were freshly sowed and incubated under 16 hr light and 8 hr dark conditions at 22℃. The experiment was repeated three times; at least 30 seeds were counted in each replicate. The data was analyzed using a one-way ANOVA, followed by Duncan’s multiple range test for the post hoc comparisons. Significant differences between groups, indicated by different letters on the error bars, were determined (p<0.05).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a, b) Growth of WT seedlings, on ½ MS without (a) and with 135 mM NaCl (b) both subjected to treatments of 0, 1.5, 2.5, and 5 µM NOHA. Photographs captured 14 days after germination. (c, d) Root length was measured across both control and salt-stressed seedlings. In all experiments, seeds were freshly sowed seeds and incubated under a 16 hr light/8 hr dark condition cycle at 22℃. The experiment was repeated three times with at least 35 seeds per replicate. The data was analyzed using a one-way ANOVA and Duncan’s post hoc test. Different letters on the error bars represent significant differences (p<0.05).
+
 To address these questions, our study focused on the connection between urea produced by arginase hydrolysis pathway, distinct from the PA and NO pathways, and the SISG and seedling growth, with a particular focus on the dual-step hydrolysis of arginine (Figure 1) and the internal transport of urea in relation to SISG and seedling growth. By employing specific enzyme inhibitors and gene deletion mutants within the arginine two-step hydrolysis pathway, we found that hydrolysis of arginine-derived urea is the key point for effectively alleviating the adverse effects of salt on seed germination and seedling growth. This led us to the question: what mechanism underlies the triggering of SISG and stunted seedling growth by urea hydrolysis? We ruled out the potential accumulation of ammonium, resulting from urea hydrolysis, by incorporating exogenous ammonium into the salt stress medium. Interestingly, our findings on intracellular pH measurements indicate that the salt-induced hydrolysis of urea, yielding OH-, leads to an increase in intracellular pH of the radicle, pinpointing this as the primary factor initiating SISG and impeding seedling growth. This finding challenges our previous hypothesis, proposed by Bu et al., 2015, that NH4+ accumulation resulting from urea hydrolysis under salt stress is the trigger for SISG. These new insights provide a novel perspective of mechanisms driving SISG and subsequent seedling development.
 
 ## Results
 
-## Urea hydrolysis is the cause of SISG in the two-step arginine hydrolysis
+### Urea hydrolysis is the cause of SISG in the two-step arginine hydrolysis
 
 Initially, to determine whether arginase-mediated arginine hydrolysis pathway is involved in SISG and seedling growth, we utilized two inhibitors specific to the two-step hydrolysis reaction of the arginine hydrolysis pathway: NG-hydroxy-l-arginine (NOHA), an arginase inhibitor, and phenyl phosphorodiamidate (PPD), a urease inhibitor (Figure 1a). We analyzed the seed germination phenotypes under these conditions. In the absence of NOHA, the NaCl treatment significantly hindered the seeds’ capacity to germinate, as evidenced by the radicle’s inability to break through the seed coat (Figure 1b). However, the addition of 5 μM NOHA into NaCl medium significantly increased the germination rate (Figure 1b). In contrast, the presence or absence of NOHA in the control medium did not notably affect seed germination (Figure 1b).
 
@@ -44,19 +52,35 @@ To better observe the effect of NOHA on seed germination or early seedling growt
 
 To directly elucidate the impact of the arginase-mediated arginine hydrolysis pathway on SISG, and under the assumption that the competition for arginine substrate by multiple pathways (Figure 1) is not affected at this stage, we investigated the effect of urea hydrolase inhibitor PPD, which acts on a downstream metabolite of arginine, on seed germination. This was then compared to the effects observed in the NOHA assay. The results showed that salt significantly inhibited the germination of wild-type Arabidopsis seeds, with less than 10% germination. The addition of 15 µM of PPD increased the germination rate to 70%, compared with the rate without PPD (Figure 1d), which showed the same trend as NOHA treatment (Figure 1d). These results indicate that salt tolerance in WT seeds germination and seedling growth is manifested especially under NOHA and PPD conditions. The two-step hydrolysis pathway of arginine mediated by arginase and its downstream metabolite urea hydrolase is not only involved in SISG events, but also urea hydrolysis may be the leading cause of SISG occurrence.
 
-## Genetic evidence for SISG triggered by the arginine hydrolysis pathway
+### Genetic evidence for SISG triggered by the arginine hydrolysis pathway
 
 To clarify the genetic basis of arginase inhibitor experiments described above, the following studies were conducted. Arabidopsis thaliana has two genes encoding ARGAH, namely ARGAH1 (gene number: AT4G08900) and ARGAH2 (gene number: AT4G08870). AtArgAH1 has a T-DNA insertion within its first exon, while AtArgAH2 contains a T-DNA insertion in the fourth exon. Consequently, the mutants resulting from these insertions were denoted as argah1 and argah2, respectively (Figure 2—figure supplement 1a). Additionally, AtArgAH1 and AtArgAH2 double knockout mutants (argah1/argah2) were generated using clustered regularly interspaced short palindromic repeats (CRISPR)/of CRISPR-associated (Cas) protein 9 system. Targeted modifications were introduced into the third exon of the AtArgAH1 gene and the second exon of the AtArgAH2 gene. In total, four hygromycin-resistant lines were obtained from the T0 transgenic lines. Subsequent to CRISPR-Cas9 gene editing and sequencing, one line of the argah1/argah2 double mutant exhibited a 1 bp insertions in the coding region of the AtArgAH1 gene, and another 1 bp insertions in the coding region of the AtArgAH2 gene (Figure 2—figure supplement 1b). Thus, for subsequent genetic phenotypic analyses, argah1/argah2 double mutants were utilized alongside wild-type Arabidopsis (WT). Seed germination and initial growth after germination of all mutants (argah1, argah2, and argah1/argah2) were not significantly different from those of WT in the control medium (Figure 2a). In contrast, adding NaCl to the control medium severely inhibited seed germination and radicle development of WT (Figure 2b). The seed germination rates of each mutant (argah1, argah2, and argah1/argah2) were significantly higher than those of WT under NaCl conditions (Figure 2c). Furthermore, the root length of the mutant under salt stress was significantly higher than that of the WT (Figure 2d). Moreover, arginase activity analysis revealed significantly lower levels in argah1, argah2, and argah1/argah2 mutants following NaCl treatment compared to WT (Figure 2e). These findings indicate that partial or complete blocking of the arginine hydrolysis pathway can effectively alleviate SISG. We have previously reported that deletion mutants of the urea hydrolase gene (urease) enhance salt tolerance during seed germination (Bu et al., 2015). That implies that even the accumulation of urea in vivo, derived from the hydrolysis of arginine by arginase, is insufficient to trigger SISG.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig2-v3.jpg)
+
+**Figure 2.:** WT, argah1, argah2, and argah1/argah2 mutant seeds germinated, and seedling growth was observed on ½ MS medium under two conditions: 0 mM NaCl (control) (a) and 135 mM NaCl (b). Seedlings images of seeds germination 48 hr after 2 days at 4°C and 14 days after germination. (c) Germination rates, (d) root length measurements, and (e) arginase activity assays for WT, argah1, argah2, and argah1/argah2 mutants on control and 135 mM NaCl mediums. In all experiments, seeds were freshly sowed and incubated under 16 hr light and 8 hr dark conditions at 22℃. The experiment was repeated three times; at least 30 seeds were counted in each replicate. Scale bar: 1 mm. Data were subjected to a one-way ANOVA, followed by Duncan’s post hoc test. Different letters on the error bars denote significant differences in the data (p<0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Characterization of atargah1 and atargah2, an Arabidopsis T-DNA insertion mutant, green boxes represent exons, and black lines represent introns. (b) AtArgAH1 and AtArgAH2 double genes knockout mediated by the CRISPR-Cas9 system; schematic map of the sgRNA targeted sites on the genomic regions of AtArgAH1 and AtArgAH2, and sequencing results of the AtArgAH1/AtArgAH2 double homozygous mutant lines atargah1/atargah2 from the T1 generation. The edited exon is shown as green boxes, the adjacent intron is shown as lines, and black arrows represent insertions.
 
 It is well known that Na+ toxicity is the main factor triggering SISG. The mechanism involves SOS3 binds to free Ca2+, consequently activating SOS2 protein kinase, which in turn phosphorylates SOS1, leading to the activation of SOS1 transport responsible for pumping Na+ out of the cell (Zhou et al., 2022). Therefore, SOS3-deficient mutant (sos3) accumulate substantial Na+ levels and are highly sensitive to salt stress. In order to further clarify the importance of urea hydrolysis in SISG, sos3 mutants were considered as standard materials for SISG analysis, along with aturease/sos3 double mutant. Initially, we introduced PPD to 50 mM NaCl medium to observe the growth of sos3. Notably, with increasing the concentrations of PPD, the growth inhibition of sos3 induced by NaCl was alleviated significantly (Figure 3a). Furthermore, both seed germination rate (Figure 3b) and 14-day root length (Figure 3c) were significantly increased compared to those without PPD treatment. Subsequently, the aturease/sos3 double mutant analysis revealed a significant improvement in germination ability and growth compared to sos3 in the presence of 50 mM NaCl (Figure 3d and e). In addition, the root length of aturease/sos3 double mutant exceeded that of sos3 mutants under salt stress conditions (Figure 3f). The above treatments with urea hydrolase inhibitors PPD, coupled with genetic evidence, suggest that blocking the hydrolysis of arginine-derived urea can mitigate the hypersensitivity of sos3 to salt stress. This further corroborates the fact that urea accumulation in vivo is not the primary trigger of SISG. Instead, urea hydrolysis appears to play a dominant role in this process.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig3-v3.jpg)
 
-**Figure 3.:** sos3 mutants to salt.(a) Seeds germinated and seedling growth of sos3 mutants on ½ MS with 50 mM NaCl medium, supplemented with phenyl phosphorodiamidate (PPD) at different concentrations (0, 3, 5, and 7.5 μM). Seedlings images of seeds germination 48 hr after 2 days at 4°C and 14 days after germination. (b) Germination rates and (c) root lengths of sos3 mutants assessed after the specified treatments. (d) WT, aturease, sos3, and sos3/aturease seeds germinated and grew on ½ MS with 50 mM NaCl. Seedlings images of seeds germination 48 hr after 2 days at 4°C and 14 days after germination. (e) Germination rate and (f) root lengths for WT, sos3, aturease, and sos3/aturease mutants were measured after the indicated treatments. In all experiments, seeds were freshly sowed and incubated under a 16 hr light/8 hr dark cycle at 22℃. The experiment was repeated three times; at least 25 seeds were counted in each replicate. Scale bar: 1 mm. The data were analyzed using one-way ANOVA followed by Duncan’s post hoc test, with different letters on the error bars indicating significant differences in the data (p<0.05).
+**Figure 3.:** (a) Seeds germinated and seedling growth of sos3 mutants on ½ MS with 50 mM NaCl medium, supplemented with phenyl phosphorodiamidate (PPD) at different concentrations (0, 3, 5, and 7.5 μM). Seedlings images of seeds germination 48 hr after 2 days at 4°C and 14 days after germination. (b) Germination rates and (c) root lengths of sos3 mutants assessed after the specified treatments. (d) WT, aturease, sos3, and sos3/aturease seeds germinated and grew on ½ MS with 50 mM NaCl. Seedlings images of seeds germination 48 hr after 2 days at 4°C and 14 days after germination. (e) Germination rate and (f) root lengths for WT, sos3, aturease, and sos3/aturease mutants were measured after the indicated treatments. In all experiments, seeds were freshly sowed and incubated under a 16 hr light/8 hr dark cycle at 22℃. The experiment was repeated three times; at least 25 seeds were counted in each replicate. Scale bar: 1 mm. The data were analyzed using one-way ANOVA followed by Duncan’s post hoc test, with different letters on the error bars indicating significant differences in the data (p<0.05).
 
-## How does the hydrolysis of arginine-derived urea trigger SISG?
+### How does the hydrolysis of arginine-derived urea trigger SISG?
 
 Next, if urea accumulation is not the key to SISG, is urea hydrolysis detrimental to seed germination? The cause of SISG by excessive urea hydrolysis in triggering SISG remains an enigmatic issue. Initially, we confirmed that NaCl stress resulted in the accumulation of urea (Figure 4a) and NH4+ (Figure 4b) during WT seed germination, suggesting that salt stress promoted seed nitrogen mobilization and significantly lowered urea and NH4+ levels in the argah1/argah2 double mutants (Figure 4a and b). In addition, in the presence of 50 mM NaCl, sos3-mutant seeds accumulated higher NH4+ levels than WT and aturease mutants. Remarkably, the aturease/sos3 double mutant effectively reduced NH4+ levels to those akin to WT and aturease (Figure 4c). These findings initially indicated that SISG might be triggered by the ammonium accumulation resulting from excessive hydrolysis of arginine-derived urea. However, the following experiments challenged this seemingly reasonable hypothesis. We examined seed germination and growth in the presence of both NaCl and NH4Cl. Surprisingly, exogenous NH4+ significantly alleviated the inhibitory effects of NaCl on seed germination (Figure 4d, Figure 4—figure supplement 1), with a concomitant increase in NH4+ (Figure 4e), indicating that NH4+ accumulation was not the primary cause of SISG. Further validation was sought by adding urea to NaCl medium. Intriguingly, urea substantially inhibited seed germination (Figure 4d, Figure 4—figure supplement 1), but NH4+ content did not accumulate in seeds (Figure 4e), thereby confirming that NH4+ produced via urea hydrolysis was not the driving force behind SISG.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig4-v3.jpg)
+
+**Figure 4.:** (a) Urea and (b) NH4+ concentrations were measured in WT and argah1/argah2 seedlings grown in ½ MS medium under control (0 mM) and 135 mM NaCl conditions. (c) NH4+ levels assessed in WT, aturease, sos3, and sos3/aturease seedlings under 50 mM NaCl treatment in ½ MS. (d) Effect of NH4Cl on salt response was evaluated in WT seeds, monitoring germination rates in control medium with 135 mM NaCl, with and without 10 mM NH4Cl and 10 mM urea, over time. (e) NH4+ concentration in WT seedlings measured on ½ MS with 135 mM NaCl, with or without the addition of 10 mM NH4Cl and 10 mM urea. In all experiments, seeds were freshly sowed and incubated under a 16 hr light/8 hr dark cycle at 22℃. The experiment was repeated three times; at least 30 seeds were counted in each replicate. Scale bar: 1 mm. The data were analyzed using a one-way ANOVA, with Duncan’s test for post hoc comparison. Different letters on the error bars indicate significant differences in the data (p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Growth of WT seedlings on ½ MS medium (control; without 135 mM NaCl or 10 mM NH4Cl, NH4NO3, urea), on ½ MS medium with 135 mM NaCl, and on ½ MS medium with 135 mM NaCl containing 10 mM NH4Cl, or NH4NO3, or urea. Photographs were taken 14 days after germination. (b) Root length was measured after the indicated treatments. In all experiments, seeds were freshly sowed and incubated under 16 hr light and 8 hr dark conditions at 22℃. The experiment was repeated three times with at least 30 seeds per replicate. The data analysis was performed using a one-way ANOVA and Duncan’s post hoc test, with different letters denoting significant differences (p<0.05).
 
 These results disproved that NH4+ accumulation and toxicity caused by urea hydrolysis was the primary cause of SISG. Then, we reconsidered the hydrolysis process of urea, based on the complete reaction of urea hydrolysis: (NH2)2CO + 3H2O → 2NH4+ + HCO3- + OH-, and discovered that in addition to NH4+, excessive urea hydrolysis by alkaline reaction produces a considerable accumulation of OH-. According to recent reports, excessive assimilation of NH4+ by glutamine synthetase (GS) produces acid stress and has toxic effects on plants (Hachiya et al., 2021; Witte, 2011). To verify the relationship between acid stress of NH4+ assimilation by GS and plant salt sensitivity, we added GS inhibitor l-methionine sulfoximine (MSX) to a salt-stress medium to inhibit NH4+ assimilation (Kiyomiya et al., 2001; Rawat Suman et al., 1999) and found that MSX significantly inhibited the germination of WT seeds under salt stress, while WT germinated well in the control medium (Figure 5a and b). In addition, the percentage of seedlings with green cotyledons (Figure 5c) and root growth (Figure 5d) was severely restricted under salt-stress conditions. These results suggest that the acidification process of GS assimilation is beneficial to plant resistance to salt stress.
 
@@ -66,19 +90,35 @@ These results disproved that NH4+ accumulation and toxicity caused by urea hydro
 
 If the acidification process promotes plant resistance to salt stress, it follows that alkaline may exacerbate the inhibition of salt stress on seed germination and growth. Given that urea hydrolysis is an alkaline reaction process, we further conducted a thorough analysis of its impact on intracellular pH under salt stress. Initially, Arabidopsis seeds expressing a fluorescent pH indicator (PRpHluorin) were treated with NaCl and PPD (see ‘Materials and methods’). To establish a correlation between PRpHluorin fluorescence ratios and pH values, an in vivo calibration was performed across the pH range indicated in Figure 6a. We reasoned that in vivo calibration ensured that obtained pH ratios accurately reflected the intracellular environment, facilitating robust measurements of cytoplasmic pH over the pH range of 6–8. Then, we qualitatively observed panoramic pH in germinating seeds revealing a trend toward alkalinization in NaCl-treated seeds compared to the control (no salt treatment), especially evident in the epidermal cells of the root elongation zone (Figure 6b). However, the addition of PPD effectively alleviated this alkalinization of the cells under salt treatment conditions, restoring their pH to levels similar to the control.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig6-v3.jpg)
+
+**Figure 6.:** (a) Calibration curve for pHluorin in seedlings adjusted to various pH levels using 50 mM MES-BTP (pH 5.2–6.4), 50 mM HEPES-BTP (pH 6.8–7.6), and 50 mM ammonium acetate. The curve plots the average fluorescence intensity ratios against the pH for 15 seedlings. (b) Fluorescence ratio images (emission 500–550 nm) of PRpHluorin expression seedlings grown in control, 135 mM NaCl medium, 135 mM NaCl with 15 µM PPD, and 135 mM NaCl with 10 mM urea, at 22℃ for 3 days. Scale bar represents 200 μm. (c) Boxplots depict the cytoplasmic pH in root epidermal cells of seedlings, measured using the PRpHluorin fluorescence in the root elongation zone under treatments. Middle horizontal bars of boxplots represent the median, the bottom and top represent the 25th and 75th percentiles, and whiskers extend to the minimum and maximum. Statistical significance (***p<0.001) was revealed by the Student’s t-test. The experiment was repeated more than three times with similar results.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** For pH calculation after each treatment, 10 PRpHluorin-expressing seedlings, with 100 cells per root, were analyzed. The epidermal cells of the root elongation zone were selected for pH measurements. The selected area is represented by the yellow dotted boxes, and pH values were extrapolated from the sigmoidal function established in vitro calibration curves using ImageJ. Statistical analysis was conducted using Student’s t-test. For visual representation, the grayscale ratio images were converted into pseudocolored images using the ImageJ illustrating the pH profiles.
+
 Subsequently, we quantified the pH of epidermal cells in the root elongation zone at the onset of seed germination (3 days old) for PRpHluorin seeds. The intracellular pH was calculated for multiple cells in the elongated root epidermal region of germinated seeds, with each group consisting of no fewer than 10 samples. The results showed that the average cytoplasmic pH of the control was 7.07, and this pH significantly increased by 0.76 units after salt treatment (Student’s t-test, p<0.001). In contrast, salt treatment with PPD restored the pH similar to the level observed in the control (Figure 6b). Additionally, exogenous salt plus urea treatment led to a clear trend toward higher pH in root cells compared to the salt-only treatment (Figure 6b and c), further affirming that the increase in intracellular pH induced by urea hydrolysis inhibited seed germination. These results validated our initial hypothesis that blocking urea hydrolysis by PPD reduces intracellular pH, effectively alleviating SISG. Excessive hydrolysis of arginine-derived urea elevates the cytoplasmic pH of seed radical cells, triggering SISG and impeding seedling growth in Arabidopsis thaliana.
 
-## Blocking the transport of arginine-derived urea is beneficial for alleviating SISG
+### Blocking the transport of arginine-derived urea is beneficial for alleviating SISG
 
 Based on our findings above, the actual trigger for SISG appears to be the increase in intracellular pH caused by the hydrolysis of urea in the roots, which is produced from arginine, rather than the effect of NH4+. It is noteworthy that urea in plants is mainly produced by the hydrolysis of arginine. During the mobilization of seed nitrogen stores, urea produced in the cotyledon is transported to the root by urea transporters. This raises the question: does blocking the transport of free urea generated by the arginine hydrolysis pathway also alleviate SISG? Moreover, urea transport might be involved in long-distance movement of urea from the cotyledon to the radicle, thereby affecting SISG. Exploring urea transport is essential to understand the SISG events caused by the arginine hydrolysis pathway during the mobilization of seed storage nitrogen at the tissue and organ level. To address these questions, here, we identified a loss-of-function mutant, atdur3, which lacks the urea transporter gene AtDur3 (Figure 7—figure supplement 1). The atdur3 mutant line exhibited impaired growth on a medium containing urea as the sole nitrogen source (<5 mM) (data not shown). When atdur3 and WT were germinated on control mediums, there was no significant difference in their seed germination ability and root development (Figure 7a–c). On the control medium supplemented with NaCl, the germination ability of WT seeds was significantly inhibited (the ability of radicle to break through the seed coat), and the germination rate of atdur3 mutant seeds was significantly higher than that of WT (Figure 7a and b). These results suggest that blocking urea transport in vivo could effectively alleviate SISG. We hypothesized that blocking the transport of urea from arginine hydrolysis in the cotyledon to the root and blocking its hydrolysis in the root would promote the germination of seeds under salt stress. Therefore, we subsequently analyzed urea concentrations in the roots and cotyledon of atdur3 under salt stress. Under nonstressed normal conditions (control), root urea concentrations were lower in atdur3 plants than in WT plants, but urea levels in cotyledons had no significant difference (Figure 7d). However, when plants were grown under NaCl stress, the urea levels were lower in atdur3 roots than in WT roots. Still, urea levels were higher in atdur3 cotyledons than in WT cotyledons (Figure 7d). We further analyzed the change ratio of urea (cotyledon/root), and the results show that urea was mainly accumulated in atdur3 cotyledons under control or NaCl conditions (Figure 7e). These results further indicate that the transport of urea, the primary metabolite of arginine hydrolysis, plays an important role in SISG, that is, blocking the transport of arginine-derived urea from the cotyledon to the root is conducive to the alleviation of SISG.
 
-## Effects of arginine hydrolysis pathway on salt tolerance in other plants
+![Figure 7.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig7-v3.jpg)
+
+**Figure 7.:** (a) Seed germination phenotypes of WT and atdur3 mutants were defined as the initial emergence of the radicle, which was observed and recorded at 48 hr of incubation following a 2-day stratification period at 4°C. Photographs captured under a stereomicroscope. Scale bar = 1 mm. (b) Germination rates of atdur3 on ½ MS medium, containing 0 (control) or 135 mM NaCl, respectively, over time. (c) Growth comparison of WT and atdur3 mutant seedlings on control and NaCl medium, photographed 10 days after germination. (d) Urea content analysis in roots and cotyledons of 5-day-old seedlings grown on control or 135 mM NaCl medium. (e) Calculation of urea (cotyledon/root) change ratio. In all experiments, seeds were freshly sowed and incubated under 16 hr light and 8 hr dark conditions at 22℃. The experiment was repeated three times; at least 30 seeds were counted in each replicate. The data was analyzed using a one-way ANOVA and Duncan’s post hoc test, with different letters indicating significant differences (p<0.05).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (a) T-DNA insertion site in Dur3; gray boxes indicate exons; black lines indicate introns. (b) RT-PCR analysis of AtDur3 expression in the WT and atdur3 mutants. Actin expression was used as an internal control for normalization of the RT-PCR expression data.
+
+### Effects of arginine hydrolysis pathway on salt tolerance in other plants
 
 Taken together, these results underscore the pivotal role of arginase-dependent arginine catabolic pathways in alleviating SISG in Arabidopsis. To investigate the conservation of this role across plants, we examined two major crops, Oryza sativa and Glycine max, along with two halophytes, Chloris virgata and Puccinellia tenuiflora. The seeds of O. sativa and G. max exhibited robust germination in the control medium with or without PPD. However, germination of seeds was notably inhibited in salt medium, a hindrance significantly improved by additional of PPD (Figure 8a and b). Without PPD, germination rate was 20–30% in the presence of NaCl, but with PPD supplementation, germination rates significantly increased to approximately 60–80% (Figure 8a and b). Furthermore, root lengths of the seedlings were significantly shorter in NaCl medium compared to control conditions, yet supplementation with PPD in the NaCl medium led to increased root lengths (Figure 8c and d). Similarly, studies on the typical halophytic plants demonstrated that under NaCl conditions treatment with PPD significantly reduced salt-stress-induced inhibition of shoot and root growth compared to untreated counterparts (Figure 8e). Notably, root lengths of samples treated with PPD under NaCl conditions were significantly higher than those without PPD treatment (Figure 8f). These observations collectively suggest that blocking arginase-dependent arginine catabolism can enhance salt-tolerant seed germination in both crops and halophytes, underscoring the universal effect of arginine catabolism on plant salt tolerance.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/96797/elife-96797-fig8-v3.jpg)
 
-**Figure 8.:** Oryza sativa and Glycine max, Chloris virgata and Puccinellia tenuiflora.(a) Seeds of O. sativa and G. max were germinated on ½ MS medium (control; 0 mM NaCl) or ½ MS containing 150 mM NaCl with or without 15 µM PPD. Photographs were taken 14 days after germination. (b) Germination rates of O. sativa and G. max plants in control or 150 mM NaCl with or without 15 µM PPD were calculated after 5-day sowing. (c) Seedling growth of O. sativa and G. max treated with and without PPD under salt stress, photographed 14 days after germination. (d) Root lengths were determined 14 days after germination. (e) Seeds of C. virgata and P. tenuiflora were germinated 150 mM NaCl with or without 15 µM PPD compared to control (0 mM NaCl). Representative morphological images of the treated seedlings 14 days after germination. (f) Root lengths were determined 14 days after germination. The experiment was repeated three times with at least 30 plants per replicate. PPD, an inhibitor of urea hydrolase and a downstream metabolite of arginine.
+**Figure 8.:** (a) Seeds of O. sativa and G. max were germinated on ½ MS medium (control; 0 mM NaCl) or ½ MS containing 150 mM NaCl with or without 15 µM PPD. Photographs were taken 14 days after germination. (b) Germination rates of O. sativa and G. max plants in control or 150 mM NaCl with or without 15 µM PPD were calculated after 5-day sowing. (c) Seedling growth of O. sativa and G. max treated with and without PPD under salt stress, photographed 14 days after germination. (d) Root lengths were determined 14 days after germination. (e) Seeds of C. virgata and P. tenuiflora were germinated 150 mM NaCl with or without 15 µM PPD compared to control (0 mM NaCl). Representative morphological images of the treated seedlings 14 days after germination. (f) Root lengths were determined 14 days after germination. The experiment was repeated three times with at least 30 plants per replicate. PPD, an inhibitor of urea hydrolase and a downstream metabolite of arginine.
 
 ## Discussion
 
@@ -104,38 +144,125 @@ To conceptualize our findings, we summarized a hypothetical model illustrating t
 
 ## Materials and methods
 
-## Plant materials and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>Arabidopsis thaliana mutant (atargah1)</td>
+      <td>ABRC (Ohio State University)</td>
+      <td>SALK_057987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CR-PCR-AtArgAH1AtArgAH2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>M2CRISPR vector</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atargah1/atargah2</td>
+      <td>This paper</td>
+      <td>PCR primers AtArgAH1- FW/ RV</td>
+      <td>ACATGGGTTTCATTATGAAC/ CACAAAAGACTAAATACATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>atargah1/atargah2</td>
+      <td>This paper</td>
+      <td>PCR primers AtArgAH2- FW/ RV</td>
+      <td>CCTTGCGGTCCTTGCCAAC/ ATAAACAGAATCTTATTGAG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Arginase Assay Kit</td>
+      <td>Bioassay</td>
+      <td>DARG-048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Urea Assay Kit</td>
+      <td>Bioassay</td>
+      <td>DIUR-048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NG-Hydroxy-l-arginine</td>
+      <td>Sigma-Aldrich</td>
+      <td>H7278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenyl phosphorodiamidate</td>
+      <td>Macklin</td>
+      <td>p858176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>l-Methionine sulfoximine</td>
+      <td>Sigma-Aldrich</td>
+      <td>M5379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant materials and growth conditions
 
 All experiments were performed with Arabidopsis thaliana Columbia (Col) wild-type plants and mutants in the Col background. The T-DNA insertion line SALK_057987 (atargah1) was ordered from the ABRC (Ohio State University), and homozygous lines were confirmed by genome PCR using primers 057987-LP or 057987-RP and a T-DNA primer LBP (Supplementary file 1). Other lines, including SALK_038002 (aturease), SAIL118_C11 (atargah2), and sos3, have been previously described (Sessions et al., 2002; Zhu et al., 1998). The double mutants sos3/aturease was produced by crossing, whereas atargah1/atargah2 was produced using CRISPR-Cas9. Homozygous plants were selected from T2 populations, and T3 plants or further generations were used for analysis.
 
 Wild-type and mutant plants were cultivated concurrently, with seeds collected simultaneously. Seeds were sown on half-strength MS (½ MS) medium containing 0.8% (w/v) agar, stratified for 2 days in the dark at 4°C, and then transferred to a 16 hr light/8 hr dark photoperiod at 22°C for 14-day cultivation. Seedlings were then moved to soil and cultured in a greenhouse under a photoperiodic cycle of 16 hr light and 8 hr dark photoperiod at 22°C. Fully developed and ripened brown siliques were collected for analysis.
 
-## Seed germination assay
+### Seed germination assay
 
 Seeds stored for a period ranging from 2 weeks to 3 months at room temperature were used for germination test. The after-ripened seeds were sterilized using 75% (v/v) ethanol and 10% (v/v) NaClO for 1 min, followed by three times washes in sterile water. Subsequently, they were plated on sterile filter paper to air-dry. Following sterilization, the seeds were sown on solid medium consisting of ½ MS supplemented with varying concentrations of NaCl (0, 135 mM), NOHA (Sigma, Germany; 0–5 µM), PPD (Macklin, China; 0–7.5 µM), and MSX (Sigma, Germany; 0–3 µM). Salt concentrations were set at 0 mM for controls and 135 mM for treatments unless noted otherwise. To reduce variation in germination, we sorted the seeds with an 80-mesh sieve to remove smaller seeds and selected seeds between 250 and 300 μm in size. The seedlings were stratified for 2 days in the dark at 4°C and then transferred to a 16 hr light/8 hr dark photoperiod at 22°C. At least 30 seeds for each genotype were used in three biological replicates. The germination event was defined as the initial emergence of the radicle, which was observed and recorded at 48 hr of incubation following a 2-day stratification period at 4°C. The assessment of germination, cotyledon-greening test, and radical growth used in the current study was as previously described (Bu et al., 2015). Seed germination rates were assessed daily in triplicates, with each plate containing over 35 seeds.
 
 Seeds of wild-type O. sativa (Dongnong 421), G. max (Heihe 742), C. virgata and P. tenuiflora were surface-sterilized in 1% NaClO solution for 10 min, followed by washing three times in sterilized distilled water. Then, 30 seeds were sown on ½ MS (i.e., half the concentration of regular MS) supplemented with NaCl (0 or 150 mM) and PPD (0 or 15 µM), then subjected to stress conditions at 28°C for 14 days. Germination was defined by an obvious emergence of the radicle through the seed coat, with counts taken 3–5 days post-sowing. The germination rate was calculated as follows: germination rate (%) = (number of germinated seeds/total number of seeds) × 100%. Root length and fresh weight were measured after 14 days of cultivation. Data were analyzed using three biological replications, and statistical significance was determined using Duncan’s test.
 
-## Constructs and plant transformation
+### Constructs and plant transformation
 
 CRISPR-Cas9 technology was employed to design specific sgRNAs targeting Arabidopsis AtArgAH1 and AtArgAH2. The gRNA-U6 fragment, once amplified, was cloned into the M2CRISPR vector (14,847 bp). The resulting construct, named CR-PCR-AtArgAH1AtArgAH2, was then introduced into Arabidopsis Columbia wild-type plants using stable transformation with Agrobacterium tumefaciens. Genomic DNA was extracted from young leaves of transformed plants and amplified by PCR using primers flanking the target sites to confirm the introduction of mutations. The PCR products were sequenced to identify double mutants, atargah1/atargah2. The primer sequences were using primers AtArgAH1-FW/RV and AtArgAH2-FW/RV (Supplementary file 1).
 
-## Measurement of arginase activity
+### Measurement of arginase activity
 
 To detect arginase activity, WT, mutant lines of Arabidopsis (atargah1, atargah2, and the double mutant atargah1/atargah, with deletions in AtArgAH1or AtArgAH2) were germinated for 3 days on media containing 0 or 135 mM NaCl, following a stratification period of 48 hr at 4℃ in darkness. The arginase activity was measured using a commercial assay kit (Bioassay, USA) following the manufacturer’s instructions. Briefly, approximately 0.1 g of tissue was homogenized in 1 mL of extraction buffer on ice. After centrifugation at 8000 × g for 10 min, the supernatant was collected and placed on ice. For the assay, 10 µL of substrate buffer was added to the samples, and 200 µL urea reagent was added to the control tubes, respectively. After through mixing, the samples were incubated at 25°C for 60 min. Arginase activity was quantified by measuring the absorbance of the supernatant at 430 nm.
 
-## Extraction and quantification of urea
+### Extraction and quantification of urea
 
 For urea extraction, 1 mL of 10 mM ice-cold formic acid with the addition of the urease activity inhibitor (PPD) were added to about 100 mg sample to avoid urea hydrolysis. Urea concentration was then quantified using a commercial assay kit (BioAssay Systems, USA) following the manufacturer’s instructions. Each sample mixture was vigorously vortexed twice before centrifuged at 16,000 rpm for 15 min at 4℃. The supernatant was carefully transferred to a fresh tube for analysis. Next, 200 µL of the provided color development reagent was added to each sample in a microcentrifuge tube. Tubes were incubated 20 min at room temperature, and optical density of each sample was measured at 520 nm to quantify urea concentration.
 
-## Ammonium concentration assay
+### Ammonium concentration assay
 
 Cotyledons and roots of Arabidopsis plants were gently washed with ice-cold Milli-Q water, dried with tissue paper, and immediately frozen in liquid nitrogen. For extraction, 0.5 g of frozen tissue was combined with 5 mL ice-cold extraction medium, and a small amount of quartz sand in a chilled mortar. The sample was then ground to a fine powder with a chilled pestle. Determination of the concentration of ammonium in plant tissue was conducted as previously described (Bu et al., 2015). NH4+ concentration was determined colorimetrically at 640 nm.
 
-## Confocal laser scanning microscopy
+### Confocal laser scanning microscopy
 
 Arabidopsis seeds engineered to express PRpHluorin were germinated on solid MS at 22°C for 3 days to facilitate pH measurement studies. The PRpHluorin gene was amplified using the specific primers (PRpHluorin-F and PRpHluorin-R) and then cloned into pBI121 vectors, which were modified to include the UBQ10 promoter. These constructs were introduced into WT Columbia-0 (Col-0) Arabidopsis plants via Agrobacterium-mediated transformation, employing the floral dip method followed by selection on kanamycin. For pH measurement in seedlings, fluorescent images were captured using a Zeiss LSM 880 confocal laser scanning microscope equipped with a ×20 or ×63 objective. The imaging was conducted in a sequential line scanning mode with settings described previously (Shen et al., 2013). Briefly, the emission (500–550 nm) of pHluorin, triggered by sequential excitation with 488 and 405 nm lasers, was used to calculate the pH using the calibration curve. In vivo calibration was performed on a subset of the seedlings at each experiment’s conclusion, where they were immersed in pH equilibration buffers for 15 min (Krebs et al., 2010). The buffers contained 50 mM MES-BTP (pH 5.2–6.4) or 50 mM HEPES-BTP (pH 6.8–7.6), supplemented with 50 mM ammonium acetate. The emission ratio was plotted against pH, and sigmoidal curves were fit to the data using a Boltzmann equation, as described previously (Gao et al., 2004; Schulte et al., 2006). For post-treatment pH calculation, 10 seedlings with 100 cells per root were analyzed. The selected area was represented by the yellow dotted boxes (Figure 6—figure supplement 1), and pH values were deduced from the in vitro calibration curves using ImageJ software. Statistical analyses were conducted using one-way ANOVA in GraphPad Prism. To visually represent the pH profile, the grayscale ratio images were converted to pseudocolored images using ImageJ. Statistical significance (***p<0.001) was revealed by the Student’s t-test. The experiment was repeated more than three times with similar results.
 
-## Statistical analysis
+### Statistical analysis
 
 For physiological and biochemical data, an ANOVA was performed to investigate whether there was a significant difference between the samples. If a significant difference was found, a Duncan’s significant difference test was performed to determine the specific samples with significant differences.

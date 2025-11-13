@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Department of Ecology, Behavior and Evolution, School of Biological Sciences, University of California San Diego La Jolla United States
+1. Department of Ecology, Behavior and Evolution, School of Biological Sciences, University of California San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
@@ -20,6 +20,14 @@ Lineages of rod-shaped bacteria such as Escherichia coli exhibit a temporal decl
 ## Introduction
 
 A mother Escherichia coli cell divides asymmetrically into two daughter cells that have different elongation rates (Stewart et al., 2005; Chao, 2010; Shi et al., 2020; Proenca et al., 2018; Proenca et al., 2019; Łapińska et al., 2019). The new daughter elongates faster while the old daughter is slower. The asymmetry and old-new designation of the daughters result from the fact that the rod-shaped mother divides by forming new poles at its midplane. As a result, all E. coli cells are polarized at birth with a new and an old pole (Figure 1A). When a polarized cell in turn becomes a mother and divides, its daughters will also be polarized but they can also be identified as new and old daughters depending on whether they acquired the mother’s new or old pole. Note that mothers can also be denoted as new or old, depending on whether they were new or old daughters at birth. The difference in elongation rate between old and new daughters was found by Lindner et al., 2008 to correlate negatively with the amount of damaged proteins (inclusion bodies) in individual cells. They also found that protein aggregates were more often associated with the old pole of the mother, in which case damaged proteins are partitioned asymmetrically by the mother to its daughters. However, a study by Govers et al., 2018 has reported a weaker and nonsignificant negative correlation. Because the two studies used different external stressors (to induce damage) and fluorescent reporters, they are not fully comparable and the relationship between elongation rate and the damaged proteins in E. coli remains unresolved (see ‘Discussion’ for additional details). Despite the differences between Lindner et al. and Govers et al., protein aggregates often have a negative qualitative effect on cell health and viability (Maisonneuve et al., 2008; Gatti-Lafranconi et al., 2011; Schramm et al., 2020; Rang et al., 2018), and more so in old daughters (Vedel et al., 2016; Winkler et al., 2010).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89543/elife-89543-fig1-v1.jpg)
+
+**Figure 1.:** (A) Assignment of old (red) and new (blue) poles and daughters. The starting cell is white because it was randomly picked to start the experiment and its polarity was unknown. Because the division plane (dashed line) cuts the white cell at the midpoint of the long axis, the poles formed at the division point are new and the distal poles are old. At the next division, the new daughter acquires the new pole, while the old daughter receives the old pole. Note that two divisions must be tracked to determine the old and new daughters from the starting white cell. The outlines of the bottom four daughters in the figure are colored red and blue to identify them as old and new daughters, while the intracellular red and blue colors identify the old and new poles, also designated as O and N. Although old and new poles and daughters are here tracked for only two generations, the notation and tracking methods can be extended into generations 3, 4, 5, 6, 7, and further if needed. For example, if the old and new poles of any of the four daughters after two divisions are known as in (A), and these daughters elongate, become a mother, and divide to produce two grand-daughters, the polarity of the grand-daughters can be determined by the same tracking methods. (B) Time-lapse images of an E. coli bacterium dividing into two and four cells. Top row: phase contrast. Second row: assignment of old (red) and new (blue) poles from the top row cells. Third row: fluorescence images matching phase images in time and position. Bottom row: heatmap of fluorescence images reporting ribosome density in the top row cells, showing lesser intensity by the old poles (blue color spots) than the new poles and inside the cells (purple color). Scale on the right shows intensity gradient. A plot of ribosomal density versus length as a continuous variable is provided in Figure 1—figure supplement 1. This supplement plot is presented only for visualization and does not represent the format used in the data analyses to follow. (C) Schematic showing division of a cell into two halves containing either the new pole or the old pole. The ratio of the fluorescence in the new half divided by that in the old half (or pole ratio) was used to normalize and pool different old and new daughter pairs, when each pair descended from a different mother. (D) Schematic showing division of a cell into four length quartiles denoted NP, L2, L3, and OP in relation to the old and new poles. These quartiles were used to quantify the distribution of fluorescence along the length of a cell.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89543/elife-89543-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The fluorescence and length values were normalized (n = 89 pairs). Color designation is as in Figure 1A for old (red) and new (blue) poles and daughters. Error bars show standard error of the mean (SEM). These transects are shown only for visualization and were not used in the final analyses, which were based on halves and quartiles (Figure 1C and D).
 
 The asymmetry of both the elongation rate difference between old and new daughters and the damage partitioning by the mother in E. coli has evolutionary consequences. The asymmetry creates fitness variance between daughters that increases the effectiveness of natural selection (Chao, 2010; Chao et al., 2016), and an asymmetrical lineage has more progeny over time relative to a symmetrical one. An analogy comes from economic models. Two asymmetrical $500 bank accounts at 10 and 6% yield more money over time than two symmetrical $500 accounts at 8%. However, the asymmetry comes with costs. While the higher elongation rate of the new daughter rises in the lineage over generations, the rate of the old daughter declines (Stewart et al., 2005; Chao, 2010). Under more benign culture conditions, the rise and the decline can achieve stable values and the lineages are immortal (Chao, 2010; Proenca et al., 2018; Łapińska et al., 2019; Rang et al., 2011; Rang et al., 2012). Under more stressful and damage-inducing conditions, the old daughter lineage can die because its elongation rate declines to zero and the death probability is dosage dependent (Proenca et al., 2018; Proenca et al., 2019). The bacterial population survives despite the death of the old daughter lineage because the new daughter lineage is still able to achieve a stable rate that is greater than zero (Chao, 2010; Proenca et al., 2018; Proenca et al., 2019). Because the elongation rate declines and death of the old daughter lineage is a form of physiological aging, bacteria can be used to investigate the evolutionary origins of biological aging. Despite a quantitative correlation between the amount of damaged proteins and elongation rates remaining unresolved (see above), the asymmetries here described for elongation rates and death strongly suggest that damage stress in E. coli may play a key, if not causal, role in cell aging. We note that the asymmetrical partitioning of damage is not an alternative to protein repair, or vice versa. Protein repair (including reprocessing) is occurring (Ezraty et al., 2017; Merdanovic et al., 2011) and its effect is to lower the damage rate experienced by the cell. However, if damage aggregates are present in cells, the damage rate must necessarily exceed the repair rate. There is likely a cost to repair, in which case the repair rate may become limited by diminishing returns. Thus, the asymmetry could be an evolutionary adaptation for dealing with a low repair rate. If repair rates were sufficiently high to negate damage, E. coli should not have evolved asymmetry.
 
@@ -35,7 +43,7 @@ Following ‘Materials and methods’, the distribution of ribosomes was measure
 
 We first examined the density of ribosomes in colonies starting from a single cell. A quick visual inspection of the fluorescent images and their heatmaps for a few representative cells showed clearly that the ribosomal densities tended to be highest near the poles (Figure 1B). However, high densities also built up in the mid-region of a mother cell right before division. As the mid-region leads to the formation of the new poles of the daughters, the buildup explains how those poles acquired their higher levels. These polar concentrations of ribosomal densities matched the previous ones reported by Bakshi et al., 2012. To obtain a more quantitative analysis of the changes in ribosomal densities during cell growth, we collected a larger sample size and compared measurements between old and new mothers, old and new daughters, between their poles, along the length of their cells, and during their elongation from birth to division.
 
-## New daughters at birth from old mothers have more ribosomes
+### New daughters at birth from old mothers have more ribosomes
 
 A first comparison revealed that if a pair of old and new daughters descending from the same mother were compared, ribosome density measured by the fluorescence was higher for new daughters. The ratio of reported fluorescence between new/old daughters (the daughter ratio) was 1.08 ± 0.012, which was significantly greater than 1.00 (p=4.38 × 10–6). However, if the mothers were split into pools of old and new mothers (Figure 2A), the daughter ratio from old mothers was 1.11 ± 0.018 and significantly greater than 1.00 (p=6.89 × 10–6) and the ratio from new mothers was 1.04 ± 0.015 and barely significant (p=0.04). Thus, the higher ribosome density in new daughters resulted primarily from old mothers. The difference between old and new mothers was further demonstrated by a strong significant difference between their daughter ratios (1.11 vs. 1.04; p=0.007). Thus, new daughters have more ribosomes relative to old daughters produced by the same mother, but asymmetry is higher in pairs from old mothers. This higher density of ribosomes in new daughters correlates qualitatively with our previously reported higher levels of expressed gene products and elongation rates in new daughters (Chao, 2010; Shi et al., 2020; Proenca et al., 2018; Proenca et al., 2019).
 
@@ -43,11 +51,11 @@ A first comparison revealed that if a pair of old and new daughters descending f
 
 **Figure 2.:** Because ratios are a form of normalization, their values were derived from non-normalized data. Asterisks in figures indicate levels of significance from comparison between ratios of new (blue bar) versus old (red bar) mothers (*, **, *** significance at p<0.05, 0.01, and 0.001). Error bars are SEM. Values of p in the text below are for the significance probability that a ratio is greater than 1.0, unless indicated otherwise. Sample size for ratios is for pairs of data: n = 89 pairs correspond to 89 old/new daughters of the same mother. Each pair is used to obtain one ratio to yield 89 ratios. (A) Ribosome ratio of daughters (new/old) at birth from old (red) and new (blue) mother cells. The ratio was 1.11 ± 0.018 from old mothers (p=6.89 × 10–6, one-tailed paired t-test, n = 89 pairs) and 1.04 ± 0.015 from new mothers (p=0.04, one-tailed paired t-test, n = 91 pairs). The two ratios were also significantly different from each other (p=0.007, two-tailed non-paired t-test, ** in figure). (B) Ribosome ratio (new/old) of the two polar halves (Figure 1C) from old (red) and new (blue) mothers at division. The ratio in old mothers was 1.10 ± 0.015 (p=6.23 × 10–5, one-tailed paired t-test, n = 89 pairs) and from new mothers 1.03 ± 0.010 (p=0.08, one-tailed paired t-test, n = 91 pairs). The difference between the two ratios was significant (p=1.3 × 10–4, two-tailed non-paired t-test, *** in figure). A comparison of the daughter and polar half ratios from old mothers (A and B; red bars) found no significant difference (p=0.62; two-tailed paired t-test). A likewise comparison for new mothers (A and B; blue bars) also found no significance (p=0.27). (C) Elongation rate ratio of new over old daughters from new (blue) and old (red) mothers. The ratio from old mothers was 1.11 ± 0.017 (p=1.3 × 10–10, one-tailed paired t-test, n = 216 pairs) and from new mothers 1.07 ± 0.011 (p=2.76 × 10–7, one-tailed paired t-test, n = 198 pairs). The two ratios were significantly different from each other (p=0.02, two-tailed non-paired t-test; * in figure). Note that these elongation rate ratios parallel the ribosomal pattern of a higher asymmetry in daughters from old mothers (A).
 
-## Ribosomal asymmetry between daughters is spatially in place in mothers before division
+### Ribosomal asymmetry between daughters is spatially in place in mothers before division
 
 To further explore our finding of a ribosomal asymmetry between new and old daughters, we examined the intracellular distribution of ribosomal fluorescence in the new and old pole halves (see diagram in Figure 1C) of old and new mothers right before division. The two pole halves were transformed into a ratio (new/old) for analysis (Figure 2B). We found that pole ratio in old mothers was significantly greater than 1.00 (1.10 ± 0.015; p=6.23 × 10–5). The pole ratio in new mothers was much lower (1.03 ± 0.010) and not significantly greater than 1.00 (p=0.08). The pole ratios between new and old mothers were significantly different from each other (p=1.3 × 10–4). Thus, the density of ribosomes in the old and new poles of mothers matches well the density in the old and new daughters of both old and new mothers (Figure 2A and B). This match argues that the physical placement of ribosomes in the mother at the time of division sets in place the ribosome distribution in the daughters. To test this argument, we compared directly the ribosomal pole ratio of an individual mother against the ribosomal daughter ratio of the same mother. No significant difference was found, in both old and new mothers, when the ribosomal ratio of the poles and daughters was compared. With new mothers, the pole and daughter ratios were respectively 1.03 vs. 1.04 and not different (Figure 2A and B; p=0.27). With old mothers, the respective ratios were 1.10 vs. 1.1 and also not different (Figure 2A and B; p=0.62). Thus, as the new and old pole halves yield directly the new and old daughters upon the division of a mother, the placement of ribosomes in the mother cell sets up the quantity, and hence asymmetry, of ribosomes in the new and old daughters of a mother.
 
-## Stochastic and deterministic components of ribosomal variance in daughter cells
+### Stochastic and deterministic components of ribosomal variance in daughter cells
 
 Although new and old daughters can differ significantly in ribosome density, there was also substantial variation within each daughter population. A plot of the distributions shows clearly the within-population variation, although the difference between old and new daughters is also apparent (Figure 3A and B). Old and new daughters form their own distributions, but their mean values are displaced by a difference D, which is larger when the daughters are derived from old mothers. The variation within the old and new daughter distributions is presumably due to stochastic noise, although the stochasticity could also result from an unknown deterministic source. The latter is well illustrated by the discovery that E. coli mothers produce asymmetrical daughters. For example, without knowledge about the asymmetry, old and new daughters would have been pooled into one population with a total variance VT (Figure 3A and B; dashed lines), which would have been interpreted to result from stochasticity. In reality, VT would actually have a deterministic component due to the difference between old and new daughters. As we have shown for expressed gene products (Shi et al., 2020), VT = (VOld +VNew)/2 + D2/4, when there is deterministic asymmetry (D > 0) and VOld and VNew are the variances of the unpooled old and new daughter populations (Figure 3A and B; red and blue lines). If D = 0, VT is the average of VOld and VNew. Thus, D2/4 represents the deterministic component of VT, and the contribution of deterministic asymmetry expressed as a percentage is h2 = (D2/4)/VT. Our estimates of D showed that h2 was 39.9% from old mothers and 2.4% from new mothers (Table 1A). The higher h2 for daughters from old mothers is consistent with our results in Figure 3A and B that show old mothers having more different daughters than new mothers. These results were also consistent with our previous report that h2 is higher for expressed gene products in daughters of old than of new mothers (h2 of 40.1 and 10.1%) (Shi et al., 2020). Thus, a claim of stochasticity to explain the variance of ribosomal density of E. coli cells could have introduced an error of nearly 40% without knowledge of the asymmetry between old and new daughters. Without knowing more, we presume that the variances VOld and VNew result from stochasticity, but it may also be that a deterministic process still lies hidden.
 
@@ -55,7 +63,103 @@ Although new and old daughters can differ significantly in ribosome density, the
 
 **Figure 3.:** The measurements were made from the same cells in Figure 2C. All density and elongation values were normalized for this analysis. Means, variances, and other parameters extracted from these data are presented in Table 1. (A) Top panel: normalized density distribution of ribosome density of old (red line) and new (blue line) daughters from old mothers. Red and blue dots on the x-axis indicate the mean density for each distribution. Dashed lines represent the density distribution of the old and new daughters combined into one pooled total population. D (black arrow) shows the distance between peaks of old and new daughter curves (*** p=2.2 × 10–16 for significance of D > 0; one-tailed paired t-test; n = 216 daughter pairs; see Table 1A). Bottom panel: normalized ribosome density of each old (red) and new (blue) daughter in pairs from old mothers. The zero point is set as the average ribosome density for each pair. As shown, the old daughter in each pair more often ends up on the minus side of the pair’s zero point, i.e., having lower ribosome density. (B) Same as (A), but from new mothers (*p=0.014 for D > 0; one-tailed paired t-test; n = 198 daughter pairs; see Table 1A). (C) Normalized elongation rate distributions (***p=2.0 × 10–11 for D > 0; one-tailed paired t-test; n = 216 daughter pairs; see Table 1B), but otherwise as (A). (D) Same as (C), but from new mothers (***p=2.1 × 10–7 for D > 0; one-tailed paired t-test; n = 198 daughter pairs; see Table 1B).
 
-## Asymmetry and variance components for elongation rates in daughter cells
+**Table 1.**
+ Variance components of ribosome density and elongation rates.Total (VT), stochastic (VE), and deterministic (D2/4) components of variances estimated from Figure 3 (see ‘Materials and methods’). The deterministic proportion of total variance VT was h2 = (D2/4)/VT. The stochastic component of VT is therefore VE = VT (1 – h2). Significance testing for D > 0 as described in Figure 3 (*, **, and *** denote p<0.05, 0.01, and 0.001). (A) Estimates for ribosomal density. (B) Estimates for elongation rates. (C) Comparison of VE estimates. Testing of significance difference between VE was done using Bartlett’s test of homogeneity of variances. p-values1 are for comparisons across rows (old vs. new mothers). p-values2 are for significance of VE down columns (elongation rate vs. ribosome density).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">(A) Ribosomal density</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">Vr</td>
+      <td colspan="2">D</td>
+      <td colspan="2">D2/4</td>
+      <td>h2</td>
+    </tr>
+    <tr>
+      <td>Old mothers</td>
+      <td colspan="2">0.00634</td>
+      <td colspan="2">0.101 ***</td>
+      <td colspan="2">0.00253</td>
+      <td>0.399</td>
+    </tr>
+    <tr>
+      <td>New mothers</td>
+      <td colspan="2">0.00347</td>
+      <td colspan="2">0.0184 *</td>
+      <td colspan="2">0.00008</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td colspan="8">(B) Elongation rates</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Vr</td>
+      <td colspan="2">D</td>
+      <td colspan="2">D2/4</td>
+      <td>h2</td>
+    </tr>
+    <tr>
+      <td>Old mothers</td>
+      <td colspan="2">0.00913</td>
+      <td colspan="2">0.0821 ***</td>
+      <td colspan="2">0.00168</td>
+      <td>0.185</td>
+    </tr>
+    <tr>
+      <td>New mothers</td>
+      <td colspan="2">0.00581</td>
+      <td colspan="2">0.0533 ***</td>
+      <td colspan="2">0.00071</td>
+      <td>0.122</td>
+    </tr>
+    <tr>
+      <td colspan="8">(C) VE estimates</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="2">Old mothers</td>
+      <td colspan="2">New mothers</td>
+      <td colspan="2">p-value1</td>
+    </tr>
+    <tr>
+      <td colspan="2">Elongation rates</td>
+      <td colspan="2">0.00744</td>
+      <td colspan="2">0.0051</td>
+      <td colspan="2">0.0073**</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ribosome density</td>
+      <td colspan="2">0.00381</td>
+      <td colspan="2">0.00338</td>
+      <td colspan="2">0.40 n.s.</td>
+    </tr>
+    <tr>
+      <td colspan="2">p-value2</td>
+      <td colspan="2">0.000001***</td>
+      <td colspan="2">0.0041**</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Asymmetry and variance components for elongation rates in daughter cells
 
 To determine whether the observed ribosome patterns reported in Figure 3A and B had a downstream effect, we measured elongation rates of the same daughters and mothers. When new and old daughters were pooled irrespective of whether they originated from old or new mothers, new daughters were found to elongate faster than old daughters (new/old ratio of 1.09 ± 0.011; p=3.9 × 10–16). When the old and new daughters were separated as descending from old or new mothers, the ratio was respectively 1.11 ± 0.017 (p=1.3 × 10–10) and 1.07 ± 0.011 (p=2.8 × 10–7) (Figure 2C). Although both ratios were significantly greater than 1.00, the asymmetry was greater between daughters from old mothers and the two ratios were significantly different (p=0.02). As we did for the ribosome data, the variance of elongation rate measurements was also portioned into a deterministic and stochastic component to estimate the percentage h2 (Figures 3C, D, 4B). The deterministic percentage of the variance was found to be h2 = 18.5% and 12.2% for daughters originating from old and new mothers, respectively. As we observed for ribosome densities, the h2 for old mothers was still higher, but not to the same magnitude (see ‘Discussion’). The overall similarity between the ribosome and elongation rate data reflects the fact that the two phenotypes are well known to be positively correlated in E. coli (Schaechter et al., 1958; Neidhardt and Magasanik, 1960; Kjeldgaard and Kurland, 1963; Poulsen et al., 1995; Greulich et al., 2015). An examination of the relationship between our measurements for ribosome and elongation yielded similar outcomes (Figure 4). Daughters from both old and new mothers had ribosome densities that correlated positively with elongation rates (r = 0.387, p<1 × 10–5 and r = 0.233, p=4 × 10–4, respectively; see Figure 4 for more details). The correlation from new mothers was weaker because its deterministic component h2 was smaller (Table 1B), in which case the distributions of new and old daughters were less separated (Figure 4A and B).
 
@@ -63,7 +167,7 @@ To determine whether the observed ribosome patterns reported in Figure 3A and B 
 
 **Figure 4.:** Because the old and new daughter values were jointly normalized, they were not independent and their combination into a single plot could not be assessed by statistical models assuming independence. Thus, all analyses for the figure were conducted by randomizing the data and obtaining a null distribution to estimate the significance values (see ‘Materials and methods’). (A) Ribosome density versus elongation rate between new and old daughters from old mothers. Slope of linear regression = 0.498, correlation r = 0.387, p<1 × 10–5, n = 216 daughter pairs. (B) Ribosome density versus elongation rate between new and old daughters from new mothers. Slope of linear regression = 0.301, correlation r = 0.233, p=4 × 10–4, n = 198 daughter pairs.
 
-## Spatial distribution of ribosomes in mother cells from birth to division
+### Spatial distribution of ribosomes in mother cells from birth to division
 
 Our observation that the asymmetry of the pole halves of mothers determines the distribution of ribosomes of daughters at birth (Figure 2A and B) raises the question of how the spatial distribution of ribosomes changes temporally in the mother cell, and whether the changes provide insights or hypotheses for the origin of the asymmetry. Thus, we increased the resolution of the process by sampling over a finer spatial (lengthwise) and temporal (birth to division) grain of the ribosomal density in a mother cell. The length of the mother cell was divided into four quartiles, which were termed NP (new pole), L2, L3, and OP (old pole) (Figure 1D). The time from birth to division of the mother cell was also divided into four quartiles termed birth (B), T2, T3, and division (D). Ribosome density and the quartiles of length and time were all normalized for pooling the cells. Note that because ribosome densities are normalized, they indicate relative rather than absolute amounts and the former can change even when the latter is constant.
 
@@ -103,27 +207,27 @@ In summary, previous reports have documented in E. coli the asymmetrical associa
 
 ## Materials and methods
 
-## Bacterial strain
+### Bacterial strain
 
 E. coli AFS55 was used to quantify ribosome density. AFS55 has a translational fusion of yfp (yellow fluorescent protein) to the C-terminus of rpsB (ribosomal subunit S2) that served as a reporter for ribosome density (Bakshi et al., 2012). AFS55 was chosen for this study because it offers currently one of the best fluorescent reporters for ribosomes (see ‘Introduction’ for full details). For example, numerous controls have been conducted to rule out non-uniform fluorescent distribution by YFP self-aggregation artifacts (Bakshi et al., 2012; Batchelor and Goulian, 2006). Additionally, the S2 protein was picked from other possible ribosomal proteins because it is known to have a negligible number of free copies (not attached to ribosomes) in the cell (Bakshi et al., 2012; Sanamrad et al., 2014).
 
-## Growing cells and preparing microscopy slides
+### Growing cells and preparing microscopy slides
 
 All cells were stored in 40% glycerol at –80°C and incubated at 37°C. A glycerol stock was streaked onto LB agar plates (Sambrook et al., 1989) to obtain single colonies. Liquid cultures were made by inoculating a single colony into 10 ml M9 (Sambrook et al., 1989) media and incubating overnight. The overnight culture was diluted 1:100 in M9 and grown for two more hours. 1 µl of 2-hr culture was then pipetted onto a 10 µl agarose pad with M9 and 15% agarose. The agarose pad was flipped with the bacterial side down onto a 24 × 60 mm cover glass, which was then placed over a 25 × 75 mm single depression slide. The contact between the cover glass and slide was sealed with Vaseline to prevent desiccation. These methods were modified from Rang et al., 2011; Rang et al., 2012 and Stewart et al., 2005.
 
-## Microscopy and time-lapse movies
+### Microscopy and time-lapse movies
 
 After cells were placed onto agar pads, the microscopy slides imaged at 37°C with an inverted microscope (Nikon Eclipse Ti-S), equipped with Nikon NIS-Elements AR control software, ×100 objective (CFI Plan APO NA 1.4), external phase-contrast rings for full-intensity fluorescence imaging, fluorescence light source (Prior Lumen 200) with motorized shutter (Lambda 10-B Sutter SmartShutter), and camera (Retiga 2000R FAST 1394, mono, 12 bit). To be able to quantify the fluorescence of growing single cells, movies were started and ended following guidelines. To prevent crowing as cells grew into micro-colonies over time, movies were started from microscope fields containing single cells with distant neighbors. To avoid the effects of crowding within the micro-colonies, movies were ended when micro-colonies exceeded 128 cells. Phase-contrast and fluorescence images were recorded every 2 and 20 min, respectively. Thus, every tenth phase image has a matching fluorescence image taken at the same time and with the same X–Y coordinates. Such fluorescence×phase pairs were used for our deconvolution protocols (see the next section).
 
 Cells to be measured were collected from colonies started by a single cell. Measurements were made at generations 4, 5, 6, and 7, which correspond to colonies with 16, 32, 64, and 128 cells. Smaller sizes (1, 2, 4, and 8 cells) were not measured because a colony started from a single cell experiences a lag, despite being inoculated with fresh exponentially cells. Colony sizes larger than 128 were also excluded because cell growth slows down due to crowding within and between colonies. Thus, to be safe and ensure the most uniform physiological state for the cells that were measured, we restricted our measurements to colonies with 16–128 cells.
 
-## Image processing, discounting light scatter from neighbors, outlining cells, and deconvolution
+### Image processing, discounting light scatter from neighbors, outlining cells, and deconvolution
 
 Fluorescence measurements reporting ribosome density in single cells were obtained from the fluorescence images. Because a cell in a micro-colony receives scattered fluorescence light from neighboring cells, the value of a fluorescence pixel inside a cell is the sum of the true emission of the pixel plus the scatter. Note that background pixels, which are outside a cell and lacking a fluorescent reporter, should have a true emission of zero (not be emitting) and only contain scatter from pixels in the neighboring cells. The true emission can be estimated by dividing the image into all its pixels, treating the pixels as light point sources, using a system of differential equations to describe the scatter from every pixel to every other pixel, and solving the system. Because every fluorescence image has a matching phase image (see above fluorescence–phase pair), any single cell can be outlined in the phase image. The correct total amount of fluorescence in the cell is therefore the true emission of all pixels contained by the outline. However, because in practice the value of a pixel is measured with error (stochasticity), the system cannot be solved analytically and must be solved numerically by the iterative process of deconvolution (Lucy, 1974). Deconvolution introduces a new problem because the number of iterations needs to be optimized. The true emission is underestimated if too few iterations are conducted (Biggs and Andrews, 1997). Too many iterations also underestimate, but by introducing ringing (Mosleh et al., 2014). Ringing results when a background pixel is brighter than average and is treated as an emitting pixel by the over-iteration. As a result, the over-iteration removes light from the true emission value of the pixels inside cells and allocates them to such background pixels. By tracking and plotting the sum of all pixels in a cell as a function of iterations, we have found that the sum invariably produced a peak by increasing initially and then decreasing (Shi et al., 2020). The number of iterations corresponding to the peak is chosen as the desired number that balanced the opposing effects of under and over-iterating. Because a detailed description has been published in Shi et al., 2020, we present next a more abbreviated technical summary.
 
 The background of the fluorescence–phase image pairs (see above) was first subtracted using the ‘rolling ball’ algorithm in ImageJ (NIH) with ball radius 20 pixels. The noise created by the heat overflow of single pixel was corrected using the ‘remove outliers’ algorithm in ImageJ with a threshold intensity difference of 1000 and threshold radius of 0.5 pixel. The resulting image was processed by iterative Lucy–Richardson deconvolution in MATLAB 2017b using an optimal number of iterations for each fluorescence–phase pair as described above. The outline of a single cell was traced manually with ImageJ. Blind replicates without any awareness of the history of the cells found no bias between outlines measured for old and new mothers.
 
-## Statistical analyses, data measurements, and normalization
+### Statistical analyses, data measurements, and normalization
 
 Standard t-test and regression analyses were implemented with packaged R functions. All reported error bars are standard error of the mean (SEM).
 

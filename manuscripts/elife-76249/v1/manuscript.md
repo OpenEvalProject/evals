@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Department of Molecular Cellular and Developmental Biology,Yale University New Haven United States
-2. https://ror.org/03v76x132 Department of Molecular Biophysics and Biochemistry, Yale University New Haven United States
-3. https://ror.org/03v76x132 Department of Cell Biology,Yale University New Haven United States
+1. Department of Molecular Cellular and Developmental Biology,Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+2. Department of Molecular Biophysics and Biochemistry, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. Department of Cell Biology,Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ We report that wild-type fission yeast cells have about 190 cytokinesis nodes in
 
 ## Results
 
-## Blt1 as a cytokinesis node marker
+### Blt1 as a cytokinesis node marker
 
 Two challenges complicate counting cytokinesis nodes in fission yeast. First, cytokinesis nodes form over 10 min, and after the SPB divides, they condense into a densely packed contractile ring over 10–12 min. Second, the protein composition of cytokinesis nodes changes dramatically during these 22 min (Bhatia et al., 2014; Lee and Wu, 2012; Pan et al., 2014; Rincon et al., 2014). The numbers per node of formin Cdc12, F-BAR Cdc15, anillin Mid1, myosin-II Myo2, and IQGAP Rng2 change rapidly as cytokinesis nodes form from interphase nodes (10 min prior to SPB separation), condense into contractile rings (10–12 min after SPBs separate) and then mature (over the next 15 min) (Wu and Pollard, 2005).
 
@@ -47,7 +47,7 @@ We solved the first issue by studying live cells with SPBs marked with Sad1-RFP.
 
 We dealt with the second issue by marking nodes with the scaffold protein Blt1 tagged with mEGFP. Blt1 is the only protein known to persist in nodes throughout the cell cycle, so it is found in interphase nodes, cytokinesis nodes, and contractile rings (Akamatsu et al., 2014; Goss et al., 2014; Moseley et al., 2009). Therefore, Blt1 is the only reasonable marker to measure the number of cytokinesis nodes. The fluorescent proteins were integrated into the haploid genome to ensure that all copies of each protein were tagged and expressed at normal levels.
 
-## Airyscan fluorescence microscopy resolves dim unitary cytokinesis nodes in a broad band
+### Airyscan fluorescence microscopy resolves dim unitary cytokinesis nodes in a broad band
 
 We used a Zeiss Airyscan fluorescence microscope to acquire 40 Z-slices covering the entire volume of cells to measure the total and local fluorescence of Blt1-mEGFP in wild-type fission yeast cells in 2–3 s. The frame size and pixel dwell time were adjusted so that motions of cytokinesis nodes (20 nm/s; Vavylonis et al., 2008) did not blur the images during image acquisition. Cytokinesis nodes appeared as a broad band of fluorescence spots in the cortex around the middle of mitotic cells with two SPBs. The fluorescence intensities of these spots ranged from very bright to dim (Figure 1A, upper panel).
 
@@ -59,13 +59,13 @@ To compare the high resolution and sensitivity of Airyscan to a conventional las
 
 Time-lapse imaging showed that cytokinesis nodes of all sizes, including single nodes, condensed into bigger and brighter nodes as they coalesced into a contractile ring during 10–12 min after separation of the SPBs as described for the brighter fraction of the population of nodes by confocal microscopy (Vavylonis et al., 2008). Neither the Airyscan nor confocal microscopy resolved cytokinesis nodes known to be present in contractile rings (Figure 1A, C, lower panels) by single-molecule localization microscopy (Laplante et al., 2016).
 
-## Counting cytokinesis nodes in the broad band
+### Counting cytokinesis nodes in the broad band
 
 The methods section explains how we used the three-dimensional distribution of fluorescence of spots around the equator to identify nodes (Figure 2A) and measure their fluorescence. To qualify as a single node, the fluorescence had to be confined in the X–Y plane within a circle of 12-pixels (0.5 µm) in diameter and in the Z direction in more than 3 and less than 7 Z-slices of 170 nm (1.19 µm). The total fluorescence within the 12-pixel diameter circle in 7 Z-slice images was sum projected and measured as a node fluorescence (Figure 2B). From the same sum projected image we calculated the average fluorescence from 8 equivalent volumes of cytoplasm on both sides of the node broad band (Figure 2B). The fluorescence of each candidate node was its total fluorescence minus the average fluorescence of an equivalent volume (~0.9 µm3) of cytoplasm. We used 3D reconstructions of stacks of Airyscan images to measure the total fluorescence of all the cytokinesis nodes around the equator of each cell to compare with the average fluorescence of single nodes.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76249/elife-76249-fig2-v1.jpg)
 
-**Figure 2.:** (A) Reverse contrast fluorescence micrograph of Figure 1A, upper panel. Black dotted circles are nodes selected for fluorescence measurements. The scale bar is 1 µm. (B) Reverse contrast fluorescence micrograph of a sum projection of seven slices of the cell in panel A. A black dotted circle marks a spot selected to measure the fluorescence of single nodes and blue dotted circles mark cytoplasmic regions selected to measure background fluorescence. (C) Reverse contrast fluorescence micrograph of a sum projection of 40 Z-slices of the cell in panel A. The red rectangle outlines the region used to measure the total node broad band fluorescence and the yellow polygonal area marks the area chosen to measure background intensity to subtract from the broad band area. (D) Histogram of the distribution of fluorescence intensities of a sample of 235 cytokinesis nodes from 21 cells including all the selected nodes. The continuous curve is a fit of a Gaussian distribution to the intensities of 231 single nodes excluding the 4 high-intensity nodes. The mean intensity value is 2300 AU and the standard deviation (SD) is 900 AU. (E) Bee–Swarm plots comparing the total Blt1-mEGFP intensity in node broad bands (BB) (black, 21 cells) and contractile rings (CR) (blue, 23 cells).Figure 2—source data 1.Figure 2D, E.
+**Figure 2.:** (A) Reverse contrast fluorescence micrograph of Figure 1A, upper panel. Black dotted circles are nodes selected for fluorescence measurements. The scale bar is 1 µm. (B) Reverse contrast fluorescence micrograph of a sum projection of seven slices of the cell in panel A. A black dotted circle marks a spot selected to measure the fluorescence of single nodes and blue dotted circles mark cytoplasmic regions selected to measure background fluorescence. (C) Reverse contrast fluorescence micrograph of a sum projection of 40 Z-slices of the cell in panel A. The red rectangle outlines the region used to measure the total node broad band fluorescence and the yellow polygonal area marks the area chosen to measure background intensity to subtract from the broad band area. (D) Histogram of the distribution of fluorescence intensities of a sample of 235 cytokinesis nodes from 21 cells including all the selected nodes. The continuous curve is a fit of a Gaussian distribution to the intensities of 231 single nodes excluding the 4 high-intensity nodes. The mean intensity value is 2300 AU and the standard deviation (SD) is 900 AU. (E) Bee–Swarm plots comparing the total Blt1-mEGFP intensity in node broad bands (BB) (black, 21 cells) and contractile rings (CR) (blue, 23 cells).
 
 We measured the fluorescence of 235 nodes in 21 mitotic, wild-type cells satisfying the aforementioned ROI conditions and plotted a histogram to determine the distribution of intensities and the average fluorescence intensity (Figure 2D). Given the small number of molecules in each node (Akamatsu et al., 2017; Laplante et al., 2016), the exchange of molecules between nodes and cytoplasm (Laporte et al., 2011 ) and the fact that less than 70% of mEGFP is mature and emitting photons (Balleza et al., 2018), a range of intensities is expected, which does not detract from the usefulness of an average node intensity for calculating the total number of nodes from the total fluorescence intensity of the broad band of nodes. An initial Gaussian fit peaked at 2486 AU with a few higher intensity nodes. We assumed that the sample included a few closely spaced pairs of nodes, so we eliminated nodes with fluorescence values more than twice the peak of the Gaussian curve (2% of the total), before calculating the mean fluorescence of the single nodes. For the sample of 231 single nodes, the Shapiro–Wilk W test calculated W = 0.9842, which does not reject the null hypothesis that the data are from a normal distribution (King and Eckersley, 2019; Royston, 1992). A descriptive statistical test also gave a Z score of 1.7, which also does not reject the null hypothesis that the data are from a normal distribution (Ghasemi and Zahediasl, 2012).
 
@@ -73,9 +73,21 @@ We estimated that wild-type fission yeast cells have on average ~190 (standard d
 
 To determine if all the nodes in the broad band combine to form a contractile ring in wild-type cells, we measured the total Blt1-mEGFP fluorescence of contractile rings (after background subtraction) and of the broad band of nodes (after background subtraction) (Figure 2E). The average total fluorescence intensities are 440,000 ± 95,000 AU in broad bands and 372,000 ± 111,000 AU in contractile rings. An unpaired t-test showed that these numbers are significantly different with p = 0.035. Thus, about 85% of the Blt1 in nodes is incorporated into contractile rings.
 
-## Mutant strains with a range of sizes
+### Mutant strains with a range of sizes
 
 We used five different mutant strains to determine the numbers of cytokinesis nodes in cells with a range of sizes. These mitotic cells had volumes from 50 to 450 µm3 (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76249/elife-76249-fig3-v1.jpg)
+
+**Figure 3.:** (A–F) Maximum intensity projections of Airyscan images of 40 Z-sections of fission yeast cells expressing Blt1-mEGFP and Sad1-RFP showing two spindle pole bodies (SPBs) (magenta). The scale bar is 3 µm. (A) cdc25-22; (B) wild type; (C) wee1-50; (D) rga4Δ; (E) rga2Δ; and (F) rga4Δ + HU at 25°C. (G) Histograms of the distributions of fluorescence intensities of small nodes in five different strains. Figure 2D shows the distribution of fluorescence intensities of small nodes in wild-type cells. Insets list average single node fluorescence intensity ± standard deviation (SD) for each strain. Tukey’s multiple comparison test showed no significant difference in any strain from the wild-type strain with p > 0.05 except in the rga4Δ + HU strain, p = 0.04. The Shapiro–Wilk W test did not reject the null hypothesis of normal distribution in all strains with W values ≥0.97. The descriptive statistics Z score for our sample size 135 > n > 310 was <3.29 for all strains, which does not reject the null hypothesis of a normal distribution. (H–K) Relationships between parameters (node numbers, broad band widths, and node densities) and cell size parameters in six strains: () wee1-50 (n = 18 cells); () rga2Δ at (n = 20 cells); () wild type at (n = 21 cells); () rga4Δ at (n = 17 cells); () rga4Δ + HU (n = 18 cells); and cdc25-22 () at 25°C. All measurements for each strain are collected in one bin except for () cdc25-22 cells, which are divided into three volume bins: 150–250 µm3, n = 8 cells; 250–350 µm3, n = 17 cells; 350–450 µm3, n = 6 cells, and three length bins: 15–25 µm, n = 14 cells; 25–30 µm, n = 10 cells; 30–40 µm, n = 7 cells. The transparent symbols are measurements of individual cells. The solid symbols are the mean numbers of node parameters. Except for the cdc25-22 cells, the vertical error bars show the SD of the mean numbers and horizontal error bars the SD of the lengths. For the cdc25-22 (volume 350–450 µm3) cells the error bar is the range. (H) Node number versus cell volume. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.5). (I) Node number versus cell length. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.5). (J) Width of node broad band as a function of cell length. The slope of the linear regression for four strains (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.2), The slope of the linear regression for cdc25-22 cells of various sizes (black line) is also significantly different from zero (p = 0.03; R2 = 0.2). (K) Node density on the cortex of the broad band area as a function of cell length. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.2). The slope of the linear regression for cdc25-22 cells (black line) is not significantly different from zero (p = 0.3; R2 = 0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76249/elife-76249-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Relationships between node number and cell surface area and diameter in five strains: () wee1-50 (n = 18 cells); () rga2Δ at (n = 20 cells); () wild type at (n = 21 cells); () rga4Δ at (n = 17 cells); and () rga4Δ + HU (n = 18 cells) at 25°C. (A) Node number versus surface area. All measurements for each strain are collected in one bin except for () cdc25-22 cells, which are divided into three surface area bins: 200–300 µm3, n = 12 cells; 300–400 µm3, n = 14 cells; >400 µm3, n = 5 cells. The transparent symbols are measurements of individual cells. The solid symbols are the mean numbers of node parameters. Except for the cdc25-22 cells, the vertical error bars show the standard deviation (SD) of the mean numbers and horizontal error bars the SD of the lengths. For the cdc25-22 cells with surface areas >400 µm3, the error bar is the range. The dashed black line is a linear regression using all the data points. The slope of the linear regression is significantly different from zero (p < 0.0001; R2 = 0.5). (B) Node number versus cell diameter. All measurements for each strain are collected in one bin. The slope of the linear regression (black dashed line) is not significantly different from zero (p = 0.3; R2 = 0.01) indicating no relationship between the number of nodes and the diameter of cells.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76249/elife-76249-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Blt1-mEGFP intensity in contractile ring versus cell volume for five strains: () wee1-50; () rga2Δ; () wild type; () rga4Δ; and () cdc25-22. The slope of the linear regression to all but the orange data points (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.3). (B) Fluorescence intensity of Blt1-mEGFP in contractile rings of () wild type and () cdc25-22 mutant cells from panel (A) and fluorescence intensity of mEGFP-Myo2 in contractile rings of () wild type and () cdc25-22 mutant cells versus cell volumes. The slope of the linear regression to all empty circle data points (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.8). The slope of the linear regression to all filled circle data points (solid black line) is not significantly different from zero (p = 0.8; R2 = 0.003).
 
 The Wee1 kinase catalyzes the phosphorylation of Cdc2/Cdk1 to prevent cells from entering mitosis (Russell and Nurse, 1987). At the restrictive temperature of 36°C, wee1-50 cells enter mitosis prematurely, so they are smaller than normal (Nurse, 1975). After 4 hr at the restrictive temperature, the average cell length of wee1-50 mutant cells (8.0 ± 0.9 µm) was about half the average length of wild-type cells (14.2 ± 0.8 µm) (Figure 3C). The diameter of wee1-50 mutant cells (3.8 ± 0.1 µm) was the same as wild-type cells (3.7 ± 0.1 µm). When released to the permissive temperature, most cells started to form a contractile ring in 10–15 min. The broad band of nodes looked more dispersed in these cells than in other strains.
 
@@ -83,7 +95,7 @@ The Cdc25 phosphatase removes the inhibitory phosphates added by Wee1 from Cdc2/
 
 The RhoGAP Rga4 localizes to the division site of cells and inactivates the GTPase Cdc42 (Das et al., 2007). Cells with deletion mutations of rga4 are shorter (11.6 ± 0.7 µm) but have larger diameters (4.4 ± 0.2 µm) than wild-type cells (Das et al., 2007; Tatebe et al., 2008; Figure 3D). Treating rga4Δ cells with 15 mM hydroxyurea for 4–6 hr inhibited DNA synthesis by inactivating ribonucleoside reductase (Krakoff et al., 1968) and arrested the cells in the S phase during which they grew longer (Mitchison and Creanor, 1971; Figure 3F). On the other hand, RhoGAP Rga2 localizes to growing cell tips and inactivates the Rho2 GTPase (Villar-Tajadura et al., 2008). Deletion of rga2 does not change the cell length but decreases the cell diameter (3.4 ± 0.2 µm) (Villar-Tajadura et al., 2008; Figure 3E).
 
-## Numbers of single cytokinesis nodes in a broad band scale with cell size
+### Numbers of single cytokinesis nodes in a broad band scale with cell size
 
 After correcting for cytoplasmic background fluorescence, we measured the total Blt1 fluorescence in the broad band around the equator of each cell (Figure 2). Assuming that this Blt1 is located in single nodes, we estimated the numbers of single cytokinesis nodes in the broad bands by dividing the total Blt1 fluorescence around the equator by the average intensity of the single nodes in that strain. The distributions of Blt1 fluorescence intensities of single cytokinesis nodes were similar (around 2300 AU) in wild-type cells (Figure 2C) and all the experimental strains (Figure 3G).
 
@@ -93,21 +105,21 @@ Comparing the numbers of cytokinesis nodes in the broad band of wild-type cells,
 
 The cells might use two strategies to accommodate a total number of nodes in a broad band determined by their size. Either the surface area (width) of the broad band or the density of nodes might increase with the total node number. We observed both. The very large cdc25-22 mutant cells simply expanded the width of the broad band in proportion to the number of nodes, while the density of nodes and width of broad band both increased with their numbers in the other strains of freely cycling cells (Figure 3J, K).
 
-## Blt1-mEGFP in contractile rings of cells with different sizes
+### Blt1-mEGFP in contractile rings of cells with different sizes
 
 We used five different strains to determine if the total Blt1-mEGFP fluorescence in contractile rings scales with cell size. The total Blt1-mEGFP fluorescence in contractile rings was generally higher in large cells (Figure 3—figure supplement 2A), but did not scale cleanly with size because the five tested strains incorporated different fractions of the total Blt1-mEGFP in the cytokinesis nodes into their contractile rings: 85% in wild-type cells; 40–70% in cdc25-22, wee1-50, and rga2Δ mutant cells; and nearly 90% in rga4Δ mutant cells. In cdc25-22 mutant cells, the total Blt1-mEGFP fluorescence in cytokinesis nodes increased with cell volume (Figure 3H) but did not scale with cell size in their contractile rings (Figure 3—figure supplement 2B). Therefore, the largest cdc25-22 cells had as little as ~50% of the cytokinesis node Blt1-mEGFP fluorescence in their contractile rings. In contrast, cdc25-22 mutant cells did recruit mEGFP-Myo2 to their contractile rings in proportion to their volumes (Figure 3—figure supplement 2B).
 
-## Does Pom1 control the number of cytokinesis nodes?
+### Does Pom1 control the number of cytokinesis nodes?
 
 We performed two types of experiments to investigate the relationship between the membrane-bound Pom1 kinase and the number of cytokinesis nodes. Concentrating Pom1 at the poles depends on microtubules that transport the polarity proteins Tea1 and Wsh3/Tea4 to the poles (Bähler and Pringle, 1998; Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009; Tatebe et al., 2005). First, we measured the distributions of Pom1 in cells with a wide range of sizes by time-lapse, spinning disk confocal microscopy (Figure 4). The five strains were wild-type, rga4Δ, rga2Δ, cdc25-22, and wee1-50. The cells expressed Pom1-GFP along with Sad1-RFP to identify mitotic cells with two SPBs and Blt1-mCherry to track nodes. Second, we varied the concentration of Pom1 and measured the number of nodes (Figure 5).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76249/elife-76249-fig4-v1.jpg)
 
-**Figure 4.:** (A) Distribution of Pom1 in wild type, wee1-50, and cdc25-22 mutant cells. Each strain expressed Pom1-GFP and Blt1-mCherry-Sad1-RFP from their native loci. Each panel has two parts: (left) sum projected confocal images of 15 Z-slices of wild-type cells taken at different phases of the life cycle abbreviated as LG (late G2), GM (G2/M), AP (anaphase), CS (constriction), SP (separation), and NT (new end take off); and (right) time series of plots of the average intensity of Pom1-GFP fluorescence along the length of the cells. Scale bar 3 µm. (Top panel) wee1-50 grown at 36°C and imaged at 22°C. (Second panel) Wild-type cells were grown at 25°C and imaged at 22°C. (Third panel) cdc25-22 mutant cells grown at 25°C and imaged at 22°C. (Bottom panel) cdc25-22 mutant cells grown at 36°C for 4 hr before imaging at 22°C. (B) Distributions of Pom1 and Blt1 in cells at the G2/M transition measured by confocal microscopy of wild-type and four mutant strains. Cells were grown at 25°C and imaged at 22°C: (, n = 9 cells) WT, (, n = 7 cells) wee1-50, (, n = 8 cells) cdc25-22, (, n = 9 cells) rga2Δ and (, n = 9 cells) rga4Δ mutant cells. Lines are fluorescence intensities of Blt1-mCherry-Sad1-RFP (magenta) and Pom1-GFP (green) across the full width of the cells and along the lengths of the cells. (C, D) Relationships between cell length and average Blt1-mCherry intensity on the plasma membrane of broad band with average Pom1-mEGFP intensity on the plasma membrane of broad band in five strains in (B). All measurements for each strain are collected in one bin except for () cdc25-22 cells, which are divided into two length bins: 30–36 µm, n = 12 cells; 36–45 µm, n = 22 cells. The transparent symbols are measurements of individual cells. The solid symbols are the mean numbers of node parameters. The vertical error bars show the SD of the mean numbers and the horizontal error bars the standard deviation (SD) of the lengths. (C) Average Pom1-mEGFP intensity per pixel along the plasma membrane across the broad band of nodes in the middle focal plane of the cells as a function of the lengths of the cells. The inset shows the rectangle three pixels wide and the length of the broad band of nodes used to make the measurements. The slope of the linear regression (black dotted line) is not significantly different from zero (p = 0.07; R2 = 0.03). (D) Graph of the average Pom1-mEGFP intensity per pixel versus the average Blt1-mCherry intensity per pixel along the plasma membrane in the middle focal plane of the cells (as in the inset of panel C). The slope of the linear regression (black dotted line) is not significantly different from zero (p = 0.13; R2 = 0.02).Figure 4—source data 1.Figure 4C, D.
+**Figure 4.:** (A) Distribution of Pom1 in wild type, wee1-50, and cdc25-22 mutant cells. Each strain expressed Pom1-GFP and Blt1-mCherry-Sad1-RFP from their native loci. Each panel has two parts: (left) sum projected confocal images of 15 Z-slices of wild-type cells taken at different phases of the life cycle abbreviated as LG (late G2), GM (G2/M), AP (anaphase), CS (constriction), SP (separation), and NT (new end take off); and (right) time series of plots of the average intensity of Pom1-GFP fluorescence along the length of the cells. Scale bar 3 µm. (Top panel) wee1-50 grown at 36°C and imaged at 22°C. (Second panel) Wild-type cells were grown at 25°C and imaged at 22°C. (Third panel) cdc25-22 mutant cells grown at 25°C and imaged at 22°C. (Bottom panel) cdc25-22 mutant cells grown at 36°C for 4 hr before imaging at 22°C. (B) Distributions of Pom1 and Blt1 in cells at the G2/M transition measured by confocal microscopy of wild-type and four mutant strains. Cells were grown at 25°C and imaged at 22°C: (, n = 9 cells) WT, (, n = 7 cells) wee1-50, (, n = 8 cells) cdc25-22, (, n = 9 cells) rga2Δ and (, n = 9 cells) rga4Δ mutant cells. Lines are fluorescence intensities of Blt1-mCherry-Sad1-RFP (magenta) and Pom1-GFP (green) across the full width of the cells and along the lengths of the cells. (C, D) Relationships between cell length and average Blt1-mCherry intensity on the plasma membrane of broad band with average Pom1-mEGFP intensity on the plasma membrane of broad band in five strains in (B). All measurements for each strain are collected in one bin except for () cdc25-22 cells, which are divided into two length bins: 30–36 µm, n = 12 cells; 36–45 µm, n = 22 cells. The transparent symbols are measurements of individual cells. The solid symbols are the mean numbers of node parameters. The vertical error bars show the SD of the mean numbers and the horizontal error bars the standard deviation (SD) of the lengths. (C) Average Pom1-mEGFP intensity per pixel along the plasma membrane across the broad band of nodes in the middle focal plane of the cells as a function of the lengths of the cells. The inset shows the rectangle three pixels wide and the length of the broad band of nodes used to make the measurements. The slope of the linear regression (black dotted line) is not significantly different from zero (p = 0.07; R2 = 0.03). (D) Graph of the average Pom1-mEGFP intensity per pixel versus the average Blt1-mCherry intensity per pixel along the plasma membrane in the middle focal plane of the cells (as in the inset of panel C). The slope of the linear regression (black dotted line) is not significantly different from zero (p = 0.13; R2 = 0.02).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/76249/elife-76249-fig5-v1.jpg)
 
-**Figure 5.:** Expression of mEGFP-Pom1 in cells from the nmt81 promoter under three conditions: in EMM5S with 5 µg/ml thiamine for 24 hr (n = 6 cells) to suppress expression or in EMM5S without thiamine to promote expression for 12 hr (n = 6 cells), 25 hr (n = 8 cells), or 40 hr (n = 8 cells). Gray symbols show individual cells. (A) mEGFP-Pom1 expression under four conditions measured as fluorescence intensity per pixel of mEGFP-Pom1 over the whole cells. (B) Average mEGFP-Pom1 intensity along the plasma membrane in the broad band of nodes in the middle focal plane of the cells as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dotted line) is significantly different from zero (p < 0.0001; R2 = 0.7). (C) Cell length as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.5). (D) Blt1-mCherry intensity per pixel in node broad band as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p = 0.01; R2 = 0.2). (E) Single node intensities measured by using Blt1-mCherry in WT cells and cells expressing different levels of Pom1. Error bars are standard deviation (SD), p = 0.001 as determined by Tukey’s multiple comparison test. (F) Width of the broad band region as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dashed line) is not significantly different from zero (p = 0.3; R2 = 0.04). (G) Node number as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p = 0.0017; R2 = 0.3). (H) Ratio of width of broad band of nodes to the cell length as a function of average mEGFP-Pom1 intensity along the plasma membrane in the broad band of nodes in the middle focal plane of the cells. The slope of the linear regression (black dashed line) is significantly different from zero (p = 0.0001; R2 = 0.4).Figure 5—source data 1.Figure 5A–H.
+**Figure 5.:** Expression of mEGFP-Pom1 in cells from the nmt81 promoter under three conditions: in EMM5S with 5 µg/ml thiamine for 24 hr (n = 6 cells) to suppress expression or in EMM5S without thiamine to promote expression for 12 hr (n = 6 cells), 25 hr (n = 8 cells), or 40 hr (n = 8 cells). Gray symbols show individual cells. (A) mEGFP-Pom1 expression under four conditions measured as fluorescence intensity per pixel of mEGFP-Pom1 over the whole cells. (B) Average mEGFP-Pom1 intensity along the plasma membrane in the broad band of nodes in the middle focal plane of the cells as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dotted line) is significantly different from zero (p < 0.0001; R2 = 0.7). (C) Cell length as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.5). (D) Blt1-mCherry intensity per pixel in node broad band as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p = 0.01; R2 = 0.2). (E) Single node intensities measured by using Blt1-mCherry in WT cells and cells expressing different levels of Pom1. Error bars are standard deviation (SD), p = 0.001 as determined by Tukey’s multiple comparison test. (F) Width of the broad band region as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dashed line) is not significantly different from zero (p = 0.3; R2 = 0.04). (G) Node number as a function of average mEGFP-Pom1 intensity in whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p = 0.0017; R2 = 0.3). (H) Ratio of width of broad band of nodes to the cell length as a function of average mEGFP-Pom1 intensity along the plasma membrane in the broad band of nodes in the middle focal plane of the cells. The slope of the linear regression (black dashed line) is significantly different from zero (p = 0.0001; R2 = 0.4).
 
 Figure 4A shows time series of fluorescence micrographs of individual cells from three strains paired with scans of the fluorescent intensity of Pom1-GFP along the lengths of these cells, while Figure 4B shows the line profiles of fluorescence of Blt1-mCherry plus Sad1-RFP (magenta) and Pom1-GFP (green) along the lengths of seven to nine mitotic cells of the five different strains. To our knowledge, this is the first time that the distribution of Pom1 was documented in cells with such a wide range of sizes (lengths of 8–40 µm).
 
@@ -123,19 +135,19 @@ The local intensities of Pom1-mEGFP along the plasma membrane in the broad band 
 
 We used the nmt81 (no message in thiamine) thiamine-repressible promoter (Maundrell, 1993) to control the expression of Pom1 and measured the effects on the cells and their cytokinesis nodes (Figure 5). Pom1 expression was lowest under repressing conditions (EMM5S with thiamine) and three times higher than wild-type cells grown in EMM5S without thiamine for 40 hr (Figure 5A). The intensity of mEGFP-Pom1 in the broad band along the plasma membrane (Figure 5B) and the length of cells undergoing the G2/M transition (Figure 5C) increased with the average concentration of Pom1 in the cells. The Blt1-mCherry intensity per pixel in the broad band also increased with the Pom1 concentration (Figure 5D), but the single node fluorescence measured with Blt1-mCherry did not change (Figure 5E). The width of the broad band of nodes did not change with the total Pom1 (Figure 5F). Therefore, the density of nodes in the broad band increased modestly with the cellular Pom1 concentration as the broad band occupied a smaller fraction of the cell length (Figure 5G). The ratio of the broad band width to the cell length decreased with the total cellular Pom1, indicating that Pom1 controls the width of the broad band (Figure 5H) as expected from previous work (Allard et al., 2019).
 
-## Does Cdr2 control the number of cytokinesis nodes?
+### Does Cdr2 control the number of cytokinesis nodes?
 
 The kinase Cdr2 is the scaffold protein for interphase type 1 nodes, which cluster around the middle of the cell and later merge with type 2 nodes to form cytokinesis nodes. To determine whether the numbers of cytokinesis nodes depend on the concentration of Cdr2, we replaced the Cdr2 promoter in the S. pombe genome with the nmt81 thiamine-repressible promoter (Maundrell, 1993). To quantify Cdr2 expression in these cells the N-terminus of Cdr2 was tagged with mEGFP. This strain also had a C-terminal RFP tag on Sad1 to mark SPBs and a C-terminal mCherry tag on Blt1 to locate and count cytokinesis nodes. Thiamine suppressed the expression of mEGFP-Cdr2 from the nmt81 promoter while growth without thiamine produced mEGFP-Cdr2 concentrations higher than in wild-type cells (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76249/elife-76249-fig6-v1.jpg)
 
-**Figure 6.:** Expression of mEGFP-Cdr2 in wild-type cells (n = 11 cells) and from the nmt81 promoter under three conditions: in EMM5S with 5 µg/ml thiamine for 24 hr (n = 10 cells) to suppress expression or in EMM5S without thiamine to promote expression for 12 hr (n = 9 cells) or 40 hr (n = 9 cells). Average fluorescence intensities per pixel were measured in sum projection images over whole cells. Gray symbols show individual cells. (A) Average mEGFP-Cdr2 fluorescence intensities per pixel over the whole cells under four conditions. (B) Cell length as a function of average mEGFP-Cdr2 intensity over whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.6). (C) Width of the broad band of nodes as a function of average mEGFP-Cdr2 intensity over whole cells. The slope of the linear regression (black dashed line) is not significantly different from zero (p = 0.9; R2 = 0.0004). (D) Single node intensities measured by using Blt1-mCherry in WT cells and cells expressing different levels of Cdr2p. (E) Node number as a function of average mEGFP-Cdr2 intensity over whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.6). (F) Blt1-mCherry intensity per pixel in the broad band area as a function of average mEGFP-Cdr2 intensity over whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.7).Figure 6—source data 1.Figure 6A–F.
+**Figure 6.:** Expression of mEGFP-Cdr2 in wild-type cells (n = 11 cells) and from the nmt81 promoter under three conditions: in EMM5S with 5 µg/ml thiamine for 24 hr (n = 10 cells) to suppress expression or in EMM5S without thiamine to promote expression for 12 hr (n = 9 cells) or 40 hr (n = 9 cells). Average fluorescence intensities per pixel were measured in sum projection images over whole cells. Gray symbols show individual cells. (A) Average mEGFP-Cdr2 fluorescence intensities per pixel over the whole cells under four conditions. (B) Cell length as a function of average mEGFP-Cdr2 intensity over whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.6). (C) Width of the broad band of nodes as a function of average mEGFP-Cdr2 intensity over whole cells. The slope of the linear regression (black dashed line) is not significantly different from zero (p = 0.9; R2 = 0.0004). (D) Single node intensities measured by using Blt1-mCherry in WT cells and cells expressing different levels of Cdr2p. (E) Node number as a function of average mEGFP-Cdr2 intensity over whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.6). (F) Blt1-mCherry intensity per pixel in the broad band area as a function of average mEGFP-Cdr2 intensity over whole cells. The slope of the linear regression (black dashed line) is significantly different from zero (p < 0.0001; R2 = 0.7).
 
 The length of the cells as they entered mitosis decreased modestly with the concentration of mEGFP-Cdr2 (Figure 6B), but the width of the broad band of nodes did not change (Figure 6C). The average single node intensity measured with Blt1-mCherry in cells grown for 12, 25, or 40 hr in EMM5S media and 24 hr in EMM5S + thiamine did not differ from wild-type cells (Figure 6D). Both the intensity of Blt1-mCherry per pixel in the broad band and the number of cytokinesis nodes increased with the expression of mEGFP-Cdr2 (Figure 6E, F). We conclude that the cellular concentration of Cdr2 has a modest effect on the number and density of cytokinesis nodes and the size of cells entering mitosis but not the width of the broad band of nodes.
 
 ## Discussion
 
-## Numbers of cytokinesis nodes
+### Numbers of cytokinesis nodes
 
 Using Airyscan imaging we measured the number of cytokinesis nodes in S. pombe and discovered that the number during early mitosis is proportional to cell size (Figure 3). Previous studies underestimated the number of cytokinesis nodes due to limitations of imaging techniques and/or methods used to choose nodes (Akamatsu et al., 2014; Akamatsu et al., 2017; Allard et al., 2018; Deng and Moseley, 2013; Laplante et al., 2016; Lenz et al., 2011; Pan et al., 2014; Vavylonis et al., 2008; Willet et al., 2019). Conventional confocal microscopy cannot resolve closely spaced nodes, so confocal images give the impression that cytokinesis nodes vary considerably in size and fluorescence intensity. Several studies considered only the largest nodes when estimating their numbers. On the other hand, super-resolution single-molecule localization microscopy showed that nodes are uniform in size and composition (Laplante et al., 2016). However, the method cannot make a 3D reconstruction of live cells to count the total number of nodes, so the numbers were estimated by extrapolation.
 
@@ -145,11 +157,11 @@ Similar measurements on contractile rings in wild-type cells (Figure 2E) showed 
 
 Our approach may be useful to extend studies on how the density of nodes marked with Cdr2 senses the cell surface area, activates cyclin-dependent kinase Cdk1 through inhibitory phosphorylation of wee1, and promotes the transition into mitosis (Facchetti et al., 2019b; Pan et al., 2014; Russell and Nurse, 1987; Simanis and Nurse, 1986). Rather than measuring the total intensity of Cdr2 around the equator (Facchetti et al., 2019b; Pan et al., 2014; Russell and Nurse, 1987; Simanis and Nurse, 1986) or counting only bright nodes (Pan et al., 2014), we measured the number of single nodes marked with Blt1 and found that their density on the membrane in the broad band varied with cell sizes except in cdc25-22 mutant cells (Figure 3K). Using our method to count single nodes marked with Cdr2 or Blt1 may provide further insights into the relation of node numbers to the timing of cell division.
 
-## Cytokinesis node number in broad bands scales with cell size
+### Cytokinesis node number in broad bands scales with cell size
 
 Starting from the observation that the number of interphase nodes in wild-type cells increases with the twofold increase in cell size during the cell cycle (Akamatsu et al., 2017; Allard et al., 2018; Deng and Moseley, 2013; Pan et al., 2014), we measured the number of cytokinesis nodes in wild type and mutant cells that varied fivefold in size as they entered mitosis (Figure 3). To avoid the time-dependent compositional changes in cytokinesis nodes during their ~22 min life span and to be able to compare the number of cytokinesis nodes as well as the cell size among the wild-type and four mutant cells, we restricted our measurements to a specific cell cycle time point. The average fluorescence intensity of the single nodes was the same in wild-type and these mutant cells (Figure 3G). The total Blt1-mEGFP fluorescence in a broad band of nodes and therefore the total number of nodes increased with cell size measured as volume (Figure 3H), length (Figure 3I), or surface area (Figure 3—figure supplement 1A).
 
-## Influence of the kinases Pom1 and Cdr2 on the broad band of cytokinesis nodes
+### Influence of the kinases Pom1 and Cdr2 on the broad band of cytokinesis nodes
 
 We investigated the roles of Pom1, the kinase that restricts type 1 nodes from the poles of cells, and Cdr2, the kinase and scaffold protein for type 1 nodes, in setting the number of cytokinesis nodes. Pom1 forms a gradient from the cell tips to their middles and phosphorylates Cdr2 at multiple sites. Phosphorylation of one site reduces Cdr2 oligomerization and membrane binding at the poles, while phosphorylation of another site inhibits Cdr2 from phosphorylating the Wee1 kinase (Bhatia et al., 2014; Deng and Moseley, 2013; Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009; Rincon et al., 2014). However, both cdr2∆ and pom1∆ cells form nodes and complete cytokinesis, although the cleavage site is off-center in pom1∆ cells because they only exclude nodes from one pole by an unknown mechanism (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009).
 
@@ -161,19 +173,19 @@ On the other hand, cells expressing low concentrations of Pom1 were shorter when
 
 Artificially increasing the total cell concentration of Cdr2 (Figure 6) reduced cell length at the time of division (Figure 6B) but did not change the width of the broad band of cytokinesis nodes (Figure 6C), so the broad band occupied a larger fraction of the cell surface. High Pom1 concentrations had the opposite effects on cell size (Figure 5C) and broad band width (Figure 5F). On the other hand, the number of cytokinesis nodes increased with the concentration of Cdr2 (Figure 6E). The short cells expressing high Cdr2 concentrations had almost double the number of cytokinesis nodes in their slightly wider broad bands than cells of similar lengths with wild-type levels of Cdr2 (Figure 3I). Longer cells expressing low concentrations of Cdr2 had numbers of cytokinesis nodes similar to cells of the same lengths in Figure 3I. The plot of cytokinesis node number versus Cdr2 concentration extrapolates to more than 190 nodes when the Cdr2 concentration is zero (Figure 6E), as expected for cells longer than wild-type cells at division (Figure 6B). Therefore, Cdr2 can drive cytokinesis node numbers above the basal level of about 190.
 
-## Mechanisms
+### Mechanisms
 
-## Cell size dominates in setting the basal number of nodes
+#### Cell size dominates in setting the basal number of nodes
 
 Low SIN activity during interphase is a prerequisite for the assembly of type 1 interphase nodes (Pu et al., 2015), but cell size has a dominant influence in setting the number of nodes in wild-type cells. Accordingly, as cells grow, the number of interphase nodes doubles as they mature into cytokinesis nodes. A limiting amount of an essential node protein might set the number of nodes, but only about half of each of the known node proteins assemble into nodes (Akamatsu et al., 2017). Alternatively, a cell-size-dependent posttranslational modification of one of these proteins may limit the number of nodes. Phosphorylation of the type 1 node scaffold protein Cdr2 by Pom1 is a candidate mechanism, but deletion of Pom1 does not affect the number of nodes (Bhatia et al., 2014; Pan et al., 2014). Nodes turn over continuously, so the rates of node formation and turnover must have a strong influence on their numbers. However, we do not yet know whether one protein at a time or whole nodes turn over or how this process is controlled. All these options are attractive subjects for future research.
 
-## Pom1 and Cdr2 modulate a basal number of nodes
+#### Pom1 and Cdr2 modulate a basal number of nodes
 
 We find that cell size is the primary determinant of the number of cytokinesis nodes (Figure 3) but that the cellular concentrations of the Cdr2 and Pom1 kinases can independently influence cell size and drive the number of cytokinesis nodes above a baseline (Figure 7). The modulating effect of the two kinases is seen in plots of node number vs. the concentrations of either kinase, which intercept the y-axis well above zero (Figures 3H, 5G,, 6E). The presence of a basal number of cytokinesis nodes is expected, since cells without either Cdr2 or Pom1 form cytokinesis nodes Almonacid et al., 2009; Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009. We propose that interactions of Pom1 with Cdr2 in type1 interphase nodes modulate the cell size, which in turn is the dominant determinant of the basal numbers of cytokinesis nodes in mitotic cells (Figure 3H). On top of this basal number of cytokinesis nodes, the concentrations of Cdr2 (Figure 6E) and Pom1 (Figure 5G) in mitotic cells can increase the number of cytokinesis nodes.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76249/elife-76249-fig7-v1.jpg)
 
-**Figure 7.:** A) cells overexpressing Pom1, (B) wild-type cells and (C) cells overexpressing Cdr2.The gradient of Pom1 along the cell plasma membrane is shown in green. The distribution of Cdr2 on the plasma membrane is shown in magenta and called the Cdr2 region. Purple dots show the density of Cdr2 nodes. Blunt end red lines show the inhibitory action of Pom1 on Cdr2, with the line thickness showing the strength. Lengths of black arrows show the time spent growing. The two dotted lines show the borders of the broad band of nodes.
+**Figure 7.:** The gradient of Pom1 along the cell plasma membrane is shown in green. The distribution of Cdr2 on the plasma membrane is shown in magenta and called the Cdr2 region. Purple dots show the density of Cdr2 nodes. Blunt end red lines show the inhibitory action of Pom1 on Cdr2, with the line thickness showing the strength. Lengths of black arrows show the time spent growing. The two dotted lines show the borders of the broad band of nodes.
 
 Pom1 regulates interphase node localization by phosphorylating Cdr2, which reduces its oligomerization and membrane binding (Bhatia et al., 2014; Rincon et al., 2014). This direct effect of Pom1 on Cdr2 is one way the gradient of Pom1 from the poles of the cell can restrict nodes to a broad band around the equator (Figure 7). As cells grow, the overlap of the Pom1 gradient with Cdr2 in the middle of the cell decreases.
 
@@ -183,7 +195,7 @@ Based on these mechanisms, overexpression of Cdr2 might increase the number of c
 
 Unexpectedly, the number of cytokinesis nodes also increases with the Pom1 concentration (Figure 5G). Based on the Pom1 to Cdk1 pathway, one expects high concentrations of Pom1 to inhibit the assembly of Cdr2 into nodes. However, inhibiting Cdr2 results in high Wee1 activity that inhibits Cdk1, delays the cell cycle, and allows cells to grow longer (Figure 7A). The dominant effect of cell size on driving node formation produces more nodes (Figure 5C).
 
-## Pom1 and Cdr2 influence the width of the broad band and density of nodes
+#### Pom1 and Cdr2 influence the width of the broad band and density of nodes
 
 Wild-type cells form type 1 nodes around the daughter nuclei and use a gradient of Pom1 from the poles to confine these nodes to the equator throughout interphase (Figure 7B). As cells elongate during interphase, three parallel events result in twofold longer cells with twice the number of nodes located in a twofold wider broad band ready for mitosis. First, the Pom1 concentration on the plasma membrane is low in a zone in the middle of the cell that widens in proportion to a wide range of cell sizes (Figures 3J, 4C,, 7B; Bhatia et al., 2014; Pan et al., 2014). Second, except in cdc25-22 mutant cells, the density (Figure 3K) and the total number of nodes marked with Blt1 (Figure 3H) or Cdr2 (Bhatia et al., 2014; Pan et al., 2014) in this broad band increases with cell size in cells with or without Pom1 (Bhatia et al., 2014; Pan et al., 2014). Third, the broad band widens in proportion to cell size (Figure 3J). Two additional factors contribute to limiting nodes to the equator. One is the uncharacterized activity that excludes nodes from one pole in the absence of Pom1 (Martin and Berthelot-Grosjean, 2009; Moseley et al., 2009). The other is anillin, Mid1, given that nodes spread over the entire plasma membrane in mid1∆ cells (Saha and Pollard, 2012).
 
@@ -191,23 +203,109 @@ The experimental conditions may explain why cdc25-22 mutant cells did not pack t
 
 The concentrations of Pom1 and Cdr2 to Pom1 also influence the width of the broad band and the density of nodes therein (Figure 7). Overexpression of Cdr2 drives both node formation and premature cell division, while the natural level of Pom1-driven inhibition from the poles does not allow space for new nodes at the edges of the broad band, so the surface density of cytokinesis nodes is higher (Figure 7C). Cells over expressing Pom1 also have a higher density of nodes around their equators owing to more nodes (Figure 5G) in broad bands of normal widths (Figure 5F). Like short wild-type interphase cells (Figure 7B), overexpression of Pom1 increases its concentration in the middle of cells (Figure 5B) and suppresses the spread of the broad band in spite of delayed mitosis increasing the length of these cells (Figures 5C and 7A).
 
-## Influence of cell shape
+#### Influence of cell shape
 
 The shape of the cell can also influence the number of nodes. For example, the large diameter but short rga4Δ mutant cells lacking the RhoGAP Rga4 are normal in many ways (single node intensity, numbers, and densities of nodes for their lengths) but due to their large diameters, they are an outlier with fewer cytokinesis nodes than expected for cells with a given volume. In addition, the gradient of Pom1 from the cell tips is steeper in rga4Δ mutant cells than in wild-type cells and the Blt1-mCherry + Sad1-RFP fluorescence was spread more widely across the middle of rga4Δ mutant cells than in wild-type or other strains (Figure 4B, second and third panels from the top).
 
-## Incorporation of the proteins of cytokinesis nodes into contractile rings
+### Incorporation of the proteins of cytokinesis nodes into contractile rings
 
 Most of the proteins comprising cytokinesis nodes during mitosis (Blt1, anillin Mid1, F-BAR Cdc15, IQGAP Rng2, and Myo2) are initially incorporated into contractile rings (Goss et al., 2014; Wu and Pollard, 2005). Thereafter, Myo2 is retained and concentrated along with newly arriving Myp2, while first Mid1 and then subsequently actin are lost in proportion to the declining circumference of the constricting contractile ring (Courtemanche et al., 2016; Malla et al., 2021). This gave the strong impression that the core of the cytokinesis nodes, with the exception of Mid1, remained intact in the contractile ring. However, we report here that the fraction of Blt1 in cytokinesis nodes incorporated into contractile rings varies: nearly 90% in rga4Δ mutant cells, 85% in wild-type cells, and 40–70% in cdc25-22, wee1-50, and rga2Δ mutant cells. In the case of the longest cdc25-22 mutant cells, a much larger fraction of the Myo2 from the cytokinesis nodes was incorporated into the rings than Blt1 (Figure 3—figure supplement 2). Arresting and then releasing the cell cycle of the cdc25-22 mutant cells at the G2/M transition may contribute to this imbalance, which is greater than in any of the strains allowed to cycle normally. In any case, this new observation indicates that nodes observed in rings by single-molecule localization microscopy (Laplante et al., 2016) are likely to have different compositions than cytokinesis nodes. Documenting and characterizing this maturation of nodes transitioning into contractile rings is worthy of further exploration.
 
 ## Materials and methods
 
-## Yeast strains
+### Yeast strains
 
 Table 1 lists the strains used in this work. We used standard methods for S. pombe growth and genetics (Moreno et al., 1991). We made most observations on a strain with SPBs marked by Sad1-RFP, and nodes marked by Blt1-mEGFP (Goss et al., 2014). The sequences encoding the fluorescent proteins were incorporated into the haploid genome, so all copies of these proteins were tagged. The yeast strains rga2Δ (FC3158) and rga4Δ (FC3157) were a kind gift from the laboratory of Prof. Fred Chang (University of California, San Francisco). All the other strains were obtained from laboratory stocks or by crossing laboratory stock strains. Strains were confirmed by growth on selective media and microscopy. Except for Figures 5 and 6, cells were grown in YE5S medium for 24 hr at 25°C and then overnight in synthetic EMM5S medium at 25°C before imaging.
 
+**Table 1.**
+ Strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WS40</td>
+      <td>h− blt1-mEGFP:KanMX6 sad1-RFP:KanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>Laboratory Stock</td>
+    </tr>
+    <tr>
+      <td>WS46</td>
+      <td>h− cdc25-22 blt1-mEGFP:KanMX6 sad1-RFP:KanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS47</td>
+      <td>h− wee1-50 blt1-mEGFP:KanMX6 sad1-RFP:KanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS51.1</td>
+      <td>h− rga2Δ blt1-mEGFP:KanMX6 sad1-RFP:KanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS52.1</td>
+      <td>h− rga4Δ blt1-mEGFP:KanMX6 sad1-RFP:KanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS59</td>
+      <td>h− pom1-GFP kanMX6 blt1-mCherry natMX6 sad1-mRFP kanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>Laboratory Stock</td>
+    </tr>
+    <tr>
+      <td>WS54</td>
+      <td>h− rga2Δ pom1-GFP kanMX6 blt1-mCherry natMX6 sad1-mRFP kanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS55</td>
+      <td>h− rga4Δ pom1-GFP kanMX6 blt1-mCherry natMX6 sad1-mRFP kanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS56</td>
+      <td>h− cdc25-22 pom1-GFP kanMX6 blt1-mCherry natMX6 sad1-mRFP kanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS57</td>
+      <td>h− wee1-50 pom1-GFP kanMX6 blt1-mCherry natMX6 sad1-mRFP kanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS70</td>
+      <td>h− HygMX6-Pnmt81-mEGFP-Pom1 blt1-mCherry natMX6 sad1-mRFP kanMX6 ade6-M21X leu1-32 ura4-Δ18</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>WS71</td>
+      <td>h− KanMX6-Pnmt81-mEGFP-Cdr2 blt1-mCherry natMX6 sad1-mRFP kanMX6 ade6-M21X leu1-32 ura4-Δ19</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CL181</td>
+      <td>h+ KanMX6-Pmyo2-mEGFP-myo2 Sad1-RFP-KanMX6 ade6-M216 his3-D1 leu1-32 ura4-D18</td>
+      <td>Laboratory Stock</td>
+    </tr>
+    <tr>
+      <td>JW875</td>
+      <td>h+ cdc25-22 kanMX6-Pmyo2-GFP-myo2 ade6-M210 leu1-32</td>
+      <td>Laboratory Stock</td>
+    </tr>
+  </tbody>
+</table>
+
 To control the expression of Cdr2 and Pom1 (Figures 5 and 6), we inserted by homologous recombination the weak nmt81 promoter along with mEGFP upstream of the open reading frames for Cdr2 or Pom1 in their chromosomal loci. Cells were grown in the EMM medium for 25 hr at 25°C to induce moderate expression or 40 hr at 25°C to overexpress mEGFP-Cdr2 or mEGFP-Pom1. Cells were grown in 5 µg/ml thiamine for >24 hr at 25°C to repress the expression of these two fusion proteins. The OD595 of the cultures was kept below 0.6 over the entire period.
 
-## Airyscan microscopy
+### Airyscan microscopy
 
 Imaging was performed on LSM 880 laser scanning confocal microscope (ZEISS) equipped with 100x Plan Apochromatic 1.46 NA oil objective, an Airyscan super-resolution module, GaAsP detectors, and Zen Black acquisition software (ZEISS). We acquired 40 Z-slices with a step size of 170 nm covering the entire volume of a cell. Pixel size was 41 nm by 41 nm. Images were collected with a pixel dwell time of 1.02 μs and an image size of 520 × 520 pixels corresponding to 22 × 22 μm. Cells were imaged for mEGFP with a 488 nm laser and BP 420–480 excitation filter and BP 495–620 emission filter; and for RFP with a 561 nm laser and with a BP 495–550 excitation filter and LP 570 emission filter. The pixel dwell time, laser intensity, and detector gain were kept low to avoid saturation and photobleaching during image acquisition. To increase signal-to-noise ratio and resolution, acquired images were processed by 3D Airyscan filter strength 7.0 with Zen Black software.
 
@@ -217,7 +315,7 @@ To obtain the total fluorescence of a broad band of nodes, we sum projected 40 Z
 
 In Figure 3K, we calculated the density of nodes in broad bands by taking into account the cell diameters, which were the same in wild-type, wee1-50, and cdc25-22 mutant cells but larger in rga4Δ cells and smaller in rga2Δ cells.
 
-## Confocal microscopy
+### Confocal microscopy
 
 To compare the confocal and Airyscan imaging shown in Figure 1 we obtained confocal images using the same Airyscan detector. To make and improve the signal-to-noise ratio comparable to Airyscan microscopy we used the pinhole 0.6 AU, 8× averaging, linear constrained iterative deconvolution, and twice the 488 nm laser intensity implemented in Airyscan imaging. We acquired 20 Z-slices with step size 340 nm covering the entire fluorescence of a cell with pixel size 82 nm by 82 nm. Images were processed for linear constrained iterative deconvolution using the ImageJ plugin ‘Deconvolution’.
 

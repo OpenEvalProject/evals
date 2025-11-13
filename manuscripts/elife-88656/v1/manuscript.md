@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Biochemistry, University of Oxford Oxford United Kingdom
-2. https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology Cambridge United Kingdom
+1. Department of Biochemistry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
 
 † Corresponding author
 
@@ -48,7 +48,7 @@ We report here a complementary approach to in vitro biochemistry and experimenta
 
 ## Results
 
-## Closing the Smc1 and Smc3 coiled coil joints plays a part in the dissociation of Scc1’s NTD from Smc3’s neck
+### Closing the Smc1 and Smc3 coiled coil joints plays a part in the dissociation of Scc1’s NTD from Smc3’s neck
 
 Wapl is thought to induce cohesin’s release from chromosomes by facilitating the passage of DNAs through the Smc3/Scc1 interface. It could do this either by inducing dissociation of the interface, by holding the gate open once Scc1 has already dissociated, or by a combination of both mechanisms. If it merely held the gate open, then there must exist a mechanism capable of opening it that is Wapl-independent. Evidence for this comes from the observation that inactivation of Scc2 during late G1 triggers cohesin’s dissociation from chromosomes via a mechanism that is blocked by fusion of Smc3 to Scc1 or by mutations such as SMC1(L1129V) or SMC1(D1164E) that suppress eco1Δ lethality (Srinivasan et al., 2019). Crucially, this release is independent of Wapl.
 
@@ -72,8 +72,6 @@ A very different arrangement of Smc1 and Smc3 coiled coils has been observed by 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig6-v1.jpg)
 
-**Figure 6.:** A, f6) and GSx15 (B, f7) linkers instead of their hinges.
-
 Though influenced by elbow and hinge, the joints nevertheless have an affinity for each other, as they form compact junctions when the coiled coils distal to the elbow are excluded and do so despite the lack of any extensive association between coiled coils away from the joint (Figure 7A, f8). Indeed, AF predicted with high confidence a compact heterodimer formed between the joints of yeast Smc1 and Smc3, associated with only short sections of coiled coils (Figure 7B, f9). A very similar prediction, albeit in only the top ranked model, was made for the equivalent human proteins (f10). In both yeast and humans, the predicted interactions between isolated joints were very similar to those within Smc1/Smc3 heterodimers lacking merely their ATPase domains (Figure 4).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig7-v1.jpg)
@@ -90,17 +88,15 @@ These predictions imply that dimerization at opposite ends of the Smc1 and Smc3 
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig9-v1.jpg)
 
-**Figure 9.:** A, B, f13) and human (C, f14) Smc1/Smc3 heterodimers.
-
 ![Figure 10.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig10-v1.jpg)
 
-**Figure 10.:** A, f15), with Scc1’s NTD (B, f16), and with Scc1’s CTD (C, f17).Chains in the PAEs from f16 are Scc1 (A), Smc1 (B), Smc1 (C), Smc3 (D), and Smc3 (E).
+**Figure 10.:** Chains in the PAEs from f16 are Scc1 (A), Smc1 (B), Smc1 (C), Smc3 (D), and Smc3 (E).
 
 Though some of the more baroque AF models may reflect unrealistic scenarios, the emerging principle that head engagement and joint junction can co-exist but only do so if the intervening coiled coils are distorted is consistent with a similar configuration in low-resolution cryo-EM structures of Smc1/Smc3 heterodimers in the presence of ATP (Petela et al., 2021). Indeed, there is evidence that the state also occurs in vivo. By introducing cysteine pairs in the interface between engaged Smc1/3 ATPases, it is possible to use the bifunctional thiol-specific crosslinking reagent BMOE (bis-maleimidoethane) to detect their proximity in vivo. A different pair of cysteines can be used to detect association between Smc1 and Smc3 coiled coils in the vicinity of their joints. In an observation surprising at the time, it was observed that BMOE induces appreciable double crosslinking (head and joint crosslinks) with a frequency not dissimilar to the product of the frequency of the individual pairs, which indicates simultaneous crosslinking (Chapard et al., 2019).
 
 These observations lead us to propose that head engagement under conditions in which the hinge reinforces a junction of Smc1/Smc3 joints, namely in the absence of DNA or Scc2, will create distortions of the coiled coil (Smc3’s neck) to which Scc1’s NTD is normally associated and that this distortion may cause its dissociation. A corollary is that maintaining the association of Scc1’s NTD with the Smc3 neck should prevent either joint junction or even head engagement. Consistent with this hypothesis, the addition of Scc1’s NTD (Figure 10B, f16) but not its CTD (Figure 10C, f17) to the Smc1 and Smc3 ATPase heads associated with coiled coils extending to the elbow eliminated the joint junction previously observed in four out of five models. In this case, where joint junction is not reinforced by the hinge, AF clearly gave preference to the Smc3-kleisin interaction over joint junction. Likewise, the top three ranked models obtained with Scc1’s NTD together with full-length Smc1/Smc3 heterodimers predicted engaged heads with Scc1’s NTD associated with Smc3’s neck but joints fully disjoined (f18). Though the in silico prediction that association between Scc1’s NTD and the Smc3 neck is dominant over joint junction may not be an accurate reflection of nature, the notion that joint junction while heads are engaged may be the driving force for opening cohesin’s exit gate nevertheless provides a plausible mechanism for this key event. Importantly, the hypothesis explains why non-lethal mutations that compromise head engagement (Elbatsh et al., 2016) abrogate releasing activity (RA). Crucially, it is eminently testable, as it predicts that dissociation of Scc1’s NTD from the Smc3 neck depends on joints and probably also on distal coiled coils and their associated hinge.
 
-## How does Wapl enhance exit gate opening?
+### How does Wapl enhance exit gate opening?
 
 If ATP-dependent dissociation of Scc1’s NTD from the Smc3 neck is a feature intrinsic to Smc-kleisin trimers, then how might Wapl enhance this process? To address this, we used AF to explore how Wapl is first recruited to cohesin and second what effect it has on the configuration of cohesin’s HAWK regulatory proteins and /or on the Smc3/Scc1 interface. Our starting point was existing knowledge based on biochemical and genetic assays. In vitro, Wapl is known to bind SA/Scc3 and this binding is abrogated by mutation of a highly conserved lysine residue (K404 in yeast; K330 in humans) within a highly conserved surface (known as the ‘CES,’ conserved and essential surface) that sits underneath the pronounced ‘nose’ of Scc3/SA. This binding must be of physiological importance as K to E mutations abrogate Wapl-dependent RA in vivo, both in yeast (Beckouët et al., 2016) and in cultured human cells (Hara et al., 2014). Exactly which part of Wapl binds to the CES has never been fully established. It has been proposed that sequences within Wapl’s unstructured N-terminal domain are responsible, either one or other of its FGF motifs (Shintomi and Hirano, 2009) or a different segment between residues 510 and 570, known as Wapl-M (Hara et al., 2014; Ouyang et al., 2013). As will become clear below, AF predictions imply that neither proposal is correct. Meanwhile, a short YSR motif at Wapl’s N-terminus binds a highly conserved loop (consensus sequence AP[D/E]AP) between helices 2 and 3 within Pds5’s NTD, which is also bound by a YSR-like motif within the kinase Haspin (Ouyang et al., 2016). This locus within Pds5’s NTD was in fact first identified as being crucial for Wapl-mediated release through mutations clustering at this location that suppress the lethality of eco1 mutants in yeast (Rowland et al., 2009). However, Wapl’s N-terminal YSR has never been rigorously demonstrated to be necessary for its RA. Most fungal Wapls also possess at or near their N-termini a similar motif whose consensus is [M/Φ]xxYG[K/R]. Importantly, its deletion in Saccharomyces cerevisiae does not suppress the lethality of eco1Δ mutants (Figure 11A), implying that unlike Pds5’s AP[D/E]AP loop to which it is thought to bind, the [M/Φ]xxYG[K/R] motif is not essential for Wapl-mediated RA. Some other sequence must therefore bind the AP[D/E]AP loop in vivo. Interestingly, the [M/Φ]xxYG[K/R] motif is lacking in Schizosaccharomyces pombe, though a different one (TYxxxR[T/S]ΦL), which is much closer to Wapl’s conserved CTD, is present and highly conserved in that location among all fungi (Figure 11B). Unlike the N-terminal motif, the more C-terminal TYxxxR[T/S]ΦL motif is essential for RA, as its deletion suppresses the lethality of eco1Δ mutants in S. cerevisiae (Figure 11A). Thus, the picture that emerges is primarily one of a loose association between Wapl and SA/Scc3 or Pds5 via short motifs within Wapl’s unstructured N-terminal domain. Crucially, none of these interactions help explain how Wapl’s more conserved CTD composed of eight HEAT repeats actually promotes release.
 
@@ -115,8 +111,6 @@ We first used AF to explore the association between Wapl and Pds5. For yeast, th
 **Figure 12.:** (A) AlphaFold 2 (AF) prediction for yeast Wapl’s association with Pds5 (f19A). (B) AF prediction of yeast Wapl alone (AF-Q99359-F1, AlphaFold Protein Structure Database). (C) AF predicts interaction between Wapl’s TYxxxR[T/S]ΦL motif and Pds5’s APDAP loop in Neurospora crassa (f19B).
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig13-v1.jpg)
-
-**Figure 13.:** A, left and right, f19), FGF motifs within human Wapl (B, upper left and right, f20) and D. rerio Sororin (B, lower right, f21), and a highly conserved, partly helical, ILxLCEEIAGEIESD motif within human Esco1 (B, lower left, f22).
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig14-v1.jpg)
 
@@ -142,13 +136,13 @@ The prediction that in humans Wapl’s CTD forms a complex with Pds5 as well as 
 
 ![Figure 17.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig17-v1.jpg)
 
-**Figure 17.:** A. thaliana (B, f29), D. melanogaster (f30), and S. punctatus (f31).Also shown is Wapl’s conservation mapped on the human complex (A, right). Chains in the PAEs from f28 are Pds5 (A), Wapl (B), and SA (C). Chains in the PAEs from f29 are Scc3 (A), Pds5 (B), and Wapl (C). Chains in the PAEs from f31 are Pds5 (A), Scc3 (B), and Wapl (C).
+**Figure 17.:** Also shown is Wapl’s conservation mapped on the human complex (A, right). Chains in the PAEs from f28 are Pds5 (A), Wapl (B), and SA (C). Chains in the PAEs from f29 are Scc3 (A), Pds5 (B), and Wapl (C). Chains in the PAEs from f31 are Pds5 (A), Scc3 (B), and Wapl (C).
 
 In contrast, despite the robust formation of binary complexes between Scc3 and Wapl orthologs, AF failed to predict the same type of ternary complexes with the equivalent protein fragments from S. cerevisiae (f32A). Further analysis of the way Wapl interacts with Pds5 in S. punctatus revealed a possible explanation. When the former’s CTD was attached to N-terminal residues containing its TYxxxR[T/S]ΦL motif, AF predicted that Pds5’s NTD formed a rigid body complex with the CTD, whose conformation was identical to that observed in the canonical Pds5:SA/Scc3:Wapl rigid body ternary complex (Figure 17B), while its APDAP loop simultaneously bound Wapl’s TYxxxR[T/S]ΦL motif (Figure 18, f19E), in the manner observed in S. cerevisiae (f19C) and N. crassa (f19B). This raised the possibility that an interaction between Wapl’s TYxxxR[T/S]ΦL motif and Pds5’s APDAP loop might actually facilitate formation of ternary complexes and that this might explain why the TYxxxR[T/S]ΦL motif is essential for RA in S. cerevisiae. We therefore repeated the AF predictions for the previously described S. cerevisiae Pds5, Scc3, and Wapl fragments (f32A) but in this case included sequences containing Wapl’s TYxxxR[T/S]ΦL motif. Remarkably, the top three ranked models now predicted with high confidence a rigid body ternary complex (Figure 19A, f32B), whose conformation closely resembles the canonical Pds5:SA/Scc3:Wapl rigid body ternary complex observed in animals, plants, and basal fungi. Moreover, this was accompanied by the interaction between the TYxxxR[T/S]ΦL motif and Pds5’s APDAP loop, as observed in S. punctatus. The dramatic effect of including the TYxxxR[T/S]ΦL motif is best visualized by comparing the PAEs of the top three ranked models with and without the motif (Figure 19B).
 
 ![Figure 18.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig18-v1.jpg)
 
-**Figure 18.:** S. punctatus Pds5 and a fragment of Wapl containing its TYxxxRT/SΦL motif connected to its CTD (f19E).Both the motif and the CTD bind to Pds5. Chains in the PAEs from f19E are Wapl (A) and Pds5 (B).
+**Figure 18.:** Both the motif and the CTD bind to Pds5. Chains in the PAEs from f19E are Wapl (A) and Pds5 (B).
 
 ![Figure 19.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig19-v1.jpg)
 
@@ -164,25 +158,23 @@ Potential insight into the function of the highly conserved C-terminal Wapl clef
 
 ![Figure 21.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig21-v1.jpg)
 
-**Figure 21.:** S. cerevisiae (f36) and human (f37).Chains in the PAEs from f36 are Smc3 (A), Smc3 (B), Scc1 (C), and Pds5 (D). Chains in the PAEs from f37 are Scc1 (A), Pds5 (B), Smc3 (C), and Smc3 (D).
+**Figure 21.:** Chains in the PAEs from f36 are Smc3 (A), Smc3 (B), Scc1 (C), and Pds5 (D). Chains in the PAEs from f37 are Scc1 (A), Pds5 (B), Smc3 (C), and Smc3 (D).
 
 Because RA depends on Wapl’s association with Pds5, Scc1N is presumably bound to Pds5 upon its dissociation from Smc3 during a release reaction. We therefore used AF to predict how Scc1N alone binds to Pds5. In the absence of Smc3, Smc3’s coiled coil no longer poses a constraint on how Scc1N binds with Pds5, and AF predicts that yeast Scc1’s association now extends to the C-terminal end of α3, whose interaction with the ends of a pair of Pds5’s HEAT repeats leads to a pronounced rotation, as well as levering backward of the Scc1 NTD (Figure 22, f38). This change is not accompanied by any alteration of its actual structure or in the manner in which more C-terminal Scc1 sequences bind the Pds5 spine. In humans, α3’s association with the Pds5 spine was less affected by Smc3’s removal but it was nevertheless levered further backward, becoming more orthogonal to the spine’s axis (Figure 22, f39). Crucially, in both cases, as well as in A. thaliana (Figure 22, f40), the C-terminal end of Scc1N’s α3 is anchored on the Pds5 spine and juts out from it at a defined angle. The change in the manner of Scc1N’s association with Pds5 upon dissociation from Smc3 might account for the observation that Pds5 inhibits Scc1N’s association with Smc3 in vitro, but does not affect its association once bound (Ouyang et al., 2016). Given that Pds5 is intimately involved in RA and that the latter requires dissociation of Scc1’s NTD from Smc3, it is plausible to imagine that upon its dissociation (presumably in response to head engagement and joint junction), Scc1’s NTD remains associated with Pds5 in the conformations observed in the above AF models. Crucially, AF predicts that under these conditions, Scc1’s NTD adopts a defined position relative to Pds5’s NTD that is similar in fungi, animals, and plants.
 
 ![Figure 22.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig22-v1.jpg)
 
-**Figure 22.:** S. cerevisiae (f38), humans (f39), and A. thaliana (f40).
-
 Having realized that Pds5 organizes the spatial position of Scc1’s NTD, we superimposed the human Pds5:Scc1N model (Figure 22, middle, f39) onto the canonical Pds5:SA/Scc3:Wapl rigid body ternary complex (Figure 23, f41). Remarkably, this revealed that the N-terminal end of Scc1’s NTD is placed, through its association with the spine of Pds5, in the vicinity of the aforementioned cleft at the C-terminal end of Wapl’s CTD. Supposition of the canonical Pds5:Scc3:Wapl rigid body ternary complex from yeast (f32B) with AF predictions for Scc3’s association with Scc1 and full-length Wapl (f24) and full-length Pds5 associated with Scc1N (f38B) revealed a very similar looking quarternary complex (Figure 31B).
 
 ![Figure 23.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig23-v1.jpg)
 
-**Figure 23.:** N Pds5, SA1, and Wapl, created by super-imposing f23, f25, f28, and f39.The Scc1’s NTD points toward, but clashes with the highly conserved cleft in Wapl’s CTD that is otherwise predicted to bind a motif PSCLSVCNVT (conserved among metazoa) located in Wapl’s N-terminal sequences (see Figure 26B).
+**Figure 23.:** The Scc1’s NTD points toward, but clashes with the highly conserved cleft in Wapl’s CTD that is otherwise predicted to bind a motif PSCLSVCNVT (conserved among metazoa) located in Wapl’s N-terminal sequences (see Figure 26B).
 
 As mentioned, in humans and most other metazoa, as well as in many fungi (Figure 12B) and plants, this cleft is predicted to be occupied by a motif (PSCLSVCNVT) within Wapl’s N-terminal sequences (AlphaFold Protein Structure Database: AF-Q7Z5K2-F1). The revelation that Scc1’s NTD is positioned close to this cleft in a putative Pds5:Scc3:Wapl:Scc1 complex suggested that the role of this site might be to sequester Scc1’s NTD following its dissociation from Smc3’s neck. Testing this hypothesis was not possible using a full quarternary complex due to its size. However, predictions of Wapl’s position relative to Pds5’s NTD are in fact similar whether or not Wapl’s CTD is also bound to the SA subunit and we therefore used AF to predict the structure of a complex containing Wapl’s CTD, the first 150 residues of Scc1(Scc1N), and the N-terminal straight section of Pds5 whose spine binds Scc1. All five models predicted with high confidence a ternary complex between Wapl, Pds5, and Scc1N (Figure 24, f42). In three of the five, including ranks 1, 2, and 5, Scc1’s NTD was placed in close vicinity of the Wapl cleft. The most N-terminal (α-1) of its four short helices (α-1, α0, α1, and α2), normally packed on top of the α3 N-terminal helix, dissociates from α3 and binds in the cleft (f42). However, these peripheral associations between Scc1N’s α-1 and Wapl were not predicted with high confidence (f42), did not look convincing, and more seriously, differed in their details between models.
 
 ![Figure 24.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig24-v1.jpg)
 
-**Figure 24.:** N, Pds5’s NTD, and Wapl’s CTD (f42).Chains in the PAEs from f42 are Scc1 (A), Pds5 (B), and Wapl (C).
+**Figure 24.:** Chains in the PAEs from f42 are Scc1 (A), Pds5 (B), and Wapl (C).
 
 To test whether the positioning and hence orientation of Scc1’s NTD through its association with Pds5 hinders its association with Wapl’s CTD, we asked how the latter interacts with Scc1’s NTD alone, that is, when not constrained in space through its association with Pds5 within the rigid body ternary complex. In this case, AF predicts with high confidence and in four out of five models (Figure 25, f34A) that Scc1’s N-terminal helix (α-1) binds the cleft in Wapl’s CTD that otherwise binds Wapl’s own SCLSVCNVT peptide (Figure 26B), while its second helix (α0), lying at 90o to α-1, is sandwiched between two long antiparallel helices that form a pronounced nose at the C-terminal end of Wapl and a second pair that cross over at 45o. AF predicts similar interactions for D. melanogaster (f34B), Caenorhabditis elegans (f34C), and for A. thaliana (f34D). Moreover, a slightly different but clearly related interaction was also predicted for N. crassa (f34E). Remarkably, only modest changes in the conformation of Scc1’s NTD are required to accommodate binding of its α-1 and α0 helices to Wapl’s CTD in this manner, principally a slight bending of α3 to avoid a clash with the pair of Wapl CTD helices that cross its nose. As a consequence, α3 lies on top of and almost parallel with Wapl’s nose and this kind of alignment is presumably why AF failed to predict Wapl’s interaction with Scc1’s α-1 and α0 when Scc1’s NTD is connected to Pds5 when the latter is part of a ternary complex with Wapl (Figure 24, f42). In the latter case, Scc1’s NTD approaches Wapl’s CTD from an angle incompatible with the stereo-specific engagement depicted in Figure 25. Additional AF predictions confirmed that Scc1’s first three mini-helices (α-1, α0, and α1) are sufficient for this type of interaction not only for humans (Figure 26A, f43) but also for D. melanogaster (Figure 26C, f44), for C. elegans (Figure 26D, f45), for the sponge Amphimedon queenslandica (Figure 26E and f46), for the green alga P. salinarum (Figure 26F, f47), and for the vascular plant A. thaliana (Figure 26G, f48). Likewise, despite considerable sequence variation, AF predicted a very similar interaction between Wapl and the equivalent helices of a fragment of human Rec8 containing its first 36 amino acids (Figure 26H, f49).
 
@@ -204,13 +196,13 @@ There are two possible explanations for the conundrum that Scc1’s NTD appears 
 
 ![Figure 28.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig28-v1.jpg)
 
-**Figure 28.:** N(H58A, L59S, G62D, R65A, R69A), Pds5’s NTD, and Wapl’s CTD (f52A).The location of α3 Scc1N mutations that distinguish it from f42 shown in Figure 24 is marked in red. Chains in the PAEs from f52A are Scc1 (A), Pds5 (B), and Wapl (C).
+**Figure 28.:** The location of α3 Scc1N mutations that distinguish it from f42 shown in Figure 24 is marked in red. Chains in the PAEs from f52A are Scc1 (A), Pds5 (B), and Wapl (C).
 
 If sequestration of Scc1’s N-terminal (α-1 and α0) helices by Wapl’s CTD is of physiological importance, then the Wapl residues involved in sequestration should be conserved. This consideration cannot be applied to Scc1’s NTD as it has multiple other functions. Highly conserved (amongst animals) human Wapl surface residues involved in the interaction include N939 and N990, D979 and E1117, which could interact with Scc1[R11], L983 (which could interact with Scc1[L8]), A1112 and H1115 (which could interact with Scc1[W23]), M1116 (whose sulfur atom could interact simultaneously with Wapl[F1165] and Scc1[W18]), and lastly M1166 (which could interact with Scc1[Y3]). Remarkably, several of these residues have been mutated and shown to abrogate Wapl’s RA activity in vivo, namely Wapl(D979K), M1116A, E1117K, and F1165A (Ouyang et al., 2013). In conclusion, sequestration not only helps explain the pattern of conservation but also the physiological consequences of mutating key residues. Crucially, AF predicts that sequestration can also occur when Scc1N and Wapl’s CTD are juxtaposed within a quarternary complex with SA and Pds5 (f52B). Because very similar rigid body ternary complexes are formed between Pds5, Scc3, and Wapl in plants as well as fungi (Figure 23B), the N-terminal helices of their Scc1Ns will be presented to Wapl’s CTD in a similar manner to that observed in humans. It is therefore entirely plausible that the proposed sequestration mechanism applies to cohesin RA in all three kingdoms.
 
 The cleft within Wapl’s CTD putatively bound by Scc1N’s α-1 (from animals, plants, and even certain fungi such as the Sordariales) has previously been highlighted by Chatterjee and co-workers (Chatterjee et al., 2013), who described a crystal structure (PDB 3ZIL) in which the equivalent cleft from the yeast Ashbya gossypii was occupied by a peptide from Smc3’s ATPase domain, a phenomenon that seemed implausible from a structural point of view and has subsequently not been confirmed. A. gossypii, like S. cerevisiae, belongs to the Saccharomycetacae, a group of yeasts in which α-1 is missing, a feature unique amongst eukaryotes, and replaced by a short string of non-conserved residues. In Ashbya’s case, AF predicts that the cleft is bound by α0 instead of α-1 (f58), a feature that might also apply to S. cerevisiae.
 
-## Yeast genetics implies that formation of the canonical Pds5:Scc3:Wapl ternary complex involves multiple steps
+### Yeast genetics implies that formation of the canonical Pds5:Scc3:Wapl ternary complex involves multiple steps
 
 Our AF predictions suggested that formation of canonical rigid body Pds5:Scc3:Wapl ternary complexes in ascomycetes depends on a juxtaposition of Wapl’s CTD and Pds5’s NTD facilitated by Wapl’s TYxxxR[T/S]ΦL motif (Figure 19B), which is essential for RA in vivo. It is, however, curious that despite its clear effect on canonical ternary complex formation and despite highly reproducible AF predictions for the interaction of this motif with Pds5’s APDAP loop using versions of Wapl that lack sequences N-terminal to the motif, AF fails to predict its association with the APDAP loop of full-length yeast Pds5 when Wapl’s entire unstructured N-terminal sequences are present (f19A, f19D). A possible reason for this is that AF robustly predicts that the FNFLD motif within yeast Wapl’s N-terminal sequences binds to the WEST locus situated at the opposite end of Pds5 and the limited distance between the FNFLD and TYxxxR[T/S]ΦL motifs reduces the likelihood of the latter’s interaction with the APDAP loop. Under these circumstances, AF in fact prefers to dock the N-terminal [M/Φ]xxYG[K/R] motif to the APDAP (f19D), possibly because it is further from the FNFLD motif and therefore less restricted by the latter’s association with WEST. How then does association between the APDAP loop and the TYxxxR[T/S]ΦL motif come about? A clue emerges from AF predictions for the interaction between Scc3 and Pds5 in yeast. Unlike humans where there is no direct interaction between SA and Pds5, AF predicts with high confidence in five out of five models an interaction between Scc3’s C-terminal face (Scc3C) and the pronounced protrusion within the middle of Pds5 (Pds5P) (Figure 29A, f54A). Crucially, both surfaces involved are the sites of mutations (Figure 29B) that abrogate RA in vivo, namely R996S and R1043L within Scc3’s C-terminal face and R578I, C599F, and E602K within the face of Pds5P predicted to interact with Scc3C (Rowland et al., 2009). The remarkable congruence between the AF prediction and mutations isolated as spontaneous suppressors of eco1Δ is unlikely to be a coincidence and therefore implies that the interaction must be of physiological importance and necessary for RA, at least in yeast. There is a simple explanation why no such interaction was detected in humans, namely that SA proteins have seven extra HEAT repeats at their C-termini, which means that they lack the Scc3C face that interacts with Pds5P in yeast. These extra repeats are shared by Scc3 orthologs in plants, basal fungi, and basidiomycetes, but lacking in S. pombe and N. crassa as well as S. cerevisiae. AF also predicted, albeit with low confidence a similar association between Scc3C and Pds5P in N. crassa (f54E).
 
@@ -224,17 +216,17 @@ To test this, we used AF to predict the structure created by a fragment of Wapl 
 
 ![Figure 30.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig30-v1.jpg)
 
-**Figure 30.:** S. cerevisiae Scc3, Pds5, and Wapl’s CTD with its associated TYxxxR[T/S]ΦL motif (f54B).Chains in the PAEs from f54B are Wapl (A), Pds5 (B), and Scc3 (C).
+**Figure 30.:** Chains in the PAEs from f54B are Wapl (A), Pds5 (B), and Scc3 (C).
 
 This finding suggests that the Scc3C:Pds5P interaction facilitates juxtaposition of Wapl’s CTD with Pds5’s NTD in manner that would place them close to but not identical to that adopted in the canonical configuration. It also promotes the interaction of Pds5’s APDAP loop with Wapl’s TYxxxR[T/S]ΦL motif that is ultimately necessary for formation of the canonical rigid body Pds5:Scc3:Wapl ternary complex in yeast. However, the latter is not in fact generated because its precise adoption is incompatible with the manner in which the axes of Scc3 and Pds5 are oriented due to their Scc3C:Pds5P interaction. As a consequence, in this alternative state, Scc1N associated with Pds5 is not placed in the position necessary for its sequestration by the cleft in Wapl’s CTD (Figure 31A). For this to occur, the Scc3C:Pds5P interaction must subsequently be broken, which allows Pds5’s axis to rotate in a manner that slots it into the canonical configuration, which then delivers Scc1N to the cleft in Wapl’s CTD (Figure 31B).
 
 ![Figure 31.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig31-v1.jpg)
 
-**Figure 31.:** N, Pds5, Scc3, and Wapl.(A) When formed with Scc3C interacting with Pds5P (f55), created by superimposing f24 and f38B onto f54B. (B) When formed without any interaction between Scc3C and Pds5P (f53), which involves a canonical rigid body Pds5:Scc3:Wapl ternary complex. Model created by super-imposing f24 and f38B onto f32B. A movie showing the transition between (A and B) at https://doi.org/10.6084/m9.figshare.22567525.v1.
+**Figure 31.:** (A) When formed with Scc3C interacting with Pds5P (f55), created by superimposing f24 and f38B onto f54B. (B) When formed without any interaction between Scc3C and Pds5P (f53), which involves a canonical rigid body Pds5:Scc3:Wapl ternary complex. Model created by super-imposing f24 and f38B onto f32B. A movie showing the transition between (A and B) at https://doi.org/10.6084/m9.figshare.22567525.v1.
 
 Though speculative, the scheme has the merit of explaining why Wapl’s TYxxxR[T/S]ΦL motif as well as the Scc3C:Pds5P interaction are essential for RA in yeast but not in animals, and yet RA in both types of organism appears to share the fundamental mechanism, namely delivery of Scc1N to Wapl’s CTD when part of the canonical Pds5:Scc3/SA:Wapl ternary complex. If this mechanism is indeed correct and universal, then we must conclude that not all of the interactions revealed by AF and by yeast genetics can occur simultaneously. The Scc3C:Pds5P interaction is clearly incompatible with formation of the canonical ternary complex and yet the former is essential for RA in yeast. In other words, the proteins involved in RA in yeast must exist in multiple states and the process of release must involve transitions between these that presumably depend on a specific combination of on and off rates for the various interactions involved.
 
-## Yeast genetics and AF suggest a novel function for Smc3(K112) and K113
+### Yeast genetics and AF suggest a novel function for Smc3(K112) and K113
 
 Though our current AF predictions explain many of the existing mutations known to abrogate RA in yeast, as well as providing the first plausible explanation for how Wapl facilitates release, they do not explain how acetylation of Smc3(K112) and K113 by Eco1 in yeast blocks release in a manner that does not require Sororin, nor why release is abrogated by mutations of Smc3’s KKD loop, Smc3(K113T, K113N, K112Q K113Q, and D114Q/Y) and its surroundings Smc3(S75R, R107I/S, G110R/V/W) or by Scc3(D189E) and E202K (Rowland et al., 2009), situated on the N-terminal face of Scc3 (Scc3N). Because it was unclear whether or not Smc3’s KKD loop binds another protein or merely binds DNA, we focused on what proteins might bind Scc3N. Because the predictions described above excluded both Wapl (f24) and Pds5 (f54A), we tested whether Scc3N might bind Smc3’s ATPase domain. Remarkably, AF predicted with high confidence, in the top four ranked models, an interaction between the face of Scc3N containing D189 and E202 and the part of Smc3’s ATPase containing K112 and K113 (Figure 32A, f56A). Not only do both Smc3(K112) and Smc3(K113) participate in the interaction but so does Smc3(S75), whose substitution by R abrogates RA in yeast (Rowland et al., 2009). Again, the striking congruence between the predicted interaction and residues known to be essential for RA implies that the interaction is of physiological importance. We therefore presume that Scc3(D189E) and E202K abrogate RA because they compromise the interaction between Scc3N and Smc3’s KKD loop. Because Scc3(E202K) suppresses the lethality caused by unregulated RA caused by Smc3(K112R, K113R) double mutants as well as eco1Δ (Rowland et al., 2009), we can also be confident that the AF prediction (f56A) recognizes K112 and K113 in their unmodified state. Acetylation of K112 and K113 would presumably also abrogate the interaction in vivo and given that the phenotype of Scc3(D189E) and E202K mutations imply that the interaction is necessary for RA, the AF model finally provides an explanation for how acetylation would be sufficient to block RA in yeast, without any need for Sororin.
 
@@ -248,9 +240,9 @@ Finally, AF predicted a very similar interaction between Scc3N and Smc3’s ATPa
 
 ![Figure 33.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig33-v1.jpg)
 
-**Figure 33.:** Figure 31B.There is a modest clash between Scc1 and the Smc3 coiled coil that would presumably have been avoided if AF were able to predict the entire complex, which is beyond its capability.
+**Figure 33.:** There is a modest clash between Scc1 and the Smc3 coiled coil that would presumably have been avoided if AF were able to predict the entire complex, which is beyond its capability.
 
-## Regulation of release by Smc3 acetylation
+### Regulation of release by Smc3 acetylation
 
 Acetylation of Smc3(K112) and K113 by Eco1 is essential for blocking RA in G2 cells, a process dependent on Pds5 (Chan et al., 2013). How does Eco1 recognize Smc3’s KKD loop and how might Pds5 facilitate this? We therefore asked whether AF can predict how Eco1 binds to Smc3, Pds5, or other cohesin subunits. In two (ranks 1 and 2) out of five models with S. cerevisiae (f67) and in five out of five models with Candida glabrata (f68), AF predicts with high confidence an interaction between yeast Eco1 and Smc3’s ATPase with Scc1’s NTD bound to the coiled coils emerging from it (Figure 34A). Importantly, Eco1 binds in a manner in which Smc3(K113) would enter the enzyme’s catalytic site as observed in a crystal structure of a K106-CoA conjugate bound to xEco2 from Xenopus laevis (PDB: 5N22) (Chao et al., 2017) (f69) (Figure 34B, left). The prediction envisions a very different type of association to that previously proposed on the basis of attempts to dock the acetyl transferase onto Smc3 heads (Chao et al., 2017). AF predicts, again with high confidence, a very similar mode of association between Smc3 and Esco1’s catalytic domain (f70), either in the absence or presence of Scc1’s NTD, and a similar mode of interaction was predicted in the top ranked model for Esco2 (f71).
 
@@ -264,11 +256,9 @@ In addition to predicting binding of Smc3 to the catalytic cleft on the front fa
 
 ![Figure 35.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig35-v1.jpg)
 
-**Figure 35.:** S. cerevisiae Eco1 (A, f75), human Esco1 (B, f22), and human Esco2 (C, f76).
-
 ![Figure 36.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig36-v1.jpg)
 
-**Figure 36.:** N bound to the latter adopts the orientation predicted by AlphaFold 2 (AF) (f36).The model was created by superimposing f36 and f75 via their Pds5 moieties. For Eco1 to bind Smc3 K112 and K113, while still bound to Pds5, the Scc1 sequences between Scc1N α3 and the part bound to Pds5 must bend by 180°, or Scc1’s NTD must dissociate from Smc3.
+**Figure 36.:** The model was created by superimposing f36 and f75 via their Pds5 moieties. For Eco1 to bind Smc3 K112 and K113, while still bound to Pds5, the Scc1 sequences between Scc1N α3 and the part bound to Pds5 must bend by 180°, or Scc1’s NTD must dissociate from Smc3.
 
 Unlike yeast Eco1, Esco1 and Esco2 have long unstructured N-terminal extensions and AF predicts numerous interactions involving specific motifs within these, not only with various cohesin subunits (Figures 13 and 37), but also with the MCM helicase (Figure 38). Thus, in addition to the interaction between Esco1’s catalytic domain and Pds5’s CTD, AF predicts with high confidence and in five out five models, interactions of a highly conserved, partly helical, motif (ILxLCEEIAGEIESD) within Esco1 with the WEST site on both Pds5A (f22) and Pds5B, namely the very same site bound by Wapl’s central FGF motif (Figure 13). Wapl and Esco1 have opposing effects on release and presumably compete for binding.
 
@@ -280,7 +270,7 @@ Unlike yeast Eco1, Esco1 and Esco2 have long unstructured N-terminal extensions 
 
 The theme of competition between Wapl and Esco1/2 is also observed with SA1:Scc1, where AF predicts, albeit with less confidence, that the aforementioned ILxLCEEIAGEIESD helical motif from Esco1 predicted to bind Pds5’s WEST has an affinity also to SA1’s CES, binding orthogonal to SA1’s HEAT repeats, in a manner similar to the first helix from Wapl’s CTD (Figure 37A, f77). More importantly, AF predicts that yet another conserved motif (RFFPSRKxxP[V/L]KC) binds the same groove within the central section of SA1 bound by Wapl (Figure 37A, f77). Like the latter, binding extends across the Scc1 polypeptide. Despite binding to the same locus, the motif has only modest resemblance to the one used by Wapl. Interestingly, a largely unrelated but broadly conserved motif within Esco2’s N-terminal domain is predicted to bind in a similar fashion to the equivalent locus on a SA2:Scc1 complex (Figure 37B, f78). This is adjacent to an even more conserved sequence, the PBM-B motif (GAAFF) required for the recruitment of Xenopus Eco2 (xEco2) to chromatin in a pre-RC dependent manner (Higashi et al., 2012), subsequently postulated to bind cohesin (Ivanov et al., 2018), and predicted by AF to bind as a very short helix to SA2’s C-terminal HEAT repeats (Figure 37B). A second conserved motif (PBM-A) is required for xEco2’s recruitment to chromatin and for its ability to acetylate Smc3 (Higashi et al., 2012). This was subsequently shown by co-immunoprecipitation to bind the MCM helicase. Because analysis of amine-reactive chemical crosslinking using mass spectrometry indicated Mcm4 or Mcm7 as the most likely partners (Ivanov et al., 2018), we used AF to investigate Esco2’s interaction with each of these subunits. No interaction was observed with Mcm4 (f79), but three out of five AF models predicted with high confidence an interaction between PBM-A and Mcm7 (Figure 38, f80). The motif is predicted to form two short helices connected by a conserved loop. The first of these binds to the surface of Mcm7’s CTD while part of the loop together with the second helix is sandwiched between the CTD and a C-terminal winged helical domain that binds the surface of ORC1 and Cdc6 within the pre-RC (Zhai et al., 2017). This interaction together with its PIP box may impart at least some of the S phase specificity of Smc3 acetylation by Esco2.
 
-## Regulation of release by Sororin
+### Regulation of release by Sororin
 
 Though Smc3 acetylation may be sufficient to protect sister chromatid cohesion from Wapl-mediated release in yeast, it is necessary (Nishiyama et al., 2010) but not sufficient in vertebrate, insect, and plant cells, where proteins called Sororins (vertebrates and plants) or Dalmatians (insects) (Mota et al., 2022; Rankin et al., 2005; Yamada et al., 2017) are also required. Sororin is absent from G1 mammalian cells because it is degraded at the hands of APCCdh1 and therefore only accumulates shortly before S phase. However, accumulation alone is insufficient for its interaction with chromosomal cohesin as its association also depends on DNA replication in Xenopus extracts that lack Cdh1 (Nishiyama et al., 2010). Association with cohesin only takes place when Smc3 is acetylated in an S phase-specific manner, largely by Esco2, and on DNA that has actually been replicated, whereupon it is essential for maintaining cohesion between sisters (Ladurner et al., 2016). Sororin is thought to bind to and protect from Wapl only cohesin engaged in cohesion, but whether this is really the case is not known. Importantly, though Smc3 acetylation is necessary for Sororin’s association, it is insufficient and some other change in the state of cohesin that occurs during replication may be necessary. Sororins are largely unstructured and for the most part poorly conserved. Common to all members of the family are C-terminal so called Sororin boxes predicted to contain a short (six turns) α helix and whose consensus in animals is [W/F/Y]xxxΦNxxFxE[A/Φ][E/D]x[F/Y]ELxΦE.
 
@@ -292,11 +282,9 @@ Given that AF failed to predict any association between the C-terminal Sororin b
 
 ![Figure 40.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig40-v1.jpg)
 
-**Figure 40.:** X. laevis (f85), D. rerio (f86), D. melanogaster (f87), T. casaneum (f88), A. thaliana (89), and A. fumigatus (f90).Chains in the PAEs from f84 are Sororin (A), Smc3 (B), Smc3 (C), and Scc1 (D).
+**Figure 40.:** Chains in the PAEs from f84 are Sororin (A), Smc3 (B), Smc3 (C), and Scc1 (D).
 
 ![Figure 41.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig41-v1.jpg)
-
-**Figure 41.:** D. melanogaster (f91), A. thaliana (f92), A. fumigatus (f93), and mouse (f94).
 
 According to all of the AF models, Sororin’s C-terminal α helix straddles Scc1’s most N-terminal helix and the loop connecting its fourth helix to the long α helix that forms a three-helical bundle with the Smc3 coiled coil (Figure 40). Meanwhile, the C-terminal end of the Sororin helix contacts the C-terminal α helix emerging from the Smc3 ATPase just before it forms a coiled coil with its partner from the N-terminal part of the protein, while the terminal 4–5 amino acids straddle a pair of adjacent β sheets. Aromatic residues play a key part in the interface. In vertebrates, a conserved tryptophan (W233 in humans) sits on top of Scc1’s most N-terminal helix, while a pair of highly conserved phenylalanines (F241 and F247) interact with the aforementioned Smc3 α helix, respectively (Figure 40, human rank 1, f84). The nature of Sororin’s interaction with the Smc3:Scc1 interface is not only universal across eukaryotic kingdoms but also helps explain how Sororin hinders release. By binding Scc1’s N-terminal helix, Sororin would prevent its unfolding from Scc1N’s long α3 helix, thereby preventing sequestration occurring even before the NTD has dissociated from Smc3. Perhaps more importantly, by binding over Scc1’s N-terminal helices and simultaneously binding Smc3, Sororin could actually stabilize the interaction between Scc1’s NTD and the Smc3 neck, thereby thwarting any subsequent sequestration of its N-terminal helices by Wapl. Such stabilization might also prevent the distortions in Smc3’s neck produced by simultaneous head engagement and joint junction, thereby preventing such an event. Despite these insights, AF predictions provided no clues with regards to the role of Smc3 acetylation.
 
@@ -308,13 +296,13 @@ To test this, we asked AF to predict the interaction between Sororin and an N-te
 
 ![Figure 43.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig43-v1.jpg)
 
-## Interactions between Scc2/Nipbl and Scc3/SA
+### Interactions between Scc2/Nipbl and Scc3/SA
 
 One of the key insights revealed here by AF is the canonical rigid body association between SA and Pds5 induced by their simultaneous association with Wapl’s CTD (Figure 16). According to AF, SA and Pds5 do not otherwise interact directly and only do so in the presence of Wapl. We note, however, that the yeast orthologs do so via their Scc3C:Pds5P interaction (Figure 29). In the course of investigating their association, we used AF to undertake a more systematic investigation of how cohesin’s three HAWK subunits interact. Similar to SA/Scc3, AF also predicted no interaction between Nipbl/Scc2 and Pds5. In contrast, it predicted with high confidence and in five out five models a pair of simultaneous interactions between full-length versions of SA and Nipbl (Figure 44A, f96). One of these interactions is identical to that observed in a cryo-EM structure of the clamped state (Figure 44C, PDB 6WG3; Shi et al., 2020) and involves interactions between Nipbl helices next to its N-terminal protrusion and the outside surface of SA where there is a twist in the alignment of its antiparallel HEAT repeats at the point where the protein starts to bend. The second region of interactions has not hitherto been observed and involves an interaction between helices at the point where Nipbl starts to bend (on its outer surface) and the antiparallel helices that make up SA’s pronounced ‘nose.’ An identical pair of interactions were predicted for the orthologous proteins from A. thaliana (Figure 44B, f97).
 
 ![Figure 44.](https://cdn.elifesciences.org/articles/88656/elife-88656-fig44-v1.jpg)
 
-**Figure 44.:** A, f96), A. thaliana (B, f97),and S. cerevisiae (D, f98); (C) cryo-EM structure PDB 6WG3.Chains in the PAEs from f96 are Nipbl (A) and SA (B). Chains in the PAEs from f98 are Scc2 (A)and Scc3 (B).
+**Figure 44.:** Chains in the PAEs from f96 are Nipbl (A) and SA (B). Chains in the PAEs from f98 are Scc2 (A)and Scc3 (B).
 
 In contrast, AF predicted only the nose interaction for yeast Scc2 and Scc3 (Figure 44D, f98). In this case, the residues involved are highly conserved on both the Scc3/SA (Scc3: Q323, E327 and SA1: Q165, E169) and Scc2/Nipbl (Scc2: P958, Y959 and Nipbl: P2029, Y2030) sides of the interface and the interaction is therefore in all probability of physiological importance. Apart from microsporidians (Roig et al., 2014), where it is absent, the nose is a highly conserved feature of Scc3/SA orthologs. Its deletion is lethal in yeast (Roig et al., 2014), but its function has hitherto remained obscure. It is interesting that the interaction between SA’s nose and Nipbl was not observed in the PDB 6WG3 cryo-EM structure (Shi et al., 2020). This is probably because it would have been incompatible with DNA binding to Nipbl. Now that AF has revealed the details of the interaction, it will be possible to create specific mutations that affect it and thereby address whether the interaction is necessary either for LE or for DNA entrapment within S-K rings, both in vitro and in vivo.
 
@@ -342,4 +330,47 @@ The WAPL deletions were introduced into the genome of S. cerevisiae using CRISPR
 
 The ability of the EGFP-tagged WAPL mutations to suppress eco1Δ lethality was tested by crossing them with strain KN16432, which carries deletions of both ECO1 and WAPL. Dissection of 18 tetrads from crosses involving WAPLΔ208–215 yielded 60 viable spores, of which 27 carried eco1Δ. Of these, 15 carried the waplΔ and 12 the WAPLΔ208–215 mutation. Thus, WAPL Δ208–215 was as effective as waplΔ in suppressing eco1Δ lethality and this allele is therefore defective in RA. In contrast, dissection of 18 tetrads from crosses involving WAPLΔ4–9 yielded 49 viable spores of which 16 carried eco1Δ. Of these, all 16 carried waplΔ. Thus, WAPLΔ4–9 cannot suppress eco1Δ lethality and is therefore proficient for RA. Separate experiments demonstrated that WAPLΔ208–215 suppressed eco1Δ when untagged or tagged with PK9 while WAPLΔ4–9 never did so. Mutation of both motifs (Δ4–9 Δ208–215) also suppressed eco1Δ lethality as did an allele in which the TYxxxR[T/S]ΦL motif (YGKKRTIL) was inserted at Δ4–9 (creating the sequence MRAYGKKRTILVLR) within Δ4–9 Δ208–215. In other words, the TYxxxR[T/S]ΦL motif does not appear to function when placed at Wapl’s N-terminus, namely when further from its CTD.
 
-## Yeast strains
+### Yeast strains
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain number</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KN18714</td>
+      <td>Mat a, Wapl-EGFP::His</td>
+    </tr>
+    <tr>
+      <td>KN24262</td>
+      <td>Mat a, wapl(Δ4–9)-EGFP::His</td>
+    </tr>
+    <tr>
+      <td>KN24060</td>
+      <td>Mat a, wapl(Δ208–215)-EGFP::His</td>
+    </tr>
+    <tr>
+      <td>KN24224</td>
+      <td>Mat a, wapl(Δ208–215)-EGFP::His, eco1::NatMx</td>
+    </tr>
+    <tr>
+      <td>KN16432</td>
+      <td>Mat alpha, eco1::NatMx, wapl::HphMx</td>
+    </tr>
+    <tr>
+      <td>KN26163</td>
+      <td>Mat a, wapl(Δ208–215), eco1::NatMx</td>
+    </tr>
+    <tr>
+      <td>KN25817</td>
+      <td>Mat a, wapl(Δ208–215)-PK9::NatMX, eco1::HphMx</td>
+    </tr>
+    <tr>
+      <td>KN25168</td>
+      <td>Mat alpha, eco1::HphMx, leu2::Eco1p-Eco1::LEU2</td>
+    </tr>
+  </tbody>
+</table>

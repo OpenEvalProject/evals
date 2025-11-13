@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02crff812 Department of Biology and Zürich-Basel Plant Science Center Zürich Switzerland
-2. https://ror.org/035b05819 Department for Plant and Environmental Sciences, University of Copenhagen Copenhagen Denmark
-3. https://ror.org/05a28rw58 Department of Environmental Systems Science, ETH Zürich Zurich Switzerland
-4. https://ror.org/02crff812 Institute of Plant and Microbial Biology and Zürich-Basel Plant Science Center, University of Zürich Zürich Switzerland
-5. https://ror.org/011q66e29 Centro de Biotecnología y Genómica de Plantas, Universidad Politécnica de Madrid (UPM) – Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA/CSIC) Pozuelo de Alarcón Spain
+1. Department of Biology and Zürich-Basel Plant Science Center Zürich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+2. Department for Plant and Environmental Sciences, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+3. Department of Environmental Systems Science, ETH Zürich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+4. Institute of Plant and Microbial Biology and Zürich-Basel Plant Science Center, University of Zürich Zürich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+5. Centro de Biotecnología y Genómica de Plantas, Universidad Politécnica de Madrid (UPM) – Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria (INIA/CSIC) Pozuelo de Alarcón Spain ([ROR:011q66e29](https://ror.org/011q66e29))
 
 † Corresponding author
 
 ## Abstract
 
-Purinergic signaling activated by extracellular nucleotides and their derivative nucleosides trigger sophisticated signaling networks. The outcome of these pathways determine the capacity of the organism to survive under challenging conditions. Both extracellular ATP (eATP) and Adenosine (eAdo) act as primary messengers in mammals, essential for immunosuppressive responses. Despite the clear role of eATP as a plant damage-associated molecular pattern, the function of its nucleoside, eAdo, and of the eAdo/eATP balance in plant stress response remain to be fully elucidated. This is particularly relevant in the context of plant-microbe interaction, where the intruder manipulates the extracellular matrix. Here, we identify Ado as a main molecule secreted by the vascular fungus Fusarium oxysporum . We show that eAdo modulates the plant’s susceptibility to fungal colonization by altering the eATP-mediated apoplastic pH homeostasis, an essential physiological player during the infection of this pathogen. Our work indicates that plant pathogens actively imbalance the apoplastic eAdo/eATP levels as a virulence mechanism.
+Purinergic signaling activated by extracellular nucleotides and their derivative nucleosides trigger sophisticated signaling networks. The outcome of these pathways determine the capacity of the organism to survive under challenging conditions. Both extracellular ATP (eATP) and Adenosine (eAdo) act as primary messengers in mammals, essential for immunosuppressive responses. Despite the clear role of eATP as a plant damage-associated molecular pattern, the function of its nucleoside, eAdo, and of the eAdo/eATP balance in plant stress response remain to be fully elucidated. This is particularly relevant in the context of plant-microbe interaction, where the intruder manipulates the extracellular matrix. Here, we identify Ado as a main molecule secreted by the vascular fungus Fusarium oxysporum. We show that eAdo modulates the plant’s susceptibility to fungal colonization by altering the eATP-mediated apoplastic pH homeostasis, an essential physiological player during the infection of this pathogen. Our work indicates that plant pathogens actively imbalance the apoplastic eAdo/eATP levels as a virulence mechanism.
 
 ## Introduction
 
@@ -37,31 +37,183 @@ Fusarium oxysporum (Fo) is one of the plant pathogenic fungi whose capacity to i
 
 ## Results
 
-## Fo5176 secretes Ado that seems to counteract eATP-induced plant defense
+### Fo5176 secretes Ado that seems to counteract eATP-induced plant defense
 
 We recently showed that a Fo5176 elicitor mix regulates the growth-defense balance in plants (Kesten et al., 2019). To identify the molecules in the elicitor mix involved in this response, we performed a bioassay-guided fractionation, using a C18 solid phase cartridge with a 10% step gradient of a water:methanol solvent system followed by HPLC on a semiprep C18 column. This approach yielded a purified active component that we identified as adenosine (Ado) by standard 1D and 2D NMR (Table 1) and high-resolution mass spectrometry. Comparison of its retention time and mass data to a pure commercial standard, confirmed that Ado is a main component of elicitor mixes generated from in vitro-grown Fo5176 (Figure 1A ). We then asked whether the fungus secretes this potential new elicitor during plant infection. As the plant or fungal origin of the extracellular Ado (eAdo) present in the host apoplast cannot be distinguished, we tested the expression of genes required for hydrolysis and secretion of eAdo, ENT, and 5’NT, respectively, in the host and the intruder during their interaction. Both FoENT and Fo5’NT were significantly upregulated during root colonization (Figure 1B and C), while the expression of the Arabidopsis’ homologs was not altered by the presence of the fungus (Figure 1—figure supplement 1). These data are supported by the identification of Fo5’NT protein (g8638) in the secretome of Fo5176-infected roots of hydroponically grown Col-0 plants (Gámez-Arjona et al., 2022), indicating that Fo5176 might indeed secrete Ado to the apoplast while colonizing plant roots.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overlayed LC-MS extracted ion chromatograms of blank (red), adenosine (green), plant and fungus (blue).Overlayed LC-MS extracted ion chromatogram of blank (black), 250 ng adenosine (blue), fungi (red), plant (gray), plant and fungi (green) (B) and (C) Fo5’NT (B) and FoENT (C) expression relative to FoTub in hydroponically-grown Arabidopsis roots at various days post treatment (dpt) with Fo spores. Values are mean ± SEM, N≥20, Welch’s unpaired t-test: (B) 1 dpt vs. 4 dpt: * p-value ≤0.05, 1 dpt vs. 6 dpt: ** p-value ≤0.01; (C) 1 dpt vs. 6 dpt: * p-value ≤0.05. (D) Cumulative Fo5176 pSIX1::GFP root vascular penetrations in wild-type (Col-0) seedlings at different days post-transfer to plates containing ½ MS (control) and 1 mM Ado and/or 0.5 mM ATP. Values are mean ± SEM, N≥52 from three independent experiments. RM two-way ANOVA with Tukey post-hoc test on control vs. 0.5 mM ATP: p≤0.001 (treatment), p≤0.001 (time), p≤0.0001 (treatment x time). Significant differences compared to control (black asterisk) and 500 µM ATP (blue asterisks) at 7 dpt are indicated on the graph (Tukey test); statistics of remaining time points are summarized in Supplementary file 2. (E) Representative images of Col-0 seedlings at 7 dpt to mock (left) or Fo5176 pSIX1::GFP (right) plates. Scale bar = 1 cm. (F) Root growth of plants as shown in (E) at different days post transfer to mock or Fo5176 pSIX1::GFP-containing plates. Values are mean ± SEM, N≥52 roots from three independent experiments, RM two-way ANOVA p (treatment, time, treatment x time): control vs 500 µM ATP (≤0.0001, ≤0.0001, ≤0.0001); control vs 500 µM ATP +1 mM Ado (≤0.0001, ≤0.0001, ≤0.0001); control infected vs 500 µM ATP infected (≤0.0001, ≤0.0001, ≤0.001); control infected vs 500 µM ATP +1 mM Ado-infected (≤0.0001, ≤0.0001, ≤0.0001). (G) Colony diameters of Fo5176 grown for 4 days on plates containing ½ MS (control) and 1 mM Ado and/or 0.5 mM ATP. Values are mean ± SEM, N=4, Welch’s unpaired t-test control vs 0.5 mM ATP: **** p-value ≤0.0001; control vs. 0.5 mM ATP +1 mM Ado: **** p-value ≤0.0001. Scale bar = 1 cm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** ENT3 and NSH3 expression relative to AtGAPDH in hydroponically-grown Arabidopsis roots at the respective days post treatment with Fo5176 spores or with control media (Mock). Values are mean ± SEM, N≥3.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Cumulative Fo5176 pSIX1::GFP vascular penetrations per root in 8-day-old Col-0 plants at different days post transfer to plates with fungal spores alone (control), or with ATP (A) or ATP +Ado (B). Values are mean ± SEM, N≥63 from three independent experiments. RM two-way ANOVA P (genotype, time, genotype x time) on (A) control vs. 300 µM ATP (≤0.05, ≤0.0001, ≤0.05); control vs. 500 µM ATP (≤0.05, ≤0.0001, ≤0.0001); (B) control vs. 500 µM ATP (≤0.01, ≤0.0001, ≤0.0001); control vs. 500 µM ATP +500 µM Ado (≤0.01, ≤0.0001, ≤0.001). Significant differences compared to control at 7 dpt are indicated on the graph (Tukey test); statistics of remaining time points are summarized in Supplementary file 2.
+
+**Table 1.**
+ NMR data of Ado.The chemical shifts of 1H and 13C found in Ado. Blanks are heteroatoms in the main chain. Selected COSY and HMBC correlations are included to demonstrate linkage.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Atom</th>
+      <th>δ13C</th>
+      <th>δ1H</th>
+      <th>HMBC</th>
+      <th>COSY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>152.4</td>
+      <td>1H 8.13 (s)</td>
+      <td>4, 6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>149.1</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>119.1</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>156.1</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>139.7</td>
+      <td>1H 8.34 (s)</td>
+      <td>4, 5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1'</td>
+      <td>90.8</td>
+      <td>1H 5.95 (d, J=3.9Hz)</td>
+      <td>4, 8, 2'</td>
+      <td>2'</td>
+    </tr>
+    <tr>
+      <td>2'</td>
+      <td>81.1</td>
+      <td>1H 4.52 (dd, J=6.3, 3.9 Hz)</td>
+      <td></td>
+      <td>1', 3'</td>
+    </tr>
+    <tr>
+      <td>3'</td>
+      <td>77.1</td>
+      <td>1H 4.22 (dd J=6.3, 3.8 Hz)</td>
+      <td></td>
+      <td>2', 4'</td>
+    </tr>
+    <tr>
+      <td>4'</td>
+      <td>87.7</td>
+      <td>1H 3.93 (q J=3.8 Hz)</td>
+      <td></td>
+      <td>3', 5'</td>
+    </tr>
+    <tr>
+      <td>5'</td>
+      <td>62.4</td>
+      <td>1H 3.61 (m), 1H 3.50 (m)</td>
+      <td></td>
+      <td>5', 4'</td>
+    </tr>
+  </tbody>
+</table>
+
 Considering the biochemical relation between Ado and ATP and the reported role of eATP in plant immunity (Chen et al., 2017; Cao et al., 2014; Kumar et al., 2020), we tested the putative influence of eAdo on ATP-induced plant defense. Thus, we first investigated if the plant response to Fo5176 is eATP-dependent by exposing the plants to different concentrations of ATP (10 µM to 500 µM) while infected by Fo5176, as described previously (Kesten et al., 2019; Huerta et al., 2020). Indeed, 300–500 µM ATP significantly reduced Fo5176 vascular colonization (Figure 1—figure supplement 2). To assess the effect of eAdo on ATP-induced plant defense, we exposed the roots to 500 µM ATP and Ado in equimolar to doubled concentrations of ATP (Figure 1—figure supplement 2). Plants treated with 1 mM Ado and 500 µM eATP were indistinguishable from control plants regarding vascular penetrations by Fo5176 (Figure 1D and S2B). Ado on its own did not have any detectable effect on fungal vascular penetration under our experimental conditions, indicating that Ado plays an important role in the plant eATP signaling regulation (Figure 1D). Importantly, eATP-induced root and fungal growth inhibition was not recovered by the addition of Ado (Figure 1E–G). These results indicate that the plant response to Ado is ATP-dependent and implicate a mechanism in which eAdo interferes with eATP-induced plant defense responses that is not based on plant- or fungal-growth retardation.
 
-## Plants impaired in ATP sensing or with high eAdo/eATP levels are more susceptible to Fo5176
+### Plants impaired in ATP sensing or with high eAdo/eATP levels are more susceptible to Fo5176
 
 To further test the role of Fo-secreted Ado (Figure 1A–C) interfering with eATP during plant-pathogen interaction, we aimed at creating fungal mutants lacking FoE5’NT and FoENT. Although more than 165 potential transformants showed successful insertion of the resistance cassette into the fungal genome, none of them were knock-out mutants of the target genes, that is the cassette was inserted off-target. This indicates the importance of these genes for fungal viability and the very possible lethality of FoΔE5’NT and FoΔENT mutants. As manipulating the fungal eAdo levels was not successful, we addressed the influence of eAdo/eATP on plant-pathogen interactions from the plant’s side using an Arabidopsis mutant altered in this ratio (ent3nsh3) (Daumann et al., 2015) or eATP sensing (dorn1) (Choi et al., 2014a). Double mutant ent3nsh3 plants showed an increased susceptibility to fungal colonization, while the single mutant ent3 was not significantly affected in its response to the pathogen (Figure 2A). Lack of DORN1 caused an increased fungal vascular penetration rate (Figure 2A), underlining the role of eATP as a DAMP in Arabidopsis-Fo5176 interaction and confirming previous data (Kumar et al., 2020). Compared to Fo5176-treated WT, dorn1 and ent3 plants showed significantly increased primary root growth over time, while ent3nsh3 did not differ substantially from WT, despite its higher infection numbers (Figure 2B and C). These data indicate that the anticipated elevated apoplastic Ado/ATP ratio in enth3nsh3 (Daumann et al., 2015) might have a main role in enhancing plant colonization by Fo5176. To test this hypothesis, we measured both soluble Ado and ATP levels in the media of hydroponically grown plants in control and Fo5176-infected conditions, as proxy for the levels of those molecules in the apoplast. As expected, the growth media of infected ent3nsh3 plants showed significantly elevated Ado levels in comparison to mock treatments, which were not observed in WT or dorn1 plants (Figure 2—figure supplement 1). In addition, we observed significantly lower amounts of ATP in ent3nsh3 mock-media compared to all other tested genotypes (Figure 2—figure supplement 1), indicating that this mutant has a higher eAdo/eATP ratio than WT in control conditions that is preserved upon Fo5176 infection due to the increase on eAdo (Figure 2D).
 
-## eAdo increases the rapid ATP-induced transient cytosolic Ca2+ peak
+![Figure 2.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cumulative Fo5176 pSIX1::GFP root vascular penetrations in wild-type (WT; Col-0), dorn1, ent3, and ent3nsh3 seedlings at different days post-transfer (dpt) to spore-containing plates. Values are mean ± SEM, N≥94 from three independent experiments. RM two-way ANOVA P (treatment, time, treatment x time) on WT vs. dorn1 (≤0.05,≤0.0001,≤0.05); WT vs. ent3nsh3 (≤0.0075,≤0.0001,≤0.0061). Significant differences compared to WT plants at 7 dpt are indicated on the graph (Tukey test); statistics of remaining time points are summarized in Supplementary file 2. (B) Representative images of 8-day-old mock or Fo5176 pSIX1::GFP infected plants as indicated in (A) at 7 days post-transfer to plates containing Fo5176 pSIX::GFP spores. Scale bar = 1 cm. (C) Root growth of plants indicated in (B) at different days post transfer to mock or Fo5176 pSIX1::GFP-containing plates. Values are mean ± SEM, N≥79 from three independent experiments, RM two-way ANOVA P (genotype, time, genotype x time): WT vs. dorn1 (≤0.01,≤0.0001,≤0.001); WT vs. ent3 (≤0.0001,≤0.0001,≤0.0001); WT vs. ent3nsh3 (≤0.0001,≤0.0001,≤0.05); WT infected vs. dorn1 infected (≤0.0001,≤0.0001,≤0.0001); WT infected vs. ent3 infected (≤0.05,≤0.0001,≤0.05). (D) Ado/ATP ratio content in media from 10 days-old hydroponically-grown wild-type (WT; Col-0), dorn1, and ent3nsh3 seedlings at 4 days after transfer to media with (+Fo5176) and without (Mock) Fo5176 spores, and in media where Fo5176 was growing alone for 4 days (Fo5176). Values are mean ± SEM, N≥3 biological replicates, Welch’s unpaired t-test in respect to their mock (black) or among genotypes (blue): * p-value ≤0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Ado (left panel) and ATP (right panel) content in the media from 10 days old hydroponically grown wildtype (WT, Col-0), dorn1 and ent3nsh3 seedlings at four days after transfer to media with and without Fo5176 spores and media of four days Fo5176 growth alone. Values are mean ± SEM, N≥3 biological replicates, Welch’s unpaired t-test in respect to their mock (black) or among genotypes (blue): * p-value ≤0.05.
+
+### eAdo increases the rapid ATP-induced transient cytosolic Ca2+ peak
 
 To molecularly characterize the high susceptibility of dorn1 and ent3nsh3 to Fo5176, we explored earlier cellular immune responses, starting with the eATP-induced cytosolic Ca2+ (cytoCa2+) peak (Choi et al., 2014a). Employing the ratiometric cytoCa2+ sensor R‐GECO1‐mTurquoise (Waadt et al., 2017), we first determined the minimal ATP concentration that led to a consistent increase of intracellular Ca2+ in the meristematic and elongation zone of Arabidopsis WT roots. 10 µM ATP were enough to consistently induce a cytoCa2+ peak (Figure 3A and B), as previously reported (Demidchik et al., 2003). After introgressing R‐GECO1‐mTurquoise into both mutant lines, we found that addition of ATP to ent3nsh3 led to a Ca2+ spike in the first 3 min, 1.5 times higher than that detected in WT, which decays to WT levels, indicating that an increased eAdo/eATP proportion might modulate rapid eATP-induced responses (Figure 3A–D). Consistent with the role of DORN1 as the main eATP receptor, we detected no cytoCa2+ peak in dorn1 upon ATP treatment (Figure 3E and F). Next, we investigated if the external addition of Ado can interfere with this signaling process by testing various Ado concentrations (Figure 3—figure supplement 1). While Ado did not induce any changes in the cytoCa2+ levels up to a concentration of 200 µM, we detected that Ado enhanced the eATP-induced cytoCa2+ spike transiently when the ATP:Ado ratio was at least 1:5 (Figure 3B). The cytoCa2+ spike did not further increase in response to higher eATP:eAdo ratios (Figure 3—figure supplement 1). Accordingly, the high eATP-induced cytoCa2+ peak observed in ent3nsh3 did not further increase by adding Ado (Figure 3C and D; Figure 3—figure supplement 1). These data indicate that chemical or genetic enhancement of eAdo/eATP rapidly increases the eATP-induced transient cytoCa2+ peak up to a certain eATP:eAdo concentration ratio. Moreover, we observed that eAdo could not alter the lack of response of dorn1 to ATP (Figure 3E and F; Figure 3—figure supplement 1), confirming that the plant response to Ado is ATP-dependent.
 
-## eAdo alters the ATP-induced apoplast alkalization
+![Figure 3.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig3-v2.jpg)
+
+**Figure 3.:** (A), (C), and (E) Representative images of five-days-old wild-type (WT; Col-0; A), ent3nsh3 (C) and dorn1 (E) roots expressing the cytoCa2+ sensor, R-GECO1-mTurquoise –180 s before and 100 s after being exposed to ATP (upper panels) or ATP +Ado (bottom panels). Heatmaps indicate signal intensity (arbitrary units). Scale bar = 125 μm. (B), (D), and (F) cytoCa2+ in roots as in (A), (C), and (E) represented as normalized fluorescence intensity changes (ΔF:F) of R-GECO1: mTurquoise. Imaging started 180 s before either ATP or ATP +Ado was added (0 min; arrow head). Values are means ± SEM, N≥18 from three independent experiments. RM two-way ANOVA P (treatment, time, treatment x time): (B) control vs. 10 μM ATP (≤0.0001,≤0.01,≤0.0001); control vs. 10 μM ATP +50 μM Ado (≤0.0001,≤0.01,≤0.0001); 10 μM ATP vs. 10 μM ATP +50 μM Ado (≤0.0001,≤0.0001,≤0.0001); (D) control vs. 10 μM ATP (≤0.0001,≤0.0001,≤0.0001); control vs. 10 μM ATP +50 μM Ado (≤0.0001,≤0.01,≤0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Five-day-old RGECO-mTurquoise fluorometric calcium reporter line seedlings were imaged in ½ MS (−180–0 s)s. At 0 min, either ATP or ATP +Ado at the indicated concentrations were added ΔF:F represents the relative signal compared to the averaged baseline recorded prior to application (arrow). RM two-way ANOVA P (treatment, time, treatment x time): (A) control vs. 10 μM ATP (≤0.0001,≤0.01,≤0.0001); control vs. 10 μM ATP +10 μM Ado (≤0.0001,≤0.01,≤0.0001); (B) 100 μM Ado vs. 10 μM ATP (0.0001,≤0.05,≤0.0001); 100 μM Ado vs. 10 μM ATP +100 μM Ado (≤0.0001,≤0.05,≤0.0001); 10 μM ATP vs. 10 μM ATP +100 μM Ado (≥0.05,≤0.0001,≤0.0001); (C) 200 μM Ado vs. 10 μM ATP (≤0.0001,≤0.01,≤0.0001); 200 μM Ado vs. 10 μM ATP +200 μM Ado (≤0.0001,≤0.01,≤0.0001); 10 μM ATP vs. 10 μM ATP +200 μM Ado (≥0.05,≤0.0001,≤0.0001); (E) 200 μM Ado vs. 10 μM ATP (≤0.0001,≤0.01,≤0.0001); 200 μM Ado vs. 10 μM ATP +200 μM Ado (≤0.0001,≤0.001,≤0.0001); (F) control vs. 10 μM ATP (≤0.0001,≤0.001,≤0.0001); control vs. 10 μM ATP +10 μM Ado (≤0.0001,≤0.01,≤0.0001); Maximum amplitudes (D), (G) correspond to (A) - (C) and (B) (WT) respectively (E), (F) and (D) (ent3nsh3). N≥13 from three independent experiments. Welch’s unpaired t-test in respect to control (black) or to ATP alone (blue): * p-value ≤0.05, ** p-value ≤0.01.
+
+### eAdo alters the ATP-induced apoplast alkalization
 
 Exogenous application of ATP induces apoplast alkalization, as part of the fast plant response to DAMPs (Wu et al., 2008; Hao et al., 2012). Hence, we investigated if, as we observed for the cytoCa2+ peak, eAdo also influences the ATP-dependent apoplastic pH (pHapo) changes. By imaging the ratiometric pHapo sensor SYP122-pHusion (Kesten et al., 2019) in WT roots, we confirmed that the apoplast alkalizes in response to the same ATP concentration required to induce a cytoCa2+ peak (10 µM; Figure 4—figure supplement 1), which we used concurrently for all further experiments. Analogous to the effect on cytoCa2+ levels, Ado did not affect the pHapo on its own even at concentrations of 200 µM, while it altered the plant response when combined with eATP starting at 1:5 eATP:eAdo ratio (Figure 4 and S5). eAdo concentrations up to 50 µM counteracted the eATP-induced apoplast alkalization, while 200 µM eAdo enhanced the eATP-dependent pHapo peak (Figure 4A and B, Figure 4—figure supplement 1A). On the other hand, ent3nsh3 mutants showed comparable pHapo response to ATP as observed in WT roots, a response that was not altered by the Ado treatment (Figure 4C and D, Figure 4—figure supplement 1B). These results indicate that the high eAdo/eATP ratio in ent3nsh3 apoplast cannot alter the plant response to eATP regarding pHapo changes but block the effect of exogenous Ado. In this context, it has to be highlighted that ent3nsh3 mutants already show an elevated apoplastic pH under physiological conditions (pH = 6.00) in comparison to WT (pH = 5.54) (Figure 4—figure supplement 1D). Unexpectedly, dorn1 responded to eATP with a slight, but significant, pHapo decrease that was restored to control levels by eAdo (Figure 4E and F; Figure 4—figure supplement 1C). Our data indicate that ATP induces a DORN1-independent apoplastic acidification, which seems to be counteracted by eAdo. Moreover, dorn1 roots also showed a more alkaline apoplast than WT under control conditions, as detected in ent3nsh3 (Figure 4—figure supplement 1D), hinting at a disturbed proton homeostasis in both mutants.
 
-## The expression of Arabidopsis defense genes in response to Fo5176 is eATP/eAdo-dependent
+![Figure 4.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig4-v2.jpg)
+
+**Figure 4.:** (A), (B), (C), (D), (E), and (F) Apoplastic pH over time in roots expressing the pHapo sensor SYP122-pHusion represented as the relative signal compared to the averaged baseline recorded prior to treatments (ΔF:F).Imaging started 270 s before either ATP or ATP +Ado was added (0 s; arrow head). Values are mean ± SEM; N≥12 seedlings from three independent experiments. RM two-way ANOVA, P (treatment, time, treatment x time) on (A) control vs. 10 μM ATP (≤0.0001,≤0.0001,≤0.0001); 10 μM ATP vs. 10 μM ATP +50 μM Ado (≥0.05,≤0.0001,≤0.05); (B) 200 μM Ado vs. 10 μM ATP +200 μM Ado (≤0.05,≤0.001,≤0.0001); 10 μM ATP vs. 10 μM ATP +200 μM Ado (≤0.01,≤0.01,≤0.0001); 200 μM Ado vs. 10 μM ATP (≤0.05,≤0.001,≤0.0001); (C) control vs. 10 μM ATP (≤0.05,≤0.0001,≤0.0001); control vs. 10 μM ATP +50 μM Ado (≤0.05,≤0.0001,≤0.0001); ATP vs. 10 μM ATP +50 μM Ado (≤0.01,≤0.0001,≤0.0001); (D) 200 μM Ado vs. 10 μM ATP (≥0.05,≤0.0001,≤0.0001); 200 μM Ado vs. 10 μM ATP +200 μM Ado (≥0.05,≤0.0001,≤0.0001); 10 μM ATP vs. 200 μM Ado +10 μM ATP; (E) control vs. 10 μM ATP (≤0.001,≤0.0001,≤0.0001); (F) 200 μM Ado vs. 10 μM ATP (≥0.05,≤0.001,≤0.01).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Five-day-old fluorometric SYP122-pHusion pH reporter lines were imaged in ½ MS pH 5.75 (−270–0 s) with SP8 microscope. At 0 sec, either ATP or ATP +Ado at the indicated concentrations were added. (A), (B) and (C) correspond to Figure 4B, (C), (E), (F), (H), (I) and display the averaged maximal amplitude of each curve. (D) Apoplastic pH was determined using standard curves. Values are mean ± SEM, N≥16 from three independent experiments, Welch’s unpaired t-test in respect to control or wild-type (black) or to ATP alone (blue): * p-value ≤0.05, ** p-value ≤0.01 **** p-value ≤0.0001.
+
+### The expression of Arabidopsis defense genes in response to Fo5176 is eATP/eAdo-dependent
 
 To further investigate the influence of Fo5176 on the activation of eATP/eAdo-dependent plant immune responses, we measured the expression of four defense-related genes upon Fo5176 infection. In agreement with the function of eATP as DAMP, DORN1 expression increased in WT infected-roots but was significantly downregulated in ent3nsh3 mutant plants upon Fo5176 colonization (Figure 5). The expression of three genes previously reported to be activated in Fo5176-infected Arabidopsis roots; WRKY45, WRKY53, and At1g51890 Masachis et al., 2016; Kesten et al., 2019; Gámez-Arjona et al., 2022 followed a similar pattern as they were all upregulated in response to Fo5176 in WT plants but not in dorn1 or ent3nsh3 mutants (Figure 5). These data confirm that Fo5176 induces a eATP/eAdo-dependent plant immune response that might explain the high susceptibility of dorn1 and ent3nsh3 mutants to the fungus.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/92913/elife-92913-fig5-v2.jpg)
 
-**Figure 5.:** DONR1, WRKY45, WRKY53, and At1g51890 expression relative to AtGAPDH in WT (Col-0), dorn1, or ent3nsh3 roots 4 days post-treatment with Fo5176 spores or with control media (Mock).Values are mean ± SEM, N≥3 biological replicates, Welch’s unpaired t-test within each genotype in respect to their mock (black) or among genotypes (blue); * p-value ≤0.05, ** p-value ≤0.01.Figure 5—source data 1.
+**Figure 5.:** Values are mean ± SEM, N≥3 biological replicates, Welch’s unpaired t-test within each genotype in respect to their mock (black) or among genotypes (blue); * p-value ≤0.05, ** p-value ≤0.01.
 
 ## Discussion
 
@@ -79,58 +231,58 @@ Our data suggest that Ado could act as an antagonist and compete with ATP over t
 
 ## Materials and methods
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 All Arabidopsis thaliana lines were in Col-0 background. The pHapo sensor line pub10::SYP122-pHusion, the calcium sensor line pub10::R-GECO1-mTurquoise, dorn1-3, ent3-1 and ent3nsh3 were published previously (Choi et al., 2014a; Daumann et al., 2015; Kesten et al., 2019; Waadt et al., 2017). Seedlings throughout all experiments were grown upright on solid, non-buffered half MS media (pH 5.75) at 24 °C with a photoperiod of 16 hr for the indicated timeframes.
 
-## Fungal material and growth conditions
+### Fungal material and growth conditions
 
 Fusarium oxysporum Fo5176 and Fusarium oxysporum Fo5176 pSIX::GFP were used throughout this study. Strain culture and storage were performed as described earlier (Di Pietro et al., 2001). Fo5176 was grown in liquid half potato dextrose broth (PDB) at 27 °C for 5 days in the dark. Spores were collected by filtering the suspension through miracloth, centrifuging the filtrate at 3500 rcf, discarding the supernatant and resuspending the spores in dsH2O.
 
-## Fungal elicitor mix preparation, and fractionation, and molecule identification
+### Fungal elicitor mix preparation, and fractionation, and molecule identification
 
 Fungal elicitor mix was prepared as published previously (Kesten et al., 2019; Baldrich et al., 2014) and separated via enrichment using Discovery DSC-C18 (2 g) columns (Merck) with a H2O/MeOH gradient from 100 % to 0 % H2O in 10% steps. Fractions were bioassayed and active fractions purified to individual components via an Agilent 1100 HPLC using Zorbax SB-C18 (9.4x150 mm) semi-prep column in a linear gradient of H2O/MeOH and flow rate of 5 mL/min. Individual peaks were assayed for activity. The pure active compound was characterized by standard 1D and 2D NMR experiments performed at the NMR Service of the Laboratory of Organic Chemistry at ETH Zürich. All experiments were performed using d6-DMSO in a 600 MHz Bruker NMR equipped with a 5 mm probe. Data was analyzed using MestreNova 8.1 software (Mestrelab Research, Spain). LC-MS data was obtained on an Agilent 6400 LC-qTOF in scanning positive mode to produce a single signal with an m/z of 268.1044 (C10H13N5O4 calc. 268.1046 1.72 ppm) and identical retention time to an external standard of adenosine.
 
-## Fungal transformation
+### Fungal transformation
 
 PCR and complementary primers (Supplementary file 1) were used to generate two DNA fragments with overlapping ends (Ho et al., 1989). A resistance cassette containing the neomycin phosphotransferase (npTII) cloned between the A. nidulans gdpA promoter and the trpC terminator (López-Berges et al., 2009) was used to generate two DNA fragments promoting the homologous recombination in fungal protoplasts. Protoplasts were produced as described previously (Powell and Kistler, 1990) and their transformation done as reported by Malardier et al., 1989.
 
-## In-vitro growth assay of Fo5176
+### In-vitro growth assay of Fo5176
 
 Freshly harvested Fo5176 spores were diluted to 104 spores/mL and 15 µL of it distributed on solid half MS plates containing 1 mM Ado, 0.5 mM ATP, or both, or none (control). After four days under the plant growth conditions described above (‘Plant material and growth conditions’), the colony diameters were measured using FIJI (Schindelin et al., 2012).
 
-## Plant plate infection assays
+### Plant plate infection assays
 
 Plate infection assays were performed as described earlier (Kesten et al., 2019; Huerta et al., 2020). Ado and ATP treatment plates were generated by mixing hand-warm half MS media, 0.9% agar, with the specific amount of stock solution. Root growth was measured using FIJI (Schindelin et al., 2012).
 
-## Hydroponic infection assay
+### Hydroponic infection assay
 
 Hydroponic infection assays were performed as previously described (Menna et al., 2021). Thirty seeds were grown on a foam floating on 50 mL liquid ½ MS media, pH 5.75, 1% sucrose. After 7 days the media was replaced by ½ MS without sucrose. Samples supposed to be infected were inoculated with 5*106 Fo5176 spores. After the indicated days post transfer to spore-containing media, roots and fungal hyphae were harvested for subsequent expression analysis and the media was filtered. For ATP quantification media was flash frozen in liquid nitrogen, for Ado quantification it was freeze dried.
 
-## Media ATP quantification
+### Media ATP quantification
 
 ATP levels in media from hydroponic infection experiments of hydroponically-grown plants were analyzed using the ATP Colorimetric/Fluorometric Assay Kit (Sigma, USA) and an Infinite M1000 plate reader (Tecan, Switzerland). Assays were done as described in the manual and ATP was detected fluorescently. All samples and standards were measured in duplicates.
 
-## Media Ado quantification
+### Media Ado quantification
 
 Freeze-dried media samples from hydroponic infection experiments were resuspended in 4 mL MilliQ water. The resulting mixture was loaded onto a 100 mg Discovery DSC-18 column (Supelco, USA). The column was eluted with 1 mL MilliQ water, 1 mL 70% MilliQ water with MeOH and finally 100% MeOH. The resulting aqueous elution was analyzed in positive mode using an Agilent 1200 Infinity II UPLC separation system coupled to an Agilent 6550 iFunnel qTOF mass spectrometer (Agilent, USA). Compounds were separated by infecting 5 µL of sample onto a Zorbax Eclipse Plus C8 RRHD UPLC column (2.1x100 mm, 1.8 µm) held at 50 °C and eluting with a linear water:acetonitrile (both modified with 0.1% formic acid) gradient, 99% water to 99% acetonitrile. Mass spectral data was acquired in positive mode with an electrospray ionization source and scanning a mass range of 100–2000 m/z. Quantification was done by integrating the m/z values corresponding to Ado in MassHunter Quantitative Analysis Software and compared to a standard curve generated at the time of sample measurements.
 
-## In vitro growth assay of Fo5176
+### In vitro growth assay of Fo5176
 
 Freshly harvested spores were diluted to 104 spores/mL and 15 µL of it distributed on solid half MS plates containing 1 mM Ado, 0.5 mM ATP or both. After four days under plant growth conditions the colony diameters were measured using FIJI.
 
-## Gene expression analysis by real-time quantitative PCR
+### Gene expression analysis by real-time quantitative PCR
 
 Freeze-dried fungal and plant material from plate infection assays respectively hydroponics was ground to powder using glass beads and a TissueLyser II (Quiagen, Netherlands). Total RNA was extracted using GENEzol reagent (Geneaid, Taiwan) following the manufacturer’s protocol. One µg of RNA was used to generate first strand cDNA using the Maxima First Strand cDNA Synthesis-Kit (Thermo Scientific, USA) following the manufacturer’s instructions. To amplify corresponding cDNA sequences primers (; Choi et al., 2014a; Masachis et al., 2016; Kesten et al., 2019; Czechowski et al., 2005; Arnaud et al., 2017; Van der Does et al., 2017) were used along with Fast SYBR Green Master Mix (Thermo Scientific, USA) under following cycle conditions: 95 °C for 3 min, 40 cycles of 94 °C for 10 s, 58 °C for 15 s and 72 °C for 10 s. Two technical replicates were performed for each reaction and the reference genes AtGAPDH and Foβtub were amplified on each plate for normalization. Relative expression was analyzed using the 2-∆Ct method (Schmittgen and Livak, 2008).
 
-## Ratiometric pHapo sensor imaging
+### Ratiometric pHapo sensor imaging
 
-Experiments were carried out as described earlier (Kesten et al., 2019). A Leica TCS SP8-AOBS (Leica Microsystems, Germany) confocal laser scanning microscope equipped with a Leica 10×0.3 NA HC PL Fluotar Ph1 objective or a Leica Stellaris 8 equipped with a Leica HC PL APO CS2 10 x/0.40 DRY were used. pHusion was excited and detected simultaneously (Excitation: GFP 488 nm, mRFP 561 nm; Detection: GFP between 500 and 545 nm; mRFP between 600 and 640 nm). Five-day-old A. thaliana seedlings expressing the sensor SYP122-pHusion grown on ½ MS +1% sucrose were transferred to imaging chambers as described previously (Krebs and Schumacher, 2013) but placed on top of 1% agarose cushions. Subsequently, the chamber was filled with ½ MS, pH 5.75. Images were collected as XYt series for 15 min with a time frame of 30 s. Image settings were kept identical throughout the experiments for each reporter line. After a recovery time of 15 min the experiment was started by acquiring ten images of the seedling' roots without treatment to create a baseline of averaged relative signal. Roots were imaged from the tip including their elongation zone. The different treatments were applied in a volume of 100 µL after 300 s. ∆F:F values were calculated according to following formula: ∆F:F= relative signal - baselinebaseline . Maximal amplitudes of ∆F:F signals were obtained by averaging the maximal ∆F:F signals of all curves. To collect standard curves for the pHapo ratiometric sensor, a set of nine buffers from pH 4.8 to pH 8.0 were used. Each buffer was based on 50 mM ammonium acetate. Buffer pH 4.8 comprised additionally 22 mM citric acid, 27 mM trisodium citrate. pH was adjusted with 0.01 M HCl. Buffers pH 5.2 to pH 6.4 contained 50 mM 2-(N-morpholino)ethanesulfonic acid (MES), buffers pH 6.8 to pH 8.0 were composed of 50 mM 4-(2-hydro- xyethyl)–1-piperazineethanesulfonic acid (HEPES). One M Bis-Tris propane was used to adjust the pH values of buffers pH 5.2 to pH 8.0. Six to eight seedlings per buffer were incubated for 15 min and imaged after transfer to microscope slides.
+Experiments were carried out as described earlier (Kesten et al., 2019). A Leica TCS SP8-AOBS (Leica Microsystems, Germany) confocal laser scanning microscope equipped with a Leica 10×0.3 NA HC PL Fluotar Ph1 objective or a Leica Stellaris 8 equipped with a Leica HC PL APO CS2 10 x/0.40 DRY were used. pHusion was excited and detected simultaneously (Excitation: GFP 488 nm, mRFP 561 nm; Detection: GFP between 500 and 545 nm; mRFP between 600 and 640 nm). Five-day-old A. thaliana seedlings expressing the sensor SYP122-pHusion grown on ½ MS +1% sucrose were transferred to imaging chambers as described previously (Krebs and Schumacher, 2013) but placed on top of 1% agarose cushions. Subsequently, the chamber was filled with ½ MS, pH 5.75. Images were collected as XYt series for 15 min with a time frame of 30 s. Image settings were kept identical throughout the experiments for each reporter line. After a recovery time of 15 min the experiment was started by acquiring ten images of the seedling' roots without treatment to create a baseline of averaged relative signal. Roots were imaged from the tip including their elongation zone. The different treatments were applied in a volume of 100 µL after 300 s. ∆F:F values were calculated according to following formula: $\DeltaF:F= \frac{relative signal - baseline}{baseline}$ . Maximal amplitudes of ∆F:F signals were obtained by averaging the maximal ∆F:F signals of all curves. To collect standard curves for the pHapo ratiometric sensor, a set of nine buffers from pH 4.8 to pH 8.0 were used. Each buffer was based on 50 mM ammonium acetate. Buffer pH 4.8 comprised additionally 22 mM citric acid, 27 mM trisodium citrate. pH was adjusted with 0.01 M HCl. Buffers pH 5.2 to pH 6.4 contained 50 mM 2-(N-morpholino)ethanesulfonic acid (MES), buffers pH 6.8 to pH 8.0 were composed of 50 mM 4-(2-hydro- xyethyl)–1-piperazineethanesulfonic acid (HEPES). One M Bis-Tris propane was used to adjust the pH values of buffers pH 5.2 to pH 8.0. Six to eight seedlings per buffer were incubated for 15 min and imaged after transfer to microscope slides.
 
-## Ratiometric cytoCa2+ sensor imaging
+### Ratiometric cytoCa2+ sensor imaging
 
 Imaging was done as described for the pHapo sensor (Kesten et al., 2019) with slight modifications. Five-day-old A. thaliana seedlings expressing the reporter R-GECO1-mTurquoise (Waadt et al., 2017) were grown on ½ MS, pH 5.75, 1% sucrose. mTurquoise was excited with 405 nm and detected between 460–520 nm, R-GECO1 was excited with 561 nm and detected between 580 and 640 nm. Imaging time frame was set to 20 s. Corrective flat field images for 405 nm were acquired by using 7-Diethylamino-4-methylcoumarin (Sigma D87759-5G, 50 mg/mL in DMSO). Relative signal was calculated by dividing mean gray values of the R-GECO1 channel by the mean gray values of the mTurquoise channel. ∆F:F values and Maximal amplitude of ∆F/F signals were calculated as described for the pHapo sensor.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed using Prism 9. Statistical methods and the resulting P-values are defined in the corresponding figure legends. Outlier tests were performed on datasets with. If the automatically detected fluorescent ratios of the genetic pH or Ca2+sensors were measured to be outside of the standard curve range, they were excluded from the analysis. Such cases could always be allocated to severe drift of analyzed roots in the analysis chamber.

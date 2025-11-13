@@ -20,11 +20,27 @@
 
 ## Abstract
 
-10.7554/eLife.36248.001 Organ renewal is governed by the dynamics of cell division, differentiation and loss. To study these dynamics in real time, we present a platform for extended live imaging of the adult Drosophila midgut, a premier genetic model for stem-cell-based organs. A window cut into a living animal allows the midgut to be imaged while intact and physiologically functioning. This approach prolongs imaging sessions to 12–16 hr and yields movies that document cell and tissue dynamics at vivid spatiotemporal resolution. By applying a pipeline for movie processing and analysis, we uncover new and intriguing cell behaviors: that mitotic stem cells dynamically re-orient, that daughter cells use slow kinetics of Notch activation to reach a fate-specifying threshold, and that enterocytes extrude via ratcheted constriction of a junctional ring. By enabling real-time study of midgut phenomena that were previously inaccessible, our platform opens a new realm for dynamic understanding of adult organ renewal.
+Organ renewal is governed by the dynamics of cell division, differentiation and loss. To study these dynamics in real time, we present a platform for extended live imaging of the adult Drosophila midgut, a premier genetic model for stem-cell-based organs. A window cut into a living animal allows the midgut to be imaged while intact and physiologically functioning. This approach prolongs imaging sessions to 12–16 hr and yields movies that document cell and tissue dynamics at vivid spatiotemporal resolution. By applying a pipeline for movie processing and analysis, we uncover new and intriguing cell behaviors: that mitotic stem cells dynamically re-orient, that daughter cells use slow kinetics of Notch activation to reach a fate-specifying threshold, and that enterocytes extrude via ratcheted constriction of a junctional ring. By enabling real-time study of midgut phenomena that were previously inaccessible, our platform opens a new realm for dynamic understanding of adult organ renewal.
 
 ## Introduction
 
 Stem-cell-based organs rely upon the coordinated control of cell division, differentiation and loss to maintain tissue homeostasis. Studies of the Drosophila adult midgut (Figure 1A) have elucidated conserved processes and pathways that control these events during healthy turnover and cause their dysfunction during aging and in cancer. These contributions, which include descriptions of the mechanisms of multipotency and asymmetric-symmetric fates, endocrine and immune regulation, and injury and stress responses, span the range of adult stem cell biology (Biteau et al., 2008; Buchon et al., 2009; Deng et al., 2015; Guo and Ohlstein, 2015; Hudry et al., 2016; Jiang et al., 2009; O'Brien et al., 2011; Ohlstein and Spradling, 2007; Siudeja et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig1-v2.jpg)
+
+**Figure 1.:** (A) Adult female midgut in situ, sagittal view. The white highlighted area indicates region R4a-b, also known as P1-2, (Buchon et al., 2013a; Marianes and Spradling, 2013)) of the midgut that will be exposed for imaging. (B–C) The midgut is accessed through a small cuticular window cut in the back of a live animal. (B) (Top) Schematic of the imaging apparatus. The animal is affixed to a modified petri dish ‘mount’. The chamber of the mount contains media. The underside of the mount supports a feeder tube. See and Fig. 1-fig. supplement 2. (Bottom) Dorsal (left) and ventral (right) views of an animal in the mount. In the left panel, the exposed midgut is outlined by the magenta dotted line. Scale bars: 0.25 mm (left), 0.5 mm (right). See Video 4. (C), Steps in preparing the midgut for imaging. See Video 1 tutorial. (D–F) Registration macros are applied post-acquisition to correct the blurring caused by tissue movements. (D), Before registration, blurring and duplications (arrowheads) are evident. This panel is a raw z-series projection of one movie time point. (E), During registration, two ImageJ plugins are applied in series. (1) 'StackReg' corrects for tissue movement during z-stack acquisition at a single time point. (2) 'Correct 3D Drift' corrects for global volume movements over multiple time points. (F), After registration, blurring and duplications are negligible. Cyan, all nuclei (ubi-his2av::mRFP); yellow, stem cells and enteroblasts (esg >LifeactGFP). Scale bars, 20 μm. See Video 6.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Mount for upright microscopes. (A) Schematic of an animal in the mount on a microscope stage. (A′) Isometric illustrations of mount components: (1) modified petri dish, (2) metal shim with cutout for Drosophila abdomen (Fig. 1-fig. supplement 2Figure 1—figure supplement 2), (3) feeder tube, and (4) bottom chamber with wet Kimwipes (light blue). (Bottom chamber is not shown in (A).) (B) Schematic of the humidity box that encloses the mount. Unassembled (B) and assembled (B′) views are shown. (C) Mount for inverted microscopes. The midgut is imaged through a glass-bottomed petri dish. To elevate the animal, two spacers are glued to the bottom of the dish, and the metal shim is affixed to the spacers. Media is added to the level of the spacers. (D) Mount for light-sheet microscopes. The barrel of a 1 ml syringe is modified to fit the metal shim. The animal and feeder tube are inside the barrel, and the dorsal surface and exposed midgut are outside the barrel. The barrel is submerged in media with one end remaining open to the air. 3D, side and end-on views are shown.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The metal shim of the imaging mount includes a cutout through which the dorsal abdomen is inserted. ‘Fat’ (left) and ‘skinny’ (right) cutouts accommodate differently sized female abdomens. This diagram can be used as a CAD file for automated laser cutters.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Cell viability during extended imaging was evaluated using the cell-death stain Sytox Green. (A) Positive control. To induce cell death, midguts were dissected out of the animals and cultured ex vivo. Sytox+ cells (green) are rare at the start of culture (0 hr) but became abundant after 2.5 hr. (B) Appearance of a Sytox+ cell during extended live imaging. In (A–B), arrowheads point to the same cells before and after becoming Sytox+. Nuclei are colored magenta (ubi-his2av::mRFP). Scale bars, 20 µm. See Video 5. (C) Timeline for the appearance of Sytox+ cells during extended live imaging of three midguts. Each vertical line marks the time at which one Sytox+ midgut cell became visible. A dot marks the end of each imaging session. Yellow box in Midgut 1 marks the timepoints that are shown in Video 5 (10.6–12 h).
 
 Nevertheless, investigation of midgut cell dynamics has been constrained by the lack of a viable platform for extended live imaging. At present, fixed midguts provide static snapshots of cells and tissues but do not allow dynamic behaviors to be observed over time. Meanwhile, cultured midguts have been imaged ex vivo for 60–90 min—a time window long enough to allow studies of faster events such as calcium oscillations, cell divisions and acute toxicity responses (Antonello et al., 2015; Deng et al., 2015; Lee et al., 2016; Montagne and Gonzalez-Gaitan, 2014; Scopelliti et al., 2014), but too short for observations of slower events such as differentiation and apoptosis. Indeed, the power of extended live imaging is demonstrated by studies of numerous other stem-cell-based organs, including Drosophila ovary and testis (Fichelson et al., 2009; Lenhart and DiNardo, 2015; Morris and Spradling, 2011) and mouse epidermis, testis, muscle and intestine (Bruens et al., 2017; Gurevich et al., 2016; Hara et al., 2014; Ritsma et al., 2014; Rompolas et al., 2012Rompolas et al., 2016; Webster et al., 2016). For the midgut, long-term live imaging would synergize with the organ’s existing genetic tractability and well-characterized cell lineages to open exciting investigative possibilities.
 
@@ -34,17 +50,37 @@ To allow mining of the data in these movies, we also present a systematic appr
 
 ## Results and discussion
 
-## An apparatus for midgut imaging within live Drosophila adults
+### An apparatus for midgut imaging within live Drosophila adults
 
 We designed a ‘fly mount’ for imaging the midgut in live Drosophila adults (Figure 1B). Our mount, similar to an apparatus for imaging adult Drosophila brains (Seelig et al., 2010), is assembled from inexpensive, common materials and can be configured for upright, inverted or light-sheet microscopes (Figure 1—figure supplement 1A–D). In the mount, a live animal is stabilized by affixing its abdomen in a cutout within a petri dish (for upright or inverted microscopes) or a syringe barrel (for light-sheet microscopes) (Figure 1—figure supplement 1A–D, Figure 1—figure supplement 2, Video 1). The midgut’s R4a-b (P1-2) region (Buchon et al., 2013a; Marianes and Spradling, 2013) is exposed through a window that is cut in the dorsal cuticle (Figure 1B–C, Video 1). This arrangement leaves the midgut-associated trachea and neurons largely intact (Video 2). Steps to assemble the fly mount and prepare the midgut are illustrated in a detailed tutorial (Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/36248/elife-36248-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/36248/elife-36248-video2.mp4.jpg)
+
+**Video 2.:** Smaller tracheal branches encircle the tube and move in concert with peristaltic contractions. A large tracheal branch (upper right) is continuous with smaller branches. The large branch does not move during peristalsis because it is not physically associated with the midgut; instead, it connects the midgut-associated branches to a spiracle (not visible in the movie frame). Left video: cyan pseudocolor, trachea (breathlessGal4, UAScyt-GFP); red pseudocolor, microtubules (SiR-tubulin). Right video: inverted gray, breathlessGal4, UAScyt-GFP. Each time point is the projection of a confocal z-stack. Scale bar, 20 µm.
 
 Three design features prolong animal viability. First, the animal is provided liquid nutrition through a feeder tube and allowed to ‘breathe’ through unoccluded spiracles (Figure 1B, Figure 1—figure supplement 1A). Second, the exposed organ is stabilized by an agarose bed and bathed in media (Figure 1C). Third, the animal is kept hydrated in a humidity box (Figure 1—figure supplement 1B). Throughout imaging, animals continue to ingest food, undergo peristalsis, and defecate, which suggests that midguts remain in a state that approaches native physiology.
 
 A crucial element is the use of a 20x, high-NA dipping objective, which captures z-stacks that are both wide field (100–300 cells) and high resolution (~1 μm) (Video 3). Time intervals between z-stacks ranged from 5 to 15 min. At room temperature, 72% of animals were alive and responsive after 12–16 hr of continuous imaging (N = 18 animals; median imaging duration, 14.6 hr) (Figure 1—source data 1, Video 4). Nearly all cells remained viable, as revealed by the cell death marker Sytox Green (93–98% viability; Figure 1—figure supplement 3, Video 5). At elevated temperatures (≥29°C), however, the midgut was prone to rupture, so temperature-controlled gene expression by GAL80ts or heat-shock induction proved impracticable. Progesterone-induced GeneSwitch drivers (Mathur et al., 2010) could be a feasible alternative.
 
+![Video 3.](https://cdn.elifesciences.org/articles/36248/elife-36248-video3.mp4.jpg)
+
+**Video 3.:** Numerous physiological contractions of the midgut are evident. A midgut-associated tracheal branch is visible in the lower left of the video. Scale bar, 70 µm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/36248/elife-36248-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/36248/elife-36248-video5.mp4.jpg)
+
+**Video 5.:** As cells die, they become marked by the cell death stain Sytox Green, which is continuously present in the imaging media. After 11 hr of imaging, an individual midgut enterocyte changes from Sytox– (arrowhead, 10.6 hr), to faintly Sytox+ (arrowhead, 11.1 hr), to strongly Sytox+ (arrowhead, 12.0 hr). Nuclei are magenta (ubi-his2av::mRFP). Each movie time point is the projection of a confocal z-stack. Scale bar, 20 µm.
+
 To minimize interference with native digestion, we used no anesthetics. Hence, ~90% of the raw movies were blurred due to involuntary midgut contractions and voluntary animal movements (Figure 1D). In ~30% of these cases, the blurring was too severe for subsequent analysis. In the other ~70%, the blurring could be corrected by the sequential application of two ImageJ macros, StackReg and Correct 3D Drift (Arganda-Carreras et al., 2006a; Parslow et al., 2014) (Figure 1E–F, Source Code File 1, Video 6), rendering these movies suitable for single-cell tracking and analysis.
 
-## A systematic approach for comprehensive spatiotemporal tracking of single cells
+![Video 6.](https://cdn.elifesciences.org/articles/36248/elife-36248-video6.mp4.jpg)
+
+**Video 6.:** Before registration, blurred cells from tissue movements are evident during timepoints from 20–60 min. After registration, the blurring is negligible. Cyan, all nuclei (ubi-his2ab::mRFP); yellow, stem cells and enteroblasts (esg >LifeactGFP). Each time point is the projection of a confocal z-stack. Scale bar, 20 µm.
+
+### A systematic approach for comprehensive spatiotemporal tracking of single cells
 
 The study of dynamic cellular events requires that individual cells be identified, tracked and analyzed in space and over time. To facilitate these analyses, we generated a ‘fate sensor’ line with fluorescent, nuclear-localized markers to allow live identification of the midgut’s four major cell types (esgGAL4, UAShis::CFP, GBE-Su(H)-GFP:nls; ubi-his::RFP) (Figure 2A–B; Video 7). (1) Stem cells are marked by CFP and RFP. Stem cells are responsible for virtually all cell divisions. (2) Enteroblasts are marked by CFP, GFP and RFP. Enteroblasts are Notch-activated stem cell progeny that will mature into enterocytes. (3) Enterocytes are marked by RFP and have polyploid nuclei. Enterocytes are terminally differentiated cells that absorb nutrients and that form the bulk of the epithelium. (4) Enteroendocrine cells are marked by RFP and have small, diploid nuclei. Enteroendocrine cells are terminally differentiated cells that secrete enteric hormones.
 
@@ -52,21 +88,61 @@ The study of dynamic cellular events requires that individual cells be identifi
 
 **Figure 2.:** (A–B) ‘Fate sensor’ midguts enable the live identification of cell types. (A) Stack projection of a single time point from a 10 hr movie (Video 7). Nuclei are distinguishable for four midgut cell types: stem cells (red pseudocolor), enteroblasts (yellow-green pseudocolor), enterocytes (gray, polyploid), and enteroendocrine cells (gray, diploid). Inset shows the zoom region depicted in (B). (B) Genetic design of the fate sensor line (esg >his2b::CFP, GBE-Su(H)-GFP:nls; ubi-his2av::mRFP). Cell types are distinguished by the combinatorial expression of three fluorescent, nuclear-localized markers: enterocytes/enteroendocrine cells (His2ab::mRFP only), stem cells (His2ab::mRFP, His2b::CFP), and enteroblasts (His2ab::mRFP, His2b::CFP, GFP:nls). All scale bars, 10 μm. (C–D) Workflow to identify, track and analyze cells in volumetric movies. (C) Nuclei from raw, multi-channel z-stacks are digitally separated into stem cell, enteroblast, and enterocyte/entero-endocrine populations using channel masks in ImageJ. (D) The three population sets are rendered in 4D in Imaris. Segmentation is performed on each population to identify individual nuclei. Enteroendocrine nuclei are separated from enterocyte nuclei by a size filter. The positions of individual nuclei are correlated between time points to track single cells over time.
 
+![Video 7.](https://cdn.elifesciences.org/articles/36248/elife-36248-video7.mp4.jpg)
+
+**Video 7.:** See Figure 2A–B). Nuclei are distinguishable for four midgut cell types: stem cells (red pseudocolor), enteroblasts (yellow-green pseudocolor), enterocytes (gray, polyploid), and enteroendocrine cells (gray, diploid). Each time point is the projection of a confocal z-stack. Scale bar, 20 µm.
+
 To analyze these multichannel, volumetric movies, we developed a semi-automated workflow. ImageJ and Bitplane Imaris are used to separate marked populations digitally, to identify all cells in each population, and to track these cells for the duration of the movie (Figure 2C–D). Comprehensive, single-cell tracking enables features such as fluorescence intensity, spatial position and nuclear size to be measured for each individual cell. By multiplying the 100–300 cells in a movie over the hundreds of time points in a 12–16 hr imaging session, we collect tens of thousands of real-time measurements. Unlike prior approaches, which relied on the manual identification and tracking of a few cells, our approach generates single-cell and population-level data in an unbiased manner.
 
 To demonstrate the utility of this imaging platform and workflow, we performed proof-of-principle analyses for three core behaviors of midgut renewal: enterocyte extrusion and loss (Figure 3A–F), stem cell division (Figures 3G–H and 4) and enteroblast differentiation (Figures 5–6).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig3-v2.jpg)
+
+**Figure 3.:** (A–E) Morphometric analysis of a single-enterocyte extrusion. (A) Time-lapse sequence (top) and schematic (bottom) showing a planar view of an extrusion event. The basal region of the extruding cell (tan pseudocolor) is outlined by a six-sided ‘ring’ of E-cadherin::YFP (inverted gray, ubi-DE-cadherin::YFP). Over time, the basal ring closes to a point, and the six neighbor cells (green in schematic) draw into a rosette. The time-lapse images are stack projections. Cyan (ubi-his2av::mRFP) labels all nuclei. See Video 8. (B) Spatial ‘footprint’ of the E-cadherin::YFP ring in the epithelial plane over time (violet-yellow color scale). The ring remains six-sided throughout closure. (C) Ring closure occurs via ratcheted constrictions. During ring closure, pulses of constriction (shaded background) are interrupted by pulses of relaxation (unshaded background). See Figure 3—figure supplement 1. (D) Kinetics of apical travel. Displacements of the junctional ring (purple) and the cell nucleus (red) are shown over time for the extrusion in (A). The ring (purple trace) advances incrementally via small, apical-and-basal movements. The nucleus (red trace) ejects rapidly into the lumen, then recoils. Apical nuclear travel starts at t = 150 min and ends at t = 263 min (dotted vertical lines). (E) Orthoview of the extrusion depicted in (A). The multicolored line shows the path of the nucleus over time (violet-yellow color scale). Magenta box denotes the E-cadherin::YFP ring, which is visible in this time point (t = 285 min) as a density of YFP at the apical surface. Inverted gray, E-cadherin::YFP (ubi-DE-cadherin::YFP); cyan, all nuclei (ubi-his2av::mRFP). See Video 9. (F) Durations of apical nuclear travel for 18 single-enterocyte extrusions from six movies. Apical travel lasted 37–112 min with a mean ± standard deviation (SD) of 64 ± 18 min. (G–H) Kinetics of stem cell mitoses. (G) Time-lapse sequence of a mitotic event. Green, actin (esg >LifeactGFP); yellow, E-cadherin (ubi-DE-cadherin::YFP); red, nuclei (ubi-his2av::mRFP). Panels are partial stack projections of the basal epithelium. See Video 11. (H) Durations of mitosis for 39 cell divisions from 11 movies. Mitoses lasted from 30 to 60 min with a mean ± SD of 43 ± 11 min. All scale bars, 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Cross-sectional area of the basal junctional ring over time for three enterocyte extrusions (blue, green, red). Pulses of ring constriction (colored background) alternate with pulses of ring stabilization or relaxation (uncolored background). (A'–C') Rates of change in ring area over time. Rings fluctuate between pulses of constriction (negative values) and pulses of stabilization (near-zero) or relaxation (positive values). Rates of constriction are generally higher than rates of relaxation. (D) Side-by-side comparison of ring area over time for the extrusions in (A–C). The initial area of the ring does not correlate with the overall time required for complete closure (Figure 3—figure supplement 1-source data 1). The blue extrusion in ( A) and (D) is identical to that in Figure 3A–E and Videos 8–9.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig4-v2.jpg)
+
+**Figure 4.:** (A–E) Horizontal-vertical orientations are horizontally biased. (A) Schematic of horizontal (0°) and vertical (90°) orientations. See Figure 4—figure supplement 1. (B) Live orientations of 10 dividing cells specifically at cytokinesis. The distribution is biased toward horizontal (<45°). The red point represents the cell in (D). (C) Live orientations of the same 10 cells throughout mitosis. Each measurement is the orientation of one mitotic cell at one time point, from metaphase to cytokinesis (n = 51 measurements). The distribution is biased toward horizontal (<45°). (D) Two re-orientations in a single mitosis. The red line shows the orientation of condensed chromatin (gray, ubi-his2ab::mRFP) relative to the basal basement membrane (cyan, Concanavalin A-Alexa-647). For clarity, in the 7.5 min and 15 min projections, a clipping plane was applied in the gray channel to exclude an enterocyte nucleus; this nucleus is marked by an asterisk at the left edge of the 30 min projection. Scale bar, 5 µm. See Video 12. (E) Mitotic cells frequently re-orient. Each line shows the horizontal-vertical orientations of a single mitotic cell over time. The 10 cells are the same as those in (B) and (C). All lines start at metaphase (t = 0 min) and continue until cytokinesis (t = 30–60 min). Time intervals were either 5, 7.5, or 15 min. Colors are the same as those in (B); the red line represents the orientation of the cell in (D). (F–H) Longitudinal-circumferential orientations are unbiased. (F) Schematic of longitudinal (0°) and circumferential (90°) orientations. (G–H) Live orientations of 38 dividing cells at cytokinesis. Longitudinal (≤45°) and circumferential (>45°) orientations are near-equal. (I–K) Divisions between two flanking enteroblasts align with the enteroblast-enteroblast axis. (I) Schematic of divisions contacting either two or one enteroblast(s). When two enteroblasts are present, the closer enteroblast is used for measurements (see 'Materials and methods'). (J) Division between two enteroblasts. Orientation is nearly parallel to the axis between the enteroblast nuclei (magenta, GBE-Su(H)-GFP:nls). Gray, stem cell and enteroblast nuclei (esg >his2b::CFP). Scale bar, 10 µm. See Video 14. (K) Live orientations of divisions with two or one flanking enteroblast(s). With two enteroblasts (n = 4 of 18 divisions), orientations are near-parallel to the enteroblast-enteroblast axis. With one enteroblast (n = 11 of 18 divisions), orientations are broadly distributed. Orientations were measured at cytokinesis. Means ± SD are shown. Mann-Whitney test, p=0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Horizontal-vertical orientation of the mitotic spindle was measured as the angle at which the presumptive spindle axis intersected a plane tangent to the basal surface of the mitotic cell. Spindle axes and basal planes were determined by examination of volumetric movies in Imaris. To establish coordinates for the spindle axis (red line), two points (red dots) were placed relative to the condensed chromatin (ubi-his2ab::mRFP). To establish coordinates for the basal plane (blue rectangle), three points (blue dots) were placed on the basal epithelial surface underlying the spindle. The (x,y,z) coordinates of these five points were input into a vector algebra expression to calculate the horizontal-vertical spindle angle (see 'Material and methods').
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig5-v2.jpg)
 
-**Figure 5.:** (A–C) A threshold level of Notch activation distinguishes stem cells and enteroblasts. (A) Single-cell measurements of the Notch reporter GBE-Su(H)-GFP:nls from live movies. Cells additionally co-express esg >his2ab::CFP (magenta) and ubi-his2ab::mRFP (gray). GBE-Su(H)-GFP:nls activation is quantified as GFP:RFP (see 'Materials and methods'). For the indicated cells, GFP:RFP = 0.94, 0.27, and 0.01, respectively. (B) GFP:RFP values correlate with visible GFP and nuclear volume. Progenitor (esg) cells were scored by eye as either GFP-negative (top) or -positive (bottom). In cells without visible GFP, nearly all GFP:RFP values cluster between 0.0 and 0.2, and most nuclear volumes are small (<200 µm+3). In cells with visible GFP, most GFP:RFP values are spread between 0.1 and 1.4, and large nuclear volumes (≥200 µm3), indicative of late enteroblasts, are associated with high GFP:RFPs. The blue dotted lines show the 0.17 enteroblast threshold from (C). (C) GFP:RFP values quantitatively distinguish stem cells and enteroblasts. Gray bars show real-time GFP:RFPs for all esg cells in two movies (29,102 GFP:RFPs from 251 cells). Two peaks (GFP:RFP = 0.015, 0.528) are separated by a local minimum (blue dotted line; GFP:RFP = 0.17). Purple bars (+C’ inset) show real-time GFP:RFPs for ‘benchmark’ stem cells prior to an observed mitosis (1,294 GFP:RFPs from 18 pre-mitotic cells). The benchmark stem cell distribution matches the left peak of the esg cells, and 99.6% of ‘benchmark’ GFP:RFPs are less than 0.17. Data in (B) and (C) are aggregated from two movies. (+D–E) Stem-like cells transition to enteroblasts over multiple hours. (D) Real-time activation of GBE-Su(H)-GFP:nls reveals a transition from a stem-like to an enteroblast state. During a transition period lasting 6.9 hr (gray background), GFP:RFP increases from a baseline of ~0.049 at t = 3.5 hr to the enteroblast threshold of 0.17 (blue dotted line) at t = 10.4 hr. After the transition, GFP:RFP continues to increase and reaches 0.364 at t = 15.0 hr. GBE-Su(H)-GFP:nls shown in green (top) and inverted gray (bottom); esg >his2ab::CFP, magenta; ubi-his2ab::mRFP, gray. See Video 15. (E) Kinetics of three additional enteroblast transitions. Initial baseline GFP:RFPs are <0.17. GFP:RFPs increase from baseline to 0.17 during transition periods lasting from 2.3 to 6.9 hr (gray backgrounds: t = 0.3–7.1 hr (top), 10.0–12.4 hr (middle), 9.5–11.8 hr (bottom)). Initial and final GFP:RFPs are as follows: 0.058, 0.426 (top); 0.069, 0.281 (middle); 0.022, 0.257 (bottom). All cells in (D) and (E) were born before imaging started. Genotype in all panels: esgGal4, UAS-his2b::CFP, Su(H)GBE-GFP:nls; ubi-his2av::mRFP. All scale bars are 5 µm.10.7554/eLife.36248.023Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A–C) A threshold level of Notch activation distinguishes stem cells and enteroblasts. (A) Single-cell measurements of the Notch reporter GBE-Su(H)-GFP:nls from live movies. Cells additionally co-express esg >his2ab::CFP (magenta) and ubi-his2ab::mRFP (gray). GBE-Su(H)-GFP:nls activation is quantified as GFP:RFP (see 'Materials and methods'). For the indicated cells, GFP:RFP = 0.94, 0.27, and 0.01, respectively. (B) GFP:RFP values correlate with visible GFP and nuclear volume. Progenitor (esg+) cells were scored by eye as either GFP-negative (top) or -positive (bottom). In cells without visible GFP, nearly all GFP:RFP values cluster between 0.0 and 0.2, and most nuclear volumes are small (<200 µm3). In cells with visible GFP, most GFP:RFP values are spread between 0.1 and 1.4, and large nuclear volumes (≥200 µm3), indicative of late enteroblasts, are associated with high GFP:RFPs. The blue dotted lines show the 0.17 enteroblast threshold from (C). (C) GFP:RFP values quantitatively distinguish stem cells and enteroblasts. Gray bars show real-time GFP:RFPs for all esg+ cells in two movies (29,102 GFP:RFPs from 251 cells). Two peaks (GFP:RFP = 0.015, 0.528) are separated by a local minimum (blue dotted line; GFP:RFP = 0.17). Purple bars (C’ inset) show real-time GFP:RFPs for ‘benchmark’ stem cells prior to an observed mitosis (1,294 GFP:RFPs from 18 pre-mitotic cells). The benchmark stem cell distribution matches the left peak of the esg+ cells, and 99.6% of ‘benchmark’ GFP:RFPs are less than 0.17. Data in (B) and (C) are aggregated from two movies. (D–E) Stem-like cells transition to enteroblasts over multiple hours. (D) Real-time activation of GBE-Su(H)-GFP:nls reveals a transition from a stem-like to an enteroblast state. During a transition period lasting 6.9 hr (gray background), GFP:RFP increases from a baseline of ~0.049 at t = 3.5 hr to the enteroblast threshold of 0.17 (blue dotted line) at t = 10.4 hr. After the transition, GFP:RFP continues to increase and reaches 0.364 at t = 15.0 hr. GBE-Su(H)-GFP:nls shown in green (top) and inverted gray (bottom); esg >his2ab::CFP, magenta; ubi-his2ab::mRFP, gray. See Video 15. (E) Kinetics of three additional enteroblast transitions. Initial baseline GFP:RFPs are <0.17. GFP:RFPs increase from baseline to 0.17 during transition periods lasting from 2.3 to 6.9 hr (gray backgrounds: t = 0.3–7.1 hr (top), 10.0–12.4 hr (middle), 9.5–11.8 hr (bottom)). Initial and final GFP:RFPs are as follows: 0.058, 0.426 (top); 0.069, 0.281 (middle); 0.022, 0.257 (bottom). All cells in (D) and (E) were born before imaging started. Genotype in all panels: esgGal4, UAS-his2b::CFP, Su(H)GBE-GFP:nls; ubi-his2av::mRFP. All scale bars are 5 µm.
 
-## Enterocyte extrusion: Spatiotemporal dynamics of ring closure, ring travel, and nuclear travel
+![Figure 6.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig6-v2.jpg)
+
+**Figure 6.:** (A) Contacts between newborn siblings are highly variable. Eighteen pairs of sibling cells (rows A–R) were tracked from birth (t = 0.0 hr) to the end of imaging. Color shows the likelihood of sibling–sibling contact based on inter-nuclear distance (Figure 6—figure supplement 1): yellow, inferred contact (inter-nuclear distance <6.0 µm); green, indeterminate (inter-nuclear distance = 6.0–15.5 µm); blue, inferred separation (inter-nuclear distance >15.5 µm). Pairs are ordered from highest A to lowest P contact. Pairs A, L, and P (red labels) are featured in (C), (D), and (B), respectively. (B–D) Contacts between siblings do not correlate with real-time GBE-Su(H)-GFP:nls activation. Graphs show real-time contact status (background colors same as A) and GFP:RFP ratios. Sibling birth is at t=0.0 h. Red vertical lines are the time points shown in the bottom images. (B) Low-contact pair P does not exhibit persistent activation of GBE-Su(H)-GFP:nls. (C) High-contact Pair A does not exhibit persistent activation of GBE-Su(H)-GFP:nls. (D) Indeterminate-low contact Pair L exhibits persistent activation of GBE-Su(H)-GFP:nls in one sibling. The Pair L siblings are probably in contact from t=2.6–3.6 h and are probably separated after t=9.1 h. Note that between t=2.6–3.5 h (Cell 1) and t=1.5–3.6 h (Cell 2), GFP:RFP measurements (grayed dots) are artifactually high because the two cells collide with a third cell, which was a mature enteroblast (Video 18). Because of the intimate proximity between the mature enteroblast and the Pair L siblings during the collision, the high GFP signal of the enteroblast bled over into the surfaces for Cells 1 and 2. The duration of artifactual bleed-over is indicated by gaps in the cells’ interpolated GFP:RFP lines. Genotypes for all panels: esgGal4, UAS-his2b:CFP, Su(H)GBE-GFP:nls; ubi-his2av::mRFP. All scale bars are 10 µm. See Videos 16–18.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36248/elife-36248-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Examples of contacting and separated progenitor pairs. Contact is revealed using esg-driven LifeactGFP (green) to label the actin cytoskeleton of progenitor cells. Inter-nuclear distances (purple lines) are the distances between the centroids of the two nuclei (gray). Images are projections of single time points; but contact and inter-nuclear distances were assessed in volumetric space. Scale bars, 10 µm. (B) Inter-nuclear distances of contacting and separated pairs. All pairs with inter-nuclear distances <6.0 µm (yellow background) are in contact (26% of all contacting pairs). Pairs with inter-nuclear distances from 6.0 to 15.5 µm (green background) are split between contacting and separated (73% of all contacting pairs; 58% of all separated pairs). All pairs with inter-nuclear distances >15.5 µm (blue background) are separated (42% of all separated pairs). These three ranges are used in Figure 6 to infer the probable contact behavior of esg+ + pairs that express only nuclear markers (inter-nuclear distance <6.0 µm, probable contact; 6.0–15.5 µm, indeterminate;>15.5 µm, probably separated). n = 49 contacting and 43 separated pairs. Pairs were designated as two esg+ + that were mutually closer to each other than to any other esg+ + and were selected randomly from single time points of four movies. Genotype: esgGal4, UAS-LifeactGFP; ubi-his2av::mRFP.
+
+### Enterocyte extrusion: Spatiotemporal dynamics of ring closure, ring travel, and nuclear travel
 
 Enterocytes in the Drosophila midgut, like enterocytes in the mammalian intestine, are lost through apical extrusion (Buchon et al., 2010; Eisenhoffer et al., 2012; Harding and Morris, 1977; Madara, 1990; O'Brien et al., 2011). During extrusion, a cell is ejected out of the epithelium and into the lumen by the concerted contractions of its neighbors (Eisenhoffer and Rosenblatt, 2013). Because this process is seamless, extrusion eliminates apoptotic cells while preserving the epithelial barrier (Gudipaty and Rosenblatt, 2017). Apoptotic enterocytes secrete stem cell-activating mitogens (Liang et al., 2017), so understanding when and how apoptotic enterocytes are extruded is important for understanding midgut turnover.
 
 In fixed tissues, studies of extrusion have been challenging because extruded cells leave no trace in the epithelium. Although fixed sections can catch extruding cells ‘in the act’, they do not reveal the dynamics of these transient events.
 
 Our imaging platform enabled us to study extrusions live. Most extrusions were enterocytes, which exited the epithelium either as single cells (18 of 34 total extrusions in six independent movies; Figure 3A,F, Figure 3—figure supplement 1; Videos 8 and 9) or as clusters of 2–5 cells (16 of 34 total extrusions). We also observed one extrusion of an enteroendocrine cell (Video 10). Extrusions were distributed comparably across the first and second halves of individual movies. All extrusions were apical.
+
+![Video 8.](https://cdn.elifesciences.org/articles/36248/elife-36248-video8.mp4.jpg)
+
+**Video 8.:** The epithelium is oriented with its basal surface toward the microscope objective and its apical surface further away. The basal region of the extruding enterocyte (orange pseudocolor at t=0, 127.5, 285, 442.5 min) is outlined by a ‘ring’ of E-cadherin::YFP. The ring closes down to a point from t=255–442.5 min. The intensity of the ring fluctuates during the first half of closure and becomes consistently bright during the second half. As the ring closes, neighboring cells draw into a rosette. Meanwhile, the nucleus of the extruding cell (yellow pseudocolor) starts to drop apically at t=150 min, hits its deepest luminal position at t=262.5 min, and recoils from t=262.5–307.5 min. Cyan, all nuclei (ubi-his2av::mRFP); inverted gray, E-cadherin (ubi-DE-cadherin::YFP). Each time point is the projection of a confocal stack. Scale bar, 10 µm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/36248/elife-36248-video9.mp4.jpg)
+
+**Video 9.:** The nucleus of the extruding enterocyte (magenta) ejects out of the epithelium (t=150–165 min) and penetrates into the lumen (t=165–265 min). It subsequently recoils and eventually comes to rest on the apical epithelium (t=263–443 min). The multicolored line shows the path of nuclear travel over time (violet-yellow color scale; see Figure 3D for legend). Cyan, all nuclei (ubi-his2av::mRFP); gray, E-cadherin (ubi-DE-cadherin::YFP). Scale bar, 10 µm.
+
+![Video 10.](https://cdn.elifesciences.org/articles/36248/elife-36248-video10.mp4.jpg)
+
+**Video 10.:** The epithelium is oriented with its basal surface toward the microscope objective and its apical surface further away. The basal region of the extruding cell (tan pseudocolor at t=0, 75 min) is outlined by a ring of E-cadherin::YFP (inverted gray signal at cell boundaries). The extruding cell is presumed to be enteroendocrine because it has a small, presumably diploid, nucleus and because it lacks expression of esg. (esg >his2b::CFP is inverted gray signal in nuclei.) The E-cadherin ring closes to a point over the period t=0–180 min. Meanwhile, the enteroendocrine cell nucleus drops apically from t = 0–143 min. Cyan, all nuclei (ubi-his2av::mRFP); inverted gray, E-cadherin (ubi-DE-cadherin::YFP) and stem/enteroblast nuclei (esg >his2b::CFP). Each time point is the projection of a confocal stack. Scale bar, 10 µm.
 
 To gain insight into extrusion dynamics, we performed fine-grained morphometric analysis on three single-enterocyte extrusions (Figure 3A–E; Figure 3—figure supplement 1). Enterocytes exited the epithelium through constriction of a basal junctional ‘ring’. Junctional rings were six-sided and marked by E-cadherin::YFP and myosin::GFP (myosin light chain kinase, or sqh::GFP) (Figure 3A, Video 8). As extrusions progressed, rings closed to a point and eventually vanished (Figure 3B, Video 8). Meanwhile, neighbor enterocytes drew into rosettes with the extruding cells at their center. Ring closure required ~4–6 hr for completion (Figure 3—figure supplement 1D).
 
@@ -78,11 +154,15 @@ For an extruding cell to be shed from the epithelium, the junctional ring must n
 
 Altogether, these analyses provide first morphometric insights on homeostatic cell extrusions in real time. They demonstrate the ability of our platform to reveal novel extrusion behaviors, such as ratcheting, and to enable direct comparison of concurrent subcellular events, such as ring and nuclear travel. Through these abilities, our platform opens the door to a dynamic and quantitative understanding of cell extrusion during organ turnover.
 
-## Stem cell division: Mitotic orientation in real time
+### Stem cell division: Mitotic orientation in real time
 
 Tissue homeostasis requires the replacement of extruded cells by new cells. In the midgut, new cells are generated through stem cell divisions, and terminal daughters are typically post-mitotic. Although time-lapse imaging has unique potential to reveal division behaviors (Park et al., 2016), the divisions of midgut cells have been challenging to capture. To date, live divisions have been reported in only one study, which examined pathogen-stimulated midguts ex vivo (Montagne and Gonzalez-Gaitan, 2014).
 
 We surveyed our movies of near-native midguts for physiological divisions. Thirty-nine mitoses were identified in 11 independent movies, which had a combined duration of 122 hr. The average mitosis lasted 43 ± 11 min (Figure 3G–H; Figure 3—source data 1, Video 11). Together, these measurements imply a mitotic index of 0.28% (see 'Materials and methods' for calculation), which is less than the 1–2% mitotic index obtained from counts of phospho-histone H3+ cells in fixed midguts (Jin et al., 2017; Kolahgar et al., 2015; Montagne and Gonzalez-Gaitan, 2014). No divisions were identified in 14 additional movies. Within individual movies, division rates did not trend upward or downward over time. This absence of drift suggests that division rates were reduced not by cumulative imaging stress, but rather by elements that were already present when imaging began or that occurred stochastically. To lessen this inhibitory effect, adjustments to the media formulation would be one attractive approach.
+
+![Video 11.](https://cdn.elifesciences.org/articles/36248/elife-36248-video11.mp4.jpg)
+
+**Video 11.:** Green, actin (esg >LifeactGFP); yellow, E-cadherin (ubi-DE-cadherin::YFP); red, nuclei (ubi-his2av::mRFP). Each time point is the partial projection of a confocal stack. Scale bar, 10 µm
 
 Each mitosis was exhibited by a unique cell. The vast majority of these were presumably stem cells. However, a recently described cell type, the enteroendocrine precursor cell, accounts for <5% of mitoses (Chen et al., 2018). Our movies lacked markers to distinguish stem cells from enteroendocrine precursors, so the latter may have been responsible for some observed mitoses.
 
@@ -94,15 +174,27 @@ First, we considered horizontal-vertical orientation (Figure 4A–E, Figure 4—
 
 Do horizontal-vertical orientations stay constant throughout division? Analyzing the same 10 cells from metaphase to telophase, we found that orientations were, as a group, also biased toward horizontal; of 41 measurements, seven were <5° and 33 were <45° (Figure 4C). Interestingly however, this stable, population-level trend belied the dynamic re-orientations of individual cells. Tracking single cells over time, we found that 8 of the 10 cells re-oriented by ≥15° at least once, and four re-oriented by ≥30° (Figure 4D–E; Videos 12 and 13). Re-orientations even occurred repeatedly during a single mitosis; 3 cells re-oriented by ≥15° two or three times. These frequent, sometimes dramatic, re-orientations were not triggered by peristaltic contractions as no temporal correlation was observed between the two types of events. The ability of mitotic stem cells to re-orient dynamically, a feature uniquely visible in live imaging, carries implications for how measurements of spindle angles in fixed midguts are interpreted.
 
+![Video 12.](https://cdn.elifesciences.org/articles/36248/elife-36248-video12.mp4.jpg)
+
+**Video 12.:** The first re-orientation occurs between metaphase (24° at 7.5 min) and anaphase (60° at 15 min). The second re-orientation occurs between anaphase (62° at 22.5 min) and telophase (2° at 30 min). Gray channel, condensed chromatin (ubi-his2ab::mRFP). The red line indicates the spindle axis. The cyan line indicates the basal plane, as revealed by the basement membrane stain Concanavalin A-Alexa 647 (not shown). At each time point, the mitotic cell is shown as an orthogonal projection from the vantage of a plane that is parallel to the spindle axis and normal to the basal epithelial plane. For clarity, a clipping plane was applied in the gray channel to exclude an adjacent enterocyte nucleus. Scale bar, 5 µm.
+
+![Video 13.](https://cdn.elifesciences.org/articles/36248/elife-36248-video13.mp4.jpg)
+
+**Video 13.:** The top panel shows condensed chromatin of the dividing cell (ubi-his2ab::mRFP). The red line indicates the spindle axis. The cyan line indicates the basal plane, as revealed by the basement membrane stain Concanavalin A-Alexa 647 (not shown). The bottom panel reproduces the graph from Figure 4E, with the time-resolved orientations of this particular cell in red. The first re-orientation occurs during metaphase (from 16° at 5 min to 0° at 15 min). The second re-orientation occurs between metaphase (1° at 20 min) and anaphase (18° at 25 min). Scale bar, 5 µm.
+
 Second, we considered longitudinal-circumferential orientation (Figure 4F–H). Measuring 38 cells at cytokinesis, we found that 20 cells were ≤45° and 18 cells were >45° (Figure 4F–H). Hence, longitudinal-circumferential orientations are unbiased.
 
 The nature of our movies precluded us from examining a potential exception to this lack of bias: divisions at midgut compartment boundaries. Spradling and colleagues have reported that compartmentalization of the midgut into distinct, stereotyped regions is reinforced by clonal partitioning (Marianes and Spradling, 2013). Daughter cells generally remain in the same compartment as their mother stem cell, and stem-cell clones do not cross most compartment boundaries (Marianes and Spradling, 2013). As compartment boundaries are circumferential, a possible explanation for clonal partitioning is that boundary-localized divisions are oriented circumferentially. However, our movies lacked live boundary markers, so the small minority of divisions that may have occurred at boundaries could not be distinguished from the large majority of divisions that occurred within compartments. Further study will be needed to determine whether boundary-localized divisions represent a special case of circumferential bias.
 
 Finally, we observed that a third, local reference frame formed when two enteroblasts flanked a dividing cell (Figure 4I–K). In this three-cell arrangement, divisions occurred nearly parallel to the two neighbor enteroblasts (4 of 18 divisions; Figure 4J,K, Figure 4—source data 1). By contrast, divisions had a broad range of orientations if only one neighbor enteroblast was present (11 of 18 divisions; Figure 4K). When trapped between two enteroblasts, daughter cells at cytokinesis hurled into and forcibly collided with the enteroblast nuclei (Figure 4J; Video 14, t=15–22.5 min). These observations suggest that physical contact between stem cells and enteroblasts is a spatial cue that orients the mitotic spindle.
 
+![Video 14.](https://cdn.elifesciences.org/articles/36248/elife-36248-video14.mp4.jpg)
+
+**Video 14.:** Division orientation aligns with the axis between the two enteroblast nuclei (magenta, GBE-Su(H)-GFP:nls). At cytokinesis (t=15–22.5 min), the new daughter nuclei hurl into the enteroblast nuclei, which recoil in response. Gray, stem cell and enteroblast nuclei (esg >his2b::CFP). Each time point is the partial projection of a confocal stack. Scale bar, 10 µm.
+
 In summary, these analyses provide first views of how live stem cells orient their divisions within the midgut’s tubular epithelium. They also reveal mitotic behaviors, such as frequent horizontal-vertical re-orientations, that are undetectable in fixed samples. Examining three reference frames, we found three orientation patterns. (1) Biased horizontal orientations. In future work, a crucial question will be whether, and if so how, horizontal orientations promote symmetric daughter fates (Goulas et al., 2012; Guo and Ohlstein, 2015; Kohlmaier et al., 2015; Montagne and Gonzalez-Gaitan, 2014; Sallé et al., 2017). (2) Unbiased longitudinal-circumferential orientations. This balanced distribution may help to maintain constant organ shape over time. (3) Local orientation by two enteroblasts. This unanticipated finding supports the notion that stem-cell–enteroblast adherens junctions, which are unusually pronounced (Ohlstein and Spradling, 2006), could orient the divisions of midgut stem cells, akin to other Drosophila stem cells (Inaba et al., 2010; Le Borgne et al., 2002; Lu et al., 2001). In our analysis, all mitoses occurred in the midgut’s R4a-b (P1-2) region that is exposed by the cuticular window; whether divisions in other regions, or at region boundaries, behave similarly is an open question. Looking forward, these findings provide a basis for the direct investigation of midgut division orientation and for probing the relationship between orientation and fate.
 
-## A quantitative threshold of Notch activation distinguishes stem cells and enteroblasts
+### A quantitative threshold of Notch activation distinguishes stem cells and enteroblasts
 
 Along with cell division and loss, cell differentiation is the third core behavior of tissue renewal. In the Drosophila adult midgut, differentiation in the enteroblast-enterocyte lineage is controlled by Delta-Notch. Delta ligand, which is expressed predominantly in stem cells, activates Notch receptors on stem (or stem-like) cells. At low levels, Notch activity is compatible with stemness, but at higher levels, it triggers enteroblast differentiation (Bardin et al., 2010; Biteau and Jasper, 2014; Kohlmaier et al., 2015; Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006Ohlstein and Spradling, 2007; Perdigoto et al., 2011; Zeng and Hou, 2015).
 
@@ -120,7 +212,7 @@ The benchmark collection of stem cell GFP:RFPs was compared to all progenitor GF
 
 On the basis of these findings, we conclude that GFP:RFP=0.17 marks a threshold level of Notch activation that functionally distinguishes stem cells from enteroblasts. The precise value of 0.17 is probably specific to our particular microscope and imaging parameters, and a different microscope system would require re-assessment of the enteroblast threshold through measurements of normalized GBE-Su(H)-GFP:nls intensities. Nonetheless, our findings argue that when Notch activity reaches a specific, critical level, cells transition from a stem-like state to an enteroblast state.
 
-## Real-time kinetics of enteroblast transitions
+### Real-time kinetics of enteroblast transitions
 
 A fundamental aspect of fate transitions is the time over which they occur. Fast transitions would allow cells to respond nimbly to acute challenges, whereas slow transitions would allow cells to receive and integrate a large number of fate-influencing signals. In this manner, the kinetics of fate transitions can define how an organ responds to changing external environments.
 
@@ -128,11 +220,15 @@ Midgut fate transitions have not been measured directly to date. For enteroblast
 
 To examine enteroblast transitions directly, we measured the rate of GBE–Su(H)-GFP:nls activation in movies of fate sensor midguts. A cell was scored as undergoing an enteroblast transition if GFP:RFP persistently increased from below to above the 0.17 threshold. From 95 cells with initial GFP:RFP <0.17 in two movies, five such transitions were identified. We analyzed kinetics for four of these, each of which occurred in a cell that was born before imaging started (Figure 5D–E, Video 15).
 
+![Video 15.](https://cdn.elifesciences.org/articles/36248/elife-36248-video15.mp4.jpg)
+
+**Video 15.:** In the incipient enteroblast (blue dotted circle), GBE-Su(H)-GFP:nls is initially undetectable (GFP:RFP=0.014 at t=0.0 hr). Over time, its GFP intensity increases, eventually reaching the enteroblast threshold (GFP:RFP=0.18 at t=10.5 hr). See Figure 5D. Left video: green, GBE-Su(H)-GFP:nls.; magenta, stem cell and enteroblast nuclei (esg >his2b::CFP); gray, all nuclei (ubi-his2av::mRFP). Right video: inverted gray, GBE-Su(H)-GFP:nls. Each time point is the partial projection of a confocal stack. Scale bar, 2 µm.
+
 We found that enteroblast transitions (Figure 5D–E, gray background shading) occurred over multiple hours (2.4–6.9 hr)—faster than the 2 day upper limit implied by clones, and slower than the minutes observed in some other tissues. Higher initial GFP:RFPs did not correlate with shorter transition times. Whether the imaging protocol itself affected these kinetics is difficult to ascertain, but cumulative imaging stresses were probably not a factor as transitions that occurred later in imaging sessions did not have consistently slower or faster increases in GFP:RFP.
 
 Intriguingly, we also observed esg++ in which GFP:RFP fell from above to below 0.17 over several hours. These events might suggest that some nascent enteroblasts revert to a stem-like state, at least in terms of Notch activity. If so, then enteroblast specification, as marked by loss of mitotic capacity, occurs before commitment, in which terminal fate becomes irreversible. This two-step process is consistent with our observed, multi-hour timescale of Notch activation: during early transition stages, a prolonged period of low-level Notch activity probably results in prolonged expression of high-affinity Notch target genes. These targets, which are currently unknown, could serve to initialize a bistable switch that culminates in irreversible fate commitment (Bray and Gomez-Lamarca, 2018; Ferrell and Xiong, 2001). By lengthening the time between specification and commitment, slower activation may provide nascent enteroblasts with more opportunities to ‘backtrack’ if the tissue environment changes.
 
-## Contacts between newborn siblings are variable and dynamic
+### Contacts between newborn siblings are variable and dynamic
 
 In order to activate Notch, a prospective enteroblast must physically contact a Delta-expressing cell. In principle, newborn sibling cells would be ideally suited to engage in Notch-Delta interactions with each other (Guisoni et al., 2017): newborn cells express both Notch and Delta (Bardin et al., 2010; Ohlstein and Spradling, 2007), and cytokinesis leaves sibling cells juxtaposed. Sibling–sibling Notch activation requires that the two siblings stay in contact long enough to overcome the time delays inherent to Delta-Notch lateral inhibition (Barad et al., 2010; Du et al., 2017; Guisoni et al., 2017). However, fixed-gut studies of twin spot clones imply that after cytokinesis, some sibling pairs become separated (O'Brien et al., 2011). If sibling contacts can be transient, then the relationship between contact dynamics and Notch activation kinetics becomes crucial to enteroblast specification.
 
@@ -142,7 +238,19 @@ We used these classifications to examine the contact dynamics of sibling pairs i
 
 Does sibling contact correlate with real-time Notch activation? To the contrary, both high- and low-contact siblings generally maintained low GFP:RFPs (Figure 6B–C, Videos 16 and 17). Of the 36 individual siblings that we tracked (Figure 6A), only one showed persistent activation of Notch (Cell 1 of Pair L, Figure 6D; Video 18). This particular cell was probably in contact with its sibling for at least one hour, perhaps longer, before its GFP:RFP began to increase (Figure 6D, t=4.0 hr). During the subsequent 6.2 hr, GFP:RFP climbed to the enteroblast threshold even after the two siblings probably lost contact (Figure 6D, t=9.1 hr). (Note that in Figure 6D, a collision of the Figure 6D siblings with a mature enteroblast caused GFP:RFP measurements to spike artifactually between t=2.6–3.5 hr (Cell 1) and t=1.5–3.6 hr (Cell 2). See Figure 6D caption and Video 18.) All other sibling cells remained stem-like, with no persistent Notch activation, until the end of imaging. Had imaging continued, it is possible that additional siblings might have transitioned to enteroblasts. Unfortunately, the influence of sibling contacts on such hypothetical fates cannot be assessed. Nonetheless, a simple model in which sibling–sibling contact causes rapid, asymmetric Notch activation, akin to that of Drosophila sensory organ precursor cells (Schweisguth, 2015), is not supported by our live data.
 
-## A delay in Notch activation?
+![Video 16.](https://cdn.elifesciences.org/articles/36248/elife-36248-video16.mp4.jpg)
+
+**Video 16.:** Following their birth at t=0.0 hr, the two siblings move apart and have probably lost contact by t=1.4 hr (inter-nuclear distance >15.5 µm; c.f. Figure 6—figure supplement 1). The mother stem cell is indicated by the blue dotted circle at t=−1.0 hr; the two siblings are indicated by the two blue dotted circles at t=0.0 and t=9.2 hr. No GFP expression is apparent in either sibling. Left video: green, GBE-Su(H)-GFP:nls; magenta, stem cell and enteroblast nuclei (esg >his2b::CFP); gray, all nuclei (ubi-his2av::mRFP). Right video: inverted gray, GBE-Su(H)-GFP:nls. Each time point is the partial projection of a confocal stack. Scale bar, 5 µm.
+
+![Video 17.](https://cdn.elifesciences.org/articles/36248/elife-36248-video17.mp4.jpg)
+
+**Video 17.:** Following their birth at t=0.0 hr, the two siblings probably remain in contact (inter-nuclear distance <6.0 µm; c.f. Figure 6—figure supplement 1) for at least 6.0 hr. The mother stem cell is indicated by the blue dotted circle at t=−1.2 hr; the two siblings are indicated by the two blue dotted circles at t=0.0 and t=6.0 hr. No GFP expression is apparent in either sibling. Left video: green, GBE-Su(H)-GFP:nls; magenta, stem cell and enteroblast nuclei (esg >his2b::CFP); gray, all nuclei (ubi-his2av::mRFP). Right video: inverted gray, GBE-Su(H)-GFP:nls. Each time point is the partial projection of a confocal stack. Scale bar, 5 µm.
+
+![Video 18.](https://cdn.elifesciences.org/articles/36248/elife-36248-video18.mp4.jpg)
+
+**Video 18.:** Following their birth at t=0.0 hr, the two siblings are probably in contact from t=2.6–3.6 hr, in indeterminate contact from t=3.6–9.0 hr, and separated after t=9.0 hr. The mother stem cell is indicated by the blue dotted circle at t=−1.0 hr. The two siblings are indicated by the two blue dotted circles at t=0.0 and 12.2 hr. A single blue dotted circle at t=10.2 hr indicates when the Notch-activated sibling crosses the enteroblast threshold (GFP:RFP=0.17; c.f. Figure 6D). This sibling exhibits nascent GFP signal at 4.0 hr and increases in GFP intensity for the rest of the movie. The other sibling does not exhibit detectable GFP, but from t=1.5–3.6 hr, it collides with a high-GFP enteroblast (orange dotted circle), which causes GFP signal to ‘bleed over’ in the GFP:RFP analysis (Figure 6D). Left video: green, GBE-Su(H)-GFP:nls; magenta, stem cell and enteroblast nuclei (esg >his2b::CFP); gray, all nuclei (ubi-his2av::mRFP). Right video: inverted gray, GBE-Su(H)-GFP:nls. Each time point is the partial projection of a confocal stack. Scale bar, 5 µm.
+
+### A delay in Notch activation?
 
 Activation of Notch in new cells did not occur immediately, but rather several hours after birth. In Figure 6D, the Notch-activating sibling was 10 hr old when it reached the enteroblast threshold. In Figure 5D–E, cells had already been imaged for 7–12 hr when they reached the enteroblast threshold; as all of these four cells were born before imaging started, their elapsed times after birth were even longer. Because midgut cell divisions are asynchronous and stochastic, this post-birth delay in Notch activation would have been difficult to uncover without the time-resolved tracking of single cells.
 
@@ -152,7 +260,7 @@ Second, an important caveat is that we do not presently know whether Notch activ
 
 Third, if delayed activation is physiological, then how exactly is it generated? And what are the consequences for dynamic fate control? One attractive notion is that a period of latency after birth could enable a cell to integrate a broad range of signals before choosing to either differentiate or self-renew. By allowing cells to process intrinsic and extrinsic fate signals fully, a latent ‘waiting’ period could ensure that individual cell fates are coordinated with overall organ needs.
 
-## Conclusion
+### Conclusion
 
 The Drosophila adult midgut is a premier model for organ renewal, but understanding the dynamics of renewal has been hampered by a lack of robust methodology for live imaging. Here, we have presented an imaging platform that captures the midgut in a near-native state within a live animal, yielding movies of exceptional visual quality and duration. In conjunction, we have described a pipeline for comprehensive, 4D movie analysis. We applied this pipeline to our movies for proof-of-principle analyses that corroborated fixed-tissue observations and uncovered new renewal behaviors. These novel findings ranged from descriptions of the time-resolved, single-cell dynamics of division orientation and apical extrusion to large-scale, population-level measurements of Notch activation. The ability to span cell- and tissue-level scales simultaneously over extended imaging periods opens the door to quantitative study of the spatiotemporal complexity of tissue renewal.
 
@@ -162,7 +270,122 @@ In addition to midgut cell dynamics, our platform offers the opportunity to inve
 
 ## Materials and methods
 
-## Drosophila husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>esgGal4</td>
+      <td>Kyoto DGGR</td>
+      <td>DGRC:112304; FLYB:FBti0033872;</td>
+      <td>FlyBase symbol: w[*]; P{w[+mW.hs]=GawB}NP0726/CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ubi-his2av::mRFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:23650; FLYB:FBti0077846; RRID:BDSC_23650</td>
+      <td>FlyBase symbol: w[*]; P{w[+mC]=His2Av-mRFP1}III.1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>breathlessGal4, UAS-cyt-GFP</td>
+      <td>Other</td>
+      <td></td>
+      <td>w; btl-Gal4, UAS-cytGFP shared by Mark Metzstein</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-LifeactGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:35544; FLYB:FBti0143326; RRID:BDSC_35544</td>
+      <td>FlyBase symbol: y[1] w[*]; P{y[+t*] w[+mC]=UAS-Lifeact-GFP}VIE-260B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-his2b::CFP</td>
+      <td>PMID: 24850412</td>
+      <td></td>
+      <td>w; UAS-his2b::CFP/ (Cyo); + -- shared by Yoshihiro Inoue</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GBE-Su(H)-GFP:nls</td>
+      <td>PMID: 22522699</td>
+      <td></td>
+      <td>w?; mw, GBE-Su(H)-GFPnls/(Cyo); Dr/TM6B -- from ﻿(de Navascués et al., 2012) shared by Joaquin de Navascues</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>act5c-spaghetti squash::GFP</td>
+      <td>PMID:12105185</td>
+      <td></td>
+      <td>w?; act5c-sqh::GFP; Dr/TM6C -- shared by Denise Montell</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ubi-E-cadherin::YFP</td>
+      <td>PMID: 24855950</td>
+      <td></td>
+      <td>w; ubi-E-cadherin::YFP; + -- shared by Denise Montell</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Concanavalin-A-Alexa647</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:C21421</td>
+      <td>25 μg/ml final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sytox Green</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:S7020</td>
+      <td>1 μM final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SiR-tubulin</td>
+      <td>Cytoskeleton</td>
+      <td>Cytoskeleton:CY-SC002</td>
+      <td>0.5 μM final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Human insulin</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma-Aldrich:I0516</td>
+      <td>100 μg/ml final concentration</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Other</td>
+      <td>RRID:SCR_002285</td>
+      <td>StackRegfrom Arganda-Arganda-Carreras et al., 2006b; Correct 3D drift from Parslow et al. (2014); Bioformats plugin</td>
+    </tr>
+    <tr>
+      <td>Software,  algorithm</td>
+      <td>Bitplane Imaris</td>
+      <td>Other</td>
+      <td>RRID:SCR_007370</td>
+      <td>Surpass module; Surface Recognition Wizard; Measurement Points tool</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila husbandry
 
 Fly stocks obtained from other sources:
 
@@ -172,11 +395,11 @@ Generated stocks: act5c-spaghetti squash::GFP; ubi-his2av::mRFP esgGal4, UAS-his
 
 Adult female Drosophila 2.5 days post-eclosion were used in all movies except Video 3, which used a female 7 days post-eclosion. Females were collected 0–4 hr post-eclosion, placed in vials with males, and maintained at 25°C. Flies were fed a diet of standard cornmeal molasses food supplemented with yeast paste (1 g/1.4 ml H2O).
 
-## Fly mounts for extended live imaging on upright, inverted, and light-sheet microscopes
+### Fly mounts for extended live imaging on upright, inverted, and light-sheet microscopes
 
 We designed three types of fly mounts that enable dorsal exposure of the midgut while stabilizing the live intact animal. For upright and inverted microscopes, our design is a modification of a previously published mount for the imaging of adult Drosophila brains (Seelig et al., 2010).
 
-## Upright mount
+#### Upright mount
 
 To prepare the upright mount (Figure 1—figure supplement 1A–B), a stainless steel shim of 0.001 in thickness (Trinity Brand Industries, 612 H-1) was cut into 19 mm × 13 mm rectangles. From these rectangles, abdomen-sized cutouts were excised either by hand using an 18-gauge PrecisionGlide needle (Becton Dickinson, 305196) or by laser cutting using a micro laser cutting system (see Figure 1—figure supplement 2 for CAD file). In addition, we prepared 60 mm Petri dishes (Fisher, FB0875713A) with a hole 10 mm in diameter drilled into the bottom. Each shim was glued onto the base of a 60 mm petri dish with clear silicone glue (DAP, 00688) and allowed to dry overnight.
 
@@ -184,15 +407,15 @@ The mount includes a feeder tube to provide the animal with liquid nutrients dur
 
 A protective bottom chamber (Figure 1—figure supplement 1A') enclosed the ventral side of the animal during imaging to prevent desiccation. To create the chamber, a 3 mm wide channel was drilled down the wall of a 35 mm Petri dish (Olympus Plastics, 32–103). Kimwipes (4-ply rounds, Fisher Scientific, 06–666) were cut and placed in the bottom of the humidity chamber to be soaked with water before use.
 
-## Inverted mount
+#### Inverted mount
 
 The inverted mount (Figure 1—figure supplement 1C) was similar to the upright mount, but used a glass bottomed Petri dish with two 1 mm spacers glued approximately 10 mm apart. Spacers were made from cut pieces of glass microscope slides (63720–05, Electron Microscopy Sciences) and were adhered with silicone glue. The same metal shim was used as with the upright mount, but was not affixed to the dish until the animal was glued and its gut stabilized (see below). Once the animal was prepared, the mounting shim was positioned with animal’s dorsal side toward the glass bottom of the dish and glued to the spacers using KWIK-SIL adhesive silicone glue (World Precision Instruments, 60002).
 
-## Light-sheet mount
+#### Light-sheet mount
 
 Zeiss light sheet systems require a submersible chamber. To create such a chamber, we used the barrel of a 1 ml syringe in which one end was open to air (Figure 1—figure supplement 1D). A 5 mm x 8 mm square was cut into the side of the syringe barrel, and a metal shim with an abdominal cutout was affixed to the square window using silicone glue. A second window was cut into the opposite side of the barrel to provide physical access for mounting the animal and feeder tube inside. Once the animal and feeder tube were in place, the access window was sealed using a second metal shim and KWIK-SIL glue (World Precision Instruments, 60002). The bottom end of the syringe was sealed with dental wax (Surgident, 50092189) and the barrel was submerged in media in the Zeiss sample chamber. In this manner, the midgut was bathed in media during imaging while the animal’s head and ventral surface remained in an open-air environment.
 
-## Composition of imaging media and agarose
+### Composition of imaging media and agarose
 
 Media for midgut imaging was based on prior recipes for Drosophila organ culture ex vivo (Morris and Spradling, 2011; Zartman et al., 2013). Schneider’s Insect Medium (Sigma-Aldrich, S0146) was supplemented with 5% FBS (Sigma-Aldrich, F4135), 5% fly extract (DGRC) (Currie et al., 1988), 100 µg/mL human insulin (Sigma-Aldrich, I0516) and 0.5% penicillin-streptomycin (Invitrogen, 15140). (Without antibiotics, the imaging media became visibly contaminated after several hours of imaging.) Insulin was added fresh on the day of imaging.
 
@@ -200,7 +423,7 @@ Low-melting point agarose was used to stabilize the midgut during imaging. To ma
 
 Where indicated in the text, various fluorescent dyes were added to the imaging media to visualize particular cell structures or conditions. (1) Concanavalin A-Alexa647 (Invitrogen, C21421) was used to stain the basement membrane. A stock solution of 5 mg/mL Concanavalin A in 0.1 M sodium bicarbonate was diluted 1:200 in 1x imaging media to obtain a final working concentration of 25 µg/mL. A drop of this media was placed on the dorsal cuticle prior to cutting the cuticle window. Agarose and subsequently added media did not contain Concanavalin A. (2) SiR-Tubulin (Cytoskeleton, CY-SC002) was used to stain microtubules. SiR-Tubulin was added to 1x imaging media for a final working concentration of 0.5 µM. A drop of this media was placed on the dorsal cuticle prior to cutting the cuticle window. Agarose and subsequently added media did not contain SiR-tubulin. (3) Sytox Green (ThermoFischer, S7020) was used to mark dying cells. A stock solution of 5 mM Sytox Green in dimethyl sulfoxide (DMSO) was diluted 1:5000 in 1x imaging media to a final concentration of 1 µM. Sytox-Green-containing media was placed over the agarose immediately prior to imaging.
 
-## Animal preparation
+### Animal preparation
 
 A narrated tutorial video (Video 1) provides step-by-step instructions for mounting the animal and exposing the midgut. Wings were broken off near the hinge using forceps. Flies were placed in a microfuge tube on ice for at least 1 hr before being glued dorsal side down to the fly mount (Figure 1—figure supplement 1) using KWIK-SIL glue. To optimize access to region R4 of the gut, the fly was tilted toward its left side when glued to the mount. For long-term survival of the animal, its right-side spiracles were kept open (Video 1). After the glue had dried, the feeder tube, filled with 10% sucrose (w/v) in H2O, was secured to the fly mount with dental wax (Surgident, 50092189) and positioned such that the cotton wick was in reach of the animal’s proboscis. The protective bottom chamber was attached to the bottom of the Petri dish with masking tape (Figure 1—figure supplement 1A').
 
@@ -208,15 +431,15 @@ To expose the midgut, a window was cut into the dorsal cuticle as follows. First
 
 We explored the alternative of cutting a window in the ventral, rather than dorsal, cuticle, but we found a ventral window to be unsuitable for long-term viability. When animals were mounted ventrally, the feeder tube could not be positioned correctly and the spiracles could not be left unoccluded. In addition, the pliable nature of the ventral cuticle often resulted in unpredictable tearing during cutting.
 
-## Microscopy
+### Microscopy
 
 An upright Leica SP5 multi-photon confocal microscope and a 20x water immersion objective (Leica HCX APO L 20x NA 1.0) were used to acquire the movies that were analyzed in this study. The microscope was controlled via a Leica CTR6500 controller card on a Z420 (Hewlett Packard) workstation with 16 GB memory and a Xeon CPU E5-1620 (Intel) running Windows 7 Pro and the Leica Application Suite: Advanced Fluorescence (LAS AF, v.2.7.3.9723). In addition, an inverted Leica SP8 confocal microscope with a 20x oil immersion objective (Leica HC PL APO IMM CORR CS2 NA 0.75) and a Zeiss light sheet Z.1 with a 20x water immersion objective (Zeiss light sheet detection optics 20X NA 1.0) were used to test the fly mounts for these microscope setups. For upright and inverted setups, a humidity box was assembled around the lens and the specimen to prevent desiccation (Figure 1—figure supplement 1B). The humidity box was formed from a pipette box lid with a hole for the lens and an inlet tube for humidified air. The box was connected to a 500 ml Pecon humidification bottle containing distilled water, and humidified ambient air was piped into the box via a Pecon CTI-Controller 3700. In addition, for upright setups, the Kimwipes in the protective bottom chamber were saturated with distilled water. For upright setups, 2–3 ml of imaging media were added to the sample, spanning the distance between the exposed midgut and the water immersion objective. Movies were captured at room temperature (20–23°C). Confocal stacks were acquired with a z-step of 2.98 µm and typically contained ~35 slices. For ex vivo imaging (Figure 1—figure supplement 3A), the upright Leica SP5 multi-photon confocal microscope was used with a 20x oil immersion objective (HC PL APO 20x/IMM N.A. 0.7).
 
-## Ex vivo imaging
+### Ex vivo imaging
 
 To provide a positive control for Sytox Green dead-cell staining (Figure 1—figure supplement 3A), we generated dying midgut cells by dissecting midguts and culturing them ex vivo for 2.5 hr in Schneider’s Medium that contained 1 µM Sytox Green (ThermoFisher, S7020). An 8-well Secure-Seal spacer sticker (ThermoFisher S24737) was used to form ‘wells’ on a microscope slide (Fischer Electronic Microscopy Sciences 63720–05). One midgut and 7 µl of Sytox-containing medium were placed in each well. A coverslip (Fisher Scientific 12-545-81) was placed on top of each well. Midguts were imaged immediately and 2.5 hr after mounting.
 
-## Movie registration and cell masking in Fiji
+### Movie registration and cell masking in Fiji
 
 After acquisition, movies were processed on a Mac Pro computer (OS X 10.8.5) with a 3.2 GHz quad-core Intel Xeon processor and 20 GB memory. LIF files (*.lif) from LAS AF were uploaded into Fiji as a hyperstack for registration. To correct for X-Y drift, movies were converted to RGB files and processed with the Fiji plugin StackReg (Arganda-Carreras et al., 2006a). To correct for global volume movements, movies were processed with the Fiji plugin Correct 3D Drift (Parslow et al., 2014).
 
@@ -226,7 +449,7 @@ For identification of individual cells, intensity thresholding of the ubiquitous
 
 Masked nuclei for these three populations were added to the raw hyperstack as unique channels for use in Bitplane Imaris (see below). The two types of mature cells, enterocytes and enteroendocrine cells, were then distinguished by a size filter in Imaris; nuclei ≤ 113 µm3 were classified as enteroendocrine, whereas nuclei > 113 µm3 were classified as enterocyte. To maintain metadata structure for 4D Imaris analysis (see below), final movies were exported to OME-TIFF format (*.ome.tif) using the BioFormats plugin in Fiji.
 
-## Cell identification and tracking in Imaris
+### Cell identification and tracking in Imaris
 
 To perform cell tracking, Fiji processed stacks of midgut movies were opened in Bitplane Imaris from OME-TIFF format (*.ome.tif) files. Once converted to an Imaris *.ims file, the 4D volumes were visually inspected using the Surpass module to verify the accuracy of image processing and file conversion. Cell segmentation was then performed by applying the Surface Recognition Wizard module to the masked cell channels generated in Fiji (see above). Final products were visually compared to raw channels to confirm cell-type recognition.
 
@@ -234,9 +457,9 @@ Cell surfaces were tracked using the Brownian motion tracking algorithm. Automat
 
 For Figures 5 and 6 and their associated data, a modification of the above protocol was used. To identify cells that transitioned over time from a stem-like state (GFP:RFP ≤0.17) to an enteroblast state (GFP:RFP >0.17), cells expressing esg >his2b::CFP were identified in Imaris. Their GBE-Su(H)-GFP:nls intensities and nuclear volume were determined at each time point. Cells exhibiting increasing GFP intensities were identified and selected for further analysis.
 
-## Spatiotemporal analyses of enterocyte extrusion
+### Spatiotemporal analyses of enterocyte extrusion
 
-## Analyses of the E-cadherin::YFP ring
+#### Analyses of the E-cadherin::YFP ring
 
 Extruding enterocytes were identified by visual inspection. To measure the dynamics of the E-cadherin::YFP ring (Figure 3B–E), Fiji-processed movies were opened from OME-TIFF files (*.ome.tif) in Bitplane Imaris and viewed as 3D volumes using the Surpass module. Vertices of the E-cadherin::YFP ring that outlined the extruding cell were identified by visual inspection at each movie time point. The Measurement Points tool was used to place a polygon-mode measurement point at each vertex. In addition, a plane representing the basal epithelium was defined by selecting three Measurement Points on the basal epithelial surface underlying the extruding cell. To identify the position of the basal surface, we used either the basement membrane stain Conconavalin-A-Alexa647 or the background fluorescence of the cytoplasm of enterocytes when movies were digitally overexposed. The spatial coordinates of all these measurement points were exported as comma-separated values and imported into MATLAB.
 
@@ -246,31 +469,31 @@ To calculate the cross-sectional area of the ring (Figure 3C), the centroid of t
 
 To determine the apical-basal position of the E-cadherin::YFP ring, we calculated the orthogonal distance from the centroid of the ring to the basal plane. This distance was calculated as the dot product of two vectors: the unit normal vector of one of the basal measurement points, and a vector from the centroid to basal measurement point that was used as the origin of the unit normal vector.
 
-## Analyses of the extruding nucleus
+#### Analyses of the extruding nucleus
 
 We defined the duration of nuclear extrusion (Figure 3F) as the length of time that the extruding cell’s nucleus was moving apically. To determine this duration, Fiji-processed movies were opened from OME-TIFF files (*.ome.tif) in Bitplane Imaris and viewed as 3D volumes using the Surpass module. The nuclei of extruded enterocytes were digitally isolated via clipping planes and viewed in cross-section. The nuclei of enterocytes surrounding the extruding cell were used to establish the baseline level of the epithelium. The duration of nuclear extrusion was measured from the time point at which apical movement of the nucleus was first apparent to the time point of maximal apical displacement from the baseline. The centroid of the nucleus was calculated from surface-recognized objects in Imaris. The distance of the nucleus from the basal surface (Figure 3D) was calculated as the orthogonal distance from the centroid of the nucleus to the basal plane, as defined by the basal epithelium reference points described above.
 
-## Spatiotemporal analyses of stem-cell mitoses
+### Spatiotemporal analyses of stem-cell mitoses
 
-## Mitotic duration
+#### Mitotic duration
 
 Mitoses were identified by visual inspection of maximum intensity z-projections in Fiji and confirmed in Bitplane Imaris using the Surpass module for 3D visualization. To calculate the durations of individual mitoses (Figure 3H), we designated the start point as the initiation of nuclear condensation in the mother cell and the end point as the decondensation of the two sets of daughter chromosomes.
 
-## Mitotic index
+#### Mitotic index
 
 To calculate mitotic index, we used nine movies of ubi-his2av::mRFP-expressing midguts that each contained at least one identifiable division. Movies were processed in Fiji, and nuclei were identified and tracked in Imaris as described above. Mitotic index was calculated as TM/TSC, where TM is the sum of the durations of 39 individual mitoses in the 11 movies, and TSC is the sum of the durations of ‘screen time’ for all the stem cells in the same movies. Stem cell ‘screen time’ was calculated as the product of the number of stem cells at t=0 in a particular movie and the duration of that movie. (On occasion, stem cells disappeared or appeared over the course of a movie, but these events were infrequent and are not included in our calculations.) To determine the number of stem cells in a movie at t=0, we used one of two approaches. For midguts that expressed esg >his2av::CFP and GBE-Su(H)-GFP:nls in addition to ubi-his2av::mRFP (2 of 9 movies), stem cells were identified as CFP+ cells with GFP:RFP <0.17 (seeFigure 5), and the number of stem cells was counted following Imaris surface recognition protocols as described above. For midguts in which stem cells were not identifiable through specific markers (7 of 9 movies), the number of stem cells was estimated as 20% of total ubi-his2av::mRFP-expressing cells (de Navascués et al., 2012; O'Brien et al., 2011).
 
-## Horizontal-vertical orientation
+#### Horizontal-vertical orientation
 
 To measure the real-time horizontal-vertical orientations of dividing cells (Figure 4A–E), Fiji-processed movies were opened as OME-TIFF files (*.ome.tif) in Bitplane Imaris. For each mitotic cell, the positions of the spindle poles and of the basal epithelial surface were determined at each time point between the start and the end of mitosis (Figure 4—figure supplement 1). Spindle pole positions were inferred from the morphology of the condensed chromosomes and marked using the Measurement Points tool. A plane representing the basal epithelium was defined using the Measurement Points tool to place three points on the basal epithelial surface underlying the spindle. To identify the position of the basal surface, we used either the basement membrane stain Conconavalin-A-Alexa647 or the background fluorescent signal of the cytoplasm of enterocytes made visible when movies were digitally overexposed.
 
 The coordinates of the spindle poles and basal planes in 3D space were exported as Excel files and opened in Mathematica. To calculate the spindle angle, we defined two vectors: the ‘spindle pole vector’, which was the difference between the coordinates of the two spindle poles, and the ‘basal plane vector’, which was the cross product of two vectors determined from the three points defining the basal plane. The spindle angle was calculated as the dot product of the spindle pole vector and the basal plane vector.
 
-## Longitudinal-circumferential orientation
+### Longitudinal-circumferential orientation
 
 To measure the longitudinal-circumferential orientation of dividing cells (Figure 4F–H), movies were analyzed as maximum-intensity projections in Fiji. Longitudinal and circumferential axes were determined for each mitotic cell by visual inspection, based on the local morphology of the midgut tube and the orientation of the ellipsoid nuclei of the surrounding enterocytes. Division orientation was measured at the time point when we observed decondensation of the daughter chromosomes, an event signifying the end of mitosis. To calculate longitudinal-horizontal orientation, we used the Fiji Angle Tool, which measures an angle defined by two vectors formed from three points. One vector was defined by the difference between the positions of the two daughter cells, and the other vector was defined by the longitudinal axis of the midgut tube.
 
-## Orientation relative to neighboring enteroblasts
+#### Orientation relative to neighboring enteroblasts
 
 We identified mitoses in which the dividing cell contacted either one enteroblast or two enteroblasts using visual inspection. To determine the spatial coordinates of the mitotic cells and the enteroblasts, Fiji-processed movies were opened as OME-TIFF files (*.ome.tif) in Bitplane Imaris. Nuclei were recognized using the Surface Recognition Wizard. The 3D coordinates of the relevant cells were exported into MATLAB.
 
@@ -280,11 +503,11 @@ For mitotic cells contacting two enteroblasts, we designated the reference enter
 
 Mitotic cells that contacted enteroblasts were excluded from analyses of horizontal-vertical and planar orientations.
 
-## Quantitative assessment of Notch reporter activation
+### Quantitative assessment of Notch reporter activation
 
 Activation of the Notch reporter GBE-Su(H)-GFP:nls was measured in movies of fate sensor midguts (esgGal4, UAS-his2b::CFP, GBE-Su(H)-GFP:nls; ubi-his2av::mRFP) (Figures 5 and 6). As described above, Fiji-processed movies were opened as OME-TIFF files (*.ome.tif) in Bitplane Imaris, and surface recognition was performed to identify individual cell nuclei using the Add New Surfaces function in the Surpass Module. To quantify GBE-Su(H)-GFP:nls activation, we calculated the normalized ratio of GFP:nls and His2av::mRFP intensities as follows. (1) To generate normalized intensity values, raw intensity values for GFP and RFP fluorescence of single cells at each individual time point were determined from cell nuclei. These raw intensities were exported to MATLAB and divided by the maximum intensity in that movie to yield normalized intensities. (2) The ratio of normalized GFP:RFP intensities was calculated for each cell at each time point. The resulting real-time, normalized GFP:RFPs enabled quantitative comparison of GBE-Su(H)-GFP:nls expression between different cells, at different times, or across different movies.
 
-## Calculating inter-nuclear distances of progenitor pairs
+### Calculating inter-nuclear distances of progenitor pairs
 
 To perform the initial analysis of inter-nuclear distances for contacting and non-contacting progenitor pairs (Figure 6—figure supplement 1), we used movies of midguts with genotype esgGal4, UAS-LifeactGFP; ubi-His2av::RFP. For this analysis, two esg+ cells were designated as a pair if they were mutually closer to each other than to any other esg+ cell. Pairs were selected randomly from single time points in four separate movies. Movies were examined in 4D using the Surpass Module in Imaris, and esg+ pairs were identified as either contacting or non-contacting on the basis of their LifeactGFP signal. To determine the inter-nuclear distance of a pair, the (x,y,z) coordinates for the centroid of each nucleus were determined on the basis of surface recognition in Imaris. The distance D between the two centroids was calculated using the equation D = √((x2-x1)2 + (y2-y1)2 + (z2-z1)2).
 

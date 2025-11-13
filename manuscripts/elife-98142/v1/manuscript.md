@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02t274463 Molecular, Cellular, and Developmental Biology Department University of California, Santa Barbara Santa Barbara United States
+1. Molecular, Cellular, and Developmental Biology Department University of California, Santa Barbara Santa Barbara United States ([ROR:02t274463](https://ror.org/02t274463))
 
 † Corresponding author
 
 ## Abstract
 
-The effects of environmental stress on animal life are gaining importance with climate change. Diapause is a dormancy program that occurs in response to an adverse environment, followed by resumption of development and reproduction upon the return of favorable conditions. Diapause is a complex trait, so we leveraged the Drosophila Genetic Reference Panel (DGRP) lines and conducted a genome-wide association study (GWAS) to characterize the genetic basis of diapause. We assessed post-diapause and non-diapause fecundity across 193 DGRP lines. GWAS revealed 546 genetic variants, encompassing single nucleotide polymorphisms, insertions, and deletions associated with post-diapause fecundity. We identified 291 candidate diapause-associated genes, 40 of which had previously been associated with diapause, and 89 of which were associated with more than one SNP. Gene network analysis indicated that the diapause-associated genes were primarily linked to neuronal and reproductive system development. Similarly, comparison with results from other fly GWAS revealed the greatest overlap with olfactory-behavior-associated and fecundity-and-lifespan-associated genes. An RNAi screen of selected candidates identified two neuronal genes, Dip-γ and Scribbler, to be required during recovery for post-diapause fecundity. We complemented the genetic analysis with a test of which neurons are required for successful diapause. We found that although amputation of the antenna had little to no effect on non-diapause lifespan, it reduced diapause lifespan and post-diapause fecundity. We further show that olfactory receptor neurons and temperature-sensing neurons are required for successful recovery from diapause. Our results provide insights into the molecular, cellular, and genetic basis of adult reproductive diapause in Drosophila .
+The effects of environmental stress on animal life are gaining importance with climate change. Diapause is a dormancy program that occurs in response to an adverse environment, followed by resumption of development and reproduction upon the return of favorable conditions. Diapause is a complex trait, so we leveraged the Drosophila Genetic Reference Panel (DGRP) lines and conducted a genome-wide association study (GWAS) to characterize the genetic basis of diapause. We assessed post-diapause and non-diapause fecundity across 193 DGRP lines. GWAS revealed 546 genetic variants, encompassing single nucleotide polymorphisms, insertions, and deletions associated with post-diapause fecundity. We identified 291 candidate diapause-associated genes, 40 of which had previously been associated with diapause, and 89 of which were associated with more than one SNP. Gene network analysis indicated that the diapause-associated genes were primarily linked to neuronal and reproductive system development. Similarly, comparison with results from other fly GWAS revealed the greatest overlap with olfactory-behavior-associated and fecundity-and-lifespan-associated genes. An RNAi screen of selected candidates identified two neuronal genes, Dip-γ and Scribbler, to be required during recovery for post-diapause fecundity. We complemented the genetic analysis with a test of which neurons are required for successful diapause. We found that although amputation of the antenna had little to no effect on non-diapause lifespan, it reduced diapause lifespan and post-diapause fecundity. We further show that olfactory receptor neurons and temperature-sensing neurons are required for successful recovery from diapause. Our results provide insights into the molecular, cellular, and genetic basis of adult reproductive diapause in Drosophila.
 
 ## Introduction
 
@@ -29,27 +29,27 @@ We used the DGRP to carry out a Drosophila GWAS and identify genes and gene clas
 
 ## Results
 
-## Quantifying successful diapause recovery across the DGRP lines
+### Quantifying successful diapause recovery across the DGRP lines
 
 Key features of Drosophila diapause include ovarian arrest and post-diapause recovery of fertility (the ability to produce any progeny) and fecundity (the number of progeny produced). Whereas the majority of studies of Drosophila diapause focus on arrest of oogenesis, we chose to quantify diapause recovery by assessing the ability of newly eclosed flies to undergo 35 days of diapause, recover, and produce viable progeny, which is a more stringent test of success (Figure 1A). Additionally, in pilot experiments, post-diapause fecundity exhibited sufficient variation to be useful for a GWAS.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/98142/elife-98142-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic of experimental workflow. (B) Average number of progenies produced (fecundity) in a 4-day individual female fly mating experiment of DGRP lines either as non-diapausing (yellow) or after a 35-day post-diapause (blue) virgin flies. Each dot represents the average fecundity, and the line above represents the standard error. DGRP line numbers are indicated wherever the post-diapause fecundity exceeds the non-diapause fecundity. (C) Normalized post-diapause fecundity average of (individual post-diapause fecundity/mean non-diapause fecundity) of each DGRP line. (D) Correlation of post-diapause to non-diapause fecundity. Pearson’s r=0.5682. r2=0.3228. (E–F) Frequency distribution of DGRP lines fecundity under non-diapause (E) and of the normalized post-diapause fecundity (F). (G) Average 4-day fecundity of single female flies, each crossed with two young Canton-S male flies, aged for 1, 35, or 42 days in non-diapause conditions or kept in diapause conditions for 35 or 42 days followed by recovery. One-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons. n is the number of individual female fly fecundity measured, and whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR).Figure 1—source data 1.Quantification of fecundity of DGRP lines in non-diapausing and post-diapausing conditions.Figure 1—source data 2.Figure 1D–F.Figure 1—source data 3.
+**Figure 1.:** (A) Schematic of experimental workflow. (B) Average number of progenies produced (fecundity) in a 4-day individual female fly mating experiment of DGRP lines either as non-diapausing (yellow) or after a 35-day post-diapause (blue) virgin flies. Each dot represents the average fecundity, and the line above represents the standard error. DGRP line numbers are indicated wherever the post-diapause fecundity exceeds the non-diapause fecundity. (C) Normalized post-diapause fecundity average of (individual post-diapause fecundity/mean non-diapause fecundity) of each DGRP line. (D) Correlation of post-diapause to non-diapause fecundity. Pearson’s r=0.5682. r2=0.3228. (E–F) Frequency distribution of DGRP lines fecundity under non-diapause (E) and of the normalized post-diapause fecundity (F). (G) Average 4-day fecundity of single female flies, each crossed with two young Canton-S male flies, aged for 1, 35, or 42 days in non-diapause conditions or kept in diapause conditions for 35 or 42 days followed by recovery. One-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons. n is the number of individual female fly fecundity measured, and whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR).
 
 DGRP lines (n=193) were allowed to develop under non-diapause conditions (25°C and 12:12 L:D). Virgin females were collected and transferred to diapausing conditions (10°C and 8:16 L:D) for 5 weeks. Subsequently, flies were shifted to 18°C for 1 day, followed by incubation at 25°C in a fresh vial of fly food for recovery. We chose 5 weeks based on pilot studies that showed that nearly all DGRP lines showed excellent survival at 5 weeks in diapause conditions while exhibiting sufficient variation in post-diapause fecundity to carry out GWAS. Beyond 5 weeks, fecundity was low, and there was insufficient variation for a GWAS.
 
 We evaluated the ability of post-diapause flies to reproduce by mating individual females with two Canton-S (CS) male control (non-diapausing) flies for 4 days. Afterward, parents were removed, and progeny were allowed to develop for 12 more days. We then measured post-diapause fecundity by counting the number of adult progeny that eclosed. A minimum of 20 female flies per DGRP line were tested. Non-diapause fecundity was measured by setting crosses immediately upon collecting virgin flies. The average non-diapause and post-diapause 4-day fecundity of DGRP lines is shown in Figure 1B, arranged in ascending order of non-diapause fecundity. In general, most lines showed lower fecundity post-diapause compared to newly eclosed flies in optimal conditions, as previously reported for one inbred wild strain (Tatar et al., 2001). However, there were interesting exceptions. For example, lines 309, 738, and 853 exhibited better fecundity post-diapause compared even to young flies in optimal conditions (Figure 1—source data 1). The DGRP lines exhibit variability in fecundity both post-diapause and in non-diapause conditions (Figure 1B; Durham et al., 2014). Therefore, we normalized post-diapause to non-diapause fecundity (Figure 1C, Figure 1—source data 1). The broad-sense heritability for normalized post-diapause fecundity was 0.51 (see Materials and methods). The lines that showed poor non-diapause fecundity that improved after diapause (e.g. 362, 737, 822) suggested that there might be a genetic trade-off between the two. However, the overall correlation (Figure 1D) between non-diapause and post-diapause fecundity was 32.3% (R2=0.3228, Pearson’s correlation coefficient, r=0.5682), suggesting a positive rather than negative correlation overall between post-diapause and non-diapause fecundity. The frequency distributions of 4-day fecundity for the non-diapause (Figure 1E) and normalized fecundity (Figure 1F) conditions are shown. Although fecundity is lower post-diapause than in young flies, even in CS controls, it is higher than for flies maintained in non-diapause conditions for 35 or 42 days (Figure 1G, Figure 1—source data 3).
 
-## GWAS for diapause using the DGRP tool
+### GWAS for diapause using the DGRP tool
 
 The normalized fecundity scores (average of normalized post-diapause fecundity [individual post-diapause 4-day fecundity/average non-diapause 4-day fecundity]) served as the basis for conducting a GWAS using the DGRP2 web tool (Huang et al., 2014; Mackay et al., 2012). A total of 546 genetic variants, encompassing single nucleotide polymorphisms (SNPs) and insertions/deletions, were identified as associated with diapause fecundity (Figure 2A and B, Figure 2—source data 1). When a variant is located within 1 kb up- or downstream of an annotated gene, or within the gene, it is considered potentially associated with that gene. We thus identified 291 candidate diapause-associated fecundity genes. Notably, 40 out of the 291 genes had previously been reported to be associated with diapause (Figure 2—source data 2) either through functional analysis (e.g. insulin receptor and couch potato [cpo]) (Kankare et al., 2012; Kubrak et al., 2014; Schmidt et al., 2008; Sim and Denlinger, 2013; Zhang and Denlinger, 2011), due to changes in gene expression (e.g. expanded [ex] and Laminin A [LanA]) (Zhao et al., 2016), or associated with cold tolerance (β-Tub97EF; Myachina et al., 2017; Figure 2—source data 2). Eighty-nine genes were associated with more than one diapause-associated variant (e.g. at least two different SNPs) (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/98142/elife-98142-fig2-v1.jpg)
 
-**Figure 2.:** Drosophila diapause.(A) Manhattan plot for genome-wide association distribution. The position of each point along the y-axis indicates –log10(p-value) of association of a single nucleotide polymorphism (SNP), insertion, or deletion. Points above the blue line have a p-value<1e–5. The red line represents Bonferroni-corrected p-value = 4.8e–8. (B) Q-Q plot of p-values from the Drosophila Genetic Reference Panel (DGRP) single variant genome-wide association study (GWAS) with the red line representing expected p-value and observed p-values deviating (black dots) from expected. (C) Numbers of genetic variants and candidate genes associated with diapause according to the GWAS. (D) Subnetworks from the Cytoscape analysis showing q-value (using the Benjamini-Hochberg procedure) for each subnetwork identified.Figure 2—source data 1.Results using the DGRP2 tool to analyze the ratio of post-diapause to non-diapause fecundity.Figure 2—source data 2.Genes within 1 kb upstream or downstream of the gene variants associated with diapause are candidate diapause-associated genes. The number of different associations is provided along with references for genes previously associated with diapause.
+**Figure 2.:** (A) Manhattan plot for genome-wide association distribution. The position of each point along the y-axis indicates –log10(p-value) of association of a single nucleotide polymorphism (SNP), insertion, or deletion. Points above the blue line have a p-value<1e–5. The red line represents Bonferroni-corrected p-value = 4.8e–8. (B) Q-Q plot of p-values from the Drosophila Genetic Reference Panel (DGRP) single variant genome-wide association study (GWAS) with the red line representing expected p-value and observed p-values deviating (black dots) from expected. (C) Numbers of genetic variants and candidate genes associated with diapause according to the GWAS. (D) Subnetworks from the Cytoscape analysis showing q-value (using the Benjamini-Hochberg procedure) for each subnetwork identified.
 
-## Network analysis of diapause-associated genes
+### Network analysis of diapause-associated genes
 
 Using the gene list obtained from the GWAS, we performed a gene network analysis using the GeneMANIA application within Cytoscape (Shannon et al., 2003; Warde-Farley et al., 2010). This application facilitates the generation of network predictions based on a combination of known physical and genetic interactions, co-localization, co-expression, shared protein domains, pathway data, and predicted functional relationships between genes. Additionally, it identifies subnetworks of genes related by functional Gene Ontology (GO). Enriched subnetworks are identified by dividing the number of genes from the input set by the total number of genes associated with a specific gene ontology. The subnetwork analysis is presented in Figure 2D, Figure 2—source data 1. Two primary classes of GO terms are significantly enriched in the diapause GWAS set compared to the genome as a whole: nervous system development and the reproductive system/gonad development. These two categories are consistent with the idea that changes in the environment are sensed by the nervous system, and the information is relayed to the reproductive system.
 
@@ -57,15 +57,15 @@ We also compared the list of diapause-associated genes to results of other Droso
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/98142/elife-98142-fig3-v1.jpg)
 
-**Figure 3.:** (A–T) Venn diagrams illustrate the intersection of genes associated with diapause identified through GWAS (diapause-GWAS) with genes from other behavior-related gene lists obtained from various studies. The diapause-GWAS gene set is represented as the first set throughout the figure, while subsequent sets represent different behavior-related gene lists identified in separate studies. The percentage of common genes compared to the total genes from different respective behavior-associated gene lists is provided for each Venn diagram. p-Values of overlap to the diapause gene list determined by Fisher’s exact tests are also provided. Venn diagrams are arranged in the order of p-values.Figure 3—source data 1.Diapause-GWAS gene lists are compared to other behavior-associated gene lists from different studies (DOIs are included in each tab from where gene lists are obtained). Common genes identified, Venn diagram, and p-values are added in each tab of the Excel sheet.
+**Figure 3.:** (A–T) Venn diagrams illustrate the intersection of genes associated with diapause identified through GWAS (diapause-GWAS) with genes from other behavior-related gene lists obtained from various studies. The diapause-GWAS gene set is represented as the first set throughout the figure, while subsequent sets represent different behavior-related gene lists identified in separate studies. The percentage of common genes compared to the total genes from different respective behavior-associated gene lists is provided for each Venn diagram. p-Values of overlap to the diapause gene list determined by Fisher’s exact tests are also provided. Venn diagrams are arranged in the order of p-values.
 
-## RNAi analysis of GWAS candidates identifies neural genes required for recovery
+### RNAi analysis of GWAS candidates identifies neural genes required for recovery
 
 To assess the functional significance of the top candidates, we conducted an RNAi screen. First, we evaluated the effectiveness of Gal4 under diapausing conditions. As a control, we crossed Mat-α-tub-Gal4, which drives expression in the female germline to UASp-F-tractin.tdTomato to assess the effectiveness of Gal4-mediated expression at 10°C. We compared tdTomato expression in flies maintained at different temperatures for 3 weeks. Compared to 25°C (Figure 4A) and 18°C (Figure 4B), flies at 10°C exhibited as high or higher expression of tdTomato (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/98142/elife-98142-fig4-v1.jpg)
 
-**Figure 4.:** (A–C) Mat-ɑ-tub-Gal4 driving expression of UASp-F-tractin.tdTomato (red) at the indicated temperatures. Scale bars are 100 µm. (D) Quantification of zpg RNAi knockdown in stage 3 egg chambers normalized to the level of Zpg in the germarium (one-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons). The numbers (n) of stage 3 egg chambers quantified are shown, and whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR). (E–H) Representative images of egg chambers stained with anti-Zpg antibody (green) from either control (no-knockdown) (E, E’) or knockdown of zpg (F-H’) driven by Mat-ɑ-tub-Gal4 at different temperatures. (E’–H’) are higher magnification, single channel views of the ovarioles shown in (E–H). Scale bars are 100 µm in (E–H) and 20 µm in (E’–H’). All flies in (A–H’) were kept at respective temperatures for 3 weeks. (I) Experimental design for RNAi knockdown specifically during recovery for the experiment shown in (J). The temperature-sensitive Gal80 repressor of Gal4 prevented RNAi expression during development and diapause. Incubation at 30°C during recovery inactivates Gal80, allowing Gal4-mediated RNAi knockdown. (J) Ubiquitous knockdown of Dip-γ or sbb with tub Gal4 specifically during recovery as shown in (I) significantly reduces post-diapause/non-diapause fecundity compared to the control (tubGal80 >TS;tubGal4Ctrl RNAi #9331). (K) Pan-neuronal RNAi knockdown of Dip-γ and sbb with nSybGal4 significantly reduces post-diapause/non-diapause fecundity compared to the control (nSyb Gal4>Ctrl RNAi #54037). (L) Glia-specific knockdown of Dip-γ or sbb with Repo Gal4 causes little or no reduction in post-diapause/non-diapause fecundity (Control- Repo Gal4>Ctrl RNAi #54037). In (J–L), one-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons. n is the number of individual female flies tested, and whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR).Figure 4—source data 1.Figure 4D.Figure 4—source data 2.Fecundity assessment of RNAi-mediated knockdown of different genes from the GWAS list. Non-diapause and post-diapause fecundity were measured, and post-diapause fecundity was normalized by dividing individual post-diapause female fly fecundity by average non-diapause fecundity.Figure 4—source data 3.-γ and sbb.Fecundity assessment of pan-neuronal and glial-specific RNAi-mediated knockdown of Dip-γ and sbb.
+**Figure 4.:** (A–C) Mat-ɑ-tub-Gal4 driving expression of UASp-F-tractin.tdTomato (red) at the indicated temperatures. Scale bars are 100 µm. (D) Quantification of zpg RNAi knockdown in stage 3 egg chambers normalized to the level of Zpg in the germarium (one-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons). The numbers (n) of stage 3 egg chambers quantified are shown, and whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR). (E–H) Representative images of egg chambers stained with anti-Zpg antibody (green) from either control (no-knockdown) (E, E’) or knockdown of zpg (F-H’) driven by Mat-ɑ-tub-Gal4 at different temperatures. (E’–H’) are higher magnification, single channel views of the ovarioles shown in (E–H). Scale bars are 100 µm in (E–H) and 20 µm in (E’–H’). All flies in (A–H’) were kept at respective temperatures for 3 weeks. (I) Experimental design for RNAi knockdown specifically during recovery for the experiment shown in (J). The temperature-sensitive Gal80 repressor of Gal4 prevented RNAi expression during development and diapause. Incubation at 30°C during recovery inactivates Gal80, allowing Gal4-mediated RNAi knockdown. (J) Ubiquitous knockdown of Dip-γ or sbb with tub Gal4 specifically during recovery as shown in (I) significantly reduces post-diapause/non-diapause fecundity compared to the control (tubGal80TS;tubGal4 >Ctrl RNAi #9331). (K) Pan-neuronal RNAi knockdown of Dip-γ and sbb with nSybGal4 significantly reduces post-diapause/non-diapause fecundity compared to the control (nSyb Gal4>Ctrl RNAi #54037). (L) Glia-specific knockdown of Dip-γ or sbb with Repo Gal4 causes little or no reduction in post-diapause/non-diapause fecundity (Control- Repo Gal4>Ctrl RNAi #54037). In (J–L), one-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons. n is the number of individual female flies tested, and whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR).
 
 To evaluate the effectiveness of Gal4-mediated RNAi at 10°C, we used Mat-α-tub-Gal4 to drive zpg (zero population growth, aka INX4) RNAi and assessed the extent of Zpg knockdown by immunostaining with an anti-Zpg antibody. We used Mat-α-tub-Gal4 because Zpg is expressed in the germline, and we chose to target Zpg because of the availability of the anti-Zpg antibody. Zpg is expressed from the earliest stages of germline development in the germarium (Figure 4E and E’). Mat-α-tub-Gal4 is not expressed detectably in the germarium but is expressed in early egg chambers (Figure 4A–C). So, to quantify the knockdown efficiency, we measured the level of Zpg in stage 3 egg chambers relative to the germarium staining, as an internal control. Remarkably, comparison of Mat-α-tub-Gal4>zpg RNAi flies kept at different temperatures for 3 weeks revealed that Gal4-mediated RNAi was as effective at 10°C, as it was at 18°C and 25°C (Figure 4D–H’; Figure 4—source data 1).
 
@@ -73,13 +73,13 @@ Fifteen GWAS hits for which multiple RNAi lines were available were selected for
 
 To determine whether Dip-γ and sbb are required specifically in neurons, we crossed nSyb-Gal4, a pan-neuronal driver, to validated UAS-Dip-γ RNAi and UAS-sbb RNAi lines (Davis et al., 2014; Shimozono et al., 2019). Neuron-specific knockdown of Dip-γ (Figure 4K, Figure 4—source data 3) caused as severe a defect in post-diapause fecundity as ubiquitous RNAi, in contrast to glial knockdown using Repo-Gal4 (Figure 4L, Figure 4—source data 3). Pan-neuronal RNAi of sbb (Figure 4K) also significantly inhibited post-diapause fecundity more than glial RNAi (Figure 4L). We conclude that Dip-γ and sbb are required in neurons for successful post-diapause fecundity, consistent with the enrichment of this gene class in the diapause GWAS.
 
-## Post-diapause fecundity requires neurons in the antenna
+### Post-diapause fecundity requires neurons in the antenna
 
 While we were able to show significant functional effects of Dip-γ and sbb, GWASs by their nature identify many genes with small effects, which are too small to detect individually. Furthermore, the overlap with genes associated with olfactory behavior led us to complement the genetic analysis by testing whether the antenna and neurons within it are required for successful diapause. We removed the antenna from CS flies and measured post-diapause fecundity. As a control for the surgery, we removed the arista, which is an appendage from the antenna. Removal of the antenna but not the arista reduced post-diapause fecundity compared to unmanipulated controls (Figure 5A, Figure 5—source data 1). Removal of the antenna but not the arista also reduced the number of germline stem cells (GSCs) post-diapause (Figure 5B). These results suggest that sensory cells in the antenna are important for successful recovery post-diapause.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/98142/elife-98142-fig5-v1.jpg)
 
-**Figure 5.:** (A) Effect of antenna removal on recovery of fecundity post-diapause. Arista removal was used as a control for the surgery. n is the number of individual female flies tested. One-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons. Whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR). (B) Effect of antenna removal on germline stem cell (GSC) recovery after 5 weeks of diapause. n is the number of germaria counted (there are typically 2–3 GSCs/germarium). One-way ANOVA and Tukey’s multiple comparison test with compact letter display to show comparisons. Error bars represent standard error. (C) Role of antenna in lifespan extension in diapause. Control flies were maintained at 25°C and diapause flies were moved to 10°C. Median survival for flies with intact antenna in diapause (+A_Diap) – 142.5 days; antennaless flies in diapause (-A_Diap) – 7 days; control with intact antenna in optimal conditions (+A_Ctrl) – 75 days; and antennaless flies in optimal conditions (-A_Ctrl) – 72 days. Survival curves are compared pairwise using the Log-rank (Mantel-Cox) test and Χ2 values are: Diap±antenna = 98.89, Ctrl ±antenna = 11.69, Diap+antenna vs Ctrl+antenna = 163.5, and Diap – antenna vs Ctrl – antenna=0.5. n represents the number of flies used for the survival curve. (D) Control (+A_Diap) and antennaless (-A_Diap) flies were maintained at 25ºC for 2 weeks post-surgery to allow for wound healing and shifted to the diapausing conditions. Median survival for +A_Diap – 142 days; -A_Diap – 95 days. Survival curves are compared pairwise using the Log-rank (Mantel-Cox) test and Χ2 values = 86. n represents the number of flies used for the survival curve. (E–F) Effects on diapause of inactivating neuronal transmission by driving tetanus toxin using UAS-TeTxLC.tdt, (E) in odor responsive neurons using the indicated Gal4 lines. Orco is a co-receptor for odorant receptors of the OR class. (F) Ir8a is a co-receptor involved in organic acid detection. Ir25a is a co-receptor involved in chemo- and thermo-sensation. Ir76b is involved in the detection of various amines and salt. Ir84a is involved in the detection of phenylacetic acid and male courtship behavior. Hot cells are heat-sensitive cells in the arista. In (E-F), one-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons. n is the number of individual female flies tested, and whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR).Figure 5—source data 1.Fecundity assay of Canton-S control flies with antennae or aristae removed, along with controls.Figure 5—source data 2.Figure 5B–D.Figure 5—source data 3.Fecundity assay used to identify diapause-modifying cell types in fly antennae by specifically blocking neuronal transmission through the expression of tetanus toxin.
+**Figure 5.:** (A) Effect of antenna removal on recovery of fecundity post-diapause. Arista removal was used as a control for the surgery. n is the number of individual female flies tested. One-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons. Whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR). (B) Effect of antenna removal on germline stem cell (GSC) recovery after 5 weeks of diapause. n is the number of germaria counted (there are typically 2–3 GSCs/germarium). One-way ANOVA and Tukey’s multiple comparison test with compact letter display to show comparisons. Error bars represent standard error. (C) Role of antenna in lifespan extension in diapause. Control flies were maintained at 25°C and diapause flies were moved to 10°C. Median survival for flies with intact antenna in diapause (+A_Diap) – 142.5 days; antennaless flies in diapause (-A_Diap) – 7 days; control with intact antenna in optimal conditions (+A_Ctrl) – 75 days; and antennaless flies in optimal conditions (-A_Ctrl) – 72 days. Survival curves are compared pairwise using the Log-rank (Mantel-Cox) test and Χ2 values are: Diap±antenna = 98.89, Ctrl ±antenna = 11.69, Diap+antenna vs Ctrl+antenna = 163.5, and Diap – antenna vs Ctrl – antenna=0.5. n represents the number of flies used for the survival curve. (D) Control (+A_Diap) and antennaless (-A_Diap) flies were maintained at 25ºC for 2 weeks post-surgery to allow for wound healing and shifted to the diapausing conditions. Median survival for +A_Diap – 142 days; -A_Diap – 95 days. Survival curves are compared pairwise using the Log-rank (Mantel-Cox) test and Χ2 values = 86. n represents the number of flies used for the survival curve. (E–F) Effects on diapause of inactivating neuronal transmission by driving tetanus toxin using UAS-TeTxLC.tdt, (E) in odor responsive neurons using the indicated Gal4 lines. Orco is a co-receptor for odorant receptors of the OR class. (F) Ir8a is a co-receptor involved in organic acid detection. Ir25a is a co-receptor involved in chemo- and thermo-sensation. Ir76b is involved in the detection of various amines and salt. Ir84a is involved in the detection of phenylacetic acid and male courtship behavior. Hot cells are heat-sensitive cells in the arista. In (E-F), one-way ANOVA and Tukey’s multiple comparison test, compact letter display shows comparisons. n is the number of individual female flies tested, and whiskers represent the smallest and largest values within 1.5× the interquartile range (IQR).
 
 Another important diapause trait is lifespan extension. So, we tested the effect of removing the antenna on post-diapause and non-diapause lifespan (Figure 5C and D). Antenna removal had little effect on non-diapause lifespan (median survival 72 days w/o antenna vs 75 days with antenna) (Figure 5C). In contrast, antennaless flies exhibited a substantial reduction in diapause lifespan compared to flies with antennae (Figure 5C). We considered the possibility that the precipitous deaths of many antennaless flies at 10°C (Figure 5C) might be a consequence of impaired wound healing. So, we repeated the experiments, allowing the flies 2 weeks to recover at 25°C prior to moving them to the diapause-inducing temperature of 10°C (Figure 5D). Two weeks at 25°C substantially prevented the early post-surgery death. Yet, antennaless flies still had shorter lifespans (median survival 95 days) compared to intact flies (median survival 142 days), supporting the importance of the antenna in lifespan extension (see Discussion). A potential caveat for the latter experiment is that 2 weeks at 25°C might impair diapause induction. However, flies with antennae exhibited very similar lifespan extension at 10°C with or without the 2-week wound-healing period at 25°C (compare dark green lines in Figure 5C and D), mitigating that concern. We conclude that the antennae are likely important for lifespan extension and post-diapause fecundity.
 
@@ -89,7 +89,7 @@ Ionotropic receptors (IRs) are another class of odorant receptor (Montell, 2021)
 
 ## Discussion
 
-## Genome-wide analysis of the effect of diapause on fecundity
+### Genome-wide analysis of the effect of diapause on fecundity
 
 Drosophila diapause is a fascinating life history trait that confers resilience in stressful environments and extends reproductive potential and organismal longevity. Our GWAS identified nearly 300 candidate genes associated with an important but understudied feature of diapause: the ability to recover and reproduce successfully post-diapause. The most striking finding is that genes associated with neural development are highly overrepresented in the diapause set. We further confirmed that at least two such genes, Dip-γ and sbb, are essential for post-diapause fecundity.
 
@@ -97,7 +97,7 @@ When we started this project, little was known about the neural control of diapa
 
 We found that the neuronal transcription factor Sbb is required post-diapause for recovery, so it is interesting to speculate that Sbb could affect PDF mRNA abundance. Sbb functions predominantly as a transcriptional repressor, so it could promote PDF expression in recovery by inhibiting a repressor of PDF. Alternatively, PDF reduces levels of the transcriptional co-activator Eyes Absent (Eya) in the IPCs, so reduced PDF leads to elevated Eya protein levels during diapause. It is possible that Sbb represses Eya transcription to facilitate recovery post-diapause. A third possibility is that Sbb functions in the DN3-ASTC-R2 pathway. We have also found that circadian rhythms and sleep behavior are dramatically altered in flies at 10°C (Meyerhof et al., 2024). It will be of interest to determine if Dip-γ and sbb are required for those behavioral effects at low temperatures, in addition to the effects on post-diapause fecundity described here.
 
-## Olfactory neurons are required for post-diapause fecundity
+### Olfactory neurons are required for post-diapause fecundity
 
 We complemented our genetic analysis with an investigation of the cells that contribute to diapause. The overlap between olfactory-behavior-associated genes and diapause-associated genes inspired us to test if the antenna is required, and we found that the antenna is required both for post-diapause fecundity and for lifespan extension. We conclude that cells in the antenna transmit important information for successful diapause. Furthermore, we found that inhibiting olfactory receptor neurons by expressing TNT with Orco-Gal4 caused a similar effect on post-diapause fecundity as antenna removal. This is interesting because Meiselman et al. found that the antenna was not required for accumulation of mature eggs post-diapause (Meiselman et al., 2022). Our measurement of fecundity required not only that mature eggs developed in the ovary but also that they were fertilized, laid, and could develop into adults. So, what is required for production of viable progeny in addition to mature eggs? Since both feeding and mating are suppressed during diapause, the results suggest that the antenna may be required to promote these behaviors, consistent with the known role of the antenna in providing sensory information important for flies to seek food and mates (Montell, 2021; Tunstall et al., 2012). The antenna may be dispensable for relieving the vitellogenesis block in the ovary but may specifically be required for animals to find sufficient food and mates post-diapause to support maximal fecundity.
 
@@ -109,11 +109,420 @@ In summary, we report the first GWAS of diapause, using the stringent assay of t
 
 ## Materials and methods
 
-## Drosophila stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DGRP lines</td>
+      <td>BDSC; Huang et al., 2014</td>
+      <td>RRID:SCR_006457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>2704</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_27049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>32034</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_32034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>40889</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_40889</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>27508</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_27508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>54811</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_54811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>44661</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_44661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>53315</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_53315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>54037</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_54037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>57840</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_57840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>63013</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_63013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>56867</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_56867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>80461</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_80461</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>35785</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_35785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>9331</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_9331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>5138</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_5138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>7019</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_7019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>23292</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_23292</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>41731</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_41731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>41728</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_41728</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>51311</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_51311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>41750</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_41750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>28838</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_28838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>35607</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_35607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>7063</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_7063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>58989</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_58989</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>51635</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_51635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>64349</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_64349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>7415</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_7415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>44077</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst046539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>330386</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0491275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>10268</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0450061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>40698</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0463709</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>991</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0471623</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>992</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0471628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>21052</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0453901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>100412</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0472285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>51936</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0469629</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>106911</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0478734</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>104551</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0478734</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>17767</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0476409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>104056</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0452858</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>60102</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0475914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>013805</td>
+      <td>VDRC</td>
+      <td>RRID:SCR_013805</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>101659</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0473532</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>36166</td>
+      <td>VDRC</td>
+      <td>RRID:Flybase_FBst0461553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Hot cell-Gal4</td>
+      <td>Zuker lab, Gallio et al., 2011</td>
+      <td>DOI: 10.1016 /j.cell.2011.01.028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ir21a-Gal4</td>
+      <td>Craig Montell lab, Ni et al., 2016</td>
+      <td>DOI: https://doi.org/10.7554/eLife.13254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Zpg antibody (rabbit polyclonal)</td>
+      <td>Smendziuk et al., 2015</td>
+      <td>DOI: https://doi.org/10.1242/dev.123448</td>
+      <td>1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Hts antibody (1B1) (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528070</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Vasa antibody (rat monoclonal)</td>
+      <td>DSHB</td>
+      <td>RRID:AB_760351</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Version 10.4.2 (534)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape</td>
+      <td>Shannon et al., 2003</td>
+      <td>RRID:SCR_003032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GeneMANIA</td>
+      <td>Warde-Farley et al., 2010</td>
+      <td>RRID:SCR_005709</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Set Comparison Appyter</td>
+      <td>Clarke et al., 2021</td>
+      <td>RRID:SCR_021245</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DGRP2</td>
+      <td>Mackay et al., 2012</td>
+      <td>http://dgrp2.gnets.ncsu.edu/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila stocks
 
 The majority of the experiments were carried out using the inbred, sequenced lines of the DGRP (Huang et al., 2014). Diapause trait quantified in 193 DGRP lines was used in the GWAS analysis. Please refer to Figure 1—source data 1. The RNAi lines and Gal4 stocks were from BDSC and VDRC (v44077, v330386, 27049, v10268, v40698, 32034, v101659, v36166, 40889, 27508, v991, v992, v21052, v100412, 54811, v51936, v106911, 44661, 53315, 54037, 57840, v104551, v17767, 63013, 56867, 80461, v104056, 35785, v60102, 9331, 5138, 7019, 23292, 41731, 41728, 51311, 41750, 28838, 35607, 7063, 58989, 51635, 64349, and 7415). Hot cell-Gal4 (Gallio et al., 2011) is a gift from Zuker lab, and Ir21a-Gal4 (Ni et al., 2016) is a gift from Craig Montell lab.
 
-## Fecundity assay
+### Fecundity assay
 
 For the non-diapause fecundity assessment, a minimum of 15 newly eclosed, not more than 6-hr-old virgin females of each strain were collected under mild CO2 anesthesia. These females were individually placed into fly food vials containing cornmeal, molasses, agar medium, and yeast. In individual female fly crosses, one female from the DGRP line and two male flies of the same genotype (CS) were added to each vial.
 
@@ -121,20 +530,20 @@ In the post-diapause group, a minimum of 20 newly eclosed, not more than 6-hr-ol
 
 Similarly, assessments of non-diapause and post-diapause fecundity were conducted for the RNAi experiments. The post-diapause fecundity was normalized by dividing individual female fly fecundity by average non-diapause fecundity of the same genotype.
 
-## Scoring of fecundity
+### Scoring of fecundity
 
 For both the non-diapause and the post-diapause, the fecundity of each strain was calculated based on the average number of progeny produced across all replicates, excluding cases in which the female and/or both males died during the 4-day mating window. To accurately assess the diapause capacity of each strain, we normalized it by dividing the individual post-diapause fecundity by the average of non-diapause fecundity for each DGRP line. The average of this normalized post-diapause fecundity was then utilized in our GWAS analysis pipeline (Mackay et al., 2012). This normalization eliminated the basal difference in fecundity among DGRP lines, allowing us to focus on the variability in diapause. We have also performed a one-way ANOVA to get the mean squares for between-group and within-group variances and calculated broad-sense heritability using the formula: H2=MSG MSE/MSG + (k–1) MSE, where MSG – mean square between groups and MSE – mean square within groups and k – number of individuals per group. Using this formula, the broad-sense heritability for normalized post-diapause fecundity was found to be 0.51.
 
-## Data analysis
+### Data analysis
 
 GWAS was carried out using the DGRP2 website. We conducted GO enrichment and network analyses based on the top variants (p<1e10−5) associated with the mean post-diapause fecundity/non-diapause fecundity score using the GeneMANIA application in Cytoscape (Shannon et al., 2003; Warde-Farley et al., 2010). The GO categories and q-values from the false discovery rate-corrected hypergeometric test for enrichment are reported. Additionally, coverage ratios for the number of annotated genes in the displayed network vs the number of genes with that annotation in the genome are provided. GeneMANIA estimates q-values using the Benjamini-Hochberg procedure.
 
 Set Comparison Appyter was used for comparing the diapause-GWAS gene list to other behavior gene lists using 13,500 as the background gene list and 0.05 as the significance level to calculate the p-value (Clarke et al., 2021).
 
-## Immunostaining
+### Immunostaining
 
 Immunofluorescence was performed using standard procedures. Briefly, adult female ovarioles were carefully dissected in phosphate-buffered saline (PBS) using a bent tungsten needle, pulling on the stalk region of older egg chambers to minimize damage to the germarium. Ovarioles prepared for immunostaining were fixed in 4% paraformaldehyde in PBS for 20 min. To prevent sample sticking and facilitate settling, 20 µl of PBST (PBS+0.2% Triton X-100) was added to the fixing solution. After fixation, ovarioles were washed three times for 10 min each in PBST and then incubated with primary antibodies at 4°C overnight. The following morning, ovarioles were washed twice for 15 min in PBST before incubation with secondary antibodies for at least 2 hr at room temperature. After the removal of secondary antibodies, the samples were washed three times in PBST for 10 min each. Hoechst was used as a nuclear stain and added to the second wash solution. The ovarioles were subsequently mounted in Vectashield and stored at 4°C until imaging. All antibody dilutions were prepared in PBST. Due to difficulties in settling diapause samples in the solutions, a 5 min hold step was introduced on a stand before removing solutions from the tube at each step, consistently followed for all controls as well. The anti-Zpg antibody (rabbit polyclonal) was used at a 1:20,000 dilution (Smendziuk et al., 2015). The antibodies used for identifying GSCs are Hts (1B1) and Vasa (DSHB) (Easwaran et al., 2022).
 
-## Lifespan analysis
+### Lifespan analysis
 
 Virgin female flies were collected and moved to the conditions to assess their lifespan. In the antenna-removed fly lifespan measurement, before moving to the diapausing conditions, we gave 14 days at optimal conditions (25°C, 12L:12D photoperiod) to heal the wound caused by amputation of the antenna. Flies were kept in food vials with a density of 20 or fewer flies per vial. Deaths were censored daily, and all vials were flipped every other day for lifespan measurement at optimal condition (25°C, 12L:12D photoperiod) and once every month for lifespan measurement at diapause condition (10°C, 16L:8D photoperiod) to prevent desiccation and drying up of fly food. The survival plot was created in Prism using the Kaplan-Meier survival analysis. Survival curves are compared pairwise by the Log-rank (Mantel-Cox) test to obtain the χ2-values.

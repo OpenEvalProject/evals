@@ -18,9 +18,7 @@ We agree that the data presented are not sufficient to conclusively demonstrate 
 
 2) One of the key results of a new set-point is in Figure 4, where the kinetics of Xbp1 deactivation in chronically stressed liver are faster. Not all the referees were convinced by this experiment, and it would be reassuring to provide an indicator of its reproducibility and robustness. Are the three samples shown at each time point completely independent experimental samples, and has the entire experiment been reproduced with comparable results?
 
-The Xbp1 experiment shown in Figure 4, as with all other experiments in the paper, represent multiple animals treated independently. Each lane thus represents a separate animal. We have added this notation to the figure legend. In addition, as with all other experiments, it has been repeated to assure reproducibility. The data from a similar but completely separate experiment are shown in Author response image 1.10.7554/eLife.20390.016Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.20390.016
-
-DOI: http://dx.doi.org/10.7554/eLife.20390.016
+The Xbp1 experiment shown in Figure 4, as with all other experiments in the paper, represent multiple animals treated independently. Each lane thus represents a separate animal. We have added this notation to the figure legend. In addition, as with all other experiments, it has been repeated to assure reproducibility. The data from a similar but completely separate experiment are shown in Author response image 1.10.7554/eLife.20390.016Author response image 1.
 
 This experiment shows both the conventional Xbp1 splicing assay and data derived from qRT-PCR quantification of both spliced and total Xbp1 mRNA. By both measures, Xbp1 splicing in the 5D-treated animals has returned to baseline by 14hrs, but not in the 1D-treated animals. (Note that there is also a background band visible in some samples that is marked by a white circle; it is not spliced Xbp1, as it migrates more slowly and diffusely; spliced Xbp1 can only be seen in all three D1-8h samples, the first three D1-14h samples, the third D1-24h sample, and all four D5-8h samples.)
 

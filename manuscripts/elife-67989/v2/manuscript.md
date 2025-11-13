@@ -35,13 +35,33 @@ To uncover the specific role of augmin-mediated microtubule amplification in mit
 
 ## Results
 
-## Augmin is essential for proper development of the mouse forebrain
+### Augmin is essential for proper development of the mouse forebrain
 
 Previous work has shown that the augmin complex is composed of eight subunits and that depletion of any subunit interferes with augmin assembly and function (Goshima et al., 2008; Lawo et al., 2009; Uehara et al., 2009). Mouse embryos that completely lack expression of the augmin subunit Haus6 do not survive the blastocyst stage (Watanabe et al., 2016). In order to test the specific requirement for augmin in proliferating neural progenitors, we obtained floxed Haus6 mice in which exon 1 of the Haus6 gene is flanked by loxP sequences (Watanabe et al., 2016). To generate Haus6 conditional knockout (Haus6 cKO) mice for the current study, we removed the neomycin cassette that was present in the original strain adjacent to exon 1 (see Materials and methods for details). We then crossed these mice with mice expressing Cre recombinase under the control of the Nestin promoter, to induce Haus6 knockout in apical progenitors starting around day E10.5 (Figure 1a; Figure 1—figure supplement 1a; Graus-Porta et al., 2001; Tronche et al., 1999). In contrast to the full knockout (Watanabe et al., 2016), Haus6 cKO mice passed through all developmental stages and at E13.5 we observed efficient deletion of Haus6 in the brain (Figure 1—figure supplement 1b). Whereas mice with a heterozygous Haus6 deletion developed normally and were fertile, homozygous Haus6 cKO mice died around birth. Analysis of Haus6 cKO animals at E17.5 showed severe defects in brain development, whereas overall body development appeared normal (Figure 1b,c; Figure 1—figure supplement 1c). Histopathology analysis revealed a strong disruption or absence of different forebrain structures (cortex, thalamus, and hypothalamus) and of the cerebellum (Figure 1c; Figure 1—figure supplement 1c). To evaluate whether this was due to agenesis or tissue loss during development, we analyzed embryos at E13.5. Even at this earlier stage, brains in Haus6 cKO embryos displayed severe defects compared to control embryos. Lateral cortexes in Haus6 cKO embryos were almost completely absent and thalamus structures, while partially formed, displayed a strong reduction in radial thickness (Figure 1d,f). Moreover, spaces between tissue structures were filled with cellular debris. These data suggest that, in Haus6 cKO brains at early developmental stages, formation of structures that would give rise to the cortex, thalamus, and hypothalamus is initiated but not completed, leading to tissue loss and abortion of brain development at later stages.
 
-## Loss of augmin impairs mitotic progression in cortical and thalamic neural progenitors
+![Figure 1.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic representation of the experimental strategy used to evaluate the role of augmin during mouse brain development through generation of brain-specific Nestin-Cre Haus6 cKO embryos. (b) Pictures of E17.5 control (Haus6fl/fl Nestin-Cre−) and Haus6 cKO (Haus6fl/fl Nestin-Cre+) embryos. (c, d) Coronal histological sections from (c) E17.5 and (d) E13.5 control and Haus6 cKO stained with hematoxylin-eosin. Different brain structures are labeled: Ctx (cortex), Tlm (thalamus), Hptlm (hypothalamus), Mb (midbrain), Crbl (cerebellum), MO (medulla oblongata), and CP (choroid plexus). (e) Representative images of the cortex (Ctx) and thalamus (Tlm) of E13.5 control (Haus6fl/wt Nestin-Cre+) and Haus6 cKO (Haus6fl/fl Nestin-Cre+) embryos. Coronal sections were stained against PAX6 (magenta – apical progenitors) and βIII-tubulin (green – neurons). Yellow arrowheads highlight regions of the thalamus where tissue disruption is observed in Haus6 cKO embryos. Yellow boxes indicate the regions used for quantifications in (f). (f) Quantification of the total radial thickness of the thalamus in E13.5 embryos and of layers formed by PAX6- and βIII-tubulin-positive cells. n=3 for control and n=5 for Haus6 cKO embryos. Plotted values are means, error bars show SD. **p<0.01, ***p<0.001 by two-tailed t-test. Scale bars: (b) 5 mm, (c) 1 mm, (d) 0.5 mm, and (e) 150 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Schematic representation of the wild-type Haus6 allele (wt), the targeted allele (fl Neo), the floxed Haus6 allele (fl), and the Haus6 knockout allele (ko). Positions of exons 1–3, loxP sequences (black triangles), flippase recognition target (FRT) sequences (white triangles) and neomycin resistance cassette (Neo) are shown. Positions of polymerase chain reaction (PCR) primers are indicated by blue arrows and expected PCR fragments are indicated. (b) DNA gels showing genomic PCRs from dissected liver and forebrain of E13.5 embryos with different genotypes. In the upper gel, amplification of a 100 bp fragment using Nestin-Cre recombinase primers indicates the presence of the transgene. In the lower gel, amplification of a 1080, 800, and/or 570 bp fragment reveals the presence of Haus6 floxed, wild type, or knockout alleles, respectively, in the indicated genotypes and tissues. The band that is visible below the 1080 bp band in heterozygous samples is an artifact that results from heteroduplexes of floxed (1080 bp) and wild-type (530 bp) DNA strands due to extended regions of complementary. Genomic PCR products were run on a 3% agarose gel. (c) Sagittal histological sections from E17.5 control (Haus6fl/fl Nestin-Cre−) and Haus6 cKO (Haus6fl/fl Nestin-Cre+) embryos stained with hematoxylin-eosin. Scale bar: (c) 2.5 mm.
+
+### Loss of augmin impairs mitotic progression in cortical and thalamic neural progenitors
 
 To analyze defective brain development in Haus6 cKO animals at E13.5 at the cellular level, we focused on the thalamus, which was at least partially preserved. We co-stained brain sections with antibodies against PAX6 and βIII-tubulin to label apical progenitors and neurons, respectively. In Haus6 cKO embryos, we observed that the reduced radial thickness in the thalamus was due to a striking thinning of the neuronal layer by ~90% when compared to controls (Figure 1e,f), indicating severely impaired neurogenesis. In some parts, where tissue organization appeared to be disrupted, we also observed neurons that were misplaced in apical regions (Figure 1e). To directly test if augmin deficiency impaired mitoses, we identified and quantified mitotic cells in the thalamus using Ser10-phospho-Histone H3 (pH3-Ser10) staining. In Haus6 cKO embryos, we observed a ~4-fold increase in the number of mitotic cells in the region closest to the VS compared to controls, whereas there were no significant differences in more basal regions (Figure 2a,b). The percentage of Haus6 cKO mitotic cells in prometaphase was strongly increased, whereas metaphases and ana/telophases were reduced relative to controls (Figure 2c; Figure 2—figure supplement 1a). This increase in early and decrease in later mitotic figures were consistent with a delay in spindle assembly. Taken together, these observations suggest that augmin deficiency in progenitors of the thalamus leads to a defect in progression to metaphase, causing mitotic delay.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig2-v2.jpg)
+
+**Figure 2.:** (a) Representative images of phospho-Histone H3 (pH3) positive mitotic cells in the thalamus of E13.5 control (Haus6fl/wt Nestin-Cre+) and Haus6 cKO (Haus6fl/fl Nestin-Cre+) embryos. Staining of the mitotic marker pH3-Ser10 in red and DAPI in blue. (b) Quantification of the density of mitotic cells close to the ventricular surface (VS) (<30 µm away) and in outer layers of the cortical plate (>30 µm away). n=4 for control and n=4 for Haus6 cKO embryos (total of 203 and 697 mitotic cells, respectively, in 2–4 sections per embryo). (c) Quantification of mitotic progenitors at different mitotic stages. n=4 for control and n=5 for Haus6 cKO embryos (total of 261 and 427 mitotic cells, respectively, in one section per embryo). (d) E13.5 control and Haus6 cKO coronal thalamus sections stained with antibodies against γ-tubulin (green) and DAPI to label DNA (blue). Yellow arrowheads point to γ-tubulin staining at spindle poles. Light blue arrowheads point to spindle-associated γ-tubulin staining. Insets are 1.4× magnifications of spindle poles in the example cells. (e) Quantification of the percentage of mitotic cells in (d) with fragmented centrosomes. n=5 for control and n=3 for Haus6 cKO embryos (total of 135 and 198 cells counted, respectively, 18–69 cells per embryo). (f) Coronal thalamus sections stained with antibodies against α-tubulin (green) and pH3 (blue). (g) Quantification of the percentage of mitotic progenitors from control and Haus6 cKO E13.5 embryos displaying disorganized or no spindles. n=5 for control and n=3 for Haus6 cKO embryos (total of 152 cells and 90 cells counted, respectively, 27–32 cells per embryo). (h) Examples of Haus6 cKO mitotic progenitors in the E13.5 thalamus in which spindle microtubules, stained with anti-α-tubulin antibodies, cannot be detected, whereas spindles are present in control cells. (i) Quantification of cells as in (h) without detectable spindle microtubules. n=3 for control and n=4 for Haus6 cKO embryos (total of 216 and 243 cells counted, respectively, 40–88 cells per embryo). (j) Representative images of control (Haus6fl/wt Nestin-Cre+) and Haus6 cKO (Haus6fl/fl Nestin-Cre+) coronal thalamus sections stained with an antibody against p53 (red – upper panel) and the apoptotic marker cleaved caspase-3 (green – lower panel). DNA is labeled with DAPI (blue). (k) Quantification of the density of p53- and cleaved caspase-3-positive cells in the E13.5 thalamus in brain sections as shown in (j). n=4 for control and n=3 for Haus6 cKO embryos for quantifications of p53 positive cells and n=3 for control and n=3 for Haus6 cKO embryos for cleaved caspase-3-positive cells (an area between 460 and 3950 µm2 quantified per embryo). (l) Representative images of Haus6 cKO coronal brain sections showing the thalamus stained for p53 (red), PAX6 (cyan), and βIII-tubulin (yellow). The inset is a 1.8× magnification of cells with nuclei staining positive for both p53 and PAX6. (m) Quantification of the percentage of Haus6 cKO cells showing induction of p53 and co-expressing PAX6 (orange), βIII-tubulin (light green), or none of these markers (gray). E13.5 thalamus regions, n=3 for different Haus6 cKO embryos (total of 1020 p53-positive cells). (b, c, e, g, i, k, m) Plotted values are means, error bars show SD. *p<0.05, **p<0.01, ***p<0.001 by two-tailed t-test. Scale bars: (a) 20 μm, (d, f, h) 3 μm, and (j, l) 25 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Representative images of apical progenitors at different mitotic stages. (b) E11.5 control (Haus6wt/wt Nestin-Cre+) and Haus6 cKO cortex (Haus6fl/fl Nestin-Cre+) stained with antibodies against the mitotic marker pH3-Ser10 (red), γ-tubulin (green), and DAPI to label DNA (blue). (c) Sections as in (b) were stained with an antibody against βIII-tubulin (green) and DAPI to label DNA (blue). (d) Quantification of the density of mitotic cells close to the ventricular surface (VS) (<30 µm away) and in the outer layers of the cortical plate (>30 µm away). (e) Quantification of mitotic stages as in (a) observed in cortical progenitors close to the VS. (d, e) n=3 for Nestin-Cre control and n=2 for Nestin-Cre Haus6 cKO individual embryos. (f) Control and Haus6 cKO mitotic progenitors in the E13.5 thalamus stained with antibodies against γ-tubulin and centrin and with DAPI to stain DNA. (g) Quantification of centrioles (centrin foci) in mitotic cells as in (f). The percentage of cells displaying the indicated number of centrin foci was plotted. n=3 for control and n=3 for Haus6 cKO embryos (total of 78 and 114 cells counted, respectively, 19–41 cells per embryo). (h) Image illustrating how spindle orientation was quantified based on the angle formed between the spindle axis and the ventricular lining. (i, j) Quantification of mitotic spindle angles in progenitors at meta/ana/telophase in E11.5 cortex (i) and E13.5 thalamus (j). Diagrams show the distribution of the spindle angle values between 0° and 90°, grouped in 15° intervals. Each dot represents 1% of the analyzed cells. E11.5 cortex: n=84 for control and n=44 for Haus6 cKO mitotic cells from four and two individual embryos, respectively. E13.5 thalamus: n=85 for control and n=113 for Haus6 cKO mitotic cells from four and five individual embryos, respectively. (d,e,g) Plots show mean values, error bars indicate SD. *p<0.05; **p<0.01 by two-tailed t-test. Scale bars: (a, f) 3 µm, (b, c) 30 µm, and (h) 2.5 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Sections showing E11.5 control and Haus6 cKO E11.5 cortex stained with antibodies against p53 (red) and the apoptotic marker cleaved caspase-3 (green). DNA was stained with DAPI. (b) Immunohistochemistry sections showing E13.5 thalamus stained with antibodies against p21. n=3 for control and n=5 for Haus6 cKO embryos were analyzed (total of 40,460 and 41,063 cells per genotype, respectively, 3799–19,669 cells in 2–3 sections per embryo). (c) The percentage of p21-positive cells was quantified in sections of control and Haus6 cKO embryos. Plots show mean values, error bars indicate SD. *p<0.05 by two-tailed t-test. Scale bars: (a, b) 30 μm.
 
 To analyze cortical progenitors and since there were no intact cortical structures in Haus6 cKO brains at E13.5, we analyzed embryos at E11.5. At this stage, cortical structures were present suggesting that, as for the thalamus, cortical tissue is originally formed but lost at later stages. Similar to the situation in the thalamus at E13.5, in Haus6 cKO cortexes at E11.5 the percentage of mitotic progenitors was increased when compared to controls and this occurred specifically in the apical region and not in more basal layers. Again, this increase in mitotic cells was due to accumulation in prometaphase (Figure 2—figure supplement 1b–e). Taken together, the data show that augmin plays an important role in allowing the timely mitotic progression of apical progenitors in different regions of the developing mouse brain.
 
@@ -51,43 +71,71 @@ Considering that augmin-deficiency caused pole fragmentation, we wondered whethe
 
 In summary, augmin deficiency in apical progenitors disrupts the recruitment of γ-tubulin to spindle microtubules, causes pole fragmentation, and interferes with bipolar spindle assembly and mitotic progression.
 
-## Loss of augmin in neural progenitors induces p53 expression and apoptosis
+### Loss of augmin in neural progenitors induces p53 expression and apoptosis
 
 We sought to determine the fate of progenitors undergoing abnormal mitoses after the loss of augmin. We probed thalamus and cortex of E13.5 and E11.5 Haus6 cKO embryos, respectively, for p53 induction and the presence of the apoptotic marker cleaved caspase-3. Indeed, p53 and cleaved caspase-3 were strongly upregulated in both brain regions (Figure 2j,k; Figure 2—figure supplement 2a), whereas cells positive for these markers were barely found in the corresponding tissues of control embryos. To reveal the identity of cells overexpressing p53, we performed a triple staining with antibodies against p53, the neuronal marker βIII-tubulin, and the apical progenitor marker PAX6 (Figure 2l). This experiment showed that in the Haus6 cKO thalamus ~87% of the p53-positive cells were also positive for PAX6 and only a minor fraction (~5%) for βIII-tubulin (Figure 2m). Moreover, we observed that PAX6-positive progenitors displaying p53 induction were exclusively interphase cells, based on the presence of intact nuclei. We concluded that p53 induction occurred specifically in augmin-deficient progenitors, after exit from abnormal mitoses. Interestingly, some cells in the thalamus of Haus6 cKO embryos also displayed upregulated expression of the cell cycle inhibitor p21 (Figure 2—figure supplement 2b,c).
 
 Taken together, the data suggests that mitotic spindle defects in Haus6 cKO progenitors are not catastrophic per se, but efficiently trigger cell cycle arrest and apoptotic cell death upon completion of mitosis.
 
-## Co-deletion of Trp53 in Haus6 cKO embryos rescues apoptosis but not forebrain development
+### Co-deletion of Trp53 in Haus6 cKO embryos rescues apoptosis but not forebrain development
 
 Since massive apoptosis in Haus6 cKO brains was correlated with p53 induction, we wondered whether cell death was p53-dependent and the cause of aborted brain development. To address this, we crossed Haus6 cKO mice with Trp53 KO mice (Figure 3a). Strikingly, at E13.5, a stage at which Haus6 cKO brains displayed massive apoptosis, lacked cortical structures, and had a poorly developed thalamus, Haus6 cKO Trp53 KO brains showed only minimal signs of apoptosis and there was some growth in the regions where cortex and thalamus would be expected to form (Figure 3b–d). Consistent with this, there was also no upregulation of p21 (Figure 3—figure supplement 1a–d). Tissue growth was enhanced when compared to the single Haus6 cKO brains, but seemed to lack the layered organization observed in control brains at this stage (Figure 3b). At E17.5, however, when thalamus and cortex were well formed in controls, in Haus6 cKO Trp53 KO embryos cortex and thalamus structures appeared thin and undeveloped (Figure 3e). Moreover, as observed for Haus6 cKO embryos, Haus6 cKO Trp53 KO animals were not viable and died around birth.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig3-v2.jpg)
+
+**Figure 3.:** (a) Schematic overview showing the experimental strategy used to generate Haus6 cKO Trp53 KO embryos, to test p53 dependency of the brain development phenotypes observed in Haus6 cKO embryos. (b) Coronal sections of E13.5 control (Haus6fl/wt Nestin-Cre+), Haus6 cKO (Haus6fl/fl Nestin-Cre+), and Haus6 cKO Trp53 KO (Haus6fl/fl Nestin-Cre+ Trp53−/−) embryos stained with hematoxylin-eosin. (c) Coronal sections of the thalamus and cortex of E13.5 Trp53 KO control and Haus6 cKO embryos stained against the apoptotic marker cleaved caspase-3 (green). DNA was labeled by DAPI (blue). (d) Quantification of the density of cleaved caspase-3 positive cells in the E13.5 thalamus and cortex in brain sections as shown in (c). n=5 for control, n=5 for Haus6 cKO, n=4 for Trp53 KO control, and n=3 for Haus6 cKO Trp53 KO embryos for quantifications in the thalamus, and n=4 for Trp53 KO control and n=4 for Haus6 cKO Trp53 KO embryos for quantifications in the cortex. Plotted values are means, error bars show SD. *p<0.05, **p<0.01, ***p<0.001 by two-tailed t-test. (e) Coronal sections of E17.5 control and Haus6 cKO Trp53 KO embryos stained with hematoxylin-eosin. Scale bars: (b) 0.5 mm; (c) 40 μm, 25 μm (cortex); and (e) 2 mm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Immunohistochemistry sections showing Trp53 KO (control) and Haus6 cKO Trp53 KO cortex at E13.5 stained with antibodies against p21. (b) Quantification of p21-expressing cells as in (a). The percentage of p21-positive cells was plotted. n=3 for Trp53 KO and n=4 for Haus6 cKO Trp53 KO embryos were analyzed (total of 40,502 and 22,555 cells per genotype, respectively, 3577–16,763 cells in three sections per embryo). (c) Immunohistochemistry sections showing Trp53 KO (control) and Haus6 cKO Trp53 KO thalamus at E13.5 stained with antibodies against p21. (d) Quantification of p21-expressing cells as in (c). The percentage of p21-positive cells was plotted. n=3 for Trp53 KO and n=3 for Haus6 cKO Trp53 KO embryos were analyzed (total of 43,072 and 41,063 cells per genotype, respectively, 2746–23,924 cells in 2–3 sections per embryo). (b, d) Plots show mean values, error bars indicate SD. Scale bars: (a, c) 30 μm.
+
 In summary, massive apoptosis and cell cycle arrest in Haus6 cKO brains are rescued in Haus6 cKO Trp53 KO brains, promoting growth in the affected brain regions, but this growth is not productive for proper brain development.
 
-## Loss of p53 exacerbates mitotic defects caused by augmin deficiency
+### Loss of p53 exacerbates mitotic defects caused by augmin deficiency
 
 Next, we examined how co-deletion of Haus6 and Trp53 affected mitosis in proliferating progenitors. Similar to Haus6 cKO alone (Figure 2), Haus6 cKO Trp53 KO embryos also had an increased density of mitotic cells in the cortex and in the thalamus as revealed by Ser10-phospho-Histone H3 staining (Figure 4a–c). The majority of these cells were in prometaphase (Figure 4d) and had disorganized spindles with fragmented spindle poles (Figure 4—figure supplement 1a–d). While these defects were overall similar to those observed in Haus6 cKO brains, we also observed some differences. Centrin staining showed that ~30% of mitotic Haus6 cKO Trp53 KO cells had an increased number of centrioles, indicating the presence of extra centrosomes (Figure 4—figure supplement 1e,f). Mitotic cells with extra centrosomes had a ~2-fold increased size compared to cells with normal centrosome number (Figure 4—figure supplement 1g), suggesting that these cells had previously failed cytokinesis, as observed in augmin-depleted cultured cells (Uehara et al., 2009). Consistent with abnormal cell divisions, we also observed various abnormalities in post-metaphase cells. Compared to Trp53 KO control littermates there was a strong increase in the number of defective anaphases and telophases including multipolar spindle configurations, lagging chromosomes, and micronuclei formation (Figure 4e–g). We also noticed that a fraction of Haus6 cKO progenitors displayed enlarged nuclei in interphase (Figure 4h), suggesting aneuploidy/polyploidy triggered by abnormal chromosome segregation and/or failed cytokinesis. Considering that there were very few apoptotic cells in the double KO brains (Figure 3c), we speculated that continued proliferation may exacerbate mitotic defects. We analyzed multipolar metaphases and abnormal anaphase and telophases in Haus6 cKO and Haus6 cKO Trp53 KO embryos at E13.5 in the thalamus, a structure that was present in embryos of both genotypes at this stage. We found that mitotic defects were more severe in the Haus6 cKO Trp53 KO brains when compared to Haus6 cKO brains (Figure 4i,j).
 
-## Mitotic errors in augmin-deficient progenitors correlate with DNA damage
+![Figure 4.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig4-v2.jpg)
+
+**Figure 4.:** (a, b) Representative coronal sections of the (a) cortex and the (b) thalamus of E13.5 Trp53 KO control (Haus6fl/wt Nestin-Cre-Trp53−/−) and Haus6 cKO Trp53 KO embryos (Haus6fl/fl Nestin-Cre+Trp53−/−). Sections were stained with Ser10-phospho-Histone H3 antibody (pH3-Ser10) (red – mitotic cells) and DAPI to stain DNA (blue). (c) Quantification of the density of progenitors undergoing mitosis in the cortex at the indicated distances in µm from the ventricular surface (VS). n=3 for Trp53 KO control and n=2 for Haus6 cKO Trp53 KO embryos (total of 171 and 485 cells, respectively, from four sections per embryo). (d) Quantification of mitotic progenitors at the indicated mitotic stages. n=3 for Trp53 KO control and n=2 for Haus6 cKO Trp53 KO embryos (total of 442 and 443 mitotic cells counted, respectively, 140–248 cells per embryo). (e) Examples of normal, bipolar mitotic stages, and of stages with multipolar and other abnormal configurations in the cortex of E13.5 control and Haus6 cKO Trp53 KO embryos, respectively. Coronal sections were stained with an antibody against γ-tubulin to label spindle poles (red) and DAPI (cyan) to label DNA. (f) Quantification of the percentage of metaphase cells displaying aligned chromosomes with bipolar (white) and multipolar (blue) configuration in the cortex of embryos with the indicated genotypes. n=3 for Trp53 KO control and n=2 for Haus6 cKO Trp53 KO embryos (total of 100 and 97 metaphases counted, respectively, 27–51 metaphases per embryo). (g) Quantification of the percentage of normal and abnormal ana/telophases in the cortex of embryos with the indicated genotypes. n=3 for Trp53 KO control and n=2 for Haus6 cKO Trp53 KO embryos (total of 91 and 33 ana/telophases counted, respectively, 16–34 per embryo). (h) Quantification of the nucleus area in interphase PAX6-positive progenitors in the cortex of E13.5 Trp53 KO control and Haus6 cKO Trp53 KO embryos. n=5 for Trp53 KO control and n=4 for Haus6 cKO Trp53 KO embryos (330–2012 nuclei per embryo). (i) Quantification of the percentage of metaphase cells displaying aligned chromosomes with multipolar configuration in the thalamus of embryos with the indicated genotypes. n=4 for Trp53 KO control and n=3 for Haus6 cKO Trp53 KO embryos (total of 156 and 161 metaphases counted, respectively, 32–81 per embryo). (j) Quantification of the percentage of abnormal ana/telophases in the thalamus of embryos with the indicated genotypes. n=4 for Trp53 KO control and n=3 for Haus6 cKO Trp53 KO embryos (total of 103 and 90 ana/telophases counted, respectively, 17–39 per embryo). (c, d, f, g, h, i, j) Plots show mean values, error bars indicate SD. *p<0.05, **p<0.01, ***p<0.001 by two-tailed t-test. Scale bars: (a, b) 50 μm and (e) 5 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) E13.5 control and Haus6 cKO Trp53 KO coronal cortex sections stained with antibodies against γ-tubulin (green) and DAPI to label DNA (blue). Yellow arrowheads point to γ-tubulin staining at spindle poles. Light blue arrowheads point to spindle-associated γ-tubulin staining. Insets are 1.5× magnifications of spindle poles in the example cells. (b) Quantification of the percentage of mitotic cells in (a) with fragmented centrosomes. n=4 for Trp53 KO and n=3 for Haus6 cKO Trp53 KO embryos (total of 215 and 254 cells counted, respectively, 30–129 cells per embryo). (c) Coronal cortex sections from control and Haus6 cKO Trp53 KO E13.5 embryos stained with antibodies against α-tubulin (green) to reveal spindle microtubules and DAPI to stain DNA (blue). (d) Quantification of the percentage of mitotic progenitors in (c) displaying disorganized spindles. n=4 for Trp53 KO and n=3 for Haus6 cKO Trp53 KO embryos (total of 215 and 254 cells counted, respectively, 30–129 cells per embryo). (e) Sections as in (c) were stained with antibodies against γ-tubulin and centrin, and with DAPI to stain DNA. Note that control and Haus6 cKO Trp53 KO cells are shown at different scales due to the increased size of Haus6 cKO Trp53 KO cells with extra centrosomes. (f) Quantification of the number of centrioles (centrin foci) at spindle poles in mitotic cells as in (e). The percentage of cells with the indicated number of centrioles was plotted. n=3 for Trp53 KO and n=3 for Haus6 cKO Trp53 KO embryos (total of 82 and 125 cells counted, respectively, 25–62 cells per embryo). (g) For the two categories of cells in (f) that have 3–4 or more than 4 centrin foci, respectively, the area occupied by the cells was measured and means were plotted. A total of 62 and 60 mitotic cells, respectively, in n=3 for Trp53 KO Haus6cKO embryos. (b, d, f, g) Plotted values are means, error bars show SD. ***p<0.001 by two-tailed t-test. Scale bars: (a, c, e) 3 μm.
+
+### Mitotic errors in augmin-deficient progenitors correlate with DNA damage
 
 Since mitotic errors can cause DNA breaks (Quignon et al., 2007), we probed brain tissue of Haus6 cKO Trp53 KO embryos for the presence of γH2AX foci, a marker of an active DNA damage response. Indeed, at E13.5 the percentage of cells with interphase nuclei displaying DNA damage was strongly increased in both the cortex and thalamus when compared to controls (Figure 5a–d). Side-by-side comparison of γH2AX staining in E13.5 thalamus of Haus6 cKO and Haus6 cKO Trp53 KO embryos showed that augmin deficiency led to increased DNA damage relative to controls and that absence of p53 further increased this effect (Figure 5c,d). Thus, the extent of mitotic defects that we observed in Haus6 cKO and Haus6 cKO Trp53 KO embryos was correlated with a concomitant increase in DNA damage.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig5-v2.jpg)
 
-**Figure 5.:** (a) Representative images of a region of the cortex of E13.5 Trp53 KO control (Haus6fl/wt Nestin-Cre+Trp53−/−) and Haus6 cKO Trp53 KO (Haus6fl/fl Nestin-Cre+ Trp53−/−) embryos. Coronal sections were stained by immunohistochemistry with an antibody against γH2AX (brown). (b) Quantification of the percentage of cells overexpressing γH2AX in the E13.5 cortex. n=4 for Trp53 KO control and n=4 for Haus6 cKO Trp53 KO embryos (total of 9874 and 14,506 cells counted, respectively, two sections per embryo). (c) Representative images of the region of the thalamus of E13.5 control (Haus6fl/wt Nestin-Cre+ Trp53+/+), Haus6 cKO (Haus6fl/fl Nestin-Cre+ Trp53+/+), Trp53 KO control, and Haus6 cKO Trp53 KO embryos. (d) Quantification of γH2AX-positive cells in the E13.5 thalamus in embryos of the indicated genotypes. n=3 for control, n=4 for Haus6 cKO, n=4 for Trp53 KO, and n=3 for Haus6 cKO Trp53 KO embryos (total of 10,773, 5433, 23,384, 20,602 cells counted, respectively, two sections per embryo). (b, d) Plots show mean values, error bars indicate SD. *p<0.05, **p<0.01, ***p<0.001 by two-tailed t-test. Scale bars: (a, c) 45 µm.Figure 5—source data 1.Figure 5b, d.
+**Figure 5.:** (a) Representative images of a region of the cortex of E13.5 Trp53 KO control (Haus6fl/wt Nestin-Cre+Trp53−/−) and Haus6 cKO Trp53 KO (Haus6fl/fl Nestin-Cre+ Trp53−/−) embryos. Coronal sections were stained by immunohistochemistry with an antibody against γH2AX (brown). (b) Quantification of the percentage of cells overexpressing γH2AX in the E13.5 cortex. n=4 for Trp53 KO control and n=4 for Haus6 cKO Trp53 KO embryos (total of 9874 and 14,506 cells counted, respectively, two sections per embryo). (c) Representative images of the region of the thalamus of E13.5 control (Haus6fl/wt Nestin-Cre+ Trp53+/+), Haus6 cKO (Haus6fl/fl Nestin-Cre+ Trp53+/+), Trp53 KO control, and Haus6 cKO Trp53 KO embryos. (d) Quantification of γH2AX-positive cells in the E13.5 thalamus in embryos of the indicated genotypes. n=3 for control, n=4 for Haus6 cKO, n=4 for Trp53 KO, and n=3 for Haus6 cKO Trp53 KO embryos (total of 10,773, 5433, 23,384, 20,602 cells counted, respectively, two sections per embryo). (b, d) Plots show mean values, error bars indicate SD. *p<0.05, **p<0.01, ***p<0.001 by two-tailed t-test. Scale bars: (a, c) 45 µm.
 
-## Augmin deficiency reduces neurogenesis
+### Augmin deficiency reduces neurogenesis
 
 Centrosome defects result in premature differentiation in human cerebral organoid models (Gabriel et al., 2016; Lancaster et al., 2013). We wondered whether premature differentiation may contribute to the defects observed in augmin-deficient mouse brains. To address this, we labeled embryonic apical progenitors in S-phase by BrdU injection into pregnant mice at E12.5 and sacrificed the embryos for analysis 24 hr later (Figure 6a). We then determined among the BrdU-positive cells the proportion that had exited the cell cycle (negative for Ki67 staining) or that underwent neuronal differentiation (negative for PAX6 staining, positive for βIII-tubulin staining) in cortex and thalamus (Figure 6b–e). We observed that compared to controls the proportion of BrdU-positive, βIII-tubulin expressing cells was reduced in both Haus6 cKO and Haus6 cKO Trp53 KO brains. This result suggested that mitotic defects caused by augmin deficiency did not result in premature differentiation but rather interfered with neurogenesis, and that this was not rescued by co-deletion of Trp53.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig6-v2.jpg)
 
-**Figure 6.:** Haus6 cKO and Haus6 cKO Trp53 KO brains.(a) Schematic depicting the experimental procedure of BrdU injection and analysis. (b) Examples of brain sections stained with antibodies against BrdU and the proliferation marker Ki67. Identification of BrdU-labeled cells that did not display Ki67 staining is shown. (c) Examples of brain sections stained with antibodies against BrdU, the progenitor marker PAX6, and the neuronal marker βIII-tubulin. Identification of BrdU-labeled cells that did not express PAX6 but were positive for βIII-tubulin is shown. (d) Quantifications of cells in E13.5 cortex of Trp53 KO (control) and Haus6 cKO Trp53 KO embryos stained as in (b and c). The percentage of BrdU-positive cells showing the indicated staining was plotted. For cell cycle exit analysis, n=4 for Trp53 KO and n=4 for Haus6 cKO Trp53 KO embryos were analyzed (total of 8730 and 7361 BrdU positive cells per genotype, respectively, 1381–2942 cells in 2–3 sections per embryo). For analysis of neurogenesis, n=4 for Trp53 KO and n=3 for Haus6 cKO Trp53 KO embryos were analyzed (total of 13,194 and 8139 BrdU positive cells per genotype, respectively, 1750–4614 in 3–6 sections per embryo). (e) Quantifications of cells in E13.5 thalamus of control and Haus6 cKO, and Trp53 KO (control) and Haus6 cKO Trp53 KO embryos stained as in (b and c). The percentage of BrdU-positive cells showing the indicated staining was plotted. For cell cycle exit analysis, n=3 for control, n=3 for Haus6 cKO, n=4 for Trp53 KO, and n=4 for Haus6 cKO Trp53 KO embryos were analyzed (total 9050, 5923, 12,663, 8610 of BrdU positive cells per genotype, respectively, 1159–4106 cells in 2–3 sections per embryo). For analysis of neurogenesis, n=3 for control, n=3 for Haus6 cKO, n=4 for Trp53 KO, and n=3 for Haus6 cKO Trp53 KO embryos were analyzed (total of 11,749, 5301, 8927 and 4377 BrdU positive cells per genotype, respectively, 1363–5087 cells in 2–5 sections per embryo). (d,e) Plots show mean values, error bars indicate SD. *p<0.05, **p<0.01, ***p<0.001 by two-tailed t-test. Scale bars: (b, c) 40 μm.Figure 6—source data 1.Figure 6d, e.
+**Figure 6.:** (a) Schematic depicting the experimental procedure of BrdU injection and analysis. (b) Examples of brain sections stained with antibodies against BrdU and the proliferation marker Ki67. Identification of BrdU-labeled cells that did not display Ki67 staining is shown. (c) Examples of brain sections stained with antibodies against BrdU, the progenitor marker PAX6, and the neuronal marker βIII-tubulin. Identification of BrdU-labeled cells that did not express PAX6 but were positive for βIII-tubulin is shown. (d) Quantifications of cells in E13.5 cortex of Trp53 KO (control) and Haus6 cKO Trp53 KO embryos stained as in (b and c). The percentage of BrdU-positive cells showing the indicated staining was plotted. For cell cycle exit analysis, n=4 for Trp53 KO and n=4 for Haus6 cKO Trp53 KO embryos were analyzed (total of 8730 and 7361 BrdU positive cells per genotype, respectively, 1381–2942 cells in 2–3 sections per embryo). For analysis of neurogenesis, n=4 for Trp53 KO and n=3 for Haus6 cKO Trp53 KO embryos were analyzed (total of 13,194 and 8139 BrdU positive cells per genotype, respectively, 1750–4614 in 3–6 sections per embryo). (e) Quantifications of cells in E13.5 thalamus of control and Haus6 cKO, and Trp53 KO (control) and Haus6 cKO Trp53 KO embryos stained as in (b and c). The percentage of BrdU-positive cells showing the indicated staining was plotted. For cell cycle exit analysis, n=3 for control, n=3 for Haus6 cKO, n=4 for Trp53 KO, and n=4 for Haus6 cKO Trp53 KO embryos were analyzed (total 9050, 5923, 12,663, 8610 of BrdU positive cells per genotype, respectively, 1159–4106 cells in 2–3 sections per embryo). For analysis of neurogenesis, n=3 for control, n=3 for Haus6 cKO, n=4 for Trp53 KO, and n=3 for Haus6 cKO Trp53 KO embryos were analyzed (total of 11,749, 5301, 8927 and 4377 BrdU positive cells per genotype, respectively, 1363–5087 cells in 2–5 sections per embryo). (d,e) Plots show mean values, error bars indicate SD. *p<0.05, **p<0.01, ***p<0.001 by two-tailed t-test. Scale bars: (b, c) 40 μm.
 
-## Loss of augmin in Trp53 KO brains disrupts neuroepithelium integrity
+### Loss of augmin in Trp53 KO brains disrupts neuroepithelium integrity
 
 Apart from the aberrant mitoses in Haus6 cKO Trp53 KO progenitors, the distribution of mitotic figures within the tissue was also highly abnormal. Whereas in control and Haus6 cKO brains, the vast majority of mitotic figures with condensed chromosomes were observed in the apical region, near the VS (Figure 2a,b; Figure 2—figure supplement 1b,d), in Haus6 cKO Trp53 KO brains most of the mitotic figures were distributed throughout the tissue including more basal regions (Figure 4a–c).
 
 The presence of large numbers of basally positioned mitotic figures in the cortex and thalamus of Haus6 cKO Trp53 KO embryos could indicate that apical progenitors had delaminated, that their nuclei did not migrate to the apical region prior to division, or that the cells displaying mitotic defects in basal layers were not apical progenitors. The latter possibility was tested by PAX6 staining (Figure 7a). Whereas in the cortex of Trp53 KO controls PAX6-positive cells were confined to the VZ, well separated from more basally positioned neurons labeled by βIII-tubulin staining, in Haus6 cKO Trp53 KO cortex PAX6-positive cells localized indiscriminately in basal and apical regions of the cortex, largely overlapping with regions populated by βIII-tubulin-positive neurons (Figure 7a,d). Interestingly, TBR2-positive intermediate progenitors, residing in the subventricular zone in control sections, had also lost this confined localization in Haus6 cKO Trp53 KO cortexes (Figure 7b,e). During development, apical progenitors in interphase maintain a bipolar structure with their centrosomes lining the VS, a configuration that is readily visualized by γ-tubulin staining in control embryos (Figure 7c). In Haus6 cKO Trp53 KO embryos, apical centrosome localization was strongly reduced and sometimes completely lost (Figure 7c,f). Instead, clusters of γ-tubulin foci were observed in subventricular regions, where they were never observed in controls (Figure 7c). Centrin staining indicated the presence of many centrioles, confirming that these were clustered centrosomes rather than PCM fragments (Figure 7—figure supplement 1a). Taken together, these observations suggested that progenitors in Haus6 cKO Trp53 KO cortexes were not only incorrectly positioned, but had also lost their polar organization. To assess this more directly, we stained for nestin, an intermediate filament protein specifically expressed in apical progenitors. In the cortex of control embryos, nestin-stained progenitors displayed a highly polarized, apicobasal morphology and a laterally aligned arrangement within the tissue (Figure 7—figure supplement 2a). In contrast, polarized morphology and lateral alignment were completely disrupted in progenitors of Haus6 cKO Trp53 KO embryos (Figure 7—figure supplement 2a). Consistent with these observations, staining with α-tubulin antibodies revealed that microtubules displayed apicobasal organization in control cells, running along the length of the highly polarized cell bodies (Figure 7—figure supplement 2b,c). In contrast, microtubules in Haus6 cKO Trp53 KO progenitors lacked apicobasal orientation and appeared disorganized (Figure 7—figure supplement 2b,c).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig7-v2.jpg)
+
+**Figure 7.:** (a, b) Representative images of the E13.5 cortex from Trp53 KO control (Haus6fl/wt Nestin-Cre+Trp53−/−) and Haus6 cKO Trp53 KO (Haus6fl/fl Nestin-Cre+Trp53−/−) embryos stained with antibodies against PAX6 (a) or TBR2 (b) (red) and the neuronal marker βIII-tubulin (green). DNA was stained with DAPI. (c) Representative images of E13.5 cortex from control (Haus6fl/fl Nestin-Cre-Trp53−/−) and Haus6 cKO Trp53 KO (Haus6fl/fl Nestin-Cre+Trp53−/−) embryos. Coronal sections were co-stained with antibodies against γ-tubulin (green) and PAX6 (red). DNA was stained with DAPI. Magnifications of the boxed regions labeled with 1, 2, 3, and 4 are shown. In the magnified region labeled with 4, yellow arrowheads point to ectopic clusters of interphase centrosomes. (d, e) Distribution of PAX6 and TBR2 staining in sections as in (a and b), respectively. Intensity values were averaged into 9.8-µm-thick bins and plotted as the percentage of total intensity. Lines connect mean values and error bars display SD. (d) n=5 for Trp53 KO and n=4 for Haus6 cKO Trp53 KO embryos. (e) n=2 for Trp53 KO and n=2 for Haus6 cKO Trp53 KO embryos. (f) Quantification of the density of centrosome number at the ventricular surface of the cortex of E13.5 Trp53 KO and Haus6 cKO Trp53 KO embryos. n=4 for Trp53 KO and n=4 for Haus6 cKO Trp53 KO embryos. Plots show mean values and error bars display SD. ***p<0.001 by two-tailed t-test. Scale bars: (a, b) 35 μm and (c) white – 25 µm, yellow – 5 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** E135 cortical sections were stained with antibodies against γ-tubulin and the centriolar marker centrin. Two regions containing multiple, clustered interphase centrosomes are shown as magnifications. Scale bars: 5 μm and 2 μm (magnifications).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/67989/elife-67989-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) Representative images of E13.5 cortical sections from Trp53 KO control (Haus6fl/fl Nestin-Cre− Trp53−/−) and Haus6 cKO (Haus6fl/fl Nestin-Cre+ Trp53−/−) embryos stained with antibodies against the apical progenitor marker nestin (red/white) and acetylated α-tubulin, a marker for stable microtubules (green). (b) Representative images of E13.5 cortical sections from Trp53 KO control (Haus6fl/fl Nestin-Cre− Trp53−/−) and Haus6 cKO Trp53 KO (Haus6fl/fl Nestin-Cre+ Trp53−/−) embryos stained with antibodies against α-tubulin (green/white) and the apical progenitor marker PAX6 (red). (c) Magnification of the apical region of the cortex of E13.5 Trp53 KO control and Haus6 KO Trp53 KO embryos showing microtubules stained with α-tubulin antibody. Scale bars: (a) 25 μm, (b) 35 μm, and (c) 15 μm.
 
 Taken together, these data suggest that in Haus6 cKO Trp53 KO embryos apical progenitors had lost their polarized organization and divided ectopically. As a result, neuroepithelium integrity was severely disrupted.
 
@@ -103,19 +151,400 @@ In summary, our work shows that, in contrast to centrosomal nucleation, augmin-m
 
 ## Materials and methods
 
-## Generation and husbandry of mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Haus6</td>
+      <td>NCBI gene</td>
+      <td>Gene ID: 230376</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Nestin-Cre Haus6 cKO</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Nestin-Cre Haus6 cKO Trp53 KO</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Haus6 floxed Neo (Haus6fl-Neo)</td>
+      <td>RIKEN http://www2.clst.riken.jp/arg/mutant%20mice%20list.html</td>
+      <td>CDB1218K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Haus6 floxed (Haus6fl)</td>
+      <td>RIKEN http://www2.clst.riken.jp/arg/mutant%20mice%20list.html</td>
+      <td>CDB1354K RRID:IMSR_RBRC09630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6-Tg(CAG-flpe)36Ito/ItoRbrc</td>
+      <td>RIKEN (Kanki et al., 2006)</td>
+      <td>RRID:IMSR_RBRC01834</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.Cg-Tg(Nes-cre)1Kln/J</td>
+      <td>Gift from Maria Pia Cosma (originally from Jackson Laboratories)</td>
+      <td>RRID:IMSR_JAX:003771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Trp53-deficient mice (B6.129S2-Trp53tm1Tyj/J)</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:002101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#3873T</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#T6793 RRID:AB_477585</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-βIII-tubulin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab18207 RRID:AB_444319</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-βIII-tubulin (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>#801201 RRID:AB_2313773</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase-3 (rabbit monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>#MAB835 RRID:AB_2243951</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>#ab8955 RRID:AB_306886</td>
+      <td>IF (1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γ-tubulin (mouse monoclonal, clone TU-30)</td>
+      <td>ExBio</td>
+      <td>#ab27074 RRID:AB_2211240</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γ-tubulin (rabbit monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#T5192 RRID:AB_261690</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab15580 RRID:AB_443209</td>
+      <td>IF (1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-nestin (mouse monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#4760 RRID:AB_2235913</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p53 (mouse monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>#CST2524S RRID:AB_331743</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PAX6 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>#901301 RRID:AB_2565003</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phosphorylated-Histone H3 (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>#06-570 RRID:AB_310177</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TBR2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab23345 RRID:AB_778267</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-histone H2AX (Ser139) (mouse monoclonal, clone JBW301)</td>
+      <td>Millipore</td>
+      <td>#05-636 RRID:AB_309864</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p21 (rat monoclonal, HUGO291)</td>
+      <td>Abcam</td>
+      <td>#ab107099 RRID:AB_10891759</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-centrin-Alexa 488 (rabbit polyclonal)</td>
+      <td>Homemade (Andrew Holland) (Phan et al., 2021)</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG Alexa 488 (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A11029 RRID:AB_138404</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1 Alexa 488 (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A21121 RRID:AB_2535764</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1 Alexa 568 (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A21124 RRID:AB_2535766</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG1 Alexa 633 (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A21052 RRID:AB_2535719</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG2a Alexa 488 (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A21131 RRID:AB_2535771</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG Alexa 488 (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A11034 RRID:AB_2576217</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG Alexa 568 (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A11036 RRID:AB_10563566</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG Alexa 633 (goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A21071 RRID:AB_141419</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG HRP conjugated (goat polyclonal)</td>
+      <td>Dako-Agilent</td>
+      <td>#P0447 RRID:AB_2617137</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG polyclonal isotype control (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab27478 RRID:AB_2616600</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG1 (NCG01) isotype control (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>#ab81032 RRID:AB_2750592</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG2a isotype control (eBM2a) (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>#14-4724-82 RRID:AB_470114</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mAug6KO_FW</td>
+      <td>This paper</td>
+      <td>Genomic PCR primer Haus6</td>
+      <td>5′-CAACCCGAGCAACAGAAACC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mAug6KO_Rev</td>
+      <td>This paper</td>
+      <td>Genomic PCR primer Haus6</td>
+      <td>5′-CCTCCCACCAACTACAGACC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>olMR1084</td>
+      <td>This paper</td>
+      <td>Genomic PCR primer Cre</td>
+      <td>5′-GCGGTCTGGCAGTAAAAACTATC-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>olMR1085</td>
+      <td>This paper</td>
+      <td>Genomic PCR primer Cre</td>
+      <td>5′-GTGAAACAGCATTGCTGTCACTT-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>olMR7338</td>
+      <td>This paper</td>
+      <td>Genomic PCR primer control</td>
+      <td>5′-CTAGGCCACAGAATTGAAAGATCT-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>olMR7339</td>
+      <td>This paper</td>
+      <td>Genomic PCR primer control</td>
+      <td>5′-GTAGGTGGAAATTCTAGCATCATCC-3′</td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software Inc</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>QuPath</td>
+      <td>Queens University (Belfast,UK)</td>
+      <td>RRID:SCR_018257</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>FIJI (ImageJ)</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hematoxylin</td>
+      <td>Dako-Agilent</td>
+      <td>S202084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5-Bromo-2′-deoxyuridine (BrdU)</td>
+      <td>Sigma-Aldrich</td>
+      <td>B5002</td>
+      <td>Injected peritoneally to pregnant females at a final concentration of 120 mg/kg of animal weight</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EnVision Flex Antibody Diluent</td>
+      <td>Dako-Agilent</td>
+      <td>K800621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Envision Flex Wash buffer</td>
+      <td>Dako-Agilent</td>
+      <td>K800721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3-3′-diamino-benzidine</td>
+      <td>Dako-Agilent</td>
+      <td>K3468</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse on mouse (M.O.M) Immuno-detection Kit</td>
+      <td>Vector Laboratories</td>
+      <td>BMK-2202 RRID:AB_2336833</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation and husbandry of mice
 
 Nestin-Cre Haus6 cKO were obtained by crossing Haus6 floxed (Haus6fl) mice with B6.Cg-Tg(Nes-cre)1Kln/J mice. Haus6 floxed Neo mice (Haus6fl-Neo) (Accession no. CDB1218K, http://www2.clst.riken.jp/arg/mutant%20mice%20list.html) were generated as described (Watanabe et al., 2016). To generate Haus6 floxed mice (Haus6fl) (RBRC09630, Accession no. CDB1354K, http://www2.clst.riken.jp/arg/mutant%20mice%20list.html, Haus6fl-Neo mice were crossed with C57BL/6-Tg(CAG-flpe)36Ito/ItoRbrc (RBRC01834) (Kanki et al., 2006). The resultant mice without the PGK-neo cassette (Haus6 flox mice) were maintained by heterozygous crossing (C57BL/6N background). B6-Tg(CAG-FLPe)36 was provided by the RIKEN BRC through the National Bio-Resource Project of the MEXT, Japan. B6.Cg-Tg(Nes-cre)1Kln/J) mice were a gift from Maria Pia Cosma (CRG, Barcelona, Spain) and previously purchased from Jackson Laboratories. To obtain Nestin-Cre Haus6 cKO Trp53 KO mice, mice carrying the floxed Haus6 (Haus6fl) and Nestin-Cre alleles were crossed with mice lacking p53. p53-deficient mice (B6.129S2-Trp53tm1Tyj/J) were purchased from Jackson Laboratories. All the mouse strains were maintained on a mixed 129/SvEv-C57BL/6 background in strict accordance with the European Community (2010/63/UE) guidelines in the specific-pathogen-free animal facilities of the Barcelona Science Park (PCB). All protocols were approved by the Animal Care and Use Committee of the PCB/University of Barcelona (IACUC; CEEA-PCB) and by the Departament de Territori I Sostenibilitat of the Generalitat de Catalunya in accordance with applicable legislation (Real Decreto 53/2013). All efforts were made to minimize use and suffering.
 
-## Mice genotyping
+### Mice genotyping
 
 Genotyping was performed by polymerase chain reaction (PCR) using genomic DNA extracted from tail or ear biopsies. Biopsies were digested with Proteinase-K (0.4 mg/ml in 10 mM Tris-HCl, 20 mM NaCl, 0.2% SDS, and 0.5 mM EDTA) overnight at 56°C. DNA was recovered by isopropanol precipitation, washed in 70% ethanol, dried, and resuspended in H2O. To detect Haus6 wt (800 bp), Haus6 floxed (1080 bp), and Haus6 KO (530 bp) alleles by PCR the following pair of primers were used: mAug6KO_FW (5′-CAACCCGAGCAACAGAAACC-3′) and mAug6KO_Rev (5′-CCTCCCACCAACTACAGACC-3′). These PCRs were run for 35 cycles with an annealing temperature of 64.5°C. To detect the transgenic Cre-recombinase allele in Nestin-Cre cKO mice (100 bp) primers olMR1084 (5′-GCGGTCTGGCAGTAAAAACTATC-3’) and olMR1085 (5′-GTGAAACAGCATTGCTGTCACTT-3′) were used. For this PCR, primers olMR7338 (5′-CTAGGCCACAGAATTGAAAGATCT-3′) and olMR7339 (5′-GTAGGTGGAAATTCTAGCATCATCC-3′) were used as internal control (324 bp). These PCRs were run for 35 cycles with an annealing temperature of 51.7°C.
 
-## BrdU injections
+### BrdU injections
 
 Pregnant females with embryos at E12.5 were injected intraperitoneally with 5-Bromo-2′-deoxyuridine (BrdU) (B5002; Sigma-Aldrich) diluted in phosphate-buffered saline (PBS) at a final concentration of 120 mg per kg of animal weight. After 24 hr, embryonic brain tissue was processed for histopathology analysis as described in the next section.
 
-## Histology, immunofluorescence, and immunohistochemistry
+### Histology, immunofluorescence, and immunohistochemistry
 
 For histopathology analysis of mouse embryos, timed pregnant female mice were euthanized and embryos were removed. Following euthanasia, embryo heads were fixed in 4% PFA diluted in PBS overnight at 4°C, followed by cryoprotection in increasing concentration of sucrose in PBS (first 15%, then 30%, with a 24 hr incubation at 4°C for each sucrose concentration), followed by overnight incubation in a 1:1 solution of 30% sucrose and OCT (Tissue-Tek). Tissues were then embedded in OCT and frozen in liquid nitrogen-cooled isopentane. For tissue histological analysis, 10-µm-thick cryosections were prepared, placed on glass slides, and processed for either hematoxylin/eosin staining using standard protocols or for immunofluorescence staining. For immunofluorescence staining, cryosections were thawed at room temperature, washed with PBS, and subjected to heat-mediated antigen retrieval in citrate buffer (10 mM citric acid) at pH 6, as required. Tissue sections were permeabilized with PBS containing 0.05% TX100 (PBS-T 0.05%) for 15 min and blocked with blocking solution (10% goat serum diluted in PBS-T 0.1%). Sections were then incubated overnight at 4°C with primary antibodies diluted in blocking solution. The next day, after washing with PBS-T 0.05%, sections were incubated for 60 min with Alexa-Fluor conjugated complementary secondary antibodies and DAPI to stain DNA. Sections were again washed with PBS-T 0.05% and mounted with Prolong Gold antifading reagent (Thermo Fisher Scientific).
 
@@ -123,11 +552,11 @@ For immunofluorescence stainings after BrdU incorporation sections were dried an
 
 Immunohistochemistry (IHC) was performed using 7 µm cuts. Prior to IHC, antigen retrieval was performed using Tris-EDTA buffer pH 9 for 20 min at 97°C using a PT Link (Dako-Agilent). Quenching of endogenous peroxidase was performed by a 10 min incubation with Peroxidase-Blocking Solution (Dako REAL S2023). Blocking was done in M.O.M. blocking reagent (MKB-2213, Vector Laboratories), 5% of goat normal serum (16210064, Thermo Fisher Scientific) mixed with 2.5% BSA diluted in Envision Flex Wash buffer (K800721, Dako-Agilent) and with Casein solution (ref: 760-219, Roche) for 60 min and 30 min, respectively. Primary and secondary antibodies were diluted with EnVision FLEX Antibody Diluent (K800621, Dako-Agilent) and incubated for 120 min. Antigen–antibody complexes were revealed with 3-3′-diaminobenzidine (K3468, Dako-Agilent). Sections were counterstained with hematoxylin (S202084, Dako-Agilent) and mounted with Mounting Medium, Toluene-Free (CS705, Dako-Agilent) using a Dako CoverStainer. Specificity of staining was confirmed by using a mouse IgG1 isotype control (ab81032, Abcam).
 
-## Antibodies
+### Antibodies
 
 All antibodies are listed in the key resources table.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Histology sections stained with hematoxylin/eosin (Figure 1c,d; Figure 1—figure supplement 1c; Figure 3b,e) or used for IHC (Figure 5a,c; Figure 2—figure supplement 2b; Figure 3—figure supplement 1a,c) were imaged with the digital slide scanner Nanozoomer 2.0 HT from Hamamatsu and processed with NDP.view two software from Hamamatsu. Immunofluorescence labeled histology sections (Figure 1e; Figure 2a,d,h,j,l; Figure 2—figure supplement 1a,b,c,f,h; Figure 2—figure supplement 2a; Figure 3c; Figure 4a,b; Figure 4—figure supplement 1a,c,e; Figure 6; Figure 7; Figure 7—figure supplement 1; Figure 7—figure supplement 2) were imaged with a Leica TCS SP5 laser scanning spectral confocal microscope. Confocal Z-stacks were acquired with 0.5 µm or 1 µm of step size depending on the experiment and using laser parameters that avoided the presence of saturated pixels. Immunofluorescence-labeled histology sections shown in Figure 2f and Figure 4e were imaged with a Zeiss 880 confocal microscope equipped with an Airyscan. In the images shown in Figure 2f, for the Superresolution Airyscan mode a 63× magnification, 1.4 NA oil-immersion lens with a digital zoom of 1.8× was used. The z-step between the stacks was set at 0.211 µm. In the images shown in Figure 4e, for the Fast Airyscan mode a 40× magnification 1.2 NA multi-immersion lens with a digital zoom of 1.8× was used. The z-step between the stacks was set at 0.5 µm. XY resolution was set at 1588×1588. Airyscan raw data were preprocessed with the automatic setting of Zen Black. Additional image processing and maximum intensity z-projections were done in ImageJ software. In each experiment, serial brain sections from multiple animals per genotype were analyzed (details in figure legends).
 
@@ -143,6 +572,6 @@ To quantify the distribution of neural progenitors within the cortex, cryosectio
 
 For analysis of mitotic spindle orientation, cryosections providing coronal views of the thalamus/cortex were immunostained with DAPI and the mitotic DNA marker phosphorylated-Histone H3 and the centrosome/spindle pole marker γ-tubulin. The orientation of the mitotic spindle was then determined by measuring the angle between the pole-to-pole axis and the ventricular lining.
 
-## Statistics
+### Statistics
 
 All graphs with error bars are presented as means with standard deviation. To determine statistical significance between samples, an unpaired two-way Student’s t-test was used. Statistical calculations and generation of graphs were performed in Excel or Graphpad Prism6 (ns=not significant, *p<0.05, **p<0.01, ***p<0.001).

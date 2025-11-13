@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Theoretical Molecular Biophysics Laboratory, National Heart, Lung and Blood Institute, National Institutes of Health Bethesda United States
-2. https://ror.org/024mw5h28 Department of Biochemistry and Molecular Biology, University of Chicago Chicago United States
+1. Theoretical Molecular Biophysics Laboratory, National Heart, Lung and Blood Institute, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Department of Biochemistry and Molecular Biology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -39,11 +39,19 @@ In this study, we present structural and computational data that lead to a model
 
 ## Results
 
-## Structure of an open conformation of MscS in a PC14:1 lipid bilayer
+### Structure of an open conformation of MscS in a PC14:1 lipid bilayer
 
 To determine an open-state structure of wild-type (wt) MscS in conditions that resemble a membrane, we purified the channel and reconstituted it into nanodiscs (NDs) consisting of myristoyl-phosphatidylcholine PC14:1 lipids and MSP1 E3D1 scaffold proteins, which we then imaged using single-particle cryo-EM. (Alternative preparations of the wt channel using PC14:0 lipids or of the A106V mutant in dioleoyl-phosphatidylcholine PC18:1 NDs failed to reveal an open state and instead resulted in a conformation indistinguishable from that of the known closed state, not shown.) The resulting cryo-EM structure of wt-MscS in PC14:1 is shown in Figure 1A (Supplementary file 1). The resolution of the map is 3.1 Å; density signals can be discerned and traced for most of the polypeptide chain, except for residues 1–15 at the N-terminus, for which sidechain assignments required using flexible fitting. The structure recapitulates known features of the MscS heptameric architecture; that is, a large intracellular domain, which features numerous contacts among protomers and appears to facilitate oligomerization, and a much more loosely packed transmembrane domain, which responds to the physical state of the membrane and which consists of helices TM1, TM2, and TM3 in each protomer. As observed in previous structures of MscS (Bass et al., 2002; Wang et al., 2008; Pliotas et al., 2015; Flegler et al., 2021; Zhang et al., 2021; Reddy et al., 2019), TM3 is not a continuous helix but breaks into two distinct segments, approximately halfway. The N-terminal fragment, TM3a, flanks much of the transmembrane portion of the ion permeation pathway (Figure 1B), while TM1 and TM2 are positioned peripherally toward the lipid bilayer. The C-terminal fragment of TM3, TM3b, serves as the linker between the transmembrane and intracellular domains. It is at the junction between TM3a and TM3b where the ion permeation pathway is narrowest in this structure; however, at this point, the pore diameter is ~13 Å, which is sufficient to permit flow of hydrated cations. The cryo-EM map reveals no evidence of any obstructions, such as lipids, in this seemingly open pore.
 
 Figure 2A compares the structure of this putatively open state of wt-MscS obtained in PC14:1 lipid NDs and that of the closed state we previously determined in PC18:1 (Reddy et al., 2019). No significant differences exist in the intracellular domain or its arrangement relative to the TM3b linker; the internal structure of the TM1–TM2 hairpin is also largely invariant, although TM1 is elongated through a reconfiguration of its N-terminal cap, which in the closed state lies parallel to the membrane surface (Reddy et al., 2019). By contrast, there is a drastic reorientation of the TM1–TM2 hairpin relative to TM3a as well as the membrane plane. Specifically, the TM1–TM2 hairpin tilts approximately by 40° toward the bilayer midplane upon channel opening; in turn, this reorientation permits TM3a to alter its angle relative to TM3b and to retract away from the pore axis, thereby widening the ion permeation pathway. This drastic change in the TM1–TM2 hairpin, which is symmetrically replicated in all protomers, translates into a marked reduction in the hydrophobic width of the channel (i.e. the length of the transmembrane span along the bilayer perpendicular). This reduction is likely one of the factors that explain why the open conformation is favored upon reconstitution in PC14:1 NDs, which are expected to be significantly thinner than the PC18:1 NDs that stabilize the closed state (Reddy et al., 2019). Indeed, this thinning is clearly discernable when the cryo-EM maps of closed and open states are compared (Figure 2B). The open-state map, however, seems to reflect a greater heterogeneity in the protein conformation and does not permit a conclusive assignment of individual lipid molecules to specific sites on the protein surface. Nonetheless, a series of densities atop the C-terminus of TM2, filling in small fenestrations formed on the extracellular face of the channel, appear to replicate some of the lipid-interaction sites we had previously detected in the closed state, which we termed ‘hook’ lipids (Reddy et al., 2019; Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left, the open structure of MscS in PC14:1 lipid nanodiscs (blue cartoons) is superimposed onto that of the closed state (red), previously determined in PC18:1 nanodiscs (PDB ID 6PWN, and EMD-20508). The corresponding cryo-electron microscopy (EM) density maps (transparent cyan and gray surfaces, respectively) are shown as well. Right, conformational change in each of the protomers. (B) Side-by-side comparison of the cryo-EM density maps obtained in PC18:1 (gray) and PC14:1 (cyan), alongside their overlap. The comparison highlights the reduction in the width of the transmembrane span of the channel upon opening, seemingly matched by thinning of the lipid nanodiscs, by approximately 7 Å.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Lipids at these sites were more clearly discerned in the closed state in PC18:1 nanodiscs (Reddy et al., 2019), and referred to as ‘hook’ lipids.
 
 Lastly, Figure 3 compares the structure of wt-MscS described above with two others reported previously and proposed to also capture open or partially open conformations of the channel: that of a mutant (A106V), crystallized in detergent micelles and resolved through X-ray diffraction (Wang et al., 2008) and that of wt-MscS reconstituted in PC10:0 lipid NDs, imaged with single-particle cryo-EM (Zhang et al., 2021). This comparison makes it clear that the extent of the conformational changes observed in our structure is significantly amplified in those existing structures. For example, TM1 tilts by up to 55°, and TM2 tilts by about 45° (Figure 3A). However, these differences have a minor impact on the dimensions of the pore, whose diameter is, at most, only 2 Å wider (Figure 3B). Admittedly, none of the three structures capture the channel embedded in a native membrane (arguably, though, a PC14:1 ND is a more realistic mimic than a detergent micelle or a PC10:0 ND). Since the conformational changes observed in the PC14:1 structure appear sufficient to open up the ion permeation pathway, we posit that the structure of wt-MscS reported here is, at minimum, similarly likely to represent the conductive form of the channel in physiological conditions.
 
@@ -51,11 +59,204 @@ Lastly, Figure 3 compares the structure of wt-MscS described above with two othe
 
 **Figure 3.:** (A) Overlay comparing helices TM1 and TM2 in the closed state (green tube and white cartoons) and in the putatively open states obtained in PC14:1 nanodiscs (this work, cyan), in PC10:0 nanodiscs (PDB 6VYL, pink) and in detergent micelles (PDB ID 2VV5, orange). Note the structures in lipid nanodisc were determined with single-particle cryo-electron microscopy (EM) for the wild-type protein, while the A106V structure in detergent was determined with X-ray crystallography. All structures are superimposed based on TM3. (B) Comparison of the dimensions of the permeation pore in the three structures of the putatively open state. The black-dashed line indicates the position of L105, which is approximately where the pore is narrowest; the radius here is 6.3 Å for the PC14:1 structure, 6.7 Å for the PC10:0 structure, and 7.5 Å for the mutant in detergent.
 
-## Closed-state MscS induces drastic deformations of the lipid bilayer
+### Closed-state MscS induces drastic deformations of the lipid bilayer
 
 To begin to investigate how the physical state of the lipid bilayer might influence the conformational equilibrium between conductive and non-conductive forms of MscS, we first examined the membrane morphology associated with the closed state of the channel, using the structure we previously resolved in PC18:1 lipid NDs (Reddy et al., 2019). To that end, we carried out a series of molecular dynamics (MD) simulations, based on both coarse-grained (CG) and all-atom (AA) representations, evaluating multiple lipid bilayer compositions and membrane dimensions (Table 1). All CG trajectories lasted for 20 μs each and were initiated with a flat membrane; the simulations were calculated independently of any experiments, and no prior assumptions were made in regard to the configuration of the protein-lipid interface (see Materials and methods for further details). The AA trajectories were initiated from a representative configuration of a CG trajectory obtained under the same conditions and lasted 10 μs each. Invariably, all these simulations showed that stabilization of the closed conformation of MscS demands drastic deformations in the morphology of the lipid bilayer, in particular in the inner leaflet. Figure 4 depicts these deformations using 3D density maps derived from the simulated MD trajectories for several of the different conditions explored. These density maps clearly reveal extensive protrusions in the inner leaflet of the membrane, which develop to provide adequate lipid solvation to exposed hydrophobic surfaces in the protein in this particular state (Figure 4—figure supplement 1). These hydrophobic surfaces line crevices formed between the TM1–TM2 hairpin and TM3a–TM3b, well outside what might be predicted as the transmembrane span of the channel; lipid solvation of these cavities thus requires dramatic morphological changes in the bilayer. Logically, the simulations reveal seven nearly identical protrusions, matching the symmetry of the channel structure.
 
+**Table 1.**
+ Molecular simulation systems evaluated in this study of McsS and MSL1 mechanosensation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">MscS coarse grained*</th>
+      <th colspan="2">MscS all atom†</th>
+      <th colspan="2">MSL1coarse grained*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>ClosedWTPOPC</td>
+      <td>ClosedWT POPC §d</td>
+      <td>ClosedWT DMPC</td>
+      <td>ClosedWTPC:PG</td>
+      <td>OpenWTPOPC</td>
+      <td>Open A106VPOPC</td>
+      <td>Open D67R1POPC</td>
+      <td>ClosedWTPOPC</td>
+      <td>ClosedWT DMPC</td>
+      <td>ClosedWTPOPC</td>
+      <td>OpenWTPOPC</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>POPC</td>
+      <td>2057</td>
+      <td>755</td>
+      <td>0</td>
+      <td>1651</td>
+      <td>686</td>
+      <td>737</td>
+      <td>740</td>
+      <td>755</td>
+      <td>0</td>
+      <td>2001</td>
+      <td>1916</td>
+    </tr>
+    <tr>
+      <td>POPG</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>407</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>DMPC</td>
+      <td>0</td>
+      <td>0</td>
+      <td>768</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>768</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Na+</td>
+      <td>855</td>
+      <td>328</td>
+      <td>340</td>
+      <td>1265</td>
+      <td>328</td>
+      <td>328</td>
+      <td>328</td>
+      <td>314</td>
+      <td>326</td>
+      <td>855</td>
+      <td>855</td>
+    </tr>
+    <tr>
+      <td>Cl–</td>
+      <td>862</td>
+      <td>335</td>
+      <td>347</td>
+      <td>865</td>
+      <td>335</td>
+      <td>356</td>
+      <td>349</td>
+      <td>335</td>
+      <td>347</td>
+      <td>890</td>
+      <td>883</td>
+    </tr>
+    <tr>
+      <td>Water ‡</td>
+      <td>75,938</td>
+      <td>28,123</td>
+      <td>29,000</td>
+      <td>75,501</td>
+      <td>28,200</td>
+      <td>28,372</td>
+      <td>28,299</td>
+      <td>115,170</td>
+      <td>118,774</td>
+      <td>76,076</td>
+      <td>76,549</td>
+    </tr>
+    <tr>
+      <td>Total atoms or particles</td>
+      <td>106,364</td>
+      <td>41,871</td>
+      <td>41,392</td>
+      <td>106,352</td>
+      <td>41,120</td>
+      <td>41,603</td>
+      <td>41,524</td>
+      <td>476,183</td>
+      <td>476,473</td>
+      <td>106,012</td>
+      <td>105,248</td>
+    </tr>
+    <tr>
+      <td>System size(nm)</td>
+      <td>26.5×26.5×18.7</td>
+      <td>16.9×16.9×17.9</td>
+      <td>16.3×16.3×19.1</td>
+      <td>26.3×26.3×19.0</td>
+      <td>16.9×16.9×17.9</td>
+      <td>16.9×16.9×17.9</td>
+      <td>16.9×16.9×17.9</td>
+      <td>15.9×15.9×19.9</td>
+      <td>15.4×15.4×21.1</td>
+      <td>26.5×26.5×18.7</td>
+      <td>26.5×26.5×18.7</td>
+    </tr>
+    <tr>
+      <td>Time (μs)</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>10</td>
+      <td>8</td>
+      <td>80</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+
+_POPC: 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine; WT: wild type; DMPC:1–2-dimyristoleoyl-sn-glycero-3-phosphocholine; POPG:1–2-palmitoyl-2-oleoylglycero-3-phosphoglycerol.*MARTINI 2.2 forcefield.†CHARMM36m forcefield.‡One CG water particle is equivalent to four AA water molecules.§Five additional 10 μs simulations were carried out for this system under applied lateral tensions of 0, 0.5. 2.5, 5.0, and 10 mN/m._
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig4-v2.jpg)
+
+**Figure 4.:** The figure summarizes the results from multiple simulations of the closed structure of MscS in different membrane compositions and using different forcefield representations (Table 1). The cryo-electron microscopy (EM) structure of MscS (blue cartoons) is overlaid with calculated 3D density distributions mapping the morphology of the alkyl chain bilayer in each of the molecular dynamics (MD) trajectories (gold volume), up to 50 Å from the protein surface. Protein and density maps are viewed along the membrane plane (top row) and along the pore axis, from the cytosolic side (bottom row); the latter includes only the transmembrane domain of the channel, for clarity. The calculated density maps derive from 20 µs of trajectory data for each of the coarse-grained systems and at least 8 µs of trajectory data for the all-atom systems.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The figure shows three different views of a fragment of the closed MscS structure comprising TM1, TM2, and TM3a (from left to right) in two alternative representations (top and bottom). Residues are colored according to type, as indicated. The location of the inner leaflet protrusions under the TM1–TM2 hairpin is indicated; the site where the so-called ‘hook’ lipids are observed is also indicated. The conformation of the channel that is represented is that in the all-atom snapshot shown in Figure 5A.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) To preclude large-scale changes in fold that might develop in the 10-μs timescale due to cumulative forcefield inaccuracies, a restraining potential was applied to all $ϕ$ and $ψ$ angles in the channel backbone, of the form $U(\theta_{t})=k\summ=1m=6 (−1)^{m} [1+cos(m\theta_{t}−m(\theta_{expt}−180))]/ m!$, where $\theta_{t}$ is the value of either dihedral angle at time $t$ in the simulation, $\theta_{expt}$ denotes the value in the experimental structure, and $k$ equals 4 kJ/mol (see Materials and methods). The black curve in the left plot in (A) exemplifies this potential for  $\theta_{obs}$ = 180; for comparison, a harmonic potential $U`\theta_{t}=k (\theta_{t}- \theta_{obs})^{2}$ is superimposed (red line), where $k=$ 0.0025 kJ/mol/deg2. The right plot in (A) shows each of the first four terms contributing to $U\theta_{t}$. (B) For each residue in the channel, observed deflections in $ϕ$ and $ψ$ during the simulation relative to the corresponding values in the experimental structure, individually quantified as probability density distributions. The left plots show data for a single chain in the heptamer, selected at random; the right plots show a global analysis for all seven chains. (C) Root-mean-squared (RMS) difference between simulated and experimental channel structure, as a function of simulation time. Data is provided for the backbone atoms only and for backbone and sidechains, excluding hydrogen atoms. The RMS difference calculation was preceded by least-squares superposition of the protein backbone in the snapshot considered and in the experimental structure. The plot on the left shows data for the initial equilibration of the simulation system, carried out using NAMD; the plot on the right shows data for the ANTON2 simulation (see Materials and methods).
+
 To discern the structure of these membrane perturbations more precisely, we analyzed the average molecular configuration of the lipids found in these regions as well as elsewhere in the bilayer. As shown in Figure 5, it is striking that to form these protrusions, the headgroup layer of the inner leaflet must not only project away from the membrane center but also bend sharply, thus permitting the underlying acyl chains to become strongly tilted, by as much as 60° relative to the membrane perpendicular (Figure 5—figure supplement 1). Importantly, examination of the lipid translational dynamics makes it clear that the molecules in these protrusions are in constant exchange with the rest of the bilayer (Figure 6). As expected, the turnover of the lipids found in the protrusions is slower than elsewhere, but only by an order of magnitude. This observation is comparable for the CG and AA systems; naturally, lipid diffusion is artificially accelerated in the CG representation, but it seems fair to conclude from the AA trajectories that the lipid content of the inner leaflet protrusions would be renewed multiple times within tens of microseconds. Thus, in the context of the membrane and at physiological temperature, it would hardly be accurate to characterize these lipid molecules as ‘bound’, as one would a conventional agonist or antagonist of a ligand-gated channel, for example. Instead, what we observe in these simulations is a reorganization of the structure and dynamics of the lipid solvent to adequately solvate the topography and amino-acid make-up of the protein surface in this particular state.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig5-v2.jpg)
+
+**Figure 5.:** (A) Instantaneous configurations of the lipid bilayer in single snapshots of two of the molecular dynamics (MD) trajectories calculated for closed-state MscS in POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine), shown in cross section to reveal the structure of the membrane perturbations induced by the protein. Choline groups are shown in purple, phosphate in orange, ester linkages in red, and alkyl chains in shades of gray. The channel structure is overlaid, shown in cartoons. (B) Time-averages of the instantaneous lipid configurations observed in the same two trajectories, mapped across the membrane plane. Averages are calculated for each lipid atom and shown as spheres, colored as in panel (A). Owing to the configurational and rotational dynamics of lipids, the resulting averages are non-physical structures, but they nevertheless capture the position and orientation adopted by lipid molecules in different regions of the membrane. The average configuration of the channel backbone is also shown, overlaid. Protein and lipid averages are derived from 20 µs of trajectory data for the coarse-grained system and 10 µs of trajectory data for the all-atom system. The figures in panel A show snapshots at t ≈ 7 µs of the coarse-grained simulation and at t ≈ 5 µs of the all-atom simulation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The figure reports results for multiple simulations of closed- and open-state MscS in membranes of different size and lipid composition using either coarse-grained or all-atom representations (Table 1). Specifically, the plots map the characteristic tilt of the lipid alkyl chains across the inner leaflet of the bilayer, relative to the membrane perpendicular, derived from analysis and averaging of instantaneous lipid configurations. The central areas (gray) are occupied by protein or solvent filling the central pore. The maps are derived from 20 µs of trajectory data for each of the coarse-grained systems and at least 8 µs of trajectory data for the all-atom systems.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig6-v2.jpg)
 
@@ -63,7 +264,7 @@ To discern the structure of these membrane perturbations more precisely, we anal
 
 Finally, it is worth noting that the channel structure also bends the outer leaflet of the membrane, although to a much smaller degree (Figure 5). The most significant perturbation in the outer leaflet is the sequestration of seven lipids (one per protomer), each of which fills a small fenestration in between adjacent TM1 helices, atop the C-terminus of TM2; the polar headgroups of these lipids project toward the aqueous interior of the pore and interact with R88. These molecules correspond exactly to density features in our cryo-EM map of the closed state (Reddy et al., 2019), and others reported subsequently (Zhang et al., 2021), which we referred to as ‘hook lipids’. However, our simulations show that these lipid molecules originate from the outer leaflet of the membrane, not the inner leaflet, as previously theorized (Zhang et al., 2021).
 
-## Lateral tension alone does not deplete lipids from membrane protrusions
+### Lateral tension alone does not deplete lipids from membrane protrusions
 
 In the literature on the gating mechanisms of channels that are sensitive to membrane stretching, it is often assumed that the nature of the interactions between these channels and the surrounding lipid molecules is fundamentally altered by the application of lateral tension; the term ‘force-from-lipids’ (which aptly draws a contrast with other forms of mechanotransduction, e.g. via the microtubule network) is unfortunate in that it reinforces this assumption. To evaluate this notion in the case of MscS, we carried out an additional series of simulations wherein the channel is held in the closed conformation (as is typical for CG simulations), while the lipid bilayer is stretched to varying degrees. Specifically, these simulations probed lateral tensions of 0.5, 2.5, 5, and 10 mN/m, which span an experimentally realistic range (MscS opens at ~5 mN/m [Kung et al., 2010; Haswell et al., 2011]); for comparison, we also carried out a control simulation targeting a zero lateral-tension value, using the same pressurization algorithm (which differs from that employed in the previous section – see Materials and methods).
 
@@ -73,13 +274,25 @@ The results of this analysis are summarized in Figure 7. It is apparent that the
 
 **Figure 7.:** The figure summarizes the results from simulations of the closed structure of MscS under different membrane tensions. (A) The cryo-electron microscopy (EM) structure of MscS in the closed state (blue cartoons) is overlaid with a calculated 3D density distribution mapping the morphology of the alkyl chain double layer in the molecular dynamics (MD) trajectory (gold volume), up to 50 Å from the protein surface. Protein and density maps are shown as in Figure 4. (B) The lateral tension reported by the MD engine during the simulations (in 500 ps intervals, then averaged) is compared with the target tension value in each case (see Materials and methods). Error bars denote the SEM. A line of best fit is shown superimposed (gray), along with the slope a and intercept b. (C) Number of lipids in the inner-leaflet protrusions and near control sites, calculated as described in Figure 6, for each tension condition (average values for control sites: 10.13, 10.09, 10.01, 9.86, and 9.50 lipids; for protrusions: 3.82, 3.83, 3.80, 3.77, and 3.73 lipids; for applied tensions of 0, 0.5, 2.5, 5, and 10 mN/m, respectively). (D) Lipid exchange between the bulk and the protrusions/control sites, for each tension condition, evaluated as in Figure 6. (E and F) Changes in mean membrane thickness and mean area per lipid as the applied lateral tension increases. Bulk values were computed by averaging all local values (mapped on a discrete lattice) at least 20 Å away from the surface of the protein. Bilayer thickness was evaluated using the glycerol groups. Area-per-lipid values were averaged across leaflets. Error bars represent the SEM.
 
-## MscS opening eliminates deformations in the lipid bilayer
+### MscS opening eliminates deformations in the lipid bilayer
 
 To shift the gating equilibrium of an ion channel, a given stimulus such as membrane stretching must have a differential effect on the open and closed states. Following this reasoning, we next examined the morphology of the lipid bilayer that corresponds to the open state of MscS, using simulations of the new cryo-EM structure reported here. The central observation from this analysis is, strikingly, the near-complete eradication of the protrusions observed in the inner leaflet of the lipid bilayer for the closed state (Figure 8). This marked difference logically correlates with the structural changes observed in the channel: in the open state, the hydrophobic crevices formed between the TM1–TM2 hairpin and TM3a–TM3b are still filled with lipids, but the rotation of the TM1–TM2 hairpins aligns these crevices with the bulk membrane, and so these lipids do not protrude out (Figure 8), nor do they become strongly tilted relative to the membrane perpendicular (Figure 5—figure supplement 1). By contrast, the perturbation of the outer leaflet is largely identical to that observed for the closed state; in particular, we observe ‘hook’ lipids sequestered between adjacent TM1 helices atop the C-terminus of TM2, as in the closed state. Thus, these ‘hook’ lipids appear to be structural, rather than a differential characteristic of one state or the other. It is also interesting to note that despite the expansion of the channel structure on the membrane plane , the total area of the protein-lipid interface, as quantified by the number of chemical groups in the channel structure that are in direct or close-range contact with lipid molecules, is only 3% greater for the open state, which is far smaller than what geometric idealizations would suggest (Figure 8—figure supplement 1). This discrepancy is due to the highly irregular morphology of the bilayer near the closed channel and illustrates the shortcomings of simplistic representations of the membrane, or the protein-lipid interface, in the context of mechanistic investigations.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig8-v2.jpg)
+
+**Figure 8.:** The figure summarizes the results from a 20-µs simulation of open MscS in a POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine) membrane, using a coarse-grained representation. (A) The cryo-electron microscopy (EM) structure of MscS in the open state (blue cartoons) is overlaid with a calculated 3D density distribution mapping the morphology of the alkyl chain double layer in the molecular dynamics (MD) trajectory (gold volume), up to 50 Å from the protein surface. Protein and density maps are shown as in Figure 4. (B) Instantaneous configuration of the lipid bilayer in a snapshot of the MD trajectory, shown in cross-section as in Figure 5A. (C) Time-averages of the instantaneous lipid configurations observed in the trajectory, mapped across the membrane plane and shown in cross-section. Averages were calculated and are represented as in Figure 5B.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) To evaluate the area of the protein surface exposed to the membrane, we quantified the number of coarse-grained (CG) particles in the channel within 6.5 Å of any lipid particle, for each snapshot of the molecular dynamics (MD) trajectories calculated for closed and open MscS in a POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine) lipid bilayer. Note that each CG particle approximately represents one chemical group in protein sidechains and backbone and that a distance of 6.5 Å implies either a direct or close-range contact, as the typical radius of the CG particles is 2.6 Å. The results from this analysis are mapped on the channel surface, for either functional state, coloring each CG particle according to the persistence of their exposure to the lipid bilayer over time. (B) Histograms quantifying the variability in number of CG particles in the channel that are exposed to the lipid bilayer across different snapshots within the same trajectory. For completeness, data are shown for a distance threshold of 6.5 Å, as in panel (A), as well as for 5.2 Å, which implies direct contact. For threshold 5.2 Å, the number of lipid-contacting protein groups is 708.2±21.4, while in the open state, this number is 781.3±20.1, reflecting a 10.3% increase. For threshold 6.5 Å, the corresponding values are 1230.3±22.5 and 1267.9±17.6, reflecting a 3.0% difference. In contrast, geometric idealiziations of the protein-lipid interface would suggest a >90% increase in the in-plane cross-sectional area of the channel upon opening, and a >120% increase in the membrane-exposed area.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/81445/elife-81445-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** The figure summarizes results from simulations of alternative open conformations of wild-type and mutagenized MscS in POPC (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine; Wang et al., 2008; Pliotas et al., 2015), as well as of a closed state, using a coarse-grained representation of the system (Table 1). The experimental structures (blue cartoons) are overlaid with calculated 3D density distributions mapping the morphology of the alkyl chain double layer in each of the molecular dynamics (MD) trajectories (gold volumes), up to 10 Å from the protein surface. Maps are represented as in Figure 4. Data represent averages over 20 µs of simulation.
+
 For completion, we also carried out simulations of two other structures of MscS widely regarded to capture the open state of MscS, namely those of mutants A106V (Wang et al., 2008) and D67R1 (Pliotas et al., 2015). As discussed above, these structures were obtained in detergent and differ from our wt structure obtained in lipid NDs in the degree of tilt of the TM2–TM3 unit relative to the pore axis (Figure 3); another notable difference is that they do not resolve the first 24 N-terminal residues. These differences notwithstanding, the simulations carried out for these two structures reaffirm the results obtained for the open-state conformation reported here; that is, the hydrophobic crevices under TM1–TM2 units remain lipidated, but the sizable protrusions of the inner leaflet seen for the closed state are largely eliminated (Figure 8—figure supplement 2).
 
-## Mitochondrial MscS homolog also deforms the bilayer in the closed but not the open state
+### Mitochondrial MscS homolog also deforms the bilayer in the closed but not the open state
 
 When considering the potential mechanistic significance of a given observation, it seems reasonable to evaluate its transferability across homologous systems in different species or, more broadly, across proteins featuring similar functional characteristics. This is not a trivial consideration in the case of mechanosensation, as the divergence between channels and species involves not only different protein sequences and entirely different folds but also membranes of entirely different lipid composition. For example, the inner membrane of E. coli is ~75% PE, 20% PG, and 5% CL (Miyazaki et al., 1985), whereas inner mitochondrial membranes are 40% PC, 30% PE, 15% CL, and other (Schenkel and Bakovic, 2014). To begin to ascertain whether the observations described above for MscS translate to other homologs in this family, we examined the lipid bilayer morphologies that correspond to the open and closed states of MSL1, the MscS-like channel from A. thaliana. As shown in Figure 9, this analysis recapitulates the results obtained for the E. coli protein, despite the fact that the MSL1 structures do not resolve the two N-terminal helices that precede TM1 in sequence. That is, the closed state of the channel induces drastic protrusions in the inner leaflet, which are largely eradicated in the open state. As in MscS, these protrusions stem from the need to provide adequate lipid solvation to hydrophobic crevices under the TM1–TM2 unit, which become strongly misaligned with the bilayer upon channel closing. The MSL1 simulations also show ‘hook’ lipids sequestered atop the C-terminus of TM2 and associated with the outer leaflet, but as with MscS, these lipids are observed in both states and thus do not appear to be a differentiating characteristic.
 
@@ -109,19 +322,19 @@ Admittedly, further work will be required to fully substantiate the theory of me
 
 ## Materials and methods
 
-## MscS expression purification
+### MscS expression purification
 
 Full-length wt E. coli MscS and the MscS mutant A106V were expressed and purified as previously described (Wang et al., 2008; Vásquez et al., 2007). In brief, MscS was sub-cloned into pET28a containing a His6 tag and a thrombin cleavage site on the N-termini. E. coli cells were transformed with the MscS-pET28a vector and grown overnight in the presence of kanamycin and chloramphenicol. Cells were diluted 1:100 in LB medium and grown at 37°C to an OD600 of 0.8–1.0. Before induction, the cell culture was supplemented to a final concentration of 0.4% glycerol and allowed to cool to 26°C, at which point protein expression was induced with 0.8 mM IPTG. Cells were grown for 4 hr at 26°C, harvested, resuspended in PBS pH 7.4 (Sigma), 10% glycerol, protease inhibitors, and homogenized (high-pressure homogenizer, EmulsiFlex-C3). Membranes were isolated via centrifugation at 100,000 g for 30 min, and the pellet was resuspended in PBS and 10% glycerol. Solubilization was carried out in DDM (Anatrace) for 4–16 hr at 4°C, spun down at 100,000 g for 30 min, and the supernatant, supplemented with a final concentration of 5 mM imidazole (Fisher), was incubated with cobalt resin (Clonetech) for 2–4 hr at 4°C. The resin was washed with 20-bed volumes of 1 mM DDM, 10 mM imidazole, and 10% glycerol in PBS buffer. MscS was eluted in 1 mM DDM, 300 mM imidazole, and 10% glycerol in PBS buffer. Final purification was on a Superdex 200 Increase 10/30 column (GE Healthcare) with 1 mM DDM and PBS buffer.
 
-## MscS ND preparation
+### MscS ND preparation
 
 MscS NDs were prepared following a previously described protocol (Ritchie et al., 2009) subsequently adapted to use Msp1 E3D1 as the scaffold (Reddy et al., 2019). The molar ratio of MscS:MSP1 E3D1:lipids was 7:10:650, respectively, after extensive optimizations. Each lipid solution of mixed micelles contained 30–50 mM DDM with a final lipid concentration of 10–17 mM. Mixed micelles contained either (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine) POPC and (1–2-palmitoyl-2-oleoylglycero-3-phosphoglycerol) POPG (4:1) for the reference MscS structure (PC18:1) or (1–2-dimyristoyl-sn-glycero-3-phosphocholine) DMPC for the thin bilayer open structure (PC14:1). Additional ND-reconstituted MscS preps were carried out in DMPC or E. coli polar lipids. NDs were made by adding mixed micelles to protein for 20 min on ice. MSP was added to the solution and incubated on ice for 5 min. The reconstitution mixture was incubated in activated bio beads (Biorad) overnight at 4°C. The detergent-free mixture was run on a Superdex 200 Increase 10/30 column to separate the empty ND peak. The MscS ND peak was concentrated to ~2 mg/ml and stored at 4°C.
 
-## EM data collection and structure determination
+### EM data collection and structure determination
 
 MscS ND was supplemented with Octyl Maltoside, Fluorinated (Anatrace) to a final concentration of 0.01%. MscS was doubly applied onto Mesh 200 2/1 or Mesh 300 1.2/1.3 Quantifoli holey carbon grids. Grids were flash frozen in a Vitrobot (Thermofisher) set at 3 s with a force of 3 with 100% humidity at 22°C. Imaging was carried out on a Titan Krios with a K3 detector in counting mode with a GIF energy filter using Latitude S (Thermofisher). Movies were acquired at 1 e–/Å2 per frame for 50 frames. Motion correction was performed using Motioncor2 (Zheng et al., 2017), and K2 movies were binned by 2. CTF estimation was done using CTFFIND4.1 (Rohou and Grigorieff, 2015). Initial particle picking was done using EMAN (Tang et al., 2007) neural net particle picker or RELION (Scheres, 2012) built-in reference-based auto picker, and the coordinates were fed into RELION for particle extraction. Subsequent structure determination steps were done in RELION. An initial 2D refinement was done to remove non-particles and poor-quality classes, which were eliminated from 3D classification. 3D classification was performed using the structure of closed-stated MscS in lipid ND as an initial model. After a subset of particles was identified for the final refinement, the particles underwent per particle CTF refinement followed by Bayesian polishing. Final 3D reconstruction used the classes with both top and side views and refined using a mask that excluded the membrane and His-tag (when necessary) under C7 symmetry. Model building was based on an existing cryo-EM structure of closed-state MscS (PDBID: 6PWN), and COOT was used to build the remaining TM1, N-terminal domain, and the hook. EM density maps used in subsequent steps were not postprocessed or sharpened. The initially built model was iteratively refined using COOT (Emsley et al., 2010), Chimera (Pettersen et al., 2004), MDFF (McGreevy et al., 2014) using VMD (Humphrey et al., 1996) and NAMD (Phillips et al., 2020) or ChimeraX (Goddard et al., 2018) with the ISOLDE (Croll, 2018) plugin, Arp/Warp (Langer et al., 2008), and Phenix real-space refine (Adams et al., 2010).
 
-## MD simulations
+### MD simulations
 
 All CG simulations used the MARTINI 2.2/ElNeDyn22 forcefield (Marrink et al., 2004; Marrink et al., 2007; Wassenaar et al., 2015) in GROMACS 2018.8 (Abraham et al., 2015). The temperature was maintained at 303 K (τT = 1 ps) using velocity-rescaling (Bussi et al., 2007), and the pressure was maintained at 1 bar (compressibility = 3 × 10–4 per bar) with the Berendsen method (Berendsen et al., 1984) during equilibration, then with the Parrinello-Rahman semi-isotropic barostat (Parrinello and Rahman, 1981) during data production. An 1Å cutoff was used for both reaction-field electrostatics and van der Waals interactions.
 

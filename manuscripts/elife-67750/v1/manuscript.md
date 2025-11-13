@@ -33,43 +33,294 @@ Studies have shown that combination treatment of chemotherapeutic agents with TR
 
 ## Results
 
-## Oxaliplatin-resistant cell lines show enhanced TRAIL sensitivity
+### Oxaliplatin-resistant cell lines show enhanced TRAIL sensitivity
 
 Cell viability of four colorectal cancer cell lines after 24 hr treatment with 0.1–1000 ng/ml of TRAIL was measured and compared to the viability of oxaliplatin-resistant (OxR) cell lines (Figure 1A). Briefly, oxaliplatin-resistant cell lines were previously derived from exposure to increasing concentrations of oxaliplatin until a 10-fold increase in IC50 was achieved (Dallas et al., 2009; Yang et al., 2006; Tanaka et al., 2015). Parental and OxR cells were treated with a range of oxaliplatin concentrations to ensure that chemoresistance was conserved after multiple passages in culture (Figure 1—figure supplement 1A). Moreover, oxaliplatin-resistant cells were found to have increased invasion and motility compared to parental cells, consistent with literature reporting their derivation (Figure 1—figure supplement 1B). Interestingly, oxaliplatin-resistant HT29, SW620, and HCT116 cell lines showed increased maximum TRAIL sensitization levels compared to their parental counterparts, while SW480 cells showed similar or decreased sensitization levels (Figure 1—figure supplement 2). IC50 values demonstrate that a chemoresistant phenotype resulted in augmented TRAIL-mediated apoptosis in two cell lines (Figure 1B). Importantly, cells were not treated with any oxaliplatin in quantifying the level of TRAIL sensitization, and oxaliplatin was not supplemented in the cell culture media to exclude any possible effects from combination treatment. In SW620 cells, large differences in apoptosis were observed when treated with the highest concentration of TRAIL (1000 ng/ml) (Figure 1C). Only 33.3% of parental cells were found to be in late-stage apoptosis after 24 hr compared to 60.6% for OxR cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig1-v1.jpg)
+
+**Figure 1.:** (A) Oxaliplatin-resistant SW620, SW480, HCT116, and HT29 colon cancer cell lines demonstrate similar or enhanced sensitivity to TRAIL compared to their parental counterparts after 24 hr of treatment. N = 3 (biological replicates); n = 9 (technical replicates). (B) IC50 values were calculated using a variable slope four-parameter nonlinear regression. (C) Representative Annexin-V/PI flow plots comparing SW620 parental and OxR cell viability after 24 hr of treatment with 1000 ng/ml TRAIL. The four quadrants represent viable cells (bottom left), early apoptosis (bottom right), necrosis (top left), and late apoptosis (top right). (D) Representative flow plots of JC-1 assay after treatment with 1000 ng/ml of TRAIL. Mitochondrial depolarization is evidenced by decreased red fluorescence and increased green fluorescence. (E) Mitochondrial depolarization as a function of TRAIL concentration for SW620 parental and OxR cell lines. N = 3 (n = 9). For all graphs, data are presented as mean ± SD. **p<0.01; ****p<0.0001 (unpaired two-tailed t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SW620, SW480, HCT116, and HT29 cells were treated with various concentrations of oxaliplatin for 72 hr and cell viability was measured using an MTT assay. IC50 values were calculated using a variable slope four-parameter nonlinear regression. Data are presented as mean ± SEM. N = 2 (n = 12). (B) Counts of successfully invasive cells after a 4-day Transwell assay with an initial seeding of 200,000 cells. N = 2 (n = 6). * p<0.05; **p<0.01 (unpaired two-tailed t-test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sensitization of oxaliplatin-resistant SW620, HCT116, HT29, and SW480 cell lines compared to their parental counterparts as a function of TRAIL concentration. (B) Maximum TRAIL sensitization for each cell line between the tested concentrations of 0.1–1000 ng/ml. Data are presented as mean ± SEM.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative flow plots of JC-1 assay after treatment with 200 ng/ml of TRAIL. Mitochondrial depolarization is evidenced by decreased red fluorescence and increased green fluorescence. (B) Mitochondrial depolarization as a function of TRAIL concentration for HCT116 parental and OxR cell lines. Data are presented as mean ± SD. N = 3 (n = 9). ****p<0.0001 (unpaired two-tailed t-test).
+
 To determine if the observed differences in apoptosis were due to enhanced mitochondrial outer membrane permeability, a JC-1 dye was used. SW620 OxR cells exhibited over a threefold increase in the population of JC-1 red (-) cells, indicating increased mitochondrial depolarization (Figure 1D). Mitochondrial depolarization was significantly enhanced in OxR cells for TRAIL concentrations of 50 ng/ml and higher (Figure 1E). Similar TRAIL-induced mitochondrial effects were observed in HCT116 cells (Figure 1—figure supplement 3). These results demonstrate that enhanced TRAIL-mediated apoptosis is occurring, at least in part, via the intrinsic pathway and mitochondrial disruption.
 
-## Oxaliplatin-resistant derivatives have decreased CASP10 that has little consequence on TRAIL sensitization
+### Oxaliplatin-resistant derivatives have decreased CASP10 that has little consequence on TRAIL sensitization
 
 Given that enhanced TRAIL-mediated apoptosis was found to occur via the mitochondrial pathway, gene expression of apoptotic transcripts was compared between the parental and OxR cells. RT-PCR human apoptosis profiler arrays were used to analyze transcripts within the SW620 and HCT116 cell lines since these cells showed the highest degree of OxR TRAIL sensitization and exhibit different innate sensitivities to TRAIL (HCT116 cells are TRAIL-sensitive, whereas SW620 cells are TRAIL-resistant). Interestingly, upon analyzing the RNA expression of 84 apoptotic transcripts, both cell lines shared similar profiles between parental and OxR derivatives. HCT116 OxR cells showed upregulated pro-apoptotic transcripts cytochrome-c and caspase-4 (Figure 2A). Cytochrome-c is released from the mitochondria into the cytosol after mitochondrial permeabilization, binding to adaptor molecule apoptosis-protease activating factor 1 (Apaf-1) to form the apoptosome and initiate downstream caspase signaling (Garrido et al., 2006). Caspase-4 is localized to the ER and initiates apoptosis in response to ER stress (Hitomi et al., 2004). Interestingly, SW620 OxR cells had upregulated Fas, a cell surface death receptor that acts similarly in apoptotic signaling to DR4/DR5 via binding of Fas ligand (Özören and El-Deiry, 2003), and osteoprotegerin, a soluble decoy receptor that sequesters TRAIL and inhibits apoptosis (Sandra et al., 2006; Figure 2B). Upregulated Fas expression in SW620 OxR cells was confirmed via surface staining and flow cytometry; however, receptor neutralization with the ZB4 anti-Fas antibody had no effect on TRAIL sensitization when treated in combination with TRAIL (Figure 2—figure supplement 1A–C). Notably, both HCT116 and SW620 OxR cell lines had caspase-10 as the most significantly downregulated transcript. To determine whether this was of consequence to the observed TRAIL sensitization, an SW620 caspase-10 knockout cell line was created using a multi-guide sgRNA CRISPR-Cas9 approach. Knock-out (KO) efficiency was found to be 93% (Figure 2C). The TRAIL sensitivity of this caspase-10 KO cell line was compared to a control cell line treated with Cas9 only. Caspase-10 KO cells showed only a slight decrease in cell viability after 24 hr of TRAIL treatment (Figure 2D). The number of late-stage apoptotic cells remained similar between cell lines (Figure 2E), and the maximum TRAIL sensitization observed was insignificant following caspase-10 KO (Figure 2F).
 
-## TRAIL-sensitized OxR cell lines have upregulated DR4
+![Figure 2.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Volcano plots of RT-PCR Apoptosis Profiler arrays demonstrate downregulation of CASP10 in OxR phenotypes. N = 3. (C) CRISPR/Cas9 knockout of caspase-10 in SW620 parental cells was confirmed via western blot. sgRNA/Cas9 ribonucleoprotein complexes reduced caspase-10 expression by 93% compared to cells treated with Cas9 alone. (D) CASP10 knock-out (KO) cells demonstrate slight decreases in viability when treated with TRAIL compared to Cas9 control. Data are presented as mean ± SD. N = 3 (n = 9). (E) Representative Annexin-V/PI flow plots comparing SW620 parental (Cas9 only) and CASP10 KO cell viability after 24 hr of treatment with 1000 ng/ml TRAIL. (F) Depletion of caspase-10 did not have a significant effect on TRAIL sensitization (unpaired two-tailed t-test). Data are presented as mean + SEM. N = 3 (n = 9).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Flow cytometry staining confirms increased surface expression of Fas receptor. #Significant according to a chi-squared test (see Supplementary file 1). (B) Percentage of apoptotic SW620 OxR cells after treating with 1000 ng/ml TRAIL and 500 ng/ml of the anti-FasR neutralizing antibody ZB4 (sum of early and late-stage apoptotic cells from Annexin/PI staining). Data are presented as mean + SD. N = 3 (n = 9). Significance was measured using an ordinary one-way ANOVA–Tukey’s multiple comparison test. (C) Neutralizing FasR has no effect on TRAIL sensitization. Data are presented as mean + SEM. N = 3 (n = 9). Significance was measured using an unpaired two-tailed t-test.
+
+### TRAIL-sensitized OxR cell lines have upregulated DR4
 
 While changes in death receptor expression were insignificant at a transcriptional level, studies have demonstrated that chemoresistance can alter receptor abundance via mechanisms of translational regulation (Si et al., 2019; Just et al., 2019). Confocal microscopy showed that oxaliplatin-resistant cells have increased DR4 in both HCT116 (Figure 3A) and SW620 (Figure 3B) cell lines. To quantify receptor expression, total DR4 area per cell was analyzed for at least 70 cells. Analysis showed OxR derivative cell lines had significantly increased DR4 area per cell (Figure 3C). There were no differences in cell size between parental and OxR derivatives for all four cell lines (Figure 3—figure supplement 1). Flow cytometry staining of non-permeabilized cells was used to determine if this death receptor increase was also observed on the cell surface. Both HCT116 OxR and SW620 OxR cells showed significant increases in DR4 surface expression (Figure 3D). Total and surface DR4 expression was similar between parental and OxR derivatives in mildly sensitized HT29 cells and unsensitized SW480 cells (Figure 3—figure supplement 2A–C). To account for possible thresholding effects in area quantification, raw integrated density counts per cell were also measured and found to be consistent with changes in receptor area (Figure 3—figure supplement 3). Increases in DR4 expression of OxR derivatives were also confirmed via western blot but were only significant in SW620 cells (Figure 3E, F). OxR HCT116, SW620, and HT29 cells all displayed increases in DR5 area per cell, while SW480 OxR cells had significant decreases in total DR5 expression (Figure 3—figure supplement 4A–D). However, total receptor area per cell was considerably lower for DR5 compared to DR4. Additionally, expression of surface DR5, analyzed via flow cytometry, was only significantly upregulated in SW620 OxR cells (Figure 3—figure supplement 4E). This is further confounded by western blot data, which show no change in DR5 expression in HCT116 OxR cells, and a significant decrease in SW620 OxR cells (Figure 3—figure supplement 5A, B). Decoy receptors are surface receptors that, like death receptors, can bind to exogenous TRAIL. However, decoy receptor 1 (DcR1) and decoy receptor 2 (DcR2) are unable to activate the apoptotic pathway, making these receptors sequestering agents that competitively bind to TRAIL. While some studies have shown that chemotherapy-induced changes in TRAIL sensitivity have been linked to modulation or augmentation of decoy receptors (Toscano et al., 2008), all cell lines exhibited no meaningful difference in surface DcR1 and DcR2 expression between parental and OxR derivatives (Figure 3—figure supplement 6). Despite statistical significance in SW480 and HT29 cells, decoy receptor expression, especially DcR2, was expressed in negligible quantities in these cell lines.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Confocal micrographs of HCT116 and SW620 cells, respectively. Red channel represents DR4, green is lipid rafts, and blue is DAPI (nuclei). Scale bar = 30 μm. (C) Quantification of DR4 area per cell in HCT116 and SW620 cells. For each cell line, N = 75 cells were analyzed. Data are presented as mean + SEM from N = 3 independent experiments. ***p<0.001; ****p<0.0001 (unpaired two-tailed t-test). (D) OxR cells had increased surface expression of DR4 in non-permeabilized cells analyzed via flow cytometry. #Significant according to a chi-squared test (see Supplementary file 1). (E) Western blots for DR4 in whole cell lysates of parental and OxR cells. (F) Quantification of western blots from three independent experiments (N = 3). Data are presented as mean + SEM. *p<0.05 (unpaired two-tailed t-test). (G) Percentage of apoptotic SW620 cells after treatment with 0.01–10 µg/ml mapatumumab (sum of early and late-stage apoptotic cells from Annexin/PI staining). Data are presented as mean ± SD. N = 3 (n = 6). ****p<0.0001 (multiple unpaired two-tailed t-tests). (H) Cell viability of SW620 cells after mapatumumab treatment, determined by Annexin-V/PI staining. Data are presented as mean ± SD. N = 3 (n = 6). (I) Maximum mapatumumab sensitization within OxR cell lines compared to their parental counterparts. Data are presented as mean + SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Data are presented as mean + SD. For each cell line, N = 75 cells were analyzed. An unpaired two-tailed t-test was used to measure significance between groups.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) Confocal micrographs and DR4 quantification of SW480 and HT29 cells, respectively. Red channel is DR4, green is lipid rafts, and blue is DAPI (nuclei). Scale bar = 30 μm. (C) Surface expression of DR4 in non-permeabilized cells analyzed via flow cytometry. #Significant according to a chi-squared test (see Supplementary file 1). (D) DR4/LR colocalization area per cell for SW480 and HT29 was found to be insignificant between parental and OxR phenotypes. Data are presented as mean + SEM. An unpaired two-tailed t-test was performed for panels (A), (B), and (D). For each cell line, N = 75 cells were analyzed.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Data are presented as mean + SEM. For each cell line, N = 75 cells were analyzed. ****p<0.0001 (unpaired two-tailed t-test).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A–D) Confocal micrographs and DR5 quantification of HCT116, SW620, SW480, and HT29 cells, respectively. Red channel is death receptor 5, green is lipid rafts, and blue is DAPI (nuclei). Scale bar = 30 μm. ** p<0.01; ****p<0.0001 (unpaired two-tailed t-test). Data are presented as mean + SEM. For each cell line, N = 75 cells were analyzed. (E) Oxaliplatin-resistant (OxR) cells only demonstrate increased surface expression of DR5 in non-permeabilized SW620 cells. #Significant according to a chi-squared test (see Supplementary file 1).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Data are presented as mean + SEM. N = 3. **p<0.01 (unpaired two-tailed t-test).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** #Significant according to a chi-squared test (see Supplementary file 1).
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (A) Cell viability of HCT116 cells after 0.01–10 µg/ml mapatumumab treatment, determined by Annexin-V/PI staining. (B) Percentage of apoptotic SW620 cells after mapatumumab treatment (sum of early and late-stage apoptotic cells from Annexin/PI staining). For all graphs, data are presented as mean + SD. N = 3 (n = 6). *p<0.05; ****p<0.0001 (multiple unpaired two-tailed t-tests).
+
 Given the consistency in data suggesting DR4 upregulation in TRAIL-sensitized OxR cell lines, cells were treated with the DR4-agonist monoclonal antibody mapatumumab to determine DR4 specificity. SW620 OxR cells exhibited significant increases in the number of apoptotic cells after 24 hr of treatment, including a threefold increase in apoptosis at concentrations of 10 µg/ml (Figure 3G). Cell viability closely paralleled TRAIL treatments: parental cells remained resistant at high doses while OxR cells exhibited a dose-responsive decrease in cell viability (Figure 3H). HCT116 cell lines exhibited similar results as OxR cells were significantly more apoptotic at concentrations exceeding 0.1 µg/ml (Figure 3—figure supplement 7A, B). The maximum mapatumumab sensitization was calculated to be greater than 40% for oxaliplatin-resistant HCT116 and SW620 cells (Figure 3I), providing more causal evidence for a DR4-associated mechanism.
 
-## TRAIL-sensitized OxR cell lines have enhanced colocalization of DR4 into LRs
+### TRAIL-sensitized OxR cell lines have enhanced colocalization of DR4 into LRs
 
 Binary projections of colocalization events between DR4 and LRs demonstrate that OxR phenotypes had enhanced DR4 translocation into LRs in HCT116 and SW620 cells (Figure 4A). Quantification of total area of colocalization events showed that HCT116 OxR and SW620 OxR cells have significantly enhanced DR4 localized into LRs, each with an over fourfold increase (Figure 4B). The areas of DR4/LR colocalized events per cell were not significantly different in HT29 and SW480 cells (Figure 3—figure supplement 2D). Other methods of colocalization analysis, including calculation of the Manders’ Correlation Coefficient (MCC), supported these results, specifically in HCT116 and SW620 cell lines where the Manders’ overlap was significantly greater in OxR cells (Figure 4—figure supplement 1). The fold change in DR4/LR colocalization area between OxR and parental cells exhibited a strong linear correlation (0.86) with TRAIL sensitization (Figure 4C). Colocalization of LRs with DR5 was significantly enhanced only in HCT116 and HT29 cells, and analysis of the correlation between DR5 colocalization and TRAIL sensitization resulted in a weaker correlation of 0.48 (Figure 4—figure supplement 2A–C). Quantification of LR area per cell revealed insignificant changes between parental and OxR derivatives in all cell lines except for HT29 cells, where parental cells showed significantly more rafts (Figure 4—figure supplement 3).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig4-v1.jpg)
+
+**Figure 4.:** (A) Composite images and binary projections of DR4/LR colocalization areas in HCT116 and SW620 cell lines. Lipid raft and DR4 binary images were generated for a specified threshold, then multiplied by one another to generate images with positive pixels in double-positive areas. Red is DR4, green is lipid rafts, and blue is DAPI. Scale bar = 30 μm. (B) Quantification of DR4 and lipid raft colocalization area per cell in HCT116 and SW620 cells. For each cell line, N = 75 cells were analyzed. **p<0.01; ****p<0.0001 (unpaired two-tailed t-test). (C) Correlation between the fold change in DR4/LR colocalization (OxR phenotype/parental) and maximum TRAIL sensitization observed by the OxR phenotype for each of the four cell lines (simple linear regression analysis). (D) Lipid raft fractions were isolated and analyzed for DR4 via western blot in parental and OxR cells. (E) Quantification of lipid raft DR4 blots in (D). *p<0.05 (unpaired two-tailed t-test). For all graphs, data are presented as mean + SEM. (F) Förster resonance energy transfer (FRET) efficiencies of FITC-labeled DR4 (donor) and Alexa 555-labeled lipid rafts (acceptor) in parental and OxR cells analyzed via flow cytometry. **p<0.01; ***p<0.001 (unpaired two-tailed t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** N = 15 analyzed micrographs across three independent trials. *p<0.05; *p<0.001 (unpaired two-tailed t-test).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Quantification of DR5/LR colocalization in HCT116, SW620, SW480, and HT29 cells. *p<0.05; **p<0.01; ****p<0.0001 (unpaired two-tailed t-test). For each cell line, N = 75 cells were analyzed. (B) Correlation of total DR5 area per cell and (C) DR5/LR colocalization with maximum TRAIL sensitization observed in OxR cells (linear regression analysis). For all graphs, data are presented as mean + SEM. (D) Western blots show DR5 was undetectable in lipid raft isolated fractions.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** For each cell line, N = 150 cells were analyzed. Data are presented as mean + SEM. ****p<0.0001 (unpaired two-tailed t-test).
+
 To confirm DR4 redistribution into rafts, western blots for DR4 were run on plasma membrane-derived LR fractions, isolated using non-ionic detergent and centrifugation. Isolated LR fractions exhibited significant increases in DR4 for both HCT116 OxR and SW620 OxR cells (Figure 4D, E). β-Actin was used as a loading control to compare relative DR4 expression between parental and OxR cell lines (Suprynowicz et al., 2008). There were no detectable levels of DR5 in western blots from LR isolated fractions (Figure 4—figure supplement 2D). This is consistent with studies in hematological cancers that demonstrate raft localization of DR4 but not DR5 (Marconi et al., 2013; Xiao et al., 2011). To further examine the proximity of DR4 and LRs between phenotypes, Förster resonance energy transfer (FRET) efficiency was measured using a previously described flow cytometry protocol and calculated via a donor quenching method (Ujlaky-Nagy et al., 2018). Both HCT116 and SW620 OxR cells had significantly increased FRET efficiencies compared to their parental counterparts, with an over twofold and fivefold increase, respectively (Figure 4F).
 
-## Altering LR composition affects DR4/LR colocalization and has consequential effects on TRAIL sensitization
+### Altering LR composition affects DR4/LR colocalization and has consequential effects on TRAIL sensitization
 
 To probe the effects of LR modulation on DR4 clustering and TRAIL sensitization, SW620 OxR and HCT116 OxR cells were treated with 5 µM of nystatin, a cholesterol-sequestering agent that inhibits LR formation, in combination with TRAIL for 24 hr (Figure 5A, G). Nystatin inhibited TRAIL-mediated apoptosis in SW620 OxR cells, significantly decreasing the maximum TRAIL sensitization from 45% to 23% (Figure 5B). Nystatin treatment was found to decrease DR4/LR colocalization by over 20-fold (Figure 5C, M). Similar results were found in HCT116 OxR cells as nystatin treatment decreased TRAIL sensitization from 62% to 1% (Figure 5H) and decreased DR4/LR colocalization by over ninefold (Figure 5I). To demonstrate that enhancing LR formation would have pro-apoptotic effects, parental cells were treated with 70 μM of resveratrol in combination with TRAIL for 24 hr (Figure 5D, J). Resveratrol has been shown to stabilize liquid-ordered domains in the plasma membrane and promote cholesterol/sphingolipid-enriched LRs (Neves et al., 2016). Resveratrol significantly sensitized parental SW620 cells to TRAIL irrespective of TRAIL concentration with a maximum TRAIL sensitization of 68% (Figure 5E). Treatment with resveratrol coincided with significant augmentation of DR4/LR colocalization area, an increase of over sixfold (Figure 5F, N). Similarly, parental HCT116 cells treated with resveratrol were sensitized 59% (Figure 5K), corresponding with a nearly sevenfold increase in DR4/LR colocalization area per cell (Figure 5L). Resveratrol and nystatin had no significant effects on DR5 LR colocalization, except in SW620 OxR cells where nystatin treatment surprisingly resulted in a slight increase in colocalization (Figure 5—figure supplement 1A, B).
 
-## S-Palmitoylation of DR4 is enhanced in OxR cells
+![Figure 5.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig5-v1.jpg)
+
+**Figure 5.:** (A, G) SW620 oxaliplatin-resistant (OxR) and HCT116 OxR cells, respectively, treated for 24 hr with a combination of TRAIL and 5 µM nystatin. (B, H) SW620 OxR and HCT116 OxR cells, respectively, showed a significant decrease in TRAIL sensitization when treated in combination with nystatin. N = 3 (n = 9). (C, I) Treatment with 5 µM nystatin significantly decreased DR4/LR colocalization area in SW620 OxR and HCT116 OxR cells, respectively. For each cell line, N = 40 cells were analyzed. (D, J) SW620 Par and HCT116 Par cells, respectively, treated for 24 hr with a combination of TRAIL and 70 µM resveratrol. N = 3 (n = 9). (E, K) SW620 Par and HCT116 Par cells, respectively, showed a significant increase in TRAIL sensitization when treated in combination with resveratrol. N = 3 (n = 9). (F, L) Treatment with 70 µM nystatin significantly increased DR4/LR colocalization area in SW620 Par and HCT116 Par cells, respectively. For each cell line, N = 40 cells were analyzed. (M) Representative composite images and binary projections of DR4/LR colocalization in SW620 OxR cells before and after nystatin treatment. (N) Representative composite images and binary projections of DR4/LR colocalization in parental SW620 cells before and after resveratrol treatment. Red represents DR4, green is lipid rafts, and blue is DAPI. Scale bar = 30 μm. **p<0.01; ****p<0.0001 (unpaired two-tailed t-test for all graphs). (A, D, G, J) Data are presented as mean ± SD. (B, C, E, F, H, I, K, L) Data are presented as mean + SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** For each cell line, N = 40 cells were analyzed. Data are presented as mean + SEM. *p<0.05 (unpaired two-tailed t-test).
+
+### S-Palmitoylation of DR4 is enhanced in OxR cells
 
 Palmitoylation is the reversible, post-translational addition of the saturated fatty acid palmitate to the cystine residue of proteins. Palmitoylation of DR4 has proven to be critical for receptor oligomerization and LR translocation, both obligatory for effective TRAIL-mediated apoptotic signaling (Rossin et al., 2009). S-Palmitoylation of DR4 in SW620 parental and OxR cells was analyzed via protein precipitation, free thiol blocking, thioester cleavage of palmitate linkages, and exchange with a mass tag label to quantify the degree of palmitoylated protein. We discovered that DR4 has four distinct palmitoylated sites, the degree of which was enhanced in the oxaliplatin-resistant phenotype (Figure 6A). Quantifying the percentage of palmitoylated protein in relation to input fraction (IFC) and non-mass tag preserved controls (APC-) validated that OxR cells had a significantly higher percentage of DR4 that was palmitoylated (55% compared to 43%) (Figure 6B). To determine whether enhanced palmitoylation was specific to DR4 and not a ubiquitous characteristic of the OxR phenotype, total cellular protein palmitoylation was measured and analyzed via flow cytometry (Figure 6—figure supplement 1A). Fluorescent azide labeling of palmitic acid confirmed that total cellular palmitoylation was unchanged between parental and OxR cells (Figure 6—figure supplement 1B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig6-v1.jpg)
+
+**Figure 6.:** (A) Death receptor palmitoylation was determined by protein precipitation, thioester cleavage, and conjugation of a mass tag to enumerate and quantify the degree of S-palmitoylation between cellular phenotypes. Samples with a mass tag ‘B’ have distinct bands of equivalent increasing mass, with each mass shift indicating a palmitoylated site. Input fraction control (IFC) samples ‘A’ were collected before thioester cleavage, while the acyl preservation negative control (APC) samples were incubated with an acyl-preservation reagent to block free thiols in place of the mass tag reagent. Arrows show palmitoylation bands. (B) Quantification of the percentage of palmitoylated DR4, calculated by dividing the total palmitoylated mass shift intensity by the average intensity of IFC and APC for each sample. Data are presented as mean ± SD (N = 3). *p<0.05 (unpaired two-tailed t-test). (C) Treatment with the irreversible palmitoylation inhibitor 2BP in combination with TRAIL significantly reduced TRAIL sensitization in SW620 OxR cells. Data are presented as mean + SEM. N = 3 (n = 9). *p<0.0001 (unpaired two-tailed t-test). (D) Percentage of apoptotic SW620 parental and OxR cells after treating with 1000 ng/ml TRAIL and 3.5 μM 2BP in combination (sum of early and late-stage apoptotic cells from Annexin/PI staining). Data are presented as mean + SD. N = 3 (n = 9). *p<0.05; ****p<0.0001 (ordinary one-way ANOVA–Tukey’s multiple comparison test). (E) Cell viability determined by Annexin-V/PI staining for cells treated with 0.1–1000 ng/ml TRAIL and 3.5 μM 2BP. IC50 values were calculated using a variable slope four-parameter nonlinear regression. Data are presented as mean ± SD. N = 3 (n = 9). (F) Proposed mechanism of enhanced TRAIL-mediated apoptosis in oxaliplatin-resistant cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Parental and OxR SW620 cells were labeled with EZClick Palmitic Acid/Fluorescent Azide staining kit and analyzed via flow cytometry to determine total protein palmitoylation between cell lines. Blue histograms represent parental SW620 cells, and red histograms are SW620 OxR cells. Shaded histograms are background controls for each cell line (Palmitic Acid [-]/Fluorescent Azide [+]). (B) Quantification of median fluorescence intensity (MFI) shows no significant change in total palmitoylation between cellular phenotypes (unpaired two-tailed t-test). Data are presented as mean ± SD. N = 3. Significance was measured using an unpaired two-tailed t-test.
+
 To further examine the relationship between DR4 palmitoylation and TRAIL sensitization in OxR cells, the irreversible palmitoylation inhibitor 2-bromopalmitate (2BP) was used. 2BP is a commonly used palmitate analog that is thought to bind to palmitoyl acyl transferase, forming an inhibitory enzyme complex (Draper and Smith, 2009). Treating SW620 OxR cells with 3.5 μM 2BP in combination with TRAIL significantly reduced TRAIL sensitization and increased the IC50 to over 1000 ng/ml (Figure 6C, E). 2BP significantly reduced the number of apoptotic cells in both parental and OxR cells, demonstrating the importance of DR4 palmitoylation in TRAIL signaling, particularly in chemoresistant cells (Figure 6D). These data suggest a novel mechanism for enhanced DR4/LR colocalization in OxR cells via enhanced DR4 palmitoylation (Figure 6F).
 
-## Metastatic CRC patients show sensitivity to TRAIL liposomes despite chemoresistance
+### Metastatic CRC patients show sensitivity to TRAIL liposomes despite chemoresistance
 
 Despite promising specificity for cancer cells and low off-target toxicity, TRAIL’s translational relevance has been confounded by a short half-life and ineffective delivery modalities (Stuckey and Shah, 2013). In recent studies, our lab has demonstrated that TRAIL-coated leukocytes via the administration of liposomal TRAIL can be effective in eradicating circulating tumor cells (CTCs) in the blood of metastatic cancer patients (Ortiz-Otero et al., 2020). Briefly, liposomes were synthesized as previously described using a thin-film hydration method, stepwise extrusion to 100 nm in diameter, and decoration with E-selectin and TRAIL via his-tag conjugation (Mitchell et al., 2014; Figure 7A). Undecorated ‘control’ liposomes, soluble TRAIL (290 ng/ml; at equivalent concentrations as TRAIL liposomes), and oxaliplatin (at peak plasma concentrations of 5 μM) were used as controls. Blood was collected from 13 metastatic CRC patients who had previously undergone or were currently undergoing an oxaliplatin chemotherapy regimen (Table 1). Of these, five patients were analyzed at 2–3 time points over their respective treatment regimens, representing 21 total samples. Blood samples were treated with TRAIL liposomes or control treatments under hematogenous circulatory shear conditions in a cone-and-plate viscometer. TRAIL liposomes significantly decreased the average percentage of viable CTCs in patient blood to 43% compared to just 86% when treated with oxaliplatin (Figure 7B). Interpatient variation was dominant in response to TRAIL liposome treatment as the between-patient coefficient of variation was twice as high (CoV = 0.55) as the average within-patient variation (CoV = 0.28). Viable CTCs were categorized as cells that were cytokeratin(+), DAPI(+), CD45(-), and propidium iodide(-) (Figure 7C). TRAIL liposomal therapy reduced total viable CTC counts by 58% compared to control liposomes, and over 32% compared to oxaliplatin after just 4 hr in circulation (Figure 7—figure supplement 1). Notably, in two patients (P10 and P11), there were no detectable viable CTCs in blood samples treated with TRAIL liposomes. When categorizing patients by location of metastasis, patients that presented with metastases in the liver or bone showed a greater reduction in viable CTCs (69 and 71%, respectively) than patients with both lung and liver metastases (32%) (Figure 7D). Patients had similar CTC reductions regardless of their treatment at the time of blood draw, while those undergoing FOLFOX or capecitabine + oxaliplatin had the highest reduction in CTCs (65 and 60%, respectively) (Figure 7E). When categorizing patients as either oxaliplatin-sensitive or -resistant, based on their response to 5 μM oxaliplatin under hematogenous circulatory-shear conditions (threshold 80% CTC viability), there was no significant difference in CTC response to TRAIL liposomes (Figure 7—figure supplement 2A). Likewise, grouping patients by those undergoing oxaliplatin chemotherapy and those who had failed oxaliplatin previously, there was no significant difference in reduction of viable CTCs from the administration of liposomal TRAIL (Figure 7—figure supplement 2B). This demonstrates the utility of TRAIL liposomes to eradicate CTCs in both oxaliplatin-sensitive and OxR patients.
 
-## CTC DR4-LR colocalization corresponds with TRAIL liposome treatment efficacy and oxaliplatin resistance
+![Figure 7.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig7-v1.jpg)
+
+**Figure 7.:** (A) Liposomes were synthesized using a thin-film hydration method, followed by extrusion and his-tag conjugation of TRAIL and E-selectin protein. Patient blood samples were treated in a cone-and-plate viscometer under circulatory shear conditions with either control liposomes, TRAIL liposomes, soluble TRAIL, or oxaliplatin. (B) Effects of TRAIL liposomes and control treatments on the number of viable CTCs, normalized to control liposome treatment. Bars represent the average of all patients and time points (N = 21). **p<0.001; ****p<0.0001 (ordinary one-way ANOVA–Tukey’s multiple comparison test). (C) Representative micrographs of two patients showing neutralization of CTCs in TRAIL liposomes compared to control liposomes, stained for cytokeratin (green), DAPI (blue), CD45 (red), and propidium iodide (yellow). Scale bar = 100 µm. (D, E) Reduction in viable CTCs categorized by location of metastasis and treatment administered at the time of blood draw, respectively. (F) DR4/LR colocalization area of patient CTCs plotted against the percentage of viable CTCs following TRAIL liposome treatments. Each point corresponds with one patient draw. ####p<0.0001 (simple linear regression to confirm significant deviation from zero). (G) DR4/LR colocalization area of patient CTCs plotted against the normalized percentage of viable CTCs following oxaliplatin treatment. Each point corresponds with one patient draw. ####p<0.0001 (simple linear regression to confirm significant deviation from zero). (H) CTCs of patient 7, stained for DR4 (red) and lipid rafts (green), demonstrating increased DR4/LR colocalization over the course of 10 months of FOLFOX treatment (with progressive disease despite treatment). Scale bar = 30 µm. For all graphs, data are presented as mean ± SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Bars represent mean of all patient samples, and error bars represent SEM. Samples 12-1 and 09-2 showed very large CTC concentrations and were plotted using the alternative scale shown on the right. All other samples (and average) were plotted using the scale shown on the left.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/67750/elife-67750-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Patients were categorized as either oxaliplatin-sensitive (viability <80%, N = 9) or oxaliplatin-resistant (viability >80%, N = 12) to compare changes in the reduction of viable circulating tumor cells (CTCs) (unpaired two-tailed t-test). (B) Patients undergoing oxaliplatin chemotherapy at the time of blood draw (N = 8) showed insignificant changes in viable CTC reduction compared to patients that have previously failed oxaliplatin (N = 13) (unpaired two-tailed t-test). (C) DR4 area of patient CTCs plotted against the percentage of viable CTCs following TRAIL liposome treatments. Each point corresponds with one patient draw. ####p<0.0001 (simple linear regression to confirm significant deviation from zero). (D) DR4 area of patient CTCs plotted against the normalized percentage of viable CTCs following oxaliplatin treatment. Each point corresponds with one patient draw. ####p<0.0001 (simple linear regression to confirm significant deviation from zero). (E) Lipid raft/DR4 analysis of repeat patients, analyzing the changes in DR4 colocalization over the course of therapy. *Patient 9 died after draw 2, precluding further blood collection. For all graphs, data are presented as mean ± SEM.
+
+**Table 1.**
+ Demographic and clinical information of metastatic colorectal cancer (CRC) patients enrolled in this study.*Denotes missing treatment analysis for this sample. †Denotes missing DR4/LR analysis for this sample.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Cancer</th>
+      <th>Metastatic location</th>
+      <th>Treatment history at draw 1</th>
+      <th>Draw 2</th>
+      <th>Draw 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P01</td>
+      <td>59</td>
+      <td>F</td>
+      <td>Colon</td>
+      <td>Paraaortic lymph nodes</td>
+      <td>†FOLFOX (2016), FOLFIRI, 5-FU + Avastin</td>
+      <td>+2 months 5-FU + Avastin</td>
+      <td>* +7 months 5-FU + Avastin</td>
+    </tr>
+    <tr>
+      <td>P02</td>
+      <td>83</td>
+      <td>F</td>
+      <td>Colon</td>
+      <td>Liver</td>
+      <td>†FOLFOX, FOLFIRI, FOLFOX + Avastin</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P04</td>
+      <td>53</td>
+      <td>F</td>
+      <td>Rectal</td>
+      <td>Pelvis, mesenteric lymph nodes</td>
+      <td>FOLFOX + Avastin, capecitabine +radiation, regorafenib + nivolumab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P05</td>
+      <td>68</td>
+      <td>M</td>
+      <td>Rectal</td>
+      <td>Pulmonary</td>
+      <td>Capecitabine + oxaliplatin</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P06</td>
+      <td>68</td>
+      <td>F</td>
+      <td>Rectal</td>
+      <td>Lung, bone</td>
+      <td>FOLFOX, FOLFIRI</td>
+      <td>+6 months FOLFIRI</td>
+      <td>+7 months FOLFIRI</td>
+    </tr>
+    <tr>
+      <td>P07</td>
+      <td>64</td>
+      <td>M</td>
+      <td>Cecum</td>
+      <td>Peritoneal carcinomatosis</td>
+      <td>FOLFOX (1st cycle)</td>
+      <td>+7 months FOLFOX (progression)</td>
+      <td>+10 months FOLFOX (progression) Started FOLFIRI</td>
+    </tr>
+    <tr>
+      <td>P08</td>
+      <td>69</td>
+      <td>M</td>
+      <td>Colon</td>
+      <td>Lung, abdomen</td>
+      <td>FOLFOX + Avastin (progression) capecitabine + Avastin, 5-FU + cetuximab + panitumumab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P09</td>
+      <td>73</td>
+      <td>M</td>
+      <td>Sigmoid</td>
+      <td>Liver, mesentery</td>
+      <td>FOLFOX, capecitabine, FOLFIRI, Lonsurf</td>
+      <td>+7 months FOLFIRI</td>
+      <td>N/A (patient deceased)</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>52</td>
+      <td>M</td>
+      <td>Rectal</td>
+      <td>Lung</td>
+      <td>Radiation + capecitabine capecitabine + oxaliplatin</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P11</td>
+      <td>70</td>
+      <td>M</td>
+      <td>Colon</td>
+      <td>Liver</td>
+      <td>FOLFOX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P12</td>
+      <td>59</td>
+      <td>M</td>
+      <td>Colon</td>
+      <td>Liver, lungs, R adrenal</td>
+      <td>FOLFOX + Avastin, FOLFIRI + Avastin</td>
+      <td>Cetuximab + encorafenib (progression)</td>
+      <td>+3 months cetuximab + encorafenib (progression)</td>
+    </tr>
+    <tr>
+      <td>P13</td>
+      <td>63</td>
+      <td>F</td>
+      <td>Colon</td>
+      <td>Adnexa pelvis</td>
+      <td>FOLFOX, irinotecan + panitumumab, capecitabine + oxaliplatin</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P15</td>
+      <td>79</td>
+      <td>M</td>
+      <td>Colon</td>
+      <td>Liver</td>
+      <td>FOLFOX (1st cycle)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### CTC DR4-LR colocalization corresponds with TRAIL liposome treatment efficacy and oxaliplatin resistance
 
 Patient CTCs were also stained for DR4 and LRs to examine the relationships between raft colocalization, treatment efficacy, and oxaliplatin resistance. Decreasing LR colocalization with DR4 coincided with reduced efficacy of TRAIL liposomes (higher percentage of viable CTCs after treatment), with a negative slope that significantly deviated from zero (Figure 7F). Additionally, increasing LR DR4 corresponded with increasing resistance to oxaliplatin (higher percentage of viable CTCs after oxaliplatin treatment), with a positive slope that significantly deviated from zero (Figure 7G). These same trends were observed for total DR4 area (Figure 7—figure supplement 2C, D). Despite the small size of the patient cohort, these results are encouraging and support our in vitro data in OxR cell lines. Five patients provided multiple blood samples over the course of their treatment, as shown in Table 1. Of these, P07 was the only patient being treated with oxaliplatin (FOLFOX) over the course of all three blood draws. Patient 7 was undergoing the first cycle of FOLFOX at the time of draw 1 and progressed while on FOLFOX for draws 2 and 3. However, DR4 and LR staining of CTCs revealed increased DR4/LR colocalization despite progression (Figure 7H). This same trend of enhanced CTC DR4/LR colocalization with treatment was observed in patients undergoing 5FU + Avastin (P01) and FOLFIRI (P09), while P06 (FOLFIRI) exhibited a bimodal response (Figure 7—figure supplement 2E). Interestingly, P12 exhibited decreased colocalization in CTCs over the course of treatment. This is hypothesized to be a result of a switch in treatment (FOLFIRI + Avastin to cetuximab + encorafenib) due to progression after the first draw.
 
@@ -89,85 +340,511 @@ We have also shown that these results translate clinically as DR4 expression and
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SW620 adenocarcinoma,colorectal, Dukes' type C</td>
+      <td>ATCC</td>
+      <td>#CCL-227</td>
+      <td>RRID:CVCL_0547 L15 Media</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SW480 adenocarcinoma,colorectal, Dukes' type B</td>
+      <td>ATCC</td>
+      <td>#CCL-228</td>
+      <td>RRID:CVCL_0546 L15 Media</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HT29 adenocarcinoma, colorectal</td>
+      <td>ATCC</td>
+      <td>#HTB-38</td>
+      <td>RRID:CVCL_0320 McCoy’s 5A Media</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116 carcinoma, colorectal</td>
+      <td>ATCC</td>
+      <td>#CCL-247</td>
+      <td>RRID:CVCL_0291 McCoy’s 5A Media</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SW620 OxRadenocarcinoma,colorectal, Dukes' type C</td>
+      <td>Kobe Pharmaceutical University</td>
+      <td>#CCL-227</td>
+      <td>RRID:CVCL_4V77 L15 Media</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SW480 OxRadenocarcinoma, colorectal, Dukes' type B</td>
+      <td>MD Anderson Cancer Center Characterized Cell Line Core</td>
+      <td>#CCL-228</td>
+      <td>RRID:CVCL_AU18 L15 Media</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HT29 OxR adenocarcinoma, colorectal</td>
+      <td>MD Anderson Cancer Center Characterized Cell Line Core</td>
+      <td>#HTB-38</td>
+      <td>RRID:CVCL_ 5949 McCoy’s 5A Media</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116 OxR carcinoma, colorectal</td>
+      <td>MD Anderson Cancer Center Characterized Cell Line Core</td>
+      <td>#CCL-247</td>
+      <td>RRID:CVCL_4V73 McCoy’s 5A Media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oxaliplatin</td>
+      <td>MedChemExpress</td>
+      <td>Cat# HY-17371</td>
+      <td>CAS No: 61825-94-3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MTT Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat# ab211091</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human sTRAIL/Apo2L</td>
+      <td>PeproTech</td>
+      <td>Cat# 310-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-TNFRSF10A Recombinant Antibody (clone mAY4)</td>
+      <td>Creative Biolabs</td>
+      <td>Cat# HPAB-1616-FY</td>
+      <td>Mapatumumab (0.01–10 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FITC Annexin-V Apoptosis Detection Kit I</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 556547</td>
+      <td>Includes propidium iodide</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10.7.1</td>
+      <td>FlowJo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>JC1 – Mitochondrial Membrane Potential Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat# ab113850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RT2 First Strand Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 330404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RT2 Profiler PCR Human Apoptosis Array</td>
+      <td>Qiagen</td>
+      <td>Cat# PAHS-012Z</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CFX Maestro Software</td>
+      <td>Bio-Rad</td>
+      <td>RRID:SCR_018064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GeneGlobe Data Analysis Center</td>
+      <td>Qiagen</td>
+      <td>RRID:SCR_021211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gene Knockout Kit v2 – Human CASP10 with Cas9 2NLS Nuclease</td>
+      <td>Synthego</td>
+      <td></td>
+      <td>sgRNA:Cas9 (90 pmol:10 pmol)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vybrant Alexa Fluor 488 Lipid Raft Labeling Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# V34403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vybrant Alexa Fluor 555 Lipid Raft Labeling Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# V34404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-human CD261 (DR4) Monoclonal Antibody (clone DJR1)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 14-6644-82</td>
+      <td>RRID:AB_468188 (1:50 IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-human CD262 (DR5) Monoclonal Antibody (clone DJR2-4)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 14-9908-82</td>
+      <td>RRID:AB_468592 (1:50 IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 goat anti-mouse IgG (H+L)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A28180</td>
+      <td>RRID:AB_2536164 (1:1000 IF)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>Cat# D1306</td>
+      <td>RRID:AB_2629482 (1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji – ImageJ</td>
+      <td>FIJI</td>
+      <td></td>
+      <td>RRID:SCR_002285 JaCOP plugin</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human TruStain FcX</td>
+      <td>BioLegend</td>
+      <td>Cat# 422301</td>
+      <td>RRID:AB_2818986</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE mouse anti-human CD261 (DR4) (clone DJR1)</td>
+      <td>BioLegend</td>
+      <td>Cat# 307206</td>
+      <td>RRID:AB_2287472 (5 µl per sample, FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE mouse anti-human CD262 (DR5) (clone DJR2-4)</td>
+      <td>BioLegend</td>
+      <td>Cat# 307406</td>
+      <td>RRID:AB_2204926 (5 µl per sample, FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE mouse anti-human TRAILR3 (DcR1) (clone DJR3)</td>
+      <td>BioLegend</td>
+      <td>Cat# 307006</td>
+      <td>RRID:AB_2205089 (5 µl per sample, FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE mouse anti-human TRAILR4 (DcR2) (clone 104918)</td>
+      <td>BioLegend</td>
+      <td>Cat# FAB633P</td>
+      <td>RRID:AB_2205217 (5 µl per sample, FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse IgG1 κ Isotype Control (clone MOPC-21)</td>
+      <td>BioLegend</td>
+      <td>Cat# 400114</td>
+      <td>RRID:AB_326435 (5 µl per sample, FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC mouse anti-human DR4 (clone DR-4-02)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MA1-19757</td>
+      <td>RRID:AB_1955203 (5 µl per sample, FC)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Resveratrol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# R5010-100MG</td>
+      <td>RRID:AB_309682 CAS: 501-36-0</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nystatin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP29495</td>
+      <td>CAS: 1400-61-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Bromopalmitate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 21604-1G</td>
+      <td>CAS: 18263-25-7</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-Fas Antibody (human, neutralizing) (clone ZB4)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 05-338</td>
+      <td>RRID:AB_309682 500 ng/ml (neutralization)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Minute Plasma Membrane-Derived Lipid Raft Isolation Kit</td>
+      <td>Invent Biotechnologies</td>
+      <td>Cat# LR-042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DR4 Rabbit monoclonal antibody (clone D9S1R)</td>
+      <td>Cell Signalling Technologies</td>
+      <td>Cat# 42533</td>
+      <td>RRID:AB_2799223 (1:500 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DR5 Rabbit polyclonal antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PA1-957</td>
+      <td>RRID:AB_2303474 (1:500 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Caspase-10 Rabbit polyclonal antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PA5-29649</td>
+      <td>RRID:AB_2547124 (1:1000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-human GAPDH (clone 6C5)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# MAB374</td>
+      <td>RRID:AB_2107445 (1:2000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-β-Actin monoclonal antibody (clone C4)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-47778</td>
+      <td>RRID:AB_2714189 (1:1000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-rabbit secondary antibody</td>
+      <td>LICOR</td>
+      <td>Cat# 926-32211</td>
+      <td>RRID:AB_621843 (2:15,000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-mouse secondary antibody</td>
+      <td>LICOR</td>
+      <td>Cat# 926-32210</td>
+      <td>RRID:AB_621842 (2:15,000 WB)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LICOR housekeeping protein normalization protocol</td>
+      <td>LICOR Odyssey Fc</td>
+      <td>RRID:SCR_013715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SiteCounter S-Palmitoylated Protein Kit</td>
+      <td>Badrilla</td>
+      <td>Cat# K010312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZClick Palmitoylated Protein Assay Kit</td>
+      <td>BioVision</td>
+      <td>Cat# K416-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD45 magnetic beads (human)</td>
+      <td>Mylteni Biotech</td>
+      <td>Cat# 130-045-801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin mouse anti-human CD45 Antibody (clone HI30)</td>
+      <td>BioLegend</td>
+      <td>Cat# 304004</td>
+      <td>RRID:AB_314392 (1:50 IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin-conjugated Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# S21374</td>
+      <td>RRID:AB_2336066 (1:200 IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC Mouse Anti-Human Cytokeratin (clone CAM5.2)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 347653</td>
+      <td>(20 µl per sample, IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21235</td>
+      <td>RRID:AB_2535804 (1:200 IF)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 CRC cell lines SW620 (ATCC, #CCL-227), SW480 (ATCC, #CCL-228), HCT116 (ATCC, #CCL-247), and HT29 (ATCC, #HTB-38) were purchased from American Type Culture Collection. SW620 and SW480 cells were cultured in Leibovitz's L-15 cell culture medium (Gibco). HCT116 and HT29 cells were cultured in McCoy’s 5A cell culture medium (Gibco). Media was supplemented with 10% (v/v) fetal bovine serum and 1% (v/v) PenStrep, all purchased from Invitrogen. SW480 OxR, HCT116 OxR, and HT29 OxR cells were obtained from MD Anderson Cancer Center Characterized Cell Line Core, supplied and generated by the Dr. Lee Ellis laboratory. SW620 OxR cells were obtained from Dr. Mika Hosokawa at Kobe Pharmaceutical University in Japan. OxR derivative cell lines were cultured in the same medium as their parental counterparts. To prevent phenotypic drift of OxR lines, cells were used within six passages from the time they were received. To prevent chemotherapy-induced cytotoxicity in downstream experiments, oxaliplatin was not supplemented in OxR cell culture media. All cell lines were maintained in a humidified incubation chamber at 37°C and 5% CO2. All cell lines were screened for mycoplasma contamination and tested negative.
 
-## MTT assay
+### MTT assay
 
 SW620, SW620 OxR, HCT116, HCT116 OxR, HT29, HT29 OxR, SW480, and SW480 OxR cell lines were plated into tissue culture 96-well black-walled plates at a concentration of 3000 cells/well and incubated overnight at 37°C. A 10 mM stock oxaliplatin suspension was created by dissolving oxaliplatin (MedChemExpress) in molecular grade water via sonication and heating. Cell culture media was replaced with oxaliplatin treatments ranging from 0 to 1000 µM and incubated for 72 hr. Following treatments, an MTT assay (Abcam) was carried out according to the manufacturer’s protocol. The plates were then read using a plate reader (BioTek µQuant) at 590 nm absorbance using gen5 software. Control wells containing the MTT solution without cells were used for background subtraction.
 
-## Transwell assay
+### Transwell assay
 
 Transwell inserts (6-well with 8 µm pores) (Greiner Bio-one) were evenly coated with 75 µl of a 1 mg/ml collagen solution composed of 3 mg/ml rat tail collagen (Gibco), serum-free media, and 0.2% 1 N NaOH for crosslinking. Inserts were incubated for 20 min at 37°C. After crosslinking, 2.5 ml of 10% FBS media was added to the bottom of the well plate while the top was filled with 1 ml of serum-free media until cells were ready for seeding. Parental and OxR SW480, SW620, HT29, and HCT116 cells were seeded in the collagen-coated inserts at a concentration of 200,000 cells/ml in serum-free media. The transwell inserts were replaced with new serum-free media after 2 days. On day 4, the number of cells that had migrated into the bottom plate was counted using a Thermo Fisher Countess II Automated Cell Counter.
 
-## Annexin-V/PI apoptosis assay
+### Annexin-V/PI apoptosis assay
 
 Parental and OxR cell lines were plated at 100,000 cells/well onto 24-well plates and incubated overnight at 37°C. Wells were treated in triplicate with soluble human TRAIL (PeproTech) or treated with the anti-DR4 agonist antibody mapatumumab (Creative Biolabs, clone mAY4) and incubated for 24 hr. All cells were collected by recovering the supernatant and lifting the remaining adhered cells using 0.25% Trypsin-EDTA (Gibco). Cells were washed thoroughly with HBSS with calcium and magnesium (Gibco). Cells were incubated for 15 min with FITC-conjugated Annexin-V and propidium iodide (PI) (BD Pharmingen) at room temperature (RT) in the absence of light and immediately analyzed using a Guava easyCyte 12HT benchtop flow cytometer (MilliporeSigma). Viable cells were identified as being negative for both Annexin-V and PI, early apoptotic cells as positive for Annexin-V only, late apoptotic cells were positive for both Annexin-V and PI, and necrotic cells were positive for PI only. Flow cytometry plots were analyzed using FlowJo v10.7.1 software. Control samples included unstained negative control with no Annexin-V/PI to adjust for background and autofluorescence, and Annexin-V-only and PI-only samples for gating apoptotic and necrotic populations.
 
-The change in cell viability in response to TRAIL treatments between parental and OxR cells for each of the four CRC cell lines was calculated using the following TRAIL Sensitization equation:TRAILSensitization=(%ViableParentalCells)−(%ViableOxRCells)(%ViableParentalCells)∗100%where the percentage of viable cells was normalized to untreated controls for each trial. TRAIL sensitization was calculated for each concentration of TRAIL, where the ‘Maximum TRAIL Sensitization’ was the highest sensitization observed among all concentrations. Since this sensitization equation is based on a percent reduction formula, small changes in viability can yield large TRAIL sensitizations when cell viability is low. To account for this, both cell viability and TRAIL sensitization are reported to provide a complete perspective on treatment responses between cell lines.
+The change in cell viability in response to TRAIL treatments between parental and OxR cells for each of the four CRC cell lines was calculated using the following TRAIL Sensitization equation:
 
-## JC-1 (mitochondrial membrane potential) assay
+$$
+TRAILSensitization=\frac{(%ViableParentalCells)−(%ViableOxRCells)}{(%ViableParentalCells)}∗100%
+$$
+
+where the percentage of viable cells was normalized to untreated controls for each trial. TRAIL sensitization was calculated for each concentration of TRAIL, where the ‘Maximum TRAIL Sensitization’ was the highest sensitization observed among all concentrations. Since this sensitization equation is based on a percent reduction formula, small changes in viability can yield large TRAIL sensitizations when cell viability is low. To account for this, both cell viability and TRAIL sensitization are reported to provide a complete perspective on treatment responses between cell lines.
+
+### JC-1 (mitochondrial membrane potential) assay
 
 SW620 and HCT116 cells (parental and OxR) were plated at 100,000 cells/well onto 24-well plates and incubated overnight. Cells were treated in triplicate with TRAIL for 24 hr. Following treatment, cells were collected, washed thoroughly with HBSS without calcium and magnesium, and incubated for 15 min with JC-1 dye (Abcam) in accordance with the manufacturer’s protocol. JC-1 fluorescence was assessed via flow cytometry. Cells with healthy mitochondria were identified as having higher red fluorescence while those with depolarized mitochondria had lower red JC-1 fluorescence.
 
-## RT-PCR profiler array
+### RT-PCR profiler array
 
 2 × 106 SW620 and HCT116 (parental and OxR) cells were seeded into a 100-mm-diameter cell culture dish for 24 hr. Cells were lifted using a cell scraper and washed with HBSS with calcium and magnesium. RNA was isolated using the RNeasy Plus Mini Kit (Qiagen) according to the manufacturer’s protocol. RNA yield following isolation was determined using a UV5Nano spectrophotometer (Mettler Toledo). cDNA synthesis was completed using the RT2 First Strand Kit (Qiagen, 330404) using 0.5 μg RNA per sample. RNA expression of 84 apoptotic genes was analyzed using the RT2 Profiler PCR Human Apoptosis Array (Qiagen, PAHS-012Z). Arrays were prepared according to the manufacturer’s protocols applied to the prepared cDNA samples. Profiler array plates were run on a CFX96 Touch Real Time PCR (Bio-Rad) using the following protocol: 1 cycle for 10 min at 95°C, 40 cycles of 95°C for 15 s followed by 60°C for 60 s at a rate of 1°C/s. Melt curves were generated immediately following the PCR protocol. Cycle threshold (Ct) values were calculated using CFX Maestro Software (Bio-Rad). Data analysis was completed using the GeneGlobe Data Analysis Center (Qiagen). Volcano plots were generated in GraphPad Prism using calculated fold changes in gene expression between OxR and parental cells and their corresponding p-values.
 
-## CRISPR-Cas9 KO
+### CRISPR-Cas9 KO
 
 KO of the CASP10 gene in SW620 cells was completed using the Gene Knockout Kit v2–Human CASP10 kit with Cas9 2NLS Nuclease (Synthego). Ribonucleoprotein (RNP) complexes were made at a 9:1 ratio of sgRNA:Cas9 (90 pmol:10 pmol) in Gene Pulser Electroporation Buffer (Bio-Rad, 1652677) and incubated for 10 min at RT. Cas9 control samples consisted of 10 pmol Cas9 with no sgRNA. RNP complexes were added to 200,000 cells in 200 µl electroporation buffer (0.2 cm cuvette) and electroporated via the Gene Pulser Xcell Electroporation System (Bio-Rad) using exponential decay pulses (145 V, 500 µF, 1000 ohm). Cells were immediately cultured in 12-well plates and allowed to recover for 7 days before measuring KO efficiency.
 
-## Confocal microscopy and image analysis
+### Confocal microscopy and image analysis
 
 Parental and OxR cells were seeded onto polystyrene cell culture slides (Thermo Fisher Scientific). Cells were allowed to grow for 48 hr at 37°C. In samples treated with nystatin or resveratrol, cells were plated for 24 hr then treated for 24 hr before staining. Cells were washed and LRs were stained using the Vybrant Alexa Fluor 488 Lipid Raft Labeling Kit (Invitrogen, V34403) according to the manufacturer’s protocol. Briefly, cells were incubated with Alexa488-conjugated cholera toxin subunit B (CT-B) followed by an anti-CT-B antibody to crosslink CT-B labeled rafts. Slides were fixed for 15 min with 4% paraformaldehyde (PFA) (Electron Microscopy Sciences) in PBS (Gibco) and then permeabilized using 1% Triton X-100 (MilliporeSigma) in PBS at RT. Slides were blocked for 2 hr with 5% goat serum (Thermo Fisher Scientific) and 5% bovine serum albumin (BSA, Sigma) in HBSS. Primary staining was done overnight at 4°C with either DR4 monoclonal antibody (Invitrogen, clone DJR1) or DR5 monoclonal antibody (Invitrogen, clone DJR2-4) in the blocking serum at a ratio of 1:50. Secondary staining was carried out with Alexa Fluor 555 goat anti-mouse IgG (H+L) (Invitrogen, A28180) for 30 min at RT (1:1000). Slides were stained with DAPI (Invitrogen, D1306) for 30 min at RT in the blocking solution at 1:1000. Washes were done twice between each step for 5 min each using 0.02% Tween20 in PBS. Slides were assembled using 10 μl of Vectrashield antifade mounting media (Vector Laboratories). Confocal imaging was performed using an LSM 880 (Carl Zeiss) with a 63×/1.40 Plan-Apochromat Oil, WD = 0.19 mm objective. At least five images were taken per sample.
 
 Image analysis was performed in FIJI using a macro to automate quantification of raft and DR contents per cell. Briefly, all images were adjusted for background using the same thresholding specifications. The ‘analyze particles’ feature was used to quantify the total area of LRs and DR per outlined cell. Colocalization events were quantified by creating binary masks of DR and LR events. For each gated cell, the LR and DR binary masks were multiplied to create a binary projection of colocalized events. Raw integrated density and cell area (ROI area) were also measured. Cells with areas outside of three times the standard deviation from the mean were considered outliers and not included in the analysis. Colocalization analysis was also performed using the JACoP plugin in FIJI (Bolte and Cordelières, 2006). The MCC was calculated as the fraction of LR colocalized DR4.
 
-## Flow cytometry
+### Flow cytometry
 
-## Surface DR expression
+#### Surface DR expression
 
 Parental and OxR cell lines were cultured to 70% confluency upon collection and split into 250,000 cells per sample. Cells were fixed in 4% PFA in HBSS for 15 min at RT, then blocked in a 100 μl 1% BSA solution for 30 min at 4°C, with 2× HBSS washes between each step. Cells suspensions of 100 μl were incubated for 15 min at RT with 2 μl Human TruStain FcX (BioLegend, 422301) to prevent nonspecific Fc receptor binding. Samples were immediately stained with 5 μl of either PE anti-human CD261 (DR4) (BioLegend, clone DJR1), PE anti-human CD262 (DR5) (BioLegend, clone DJR2-4), PE anti-human TRAILR3 (DcR1) (BioLegend, clone DJR3), PE anti-human TRAILR4 (DcR2) (R&D Systems, clone 104918), or PE Mouse IgG1 κ Isotype Control (BioLegend, clone MOPC-21) for 30 min at 4°C. Samples were washed twice with HBSS and analyzed using a Guava easyCyte flow cytometer. A chi-squared test was performed using FlowJo v10.7.1, where significance in histogram distribution was confirmed if T(x) between parental and OxR stained samples was greater than T(x) between background (unstained) parental and OxR samples (see Supplementary file 1).
 
-## FRET
+#### FRET
 
-Cells were prepared as described above, but without fixation or permeabilization. Samples were stained for LRs using the Vybrant Alexa Fluor 555 Lipid Raft Labeling Kit (Invitrogen, V34404). Samples were then stained with 5 µl FITC anti-human DR4 (Thermo Fisher Scientific, clone DR-4-02) for 30 min at 4°C. Samples were washed twice with HBSS and analyzed using a Guava easyCyte flow cytometer. Donor quenching FRET efficiency was calculated using the following formula:E=1-FILR+DR-FIBFIDR-FIBwhere E is the FRET efficiency, FILR+DR is the mean fluorescence intensity of the double-stained LR/DR4 sample (acceptor + donor), FIDR is the mean fluorescence intensity of the DR4-only stain (donor only), and FIB is the fluorescence intensity of an unstained sample (background). Fluorescence intensity was recorded in the donor (FITC) channel.
+Cells were prepared as described above, but without fixation or permeabilization. Samples were stained for LRs using the Vybrant Alexa Fluor 555 Lipid Raft Labeling Kit (Invitrogen, V34404). Samples were then stained with 5 µl FITC anti-human DR4 (Thermo Fisher Scientific, clone DR-4-02) for 30 min at 4°C. Samples were washed twice with HBSS and analyzed using a Guava easyCyte flow cytometer. Donor quenching FRET efficiency was calculated using the following formula:
 
-## TRAIL combination treatments
+$$
+E=1-\frac{FI_{LR+DR}-FI_{B}}{FI_{DR}-FI_{B}}
+$$
 
-## Resveratrol
+where E is the FRET efficiency, $FI_{LR+DR}$ is the mean fluorescence intensity of the double-stained LR/DR4 sample (acceptor + donor), $FI_{DR}$ is the mean fluorescence intensity of the DR4-only stain (donor only), and $FI_{B}$ is the fluorescence intensity of an unstained sample (background). Fluorescence intensity was recorded in the donor (FITC) channel.
 
-Parental SW620 and HCT116 cells were plated at 100,000 cells/well onto 24-well plates and incubated overnight at 37°C. Cells were treated with 70 µM resveratrol (Sigma) in combination with 0.1–1000 ng/ml of TRAIL for 24 hr. Following treatment, cells were collected for Annexin-V/PI apoptosis assay. TRAIL sensitization was calculated using the following equation:TRAILSensitizationresveratrol=(%ViableParentalCells)−(%ViableParentalCells+resv)(%ViableParentalCells)∗100%where TRAIL + resv treatments were normalized to resveratrol treatment in the absence of TRAIL to account for any resveratrol-associated cytotoxicity.
+### TRAIL combination treatments
 
-## Nystatin
+#### Resveratrol
 
-SW620 OxR and HCT116 OxR cells were plated at 100,000 cells/well onto 24-well plates and incubated overnight at 37°C. Cells were treated with 5 µM nystatin (Thermo Fisher Scientific) in combination with 0.1–1000 ng/ml of TRAIL. Following treatment, cells were collected for Annexin-V/PI apoptosis assay. TRAIL sensitization was calculated using the following equation:TRAILSensitizationnystatin=(%ViableOxRCells+nys)−(%ViableOxRCells)(%ViableOxRCells+nys)∗100%where TRAIL + nys treatments were normalized to nystatin treatment in the absence of TRAIL to account for any nystatin-associated cytotoxicity.
+Parental SW620 and HCT116 cells were plated at 100,000 cells/well onto 24-well plates and incubated overnight at 37°C. Cells were treated with 70 µM resveratrol (Sigma) in combination with 0.1–1000 ng/ml of TRAIL for 24 hr. Following treatment, cells were collected for Annexin-V/PI apoptosis assay. TRAIL sensitization was calculated using the following equation:
 
-## 2-Bromopalmitate
+$$
+TRAILSensitization_{resveratrol}=\frac{(%ViableParentalCells)−(%ViableParentalCells_{+resv})}{(%ViableParentalCells)}∗100%
+$$
+
+where TRAIL + resv treatments were normalized to resveratrol treatment in the absence of TRAIL to account for any resveratrol-associated cytotoxicity.
+
+#### Nystatin
+
+SW620 OxR and HCT116 OxR cells were plated at 100,000 cells/well onto 24-well plates and incubated overnight at 37°C. Cells were treated with 5 µM nystatin (Thermo Fisher Scientific) in combination with 0.1–1000 ng/ml of TRAIL. Following treatment, cells were collected for Annexin-V/PI apoptosis assay. TRAIL sensitization was calculated using the following equation:
+
+$$
+TRAILSensitization_{nystatin}=\frac{(%ViableOxRCells_{+nys})−(%ViableOxRCells)}{(%ViableOxRCells_{+nys})}∗100%
+$$
+
+where TRAIL + nys treatments were normalized to nystatin treatment in the absence of TRAIL to account for any nystatin-associated cytotoxicity.
+
+#### 2-Bromopalmitate
 
 SW620 parental and OxR cells were plated at 100,000 cells/well onto 24-well plates and incubated overnight at 37°C. Cells were treated with 3.5 µM 2BP (MilliporeSigma) in combination with 0.1–1000 ng/ml of TRAIL. Following treatment, cells were collected for Annexin-V/PI apoptosis assay. TRAIL sensitization was calculated as described above.
 
-## Anti-Fas (ZB4)
+#### Anti-Fas (ZB4)
 
 SW620 OxR cells were plated at 100,000 cells/well onto 24-well plates and incubated overnight at 37°C. Cells were treated with 500 ng/ml human anti-Fas (MilliporeSigma, Clone ZB4) with and without 1000 ng/ml of TRAIL. Following treatment, cells were collected for Annexin-V/PI apoptosis assay. TRAIL sensitization was calculated as described above.
 
-## Western blot
+### Western blot
 
 LRs were isolated according to the manufacturer’s protocol using the Minute Plasma Membrane-Derived Lipid Raft Isolation Kit (Invent Biotech, LR-042). Cell lysates and LR protein isolates were prepared by sonication in 4× Laemmli sample buffer (Bio-Rad, 1610747) and then loaded into 10% SDS-polyacrylamide gels for electrophoresis. Protein transfer onto a PVDF membrane was carried out overnight, and then blocked with Intercept (TBS) Blocking Buffer (LICOR, 927-60001) at RT for an hour. Primary antibody incubation occurred overnight at 4°C for DR4 (Cell Signaling Technology, 42533) and DR5 (Thermo Fisher Scientific, PA1-957) at 1:500 dilution and caspase-10 (Thermo Fisher Scientific, PA5-29649) at a 1:1000 dilution in LICOR buffer. Cell lysate protein bands were normalized to GAPDH (EMD Millipore, MAB347) at 1:2000 dilution, while LR isolates were normalized to β-actin (Santa Cruz, 47778) at 1:1000 dilution in LICOR blocking buffer. Western blots were quantified using the Licor Odyssey Fc with IRDye 800CW goat anti-rabbit secondary antibody (LICOR, 926-32211) and IRDye 800CW goat anti-mouse secondary antibody (LICOR, 926-32210) at a dilution of 2:15,000. Quantification was done following the LICOR housekeeping protein normalization protocol.
 
-## Palmitoylation assay
+### Palmitoylation assay
 
 Cells were grown to 70% confluency in a 100 mm tissue culture dish. Palmitoylation of DR4 was measured using the SiteCounter S-Palmitoylated Protein Kit (Badrilla, K010312) according to the manufacturer’s protocol. Input fraction controls (IFC) were obtained prior to thioester cleavage. Acyl preservation negative controls (APC-) were obtained by using an acyl preserving reagent instead of mass-tag conjugation. Western blots were run for DR4 following the ‘western blot’ protocol described above. The percentage of DR4 palmitoylation was calculated by dividing the total intensity of all palmitoylated bands (mass tag) divided by the average intensity of the IFC and APC(-) bands for that sample.
 
 To measure the amount of total palmitoylated protein, cells were cultured in 96-well plates at a concentration of 20,000 cells/well. The EZClick Palmitoylated Protein Assay Kit (BioVision, K416-100) was used in accordance with the manufacturer’s protocol. Cells were incubated overnight with either 1× EZClick Palmitic Acid label in media or culture media with no label (background control). Cells were recovered and stained using EZClick Fluorescent Azide, then analyzed via flow cytometry for shifts in FL2-H intensity. Median fluorescence intensity (MFI) was calculated by subtracting the background intensity from each sample (Palmitic Acid label [-]/ Fluorescent Azide [+]).
 
-## Patient blood samples
+### Patient blood samples
 
 Peripheral whole blood samples of 10 ml were collected from 13 metastatic CRC patients after informed consent. Patient criteria for this study included the following: presenting with metastatic CRC at the time of blood draw and undergone (or undergoing) oxaliplatin-containing chemotherapy (i.e., FOLFOX). Additionally, five patients had samples collected through their respective chemotherapy regimens. De-identified blood samples were transported from the Guthrie Clinic to Vanderbilt University and processed within 24 hr. Blood samples were split for treatment (8 ml) and death receptor/LR staining (1–2 ml).
 
-## Ex vivo treatment of CRC patient blood samples
+### Ex vivo treatment of CRC patient blood samples
 
 For the treated samples, 2 ml of blood were treated with either 40 µl of control liposomes, 40 µl TRAIL/E-selectin conjugated liposomes (290 ng/ml of TRAIL), 6 µl (290 ng/ml) of soluble TRAIL, or 2 µl (5 µM) of oxaliplatin. Liposomes were synthesized using a thin-film hydration method followed by extrusion and his-tag conjugation as described previously (Mitchell et al., 2014). The aliquots were sheared for 4 hr in a cone-and-plate viscometer (Brookfield LVDVII) at a shear rate of 120 s−1. Prior to incubation, the cone-and-plate viscometers were blocked using 5% BSA for 30 min. After 4 hr, the blood aliquots were washed from the viscometer’s spindle and cup by using twice the volume of HBSS without calcium and magnesium. Blood aliquots were placed over twice the volume of Ficoll (GE Healthcare) to separate out mononuclear cells within the buffy coat. CTCs were enriched using a negative selection kit with CD45 magnetic beads (Mylteni Biotech, 130-045-801) following the manufacturer’s protocol (Ortiz-Otero et al., 2020).
 
@@ -175,10 +852,10 @@ The resulting isolated CTCs were placed in cell culture overnight using RPMI med
 
 Five images per sample were taken at random locations using an LSM 710 (Carl Zeiss) with a 20×/0.8 objective. The cell number in the sample was scaled up by multiplying by the relative area (slide area/frame area). Viable tumor cells were identified using the following criteria: (1) positive for DAPI, (2) negative for CD45, (3) positive for cytokeratin, and (4) negative for propidium iodide.
 
-## Staining of LR and death receptors in primary CTCs
+### Staining of LR and death receptors in primary CTCs
 
 CTCs from the remainder of the patient blood were isolated and cytospun onto slides as described above. Death receptors and LRs were stained and analyzed as detailed above in ‘Confocal microscopy and image analysis.’ LRs were stained using the Vybrant Alexa Fluor 555 Lipid Raft Labeling Kit (Invitrogen, V34404) after CTCs were spun onto slides. Secondary staining for DR4 and DR5 was completed using goat anti-mouse Alexa Fluor 647 (Thermo Fisher Scientific, A21235) at a 1:200 dilution. Cells were also stained with FITC-conjugated cytokeratin, as described above, to positively identify CTCs for analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Data sets were plotted and analyzed using GraphPad Prism 9. When comparing two groups, a symmetric unpaired t-test was used with p<0.05 considered significant. One-way ANOVA with multiple comparisons was used for multiple groups with p<0.05 considered significant. At least three independent biological replicates were used for each experiment unless otherwise stated.

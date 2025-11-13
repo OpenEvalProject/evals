@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.44396.001 Autosomal-dominant Schnyder corneal dystrophy (SCD) is characterized by corneal opacification owing to overaccumulation of cholesterol. SCD is caused by mutations in UBIAD1, which utilizes geranylgeranyl pyrophosphate (GGpp) to synthesize vitamin K 2 . Using cultured cells, we previously showed that sterols trigger binding of UBIAD1 to the cholesterol biosynthetic enzyme HMG CoA reductase (HMGCR), thereby inhibiting its endoplasmic reticulum (ER)-associated degradation (ERAD) (Schumacher et al. 2015). GGpp triggers release of UBIAD1 from HMGCR, allowing maximal ERAD and ER-to-Golgi transport of UBIAD1. SCD-associated UBIAD1 resists GGpp-induced release and is sequestered in ER to inhibit ERAD. We now report knockin mice expressing SCD-associated UBIAD1 accumulate HMGCR in several tissues resulting from ER sequestration of mutant UBIAD1 and inhibition of HMGCR ERAD. Corneas from aged knockin mice exhibit signs of opacification and sterol overaccumulation. These results establish the physiological significance of UBIAD1 in cholesterol homeostasis and indicate inhibition of HMGCR ERAD contributes to SCD pathogenesis.
+Autosomal-dominant Schnyder corneal dystrophy (SCD) is characterized by corneal opacification owing to overaccumulation of cholesterol. SCD is caused by mutations in UBIAD1, which utilizes geranylgeranyl pyrophosphate (GGpp) to synthesize vitamin K2. Using cultured cells, we previously showed that sterols trigger binding of UBIAD1 to the cholesterol biosynthetic enzyme HMG CoA reductase (HMGCR), thereby inhibiting its endoplasmic reticulum (ER)-associated degradation (ERAD) (Schumacher et al. 2015). GGpp triggers release of UBIAD1 from HMGCR, allowing maximal ERAD and ER-to-Golgi transport of UBIAD1. SCD-associated UBIAD1 resists GGpp-induced release and is sequestered in ER to inhibit ERAD. We now report knockin mice expressing SCD-associated UBIAD1 accumulate HMGCR in several tissues resulting from ER sequestration of mutant UBIAD1 and inhibition of HMGCR ERAD. Corneas from aged knockin mice exhibit signs of opacification and sterol overaccumulation. These results establish the physiological significance of UBIAD1 in cholesterol homeostasis and indicate inhibition of HMGCR ERAD contributes to SCD pathogenesis.
 
 ## Introduction
 
@@ -38,29 +38,128 @@ Our group discovered that accumulation of sterols in ER membranes triggers bindi
 
 The current studies were designed to confirm the role of UBIAD1 in regulation of HMGCR ERAD and cholesterol metabolism in living animals. For this purpose, we generated mice that harbor a knockin mutation that changes asparagine-100 (N100) in UBIAD1 to a serine residue (N100S) (see Figure 1A). The N100S mutation in mouse UBIAD1 corresponds to the SCD-associated UBIAD1 (N102S) mutation in the human enzyme. We show here that knockin mice homozygous for the N100S mutation (designated as Ubiad1Ki/Ki mice) accumulate HMGCR protein in several tissues, despite a reduction in the amount of Hmgcr mRNA owing to sterol accumulation and reduced activation of SREBPs. The accumulation of HMGCR protein resulted from sequestration of UBIAD1 (N100S) in the ER and inhibition of HMGCR ERAD at a post-ubiquitination step of the reaction. Aged Ubiad1Ki/Ki mice exhibited signs of opacification of the cornea, which was accompanied by hallmarks of sterol overaccumulation in the tissue. These findings not only indicate that UBIAD1 modulates ERAD of HMGCR in mice through similar mechanisms previously established in cultured cells, but they also establish Ubiad1Ki/Ki mice as a model for human SCD.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig1-v2.jpg)
+
+**Figure 1.:** (A) Amino acid sequence and predicted topology of mouse UBIAD1 protein. Asparagine-100 (N100), which corresponds to the most frequently mutated amino acid residue in SCD, is enlarged, shaded in red and indicated by an arrow. (B) Male WT, Ubiad1WT/Ki, and Ubiad1Ki/Ki littermates (8–9 weeks of age, eight mice/group) were fed an ad libitum chow diet prior to sacrifice. Livers of the mice were harvested and subjected to subcellular fractionation as described in ‘Materials and methods.’ Aliquots of resulting membrane (Memb.) and nuclear extract (N.E.) fractions (80–160 µg of total protein/lane) for each group were pooled and subjected to SDS-PAGE, followed by immunoblot analysis using antibodies against endogenous HMGCR, SREBP-1, SREBP-2, UBIAD1, Insig-1, Insig-2, calnexin, and LSD-1. Although shown in a separate panel, LSD-1 serves as a loading control for the nuclear SREBP immunoblots. The amount of hepatic HMGCR protein in Ubiad1Ki/Ki mice was determined by quantifying the band corresponding to HMGCR using ImageJ software.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Total RNA isolated from livers of mice used in Figure 1B (8 mice/group) was separately isolated. Equal amounts of RNA from the individual mice were subjected to quantitative real-time RT-PCR using primers against the indicated gene; cyclophilin mRNA was used as an invariant control. Each value represents the amount of mRNA relative to that in WT mice, which is arbitrarily defined as 1. Bars, mean ± S.E. (error bars) of data from eight mice. (B) The amount of cholesterol, triglycerides, and non-esterified fatty acids (NEFA) in livers and plasma from WT or Ubiad1 knockin mice used in Figure 1B was determined by a colorimetric assay as described in ‘Materials and methods.’ Error bars, S.E. The p value was calculated using Student’s t test: *, p ≤ 0.05. Hmgcs, HMG coenzyme A synthase; Fpps, farnesyl pyrophosphate synthase; Sqs, squalene synthase; Acs, acetyl coenzyme A synthetase; Acc1, acetyl coenzyme A carboxylase-1; Fas, fatty acid synthase; Scd-1, stearoyl coenzyme A desaturase-1; Gpat, glycerol-3-phosphate acyltransferase; Abcg5 and Abcg8, ATP-binding cassette subfamily G member 5 and 8, respectively; Ggpps, geranylgeranyl pyrophosphate synthase.
+
 ## Results
 
 Ubiad1WT/Ki heterozygous male and female mice (C57BL/6 × 129 genetic background) were crossed to obtain wild type (WT) and Ubiad1Ki/Ki littermates. Mice homozygous for the N100S knockin mutation were born at expected Mendelian ratios. WT and Ubiad1Ki/Ki littermates were externally indistinguishable and had similar body and liver weights (data not shown). Immunoblot analysis revealed that livers of male Ubiad1WT/Ki and Ubiad1Ki/Ki mice consuming chow diet ad libitum exhibited a noticeable increase (1.8- and 5.2-fold, respectively) in the amount of HMGCR protein compared to that in WT littermates (Figure 1B, lanes 1–3). However, the amount of Hmgcr mRNA was reduced approximately 40% in knockin mice (Figure 1—figure supplement 1A). UBIAD1 (N100S) protein also accumulated in livers of heterozygous and homozygous Ubiad1 knockin mice (Figure 1B, lanes 1–3); however, this was not accompanied by an increase in hepatic Ubiad1 mRNA (Figure 1—figure supplement 1A). Levels of nuclear SREBP-1 (Figure 1B, lanes 4–6) and SREBP-2 (lanes 7–9) were reduced in livers of Ubiad1WT/Ki and Ubiad1Ki/Ki mice, which coincided with reduced expression of mRNAs encoding SREBP target genes (Figure 1—figure supplement 1A). Cholesterol was slightly, but significantly increased in Ubiad1Ki/Ki livers; however, plasma cholesterol, triglycerides, and non-esterified fatty acids as well as liver triglycerides were not significantly changed between the groups of animals (Figure 1—figure supplement 1B). Similar results were observed in the analysis of female Ubiad1Ki/Ki mice (data not shown).
 
 To ensure phenotypes associated with the N100S knockin mutation were not influenced by mixed genetic background, we backcrossed BL6/129 Ubiad1Ki/Ki mice to C57BL/6J mice for at least six generations. For experiments described hereafter, Ubiad1WT/Ki heterozygous female and male mice on the BL6 background were crossed to obtain WT and Ubiad1Ki/Ki littermates. The results shown in Figure 2A reveal that male Ubiad1WT/Ki and Ubiad1Ki/Ki mice on the BL6 background accumulated hepatic HMGCR and UBIAD1 proteins (lanes 1–3), whereas levels of nuclear SREBP-1 and SREBP-2 were either unchanged (nuclear SREBP-1, lanes 4–6) or reduced (nuclear SREBP-2, lanes 7–9). HMGCR and UBIAD1 proteins accumulated and Hmgcr mRNA was down-regulated to varying degrees in other tissues of the knockin mice (Figure 2B and C). HMGCR and UBIAD1 protein accumulated to a similar extent in livers and eyes of female C57BL/6J Ubiad1Ki/Ki mice (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig2-v2.jpg)
+
+**Figure 2.:** (A and B) Eight to nine-week old male WT, Ubiad1WT/Ki, and Ubiad1Ki/Ki littermates (six mice/group) were fed an ad libitum chow diet prior to study. Aliquots of membrane (Memb.) and nuclear extract (N.E.) fractions from homogenized livers, enucleated eyes, kidneys, brains, testes, and spleens (23–50 µg of total protein/lane) were analyzed by immunoblot using antibodies against the indicated proteins. The asterisk indicates a non-specific cross-reactive band observed in the anti-HMGCR immunoblot from brain and pancreas. Although shown in separate panels, LSD-1 serves as a loading control for the nuclear SREBP-1 and SREBP-2 immunoblots. In (B), the amount of HMGCR protein in the indicated tissues from Ubiad1Ki/Ki mice was determined by quantifying the band corresponding to HMGCR using Image J software. (C) For mRNA analysis, equal amounts of RNA from the indicated tissue of individual mice were subjected to quantitative real-time RT-PCR using primers against the Hmgcr mRNA and cyclophilin mRNA as an invariant control. Error bars, S.E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Female WT, Ubiad1WT/Ki, and Ubiad1Ki/Ki littermates of animals used in Figure 2 (six mice/group, 8–9 weeks of age) were fed an ad libitum chow diet prior to study. Aliquots of membrane (Memb.) and nuclear extract (N.E.) fractions from homogenized livers (A) and enucleated eyes (B) (50–80 µg of total protein/lane) were analyzed by immunoblot using antibodies against the indicated proteins. Although shown in separate panels, LSD-1 serves as a loading control for the nuclear SREBP-1 and SREBP-2 immunoblots in (A).
+
 Table 1 shows that WT and Ubiad1Ki/Ki mice had similar body and liver weights. Plasma levels of triglycerides, cholesterol, and non-esterified fatty acids (NEFAs) were slightly reduced in Ubiad1Ki/Ki mice; however, these reductions were not significant. The knockin mice exhibited a small but significant increase in the amount of cholesterol in the liver (Table 1). We next used liquid chromatography-tandem mass spectrometry (LC-MS/MS) to measure levels of MK-4 and other nonsterol isoprenoids in livers of WT and Ubiad1Ki/Ki mice (Figure 3). The results show that levels of MK-4 were reduced 50% relative to those observed in WT animals, despite a 4.2-fold increase in the amount of hepatic UBIAD1 protein. When normalized to the amount of UBIAD1 protein, we estimate the relative level of MK-4 was reduced by more than 80% in livers of Ubiad1Ki/Ki mice. In contrast to results with MK-4, levels of geranylgeraniol (GGOH; derived from GGpp) and ubiquinone-10, were significantly increased in livers of Ubiad1Ki/Ki mice. This was accompanied by a small, but significant decrease in plant-derived phylloquinone (vitamin K1); bacterial-derived vitamin K2 subtype menaquinone-7 (MK-7) remained unchanged in the knockin livers. MK-4 was reduced, whereas levels of GGOH and/or ubiquinone-10 were increased in kidneys, brains, spleens, and testes of Ubiad1Ki/Ki mice (Figure 3—figure supplement 1).
+
+**Table 1.**
+ Comparison of wild type (WT) and ubiad1ki/ki mice.Male WT and Ubiad1Ki/Ki littermates (8–9 weeks of age, eight mice/group) were fed an ad libitum chow diet prior to study. WT mice were littermates of Ubiad1Ki/Ki mice. Each value represents the mean ±S.E. of 8 values. The p value was calculated using Student’s t test: *, p≤0.05.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>WT</th>
+      <th>Ubiad1Ki/Ki</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body Weight (g)</td>
+      <td>19.8 ± 0.4</td>
+      <td>20.1 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>Liver Weight (g)</td>
+      <td>1.0 ± 0.05</td>
+      <td>0.9 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Plasma Triglycerides (mg/dL)</td>
+      <td>123.6 ± 31.2</td>
+      <td>94.5 ± 5.7</td>
+    </tr>
+    <tr>
+      <td>Plasma Cholesterol (mg/dL)</td>
+      <td>100.4 ± 8.4</td>
+      <td>90.3 ± 9.0</td>
+    </tr>
+    <tr>
+      <td>Plasma Nonesterified Fatty Acids (mEq/L)</td>
+      <td>1.3 ± 0.2</td>
+      <td>1.1 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Liver Triglycerides (mg/g)</td>
+      <td>9.61 ± 1.8</td>
+      <td>16.3 ± 5.0</td>
+    </tr>
+    <tr>
+      <td>Liver Cholesterol (mg/g)</td>
+      <td>1.17 ± 0.06</td>
+      <td>1.65 ± 0.24*</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig3-v2.jpg)
+
+**Figure 3.:** Male mice (10–12 weeks of age, five mice/group) were fed ad libitum a chow diet prior to study. Livers were collected for subcellular fractionation and immunoblot analysis of resulting membrane fractions (80 µg total protein/lane) using antibodies against the indicated proteins or to determine the amount of menaquinone-4 (MK-4), geranylgeraniol, ubiquinone-10, phylloquinone, and menaquinone-7 (MK-7) by LC-MS/MS as described in ‘Materials and methods.’ The relative amount of hepatic MK-4 in Ubiad1Ki/Ki mice was determined by normalizing the amount of the vitamin K2 subtype to the amount of UBIAD1 protein, which was quantified using ImageJ software. Error bars, S.E. The p value was calculated using Student’s t test: *, p < 0.05; **, p < 0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The indicated tissues from mice used in Figure 3 were collected and the amount of menaquinone-4 (MK-4), geranylgeraniol, and ubiquinone-10 by LC-MS/MS as described in ‘Material and methods.’ Error bars, S.E. The p value was calculated using Student’s t test: *, p < 0.05; **, p < 0.01.
 
 To directly study the regulation of HMGCR in the presence of UBIAD1 (N100S), we established lines of mouse embryonic fibroblasts (MEFs) from WT and Ubiad1Ki/Ki littermates. A low level of HMGCR and UBIAD1 protein was detected in membrane fractions isolated from WT MEFs cultured in sterol and nonsterol isoprenoid-replete medium containing fetal calf serum (Figure 4A, lane 1). Both proteins markedly accumulated in MEFs derived from Ubiad1Ki/Ki mice (lane 2). In contrast, levels of nuclear SREBP-1 and SREBP-2 were reduced in Ubiad1Ki/Ki MEFs (Figure 4A, compare lanes 3 and 4), which is consistent with reduced levels of Hmgcr mRNA and increased levels of intracellular cholesterol (Figure 4B). We next compared sterol-accelerated ERAD of HMGCR in Ubiad1Ki/Ki MEFs to that in MEFs derived from HmgcrKi/Ki mice, which harbor knockin mutations in HMGCR that prevent its sterol-induced ubiquitination (Hwang et al., 2016). Cells were first depleted of isoprenoids through incubation in medium containing lipoprotein-deficient serum and the HMGCR inhibitor compactin to enhance expression of HMGCR. The cells were subsequently treated in the absence or presence of the oxysterol 25-hydroxycholesterol (25-HC) prior to harvest, subcellular fractionation, and immunoblot analysis. The results show that 25-HC caused the disappearance of HMGCR from membranes of WT MEFs as expected (Figure 4C, lanes 1 and 2; 5 and 6). However, this disappearance was blunted in membranes from either Ubiad1Ki/Ki or HmgcrKi/Ki MEFs (lanes 3 and 4; 7 and 8). Despite resistance of HMGCR to sterol-accelerated ERAD, the experiment of Figure 4D shows that sterols continued to stimulate HMGCR ubiquitination in Ubiad1Ki/Ki MEFs. Isoprenoid-depleted cells were treated with the proteasome inhibitor MG-132 (to block degradation of ubiquitinated HMGCR) in the absence or presence of 25-HC. Cells were then harvested for preparation of detergent lysates that were immunoprecipitated with polyclonal anti-HMGCR. 25-HC caused HMGCR to become ubiquitinated in WT and Ubiad1Ki/Ki MEFs, as indicated by smears of reactivity in anti-ubiquitin immunoblots of the HMGCR immunoprecipitates (Figure 4D, lanes 1–6). As expected, HMGCR resisted 25-HC-induced ubiquitination in MEFs derived from HmgcrKi/Ki mice (compare lanes 7 and 8 with lanes 9–12).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig4-v2.jpg)
 
-**Figure 4.:** Ubiad1 mice.Ki/KiMEFs from WT and Ubiad1 mice were set up for experiments on day 0 at 2 × 10Ki/Ki5 cells per 10 cm dish in MEF medium supplemented with 10% fetal calf serum (FCS). (A) On day 3, cells were harvested for subcellular fractionation. Aliquots of resulting membrane and nuclear extract fractions (35–50 µg total protein/lane) were subjected to SDS-PAGE, followed by immunoblot analysis using antibodies against the indicated proteins. (B) On day 3, cells were harvested for measurement of Hmgcr mRNA levels by quantitative RT-PCR and total cholesterol levels using a colorimetric assay as described in ‘Materials and methods.’ (C and D) On day 2, cells were depleted of isoprenoids through incubation for 16 hr at 37°C in MEF medium containing 10% lipoprotein-deficient serum, 10 µM sodium compactin, and 50 µM sodium mevalonate. The cells were subsequently treated with 1 µg/ml 25-HC as indicated; in (D), the cells also received 10 µM MG-132. (C) After 4 hr at 37°C, cells were harvested for preparation of membrane and nuclear extract fractions (35–50 µg total protein/lane) that were analyzed by immunoblot with antibodies against the indicated protein. (D) Following incubation for 1 hr at 37°C, cells were harvested, lysed in detergent-containing buffer, and immunoprecipitated with 30 µg polyclonal anti-HMGCR antibodies. Immunoprecipitated material was subjected to SDS-PAGE and immunoblot analysis with IgG-A9 (against HMGCR) and IgG-P4D1 (against ubiquitin).
+**Figure 4.:** MEFs from WT and Ubiad1Ki/Ki mice were set up for experiments on day 0 at 2 × 105 cells per 10 cm dish in MEF medium supplemented with 10% fetal calf serum (FCS). (A) On day 3, cells were harvested for subcellular fractionation. Aliquots of resulting membrane and nuclear extract fractions (35–50 µg total protein/lane) were subjected to SDS-PAGE, followed by immunoblot analysis using antibodies against the indicated proteins. (B) On day 3, cells were harvested for measurement of Hmgcr mRNA levels by quantitative RT-PCR and total cholesterol levels using a colorimetric assay as described in ‘Materials and methods.’ (C and D) On day 2, cells were depleted of isoprenoids through incubation for 16 hr at 37°C in MEF medium containing 10% lipoprotein-deficient serum, 10 µM sodium compactin, and 50 µM sodium mevalonate. The cells were subsequently treated with 1 µg/ml 25-HC as indicated; in (D), the cells also received 10 µM MG-132. (C) After 4 hr at 37°C, cells were harvested for preparation of membrane and nuclear extract fractions (35–50 µg total protein/lane) that were analyzed by immunoblot with antibodies against the indicated protein. (D) Following incubation for 1 hr at 37°C, cells were harvested, lysed in detergent-containing buffer, and immunoprecipitated with 30 µg polyclonal anti-HMGCR antibodies. Immunoprecipitated material was subjected to SDS-PAGE and immunoblot analysis with IgG-A9 (against HMGCR) and IgG-P4D1 (against ubiquitin).
 
 Figure 5A compares expression of HMGCR in WT and Ubiad1Ki/Ki mice fed a chow diet supplemented with 1% cholesterol. The results show that cholesterol feeding led to reduced expression of HMGCR protein in membranes isolated from livers of WT mice (Figure 5A, lane 2); however, a significant amount of HMGCR protein remained in hepatic membranes of cholesterol-fed Ubiad1Ki/Ki mice (lane 4). The feeding regimen reduced the amount of Insig-1 protein (lanes 2 and 4) and nuclear SREBP-2 (lanes 6 and 8) in both WT and Ubiad1Ki/Ki livers. Dietary cholesterol also reduced mRNAs encoding HMGCR and other SREBP targets in livers of WT and Ubiad1Ki/Ki mice (Figure 5—figure supplement 1). The membrane-bound precursor and nuclear forms of SREBP-1 were induced by cholesterol feeding in livers of both lines of mice (lanes 6 and 8). This induction can be attributed to sterol-mediated activation of liver x receptors (LXRs) that modulate expression of SREBP-1c, the major SREBP-1 isoform in the mouse liver (Repa et al., 2000; Liang et al., 2002). The mRNAs encoding SREBP-1c and two other LXR targets, ABCG5 and ABCG8, were enhanced in WT and Ubiad1Ki/Ki mice fed cholesterol (Figure 5—figure supplement 1). In contrast to results in the liver, cholesterol-feeding failed to down-regulate levels of HMGCR protein in eyes of Ubiad1Ki/Ki mice (Figure 5B, lanes 3 and 4); mRNAs encoding both SREBPs and their targets were also unchanged in eyes of cholesterol-fed knockin animals (data not shown).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig5-v2.jpg)
+
+**Figure 5.:** Male mice (12–13 weeks of age, five mice/group) were fed an ad libitum chow diet supplemented with the indicated amount of cholesterol for 5 days. Aliquots of membrane (Memb.) and nuclear extract (N.E.) fractions from homogenized livers (A and C) or enucleated eyes (B) (70 µg protein/lane) were analyzed by immunoblot analysis with antibodies against the indicated proteins as described in the legend to Figure 1. The asterisk denotes a nonspecific band observed in the nuclear SREBP-2 immunoblot. (D) For mRNA analysis, equal amounts of RNA from livers of mice were subjected to quantitative real-time RT-PCR using primers against the indicated mRNAs and cyclophilin mRNA as an invariant control. Error bars, S.E. Pcsk9, proprotein convertase subtilisin/kexin type 9.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Total RNA from livers of mice used in Figure 5A (5 mice/group) was separately isolated. Equal amounts of RNA from the individual mice were subjected to quantitative real-time RT-PCR using primers against the indicated gene; cyclophilin mRNA was used as an invariant control. Each value represents the amount of mRNA relative to that in WT mice fed a chow diet, which was arbitrarily defined as 1. Bars, mean ± S.E. (error bars) of data from five mice. ApoE, apolipoprotein E; Acat-1, acyl-coenyzme A:cholesterol acyltransferase-1.
 
 In Figure 5C, we compared cholesterol-mediated regulation of hepatic HMGCR in Ubiad1Ki/Ki and HmgcrKi/Ki mice. As little as 0.1% cholesterol caused a significant decrease in the amount of HMGCR in hepatic membranes from WT controls (Figure 5C, lanes b and j). HMGCR was partially resistant to 0.1% cholesterol in livers of HmgcrKi/Ki mice (compare lanes e and f); however, higher concentrations of cholesterol (0.3% and 1%) caused complete disappearance of HMGCR from membranes (lanes g and h). The resistance of HMGCR to cholesterol feeding was more pronounced in Ubiad1Ki/Ki mice; levels of the protein persisted when the animals were fed 0.1–1% cholesterol (Figure 5C, compare lane m with lanes n-p). Importantly, cholesterol-feeding continued to suppress levels of nuclear SREBP-2 in livers of HmgcrKi/Ki and Ubiad1Ki/Ki mice as well their WT littermates (compare lanes a-d with e-h and i-l with m-p). The mRNAs encoding SREBP-2 target genes were also reduced in livers of the cholesterol-fed mice (Figure 5D).
 
 We next evaluated the effect of cholesterol depletion on HMGCR levels in WT and Ubiad1Ki/Ki mice. Cholesterol depletion using lovastatin, a competitive inhibitor of HMGCR, led to the dose-dependent accumulation of HMGCR protein in livers of WT animals (Figure 6A, lanes a-d). Lovastatin also caused HMGCR to accumulate in livers of Ubiad1Ki/Ki mice (lanes e-h) (see Figure 6B for quantification). The precursor and nuclear forms of SREBP-2 were induced by lovastatin, whereas those of SREBP-1 were reduced by the treatment in both WT and Ubiad1Ki/Ki mice (lanes i-p). The mRNAs for SREBP-2 and its target genes (including HMGCR) were elevated in livers of lovastatin-treated animals; mRNA for SREBP-1c was reduced by the inhibitor (Figure 6—figure supplement 1). HMGCR protein was also increased in the eyes of lovastatin-treated WT mice; however, this increase required the highest concentration (0.2%) of the drug (Figure 6C, lanes a-d).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig6-v2.jpg)
+
+**Figure 6.:** Male mice (6–8 weeks of age, five mice/group) were fed an ad libitum chow diet supplemented with the indicated amount (A and C) or 0.2% (D) lovastatin for 5 days. (A and C) Aliquots of membrane and nuclear extract fractions from homogenized livers (A) or enucleated eyes (C) (70 µg protein/lane) were analyzed by immunoblot analysis with antibodies against the indicated proteins. In (B), the amount of HMGCR protein in livers of Ubiad1Ki/Ki mice shown in (A) was determined by quantifying the band corresponding to HMGCR using Image J software and normalizing to the amount of the protein in untreated WT controls. (D) Post nuclear supernatants (PNS) obtained from liver homogenates were fractionated on a discontinuous sucrose gradient (7.5–45%) that yielded a light membrane fraction enriched in Golgi and a heavy membrane fraction enriched in ER. Aliquots of the homogenates (lysate), nuclear extracts (N.E.), PNS, Golgi-enriched membranes, and ER-enriched membranes were subjected to SDS-PAGE, followed by immunoblot analysis with antibodies against the indicated proteins.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Total RNA from livers of mice used in Figure 6A (5 mice/group) was separately isolated. Equal amounts of RNA from the individual mice were subjected to quantitative real-time RT-PCR using primers against the indicated gene; cyclophilin mRNA was used as an invariant control. Each value represents the amount of mRNA relative to that in WT mice fed a chow diet, which was arbitrarily defined as 1. Bars, mean ± S.E. (error bars) of data from five mice.
+
 In the experiment of Figure 6D, we analyzed the subcellular localization of UBIAD1 in WT and Ubiad1Ki/Ki mice using a fractionation scheme previously utilized to isolate ER membranes from Chinese hamster ovary-K1 cells (Radhakrishnan et al., 2008). Liver homogenates (lysates) were first subjected to centrifugation at 3,000 X g to eliminate unbroken cells and nuclei. The resulting post-nuclear supernatants (PNS) were then applied to discontinuous sucrose gradients and centrifuged at 100,000 X g, generating two distinct membrane layers: a light membrane fraction enriched in Golgi and a heavy membrane fraction enriched in ER. Immunoblot analysis revealed the presence of UBIAD1 and the Golgi membrane protein GM-130 in the light, Golgi-enriched membrane fraction obtained from livers of WT mice fed a chow diet (Figure 6D, lane 4). ER-localized calnexin was observed in the ER-enriched fraction as expected (lane 5). When the mice were fed the chow diet supplemented with lovastatin (0.2%), we observed a shift in the localization of UBIAD1 from the Golgi-enriched fraction to the ER (Figure 6D, compare lanes 9 and 10). GM-130 remained in the Golgi-enriched fraction (lane 9) and calnexin continued to localize to the ER (lane 10) of livers from lovastatin-treated mice. In contrast to results with WT mice, UBIAD1 was concentrated in ER-enriched hepatic membranes of chow-fed Ubiad1Ki/Ki mice (Figure 6D, compare lanes 4 and 5 with lanes 14 and 15). The ER localization of UBIAD1 did not change when the knockin mice were challenged with lovastatin (lanes 19 and 20). Importantly, calnexin and GM-130 were localized to ER- and Golgi-enriched membranes, respectively, regardless of feeding regimen (compare lanes 14 and 15 with lanes 19 and 20).
 
 Stereomicroscopic examinations revealed that 8–12 week-old Ubiad1Ki/Ki mice similar to those analyzed in Figures 2, 3, 5 and 6 failed to exhibit significant corneal opacification that characterizes human SCD (data not shown). However, 46% (11/24) of the knockin mice exhibited signs of corneal opacification at 50 weeks of age (Figure 7—figure supplement 1). One of these animals manifested signs of bilateral opacification of the cornea (Figure 7A). None of the aged WT mice developed corneal opacification; heterozygous knockin mice were not examined (data not shown). Immunohistochemical staining with anti-HMGCR revealed a marked increase in the amount of HMGCR protein in corneas of Ubiad1Ki/Ki mice compared to their WT littermates (Figure 7B). The accumulation of HMGCR protein in Ubiad1Ki/Ki corneas was accompanied by reduced levels of mRNAs encoding SREBP-2, HMGCR, and other cholesterol biosynthetic enzymes (Figure 7C). In contrast, expression of mRNAs encoding the LXR targets ABCG5, ABCG8, and ABCA1 was enhanced in Ubiad1Ki/Ki corneas. Although the amount of total cholesterol remained unchanged in corneas of WT and Ubiad1Ki/Ki mice, we measured a small, but significant increase in free cholesterol in the knockin mice (Figure 7D). Moreover, significant increases in the amount of several sterol intermediates of cholesterol synthesis including lanosterol, follicular fluid meiosis-activating sterol (FFMAS), 7- and 8-dehydrocholesterol, desmosterol, and 7-dehydrodesmosterol were observed in corneas from Ubiad1Ki/Ki mice (Figure 7E).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig7-v2.jpg)
+
+**Figure 7.:** (A) Male and female mice (15 WT, 24 Ubiad1Ki/Ki, 50 weeks of age) consuming an ad libitum chow diet were analyzed by stereomicroscopic examination. Corneal opacification is indicated by white arrows. (B–E) Mice analyzed in (A) were sacrificed, corneas were then harvested and analyzed by immunohistochemical staining with anti-HMGCR polyclonal antibodies (B), quantitative RT-PCR (C), and LC-MS/MS (D and E) as described in the legend to Figure 1 and ‘Materials and methods.’ Error bars, S.E. The p value was calculated using Student’s t test: *, p < 0.05; **, p < 0.01; ***, p 0.005. Dhcr7, 7-dehydrocholesterol reductase; Dhcr24, 24-dehydrocholesterol reductase; 7-DehyDes., 7-dehydrodesmosterol; 8-Dehydrochol., 8-dehydrocholesterol; 7-Dehydrochol., 7-dehydrocholesterol.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44396/elife-44396-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Female mice (15 WT, 24 Ubiad1Ki/Ki, 50 weeks of age) consuming an ad libitum chow diet were analyzed by stereomicroscopic examinations as described in Figure 7. Corneal opacification is indicated by white arrows.
 
 ## Discussion
 
@@ -78,19 +177,468 @@ The significance of the HMGCR regulatory system is evidenced by the widespread u
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse/Ubiad1Ki/Ki (UBIAD1 (N100S)):C57BL/6J</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Heterozygous knockin mice harboring mutations in the endogenous Ubiad1 gene that change Asparagine-100 to a Serine residue</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse/Ubiad1Ki/Ki (UBIAD1 (N100S)): C57BL/6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Homozygous knockin mice harboring mutations in the endogenous Ubiad1 gene that change Asparagine-100 to a Serine residue</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse/HmgcrKi/Ki (HMGCR K89R/ K248R):C57BL/6</td>
+      <td>PMID: 27129778</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Mouse Embryonic Fibroblast- Ubiad1WT/WT</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Mouse embryonic fibroblasts from wild type C57BL/ 6 mice</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Mouse Embryonic Fibroblast- Ubiad1Ki/Ki</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Mouse embryonic fibroblasts from Ubiad1Ki/Ki C57BL/6 mice</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Mouse Embryonic Fibroblast- HmgcrWT/WT</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Mouse embryonic fibroblasts from wild type C57BL/ 6 mice</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Mouse Embryonic Fibroblast- Hmgcr Ki/Ki</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Mouse embryonic fibroblasts from HmgcrKi/Ki C57BL/6 mice</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-SREBP-1</td>
+      <td>PMID: 28244871</td>
+      <td>IgG-20B12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-SREBP-2</td>
+      <td>PMID: 25896350</td>
+      <td>IgG-22D5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-UBIAD1</td>
+      <td>This paper</td>
+      <td>IgG-205</td>
+      <td>Rabbit polyclonal antibody raised against amino acids 2–21 of mouse UBIAD1; used at 1–5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti- HMGCR</td>
+      <td>PMID: 27129778</td>
+      <td>IgG-839c</td>
+      <td>used at 1–5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- HMGCR</td>
+      <td>PMID: 22143767</td>
+      <td>IgG-A9</td>
+      <td>used at 1–5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti- Insig-1</td>
+      <td>PMID: 27129778</td>
+      <td>anti-Insig-1</td>
+      <td>used at 1:1000 dilution for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Insig-2</td>
+      <td>This paper</td>
+      <td>IgG-492</td>
+      <td>Rabbit polyclonal antibody raised against a C-terminal peptide (CKVIPEKSHQE) of hamster Insig-2; used at 5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-UBXD8</td>
+      <td>PMID: 27129778</td>
+      <td>IgG-819</td>
+      <td>used at 1–5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Calnexin</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#NB100-1965; RRID:AB_10002123</td>
+      <td>used at 1–5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GM130</td>
+      <td>Abcam</td>
+      <td>Cat#ab30637; RRID:AB_732675</td>
+      <td>used at 1–5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-LSD-1</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#2139; RRID:AB_2070135</td>
+      <td>used at 1–5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ubiquitin (IgG-P4D1)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#SC8017;RRID:AB_628423</td>
+      <td>used at 1–5 µg/ml for immunoblots</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ubiad1Ki/Ki genotyping primers: Forward, GGAACACTTGGCTCTCATCT; Reverse, GGGAGCAGTGTTCATAATCC</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Genotyping was determined by PCR analysis of genomic DNA prepared from tails of mice.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HmgcrKi/Ki genotyping primers: K89R- Forward, GTCCATGAACATGTTCACCG; Reverse, CAGCACGTCCTATTGGCAGA K248R – Forward, TCGGTGATGTTCCAGTCTTC; Reverse, GGTGGCAAACACCTTGTATC</td>
+      <td>PMID: 27129778</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>UBIAD1 Forward, GACAGAACTTTGGTGGACAGAATTC; Reverse, CAGCCCAAGGTGTAGAGGAAGA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>SREBP-1a Forward, GGCCGAGATGTGCGAACT; Reverse, TTGTTGATGAGCTGGAGCATGT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>SREBP-1c Forward, GGAGCCATGGATTGCACATT; Reverse, GGCCCGGGAAGTCACTGT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>SREBP-2 Forward, GCGTTCTGGAGACCATGGA; Reverse, ACAAAGTTGCTCTGAAAACAAATCA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>HMGCR Forward, CTTGTGGAATGCCTTGTGATTG; Reverse, AGCCGAAGCAGCACATGAT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>Insig-1 Forward, TCACAGTGACTGAGCTTCAGCA; Reverse, TCATCTTCATCACACCCAGGAC</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>Insig-2a Forward, CCCTCAATGAATGTACTGAAGGATT; Reverse, TGTGAAGTGAAGCAGACCAATGT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>Insig-2b Forward, CCGGGCAGAGCTCAGGAT; Reverse, GAAGCAGACCAATGTTTCAATGG</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>SCAP Forward, ATTTGCTCACCGTGGAGATGTT; Reverse, GAAGTCATCCAGGCCACTACTAATG</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>HMGCS Forward, GCCGTGAACTGGGTCGAA; Reverse, GCATATATAGCAATGTCTCCTGCAA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>FPPS Forward, ATGGAGATGGGCGAGTTCTTC; Reverse, CCGACCTTTCCCGTCACA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>SqS Forward, CCAACTCAATGGGTCTGTTCCT; Reverse, TGGCTTAGCAAAGTCTTCCAACT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>LDLR Forward, AGGCTGTGGGCTCCATAGG; Reverse, TGCGGTCCAGGGTCATCT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>PCSK9 Forward, CAGGCGGCCAGTGTCTATG; Reverse, GCTCCTTGATTTTGCATTCCA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>ACS Forward, GCTGCCGACGGGATCAG; Reverse, TCCAGACACATTGAGCATGTCAT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (qRT-PCR)</td>
+      <td>ACC1 Forward, TGGACAGACTGATCGCAGAGAAAG; Reverse, TGGAGAGCCCCACACACA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (qRT-PCR)</td>
+      <td>FAS Forward, GCTGCGGAAACTTCAGGAAAT; Reverse, AGAGACGTGTCACTCCTGGACTT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (qRT-PCR)</td>
+      <td>SCD1 Forward, CCGGAGACCCCTTAGATCGA; Reverse, TAGCCTGTAAAAGATTTCTGCAAACC</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (qRT-PCR)</td>
+      <td>GPAT Forward, CAACACCATCCCCGACATC; Reverse, GTGACCTTCGATTATGCGATCA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (qRT-PCR)</td>
+      <td>LXRα Forward, TCTGGAGACGTCACGGAGGTA; Reverse, CCCGGTTGTAACTGAAGTCCTT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (qRT-PCR)</td>
+      <td>ABCG5 Forward, TGGATCCAACACCTCTATGCTAAA; Reverse, GGCAGGTTTTCTCGATGAACTG</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (qRT-PCR)</td>
+      <td>ABCG8 Forward, TGCCCACCTTCCACATGTC; Reverse, ATGAAGCCGGCAGTAAGGTAGA</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (qRT-PCR)</td>
+      <td>GGPS Forward, CGTCTACTTCCTTGGACTGGAAA; Reverse, AGCTGGCGTGTGAAAAGCTT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent (qRT-PCR)</td>
+      <td>Cyclophilin Forward, TGGAGAGCACCAAGACAGACA; Reverse, TGCCGGAGTCGACAATGAT</td>
+      <td>Integrated DNA Technologies</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Reverse Transcription</td>
+      <td>Applied Biosystems</td>
+      <td>Cat#N8080234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Power SYBR Green PCR Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>Cat#4367659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cholesterol/ Cholesterol Ester Assay Kit - Quantitation</td>
+      <td>Abcam</td>
+      <td>Cat#ab65359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td rowspan="2">Cholesterol</td>
+      <td>Bio-Serv;</td>
+      <td>Cat#5180;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C8667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Coenzyme Q-10</td>
+      <td>Cerilliant</td>
+      <td>Cat#V-060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geranylgeraniol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#G3278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geranylgeranyl pyrophosphate</td>
+      <td>Cayman Chemical Company</td>
+      <td>Cat#63330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lovastatin</td>
+      <td>Abblis Chemicals LLC, Houston, TX</td>
+      <td>Cat#AB1004848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td rowspan="2">Menaquinone-4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#809896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cerilliant</td>
+      <td>Cat#V-031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Menaquinone-7</td>
+      <td>Cerilliant</td>
+      <td>Cat#V-044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phylloquinone (Vitamin K1)</td>
+      <td>Cerilliant</td>
+      <td>Cat#V-030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>25-Hydroxycholesterol</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#700019P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio v5.0</td>
+      <td>LiCor Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J (Fiji)</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Ubiad1Ki/Ki mice, which harbor a nucleotide substitution in the Ubiad1 gene that changes asparagine-100 to a serine residue (N100S), were generated by the Gene Targeting and Transgenic Facility at the Howard Hughes Medical Institute Janelia Research Campus (Ashburn, VA). Ubiad1WT/WT and Ubiad1Ki/Ki littermates were obtained for experiments from intercrosses of Ubiad1WT/Ki male and female mice that were hybrids of C57BL/6J and 129Sv/Ev strains. Ubiad1Ki/Ki mice on the mixed BL6/129 background were backcrossed to C57BL/6J mice for at least six generations. Intercrosses of Ubiad1WT/Ki male and female mice on the BL6 background were conducted to obtain Ubiad1WT/WT and Ubiad1Ki/Ki littermates for experiments. HmgcrKi/Ki mice harbor homozygous knockin mutations in which lysine residues 89 and 248 are replaced with arginines (Hwang et al., 2016). All mice were housed in colony cages with a 12 hr light/12 hr dark cycle and fed Teklad Mouse/Rat diet 2018 from Harlan Teklad (Madison, WI). Genomic DNA was extracted from tails of Ubiad1Ki/Ki and HmgcrKi/Ki mice using DNeasy Blood and Tissue kit (Qiagen, Venlo, Netherlands) according to the manufacturer’s protocol. To genotype Ubiad1Ki/Ki mice, genomic DNA from tails was used for PCR with the following primers: Forward, GGAACACTTGGCTCTCATCT; Reverse, GGGAGCAGTGTTCATAATCC. HmgcrKi/Ki mice were genotyped as described previously (Hwang et al., 2016). The levels of plasma and liver cholesterol and triglycerides were measured by the Metabolic Phenotyping Core at the University of Texas Southwestern Medical Center (UTSWMC) in blood drawn from the vena cava after mice were anesthetized in a bell-jar atmosphere containing isoflurane. For the cholesterol feeding studies, mice were fed a chow diet (Teklad Mouse/Rat 2018, 0% cholesterol) or chow diet supplemented with 0.1, 0.3, or 1% cholesterol for 5 days prior to study. For lovastatin feeding studies, mice were fed Teklad Mouse/Rat diet (Harlan Teklad Premier Laboratory Diets, Madison, WI) or the identical diet supplemented with 0.01, 0.05, or 0.2% lovastatin (Abblis Chemicals LLC, Houston, TX). All animal experiments were performed with the approval of the Institutional Animal Care and Use Committee at UTSWMC.
 
-## Quantitative Real-Time PCR
+### Quantitative Real-Time PCR
 
 Total RNA was prepared from mouse tissues using the RNA STAT-60 kit (TEL-TEST ‘B’, Friendswood, TX). Equal amounts of RNA from individual mice were treated with DNase I (DNA-free, Ambion/Life Technologies, Grand Island, NY). First strand cDNA was synthesized from 10 µg of DNase I-treated total RNA with random hexamer primers using TaqMan Reverse Transcription Reagents (Applied Biosystems/Roche, Branchburg, NJ). Specific primers for each gene were designed using Primer Express software (Life Technologies). The real-time RT-PCR reaction was set up in a final volume of 20 µl containing 20 ng of reverse-transcribed total RNA, 167 nM of the forward and reverse primers, and 10 µl of 2X SYBR Green PCR Master Mix (Life Technologies). The relative amount of all mRNAs was calculated using the comparative threshold cycle (CT) method. Mouse cyclophilin mRNA was used as the invariant control.
 
-## Generation of Mouse Embryonic Fibroblasts (MEFs)
+### Generation of Mouse Embryonic Fibroblasts (MEFs)
 
 The protocol for establishing MEFs from Ubiad1Ki/Ki and HmgcrKi/Ki mice was adapted from that described previously (Jozefczuk et al., 2012; Cautivo et al., 2016). Briefly, pregnant Ubiad1+/Ki and Hmgcr+/Ki female mice were sacrificed 13.5 days post coitum and uterine horns were harvested in cold PBS. In a tissue culture hood under aseptic conditions, the uterine horns were placed into a Petri dish and each embryo was separated from its placenta and embryonic sac. The head of embryo was removed and saved for genotyping. The remainder of the embryo was washed with PBS and minced. The minced tissues were incubated in the presence of 0.05% Trypsin/EDTA and DNase I for 30 min at 37°C with intermittent agitation. The reaction was stopped by adding MEF media containing DMEM 4.5 g/L glucose, 10% FCS, and 1% Penicillin/streptomycin (10,000 U/ml). Cells were pelleted at 300 X g for 5 min and plated onto 0.2% gelatin coated dishes; these cells were designated passage 0 and frozen. All MEFs tested negative for mycoplasma contamination. Passages 2–5 were used for experiments. The level of intracellular cholesterol in Ubiad1WT/WT and Ubiad1Ki/Ki MEFs was determined using Cholesterol/Cholesterol Ester Assay Kit (Abcam).
 
-## Subcellular Fractionation, Immunoblot Analysis, and Immunohistochemistry
+### Subcellular Fractionation, Immunoblot Analysis, and Immunohistochemistry
 
 Approximately 50 mg of frozen liver was homogenized in 350 µl buffer (10 mM HEPES-KOH, pH 7.6, 1.5 mM MgCl2, 10 mM KCl, 5 mM EDTA, 5 mM EGTA, and 250 mM sucrose) supplemented with a protease inhibitor cocktail consisting of 0.1 mM leupeptin, 5 mM dithiothreitol, 1 mM PMSF, 0.5 mM Pefabloc, 5 µg/ml pepstatin A, 25 µg/ml N-acetyl-leu-leu-norleucinal, and 10 µg/ml aprotinin. The homogenates were then passed through a 22-gauge needle 10–15 times and subjected to centrifugation at 1000 X g for 5 min at 4°C. The 1000 X g pellet was resuspended in 500 µl of buffer (20 mM HEPES-KOH, pH 7.6, 2.5% (v/v) glycerol, 0.42 M NaCl, 1.5 mM MgCl2, 1 mM EDTA, 1 mM EGTA) supplemented with the protease inhibitor cocktail, rotated for 30 min at 4°C, and centrifuged at 100,000 X g for 30 min at 4°C. The supernatant from this spin was precipitated with 1.5 ml cold acetone at −20°C for at least 30 min; the precipitated material was collected by centrifugation, resuspended in SDS-lysis buffer (10 mM Tris-HCl, pH 6.8, 1% (w/v) SDS, 100 mM NaCl, 1 mM EDTA, and 1 mM EGTA), and designated the nuclear extract fraction. The post-nuclear supernatant from the original spin was used to prepare the membrane fraction by centrifugation at 100,000 X g for 30 min at 4°C. Each membrane fraction was resuspended in 100 µl SDS-lysis buffer.
 
@@ -100,7 +648,7 @@ To obtain hepatic Golgi- and ER-enriched membrane fractions, approximately 150 m
 
 Corneas from Ubiad1WT/WT and Ubiad1Ki/Ki mice were collected and fixed in 10% neutral-buffered formalin, followed by paraffin embedding and sectioning. The sections were analyzed by immunohistochemistry with polyclonal IgG-839c (against HMGCR) as described previously (Evers et al., 2010).
 
-## Lipid Analysis
+### Lipid Analysis
 
 Cholesterol and sterol biosynthetic intermediates were measured using LC-MS/MS according to the method of McDonald et al. (McDonald et al., 2012; Mitsche et al., 2015). Briefly, sterols were isolated on an LC gradient (Shimadzu LC-20) and detected using the MRM pair on a triple quadrapole MS (ABSciex 4000 q-TRAP) and quantified against authentic sterol standards (Avanti Polar Lipids, Alabaster, AL).
 
@@ -109,5 +657,76 @@ Nonsterol isoprenoids were measured as follows. Approximately 100 mg of tissue w
 Analytes were measured using Shimadzu LC-20XR high-performance liquid-chromatography (HPLC) coupled to a SCIX API 5000 triple quadrupole mass spectrometer (Shimadzu, Columbia Maryland; SCIEX, Framingham, MA). A 10 µL sample was injected onto an Agilent Poroshel EC-C18 (Agilent, Santa Clara, CA; 150 × 2.1 mm, 2.7 µm) and resolved with a ternary gradient using A 90% methanol, B methanol, and C dichloromethane (DCM). A and B also contained 0.1% acetic acid. The gradient began at 100% A, increased to 100% B over 2 min, held at 100% B for 0.25 min, then increased to 3:7 (B:C) over 6.75 min. The column was re-equilibrated first with 100% B for 2 min, then 100% A for 1 min. Flow rate was 0.5 mL/min and the column was maintained at 35°C. Analytes were ionized using atmospheric pressure chemical ionization (APCI) at 400°C and detected using multiple reaction monitoring (MRM).
 
 Masses and other MS parameters are given below :
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Q1</th>
+      <th>Q3</th>
+      <th>DP</th>
+      <th>CE</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GGOH</td>
+      <td>273</td>
+      <td>71</td>
+      <td>77</td>
+      <td>48</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>MK-4</td>
+      <td>445.5</td>
+      <td>187</td>
+      <td>59</td>
+      <td>40</td>
+      <td>Cerilliant</td>
+    </tr>
+    <tr>
+      <td>PK</td>
+      <td>451.3</td>
+      <td>187</td>
+      <td>59</td>
+      <td>40</td>
+      <td>Cerilliant</td>
+    </tr>
+    <tr>
+      <td>d8-MK4</td>
+      <td>452.4</td>
+      <td>94</td>
+      <td>59</td>
+      <td>50</td>
+      <td>Sigma (catalog #737836)</td>
+    </tr>
+    <tr>
+      <td>MK7</td>
+      <td>649.5</td>
+      <td>187</td>
+      <td>59</td>
+      <td>40</td>
+      <td>Cerilliant</td>
+    </tr>
+    <tr>
+      <td>CoQ-10</td>
+      <td>863.7</td>
+      <td>197</td>
+      <td>59</td>
+      <td>44</td>
+      <td>Cerilliant</td>
+    </tr>
+    <tr>
+      <td>d5-GGOH</td>
+      <td>278.3</td>
+      <td>81</td>
+      <td>77</td>
+      <td>48</td>
+      <td>Avanti Polar Lipids(custom-synthesized)</td>
+    </tr>
+  </tbody>
+</table>
 
 Reproducibility of data – All results were confirmed in at least two independent experiments conducted on different days using different animals and batches of cells.

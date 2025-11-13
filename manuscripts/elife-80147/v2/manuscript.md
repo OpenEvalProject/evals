@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05p1n6x86 DNA motors Group, MRC London Institute of Medical Sciences London United Kingdom
-2. https://ror.org/0495fxg12 Institut Pasteur, CNRS UMR 3525, Université Paris Cité, Unité Régulation Spatiale des Génomes Paris France
+1. DNA motors Group, MRC London Institute of Medical Sciences London United Kingdom ([ROR:05p1n6x86](https://ror.org/05p1n6x86))
+2. Institut Pasteur, CNRS UMR 3525, Université Paris Cité, Unité Régulation Spatiale des Génomes Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ The demonstration that yeast cohesin organises loops on the arms of metaphase ch
 
 ## Results
 
-## Degradation of cohesin’s kleisin at the anaphase onset causes mitotic catastrophe
+### Degradation of cohesin’s kleisin at the anaphase onset causes mitotic catastrophe
 
 To study the role of cohesin on chromosome organisation during anaphase, we searched for an approach to induce the rapid removal of cohesin’s kleisin subunit, Mcd1. To this aim, we used an auxin-inducible degron allele of Mcd1 (MCD1-AID) (Nishimura et al., 2009) which allows rapid degradation by poly-ubiquitylation upon exposure to auxin.
 
@@ -41,29 +41,79 @@ To evaluate the effect of Mcd1 degradation during chromatid segregation, we bloc
 
 In cdc20-arrested cells, we observed full degradation of Mcd1-aid 30–60 min after addition of auxin (Figure 1a), demonstrating the rapid and efficient removal of Mcd1 in this experimental setup. Like TEV-induced anaphases, auxin-mediated degradation of Mcd1 in cdc20-arrested cells precipitates an anaphase-like stage (Figure 1b), however we observed severe disruption of nuclear segregation (Figure 1b), with many nuclei appearing to be stuck in anaphase with elongated nuclear masses for extended periods (Figure 1b–c). To quantify the segregation defects in these cells, we introduced chromosome tags at different genomic locations, and scored the timing and efficiency of their separation. First, we used tags on the arm (tetO::469) and telomere (tetO::558) regions of chromosome 5, a small chromosome in the yeast genome (Figure 1c–d). After 180 min of auxin addition to cdc20-blocked cultures, we observed that 48% of the cells were still stuck in anaphase (Figure 1c), 35% of cells showed correct segregation of arm tags, and 20% showed missegregation (Figure 1c). Segregation errors were even higher for telomeric regions (Figure 1d) and larger chromosomes (Figure 1—figure supplement 1). These results demonstrate that rapid removal of Mcd1 by degradation causes an anaphase-like state with impaired separation of chromatids.
 
-## TEV-induced cleavage allows bulk genome separation with minor segregation errors
+![Figure 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig1-v2.jpg)
+
+**Figure 1.:** (a) Cells containing MCD1 tagged with the auxin degron (MCD1-AID) were arrested in metaphase (Cdc20 arrest). The culture was split in two, one half was treated with DMSO and the other with 6 mM auxin (IAA) to degrade Mcd1. Samples were taken for an anti-Myc immunoblotting to detect Mcd1. (b) Representative images of cells 30–90 min after degradation of Mcd1. Cells were analysed for nuclear separation (DAPI stain, red) and chromosome segregation (green fluorescent protein [GFP] dots marking the middle of chromosome V; tet:469, green). (c) Analysis of nuclear and chromosome segregation using DAPI and GFP dots marking the middle of chromosome V (tet:469). Experimental conditions for the timecourse are as described in (a). Each timepoint represents the average of the percentage of three biological replicas of at least 100 cells per timepoint. Error bars show SEM. (d) Analysis of nuclear and chromosome segregation using DAPI and GFP dots marking the telomeric region of chromosome V (tet:558). Experimental conditions for the timecourse are as described in (a). Each timepoint represents the average of the percentage of three biological replicas of at least 100 cells per timepoint. Error bars show SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Cells with MCD1 tagged with the auxin degron (MCD1-AID) and with the centromere of the chromosome IV (tetO::448) marked with green fluorescent protein (GFP) were synchronised in metaphase (Cdc20). The culture was split in two, one of them was treated with DMSO 1% and the other with 1 mM of IAA to degrade Mcd1-AID. Samples were collected at the indicated timepoints and chromosome segregation analysis (top) and immunoblotting to follow Mcd1-aid (bottom) was performed. (b) Cells treated as in (a), but with the subtelomere of chromosome IV (tetO::1513) marked with GFP. Each timepoint represents the percentage of cells at the indicated cell cycle stage. At least 100 cells were quantified for each timepoint.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Schematic of engineered MCD1 with the wild-type separase cleavage site maintained in the position 180 and the separase cleavage position 268 replaced by the tobacco etch virus (TEV) cleavage sequence ENLYFQG (upper panel). Cells were arrested in metaphase (Cdc20 arrest) and induced to express TEV protease. Samples were taken every 30 min for 3 hr for immunoblotting against HA epitope to follow the C-terminus of Mcd1. (b) Nuclear segregation in TEV-induced anaphase. Nuclear segregation was monitored using DAPI staining of cells. Experimental protocol as in (a). (c) Chromosome segregation in TEV-induced anaphase. Chromosome tags inserted in a centromere proximal site (Ura3::tetO) on chromosome V were monitored for segregation. Experimental protocol as in (a). Each timepoint represents the average of the percentage of two biological replicas of at least 100 cells at the indicated cell cycle stage. Error bars represent the SEM.
+
+### TEV-induced cleavage allows bulk genome separation with minor segregation errors
 
 Previous studies have shown that engineered cleavage of Mcd1 in cdc20 arrests, using TEV protease expression and TEV recognition sites on Mcd1, triggers an anaphase-like division where nuclear masses separate (Uhlmann et al., 2000). We re-evaluated segregation in TEV-induced anaphases using the previously published strain and protocol (Uhlmann et al., 2000). Induction of TEV expression led to cleavage of Mcd1 after 60 min (Figure 1—figure supplement 2) as expected. Bulk nuclear segregation occurred 90–120 min following the induction as it had been previously reported (Uhlmann et al., 2000). Importantly, chromosome tags located on the centromere region of chromosome 5 segregated efficiently (Figure 1—figure supplement 2). Therefore, unlike auxin-mediated degradation of Mcd1, and consistent with previous reports (Uhlmann et al., 2000), TEV cleavage allows nuclear segregation.
 
 We noticed that in TEV-induced anaphases, the cleaved C-terminal fragment of Mcd1 was fully stable during the entire timecourse (Figure 1—figure supplement 2). The lack of Mcd1 fragment degradation after TEV cleavage stems from the fact that TEV protease cleavage occurs following the glutamine (Q) residue of the TEV recognition site (‘ENLYFQ*G’) leaving a glycine (G) amino acid residue at the N-termini (referred to as TEVG), which is not well recognised by the N-rule pathway (Varshavsky, 2011). In contrast, separase cleavage leaves an arginine (R) residue at the N-termini of the cleaved product (‘SVEQGR*R’), which is a good substrate for N-end rule degradation (Varshavsky, 2011). Interestingly, Beckouet et al. have shown that following TEV-induced cleavage not only the C-terminal fragment of Mcd1 is stabilised but also the N-terminal (Beckouët et al., 2016). This raises the possibility that Mcd1 fragments could remain associated to the Smc core subunits following TEV cleavage. To test whether this is the case, we tagged Smc3 with the V5 epitope and Mcd1 with FLAG and HA tags at the N- and C-terminus, respectively (Figure 2). We performed IPs on synchronised TEV anaphases (Figure 2) to follow whether the cleaved fragments stay associated to the cohesin Smc core. Both N- and C-terminal Mcd1 fragments were immunoprecipitated by Smc3 after TEV cleavage (Figure 2—figure supplement 1). Therefore, the structural integrity of cohesin tripartite complex remains intact after TEV cleavage of its kleisin subunit. Next, we sought to test whether inducing full degradation of Mcd1 fragments after TEV cleavage generates a similar phenotype to that observed in anaphases induced by degradation of Mcd1 (Figure 1c).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig2-v2.jpg)
+
+**Figure 2.:** Schematic of engineered cohesin with MCD1 tagged in N-terminus with FLAG, the C-terminus with HA, and with a substitution of the 268 separase cleavage site with the TEV cleavage sequence ENLYFQG. Cells also harboured a copy of Smc3 tagged in C-terminus with V5 (left). Cells were synchronised using a Cdc20 arrest and TEV was induced to cleave Mcd1. Samples were taken every 30 min for 2 hr and Smc3 immunoprecipitated using anti-V5 antibody. We used immunoblotting with anti-FLAG and HA antibodies to detect the cleaved fragments of Mcd1 (right).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Samples were taken after 2 hr of induction of the TEV protease and Smc3-V5 was pulled down using anti-V5 antibody followed by anti-FLAG or HA immunoblotting to detect Mcd1 N-terminus or C-terminus cleaved fragments, respectively. A negative control without V5 tag in Smc3 was included.
+
 To this aim, we used a TEV recognition site on Mcd1 that was able to yield a C-terminal fragment with a terminal amino acid recognised by the N-end rule pathway. We found this to be the case when we used the TEV recognition site ‘ENLYFQF’ (referred to as TEVF) (Figure 3a). This site leaves a phenylalanine, rather than a glycine, as the N-terminal amino acid after TEV cleavage. Importantly, N-terminal phenylalanine is a good substrate for N-end rule degradation (Varshavsky, 2011). We used FLAG and HA tags at the N- and C-terminus of Mcd1, respectively, to detect the two products generated by TEV cleavage and compared their stability in Mcd1 proteins containing the classical ‘ENLYFQG’ (TEVG) or ‘ENLYFQF’ (TEVF) sites (Figure 3a–b). Cleavage of TEVG generated stable N- and C-terminal fragments as expected (Figure 3b). In contrast, both N- and C-terminal fragments were rapidly degraded after cleavage on TEVF sites (Figure 3a).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig3-v2.jpg)
 
-**Figure 3.:** (a) Cells with MCD1 tagged at its N-terminus with FLAG and its C-terminus with HA, and with the 268 separase cleavage site replaced by the TEV recognition site ENLYFQF (TEVF) (top right diagram) were arrested in Cdc20 before TEV induction. Samples were taken every 30 min for 2 hr and immunoblotted against FLAG or HA to detect Mcd1 N-terminus and C-terminus cleaved fragments, respectively (left). Nuclear segregation was monitored during the TEV-induced anaphase with DAPI staining (bottom right graph). Error bars are standard deviations. (b) Cells with MCD1 tagged at its N-terminus with FLAG and its C-terminus with HA, and with the 268 separase cleavage site replaced by the TEV recognition site ENLYFQG (TEVG) (top right diagram) were arrested in Cdc20 before TEV induction. Samples were taken every 30 min for 2 hr and immunoblotted against FLAG or HA to detect Mcd1 N-terminus and C-terminus cleaved fragments, respectively (left). Nuclear segregation was monitored during the TEV-induced anaphase with DAPI staining (bottom right graph). Error bars are standard deviations. (c) Cells carrying MCD1 with the 268 separase cleavage site substituted for either TEV cleavage ENLYFQF (TEVF) or ENLYFQG (TEVG) were treated as in (a and b) and monitored for nuclear and chromosome segregation using DAPI and green fluorescent protein (GFP) dots marking the middle of chromosome V (tet:469). Each timepoint represents the average of the percentage of three biological replicas of at least 100 cells per timepoint. Error bars show SEM.Figure 3—source data 1.Figure 3a.Figure 3—source data 2.Figure 3b.
+**Figure 3.:** (a) Cells with MCD1 tagged at its N-terminus with FLAG and its C-terminus with HA, and with the 268 separase cleavage site replaced by the TEV recognition site ENLYFQF (TEVF) (top right diagram) were arrested in Cdc20 before TEV induction. Samples were taken every 30 min for 2 hr and immunoblotted against FLAG or HA to detect Mcd1 N-terminus and C-terminus cleaved fragments, respectively (left). Nuclear segregation was monitored during the TEV-induced anaphase with DAPI staining (bottom right graph). Error bars are standard deviations. (b) Cells with MCD1 tagged at its N-terminus with FLAG and its C-terminus with HA, and with the 268 separase cleavage site replaced by the TEV recognition site ENLYFQG (TEVG) (top right diagram) were arrested in Cdc20 before TEV induction. Samples were taken every 30 min for 2 hr and immunoblotted against FLAG or HA to detect Mcd1 N-terminus and C-terminus cleaved fragments, respectively (left). Nuclear segregation was monitored during the TEV-induced anaphase with DAPI staining (bottom right graph). Error bars are standard deviations. (c) Cells carrying MCD1 with the 268 separase cleavage site substituted for either TEV cleavage ENLYFQF (TEVF) or ENLYFQG (TEVG) were treated as in (a and b) and monitored for nuclear and chromosome segregation using DAPI and green fluorescent protein (GFP) dots marking the middle of chromosome V (tet:469). Each timepoint represents the average of the percentage of three biological replicas of at least 100 cells per timepoint. Error bars show SEM.
 
 Next, we compared segregation kinetics in TEV-induced anaphases with TEVG and TEVF cleavage sites. Bulk nuclear separation was observed in both conditions (Figure 3a–b), with most cells showing full segregation after 120 min of TEV induction (>85% in TEVG and >75% in TEVF). However, we noticed minor delays during anaphase progression in cells with TEVF recognition sites (Figure 3a). Next, we compared the fidelity of segregation in TEVG and TEVF anaphases using tetO:469 kb tags inserted in the middle of chromosome 5. As observed previously, cells carrying TEVG recognition sites segregated tags correctly (with <5% missegregation observed) (Figure 3c). In contrast, tag missegregation was observed in 16% of telophases when TEVF recognition sites were present on Mcd1 (Figure 3c). These results demonstrate that degradation of Mcd1 fragments after TEV cleavage affects the fidelity of chromosome segregation but, unlike Mcd1 degradation, does not severely prevent bulk nuclear separation.
 
-## Chromosome looping in segregating chromosomes is disrupted in the absence of cohesin
+### Chromosome looping in segregating chromosomes is disrupted in the absence of cohesin
 
 Cohesin mediates intrachromosomal loops in metaphase-arrested chromosomes, providing a structural framework for the compaction of chromosome arms (Lazar-Stefanita et al., 2017; Schalbetter et al., 2017). How chromosomes are organised during yeast anaphase, when individual chromatids are being pulled to the poles, is not well understood. Since the cohesin tripartite complex remains associated after TEV cleavage (Figure 2), we considered the possibility that TEV-cleaved cohesin still plays a role in maintaining the structure of segregating chromatids. To further investigate this, we first performed ChIP analysis of Smc3 during TEV-induced anaphases along chromosome 5 (Figure 4a). We observed that significant levels of chromatin-bound Smc3 remained during initial timepoints (Figure 4a; TEV-induced). In contrast, Smc3 was rapidly lost from chromatin in anaphases induced by auxin-mediated degradation of Mcd1 (Figure 4a; auxin-induced). Having observed that TEV-cleaved cohesin remains chromatin-bound for a significantly longer period than auxin-degraded cohesin (Figure 4a), we decided to use these two conditions to investigate whether the presence of cohesin, albeit cleaved, impacts on the looped organisation of chromosomes as they are pulled to the cell poles. We built Hi-C libraries from timepoints when the bulk of Mcd1 had been either TEV-cleaved or auxin-degraded (Figure 4—figure supplement 1). Importantly, we did not detect full-length Mcd1 in the TEV-cleaved samples collected (Figure 4—figure supplement 1), suggesting that TEV cleavage was complete. Following sequencing, we computed the corresponding normalised genome‐wide contact maps for Mcd1-TEV and Mcd1-aid (Figure 4b–c). When we compared the contact maps of individual chromosomes obtained from cells arrested in metaphase using Cdc20 depletion (Figure 4b), to those obtained for Mcd1-TEVG and Mcd1-AID during the induced anaphases, we observed a decrease in intrachromosomal contacts structuration, with a loss of loops (Figure 4b). The contact probability (p) as a function of genomic distances of all chromosome arms showed a reduction of contacts in the 10–50 kb range for Mcd1-TEVG and Mcd1-AID samples compared to Cdc20 arrests (Figure 4c, Figure 4—figure supplement 1). Notably, the reduction in Mcd1-AID was significantly more pronounced than in Mcd1-TEVG (Figure 4c, Figure 4—figure supplement 2). These results demonstrate that removal of cohesin from chromatin in Mcd1-AID causes a very pronounced disruption of cohesin-dependent structure (Figure 4b–c) that prevent correct chromosome organisation, and thus explain the catastrophic missegregation observed (Figure 1c–d). In contrast, chromosome organisation is not fully disrupted when TEV-cleaved, but chromatin-bound, Mcd1 (and cohesin) is present (Figure 4c, Figure 4—figure supplement 1), which is likely to maintain a level of structure (albeit reduced) that allows bulk nuclear segregation (Figure 3a–c).
 
-## Cohesin organises centromeres of telophase-arrested chromosomes
+![Figure 4.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig4-v2.jpg)
+
+**Figure 4.:** (a) Chromatin immunoprecipitation analysis (ChIP) of Smc3-V5 binding along chromosome V of cells arrested in metaphase (Cdc20 arrest) containing either MCD1 with the 268 separase cleavage site substituted by the tobacco etch virus (TEV) recognition sequence ENLYFQF (TEVF) or with MCD1-AID. Samples were taken every 30 min for 1 hr after induction of the TEV protease or addition of the auxin IAA respectively and analysed. (b) Cells containing either MCD1-TEVG or MCD1-AID were arrested in Cdc20 metaphase arrest and MCD1 was cleaved or degraded respectively. Samples for HiC analysis were taken (MCD1 TEVG 90 min; MCD1-AID 60 min). Contact maps (bin = 1 kb) of chromosome V from cell populations are shown. Brown to yellow colour scales represent high to low contact frequencies, respectively (log10). A Cdc20 metaphase arrest was also processed as a reference. n=1 (left) and n=2 (middle and right) biological replicates for each condition. (c) Average intrachromosomal arm contact frequency (p) between two loci with respect to their genomic distance (s) along the chromosome, of cell populations treated as in ‘a’ (left). Derivative of p(s) curve (right).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Samples for WB analysis were taken every 30 min for 2 hr followed by immunoblotting to detect Mcd1. Samples at the timepoints highlighted in red MCD1 TEV-G 90 min cleavage and MCD1-AID 60 min degradation were taken to be processed for Hi-C (top and middle blots). The cell cycle stage of these samples was quantified (bottom left). Representative cell images of each sample are shown (bottom right).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Contact probability (p(s)) of cells containing either MCD1 TEVG or MCD1-AID synchronised in metaphase (Cdc20) and cleaved for 90 min or degraded for 60 min, respectively. Biological replicas are shown. (b) Contact probability calculated as in (a), but without the 200 kb region surrounding the centromeres.
+
+### Cohesin organises centromeres of telophase-arrested chromosomes
 
 Our results demonstrate that the fidelity of chromosome segregation requires the maintenance of cohesin-dependent looping during anaphase. Next, we investigated whether cohesin complexes are removed in fully segregated chromosomes when they reached the cell poles in telophase. To this aim, we first fused the green fluorescent protein (GFP) to the cohesin subunit Smc3 and imaged its localisation on telophase-arrested cells using the cdc15-2 conditional mutant (Jaspersen et al., 1998; Figure 5a). Smc3-GFP signal was observed on segregated nuclei, with a clear discrete dot present at the cell poles that colocalised with the spindle pole body protein Spc29 (Spc29-RedStar2) (Figure 5a). This indicates that Smc3-GFP might be enriched on centromeric regions of telophase chromosomes. To confirm this possibility, we used calibrated ChIP-seq in cdc15-2-arrested cells (Figure 5b, Figure 5—figure supplement 1) to identify whether centromeric regions and any other potential genomic sites are bound by cohesin’s subunit Mcd1. We performed CHIP analysis using MCD1-6HA in cdc15-2-arrested cells (Figure 5b). To have a visual reference for the normal position of cohesin sites on chromosomes, we used a previously published dataset (Garcia-Luis et al., 2019) for Smc1 localisation on cells arrested in metaphase where cohesin binding is maximal (Figure 5b; SMC1 reference). To ensure that signals detected in telophase arrests were not due to background noise, we subtracted the signal obtained using untagged cells in our analysis (Figure 5b; untagged substracted). The number of Mcd1 binding sites along chromosome arms was very low, with only a few sites exhibiting levels above background (Figure 5b). However, comparison of average MCD1-6HA profiles across CEN sites confirmed that this cohesin subunit is enriched around centromere regions in cdc15-2-arrested chromosomes (Figure 5c, Figure 5—figure supplement 2), thus validating our previous cytological observations (Figure 5a).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig5-v2.jpg)
+
+**Figure 5.:** (a) Cells containing CDC15-AID and the tagged cohesin subunit SMC3-yeGFP were arrested in late anaphase and the green fluorescent protein (GFP) signal at the centromere was calculated as a ratio comparing it to the nuclear background signal. Cells also carried Spc29-RedStar2, a spindle pole body component that was used as spatial reference to determine colocalisation with centromeres. For each timepoint at least 20 cells of two biological replicas were quantified. (b) Enrichment of cohesin along Saccharomyces cerevisiae chromosome 7 measured by calibrated ChIP-seq in cells containing MCD1-6HA arrested in late anaphase (cdc15-2) and untagged cells arrested in telophase (cdc15-2). We used a previously published dataset (GSE118534) for Smc1 binding to metaphase-arrested cells as a reference to illustrate the position of cohesin sites on metaphase chromosomes (top; SMC1 reference). The bottom black lane shows the enrichment of cohesin subunit Mcd1-6HA after subtraction of ChIP-seq signal of the untagged cells arrested in telophase (cdc15-2). CEN7 marks the location of the centromere. (c) Average calibrated ChIP-seq profiles of Mcd1-6HA (telophase arrest, cdc15-2) from the centromere CDEIII region of the 16 yeast chromosomes is shown. Smc1 profile from cells arrested in metaphase is shown as a reference (GSE118534).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Smc1-6HA ChIP-seq profiles of SMC1-6HA wild-type cells synchronised in metaphase, Mcd1-6HA ChIP-seq profiles of cdc15-2 cells synchronised in telophase, and ChIP-seq profiles of untagged cdc15-2 cells synchronised in telophase are shown. The number of reads at each base pair from the centromere CDEIII was averaged over all 16 chromosomes. The profile of each biological repetition is shown.
+
 Next, we sought to test whether centromere-bound cohesin contributes to the organisation of these regions in telophase. We arrested cells using an analogue-sensitive (AS) allele of Cdc15, and inactivated cohesin using the Mcd1-AID and Smc3-AID alleles after telophase arrest had been achieved (Figure 6a). We then built Hi-C libraries from cells arrested in telophase with and without degrading cohesin after the arrest (Figure 6b, Figure 6—figure supplement 1). Comparison of the contact maps revealed changes at centromeric regions in telophase cells depleted for cohesin (Figure 6b). On a large scale (above 200 kb), cohesins favour cis contacts between centromeres and their chromosome arms (Figure 6b and c top). However, this effect is reversed at short distances (<100 kb). Indeed, panels in Figure 6c show that cohesin impedes contacts between centromeres and their ~100 kb flanking regions. These results demonstrate that cohesin complexes influence intrachromatid contacts at centromeres in telophase chromosomes. Moreover, the in trans interaction of CEN sequences was also reduced in cdc15-as cells with depleted cohesin (Figure 6d). Therefore, inactivating cohesin in telophase also reduces centromere clustering of the yeast genome.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig6-v2.jpg)
+
+**Figure 6.:** (a) Degradation of cohesin subunits in telophase-arrested cells using cdc15-as allele. Cdc15-as cells and cdc15-as cells carrying MCD1-AID or MCD1-AID and SMC3-AID were synchronised in late anaphase (cdc15-as) and treated with IAA for 1 hr to deplete Mcd1-AID and Smc3-AID. Samples were taken for HiC and for immunoblotting to follow the degradation of Mcd1 and Smc3. (b) Log2 ratio of contact maps between cdc15-as arrested cells depleted in Mcd1 and cdc15-as arrested wild-type (WT) cells (left). Log2 ratio of contact maps between cdc15-as arrested cells depleted in Mcd1 and Smc3 and cdc15-as arrested WT cells (right). x-axis represents the 16 chromosomes of the yeast genome depicted on top of the matrix. Blue to red colour scales represent the enrichments in contacts in one sample respect to the other (bin = 50 kb). (n=1 biological replicate for each condition). (c) Log2 ratio between cdc15as Mcd1 ± Scm3 depleted and cdc15as pile-ups of contact maps of the 500 kb (top) and 200 kb (bottom) cis peri-centromeric regions (bin = 5 kb). (d) Log2 ratio between cdc15as Mcd1 ± Scm3 depleted and cdc15as pile-ups of contact maps of the 100 kb trans peri-centromeric regions (bin = 5 kb).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80147/elife-80147-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Contact maps generated from cells synchronised in cdc15-as and cells synchronised in cdc15-as containing MCD1-AID or MCD1-AID and SMC3-AID. Cells were synchronised in late anaphase (cdc15-as) and treated with IAA for 1 hr to deplete Mcd1-AID and Smc3-AID. Samples were taken for HiC and for WB. x- and y-axis represent the 16 chromosomes of the yeast genome, displayed above the maps. Brown to yellow colour scales represent high to low contact frequencies, respectively (log10). (b) Pile-ups of contact maps of the 250 kb (top) or 100 kb (bottom) peri-centromeric regions in cis for cells synchronised in cdc15-as (left), in cdc15as and Mcd1-AID depleted (middle) or in cdc15as and Mcd1-AID and Smc3-AID depleted (right) (bin = 5 kb). (c) Pile-ups of contact maps of the 100 kb peri-centromeric regions in trans for cells synchronised in cdc15-as (left), in cdc15as and Mcd1-AID depleted (middle) or in cdc15as and Mcd1.
 
 Cohesin also contributes to the organisation of the ribosomal gene array (rDNA) on chromosome XII during metaphase (Lavoie et al., 2002). We therefore tested whether inactivation of cohesin in telophase-arrested cells had any effects on rDNA structure. To this aim we used an AS allele of cdc15-as and the temperature-sensitive allele of cohesin’s kleisin mcd1-73. We expressed the nucleolar marker Net1 fused to GFP (NET1-yeGFP) in these cells to evaluate rDNA structure. Inactivation of cohesin in telophase arrests caused decondensation of rDNA signals (Figure 7a).
 
@@ -93,44 +143,264 @@ Currently, the functions of yeast cohesin during mitosis are thought to include:
 
 ## Methods
 
-## Yeast strain and primers
+### Yeast strain and primers
 
 Yeast strains used in this study are listed in Table 1. Epitope tagging of genes were carried out as described in Janke et al., 2004. Primers used in this study are described in Table 2.
 
-## Media, culture conditions, and DNA constructs
+**Table 1.**
+ Yeast strains used in this study.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>CCG14820</td>
+      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:Hph; TetR-GFP::ADE2; TetO:469Kb ChrV:HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14881</td>
+      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:Hph; TetR-GFP::ADE2; TetO:558Kb ChrV:HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14629</td>
+      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:Hph; TetR-GFP::ADE2; TetO:448Kb ChrIV:HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14635</td>
+      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:hph; TetR-GFP::ADE2; TetO:1513Kb ChrIV:HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>K9027</td>
+      <td>MATα; MCD1Δ:HIS3; MCD1TEV268::LEU2; GAL-NLS-mcy9-TEVprotease-NLS2::TRP1 (10-fold integrant by southern); ura3::3xURA3 tetO112; his3::HIS3 tetR-GFP; MET3-HA3-CDC20::TRP1; ade2-1 can1-100 GAL psi+</td>
+      <td>Uhlmann et al., 2000</td>
+    </tr>
+    <tr>
+      <td>CCG12955</td>
+      <td>CCG12681; SMC3-V5:HPH</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG12356</td>
+      <td>CCG4000; MET3-3HA-CDC20:TRP1, FLAG-MCD1-268TEVF-6HA:LEU2, GAL- TEV-9Myc::URA3; tetR-GFP::ADE2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG12351</td>
+      <td>CCG4000; MET3-3HA-CDC20:TRP1, FLAG-MCD1-268TEVG-6HA:LEU2, GAL1-TEV-9Myc::URA3; tetR-GFP::ADE2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14783</td>
+      <td>CCG12351; TetO:469Kb ChrV:HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14784</td>
+      <td>CCG12356; TetO:469Kb ChrV:HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14882</td>
+      <td>CCG14635; SMC3-V5:hph</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG12925</td>
+      <td>CCG12682; SMC3-V5:HPH</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG13574</td>
+      <td>CCG4000, MET3-3HA-CDC20:TRP1; pADH1-OsTIR1::URA; TetR-GFP::ADE2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14635</td>
+      <td>CCG4000; MET3-3HA-CDC20:TRP1; ADH1-OsTIR1::URA; MCD1:AID-9Myc:hph; TetR-GFP::ADE2; TetO:1513Kb ChrIV:HIS3</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14880</td>
+      <td>CCG4000; ADH1-OsTIR1::LEU; CDC15:AID-9Myc:Hph</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14909</td>
+      <td>CCG4000; ADH1-OsTIR1::LEU; CDC15:AID-9Myc:Hph SMC3-yeGFP:Kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14910</td>
+      <td>CCG4000; ADH1-OsTIR1::LEU; CDC15:AID-9Myc:Kan; SMC3-yeGFP:Hph; SPC29-RedStar2:Nat</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG1835</td>
+      <td>MATa bar1:hisG ura3-1 trp1-1 leu2-3,112 his3-11 ade2-1 can1-100 GAL+cdc15-2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14731</td>
+      <td>CCG1835; MCD1-6HA:Hyg</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14758</td>
+      <td>CCG4000; SMC1-6HA:Nat; pADH1-OsTIR1::URA</td>
+      <td>Garcia-Luis et al., 2019.</td>
+    </tr>
+    <tr>
+      <td>CCG14821</td>
+      <td>CCG4000 pADH1-OsTIR1::LEU; cdc15as1:KanMX</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14822</td>
+      <td>CCG14821 MCD1:AID-9Myc:Hph</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>CCG14823</td>
+      <td>CCG14822 SMC3:AID-9Myc:Hph</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer number</th>
+      <th>Target</th>
+      <th>Primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4729</td>
+      <td>Chr.V 235.1 (235000)_F</td>
+      <td>GCATGTGGATGTTTTTGGGGT</td>
+    </tr>
+    <tr>
+      <td>4730</td>
+      <td>Chr.V 235.1 (235125)_R</td>
+      <td>GAGACACTAGAGGGGCTATCCT</td>
+    </tr>
+    <tr>
+      <td>4731</td>
+      <td>Chr.V 443.1 (443017)_F</td>
+      <td>TCCACGTAATATTGCGGCCT</td>
+    </tr>
+    <tr>
+      <td>4732</td>
+      <td>Chr.V 443.1 (443151)_R</td>
+      <td>AATGCCAACTCAGCTTTGCG</td>
+    </tr>
+    <tr>
+      <td>4733</td>
+      <td>Chr.V 529.1 (529089)_F</td>
+      <td>ACTGAGAGGGAAGGACGACT</td>
+    </tr>
+    <tr>
+      <td>4734</td>
+      <td>Chr.V 529.1 (529198)_R</td>
+      <td>AATCGGCGTCAGACAAACCT</td>
+    </tr>
+    <tr>
+      <td>4735</td>
+      <td>Chr.V 548.3 (548276)_F</td>
+      <td>GGAAAATAGCCGCCCAAGGA</td>
+    </tr>
+    <tr>
+      <td>4736</td>
+      <td>Chr.V 548.3 (548398)_R</td>
+      <td>TGGCATAACAGACTACAGCAAA</td>
+    </tr>
+    <tr>
+      <td>4737</td>
+      <td>Chr.V 102.7(102733)_F</td>
+      <td>CGCATGCTTTTCTCAGACCTT</td>
+    </tr>
+    <tr>
+      <td>4738</td>
+      <td>Chr.V 102.7(102863)_R</td>
+      <td>TGCGGTACTGAGGGCCAAAT</td>
+    </tr>
+    <tr>
+      <td>4739</td>
+      <td>Chr.V 29.8(29844)_F</td>
+      <td>ATAGTTTGGGTGCTGCTGATT</td>
+    </tr>
+    <tr>
+      <td>4740</td>
+      <td>Chr.V 29.8(29970)_R</td>
+      <td>ACATTTTGCCGCCATACACA</td>
+    </tr>
+    <tr>
+      <td>4557</td>
+      <td>Ch.V_165.8_F</td>
+      <td>CGCGTTGGTCAAGCCTCATA</td>
+    </tr>
+    <tr>
+      <td>4558</td>
+      <td>Ch V_165.8_R</td>
+      <td>CACTACTCGGCTTCTTGCCA</td>
+    </tr>
+    <tr>
+      <td>4563</td>
+      <td>CEN5_152.2_F</td>
+      <td>CAAGCCACTGTTGGCGTTTC</td>
+    </tr>
+    <tr>
+      <td>4564</td>
+      <td>CEN5_152.2_R</td>
+      <td>TTATGTGCGGCTTTGTCAGC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Media, culture conditions, and DNA constructs
 
 To arrest the cells in G1, α-factor was added to exponentially growing MATa cultures (OD600=0.5) to a final concentration of 3×10–8 M for 3 hr at 25°C. To arrest cells in G2/M, nocodazole (1.5 mg/mL stock in DMSO 100%) was added to cultures with OD600=0.5 to a final concentration of 0.015 mg/mL for 2.5 hr. To arrest cells in metaphase (Cdc20), cells carrying the CDC20 gene under methionine repressible promoter MET3 (MET3-CDC20) were grown overnight in minimal media lacking methionine. The day after cells were arrested by washing the cells and resuspending them in rich media containing 5 mM methionine for 3 hr. To arrest cells in telophase, Cdc15 was tagged with an auxin degron (CDC15-AID), and IAA was added to the culture at a final concentration of 3 or 1 mM when growing in minimal media.
 
 To arrest the cells in late telophase using the cdc15-as allele, cells released from an α-factor arrest were treated with 10 μM of the ATP analogue 1-NM-PP1 for 1 hr 45 min. Cultures were monitored by microscopy until  ≥90% of cells were arrested. To release cells from G1, the culture was spun (4000 r.p.m., 1 min) and washed in YPD three times. The pellet was then resuspended in YPD containing 0.1 mg/mL pronase. To release cells from nocodazole, the culture was spun (4000 r.p.m., 1 min) and washed in YPD containing 1% DMSO five times. The pellet was then resuspended in YPD. To degrade proteins tagged with AID epitope, a stock of IAA of 0.6 M in ethanol 100% was used.
 
-## Microscopy and statistics
+### Microscopy and statistics
 
 To monitor cell cycle progression and chromosome segregation, an epifluorescence OLYMPUS IX70 microscope was used fitted with a Lumecor Spectra LED light source, a Hamamatsu Orca Flash 4.0 V2 camera and a ×100/1.35 lens. One mL of cell culture was taken from each timepoint and mixed with glycerol (20% final concentration) to preserve TetO/TetR signal after being frozen at –80°C. For visualisation, cells were centrifuged at 3000 r.p.m. for 2 min and 1 μL of the pellet was mixed with 1 μL of DAPI solution (DAPI 4 μg/mL Triton 1 %) on the microscope slide. For each field 20 Z-focal planes images were captured (0.3 μm depth between each consecutive image). Images were analysed with Fiji (Schindelin et al., 2012). To quantify the distance between the GFP dots, a Fiji macro was developed to automatically compute the weighted centroid of the dots and measure the three-dimensional distance between them. To visualise Smc3-yeGFP, cells were imaged fresh in a DELTAVISION Elite fluorescence microscope fitted with a Lumecor Spectra LED light source, a Photometrics Coolsnap HQ camera and a ×100/1.4 lens. At least 80 cells were quantified for each timepoint. Smc3-yeGFP signal intensity was calculated as the ratio of signal at the centromeres and the signal of the same area in the nucleus on Z-projection of images taken every 0.2 μm in 6 μm.
 
-## Western blot
+### Western blot
 
 Protein extraction was done by lysing the cells in a FastPrep FP120 (BIO101) machine with 20% TCA and glass beads. Three repetitions of a 20 s cycle, power setting 5.5. Proteins were precipitated with TCA 7.5% and centrifuging at 15,000 r.p.m. for 10 min at 4°C. Then, the pellet was resuspended in Laemmli buffer ×1.5. Western blots were resolved in 7.5% SDS-PAGE gels. Proteins were transferred to polyvinylidene fluoride membranes using the TE70X semidry blotter system (Hoefer). The antibodies used were anti-HA (Roche, 3F10), anti-Myc (Roche, 9E10), anti-PGK1 (Thermo Fisher Scientific, 459250) anti-V5 (Abcam, ab9116), and anti-FLAG (Invitrogen MA1-142). Blots were incubated with the ECL Prime Western blotting detection reagent (GE Healthcare). Blots were developed by exposure to high-performance chemiluminescence films (Amersham Hyperfilm ECL, GE Healthcare) or in an ImageQuant LAS 4000 mini machine (GE Healthcare).
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 For ChIP analysis, cells were grown to OD600 = 0.5 and arrested at the required cell cycle stage. A total of 100 OD600 units of Saccharomyces cerevisiae were collected. Cells were fixed for 15 min at 25°C and quenched with glycine (final concentration 125 mM) for 7 min before cells were harvested by centrifugation at 4000 r.p.m. for 1 min. The cell pellets were washed in PBS and transferred to a screw cap tube and frozen on dry ice. The pellets were stored at −80°C. Pellets were resuspended in 300 μL of IP buffer (150 mM NaCl, 50 mM Tris-HCl [pH 7.5], 5 mM EDTA, NP-40 [0.05% vol/vol], Triton X-100 [1% vol/vol]) containing PMSF (final concentration 1 mM) and complete protease inhibitor cocktail (without EDTA, from Roche). A 500 μL volume of glass beads was added to the tubes. Cells were broken in a FastPrep FP120 cell disruptor (BIO101) by three repetitions of a 20 s cycle at power setting 5.5. The cell lysate was transferred to a new tube and 100 μL volume of IP buffer containing PMSF and protease inhibitors was added. The cell lysate was spun down for 10 min at 15,000 r.p.m. at 4°C. This pellet was resuspended in 1 mL of IP buffer containing PMSF and protease inhibitors, and sonicated for 30 (30 s on, 30 s off) at high power at 4°C in a Diagenode Bioruptor pico. After sonication samples were spun down for 10 min at 15,000 r.p.m. the supernatant was taken. A 200 μL volume of the sonicated chromatin was taken as ‘input’ and 400 μL was incubated with 40 μg of anti-V5 antibody (anti-V5 Abcam, ab9116) in a sonicator at low power for 30 min (30 s on, 30 s off). The ‘input’ DNA was precipitated with 0.3 M sodium acetate and 2.5 volumes of cold ethanol and spun down at 15,000 r.p.m. for 30 min, then the supernatant was removed. The pellet was washed with 70% ethanol and air-dried. After antibody binding, the IP sample was spun down at 13,000 r.p.m. for 5 min and the supernatant was added to 60 μL of Dynabeads protein G (Invitrogen), previously equilibrated with IP buffer. The samples were then incubated for 2 hr at 4°C in a rotating wheel and washed five times with IP buffer using a magnetic separator rack. Finally, ‘input’ samples and IP samples were resuspended in de-crosslinking buffer (TE ×1, 1% SDS, 10 μg ml−1 RNase A, 1  mg ml−1 proteinase K) and incubated at 65°C overnight. Samples were purified using a ChIP DNA Clean & Concentrator kit (Zymoresearch) according to the manufacturer’s instructions. Calibrated ChIP-seq were done as described in Garcia-Luis et al., 2019.
 
-## Protein co-immunoprecipitation
+### Protein co-immunoprecipitation
 
 One-hundred and twenty OD600 of asynchronous cells were OD600 = 1 were collected and washed in cold water and resuspended in 200 μL of ice-cold buffer A (50 mM HEPES, 150 mM KCl, 1.5 mM MgCl2, 0.5 mM DTT, and 0.5% Triton X-100 [pH 7.5] supplemented with complete protease inhibitor cocktail tablets, Roche). Five-hundred mL of glass beads (425–600 μm) were added and cells lysed in a FastPrep FP120 cell disruptor (BIO101) by three repetitions of a 20 s cycle at power setting 5.5. Extracts were maintained on ice for 2 min after each cycle. Cell extracts were centrifuged for 10 min at 12,000 r.p.m. at 4°C and the supernatant incubated with protein G Dynabeads (Invitrogen) bound to anti-Myc antibody (Roche, 9E10) for 2 hr at 4°C. Finally, beads were washed five times in washing buffer (10 mM Tris-Cl pH 7.5, 150 mM NaCl, 0.5% Triton) and unbound from the antibody by incubating at 37°C for 4 min in SR buffer (2% SDS, 0.125 M Tris-Cl, pH 6.8). Immunoprecipitated proteins were mixed with SS buffer (5% saccharose, 0.0125% bromophenol blue) and run in an SDS-PAGE gel.
 
-## Hi-C libraries
+### Hi-C libraries
 
 Cells were fixed with 3% formaldehyde (F8775, Sigma-Aldrich) as detailed in Dauban et al., 2020. Formaldehyde was quenched with 300 mM of glycine at room temperature for 20 min. Hi-C experiments were performed with an Hi-C kit (Arima Genomics) involving a double DpnII+HinfI restriction digestion. Preparation of the samples for paired-end sequencing on an Illumina NextSeq500 (2×35 bp) was done with Collibri ES DNA Library Prep Kit for Illumina Systems (Thermo Fisher Scientific, A38605024).
 
-## Generation and normalisation of contact maps
+### Generation and normalisation of contact maps
 
 Alignment of the reads and processing of the contact data was done with Hicstuff using the S288C reference genome (Matthey-Doret et al., 2020). Hicstuff pipeline was launched with the following parameters: aligning with bowtie2, filtering out spurious 3C events and PCR duplicates based on read positions. The ‘view’ mode of Hicstuff with the ICE function were used to generate normalised contact maps as described in Imakaev et al., 2012. Contact maps were binned at 50 kb for the whole genome or 1 kb for single chromosomes, and 30 kb for single chromosome ratio map.
 
-## Contact probability as a function of the genomic distance p(s)
+### Contact probability as a function of the genomic distance p(s)
 
 Genome-wide contact probability as a function of genomic distance pc(s) and its derivative were computed using the ‘distance law’ function of Hicstuff with the following parameters: removing 100 kb on both sides of the centromeres, averaging the contact data of each chromosome arms, removing the chromosome XII (Matthey-Doret et al., 2020).
 
-## Aggregated of cis and trans centromere contacts
+### Aggregated of cis and trans centromere contacts
 
 Cis-centromere pile-up contact maps are the result of averaged 205 or 505 kb windows centered on the 16 centromere positions (bin: 5 kb) generated with Chromosight in quantify mode (option: --pattern border, --perc-zero=100) (Matthey-Doret et al., 2020). These windows are taken from a balanced and detrended contact map. The detrending corrects for the distance-dependent contact decay due to polymeric behaviour (see Matthey-Doret et al., 2020, for more details). Because the contact map is symmetric and that the cis-centromere pile-up is centered on the diagonal, only half of the average pile-up is presented. Trans-centromere pile-up were similarly generated by Chomosight, but with the option --inter, and centered on the 120 centromere intersections.

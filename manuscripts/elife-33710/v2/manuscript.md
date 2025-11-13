@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.33710.001 Leptin is critical for energy balance, glucose homeostasis, and for metabolic and neuroendocrine adaptations to starvation. A prevalent model predicts that leptin’s actions are mediated through pro-opiomelanocortin (POMC) neurons that express leptin receptors (LEPRs). However, previous studies have used prenatal genetic manipulations, which may be subject to developmental compensation. Here, we tested the direct contribution of POMC neurons expressing LEPRs in regulating energy balance, glucose homeostasis and leptin secretion during fasting using a spatiotemporally controlled Lepr expression mouse model. We report a dissociation between leptin’s effects on glucose homeostasis versus energy balance in POMC neurons. We show that these neurons are dispensable for regulating food intake, but are required for coordinating hepatic glucose production and for the fasting-induced fall in leptin levels, independent of changes in fat mass. We also identify a role for sympathetic nervous system regulation of the inhibitory adrenergic receptor (ADRA2A) in regulating leptin production. Collectively, our findings highlight a previously unrecognized role of POMC neurons in regulating leptin levels.
+Leptin is critical for energy balance, glucose homeostasis, and for metabolic and neuroendocrine adaptations to starvation. A prevalent model predicts that leptin’s actions are mediated through pro-opiomelanocortin (POMC) neurons that express leptin receptors (LEPRs). However, previous studies have used prenatal genetic manipulations, which may be subject to developmental compensation. Here, we tested the direct contribution of POMC neurons expressing LEPRs in regulating energy balance, glucose homeostasis and leptin secretion during fasting using a spatiotemporally controlled Lepr expression mouse model. We report a dissociation between leptin’s effects on glucose homeostasis versus energy balance in POMC neurons. We show that these neurons are dispensable for regulating food intake, but are required for coordinating hepatic glucose production and for the fasting-induced fall in leptin levels, independent of changes in fat mass. We also identify a role for sympathetic nervous system regulation of the inhibitory adrenergic receptor (ADRA2A) in regulating leptin production. Collectively, our findings highlight a previously unrecognized role of POMC neurons in regulating leptin levels.
 
 ## Introduction
 
@@ -41,13 +41,25 @@ Here, we report that a subset of POMC neurons that express LEPRs directly contro
 
 ## Results
 
-## LEPR-expressing POMC neurons are required for normal liver insulin sensitivity in adult mice
+### LEPR-expressing POMC neurons are required for normal liver insulin sensitivity in adult mice
 
 The use of conventional prenatal PomcCre models was key in deciphering the contribution of many receptors and pathways in glucose and energy homeostasis (Hill et al., 2010; Xu et al., 2010; Berglund et al., 2012; Caron et al., 2016). However, it is now appreciated that prenatal manipulations may lead to compensatory events during development (Padilla et al., 2010; Bouret et al., 2004)). Importantly, there is a subpopulation of cells that express PomcCre during development, but do not express POMC in adults (Padilla et al., 2010). To circumvent these issues, we used a tamoxifen-inducible PomcCreERt2 transgenic mouse model (Berglund et al., 2013) to generate PomcCreERt2::Leprflox/flox mice in which Lepr expression is spatiotemporally controlled in a neuron-specific fashion. We first assessed the impact of adult deletion of LEPR-expressing POMC neurons on glucose homeostasis. Fed and fasting glycemia were not different before, or one week after, injection of tamoxifen, indicating that the drug per se, did not impair glucose levels (Figure 1A). However, adult ablation of LEPRs from POMC neurons resulted in significantly higher fasting glycemia as early as two weeks post-deletion, while fed glycemia was greater at three weeks (Figure 1A). This effect was sustained for the entire experimental period. Fed and fasting insulin and glucagon levels were not different between groups (Figure 1B–C). Although no changes in glycemia were detectable in the first week, insulin response was already substantially impaired, as assessed by an insulin tolerance test (Figure 1D–E). We did not observe any difference in glycemia following a glucagon stimulation test (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33710/elife-33710-fig1-v2.jpg)
+
+**Figure 1.:** (A) Fed and fasting (16 hr) glucose one week before, and every week for four weeks after, PomcCreERt2::Leprflox/flox and littermate controls were injected with the last dose of tamoxifen (n = 12). (B) Fed and fasting (48 hr) insulin four weeks after tamoxifen was given (n = 4–6). (C) Fed and fasting (48 hr) glucagon four weeks after tamoxifen was given (n = 4–6). (D) Glucose excursion during an insulin tolerance test (ITT) only one week following the last injection of tamoxifen (n = 5–6). (E) Area under the curve for the ITT shown in B (n = 5–6). (F) Glucose infusion rate (GIR) needed to maintain euglycemia (119.3 ± 3.9 vs 122.0 ± 8.2 mg/dl) during an hyperinsulinemic-euglycemic clamp performed only one week following the last injection of tamoxifen (n = 6). (G) Glucose disposal (Rd) during the same hyperinsulinemic-euglycemic clamp (n = 6). (H) Basal and clamped hepatic glucose production (HPG) (n = 6). (I) Basal and clamped lipolysis rate as assessed by measuring free fatty acid (FFA) levels (n = 6). The data are expressed as the mean ± SEM. ***p<0.001, **p<0.01 and *p<0.05 versus littermate controls.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33710/elife-33710-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) PomcCreERt2 mice were crossed with Ai14(RCL-tdT)-D mice, injected with tamoxifen using the described paradigm. Using immunohistochemistry, tdTomato expression (red) was colocalized with β-endorphin (marker of POMC neurons) expression (green) 2 weeks later. (B) The inducible Cre model does not recombine in extra-hypothalamic areas, except for a few β-endorphin + cells located in the nucleus tractus solitarius in the HB and the pituitary. (C) Leptin-induced Stat3 activation in the arcuate nucleus of the hypothalamus. Mice were injected with tamoxifen using the described paradigm and leptin (5 mg/kg, i.p.) was administrated in 16h-fasted animals. Animals were decapitated 45 min later and pStat3 was evaluated by immunohistochemistry. A representative image of n = 3 animals per group is shown. CB, cerebellum, CTX, cortex; DR, dorsal raphe; HB, hindbrain; HIP, hippocampus; OB, olfactory bulb; PT, pituitary; SC, spinal cord; STR, striatum.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33710/elife-33710-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** PomcCreERt2::Leprflox/flox and littermate control mice (n = 8) were treated with tamoxifen as described. 4 weeks after treatment, they were fasted for one hour and glucagon (120 µg/kg, i.p.) was administrated. Blood glucose was then monitored every 10 min for one hour. The data are expressed as the mean ± SEM.
+
 We further explored the impact of deleting LEPRs in adult POMC neurons on systemic glucose metabolism by performing hypersulinemic-euglycemic clamp assays one week after the deletion in an independent cohort of animals. The glucose infusion rate needed to maintain euglycemia (119.3 ± 3.9 vs 122.0 ± 8.2 mg/dl) was significantly decreased in knock-out animals (Figure 1F), further demonstrating whole-body insulin resistance. Importantly, glucose disposal was unaltered, but insulin-induced suppression of hepatic glucose production was drastically impaired in the clamped state (Figure 1G–H). Moreover, the ability of insulin to suppress lipolysis during the clamped state was unaltered, suggesting that insulin resistance occurred specifically in the liver (Figure 1I). Deletion of LEPRs in POMC neurons in adult mice did not affect fed or fasting levels of NEFA and triglycerides (data not shown), again suggesting that impaired liver insulin sensitivity, but presumably not impaired insulin secretion, contributes to systemic insulin resistance. Altogether, these data demonstrate that LEPR-expressing POMC neurons directly regulate liver metabolism in adult mice. This is in agreement with previous findings (Hill et al., 2010; Berglund et al., 2012) in which LEPRs were deleted during development. We found that insulin resistance can be detected one week post-deletion (Figure 1D–I), however blood glucose levels did not rise until two weeks post-deletion (Figure 1A). These findings suggest that deletion of LEPRs in adult POMC neurons impairs liver insulin sensitivity, and the resulting hepatic insulin resistance leads to the development of hyperglycemia.
 
-## LEPR-expressing POMC neurons are dispensable for the regulation of energy balance in adult mice
+### LEPR-expressing POMC neurons are dispensable for the regulation of energy balance in adult mice
 
 It has generally been assumed that LEPR-expressing POMC neurons are important for feeding and weight regulation (Cheung et al., 1997; Balthasar et al., 2005), despite evidence that other subsets of POMC neurons are more likely to regulate energy balance (Huo et al., 2009; Berglund et al., 2013). Because prenatal deletion of Lepr in POMC neurons impairs body weight and fat mass, the direct contribution of these neurons in regulating glucose homeostasis has always been hard to dissect. Here, we show that deleting LEPRs from POMC neurons in adult mice does not affect body weight or body composition (Figure 2A–C). Four weeks following the deletion, we evaluated food intake and energy expenditure using metabolic cages. We observed that food intake was unchanged in mice lacking LEPRs in adult POMC neurons (Figure 2D). Moreover, oxygen consumption, respiratory exchange ratio (VCO2/VO2) and physical activity were all unaltered (Figure 2E–G). These results suggest that LEPR-expressing POMC neurons regulate liver insulin sensitivity independently of changes in body weight.
 
@@ -65,7 +77,7 @@ Fasting reduces Pomc mRNA expression in the ARC (Mizuno et al., 1998), and this 
 
 **Figure 4.:** (A) Food intake and (B) Blood glucose up to six hours after food access was restored to 48 hr fasted PomcCreERt2::Leprflox/flox and littermate control mice, four weeks after tamoxifen was given (n = 8). The data are expressed as the mean ± SEM. **p<0.01 and *p<0.05 versus littermate controls.
 
-## LEPR-expressing POMC neurons are required for the fasting-induced fall in leptin levels independent of changes in fat mass in adult mice
+### LEPR-expressing POMC neurons are required for the fasting-induced fall in leptin levels independent of changes in fat mass in adult mice
 
 Fasting leads to a rapid fall in circulating leptin levels, despite no initial changes in fat mass (Becker et al., 1995; Moinat et al., 1995; Saladin et al., 1995; Ahima et al., 1996; Flier, 1998; Ahima et al., 1999). However, this regulation in leptin levels is blunted in LEPR-null animals (Hardie et al., 1996), suggesting that LEPRs per se are required for the starvation-induced fall in leptin. In order to better understand the potential contribution of LEPR-expressing POMC neurons in regulating leptin production, we compared the impact of 48 hr of fasting in prenatal and adult models. In contrast to prenatal deletions (Figure 5A–B), deleting LEPRs in POMC neurons in adult mice did not affect fasting-induced decreases in body weight or fat-mass loss (Figure 5E–F). Consistent with previous reports (Moinat et al., 1995; Trayhurn et al., 1995; Ahima et al., 1996; Hardie et al., 1996), fasting induced a robust fall in both circulating leptin and visceral adipose Lep mRNA levels in wild-type littermate controls (Figure 5C–D and G–H). Strikingly, this effect was prevented in mice with either prenatal (Figure 5C–D) or adult (Figure 5G–H) deletions of LEPRs in POMC neurons. Although modest, expression of Lep in visceral adipose tissue was significantly higher, in fed mice lacking LEPRs in adult POMC neurons (Figure 5D and H), suggesting that the deletion may affect leptin regulation even in the fed state. Collectively, these results indicate that LEPR-expressing POMC neurons are required for the starvation-induced fall in leptin, independent of changes in fat mass. Preventing fasting-induced falls in leptin might explain the blunted response observed in Agrp and Npy expression (Figure 3B–C).
 
@@ -73,13 +85,13 @@ Fasting leads to a rapid fall in circulating leptin levels, despite no initial c
 
 **Figure 5.:** (A) Weight loss, and (B) fat-mass loss after a 48 hr fast in mice with constitutive (prenatal) deletion of LEPRs in POMC neurons and littermate controls (n = 7–10). (C) Plasma leptin levels, and D) visceral adipose tissue Lep mRNA expression in fed or fasted (48 hr) mice with constitutive deletion of LEPRs in POMC neurons and littermate controls (n = 7–14). (E) Weight loss, and (F) fat-mass loss after a 48 hr fast in PomcCreERt2::Leprflox/flox and littermate control mice four weeks after tamoxifen was given (n = 12). (G) Plasma leptin levels, and (H) visceral adipose tissue Lep mRNA expression in fed or fasted (48 hr) in PomcCreERt2::Leprflox/flox and littermate control mice four weeks after tamoxifen was given (n = 6–13). The data are expressed as the mean ± SEM. ***p<0.001, **p<0.01 and *p<0.05 versus littermate controls.
 
-## Gi-coupled alpha-2A adrenergic receptors (ADRA2A) regulate leptin synthesis
+### Gi-coupled alpha-2A adrenergic receptors (ADRA2A) regulate leptin synthesis
 
 Given that adult deletions of LEPRs in POMC neurons are sufficient to prevent the fasting-induced fall in circulating leptin levels, we next sought to determine how these neurons regulate leptin production in adipose tissue. One way the CNS may negatively regulate leptin is through the activation of ADRB3 (Moinat et al., 1995; Collins and Surwit, 1996; Gettys et al., 1996; Giacobino, 1996; Mantzoros et al., 1996; Trayhurn et al., 1996; Trayhurn et al., 1998; Evans et al., 1999). In addition, overexpression of ADRA2 in mouse adipose tissue increases leptin levels (Valet et al., 2000), suggesting that the ADRA2/ADRB3 balance in adipocytes is critical for regulation of leptin. We first investigated the expression of the nine identified adrenergic receptors in visceral adipose tissue (Figure 6A). The expression of most of the adrenergic receptors was unchanged in mice with adult deletions of LEPRs in POMC neurons compared to wild-type littermates. However, the fasting-induced decrease in Adra2a mRNA expression was not only prevented, but reversed following the deletion of LEPRs in adult POMC neurons (Figure 6A). Using an independent cohort, we found that this observation was not only reproducible, but also specific to visceral adipose tissue (Figure 6B–C). This result is in line with the fact that visceral but not subcutaneous adipose tissue is the primary source of leptin in rodents (Trayhurn et al., 1995). These findings suggest that ADRA2A may be a candidate for mediating the starvation-induced fall in leptin.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/33710/elife-33710-fig6-v2.jpg)
 
-**Figure 6.:** Adra2a with fasting.(A) Expression of the nine adrenergic receptors in fed of fasted (24 hr – 48 hr) PomcCreERt2::Leprflox/flox and littermate control mice four weeks after tamoxifen was given (n = 8–14). (B) Comparison of the expression of Adra2a and (C) Adrb3 in epidydimal (eWAT) versus inguinal (iWAT) adipose tissue in an independent cohort of fed of fasted (48 hr) PomcCreERt2::Leprflox/flox and littermate control mice four weeks after tamoxifen was given (n = 5–6). The data are expressed as the mean ± SEM. ***p<0.001 and *p<0.05 versus littermate controls.
+**Figure 6.:** (A) Expression of the nine adrenergic receptors in fed of fasted (24 hr – 48 hr) PomcCreERt2::Leprflox/flox and littermate control mice four weeks after tamoxifen was given (n = 8–14). (B) Comparison of the expression of Adra2a and (C) Adrb3 in epidydimal (eWAT) versus inguinal (iWAT) adipose tissue in an independent cohort of fed of fasted (48 hr) PomcCreERt2::Leprflox/flox and littermate control mice four weeks after tamoxifen was given (n = 5–6). The data are expressed as the mean ± SEM. ***p<0.001 and *p<0.05 versus littermate controls.
 
 The function of ADRA2A in adipocyte physiology and pathophysiology is well known (Lafontan and Berlan, 1995; Garg et al., 2016). However, its role in leptin synthesis has never been investigated. To functionally validate a role for ADRA2 in regulating leptin expression and production, C57BL/6J mice were intraperitoneally injected with the ADRA2 agonist clonidine, and visceral adipose tissue was collected 1 hr later. Strikingly, clonidine increased Lep mRNA expression by six fold (Figure 7A). In another cohort of C57BL/6J mice, we also observed that clonidine rapidly increased plasma leptin levels (Figure 7B). We next sought to evaluate whether clonidine treatment altered leptin production in mice with adult deletions of LEPRs in POMC neurons. Because clonidine affects every ADRA2, including those express in the CNS, we performed the experiment using adipose tissue explants from mice that were fed or fasted for 48 hr prior to the euthanasia. In fed animals, we found higher leptin release in knock-out animals (Figure 7C), consistent with the higher expression of Lep mRNA observed in visceral adipose tissue (Figure 5D,H). Furthermore, in the fasted condition, clonidine was effective at inducing leptin release only in adipose tissue explants from mice with LEPRs deleted in adult POMC neurons (Figure 7C). These explant studies indicate that this effect is adipose tissue-autonomous and not mediated through central effects. These results are in line with the observation that Adra2a mRNA expression increases with fasting in visceral adipose tissue of knock-out animals (Figure 6A). Clonidine was ineffective in subcutaneous adipose tissue (Figure 7D), again suggesting that the regulation of leptin production is specific to visceral fat. Together, these results suggest a role for ADRA2 as critical regulator of both leptin expression and production. In addition, these data suggest that ablation of LEPRs in adult POMC neurons prevents the starvation-induced fall in leptin by increasing ADRA2A activity in visceral white adipose tissue.
 
@@ -109,52 +121,110 @@ In conclusion, our study indicates that a subset POMC neurons that express LEPRs
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Tg(Pomc-cre)1Lowl)</td>
+      <td>PomcCre mouse</td>
+      <td>PMID: 17556551</td>
+      <td>RRID:IMSR_JAX:010714</td>
+    </tr>
+    <tr>
+      <td>Strain (Tg(Pomc-cre/ERT2)#Jke)</td>
+      <td>PomcCreERt2 mouse</td>
+      <td>PMID: 24177424</td>
+      <td>RRID:MGI:5569339</td>
+    </tr>
+    <tr>
+      <td>Strain (Leprtm1.1Chua)</td>
+      <td>Leprflox/flox mouse</td>
+      <td>PMID: 15389315</td>
+      <td>RRID:MGI:3511747</td>
+    </tr>
+    <tr>
+      <td>Strain (Gt(ROSA)26Sortm14(CAG-tdTomato)Hze)</td>
+      <td>Ai14(RCL-tdT)-D mouse</td>
+      <td>PMID: 20023653</td>
+      <td>RRID:IMSR_JAX:007914</td>
+    </tr>
+    <tr>
+      <td>Antibody (AB_331586)</td>
+      <td>phospho-Stat3 antibody</td>
+      <td>Tyr705, Cell Signaling Technology Cat# 9131,</td>
+      <td>RRID:AB_331586</td>
+    </tr>
+    <tr>
+      <td>Antibody (AB_2314007)</td>
+      <td>β-endorphin antibody</td>
+      <td>Phoenix Pharmaceuticals Cat# H-022–33</td>
+      <td>RRID:AB_2314007</td>
+    </tr>
+    <tr>
+      <td>Antibody (AB_639922)</td>
+      <td>tdTomato antibody</td>
+      <td>Santa Cruz Biotechnology Cat# sc-33354,</td>
+      <td>RRID:AB_639922</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Animal work described in this manuscript has been approved and conducted under the oversight of the UT Southwestern Institutional Animal Care and Use Committee (IACUC). Male mice were housed at an ambient temperature of 23 ± 1˚C and maintained on a 12 hr light/dark cycle (lights on 0700–1900) and fed with normal mouse chow diet (Harlan, Teklad Global 16% Protein Rodent Diet 2016; 12% kcal from fat, 3 kcal/g).
 
 PomcCre (RRID:IMSR_JAX:005965) mice (Balthasar et al., 2004) and PomcCreERt2 (RRID:MGI:5569339) mice (Berglund et al., 2013) were crossed with Leprflox/flox (RRID:MGI:3511747) mice (McMinn et al., 2004) to generate mice with constitutive deletion of LEPRs in POMC neurons (PomcCre::Leprflox/flox) and adult deletion of LEPRs in POMC neurons (PomcCreERt2::Leprflox/flox) respectively. Mice were maintained on a C57Bl/6J (RRID:IMSR_JAX:000664) background at UT Southwestern Medical Center. Adult ablation was induced by tamoxifen. Tamoxifen (0.15 mg/g; Sigma-Aldrich, T5648) was suspended in corn oil (Sigma-Aldrich, C8267) and was administered intraperitoneally (three injections every 48 hr for 5 days) to 10–12 week-old PomcCreERt2::Leprflox/flox and PomcCreERt2::Lepr+/+ (littermate control) mice. Fasting experiments were performed from 0800 to 0800 (48 h) or from 1600 to 0800 (16 h). The efficiency of the recombination following tamoxifen was performed by crossing PomcCreERt2 mice with Ai14(RCL-tdT)-D mice (RRID:IMSR_JAX:007914) mice. Validation of the mouse model is presented in Figure 1—figure supplement 1.
 
-## Immunohistochemistry and validation of the inducible mice
+### Immunohistochemistry and validation of the inducible mice
 
 Immunohistochemistry was performed to visualize phospho-Stat3 (Tyr705, Cell Signaling Technology Cat# 9131, RRID:AB_331586), β-endorphin (Phoenix Pharmaceuticals Cat# H-022–33, RRID:AB_2314007), as well as the fluorescent reporter tdTomato (Santa Cruz Biotechnology Cat# sc-33354, RRID:AB_639922) in the brain and pituitary (Scott et al., 2009; Williams et al., 2010). For leptin-induced Stat3 activation experiments, mice were fasted for 16 hr (1600 to 0800) and injected i.p. with mouse recombinant leptin (5 mg/kg; National Hormone and Peptide Program, AFP1783). Mice were anesthetized 45 min later using an i.p. injection of chloral hydrate (350 mg/kg) and then perfused transcardially with 0.9% saline followed by 10% neutral buffered formalin.
 
-## Assessment of insulin sensitivity and glucose levels
+### Assessment of insulin sensitivity and glucose levels
 
 Blood samples were collected from the tail vein and glucose was measured using a glucometer (Bayer’s Contour Blood Glucose Monitoring System; Leverkusen, Germany). For insulin tolerance test (ITT), mice were fasted for 4 hr and then administered insulin by intraperitoneal injection (0.75 U/kg body weight, human insulin, Eli Lilly).
 
-## Hyperinsulinemic-euglycemic clamps
+### Hyperinsulinemic-euglycemic clamps
 
 Hyperinsulinemic-euglycemic clamps were performed on conscious, unrestrained mice as previously described (Holland et al., 2011). Euglycemia was maintained by variable infusion of 20% dextrose. Steady state was achieved 80 min after initiating hyperinsulinemia and maintained for 40 min. Additional blood samples were taken before initiating hyperinsulinemia and at the end of the clamp for analysis of insulin and free fatty acids.
 
-## Glucagon stimulation test
+### Glucagon stimulation test
 
 Glucagon stimulation test was performed in mice fasted for one hour (0800 to 0900). Briefly, human recombinant glucagon (120 µg/kg i.p.) was given and blood glucose monitored every 10 min for one hour.
 
-## Assessment of leptin, insulin and glucagon levels
+### Assessment of leptin, insulin and glucagon levels
 
 Blood was collected in EDTA tubes. Plasma was isolated by centrifugation (4000 g x 10 min at 4°C) and was stored at −80°C for further biochemical analyses. Plasma leptin (Mouse/Rat Leptin ELISA, ALPCO, 22-LEPMS-E01), insulin (Mouse Ultrasensitive Insulin ELISA, ALPCO, 80-INSMSU-E01), and glucagon (Mercodia Glucagon ELISA, 10-1281-01) were measured following manufacturer recommendations.
 
-## Assessment of body composition
+### Assessment of body composition
 
 Fat mass and lean mass were assessed by nuclear magnetic resonance (NMR) spectroscopy using a nuclear magnetic resonance (NMR) spectroscopy (Bruker Minispec mq10 NMR 0.23T/10MHz).
 
-## Metabolic cages studies
+### Metabolic cages studies
 
 A combined indirect calorimetry system (CaloSys Calorimetry System, TSE Systems Inc.) was used for all metabolic studies. Experimental animals were acclimated for 5 days in a metabolic chamber with food and water. Oxygen consumption (VO2), carbon dioxide production (VCO2), respiratory exchange ration (RER) and food intake were measured after acclimation. Locomotion was measured using a multi-dimensional infrared light beam system.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total mRNA was isolated from visceral (epidymal) and subcutaneous (inguinal) white adipose tissues using the RNeasy Lipid Tissue Mini Kit (Qiagen, 74104). Total mRNA was isolated from liver using RNA STAT-60 reagent (Tel-Test, Inc). The RNA concentrations were estimated from absorbance at 260 nm. cDNA synthesis was performed using a High Capacity cDNA Kit (Applied Biosystems). mRNA extraction and cDNA synthesis were performed following the manufacturer’s instructions. cDNA was diluted in DNase-free water before quantification by real-time PCR. mRNA transcript levels were measured in duplicate samples using a ABI 7900 HT Sequence Detection System (Applied Biosystems). The relative amounts of all mRNAs were calculated using the ΔΔCT assay. Primers for 18 s (Hs99999901_s1), Adra1a (Mm00442668_m1), Adra1b (Mm00431685_m1), Adra1d (Mm01328600_m1), Adra2a (Mm00845383_s1), Adra2b (Mm00477390_s1), Adra2c (Mm00431686_s1), Adrb1 (Mm00431701_s1), Adrb2 (Mm02524224_s1), Adrb3 (Mm02601819_g1), Agrp (Mm00475829_g1), Lep (Mm00434759_m1), Npy (Mm00445771_m1) and Pomc (Mm00435874_m1) were purchased from Applied Biosystems.
 
-## Pharmacological activation of ADRA2 in vivo
+### Pharmacological activation of ADRA2 in vivo
 
 The ADRA2 agonist clonidine hydrochloride (Sigma-Aldrich, St. Louis, MO, US; C7897) was administered intraperitoneally (1 mg/kg) to 10–12 week-old C57BL/6J mice following 4 hr of fasting. Two independent cohorts were used to evaluate Lep RNA expression and circulating leptin levels.
 
-## Ex vivo leptin release assay
+### Ex vivo leptin release assay
 
 PomcCreERt2::Leprflox/flox and PomcCreERt2::Lepr+/+ (littermate control) mice were fasted for 48 hr and ~10–20 mg of visceral (epidydimal) and subcutaneous (inguinal) white adipose tissues were cultured in 96 wells plate containing 0.200 ml of Krebs-Ringer Bicarbonate Buffer containing 5 mM glucose and 4% fatty acid-free BSA, as described (Caviglia et al., 2011). Tissues were subsequently treated either with or without 1 µM clonidine hydrochloride (Sigma-Aldrich, St. Louis, MO, US; C7897) for basal and clonidine conditions respectively, and leptin release was measured by ELISA and corrected to tissue weight.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are expressed as mean ± SEM. Comparison between two experimental conditions were analyzed by Student’s unpaired t test. Two-way ANOVA followed by Bonferroni post hoc test was used to compare more than two experimental conditions. All statistical tests were performed using GraphPad Prism (version 7.0), and p<0.05 was considered statistically significant.

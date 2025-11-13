@@ -23,7 +23,7 @@ Historically, the Y chromosome’s biological function has been misunderstood. F
 
 In this review, we first describe the evolutionary history of the X-Y chromosome pair, then use it as a paradigm with which to understand how the Y chromosome has become functionally specialised across mammals. Focusing on humans and mice, we discuss the early evidence that the Y chromosome is more than just a sex switch, and the subsequent efforts to discover the Y genes involved in spermatogenesis. We then highlight how experimental limitations have impacted progress in the field and propose approaches to enrich our understanding of Y-chromosome function.
 
-## Evolution of the mammalian sex chromosomes
+### Evolution of the mammalian sex chromosomes
 
 The mammalian heteromorphic X and Y chromosomes have evolved from an ancestral pair of autosomes (Figure 1). This seminal concept, like many principles governing sex chromosome evolution, was hypothesised by Ohno, 1967. Henceforth, breakthroughs in Y-chromosome sequencing and assembly, which were long hindered by the Y’s repeat-rich nature and homology to the X chromosome, have been crucial to understand sex-chromosome evolution (Bellott et al., 2014; Hughes et al., 2012; Hughes et al., 2010; Li et al., 2013; Skaletsky et al., 2003; Soh et al., 2014). We now know that divergence into a ‘proto-Y’ started following mutations of Sox3, creating the sex-determining region Sry gene (Foster and Graves, 1994; Marshall Graves, 1998). The evolution of Sry-specific sex determination is thought to have happened around 160–166 million years ago after the split between therians and monotremes (egg-laying mammals) (Potrzebowski et al., 2008; Veyrunes et al., 2008), and prior to the split between marsupials (metatherians) and eutherians (Luo et al., 2011).
 
@@ -37,9 +37,38 @@ Importantly, the loss of recombination associated with stratification allowed ac
 
 In addition, the longevity of certain X-Y gene pairs has been convergent between eutherians and marsupials. Indeed, one stratum independently evolved in both therian lineages (Figure 1). Two genes on this stratum have convergently survived, suggesting that Y gene decay is not stochastic (Bellott et al., 2014). Altogether, it is likely that X-Y gene-pair retention did not occur at random. Generally, it is thought that two evolutionary strategies have protected a specific set of Y genes: maintenance of ancestral X-Y gene pairs which are sensitive to transcriptional dosage; or retention and amplification of testis-biased gene families.
 
-## Evolutionary forces and functional specialisation of the Y chromosome
+### Evolutionary forces and functional specialisation of the Y chromosome
 
 Whereas X-chromosome content has remained mostly unchanged over evolutionary time, the Y chromosome has experienced extensive genetic decay. As a result, females carry two copies of the numerous X-linked genes, whereas males carry a single copy. This creates an imbalance between X and autosome transcriptional dosage (X:A ratio) in males as well as between sexes (Table 1). This led to the evolution of dosage-compensation mechanisms, as hypothesised by Ohno, 1967. Firstly, twofold X-chromosome upregulation in both males and females re-established X:A equilibrium in males (Table 1; Deng et al., 2014). However, without other mechanisms, the X:A ratio in females would be two. This was prevented by the evolution of X-chromosome inactivation, a process by which one X is transcriptionally silenced in females, bringing the overall X-output level to that of the autosomes (Table 1; Brockdorff et al., 2020; Loda and Heard, 2019; Lyon, 1961).
+
+**Table 1.**
+ Dosage compensation of the sex chromosomes.Without dosage compensation, the transcriptional output of each cell is 0.5 for individual chromosomes, and one for chromosome pairs. X-chromosome upregulation (XCU) doubles each X-chromosome’s output (shown in red). X-chromosome inactivation (XCI) silences output of one X in females (shown in blue).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>No compensation</th>
+      <th>XCU</th>
+      <th>XCI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>female</td>
+      <td>AA = 1XX = 1</td>
+      <td>AA = 1XX = 2</td>
+      <td>AA = 1XX = 1</td>
+    </tr>
+    <tr>
+      <td>male</td>
+      <td>AA = 1XY = 0.5</td>
+      <td>AA = 1XY = 1</td>
+      <td>AA = 1XY = 1</td>
+    </tr>
+  </tbody>
+</table>
 
 X-upregulation and X-inactivation can ultimately compensate for genes lost on the Y. However, as an X-Y gene pair loses its Y-copy due to decay, it goes through a transition period during which there will be gene-dosage imbalance. During that intermediate state, the pair has a non-functional Y gene and a non-compensated X gene. For haploinsufficient genes, with function sensitive to their expression dosage, this transition state would be disadvantageous and selected against. As such, dosage-sensitive Y genes have been under strong selective pressure to survive. For instance, studies indicate that Y ancestral genes that share ubiquitous housekeeping regulatory functions with their X homologue, which would be very sensitive to change in expression levels, have preferentially survived on the Y (Bellott et al., 2014; Cortez et al., 2014; Jegalian and Page, 1998; Lahn and Page, 1997). Indeed, the annotations of remaining X-Y pairs link them to the sensitive regulation of histone lysine demethylation, stem-cell self-renewal, splicing, translation initiation and deubiquitylation (Bellott et al., 2014; Lahn and Page, 1997). A key prediction is that if an X-Y pair survives and maintains ancestral gene expression and function, the X copy should escape X-inactivation in females to avoid dosage imbalance. Indeed, the study of allele-specific expression in human, mouse and opossum has revealed that a higher proportion of X-linked genes with a surviving Y homologue escape X-inactivation, compared to genes with no Y homologues or with those showing signs of functional differentiation (Bellott et al., 2014; Cortez et al., 2014). The strict dosage requirement of sex-linked genes can be further inferred from individuals with Turner syndrome (XO), who only have a single full X chromosome (Gravholt et al., 2019). Indeed, human X monosomy is associated with poor embryonic viability and individuals surviving into adulthood tend to be mosaic for at least part of the second sex chromosome. This illustrates the severity of X-X or X-Y dosage imbalance. Interestingly, Turner syndrome is less severe in mice, even in fully XO animals (Burgoyne et al., 1983b; Burgoyne et al., 1983a; Burgoyne and Baker, 1981). This could be in part because mice have fewer surviving Y-linked ancestral genes (9 vs 17 in humans) (Figure 2).
 
@@ -51,7 +80,7 @@ Another strategy thought to have protected Y-genes from regulatory and structura
 
 Altogether, evolutionary insights have shown that surviving mammalian Y genes tend to fall into two categories: testis-specialised fertility genes or dosage-sensitive ubiquitous housekeepers (Lahn and Page, 1997). This is unlike mammalian autosomes which harbour genes with highly variable biological functions and expression patterns. However, despite the apparent specialisation of the Y chromosome, its exact somatic and fertility functions remain to be fully dissected. Particularly interesting are the functions of the Y chromosome in the context of spermatogenesis, which will be discussed in the rest of this review.
 
-## Mammalian spermatogenesis
+### Mammalian spermatogenesis
 
 Spermatogenesis allows continuous formation of gametes from spermatogonial stem cells (Figure 3). It occurs in cycles and can broadly be divided in three phases: mitosis, meiosis and spermiogenesis (Figure 3). All stages happen in the epithelium of the seminiferous tubules of the testis. As cells progress through development, they migrate away from the basal seminiferous membrane towards the lumen (Figure 3). The spermatogenic cycle has been mostly studied in rodents but the mechanisms are believed to be well-conserved across mammals. A major difference seems to be in developmental tempo. In mouse, one cycle can be dissected into 12 stages occurring over 8.6 days, and four cycles (35 days) are required to complete spermatogenesis, from spermatogonial stem cells to mature spermatozoa (de Rooij, 2017; Oakberg, 1956a; Oakberg, 1956b). In humans, one spermatogenic cycle is completed every 16 days, and ~72 days are needed for full differentiation of spermatogonial stem cells into spermatozoa (Muciaccia et al., 2013).
 
@@ -69,11 +98,192 @@ After prophase I, metaphase I takes place and chromosome homologues are lined up
 
 Spermiogenesis is characterised by the emergence of unique sperm-specific morphological features and by dramatic epigenetic reprogramming (Bao and Bedford, 2016; O’Donnell, 2014). Importantly, DNA of differentiating spermatids undergo increasing compaction in the nucleus (O’Donnell, 2014). This is achieved notably through near genome-wide replacement of histones with protamines. Protamines permit an up to 20-fold increase in chromatin condensation (Balhorn, 2007). Structurally, the acrosome starts to form over the anterior part of the spermatid nucleus and the flagellum, the propeller of the sperm, elongates on the posterior side (Figure 3). Additionally, the cytoplasm is transported along the spermatid tail and finally disposed (O’Donnell, 2014). Interestingly, most X/Y-linked genes remain repressed throughout spermiogenesis (Greaves et al., 2006; Namekawa et al., 2006; Sin et al., 2012; Turner et al., 2006), but some are re-activated (Hendriksen, 1999; Hendriksen et al., 1995; Mueller et al., 2013; Mueller et al., 2008; Wang et al., 2005). By the end of this post-meiotic stage, sperm are freed into the lumen of the tubule.
 
-## The Y chromosome: more than just a sex switch
+### The Y chromosome: more than just a sex switch
 
 The first evidence of the Y chromosome having any biological function arose from studies of mice (Welshons and Russell, 1959) and humans with Turner (XO) or Klinefelter (XXY) syndrome (Ford et al., 1959; Jacobs and Strong, 1959). These reports showed that in eutherian mammals, sex was determined by the presence/absence of the Y, independent of the number of X chromosomes. Later research on sex-reversed men; rare individuals which are phenotypically males but have an XX karyotype, narrowed down the search for the male-determining region to the short arm of the Y chromosome. For instance, using DNA hybridisation with several Y-DNA probes, it was showed that these XX males carried translocated DNA from the Y chromosome on one of their X chromosome (Guellaen et al., 1984; Page, 1986; Page et al., 1987; Page et al., 1985). As additional XX males were studied and the number of markers increased, the candidate region was narrowed to 35 kb containing SRY (Sinclair et al., 1990). In the span of 2 years, the evidence for SRY being the testis-determining factor became undeniable. The mouse orthologue was cloned and found to be expressed in specific somatic cells of the embryonic gonad at the time of testis differentiation (Gubbay et al., 1990; Koopman et al., 1990). It was also shown that both sex-reversed XY mice and women had mutations in Sry (Berta et al., 1990; Jäger et al., 1990; Lovell-Badge and Robertson, 1990). Finally, it was shown that, in mouse, Sry alone is sufficient to induce testicular development (Koopman et al., 1991), as XX mice transgenic for Sry developed as males.
 
 Sry is a transcription factor of the SOX family that encodes a protein with an high mobility group (HMG)-box DNA binding domain (Table 2; Kashimada and Koopman, 2010; Figure 2). Much of what is known about the function of Sry in testis determination result from mouse studies. During murine embryogenesis, Sry upregulates Sox9 in Sertoli cell precursors between E11.5 and E12.5 (Kashimada and Koopman, 2010). SOX9 then activates fibroblast growth factor 9 (Fgf9) in a feedforward loop, which represses Wnt4 and the female pathway that would otherwise trigger ovary development (Capel, 2017; Kashimada and Koopman, 2010). Importantly, it has been shown that precise regulation of levels and onset of Sry expression is key for Sertoli cell differentiation. Indeed, minor alteration in amount and timing of Sry expression leads to sex-reversal phenotypes (Kashimada and Koopman, 2010).
+
+**Table 2.**
+ Summary of mouse Y chromosome genes and their known functions.A gene is classified as ‘ancestral’ if it is predicted to have been present in the last common eutherian ancestor. The list of animals where each gene is conserved only includes organisms where a high-quality Y chromosome sequence is available, and the presented list is not exhaustive. *Rbmy was initially thought to be important in spermatid morphogenesis, but this was later questioned (Szot et al., 2003).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Y gene</th>
+      <th>Sequence class</th>
+      <th>X-homologue</th>
+      <th>Y copy number</th>
+      <th>Conserved in</th>
+      <th>Reported functions in the testis</th>
+      <th>Key gene ontology process</th>
+      <th>Expression pattern</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sry</td>
+      <td>Ancestral</td>
+      <td>Sox3</td>
+      <td>1</td>
+      <td>Opossum, bull, rat, mouse, marmoset, rhesus, chimp, human</td>
+      <td>Testis determination</td>
+      <td>DNA-binding transcription factor activity</td>
+      <td>Somatic cells in genital ridge, germ cell specific in adult</td>
+    </tr>
+    <tr>
+      <td>Rbmy array</td>
+      <td>Ancestral</td>
+      <td>Rbmx</td>
+      <td>~30</td>
+      <td>Opossum, bull, rat, mouse, marmoset, rhesus, chimp, human</td>
+      <td>Unknown *</td>
+      <td>RNA splicing</td>
+      <td>Testis biased</td>
+    </tr>
+    <tr>
+      <td>Zfy1,Zfy2</td>
+      <td>Ancestral</td>
+      <td>Zfx</td>
+      <td>2</td>
+      <td>Bull, rat, mouse, marmoset, rhesus, chimp, human</td>
+      <td>Apoptotic elimination of univalent spermatocytes at metaphase I, meiosis II completion, MSCI initiation and maintenance, spermatid head and tail morphogenesis</td>
+      <td>Transcription activator</td>
+      <td>Spermatogenic cells specific</td>
+    </tr>
+    <tr>
+      <td>Kdm5d</td>
+      <td>Ancestral</td>
+      <td>Kdm5c</td>
+      <td>1</td>
+      <td>Opossum, rat, mouse, marmoset, rhesus, chimp, human</td>
+      <td>Unknown</td>
+      <td>Histone demethylase that specifically demethylates 'Lys-4' of histone H3</td>
+      <td>Ubiquitous</td>
+    </tr>
+    <tr>
+      <td>Uty</td>
+      <td>Ancestral</td>
+      <td>Utx</td>
+      <td>1</td>
+      <td>Bull, rat, mouse, marmoset, rhesus, chimp, human</td>
+      <td>Unknown</td>
+      <td>Histone demethylase activity (H3-K27 specific)</td>
+      <td>Ubiquitous</td>
+    </tr>
+    <tr>
+      <td>Ddx3y</td>
+      <td>ancestral</td>
+      <td>Ddx3x</td>
+      <td>1</td>
+      <td>Bull, rat, mouse, marmoset, rhesus, chimp, human</td>
+      <td>Unknown</td>
+      <td>ATP-dependent RNA helicase</td>
+      <td>Ubiquitous</td>
+    </tr>
+    <tr>
+      <td>Usp9y</td>
+      <td>Ancestral</td>
+      <td>Usp9x</td>
+      <td>1</td>
+      <td>Bull, rat, mouse, marmoset, rhesus, chimp, human</td>
+      <td>Unknown</td>
+      <td>Ubiquitination regulator, peptidase C19</td>
+      <td>Testis biased</td>
+    </tr>
+    <tr>
+      <td>Uba1y</td>
+      <td>Ancestral</td>
+      <td>Uba1x</td>
+      <td>1</td>
+      <td>Opossum, bull, rat, mouse</td>
+      <td>Unknown</td>
+      <td>U1 ubiquitin activator</td>
+      <td>Testis biased, mostly spermatogonia and round spermatid</td>
+    </tr>
+    <tr>
+      <td>Eif2s3y</td>
+      <td>Ancestral</td>
+      <td>Eif2s3x</td>
+      <td>1</td>
+      <td>Bull, rat, mouse</td>
+      <td>Spermatogonial proliferation and differentiation</td>
+      <td>Translation initiation</td>
+      <td>Ubiquitous</td>
+    </tr>
+    <tr>
+      <td>Teyorf</td>
+      <td>Acquired</td>
+      <td>–</td>
+      <td>1</td>
+      <td>Mouse</td>
+      <td>Unknown</td>
+      <td>Claudin transmembrane</td>
+      <td>Testis specific</td>
+    </tr>
+    <tr>
+      <td>Prslly</td>
+      <td>Acquired</td>
+      <td>–</td>
+      <td>1</td>
+      <td>Mouse</td>
+      <td>Unknown</td>
+      <td>Serine-type endopeptidase activity</td>
+      <td>Testis specific</td>
+    </tr>
+    <tr>
+      <td>H2al2b, H2al2c</td>
+      <td>Acquired</td>
+      <td>H2al1</td>
+      <td>2</td>
+      <td>Mouse</td>
+      <td>Unknown</td>
+      <td>DNA packaging, pericentric heterochromatin regulation</td>
+      <td>Testis specific, expressed from round spermatid stage</td>
+    </tr>
+    <tr>
+      <td>Sly</td>
+      <td>Acquired</td>
+      <td>Slx,Slxl1</td>
+      <td>126</td>
+      <td>Mouse</td>
+      <td>Interacts with SSTY to recruit SMRT/N-Cor in turn mediating spermatid-specific gene expression</td>
+      <td>Chromatin remodelling</td>
+      <td>Testis biased</td>
+    </tr>
+    <tr>
+      <td>Srsy</td>
+      <td>Acquired</td>
+      <td>Srsx</td>
+      <td>197</td>
+      <td>Mouse</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>Testis biased</td>
+    </tr>
+    <tr>
+      <td>Ssty1&amp;2</td>
+      <td>Acquired</td>
+      <td>Sstx</td>
+      <td>85&amp;221</td>
+      <td>Mouse</td>
+      <td>H3K4me3-reader at the promoter of spermatid-specific genes, recruits SLY and SLX/SLX1</td>
+      <td>Methylated histone binding</td>
+      <td>Testis biased</td>
+    </tr>
+    <tr>
+      <td>Rbm31y</td>
+      <td>Acquired</td>
+      <td>Rbm31x</td>
+      <td>2</td>
+      <td>Mouse</td>
+      <td>Unknown</td>
+      <td>RNA binding</td>
+      <td>Testis biased</td>
+    </tr>
+  </tbody>
+</table>
 
 The race to discover the sex-determining region brought spotlight to the Y chromosome. However, the Y chromosome is far from being just a sex switch. It has a clear role in spermatogenesis. Mice with one X chromosome and transgenic expression of Sry (XOSry) develop testis populated with pro-spermatogonia that fail to proliferate, leading to absence of meiotic and post-meiotic cells (Figure 4; Mazeyrat et al., 2001). A similar phenotype can be observed in XO germ cells within XO/XY/XYY male mosaic mice (Levy and Burgoyne, 1986).
 
@@ -87,13 +297,13 @@ In humans, the first sign that the Y chromosome may be involved in gamete produc
 
 By the end of the twentieth century, there was undeniable evidence that both human and mouse Y chromosomes are crucial for spermatogenesis. However, the nature and number of Y-linked genes involved was still completely unknown. The importance of identifying such spermatogenesis factors became clear, especially given their clinical relevance for human fertility.
 
-## The search for spermatogenesis factors
+### The search for spermatogenesis factors
 
 Historically, functional studies of the human Y chromosome have been very challenging. They have relied on genetic analyses of individuals exhibiting vastly different genotypes and fertility phenotypes. A main aim of these heterogeneous studies has been to identify deleted/mutated genes within AZFa, b, and c. However, It has been difficult to draw clear associations between individual genes and specific reproduction phenotypes, especially given the historical lack of good Y assemblies (Colaco and Modi, 2018). Much remains unknown about the role of both ubiquitous and testis-specific genes for human reproduction (Colaco and Modi, 2018). These difficulties have highlighted the need for a genetically tractable model organism to study individual Y-gene functions. For decades, the mouse has been the mammal of choice to study Y-chromosome biology and spermatogenesis. As a result, this review focuses on the biology of the mouse Y chromosome. However, mammalian Ys can be highly divergent, and it is still unclear to what extent findings in the murine model will extend to other mammals.
 
 The realisation that the mouse Y contained key factors for spermatogenesis resulted in attempts to perform loss of function studies using gene knockout. However, classic gene targeting strategies based on homologous recombination in mouse embryonic stem cells, which had worked to study autosomal and X gene functions, proved to be unsuccessful for the Y chromosome. This has been attributed to several factors. Firstly, sequencing data for the Y was sparse, with genomic characterisation relying on incomplete transcription-mapping approaches (Lahn and Page, 1997; Mazeyrat et al., 1998; Soh et al., 2014). The highly repetitive nature of the Y, besides making sequencing difficult using classical approaches, also hindered gene targeting attempts. This limited the field to the use of a few mouse models, which have different deletion variants spanning multiple Y genes, referred as Y-deletants hereafter. By adding transgenes of individual Y genes to the different Y-deletants, researchers investigated the rescue of previously identified spermatogenic failures. Transgenes have also been used in knockdown experiments to express interfering RNAs against ampliconic long arm Y gene (see: Y genes for meiotic progression and spermiogenesis). Overall, transgene rescue strategies, despite some caveats (see: the other indisposable Y genes), have been key to shape our current knowledge of Y-chromosome biology.
 
-## Are only two Y genes essential for male fertility?
+### Are only two Y genes essential for male fertility?
 
 In 2001, Mazeyrat et al., 2001 used BAC or cosmid clones of Y genes to generate individual transgenic mouse lines for three single-copy Y genes. These were then bred into two mouse models that express Sry but lack most or all of the remaining Y. Whereas Y-deletants experience arrest in spermatogonial proliferation, a clear amelioration was seen for mice expressing an Eif2s3y transgene. This ancestral gene has been lost in humans but is ubiquitously expressed in mouse and encodes a subunit of the translation initiation factor Eif2 (Figure 2 and Table 2).
 
@@ -103,7 +313,7 @@ This study would become very influential for later investigations. For instance,
 
 However, the many spermatogenic abnormalities seen when most of the Y chromosome is missing highlight that other Y genes are required for fertility. For instance, Yamauchi and colleagues showed that in mice expressing an additional fragment of the Y chromosome short arm, the abundance of later stage spermatids and the success of assisted reproduction was increased. This stresses the importance of additional Y short-arm genes to complete meiosis and differentiation from spermatid to spermatozoa (Yamauchi et al., 2014). In particular, a family of duplicated paralogues, the zinc-finger Y-linked Zfy1 and Zfy2 (Figure 2 and Table 2), has received much attention in the last decade and has been described as a key regulator of multiple spermatogenesis events.
 
-## Y genes for meiotic progression and spermiogenesis
+### Y genes for meiotic progression and spermiogenesis
 
 The Zfy transcription factors are conserved across eutherians (Table 2). In humans, the single ZFY has two splice variants. Contrary to the short variant, the full-length variant has the ability to control transcription via transactivation (Decarpentrie et al., 2012). This seems to be reflected in the mouse, as Zfy2 expresses the long isoform with higher transactivation activity compared to Zfy1 (Decarpentrie et al., 2012).
 
@@ -119,7 +329,7 @@ Altogether, the pressure to keep a balance in postmeiotic sex-chromosome express
 
 Altogether, the advent of the 21th century has seen an increasing interest in studying Y-linked genes. These efforts have provided valuable information on how some Y genes may participate in the developmental control of spermatogenesis (Figure 4). However, many questions remain. Firstly, even for well-studied genes such as Eif2s3y and Zfy2, the mechanism of action and molecular interactions of these spermatogenic factors are mostly unknown. Secondly, the majority of Y-linked genes have not yet been assigned to specific spermatogenic function (Table 2). Are they therefore disposable for male fertility?
 
-## The other indisposable Y genes
+### The other indisposable Y genes
 
 There is undeniable evidence that additional Y-linked genes are necessary for non-assisted reproduction. Although mice carrying only Sry, Eif2s3y, and Zfy can produce offspring through assisted reproduction, they are infertile. This is in part due to the lack of the Y chromosome long arm. However, there are other genes on the Y short arm that contribute to spermatogenesis. For instance, mice retaining most of the short arm, but no long arm, develop sperm with better morphology and have increased assisted-reproduction success compared to individuals expressing only Sry, Eif2s3y, and Zfy complements (Figure 4; Yamauchi et al., 2015).
 
@@ -137,7 +347,7 @@ Ancestral genes are also interesting, because they have been retained on the Y c
 
 In addition to protein-coding loci, the potential spermatogenic roles of non-coding regulatory regions on the Y chromosome must not be underestimated. Divergence between Y and X chromosome regulatory regions can lead to expression, and potentially phenotypic differences between XY and XX individuals (Godfrey et al., 2020; Naqvi et al., 2019; Naqvi et al., 2018). One could imagine that, just like Y protein-coding genes, Y regulatory regions have experienced pressure to specialise in regulating male fertility, especially through dosage control of nearby Y protein-coding genes.
 
-## Outlook
+### Outlook
 
 The Y chromosome has historically been misunderstood. Evolutionary insights and discoveries of spermatogenic factors have shown that the Y chromosome is far from being an ever-degenerating functional wasteland. For a long time, however, technical limitations have restricted the investigation of individual Y gene functions. In an era dominated by fast-evolving gene-editing techniques and omics technologies, the stage is now set for systematic Y-gene deletions and functional characterisation of resulting mutants. Altogether, fully dissecting the link between Y genes and key reproductive processes in the mouse will be paramount to deepen our understanding of genetic components influencing human male fertility and inform us on the functional evolution of the Y chromosome in mammals.
 

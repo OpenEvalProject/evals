@@ -31,31 +31,31 @@
 ### Affiliations
 
 1. Center for Translational Research, Scottish Rite for Children Dallas United States
-2. https://ror.org/043mz5j54 Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Institute for Human Genetics, University of California, San Francisco San Francisco United States
-4. https://ror.org/04mb6s476 Laboratory of Bone and Joint Diseases, RIKEN Center for Integrative Medical Sciences Tokyo Japan
-5. https://ror.org/04mb6s476 Laboratory for Statistical and Translational Genetics, RIKEN Center for Integrative Medical Sciences Yokohama Japan
-6. https://ror.org/026vcq606 Science for Life Laboratory, Department of Gene Technology, KTH-Royal Institute of Technology Solna Sweden
-7. https://ror.org/02zhqgq86 School of Biomedical Sciences, The University of Hong Kong Hong Kong SAR China
-8. https://ror.org/01yc7t268 Department of Neurology, Washington University in St. Louis St. Louis United States
-9. https://ror.org/03cve4549 School of Pharmaceutical Sciences, Tsinghua University Beijing China
-10. https://ror.org/05byvp690 Department of Biophysics, University of Texas Southwestern Medical Center Dallas United States
-11. https://ror.org/05byvp690 Department of Pathology, University of Texas Southwestern Medical Center Dallas United States
-12. https://ror.org/05byvp690 Department of Ophthalmology, University of Texas Southwestern Medical Center Dallas United States
-13. https://ror.org/02zhqgq86 Department of Orthopaedics and Traumatology LKS Faculty of Medicine, The University of Hong Kong Hong Kong SAR China
+2. Department of Bioengineering and Therapeutic Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Institute for Human Genetics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Laboratory of Bone and Joint Diseases, RIKEN Center for Integrative Medical Sciences Tokyo Japan ([ROR:04mb6s476](https://ror.org/04mb6s476))
+5. Laboratory for Statistical and Translational Genetics, RIKEN Center for Integrative Medical Sciences Yokohama Japan ([ROR:04mb6s476](https://ror.org/04mb6s476))
+6. Science for Life Laboratory, Department of Gene Technology, KTH-Royal Institute of Technology Solna Sweden ([ROR:026vcq606](https://ror.org/026vcq606))
+7. School of Biomedical Sciences, The University of Hong Kong Hong Kong SAR China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
+8. Department of Neurology, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+9. School of Pharmaceutical Sciences, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+10. Department of Biophysics, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+11. Department of Pathology, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+12. Department of Ophthalmology, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+13. Department of Orthopaedics and Traumatology LKS Faculty of Medicine, The University of Hong Kong Hong Kong SAR China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
 14. Department of Orthopedic Surgery, Scottish Rite for Children Dallas United States
-15. https://ror.org/05byvp690 Department of Orthopaedic Surgery, University of Texas Southwestern Medical Center Dallas United States
-16. https://ror.org/048a87296 Department of Surgical Sciences, Uppsala University Uppsala Sweden
-17. https://ror.org/01apvbh93 Department of Orthopaedics and Hand Surgery, Uppsala University Hospital Uppsala Sweden
-18. https://ror.org/048a87296 Department of Clinical Science, Intervention & Technology (CLINTEC), Karolinska Institutet, Stockholm, Uppsala University Uppsala Sweden
-19. https://ror.org/05byvp690 Eugene McDermott Center for Human Growth and Development, University of Texas Southwestern Medical Center Dallas United States
-20. https://ror.org/05byvp690 Department of Pediatrics, University of Texas Southwestern Medical Center Dallas United States
+15. Department of Orthopaedic Surgery, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+16. Department of Surgical Sciences, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+17. Department of Orthopaedics and Hand Surgery, Uppsala University Hospital Uppsala Sweden ([ROR:01apvbh93](https://ror.org/01apvbh93))
+18. Department of Clinical Science, Intervention & Technology (CLINTEC), Karolinska Institutet, Stockholm, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+19. Eugene McDermott Center for Human Growth and Development, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+20. Department of Pediatrics, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
 
 † Corresponding author
 
 ## Abstract
 
-Adolescent idiopathic scoliosis (AIS) is a common and progressive spinal deformity in children that exhibits striking sexual dimorphism, with girls at more than fivefold greater risk of severe disease compared to boys. Despite its medical impact, the molecular mechanisms that drive AIS are largely unknown. We previously defined a female-specific AIS genetic risk locus in an enhancer near the PAX1 gene. Here, we sought to define the roles of PAX1 and newly identified AIS-associated genes in the developmental mechanism of AIS. In a genetic study of 10,519 individuals with AIS and 93,238 unaffected controls, significant association was identified with a variant in COL11A1 encoding collagen (α1) XI (rs3753841; NM_080629.2_c.4004C>T; p.(Pro1335Leu); p=7.07E –11 , OR = 1.118). Using CRISPR mutagenesis we generated Pax1 knockout mice ( Pax1 -/ - ). In postnatal spines we found that PAX1 and collagen (α1) XI protein both localize within the intervertebral disc-vertebral junction region encompassing the growth plate, with less collagen (α1) XI detected in Pax1 spines compared to wild-type. By genetic targeting we found that wild-type -/- Col11a1 expression in costal chondrocytes suppresses expression of Pax1 and of Mmp3 , encoding the matrix metalloproteinase 3 enzyme implicated in matrix remodeling. However, the latter suppression was abrogated in the presence of the AIS-associated COL11A1 P1335L mutant. Further, we found that either knockdown of the estrogen receptor gene Esr2 or tamoxifen treatment significantly altered Col11a1 and Mmp3 expression in chondrocytes. We propose a new molecular model of AIS pathogenesis wherein genetic variation and estrogen signaling increase disease susceptibility by altering a PAX1-COL11a1-MMP3 signaling axis in spinal chondrocytes.
+Adolescent idiopathic scoliosis (AIS) is a common and progressive spinal deformity in children that exhibits striking sexual dimorphism, with girls at more than fivefold greater risk of severe disease compared to boys. Despite its medical impact, the molecular mechanisms that drive AIS are largely unknown. We previously defined a female-specific AIS genetic risk locus in an enhancer near the PAX1 gene. Here, we sought to define the roles of PAX1 and newly identified AIS-associated genes in the developmental mechanism of AIS. In a genetic study of 10,519 individuals with AIS and 93,238 unaffected controls, significant association was identified with a variant in COL11A1 encoding collagen (α1) XI (rs3753841; NM_080629.2_c.4004C>T; p.(Pro1335Leu); p=7.07E–11, OR = 1.118). Using CRISPR mutagenesis we generated Pax1 knockout mice (Pax1-/-). In postnatal spines we found that PAX1 and collagen (α1) XI protein both localize within the intervertebral disc-vertebral junction region encompassing the growth plate, with less collagen (α1) XI detected in Pax1-/- spines compared to wild-type. By genetic targeting we found that wild-type Col11a1 expression in costal chondrocytes suppresses expression of Pax1 and of Mmp3, encoding the matrix metalloproteinase 3 enzyme implicated in matrix remodeling. However, the latter suppression was abrogated in the presence of the AIS-associated COL11A1P1335L mutant. Further, we found that either knockdown of the estrogen receptor gene Esr2 or tamoxifen treatment significantly altered Col11a1 and Mmp3 expression in chondrocytes. We propose a new molecular model of AIS pathogenesis wherein genetic variation and estrogen signaling increase disease susceptibility by altering a PAX1-COL11a1-MMP3 signaling axis in spinal chondrocytes.
 
 ## Introduction
 
@@ -69,41 +69,182 @@ The combined contribution of reported AIS-associated variants is broadly estimat
 
 ## Results
 
-## Nonsynonymous variants in matrisome genes are associated with increased risk of AIS
+### Nonsynonymous variants in matrisome genes are associated with increased risk of AIS
 
 The ‘matrisome’ has been defined as ‘all genes encoding structural ECM components and those encoding proteins that may interact with or remodel the ECM’ (Hynes and Naba, 2012). Proteins comprising the global ECM as currently defined have been identified by both experimental and bioinformatic methods (Naba et al., 2012b). We assembled 1027 matrisome genes as previously identified (Naba et al., 2016), including 274 core-matrisome and 753 matrisome-associated genes (N=1027 total). For the genes encoding these 1027 proteins, we identified all nonsynonymous common variants (MAF>0.01) queried by the Illumina HumanCoreExome-24v1.0 beadchip and determined their genotypes in a discovery cohort of 1358 cases and 12,507 controls, each of European ancestry (Table 1). After applying multiple quality control measures (see Methods section), we retained 2008 variants in 597 matrisome genes for association testing (Supplementary file 1). This sample size was estimated to provide at least 80% power to detect significant associations at the matrisome-wide level (α≤2.5E–05), for alleles with population frequency ≥0.05 and OR ≥1.5 (Figure 1—figure supplement 1). Two nonsynonymous variants, in COL11A1 (rs3753841; NM_080629.2_c.4004C>T; p.(Pro1335Leu); odds ratio (OR)=1.236 [95% CI = 1.134–1.347], p=1.17E–06) and MMP14 (rs1042704; NM_004995.4_c.817G>A; p.(Asp273Asn); OR = 1.239 [95% CI = 1.125–1.363], p=1.89E–05) were significantly associated with AIS (Figure 1A). Given the sexual dimorphism in AIS and our prior observation of a female-predominant disease locus (Sharma et al., 2015), we tested the 2008 variants separately in females (N=1157 cases and 7138 controls). In females, the association with rs3753841 remained statistically significant, whereas rs1042704, near MMP14, was not associated with AIS in females (Figure 1—figure supplement 2). Our study was not sufficiently powered to test males separately.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig1-v1.jpg)
+
+**Figure 1.:** (A) Manhattan plot showing –log10 p-values (y-axis) versus chromosomal position (x-axis) for the 2008 common coding variants tested in the discovery study USA (TX). The horizontal line represents the threshold for significance level (p-value <2.5 × 10–5) after Bonferroni multiple testing correction. (B) Tests of association for SNPs rs3753841 and rs1042704 in discovery and independent replication cohorts. RAF – reference allele frequency; OR – odds ratio; CI –confidence interval.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** RAF – reference allele frequency; OR – odds ratio; CI – confidence interval.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Genomic location (x-axis) is plotted versus –log10 p-values (y-axis). Correlation between SNPs is shown by color-coded r2 value (legend).
+
+**Table 1.**
+ Study cohorts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Cohort</th>
+      <th rowspan="2">Ethnicity</th>
+      <th rowspan="2">Stage</th>
+      <th rowspan="2">Subjects</th>
+      <th colspan="2">Cases</th>
+      <th colspan="2">Controls</th>
+    </tr>
+    <tr>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USA (TX)</td>
+      <td>NHW</td>
+      <td>Discovery</td>
+      <td>13,865</td>
+      <td>201</td>
+      <td>1157</td>
+      <td>5369</td>
+      <td>7138</td>
+    </tr>
+    <tr>
+      <td>USA (MO)</td>
+      <td>NHW</td>
+      <td>Replication</td>
+      <td>2951</td>
+      <td>201</td>
+      <td>1102</td>
+      <td>1049</td>
+      <td>689</td>
+    </tr>
+    <tr>
+      <td>SW-D</td>
+      <td>NHW</td>
+      <td>Replication</td>
+      <td>4627</td>
+      <td>222</td>
+      <td>1409</td>
+      <td>505</td>
+      <td>2491</td>
+    </tr>
+    <tr>
+      <td>JP</td>
+      <td>EAS (Japanese)</td>
+      <td>Replication</td>
+      <td>79,211</td>
+      <td>323</td>
+      <td>5004</td>
+      <td>40,205</td>
+      <td>33,679</td>
+    </tr>
+    <tr>
+      <td>HK</td>
+      <td>EAS (HAN Chinese)</td>
+      <td>Replication</td>
+      <td>3103</td>
+      <td>178</td>
+      <td>812</td>
+      <td>858</td>
+      <td>1255</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td></td>
+      <td>103,757</td>
+      <td colspan="2">10,519</td>
+      <td colspan="2">93,238</td>
+    </tr>
+  </tbody>
+</table>
+
+_USA (TX): Texas cohort; USA (MO): Missouri cohort; SW-D: Danish cohort; JP: Japanese cohort; HK: Hong Kong cohort; NHW: Non-Hispanic White; EAS: East Asian._
 
 To validate these results, we sought to replicate the associations of rs3753841 and rs1042704 in four independent AIS case-control cohorts, from North America, Europe, and eastern Asia, representing multiple ethnicities (total N=9161 AIS cases, 80,731 healthy controls, Table 1). Genotypes for both variants were extracted from these datasets and tested for association by meta-analysis together with the discovery cohort (see Methods). Meta-analysis of all cohorts together increased the evidence for association of both variants with AIS risk (Figure 1B). While a similar effect size was noted for rs1042704 in Japanese and Han Chinese cohorts, the results were less significant, likely due to lower minor allele frequencies (East Asian MAF = 0.02 compared to total non-Asian cohort MAF = 0.20) in these populations (Figure 1—figure supplement 3). Plotting recombination across both regions suggested that these signals were likely confined to blocks of linkage disequilibrium within the COL11A1 and MMP14 genes, respectively (Figure 1—figure supplement 4).
 
 Rare dominant mutations in COL11A1, often disrupting a Gly-X-Y sequence, can cause Marshall (MRSHS) (OMIM #154780) or Stickler syndromes (STL2) (OMIM #604841) marked variously by facial anomalies, sensineural hearing loss, short stature, spondyloepiphyseal dysplasia, eye anomalies, ectodermal features, and scoliosis. Notably, our AIS cohort and particularly individuals carrying the rs3753841 risk allele were negative for co-morbidities or obvious features of Marshall or Stickler syndromes. Thus, variation in COL11A1 is independently associated with AIS. Notably, we did not detect common variants in linkage disequilibrium (R2>0.6) with the top SNP rs3753841 (Figure 1—figure supplement 4). Further, analysis of 625 exomes from the discovery cohort (46%) identified only three rare COL11A1 variants in five individuals (Supplementary file 2), and rare variant burden testing for COL11A1 was not significant as expected (data not shown). These observations suggested that rs3753841 itself could confer disease risk, although our methods would not detect deep intronic variants that could contribute to the overall association signal.
 
-## COL11A1 is expressed in adolescent spinal tissues
+### COL11A1 is expressed in adolescent spinal tissues
 
 We next characterized COL11A1 in postnatal spine development. COL11A1 encodes one of three alpha chains of type XI collagen, a member of the fibrillar collagen subgroup and regulator of nucleation and initial fibril assembly, particularly in cartilage (Fernandes et al., 2007). Spinal deformity is well described in Col11a1-deficient (cho/cho) embryos (Hafez et al., 2015; Seegmiller et al., 1971). In mouse tendon, Col11a1 mRNA is abundant during development but barely detectable at 3 months of age (Wenstrup et al., 2011). We analyzed RNAseq datasets derived from adolescent human spinal tissues (Makki et al., 2020), finding that COL11A1 was upregulated in cartilage relative to bone and muscle. In cartilage, PAX1 and COL11A2 showed the strongest expression levels relative to other published human AIS-associated genes (Kou et al., 2013; Ogura et al., 2015; Sharma et al., 2015; Khanshour et al., 2018; Haller et al., 2016; Baschal et al., 2014; Gao et al., 2007; Figure 2A). In all, most AIS-associated genes showed the strongest expression levels in cartilage relative to other adolescent spinal tissues.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig2-v1.jpg)
+
+**Figure 2.:** (A) A heatmap of transcript per million (TPM) values of COL11A1, MMP14, and other published genes associated with adolescent idiopathic scoliosis (AIS). The average TPM value of matrisome genes is represented as MATRISOME. (B) Detection of collagen a1(XI) in P0.5 mouse spine. Immunohistochemistry (IHC) shown at top, with immunofluorescence (IF) staining below. ‘-ab’ refers to negative controls lacking primary antibody (shown at left). Results are representative of N≥3 technical replicates in whole spines. (C) Detection of collagen a1(XI) in P28 mouse spine. Negative antibody IHC control shown at left; antibody-positive IHC shown at right. Enlarged, rotated view of white boxed area shows a biphasic staining pattern. CEP – cartilage endplate; GP – growth plate. Results are representative of N≥3 technical replicates in whole spines.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Boxed area shows biphasic staining pattern expanded at right. R – presumed resting zone; P – columnar chondrocytes of presumed proliferating zone; H – presumed hypertrophic zone and chondro-osseous junction. Each image is representative of results in at least three animals.
+
 We next sought to characterize Col11a1 expression in spines of postnatal mice. To detect COL11A1 protein (collagen α1(XI)), we performed immunohistochemistry (IHC) and immunofluorescence (IF) microscopy using a collagen α1(XI) reactive antibody (Sun et al., 2020) in newborn (P0.5) and adolescent (P28) mice. In spines of P0.5 mice, strong staining was observed in the nucleus pulposus (NP) and in surrounding annulus fibrosus (AF) (Figure 2B). In thoracic spines of P28 mice, the compartments of the IVD were more distinct, and strong collagen α1(XI) staining was observed in each (Figure 2C). In regions of the cartilage endplate (CEP)-vertebral bone transition, collagen α1(XI) was detected in columnar chondrocytes, particularly in the hypertrophic zone adjacent to condensing bone (Figure 2C). We also examined collagen α1(XI) expression in ribs, as these structures are also involved in the scoliotic deformity (Richards et al., 2020). In P28 rib growth plates, as in spine, a biphasic pattern was observed in which collagen α1(XI) reactivity was most pronounced around cells of the presumed resting and pre-hypertrophic/hypertrophic zones (Figure 2—figure supplement 1). These data show that in mouse, collagen α1(XI) is detectable in all compartments of young postnatal IVD and, at the thoracic level, is particularly abundant in the chondro-osseous junction region of IVD and vertebral growth plate.
 
-## Col11a1 is downregulated in the absence of Pax1 in mouse spine and tail
+### Col11a1 is downregulated in the absence of Pax1 in mouse spine and tail
 
 We previously identified AIS-associated variants within a putative enhancer of PAX1 encoding the transcription factor Paired Box 1 (Sharma et al., 2015; Khanshour et al., 2018). Pax1 is a well-described marker of condensing sclerotomal cells as they form segments that will eventually become the IVD and vertebrae of the spine (Chan et al., 2014; Aszódi et al., 1998; Smith et al., 2011). We generated Pax1 knockout mice (Pax1-/-) using CRISPR-Cas9 mutagenesis and validated them using sequencing and southern blot (Figure 3—figure supplement 1). Homozygous Pax1-/- mice were viable and developed spine deformity and kinks in the tail, as observed in other Pax1-deficient mice (Wilm et al., 1998). We next compared the expression of collagen α1(XI) protein in IVD and condensing bone of wild-type and Pax1-/- mice by performing IF staining in P28 spines (Figure 3A). In wild-type IVD, strong overlapping expression of collagen α1(XI) and PAX1 cells was observed, mostly within the CEP and chondro-osseous interface (Figure 3A). PAX1 staining was negative in Pax1-/- mice as expected, and collagen α1(XI) staining was dramatically diminished in CEP and the chondro-osseous vertebral borders. Moreover, the IVD in Pax1-/- mice was highly disorganized, without discernable NP, AF, and CEP structures as has been reported (Figure 3—figure supplement 2; Wallin et al., 1994). To test the effect of Pax1 on expression of Col11a1 and other AIS-associated genes during embryonic development, RNA was isolated from vertebral tissue dissected from the tails of embryonic stage 12.5 (E12.5) wild-type and Pax1-/- mice and subjected to bulk RNAseq and quantitative real-time PCR (qRT-PCR) (Figure 3B). Gene-set enrichment analysis of RNAseq was most significant for the gene ontology term ‘extracellular matrix’ (Figure 3C). By qRT-PCR analysis, expression of Col11a1, Adgrg6, and Sox6 was significantly reduced in female and male Pax1-/- mice compared to wild-type mice (Figure 3D–G). These data show that loss of Pax1 leads to reduced expression of Col11a1 and the AIS-associated genes Adgrg6 and Sox6 in affected tissue of the developing tail.
 
-## Col11a1 regulates Mmp3 expression in chondrocytes
+![Figure 3.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig3-v1.jpg)
+
+**Figure 3.:** (A) Immunofluorescence (IF) staining of P28 intervertebral disc (IVD) from thoracic regions of Pax1-/- (bottom) and wild-type (WT) littermate (middle, top) mice using PAX1- (green) and collagen a1(XI)-specific (red) antibodies and DAPI nuclear counterstain. Antibody-negative controls are shown at top as (-ab). Results are representative of N≥3 technical replicates in whole spines. (B) Heatmap of differentially expressed genes (p-value <0.0001) in embryonic stage 12.5 (E12.5) tails of WT and Pax1-/- mice. (C) Gene ontology (GO) analysis of differentially expressed genes in E12.5 tail WT and Pax1-/- mice. (D–G) Gene expression levels dissected from E12.5 mouse tail from WT and Pax1-/- (knockout [KO]) mice as determined by quantitative real-time PCR (qRT-PCR). Each value represents the ratio of each gene expression to that of β-actin, and values are mean ± standard deviation. The expression value of WT female group was arbitrarily set at 1.0. Each dot represents one embryo and statistical differences were determined using a two-sided unpaired t-test (*p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Guide RNAseq and PAM sites flanking 5’ and 3’ sides of the Pax1 gene. (B) Location of the NcoI restriction enzyme sites, shown as vertical lines in wild-type (WT) and knockout (KO) loci. The deletion and probe location are shown as gray and pink rectangles, respectively. Expected band sizes in WT and KO are written to the right of the map. (C) Southern blot analyses of WT and heterozygous KO mice with the estimated band size written to the right of the blot. Southern blot analyses were performed >2 times using founder and F1 generation. (D) Pax1-/- mice showed kinky tail phenotype on dorsal (left) and lateral (right) views.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig3-figsupp2-v1.jpg)
+
+### Col11a1 regulates Mmp3 expression in chondrocytes
 
 COL11A1 has been linked with ECM remodeling and invasiveness in some cancers (Wu et al., 2014). In solid tumors, COL11A1 has been shown to alter ECM remodeling by enhancing MMP3 expression in response to TGFΒ1 (Wu et al., 2014). MMP3 encodes matrix metalloproteinase 3, also known as stromolysin, an enzyme implicated in matrix degradation and remodeling in connective tissues (Mudgett et al., 1998). We confirmed strong MMP3 mRNA expression, relative to COL11A1, in human spinal cartilage and bone, but minimal expression in spinal muscle (Figure 4—figure supplement 1). We next cultured costal chondrocytes from P0.5 Col11a1fl/fl mice (Sun et al., 2020) and subsequently removed Col11a1 by treating with Cre-expressing adenoviruses. After confirming Col11a1 excision (Figure 4A), we compared Mmp3 expression in these cells to cells treated with GFP-expressing adenoviruses lacking Cre activity. We found that Mmp3 expression was significantly increased in cells where Col11a1 mRNA expression was downregulated by about 70% compared to untreated cells (Figure 4B). Furthermore, western blotting in these cells demonstrated an ~2- to 5-fold increase in pro-, secreted, and active forms of Mmp3 protein when collagen α1(XI) was reduced. The proteolytic processing per se of precursor MMP3 into active forms (Sun et al., 2014) did not appear to be affected by Col11a1 expression (Figure 4C). These results suggest that Mmp3 expression is negatively regulated by Col11a1 in mouse costal chondrocytes.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig4-v1.jpg)
+
+**Figure 4.:** (A) PCR assay of Col11a1 excision in Col11a1fl/fl cultured costal chondrocytes. (B) Gene expression levels from Col11a1fl/fl cultured costal chondrocytes transduced with green fluorescent protein (GFP) (Ad5-GFP, left) or Cre-expressing adenovirus (Ad5-cre, right) as determined by quantitative real-time PCR (qRT-PCR). Values represent the ratio of each gene expression to that of GAPDH, and values are mean ± standard deviation. The expression value of control Ad5-GFP results was arbitrarily set at 1.0. Statistical differences were determined using a two-sided paired t-test (*p<0.05). Results shown for N≥3 biologic replicates, each including three technical replicates. (C) Western blot detection of collagen a1(XI), MMP3, and GAPDH loading control in cultured costal chondrocytes after Ad5-GFP or Ad5-cre transduction. Results are representative of N=4 biologic replicates. Protein size ladder is shown in lane 1. Quantification of bands detected by western blotting, where Ad5-GFP was set to 1.0, is shown at right. Statistical differences were determined using a two-sided paired t-test (*p<0.05). (D) Gene expression levels from dissected Col11a1fl/fl:ATC costal cartilage, analyzed as described in (A). Results shown for N=3 biologic replicates, each including three technical replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Values are plotted from average TPM values for each gene.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Top gel shows detection of ATC Cre transgene (top, 416 bp band) in Col11a1fl/fl:ATC mice (lanes 2,3,7) and Col11a1fl/fl mice (lanes 4,5,6) after doxycycline treatment. Lane 1 is positive control. Bottom gel shows Col11a1 fl/fl excision-specific band (321 bp) in Col11a1fl/fl:ATC mice (lanes 2,3,7) and Col11a1fl/fl mice (lanes 4,5,6) after doxycycline treatment.
+
 To test whether Col11a1 affects Mmp3 expression in vivo, we bred Col11a1fl/fl female mice with Col11a1fl/fl:ATC males carrying the Acan enhancer-driven, doxycycline-inducible Cre (ATC) transgene (Dy et al., 2012). ATC has been shown to harbor Cre-mediated recombination activity in most differentiated chondrocytes and in NP within 2 days of treating pregnant mothers with doxycycline starting at E15.5 (Dy et al., 2012). ATC activity was confirmed by crossing this line to the R26td[Tomato] reporter that ubiquitously expresses the fluorescent gene Tomato after Cre recombination. Strong Cre activity was seen in P0 pups of mothers treated with doxycycline at E15.5 in the NP, CEP, and AF of the IVD and in chondrocytes of the growth plates (Figure 4—figure supplement 2). Pregnant Col11a1fl/fl females were treated with doxycycline water from E15.5 to induce Cre expression in differentiated chondrocytes. Excision of Col11a1 was confirmed in DNA from costal cartilage of Col11a1fl/fl:ATC-positive offspring (Figure 4—figure supplement 3). Consistent with results obtained by in vitro excision of Col11a1, cartilage from mice deficient in Col11a1 showed ~4-fold upregulation of Mmp3 mRNA expression relative to Col11a1fl/fl mice (Figure 4D).
 
-## AIS-associated variant in COL11A1 perturbs its regulation of MMP3
+### AIS-associated variant in COL11A1 perturbs its regulation of MMP3
 
 Although low-resolution structures currently available for collagen triple helices are not useful for modeling the effects of individual variants on protein stability, we noted that the AIS-associated variant P1335L occurs at the third position of a Gly-X-Y repeat and consequently could be structurally important in promoting stability of the triple helix, particularly if it is hydroxylated. We also noted that this variant is predicted to be deleterious by Combined Annotation Dependent Depletion (CADD) (Rentzsch et al., 2021) and Genomic Evolutionary Rate Profiling (GERP) (Cooper et al., 2005) analysis (CADD = 25.7; GERP = 5.75). Further, COL11A1 missense variants have been shown to evoke transcriptional changes in ECM genes in cancer cells (Lee et al., 2021). We therefore tested whether the COL11A1P1335L sequence variant alters its regulation of Mmp3 in chondrocytes. For this, SV40-immortalized cell lines were established from Col11a1fl/fl mouse costal chondrocytes and transduced with lentiviral vectors expressing green fluorescent protein (GFP) and COL11A1wt, COL11A1P1335L, or vector alone. After transduction, GFP-positive cells were grown to 50% confluence and treated with Cre-expressing adenovirus (ad5-Cre) to remove endogenous mouse Col11a1 (Figure 5A). Using a human-specific COL11A1 qRT-PCR assay, we detected overexpression of COL11A1wt and COL11A1P1335L compared to untransduced cells regardless of Cre expression (Figure 5A). Western blotting with an antibody directed against the HA epitope tag confirmed overexpression of human collagen α1(XI) protein (Figure 5B). Endogenous Mmp3 mRNA and protein upregulation was evident by qRT-PCR and western blotting, respectively, in untransduced cells treated with Ad5-Cre, as expected. Overexpressing human wild-type COL11A1 suppressed Mmp3 expression, consistent with the negative regulation we previously observed (Figure 5A and B). However, the COL11A1P1335L mutant failed to downregulate Mmp3 expression despite being overexpressed (Figure 5A and B). Thus, regulation of Mmp3 appeared to be perturbed in the presence of the COL11A1P1335L variant in these cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig5-v1.jpg)
 
-**Figure 5.:** Col11a1 regulation of P1335LMmp3 expression in lentiviral transduced mouse GPCs.(A) Quantitative real-time PCR (qRT-PCR) of human COL11A1 and endogenous mouse Mmp3 in SV40-immortalized mouse costal chondrocytes transduced with the lentiviral vector only (lanes 1,2), human wild-type (WT) COL11A1 (lane 3), or COL11A1P1335L. Values represent the ratio of each gene expression to that of GAPDH, and values are mean ± standard deviation. Significant quantitative changes (p≤0.05) relative to vector-only transfected cells as measured by unpaired t-tests are shown by *. Results shown for N=4 biologic replicates, each including three technical replicates. (B) Western blot corresponding to experiments shown in (A) using HA antibody to detect epitope-tagged human collagen a1(XI), COL11A1 antibody to detect mouse and human collagen a1(XI), MMP3 antibody to detect endogenous mouse MMP3, and GAPDH. Values are mean after normalization to GAPDH, ± standard deviation. Significant differences (p≤0.05) relative to vector-only, Ad5-negative transfected cells as measured by unpaired t-tests are shown by *.Figure 5—source data 1.Figure 5—source data 2.Figure 5B and original western blot images (anti-COL11A1, anti-MMP3, anti-GAPDH) with highlighted bands and labels.
+**Figure 5.:** (A) Quantitative real-time PCR (qRT-PCR) of human COL11A1 and endogenous mouse Mmp3 in SV40-immortalized mouse costal chondrocytes transduced with the lentiviral vector only (lanes 1,2), human wild-type (WT) COL11A1 (lane 3), or COL11A1P1335L. Values represent the ratio of each gene expression to that of GAPDH, and values are mean ± standard deviation. Significant quantitative changes (p≤0.05) relative to vector-only transfected cells as measured by unpaired t-tests are shown by *. Results shown for N=4 biologic replicates, each including three technical replicates. (B) Western blot corresponding to experiments shown in (A) using HA antibody to detect epitope-tagged human collagen a1(XI), COL11A1 antibody to detect mouse and human collagen a1(XI), MMP3 antibody to detect endogenous mouse MMP3, and GAPDH. Values are mean after normalization to GAPDH, ± standard deviation. Significant differences (p≤0.05) relative to vector-only, Ad5-negative transfected cells as measured by unpaired t-tests are shown by *.
 
-## Col11a1 and Mmp3 are responsive to estrogen receptor signaling in chondrocytes
+### Col11a1 and Mmp3 are responsive to estrogen receptor signaling in chondrocytes
 
 The expression of Col11a1, and of other ECM genes, is known to be estrogen- responsive in certain tissues, such as ovarian follicular cells (Zalewski et al., 2012). Because of the suspected role of endocrine hormones in AIS, we investigated whether Col11a1 expression was responsive to estrogen receptor siRNA-mediated knockdown in cultured chondrocytes. We first validated that Mmp3 mRNA and protein levels were significantly increased after Col11a1 knockdown in wild-type chondrocytes, as observed by Cre-mediated deletion in Col11a1fl/fl chondrocytes (Figure 6A). Estrogen receptor 2 (Esr2), but not estrogen receptor alpha (Esr1), was detected in mouse chondrocytes by qRT-PCR (data not shown). We therefore tested the consequences of Esr2 siRNA-mediated knockdown on gene expression in chondrocytes. After Esr2 knockdown, Col11a1 as well as Pax1 was significantly upregulated compared to scramble control, while Mmp3 expression was significantly downregulated (Figure 6B). We also performed Col11a1 knockdowns in these cells and noted upregulation of Pax1 expression, suggesting a negative feedback loop between Pax1 and Col11a1 in these cells (Figure 6B). Simultaneous knockdown of Col11a1 and Esr2 expression reduced Mmp3 expression to normal levels, supporting a possible interaction between Col11a1 and Esr2 in regulating Mmp3. Treating chondrocytes with tamoxifen, an estrogen receptor modulator, also upregulated Col11a1 expression to similar levels as observed after Esr2 knockdown, compared to cells treated with DMSO carrier (Figure 6—figure supplement 1). These results suggest that estrogen signaling suppresses Col11a1 expression. In cultured rat CEP cells, Esr2 mRNA was downregulated, and Mmp3 mRNA was upregulated after Col11a1 knockdown, as observed in mouse chondrocytes (Figure 6C, Figure 6—figure supplement 2). However, Esr2 knockdown did not significantly impact Col11a1 or Mmp3 expression in these cells (Figure 6C). Hence, we conclude that in cultured mouse chondrocytes, ESR2 signaling disrupts the suppression of Mmp3 by Col11a1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig6-v1.jpg)
+
+**Figure 6.:** (A) RT-qPCR (left) of Col11a1 expression after siRNA-mediated knockdown as shown at left. Representative western blot (of N=4 biologic replicates) of cultured costal chondrocytes after scramble or Col11a1-specific siRNA knockdown is shown in middle. Protein size ladder is shown in lane 1. Quantification of bands detected by western blotting is shown at right, where scramble results were set to 1.0. Values are mean after normalization to GAPDH, ± standard deviation. (B) Gene expression levels of Col11a1, Mmp3, Pax1, and Esr2 mRNA in cultured costal chondrocytes showing fold change relative to the scramble control. dKD = double Col11a1-Esr2-specific siRNA knockdowns. Each value represents the ratio of each gene expression to that of GAPDH, and values are mean ± standard deviation. Results are representative of N≥3 biologic replicates, each including three technical replicates. (C) Gene expression levels from rat cartilage endplate (CEP) cells, as described in (B).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig6-figsupp1-v1.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/89762/elife-89762-fig6-figsupp2-v1.jpg)
 
 ## Discussion
 
@@ -125,57 +266,57 @@ We found that Col11a1 expression is sensitive to estrogen receptor blockade or k
 
 ## Methods
 
-## Discovery study
+### Discovery study
 
 The cases in the discovery stage (USA TX: n=1358) were recruited at Scottish Rite for Children. Informed consent to participate in this research was obtained as approved by the Institutional Review Board of the University Texas Southwestern Medical Center, protocol STU 112010-150. Subjects were genotyped on the Illumina HumanCoreExome BeadChip (Illumina, San Diego, CA, USA). For controls, we utilized 12,507 non-AMD GRU (non-age-related macular degeneration general research use) subjects of the European ancestry downloaded from dbGaP website (https://www.ncbi.nlm.nih.gov/gap/) from the International Age-Related Macular Degeneration Genomics Consortium study (IAMDGC: phs001039.v1.p1.c1). The subjects from the IAMDGC study were also genotyped on the Illumina HumanCoreExome Beadchip-24v1.0 platform (Fritsche et al., 2016). We merged cases and controls and applied quality controls to the genotypes for 468,801 overlapping SNPs using PLINK.1.9 (Chang et al., 2015) as described in Khanshour et al., 2018. In summary, samples with sex inconsistencies or from duplicated or related individuals or ancestral outliers as identified by principal component analysis (PCA) were removed, leaving 13,865 samples in the analysis. Genotypes were corrected for strand direction, and SNPs with call-rate per marker <95%, deviating from Hardy-Weinberg equilibrium (cutoff p-value = 10–4), or with significant missingness rate between cases and controls (cutoff p-value = 10–4) were removed, leaving 341,759 SNPs in the analysis. Genotypes for SNPs across autosomal chromosomes were imputed using Minimac3 with the 1000G-Phase3.V.5 reference panel as described in the instructions available from the software website (Das et al., 2016). Protein-coding changes were annotated with ANNOVAR using RefSeq-based transcripts (Wang et al., 2010). External databases included allele frequencies from gnomAD (Karczewski et al., 2020) variant pathogenicity in Clinvar (Landrum et al., 2018); CADD scores (Rentzsch et al., 2019) GERP scores (Davydov et al., 2010), and protein domains in IntroPro (Blum et al., 2021). Only bi-allelic common (MAF > 0.01) protein-altering SNPs with imputation quality Rsq ≥ 0.3 within matrisome genes (Naba et al., 2016) were included for further analysis. Matrisome genes used can be found in the Molecular Signature Database (MsigDB) (Subramanian et al., 2005; Liberzon et al., 2015; https://www.gsea-msigdb.org/gsea/msigdb/cards/NABA_MATRISOME). Genetic association for the imputed allele dosages in the discovery cohort (USA TX) was performed in Mach2dat (Li et al., 2009) using logistic regression with gender and 10 principal components (PCs) as covariates. The genomic regions of the associated loci were visualized with LocusZoom software (Pruim et al., 2010) utilizing linkage disequilibrium information from 1000 Genomes EUR populations.
 
-## Meta-analysis study
+### Meta-analysis study
 
 For the meta-analysis stage we utilized four cohorts – USA MO: n=2951 (1213 cases and 1738 controls), Swedish-Danish populations (SW-D: n=4627 [1631 cases and 2996 controls]), Japan (JP: n=79,211 [5327 cases and 73,884 controls]), and Hong Kong (HK: n=3103 [990 cases and 2113 controls]) – to check significant candidates from the discovery study. Summary statistics across the discovery study and the four replication cohorts (total N=103,757 [10,519 cases and 93,238 controls]) were combined as previously described (Khanshour et al., 2018) using METAL (Willer et al., 2010).
 
-## SW-D cohort
+#### SW-D cohort
 
 All patients provided written informed consent. Patients were recruited according to protocols approved by the institutional review boards in Stockholm (protocol #290/202906, #2009/1124-31/2, #2012/1595-31/2), Lund (protocol #LU 200-95, #LU 280-99, #LU 363-02, #567/2008, #2014/804), and Southern Denmark (protocol #S-2011002). Genotyping and analyses were performed as described in Khanshour et al., 2018; Ameur et al., 2017.
 
-## USA MO cohort
+#### USA MO cohort
 
 Whole exome sequencing data from 1213 unrelated idiopathic scoliosis cases of European ancestry with spinal curvature greater than 10-degree Cobb angle were derived from the Adolescent Idiopathic Scoliosis 1000 Exomes Study (dbGAP accession number: phs001677), and patients recruited from St. Louis Children’s Hospital, and St. Louis Shriners Hospital for Children. Patients and/or parents provided consent to participate in the study, and IRB approval was obtained from Washington University (protocol #201102118). For controls, exome data from 1738 unrelated samples of European ancestry were provided by investigators at Washington University School of Medicine in St. Louis, MO (dbGAP accession numbers: phs000572.v8.p4 and phs000101.v5.p1), and Oregon Health & Science University in Portland, OR (https://gemini.conradlab.org/). Exome data were aligned to the human genome reference (GRCh37) using BWA-MEM (v0.7.15). Variant calling of single nucleotide variants and insertion and deletion variants were generated first for each single sample in cases and controls and then combining all samples with joint genotyping method, described in GATK Best-Practices (Genome Analysis Toolkit [GATK v3.5] https://gatk.broadinstitute.org/hc/en-us/sections/360007226651-Best-Practices-Workflows). All cases and controls samples were classified as unrelated and of European ancestry using relationship inference (Manichaikul et al., 2010) and PCA (Chang et al., 2015). Association analysis of variants rs3753841 and rs1042704 were performed using logistic regression adjusting for sex and PCs in PLINK (Chang et al., 2015).
 
-## JP cohort
+#### JP cohort
 
 Informed consents were obtained from all the subjects or their parents, and the ethics committee of the Keio University Hospital, Tokyo, approved the study protocol (approved protocol #20080129). 5327 case subjects were recruited from collaborating hospitals (Japanese Scoliosis Clinical Research Group) as previously described (Kou et al., 2019). For controls, 73,884 subjects were randomly selected from the BioBank Japan Project, and subjects were genotyped on Illumina Human BeadChips as previously described (Ogura et al., 2015, Kou et al., 2013). Imputation and association analyses in JP were performed as previously described (de Klerk et al., 1988).
 
-## HK cohort
+#### HK cohort
 
 3103 subjects were recruited at The Duchess of Kent Children’s Hospital. Informed consent to participate in research was obtained as approved by the Institutional Review Board of the University of Hong Kong/Hospital Authority Hong Kong West Cluster (IRB approval number: UW 08-158). All 990 cases were characterized by Cobb angles greater than 40 degrees with onset age between 10 and 18 years. Congenital, neuromuscular, and syndromic scoliosis samples were excluded. We used 2113 controls from the Chinese population with no spinal deformities on MRI scans (Song et al., 2013). Cases and controls were genotyped using the Illumina Infinium OmniZhongHua-8 BeadChip and analyzed with GenomeStudio 2.0 software. The quality control approach adopted the GWA tutorial developed by Marees et al., 2018. The filtered genotyping data of cases and controls was phased and imputed using SHAPEIT (Delaneau et al., 2011) and IMPUTE2 (Howie et al., 2009), respectively. Logistic model association analysis was performed using PLINK 1.9 (Chang et al., 2015).
 
-## Stratification-by-sex test
+### Stratification-by-sex test
 
 To investigate sex specificity in the COL11A1 and MMP14 loci, we performed stratification-by-sex analysis in the discovery study (USA_TX). Association for the imputed allele dosages in rs3753841 and rs1042704 was computed separately for females (1157 cases and 7138 controls) using logistic regression with 10 PCs as covariates in Mach2dat (Li et al., 2009).
 
-## RNAseq of human tissues
+### RNAseq of human tissues
 
 RNAseq was performed as previously described (Makki et al., 2021). Read counting and transcript quantification were performed using HTSeq (Anders et al., 2015). Finally, reads were normalized using DESeq2 tools (Love et al., 2014) and TPM values were generated using the Kalisto pipeline (Bray et al., 2016).
 
-## Animal studies
+### Animal studies
 
 Mouse and rat work was conducted per IACUC approved protocols at University of Texas Southwestern Medical Center (approved protocol #2016-101455) and University of California San Francisco (approved protocol #AN181381) and was in accordance with AALAC and NIH guidelines.
 
-## Generation of Pax1 knockout mice
+#### Generation of Pax1 knockout mice
 
 Two gRNAs were designed to target the 5′ and 3′ ends of Pax1 gene (gRNA sequence shown in Figure 3—figure supplement 1) using the gRNA design tool on the Integrated DNA Technologies (IDT, Newark, NJ, USA) website and selected based on low off-target and high on-target scores. The knockout allele was generated using i-GONAD (Gurumurthy et al., 2019) as previously described (Ushiki et al., 2021).
 
 To validate proper generation of the knockout, mice were analyzed by genotyping (with primers shown in Appendix 1), Sanger sequencing of PCR-amplified DNA, and southern blot (Figure 3—figure supplement 1). For southern blot analyses, genomic DNA were treated with NcoI (Cat #R0193, New England Biolabs, MA, USA) and fractionated by agarose gel electrophoreses. Following capillary transfer onto nylon membranes, blots were hybridized with digoxigenin (DIG)-labeled DNA probes (corresponding to chr2:147,202,083–147,202,444; mm9) ampliﬁed by the PCR DIG Probe Synthesis Kit (Cat #11636090910, Sigma-Aldrich, MO, USA). The hybridized probe was immunodetected with antidigoxigenin Fab fragments conjugated to alkaline phosphatase (Cat #11093274910, Sigma-Aldrich, MO, USA) and visualized with a CDP star (Cat #11685627001, Sigma-Aldrich, MO, USA) according to the manufacturer’s protocol. Chemiluminescence was detected using the FluorChem E (Cat #92-14860-00, ProteinSimple, CA, USA).
 
-## Col11a1fl/fl and ATC mice
+#### Col11a1fl/fl and ATC mice
 
 The Col11a1fl/fl mouse line (Sun et al., 2020) was kindly provided by Dr. Lou Soslowsky with permission from Dr. David Birk. ATC mice (Dy et al., 2012) were kindly provided by Dr. Ryan Gray, with permission from Dr. Veronique Lefebvre.
 
-## Other mice
+#### Other mice
 
 Cartilage was harvested from C57B/6 wild-type mice for siRNA-mediated knockdown experiments.
 
-## Histological methods
+### Histological methods
 
 For thin cryostat sections, P0.5 mouse whole body was fixed in 4% paraformaldehyde (PFA) for 6 hr followed by 10% sucrose for 12 hr, then transferred to 18% sucrose for 24 hr. Tissues were then embedded in optimal cutting temperature compound (OCT) and sectioned using low-profile blades on a Thermo Shandon Cryostar NX70 cryostat and all sections were lifted on APES clean microscope slides. For whole mount images, samples were treated similarly with the addition of 2% polyvinylpyrrolidone (PVP) during the cryoprotection step and frozen in 8% gelatin (porcine) in the presence of 20% sucrose and 2% PVP. Samples were sectioned at a thickness of 10 μm. Slides were stored at –80°C until ready for use. For P28 and older mice, spines were removed then fixed, decalcified, and embedded in OCT. Spines were processed by making 7 µm thick lateral cuts the length of the spine.
 
@@ -183,28 +324,28 @@ Collagen α1(XI) was detected by IHC staining using affinity-purified antisera a
 
 For collagen α1(XI) and PAX1 IF studies, P0.5 mice, P28 spine, and ribs sections were fixed in 4% PFA for 20 min then washed with PBS + 0.1% Triton three times, before incubation with 10% normal goat serum in PBS + 0.1% Triton for 30 min to block the background. Slides were incubated with goat anti-mouse collagen α1(XI) antibody at 1:500 dilution and mouse anti-rat PAX1(Cat #MABE1115M, Sigma-Aldrich, MO, USA), in PBS + 0.1% Triton + 1% normal goat serum at 4°C overnight. Secondary antibodies used were 1:5000 anti-rat Alexa488 and anti-mouse Alexa594-conjugated antibodies (Cat #A32740 Invitrogen, CA, USA). The sections were mounted using ProLong Gold with DAPI (Cat #S36964 Invitrogen, CA, USA) for imaging as described (Yu et al., 2018). All images were taken with Carl Zeiss Axio Imager.M2 fluorescence microscope (Zeiss, Oberkochen, DE).
 
-## Rib cartilage and IVD cell culture
+### Rib cartilage and IVD cell culture
 
 All cell culture experiments utilized primary cells. Cell cultures were negative for mycoplasma contamination as determined by random, monthly testing. Mouse costal chondrocytes were isolated from the rib cage and sternum of P0.5 mice. Rat IVD was removed intact from 1-month female rats and immediately separated into NP, AF, and CEP isolates. Subsequently, tissues were incubated and shaken with 2 mg/ml Pronase solution (Cat #10165921001 Sigma-Aldrich, Inc, St. Louis, MO, USA) for 1 hr, followed by 1.5 hr digestion with 3 mg/ml Collagenase D solution (Cat #11088882001 Sigma-Aldrich, Inc, St. Louis, MO, USA), then 5 hr digestion with 0.5 mg/ml Collagenase D solution before three times PBS wash. Filtered, dissociated cells were seeded in Dulbecco’s modified Eagle’s medium (DMEM; Cat #MT15017CV Thermo Fisher Scientific, MA, USA) containing 10% fetal bovine serum (FBS), 100 μg/ml streptomycin, and 100 IU/ml penicillin. Remaining cartilage tissues underwent further digestion in 86 U/ml type 1 collagenase (Cat #SCR103 Sigma-Aldrich, Inc, St. Louis, MO, USA) overnight. Cells were collected and cultured in DMEM with 10% FBS plus 100 μg/ml streptomycin and 100 IU/ml penicillin.
 
-## SV40 immortalization and transfection of primary chondrocytes
+### SV40 immortalization and transfection of primary chondrocytes
 
 Col11a1fl/fl mouse costal chondrocytes were isolated from the rib cage and sternum of P0.5 mice. The cells were transduced with pRRLsin-sv40 T antigen-IRES-mCherry lentivirus (Jha et al., 1998) for 48 hr, then sorted for mCherry-positive cells by flow cytometry. mCherry-positive cells were then infected with plv-eGFP, plv-eGFP-COL11A1-HA, plveGFP-COL11A1P1335L-HA constructs. After expansion, GFP-positive cells were sorted by flow cytometry and seeded in 24-well plates.
 
-## Adenovirus treatment
+### Adenovirus treatment
 
 SV40-induced Col11a1fl/fl mouse costal chondrocytes were grown to 50% confluency. Afterward, cells were treated with 2 µl Ad5-CMV-cre adenovirus (titer 1.8×1011 pfu/ml) and Ad5-CMV-eGFP (titer 1.65×1010 pfu/ml) as control. Both virus strains were from the Gene Vector Core facility, Baylor College of Medicine. After 48 hr the cells were harvested for mRNA and protein lysate.
 
-## RNAseq and qRT-PCR
+### RNAseq and qRT-PCR
 
 For Pax1 knockout studies, total RNA was collected from E12.5 tails using TRIzol (Cat #15596026, Thermo Fisher Scientiﬁc, MA, USA) and converted to cDNA using ReverTra Ace qPCR-RT master mix with genomic DNA remover (Cat #FSQ-301, Toyobo, Osaka, Japan). Sequencing was done using an Illumina Novaseq platform and the data were analyzed using Partek Flow (version 10.0) and gene ontology (Ashburner et al., 2000). qPCR was performed using SsoFast EvaGreen supermix (Cat #1725205, Bio-Rad, CA, USA). Primer sequences used for qPCR are shown in Appendix 1.
 
 To quantify the expression level of Col11a1, Mmp3, and marker genes in IVD compartments and rib cartilage, cultured cells were collected in RNeasy (QIAGEN, Inc) for RNA purification. Taqman Reverse Transcription Kit (Cat #4387406 Thermo Fisher Scientific, MA, USA) was used to reverse-transcribe mRNA into cDNA. Following this, RT-qPCR was performed using a Power SYBR Green PCR Master Mix Kit (Cat #1725271, Bio-Rad, CA, USA). The primer sequences for the genes used in this study are listed in Appendix 1. Gene expression was calculated using the ΔΔCT method after normalizing to GAPDH.
 
-## siRNA knockdown
+### siRNA knockdown
 
 Mouse rib cartilage cells seeded in six-well plates were 60–80% confluent at transfection. Lipofectamine RNAiMAX reagent (Cat #13778030 Thermo Fisher, Waltham, MA, USA) was diluted (9 µl in 500 µl) in Opti-MEM Medium (Cat #31985070 Thermo Fisher, MA, USA). 30 pmol siRNA was diluted in 500 µl Opti-MEM medium, then added to diluted Lipofectamine RNAiMAX Reagent. siRNA-lipid complex was added to cells after 5 min incubation at room temperature. Cells were harvested after 72 hr.
 
-## Western blotting
+### Western blotting
 
 For MMP3 western blotting, a total of 30 µg protein mixed with SDS-PAGE buffer was loaded on 12% SDS-polyacrylamide gel for electrophoresis. For collagen α1(XI) western blotting, 50 µg protein mixed with SDS-PAGE buffer was loaded on 4–20% SDS-polyacrylamide gel. The separated proteins were then transferred to nitrocellulose membranes (Cat #77010 Thermo Fisher Waltham, MA, USA) at 100 V for 2–3 hr. The membrane was first incubated with blocking buffer containing 5% defatted milk powder, and then exposed to 0.1 mg/ml mouse anti-rabbit Mmp3 (Cat #ab214794 Abcam, Cambridge, MA, USA) or anti-rabbit Col11a1 (Cat #PA5-38888 Thermo Fisher, Waltham, MA, USA) overnight. The samples were then washed thoroughly with TBS buffer, followed by incubation with HRP-labeled anti-rabbit IgG secondary antibodies 1:5000 (Cat #32460 Thermo Fisher, Waltham, MA, USA) overnight. The membranes were then washed with TBS buffer. GAPDH was detected by a rabbit anti-mouse antibody (Cat #14C10 Cell Signaling, MA, USA) and used as the internal loading control.

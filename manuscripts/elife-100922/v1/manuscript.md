@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Department of Immunology and Regenerative Biology, Weizmann Institute of Science Rehovot Israel
-2. https://ror.org/05wg1m734 Department of Internal Medicine and Radboud Center for Infectious Diseases, Radboud University Medical Center Nijmegen Netherlands
-3. https://ror.org/041nas322 Department of Immunology and Metabolism, Life and Medical Sciences Institute, University of Bonn Bonn Germany
+1. Department of Immunology and Regenerative Biology, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+2. Department of Internal Medicine and Radboud Center for Infectious Diseases, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+3. Department of Immunology and Metabolism, Life and Medical Sciences Institute, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
 
 † Corresponding author
 
 ## Abstract
 
-Trained immunity (TI) is the process wherein innate immune cells gain functional memory upon exposure to specific ligands or pathogens, leading to augmented inflammatory responses and pathogen clearance upon secondary exposure. While the differentiation of hematopoietic stem cells (HSCs) and reprogramming of bone marrow (BM) progenitors are well-established mechanisms underpinning durable TI protection, remodeling of the cellular architecture within the tissue during TI remains underexplored. Here, we study the effects of peritoneal Bacillus Calmette–Guérin (BCG) administration to find TI-mediated protection in the spleen against a subsequent heterologous infection by the Gram-negative pathogen Salmonella Typhimurium ( S .Tm). Utilizing single cell RNA-sequencing and flow cytometry, we discerned STAT1-regulated genes in TI-associated resident and recruited splenic myeloid populations. The temporal dynamics of TI were further elucidated, revealing both early and delayed myeloid subsets with time-dependent, cell-type-specific STAT1 signatures. Using lineage tracing, we find that tissue-resident red pulp macrophages (RPM), initially depleted by BCG exposure, are restored from both tissue-trained, self-renewing macrophages and from bone marrow-derived progenitors, fostering long lasting local defense. Early inhibition of STAT1 activation, using specific JAK-STAT inhibitors, reduces both RPM loss and recruitment of trained monocytes. Our study suggests a temporal window soon after BCG vaccination, in which STAT1-dependent activation of long-lived resident cells in the tissue mediates localized protection.
+Trained immunity (TI) is the process wherein innate immune cells gain functional memory upon exposure to specific ligands or pathogens, leading to augmented inflammatory responses and pathogen clearance upon secondary exposure. While the differentiation of hematopoietic stem cells (HSCs) and reprogramming of bone marrow (BM) progenitors are well-established mechanisms underpinning durable TI protection, remodeling of the cellular architecture within the tissue during TI remains underexplored. Here, we study the effects of peritoneal Bacillus Calmette–Guérin (BCG) administration to find TI-mediated protection in the spleen against a subsequent heterologous infection by the Gram-negative pathogen Salmonella Typhimurium (S.Tm). Utilizing single cell RNA-sequencing and flow cytometry, we discerned STAT1-regulated genes in TI-associated resident and recruited splenic myeloid populations. The temporal dynamics of TI were further elucidated, revealing both early and delayed myeloid subsets with time-dependent, cell-type-specific STAT1 signatures. Using lineage tracing, we find that tissue-resident red pulp macrophages (RPM), initially depleted by BCG exposure, are restored from both tissue-trained, self-renewing macrophages and from bone marrow-derived progenitors, fostering long lasting local defense. Early inhibition of STAT1 activation, using specific JAK-STAT inhibitors, reduces both RPM loss and recruitment of trained monocytes. Our study suggests a temporal window soon after BCG vaccination, in which STAT1-dependent activation of long-lived resident cells in the tissue mediates localized protection.
 
 ## Introduction
 
@@ -35,9 +35,17 @@ In this study, we set out to investigate the interplay of circulating and tissue
 
 ## Results
 
-## Intraperitoneal BCG results in heterologous S.Tm protection and a distinct myeloid subsets with signatures driven by STAT1
+### Intraperitoneal BCG results in heterologous S.Tm protection and a distinct myeloid subsets with signatures driven by STAT1
 
 To establish an in-vivo BCG training model targeted to the splenic tissue, and assess the extent of cross pathogen tissue protection conferred, we administered BCG-Pasteur (Zhang et al., 2016) (5×106 colony forming units (CFU)) or PBS as a control via i.p injection to 8-week-old female C57BL/6 J mice. Following a 2-week training period, mice were challenged with S.Tm (5x105 CFU) through i.p inoculation (Figure 1A). Mice were sacrificed after 24 hr, and spleen homogenates were cultured on LB agar medium to quantify S.Tm load using CFU (Figure 1B). Relative to the control group, mice that received BCG exhibited enhanced protection against S.Tm, with a four- to fivefold decrease in CFU, indicating TI-mediated splenic protection.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/100922/elife-100922-fig1-v1.jpg)
+
+**Figure 1.:** (A) Mouse model of BCG vaccination and S.Tm challenge. (B) Splenic S.Tm CFU 24 hr post infection between control (n=11) and trained mice (n=11). (C–D) Flow cytometry plots of myeloid populations two weeks post vaccination (C) and mean percentage fold change of BCG over control for each given gated population percent from the Lin- population (D). (E) K-nearest neighbors (KNN) plot for total CD11b+ single cells sorted from control and BCG mice. Color is based on conditions, or cluster identity. (F) Cell markers and training induced genes for each subset. Size and color intensity indicates percentage of cells within a given cluster expressing the gene and average expression. (G) Proportions of monocyte subsets based on classifications in (E). (H–I) Number of DEGs in each cell subset (H), and their corresponding gene set enrichment analysis (I). (J) Volcano plot of DEGs in CM subset. Data in bar graphs are presented as mean ± SEM, with each individual point in (B) a biological repeat. Two-tailed t-test used for data in (B) and (D) (*p<0.05, **p<0.01).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100922/elife-100922-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Flow cytometry gating schema for identifying MPs within the splenic myeloid subset.Gating and populations are representative of a BCG inoculated mouse two weeks post injection. Lineage (Lin) staining combines CD19 and CD3e for separation of B and T cells. (B) DEGs between PBS and BCG vaccinated mice for the sorted NCM, mcDC2, and NK populations.
 
 For identification of transcriptional changes in splenic myeloid populations related to TI, we isolated splenocytes and performed staining with CD11b, Ly6C, and F4/80 gating for myeloid mononuclear phagocytes (MPs), including classical monocytes (CM; CD11b+Ly6C+), and CD11b+ Ly6C- MPs comprising non-classical monocytes (NCM) and conventional dendritic cells (cDC), and also resident red pulp macrophages (RPM) (CD11b- F4/80+; Figure 1C, Figure 1—figure supplement 1A). We observed an overall expansion of the myeloid compartment due to training, with an increase in the CD11b+ subset, and a pronounced reduction of resident RPM (Figure 1D). This observed loss of RPM is common during infection and inflammation and has been previously described as the resident macrophage disappearance reaction (Barth et al., 1995).
 
@@ -49,9 +57,17 @@ We also observed increased SCA-1 (Ly6a/e) expression across the monocyte subsets
 
 In addition to the upregulation of inflammatory and antimicrobial genes, we also observed a significant downregulation of specific genes in CM-T as a result of training, including Ccr2, S100A8/9, and Ngp (Figure 1J). CCR2, a chemokine receptor crucial for monocyte recruitment, was found to be downregulated in response to IFNγ. This reduction in CCR2 expression is mediated by IFNγ-induced mRNA instability, potentially serving to retain monocytes at the site of recruitment and dampen a positive feedback loop (Penton-Rol et al., 1998). Similarly, BCG has been shown in other contexts to reduce the expression of S100A8 and S100A9, two calcium-binding proteins that can heterodimerize and stimulate IFNγ production in CD4 +T cells via an IL-10dependent mechanism (Wang et al., 2023). By suppressing their activity, runaway signaling and exhaustion is avoided. Lastly, NGP (neutrophilic granule protein), has been implicated in the regulation of inflammation through its ability to block NF-κB signaling (Liu et al., 2020). The downregulation of these genes suggests that trained immunity not only enhances pro-inflammatory responses but also modulates the expression of key regulators to maintain a balanced immune response and prevent excessive inflammation.
 
-## Dynamics of TI-associated subsets and signatures indicates early and delayed kinetics
+### Dynamics of TI-associated subsets and signatures indicates early and delayed kinetics
 
 To gain insight into dynamic processes underlying splenic cell type-specific TI, we conducted a two-month experiment, sacrificing mice at days 3, 14, 30, 45, and 60 post-vaccination with BCG, and challenging with S.Tm at 14 and 60 days post training (Figure 2A). We assessed BCG growth in BM and spleen, resistance to S.Tm infection, flow cytometry analysis with cell-type-specific training markers (CXCL9 and SCA-1), and bulk RNA-seq. Notably, protection against S.Tm persisted for 2 months post-vaccination, albeit with waning resistance over time (Figure 2B). While intravenous (i.v) BCG delivery and subsequent localization of the bacterium to the BM were previously noted as crucial for robust training (Kaufmann et al., 2018; Khan et al., 2020), our results indicate that during i.p administration this process is dispensable, as no BCG were detected in the BM (Figure 2C). Conversely, in the spleen, we isolated BCG at all time points, with CFU declining sharply by day 14, reaching the limit of detection by day 30 with minimal bacterium remaining (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/100922/elife-100922-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental setup tracking TI kinetics over a 2-month interval, including S.Tm challenge at days 14 and 60. (B) Splenic S.Tm CFU at 24 hr post infection for control and BCG mice at 14- and 60 days after vaccination (n=5–6). (C) BCG CFU from spleen and BM of BCG vaccinated mice (n=4) across time points. Red-dotted line indicates limit of detection. (D) Contribution of MP populations across time points from control (PBS) and BCG mice (days post injection). Percentage of CM, NCM, and dendritic cells calculated from flow cytometry analysis of CD11b+ population. Percentage of RPM calculated from Lin- population (control: n=3, BCG: n=4 in each time point). PBS values are the mean of all time points. (E) Heatmap of upregulated genes due to training and relative gene expression ordered according to peak expression time. (F) Gene set enrichment analysis of DEGs in days 14 and 30. (G–H) Heatmap of IFNγ response genes (G) and their average expression dynamics compared to STAT1 expression (H). Data in bar and line graphs are presented as mean ± SEM. For bar graph (B) and (C), each individual point is a biological repeat. For line graph (H), significance represents comparison between day 60 control and BCG. Heatmap rows in (E) and (G) indicate biological replicates. Two-tailed t-test used for data in (B), (C), and (H) (*p<0.05, **p<0.01, ***p<0.005, ****p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100922/elife-100922-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Flow cytometry gating schema for identifying MPs and TI-associated markers (including CXCL9+ CMs [CM-Ts] and Sca-1) within the splenic myeloid subset.Gating and populations are representative of a BCG inoculated mouse 2 weeks post injection. Lineage staining combines CD19, CD3e, Ly6g, and NK1.1 for separation of B, T, neutrophil, and NK cells respectively. (B–C) Percentage of MP populations (B) and frequency of CM-Ts and SCA-1 + cells (C) from PBS (gray) and BCG (black) mice. CM, NCM, and dendritic cell ratio calculated from CD11b+population. RPM ratio calculated from Lin- population (control: n=2–3, BCG: n=4). (D) Frequency of CM-Ts and SCA-1 + cells 5 days post PBS (gray) or BCG (black) vaccination (control: 3, BCG = 5). (E) Frequency of CM-Ts and SCA-1 +NCMs 24 hours post S.Tm challenge at 2 or 8 weeks after PBS (gray) or BCG (black) vaccination (PBS: n=6, BCG: n=6). (F) PCA projection of all bulk splenic conditions onto the space of the two leading principal components based on all expressed genes due to training. Conditions include each time point (control: n=2–3, BCG: n=3–4). Shade intensity represents time point, diamond (PBS) or circle (BCG). (G) Log2 expression of selected training-associated genes over time (control: n=2–3, BCG: n=3–4). (H) Experimental setup for tracking expression of training markers inherited from trained BM progenitors. After initial inoculation of PBS-ip (n=2) or BCG-ip (n=2), mice were sacrificed, and BM extracted and mixed for each pair of donors. (I) Flow cytometry gating schema for identifying MPs and TI-associated markers (CXCL9 and Sca-1) across CD45.1/CD45.2 donors. (J) NCM fraction expressing Sca-1 from cells derived from control (CD45.2) or BCG (CD45.2) mice (n=7). Square or triangle represent mice who received combined BM from donor set one or two. Significance between control (CD45.2) and BCG (CD45.1) is indicated. Data in (B–E) are presented as mean ± SEM. For line graphs (B) and (C), significance represents each time point against PBS at day 3. Two-tailed t-test used for data in (B–E) paired t-test for J (*p≥0.05, **p≥0.01, ***p≥0.005, ****p≥0.001).
 
 Flow cytometry analysis revealed a dynamic process during trained immunity (Figure 2—figure supplement 1A). Compared to mean control values, we observed rapid recruitment of CMs in the spleen, starting already at day three after BCG, peaking at day 14 before returning to baseline (Figure 2D, Figure 2—figure supplement 1B). We also stained cells for CXCL9 expression, as a marker gene of STAT1-mediated TI that defines the CM-T subset, and revealed that this population reaches peak levels at day 14 (Figure 2—figure supplement 1C). In a separate experiment to assess early kinetics of CM-Ts, we measured a significant increase of this subset already at five days post BCG (Figure 2—figure supplement 1D), indicating an early recruitment of these cells due to the initial response to BCG. NCMs exhibit a different TI signature and kinetic pattern. While their ratio initially declines, they return to steady-state levels by day 30 (Figure 2D). NCMs express SCA-1 (Ly6a), another STAT1-regulated gene, which persists and remains highly elevated at all subsequent time points (Figure 2—figure supplement 1C). Challenge with S.Tm at day 14 triggered an expansion of CM-Ts, but this response was lost by day 60, coinciding with the diminished protection observed at this later timepoint (Figure 2—figure supplement 1E). In contrast, SCA-1 expression in NCMs remained upregulated (Figure 2—figure supplement 1E).
 
@@ -67,9 +83,17 @@ Distinct from these immune signatures, day 30 was characterized by enrichment of
 
 We then investigated whether TI signatures could be maintained through progenitor programming alone. BCG or PBS were injected i.p into mice with either a CD45.1 or CD45.2 background, respectively (Figure 2—figure supplement 1H). After 2 weeks, BM was harvested from both, HSCs mixed 1:1, and injected into irradiated mice for BM transplant. Six weeks post transfer, mice were sacrificed and myeloid cells in the spleen were assessed (Figure 2—figure supplement 1I). Within each mouse, we found in the spleen a greater fraction of NCMs expressed SCA-1 from trained donors relative to the naive control (Figure 2—figure supplement 1J). This persistence of the training signature in a naive host environment demonstrates that SCA-1 expression in NCMs can be maintained through progenitor programming alone, though it does not exclude potential contributions of local tissue signals during normal BCG training. CM-Ts however, were undetectable, consistent with the transient nature of this subset observed in our kinetics data.
 
-## RPM niche is replenished by recruited trained monocytes and by local training of tissue-resident populations
+### RPM niche is replenished by recruited trained monocytes and by local training of tissue-resident populations
 
 We observed a substantial reduction in RPM numbers upon BCG, followed by the expression of STAT1-mediated TI markers in RPMs. We hypothesized that upon BCG, two possible scenarios for training and replenishment of open niche are possible. The first is self-renewal by the remaining local tissue-resident macrophages who are trained within the tissue, while the other is that BM-derived trained monocytes differentiate and repopulate the open niche. While BM-derived macrophages may adopt signatures and function of their local counterparts, they may also retain aspects of their origin, particularly enhanced inflammatory capacities (Figure 3A). To investigate this, we employed MS4A3Tdtm;CX3CR1GFP reporter mice (Liu et al., 2019) with a knock-in flox-cre system to selectively label BM-derived monocytes with TdTomato fluorescence. As MS4A3 is distinctly expressed in granulocyte-monocyte progenitors (GMP), only this lineage will be TdTomato positive. These mice were administered BCG or PBS-i.p following the training protocol and sacrificed two weeks later (Figure 3B). Effective labeling was determined by flow cytometry, measuring the fraction of MP expressing TdTomato and/or CX3CR1 (Figure 3—figure supplement 1A). As expected, the monocyte population were primarily double positive (Figure 3—figure supplement 1B). Intriguingly, training increased the percentage of labeled cells across monocytes, suggesting a potential lineage bias towards granulocyte-monocyte progenitors (GMPs). This observation is consistent with prior studies demonstrating that various microbial components can induce short-term differentiation biases in monocytes derived from GMPs or MDPs (monocyte-dendritic progenitors), endowing them with neutrophil- or dendritic cell-like properties (Yáñez et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100922/elife-100922-fig3-v1.jpg)
+
+**Figure 3.:** (A) Scheme representing known myeloid differentiation pathways and potential trans-differentiation of trained CM to RPM. (B) Mouse model to track contribution of TI-associated signatures in local and recruited MP populations with lineage tracing. (C–D) Flow cytometry analysis of TdTm+ or Tdtm- Ly6C+ MPs and RPM and quantification of RPM TdTm+ subset (n=3). (D–F) Number of DEGs of each sorted population (D), heatmap of normalized log2 expression from TI-associated DEGs specific to trained RPM populations and gene set enrichment analysis of DEGs in each sorted population (F). Data in bar graphs are presented as mean ± SEM. Heatmap rows in (E) indicate biological replicates. Two-tailed t-test used for data in (C) (*p<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100922/elife-100922-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Flow cytometry gating schema for identification of local and recruited MPs in the spleen.Gating and populations are representative of a BCG inoculated mouse 2 weeks post injection. (B) Percent of splenic monocytes double positive for CX3CR1 and TdTomato between PBS (gray) and BCG (black) vaccinated mice (PBS: n=4, BCG: n=5). (C) DEGs between PBS and BCG vaccinated mice for the bulk sorted CM, NCM, and Tdtm +/-RPM. (D) Expression of genes enriched within the IFNy response term across Tdtm +/-RPM. Data in (B) are presented as mean ± SEM.
 
 For the majority of RPM, we expected minimal TdTomato expression, representative of self-replenishment during homeostasis. However, already within the control we observed that ~16% of the population were labeled (Figure 3C). When this population was depleted during training, an even greater fraction was positively labeled. Accordingly, even under steady-state conditions, BM-derived cells contribute to the resident niche, but when sufficiently diminished post vaccination, active replenishment from the BM does occur.
 
@@ -77,7 +101,7 @@ To determine whether Tdtm+ BM-derived RPM acquired a distinct transcriptional pr
 
 GSEA performed across all upregulated genes revealed that the IFNγ response was enriched, followed by IFNα response, allograft rejection, and JAK-STAT signaling (Figure 3F). Although the IFNγ signature was most prominent in CM, it was also observed in NCM and in the Tdtm+ RPM. This finding suggests that engrafted monocytes differentiating within the niche may maintain a more inflammatory phenotype and a heightened sensitivity to IFNγ activation. However, the BM-derived RPM are not the sole population responsive to training, as the local fraction also upregulates the same genes in clusters I-III. Notably, RPM, as a whole, demonstrate a greater capacity to upregulate the expression of many interferon genes, including Cxcl9 and Stat1 (Figure 3—figure supplement 1D). Taken together, our results indicate that BCG can reprogram populations and generate training via two separate routes. First, the recruitment of trained progenitors and monocytes within the spleen, which differentiate within a vacant niche, retaining their trained identity. Second, activation directly within the spleen in the context of native tissue-resident RPM, generating tissue-specific protection.
 
-## Transient IFNγ-STAT1 inhibition prevents TI signatures and splenic infection resistance
+### Transient IFNγ-STAT1 inhibition prevents TI signatures and splenic infection resistance
 
 We observed that STAT1 signaling holds a critical role in training, with its regulated gene expression elevated across the myeloid population. However, BCG is an intact attenuated bacterium that can activate numerous PRRs. To evaluate whether STAT1 is necessary for TI signatures and protection, we vaccinated STAT1-KO mice (Kernbauer et al., 2012) with either PBS or BCG-i.p (Figure 4—figure supplement 1A). After a two-week period, we assessed the myeloid population and STAT1 regulated genes. We observed a complete absence of expression for both CXCL9 and SCA-1 across myeloid populations (Figure 4—figure supplement 1B). This aligns with previous findings that demonstrated compromised acquisition of trained immunity in IFNγR-/- mice (Kaufmann et al., 2018). Interestingly, RPM, typically depleted following BCG inoculation, remain preserved in STAT1-KO mice (Figure 4—figure supplement 1C), suggesting that STAT1-mediated pathways are involved in triggering the cellular death processes that occur during BCG interaction and/or engulfment.
 
@@ -86,6 +110,14 @@ There is however a significant limitation in this mouse model, as STAT1-/- leave
 We then repeated this experiment, focusing on training phenotypes in the spleen and BM. At the 2-week mark, splenocytes were extracted from all mice for flow cytometry analysis, with CXCL9 utilized as a marker for STAT1-mediated TI signature in CM-Ts. As observed in the transcriptional response, only Fedratinib ablated the CXCL9+ CM-Ts (Figure 4—figure supplement 1F). We also sought to determine if these effects were localized solely to the tissue, or if they extended to progenitors in the BM, which expand upon BCG exposure (Kaufmann et al., 2018). To ascertain this, we isolated BM from the femur, measuring the percent of LSK+ HSCs (Figure 4—figure supplement 1G). Here too, only Fedratinib resulted in suppressing their expansion to levels comparable to the control (Figure 4—figure supplement 1H). Conversely, perturbation of IFNα/β signaling with Deucravacitinib lead to no observable changes on trained subsets, suggesting that it is not involved in our BCG-i.p model. Type-I interferon has been established as a training signaling pathway in other contexts, as observed with β-glucan (Kalafati et al., 2020), Candida albicans (Huijser et al., 2022) and LPS (Zahalka et al., 2022).
 
 In order to prove that early STAT1 inhibition is sufficient to block the TI protective phenotype, and not just downstream markers, we repeated the inhibitor regime with control or trained mice receiving either Fedratinib or DMSO, with or without S.Tm infection after 2 weeks (Figure 4A). We then extracted spleens to measure splenic expansion, splenoctye population levels and marker expression with flow cytometry, bulk splenocyte transcription, and S.Tm susceptibility. Importantly, while we observed no differences in CFU between control mice with or without Fedratinib, trained mice receiving Fedratinib were significantly more susceptible to infection (Figure 4B). Treatment with Fedratinib resulted in diminished recruitment and splenocyte expansion, causing an appreciable reduction in spleen size comparable to the control (Figure 4—figure supplement 1I). Accordingly, the balance of monocytes ratios, particularly NCM, was shifted to levels similar to those observed in the DMSO control (Figure 4C). In conjunction, the frequency of CXCL9+ CM-Ts was diminished, reflecting a reduction in the subset, while in RPMs, CXCL9 showed decreased expression (Figure 4D). Finally, RPM, which typically undergo depletion after training, exhibited significantly enhanced survival, similar to the observations in STAT1-KO mice (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100922/elife-100922-fig4-v1.jpg)
+
+**Figure 4.:** (A) Mouse model of BCG vaccination with early interferon inhibition using the Fedratinib inhibitor. (B) Splenic S.Tm CFU for control and BCG mice, with and without Fedratinib inhibitor, 24 hr post infection (n=2–6).(C) MP populations from control (gray) and BCG (black) mice, with or without Fedratinib inhibition. Percentage of CM and NCM cells calculated from CD11b+ population. Percentage of RPM calculated from Lin- population. (D) Percentage of CXCL9+ CM-T, NCM, and RPM populations from control (gray) and BCG (black) mice, with or without Fedratinib inhibition (control: n=3, BCG: n=4, control +Fedratinib: n=3, BCG +Fedratinib: n=6). (E) Heatmap of normalized log2 expression of DEGs across naive and training conditions. (F) Gene set enrichment analysis of DEGs from E. Data in bar graphs are presented as mean ± SEM. For bar graph (B) each individual point is a biological repeat. Heatmap rows in E indicate biological replicates. Two-tailed t-test used for data in (B), (C), and (D) (*p<0.05, **p<0.01, ***p<0.005, ****p<0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100922/elife-100922-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mouse model to detect training markers in BCG-vaccinated WT and STAT1-KO mice. (B) CXCL9 and Sca-1 expression in MPs between control and BCG mice in WT or STAT1-KO background. (C) CD11b+ and RPM populations between control and BCG mice in WT or STAT1-KO background. (D) Mouse model of BCG vaccination with early interferon inhibition using the small molecule inhibitor Fedratinib targeting Type-II IFN, or Deucravacitinib targeting Type-I IFN. (E) Heatmap of log2 fold change for DEGs across inhibitor conditions. (F) CXCL9 expression in MPs across inhibitor conditions. (G) Flow cytometry gating strategy used for identification of BM LSK HSCs. Gating is representative of a BCG inoculated mouse 2 weeks post injection. Lineage staining combines CD4, CD8, B220, Ter119, Gr1, B220, and CD11b for separation of T, B, erythroid, granulocyte, and myeloid cells respectively. (H) Flow cytometry plot of LSK expansion within the BM across inhibitor conditions. (I) Two-dimensional spleen area from across experimental conditions including training, Fedratinib inhibitor, and S.Tm infection (n=3–6). Significance between inhibitor and infection conditions is indicated. (J) PCA projection of all samples onto the space of the two leading principal components based on all DEGs across training, inhibitor, and infection conditions (two-sample t-test, 5% FDR). The percentage of variance explained by each PC is indicated at the PC axes. Color is indicative of control or BCG mice before and after S.Tm challenge. Circle or diamond shape represent treatment with DMSO or Fedratinib. (K–L) Heatmap of STAT-1 signature genes (K) and their mean log2 expression across training conditions and antibody treatment (L). (M) Total BCG CFU from spleens from isotype and α-IFNγ treated mice 2 weeks post vaccination (n=4). Data in (I) and (M) are presented as mean ± SEM. Heatmap rows in (E) and (K) indicate biological replicates. Two-tailed t-test used for data in (I) and (L) (*p≥0.05, **p≥0.01, ***p≥0.005, ****p≥0.001).
 
 To probe the effects of Fedratinib inhibition beyond myeloid expansion and marker acquisition, we conducted bulk RNA sequencing on total splenocytes isolated from all experimental conditions. PCA of the resulting data revealed two major axes of divergence among the populations: PC1, associated with training, and PC2, associated with the response to S.Tm (Figure 4—figure supplement 1J). While the PBS-i.p mice treated with either DMSO or Fedratinib were grouped together, the BCG-i.p samples treated with Fedratinib clustered distinctly, shifting closer to the PBS control group. Analysis of downregulated DEGs identified the IFNγ response as the most significantly affected pathway due to JAK2 inhibition by Fedratinib. This included its downstream effector Stat1, and other key STAT1-regulated trained immunity genes, such as Cxcl9/10, Irf1, Gbp2, and Irg1, across all treated mice (Figure 4E and F; Supplementary file 1e). To further validate our findings and ensure that the loss of the trained immunity signature was not solely a result of blocking other JAK2-associated pathways, we repeated the inhibitor experiment using recombinant α-IFNγ. Mice were given either α-IFNγ or an isotype control after BCG or PBS vaccination, with injections on days 0, 2, and 4, and assayed 2 weeks post-vaccination. Upon sorting and sequencing CM and RPM from these treated mice, we found that the STAT1 regulated TI signatures were completely ablated with early inhibition (Figure 4—figure supplement 1K–L). Although we measured no changes in viable BCG in cultured spleen homogenates from control and treated mice at the 2-week interval (Figure 4—figure supplement 1M), early α-IFNγ was sufficient in blocking training signatures. Interestingly, previous studies show that while removal of BCG by long-term antibiotic treatment decreases expansion of progenitor cells, protection against secondary ex vivo challenges remains (Kaufmann et al., 2018).
 
@@ -113,9 +145,9 @@ In summary, our study emphasizes that examining the tissue, specifically the spl
 
 ## Methods
 
-## Experimental methods
+### Experimental methods
 
-## Mice and bacteria strains
+#### Mice and bacteria strains
 
 C57BL/6 J mice, 7–9 weeks old, were purchased from ENVIGO, housed at the Weizmann Institute pathogen-free facility, and provided with standard food and water ad libitum. The Nr4a1 super-enhancer sub-domain E2-KO (C57BL/6-Rr39em1Ched/J) mice were purchased from The Jackson Laboratory (#030204; Thomas et al., 2016). The mice strains below were kindly provided by the following investigators:
 
@@ -123,23 +155,23 @@ All experiments were performed in accordance with the guidelines outlined by the
 
 For in vivo training, BCG-Pasteur, generously donated by Dr. Daniel Barkan, was utilized. The Salmonella enterica serovar Typhimurium strain SL1344 was used exclusively for all infection challenge experiments.
 
-## Mice training and infection
+#### Mice training and infection
 
 BCG were grown in Middlebrook 7H9 media (BD) supplemented with Middlebrook OADC (BD) at 37 °C for 1 week to stationary phase. Bacterial aliquots of 1 mL were dispensed to 2 mL cryotubes (Simport) and frozen at –80 C for longterm storage. Prior to inoculation, tubes were thawed, centrifuged (10,000 × g, 2 min, RT), with pellet resuspended in 1 mL phosphate-buffered saline (PBS; Sartorius). Bacterial concentration was calculated based on optical density at 600 nm (OD600) assuming a concentration of 5x108 CFU/OD, with BCG diluted to 25x106 CFU/mL in PBS. Mice were injected intraperitoneally (i.p) with 200 μl containing 5x106 CFU or PBS (as controls). At given time points, mice were euthanized by CO2, spleens and/or BM from the femur were harvested, and CFU numbers were evaluated by plating serial 10–100-fold dilutions of homogenized spleens or BM suspension on selective 7H9-Middlebrook agar plates.
 
 For the initial challenge as observed in Figure 1A, cultures of S.Tm were grown in Luria-Bertani (LB) medium (BD) at 37 °C for 16 hr to stationary phase. For all subsequent experiments, S.Tm were grown at 37 °C for 16 hr to stationary phase in SPI-2 inducing media (Stapels et al., 2018): MgMES media 170 mM 2-(N-morpholino) ethanesulfonic acid (MES) at pH 5.0, 5 mM KCl, 7.5 mM (NH4)2SO4, 0.5 mM K2SO4, 1 mM KH2PO4, 8 mM MgCl2, 38 mM glycerol, and 0.1% casamino acids. Cultures were centrifuged (10,000 × g, 2 min, RT), with pellet resuspended in PBS. Bacteria were diluted 10-fold in PBS and concentration calculated based on optical density at 600 nm (OD600). Assuming a concentration of 1x109 CFU/OD, S.Tm was diluted to 2.5x106 CFU/mL in PBS. Mice were injected intraperitoneally (i.p) with 200 μl containing 1x105 CFU of bacteria or PBS (as controls). Injected bacterial load was verified by CFU. 24 hours post infection, mice were euthanized by CO2, spleens were harvested, and CFU numbers were evaluated by plating serial 10–100-fold dilutions of homogenized spleens on streptomycin LB agar plates.
 
-## BCG CFU
+#### BCG CFU
 
 Spleens or BM were homogenized and serially diluted in PBS +0.1% Triton on 7H9 Middlebrook media +OADC with Zeocin and Kanamycin. Plates were incubated for three weeks in a humidified 5% CO2 (Saeed et al., 2014) incubator, with CFU determined using an automated colony counter.
 
-## In vivo interferon inhibition
+#### In vivo interferon inhibition
 
 JAK-STAT inhibitors Fedratinib (cat #202893), and Deucravacitinib (cat #555349) (MedKoo Biosciences) were resuspended in DMSO, aliquoted, and stored at –80 C for later use. For injection, a mixture of PEG-300 (Sigma):Tween-80 (Sigma) was prepared at a ratio of 18:1 and filtered using a 0.22 μm filter. For each injection, 10 μl of DMSO with or without the inhibitor was added to 105 μl of the PEG:Tween mix, followed by 180 μl of PBS for a total of 30 μl and injected i.p. Inhibitor concentrations are 1 mg and 0.5 mg per mouse for Fedratinib and Deucravacitinib respectively. Four hours post inhibitor, BCG or PBS-i.p was injected for training. Daily repeat injections of the inhibitors were repeated for four additional days.
 
 For the antibody inhibition experiment, 1 mg of monoclonal αIFNγ antibody (clone: XMG1.2) or isotype control (clone: Rat IgG1) was injected i.p. 4 hr pre BCG vaccination (day 0), then every other day (day 2 and 4).
 
-## Splenocytes and BM isolation and flow cytometry preparation
+#### Splenocytes and BM isolation and flow cytometry preparation
 
 Spleens and BM from femurs were extracted and stored in cooled FACS Buffer (PBS, 10 mM EDTA, 2% FBS) until further extraction.
 
@@ -147,29 +179,180 @@ For BM extraction, femurs were cut at both ends and placed in 0.5 mL microfuge t
 
 The spleens were dissected, mashed against a 70 μm cell strainer (Falcon) and washed with 5 mL of cold FACS buffer. 1 mL of splenocytes were aliquoted to microfuge tubes and centrifuged twice (3 min, 500 × g, 4 C). Pellets were re-suspended with RBC lysis buffer (Sigma), incubated for 4 min at room temperature, centrifuged (3 min, 500 × g, 4 C) and re-suspended with FACS buffer containing CD16/CD32 blocking antibodies (BioLegend) for 15 min on ice. Cells were centrifuged once more, and pellets were transferred to wells of a 96-well low attachment plate for multi-sample preparation. Subsequently, fluorophore-conjugated antibodies cocktails (listed below) in Brilliant Stain Buffer (BD) were used to resuspend pellets, followed by a 30 min incubation on ice. Cells were washed, re-suspended with 500–1000 μl FACS buffer and passed through a 35 μm cell strainer (Falcon). For absolute quantification of cell populations, 10–50 μl of Precision Count beads (BioLegend) were added to the samples.
 
-## Antibodies used in this study for splenocyte and BM staining
+#### Antibodies used in this study for splenocyte and BM staining
 
-## Flow cytometry and sorting for RNA sequencing
+<table>
+  <thead>
+    <tr>
+      <th>Epitope</th>
+      <th>Conjugation</th>
+      <th>Clone</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD16/CD32</td>
+      <td>NA</td>
+      <td>93</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>NK1.1</td>
+      <td>APC</td>
+      <td>PK136</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD19</td>
+      <td>APC</td>
+      <td>6D5</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD3</td>
+      <td>APC</td>
+      <td>17A2</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Ly6G</td>
+      <td>APC</td>
+      <td>1A8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Ly6C</td>
+      <td>Alexa Fluor 700</td>
+      <td>HK1.4</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Ly6C</td>
+      <td>Brilliant Violet 605</td>
+      <td>HK1.4</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD11b</td>
+      <td>APC/Cy7</td>
+      <td>M1/70</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD11c</td>
+      <td>FITC</td>
+      <td>N418</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CXCL9</td>
+      <td>PE</td>
+      <td>MIG-2F5.5</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>F4/80</td>
+      <td>PE</td>
+      <td>BM8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>F4/80</td>
+      <td>Brilliant Violet 421</td>
+      <td>BM8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>I-A/I-E (MHC-II)</td>
+      <td>Brilliant Violet 605</td>
+      <td>M5/114/15.2</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Ly-6A/E (Sca-1)</td>
+      <td>PE/Cyanine7</td>
+      <td>E13-161.7</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD11c</td>
+      <td>PerCP/Cyanine5.5</td>
+      <td>N418</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Ter-119</td>
+      <td>FITC</td>
+      <td>TER-119</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD4</td>
+      <td>FITC</td>
+      <td>GK1.5</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD8a</td>
+      <td>FITC</td>
+      <td>53–6.7</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Gr-1</td>
+      <td>FITC</td>
+      <td>RB6-8C5</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD45R/B220</td>
+      <td>FITC</td>
+      <td>RA3-6B2</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD11b</td>
+      <td>FITC</td>
+      <td>M1/70</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>CD117/c-Kit</td>
+      <td>APC</td>
+      <td>2B8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>Ly-6A/E (Sca-1)</td>
+      <td>PE-Vio 770</td>
+      <td>REA422</td>
+      <td>Miltenyi</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Flow cytometry and sorting for RNA sequencing
 
 Flow cytometry and sorting was performed using the BD FACSAria III (BD). Single cells were sorted into 384-well plates (Eppendorf) containing 2 μl of a solution containing barcoded poly-T primers for reverse transcription (Sigma, Israel) according to the MARS-seq v2.0 protocol (Keren-Shaul et al., 2019). For bulk cell capture, 5–10x103 cells from each population were sorted into tubes containing 300 μl RLT buffer (QIAGEN) with β-mercaptoethanol (BME). Immediately after sorting, plates or tubes were spun down, flash-frozen in a mixture of dry ice and ethanol and stored in –80° C until processing.
 
-## Single-cell RNA-seq library preparation
+#### Single-cell RNA-seq library preparation
 
 Single-cell libraries were prepared as described (Keren-Shaul et al., 2019). Briefly, mRNA from cells was converted to cDNA alongside barcoding and UMI addition. The cDNA of each plate was pooled followed by second DNA strand synthesis and T7 in vitro transcription. Amplified RNA was fragmented, followed by ligation of partial P5 Illumina sequence, and converted to cDNA. Full sequence of barcoded P5 and P7 of P5 were added by PCR for a sequence ready library. Final libraries were quantified for peak size and concentration using the Agilent TapeStation and Qubit HS DNA Assay kit (Invitrogen), respectively.
 
-## Bulk RNA-seq library preparation
+#### Bulk RNA-seq library preparation
 
 RNA was extracted and cleaned using the RNeasy mini kit (QIAGEN) with DNaseI digestion. Libraries were then prepared according to an in-house MARs-seq or CEL-seq protocol optimized for bulk RNA samples. Final libraries were quantified for peak size and concentration using the TapeStation 4200 (Agilent) and Qubit HS DNA Assay kit (Invitrogen), respectively.
 
-## Library sequencing
+#### Library sequencing
 
 Bulk and single cell libraries were diluted to a concentration of 1.8pM and run on the NextSeq platform (Illumina) according to Illumina guidelines, with 75 reads for read1, and 15 reads for read2. A mean of 6 M reads per library for the kinetics data; a mean of 12 M reads per library for IFNγ inhibitor data; and a mean of 3 M reads per library for the MS4a3TdTm bulk sorted population data.
 
-## CD45.1/CD45.2 adoptive transfer
+#### CD45.1/CD45.2 adoptive transfer
 
 C57BL/6 J mice, expressing CD45.1 or CD45.2, were trained according to our standard protocol using BCG or PBS, respectively. After 2 weeks, BM was isolated from the femur from both mice, resuspended in PBS, and mixed in a 1:1 ratio. Recipient mice (WT C57/BL6J) were irradiated with a single dose of 950 cGy using an XRAD 320 machine (Precision X-Ray [PXI]) and reconstituted the next day via retro-orbital injection of 5x106 mixed donor BM cells/mouse in 200 μl PBS. Mice were given 6 weeks to allow for reconstitution and repopulation of the hematopoietic system.
 
-## Flow cytometry, CFU, and spleen size analysis and quantification
+#### Flow cytometry, CFU, and spleen size analysis and quantification
 
 Flow cytometry data was analyzed using the FlowJo software.
 
@@ -177,42 +360,42 @@ For size quantification, spleens were imaged against a contrasting background, a
 
 All graphs quantifying the results from flow cytometry and CFU results were performed using R on RStudio with the Tidyverse package (Wickham et al., 2019).
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
-## scRNA-seq data analysis
+#### scRNA-seq data analysis
 
-## Data preprocessing
+##### Data preprocessing
 
 MARS-seq pipeline (Keren-Shaul et al., 2019) was used for demultiplexing, alignment to the genome (mm9), and gene counting by unique molecular identifier (UMI). Overall, we sequenced 1536 cells (768 from control mouse and 768 from trained mouse), with 1474 median UMI count per cell and 668 median genes per cell.
 
-## Data normalization and gene filtration
+##### Data normalization and gene filtration
 
 Only genes with at least one UMI count detected in at least one cell were used. Data was normalized to a library size factor. Factors were calculated by dividing total UMI counts in each cell to the median of the total UMI counts across all cells. Data was transformed to log10 scale (log10(UMI count +1)). Cells with less than 200 UMIs were excluded due to low coverage (24 cells, 9 from naive mouse and 15 from trained mouse). We filtered out cell cycle and ribosomal genes and selected the top 425 most variable genes for further analysis. Variable genes were selected based on fitting of the data to a simple noise model based on the genes mean expression and dispersion (coefficient of variance).
 
-## Data clustering and annotations
+##### Data clustering and annotations
 
 Principal component analysis (PCA) was performed on the variable genes, and the first 40 PCs were used for downstream analysis for k-nearest neighbor (KNN)-graph, based on Euclidian distance in PC space. Clustering was performed using Louvain community detection on the KNN-graph (k=20). Overall, we obtained 7 clusters. Cluster identity was inferred using cluster-specific and manually selected genes based on cell classification literature.
 
-## Bulk RNA-seq data processing and normalization
+##### Bulk RNA-seq data processing and normalization
 
 MARS-seq pipeline was used for samples demultiplexing, alignment to the genome (mm9), and gene counting. Data was normalized to a library size factor. Factors were calculated by dividing the total number of reads from each sample to the median total number of reads across all samples. These procedures were done for each dataset alone.
 
-## Kinetics data
+##### Kinetics data
 
 Data was transformed to log2 scale, and minimal expression threshold was set to 3. Replicate samples of each condition were averaged, except for 1 sample that was excluded due to low coverage (<100 k reads; BCG 30d replicate 3). Preceding PCA analysis genes were centered and normalized to a mean of 0 and a standard deviation of 1. To identify genes that were up-regulated due to training, we calculated the differences between the integrals of each gene in BCG relative to PBS along time. The differences across all genes were approximately normally distributed, with a mean of 0.2 and a standard deviation of 10.11. Genes with more than 3 standard deviations above the mean were defined as up-regulated due to training.
 
-## Bulk inhibitor data
+##### Bulk inhibitor data
 
 Data was transformed to log2 scale, and minimal expression threshold was set to 3. Two Fedratinib samples were excluded from analysis due to technical issues during injection that resulted in a lack of inhibition. Heatmap was generated using DEGs calculated by ANOVA (5% FDR and a minimal twofold; 167 genes).
 
-## Fedratinib inhibitor data
+##### Fedratinib inhibitor data
 
 Data was transformed to log2 scale, and minimal expression threshold was set to 4. One sample was excluded due to low coverage (<100 k reads; PBS +S.Tm+Fedratinib replicate 3). Preceding PCA analysis genes were centered and normalized to a mean of 0 and a standard deviation of 1. PCA analysis was performed on DEGs calculated using two-sided t-tests between all relevant conditions: control vs. trained samples, trained with or without inhibitor, control with or without inhibitor, uninfected vs. infected, infected with or without training, infected vs. infected with training with inhibitor, and infected with training vs. infected with training with inhibitor (5% FDR; 453 genes). Heatmap was generated using two-sample t-test between control and BCG-trained samples (1% FDR).
 
-## αIFNγ inhibitor data
+##### αIFNγ inhibitor data
 
 Data was transformed to log2 scale, and minimal expression threshold was set to 3. Two sample was excluded due to low coverage (<250 k reads CM BCG +Isotype replicate 1 and RPM BCG +Isotype replicate 4). Heatmap genes were selected from cluster I and II from the lineage tracing experiment representing shared interferon/STAT-1 upregulated genes.
 
-## MS4A3Tdtm bulk population data
+##### MS4A3Tdtm bulk population data
 
 Data was transformed to log2 scale, and minimal expression threshold was set to 3. One sample was excluded due to low coverage (<150 k reads; control NCM-Tdtm+ replicate 4). Preceding PCA analysis genes were centered and normalized to a mean of 0 and a standard deviation of 1. DEGs between control and trained mice were calculated using two-sided t-test between all control samples versus all trained samples (from all sorted populations together; 10% FDR, 382 genes).

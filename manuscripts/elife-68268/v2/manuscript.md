@@ -17,7 +17,7 @@
 
 ## Abstract
 
-The Varroa destructor mite is a devastating parasite of Apis mellifera honeybees. They can cause colonies to collapse by spreading viruses and feeding on the fat reserves of adults and larvae. Amitraz is used to control mites due to its low toxicity to bees; however, the mechanism of bee resistance to amitraz remains unknown. In this study, we found that amitraz and its major metabolite potently activated all four mite octopamine receptors. Behavioral assays using Drosophila null mutants of octopamine receptors identified one receptor subtype Octβ2R as the sole target of amitraz in vivo. We found that thermogenetic activation of octβ2R- expressing neurons mimics amitraz poisoning symptoms in target pests. We next confirmed that the mite Octβ2R was more sensitive to amitraz and its metabolite than the bee Octβ2R in pharmacological assays and transgenic flies. Furthermore, replacement of three bee-specific residues with the counterparts in the mite receptor increased amitraz sensitivity of the bee Octβ2R, indicating that the relative insensitivity of their receptor is the major mechanism for honeybees to resist amitraz. The present findings have important implications for resistance management and the design of safer insecticides that selectively target pests while maintaining low toxicity to non-target pollinators.
+The Varroa destructor mite is a devastating parasite of Apis mellifera honeybees. They can cause colonies to collapse by spreading viruses and feeding on the fat reserves of adults and larvae. Amitraz is used to control mites due to its low toxicity to bees; however, the mechanism of bee resistance to amitraz remains unknown. In this study, we found that amitraz and its major metabolite potently activated all four mite octopamine receptors. Behavioral assays using Drosophila null mutants of octopamine receptors identified one receptor subtype Octβ2R as the sole target of amitraz in vivo. We found that thermogenetic activation of octβ2R-expressing neurons mimics amitraz poisoning symptoms in target pests. We next confirmed that the mite Octβ2R was more sensitive to amitraz and its metabolite than the bee Octβ2R in pharmacological assays and transgenic flies. Furthermore, replacement of three bee-specific residues with the counterparts in the mite receptor increased amitraz sensitivity of the bee Octβ2R, indicating that the relative insensitivity of their receptor is the major mechanism for honeybees to resist amitraz. The present findings have important implications for resistance management and the design of safer insecticides that selectively target pests while maintaining low toxicity to non-target pollinators.
 
 ## Introduction
 
@@ -33,37 +33,85 @@ In this study, we identified four Varroa OA receptors that are all activated by 
 
 ## Results
 
-## Amitraz and DPMF can activate multiple Varroa octopamine receptors
+### Amitraz and DPMF can activate multiple Varroa octopamine receptors
 
 We identified four candidate Varroa OA receptors, which have amino acid homology to the Drosophila counterparts VdOAMB (33% identical; 81% coverage), VdOctα2R (61% identical; 44% coverage), VdOct-TyrR (56% identical; 52% coverage), and VdOctβ2R (56% identical; 63% coverage) (Figure 1A). Therefore, we tested whether these receptors are sensitive to amitraz and DPMF in a heterologous expression system. When expressed in HEK293 cells, all receptors were functional and showed dose-dependent responses to OA (Figure 1—figure supplement 1). Dose-response analysis showed that VdOctβ2R (EC50 = 72.8 nM) and VdOctα2R (EC50 = 90.2 nM) were more sensitive to amitraz compared to VdOAMB (EC50 = 499.5 nM) and VdOct-TyrR (EC50 = 548.2 nM) (Figure 1C). However, VdOctβ2R (EC50 = 6.9 nM) and VdOAMB (EC50 = 5.2 nM) were more sensitive to DPMF compared to VdOct-TyrR (EC50 = 49.3 nM) and VdOctα2R (EC50 = 190.2 nM) (Figure 1D). Therefore, we could not exclude any of these proteins as amitraz or DPMF receptors since they all were activated in the nanomolar range. In addition, although three out of four of these Varroa receptors showed higher potency and efficacy to DPMF than amitraz, both chemicals were very effective.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig1-v2.jpg)
+
+**Figure 1.:** (A) Phylogenetic tree of OA receptors from Varroa destructor, Apis mellifera, Rhipicephalus microplus, and Drosophila melanogaster. The values on the branches represent the bootstrap support. The candidate Varroa receptors are in bold. (B) The Isoleucine40 in the TM1 of Octβ2R, which is associated with amitraz resistance in the cattle tick Rhipicephalus microplus, is highly conserved in Arachnida and Insecta. (C, D) Dose-response curves of amitraz (C) and DPMF (D) against the Varroa OA receptors. EC50 values were calculated using log(agonist) versus response nonlinear fit, mean ± SEM, n = 3 trials, three replicates per trial.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** EC50 was calculated using log(agonist) versus response nonlinear fit, mean ± SEM, n = 3 trials, three replicates per trial.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Mean ± SEM, n = 3 trials.
+
 An I61F amino acid substitution in the Octβ2R of the cattle tick, R. microplus, is associated with amitraz resistance (Corley et al., 2013). We expressed the wild-type and I61F mutant of RmOctβ2R in HEK293 cells, but they were not functional (Figure 1—figure supplement 2). We found that this residue in transmembrane domain 1 (TM1) is conserved in all representative invertebrate species (Figure 1B). Therefore, we generated a I40F (equivalent to I61F in RmOctβ2R) mutant of VdOctβ2R and tested whether the point mutation caused insensitivity to amitraz. However, there was no significant difference in the EC50 between the wild-type and mutant receptors (Figure 1C and D and Figure 1—figure supplement 1), suggesting that the resistance found in cattle ticks may not be attributed to the I61F mutation in RmOctβ2R. In addition, it is still not clear whether Octβ2R is the molecular target of amitraz.
 
-## Amitraz affects Drosophila aggression and locomotion through Octβ2R
+### Amitraz affects Drosophila aggression and locomotion through Octβ2R
 
 Since genetic manipulation of Varroa mites has not been established, we took advantage of genetic tools in Drosophila to study the mode of action of amitraz, which has been proven useful in elucidating the molecular targets of several insecticides (Douris et al., 2016; Nesterov et al., 2015). We hypothesized that if amitraz acts on a specific OA receptor in flies, then disruption of the receptor gene would render the mutants insensitive to amitraz. We found that amitraz has low toxicity to wild-type flies as even 5 mM amitraz caused no significant lethality after they were exposed to an amitraz diet for 4 days (Figure 2—figure supplement 1). Thus, we used behavioral assays to compare the effects of amitraz on control and mutant files.
 
 OA is both a neuromodulator and neurotransmitter and therefore influences a range of behaviors in insects, including aggression (Hoyer et al., 2008), locomotion (Yang et al., 2015), sleep (Deng et al., 2019), and others (Kim et al., 2017). It is reported that treatment with chlorodimeform, another formamidine insecticide and octopaminergic agonist, reduces fighting latency and increases the lunging frequency in socially grouped flies (Zhou et al., 2008). We first tested whether feeding with 1 mM amitraz would lead to similar effects in flies (Figure 2A and B). In comparison to control flies, treatment of group-housed wide-type Canton-S flies with amitraz resulted in more aggressive behaviors. Males markedly increased their lunging frequency and decreased their fighting latency (Figure 2C and D). We then applied amitraz to six OA receptor mutants and found that all but the octβ2R null allele octβ2Rf05679 showed robust male-male aggression, as seen in the wide-type animals (Figure 2C and D). We also combined octβ2Rf05679 with a corresponding deficiency (Df) that uncovers this gene and found that these males were also not affected by amitraz (Figure 2C and D). However, heterozygous control males were still responsive to amitraz (Figure 2C and D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig2-v2.jpg)
+
+**Figure 2.:** (A) Preparation of test flies. In brief, group-housed male flies (~10–15) were fed 1% DMSO plus 5% sucrose (control) or 1 mM amitraz plus 5% sucrose for 2 hr (see Materials and methods). (B) The 8-well aggression arena used in this behavioral test. (C, D) Effects of 1 mM amitraz on the number of lunges (C) and latency to initiate fighting (D) in different octopamine (OA) receptor mutants and control flies. p values, Mann–Whitney U tests were performed to analyze statistically significant differences between treatment with 1% DMSO versus 1 mM amitraz in the indicated genotypes, mean ± SEM, n = 12–34.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** In brief, 10 wild-type female flies were allowed to feed on diets with 1% DMSO or a series of amitraz concentrations ranging from 1 mM to 5 mM. Data are shown as mean ± SEM. n = 3 biological replicates.
+
 To further confirm that amitraz affects flies through Octβ2R rather than other receptors, we continuously fed flies with amitraz and measured locomotor behavior using an automated monitoring system (Chiu et al., 2010). When we added 100 μM or 1 mM amitraz to the diet of agarose-sucrose medium (2% agarose and 5% sucrose), wide-type flies exhibited hyperactivity (Figure 3A). Same as above, octβ2Rf05679 flies showed no elevation in locomotor activity, while other receptor mutants exhibited an increase in locomotion upon amitraz treatment (Figure 3B-G). Taken together, these results suggest that octβ2R mutants showed behavioral resistance to amitraz, and the deletion of any other OA receptor genes had no impact on their sensitivity to amitraz. Therefore, Octβ2R is the only receptor that mediates the effects of amitraz in vivo.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig3-v2.jpg)
 
-**Figure 3.:** Drosophila locomotion through Octβ2R.(A–G) Effects of amitraz on midline crossing activity in flies of the indicated genotypes. One 5–7-day-old female fly was gently introduced into each tube, which contained 1% DMSO (control), 100 µM amitraz or 1 mM amitraz added to the agarose-sucrose medium (2% agarose and 5% sucrose) at one end. The other end was sealed with a cotton plug. The tubes were placed in a Drosophila Activity Monitor System (see Materials and methods). Black and white bars represent the night and day periods of the 12:12 LD cycle. Yellow boxes indicate the 2-day window of daily crossing activity test. p values, one-way ANOVA and post hoc Bonferroni correction, mean ± SEM, n = 16–32.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A–G) Effects of amitraz on midline crossing activity in flies of the indicated genotypes. One 5–7-day-old female fly was gently introduced into each tube, which contained 1% DMSO (control), 100 µM amitraz or 1 mM amitraz added to the agarose-sucrose medium (2% agarose and 5% sucrose) at one end. The other end was sealed with a cotton plug. The tubes were placed in a Drosophila Activity Monitor System (see Materials and methods). Black and white bars represent the night and day periods of the 12:12 LD cycle. Yellow boxes indicate the 2-day window of daily crossing activity test. p values, one-way ANOVA and post hoc Bonferroni correction, mean ± SEM, n = 16–32.
 
-## Hyperactivating octβ2R-expressing neurons mimic amitraz poisoning symptoms
+### Hyperactivating octβ2R-expressing neurons mimic amitraz poisoning symptoms
 
 The way insects react when they are exposed to formamidines is very unusual. At sublethal doses, these insecticides cause abnormal behaviors like dispersal from plants and detachment of ticks from their host, presumably induced by higher motor activity. At higher doses, this hyperactivity can induce tremors that lead to death (Evans and Gee, 1980; Stone et al., 1974). Octβ2R is coupled to Gs, which typically leads to neuronal activation. We then wondered whether artificial activation of octβ2R neurons wound induce amitraz-like poisoning symptoms. Thus, we used the thermosensitive cation channel Drosophila TRPA1 (Hamada et al., 2008) to acutely hyper-stimulate these neurons. We found that expressing trpA1 in octβ2R-Gal4 neurons strongly induced hyperactivity behavior at 32℃ and eventually led to paralysis ( Figure 4—video 1 and Figure 4—video 2), which is similar to the amitraz-induced behavior phenotype in insects and mites (Roeder, 2005). We also expressed trpA1 in oamb-Gal4, oct-tyrRGal4, and octα2R-Gal4 neurons and found that activation of oamb-Gal4 and oct-tyrRGal4 neurons did not show any behavioral defects (Figure 4). Although activation of octα2R-Gal4 neurons also induced knock-down effects, flies were directly paralyzed without hyperactivity ( , Figure 4—video 1). Since Octα2R is a Gi-coupled receptor, to decrease cAMP upon activation (Qi et al., 2017), which is associated with neuronal silencing, we chose to use UAS-Shibirets (Kitamoto, 2001) to inhibit octα2R neurons. However, silencing of octα2R-Gal4 neurons produced a ‘stop’ behavior rather than hyperactivity or paralysis. The flies exhibited almost no translational or rotational body movement (Video 1). Therefore, thermogenetic activation of octβ2R-expressing neurons in a short time window phenocopies the action of amitraz in target pests, which demonstrates that pharmacological activation of Octβ2R by amitraz in vivo leads to toxicity and finally to death.
 
-## Honeybee Octβ2R is less sensitive to amitraz than the Varroa mite Octβ2R
+![Figure 4.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig4-v2.jpg)
+
+**Figure 4.:** The following transgenes were used: oamb-Gal4> UAS-trpA1; oct-tyrRGal4> UAS-trpA1; octα2R-Gal4> UAS-trpA1; octβ2R-Gal4> UAS-trpA1. n = 50–100.
+
+![Video 1.](https://cdn.elifesciences.org/articles/68268/elife-68268-video1.mp4.jpg)
+
+**Video 1.:** The following transgenes were used: octα2R-Gal4> UAS-Shibirets. The movie was speeded up 2×.
+
+### Honeybee Octβ2R is less sensitive to amitraz than the Varroa mite Octβ2R
 
 Previous studies indicated that the differences in receptors may confer the different sensitivities of honeybees and Varroa mites to amitraz (Johnson et al., 2013). Therefore, we compared the effects of amitraz and DPMF on Octβ2Rs from both species, as well as fruit flies. We found that there were no differences in the AmOctβ2R, VdOctβ2R, and DmOctβ2R OA EC50s (Figure 5—figure supplement 1). Notably, compared to VdOctβ2R, we found that AmOctβ2R was 16-fold less sensitive to amitraz (EC50 = 1.2 µM) and 6-fold less sensitive to DPMF (EC50 = 43.4 nM; Figure 5A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) The predicted ligand-binding domain of amitraz in the Varroa (A) and the honeybee (B) Octβ2R. Amitraz and three amino acids mutated in this study are shown. (C) Superposition of the predicted ligand-binding domain of the honeybee (golden cartoon) and the Varroa (blue cartoon) Octβ2R structures. (D) Amino acid substitution in the ligand-binding domain (TM5-TM7) of Octβ2R in representative species from Arachnida and Hymenoptera. The predicted amino acids involved in the binding of amitraz are indicated in red. Three amino acids (E208, I335, I350) highlighted in green are conserved among species of bees. EL: extracellular loop; TM: transmembrane domain. (E, F) Dose-response curve of amitraz (E) and DPMF (F) against the indicated octopamine (OA) receptors. EC50 was calculated using log(agonist) versus response nonlinear fit, mean ± SEM, n = 3–4 trials, three replicates per trial.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** EC50 values were calculated using log (agonist) versus response nonlinear fit, mean ± SEM, n = 3 trials, three replicates per trial.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Abbreviations: PBO: piperonyl butoxide; DEF: S,S,S-tributylphosphorotrithioate; DEM: diethyl maleate. One way ANOVA and post hoc Mann-Whitney U tests, mean ± SEM, n = 3-9 biological replicates. * p<0.05; ** p<0.01.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** EC50 values were calculated using log (agonist) versus response nonlinear fit, mean ± SEM, n = 1-3 trials, 3 replicates per trial.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Mean ± SEM, n = 5 trials.
 
 In the case of DmOctβ2R, it was threefold less sensitive to amitraz (EC50 = 242.1 nM), but fivefold more sensitive to DPMF (EC50 = 1.4 nM) than VdOctβ2R (Figure 5A and B), suggesting that metabolic detoxication may contribute to amitraz tolerance in flies. Actually, we found that both piperonyl butoxide (PBO, a cytochrome P450s inhibitor) and S,S,S-tributylphosphorotrithioate (DEF, a model carboxylesterase inhibitor) increased the toxicity of amitraz in survival assays. Diethyl maleate (DEM, a model glutathione-S-transferase inhibitor) did not significantly change the toxicity of amitraz (Figure 5—figure supplement 2). Thus, we suggest that the fruit fly and honeybee employ different mechanisms to resist amitraz.
 
 We also tested the scenario that amitraz activates multiple OA receptors in Varroa mites to cause lethality, but only activates Octβ2Rs in honeybees and flies. Therefore, we cloned the three remaining receptors from fruit flies and honeybees and tested whether these receptors are sensitive to amitraz and DPMF in vitro. Notably, all but DmOAMB showed responses to amitraz and DPMF in nanomolar concentrations (Figure 5—figure supplement 3). These results indicate that amitraz and DPMF can bind all four OA receptors in fruit flies and honeybees, further emphasizing that the relative insensitivity of AmOctβ2R to amitraz is critical for selective toxicity.
 
-## Three residues contribute to resistance of the honeybee Octβ2R to amitraz
+### Three residues contribute to resistance of the honeybee Octβ2R to amitraz
 
 We next investigated the molecular mechanism governing the pharmacological differences in Octβ2Rs described above. Amitraz is effective against mites and ticks, but safer for honeybees and for the bumblebee, Bombus terrestris (Marletto et al., 2003). We reasoned that species-specific sequences of Octβ2Rs, especially around the ligand binding pocket, may determine their sensitivity to amitraz. To identify putative amino acid residues that affect the amitraz response, we generated models of the honeybee and mite Octβ2R by homology modeling using the crystal structure of the carazolol-bond β2-adrenergic receptor (Huang et al., 2016b). The models included placement of amitraz into the ligand-binding domain (Figure 5C-E). Many residues were predicted to be involved in amitraz binding. However, we found that three amino acids (E208, I335, I350) within the potential ligand-binding domain were unique to bees (Figure 5F; highlighted in green). We therefore generated a ‘Varroa version’ of AmOctβ2R, in which the three amino acids were replaced with corresponding amino acids in VdOctβ2R, and examined its pharmacological profile in cell-based assays. Interestingly, the engineered receptor (AmOctβ2RE208V, I335T, I350V, abbreviated to AmOctβ2RV3X) was more sensitive (EC50 = 440.0 nM) to amitraz than the wide-type AmOctβ2R (EC50 = 1.2 µM) (Figure 5A), while the OA responses were not affected (Figure 5—figure supplement 1). In contrast, AmOctβ2RV3X showed no significant change in DPMF sensitivity (Figure 5B). These results indicate that the three residues are responsible for the resistance of honeybees to amitraz.
 
@@ -71,7 +119,7 @@ To test the role of these three amino acid substitutions in vivo, we generated t
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/68268/elife-68268-fig6-v2.jpg)
 
-**Figure 6.:** (A, B) Number of lunges (A) and latencies before initiating fighting (B) in the Octβ2R null mutant expressing VdOctβ2R, AmOctβ2R, or AmOctβ2RV3X. Changes were compared to the AmOctβ2R flies. AmOctβ2RE208V, I335T, I350V, abbreviated to AmOctβ2RV3X. Genotype: elav-gal4/UAS-XXOctβ2R; octβ2R p values, Kruskal–Wallis and post hoc Mann–Whitney U tests, mean ± SEM, n = 18–24. (f05679/octβ2Rf05679.C–E) Midline crossing activity in Octβ2R null mutants expressing VdOctβ2R, AmOctβ2R, or the AmOctβ2RV3X. (F) Daily crossing activities exhibited by Octβ2R null mutants expressing VdOctβ2R, AmOctβ2R, or the AmOctβ2RV3X. Changes were compared to the AmOctβ2R flies. Genotype: elav-gal4/UAS-XXOctβ2R; octβ2R p values, two-way ANOVA and post hoc Bonferroni correction, mean ± SEM, n = 16.f05679/octβ2Rf05679.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A, B) Number of lunges (A) and latencies before initiating fighting (B) in the Octβ2R null mutant expressing VdOctβ2R, AmOctβ2R, or AmOctβ2RV3X. Changes were compared to the AmOctβ2R flies. AmOctβ2RE208V, I335T, I350V, abbreviated to AmOctβ2RV3X. Genotype: elav-gal4/UAS-XXOctβ2R; octβ2Rf05679/octβ2Rf05679. p values, Kruskal–Wallis and post hoc Mann–Whitney U tests, mean ± SEM, n = 18–24. (C–E) Midline crossing activity in Octβ2R null mutants expressing VdOctβ2R, AmOctβ2R, or the AmOctβ2RV3X. (F) Daily crossing activities exhibited by Octβ2R null mutants expressing VdOctβ2R, AmOctβ2R, or the AmOctβ2RV3X. Changes were compared to the AmOctβ2R flies. Genotype: elav-gal4/UAS-XXOctβ2R; octβ2Rf05679/octβ2Rf05679. p values, two-way ANOVA and post hoc Bonferroni correction, mean ± SEM, n = 16.
 
 ## Discussion
 
@@ -89,7 +137,402 @@ Finally, there is great demand for safer and more selective insecticides that sp
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Canton-S</td>
+      <td>Shanghai Institute of Biochemistry and Cell Biology</td>
+      <td>Cat#BCF47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>w1118</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat#5905RRID:BDSC_5905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>elav-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat#8765RRID:BDSC_8765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>octβ2R-Df</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat#56254RRID:BDSC_56254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>octβ3RMB04794</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat#24819RRID:BDSC_24819</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>octβ1R</td>
+      <td>Koon and Budnik, 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>octβ2Rf05679</td>
+      <td>Lim et al., 2014</td>
+      <td>Cat#18896RRID:BDSC_18896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>oambdel</td>
+      <td>Deng et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>oamb-Gal4</td>
+      <td>Zhou et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>octα2Rattp</td>
+      <td>Deng et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>octα2R-Gal4</td>
+      <td>Deng et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>octβ2R-Gal4</td>
+      <td>Deng et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-trpA1</td>
+      <td>Hamada et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Shibirets</td>
+      <td>Kitamoto, 2001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>oct-tyrRGal4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant allele; Materials and methods, ‘Fly strains’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-VdOctβ2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant allele; Materials and methods, ‘Fly strains’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-AmOctβ2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant allele; Materials and methods, ‘Fly strains’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-AmOctβ2RV3X</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant allele; Materials and methods, ‘Fly strains’</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amitraz</td>
+      <td>Sigma</td>
+      <td>Cat#45323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N2-(2,4-Dimethylphenyl)-N1-methyformamidine</td>
+      <td>Sigma</td>
+      <td>Cat#BP641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,4-Dimethylaniline</td>
+      <td>Sigma</td>
+      <td>Cat#301493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(±)-Octopamine hydrochloride</td>
+      <td>Sigma</td>
+      <td>Cat#68631</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,4-Dimethylformanilide</td>
+      <td>AccuStandard</td>
+      <td>Cat#P-1100S-CN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Piperonyl butoxide</td>
+      <td>Aladdin</td>
+      <td>Cat#P113864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S,S,S-Tributylphosphorotrithioate</td>
+      <td>Aladdin</td>
+      <td>Cat#T114221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diethyl maleate</td>
+      <td>Aladdin</td>
+      <td>Cat#D104017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D-lysine</td>
+      <td>Sigma</td>
+      <td>Cat#P0296</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Sinopharm</td>
+      <td>Cat#10021418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agarose</td>
+      <td>Sinopharm</td>
+      <td>Cat#63005518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell lines</td>
+      <td>HEK 293</td>
+      <td>The Cell Bank of Type Culture Collection of Chinese Academy of Sciences</td>
+      <td>Cat#GNHu43</td>
+      <td>https://www.cellbank.org.cn/</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-VdOAMB</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-VdOctβ2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-VdOctβ2RI40F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-VdOctα2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-VdOct-tyrR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-AmOAMB</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-AmOctβ2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-AmOctβ2RV3X</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-AmOctα2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-AmOct-tyrR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-DmOAMB</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-DmOctβ2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-DmOctα2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-DmOct-tyrR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-RmOctβ2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1-RmOctβ2RI61F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Construction of expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>SoftMax Pro software (v. 7.1.2.0)</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td>https://www.moleculardevices.com/</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Molecular Operating Environments (MOE, 2015.10)</td>
+      <td>Chemical Computing Group</td>
+      <td></td>
+      <td>https://www.chemcomp.com/</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism 7.0</td>
+      <td>GraphPad</td>
+      <td>GraphPad Prism, RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM media</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#10566016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96 well polystyrene microplates</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#165305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.25% Trypsin-EDTA</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#25200072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fura 2-AM and Pluronic F-127</td>
+      <td>Dojindo Molecular Technologies</td>
+      <td>Cat#F025</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 Flies were maintained and reared on conventional cornmeal-agar-molasses medium at 25 ± 1℃, 60% ± 10% humidity with a photoperiod of 12 hr light:12 hr night (lights on at 7 AM). For experiments using UAS-trpA1 and UAS- Shibirets transgenes, flies were reared at 21℃. The Canton-S strain was used as wide-type for aggression assays. For locomotion assays, the w1118 strain was crossed to Canton-S so that the X chromosome was w+ while the other chromosomes were from w1118 (w+; w1118).
 
@@ -99,52 +542,52 @@ We generated the oct-tyrRGal4 mutant by ends-out homologous recombination, in wh
 
 To generate the UAS-VdOctβ2R and the UAS-AmOctβ2R transgenes, we subcloned the Varroa and honeybee Octβ2R cDNA sequences into the pUAST-attp vector, respectively. The mutated version of AmOctβ2R was directly synthesized by GenScript. The Octβ2R-pUAST construct with φC31-medidated transgenesis targeted the attp40 specific-site on the second chromosome. The following primers were used for generation of transgenes:
 
-## Identification of OA receptors in V. destructor
+### Identification of OA receptors in V. destructor
 
 To identify members of the OA receptor gene family in Varroa, we performed a two-step analysis: (1) we used the Drosophila OA receptor protein sequences as queries to perform BLASTp search against Varroa genome (Vdes_3.0) and (2) verified the candidate genes by BLASTp again without a limit of species as previous described (Guo et al., 2020). We took all screened genes that were Reciprocal Best Hits with the Drosophila OA receptor gene family and then renamed Varroa OA receptors.
 
 We next built a phylogenetic tree to show the evolutionary relationships between these OA receptor genes among different species. The Drosophila FMRFamide receptor (DmFR) was used as the outgroup. All the amino acid sequences were aligned by Clustal Omega (https://www.ebi.ac.uk/Tools/msa/clustalo/). A neighbor-joining tree was performed by MEGA X with default parameters, 1000 bootstrap replications, and substitution with JTT model (Kumar et al., 2018). The screened genes and sequences containing previous accessions are listed in supplement source data.
 
-## Construction of expression plasmids
+### Construction of expression plasmids
 
 Varroa full-length cDNAs for all predicted OA receptors in genome annotation were cloned from a single mite or synthesized by GenScript. We inserted the Kozak consensus sequence before protein translation initiation site and subcloned with NheI-HindIII sites into the pcDNA3.1(-)-myc-His A vector for expression in mammalian cells.
 
 Drosophila and honeybee OA receptors synthesized by GenScript were cloned into the pcDNA3.1(-)-myc-His A vector for expression in mammalian cells. We synthesized a wild-type R. microplus β-adrenergic OA receptor (accession number: AFC88978.1) and its I61F mutant.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HEK293 cells were obtained from the Cell Bank of Type Culture Collection of Chinese Academy of Sciences (Shanghai, China, Cat#GNHu43), and the identity (STR profiling) and mycoplasma contamination status of this cell line was tested by the supplier (https://www.cellbank.org.cn/search-detail.php?id=770). Cells were grown in DMEM media (ThermoFisher Scientific, Cat#10566016) supplemented with 10% fetal bovine serum according to standard protocol at 37°C and 5% CO2. Cells were seeded on 60 mm Petri dishes until 80–90% confluent at transfection. Cells were transiently transfected, using Lipofectamine 2000 Transfection Reagent (ThermoFisher Scientific, Cat#11668019), according to the manufacturer’s protocol, with 2 μg of each OA receptor-expressing plasmid and Gα16-expressing plasmid (Offermanns and Simon, 1995), except OAMB, which is coupled to Gq protein endogenously and can be directly activated to increase intracellular Ca2+ levels. The Gα16 can convert Gi/Gs-coupled receptors to phospholipase C pathway (Offermanns and Simon, 1995).
 
 50 µL of 50 µg/mL poly-D-lysine (Sigma-Aldrich, Cat#P0296) were added to each well of a 96-well polystyrene microplates (ThermoFisher Scientific, Cat#165305) for 4–5 hr and then washed with deionized water for three times. Transfected cells were washed with PBS and dissociated with 200 μL 0.25% Trypsin-EDTA (ThermoFisher Scientific, Cat#25200072) for 30 s at room temperature. Cells were equally seeded into 96-well plates and incubated with DMEM media containing 10% fetal bovine serum for 24–30 hr.
 
-## Calcium mobilization assay
+### Calcium mobilization assay
 
 To monitor intracellular Ca2+ levels, cells in 96-well microtiter plates were washed three times with 100 µL saline solution containing 152 mM NaCl, 5.4 mM KCl, 0.8 mM CaCl2, 1.8 mM MgCl2, and 5.5 mM glucose, 10 mM HEPES (pH 7.4) (Qi et al., 2016), and loaded with 2 µmol/L Fura 2-AM and 0.05% Pluronic F-127 (Dojindo Molecular Technologies, Cat#F025) at 50 µL/well for 40 min in saline solution at 37℃ and 5% CO2. After washing three times in saline solution, we pipetted 200 µL of fresh saline solution into each well of a 96-well plate containing the loaded cells and incubated for 15 min at 37℃ and 5% CO2.
 
 Calcium mobilization experiments were performed on a FlexStation 3 Multi-Mode Microplate Reader (Molecular Devices). All compounds were prepared freshly 1–2 hr prior to assays at 5× concentration in saline buffer into a 96-well plate. The FlexStation 3 instrument was setup using a SoftMax Pro software according to the recommended experimental protocol. Calcium flux was monitored using the 340/380 nm excitation ratio channel and 510 nm emission wavelength. PMT sensitivity setup medium and three flashes/read. 50 µL of compounds were transferred to each well containing 200 µL of fresh saline solution at 30 s, and fluorescence were recorded every 4 s for 3 min. Normalization of fluorescence data to zero baseline and SoftMax Pro software (v. 7.1.2.0) (Molecular Devices) was used to calculate the ratio of the 340/380 nm wavelengths. Dose-response curve and data analysis were done in GraphPad Prism 7 (GraphPad).
 
-## Bioassay
+### Bioassay
 
 We introduced ten 5–7-old females into fly vials containing 5 mL 2% (wt/vol) agarose and 5% (wt/vol) sucrose, supplemented with a final amitraz concentration of 0–5 mM. Amitraz concentrations ≥ 10 mM cannot be prepared because of insolubility. The control and each treatment were performed in triplicate. Female mortality rates were monitored for 8 days.
 
 For the enzyme inhibitor assay, we introduced 10 females into a new vial containing sucrose solution supplemented with 5 mM amitraz and 1 mM inhibitor.
 
-## Aggression assay
+### Aggression assay
 
 10–15 newly eclosed male flies were reared for 5–7 days in fly vials containing conventional cornmeal-agar-molasses medium. They were transferred to new vials consisting of filter paper with 300 µL 5% sucrose solution and 1% DMSO (control) or an appropriate concentration of amitraz for 2 hr prior to performing behavior assays. Aggressive behavior was assayed in a ‘8-well’ cylindrical arena, with the dimension of 11 mm and the volume of 1.6 mL. Each arena contained 1 mL of fresh sucrose-agarose food solution (apple juice (Wei Chuan Foods Corporation) consisting of 2.25% (w/v) agarose and 2.5% (w/v) sucrose) (Asahina et al., 2014). A drop of yeast solution was added to the center of each well and allowed to air dry. Aggression assays were performed between 7:00–11:00 AM and 4:00–7:00 PM because the flies were most active during these periods (see Locomotion assay). Two male flies were gently introduced into the arenas by aspiration through a small hole in the lid. We then transferred other flies by sliding the lid. Control and drug-treated flies were placed in the arenas at the same time and recorded with a video camera for 15 min. The total number of lunges, which is a stereotyped behavioral pattern in which the winner rears up on its hind legs and uses its front legs snap on the loser, was measured to assess fighting behavior (Huang et al., 2016a; Zhou et al., 2008). The latency time was the time that elapsed between initiation of the video capture and when the first lunge was completed (Zhou et al., 2008).
 
-## Locomotion assay
+### Locomotion assay
 
 Locomotor behavior was performed using the Drosophila activity monitoring system (DAMS, Trikinetics) as briefly described previously (Yang et al., 2015). Individual 5–7-day-old female flies were gently anesthetized and introduced into tubes (5 mm × 65 mm) containing drug medium or no drug medium for 3 days. The tubes were then inserted and fixed firmly in the DAMS. Flies were allowed to adapt to the new environment for 1 day before sampling midline crossing activity every minute and binning data to 30 min. Average daily activities were calculated based on 2 days of testing.
 
-## Thermogenetic activation and silencing assays
+### Thermogenetic activation and silencing assays
 
 Flies for TRPA1-mediated thermogenetic activation and Shibire-mediated silencing experiments were collected upon eclosion and reared in vials containing standard food medium at 21℃ for 5–8 days. For thermogenetic activation with the UAS-trpA1 transgene, 10 flies were transferred to new empty vials by gently inspiration, and then the assays were performed at 23℃ and 32℃ for 10 min. The percentage of paralysis behavior, in which the animal lies on its back with little effective movement of the legs and wings, was measured. For silencing assays, UAS-Shibirets transgene was used and flies were also transferred to fly vials at 23℃ and 32℃ for 10 min. The ‘stop’ behavior was defined as a condition that the animal exhibits almost no translational or rotational body movement.
 
-## Molecular docking
+### Molecular docking
 
 Models of the honeybee and Varroa Octβ2R-LBD were built using the Molecular Operating Environments (MOE, 2015.10) using the β2-adrenergic receptor and carazolol-bond crystal structures (PDB ID: 5D5A) as homology templates as described (Hu et al., 2017). The models were evaluated using Ramachandran plots and the UCLA-DOE server. During molecular docking calculations, water molecules were deleted, 3D protonation was added, and the energy of the protein models was minimized using the MOE algorithm with default parameters. The MOE-dock program was used for docking compounds, and energies were allowed to minimize. To search for the correct conformations during the calculations, the ligands were kept flexible. The default parameters were set according to the rigid receptor docking protocol. Thirty conformations containing the docked poses and scored were output at the end of the dock operation. A lower binding-free energy in the docking simulation means a better binding interaction between the receptor and the ligand.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using GraphPad Prism 7 (GraphPad Software). Data for aggressive behavior were analyzed with nonparametric tests. For comparisons of more than three groups, we first used the Kruskal–Wallis test. If the null hypothesis that the median of all experimental groups is the same was rejected, a post hoc Mann–Whitney U test was used for statistical analysis between the relevant pair of genotypes. Data for locomotion were considered to be normally distributed since these data passed the D’Agostino–Pearson omnibus test. Therefore, one-way or two-way ANOVA was performed to test the null hypothesis. If the null hypothesis was rejected, we then used a post hoc Bonferroni correction for multiple comparisons. p values are indicated in the figures. Details of other statistical methods are reported in the figure legends.

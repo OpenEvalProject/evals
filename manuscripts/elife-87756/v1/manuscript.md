@@ -14,17 +14,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Institute for Diabetes, Obesity & Metabolism, Perelman School of Medicine at the University of Pennsylvania Philadelphia United States
+1. Institute for Diabetes, Obesity & Metabolism, Perelman School of Medicine at the University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 2. Department of Cell and Developmental Biology; Perelman School of Medicine at the University of Pennsylvania Philadelphia United States
-3. https://ror.org/04drvxt59 Division of Endocrinology, Diabetes, and Metabolism, Beth Israel Deaconess Medical Center Boston United States
-4. https://ror.org/05a0ya142 Broad Institute of MIT and Harvard Cambridge United States
-5. https://ror.org/03wevmz92 Harvard Medical School Boston United States
+3. Division of Endocrinology, Diabetes, and Metabolism, Beth Israel Deaconess Medical Center Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+4. Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+5. Harvard Medical School Boston United States ([ROR:03wevmz92](https://ror.org/03wevmz92))
 
 † Corresponding author
 
 ## Abstract
 
-The energy-burning capability of beige adipose tissue is a potential therapeutic tool for reducing obesity and metabolic disease, but this capacity is decreased by aging. Here, we evaluate the impact of aging on the profile and activity of adipocyte stem and progenitor cells (ASPCs) and adipocytes during the beiging process in mice. We found that aging increases the expression of Cd9 and other fibro-inflammatory genes in fibroblastic ASPCs and blocks their differentiation into beige adipocytes. Fibroblastic ASPC populations from young and aged mice were equally competent for beige differentiation in vitro, suggesting that environmental factors suppress adipogenesis in vivo. Examination of adipocytes by single nucleus RNA-sequencing identified compositional and transcriptional differences in adipocyte populations with aging and cold exposure. Notably, cold exposure induced an adipocyte population expressing high levels of de novo lipogenesis (DNL) genes, and this response was severely blunted in aged animals. We further identified Npr3 , which encodes the natriuretic peptide clearance receptor, as a marker gene for a subset of white adipocytes and an aging-upregulated gene in adipocytes. In summary, this study indicates that aging blocks beige adipogenesis and dysregulates adipocyte responses to cold exposure and provides a resource for identifying cold and aging-regulated pathways in adipose tissue.
+The energy-burning capability of beige adipose tissue is a potential therapeutic tool for reducing obesity and metabolic disease, but this capacity is decreased by aging. Here, we evaluate the impact of aging on the profile and activity of adipocyte stem and progenitor cells (ASPCs) and adipocytes during the beiging process in mice. We found that aging increases the expression of Cd9 and other fibro-inflammatory genes in fibroblastic ASPCs and blocks their differentiation into beige adipocytes. Fibroblastic ASPC populations from young and aged mice were equally competent for beige differentiation in vitro, suggesting that environmental factors suppress adipogenesis in vivo. Examination of adipocytes by single nucleus RNA-sequencing identified compositional and transcriptional differences in adipocyte populations with aging and cold exposure. Notably, cold exposure induced an adipocyte population expressing high levels of de novo lipogenesis (DNL) genes, and this response was severely blunted in aged animals. We further identified Npr3, which encodes the natriuretic peptide clearance receptor, as a marker gene for a subset of white adipocytes and an aging-upregulated gene in adipocytes. In summary, this study indicates that aging blocks beige adipogenesis and dysregulates adipocyte responses to cold exposure and provides a resource for identifying cold and aging-regulated pathways in adipose tissue.
 
 ## Introduction
 
@@ -38,23 +38,47 @@ We applied ASPC lineage tracing, along with unbiased single-cell and single-nucl
 
 ## Results
 
-## Aging impairs iWAT beiging
+### Aging impairs iWAT beiging
 
 To study the impact of aging on beige adipose tissue development, we exposed young (9-week-old) and middle aged (57-week-old) C57BL/6 mice to 6 °C for either 3 or 14 days. All mouse groups were first acclimated to 30 °C (thermoneutrality [TN]) for 3 weeks to reduce beige adipose tissue to baseline levels. Following acclimation, TN-housed mice remained at 30 °C; acute cold mice (3D) were transitioned to 6 °C after 11 days for the final 3 days; and chronic cold mice (14D) were moved to 6 °C for 2 weeks (Figure 1A). As expected, the aged mice weighed more and had larger iWAT depots than the young mice (Figure 1—figure supplement 1A-B). Cold exposure progressively increased the expression levels of thermogenic genes Ucp1, Cidea, Dio2, and Ppargc1a in iWAT from young mice, and the activation of these genes was significantly blunted in aged mice, especially at the 3D time point (Figure 1B). Immunofluorescence (IF) staining showed a robust induction of UCP1 protein in multilocular adipocytes of young iWAT at 3D of cold exposure, which was further increased at 14D. The induction of UCP1+ beige adipocytes at 3D was severely reduced in aged animals, with few UCP1 +adipocytes detected. At 14D, the beige adipocytes were morphologically similar in young and aged mice, although there were many fewer in aged animals (Figure 1C). At both ages, beige adipocytes were more prominent in the inguinal versus dorsolumbar region of iWAT, consistent with other reports (Barreau et al., 2016; Chi et al., 2018; Dichamp et al., 2019), and beiging was largely absent in the dorsolumbar region of aged mice (Figure 1—figure supplement 1C–F). To determine if the beiging response was delayed in aged mice, we exposed young and aged mice at 6 °C for 6 weeks. At this time point, the iWAT of aged mice exhibited a larger deficit in thermogenic gene expression compared to young animals (Figure 1D). Thermogenic gene levels in interscapular BAT were similar between young and aged mice at TN and after cold exposure, indicating that the inhibitory effects of aging were selective to WAT (Figure 1—figure supplement 1E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig1-v1.jpg)
+
+**Figure 1.:** (A) Young (9-week-old) and aged (57-week-old) C57BL/6 mice were acclimated to 30 °C for 3 weeks, followed by two additional weeks either remaining at 30 °C (TN, thermoneutral), spending the last 3 days at 6 °C (3D, acute cold) or the last 14 days at 6 °C (14D, chronic cold). (B) Relative mRNA levels of thermogenic marker genes in mouse iWAT from (A), n=5. (C) Immunofluorescence analysis of UCP1 (green) and DAPI (blue) in iWAT sections from mice in (A), LN = lymph node. Scale bar 100 μm. (D–F) Relative mRNA levels of Ucp1 and Cidea in iWAT from separate groups of young and aged mice that were either: exposed to 6 °C cold for 6 weeks (D), treated with CL-316,243 for 1 hr (E) or treated with CL 316,243 for 5 days (F). Data represent mean ± SEM, points represent biological replicates, two groups analyzed using a Student’s t-test, and multiple conditions analyzed using a two-way ANOVA with a Tukey correction for multiple comparisons. Significance: not significant, p>0.05; * p<0.05 ** p<0.01; *** p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Body mass and iWAT mass of mice described in Figure 1A, n=5. (C) Mouse dissection with lymph node (LN) orientation showing the dorsolumbar and inguinal regions of the iWAT pad. (D) IF analysis of UCP1 (green) in iWAT, DAPI (nuclei, blue). LN = lymph node. Scale bar 100 μm. (E) mRNA levels of Ucp1 and Cidea in BAT of young and aged mice housed at TN, and either maintained at TN or exposed to cold for 2 weeks. (F) H&E staining of serial sections of iWAT from D (above) and Figure 1C, LN = lymph node. Scale bar 100 μm. Data represent mean ± SEM, points represent biological replicates, analyzed using a Student’s t-test with a two-way ANOVA with a Tukey correction for multiple comparisons. Significance: not significant, p>0.05; * p<0.05 ** p<0.01; *** p<0.001.
+
 Next, we examined beige fat formation in young and aged animals upon treatment with the β3-selective adrenergic agonist CL-316,243 (CL). CL acts in an adipose tissue autonomous manner to stimulate beige fat biogenesis, bypassing the central nervous system pathways that mediate the cold response. Acute CL treatment for only 1 hr increased Ucp1 expression in in iWAT of young mice to a much greater extent than in aged mice (Figure 1E). Chronic CL exposure for 5 days also induced much higher expression levels of Ucp1 and Cidea in iWAT of young compared to aged mice (Figure 1F). Taken together, these results demonstrate that beige adipose tissue induction is severely impaired in middle aged mice.
 
-## Aging blocks beige adipogenesis from Pdgfra+ ASPCs
+### Aging blocks beige adipogenesis from Pdgfra+ ASPCs
 
 To determine the contribution of fibroblastic ASPCs to beige adipocytes during cold exposure, we performed lineage tracing using Pdgfra-CreERT2; R26RtdTomato reporter mice. Pdgfra expression marks multiple ASPC populations, including preadipocytes (Merrick et al., 2019; Sakers et al., 2022). Young and aged reporter mice were treated with tamoxifen for 5 days at TN (30 °C; ‘pulse’) to activate Cre and induce tdTomato expression in Pdgfra+ cells. Following a 9-day washout period, mice were transferred to 6 °C (cold) for 2 weeks (‘chase’; Figure 2A). We observed near complete and specific labeling of ASPCs during the pulse period, with ~95% of PDGFRα+ cells in iWAT from young and aged mice displaying tdTomato expression (Figure 2B, Figure 2—figure supplement 1). The proportion of PDGFRα+ cells in iWAT was similar between young and aged mice (Figure 2B). No tdTomato-expressing adipocytes were observed after the pulse (Figure 2—figure supplement 1). After 14 days of cold exposure, we detected many newly developed beige adipocytes from ASPCs in young mice (visible as tdTomato+/UCP1+ multilocular adipocytes). By contrast, very few ASPC-derived (tdTomato+) adipocytes were detected in the beige fat areas of aged iWAT at day 14 (Figure 2C). Quantifying across the entire length of iWAT pads revealed that most beige adipogenesis occurred in the inguinal region and was ~12-fold lower in aged compared to young mice (Figure 2D and E). However, the overall contribution of Pdgfra+ ASPCs to beige adipocytes was relatively low, even in young animals, with <20% of beige adipocytes expressing tdTomato.
 
-## Single-cell expression profiling of ASPCs
+![Figure 2.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of Pdgfra-CreERT2;R26R-tdTomato reporter mouse model and lineage tracing paradigm. (B) Flow cytometry-based quantification showing proportions of tdTomato-expressing cells (as % of total Live, Lin- (CD45-/CD31-, PDGFRα+ cells)) (left) and PDGFRα+ cells (as % of total Live, Lin- cells) (right) in iWAT from young and aged Cre- (control, +/+), and Cre+ (CER) mice. n=6 young, 5 aged (Circles represent male mice, triangles represent female mice). (C) IF analysis of tdTomato (red), UCP1 (green), PLIN1 (white) and DAPI (blue) in iWAT from young and aged reporter mice after 14 days of 6 °C cold exposure (chase). Scale bar 100 μm. (D) Representative stitched images of full length iWAT histology slices from samples in (C) showing quantification of traced tdTomato+; UCP1 + multilocular (beige) adipocytes (blue numbers). LN = lymph node, scale bar 500 μm. (E) Quantification of traced beige adipocytes from (D) presented as total cell number (left) or proportion of PLIN1 + area (right), n=7 (young), n=5 (aged). Data represent mean ± SEM, points represent biological replicates, two groups analyzed using a Student’s t-test, and multiple conditions analyzed with a two-way ANOVA with a Tukey correction for multiple comparisons. Significance: not significant, p>0.05; * p<0.05 ** p<0.01; *** p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative flow cytometry plots showing expression of tdTomato in gated Live, Lin-; PDGFRα+stromal vascular cells isolated from young and aged reporter mice (described in Figure 2) immediately after treatment with tamoxifen (tmx, pulse). (B) IF analysis of iWAT from young and aged reporter mice with tdTomato (red), PLIN1 (white), and DAPI (blue) after the tmx pulse, scale bar 100 μm.
+
+### Single-cell expression profiling of ASPCs
 
 We previously identified three main fibroblastic ASPC populations in iWAT: DPP4+ cells, ICAM1+ preadipocytes, and CD142+ cells. All these cell types express Pdgfra and have the capacity to undergo adipogenic differentiation (Merrick et al., 2019). To test whether aging dysregulates one or more of these ASPC types, we performed scRNA-seq on stromal vascular cells from iWAT of young and aged animals, maintained at TN, or following transition to cold for 3 or 14 days (Figure 1A). ASPCs were enriched by removing immune (CD45+) cells using fluorescence activated cell sorting (FACS). We integrated the datasets from all conditions together and performed clustering analysis. The following cell populations were annotated based on their expression of cell-type-specific marker genes: four fibroblast populations (Dpp4+; Icam1+ preadipocytes; Cd142+, Spp1+), two populations of endothelial cells (Pecam1+); smooth muscle cells/pericytes (Myh11+, Pdgfrb+); Schwann cells (Mpz+); and residual immune cells (Ptprc+; Figure 3A–C). We did not identify any cell population specific to either aging or cold exposure. In this regard, we did not identify ‘aging-dependent regulatory cells (ARCs)’, which were previously defined as ASPCs expressing Lgals3 and other inflammatory genes (Figure 3—figure supplement 1; Nguyen et al., 2021). The expression levels of identity markers of the ASPC populations were not modulated during cold exposure or aging (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig3-v1.jpg)
+
+**Figure 3.:** (A) Integrated UMAP of gene expression in 54,987 stromal vascular cells (FACS depleted of CD45 +immune cells) from young and aged mouse groups detailed in Figure 1A. (B) UMAPs split by condition. (C) Violin plots showing the expression levels of representative marker genes for cell clusters. Y-axis=log-scale normalized read count. (D) Expression heatmap of the top differentially expressed genes in young vs. aged fibroblastic ASPCs (Dpp4+, Icam1+ preadipocytes and Cd142+ cells). Table shows expression of these genes in ASPC populations across temperature conditions (TN, cold 3D, cold 14D) from young and aged mice.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Violin plot showing expression of ARC marker genes in cell clusters split by age, Y-axis=log-scale normalized read count. (B) Expression heatmap of top ASPC marker genes across age and housing conditions.
+
 Differential gene expression analyses identified aging-modulated genes in ASPCs (Figure 3D). Notably, expression of Cd9, previously identified as a fibrogenic marker, was upregulated with age in Dpp4+ cells and preadipocytes (Marcelin et al., 2017). Pltp and Gpnmb were also elevated by aging across all ASPC populations and temperature conditions. Genes downregulated by aging in all ASPC populations included Meg3, Itm2a and Gpc3 and Postn. Of note, Postn encodes an extracellular matrix protein that was previously reported to regulate adipose tissue expansion and decrease in expression during aging (Graja et al., 2018).
 
-## ASPCs from aged mice are competent for beige adipogenesis ex vivo
+### ASPCs from aged mice are competent for beige adipogenesis ex vivo
 
 We next evaluated if ASPCs from young and aged animals exhibit cell-autonomous differences in adipogenic differentiation capacity. We FACS-purified DPP4+, ICAM1+, and CD142+ cells from the iWAT of young and aged mice, plated them in culture and induced adipocyte differentiation. Using a minimal differentiation stimulus consisting of insulin only (Min), ICAM1+ and CD142+ cells underwent more efficient differentiation into lipid droplet-containing adipocytes, and expressed higher levels of adipocyte genes (Adipoq and Fabp4) than DPP4+ cells, consistent with prior work (Figure 4A and B; Merrick et al., 2019). DPP4+ and CD142+ cells from young and aged mice underwent adipocyte differentiation and induced adipocyte genes with equivalent efficiency. Unexpectedly, ICAM1+ cells from aged mice exhibited greater differentiation capacity than those from young mice, as evidenced by higher expression levels of Adipoq and Fabp4 (Figure 4A and B). Maximal stimulation with a full cocktail of adipogenic inducers (Max) produced similar and robust differentiation in all ASPC populations from young or aged mice (Figure 4C and D). To assess whether young and aged ASPCs behave differently when cultured as a mixed heterogeneous population, we isolated the stromal vascular fraction (SVF) for adipogenesis assays. Again, SVF cell cultures from young and aged mice displayed similar adipogenic differentiation efficiency following either Min or Max stimulation (Figure 4E and F). Finally, we treated differentiated adipocyte cultures with the pan-adrenergic agonist isoproterenol for 4 hours to evaluate thermogenic gene activation (i.e. beiging). Basal levels of Ucp1 expression were lower in DPP4+ cells compared to other ASPC types, but all ASPC populations activated Ucp1 expression to similarly high levels in response to isoproterenol treatment and did not differ by age (Figure 4G). We also did not observe an aging-related difference in the levels of Ucp1 induction in SVF-derived adipocyte cultures (Figure 4H). Together, these data suggest that the beige adipogenic capacity of ASPCs is not intrinsically compromised in aged mice, and therefore the in vivo deficit in beige adipogenesis could be due to non-ASPC-autonomous effects.
 
@@ -62,15 +86,31 @@ We next evaluated if ASPCs from young and aged animals exhibit cell-autonomous d
 
 **Figure 4.:** (A, C) Phase contrast images of DPP4+, ICAM1+ and CD142+ cells from iWAT of young and aged mice that were induced to undergo adipocyte differentiation with minimal (Min, A) or maximal (Max, C) induction cocktail for 8 days. Scale bar 200 μm. (B, D) mRNA levels of adipocyte marker genes Adipoq and Fabp4 in cultures from (A, C). Data points represent separate wells, sorted from a pool of five mice (A) or sorted from two pools of two to three mice (C). (E) Stromal vascular fraction (SVF) cell cultures from the iWAT of young and aged mice were induced to differentiate for 8 days with Minimal or Maximal cocktail, followed by Bodipy (green) staining of lipid droplets and DAPI (blue) staining of nuclei. Scale bar 100 μm. (F) Relative mRNA levels of Adipoq and Fabp4 in cultures from (E). Data points represent wells from individual mice, n=5. (G, H) Relative mRNA levels of Ucp1 in adipocyte cultures from (C, E) with or without treatment with isoproterenol for 4 hr. Data points represent wells sorted from two pools of two to three mice (G) or wells from individual mice, n=5 (H). Data represent mean ± SEM, two groups analyzed using a Student’s t-test, and multiple conditions analyzed with a two-way ANOVA with a Tukey correction for multiple comparisons. Significance: not significant, p>0.05; * p<0.05 ** p<0.01; *** p<0.001.
 
-## Single-nucleus RNA sequencing uncovers adipocyte heterogeneity
+### Single-nucleus RNA sequencing uncovers adipocyte heterogeneity
 
 To determine the effects of aging and cold exposure on adipocyte gene profiles, we performed snRNA-seq analyses of iWAT samples using the same experimental paradigm described above (Figure 1A). We integrated all the conditions together for analyses from two separate runs (Figure 5A and C). Similar cell types were captured as with scRNA-seq (Figure 3A), but with the addition of mature adipocyte populations. This dataset also has increased representation from immune cells since there was no negative selection against CD45+ cells. As with the single-cell data set, we did not identify any aging-specific cell populations (Figure 5—figure supplement 1). However, we observed striking gene expression differences in the adipocyte cluster across age and temperature. Most obvious, and expectedly, was the emergence and expansion of a distinct beige adipocyte population, marked by expression of Ucp1 and other thermogenic genes, during cold exposure (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig5-v1.jpg)
+
+**Figure 5.:** (A) Fully integrated UMAP of mRNA levels in 11,905 nuclei from iWAT of mouse groups detailed in Figure 1A, n=2 mice per condition. (B) UMAPs split by condition. (C) Violin plots showing expression patterns of cell cluster-selective marker genes, Y-axis=log-scale normalized read count. (D) UMAP of gene expression in re-integrated adipocyte clusters including 4937 nuclei from (A) identifying four populations: Npr3-high, beige, DNL-low, and DNL-high. (E) Adipocyte UMAPs split by condition. (F) Violin plots showing expression patterns of selected genes in adipocyte populations, Y-axis=log-scale normalized read count. (G) Adipocyte nuclei numbers in each sample, plotted as percent of total adipocytes captured for that sample.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Violin plot showing marker gene levels split by age, y-axis=log-scale normalized read count.
+
 To focus on adipocyte responses, we reintegrated the snRNA-seq data using only the adipocytes, which revealed four main clusters (Figure 5D–F). All adipocyte clusters displayed similarly high mRNA levels of canonical adipocyte markers Fabp4 and Plin1. Beige adipocytes, marked by high expression of thermogenic genes (i.e. Ppargc1a, Esrrg, Cidea, Gk, Prdm16, and Ucp1), were the most distinctive cluster and were largely absent at TN in young and aged mice. These cells began to appear in young mice after 3 days of cold exposure, and were further increased at 14 days. By contrast, in aged mice, beige cells were barely detectable at 3 days of cold exposure and were present at greatly reduced numbers than in young mice at 14 days (Figure 5E). This analysis also revealed three sub-populations of ‘white’ adipocytes. ‘Npr3-high’ adipocytes were enriched for expression of Npr3, Synpo2, Prr16, and Tshr, expressed higher levels of white fat marker genes Leptin (Lep) and Nnat, and exhibited the lowest expression levels of thermogenic (beige) genes (Gesta et al., 2007; Rosell et al., 2014). Two additional white adipocyte clusters were designated as ‘de novo lipogenesis (DNL)-low’ and ‘DNL-high’ cells, both of which expressed lower levels of Npr3 and shared selective expression of Fgf14. DNL-high cells uniquely expressed Ces1f and Gsta3 and activated high levels of DNL pathway genes (i.e. Fasn, Acss2 and Acly) upon cold exposure (Figure 5F). Interestingly, Adiponectin (Adipoq) was differentially expressed across adipocyte clusters, with higher levels in Npr3-high and DNL-high cells. Quantification of adipocyte nuclei from this data set suggested that the proportions of Npr3-high and DNL-high adipocytes remain stable across temperature, with aged mice having more Npr3-high adipocytes. The proportion of beige adipocytes increased during cold exposure, while DNL-low adipocytes decreased with cold exposure in both young and aged mice (Figure 5G).
 
-## Aging dysregulates gene programming in adipocyte populations
+### Aging dysregulates gene programming in adipocyte populations
 
 To evaluate the global effects of cold exposure and aging on adipocytes, we performed differential gene expression analysis between young and aged adipocytes within each cluster. DNL-high and beige adipocytes exhibited the most dramatic expression changes between young and aged animals (Figure 6A and B, Figure 6—figure supplement 1A and B). At TN, DNL-high cells from aged animals expressed lower levels of several genes, including Fkbp5, Spon1, and Adam12. Interestingly, Npr3, in addition to marking Npr3-high cells, was increased by aging in DNL-high adipocytes and to a lesser extent in other adipocyte populations (Figure 6C and D). In young animals, Npr3 expression was downregulated by cold exposure in the three white adipocyte populations, and this downregulation was blunted in aged animals (Figure 6D). Gene expression analysis of whole iWAT pads confirmed that Npr3 mRNA levels were progressively decreased by cold exposure and elevated in aged versus young mice under all temperature conditions (Figure 6E). Npr3 expression levels were also increased in isolated primary adipocytes from aged relative to young mice (Figure 6F). Expression levels of the G-protein-coupled NP receptors Npr1 or Npr2 were not modulated by cold or aging in iWAT or iWAT adipocytes (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig6-v1.jpg)
+
+**Figure 6.:** (A) Expression heatmap of the top aging-regulated genes in DNL-high adipocytes at TN (left) and after 14 days of cold exposure (right). (B) Expression heatmap of the top aging-regulated genes in beige adipocytes after 14 days of cold exposure. (C) UMAP of Npr3 mRNA levels in adipocyte populations (from Figure 5D). (D) Violin plots showing Npr3 mRNA levels in adipocyte populations at TN (T), and at 3 and 14 days of cold exposure, Y-axis=log-scale normalized read count. (E) Npr3 mRNA levels in iWAT from mouse groups described in Figure 1A, n=5. (F) Npr3 mRNA levels in isolated adipocytes from TN- acclimated young and aged mice, n=6. (G) UMAPs of Ucp1, Acly, and their co-expression in adipocyte populations from young and aged mice. (H) Heatmap showing average expression of DNL genes in all nuclei from DNL-high and beige adipocytes per condition indicated in the top table. Data represent mean ± SEM, points represent biological replicates, two groups analyzed using a Student’s t-test, and multiple conditions analyzed with a two-way ANOVA with a Tukey correction for multiple comparisons. Significance: not significant, p>0.05; * p<0.05 ** p<0.01; *** p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87756/elife-87756-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Expression heatmap of the top aging-regulated genes in DNL-high adipocytes. (B) Expression heatmap of the top aging- and cold-regulated genes in beige adipocytes. (C, D) Npr1 and Npr2 mRNA levels in iWAT (from mouse groups in Figure 1A) (C), n=5 and in isolated adipocytes from iWAT (D), n=6. (E, F) UMAP of Ucp1 (E) and Acly (F) mRNA levels in adipocyte groups (from Figure 5D). (G) Enrichment analysis of age-regulated genes in DNL high adipocytes. (H) Acly mRNA levels in iWAT (from groups in Figure 1A) n=5. Data are mean ± SEM, points represent biological replicates, two groups analyzed using a Student’s t-test, and multiple conditions analyzed with a two-way ANOVA with a Tukey correction for multiple comparisons. Significance: *p<0.05; **p<0.01; ***p<0.001.
 
 We also observed a striking activation of the DNL gene program (Acly, Fasn, Acaca, Scd1, etc.) in DNL-high and beige adipocytes during cold exposure (Figure 6G and H). The induction of these genes during cold exposure, exemplified by Acly expression, was a cluster-defining attribute of DNL-high cells, which did not express beige markers like Ucp1 even after 14 days of cold exposure. Of note, we found two types of beige (Ucp1+) adipocytes, distinguished by the presence vs. absence of high DNL gene levels (i.e. Ucp1+; DNL+ and Ucp1+; DNL(-)), with the latter arising first during cold exposure (3D vs. 14D) (Figure 6G, Figure 6—figure supplement 1E, F). Importantly, the induction of DNL genes was nearly completely blocked in DNL-high cells and reduced in beige cells of aged animals (Figure 6G). Indeed, the top aging downregulated genes in adipocytes from cold exposed mice correspond to DNL and related pathways, especially in DNL-high cells (Figure 6—figure supplement 1G). Lastly, at the whole tissue level, we observed robust induction of Acly in iWAT of young relative to aged mice with increasing duration of cold exposure (Figure 6—figure supplement 1H). Taken together, these results implicate the suppression of natriuretic peptide signaling and DNL in the aging-related impairment of beige fat formation.
 
@@ -94,55 +134,555 @@ In summary, this work shows that aging impairs beige adipogenesis through non-ce
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6 J</td>
+      <td>The Jackson Laboratory, Bar Harbor, ME</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6JN</td>
+      <td>NIA, Bethesda, MD</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26 loxp-stop-loxp tdTomato Reporter (Ai14)</td>
+      <td>The Jackson Laboratory, Bar Harbor, ME</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>PdgfraCreERT2</td>
+      <td>The Jackson Laboratory, Bar Harbor, ME</td>
+      <td>RRID:IMSR_JAX:032770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti–red fluorescent protein (RFP)</td>
+      <td>Rockland, Pottstown, PA</td>
+      <td>600-401-379, RRID:AB_2209751</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Perilipin (D418)</td>
+      <td>Cell Signaling, Denvers, MA</td>
+      <td>3470, RRID:AB_2167268</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti- UCP1</td>
+      <td>Specially made by AstraZeneca, Cambridge, UK</td>
+      <td>NA</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-mouse CD142</td>
+      <td>Sino Biological, Chesterbrook, PA</td>
+      <td>R001</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal Anti-mouse CD142</td>
+      <td>R &amp; D Systems, Minneapolis, MN</td>
+      <td>AF3178, RRID:AB_2278143</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal Anti-mouse CD140a-(PDGFRɑ)-PECy7</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>135912, RRID:AB_2715974</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal Anti-mouse-CD31 (APC-Fire)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>102528, RRID:AB_2721491</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal Anti-mouse CD45-allophycocyanin (APC/Cy7)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>103116, RRID:AB_312981</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal Anti-mouse ICAM1-phycoerythrin (PE/Cy7)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>116122, RRID:AB_2715950</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal Anti-mouse CD26 (DPP-4)- fluorescein isothiocyanate (FITC)</td>
+      <td>Biolegend, San Diego, CA</td>
+      <td>137806, RRID:AB_10663402</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mTbp</td>
+      <td>PMID:24703692</td>
+      <td>NA</td>
+      <td>F-GAAGCTGCGGTACAATTCCAGR-CCCCTTGTACCCTTCACCAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mAdipoq</td>
+      <td>PMID:24703692</td>
+      <td>NA</td>
+      <td>F-GCACTGGCAAGTTCTACTGCAAR-GTAGGTGAAGAGAACGGCCTTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mFabp4</td>
+      <td>PMID:24703692</td>
+      <td>NA</td>
+      <td>F-ACACCGAGATTTCCTTCAAACTGR-CCATCTAGGGTTATGATGCTCTTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCidea</td>
+      <td>PMID:24703692</td>
+      <td>NA</td>
+      <td>F-TGCTCTTCTGTATCGCCCAGTR-GCCGTGTTAAGGAATCTGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mPgc1a</td>
+      <td>PMID:24703692</td>
+      <td>NA</td>
+      <td>F-CCCTGCCATTGTTAAGACCR-TGCTGCTGTTCCTGTTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mUcp1</td>
+      <td>PMID:24703692</td>
+      <td>NA</td>
+      <td>F-ACTGCCACACCTCCAGTCATTR-CTTTGCCTCACTCAGGATTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mDio2</td>
+      <td>PMID:24703692</td>
+      <td>NA</td>
+      <td>F-CAGTGTGGTGCACGTCTCCAATC R-TGAACCAAAGTTGACCACCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mAcly</td>
+      <td>PMID:31141698</td>
+      <td>NA</td>
+      <td>F-GAGTGCTATTGCGCTTCCCR-GGTTGCCGAAGTCACAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNpr3</td>
+      <td>This Paper</td>
+      <td>NA</td>
+      <td>F-TTTTCAGGAGGAGGGGTTGCR-ACACATGATCACCACTCGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNpr1</td>
+      <td>MGH PrimerBank</td>
+      <td>Primer Bank ID: 113930717 c1</td>
+      <td>F-GCTTGTGCTCTATGCAGATCGR-CCTCGACGAACTCCTGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNpr2</td>
+      <td>MGH PrimerBank</td>
+      <td>Primer Bank ID: 118129825 c2</td>
+      <td>F-CATGACCCCGACCTTCTGTTGR-CGAACCAGGGTACGATAATGCT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ABI High-Capacity cDNA Synthesis kit</td>
+      <td>Applied Biosystems, Waltham, MA</td>
+      <td>4368813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Purelink RNA Mini columns</td>
+      <td>Invitrogen, Waltham, MA</td>
+      <td>LT-12183018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA TMR Tyramide Reagent Pack</td>
+      <td>Akoya Biosciences, Marlborough, MA</td>
+      <td>NEL742001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Fluorescein Tyramide Reagent Pack</td>
+      <td>Akoya Biosciences, Marlborough, MA</td>
+      <td>NEL741001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bulls Eye Decloaking Buffer</td>
+      <td>Biocare, Pacheco, CA</td>
+      <td>BULL1000 MX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AbC Total Antibody Compensation Bead Kit</td>
+      <td>BioLegend,San Diego, CA</td>
+      <td>A10497</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Biotium Mix-n-Stain CF647</td>
+      <td>Sigma, Burlington, MA</td>
+      <td>MX647S100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PicoPure RNA Isolation Kit</td>
+      <td>Invitrogen, Waltham, MA</td>
+      <td>KIT0204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA High Sensitivity assay kit</td>
+      <td>ThermoFisher, Waltham, MA</td>
+      <td>Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA High Sensitivity Bioanalyzer Chip (Agilent)</td>
+      <td>Agilent, Santa Clara, CA</td>
+      <td>5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad, San Diego, CA</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe, San Jose, CA</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe, San Jose, CA</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger</td>
+      <td>10 x Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>PMID:34062119</td>
+      <td>RRID:SCR_016341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bcl2fastq</td>
+      <td>Illumina</td>
+      <td>RRID:SCR_015058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cumulus</td>
+      <td>PMID:32719530</td>
+      <td>RRID:SCR_021644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva Softward</td>
+      <td>Becton Dickinson, Franklin Lakes, NJ</td>
+      <td>RRID:SCR_001456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tamoxifen (Free Base)</td>
+      <td>Sigma, Burlington, MA</td>
+      <td>T5648</td>
+      <td>Synthetic estrogen receptor antagonist used to activate Cre.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Corn Oil</td>
+      <td>Sigma, Burlington, MA</td>
+      <td>C8267</td>
+      <td>Vehicle solution for tamoxifen.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>16% Paraformaldehyde</td>
+      <td>EMS, Hatfield, PA</td>
+      <td>15710</td>
+      <td>Fixative used for tissue histology</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TRIzol</td>
+      <td>Invitrogen, Waltham, MA</td>
+      <td>15596018</td>
+      <td>Phenol-based solution used for nucleic acid extraction</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CL-316,243</td>
+      <td>Sigma, Burlington, MA</td>
+      <td>C5976</td>
+      <td>Agonist of Beta3-adrenergic receptor</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4’,6-Diamidine-2’-phenylindole dihydrochloride (DAPI), 1:10,000</td>
+      <td>Roche, Basel, Switzerland</td>
+      <td>10236276001</td>
+      <td>Fluorescent stain for DNA/nuclei</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bovine Serum Albumin, fraction V, fatty-acid free</td>
+      <td>Gold Biotechnology, St. Louis, MO</td>
+      <td>A-421–250</td>
+      <td>Protein carrier for small molecules</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM/F12</td>
+      <td>Fisher Scientific, Waltham, MA</td>
+      <td>11320033</td>
+      <td>Basal cell culture medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal Bovine Serum</td>
+      <td>Omega Scientific, Tarzana, CA</td>
+      <td>FB-11, Lot 401714</td>
+      <td>For cell culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Primocin</td>
+      <td>InvivoGen, San Diego, CA</td>
+      <td>ant-pm-2</td>
+      <td>Anti-microbial for cell culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PCR Master Mix, Power SYBR Green</td>
+      <td>Applied Biosystems, Waltham, MA</td>
+      <td>4367659</td>
+      <td>Kit for qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HBSS, 1 X</td>
+      <td>Fisher Scientific, Waltham, MA</td>
+      <td>14175079</td>
+      <td>Hank’s Balanced Salt Solution</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dispase II</td>
+      <td>Roche, Basel, Switzerland</td>
+      <td>4942078001</td>
+      <td>Enzyme used for adipose tissue digestion</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagenase, Type 1</td>
+      <td>Worthington, Lakewood, NJ</td>
+      <td>LS004197</td>
+      <td>Enzyme used for adipose tissue digestion</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Red Blood Cell Lysis Buffer, 10 x</td>
+      <td>BioLegend, San Diego, CA</td>
+      <td>420302</td>
+      <td>For lysing red blood cells during cell isolations</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human Insulin, Novolin</td>
+      <td>Novo Nordisk, Bagsvaerd, Denmark</td>
+      <td>183311</td>
+      <td>Used for cell culture studies</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich, Burlington, VT</td>
+      <td>D4902</td>
+      <td>Glucorticoid Receptor agonist</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3-isobutyl-1-methylxanthine (IBMX)</td>
+      <td>Sigma-Aldrich, Burlington, VT</td>
+      <td>I7018</td>
+      <td>Chemical used to Increase cAMP levels, used in adipocyte differentiation cocktail</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rosiglitazone</td>
+      <td>Cayman Chemical, Ann Arbor, MI</td>
+      <td>11884</td>
+      <td>Synthetic PPARgamma activator</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Indomethacin</td>
+      <td>Sigma-Aldrich, Burlington, VT</td>
+      <td>I8280</td>
+      <td>Chemical used in adipocyte differentiation cocktail</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3,30,5-Triiodo-L-thyronine sodium salt (T3)</td>
+      <td>Sigma-Aldrich, Burlington, VT</td>
+      <td>T6397</td>
+      <td>Thyroid Receptor agonist</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>isoproterenol</td>
+      <td>Sigma-Aldrich, Burlington, VT</td>
+      <td>I6504</td>
+      <td>Pan beta-adrenergic receptor agonist</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bodipy 493/503</td>
+      <td>Invitrogen, Waltham, MA</td>
+      <td>D3922</td>
+      <td>Fluorescent dye for neutral lipids</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher, Waltham, MA</td>
+      <td>62249</td>
+      <td>DNA stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protector RNase Inhibitor</td>
+      <td>Roche, Basel, Switzerland</td>
+      <td>3335399001</td>
+      <td>Used for RT-PCR</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal procedures were approved and performed under the guidance of the University of Pennsylvania Institutional Animal Care and Use Committee (IACUC) (protocol #805649). Young (4 weeks) and aged (52 weeks) C57BL/6 male mice were obtained from the National Institute of Aging (C57BL/6JN) or Jackson Laboratories (C57BL/6 J, stock number 000664). Mice were housed at 30 °C for 3 weeks, then were either: maintained at 30 °C for 2 weeks (TN); kept at 30 °C for 11 more days before moving to 6 °C for 3 days (3D cold) or moved to 6 °C for 14 days (14D cold). Mice were single housed during the final 2-week temperature treatment and provided with a nestlet and shepherd shack. For experiments with CL316,243 (CL, Sigma-C5976), mice were housed at 30 °C for 5 weeks, followed by intraperitoneal (IP) injection of 1 mg/kg/d CL either 1 hr prior to tissue harvest or for 5 days. PdgfraCreERT2 mice were obtained from Dr. Brigid Hogan (Duke University) (Chung et al., 2018) and crossed with Rosa26tdTomato (strain: B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J, stock no. 007914). To induce Cre activity, tamoxifen (Sigma, T5648) dissolved in corn oil (Sigma, C8267) was injected intraperitonially (IP) into mice at a dose of 100 mg/kg/d for 5 days. For all iWAT processing other than histology, the inguinal lymph node was removed.
 
-## Histology and immunofluorescence
+### Histology and immunofluorescence
 
 Tissues were fixed overnight in 4% paraformaldehyde, washed with PBS, dehydrated in ethanol, paraffin-embedded and sectioned. Following deparaffinization, slides were subjected to heat antigen retrieval in a pressure cooker with Bulls Eye Decloaking buffer (Biocare), unless otherwise noted. Slides were incubated in primary antibody overnight and secondary antibody conjugated to peroxidase and then developed using Tyramide Signal Amplification (TSA, Akoya Biosciences). Samples were stained with either hematoxylin and eosin or the following antibodies: anti-red fluorescent protein (RFP) (rabbit; 1:500; Rockland #600-401-379), anti-UCP1 (rabbit, 1:2000, AstraZeneca), and anti-PLIN1 (rabbit, 1:200 Cell Signaling #3470). Slides were imaged on an inverted fluorescence microscope (Keyence BZ-X710). For quantification of tdTomato-expressing adipocytes, full-length iWAT slices were tile imaged, stitched, exported as a BigTiff, and quantified in a blinded-manner using the Count Tool in Photoshop (Adobe).
 
-## Isolation of stromal vascular cells (SCVs) and adipocytes
+### Isolation of stromal vascular cells (SCVs) and adipocytes
 
-## SVCs
+#### SVCs
 
 As previously described (Merrick et al., 2019; Wang et al., 2019), iWAT tissue was dissected, minced gently and digested with Collagenase Type I (1.5 units/ml; Worthington) and Dispase II (2.4 units/ml; Roche) in DMEM/F12 containing 1% fatty acid-free bovine serum albumin (Gold Biotechnology) in a gentleMACS dissociator (Miltenyi Biotec) on program ‘37 MR ATDK-1’. The digestion was quenched with DMEM/F12 containing 10% FBS, and the dissociated cells were passed through a 100 μm filter and spun at 400 x g for 4 min. The pellet was resuspended in red blood cell lysis buffer (BioLegend), incubated for 4 min at RT, then quenched with DMEM/F12 containing 10% serum. Cells were passed through a 70 μm filter, spun, resuspended, then passed through a final 40 μm filter, spun at 400 x g for 4 min and plated or underwent further processing for FACS. Mice were not pooled unless indicated.
 
-## Adipocytes
+#### Adipocytes
 
 Tissue went through the same process as above, except after digestion and quenching, adipocyte/SVF slurry was filtered through a 200 μm filter and centrifuged at 50 x g for 3 min at RT. Using a 20 mL syringe and 1.5-inch, 25 G needle, media containing the SVCs was removed from below the adipocytes (and saved if concurrently isolating SVCs), leaving only the adipocytes in the tube. Adipocytes were washed twice with the same media as quenching, transferred to 2 mL tubes, spun a final time, media was removed from below the adipocytes again, and TRIzol was added for RNA extraction. Mice were not pooled.
 
-## FACS
+### FACS
 
 DPP4+, ICAM1+, and CD142+ cells were isolated as previously described (Merrick et al., 2019). Briefly, SVCs from the subcutaneous adipose of mice (n=2–5) were pooled and resuspended in FACS buffer (HBSS containing 3% FBS; Fisher), then incubated for 1 hr at 4 °C with the following antibodies: CD26 (DPP4)-fluorescein isothiocyanate (FITC) (Biolegend, 137806; 1:200), anti-mouse ICAM1-phycoerythrin (PE)/Cy7 (Biolegend, 116122; 1:100), anti-mouse CD45-allophycocyanin (APC)/Cy7 (Biolegend, 103116; 1:1000), anti-mouse CD31-APC-Fire (Biolegend, 102528; 1:1000), and anti-mouse CD142 (Sino Biological, 50413-R001, 1:100; or R&D Systems, AF3178, 1:50). Anti-mouse CD142 antibodies were conjugated with Biotium Mix-n-Stain CF647 (Sigma, MX647S100). For lineage tracing pulse analysis, SVCs were isolated from individual mice without pooling. SVCs were stained with anti-mouse CD31, anti-mouse CD45, and anti-mouse CD140a (PDGFRΑ) (PE/Cy7) (Biolegend, 135912; 1:100). In all FACS experiments, cells were stained with 4′,6-diamidino-2-phenylindole (DAPI) (Roche, 10236276001; 1:10,000) for 5 min, then washed three times with FACS buffer to remove unbound antibodies. Cells were sorted with a BD FACS Aria cell sorter (BD Biosciences) equipped with a 100 μm nozzle and the following lasers and filters: DAPI, 405 and 450/50 nm; FITC, 488 and 515/20 nm; mTomato, 532 and 610/20 nm; PE/Cy7, 532 and 780/60 nm; CF647, 640 and 660/20 nm; and APC/Cy7 and APC-Fire, 640 and 780/60 nm. All compensation was performed at the time of acquisition in Diva software by using compensation beads (BioLegend, A10497) for single-color staining and SVCs for negative staining and fluorescence (DAPI and tdTomato).
 
-## Cell culture and differentiation
+### Cell culture and differentiation
 
-## Adipocyte precursor cells
+#### Adipocyte precursor cells
 
 All cells were cultured in DMEM/F12 containing 10% FBS and Primocin (50 ng/ml; InvivoGen, ant-pm-1). DPP4+, ICAM1+, and CD142+ populations were FACS purified, plated on CellBind 384-well plates (Corning) at 15–25 K cells/well, and incubated for 48 (25K cells) to 72 hr (15 K cells) to facilitate attachment before the induction of adipogenic differentiation. For whole SVF, SVCs were isolated and plated in a 48 well CellBind plate (Corning) at a high confluency of one mouse per 18 wells. No cells were passaged after plating to maintain adipogenic competency. Differentiation was carried out with either maximum adipogenic cocktail, max: 500 μM isobutylmethylxanthine (Sigma, I7018), 10 μM dexamethasone (Sigma, D4902), 125 μM indomethacin (Sigma, I8280), 1 μM rosiglitazone (Cayman Chemical, 11884), 1 nM T3 (Sigma, T6397), and 20 nM insulin (Novolin) or a minimal adipogenic cocktail, min: 20 nM insulin. For the max adipogenic cocktail induction, cells were incubated with cocktail for 2 days and then transferred to adipogenic maintenance medium for the remaining 6 days (1 μM rosiglitazone, 1 nM T3, and 20 nM insulin). For all conditions, medium was changed every 2 days, and cells were harvested on day 8 of differentiation. For drug treatments, cells were treated for 4 hr on day 8 with 1 μM isoproterenol (Sigma, I6504). Adipogenesis was assessed by staining with Biodipy 493/503 (Invitrogen, D3922) for lipid droplet accumulation and Hoechst 33342 (Thermo Fisher, 62249) for nuclei number. The cells were imaged on a Keyence inverted fluorescence microscope (BZ-X710) by using DAPI (excitation, 360/40 nm; emission, 460/50 nm) and green fluorescent protein (excitation, 470/40 nm; emission, 525/50 nm) filters. Individual wells were imaged in their entirety at ×4 magnification, and at 20 x to see morphology. 384-well plates were not stained and imaged in brightfield due to low cell number recovery from FACS prior to RNA extraction.
 
-## RNA Extraction, qRT-PCR and RNA Sequencing
+### RNA Extraction, qRT-PCR and RNA Sequencing
 
-## RNA Extraction
+#### RNA Extraction
 
 Total RNA was extracted using TRIzol (Invitrogen) combined with PureLink RNA Mini columns (Thermo Fisher, 12183025) for tissue and SVC cells or by PicoPure RNA Isolation Kit (Applied Biosystems, KIT0204) for 384-well plate populations and adipocytes. Prior to the addition of chloroform, all tissue and primary adipocytes in TRIzol included an extra spin at max speed for 10 min at RT, then TRIzol was removed from below the lipid layer to avoid lipid contamination disrupting the subsequent phase separation with chloroform. Chloroform was added to the lipid-free TRIzol, spun for 15 min at 12,000 x g and the aqueous layer was removed and added to columns. mRNA was quantified using a Nanodrop and reverse transcribed to cDNA using the ABI High-Capacity cDNA Synthesis kit (ABI, 4368813). Real-time PCR was performed on a QuantStudio5 qPCR machine using SYBR green fluorescent dye (Applied Biosystems). Fold changes were calculated using the ddCT method, with TATA binding Protein (Tbp) mRNA serving as a normalization control.
 
-## Single-cell RNA-seq Samples
+#### Single-cell RNA-seq Samples
 
 Cells were flow sorted to isolate live (DAPI-) cells and remove debris. We enriched non-immune cells by sorting out CD45+ cells. Next-generation sequencing libraries were prepared using the Chromium Next GEM Single Cell 3’ Reagent kit v3.1 (10x Genomics, 1000121) per manufacturer’s instructions. Libraries were uniquely indexed using the Chromium Single Index Kit T Set A, pooled, and sequenced on an Illumina NovaSeq 6000 sequencer in a paired-end, dual indexing run by the CHOP Center for Applied Genomics at the University of Pennsylvania. Sequencing for each library targeted 20,000 mean reads per cell.
 
-## Single nucleus RNA-seq samples
+##### Single nucleus RNA-seq samples
 
 Nuclei were isolated from frozen mouse iWAT samples as previously described, with the following modifications to integrate hash multiplexing and FANS-assisted nuclear quality thresholding and sample pooling (Drokhlyansky et al., 2020; Slyper et al., 2020). Briefly, 300 mg of flash-frozen adipose samples were held on dry ice until immediately before nuclei isolation, and all sample handling steps were performed on ice. Each sample was placed into a gentleMACS C tube (Miltenyi Biotec, 130-093-237) with 2 mL freshly prepared TST buffer (0.03% Tween 20 (Bio-Rad), 0.01% Molecular Grade BSA (New England Biolabs), 146 mM NaCl (Thermo Fisher Scientific), 1 mM CaCl2 (VWR International), 21 mM MgCl2 (Sigma Aldrich), and 10 mM Tris-HCl pH 7.5 (Thermo Fisher Scientific) in ultrapure water (Thermo Fisher Scientific)) with 0.2 U/μL of Protector RNase Inhibitor (Sigma-Aldrich, RNAINH-RO). gentleMACS C tubes were then placed on the gentleMACS Dissociator (Miltenyi Biotec) and tissue was dissociated by running the program ‘mr_adipose_01’ three times, and then incubated on ice for 10 min. Lysate was passed through a 40 μm nylon filter (CellTreat) and collected into a 50 mL conical tube (Corning). Filter was rinsed with 3 mL of freshly prepared ST buffer (146 mM NaCl, 1 mM CaCl2, 21 mM MgCl2; 10 mM Tris-HCl pH 7.5) with 0.2 U/μL RNase Inhibitor, and collected into the same tube. Flow-through was passed through a 20 μm pre-separation filter (Miltenyi Biotec) set on top of a 5 mL FACS tube (Corning) and collected into the same tube. Suspension was centrifuged in a swinging-bucket centrifuge (Eppendorf) at 500 × g for 5 min at 4 °C with brake set to low. Following centrifugation, supernatant was removed and 5 mL of PBS pH 7.4 (Thermo Fisher Scientific) with 0.02% BSA and 0.2 U/μL RNase Inhibitor was added without resuspending the nuclear pellet. Sample was centrifuged again at 500 × g for 5 minutes at 4 °C with brake set to low. Following centrifugation, supernatant was removed, and the nuclear pellet was resuspended in 1 mL PBS-0.02% BSA with 0.2 U/μL RNase Inhibitor. Each sample was split into two 500 μL aliquots and transferred to new 5 mL FACS tubes for subsequent hashing. Each aliquot of resuspended nuclei was stained with NucBlue (ThermoFisher, R37605), labeled with 1 μg of a unique TotalSeq anti-Nuclear Pore Complex Proteins Hashtag Antibody (Biolegend), and then incubated on ice for 30 min. Suspension was centrifuged at 500 × g for 5 min at 4 °C with brake set to low. Following centrifugation, 450 μL of supernatant was removed and the nuclear pellet was resuspended in 450 μL PBS-0.02% BSA with 0.2 U/μL RNase Inhibitor. For nuclear quality thresholding, fluorescence-activated nuclear sorting (FANS) was implemented to collect 4,000–4,300 nuclei from hashtagged aliquots directly into a shared well of a 96-well PCR plate (Thermo Scientific) containing 24.6 μL of 10 X RT Reagent B with 1 U/uL RNase Inhibitor on a Beckman Coulter MoFlo AstriosEQ fitted with a 70 μm nozzle. High-quality nuclei were selected by initial gating at 360 nm with laser filter 405-448/59 followed by SSC-H and FSC-H to remove doublets and unlysed cells. Once all sample aliquots were FANS-sorted, the pool of 43,000 nuclei was loaded on the 10 x Chromium controller (10 x Genomics) according to the manufacturer’s protocol. cDNA and gene expression libraries were generated according to the manufacturer’s instructions (10 x Genomics). Libraries of hashtag oligo fractions were generated according to the manufacturer’s instructions (Biolegend). cDNA and gene expression library fragment sizes were assessed with a DNA High Sensitivity Bioanalyzer Chip (Agilent). cDNA and gene expression libraries were quantified using the Qubit dsDNA High Sensitivity assay kit (Thermo Fisher, Q32854). Gene expression libraries were multiplexed and sequenced on the Nextseq 500 (Illumina) using a 75-cycle kit and the following read structure: Read 1: 28 cycles, Read 2: 55 cycles, Index Read 1: 8 cycles.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
-## Single-cell RNA sequencing
+#### Single-cell RNA sequencing
 
 Data was processed using the Cell Ranger pipeline (10 x Genomics, v.3.1.0) for demultiplexing and alignment of sequencing reads to the mm10 transcriptome and creation of feature-barcode matrices. The cell ranger output files were read into R (version 4.1.1) and processed utilizing the standard Seurat CCA integrated workflow (version 4.3.0). Each of the six samples went through a first phase of filtering, where only cells that recorded more than 200 features and only features present in a minimum of 3 cells were kept. Each sample was filtered prior to downstream analysis on nCount_RNA, nFeature_RNA, and mitochondrial percentages. Samples were then normalized using a LogNormalization method with a scaling factor of 10,000 followed by FindVariableFeatures using Variance Stabilization Transformation with the top 6000 features to be returned. The samples were scored on their cell cycle phases which would be used in the regression later. The FindIntegrationAnchors function using the CCA reduction method and IntegrateData was utilized to integrate the data together. The integrated data-set was then scaled in which mitochondrial percentage and cell cycle state was regressed out. A principal component analysis was performed and the top 15 dimensions were kept. Uniform Manifold and Projection (UMAP) was run on the dataset, in addition to FindNeighbors and FindClusters. Differential gene expression between clusters was performed using the FindMarkers function with the Wilocox test in Seurat. Violin plots and individual UMAP plots were all generated using the Seurat toolkit VlnPlot and FeaturePlot functions, respectively. Heatmaps were generated utilizing the pheatmap package (version 1.0.12).
 
-## Single-nucleus RNA sequencing
+#### Single-nucleus RNA sequencing
 
 Raw sequencing reads were demultiplexed to FASTQ format files using bcl2fastq (Illumina; version 2.20.0). Digital expression matrices were generated from the FASTQ files using Cell Ranger (Zheng et al., 2017; version 6.1.2) with the option to include intronic reads (--include-introns). Reads were aligned against the GRCm38 mouse genome assembly and gene counts were obtained, per-droplet, by summarizing exonic and intronic UMIs that overlapped with the GENCODE mouse annotation (release 24) for each gene symbol. In order to adjust for downstream effects of ambient RNA expression within mouse nuclei, we used the ‘remove-background’ module from CellBender (Pita Juarez et al., 2022; version 0.2.0) to remove counts due to ambient RNA molecules from the count matrices and to estimate the true cells. Genes were subsequently filtered such that only genes detected in two or more cells and with at least 6 total counts (across all cells) were retained. Sample demultiplexing via hashtag oligonucleotide sequences (HTOs) was performed with the Cumulus sc/snRNA-Seq processing pipeline (Li et al., 2020). Specifically, HTO quantification was performed with the Cumulus Tool on Feature Barcoding (Li and Yang, 2024), which provided a cell-by-HTO count matrix. This HTO count matrix, along with the gene count matrices generated via Cell Ranger (above) were used to assign each cell to their respective sample(s) with the demuxEM program. Only cells that were identified as singlets were retained (i.e. no cells identified as a multiplet or unassignable) in the per-sample CellBender-ed gene count matrices.
 
@@ -152,6 +692,397 @@ After identifying the adipocyte population, we subsetted our object on that popu
 
 Enrichment analysis was performed on the positively expressed genes with a log2 fold change (LFC) >0.25 and a P adjusted value <0.01 on comparison of the young 14 days cold and old 14 days cold groups in the DNL high cluster. The generated gene list, which was in order of significance, was fed into g:Profiler (version 0.2.1) using default parameters except with modifications to query as an ordered query against the ‘mmusculus’ database, a gSCS correction method for multiple testing, with domain scope set to annotated, and sources set to the Reactome database. The top six enriched pathways yielded from the database were taken and displayed in order of P adjusted value.
 
-## Statistical methods
+### Statistical methods
 
 Mouse studies were performed with >n = 5 per group for p=0.05 with 95% power given the expected variability of examined phenotypes. Each experiment was independently replicated at least twice. Sample sizes are reported in figure legends. All bar graphs represent the mean ± SEM. A Student’s t-test was used when two groups were compared. Where multiple conditions were compared, we applied two-way ANOVA with a Tukey correction for multiple comparisons. Only the Young vs. Aged comparisons were depicted on graphs for clarity, with additional multiple comparisons provided below. p Values are indicated by asterisks and defined as *p<0.05, **p<0.01 and ***p<0.001. All statistics were calculated with GraphPad Prism Version 10.0.3.
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Graph</th>
+      <th>Statistical test</th>
+      <th>Comparison</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">1B</td>
+      <td rowspan="4">Ucp1 qPCR</td>
+      <td rowspan="4">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>3D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>14D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 3D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 14D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="5">1B</td>
+      <td rowspan="5">Cidea qPCR</td>
+      <td rowspan="5">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>3D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>14D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 3D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 14D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: 3D vs. 14D</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="5">1B</td>
+      <td rowspan="5">Dio2 qPCR</td>
+      <td rowspan="5">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>3D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>14D: Young vs. Aged</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 3D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 14D</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Young: 3D vs. 14D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="4">1B</td>
+      <td rowspan="4">Ppargc1a qPCR</td>
+      <td rowspan="4">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>3D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 3D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 14D</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Young: 3D vs. 14D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2B</td>
+      <td rowspan="2">% tdTom%/Lin-;PDGFRa+</td>
+      <td rowspan="2">Two-way ANOVA with an Uncorrected Fisher’s LSD</td>
+      <td>Young: +/+vs. CER/+</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: +/+vs. CER/+</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>2B</td>
+      <td>% PDGFRa+/Lin- cells</td>
+      <td>Two-way ANOVA with an Uncorrected Fisher’s LSD</td>
+      <td>Young: +/+vs. CER/+</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td rowspan="4">4B</td>
+      <td rowspan="4">Adipoq qPCR</td>
+      <td rowspan="4">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>ICAM1: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: DPP4 vs. CD142</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Aged: DPP4 vs. ICAM1</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: DPP4 +vs. CD142</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td rowspan="3">4B</td>
+      <td rowspan="3">Fabp4 qPCR</td>
+      <td rowspan="3">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>ICAM1: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: DPP4 vs. ICAM1</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: ICAM1 vs. CD142</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td rowspan="5">4D</td>
+      <td rowspan="5">Adipoq qPCR</td>
+      <td rowspan="5">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>Young: DPP4 vs. CD142</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Young: ICAM1 vs. CD142</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Aged: DPP4 vs. ICAM1</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Aged: DPP4 vs. CD142</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: ICAM1 vs. CD142</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td rowspan="6">4D</td>
+      <td rowspan="6">Fabp4 qPCR</td>
+      <td rowspan="6">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>ICAM1: Young vs. Aged</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Young: DPP4 vs. ICAM1</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: DPP4 vs. CD142</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: DPP4 vs. ICAM1</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: DPP4 +vs. CD142</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: ICAM1 vs. CD142</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="2">4F</td>
+      <td rowspan="2">Adipoq qPCR</td>
+      <td rowspan="2">Two-way ANOVA with an Uncorrected Fisher’s LSD</td>
+      <td>Young: MIN vs. MAX</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: MIN vs. MAX</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">4F</td>
+      <td rowspan="2">Fabp4 qPCR</td>
+      <td rowspan="2">Two-way ANOVA with an Uncorrected Fisher’s LSD</td>
+      <td>Young: MIN vs. MAX</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged: MIN vs. MAX</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="9">4G</td>
+      <td rowspan="9">Ucp1 qPCR</td>
+      <td rowspan="9">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>DPP4: Young vs. Young +Iso</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>DPP4: Aged vs. Aged +Iso</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>ICAM1: Young vs. Young +Iso</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>ICAM1: Aged vs. Aged +Iso</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>ICAM1: Young +Iso vs. Aged +Iso</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>CD142: Young vs. Young +Iso</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>CD142: Aged vs. Aged +Iso</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged +Iso: Dpp4 +vs. Icam1+</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Aged +Iso: Icam1 +vs. Cd142+</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="4">4H</td>
+      <td rowspan="4">Ucp1 qPCR</td>
+      <td rowspan="4">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>MAX: Young vs. Young +Iso</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>MAX: Aged vs. Aged +Iso</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young +Iso: MIN vs. MAX</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Aged +Iso: MIN vs. MAX</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="5">6E</td>
+      <td rowspan="5">Npr3 qPCR</td>
+      <td rowspan="5">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>TN: Young vs. Aged</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>14D: Young vs. Aged</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 14D</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Aged: TN vs. 3D</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Aged: TN vs. 14D</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1A</td>
+      <td rowspan="3">Body mass</td>
+      <td rowspan="3">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>TN: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>3D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>14D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1B</td>
+      <td rowspan="2">iWAT mass</td>
+      <td rowspan="2">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>TN: Young vs. Aged</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>3D: Young vs. Aged</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>S1B</td>
+      <td>iWAT mass %</td>
+      <td>Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>No comparisons significant</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1E</td>
+      <td rowspan="2">Ucp1 qPCR</td>
+      <td rowspan="2">Two-way ANOVA with an Uncorrected Fisher’s LSD</td>
+      <td>Young: TN vs. 14D</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Aged: TN vs. 14D</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>S1E</td>
+      <td>Cidea qPCR</td>
+      <td>Two-way ANOVA with an Uncorrected Fisher’s LSD</td>
+      <td>No comparisons significant</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>S4D</td>
+      <td>Npr1 qPCR</td>
+      <td>Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>Young: TN vs. 3D</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>S4D</td>
+      <td>Npr2 qPCR</td>
+      <td>Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>No comparisons significant</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="5">S4H</td>
+      <td rowspan="5">Acly qPCR</td>
+      <td rowspan="5">Two-way ANOVA with a Tukey correction for multiple comparisons</td>
+      <td>3D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>14D: Young vs. Aged</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 3D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: TN vs. 14D</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Young: 3D vs. 14D</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>

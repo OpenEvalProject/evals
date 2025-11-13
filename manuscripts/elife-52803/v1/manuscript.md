@@ -16,7 +16,7 @@
 
 ## Abstract
 
-From the northernmost tip of Scandinavia to the southernmost corner of Patagonia, and across six continents, house sparrows ( Passer domesticus ) inhabit most human-modified habitats of the globe. With over 7,000 articles published, the species has become a workhorse for not only the study of self-urbanized wildlife, but also for understanding life history and body size evolution, sexual selection and many other biological phenomena. Traditionally, house sparrows were studied for their adaptations to local biotic and climatic conditions, but more recently, the species has come to serve as a focus for studies seeking to reveal the genomic, epigenetic and physiological underpinnings of success among invasive vertebrate species. Here, we review the natural history of house sparrows, highlight what the study of these birds has meant to bioscience generally, and describe the many resources available for future work on this species.
+From the northernmost tip of Scandinavia to the southernmost corner of Patagonia, and across six continents, house sparrows (Passer domesticus) inhabit most human-modified habitats of the globe. With over 7,000 articles published, the species has become a workhorse for not only the study of self-urbanized wildlife, but also for understanding life history and body size evolution, sexual selection and many other biological phenomena. Traditionally, house sparrows were studied for their adaptations to local biotic and climatic conditions, but more recently, the species has come to serve as a focus for studies seeking to reveal the genomic, epigenetic and physiological underpinnings of success among invasive vertebrate species. Here, we review the natural history of house sparrows, highlight what the study of these birds has meant to bioscience generally, and describe the many resources available for future work on this species.
 
 ## Introduction
 
@@ -26,9 +26,50 @@ House sparrows are small, sexually dimorphic birds in the family Passeridae. The
 
 House sparrows are native to parts of Asia, North Africa and most of Europe, (with the exception of Italy which is occupied by the Italian sparrow P. italiae; Animation 1). Becoming commensal some 10,000 years ago, house sparrows are now strongly associated with habitats that have been modified by humans. However, they also continue to increase their geographic range by exploiting ongoing and accelerating anthropogenic change (Ravinet et al., 2018; Saetre et al., 2012). A reliance on humans is evident from their colonization of Northern Europe, Eastern Europe and Central Asia in the early 1800s, as agriculture spread and urbanization increased (Summers-Smith, 1963). Though still widespread, significant declines have been reported in the native range of the species since the 1970s. This topic remains contentious (Box 1), but these declines have been attributed to a multitude of factors, including infectious disease, pollution, pesticide use, predator dynamics, new building methodologies and more efficient grain harvesting and storage (Shaw et al., 2008; Summers-Smith, 2003; Singh et al., 2013; Bell et al., 2010; Dadam et al., 2019).
 
+![Animation 1.](https://cdn.elifesciences.org/articles/52803/elife-52803-video1.gif.jpg)
+
 ## Introduced distribution and range expansions
 
 House sparrows are one of the most ubiquitous birds in the world (Anderson, 2006). In approximately 170 years, they colonized the globe such that they now reside in every continent except Antarctica and occupy an estimated 76,600,000 km2 (Birdlife international, 2018). There have been over 250 introduction or translocation events recorded worldwide (Table 1), with the first deliberate successful introduction occurring in 1851 in New York City (Summers-Smith, 1988). Many introductions stemmed from colonial acclimatization societies purposefully releasing birds for cultural reasons or as failed attempts at biological control. More recently, introductions have been accidental. Ship-assisted dispersal (e.g., cargo ships, cruise liners) has been documented, and other types of vehicle-assisted dispersal are also likely (Sainz‐Borgo et al., 2016; Schrey et al., 2014; Clergeau et al., 2004; Szent-Ivány, 1959; Summers-Smith, 1963).
+
+**Table 1.**
+ Global house sparrow introduction or translocation events by region.Introduction and translocation events include both purposeful and inadvertent release of any number of birds from all subspecies, successful or unsuccessful. We list a range instead of a single number because of discrepancies among published reports. For sources used, please refer to https://doi.org/10.6084/m9.figshare.11915955.v1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Number of introductions or translocations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Africa</td>
+      <td>24–43</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>9–11</td>
+    </tr>
+    <tr>
+      <td>Oceania</td>
+      <td>54–60</td>
+    </tr>
+    <tr>
+      <td>Europe</td>
+      <td>4+</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>135–136</td>
+    </tr>
+    <tr>
+      <td>South America</td>
+      <td>32–35+</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Dimorphism in morphology and behavior
 
@@ -69,6 +110,57 @@ Epigenetic variation, namely DNA methylation, has also begun to be investigated 
 In addition to epigenetic mechanisms, the microbiome could also play an important role in the ecology of the species (Russell et al., 2012; Borre et al., 2014). Gut microbes affect the growth rates of house sparrow nestlings (Kohl et al., 2018), and nestlings and adults differ in the structure and membership of their microbial communities, with the nestling microbial community being affected by social and genetic family affiliation but also diet and environmental microbes (Kohl et al., 2019). Further studies are needed to understand what the microbiome means to the house sparrow, particularly as this bird favors the same areas as humans.
 
 As new technologies are developed and refined, we expect the interest in house sparrow genetics, epigenetics and the microbiome to grow. Several local populations of house sparrows have been pedigreed, which enables quantitative genetic estimates of heritability and genetic architecture (Schroeder et al., 2015; Jensen et al., 2003; Wetzel et al., 2012). Additionally, many museums have large collections of house sparrows including many specimens collected before 1900 (Table 2). These collections will be valuable sources of genetic and morphologic data, as well as for use in analyses of pollutants during different eras of human co-habitation (e.g., DuBay and Fuldner, 2017).
+
+**Table 2.**
+ House sparrows available in museum collections.Listed are the five largest house sparrow museum collections, the number of specimens present in each and the time of specimen sampling. Data was compiled from all collections present in the VertNet database (Constable et al., 2010). For search terms and the full table, please refer to https://doi.org/10.6084/m9.figshare.11915955.v1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Collection</th>
+      <th>Number of specimens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>University of Kansas Biodiversity Institute (KU)</td>
+      <td>12,830</td>
+    </tr>
+    <tr>
+      <td>Royal Ontario Museum (ROM)</td>
+      <td>7,654</td>
+    </tr>
+    <tr>
+      <td>Field Museum of Natural History (FMNH)</td>
+      <td>1,974</td>
+    </tr>
+    <tr>
+      <td>Museum of Vertebrate Zoology, UC Berkeley (MVZ)</td>
+      <td>1,888</td>
+    </tr>
+    <tr>
+      <td>American Museum of Natural History (AMNH)</td>
+      <td>1,776</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Specimens collected before 1900</td>
+      <td>1,597</td>
+    </tr>
+    <tr>
+      <td>Specimens collected between 1900–1950</td>
+      <td>7,460</td>
+    </tr>
+    <tr>
+      <td>Specimens collected after 1950</td>
+      <td>29,401</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Conclusions
 

@@ -37,7 +37,7 @@
 
 ## Abstract
 
-Helical cell shape is necessary for efficient stomach colonization by Helicobacter pylori , but the molecular mechanisms for generating helical shape remain unclear. The helical centerline pitch and radius of wild-type H. pylori cells dictate surface curvatures of considerably higher positive and negative Gaussian curvatures than those present in straight- or curved-rod H. pylori . Quantitative 3D microscopy analysis of short pulses with either N -acetylmuramic acid or D-alanine metabolic probes showed that cell wall growth is enhanced at both sidewall curvature extremes. Immunofluorescence revealed MreB is most abundant at negative Gaussian curvature, while the bactofilin CcmA is most abundant at positive Gaussian curvature. Strains expressing CcmA variants with altered polymerization properties lose helical shape and associated positive Gaussian curvatures. We thus propose a model where CcmA and MreB promote PG synthesis at positive and negative Gaussian curvatures, respectively, and that this patterning is one mechanism necessary for maintaining helical shape.
+Helical cell shape is necessary for efficient stomach colonization by Helicobacter pylori, but the molecular mechanisms for generating helical shape remain unclear. The helical centerline pitch and radius of wild-type H. pylori cells dictate surface curvatures of considerably higher positive and negative Gaussian curvatures than those present in straight- or curved-rod H. pylori. Quantitative 3D microscopy analysis of short pulses with either N-acetylmuramic acid or D-alanine metabolic probes showed that cell wall growth is enhanced at both sidewall curvature extremes. Immunofluorescence revealed MreB is most abundant at negative Gaussian curvature, while the bactofilin CcmA is most abundant at positive Gaussian curvature. Strains expressing CcmA variants with altered polymerization properties lose helical shape and associated positive Gaussian curvatures. We thus propose a model where CcmA and MreB promote PG synthesis at positive and negative Gaussian curvatures, respectively, and that this patterning is one mechanism necessary for maintaining helical shape.
 
 ## Introduction
 
@@ -53,7 +53,7 @@ Here, we demonstrate that the surface of helical H. pylori cells is characterize
 
 ## Results
 
-## Helical cells maintain areas of positive and negative Gaussian curvature on the sidewall
+### Helical cells maintain areas of positive and negative Gaussian curvature on the sidewall
 
 Unlike straight-rod shaped bacteria, helical H. pylori cells maintain distinct and diverse cell surface curvatures along the sidewall (Figure 1 and Figure 2). To characterize the cell surface curvature features of H. pylori in detail, we stained permeabilized cells with fluorescent wheat germ agglutinin (WGA), which binds GlcNAc and thus labels the cell wall. Since the dimensions of H. pylori cells (1.5–3.5 µm in length and 0.45 µm in diameter Figure 3) are near the limit of light microscopy resolution, we employed 3D structured illumination microscopy (SIM) to more clearly resolve cells in three dimensions (Figure 1A). We adapted previous image processing software (Bartlett et al., 2017; Morgenstein et al., 2015) to accommodate characteristic SIM artifacts and enhanced resolution in order to generate a 3D triangular meshwork surface with roughly 30 nm precision from the SIM z-stack images (Figure 1A and B, matched SIM image volumes and surface reconstructions). Display of the Gaussian curvature, which is the product of the two principal curvatures, at each point on the meshwork shows the distinct curvatures on opposite sides of helical cells (Figure 1B). Using Gaussian curvature allows us to focus on local curvature geometry. We operationally define the minor helical axis as the shortest helical path along the sidewall within the zone of moderate negative curvature (minor helical axis area, −15 to −5 µm−2, blue), and define the major axis as the path opposite the minor helical axis, which resides within the zone of moderate positive curvature (major helical axis area, 5 to 15 µm−2, red) (Figure 1C). The cell poles are characterized by high positive curvature (>15 µm−2, gray).
 
@@ -65,6 +65,22 @@ Unlike straight-rod shaped bacteria, helical H. pylori cells maintain distinct 
 
 **Figure 2.:** Smooth histograms of the distribution of surface Gaussian curvatures for a population of cells (wild-type helical, yellow; curved-rod Δcsd2, teal; straight-rod Δcsd6, indigo) with poles included (A) or sidewall only (B, poles excluded). The region to the right of the dotted vertical lines corresponds to curvatures contributed almost exclusively by the poles. Histograms are derived using a bin size of 0.2 µm−2. Example computational surface reconstructions (top right of each histogram) of a wild-type helical, curved-rod Δcsd2, and straight-rod Δcsd6 cell with Gaussian curvatures displayed as in Figure 1. The data represented are from one replicate.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig3-v2.jpg)
+
+**Figure 3.:** Analysis of the wild-type population in Figure 2 from the 231 wild-type cells for which the cell centerline was well-fit by a helix. (A) Schematic of helical-rod shape parameters (cell centerline length, gray; cell diameter, purple; helical pitch, pink; and helical diameter, green). (B) Example cell with helical coordinate system and the major (red line, 0°) and minor (blue line, 180°) helical axes shown on the cell sidewall. Population distributions of (C) cell centerline lengths, (D) average cell diameters, (E) helical pitch, (F) helical diameter, (G) major to minor axis length ratio, and (H) the average Gaussian curvature for a given helical coordinate system unwrap angle. Colored dotted lines in (C–G) indicate the mean ±1.5 standard deviations in 0.5 standard deviation steps. Shaded line in (H) indicates ±1 standard deviation about the mean. Distributions of parameters (C–D) are from real cells, parameters (E–F) are from helical centerline fits, and properties (G–H) are measured from the matched synthetic cell sidewalls.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Example cell centerlines (gray dots) and calculated helical fits (red lines), arranged from good (left) to poor (right) fit. (B) Histogram of the relative helical fit error for each of the cells from the wild-type population shown in Figure 2. Shaded green box indicates well-fit centerlines with a relative helical fit error below the selected threshold of 2, which were used for further analysis. Comparison of the population distribution of (C) cell lengths and (D) average cell diameters for the entire wild-type population (black line) and the subset of cells with a centerline that was well fit by a helix (green). (E) Comparison of the population cell surface Gaussian curvature distribution for the entire wild-type population (black line), the selected subset of wild-type cells (green line), and the synthetic cells generated based on the cell centerline helical fits of the selected subset (dotted green line).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Left column, distribution of population helical rod parameters from Figure 3C–F. Center column, Gaussian surface curvature distribution of the synthetic cells in (Figure 3—figure supplement 3) without poles for (A) cell centerline length, (B) cell diameter, (C) helical pitch, and (D) helical radius modulated to the mean ±1.5 standard deviations in 0.5 standard deviation increments. Right column, ratio of major to minor axis length vs. (A) cell centerline length, (B) cell diameter, (C) helical pitch, and (D) helical radius modulated to the mean ±1.5 standard deviations in 0.5 standard deviation increments. As shown in the color bar at the far right, data for the mean cell data are plotted in gray; data for cells generated with a parameter modulated to a value greater than the mean are shown in blue tones; and data for cells generated with a parameter modulated to a value less than the mean are shown in tan tones.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Cell centerline (paired cells, left) and cell surface Gaussian curvatures (paired cells, right) of synthetic, idealized cells with parameters taken from the distribution of wild-type shapes. The central pair of cells in each row was generated using the average value for each shape parameter shown in Figure 3 and is the same for all rows. Each of the parameters (A) cell centerline length, (B) cell diameter, (C) helical pitch, and (D) helical radius is increased (right of mean cell pair) and decreased (left of mean cell pair) up to 1.5 standard deviations in 0.5 standard deviation increments while leaving the remaining three parameters fixed at the population mean.
+
 Our image reconstruction method performs faithful reconstructions of straight- and curved-rod cells (Figure 2, inset). To compare the surface curvatures maintained by helical (wild-type), curved-rod (Δcsd2), and straight-rod (Δcsd6) cells, we pooled reconstructions of hundreds of non-septating cells for each genotype and plotted a histogram of the proportion of surface curvature points with a given Gaussian curvature value (Figure 2). All three cell shapes share a tail of high positive curvatures from the cell poles (Figure 2A, right of the dotted line). In order to study the sidewall alone, we developed an algorithm to computationally define and exclude poles (Figure 1B, black lines). With the poles removed, the extended tail disappears for each cell shape. In contrast to the other shapes, helical cells have a large proportion of sidewall area with curvatures less than −5 µm−2 and an even larger proportion with curvatures greater than 5 µm−2 (Figure 2B). Rather than having a unimodal distribution, helical cells have a multimodal distribution that includes an apparent peak at negative curvature and another at positive curvature.
 
 The sidewall curvature distribution informed us about the overall types of surface curvature wild-type cells need to achieve, but was not sufficient to let us directly compare the surface properties of the major and minor axes, specifically the relative lengths of the major and minor axes and the average Gaussian curvature along both axes. Furthermore, prior shape parameter characterizations of H. pylori have been performed using 2D images (Martínez et al., 2016; Sycuro et al., 2013; Sycuro et al., 2012; Sycuro et al., 2010; Yang et al., 2019); measurement of pitch and helical radius from 2D images is subject to systematic errors for short cells (approximately <1.5 helical turns) depending on their orientation on the coverslip. Therefore, we also wished to determine H. pylori population shape parameters from our 3D dataset. To characterize the major and minor axes, we needed to find these axes on each reconstructed cell surface. While cells in our experiments appear helical, in reality they have surface imperfections and centerlines with kinks, bends, or variation in pitch along the centerline (Sycuro et al., 2010). We therefore limited ourselves to considering the relative length of the major and minor helical axes of a population of simulated, idealized cells, each of which mimics a cell from the wild-type population described in Figure 2 (for full details see Appendix 1). In brief, to both derive the cell shape parameters necessary to generate the simulated cells and to further characterize the 3D shape parameters of the wild-type population, we measured the cell lengths from one pole to the other along the curved centerlines (Figure 3A and C, gray); the diameters of the cells (Figure 3A and D, purple); the helical pitches of the centerlines (Figure 3A and E, pink); and the helical diameters of the centerlines (Figure 3A and F, green).
@@ -75,43 +91,314 @@ We next used our simulation framework to explore how the four helical-rod shape 
 
 Having established the substantial difference in the length of the major and minor axes, we wondered if differential synthesis at these cellular landmarks might help explain helical shape maintenance. Although it is not currently possible to computationally define the helical axes on surface reconstructions of actual cells due to their imperfections, our data indicate that we can use Gaussian curvatures of 5 µm−2 and −11 µm−2 as a proxy for the major and minor axes, respectively, in population level data.
 
-## H. pylori can incorporate modified D-alanine and modified MurNAc into peptidoglycan
+### H. pylori can incorporate modified D-alanine and modified MurNAc into peptidoglycan
 
 Since a helical cell must maintain large regions of positive and of negative curvatures, we hypothesized that H. pylori may have a different growth pattern than that of E. coli, where the majority of the sidewall regions have Gaussian curvature near zero. To determine where new PG is preferentially inserted, we used two metabolic probes of PG incorporation. First, we attempted labeling wild-type cells with MurNAc-alkyne (MurNAc-alk), but H. pylori is unable to readily use exogenous MurNAc. We then engineered a strain, HJH1, containing recycling enzymes AmgK and MurU from Pseudomonas putida (Gisin et al., 2013) at the rdxA locus, a neutral locus routinely used for expression of genes in H. pylori (Goodwin et al., 1998; Smeets et al., 2000). These enzymes convert MurNAc into UDP-MurNAc, which can then be used to form PG subunit precursors (Figure 4—figure supplement 1). To verify that HJH1 can indeed use exogenous MurNAc, we assayed rescue from fosfomycin treatment. Fosfomycin blocks the first committed step in PG precursor synthesis by preventing the conversion of UDP-GlcNAc into UDP-MurNAc (Figure 4—figure supplement 1). We determined the minimum inhibitory concentration (MIC) of fosfomycin of our strain to be 25 µg/ml (Figure 4—figure supplement 2). Supplementation with 4 mg/ml MurNAc partially rescued growth of HJH1 in the presence of 50 µg/ml fosfomycin, but not the parental strain (LSH108) (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig4-v2.jpg)
+
+**Figure 4.:** (A) 10-fold dilutions showing LSH108 (rdxA::catsacB) or HJH1 (rdxA::amgKmurU) treated with 50 µg/ml fosfomycin or untreated and with or without 4 mg/ml MurNAc supplementation, from one representative of three biological replicates. (B and C) Verification of MurNAc-alk incorporation into pentapeptides (left column) and tetra-pentapeptides (right column) by HPLC/MS/MS. (B) Extracted ion chromatograms (EICs) for the ion masses over the HPLC elution for unlabeled (lower EIC) and labeled (top EIC) sacculi. (C) Spectra of the ions observed during LC-MS for the MurNAc-alk pentapeptide (left, non-reduced, predicted [M+H]+ ion m/z = 1049.452) and MurNAc-alk tetra-pentapeptide dimer (right, non-reduced, predicted [M+2H]2+ ion m/z = 985.920). (D) Verification of D-Ala-alk incorporation into pentapeptides and tetra-pentapeptides. HPLC chromatograms of labeled (top) and unlabeled (bottom) sacculi. The main monomeric and dimeric muropeptides are labeled (4, disaccharide tetrapeptide; 5, disaccharide pentapeptide; 44, bis-disacccharide tetratetrapeptide; 45, bis-disacharide tetrapentapeptide). D-Ala-alk-modified muropeptides (top, 5a and 45a) are present only in the sample from labeled cells and were confirmed by MS analysis of the collected peak fractions. 5a, alk-labeled disaccharide pentapeptide (neutral mass: 1036.448); 45a, alk-labelled bis-disaccharide tetrapentapeptide (neutral mass: 1959.852). Data (B, C, and D) are from one replicate.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) MurNAc-alk diffuses across the cell membrane and is converted into UDP-MurNAc-alk, which can then be used in the synthesis of PG precursors. (B) Fosfomycin inhibits the conversion of UDP-GlcNAc to UDP-MurNAc. Addition of exogenous MurNAc allows the cell to bypass this step and survive when treated with fosfomycin. To incorporate the new PG monomer into the cell wall, transglycosylases (TGase) polymerize the glycan strand. (C) To link the new strand to the existing PG, transpeptidases (TPase) form a crosslink between the tetra position D-Ala of the new peptide stem and the m-Dap of a nearby peptide stem, resulting in loss of the penta position D-Ala from the new peptide stem. (D) In a reaction similar to forming a crosslink, TPases can replace the penta position D-Ala with D-Ala-alk. In our experiments labeling PG incorporation, we labeled cells with either MurNAc-alk or D-Ala-alk.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Optical density of wild-type H. pylori cultures grown in a 96-well plate with a 2-fold dilution series of fosfomycin. Optical density was measured at 1 (light gray), 6 (medium gray), and 12 (dark gray) hours of incubation. Figure shows one representative of two biological replicates.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Labeled (A) pentapeptide monomer and (B) tetra-pentapeptide dimer ions. Parentheses indicate that the MurNAc-alk could be on either the tetra or penta portion of the dimer; these two species are indistinguishable in our HPLC/MS/MS data.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Mass spectra for the ions observed for the reduced (A) D-Ala-alk pentapeptides (left, Peak 5a in Figure 4D) and (B) D-Ala-alk tetra-pentapeptides (right, Peak 45a in Figure 4C). The labeled peaks, from left to right are: (A) D-Ala-alk-pentapeptide+H+ and D-Ala-alk-pentapeptide+Na+ and (B) D-Ala-alk-tetra-pentapeptide+2 H2+, D-Ala-alk-tetra-pentapeptide+H++Na+, and D-Ala-alk-tetra-pentapeptide+H++K+. Schematic of (C) labeled pentapeptide monomer and (D) labeled tetra-pentapeptide dimer ions.
+
 To verify that clickable MurNAc-alk is indeed incorporated into the cell wall, we purified sacculi from HJH1 labeled with MurNAc-alk for six doublings for MS/MS analysis. We positively identified MurNAc-alk-pentapeptide and MurNAc-alk-tetra-pentapeptide, the most abundant monomeric and dimeric species in the H. pylori cell wall, (Figure 4B,C and Figure 4—figure supplement 3), as well as less-abundant species (Table 1), confirming incorporation. Cells were labeled without the addition of fosfomycin, indicating the HJH1 strain can use MurNAc-alk even when unmodified MurNAc is available in the cell.
+
+**Table 1.**
+ MurNAc-alk incorporation into PG
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Muropeptide (non-reduced)</th>
+      <th rowspan="2">Theoretical neutral mass</th>
+      <th colspan="3">MurNAc-alk labeled H. pylori</th>
+      <th colspan="3">Control H. pylori</th>
+    </tr>
+    <tr>
+      <th>Observed ion (charge)</th>
+      <th>Rt* (min)</th>
+      <th>Calculated neutral mass</th>
+      <th>Observed ion (charge)</th>
+      <th>Rt* (min)</th>
+      <th>Calculated neutral mass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Di</td>
+      <td>696.270</td>
+      <td>697.289 (1+)</td>
+      <td>20.3</td>
+      <td>696.282</td>
+      <td>697.290 (1+)</td>
+      <td>20.4</td>
+      <td>696.283</td>
+    </tr>
+    <tr>
+      <td>Alk-Di</td>
+      <td>734.286</td>
+      <td>735.307 (1+)</td>
+      <td>30.5</td>
+      <td>734.300</td>
+      <td>-†</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Tri</td>
+      <td>868.355</td>
+      <td>869.375 (1+)</td>
+      <td>15.8</td>
+      <td>868.368</td>
+      <td>869.374 (1+)</td>
+      <td>15.8</td>
+      <td>868.367</td>
+    </tr>
+    <tr>
+      <td>Alk-Tri</td>
+      <td>906.371</td>
+      <td>907.392 (1+)</td>
+      <td>25.8</td>
+      <td>906.385</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Tetra</td>
+      <td>939.392</td>
+      <td>940.411 (1+)</td>
+      <td>20.4</td>
+      <td>939.404</td>
+      <td>940.412 (1+)</td>
+      <td>20.4</td>
+      <td>939.405</td>
+    </tr>
+    <tr>
+      <td>Alk-Tetra</td>
+      <td>977.408</td>
+      <td>978.428 (1+)</td>
+      <td>30.4</td>
+      <td>977.421</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Penta</td>
+      <td>1010.429</td>
+      <td>1011.449 (1+)</td>
+      <td>22.9</td>
+      <td>1010.442</td>
+      <td>1011.449 (1+)</td>
+      <td>22.8</td>
+      <td>1010.442</td>
+    </tr>
+    <tr>
+      <td>Alk-Penta</td>
+      <td>1048.445</td>
+      <td>1049.464 (1+)</td>
+      <td>32.9</td>
+      <td>1048.457</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>TetraTri</td>
+      <td>1789.736</td>
+      <td>895.889 (2+)</td>
+      <td>33.4</td>
+      <td>1789.762</td>
+      <td>895.888 (2+)</td>
+      <td>33.3</td>
+      <td>1789.761</td>
+    </tr>
+    <tr>
+      <td>Alk-TetraTri</td>
+      <td>1827.752</td>
+      <td>914.898 (2+)</td>
+      <td>39.2</td>
+      <td>1827.781</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>TetraTetra</td>
+      <td>1860.774</td>
+      <td>931.407 (2+)</td>
+      <td>35.0</td>
+      <td>1860.799</td>
+      <td>931.407 (2+)</td>
+      <td>34.9</td>
+      <td>1860.799</td>
+    </tr>
+    <tr>
+      <td>Alk-TetraTetra</td>
+      <td>1898.789</td>
+      <td>950.416 (2+)</td>
+      <td>39.7</td>
+      <td>1898.817</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>TetraPenta</td>
+      <td>1931.811</td>
+      <td>966.926 (2+)</td>
+      <td>35.8</td>
+      <td>1931.837</td>
+      <td>966.925 (2+)</td>
+      <td>35.7</td>
+      <td>1931.835</td>
+    </tr>
+    <tr>
+      <td>Alk-TetraPenta</td>
+      <td>1969.826</td>
+      <td>985.934 (2+)</td>
+      <td>39.9</td>
+      <td>1969.853</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Rt, retention time.†-, not detected. Muropeptides detected (confirming incorporation) via LC-MS analysis of MurNAc-alk labeled versus control PG digests. The control cells displayed no evidence of any MurNAc-alk incorporation._
 
 As a second strategy for labeling new PG incorporation, we used D-alanine-alkyne (D-Ala-alk) (Kuru et al., 2012; Siegrist et al., 2013). This probe can be incorporated through the activity of PG transpeptidases (Figure 4—figure supplement 1). To verify that D-Ala-alk is incorporated into the cell wall and to determine the position(s) at which it is incorporated, we purified sacculi from wild-type (LSH100) cells labeled for six doublings for analysis. D-Ala-alk was detected in only pentapeptide monomers and tetra-pentapeptide dimers, indicating that D-Ala-alk is exclusively incorporated at the pentapeptide position (Figure 4D and Figure 4—figure supplement 4).
 
-## PG synthesis is enriched at both negative Gaussian curvature and the major helical axis area
+### PG synthesis is enriched at both negative Gaussian curvature and the major helical axis area
 
 To visualize new PG incorporation, we labeled HJH1 with either MurNAc-alk or D-Ala-alk for 18 min (approximately 12% of the doubling time). AF555-azide was conjugated to the alkyne groups using click chemistry and cells were counterstained with WGA-AF488. Cells were imaged using 3D SIM (Figure 5 and Figure 5—video 1). As expected, labeling was seen on the boundary of the cell but not in the cytoplasmic area (Figure 5D and H). For both metabolic probes, PG synthesis appeared to be excluded from the poles, dispersed along the sidewall, and present at septa. However, D-Ala-alk septal labeling appeared much brighter compared to MurNAc-alk septal labeling, indicating at least some difference between incorporation and/or turnover of the two probes. To discover if this labeling difference is due to curvature-biased transpeptidation rates, we also attempted labeling with dimers D-alanine-D-alanine-alkyne and D-alanine-alkyne-D-alanine, which is presumably incorporated predominantly through PG precursor biosynthesis in the cytoplasm, but no signal was detected (data not shown) (Liechti et al., 2014).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig5-v2.jpg)
+
+**Figure 5.:** 3D SIM imaging of wild-type cells labeled with an 18 min pulse of MurNAc-alk (A–D, yellow) or 18 min pulse of D-Ala-alk (E–H, yellow) counterstained with fluorescent WGA (blue). Color merged maximum projection of 18 min MurNAc-alk (A), D-Ala-alk (E), or mock (B, F) labeling with fluorescent WGA counterstain. (C, G) Top-down (left) and 90-degree rotation (right) 3D views of three individual cells, including a dividing cell at the right. Top: color merge; middle: 18 min MurNAc-alk (C) or D-Ala-alk (G); bottom: fluorescent WGA. (D, H) Color merged z-stack views of the three cells in (C, G), respectively (left to right = top to bottom of the cell). Numbering indicates matching cells. Scale bar = 0.5 µm. The representative images are selected from one of three biological replicates.
+
 To quantify any curvature-based enrichment (expressed throughout as relative concentration vs. Gaussian curvature) of new cell wall synthesis, we used the fluorescent WGA signal to generate 3D cell surface reconstructions of hundreds of individual, non-septating cells labeled with MurNAc-alk, D-Ala-alk, or cells that were mock-labeled as a control. The Gaussian curvature was calculated at every location on the reconstructed 3D surface of the cell. Because the absolute amount of synthesis (or other signals of interest) can vary between cells, and because the level of illumination throughout the field of view is non-uniform, we set the average PG synthesis signal for each individual cell to one. We measured each cell’s curvature-dependent PG synthesis signal intensity relative to that average value, normalized by the amount of that curvature present on the surface, since there is more surface area associated with positive Gaussian curvature than negative (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig6-v2.jpg)
+
+**Figure 6.:** (A) The calculation of relative concentration for a specific probe involves two steps of normalization. First, the raw signal is summed up in bins defined by the Gaussian curvature at the surface. Then, this raw signal is normalized by dividing by the sum of the raw signal at all Gaussian curvatures (total signal). This normalizes for changes in total signal, fluorophore brightness, imaging conditions, etc. The second step is to divide by the fractional surface area, or amount of surface area contributed by each Gaussian curvature bin. This distribution is dependent on the observed shape of the cell. Following these two normalization steps, one has the concentration of the probe of interest relative to a uniformly distributed null model. For illustration, we have shown this graphical equation for three noise-free cells that have the same geometry, but different relative signal abundances. In the experimental data presented in the main text, the single cell relative concentration profile is averaged over hundreds of cells, each with their own unique geometry. Whole surface (B) and sidewall only (C) surface Gaussian curvature enrichment of relative concentration of new cell wall growth (y-axis) vs. Gaussian curvature (x-axis) derived from a population of computational cell surface reconstructions of MurNAc-alk (green), D-Ala-alk (blue) 18 min pulse-labeled, and mock-labeled (gray) cells. 90% bootstrap confidence intervals are displayed as a shaded region about each line. The represented data are pooled from three biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The five columns are as follows (from left to right): two views of an example rendering of a helical rod cell colored by the intensity of the raw signal at each point on the surface; the raw signal summed across all surface elements of the same curvature; the total raw signal summed across all curvature values; the ratio of the raw signal to total signal; and the relative concentration. For plots that are functions of Gaussian curvature, the solid black line from the ‘uniform – low’ example is included in all plots for comparison. The same idealized cell geometry was used for all the examples. The simulated example distributions were created by taking a uniformly distributed signal and adding 25% additional signal to specific geometries. This additional signal results in the raw signal being 1.25X larger at the enriched geometries than the uniform case. However, the increase in the total signal is geometry dependent and not 25%, except in the ‘uniform – high' example. Because of the normalization steps, an identical relative concentration profile could have been generated by removing material from the opposite regions.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Sidewall only surface Gaussian curvature enrichment of relative concentration of new cell wall growth (y-axis) vs. Gaussian curvature (x-axis) of the three biological replicates pooled in Figure 6: MurNAc-alk (greens), D-Ala-alk (blues) 18 min pulse-labeled, and mock-labeled (grays) cells. 90% bootstrap confidence intervals are displayed as a shaded region about each line. (B) Histogram of fluorescence signal per cell divided by the number of pixels in the projected cell area for the populations in (A).
 
 As a tool to facilitate understanding and interpretation of these relative enrichment plots, we generated a synthetic cell surface with the same geometric properties as the average wild-type cell (Figure 3), applied a variety of example intensity distributions, and generated curvature enrichment plots. We began with a uniform baseline signal (Figure 6—figure supplement 1, ‘uniform - low’) and in each case added 25% extra signal intensity to specific geometries. In the enrichment profiles, a relative concentration value of one indicates that the average signal intensity at that curvature is the same as the average across the cell surface. Values greater than one indicate curvatures where normalized signal is enriched compared to average and values less than one indicate curvatures where normalized signal is depleted compared to average. These simulations illustrate the interrelated nature of the relative enrichment plots. Because there is more cell surface area with positive Gaussian curvature, adding 25% signal to this region (Figure 6—figure supplement 1, ‘enriched at major axis’) increases the average signal more than adding 25% signal at zero or negative Gaussian curvature. Thus by increasing the signal at positive curvature, the relative concentration decreases at the rest of the cell surface even though the absolute signal at these geometries remains the same. A similar change in relative concentration occurs with an increase in signal at zero or negative curvature (Figure 6—figure supplement 1, ‘enriched at zero’ and ‘enriched at minor axis’, respectively), but because there is less surface area with these curvatures, the magnitude of this change is lower. To further illustrate the implications of the interrelated nature of these plots, we added both signal with a monotonic decline profile (Figure 6—figure supplement 1, ‘monotonic decline’) and signal enriched at the major axis (Figure 6—figure supplement 1, ‘enriched at major axis’) to one cell surface (Figure 6—figure supplement 1, ‘monotonic decline and major axis’). By adding extra signal at the major axis area, the average concentration increases significantly, causing the rest of the relative concentrations to decrease compared to the monotonic decline profile alone. As these simulations demonstrate, relative enrichment plots must be considered holistically. The key features of interest are the overall increases, decreases, and peaks in the curves, along with the curvatures at which these occur.
 
 We performed relative concentration enrichment analysis separately with the entire cell surface and with the sidewall only (poles removed) from the PG synthesis data. We then averaged the single cell measurements across more than 100 cells pooled from three biological replicates to obtain a profile of enrichment or depletion as a function of surface curvature. Curvature enrichment analysis of whole cell surfaces revealed that for both metabolic probes, signal was largely absent from the poles, as seen by the drop-off of relative enrichment at curvatures above 10 µm−2 (Figure 6B). To focus on the curvature enrichment pattern along the sidewall, we repeated the analysis after first computationally removing the poles. Looking at sidewall curvature alone, MurNAc-alk was enriched at two sites. At negative curvature, enrichment increases as curvature becomes more negative. At positive curvature, enrichment peaks near 6 µm−2 and then begins to decrease at higher curvatures (Figure 6C, green). D-Ala-alk showed peaks of enrichment aligning with those of MurNAc-alk (Figure 6C, blue), but the magnitude of the peak at positive curvature was reduced. The mock labeling control showed minimal curvature bias and is on average 3.6% of the D-Ala-alk signal and 4.5% of the MurNAc-alk signal (Figure 6B and C, gray and Figure 6—figure supplement 2B). This demonstrates that the fluorescent signal in the mock labeling is independent of geometry. Thus the nonspecific signal should contribute negligibly to the PG synthesis enrichment profiles. Biological replicates are shown in Figure 6—figure supplement 2A.
 
-## MreB is enriched at negative Gaussian curvature
+### MreB is enriched at negative Gaussian curvature
 
 The cytoskeletal protein MreB has been shown in rod-shaped organisms to preferentially localize to negative Gaussian curvatures near to and below zero and help direct PG synthesis (Bratton et al., 2018; Ursell et al., 2014). It has been reported that MreB is not essential in H. pylori and that treatment with the MreB inhibitor A22 does not alter cell shape (Waidner et al., 2009), though growth inhibition only occurred at concentrations well above those used to select for A22 resistance in other organisms (Gitai et al., 2005; Ouzounov et al., 2016; Srivastava et al., 2007; Wu et al., 2011). Since multiple attempts to knock out mreB in wild-type LSH100 were unsuccessful, we generated IM4, a merodiploid strain with a second copy of mreB at a neutral intergenic locus (McGee locus Langford et al., 2006) (Figure 7—figure supplement 1A) for comparative transformation experiments. To verify that both LSH100 and IM4 are readily transformable, we performed parallel transformations with a ccmA::CAT deletion cassette. LSH100 and IM4 showed similar transformation efficiencies (2.4 × 10−4 and 1.2 × 10−4, respectively) (Figure 7A). We transformed LSH100 and IM4 with an mreB::CAT deletion cassette (Figure 7A and Figure 7—figure supplement 1A) and obtained mreB targeting transformants in strain IM4 at a frequency of 2.3 × 10−4. The CAT resistance cassette integrated into mreB at either the native locus or the McGee locus (19 and 5 of 24 clones tested, respectively) (Figure 7—figure supplement 1B). In contrast, we obtained two colonies after transformation of LSH100 (frequency of 6.7 × 10−7). Sequencing revealed that an amplification event at the mreB locus occurred for each of these clones, such that an uninterrupted copy of mreB was present in addition to a copy of mreB::CAT (Figure 7—figure supplement 1D). Western blotting revealed that MreB was produced at wild-type levels in clone #2, but only a faint band was observed for clone #1 (Figure 7—figure supplement 1C). In clone #1, the terminal four amino acids were replaced due to the recombination event (GFSE to FLAN). One of the four epitopes used to generate the anti-MreB antibody includes the four terminal amino acids (Nakano et al., 2012), likely explaining the discrepancy between the sequencing results and western blot detection. While we requested the previously published mreB mutant strains (Waidner et al., 2009), they could not be revived from frozen stocks. We thus conclude that MreB is essential in LSH100 and perhaps all H. pylori strains.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic of transformation experiment testing MreB essentiality in LSH100 (WT) and IM4 (2XmreB) (left) and corresponding transformation frequencies (right). *=two recombinant clones with mreB duplication (see Figure 7—figure supplement 1 for details). 3D SIM imaging of wild-type cells immunostained with anti-MreB (B, D, E, yellow) or preimmune serum (C, yellow) and counterstained with fluorescent WGA (blue). (B, C) Color merged maximum projections (D) Top-down (left) and 90-degree rotation (right) 3D views of three individual cells. Top: color merge; middle: anti-MreB; bottom: fluorescent WGA. (E) Color merged z-stack views of the three cells in (A). (left to right = top to bottom of the cell). Numbering indicates matching cells. Scale bar = 0.5 µm. (F) Sidewall only surface Gaussian curvature enrichment plots for a population of cells immunostained with anti-MreB (pink), or preimmune serum (gray). Smooth line plot (solid line) of relative MreB concentration (y-axis) vs. Gaussian curvature (x-axis) derived from a population of computational cell surface reconstructions with poles excluded. 90% bootstrap confidence intervals are displayed as a shaded region about each line. The representative images are selected from one of three biological replicates and the data shown in (F) are pooled from the three biological replicates.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) (Top) Schematic of the LSH100 native mreB locus with DNA and protein sequence for a small region at the C-terminus. Anti-MreB epitopes are annotated in yellow. (Middle) Schematic of the McGee locus with mreB in strain IM4. (Bottom) mreB::CAT deletion cassette used for transformations. Black arrows: primers MreB_up, McGee_187, and Catout used for CAT insertion site characterization in (B). (B) PCR to determine the integration site of mreB::CAT into IM4. Native locus expected size = 899 bp; McGee locus expected size = 3320 bp. (C) Western blot of MreB expression (top) and total protein levels (bottom) in LSH100 (wild-type), IM4 (2XmreB), and mreB recombinant clone #1 and #2. One of two representative experiments. (D) Schematic of the mreB duplications in MreB suppressor clone #1 (top) and #2 (bottom) with DNA and protein sequence for a small region at the C-terminus. Schematics are to scale; McGee mreB locus schematic is presented at ½ scale.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Whole surface (sidewall and poles) Gaussian curvature enrichment of relative MreB concentration (y-axis) vs. Gaussian curvature (x-axis) of computational cell surface reconstructions of a population of cells immunostained with anti-MreB (pink), or preimmune serum (gray). 90% bootstrap confidence intervals are displayed as a shaded region about each line. The represented data are pooled from three biological replicates.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Sidewall only surface Gaussian curvature enrichment of relative MreB concentration (y-axis) vs. Gaussian curvature (x-axis) of the three biological replicates pooled in Figure 7: anti-MreB (pinks) and preimmune serum (grays) immunostained cells. 90% bootstrap confidence intervals are displayed as a shaded region about each line. (B) Histogram of fluorescence signal per cell divided by the number of pixels in the projected cell area for the populations in (A).
+
 We investigated MreB localization to determine if an altered curvature preference might account for the PG synthesis pattern we observed. Immunofluorescence labeling with 3D SIM imaging revealed that MreB is present at the cell periphery as many individual foci and some short arcs that appear to be oriented approximately circumferentially and excluded from the poles (Figure 7B,D and E and Figure 7—video 1). Only sparse foci were seen with immunofluorescence using the preimmune serum (Figure 7C). Curvature enrichment analysis of non-dividing cells confirmed that MreB localization is depleted at the poles (Figure 7—figure supplement 2). Regardless of whether the poles were included in the analysis, we observed that as Gaussian curvature became more negative, relative MreB concentration increased monotonically (Figure 7F and Figure 7—figure supplement 2). Biological replicates are shown in Figure 7—figure supplement 3A. This echoes the enrichment of PG synthesis at negative Gaussian curvature; as Gaussian curvature became more negative (below −2 µm−2), relative PG synthesis increased monotonically. Preimmune serum signal was 36.4% of the MreB signal (Figure 7—figure supplement 3B), but did not show a curvature preference (Figure 7E, gray). Thus, MreB may promote the enhanced PG synthesis observed at negative curvature.
 
-## The bactofilin CcmA forms filaments, bundles, and lattices in vitro
+### The bactofilin CcmA forms filaments, bundles, and lattices in vitro
 
 We reasoned that another cytoskeletal element might promote the higher relative PG synthesis observed at the major axis area. While both coiled-coil rich proteins (Ccrp) and the bactofilin homolog CcmA have been implicated in H. pylori cell shape (Specht et al., 2011; Sycuro et al., 2010; Waidner et al., 2009), only loss of CcmA, and not individual Ccrps, results in a drastic cell shape defect in our strain background (Yang et al., 2019); ΔccmA cells are nearly straight. To verify CcmA’s status as a cytoskeletal filament, we tested its ability to form higher-order structures in vitro. Negative staining of recombinant wild-type CcmA purified from E. coli revealed filaments of varying length, long helical bundles of filaments, and lattice structures (Figure 8A–B and Figure 8—figure supplement 1A). Fourier transform analysis of the lattice structures revealed a filament spacing of 5.5 nm (Figure 8—figure supplement 2), similar to that previously observed for C. crescentus BacA lattices (5.6 nm) (Vasa et al., 2015). While BacA forms orthogonal lattices, the CcmA lattices are skewed (acute angle = 71.5°; obtuse angle = 106.2°).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig8-v2.jpg)
+
+**Figure 8.:** (A–D) Negatively stained TEM images of purified CcmA. Scale bars = 100 nm, with representative images from one of three biological replicates. Wild-type CcmA lattices (A) (blue arrows) and helical bundles (B) (pink arrows), which are comprised of individual filaments (lime green arrows). (C) The I55A variant does not form ordered structures in vitro. (D) CcmAL110S filament bundles (pink arrows) and individual filaments (lime green arrows). (E) Immunoblot detection of CcmA expression (top) in H. pylori lysates using Cag3 as loading control (bottom); representative of four experiments. (F) Scatterplot displaying axis length (x-axis) and side curvature (y-axis) of wild-type (gold), ∆ccmA (gray), ccmAI55A (red), and ccmAL110S (dark red) strains. Data are representative of two biological replicates. Wild-type, n = 346; ∆ccmA, n = 279; ccmAI55A, n = 328; and ccmAL110S, n = 303.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Negatively stained TEM images of purified CcmA. Scale bars = 200 nm. Lower magnification view than in Figure 8 of (A) wild-type CcmA, displaying both lattices (blue arrows) and extended helical bundles (pink arrows) and (B) CcmAL110S, displaying both individual filaments (lime green arrows) and bundles (pink arrows). (C) Smooth histogram of population side curvature (x-axis) of the cells in Figure 8F (one representative of two biological replicates). (D) Coomassie stained SDS-PAGE gel showing purified wild-type CcmA, CcmAI55A, and CcmAL110S.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Lattices formed from purified WT CcmA in 25 mM Tris pH 8. Scale bars = 100 nm. (B) Fourier transform of the region inside each corresponding box in (A) performed using Fiji (Schindelin et al., 2012). After transformation, images were adjusted to enhance visualization (min: 134, gamma: 0.53, max: 172). (C) Average distance of bright spots from the center represents the distance between individual filaments in each lattice. Angle measurements between spots indicate the relative orientation of filaments within lattices. Average of the measurements from the three lattices: distance = 5.5 nm; acute angle = 71.5°; obtuse angle = 106.2°. Images shown are from one representative of three biological replicates.
+
 To begin to assess the importance of higher-order structures and localization for CcmA cell shape functions, we constructed two point mutant variant proteins, located in the predicted hydrophobic core of the protein (I55A and L110S) (Shi et al., 2015). Homologous residues (75 and 130, respectively) were shown to be important for polar localization of the bactofilin BacA in C. crescentus (Vasa et al., 2015). While both proteins could be expressed and purified from E. coli (Figure 8—figure supplement 1D), the recombinant proteins either fail to form any higher order structures under any buffer condition tested (I55A; Figure 8C) or form no lattice structures and many individual filaments in addition to bundles that are straighter, narrower, and shorter than those of wild-type CcmA in vitro (L110S; Figure 8D and Figure 8—figure supplement 1B). When expressed as the sole copy of ccmA in H. pylori, both mutant proteins could be detected in whole cell extracts (Figure 8E). The I55A variant showed lower steady-state protein levels than wild-type, while the L110S variant consistently showed higher steady-state protein levels than wild-type. In both cases, the mutant strains displayed a morphology indistinguishable from a ccmA null strain (Figure 8F and Figure 8—figure supplement 1C), suggesting that formation of higher-order structures by CcmA may be necessary for cell shape-determining functions.
 
-## CcmA localization to positive curvature correlates with cell wall synthesis, CcmA polymerization, and helical cell shape
+### CcmA localization to positive curvature correlates with cell wall synthesis, CcmA polymerization, and helical cell shape
 
 To determine the subcellular localization of CcmA, we performed immunofluorescence of HJH1 cells expressing a 2X-FLAG epitope tag at the native locus under endogenous control as the sole copy of CcmA (Figure 9A,C and D and Figure 9—video 1). As shown previously (Blair et al., 2018), helical morphology is retained upon addition of the 2X-FLAG tag to the wild-type protein. Wild-type CcmA was observed at the cell boundary as puncta and short arcs and was largely absent from the center of the cell, indicating an association with the cell membrane (Figure 9D and Figure 9—video 1). Puncta were in some cases present as lines of dots roughly parallel to the helical (long) axis of the cell, but were also found distributed along the cell surface. Immunofluorescence was also performed on cells expressing wild-type or polymerization defective CcmA (CcmAI55A and CcmAL110S) using antisera raised against H. pylori CcmA (Figure 9B,E–J and Figure 9—video 1). Immunostaining with CcmA preimmune serum showed background signal in the interior of wild-type and mutant cells (Figure 9—figure supplement 1). In contrast to cells expressing the wild-type version of CcmA, the mutant CcmA proteins localized as puncta at the center with minimal signal at the cell boundary (Figure 9G–J).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig9-v2.jpg)
+
+**Figure 9.:** 3D SIM imaging of CcmA-FLAG cells immunostained with M2 anti-FLAG (A, C, D, yellow) or wild-type or CcmA amino acid substitution mutant cells immunostained with anti-CcmA (B, E–J, yellow); cells counterstained with fluorescent WGA (blue). (A) Color merged maximum projection of CcmA-FLAG immunostained with anti-FLAG and counterstained with fluorescent WGA. (B) Color merged field of view of wild-type cells immunostained with anti-CcmA and counterstained with fluorescent WGA. (C) Top-down (left) and 90-degree rotation (right) 3D views of three individual CcmA-FLAG cells. Top: color merge; middle: anti-FLAG; bottom: fluorescent WGA. (D) Color merged z-stack views of the three CcmA-FLAG cells in (C). (left to right = top to bottom of the cell). Numbering indicates matching cells. (E, F) Color merged field of view of I55A or L110S CcmA, respectively, immunostained with anti-CcmA and counterstained with fluorescent WGA. Top-down (left) and 90-degree rotation (right) 3D views of three individual I55A (G) or L110S (I) cells. (H, J) Color merged z-stack views of the three I55A cells in (G) or L110S cells in (I), respectively (Left to right = top to bottom of the cell). Scale bar = 0.5 µm. The representative images are selected from one of three biological replicates.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Wild-type (no-FLAG) cells immunostained with M2 anti-FLAG (yellow) and counterstained with fluorescent WGA (blue). (B) Wild-type, (C) I55A, or (D) L110S CcmA cells immunostained with CcmA preimmune serum (yellow) and counterstained with fluorescent WGA (blue). Scale bar = 0.5 µm. The representative images are selected from one of three biological replicates.
+
 To determine if wild-type CcmA localization corresponds to the peak of higher relative PG synthesis at the major axis area, we performed curvature enrichment analysis of CcmA-2X-FLAG immunofluorescence images of non-dividing cells. CcmA was depleted at the poles (Figure 10—figure supplement 1, gold). With or without the poles, we saw a marked preference for the positive helical axis area (Figure 10 and Figure 10—figure supplement 1, red line and shaded box) that overlapped with the positive curvature enrichment peaks of MurNAc-alk and D-Ala-alk (Figure 10). The wild-type (no FLAG) negative control was 28.9% of the CcmA-FLAG signal (Figure 10—figure supplement 2B). While the negative control showed a small peak at 5 µm−2, the magnitude of the CcmA-FLAG peak was far greater (Figure 10A and Figure 10—figure supplement 1). Biological replicates are shown in Figure 10—figure supplement 2A. We also performed curvature enrichment analysis on cells expressing wild-type, I55A, and L110S CcmA immunostained with anti-CcmA. Wild-type had a similar major axis area peak as CcmA-2X-FLAG (Figure 10—figure supplement 3A, gold), with a lower magnitude due to a lower signal to noise ratio and an enrichment of background (preimmune) staining at negative Gaussian curvature (Figure 10—figure supplement 3A, dotted gray). Preimmune signal was 33.0% of the anti-CcmA signal in wild-type (Figure 10—figure supplement 3B). There was no distinguishable curvature preference for I55A or L110S CcmA compared to preimmune serum (Figure 10—figure supplement 3A, red and dark red vs. dotted light pink and dotted mauve, respectively), indicating that these proteins are unable to localize preferentially to positive Gaussian surface curvature. Preimmune signal was 50.6% and 26.7% of the anti-CcmA signal in I55A and L110S, respectively (Figure 10—figure supplement 3B).
 
+![Figure 10.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig10-v2.jpg)
+
+**Figure 10.:** Overlay of sidewall only surface Gaussian curvature enrichment of relative concentration (y-axis) vs. Gaussian curvature (x-axis) from a population of computational cell surface reconstructions with poles excluded of CcmA-FLAG (gold), no-FLAG control (gray), MreB (pink, from Figure 7F), MurNAc-alk (green, from Figure 6C), and D-Ala-alk (blue, from Figure 6C). The represented data are pooled from three biological replicates. Blue and red vertical lines and shaded regions indicate the average ±1 standard deviation Gaussian curvature at the minor and major helical axis, respectively.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Whole surface (sidewall and poles) Gaussian curvature enrichment of relative signal abundance (y-axis) vs. Gaussian curvature (x-axis) derived from a population of computational cell surface reconstructions of CcmA-FLAG (gold), no-FLAG (gray), MreB (pink, from Figure 7—figure supplement 2), MurNAc-alk (green, from Figure 6B), and D-Ala-alk (blue, from Figure 6B). 90% bootstrap confidence intervals are displayed as a shaded region about each line. The represented data are pooled from three biological replicates. Blue and red vertical lines and shaded regions indicate the average ±1 standard deviation Gaussian curvature at the minor and major helical axis, respectively.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** (A) Sidewall only surface Gaussian curvature enrichment of relative signal abundance (y-axis) vs. Gaussian curvature (x-axis) of the three biological replicates pooled in Figure 10: CcmA-FLAG (golds) and no-FLAG (grays) cells. 90% bootstrap confidence intervals are displayed as a shaded region about each line. (B) Histogram of fluorescence signal per cell divided by the number of pixels in the projected cell area for the populations in (A).
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig10-figsupp3-v2.jpg)
+
+**Figure 10—figure supplement 3.:** (A) Sidewall Gaussian curvature enrichment of relative signal abundance (y-axis) vs. Gaussian curvature (x-axis) for a population of computational cell surface reconstructions with poles excluded of wild-type LSH100 cells immunostained with anti-CcmA (gold) or preimmune serum (dotted gray); CcmA I55A cells immunostained with anti-CcmA (red) or preimmune serum (dotted light pink); or CcmA L110S cells immunostained with anti-CcmA (dark red) or preimmune serum (dotted mauve). 90% bootstrap confidence intervals are displayed as a shaded region about each line. (B) Histogram of fluorescence signal per cell divided by the number of pixels in the projected cell area for the populations in (A). The represented data are pooled from three biological replicates.
+
 To ascertain the impact of deleting ccmA on MreB localization and cell wall synthesis patterning, we performed immunostaining for MreB and 18 min MurNAc-alk and D-Ala-alk pulse labeling on ΔccmA cells (JTH6, amgK murU ΔccmA, Figure 11A and B and Figure 11—figure supplement 1A and B; dark pink, dark green, and dark blue, respectively). In ΔccmA cells, MreB is present as small foci (Figure 11—figure supplement 2 and Figure 11—video 1). New cell wall labeling with MurNAc-alk is present as dispersed sidewall labeling with some subtle circumferential banding, while labeling with D-Ala-alk is present as clear circumferential bands along the length of the sidewall (Figure 11—figure supplement 3 and Figure 11—video 1). MreB curvature preference appears largely similar in both wild-type (HJH1, amgK murU, light pink) and ΔccmA with poles excluded (JTH6, amgK murU ΔccmA, dark pink) (Figure 11A). When poles are included in the analysis, MreB curvature preference differs more between wild-type and ΔccmA, though the general pattern of enrichment at negative Gaussian curvature remains (Figure 11—figure supplement 1A). In contrast, MurNAc-alk and D-Ala-alk patterning change with loss of CcmA; there is greater relative enrichment at low magnitude negative Gaussian curvature in ΔccmA cells (dark green and dark blue) compared to wild-type cells (light green and light blue). Additionally, in ΔccmA cells the enrichment at positive Gaussian curvature is both less pronounced and shifted to lower Gaussian curvature than that of wild-type (Figure 11B and Figure 11—figure supplement 1B). There is a small peak for MreB at approximately 3 µm−2, however interpretation of the MreB peak is complicated by the presence of a peak at the same curvature range for the preimmune signal. For ΔccmA, mock signal was 2.8% of the D-Ala-alk signal, 0.6% of the MurNAc-alk signal, and preimmune signal was 34.6% of anti-MreB signal (Figure 11—figure supplement 1C, dotted and solid dark blue and dotted and solid dark pink, respectively). These data suggest that proper localization of CcmA to the major helical axis may be required for promoting extra cell wall synthesis at the major axis area and patterning helical cell shape.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig11-v2.jpg)
+
+**Figure 11.:** (A, B) Sidewall only Gaussian curvature enrichment of relative concentration (y-axis) vs. Gaussian curvature (x-axis) from a population of computational cell surface reconstructions of HJH1 (amgK murU) and JTH6 (amgK murU ΔccmA) cells immunostained with (A) anti-MreB (HJH1, light pink; JTH6, dark pink) or preimmune serum (HJH1, light gray; JTH6, dark gray) or (B) 18 min MurNAc-alk (HJH1, light green; JTH6, dark green) or D-Ala-alk (HJH1, light blue; JTH6, dark blue) pulse-labeled or mock-labeled (HJH1, light gray; JTH6, dark gray) cells. 90% bootstrap confidence intervals are displayed as a shaded region about each line. The represented data are pooled from three biological replicates. (C) Model of the contribution of synthesis patterning to rod and helical shape maintenance. Dots indicate different densities of cell wall synthesis that can decrease or propagate non-zero Gaussian curvature. Colored shading indicates local regions of positive (red) and negative (blue) Gaussian curvature.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** (A, B) Whole surface (sidewall and poles) Gaussian curvature enrichment of relative concentration (y-axis) vs. Gaussian curvature (x-axis) from a population of computational cell surface reconstructions of wild-type (WT, HJH1, amgKmurU) and ΔccmA (ΔccmA, JTH6, ΔccmA amgKmurU) of cells immunostained with (A) anti-MreB (wild-type, light pink; ΔccmA, dark pink) or preimmune serum (WT, light gray; ΔccmA, dark gray) or (B) 18 min MurNAc-alk (HJH1, light green; JTH6, dark green) or D-Ala-alk (HJH1, light blue; JTH6, dark blue) pulse-labeled or mock-labeled (HJH1, light gray; JTH6, dark gray) cells. 90% bootstrap confidence intervals are displayed as a shaded region about each line. (C) Histogram of fluorescence signal per cell divided by the number of pixels in the projected cell area for the JTH6 populations in (A) (18 min D-Ala-alk and mock labeling, solid and dotted dark blue, respectively) and (B) (anti-MreB and preimmune immunostaining, solid and dotted dark pink, respectively). The represented data are pooled from three biological replicates.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig11-figsupp2-v2.jpg)
+
+**Figure 11—figure supplement 2.:** 3D SIM imaging of ΔccmA cells immunostained with anti-MreB (A, C, D, yellow) or preimmune serum (B) and counterstained with fluorescent WGA (blue). Color merged maximum projection of anti-MreB (A) or preimmune (B). (C) Top-down (left) and 90-degree rotation (right) 3D views of three individual cells. Top: color merge; middle: anti-MreB; bottom: fluorescent WGA. (D) Color merged z-stack views of the three cells in (C), (left to right = top to bottom of the cell). Numbering indicates matching cells. Scale bar = 0.5 µm. The representative images are selected from one of three biological replicates.
+
+![Figure 11—figure supplement 3.](https://cdn.elifesciences.org/articles/52482/elife-52482-fig11-figsupp3-v2.jpg)
+
+**Figure 11—figure supplement 3.:** 3D SIM imaging of ΔccmA cells labeled with an 18 min pulse of MurNAC-alk (A, C, D, yellow) or D-Ala-alk (E, G, H, yellow) or mock labeled (B, F) and counterstained with fluorescent WGA (blue). Color merged maximum projection of MurNAc-alk (A), D-Ala-alk (E), or mock (B, F) labeling with fluorescent WGA counterstain. (C, G) Top-down (left) and 90-degree rotation (right) 3D views of three individual cells, including a dividing cell (C, G), right). Top: color merge; middle: 18 min MurNAc-alk (C) or 18 min D-Ala-alk (G); bottom: fluorescent WGA. (D, H) Color merged z-stack views of the three cells in (C, G), respectively (left to right = top to bottom of the cell). Numbering indicates matching cells. Scale bar = 0.5 µm. The representative images are selected from one of three biological replicates.
 
 ## Discussion
 
@@ -133,33 +420,467 @@ We employed sophisticated computational tools to demonstrate that H. pylori must
 
 ## Materials and methods
 
-## Cultures and growth
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal ANTI-FLAG M2 antibody produced in mouse</td>
+      <td>Sigma</td>
+      <td>Cat# F1804, RRID:AB_262044</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11029, RRID:AB_2534088</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A-11008; RRID: AB_143165</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit αCcmA</td>
+      <td>(Blair et al., 2018)</td>
+      <td></td>
+      <td>IF (1:200); WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit αMreB (H. pylori)</td>
+      <td>(Nakano et al., 2012)</td>
+      <td></td>
+      <td>IF (1:500); WB (1:25,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Click-iT Cell Reaction Buffer Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# C10269</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 555 Azide, Triethylammonium Salt</td>
+      <td>Invitrogen</td>
+      <td>Cat# A20012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Ala-alk ((R)−2-Amino-4-pentynoic acid)</td>
+      <td>Boaopharma</td>
+      <td>Cat# B60090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MurNAc-alk</td>
+      <td>(Liang et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MurNAc</td>
+      <td>Sigma</td>
+      <td>Cat# A3007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wheat Germ Agglutinin, Alexa Fluor 488 Conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat# W11261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wheat Germ Agglutinin, Alexa Fluor 555 Conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat# W32464</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Diamond Antifade Mountant</td>
+      <td>Invitrogen</td>
+      <td>P36961</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cultures and growth
 
 H. pylori (LSH100 and derivatives, Table 2) was grown on horse blood (HB) agar plates (Humbert and Salama, 2008) incubated at 37°C under micro-aerobic conditions in either 90% air, 10% CO2 (dual-gas) or in 10% CO2, 10% O2, 80% N2 (tri-gas). For resistance marker selection, HB agar plates were supplemented with 15 µg/ml chloramphenicol, 25 µg/ml kanamycin, or 30 mg/ml sucrose, as appropriate. Liquid H. pylori cultures were grown shaking in Brucella broth (BD Biosciences, Sparks, MD) supplemented with 10% heat-inactivated fetal bovine serum (Gemini Bio-Products, West Sacramento, CA) (BB10) at 37°C in tri-gas conditions. For plasmid selection and maintenance, E. coli cultures were grown in lysogeny broth (LB) or agar supplemented with 100 µg/ml ampicillin or as described at 37°C.
 
-## AmgK MurU strain constuction
+**Table 2.**
+ Strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype/description</th>
+      <th>Construction</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LSH100</td>
+      <td>Wild-type: mouse-adapted G27 derivative</td>
+      <td>-</td>
+      <td>Lowenthal et al., 2009</td>
+    </tr>
+    <tr>
+      <td>LSH141 (Δcsd2)</td>
+      <td>LSH100 csd2::cat</td>
+      <td>-</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>TSH17 (Δcsd6)</td>
+      <td>LSH100 csd6::cat</td>
+      <td>-</td>
+      <td>Sycuro et al., 2013</td>
+    </tr>
+    <tr>
+      <td>LSH108</td>
+      <td>LSH100 rdxA::aphA3sacB</td>
+      <td>-</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>HMJ_Ec_pLC292-KU</td>
+      <td>E. coli TOP10 pLC292-KU</td>
+      <td>Transformation of TOP10 with pLC292-KU</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>HJH1</td>
+      <td>LSH100 rdxA::amgKmurU</td>
+      <td>Integration of pLC292-KU into LSH108</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM4</td>
+      <td>LSH100 mcGee:mreB</td>
+      <td>Integration of pIM04into LSH100</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>JTH3</td>
+      <td>LSH100 ccmA:2X-FLAG:aphA3</td>
+      <td>-</td>
+      <td>Blair et al., 2018</td>
+    </tr>
+    <tr>
+      <td>JTH5</td>
+      <td>LSH100 ccmA:2X-FLAG:aphA3 rdxA::amgKmurU</td>
+      <td>Natural transformation of HJH1 with JTH3 genomic DNA</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>KGH10</td>
+      <td>NSH57 ccmA::catsacB</td>
+      <td>-</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>LSH117</td>
+      <td>LSH100 ccmA::catsacB</td>
+      <td>Natural transformation of LSH100 with KGH10 genomic DNA</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SSH1</td>
+      <td>LSH100 ccmAI55A</td>
+      <td>Natural transformation with ccmA I55A PCR product</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SSH2</td>
+      <td>LSH100 ccmAL110S</td>
+      <td>Natural transformation with ccmA L110S PCR product</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>LSH142 (ΔccmA)</td>
+      <td>LSH100 ccmA::cat</td>
+      <td>-</td>
+      <td>Sycuro et al., 2010</td>
+    </tr>
+    <tr>
+      <td>JTH6</td>
+      <td>LSH100 rdxA::amgKmurU ccmA::cat</td>
+      <td>Natural transformation of HJH1 with LSH142 genomic DNA</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### AmgK MurU strain constuction
 
 AmgK and MurU-encoding sequences were PCR amplified from expression plasmid pBBR-KU (Liang et al., 2017) using primers AmgK_BamHI_F and MurU_HindIII_R (Table 3). The amgK murU amplification product and plasmid pLC292 (Terry et al., 2005) were digested with BamHI-HF and HindIII-HF (New England BioLabs, Ipswich, MA) at 37°C for 1 hr and cleaned up with the QIAquick PCR Purification Kit (Qiagen, Valencia, CA) according to manufacturer instructions. Insert and vector were then ligated with T4 ligase (New England BioLabs) for 10 min at room temperature, inactivated at 65°C for 20 min, and stored at −20°C. 1 µl of the ligation mixture was transformed into OneShot TOP10 competent cells (Invitrogen, Carlsbad, CA) according to manufacturer instructions. Cells were plated on LB-ampicillin plates and incubated overnight at 37°C. Colonies were screened by colony PCR using primers AmgK_BamHI_F and MurU_HindIII_R. Plasmid pLC292-KU was purified from the resulting clone, HMJ_Ec_pLC292-KU, using the QIAprep Spin Miniprep Kit (Qiagen) according to manufacturer instructions. Recipient H. pylori containing a aphA3sacB cassette at the rdxA locus (LSH108 Sycuro et al., 2010) were transformed with the purified plasmid. Transformants were selected on sucrose plates and kanamycin sensitivity was verified. Genomic DNA was purified using the Wizard Genomic DNA Purification Kit (Promega, Fitchburg, WI) and insertion of amgK murU at rdxA was verified by PCR amplifying and sequencing the locus using primers RdxA_F1P1 and RdxA_dnstm_RP2. The resulting confirmed strain was named HJH1. JTH6, ΔccmA with amgK murU was generated by natural transformation of HJH1 with genomic DNA from LSH142 and selection on chloramphenicol plates. Deletion of ccmA was confirmed by PCR.
 
-## mreB merodiploid strain construction and quantitative transformation assays
+**Table 3.**
+ Primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence (5’ to 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AmgK_BamHI_F</td>
+      <td>GATAGGATCCTGACCCGCTTGACGGCTA</td>
+    </tr>
+    <tr>
+      <td>MurU_HindIII_R</td>
+      <td>GTATAAGCTTTCAGGCGCGCTCGC</td>
+    </tr>
+    <tr>
+      <td>RdxA_F1P1</td>
+      <td>CAATTGCGTTATCCCAGC</td>
+    </tr>
+    <tr>
+      <td>RdxA_dnstm_RP2</td>
+      <td>AAGGTCGCTTGCTCAATC</td>
+    </tr>
+    <tr>
+      <td>O#9 ProMreB (KpnI_5’)</td>
+      <td>TATTGGTACCCGCTTGATGTATTCATCAAAG</td>
+    </tr>
+    <tr>
+      <td>O#10 ProMreB_R</td>
+      <td>GATTAATTTGCTAAAAATCATAAAATAAACTCCTTGTTTTG</td>
+    </tr>
+    <tr>
+      <td>O#11 ProMreB_F</td>
+      <td>CAAAACAAGGAGTTTATTTTATGATTTTTAGCAAATTAATC</td>
+    </tr>
+    <tr>
+      <td>O#12 ProMreB (XhoI_3’)</td>
+      <td>TATTCTCGAGTTATTCACTAAAACCCACAC</td>
+    </tr>
+    <tr>
+      <td>O#36 pMcGee-Insert-F</td>
+      <td>CTGCCTCCTCATCCTCTTCATCCTC</td>
+    </tr>
+    <tr>
+      <td>O#45 MreBC-seq-F2</td>
+      <td>GCACCTATTTTGGGGTTTGAAACC</td>
+    </tr>
+    <tr>
+      <td>O#47 MreB-seq-F2</td>
+      <td>CATTGAGCGCTGGTTTTAAGGCGGTC</td>
+    </tr>
+    <tr>
+      <td>O#28 MreBseq-F3</td>
+      <td>CGATCGTGTTAGTCAAAGGGCAGGGC</td>
+    </tr>
+    <tr>
+      <td>O#37 pMcGee-Insert-R</td>
+      <td>GGTGTACAAACATTTAAAGGTAGAG</td>
+    </tr>
+    <tr>
+      <td>O#68 McGee-1F</td>
+      <td>CATTTCCCCGAAAAGTGCCACGAGCTCGAAGGAGTATTGATGAAAAAGG</td>
+    </tr>
+    <tr>
+      <td>O#69 McGee-1R</td>
+      <td>CTAGAGCGGCCCCACCGCGGCCATCATTAACATCATTATCG</td>
+    </tr>
+    <tr>
+      <td>O#70 MCS-kan-F</td>
+      <td>CTCGAGGGGGGGCCCGGTACCCACAGAATTACTCTATGAAGC</td>
+    </tr>
+    <tr>
+      <td>O#71 MCS-kan-R</td>
+      <td>CCATTCTAGGCACTTATCCCCTAAAACAATTCATCCAGTAA</td>
+    </tr>
+    <tr>
+      <td>O#72 McGee-2F</td>
+      <td>TTACTGGATGAATTGTTTTAGGGGATAAGTGCCTAGAATGG</td>
+    </tr>
+    <tr>
+      <td>O#73 McGee-2R</td>
+      <td>CGGATATTATCGTGAGATCGCTGCAGACTGGGGGGAAACTCATGGG</td>
+    </tr>
+    <tr>
+      <td>O#74 McGee-R6K-F</td>
+      <td>CCCATGAGTTTCCCCCCAGTCTGCAGCGATCTCACGATAATATCCG</td>
+    </tr>
+    <tr>
+      <td>O#75 McGee-R6K-R</td>
+      <td>GTAACTGTCAGACCAAGTTTACTGCGGCCGCGCAAGATCCGGCCACGATGCG</td>
+    </tr>
+    <tr>
+      <td>O#76 R6K-amp-F</td>
+      <td>CGCATCGTGGCCGGATCTTGCGCGGCCGCAGTAAACTTGGTCTGACAGTTAC</td>
+    </tr>
+    <tr>
+      <td>O#77 R6K-amp-R</td>
+      <td>CCTTTTTCATCAATACTCCTTCGAGCTCGTGGCACTTTTCGGGGAAATG</td>
+    </tr>
+    <tr>
+      <td>O#78 MCS fragment</td>
+      <td>CCGCGGTGGGGCCGCTCTAGAACTAGTGGATCCCCCGGGCTGCGGAATTCGCTTATCG</td>
+    </tr>
+    <tr>
+      <td>O#79 McGee-MCS-F</td>
+      <td>CGATAATGATGTTAATGATGGCCGCGGTGGGGCCGCTCTAG</td>
+    </tr>
+    <tr>
+      <td>O#80 McGee-MCS-R</td>
+      <td>GCTTCATAGAGTAATTCTGTGGGTACCGGGCCCCCCCTCGAG</td>
+    </tr>
+    <tr>
+      <td>Csd1F</td>
+      <td>GAGTCGTTACATTAATGTGCATATCT</td>
+    </tr>
+    <tr>
+      <td>G1480_DnStrmP2</td>
+      <td>AAGGGTGCAATAACGCGCTAA</td>
+    </tr>
+    <tr>
+      <td>MreB_start_F</td>
+      <td>ATGATTTTTAGCAAATTAATCGG</td>
+    </tr>
+    <tr>
+      <td>MreB_cat_up_R</td>
+      <td>CACTTTTCAATCTATATCCGTGCCTCCGCCAATATC</td>
+    </tr>
+    <tr>
+      <td>C1</td>
+      <td>GATATAGATTGAAAAGTGGAT</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>TTATCAGTGCGACAAACTGGG</td>
+    </tr>
+    <tr>
+      <td>Cat_mreB_dn_F</td>
+      <td>AGTTTGTCGCACTGATAAACTGAAATTGGCG</td>
+    </tr>
+    <tr>
+      <td>MreB_end_R</td>
+      <td>TTATTCACTAAAACCCACACGGCTGA</td>
+    </tr>
+    <tr>
+      <td>FabZ_up_F</td>
+      <td>GCTATCCCATGCTATTGATAGAC</td>
+    </tr>
+    <tr>
+      <td>Cat_mid_R</td>
+      <td>GTCGATTGATGATCGTTGTAACTCC</td>
+    </tr>
+    <tr>
+      <td>MreB_mid_dn_F</td>
+      <td>GATCAAAGCATCGTGGAATACATCC</td>
+    </tr>
+    <tr>
+      <td>Supp2_junc1_R_mid</td>
+      <td>AATTTGCTAAAAATCACTAA</td>
+    </tr>
+    <tr>
+      <td>MreB_up</td>
+      <td>AATACCAGCAACTTTTCAAAA</td>
+    </tr>
+    <tr>
+      <td>Supp1_Junction1_R</td>
+      <td>ATTTGCTAAAAACACACGGC</td>
+    </tr>
+    <tr>
+      <td>Catout</td>
+      <td>CCTCCGTAAATTCCGATTTGT</td>
+    </tr>
+    <tr>
+      <td>McGee_187</td>
+      <td>GCGAGTATTACCACAAGTTTTC</td>
+    </tr>
+    <tr>
+      <td>CcmA SDM mi R</td>
+      <td>AGACTAGATTGGATCATTCCCTATTTATTTTCAATTTTCT</td>
+    </tr>
+    <tr>
+      <td>CcmA SDM mi F</td>
+      <td>ATAAAGAAAGGAGCATCAGATGGCAATCTTTGATAACAAT</td>
+    </tr>
+    <tr>
+      <td>CcmA SDM up R</td>
+      <td>ATTGTTATCAAAGATTGCCATCTGATGCTCCTTTCTTTAT</td>
+    </tr>
+    <tr>
+      <td>CcmA SDM dn F</td>
+      <td>AGAAAATTGAAAATAAATAGGGAATGATCCAATCTAGTCT</td>
+    </tr>
+    <tr>
+      <td>CcmA SDM dn R</td>
+      <td>GCTCATTTGAGTGGTGGGAT</td>
+    </tr>
+    <tr>
+      <td>SDM 155A F</td>
+      <td>ATTCTAAAAGCACGGTGGTGgcCGGACAAACCGGCTCGGTAG</td>
+    </tr>
+    <tr>
+      <td>SDM 155A R</td>
+      <td>CTACCGAGCCGGTTTGTCCGgcCACCACCGTGCTTTTAGAAT</td>
+    </tr>
+    <tr>
+      <td>SDM L110S F</td>
+      <td>TGGTGGAAAGGAAGGGGATTtcGATTGGGGAAACTCGCCCTA</td>
+    </tr>
+    <tr>
+      <td>SDM L110S R</td>
+      <td>TAGGGCGAGTTTCCCCAATCgaAATCCCCTTCCTTTCCACCA</td>
+    </tr>
+  </tbody>
+</table>
+
+### mreB merodiploid strain construction and quantitative transformation assays
 
 To generate the mreB merodiploid strain IM4, the promoter of the operon containing mreB and a 5’ KpnI site was amplified from LSH100 genomic DNA using primers O#9 ProMreB (KpnI_5') and O#10 ProMreB_R. The mreB coding sequence with a 3’ XhoI site was PCR amplified using primers O#11 ProMreB_F and O#12 ProMreB (Xhol_3'). These products were joined using PCR SOEing (Horton, 1995). A modified Bluescript SK vector, pDCY40, containing the RK6 origin and aphA3 flanked by two 550 bp segments of DNA from a previously characterized neutral locus (McGee locus) located between HPG27_186 and HPG27_187 (Langford et al., 2006). pDCY40 was constructed using isothermal assembly (Gibson et al., 2009) of six pieces amplified using primers O#68 McGee-1F, O#69 McGee-1, O#70 MCS-kan-F, O#71 MCS-kan-R, O#72 McGee-2, O#73 McGee-2R, O#74 McGee-R6K-F, O#75 McGee-R6K-R, O#76 R6K-amp-F, O#77 R6K-amp-R, O#78 MCS fragment, O#79 McGee-MCS-F, and O#80 McGee-MCS-R. The PCR SOEing product and pDCY40 were digested with KpnI and XhoI and ligated to generate vector pIM04DY containing the promotor-mreB fusion with flanking McGee locus sequences. pIM04DY was transformed into Chung competent DH5αλpir cells and selected on LB plates with 50 µg/ml ampicillin and 0.2% glucose. The pIM04DY insert was sequence confirmed using primers O#36 pMcGee-Insert-F, O#45 MreBC-seq-F2, O#47 MreB-seq-F2, O#28 MreBseq-F3, and O#37 pMcGee-Insert-R. Linear DNA was PCR amplified from pIM04DY using primers O#73 McGee-2R and O#68 McGee-1F. LSH100 was transformed with this PCR product and kanamycin resistant clones were verified by Sanger sequencing. IM4 was generated by back-crossing LSH100 with genomic DNA from one of these verified clones.
 
 ccmA::CAT linear DNA was PCR amplified from LSH142 (ΔccmA) genomic DNA (Sycuro et al., 2010) using primers csd1F and G1480_DnStrmP2. mreB::CAT linear DNA was generated using previously published methods (Sycuro et al., 2010). Briefly, PCR products were amplified from LSH100 genomic DNA using primers MreB_start_F and MreB_cat_up_R for the upstream fragment and Cat_mreB_dn_F and MreB_end_R for the downstream fragment. The CAT cassette was amplified from LSH123 (Δcsd5) genomic DNA (Sycuro et al., 2012) using primers C1 and C2. These products were annealed using PCR SOEing (Horton, 1995). For transformations, LSH100 and IM4 were grown up to mid-log phase in liquid. 4.5 × 105 cells in liquid were spotted onto plates, allowed to dry, and were incubated three hours prior to transformation. Each transformation was performed in triplicate. 300 ng of either mreB::CAT or ccmA::CAT linear DNA was mixed with each cell patch. Transformations were incubated overnight and then each cell patch was resuspended in BB10, serially diluted, and spread on non-selective plates for colony counts and chloramphenicol plates for selection of transformants. Colonies were counted after six days. Plates without colonies after six days were incubated for three weeks to allow any slowly growing colonies to arise. Genomic DNA was purified from the two transformants of LSH100 (clone 1 and 2) with mreB::CAT. Sanger sequencing was performed on recombinant clone 1 and 2. For sequencing clone1, sequencing template was PCR amplified from genomic DNA using primers FabZ_up_F and Cat_mid_R and sequenced using primers Supp1_Junction1_R and MreB_up. Additional sequencing template for clone 1 was PCR amplified using primers MreB_mid_dn_F and Cat_mid_R and sequenced using primer MreB_mid_dn_F. For sequencing clone 2, template was PCR amplified from genomic DNA using primers Supp2_junc1_R_mid and MreB_up and sequenced using primers Supp2_junc1_R_mid and MreB_up. Additional sequencing template was PCR amplified using primers MreB_mid_dn_F and Cat_mid_R and sequenced using primers MreB_mid_dn_F and Cat_mid_R. Genomic DNA was purified from eight transformants per transformation of IM4 with mreB::CAT. PCR with primers Catout, MreB_up, and McGee_187 was used to determine which copy of mreB in each clone was disrupted.
 
-## ccmA point mutation strain construction
+### ccmA point mutation strain construction
 
 Strains containing CcmA amino acid substitution mutations were created based on previously published methods (Sycuro et al., 2010). Briefly, PCR products were amplified from pKB69H (I55A) or pKB72D (L110S) using primers CcmA SDM mi F and CcmA SDM mi R (Table 3). Those products were annealed using PCR SOEing (Horton, 1995) to fragments amplified from WT H. pylori flanking the CcmA locus using primers Csd1F and CcmA SDM up R (upstream fragment, 810 bp flanking) and CcmA SDM dn F and CcmA SDM dn R (downstream fragment, 540 bp flanking). PCR product was transformed into a catsacB ccmA knockout strain LSH117 (LSH100 naturally transformed with KGH10 [Sycuro et al., 2010] genomic DNA) and colonies resistant to sucrose and susceptible to chloramphenicol were validated using PCR and Sanger sequencing. Single clones of colonies containing correct mutations were used for all experiments.
 
-## Fosfomycin rescue with MurNAc
+### Fosfomycin rescue with MurNAc
 
 Overnight liquid cultures of HJH1 and parent strain LSH108 grown to an optical density at 600 nm (OD600) of 0.3–0.5 OD600/ml were diluted in BB10, BB10 containing fosfomycin, or BB10 containing fosfomycin and MurNAc to yield cultures at 0.002 OD600/ml, with 50 µg/ml fosfomycin, or 50 µg/ml fosfomycin and 4 mg/ml MurNAc, as appropriate. Cultures were grown shaking in 5 ml polystyrene tubes. Samples were taken initially and after 12 hr. 10 µl of culture was diluted into 30 µl of BB10 and a 10-fold dilution series was performed from this initial dilution. 4 µl of each dilution for each experimental condition was spotted on plates and plates were incubated 5–6 days. One biological replicate is defined as beginning with a new overnight liquid culture.
 
-## Synthesis and characterization of MurNAc-alk
+### Synthesis and characterization of MurNAc-alk
 
 MurNAc-alk was synthesized and characterized as previously described (Liang et al., 2017) and underwent multiple rounds of purification using our previously-described autopur preparatory HPLC purification strategy until no more than 5% N-hydroxysuccinimide (NHS) remained in the product as judged by H NMR, chemical shift 2.6 ppm. The final MurNAc-alk product was then solubilized in DMSO or water (200 mg/ml) for subsequent bacterial PG labeling experiments.
 
-## PG preps and analysis for D-Ala-alk and MurNAc-alk
+### PG preps and analysis for D-Ala-alk and MurNAc-alk
 
 330 ml of liquid cultures were grown for six doublings to 1 OD600/ml with 100 µg/ml D-alanine-alk ((R)−2-Amino-4-pentynoic acid, Boaopharma, Woburn, MA), 62.5 µg/ml MurNAc-alk, or no additions. Cells were harvested and sacculi were purified as previously described (Blair et al., 2018). Briefly, cells were harvested by centrifugation at 4°C, resuspended in PBS, and added dropwise to boiling 8% SDS. SDS was then removed by ultracentrifugation and washing. Then sacculi were resuspended in 900 µl of 10 mM Tris HCl with 10 mM NaCl pH 7.0 and 100 µl of 3.2 M imidazole pH 7.0 and incubated with 15 µl α-amylase (10 mg/ml) (Sigma, St. Louis, MA) for 2 hr at 37°C and 20 µl Pronase E (10 mg/ml) (Fisher Scientific, Pittsburgh, PA) for 1 hr at 60°C. 500 µl of 8% SDS was added and samples were boiled for 15 min. SDS was again removed by ultracentrifugation and washes with water. The purified PG was suspended in 20 mM sodium phosphate pH 4.8 (D-Ala-alk samples) or 20 mM ammonium formate pH 4.8 (MurNAc-alk samples) and incubated overnight with 10 μg of cellosyl (kind gift from Hoechst, Frankfurt am Main, Germany) at 37°C on a Thermomixer at 900 rpm. Following this incubation, the samples were placed in a dry heat block at 100°C for 10 min and centrifuged at room temperature for 15 min at 16,000 × g. The supernatant was retrieved. D-Ala-alk labeled digests were reduced with sodium borohydride (Merck KGaA, Darmstadt, Germany) and separated by RP-HPLC, peaks collected and analyzed using offline electrospray mass spectrometry as previously described (Bui et al., 2009).
 
@@ -167,19 +888,19 @@ MurNAc-alk labeled digests (non-reduced) were analyzed via injection onto a capi
 
 MS data was collected in positive ion mode, 50–2000 m/z, with capillary voltage and temperature settings of 3200 V and 150°C respectively, together with a drying gas flow of 5 L/min and nebulizer pressure of 0.6 Bar. The resulting MS spectral data was analyzed using Compass DataAnalysis software (Bruker).
 
-## 18 min pulses with D-Ala-alk and MurNAc-alk
+### 18 min pulses with D-Ala-alk and MurNAc-alk
 
 400 µl of HJH1 overnight liquid cultures in BB10 grown to 0.3–0.5 OD600/ml was added to a 5 ml polystyrene round bottom tube and equilibrated in the 37°C Trigas incubator for 15 min before addition of the metabolic probe. 8 µl of a 200 mg/ml MurNAc-alk stock in DMSO or water (final concentration = 4 mg/ml) or 4 µl of a 100 mM stock of D-Ala-alk ((R)−2-Amino-4-pentynoic acid, Boaopharma) in water was added to the culture. The culture was incubated for 18 min and growth was arrested by adding 4 µl of 10% sodium azide and placing cultures on ice for 5 min. Cells were transferred to a 1.5 ml microcentrifuge tube, pelleted in a microcentrifuge for 5 min at 5000 rpm, and resuspended in 1 ml Brucella broth. Paraformaldehyde was added to a final concentration of 4%. Cells were fixed at room temperature for 45 min, pelleted, and resuspended in 70% ethanol. Cells were permeabilized on ice for 30 min, pelleted, and resuspended in PBS. Cell suspension density was normalized between samples using a hemocytometer and cells were spun onto clean glass coverslips at 500 rpm for 5 min in a Hettich Rotana 460R swinging bucket centrifuge. Click chemistry was performed on coverslips using the Click-iT Cell Reaction Buffer Kit (Invitrogen) according to manufacturer instructions (without BSA washes) with 8 µg/ml Alexa Fluor 555 Azide (Invitrogen). Coverslips were washed two times with 0.05% Tween-20 in PBS (PBST) for 10 min each and were then stained with 30 µg/ml WGA-Alexa Fluor 488 (Invitrogen) in PBS for 30 min at room temperature. Coverslips were washed an additional four times in PBST and mounted on slides with Prolong Diamond antifade (Invitrogen). Slides were cured for a week before imaging. One biological replicate is defined as beginning with a new overnight liquid culture.
 
-## Immunofluorescence (CcmA-FLAG, CcmA, MreB)
+### Immunofluorescence (CcmA-FLAG, CcmA, MreB)
 
 Overnight liquid cultures in BB10 grown to 0.3–0.5 OD600/ml were fixed at room temperature for 45 min with 4% paraformaldehyde. Cells were pelleted in a TOMY TX-160 micro centrifuge for 5 min at 5000 rpm and resuspended in 0.1% Triton X-100 in PBS for one hour at room temperature to permeabilize the cells. Cells were then pelleted in an Eppendorf microfuge at 2400 rpm for 10 min and resuspended in PBS. Cell suspension density was normalized using a hemocytometer and cells were spun onto clean glass coverslips at 500 rpm for 5 min in a Hettich Rotana 460R swinging bucket centrifuge. Coverslips were stained with 30 µg/ml WGA-Alexa Fluor 555 (Invitrogen) in PBS for 30 min at room temperature, washed four times with 0.05% Tween-20 in PBS (PBST) for 10 min each, blocked for two hours with 5% goat serum (Sigma) in PBST at room temperature, and then incubated overnight at 4°C in primary antibody in 5% goat serum PBST. Mouse anti-FLAG M2 (Sigma, RRID:AB_262044), rabbit anti-CcmA (Blair et al., 2018), and CcmA preimmune serum were used at a 1:200 dilution. Rabbit anti-MreB and MreB preimmune serum (a gift from Dr. Hong Wu and Dr. Kouichi Sano Nakano et al., 2012) were used at a 1:500 dilution. After primary antibody incubation, coverslips were washed four times in PBST and incubated with 1:200 Alexa Fluor 488 anti-mouse (A-11029, Invitrogen, RRID:AB_2534088) or 1:200 Alexa Fluor 488 anti-rabbit (A-11008, Invitrogen, RRID:AB_143165) in PBST for 45 min at room temperature. After secondary antibody incubation, coverslips were washed four times in PBST and mounted on slides with Prolong Diamond antifade (Invitrogen). Slides were cured for a week before imaging. For CcmA-FLAG immunofluorescence, strain JTH5 was used. JTH5 was generated by natural transformation of HJH1 with genomic DNA from JTH3 (Blair et al., 2018) and selection on kanamycin blood plates. HJH1 was used as the corresponding no-FLAG control, as well as for the anti-MreB and MreB preimmune immunofluorescence. Wild-type LSH100 (Lowenthal et al., 2009) was used for anti-CcmA and CcmA preimmune immunofluorescence. One biological replicate is defined as beginning with a new overnight liquid culture.
 
-## 3D structured illumination imaging
+### 3D structured illumination imaging
 
 Slides for cell surface curvature profiles for LSH100, Δcsd2, and Δcsd6 were imaged on a DeltaVision OMX V4 BLAZE 3D microscope (GE Healthcare Life Sciences, Chicago, IL) equipped with Photometrics Evolve 512 emCCD cameras and an Olympus UPlanApo 100x/1.42 oil objective with oil matched for the sample refractive index. 512 × 512 pixel images were collected with three msec exposure and 170 EMCCD gain using a 100 mW 488 nm laser with 10% transmission. Z-plane images were acquired with 125 nm spacing. The remaining SIM microscopy was performed on a DeltaVision OMX-SR equipped with PCO scientific CMOS cameras, 488 nm and 568 nm lasers, and an Olympus 60x/1.42 U PLAN APO oil objective with oil matched for the sample refractive index. 512 × 512 pixel Z-plane images with 125 nm spacing and 3 µm thickness were collected. For HJH1 D-Ala-alk samples, images were collected with 5% 488 and 15% 568 laser power for 20 msec and 100 msec exposures, respectively. For JTH6 D-Ala-alk samples, images were collected with 5% 488 and 30% 568 laser power for 20 msec and 100 msec exposures, respectively. For MurNAc-alk samples, images were collected with 10% 488 and 15% or 2% 568 laser power for 2 msec and 80 msec exposures, respectively. For anti-FLAG immunostained samples, images were collected with 10% 488 and 10% 568 laser power and 40 msec and 25 msec exposure, respectively. For HJH anti-MreB immunostained samples, images were collected with 10% 488 and 10% 568 laser power and 70 msec and 25 msec exposure, respectively. For JTH6 α-MreB immunostained samples, images were collected with 20% 488 and 20% 568 laser power, respectively, and 25 msec exposure. For anti-CcmA immunostained samples, images were collected with 15% 488 and 15% 568 laser power and 30 msec and 40 msec exposure, respectively. Images were processed using included Softworx software. Figures were generated by opening files in Fiji (Schindelin et al., 2012), adjusting brightness and contrast, and assembling in Adobe Photoshop. Intensity scaling of maximum projection and Z-slice images are equal for all samples within a set (D-Ala-alk and mock; MurNAc-alk and mock; anti-FLAG M2; anti-MreB and preimmune serum; and anti-CcmA and preimmune serum), with the exception of the I55A CcmA anti-CcmA and preimmune images, which were brightened in comparison to other anti-CcmA and preimmune images to compensate for the reduced expression of I55A CcmA. Intensity scaling is equal for I55A CcmA anti-CcmA and preimmune images.
 
-## 3D reconstructions and curvature enrichment
+### 3D reconstructions and curvature enrichment
 
 3D cell surfaces were generated from the 3D-SIM OMX software reconstructions using existing software (Bartlett et al., 2017; Bratton et al., 2018) with parameters optimized for the difference in imaging modality and file formats. This method minimizes the difference between the observed image and a forward convolution model of the true intensity distribution and the microscope’s transfer function. While the images generated by 3D-SIM are not precisely equal to the convolution of the true intensity distribution, we consider the observed images as if they had been generated with an effective blurring function that we parameterize as a 3D Gaussian blur. For each individual cell, the reconstruction algorithm returns the 3D shape of the cell as a collection of vertex positions {Vi} and a collection of faces defining which vertices are connected to each other. These faces and positions allow us to calculate geometric properties including the volume, surface area, local principal curvatures, etc. (Bratton et al., 2018; Rusinkiewicz, 2004). The Gaussian curvature at any point on the surface is the product of the principal curvatures and is therefore independent of the sign convention chosen for the principal curvatures. Following reconstruction, each cell surface undergoes a visual inspection quality control step. To estimate the diameter of each cell, we use the distance from each surface point to its nearest centerline point as a proxy for the local radius. The cell diameter is then the weighted average of twice the local radius, weighted by the surface area represented by each vertex.
 
@@ -189,7 +910,7 @@ We approximated the total fluorescent signal from each cell including the contri
 
 The MATLAB scripts used to reconstruct cell surfaces and perform the geometric enrichment analyses are publicly available under a BSD 3-clause license at https://github.com/PrincetonUniversity/shae-cellshape-public and archived at https://doi.org/10.5281/zenodo.3627045 and http://arks.princeton.edu/ark:/88435/dsp01h415pd457.
 
-## Determining helical fits of 3D centerlines
+### Determining helical fits of 3D centerlines
 
 To examine the eight helical parameters of each cell's centerline, we adapted the helical fitting algorithm from Nievergelt (1997). The first step in the routine is to estimate a right-cylindrical surface on which all the data lie. This is defined by four parameters, three of which define a vector parallel to the helical axis (Xa, Ya, Za) and the fourth is the cylinder diameter (D). The subsequent steps determine the remaining four parameters that define a point on the helix (Xo, Yo, Zo) and the helical pitch (P). The algorithm takes advantage of the speed of singular value decomposition (SVD) by framing the best fit as a linear algebra problem. The modifications that we made to the algorithm were in a preconditioning step as well as steps 2 and 3. The center of mass of the data was subtracted off from all the observations and then added back into X0, Y0, and Z0. For our real cells the two smallest singular values in step 2.3 are sometimes of similar magnitude and are both checked to see which right-singular vector is more consistent with a cylinder. The use of SVD instead of eigenvalue decomposition does not retain the right-handed convention of space forcing us to switch step 2.4 to an eigenvalue decomposition. In estimating the pitch of the helix in step 3.2, the algorithm by Nievergelt did not support helical data that covered more than one helical turn. This type of data presents a phase wrapping issue. To solve this issue, we first sorted the data by its projected position along the helical axis. We assumed that the relative phase difference between any two subsequent points was close to zero and calculated an absolute phase at each point by summing the relative phase differences along the whole curve. This then allowed us to calculate the relative slope of the helical phase. Here we again had to break from Nievergelt’s SVD approach and used simple linear regression to retain the right-handed convention of space.
 
@@ -199,18 +920,18 @@ Synthetic cells were generated using two major components, a helical centerline 
 
 The MATLAB scripts used to fit helical centerlines are publicly available under a BSD 3-clause license at https://github.com/PrincetonUniversity/shae-cellshape-public and archived at https://doi.org/10.5281/zenodo.3627045 and http://arks.princeton.edu/ark:/88435/dsp01h415pd457.
 
-## Purification of recombinant 6His-CcmA and variants
+### Purification of recombinant 6His-CcmA and variants
 
 Plasmids containing N-terminal 6-histidine fusions to WT CcmA (pKB62) and CcmA containing point mutations were generated using site directed mutagenesis primers (Table 3) to generate CcmA I55A (pKB69H; primers SDM 155A F and SDM I55A R) and CcmA L110S (pKB72D; primers SDM L110S F and SDM L110S R). Plasmids were transformed into E. coli protein production host BL21. Strains were grown in liquid culture overnight at 37°C in LB with 0.2% glucose and 100 µg/ml ampicillin. The next day, cells were diluted 1/1000 into fresh media without glucose, grown to mid-log (0.5–0.75), chilled on ice for 15 min, then induced for protein expression by adding 1.0 mM IPTG. Flasks were transferred to room temperature and incubated with shaking for 3.5–4 hr. Cells were harvested by centrifugation and either used immediately for protein purification or frozen at −80°C. For purification, cells were resuspended in 2/5 culture volume of lysis buffer (25 mM Tris pH 8.0, 2 M urea, 500 mM NaCl, 2% glycerol, 0.5 mg/ml lysozyme) supplemented with ¼ EDTA-free protease inhibitor tablet (Pierce, Waltham, MA) and 2 U Benzonase nuclease (EMD Millipore, Burlington, MA) and incubated at room temperature with gentle rolling for 1 hr. After lysing, cells were sonicated at 20% power with 15 s pulses until all cells were lysed. Lysates were cleared at 5000 x g at 4°C, then applied to equilibrated TALON metal affinity resin (TaKaRa, Shiga, Japan) and incubated for 2 hr at room temperature with gentle rolling. The protein bound to resin was washed twice with wash buffer (25 mM Tris pH 8.0, 2 M urea, 500 mM NaCl, 2% glycerol, 7.5 mM imidazole), and proteins eluted from the resin using 25 mM Tris pH8.0, 2 M urea, 500 mM NaCl, 2% glycerol, 250 mM imidazole). Fractions were analyzed by SDS-PAGE for purity and yield. Protein concentration was determined using a Nanodrop 1000 (Thermo Fisher Scientific, Waltham, MA) using the Protein A280 program. One biological replicate is defined as beginning with a new overnight liquid culture.
 
-## Immunoblotting H. pylori extracts
+### Immunoblotting H. pylori extracts
 
 Whole cell extracts were prepared by harvesting 1.0 OD600 of log phase (0.3–0.7 OD600/ml) H. pylori liquid culture by centrifugation for 2 min at max speed in a microcentrifuge and resuspending in 2x protein sample buffer (62.5 mM Tris pH 8, 2% SDS, 0.02% bromophenol blue, 20% glycerol) or Lämmli buffer at 10.0 OD600/ml and boiled for 10 min. Whole cell extracts were separated on 4–15% gradient BioRad TGX gels or 4–15% mini-PROTEAN TGX Stain-Free gels (used according to manufacturer instructions) by SDS-PAGE and transferred onto PVDF membranes using the BioRad Turbo-transfer system according to the manufacturer’s instructions (BioRad, Hercules, CA). Membranes were blocked for 2 hr at room temperature with 5% non- fat milk in TBST (0.5 M Tris, 1.5 M NaCl, pH 7.6, 0.05% Tween 20). Membranes were incubated with primary antibody for 2 hr at room temperature or overnight at 4°C with 1:10,000 anti-CcmA primary antibody, 1:20,000 dilution for α-Cag3 (Pinto-Santini and Salama, 2009), or 1:25,000 dilution for anti-MreB, in TBST. Six washes with TBST over a 30 min period were followed by a 1 hr incubation at room temperature with horseradish peroxidase-conjugated anti-rabbit immunoglobulin G (Santa Cruz Biotechnology, Dallas, TX) antibody at 1:20,000 dilution in TBST. After six washes with TBST over a 30 min period, antibody detection was performed with ECL Plus (Pierce) detection kit or Immobilon Western Chemiluminescent HRP substrate (Millipore), following the manufacturer’s protocol and imaged with the BioRad Gel Documentation System. One biological replicate is defined as beginning with a new liquid culture.
 
-## 2D H. pylori quantitative cell shape analysis
+### 2D H. pylori quantitative cell shape analysis
 
 Phase-contrast microscopy was performed on cells grown in shaken liquid culture until mid-log phase (OD600 0.3–0.6), fixed in a 4% PFA/PBS + 10% glycerol solution, and mounted on glass slides. Resulting images were acquired using a Nikon TE 200 microscope with a 100X oil-immersion objective and Nikon CoolSNAP HQ CCD camera controlled by MetaMorph software (MDS Analytical Technologies, Sunnyvale, CA). Images were thresholded using the ImageJ software package. Quantitative analysis of thresholded images were used to measure both side curvature and central axis length with the CellTool software package as described previously (Sycuro et al., 2010). One biological replicate is defined as beginning with a new liquid culture.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 For TEM, 10 µM WT, I55A, or L110S CcmA was dialyzed overnight at 4°C against 25 mM Tris pH 8. The proteins were applied to glow-discharged carbon-coated grids and negatively stained with 0.75% uranyl acetate. Images were acquired with JEOL 1400 transmission electron microscope using a Gatan UltraScan 1000xp camera with 2K × 2K resolution.

@@ -24,20 +24,20 @@
 
 ### Affiliations
 
-1. https://ror.org/03m2x1q45 University of Arizona Cancer Center Tucson United States
+1. University of Arizona Cancer Center Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
 2. Division of Hematology/Oncology, Department of Medicine, University of Arizona College of Medicine Tucson United States
 3. Foundation Medicine, Inc Cambridge United States
 4. Rutgers Cancer Institute of New Jersey New Brunswick United States
 5. Department of Pediatrics, Rutgers Robert Wood Johnson Medical School New Brunswick United States
 6. University of New Mexico Comprehensive Cancer Center Albuquerque United States
-7. https://ror.org/05fs6jp91 Division of Hematology/Oncology, Department of Internal Medicine, University of New Mexico School of Medicine Albuquerque United States
-8. https://ror.org/05fs6jp91 Division of Molecular Medicine, Department of Internal Medicine, University of New Mexico School of Medicine Albuquerque United States
+7. Division of Hematology/Oncology, Department of Internal Medicine, University of New Mexico School of Medicine Albuquerque United States ([ROR:05fs6jp91](https://ror.org/05fs6jp91))
+8. Division of Molecular Medicine, Department of Internal Medicine, University of New Mexico School of Medicine Albuquerque United States ([ROR:05fs6jp91](https://ror.org/05fs6jp91))
 9. Rutgers Cancer Institute of New Jersey Newark United States
 10. Division of Cancer Biology, Department of Radiation Oncology, Rutgers New Jersey Medical School Newark United States
-11. https://ror.org/01dhvva97 Department of Pathology, University of Kentucky College of Medicine and Markey Cancer Center Lexington United States
-12. https://ror.org/03m2x1q45 Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, University of Arizona Tucson United States
-13. https://ror.org/03m2x1q45 Department of Molecular and Cellular Biology, College of Science, University of Arizona Tucson United States
-14. https://ror.org/00dvg7y05 Vascular Biology Program, Boston Children’s Hospital Boston United States
+11. Department of Pathology, University of Kentucky College of Medicine and Markey Cancer Center Lexington United States ([ROR:01dhvva97](https://ror.org/01dhvva97))
+12. Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+13. Department of Molecular and Cellular Biology, College of Science, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+14. Vascular Biology Program, Boston Children’s Hospital Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
 15. Department of Surgery, Harvard Medical School Boston United States
 16. Department of Pathology, Rutgers Robert Wood Johnson Medical School New Brunswick United States
 17. Division of Medical Oncology, Department of Medicine, Rutgers Robert Wood Johnson Medical School New Brunswick United States
@@ -47,7 +47,7 @@
 
 ## Abstract
 
-Lymphatic malformations (LMs) often pose treatment challenges due to a large size or a critical location that could lead to disfigurement, and there are no standardized treatment approaches for either refractory or unresectable cases. We examined the genomic landscape of a patient cohort of LMs ( n = 30 cases) that underwent comprehensive genomic profiling using a large-panel next-generation sequencing assay. Immunohistochemical analyses were completed in parallel. These LMs had low mutational burden with hotspot PIK3CA mutations ( n = 20) and NRAS ( n = 5) mutations being most frequent, and mutually exclusive. All LM cases with Kaposi sarcoma-like (kaposiform) histology had NRAS mutations. One index patient presented with subacute abdominal pain and was diagnosed with a large retroperitoneal LM harboring a somatic PIK3CA gain-of-function mutation (H1047R). The patient achieved a rapid and durable radiologic complete response, as defined in RECIST1.1, to the PI3Kα inhibitor alpelisib within the context of a personalized N -of-1 clinical trial (NCT03941782). In translational correlative studies, canonical PI3Kα pathway activation was confirmed by immunohistochemistry and human LM-derived lymphatic endothelial cells carrying an allele with an activating mutation at the same locus were sensitive to alpelisib treatment in vitro, which was demonstrated by a concentration-dependent drop in measurable impedance, an assessment of cell status. Our findings establish that LM patients with conventional or kaposiform histology have distinct, yet targetable, driver mutations. R.P. and W.A. are supported by awards from the Levy-Longenbaugh Fund. S.G. is supported by awards from the Hugs for Brady Foundation. This work has been funded in part by the NCI Cancer Center Support Grants (CCSG; P30) to the University of Arizona Cancer Center (CA023074), the University of New Mexico Comprehensive Cancer Center (CA118100), and the Rutgers Cancer Institute of New Jersey (CA072720). B.K.M. was supported by National Science Foundation via Graduate Research Fellowship DGE-1143953. NCT03941782
+Background:Lymphatic malformations (LMs) often pose treatment challenges due to a large size or a critical location that could lead to disfigurement, and there are no standardized treatment approaches for either refractory or unresectable cases.Methods:We examined the genomic landscape of a patient cohort of LMs (n = 30 cases) that underwent comprehensive genomic profiling using a large-panel next-generation sequencing assay. Immunohistochemical analyses were completed in parallel.Results:These LMs had low mutational burden with hotspot PIK3CA mutations (n = 20) and NRAS (n = 5) mutations being most frequent, and mutually exclusive. All LM cases with Kaposi sarcoma-like (kaposiform) histology had NRAS mutations. One index patient presented with subacute abdominal pain and was diagnosed with a large retroperitoneal LM harboring a somatic PIK3CA gain-of-function mutation (H1047R). The patient achieved a rapid and durable radiologic complete response, as defined in RECIST1.1, to the PI3Kα inhibitor alpelisib within the context of a personalized N-of-1 clinical trial (NCT03941782). In translational correlative studies, canonical PI3Kα pathway activation was confirmed by immunohistochemistry and human LM-derived lymphatic endothelial cells carrying an allele with an activating mutation at the same locus were sensitive to alpelisib treatment in vitro, which was demonstrated by a concentration-dependent drop in measurable impedance, an assessment of cell status.Conclusions:Our findings establish that LM patients with conventional or kaposiform histology have distinct, yet targetable, driver mutations.Funding:R.P. and W.A. are supported by awards from the Levy-Longenbaugh Fund. S.G. is supported by awards from the Hugs for Brady Foundation. This work has been funded in part by the NCI Cancer Center Support Grants (CCSG; P30) to the University of Arizona Cancer Center (CA023074), the University of New Mexico Comprehensive Cancer Center (CA118100), and the Rutgers Cancer Institute of New Jersey (CA072720). B.K.M. was supported by National Science Foundation via Graduate Research Fellowship DGE-1143953.Clinical trial number:NCT03941782
 
 ## Introduction
 
@@ -57,35 +57,420 @@ To define the spectrum of genomic alterations and lesions present in LMs, here w
 
 ## Materials and methods
 
-## Genomics and DNA sequencing
+### Genomics and DNA sequencing
 
 Hybrid-capture DNA sequencing targeting exons of at least 324 cancer genes and select introns of 36 genes were performed on the patient samples; a subset (n = 2) were also analyzed with plus RNA sequencing of 265 genes to improve rearrangement detection. A total of 30 patient samples were sequenced with either the DNA-only assay (n = 28; Foundation One CDx, Foundation Medicine; Cambridge, MA) or the DNA + RNA assay (n = 2; Foundation One Heme, Foundation Medicine; Cambridge, MA).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry (IHC) was performed on formalin-fixed, deparaffinized, 5-µm-thick sections mounted on charged slides. Antibodies to P-AKT (Ser473) and P-6S (Ser240/Ser244) were obtained from Cell Signaling Technology, Danvers, MA. Diaminobenzidine was used as the chromogen and hematoxylin as the counterstain. All stages of staining were carried out on an automated system (Ventana Discovery Research Instrument; Ventana, Tucson, Arizona). Positive and negative controls were appropriately reactive. A surgical pathologist with subspecialty interest in musculoskeletal pathology (T.J.B.) interpreted the results.
 
-## Lymphatic malformation-lymphatic endothelial cell sensitivity to alpelisib in vitro
+### Lymphatic malformation-lymphatic endothelial cell sensitivity to alpelisib in vitro
 
 Lymphatic malformation-lymphatic endothelial cells (LM-LECs) were maintained as described (Boscolo et al., 2015) and negative for mycoplasma at the time of these studies. Mycoplasma test was performed using the MycoAlert Mycoplasma Detection Kit (Cat # LT07-218, Lonza) following the manufacturer’s instructions. Real-time analysis of cell viability was performed by using the xCELLigence system RTCA SP (ACEA Biosciences). Briefly, 5 × 103 LM-LECs per well were seeded in an E-Plate 96 (ACEA Biosciences) and cell proliferation was recorded hourly. When the cells reached the exponential growth phase, new media containing alpelisib at 1, 3, 10, 30, or 100 nM was added and alpelisib cytotoxic effect was recorded hourly. IC50 was calculated by using the dose–response curve function available in the xCELLigence software Version 2.0. Cell index (%) reflects cell viability.
 
-## Clonogenic survival assays
+### Clonogenic survival assays
 
 For the clonogenic survival assay, the LM-LECs were trypsinized, counted, and plated in complete growth media on 6-well plates (Falcon) (400 cells/well). Seven days later, alpelisib (at the empirically determined IC50 from a standard calibration curve) was added in duplicate wells. After 24 or 48 hr of incubation, cells were fixed and stained in 50% methanol in water containing 0.3% crystal violet to facilitate counting of colonies (≥50cells).
 
-## Statistics
+### Statistics
 
 All values are expressed as mean with error bars expressed as standard deviation. For comparison between untreated (negative), dimethyl sulfoxide control, and alpelisib-treated LM-LEC cells, the ordinary one-way analysis of variance and Tukey’s multiple comparisons test with a single pooled variance were used. Statistical analysis was performed using the GraphPad Prism 7.0d software (GraphPad Software Inc, San Diego, CA). Fisher’s exact test was used for categorical data, owing to the sizes of the cohorts. A two-tailed p value of <0.05 was considered to be statistically significant.
 
-## Study approval
+### Study approval
 
 Approval for this study, including a waiver of informed consent and Health Insurance Portability and Accountability Act waiver of authorization, was obtained from the Western Institutional Review Board (IRB; protocol #20152817). A single-institution personalized clinical protocol to treat the patient with the experimental PI3Kα inhibitor alpelisib was scientifically reviewed by the Protocol Review and Monitoring Committee (PRMC) and approved by the local Institutional Review Board (IRB) of the University of New Mexico Comprehensive Cancer Center. The study (NCT03941782) was conducted in accordance with the protocol, Good Clinical Practice guidelines, and the provisions of the Declaration of Helsinki. CARE reporting guidelines were also used for this patient (Gagnier et al., 2013). The index patient signed an informed written consent form.
 
 ## Results
 
-## Mutational landscape and histopathology of LMs
+### Mutational landscape and histopathology of LMs
 
 A set of 30 cases of LMs (from 30 individual patients) were assayed with genomic profiling at Foundation Medicine, Inc (Cambridge, MA). Twenty-eight cases were sequenced using hybrid-capture next-generation sequencing (NGS) targeting exons of 300 + cancer genes and select introns of 36 genes. Two other cases were sequenced using hybrid-capture based DNA sequencing targeting exons of 406 + cancer genes and select introns of 36 genes, plus RNA sequencing of 265 genes for rearrangement calling. The patients were predominantly pediatric age (median 9-year-old; range, 1- to 45-year-old), with a slight female predominance (17 females, 57%–13 males, 43%). Seven patients had a documented history of prior treatment with an mTOR inhibitor, such as sirolimus. Seven patients (23%) had documentation of clinical diagnoses of overgrowth syndromes including Congenital Lipomatous Overgrowth with Vascular, Epidermal, and Skeletal anomalies (termed CLOVES), Klippel–Trenaunay syndrome, and phosphatase and tensin homolog (PTEN)-like hamartoma syndrome at the time of testing. Twelve patients (40%) had multifocal disease and eight patients had involvement of bone and visceral sites (Table 1). Expert histopathological review showed that only four (13%) had kaposiform morphology, while 26 (87%) had conventional histology. The estimated histopathologic purity ranged from 10% to 70% (median 20%).
+
+**Table 1.**
+ Clinical and histological features of lymphatic malformation cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>Age(years)</th>
+      <th>Sex</th>
+      <th>Submitted clinical syndrome</th>
+      <th>Localized vs. multifocal</th>
+      <th>Location of LM(s)</th>
+      <th>Specimen type</th>
+      <th>LM histology</th>
+      <th>PIK3CA or NRAS alteration</th>
+      <th>% VAF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>9</td>
+      <td>M</td>
+      <td>CLOVES</td>
+      <td>Multifocal</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA E542K</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4</td>
+      <td>F</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA E542K</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>F</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047R</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>17</td>
+      <td>M</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047R</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>18</td>
+      <td>M</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047L</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>8</td>
+      <td>F</td>
+      <td>Klippel–Trenaunay</td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047R</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>9</td>
+      <td>M</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Visceral</td>
+      <td>Core biopsy</td>
+      <td>Conventional</td>
+      <td>PIK3CA E545K</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>3</td>
+      <td>F</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA C420R</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>23</td>
+      <td>M</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Visceral</td>
+      <td>Incisional biopsy</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047R</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>16</td>
+      <td>F</td>
+      <td>PTEN-like hamartoma</td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047R</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>3</td>
+      <td>F</td>
+      <td>CLOVES</td>
+      <td>Multifocal</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA E545K</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1</td>
+      <td>M</td>
+      <td></td>
+      <td>Multifocal</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047R</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>4</td>
+      <td>F</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA E542K</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>5</td>
+      <td>M</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047R</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1</td>
+      <td>F</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA E545K</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>14</td>
+      <td>F</td>
+      <td></td>
+      <td>Multifocal</td>
+      <td>Visceral</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA C420R</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>2</td>
+      <td>F</td>
+      <td>CLOVES</td>
+      <td>Multifocal</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA C420R</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>16</td>
+      <td>F</td>
+      <td>CLOVES</td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA E453K</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>10</td>
+      <td>F</td>
+      <td>CLOVES</td>
+      <td>Multifocal</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047L</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>9</td>
+      <td>M</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>PIK3CA H1047R</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>9</td>
+      <td>F</td>
+      <td></td>
+      <td>Multifocal</td>
+      <td>Visceral</td>
+      <td>Excision</td>
+      <td>Kaposiform</td>
+      <td>NRAS Q61R</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>8</td>
+      <td>M</td>
+      <td></td>
+      <td>Multifocal</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Kaposiform</td>
+      <td>NRAS Q61R</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>9</td>
+      <td>F</td>
+      <td></td>
+      <td>Multifocal</td>
+      <td>Visceral</td>
+      <td>Excision</td>
+      <td>Kaposiform</td>
+      <td>NRAS Q61R</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>45</td>
+      <td>M</td>
+      <td></td>
+      <td>Multifocal</td>
+      <td>Visceral</td>
+      <td>Core biopsy</td>
+      <td>Conventional</td>
+      <td>NRAS Q61R</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>10</td>
+      <td>F</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Core biopsy</td>
+      <td>Kaposiform</td>
+      <td>NRAS Q61R</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>17</td>
+      <td>M</td>
+      <td></td>
+      <td>Multifocal</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>WT</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>24</td>
+      <td>M</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Bone</td>
+      <td>Core biopsy</td>
+      <td>Conventional</td>
+      <td>WT</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>3</td>
+      <td>M</td>
+      <td></td>
+      <td>Multifocal</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>WT</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>11</td>
+      <td>F</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues</td>
+      <td>Excision</td>
+      <td>Conventional</td>
+      <td>WT</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>9</td>
+      <td>F</td>
+      <td></td>
+      <td>Localized</td>
+      <td>Superficial soft tissues, bone</td>
+      <td>Biopsy</td>
+      <td>Conventional</td>
+      <td>WT</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_CLOVES – congenital lipomatous overgrowth, vascular anomalies, epidermal nevi, and skeletal anomalies; NA – not applicable; VAF – variant allele frequency of PIK3CA or NRAS._
 
 Mutational profiling showed that these LMs had uniformly low tumor mutational burden (median, zero mutations/Mb; range, 0–2.6 mutations/Mb), and none had evidence of microsatellite instability. The most common mutations were activating mutations in PIK3CA, seen in 20 (67%), and activating NRAS mutations, seen in 5 (17%) (Figure 1A, B). The PIK3CA mutations included hotspot mutations in both the helical domain and the kinase domain (Samuels et al., 2004). The NRAS mutations all altered the known hotspot at residue glutamine 61 (Q61) in the phosphorylation binding loop. Of the five patients (17%) with no alterations in PIK3CA and NRAS, one case (Patient #29; Table 1) had an activating GOPC–ROS1 fusion (Figure 1C) with a ROS1 missense point mutation. Similar GOPC–ROS1 fusions have been reported in pediatric gliomas in the setting of microdeletion of chromosome 6q228, and have also been found in adult lung cancer (Drilon et al., 2021).
 
@@ -95,11 +480,11 @@ Mutational profiling showed that these LMs had uniformly low tumor mutational bu
 
 The variant allele frequencies (VAFs) of the PIK3CA and NRAS mutations were relatively low (median, 6%; range, 1–38%), compatible with relatively low histopathologic estimated percentage of tumor nuclei (%TN) to overall cellular nuclei (median, 20%; range, 10–70%). These results suggest that the PIK3CA and NRAS mutations were likely clonal, but in the setting of relatively low tumor purity in the specimens.
 
-## Enrichment of NRAS mutations in LMs with kaposiform features
+### Enrichment of NRAS mutations in LMs with kaposiform features
 
 Histopathological analysis of the lesions by an board-certified dermatopathologist (J.Y.T.) identified that four (13%) of the analyzed specimens had kaposiform histopathological features with highly cellular, clustered, or sheet-like, proliferation of spindled lymphatic cells admixed with dilated thin-walled lymphatic vessels (Figure 1D). The remaining 26 lesions (87%) had conventional histopathological features of classic LM, with proliferation of dilated, thin-walled lymphatic vessels with or without luminal proteinaceous material. Lymphatic phenotype of the cells was confirmed by immunopositivity for PROX1 or D2-40, by report. Of the conventional histology LM cases (n = 26), 20 (77%) had a PIK3CA mutation, while 1 (4%) had a NRAS mutation, and 5 (19%) were wild-type for both genes, including a single case with a GOPC–ROS1 genetic fusion. Notably, all four cases of LM with kaposiform features had an activating NRAS mutation, consistent with enrichment of NRAS mutation (p = 0.00018) and lack of PIK3CA mutation in this histology (p = 0.0046). The lone NRAS-mutant LM with conventional histology was a small core needle-biopsy specimen of a large visceral tumor, raising the possibility that the histopathologic features of the sampled tissue may not have been representative of the entire lesion due to the histologic spatial heterogeneity often seen in LMs with kaposiform histology. Additional histopathologic features were assessed, including altered adipose tissue, muscularized blood vessels, vascular endothelial cell atypia, and inflammation; no statistical significance was identified between the four NRAS-mutant LM cases and the remainder of the patient cohort.
 
-## Case report and N-of-1 clinical trial results
+### Case report and N-of-1 clinical trial results
 
 One of the conventional histology LMs was a 23-year-old male with no significant medical or family history who presented with subacute abdominal pain (Patient #9, Table 1). He was hospitalized and his exam revealed a distended abdomen that was tender to palpation. A computed tomography exam revealed a large solid mass based on the retroperitoneal area and the pancreas (Figure 2A), and a neoplastic process was suspected. A core needle biopsy was attempted but yielded no definitive tissue diagnosis. An open laparoscopic surgical biopsy was performed and revealed a vascular tumor with features of a giant retroperitoneal and pancreatic LM (Figure 2D, E). After discussing a surgical approach, the patient and the surgical team decided not to proceed due to the complexity of surgical resection and associated risks. The tissue was submitted for NGS to identify potential biomarkers for targeted therapy.
 
@@ -113,7 +498,7 @@ Based on the genomic profile, we designed and offered this young man a single-pa
 
 The patient was started on alpelisib daily dose of 350 mg orally (Juric et al., 2018) and he reported regression of his abdominal bulge within a few days. He reported no adverse events and was closely monitored for hyperglycemia. Repeated echocardiogram 2 months later showed normalization of the EF. A CT scan of the abdomen done 6 weeks into the trial revealed remarkable shrinkage of the LM (Figure 2B). Follow-up CT scans showed progressive reduction until complete response at 1 year of trial initiation (Figure 2C). The patient continued to do well on maintenance alpelisib for 2 years with no evidence of progression. After 2 years, alpelisib was discontinued due to theoretical concerns about long-term adverse impact on vascular homeostasis. Unfortunately, the mass recurred after a few weeks so the patient was resumed on alpelisib with a second deep partial response, which is still ongoing for over 3 years.
 
-## Alpelisib inhibits primary PI3Kα-mutant LM-derived endothelial cells
+### Alpelisib inhibits primary PI3Kα-mutant LM-derived endothelial cells
 
 We have also investigated the concentration-dependent effects of alpelisib on LM-LECs isolated from a surgically resected specimen (Boscolo et al., 2015). Targeted sequencing of DNA from LM-LECs identified a somatic missense mutation in PIK3CA (H1047L), the same locus altered in our alpelisib-treated patient and the site of half of the PIK3CA alterations in the LM cohort studied (Table 1). In addition, a nonsense mutation of the regulatory PI3K unit PIK3R3 (R309*) was also detected in the CD31-positive LM-LECs and CD31-negative nonendothelial cells isolated from the same LM, indicating its germline origin (Boscolo et al., 2015). We investigated the effect of alpelisib on the growth of LM-LECs and a concentration-dependent response curve was observed (Figure 3). The IC50 of alpelisib against LM-LECs was empirically determined in vitro to be 4.72 × 10−9 M at 24 hr. This in vitro translational model confirms the sensitivity of LM-derived human cells containing a target H1047R/L mutation to alpelisib.
 
@@ -121,7 +506,7 @@ We have also investigated the concentration-dependent effects of alpelisib on LM
 
 **Figure 3.:** (A) Logarithmic dose–response curve of alpelisib was performed using the xCELLigence RTCA system. 1, 3, 10, 30, and 100 nM (n = 5 replicates) of alpelisib were used to determine the concentration–response curve. The alpelisib half maximal inhibitory concentration (IC50) was calculated for LM-LEC at 24 hr after treatment as 4.72 × 10−9 M. Error bars are shown as mean +/- standard deviation (SD), which was automatically calculated for each data point by the xCELLigence RTCA system software (Version 2.0) based on five replicates per drug concentration. (B) Illustrative picture of LM-LEC clonogenic plaques at 24 hr after alpelisib treatment (4.72 × 10−9 M). Negative, no treatment; dimethyl sulfoxide (DMSO), vehicle control. Experiments were performed two times with similar results. LM-LEC colonies were stained with crystal violet (0.3%). (C) Colony count 24 hr after alpelisib treatment (4.72 × 10−9 M; n = 2 wells/condition). Error bars are shown as mean +/- SD calculated by GraphPad Prism by determining the square root of variance for each data point deviation relative to the mean.
 
-## Refined genomic and sequencing analyses
+### Refined genomic and sequencing analyses
 
 We performed whole-genome sequencing (WGS) on paired LM/germline DNA from our index patient to explore the mutational profile beyond the genes that were probed in the Clinical Laboratory Improvement Amendments (CLIA)-approved clinical sequencing assay. The PIK3CA H1047R mutation was identified with a VAF of 11%. This finding is consistent with the ≤10% rate of mutant cells, and low tumor cellularity of LMs with PIK3CA mutation (Luks et al., 2015). Few other somatic coding mutations were identified in the LM tissue (Supplementary file 1).
 

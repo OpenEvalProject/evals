@@ -44,11 +44,12 @@ Shuttling RNA-binding proteins coordinate nuclear and cytoplasmic steps of gene
                     affecting post-splicing processes. However, the physiological significance of
                     this remains unclear. Here, we used genome editing to knock-in a nuclear
                     retention signal (NRS) in Srsf1 to create a mouse model
-                    harboring an SRSF1 protein that is retained exclusively in the nucleus. Srsf1 mutants displayed small body
+                    harboring an SRSF1 protein that is retained exclusively in the nucleus.
+                            Srsf1NRS/NRS mutants displayed small body
                     size, hydrocephalus and immotile sperm, all traits associated with ciliary
                     defects. We observed reduced translation of a subset of mRNAs and decreased
                     abundance of proteins involved in multiciliogenesis, with disruption of ciliary
                     ultrastructure and motility in cells and tissues derived from this mouse model.
                     These results demonstrate that SRSF1 shuttling is used to reprogram gene
                     expression networks in the context of high cellular demands, as observed here,
-                    during motile ciliogenesis. NRS/NRS
+                    during motile ciliogenesis.

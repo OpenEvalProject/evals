@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Humans and other group-living animals tend to distribute their social effort disproportionately. Individuals predominantly interact with a small number of close companions while maintaining weaker social bonds with less familiar group members. By incorporating this behavior into a mathematical model, we find that a single parameter, which we refer to as social fluidity , controls the rate of social mixing within the group. Large values of social fluidity correspond to gregarious behavior, whereas small values signify the existence of persistent bonds between individuals. We compare the social fluidity of 13 species by applying the model to empirical human and animal social interaction data. To investigate how social behavior influences the likelihood of an epidemic outbreak, we derive an analytical expression of the relationship between social fluidity and the basic reproductive number of an infectious disease. For species that form more stable social bonds, the model describes frequency-dependent transmission that is sensitive to changes in social fluidity. As social fluidity increases, animal-disease systems become increasingly density-dependent. Finally, we demonstrate that social fluidity is a stronger predictor of disease outcomes than both group size and connectivity, and it provides an integrated framework for both density-dependent and frequency-dependent transmission.
+Humans and other group-living animals tend to distribute their social effort disproportionately. Individuals predominantly interact with a small number of close companions while maintaining weaker social bonds with less familiar group members. By incorporating this behavior into a mathematical model, we find that a single parameter, which we refer to as social fluidity, controls the rate of social mixing within the group. Large values of social fluidity correspond to gregarious behavior, whereas small values signify the existence of persistent bonds between individuals. We compare the social fluidity of 13 species by applying the model to empirical human and animal social interaction data. To investigate how social behavior influences the likelihood of an epidemic outbreak, we derive an analytical expression of the relationship between social fluidity and the basic reproductive number of an infectious disease. For species that form more stable social bonds, the model describes frequency-dependent transmission that is sensitive to changes in social fluidity. As social fluidity increases, animal-disease systems become increasingly density-dependent. Finally, we demonstrate that social fluidity is a stronger predictor of disease outcomes than both group size and connectivity, and it provides an integrated framework for both density-dependent and frequency-dependent transmission.
 
 ## Introduction
 
@@ -34,73 +34,195 @@ While transmission rate has been observed to scale non-linearly with group size 
 
 In the first part of this paper, we introduce a mathematical model founded on the concept of social fluidity which we define as variability in the amount of social effort the individual invests in each member of their social group. Using openly available data, we estimate the social fluidity of 57 human and animal social systems. In the second part, we derive an expression for the basic reproductive number of an infectious disease in the social fluidity model and demonstrate its accuracy in predicting simulated outcomes. Furthermore, social fluidity emerges as a coherent mathematical framework providing the smooth connection between density-dependent and frequency-dependent disease systems.
 
-## Characterizing social behavior
+### Characterizing social behavior
 
 Our first objective is to measure social behavior in a range of human and animal populations. We start by introducing a model that captures a hidden element of social dynamics: how individual group members distribute their social effort. We mathematically describe the relationships between social variables that are routinely found in studies of animal behavior, the number of social ties and the number of interactions observed, and apply the model to empirical data to reveal behavioral differences between several species.
 
-## Social behavior model
+### Social behavior model
 
-Consider a closed system of N individuals and a set of interactions between pairs of individuals that were recorded during some observation period. These observations can be represented as a network: each individual, i, is a node; an edge exists between two nodes i and j if at least one interaction was observed between them; the edge weight, wi,j, denotes the number of times this interaction was observed. The total number of interactions of i is denoted strength, si=∑jwi,j, and the number of nodes with whom i is observed interacting is its degree, ki (Barrat et al., 2004).
+Consider a closed system of $N$ individuals and a set of interactions between pairs of individuals that were recorded during some observation period. These observations can be represented as a network: each individual, $i$, is a node; an edge exists between two nodes $i$ and $j$ if at least one interaction was observed between them; the edge weight, $w_{i,j}$, denotes the number of times this interaction was observed. The total number of interactions of $i$ is denoted strength, $s_{i}=\sum_{j}w_{i,j}$, and the number of nodes with whom $i$ is observed interacting is its degree, ki (Barrat et al., 2004).
 
-We define xj|i to be the probability that an interaction involving i will also involve node j. Therefore, the probability that at least one of these interactions is with j is 1-(1-xj|i)si. The main assumption of the model is that the values of xj|i over all i,j pairs are distributed according to a probability distribution, ρ⁢(x). Thus, if a node interacts s times, the marginal probability that an edge exists between that node and any other given node in the network is(1)Ψ⁢(s)=1-∫ρ⁢(x)⁢(1-x)s⁢𝑑x.
+We define $x_{j|i}$ to be the probability that an interaction involving $i$ will also involve node $j$. Therefore, the probability that at least one of these interactions is with $j$ is $1-(1-x_{j|i})^{s_{i}}$. The main assumption of the model is that the values of $x_{j|i}$ over all $i,j$ pairs are distributed according to a probability distribution, $ρ⁢(x)$. Thus, if a node interacts $s$ times, the marginal probability that an edge exists between that node and any other given node in the network is
 
-Technically, ρ⁢(x) is the distribution of marginal xi|j values of the joint probability distribution ρ⁢(x) where X is a matrix whose i,j entry is -1 if i=j and xj|i otherwise. While the values of xj|i are subject to network interdependencies, specifically A⁢X=XT⁢A and 1=0, where A is any diagonal matrix with positive entries, and 1 and 0 are column vectors of length N containing only 0 and 1, we do not take these constraints into account when estimating ρ.
+$$
+Ψ⁢(s)=1-\intρ⁢(x)⁢(1-x)^{s}⁢𝑑x.
+$$
 
-Our goal is to find a form of ρ that accurately reproduces network structure observed in real social systems. Motivated by our exploration of empirical interaction patterns from a variety of species, we propose that ρ has a power-law form:(2)ρ(x)=ϕϵϕ1−ϵϕx−(1+ϕ)forϵ<x<1,where ϕ controls the variability in the values of x, and ϵ simply truncates the distribution to avoid divergence. The form of ρ⁢(x) was chosen for its analytical tractability but other heavy-tailed distributions produce a similar result (Figure 1—figure supplement 1 ). Combining (1) and (2) we find(3)Ψ⁢(s,ϕ,ϵ)=1-ϕ⁢ϵϕ⁢(1-ϵ)s+1(1-ϵϕ)⁢(s+1)⁢F12⁢(s+1,1+ϕ,s+2,1-ϵ)where the notation F12 refers to the Gauss hypergeometric function (Abramowitz and Stegun, 1975). It follows from ∑jxj|i=1 that(4)N=1+(1-ϕ)⁢(1-ϵϕ)ϕ⁢ϵϕ⁢(1-ϵ1-ϕ),which can be solved numerically to find ϵ for given values of N and ϕ. The expectation of the degree is κ⁢(s,ϕ,N)=(N-1)⁢Ψ⁢(s,ϕ,ϵ).
+Technically, $ρ⁢(x)$ is the distribution of marginal $x_{i|j}$ values of the joint probability distribution $ρ⁢(x)$ where $X$ is a matrix whose $i,j$ entry is -1 if $i=j$ and $x_{j|i}$ otherwise. While the values of $x_{j|i}$ are subject to network interdependencies, specifically $A⁢X=X^{T}⁢A$ and $1=0$, where $A$ is any diagonal matrix with positive entries, and $1$ and $0$ are column vectors of length $N$ containing only 0 and 1, we do not take these constraints into account when estimating $ρ$.
 
-Figure 1 illustrates how the value of ϕ can produce different types of social behavior. As ϕ is the main determinant of social behavior in our model, we use the term social fluidity to refer to this quantity. Low social fluidity (ϕ≪1) produces what we might describe as ‘allegiant’ behavior: interactions with the same partner are frequently repeated at the expense of interactions with unfamiliar individuals. As ϕ increases, the model produces more ‘gregarious’ behavior: interactions are repeated less frequently and the number of partners grows faster. While names like ‘social strategy’ and ‘loyalty’ have been applied to similar concepts (Valdano et al., 2015; Miritello et al., 2013), fluidity, as a property of matter, is a useful metaphor for communicating the main idea behind this model.
+Our goal is to find a form of ρ that accurately reproduces network structure observed in real social systems. Motivated by our exploration of empirical interaction patterns from a variety of species, we propose that ρ has a power-law form:
 
-## Estimating social fluidity in empirical networks
+$$
+ρ(x)=\frac{ϕϵ^{ϕ}}{1−ϵ^{ϕ}}x^{−(1+ϕ)}forϵ<x<1,
+$$
 
-To understand the results of the model in the context of real systems, we estimate ϕ in 57 networks from 20 studies of human and animal social behavior (further details in the supplement) (Isella et al., 2011; Stehlé et al., 2011a; Mastrandrea et al., 2015; Vanhems et al., 2013; Modlmeier et al., 2019; Blonder and Dornhaus, 2011; Génois et al., 2015; Carter and Wilkinson, 2013; Grant, 1973; Levin et al., 2016; Sailer and Gaulin, 1984; Mourier et al., 2017; Massen and Sterck, 2013; Sade, 1972; Butovskaya et al., 1994; Takahata, 1991; Hass, 1991; Lott, 1979; Schein and Fohrman, 1955; Hobson and DeDeo, 2015; Gernat et al., 2018), focusing our attention to those interactions which are capable of disease transmission (i.e. those that, at the least, require close spatial proximity). The advantage of using this model over more detailed network descriptions is that we obtain a single parameter estimate, ϕ that is easily compared across animal species and environments.
+where $ϕ$ controls the variability in the values of $x$, and $ϵ$ simply truncates the distribution to avoid divergence. The form of $ρ⁢(x)$ was chosen for its analytical tractability but other heavy-tailed distributions produce a similar result (Figure 1—figure supplement 1 ). Combining (1) and (2) we find
 
-Each dataset provides the number of interactions that were observed between pairs of individuals. We assume that the system is closed, and that the total network size (N) is equal to the number of individuals observed in at least one interaction. To estimate social fluidity, we find the value of ϕ that minimizes ∑i[ki-κ⁢(si,ϕ,N)]2; the total squared squared error between the observed degrees and their expectation given by the model. Uncertainty is displayed using the 2.5th and 97.5th percentile of the distribution of ϕ computed on a set of 1000 ‘bootstrap’ samples, created by sampling N data points, {ki,si}, with replacement, from the observed data. Being estimated from the relationship between strength and degree, and not their absolute values, social fluidity is a good candidate for comparing social behavior across different systems as it is independent of the distributions of si or ki, and of the timescale of interactions.
+$$
+Ψ⁢(s,ϕ,ϵ)=1-\frac{ϕ⁢ϵ^{ϕ}⁢(1-ϵ)^{s+1}}{(1-ϵ^{ϕ})⁢(s+1)}⁢F12⁢(s+1,1+ϕ,s+2,1-ϵ)
+$$
 
-Figure 2 shows the estimated values of ϕ for all networks in our study. We organize the measurements of social fluidity by interaction type. Aggressive interactions have the highest fluidity (which implies that most interactions are rarely repeated between the same individuals), while grooming and other forms of social bonding have the lowest (which implies frequent repeated interactions between the same individuals). Social fluidity also appears to be related to species: ant systems cluster around ϕ=1, monkeys around ϕ=0.5, humans take a range of values that depend on the social environment. Sociality type does not appear to affect ϕ; sheep, bison, and cattle have different social fluidity compared to kangaroos and bats, although they are all categorized as fission-fusion species (Sah et al., 2018).
+where the notation $F12$ refers to the Gauss hypergeometric function (Abramowitz and Stegun, 1975). It follows from $\sum_{j}x_{j|i}=1$ that
 
-Across the 57 networks, there is no evidence that social fluidity scales with the size of the network or the number of observations per individual. No correlation was found between the mean number of interactions per individual (s¯) and social fluidity when testing for a monotonic relationship between the variables (Spearman r2=0.02, p=0.36), and in general no correlation across sets of networks taken from the same study (Supplementary file 1: Table S2). Similarly, network size (N) does not correlate with ϕ (Spearman r2=0.02, p=0.28). To test for a non-monotonic relationship, we partition the set of networks into 10 equally sized groups according to each of the two measures being compared, and compute the adjusted mutual information (AMI) of the two groupings. We find AMI=0.15 for the relationship between ϕ and N, and AMI=0.2 between ϕ and s¯. While non-negative values of AMI typically indicate a non-random relationship, an inherent amount of clustering is to be expected in data aggregated from a diverse range of sources.
+$$
+N=1+\frac{(1-ϕ)⁢(1-ϵ^{ϕ})}{ϕ⁢ϵ^{ϕ}⁢(1-ϵ^{1-ϕ})},
+$$
 
-Larger values of ϕ correspond to higher mean degrees (Spearman r2=0.21, p<0.001) and lower variability in the distribution of edge weights (measured as the index of dispersion of wi,j; Spearman r2=0.46, p<0.001). Weight variability and mean degree are uncorrelated in these data (Spearman r2=0.01, p=0.54, AMI=0.01) implying that ϕ combines these two entirely distinct features of social behavior. Finally, the modularity of the network (computed by the Louvain method on the unweighted network Blondel et al., 2008) is negatively correlated with ϕ (r2=0.52, p<0.001). This is expected as individuals tend to be loyal to those within the same module while maintaining weaker connections with the remaining network - in all but one network the mean weight of edges within modules is higher than the mean weight of edges between modules (supplementary document).
+which can be solved numerically to find $ϵ$ for given values of $N$ and $ϕ$. The expectation of the degree is $κ⁢(s,ϕ,N)=(N-1)⁢Ψ⁢(s,ϕ,ϵ)$.
 
-As with any applied modeling, the validity of these results depends on the extent to which each study system conforms to the assumptions of the model. The value of N, for example, might not represent the true group size if some individuals in the group did not have their interactions recorded, or if there are individuals who did not interact during the time-frame of observation. While we found that variation in the value of N did not have a large impact on the estimated value of ϕ, as shown in Figure 2—figure supplement 1, we warn that the amount of consistency between model assumptions and the conditions of each study will vary, and close consideration should be given to the way data were collected when interpreting these results.
+Figure 1 illustrates how the value of $ϕ$ can produce different types of social behavior. As $ϕ$ is the main determinant of social behavior in our model, we use the term social fluidity to refer to this quantity. Low social fluidity ($ϕ≪1$) produces what we might describe as ‘allegiant’ behavior: interactions with the same partner are frequently repeated at the expense of interactions with unfamiliar individuals. As $ϕ$ increases, the model produces more ‘gregarious’ behavior: interactions are repeated less frequently and the number of partners grows faster. While names like ‘social strategy’ and ‘loyalty’ have been applied to similar concepts (Valdano et al., 2015; Miritello et al., 2013), fluidity, as a property of matter, is a useful metaphor for communicating the main idea behind this model.
 
-## Characterizing disease spread with social fluidity
+![Figure 1.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig1-v1.jpg)
+
+**Figure 1.:** Dashed lines mark the boundary of the region where data points can feasibly be found. The mean degree is plotted for two values of $ϕ$ representing two possible types of social behavior; as the number of observed interactions grows, the set of social contacts increases; the rate at which it increases influences how we categorize their social behavior. Middle: The weight of the edges between $i$ and the other nodes represents the propensity of $i$ to interact with each of the other individuals in the group. Right: Probability distributions that correspond to the different levels of evenness in the contact propensities, both distributions are expressed by Equation (2).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Outcomes using different forms of $ρ⁢(x)$.Node degree as a function of node strength produced using a range of distributions $ρ⁢(x)$. For each distribution, contact probabilities $x_{j|i}$ were drawn for the focal individual $i$ and 100 other group members $j$. Contact was simulated by selecting the interaction partner, $j$, with probability $x_{j|i}$. This was repeated 100 times and the number of distinct interaction partners was counted at each iteration. This process was repeated 100 times to get a stable average. The parameter σ is the standard deviation of the normally distributed logarithm of the random variable $x_{j|i}$. Since the exponential has only one parameter, and the mean of $x_{j|i}$ is fixed at $1/N$, there is no way to vary the exponential distribution.
+
+### Estimating social fluidity in empirical networks
+
+To understand the results of the model in the context of real systems, we estimate $ϕ$ in 57 networks from 20 studies of human and animal social behavior (further details in the supplement) (Isella et al., 2011; Stehlé et al., 2011a; Mastrandrea et al., 2015; Vanhems et al., 2013; Modlmeier et al., 2019; Blonder and Dornhaus, 2011; Génois et al., 2015; Carter and Wilkinson, 2013; Grant, 1973; Levin et al., 2016; Sailer and Gaulin, 1984; Mourier et al., 2017; Massen and Sterck, 2013; Sade, 1972; Butovskaya et al., 1994; Takahata, 1991; Hass, 1991; Lott, 1979; Schein and Fohrman, 1955; Hobson and DeDeo, 2015; Gernat et al., 2018), focusing our attention to those interactions which are capable of disease transmission (i.e. those that, at the least, require close spatial proximity). The advantage of using this model over more detailed network descriptions is that we obtain a single parameter estimate, $ϕ$ that is easily compared across animal species and environments.
+
+Each dataset provides the number of interactions that were observed between pairs of individuals. We assume that the system is closed, and that the total network size ($N$) is equal to the number of individuals observed in at least one interaction. To estimate social fluidity, we find the value of $ϕ$ that minimizes $\sum_{i}[k_{i}-κ⁢(s_{i},ϕ,N)]^{2}$; the total squared squared error between the observed degrees and their expectation given by the model. Uncertainty is displayed using the 2.5th and 97.5th percentile of the distribution of $ϕ$ computed on a set of 1000 ‘bootstrap’ samples, created by sampling $N$ data points, ${k_{i},s_{i}}$, with replacement, from the observed data. Being estimated from the relationship between strength and degree, and not their absolute values, social fluidity is a good candidate for comparing social behavior across different systems as it is independent of the distributions of si or ki, and of the timescale of interactions.
+
+Figure 2 shows the estimated values of $ϕ$ for all networks in our study. We organize the measurements of social fluidity by interaction type. Aggressive interactions have the highest fluidity (which implies that most interactions are rarely repeated between the same individuals), while grooming and other forms of social bonding have the lowest (which implies frequent repeated interactions between the same individuals). Social fluidity also appears to be related to species: ant systems cluster around $ϕ=1$, monkeys around $ϕ=0.5$, humans take a range of values that depend on the social environment. Sociality type does not appear to affect $ϕ$; sheep, bison, and cattle have different social fluidity compared to kangaroos and bats, although they are all categorized as fission-fusion species (Sah et al., 2018).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig2-v1.jpg)
+
+**Figure 2.:** Colors correspond to the species and the setting in the case of human networks. Different shapes are used as a visual aid. Lines represent the 95% bootstrap confidence interval. Results are organized by interaction type: aggression includes fighting and displays of dominance, food sharing refers to mouth-to-mouth passing of food, antennation is when the antenna of one insect touches any part of another, space sharing interactions occur with spatial proximity during foraging, face-to-face refers to close proximity interactions that require individuals to be facing each other, association is defined as co-membership of the same social group, and grooming is when one individual cleans another with their hand or other body part.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Raw data and least squares estimate for all networks used in this study. Each point represents one individual individual. Those who interacted more than 90 times are excluded from the figure but not from the inference of $ϕ$. The curve shows the expected degree (according to the model) of an individual as a function of the number of interactions.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Sensitivity to length of time frame of sampling. Network properties were recalculated using only the first 50% of the interactions on all network data sets for which temporal information are provided. (A) Social fluidity as estimated in the main text is shown as blue triangles, and estimated using only the first 50% of interactions is shown as red circles. In one network (highschool 4), the process for computing $ϕ$ did not converge to a solution, this is an issue that occurs when the number of interaction partners remains very low. (B and C), mean degree of the network and number of nodes (with degree $k>0$), respectively, calculated from the full data is shown as blue triangles, and using only the first 50% of interactions as red circles. (D) Social fluidity estimated using only the first 50% of interactions is shown as blue triangles. Red circles show the value of $ϕ$ using the first 50% of the interactions but using the value of $N$ taken from observing all the interactions. Note that this value of $N$ will be larger as it contains nodes that will be isolates, i.e. have $k=0$ in the 50% subsample network.
+
+Across the 57 networks, there is no evidence that social fluidity scales with the size of the network or the number of observations per individual. No correlation was found between the mean number of interactions per individual ($s¯$) and social fluidity when testing for a monotonic relationship between the variables (Spearman $r^{2}=0.02$, $p=0.36$), and in general no correlation across sets of networks taken from the same study (Supplementary file 1: Table S2). Similarly, network size ($N$) does not correlate with $ϕ$ (Spearman $r^{2}=0.02$, $p=0.28$). To test for a non-monotonic relationship, we partition the set of networks into 10 equally sized groups according to each of the two measures being compared, and compute the adjusted mutual information (AMI) of the two groupings. We find AMI=0.15 for the relationship between $ϕ$ and $N$, and AMI=0.2 between $ϕ$ and $s¯$. While non-negative values of AMI typically indicate a non-random relationship, an inherent amount of clustering is to be expected in data aggregated from a diverse range of sources.
+
+Larger values of $ϕ$ correspond to higher mean degrees (Spearman $r^{2}=0.21$, $p<0.001$) and lower variability in the distribution of edge weights (measured as the index of dispersion of $w_{i,j}$; Spearman $r^{2}=0.46$, $p<0.001$). Weight variability and mean degree are uncorrelated in these data (Spearman $r^{2}=0.01$, $p=0.54$, AMI=0.01) implying that $ϕ$ combines these two entirely distinct features of social behavior. Finally, the modularity of the network (computed by the Louvain method on the unweighted network Blondel et al., 2008) is negatively correlated with $ϕ$ ($r^{2}=0.52$, $p<0.001$). This is expected as individuals tend to be loyal to those within the same module while maintaining weaker connections with the remaining network - in all but one network the mean weight of edges within modules is higher than the mean weight of edges between modules (supplementary document).
+
+As with any applied modeling, the validity of these results depends on the extent to which each study system conforms to the assumptions of the model. The value of $N$, for example, might not represent the true group size if some individuals in the group did not have their interactions recorded, or if there are individuals who did not interact during the time-frame of observation. While we found that variation in the value of $N$ did not have a large impact on the estimated value of $ϕ$, as shown in Figure 2—figure supplement 1, we warn that the amount of consistency between model assumptions and the conditions of each study will vary, and close consideration should be given to the way data were collected when interpreting these results.
+
+### Characterizing disease spread with social fluidity
 
 Our objective is to characterize how social behavior influences the exposure of the group to infectious disease in a range of human and animal social systems. Intuitively, we expect an infected individual in a group with low social fluidity to expose fewer susceptible group members to the pathogen than they would in a group with highly fluid social dynamics. We explore this idea by introducing a analytical transmission model that incorporates social fluidity. Using this model, we mathematically characterize the impact of social fluidity on density dependence, and apply the model to empirical networks to predict disease spread.
 
-## Disease transmission model
+### Disease transmission model
 
-We consider the transmission of an infectious disease on the social behavior model introduced in the previous section. An infectious node i interacting with a susceptible node j will transmit the infection with probability β. The node will recover from infection with rate γ, assuming an exponential distribution of the length of the infectious period. The probability that the infection is transmitted from i to any given j is(5)Ti→j⁢(β,γ,si,τ,xj|i)=1-exp⁡(-si⁢xj|i⁢β/γ⁢τ),assuming that the interactions si of i are distributed randomly across an observation period of duration τ.
+We consider the transmission of an infectious disease on the social behavior model introduced in the previous section. An infectious node $i$ interacting with a susceptible node $j$ will transmit the infection with probability β. The node will recover from infection with rate γ, assuming an exponential distribution of the length of the infectious period. The probability that the infection is transmitted from $i$ to any given $j$ is
 
-By integrating Equation (5) over all possible values xj|i and infectious period durations and multiplying by the number of susceptible individuals (N-1) we obtain the expected number of infections caused by individual i, (6)r⁢(si)=1-ϕϕ⁢(ϵϕ-ϵ)[1-ϵϕ+ϵϕF12(-ϕ,1,1-ϕ;-βsi/γτ)-F12(-ϕ,1,1-ϕ;-ϵβsi/γτ)].
+$$
+T_{i→j}⁢(\beta,\gamma,s_{i},\tau,x_{j|i})=1-exp⁡(-s_{i}⁢x_{j|i}⁢\beta/\gamma⁢\tau),
+$$
 
-The basic reproductive number (usually denoted R0) is defined as the mean number of secondary infections caused by a typical infectious individual in an otherwise susceptible population (Diekmann et al., 1990). We will use the notation R0ϕ to signify the social fluidity reproductive number, that is the analogue of R0 derived from our social behavior model.
+assuming that the interactions si of $i$ are distributed randomly across an observation period of duration τ.
 
-We assess the relation of the reproductive number with the population density by focusing on a special case where every node has the same strength, that is si=s for all i, so that R0ϕ=r⁢(s). Furthermore, we choose β=γ⁢τ⁢R0∞/s where R0∞ is R0ϕ as ϕ→∞, that is a constant that represents what the basic reproductive number would be if every new interaction occurred between a pair of individuals who have not previously interacted with each other.
+By integrating Equation (5) over all possible values $x_{j|i}$ and infectious period durations and multiplying by the number of susceptible individuals ($N-1$) we obtain the expected number of infections caused by individual $i$, 
 
-Figure 3 shows the effect of social fluidity on the density dependence of the disease. At small population sizes, R0ϕ increases with N and converges as N goes to ∞ (Figure 3A). The rate of this convergence increases with ϕ, and the limit it converges to is higher, meaning that ϕ determines the extent to which density affects the spread of disease. As N→∞, we find that R0ϕ→R0∞ for ϕ>1. When ϕ<1, R0ϕ→[(1-ϕ)/ϕ]⁢[F12⁢(-ϕ,1,1-ϕ;-R0∞)-1]. At these values of ϕ the disease is constrained by individuals choosing to repeat interactions despite having the choice of infinitely many potential interaction partners (Figure 3B).
+$$
+r⁢(s_{i})=\frac{1-ϕ}{ϕ⁢(ϵ^{ϕ}-ϵ)}[1-ϵ^{ϕ}+ϵ^{ϕ}F12(-ϕ,1,1-ϕ;-\betas_{i}/\gamma\tau)-F12(-ϕ,1,1-ϕ;-ϵ\betas_{i}/\gamma\tau)].
+$$
+
+The basic reproductive number (usually denoted R0) is defined as the mean number of secondary infections caused by a typical infectious individual in an otherwise susceptible population (Diekmann et al., 1990). We will use the notation $R_{0}^{ϕ}$ to signify the social fluidity reproductive number, that is the analogue of R0 derived from our social behavior model.
+
+We assess the relation of the reproductive number with the population density by focusing on a special case where every node has the same strength, that is $s_{i}=s$ for all $i$, so that $R_{0}^{ϕ}=r⁢(s)$. Furthermore, we choose $\beta=\gamma⁢\tau⁢R_{0}^{∞}/s$ where $R_{0}^{∞}$ is $R_{0}^{ϕ}$ as $ϕ→∞$, that is a constant that represents what the basic reproductive number would be if every new interaction occurred between a pair of individuals who have not previously interacted with each other.
+
+Figure 3 shows the effect of social fluidity on the density dependence of the disease. At small population sizes, $R_{0}^{ϕ}$ increases with $N$ and converges as $N$ goes to ∞ (Figure 3A). The rate of this convergence increases with $ϕ$, and the limit it converges to is higher, meaning that $ϕ$ determines the extent to which density affects the spread of disease. As $N→∞$, we find that $R_{0}^{ϕ}→R_{0}^{∞}$ for $ϕ>1$. When $ϕ<1$, $R_{0}^{ϕ}→[(1-ϕ)/ϕ]⁢[F12⁢(-ϕ,1,1-ϕ;-R_{0}^{∞})-1]$. At these values of $ϕ$ the disease is constrained by individuals choosing to repeat interactions despite having the choice of infinitely many potential interaction partners (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62177/elife-62177-fig3-v1.jpg)
 
-**Figure 3.:** (A) For different values of social fluidity, , we show ϕ (from R0ϕEquation (6)) as a function of  (from NEquation (4)) through their parametric relation with . Dashed lines show the limit for large ϵ. (NB) In large populations  increases with R0ϕ up to ϕ. Beyond this value, infections occur as frequently as they would if every new interaction occurs between a pair of individuals who have not previously interacted with each other.ϕ=1
+**Figure 3.:** (A) For different values of social fluidity, $ϕ$, we show $R_{0}^{ϕ}$ (from Equation (6)) as a function of $N$ (from Equation (4)) through their parametric relation with $ϵ$. Dashed lines show the limit for large $N$. (B) In large populations $R_{0}^{ϕ}$ increases with $ϕ$ up to $ϕ=1$. Beyond this value, infections occur as frequently as they would if every new interaction occurs between a pair of individuals who have not previously interacted with each other.
 
-## Infection spread in empirical networks with heterogeneous connectivity
+### Infection spread in empirical networks with heterogeneous connectivity
 
-To apply this analogue of a reproductive number to an animal-disease system, we need to account for heterogeneous levels of social connectivity in the given population and thus the tendency for infected individuals to be those with a greater number of social partners (Anderson et al., 1986). For the basic reproductive number, this is often done using the mean excess degree, that is the degree of an individual selected with probability proportional to their degree (Newman, 2018). Following a similar reasoning, we define R0Est, which incorporates the effect of social fluidity, as the expected number of infections (r⁢(si)) caused by an individual that has been selected with probability proportional to their degree (ki):(7)R0Est⁢({si},{ki},τ,β,γ)=∑iki⁢r⁢(si)∑iki.
+To apply this analogue of a reproductive number to an animal-disease system, we need to account for heterogeneous levels of social connectivity in the given population and thus the tendency for infected individuals to be those with a greater number of social partners (Anderson et al., 1986). For the basic reproductive number, this is often done using the mean excess degree, that is the degree of an individual selected with probability proportional to their degree (Newman, 2018). Following a similar reasoning, we define $R_{0}^{Est}$, which incorporates the effect of social fluidity, as the expected number of infections ($r⁢(s_{i})$) caused by an individual that has been selected with probability proportional to their degree (ki):
 
-Given the degree and strength of each individual in a network, the duration over which those interactions occurrred, and the transmission and recovery rates of the disease, we are able to estimate ϕ, compute Equation (6) for each individual, and finally use Equation (7) to derive a statistic that provides a measure of the risk of the host population to disease outbreak.
+$$
+R_{0}^{Est}⁢({s_{i}},{k_{i}},\tau,\beta,\gamma)=\frac{\sum_{i}k_{i}⁢r⁢(s_{i})}{\sum_{i}k_{i}}.
+$$
 
-## Numerical validation using empirical networks
+Given the degree and strength of each individual in a network, the duration over which those interactions occurrred, and the transmission and recovery rates of the disease, we are able to estimate $ϕ$, compute Equation (6) for each individual, and finally use Equation (7) to derive a statistic that provides a measure of the risk of the host population to disease outbreak.
 
-We simulated the spread of disease through the interactions that occurred in the empirical data (Materials and methods). We compute R0Sim⁢(g), defined as the ratio of the number of individuals infected at the (g+1)-th generation to the number infected at the g-th generation over 103 simulated outbreaks, for g=0,1,2 (g=0 refers to the initial seed of the outbreak).
+### Numerical validation using empirical networks
 
-Table 1 shows the Pearson correlation coefficient and the adjusted mutual information between R0Sim⁢(g) and its corresponding value R0Est obtained Equation (7) (Materials and methods). Equivalent results are also presented for other indicators and network statistics. The results correspond to one set of simulation conditions and are consistent across a wide range of parameter combinations (see Supplementary file 1). Note that a different value of β was chosen for each network to control for the varying interaction rates between networks while keeping the upper bound (R0∞) constant (Materials and methods). While contact frequency is known to be one of the major contributors to disease risk, calibrating β in this way eliminates its effect, allowing the contribution of other network characteristics to be compared. Thus, the mean strength does not have a significant effect on R0Sim⁢(g), and higher mean edge weight does not necessarily imply higher transmission probability over the edges of the network.
+We simulated the spread of disease through the interactions that occurred in the empirical data (Materials and methods). We compute $R_{0}^{Sim}⁢(g)$, defined as the ratio of the number of individuals infected at the $(g+1)$-th generation to the number infected at the $g$-th generation over 103 simulated outbreaks, for $g=0,1,2$ ($g=0$ refers to the initial seed of the outbreak).
+
+Table 1 shows the Pearson correlation coefficient and the adjusted mutual information between $R_{0}^{Sim}⁢(g)$ and its corresponding value $R_{0}^{Est}$ obtained Equation (7) (Materials and methods). Equivalent results are also presented for other indicators and network statistics. The results correspond to one set of simulation conditions and are consistent across a wide range of parameter combinations (see Supplementary file 1). Note that a different value of β was chosen for each network to control for the varying interaction rates between networks while keeping the upper bound ($R_{0}^{∞}$) constant (Materials and methods). While contact frequency is known to be one of the major contributors to disease risk, calibrating β in this way eliminates its effect, allowing the contribution of other network characteristics to be compared. Thus, the mean strength does not have a significant effect on $R_{0}^{Sim}⁢(g)$, and higher mean edge weight does not necessarily imply higher transmission probability over the edges of the network.
+
+**Table 1.**
+ The Pearson correlation coefficient between quantities calculated on the network and the simulated disease outcomes (with $R_{0}^{∞}=3$).Results that are significant with $p<0.01$ are labeled with *. Adjusted mutual information is calculated between the variables after partitioning the set of networks into 10 equally sized rank-order classes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Corr. with R0Sim(g=1)</th>
+      <th>Adjusted MI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R0Est</td>
+      <td>0.91*</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Social fluidity</td>
+      <td>0.73*</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Excess degree</td>
+      <td>0.64*</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Mean degree</td>
+      <td>0.53*</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Network size</td>
+      <td>0.47*</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Mean strength</td>
+      <td>-0.07</td>
+      <td>-0.02</td>
+    </tr>
+    <tr>
+      <td>Mean clustering</td>
+      <td>-0.15</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Mean edge weight</td>
+      <td>-0.45*</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Edge weight heterogeneity</td>
+      <td>-0.48*</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Modularity</td>
+      <td>-0.59*</td>
+      <td>0.12</td>
+    </tr>
+  </tbody>
+</table>
 
 These correlations support a known result regarding repeat contacts in network models of disease spread: that indicators of disease risk that are derived solely from the degree distribution are unreliable and the role of edge weights should not be neglected (Smieszek et al., 2009; Stehlé et al., 2011b). After transmission has occurred from one individual to another, repeating the same interaction serves no advantage for disease (most directly transmitted microparasites are not dose-dependent). Since a large edge weight implies a high frequency of repeated interactions, networks with a higher mean weight tend to have lower basic reproductive numbers. Furthermore, variability in the distribution of weights concentrates a yet larger proportion of interactions onto a small number of edges, further increasing the number of repeat interactions and reducing the reproductive number.
 
-Correlation between modularity and R0Sim⁢(g) is partly due to the strong correlation between modular networks and those with high social fluidity. Consistent with other evidence (Sah et al., 2017), this suggests that transmission events occur mostly within the module of the seed node, with weaker social ties facilitating transmission to other modules. The effect of clustering (a measure of the number of connected triples in network Watts and Strogatz, 1998) correlates with smaller R0Sim⁢(2), consistent with other theoretical work (Miller, 2009; Smieszek et al., 2009).
+Correlation between modularity and $R_{0}^{Sim}⁢(g)$ is partly due to the strong correlation between modular networks and those with high social fluidity. Consistent with other evidence (Sah et al., 2017), this suggests that transmission events occur mostly within the module of the seed node, with weaker social ties facilitating transmission to other modules. The effect of clustering (a measure of the number of connected triples in network Watts and Strogatz, 1998) correlates with smaller $R_{0}^{Sim}⁢(2)$, consistent with other theoretical work (Miller, 2009; Smieszek et al., 2009).
 
-Finally, we find the model estimate of the social fluidity reproductive number R0Est to be, on average, within 10% of the simulated value, R0Sim⁢(g) at g=1. At g=2 the amount of error is larger (to up to 29% for some parameter choices). Prediction accuracy at this generation is negatively correlated with the mean clustering coefficient. This is not surprising as R0Est does not account for the accelerated depletion of susceptible neighbors that is known to occur in clustered networks (Miller, 2009; Smieszek et al., 2009). No other properties of the network affect the accuracy of R0Est consistently across all parameter combinations (see Supplementary file 1).
+Finally, we find the model estimate of the social fluidity reproductive number $R_{0}^{Est}$ to be, on average, within 10% of the simulated value, $R_{0}^{Sim}⁢(g)$ at $g=1$. At $g=2$ the amount of error is larger (to up to 29% for some parameter choices). Prediction accuracy at this generation is negatively correlated with the mean clustering coefficient. This is not surprising as $R_{0}^{Est}$ does not account for the accelerated depletion of susceptible neighbors that is known to occur in clustered networks (Miller, 2009; Smieszek et al., 2009). No other properties of the network affect the accuracy of $R_{0}^{Est}$ consistently across all parameter combinations (see Supplementary file 1).
 
 ## Results and discussion
 
@@ -116,17 +238,17 @@ We therefore consider the model to be applicable to the data analysed in this st
 
 Finally, we do not know the extent to which an interaction, as defined for each network, is capable of transmission which can depend on the pathogen’s transmission mode and the infectious dose required. Furthermore, the transmission probability is unlikely to be the same for all interactions within the group since, for example, the duration of contact is known to be important for disease spread (Stehlé et al., 2011b). We did not include explicitly the duration of each contact in our model as this information was only available in a fraction of the datasets (Barrat et al., 2014). There is therefore potential to improve the applicability of this model as more high resolution data becomes openly available.
 
-Our estimate of reproductive number derived from social fluidity provides a better predictor for the epidemic risk of a host population, going beyond predictors based on density or degree only. To illustrate this point, the social network of individuals at a conference (R0Est=1.60; conference_0, supplementary document) is predicted to be at higher risk compared to the social network at a school (R0Est=1.39; highschool_0), despite having a smaller size and lower connectivity (N=93 vs. N=312, and k¯=5.63 vs. k¯=6.78, respectively). The discrepancy in the risk prediction comes from the lower frequency of repeated contacts between individuals in the conference, compared to the school. Interactions between infectious individuals and those they have previously infected are redundant in terms of transmission. This dynamic is nicely captured by the social fluidity, with ϕ=0.66 for the conference and ϕ=0.40 for the high school.
+Our estimate of reproductive number derived from social fluidity provides a better predictor for the epidemic risk of a host population, going beyond predictors based on density or degree only. To illustrate this point, the social network of individuals at a conference ($R_{0}^{Est}=1.60$; conference_0, supplementary document) is predicted to be at higher risk compared to the social network at a school ($R_{0}^{Est}=1.39$; highschool_0), despite having a smaller size and lower connectivity ($N=93$ vs. $N=312$, and $k¯=5.63$ vs. $k¯=6.78$, respectively). The discrepancy in the risk prediction comes from the lower frequency of repeated contacts between individuals in the conference, compared to the school. Interactions between infectious individuals and those they have previously infected are redundant in terms of transmission. This dynamic is nicely captured by the social fluidity, with $ϕ=0.66$ for the conference and $ϕ=0.40$ for the high school.
 
-Unlike previous work that explores the disease consequences of population mixing (Volz and Meyers, 2007; Reluga and Shim, 2014), our analysis allows us to investigate this relation across a range of social systems. We see, for example, how the relationship between mixing and disease risk scales with group size. For social systems that have high values of social fluidity, R0ϕ is highly sensitive to changes in N, whereas this sensitivity is not present at low values of ϕ. This corroborates past work on the scaling of transmission being associated to heterogeneity in contact (Begon et al., 2002; Ferrari et al., 2011). Going beyond previous work, our model captures in a coherent theoretical framework both density-dependence and frequency-dependence, and social fluidity is the measure to tune from one to the other in a continuous way. Since many empirical studies support a transmission function that is somewhere between these two modeling paradigms (Smith et al., 2009; Cross et al., 2013; Borremans et al., 2017; Hopkins et al., 2020), the modeling approaches applied in this paper can be carried forward to inform transmission relationships in future disease studies.
+Unlike previous work that explores the disease consequences of population mixing (Volz and Meyers, 2007; Reluga and Shim, 2014), our analysis allows us to investigate this relation across a range of social systems. We see, for example, how the relationship between mixing and disease risk scales with group size. For social systems that have high values of social fluidity, $R_{0}^{ϕ}$ is highly sensitive to changes in $N$, whereas this sensitivity is not present at low values of $ϕ$. This corroborates past work on the scaling of transmission being associated to heterogeneity in contact (Begon et al., 2002; Ferrari et al., 2011). Going beyond previous work, our model captures in a coherent theoretical framework both density-dependence and frequency-dependence, and social fluidity is the measure to tune from one to the other in a continuous way. Since many empirical studies support a transmission function that is somewhere between these two modeling paradigms (Smith et al., 2009; Cross et al., 2013; Borremans et al., 2017; Hopkins et al., 2020), the modeling approaches applied in this paper can be carried forward to inform transmission relationships in future disease studies.
 
 ## Materials and methods
 
-## Python libraries
+### Python libraries
 
 Mean clustering coefficients were computed using the networkx Python library. To evaluate the hypergeometric function in (3) we used the hyp2f1 function from the scipy.special Python library. Numerical solutions to Equation (4) using the fsolve function from the scipy.optimize Python library. Adjusted mutual information was computed using adjusted mutual info score from the sklearn.metrics library. All scripts, data, and documentation used in this study are available through https://github.com/EwanColman/Social-Fluidity (Colman, 2021, copy archived at swh:1:rev:90b27e1b84ce4417633885cd260c89bbf1b07eac).
 
-## Data handling
+### Data handling
 
 Only freely available downloadable sources of data have been used for this study. Details of the experimentation and data collection, including how the interaction type is defined, can be found through their respective publications. Here, we note some additional processes we have applied for our study.
 
@@ -142,14 +264,18 @@ We considered including two rodent studies in which interaction is defined as be
 
 For data that did not contain the time of each interaction, contact time series were generated synthetically. For those networks, the interactions between each pair were given synthetic timestamps in three different ways, Poisson: the time of each interaction is chosen uniformly at random from {0, 1, ..., 104} seconds, Circadian: chosen uniformly at random from {0,1, ...,3333, 6666, ....,104}, and Bursty: interaction times occur with power-law distributed inter-event times adjusted to give an expected total duration of 104 seconds.
 
-## Disease simulation
+### Disease simulation
 
 Simulations of disease spread were executed using the contacts provided by the datasets. The the bat network was omitted from this part since these data were collected over a series of independent experiments carried out at different times and under different experimental treatments.
 
-In one run of the simulation, one seed node is randomly chosen from the network and, at a randomly selected point in time during the duration of the data, transitions to the infectious state. The duration for which they remain infectious is a random variable drawn from an exponential distribution with mean 1/γ. During this time, any contact they have with other individuals who have not previously been infected will cause an infection with probability β.
+In one run of the simulation, one seed node is randomly chosen from the network and, at a randomly selected point in time during the duration of the data, transitions to the infectious state. The duration for which they remain infectious is a random variable drawn from an exponential distribution with mean $1/\gamma$. During this time, any contact they have with other individuals who have not previously been infected will cause an infection with probability β.
 
 The simulation runs until all individuals who were infected at the second generation of the disease, that is those infected by those infected by the seed, have recovered. The datasets are ‘looped’ to ensure that the timeframe of the data collection does not influence the outcome. In other words, immediately after the latest interaction, the interactions are repeated exactly as they were originally. This continues to happen until the termination criteria is met.
 
-We set the parameters to normalise for the variation in contacts rates between networks. To achieve this, we consider a hypothetical counterpart to each network in which the strength of every node is the same, but each interaction occurs between a pair of individuals who have not previously interacted. This is equivalent to ϕ→∞. Under these conditions xj|i=1/(N-1) for all pairs i,j. It follows that Equation (5) becomes Ti→j≈si⁢β/γ⁢τ⁢(N-1), then r⁢(si)≈si⁢β/γ⁢τ, and, since ki=si for all nodes i, Equation (7) gives(8)R0∞=R0Est⁢({si},{si},τ,β,γ)=β⁢∑isi2γ⁢τ⁢∑isi
+We set the parameters to normalise for the variation in contacts rates between networks. To achieve this, we consider a hypothetical counterpart to each network in which the strength of every node is the same, but each interaction occurs between a pair of individuals who have not previously interacted. This is equivalent to $ϕ→∞$. Under these conditions $x_{j|i}=1/(N-1)$ for all pairs $i,j$. It follows that Equation (5) becomes $T_{i→j}≈s_{i}⁢\beta/\gamma⁢\tau⁢(N-1)$, then $r⁢(s_{i})≈s_{i}⁢\beta/\gamma⁢\tau$, and, since $k_{i}=s_{i}$ for all nodes $i$, Equation (7) gives
 
-The value of R0∞ can be chosen arbitrarily. Then, by setting γ=1/τ and β=R0∞⁢∑isi/∑isi2 we guarantee that Equation (8) holds for every network. To test that our results hold over a range of disease scenarios, we repeat our analysis with R0∞=2, 3, and 4.
+$$
+R_{0}^{∞}=R_{0}^{Est}⁢({s_{i}},{s_{i}},\tau,\beta,\gamma)=\frac{\beta⁢\sum_{i}s_{i}^{2}}{\gamma⁢\tau⁢\sum_{i}s_{i}}
+$$
+
+The value of $R_{0}^{∞}$ can be chosen arbitrarily. Then, by setting $\gamma=1/\tau$ and $\beta=R_{0}^{∞}⁢\sum_{i}s_{i}/\sum_{i}s_{i}^{2}$ we guarantee that Equation (8) holds for every network. To test that our results hold over a range of disease scenarios, we repeat our analysis with $R_{0}^{∞}=2$, 3, and 4.

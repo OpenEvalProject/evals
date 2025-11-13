@@ -40,7 +40,7 @@
 
 ## Abstract
 
-Rapid identification and investigation of healthcare-associated infections (HCAIs) is important for suppression of SARS-CoV-2, but the infection source for hospital onset COVID-19 infections (HOCIs) cannot always be readily identified based only on epidemiological data. Viral sequencing data provides additional information regarding potential transmission clusters, but the low mutation rate of SARS-CoV-2 can make interpretation using standard phylogenetic methods difficult. We developed a novel statistical method and sequence reporting tool (SRT) that combines epidemiological and sequence data in order to provide a rapid assessment of the probability of HCAI among HOCI cases (defined as first positive test >48 hr following admission) and to identify infections that could plausibly constitute outbreak events. The method is designed for prospective use, but was validated using retrospective datasets from hospitals in Glasgow and Sheffield collected February–May 2020. We analysed data from 326 HOCIs. Among HOCIs with time from admission ≥8 days, the SRT algorithm identified close sequence matches from the same ward for 160/244 (65.6%) and in the remainder 68/84 (81.0%) had at least one similar sequence elsewhere in the hospital, resulting in high estimated probabilities of within-ward and within-hospital transmission. For HOCIs with time from admission 3–7 days, the SRT probability of healthcare acquisition was >0.5 in 33/82 (40.2%). The methodology developed can provide rapid feedback on HOCIs that could be useful for infection prevention and control teams, and warrants further prospective evaluation. The integration of epidemiological and sequence data is important given the low mutation rate of SARS-CoV-2 and its variable incubation period. COG-UK HOCI funded by COG-UK consortium, supported by funding from UK Research and Innovation, National Institute of Health Research and Wellcome Sanger Institute.
+Background:Rapid identification and investigation of healthcare-associated infections (HCAIs) is important for suppression of SARS-CoV-2, but the infection source for hospital onset COVID-19 infections (HOCIs) cannot always be readily identified based only on epidemiological data. Viral sequencing data provides additional information regarding potential transmission clusters, but the low mutation rate of SARS-CoV-2 can make interpretation using standard phylogenetic methods difficult.Methods:We developed a novel statistical method and sequence reporting tool (SRT) that combines epidemiological and sequence data in order to provide a rapid assessment of the probability of HCAI among HOCI cases (defined as first positive test >48 hr following admission) and to identify infections that could plausibly constitute outbreak events. The method is designed for prospective use, but was validated using retrospective datasets from hospitals in Glasgow and Sheffield collected February–May 2020.Results:We analysed data from 326 HOCIs. Among HOCIs with time from admission ≥8 days, the SRT algorithm identified close sequence matches from the same ward for 160/244 (65.6%) and in the remainder 68/84 (81.0%) had at least one similar sequence elsewhere in the hospital, resulting in high estimated probabilities of within-ward and within-hospital transmission. For HOCIs with time from admission 3–7 days, the SRT probability of healthcare acquisition was >0.5 in 33/82 (40.2%).Conclusions:The methodology developed can provide rapid feedback on HOCIs that could be useful for infection prevention and control teams, and warrants further prospective evaluation. The integration of epidemiological and sequence data is important given the low mutation rate of SARS-CoV-2 and its variable incubation period.Funding:COG-UK HOCI funded by COG-UK consortium, supported by funding from UK Research and Innovation, National Institute of Health Research and Wellcome Sanger Institute.
 
 ## Introduction
 
@@ -54,17 +54,17 @@ To overcome these barriers, we have developed a sequence reporting tool (SRT) th
 
 The SRT methodology is applied to HOCI cases, defined here as inpatients with first positive SARS-CoV-2 test or symptom onset >48 hr after admission, without suspicion of COVID-19 at admission. The SRT algorithm returns an estimate of the probability that each HOCI acquired their infection post-admission within the hospital, with information provided on closely matching viral sequences from the ward location at sampling and wider hospital. Results for individual HOCIs are evaluated in relation to the IPC classification system recommended by Public Health England (PHE), based on interval from admission to positive test: 3–7 days post admission = indeterminate healthcare-associated infection (HCAI); 8–14 days post admission = probable HCAI; >14 days post admission = definite HCAI (Public Health England, 2020). We also applied the PHE definition of healthcare-associated COVID-19 outbreaks (Public Health England, 2020) (i.e. ≥2 cases associated with specific ward, with at least one being a probable or definite HCAI) to ward-level data, and for each outbreak evaluated whether there was one or more distinct genetic cluster. This was determined by consecutive linkage of each HOCI into clusters using a two single-nucleotide polymorphism (SNP) threshold (with HOCIs assigned to a genetic cluster if a sequence match to any member). Sequences with <90% genomic coverage were excluded from all analyses.
 
-## Data collection and processing
+### Data collection and processing
 
-## Glasgow
+#### Glasgow
 
 During the first wave of SARS-CoV-2, the MRC-University of Glasgow Centre for Virus Research collected residual clinical samples from SARS-CoV-2-infected individuals following diagnosis at the West of Scotland Specialist Virology Centre. Samples were triaged for rapid sequencing using Oxford Nanopore Technologies (ONT) for suspected healthcare-related infections or Illumina sequencing in all other cases (details in Appendix 1).
 
-## Sheffield
+#### Sheffield
 
 Residual clinical samples from SARS-CoV-2-positive cases diagnosed at Sheffield Teaching Hospitals NHS Foundation Trust were sequenced at the University of Sheffield using ARTIC network protocol (ARTIC Network, 2020) and ONT. Throughout the epidemic, members of the IPC team were notified by the laboratory and by clinical teams of positive results and reviewed relevant areas to ensure optimisation of practice and appropriate management of patients. Electronic reports were created contemporaneously, including an assessment as to whether suspected linked cases were present based on ward-level epidemiology. As part of SRT validation, these reports were accessed retrospectively by a study team member blind to the sequencing data and each included HOCI case was defined as being thought unlinked to other cases, a presumed index case in an outbreak or a presumed secondary case.
 
-## HOCI classification algorithm
+### HOCI classification algorithm
 
 The sequence matching and probability score algorithm is run separately for each ‘focus sequence’ corresponding to a HOCI. We use associated metadata to assign other previously collected sequences to categories representing where the individual may be part of a SARS-COV-2 transmission network:
 
@@ -72,7 +72,7 @@ It is possible for samples to be members of multiple reference sets. For example
 
 For each run of the algorithm, pairwise comparisons are conducted between the focus sequence and each sequence within the unit reference set, institution reference set and community reference set. A reference set sequence is considered a close match to the focus sequence if there is a maximum of two SNP differences between them. This choice was based on reported healthcare-associated outbreak events (Meredith et al., 2020; Rockett et al., 2020) and the overall mutation rate of SARS-CoV-2 (details in Appendix 1).
 
-## Probability calculations
+#### Probability calculations
 
 We use an expression of Bayes theorem to estimate probabilities for post-admission infection of each focus case divided by exposure on the unit, within the rest of the institution and from visitors (if allowed). An estimate of the prior probability (Pprior) of post-admission infection for each focus case is modified to a posterior probability according to the information provided by the sequence data. The algorithm is based on sound statistical principles, but involves heuristic approximations.
 
@@ -80,25 +80,25 @@ In symptomatic focus cases, we base Pprior on the time interval (t) from admissi
 
 In theory, it would be optimal to use all of the information in the exact sequences observed. However, with the goal of constructing a computationally simple algorithm, we base our calculations on the probability of observing a similar sequence (within two SNPs) to that actually observed for each focus case conditional on each potential infection source/location: infection in the community, current unit/ward or elsewhere in the hospital/institution, or from a visitor. For the unit and hospital, we estimate this probability using the observed sequence match proportion (on pairwise comparison to the focus sequence) in the unit reference set and institution reference set, respectively. For community- or visitor-acquired infection, we use a weighted proportion of matching sequences in the community reference set, with weightings determined by a calibration model that describes geographic clustering of similar sequences among community-acquired infections (described in Appendix 1). The geographic weighting model was fitted separately for each study site using sequences strongly thought to represent community-acquired infection: all community-sampled sequences and patients presenting to the Emergency Department with COVID-19, excluding those recorded as being HCWs.
 
-## Software
+#### Software
 
 The analysis was conducted in R (v. 4.0.2, R Foundation, Vienna) using sequence processing and comparison functions from ape (v. 5.4) and geospatial functions in the PostcodesioR (v. 0.1.1) and gmt packages (v. 2.0). R code to run the algorithm is available (Stirrup, 2021), and it has also been implemented as a standalone SRT for prospective use (HOCI Sequence Reporting Tool working group, 2020) within COV-GLUE (Singer et al., 2020).
 
 ## Results
 
-## Study populations
+### Study populations
 
-## Glasgow
+#### Glasgow
 
 The Glasgow dataset included 1199 viral sequences (available as of 23 June 2020): 426 were derived from community sampling sites, 351 from patients presenting to Emergency Department or acute medical units, 398 from hospital inpatients and 24 from outpatients. Limited data were available regarding the total number of HCWs testing positive and their identification among community samples, but 15 sequences were recorded as being from HCWs. First positive test dates ranged from 3 March to 27 May 2020. All consensus sequences had genomic coverage >90%.
 
 We applied the SRT algorithm to data from three hospitals with required metadata available, for which 128/246 inpatient cases with sequences were HOCIs. Two of these patients had been transferred from another hospital within 14 days prior to their positive test and were not processed as focus sequences. One inpatient without recorded sampling location was excluded, leaving 125 HOCIs for analysis. Population sequencing coverage was 536/1578 (34.0%) overall for patients at the three hospitals and 128/328 (39.0%) for HOCIs specifically (Appendix 1—figure 1).
 
-## Sheffield
+#### Sheffield
 
 The Sheffield dataset included 1630 viral sequences with accompanying metadata (available as of 10 October 2020): 714 were from inpatients, 117 were from outpatients and 799 were from HCWs. For this retrospective evaluation, 447/714 inpatient samples taken on date of admission were assumed to represent community-onset cases and used to calibrate the model. First positive test dates ranged from 23 February to 30 May 2020. One sequence with genome coverage <90% was dropped from further analysis (an inpatient on date of admission). 201 of the inpatients were HOCIs. Population sequencing coverage was 714/977 (73.1%) overall for inpatients, 201/261 (77.0%) for HOCIs specifically and 799/962 (83.1%) for HCWs.
 
-## Comparison to standard PHE classification
+### Comparison to standard PHE classification
 
 SRT algorithm results in comparison to standard PHE classifications are summarised in Figure 1 and Table 1. The majority of HOCI cases in Glasgow (78/125, 62.4%) and over a third in Sheffield (71/201, 35.3%) met the definition of a definite HCAI and so are known to have acquired the virus post-admission irrespective of sequencing results. The probable HCAI cases formed the next largest group at each site. Overall, the SRT algorithm identified close sequence matches from the same ward for 66.4% of definite and 64.2% of probable HCAIs, indicating likely within-ward transmission (examples in case studies). When one or more close sequence match was identified on the focus sequence’s ward, the SRT probability of infection on the ward was >0.5 in 185/189 cases (Figure 2). For indeterminate HCAIs, the SRT probability of HCAI was >0.5 in 33/82 (40.2%), and in 27/33 (81.8%) a close sequence match on the ward was present. Overall, 14/125 (11.2%) HOCIs in Glasgow and 175/201 (87.1%) in Sheffield had at least one close sequence match to a HCW sample, reflecting the much greater availability of sequences from HCWs in the Sheffield dataset.
 
@@ -108,19 +108,310 @@ SRT algorithm results in comparison to standard PHE classifications are summaris
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65828/elife-65828-fig2-v2.jpg)
 
-**Figure 2.:** a) Glasgow and (b) Sheffield hospital onset COVID-19 infection cases grouped by standard Public Health England classification.In cases where there are no close sequence matches in the dataset (including among community cases), the results returned are based solely on the priors and the metadata; this explains the fact that there are some cases with estimated posterior probability of infection on the ward greater than 0.5 for whom there were no sequence matches on the ward.
+**Figure 2.:** In cases where there are no close sequence matches in the dataset (including among community cases), the results returned are based solely on the priors and the metadata; this explains the fact that there are some cases with estimated posterior probability of infection on the ward greater than 0.5 for whom there were no sequence matches on the ward.
+
+**Table 1.**
+ Summary of sequence reporting tool outputs for the Glasgow and Sheffield datasets, according to standard IPC definitions recommended by Public Health England regarding likelihood of HCAI.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Glasgow data</th>
+      <th colspan="3">Sheffield data</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="3">IPC classification</th>
+      <th colspan="3">IPC classification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Indeterminate HCAI</td>
+      <td>Probable HCAI</td>
+      <td>Definite HCAI</td>
+      <td>Indeterminate HCAI</td>
+      <td>Probable HCAI</td>
+      <td>Definite HCAI</td>
+    </tr>
+    <tr>
+      <td>n HOCI cases</td>
+      <td>20</td>
+      <td>27</td>
+      <td>78</td>
+      <td>62</td>
+      <td>68</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>Time from admission to sample*, days</td>
+      <td>4.5 (3–6)</td>
+      <td>11 (9-13)</td>
+      <td>48 (26-83)</td>
+      <td>5 (4–6)</td>
+      <td>9 (8–13)</td>
+      <td>22 (17–31)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Summary of sequence matches returned for each HOCI case</td>
+    </tr>
+    <tr>
+      <td>Close sequence match on ward</td>
+      <td>5 (25.0)</td>
+      <td>15 (55.6)</td>
+      <td>53 (68.0)</td>
+      <td>24 (38.7)</td>
+      <td>46 (67.6)</td>
+      <td>46 (64.8)</td>
+    </tr>
+    <tr>
+      <td>No close sequence match on ward, but match within hospital</td>
+      <td>8 (40.0)</td>
+      <td>7 (25.9)</td>
+      <td>19 (24.4)</td>
+      <td>34 (54.8)</td>
+      <td>21 (30.9)</td>
+      <td>21 (29.6)</td>
+    </tr>
+    <tr>
+      <td>No close sequence match anywhere within hospital</td>
+      <td>7 (35.0)</td>
+      <td>5 (18.5)</td>
+      <td>6 (7.7)</td>
+      <td>4 (6.5)</td>
+      <td>1 (1.5)</td>
+      <td>4 (5.6)</td>
+    </tr>
+    <tr>
+      <td>Close sequence match to one or more HCW</td>
+      <td>1 (5.0)</td>
+      <td>0 (0)</td>
+      <td>13 (16.7)</td>
+      <td>55 (88.7)</td>
+      <td>61 (89.7)</td>
+      <td>59 (83.1)</td>
+    </tr>
+    <tr>
+      <td>No close sequence match anywhere within dataset</td>
+      <td>2 (10.0)</td>
+      <td>1 (3.7)</td>
+      <td>4 (5.1)</td>
+      <td>4 (6.5)</td>
+      <td>1 (1.5)</td>
+      <td>4 (5.6)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Probability calculations</td>
+    </tr>
+    <tr>
+      <td>Prior probability of HCAI†</td>
+      <td>0.39 (0.11–0.66)</td>
+      <td>0.97 (0.92–0.99)</td>
+      <td>1.00 (1.00–1.00)</td>
+      <td>0.49 (0.29–0.66)</td>
+      <td>0.92 (0.86–0.99)</td>
+      <td>1.00 (1.00–1.00)</td>
+    </tr>
+    <tr>
+      <td>Posterior probability of HCAI‡</td>
+      <td>0.33 (0.02–0.67)</td>
+      <td>0.98 (0.96–1.00)</td>
+      <td>1.00 (1.00–1.00)</td>
+      <td>0.40 (0.11–0.80)</td>
+      <td>0.98 (0.93–1.00)</td>
+      <td>1.00 (0.99–1.00)</td>
+    </tr>
+    <tr>
+      <td>Posterior probability of HCAI‡ category</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low (&lt;30%)</td>
+      <td>10 (50.0)</td>
+      <td>4 (14.8)</td>
+      <td>2 (2.6)</td>
+      <td>25 (40.3)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Moderately low (≥30% and &lt;50%)</td>
+      <td>2 (10.0)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+      <td>12 (19.4)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Medium (≥50% and &lt;70%)</td>
+      <td>4 (20.0)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+      <td>4 (6.5)</td>
+      <td>5 (7.4)</td>
+      <td>3 (4.2)</td>
+    </tr>
+    <tr>
+      <td>High (≥70% and &lt;85%)</td>
+      <td>3 (15.0)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+      <td>8 (12.9)</td>
+      <td>7 (10.3)</td>
+      <td>2 (2.8)</td>
+    </tr>
+    <tr>
+      <td>Very high (≥85%)</td>
+      <td>1 (5.0)</td>
+      <td>23 (85.2)</td>
+      <td>76 (97.4)</td>
+      <td>13 (21.0)</td>
+      <td>56 (82.4)</td>
+      <td>66 (93.0)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data shown as median (interquartile range) or n (%).*Or first +ve test where known.†Based on time from admission.‡From source on ward or within hospital.HCAI: healthcare-associated infection; HOCI: hospital onset COVID-19 infection; HCW: healthcare worker; IPC: infection prevention and control._
 
 In 16/244 (6.6%) cases that met the probable or definite HCAI definitions, there was no sequence match within the hospital; this is likely due to incomplete sequence data from SARS-CoV-2 hospitalised cases and staff (with population sequencing coverage <40% patients and very limited for staff from Glasgow and ≈75% of patients and staff in Sheffield) and the presence of asymptomatic and/or undiagnosed carriers. To reflect this the SRT will report ‘This is a probable/definite HCAI based on admission date, but we have not found genetic evidence of transmission within the hospital’ in such situations. There were 26 HOCIs in the Sheffield dataset for whom it was recorded that visitors were allowed on the ward at time of sampling. In three of these, the estimated probability of infection from a visitor was between 0.4 and 0.5 (all had ≥18 days from admission and no ward close sequence matches).
 
 Within the Sheffield dataset, we identified six wards with two genetically distinct outbreak clusters (of two or more patients) and three wards with three distinct outbreaks (see Case study 2). Standard IPC assessment had classified each as a single outbreak. We also identified 10 and 44 HOCIs in the Glasgow and Sheffield datasets, respectively, with no apparent genetic linkage to other HOCI cases on the ward but who met the PHE definition of inclusion within an outbreak event (Table 2).
 
-## Comparison to local IPC conclusions in Sheffield
+**Table 2.**
+ Summary of distinct outbreak events for the Glasgow and Sheffield datasets, according to standard PHE definition and with the addition of sequence data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Glasgow data</th>
+      <th>Sheffield data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n HOCI cases</td>
+      <td>125</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>n ward locations</td>
+      <td>44</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence matches per HOCI case</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>n sequence matches from same ward, median (IQR, range)</td>
+      <td>1 (0–5, 0–12)</td>
+      <td>1 (0–4, 0–18)</td>
+    </tr>
+    <tr>
+      <td>n sequence matches from rest of hospital, median (IQR, range)</td>
+      <td>3 (1–8, 0–52)</td>
+      <td>27 (5–52, 0–150)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Standard PHE definition of outbreak event</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HOCI cases part of ward outbreak event, n (%)</td>
+      <td>95 (76.0)</td>
+      <td>184 (91.5)</td>
+    </tr>
+    <tr>
+      <td>n ward outbreak events</td>
+      <td>17</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>n HOCI cases per ward outbreak event, median (IQR, range)</td>
+      <td>4 (2–8, 2–17)</td>
+      <td>5 (3.5–10.5, 2–28)</td>
+    </tr>
+    <tr>
+      <td>Days from first to last case in outbreak, median (IQR, range)</td>
+      <td>8 (6–15, 0–31)</td>
+      <td>18 (13–34, 3–68)</td>
+    </tr>
+    <tr>
+      <td>n wards with more than one distinct outbreak event</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outbreak events with sequence linkage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HOCI cases part of ward outbreak event, n (%)</td>
+      <td>85 (68.0)</td>
+      <td>140* (69.7)</td>
+    </tr>
+    <tr>
+      <td>n ward outbreak events</td>
+      <td>16</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>n HOCI cases per ward outbreak event, median (IQR, range)</td>
+      <td>3.5 (2–8, 2–16)</td>
+      <td>3 (2–4, 1–19)</td>
+    </tr>
+    <tr>
+      <td>Days from first to last case in outbreak, median (IQR, range)</td>
+      <td>6 (4–9, 0–15)</td>
+      <td>4 (2–8, 0–17)</td>
+    </tr>
+    <tr>
+      <td>n wards with more than one distinct outbreak event</td>
+      <td>0</td>
+      <td>9†</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Includes two HOCIs which each showed a close sequence match to another case on the same ward with interval from admission to sample date ≤2 days.†In three wards, there were three genetically distinct outbreak events.HOCI: hospital onset COVID-19 infection; IQR: interquartile range; PHE: Public Health England._
+
+### Comparison to local IPC conclusions in Sheffield
 
 Contemporaneous notes by IPC teams in Sheffield classified 18/201 HOCIs as the index case in outbreaks. IPC staff defined an index case as the first detected in an environment regardless of prior inpatient stay and, correspondingly, of these 14/18 were the first sequence on their ward and one was the second (the first 1 day earlier from a different bay on the ward was also recorded as an index case, and IPC staff deemed a ward outbreak with unclear index or possibly two index cases). Of the 18 index cases, 11 showed at least one subsequent close sequence match on the same ward (the two index cases on a single ward were not genetically similar, and for 1/18 there were no subsequent sequences from the ward). The median SRT probability of HCAI was 0.70 (IQR 0.22–1.00, range 0.04–1, >0.5 in 12/18).
 
 A further 144/201 HOCIs were classified as being part of local outbreaks, and among these the median SRT probability of HCAI was 0.98 (IQR 0.89–1.00, range 0.02–1.00, >0.5 in 129/144) with one or more close sequence match on the same ward in 104/144. The remaining 39/201 HOCIs, including 10 that were not recorded as HOCIs at the time, were classified by the IPC teams as not being part of local outbreaks. Among these the median SRT probability of HCAI was 0.74 (IQR 0.23–0.99, range 0.02–1.00, >0.5 in 23/39), with one or more close sequence matches on the same ward in 7/39.
 
-## Case study 1
+#### Case study 1
 
 Figure 3 shows a phylogenetic tree of eight HOCIs within a single ward at a Glasgow hospital (Hospital 5, Unit 93), alongside associated metadata and SRT probability outputs. The first HOCI detected (UID0032) was transferred from another hospital within the previous 2 weeks and so SRT output was not generated. All subsequent HOCIs return close sequence matches to at least one prior case on the ward, leading to SRT probability estimates of ward-acquired infection >0.9, even for UID0017 (an indeterminate HCAI). The phylogenetic tree indicates UID0032 has an SNP lacked by most of the cases identified on the ward, and therefore did not seed all of the cases in the outbreak cluster. Also shown is a single HOCI from a different ward in the same hospital (UID0025); this individual was an indeterminate HCAI, but a higher proportion of similar viral sequences within the hospital in comparison to their local community led to a SRT result of probable hospital-acquired infection.
 
@@ -128,7 +419,7 @@ Figure 3 shows a phylogenetic tree of eight HOCIs within a single ward at a Glas
 
 **Figure 3.:** The black lines represent the time from admission to sampling. The values below the line are the posterior probability for unit infection + the posterior probability of hospital infection from the sequence reporting tool. The tip nodes are coloured according to the local authority area of the community surveillance sequences (circles) or of the patients (crosses).
 
-## Case study 2
+#### Case study 2
 
 Figure 4 shows phylogenetic trees relating to three distinct viral lineages identified on a single ward in the Sheffield dataset (classified by contemporaneous IPC investigation as a single outbreak). Two of these lineages also include sequences from inpatients sampled from other wards within the same hospital. Detailed ward movement data highlighted additional possible links between patients in the B.2.1 cluster. Both UID0149 and UID0157 were present at LOC0111 prior to their sample dates.
 

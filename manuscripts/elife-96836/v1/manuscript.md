@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/048a87296 Department of Cell and Molecular Biology, Uppsala University Uppsala Sweden
+1. Department of Cell and Molecular Biology, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
 
 † Corresponding author
 

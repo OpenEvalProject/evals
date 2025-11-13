@@ -30,17 +30,140 @@ Here, we used cryo-EM to determine a high-resolution structure of AtOSCA3.1, the
 
 ## Results
 
-## Overall architecture of OSCA3.1 is similar to OSCA1.1 and OSCA1.2
+### Overall architecture of OSCA3.1 is similar to OSCA1.1 and OSCA1.2
 
 We recombinantly tagged OSCA3.1 with EGFP at its C-terminus, expressed the construct in HEK293F cells, and purified it using Lauryl Maltose Neopentyl Glycol (LMNG) supplemented with cholesteryl hemisuccinate (CHS). The EGFP was removed by PreScission Protease cleavage, leaving a stretch of 10 residues on the C-terminus. Purified protein was then reconstituted into nanodiscs and subjected to cryo-EM analysis, resulting in a 2.6 Å resolution symmetric reconstruction (Figure 1a, Figure 1—figure supplement 1) sufficient to build a model of the majority of the protein (537 out of 724 residues; Figure 1b–c, Figure 1—figure supplement 2, Table 1) Due to increased flexibility of the BLD relative to previous OSCA structures, we were unable to assign residue identity, and instead modeled it as two poly-Ala helices.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig1-v1.jpg)
+
+**Figure 1.:** (a) Cryo-EM map of OSCA3.1 dimer colored by subunit. Nanodisc density in grey corresponds to the unsharpened map (gaussian-filtered to 1.5 σ). (b) Front (left) and top (right) view of atomic model. Ex.: Extracellular, In.: Intracellular. (c) Superposition of OSCA1.1, OSCA1.2 (in nanodiscs) and OSCA3.1 protomers. (d) Pore profile of OSCAs in c. (e) View of the pore pathway (blue) of OSCA3.1. Pore facing residues colored in yellow, with selected residues labeled. π-helical turns in pink. Putative pore lipid in green. Backbone of TM3 and TM4 helices hidden for clarity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) SEC trace (left) from OSCA3.1 reconstitution in nanodiscs. Arrow points to peak corresponding to fractions pooled and ran on SDS-PAGE (right). Molecular weight of OSCA3.1 and MSP2N2 is approximately 82 kDa and 43 kDa, respectively. (b) Representative cryo-EM micrograph. Black bar is 100 nm. (c) Cryo-EM processing workflow. C2 symmetry was imposed during refinements unless otherwise specified. 3D refinements in RELION were performed using the SIDESPLITTER algorithm where indicated (SS). (d) LocalDeblur map colored by local resolution calculated in RELION. (e) FSC plot calculated in RELION. (f) LocalDeblur map to model FSC plot.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Fit of OSCA3.1 model to selected regions of the LocalDeblur map. Map was contoured at a threshold of 2 (for the BLD) or 4 σ.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) DeepEMhancer map. (b) LocalDeblur map with lipid-like densities colored. (c) Top (left) and front (right) view of OSCA3.1 model with modeled lipids. Lipids were tentatively modeled as palmitic acid (green), phosphatidylcholine (cyan), and lyso-phosphatidylethanolamine (purple).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Front view of model superposition of OSCA3.1 in nanodiscs and extended state in digitonin (PDB: 5Z1F). Alignment done on left protomer. (b) Intracellular view. Dimerization domain is enclosed in a green square. (c) Extracellular view illustrating shifts of the nanodisc sample towards the outer edges, and increasing the distance between the two protomers in the inter-subunit cleft. (d) Extracellular view of the OSCA3.1 in nanodiscs, extended state in digitonin, and contracted state in LMNG (PDB: 8GRO).
+
+**Table 1.**
+ Data collection, processing, model refinement and validation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>OSCA3.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>29000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–0.4 to –1.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>1,913,316</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>197,944</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å) FSC threshold</td>
+      <td>2.6 0.143</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>–64</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Composition Peptide chains Protein residues Ligands</td>
+      <td>2 1148 24</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations Bond lengths (Å) Bond angles (°)</td>
+      <td>0.023 1.677</td>
+    </tr>
+    <tr>
+      <td>Validation MolProbity score Clashscore EMRinger score Poor rotamers (%)</td>
+      <td>0.74 0.74 4.12 0.00</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>
+      <td>98.93 1.07 0.00</td>
+    </tr>
+    <tr>
+      <td>Deposition ID EMDB PDB</td>
+      <td>41911 8 U53</td>
+    </tr>
+  </tbody>
+</table>
 
 Overall, there is good agreement between OSCA3.1, OSCA1.1 and OSCA1.2 protomers (Jojoa-Cruz et al., 2018; Zhang et al., 2018) (Cα RMSD OSCA3.1-OSCA1.1: 1.243 Å, OSCA3.1-OSCA1.2: 1.152 Å, Figure 1c). The pore profile of these OSCAs is maintained and the small radii towards the extracellular side suggests these channels are in a closed/non-conductive state, as suggested by previous MD simulations (Jojoa-Cruz et al., 2018; Zhang et al., 2018; Figure 1d). Likewise, the two π-helical turns in TM5 and TM6a seen in previous structures near the neck of the pore are present at similar positions in OSCA3.1 (Jojoa-Cruz et al., 2018; Maity et al., 2019). We identified multiple lipid-like densities in one of our postprocessed maps (Figure 1e, Figure 1—figure supplement 3). Notably, one of these densities is located at the pore fenestration, at a position similar to that observed in previous MD simulations of OSCA1.2 (Jojoa-Cruz et al., 2018), supporting the proposed occupation of the pore pathway by lipids. Recent cryo-EM structures of AtOSCA1.2 (Jojoa-Cruz et al., 2024), and AtOSCA1.1 and human TMEM63A (Zhang et al., 2023) also place a lipid at a similar position.
 
 Previously, the structure of OSCA3.1 was solved in a digitonin micelle (Zhang et al., 2018), and more recently, in LMNG (Zhang et al., 2023). The similarity of our nanodisc sample to these detergent structures suggests that the use of detergent did not affect the conformation or oligomerization of OSCA3.1, similar to previous results with OSCA1.2 (Jojoa-Cruz et al., 2018; Liu et al., 2018; Figure 1—figure supplement 4a–b). However, the inter-subunit cleft in the nanodisc structure is wider due to outward movements of innermost TMs ranging from ~4–8 Å (Figure 1—figure supplement 4c) relative to the digitonin sample, which was recently denoted as an ‘extended’ state (Zhang et al., 2023). Thus, our nanodisc structure represents a further ‘extended’ state than the one found both in digitonin and LMNG micelles (Zhang et al., 2023; Figure 1—figure supplement 4d). Whether these differences represent biologically meaningful states, an effect of the lipid environment (detergent vs lipids), or inherent flexibility of the channel remains to be determined. Additionally, our structure enabled a higher degree of certainty in the residue assignment relative to the initial digitonin structure, particularly for TM0 where sidechains were not previously modelled (Zhang et al., 2018). Consequently, we have shifted the registry of TM0 by two residues relative to the detergent structure, in agreement with the LMNG structures (Zhang et al., 2023).
 
-## Mutation of key residues in the amphipathic helix abrogates poke but not stretch responses in OSCA1.2
+### Mutation of key residues in the amphipathic helix abrogates poke but not stretch responses in OSCA1.2
 
 Structures of AtOSCA1.1, rice and At OSCA1.2, and OSCA3.1 (Figure 2a, Figure 2—figure supplement 1), as well as sequence alignment, suggest that the AH between TM0 and TM1 of OSCAs is a conserved feature of these channels. AHs can serve as both membrane anchors and sensors of membrane deformation (Drin and Antonny, 2010), and they are present in many MA ion channels (Bavi et al., 2016; Brohawn et al., 2014a; Jojoa-Cruz et al., 2018; Saotome et al., 2018). There is evidence for their involvement in mechanical force transduction; for example, in the bacterial mechanosensitive channel of large conductance MscL, an AH in the cytoplasmic side of the bilayer links membrane tension to protein conformation (Figure 2—figure supplement 2a and b; Bavi et al., 2016). Interestingly, structures of members of the TMEM16 family, structural homologs of OSCAs, have a similarly placed helix in this region; however, it is located in the cytosol and does not present amphipathic properties (Figure 2—figure supplement 1c-e; Alvadia et al., 2019; Bushell et al., 2019; Paulino et al., 2017). Involvement of TMEM16A in the detection of mechanical forces in myocytes and bile ducts was dependent on calcium influx (potentially caused by an upstream MA cation channel) and not a direct response to the mechanical stimulus (Bulley et al., 2012; Dutta et al., 2013). To our knowledge, characterization of TMEM16 proteins as MA ion channels has not been reported. Based on these observations, we mutated the membrane-facing residues at each end of the AH of OSCA1.2 in an effort to decrease its propensity to interact with the membrane. Single (W75K or L80E) and double (W75K/L80E) mutants in OSCA1.2 strongly abrogated the response to indentation of the membrane with a blunt glass probe (poke) (WT: 47 of 51 cells produced MA currents; W75K: 3 of 24; L80E: 2 of 16; W75K/L80E: 2 of 24; Figure 2b, top panel). Moreover, in OSCA1.2W75K/L80E, a larger displacement of the membrane by the probe relative to the WT appeared to be needed to observe currents (‘apparent threshold’; WT: 5.3±0.5 µm (N=46; mean ± S.E.M.), W75K/L80E: 15.3±2.3 µm (N=2), with the none-responsive W75K/L80E cells rupturing at a 13.0±0.5 µm (N=22); Figure 2b, bottom panel). The insensitivity to the poking stimulus was not due to poor membrane trafficking of these constructs (see below). The loss of sensitivity of cells expressing these mutant constructs to poking suggests that the AH of OSCA1.2 plays an important role in this mechanically activated response.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig2-v1.jpg)
+
+**Figure 2.:** (a) Superposition of OSCA1.2 (grey) and OSCA3.1 (red). Insets: close-up view of amphipathic helix. Residues substituted in OSCA1.2 for electrophysiology experiments are underlined. (b) Few cells expressing mutations in the amphipathic helix respond to poking compared to WT controls. Top panel: Maximum poke-induced currents observed in whole-cell mode for cells exposed to displacements up to 8.9±0.6 µm (N=51; mean ± S.E.M.), 12.8±0.7 µm (N=24), 12.4±0.7 µm (N=16), and 12.8±0.5 µm (N=24) above touching for WT, OSCA1.2W75K, OSCA1.2L80E, and OSCA1.2W75K/L80E, respectively. Bottom panel: the apparent threshold in µm above touching the cell for this cohort. (c) SAC maximal current (Imax) (top) and mmHg threshold (bottom) from WT and OSCA1.2W75K/L80E-expressing cells reveal no significant differences in the ability of negative pressure to activate channels in cell-attached patches (Student’s t-test). Also shown are data from single mutants OSCA1.2W75K and OSCA1.2L80E. Too few patches were obtained for OSCA1.2W75K to compare Imax. Electrode resistances for (c) were similar in all cases (WT: 2.3±0.1 MΩ (N=26); W75K: 2.1±0.4 MΩ (N=3), L80E: 2.2±0.1 MΩ (N=5), W75K/L80E: 1.8±0.1 MΩ (N=11)). For panels (b–c): individual cells are represented as scatter points; mean and S.E.M. are displayed.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Amino acid sequence alignment of Arabidopsis thaliana OSCA3.1, OSCA1.1, and OSCA1.2. Secondary structure of OSCA3.1 represented on top, where rectangles represent α helices and arrows β strands. Dashed lines correspond to regions not modelled. π-helical turns labeled in magenta. IL2H2 and IL2H3 were modelled as poly-Ala and the registry was assigned tentatively. Purple arrowheads point to residues in the amphipathic helix that were mutated in OSCA1.2 for electrophysiology experiments. Predicted lipid-interacting residues denoted by light blue (conserved between OSCA1.2 and OSCA3.1) or brown (not conserved) arrowheads. Evolutionarily coupled residues marked by plus sign (+), with each pair having the same color. TM: Transmembrane; IL: Intracellular Loop; CT: C-terminal; H: Helix; ß: ß-strand.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Structure of MscL (PDB:2OAR). The amphipathic helix is highlighted in purple. (b) Amphipathic helix of MscL with lipid-facing residues labeled. (c) Superposition of transmembrane region of one protomer of OSCA3.1 (TM0 was excluded for simplicity) and homologous mouse (m) TMEM16F (PDB:6QP6). (d) Inset from (c): zoom-in view of amphipathic helix of OSCA3.1 (left) and homologous intracellular helix of mTMEM16F (right). Lipid-facing residues of OSCA3.1 are labeled. (c) EM density of unsharpened density of OSCA3.1 (left) and mTMEM16F (right, EMDB: 4611) showing the position of respective helices shown in (c) and (d). A gaussian-filter of 2 σ was applied to the densities. Horizontal gray lines denote the approximate position of the membrane bilayer.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Introduction of arginine from OSCA3.1 into the OSCA1.2 background did not alter the poke-induced response. Left panel: Maximum poke-induced whole-cell currents observed for cells exposed to displacements up to 7.2±1.4 µm (N=7; mean ± S.E.M.) and 6.5±0.6 µm (N=6) above touching for WT and OSCA1.2P77R, respectively. Center panel: the apparent threshold in µm above touching for the cells in this cohort. Right panel: Time constant of inactivation of currents elicited in the cells in this cohort.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Poke-induced whole-cell current responses are observed in HEK-P1KO cells expressing OSCA3.1. (a) Maximum poke-induced currents observed in whole-cell mode for cells exposed to displacements up to 10.4±1.2 µm (N=6; mean ± S.E.M.) and 13.8±0.9 µm (N=3) above touching for OSCA1.2WT and OSCA3.1WT, respectively. Although 6 of 6 OSCA1.2 expressing cells responded to poking, only 3 of 10 showed a response before the disruption of the recording. (b) The apparent threshold in µm above touching the cell for this cohort.
 
 We then tested whether these mutations in the AH affected the response of OSCA1.2 to stretch. Contrary to what was observed during poking, all cell-attached patches revealed stretch-activated currents (WT: 25 of 26 cells; W75K: 3 of 3; L80E: 5 of 5; W75K/L80E: 11 of 11; Figure 2c, top panel; electrode resistances were similar in all cases [see Figure legend]). Despite differences in the amplitude of macroscopic currents, which could be explained by variation in expression levels, all mutant channels were activated at similar thresholds (WT: –48±5 mmHg (N=25); W75K: –56±11 mmHg (N=3), L80E: –41±6 mmHg (N=5), W75K/L80E: –53±8 mmHg (N=11)) (Figure 2c, bottom panel). In all cases, there was variability in the rate of inactivation from moderately fast to extremely slow (data not shown). Overall, the observed stretch response of OSCA1.2 was apparently not affected by the mutations we introduced.
 
@@ -48,15 +171,15 @@ Subsequently, we mutated the proline in the OSCA1.2 AH to the corresponding argi
 
 It is worth noting that in our initial characterization, OSCA3.1-expressing cells produced SAC while poke did not induce observable currents (Murthy et al., 2018). However, in the present experiments we were able to record poke-activated currents mediated by OSCA3.1 on a few occasions (OSCA1.2WT: 6 of 6 cells; OSCA3.1WT: 3 of 10) (Figure 2—figure supplement 4a). The apparent threshold for OSCA3.1 activation by poke-induced membrane displacement tended to be higher than for OSCA1.2 but the difference was not statistically significant (OSCA1.2WT: 10.4±1.2 µm (N=6; mean ± S.E.M.); OSCA3.1WT: 13.8±0.9 µm (N=3)) (Figure 2—figure supplement 4b), perhaps due to the low numbers of responsive cells analyzed. These data suggest that the poking stimulus is capable of activating OSCA3.1 but the stimulus intensity required is close to the rupture point of the HEK293T-Piezo1-knockout (HEK-P1KO) cells used in our assay.
 
-## Replacing the OSCA3.1 Beam-Like Domain (BLD) in OSCA1.2 had no effect on stretch-induced currents but decreased the apparent sensitivity of the cells to poke
+### Replacing the OSCA3.1 Beam-Like Domain (BLD) in OSCA1.2 had no effect on stretch-induced currents but decreased the apparent sensitivity of the cells to poke
 
 One of the unique features of OSCAs is the presence of the BLD, a hydrophobic hook that, by inserting itself into the membrane, may serve as an anchor that could potentially be displaced under tension (Jojoa-Cruz et al., 2018; Liu et al., 2018; Maity et al., 2019). Hydrogen/deuterium exchange mass spectrometry (HDXMS) of rice OSCA1.2 indicated that the helix of the BLD closest to the membrane undergoes less deuterium exchange and potentially remains associated to a neighboring surface (Maity et al., 2019), hinting at an important interaction with TM6b. In OSCA3.1, the BLD is poorly resolved, likely due to flexibility (Figure 1c). To test whether the increased flexibility in this region affects MA responses, we replaced the BLD of OSCA1.2 with the BLD of OSCA3.1 (Figure 3a). HEK-P1KO cells expressing the chimera OSCA1.2OSCA3.1-BLD produced similar MA currents in both poke and stretch assays (Figure 3b and c) with the exception that a slightly stronger displacement stimulus was required to activate the mutant channels (Figure 3b, bottom panel). These data suggest that the BLD is not responsible on its own for the ability of the channels to be activated by poking, however, it appears to play a role. As expected for similar SAC from cells expressing OSCA1.2 and OSCA3.1, there was no obvious change in SAC when the OSCA1.2 BLD was replaced with the OSCA3.1 BLD. It should be noted that the BLD tolerates a certain degree of mutation as sequence alignment in this region shows higher variability than other secondary structures of OSCAs (Figure 2—figure supplement 1). Thus, we cannot rule out that in the OSCA1.2 background, the BLD of either channel is capable of performing a similar role.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93147/elife-93147-fig3-v1.jpg)
 
-**Figure 3.:** OSCA3.1-BLD chimera.(a) Amino acid sequence alignment of the BLD region of OSCA1.2 and OSCA3.1. Full alignment in Figure 2—figure supplement 1. Blue line at bottom of sequences denotes the sequence swapped in OSCA1.2OSCA3.1-BLD chimera. (b) Poke-induced responses are observed in HEK-P1KO cells expressing OSCA1.23.1-BLD. Top panel: Maximum poke-induced currents observed in whole-cell mode for cells exposed to displacements up to 9.8±0.8 µm (N=11; mean ± S.E.M.) and 11.8±0.6 µm (N=19) above touching for WT and OSCA1.23.1-BLD, respectively. The percentage of cells with responses are shown above. Bottom panel: the apparent threshold in µm above touching the cell for this cohort. (c) SAC Imax (top) and mmHg threshold (bottom) from WT and OSCA1.23.1BLD-expressing cells reveal similar activity induced by negative pressure in cell-attached patches. Data shown were obtained from the same experiments. Electrode resistances for (c) were similar in all cases (WT: 2.4±0.1 MΩ (N=12); OSCA1.2OSCA3.1-BLD: 2.5±0.1 MΩ (N=13)).
+**Figure 3.:** (a) Amino acid sequence alignment of the BLD region of OSCA1.2 and OSCA3.1. Full alignment in Figure 2—figure supplement 1. Blue line at bottom of sequences denotes the sequence swapped in OSCA1.2OSCA3.1-BLD chimera. (b) Poke-induced responses are observed in HEK-P1KO cells expressing OSCA1.23.1-BLD. Top panel: Maximum poke-induced currents observed in whole-cell mode for cells exposed to displacements up to 9.8±0.8 µm (N=11; mean ± S.E.M.) and 11.8±0.6 µm (N=19) above touching for WT and OSCA1.23.1-BLD, respectively. The percentage of cells with responses are shown above. Bottom panel: the apparent threshold in µm above touching the cell for this cohort. (c) SAC Imax (top) and mmHg threshold (bottom) from WT and OSCA1.23.1BLD-expressing cells reveal similar activity induced by negative pressure in cell-attached patches. Data shown were obtained from the same experiments. Electrode resistances for (c) were similar in all cases (WT: 2.4±0.1 MΩ (N=12); OSCA1.2OSCA3.1-BLD: 2.5±0.1 MΩ (N=13)).
 
-## Substitution of potential lipid-interacting lysine residues for isoleucine abrogates the poke response in OSCA1.2
+### Substitution of potential lipid-interacting lysine residues for isoleucine abrogates the poke response in OSCA1.2
 
 Lipids play an important role in the stability and function of ion channels (Duncan et al., 2020). In TRAAK, a eukaryotic mechanosensitive channel, occlusion of the pore by a lipid acyl chain has been proposed as a gating mechanism (Brohawn et al., 2014a; Brohawn et al., 2014b). In the volume-regulated channel SWELL1 lipids block the pore in the closed state (Kern et al., 2023). In the bacterial mechanosensitive channel MscS, the occupation of lipid pockets may determine channel conformation (Pliotas et al., 2015; Zhang et al., 2021), and in FLYC1, a Venus flytrap homolog of MscS, conformational changes may allow lipids to access the pore and occlude ion conduction (Jojoa-Cruz et al., 2022). Moreover, exposure of inside-out patches from OSCA1.1-expressing HEK cells to lyso-phosphatyidylcholine (LPC) enhanced channel response to stretch (Zhang et al., 2018).
 
@@ -82,34 +205,34 @@ Overall, the analysis of these mutants demonstrates the involvement of the AH an
 
 ## Materials and methods
 
-## Expression constructs
+### Expression constructs
 
 For structural studies, the OSCA3.1 (UniProt ID: Q9C8G5) coding sequence was synthesized using optimized codons for expression in human cells and subsequently cloned into the pcDNA3.1 vector used in our previous report (Jojoa-Cruz et al., 2018). In this plasmid, the C terminus of the protein sequence is followed by a PreScission Protease cleavage site, EGFP and a FLAG tag.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Samples of OSCA3.1 in nanodisc were obtained following the same method reported previously for OSCA1.2 in nanodiscs (Jojoa-Cruz et al., 2018), with the exception of the detergent used. Instead of beta-D-maltopyranoside (DDM), we used Lauryl Maltose Neopentyl Glycol (LMNG) due to increased yields. Thus, the detergent composition of the solubilization and wash buffers was 1%/0.1% and 0.01%/0.001% LMNG/cholesteryl hemisuccinate (CHS), respectively. Fractions from Size Exclusion Chromatography (SEC) corresponding to the OSCA3.1 in nanodiscs peak were concentrated to 3.2 mg/mL (corrected using the extinction coefficient of OSCA3.1).
 
-## Cryo-EM sample preparation and data collection
+### Cryo-EM sample preparation and data collection
 
 A total of 3.5 µL of OSCA3.1 at 3.2 mg/mL were frozen using the same conditions as OSCA1.2 samples (Jojoa-Cruz et al., 2018). Grids were imaged on a Titan Krios (Thermo Fisher) operating at 300 kV with a K2 Summit direct electron detector (Gatan), with pixel size of 1.03 Å (nominal magnification of 29,000 x). A total of 38 frames were collected per movie, adding to a total dose of ~50 electrons per Å2. Automated image collection was done through Leginon (Suloway et al., 2005) using a defocus range of –0.4 to –1.5 µm. A total of 8375 movies were collected.
 
-## Cryo-EM image processing
+### Cryo-EM image processing
 
 During collection, movies were aligned and dose-weighted using MotionCor2 (Zheng et al., 2017). The resulting micrographs were imported into cryoSPARCv2.5 (Punjani et al., 2017) and CTF values were estimated through Gctf (Zhang, 2016). Approximately 300 particles were manually picked from ~10 micrographs and subjected to 2D classification to obtain templates. Template picking was tested on 20 micrographs and particles used to generate better 2D templates. These templates were later used to pick particles on ~1600 micrographs. The resulting ~900 k particles were subjected to, in order, 2D classification, ab initio reconstruction, two rounds of heterogeneous refinement, homogeneous refinement and non-uniform refinement to obtain an initial 3D reference, which reached high-resolution. Unless otherwise specified, C2 symmetry was applied to all homogeneous, non-uniform and RELION 3D refinements.
 
 For the full dataset, 8375 movies were imported into cryoSPARCv2 and subjected to full-frame motion correction followed by Gctf estimation. Given the large size of the dataset, and the fact that initial processing had returned a high-resolution structure, we decided to apply a 2.6 Å CTF cutoff to reduce the number of micrographs to 3068 and speed up processing. Templates were generated based on the initial 3D reference. Template picking, followed by local motion correction and 2D classification resulted in 1,913,316 selected particles for our initial stack. Ab initio reconstruction produced three classes, and heterogeneous refinement was performed on the two worst classes. The resulting best class was combined with the best class from ab initio and used for two rounds of heterogeneous and homogeneous refinements. The heterogeneous refinement of the first round was done without symmetry, from that point onwards, C2 symmetry was imposed unless otherwise specified. Only particles belonging to the best class were selected for further processing (318,249). Non-uniform refinement, followed by 2 rounds of local refinement (without imposing symmetry), were performed on these particles before exporting them into RELION-3.1 (Scheres, 2012; Zivanov et al., 2020). The particle stack underwent the following process in RELION. 3D refinement, CTF refinement, 3D refinement with global angular searches, 3D refinement using SIDESPLITTER (SS) (Ramlaul et al., 2020), and two rounds of CTF and 3D refinements using SS. Unless specified, all 3D refinements were limited to local angular searches. 3D classification without alignment (no imposed symmetry) was performed on the particle stack and the best class, comprising 197,944 particles, was subjected to a final 3D refinement with SS. The map was sharpened separately with LocalDeblur (Ramírez-Aportela et al., 2020) through Scipion (de la Rosa-Trevín et al., 2013; de la Rosa-Trevín et al., 2016; Vilas et al., 2018) and DeepEMhancer using the ‘highRes’ model (Sanchez-Garcia et al., 2021). The FSC and local resolution of the map was calculated through RELION.
 
-## Model building and refinement
+### Model building and refinement
 
 A homology model for OSCA3.1 was obtained through SWISS-MODEL (Waterhouse et al., 2018), using as template the structure of OSCA1.2 in nanodiscs (PDB: 6MGV) (Jojoa-Cruz et al., 2018). Iterative rounds of building in Coot (Casañal et al., 2020; Emsley and Cowtan, 2004) and real space refinement in Phenix (Afonine et al., 2018b; Adams et al., 2019) and Rosetta (Wang et al., 2016) were used to generate the final model. SMILES codes for the ligands were used to obtain the appropriate restrains using eLBOW (Moriarty et al., 2009). Model validation was carried out with MolProbity (Williams et al., 2018) and EMringer (Barad et al., 2015) to the LocalDeblur map. Phenix mtriage (Afonine et al., 2018a) was used to calculate the map to model FSC. The final model comprises residues 2–102, 154–231, 307–388, 410–476, and 489–697, for a total of 537 out of 724 residues in OSCA3.1 sequence. A segment of the BLD was modelled as poly-A helices and registry was tentatively assigned based on sequence and structure alignment to OSCA1.2 (Jojoa-Cruz et al., 2018): residues 234–246 and 280–303 assigned as IL2H2 and IL2H3, respectively. Pore profiles were predicted by CHAP (Klesse et al., 2019; Rao et al., 2019). Structure figures were made with PyMOL (Schrödinger L, 2020), UCSF Chimera (Pettersen et al., 2004) or UCSF ChimeraX (Goddard et al., 2018). Amino acid sequence alignment was obtained from Clustal omega (Sievers et al., 2011) and represented with ESPript3 (Robert and Gouet, 2014). Sequences used for the alignment were the same as previous publication (Jojoa-Cruz et al., 2018), but the display was limited to the Arabidopsis thaliana OSCAs with solved structure.
 
-## Generation of mutants, cell culture and transfections
+### Generation of mutants, cell culture and transfections
 
 A vector containing OSCA1.2 pIRES2-mCherry was used for electrophysiology experiments (Murthy et al., 2018). The W75K substitution was introduced using Q5 site-directed mutagenesis kit (New England Biolabs, NEB). Substitutions L80E, K435I, and K536I were introduced using QuikChange multi site-directed mutagenesis kit (Agilent). For the BLD chimera, OSCA1.2 pIRES2-mCherry vector and the BLD of OSCA3.1 were separately amplified by PCR using Q5 High-Fidelity 2 X Master Mix (NEB), followed by fragment assembly using Gibson Assembly Master Mix (NEB). Kits were used according to manufacturer’s instructions.
 
 Cell culture and transfection of HEK-P1KO cells for electrophysiology experiments were conducted as previously reported (Jojoa-Cruz et al., 2018).
 
-## Electrophysiology
+### Electrophysiology
 
 Patch-clamp experiments in transiently transfected HEK-P1KO cells were performed in standard whole-cell and cell-attached mode using a Multi-clamp700A amplifier (Axon Instruments) and followed the procedures described in our previous report (Murthy et al., 2018).

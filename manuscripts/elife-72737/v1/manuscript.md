@@ -50,7 +50,7 @@ Building on these studies, we propose a novel approach for the study of disagree
 
 ## Materials and methods
 
-## Data
+### Data
 
 We sourced data from an Elsevier ScienceDirect corpus that was also used in a previous study (Boyack et al., 2018) and that is hosted at the Centre for Science and Technology Studies (CWTS) at Leiden University. This corpus contains the full-text information of nearly five million English-language research articles, short communications, and review articles published in Elsevier journals between 1980 and 2016. The corpus comprises articles from nearly 3,000 Elsevier journals. Given that Elsevier is the largest publisher in the world, this corpus is one of the largest multidisciplinary sources of full-text scientific articles currently available, with coverage of both natural sciences, medical sciences, as well as the social sciences and humanities.
 
@@ -58,7 +58,7 @@ We focus our analysis on sentences containing in-text citations (citances). Thes
 
 To facilitate analysis at the level of scientific fields, articles in Elsevier ScienceDirect and references cited in these articles were matched with records in the Web of Science database based on their DOI (where available) and a combination of publication year, volume number, and first page number. (The Web of Science database used by CWTS includes the Science Citation Index Expanded, the Social Sciences Citation Index, and the Arts & Humanities Citation Index; other Web of Science citation indices are not included). We used an existing classification of research articles and review articles in the Web of Science created at CWTS. In this hierarchical classification, each article published between 2000 and 2015 and indexed in the Web of Science was algorithmically assigned to a single micro-level scientific field, each of which are in turn members of one of 817 meso-level fields. It is at this meso-level that we perform our most detailed analyses, the categories being fine-grained enough to provide insights into local communities while also large enough to contain a sufficient number of citances. A further benefit of this approach to clustering is that each meso-level field, and each individual publication, can be directly grouped into one of five broad fields: biomedical and health sciences; life and earth sciences; mathematics and computer science; physical sciences and engineering; and social sciences and humanities. Linking our dataset to this classification system resulted in a subset of 3,883,563 papers containing 118,012,368 citances, spanning 2000–2015. The classification was created algorithmically based on direct citation links between articles, using the methodology introduced by van Eck and Waltman, 2010 and Traag et al., 2019. A visualization of the meso-level classification was created using the VOSviewer software (van Eck and Waltman, 2010).
 
-## Operationalizing disagreement
+### Operationalizing disagreement
 
 Researchers can disagree for many reasons, sometimes over data and methodologies, but more often because of differences in interpretation (Dieckmann and Johnson, 2019). Some of these disagreements are explicitly hostile and adversarial, whereas others are more subtle, such as contrasting findings with past results and theories. We introduce an inclusive definition of disagreement that captures explicit textual instances of disagreement, controversy, dissonance, or lack of consensus between scientific publications, including cases where citing authors are not taking an explicit stance themselves. Our definition distinguishes between two kinds of disagreement, which together capture the diversity of obvious and subtle disagreement in the scientific literature: paper-level disagreement and community-level disagreement.
 
@@ -70,15 +70,141 @@ Community-level disagreement, in contrast, refers to the situation in which a ci
 
 Here, we do not differentiate between paper-level or community-level disagreement, including both under our operationalization of disagreement.
 
-## Signal and filter terms
+### Signal and filter terms
 
 We compose cue-phrases of signal terms and filter terms. A variety of approaches can be used to generate these terms, and our approach is not dependent on any particular strategy. Here, we create a preliminary set of signal terms through an intensive iterative process of manually identifying, classifying, validating, and deliberating on strategies for retrieving instances of disagreement. This took place over several meetings, utilizing multiple approaches to generate signal words, including sourcing cues used in related work (e.g., Bertin et al., 2016; Chen et al., 2018), expanding this list with synonyms from online thesauruses, and ranking them by their frequency among citation sentences. This inductive process included several rounds of deliberation, manual annotation, and tests of inter-rater reliability in order to generate a robust list of candidate signal terms. The terms are intended to have high validity, but are not considered comprehensive.
 
 We queried the database for citances containing each of these signal terms (case insensitive), using wildcards to provide for possible variants of terms (e.g., “challenge”, “challenged”, and “challenges”), excluding generic negation phrases (“no”, “not”, “cannot”, “nor” and “neither” to exclude phrases such as “no conflict”), and for some signal terms excluding citances containing words associated with disciplinary jargon or methods, such as for the signal term “disagreement”, which often appears with Likert-scale descriptions (e.g., “scale”, “agreement”, or “kappa”) for survey-heavy fields. The modifications for the signal terms were derived after several rounds of review and validation. In total, citances returned by signal phrase queries comprise 3.10% of the database (n=145,351,937), though their relative occurrence varied dramatically, with the most coming from the “differ*” signal term, and the least from “disprove*” (see Table 1).
 
+**Table 1.**
+ Specific terms comprising each of the thirteen signal term sets and specific exceptions.The “*” symbol (wildcard) captures possible variants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Signal term</th>
+      <th>Variants</th>
+      <th>Exclusions</th>
+      <th>Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>challenge*</td>
+      <td></td>
+      <td></td>
+      <td>405,613</td>
+    </tr>
+    <tr>
+      <td>conflict*</td>
+      <td></td>
+      <td></td>
+      <td>212,246</td>
+    </tr>
+    <tr>
+      <td>contradict*</td>
+      <td></td>
+      <td></td>
+      <td>115,375</td>
+    </tr>
+    <tr>
+      <td>contrary</td>
+      <td></td>
+      <td></td>
+      <td>171,711</td>
+    </tr>
+    <tr>
+      <td>contrast*</td>
+      <td></td>
+      <td></td>
+      <td>1,257,866</td>
+    </tr>
+    <tr>
+      <td>controvers*</td>
+      <td></td>
+      <td></td>
+      <td>154,608</td>
+    </tr>
+    <tr>
+      <td>debat*</td>
+      <td></td>
+      <td>“parliament* debat*”, “congress* debat*”, “senate* debat*”, “polic* debat*”, “politic* debat*”, “public* debat*”, “societ* debat*”</td>
+      <td>150,617</td>
+    </tr>
+    <tr>
+      <td>differ*</td>
+      <td></td>
+      <td>“different*”</td>
+      <td>2,003,677</td>
+    </tr>
+    <tr>
+      <td>disagree*</td>
+      <td>“not agree*”, “no agreement”</td>
+      <td>“range”, “scale”, “kappa”, “likert”, “agree*” and/or “disagree” within a ten-word range of each other.</td>
+      <td>52,615</td>
+    </tr>
+    <tr>
+      <td>disprov*</td>
+      <td></td>
+      <td>“prove*” and “disprove*” within a ten-word range</td>
+      <td>2,938</td>
+    </tr>
+    <tr>
+      <td>no consensus</td>
+      <td>“lack of consensus”</td>
+      <td>“consensus sequence”, “consensus site”</td>
+      <td>16,632</td>
+    </tr>
+    <tr>
+      <td>questionable</td>
+      <td></td>
+      <td></td>
+      <td>24,244</td>
+    </tr>
+    <tr>
+      <td>refut*</td>
+      <td></td>
+      <td>“refutab*”</td>
+      <td>10,322</td>
+    </tr>
+    <tr>
+      <td>total</td>
+      <td></td>
+      <td></td>
+      <td>4,578,464</td>
+    </tr>
+  </tbody>
+</table>
+
 In order to more precisely capture valid instances of disagreement and to understand their function within the literature, we also queried for citances containing both the signal terms along with at least one of four sets of filter terms, with no more than four words separating signal and filter in the same sentence. As with signal terms, filter terms were derived from iterative manual efforts of the authors to identify terms most associated with valid instances of disagreement. Four distinct sets of terms were identified, corresponding to explicit mentions of terms relating to past studies, ideas, methods, and results (see Table 2). As with signal phrases alone, the relative incidence of signal and filter phrase combinations varies widely (see Table S1 in Supplementary file 1). Queries were constructed for each combination of signal term (13 total) and filter term (four total sets), producing 52 combined queries, alongside 13 queries consisting only of standalone signal terms unrestricted by filter terms, for a total of 65 queries.
 
-## Query validation
+**Table 2.**
+ Specific terms comprising each of the four filter term sets.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>studies</td>
+      <td>studies; study; previous work; earlier work; literature; analysis; analyses; report; reports</td>
+    </tr>
+    <tr>
+      <td>ideas</td>
+      <td>idea*; theory; theories; assumption*; hypothesis; hypotheses</td>
+    </tr>
+    <tr>
+      <td>methods</td>
+      <td>model*, method*, approach*; technique*</td>
+    </tr>
+    <tr>
+      <td>results</td>
+      <td>result*; finding*; outcome*; evidence; data; conclusion*; observation*</td>
+    </tr>
+  </tbody>
+</table>
+
+### Query validation
 
 From each set of results returned by the 65 queries, we selected 50 sentences for validation using simple random sampling without replacement (only 40 citances existed for “no consensus” +”ideas”), resulting in over 3,000 queried sentences. For each query, two coders were randomly selected from among the seven authors on this paper to manually annotate each citance as a valid or invalid instance of disagreement. The label was chosen based only on the text in the citation sentence, without knowledge on the citing paper’s title, authors, field of study, or the surrounding text.
 
@@ -88,6 +214,14 @@ We assessed the labels for each signal/filter term combination with two measures
 
 Most signal/filter term combinations had high agreement (Figure 1a). The overall percentage agreement between coders was high, at 85.5%. Given the difficulty of interpreting academic texts, this high percentage agreement demonstrates the robustness of our operationalization of disagreement. The signal term with the highest average agreement was no consensus (95.8%). There were only a few combinations with very low percentage agreement, mostly regarding the signal term questionable, which had an average lowest average percent agreement (64%); the nature of sentences returned from the questionable keyword tended to constitute marginal cases of disagreement. There was virtually no variance between the average percent agreement aggregated across filter terms. However, certain combinations of signal and filter terms were notable in resulting in higher or lower performance. For example, the difference between the highest agreement, differ* _standalone_ (100%), and differ* + methods (74%) is 26 perecentage points—the addition of filter terms can dramatically impact the kinds of citances returned by the query.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig1-v1.jpg)
+
+**Figure 1.:** Measures calculated from 50 randomly-sampled citances for each combination of signal term (vertical axis) and filter term (horizontal axis), annotated as valid or invalid instances of disagreement by two independent coders. (a) Percentage agreement, or the proportion of citances for which coders independently agreed on the label. (b) Percentage validity, or the proportion of citances which both coders labeled as valid. Averages for the various signal terms are shown in the left-most column; averages for the various filter terms are shown in the bottom row. (c) Percentage agreement (blue circles) and validity (red diamonds) of each signal/filter term combination, ordered from highest percent validity (top) to lowest percent validity (bottom). Numbers on the right are the total number of citances returned by querying using the signal/filter term combination, and are colored according to their log-transformed value. (d) Log-transformed count of citances returned by each query combination, colored by the (log-transformed) number of citances. Citance counts are non-exclusive, meaning that citances of the form debat* + studies will also be counted towards debat* _standalone_.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Callouts (I, II, …, VIII) map to examples in Table S3. a. Distribution of all disagreement citances appearing in papers across five fields: Biomedical and Health Sciences, Life and Earth Sciences, Physical Sciences and Engineering, Social Sciences and Humanities, and Math and Computer Science. b–d. Percentage change between the actual number of citances per field and signal/filter term combination compared to the expected given the disciplinary distribution (from a). The red line corresponds to 0 percent increase between the actual and expected. White dots indicate that the citances for that signal/filter term are under-represented (lower than expected, ratio less than zero), whereas black dots indicate that citances are over-represented (more than expected). Shown aggregated across signal terms (b), filter terms (c), and for all signal/filter term combinations (d).
+
 We calculate the percent valid as the percentage of citances annotated as valid by both coders; this provides an intuitive measure of the validity and reliability of a query. Signal/filter term combinations that best capture disagreement should have both high percent agreement and high percent validity. Not all signal/filter term combinations were found to be sufficiently valid (Figure 1b). Overall, 61.6% of all coded citances were labeled as valid, with large variance between the most (100%), and the least valid (0%) combinations. The signal term with the highest average validity regardless of filter term was no consensus (94.9%), followed by controvers* (88.8%) and debat* (82.4%). Unlike with percent agreement, average validity differs drastically between filter terms, with all having higher average validity than _standalone_. The combinations with highest validity are no consensus + studies (98%), no consensus + methods (98%), and no consensus _standalone_ (94%) For specific signal terms, the presence of a filter term can have a drastic impact of coded validity; for example, the validity of contrast* + ideas (80%) is four times greater than of contrast* _standalone_ and contrast + methods (20%).
 
 The queries that best capture instances of disagreement are those with the highest validity. We choose a validity threshold of 80% and exclude queries with lower validity from subsequent analysis. We also consider several adjustments to the threshold to assess the robustness of our empirical findings. 23 queries sit above this the 80% threshold (Figure 1c), including all five no consensus and controvers* queries, four debat* queries, two disagree* and contradict* queries, and one query each for contrary*, contrast*, conflict*, disprove*, and questionable. Because we prioritized precision, these 23 queries comprise only a fraction of total citances: 455,625, representing 0.31% of all citances in our dataset. We note that citances returned by queries are not exclusive; for example, a citance containing both controvers* and no consensus* would count towards both signal phrases. Similarly, a citance returned with the query controvers* + methods would also be returned by the controvers*. Naturally, more general queries, such as differ* and contrast* returned a much greater number of citances. Among queries above the 80% threshold, controvers* and debat* produce the highest number of citances (154,608 and 150,617 respectively, Figure 1d). The 455,625 citances returned by our queries as well as relevant publication and query details are available in Zenodo (Lamers and Van Eck, 2021).
@@ -96,39 +230,67 @@ The queries that best capture instances of disagreement are those with the highe
 
 Instances of disagreement, operationalized using the 23 validated queries, accounted for approximately 0.31% of all citation sentences (citances) extracted from indexed papers published between 2000 and 2015 (Figure 2a). Disagreement was highest in the social sciences and humanities (Soc & Hum; 0.61%), followed by biomedical and health sciences (Bio & Health; 0.41%), life and earth sciences (Life & Earth; 0.29%); physical sciences and engineering (Phys & Engr; 0.15%), and mathematics and computer science (Math & Comp; 0.06%).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig2-v1.jpg)
+
+**Figure 2.:** (a) Percent of all citances in each field that contain signals of disagreement, meaning they were returned by one of the 23 queries with validity of 80% or higher. Fields marked by lower consensus, such as in Soc & Hum, had a greater proportion of disagreement. (b) Percent of disagreement by field and over time, showing little change overall, but some changes by field. Text indicates the average percentage-point change per-year by field.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Each panel corresponds to the signal phrase, and lines within each panel to filter phrases.
+
 Our measure shows that disagreement has been relatively constant over time (Figure 2b), decreasing at an average rate of about 0.0005 percentage points per year. This is driven by falling disagreement in Phys & Engr (–0.0045 points per year), Soc & Hum (–0.0033 points per year), and Math & Comp (–0.0019 points per year). Phys & Engr stands out not only for its stable decrease each year, but also for its relative size; given a starting rate of one disagreement signal per 529 citances in 2000, by 2015 the rate of disagreement in Phys & Engr fell to one disagreement per 809 citances, a 35% decrease, compared to a 24% decrease for Math & Comp and only a 5% decrease in Soc & Hum. In contrast, disagreement has tended to increase somewhat in Bio & Health ( + 0.0017 points per year) and Life & Earth ( + 0.0018 points per year). These trends are likely not the result of uses of individual queries; for example, disagree* queries are over-represented in Phys & Engr (see VI in Figure 2—figure supplement 1), yet the incidence of these terms is falling or remaining stable (Figure 2—figure supplement 1). Similarly, debat* was over-represented in Soc & Hum and has increased in usage despite slight falling disagreement in the field. That these changes are not confined to any single query suggests that field-level differences represent changes in the level of disagreement within a field rather than linguistic or methodological artifacts.
 
-## Heterogeneity in disagreement across scientific fields
+### Heterogeneity in disagreement across scientific fields
 
 The more fine-grained meso-fields reveal heterogeneity within the larger fields (Figure 3). Overall, meso-field disagreement followed the same pattern as Figure 2, with higher scores in Soc & Hum and lower in Math & Comp. However, some meso-fields stand out. For example, some of the highest rates of disagreement found in Bio & Health meso-fields were in more socially-oriented journals such as Quality of Life Research, Value in Health, and Pharmacoeconomics. Similarly, in Math & Comp, the meso-field with the most disagreement contained journals relating to transportation science, a technical field which draws on management studies and other social science literature. This pattern held in Life & Earth, in which a meso-field with a relatively high share of disagreement contained papers in journals such as Marine Policy, Ecology & Society, and Forest Policy & Economics. The high disagreement in these meso-fields lends support to the hypothesis that regardless of the high-level field, more socially-oriented topics generate a higher level of disagreement. Also notable is that, in Life & Earth, several large fields with relatively high disagreement study the distant geological past or other inaccessible objects of studies, comprised of papers in journals such as the Journal of Vertebrate Paleontology, Cretaceous Research, and Sedimentary Research. A similar observation can be made in Phys & Engr, where astronomy-related fields featuring journals such as Planetary and Space Science and Theoretical Biology exhibit above-average rates of disagreement, along with fields pertaining to research into superconductivity. Field-level results must be interpreted cautiously, however, as our signal terms may misclassify citances based on disciplinary keywords and jargon (see Table S3 in Supplementary file 1).
 
-## Disagreement by contextual factors
+![Figure 3.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig3-v1.jpg)
+
+**Figure 3.:** Fine-grained view across 817 meso-level fields, each a cluster of publications grouped and positioned based on their citation links derived from the Web of Science database (see Materials and methods), 2000–2015. The area of each point is proportional to the number of disagreement citances in that field. Overlapping points are an artifact of their position and size, and bear no additional meaning. Color maps to the log ratio of the share of disagreement citances given the mean share across all fields, truncated at 4 x greater and 4 x lower than the mean. Soc & Hum tends to have a greater proportion of disagreement citances, and Math & Comp the least. Other panels show the same data, but highlight the meso-fields in each high-level field. Meso-fields of interest are highlighted, and labels show a selection of journals in which papers in each field are published. Journals listed in labels are representative of each meso-field in the Web of Science, and is not limited to those represented in the Elsevier ScienceDirect data. An interactive version of this visualization is available online at https://tinyurl.com/disagreement-meso-fields.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Percentage of disagreement citances by the relative age of the citing to the cited paper, in years, and high-level field, for papers published between 2000 and 2015. Intensity of color corresponds to the age category of the cited paper.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Shown for all citances (solid line) and disagreement citances (dotted line). For example, about 15% of disagreement citances in Physical Sciences and Engineering appear in the first 0%–5% of the sentences in documents.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Percentage of disagreement citances by gender of the citing-paper author, their authorship position (first or last), and the high-level field. Numbers above each bar corresponds to the ratio difference between the percentage of disagreement between women and men. The number below each bar corresponds to the number of disagreement citances. we infer a gender for the first and last authors of papers with a disagreement citance published after 2008, determined based on the author’s first name as in past work (Larivière et al., 2013).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/72737/elife-72737-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Percentage of disagreement citances among instances of non-self and self-citation, 2000–2015. A citance is defined as a self-citation when the citing and cited paper have at least one name in common. Results are shown by field. Numbers below each bar are the number of disagreement citances. Overall, disagreement is 2.4 times more common for non-self citation than for self-citation, with variance between major fields.
+
+### Disagreement by contextual factors
 
 We also investigated the extent to which other factors, including paper age, citance position, author demographics, and self-citation, relate to a paper’s being cited in the context of disagreement.
 
-## Paper age
+#### Paper age
 
 Authors may disagree with more recent papers at different rates than older ones. We quantify disagreement based on the age of a cited paper papers (relative to the citing paper) and find that, on average, younger papers are more likely to feature in a disagreement citance than older ones, which may indicate that the role of cited literature varies based on its age (He and Chen, 2018). Following a brief bump, or increase in disagreement (at 05–09 years), older papers tend to be receive fewer disagreement citances (Figure 3—figure supplement 1), a pattern driven by field differences. Low consensus, high complexity fields such as Soc & Hum and Bio & Health both exhibit a clear decreasing pattern, with falling disagreement as the paper ages. Life & Earth, in the middle of the hierarchy, repeats this pattern, but only after a period of stability in disagreement in the first ten years. Disagreement instead steadily increases over time in high consensus and low complexity fields such as Phys & Engr and Math & Comp.
 
-## Position in the paper
+#### Position in the paper
 
 Disagreement is not equally likely to occur throughout a paper. Investigating the distribution of disagreement citances across papers, we find that they are far more likely to occur in the beginning of a paper, likely in the introduction, and then towards the end, likely the discussion section (Figure 3—figure supplement 2), corresponding to previous observations of disagreement cue phrases in PLoS journals (Bertin et a., 2016), and likely indicating a unique argumentative role of disagreement. The precise patterns differ by field. For example, in Soc & Hum, disagreement citances are more evenly distributed through the first 40% of the paper, whereas in Bio & Health and Life & Earth disagreement citations are more likely to appear near the end of a paper. While these field level differences may reflect differences in how fields use citations, they are more likely the result of distinct article formats across fields (i.e., long literature reviews in Soc & Hum).
 
-## Gender of Citing-Paper Author
+#### Gender of Citing-Paper Author
 
 Men and women authors may issue disagreement citances at different rates. To investigate this, we infer a gender for the first and last authors of papers issuing a disagreement citance and published after 2008, determined based on the author’s first name as in past work (Larivière et al., 2013). Overall, there is little difference in the rate at which disagreement is introduced by men and women first and last authors (Figure 3—figure supplement 3). The one exception is Math & Comp, in which women last authors issue 1.2 times more disagreement citations than men, though the rate of disagreement is small, and driven by a small number of instances.
 
-## Self-citation
+#### Self-citation
 
 As a confirmation of overall validity, we measure the rate of disagreement by instances of self-citation and non-self-citation. We expect that authors will be less likely to cite their own work within the context of disagreement. Indeed, we find that the rate of disagreement for non-self-citations is 2.4 times greater than for self-citations (Figure 3—figure supplement 4), demonstrating that our indicator of disagreement affirms expectations. The field with the largest difference is Bio & Health (2.5 times greater), followed by Phys & Engr (2.2 times greater), Math & Comp (2.2 times greater), Life & Earth (1.9 times greater), and finally, Soc & Hum (1.6 times greater).
 
-## Robustness
+### Robustness
 
 To test the robustness of our results, we compare findings using the 23 queries with greater than 80% validity to those using the 36 queries with greater than 70% validity. The new queries include contradict* _standalone_, contrary + studies, contrary + methods, conflict* + results, disagree* + methods, disagree* + ideas, disprov* + methods, disprov* + ideas, refut* + studies, refut* + results, refut* + ideas, debat* + ideas, and questionable + ideas. Queries above the 80% validity cutoff account for 455,625 citances; the addition of 13 queries above the 70% cutoff bring this total to 574,020.
 
 We find that our findings are robust whether using an 80% or 70% validity cutoff. Relaxing the validity cutoff results in including more citances, inflating the share of disagreement across all results. However, the qualitative interpretation of these results does not change (Table S4). The 80% and 70% cutoffs both produce the same ordering of fields from most to least disagreement. Similarly, the ordering of fields from high-to-low disagreement holds between the 80% and 70% cutoff for all quantities presented here, including the average change per year, the ratio of disagreement between non-self-citation and self-citation, and the average change in disagreement per age bin. Some fields gain more from these new queries than others, manifesting in more or less intense field differences. For example, Soc & Hum gains a full 17 percentage points in overall disagreement with the 70% threshold, with the increase across all fields at only eight points. Similarly, the ratio of non-self-citation to self-citation is 2.2 x for Math & Comp with the 80% cutoff, but only 1.3 x for the 70% cutoff. Future work may find that different thresholds are more appropriate across fields, depending on their distinct patterns of discourse.
 
-## Disciplinary differences in query results
+### Disciplinary differences in query results
 
 It is worthile to consider how specific queries manifest across fields, which can give insights into their unique uses of language and disagreement. We consider the incidence of each query compared to an expected value, given the distribution of citances across all high-level fields. This is necessary as the number of publications varies across fields. For example there are far more publications from Bio & Health than in other fields, accounting for a total of 47.5% of all publications indexed in the Web of Science Database; in contrast, publications in Math & Comp comprise a far smaller proportion of the database, accounting for only 3.1%.
 
@@ -142,21 +304,135 @@ Especially at the fine-grained field level, methodological artifacts can drive d
 
 Even though terms such as “public debate”, and “parliamentary debate” were excluded (Table 1), the debat* signal terms were over-represented in Soc & Hum (Figure 1—figure supplement 1b); conflict* was also overrepresented to a lesser extent. Interpretation of the results for main and meso-fields needs to be moderated by these, and other confounding artifacts.
 
-## Assessment of individual papers
+### Assessment of individual papers
 
 We perform a qualitative investigation of the individual papers that issued the most disagreement citations, and which were cited most often in the context of disagreement. First, we examine the citing paper perspective, that is those papers that issued the most citances (Table S5 in Supplementary file 2). These top papers demonstrate how methodological artifacts can contribute to these more extreme examples. For example, one of these papers considers the pedagogical and evaluative potential of debates in the classroom (Doody and Condon, 2012); the “debat*” signal term incorrectly classifies several citations as evidence of scientific disagreement. However, other papers offer interesting instances of disagreement, and exemplify lessons that should be considered in its study. For instance, one such paper concerns meteorite impact structures (French and Koeberl, 2010) and includes discussion on the controversies in the field. Another is a review article arguing for multi-target agents for treating depressive states (Millan, 2006), and catalogs the controversies around the topic. Yet another is a book on Neurotoxicology and Teratology, misclassified as a research article in the database, which illustrates how the length of an article can contribute to its likelihood of issuing a disagreement citation (Kalter, 2003).
 
 Considering the cited paper perspective—those papers that received the most paper-level disagreement citations or were referenced the most in the context of community disagreement—reveals clear instances of disagreement in the literature. Many of the studies receiving the most disagreement citances (Table S6 in Supplementary file 2) relate to a single longstanding scientific controversy in the earth sciences concerning the formation of the North China Craton, a tectonic structure spanning Northern China, Inner Mongolia, the Yellow Sea, and North Korea. This list of most-disagreed-with papers also includes a literature review that is cited as an exemplar of controversy, here regarding the existence of “lipid rafts” in cells (Munro, 2003), and a paper on fMRI research that is heralded as a methodological improvement in the field, and is often cited to draw a contrast with other methods (Murphy et al., 2009). A more thorough discussion of papers that issue and receive the most disagreement can be found in Supplementary file 2.
 
-## Disagreement and citation impact
+### Disagreement and citation impact
 
 We also explore whether disagreement relates to citation impact; whereas previous analysis revealed a positive relationship between conflict and citation (Radicchi, 2012), our preliminary results do not find evidence of increased citation, at least in the years immediately following the disagreement (Table 3). We arrived at this observation by comparing the number of citations received in year t + 1 for papers that featured in a disagreement citance for the first time in year t, with the average number of citations received in year t + 1 by papers that received the exact same number of citations in year t. This over- or under-citation of individual papers that encountered disagreement can then be aggregated to arrive at the average over- or under-citation following disagreement.
 
-We define t as the time in years since publication and c as the number of citations a paper received at time t. We calculate for each combination of t and c the number of papers pc,t that were first cited in the context of disagreement at time t when they held c citations. Using these, we calculate the number of citations received by these papers in the year following publication, averaged across all combinations of t and c,c¯next,disagreement=∑c∑tpc,t∗c¯next,disagreement,c,t∑c∑tpc,t
+**Table 3.**
+ Being cited in the context of disagreement has little impact on citations in the year following.For each field, shown are the number of cited papers, as well as for t + 1, t + 2 and t + 3 with t being the year in which a cited paper first featured in the context of disagreement, its average number of received citations, expected number of received citations, and d the ratio between these two values. When d is greater than one, papers cited in the context of disagreement receive more citations in the following year than expected. When d is less than one, they receive fewer citations than expected.
 
-In the same way, we also calculate the expected number of citations, defined using the average number of citations received by papers that received c citations in year t, regardless of whether they were cited by a disagreement citation.c¯next,expected=∑c∑tpc,t∗c¯next,expected,c,t∑c∑tpc,t
 
-We calculated d as the ratio of these two values. When greater than one, it indicates that papers received more citations than expected in the year after having been cited in the context of disagreement. A value less than one indicates that papers with a disagreement citation received fewer citations in the year following.d=c¯next,disagreementc¯next,expected
+<table>
+  <thead>
+    <tr>
+      <th>Scientific field</th>
+      <th>Number of records</th>
+      <th>Avg. citations, t + 1 following disagreement</th>
+      <th>Expected citations, t + 1 following disagreement</th>
+      <th>dt+1</th>
+      <th>Avg. citations, t + 2</th>
+      <th>Expected citations, t + 2</th>
+      <th>dt+2</th>
+      <th>Avg. citations, t + 3</th>
+      <th>Expected citations, t + 3</th>
+      <th>dt+3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All</td>
+      <td>109,545</td>
+      <td>3.03</td>
+      <td>3.08</td>
+      <td>0.983</td>
+      <td>3.02</td>
+      <td>3.05</td>
+      <td>0.990</td>
+      <td>2.96</td>
+      <td>2.98</td>
+      <td>0.993</td>
+    </tr>
+    <tr>
+      <td>Bio &amp; Health</td>
+      <td>60,707</td>
+      <td>2.73</td>
+      <td>2.81</td>
+      <td>0.969</td>
+      <td>2.68</td>
+      <td>2.75</td>
+      <td>0.974</td>
+      <td>2.56</td>
+      <td>2.65</td>
+      <td>0.966</td>
+    </tr>
+    <tr>
+      <td>Life &amp; Earth</td>
+      <td>20,581</td>
+      <td>3.43</td>
+      <td>3.35</td>
+      <td>1.023</td>
+      <td>3.55</td>
+      <td>3.42</td>
+      <td>1.038</td>
+      <td>3.63</td>
+      <td>3.44</td>
+      <td>1.056</td>
+    </tr>
+    <tr>
+      <td>Math &amp; Comp</td>
+      <td>770</td>
+      <td>3.36</td>
+      <td>3.34</td>
+      <td>1.005</td>
+      <td>3.54</td>
+      <td>3.28</td>
+      <td>1.080</td>
+      <td>3.29</td>
+      <td>2.97</td>
+      <td>1.109</td>
+    </tr>
+    <tr>
+      <td>Phys &amp; Engr</td>
+      <td>18,011</td>
+      <td>3.55</td>
+      <td>3.52</td>
+      <td>1.006</td>
+      <td>3.48</td>
+      <td>3.44</td>
+      <td>1.010</td>
+      <td>3.43</td>
+      <td>3.34</td>
+      <td>1.027</td>
+    </tr>
+    <tr>
+      <td>Soc &amp; Hum</td>
+      <td>9,476</td>
+      <td>3.04</td>
+      <td>3.11</td>
+      <td>0.979</td>
+      <td>3.20</td>
+      <td>3.28</td>
+      <td>0.975</td>
+      <td>3.30</td>
+      <td>3.40</td>
+      <td>0.971</td>
+    </tr>
+  </tbody>
+</table>
+
+We define t as the time in years since publication and c as the number of citations a paper received at time t. We calculate for each combination of t and c the number of papers $p_{c,t}$ that were first cited in the context of disagreement at time t when they held c citations. Using these, we calculate the number of citations received by these papers in the year following publication, averaged across all combinations of t and c,
+
+$$
+c¯_{next,disagreement}=\frac{\sumc\sumtp_{c,t}∗c¯_{next,disagreement,c,t}}{\sumc\sumtp_{c,t}}
+$$
+
+In the same way, we also calculate the expected number of citations, defined using the average number of citations received by papers that received c citations in year t, regardless of whether they were cited by a disagreement citation.
+
+$$
+c¯_{next,expected}=\frac{\sumc\sumtp_{c,t}∗c¯_{next,expected,c,t}}{\sumc\sumtp_{c,t}}
+$$
+
+We calculated d as the ratio of these two values. When greater than one, it indicates that papers received more citations than expected in the year after having been cited in the context of disagreement. A value less than one indicates that papers with a disagreement citation received fewer citations in the year following.
+
+$$
+d=\frac{c¯_{next,disagreement}}{c¯_{next,expected}}
+$$
 
 The results of this analysis (Table 3) show that being cited in a context of disagreement has little to no effect on the citations received by papers in the year following their citation (or not) in the context of disagreement. Extending the analysis to citations received in year t + 2 and t + 3 yielded similar null results.
 

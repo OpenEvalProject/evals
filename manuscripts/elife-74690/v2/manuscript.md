@@ -23,19 +23,19 @@
 
 ### Affiliations
 
-1. https://ror.org/02tyrky19 School of Biochemistry and Immunology, Adjuvant Research Group, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland
-2. https://ror.org/02tyrky19 School of Chemistry, Scanlan Research Group, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland
-3. https://ror.org/05m7pjf47 School of Veterinary Medicine, UCD Veterinary Sciences Centre, University College Dublin Dublin Ireland
-4. https://ror.org/02tyrky19 School of Biochemistry and Immunology, Inflammation Research Group, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland
-5. https://ror.org/013meh722 Hutchison/MRC Research centre, MRC Cancer Unit, University of Cambridge Cambridge United Kingdom
-6. https://ror.org/02tyrky19 School of Biochemistry and Immunology, Macrophage Homeostasis Group, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland
-7. https://ror.org/02tyrky19 School of Genetics and Microbiology, Department of Genetics, Trinity College Dublin Dublin Ireland
+1. School of Biochemistry and Immunology, Adjuvant Research Group, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+2. School of Chemistry, Scanlan Research Group, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+3. School of Veterinary Medicine, UCD Veterinary Sciences Centre, University College Dublin Dublin Ireland ([ROR:05m7pjf47](https://ror.org/05m7pjf47))
+4. School of Biochemistry and Immunology, Inflammation Research Group, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+5. Hutchison/MRC Research centre, MRC Cancer Unit, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+6. School of Biochemistry and Immunology, Macrophage Homeostasis Group, Trinity Biomedical Sciences Institute, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+7. School of Genetics and Microbiology, Department of Genetics, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
 
 † Corresponding author
 
 ## Abstract
 
-Macrophages are a highly adaptive population of innate immune cells. Polarization with IFNγ and LPS into the ‘classically activated’ M1 macrophage enhances pro-inflammatory and microbicidal responses, important for eradicating bacteria such as Mycobacterium tuberculosis . By contrast, ‘alternatively activated’ M2 macrophages, polarized with IL-4, oppose bactericidal mechanisms and allow mycobacterial growth. These activation states are accompanied by distinct metabolic profiles, where M1 macrophages favor near exclusive use of glycolysis, whereas M2 macrophages up-regulate oxidative phosphorylation (OXPHOS). Here, we demonstrate that activation with IL-4 and IL-13 counterintuitively induces protective innate memory against mycobacterial challenge. In human and murine models, prior activation with IL-4/13 enhances pro-inflammatory cytokine secretion in response to a secondary stimulation with mycobacterial ligands. In our murine model, enhanced killing capacity is also demonstrated. Despite this switch in phenotype, IL-4/13 trained murine macrophages do not demonstrate M1-typical metabolism, instead retaining heightened use of OXPHOS. Moreover, inhibition of OXPHOS with oligomycin, 2-deoxy glucose or BPTES all impeded heightened pro-inflammatory cytokine responses from IL-4/13 trained macrophages. Lastly, this work identifies that IL-10 attenuates protective IL-4/13 training, impeding pro-inflammatory and bactericidal mechanisms. In summary, this work provides new and unexpected insight into alternative macrophage activation states in the context of mycobacterial infection.
+Macrophages are a highly adaptive population of innate immune cells. Polarization with IFNγ and LPS into the ‘classically activated’ M1 macrophage enhances pro-inflammatory and microbicidal responses, important for eradicating bacteria such as Mycobacterium tuberculosis. By contrast, ‘alternatively activated’ M2 macrophages, polarized with IL-4, oppose bactericidal mechanisms and allow mycobacterial growth. These activation states are accompanied by distinct metabolic profiles, where M1 macrophages favor near exclusive use of glycolysis, whereas M2 macrophages up-regulate oxidative phosphorylation (OXPHOS). Here, we demonstrate that activation with IL-4 and IL-13 counterintuitively induces protective innate memory against mycobacterial challenge. In human and murine models, prior activation with IL-4/13 enhances pro-inflammatory cytokine secretion in response to a secondary stimulation with mycobacterial ligands. In our murine model, enhanced killing capacity is also demonstrated. Despite this switch in phenotype, IL-4/13 trained murine macrophages do not demonstrate M1-typical metabolism, instead retaining heightened use of OXPHOS. Moreover, inhibition of OXPHOS with oligomycin, 2-deoxy glucose or BPTES all impeded heightened pro-inflammatory cytokine responses from IL-4/13 trained macrophages. Lastly, this work identifies that IL-10 attenuates protective IL-4/13 training, impeding pro-inflammatory and bactericidal mechanisms. In summary, this work provides new and unexpected insight into alternative macrophage activation states in the context of mycobacterial infection.
 
 ## Introduction
 
@@ -51,19 +51,43 @@ Due to the relevance of macrophage plasticity for the control of mycobacterial i
 
 ## Results
 
-## Prior alternative activation enhances mycobacterial killing
+### Prior alternative activation enhances mycobacterial killing
 
 Macrophages are key immune cells for combatting M. tuberculosis. Upon infection, alveolar macrophages serve as the initial hosts of the intracellular bacterium (Cohen et al., 2018) and bactericidal responses of recruited monocyte-derived macrophages (MDM) are crucial for control and killing of M. tuberculosis (Huang et al., 2018). Overall, it has been highlighted that an early Th1 driven immune response is key to early eradication of M. tuberculosis, where classical activation of macrophages results in effective bactericidal action. However, a complicating factor is the occurrence of concurrent parasitic disease, which instead drives Th2 immunity and alternative macrophage activation, which in turn has been demonstrated to enhance TB pathology (Moreira-Teixeira et al., 2016). In this context, we sought to investigate how type 2 responses may induce innate memory, and how such memory could affect macrophage bactericidal properties.
 
 To investigate the effect of IL-4 and IL-13 on macrophage acute and innate memory responses, an in vitro model of BCG infection was used. Murine bone marrow-derived macrophages (BMDMs) were stimulated with IL-4 and IL-13 (M(4/13)) on Day –1, followed by infection with BCG Denmark on either Day 0 or Day 6 (Figure 1A). On either day, the macrophages were exposed to roughly 30 bacteria per cell and after three hours extracellular bacteria were removed by washing and internalized bacteria were measured by colony forming units (CFUs), resulting in roughly 1–4 bacteria per cell, depending on the difference in uptake (Figure 1B). Internalized bacteria were measured by CFU (Figure 1—figure supplement 1A) at 27- and 51 hr post infection and killing capacity was determined as difference in CFU after the 3 hr time point (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of protocol for BCG infection following acute activation (Day 0) or training (Day 6) with IL-4 and IL-13. (B–C) BCG Denmark uptake (B) and killing after h as indicated (C) measured by difference in CFU after 3 hr per 0.5×106 BMDMs on Day 0 or Day 6. BMDMs were incubated with media, IL-4 with IL-13 or IFNγ with LPS for 24 hr on Day –1. (D) Secretion of indicated cytokines from BMDMs treated as in (C) standardized to 0.5×106 BMDMs. (B–D) Representative results (n=2 out of ≥3) showing mean ± SEM (B–C) or ± SD (D) and analyzed by student’s t-test (B) or multiple t-tests, with Holm-Sidak correction (C–D) compared with media control. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) BCG Denmark CFU counts (A) and cytokine secretion (B) on Day 0 or Day 6 after h following BMDM BCG infection. BMDMs were previously incubated with media control, IL-4 with IL-13 or IFNγ with LPS for 24 h on Day –1. Representative results (n=2 out of ≥3), standardized to 0.5×106 cells, shown as mean ± SEM (A–B) and analyzed by multiple t-test, with Holm-Sidak correction, compared with media control (B). * p≤0.05, ** p≤0.01.
+
 Mycobacterial killing was compared to naïve BMDMs incubated with media on day –1 (media control, M(-)) on both Days 0 and 6, and BMDMs classically activated with IFNγ and LPS (M(IFNγ/LPS)) on Day 0. M(IFNγ/LPS) could not be investigated on Day 6 due to reduced viability: by Day 6, M(IFNγ/LPS) displayed reduced cell numbers and upon the addition of live bacteria, all the remaining cells died within 24 hr (not shown). On Day 0, M(IFNγ/LPS) displayed significantly enhanced mycobacterial killing at 27- and 51 hr post infection, whereas M(4/13) displayed comparable killing capacity to naive M(-) (Figure 1C). Secretion of TNFα and IL-10 were also measured at 3-, 27-, and 51 hr post infection on Day 0 (Figure 1—figure supplement 1B) and Day 6 (Figure 1D). These cytokines were chosen as TNFα is critical in the early host response against M. tuberculosis (Bourigault et al., 2013; Keane et al., 2001), while IL-10 can prevent phagolysosome maturation in human macrophages (O’Leary et al., 2011) and promote disease progression in mice (Beamer et al., 2008). Following BCG infection on Day 0 (Figure 1—figure supplement 1B), no IL-10 secretion was detected, and only bactericidal M(IFNγ/LPS) secreted detectable levels of TNFα. Consistent with previous work, activation with IL-4 and IL-13 on the other hand did not enhance BCG killing nor induce inflammatory cytokine secretion.
 
 By contrast, on Day 6 (innate training responses), M(4/13) exhibited both heightened mycobacterial uptake (Figure 1B) and significantly greater killing capacity compared with untrained M(-), both at 27- and 51 hr post infection (Figure 1C and Figure 1—figure supplement 1A). Furthermore, this was accompanied by a near complete abrogation of IL-10 secretion, along with a minor decrease of TNFα compared with M(-) (Figure 1D), displaying an overall shift towards a more pro-inflammatory response profile. To investigate the change in phenotype of M(4/13) between the two days tested, a more detailed characterization was carried out.
 
-## Innate training with IL-4 and IL-13 promotes pro-inflammatory responses
+### Innate training with IL-4 and IL-13 promotes pro-inflammatory responses
 
 The current dogma suggests that classical (M1) macrophage activation induces upregulation of antigen presentation, enhanced secretion of pro-inflammatory cytokines including interleukin (IL)–1β, IL-6, and TNFα, as well as the production of reactive oxygen and nitrogen species (ROS and RNS, respectively) (Bystrom et al., 2008; Sica et al., 2015). By contrast, alternatively activated macrophages (M2) dampen inflammation, promote angiogenesis and scavenge debris (Gordon and Martinez, 2010; Sica et al., 2015). These macrophages are identified by their upregulation of chitinase-like 3–1 (Chil3), found in inflammatory zone-1 (Fizz1, Retnla) and arginase (Arg1) (Gabrilovich et al., 2012; Murray and Wynn, 2011), as well as surface expression of lectins, such as the macrophage mannose receptor (MR, CD206) (Brown and Crocker, 2016). To confirm the activation states induced in the present study tallied with the current literature and explore how these activation states may change over time, characterization of activated macrophages was carried out following acute activation and 1 week later (Figure 2 and Figure 2—figure supplement 1). Flow cytometry and qPCR analysis of M(IFNγ/LPS) and M(4/13), compared with inactivated M(-), showed that these activation phenotypes tallied with the literature: M(IFNγ/LPS) had elevated expression of CD80, major histocompatibility complex class II (MHC II) and inducible nitric oxide synthase (iNOS, Nos2) – responsible for production of the reactive nitrogen species, nitric oxide (NO) – whereas M(4/13) exhibited heightened expression of CD206, MHC II, Arg1, Chil3, and Retnla (Figure 2—figure supplement 1A-C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Cytokine secretion following BMDM 24 h incubation with irradiated M. tuberculosis (Mtb) (A) TLR agonists (B) or media on Day 6 as indicated. BMDMs were previously incubated with media, IL-4 with IL-13 or IFNγ with LPS on Day –1 for 24 hr (n=3). (C) qPCR of indicated mRNA in BMDMs treated as in (A) standardized to BMDMs incubated with media Day –1 and Day 6 (n=4). (D) Nitric oxide (NO) secretion from BMDMs treated as in (B) (n=3). (E) Expression of CD80, CD206 and MHC II (gating strategy Figure S2A) on BMDMs treated as in (A–B) (n=3). Mean ± SD are shown and analyzed by student’s t-test, compared with media control. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gating strategy for flow cytometry analysis, gating on cells, live cells and CD11b+F480+BMDMs. (B) Surface marker expression of CD80, CD206 and MHC II on BMDMs incubated with media as a control, IL-4 with IL-13 or IFNγ with LPS for 24 hr (n=3). (C) qPCR of indicated mRNA in BMDMs treated as in (B), standardized to media control (n=4). (D–E) Cytokine secretion from BMDMs incubated with media, IL-4, IL-13, IL-4 with IL-13 or IFNγ with LPS as indicated for 24 hr on Day –1 and stimulated with media, irradiated M. tuberculosis H37Rv (Mtb) or PAM3CSK4 for 24 hr on Day 0 (D) or 6 (E) (n=3). Mean ± SD are shown and analyzed by student’s t-test, compared to media control or as indicated. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–B) Cytokine secretion from BMDMs following incubation with media control, IL-4 with IL-13 or IFNγ with LPS for 24 hr on Day –1 and incubated with media or PAM3CSK4 on Day 0 (A) or Day 6 (B) for 24 hr (n=3). (C) qPCR of indicated mRNA in BMDMs treated as in (B), standardized to BMDMs incubated with media Day –1 and Day 6 (n=4). Mean ± SD are shown and analyzed by student’s t-test, compared with media control. * p≤0.05, ** p≤0.01, *** p≤0.001.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Cytokine secretion following BMDM incubation with media control or IL-4 with IL-13 for 24 hr on Day –1, with or without 1 hr pre-incubation with methylation inhibitor MTA, and incubation with irradiated M. tuberculosis H37Rv (Mtb) or PAM3CSK4 for 24 hr on Day 6 (n=4). (B–D) Protein extract (B) and densitometry values (C–D) from western blot analysis of histone methylation in BMDMs incubated with media control, yeast β-glucan (β-Gluc) or IL-4 with IL-13 on Day –1 and lysed on Day 6 (n=3). (B) Each replicate is labelled 1–3. (A, C–D) Mean ± SD are shown and analyzed by student’s t-test, comparing with or without MTA (A) or with media control (C–D). * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
 
 To examine their respective cytokine response profiles, M(IFNγ/LPS) and M(4/13) were stimulated with killed M. tuberculosis strain H37Rv (hereafter referred to as Mtb) or the TLR1/2 ligand tripalmitoyl-S-glyceryl-cysteine (PAM3CSK4) on either Day 0 or Day 6. Acutely activated M(IFNγ/LPS) demonstrated elevated secretion of TNFα, IL-6 and IL-10 in response to Mtb (Figure 2—figure supplement 1D) and elevated TNFα and IL-6 in response to PAM3CSK4 (Figure 2—figure supplement 2A), compared with M(-). By contrast, M(4/13) had attenuated secretion of each cytokine compared with M(-), following either Mtb or PAM3CSK4 stimulation. However, on Day 6 (innate memory responses), both M(IFNγ/LPS) and M(4/13) secreted greater pro-inflammatory TNFα and reduced anti-inflammatory IL-10 in response to Mtb (Figure 2A), and secreted elevated TNFα following PAM3CSK4 stimulation (Figure 2—figure supplement 2B). M(4/13) additionally exhibited increased IL-6 secretion in response to both stimuli. As with the BCG infection, M(IL-4/13) responses changed markedly between Day 0 and Day 6, shifting towards a pro-inflammatory response profile which was similar to classically activated macrophages.
 
@@ -77,9 +101,17 @@ Without a secondary stimulation on Day 6, M(4/13) and M(IFNγ/LPS) displayed hig
 
 Other M1 and M2 markers were analyzed by flow cytometry, following incubation with media, Mtb or PAM3CSK4 on Day 6 (Figure 2E). Without secondary stimulation, M(4/13) exhibited an M1-typical profile: heightened expression of CD80 and MHC II, whilst CD206 expression was comparable to M(-). Following secondary stimulation with either Mtb or PAM3CSK4, M(4/13) CD80, CD206, and MHC II expression was significantly greater compared with M(-). Having observed a change in activation markers, cytokine induction and bactericidal capacity in M(4/13) between Days 0 and 6, the next question was whether there was a corresponding shift in glycolytic metabolism.
 
-## BMDMs trained with IL-4 and IL-13 retain OXPHOS metabolism
+### BMDMs trained with IL-4 and IL-13 retain OXPHOS metabolism
 
 The increased energy and biosynthetic precursor demand induced by various macrophage activation states are met in distinct ways. To demonstrate this, extracellular flux analysis was carried out, using a mitochondrial stress test. Following basal respiration, oligomycin – an ATP synthase inhibitor – was added to impede electron transport chain (ETC)-driven ATP synthesis, followed by the proton ionophore FCCP (carbonyl cyanide-p-trifluoromethoxyphenylhydrazone), which uncouples the ETC from ATP synthase, allowing maximal respiration, and lastly rotenone and antimycin-A were added, which impede complex I and III of the ETC, respectively. Consistent with previous studies, M(4/13) on Day 1 displayed both an increase of oxygen consumption rate (OCR) – indicative of mitochondrial OXPHOS activity – and extracellular acidification rate (ECAR) – an indirect measurement of lactic acid secretion and thus indicative of glycolysis (Figure 3A). This demonstrated how alternative activation is intrinsically linked with enhanced mitochondrial OXPHOS activity, via the tricarboxylic acid (TCA) cycle (Van den Bossche et al., 2016; Wang et al., 2018). The TCA cycle is in turn driven by glycolysis, glutaminolysis and fatty acid oxidation (Viola et al., 2019). By contrast, acutely activated M(IFNγ/LPS) displayed an increase in ECAR and reduced OCR (Figure 3A), which was indicative of augmented glycolysis to meet the increased need for ATP, whilst ATP synthesis via OXPHOS is hindered (Liu et al., 2016). This glycolytic shift is critical for pro-inflammatory responses induced by classically activated macrophages and moreover results in mitochondrial dysfunction (Van den Bossche et al., 2016).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig3-v2.jpg)
+
+**Figure 3.:** (A) Extracellular flux analysis of BMDMs, following 24 hr incubation with IL-4 and IL-13, IFNγ and LPS or media (n=3). Mitochondrial stress test inhibitors: oligomycin (OM; blocks ATP synthase), FCCP (uncouples the electron transport chain [ETC] from ATP synthesis), rotenone (Rot; inhibits complex I of the ETC) and antimycin-A (AA; inhibits complex III of the ETC). (B) qPCR of indicated mRNA in BMDMs following incubation with media, IL-4 with IL-13 or IFNγ with LPS for 24 hr on Day –1 and stimulated with irradiated M. tuberculosis (Mtb) for 6 hr (Pkm2) or 24 hr (Ldha, Sdha and Myc), standardized to BMDMs given media on Day –1 and Day 6 (n=3). (C–E) Extracellular flux analysis (C) basal respiration, ATP production, proton leak (D) and spare respiratory capacity (SRC) (E) of BMDMs treated as in (B) with incubation with media or IL-4 with IL-13 on Day –1 and stimulation with media or Mtb for 24 hr on Day 6 (n=3). (F–G) Metabolites from BMDMs treated as in (B) incubated with media or IL-4 with IL-13 on Day –1 and stimulation with Mtb for 24 hr on Day 6 (n=4). MetaboAnalyst generated heatmap representing hierarchical clustering of the top 20 most up/down regulated metabolites (F). Fold change compared with media control (=1) (G). Mean ± SD are shown and analyzed by student’s t-test. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001. Abbreviations: AICAR, aminoimidazole carboxamide ribonucleotide; ECAR, extracellular acidification rate; FAO, fatty acid oxidation; GAR, glycinamide ribonucleotide; OCR, oxygen consumption rate; P, phosphate; PPP, pentose phosphate pathway.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) qPCR of indicated mRNA in BMDMs following incubation with media control, IL-4 with IL-13 or IFNγ with LPS on for 24 h Day –1 and stimulated with media (A) or PAM3CSK4 (B) on Day 6 for 6 hr (Pkm2) and 24 h (Ldha, Sdha and Myc). Fold change was standardized to BMDMs incubated with media Day –1 and Day 6 (n=3). (C) Spare respiratory capacity (SRC) of BMDMs treated as in (A–B), with incubation of media or IL-4 with IL-13 on Day –1 (n=3). (D–F) Metabolites isolated from BMDMs following incubation with either media control (untrained) or IL-4 with IL-13 (trained) for 24 hr on Day –1 and stimulation with Mtb for 24 hr on Day 6 (n=4). Metaboanalyst principal component analysis (PCA) (D) fold change of metabolites from trained BMDMs compared with media control (=1) (E) and calculated ratio of phosphocreatine (P-creatine) to ATP (F) are shown. Mean ± SD are shown and analyzed by student t-test, compared with media control. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
 
 Due to the link between glycolysis and classical activation, it is not surprising that prior work has proposed that a macrophage glycolytic shift is crucial for effective killing and thus overall control of TB infection (Gleeson et al., 2016; Huang et al., 2018). Furthermore, it has recently been proposed that M. tuberculosis impedes this glycolytic shift as an immune evasion strategy (Hackett et al., 2020). As we had observed that innate memory responses induced by IL-4 and IL-13 caused a switch towards a pro-inflammatory and bactericidal response profile, akin to a classically activated macrophage, it was pertinent to address whether there was an accompanying glycolytic shift. Previous work by Van den Bossche et al., 2016 has highlighted that because IL-4 activated human MDMs retain their metabolic versatility, they are able to be ‘re-polarized’ to a classical phenotype. This was demonstrated by activating MDMs for 24 hr with IL-4, before the cells were washed and re-stimulated with IFNγ and LPS for another 24 hr. MDMs previously activated with IL-4 secreted higher concentrations of TNFα, IL-6, and IL-12 compared with MDMs that were naïve prior to IFNγ and LPS stimulation. This adaptive quality to re-polarize is restricted to alternatively activated macrophages, as mitochondrial dysfunction in classically activated macrophages prevents them from re-polarizing to an alternative phenotype (Van den Bossche et al., 2016). Subsequently, we next addressed whether the IL-4 trained macrophages were adopting a metabolic profile similar to a classical macrophage, or retaining their more versatile metabolic profile.
 
@@ -95,6 +127,14 @@ To further investigate the metabolic profile of trained M(IL-4/13) vs untrained 
 
 Having observed that trained M(IL-4/IL-13) showed a distinct metabolic profile from classically activated macrophages, the roles of glycolysis and OXPHOS in driving cytokine production were next investigated with the use of inhibitors (Figure 4 and Figure 4—figure supplement 1). Incubation with the glycolysis and OXPHOS inhibitor 2-deoxy glucose (2-DG) (Wang et al., 2018) prior to stimulation with Mtb (Figure 4—figure supplement 1A) significantly reduced TNFα secretion in M(IFNγ/LPS) and M(-). 2-DG also reduced PAM3CSK4 induced TNFα in M(4/13) and M(IFNγ/LPS) (Figure 4—figure supplement 1B) and reduced IL-6 secretion in M(4/13) following either Mtb or PAM3CSK4 stimulation. Secretion of anti-inflammatory IL-10 following Mtb stimulation was also reduced by 2-DG in M(IFNγ/LPS) and M(4/13). This demonstrated that glycolysis, OXPHOS or both were involved in driving cytokine responses to Mtb and PAM3CSK4 in all tested macrophages.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cytokine secretion from BMDMs following incubation with media, IL-4 with IL-13 or IFNγ with LPS for 24 hr on Day –1 and incubation with irradiated M. tuberculosis (Mtb) on Day 6 for 24 hr, with or without pre-incubation (Day 6) of oligomycin (OM) or BPTES (n=4). (B) Cytokine secretion from BMDMs treated as in (A) with or without glucose depleted conditions between Day –1–7 (n=3). Mean ± SD are shown and analyzed by student’s t-test as indicated. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Cytokine secretion from BMDMs following incubation with media control, IL-4 with IL-13 or IFNγ with LPS for 24 hr on Day –1 and incubation with irradiated M. tuberculosis H37Rv (Mtb) (A) or PAM3CSK4 (B) for 24 hr on Day 6, with or without pre-incubation of metabolic inhibitors oligomycin (OM) (n=3), 2-deoxy glucose (2-DG) (n=3) or BPTES (n=4). (C) Cytokine secretion from BMDMs following incubation with media control, IL-4 with IL-13 or IFNγ with LPS for 24 hr on Day –1 and incubation with media or PAM3CSK4 for 24 hr on Day 6, with or without glucose depleted conditions between Day –1–7 (n=3). Mean ± SD are shown and analyzed by student’s t-test as indicated. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
 To further examine the role of OXPHOS, the ATP-synthase inhibitor oligomycin (OM) and the glutaminase inhibitor bis-2-(5-phenylacetamido-1,3,4-thiadiazol-2-yl)ethyl sulfide (BPTES) were used prior to secondary stimulation. The role of glutaminolysis in the trained M(IL-4/13) was of interest, as it has previously been highlighted to compensate for inhibition of glycolysis and fuel the TCA cycle during IL-4-induced macrophage activation (Wang et al., 2018). In the trained M(4/13), inhibition of either OXPHOS or glutaminolysis significantly reduced TNFα and IL-6 secretion following stimulation with either Mtb (Figure 4A) or PAM3CSK4 (Figure 4—figure supplement 1B), suggesting that both processes helped drive pro-inflammatory responses. By contrast, in trained M(IFNγ/LPS), although the markedly lower level of IL-6 was further impeded by either inhibitor, the secretion of TNFα was unaffected, supporting M(IFNγ/LPS) use of glycolysis to drive pro-inflammatory responses. OM and BPTES furthermore impeded IL-10 secretion from M(IFNγ/LPS), whereas OM reduced IL-10 secretion in M(4/13) and BPTES did not (Figure 4A). In the case of trained M(4/13) this implicated that glutamine metabolism was selectively a driver of pro-inflammatory cytokine responses.
 
 To further cement the differences in glycolytic metabolism between trained M(IFNγ/LPS) and M(4/13), an experiment was carried out where BMDMs were incubated in either glucose depleted media or regular glucose-rich media (both without pyruvate) from Day-1 (Figure 4B). Whereas glucose depletion significantly reduced the secretion of TNFα, IL-6 and IL-10 from M(IFNγ/LPS) and M(-), following Mtb stimulation on Day 6, glucose depletion did not impair pro-inflammatory cytokine secretion of M(4/13); instead the secretion of both TNFα and IL-6 was elevated under these conditions, whilst levels of regulatory IL-10 were further reduced, displaying an even greater shift towards pro-inflammatory responses. Furthermore, stimulation with PAM3CSK4 yielded similar results (Figure 4—figure supplement 1C), although IL-6 secretion remained unaltered. This highlighted that although trained M(IFNγ/LPS) and M(4/13) had similar response profiles, M(4/13) appeared to retain M2-typical metabolism (Figure 5).
@@ -103,11 +143,23 @@ To further cement the differences in glycolytic metabolism between trained M(IFN
 
 **Figure 5.:** Pathways have been simplified. Key: metabolic pathways strongly upregulated by M1/M2 macrophage activation are highlighted by red/blue colored boxes, respectively. Inhibitors are indicated by green boxes. Arrow width represents which pathways are implicated (thicker) or not (narrower) in trained M(4/13) following stimulation with irradiated M. tuberculosis (Mtb). Metabolites (measured by LC-MS) or enzymes (measured by qPCR) written in bold or in grey text are enhanced or reduced respectively compared with untrained macrophages. Trained M(4/13) do not employ classical activated macrophage metabolism – aerobic glycolysis and pentose phosphate pathway (PPP) – and instead employ alternative activated macrophage metabolism, characterized by production of ATP through the tricarboxylic acid (TCA) cycle, coupled with the electron transport chain (ETC) via oxidative phosphorylation (OXPHOS), as well as enhanced use of the urea cycle. Glutaminolysis, FAO and ATP synthesis regulation are implicated. This is demonstrated by inhibitor experiments and by changed expression of metabolites. Abbreviations: LDH, lactate dehydrogenase; NO, nitric oxide; P, phosphate; PEP, Phosphoenolpyruvic acid; PKM2, pyruvate kinase M2; SDH, succinate dehydrogenase.
 
-## IL-10 negatively regulates innate training
+### IL-10 negatively regulates innate training
 
 A key consideration regarding alternative macrophage activation and TB infection is the influence of concurrent parasitic disease. Along with IL-4 and IL-13, parasites can induce production of the regulatory cytokine IL-10 (Gause et al., 2013; Roy et al., 2018), which moreover promotes alternative macrophage activation (Bystrom et al., 2008; Mantovani et al., 2004). Furthermore, it has been shown that products of the helminth F. hepatica can train macrophages to secrete more IL-10 following secondary LPS stimulation (Quinn et al., 2019). Given its association with alternative macrophage activation and parasitic infection, we next considered the potential role of IL-10 in IL-4/13 induced macrophage innate memory responses.
 
 BMDMs were activated with IL-4, IL-13 and IL-10 (M(4/13/10)) to compare how this phenotype may have differed from M(4/13). Following secondary stimulation with Mtb, whilst M(4/13) demonstrated elevated TNFα and IL-6 by Day 7 (Figure 6A), inflammatory cytokine secretion by M(4/13/10) was reduced on both Day 1 and Day 7. Both M(4/13) and M(4/13/10) secreted lower concentrations of TNFα, IL-6 and IL-10 than M(-) on Day 1 (Figure 6—figure supplement 1A). Furthermore, following acute activation, M(4/13/10) had similarly elevated levels of Arg1 as M(4/13) and a comparably minor induction of Nos2 (Figure 6B). The addition of IL-10 moreover caused even greater augmentation of M2-associated Chil3 and Retnla expression. Accompanying flow cytometry analysis demonstrated that both M(4/13/10) and M(4/13) exhibited reduced expression of CD80, compared with M(-), along with enhanced expression of CD206, where the M(4/13/10) had greater CD206 expression (Figure 6—figure supplement 1B). Regarding MHC II, only M(4/13) displayed enhanced expression compared with M(-). The similar upregulation of M2-characteristic markers indicated that M(4/13) and M(4/13/10) were two types of alternatively activated macrophages.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig6-v2.jpg)
+
+**Figure 6.:** (A) Cytokine secretion following BMDM incubation with media or IL-4 and IL-13, with or without IL-10, for 24 hr on Day –1 and incubated for 24 hr with media or irradiated M. tuberculosis (Mtb) on Day 6. Mean ± SD (n=3) are shown and analyzed by student’s t-test, compared to media control or as indicated. (B) qPCR of indicated mRNA in BMDMs following 24 hr incubation with media or IL-4 and IL-13, with or without IL-10, standardized to media control. Mean ± SD (n=4) are shown. (C–F) BCG Denmark uptake (C) killing after h as indicated (D) as measured by difference in CFU after 3 hr per 0.5×106 BMDMs on Day 0 or Day 6. Representative images of Hoechst- (blue), modified auramine-O- (green) and phalloidin (red)-stained BMDMs were taken on Day 6, 27 hr after BCG incubation, where scale bars are, from top to bottom, 8- 10- and 10 μm (E). Cytokine secretion on Day 6, at h indicated (F). BMDMs were previously incubated with media or IL-4 and IL-13, with or without IL-10, for 24 hr on Day –1. (C–D, F) representative results (n=2 of ≥3) are shown as mean ± SD (C, F) or SEM (D) and analyzed by student’s t-test compared with media (C) or multiple t-tests, with Holm-Sidak correction, comparing with or without IL-10 (D, F). (G) Cytokine secretion following BMDM incubation with media or β-glucan (β-Gluc), with or without IL-10, for 24 hr on Day –1 and incubated for 6 hr (TNFα) or 24 hr (IL-10) with media or LPS on Day 6. (A, G) Mean ± SD (n=3) are shown and analyzed by student’s t-test. * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Cytokine secretion from BMDMs incubated with media as a control or IL-4 and IL-13, with or without IL-10 for 24 hr on Day-1, then incubated with media or Mtb for 24 hr on Day 0 (n=4). (B) Surface marker expression of CD80, CD206 and MHC II on BMDMs incubated with media as a control or IL-4 and IL-13, with or without IL-10 for 24 hr (n=3) (gating strategy shown Figure 2—figure supplement 1A). (C) qPCR of indicated mRNA in BMDMs treated as in (B) standardized to media control (n=4). (D) Surface marker expression of CD80, CD206, and MHC II on BMDMs following incubation with IL-4 and IL-13, with or without IL-10, for 24 hr on Day –1 and incubated with media, irradiated M. tuberculosis H37Rv (Mtb) or PAM3CSK4 for 24 hr on Day 0 (n=3). (E) qPCR of indicated mRNA in BMDMs treated as in (A) standardized to BMDM incubated with media on Day –1 and Day 0 (n=4). Mean ± SD are shown (A–E) and analyzed by student’s t-test, compared with media control (A, E) comparing with or without IL-10 (D, E). * p≤0.05, ** p≤0.01, *** p≤0.001, **** p≤0.0001.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–B) BCG Denmark CFU counts (A) and cytokine secretion (B) on Day 0 or Day 6 after h following BMDM BCG infection. BMDMs were previously incubated with media control or IL-4 and IL-13, with or without IL-10, for 24 hr on Day –1. Representative results (n=2 out of ≥3), standardized to 0.5×106 cells, shown as mean ± SEM (C–D) and analyzed by multiple t-test, with Holm-Sidak correction, compared with media control (D) * p≤0.05, ** p≤0.01.
 
 A similar comparison was made at Day 7, where both M(4/13) and M(4/13/10) retained enhanced Arg1, Retnla, and Chil3 expression and displayed enhanced Nos2 expression compared with naïve M(-) (Figure 6—figure supplement 1C). Regarding accompanying CD80, CD206, and MHC II expression (Figure 6—figure supplement 1D): in all tested conditions, CD206 expression was comparable between M(4/13) and M(4/13/10), whereas CD80 expression was elevated in M(4/13/10). Furthermore, M(4/13) retained an elevated expression of MHC II, which increased two- and fourfold following stimulation with Mtb and PAM3CSK4, respectively, whereas this elevation did not occur to the same degree in M(4/13/10). Whilst both M(4/13) and M(4/13/10) moreover displayed similar expression of Arg1 following Mtb stimulation on Day 7, the addition of IL-10 during activation hindered the upregulation of Nos2 observed in trained M(4/13), and further enhanced the transcription of Retnla and Chil3 (Figure 6—figure supplement 1E).
 
@@ -115,9 +167,17 @@ Our next question was how the addition of IL-10 during alternative activation wo
 
 As IL-10 appeared to impede innate training induced by IL-4 and IL-3, the question of whether IL-10 would impede training induced by other stimuli was investigated. BMDMs were trained with yeast β-glucan – with or without the addition of IL-10 – prior to LPS stimulation a week later (Figure 6G). The addition of IL-10 during training reduced the enhanced secretion of both TNFα and IL-10, demonstrating that IL-10 modulates innate training induced by other training stimuli, not only those induced by IL-4 and IL-13.
 
-## IL-4 and IL-13 induced training in human macrophages
+### IL-4 and IL-13 induced training in human macrophages
 
 Having identified that trained murine M(IL-4/13) show enhanced inflammatory responses following secondary challenge and that this was negatively regulated by IL-10, it was important to test whether these findings were applicable to humans. Human monocyte-derived macrophages (MoDM) were activated with human IL-4 and IL-13, with or without the addition of human IL-10 for 24 hr on Day –1, and then challenged with irradiated Mtb (Figure 7) or PAM3CSK4 (Figure 7—figure supplement 1) on Day 0 (acute activation) or Day 6 (innate training). MoDM incubated with media was used as a naive/untrained control and macrophages activated with human IFNγ and LPS were used to induce classical/M1 activation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig7-v2.jpg)
+
+**Figure 7.:** Cytokine secretion following MoDM 24 hr incubation with irradiated M. tuberculosis (Mtb) or media on Day 0 or on Day 6 as indicated. MoDM were previously incubated with media, IL-4 with IL-13 – with or without the addition of IL-10 – or IFNγ with LPS on Day -1 for 24 hr (n = 4, each rep shown by a symbol). Mean ± SD are shown and analyzed by student’s t-test, compared with media control or comparing IL-4/IL-13 training with or without IL-10, as indicated. * p ≤ 0.05, ** p ≤ 0.01, **** p ≤ 0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74690/elife-74690-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Cytokine secretion following MoDM 24 hr incubation with PAM3CSK4 or media on Day 0 or on Day 6 as indicated. MoDM were previously incubated with media, IL-4 with IL-13 – with or without the addition of IL-10 – or IFNγ with LPS on Day –1 for 24 hr (n=4, each rep shown by a symbol). Mean ± SD are shown and analyzed by student’s t-test, compared with media control or comparing IL-4/IL-13 training with or without IL-10, as indicated. * p≤0.05, ** p≤0.01, **** p≤0.0001.
 
 In response to a secondary challenge following acute activation, on Day 0, only MoDMs activated with IFNγ and LPS demonstrated enhanced TNFα secretion (Figure 7), whilst MoDMs activated with IL-4 and IL-13 demonstrated similar cytokine levels as the naïve control. At this time point, the addition of IL-10 resulted in significant background secretion of IL-10 and reduced IL-6 secretion following secondary stimulation with PAM3CSK4 (Figure 7—figure supplement 1), but otherwise cytokine levels were comparable to the naive control and MoDM activated with IL-4 and IL-13 alone. By contrast, following Mtb stimulation on Day 6, MoDMs trained with either IL-4 and IL-13 or IFNγ and LPS demonstrated significantly enhanced TNFα secretion compared with untrained cells, whilst secretion of IL-6 and IL-10 was unaffected (Figure 7). This result was also apparent following secondary challenge with PAM3CSK4 (Figure 7—figure supplement 1), although for MoDMs activated with IL-4 and IL-13, this marked increase was not statistically significant. Moreover, the IL-4 and IL-13 induced enhancement of TNFα was impeded by the addition of IL-10.
 
@@ -147,13 +207,793 @@ Van den Bossche et al., 2016 highlighted a key adaptive distinction between clas
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Animals
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli, serotype R515)</td>
+      <td>Lipopolysaccharide, LPS</td>
+      <td>Enzo</td>
+      <td>Cat# ALX-581–007 L002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. sapiens)</td>
+      <td>Primary cell isolation</td>
+      <td>Buffy packs from Irish Blood Transfusion Service</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, C57BL/6JOlaHsd)</td>
+      <td>Primary cell isolation</td>
+      <td>In-house colonies</td>
+      <td>C57BL/6JOlaHsd</td>
+      <td>Both sexes employed</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium bovis)</td>
+      <td>Bacille Calmette-Guérin (BCG) Denmark 1331</td>
+      <td>Gift to Prof. Gordon from Prof. Behr, McGill University, Canada</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium tuberculosis, strain H37Rv)</td>
+      <td>Irradiated whole cells of M. tuberculosis</td>
+      <td>BEI resources</td>
+      <td>NR-49098</td>
+      <td>Non-viable bacteria</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>L929</td>
+      <td>gift of Prof. Muñoz-Wolf, Trinity College, Dublingift of Prof. Sheedy, Trinity College, Dublin</td>
+      <td>N/A</td>
+      <td>Cell lines maintained in E. Lavelle and F. Sheedy labs.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b-APC-eFluor 780 (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 47-0112-82, Clone M1/70</td>
+      <td>FACS (0.1 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD206-PE (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 141706, Clone C068C2</td>
+      <td>FACS (0.4 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD80-FITC (Hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 561954, Clone 16–10 A1</td>
+      <td>FACS (0.15 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80-PerCP-Cy5.5 (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 45-4801-82, Clone BM8</td>
+      <td>FACS (0.25 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 (Mouse monoclonal)</td>
+      <td>Active Motif</td>
+      <td>Cat# 39763</td>
+      <td>WB (1/3,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K4me3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab8580</td>
+      <td>WB (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- H3K9me2 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1220</td>
+      <td>WB (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K27me3 (Mouse monoclonal)</td>
+      <td>Active Motif</td>
+      <td>Cat# 61017</td>
+      <td>WB (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHC class II-eFlour 450 (Rat monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 48-5321-82, Clone M5/114.15.2</td>
+      <td>FACS (0.2 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG (Goat monoclonal)</td>
+      <td>LI-COR</td>
+      <td>Cat# 925–32210</td>
+      <td>WB (1/5000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (Goat monoclonal)</td>
+      <td>LI-COR</td>
+      <td>Cat# 926–32211</td>
+      <td>WB (1/2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fc block: Anti-CD16/CD32 (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553142, Clone 2.4G2</td>
+      <td>FACS (0.5 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb _F</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>GCTTCTTTGCAGCTCCTTCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb _R</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>CGTCATCCATGGCGAACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Arg1 _F</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>TACAAGACAGGGCTCCTTTCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Arg1 _R</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>TGAGTTCCGAAGCAAGCCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chitl3 _F</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>AAGCTCTCCAGAAGCAATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chitl3 _R</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>AGAAGAATTGCCAGACCTGTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ldha _F</td>
+      <td>Primer BLAST</td>
+      <td>Eurofins genomics (MWG)</td>
+      <td>GAGACTTGGCTGAGAGCATAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ldha _R</td>
+      <td>Primer BLAST</td>
+      <td>Eurofins genomics (MWG)</td>
+      <td>GATACATGGGACACTGAGGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Myc _F</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>CAGCGACTCTGAAGAAGAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Myc _R</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>GACCTCTTGGCAGGGGTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nos2 _F</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>TCCTGGACATTACGACCCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nos2 _R</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>CTCTGAGGGCTGACACAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pkm2 _F</td>
+      <td>Primer BLAST</td>
+      <td>Eurofins genomics (MWG)</td>
+      <td>TGTCTGGAGAAACAGCCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pkm2_R</td>
+      <td>Primer BLAST</td>
+      <td>Eurofins genomics (MWG)</td>
+      <td>CGAATAGCTGCAAGTGGTAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Retnla _F</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>CAGCTGATGGTCCCAGTGAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Retnla _R</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>AGTGGAGGGATAGTTAGCTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sdha _F</td>
+      <td>Primer BLAST</td>
+      <td>Eurofins genomics (MWG)</td>
+      <td>GGAACACTCCAAAAACAGACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sdha _R</td>
+      <td>Primer BLAST</td>
+      <td>Eurofins genomics (MWG)</td>
+      <td>CCACCACTGGGTATTGAGTAGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbp _F</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>CAGGAGCCAAGAGTGAAGAACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbp _R</td>
+      <td>Primer BLAST</td>
+      <td>Invitrogen Custom DNA Oligos</td>
+      <td>AAGAACTTAGCTGGGAAGCCC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Heat-Shocked Bovine Serum Albumin (BSA)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12881630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-MLV reverse transcriptase</td>
+      <td>Promega</td>
+      <td>Cat# M3683</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human IFNγ</td>
+      <td>Peprotech</td>
+      <td>Cat# 300–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human IL-10</td>
+      <td>Peprotech</td>
+      <td>Cat# 200–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human IL-13</td>
+      <td>Peprotech</td>
+      <td>Cat# 200–13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human IL-4</td>
+      <td>Peprotech</td>
+      <td>Cat# 200–04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human M-CSF</td>
+      <td>Prospec Protein Specialists</td>
+      <td>Cat# CYT-308</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IFNγ</td>
+      <td>Peprotech</td>
+      <td>Cat# 315–05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IL-10</td>
+      <td>Peprotech</td>
+      <td>Cat# 210–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IL-13</td>
+      <td>Peprotech</td>
+      <td>Cat# 210–13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IL-4</td>
+      <td>Peprotech</td>
+      <td>Cat# 214–14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit (Pierce)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Griess Reagent System kit</td>
+      <td>Promega</td>
+      <td>Cat# G2930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Pure RNA Isolation Kit</td>
+      <td>Roche</td>
+      <td>Cat# 11828665001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IL-10 ELISA Kit uncoated</td>
+      <td>Invitrogen</td>
+      <td>Cat# 88710688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IL-6 ELISA Kit uncoated</td>
+      <td>Invitrogen</td>
+      <td>Cat# 88706688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human TNFα ELISA Kit uncoated</td>
+      <td>Invitrogen</td>
+      <td>Cat# 88734688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-10 ELISA MAX</td>
+      <td>BioLegend</td>
+      <td>Cat# 431411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-6 ELISA MAX</td>
+      <td>BioLegend</td>
+      <td>Cat# 431301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse TNFα DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# DY410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-deoxyglucose, 2-DG</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# D8375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antimycin-A</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# A8674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BPTES</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# SML0601-5mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CpG</td>
+      <td>InvivoGen</td>
+      <td>Cat# ODN M362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# C2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# G8270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutamine</td>
+      <td>Gibco</td>
+      <td>Cat# 25030–024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# G2025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MTA</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# D5011-25MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 75351</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PAM3CSK4</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-pms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly I:C</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-pic</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyruvate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# P5280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Resiquimod/R848</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-r848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rotenone</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# R8875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Chloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# S9888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valine-d8</td>
+      <td>CK isotopes</td>
+      <td>Cat# DLM-488</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>WGP Dispersible</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-wgp</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo 7</td>
+      <td>FlowJo LLC, Franklin Lakes, New Jersey</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health and the Laboratory for Optical and Computational Instrumentation</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaboAnalyst 5.0</td>
+      <td>Xia Lab @ McGill</td>
+      <td>https://www.metaboanalyst.ca/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Office Excel</td>
+      <td>Microsoft, Redmond, Washington</td>
+      <td>https://products.office.com/en-au/excel</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8.2</td>
+      <td>GraphPad Software, San Diego, California</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tracefinder 5.0</td>
+      <td>Thermo Fisher Scientific, Waltham, Massachusetts</td>
+      <td>https://www.thermofisher.com/ie/en/home/industrial/mass-spectrometry/liquid-chromatography-mass-spectrometry-lc-ms/lc-ms-software/lc-ms-data-acquisition-software/tracefinder-software.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4% PFA in PBS</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# NC0238527</td>
+      <td>Fixing buffer for flow cytometry and confocal microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acetonitrile</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10001334</td>
+      <td>Extraction buffer for Metabolomics</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM (high glucose)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# D5671</td>
+      <td>Cell culture media (BMDMs)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM (no glucose)</td>
+      <td>Gibco</td>
+      <td>Cat# 11966025</td>
+      <td>Cell culture media (BMDMs)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>dNTP Mix</td>
+      <td>Meridian Bioscience</td>
+      <td>Cat# BIO-39028</td>
+      <td>Nucleotides for cDNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FBS</td>
+      <td>Biosera</td>
+      <td>Batch# 015BS551</td>
+      <td>Serum for cell culture media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fixable Viability Stain 510</td>
+      <td>Invitrogen</td>
+      <td>Cat# 564406</td>
+      <td>Viability stain used for FACS</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10150888</td>
+      <td>DNA dye used for confocal microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>KAPA SYBR FAST Rox low qPCR Kit Master Mix</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# KK4622</td>
+      <td>Nucleic acid stain for qPCR</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lymphoprep</td>
+      <td>Stemcell Technologies</td>
+      <td>Cat# 07851</td>
+      <td>Density gradient medium for isolating PBMCs</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Methanol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10284580</td>
+      <td>Extraction buffer for Metabolomics</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Middlebrook 7H11 powder</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# M0428</td>
+      <td>For making Mycobacterial culture media (agar plates)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Middlebrook 7H9 powder</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# M0178</td>
+      <td>For making Mycobacterial culture media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Modified Auramine-O stain and quencher</td>
+      <td>Scientific Device Laboratory</td>
+      <td>Cat# 345–04 L</td>
+      <td>Mycobacterial stain for confocal micrsocopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PBS, sterile</td>
+      <td>Gibco</td>
+      <td>Cat# 14190094</td>
+      <td>Cell wash buffer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Penicillin-Streptomycin</td>
+      <td>Gibco</td>
+      <td>Cat# 15-070-063</td>
+      <td>Antibiotics for cell culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin-Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat# A22287</td>
+      <td>Stain actin for confocal microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Radio-Immunoprecipitation Assay (RIPA) buffer</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# R0278-50ML</td>
+      <td>Cell lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Random Hexamer Primer Mix</td>
+      <td>Meridian Bioscience</td>
+      <td>Cat# BIO-38028</td>
+      <td>Primers for cDNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Reverse Transcriptase Buffer</td>
+      <td>Promega</td>
+      <td>Cat# A3561</td>
+      <td>Buffer for cDNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNAseOUT</td>
+      <td>Invitrogen</td>
+      <td>Cat# 10777019</td>
+      <td>RNAse inhibitor for cDNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RPMI 1640 Glutamax</td>
+      <td>Gibco</td>
+      <td>Cat# 21875034</td>
+      <td>Cell culture media (MoDMs)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Seahorse Calibration Fluid pH 7.4</td>
+      <td>Agilent</td>
+      <td>Part# 100840–000</td>
+      <td>Extracellular flux calibration fluid</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Seahorse XF DMEM Medium</td>
+      <td>Agilent</td>
+      <td>Cat# 103575–100</td>
+      <td>Extracellular flux culture media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tween20</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# P1379-1L</td>
+      <td>Detergent for cell lysis and ELISA wash buffer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield mounting media</td>
+      <td>VWR</td>
+      <td>Cat# 101098–042</td>
+      <td>Mounting media for confocal microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Water, sterile</td>
+      <td>Baxter</td>
+      <td>Cat# UKF7114</td>
+      <td>Solvent</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Animals
 
 Mice used for primary cell isolation were eight to 16-week-old wild-type C57BL/6 mice that were bred in the Trinity Biomedical Sciences Institute Bioresources Unit. Animals were maintained according to the regulations of the Health Products Regulatory Authority (HPRA). Animal studies were approved by the TCD Animal Research Ethics Committee (Ethical Approval Number 091210) and were performed under the appropriate license (AE191364/P079).
 
-## Cell isolation and culture
+#### Cell isolation and culture
 
 Bone-marrow-derived macrophages (BMDMs) were generated as described previously by our group (Lebre et al., 2018). Briefly, bone marrow cells were extracted from the leg bones and were cultured in high glucose DMEM, supplemented with 8% v/v fetal bovine serum (FBS), 2 mM L-glutamine, 50 U ml–1 penicillin, 50 μg ml–1 streptomycin (hereafter referred to as complete DMEM [cDMEM]). Cells were plated on non-tissue cultured treated petri dishes (Corning) on day –8. Fresh medium was added on day –5 and on day –2 adherent cells were detached by trypsinization and collected. Unless specified otherwise, for acute/polarization studies, BMDMs were seeded in 12-well plates at 0.9×106 BMDMs per well, and for training studies, BMDMs were seeded in 24-well plates at 0.2×106 BMDMs per well.
 
@@ -161,7 +1001,7 @@ On day –1 BMDMs were cultured with medium (naïve/untrained) or activated with
 
 To generate human monocyte-derived macrophages (MoDMs), mononuclear cells were isolated on day –7 from peripheral blood buffy coats obtained from the Irish Blood Transfusion Services (Dublin, Ireland) using density gradient centrifugation with Lymphoprep. Cells were cultured on plastic in RPMI media supplemented with 10% FBS (hereafter referred to as complete RPMI [cRPMI]) and 20 ng ml–1 recombinant human M-CSF at 1×106 cells ml–1, seeded at 2×106 cells per well. On day –4, 1 ml of media was carefully removed from each well and replaced with fresh cRPMI, supplemented with 20 ng ml–1 recombinant human M-CSF. Non-adherent cells were removed by washing once on day –1 with pre-warmed PBS and incubated with cRPMI, supplemented with 5 ng ml–1 M-CSF. After a minimum of 4 hr of rest, either more media was added (naïve/untrained) or the MoDMs were activated with 20 ng ml–1 recombinant human IFNγ with 5 ng ml–1 LPS or 20 ng ml–1 IL-4 with 10 ng ml–1 IL-13, the latter with or without 20 ng ml–1 IL-10. After 24 hr (day 0), the media was removed and replaced with cRPMI, supplemented with 5 ng ml–1 M-CSF. For acute activation/polarization studies, the MoDMs were left to rest for 2 hr before experiment. For training studies, the MoDMs were left to rest, fed on day 3 (media supplemented with 2.5 ng ml–1 M-CSF) and experiments were carried out on day 6. Supply of human blood products from IBTS was approved by clinical indemnity to F. Sheedy.
 
-## BCG infection
+#### BCG infection
 
 Mature BMDMs were seeded in 24-well plates at 0.5×106 cells (acute activation) or 0.2×106 cells (training) per well on day –2. For imaging of internalized BCG in untrained and trained BMDMs, 0.2×106 BMDMs were seeded on circular glass coverslips (placed in 24 well plates, one coverslip per well) that had been previously treated with sodium hydroxide to aid attachment.
 
@@ -177,7 +1017,7 @@ For CFU counts, at each time point the media was removed, wells were washed once
 
 For imaging internalized BCG (wells containing glass coverslips), media was removed, BMDMs were washed with PBS and then fixed with 4% paraformaldehyde (in PBS) overnight. The paraformaldehyde was then removed and coverslips were stored in PBS.
 
-## Stimulation experiments
+#### Stimulation experiments
 
 Naive (media control) or activated BMDMs were incubated with media or secondary stimuli on day 0 (acute activation/polarization) or day 6 (training). Secondary stimuli: 150 μg ml–1 gamma-irradiated whole cells of Mycobacterium tuberculosis strain H37Rv (concentration measured by OD600, where 100 mg ml–1 was 0.32), 35 ng ml–1 PAM3CSK4, 25 ng ml–1 LPS, 5 μg ml–1 Poly I:C, 0.55 μg ml–1 R848, 10 μg ml–1 CpG.
 
@@ -189,7 +1029,7 @@ For glucose depletion training experiment: untrained or trained BMDMs were incub
 
 Naïve (media control) or activated MoDMs were incubated with media or secondary stimuli on day 0 (acute activation/polarization) or day 6 (training). Secondary stimuli: 250 μg ml–1 gamma-irradiated whole cells of Mycobacterium tuberculosis strain H37Rv, 100 ng ml–1 PAM3CSK4.
 
-## Seahorse
+#### Seahorse
 
 All real-time measurements of oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) were measured by using Seahorse system: Seahorse XFe96 Analyzer (Agilent). The analysis used was a Mitochondrial Stress Test (using a standard Agilent Seahorse protocol).
 
@@ -205,23 +1045,23 @@ The analysis was carried out according to the manufacturer’s instructions. Rec
 
 For training experiments, protein concentration was used to standardize the OCR and ECAR measurements. Supernatant was removed, cells were washed once in PBS and 10 μl of RIPA buffer was added per well. After pipetting up and down and scraping, the buffer was collected and samples from the same condition were pooled. Of pooled solution, 20 μl was used to measure protein concentration, using the Pierce bicinchoninic acid (BCA) assay kit (Thermo Scientific) according to the manufacturer’s instructions (microplate procedure). Absorbance was measured at 560 nm.
 
-## Metabolomics (LC-MS) sample preparation
+#### Metabolomics (LC-MS) sample preparation
 
 On day –2, BMDMs were seeded in 6-well plates: 1×106 cells per well and activated on day –1 with IL-4/13 as outlined or incubated with media. BMDMs were fed on day 3 and incubated with irradiated M. tuberculosis on Day 6 for 24 hr. Prior to metabolite extraction, cells were counted using a separate counting plate prepared in parallel and treated exactly like the experimental plate. Supernatant was removed and cells were washed once in PBS. After aspiration, the BMDMs were kept at –80 °C or on dry ice. Metabolites were extracted by adding chilled extraction buffer (500 μl/1×106 cells), followed by scraping (carried out on dry ice). Buffer was transferred to chilled eppendorf tubes and shaken in a thermomixer at maximum speed (2000 rpm) for 15 min at 4 °C. Following centrifugation at maximum speed for 20 min, roughly 80% of supernatant was transferred into labelled LC-MS vials, taking care to avoid pellet and any solid debris.
 
-## Western blot sample preparation
+#### Western blot sample preparation
 
 On day –2, BMDMs were seeded in 6-well plates: 1×106 cells per well and activated on day –1 with IL-4/13 or β-glucan as outlined, or incubated with media as an untrained control. BMDMs were fed on day 3 and on day 6, the cells were washed once with PBS, before being lysed with RIPA buffer.
 
-## Flow cytometry
+#### Flow cytometry
 
 On day –2, 0.8×106 mature BMDMs were seeded on non-tissue cultured treated 35 mm petri dishes (Corning) and activated as previously outlined on Day –1. The naive or activated/trained BMDMs were harvested at two separate time points: day 0 (24 hours post activation for acute activation characterisation) or day 6 (fed on day 3), with or without secondary stimulation on day 5 as specified in figure legends (training experiments).
 
 For analysis, BMDMs were placed on ice for 30 min before harvesting with PBS-EDTA (5 mM) solution by gently pipetting up and down and transferring to flow cytometry tubes. Cells were incubated with Fixable Viability Stain 510 at RT for 15 min. After washing with PBS, cells were stained with anti-mouse Fc block, 15 min prior staining with CD80-FITC, CD206-PE, F4/80-PerCP-Cy5.5, CD11b-APC-eFluor 780, MHC class II-eFluor 450 for an additional 30 min at 4 °C. The cells were washed with PBS and resuspended in flow cytometry buffer (1% FBS in PBS). Samples were acquired on a BD Canto II flow cytometer and the data was analysed by using FlowJo software.
 
-## Method details
+### Method details
 
-## BCG preparation and plating
+#### BCG preparation and plating
 
 Bacille Calmette-Guérin (BCG) Denmark (OD600 0.1) was incubated in 7H9 media at 37 °C with rotation until the OD600 0.5–0.8 (logarithmic growth phase) was reached.
 
@@ -231,13 +1071,13 @@ Bacterial concentration was estimated by OD600 (where 0.1 was estimated as 10×1
 
 7H11 agar plates (for CFU counts) were made up as follows: 10.5 g Middlebrook 7H11 powder and 2.5 ml glycerol was dissolved in distilled water to reach 500 ml and autoclaved. Once cooled sufficiently, 50 ml sterile-filtered (0.22 μm; SteriCup [Millipore]) albumin-dextrose-sodium chloride (ADN) enrichment was added. For 1 liter of ADN enrichment: 50 g fatty acid-free, heat-shocked bovine serum albumin, 8.5 g sodium chloride and 20 g glucose were dissolved in sterile water to reach 1 liter.
 
-## Staining and imaging of internalized BCG
+#### Staining and imaging of internalized BCG
 
 For staining the coverslips contained in 24-well plates, PBS was removed and 17 μM Hoechst 33342 and 7.5 U Phalloidin-Alexa Fluor 647 (in 1 ml PBS) was added to each well. After half an hour (in the dark), the solution was removed and the coverslips were washed with PBS. A total of 200 μl Modified Auramine-O stain was added for 2 min (in the dark), after which the stain was removed and the wells were washed with PBS. To quench any extracellular BCG, 200 μl Auramine-O Quencher de-colorizer was added for 2 min (in the dark) and then the quencher was removed and the coverslips were washed with PBS. The coverslips were then fixed onto glass slides: 2 μl Vectashield mounting media was used per coverslip and clear nail polish was applied around the edge and allowed to dry completely. The coverslips were stained and imaged the same day.
 
 Images of all samples were obtained using a Leica SP8 confocal microscope, taken with x40 magnification oil objective. Z-stack images through the entire cell were obtained and representative images were taken from these stacks.
 
-## Liquid chromatography coupled to mass spectrometry (LC-MS)
+#### Liquid chromatography coupled to mass spectrometry (LC-MS)
 
 Extraction buffer for isolating metabolites: 50% LC-MS grade methanol, 30% LC-MS grade acetonitrile, 20% ultrapure water (internal filtration system), valine-d8 final concentration 5 μM.
 
@@ -245,33 +1085,33 @@ Hydrophilic interaction chromatographic (HILIC) separation of metabolites was ac
 
 Metabolites were measured with a Thermo Scientific Q Exactive Hybrid Quadrupole-Orbitrap Mass spectrometer (HRMS) coupled to a Dionex Ultimate 3000 UHPLC. The mass spectrometer was operated in full-scan, polarity-switching mode, with the spray voltage set to +4.5 kV/–3.5 kV, the heated capillary held at 320 °C, and the auxiliary gas heater held at 280 °C. The sheath gas flow was set to 25 units, the auxiliary gas flow was set to 15 units, and the sweep gas flow was set to 0 unit. HRMS data acquisition was performed in a range of m/z=70–900, with the resolution set at 70,000, the AGC target at 1×106, and the maximum injection time (Max IT) at 120ms. Metabolite identities were confirmed using two parameters: (1) precursor ion m/z was matched within 5 ppm of theoretical mass predicted by the chemical formula; (2) the retention time of metabolites was within 5% of the retention time of a purified standard run with the same chromatographic method. Chromatogram review and peak area integration were performed using the Thermo Fisher software Tracefinder 5.0 and the peak area for each detected metabolite was normalized against the total ion count (TIC) of that sample to correct any variations introduced from sample handling through instrument analysis. The normalized areas were used as variables for further statistical data analysis.
 
-## Preparation of β-glucan stock
+#### Preparation of β-glucan stock
 
 The β-glucan particles (WGP Dispersible) were weighed and dissolved in sterile water to yield 10–15 ml of 25 mg ml–1. This solution was left at room temperature overnight (8–16 hr) before sonication with a 150VT ultra sonic homogenizer with a 5/32” microtip. Whilst on ice, the solution was sonicated for 5 min, at 50% power and 50% time pulse rate, while the tip was immersed roughly 5 mm below the surface of the liquid. The β-glucan particles were then pelleted by centrifugation (1000 G, 10 min, room temperature) and the water was removed by careful decanting and replaced with 0.2 M NaOH in water, at a volume to reach 25 mg ml–1. After 20 min, the β-glucan was washed three times with sterile water, using the same pelleting, decanting and replacement of solvent conditions as described. Finally, two last washes were carried out to replace the sterile water with sterile PBS. Prior to each use, the stock was thoroughly vortexed.
 
-## ELISA
+#### ELISA
 
 For detection of secreted TNFα, IL-6, and IL-10 from BMDMs, supernatants were collected and cytokines quantified by ELISA according to manufacturers’ instructions (R&D Systems, Biolegend of Invitrogen), except antibody and sample volumes were halved.
 
-## Western blot
+#### Western blot
 
 BMDMs were lysed with RIPA buffer and the whole-cell protein lysates were separated on pre-cast Bolt 12% Bis-Tris Plus gels (Invitrogen, NW00127BOX) and transferred to nitrocellulose membranes. Membranes were subsequently probed using the relevant primary (histone H3, H3K4me3, H3K27me3 and H3K9me2) and secondary antibodies (anti-IgG) and imaged using the Odyssey Fc Imager (Li-Cor). Images of blots were analysed with ImageJ to calculate the relative optical density (ROD = area/percentage). ROD was then standardized to the untrained/media control samples: adjusted ROD values.
 
-## Nitric oxide (NO) secretion
+#### Nitric oxide (NO) secretion
 
 NO concentrations were quantified by indirect measurement of nitrite (NO2-) via the Griess Reagent System kit (Promega). The assay was carried out as per manufacturer’s instructions and absorbance of 560 nm was measured.
 
-## Reverse transcription quantitative PCR (RT-qPCR)
+#### Reverse transcription quantitative PCR (RT-qPCR)
 
 RNA was isolated via High Pure RNA Isolation Kit (Roche) according to the manufacturer’s instructions and RNA was eluted in 50 μl water. RNA (minimum 100 ng) was reverse transcribed into complementary DNA (cDNA) with an M-MLV reverse transcriptase, RNase H minus, point mutant, in reverse transcriptase buffer, mixed with dNTPs, random hexamer primers and ribonuclease inhibitor (RNAseOUT). Quantitative PCR was performed using KAPA SYBR FAST Rox low qPCR Kit Master Mix in accordance with the instructions provided by the manufacturer, using QuantStudio 3 System technology. Primers (Key Resources Table) were designed in Primer BLAST and/or were also checked in Primer BLAST for specificity to the gene of interest. Where possible, primers were chosen to cross an exon-exon junction.
 
 RNA expression was normalized to the internal references β-actin and/or TATAbox-binding protein, from the corresponding sample (Ctgene–Ctreference=ΔCt). Furthermore, ΔCt from control samples were subtracted from the ΔCt of each sample (ΔCttreatment-ΔCtctrl = ΔΔCttreatment). Fold change was calculated as 2(-ΔΔCt). These calculations were carried out using Microsoft Excel.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data were evaluated on either on Prism version 8 for Windows or via R for Metaboanalyst generated analysis. Differences between two independent groups were compared via unpaired Student’s t-test. For BCG infection studies where two independent groups were compared at several time points, multiple t-test analysis was employed, with Holm-Sidak correction for multiple comparisons. Differences were considered significant at the values of * p<0.05, ** p<0.01, *** p<0.001 and **** p<0.0001.
 
-## Data and code availability
+### Data and code availability
 
 All raw data, calculations, results from statistical analyses (P values and 95% confidence interval) is available in the accompanying dataset:
 

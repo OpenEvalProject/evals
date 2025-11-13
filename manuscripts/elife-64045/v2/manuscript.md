@@ -44,25 +44,81 @@ The organosulfur molecule dimethylsulfoniopropionate (DMSP) is produced in massi
 
 Bacteria can metabolize DMSP via three known pathways, the demethylation pathway (Howard et al., 2006), the recently reported oxidation pathway (Thume et al., 2018), and the lysis pathway (Curson et al., 2011b; Figure 1). The nomenclature of these pathways is based on the reaction type of the enzyme catalyzing the first step of DMSP catabolism. In the demethylation pathway, DMSP demethylase DmdA first demethylates DMSP to produce methylmercaptopropionate (MMPA) (Howard et al., 2006; Reisch et al., 2008), which can be further catabolized to MeSH and acetaldehyde (Figure 1; Reisch et al., 2011b; Bullock et al., 2017; Shao et al., 2019). In the oxidation pathway, DMSP is oxidized to dimethylsulfoxonium propionate (DMSOP), which is further metabolized to dimethylsulfoxide (DMSO) and acrylate; however, enzymes involved in this pathway are unknown (Thume et al., 2018; Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig1-v2.jpg)
+
+**Figure 1.:** Different pathways are shown in different colors. The demethylation of DMSP by DmdA produces MMPA (in purple). The oxidation of DMSP produces DMSOP (in yellow). In the lysis pathway (in blue), DMSP lyase DddP, DddL, DddQ, DddW, DddK, DddY, or Alma1 converts DMSP to acrylate and DMS, DddD converts DMSP to 3-HP-CoA and DMS, using acetyl-CoA as a CoA donor, and the newly identified DddX in this study converts DMSP to acryloyl-CoA and DMS, with ATP and CoA as co-substrates. Dotted lines represent unconfirmed steps of the DddX DMSP lysis pathway that we propose in this study. The protein families of enzymes involved in the first step of each pathway are indicated. The protein family of DddX and the products of its catalysis are highlighted in red color. THF, tetrahydrofolate; MMPA, methylmercaptopropionate; 3-HP, 3-hydroxypropionate; DMSOP, dimethylsulfoxonium propionate; DMSO, dimethylsulfoxide.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** ATP and acetyl-CoA were analyzed by HPLC through its ultraviolet absorbance under 260 nm. The result showed that DddX failed to catalyze the degradation of DMSP when acetyl-CoA was used as a CoA donor.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The peak of acryloyl-CoA was indicated with black arrow and the peak of propionate-CoA was indicated with red arrow. The recombinant 0105 could catalyze the conversion of acryloyl-CoA to propionate-CoA (718.3 ± 59.2 pmol propionate-CoA min–1 mg protein–1). The reaction system without 0105 protein was used as the control.
+
 In the lysis pathway, diverse lyases cleave DMSP to produce DMS and acrylate or 3-hydroxypropionate-CoA (3-HP-CoA), which are further metabolized by ancillary enzymes (Curson et al., 2011b; Johnston et al., 2016; Figure 1). There is large biodiversity in DMSP lysis, with eight different known DMSP lyases that encompass four distinct protein families (DddD a CoA-transferase; DddP a metallopeptidase; cupin containing DddL, DddQ, DddW, DddK, and DddY; and Alma1 an aspartate racemase) functioning in diverse marine bacteria, algae, and fungi (Figure 1; Curson et al., 2011b; Johnston et al., 2016). With the exception of DddD, which catalyzes an acetyl-CoA-dependent CoA transfer reaction, all other DMSP lyases directly cleave DMSP (Bullock et al., 2017; Todd et al., 2007; Alcolombri et al., 2014; Lei et al., 2018; Li et al., 2014). Recently, several bacterial isolates were reported to produce DMS from DMSP but lack known DMSP lyases in their genomes (Liu et al., 2018; Zhang et al., 2019), suggesting the presence of novel enzyme(s) for DMSP degradation in nature.
 
 A common feature of previously characterized DMSP metabolic pathways is that the metabolites (i.e. MMPA, acrylate) need to be ligated with CoA for further catabolism (Figure 1; Curson et al., 2011b; Reisch et al., 2011b). Currently, there is no known pathway whereby DMSP is ligated with free CoA, and it is tempting to speculate that there may be such a novel DMSP metabolic pathway. In this study, we screened DMSP-catabolizing bacteria from Antarctic samples, and obtained a strain Psychrobacter sp. D2 that grew on DMSP and produced DMS. Genetic and biochemical work showed that Psychrobacter sp. D2 possesses a novel DMSP lyase termed DddX for DMSP catabolism (Figure 1). DddX is an ATP-dependent DMSP lyase which catalyzes a two-step reaction: the ligation of DMSP and CoA, and the cleavage of DMSP-CoA to produce DMS and acryloyl-CoA. We further solved the crystal structure of DddX and elucidated the molecular mechanism for its catalysis based on structural and biochemical analyses. DddX is found in both Gram-negative and Gram-positive bacteria. Our results provide novel insights into the microbial metabolism of DMSP by this novel enzyme.
 
 ## Results
 
-## A potentially novel DMSP lyase in a conventional DMSP catabolic gene cluster
+### A potentially novel DMSP lyase in a conventional DMSP catabolic gene cluster
 
 Using DMSP (5 mM) as the sole carbon source, DMSP-catabolizing bacteria were isolated from five Antarctic samples including alga, sediments, and seawaters (Figure 2—figure supplement 1, Supplementary file 1a). In total, 175 bacterial strains were obtained (Figure 2—figure supplement 1B). Among these bacterial strains, Psychrobacter sp. D2, a marine gammaproteobacterium, grew well in the medium containing DMSP as the sole carbon source, but not acrylate (Figure 2A). Moreover, gas chromatography (GC) analysis showed that Psychrobacter sp. D2 could catabolize DMSP and produce DMS (44.8 ± 1.8 nmol DMS min–1 mg protein–1) (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig2-v2.jpg)
+
+**Figure 2.:** (A) The growth curve of Psychrobacter sp. D2 on DMSP, sodium pyruvate or acrylate as sole carbon source (5 mM) at 15°C. The error bar represents standard deviation of triplicate experiments. (B), GC detection of DMS production from DMSP by strain D2. The culture medium without bacteria was used as the control. The DMS standard was used as a positive control. Psychrobacter sp. D2 could catabolize DMSP and produce DMS (44.8 ± 1.8 nmol DMS min–1 mg protein–1). (C), RT-qPCR assay of the transcriptions of the genes 1696, 1697, 1,698, and 1,699 in Psychrobacter sp. D2 in response to DMSP in the marine broth 2,216 medium. The bacterium cultured without DMSP in the same medium was used as the control. The recA gene was used as an internal reference. The error bar represents standard deviation of triplicate experiments. The locus tags of 1696, 1697, 1,698, and 1,699 are H0262_08195, H0262_08200, H0262_08205, and H0262_08210, respectively. (D), Genetic organization of the putative DMSP-catabolizing gene cluster. Reported DMSP catabolic/transport gene clusters from Psychrobacter sp. J466, Pseudomonas sp. J465, Marinomonas sp. MWYL1, and Halomonas sp. HTNK1 are shown (Todd et al., 2007; Todd et al., 2010; Curson et al., 2010; Curson et al., 2011b). The dashed vertical line indicates a breakpoint in dddB in the cosmid library of Pseudomonas sp. J466 (Curson et al., 2010).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A), Locations of the sampling sites in the Antarctic. Stations were plotted using Ocean Data View (Schlitzer, 2002). (B), The relative abundance of DMSP-catabolizing bacteria isolated from the Antarctic samples. The detailed information of the samples is shown in Supplementary file 1a.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The transcriptions of four genes in a cluster were significantly upregulated during the growth of strain D2 on DMSP. The fold changes were calculated by comparing to the control (transcriptions of these genes during the strain growth on sodium pyruvate).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** D2. Lane M, DNA marker; Lane 1, Wild-type Psychrobacter sp. D2; Lane 2, the ΔdddX mutant. The ΔdddX mutant generated a 1000 bp PCR product using the dddX-1000-F/dddX-1000-R primer set, while the product length was 3247 bp for the wild-type strain.
 
 To identify the genes involved in DMSP degradation in Psychrobacter sp. D2, we sequenced its genome and searched homologs of known DMSP lyases. However, no homologs of known DMSP lyases with amino acid sequence identity higher than 30% were found in its genome (Supplementary file 1b), implying that this strain may possess a novel enzyme or a novel pathway for DMSP catabolism. We then sequenced the transcriptomes of this strain when grown with and without DMSP as the sole carbon source. Transcriptional data analyses showed that the transcripts of four genes (1696, 1697, 1,698, and 1699) that compose a gene cluster were all highly upregulated (Figure 2—figure supplement 2) when DMSP was supplied as the sole carbon source, which was further confirmed by RT-qPCR analysis (Figure 2C). These results suggest that this gene cluster may participate in DMSP catabolism within Psychrobacter sp. D2.
 
 In the gene cluster, 1696 is annotated as a betaine-carnitine-choline transporter (BCCT), sharing 32% amino acid identity with DddT, the predicted DMSP transporter in Marinomonas sp. MWYL1 (Sun et al., 2012; Todd et al., 2007); 1,697 is annotated as an acetate-CoA ligase, and shares 26% sequence identity with the acetyl-CoA synthetase (ACS) in Giardia lamblia (Sánchez et al., 2000); 1,698 is annotated as an aldehyde dehydrogenase, sharing 72% sequence identity with DddC in Marinomonas sp. MWYL1 (Todd et al., 2007); and 1,699 is annotated as an alcohol dehydrogenase, sharing 65% sequence identity with DddB in Marinomonas sp. MWYL1 (Todd et al., 2007). DddT, DddC, and DddB have been reported to be involved in DMSP import and catabolism (Sun et al., 2012; Todd et al., 2007; Todd et al., 2010). The pattern of the identified gene cluster 1696–1699 in Psychrobacter sp. D2 is similar to the patterns of those DMSP-catabolizing clusters reported in Pseudomonas, Marinomonas, and Halomonas, in which dddT, dddB and dddC are clustered with the DMSP lyase gene dddD¸ but which is missing in 1696–1699 and is replaced by 1,697 (Todd et al., 2007; Todd et al., 2010; Curson et al., 2010; Figure 2D). These data further support that the 1696–1699 gene cluster is involved in Psychrobacter sp. D2 DMSP catabolism and 1697 encodes a DMSP lyase equivalent to DddD. However, the sequence identity between 1,697 and DddD is less than 15%, suggesting that 1,697 is unlikely a DddD homolog. With these data we predicted that 1,697 encodes a novel DMSP lyase in Psychrobacter sp. D2, which we term as DddX hereafter.
 
-## The essential role of DddX in DMSP degradation in Psychrobacter Sp. D2
+### The essential role of DddX in DMSP degradation in Psychrobacter Sp. D2
 
 To identify the possible function of dddX in DMSP catabolism, we first deleted the majority of the dddX gene within the Psychrobacter sp. D2 genome to generate a ΔdddX mutant strain (Figure 2—figure supplement 3). The ΔdddX mutant was unable to grow on DMSP as the sole carbon source, but its ability to utilize DMSP was fully restored to wild type levels by cloned of dddX (in pBBR1MCS-dddX) (Figure 3A), indicating that dddX is essential for strain D2 to utilize DMSP. Furthermore, the ΔdddX mutant lost DMSP lyase activity, that is it no longer produced DMS when cultured in marine broth 2,216 medium with DMSP. DMSP lyase activity was fully restored to wild type levels in the complemented strain (ΔdddX/pBBR1MCS-dddX) (Figure 3B), indicating that dddX encodes a functional DMSP lyase enzyme degrading DMSP to DMS.
 
-## DddX is an ATP-dependent DMSP lyase and its kinetic analysis
+![Figure 3.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig3-v2.jpg)
+
+**Figure 3.:** (A) Growth curves of the wild-type strain D2, the ΔdddX mutant, the complemented mutant (ΔdddX/pBBR1MCS-dddX), and the ΔdddX mutant complemented with an empty vector (ΔdddX/pBBR1MCS). All strains were grown with DMSP (5 mM) as the sole carbon source. The error bar represents standard deviation of triplicate experiments. (B), Detection of DMS production from DMSP degradation by the wild-type strain D2, the ΔdddX mutant, the complemented mutant ΔdddX/pBBR1MCS-dddX, and the mutant complimented with an empty vector ΔdddX/pBBR1MCS. The error bar represents standard deviation of triplicate experiments. (C), GC detection of DMS production from DMSP lysis catalyzed by the recombinant DddX. The reaction system without DddX was used as the control. DddX maintained a specific activity of ~8.0 μmol min–1 mg protein–1 at 20°C, pH 8.0.( D), HPLC analysis of the enzymatic activity of the recombinant DddX on DMSP at 260 nm. The peak of the unknown product is indicated with a red arrow. The reaction system without DddX was used as the control. (E), LC-MS analysis of the unknown product. (F), HPLC analysis of the intermediate of DddX catalysis at 260 nm. The HPLC system was coupled to a mass spectrometer for m/z determination. The reaction system without DddX was used as the control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The predicted molecular mass of the recombinant DddX is 81.62 kDa using the compute MW tool (Gasteiger et al., 2005).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A), DMSP is primarily cleaved to DMS and acrylate. Subsequently, CoA is ligated to acrylate producing acryloyl-CoA. (B), CoA is primarily ligated to DMSP to produce DMSP-CoA, which is then cleaved to DMS and acryloyl-CoA.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The error bar represents standard deviation of triplicate experiments. (A) Effect of temperature on DddX enzyme activity. (B) Effect of pH on DddX enzyme activity. (C) Kinetic parameters of DddX for ATP. (D) Kinetic parameters of DddX for CoA. (E) Kinetic parameters of DddX for DMSP.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The peaks of ATP were indicated with black arrows, the peaks of CoA were indicated with red arrows, and the peak of acryloyl-CoA was indicated with the blue arrow. The reaction system without DddX was used as the control.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** SA, sodium acetate; SP, sodium propionate. The activity of DddX with no inhibitor was used as a reference (100%).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** D2 and the ΔdddX mutant on sodium acetate (A) or sodium propionate (B) as the sole carbon source (5 mM) at 25°C.The error bar represents standard deviation of triplicate experiments.
+
+### DddX is an ATP-dependent DMSP lyase and its kinetic analysis
 
 To verify the enzymatic activity of DddX on DMSP, we cloned the dddX gene, overexpressed it in Escherichia coli BL21 (DE3), and purified the recombinant DddX (Figure 3—figure supplement 1). Sequence analysis suggests that DddX is an acetate-CoA ligase, which belongs to the acyl-CoA synthetase (ACD) superfamily and requires CoA and ATP as co-substrates for catalysis (Musfeldt and Schonheit, 2002; Mai and Adams, 1996). Thus, we added CoA and ATP into the reaction system when measuring the enzymatic activity of the recombinant DddX on DMSP. GC analysis showed that the recombinant DddX directly acted on DMSP and produce DMS (Figure 3C). HPLC analysis uncovered ADP and an unknown product as DMS co-products (Figure 3D). The chromatographic retention time of the unknown product was consistent with it being acryloyl-CoA (Wang et al., 2017; Cao et al., 2017). Indeed, liquid chromatography-mass spectrometry (LC-MS) analysis found the molecular weight (MW) of the unknown product to be 822.1317, exactly matching acryloyl-CoA (Figure 3E). These data demonstrate that DddX is a functional ATP-dependent DMSP lyase that can catalyze DMSP degradation to DMS and acryloyl-CoA.
 
@@ -72,9 +128,31 @@ Knowing the DddX enzyme activity, we examined its in vitro properties. The DddX 
 
 Despite DddX belongs to the ACD superfamily, the amino acid identity between DddX and known ACD enzymes is relatively low, with the highest being 26 % between DddX and the Giardia lamblia ACS (Sánchez et al., 2000). The kcat/KM value of DddX towards DMSP is lower than several reported ACS enzymes towards acetate (Chan et al., 2011; You et al., 2017). Because ACS enzymes were reported to have promiscuous activity toward different short chain fatty acids, such as acetate and propionate (Patel and Walt, 1987), we tested the substrate specificity of DddX. The recombinant DddX exhibited no activity towards acetate or propionate (Figure 3—figure supplement 4), and the presence of acetate or propionate had little effects on the enzymatic activity of DddX toward DMSP (Figure 3—figure supplement 5), indicating that DddX cannot utilize acetate or propionate as a substrate. Furthermore, we tested the ability of the strain D2 to grow with acetate or propionate as the sole carbon source. The wild-type strain D2 could use acetate or propionate as sole carbon source but deletion of dddX has little effect on the growth of strain D2 on these substrates (Figure 3—figure supplement 6), suggesting that dddX is unlikely to be involved in acetate and propionate catabolism. Together, these results indicate that DddX does not function as an acetate-CoA ligase.
 
-## The crystal structure and the catalytic mechanism of DddX
+### The crystal structure and the catalytic mechanism of DddX
 
 To elucidate the structural basis of DddX catalysis, we solved the crystal structure of DddX in complex with ATP by the single-wavelength anomalous dispersion method using a selenomethionine derivative (Se-derivative) (Supplementary file 1d). Although there are four DddX monomers arranged as a tetramer in an asymmetric unit (Figure 4—figure supplement 1A), gel filtration analysis indicated that DddX maintains a dimer in solution (Figure 4—figure supplement 1B). Each DddX monomer contains a CoA-binding domain and an ATP-grasp domain (Figure 4A), with one loop (Gly280-Tyr300) of the CoA-binding domain inserting into the ATP-grasp domain. ATP is bound in DddX mainly via hydrophilic interactions, including hydrogen bonds and salt bridges (Figure 4B). The overall structure of DddX is similar to that of NDP-forming acetyl-CoA synthetase ACD1 (Weiße et al., 2016; Figure 4—figure supplement 2), with a root mean square deviation (RMSD) between these two structures of 4.6 Å over 581 Cα atoms. ACD1 consists of separate α- and β-subunits (Weiße et al., 2016), which corresponds to the CoA-binding domain and the ATP-grasp domain of DddX, respectively.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig4-v2.jpg)
+
+**Figure 4.:** (A) The overall structure of the DddX monomer. The DddX molecule contains a CoA-binding domain (colored in pink) and an ATP-grasp domain (colored in wheat). The loop region from the CoA-binding domain inserting into the ATP-grasp domain is colored in cyan. The ATP molecule is shown as sticks. (B) Residues of DddX involved in binding ATP. The 2Fo - Fc densities for ATP are contoured in blue at 2.0σ. Residues of DddX involved in binding ATP are colored in green. (C) Enzymatic activities of DddX and its mutants. The activity of WT DddX was taken as 100%. (D) Structural analysis of the possible catalytic residues for the cleavage of DMSP-CoA. The docked DMSP-CoA molecule and the probable catalytic residues of DddX are shown as sticks.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A), The overall structure of DddX tetramer. Different monomers are displayed in different colors. (B), Gel filtration analysis of DddX. Inset, semilog plot of the molecular mass of all standards used versus their Kav values (black circles). The red spot indicates the position of the Kav value of DddX interpolated in the regression line. DddX monomer has a molecular mass of 81.62 kDa.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The α-subunit and the β-subunit of ACD1 (PDB code: 4xym) are colored in pink and wheat, respectively.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The conserved histidine residue is marked with a red star. The swinging loop of DddX (Gly280-Tyr300) is indicated, which corresponds to the swinging loop reported in acetyl-CoA synthetase ACD1 (Gly242-Val262) (Weiße et al., 2016).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A). The structure of DddX docked with DMSP and CoA. DMSP and CoA molecules are shown as sticks. The surfaces of two DddX monomers are colored in wheat and pink, respectively. (B). The structure of DddX docked with DMSP-CoA. DMSP-CoA is shown as sticks. The surfaces of two DddX monomers are colored in wheat and pink, respectively. (C). Structural analysis of residues which form cation-π interactions with the sulfonium group of DMSP-CoA. DMSP-CoA and residues Trp391 and Phe435 are shown as sticks.
 
 Both DddX and ACS belong to the ACD superfamily, which also contains the well-studied ATP citrate lyases (ACLY) (Weiße et al., 2016; Verschueren et al., 2019; Hu et al., 2017). The biochemistry of DddX catalysis is similar to that of ACLY, which converts citrate to acetyl-CoA and oxaloacetate with ATP and CoA as co-substrates (Verschueren et al., 2019; Hu et al., 2017). The catalytic processes of enzymes in the ACD superfamily involve a conformational change of a ‘swinging loop’ or ‘phosphohistidine segment’, in which a conserved histidine is phosphorylated (Weiße et al., 2016; Verschueren et al., 2019; Hu et al., 2017). Sequence alignment indicated that His292 of DddX is likely the conserved histidine residue to be phosphorylated, and Gly280-Tyr300 is likely the ‘swinging loop’ (Figure 4—figure supplement 3). In the crystal structure of DddX, His292 from loop Gly280-Tyr300 directly forms a hydrogen bond with the γ-phosphate of ATP (Figure 4B), suggesting a potential for phosphorylation, which is further supported by mutational analysis. Mutation of His292 to alanine abolished the activity of DddX (Figure 4C), indicating the key role of His292 during catalysis. Circular-dichroism (CD) spectroscopy analysis showed that the secondary structure of His292Ala exhibits little deviation from that of wild-type (WT) DddX (Figure 4—figure supplement 4), indicating that the enzymatic activity loss was caused by amino acid replacement rather than by structural change. Altogether, these data suggest that His292 is phosphorylated in the catalysis of DddX on DMSP.
 
@@ -86,9 +164,17 @@ Based on structural and mutational analyses of DddX, and the reported molecular 
 
 **Figure 5.:** (A) The residue His292 attacks the γ-phosphate of ATP. (B), The phosphoryl group is transferred from phosphohistidine to the DMSP molecule. (C), DMSP-phosphate is attacked by CoA. (D), The residue Glu432 acts as a general base to attack DMSP-CoA. (E), DMS and acryloyl-CoA are generated.
 
-## Distribution of DddX in bacteria
+### Distribution of DddX in bacteria
 
 We next set out to determine the diversity and distribution of DddX in bacteria with sequenced genomes. We searched the NCBI Reference Sequence Database using the DddX sequence of Psychrobacter sp. D2 as the query. The data presented in Figure 6 showed that DddX homologs are present in several diverse groups of bacteria, including Alphaproteobacteria, Gammaproteobacteria, and Firmicutes. Multiple sequence alignment showed the presence of the key residues involved in phosphorylation (H292), co-ordination of the substrate (e.g. W391) and catalysis (D432), suggesting that these DddX homologs are likely functional in bacterial DMSP catabolism. To further validate that these DddX homologs are indeed functional DMSP degrading enzymes, we chemically synthesized representative dddX sequences from Alphaproteobacteria (Pelagicola sp. LXJ1103), Gammaproteobacteria (Psychrobacter sp. P11G5; Marinobacterium jannaschii), and Firmicutes (Sporosarcina sp. P33). These candidate DddX enzymes were purified and all were shown to degrade DMSP and produce acryloyl-CoA confirming their predicted activity (Figure 6—figure supplement 1). We predict that bacteria containing DddX will have DMSP lyase activity, but this will depend on the expression of this enzyme in the host and substrate availability.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig6-v2.jpg)
+
+**Figure 6.:** The phylogenetic tree was constructed using neighbor-joining method in MEGA7. The acetyl-coenzyme A synthetase (ACS) (Weiße et al., 2016) was used as the outgroup. Sequence alignment was inspected for the presence of the key histidine residue (His292) involved in histidine phosphorylation that is known to be important for enzyme activity. A conserved Tyr391 is also found which is involved in cation-pi interaction with DMSP. The BCCT-type or ABC-type transporters for betaine-carnitine-choline-DMSP were found in the neighborhood of DddX in several genomes. Those DddX homologs that are functionally characterized (Figure 6—figure supplement 1) are highlighted in bold.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64045/elife-64045-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The peaks of acryloyl-CoA were indicated with red arrows and the peaks of CoA were indicated with black arrows. The reaction system without DddX was used as the control.
 
 ## Discussion
 
@@ -106,51 +192,236 @@ Many marine bacteria, especially roseobacters, are reported to metabolize DMSP v
 
 Here, we demonstrate that DddX is a functional DMSP lyase present in several isolates of Gammaproteobacteria, Alphaproteobacteria and, notably, Gram-positive Firmicutes, for example in Sporosarcina sp. P33. The distribution of DddX in these bacterial lineages points to the role of horizontal gene transfer (HGT) in the dissemination of dddX in environmental bacteria and this certainly warrants further investigation. Interestingly, DddX is found in several bacterial isolates which were isolated from soil or plant roots, suggesting that DMSP may also be produced in these ecosystems. Finally, it has been reported that many other Gram-positive actinobacteria can make DMS from DMSP (Liu et al., 2018). Interestingly, these Actinobacteria lack dddX and any other known DMSP lyase genes. Thus, there is still more biodviversity in microbial DMSP lyases to be uncovered.
 
-## Conclusion
+### Conclusion
 
 DMSP is widespread in nature and cleavage of DMSP produces DMS, an important mediator in the global sulfur cycle. In this study, we report the identification of a novel ATP-dependent DMSP lyase DddX from marine bacteria. DddX belongs to the ACD superfamily, and catalyzes the conversion of DMSP to DMS and acryloyl-CoA, with CoA and ATP as co-substrates. DddX homologs are found in both Gram-positive and Gram-negative bacterial lineages. This study offers new insights into how diverse bacteria cleave DMSP to generate the climatically important gas DMS.
 
 ## Materials and methods
 
-## Bacterial strains, plasmids, and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Psychrobacter sp.)</td>
+      <td>D2</td>
+      <td>This study;Zhang Laboratory</td>
+      <td></td>
+      <td>Wild-type isolate; Available from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Psychrobacter sp.)</td>
+      <td>ΔdddX</td>
+      <td>This study;Zhang Laboratory</td>
+      <td></td>
+      <td>the dddX gene deletion mutant of Psychrobacter sp. D2; Available from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Psychrobacter sp.)</td>
+      <td>ΔdddX/pBBR1MCS-dddX</td>
+      <td>This study;Zhang Laboratory</td>
+      <td></td>
+      <td>ΔdddX containing pBBR1MCS-dddX plasmid; Available from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Psychrobacter sp.)</td>
+      <td>ΔdddX/pBBR1MCS</td>
+      <td>This study;Zhang Laboratory</td>
+      <td></td>
+      <td>ΔdddX containing pBBR1MCS plasmid; Available from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>WM3064</td>
+      <td>Dehio and Meyer, 1997</td>
+      <td></td>
+      <td>Conjugation donor strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>Vazyme Biotech company (China)</td>
+      <td></td>
+      <td>Transformed cells for gene cloning</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Vazyme Biotech company (China)</td>
+      <td></td>
+      <td>Transformed cells for gene expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pK18mobsacB-Ery</td>
+      <td>Wang et al., 2015b</td>
+      <td></td>
+      <td>Gene knockout vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pK18Ery-dddX</td>
+      <td>This study;Zhang Laboratory</td>
+      <td></td>
+      <td>pK18mobsacB-Ery containing the homologous arms of the dddX gene of Psychrobacter. sp. D2; Available from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBBR1MCS</td>
+      <td>Kovach et al., 1995</td>
+      <td></td>
+      <td>Broad-host-range cloning vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBBR1MCS-dddX</td>
+      <td>This study;Zhang Laboratory</td>
+      <td></td>
+      <td>pBBR1MCS containing the dddX gene and its promoter of Psychrobacter. sp. D2; Available from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-22b-dddX</td>
+      <td>This study;Zhang Laboratory</td>
+      <td></td>
+      <td>Used for dddX expression; Available from Zhang lab</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo, USA</td>
+      <td></td>
+      <td>Protein assay</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bacterial genomic DNA isolation kit</td>
+      <td>BioTeke Corporation, China</td>
+      <td></td>
+      <td>DNA extraction</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN, America</td>
+      <td></td>
+      <td>RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript RT reagent Kit</td>
+      <td>Takara, Japan</td>
+      <td></td>
+      <td>Reverse transcription</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Genome sequencing of Psychrobacter sp. D2</td>
+      <td>Biozeron Biotechnology Co., Ltd, China</td>
+      <td>NCBI: JACDXZ000000000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Transcriptome sequencing of Psychrobacter sp. D2</td>
+      <td>BGI Tech Solutions Co., Ltd, China</td>
+      <td>NCBI: PRJNA646786</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HKL3000 program</td>
+      <td>Minor et al., 2006</td>
+      <td></td>
+      <td>Diffraction data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4 program Phaser</td>
+      <td>Winn et al., 2011</td>
+      <td></td>
+      <td>Diffraction data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley et al., 2010</td>
+      <td></td>
+      <td>Diffraction data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Adams et al., 2010</td>
+      <td></td>
+      <td>Diffraction data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, LLC</td>
+      <td></td>
+      <td>http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA 7</td>
+      <td>Kumar et al., 2016</td>
+      <td></td>
+      <td>Phylogenetic analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains, plasmids, and growth conditions
 
 Strains and plasmids used in this study are shown in Supplementary file 1f. Isolates were cultured in the marine broth 2,216 medium or the basal medium (Supplementary file 1g) with 5 mM DMSP as the sole carbon source at 15°C–25°C. Psychrobacter sp. D2 was cultured in the marine broth 2,216 medium or the basal medium (Supplementary file 1g) supplied with different carbon sources (sodium pyruvate, acrylate or DMSP at a final concentration of 5 mM) at 15–25°C. The E. coli strains DH5α and BL21(DE3) were grown in the Lysogeny Broth (LB) medium at 37°C. Diaminopimelic acid (0.3 mM) was added to culture the E. coli WM3064 strain.
 
-## Isolation of bacterial strains from Antarctic samples
+#### Isolation of bacterial strains from Antarctic samples
 
 A total of five samples were collected from the Great Wall Station of Antarctica during the Chinese Antarctic Great Wall Station Expedition in January, 2017. Information of samples is shown in Figure 2—figure supplement 1 and Supplementary file 1a. Algae and sediments were collected using a grab sampler and stored in airtight sterile plastic bags at 4°C. Seawater samples were filtered through polycarbonate membranes with 0.22 μm pores (Millipore Co., United States). The filtered membranes were stored in sterile tubes (Corning Inc, United States) at 4°C. All samples were transferred into a 50 ml flask containing 20 ml 3% (w/v) seasalt solution (SS) and shaken at 100 rpm at 15°C for 2 hr. The suspension obtained was subsequently diluted to 10–6 with sterile SS. An aliquot (200 μl) of each dilution was spread on the basal medium (Supplementary file 1g) plates with 5 mM DMSP as the sole carbon source. The plates were then incubated at 15°C in the dark for 2–3 weeks. Colonies with different appearances were picked up and were further purified by streaking on the marine 2,216 agar plates for at least three passages. The abilities of the colonies for DMSP catabolism were verified in a liquid basal medium with DMSP (5 mM) as the sole carbon source. The isolates were stored at –80°C in the marine broth 2,216 medium containing 20 % (v/v) glycerol.
 
-## Sequence analysis of bacterial 16s rRNA genes
+#### Sequence analysis of bacterial 16s rRNA genes
 
 Genomic DNA of the isolates was extracted using a bacterial genomic DNA isolation kit (BioTeke Corporation, China) according to the manufacturer’s instructions. The 16 S rRNA genes of these strains were amplified using the primers 27 F/1492 R (Supplementary file 1h) and sequenced to determine their taxonomy. Pairwise similarity values for the 16 S rRNA gene of the cultivated strains were calculated through the EzBiocloud server (http://www.ezbiocloud.net/) (Yoon et al., 2017).
 
-## Bacterial growth assay with DMSP as the sole carbon source
+#### Bacterial growth assay with DMSP as the sole carbon source
 
 Cells were grown in the marine broth 2,216 medium, harvested after incubation at 15 °C for 24 hr, and then washed three times with sterile SS. The washed cells were diluted to the same density of OD600 ≈ 2.0, and then 1 % (v/v) cells were inoculated into the basal medium with DMSP, sodium acetate, or sodium propionate (5 mM) as the sole carbon source. The bacteria were cultured in the dark at 15°C. The growth of the bacteria was measured by detecting the OD600 of the cultures at different time points using a spectrophotometer V-550 (Jasco Corporation, Japan).
 
-## Quantification of DMS by GC
+#### Quantification of DMS by GC
 
 To measure the production of DMS, cells were first cultured overnight in the marine broth 2,216 medium, and then washed three times with sterile SS. The washed cells were diluted to the same density of OD600 ≈ 0.3, then diluted 1:10 into vials (Anpel, China) containing the basal medium supplied with 5 mM DMSP as the sole carbon source. The vials were crimp sealed with rubber bungs and incubated for 2 hr at 25°C. The cultures were then assayed for DMS production on a gas chromatograph (GC-2030, Shimadzu, Japan) equipped with a flame photometric detector (Liu et al., 2018). An eight-point calibration curve of DMS standards was used (Curson et al., 2017). Abiotic controls of the basal medium amended with 5 mM DMSP were set up and incubated under the same conditions to monitor the background lysis of DMSP to DMS. Following growth of all bacteria strains in the marine broth 2,216 medium, cells were collected by centrifugation, resuspended in the lysis buffer (50 mM Tris-HCl, 100 mM NaCl, 0.5% glycerol, pH 8.0), and lysed by sonicated. The protein content in the cells was measured by Pierce BCA Protein Assay Kit (Thermo, USA). DMS production is expressed as nmol min–1 mg protein–1.
 
-## Transcriptome sequencing of Psychrobacter sp. D2
+#### Transcriptome sequencing of Psychrobacter sp. D2
 
 Cells of strain D2 were cultured in the marine broth 2,216 medium at 180 rpm at 15°C for 24 hr. The cells were collected and washed three times with sterile SS, and then cultured in sterile SS at 180 rpm at 15°C for 24 hr. Subsequently, the cells were washed twice with sterile SS, and incubated at 4°C for 24 hr. After incubation, the cells were harvested and resuspended in sterile SS, which were used as the resting cells. The resting cells were inoculated into the basal medium with DMSP (5 mM) as the sole carbon source, and incubated at 180 rpm at 15°C. When the OD600 of the cultures reached 0.3, the cells were harvested. The resting cells and those cultured in the basal medium with sodium pyruvate (5 mM) as the sole carbon source were set up as controls. Total RNA was extracted using a RNeasy Mini Kit (QIAGEN, America) according to the manufacturer’s protocol. After validating the quality, RNA samples were sent to BGI Tech Solutions Co., Ltd (China) for transcriptome sequencing and subsequent bioinformatic analysis.
 
-## Real-time qPCR analysis
+#### Real-time qPCR analysis
 
 Cells of Psychrobacter sp. D2 were cultured in the marine broth 2,216 medium at 180 rpm at 15°C to an OD600 of 0.8. Then, cells were induced by 5 mM DMSP, and the control group without DMSP was also set up. After 20 min’s induction, total RNA was extracted using a RNeasy Mini Kit (Qiagen, Germany) according to the manufacturer’s instructions. Genomic DNA was removed using gDNA Eraser (TaKaRa, Japan) and cDNA was synthesized using a PrimeScript RT reagent Kit. The qPCR was performed on the Light Cycler II 480 System (Roche, Switzerland) using a SYBR Premix Ex Taq (TaKaRa, Japan). Relative expression levels of target genes were calculated using the LightCycler480 software with the ‘Advanced Relative Quantification’ method. The recA gene was used as an internal reference gene. The primers used in this study are shown in Supplementary file 1h.
 
-## Genetic manipulations of Psychrobacter sp. D2
+#### Genetic manipulations of Psychrobacter sp. D2
 
 Deletion of the dddX gene was performed via pK18mobsacB-Ery-based homologue recombination (Wang et al., 2015a). The upstream and downstream homologous sequences of the dddX gene were amplified with primer sets dddX-UP-F/dddX-UP-R and dddX-Down-F/dddX-Down-R, respectively. Next, the PCR fragments were inserted to the vector pK18mobsacB-Ery with HindIII/BamHI as the restriction sites to generate pK18Ery-dddX, which was transferred into E. coli WM3064. The plasmid pK18Ery-dddX was then mobilized into Psychrobacter sp. D2 by intergeneric conjugation with E. coli WM3064. To select for colonies in which the pK18Ery-dddX had integrated into the Psychrobacter sp. D2 genome by a single crossover event, cells were plated on the marine 2,216 agar plates containing erythromycin (25 μg/ml). Subsequently, the resultant mutant was cultured in the marine broth 2,216 medium and plated on the marine 2,216 agar plates containing 10% (w/v) sucrose to select for colonies in which the second recombination event occurred. Single colonies appeared on the plates were streaked on the marine 2,216 agar plates containing erythromycin (25 μg/ml), and colonies sensitive to erythromycin were further validated to be the dddX gene deletion mutants by PCR with primer pairs of dddX-1000-F/dddX-1000-R and dddX-300Up-F/dddX-700Down-R.
 
 For complementation of the ΔdddX mutant, the dddX gene with its native promoter was amplified using the primers set dddX-pBBR1-PF/dddX-pBBR1-PR. The PCR fragment was digested with KpnI and XhoI, and then inserted into the vector pBBR1MCS to generate pBBR1MCS-dddX. This plasmid was then transformed into E. coli WM3064, and mobilized into the ΔdddX mutant by intergeneric conjugation. After mating, the cells were plated on the marine 2,216 agar plates containing kanamycin (80 μg/ml) to select for the complemented mutant. The empty vector pBBR1MCS was mobilized into the ΔdddX mutant using the same protocol. Colony PCR was used to confirm the presence of the transferred plasmid. The strains, plasmids and primers used in this study are shown in Supplementary file 1f and h.
 
-## Gene cloning, point mutation, and protein expression and purification
+#### Gene cloning, point mutation, and protein expression and purification
 
 The 2247 bp full-length dddX gene was amplified from the genome of Psychrobacter sp. D2 by PCR using FastPfu DNA polymerase (TransGen Biotech, China). The amplified gene was then inserted to the NdeI/XhoI restriction sites of the pET-22b vector (Novagen, Germany) with a C-terminal His tag. All the point mutations in DddX were introduced using the PCR-based method and verified by DNA sequencing. The DddX protein and its mutants were expressed in E. coli BL21 (DE3). The cells were cultured in the LB medium with 0.1 mg/ml ampicillin at 37 °C to an OD600 of 0.8–1.0 and then induced at 18°C for 16 hr with 0.5 mM isopropyl-β-D-thiogalactopyranoside (IPTG). After induction, cells were collected by centrifugation, resuspended in the lysis buffer (50 mM Tris-HCl, 100 mM NaCl, 0.5% glycerol, pH 8.0), and lysed by pressure crusher. The proteins were first purified by affinity chromatography on a Ni2+-NTA column (GE healthcare, America), and then fractionated by anion exchange chromatography on a Source 15Q column (GE healthcare, America) and gel filtration on a Superdex G200 column (GE healthcare, America). The Se-derivative of DddX was overexpressed in E. coli BL21 (DE3) under 0.5 mM IPTG induction in the M9 minimal medium supplemented with selenomethionine, lysine, valine, threonine, leucine, isoleucine, and phenylalanine. The recombinant Se-derivative was purified using the aforementioned protocol for the wild-type DddX.
 
-## Enzyme assay and product identification
+#### Enzyme assay and product identification
 
 For the routine enzymatic activity assay of the DddX protein, the purified DddX protein (at a final concentration of 0.1 mM) was incubated with 1 mM DMSP, 1 mM CoA, 1 mM ATP, 2 mM MgCl2 and 100 mM Tris-HCl (pH 8.0). The reaction was performed at 37°C for 0.5 hr, and terminated by adding 10% (v/v) hydrochloric acid. The control groups had the same reaction system except that the DddX protein was not added. DMS was detected by GC as described above. Products of acryloyl-CoA and DMSP-CoA were analyzed using LC-MS. Components of the reaction system were separated on a reversed-phase SunFire C18 column (Waters, Ireland) connected to a high performance liquid chromatography (HPLC) system (Dionex, United States). The ultraviolet absorbance of samples was detected by HPLC under 260 nm. The samples were eluted with a linear gradient of 1–20% (v/v) acetonitrile in 50 mM ammonium acetate (pH 5.5) over 24 min. The HPLC system was coupled to an impact HD mass spectrometer (Bruker, Germany) for m/z determination. To determine the optimal temperature for DddX enzymatic activity, reaction mixtures containing 5 mM DMSP, 5 mM CoA, 5 mM ATP, 6 mM MgCl2, 100 mM Tris-HCl (pH 8.5), and 10 μM DddX were incubated at 5–50°C (with a 5°C interval) for 15 min. The optimum pH for DddX enzymatic activity was examined at 40°C (the optimal temperature for DddX enzymatic activity) using Britton-Robinson Buffer (Britton, 1952) with pH from 7.5 to 11.0, with a 0.5 interval. The kinetic parameters of DddX were measured by determining the production of DMS with nonlinear analysis based on the initial rates, and all the measurements were performed at the optimal pH and temperature.
 
@@ -158,22 +429,22 @@ The enzymatic activity of DddX toward sodium acetate or sodium propionate was me
 
 The enzymatic activity of 0105 (AcuI) toward acryloyl-CoA was measured by determining the production of propionate-CoA using HPLC as described above. The reaction mixture contained 2 mM DMSP, 2 mM CoA, 2 mM ATP, 10 mM MgCl2, 1 mM NADPH, 100 mM Tris-HCl (pH 8.5), 0.1 mM DddX, and 0.9 mM 0105. The reaction was performed at 40°C, pH 8.5 for 2 hr, and terminated by adding 10 % (v/v) hydrochloric acid.
 
-## Crystallization and data collection
+#### Crystallization and data collection
 
 The purified DddX protein was concentrated to ~8 mg/ml in 10 mM Tris–HCl (pH 8.0) and 100 mM NaCl. The DddX protein was mixed with ATP (1 mM), and the mixtures were incubated at 0°C for 1 hr. Initial crystallization trials for DddX/ATP complex were performed at 18°C using the sitting-drop vapor diffusion method. Diffraction-quality crystals of DddX/ATP complex were obtained in hanging drops containing 0.1 M lithium sulfate monohydrate, 0.1 M sodium citrate tribasic dihydrate (pH 5.5) and 20 % (w/v) polyethylene glycol (PEG) 1000 at 18°C after 2-week incubation. Crystals of the DddX Se-derivative were obtained in hanging drops containing 0.1 M HEPES (pH 7.5), 10% PEG 6000% and 5% (v/v) (+/-)–2-Methyl-2,4-pentanediol at 18°C after 2-week incubation. X-ray diffraction data were collected on the BL18U1 and BL19U1 beamlines at the Shanghai Synchrotron Radiation Facility. The initial diffraction data sets were processed using the HKL3000 program with its default settings (Minor et al., 2006).
 
-## Structure determination and refinement
+#### Structure determination and refinement
 
 The crystals of DddX/ATP complex belong to the C2 space group, and Se-derivative of DddX belong to the P212121 space group. The structure of DddX Se-derivative was determined by single-wavelength anomalous dispersion phasing. The crystal structure of DddX/ATP complex was determined by molecular replacement using the CCP4 program Phaser (Winn et al., 2011) with the structure of DddX Se-derivative as the search model. The refinements of these structures were performed using Coot (Emsley et al., 2010) and Phenix (Adams et al., 2010). All structure figures were processed using the program PyMOL (http://www.pymol.org/).
 
-## Circular dichroism (CD) spectroscopy
+#### Circular dichroism (CD) spectroscopy
 
 CD spectra for WT DddX and its mutants were carried out in a 0.1 cm-path length cell on a JASCO J-1500 Spectrometer (Japan). All proteins were adjusted to a final concentration of 0.2 mg/ml in 10 mM Tris-HCl (pH 8.0) and 100 mM NaCl. Spectra were recorded from 250 to 200 nm at a scan speed of 200 nm/min.
 
-## Molecular docking simulations
+#### Molecular docking simulations
 
 The structure of the DddX/ATP complex containing a pair of subunits, α and β was loaded and energy minimised in Flare (v3.0, Cresset) involving 11,248 moving heavy atoms (Chain A: 5312, Chain B: 5312, Chain G: 10 and Chain S Water: 614). The molecule minimized with 2000 iterations using a gradient of 0.657 kcal/A. The minimised structure had an RMSD 0.82 Å relative to the starting structure and a decrease in starting energy from 134999.58 kcal/mol to a final energy of 6888.60 kcal/mol. The DMSP, CoA and DMSP-CoA molecules were drawn in MarvinSketch (v19.10.0, 2019, ChemAxon for Mac) and exported as a Mol SDF format. The molecules were imported into Flare and docked into the proposed CoA/DMSP binding site using the software’s default docking parameters for intensive pose searching and scoring.
 
-## Identification of DddX homologs in bacteria and phylogenetic analysis
+#### Identification of DddX homologs in bacteria and phylogenetic analysis
 
 DddX (1697) of Psychrobacter sp. D2 was used as the query sequence to search for homologs in genome-sequenced bacteria in the NCBI Reference Sequence Database (RefSeq, https://www.ncbi.nlm.nih.gov/refseq/) using BLastP with a stringent setting with an e-value cut-off < –75, sequence coverage >70% and percentage identity >30%. These high stringency settings are necessary to exclude other acetyl-CoA synthetase family proteins (ACS) which are unlikely to be involved in DMSP catabolism. Multiple sequence alignment was carried out using MEGA 7 (Kumar et al., 2016) and the presence of histidine 292, tryptophan 391 and glutamate 432 was manually inspected. To confirm the activity of DddX homologs from retrieved sequences from these genome-sequenced bacteria, four sequences (Sporosarcina sp. P33; Psychrobacter sp. P11G5; Marinobacterium jannaschii; Pelagicola sp. LXJ1103) were chemically synthesized and their enzyme activity for DMSP degradation was confirmed experimentally (Figure 6—figure supplement 1). The phylogenetic tree was constructed using the neighbour-joining method with 500 bootstraps using MEGA 7 (Kumar et al., 2016). The characterized ACS ACD1 (Weiße et al., 2016) was used as the outgroup.

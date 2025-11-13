@@ -16,13 +16,21 @@
 
 ## Abstract
 
-10.7554/eLife.44812.001 Mutualisms can be promoted by pleiotropic win-win mutations which directly benefit self (self-serving) and partner (partner-serving). Intuitively, partner-serving phenotype could be quantified as an individual’s benefit supply rate to partners. Here, we demonstrate the inadequacy of this thinking, and propose an alternative. Specifically, we evolved well-mixed mutualistic communities where two engineered yeast strains exchanged essential metabolites lysine and hypoxanthine. Among cells that consumed lysine and released hypoxanthine, a chromosome duplication mutation seemed win-win: it improved cell’s affinity for lysine (self-serving), and increased hypoxanthine release rate per cell (partner-serving). However, increased release rate was due to increased cell size accompanied by increased lysine utilization per birth. Consequently, total hypoxanthine release rate per lysine utilization (defined as ‘exchange ratio’) remained unchanged. Indeed, this mutation did not increase the steady state growth rate of partner, and is thus solely self-serving during long-term growth. By extension, reduced benefit production rate by an individual may not imply cheating.
+Mutualisms can be promoted by pleiotropic win-win mutations which directly benefit self (self-serving) and partner (partner-serving). Intuitively, partner-serving phenotype could be quantified as an individual’s benefit supply rate to partners. Here, we demonstrate the inadequacy of this thinking, and propose an alternative. Specifically, we evolved well-mixed mutualistic communities where two engineered yeast strains exchanged essential metabolites lysine and hypoxanthine. Among cells that consumed lysine and released hypoxanthine, a chromosome duplication mutation seemed win-win: it improved cell’s affinity for lysine (self-serving), and increased hypoxanthine release rate per cell (partner-serving). However, increased release rate was due to increased cell size accompanied by increased lysine utilization per birth. Consequently, total hypoxanthine release rate per lysine utilization (defined as ‘exchange ratio’) remained unchanged. Indeed, this mutation did not increase the steady state growth rate of partner, and is thus solely self-serving during long-term growth. By extension, reduced benefit production rate by an individual may not imply cheating.
 
 ## Introduction
 
 Mutualisms, mutually beneficial interactions between species, are widely observed between microbes (Goldford et al., 2018; Morris et al., 2013; Morris et al., 2012; Seth and Taga, 2014) and between microbes and their hosts (Seth and Taga, 2014). Often, mutualisms involve the release and consumption of essential metabolites such as vitamins and amino acids (Beliaev et al., 2014; Carini et al., 2014; Helliwell et al., 2011; Jiang et al., 2018; Rodionova et al., 2015; Zengler and Zaramela, 2018). Extensive metabolic interactions between microbes have been thought to contribute to the difficulty of culturing microbes in isolation (Kaeberlein et al., 2002). Under certain conditions, microbial metabolic exchanges may even promote community growth (Tasoff et al., 2015).
 
 In communities, a mutation can exert direct effects on the individual itself as well as on the partner (see Figure 1A for definition of “direct effects”). For example, a mutation can increase benefit supply to the partner wtihout affecting self's growth rate (Figure 1A, ii). We classify this mutation as "strictly partner-serving". As another example, a mutation can increase self's growth rate without affecting benefit supply to the partner (Figure 1A, iii). By growing better, the mutant stimulates partner growth. However, we classify this mutation as "strictly self-serving" because promoting partner growth is mediated indirectly by improved self-growth. Qualitatively, the direct fitness effect of a mutation on self and on partner can be positive, neutral, or negative, giving rise to 3 × 3 = 9 types.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig1-v1.jpg)
+
+**Figure 1.:** (A) Direct fitness effects. To define direct effects, we use a framework similar to Chapter 10 of Peters et al. (2017). For simplicity, consider a commensal community where population A benefits population B. (i) Populations A and B grow over time t1, t2, etc. Basal growth rates of monoculture populations are marked by dashed arrows. A also releases a metabolite which promotes the growth of B (solid diagonal arrow). Thus, B(t2) will depend on both B(t1) and A(t1). (ii) Suppose that at time t1, A acquires a mutation (green) which does not alter basal growth rate, but increases benefit supply to partner (thick green arrow). This will increase B(t2) even if we had held the dynamics of mutant A to that of the ancestral A. We define such a mutation as “strictly partner-serving”. (iii) At time t1, A acquires a mutation (blue) that increases A’s basal growth rate (thicker blue arrow), but not benefit supply rate. This mutation will promote B(t3) via increasing A(t2), but will not promote B(t3) if we had held the dynamics of mutant A to that of the ancestral A. Because increased B(t3) is indirect (mediated by increased A(t2)), we define this mutation as “strictly self-serving”. (iv) A win-win mutation (brown). (B) Mutation types in a mutualistic community and their evolutionary fates. Mutations that exert a positive direct effect on self (selfish, strictly self-serving, and win-win) are favored in a well-mixed environment. In a spatially-structured environment, effects on self and on partner are both important. For example, a spatially-structured environment may favor an altruistic mutation that confers a large benefit on partner at a small cost to self. Parentheses indicate that selection outcome (favored or disfavored) depends on quantitative details of the fitness effects on self and partner (see Momeni et al., 2013b for an example). Note that a mutation that is strictly partner-serving or altruistic could still rise in frequency in a well-mixed environment by “hitchhiking” with other self-serving mutations (Morgan et al., 2012; Waite and Shou, 2012). (C) CoSMO. CoSMO is an engineered mutualistic community consisting of two non-mating S. cerevisiae strains (Hart et al., 2019a; Shou et al., 2007). Thus, the two strains may be regarded as two species. The mCherry-expressing L-H+ strain is unable to synthesize lysine (L) and overproduces the adenine precursor hypoxanthine (H). The complementary GFP-expressing H-L+ strain requires hypoxanthine and overproduces lysine. Both overproduction mutations render the first enzyme of the corresponding biosynthesis pathway insensitive to end-product feedback inhibition control (Armitt and Woods, 1970; Feller et al., 1999). In minimal medium lacking exogenously supplied L and H, the two strains form a mutualistic community where live cells from both strains release overproduced metabolites (Hart et al., 2019a) and support each other’s growth.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Exponentially-growing isogenic strain pairs were competed in triplicate cocultures (circle, square, and triangle) at 30°C in minimal SD medium with adenine supplemented in excess (108.6 μM) when necessary. Cocultures were diluted twice daily to avoid depletion of nutrients. Population ratios were monitored using flow cytometry. In blue curves, dsRed-marked H- not overproducing lysine (WY944) has a fitness advantage of 1.2 ± 0.2% over YFP-marked H-L+ overproducing lysine (WY954). In black curves, dsRed-marked WY926 has a fitness advantage of 0.6 ± 0.1% over YFP-marked WY923. Thus, lysine overproduction imposes a fitness cost of ~0.6%. Data can be found in Figure 1—figure supplement 1—source data 1.
 
 Distinguishing mutation types is important for predicting their evolutionary successes. Consider the general case of microbial mutualisms without any partner choice mechanisms. That is, an individual is not capable of discriminating or ‘choosing’ among spatially-equivalent partners (Sachs et al., 2004; Shou, 2015). Then, a well-mixed environment will favor mutations with a positive direct fitness effect on self (i.e. selfish, strictly self-serving, and win-win; Figure 1B, ‘mixed’). This is because in a well-mixed environment, benefits from mutualistic partners are uniformly distributed, and thus how much an individual contributes to mutualistic partners is irrelevant. In contrast, in a spatially-structured environment, mutations exerting a positive direct effect on the mutualistic partner (i.e. win-win, strictly partner-serving, and altruistic) can be favored, while selfish mutations can be disfavored (Chao and Levin, 1981; Doebeli and Knowlton, 1998; Hamilton, 1964; Harcombe, 2010; Momeni et al., 2013b; Nowak, 2006; Sachs et al., 2004; Shou, 2015) (Figure 1B, ‘spatial’). This is because in a spatially-structured environment, interactions are localized and repeated between neighbors. If an individual does not aid its mutualistic neighbor, the individual will eventually suffer as its mutualistic neighbor perishes. Win-win mutations are particularly intriguing because they directly promote both sides of a mutualism.
 
@@ -34,7 +42,7 @@ In this study, we demonstrate that an intuitive definition of partner-serving ph
 
 We propagated nine independent CoSMO communities in well-mixed minimal medium without lysine or hypoxanthine supplements for ~100 generations by performing periodic dilutions to keep culture turbidity below saturation (Materials and methods, ‘CoSMO evolution’). Due to the metabolic codependence, the two strains coexisted throughout evolution (Shou et al., 2007). We froze samples at various time points for later revival. Since all communities were well-mixed, we predicted that selfish, strictly self-serving, and win-win mutations should arise (Figure 1B). In this study, we focused on L-H+.
 
-## Evolved L-H+ clones harboring Chromosome 14 duplication appeared to display a win-win phenotype
+### Evolved L-H+ clones harboring Chromosome 14 duplication appeared to display a win-win phenotype
 
 We randomly isolated evolved L-H+ clones from independent communities. Since the community environment was lysine-limited (Hart et al., 2019a; Waite and Shou, 2012), improved growth under lysine limitation would be self-serving. Indeed, while the ancestral strain failed to grow into micro-colonies on agar with low lysine (1.5 µM), all tested (>20) evolved clones could (Figure 2—figure supplement 1; Materials and methods ‘Microcolony assay’), consistent with our previous findings (Hart et al., 2019a; Waite and Shou, 2012). Thus, evolved L-H+ clones displayed self-serving phenotypes.
 
@@ -42,15 +50,67 @@ Since hypoxanthine is also scarce in the community (Hart et al., 2019a), a mutan
 
 When we back-crossed evolved clones harboring DISOMY14 to the ancestral background (Materials and methods, 'Strains and medium'), only meiotic segregants containing DISOMY14 showed increased hypoxanthine release rate compared to the ancestor (Figure 3—figure supplement 3). Thus, DISOMY14 genetically co-segregated with increased release rate (partner-serving). DISOMY14 repeatedly rose to a detectable frequency when L-H+ evolved with H-L+ in CoSMO (3 out of 3 lines), or when L-H+ evolved alone in lysine-limited chemostats (5 out of 5 lines) (Supplementary file 3). Thus, DISOMY14 is likely adaptive in lysine limitation. Indeed, while ancestors failed to form micro-colonies on low-lysine plate, meiotic segregants containing DISOMY14 could (self-serving) (Figure 2—figure supplement 1). Taken together, we hypothesized DISOMY14 to be both self-serving and partner-serving, that is ‘win-win’.
 
-## The self-serving phenotype of DISOMY14 requires duplication of the lysine permease LYP1
+### The self-serving phenotype of DISOMY14 requires duplication of the lysine permease LYP1
 
 Chromosome 14 harbors the high-affinity lysine permease LYP1. To test whether LYP1 duplication might improve the growth rate of L-H+ in limited lysine, we inserted an extra copy of LYP1 into the ancestral L-H+ strain (Materials and methods, 'Gene knock-in and knock-out’), and quantified cell growth rate under various concentrations of lysine using a microscopy assay (Materials and methods, ‘Microscopy growth assay’) (Hart et al., 2019b). LYP1 duplication indeed significantly increased the growth rate of L-H+ in low lysine (Figure 2, compare green with magenta). Similarly, deleting the duplicated copy of LYP1 from DISOMY14 cells abolished the self-serving phenotype of DISOMY14 (Figure 2, compare blue and cyan with magenta). Taken together, duplication of LYP1 is responsible for the self-serving phenotype of DISOMY14.
 
-## WHI3 duplication is responsible for the increased hypoxanthine release rate of DISOMY14
+![Figure 2.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig2-v1.jpg)
+
+**Figure 2.:** Exponentially-growing cells were washed free of lysine, starved in minimal medium SD for 3~5 hrs to deplete vacuolar lysine storage, and incubated in microtiter wells containing SD supplemented with various concentrations of lysine. Cells were imaged using a fluorescence microscope, and total fluorescence was tracked over time (Materials and methods; “Microscopy growth assay”) (Hart et al., 2019b). The maximal growth rate (the steepest positive slope of ln[fluorescence] against time) was quantified and plotted against lysine concentration. The grey dotted line demarcating “CoSMO environ.” corresponds to the lysine level supporting a growth rate of ≤ 0.1/hr as observed in ancestral CoSMO. DISOMY14 (“[14 14]”, blue diamond; WY2261) grew faster than the ancestral L-H+ (magenta circle; WY1335) in low lysine. This self-serving phenotype of DISOMY14 was abolished when the duplicated LYP1 gene was deleted form DISOMY14 (cyan triangle; WY2262, WY2263). Conversely, introducing an extra copy of LYP1 into the ancestor improved grow rate in limited lysine (green square; WY2254, WY2255). Each data point is the average of multiple (~4) experiments. Dashed fitting curves: Moser growth equation $g=g_{max}L^{n}/(K^{n}+L^{n})$ where $g$ is growth rate of L-H+, L is lysine concentration, $g_{max}$ is the maximal growth rate in excess lysine, K is the lysine concentration supporting $g_{max}/2$, and n is the “growth cooperativity” constant describing the sigmoidal shape of the curve. The maximal growth rate of DISOMY14 is lower than that of the ancestor, which could be due to the fitness cost associated with aneuploidy (Oromendia et al., 2012). Data can be found in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** An ancestral clone (left) and two evolved L-H+ clones (center and right) were plated on SD plates supplemented with 1.5 µM lysine. Ancestral cells (WY1335, left) failed to divide (arrows). Cells from a mildly-adapted evolved clone (harboring duplication of Chromosome 14, center) showed heterogeneous phenotypes: some cells remained undivided (arrow, perhaps resulting from reversion to euploidy during pre-growth), while other cells formed microcolonies of various sizes. Cells from a strongly-adapted evolved clone (harboring an ecm21 mutation, right) formed microcolonies of a uniform and large size. These images were taken using a cell phone camera and thus do not have a scale bar. For reference, an average yeast cell has a diameter of ~5 µm. This figure and figure legend are adapted from Hart et al. (2019a) (original figure published under a CC-BY 4.0 license, https://creativecommons.org/licenses/by/4.0/).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Schematic for whole genome sequencing using Nextera V2. Sequences for primers can be found in Supplementary file 4. The cyan and orange regions right next to gDNA are added by the transposase during DNA fragmentation (tagmentation).
+
+### WHI3 duplication is responsible for the increased hypoxanthine release rate of DISOMY14
 
 To identify which duplicated gene(s) might be responsible for the increased hypoxanthine release rate of DISOMY14, we systematically deleted various sections of the duplicated Chromosome 14 (Figure 3A; Materials and methods, ‘Chromosome truncation’), and quantified hypoxanthine release rate (Figure 3B). Duplication of the region between YNL193W and GCR2 was necessary for the increased release rate (Figure 3B, orange). This region contains six genes, including WHI3. Integrating an extra copy of WHI3 into the ancestor increased release rate to near that of DISOMY14, while deleting one copy of WHI3 from DISOMY14 restored the ancestral release rate (Figure 4A; Materials and methods, ‘Gene knock-in and knock-out’).
 
-## Despite increased release rate per cell, DISOMY14 is not partner-serving during steady state community growth
+![Figure 3.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig3-v1.jpg)
+
+**Figure 3.:** (A) Chromosome truncation scheme. Recombination occurs between a chromosome and a truncation cassette containing a homology region, a drug resistance marker, and a telomere (Materials and methods, ‘Chromosome truncation’). Single integration leads to the truncation of one of the duplicated chromosomes, with the centromere (circle)-containing region being retained by the cell. Integration into both chromosomes would lead to an inviable cell due to loss of the segment immediately distal to the insertion site from both chromosomes (not drawn). The copy number of chromosomal regions in transformants was verified by RADseq (Materials and methods, ‘RADseq’; Figure 3—figure supplement 4). (B) The genomic region between YNL193W and GCR2 is responsible for increased hypoxanthine release rate. We systematically truncated chromosome 14 in DISOMY14 cells (WY2261). We chose truncation sites (green dotted lines) that were spread across chromosome 14, and in later rounds of truncation, spread across the region of interest (i). We quantified hypoxanthine release rates of transformants in starvation batch cultures (Materials and methods, ‘Release assay’; Figure 3—figure supplement 1), normalized them against the release rate of the ancestral strain measured in the same experiment, and plotted the mean value and two standard errors of mean (ii). Duplication of the region between YNL193W and GCR2 (orange; containing six genes including YNL193W and excluding GCR2) is responsible for the increased hypoxanthine release rate (iii). Data can be found in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** This figure is adapted from Figure 5 of Hart et al. (2019a) (original figure published under a CC-BY 4.0 license, https://creativecommons.org/licenses/by/4.0/). (A) Hypoxanthine release during lysine starvation. Exponential L-H+ cells were washed free of lysine, and diluted into minimal medium SD without lysine. Live and dead population densities and supernatant hypoxanthine concentrations were measured over time (Materials and methods, ‘Flow cytometry’; ‘Bioassay’). (B) (Left) If hypoxanthine was released by live cells at a constant rate, then hypoxanthine concentration should scale linearly against live cell density integrated over time (similar to using 'man*hour' for measuring total work load). (Right) If hypoxanthine was released upon cell death, then hypoxanthine concentration should scale linearly against dead cell density. Live release model has better linearity than dead release model, and therefore hypoxanthine is likely released by live cells. Live cell release was corroborated by metabolite extraction experiments (Hart et al., 2019a). Data used to generate these plots can be found in Hart et al. (2019a).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Our previous work has established that hypoxanthine is released by live L-H+ cells (Hart et al., 2019a), and that hypoxanthine release rate is relatively constant regardless of whether cells are starved of lysine or grown in lysine-limited chemostats mimicking the community environment (Hart et al., 2019a). Since starvation release is easier to measure, we quantified hypoxanthine release rates of L-H+ clones in starvation batch cultures (Materials and methods, ‘Release assay’). As shown later, we obtained similar results in lysine-limited chemostats mimicking the CoSMO environment. Specifically in this experiment, we grew ancestral and evolved L-H+ clones to exponential phase in SD supplemented with excess lysine, and washed the cultures free of lysine with SD. We then starved each culture for 24 hr at 30 ˚C during which we sampled approximately every 6 hr to measure live cell density (Materials and methods, ‘Flow cytometry’) and supernatant hypoxanthine concentration (Materials and methods, ‘Bioassay’). From these dynamics, we calculated hypoxanthine release rate (Materials and methods, ‘Release assay’; Figure 3—figure supplement 1). Release rates are plotted here with error bars indicating two standard errors of mean (SEM) of at least four measurements. Evolved clones harboring chromosome 14 duplication (blue) exhibited increased hypoxanthine release rate per cell in comparison to the ancestor (magenta), while evolved clones without chromosome 14 duplication (orange) exhibited the ancestral release rate. Data can be found in Figure 3—figure supplement 2—source data 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** We crossed evolved clones JR30 (WY1593; black) and 38RL1 (WY1584; black) containing DISOMY14 with an ancestral strain containing one copy of chromosome 14. When we dissected tetrads (four spores/tetrad as marked by horizontal lines), the hypoxanthine over-release phenotype (blue, measured in starvation batch cultures) segregated with DISOMY14 (Materials and methods, ‘RADseq’). The release rate of the ancestral strain (WY1335, magenta) is plotted as a comparison. Data can be found in Figure 3—figure supplement 3—source data 2, Sheet ‘Plots’.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Schematic for RADseq using TruSeq. For detailed information, see Materials and methods ‘RADseq’. Sequences for primers can be found in Supplementary file 5.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** This figure is adapted from S3 Fig of Hart et al. (2019a) (original figure published under a CC-BY 4.0 license, https://creativecommons.org/licenses/by/4.0/). The final turbidity of an ade8- (WY1340) tester strain increases with increasing concentrations of hypoxanthine in a linear fashion (within the tested concentration range). Data can be found in Hart et al. (2019a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig4-v1.jpg)
+
+**Figure 4.:** (A) WHI3 duplication is responsible for increased hypoxanthine release rate per cell. Introducing an extra copy of WHI3 into the ancestral background (WY2357 ~2359) increased hypoxanthine release rate per cell. Deleting the duplicated WHI3 from DISOMY14 (WY2350 ~2352) decreased release rate (Materials and methods, 'Release rate'; starvation batch culture). (B) DISOMY14 utilizes more lysine per birth than the ancestor (Materials and methods, 'Metabolite utilization in batch culture'). For A and B, mean and two SEM are plotted. (C) Indistinguishable exchange ratio between ancestor and DISOMY14. Hypoxanthine release rate per L-H+ cell (A) is divided by lysine utilization per L-H+ birth (B). Error bars are calculated via error propagation (Materials and methods, 'Calculating uncertainty of ratio'). (A–C) were measured in starvation batch cultures. (D) In chemostats fed with a fixed lysine supply rate, DISOMY14 and ancestor release the same total hypoxanthine. Ancestor (WY1335, magenta) or DISOMY14 (WY2349, blue) L-H+ cells were grown in lysine-limited chemostats with a doubling time of 6 hr (Materials and methods, ‘Chemostat’). Supernatant hypoxanthine concentrations were quantified using a yield-based bioassay (Materials and methods, ‘Bioassay’; Figure 3—figure supplement 5). For complete data and statistical comparison, see Figure 4—figure supplement 2. (E) DISOMY14 and ancestral L-H+ led to identical growth rate of community and of partner. To prevent rapid evolution in L-H+ (Hart et al., 2019a), we grew CoSMO in a spatially-structured environment on agarose pads (Materials and methods, ‘Community growth rate’), and periodically measured the absolute abundance of the two strains (differentiable by their fluorescence; Materials and methods, ‘Flow cytometry’). We then quantified the steady state growth rate of community and of partner H-L+ by regressing ln(cell density) against time after the initial lag phase up to <108 cells (Hart et al., 2019a; see Figure 4—figure supplement 3 for examples of detailed dynamics). We plotted the slope (i.e. growth rate), with error bars indicating 2x standard error of estimating the slope. In A, B, and E, we performed statistical comparisons first using the F-test to test for equal variance, and then using unpaired two-tailed t-test with equal variance. We plotted the corresponding P-values of the t-test (the probability of observing a test statistic as extreme as, or more extreme than, the observed value under the null hypothesis of two groups belonging to the same distribution). Comparisons in A and B show significant difference, while those in E are not significantly different. All data can be found in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Introducing an extra copy of WHI3 into the ancestral background (WY2357 ~2359) increased cell size and lysine utilization per birth. Deleting the duplicated WHI3 from DISOMY14 (WY2350 ~2352) decreased cell size and lysine utilization per birth (Materials and methods, 'Cell size measurements' and 'Metabolite utilization in batch culture'). Duplicating or deleting WHI3 did not always result in a full phenotype switch to or from DISOMY14 phenotype, but always resulted in a significant change in phenotype from the parent strain. For example, duplicating WHI3 in the ancestor resulted in a significant increase in lysine required per new cell, but not to the level of DISOMY14. This could be due to the integrated WHI3 copy not being expressed to the same extent as the duplicated WHI3 copy in DISOMY14, or due to duplication of other genes in DISOMY14, or due to mutations in other chromosomes of the DISOMY14 strain. Mean and two SEM are plotted. P-values are from two-tailed t-test assuming equal variance (equal variance being tested via the F-test). Data can be found in Figure 4—source data 1, ‘CellSize’ sheet and ‘Consumption’ sheet, respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Chemostat population dynamics. Ancestor (WY1335, magenta) or DISOMY14 (WY2349, blue) L-H+ cells were grown in separate, lysine-limited chemostats (Materials and methods, ‘Chemostat’). Live and dead population densities were tracked using flow cytometry (Materials and methods, ‘Flow cytometry’). Supernatant hypoxanthine concentrations are plotted in Figure 4D. (B) DISOMY14 is not partner-serving. We quantified hypoxanthine release rate (Materials and methods, ‘Chemostat’ Equation S6), lysine utilization per new cell (Materials and methods, ‘Chemostat’ Equation S5), and exchange ratio (Materials and methods, ‘Chemostat’ Equation S7) for ancestor and DISOMY14, using the steady state data from 15 ~ 24 hr. Compared to the ancestor, DISOMY14 displayed higher hypoxanthine release rate per cell and higher lysine utilization per birth, regardless of whether we treated 6 hr doubling time chemostat data (circles) and 8 hr doubling time chemostat data (diamonds) as separate groups or as a single group. P values were calculated from two-tailed t-test assuming equal variance (equal variance being tested by the F-test). Ancestor and DISOMY14 have significantly different hypoxanthine release rate per cell and lysine utilization per birth, but their exchange ratios are similar. Data can be found in Figure 4—source data 1, 'Chemostat'.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/44812/elife-44812-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Exponential community growth lasting to 108 total cells. (B) Examples of CoSMO dynamics consisting of ancestral or DISOMY14 L-H+. The duration of the lag phase can vary with the area of the inoculation spot (and thus the initial surface cell density). Data can be found in Figure 4—source data 1, ‘GrowthDynamics’.
+
+### Despite increased release rate per cell, DISOMY14 is not partner-serving during steady state community growth
 
 WHI3 encodes an inhibitor of the cell division cycle (Garí et al., 2001; Nash et al., 2001). When WHI3 is overexpressed, cell division becomes less frequent even though biomass grows at the same rate, resulting in larger cells. Consistent with this notion, deletion of WHI3 results in smaller cell size, whereas extra copies or overexpression of WHI3 increases cell size (Garí et al., 2001; Nash et al., 2001). Indeed, DISOMY14 cells are bigger than ancestral cells, as quantified by the Coulter counter (Figure 4—figure supplement 1A; Materials and methods, ‘Cell size measurements’). Integrating an extra copy of WHI3 into the ancestor increased mean cell size, while deleting the extra copy of WHI3 from DISOMY14 restored ancestral cell size (Figure 4—figure supplement 1A).
 
@@ -76,27 +136,31 @@ The self-serving aspect of DISOMY14 is straightforward: due to duplication of th
 
 The partner-serving aspect of DISOMY14 is far less straightforward. We had mis-interpreted DISOMY14’s increased hypoxanthine release rate per cell as partner-serving until we realized that duplication of WHI3, a cell division cycle inhibitor that makes cells larger, was responsible. Thus, when quantifying partner-serving phenotypes in microbial mutualisms that span multiple generations, we may need to consider exchange ratio (benefit release rate per cell divided by benefit utilized to make that cell, or equivalently as we will show later, total benefit release rate per benefit utilized). Below, we discuss how exchange ratio links to current frameworks of mutualisms, inclusive fitness theory, and biological market theory.
 
-## Theories of mutualisms
+### Theories of mutualisms
 
 General theories have been developed for mutualisms (Archetti et al., 2011; Doebeli and Knowlton, 1998; Foster and Wenseleers, 2006; Frank, 1994; Jones et al., 2015; Sachs et al., 2004; Trivers, 1971; West et al., 2002; Yamamura et al., 2004). In mathematical models of mutualisms (e.g. Doebeli and Knowlton, 1998; Foster and Wenseleers, 2006; Frank, 1994; Yamamura et al., 2004), exchanged goods (investments) were linked to fitness effects on the focal individual. For example, the net fitness gain of a focal individual = fitness gain per investment made * average investment made within the group – fitness loss per investment made * investment by the focal individual (Frank, 1994). For a focal H-L+, the fitness loss term (fitness loss per lysine released*total lysine released by the focal cell) is fixed whether the interaction partner is ancestral or DISOMY14 L-H+. The term of fitness gain per investment made (how much faster H-L+ would grow per unit of lysine supplied to L-H+) does embody the spirit of exchange ratio (total hypoxanthine return rate per unit of lysine invested). However, measuring fitness gain per investment can be difficult since this value is unlikely to be a constant. For example, the growth rate of L-H+ is not a linear function of lysine concentration (Figure 2). In contrast in exchange ratio, ‘benefit’ and ‘investment’ are defined in physical terms of the goods exchanged, and fitness ‘cost’ for making the investment is separately considered (see Equation 1 below).
 
-A focal L-H+'s exchange ratio is equivalent to partner's benefit-to-investment ratio. There are in fact two perspectives for this equivalence. In the ‘individualistic’ perspective, we can define the benefit gained by partner H-L+ as the hypoxanthine release rate by the focal L-H+ cell (rH), while investment made by H-L+ as the amount of lysine required to make the focal L-H+ cell (uL). Then, H-L+'s benefit-to-investment ratio is identical to L-H+'s exchange ratio. In the ‘population’ perspective, we can define the investment made by H-L+ as a unit of lysine released for L-H+, and the benefit received by H-L+ as the resultant total rate of hypoxanthine reciprocation from not only the focal L-H+ cells but also its offspring (Figure 5B). This benefit-to-investment ratio is also identical to the exchange ratio, since total hypoxanthine release rate/fmole lysine = (hypoxanthine release rate per cell * total number of L-H+ cells)/fmole lysine =rH/(fmole lysine/total number of L-H+ cells)=rH/uL.
+A focal L-H+'s exchange ratio is equivalent to partner's benefit-to-investment ratio. There are in fact two perspectives for this equivalence. In the ‘individualistic’ perspective, we can define the benefit gained by partner H-L+ as the hypoxanthine release rate by the focal L-H+ cell (rH), while investment made by H-L+ as the amount of lysine required to make the focal L-H+ cell (uL). Then, H-L+'s benefit-to-investment ratio is identical to L-H+'s exchange ratio. In the ‘population’ perspective, we can define the investment made by H-L+ as a unit of lysine released for L-H+, and the benefit received by H-L+ as the resultant total rate of hypoxanthine reciprocation from not only the focal L-H+ cells but also its offspring (Figure 5B). This benefit-to-investment ratio is also identical to the exchange ratio, since total hypoxanthine release rate/fmole lysine = (hypoxanthine release rate per cell * total number of L-H+ cells)/fmole lysine =rH/(fmole lysine/total number of L-H+ cells)=$r_{H}/u_{L}$.
 
-## Inclusive fitness
+### Inclusive fitness
 
 Why would an individual cooperate – paying a fitness cost to provide a benefit that can aid the reproduction of other individuals (e.g. sterile ant workers aiding the reproduction of the queen)? Social evolution theories offer explanations for the evolution of cooperative traits (Frank, 1998; Hamilton, 1964; Kerr, 2009; Lehmann and Keller, 2006; Maynard Smith, 1964; Price, 1972; Price, 1970; Queller, 1985; Sachs et al., 2004; Traulsen and Nowak, 2006; West et al., 2007).
 
 A central concept in social evolution theories is ‘inclusive fitness’. Inclusive fitness considers the fitness impact from social interactions, and when properly formulated, natural selection leads organisms to become adapted as if to maximize their inclusive fitness (Grafen, 2006). For example, Hamilton’s rule states that cooperation can evolve as long as rb-c >0, where c is the fitness cost to the focal cooperator, b is the benefit to focal cooperator's partner, and r is their ‘relatedness’ – the similarity of an actor to its recipient relative to the population (Damore and Gore, 2012; Fletcher and Doebeli, 2009; Fletcher and Doebeli, 2009; Hamilton, 1964; Queller, 1992; van Veelen, 2009). Note that ‘similarity’ can broadly refer to action type (e.g. cooperation versus no cooperation), even if the actor and the recipient are genetically unrelated as in mutualisms. A mathematically-equivalent, individual-centric version of inclusive fitness (also known as ‘direct fitness’) of a focal individual is the sum of its basal fitness w0 in an asocial environment plus rb benefit received from other cooperators in the social environment minus the cost of cooperation c (Damore and Gore, 2012; Foster and Wenseleers, 2006; Frank, 1998; West et al., 2007). If a focal individual’s inclusive fitness is greater than its basal fitness (w0+rb-c>w0 or rb-c >0), then the individual would grow faster by cooperating than by not cooperating. Inclusive fitness relies on assumptions such as additivity of fitness effects. However, such assumptions are often not valid in microbial communities. For example, fitness often increases in a nonlinear (e.g. sigmoidal or saturating) fashion as the benefit increases (Figure 2; Niehaus et al., 2019), and therefore inclusive fitness described above is thought to be over-simplified and sometimes even misleading (Damore and Gore, 2012; Grafen, 2006; Nowak et al., 2010; van Veelen, 2009). However, despite these criticisms, inclusive fitness has served as a useful conceptual framework for many (Abbot et al., 2011; Birch, 2017).
 
-In obligatory mutualisms between clonal populations (i.e. relatedness = 1), we arrive at a physical definition of inclusive fitness (or direct fitness) based on exchange ratios and costs of making investments. Specifically, the fitness of H-L+ and L-H+ in monoculture is negative due to death rate and the cost of making investments. When growing in communities, divergent strain ratios rapidly converge to a fixed value (Momeni et al., 2013a; Shou et al., 2007). This means that the two strains must grow at an identical rate which equals to the community growth rate gcomm. In other words, the growth rate of the two strains are identical to each other and to community growth rate (Hart et al., 2019a; Materials and methods, 'Community growth rate'):(1)gcomm=-(dH+cH+dL+cL)2+rHrLuLuH+(dH+cH-dL-cL)24
+In obligatory mutualisms between clonal populations (i.e. relatedness = 1), we arrive at a physical definition of inclusive fitness (or direct fitness) based on exchange ratios and costs of making investments. Specifically, the fitness of H-L+ and L-H+ in monoculture is negative due to death rate and the cost of making investments. When growing in communities, divergent strain ratios rapidly converge to a fixed value (Momeni et al., 2013a; Shou et al., 2007). This means that the two strains must grow at an identical rate which equals to the community growth rate gcomm. In other words, the growth rate of the two strains are identical to each other and to community growth rate (Hart et al., 2019a; Materials and methods, 'Community growth rate'):
 
-Here, dH and dL are respectively H-L+ and L-H+’s death rates, cH and cL are respectively H-L+ and L-H+’s fitness costs of overproducing metabolites, rH and rL are respectively hypoxanthine and lysine release rates, and uH and uL are respectively hypoxanthine and lysine utilization amount per birth. Note that rHrLuLuH is the geometric mean of the two exchange ratios rH /uL and rL /uH, and cH and cL represent the fitness costs of making investments for partner.
+$$
+g_{comm}=-\frac{(d_{H}+c_{H}+d_{L}+c_{L})}{2}+\sqrt{\frac{r_{H}r_{L}}{u_{L}u_{H}}+\frac{(d_{H}+c_{H}-d_{L}-c_{L})^{2}}{4}}
+$$
+
+Here, dH and dL are respectively H-L+ and L-H+’s death rates, cH and cL are respectively H-L+ and L-H+’s fitness costs of overproducing metabolites, rH and rL are respectively hypoxanthine and lysine release rates, and uH and uL are respectively hypoxanthine and lysine utilization amount per birth. Note that $\sqrt{\frac{r_{H}r_{L}}{u_{L}u_{H}}}$ is the geometric mean of the two exchange ratios rH /uL and rL /uH, and cH and cL represent the fitness costs of making investments for partner.
 
 A corollary to Equation 1 is that despite DISOMY14’s better affinity for metabolite (Figure 2), DISOMY14 and ancestral L-H+ have identical fitness when cocultured with H-L+ in separate CoSMO communities (Figure 4E). This is because in CoSMO, the growth of an individual is limited by partner-supplied metabolites. Thus, there is no point of eating faster if meals arrive slowly. Obviously, if we were to culture DISOMY14 L-H+, ancestral L-H+, and H-L+ in a single community in a well-mixed environment, then DISOMY14 should outcompete ancestor due to its better affinity for lysine (Figure 2).
 
 This brings up an important point: fitness metric based on exchange ratio only works for cases where each mutualistic partner is of one genotype. It does not capture changes in genotype frequency within a species. Because of this restriction, it is best suited for sub-communities in a spatially-structured environment. In a spatially-structured environment, if the initial population densities are low, then interactions will mainly take place between one genotype from each species. Individuals in the local sub-community with the highest gcomm are predicted to grow the fastest. In the case of spatial CoSMO, would an H-L+ cell grow faster if it had landed next to an ancestral or a DISOMY14 L-H+ cell? During the initial encounter, H-L+ next to DISOMY14 will benefit more from DISOMY14’s faster release rate (Figure 5A). However, after this initial stage, DISOMY14 and ancestor are identical due to identical exchange ratio (Figure 5B,i and ii). Indeed, H-L+ grew equally fast when co-cultured with ancestral or DISOMY14 L-H+ (Figure 4E).
 
-## Biological market theory
+### Biological market theory
 
 Biological market theory posits that the exchange of goods among organisms can be analyzed in market terms, where individuals attempt to maximize their gains (Noë and Hammerstein, 1994; Noë and Hammerstein, 1995; Werner et al., 2014). For example, a male insect that offers more nuptial gifts to a female is regarded by the female as being more partner (female)-serving and is thus chosen by the female (Noë and Hammerstein, 1994; Noë and Hammerstein, 1995; Werner et al., 2014). Although biological market theory does not apply here since our yeast strains lack partner choice capability, our work can prove useful for other systems. For example, consider the legume-rhizobia mutualism where a legume host provides photosynthates to rhizobia while rhizobia reciprocate fixed nitrogen. Application of biological market theory leads to statements such as "…whether plant hosts can detect variation in resources or services provided (by rhizobia) and respond accordingly. Such discrimination mechanisms have been found in legumes, with some species preferentially supporting rhizobial symbionts that provide more fixed N2 for hosts" (Werner et al., 2014). Since legume-rhizobia mutualisms last over multiple generations of rhizobia, we suggest that ‘fixed N2’ should be quantified in terms of exchange ratio: a focal rhizobium’s nitrogen release rate normalized by photosynthate utilized to make the rhizobium, or total nitrogen release rate per photosynthate utilized. Obviously, when comparing non-nitrogen fixers with nitrogen fixers, fixers are more mutualistic than non-fixers. But when comparing quantitative variants of nitrogen fixers, this distinction could become important. By explicitly quantifying the exchanged goods, exchange ratio captures the spirit of market economy.
 
@@ -106,7 +170,7 @@ For a lay audience behind-the-scenes story, see 'Foresight, hindsight, insight, 
 
 ## Materials and methods
 
-## Strains and medium
+### Strains and medium
 
 Genetic manipulations and growth medium for the yeast S. cerevisiae are explained in Guthrie and Fink (1991). Protocols and technical details that we have used can be found in Waite and Shou (2014). Briefly, we used autoclaved rich medium YPD (10 g/L yeast extract, 20 g/L peptone, 20 g/L glucose) in 2% agar plates for isolating single colonies. Saturated YPD overnight liquid cultures from these colonies were then used as inocula to grow exponential cultures. YPD overnight cultures were stored at room temperature for no more than 4 ~ 5 days prior to experiments.
 
@@ -116,7 +180,7 @@ The ancestral strain was WY1335, described in detail in Hart et al. (2019a). All
 
 The DISOMY14 strain we used for analysis WY2261 (refrozen as WY2348 and WY2349) was obtained in the following manner. The evolved strain WY1584 was back-crossed twice into the ancestral background to get rid of mutations in genes ECM21 and YPL247C. The first cross with WY1521 resulted in ‘38-1D’, which was then crossed with WY1335 to result in WY2261 (‘E2’). To genotype spores, we PCR amplified the mutated regions in ECM21 and YPL247C, and subjected the purified PCR product to Sanger sequencing. For those spores that contained no mutations in ECM21 and YPL247C, we subjected them to restriction-site associated DNA sequencing (Materials and methods, 'RADseq') to determine ploidy. When we modified our sequence analysis pipeline, we realized that WY2261 contained other mutations (Supplementary file 3). However, the presence of other mutations does not affect our conclusions, since integrating an extra copy of LYP1 or WHI3 into the ancestral background respectively increased growth rate under lysine limitation (Figure 2) and per cell hypoxanthine release rate (Figure 4A).
 
-## CoSMO evolution
+### CoSMO evolution
 
 L-H+ (WY1335) and H-L+ (WY1340) were grown separately to exponential phase in minimal SD medium supplemented with lysine (164.3 μM) or adenine sulfate (108.6 μM), respectively (Guthrie and Fink, 1991). Cells were washed free of supplements, counted using a Coulter counter, and mixed at 1000:1 (Line A), 1:1 (Line B), or 1:1000 (Line C) at a total density of 5 × 105/ml. The different initio ratios did not noticeably affect evolutionary outcomes. Three 3 ml community replicates (replicates 1, 2, and 3) per initial ratio were initiated. Communities were grown at 30°C in glass tubes on a rotator to ensure well-mixing. Community turbidity was tracked by measuring the optical density (OD600) in a spectrophotometer once to twice every day. In this study, 1 OD was found to be 2 ~ 4×107 cells/ml. We diluted communities periodically to maintain OD at below 0.5 to avoid additional selections due to limitations of nutrients other than hypoxanthine or lysine. The fold-dilution was controlled to within 10 ~ 20 folds to minimize severe population bottlenecks. Note that no mutagens were used during evolution.
 
@@ -124,13 +188,13 @@ Coculture generation was calculated from accumulative population density by mult
 
 CoSMO could engage in self-sustained growth only if its initial total cell density was sufficiently high (Shou et al., 2007). Thus, to revive a coculture, ~20 μl was scooped from the frozen stock using a sterile metal spatula, diluted ~10 fold into SD, and allowed to grow to moderate turbidity. The coculture was further expanded by adding 3 ml of SD. To isolate clones, cocultures were plated on rich medium YPD, and clones from the two strains were distinguished by their fluorescence colors or drug resistance markers.
 
-## Gibson assembly
+### Gibson assembly
 
 The detailed protocol of Gibson assembly (Gibson et al., 2009) for assembling DNA fragments with end homology was obtained from Eric Klavins lab (University of Washington). 1 ml 5xISO buffer: 1M Tris-HCl (pH 7.5) 500 µl; 2M MgCl2 25 µl; 100 mM dGTP, dATP, dCTP, and dTTP 10 µl each (total 40 µl); 1M DTT 50 µl; 100 mM NAD 50 µl; PEG-8000 0.25 g; H2O: 145 µl. 5xISO was frozen in 100 µl aliquots at −20°C.
 
 The assembly master mix (375 µl total) included: H2O 216.75 µl; 5XISO Buffer 100 µl; 1 U/µl T5 Exonuclease 2 µl; 2 U/µl Phusion Polymerase 6.25 µl; 40 U/µl Taq DNA Ligase 50 µl. 15 μl aliquots were stored at −20°C. This master mix is ideal for DNA molecules with 20 ~ 150 bp overlapping homology. To carry out the assembly reaction, 15 μl assembly master mix is mixed with a total of 5 μl DNA (e.g. 125 nM), and incubated at 50°C for 1 hr.
 
-## Chromosome truncation
+### Chromosome truncation
 
 We constructed plasmid WSB175 to contain G418 resistance (KanMX) and a telomeric sequence. Briefly, WSB174 (from Dan Gottschling lab) containing a URA3 marker was digested with HindIII and BamHI to remove the URA3 marker and yield the vector backbone (4.5 kb). The KanMX gene was amplified from WSB26 using primers WSO433 and WSO434, each containing a 25 bp overhang homologous to the vector backbone. The vector backbone and the KanMX PCR product were circularized via Gibson assembly to yield WSB175. To perform Gibson assembly, we used 5 µl DNA (including 55 ng vector and 0.5 µl of 125 nM insert). Gibson mixture was transformed into E. coli, and DNA was extracted from several colonies. DNA was checked via restriction digestion with HindIII and BamHI.
 
@@ -138,7 +202,7 @@ To carry out chromosome truncation, we PCR amplified ~600 bp fragments from var
 
 The PCR product was used to transform the DISOMY14 yeast strain (WY2261) using lithium acetate yeast transformation (Waite and Shou, 2014). Transformants were selected on rich medium supplemented with G418 (YPD + G418) plate. Transformants were screened for correct integration using PCR amplification across the chromosome integration site (one primer homologous to the genome, and the other primer homologous to KanMX).
 
-## Gene knock-in and knock-out
+### Gene knock-in and knock-out
 
 To introduce an extra copy of LYP1 in the ste3::HygMX locus of the ancestor, we assembled and transformed the following. We amplified a 527 bp homology region upstream of STE3, the LYP1 gene (including 333 bp upstream and 466 bp downstream of ORF), and the KanMX resistance cassette (loxP-TEFp-KanMX-TEFt-loxP) from WSB118, all using PCR. Note that the KanMX resistance cassette contains 3' homology to the ste3::HygMX locus. Primers used contained 20 bp homology when appropriate to allow us to compile these sequences in the order listed using Gibson assembly. We then amplified this assembly further using PCR and transformed this 4.8 kB product into the ancestor (WY1335), screening for successful integration by G418 resistance, loss of hygromycin resistance, and checking PCR. We obtained WY2254 ~2255.
 
@@ -148,7 +212,7 @@ We used a similar methodology to introduce an extra copy of WHI3 in the ste3::Hy
 
 To delete WHI3 from DISOMY14, we amplified a 528 bp region upstream of WHI3, and a 489 bp region downstream of WHI3. We assembled the two pieces with KanMX cassette via Gibson assembly, PCR amplified the assembled molecule, and transformed DISOMY14 cells with the PCR product. Transformants were plated on YPD + G418 plate, and colonies were screened for correct integration via PCR. We obtained WY2350 ~2352.
 
-## Genomic DNA extraction for sequencing
+### Genomic DNA extraction for sequencing
 
 For whole-genome sequencing via tagmentation, we extracted yeast genomic DNA using QIAGEN Genomic-tip 20G (Cat. No. 10223), YeaStar Genomic DNA kit (Zymo Research), or a protocol modified from Sergey Kryazhimskiy and Andrew Murray lab. DNA from the last protocol is suitable for tagmentation but not for RADseq.
 
@@ -156,7 +220,7 @@ To extract DNA, we used the following procedure: "Spin down cells (0.5 ml satura
 
 For RADseq, yeast genomic DNA was extracted from 2 × 108 ~ 109 cells using, for example, the DNeasy Blood and Tissue Kit (Qiagen). High-quality DNA is required for optimal restriction endonuclease digestion and is of utmost importance for the overall success of the protocol. The samples were treated with RNase A following manufacturer’s instructions to remove residual RNA, and then quantified using Qubit. The optimal concentration after elution is 25 ng/μl or greater.
 
-## Whole-genome sequencing
+### Whole-genome sequencing
 
 The whole genome sequencing protocol was slightly modified from that of Sergey Kryazhimskiy v. 2.1 (2013-06-06) (Kryazhimskiy et al., 2014). Indexing primer design followed (Adey et al., 2010) (Supplementary file 4). For an illustration of Nextera V2 Illumina sequencing molecular biology, see Figure 2—figure supplement 2.
 
@@ -170,7 +234,7 @@ PCR clean-up used magnetic beads. Centrifuge the plate to collect all liquid (10
 
 Pool samples at equal molarity, with the final pool ideally being at least 2 nM (although 1 nM seemed fine as well). If we have 100 indexes, then each sample needs to be diluted to 0.02 nM. Qubit the pooled sample and submit 30 µl at 2 nM for sequencing on Illumina HiSeq 2000 (paired-end; 50 ~ 150 cycles; Nextera sequencing primers).
 
-## RADseq
+### RADseq
 
 RADseq (restriction site-associated DNA sequencing) protocol was obtained from Aimee Dudley lab based on Etter et al. (2012). The design scheme is in Figure 3—figure supplement 4, and primer sequences are in Supplementary file 5. Briefly, genomic DNA was digested with the six-cutter Mfe1 and the four-cutter Mbo1 (see below). Our desired DNA fragment would be flanked by Mfe1 and Mbo1 sites. To the digested DNA, we ligate annealed primers (P1 top annealed with P1 bottom containing a 4 bp barcode and Mfe1 overhang, and P2 top annealed with P2 bottom containing a 6 bp barcode and Mbo1 overhang). The dual barcode system allows many samples (e.g. 900 samples) to be sequenced simultaneously. P1 also contains Illumina Read One sequencing primer which will read 4 bp barcode and genomic DNA adjacent to the Mfe1 site, and P2 also contains Illumina Read Two sequencing primer and Index sequencing primer which will read 6 bp barcode and genomic DNA adjacent to the Mbo1 site.
 
@@ -188,7 +252,7 @@ Every 24 samples were pooled together and concentrated using the QIAGEN MinElute
 
 The gel extracted DNA was amplified using the NEBNext PCR Master Mix (NEB#M0541S) with custom primers (WSO398 and WSO381; Supplementary file 5). The mixture contained: 25 µl NEBNext PCR Master Mix; 1 µl WSO398 (10 µM); 1 µl WSO381 (10 µM); 1 µl DNA (5 ~ 10 ng), and 22 µl H2O (total 50 µl). PCR cycling was: 98°C (1 min); [98°C (10 s)+60°C (30 s)+72°C (30 s)]x14 cycles + 72°C (4 min)+4°C hold. The PCR reaction was cleaned and concentrated using the QIAquick PCR Purification Kit (QIAGEN), eluting in 30 µl H2O. The expected concentration is ~30–40 ng/µl. The library quality (fragment size distribution) was ascertained using Tapestation. The resultant DNA was subjected to paired-end 25 cycles on Illumina HiSeq 2000 using TruSeq Dual Index Sequencing Primers.
 
-## Sequence analysis
+### Sequence analysis
 
 To analyze whole genome sequencing, a custom Perl script incorporating bwa (Li and Durbin, 2009) and SAMtools (Li et al., 2009) written by Robin Green was used to align paired-end reads to the S. cerevisiae RM-11 reference genome. Mutations were identified via GATK for single-nucleotide variants and indels, and cn.MOPs for local copy-number variant calling. A custom Perl script incorporating vcftools was used to automate comparison between ancestral versus evolved strains. All genetic changes were visually inspected using the Integrated Genome Viewer (IGV) environment for quality inspection and validation. Ploidy was calculated using custom python and R scripts wherein read depth was counted for each base. These read depths were averaged within successive 1000 bp windows; each window average is normalized by the median of all window averages across the genome. The normalized values for each window are log2 transformed and plotted versus the respective genomic position (chromosome/supercontig) for ease in graphical inspection of ploidy changes. Sequence analysis code can be publicly accessed at https://github.com/robingreen525/ShouLab_NGS_CloneSeq (Green, 2019; copy archived at https://github.com/elifesciences-publications/ShouLab_NGS_CloneSeq).
 
@@ -198,15 +262,15 @@ To ensure that only high quality markers were used, the CV of each marker across
 
 To assess ploidy for RADseq, the same analysis was performed on a panel of 10 euploid strains. For each strain and for each marker, the relative proportion of that maker of the total reads for the strain of interest was compared against the median proportion of the total reads for the euploid panel. A supercontig (the RM11 assembly does not have full chromosomes but supercontigs) was called as duplicated if the average proportion of all makers on that supercontig in the backcrossed strain was 2-fold greater than the euploid panel. All disomy 14 calls for a tetrad segregated 2:2 as expected.
 
-## Microcolony assay
+### Microcolony assay
 
 This method has been described in Hart et al. (2019b). Briefly, to assay for self-serving phenotype of an L-H+ mutant, we diluted a saturated overnight 1:6000 into SD +164 µM lysine, and allowed cultures to grow overnight at 30°C to exponential phase. We washed cells 3x with SD, starved them for 4–6 hr to deplete vacuolar lysine stores, and diluted each culture so that a 50 µl spot had several hundred cells. We spotted 50 µl on SD plate supplemented with 1.5 µM lysine (10 spots/plate), and allowed these plates to grow overnight. When observed under a 10x objective microscope, evolved cells with increased lysine affinity would grow into ‘microcolonies’ of ~20 ~ 100 cells, while the ancestral genotype would fail to grow (Figure 2—figure supplement 1). DISOMY14 exhibited an intermediate phenotype where smaller microcolonies with variable sizes formed.
 
-## Flow cytometry
+### Flow cytometry
 
 Beads (ThermoFisher Cat R0300, 3 μm red fluorescent beads) were autoclaved in a factory-clean glass tube, diluted into sterile 0.9% NaCl, and supplemented with sterile-filtered Triton X-100 to a final 0.05% (to prevent bead clumping). The mixture was sonicated to eliminate bead clusters and was kept at 4°C in constant rotation to prevent settling and re-clumping. Bead density was quantified via hemacytometer and Coulter counting (4−8 × 106 beads/ml final). The prepared bead mixture served as a density standard. Culture samples of interest were diluted to OD 0.01 ~ 0.1 (7 × 105 - 7 × 106 cells/ml) in filtered water. Bead-cell mixtures were prepared by mixing 90 ul of the diluted culture sample, 10 µl of the bead stock, and 2 µl of 1 µM ToPro 3 (Molecular Probes T-3605), a nucleic acid dye that only permeates cell membranes of dead cells. Triplicate cell-bead mixtures were prepared for each culture in a 96-well format for high-throughput processing. Flow cytometry of the samples was performed on Cytek DxP Cytometer equipped with four lasers, ten detectors, and an autosampler. GFP (H-L+), mCherry (L-H+), and ToPro (dead cells) are respectively detected by 50 mW 488 nm laser with 505/10 (i.e., 500–515 nm) detector, 75 mW 561 nm Laser with 615/25 detector, and 25 mW 637 nm laser with 660/20 detector. Each sample was individually analyzed using FlowJo software to identify the number of beads, dead cells, and live fluorescent cells. Live and dead cell densities were calculated from the respective cell:bead ratios, corrected for the initial culture dilution factor. The mean cell density from triplicate measurements was used (coefficient of variation within 10%).
 
-## Microscopy growth assay
+### Microscopy growth assay
 
 See Hart et al. (2019b) for details on microscopy and experimental setup, method validation, and data analysis. Briefly, cells were diluted to low densities to minimize metabolite depletion during measurements. Dilutions were estimated from culture OD measurement to result in 1000 ~ 5000 cells inoculated in 300 µl SD medium supplemented with different metabolite concentrations in wells of a transparent flat-bottom microtiter plate (e.g. Costar 3370). We filled the outermost wells with water to reduce evaporation.
 
@@ -216,70 +280,128 @@ Time-lapse images were analyzed using an ImageJ plugin Bioact (Hart et al., 2019
 
 We normalized total intensity against that at time zero for each position, and then averaged across positions. We calculated growth rate over three to four consecutive time points, and plotted the maximal net growth rate against metabolite concentration. If maximal growth rate occurred at the end of an experiment, then the experimental duration was too short and data were not used. For L-H+, the initial stage (3 ~ 4 hr) residual growth was excluded from analysis since residual growth was supported by vacuolar lysine storage.
 
-## Bioassay
+### Bioassay
 
 75 µl sample filtered through a 0.2 µm filter was mixed with an equal volume of a master mix containing 2xSD (to provide fresh medium) as well as tester cells auxotrophic for the metabolite of interest (~1×104 cells/ml, WY1340 over-night culture) in a flat-bottom 96-well plate. We then wrapped the plate with parafilm and allowed cells to grow to saturation at 30°C for 48 hr. We re-suspended cells using a Thermo Scientific Teleshake (setting #5 for ~1 min) and read culture turbidity using a BioTek Synergy MX plate reader. Within each assay, SD supplemented with various known concentrations of metabolite were used to establish a standard curve that related metabolite concentration to final turbidity (e.g. Figure 3—figure supplement 5). From this standard curve, the metabolite concentration of an unknown sample could be inferred.
 
-## Release assay
+### Release assay
 
 Detailed description of the release assay during lysine starvation can be found in Hart et al. (2019a). Briefly, L-H+ strain was pre-grown in synthetic minimal media SD supplemented with high lysine (164 µM) to exponential phase. The cultures were washed in lysine-free media and allowed to starve for 2 hr at 30°C to deplete vacuolar lysine stores. Following starvation, the culture was periodically sampled (approximately every 6 hr for 24 hr) upon which live/dead cell densities were measured via flow cytometry (Materials and methods, ‘Flow cytometry’), and culture samples were sterile filtered and supernatants were frozen. The supernatants were subjected to bioassay to measure hypoxanthine concentrations (Materials and methods, ‘Bioassay’). Hypoxanthine release rate can be inferred by the slope of the linear function relating integrated live cell density over time (cells/ml*hr) versus measured hypoxanthine concentration (µM). For an example, see Figure 3—figure supplement 1.
 
 To increase the throughput of this assay for screening chromosome truncation mutants (Figure 3B), we made the following modifications. After measuring time zero cell densities by flow cytometry, we loaded 200 µL of OD ~0.05 cells in SD per well and tracked fluorescence every 2 hr using automated 96-well plate fluorescence microscopy imaging (Hart et al., 2019b). The rest of each culture was treated as in the normal assay for sterile filtering at each sampling. Plate preparation, imaging, and images analysis were done as described in Materials and methods, ‘Microscopy growth assay’. Fluorescence scales with live cell density (Hart et al., 2019b), so we were able to estimate live cell densities at each time point t by taking (fluorescence intensity at time t)*(initial cell density)/(initial fluorescence intensity).
 
-## Cell size measurements
+### Cell size measurements
 
 Both Coulter counter and flow cytometry forward scattering can be used to compare the cell size distributions of yeast strains, with Coulter counter providing a direct measurement of cell size. We used the Z2 Coulter counter (Beckman), with the following settings: Gain = 128; Current = 0.5; Preamp Gain = 224. We diluted cultures to OD600 ~ 0.01 to 0.3 (1 OD ~ 7×107 cells/ml) when necessary, sonicated cells (horn sonicator at low setting for three quick pulses or bath sonicator for 1 min), and placed 100 µl culture into Coulter cuvette. We then added 10 ml sterilized isotone down the wall of the titled cuvette to avoid splashing, and analyzed the sample.
 
-## Metabolite utilization in batch culture
+### Metabolite utilization in batch culture
 
 We measured metabolite utilization after cells fully saturated the culture. We starved exponentially-growing cells (3–6 hr for L-H+, 24 hr for H-L+) to deplete initial intracellular stores and inoculated ~1×105 cells/ml into various concentrations of the required metabolite up to 25 µM. We incubated for 48 hr and then measured cell densities by flow cytometry. We performed linear regression between input metabolite concentrations (horizontal axis) and final total cell densities (vertical axis) within the linear range, forcing the regression line through origin. Utilization per birth in a saturated culture was quantified from 1/slope.
 
-## Calculating uncertainty of ratio
+### Calculating uncertainty of ratio
 
-Since release rate and metabolite utilization were measured in independent experiments, their errors were uncorrelated. For ratio f=A/B, suppose that A and B have standard deviations of σA and σB, respectively. Then σf is calculated as f(σA/A)2+(σB/B)2.
+Since release rate and metabolite utilization were measured in independent experiments, their errors were uncorrelated. For ratio $f=A/B$, suppose that A and B have standard deviations of σA and σB, respectively. Then σf is calculated as $f\sqrt{(\sigma_{A}/A)^{2}+(\sigma_{B}/B)^{2}}$.
 
-## Chemostat
+### Chemostat
 
 We have constructed an eight-vessel chemostat with a design modified from Takahashi et al. (2015). For details of construction, modification, calibration, and operation, see Skelding et al. (2017). A detailed discussion on using chemostats to quantify release and utilization phenotypes can be found in Hart et al. (2019a). A summary is presented here.
 
 For L-H+, due to rapid evolution, we devised experiments so that live and dead populations quickly reached steady state. We first calculated the expected steady state cell density by dividing the concentration of lysine in the reservoir (20 µM) by fmole lysine utilized per new cell (Figure 4). We washed exponentially growing cells to remove extracellular lysine and inoculated 50% ~ 75% of the vessel volume at 1/3 of the expected steady state density. We filled the rest of the 19 ml vessel with reservoir media (resulting in less than the full 20 µM of starting lysine, but more than enough for maximal initial growth rate, ~5–10 µM). We set the pump flow rate to achieve the desired doubling time T (19 ml culture volume*ln(2)/T). We collected and weighed waste media for each individual culturing vessel to ensure that the flow rate was correct (i.e. total waste accumulated over time t was equal to the expected flow rate*t). We sampled cultures periodically to track population dynamics using flow cytometry (Materials and methods, ‘Flow cytometry’), and filtered supernatant through a 0.45 µm nitrocellulose filter and froze the supernatant for metabolite quantification at the conclusion of an experiment (Materials and methods, ‘Bioassay’). At the conclusion of an experiment, we also tested input media for each individual culturing vessel to ensure sterility by plating a 300 µl aliquot on an YPD plate and checking for growth after two days of growth at 30°C. If a substantial number of colonies grew (>5 colonies), the input line was considered contaminated and data from that vessel was not used. For most experiments, we isolated colonies from end time point and checked percent evolved (Materials and methods, ‘Microcolony assay’). For L-H+, we only analyzed time courses where >90% of population remained ancestral.
 
-In a lysine-limited chemostat, live cell density [L−H+]live is increased by growth (at a rate g), and decreased by dilution (at a rate dil):(S1)d[L−H+]live/dt=(g−dil)[L−H+]live
+In a lysine-limited chemostat, live cell density $[L^{−}H^{+}]_{live}$ is increased by growth (at a rate $g$), and decreased by dilution (at a rate dil):
 
-L, lysine concentration in the culturing vessel, is increased by the supply of fresh medium (at concentration L0), and decreased by dilution and utilization (with birth of each new cell utilizing uL amount of lysine).(S2)dL/dt=L0⋅dil−L⋅dil−uLg[L−H+]live
+$$
+d[L^{−}H^{+}]_{live}/dt=(g−dil)[L^{−}H^{+}]_{live}
+$$
 
-Finally, hypoxanthine concentration H is increased by release (from live cells at rH per live cell per hr, Hart et al., 2019a), and decreased by dilution.(S3)dH/dt=rH⋅[L−H+]live−dil⋅H
+L, lysine concentration in the culturing vessel, is increased by the supply of fresh medium (at concentration L0), and decreased by dilution and utilization (with birth of each new cell utilizing $u_{L}$ amount of lysine).
 
-Note that at the steady state (denoted by subscript ‘ss’), growth rate is equal to dilution rate (setting Equation S1 to zero):(S4)gss=dil
+$$
+dL/dt=L_{0}⋅dil−L⋅dil−u_{L}g[L^{−}H^{+}]_{live}
+$$
 
-To measure metabolite utilized per birth at steady state, we set Equation S2 to zero and also apply Equation S4(S5)uL=(L0⋅dil−Lss⋅dil)/(gss[L−H+]live,ss)∼L0/[L−H+]live,ss
+Finally, hypoxanthine concentration H is increased by release (from live cells at rH per live cell per hr, Hart et al., 2019a), and decreased by dilution.
+
+$$
+dH/dt=r_{H}⋅[L^{−}H^{+}]_{live}−dil⋅H
+$$
+
+Note that at the steady state (denoted by subscript ‘ss’), growth rate is equal to dilution rate (setting Equation S1 to zero):
+
+$$
+g_{ss}=dil
+$$
+
+To measure metabolite utilized per birth at steady state, we set Equation S2 to zero and also apply Equation S4
+
+$$
+u_{L}=(L_{0}⋅dil−L_{ss}⋅dil)/(g_{ss}[L^{−}H^{+}]_{live,ss})∼L_{0}/[L^{−}H^{+}]_{live,ss}
+$$
 
 Here, the approximation holds because the concentration of lysine in chemostat (Lss) is much smaller than that in reservoir (L0) and thus Lss can be ignored.
 
-To measure release rate at steady state, we can set Equation S3 to zero and obtain:(S6)rH=dil⋅Hss/[L−H+]live,ss
+To measure release rate at steady state, we can set Equation S3 to zero and obtain:
 
-Thus, the exchange ratio can be quantified from(S7)rHuL=dil⋅Hss/[L-H+]live,ssL0/[L-H+]live,ss=HssL0dil
+$$
+r_{H}=dil⋅H_{ss}/[L^{−}H^{+}]_{live,ss}
+$$
+
+Thus, the exchange ratio can be quantified from
+
+$$
+\frac{r_{H}}{u_{L}}=\frac{dil⋅H_{ss}/[L^{-}H^{+}]_{live,ss}}{L_{0}/[L^{-}H^{+}]_{live,ss}}=\frac{H_{ss}}{L_{0}}dil
+$$
 
 Again, Hss is the steady state hypoxanthine concentration in the chemostat culture vessel, L0 is the lysine concentration in the reservoir, and dil is the dilution rate.
 
-## Community growth rate
+### Community growth rate
 
-This derivation is adapted from Hart et al. (2019a). If we culture L-H+ with H-L+, we have(S8)d[L−H+]dt=(bL(L)−dL−cL)[L−H+](S9)d[H−L+]dt=(bH(H)−dH−cH)[H−L+](S10)dLdt=rL[H−L+]−uLbL(L)[L−H+](S11)dHdt=rH[L−H+]−uHbH(H)[H−L+]
+This derivation is adapted from Hart et al. (2019a). If we culture L-H+ with H-L+, we have
+
+$$
+\frac{d[L^{−}H^{+}]}{dt}=(b_{L}(L)−d_{L}−c_{L})[L^{−}H^{+}]
+$$
+
+
+
+$$
+\frac{d[H^{−}L^{+}]}{dt}=(b_{H}(H)−d_{H}−c_{H})[H^{−}L^{+}]
+$$
+
+
+
+$$
+\frac{dL}{dt}=r_{L}[H^{−}L^{+}]−u_{L}b_{L}(L)[L^{−}H^{+}]
+$$
+
+
+
+$$
+\frac{dH}{dt}=r_{H}[L^{−}H^{+}]−u_{H}b_{H}(H)[H^{−}L^{+}]
+$$
 
 Equation S8 states that the clonal population density L-H+ increases at birth rate bL which in turn depends on the concentration of lysine L, and decreases at death rate dL and cost of metabolite overproduction cL. Equation S9 describes how clonal population density H-L+ changes over time. Equation S10 states that the concentration of lysine L increases due to releaser H-L+ releasing at a rate rL and decreases as uL amount is utilized per birth of consumer L-H+. Equation S11 describes how the concentration of H changes over time. All parameters are non-negative. Note that only a single genotype per species is considered.
 
-We can calculate the steady state growth rate gcomm. Since strain ratio becomes fixed (Figure 4—figure supplement 3), both strains must grow at the same rate as the community. This also means that L and H concentrations do not change.bL−dL−cL=gcommbH−dH−cH=gcommrL[H−L+]=uLbL[L−H+]=uL(gcomm+dL+cL)[L−H+]rH[L−H+]=uHbH[H−L+]=uH(gcomm+dH+cH)[H−L+]
+We can calculate the steady state growth rate gcomm. Since strain ratio becomes fixed (Figure 4—figure supplement 3), both strains must grow at the same rate as the community. This also means that L and H concentrations do not change.
 
-Multiply the last two equations, we getrHrL=uHuL(gcomm+dL+cL)(gcomm+dH+cH)
+$$
+b_{L}−d_{L}−c_{L}=g_{comm}b_{H}−d_{H}−c_{H}=g_{comm}r_{L}[H^{−}L^{+}]=u_{L}b_{L}[L^{−}H^{+}]=u_{L}(g_{comm}+d_{L}+c_{L})[L^{−}H^{+}]r_{H}[L^{−}H^{+}]=u_{H}b_{H}[H^{−}L^{+}]=u_{H}(g_{comm}+d_{H}+c_{H})[H^{−}L^{+}]
+$$
+
+Multiply the last two equations, we get
+
+$$
+r_{H}r_{L}=u_{H}u_{L}(g_{comm}+d_{L}+c_{L})(g_{comm}+d_{H}+c_{H})
+$$
 
 Solving this, we get
 
-gcomm=−(dH+cH+dL+cL)2+rHrLuHuL+(dH+cH−dL−cL)24.
+$g_{comm}=−\frac{(d_{H}+c_{H}+d_{L}+c_{L})}{2}+\sqrt{\frac{r_{H}r_{L}}{u_{H}u_{L}}+\frac{(d_{H}+c_{H}−d_{L}−c_{L})^{2}}{4}}$.
 
-When dH and dL and cH and cL are small compared to rHrLuLuH , which is the case for CoSMO, we have
+When dH and dL and cH and cL are small compared to $\sqrt{\frac{r_{H}r_{L}}{u_{L}u_{H}}}$ , which is the case for CoSMO, we have
 
-gcomm≈rHrLuHuL.
+$g_{comm}≈\sqrt{\frac{r_{H}r_{L}}{u_{H}u_{L}}}$.
 
-## Quantifying spatial growth dynamics
+### Quantifying spatial growth dynamics
 
 Briefly, exponentially growing L-H+ and H-L+ were washed free of lysine and hypoxanthine supplements, respectively. H-L+ cell were further starved for 24 hr to reduce CoSMO growth lag phase (Hart et al., 2019a). The two strains were then mixed at approximately 1:1 ratio, and 15 µl of 4 × 104 total cells were spotted on the center of agarose pads (1/6 of a petri dish pie), forming an inoculum spot of radius ~4 mm. Periodically, cells from pads were washed off into water and subjected to flow cytometry. The agarose pad generally contained 0.7 µM lysine, although including or not including this low concentration of lysine did not make a difference in the steady state community growth rate.

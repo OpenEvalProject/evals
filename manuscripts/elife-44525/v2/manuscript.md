@@ -41,53 +41,69 @@ We demonstrate that both primary cells and cell lines have a range of apoptotic 
 
 ## Results
 
-## The CTS of Bim variably contributes to the pro-apoptotic activity of Bim in different cell lines
+### The CTS of Bim variably contributes to the pro-apoptotic activity of Bim in different cell lines
 
 Removing the CTS from Bim abrogates pro-apoptotic activity in HEK293 cells (Weber et al., 2007). While this observation has generally been ascribed to loss of binding of Bim to MOM our observation that the CTS is also involved in binding BimEL to Bcl-XL (Liu et al., 2019) suggested that there may be other explanations for the loss of pro-apoptotic activity for Bim when the CTS is removed. To determine the contribution of the Bim CTS to pro-apoptotic activity, a BimL mutant was generated in which the previously characterized membrane binding domain (carboxyl-terminal residues P121- H140) were deleted (BimL-dCTS) (Wilfling et al., 2012; Liu et al., 2019). This mutant was expressed in cells and the effectiveness of induction of cell death was compared to expression of full-length BimL by confocal microscopy. To detect expression of the constructs in live cells, they included an N-terminally fused Venus fluorescent protein (indicated by a superscripted v in the name). Thus, a construct in which Venus was fused to the amino-terminus of BimL is referred to here as VBimL while the mutant lacking the CTS is VBimL-dCTS. As an inactive control, we used VBimL-4E a mutant in which four conserved hydrophobic residues in the BH3-domain of BimL were replaced with glutamate, thereby preventing binding to all other multi-BH domain Bcl-2 family proteins (Chen et al., 2005; Liu et al., 2019).
 
 To assay pro-apoptotic activity, the constructs were expressed in primary cells and cell lines and both expression and cell death were measured using confocal microscopy. Apoptosis was assessed by detecting externalization of phosphatidylserine by Annexin V staining in cells expressing detectable levels of VBimL or the VBimL mutants as measured by Venus fluorescence. As a positive control for activation of Bax VtBid, the activated form of the BH3-protein Bid fused to the C-terminus of the Venus fluorescent protein was also expressed in cells. As expected, expression of VBimL induced apoptosis in all cell types tested, while the negative control protein VBimL-4E did not (Figure 1A). Similarly, VtBid induced apoptosis in all the cell types except HEK293 cells. As reported previously for Bim-dCTS, the fluorescent version (VBimL-dCTS) failed to induce cell death in HEK293 cells (Weber et al., 2007). In contrast, expression of VBimL-dCTS induced apoptosis to levels similar to VBimL in HCT116, BMK and MEF cells but may have reduced potency in CAMA-1 cells. Comparing the AnnexinV intensities for individual cells at a variety of equivalent expression levels of the Bim mutants across the different cell types revealed that the CTS of Bim was required for the pro-apoptotic activity of Bim in HEK293 cells (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig1-v2.jpg)
+
+**Figure 1.:** (A) Venus, VtBid VBimL, VBimL-dCTS or VBim-4E were expressed in the indicated cell lines by transient transfection. The cells were stained with the nuclear dye Draq5 and rhodamine labeled Annexin V, and imaged by confocal microscopy to identify cells undergoing apoptosis. At least 400 cells were analyzed for each condition. The Y axis indicates the percentage of Venus-positive cells that stained positive with Annexin V. Open circles represent the average for each replicate, while the bar height, represents the average for all three replicates. The means were assessed for significant differences using a one-way ANOVA within each group followed by a Tukey’s multiple comparisons test. *p-values<0.05, **p-<than 0.01, ns are non-significant p-values (>0.05). (B) BH3 profiling of mitochondria isolated from HEK293 and MEF cells. Mitochondria (1 mg/mL) were incubated with 500 nM of the indicated recombinant BH3-protein(s) for 1 hr at 37°C. Cytochrome c release, indicative of MOMP, was quantified by immunoblotting. Data from three independent experiments are shown as individual points, with lines representing the average. Some dots are not visible due to overlap.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** For each cell line, the Annexin V Rhodamine intensity per cell was plotted against the Venus intensity per cell. The Venus intensity acts as a surrogate for the relative amount of each of the BimL mutant proteins expressed in one cell. Cells with intensity in the Venus channel equal to or less than the mean signal from untransfected cells were pooled as the first point, the subsequent points are data from intensity bins with arbitrary 50 unit increments. The horizontal dotted line indicates two standard deviations above the signal from untransfected cells in the AnnexinV channel. The cell line is indicated at the top of each panel.
+
 To determine if this difference in response to VBimL-dCTS expression is a function of the extent to which the apoptotic machinery is loaded in MOM, mitochondria were purified from cells resistant (HEK293) and sensitive (MEF) to VBimL-dCTS expression and assayed by BH3-profiling (Potter and Letai, 2016). This assay measures loading of anti-apoptotic proteins with BH3-proteins or active Bax/Bak. Unlike BH3-profiling experiments conducted with BH3-peptides, in these experiments purified full-length proteins were used. Thus, purified cBid, BimL, BimL-dCTS, Bad and Noxa proteins were incubated with mitochondria from each of the cell lines and MOMP was measured by separating supernatant and pellet fractions for each reaction, and immunoblotting for cytochrome c released from the intermembrane space as previously described (Pogmore et al., 2016). Immunoblots were quantified and MOMP assessed as % cytochrome c released (Figure 1B). As expected from the data in Figure 1A, addition of recombinant BimL was sufficient to induce cytochrome c release from mitochondria from both HEK293 and MEF cells. However, addition of BimL-dCTS induced cytochrome c release only in the MEF mitochondria confirming that resistance to BimL-dCTS in HEK293 cells is manifest at mitochondria. Mitochondria purified from HEK293 cells were more sensitive to BimL protein than to recombinant cBid, a phenomenon that is also seen when VtBid is expressed in these cells (Figure 1A). This result may be due to the inherent differences between Bim and Bid reported previously (Sarosiek et al., 2013). Nevertheless, in HEK293 cells, VtBid was more active than BimL-dCTS and functionally equivalent to VBimL in every other cell line tested.
 
 One potential explanation for the difference in response to BimL-dCTS and BimL is that the mitochondria in the cell lines have different dependencies on multi-domain anti-apoptotic proteins for survival, a phenomenon known as priming. If BimL-dCTS has lost one of the functions of Bim such as activating Bax or Bak or inhibiting one of the multi-domain anti-apoptotic proteins Bcl-2, Bcl-XL and Mcl-1 it would be expected to have different activities on mitochondria with different priming. Therefore, to better understand why BimL-dCTS can only permeabilize MEF mitochondria and not mitochondria from HEK293 cells, we compared the sensitivity of mitochondria from the two cell types to addition of BH3-proteins Bad or Noxa that inhibits Bcl-2 and Bcl-XL or Mcl-1, respectively, but that do not activate Bax or Bak (Kale and Osterlund, 2017). Incubation of full-length Bad and/or Noxa with mitochondria from HEK293 cells failed to induce cytochrome c release, while the addition of Noxa or Bad was sufficient to permeabilize MEF mitochondria (Figure 1B). This data suggests that HEK293 cells not depend on expression of Bcl-2, Bcl-XL or Mcl-1 sequestering active Bax, Bak or their BH3-activators while mitochondria from MEFs depend on expression of Mcl-1 and Bcl-XL to prevent apoptosis (Lessene et al., 2013). The results further suggest that removal of the CTS from BimL results in a mutant protein that only kills cells dependent on one or more multi-domain anti-apoptotic proteins for survival. That BimL-dCTS does not kill HEK293 cells further suggests that it does not activate sufficient Bax or Bak to overcome the unoccupied anti-apoptotic proteins in this cell line. In this way, BimL-dCTS functions as a sensitizer similar to proteins like Bad and Noxa. However, unlike other relatively specific sensitizer proteins, the BH3-region of BimL-dCTS binds to and inhibits Bcl-2, Bcl-XL and Mcl-1. Indeed, we have shown that in live cells BimEL-dCTS binds to and inhibits Bcl-2 and Bcl-XL but is more easily displaced than BimEL by small molecule BH3 mimetics (Liu et al., 2019).
 
-## Full-length BimL is required to kill cultures of primary cortical neurons
+### Full-length BimL is required to kill cultures of primary cortical neurons
 
 Our data with cell lines and their respective purified mitochondria suggests that BimL-dCTS does not kill cells that do not depend on anti-apoptotic proteins for survival. To test this in a more biologically relevant system, we cultured primary murine cortical neurons and assayed their response to expression of the BimL mutants. To enable regulated expression in primary cortical neurons the coding regions for VBimL, VBimL-4E, and VBimL-dCTS were cloned into a tetracycline-responsive lentiviral vector, and introduced into primary cortical neuron cultures through lentiviral infection. After culture for 16 days in vitro, BimL expression was induced in the neurons by the addition of doxycycline. Neuronal cell death was assayed using confocal microscopy after staining neurons with TMRE, a dye that only accumulates in active mitochondria. Thus, a lack of TMRE dye accumulation (TMRE negative) indicates loss of mitochondrial transmembrane potential and in response to expression of a BH3-protein is an early indication of commitment to cell death. Quantification of Venus-expressing neuronal cell bodies revealed that as expected VtBid and VBimL expression killed cultured primary neurons while VBimL-4E did not (Figure 2A–B). However, the expression of VBimL-dCTS was largely ineffective to induce cell death in cultured primary cortical neurons (Figure 2B). Our data is consistent with previous reports suggesting that primary murine cultures of hippocampal neurons become resistant to induction of apoptosis by external stimuli over time in culture. This resistance has been reported to be due to a difference in Bcl-2 family protein expression that results in decreased mitochondrial ‘priming’, explaining why our cultures of primary cortical neurons are resistant to VBimL-dCTS (Sarosiek et al., 2017).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig2-v2.jpg)
 
-**Figure 2.:** (A) Representative images of primary cortical neurons infected with lentivirus to express VtBid, VBimL, VBimL-dCTS or VBimL-4E as indicated above. Each row is a different channel as indicated to the left, for the same field of cells. White arrows indicate illustrative neurons expressing Venus and hence fluorescent. Scale bar is 80 μm. (B) Quantified data from Venus expressing primary cortical neurons. Percentage of Venus-expressing cells that stain negative with TMRE dye (% TMRE Negative). Open circles; averages for three biological replicates each representing 90–1000 cells analyzed. The Bar height; mean. A one-way ANOVA was used followed by a Tukey’s multiple comparisons test to compare the means of each group. (C) Mitochondria extracted from embryonic day 15 (E15) mouse brains (0.5 mg/mL) were incubated with the indicated BH3-only proteins. Cytochrome c release, indicative of MOMP, was quantified using immunoblotting. Each point (black circle) represents one independent replicate, with the line representing the average across all three.Figure 2—source data 1.VBimL-dCTS does not kill mature cultures of mouse neurons.Figure 2—source data 2.
+**Figure 2.:** (A) Representative images of primary cortical neurons infected with lentivirus to express VtBid, VBimL, VBimL-dCTS or VBimL-4E as indicated above. Each row is a different channel as indicated to the left, for the same field of cells. White arrows indicate illustrative neurons expressing Venus and hence fluorescent. Scale bar is 80 μm. (B) Quantified data from Venus expressing primary cortical neurons. Percentage of Venus-expressing cells that stain negative with TMRE dye (% TMRE Negative). Open circles; averages for three biological replicates each representing 90–1000 cells analyzed. The Bar height; mean. A one-way ANOVA was used followed by a Tukey’s multiple comparisons test to compare the means of each group. (C) Mitochondria extracted from embryonic day 15 (E15) mouse brains (0.5 mg/mL) were incubated with the indicated BH3-only proteins. Cytochrome c release, indicative of MOMP, was quantified using immunoblotting. Each point (black circle) represents one independent replicate, with the line representing the average across all three.
 
 To determine if resistance to induction of cell death by BimL-dCTS is due to differential sensitivity of neuronal mitochondria to induction of MOMP by BimL and BimL-dCTS, mitochondria were isolated from embryonic day 15 (E15) mouse brains, the same age used to culture primary cortical neurons. Brain mitochondria were used instead of isolating mitochondria from neuronal cultures due to the low yield from primary cultured neurons. Untreated mitochondria from day E15 brain released only low levels of cytochrome c. As expected, addition of 0.1 nM recombinant BimL was sufficient to elicit MOMP as measured by cytochrome c release and detection in the supernatant. In contrast, 100 times more BimL-dCTS (10 nM) failed to induce MOMP (Figure 2C).
 
 Taken together our data suggest that BimL-dCTS kills cells in which the mitochondria are sensitive to inhibition of anti-apoptotic proteins by sensitizers such as Bad and Noxa. Thus, BimL-dCTS did not permeabilize mitochondria extracted from HEK293 cells or E15 whole murine brains, and as a result, BimL-dCTS expression did not kill HEK293 cells or primary cultures of cortical neurons. This finding suggests that inhibition of anti-apoptotic proteins is not sufficient to kill these cells. Therefore, BimL-dCTS differs mechanistically from BimL as the latter kills both cell types resistant and sensitive to BimL-dCTS. Compared to BimL, BimL-dCTS is missing the membrane-binding domain and therefore is not expected to localize at mitochondria (Liu et al., 2019); however, the relationship between Bim binding to membranes and Bim-mediated Bax activation has not been extensively studied. To determine how the molecular mechanism of BimL-dCTS differs from BimL the activities of the proteins were analyzed using cell-free assays.
 
-## The Bim CTS mediates BimL binding to both Bax and membranes
+### The Bim CTS mediates BimL binding to both Bax and membranes
 
 To investigate the pro-apoptotic mechanism of BimL and BimL-dCTS without interference from other cellular components, both were purified as full-length recombinant proteins and assayed using liposomes and/or isolated mitochondria. To measure direct-activation of Bax by Bim, either BimL or BimL-dCTS was incubated with recombinant Bax and liposomes encapsulating the dye and quencher pair: ANTS (8-Aminonaphthalene-1,3,6-Trisulfonic Acid, Disodium Salt) and DPX (p-Xylene-Bis-Pyridinium Bromide). In this well-established assay (Chi et al., 2014), increasing amounts of BimL activated Bax results in membrane permeabilization measured as an increase in fluorescence due to the release and separation of encapsulated dye and quencher (Figure 3A). This result is consistent with previous observations that picomolar concentrations of BimL induce Bax-mediated membrane permeabilization (Sarosiek et al., 2013). In contrast, three orders of magnitude higher concentrations of BimL-dCTS were required to induce Bax-mediated liposome permeabilization (Figure 3A), suggesting that either or both of binding to membranes and the specific CTS of Bim are required for efficient Bax activation. As expected, similar results were obtained for Bax-mediated release of mitochondrial intermembrane space proteins (Figure 3B). For these experiments, MOMP was measured as release of the fluorescent protein mCherry fused to the N-terminal mitochondrial import signal of SMAC (SMAC-mCherry) from the intermembrane space of mitochondria (Shamas-Din et al., 2014). Similar to the results with liposomes (Figure 3A), and mitochondria from cell lines (Figures 1–2) BimL but not BimL-dCTS triggered Bax mediated SMAC-mCherry release from mitochondria isolated from Bax - /- Bak-/-cells (Figure 3B). In experiments with liposomes and mitochondria, very small amounts of Bim were sufficient to trigger membrane permeabilization because once activated, Bax recruits and activates additional Bax molecules (Tan et al., 2006). To assess the impact of the Bim CTS on the interaction between Bim and Bax, binding was measured using Förster resonance energy transfer (FRET). For these experiments, recombinant BimL proteins were labeled with the donor fluorophore Alexa568, while Bax was labeled with the acceptor fluorophore Alexa647. Unexpectedly, and unlike the BH3-only protein tBid (Lovell et al., 2008), BimL bound to Bax even in the absence of membranes (Figure 3C), while BimL-dCTS had no relevant Bax binding in the presence or absence of mitochondrial-like liposomes (Figure 3C–D). Binding of Bim to Bax in solution suggests that the CTS of Bim may be directly involved in Bim-Bax heterodimerization independent of Bim binding to membranes.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig3-v2.jpg)
 
-**Figure 3.:** Cartoons indicate the binding interactions being measured. Equilibria symbols indicate the predicted balance of complexes for BimL (blue), Bax (red), liposomes (tan), mitochondria (black). For each graph, data from three independent experiments are shown as individual points. Due to overlap, some points may not be visible. (A) Activation of Bax by BimL assessed by measuring permeabilization of ANTS/DPX filled liposomes (0.04 mg/mL) after incubation of Bax (100 nM) with the indicated concentrations of BimL or BimL-dCTS. Fluorescence intensity, indicative of membrane permeabilization, was measured using the Tecan infinite M1000 microplate reader and converted to percent release by comparison with detergent-mediated liposome lysis. (B)Permeabilization of the outer mitochondrial membrane by Bax (50 nM) in response to activation by the indicated amounts of Bim and BimL-dCTS was assessed by measuring SMAC-mCherry release from mitochondria. (C) Bim binding to Bax in solution measured by FRET. Alexa568-labeled BimL or BimL-dCTS (4 nM) was incubated with the indicated amounts of Alexa647-labeled Bax and FRET was measured from the decrease in Alexa568 fluorescence. (D) Bim binding to Bax measured by FRET in samples containing mitochondrial-like liposomes. FRET was measured as in (C) with 4 nM Alexa568-labeled BimL or BimL-dCTS and the indicated amounts of Alexa647-labeled Bax.Figure 3—source data 1.
+**Figure 3.:** Cartoons indicate the binding interactions being measured. Equilibria symbols indicate the predicted balance of complexes for BimL (blue), Bax (red), liposomes (tan), mitochondria (black). For each graph, data from three independent experiments are shown as individual points. Due to overlap, some points may not be visible. (A) Activation of Bax by BimL assessed by measuring permeabilization of ANTS/DPX filled liposomes (0.04 mg/mL) after incubation of Bax (100 nM) with the indicated concentrations of BimL or BimL-dCTS. Fluorescence intensity, indicative of membrane permeabilization, was measured using the Tecan infinite M1000 microplate reader and converted to percent release by comparison with detergent-mediated liposome lysis. (B)Permeabilization of the outer mitochondrial membrane by Bax (50 nM) in response to activation by the indicated amounts of Bim and BimL-dCTS was assessed by measuring SMAC-mCherry release from mitochondria. (C) Bim binding to Bax in solution measured by FRET. Alexa568-labeled BimL or BimL-dCTS (4 nM) was incubated with the indicated amounts of Alexa647-labeled Bax and FRET was measured from the decrease in Alexa568 fluorescence. (D) Bim binding to Bax measured by FRET in samples containing mitochondrial-like liposomes. FRET was measured as in (C) with 4 nM Alexa568-labeled BimL or BimL-dCTS and the indicated amounts of Alexa647-labeled Bax.
 
 To confirm in our system that the labeled BimL proteins bind to membranes via the CTS sequence, binding of Alexa568-labeled recombinant BimL and BimL-dCTS to DiD labeled liposomes was measured by FRET (Figure 4A). In these experiments, DiD serves as an acceptor for energy transfer from Alexa568-labeled BimL. The same approach was used to quantify BimL binding to mitochondrial outer membranes with mitochondria isolated from BAK-/-mouse liver (Figure 4B), which lack Bax and Bak (Shamas-Din et al., 2013a). In both cases, BimL spontaneously bound to membranes with picomolar affinity, while stable binding of BimL-dCTS to liposomes and mitochondria was not-detectable (Figure 4A–B). Furthermore, BimL-dCTS again had no relevant binding to Bax even in the presence of purified mitochondria (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig4-v2.jpg)
 
-**Figure 4.:** Cartoons indicate the binding interactions being measured. Equilibria symbols indicate the predicted balance of complexes for Bim (blue), Bax (red), liposomes (tan), and mitochondria (black). Unless stated otherwise, for each graph, data from three independent experiments are shown as individual points. Due to overlap, some points may not be visible. (A) The CTS of Bim is necessary for Bim to bind to liposomes. Bim binding to mitochondrial-like liposomes assessed by measuring FRET between 20 nM Alexa568-labeled BimL or BimL-dCTS and the indicated amounts of DiD-labeled liposomes. (B) The CTS of Bim is necessary for Bim to bind to mitochondria. Binding of 4 nM Alexa568-labeled BimL (n = 5) or BimL-dCTS to the indicated amounts of DiD-labeled mouse liver mitochondria was assessed by measuring FRET. (C) The CTS of Bim is necessary for Bim to bind to Bax at mitochondria. Bim binding to Bax was measured by FRET in samples containing mouse liver mitochondria, 4 nM Alexa568-labeled BimL (gray) or BimL-dCTS (black) and the indicated amounts of Alexa647-labeled Bax.Figure 4—source data 1.
+**Figure 4.:** Cartoons indicate the binding interactions being measured. Equilibria symbols indicate the predicted balance of complexes for Bim (blue), Bax (red), liposomes (tan), and mitochondria (black). Unless stated otherwise, for each graph, data from three independent experiments are shown as individual points. Due to overlap, some points may not be visible. (A) The CTS of Bim is necessary for Bim to bind to liposomes. Bim binding to mitochondrial-like liposomes assessed by measuring FRET between 20 nM Alexa568-labeled BimL or BimL-dCTS and the indicated amounts of DiD-labeled liposomes. (B) The CTS of Bim is necessary for Bim to bind to mitochondria. Binding of 4 nM Alexa568-labeled BimL (n = 5) or BimL-dCTS to the indicated amounts of DiD-labeled mouse liver mitochondria was assessed by measuring FRET. (C) The CTS of Bim is necessary for Bim to bind to Bax at mitochondria. Bim binding to Bax was measured by FRET in samples containing mouse liver mitochondria, 4 nM Alexa568-labeled BimL (gray) or BimL-dCTS (black) and the indicated amounts of Alexa647-labeled Bax.
 
 Taken together, our data strongly suggest that the CTS of Bim is required for both BimL to bind to membranes in vitro and for binding Bax with or without membranes. Alternatively purified BimL-dCTS may be completely non-functional. To demonstrate that purified BimL-dCTS binds to and inhibits Bcl-XL as shown for VBimL-dCTS expressed in cells (Figure 1) and in Liu et al. (2019), inhibition of Bcl-XL was measured using liposomes and mitochondria.
 
-## The CTS is not required for BimL to inhibit Bcl-XL
+### The CTS is not required for BimL to inhibit Bcl-XL
 
 In addition to direct Bax activation, Bim promotes apoptosis by binding to Bcl-XL and displacing either activator BH3-proteins (Mode 1) or activated Bax or Bak (Mode 2) (Llambi et al., 2011). In the ANTS/DPX liposome dye release assay, BimL-dCTS was functionally comparable to the well-established Bcl-XL inhibitory BH3-protein Bad in reversing Bcl-XL-mediated inhibition of cBid (Figure 5A) or Bax (Figure 5B). Consistent with the observation that BimL-dCTS was less resistant to displacement by BH3 mimetics in live cells, in cell-free assays BimL-dCTS was also less effective than BimL at displacing cBid or Bax from Bcl-XL (Liu et al., 2019). Nevertheless, when assayed with mitochondria BimL-dCTS disrupted the interaction between tBid and Bcl-XL resulting in Bax activation and permeabilization of mitochondria as measured by cytochrome c release (Figure 5C, solid black line). This activity is due to inhibition of Bcl-XL function, as in controls without Bcl-XL the same concentration of BimL-dCTS did not directly activate sufficient Bax to mediate MOMP (Figure 5C, dashed black line). Thus, purified BimL-dCTS is functional and can initiate MOMP by displacing direct-activators (Mode 1) or activated Bax (Mode 2) from Bcl-XL (Figure 5A–C). Finally, BimL-dCTS labeled with Alexa568 retained high-affinity binding for Bcl-XL labeled with Alexa647 both in solution (Kd <16 nM) and on membranes (~35 nM apparent Kd on liposomes and on mitochondria) as measured by FRET (Figure 6B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig5-v2.jpg)
 
-**Figure 5.:** (A–B) BimL-dCTS and Bad release tBid (A) or Bax (B) from Bcl-XL. 20 nM tBid (A) or tBidmt1 (B) a protein that activates Bax but does not bind Bcl-XL, were incubated with 100 nM Bax, 40 nM Bcl-XL, 0.04 mg/mL ANTS/DPX liposomes, and the indicated amounts of either Bad or BimL-dCTS. Liposome permeabilization was assessed after incubation at 37 °C for 3 hr by measuring the increase in fluorescence due to ANTS/DPX release. Cartoons indicate the interactions measured, BimL (blue), Bax (red), tBid (orange), Bcl-XL (green), and membranes (tan). (C) BimL-dCTS displaced tBid from Bcl-XL and permeabilized mitochondria. Mitochondria were incubated with Bcl-XL (40 nM), tBid (20 nM), Bax (100 nM) and mitochondria. Increasing concentrations of BimL-dCTS were added and displacement of tBid from Bcl-XL was measured by FRET. Mitochondria were then pelleted and cytochrome c release measured by western blotting. Control reactions containing only Bax and BimL-dCTS did not result in cytochrome c release (dotted line). Individual points are shown for three independent replicates. Not all points are visible due to overlap. The adjacent cartoon indicates the interactions measured.Figure 5—source data 1.
+**Figure 5.:** (A–B) BimL-dCTS and Bad release tBid (A) or Bax (B) from Bcl-XL. 20 nM tBid (A) or tBidmt1 (B) a protein that activates Bax but does not bind Bcl-XL, were incubated with 100 nM Bax, 40 nM Bcl-XL, 0.04 mg/mL ANTS/DPX liposomes, and the indicated amounts of either Bad or BimL-dCTS. Liposome permeabilization was assessed after incubation at 37 °C for 3 hr by measuring the increase in fluorescence due to ANTS/DPX release. Cartoons indicate the interactions measured, BimL (blue), Bax (red), tBid (orange), Bcl-XL (green), and membranes (tan). (C) BimL-dCTS displaced tBid from Bcl-XL and permeabilized mitochondria. Mitochondria were incubated with Bcl-XL (40 nM), tBid (20 nM), Bax (100 nM) and mitochondria. Increasing concentrations of BimL-dCTS were added and displacement of tBid from Bcl-XL was measured by FRET. Mitochondria were then pelleted and cytochrome c release measured by western blotting. Control reactions containing only Bax and BimL-dCTS did not result in cytochrome c release (dotted line). Individual points are shown for three independent replicates. Not all points are visible due to overlap. The adjacent cartoon indicates the interactions measured.
 
-## Different residues in the Bim CTS regulate membrane binding and Bax activation
+![Figure 6.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig6-v2.jpg)
+
+**Figure 6.:** (A) Diagram of BimL depicting the various domains (DLB: dynein light chain binding motif) and the sequences of the BH3-domain and CTS. The four essential hydrophobic residues in BH3-domain that were mutated to glutamic acid are colored green. Two positive charged residues in the CTS mutated to alanine are colored blue. Glutamic acid mutations for individual hydrophobic residues in the CTS are indicated in black on top of the original sequence. A predicted alpha helix structure generated via HeliQuest software is shown on the right, indicating the amphipathic nature of the CTS. The arrow central to the helix shows the polarity direction for hydrophobicity. The Q indicated in pink is the fifth amino acid in the CTS. Other residues are colored as in the linear sequence. (B) Binding of BimL mutants to liposomes, Bax and Bcl-XL expressed as apparent dissociation constants (Kd) measured from raw data as in Figure 6—figure supplement 1 for each binary interaction. Activation of Bax (EC50) measured from ANTS/DPX assays in Figure 6—figure supplement 1. Values are mean ± SEM (n = 3). The table is colour-coded in a heat map fashion as follows: red 0–40; light red 40–80; light pink 80–120; white 120–500; light blue 500–1000; Dark blue >1000. All values are nM except for binding to liposomes which is in pM. The Kds for ‘membranes present’ measurements are apparent values since diffusion for the protein fraction bound to membranes is in two dimensions while diffusion for the fraction of protein in solution is in three dimensions and several of the binary interactions take place in both locations. Apparent Kd values may also be affected by competing interactions with membranes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) BimL binding to membranes. (B) BimL binding to Bax in solution. (C) BimL binding to Bax, with - Liposomes present. (D) Bax (100 nM) activation by BimL. (E) BimL binding to Bcl-XL in solution. (F) BimL binding to Bcl-XL, with Liposomes present For FRET experiments in (A-C) and (E,F), 20 nM of the indicated Alexa568-labeled BimL mutants (FRET donor) were incubated with the indicated concentrations of the Alexa647-labeled FRET acceptor labeled proteins. For each panel, data from three independent experiments are shown as individual points. Some points are not visible due to overlap. The mutants analyzed are indicated to the right of the graphs. To permit accurate estimation of the binding constants presented in Figure 6, data was collected to saturation for all mutants (for some curves 1600 nM or 3200 nM acceptor concentrations were required). For presentation purposes all curves were truncated at 1000 nM. Non measurable binding is represented by Kds > 1000.
+
+### Different residues in the Bim CTS regulate membrane binding and Bax activation
 
 To identify which residues in the Bim CTS mediate binding to membranes and/or Bax we generated a series of point mutations. Sequence analysis using HeliQuest software (Gautier et al., 2008) predicts that the Bim CTS forms an amphipathic α-helix (Figure 6A). Two arginine residues (R130 and 134) are predicted to be on the same hydrophilic side of the helix, whereas hydrophobic residues (e.g. I125, L129, I132) face the other side (Figure 6A). To determine the functional importance of these residues, Bim CTS mutants were created including: BimL-CTS2A in which R130 and R134 were mutated to alanine; and a series of single hydrophobic residue substitutions by glutamate (V124E, I125E, L129E, and I132E) (Figure 6A). To compare the effects of the CTS mutations on BimL-binding interactions and function, we measured by FRET the Kds for the various binding interactions and the activities of the mutants to promote Bax-mediated liposome permeabilization as EC50’s for ANTS release (Figure 6B and Figure 6—figure supplement 1A–E).
 
@@ -97,9 +113,21 @@ Unexpectedly, there was not a good correlation between BimL binding to membranes
 
 Both functional and binding assays for the various point mutants suggest that specific residues in the Bim CTS participate in Bim-Bax protein interactions that lead to Bax activation; however, these mutants did not clearly separate the membrane binding function of the CTS of Bim from a potential function in Bax activation. Thus, it remains possible that restoring membrane binding to BimL-dCTS would be sufficient to restore Bax activation function. To address this, we fused the mitochondrial tail-anchor from mono-amine oxidase (MAO residues 490–527, UniProt: P21397-1) to the C-terminus of BimL-dCTS to restore membrane binding with a sequence unlikely to contribute to Bax activation directly. This protein, BimL-dCTS-MAO, and BimL bound to mitochondrial-like liposomes and purified mitochondria (Figure 7A and Figure 7—figure supplement 1A respectively). As expected, a population of these recombinant Bim proteins remains in solution. To directly assess the Bim CTS contribution to the binding and activation of Bax on the membrane surface, we incubated a defined amount of recombinant Alexa568-labeled BimL or BimL-dCTS-MAO proteins with 0.5 mg/mL ANTS/DPX filled liposomes, then isolated the liposomes using size-exclusion chromatography. Using this procedure, we excluded all recombinant Bim that remained in solution, and obtained the membrane-bound BimL or BimL-dCTS-MAO at a concentration of ~5 nM as calculated based on Alexa568 fluorescence intensity (Precise concentrations labeled in Figure 7B). This equates to 0.6 Bim molecules per liposome. Addition of Bax to these liposomes resulted in ANTS/DPX release for roughly 60% of the liposomes in incubations containing BimL-membrane-bound liposomes, but no significant release from the liposomes in incubations containing BimL-dCTS-MAO-bound liposomes (Figure 7B), suggesting that the Bim CTS contributes to the activation of Bax even on the membrane surface.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig7-v2.jpg)
+
+**Figure 7.:** Cartoons at the side indicate the measurements being made with equilibria arrows representing the results obtained. Blue objects, Bim. Red ovals, Bax. Blue and orange objects, BimL-dCTS-MAO. (A)BimL-dCTS-MAO targets to liposomes as efficiently as BimL. Alexa568-labeled single cysteine (Q41C) recombinant BimL, and BimL-dCTS-MAO (20 nM) were incubated with 0.5 mg/ml of liposomes for 40 min at 37°C. Liposomes were then subjected to gel filtration column chromatography, and the Alexa568 fluorescence was measured in the liposome fractions. (B) Restoring membrane binding to BimL-dCTS by adding the MAO tail-anchor sequence (BimL-dCTS-MAO) did not restore Bax activation function. Using gel filtration chromatography, Alexa568-labeled Bim bound to liposomes containing ANTS/DPX were isolated, and the concentration of membrane-bound Bim was calculated based on Alexa568 fluorescence. Increasing concentrations of recombinant Bax protein were then added to these liposomes, and Bax activation was measured as an increase in ANTS release. (C)BimL-dCTS-MAO does not bind to Bax in solution. 10 nM of Alexa568-labeled BimL or BimL-dCTS-MAO was incubated with increasing amounts of Alexa647-labeled Bax. FRET was measured as a decrease in Alexa568 fluorescence signal. (D) Liposome bound labeled BimL-dCTS-MAO binds to Bax. Liposomes were incubated with Alexa568-labeled BimL or BimL-dCTS-MAO as in (B), and incubated with increasing amounts of Alexa647-labeled Bax. FRET was measured as a decrease in Alexa568 fluorescence.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Percentage of recombinant Bim proteins that bind to purified mouse liver mitochondria. Alexa568-labeled recombinant BimL proteins were incubated with 0.2 mg/mL of mitochondria for 30 min, and then mitochondria were isolated by centrifugation. Fluorescence was measured for both the supernatant and the pellet fractions and the fluorescence in the mitochondrial pellet expressed as percent of fluorescent protein bound to mitochondria. (B) BimL-dCTS-MAO binds poorly to Bax in the presence of mitochondria. Bim binding to Bax was measured by FRET in samples containing mouse liver mitochondria (0.2 mg/mL), Alexa568-labeled BimL (gray) or BimL-dCTS-MAO (orange) (both 4 nM) and the indicated amounts of Alexa647-labeled Bax. Data from three independent experiments are shown, not all symbols are visible due to overlap.
+
+![Figure 7—figure supplement 2](https://cdn.elifesciences.org/articles/44525/elife-44525-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2:** (A) Alexa568-labeled recombinant Bim proteins are not aggregating. FPLC data demonstrating that recombinant proteins elute as single peaks in fractions of low molecular weight (calculations found in source data). (B) SDS-PAGE Indicates Alexa568-labeled Bim proteins migrate at positions that correspond to the correct molecular weight. Gel1 indicates that Alexa568 BimL-dCTS-MAO (Lanes 4,5,6) is slightly larger than Alexa568 BimL (Lanes 1,2,3) as suggested by their molecular weights of 21.38 kDa and 19.62 kDa, respectively. Gel two indicates Alexa568 BimL-dCTS (Lanes 1,2,3,4,5,6), molecular weight of 17.25 kDa is slightly smaller than unlabeled BimL (Lanes 7,8,9) (molecular weight of 18.74 kDa).
+
 To directly measure binding to Bax, Alexa568-labeled BimL and BimL-dCTS-MAO were incubated with increasing concentrations of Alexa647-labeled Bax protein. In the absence of membranes, no detectable FRET was measured between Alexa568-labeled BimL-dCTS-MAO with Alexa647-labeled Bax (Figure 7C), suggesting that the specific sequence of the Bim CTS contributes to the Bim-Bax interaction in solution. However, when Alexa568-labeled BimL-dCTS-MAO bound to the liposome membrane was isolated by size-exclusion chromatography as described above, a FRET signal was detected between it and Alexa647-labeled Bax. We also detected FRET between Alexa568-labeled BimL-dCTS-MAO and Alexa647-labeled Bax in the presence of purified mitochondria (Figure 7—figure supplement 1B). Although these incubations contained both soluble and membrane-bound Bim protein, we conclude the interaction occurred on the MOM as no FRET signal was detected between these proteins in solution (Figure 7C). Despite measureable binding between BimL-dCTS-MAO and Bax on the liposome membrane (Figure 7D), BimL retained a higher affinity than BimL-dCTS-MAO for Bax (Kds of 21 nM and 49.6 nM, respectively). Together these data suggest that the CTS of Bim contributes to both binding to (Figure 7D) and activation of Bax (Figure 7B) on the liposome membrane.
 
-## Residues within the Bim CTS are proximal to Bax in solution and on mitochondrial membranes
+### Residues within the Bim CTS are proximal to Bax in solution and on mitochondrial membranes
 
 Our binding and mutagenesis data suggest that the Bim CTS binds to and activates Bax in solution and on membranes. To detect this binding interaction, we used a photocrosslinking approach, in which a BimL protein was synthesized with a photoreactive probe attached to a single lysine residue positioned in the CTS using an in vitro translation system containing 5-azido-2-nitrobenzoyl-labled Lys-tRNALys that incorporates the lysine analog (εANB-Lys) into the polypeptide when a lysine codon in the BimL mRNA is encountered by the ribosome. The BimL synthesized in vitro was also labeled by 35S via methionine residues enabling detection of BimL monomers and photoadducts by phosphor-imaging.
 
@@ -111,11 +139,19 @@ The radioactive, photoreactive BimL protein was incubated with a recombinant His
 
 As expected, when the ANB probe was positioned in the Bim-BH3 domain as a positive control BimL-Bax photocrosslinking was detected in both soluble and mitochondrial fractions (Figure 8B). Crosslinking with the Bim BH3-domain is consistent with the BH3 interaction with the canonical groove or trigger pocket that is well supported by experimental evidence including co-crystal structures and NMR models (Gavathiotis et al., 2008; Robin et al., 2015). Furthermore, loss of photocrosslinking for BimL mutants with the BH3-4E mutation that abolished binding to Bax demonstrates that direct binding between the proteins is required for crosslinking to be detectable (Figure 8C). Therefore, the crosslinking data suggests that similar to the BH3-domain, the Bim CTS binds to Bax. To further demonstrate that the CTS of Bim binds to Bax independent of both membrane binding and Bax activation, the experiment was repeated with BimL-L129E, a mutant that binds Bax without activating it and that does not bind membranes (Figure 6B). As shown in Figure 8C, the L129E mutant photocrosslinked to Bax in both the soluble and mitochondrial fractions. Furthermore, this mutant also photocrosslinked to Bcl-XL (Figure 8C), consistent with data demonstrating that the Bim CTS also binds to this anti-apoptotic protein (Figure 6B and Liu et al., 2019). The qualitative photocrosslinking data (Figure 8) and the quantitative FRET data (Figure 6B) obtained from the BimL proteins with and without the CTS or BH3-domain mutation are consistent, and both support a model in which the CTS interacts with membranes and binds to Bax, thereby enhancing BH3-domain mediated Bax activation.
 
-## The Bim CTS binds to the BH3-binding pocket on Bax
+### The Bim CTS binds to the BH3-binding pocket on Bax
 
 To identify the binding site for the Bim CTS in Bax, we used a chemical crosslinking approach. Unlike the photocrosslinking approach that does not reveal the location of the binding site, the chemical crosslinker bismaleimidohexane (BMH) contains two sulfhydryl reactive moieties separated by a 13 Å spacer, and thus formation of a BMH-crosslinked Bim-Bax dimer requires a cysteine in Bim that is in close proximity with another cysteine in the interacting Bax. Therefore, a successful crosslink indicates a close proximity between the two cysteines, potentially revealing the Bim-binding site in Bax.
 
 We used a structurally well-defined Bim-Bax interaction to validate this crosslinking approach. According to the crystal structure (PDB ID 4ZIE; Robin et al., 2015), the BH3-domain of Bim binds to the canonical groove of Bax. Our FRET data shows that BimL and Bax bind in solution and the binding is abolished by the 4E mutation in the Bim BH3-domain that eliminates the nonpolar interactions with the Bax groove. It is therefore expected that this Bim-Bax interaction is mediated by the BH3-domain and the groove, and according to the structure, a BMH molecule would be able to link a cysteine replacing Phe101 in the BH3-domain of Bim to a cysteine replacing Trp107 in the canonical groove of Bax. We thus synthesized the [35S]Met-labeled single-Cys Bim F101C and Bax W107C proteins in vitro, let them interact in solution, and subjected the sample to BMH crosslinking. When the products were analyzed by SDS-PAGE and phosphor-imaging two BMH-crosslinked products with molecular weights close to that of a BimL-Bax heterodimer were detected (Figure 9A, lane 4, indicated by open and closed triangles). The lower molecular weight band indicated by a closed triangle is the BMH-linked BimL-Bax heterodimer since it was absent in the control reactions when either the single-cysteine BimL or Bax was replaced by the respective cysteine-null (C0) protein (Figure 9A, lane 6 or 2). The higher molecular weight band indicated by an open triangle is the BMH-linked Bax homodimer since it was also present in the control reaction containing the single-cysteine Bax and the cysteine-null BimL (Figure 9A, lane 6). These results demonstrate the BMH crosslinking approach can detect the interaction of the BH3-domain of BimL with the canonical groove of Bax, and hence in principle it can be used to reveal the Bim CTS-binding site in Bax.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig9-v2.jpg)
+
+**Figure 9.:** (A) Interaction of the BH3-domain and CTS of Bim with the canonical groove of Bax in solution detected by chemical crosslinking. The radioactive cysteine-null (C0) or single-cysteine BimL and Bax proteins were synthesized in vitro. The indicated BimL-Bax pairs were incubated and subjected to BMH crosslinking for the indicated times. The products were analyzed by SDS-PAGE and phosphorimaging. The BMH-linked BimL-Bax heterodimers (indicated by closed triangles) were detected in the sample containing BimL with F101C in the BH3-domain or M123C or W137C in the CTS and Bax with W107C in the groove. As expected, these BimL-Bax heterodimers were not detected when one of the single-cysteine proteins in each pair was substituted with the respective cysteine-null (C0) protein. In contrast, the BMH-linked Bax homodimers (indicated by open triangles) were detected not only in the samples with each single-cysteine Bax-BimL pair but also that with the single-cysteine Bax and the cysteine-null BimL. The BimL and Bax monomers are indicated by open and closed circles, respectively. The migration positions of protein standards are indicated by MW in kDa. (B–C) The Bim CTS mutation (L129E) reduced, whereas the BH3 mutation (3E or 4E) abolished the interaction of the CTS and BH3-domain with the Bax canonical groove. The BMH crosslinking was done with the indicated single-Cys BimL-Bax pairs to detect the CTS or BH3-groove interaction. As indicated, some BimL proteins contain the L129E or 4E mutation, whereas others contain the 3E (I90E, L94E, and I97E) mutation since residue F101 was changed to Cys instead of Glu. The phosphorimages in panels A to C are representatives from two independent BMH crosslinking experiments with each pair of indicated BimL and Bax proteins. (D)Sequence alignment of the BimL BH3 (residues 85–97) with the BimL CTS (residues 120–132). Note the similarities between the CTS and the BH3-domain as both have the same hydrophobic residues at the h0, h1, h2 and h3 positions, and the same polar or charged residue at the h1+two or h2+one positions.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** The BMH crosslinking was done with the indicated single-Cys BimL-Bax pairs. After saving an aliquot from each reaction for SDS-PAGE (lanes 1 to 6), the remaining reactions were divided to two parts, one of which was immunoprecipitated by an anti-Bax antibody (αBax), while the other by an anti-Bim antibody (αBim). The resulting precipitants were analyzed by SDS-PAGE (lanes 7 to 12). The radioactive proteins on the gel were detected by phosphorimaging. The closed triangles indicate the BimL-Bax heterodimer crosslinked by BMH that were precipitated by both antibodies. In contrast, the open triangles indicate the Bax homodimer crosslinked by BMH that were precipitated by the anti-Bax antibody but not by the anti-Bim antibody. As internal controls, the other major precipitants by the anti-Bax or the anti-Bim antibody are the Bax monomers (indicated by close circle) or the BimL monomers (indicated by open circle), respectively, and the other protein monomer (BimL or Bax, respectively) that was bound to and hence co-precipitated with the respective antigen. The phosphorimage is a representative from two independent experiments with the indicated BimL-Bax pairs.
 
 Sequence analysis predicts that similar to the BH3-domain the Bim CTS forms an amphipathic α-helix (Figure 6A). Sequence alignment revealed a high similarity between the CTS and the BH3-domain as both have the same hydrophobic residues at the h0, h1, h2 and h3 positions, and the same polar or charged residue at the h1+two or h2+one position (Figure 9D). The Bim BH3 residues at these positions make critical contacts with the Bax canonical groove that are important for Bax activation (Robin et al., 2015; Weber et al., 2007). To determine whether the Bim CTS binds to the same Bax groove as the Bim BH3-domain, we performed BMH crosslinking using a Bim W137C mutant that has a single cysteine near the C-terminus of the CTS. Like the Bim F101C mutant with the cysteine near the C-terminus of the BH3-domain, Bim W137C crosslinked to Bax W107C (Figure 9A, lane 10, indicated by a closed triangle), suggesting that the BH3-binding groove is also a binding site for the Bim CTS. Consistent with this interpretation, this BimL-Bax heterodimer specific crosslinking did not occur in the control reaction with either single-Cys protein substituted by the respective cysteine-null protein (Figure 9A, lane 8 or 12), unlike the Bax homodimer specific crosslinking that also occurred in the control reaction with the single-cysteine Bax and cysteine-null BimL (Figure 9A, lane 6). Reciprocal immunoprecipitation by BimL and Bax specific antibodies further identified the crosslinked BimL-Bax heterodimer from the cysteine in the Bim CTS or BH3-domain to the cysteine in the Bax groove (Figure 9—figure supplement 1).
 
@@ -123,13 +159,13 @@ To further define this noncanonical CTS-groove interaction, we repeated the cros
 
 To determine whether the physical interaction between the Bim CTS or BH3-domain and the Bax groove detected by the crosslinking is functional, we tested the effect of the L129E mutation in the Bim CTS or the 4E mutation in the Bim BH3-domain on the crosslinking because both mutations greatly inhibited the activation of Bax by BimL (Figure 6B). We found that the L129E mutation reduced the Bim CTS to Bax interaction with the binding groove detected by the Bim W137C or W123C to Bax W107C crosslinking (compare the closed triangle-indicated band in Figure 9B, lane 10 or 14 with that in Figure 9A, lane 10 or 14). Since we used Bim F101C to detect the BH3-domain interaction with the Bax groove, and the F101 was changed to E in the 4E mutant, we generated Bim F101C/3E mutant to assess the effect of the BH3 mutation. As expected, the 3E mutation abolished Bim F101C crosslinking to Bax W107C, and hence, the BH3-interaction with the groove (Figure 9C, the closed triangle indicates the band in lane two that disappeared in lane 4 when the 3E mutant was used). Surprisingly, mutation of the CTS also inhibited the BH3-interaction with the groove (Figure 9B, lane four vs. Figure 9A, lane 4), while the BH3 mutation also abolished the CTS interaction with the groove (Figure 9C, lane 12 vs. lane 10), suggesting that the two interactions are not independent. The BH3-domain may contribute more than the CTS to the overall protein-protein interaction based on the severity of the effect of mutations on the crosslinking and FRET (Figure 6B). Together, the crosslinking data from these loss-of-function Bim mutants demonstrate that the CTS and BH3-interactions with the groove detected between the soluble Bim and Bax proteins are functionally important for Bim mediated activation of Bax.
 
-## Bim CTS mutants that cannot activate Bax in vitro do not kill HEK293 cells
+### Bim CTS mutants that cannot activate Bax in vitro do not kill HEK293 cells
 
 Together, our data suggests that specific residues within the Bim CTS are involved in different aspects of BimL function. Residue I125 is required for Bim to bind to mitochondria but is of lesser importance in activating Bax. In contrast, residues L129 and I132 are not required for BimL to bind Bax but are important for it to efficiently activate Bax. Finally, BimL-dCTS functions only to bind and inhibit Bcl-XL. The defined mechanism(s) of these mutants makes them useful for probing the differential sensitivity of HEK293 and MEF cells to expression of VBimL-dCTS as seen in Figure 1. Expression of the mutants in HEK293 cells by transient transfection revealed that similar to VBimL-dCTS, expression of either VBimL-L129E or VBimL-I132E was not sufficient to kill HEK293 cells, despite expression of either mutant being sufficient to kill the primed MEF cell line (Figure 10). In contrast, HEK293 cells were killed by expression of VBimL-I125E, albeit to a lesser extent than by VBimL (Figure 10). This result is consistent with our findings with purified proteins showing that the EC50 for liposome permeabilization by BimL-I125E was 100 nM compared to ~1 nM for BimL (Figure 6B). The activity of VBimL-I125E also demonstrates that BimL binding to membranes is not required to kill HEK293 cells as BimL-I125E does not bind membranes (Figure 6B). Together, this data suggests that unlike MEF cells, only mutants of BimL that can efficiently activate Bax kill HEK293 cells.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/44525/elife-44525-fig10-v2.jpg)
 
-**Figure 10.:** The indicated cell lines were transiently transfected with DNA to express VBimL, and the indicated VBimL mutant proteins. Cells expressing Venus fusion proteins were stained with the nuclear dye Draq5 and rhodamine-labeled Annexin V, and apoptosis was assessed by confocal microscopy as in Figure 1. The y-axis indicates Annexin V Positivity (%), which was calculated based on the total number of Venus expressing cells that also score positive for Annexin V rhodamine fluorescence. A minimum of 400 cells were imaged for each condition. Individual points (open circles) represent the average for each replicate, while the bar heights, relative to the y-axis, represent the average for all three replicates. A one-way ANOVA was used within each cell line followed by a Tukey’s multiple comparisons test to compare the means of each transfection group. *p-values<0.05, **p-values<0.01, ns, non-significant p-values (>0.05).Figure 10—source data 1.
+**Figure 10.:** The indicated cell lines were transiently transfected with DNA to express VBimL, and the indicated VBimL mutant proteins. Cells expressing Venus fusion proteins were stained with the nuclear dye Draq5 and rhodamine-labeled Annexin V, and apoptosis was assessed by confocal microscopy as in Figure 1. The y-axis indicates Annexin V Positivity (%), which was calculated based on the total number of Venus expressing cells that also score positive for Annexin V rhodamine fluorescence. A minimum of 400 cells were imaged for each condition. Individual points (open circles) represent the average for each replicate, while the bar heights, relative to the y-axis, represent the average for all three replicates. A one-way ANOVA was used within each cell line followed by a Tukey’s multiple comparisons test to compare the means of each transfection group. *p-values<0.05, **p-values<0.01, ns, non-significant p-values (>0.05).
 
 ## Discussion
 
@@ -147,7 +183,367 @@ Overall, our data suggests a model in which the unusual CTS of Bim is not only r
 
 ## Materials and methods
 
-## Protein purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>antibody to Cytochrome c</td>
+      <td>In house (Billen et al., 2008)</td>
+      <td></td>
+      <td>(1:2000) Dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit (polyclonal)</td>
+      <td>Jackson Immuno Research Laboratories</td>
+      <td>Cat. #: 711-035-150</td>
+      <td>(1:10000) Dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse (polyclonal)</td>
+      <td>Jackson Immuno Research Laboratories</td>
+      <td>Cat. #: 711-035-152</td>
+      <td>(1:10000) Dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Antibody to Bax</td>
+      <td>In house (Zhu et al., 1996)</td>
+      <td>Max6</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Antibody to Bim</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-11425</td>
+      <td>(1:50) dilution</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Baby Mouse Kidney(BMK)-DKO (Bax and Bak knockout) cells</td>
+      <td>Other (Degenhardt et al., 2002)</td>
+      <td></td>
+      <td>Provided by Dr. Eileen White (Rutgers University) Mycoplasma free, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Cama-1</td>
+      <td></td>
+      <td>RRID: CVCL_1115</td>
+      <td>Provided by Dr. Linda Penn (University of Toronto). Mycoplasma Free, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293</td>
+      <td>Other (Graham et al., 1977)</td>
+      <td>RRID: CVCL_0045</td>
+      <td>Provided by Dr. Frank Graham (McMaster University). Mycoplasma Free , see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCT-116</td>
+      <td>Other (Polyak et al., 1996)</td>
+      <td>RRID: CVCL_0291</td>
+      <td>Provided by Dr. Bert Vogelstein (John Hopkins University). Mycoplasma Free , see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus)</td>
+      <td>Embryonic day 15 embryos</td>
+      <td>The Jackson Laboratory</td>
+      <td>C57BL/6J</td>
+      <td>Used for the preparation of primary cortical neurons and for purification of mitochondria, see Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MEF</td>
+      <td>Other (Pagliari et al., 2005)</td>
+      <td>RRID: CVCL_U630</td>
+      <td>Provided by Dr. Doug Green (St. Judes Children’s Research Hospital) Mycoplasma Free, see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Draq5</td>
+      <td>ThermoFisher Scientific, Molecular probes</td>
+      <td>Cat. #62251</td>
+      <td>Nuclear stain for live cell imaging</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoescht 33258</td>
+      <td>Cell signaling technologies</td>
+      <td>Cat. # 4082S</td>
+      <td>Nuclear stain for live cell imaging</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetramethylrhodamine, Ethyl Ester, Perchlorate (TMRE)</td>
+      <td>ThermoFisher Scientific, Molecular probes</td>
+      <td>Cat. # T669</td>
+      <td>Used to stain actively respiring mitochondria</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide</td>
+      <td>Bioshop</td>
+      <td>Cat. # PPO888.10</td>
+      <td>Nuclear stain for dead cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa 647-maleimide</td>
+      <td>ThermoFisher Scientific, Molecular probes</td>
+      <td>Cat. #: A20347</td>
+      <td>Acceptor fluorophore in FRET experiments, when Alexa 568 is the donor.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa568-maleimide</td>
+      <td>ThermoFisher Scientific, Molecular probes</td>
+      <td>Cat. #. A20341</td>
+      <td>Donor fluorophore in FRET experiments when Alexa 647 is the acceptor.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ANTS (8-Aminonaphthalene-1,3,6-Trisulfonic Acid, Disodium Salt)</td>
+      <td>ThermoFisher Scientific, Molecular probes</td>
+      <td>A350</td>
+      <td>Fluorophore used in liposome release assay (Billen et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DPX (p-Xylene-Bis-Pyridinium Bromide)</td>
+      <td>ThermoFisher Scientific, Molecular probes</td>
+      <td>X1525</td>
+      <td>Quencher used in liposome release assay (Billen et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IANBD Amide (N,N'-Dimethyl-N-(Iodoacetyl)-N'-(7-Nitrobenz-2-Oxa-1,3-Diazol-4-yl)Ethylenediamine)</td>
+      <td>Molecular Probes</td>
+      <td>Cat. #: D-2004</td>
+      <td>Chemically reactive environment sensitive fluorophore. Reacts with Cysteine used to label proteins for in vitro study.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PC (L-α-phosphatidylcholine)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 840051C</td>
+      <td>For making liposomes, used 48% PC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPS (1,2-dioleoyl-sn-glycero-3-phospho-L-serine)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 840035C</td>
+      <td>For making liposomes, used 10% DOPS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PI (L-α-phosphatidylinositol)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 840042C</td>
+      <td>For making liposomes, used 10% PI</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PE (L-α-phosphatidylethanolamine)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 841118C</td>
+      <td>For making liposomes, used 28% PE</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TOCL, (18:1 Cardiolipin)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 710335C</td>
+      <td>For making liposomes, used 4% TOCL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bismaleimidohexane (BMH)</td>
+      <td>Pierce</td>
+      <td>22330</td>
+      <td>Chemical crosslinker, Cysteine specific. Used for chemical crosslinking of Bim and Bax proteins, see Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fugene HD</td>
+      <td>Promega</td>
+      <td>Cat. #: E2311</td>
+      <td>Transfection reagent for mammalian cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TransIT-X2</td>
+      <td>Mirus</td>
+      <td>Cat. #: Mir 6003</td>
+      <td>Transfection reagent for mammalian cells</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Bax</td>
+      <td>In house (Yethon et al., 2003)</td>
+      <td>GI: L22473.1</td>
+      <td>Expression plasmid for production of recombinant protein</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>Bax</td>
+      <td>In house (Zhang et al., 2010; Zhang et al., 2016)</td>
+      <td>GI: L22473.1</td>
+      <td>For recombinant 6H-Bax protein used in photocrosslinking and for making Cys-null or single Cys recombinant protein in chemical crosslinking</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. Sapiens)</td>
+      <td>Bcl-XL</td>
+      <td>In house (Ding et al., 2014)</td>
+      <td>GI: Z23115.1</td>
+      <td>For recombinant 6H-Bcl-XL protein used in photocrosslinking, membrane permeabilization, and protein-protein binding assays.</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Bad</td>
+      <td>In house (Aranovich et al., 2012)</td>
+      <td>GI: AB451254.1</td>
+      <td>For expression of VBad in cells</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Bid</td>
+      <td>In house (Lovell et al., 2008)</td>
+      <td>GI: NM_007544.4</td>
+      <td>For recombinant cBid purification (</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>BimL</td>
+      <td>This paper</td>
+      <td>GI: AAD26594.1</td>
+      <td>This lab, plasmid # 2187, for recombinant BimL purificaton</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (M. musculus)</td>
+      <td>BimL</td>
+      <td>This paper</td>
+      <td>GI: AAD26594.1</td>
+      <td>Dr. Lin lab, plasmidpSPUTK-BimL For the single-Cys proteins used in photo and chemical crosslinking</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (M. musculus)</td>
+      <td>tBid</td>
+      <td>In house (Aranovich et al., 2012)</td>
+      <td>GI: NM_007544.4</td>
+      <td>For expression of VtBid in cells</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cell Carrier-384, Ultra plate</td>
+      <td>PerkinElmer</td>
+      <td>Cat. #: 6057300</td>
+      <td>For mono-layer culturing and imaging cell lines</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Greiner Bio-one Cell culture microplate, 384 well</td>
+      <td>Greiner Bio-one</td>
+      <td>Cat. 781090</td>
+      <td>For culturing and imaging primary cortical neurons.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Non-binding surface, 96-well plate, black with clear bottom</td>
+      <td>Corning</td>
+      <td>Cat. #: 3881</td>
+      <td>For recombinant protein and liposome assays. It is critical to use a non-binding plate.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Opera Phenix</td>
+      <td>PerkinElmer</td>
+      <td>Cat. #: HH14000000</td>
+      <td>Automated confocal microscope. Used for imaging cell lines and primary cortical neurons.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AnnexinV*Alexa647</td>
+      <td>In House (Logue et al., 2009)</td>
+      <td></td>
+      <td>Used for detecting phosphotidylserine externalization (Blankenberg et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>εANB-[14C]Lys-tRNALys</td>
+      <td>tRNA Probes</td>
+      <td>L-32</td>
+      <td>Used for incorporation εANB-Lys into Bim protein using an in vitro translation system. The εANB-group is photoactive and generates a nitrene for photocrosslinking</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>[35S]Methionine</td>
+      <td>PerkinElmer</td>
+      <td>NEG009C</td>
+      <td>Used for incorporation [35S]Met into Bim and Bax proteins using an in vitro translation system for photo or chemical crosslinking,see Materials and methods.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>transcription/translation (TNT)-SP6 coupled wheat germ extract system</td>
+      <td>Promega</td>
+      <td>L4130</td>
+      <td>Used for synthesis of Bim and Bax proteins for chemical crosslinking</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>multi-purpose image scanner</td>
+      <td>Fuji Film</td>
+      <td>FLA-9000</td>
+      <td>Used for phosphorimaging to detect radioactive proteins in gels</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>San Diego, California</td>
+      <td>Version 6 RRID:SCR_002798</td>
+      <td>Scientific graphing program, used for curve fitting of in vitro data and to perform statistical analysis.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>PMID: 17936939</td>
+      <td>MBF - ImageJ for microscopy, Dr. Tony Collins (McMaster University)</td>
+      <td>For band density measurements used to quantify Cytochrome c release from immunoblots.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Multi Gauge</td>
+      <td>Fuji Film</td>
+      <td>Version 3.0</td>
+      <td>Used for processing and displaying phosphor-images</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (A. victoria)</td>
+      <td>mVenus-pEGFP-C1</td>
+      <td>Other</td>
+      <td>GI: KU341334.1</td>
+      <td>Dr. Ray Truant (McMaster University). Backbone EGFP-C1 (Clonetech)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification
 
 Wild type and single cysteine mutants of Bax, Bcl-XL, and cBid were purified as described previously (Kale et al., 2014). cBid mutant 1 (cBidmt1) was purified with the same protocol used for cBid (Kale et al., 2014). Bad was purified as described previously (Lovell et al., 2008). His-tagged Bax and Bcl-XL proteins were purified as described previously (Ding et al., 2014)
 
@@ -157,17 +553,17 @@ Purification of BimL and single cysteine mutants of BimL was carried out as prev
 
 BimL was expressed in Arabinose Induced (AI) E. coli strain (Life Tech, Carlsbad, CA). E. coli were lysed by mechanical disruption with a French press. Proteins were purified from the cell lysate by affinity chromatography using a Nickel-NTA column (Qiagen, Valencia, CA), and eluted with a solution containing 20 mM HEPES pH7.2, 10 mM NaCl, 0.3% CHAPS, 300 mM imidazole, 20% Glycerol. The eluate was adjusted to 150 mM NaCl and applied to a High Performance Phenyl Sepharose (HPPS) column. Bim was eluted with a no salt buffer and dialyzed against 10 mM HEPES pH7.0, 20% glycerol, flash-frozen and stored at −80°C.
 
-## Protein labeling
+### Protein labeling
 
 Single cysteine mutants of Bax, Bcl-XL, cBid and Bad were labeled with the indicated maleimide-linked fluorescent dyes as described previously (Pogmore et al., 2016; Kale et al., 2014; Lovell et al., 2008). Single cysteine mutants of Bim were labeled with the same protocol as cBid with the exception that the labeling buffer also contained 4M urea.
 
-## Bim binding to membranes
+### Bim binding to membranes
 
 Liposomes (100 nm diameter) with a lipid composition resembling MOM were prepared as described previously (Kale et al., 2014). Mouse liver mitochondria were isolated from Bak-/-mice as previously described (Pogmore et al., 2016). Liposomes and mitochondria were labeled with 0.5% and 2% mass ratios of DiD, respectively (Life Tech, Carlsbad, CA). The single-cysteine mutant of BimL, BimL Q41C, was labeled with Alexa568-maleimide and incubated with the indicated amount of unlabeled or DiD-labeled mitochondria or liposomes at 37°C for 1 hr. Intensities of Alexa568 fluorescence were measured in both samples as Funlabeled and Flabelled respectively using the Tecan infinite M1000 microplate reader. FRET, indicating protein-membrane interaction, was observed by the decrease of Alexa568 fluorescence when BimL bound to DiD labeled membranes compared to unlabeled membranes. FRET efficiency was calculated as described previously (Shamas-Din et al., 2013a). The data was fit to a binding model as described below. Lines of best fit were calculated using least squares in Graphpad Prism software.
 
-## Calculating the number of Bim molecules per Liposome
+### Calculating the number of Bim molecules per Liposome
 
-## Step 1: Find the total number of Bim molecules in a 2 mL reaction
+#### Step 1: Find the total number of Bim molecules in a 2 mL reaction
 
 Concentration of Bim: 5 nM in 2 mL reaction
 
@@ -175,7 +571,7 @@ Number of Bim (mole) = concentration (M) x volume (L)
 
 Total number of Bim molecules in 2 mL reaction = Number of Bim (mole) x Avogadro’s Constant
 
-## Step 2: Find the total lipid surface area or the total number of liposome made from 1 mg lipid film
+#### Step 2: Find the total lipid surface area or the total number of liposome made from 1 mg lipid film
 
 The total number of lipid molecules in a liposome are given by the formula below
 
@@ -197,29 +593,33 @@ where r is the radius of our liposome.
 
 Total lipid surface area = surface area of a liposome x total number of liposome = 2.93×1017 nm2
 
-## Step 3: Calculate the number of Bim per liposome or per surface area
+#### Step 3: Calculate the number of Bim per liposome or per surface area
 
 Number of Bim per liposome = Total number of Bim in a 2 mL reaction/Total number of liposome
 
 Number of Bim per surface area = Total number of Bim in a 2 mL reaction/Total lipid surface area
 
-## Membrane permeabilization
+### Membrane permeabilization
 
 Membrane permeabilization assays with liposomes encapsulating ANTS and DPX were performed as described previously (Kale et al., 2014). To measure permeabilization of BMK mitochondria, the indicated amounts of proteins were incubated with mitochondria (1 mg/mL) purified from BMK cells genetically deficient for Bax and Bak expressing mCherry fluorescent protein fused to the SMAC import peptide responsible for localization in the inter-membrane space. After incubation for 45 min at 37°C samples were centrifuged at 13,000 g for 10 min to separate the pellet and supernatant fractions and membrane permeabilization was calculated based on the mCherry fluorescence in each fraction (Shamas-Din et al., 2014). For mouse liver mitochondria, cytochrome c release was measured by immunoblotting as described previously (Pogmore et al., 2016; Sarosiek et al., 2013).
 
-## BH3 profiling
+### BH3 profiling
 
 Heavy membranes enriched in mitochondria were isolated as described previously (Pogmore et al., 2016; Brahmbhatt et al., 2016). Membrane fractions (1 mg/mL) were incubated with 500 nM of the specified BH3-proteins (Bim, Bad and/or Noxa). For E15 brain mitochondria, 0.5 mg/mL of membrane fractions were used and incubated with the indicated amounts of BH3-only proteins for 30 min at 37 °C. Membranes were pelleted by centrifugation at 13,000 g for 10 min and cytochrome c release was analyzed by immunoblotting using a sheep anti-cytochrome c antibody (Capralogics). Mitochondria from embryonic mouse brains for BH3profiling experiments were prepared from ~20 mouse embryos, E15 in age, following the same protocol used for liver mitochondria (Pogmore et al., 2016).
 
-## Protein-protein binding
+### Protein-protein binding
 
 For FRET experiments, single cysteine mutants of cBid (126C), Bcl-XL (152C), Bax (126C), BimL (41C) and BimL mutants were purified and labeled with either Alexa 568-maleimide (donor) or Alexa 647-maleimide (acceptor) as specified. To determine binding a constant amount of donor protein was incubated with the indicated range of acceptor proteins and where specified liposomes or mitochondria. The intensity of Alexa568 fluorescence with unlabeled or Alexa647-labeled Bcl-XL was measured as Funlabeled or Flabeled, respectively, and FRET was calculated as described in Pogmore et al. (2016). All measurements were collected using the Tecan infinite M1000 microplate reader. Lines of best fit were calculated using least squares in Graphpad Prism software.
 
-For each pair of proteins a dissociation constant (Kd) was measured in solution and with liposomes. Curves were fit to an advanced function taking into account change of the concentration of acceptor ([A]) when [A] is close to Kd:F=(Fmax)D+A+Kd-(D+A+Kd)2-4DA2D
+For each pair of proteins a dissociation constant (Kd) was measured in solution and with liposomes. Curves were fit to an advanced function taking into account change of the concentration of acceptor ([A]) when [A] is close to Kd:
+
+$$
+F=(F_{max})\frac{D+A+K_{d}-\sqrt{(D+A+K_{d})^{2}-4DA}}{2D}
+$$
 
 [D] is the concentration of donor, F indicates the FRET efficiency with the concentration of acceptor as [A], Fmax is the maximum FRET efficiency in the curve (Pogmore et al., 2016).
 
-## Photo and chemical crosslinking of Bim to Bax or Bcl-XL
+### Photo and chemical crosslinking of Bim to Bax or Bcl-XL
 
 To produce the proteins for crosslinking using in vitro systems, the DNA sequence encoding murine BimL Cys-null and Lys-null mutant without the His tag and TEV protease recognition site was excised from the pBluescript II KS(+) vector by restriction endonucleases NcoI and ClaI and inserted into the pSPUTK vector (Stratagene, Santa Clara, CA). Mutations as specified in the text were introduced into this sequence using site-directed mutagenesis to generate the single-Lys BimL or single-Cys mutants.
 
@@ -229,11 +629,11 @@ For chemical crosslinking, [35S]Met-labeled single-Cys or Cys-null BimL and Bax 
 
 To obtain the immunoprecipitation data in Figure 9—figure supplement 1, the indicated single-Cys BimL and Bax proteins produced by the TNT system, 4 μL each, were paired and reduced by TCEP. The sample was diluted to 260 μL with buffer A and crosslinked by BMH. The resulting sample was divided to two aliquots. The 85 μL or 170 μL aliquot was immunoprecipitated by Bax or Bim antibody, respectively. Thus, each aliquot was adjusted to 250 μL with IP buffer (100 mM Tris pH 7.5, 100 mM NaCl, 10 mM EDTA, 1 mM PMSF, 1% (v/v) Triton X-100), and received Bax antibody (made in house, 1:1000 dilution) or Bim antibody (Santa Cruz Biotechnology, Dallas, TX, 1:50 dilution). The samples were rotated at 4 °C for overnight, and after receiving 25 μL of Protein G Sepharose (50% suspension in IP buffer), rotated for 2 more hours. After centrifugation at 2000 g for 0.5 min, the beads were washed three times with 400 μL of IP buffer and one time with 400 μL of 100 mM Tris pH 7.5 and 100 mM NaCl. The bound proteins were eluted with reducing SDS sample buffer and analyzed by SDS-PAGE and phosphorimaging.
 
-## Measurement of cell death in response to expression of VBimL constructs
+### Measurement of cell death in response to expression of VBimL constructs
 
 HEK293, BMK, MEF, and HCT116 cells were maintained at 37°C (5% v/v CO2) in dMEM complete [dMEM, 10% Fetal Bovine Serum, 1% essential amino acids (Gibco, Grand Island, NY)]. CAMA-1 were maintained the same environmental conditions but using dMEM/F12 (Gibco, Grand Island, NY). Cell lines were routinely confirmed to be mycoplasma-free using a PCR-based protocol as described by Hopert et al. (1993), and their authenticity was verified by short-tandem repeat (STR) profiling at The Centre for Applied Genomics (Toronto, ON, Canada) for human cells. Murine cell lines have not been authenticated. Cells were seeded in CellCarrier-Ultra 384-well plates (1000 cells/well for BMK and MEF, 2000 cells/well for HEK293 and HCT116, 3000 cells/well for CAMA-1). One day later, cells were transfected using FugeneHD (Promega, Madison, WI) with plasmids encoding Venus, or Venus-fused BimL constructs in an EGFP-C3 backbone. Cell culture medium was added to each reaction (50 µl/0.05 μg DNA) and the whole mix added to each well (50 µl/well) of a pre-aspirated 384-well plate of cells. After 24 hr, cells were stained with Draq5 and Rhodamine-labeled Annexin V and image acquisition was performed using the Opera QEHS confocal microscope (Perkin Elmer, Woodbridge, ON) with a 20x air objective. Untransfected cells and cells treated with 1 µg/mL staurosporine were used as negative and positive controls for Annexin V staining. Cells were identified automatically using software as described previously (Shamas-Din et al., 2013a). Intensity features were extracted using a script (dwalab.ca) written for Acapella high content imaging and analysis software (Perkin Elmer, Woodbridge, ON). Cells were scored as Venus or Annexin V positive if the Venus or Annexin V intensity was greater than the average intensity plus two standard deviations for the Venus or Annexin V channels in images of non-transfected cells. Cell death ascribed to the VBimL fusion proteins was quantified as the percentage of Venus-positive cells that were also Annexin V positive. For neuron cultures, cell segmentation using conventional methods could not be achieved due to complex cellular morphologies. Therefore, nuclei were first identified, then a ring region ~10% of nuclear area was drawn around each nucleus. Venus intensity was calculated for this ring region, representing the neuronal cell body, to determine if the neuron was expressing the Venus fluorescent protein.
 
-## Primary neuron cultures
+### Primary neuron cultures
 
 Primary cortical neuron cultures were prepared from embryonic day 15, C57BL/6J mouse embryos as previously described (Mergenthaler et al., 2012). All animal breeding and handling were performed in accordance with local regulations and after approval by the Animal Care Committee at Sunnybrook Research Institute, Toronto. Briefly, after separation from hippocampus and subcortical structures, cortices were washed twice with ice-cold PBS, digested with 1x trypsin for 15 min at 37°C, washed twice with ice-cold PBS and then resuspended with a flame-treated glass pipette in N-Medium (DMEM, 10% v/v FBS, 2 mM L-glutamine, 10 mM Hepes, 45 µM glucose). The dissociated cortices were gently pelleted by centrifugation (200 g for 5 min), N-media was removed, and neurons were resuspended and cultured in Neurobasal-Plus medium (ThermoFisher Scientific) supplemented with B27-Plus (ThermoFisher Scientific) and 1x Glutamax (ThermoFisher Scientific). Neurons were seeded at 5000 cells per well in a 384 well plate (Greiner µclear) after coating with poly-d-lysine (Cultrex). The medium was partially replaced on day 5 in culture with Neurobasal-Plus supplemented with B27-Plus and 1x Glutamax.
 
@@ -241,6 +641,6 @@ Lentivirus to express VBimL and other BimL mutants were cloned into the pTet-O-N
 
 Doxycyline (ThermoFisher scientific) was added to 16 day in vitro old cultures of neurons at a concentration of 2 μg/mL to induce VBimL protein expression. 5 hr later, neurons were stained with 5 µM Draq5 (Thermofisher scientific) and 0.1 μM TMRE (Thermofisher scientific), then incubated for 30 min at 37 °C. Confocal microscopy was performed immediately after.
 
-## Lentiviral production
+### Lentiviral production
 
 Each lentivirus was made using the following protocol adhering to biosafety level two procedures. On day 0, lentiviral vectors psPax2 (10 μg) and pMD2.G (1.25 μg) were mixed with 10 μg of desired VBimL lentiviral construct in 1000 μL of Opti-MEM media (ThermoFisher Scientific). Next, 42 μL of polyethylenimine (PEI) solution [1 mg/mL] was added, the mixture vortexed, then allowed to settle for 15 min at room temperature. After 15 min, 1.5 × 107 of resuspended HEK293 cells and the transfection solution were mixed and seeded onto a 100 mm culture dish with 10 mL of dMEM complete plus 10 μM of the caspase inhibitor Q-VD-Oph (Selleckchem), and left to incubate at 37 °C (5% v/v CO2) for 72 hr. On day 3, media containing lentiviral particles was filter sterilized using a 0.45 μm polyethersulfone filter, and mixed with polyethylene glycol (Bioshop) to achieve a final concentration of 10% (w/v). This was left to mix and precipitate the virus overnight at 4 °C. On day 4, the media was centrifuged for 1 hr at 1600 g, supernatant was then removed and the pellet was resuspended with 400 μL of Neurobasal-Plus media (no additives). Resuspended virus was then stored at −80 °C until needed.

@@ -21,10 +21,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00afp2z80 GIGA-CRC Human Imaging, University of Liège Liège Belgium
-2. https://ror.org/02jz4aj89 Faculty of Health, Medicine and Life Sciences, School for Mental Health and Neuroscience, Alzheimer Centre Limburg, Maastricht University Maastricht Netherlands
+1. GIGA-CRC Human Imaging, University of Liège Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
+2. Faculty of Health, Medicine and Life Sciences, School for Mental Health and Neuroscience, Alzheimer Centre Limburg, Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
 3. Synergia Medical SA Mont-Saint-Guibert Belgium
-4. https://ror.org/02495e989 Institute of Neuroscience (IoNS), Department of Clinical Neuroscience, Université Catholique de Louvain (UCLouvain) Woluwe-Saint-Lambert Belgium
+4. Institute of Neuroscience (IoNS), Department of Clinical Neuroscience, Université Catholique de Louvain (UCLouvain) Woluwe-Saint-Lambert Belgium ([ROR:02495e989](https://ror.org/02495e989))
 
 † Corresponding author
 
@@ -52,17 +52,462 @@ Twenty-six healthy young adults (16 women; 24.3±2.9 y; Supplementary file 1a) c
 
 **Figure 2.:** (A) Segmentation of the hypothalamus in five subparts in a representative participant. The nuclei encompassed by the different subparts are indicated in the right inset – according to Billot et al., 2020. ARC: arcuate nucleus; DMH; dorsomedial nucleus; LH lateral hypothalamus; LTN: lateral tubular nucleus; MB: mamillary body; POA: preoptic area; PVN: paraventricular nucleus; PNH: posterior nucleus of the hypothalamus; SCN: suprachiasmatic nucleus; SON: supraoptic nucleus; TMN: tuberomammillary nucleus; VMN: ventromedial nucleus. (B, C) Estimates (beta; arbitrary unit – a.u.) of the collective impact of illuminance variation on the activity of each hypothalamus subpart (Refer to Table 1 full statistics). (B) Executive task: significant main effect of hypothalamus subparts (p=0.002), no significant main of task type (p=0.4) or subpart-by-task-type interaction (p=0.61). (C) Emotional task: significant main effect of hypothalamus subparts (p<0.0001), and of stimulus type (p=0.048) or subpart-by-stimulus-type interaction (p=0.74). (D–G) Whole brain analyses of the collective impact of the variations in illuminance over the hypothalamus area - for illustration. A local positive peak (red; puncorrected <0.001) was detected over the posterior hypothalamus subpart (light blue) in executive (E) and emotional (G). A local negative peak (red; puncorrected <0.001) was detected over the inferior-tubular hypothalamus subparts (light orange) during the executive task (D), while local negative peak (red; puncorrected <0.001) was detected over the inferior-anterior (yellow) and superior-anterior (blue) hypothalamus subparts during the emotional task (F) – insets correspond to enlargements over the hypothalamus area. Arrows from panels B and C arise from and are colour coded according to the hypothalamus subpart that is displayed in panels D to G. These results indicate that our finding does not arise from a nearby ‘leaking’ activation/deactivation. (H–K) Estimates of the impact of each illuminance on the activity of the hypothalamus subparts. (Refer for Table 2 and Supplementary file 1c–f for full statistics) Activity dynamics across illuminance for each subpart (colour code as in A). Results are displayed per task or stimulus type although no interactions with task or stimulus type were detected. Significant illuminance-by-hypothalamus-subpart interactions were detected for (H, I) the executive task (p=0.041) and (J, K) the emotional task (p=0.041). Small letter indicate significant difference (p<0.05) between the following subparts at illuminance: a. 92 mel EDI lux: posterior vs. superior-anterior & inferior-tubular; b. 190 mel EDI lux: posterior vs. inferior-anterior, superior-anterior and inferior-tubular; c. 0 mel EDI lux: posterior vs. superior-tubular; d. 92 mel EDI lux: posterior vs. superior-anterior; superior-anterior vs. superior-tubular; e. 190 mel EDI lux: posterior vs. inferior-anterior, superior-anterior and inferior-tubular; superior-tubular vs. superior-anterior, inferior-tubular and inferior-anterior. Means +- standard deviations are plotted.
 
-## The impact of illuminance variations on the activity of the hypothalamus is not uniform
+### The impact of illuminance variations on the activity of the hypothalamus is not uniform
 
 The main analyses aimed at isolating differences in the overall impact of illuminance changes among the 5 hypothalamus subparts. For each subpart, we extracted an index of the illuminance impact as their average regression coefficients between their responses to the tasks and the illuminance levels. These analyses showed significant differences between the hypothalamus subparts for the executive (generalized linear mixed models [GLMM]; main effect of the subparts; p=0.002) and emotional (GLMM; main effect of the subparts; p<0.0001) tasks, revealing that, during both tasks, the variations in illuminance affected the activity of the 5 hypothalamus subparts differently (Figure 2B and C; Table 1). A nominal main effect of the task was detected for the emotional task (p=0.049; Table 1) but not for the n-back task. For both tasks, there was no significant main effect for any of the other covariates and post hoc analyses showed that the index of the illuminance impact was consistently different in the posterior hypothalamus subpart compared to the other subparts (pcorrected ≤0.05, Table 1). Importantly, whole-brain analyses confirmed that increasing illuminance resulted in a local increase and decrease of activity that could be detected, respectively, over the posterior and inferior subparts of the hypothalamus (Figure 2D–G). This shows that our results do not come from a relatively unspecific and widespread increase in BOLD signal surrounding the hypothalamus subparts and that the effect of light was most prominent over the posterior and inferior-anterior subparts.
 
-## Opposite dynamics between the posterior and inferior/anterior hypothalamus at higher illuminance
+**Table 1.**
+ Differences between hypothalamus subparts in the collective impact of the variation in illuminance on their activity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">Executive task</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Main GLMM</td>
+      <td colspan="4">Pairwise comparisons</td>
+    </tr>
+    <tr>
+      <td>Effect</td>
+      <td>F value (df)</td>
+      <td>p value*</td>
+      <td>Partial R2</td>
+      <td>Contrast†</td>
+      <td>t-value</td>
+      <td>Puncorrected</td>
+      <td>Pcorrected</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Hypothalamus subparts</td>
+      <td rowspan="3">4.36 (4,225)</td>
+      <td rowspan="3">0.002</td>
+      <td rowspan="3">0.08</td>
+      <td>1 vs 2</td>
+      <td>–0.30</td>
+      <td>0.76</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>1 vs 3</td>
+      <td>–3.48</td>
+      <td>0.0006</td>
+      <td>0.0056</td>
+    </tr>
+    <tr>
+      <td>1 vs 4</td>
+      <td>&lt;0.01</td>
+      <td>0.99</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td>0.74 (1,25)</td>
+      <td>0.4</td>
+      <td></td>
+      <td>1 vs 5</td>
+      <td>–0.57</td>
+      <td>0.57</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Hypothalamus subparts x task type</td>
+      <td rowspan="3">0.68 (4,225)</td>
+      <td rowspan="3">0.61</td>
+      <td></td>
+      <td>2 vs 3</td>
+      <td>–3.17</td>
+      <td>0.0017</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td>2 vs 4</td>
+      <td>0.31</td>
+      <td>0.76</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>2 vs 5</td>
+      <td>–0.27</td>
+      <td>0.79</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.33 (1,22)</td>
+      <td>0.57</td>
+      <td></td>
+      <td>3 vs 4</td>
+      <td>3.48</td>
+      <td>0.0006</td>
+      <td>0.0055</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>0.59 (1,22)</td>
+      <td>0.45</td>
+      <td></td>
+      <td>3 vs 5</td>
+      <td>2.54</td>
+      <td>0.0041</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>0.01 (1,22)</td>
+      <td>0.91</td>
+      <td></td>
+      <td>4 vs 5</td>
+      <td>–0.5</td>
+      <td>0.57</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td colspan="8">Emotional task</td>
+    </tr>
+    <tr>
+      <td colspan="4">Main GLMM</td>
+      <td colspan="4">Pairwise comparisons</td>
+    </tr>
+    <tr>
+      <td>Effect</td>
+      <td>F Value</td>
+      <td>p value*</td>
+      <td>Partial R2</td>
+      <td>Contrast†</td>
+      <td>t-value</td>
+      <td>Puncorrected</td>
+      <td>Pcorrected</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Hypothalamus subparts</td>
+      <td rowspan="3">9.38 (4,194)</td>
+      <td rowspan="3">&lt;.0001</td>
+      <td rowspan="3">0.22</td>
+      <td>1 vs 2</td>
+      <td>0.67</td>
+      <td>0.67</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>1 vs 3</td>
+      <td>–4.76</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>1 vs 4</td>
+      <td>0.00</td>
+      <td>0.99</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td>4.33 (1,25)</td>
+      <td>0.048</td>
+      <td>0.15</td>
+      <td>1 vs 5</td>
+      <td>–1.88</td>
+      <td>0.06</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Hypothalamus subparts x stimulus type</td>
+      <td rowspan="3">0.5 (4,194)</td>
+      <td rowspan="3">0.74</td>
+      <td rowspan="3"></td>
+      <td>2 vs 3</td>
+      <td>–5.43</td>
+      <td>&lt;0.0001</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>2 vs 4</td>
+      <td>–0.66</td>
+      <td>0.51</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>2 vs 5</td>
+      <td>–2.54</td>
+      <td>0.012</td>
+      <td>0.086</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.43 (1,22)</td>
+      <td>0.52</td>
+      <td></td>
+      <td>3 vs 4</td>
+      <td>4.76</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>0.05 (1,22)</td>
+      <td>0.83</td>
+      <td></td>
+      <td>3 vs 5</td>
+      <td>2.85</td>
+      <td>0.0048</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>1.47 (1,22)</td>
+      <td>0.24</td>
+      <td></td>
+      <td>4 vs 5</td>
+      <td>–1.88</td>
+      <td>0.061</td>
+      <td>0.32</td>
+    </tr>
+  </tbody>
+</table>
+
+_Outputs of the generalized linear mixed model (GLMM) with subject as the random factor (intercept and slope), and task and subpart as repeated measures (ar(1) autocorrelation).*The corrected p-value for multiple comparisons over 2 tests is p < 0.025.†Refer to Figure 2A for correspondence of subpart number._
+
+### Opposite dynamics between the posterior and inferior/anterior hypothalamus at higher illuminance
 
 This prompted us to assess the activity of the hypothalamus subparts under each illuminance to detail the different regional activity dynamics across the hypothalamus. The statistical analyses confirmed that the activity dynamics across illuminance levels differed between the five subparts during the executive and the emotional tasks (GLMM; subparts-by-illuminance interaction; p=0.041) tasks (Figure 2H–K; Table 2). Post hoc contrasts first considered the impact of the changes in illuminance within each subpart (Supplementary file 1c and d). The activity of the posterior hypothalamus subpart significantly (p<0.05) increased under the highest illuminance (190 mel EDI) compared with darkness for both tasks and with the lower illuminances (37 and 92 mel EDI lux) for the emotional task. In contrast, for both tasks, the activity in the inferior-anterior and inferior-tubular hypothalamus subparts significantly (p<0.05) decreased under the highest illuminance compared with darkness, and with lower illuminances for the emotional task. Finally, the activity of the superior anterior hypothalamus subpart decreased under higher illuminance during the emotional but not the executive task, while the activity of the fifth hypothalamus subpart, the superior tubular subpart, was not significantly affected by illuminance changes in either task.
 
+**Table 2.**
+ Statistical outputs of GLMM testing for differences between the activity of each subpart of the hypothalamus under each illuminance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">Executive task</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Main GLMM</td>
+      <td colspan="4">Comparisons between subparts per illuminance†</td>
+    </tr>
+    <tr>
+      <td>Effect</td>
+      <td>F-value (df)</td>
+      <td>P value</td>
+      <td>Partial R²</td>
+      <td>Illuminance*</td>
+      <td>contrast</td>
+      <td>t-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>Subpart</td>
+      <td>1.4 (4,228)</td>
+      <td>0.23</td>
+      <td></td>
+      <td>92</td>
+      <td>2 vs 3</td>
+      <td>–2.25</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Illuminance</td>
+      <td rowspan="2">2.15 (4,1017)</td>
+      <td rowspan="2">0.073</td>
+      <td rowspan="2"></td>
+      <td>92</td>
+      <td>3 vs 4</td>
+      <td>2.58</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>1 vs 3</td>
+      <td>–2.80</td>
+      <td>0.0053</td>
+    </tr>
+    <tr>
+      <td>Task</td>
+      <td>3.24 (1,228)</td>
+      <td>0.073</td>
+      <td></td>
+      <td>190</td>
+      <td>2 vs 3</td>
+      <td>–2.24</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Subpart x Illuminance</td>
+      <td rowspan="2">1.7 (16,1017)</td>
+      <td rowspan="2">0.041</td>
+      <td rowspan="2">0.09</td>
+      <td>190</td>
+      <td>3 vs 4</td>
+      <td>3.15</td>
+      <td>0.0017</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>1.19 (1,22)</td>
+      <td>0.29</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>0.01 (1,22)</td>
+      <td>0.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>0.38 (1,22)</td>
+      <td>0.54</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Emotional task</td>
+    </tr>
+    <tr>
+      <td colspan="4">Main GLMM</td>
+      <td colspan="4">Comparisons between subparts per illuminance†</td>
+    </tr>
+    <tr>
+      <td>Effect</td>
+      <td>F-value (df)</td>
+      <td>p value</td>
+      <td>Partial R²</td>
+      <td>Illuminance*</td>
+      <td>contrast</td>
+      <td>t-value</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Subpart</td>
+      <td rowspan="2">4.29 (4,229)</td>
+      <td rowspan="2">0.0023</td>
+      <td rowspan="2">0.07</td>
+      <td>0</td>
+      <td>3 vs 5</td>
+      <td>–2.05</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>2 vs 3</td>
+      <td>–2.53</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Illuminance</td>
+      <td rowspan="3">9.41 (4,1020)</td>
+      <td rowspan="3">&lt;0.0001</td>
+      <td rowspan="3">0.035</td>
+      <td>92</td>
+      <td>2 vs 5</td>
+      <td>–2.96</td>
+      <td>0.0032</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>1 vs 3</td>
+      <td>–3.31</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>2 vs 3</td>
+      <td>–4.75</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Task</td>
+      <td rowspan="3">0.13 (1,229)</td>
+      <td rowspan="3">0.72</td>
+      <td rowspan="3"></td>
+      <td>190</td>
+      <td>1 vs 5</td>
+      <td>–2.5</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>2 vs 5</td>
+      <td>–4.04</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>3 vs 4</td>
+      <td>3.13</td>
+      <td>0.0018</td>
+    </tr>
+    <tr>
+      <td>Subpart x Illuminance</td>
+      <td>1.7 (16,1020)</td>
+      <td>0.041</td>
+      <td>0.026</td>
+      <td>190</td>
+      <td>4 vs 5</td>
+      <td>–2.32</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.59 (1,22)</td>
+      <td>0.45</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>1.54 (1,22)</td>
+      <td>0.23</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>0.05 (1,22)</td>
+      <td>0.83</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* illuminance in mel EDI lux.† Only significant comparisons are reported in the main text. For the full table, including post hocs comparing light levels within a subpart, refer to Supplementary file 1c–g._
+
 Post hoc analyses also yielded several significant differences between hypothalamus subparts (p<0.05; Table 2; Supplementary file 1e and f). For both tasks, the activity of the posterior hypothalamus subpart was consistently significantly higher than the activity inferior-tubular subpart under the highest illuminances (92 and 190 mel EDI lux). For the executive task, the activity of the posterior hypothalamus subpart was also significantly higher than the superior-anterior subpart under the highest illuminances (92 and 190 mel EDI lux). For the emotional task, the activity of the posterior hypothalamus subpart was also significantly higher than the superior-anterior subpart under the highest illuminances (190 mel EDI lux), while the activity superior-tubular hypothalamus subpart was significantly higher than the activity of the inferior-tubular, inferior-anterior and superior-anterior hypothalamus subparts (92 and/or190 mel EDI lux). The overall picture arising from these comparisons is that higher illuminance increased the activity of the posterior and superior hypothalamus subparts while it decreased the activity of the inferior and anterior hypothalamus subparts.
 
-## Performance to the executive task is improved by light and related to the activity of the posterior hypothalamus
+### Performance to the executive task is improved by light and related to the activity of the posterior hypothalamus
 
 Following these analyses, we explored whether the changes in activity across illuminances were related to cognitive performance. We first considered the more difficult (2-back) subtask of the executive task as it requires higher cognitive functions (see Materials and methods for a full rationale; Collette et al., 2005). The analysis revealed that accuracy to the executive task was high in all participants, but accuracy to the more difficult subtask (2-back) improved with increasing illuminance (GLMM; main effect of illuminance; F=2.72; p=0.034; Partial R2 215=0.1; Figure 3A), controlling for age, sex, and BMI. Critically, the analysis also showed that performance under each illuminance was significantly related to the activity of the posterior hypothalamus subpart (GLMM; main effect of posterior subpart activity; F=9.43; p=0.0027; Partial R2 219=0.09). Surprisingly, the association was negative (Figure 3B), suggesting that the part of variance explained by the hypothalamus subpart is distinct from the impact of light on performance. In contrast, no significant association was found when considering the activity of the other four subparts (GLMM; main effect of posterior subpart activity; F<0.62; p>0.4; Figure 3C and D; Supplementary file 1g). We went on and found that the accuracy to the simpler control subtask of the executive tasks (0-back, see Materials and methods) was not associated with the activity of the posterior hypothalamus subpart (GLMM controlling for age, sex and BMI; main effect of subpart activity; F=0.57; p=0.45; Figure 3E), suggesting that the association with performance is specific to the 2-back subtask.
 
@@ -96,19 +541,19 @@ All these knowledge gaps are important to address because acting on light stands
 
 The data used in this paper arise from a large study that is leading to several publications and part of the methods have been published previously (Beckers et al., 2024; Campbell et al., 2024a; Paparella et al., 2023). The protocol was approved by the Ethics Committee of the Faculty of Medicine at the University of Liège (ref 2020/11). Participants gave their written informed consent to take part in the study and received monetary compensation for their participation.
 
-## Participants
+### Participants
 
 Thirty healthy young adults (19 women; 24.3±2.9 y; Supplementary file 1) were included in the analyses. Exclusion criteria were assessed through questionnaires and a semi-structured interview: history of psychiatric and neurological disorders, sleep disorders, use of psychoactive drugs or addiction; history of ophthalmic disorders or auditory impairments; colour blindness; night shift work during the last year or recent trans-meridian travel during the last 2 months; excessive caffeine (>4 caffeine units/day) or alcohol consumption (>14 alcohol units/week); medication affecting the central nervous system; smoking; pregnancy or breast-feeding (women); counter indication for MRI-scanning. All participants had to score <18 on the 21-item Beck Anxiety Inventory (up to mild anxiety; Beck et al., 1988a), and <14 on the Beck Depression Inventory-II (up to mild depression; Beck et al., 1988b), <12 on the Epworth Sleepiness Scale (Johns, 1993), and <8 on the Pittsburgh Sleep Quality Index (Buysse et al., 1989). Questionnaires further assessed chronotype with the Horne-Östberg questionnaire (Horne and Ostberg, 1976) and seasonality with the Seasonal Pattern Assessment Questionnaire (Rosenthal and Bradt, 1984), but the latter two questionnaires were not used for the inclusion of the participants.
 
 For each task, four datasets were missing or had corrupt data such that 26 participants were included in the analyses of each task (23 participants had valid datasets for both tasks). For the emotional task, two participants’ data failed the MRI quality control (QC) check, and the other two participants were excluded as they did not complete the entire task. For the executive task, four of the participants' data failed the MRI QC check. Supplementary file 1b summarises participants’ characteristics respective to each task.
 
-## Overall protocol
+### Overall protocol
 
 Participants completed an MRI session at least one week before the experiment during which structural images of the brain were acquired and which served as habituation to the experimental conditions. Participants maintained a loose sleep-wake schedule (±1 hr from the habitual sleep/wake-up time) during the 7 days preceding the fMRI experiment to warrant similar circadian entrainment across participants and avoid excessive sleep loss while maintaining realistic real-life conditions (verified using sleep diaries and wrist actigraphy - AX3 accelerometer, Axivity, United Kingdom). Volunteers were requested to refrain from all caffeine and alcohol-containing beverages, and extreme physical activity for 3 days before participating in the fMRI acquisitions. Data acquisitions took place in Liège, Belgium, between December 2020 and May 2023.
 
 Participants arrived at the laboratory 1.5–2 hr after habitual wake time for the fMRI scan. They were first exposed for 5 min to a bright polychromatic white light (1000 lux) and then maintained in dim light (<10 lux) for 45 min to standardise the participant’s recent light history. During this period, participants were given instructions about the fMRI cognitive tasks and completed practice tasks on a luminance-controlled laptop (<10 lux). The fMRI session consisted of participants completing three auditory cognitive tasks while alternatively maintained in darkness or exposed to light: an executive task (25 min), an emotional task (20 min) and an attentional task (15 min) [Figure 1A]. The executive task was always completed first, as it was the most demanding task. The order of the following two tasks was counterbalanced. Because it included only three light conditions (see below) instead of five for the other two tasks, the attentional task was not included in the present analyses. An eye-tracking system (EyeLink 1000Plus, SR Research, Ottawa, Canada) was monitored for proper eye opening during all data acquisitions.
 
-## Light exposure
+### Light exposure
 
 An 8 m long MRI-compatible optic fibre (1-inch diameter, Setra Systems, MA, USA) transmitted light from a light box (SugarCUBE, Ushio America, CA, USA) to the dual end of the fibre which was attached to a stand fitted at the back of the MRI coil that allowed reproducible fixation and orientation of the optic fibre ends. The dual branches illuminated the inner walls of the head coil to ensure relatively uniform and indirect illumination of participants’ eyes. A filter wheel (Spectral Products, AB300, NM, USA) and optical fibre filters (monochromatic narrowband orange filter - 589mn; full width at half maximum: 10 nm - or a UV highpass filter - 433–1650 nm) were used to create the light conditions needed for the experiment (see Figure 1B and Supplementary file 1b for in-detail light characteristics).
 
@@ -120,23 +565,23 @@ For the executive and emotional task, the light conditions consisted of three di
 
 The attentional task only included a single illuminance level of the blue-enriched polychromatic LED light (92 mel EDI lux) and one illuminance level of the monochromatic orange light (.16 mel EDI lux), otherwise, the task would have been too long (>30 min). Participants were exposed to 30 s of light blocks separated by 10 s of darkness (<0.1 lux). The light blocks were repeated 7 times for each light condition. As mentioned above it is not considered for the present analyses.
 
-## Cognitive tasks
+### Cognitive tasks
 
 Prior work of our team showed that the n-back task and emotional task included in the present protocol were successful probes to demonstrate that light illuminance modulates cognitive activity, including within subcortical structures (although resolution did not allow precise isolation of nuclei or subparts e.g. Vandewalle et al., 2010; Vandewalle et al., 2007b). When taking the step of ultra-high-field imaging, we therefore opted for these tasks as our goal was to show that illuminance affects brain activity across cognitive domains while not testing for task-specific aspects of these domains.
 
-## Auditory cognitive tasks
+### Auditory cognitive tasks
 
 The tasks were programmed with Opensesame (3.2.8 Mathôt et al., 2012). Participants heard the auditory stimuli through MR-compatible earbuds (Sensimetrics, Malden, MA). Before starting the tasks, to ensure optimal auditory perception of task stimuli, participants set the volume through a volume check procedure. Participants used an MRI-compatible keypad to respond to task items (Current Designs, Philadelphia, PA), which was placed in the participant’s dominant hand. The tasks were separated by about 5 min in near darkness, to recalibrate the eye tracking system and to clarify instructions about the next task to the participant.
 
-## Executive task
+### Executive task
 
 The task consisted of an auditory variant of the n-back task (Collette et al., 2005) with a working memory 2-back task and a control letter detection 0-back task. Participants were either asked to detect whether the current item was identical to the letter presented 2-items earlier (2-back) or whether the current item consisted of the letter ‘K’ (0-back) or using the keypad (one button for ‘yes’, one button for ‘no’). A block design was used for this task in which each block included 15 items and lasted 30 s. Task blocks were separated by 10–20 s rest periods and were preceded by an auditory instruction (500ms) indicating the type of task to be completed. Task levels were pseudo-randomised across the four light conditions with three blocks of 0-back and four blocks of 2-back per light condition (see Figure 1C).
 
-## Emotional task
+### Emotional task
 
 The task consisted of gender discrimination of auditory vocalisations that were either pronounced with emotional or neutral prosody (Grandjean et al., 2005). Participants were asked to use the keypad to indicate what they believed the gender of the person pronouncing each token was. The gender classification was a lure task ensuring participants paid attention to the auditory stimulation. The purpose of the task was to trigger an emotional response as participants were not told that part of the stimuli was pronounced with angry prosody. The 240 auditory stimuli were pronounced by professional actors (50% women) and consisted of three meaningless words (‘goster’, ‘niuvenci’, ‘figotleich’). The stimuli were expressed in either an angry or neutral prosody, which has been validated by behavioural assessments (Banse and Scherer, 1996) and in previous experiments (Grandjean et al., 2005; Sander et al., 2005; Vandewalle et al., 2010). The stimuli were also matched for the duration (750ms) and mean acoustic energy to avoid loudness effects. During each 30–40 s light block, four angry prosody stimuli and four neutral prosody stimuli were presented in a pseudorandom order and delivered every 3–5 s. A total of 160 distinct voice stimuli (50% angry; 50% neutral) were distributed across the four light conditions. The darkness period separating each light block contained two angry and two neutral stimuli. A total of 80 distinct voice stimuli (50% angry; 50% neutral) were distributed across the darkness periods [see Figure 1D].
 
-## Data acquisition
+### Data acquisition
 
 The MRI data were acquired in a 7T MAGNETOM Terra MR scanner (Siemens Healthineers, Erlangen, Germany) with a 32-channel receive and 1-channel transmit head coil (Nova Medical, Wilmington, MA, USA). Dielectric pads (Multiwave Imaging, Marseille, France) were placed between the subject’s head and receiver coil to homogenise the magnetic field of Radio Frequency (RF) pulses.
 
@@ -144,13 +589,13 @@ Multislice T2*-weighted fMRI images were obtained with a multi-band Gradient-Rec
 
 For the anatomical image, a high-resolution T1-weighted image was acquired using a Magnetization-Prepared with 2 RApid Gradient Echoes (MP2RAGE) sequence: TR = 4300ms, TE = 1.98ms, FA = 5°/6°, TI = 940ms/2830ms, bandwidth = 240 Hz, matrix size = 256 × 256, 224 axial slices, acceleration factor = 3, voxel size = (0.75x0.75 × 0.75) mm3.
 
-## Data processing
+### Data processing
 
 For the MP2RAGE images, the background noise was removed using an extension (extension: https://github.com/benoitberanger/mp2rage; Béranger and Papadopoulos Orfanos, 2019) of Statistical Parametric Mapping 12 (SPM12; https://www.fil.ion.ucl.ac.uk/spm/software/spm12/) under Matlab R2019 (MathWorks, Natick, Massachusetts) (O’Brien et al., 2014). Then the images were reoriented using the ‘spm_auto_reorient’ function (https://github.com/CyclotronResearchCentre/spm_auto_reorient; Cyclotron Research Centre, 2015) and corrected for intensity non-uniformity using the bias correction method implemented in the SPM12 ‘unified segmentation’ tool (Ashburner and Friston, 2005). To ensure optimal co-registration, brain extraction was done using SynthStrip (Hoopes et al., 2022) in Freesurfer (http://surfer.nmr.mgh.harvard.edu/). The brain-extracted T1-images were used to create a T1-weighted group template using Advanced Normalization Tools (ANTs, http://stnava.github.io/ANTs/) prior to normalisation to the Montreal Neurological Institute (MNI) space using ANTs (1 mm³ voxel; MNI 152 template). The hypothalamus of each participant was segmented within 1 mm³ MNI 152 template into five subparts - inferior anterior, superior anterior, inferior tubular, superior tubular, posterior (Figure 2A) using an automatic computational approach (Billot et al., 2020).
 
 For the EPI images, auto reorientation was applied on the images first. Then, voxel-displacement maps were computed from the phase and magnitude images associated with B0 map acquisition (taken right after the task), using the SPM fieldmap toolbox. To correct for head motion and static and dynamic susceptibility-induced variance, the ‘Realign and Unwarp’ of SPM12 was then applied to the EPI images. The realigned and distortion-corrected EPI images then underwent brain extraction using the SynthStrip and then the final images were smoothed with a Gaussian kernel characterised by a FWHM = 3 mm. The first level analyses were performed in the native space to prevent any possible error that may be caused by co-registration.
 
-## Statistical analyses
+### Statistical analyses
 
 The whole-brain univariate analyses consisted of a general linear model (GLM) computed with SPM12. For the executive task, task blocks and light blocks were modelled as block functions. For the emotional task, the auditory stimuli were modelled as stick functions. For both tasks, a high-pass filter with a 256 s cut-off was applied to remove low-frequency drifts. For both tasks, stick or block functions were convolved with the canonical hemodynamic response function. Movement and physiological parameters (cardiac and respiration), which were computed with the PhysIO Toolbox (Translational Neuromodeling Unit, ETH Zurich, Switzerland), were included as covariates of no interest (Kasper et al., 2017).
 

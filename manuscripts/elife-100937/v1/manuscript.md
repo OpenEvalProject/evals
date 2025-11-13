@@ -22,17 +22,17 @@
 
 ### Affiliations
 
-1. https://ror.org/05ctdxz19 Brain Mapping Lab, Department of Biomedical, Dental Sciences and Morphological and Functional Imaging, University of Messina Messina Italy
-2. https://ror.org/05tzq2c96 IRCCS Centro Neurolesi 'Bonino Pulejo' Messina Italy
-3. https://ror.org/03byxpq91 Institute for Biomedical Research and Innovation (IRIB), National Research Council of Italy (CNR) Messina Italy
-4. https://ror.org/00w109h91 S. Anna Institute Crotone Italy
-5. https://ror.org/02rc97e94 Pharmacotechnology Documentation and Transfer Unit, Preclinical and Translational Pharmacology, Department of Pharmacy, Health Science and Nutrition, University of Calabria Arcavacata Italy
-6. https://ror.org/05ctdxz19 Nuclear Medicine Unit, Department of Biomedical, Dental Sciences and Morphological and Functional Imaging, University of Messina Messina Italy
-7. https://ror.org/05ctdxz19 Radiology Unit, Department of Biomedical, Dental Sciences and Morphological and Functional Imaging, University of Messina Messina Italy
-8. https://ror.org/003109y17 Section of Cytomorphology, Department of Biomedical Sciences, University of Cagliari, Cittadella Universitaria di Monserrato Monserrato Italy
-9. https://ror.org/0464eyp60 Department of Radiology, University of Massachusetts Chan Medical School Worcester United States
-10. https://ror.org/020dggs04 Department of Biomedical Sciences, Humanitas University Milan Italy
-11. https://ror.org/05d538656 IRCCS Humanitas Research Hospital Milan Italy
+1. Brain Mapping Lab, Department of Biomedical, Dental Sciences and Morphological and Functional Imaging, University of Messina Messina Italy ([ROR:05ctdxz19](https://ror.org/05ctdxz19))
+2. IRCCS Centro Neurolesi 'Bonino Pulejo' Messina Italy ([ROR:05tzq2c96](https://ror.org/05tzq2c96))
+3. Institute for Biomedical Research and Innovation (IRIB), National Research Council of Italy (CNR) Messina Italy ([ROR:03byxpq91](https://ror.org/03byxpq91))
+4. S. Anna Institute Crotone Italy ([ROR:00w109h91](https://ror.org/00w109h91))
+5. Pharmacotechnology Documentation and Transfer Unit, Preclinical and Translational Pharmacology, Department of Pharmacy, Health Science and Nutrition, University of Calabria Arcavacata Italy ([ROR:02rc97e94](https://ror.org/02rc97e94))
+6. Nuclear Medicine Unit, Department of Biomedical, Dental Sciences and Morphological and Functional Imaging, University of Messina Messina Italy ([ROR:05ctdxz19](https://ror.org/05ctdxz19))
+7. Radiology Unit, Department of Biomedical, Dental Sciences and Morphological and Functional Imaging, University of Messina Messina Italy ([ROR:05ctdxz19](https://ror.org/05ctdxz19))
+8. Section of Cytomorphology, Department of Biomedical Sciences, University of Cagliari, Cittadella Universitaria di Monserrato Monserrato Italy ([ROR:003109y17](https://ror.org/003109y17))
+9. Department of Radiology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+10. Department of Biomedical Sciences, Humanitas University Milan Italy ([ROR:020dggs04](https://ror.org/020dggs04))
+11. IRCCS Humanitas Research Hospital Milan Italy ([ROR:05d538656](https://ror.org/05d538656))
 
 † Corresponding author
 
@@ -54,7 +54,7 @@ The present study aims to investigate the gradient organization of the human pul
 
 ## Results
 
-## The multiscale gradient organization of the human pulvinar goes beyond discrete anatomical subdivisions
+### The multiscale gradient organization of the human pulvinar goes beyond discrete anatomical subdivisions
 
 We collected functional and diffusion-weighted imaging data from two high-quality, independent datasets of healthy subjects: a primary dataset from the HCP (Van Essen et al., 2012), including 210 healthy subjects (males = 92, females = 118, age range 22–36 years), and a validation dataset from the Leipzig Mind-Brain-Body dataset (LEMON) (Babayan et al., 2019), consisting of 213 healthy subjects (males = 138, females = 75, age range 20–70 years). The pulvinar complex, along with its constituent subnuclei, was delineated bilaterally in the left and right hemispheres according to a whole-brain labeling atlas (Rolls et al., 2020). For each participant, we generated voxel-wise estimates of pulvinar functional and structural connectivity to a 400-label parcellation of the cerebral cortex (Schaefer et al., 2018), respectively, from preprocessed rs-fMRI and from whole-brain probabilistic tractograms derived from diffusion data. Individual connectivity maps were then normalized and aggregated to group-level, dense functional, and structural connectomes.
 
@@ -70,6 +70,22 @@ These embeddings, which we henceforth refer to as ‘gradients’, represent uni
 
 The first three functional connectivity gradients (GFC1-GFC3) collectively explained ~80% of the total variance in functional connectivity for both the left and right pulvinar, as evidenced by the elbow observed in the scree plot (Figure 2A). The principal gradient (GFC1, ~50% of total variance explained for both left and right pulvinar) reflected a dorsomedial-to-ventrolateral topographical organization. Of the two secondary gradients, explaining each approximately ~10/15% of the total variance for both left and the right pulvinar, one (GFC2) ran to the posteromedial part of the pulvinar to the most anterior dorsal region, the other (GFC3) was aligned to the posterolateral to the anteromedial axis (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100937/elife-100937-fig2-v1.jpg)
+
+**Figure 2.:** For each panel, the top row shows the scree plots of explained variance for each gradient. The gradients that have been considered for subsequent analyses are marked with red circles. The bottom row shows 3D reconstruction of the normalized gradient images overlaid on the thalamic outline (gray-shaded area). The thalamic volume has been obtained from the AAL3 atlas. Gradients are shown in posterior (left), superior (center), and anterior (right) views. A: anterior; P: posterior; L: left; R: right.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100937/elife-100937-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** For each panel, the top row shows the scree plots of explained variance for each gradient. The gradients that have been considered for the following analysis are marked with red circles. The bottom row shows 3D volume renderings of the normalized gradient images overlaid on the thalamic outline (gray-shaded area). The thalamic volume has been obtained from the THOMAS atlas (Su et al., 2019). Gradients are shown in posterior (left), superior (center), and anterior (right) view. A: anterior; P: posterior; L: left; R: right.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100937/elife-100937-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Panels to the left show the silhouette plots for left and right pulvinar clustering solutions; error bars are standard errors calculated across 50 resamples. Panels to the right show matrix plots of Dice similarity coefficients of pulvinar clusters against histological nuclei (AAL atlas). INF: inferior; ANT: anterior; LAT: lateral; MED: medial.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/100937/elife-100937-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Split-half stability analysis. Violin plots show the distribution of correlation values across 100 split-half resamples (bars on the median and extreme values). (B) Test-retest repeatability. (C) Reproducibility on the supplementary dataset (Leipzig Study for Mind-Body-Emotion Interactions [LEMON]). (D) Spatial correlation between gradient values and averaged voxel-wise estimates of signal-to-noise ratio (SNR).
+
 Nearly 90% of the global variance in structural connectivity values was explained by the first two connectivity gradients (GSC1-GSC2). The first structural gradient (GSC1, ~70% of total variance explained, bilaterally) was arranged on a medio-lateral axis, while the second (GSC2), explaining approximately 20% of global explained variance, delineated a dorsal-to-ventral topography (Figure 2B).
 
 Finally, the first three gradient embeddings (GRC1-GRC3) explained globally ~80% of the variance in receptor coexpression data both for the left and right pulvinar, although with minor differences between the left and right hemispheres for individual gradients. The main gradient (GRC1), explaining 60% of the total variance in the left hemisphere and 70% in the right, depicted a dorso-medial to ventro-lateral axis organization. The second gradient (GRC2), accounting for ~20% of the explained variance on the left hemisphere and ~15% on the right hemisphere, displayed a medio-lateral topography. Finally, the third gradient (GRC3), capturing approximately 10% of the total variance on the left and less than 10% on the right, ran along the anterior-posterior axis (Figure 2C).
@@ -78,7 +94,7 @@ Due to the small volume of the pulvinar complex, whose boundaries can vary signi
 
 To characterize the relationship between these pulvinar gradients and the conventional anatomical subdivision of the pulvinar complex into discrete nuclei, we analyzed the distribution of gradient values across the four traditional anatomical nuclei (medial, lateral, anterior, inferior) as defined by an atlas-based parcellation based on postmortem histology (Iglesias et al., 2018). First, by plotting gradient values grouped by each pulvinar nucleus, we observed limited correspondence to discrete pulvinar nuclei, regardless of the imaging modality. Although some gradients showed a progressing trend along different pulvinar nuclei, most gradient values were evenly distributed across nuclei. To assess if discrete pulvinar nuclear structure could be inferred from the continuous gradient values derived from diffusion embedding, k-means data-driven clustering in gradient space was applied, either by considering the most relevant gradients for each single imaging modality (functional, structural, or receptor coexpression) or by concatenating gradient values from all the modalities. The appropriate number of clusters (4 for functional gradients, 3 for structural gradients, 4 for coexpression gradients, and 8 for combined clustering) was selected based on silhouette score plots for each hemisphere. Clustering of gradient values resulted in generally poor overlap to anatomical nuclei either for single modality (maximum Dice coefficient left/right pulvinar: 0.45/0.42 to medial pulvinar for functional gradients, 0.67/0.66 to medial pulvinar for structural gradients; 0.61/0.46 to medial pulvinar for coexpression gradients) or concatenated modalities (maximum Dice coefficient left/right pulvinar: 0.67/0.57 to anterior pulvinar) (Figure 2—figure supplement 2).
 
-## Pulvinar-cortical functional connectivity replicates patterns of cortico-cortical functional connectivity
+### Pulvinar-cortical functional connectivity replicates patterns of cortico-cortical functional connectivity
 
 Connectivity gradients serve as low-dimensional representations of the topographical organization patterns of connectivity, whether functional or structural connectivity. With this concept in mind, we sought to investigate the extent to which pulvinar-cortical connectivity reflects cortico-cortical connectivity. To achieve this, we generated pulvinar-cortical gradient-weighted connectivity maps for the most relevant structural and functional gradients. This involved calculating the average of the dot products of gradient values in each voxel and their connectivity to each cortical region of interest (ROI). Subsequently, we correlated these maps with gradients derived from the embedding of cortico-cortical connectivity. To address the issue of spatial autocorrelation (SA), which commonly affects brain maps, we computed SA-corrected permutational p-values using a method based on SA-preserving surrogates (Burt et al., 2020). Furthermore, these SA-corrected p-values were adjusted for false discovery rate (FDR) using the Benjamini-Hochberg correction method.
 
@@ -86,9 +102,21 @@ Diffusion embedding of cortico-cortical functional connectivity gradients reveal
 
 We found that pulvinar-cortical connectivity patterns associated with pulvinar gradients exhibited high correlations with the first three cortico-cortical functional connectivity gradients. Specifically, GFC1-weighted connectivity maps demonstrated the highest correlation with the first cortico-cortical functional gradient (left pulvinar: r=0.89, p<0.01; right pulvinar: r=0.83, p<0.01); in line with the available evidence, this gradient delineates a unimodal-to-transmodal cortical hierarchy, spanning from low-level sensory and motor regions to higher-order associative and limbic cortices (Margulies et al., 2016). GFC2-weighted connectivity maps strongly correlated with the third cortico-cortical functional gradient (left pulvinar: r=0.71, p<0.01; right pulvinar: r=0.67, p<0.01); as in previous investigations, the cortical topography of this gradient spans across cortical regions involved in low-versus-high complexity cognitive task, thus highlighting a cortical organization depending on cognitive demand (Turnbull et al., 2020). Finally, GFC3-weighted connectivity was found strongly correlated with the second cortico-cortical functional gradient (left pulvinar: r=0.78, p<0.01; right pulvinar: r=0.78, p<0.01); in line with previous works, this cortical gradient is anchored on one end on visual processing areas, and on the opposite end on sensorimotor processing networks, reflecting a secondary cortico-cortical hierarchy that is orthogonal to the principal cortical gradient (Margulies et al., 2016). Additionally, weaker yet significant correlations were found between GFC2-weighted connectivity maps and the first cortico-cortical functional gradient (left pulvinar: r=0.27, p=0.01; right pulvinar: r=0.38, p<0.01) (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/100937/elife-100937-fig3-v1.jpg)
+
+**Figure 3.:** (A) The relationship between pulvinar-cortical and cortico-cortical functional gradients. The left panels show gradient-weighted connectivity values for the first three cortico-pulvinar functional connectivity gradients, each paired with the most correlated cortico-cortical functional connectivity gradient. Normalized values of each cortical region of interest (ROI) (Schaefer atlas, 400 parcels) are plotted on the cortical surface. The right panels show matrix plots of Pearson’s correlation values between cortico-cortical gradients (y-axis) and pulvinar-cortical gradient-weighted connectivity maps. Only values showing statistical significance (spatial autocorrelation [SA]-corrected, false discovery rate [FDR]-adjusted p<0.01) are shown. (B) The relationship between pulvinar-cortical functional gradients and cortical connectivity networks. Violin plots of normalized gradient-weighted connectivity values grouped by seven intrinsic connectivity networks (as in Thomas Yeo et al., 2011); VN: visual network; SMN: sensorimotor network; DAN: dorsal attention network; VAN: ventral attention network; LN: limbic network; FPN: frontoparietal network, DMN: default-mode network.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100937/elife-100937-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The left panel shows the scree plot of explained variance for each gradient, where gradients that have been considered for subsequent analyses (1–5) are marked with red circles. The right panel shows normalized gradient values for gradients 4–5 plotted on the cortical surface. Gradients 1–3 are shown in Figure 3A.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100937/elife-100937-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The left panel shows cortico-cortical structural gradients; normalized gradient values are plotted on the cortical surface (Schaefer atlas, 400 parcels). The right panel shows scree plots of explained variance, where gradients that have been considered for subsequent analyses (1–4) are marked with red circles. Bottom right: heatmaps of Pearson’s correlation values between pulvinar-cortical gradient-weighted connectivity (x-axis) and the corresponding four cortico-cortical structural connectivity gradients (y-axis).
+
 On the contrary, gradient-weighted structural connectivity maps did not exhibit the same correlation pattern with cortico-cortical structural gradient maps, displaying only weak and not significant correlations to cortical gradients. Notably, left GSC2-weighted structural connectivity maps showed weak correlations with the principal structural connectivity gradient (r=0.19, p>0.01), whereas right GSC2-weighted connectivity weakly correlated with the second cortico-cortical gradient (r=0.24, p>0.01) (Figure 3—figure supplement 2).
 
-## The unimodal-to-transmodal gradient (GFC1) aligns with receptor expression on the dorso-ventral pulvinar axis
+### The unimodal-to-transmodal gradient (GFC1) aligns with receptor expression on the dorso-ventral pulvinar axis
 
 We discovered that the main gradient of cortico-cortical functional connectivity is mirrored on the pulvinar by GFC1. The cortical connectivity of this gradient progresses from unimodal cortical areas of the sensorimotor and visual network to multimodal, higher-order associative areas of the limbic, frontoparietal, and default mode network (Figure 3B). Similarly, in the pulvinar, this trend manifests as a progression of gradient values in a ventral-to-dorsal fashion, from the anterior and inferior to the lateral and medial pulvinar nuclei (Figure 4B).
 
@@ -104,7 +132,7 @@ Furthermore, we observed a significant correlation between GFC1 and the secondar
 
 In summary, our findings demonstrated that GFC1, GRC1, and GSC2 substantially delineate multiscale differences between the ventral and dorsal aspects of the pulvinar. Moving along the ventral-dorsal axis of the pulvinar complex, more ventral regions showed higher functional connectivity to unimodal sensory processing networks, higher levels of 5HTT and NAT expression, and preferentially higher structural connectivity to modality-independent or low-level sensory processing cortices. Conversely, dorsal regions displayed increasingly higher functional connectivity to multimodal processing networks, higher levels of D2, NMDA receptors, and greater structural connectivity to higher-order sensory processing cortices (Figure 4).
 
-## The visual-to-sensorimotor gradient (GFC3) aligns with structural connectivity on the medio-lateral pulvinar axis
+### The visual-to-sensorimotor gradient (GFC3) aligns with structural connectivity on the medio-lateral pulvinar axis
 
 The secondary gradient of cortico-cortical organization was found to be correlated with GFC3, which explained ~10% of the variance in pulvinar-cortical functional connectivity. GFC3 exhibited a well-delineated medial-lateral and antero-posterior arrangement, corresponding to lower values in the anterior and lateral pulvinar divisions and higher values in the inferior and medial nuclei. The cortical functional connectivity patterns associated with GFC3 spanned from the lower extreme of the sensorimotor network to the higher extreme of the visual network. This gradient reflected transitions from increasingly visual-related processing networks (such as dorsal attention and limbic networks) to increasingly action-related processing networks (including the default mode, frontoparietal, and ventral attention networks) (Figure 5B).
 
@@ -118,7 +146,7 @@ Additionally, we found a significant negative correlation to GRC2, which account
 
 To summarize, our findings reveal a strong association between the medio-lateral axis of pulvinar organization, which reflects the progression of functional connectivity from sensorimotor to associative and visual areas, and the principal gradient of structural connectivity. The cortical connectivity profiles of this gradient delineate within-network patterns of progression, suggesting that multiple functional networks host separate representations of the pulvinar complex. Additionally, this structural and functional connectivity pattern is paralleled by a secondary gradient of receptor expression. Specifically, there is an increasing expression of MOR and a decreasing expression of 5HTT in the medial end of the gradient, which corresponds to regions functionally connected to sensorimotor-associative regions. Conversely, there is a decreasing expression of MOR and an increasing expression of 5HTT in the lateral end of the gradient, which corresponds to regions functionally connected to associative-visual regions (Figure 5).
 
-## Reliability and reproducibility
+### Reliability and reproducibility
 
 Diffusion embedding of cortico-pulvinar connectivity data demonstrated high stability and reproducibility, with structural connectivity gradients exhibiting superior performance compared to functional connectivity gradients.
 
@@ -158,7 +186,7 @@ In recent years, different works have explored the spatial arrangement of thalam
 
 As regards structural connectivity, existing accounts describe a medio-lateral organization of thalamocortical connections, corresponding to an antero-posterior gradient on the cortical mantle. This gradient organization appears to be anchored to genetic markers of different cell types (Oldham and Ball, 2023). In line with their findings, we describe a principal axis of structural connectivity in the pulvinar complex that is arranged on the medio-lateral axis, and we enforce the notion of a deep relationship between structural connections and molecular expression of neurotransmission markers. On the other hand, the patterns of connectivity with the cerebral cortex do not correspond to a clear antero-posterior axis on the cerebral cortex, probably showing the predominance of local connectivity over the global thalamic structural topography. Further investigations are warranted to ascertain whether the structural gradients of the pulvinar complex may be in continuity with this general cortico-thalamic connectivity gradient.
 
-## Neurochemical correlates of pulvinar-cortical topographical organization
+### Neurochemical correlates of pulvinar-cortical topographical organization
 
 In addition to elucidating the intricate pulvinar-cortical connectivity patterns, our study unveils unprecedented insights into the correlates of this complex topographical organization at multiple organizational scales, including structural connectivity and neurotransmission. Notably, we found that the hierarchical organization of pulvinar-cortical connectivity aligns with the principal axis of receptor expression, indicating a substantial influence of neuromodulator receptor expression on this level of organization. This principal axis of receptor expression reflects diverging expression patterns of markers of catecholaminergic neurotransmission, encompassing dopaminergic, noradrenergic, and serotonergic systems. While previous ex vivo and in vivo investigations in the human and nonhuman primate brain confirm that pulvinar is a recipient of dopaminergic, noradrenergic, and serotonergic projections (Lavoie and Parent, 1991; Oke et al., 1997; Rieck et al., 2004; Sánchez-González et al., 2005; Pérez-Santos et al., 2021), our work provides information on their specific distribution pattern, representing a novel contribution to the field. Moreover, studies in nonhuman primates have highlighted many receptor markers whose topographic distribution mirrors connectivity patterns in the pulvinar complex, including acetylcholine esterase (AChE), parvalbumin, calbindin, or vesicular glutamate transporters 1 and 2 (Gutierrez et al., 1995; Gutierrez et al., 2000; Stepniewska and Kaas, 1997; Balaram et al., 2013; Balaram et al., 2015). Since some of these markers are known to colocalize with catecholaminergic receptors in different brain areas (Liang et al., 1996; Graham et al., 2015) and have been recently correlated with functional topography in the cortex and subcortex, including the thalamus (Anderson et al., 2018; Anderson et al., 2020; Müller et al., 2020), the macroscale pattern of receptor coexpression observed by PET may reflect broader chemoarchitectural features at the cellular level.
 
@@ -166,7 +194,7 @@ Indeed, while commonalities and discrepancies between structural and functional 
 
 Indeed, serotonergic neurotransmission in the thalamus plays a crucial role in higher-order sensory integration, especially within the visual system. In this regard, alterations in thalamo-cortical functional connectivity, influenced by powerful serotonergic psychedelics, are known to mediate this process (Preller et al., 2018; Gaddis et al., 2022; Onofrj et al., 2023). This perspective sheds light on the increasing 5HTT expression from high- to low-level somatosensory and visual regions of the pulvinar. Conversely, the increasing expression of dopamine receptors and transporters observed in the dorsal, higher-order regions of the pulvinar is consistent with the role of dopamine neuromodulation in mediating attentional processes, as supported by the findings of increased functional connectivity between thalamus and higher-order cortical regions after administration of the selective DAT-blocker modafinil (Pizzi et al., 2023). Finally, recent multimodal investigations have reported higher levels of dopamine receptors and transporters in cortical and subcortical regions structurally and functionally connected with the dorsal attention network, including the dorsomedial pulvinar (Alves et al., 2022). This further supports our results and underscores the pivotal role of dopamine neuromodulation in attentional processes.
 
-## A multimodal pulvinar gradient architecture as a possible benchmark for neurological disorders
+### A multimodal pulvinar gradient architecture as a possible benchmark for neurological disorders
 
 By integrating functional and structural connectivity data with neuroreceptor expression patterns, our proposed model of multi-level gradient architecture of the pulvinar complex holds promise for elucidating alterations in pulvinar structure and connectivity observed in various pathological conditions. For instance, reduced availability of D2/3 receptors in the pulvinar correlated with functional connectivity to the superior temporal sulcus and medial occipital lobe and autistic social communication symptoms in individuals with autistic spectrum disorders (Murayama et al., 2022). Furthermore, the right anterior pulvinar (PuA), situated at the extreme of our principal coexpression gradient characterized by high expression of 5HTT and low expression of D2 receptors, exhibited reduced volume in patients with Parkinson’s disease and comorbid depression. Notably, treatment with serotonergic antidepressants was associated with increased volume of this region, suggesting a protective effect of serotonergic transmission against dopamine depletion-driven degeneration (Bhome et al., 2022). In another study involving first-episode psychotic patients, heightened functional connectivity to nodes of the default mode network and central executive network was observed in the dorsal pulvinar. This finding aligns with our multimodal model, wherein increased expression of D2 receptors corresponds to this region (Kwak et al., 2021).
 
@@ -176,11 +204,11 @@ Finally, the potential to modulate activity in specific cortical functional netw
 
 This includes deep brain stimulation of the pulvinar, an emerging area of interest in functional neurosurgery for epilepsy, which could benefit from a deeper understanding of pulvinar connectivity and its implications for treatment outcomes (Kalamatianos et al., 2023; Vakilna et al., 2023; Wong et al., 2023). Specifically, the medial (as opposed to the lateral) pulvinar is the desired target due to its connectivity to the medial temporal lobe. Overall, our model opens avenues for both understanding the pathophysiology of neurological and psychiatric disorders and developing targeted therapeutic interventions.
 
-## Future perspectives and limitations
+### Future perspectives and limitations
 
 While our study offers valuable insights into the organizational principles of the pulvinar complex, it is not without limitations. One notable limitation of this study lies in the relatively small size of the pulvinar complex compared to other larger cortical or subcortical structures. The high cellular density of the pulvinar poses a challenge for the relatively coarse resolution of currently available imaging techniques. Although the generally high quality of both the main and validation datasets, including rs-fMRI data (Uğurbil et al., 2013; Babayan et al., 2019), aligns with current standards for imaging investigations of pulvinar connectivity, higher-resolution imaging approaches may offer more granular insights. Advanced techniques, such as ultrahigh-field fMRI, hold promise for uncovering the fine-scale topographical organization of the pulvinar complex. The limitation of small region size is also particularly relevant for the normative PET data that have been resampled to the voxel size of 2 mm2 to match the resolution of BOLD data and suffer from all the inherent limitations of PET imaging in small brain volumes, such as partial volume effects or tracer spillout effects (Kanel et al., 2023). In addition, the neurotransmitter normative atlas is derived from group-level averages of data acquired across different centers. As a consequence, the receptor density profiles employed to quantify receptor ‘coexpression’ are measured across spatially aligned and group-averaged PET scans of different individuals (Hansen et al., 2022b), since the radioactive nature of PET and SPECT tracers prevents the study of multiple neurotransmitter systems in the same individual for technical and clinical reasons. On the other hand, this neurotransmitter atlas has been extensively validated both by correlation to an independent autoradiography dataset and to ex vivo gene expression levels measured with microarray techniques (Hansen et al., 2022a). As such, it therefore represents, to the best of our knowledge, the most advanced tool available to investigate the relations between neurotransmitter expression patterns in the human brain in vivo. Indeed, as mentioned above, ‘gold-standard’ reference ex vivo studies on molecular expression levels of the receptors and transporters analyzed in our study, relative to the pulvinar complex, are substantially sparse and nearly absent for the human brain. Therefore, further investigations, possibly by employing immunohistochemical or immunofluorescence microscopy in the human brain coupled with highly sampled gene expression probes, are warranted to validate and enhance our understanding of molecular expression in the human pulvinar.
 
-## Conclusion
+### Conclusion
 
 This study offers advanced insights into the interplay between pulvinar-cortical and cortico-cortical connectivity in the human brain, along with its structural and molecular correlates. Our proposed model confirms the hypothesis of a ‘replication principle’, illustrating that the pulvinar complex harbors multiple representations of cortico-cortical functional connectivity organized hierarchically by their information processing significance across its ventro-dorsal and medio-lateral axes. These shared representations traverse pulvinar nuclei continuously, reconciling discrete, individual nuclear connectivity, and coactivation patterns with the idea of a gradient-like organization of pulvinar connectivity.
 
@@ -188,9 +216,9 @@ By systematically assessing the relationship between functional, structural, and
 
 ## Materials and methods
 
-## Data acquisition and preprocessing
+### Data acquisition and preprocessing
 
-## Primary dataset (HCP)
+#### Primary dataset (HCP)
 
 Structural, diffusion-weighted, and rs-fMRI data of 210 healthy subjects (males = 92, females = 118, age range 22–36 years) were retrieved from the HCP repository (https://humanconnectome.org/). The study protocol was approved by the Washington University in St. Louis Institutional Review Board (IRB) (Van Essen et al., 2012).
 
@@ -210,7 +238,7 @@ Multi-shell DWI data (isotropic voxel size = 1.25 mm) were acquired using a sing
 
 A multi-shell multi-tissue CSD signal modeling was performed to estimate individual response functions in WM, GM, and CSF (Jeurissen et al., 2014). Whole-brain, probabilistic tractography (10 million streamlines, iFOD2 algorithm; anatomically constrained tractography) was generated with MRtrix3 default parameters (Tournier et al., 2010; Smith et al., 2012).
 
-## Validation dataset (LEMON)
+#### Validation dataset (LEMON)
 
 Structural, diffusion, and rs-fMRI data of 213 healthy subjects (males = 138, females = 75, age range 20–70 years) were retrieved from the Leipzig Study for Mind-Body-Emotion Interactions (LEMON) dataset (http://fcon_1000.projects.nitrc.org/indi/retro/MPI_LEMON.html). The study protocol was approved by the Ethics Committee of the medical faculty of the University of Leipzig.
 
@@ -222,13 +250,13 @@ Single-shell DWI data (isotropic voxel size = 1.7 mm) were acquired using a mult
 
 For rs-fMRI data (isotropic voxel size = 2.3 mm), a gradient-echo EPI was acquired with the following parameters: TR = 1400 ms, TE = 30 ms, 15.30 min/run (Babayan et al., 2019). Data were obtained in a minimally preprocessed form, consisting of the following steps: (1) removal of the first 5 volumes to allow for signal equilibration; (2) motion and distortion correction; (3) outlier and artifact detection (rapidart) and denoising using component-based noise correction (aCompCor); (4) mean-centering and variance normalization of the time series; (5) spatial normalization to 2 mm resolution MNI 152 standard space (Babayan et al., 2019; Mendes et al., 2019).
 
-## PET data
+#### PET data
 
 Volumetric 3D PET images were retrieved from the Network Neurosciences Lab (NetNeuroLab) GitHub page (https://github.com/netneurolab/hansen_receptors/tree/main/data/PET_nifti_images, Hansen, 2022). Images were collected for 19 distinct neurotransmitter receptors and transporters in a multicentric data acquisition approach resulting in multiple studies across the world. Images were acquired using optimized imaging preprocessing strategies for each radioligand (Nørgaard et al., 2019). In all studies, only healthy participants were scanned, for a total of 1238 healthy individuals (males = 718, females = 520). Full methodologic details about each study, the associated receptor/transporter, tracers, PET cameras, and modeling methods can be found in Hansen et al., 2022b. In general, the measured estimates for each image (binding potential and/or tracer distribution volume) are proportional to receptor density, and then we will refer to them as ‘receptor density maps’ for simplicity.
 
 Receptor density maps, originally available at different resolutions, were resliced to the 2 mm MNI152 standard template resolution and converted to z-scores. Four receptor density maps (5HT1b, D2, mGluR5, vAChT) were acquired using the same tracer in different studies and were converted to a weighted average as in the reference paper. Ten receptor/transmitters (5HT1a, 5HT1b, 5HTT, CB1, D2, DAT, GABA-A, MOR, and NET) were acquired with different tracers in different studies; these receptor maps were not averaged but kept as separated, resulting in a total of 29 receptor density maps. Supplementary file 1 summarizes details about the neurotransmitter, tracers, and number of subjects for each study.
 
-## Diffusion map embedding
+### Diffusion map embedding
 
 We derived functional connectivity, structural connectivity, and receptor expression gradients for the left and right pulvinar separately. All the analyses were performed in standard space (MNI152 2006 template, 2 mm voxel size). Voxels belonging to the left or right pulvinar were defined according to the Automated Anatomical Labeling v3 Atlas (AAL3, 2 mm version) (Rolls et al., 2020), while cortical ROIs were derived from the 400-areas version of the local-global cortical parcellation proposed by Schaefer et al., 2018.
 
@@ -242,7 +270,7 @@ We applied diffusion embedding (Coifman and Lafon, 2006), an unsupervised learni
 
 Functional and structural connectivity gradients were also obtained from cortico-cortical connectivity matrices and employed for further analysis. Functional connectivity was computed as the pairwise Pearson’s correlation between the average time series of the 400 cortical ROIs. For structural connectivity gradient embedding, the raw number of streamlines connecting each pair of cortical ROIs was extracted from the whole-brain tractogram separately for the left and right hemispheres, to emphasize intra-hemispheric patterns of connectivity. Right hemisphere gradients were sign-flipped to align with their left hemisphere counterparts if necessary. The diffusion embedding analysis was performed using the same methods and parameters as for the pulvinar gradients. A graphical overview of the gradient mapping protocol is presented in Figure 1.
 
-## Gradient analysis and statistics
+### Gradient analysis and statistics
 
 To facilitate the interpretation of their significance, we performed post hoc characterization of each pulvinar gradient at various levels.
 
@@ -264,7 +292,7 @@ Finally, to investigate the relation between pulvinar gradients obtained from di
 
 To account for the SA properties of gradient maps, for all the correlations described, statistical significance was assessed using the permutational approach described in Burt et al., 2020. Briefly, this method takes as input geometric distance matrices for SA estimation and involves the generation of a given number of SA-preserving permuted surrogate maps, which are then employed as nulls to estimate a permutational null distribution of the test statistic (Burt et al., 2020). Pairwise Euclidean distances between left or right pulvinar voxel coordinates were employed for pulvinar null models, while for cortical parcellated connectivity data Euclidean distances were estimated between centroids of each cortical ROI. In both cases, 1000 surrogates were generated to estimate the null distribution. Statistical tests were controlled for FDR using Benjamini and Hochberg’s correction.
 
-## Reliability and reproducibility assessment
+### Reliability and reproducibility assessment
 
 We conducted several analyses to assess the robustness and consistency of our main findings. Specifically, both functional and structural connectivity gradients underwent split-half and test-retest replicability analysis, as well as reproducibility analysis.
 
@@ -276,10 +304,18 @@ Finally, reproducibility was determined by recomputing results in the validation
 
 In all the mentioned cases, gradients were realigned before correlation by using Procrustes’ analysis to obtain more reliable estimates of gradient similarity (Hong et al., 2020). This approach ensured that the gradients from different datasets were aligned properly before assessing their similarity, enhancing the robustness of our analyses.
 
-To evaluate the possible influence of SNR on connectivity-derived diffusion embeddings, we have performed a voxel-wise, modality-specific, SNR assessment to investigate correlation between spatial distribution of noise and diffusion embeddings. For each subject, we separately calculated voxel-wise SNR maps for the left and right pulvinar, using both functional (BOLD) volumes and DWI data. For BOLD volumes, we employed the widely accepted definition of temporal signal-to-noise ratio (tSNR) (Murphy et al., 2007)tSNR=tmeantstd\begin{document}$$\displaystyle tSNR=\frac{t_{mean}}{t_{std}} $$\end{document}
+To evaluate the possible influence of SNR on connectivity-derived diffusion embeddings, we have performed a voxel-wise, modality-specific, SNR assessment to investigate correlation between spatial distribution of noise and diffusion embeddings. For each subject, we separately calculated voxel-wise SNR maps for the left and right pulvinar, using both functional (BOLD) volumes and DWI data. For BOLD volumes, we employed the widely accepted definition of temporal signal-to-noise ratio (tSNR) (Murphy et al., 2007)
+
+$$
+tSNR=\frac{t_{mean}}{t_{std}}
+$$
 
 where tmean and tstd are, respectively, the mean and the standard deviation of each voxel’s signal across the time series.
 
-For DWI data, we employed a similar definition (Cai et al., 2021) that allows estimation of SNR from multiple b=0 diffusion-weighted volumes:SNR= SmeanSstd\begin{document}$$\displaystyle SNR=\ \frac{S_{mean}}{S_{std}}$$\end{document}
+For DWI data, we employed a similar definition (Cai et al., 2021) that allows estimation of SNR from multiple b=0 diffusion-weighted volumes:
 
-where S is the voxel’s signal intensity, and the mean (Smean\begin{document}$S_{mean}$\end{document}) and standard deviation (Sstd\begin{document}$S_{std}$\end{document}) were computed across all the b0-weighted volumes (18 for HCP dataset; 7 for LEMON dataset). Individual pulvinar SNR maps were then averaged to generate group-level estimates of SNR spatial distribution. The resulting, modality-specific average SNR maps were correlated with the diffusion gradients derived from the corresponding modality, following the same approach described in the previous section (Pearson’s correlation; p-values corrected using spatial null models for SA, and Benjamini-Hochberg correction for FWE).
+$$
+SNR= \frac{S_{mean}}{S_{std}}
+$$
+
+where S is the voxel’s signal intensity, and the mean ($S_{mean}$) and standard deviation ($S_{std}$) were computed across all the b0-weighted volumes (18 for HCP dataset; 7 for LEMON dataset). Individual pulvinar SNR maps were then averaged to generate group-level estimates of SNR spatial distribution. The resulting, modality-specific average SNR maps were correlated with the diffusion gradients derived from the corresponding modality, following the same approach described in the previous section (Pearson’s correlation; p-values corrected using spatial null models for SA, and Benjamini-Hochberg correction for FWE).

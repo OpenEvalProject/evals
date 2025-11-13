@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.43922.001 Transcription is tightly regulated to maintain energy homeostasis during periods of feeding or fasting, but the molecular factors that control these alternating gene programs are incompletely understood. Here, we find that the B cell lymphoma 6 (BCL6) repressor is enriched in the fed state and converges genome-wide with PPARα to potently suppress the induction of fasting transcription. Deletion of hepatocyte Bcl6 enhances lipid catabolism and ameliorates high-fat-diet-induced steatosis. In Ppara -null mice, hepatocyte Bcl6 ablation restores enhancer activity at PPARα-dependent genes and overcomes defective fasting-induced fatty acid oxidation and lipid accumulation. Together, these findings identify BCL6 as a negative regulator of oxidative metabolism and reveal that alternating recruitment of repressive and activating transcription factors to shared cis-regulatory regions dictates hepatic lipid handling.
+Transcription is tightly regulated to maintain energy homeostasis during periods of feeding or fasting, but the molecular factors that control these alternating gene programs are incompletely understood. Here, we find that the B cell lymphoma 6 (BCL6) repressor is enriched in the fed state and converges genome-wide with PPARα to potently suppress the induction of fasting transcription. Deletion of hepatocyte Bcl6 enhances lipid catabolism and ameliorates high-fat-diet-induced steatosis. In Ppara-null mice, hepatocyte Bcl6 ablation restores enhancer activity at PPARα-dependent genes and overcomes defective fasting-induced fatty acid oxidation and lipid accumulation. Together, these findings identify BCL6 as a negative regulator of oxidative metabolism and reveal that alternating recruitment of repressive and activating transcription factors to shared cis-regulatory regions dictates hepatic lipid handling.
 
 ## Introduction
 
@@ -35,47 +35,111 @@ In this work, using genome-wide DNA binding and transcriptomic analyses as well 
 
 ## Results
 
-## BCL6 colocalizes with PPARα at fasting-regulated genes controlling lipid oxidation
+### BCL6 colocalizes with PPARα at fasting-regulated genes controlling lipid oxidation
 
 To establish the genomic sites for BCL6 regulation, we used ChIP-seq to map its genome-wide set of cis-acting targets (cistrome) in liver. Under fed conditions, we identified over fifteen thousand high confidence BCL6 binding sites from three biological replicates. Ontologies for nearby genes were dominated by lipid and ketone metabolism, PPAR signaling, and functions in peroxisomes and mitochondria (Figure 1A). Additionally, motif analysis of BCL6 binding sites compared to random whole genome sequences revealed striking enrichment of response elements not only for BCL6 but also for lipid-activated PPAR nuclear hormone receptors (Figure 1B) (Evans et al., 2004), the pioneer factor FOXA1, the enhancer remodeler C/EBP (Grøntved et al., 2013), and the developmental and lipid regulatory factors HNF4 (Hayhurst et al., 2001; Li et al., 2000) and HNF6 (Clotman et al., 2005; Zhang et al., 2016). Highly similar BCL6 peak calling, gene ontology and motif analysis was obtained using either wild-type liver input chromatin or BCL6 ChIP-seq from livers of hepatocyte-specific Bcl6 knockouts (Bcl6LKO mice) as background controls for enrichment (Figure 1—figure supplement 1A and B) indicating that the liver BCL6 cistrome reflected binding events specific to hepatocytes.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig1-v1.jpg)
+
+**Figure 1.:** (A) MSigDB Pathway and Gene Ontology (GO) Cellular Compartment analysis of BCL6 ChIP-seq binding sites. (B) Motif enrichment analysis of BCL6-bound regions. (C) Gene expression as measured by reads per kilobase of transcript per million reads (RPKM) of Ppara, Ppard, and Pparg in control (Bcl6fl/fl) mouse liver samples. N = 4 per group. (D) qPCR of Bcl6 and Ppara in fed and fasted Bcl6fl/fl mouse livers. N = 6–7 per group. (E) Western blot analysis of BCL6 and PPARα protein levels in ad libitum fed and overnight fasted C57BL/6 mouse livers. Densitometry normalized to actin levels is shown (right). (F) Venn diagrams comparing liver ChIP-seq peaks from ad libitum and overnight fasted mice using antibodies against BCL6 (top) and PPARα (middle). Overlap between combined fed and fasted BCL6 and PPARα binding sites (based on a distance between peak centers of <200 bp) is shown (bottom). ChIPs were performed in biological triplicates. (G) BCL6 and PPARα ChIP-seq tag densities at BCL6 unique, PPARα unique, or shared BCL6-PPARα peaks in fed and fasted states. (H) BCL6 (left) and PPARα (right) tag densities at BCL6-PPARα shared peaks in fed or fasted livers. N = 3 per group. A two-tailed Student’s t-test assuming equal variance was used to compare mean values between two groups. Data are represented as mean ±SEM. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) MSigDB Pathway/Gene Ontology analysis (A) and motif densities (B) for BCL6 ChIP-seq peaks identified in wild-type livers, as determined by enrichment over input chromatin or over BCL6 ChIP-seq in Bcl6LKO liver samples.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Fed and fasted BCL6 (top) and PPARα (bottom) ChIP-seq tag densities at all respective sites (left panel) or at shared sites (right panel). (B) Histogram of distances between BCL6 and PPARα peak centers; distances < 200 bp are shown. Bin width is 10 bp. (C) Genome-wide distributions of BCL6, PPARα, and shared BCL6-PPARα ChIP-seq peaks at intergenic, promoter, and intragenic regions. (D,E) UCSC genome browser tracks for ChIP-seq of BCL6 (D) or PPARα (E) in control fed (blue), control fasted (red), and genetic knockout samples as indicated in legend (black). (F) ChIP-qPCR using pre-immune IgG, BCL6, and PPARα antibodies at shared BCL6-PPARα binding sites in fed and fasted livers. Enriched regions are located at the indicated distance (in base pairs) away from the TSS of specified genes. ChIPs were performed in technical duplicates and biological triplicates. A two-tailed Student’s t-test assuming equal variance was used to compare mean values between two groups. Data are represented as mean ±SEM. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
 Based on motif predictions, we pursued the possibility of genomic convergence between BCL6 and PPARs. Direct quantification of TF consensus sites near BCL6 binding sites further reflected enrichment of motifs for PPARs, its heterodimeric partner RXR, and to a lesser extent FXR, whereas motifs for other abundant liver transcription factors such as LXR were absent (Figure 1—figure supplement 1B). Ppara is the dominantly expressed PPAR subtype in liver (Figure 1C). In line with PPARα’s critical role to regulate the adaptive response to fasting, its RNA and protein levels increase with overnight food deprivation (Figure 1C–E) (Kersten et al., 1999). In contrast, Bcl6 mRNA and corresponding protein diminish sharply from the fed to the fasted state (Figure 1D and E). Accordingly, BCL6 occupancy was diminished at the majority of its binding sites and its cistrome was reduced by 39%, whereas PPARα recruitment was enhanced and its cistrome was expanded by 36% with fasting (Figure 1F, top and middle panels, and Figure 1—figure supplement 2A, left panel). In addition, fasting resulted in a redistribution of binding sites for each factor. Direct comparison of the combined fed and fasted ChIP-seq peaks for BCL6 and PPARα revealed 13,608 overlapping binding regions (<200 bp between peak centers) between these factors, representing 77% and 41% of the BCL6 and PPARα cistromes, respectively (Figure 1F, bottom panel). Of these overlapping peaks, the vast majority (>96%) demonstrated a distance of <100 bp between peak centers (Figure 1—figure supplement 2B). Over 95% of these overlapping sites occurred outside of promoter regions in intragenic and intergenic locations (Figure 1—figure supplement 2C). BCL6-PPARα co-occurring peaks represented the strongest binding events for each factor, indicating they likely represent true DNA interactions as opposed to non-specific events at open chromatin regions (Figure 1G) (Landt et al., 2012). At these shared sites, binding by BCL6 decreased while PPARα increased upon fasting (Figure 1H and Figure 1—figure supplement 2A, right panel), which was evident at several PPARα target genes, such as Acot4/3 and Por (Figure 1—figure supplement 2D and E) and confirmed by ChIP qPCR (Figure 1—figure supplement 2F). Thus, extensive cistromic overlap and reciprocal genome-wide binding suggested BCL6 and PPARα may control a common regulatory program.
 
-## Genomic localization of BCL6 is independent of PPARα and PPARδ
+### Genomic localization of BCL6 is independent of PPARα and PPARδ
 
 Next, we assessed whether BCL6 and PPARs compete or collaborate for DNA binding. Using livers from Ppara-/- and wild-type control mice, we found that ablation of Ppara had no impact on BCL6 enrichment at BCL6-PPARα binding sites (Figure 2A, left panel and Figure 1—figure supplement 2D). Likewise, liver-specific deletion of Bcl6 did not alter PPARα binding (Figure 2A, right panel and Figure 1—figure supplement 2E). Ppard is expressed at relatively low levels in liver (Figure 1C), but it was previously reported that unliganded PPARδ binds and sequesters BCL6, releasing it in the presence of PPARδ ligands (Lee et al., 2003). Thus, to test whether a protein complex between PPARδ and BCL6 could account for BCL6-PPAR genomic co-localization, we characterized BCL6 binding in the presence or absence of hepatocyte PPARδ using mice harboring floxed alleles of Ppard and Albumin-Cre (PpardLKO mice). The livers of PpardLKO animals exhibited 96% decreased levels of Ppard mRNA with no significant change in Bcl6 (Figure 2—figure supplement 1A), yet in comparison to wild type control livers, BCL6 binding was unaltered across the BCL6 cistrome and at its subset of BCL6-PPARα shared sites (Figure 2B and C). Thus, these findings did not support a model in which BCL6 binds to PPARs on chromatin.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig2-v1.jpg)
+
+**Figure 2.:** (A) BCL6 ChIP-seq tag densities in C57BL/6 and Ppara-/- livers at shared BCL6-PPARα peaks (left). PPARα tag density in Bcl6fl/fl and Bcl6LKO livers at shared BCL6-PPARα peaks (right). (B) BCL6 tag densities in control and PpardLKO mouse livers at all BCL6 peaks (left) or shared BCL6-PPARα peaks (right), N = 2 per group. (C) UCSC genome browser tracks showing PPARα, PPARδ, and BCL6 ChIP-seq in control fed livers (blue), control fasted livers (red), or PpardLKO livers (black). (D) Venn diagram showing overlap of PPARδ, BCL6, and PPARα cistromes in mouse liver. Cistromes for each factor include peaks identified in either fed or fasted livers. Peaks were considered overlapping if peak centers were within 200 bp. ChIPs were performed in biological triplicates. (E) Gene ontology enrichment for binding regions common among BCL6, PPARα, and PPARδ (Shared); exclusive to PPARα and PPARδ (PPARα-PPARδ); exclusive to BCL6 and PPARα (BCL6-PPARα); or exclusive to BCL6 (BCL6 only).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) qPCR gene expression of Ppard and Bcl6 genes in control (PpardWT) and PpardLKO mouse livers. N = 2 per group. (B) PPARδ tag densities in fed or fasted mouse livers at all PPARδ peaks. N = 3 per group. (C) PPARα (top panel) and PPARδ (bottom panel) tag densities in fed and fasted livers at PPARα-PPARδ overlapping peaks (left panel), PPARδ unique peaks (middle panel) or PPARα unique peaks (right panel). N = 3 per group. A two-tailed Student’s t-test assuming equal variance was used to compare mean values between two groups. Data are represented as mean ±SEM. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
 Additionally, we mapped the liver PPARδ cistrome using an isotype-specific antibody. 8,194 PPARδ-binding sites were identified collectively in fed and fasted livers, 85% of which overlapped with the more extensive PPARα cistrome of 33,379 sites (Figure 2D). Overall, PPARδ binding was diminished by half upon fasting (Figure 2—figure supplement 1B), but this reduction was only evident at sites shared with PPARα such as the Acot4/3 and Ehhadh loci (Figure 2C), suggesting that PPARα and PPARδ compete for binding at common response elements (Figure 2—figure supplement 1C). While PPARδ and BCL6 co-localized at only 87 genomic sites without PPARα, we detected 8,975 BCL6-PPARα peaks which were not bound by PPARδ (Figure 2D). Gene ontology analysis revealed that BCL6-PPARα-PPARδ shared or BCL6-PPARα exclusive peaks annotate predominantly to genes controlling the metabolism of lipids and lipoproteins, fatty acids, triacylglycerol, ketone bodies, PPAR signaling, and biological oxidations (Figure 2E). Collectively, these results provided further evidence that extensive BCL6 genome-wide colocalization with PPARα and, to a more limited degree, with PPARδ occurs due to independent, yet proximate DNA-binding events along genes controlling lipid metabolism.
 
-## SMRT/NCoR-HDAC3 complexes control acetylation in hepatocyte BCL6-bound regulatory regions
+### SMRT/NCoR-HDAC3 complexes control acetylation in hepatocyte BCL6-bound regulatory regions
 
 To better understand how BCL6 modulates gene expression in liver, we first identified the BCL6-regulated transcriptome. We generated mice with hepatocyte-specific Bcl6 deletion (Bcl6LKO) by crossing animals with floxed alleles of Bcl6 to mice expressing Cre under control of the albumin enhancer/promoter. Bcl6LKO mice exhibited 75% reduced Bcl6 mRNA and over 90% diminished protein levels in the liver (Figure 3—figure supplement 1A and B). In ad lib fed Bcl6LKO mice, RNA-seq revealed 721 upregulated genes, while only 362 were downregulated by more than two fold compared to controls (Figure 3A). These findings indicated that liver BCL6 predominantly functions as a repressor of transcription, which was particularly apparent at genes with strongly bound BCL6-binding sites (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig3-v1.jpg)
+
+**Figure 3.:** (A) Volcano plots showing log2 fold change (LFC) in expression of fed Bcl6LKO over Bcl6fl/fl livers. Blue dots represent |LFC| greater than one with an adjusted p-value less than 0.05. Red dots represent remaining expressed genes. N = 4 per group. (B) BCL6 tags in control livers at BCL6 peaks near BCL6-activated, -repressed, or -unchanged genes. Box plots display interquartile range (box), median (horizontal black line), mean (black ‘+’), and min to max (whiskers). (C) Four-way Venn diagram comparing ad lib fed control BCL6, SMRT, NCoR and HDAC3 ChIP-seq peak sets. (D) Tag density of H3K27ac, SMRT, NCoR, and HDAC3 ChIP-seq in Bcl6fl/fl and Bcl6LKO livers at respective cofactor peaks co-bound with BCL6. ChIPs were performed in biological triplicates. For (B), a one-way ANOVA and Tukey’s post-hoc testing was used to compare tag density between groups. ∗p<1×10−3, ∗∗p<1×10−6, ∗∗∗p<1×10−9, ∗∗∗∗p<1×10−12.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) qPCR analysis of Bcl6 in Bcl6fl/fl and Bcl6LKO livers. N = 7 per group. (B) Western blots of BCL6 protein in Bcl6fl/fl and Bcl6LKO livers. Densitometric quantification is shown normalized to MemCode membrane staining (bottom). A two-tailed Student’s t-test assuming equal variance was used to compare mean expression between samples. Data are represented as mean ±SEM. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Enriched motifs for SMRT, NCoR and HDAC3 binding sites. For each corepressor, enriched motifs are shown in all peaks (all), peaks shared with BCL6 (BCL6 shared), and BCL6-exclusive peaks (Unique). Unique peaks were used as background for BCL6 shared motif discovery; conversely, Shared peaks were used as background for Unique peak motif discovery. (B) H3K27ac, HDAC3, SMRT, and NCoR ChIP-seq tags in Bcl6fl/fl and Bcl6LKO livers at respective cofactor peaks co-bound by BCL6 peaks. Box plots display interquartile range (box), median (horizontal line), mean (black ‘+’), and min to max (whiskers). Mann-Whitney test was used to compare tags between genotypes. ∗p<1×10−3, ∗∗p<1×10−6, ∗∗∗p<1×10−9, ∗∗∗∗p<1×10−12.
 
 BCL6 is known to control transcription in immune cells through interactions with many different cofactors (Barish et al., 2012; Basso and Dalla-Favera, 2012; Hatzi et al., 2013). To test whether BCL6 regulates transcription through similar interactions in liver, we used ChIP-seq to characterize SMRT, NCoR, and HDAC3 binding in ad lib fed Bcl6fl/fl and Bcl6LKO mice. In Bcl6fl/fl animals, we found extensive cistrome overlap between BCL6 and all three corepressors (6,643 common sites), although 21% of BCL6 sites were unique (Figure 3C). SMRT and HDAC3 exhibited very few independent binding regions, with only ~2% unique for either cofactor. NCoR exhibited the most extensive cistrome, and 45% of its sites did not overlap with BCL6, HDAC3, or SMRT. In line with their known biochemical interactions, SMRT, NCoR, and HDAC3 peaks were enriched in motifs for nuclear receptors (ERR, PPAR, RXR) as well as FOX and HNF transcription factors when compared to whole genome DNA as background (Figure 3—figure supplement 2A) (Perissi et al., 2010).
 
 For each corepressor, we further analyzed peaks shared with BCL6 (peak centers colocalizing within 200 bp) and non-overlapping (unique) cofactor sites (Figure 3—figure supplement 2A). When compared against DNA sequences from unique peaks, shared peaks were overrepresented with motifs for BCL6, STAT, and FOX transcription factors, as well as CUX2 and HNF6. In contrast, when tested against the DNA sequences of BCL6-shared peaks, unique SMRT, NCoR, and HDAC3 sites were enriched in motifs for ETS and ELK transcription factors. Next, we quantified SMRT, NCoR, and HDAC3 occupancy at BCL6-binding sites that colocalized with corepressor peaks in control versus Bcl6LKO livers (Figure 3D and Figure 3—figure supplement 2B). For each corepressor, binding at BCL6 sites was significantly reduced in Bcl6LKO livers. Moreover, loss of these complexes was inversely correlated to histone 3 lysine 27 acetylation (H3K27ac), a marker for enhancer activity (Creyghton et al., 2010; Wang et al., 2008), which was significantly elevated along BCL6-SMRT/NCoR-HDAC3 sites in Bcl6LKO livers. Together, these findings revealed a role for BCL6 to recruit a subset of liver SMRT/NCoR-HDAC3 complexes and repress associated regulatory regions.
 
-## Ablation of Bcl6 de-represses a fasting gene program
+### Ablation of Bcl6 de-represses a fasting gene program
 
 Gene ontology analysis of differentially expressed transcripts in the livers of Bcl6LKO animals revealed lipid metabolism, oxidation, and PPAR signaling as top scoring terms (Figure 4A). This regulatory signature and the extensive genomic intersection between BCL6 and PPARα prompted us to determine whether BCL6 could likewise control fasting-induced gene expression. Livers from mice restricted from food overnight exhibited 162 genes upregulated and 174 genes downregulated by at least 2-fold using RNA-seq (Figure 4B), and fasting regulated a common set of gene expression pathways with Bcl6 ablation (Figure 4A). Notably, over 40% of robustly regulated fasting genes (135/336) were controlled by BCL6 (Figure 4C, top panel) and for the vast majority, Bcl6 ablation mimicked the impact of fasting on transcription (Figure 4C, bottom panel and Figure 4D). Unsupervised clustering analyses of liver gene expression revealed that patterns in Bcl6LKO mice, irrespective of nutrition status, more closely resembled profiles from fasting than fed control mice (Figure 4D and Figure 4—figure supplement 1A). Genes co-regulated by fasting and Bcl6 deletion are enriched in ontologies for lipid and ketone body metabolism as well as PPARα signaling (Figure 4—figure supplement 1B). For example, visualization of ChIP-seq and RNA-seq tracks demonstrated that PPARα and BCL6 reciprocally occupy regions along the Acot4/3 and Vnn1 genes, whose expression was strongly induced by either fasting or Bcl6 ablation (Figure 4E). Quantitative PCR further confirmed dozens of liver genes that were similarly upregulated by fasting or Bcl6 ablation, including many involved in mitochondrial and peroxisomal β-oxidation (Abcd1/2, Acadvl, Acnat2, Acot2, Acot3/4, Ehhadh, Hadh, Idh2, Ucp2), microsomal ω-hydroxylation (Aldh3a2, Cyp4a31), ketogenesis (Acss3, Bdh1, Fgf21, Hmgcl), and lipid metabolism (Abhd2, Acot1, Cd36) (Figure 4—figure supplement 1C). Together, these results suggested that loss of Bcl6 mimics the fasting-induced transcriptional program controlling liver lipid metabolism.
 
-## BCL6-PPARα regulatory regions cluster on dynamically transcribed fasting genes
+![Figure 4.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig4-v1.jpg)
+
+**Figure 4.:** (A) Pathway enrichment analysis for genes differentially expressed (|LFC| greater than one and an adjusted p-value less than 0.05) with fasting or Bcl6 deletion in liver. (B) Volcano plots showing log2 fold change (LFC) in expression of Bcl6fl/fl fasted over fed. Blue dots represent |LFC| greater than one with an adjusted p-value less than 0.05. Red dots represent remaining expressed genes. N = 4 per group. (C) Venn diagram comparing differentially expressed genes with fasting or Bcl6 deletion (top panel). Comparison of LFC between fed (Bcl6LKO/Bcl6fl/fl) (y-axis) and Bcl6fl/fl (fasted/fed) (x-axis) for genes differentially expressed by both fasting and Bcl6 deletion is shown (bottom panel). (D) Hierarchical clustering heatmap of RPKM values in fed and fasted Bcl6fl/fl and Bcl6LKO samples for genes regulated by both fasting and Bcl6 deletion. N = 4 per group. (E) UCSC genome browser tracks of BCL6 and PPARα ChIP-seq and RNA-seq data at PPARα-regulated genes, Acot4/3 and Vnn1 in control fed (blue), control fasted (red), and Bcl6LKO fed (black) livers.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Clustered heatmap of a distance matrix across fed and fasted Bcl6fl/fl and Bcl6LKO RNA-seq samples at genes differentially expressed with fasting. N = 4 per group. (B) Gene ontology analysis for transcripts differentially expressed both with fasting and Bcl6 deletion (135 genes). (C) qPCR analysis of PPARα- and fasting-regulated transcripts in livers of fed and fasted Bcl6fl/fl and fed Bcl6LKO mice, N = 6–7 per group. A two-tailed Student’s t-test assuming equal variance was used to compare mean expression between fasted Bcl6fl/fl or fed Bcl6LKO and control Bcl6fl/fl animals. Data are represented as mean ±SEM. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Distribution of fasting genes annotated with BCL6 and/or PPARα binding peaks. Differential fasting genes here include all significantly different genes with fasting (adjusted p-value<0.05). (B) Histogram showing the frequency of shared BCL6-PPARα peaks, PPARα only peaks, and BCL6 only peaks per fasting-regulated gene. Inset shows box plots of peaks per gene, denoting interquartile range (colored box), median (horizontal black line), mean (black ‘+’), and min to max (whiskers). (C) Absolute value of log2 fold change (|LFC|) in expression of genes differentially expressed with fasting (adjusted p-value<0.05) with a nearby shared BCL6-PPARα peak; PPARα only peak; BCL6 only peak; non-overlapping BCL6 and PPARα peaks; or no BCL6 or PPARα peak (neither). Violin plots display median (white square), interquartile range (black rectangle), 95% confidence interval (black line), and frequency (colored density plot). For (B) and (C), the Kruskal-Wallis test and Dunn’s post-hoc testing were used to compare significant differences between groups. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001 compares to genes with a nearby shared BCL6-PPARα peak. Similarly, ‘#’ denotes comparison to PPARα only, ‘ and ’ denotes comparison to BCL6 only, and ‘^’ denotes comparison to neither. (D) Metascape gene enrichment and clustering analysis of genes differentially expressed with fasting that have an annotated shared BCL6-PPARα peak; PPARα only peak; or neither.
+
+### BCL6-PPARα regulatory regions cluster on dynamically transcribed fasting genes
 
 We next examined the extent to which BCL6 and PPARα cis-regulatory sites alone or in combination control fasting transcription. Hypergeometric testing revealed a 1.1-fold enrichment (p-value 3.8e-14) for BCL6-PPARα peaks relative to the entirety of PPARα genome-wide peaks along all genes differentially regulated (p-value<0.05) by fasting. Over 50% of these fasting genes contained co-occurring BCL6-PPARα-binding sites (Figure 4—figure supplement 2A), with a median of two co-occurring sites per gene (Figure 4—figure supplement 2B). By contrast, just 24% or 1.4% of fasting genes contained PPARα-only or BCL6-only sites, respectively, and these occurred with a median of just one regulatory region per gene. In addition, fasting-regulated genes with BCL6-PPARα regulatory elements exhibited significantly greater ranges of expression than those with PPARα peaks that lack this heterotypic module (Figure 4—figure supplement 2C), and their ontology was particularly enriched for functions in lipid regulation and oxidative metabolism (Figure 4—figure supplement 2D). In summary, over half of fasting-regulated genes are controlled by BCL6-PPARα-binding sites, and this gene subset is particularly dynamic in transcription.
 
-## Liver Bcl6 ablation restores fasting expression and enhancer activity in Ppara-/- mice
+### Liver Bcl6 ablation restores fasting expression and enhancer activity in Ppara-/- mice
 
 PPARα is critical for the fasting induction of genes mediating peroxisomal and mitochondrial fatty acid β-oxidation as well as microsomal ω-hydroxylation (Contreras et al., 2013; Gao et al., 2015; Hardwick et al., 2009; Hashimoto et al., 2000; Kersten et al., 1999; Leone et al., 1999; Montagner et al., 2016). To determine whether loss of the BCL6 repressor in liver compensates for transcriptional defects in Ppara-/- mice, we generated animals with combined whole body deletion of Ppara and liver-specific ablation of Bcl6 (Ppara-/-;Bcl6LKO mice). RNA-seq revealed that loss of Bcl6 rescued 209 of 795 dysregulated genes in fasted Ppara-/- mice compared to fasted controls (Figure 5A). Among genes normally upregulated with fasting, Bcl6 deletion restored expression of genes involved in monocarboxylic acid and lipoprotein metabolism; ketone body synthesis; AMPK and PPAR signaling; and peroxisomes (Figure 5B, top panel). By contrast, genes normally downregulated upon fasting and rescued in Ppara-/-;Bcl6LKO mice represented pathways mostly unrelated to lipid metabolism (Figure 5B, bottom panel). Restoration of Ppara-/- defective fasting transcription in Ppara-/-;Bcl6LKO mice was confirmed by qPCR at genes involved in β-oxidation (Acot2/3/4, Idh2), ω-hydroxylation (Aldh3a2, Cyp4a31), ketone body synthesis (Acss3, Fgf21, Hmgcl, Hmgcs2), and lipid metabolism (Abhd2, Cd36, Vldlr) (Figure 5—figure supplement 1). Thus, loss of Bcl6 restores expression at a subset of PPARα-directed genes controlling lipid metabolism.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig5-v1.jpg)
+
+**Figure 5.:** (A) Heatmap of RPKM values at fasting-regulated genes that are dysregulated in Ppara-/- mice. 209 genes have partially or completely restored expression upon fasting in Ppara-/-;Bcl6LKO mice. N = 4 per group. (B) Gene ontologies of upregulated (top) and downregulated (bottom) fasting genes restored in Ppara-/-;Bcl6LKO mice. (C) Heatmap of H3K27ac and PPARδ ChIP-seq in fasted control Bcl6fl/fl, Ppara-/-, and Ppara-/-;Bcl6LKO mice at BCL6-PPARα shared peaks that annotate to rescued Ppara-/- dysregulated genes in Ppara-/-;Bcl6LKO mice. N = 3 per group. (D) HDAC3 ChIP-seq tag density in Bcl6fl/fl and Bcl6LKO livers at BCL6-PPARα shared peaks near rescued fasting genes. (E) qPCR of Ppard and Pparg in fasted control, Ppara-/-, and Ppara-/-;Bcl6LKO mice. N = 5–6 per group. (F) PPARδ tag density at rescued upregulated (left) and downregulated (right) fasting genes in fasted Ppara-/-;Bcl6LKO and Ppara-/- livers. ChIP was performed in biological triplicate. (G) UCSC genome browser track of PPARδ ChIP-seq at Acot2. In (E), a one-way ANOVA and Holm-Sidak’s post-hoc testing was used to compare mean expression between groups. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** qPCR analysis of PPARα- and fasting-regulated transcripts in overnight fasted Bcl6fl/fl, Ppara-/-, and Ppara-/-;Bcl6LKO mouse livers, N = 5–6 per group. A one-way ANOVA and Holm-Sidak’s post-hoc testing was used to compare mean expression between groups. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) UCSC genome browser tracks showing (A) RNA-seq and H3K27ac ChIP-seq data in fasted control Bcl6fl/fl, Ppara-/-, and Ppara-/-;Bcl6LKO livers at Aldh3a2 and Acot4/3. (B) H3K27ac tags in Ppara-/-;Bcl6LKO and Ppara-/- at up- and down-regulated rescued (left panel) or non-rescued genes (right panel). (C) UCSC genome browser track of BCL6 binding along Ppard. (D) UCSC genome browser tracks showing PPARδ binding at rescued genes Hmgcs2 and Aldh3a2. (E) ChIP-qPCR using pre-immune IgG and PPARδ antibodies at shared BCL6-PPARα-binding sites near rescued genes in fasted control, Ppara-/-, and Ppara-/-;Bcl6LKO livers. Enriched regions are located at the indicated distance (in base pairs) away from the TSS of specified genes. ChIPs were performed in technical duplicates and biological triplicates. For (E) a two-tailed Student’s t-test assuming equal variance was used to compare mean PPARδ IP values between Ppara-/- or Ppara-/-; Bcl6LKO and control. Data are represented as mean ±SEM. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
 Opposing regulation between PPARα and BCL6 was also observed at the level of chromatin modification. We profiled histone H3K27ac in overnight fasted Bcl6fl/fl control, Ppara-/-, and Ppara-/-;Bcl6LKO mice using ChIP-seq (Figure 5C, left panel). Fasting-induced genes with impaired expression in Ppara-/- mice demonstrated low H3K27ac signal around BCL6-PPARα-binding sites in Ppara-/- compared to control mice. By contrast, in livers of Ppara-/-;Bcl6LKO animals, H3K27ac is reestablished or even enhanced at these sites (Figure 5C, top left panel; and Figure 5—figure supplement 2A). Reciprocal H3K27ac patterns were found at impaired fasting-repressed genes in Ppara-/- and Ppara-/-;Bcl6LKO animals (Figure 5C, bottom left panel). This pattern in H3K27ac at BCL6-PPARα sites occurred only at fasting impaired genes that were rescued in Ppara-/-;Bcl6LKO mice (Figure 5—figure supplement 2B). Thus, BCL6 de-repression restores aberrant liver cis-regulatory activity in Ppara-/- mice along fasting responsive genes.
 
-## Loss of liver Bcl6 relieves HDAC3-associated repression and enhances recruitment of PPARδ to shared BCL6-PPARα sites
+### Loss of liver Bcl6 relieves HDAC3-associated repression and enhances recruitment of PPARδ to shared BCL6-PPARα sites
 
 Next, we sought to further understand how ablation of hepatocyte Bcl6 could rescue fasting expression defects in Ppara-/- mice. The reestablishment of acetylation at fasting enhancers with BCL6-PPARα sites pointed to a shift in the balance of transcription factor complexes with histone deacetylase (HDAC) and acetyltransferase (HAT) activities at these co-regulated regions. Since hepatocyte BCL6 binds to SMRT/NCoR-HDAC3 at a subset of its binding sites (Figure 3C and D), we specifically examined HDAC3 occupancy at BCL6-PPARα peaks along rescued fasting genes. In the absence of Bcl6, HDAC3 was substantially diminished at these BCL6-PPARα sites (Figure 5D). Additionally, we tested whether BCL6 could influence other PPAR isotypes, which can be associated with CBP/p300 HAT complexes that acetylate H3K27 (Jin et al., 2011). Using qPCR, we found that Ppard levels were significantly increased in fasted Ppara-/-;Bcl6LKO compared to Ppara-/- mice, while Pparg levels were unchanged (Figure 5E). Moreover, BCL6 ChIP-sequencing revealed that BCL6 binds multiple intronic sites along the Ppard gene (Figure 5—figure supplement 2C), suggesting that it directly represses Ppard expression. Consistent with their enhanced Ppard levels, we observed increased PPARδ binding near rescued genes in Ppara-/-;Bcl6LKO compared to Ppara-/- mice (Figure 5C, right panel), particularly at upregulated fasting genes (Figure 5F), including Acot2, (Figure 5G), Hmgcs2, Aldh3a2 (Figure 5—figure supplement 2D), and others (Figure 5—figure supplement 2E). Together, these observations identified that loss of BCL6 directly relieves repression and potentiates PPARδ-mediated transactivation to restore fasting liver gene expression in Ppara-/-;Bcl6LKO mice.
 
-## Bcl6 ablation enhances hepatic lipid catabolism and reduces steatosis
+### Bcl6 ablation enhances hepatic lipid catabolism and reduces steatosis
 
 Next, we determined the functional impact of the BCL6 regulatory program on hepatic regulation and lipid processing in vivo. Ad libitum fed Bcl6LKO mice exhibited higher circulating ketone bodies compared to Bcl6fl/fl mice (Figure 6A). This difference persisted after a 24 hr fast. Additionally, mice lacking hepatic Bcl6 have higher rates of complete fatty acid oxidation as measured by oxidation of 14C-palmitate in liver homogenates (Figure 6B). In contrast, analysis of fatty acid uptake, triglyceride secretion, and hepatic lipogenesis based on in vivo deuterium incorporation revealed no other differences in lipid metabolism between Bcl6LKO mice and controls (Figure 6C–E). To test a broader role for BCL6 in lipid processing, we assessed hepatic triglyceride content after feeding mice high-fat diet (HFD) for 19 weeks. Bcl6LKO mice were profoundly protected from developing steatosis, as demonstrated by oil red O staining and more than a 50% reduction in hepatic triglyceride content compared to Bcl6fl/fl controls, despite similar increases in body weight (Figure 6F–H). Accompanying these reductions in hepatic lipid accumulation, HFD-exposed Bcl6LKO mice exhibited significantly lower levels of fasting serum glucose (Figure 6—figure supplement 1A) and a non-significant reduction in insulin (Figure 6—figure supplement 1B). Moreover, when challenged with a shorter term 5-week HFD, Bcl6LKO mice exhibited a trend towards enhanced insulin responsiveness, as measured by levels of phosphorylated AKT following acute administration of exogenous insulin (Figure 6—figure supplement 1C). These combined observations demonstrate that mice lacking hepatic Bcl6 have heightened capacity to catabolize lipids via β-oxidation and subsequent ketogenesis or TCA cycling, as well as improved glucose homeostasis when challenged with high-fat diet.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig6-v1.jpg)
+
+**Figure 6.:** (A) Serum β-hydroxybutyrate levels were measured in mice over the course of a 48 hr fast. N = 8–12 per group. (B) Rates of 14C-palmitate oxidation in Bcl6fl/fl and Bcl6LKO liver homogenates measured in CO2 and acid soluble fractions. N = 3 per group. (C) In vivo lipid uptake quantified by bodipy C16 assays in Bcl6fl/fl and Bcl6LKO mice. N = 7 per group. (D) Lipid secretion measured by serum triglyceride sampling over time after injecting Bcl6fl/fl and Bcl6LKO mice with Poloxomer. N = 11–13 per group. (E) In vivo palmitate and stearate synthesis determined by 2H incorporation in Bcl6fl/fl and Bcl6LKO livers. N = 8–10 per group. (F) Oil red O staining in livers, (G) biochemical quantification of liver triglycerides, and (H) % change in body weight in Bcl6fl/fl and Bcl6LKO mice following 19 weeks on 45% high fat diet. N = 7–11 per group. (I) Oil red O staining in livers and (J) biochemical quantification of liver triglycerides from Ppara-/- and Ppara-/-;Bcl6LKO mice following a 48 hr fast. N = 16–18 per group. (K) Rates of 14C-palmitate oxidation in Ppara-/- and Ppara-/-;Bcl6LKO liver homogenates measured in CO2 and acid soluble fractions. N = 4–5 per group. (L) Serum β-hydroxybutyrate levels were measured in mice over the course of a 48 hr fast. N = 8–17 per group. A two-tailed Student’s t-test assuming equal variance was used to compare means between two groups. Data are represented as mean ±SEM. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43922/elife-43922-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Overnight fasted serum (A) glucose and (B) insulin in Bcl6fl/fl and Bcl6LKO mice after 17 weeks of high-fat diet. N = 6–9 per group. (C) Western blots showing phosphorylated AKT (pAKT) and total AKT (panAKT) protein levels following injection of insulin in Bcl6fl/fl and Bcl6LKO livers. MemCode membrane staining is used as the loading control. Densitometric analysis shows ratio of pAKT over panAKT (right). Data are represented as mean ±SEM. ∗p<0.05, ∗∗p<0.01, ∗∗∗p<0.001.
 
 Ppara-/- mice exhibit fasting hypoketonemia and impaired fatty acid oxidation leading to steatosis (Gao et al., 2015; Hashimoto et al., 2000; Kersten et al., 1999; Leone et al., 1999; Montagner et al., 2016). After 48 hr of fasting, Ppara-/- mice developed centrilobular macrosteatosis (Figure 6I), as previously reported (Hashimoto et al., 2000). Remarkably, Ppara-/-;Bcl6LKO animals were strongly protected from hepatic triglyceride accumulation based upon histological analysis with oil red O staining and demonstrated 23% reduced triglyceride accumulation compared to Ppara-/- mice (Figure 6I and J). Compared to fasted Ppara-/- mice, Ppara-/-;Bcl6LKO mice also had higher rates of 14C-palmitate oxidation in liver homogenates, exhibited in both completely oxidized 14CO2 and incompletely oxidized 14C-acid soluble intermediates (Figure 6K). In line with their reduced lipid accrual, Ppara-/-;Bcl6LKO mice also revealed higher ketone body levels (Figure 6L), suggesting that ablation of Bcl6 can de-repress ketone body synthesis even in the absence of Ppara. Overall, these results established that loss of liver Bcl6 rescues metabolic defects of Ppara deficiency.
 
@@ -93,15 +157,347 @@ The BCL6-PPARα regulatory module is remarkable for its widespread occurrence al
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Bcl6fl/fl</td>
+      <td>PMID 30566857</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Albumin-cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #003574</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ppara-/-</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #008154</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ppardfl/fl</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #005897</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BCL6 (guinea pig polyclonal)</td>
+      <td>PMID 30566857</td>
+      <td></td>
+      <td>custom polyclonal 7.5 μg per IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PPARδ (guinea pig polyclonal)</td>
+      <td>PMID 28467934</td>
+      <td></td>
+      <td>custom polyclonal 7.5 μg per IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMRT (guinea pig polyclonal)</td>
+      <td>PMID 22465074</td>
+      <td></td>
+      <td>custom polyclonal 7.5 μg per IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NCoR (guinea pig polyclonal)</td>
+      <td>PMID 22465074</td>
+      <td></td>
+      <td>custom polyclonal 7.5 μg per IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HDAC3 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc-11417x</td>
+      <td>5 μg per IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K27ac (rabbit polyclonal)</td>
+      <td>Active Motif</td>
+      <td>Cat. #: 39133</td>
+      <td>5 μg per IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pAKT (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 4060 s</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-panAKT (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 4691 s</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BCL6 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc7388</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-Actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: A1978</td>
+      <td>1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PPARα (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc-9000x</td>
+      <td>7.5 μg per IP; WB: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Mouse IgG</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat. #: 115-035-174</td>
+      <td>(1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase IgG Fraction Monoclonal Mouse Anti-Rabbit IgG</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat. #: 211-032-171</td>
+      <td>(1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabit Anti-guinea pig IgG H and L</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab6698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSG Crosslinker</td>
+      <td>ProteoChem</td>
+      <td>Cat. #: c1104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde, 16%, methanol-free, Ultra Pure</td>
+      <td>Polysciences, Inc</td>
+      <td>Cat. #: 18814–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAlater Stabilization Solution</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: AM7020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol Reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poloxamer 407</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 16758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete Ultra Tablets, EDTA-free</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 5892953001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deuterium oxide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 151882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Palmitate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: P9767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Palmitic Acid, [1–14C]</td>
+      <td>MP Biomedicals</td>
+      <td>Cat. #: 12195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BODIPY 500/510 C1, C12</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: D3823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Humulin R</td>
+      <td>Lilly</td>
+      <td>NDC 0002-8215-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads M-280 Sheep Anti-Rabbit IgG</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 11204D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads M-280 Tosylactivated</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 14204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein A Agarose/Salmon Sperm DNA</td>
+      <td>Millipore</td>
+      <td>Cat. #: 16–157</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>BioRad</td>
+      <td>Cat. #: 1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBR Green</td>
+      <td>BioRad</td>
+      <td>Cat. #: 1725124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Infinity Triglyceride Assay Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: TR22421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>β-Hydroxybutyrate (Ketone Body) Colorimetric Assay Kit</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. #: 700190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ultra Sensitive Mouse Insulin ELISA Kit</td>
+      <td>Crystal Chem</td>
+      <td>Cat. #: 90080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucose Colorimetric /Fluorometric Assay Kit</td>
+      <td>BioVision</td>
+      <td>Cat. #: K606</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Microvette CB 300 K2E</td>
+      <td>Sarstedt</td>
+      <td>Cat. #: 16.444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MemCode Reversible Protein Stain Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: 24585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Whatman qualitative filter paper</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: WHA1003055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Hyper Prep Library Prep Kit</td>
+      <td>Kapa Biosystems</td>
+      <td>Cat. #: KK8504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Stranded RNA-seq Kit with RiboErase</td>
+      <td>Kapa Biosystems</td>
+      <td>Cat. #: KK8483</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NextSeq 500/550 High Output Kit v2.5 (75 cycles)</td>
+      <td>Illumina</td>
+      <td>Cat. #: 20024906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, research diet (45% kcal from fat)</td>
+      <td>HFD</td>
+      <td>Research Diets, Inc</td>
+      <td>Stock #D12451</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Bcl6fl/fl mice were generated through the UC Davis Mouse Biology Program by engineering loxP sites between exons 5 and 6 of the mouse Bcl6 locus. Cre-mediated deletion creates a frameshift mutation, resulting in a protein of 138 amino acids (compared to 708 amino acids in wild-type BCL6) lacking exons 5–10 and the zinc finger DNA binding domain. Ppara-/- (Stock #008154) and Ppardfl/fl (Stock #005897) mice were obtained from Jackson Laboratories. Bcl6fl/fl and Ppardfl/fl mice were crossed with Albumin-Cre animals (Jackson Laboratories, Stock #003574) to generate Bcl6fl/fl; Albumin-Cre (Bcl6LKO) and Ppardfl/fl; Albumin-Cre (PpardLKO) mice, respectively. Mice were maintained on a 14:10 light: dark (LD) cycle with free access to water. Unless otherwise specified, ‘fed’ refers to ad libitum feeding with standard chow and ‘fasted’ refers to a 16–18 hr overnight fast. High-fat diet containing 45% of kcal from fat was obtained from Research Diets, Inc (Stock #D12451). All animal care and use procedures were conducted in accordance with regulations of the Institutional Animal Care and Use Committee at Northwestern University.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Chromatin immunoprecipitation (ChIP) was performed as previously described (Barish et al., 2010). ChIP samples were prepared in biological triplicate (three animals per condition), unless otherwise specified. Mouse livers were harvested, rinsed in PBS, and crosslinked at room temperature for 30 min in 2 mM disuccinimidyl glutarate and then for 10 min in 1% formaldehyde. After quenching with 125 mM glycine, crosslinked material was rinsed twice with cold PBS and frozen at −80°C until further processing. Crosslinked material was lysed in buffer containing 0.75M NaCl, 1% Triton X, 0.5 mM Tris, 0.05 mM EDTA, and 0.5% NP-40. Isolated nuclei were then sheared in buffer containing 1% SDS, 10 mM EDTA, and 50 mM Tris for six cycles (30 s on, 30 s off) using a Diagenode Bioruptor to shear chromatin into 200–1000 bp fragments. Protein-DNA complexes were incubated overnight with antibody against BCL6 (custom polyclonal to mouse BCL6), PPARα (Santa Cruz), PPARδ (custom polyclonal to mouse PPARδ) (Fan et al., 2017), SMRT (custom polyclonal to mouse SMRT) (Barish et al., 2012), NCoR (custom polyclonal to mouse NCoR) (Barish et al., 2012), HDAC3 (Santa Cruz) or H3K27ac (Active Motif). Antibody complexes were precipitated with IgG paramagnetic beads (ThermoFisher) for ChIP-seq or Protein A agarose beads (Millipore) for ChIP followed by qPCR. DNA was decrosslinked and purified using MinElute PCR purification columns (Qiagen). ChIP DNA was either assessed via qPCR and expressed as percent recovery of input chromatin or further processed into libraries for ChIP-seq. See Supplementary file 1 for ChIP qPCR primers.
 
-## ChIP sequencing
+### ChIP sequencing
 
 Sequencing libraries were generated from ChIP DNA using KAPA DNA Library Preparation kits (Kapa Biosystems) according to manufacturer’s instructions. Libraries were assessed by Bioanalyzer (Agilent) and qPCR-based quantification (Kapa Biosystems) and sequenced on an Illumina NextSeq 500 instrument using 75 bp single-end reads. Raw sequence reads were aligned to a reference genome (mm10) using Bowtie version 1.1.1 (Langmead et al., 2009) using ‘-m 1’ and ‘--best’ parameters to ensure reporting of uniquely mapped reads. Tag directories were generated using ‘makeTagDirectory’ using the -tbp 1 option to limit the number of reads starting at the same position to 1. ChIP-seq peaks were identified and analyzed using HOMER (Heinz et al., 2010). ChIP-seq peaks were identified in HOMER using the ‘getDifferentialPeaksReplicates.pl’ command, specifying ‘-style factor’ to generate a high confidence set of peaks across triplicate samples. This command generates a peak list in three steps: first, it pools target tag directories to perform an initial peak identification against input; second, it quantifies raw reads of each target and input tag directory at the initial putative peaks; third, it calls DESeq2 to calculate enrichment values for each peak using the individual raw counts and returns only those peaks that pass two fold enrichment and FDR < 0.05. Peaks were annotated to nearest genes using ‘annotatePeaks.pl.’
 
@@ -113,7 +509,7 @@ To calculate distance between BCL6 and PPARα peaks, the distance between each B
 
 The four-way Venn was generated using Intervene (Khan and Mathelier, 2017).
 
-## RNA sequencing and analysis
+### RNA sequencing and analysis
 
 Liver samples (<30 mg) were stored in 1 mL of RNAlater Stablization Solution (Ambion) at −80° immediately following harvest. To isolate total RNA, tissues were homogenized in 1 mL buffer RLT (Qiagen) using the Mo Bio Powerlyzer. RNA was isolated and purified using RNeasy columns according to the manufacturer’s protocol (Qiagen). RNA quality was assessed using a Bioanalyzer (Agilent) to ensure a RIN score greater than 7.0.
 
@@ -135,42 +531,42 @@ All UCSC genome browser tracks represent combined tag directories across replica
 
 Genes differentially expressed with fasting were classified based on their association with regulatory regions. First, shared BCL6-PPARα ChIP-seq peaks were annotated to the single nearest gene using HOMER. Using these annotations, genes differentially expressed with fasting (adjusted p-value<0.05) were then grouped based on presence or absence of a nearby shared BCL6-PPARα annotated peak. Of those differential fasting genes without an annotated shared BCL6-PPARα peak, genes were further grouped based on presence of annotated BCL6 unique and PPARα unique ChIP-seq peaks. Some genes had both BCL6 unique and PPARα unique peaks, but these were non-overlapping. Other genes had neither BCL6- nor PPARα-annotated peaks nearby. The frequency of BCL6-PPARα, PPARα only, or BCL6 only peaks per fasting gene was also calculated.
 
-## qPCR analysis
+### qPCR analysis
 
 Frozen liver tissues were homogenized in Trizol (Ambion) using a Mo Bio Powerlyzer. Chloroform was added at 200 μL to 1 mL homogenates in Trizol. The clear aqueous phase was extracted after centrifugation. RNA was then isolated with a RNeasy kit (Qiagen), according to manufacturer’s protocol. cDNA was synthesized with 600–1000 ng of RNA using the iScript cDNA Synthesis Kit (BioRad). Gene expression was then assessed via qPCR using iTaq Universal SYBR Green Supermix (BioRad). Gene expression was normalized to the housekeeping gene, 36b4. See Supplementary file 2 for primer sequences.
 
-## Histology
+### Histology
 
 For the hematoxylin and eosin (H & E) staining, liver tissues were fixed in 10% formalin overnight and then moved to 70% EtOH. Fixed tissues were paraffin embedded, cut, and stained by the Northwestern University Research Histology and Phenotyping Laboratory which is supported by NCI P30-CA060553 awarded to the Robert H. Lurie Comprehensive Cancer Center. For oil red O staining, liver samples frozen in OCT were cut to 5–7 μm with a Leica cryostat, mounted onto slides, stained with oil red O, and counterstained with hematoxylin.
 
-## Lipid and metabolite measurements
+### Lipid and metabolite measurements
 
 We measured serum triglycerides (Infinity Thermo Fisher) and ketone bodies (Cayman Chemical) using commercial kits. To measure tissue triglycerides, we extracted lipids using a modified version of the Folch Method (Folch et al., 1957). In brief, tissues were homogenized in 1 mL of methanol using the Mo Bio Powerlyzer. Homogenates were transferred to glass tubes and incubated several hours in 1:2 methanol:chloroform after briefly vortexing. 0.9% NaCl was added to homogenates overnight to separate the chloroform lipid-containing layer from the methanol layer. The next day, the methanol and any floating tissue was aspirated. The remaining chloroform layer was dried under nitrogen gas. Lipid was resuspended in 2-propanol and quantified using the Infinity Thermo Fisher triglyceride kit. Quantified lipid was normalized to tissue weight. Serum insulin was measured via ELISA (Crystal Chem) and serum glucose was measured using a colorimetric assay (BioVision).
 
-## Hepatic triglyceride secretion
+### Hepatic triglyceride secretion
 
 We fasted mice for 4 hr and then injected mice intraperitoneally with a 7.5% poloxamer solution in PBS at a dose of 1 mg/g body weight. Tail-vein blood samples were collected over time using capillary Microvettes (Sarstedt).
 
-## De novo lipogenesis
+### De novo lipogenesis
 
 The rate of hepatic lipogenesis was determined via incorporation of 2H into newly made TG-bound fatty acids, as described elsewhere (Bederman et al., 2006). Briefly, mice were injected i.p. with 0.7 mL of 2H-labeled saline (9 g of NaCl in 1 L of 99.9% 2H2O). For the next 24 hr, mice were maintained on 6% 2H-labeled drinking water and then harvested. Terminal serum and liver tissue samples were collected and flash frozen. Sample processing and GC/MS analysis was performed as described previously (Bederman et al., 2012).
 
-## Fatty acid oxidation
+### Fatty acid oxidation
 
 We determined rates of fatty acid oxidation in liver homogenates by measuring oxidation of 14C palmitate (Hirschey and Verdin, 2010). Briefly, tissue was dounce homogenized in sucrose/Tris/EDTA buffer and incubated for 30 or 60 min in a reaction mixture containing 0.4 uCi 14C palmitate. After reacting with the labeled palmitate, mixtures were transferred to tubes containing 1M perchloric acid with Whatman paper discs soaked in 1M NaOH in the lids. Scintillation counting was used to measure 14C in the acid-soluble fraction and in disc-trapped CO2, representing partially and fully oxidized radiolabeled palmitate, respectively. Fatty acid oxidation rates were then expressed as amount of substrate oxidized per tissue weight per minute.
 
-## In vivo lipid uptake
+### In vivo lipid uptake
 
 Mice were injected with BODIPY-C16 (Life Technologies) to assess lipid uptake, as described elsewhere (Wilson et al., 2016). BODIPY-C16 was resuspended in dimethylsulfoxide at 10 mM. Then, a 0.1 μg/μL working stock was made in 0.25% fatty-acid-free BSA (Sigma-Aldrich) solution in PBS. Mice were fasted for 4 hr and then injected intraperitoneally with BODIPY-C16 at 0.5 μg/g of body weight. After 5 hr, tissues were collected and flash frozen. 80–120 mg of liver tissues were dounce homogenized in RIPA buffer. 25 μL volumes of cleared tissue homogenates were diluted 1:4 in PBS and analyzed using a fluorescent plate reader (Ex 485 nm, Em 515 nm). Saline-injected mouse liver homogenates were used to control for background fluorescence. Tissue fluorescence was normalized to tissue weight.
 
-## Insulin signaling assay
+### Insulin signaling assay
 
 Mice were placed on 5 weeks of high-fat diet. After a 5 hr fast, mice were injected intraperitoneally with 1 U/kg recombinant insulin. Ten minutes later, mice were sacrificed and their tissues were harvested.
 
-## Western blotting
+### Western blotting
 
 Frozen liver tissues were dounce homogenized in RIPA buffer. After incubating on ice for 10 min, homogenates were centrifuged at full speed for 15 min at 4°; supernatant was then collected and stored at −80°. Protein was quantified with a BCA assay (Thermo Scientific) and 2 μg/μL lysates were boiled for 5 min in 5x loading buffer. Denatured protein lysates were loaded in precast polyacrylamide gels (BioRad) and transferred to PVDF membranes (BioRad). Membranes were blocked with 5% milk in PBST and probed with primary antibodies for BCL6 (Santa Cruz, D-8) at 1:200, PPARα (Santa Cruz, H-98) 1:500, pAKT (Cell Signaling, 4060) 1:1000, panAKT (Cell Signaling, 4691) 1:1000 or β-actin (Sigma, A1978) 1:1000 overnight at 4°. Secondary antibodies were added for 1 hr at room temperature (Jackson ImmunoResearch). Protein was then visualized using ECL (ThermoScientific). MemCode Reversible Stain was used to visualize total protein (Thermo Fisher Scientific). Protein densitometry was quantified using ImageJ 1.51 s (Schneider et al., 2012).
 
-## Accession numbers
+### Accession numbers
 
 All RNA-seq and ChIP-seq data are deposited in GEO SuperSeries accession #GSE118789.

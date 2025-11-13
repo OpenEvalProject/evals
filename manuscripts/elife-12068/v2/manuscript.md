@@ -43,7 +43,7 @@
 
 ## Abstract
 
-10.7554/eLife.12068.001 The Drosophila genome contains >13000 protein-coding genes, the majority of which remain poorly investigated. Important reasons include the lack of antibodies or reporter constructs to visualise these proteins. Here, we present a genome-wide fosmid library of 10000 GFP-tagged clones, comprising tagged genes and most of their regulatory information. For 880 tagged proteins, we created transgenic lines, and for a total of 207 lines, we assessed protein expression and localisation in ovaries, embryos, pupae or adults by stainings and live imaging approaches. Importantly, we visualised many proteins at endogenous expression levels and found a large fraction of them localising to subcellular compartments. By applying genetic complementation tests, we estimate that about two-thirds of the tagged proteins are functional. Moreover, these tagged proteins enable interaction proteomics from developing pupae and adult flies. Taken together, this resource will boost systematic analysis of protein expression and localisation in various cellular and developmental contexts. DOI: http://dx.doi.org/10.7554/eLife.12068.001
+The Drosophila genome contains >13000 protein-coding genes, the majority of which remain poorly investigated. Important reasons include the lack of antibodies or reporter constructs to visualise these proteins. Here, we present a genome-wide fosmid library of 10000 GFP-tagged clones, comprising tagged genes and most of their regulatory information. For 880 tagged proteins, we created transgenic lines, and for a total of 207 lines, we assessed protein expression and localisation in ovaries, embryos, pupae or adults by stainings and live imaging approaches. Importantly, we visualised many proteins at endogenous expression levels and found a large fraction of them localising to subcellular compartments. By applying genetic complementation tests, we estimate that about two-thirds of the tagged proteins are functional. Moreover, these tagged proteins enable interaction proteomics from developing pupae and adult flies. Taken together, this resource will boost systematic analysis of protein expression and localisation in various cellular and developmental contexts.
 
 ## Introduction
 
@@ -57,21 +57,101 @@ Here, we introduce a comprehensive genome-wide library of almost 10000 C-termina
 
 ## Results
 
-Our goal was to generate a comprehensive resource that allows the investigation of protein localisation and physical interactions for any fly protein of interest through a robust, generic tagging pipeline in bacteria, which is followed by a large-scale transgenesis approach (
+Our goal was to generate a comprehensive resource that allows the investigation of protein localisation and physical interactions for any fly protein of interest through a robust, generic tagging pipeline in bacteria, which is followed by a large-scale transgenesis approach (Figure 1A). We based our strategy on a Drosophila melanogaster FlyFos library of genomic fosmid clones, with an average size of 36 kb, which covers most Drosophila genes (Ejsmont et al., 2009). Our two-step tagging strategy first inserts a generic ‘pre-tag’ at the C-terminus of the protein, which is then replaced by any tag of choice at the second tagging step, for example with a superfolder-GFP (sGFP) tag to generate the sGFP TransgeneOme clone library. These tagged clones are injected into fly embryos to generate transgenic fly-TransgeneOme (fTRG) lines, which can be used for multiple in vivo applications. (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig1-v2.jpg)
 
-**Figure 1.:** (A) Overview of the tagging strategy. Liquid culture recombineering is used to insert a ‘pre-tagging’ cassette into FlyFos genomic clones in bacteria. This cassette can then be replaced by a simple, universal, recombineering reaction with any tag of choice, here, a superfolder GFP tag (sGFP) to generate the sGFP TransgeneOme clone library. These clones are transformed into flies generating transgenic FlyFos libraries that can be used for multiple in vivo applications. (B) TransgeneOme resource engineering. The steps of the recombineering pipeline are shown on the left with the success rate of each step indicated on the right (red colour denotes bacterial clones that did not grow). The E. coli cells are schematically represented with a dotted circle. With the first two steps the ‘pre-tagging’ cassette is inserted, which is replaced in the next three steps with the sGFP cassette to generate the sGFP TransgeneOme library. See text and methods section for details; abbreviations: GoI – gene of interest; cat – chloramphenicol resistance gene, F-ori – the fosmid vector replication control sequences; pRedFlp – recombineering helper plasmid with the pSC101 temperature sensitive origin of replication, which can be maintained at 30°C and is removed at the final step by temperature shift to 37°C; it carries the Red gbaA operon (Red), which drives homologous recombination in vivo under the control of the L-Rhamnose (Rham) inducible promoter (rhaP) and the Flp recombinase (Flp) under the control of tetracycline (Tet) inducible promoter (tetP); pretag – a pre-tagging cassette consisting of the Nourseothricin resistance gene (nat), flanked by the 2xTY and 3xFlag tag, which provide regions of homology to the tagging cassette (tag), consisting of the TY1 tag, superfolder GFP (sGFP), the V5 tag and the target peptide for the birA biotin ligase (blrp), the FRT-flanked selection/counter-selection operon rpsl-neo (confers streptomycin sensitivity and kanamycin resistance) and the 3xFlag tag. (C) Next-generation-sequencing (NGS)-based validation of the sGFP TransgeneOme library. Schematic of the bar coding (BC) strategy of row and column pools is shown to the left and sequencing results to the right. In this example, a clone with the coordinates A1 will receive the row A barcode (blue) and the column 1 barcode (yellow), which allow the mapping of the NGS sequence reads to the respective well. By using the mate-paired strategy the reads mapping to the tag can be assigned to a specific transgene, i.e. only reads where one mate of the pair maps to the tag and the other to the genome are used. Sequenced tags within fosmids without point mutations are shown in solid green, clones without mutation in tagging cassette but incomplete coverage in light green and clones with mutation(s) or un-flipped cassette are shown in red. (D) Statistics of the mutation distributions with deletions indicated by green, substitutions by red and insertions by blue interrupted lines. Note that most mutations reside within the recombineering primer sequences (denoted as black arrows).DOI: http://dx.doi.org/10.7554/eLife.12068.003
+**Figure 1.:** (A) Overview of the tagging strategy. Liquid culture recombineering is used to insert a ‘pre-tagging’ cassette into FlyFos genomic clones in bacteria. This cassette can then be replaced by a simple, universal, recombineering reaction with any tag of choice, here, a superfolder GFP tag (sGFP) to generate the sGFP TransgeneOme clone library. These clones are transformed into flies generating transgenic FlyFos libraries that can be used for multiple in vivo applications. (B) TransgeneOme resource engineering. The steps of the recombineering pipeline are shown on the left with the success rate of each step indicated on the right (red colour denotes bacterial clones that did not grow). The E. coli cells are schematically represented with a dotted circle. With the first two steps the ‘pre-tagging’ cassette is inserted, which is replaced in the next three steps with the sGFP cassette to generate the sGFP TransgeneOme library. See text and methods section for details; abbreviations: GoI – gene of interest; cat – chloramphenicol resistance gene, F-ori – the fosmid vector replication control sequences; pRedFlp – recombineering helper plasmid with the pSC101 temperature sensitive origin of replication, which can be maintained at 30°C and is removed at the final step by temperature shift to 37°C; it carries the Red gbaA operon (Red), which drives homologous recombination in vivo under the control of the L-Rhamnose (Rham) inducible promoter (rhaP) and the Flp recombinase (Flp) under the control of tetracycline (Tet) inducible promoter (tetP); pretag – a pre-tagging cassette consisting of the Nourseothricin resistance gene (nat), flanked by the 2xTY and 3xFlag tag, which provide regions of homology to the tagging cassette (tag), consisting of the TY1 tag, superfolder GFP (sGFP), the V5 tag and the target peptide for the birA biotin ligase (blrp), the FRT-flanked selection/counter-selection operon rpsl-neo (confers streptomycin sensitivity and kanamycin resistance) and the 3xFlag tag. (C) Next-generation-sequencing (NGS)-based validation of the sGFP TransgeneOme library. Schematic of the bar coding (BC) strategy of row and column pools is shown to the left and sequencing results to the right. In this example, a clone with the coordinates A1 will receive the row A barcode (blue) and the column 1 barcode (yellow), which allow the mapping of the NGS sequence reads to the respective well. By using the mate-paired strategy the reads mapping to the tag can be assigned to a specific transgene, i.e. only reads where one mate of the pair maps to the tag and the other to the genome are used. Sequenced tags within fosmids without point mutations are shown in solid green, clones without mutation in tagging cassette but incomplete coverage in light green and clones with mutation(s) or un-flipped cassette are shown in red. (D) Statistics of the mutation distributions with deletions indicated by green, substitutions by red and insertions by blue interrupted lines. Note that most mutations reside within the recombineering primer sequences (denoted as black arrows).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Tags tested and used in this study. Shown is the form of the tagging cassette after insertion into the target site and flip-out of the counter selection sequences (rpsl-neo) leaving behind the FRT sequence coloured in red. While both the TY1-sGFP-FLAG and TY1-sGFP-V5-BLRP-FLAG tags can be used for localisation of the tagged protein of interest in vivo the latter offers additional affinity purification options and was the tag used for the genome-wide resource. The TY1-T2A-sGFPnls-FLAG results in cleavage at the T2A peptide and nuclear localization of the released sGFP-NLS fragment. Abbreviations: 2xTY1, 3xFlag, V5, Strep – epitope tags; BLRP – target peptide for the birA biotin ligase, allowing for tissue-specific labelling and purification (through tissue specific expression of birA); Pre (Prescission protease) and TEV (Tobacco Etch Virus endopeptidase) cleavage sites; T2A - 'self-cleaving' peptide; NLS – nuclear localization signal. The 'pre-tagging' cassette can be easily exchanged to any of the tagging cassettes through homologous recombination as it starts and ends with the same epitope tag encoding sequences.DOI: http://dx.doi.org/10.7554/eLife.12068.004
+**Figure 1—figure supplement 1.:** Tags tested and used in this study. Shown is the form of the tagging cassette after insertion into the target site and flip-out of the counter selection sequences (rpsl-neo) leaving behind the FRT sequence coloured in red. While both the TY1-sGFP-FLAG and TY1-sGFP-V5-BLRP-FLAG tags can be used for localisation of the tagged protein of interest in vivo the latter offers additional affinity purification options and was the tag used for the genome-wide resource. The TY1-T2A-sGFPnls-FLAG results in cleavage at the T2A peptide and nuclear localization of the released sGFP-NLS fragment. Abbreviations: 2xTY1, 3xFlag, V5, Strep – epitope tags; BLRP – target peptide for the birA biotin ligase, allowing for tissue-specific labelling and purification (through tissue specific expression of birA); Pre (Prescission protease) and TEV (Tobacco Etch Virus endopeptidase) cleavage sites; T2A - 'self-cleaving' peptide; NLS – nuclear localization signal. The 'pre-tagging' cassette can be easily exchanged to any of the tagging cassettes through homologous recombination as it starts and ends with the same epitope tag encoding sequences.
 
-## sGFP TransgeneOme – a genome-wide tagged FlyFos clone library
+### sGFP TransgeneOme – a genome-wide tagged FlyFos clone library
 
 We aimed to tag all protein coding genes at the C-terminus of the protein, because a large number of regulatory elements reside within or overlap with the start of genes, including alternative promoters, enhancer elements, nucleosome positioning sequences, etc. These are more likely to be affected by a tag insertion directly after the start codon. Signal sequences would also be compromised by an inserted tag after the start codon. This is in agreement with a recently published dataset favouring C-terminal compared to N-terminal tagging (Stadler et al., 2013). Additionally, the C-termini in the gene models are generally better supported by experimental data than the N-termini due to an historical bias for 3'-end sequencing of ESTs. Thus, C-terminal tagging is more likely to result in a functional tagged protein than N-terminal tagging, although we are aware of the fact that some proteins will be likely inactivated by addition of a tag to the C-terminus. Moreover, only about 1400 protein coding genes contain alternative C-termini, resulting in all protein isoforms labelled by C-terminal tagging for almost 90% of all protein-coding genes (analysis performed using custom Perl script available here: https://github.com/tomancak/alternative_CDS_ends).
 
-In a series of pilot experiments, we tested the functionality of several tagging cassettes with specific properties on a number of proteins (Figure 1—figure supplement 1, Table 1). For the genome-wide resource, we applied a two-step tagging strategy, whereby we first inserted a non-functional ‘pre-tagging’ cassette consisting of a simple bacterial selection marker, which is flanked with linker sequences present in all of our tagging cassettes. This strategy enables a very efficient replacement of the ‘pre-tag’ by any tag of interest using homologous recombination mediated cassette exchange in bacteria (Hofemeister et al., 2011). As fluorescent proteins and affinity tags with improved properties are continuously being developed, specific clones or the entire resource can be easily re-fitted to any new tagging cassette. For the genome-scale resource, we selected a tagging cassette suitable for protein localisation and complex purification studies, consisting of the 2xTY1 tag as a flexible linker, the superfolder GFP coding sequence (Pédelacq et al., 2005), the V5 tag, followed by specific protease cleavage sites (for the PreScission- and TEV-proteases), the biotin ligase recognition peptide (BLRP) tag allowing for specific in vivo or in vitro biotinylation (Deal and Henikoff, 2010; Vernes, 2014), and the 3xFLAG tag (Figure 1—figure supplement 1).10.7554/eLife.12068.005Table 1.TransgeneOme constructs and fTRG lines - overview of TransgeneOme constructs generated and verified by sequencing for the different pilot sets and the genome-wide set, including the respective numbers of the transgenic fTRG lines generated.DOI: http://dx.doi.org/10.7554/eLife.12068.005Tagged constructs and transgenic linesconstructsverified constructstransgenic lines‘pre-tagging’ - TransgeneOme11257----TY1-sGFP-V5-BLRP-FLAG799- TransgeneOme109959580- pilot set13281328TY1-T2A-sGFPnls-FLAG- pilot set27327330TY1-sGFP-FLAG- pilot set64448351unique constructs2316910711880unique genes112579993826
+In a series of pilot experiments, we tested the functionality of several tagging cassettes with specific properties on a number of proteins (Figure 1—figure supplement 1, Table 1). For the genome-wide resource, we applied a two-step tagging strategy, whereby we first inserted a non-functional ‘pre-tagging’ cassette consisting of a simple bacterial selection marker, which is flanked with linker sequences present in all of our tagging cassettes. This strategy enables a very efficient replacement of the ‘pre-tag’ by any tag of interest using homologous recombination mediated cassette exchange in bacteria (Hofemeister et al., 2011). As fluorescent proteins and affinity tags with improved properties are continuously being developed, specific clones or the entire resource can be easily re-fitted to any new tagging cassette. For the genome-scale resource, we selected a tagging cassette suitable for protein localisation and complex purification studies, consisting of the 2xTY1 tag as a flexible linker, the superfolder GFP coding sequence (Pédelacq et al., 2005), the V5 tag, followed by specific protease cleavage sites (for the PreScission- and TEV-proteases), the biotin ligase recognition peptide (BLRP) tag allowing for specific in vivo or in vitro biotinylation (Deal and Henikoff, 2010; Vernes, 2014), and the 3xFLAG tag (Figure 1—figure supplement 1).
+
+**Table 1.**
+ TransgeneOme constructs and fTRG lines - overview of TransgeneOme constructs generated and verified by sequencing for the different pilot sets and the genome-wide set, including the respective numbers of the transgenic fTRG lines generated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Tagged constructs and transgenic lines</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>constructs</td>
+      <td>verified constructs</td>
+      <td>transgenic lines</td>
+    </tr>
+    <tr>
+      <td>‘pre-tagging’ - TransgeneOme</td>
+      <td>11257</td>
+      <td>--</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>TY1-sGFP-V5-BLRP-FLAG</td>
+      <td></td>
+      <td></td>
+      <td>799</td>
+    </tr>
+    <tr>
+      <td>- TransgeneOme</td>
+      <td>10995</td>
+      <td>9580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- pilot set</td>
+      <td>1328</td>
+      <td>1328</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TY1-T2A-sGFPnls-FLAG</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- pilot set</td>
+      <td>273</td>
+      <td>273</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>TY1-sGFP-FLAG</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>- pilot set</td>
+      <td>644</td>
+      <td>483</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>unique constructs</td>
+      <td>23169</td>
+      <td>10711</td>
+      <td>880</td>
+    </tr>
+    <tr>
+      <td>unique genes</td>
+      <td>11257</td>
+      <td>9993</td>
+      <td>826</td>
+    </tr>
+  </tbody>
+</table>
 
 Of the 13937 protein-coding genes in the dmel5.43 genome assembly, 11787 genes (84.6% ) were covered by a suitable fosmid from the original FlyFos library (Ejsmont et al., 2009), extending at least 2.5 kb upstream and 2.5 kb downstream of the annotated gene model. For picking clones, designing oligonucleotides for recombineering, and for tracking all steps of the transgene engineering process, as well as for providing access to all construct sequences and validation data we used the previously developed TransgeneOme database (Sarov et al., 2012), which is available online (https://transgeneome.mpi-cbg.de).
 
@@ -81,31 +161,512 @@ All five steps of the engineering pipeline were highly efficient (between 95.8 a
 
 Taken together, the sGFP TransgeneOme and our pilot tagging experiments resulted in 10711 validated tagged clones, representing 9993 different Drosophila genes. (Table 1, Supplementary file 1). The clones are available from Source BioScience as Drosophila TransgeneOme Resource (MPI-CBG) (http://www.lifesciences.sourcebioscience.com/clone-products/non-mammalian/drosophila/drosophila-transgeneome-resource-mpi-cbg/). Moreover, the 'pre-tagged' TransgeneOme library is a versatile resource for generating fosmid clones with arbitrary tags at the C-terminus of the gene models.
 
-## Fly TransgeneOme (fTRG) – a collection of fly strains with tagged fosmids transgenes
+### Fly TransgeneOme (fTRG) – a collection of fly strains with tagged fosmids transgenes
 
 We next established a pipeline to systematically transform the tagged TransgeneOme clones into flies. To efficiently generate fly transgenic lines, we injected the tagged fosmid constructs into a recipient stock carrying the attP landing site VK00033 located at 65B on the third chromosome using a transgenic nanos-ΦC31 source (Venken et al., 2006). For some genes positioned on the third chromosome, we injected into VK00002 located on the second chromosome at 28E to simplify genetic rescue experiments. In total, we have thus far generated lines for 880 tagged constructs representing 826 different genes (Table 1, Supplementary file 2). These genes were partially chosen based on results of a public survey amongst the Drosophila community to identify genes for which there is the strongest demand for a tagged genomic transgenic line. 765 (87% ) of the newly tagged genes have not been covered by the previous protein-trap projects (Supplementary file 2), hence, these should be particularly useful for the fly community. From our pilot tagging experiments, we made 51 lines for the 2xTY1-sGFP-3xFLAG tag and 30 lines for the 2xTY1-T2A-sGFPnls-FLAG transcriptional reporter. The majority of the lines (799) were generated with the versatile 2xTY1-sGFP-V5-Pre-TEV-BLRP-3xFLAG tag, used for the genome-wide resource (Figure 1—figure supplement 1, Table 1). The collection of fly lines is called ‘tagged fly TransgeneOme’ (fTRG) and all 880 fTRG lines have been deposited at the VDRC stock centre for ordering (http://stockcenter.vdrc.at).
 
-To assess whether the tagged fosmids in our transgenic library are functional, we have chosen a set of 46 well-characterised genes, mutants of which result in strong developmental phenotypes. For most cases, we tested null or strong hypomorphic alleles for rescue of the respective phenotypes (embryonic lethality, female sterility, flightlessness, etc.) with the tagged fosmid lines. More than two-thirds of the lines (31 of 46), including tagged lines of
+To assess whether the tagged fosmids in our transgenic library are functional, we have chosen a set of 46 well-characterised genes, mutants of which result in strong developmental phenotypes. For most cases, we tested null or strong hypomorphic alleles for rescue of the respective phenotypes (embryonic lethality, female sterility, flightlessness, etc.) with the tagged fosmid lines. More than two-thirds of the lines (31 of 46), including tagged lines of babo, dlg1, dl, fat, Ilk, LanB1, numb, osk, rhea, sax, smo and yki rescued the mutant phenotypes (Figure 2A, Table 2), demonstrating that the majority of the tagged genes is functional. Our rescue test set is biased towards important developmental regulators; 10 of the 15 genes that did not show a rescue are transcription factors with multiple essential roles during development, such as esg, eya, odd, sna and salm. Thus, their expression is likely regulated by complex cis-regulatory regions that may not be entirely covered by the available fosmid clone; for example wing-disc enhancers are located more than 80 kb away from the transcriptional start of the salm gene (De Celis et al., 1999). Hence, we expect that a typical gene, which is embedded within many other genes in the middle of the fosmid clone, is more likely to be functional. Together, these data suggest that both the genome-wide tagged construct library and the transgenic fTRG library provide functional reagents that are able to substitute endogenous protein function.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig2-v2.jpg)
 
-**Figure 2.:** (A) Genetic rescue statistics of null/strong mutant alleles for 46 selected fTRG lines. Note that more than two-thirds of the lines show a rescue (see Table 2). (B, C) osk-GFP mRNA (in yellow) expressed from fTRG1394 rescues egg-chamber development of an osk null allele (Jenny et al., 2006). osk-GFP mRNA enriches in the early oocyte (B, stage 6) and rescues the oogenesis arrest and the DNA condensation defect of the osk mutant (B’, yellow arrowhead). At stage 10 osk-GFP RNA enriches at the posterior pole (C) and produces sufficient protein to ensure proper embryogenesis. osk-GFP mRNA is shown in yellow, DAPI in magenta; scale bars indicate 30 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.006
+**Figure 2.:** (A) Genetic rescue statistics of null/strong mutant alleles for 46 selected fTRG lines. Note that more than two-thirds of the lines show a rescue (see Table 2). (B, C) osk-GFP mRNA (in yellow) expressed from fTRG1394 rescues egg-chamber development of an osk null allele (Jenny et al., 2006). osk-GFP mRNA enriches in the early oocyte (B, stage 6) and rescues the oogenesis arrest and the DNA condensation defect of the osk mutant (B’, yellow arrowhead). At stage 10 osk-GFP RNA enriches at the posterior pole (C) and produces sufficient protein to ensure proper embryogenesis. osk-GFP mRNA is shown in yellow, DAPI in magenta; scale bars indicate 30 µm.
 
-## Expression of fTRG lines in the ovary
+**Table 2.**
+ Genetic rescue of mutants with the fTRG lines Table listing fTRG lines and respective genetic alleles as well as rescue assays that were used to assess the functionality of the fTRG lines. Note that about two-thirds of the lines rescue the mutant phenotypes.
 
-To demonstrate the broad application spectrum of our fly TransgeneOme library, we analysed tagged protein expression and subcellular localisation in multiple tissues at various developmental stages. Germline expression in flies differs substantially from somatic expression, requiring particular basal promoters and often specialised 3’UTRs (
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Chromosome</th>
+      <th>fTRG line</th>
+      <th>Tag</th>
+      <th>Rescue?</th>
+      <th>Rescue assay</th>
+      <th>Alleles, deficiencies used in trans for rescue assay</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>amos</td>
+      <td>2nd</td>
+      <td>fTRG_218</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>antenna size and bristle number rescued to normal</td>
+      <td>amos[3]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anterior open (aop, Yan)</td>
+      <td>2nd</td>
+      <td>fTRG_142</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>embryonic lethality rescued to viable adults</td>
+      <td>aop[1] (BL-3101); aop[Yan1] (BL-8780)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>aubergine (aub)</td>
+      <td>2nd</td>
+      <td>fTRG_581</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>female sterility entirely rescued</td>
+      <td>aub[HN2] (BL-8517); Df(2L)BSC145 (BL-9505)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>baboon (babo)</td>
+      <td>2nd</td>
+      <td>fTRG_444</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>babo[32] (BL-5399); babo[k16912] (BL-11207)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>bag of marbles (bam)</td>
+      <td>3rd</td>
+      <td>fTRG_3</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>female sterility entirely rescued</td>
+      <td>bam[delta86]; Df(3R)exel9020</td>
+      <td>Christian Bökel, pers. comm.</td>
+    </tr>
+    <tr>
+      <td>cactus (cact)</td>
+      <td>2nd</td>
+      <td>fTRG_516</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality and female sterility rescued</td>
+      <td>cact[1]; cact[4]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CG32121</td>
+      <td>3rd</td>
+      <td>fTRG_92</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>flightlessness rescued</td>
+      <td>CG32121 [XZ1] (X. Zhang and F.S., unpublished); Df(3L)ED4502 (BL-8097)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CG6509 (dlg5)</td>
+      <td>2nd</td>
+      <td>fTRG_10251</td>
+      <td>2xTY1-sGFP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>CG6509 [KG006748] (BL13692); Df(2L)BSC244 (BL-9718)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>discs large 1 (dlg1)</td>
+      <td>X</td>
+      <td>fTRG_502</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>male lethality rescued to viable adults</td>
+      <td>Dlg1[5] (BL-36280)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dorsal (dl)</td>
+      <td>2nd</td>
+      <td>fTRG_29</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>bristle number rescued to normal</td>
+      <td>dl[1]; dl[4]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ebi</td>
+      <td>2nd</td>
+      <td>fTRG_10141</td>
+      <td>2xTY1-sGFP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>ebi[CCS-8] (BL-8397); ebi[E90] (BL-30720)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>escargot (esg)</td>
+      <td>2nd</td>
+      <td>fTRG_10170</td>
+      <td>2xTY1-sGFP-3xFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>esg[35Ce-1] (BL-3900); esg[35Ce-3] (BL-30475)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>eyes absent (eya)</td>
+      <td>2nd</td>
+      <td>fTRG_492</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>eya[C0233]; eya[C0275]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>fat (ft)</td>
+      <td>2nd</td>
+      <td>fTRG_10233</td>
+      <td>2xTY1-T2A-nlsGFP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>ft[G-rv] (BL-1894); ft[8] (BL-5406)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>48 related 2 (Fer2)</td>
+      <td>3rd</td>
+      <td>fTRG_334</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>defective climbing rescued to wild type</td>
+      <td>Fer2[e03248]</td>
+      <td>Dib et al., 2014</td>
+    </tr>
+    <tr>
+      <td>fizzy (fzy)</td>
+      <td>2nd</td>
+      <td>fTRG_10250</td>
+      <td>2xTY1-T2A-nlsGFP-3xFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>fzy[1] (BL-2492); fzy[3] (BL-25143)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>flightless I (fliI)</td>
+      <td>X</td>
+      <td>fTRG_467</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality or flightlessness rescued</td>
+      <td>fli[14] (BL-7481); fli[3] (BL-4730)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hand</td>
+      <td>2nd</td>
+      <td>fTRG_10163</td>
+      <td>2xTY1-sGFP-3xFLAG</td>
+      <td>yes</td>
+      <td>semi-lethality rescued to viable adults</td>
+      <td>Hand[173]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>hippo (hpo)</td>
+      <td>2nd</td>
+      <td>fTRG_10130</td>
+      <td>2xTY1-sGFP-3xFLAG</td>
+      <td>yes</td>
+      <td>larval lethality rescued to viable adults</td>
+      <td>hpo[KS240] (BL-25085); hpo[KC202] (BL-25090)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HLH54F</td>
+      <td>2nd</td>
+      <td>fTRG_153</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>bHLH54F[598]; Df(2R) Exel7150 (BL-7891)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Integrin linked kinase (Ilk)</td>
+      <td>3rd</td>
+      <td>fTRG_483</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>embryonic lethality rescued to viable adults (wing blisters)</td>
+      <td>Ilk[1] (BL-4861); Df(3L)BSC733 (BL-26831)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kinesin heavy chain (Khc)</td>
+      <td>2nd</td>
+      <td>fTRG_10243</td>
+      <td>2xTY1-T2A-nlsGFP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>Khc[8] (BL-1607); Khc[1ts] (BL-31994)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LanB1</td>
+      <td>2nd</td>
+      <td>fTRG_681</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>LanB1 [KG03456] (BL-13957); Df(2L) Exel7032 (BL-7806)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>multiple ankyrin repeats single KH domain (mask)</td>
+      <td>3rd</td>
+      <td>fTRG_486</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>mask[10.22]/ Df(3R)BSC317</td>
+      <td>Barry Thompson, pers. comm</td>
+    </tr>
+    <tr>
+      <td>midline (mid)</td>
+      <td>2nd</td>
+      <td>fTRG_490</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>mid[B1295]; mid[C2372]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>numb</td>
+      <td>2nd</td>
+      <td>fTRG_25</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>numb[1] (BL-4096); Df(2L)30A-C (BL-3702)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>odd skipped (odd)</td>
+      <td>2nd</td>
+      <td>fTRG_47</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>odd[5] (BL-5345); Df(2L) Exel7018 (BL-7789)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>optomotor-blind-related-gene-1 (org-1)</td>
+      <td>X</td>
+      <td>fTRG_485</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>no</td>
+      <td>male lethality not rescued</td>
+      <td>org-1[OJ487]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>oskar (osk)</td>
+      <td>3rd</td>
+      <td>fTRG_1394</td>
+      <td>2XTY1-SGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>female sterility entirely rescued</td>
+      <td>osk[A87]/ Df(3R)p-XT103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pabp2</td>
+      <td>2nd</td>
+      <td>fTRG_565</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>Pabp2[01] (BL-9838); Pabp2[55] (BL-38390)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>patched (ptc)</td>
+      <td>2nd</td>
+      <td>fTRG_82</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>ptc[9] (BL-3377); ptc[16] (BL-35500)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>retina abarrent in pattern (rap)</td>
+      <td>X</td>
+      <td>fTRG_1253</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>rap[ie28]</td>
+      <td>Yuu Kimata, pers. comm.</td>
+    </tr>
+    <tr>
+      <td>rhea (Talin)</td>
+      <td>3rd</td>
+      <td>fTRG_587</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>embryonic lethality rescued to viable adults</td>
+      <td>rhea[1]; rhea[79]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RhoGEF2</td>
+      <td>2nd</td>
+      <td>fTRG_591</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>embryonic lethality rescued to viable adults</td>
+      <td>RhoGEF2 [04291]</td>
+      <td>Jörg Großhans, pers. comm.</td>
+    </tr>
+    <tr>
+      <td>roundabout (robo)</td>
+      <td>2nd</td>
+      <td>fTRG_567</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>robo[1] (BL-8755); robo[2] (BL-8756)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>saxophone (sax)</td>
+      <td>2nd</td>
+      <td>fTRG_10070</td>
+      <td>2xTY1-sGFP-3xFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>sax[4] (BL-5404); sax[5] (BL-8785)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scribbler (sbb)</td>
+      <td>2nd</td>
+      <td>fTRG_443</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>sbb[04440] (BL-11376); Df(2R)BSC334 (BL-24358)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sin3A</td>
+      <td>2nd</td>
+      <td>fTRG_596</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>Sin3A[08269] (BL-12350); Sin3A [B0948]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>smoothened (smo)</td>
+      <td>2nd</td>
+      <td>fTRG_599</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>smo[3] (BL-3277); smo[119B6] (BL-24772)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>snail (sna)</td>
+      <td>2nd</td>
+      <td>fTRG_71</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>sna[18] (BL-2311); sna[1] (BL-25127)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>spalt major (salm)</td>
+      <td>2nd</td>
+      <td>fTRG_165</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>salm[1] (BL-3274); Df(2L)32FP-5 (BL-29717)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Target of rapamycin (Tor)</td>
+      <td>2nd</td>
+      <td>fTRG_713</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>Tor[deltaP] (BL-7014); Df(2L) Exel7055 (BL-7823)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>traffic jam (tj)</td>
+      <td>2nd</td>
+      <td>fTRG_163</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3xFLAG</td>
+      <td>no</td>
+      <td>sterility not rescued</td>
+      <td>tj[PL3] (BL-4987); Df(2L)Exel8041 (BL-7849)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>viking (vkg)</td>
+      <td>2nd</td>
+      <td>fTRG_595</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>no</td>
+      <td>lethality not rescued</td>
+      <td>vkg[01209] (BL-11003); Df(2L) Exel7022 (BL-7794)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unc-89/ Obscurin</td>
+      <td>2nd</td>
+      <td>fTRG_1046</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>flightlessness rescued</td>
+      <td>Unc-89[EY15484]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>yorkie (yki)</td>
+      <td>2nd</td>
+      <td>fTRG_875</td>
+      <td>2xTY1-sGFP-V5-preTEV-BLRP-3XFLAG</td>
+      <td>yes</td>
+      <td>lethality rescued to viable adults</td>
+      <td>yki[B5]</td>
+      <td>Barry Thompson, pers. comm.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression of fTRG lines in the ovary
+
+To demonstrate the broad application spectrum of our fly TransgeneOme library, we analysed tagged protein expression and subcellular localisation in multiple tissues at various developmental stages. Germline expression in flies differs substantially from somatic expression, requiring particular basal promoters and often specialised 3’UTRs (Ni et al., 2011; Rørth, 1998). Therefore, we used ovaries to test the fTRG library and probed the expression of 115 randomly selected lines in germline cells versus somatic cells during oogenesis (Figure 3A). From the 115 lines, 91 (79% ) showed detectable expression during oogenesis, with 45 lines being expressed in both, germ cells and the somatic epithelial cells (Figure 3B,C and Supplementary file 3). 76 (66% ) fTRG lines showed interesting expression patterns restricted to subsets of cells or to a subcellular compartment (Figure 3B-D). For example, Tan-GFP is expressed in germline stem cells only, whereas the ECM protein Pericardin (Prc-GFP) is concentrated around the neighbouring cap cells, and the transcription factor Delilah (Dei-GFP) is specifically localised to the nuclei of somatic stem cells, which will give rise to the epithelial cells surrounding each egg chamber (Figure 3A,C). In early egg chambers, Reph-GFP is expressed in germ cells only, whereas the ECM protein Viking (Vkg-GFP) specifically surrounds all the somatic epithelial cells. Interestingly, the transcription factor Auracan (Ara-GFP) is only expressed in posterior follicle cells, whereas the putative retinal transporter CG5958 is only detectable in the squamous epithelial cells surrounding the nurse cells (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic overview of oogenesis stages and cell types. (B) Summary of the identified expression patterns; see also Supplementary file 3. (C) Selected examples for cell type specific fTRG expression patterns at germarium, early- and mid-oogenesis stages visualised by anti-GFP antibody staining. (D) Selected examples of subcellular localisation patterns, highlighting nuclear, cortical and cytoplasmic patterns at different oogenesis stages. GFP is show in green, DAPI in magenta; scale bars indicate 30 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.008
+**Figure 3.:** (A) Schematic overview of oogenesis stages and cell types. (B) Summary of the identified expression patterns; see also Supplementary file 3. (C) Selected examples for cell type specific fTRG expression patterns at germarium, early- and mid-oogenesis stages visualised by anti-GFP antibody staining. (D) Selected examples of subcellular localisation patterns, highlighting nuclear, cortical and cytoplasmic patterns at different oogenesis stages. GFP is show in green, DAPI in magenta; scale bars indicate 30 µm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A, B) Endogenous untagged Grk protein detected with an anti-Grk antibody localises similarly in wild-type stage 8 oocytes (A), as in fTRG960 oocytes expressing Grk-GFP detected by an anti-GFP antibody (B). Note that both Grk and GFP antibody patterns are indistinguishable (compare B and B’). (C, D) Osk protein detected by an anti-Osk antibody in wild type stage 9–10 oocytes (C) compared to Osk antibody labelled protein in an fTRG1394 oocyte expressing Osk-GFP in addition to endogenous Osk (D). Note the co-localisation of anti-Osk and anti-GFP antibodies (D and D’). Scale bars indicate 30 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.009
+**Figure 3—figure supplement 1.:** (A, B) Endogenous untagged Grk protein detected with an anti-Grk antibody localises similarly in wild-type stage 8 oocytes (A), as in fTRG960 oocytes expressing Grk-GFP detected by an anti-GFP antibody (B). Note that both Grk and GFP antibody patterns are indistinguishable (compare B and B’). (C, D) Osk protein detected by an anti-Osk antibody in wild type stage 9–10 oocytes (C) compared to Osk antibody labelled protein in an fTRG1394 oocyte expressing Osk-GFP in addition to endogenous Osk (D). Note the co-localisation of anti-Osk and anti-GFP antibodies (D and D’). Scale bars indicate 30 µm.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A, B) osk-GFP mRNA visualised by an anti-GFP labelled RNA probe (yellow, DAPI in magenta) at stage 6 and stage 10 of oogenesis. (A’, B’) Osk-GFP protein visualised by anti-GFP antibody (green, DAPI in magenta) at stage 6 and stage 10. Note that Osk-GFP protein is not detectable at stage 6. (C, D) corolla-GFP mRNA (yellow, DAPI in magenta) at stage 6 and stage 8. (E, F) Corolla-GFP protein (green, DAPI in magenta) at stage 6 and stage 8. Note that Corolla-GFP protein is only detectable at stage 6 but not stage 8. Scale bars indicate 30 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.010
+**Figure 3—figure supplement 2.:** (A, B) osk-GFP mRNA visualised by an anti-GFP labelled RNA probe (yellow, DAPI in magenta) at stage 6 and stage 10 of oogenesis. (A’, B’) Osk-GFP protein visualised by anti-GFP antibody (green, DAPI in magenta) at stage 6 and stage 10. Note that Osk-GFP protein is not detectable at stage 6. (C, D) corolla-GFP mRNA (yellow, DAPI in magenta) at stage 6 and stage 8. (E, F) Corolla-GFP protein (green, DAPI in magenta) at stage 6 and stage 8. Note that Corolla-GFP protein is only detectable at stage 6 but not stage 8. Scale bars indicate 30 µm.
 
 We further investigated the subcellular localisation of the tagged proteins, which revealed a localisation for the RNA helicase l(2)35Df to all nuclei, whereas the predicted C2H2-Zn-finger transcription factor Crooked legs (Crol-GFP) is restricted to the nuclei of the epithelial cells (Figure 3D). Interestingly, Corolla-GFP is exclusively localised to the oocyte nucleus in early egg chambers. This is consistent with the function of Corolla at the synaptonemal complex attaching homologous chromosomes during early meiosis (Collins et al., 2014). In contrast, the uncharacterised homeobox transcription factor E5 (E5-GFP) is largely restricted to the nuclei of anterior and posterior epithelial cells (Figure 3D). Apart from nuclear patterns, we found a significant number of cortical localisations, including the well characterised Crumbs (Crb-GFP) (Bulgakova and Knust, 2009) and the PDZ-domain containing Big bang (Bbg-GFP) (Bonnay et al., 2013) at the apical cortex of the epithelial cells, the Na+/K+ transporter subunit Nervana 2 (Nrv2-GFP) at the lateral epithelial membrane, and the EGF-signalling regulator Star (S-GFP) as well as the TGF-β receptor Saxophone (Sax-GFP) localised to the cortex or membrane of the germ cells (Figure 3D and Supplementary file 3). Furthermore, we find a perinuclear enrichment for the uncharacterised predicted NAD-binding protein CG8768, and oocyte enrichments for the Tom22 homolog Maggie (Mge-GFP) (Vaskova et al., 2000), the glycosyltransferase Wollknäuel (Wol-GFP) (Haecker et al., 2008) and the TGF-α homolog Gurken (Grk-GFP), the latter with its well-established concentration around the oocyte nucleus (Neuman-Silberberg and Schüpbach, 1993), where it co-localises with endogenous Grk protein (Figure 3D and Figure 3—figure supplement 1A,B).
 
@@ -113,95 +674,427 @@ We did not perform genetic rescue assays for all of lines examined for protein l
 
 To test if genes expressed from the FlyFos system also undergo normal post-transcriptional regulation, we analysed the osk-GFP line, which was recently used as a label for germ granules (Trcek et al., 2015). osk mRNA is transcribed from the early stages of oogenesis onwards in the nurse cell nuclei and specifically transported to the oocyte, where it localises to the posterior pole (Ephrussi et al., 1991; Kim-Ha et al., 1991). Only after the mRNA is localised, it is translated from stage 9 onwards (Kim-Ha et al., 1995). Indeed, fosmid derived osk-GFP mRNA localises normally during all stages of oogenesis and its translation is repressed during mRNA transport, as Osk-GFP protein can only be detected at the posterior pole from stage 9 onwards (Figure 3—figure supplement 2A,B). osk-GFP also rescues all aspects of an osk null allele (Figure 2B,C) and Osk-GFP colocalises with endogenous Osk protein (Figure 3—figure supplement 1C,D). Additionally, we discovered a post-transcriptional regulation for corolla. corolla-GFP mRNA localises to the oocyte at stage 6 and Corolla-GFP protein is transported into the oocyte nucleus. However, despite the presence of the corolla-GFP mRNA at stage 8, Corolla protein is undetectable, suggesting either a translational block of the RNA or targeted degradation of the protein (Figure 3—figure supplement 2C-F). Taken together, these expression and protein localisation data recapitulate known patterns accurately and identify various unknown protein localisations in various cell types during oogenesis, and thus emphasise the value of the fly TransgeneOme resource.
 
-## Live in toto imaging of fTRG lines during embryogenesis
+### Live in toto imaging of fTRG lines during embryogenesis
 
-For many genes, the expression patterns at the mRNA level are particularly well characterised during
+For many genes, the expression patterns at the mRNA level are particularly well characterised during Drosophila embryogenesis (Hammonds et al., 2013; Tomancak et al., 2002; 2007). However, in situ hybridisation techniques on fixed tissues do not visualise the dynamics of expression over time and thus do not allow tracking of the expressing cells during development. As our tagging approach enables live imaging at endogenous expression levels, we set out to test if in toto imaging using the SPIM (Selective Plane Illumination Microscopy) technology (Huisken et al., 2004) can be applied to the fly TransgeneOme lines. We pre-screened a small subset of lines (Table 3) and selected the Na+/K+ transporter subunit Nrv2, as it shows high expression levels, for long-term time-lapse live imaging with a multi-view dual-side SPIM (Huisken and Stainier, 2007). During embryogenesis Nrv2 expression was reported in neurons (Sun et al., 1999) and glial cells (Younossi-Hartenstein et al., 2002). Interestingly, we find that Nrv2-GFP is already expressed from stage 11 onwards in most likely all cell types, where it localises to the plasma membrane (Figure 4A-C), similarly to its localisation in ovaries (Figure 3D). The expression level increases during stage 15 in all cells, with a particularly strong increase in the developing central nervous system (CNS) labelling the CNS and motor neuron membranes (Figure 4, Video 1, Examine raw data in BigDataViewer (Fiji -> Plugins -> BigDataViewer -> Browse BigDataServer and enter http: //bds.mpi-cbg.de:8087). These live in toto expression data are consistent with expression data of a recently isolated GFP trap in nrv2 (Lowe et al., 2014), thus validating our methodology.
+
+**Table 3.**
+ in totoSPIM imaging of fTRG lines in the embryo Table listing the fTRG lines that were imaged in the embryo using Zeiss Lightsheet Z.1 from multiple angles over time. nrv2, gsb and gsb-n are discussed in the text. For the remaining lines, we list broad categorisation of the expression detected by SPIM imaging.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>fTRG number</th>
+      <th>FBgn_id</th>
+      <th>Gene symbol</th>
+      <th>Signal</th>
+      <th>Embryonic expression</th>
+      <th>Movie</th>
+      <th>Beads</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>58</td>
+      <td>FBgn0001148</td>
+      <td>gsb</td>
+      <td>strong</td>
+      <td>tissue-specific expression</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>FBgn0003448</td>
+      <td>snail</td>
+      <td>weak</td>
+      <td>tissue-specific expression</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>FBgn0025360</td>
+      <td>Optix</td>
+      <td>medium</td>
+      <td>tissue-specific expression</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>FBgn0010433</td>
+      <td>ato</td>
+      <td>weak</td>
+      <td>tissue-specific expression</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>FBgn0259685</td>
+      <td>crb</td>
+      <td>medium</td>
+      <td>tissue-specific expression</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>FBgn0029123</td>
+      <td>SoxN</td>
+      <td>strong</td>
+      <td>tissue-specific expression</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>349</td>
+      <td>FBgn0024294</td>
+      <td>spn43Aa</td>
+      <td>strong</td>
+      <td>late expression, deposited in the cuticle</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>513</td>
+      <td>FBgn0001147</td>
+      <td>gsb-n</td>
+      <td>medium</td>
+      <td>tissue-specific expression</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>937</td>
+      <td>FBgn0015777</td>
+      <td>nrv2</td>
+      <td>strong</td>
+      <td>ubiquitous expression, membrane signal</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig4-v2.jpg)
 
-**Figure 4.:** (A-C) Nrv2-GFP protein is enriched in cell membrane of the epidermis and the CNS of late stage 16 embryos, as shown by a lateral section (A) and high magnifications of the posterior epidermis (B) and the ventral CNS (C). (D) Schemes of the lateral, ventral and transverse optical section views through the embryo shown in (E-I). (E-I) Still image from a Nrv2-GFP time-lapse Video with lateral section views on the left, ventral sections in the middle and transverse sections on the right. Note that Nrv2-GFP is first expressed in the developing epidermal epithelial cells (E, F) and then becomes enriched in the CNS (G-I, see Video 1). Scale bars indicate 50 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.012
+**Figure 4.:** (A-C) Nrv2-GFP protein is enriched in cell membrane of the epidermis and the CNS of late stage 16 embryos, as shown by a lateral section (A) and high magnifications of the posterior epidermis (B) and the ventral CNS (C). (D) Schemes of the lateral, ventral and transverse optical section views through the embryo shown in (E-I). (E-I) Still image from a Nrv2-GFP time-lapse Video with lateral section views on the left, ventral sections in the middle and transverse sections on the right. Note that Nrv2-GFP is first expressed in the developing epidermal epithelial cells (E, F) and then becomes enriched in the CNS (G-I, see Video 1). Scale bars indicate 50 µm.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A, B) Lateral view of a live stage 10 embryo expressing Gsb-GFP (green in A) and Histone2A-mRFPruby (red in A); anterior is to the left (see Video 2). (C-F) Confocal sections of gsb-positive deuterocerebral proneural domain (recorded with a regular confocal microscope at a similar position as boxed in B). Fate of cells is symbolized by different colours (blue: epidermal precursor undergoing no further mitosis; purple: epidermal precursor undergoing one mitosis; red: neuroblasts). (C) and (D) show an optical section through the neurectoderm of stage 10 embryo prior to neuroblast delamination; (E) and (F) display the same region 30 min later, after neuroblasts have delaminated (stage 11), with a superficial optical section of surface ectoderm (E), and deep section of the neuroblast layer (F). (G-I) Optical cross sections (rotated by 90 degrees) of a similar embryo as in (A) expressing GFP-tagged Gsb (green) and Histone-2A-mRFPruby (red) at stage 10 (G), early 11 (H) and late 11 (I) showing neuroblasts delaminating from Gsb-GFP domain. (J) Schematic cross section of stage 10 (left) and stage 11 (right) ectoderm illustrating fate of cells forming part of Gsb-positive pro-neural domain. Scale bars indicate 25 µm (A, B) and 10 µm (G-I).DOI: http://dx.doi.org/10.7554/eLife.12068.013
+**Figure 4—figure supplement 1.:** (A, B) Lateral view of a live stage 10 embryo expressing Gsb-GFP (green in A) and Histone2A-mRFPruby (red in A); anterior is to the left (see Video 2). (C-F) Confocal sections of gsb-positive deuterocerebral proneural domain (recorded with a regular confocal microscope at a similar position as boxed in B). Fate of cells is symbolized by different colours (blue: epidermal precursor undergoing no further mitosis; purple: epidermal precursor undergoing one mitosis; red: neuroblasts). (C) and (D) show an optical section through the neurectoderm of stage 10 embryo prior to neuroblast delamination; (E) and (F) display the same region 30 min later, after neuroblasts have delaminated (stage 11), with a superficial optical section of surface ectoderm (E), and deep section of the neuroblast layer (F). (G-I) Optical cross sections (rotated by 90 degrees) of a similar embryo as in (A) expressing GFP-tagged Gsb (green) and Histone-2A-mRFPruby (red) at stage 10 (G), early 11 (H) and late 11 (I) showing neuroblasts delaminating from Gsb-GFP domain. (J) Schematic cross section of stage 10 (left) and stage 11 (right) ectoderm illustrating fate of cells forming part of Gsb-positive pro-neural domain. Scale bars indicate 25 µm (A, B) and 10 µm (G-I).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A, B). Ventral view of Gsb-n-GFP expression of a stage 12 embryo during germ-band retraction (A) and stage 14 during head involution (B). Note that Gsb-n-GFP remains expressed in neuronal precursors during stage 14 (Video 3). Scale bars indicate 50 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.014
+**Figure 4—figure supplement 2.:** (A, B). Ventral view of Gsb-n-GFP expression of a stage 12 embryo during germ-band retraction (A) and stage 14 during head involution (B). Note that Gsb-n-GFP remains expressed in neuronal precursors during stage 14 (Video 3). Scale bars indicate 50 µm.
 
-We wanted to extend our approach beyond highly expressed structural genes towards transcription factors that enable to follow cell lineages in the embryo. For this purpose, we crossed the fTRG line of the homeobox transcription factor gooseberry (Gsb-GFP) to H2A-mRFPruby, which labels all nuclei, and recorded a two-colour multi-view dual-side SPIM Video. We find that Gsb-GFP is expressed in the presumptive neuroectoderm of the head region, labelling segmentally reiterated stripe-like domains at stage 10 (Figure 4—figure supplement 1A,B, Video 2) as was described from fixed images (Gutjahr et al., 1993). Focusing on the deuterocerebral domain, we could reconstruct the delamination of two neuroblasts, which up-regulate Gsb-GFP while initiating their asymmetric divisions (Figure 4—figure supplement 1C-F). It was possible to individually follow their neural progeny. Gsb-GFP expression also allowed us to directly follow the gradual down-regulation of Gsb-GFP in ectodermal cells that remained at the head surface after neuroblast delamination. As opposed to the neuroblasts, these cells, which give rise to epidermis, did not divide at all, or underwent only one further division (Figure 4—figure supplement 1G-J, Video 2).10.7554/eLife.12068.015Video 1.Multi-view SPIM Video of a stage 12 Nrv2-GFP expressing embryo.A stack was acquired every 15 min, lateral, dorsal, ventral and transverse views of the same time points are displayed. From stage 11 onwards Nrv2-GFP is present ubiquitously in the plasma membrane. Later, its expression increases in the CNS, particularly in the neuropil and the motor neurons. Video plays with 7 frames per second. Time is given in hh:mm. Scale bar indicates 50 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.01510.7554/eLife.12068.016Video 2.Lateral head section from a SPIM Video of a stage 10 Gsb-GFP (green, white in the top Video), Histone-2A-mRFPruby (red) embryo.A stack was acquired every 7 min. The segmentally re-iterated stripe-like gsb expression domain in the head neuroectoderm is visible. Later, gsb is expressed in ganglion mother cells and nerve cells that are the progeny of gsb expressing neuroblasts. Video plays with 7 frames per second. Time is given in hh:mm. Scale bar indicates 50 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.01610.7554/eLife.12068.017Video 3.Ventral view of a SPIM Video of a stage 6 Gsb-n-GFP embryo.A stack was acquired every 15 min. Gsb-n-GFP is only detectable at the end of germ-band extension. During germ-band retraction, it is expressed in characteristic L-shaped expression domains in the hemi-segments of the trunk. In the late stage embryo, Gsb-n-GFP is present in the neurons of the shortening ventral nerve cord. Video plays with 7 frames per second. Time is given in hh:mm. Scale bar indicates 50 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.017
+We wanted to extend our approach beyond highly expressed structural genes towards transcription factors that enable to follow cell lineages in the embryo. For this purpose, we crossed the fTRG line of the homeobox transcription factor gooseberry (Gsb-GFP) to H2A-mRFPruby, which labels all nuclei, and recorded a two-colour multi-view dual-side SPIM Video. We find that Gsb-GFP is expressed in the presumptive neuroectoderm of the head region, labelling segmentally reiterated stripe-like domains at stage 10 (Figure 4—figure supplement 1A,B, Video 2) as was described from fixed images (Gutjahr et al., 1993). Focusing on the deuterocerebral domain, we could reconstruct the delamination of two neuroblasts, which up-regulate Gsb-GFP while initiating their asymmetric divisions (Figure 4—figure supplement 1C-F). It was possible to individually follow their neural progeny. Gsb-GFP expression also allowed us to directly follow the gradual down-regulation of Gsb-GFP in ectodermal cells that remained at the head surface after neuroblast delamination. As opposed to the neuroblasts, these cells, which give rise to epidermis, did not divide at all, or underwent only one further division (Figure 4—figure supplement 1G-J, Video 2).
+
+![Video 1.](https://cdn.elifesciences.org/articles/12068/elife-12068-media1.mp4.jpg)
+
+**Video 1.:** A stack was acquired every 15 min, lateral, dorsal, ventral and transverse views of the same time points are displayed. From stage 11 onwards Nrv2-GFP is present ubiquitously in the plasma membrane. Later, its expression increases in the CNS, particularly in the neuropil and the motor neurons. Video plays with 7 frames per second. Time is given in hh:mm. Scale bar indicates 50 µm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/12068/elife-12068-media2.mp4.jpg)
+
+**Video 2.:** A stack was acquired every 7 min. The segmentally re-iterated stripe-like gsb expression domain in the head neuroectoderm is visible. Later, gsb is expressed in ganglion mother cells and nerve cells that are the progeny of gsb expressing neuroblasts. Video plays with 7 frames per second. Time is given in hh:mm. Scale bar indicates 50 µm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/12068/elife-12068-media3.mp4.jpg)
+
+**Video 3.:** A stack was acquired every 15 min. Gsb-n-GFP is only detectable at the end of germ-band extension. During germ-band retraction, it is expressed in characteristic L-shaped expression domains in the hemi-segments of the trunk. In the late stage embryo, Gsb-n-GFP is present in the neurons of the shortening ventral nerve cord. Video plays with 7 frames per second. Time is given in hh:mm. Scale bar indicates 50 µm.
 
 gsb is in part required for gooseberry-neuro (gsb-n; also called gsb-d) expression (He and Noll, 2013). Notably, the expression of Gsb-n-GFP (fTRG line 513) becomes detectable only at the end of germ-band extension (end of stage 11) in the developing CNS, where it lasts until stage 17 (Figure 4—figure supplement 2, Video 3). Again, this is consistent with published immuno-histochemistry data (Gutjahr et al., 1993; He and Noll, 2013). We conclude that our fly TransgeneOme library can be used for live in toto imaging, even for transcription factors expressed at endogenous levels. This will be of significant importance for on-going efforts linking the transcription factor expression patterns of embryonic neuroblasts to the morphologically defined lineages that structure the larval and adult Drosophila brain (Hartenstein et al., 2015; Lovick et al., 2013; Pereanu, 2006).
 
-## Expression of fTRG lines in the adult thorax
+### Expression of fTRG lines in the adult thorax
 
-Cells and tissues in the embryo are not yet terminally differentiated. To apply our TransgeneOme library to fully differentiated tissues, we decided to study tissues of the adult thorax. We scored expression in the large indirect flight muscles (IFMs), in leg muscles, in the visceral muscles surrounding the gut, in the gut epithelium, the tendon epithelium, the trachea and the ventral nerve cord including the motor neurons. In total, we found detectable expression in at least one tissue for 101 of 121 (83.5% ) analysed fTRG lines, thus creating a large number of valuable markers for cell types and subcellular structures (Table 4, Supplementary file 4).10.7554/eLife.12068.018Table 4.Summary of adult muscle fTRG expression patterns 54 detected adult muscle localisation patterns (flight muscle, leg muscle and visceral muscle) from Supplementary file 4 are summarised. fTRG line number is listed in brackets.DOI: http://dx.doi.org/10.7554/eLife.12068.018Thick filamentThin filament / myofibrilM-lineZ-discMuscle attachment siteT-tubules / sarcolemmaDotty pattern / vesicles (?)MitochondriaNucleusNeuro-muscular junctionFln (876, IFM)Act88F (78, 10028, IFM)Prm (475, IFM)CG31772 (63)Ilk (483)Dlg1(502)Babo (444)CG12118 (276)Adar (570)Cact (516)Mf (Iso-A,G, N, 501)Fray (125, 10032)Unc-89 (1046)Kettin (Sls-Isoform, 569)Talin (rhea, Iso-B, E, F, G, 587)Sax (10070)CG5885 (10017, leg m.)Blimp-1 (10149)Veli (10125)Mhc (Iso-K, L, M, 500)Hsp83 (10010)Lmpt (584, I-band, leg m.)β-PS Integrin (mys, 932)CLIP-190 (156)CG11617 (10041)Mhc (Iso-A, F, 519, leg m. subset & visceral. m.)TpnC25D (1257, leg m. & visceral m.)Mask (486, IFM)Dlg5 (CG6509, 10251, IFM)CG12391 (10036)Prm (475, leg m. & visceral m.)TpnI (wupA, 925, leg m. & visceral m.)Mlp60A (709, leg m. & visceral m.)Hts (585)CG17912 (10035)Mlp84B (678, leg m. & visceral m.)Mask (486, leg m.)CG32121 (92)Talin (Iso-C, D, 731, leg m. & visceral m.)Pyd3 (53)Dorsal (29, leg m.)Rho1 (31)E2F2 (115)Sc2 (79, 10039)Gro (21)Tango11 (699)Hand (10163, visceral m.)Tsc1 (59)Hb (139, leg m.)Vps35 (CG5625, 57)Mnt (34)P53 (84)Salm (165)Vri (182)
+Cells and tissues in the embryo are not yet terminally differentiated. To apply our TransgeneOme library to fully differentiated tissues, we decided to study tissues of the adult thorax. We scored expression in the large indirect flight muscles (IFMs), in leg muscles, in the visceral muscles surrounding the gut, in the gut epithelium, the tendon epithelium, the trachea and the ventral nerve cord including the motor neurons. In total, we found detectable expression in at least one tissue for 101 of 121 (83.5% ) analysed fTRG lines, thus creating a large number of valuable markers for cell types and subcellular structures (Table 4, Supplementary file 4).
 
-The large IFMs are fibrillar muscles, which have a distinct transcriptional program resulting in their distinct morphology (
+**Table 4.**
+ Summary of adult muscle fTRG expression patterns 54 detected adult muscle localisation patterns (flight muscle, leg muscle and visceral muscle) from Supplementary file 4 are summarised. fTRG line number is listed in brackets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Thick filament</th>
+      <th>Thin filament / myofibril</th>
+      <th>M-line</th>
+      <th>Z-disc</th>
+      <th>Muscle attachment site</th>
+      <th>T-tubules / sarcolemma</th>
+      <th>Dotty pattern / vesicles (?)</th>
+      <th>Mitochondria</th>
+      <th>Nucleus</th>
+      <th>Neuro-muscular junction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fln (876, IFM)</td>
+      <td>Act88F (78, 10028, IFM)</td>
+      <td>Prm (475, IFM)</td>
+      <td>CG31772 (63)</td>
+      <td>Ilk (483)</td>
+      <td>Dlg1(502)</td>
+      <td>Babo (444)</td>
+      <td>CG12118 (276)</td>
+      <td>Adar (570)</td>
+      <td>Cact (516)</td>
+    </tr>
+    <tr>
+      <td>Mf (Iso-A,G, N, 501)</td>
+      <td>Fray (125, 10032)</td>
+      <td>Unc-89 (1046)</td>
+      <td>Kettin (Sls-Isoform, 569)</td>
+      <td>Talin (rhea, Iso-B, E, F, G, 587)</td>
+      <td>Sax (10070)</td>
+      <td>CG5885 (10017, leg m.)</td>
+      <td></td>
+      <td>Blimp-1 (10149)</td>
+      <td>Veli (10125)</td>
+    </tr>
+    <tr>
+      <td>Mhc (Iso-K, L, M, 500)</td>
+      <td>Hsp83 (10010)</td>
+      <td></td>
+      <td>Lmpt (584, I-band, leg m.)</td>
+      <td>β-PS Integrin (mys, 932)</td>
+      <td></td>
+      <td>CLIP-190 (156)</td>
+      <td></td>
+      <td>CG11617 (10041)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mhc (Iso-A, F, 519, leg m. subset &amp; visceral. m.)</td>
+      <td>TpnC25D (1257, leg m. &amp; visceral m.)</td>
+      <td></td>
+      <td>Mask (486, IFM)</td>
+      <td></td>
+      <td></td>
+      <td>Dlg5 (CG6509, 10251, IFM)</td>
+      <td></td>
+      <td>CG12391 (10036)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prm (475, leg m. &amp; visceral m.)</td>
+      <td>TpnI (wupA, 925, leg m. &amp; visceral m.)</td>
+      <td></td>
+      <td>Mlp60A (709, leg m. &amp; visceral m.)</td>
+      <td></td>
+      <td></td>
+      <td>Hts (585)</td>
+      <td></td>
+      <td>CG17912 (10035)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Mlp84B (678, leg m. &amp; visceral m.)</td>
+      <td></td>
+      <td></td>
+      <td>Mask (486, leg m.)</td>
+      <td></td>
+      <td>CG32121 (92)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Talin (Iso-C, D, 731, leg m. &amp; visceral m.)</td>
+      <td></td>
+      <td></td>
+      <td>Pyd3 (53)</td>
+      <td></td>
+      <td>Dorsal (29, leg m.)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Rho1 (31)</td>
+      <td></td>
+      <td>E2F2 (115)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Sc2 (79, 10039)</td>
+      <td></td>
+      <td>Gro (21)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Tango11 (699)</td>
+      <td></td>
+      <td>Hand (10163, visceral m.)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Tsc1 (59)</td>
+      <td></td>
+      <td>Hb (139, leg m.)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Vps35 (CG5625, 57)</td>
+      <td></td>
+      <td>Mnt (34)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>P53 (84)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Salm (165)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Vri (182)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+The large IFMs are fibrillar muscles, which have a distinct transcriptional program resulting in their distinct morphology (Schönbauer et al., 2011). This is recapitulated by the expression of Act88F-GFP, which localises to the thin filaments of IFMs only (Figure 5A-C), whereas Mlp84B-GFP is not expressed in IFMs but at the peripheral Z-discs of leg and visceral muscles only (Figure 5D-F), similar to the published localisation in larval muscle (Clark et al., 2007). We find various dotty patterns indicating localisation to intracellular vesicles; a particularly prominent example is Tango1-GFP in the midgut epithelium (Figure 5G,H, Supplementary file 4). Tango1 regulates protein secretion in S2 cells, where it localises to the Golgi apparatus upon over-expression (Bard et al., 2006), suggesting that the pattern described here is correct. We find Par6 with an in analogy to other epithelia expected apical localisation (Hutterer et al., 2004) in the epithelium of the proventriculus and in trachea (Figure 5I,J), whereas we identified a surprising pattern for the TRP channel Painless (Tracey et al., 2003). Pain-GFP is not only highly expressed in motor neurons (Figure 5K) but also in a particular set of small cells within the gut epithelium and most surprisingly, in the tendon cells to which the IFMs attach (Figure 5L,M). To clarify the identity of the Pain-GFP positive cell type in the gut, we co-stained with the differentiated enteroendocrine cell marker Prospero (Ohlstein and Spradling, 2005), however, did not find any overlap with the Pain-GFP positive cells (Figure 5Q). This suggests that the small, likely diploid, Pain-GFP positive cells are either enteroblasts or intestinal stem cells (ISCs), the source of all enterocytes and enteroendocrine cells that build the gut epithelium (Jiang and Edgar, 2011). At this point, we can only speculate that Pain might be involved in mechanical stretch-sensing in these cell types. We have also tagged various ECM components, with LamininB1 (LanB1-GFP), LamininA (LanA-GFP) and BM40-SPARC resulting in the most prominent expression patterns. All three ensheath most adult tissues, particularly the muscles (Figure 5N,O, Figure 5—figure supplement 1A,B,E,F). Interestingly, LanA-GFP and LanB1-GFP also surround the fine tracheal branches that penetrate into the IFMs, whereas BM40-SPARC is only detected around the large tracheal stalk and the motor neurons (Figure 5P, Figure 5—figure supplement 1C,D,G,H). Finally, we also detected prominent neuromuscular junction (NMJ) markers; the IκB homolog Cactus shows a distinct pattern on leg muscles, visceral muscles and IFMs, the latter we could confirm by co-staining with the neuronal marker Futsch (Figure 5—figure supplement 1I-M). Interestingly, such a NMJ pattern for Cactus and its binding partner Dorsal has been shown in larval body muscle by antibody stainings (Bolatto et al., 2003). Together, these results suggest that our fly TransgeneOme library provides a rich resource for tissue-specific markers in the adult fly that can routinely be used to visualise subcellular compartments in various tissues.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig5-v2.jpg)
 
-**Figure 5.:** Antibody stainings of the adult thorax with anti-GFP antibody (green) and phalloidin (red). (A-F) Act88-GFP expression is specific to the IFMs, where it labels the thin filaments (B), whereas Mlp84B specifically labels the Z-discs of leg muscles (F). (G-J) Tango1-GFP concentrates in a vesicle-like pattern in the gut epithelium (H, H'), whereas Par6-GFP is highly expressed in trachea (I) and the gut epithelium, where it concentrates at the apical membrane, as shown for a cross-section of the proventriculus (J, J'), nuclei are labelled with DAPI (blue). (K-M) Pain-GFP expression in the flight muscle motor neurons (K), small cells within the midgut epithelium (L, L') and tendon cells (M, M'). (N-P) LanB1-GFP labels the extracellular matrix surrounding the IFMs, the motor neurons and the trachea (N), as well as the visceral muscles (O). Even the finest trachea marked by UV auto-fluorescence (white) (P) are surrounded by LanB1-GFP (P’). (Q) Pain-GFP positive cells in the midgut do not overlap with Prospero positive nuclei of enterocytes (in red) and contain small nuclei, as visualised by DAPI co-stain in white (Q-Q’’’). Scale bars indicate 100 µm (A, D, I, K, N), 20 µm (H,J, L, O, Q) and 5 µm (B,C,E,F,M,P).DOI: http://dx.doi.org/10.7554/eLife.12068.019
+**Figure 5.:** Antibody stainings of the adult thorax with anti-GFP antibody (green) and phalloidin (red). (A-F) Act88-GFP expression is specific to the IFMs, where it labels the thin filaments (B), whereas Mlp84B specifically labels the Z-discs of leg muscles (F). (G-J) Tango1-GFP concentrates in a vesicle-like pattern in the gut epithelium (H, H'), whereas Par6-GFP is highly expressed in trachea (I) and the gut epithelium, where it concentrates at the apical membrane, as shown for a cross-section of the proventriculus (J, J'), nuclei are labelled with DAPI (blue). (K-M) Pain-GFP expression in the flight muscle motor neurons (K), small cells within the midgut epithelium (L, L') and tendon cells (M, M'). (N-P) LanB1-GFP labels the extracellular matrix surrounding the IFMs, the motor neurons and the trachea (N), as well as the visceral muscles (O). Even the finest trachea marked by UV auto-fluorescence (white) (P) are surrounded by LanB1-GFP (P’). (Q) Pain-GFP positive cells in the midgut do not overlap with Prospero positive nuclei of enterocytes (in red) and contain small nuclei, as visualised by DAPI co-stain in white (Q-Q’’’). Scale bars indicate 100 µm (A, D, I, K, N), 20 µm (H,J, L, O, Q) and 5 µm (B,C,E,F,M,P).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A-H) Antibody stainings of the adult thorax with anti-GFP antibody (green or white in the single colour images) and phalloidin (red). LanA-GFP and BM-40-SPARC-GFP labels the ECM around motor neurons, visceral muscle and trachea. Note that thin trachea within the IFMs (marked by UV auto-fluorescence in white) are surrounded by LanA-GFP but not BM-40-SPARC-GFP (D, H). (I-M) Cact-GFP (green) shows a distinct localisation in IFMs, leg and visceral muscle reminiscent of a neuromuscular junction pattern. Note the partial co-localisation with the motor neuron marker Futsch (in red, M, M’), whereas no co-localisation with trachea in IFMs (in white, M). Scale bars indicate 100 µm (A, E, I), 20 µm (B, C, F, G, L), 10 µm (M) and 5 µm (D, H, J, K).DOI: http://dx.doi.org/10.7554/eLife.12068.020
+**Figure 5—figure supplement 1.:** (A-H) Antibody stainings of the adult thorax with anti-GFP antibody (green or white in the single colour images) and phalloidin (red). LanA-GFP and BM-40-SPARC-GFP labels the ECM around motor neurons, visceral muscle and trachea. Note that thin trachea within the IFMs (marked by UV auto-fluorescence in white) are surrounded by LanA-GFP but not BM-40-SPARC-GFP (D, H). (I-M) Cact-GFP (green) shows a distinct localisation in IFMs, leg and visceral muscle reminiscent of a neuromuscular junction pattern. Note the partial co-localisation with the motor neuron marker Futsch (in red, M, M’), whereas no co-localisation with trachea in IFMs (in white, M). Scale bars indicate 100 µm (A, E, I), 20 µm (B, C, F, G, L), 10 µm (M) and 5 µm (D, H, J, K).
 
-To further validate the advantages of our TransgeneOme lines to label subcellular structures, we imaged the large IFMs of the same 121 lines at high resolution. We found various markers for the thick filaments (e.g. the myosin-associated protein Flightin, Fln-GFP) (
+To further validate the advantages of our TransgeneOme lines to label subcellular structures, we imaged the large IFMs of the same 121 lines at high resolution. We found various markers for the thick filaments (e.g. the myosin-associated protein Flightin, Fln-GFP) (Vigoreaux et al., 1993), for the myofibrils (e.g. the protein kinase Fray-GFP), the M-lines (e.g. the titin related protein Unc-89/Obscurin-GFP) (Katzemich et al., 2012), the Z-discs (e.g. CG31772-GFP) and the muscle attachment sites (e.g. Integrin-linked-kinase, Ilk-GFP). Furthermore, we identified markers for the T-tubules (e.g. Dlg1-GFP), for different vesicular compartments (e.g. the TGFβ receptor Baboon-GFP) and for mitochondria (CG12118) within the IFMs (Figure 6, Table 4, Supplementary file 4). The latter was confirmed by co-labelling the mitochondria with an antibody against the mitochondrial ATPase (complex V α subunit) (Cox and Spradling, 2009) (Figure 6—figure supplement 1). Additionally, we documented the nuclear localisation in IFMs and leg muscles for a variety of fTRG proteins, including the uncharacterised homeodomain protein CG11617 and the C2H2 Zinc-fingers CG12391 and CG17912 (Figure 6—figure supplement 2A-C,E-G); both of the latter result in flightless animals when knocked-down by muscle-specific RNAi (Schnorrer et al., 2010) suggesting that these genes play an essential role for IFM morphogenesis or function. Interestingly, the well characterised C2H2 Zinc-finger protein Hunchback (Hb) is only localised to leg muscle nuclei, but absent from IFMs suggesting a leg muscle-specific function of Hb (Figure 6—figure supplement 2G,H).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig6-v2.jpg)
 
-**Figure 6.:** Antibody stainings of the adult thorax with anti-GFP antibody (green or white in the single colour images) and phalloidin (red). (A-D) Localisation to specific myofibrillar sub-regions; Fln-GFP marks the thick filaments (A, A’), Fray-GFP surrounds the myofibrils with an enrichment at M-lines and Z-discs (B, B’), Unc-89-GFP marks only M-lines (C, C’) and CG31772-GFP only Z-discs (D, D’). (E-H) Ilk-GFP strongly concentrates at the muscle-tendon attachment sites (E, E’), Dlg1-GFP labels the T-tubular membranes (F, F’), Babo-GFP shows a dotty, vesicular pattern (G, G’) and CG12118-GFP displays a mitochondrial pattern (H, H’). Scale bars indicate 5 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.021
+**Figure 6.:** Antibody stainings of the adult thorax with anti-GFP antibody (green or white in the single colour images) and phalloidin (red). (A-D) Localisation to specific myofibrillar sub-regions; Fln-GFP marks the thick filaments (A, A’), Fray-GFP surrounds the myofibrils with an enrichment at M-lines and Z-discs (B, B’), Unc-89-GFP marks only M-lines (C, C’) and CG31772-GFP only Z-discs (D, D’). (E-H) Ilk-GFP strongly concentrates at the muscle-tendon attachment sites (E, E’), Dlg1-GFP labels the T-tubular membranes (F, F’), Babo-GFP shows a dotty, vesicular pattern (G, G’) and CG12118-GFP displays a mitochondrial pattern (H, H’). Scale bars indicate 5 µm.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Co-staining of adult IFMs from fTRG276 (CG12118-GFP) with anti-GFP antibody (green) and the mitochondrial marker anti-complex V α (ATPase Vα, in red). Note the strong overlap of both signals. Scale bar indicate 5 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.022
+**Figure 6—figure supplement 1.:** Co-staining of adult IFMs from fTRG276 (CG12118-GFP) with anti-GFP antibody (green) and the mitochondrial marker anti-complex V α (ATPase Vα, in red). Note the strong overlap of both signals. Scale bar indicate 5 µm.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** Antibody stainings of the adult thorax with anti-GFP antibody (green or white in the single colour images), phalloidin (red) and DAPI (blue). (A-H) CG11617-GFP (A, E), CG12391-GFP (B, F) and CG17912 (C, G) are localised to the nuclei of IFMs and leg muscles, whereas Hb-GFP is only found in leg muscle nuclei (H) and not detectable in IFM nuclei (D). Scale bars indicate 5 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.023
+**Figure 6—figure supplement 2.:** Antibody stainings of the adult thorax with anti-GFP antibody (green or white in the single colour images), phalloidin (red) and DAPI (blue). (A-H) CG11617-GFP (A, E), CG12391-GFP (B, F) and CG17912 (C, G) are localised to the nuclei of IFMs and leg muscles, whereas Hb-GFP is only found in leg muscle nuclei (H) and not detectable in IFM nuclei (D). Scale bars indicate 5 µm.
 
 ![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig6-figsupp3-v2.jpg)
 
-**Figure 6—figure supplement 3.:** Antibody stainings of the adult thorax with anti-GFP antibody (green or white in the single colour images) and phalloidin (red). (A, H) Gene models of the 3’ end of Mhc (A) and rhea (H) listing the predicted isoforms; coding exons are shown in pink, 3’-UTRs in yellow boxes. The positions of the GFP tag insertions are marked by green arrows. (B-G) The shorter Mhc-GFP isoforms (Iso K, L, M) are expressed in IFMs and all leg muscles (B-D), whereas the slightly longer Mhc-GFP isoforms (Iso A, F, G etc.) are not detectable in IFMs but present in visceral muscles and a subset of leg muscles (E-G). (I-N) The shorter Talin-GFP isoforms (rhea Iso C, D) are not detectable at muscle-tendon attachment sites in IFMs (J, arrowheads) and leg muscles (K, arrowhead), however do localise to costamers of leg muscles (K). However, the long Talin-GFP isoforms (rhea Iso B, E, F, G) do localise to muscle-tendon attachment sites in IFMs (M) and leg muscles (N). Scale bars indicate 100 µm (B, E, I, L), 10µm (G) and 5 µm (C, D, F, J, K, M, N).DOI: http://dx.doi.org/10.7554/eLife.12068.024
+**Figure 6—figure supplement 3.:** Antibody stainings of the adult thorax with anti-GFP antibody (green or white in the single colour images) and phalloidin (red). (A, H) Gene models of the 3’ end of Mhc (A) and rhea (H) listing the predicted isoforms; coding exons are shown in pink, 3’-UTRs in yellow boxes. The positions of the GFP tag insertions are marked by green arrows. (B-G) The shorter Mhc-GFP isoforms (Iso K, L, M) are expressed in IFMs and all leg muscles (B-D), whereas the slightly longer Mhc-GFP isoforms (Iso A, F, G etc.) are not detectable in IFMs but present in visceral muscles and a subset of leg muscles (E-G). (I-N) The shorter Talin-GFP isoforms (rhea Iso C, D) are not detectable at muscle-tendon attachment sites in IFMs (J, arrowheads) and leg muscles (K, arrowhead), however do localise to costamers of leg muscles (K). However, the long Talin-GFP isoforms (rhea Iso B, E, F, G) do localise to muscle-tendon attachment sites in IFMs (M) and leg muscles (N). Scale bars indicate 100 µm (B, E, I, L), 10µm (G) and 5 µm (C, D, F, J, K, M, N).
 
 However, differences between muscle types are not only controlled transcriptionally but also by alternative splicing (Oas et al., 2014; Spletter and Schnorrer, 2014; Spletter et al., 2015). To investigate if our tagging approach can be used to generate isoform-specific lines, we have chosen two prominent muscle genes, mhc and rhea (the fly Talin), both of which have predicted isoforms with different C-termini (Figure 6—figure supplement 3A,H). Interestingly, we found that Mhc-isoforms K, L, M are expressed in IFMs and all leg muscles, however the predicted Mhc-isoforms A, F, G, B, S, V with the distal STOP codon are selectively expressed in visceral muscle and in a subset of leg muscles, however absent in adult IFMs (Figure 6—figure supplement 3B-G). Even more surprisingly, while the long ‘conventional’ rhea (Talin) isoforms B, E, F, G show the expected localisation to muscle attachment sites in IFMs and leg muscles (Weitkunat et al., 2014), the short Talin-isoforms C and D do not localise to muscle attachment sites, but are selectively concentrated at costamers of leg muscles (Figure 6—figure supplement 3I-N). Hence, the tagged proteins of our TransgeneOme library are ideally suited to label subcellular compartments and protein complexes, and in some cases they can even distinguish between closely related protein isoforms.
 
-## GFP-tagged proteins largely recapitulate the endogenous protein localisation
+### GFP-tagged proteins largely recapitulate the endogenous protein localisation
 
-Tagging of any protein can in principle affect its localisation pattern in a cell. To investigate the reliability of the observed GFP-tagged protein patterns, we selected eight different fTRG lines with specific GFP patterns in adults described above (LanA, LanB (not shown), Par6, Mlp84B, Mhc, Fln, Unc89/Obscurin and Dlg1), for which reliable antibodies against the corresponding proteins were readily available. In all cases, we observed a high degree of overlap between the pattern revealed by staining with anti-GFP antibody and the respective specific antibody staining pattern in the same transgenic line. This suggests that the tagged proteins expressed in the fTRG lines and the endogenous proteins co-localised to a large extent (
+Tagging of any protein can in principle affect its localisation pattern in a cell. To investigate the reliability of the observed GFP-tagged protein patterns, we selected eight different fTRG lines with specific GFP patterns in adults described above (LanA, LanB (not shown), Par6, Mlp84B, Mhc, Fln, Unc89/Obscurin and Dlg1), for which reliable antibodies against the corresponding proteins were readily available. In all cases, we observed a high degree of overlap between the pattern revealed by staining with anti-GFP antibody and the respective specific antibody staining pattern in the same transgenic line. This suggests that the tagged proteins expressed in the fTRG lines and the endogenous proteins co-localised to a large extent (Figure 7A-D,I-L). To rule out that the tagged protein somehow induces the endogenous protein to adopt an abnormal pattern, we compared the localisation patterns in the fTRG lines (with the protein specific antibody that visualizes both the tagged and untagged endogenous form of the protein) to a wild type strain, which only expresses the endogenous protein (Figure 7E-H,M-P). Only in one fTRG line, expressing the highly expressed short Mhc isoforms K, L, M-GFP tagged, we found an abnormally broad anti-Mhc pattern in IFMs, however not in leg muscles compared to wild type (Figure 7D,H,L,P). This pattern is explained by an abnormal myofibril morphology in the IFMs of the fTRG500 line, possibly because of an increased Mhc to actin ratio (4 copies vs. 2 copies), for which IFMs are particularly sensitive (Cripps et al., 1994).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig7-v2.jpg)
 
-**Figure 7.:** Antibody stainings of the adult thorax from fTRG or wild-type lines with anti-GFP antibody (green or white in the single colour images) and antibodies against various fly proteins (red). (A-D) Co-localisation of LanA-GFP with anti-Laminin antibody stain around the midgut (A), of Par6-GFP with anti-Par6 at the apical side of the proventriculus epithelium (B) and of Mlp84B-GFP as well as Mhc-GFP with anti-Mlp84B and anti-Mhc antibody stain in leg muscles, respectively (C, D). (E-H) Adult thoraces from wild-type flies show very similar patterns with the respective antibodies. (I-L) Adult IFMs showing the co-localisation of Fln-GFP with anti-Fln antibody staining (I), Unc-89/Obscurin-GFP with anti-Obscurin antibody staining (J), Dlg1-GFP with anti-Dlg1 antibody staining (K) and Mhc-GFP with anti Mhc antibody staining (L). (M-P) The same antibodies result in very similar patterns in wild-type IFMs apart from the a sharp versus a diffuse Mhc pattern comparing wild-type to Mhc-GFP flies (L, P). (Q) Western blots loaded with total protein extract from wild-type, Mlp84B-GFP, Fln-GFP and Dlg1-GFP adult males probed with anti-V5 (included in the GFP tag) anti-Mlp84B, anti-Fln and anti-Dlg1 antibodies. Note the about 40 kDa size shift of the tagged proteins in the respective lanes (marked with green arrow heads) versus the untagged protein band (black arrow heads).DOI: http://dx.doi.org/10.7554/eLife.12068.025
+**Figure 7.:** Antibody stainings of the adult thorax from fTRG or wild-type lines with anti-GFP antibody (green or white in the single colour images) and antibodies against various fly proteins (red). (A-D) Co-localisation of LanA-GFP with anti-Laminin antibody stain around the midgut (A), of Par6-GFP with anti-Par6 at the apical side of the proventriculus epithelium (B) and of Mlp84B-GFP as well as Mhc-GFP with anti-Mlp84B and anti-Mhc antibody stain in leg muscles, respectively (C, D). (E-H) Adult thoraces from wild-type flies show very similar patterns with the respective antibodies. (I-L) Adult IFMs showing the co-localisation of Fln-GFP with anti-Fln antibody staining (I), Unc-89/Obscurin-GFP with anti-Obscurin antibody staining (J), Dlg1-GFP with anti-Dlg1 antibody staining (K) and Mhc-GFP with anti Mhc antibody staining (L). (M-P) The same antibodies result in very similar patterns in wild-type IFMs apart from the a sharp versus a diffuse Mhc pattern comparing wild-type to Mhc-GFP flies (L, P). (Q) Western blots loaded with total protein extract from wild-type, Mlp84B-GFP, Fln-GFP and Dlg1-GFP adult males probed with anti-V5 (included in the GFP tag) anti-Mlp84B, anti-Fln and anti-Dlg1 antibodies. Note the about 40 kDa size shift of the tagged proteins in the respective lanes (marked with green arrow heads) versus the untagged protein band (black arrow heads).
 
 Tagging a protein may modify its turn-over rates and thus its expression levels, despite preserving its localisation. To investigate if our tagging approach generally changes protein levels, we chose three different tagged proteins, expressed in different tissues, for which we had functional antibodies and the expected 40 kDa shift caused by the tag should result in a detectable shift compared to the size of the untagged endogenous protein. We made total protein extracts from adults males and run Western blots. When probing with an antibody against the tag, we find the expected sizes for the IFM-specific Fln-GFP, the leg muscle-specific Mlp84B-GFP and the broader expressed Dlg1-GFP, the latter running in several bands due to splice isoforms (Figure 7Q). Probing the same extracts with specific antibodies against the respective proteins shows that both Fln-GFP and Dlg1-GFP levels are comparable to the endogenous protein, whereas Mlp84B-GFP is expressed at a lower level (Figure 7Q). The latter may be caused by the reduced affinity to the thick filament due to the tag resulting in an unstable protein. Together, these data demonstrate that many of the tagged proteins colocalise with the respective endogenous proteins, as has been observed in other large-scale tagging approaches (Stadler et al., 2013), however, exact expression levels can be different from the wild-type level in some cases. Thus, the fTRG library is a valuable collection of strains to study in vivo protein localisation.
 
-## Expression of the fTRG lines in the living pupal thorax
+### Expression of the fTRG lines in the living pupal thorax
 
-An attractive application of the fly TransgeneOme library is live in vivo imaging. In the past, we had established live imaging of developing flight muscles in the pupal thorax using over-expressed marker proteins (
+An attractive application of the fly TransgeneOme library is live in vivo imaging. In the past, we had established live imaging of developing flight muscles in the pupal thorax using over-expressed marker proteins (Weitkunat et al., 2014). Here, we wanted to test, if live imaging of proteins at endogenous expression levels is also possible within the thick pupal thorax. We selected six fTRG lines for well established genes and indeed could detect expression and subcellular localisation for all of them using a spinning-disc confocal microscope either at the level of the pupal epidermis or below the epidermis, in the developing flight muscles, or both (Figure 8). The adducin-like Hts-GFP labels the cytoplasm of fusing myoblasts from 10 to 20 hr APF (after puparium formation) and the developing SOPs (sensory organ precursors) with a particular prominent concentration in developing neurons and their axons (Figure 8B-E). In contrast, Dlg1-GFP localises to cell-cell-junctions of the pupal epidermis and to a network of internal membranes in the developing IFMs (Figure 8F-I) that may resemble developing T-Tubules, for which Dlg1 is a well-established marker (Razzaq et al., 2001). Interestingly, the long isoforms of Talin-GFP (rhea isoforms B, E, F, G) are largely in the cytoplasm and at the cortex of the epidermal cells, with a marked enrichment in the developing SOPs at 10 to 20 hr APF (Figure 8J,K). Further, Talin-GFP is strongly concentrated at muscle attachment sites of developing IFMs from 24 hr onwards (Figure 8L,M) consistent with antibody stainings of IFMs (Weitkunat et al., 2014).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig8-v2.jpg)
 
-**Figure 8.:** (A) Schematic drawing of a 10–12 hr (left) and a 30h pupal thorax (right). The developing epidermis is shown in blue, with the SOP precursors in yellow (developing neurons in red), the differentiating tendons are shown in orange, the myoblasts and muscle fibers in green, and the muscle-tendon junction in red. The schematic positions of the optical sections through epithelium and muscles are indicated with blue and green dotted lines, respectively. (B-Y) Live imaging of pupal thoraces at the indicated stages acquired with a spinning disc confocal (except S and T, which were acquired with a two-photon microscope). Blue bars above the image indicate epithelial sections and green bars indicate muscle sections (as explained in A). Hts-GFP is expressed in fusing myoblasts (B, C) and strongly in developing SOPs (D, E). Dlg1-GFP labels the epithelial junctions (F), internal muscle structures (green dots, G) and an unidentified additional developing epithelium (yellow dots, H, I). Talin-GFP is higher expressed in developing SOPs (J, K) and strongly localised to the muscle-tendon junction from 24 hr APF (red arrowheads, L, M). LanB1-GFP localises to the basal side of the developing epithelium (N) and surrounds the forming muscle fibers (green dots, O-Q) with a slight concentration at the muscle-tendon junction at 30 hr APF (red arrowheads, Q). Act88F-GFP weakly labels the developing epithelium, with a slight concentration in the SOPs until 20 hr APF (R, S) and very strongly marks the IFMs from 24 hr onwards (T, U). βTub60D-GFPis expressed in the fusing myoblasts (V, W) and also labels the microtubule bundles in the developing muscle fibers (X, Y) and hair cells of the developing sensory organs (light blue arrow heads in X). Scale bars indicate 10 µm.DOI: http://dx.doi.org/10.7554/eLife.12068.026
+**Figure 8.:** (A) Schematic drawing of a 10–12 hr (left) and a 30h pupal thorax (right). The developing epidermis is shown in blue, with the SOP precursors in yellow (developing neurons in red), the differentiating tendons are shown in orange, the myoblasts and muscle fibers in green, and the muscle-tendon junction in red. The schematic positions of the optical sections through epithelium and muscles are indicated with blue and green dotted lines, respectively. (B-Y) Live imaging of pupal thoraces at the indicated stages acquired with a spinning disc confocal (except S and T, which were acquired with a two-photon microscope). Blue bars above the image indicate epithelial sections and green bars indicate muscle sections (as explained in A). Hts-GFP is expressed in fusing myoblasts (B, C) and strongly in developing SOPs (D, E). Dlg1-GFP labels the epithelial junctions (F), internal muscle structures (green dots, G) and an unidentified additional developing epithelium (yellow dots, H, I). Talin-GFP is higher expressed in developing SOPs (J, K) and strongly localised to the muscle-tendon junction from 24 hr APF (red arrowheads, L, M). LanB1-GFP localises to the basal side of the developing epithelium (N) and surrounds the forming muscle fibers (green dots, O-Q) with a slight concentration at the muscle-tendon junction at 30 hr APF (red arrowheads, Q). Act88F-GFP weakly labels the developing epithelium, with a slight concentration in the SOPs until 20 hr APF (R, S) and very strongly marks the IFMs from 24 hr onwards (T, U). βTub60D-GFPis expressed in the fusing myoblasts (V, W) and also labels the microtubule bundles in the developing muscle fibers (X, Y) and hair cells of the developing sensory organs (light blue arrow heads in X). Scale bars indicate 10 µm.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig8-figsupp1-v2.jpg)
 
-**Figure 8—figure supplement 1.:** (A-F) Stills from live two-photon imaging of an intact 14 hr APF pupa expressing Act88F-GFP strongly labelling the developing IFMs (see Video 4). (G-K) Stills from a two-colour spinning disc Video expressing Act88F-GFP (green) and him-GAL4, UAS-palm-Cherry (red) labelling the myoblasts (see Video 5). Note the sudden green label of single myoblasts after fusion had occurred (yellow arrowheads, see Video 5). (L-Q) Stills from two-photon Video of an intact 14 hr APF pupa expressing βTub-60D-GFP in fusing myoblasts and developing myofibers (See Video 6). (R-V) Stills from a high resolution two-photon Video of an intact 16 hr APF pupa expressing βTub-60D-GFP. Single myoblast during fusion can be resolved (See Video 7). Strong microtubule bundles (red arrow heads) are visible close to the edges of the splitting myotube (white dashed lines, R); splitting is complete in (V). Scale bars indicate 50 µm (A-F, L-Q) and 10 µm (G-K) and (R-V).DOI: http://dx.doi.org/10.7554/eLife.12068.027
+**Figure 8—figure supplement 1.:** (A-F) Stills from live two-photon imaging of an intact 14 hr APF pupa expressing Act88F-GFP strongly labelling the developing IFMs (see Video 4). (G-K) Stills from a two-colour spinning disc Video expressing Act88F-GFP (green) and him-GAL4, UAS-palm-Cherry (red) labelling the myoblasts (see Video 5). Note the sudden green label of single myoblasts after fusion had occurred (yellow arrowheads, see Video 5). (L-Q) Stills from two-photon Video of an intact 14 hr APF pupa expressing βTub-60D-GFP in fusing myoblasts and developing myofibers (See Video 6). (R-V) Stills from a high resolution two-photon Video of an intact 16 hr APF pupa expressing βTub-60D-GFP. Single myoblast during fusion can be resolved (See Video 7). Strong microtubule bundles (red arrow heads) are visible close to the edges of the splitting myotube (white dashed lines, R); splitting is complete in (V). Scale bars indicate 50 µm (A-F, L-Q) and 10 µm (G-K) and (R-V).
 
 The dynamics of the extracellular matrix is little described thus far as very few live markers existed. Hence, we tested our LamininB1 fosmid and found that LanB1-GFP is readily detectable within the developing basement-membrane basal to the epidermal cells of the pupal thorax at 10 hr APF (Figure 8N). It also labels the assembling basement-membrane around the developing IFMs from 16 to 30 hr APF without a particularly obvious concentration at the muscle attachment sites (Figure 8O-Q). To specifically visualise the developing IFMs we chose Actin88F, which is specifically expressed in IFMs and a few leg muscles (Nongthomba et al., 2001). We find that the Act88F-GFP fTRG line indeed very strongly labels the IFMs from about 18 hr APF but is also expressed in the developing pupal epidermis again with an enrichment in the forming SOPs from 10 to 20 hr APF (Figure 8R-U). The latter is not surprising as Act88F-lacZ reporter has been shown to also label the developing wing epithelium (Nongthomba et al., 2001), again suggesting that our fTRG line recapitulates the endogenous expression pattern. Finally, we tested the βTub60D fTRG-line, as βTub60D was reported to label the myoblasts and developing myotubes in embryonic and adult muscles (Fernandes et al., 2005; Leiss et al., 1988; Schnorrer et al., 2007). Indeed, we detect βTub60D-GFP in fusing myoblasts and the developing IFMs, with particularly prominent label of the microtubule bundles at 24h APF (Figure 8V-Y). In addition, βTub60D-GFP also strongly marks the developing hairs of the sensory organs of the pupal epidermis (Figure 8X, see also Video 6).
 
-In order to test, if the fly TransgeneOme lines and the sGFP-tag are indeed suited for long-term live imaging in pupae, we chose Act88F-GFP and βTub60D-GFP and imaged the developing IFMs for more than 19 hr with a two-photon microscope using an established protocol for over-expressed markers (Weitkunat and Schnorrer, 2014). For both proteins, we can detect strongly increasing expression after 18 hr APF in the developing IFMs, with Act88F-GFP being restricted to the myotubes and the developing myofibrillar bundles (Video 4, Figure 8—figure supplement 1A-F) whereas βTub60D-GFP also labels the fusing myoblasts and is largely incorporated into prominent microtubule bundles (Video 6, Figure 8—figure supplement 1L-Q).10.7554/eLife.12068.028Video 4.Z-projection of a two-photon Video of an about 14 hr APF pupa expressing Act88F-GFP.A stack was acquired every 20 min for 19 hr. Expression of Act88F-GFP increases in the indirect flight muscles dramatically, thus contrast was reduced several times in course of the Video to avoid over-exposure. Video plays with 5 frames per second. Time is given in hh:mm.DOI: http://dx.doi.org/10.7554/eLife.12068.02810.7554/eLife.12068.029Video 5.Single plane of a spinning disc confocal Video of an about 14 hr APF old pupa expressing Act88F-GFP (green) in the flight muscle myotubes and him-GAL4; UAS-palm-Cherry in the myoblasts.An image stack was acquired every two minutes. Note the newly fused myoblasts acquired the GFP label within a single time interval (highlighted by green arrows). Video plays with 5 frames per second. Time is given in minutes.DOI: http://dx.doi.org/10.7554/eLife.12068.02910.7554/eLife.12068.030Video 6.Z-projection of a two-photon Video of an about 14 hr APF pupa expressing βTub60D-GFP.A stack was acquired every 20 min for 25 hr. Note the high expression of βTub60D-GFP in fusing myoblasts and the thick microtubules bundles in the developing flight muscles. Hair cells of the developing sensory organs also show strong expression, however, move out of the Z-stack over time. Video plays with 5 frames per second. Time is given in hh:mm.DOI: http://dx.doi.org/10.7554/eLife.12068.03010.7554/eLife.12068.031Video 7.Single plane of a two-photon Video of an about 16 hr APF old pupa expressing βTub60D-GFP in myoblasts and the forming flight muscle myotubes.An image stack was acquired every two minutes for more than 3 hr. Note that single myoblasts can be followed during fusion. Most myoblasts fuse at the center of the myotube, which gradually splits into two myotubes. Video plays with 5 frames per second. Time is given in hh:mm.DOI: http://dx.doi.org/10.7554/eLife.12068.031
+In order to test, if the fly TransgeneOme lines and the sGFP-tag are indeed suited for long-term live imaging in pupae, we chose Act88F-GFP and βTub60D-GFP and imaged the developing IFMs for more than 19 hr with a two-photon microscope using an established protocol for over-expressed markers (Weitkunat and Schnorrer, 2014). For both proteins, we can detect strongly increasing expression after 18 hr APF in the developing IFMs, with Act88F-GFP being restricted to the myotubes and the developing myofibrillar bundles (Video 4, Figure 8—figure supplement 1A-F) whereas βTub60D-GFP also labels the fusing myoblasts and is largely incorporated into prominent microtubule bundles (Video 6, Figure 8—figure supplement 1L-Q).
+
+![Video 4.](https://cdn.elifesciences.org/articles/12068/elife-12068-media4.mp4.jpg)
+
+**Video 4.:** A stack was acquired every 20 min for 19 hr. Expression of Act88F-GFP increases in the indirect flight muscles dramatically, thus contrast was reduced several times in course of the Video to avoid over-exposure. Video plays with 5 frames per second. Time is given in hh:mm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/12068/elife-12068-media5.mp4.jpg)
+
+**Video 5.:** An image stack was acquired every two minutes. Note the newly fused myoblasts acquired the GFP label within a single time interval (highlighted by green arrows). Video plays with 5 frames per second. Time is given in minutes.
+
+![Video 6.](https://cdn.elifesciences.org/articles/12068/elife-12068-media6.mp4.jpg)
+
+**Video 6.:** A stack was acquired every 20 min for 25 hr. Note the high expression of βTub60D-GFP in fusing myoblasts and the thick microtubules bundles in the developing flight muscles. Hair cells of the developing sensory organs also show strong expression, however, move out of the Z-stack over time. Video plays with 5 frames per second. Time is given in hh:mm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/12068/elife-12068-media7.mp4.jpg)
+
+**Video 7.:** An image stack was acquired every two minutes for more than 3 hr. Note that single myoblasts can be followed during fusion. Most myoblasts fuse at the center of the myotube, which gradually splits into two myotubes. Video plays with 5 frames per second. Time is given in hh:mm.
 
 As photo bleaching was no serious problem in these long Videos, we also recorded Videos at higher time and spatial resolution. We labelled the developing IFMs with Act88F-GFP and the myoblasts with a him-GAL4, UAS-palm-Cherry and acquired a 3D stack every two minutes using a spinning disc-confocal. This enabled us to visualise single myoblast fusion events in developing IFMs of an intact pupa (Video 5, Figure 8—figure supplement 1G-K). The six dorsal longitudinally oriented IFMs develop from three larval template muscles to which myoblasts fuse to induce their splitting into six myotubes (Fernandes et al., 1991). Using high resolution imaging of the βTub60D-GFP line, we find that most myoblasts fuse in the middle of the developing myotube during myotube splitting, with prominent microtubules bundles located at the peripheral cortex of the splitting myotube (Video 7, Figure 8—figure supplement 1R). These prominent microtubules bundles are then relocated throughout the entire developing myotube (Video 7, Figure 8—figure supplement 1S-V). Taken together, these live imaging data suggest that many fTRG lines will be well suited for high resolution live imaging of dynamic subcellular protein localisation patterns in developing Drosophila organs. This will strongly expand the set of live markers available for research in flies.
 
-## Fly transgeneOme library as bait for proteomics
+### Fly transgeneOme library as bait for proteomics
 
-For the proper composition, localisation and in vivo function of most protein complexes endogenous expression levels of the individual components are critical (
+For the proper composition, localisation and in vivo function of most protein complexes endogenous expression levels of the individual components are critical (Rørth et al., 1998; Tseng and Hariharan, 2002). Hence, the TransgeneOme library would be an ideal experimental set-up to purify protein complexes from different developmental stages using endogenous expression levels of the bait protein. In principle, all the small affinity tags (TY1, V5, FLAG) (Figure 1—figure supplement 1) can be used for complex purifications. The presence of precision and TEV cleavage sites even allow two-step purifications. For proof of principle experiments, we selected four tagged proteins as baits: Ilk, Dlg1, Talin and LanB1, and analysed two different developmental stages. In each case we homogenised hundred 24 to 48 hr pupae and hundred adult flies per experiment and mixed the cleared lysate with a GFP antibody matrix to perform single step affinity enrichment and mass-spec analysis modified from the QUBIC protocol (Hein et al., 2015; Hubner et al., 2010; Keilhauer et al., 2014). Each affinity-enrichment was performed in triplicate and intensity profiles of all identified proteins were quantified in a label-free format by running all 30 purifications consecutively on the same Orbitrap mass-spectrometer and analysing the data with the MaxQuant software suite (Cox and Mann, 2008; Cox et al., 2014) (Supplementary file 5). Interestingly, enriching Ilk-GFP from both, developing pupae and adult flies, recovered the entire Ilk, PINCH, Parvin, RSU-1 complex (Figure 9), which had previously been purified in vitro from Drosophila S2 cells (Kadrmas et al., 2004) and mammalian cells (Dougherty et al., 2005; Tu et al., 2001) giving us confidence in our methodology. We also successfully enriched Talin-GFP from pupae or adults, however did not identify an obvious strong and specific binding partner (Figure 9, Supplementary file 5). In contrast, we identified Mesh as a novel interactor of Dlg1 from pupae and adult flies. Mesh colocalises with Dlg1 at septate junctions of the embryonic Drosophila midgut, however, a molecular interaction of both proteins was not established (Izumi et al., 2012). Finally, we purified the laminin complex by pulling on LanB1, which recovered LanB2 and LanA roughly stoichiometrically, both from pupae and adult flies, as had been found in cell culture experiments (Fessler et al., 1987), showing that extracellular matrix complexes can also be purified from in vivo samples with our methodology. In summary, these data demonstrate that interaction proteomics with the fly TransgeneOme library can confirm known interaction partners and discover novel in vivo complex members, making the system attractive for a variety of biochemical applications.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/12068/elife-12068-fig9-v2.jpg)
 
-**Figure 9.:** GFP-tagged Ilk, Dlg1, Talin, and LanB1, respectively, were affinity-enriched from protein extracts generated from whole pupae (left) or adult flies (right) using anti-GFP immunoprecipitation. A wild-type fly strain not expressing any GFP-tagged protein served as control. Proteins were quantified using mass spectrometry and the MaxLFQ label-free quantification algorithm in MaxQuant. Selected proteins are visualized by their enrichment factors in individual samples over the control (or simulated noise level, if not detected in the control). Specific interaction partners are characterised by the similarity of the quantitative profiles and co-enrichment with the respective bait proteinsDOI: http://dx.doi.org/10.7554/eLife.12068.032
+**Figure 9.:** GFP-tagged Ilk, Dlg1, Talin, and LanB1, respectively, were affinity-enriched from protein extracts generated from whole pupae (left) or adult flies (right) using anti-GFP immunoprecipitation. A wild-type fly strain not expressing any GFP-tagged protein served as control. Proteins were quantified using mass spectrometry and the MaxLFQ label-free quantification algorithm in MaxQuant. Selected proteins are visualized by their enrichment factors in individual samples over the control (or simulated noise level, if not detected in the control). Specific interaction partners are characterised by the similarity of the quantitative profiles and co-enrichment with the respective bait proteins
 
 ## Discussion
 
@@ -233,27 +1126,27 @@ Wangler, Yamamoto and Bellen convincingly argued that the Drosophila system rema
 
 ## Materials and methods
 
-## TransgeneOme clone engineering
+### TransgeneOme clone engineering
 
 Fosmids were engineered as described previously (Ejsmont et al., 2009; 2011), except for the inclusion of the ‘pre-tagging’ step in the genome-wide TransgeneOme set. All tagging cassettes were generated from synthetic DNA and cloned into R6K carrying plasmids, which require the presence of the pir gene product for replication (Metcalf et al., 1996). The pir gene is not present in the FlyFos library host strain, thereby ensuring near-complete lack of background resistance in the absence of the correct homologous recombination event.
 
 Details of the recombineering steps are as follows (Figure 1B): Step 1. The E. coli cells containing a FlyFos clone covering the gene locus of interest are transformed with the pRedFlp plasmid, containing the genes necessary for the homologous recombination and the Flp recombinase under independently inducible promoters. Step 2. Next, a ‘pre-tagging’ cassette carrying an antibiotic resistance gene (NatR, nourseothricin resistance) surrounded by regions of homology to all specific tagging cassettes (Figure 1—figure supplement 1) and flanked by gene-specific homology arms is electroporated as linear DNA fragment produced by PCR. By combination of induced (L-rhamnose) pRedFlp homologous recombination enzyme action and strong selection with a cocktail of three antibiotics (one to maintain the fosmid (chloramphenicol, Cm), one to maintain the pRedFlp (hygromycin, Hgr) and nourseothricin (Ntc) to select for the inserted fragment) the electroporated linear 'pre-tagging' fragment becomes inserted in front of the STOP codon of the gene of interest. Step 3. The ‘pre-tagging’ cassette is exchanged for a cassette of the chosen tag coding sequence including an FRT-flanked selection / counter selection marker (rpsL-neo). This cassette is now universally targeting the homologous sequences shared by the tagging and pre-tagging cassettes and is produced in bulk by restriction enzyme-mediated excision from a plasmid. Note that in this way, no PCR-induced mutations can be introduced at this step. Step 4. Upon Flp induction (with anhydrotetracycline), the rpsL-neo cassette is excised, leaving a single FRT site, positioned in frame after the tag coding sequence. In this way, the endogenous STOP codon and the 3’-UTR of the tagged gene are used. Step 5. Finally, the recombineering plasmid is removed from the cells containing the engineered fosmids by inhibition of its temperature sensitive origin of replication and release from Hgr selection. The cells are plated on a selective chloramphenicol agar plate, from which a single colony is picked and further validated.
 
-## NGS-based validation of the TransgeneOme clones
+### NGS-based validation of the TransgeneOme clones
 
 For NGS-based validation of the TransgeneOme library single colonies for each TransgeneOme clone were picked into 96-well plates, grown to saturation and the individual wells of all 96-well plates were pooled into 8 row and 12 column pools. Fosmid DNA was isolated from these pools and barcoded mate pair fragment libraries were prepared using the Nextera matePair library preparation chemistry from Illumina. The library was size selected through agarose gel isolation of approximately 3 kb fragments and sequenced on HiSeq 2500 (Illumina), with paired-end read lengths of 100 bp. Adapters and low quality sequences were trimmed with Trimmomatic0.32. (parameters: ILLUMINACLIP:NexteraPE-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36). To detect un-flipped fosmid sequences (where the FLP-mediated excision of selection cassette failed), the read pairs were mapped with Bowtie2 (Langmead and Salzberg, 2012) against the un-flipped tag sequence and the genome. If any read of the mate of the pair mapped to the un-flipped sequence, while the second mate mapped to the genome consistent with the estimated mate pair insert size of 3000 bp ± 1000 bp, the fosmid was flagged as un-flipped and was not further analysed. To identify mutations in the tag and in the immediate genomic surrounding (± 1000 bp), the NGS reads were mapped against the fosmid references that included the flipped tag. The Bowtie2 was set to report only hits where both reads of the pairs map concordantly to the insert size in the tag and in the genome (parameters: -I 2200 -X 3700 --rf --no-discordant --no-unal --no-mixed). PCR duplicated read pairs were removed using samtools1.1 rmdup (Li et al., 2009). Mutations were identified by utilising SNP calling implemented in FreeBayes (Garrison and Marth, 2012) using the standard filters and vcffilter to eliminate reported SNPs with scores < 20. Finally, in the last step, the information of the row and column pools were compared and summarized using a custom C-program that read the results of the SNP calling and the Bowtie mappings and counted the coverage for each read pair anchored in tag sequence with at least 20 bp. To correct for random PCR or sequencing errors the reported SNPs were compared for the row and column pools of each fosmid and SNPs occurring in both pools with coverage of 3 or more reads were considered as real.
 
-## Drosophila stocks and genetic rescue experiments
+### Drosophila stocks and genetic rescue experiments
 
 Fly stocks were maintained using standard culture conditions. All crosses were grown at 25°C unless otherwise noted. Most of the fly mutant or deficiency strains for the rescue experiments were obtained from the Bloomington Drosophila Stock Center and if located on X or 2nd chromosome crossed together with the respective fTRG line. If the mutant gene was located on the 3rd chromosome, it was recombined with the fTRG insertion. Rescue was generally tested in trans-heterozygotes as indicated in Table 2. The rescue for 6 genes (bam, fat, mask, rap, RhoGEF2 and yki) was done by others, who communicated or published the results (Table 2). For the rescue of flightlessness a standard flight test was used (Schnorrer et al., 2010).
 
-## Generation of transgenic fly TransgeneOme (fTRG) lines
+### Generation of transgenic fly TransgeneOme (fTRG) lines
 
 Most TransgeneOme fosmid clones were injected into the y[1], w[*], P{nos-phiC31int.NLS}X; PBac{y+-attP-3B}VK00033 (BL-32542). This stock has white eyes and no fluorescent eye markers, which would interfere with screening for the red fluorescent eye marker used in the FlyFos clones (Ejsmont et al., 2009). A few fosmid clones were also injected into y[1], w[*], P{nos-phiC31int.NLS}X; PBac{y+-attP-3B}VK00002, with the attP site located on the 2nd chromosome. The osk-GFP fosmid was injected into attP40. Please note that all fTRG lines contain the strong 3xP3-dsRed marker (Ejsmont et al., 2009). This is an eyeless derived promoter fragment resulting in dsRed expression in the developing eye and in the brain. This needs to be taken into account when working with the developing or adult brain.
 
-## Detailed injection protocol (adapted from Venken et al., 2010)
+#### Detailed injection protocol (adapted from Venken et al., 2010)
 
-## Immuno-stainings and Western blotting
+### Immuno-stainings and Western blotting
 
 Ovaries: sGFP-protein detection and antibody co-stainings of egg-chambers was done as previously described (Dunst et al., 2015). Detection of the oskar-GFP mRNA was performed with a gfp-antisense probe (Jambor et al., 2014) and co-staining of osk mRNA and Osk protein was done as previously described (Jambor et al., 2011) using a gfp-antisense probe and a rabbit anti-GFP antibody (1:1000, ThermoFisher). Rabbit anti-Osk was used 1:3000 (gift on Anne Ephrussi), mouse anti-Grk was used 1:100 (DSHB).
 
@@ -261,7 +1154,7 @@ Adult thoraces: Antibody stainings of adult thoraces, including flight, leg and 
 
 Protein detection by Western blotting used standard procedures. 15 adult males were homogenised in 200 µl SDS buffer (250 mM Tris pH 6.8, 30% glycerol, 1% SDS, 500 mM DTT) and 5 µl were loaded per lane of a 10% SDS-PAGE gel. The Immobilon membranes (Millipore) were blocked with 10% milk powder and incubated with primary antibodies overnight (mouse anti-V5 1:10,000 (Invitrogen), mouse anti-Dlg1 1:10,000, rabbit anti-Mlp84B 1:20,000, rabbit anti-Fln 1:10,000). Detection used POD-coupled secondary antibodies (Jackson labs) and chemiluminescence (Millipore) using a LAS4000 detector system (FujiFilm).
 
-## Live imaging
+### Live imaging
 
 SPIM imaging of embryos: De-chorionated embryos of the appropriate age were embedded in 1% low melting point agarose and mounted into a glass capillary. Fluorescent microspheres (FY050 Estapor microspheres, Merck Millipore; 1:4000) were included in the embedding medium for multi-view registration. The embryos were imaged using the Zeiss Lightsheet Z.1 with a Zeiss 20x/1.0 water-immersion Plan Apochromat objective lens with 0.8x zoom at 25°C using 488 nm laser set at 4 mW. Five views were imaged using dual-sided illumination with Zeiss 10x/0.2 illumination lenses. A mean fusion was applied to fuse both illumination sides after acquisition using the ZEN software (Zeiss). The views were acquired at 72° angles with a stack size of 130 µm and a step size of 1.5 µm. Exposure time were 30 ms per slice. Each slice consists of 1920 x 1200 pixels with a pixel size of 0.29 µm and a bit depth of 16 bits. The light sheet thickness was 4 µm at the center of the field of view. The embryos were imaged from the onset of GFP expression (determined empirically) until late embryogenesis with a time resolution of 15 min. Multi-view processing of the dataset was carried out using the Fiji plugin for multi-view reconstruction (Preibisch et al., 2009; Schmied et al., 2014), which was executed on a high performance computing cluster (Schmied et al., 2015). The multi-view reconstruction was followed by multi-view deconvolution (Preibisch et al., 2014), for which the images were down sampled by a factor of two. Videos were extracted via the Fiji plugin BigDataViewer (Pietzsch et al., 2015).
 
@@ -269,6 +1162,6 @@ The Gsb-GFP fTRG line was crossed with the H2Av-mRFPruby line (Fischer et al., 2
 
 Imaging of pupae: Staging and live imaging of the pupae were performed at 27ºC. Live imaging of pupae at the appropriate stage was done as described previously (Weitkunat and Schnorrer, 2014). Briefly, the staged pupa was cleaned with a brush and a small observation window was cut into the pupal case with sharp forceps. The pupa was mounted on a custom-made slide and the opening was covered with a small drop of 50% glycerol and a cover slip. Z-stacks of either single time points or long-term time-lapse Videos were acquired using either a spinning disc confocal microscope (Zeiss, Visitron) or a two-photon microscope (LaVision), both equipped with heated stages.
 
-## Proteomics
+### Proteomics
 
 Per sample about hundred pupae or adult flies were snap-frozen in liquid nitrogen and ground to a powder. The powder was re-suspended and further processed as described in the quantitative BAC-GFP interactomics protocol (Hubner et al., 2010). In brief, 800 µl of lysate per sample were cleared by centrifugation. The cleared lysate was mixed with magnetic beads pre-coupled to anti-GFP antibodies and run over magnetic micro-columns (both Miltenyi Biotec). Columns were washed, and samples subjected to in-column tryptic digestion for 30 min. Eluates were collected and digestion continued overnight, followed by desalting and storage on StageTips. Eluted peptides were analysed with an Orbitrap mass spectrometer (Thermo Fisher). Raw data were analysed in MaxQuant version 1.4.3.22 (Cox and Mann, 2008) using the MaxLFQ algorithm for label-free quantification (Cox et al., 2014). Interacting proteins were identified by the similarity of their intensity profiles to the respective baits (Keilhauer et al., 2014). Heat maps were plotted in the Perseus module of the MaxQuant software suite.

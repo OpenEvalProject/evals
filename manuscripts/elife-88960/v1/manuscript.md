@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Biochemistry, University of Oxford Oxford United Kingdom
-2. https://ror.org/052gg0110 Kavli Institute for Nanoscience Discovery, Dorothy Crowfoot Hodgkin Building, University of Oxford Oxford United Kingdom
-3. https://ror.org/013meh722 Department of Biochemistry, University of Cambridge Cambridge United Kingdom
+1. Department of Biochemistry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Kavli Institute for Nanoscience Discovery, Dorothy Crowfoot Hodgkin Building, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Department of Biochemistry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -30,23 +30,39 @@ Pathogens have evolved a wide range of different approaches to evade complement-
 
 ## Results
 
-## Two distinct binding sites connect C3b to ISG65
+### Two distinct binding sites connect C3b to ISG65
 
 We previously determined the crystal structure of ISG65 bound to C3d (equivalent to the TED domain of C3b), revealing how the three core helices of ISG65 form a concave surface to which C3d binds (Macleod et al., 2022). However, this study also showed that this structure does not reveal the full interaction interface between ISG65 and C3b. Surface plasmon resonance had been used to measure the affinities of ISG65 for the different fragments of C3, C3b, and C3d (Macleod et al., 2022). C3b exhibited a higher affinity for C3b than C3d, suggesting that ISG65 forms contacts with C3b in addition to those structurally characterised with the TED domain.
 
 To provide a full molecular model of ISG65 bound to C3b we used cryogenic electron microscopy (Figure 1). We prepared ISG65-C3b complex in the presence of fluorinated octyl maltoside, which improved particle distribution in grids while avoiding dissociation of the complex. We collected 14,339 movies from which particles were extracted and a three-dimensional volume was calculated. To improve the resolution of the region containing the binding site, local refinement was performed using a mask covering ISG65 and the TED and CUB domains of C3b, resulting in a volume at 3.4 Å resolution. Guided by previous structures of ISG65 (Macleod et al., 2022) and C3b (Janssen et al., 2006) and by an Alphafold2 (Jumper et al., 2021) model of ISG65, we were able to build a molecular model for the ISG65-C3b complex (Figure 1, Figure 1—figure supplement 1, Supplementary file 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88960/elife-88960-fig1-v1.jpg)
+
+**Figure 1.:** (a) Composite volume of locally refined regions determined using cryogenic electron microscopy for ISG65 bound to human C3b. ISG65 is coloured in different shades of blue and green, as indicated in the legend in the centre of the panel (loop1 and helix 2 are light blue, loop 2 and helix 3 are green and loop 3 and helix 4 are dark blue). C3b is coloured in grey scale with the α-chain in light grey and the β-chain in dark grey. The TED domain is highlighted in orange and the CUB domain highlighted in yellow. (b) Molecular model of the same complex with a colour scheme matching that of (a). (c) A schematic showing the features of ISG65, coloured as (a). Regions resolved in the structure are indicated underneath the schematic using a green line and regions predicted to be disordered using AUCpreD (Wang et al., 2016) are shown by the red line.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88960/elife-88960-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Steps highlighted in blue were performed in SIMPLE, steps in green were performed in CryoSPARC, and steps in orange were performed in RELION.
+
 This structure reveals the two distinct interfaces formed between ISG65 and C3b (Figure 1, Figure 2a). The first of these, interface 1, matches that previously identified through our crystallographic analysis (Macleod et al., 2022), with no significant differences between the models in this region. While our previous structure did not have interpretable electron density for loops L2 and L3, perhaps due to their disorder, or due to proteolysis during crystallisation, most of L2 and parts of L3 were ordered and resolved in our cryogenic electron microscopy-derived volume. This allowed us to build a de novo model for residues 179–212 of L2. In particular, L2 directly contacts the CUB domain of C3b, with an electrostatic interaction centered around C3b residue Arg954. Docking suggests that this second interface does not form between ISG65 and C3, as also seen in a recent structure of ISG65 bound to C3b (Sülzen et al., 2023; Figure 2b). The presence of this additional contact between ISG65 and C3b, which is not present between ISG65 and the TED domain alone, explains the differences in affinity of ISG65 for C3, C3b, and C3d.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88960/elife-88960-fig2-v1.jpg)
+
+**Figure 2.:** (a) The ISG65-C3b model shown in transparent cryo-EM density. The top panel shows the interface between ISG65 and the TED domain (orange), with bottom panel showing the interface between loop L2 of ISG65 (green) and the CUB domain of C3b (yellow). In each case, the left-hand panel shows the intact structure, with a dotted box highlighting the region shown in an enlarged form in the right-hand panel. (b) The ISG65 model superimposed onto a previously determined structure of C3 (PDB ID: 2A73) (Janssen et al., 2005) via the TED domain of the ISG65-C3b model. This is shown as a ribbon within a transparent surface representation. ISG65 can bind to C3 via the TED domain, via the same interface as previously identified for ISG65-C3d (Macleod et al., 2022). (c) Surface plasmon resonance data showing responses from the injection of ISG65, ISG65∆L2, and ISG65N188A,H189A,Y190A (twofold serial dilutions from a concentration of 10 μM) over a flow cell coupled to biotin-C3b or biotin-C3d. Data is representative of three experimental repeats. Raw data is available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88960/elife-88960-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Two experimental replicates of the data are shown in Figure 2c. Twofold serial dilutions from a concentration range of 5000–312.5 nM. Data shown here is derived from two biological replicates of biotin-C3b, biotin-C3d, and ISG65, and one biological replicate of ISG65∆L2, and ISG65N188A,H189A,Y190A. Raw data is available in Figure 2—figure supplement 1—source data 1 and Figure 2—figure supplement 1—source data 2.
 
 We, and others, had previously used surface plasmon resonance analysis to measure the binding of C3, C3b, and C3d to immobilised biotinylated ISG65 (Macleod et al., 2022; Sülzen et al., 2023; Lorentzen et al., 2023). However, we were concerned that differences in size and shape between the C3 variants might cause them to interact differently in this assay due to differences in hydrodynamic properties affecting their on-rates. To reliably compare ISG65 variants, we, therefore, changed to an assay in which C3b and C3d were conjugated to the chip surface, allowing us to flow the same ISG65 samples over these surfaces. To conjugate C3b and C3d in a manner which closely matches their orientation when conjugated to a pathogen, we chemically biotinylated Cys1010 and captured it on a streptavidin-coated chip. ISG65 was flowed over immobilised biotinylated C3b and biotinylated C3d, showing binding which fitted a one-to-one binding model with an affinity of 2.9 μM for C3b, and 6 μM for C3d (Figure 2, Figure 2—figure supplement 1). As C3d contains all determinants for formation of interface 1, we attribute the greater affinity for C3b over C3d to the contacts formed in interface 2. Indeed, we next generated two mutant forms of ISG65 in which we aimed to disrupt interface 2, either through deletion of loop 2 (ISG65ΔL2), or through mutation of the three ISG65 residues in loop 2 which mediate interface 2 (ISG65L2N188A,H189A,Y190A). In neither case did these mutations affect the affinity for C3d but both mutations reduced the affinity for C3b to match that for C3d, supporting the model in which interface 2 forms with C3b but not C3d (Figure 2, Figure 2—figure supplement 1).
 
-## ISG65 does not inhibit formation of the C3 convertase but does form a specific covalent conjugate with C3b
+### ISG65 does not inhibit formation of the C3 convertase but does form a specific covalent conjugate with C3b
 
 In addition to determining the structure of C3b bound to ISG65, the same data set also yielded a three-dimensional class consisting of a structure of C3b which lacked density for ISG65 and was indistinguishable from previous C3b structures. This allowed us to determine whether the presence of ISG65 caused a conformational change in C3b (Figure 3a). Fitting the model of the C3b-ISG65 complex (without ISG65) into the volume derived for the complex resulted in a map-model correlation of 0.79. When we fitted the same model into the volume derived from C3b alone, the correlation was 0.76, indicating that the ISG65-bound conformation of C3b is equivalent to the free conformation of C3b. Therefore, unlike bacterial C3b-effector proteins, such as Efb-C (Hammel et al., 2007), ISG65 does not prevent C3 from adopting the active conformation of C3b. Indeed, this is consistent with ISG65 binding to C3b that is already conjugated to the trypanosome surface, rather than preventing C3b formation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88960/elife-88960-fig3-v1.jpg)
 
-**Figure 3.:** (a) The structure of the ISG65-C3b complex (without ISG65) docked into the electron microscopy-derived volumes obtained for the ISG65-C3b complex (left) and C3b alone (right). (b) Composite models obtained by docking the C3b-ISG65 structure onto those of C3b bound to factors B and D (PDB ID: 2XWJ) (Forneris et al., 2010) or factor Bb (6RUR) (Rooijakkers et al., 2009). (c) An assay for C3 convertase formation in which C3b and factor D were each added at concentrations of 12 nM and C3 and factor B at concentrations of 600 nM. Samples were taken at different time points and were analysed by SDS-PAGE analysis with Coomassie straining. This was done in the absence (left-hand gel) and presence (right-hand gel) of 2 μM ISG65. The graphs show quantification by densitometry for factors B, Ba and C3a to assess convertase function. (d) An equivalent assay to that shown in (c), conducted in the absence of non-complement protein (left), or the presence of 2 μM ISG65 (central) or 2 μM BSA (right). The left-hand gel was run in non-reducing conditions while the right-hand gel was run in reducing conditions. (e). An equivalent assay to that shown in (c), conducted in presence of 2 μM ISG65 or of ISG65 variants lacking loop 1 (ΔL1), loop 2 (ΔL2), loop 3 (ΔL3) or the extended disordered C-terminal region (ΔC-ter). Raw data available Figure 3—source data 1.Figure 3—source data 1.Figure 3c – raw gel 1 annotated.Figure 3—source data 2.Figure 3c – raw gel 1.Figure 3—source data 3.Figure 3c – raw gel 2 annotated.Figure 3—source data 4.Figure 3c – raw gel 2.Figure 3—source data 5.Figure 3d – raw gel annotated.Figure 3—source data 6.Figure 3d – raw gel.Figure 3—source data 7.Figure 3e – raw gel annotated.Figure 3—source data 8.Figure 3e – raw gel.
+**Figure 3.:** (a) The structure of the ISG65-C3b complex (without ISG65) docked into the electron microscopy-derived volumes obtained for the ISG65-C3b complex (left) and C3b alone (right). (b) Composite models obtained by docking the C3b-ISG65 structure onto those of C3b bound to factors B and D (PDB ID: 2XWJ) (Forneris et al., 2010) or factor Bb (6RUR) (Rooijakkers et al., 2009). (c) An assay for C3 convertase formation in which C3b and factor D were each added at concentrations of 12 nM and C3 and factor B at concentrations of 600 nM. Samples were taken at different time points and were analysed by SDS-PAGE analysis with Coomassie straining. This was done in the absence (left-hand gel) and presence (right-hand gel) of 2 μM ISG65. The graphs show quantification by densitometry for factors B, Ba and C3a to assess convertase function. (d) An equivalent assay to that shown in (c), conducted in the absence of non-complement protein (left), or the presence of 2 μM ISG65 (central) or 2 μM BSA (right). The left-hand gel was run in non-reducing conditions while the right-hand gel was run in reducing conditions. (e). An equivalent assay to that shown in (c), conducted in presence of 2 μM ISG65 or of ISG65 variants lacking loop 1 (ΔL1), loop 2 (ΔL2), loop 3 (ΔL3) or the extended disordered C-terminal region (ΔC-ter). Raw data available Figure 3—source data 1.
 
 The initial conjugation of C3b to the trypanosome surface is followed by formation of the C3 convertase, consisting of C3b bound to factor Bb (C3bBb). This requires factor B to first bind to C3b and then be cleaved by factor D to generate C3bBb. In order to determine whether ISG65 can block C3bBb formation, we first compared the ISG65-C3b structure with those of C3b bound to factors B and D30. This indicates that ISG65 does not compete with either factor B or Factor D and does not block the binding of factor B (Figure 3b). This suggests that the C3 convertase can form in the presence of ISG65.
 
@@ -54,9 +70,15 @@ We, therefore, developed an in vitro assay for C3 convertase formation in which 
 
 Comparison of the outcome of C3 convertase formation in the presence and absence of ISG65, revealed that the presence of ISG65 resulted in a high molecular weight band, which we identified through mass spectrometry to be a conjugate of ISG65 with C3b (Figure 3c, Supplementary file 3). When we conducted the equivalent experiment using the same amount of bovine serum albumin instead of ISG65, we did not observe the formation of this conjugate, suggesting that it occurs specifically due to the proximity of ISG65 and the thioester-forming residue of C3b when in the complex (Figure 3d). Finally, to identify which region of ISG65 is responsible for the formation of this conjugate, we used versions of ISG65 which lack loops L1, L2, or L3, or which lacked the flexible C-terminal region (ΔC). In each of the loop mutants, we still observed the formation of the ISG65-C3b conjugate. However, this was not observed in the ΔC mutant (Figure 3e). This C-terminal region is an unstructured string of 72 amino acids that does not form part of the binding site for C3b and is not observed in the structures. It is predicted to form a flexible linker which connects the structured ISG65 domain to the plasma membrane. These data, therefore, suggest that the proximity of the flexible linker of ISG65 to the thioester site of C3b, which occurs due to the interaction of ISG65 with C3/C3b, increases the likelihood of the thioester domain coming into contact with the ISG65 C-terminal linker, leading to the formation of a preferential conjugate between ISG65 and C3b. Indeed, as ISG65 can interact with C3 before conversion to C3b generates the reactive thioester, this conjugate may be preferred over conjugation of C3b to VSG, acting as a decoy to reduce the conjugation of C3b to other regions of the trypanosome surface. Whether this occurs on a trypanosome surface requires further experimentation.
 
-## ISG65 blocks the binding of complement receptors 2 and 3 to C3b and C3d
+### ISG65 blocks the binding of complement receptors 2 and 3 to C3b and C3d
 
 As the central component of the complement system, C3 is the target of many host-proteins (Ricklin et al., 2016). These factors can be broadly grouped into the complement receptors, which are found on immune cells and bind to C3b, iC3b, C3db, and C3d fragments, and factors that regulate the activity of C3b. Complement regulators typically act by blocking recognition of C3b by host-factors to prevent downstream activation (Noris and Remuzzi, 2013). To test whether ISG65 might influence the capacity of complement regulators and receptors to bind to C3b/d, we next compared the structure of ISG65-bound C3b with previously determined structures of C3b and C3d bound to different complement regulators and receptors (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88960/elife-88960-fig4-v1.jpg)
+
+**Figure 4.:** Composite models obtained by docking the C3b-ISG65 structure onto those of C3b/d bound to factor H CCP19-20 (3OXU) (Morgan et al., 2011), CRIg (2ICF) (Wiesmann et al., 2006), CR1 CCP15-17 (5FO9) (Forneris et al., 2016), CR2 SCR1-2 (3OED) (van den Elsen and Isenman, 2011) and CR3 I-domain (4M76) (Bajic et al., 2013). C3b/d is shown in a solid light grey surface, ISG65 is shown in a solid turquoise surface, and complement regulators are shown in transparent surface with ribbon in various colours.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88960/elife-88960-fig4-figsupp1-v1.jpg)
 
 The conformation and location of ISG65 bound to C3d demonstrates that ISG65 binding would preclude binding of Factor H domains 19–20 (Morgan et al., 2011; Figure 4). In addition, ISG65 is predicted to have different effects on binding of complement receptors to C3b. The binding site on C3b for ISG65 does not overlap with those for C3b-binding complement receptors CRIg (Wiesmann et al., 2006) and CR1 (Forneris et al., 2016). However, the region on C3d occupied by ISG65 overlaps with sites on the TED domain/C3d which bind complement receptors 2 (CR2) (van den Elsen and Isenman, 2011) and 3 (CR3) (Bajic et al., 2013; Figure 4). CR2 is a receptor found on B cells, which in complex with CD19 and CD81, forms a signal transducing B-cell co-receptor (Bradbury et al., 1992). Binding of C3d to CR2 greatly reduces the threshold for B cell activation, thereby triggering B cell activation and antibody production (Croix et al., 1996). By preventing VSG-conjugated C3b from binding to B cells through an interaction mediated by CR2, ISG65 may reduce the likelihood that C3b-conjugated trypanosomes will induce B-cell activation and antibody production. Similarly, the binding site for CR3 on C3d also overlaps with that for ISG65, suggesting that ISG65 will block CR3 binding. CR3 is widely expressed on various immune cells and is known to promote macrophage recruitment and phagocytosis by binding to iC3b/C3d, indicating that ISG65 may help reduce trypanosome clearance by blocking this interaction (Erdei et al., 2019).
 
@@ -78,11 +100,168 @@ While a number of functions have been ascribed to ISG65, it is noteworthy that n
 
 ## Methods
 
-## Mammalian expression and purification of ISG65 and complement proteins
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Trypanosoma brucei brucei)</td>
+      <td>ISG65G gene</td>
+      <td>NCBI BioProject Accession: PRJEB46985</td>
+      <td>UniProt: A0A8J9S0Z8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>CFB gene</td>
+      <td>NCBI GenBank accession: AF019413.1</td>
+      <td>UniProt: P00751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>CFD gene</td>
+      <td>NCBI GenBank accession: CH471139.2</td>
+      <td>UniProt: P00746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>C3 gene</td>
+      <td>NCBI GenBank accession:AY513239.1</td>
+      <td>UniProt: P01024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers</td>
+      <td>This paper</td>
+      <td>See list of primers in the Appendeix. Primers were synthesised by Sigma.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHL-SEC vector backbone</td>
+      <td>https://doi.org/10.1107/S0907444906029799; Aricescu et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293F</td>
+      <td>Gibco</td>
+      <td>R79007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample(H. sapiens)</td>
+      <td>Human serum</td>
+      <td>NHSBT non-clinical issue</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>SIMPLE v3</td>
+      <td>https://github.com/hael/SIMPLE/releases; Elmlund et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CryoSPARC v3</td>
+      <td>https://cryosparc.com/; Structura Biotechnology Inc, 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>TOPAZ v0.2.4</td>
+      <td>https://github.com/tbepler/topaz; Bepler and Noble, 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>RELION v3.1</td>
+      <td>https://relion.readthedocs.io/en/release-3.1/index.html; RELION developer team, 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>DeepEMhancer</td>
+      <td>https://github.com/rsanchezgarc/deepEMhancer; Sanchez Garcia, 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>AlphaFold2</td>
+      <td>https://github.com/google-deepmind/alphafold; AlphaFold Team, 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ISOLDE v1.0</td>
+      <td>https://github.com/tristanic/isolde; Croll, 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>COOT v0.9.8.3</td>
+      <td>https://github.com/pemsley/coot; Emsley, 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>PHENIX v1.20.1</td>
+      <td>https://phenix-online.org; Phenix Development Group, 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ChimeraX v1.6</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/; UCSF Resource for Biocomputing, Visualization, and Informatics, 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>BIAevaluation v1.0</td>
+      <td>Biacore, Cytiva, Marlborough, MA, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/software/fiji/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mammalian expression and purification of ISG65 and complement proteins
 
 To express ISG65 1125 G (Macleod et al., 2022) (residues 24–385), we used a pDest12 plasmid consisting of an N-terminal secretion signal, codon-optimized ISG65, a C-terminal flexible linker (GSGSGSASG), AviTag, and a His10-tag. Human Complement Factor B (residues 26–764) and Complement Factor D (residues 20–253) were cloned into a pHLsec plasmid containing an N-terminal secretion signal and a short C-terminal linker (GSG) followed by a C-tag. ISG65, Factor B, and Factor D DNA were transfected into HEK293F cells (3 μg DNA per mL of cells) grown in F17 Freestyle media to a density of 2.2×106 cells/mL, using polyethylenimine (9 ug per mL of cells). Media was supplemented with 1 μM kifunensine and 3.8 mM valproic acid. Cell culture supernatant was harvested 6 days after transfection. Initial purification of ISG65 was performed using Ni Sepharose excel resin (Cytiva), whilst CaptureSelect C-tagXL Affinity Matrix (Thermo Fisher) was used to purify Factor B and D. ISG65 and Factor D were further purified on a Superdex 75 300/10 (Cytiva), whilst Factor B was further purified with a Superdex 200 300/10 (Cytiva). ISG65 loops deletions (loop1: ∆P88-K92insSS, loop2: ∆Q155-R195, loop3: ∆K230-P250, tail: ∆K317-G394), and ISG65N188A,H189A,Y190A were generated using Gibson Assembly (NEB) and expressed and purified as described for ISG65 24–385 above. ISG65 and ISG65∆L2 were biotinylated on their C-terminal AviTag using the Enzymatic Biotinylated Kit (Sigma).
 
-## Purification of human complement C3 and C3d, and generation of C3b
+### Purification of human complement C3 and C3d, and generation of C3b
 
 To purify Complement C3, anonymous donor post-clot human serum was obtained from the NHS Blood and Transplant non-clinical issue supply. Serum was buffer exchanged into 20 mM Tris pH 8, 50 mM NaCl, and 0.5 mM EDTA using tangential flow filtration with a stack of three 100 kDa Omega Cassettes (PALL Corporation). Serum was clarified by ultra-centrifugation at 41,000 rpm in a Ti-45 rotor (Beckman Coulter). Purification of C3 was performed by anion exchange chromatography using a HiPrep Q HP 16/60 column (Cytiva) with a 20-column volume gradient of 50–350 mM NaCl. Fractions containing C3 were pooled then buffer exchanged into 20 mM MES pH 6, 50 mM NaCl, and 0.5 mM EDTA using tangential flow filtration as above. C3 was then purified by cation exchange using a monoS 4.6/100 PE (Cytiva) with a 30-column volume gradient to 500 mM NaCl. Fractions containing C3 were then further purified on a Superdex 200 300/10.
 
@@ -90,20 +269,20 @@ C3b was generated from C3 by limited proteolysis with trypsin (Roche) at 1 % w/w
 
 We previously expressed C3d with a C1010A mutation to prevent formation of thioester bonds (Macleod et al., 2022). To generate C3d with a single biotin in proximity to the thioester-forming Gln1013 residue, we generated a Q1013A mutation in C3d which prevented thioester bond formation but left Cys1010 exposed. C3dQ1013A was expressed in E. coli as previous described for the C1010A mutant (Macleod et al., 2022) and was then reacted with maleimide-PEG2-biotin, as described above for C3b.
 
-## Preparation of ISG65-C3b complexes for cryo-EM
+### Preparation of ISG65-C3b complexes for cryo-EM
 
 To form C3b-ISG65 complexes, C3b was mixed with ISG65 at a 1:1.1 ratio in 20 mM HEPES pH 7.4, 150 mM NaCl, and 0.5 mM EDTA. Complexes were then purified on a Superdex 200 300/10 GL column. Quantifoil grids consisting of a 1.2/1.3 μm holey carbon film on 300 gold mesh were glow discharged at 15 mA for 1 min with an EM ACE200 glow discharger (Leica). Just before vitrification, 0.01% fluorinated octyl maltoside (Anatrace) was added to 2.2 mg/mL C3b-ISG65, which was then immediately added to the grid and plunge frozen in an ethane slush using a Vitrobot Mark IV (Thermo Fisher). Grids were imaged with a Titan Krios G2 (Thermo Fisher) operating at 300 kV, and images were recorded with a K3 detector (Gatan) in counting mode with a GIF Quantum LS Imaging Filter (Gatan).
 
-## Image processing and modelling of ISG65-C3b complexes
+### Image processing and modelling of ISG65-C3b complexes
 
 Movies were motion-corrected, contrast transfer function (CTF) corrected, and particles were picked using SIMPLE v3 (Caesar et al., 2020) on the fly. To obtain an initial set of C3b/C3b-ISG65 particles, one round of 2D classification was performed in SIMPLE, followed by another two rounds of 2D classification in CryoSPARC v3 (Punjani et al., 2017). A second set of particles was obtained by particle picking with TOPAZ v0.2.4 Bepler et al., 2019 followed by one round of 2D classification to remove bad particles. TOPAZ and SIMPLE particles were combined, duplicates removed, and a final round of 2D classification was performed. Three rounds of ab initio and heterogeneous 3D refinement were performed in CryoSPARC using 5 classes which resulted in a set of C3b-ISG65 particles, and a set of C3b only particles. Both particle sets were merged and yielded a 3.5 Å map from homogenous refinement in CryoSPARC. Bayesian polishing was then performed in Relion v3.1 (Zivanov et al., 2018; Zivanov et al., 2019), followed by per particle CTF refinement and beam tilt estimation in CryoSPARC, yielding a 3.3 Å map. Particles were separated into C3b-ISG65 and C3b only sets, yielding 3.3 and 3.4 Å resolution maps, respectively. The resolution of CUB, TED, and ISG65 were significantly lower than the rest of the map presumably because of flexibility in CUB and TED, and because of the location of ISG65 on the periphery of the map. To mitigate this, particle coordinates were shifted such that CUB-TED-ISG65 density was in the middle of the box, then all density other than CUB-TED-ISG65 was subtracted using a 10-pixel soft edge mask. Local refinement was then performed using a pose/shift Gaussian prior with a standard deviation of 3° over rotations and 2 Å over shifts, and search limitations of 12° and 9 Å, resulting in a 3.4 Å map. Local refinement was also performed for all density except CUB-C3d-ISG65 using a 15-pixel soft edge mask, yielding a 3.2 Å map. Post-processing was then performed using DeepEMhancer, and local resolution was estimated with CryoSPARC, and locally refined maps were combined in ChimeraX (Pettersen et al., 2021) to create a composite map.
 
 To generate a model of ISG65-C3b, a previous crystal structure of C3b (PDB ID: 5FO7) (Forneris et al., 2016) and a structure prediction of ISG65 performed with AlphaFold2 (Jumper et al., 2021) were rigid-body fitted into cryo-EM density using the fit-in map tool in ChimeraX (Pettersen et al., 2021). Refinement of C3b-ISG65 was then performed using ISOLDE v1.0 (Croll, 2018), COOT v0.9.8.3 (Emsley et al., 2010), and Phenix v1.20.1 (Liebschner et al., 2019).
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 SPR experiments were performed on a BIAcore T200 (Cytiva). Biotin-C3b or biotin-C3d were immobilised on the SPR chip via streptavidin using a CAPture kit (Cytiva). Two-fold serial dilutions of ISG65, ISG65∆L2, and ISG65N188A,H189A,Y190A were injected over the chip. Measurements were performed at 30 μL/min at 25 °C in 20 mM HEPES pH 7.4, 150 mM NaCl, 0.05% TWEEN-20, with an association and dissociation time of 120 s. Binding responses were obtained using BIAevalutation software v1.0, followed by fitting to a 1:1 Langmuir model. Three experimental replicates of SPR experiments were performed, including two biological replicates of ISG65, biotin-C3d, and biotin-C3b.
 
-## C3 convertase activity assays
+### C3 convertase activity assays
 
 To measure the effect of ISG65 on C3 convertase activity, 600 nM C3, 600 nM Factor B, 12 nM C3b, 12 nM Factor D, and 2 μM ISG65 or 2 μM bovine serum albumin (Sigma) were combined in phosphate-buffered saline pH 7.4, 2 mM MgCl2. The reaction was carried out at 22 °C and samples were removed at various intervals and combined with SDS-PAGE sample buffer before running on SDS-PAGE to assess band shifts in C3 and Factor B. Gel densitometry was performed in Fiji (Schindelin et al., 2012).

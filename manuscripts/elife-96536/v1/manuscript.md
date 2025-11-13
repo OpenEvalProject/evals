@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 National Heart, Lung, and Blood Institute, National Institutes of Health Bethesda United States
+1. National Heart, Lung, and Blood Institute, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
@@ -35,17 +35,17 @@ The Drosophila eye is an excellent model for genetic analyses due to its ease of
 
 ## Results
 
-## The design of a genetic modifier screen for genes regulating mtDNA maintenance and expression
+### The design of a genetic modifier screen for genes regulating mtDNA maintenance and expression
 
 Mutations on nuclear-encoded ETC genes block cell cycle and disrupt the differentiation and morphogenesis of developing eyes (Mandal et al., 2005; Owusu-Ansah et al., 2008). RNAi against tfam or myc, which promote the expression of ETC genes encoded on mtDNA and the nuclear genome, respectively, also reduced adult eye size (Figure 1A). These observations prompted us to use fly eye as a model to identify TFs regulating ETC biogenesis. However, inhibitions of any genes essential for cell viability, proliferation, or differentiation, exemplified by RNAi targeting a mitotic cyclin, CycB (Figure 1A), would disrupt eye development. Therefore, assaying eye morphology alone is not sufficient to enrich candidates regulating ETC biogenesis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig1-v1.jpg)
 
-**Figure 1.:** (A) Representative images of adult eye of the control RNAi (Ctrl) and RNAi of selected genes tested in the eye screen, including CycB RNAi (CycB-i), TFAM RNAi (TFAM-i), Myc RNAi (Myc-i), CG1603 RNAi (CG1603-i), and CG4936 RNAi (CG4936-i). The upper panel shows eyes from RNAi-only offspring, and lower panel displays eyes from RNAi+MitoXhoI offspring cultured at the same condition. Arrowheads indicate the synergistic small-eye phenotype resulting from the combination of gene knockdown and the mitochondrial DNA (mtDNA) deficiency caused by mitoXhoI in the background of heteroplasmic mtDNAs. Scale bars: 100 µm. (B) Schematic of the genetic modifier screen methodology (see text for details). (C) Representative images illustrating the scoring of eye size. Scale bars: 100 µm. (D) A plot illustrating the calling of positive hits in the pilot screen. Each datapoint represents the Index-R of RNAi (X values) or RNAi+MitoXhoI flies (Y values) for each gene belonging to the different groups (see (E) and Supplementary file 1 for details). Genes with datapoints below the gray diagonal dash line exhibited a synergistic effect when combining their RNAi with mtDNA deficiency suggesting a potential role in regulating ETC biogenesis. The datapoint for ewg, the fly homolog of NRF-1, is labeled in purple. The green dashed line of slope 0.75 outlines the threshold for calling out positive hits based on ewg’s performance in the screen. (E) Graph summarizing the pilot screen of nuclear-encoded genes, demonstrating the efficacy of this screen in identifying genes involved in mitochondrial ETC biogenesis. Pilot group 1 (Pilot1) has 40 genes that are either nuclear-encoded ETC subunits or related to mtDNA maintenance and gene expression (Mito-EBR). Pilot2 has 84 genes involved in other mitochondrial processes. Pilot3 has 58 essential genes from other cellular components. (F) Graph summarizing the percentages of synergistic enhancers (En) and suppressors (Su) identified in the screen (see (G) and Supplementary file 1 for details). (G) A plot illustrating the calling of positive hits in the screen of transcription factor (TF) genes. Factors that are known to be involved in mitochondrial or ETC biogenesis are marked in purple (Known). The green dashed line outlines the threshold for calling out synergistic enhancers (En, green square). The red dashed line of slope 1.5 outlines the threshold for calling out suppressors (Su, red square).Figure 1—source data 1.Figure 1D–G.
+**Figure 1.:** (A) Representative images of adult eye of the control RNAi (Ctrl) and RNAi of selected genes tested in the eye screen, including CycB RNAi (CycB-i), TFAM RNAi (TFAM-i), Myc RNAi (Myc-i), CG1603 RNAi (CG1603-i), and CG4936 RNAi (CG4936-i). The upper panel shows eyes from RNAi-only offspring, and lower panel displays eyes from RNAi+MitoXhoI offspring cultured at the same condition. Arrowheads indicate the synergistic small-eye phenotype resulting from the combination of gene knockdown and the mitochondrial DNA (mtDNA) deficiency caused by mitoXhoI in the background of heteroplasmic mtDNAs. Scale bars: 100 µm. (B) Schematic of the genetic modifier screen methodology (see text for details). (C) Representative images illustrating the scoring of eye size. Scale bars: 100 µm. (D) A plot illustrating the calling of positive hits in the pilot screen. Each datapoint represents the Index-R of RNAi (X values) or RNAi+MitoXhoI flies (Y values) for each gene belonging to the different groups (see (E) and Supplementary file 1 for details). Genes with datapoints below the gray diagonal dash line exhibited a synergistic effect when combining their RNAi with mtDNA deficiency suggesting a potential role in regulating ETC biogenesis. The datapoint for ewg, the fly homolog of NRF-1, is labeled in purple. The green dashed line of slope 0.75 outlines the threshold for calling out positive hits based on ewg’s performance in the screen. (E) Graph summarizing the pilot screen of nuclear-encoded genes, demonstrating the efficacy of this screen in identifying genes involved in mitochondrial ETC biogenesis. Pilot group 1 (Pilot1) has 40 genes that are either nuclear-encoded ETC subunits or related to mtDNA maintenance and gene expression (Mito-EBR). Pilot2 has 84 genes involved in other mitochondrial processes. Pilot3 has 58 essential genes from other cellular components. (F) Graph summarizing the percentages of synergistic enhancers (En) and suppressors (Su) identified in the screen (see (G) and Supplementary file 1 for details). (G) A plot illustrating the calling of positive hits in the screen of transcription factor (TF) genes. Factors that are known to be involved in mitochondrial or ETC biogenesis are marked in purple (Known). The green dashed line outlines the threshold for calling out synergistic enhancers (En, green square). The red dashed line of slope 1.5 outlines the threshold for calling out suppressors (Su, red square).
 
 The mitochondrial genome of wild type (wt) D. melanogaster contains a single XhoI site. The expression of a mitochondrially targeted restriction enzyme, XhoI (MitoXhoI) in Drosophila ovary effectively selects for escaper progeny carrying mtDNA mutations that abolish the XhoI site (Xu et al., 2008). In a heteroplasmic background containing both wt and XhoI-resistant genome (XhoI-), the expression of MitoXhoI can effectively remove the wt genome and hence generate mtDNA deficiency (Chen et al., 2015). As a result, the adult eyes were slightly smaller than the control (Figure 1A). Considering that mtDNA encodes core components of ETC, we reasoned that inhibiting a gene related to ETC biogenesis would have a synergistic effect with the mtDNA deficiency on eye development, and the combination of these two genetic manipulations should lead to a stronger disruption of eye development than either of these conditions individually (Figure 1A and B). On this basis, we devised a scheme of modifier screen in eye for genes involved in ETC biogenesis (Figure 1B).
 
-## The RNAi modifier screen identifying TFs regulating ETC biogenesis
+### The RNAi modifier screen identifying TFs regulating ETC biogenesis
 
 To assess the efficacy of this scheme, we carried out a pilot RNAi screen, covering 124 nuclear-encoded mitochondrial genes and 58 non-mitochondrial genes annotated in various cellular processes (Figure 1C–E and Supplementary file 1). In practice, male flies carrying a UAS-IR transgene were crossed with Sco/CyO, mitoXhoI; eyeless-GAL4 heteroplasmic female flies (carrying both wt and XhoI- mtDNA). This cross generated two groups of offspring, RNAi-only and RNAi together with MitoXhoI expression (RNAi+MitoXhoI) that were cultured in the same vial, thereby minimizing any potential discrepancy caused by environmental factors. Most RNAi flies survived to adult stage but had reduced eye size. A few RNAi flies were lethal at the pupae stage, due to a lack of head capsule that is derived from the eye-antenna disc.
 
@@ -53,35 +53,83 @@ For most genes tested in the pilot screen, eyes of RNAi+MitoXhoI flies were smal
 
 To understand transcriptional regulations of ETC biogenesis, we screened 1264 RNAi lines that cover 638 genes annotated as transcriptional regulators in the Drosophila genome. A total of 77 enhancers were identified (Figure 1F and G and Supplementary file 1), including all known factors involved in ETC biogenesis such as Myc, TFAM (Scarpulla, 2008; Wang et al., 2019). We also recovered 20 suppressors, of which, eyes of RNAi+MitoXhoI flies were larger than the corresponding RNAi-only flies.
 
-## Regulatory network of mitochondrial biogenesis
+### Regulatory network of mitochondrial biogenesis
 
 Among 77 TFs identified in the initial modifier screen, 49 TFs have ChIP-seq data available in modERN (Kudron et al., 2018). To further understand the transcriptional regulation of ETC biogenesis, we performed the network analysis on these 49 TFs using the ‘vertex sort’ algorithm (Jothi et al., 2009), and constructed a regulatory network (Figure 2A and Supplementary file 2). All 49 TFs had binding sites on the promoter region of at least one nuclear mitochondrial gene (Figure 2B, Figure 2—figure supplement 1, and Supplementary file 3). Respectively, 89% nuclear-encoded mitochondrial genes (851), including nearly all Mito-EBR genes (Supplementary file 3), were bound by at least one TF. Given that 28 hits were not included in the analyses due to a lack of ChIP-seq data, the actual coverage of total 77 TFs on nuclear mitochondrial genes would be more comprehensive. Six TFs bound to more than half of mitochondrial genes (Figure 2B, Figure 2—figure supplement 1, and Supplementary file 3). However, not a single TF covered all mitochondrial genes, or all genes in a specific mitochondrial process, which is consistent with the diverse evolution origin of mitochondrial genes (Kurland and Andersson, 2000). It also indicates that there is no such a ‘master’ regulator controlling all aspects of mitochondrial genesis. Forty-seven TFs were identified as strongly connected components due to their extensive connections and were classified in the core or bottom layer of the hierarchical structure, suggesting complex co-regulations and potential redundancy among these TFs in controlling mitochondrial biogenesis (Figure 2A and Supplementary file 2). Through this interconnected network, every single node can link to all 851 mitochondrial genes in the coverage. Two TFs, Crg-1 and CG15011, were identified as the top-layer TFs with no upstream regulators in the network (Figure 2A and Supplementary file 2). Crg-1 is a circadian- regulated gene (Rouyer et al., 1997). CG15011 is an X-box binding protein and had a binding profile similar to another X-box binding protein, Xbp1 (Supplementary file 3), a stress respondent and regulator (Acosta-Alvear et al., 2007). These top-layer TFs may sense physiological oscillations and stresses to modulate mitochondrial biogenesis through the underlying network. Additionally, YL-1 and E(bx), two components in the middle layer, are involved in chromatin remodeling (Liang et al., 2016; Wysocka et al., 2006), suggesting a potential regulation of mitochondrial biogenesis at the chromatin level.
 
-## CG1603 regulates ETC gene expression and mitochondrial biogenesis
+![Figure 2.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig2-v1.jpg)
+
+**Figure 2.:** (A) The transcriptional regulatory network of nuclear-encoded mitochondrial genes. (B) Bar graphs illustrating the promoter binding profiles of 49 synergistic enhancer transcription factors (TFs) within different groups of genes (nuclear-encoded mitochondrial genes, Mito-EBR genes, 49 synergistic enhancer TFs, and electron transport chain [ETC] genes). The number of genes in each group (orange) and the number of these bound by CG1603 (cyan) were highlighted.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Bar graphs summarizing the promoter binding profiles of the 49 synergistic enhancer TFs within subgroups of genes involved in different processes of electron transport chain (ETC) biogenesis. The number of genes in each subgroup (orange) and the number of these bound by CG1603 (cyan) were highlighted.
+
+### CG1603 regulates ETC gene expression and mitochondrial biogenesis
 
 To validate the efficacy of this integrated genetic and bioinformatic approach, we next followed up on CG1603, one of the strongest hits from the primary screen (Figure 1A and G) and exhibited binding to a diverse array of genes associated with ETC biogenesis (Figure 2B, Figure 2—figure supplement 1, and Supplementary file 3). CG1603 RNAi slightly reduced eye size. However, the combination of CG1603 RNAi with MitoXhoI expression in the heteroplasmic background resulted in markedly smaller eyes, indicating a clear synergy between the inhibition of CG1603 and the mtDNA deficiency. We next asked whether CG1603 was involved in mtDNA maintenance. The Drosophila midgut is essentially a monolayer epithelium, composed of intestine stem cells, enteroblasts, enteroendocrine cells, and enterocytes (EC). The large, flattened EC allow high-resolution imaging of mitochondria and mitochondrial nucleoids. Additionally, the simple organization and distinct cell types, containing both proliferative and terminally differentiated cells, render the midgut an ideal model to evaluate the impact of mitochondrial disruptions on cell proliferation and differentiation (Zhang et al., 2020). We used a ‘flip-out’ method to activate CG1603 RNAi in a subset of cells (Prober and Edgar, 2000; Zhang et al., 2020), and imaged TFAM-GFP (Zhang et al., 2016), a marker for mitochondrial nucleoids in midgut clones. Both the total TFAM-GFP level and the number of mtDNA nucleoids (TFAM puncta) were markedly reduced in CG1603 RNAi clones (Figure 3A–C), suggesting that CG1603 is necessary for maintaining the steady-state level of mtDNA. We constructed an SDHA-mNG reporter line by inserting the mNeonGreen (mNG) cDNA in-frame, downstream of the endogenous locus of SDHA, a subunit of ETC Complex II that is entirely encoded by the nuclear genome. SDHA-mNG level was notably reduced in CG1603 RNAi clones (Figure 3D and E), suggesting that CG1603 is also required for the expression of nuclear-encoded ETC subunits. Different from TFAM-GFP that marks mitochondrial nucleoids and appears as puncta in mitochondria (Chen et al., 2020), SDHA-mNG uniformly diffused in the mitochondrial matrix (Figure 3D). By quantifying the total volume of SDHA-mNG positive voxels in the 3D rendering, we found that the total mitochondrial volume was also reduced in CG1603 RNAi clones (Figure 3F). Collectively, these results demonstrate that CG1603 regulates the expression of genes essential for both ETC function and mitochondrial biogenesis. CG1603 RNAi produced very few EC clones (Figure 3A, D, Figure 3—figure supplement 1), consistent with the notion that mitochondrial respiration is necessary for ISCs’ differentiation (Zhang et al., 2020).
 
-## CG1603 regulates cell growth and differentiation
+![Figure 3.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig3-v1.jpg)
+
+**Figure 3.:** (A, D) Representative images of control RNAi (Ctrl), CG1603 RNAi (CG1603-i), and CG1603 overexpression (CG1603-OE) midgut enterocytes (EC) clones with endogenously expressed TFAM-GFP (A) or SDHA-mNG (D) visualized in green. Clones were labeled by mCherry red and compared with wild type (wt) neighbors. White dashed lines aided in illustrating clones. Scale bars: 10 µm. (B, C, E, F) Quantification of the relative TFAM-GFP level (B), the relative levels of mtDNA (C), the relative SDHA-mNG level (E), and the relative mitochondrial volume (F) in the EC clones to their wt neighbors. n=16 from 8 midguts for each group, error bar: SD. Two-tailed Student's t-test, **: p<0.01, ***: p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Number of EC clone cells in control RNAi (Ctrl) and CG1603 RNAi (CG1603-i) midguts. n=8, error bar: SD. Two-tailed Student's t-test, ***: p<0.001.
+
+### CG1603 regulates cell growth and differentiation
 
 CG1603 encodes a C2H2 zinc finger (C2H2-ZF) protein. It has one C2H2-ZF at its N-terminus, followed by two MADF (myb/SANT-like domain in Adf-1) domains, and six additional zinc fingers at the C-terminus (Figure 4A and B). A PiggyBac transgene, PBac[SAstopDSRed]LL06826, is inserted between the exons 2 and 3 of CG1603 locus. This modified PiggyBac mutator transgene contains splicing donors and stop codons in all three reading frames (Schuldiner et al., 2008), and thereby would disrupt the translation of the full-length CG1603 protein. Homozygous PBac[SAstopDSRed]LL06826 was lethal, arrested at the second instar larval stage and eventually died after 10days (Figure 4C). Both the steady-state level of mtDNA and total mitochondrial mass assessed by the levels of several mitochondrial proteins were reduced in these larvae (Figure 4D and E), as well as the integrities and activities of ETC complexes (Figure 4—figure supplement 1). The lethality of this PiggyBac transgene was mapped to a genomic region spanning the CG1603 locus (Figure 4—figure supplement 2). Importantly, a P[CG1603gDNA] transgene that covers the genomic region of CG1603 fully rescued its viability (Figure 4A and F). These results demonstrate that the lethality of PBac[SAstopDSRed]LL06826 was caused by the loss of function of CG1603, and we hence named it CG1603PBac thereafter. Using FLP/FRT-mediated recombination, we generated homozygous CG1603PBac mutant clones in both germline and follicle cells in adult ovaries. Consistent with the results of ‘flip-out’ RNAi experiments in the midgut, both the total TFAM level and the number of mtDNA nucleoids, visualized by an endogenously expressed TFAM-mNG reporter, were significantly reduced in CG1603PBac clones (Figure 5A–D, Figure 5—figure supplement 1A and B). In most CG1603PBac clones, TFAM-mNG puncta were hardly observed, demonstrating an essential role of CG1603 in mtDNA maintenance. Compared to twin clones, CG1603PBac follicle cell clones contained significantly fewer cells, and these cells were smaller, indicating that CG1603 promotes both cell growth and cell proliferation (Figure 5A and E). CG1603PBac egg chambers were also notably small, even smaller than the adjacent anterior egg chambers that are at earlier developmental stages in the same ovariole (Figure 5A). We assessed Δψm using the ratiometric imaging of TMRM and MitoTracker Green (Zhang et al., 2019). Δψm was nearly abolished in CG1603PBac clones with reduced MitoTracker Green staining (Figure 5F and Figure 5—figure supplement 1C). All together, these observations demonstrate that CG1603 promotes mitochondrial biogenesis and is essential for ETC biogenesis.
 
-## CG1603 is a TF regulating nuclear mitochondrial gene expression
+![Figure 4.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic representation of CG1603 genomic locus, showing the CG1603 transcript (5’ and 3’UTR in black bar and four exons in white), its protein product (586 amino acids in length, and characterized by seven C2H2-ZF and two MADF domains), the CG1603PBac mutant allele (with a PiggyBac insertion in the second intron, which is marked by fluorescent DsRed driven by an eye-specific 3xP3 promoter and flanked by stop codons in all three reading frames terminating translation through downstream), and the genomic region (in square brackets, from 955 bp upstream of the CG1603 5’UTR to 656 bp downstream of CG1603 3’UTR) used for the P[CG1603gDNA] transgene. (B) Predicted 3D structure of the CG1603 protein by AlphaFold. Labels indicate the N- and C-terminus, as well as the specific protein domains along with their predicted isoelectric point (pI). (C) Images of CG1603PBac/CyO, Act-GFP, and homozygous CG1603PBac larvae cultured together at 25°C, day 4 after egg laying. Green: GFP; red: DsRed. Scale bars: 1 mm. (D) Relative mitochondrial DNA (mtDNA) levels in CG1603PBac mutant larvae to wild type (wt) control. n=3, error bar: SD. Two-tailed Student's t-test, ***: p<0.001. (E) Western blots of mitochondrial proteins in CG1603PBac mutant larvae to wt control. (F) P[CG1603gDNA] restored viability of CG1603PBac flies. The number of progenies for each genotype is listed.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Blue native PAGE and in-gel activity analyses of ETC Complex I, II, and IV isolated from wild type (wt) and CG1603PBac mutant. An equal amount of protein was used for each sample.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Summary of adult viability phenotypes of combinations of CG1603PBac mutant, P[CG1603gDNA] transgene, and deficiency chromosomes. (B) Schematic map of deficiency chromosomes spanning CG1603 genomic region.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative images of CG1603PBac mutant germline (top and middle panel) and follicle (bottom panel) clones in late-stage egg chambers of adult ovaries with endogenously expressed TFAM-mNG visualized in green. Homozygous mutant clones lacked RFP and were compared with either flanking RFP-positive cysts (germline) or homozygous wild type (wt) twin (follicle). White dashed lines aided in illustrating clones. The wt (RFP+/RFP+) follicle clone showed markedly higher RFP intensity than the heterozygous (RFP+/RFP-) cells, as shown in Figure 5—figure supplement 1B. Red: nls-RFP; blue: DAPI. Scale bars: 10 μm. (B) Quantification of the relative TFAM-mNG level in the homozygous FRT42D control and CG1603PBac mutant germline clone in the early-stage egg chamber to the adjacent anterior RFP-positive cyst within the same ovariole. As shown in Figure 5—figure supplement 1A. n=10 for each group, error bar: SD. Two-tailed Student's t-test, ***: p<0.001. (C–E) Quantification of the relative TFAM-mNG level (C), the relative levels of mtDNA (D), and the relative clone cell number (E) in the homozygous FRT42D control and CG1603PBac mutant follicle clones to their wt twins. n=10 for each group, error bar: SD. Two-tailed Student's t-test, ***: p<0.001. (F) TMRM/MitoTracker Green (MT) ratiometric live imaging and quantification of ovarioles containing homozygous CG1603PBac mutant germline clones (highlighted by white dashed lines). Notably, in contrast to flanking control cysts (highlighted by white lines), Δψm was almost absent in mutant clones. Please note that compared to TMRM, nls-RFP signal was too low to be detected in ratiometric imaging. Nonetheless, the nls-RFP was readily detected in control cysts, but not in homozygous CG1603PBac clones, via visual observation, as depicted in (A), Figure 5—figure supplement 1A and B. A twin pair of follicle clones in the same egg chamber were also highlighted (cyan line for control and cyan dashed line for homozygous CG1603PBac mutant). The MT intensity was reduced in both the germline and follicle CG1603PBac clones, compared to germ cells in adjacent egg chambers and follicle cells in the same egg chamber, respectively. Quantification with background correction for MT intensity in germline clones is shown in Figure 5—figure supplement 1C. Blue: Hoechst. Scale bars: 10 µm. n=8, error bar: SD. Two-tailed Student's t-test, ***: p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative images of homozygous FRT42D control and CG1603PBac mutant germline clones in early-stage egg chambers of adult ovaries with endogenously expressed TFAM-mNG visualized in green. Homozygous mutant clones lacked RFP and were compared to the adjacent RFP-positive cysts. Red: RFP; blue: DAPI. Scale bars: 10 μm. (B) Representative images of homozygous FRT42D control follicle cell clone (RFP-/RFP-) and its wild type (wt) twin (RFP+/RFP+) with endogenously expressed TFAM-mNG visualized in green. Red: nls-RFP; blue: DAPI. Scale bars: 10 μm. (C) The relative intensity of MitoTracker (MT) Green in CG1603PBac mutant germline clones to control (Ctrl). n=8, error bar: SD. Two-tailed Student's t-test, **: p<0.01.
+
+### CG1603 is a TF regulating nuclear mitochondrial gene expression
 
 CG1603 protein exclusively localized to the nucleus when expressed in cultured cells (Figure 6A). We generated a transgene expressing CG1603-mNG fusion protein by inserting mNeonGreen cDNA into the endogenous locus of CG1603. CG1603-mNG localized to nuclei in ovaries (Figure 6B) and directly bound to polytene chromosomes in the salivary gland (Figure 6C). Notably, CG1603-mNG was highly enriched on less condensed chromatin regions that had weak Hoechst staining (Figure 6C). We performed RNA sequencing (RNA-seq) in larvae to uncover potential targets of CG1603. Between wt and CG1603PBac larvae, total 7635 genes were differentially expressed, including 86% nuclear-encoded mitochondrial genes (Figure 6D and Supplementary file 4; Supplementary file 5). Nearly half of nuclear-encoded mitochondrial genes were among 1698 genes that were reduced by more than two-fold in CG1603 mutant (Figure 6E and Supplementary file 5a), including many structural subunit genes of all five ETC complexes (Supplementary file 5b), some of which were further confirmed by quantitative real-time PCR (Figure 6F). Gene Ontology (GO) enrichment analyses on these 1698 genes also revealed that all top 10 significantly enriched biological processes were related to mitochondria, including ‘mitochondrial translation’, ‘mitochondrial gene expression’, ‘electron transport chain’, ‘aerobic respiration’, ‘cellular respiration’, and ‘ATP metabolic process’ (Figure 6G).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig6-v1.jpg)
 
-**Figure 6.:** (A–B) Representative images showing the nuclear localization of CG1603 protein in cultured S2 cells (A) and adult ovary (B). Green: MitoTracker Green in S2 cell, and CG1603-mNG in tissues; red: CG1603-mCH; blue and magenta: Hoechst. Scale bars: 10 μm. (C) Representative images showing bindings of endogenously expressed CG1603 proteins to less condensed euchromatin regions in the polytene chromosomes of a salivary gland. High-intensity CG1603-mNG bands were visualized in green in the upper panel and indicated by arrows, and low-intensity bands were pesudo-colored in white in theblower panel and indicated by arrow heads. The images of the lower panel were same as these in the upper panel, but digitally enhanced. Magenta: Hoechst. Scale bars: 10 μm. (D) Density plot illustrating the distribution of expression changes of the nuclear-encoded mitochondrial and non-mitochondrial genes in CG1603 mutant. (PBacE) Graph illustrating the overlap between nuclear-encoded mitochondrial genes and differentially expressed genes (DEGs) that down-regulated >2-fold, as well as the distribution of the overlapped genes in different mitochondrial function categories. (F) Relative mRNA levels of several electron transport chain (ETC) biogenesis-related genes in CG1603 mutant larvae to control, measured by real-time PCR. n=3, error bar: SD. (PBacG) Gene Ontology (GO) enrichment analyses of DEGs that down-regulated >2-fold. The top 10 enriched biological processes are shown.Figure 6—source data 1.Figure 6D, F, and G.
+**Figure 6.:** (A–B) Representative images showing the nuclear localization of CG1603 protein in cultured S2 cells (A) and adult ovary (B). Green: MitoTracker Green in S2 cell, and CG1603-mNG in tissues; red: CG1603-mCH; blue and magenta: Hoechst. Scale bars: 10 μm. (C) Representative images showing bindings of endogenously expressed CG1603 proteins to less condensed euchromatin regions in the polytene chromosomes of a salivary gland. High-intensity CG1603-mNG bands were visualized in green in the upper panel and indicated by arrows, and low-intensity bands were pesudo-colored in white in theblower panel and indicated by arrow heads. The images of the lower panel were same as these in the upper panel, but digitally enhanced. Magenta: Hoechst. Scale bars: 10 μm. (D) Density plot illustrating the distribution of expression changes of the nuclear-encoded mitochondrial and non-mitochondrial genes in CG1603PBac mutant. (E) Graph illustrating the overlap between nuclear-encoded mitochondrial genes and differentially expressed genes (DEGs) that down-regulated >2-fold, as well as the distribution of the overlapped genes in different mitochondrial function categories. (F) Relative mRNA levels of several electron transport chain (ETC) biogenesis-related genes in CG1603PBac mutant larvae to control, measured by real-time PCR. n=3, error bar: SD. (G) Gene Ontology (GO) enrichment analyses of DEGs that down-regulated >2-fold. The top 10 enriched biological processes are shown.
 
 CG1603 had 8963 binding sites (peaks) distributed over all four chromosomes (Figure 7A and Supplementary file 6). A subset of peaks showed high intensity evaluated by signalValue (Figure 7A and Supplementary file 6), which may correspond to these high-intensity CG1603-mNG bands on the polytene chromosomes of the salivary gland (Figure 6C). Most CG1603 binding sites (6799) were found at promoter regions, close to the transcription start site (Figure 7B and C and Supplementary file 6), which is a key feature of a typical TF. Using the RSAT ‘peak-motifs’ tool (Thomas-Chollier et al., 2012), an 8bp palindromic sequence, ‘TATCGATA’ emerged as the most prevalent CG1603 binding motif (Figure 7D and Supplementary file 7). CG1603 bound to the genomic regions of 50% nuclear-encoded mitochondrial genes, and among these genes, 79.5% were down-regulated in the CG1603PBac mutant (Figure 7E and Supplementary file 6), indicating a great accordance between ChIP data and RNA-seq results. Most nuclear-encoded mitochondrial genes that were both bound by CG1603 and down-regulated in CG1603 mutant were ETC genes or related to ETC biogenesis (Figure 7F and Supplementary file 6). Collectively, CG1603 appears to be essential for mitochondrial biogenesis and coordinates the expression of both nuclear and mtDNA genes in ETC biogenesis.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig7-v1.jpg)
 
-**Figure 7.:** (A) CG1603 ChIP peaks over all chromosomes. (B) Genomic distribution of CG1603 peaks. (C) Average profile of CG1603 peaks binding to transcription start site (TSS) regions. (D) Representative binding motif discovered with CG1603 ChIP peaks. (E) The number of nuclear-encoded mitochondrial and non-mitochondrial genes bound by CG1603, and the overlapping down-regulated differentially expressed genes (DEGs) in each group. (F) Scatterplot illustrating the signalValue of CG1603 ChIP peaks (y-axis) and log2 fold change in expression of DEGs between CG1603 mutant and control (x-axis). Mito-EBR: genes related to electron transport chain (ETC) biogenesis and maintenance, including ETC subunits and assembly factors, mitochondrial DNA (mtDNA) replication and transcription, mitochondrial RNA metabolism and translation, as well as mitochondrial protein import and membrane insertion machinery.PBacFigure 7—source data 1.Figure 7A–D and F.
+**Figure 7.:** (A) CG1603 ChIP peaks over all chromosomes. (B) Genomic distribution of CG1603 peaks. (C) Average profile of CG1603 peaks binding to transcription start site (TSS) regions. (D) Representative binding motif discovered with CG1603 ChIP peaks. (E) The number of nuclear-encoded mitochondrial and non-mitochondrial genes bound by CG1603, and the overlapping down-regulated differentially expressed genes (DEGs) in each group. (F) Scatterplot illustrating the signalValue of CG1603 ChIP peaks (y-axis) and log2 fold change in expression of DEGs between CG1603PBac mutant and control (x-axis). Mito-EBR: genes related to electron transport chain (ETC) biogenesis and maintenance, including ETC subunits and assembly factors, mitochondrial DNA (mtDNA) replication and transcription, mitochondrial RNA metabolism and translation, as well as mitochondrial protein import and membrane insertion machinery.
 
-## The integrated approach identifies YL-1 as an upstream regulator of CG1603
+### The integrated approach identifies YL-1 as an upstream regulator of CG1603
 
 In the network analyses, CG1603 was positioned in the middle layer, linked to seven TFs above and six TFs below by integrating the RNA-seq result with ChIP-seq data (Figure 8A). Through these TFs below, CG1603 may indirectly control the expression of 2230 genes, including 291 mitochondrial genes down-regulated in CG1603PBac but not bound by CG1603 (Figure 7E). Using the ‘flip-out’ RNAi system in the midgut, we found that among seven TFs upstream of CG1603 in the network, E(bx), YL-1, trem, STAT92E, and Myb were also required for maintaining TFAM levels (Figure 8—figure supplement 1). To further verify their potential roles in regulating CG1603, we performed RNAi against these genes in midgut clones carrying CG1603-mNG reporter. Only YL-1 RNAi clones displayed a marked reduction of CG1603 protein compared with neighboring cells (Figure 8B and C). Furthermore, overexpression of CG1603 restored the reduced eye size, TFAM-GFP, SDHA-mNG, and mtDNA levels caused by YL-1 RNAi (Figure 8D–J and Figure 8—figure supplement 2). These results indicate that YL-1 is indeed an upstream regulator of CG1603, and through which to regulate ETC biogenesis.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig8-v1.jpg)
+
+**Figure 8.:** (A) Schematic graph illustrating the CG1603 upstream and downstream (co-)TFs (transcription factors) involved in regulating mitochondrial electron transport chain (ETC) biogenesis, inferred from ChIP-seq, RNA-seq, and genetics data. (B) Representative images of control RNAi (Ctrl), CG1603 RNAi (CG1603-i), and YL-1 RNAi (YL-1-i) midgut enterocytes (EC) clones with endogenously expressed CG1603-mNG visualized in green or white. Clones were labeled by mCherry red and compared with wild type (wt) neighbors. White dashed lines aided in illustrating clones. Blue: Hoechst. Scale bars: 10 μm. (C) Quantification of the relative CG1603-mNG level in the EC clones to their wt neighbors. n=16 from 8 midguts for each group, error bar: SD. Two-tailed Student's t-test, ***: p<0.001. (D) Representative eye image and Index-R ratio (RNAi+mitoXhoI/RNAi-only) of adult flies with indicated genotypes. Three biological repeats were performed for each group, error bar: SD. Two-tailed Student's t-test, ***: p<0.001. Scale bars: 100 µm. (E–F) Representative images of YL-1 RNAi (YL-1-i) and YL-1 RNAi+CG1603 overexpression (YL-1-i+CG1603 OE) midgut EC clones with endogenously expressed TFAM-GFP (E) or SDHA-mNG (F) visualized in green. Clones were labeled by mCherry red and compared with wt neighbors. Blue: Hoechst. Scale bars: 10 µm. (G–J) Quantification of the relative TFAM-GFP level (G), the relative levels of mtDNA (H), the relative SDHA-mNG level (I), and the relative mitochondrial volume (J) in the EC clones to their wt neighbors. n=16 from 8 midguts for each group, error bar: SD. Two-tailed Student's t-test, ***: p<0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative images of control RNAi (Ctrl), CG1603 RNAi (CG1603-i), STAT92E RNAi (STAT92E-i), YL-1 RNAi (YL-1-i), Myb RNAi (Myb -i), trem RNAi (trem-i), and E(bx) RNAi (E(bx)-i) midgut ISC/EB clones labeled by mCherry red, with endogenously expressed TFAM-GFP visualized in green. White dashed lines aided in illustrating clones. Scale bars: 10 µm. (B) Quantification of the relative TFAM-GFP level in midgut ISC/EB clones to their wt neighbors for different groups. n=10, error bar: SD. Two-tailed Student's t-test, ***: p<0.001.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/96536/elife-96536-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Relative mtDNA levels in eye discs of different RNAi groups. n=3, error bar: SD. Two-tailed Student's t-test, *: p<0.05, ***: p<0.001.
 
 ## Discussion
 
@@ -95,15 +143,445 @@ Notably, CG1603 had no impact on the expression of one-third of its binding gene
 
 ## Materials and methods
 
-## Fly genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>CG1603</td>
+      <td>GenBank</td>
+      <td>FLYB:FBgn0033185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 3605;RRID:BDSC_3605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Heteroplasmic Sco/CyO, UAS-mitoXhoI; eyeless-GAL4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Section Fly genetics</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>RNAi stains used for genetic screen</td>
+      <td>Bloomington Drosophila Stock Center; Vienna Drosophila Resource Center</td>
+      <td>See ‘ID’, ‘SYMBOL’, and ‘Stock #’ column in Supplementary file 1</td>
+      <td>Stock # begins with ‘v’ is from VDRC, otherwise BDSC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Luciferase</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:35788</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TFAM‐GFP</td>
+      <td>PMID:27053724</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hsFLP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Act &gt;CD2&gt;GAL4, UAS-mCD8::mCherry</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Section Fly genetics</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PBac[SAstopDsRed]LL06826</td>
+      <td>Kyoto Drosophila Stock Center</td>
+      <td>Kyoto:141919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>CyO, act-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:4533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT42D</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:1802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT42D, Ubi-nls-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:35496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Defk08815</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:10818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DefExel6052</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:7534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DefExel6053</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:7535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASz-CG1603</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Section Transgenic flies</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>P[CG1603gDNA]</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Section Transgenic flies</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>SDHA-mNeonGreen</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Section Transgenic flies</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TFAM-mNeonGreen</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Section Transgenic flies</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>CG1603-Halo-mNeonGreen</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Section Transgenic flies</td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>Drosophila Genomics Resource Center</td>
+      <td>FLYB:FBtc0000181; RRID:CVCL_Z992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Actin (Mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# MAB1501;RRID:AB_2223041</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATP5A (Mouse monoclonal)</td>
+      <td>abcam</td>
+      <td>Cat# 15H4C4;RRID:AB_301447</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ND30 (Mouse monoclonal)</td>
+      <td>abcam</td>
+      <td>Cat# 17D95;</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TFAM (Rabbit polyclonal)</td>
+      <td>PMID:35449456</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP60 (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4870;RRID:AB_2295614</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked (Goat polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 7074;RRID:AB_2099233</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-linked (Horse polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 7076;RRID:AB_330924</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIB-CG1603-mCherry (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Section Cell culture and gene expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIB/V5-His (plasmid)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# V802001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for real-time PCR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Listed in Supplementary file 8</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Effectene Transfection Reagent</td>
+      <td>QIAGEN</td>
+      <td>Cat# 301425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NativePAGE Sample Prep Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BN2008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NativePAGE Running Buffer Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BN2007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood &amp; Tissue Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript VILO cDNA Synthesis Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11754050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerTrack SYBR Green Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A46012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# H1399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMRM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# I34361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Green</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# M7514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Oxford Instruments</td>
+      <td></td>
+      <td>See Materials and methods, Section Imaging analyses</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td>See Materials and methods, Section Imaging analyses</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Bioinformatics</td>
+      <td></td>
+      <td>See Materials and methods, Section RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>PMID:23104886</td>
+      <td></td>
+      <td>See Materials and methods, Section RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTseq</td>
+      <td>PMID:35311944</td>
+      <td></td>
+      <td>See Materials and methods, Section RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>PMID:25516281</td>
+      <td></td>
+      <td>See Materials and methods, Section RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clusterProfiler</td>
+      <td>PMID:22455463</td>
+      <td></td>
+      <td>See Materials and methods, Section RNA-seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA</td>
+      <td>PMID:19451168</td>
+      <td></td>
+      <td>See Materials and methods, Section ChIP-seq computational analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>PMID:19505943</td>
+      <td></td>
+      <td>See Materials and methods, Section ChIP-seq computational analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>PMID:18798982</td>
+      <td></td>
+      <td>See Materials and methods, Section ChIP-seq computational analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChIPseeker</td>
+      <td>PMID:25765347</td>
+      <td></td>
+      <td>See Materials and methods, Section ChIP-seq computational analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VertexSort</td>
+      <td>PMID:19690563</td>
+      <td></td>
+      <td>See Materials and methods, Section ChIP-seq computational analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSAT</td>
+      <td>PMID:22836136</td>
+      <td></td>
+      <td>See Materials and methods, Section ChIP-seq computational analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SMART</td>
+      <td>PMID:10592234</td>
+      <td></td>
+      <td>See Materials and methods, Section Prediction of protein domains, isoelectric point, net charge, and structure</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold</td>
+      <td>PMID:34265844</td>
+      <td></td>
+      <td>See Materials and methods, Section Prediction of protein domains, isoelectric point, net charge, and structure</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly genetics
 
 Flies were maintained on standard cornmeal medium at 25°C, unless otherwise stated. Heteroplasmic lines that contain~50% XhoI-resistant mt:CoIT300I genome (Hill et al., 2014) were maintained at 18°C. The heteroplasmic w1118; Sco/CyO, UAS-mitoXhoI; eyeless-GAL4 females were crossed with different RNAi lines to generate male offspring for assessing adult eye morphology. RNAi lines used in the screen were obtained from the Bloomington Drosophila Stock Center (BDSC), or Vienna Drosophila Resource Center, and listed in Supplementary file 1. UAS-Luciferase (BDSC#35788) was used as the transgene control. TFAM‐GFP reporter line was described previously (Zhang et al., 2016). Act >CD2>GAL4, UAS-mCD8::mCherry, and hsFLP (BDSC#7) were used to generate ‘flip-out’ clones in midguts. We found that the leakage expression of flippase at 22°C was sufficient to induce ‘flip-out’ clones. PBac[SAstopDsRed]LL06826 (Kyoto#141919) was obtained from Kyoto Drosophila Stock Center, and backcrossed to w1118 for six generations before phenotypic analyses. A fluorescent ‘CyO, act-GFP’ (BDSC#4533) was used for selecting homozygous mutant larvae. PBac[SAstopDsRed]LL06826 was recombined with FRT42D (BDSC #1802) to generate FRT42D, CG1603PBac, which was crossed with hs-flp; FRT42D, Ubi-nls-RFP (derived from BDSC#35496) for generating mitotic clones in ovaries (Laws and Drummond-Barbosa, 2015). Briefly, 0- to 2-day-old females were transferred along with sibling males to the Kimwipe-semi-covered vials, then passed to 37°C water bath, heat shocked for 1 hr, twice daily, for 3 consecutive days. The clones were assessed 7–10days after the final heat shock. Defk08815(BDSC#10818), DefExel6052(BDSC#7534), and DefExel6053(BDSC#7535) were obtained from BDSC.
 
-## Cell culture and gene expression
+### Cell culture and gene expression
 
 S2 cells from Drosophila Genomics Resource Center (DGRC) were cultured as previously described Zhang et al., 2015 following the online instruction (DRSC, https://fgr.hms.harvard.edu/fly-cell-culture). Briefly, cells were maintained in Schneider’s medium (Thermo Fisher Scientific) with 10% heat inactivated fetal bovine serum (FBS, Thermo Fisher Scientific) and 1% penicillin-streptomycin (Thermo Fisher Scientific) at 27°C. Effectene Transfection Reagent (QIAGEN) was used for plasmids transfection following the manufacturer’s instructions. For expression in S2 cells, the coding sequence of CG1603 was cloned into a pIB vector (Thermo Fisher Scientific), with an mCherry coding sequence fused at the 3' end.
 
-## Transgenic flies
+### Transgenic flies
 
 UASz-CG1603 plasmid was generated by inserting CG1603 coding sequence between the Acc65I and XbaI sites of pUASz1.0 (https://dgrc.bio.indiana.edu//stock/1431; RRID:DGRC_1431). UASz-CG1603 was inserted into either attP2 or attP40 (Bestgene Inc) using PhiC31 integrase-mediated site-specific transformation, to generate transgenes on third and second chromosome, respectively.
 
@@ -113,36 +591,36 @@ SDHA-mNeonGreen reporter line was generated using a previously published method 
 
 For TFAM-mNeonGreen and CG1603-Halo-mNeonGreen knock-In lines, the targeting cassette comprising of 1kb genomic DNA fragment upstream of the stop codon, either mNeonGreen or Halo-mNeonGreen coding sequence, and 1kb genomic DNA fragment downstream of the stop codon was inserted into pOT2 vector to generate the donor constructs. Each donor construct and the corresponding chiRNA construct (gRNA for TFAM: ATGATTTGTGAATTATGTGATGG; gRNA for CG1603: GGAATGAACTCTCGCCTTGAGGG) were injected into Vasa-Cas9 expressing embryos (BDSC#51323 or BDSC#51324). G0 adults were crossed with w1118 files, and the progeny carrying the mNeonGreen insertions were screened by PCR. Primers for TFAM-mNeonGreen are GCTCGCTGATCAACAAAGTC and GGTGGACTTCAGGTTTAACTCC. Primers for CG1603-mNeonGreen are AGTGCGAGTTCCTCAGT-GTG and CGCCCAGGACTTCCACATAA.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 For bulk RNA-seq analysis, total RNA was extracted from wt and CG1603 mutant larvae (48hr after egg laying) by TRIzol (Thermo Fisher Scientific) following the standard protocol. Three samples were used for each genotype. Poly (A) capture libraries were generated at the DNA Sequencing and Genomics Core, NHLBI, NIH. RNA-seq was performed with using an NovaSeq 6000 (Illumina) and 100bp paired-end reads were generated at the DNA Sequencing and Genomics Core, NHLBI, NIH. Sequencing data were analyzed following the Bioinformatics Pipeline of mRNA Analysis, NCI, NIH. After quality assessment of FASTQ files using FastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc), paired-end reads were aligned against D. melanogaster reference genome (Dmel6) using a two-pass method with STAR (v2.7.9a) (Dobin et al., 2013). Gene-level read counts were produced by HTseq (v0.11.4) (Putri et al., 2022). Differential expression analysis at the gene level was carried out using DESeq2 open-source R package (Love et al., 2014) with an FDR cut-off of 0.05. GO enrichment analysis was performed using clusterProfiler R package (Yu et al., 2012) with the log2 fold change cut-off>1and <–1 for up-regulated and down-regulated genes, respectively. A density plot was generated by ggplot2 R package (https://ggplot2.tidyverse.org). Drosophila mitochondrial genes and subgroups were referenced against a modified MitoCarta 3.0 inventory (Rath et al., 2021; Wang et al., 2019).
 
-## ChIP-seq computational analysis
+### ChIP-seq computational analysis
 
 ChIP-seq reads in FASTQ format and the narrowPeak output files for each candidate TF were downloaded from ENCODE Project open resource (https://www.encodeproject.org; Kudron et al., 2018). ChIP-seq reads were aligned to the D. melanogaster reference genome (Dmel6) using BWA (v0.7.17) (Li and Durbin, 2009). SAM files were sorted and compressed into BAM format with Samtools (v1.16.1) (Li et al., 2009). Replicates were merged by Picard tools (v2.27.3, https://broadinstitute.github.io/picard) using lenient criteria, and all alignments with an MAPQ value less than 20 were removed. Lags prediction and peak-calling were done with MACS2 (v2.2.7.1) Zhang et al., 2008 following the ENCODE TF ChIP pipeline with IDR analysis performed for consistency analysis (https://github.com/mforde84/ENCODE_TF_ChIP_pipeline; mforde84, 2016). Peak annotation and analysis of profile of ChIP peaks binding to TSS regions were performed with ChIPseeker R package (Yu et al., 2015). Transcription network was analyzed and visualized with VertexSort (Jothi et al., 2009) and igraph (https://igraph.org) R packages, respectively, and ChIP peaks of each TF identified in the gene promoter regions (<2kb) were used for analyses. CG1603 binding motif discovery was done using online integrated pipeline ‘peak-motifs’ of RSAT tools (https://rsat.france-bioinformatique.fr/rsat/peak-motifs_form.cgi; Thomas-Chollier et al., 2012).
 
-## Imaging analyses
+### Imaging analyses
 
 Imaging analyses were performed as previously described (Zhang et al., 2020) using the Zeiss Axio Observer equipped with a Perkin Elmer spinning disk confocal system or a Zeiss LSM880 confocal system. Tissues were dissected out and rinsed in room temperature Schneider’s medium (Thermo Fisher Scientific) supplied with 10% heat inactivated FBS (Thermo Fisher Scientific), and then used for either direct imaging or further staining and fixation. For live imaging, a Zeiss incubation system was used to maintain proper temperature and humidity. Live tissues were mounted with medium on the coverslip in a custom-made metal frame and then covered with a small piece of Saran wrap before imaging. For tissue fixation, PBS containing 4% PFA was used, followed by three washes with PBS. Hoechst 33342 and DAPI (5μg/ml, Thermo Fisher Scientific) incubation in PBS for 5 min was used for nuclear staining of live tissues and fixed tissues, respectively. The image processing and quantification were performed by Volocity (Perkin Elmer, for image acquisition), Zen (Zeiss, for image acquisition), Imaris (Oxford Instruments, https://imaris.oxinst.com/, for 3D surface, voxels, and intensity statistics), and Fiji/ImageJ software (NIH, https://fiji.sc/, for image processing and statistics) based on the previously published methods (Liu et al., 2022; Wang et al., 2023). The relative level of TFAM-GFP or TFAM-mNeonGreen, or relative SDHA-mNeonGreen level, was calculated as the ratio of the mean fluorescence intensity in the RNAi or mutant clone to that of its neighboring control, with background correction. The relative CG1603-mNG level was calculated as the ratio of the mean nuclear fluorescence intensity in the RNAi clone to that of its neighboring control, with background correction. The relative level of mtDNA was determined by calculating the ratio of the TFAM-GFP or TFAM-mNeonGreen puncta number in the RNAi or mutant clone, standardized by clone volume, to that of its neighboring control. The relative mitochondrial volume was calculated as the ratio of the total SDHA-GFP positive voxels with local contrast in the RNAi clone, standardized by clone volume, to that of its neighboring control.
 
 Mitochondrial membrane potential was detected using a protocol adopted from a previous study (Zhang et al., 2020; Zhang et al., 2019). Briefly, after dissection, adult ovaries were incubated in the Schneider’s medium containing TMRM (200nM, Thermo Fisher Scientific) and MitoTracker Green (200nM, Thermo Fisher Scientific) for 20min at room temperature, rinsed with PBS for three times, and then imaged live within 1hr. TMRM and MitoTracker signal intensities were quantified and ratiometric images were generated using Fiji/ImageJ software (NIH). Mitochondrial membrane potential was computed as the ratio of the mean intensity of TMRM to MitoTracker fluorescence with background correction.
 
-## Western blot
+### Western blot
 
 Protein extracts from wt and CG1603 mutant larvae tissues (48hr after egg laying) were prepared using the RIPA buffer (MilliporeSigma) with Halt Protease Inhibitor Cocktail (Thermo Fisher Scientific), 5mM NaF (MilliporeSigma), and 1mM Na3VO4 (MilliporeSigma). Western blot was performed using a XCell SureLock Mini-Cell and XCell II Blot Module (Thermo Fisher Scientific). Samples were electrophoresed under a reducing condition on NuPAGE 4–12% Bis-Tris Mini Protein Gels (Thermo Fisher Scientific). Proteins on the gel were transferred to a polyvinylidene difluoride membrane (Thermo Fisher Scientific). The membranes were blocked with 5% BSA or non-fat milk (MilliporeSigma) in TBST (Tris buffered saline with 0.1% Tween-20). After a series of washes and incubations with primary antibodies, TBST, and secondary antibodies, the immunoreactivity was visualized using SuperSignal West Dura Chemiluminescent Substrate (Thermo Fisher Scientific) and Amersham ImageQuant 800 system (Cytiva). The antibodies used were: Mouse anti-Actin antibody (C4, MAB1501, MilliporeSigma), Mouse anti-ATP5A antibody (15H4C4, abcam), Mouse anti-ND30 antibody (17D95, abcam), rabbit anti-TFAM antibody (Liu et al., 2022), rabbit anti-HSP60 antibody (#4870, Cell Signaling), Anti-rabbit IgG, HRP-linked Antibody (#7074, Cell Signaling), and Anti-mouse IgG, HRP-linked Antibody (#7076, Cell Signaling).
 
-## Blue native PAGE and in-gel activity assays of ETC complexes
+### Blue native PAGE and in-gel activity assays of ETC complexes
 
 Mitochondria from fly larvae were isolated by homogenization and differential centrifugation following previous protocol (Chen et al., 2015). Solubilized protein samples from isolated mitochondria were prepared with NativePAGE Sample Prep Kit (Thermo Fisher Scientific) and the concentrations were determined by Pierce BCA protein assay (Thermo Fisher Scientific). Blue native PAGE was performed using NativePAGE 4–16% Bis-Tris gels and NativePAGE Running Buffer Kit (Thermo Fisher Scientific) according to the manufacturer’s protocol. 60µg proteins for each sample were used. For in-gel activity assays, gels were incubated with one of the following solutions: Complex I buffer (5mM Tris-HCl pH 7.4; 0.1mg/ml NADH; 2.5mg/ml Nitro Blue Tetrazolium), Complex II buffer (5mM Tris-HCl pH 7.4; 20mM sodium succinate; 0.2mM phenazine methasulfate; 2.5mg/ml Nitro Blue Tetrazolium) or Complex IV buffer (50mM sodium phosphate pH 7.2; 0.05% 3,3'-diaminobenzidine tetrahydrochloride, 50µM horse heart cytochrome c) at room temperature for hours, stopped by fixation with 50% methanol and 10% acetic acid for 30min and washed with 10% acetic acid. All chemicals from MilliporeSigma.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total genomic DNAs or RNAs were isolated using the DNeasy Blood & Tissue Kit (QIAGEN) and RNeasy Mini Kit (QIAGEN), respectively, following the manufacturer’s instructions. cDNAs were synthesized by the SuperScript VILO cDNA Synthesis Kit (Thermo Fisher Scientific). Real-time PCRs were performed in triplicate using the PowerTrack SYBR Green Master Mix (Thermo Fisher Scientific), MicroAmpOptical 96-Well Reaction Plate with Barcode (Thermo Fisher Scientific), and QuantStudio 3 Real-Time PCR System (Thermo Fisher Scientific). Primers for amplifying mtDNA and nuclear DNA, as well as for measuring gene expression levels are listed in Supplementary file 8. The relative mtDNA levels of fly larvae or eye discs were measured in three biological replicates for each group using total DNAs extracted from 20 larvae or eye discs. The relative mRNA levels of ETC genes were measured in three biological replicates for each group using total RNAs extracted from 20 larvae.
 
-## Prediction of protein domains, isoelectric point, net charge, and structure
+### Prediction of protein domains, isoelectric point, net charge, and structure
 
 Protein domains were predicted via SMART (Schultz et al., 2000). Protein domain isoelectric point and net charge were predicted using bioinformatic toolbox, Prot pi (https://www.protpi.ch/Calculator/ProteinTool). Protein 3D structure was predicted by AlphaFold (Jumper et al., 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 Two-tailed Student’s t-test was used for statistical analysis. The difference was considered statistically significant when p<0.05. Results are represented as mean ± SD of the number of determinations.

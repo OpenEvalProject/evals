@@ -32,13 +32,25 @@ Together, our results demonstrate that peptidiscs can be used to stabilize membr
 
 ## Results
 
-## On-gradient reconstitution for the stabilization of membrane-protein complexes
+### On-gradient reconstitution for the stabilization of membrane-protein complexes
 
 We developed a new, gentler method to reconstitute membrane proteins into peptidiscs. In this approach, the detergent-solubilized membrane protein is mixed with an excess of peptidisc peptide, and the mixture is overlaid on a detergent-free linear sucrose gradient. As the gradient is centrifuged, proteins enter the detergent-free gradient and become reconstituted into peptidiscs, whereas excess peptide and detergent micelles remain in the overlaid solution (Figure 1A). In addition, since the sucrose gradient separates proteins according to their density, contaminants and aggregates will migrate to different positions in the gradient. To test whether this approach allows efficient reconstitution and effective separation, we used the R. sphaeroides RC core complex by itself (99 kDa), the monomeric RC–LH1 complex (258 kDa), and the dimeric RC–LH1–PufX complex (521 kDa). In addition to their varied sizes, these complexes are colored due to their pigmented co-factors, making it easy to follow their migration into the sucrose gradient upon centrifugation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic drawing showing the principle of the on-gradient reconstitution method: detergent-solubilized membrane protein is mixed with an excess of peptidisc peptide and the mixture is overlaid onto a detergent-free linear sucrose gradient. Upon centrifugation, the protein reconstitutes into peptidiscs and localizes to a discrete band in the gradient, whereas excess peptides and detergent micelles stay at the top. (B) Gradients of the colored R. sphaeroides RC complexes showing their migration in the presence of detergent (left panel) and after reconstitution into peptidiscs (right panel). 1: RC core complex (99 kDa), 2: monomeric RC–LH1 complex (258 kDa), and 3: dimeric RC–LH1–PufX complex (521 kDa). (C) Size-exclusion chromatography profiles of RC complexes reconstituted into peptidiscs. Traces are normalized to 100 mAU. (D) Selected 2D-class averages of the three RC complexes (see Figure 1—figure supplement 1 for all 100 class averages). For comparison, ribbon representations are shown for the R. sphaeroides RC (PDB: 1K6L; Pokkuluri et al., 2002), the Rhodopseudomonas palustris RC–LH1 complex (PDB: 1PYH; Roszak et al., 2003) and the R. sphaeroides RC–LH1–PufX complex (PDB: 4V9G; Qian et al., 2013). RC: green, LH1: yellow, and PufX: red. The bottom row of the class averages for the RC–LH1 complex show empty LH1 rings that were present in the preparation. The side lengths of the individual class averages are 24.4 nm for the RC core complex, 32.5 nm for the monomeric RC–LH1 complex, and 48.8 nm for the dimeric RC–LH1–PufX complex.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Raw images (left panels) and 100 class averages obtained by K-means classification for (A) the RC core complex, (B) the monomeric RC–LH1 complex, and (C) the dimeric RC–LH1–PufX complex. Scale bars are 100 nm. The side lengths of the individual class averages are 24.4 nm for the RC core complex, 32.5 nm for the monomeric RC–LH1 complex, and 48.8 nm for the dimeric RC–LH1–PufX complex.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** A) Detergent-solubilized MsbA was mixed with a 10-fold excess of 5-carboxyfluoresceine-labeled peptidisc peptides and the mixture was overlaid onto a detergent-free linear sucrose gradient (15–35%). After centrifugation at 210,000 xg for 18 hr, the tube was imaged in ambient light (left panel) and using UV light at 365 nm (right panel). UV light reveals two bands that show the location of MsbA reconstituted into peptidiscs (arrowhead) and excess peptides at the top of the gradient (asterisk). (B) Fractions were collected from the top of the gradient and analyzed by native PAGE using a 4–16% gradient gel (left panel) and SDS-PAGE using a 15% gel (right panel), verifying the fluoresecent band in the gradient contains MsbA. (C) Negative-stain EM image of fraction four harvested from the gradient, showing that it contains MsbA. Scale bar is 100 nm.
+
 After on-gradient reconstitution into peptidiscs, the three complexes formed clearly visible bands at distinct positions in the sucrose gradient (Figure 1B). These bands were located in the same positions as the detergent-solubilized complexes run on detergent-containing sucrose gradients (Figure 1B), showing that the peptidisc does not affect the overall hydrodynamic properties of the complexes. Furthermore, when these complexes were recovered from the sucrose gradients, concentrated and analyzed by size-exclusion chromatography (SEC), all samples produced a sharp, symmetric peak (Figure 1C), indicating that the peptidisc-embedded complexes remain stable in solution. Peak fractions were then imaged by negative-stain EM, which in all three cases showed a homogeneous and monodispersed particle population (Figure 1—figure supplement 1). Class averages calculated from these samples show the structural features expected for the RC core complex, the monomeric RC–LH1 complex, and the dimeric RC–LH1–PufX complex (Figure 1D and Figure 1—figure supplement 1). These results are consistent with the proposed tight fit of the peptidisc scaffold to the contour surface of the transmembrane domains of the stabilized proteins and complexes (Carlson et al., 2018).
 
-## Peptidiscs preserve MsbA in its native conformation
+### Peptidiscs preserve MsbA in its native conformation
 
 To explore whether peptidisc-stabilized membrane proteins are suitable for high-resolution structure determination by single-particle cryo-EM, we used the ABC transporter MsbA as test specimen, as its structure was recently determined in different conformations in the context of a nanodisc (Mi et al., 2017).
 
@@ -46,15 +58,51 @@ We purified His-tagged MsbA by nickel-affinity purification and, because the pro
 
 The structure of MsbA reconstituted into a peptidisc was then analyzed by single-particle cryo-EM. Samples were vitrified, imaged with a K2 Summit direct detector on a Titan Krios electron microscope and processed with RELION-3 (Zivanov et al., 2018; Figure 2—figure supplements 3, 5 and 6). Image processing revealed subtle conformational variability in the distance between the two NBDs, as illustrated by the two final density maps at resolutions of 4.2 and 4.4 Å (Figure 2A and Figure 2—figure supplement 6A). The slight mobility of the NBDs in the nucleotide-free state is the likely reason for the somewhat limited resolution of our maps as well as the previously published cryo-EM map of MsbA in nanodiscs (also 4.2 Å) (Mi et al., 2017). The final model was obtained by docking the cryo-EM structure of MsbA in nanodiscs into our 4.2 Å density map using Chimera (Pettersen et al., 2004), followed by refinement in PHENIX (Adams et al., 2010; Figure 2B). Like in the nanodisc-stabilized MsbA, our map showed clear density for LPS trapped in the transporter (Figure 2C), which was not visible in any of the X-ray crystal structures of detergent-solubilized MsbA . However, unlike the EM map of nanodisc-stabilized MsbA, in which the nanodisc is seen as a large amorphous density, the EM map of peptidisc-stabilized MsbA shows clear tubular densities surrounding the transmembrane domain of MsbA that represent the α-helical peptidisc peptides (see Figure 2A and below).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-v1.jpg)
+
+**Figure 2.:** (A) Two density maps for MsbA in peptidiscs that differ slightly in the relative position of the two nucleotide-binding domains). The resolution of the density map of MsbA in conformation 1, in which the NBDs are slightly more separated, is 4.2 Å and that of the density map of MsbA in conformation 2 is 4.4 Å. (B) Density map of MsbA in conformation 1 with the cryo-EM structure of MsbA in nanodiscs refined into the map (PDB: 5TV4; Adams et al., 2010). (C) Section through the map of MsbA in conformation 1 at the position indicated in panel B. In addition to MsbA (red ribbon representation) and density for peptidisc peptides (light gray surface), the map reveals density for a bound lipopolysaccharide (LPS) molecule (cyan surface). (D) Density map of MscS in a peptidisc at a resolution of 3.3 Å. (E) Density map of MscS with the crystal structure refined into the map (PDB: 2OAU; Bass et al., 2002).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 15% SDS-PAGE gel of the purification of MsbA reconstituted into peptidiscs by nickel-affinity chromatography. FT: flow through; SM: starting material; asterisks: fractions that were pooled for subsequent size-exclusion chromatography (SEC). (B) SEC profile for peptidisc-embedded MsbA. (C) 12% SDS-PAGE gel of the purification of MscS reconstituted into peptidiscs by nickel-affinity chromatography. (D) SEC profile for peptidisc-embedded MscS.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Negative-stain EM image of nucleotide-free MsbA in peptidiscs. Scale bar is 50 nm. (B) ATPase activity of MsbA in dodecyl maltoside (DDM) was measured to be 93.2 ± 14.0 nmol/min/mg (mean ± standard deviation; n = 3) and that of MsbA in peptidisc (PD) as 560 ± 19.5 nmol/min/mg (mean ± standard deviation; n = 3). (C) The 100 2D-class averages of negatively stained MsbA in peptidiscs obtained by K-means classification. The side length of the individual averages is 29.7 nm. (D) Negative-stain EM image of MscS in peptidiscs. Scale bar is 50 nm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Selected cryo-EM image of vitrified nucleotide-free MsbA in peptidiscs. Scale bar is 50 nm. (B) 2D-class averages of nucleotide-free MsbA in peptidiscs. The side length of the individual averages is 25.6 nm. (C) Image-processing workflow for nucleotide-free MsbA in peptidiscs. After the initial 3D classification, two classes were selected and refined independently, yielding final density maps at 4.2 and 4.4 Å resolution, respectively. See Materials and methods for further details.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Selected cryo-EM image of vitrified MscS in peptidiscs. Scale bar is 50 nm. (B) 2D-class averages of MscS in peptidiscs. The side length of the individual averages is 24 nm. (C) Image-processing workflow for MscS in peptidiscs. After the initial 3D classification, four classes were combined and refined, yielding a final density map at 3.3 Å resolution. See Materials and methods for further details.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Local-resolution maps of (A) MsbA in conformation 1, (B) MsbA in conformation 2, and (C) MscS are shown at different contouring thresholds. Note that the density representing the peptidisc peptides have lower resolution and also disappear quicker upon increasing the contouring threshold than the transmembrane domains.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Fourier shell correlation curves calculated between independently refined half maps for the density maps of (A) MsbA in conformations 1 and 2, and (B) MscS. (C) Representative cryo-EM densities for the transmembrane regions of MsbA in conformations 1 and 2 and MscS.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Local resolution maps of MscS in peptidiscs (this study) and in DDM (PDB ID: 6PWO; Reddy et al., 2019). The brackets indicate the connections between transmembrane helices 1 and 2 that are better resolved in our map of MscS in peptidiscs. (B) Overlay of the single-particle cryo-EM structures of MscS in peptidiscs (blue; this study) and MscS in nanodiscs (gold; PDB ID: 6PWN; Reddy et al., 2019). (C) Root-mean-square deviations (RMSDs) between corresponding Cα atoms of the MscS structures in peptidiscs and nanodiscs mapped onto the structure of MscS in peptidiscs, showing that the two structures are very similar.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/53530/elife-53530-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Density map of MsbA in conformation 1 generated with C2 symmetry imposed at a resolution of 4.2 Å (left panel) and with no symmetry imposed at a resolution of 4.5 Å (right panel). (B) Density map of MsbA in conformation 2 generated with C2 symmetry imposed at a resolution of 4.4 Å (left panel) and with no symmetry imposed at a resolution of 4.7 Å (right panel). (C) Density map of MscS generated with C7 symmetry imposed at a resolution of 3.3 Å (left panel) and with no symmetry imposed at a resolution of 3.9 Å (right panel).
+
 Together, these results show that peptidiscs are similarly effective in providing a membrane-like environment for membrane proteins as the MSP-based, lipid-containing nanodiscs and that membrane proteins reconstituted into peptidiscs are suitable for structure determination by single-particle cryo-EM.
 
-## Peptidiscs allow cryo-EM structure determination of MscS to high resolution
+### Peptidiscs allow cryo-EM structure determination of MscS to high resolution
 
 Single-particle cryo-EM of MsbA in peptidiscs yielded density maps at a similar resolution as was achieved with MsbA in nanodiscs, but the resolution of these maps is somewhat limited, presumably due to the slight mobility of the NBDs in the nucleotide-free state. To establish whether peptidiscs also allow the structure of membrane proteins to be determined at higher resolution, we used MscS as test specimen, as its structure in nanodiscs has recently been determined to resolutions of 2.9 Å (Rasmussen et al., 2019) and 3.1 Å (Reddy et al., 2019).
 
 His-tagged MscS was purified in DDM, reconstituted into peptidiscs using the on-beads method and further purified by SEC (Figure 2—figure supplement 1C and D). Negative-stain EM showed a monodispersed population of particles of homogeneous size, establishing that the sample was suitable for analysis by cryo-EM (Figure 2—figure supplement 2D). The sample was vitrified, imaged and processed in RELION-3 in the same way as MsbA (Figure 2—figure supplement 4 to 6 ). The final map reached a resolution of 3.3 Å (Figure 2D and Figure 2—figure supplement 6B), close to the resolutions of 2.9 Å and 3.1 Å of the recently published cryo-EM maps of MscS reconstituted into nanodiscs (Rasmussen et al., 2019; Reddy et al., 2019). The resolution of our map is similar to that of the recently published single-particle cryo-EM reconstruction of MscS in DDM (3.4 Å) (Reddy et al., 2019), but our map shows better defined density for the loop connecting transmembrane helices 1 and 2 (Figure 2—figure supplement 7A). As MscS in nanodiscs, our map of MscS in peptidiscs shows the channel in the closed conformation, with perfect seven-fold symmetry that could be docked into our map using Chimera, followed by refinement in PHENIX (Figure 2E). Our final structure of MscS in peptidiscs is very similar to the published one of MscS in nanodiscs (Figure 2—figure supplement 7B and C). However, unlike the map of MscS in nanodiscs that resolves bound lipids, our map of MscS in peptidiscs, like the X-ray crystallographic structure of detergent-solubilized MscS (Bass et al., 2002), does not show any density representing lipids associated with MscS.
 
-## The arrangement of the peptidisc peptides around MsbA and MscS is different
+### The arrangement of the peptidisc peptides around MsbA and MscS is different
 
 Cryo-EM maps of membrane proteins reconstituted into nanodiscs typically show the nanodisc as an amorphous band of density. This is due to the fact that the lipids encircled by the MSPs, other than ones that are tightly associated with the target protein, are mobile, and that the MSPs do not assume unique positions with respect to the incorporated protein. As a result, all structural detail of the nanodisc are being averaged out, which is also true for detergent micelles surrounding a membrane protein. In contrast, the recent cryo-EM map of a fungal mitochondrial calcium transporter stabilized with saposin A showed clear density for the individual saposin A molecules, revealing how they are arranged around the protein (Nguyen et al., 2018). We therefore analyzed the non-protein density in our cryo-EM maps of peptidisc-stabilized MsbA and MscS to see whether it is possible to deduce the arrangement of the peptidisc peptides. To assess whether imposing symmetry during image processing introduced artificial features in the density representing the peptidisc peptides, we also processed the datasets without imposing symmetry. As expected, the resulting maps are noisier and have lower resolution, but the density representing the peptidisc peptides is very similar to that seen in the symmetrized maps (Figure 2—figure supplement 8).
 
@@ -86,21 +134,297 @@ The fact that at least some regions of the peptidisc peptides are well ordered p
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Escherichia coli)</td>
+      <td>mscS</td>
+      <td>Bass et al., 2002</td>
+      <td>83333 (NCBI)</td>
+      <td>Kind gift from Dr. Douglas Rees</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Agilent (Stratagene)</td>
+      <td>#200131</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>C43 (DE3)</td>
+      <td>Miroux and Walker, 1996</td>
+      <td></td>
+      <td>Kind gift from Dr. Bruno Miroux</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rhodobacter sphaeroides)</td>
+      <td>RCxR</td>
+      <td>Jun et al., 2018</td>
+      <td>ΔpuhA, ΔpufQBALMX, ΔrshI, ΔppsR</td>
+      <td>Kind gift from Dr. Tom Beatty</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28b (Plasmid)</td>
+      <td>Addgene</td>
+      <td>69865–3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIND4-RC (Plasmid)</td>
+      <td>Carlson et al., 2018; Jun et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIND-RC1 (Plasmid)</td>
+      <td>Jun et al., 2018; Carlson et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD-His6-MsbA (Plasmid)</td>
+      <td>Carlson et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptidiscs</td>
+      <td>Peptidisc Biotech.</td>
+      <td>Bulk-Peptidisc Glo-Peptidisc</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uranyl formate</td>
+      <td>Pfaltz and Bauer</td>
+      <td>Cat# U01000</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LB broth miller powder</td>
+      <td>Affymetrix/USB</td>
+      <td>4340023</td>
+      <td>Media</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>kanamycin</td>
+      <td>Teknova</td>
+      <td>K2150</td>
+      <td>antibiotic</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopropyl β-D-thiogalactoside (IPTG)</td>
+      <td>Gold Biotechnology</td>
+      <td>Cat# I2481C</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Roche cOmplete, EDTA-free protease inhibitor</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 11873580001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,4-dithiotreitol (DTT)</td>
+      <td>Gold Biotechnology</td>
+      <td>Cat# DTT25</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris base</td>
+      <td>Chemcruz</td>
+      <td>sc-3715B</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N-dimethyldodecylamine N-oxide</td>
+      <td>Sigma</td>
+      <td>Cas# 1643-20-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>BioShop</td>
+      <td>Cat# TRX 777.500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-dodecyl-β-D-maltoside</td>
+      <td>Anatrace</td>
+      <td>Cas# 69227-93-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>octyl-β-D-glucoside</td>
+      <td>Anatrace</td>
+      <td>Cas# 29836-26-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Arabinose</td>
+      <td>GoldBio</td>
+      <td>Cat# A-300–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imidazole</td>
+      <td>Bioshop</td>
+      <td>Cat# IMD508.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acrylamide</td>
+      <td>BioShop</td>
+      <td>Cat# ACR005.502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Bioshop</td>
+      <td>Cat# AMP201.25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Malachite Green</td>
+      <td>Sigma</td>
+      <td>Cas# 569-64-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Bioshop</td>
+      <td>Cat# SUC507.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION-3.0</td>
+      <td>Zivanov et al., 2018</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CtfFind4.1.8</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td>http://grigoriefflab.janelia.org/ctffind4</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gautomatch</td>
+      <td>N/A</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPIDER2</td>
+      <td>Yang et al., 2017</td>
+      <td>http://sparks-lab.org/yueyang/server/SPIDER2/</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/ pemsley/coot</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td>https://www.phenix-online.org</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera/download.html</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Serial EM</td>
+      <td>Mastronarde, 2005</td>
+      <td>http://bio3d.colorado.edu/SerialEM</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>R 2/2 400 mesh Cu Holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td>Q450CR2</td>
+      <td>Cryo-EM grids</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>R 1.2/1.3 400 mesh Cu Holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td>Q4100CR1.3</td>
+      <td>Cryo-EM grids</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 Peptidisc peptides were obtained from Peptidisc Biotech. Tryptone, yeast extract, Tris-base, imidazole, NaCl, dithiothreitol (DTT), acrylamide 40%, bis-acrylamide 2% and TEMED were obtained from Bioshop, Canada. Isopropyl β-D-1-thiogalactopyranoside (IPTG), ampicillin, kanamycin and arabinose were purchased from GoldBio, EDTA-free protease inhibitor cocktail from Roche, n-dodecyl-β-D-maltoside (DDM) and octyl-β-D-glucoside (β-OG) from Anatrace, and N,N-dimethyldodecylamine N-oxide (LDAO) and Triton X-100 from Sigma. Superdex 200 HR and Superose 6 resins were obtained from GE Healthcare. Most other chemicals were purchased from Fisher Scientific.
 
-## Expression and purification of RC complexes
+### Expression and purification of RC complexes
 
 The RC core and RC-LH1 complexes were purified as described before (Jun et al., 2018). Briefly, RC core complex with a C-terminally His-tagged H subunit was expressed in Rhodobacter sphaeroides strain RCxR (ΔpuhA, ΔpufQBALMX, ΔrshI, ΔppsR) using plasmid pIND4-RC, and RC–LH1 complex was expressed in R. sphaeroides strain RCxR using plasmid pIND-RC1. A 10 mL pre-culture in RLB medium (Luria Broth with 810 µM MgCl2 and 510 µM CaCl2) supplemented with 25 µg/mL kanamycin was transferred into 100 mL of the same kanamycin-supplemented RLB medium, grown overnight at 30°C, and then transferred into 1 L of the same medium. After 8 hr at 30°C, protein production was induced with 1 mM IPTG and the cells were grown for an additional 16 hr. During growth and purification, light exposure was kept to a minimum. Cells were harvested by low-speed centrifugation (10,000 xg at 4°C for 6 min), resuspended in Buffer A (50 mM Tris-HCl, pH 7.9, 200 mM NaCl) and lysed with a microfluidizer (15,000 psi). Unbroken cells and cell debris were removed by low-speed centrifugation (10,000 xg at 4°C for 6 min), and the supernatant was incubated with 1% (w/v; final concentration) LDAO overnight at 4°C with shaking. After removal of insoluble material by ultracentrifugation (200,000 xg at 4°C for 30 min), the supernatant was supplemented with 10 mM imidazole and applied to a nickel-affinity column. The column was washed overnight at 4°C with 5 mM imidazole in Buffer A containing 0.03% LDAO (Buffer A LDAO), and bound protein was eluted with 600 mM imidazole in the same buffer. The peak fractions were concentrated using a centrifugal filter (Amicon 30 kDa cut-off for RC core and 100 kDa cut-off for RC–LH1), then subjected to size-exclusion chromatography (SEC) using a Superdex 200 10/300 GL column equilibrated with Buffer A LDAO. Fractions were collected in 500 μL aliquots, and stored in the dark at 4°C until use.
 
 The R. sphaeroides cells enriched for the RC–LH1–PufX complex were generously provided by Dr. Tom Beatty at the University of British Columbia (Abresch et al., 2005). The cells were harvested by low-speed centrifugation, resuspended in Buffer A and lysed with a microfluidizer (15,000 psi). Unbroken cells and cell debris were removed by low-speed centrifugation. Cell membranes were isolated by centrifugation at 150,000 xg for 45 min at 4°C, resuspended in Buffer A to a concentration of 5 mg/mL, and solubilized with 0.5% (w/v) sodium cholate and 4% (w/v) OG for 30 min at room temperature with stirring. After removal of insoluble material (150,000 xg for 45 min at 4°C), the supernatant was applied to a nickel-affinity column. The bound complex was washed with 40 column volumes (CV) of Buffer A containing 0.2% sodium cholate and 0.02% DDM. The complex was eluted with 300 mM imidazole in Buffer A DDM. The peak fractions were pooled and concentrated to 5–10 mg/mL on a 100 kDa cut-off centrifugal filter (Amicon). The concentrated protein was layered onto a linear 15–35% sucrose gradient and centrifuged at 120,000 xg for 48 hr at 4°C. The gradient was manually harvested from the top into 1 mL fractions. Fractions containing the RC–LH1–PufX complex were pooled, concentrated and subjected to SEC on a Superose 6 10/300 column equilibrated with Buffer A containing 0.02% DDM (Buffer A DDM). The fractions containing the complex were pooled and stored in the dark at 4°C until use.
 
-## On-gradient reconstitution of RC complexes into peptidiscs
+### On-gradient reconstitution of RC complexes into peptidiscs
 
 For on-gradient reconstitution, 1 mL of a 1:1.6 (w/w) mixture of target membrane protein (at a concentration ranging from 0.5 to 5 mg/mL) and peptidisc peptide were overlaid onto a 12 mL linear sucrose gradient (5–20% in Buffer A). After centrifugation at 210,000 xg for 15 hr at 4°C in an SW41 rotor (Beckman Coulter), the gradient was manually fractionated from the top into 1 mL aliquots. The fractions were analyzed by SDS-PAGE. Peak fractions were collected and concentrated on a 30 kDa cut-off centrifugal filter (Amicon). The concentrate was injected onto a Superose 6 10/300 GL column pre-equilibrated in Buffer A at a flowrate of 0.5 mL/min. Fractions were collected in 500 μL aliquots and analyzed by SDS-PAGE.
 
-## Expression, purification and on-bead reconstitution of MsbA and MscS into peptidiscs
+### Expression, purification and on-bead reconstitution of MsbA and MscS into peptidiscs
 
 The N-terminally His-tagged MsbA in pET-28 vector was transformed into E. coli strain C43. Cells were grown in autoinduction medium supplemented with 200 μg/mL kanamycin for 3 hr at 37°C, followed by overnight incubation at room temperature. Cells were harvested by centrifugation (10,000 xg, 6 min, 4°C), resuspended in Buffer A, and lysed using a high-pressure microfluidizer (Microfluidics) at 15,000 psi. Unbroken cells and cell debris were removed by low-speed centrifugation (10,000 xg, 6 min, 4°C), and membranes were then pelleted by high-speed centrifugation (100,000 xg, 45 min, 4°C). The membranes were resuspended in Buffer A and solubilized with 1% (w/v) DDM at a final protein concentration of 5 mg/mL for 1 hr at 4°C with stirring. After removal of insoluble material by high-speed centrifugation (200,000 xg, 30 min, 4°C), imidazole was added to the supernatant to a final concentration of 5 mM and applied to 5 mL of Ni2+-NTA chelating resin. The resin was washed with 20 CV of 5 mM imidazole in Buffer A DDM. MsbA was eluted with 2 CV of 600 mM imidazole in Buffer A DDM and the peak fractions were pooled, concentrated to a concentration of 5 mg/mL on a 100 kDa cut-off Amicon filter, and subjected to SEC on a Superdex 200 10/300 GL column equilibrated in Buffer A DDM. Purified MsbA was concentrated to 10–15 mg/mL and stored at −80°C.
 
@@ -108,21 +432,21 @@ On-bead reconstitution into peptidiscs was carried out as described (Carlson et 
 
 Full-length E. coli MscS was cloned into pET-28b(+) vector with an N-terminal His tag and used to transform E. coli strain BL21 (DE3). Cells were grown at 37°C in LB medium containing 50 μg/mL kanamycin. When the culture reached an OD600 of 0.6, cells were induced with 1 mM IPTG. After another 4 hr at 37°C, cells were harvested by centrifugation (4000 xg, 30 min, 4°C), quick-frozen in liquid nitrogen, and stored at −80°C until use. Cell pellets were resuspended for 1 hr at 4°C in lysis buffer (40 mM Tris-HCl, pH 7.9, 500 mM NaCl, 1% Triton X-100 (w/v)) complemented with 1 tablet of EDTA-free protease inhibitor cocktail. Cells were lysed by sonication with a probe sonicator using an amplitude value of 40% for 15 min (cycles of 3 s ON and 8 s OFF). After centrifugation at 300,000 rpm using a 70 Ti rotor (Beckman Coulter) for 20 min at 4°C, the supernatant was loaded onto a Ni-NTA agarose column (QIAGEN) equilibrated with 10 CV of 1% Triton X-100 and 40 mM imidazole in 40 mM Tris-HCl, pH 8.0, 500 mM NaCl, and incubated for 1 hr at 4°C. After washing with 20 CV of 0.02% DDM in TS Buffer (50 mM Tris-HCl, pH 8.0, 50 mM NaCl), the column was washed with 20 CV of Buffer A containing peptidisc peptide (1 mg/mL in). After another 10 min incubation at 4°C, the column was further washed with 40 mM imidazole in TS Buffer. The protein, now reconstituted into peptidiscs, was eluted with 250 mM imidazole in TS Buffer. Peak fractions were combined and subjected to SEC on a Superdex 200 10/300 GL column equilibrated in Buffer B (40 mM Tris-HCl, pH 7.9, 150 mM NaCl). Peak fractions were pooled, concentrated to 1 mg/mL using centrifugal filters (100 kDa cut-off; Millipore), and stored at −80°C. The purity of the protein was assessed by SDS-PAGE and negative-stain EM.
 
-## MsbA ATPase activity assay
+### MsbA ATPase activity assay
 
 Purified MsbA either in 0.02% DDM or reconstituted into peptidisc was assayed for ATPase activity using the malachite green protocol previously described (Lanzetta et al., 1979). Briefly, 1 μM of MsbA was incubated at 37°C in translocation buffer (50 mM Tris-HCl, pH 7.8, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 1 mM DTT, and 0.02% DDM when needed) containing 1 mM ATP. Sample aliquots (5 μL) were mixed with 500 μL of activated Malachite Green and 0.5% Triton X-100 over a time course of 10 min. Light absorption was measured at 660 nm and activity was calculated using first-order rate kinetics.
 
-## Negative-stain electron microscopy
+### Negative-stain electron microscopy
 
 RC complexes and MsbA reconstituted into peptidiscs were negatively stained with 0.7% uranyl formate as described (Ohi et al., 2004). Samples were imaged with a Philips CM10 electron microscope equipped with a tungsten filament and operated at 100 kV. All images were recorded on an AMT XR16L-ActiveVu charge-coupled device (CCD) camera using a nominal magnification of 52,000x, corresponding to a calibrated pixel size of 2.7 Å/pixel, and a defocus of −1.5 μm. For RC core complex, 42 images were recorded, 70 images for the RC–LH1 complex, 95 images for the RC–LH1–PufX complex, and 27 images for MsbA. Particles were manually picked with EMAN2 and windowed into individual images, yielding 13,177 90 × 90 pixel images for the RC core complex, 10,861 120 × 120 pixel images for the RC–LH1 complex, 10,653 180 × 180 pixel images for the RC–LH1–PufX complex, and 14,976 110 × 110 pixel images for MsbA. The particle images were centered, normalized and classified into 100 groups using K-means classification procedures implemented in SPIDER (Frank et al., 1996).
 
-## Cryo-electron microscopy
+### Cryo-electron microscopy
 
 For peptidisc-embedded MsbA, 3.5 μL aliquots at 1.3 mg/mL were applied to glow-discharged Quantifoil R2/2 400 mesh Cu holey carbon grids. Grids were blotted for 3.5 s at 4°C with ~90% humidity and, after a waiting time of 10 s, plunge-frozen in liquid ethane using a Vitrobot Mark IV (Thermo Fisher Scientific). For peptidisc-embedded MscS, 3.5 μL aliquots at 0.07–0.12 mg/mL were applied to glow-discharged Quantifoil R1.2/1.3 400 mesh Cu holey carbon grids covered with a homemade thin carbon film. Grids were blotted for 0.5 s at 4°C with 80–90% humidity and then plunge-frozen in liquid ethane using a Vitrobot Mark IV.
 
 Cryo-EM data were collected using SerialEM on a 300-kV Titan Krios electron microscope (Thermo Fisher Scientific) in the Cryo-EM Resource Center at The Rockefeller University, equipped with a K2 Summit direct electron detector (Gatan) in super-resolution counting mode at a nominal magnification of 29,000x, corresponding to a calibrated super-resolution pixel size of 0.5 Å/pixel. Exposures of 10 s were dose-fractionated into 40 frames (250 ms per frame), with a dose rate of 8 electrons/pixel/s (~2 electrons/Å2/frame), resulting in a total dose of 80 electrons/Å2. The defocus range was varied from −1.0 to −2.0 μm for MsbA, and from −1.5 to −3.5 μm for MscS.
 
-## Image processing
+### Image processing
 
 All movie frames were corrected with a gain reference collected during the EM session. UCSF MotionCor2 (Zheng et al., 2017) was used with 2x binning for motion correction and dose weighting. The contrast transfer function (CTF) was estimated using CTFFIND 4.1.8 (Rohou and Grigorieff, 2015). Particles were automatically picked with Gautomatch (https://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/).
 

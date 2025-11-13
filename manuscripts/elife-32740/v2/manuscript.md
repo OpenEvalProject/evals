@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.32740.001 Witnessing another person’s suffering elicits vicarious brain activity in areas that are active when we ourselves are in pain. Whether this activity influences prosocial behavior remains the subject of debate. Here participants witnessed a confederate express pain through a reaction of the swatted hand or through a facial expression, and could decide to reduce that pain by donating money. Participants donate more money on trials in which the confederate expressed more pain. Electroencephalography shows that activity of the somatosensory cortex I (SI) hand region explains variance in donation. Transcranial magnetic stimulation (TMS) shows that altering this activity interferes with the pain–donation coupling only when pain is expressed by the hand. High-definition transcranial direct current stimulation (HD-tDCS) shows that altering SI activity also interferes with pain perception. These experiments show that vicarious somatosensory activations contribute to prosocial decision-making and suggest that they do so by helping to transform observed reactions of affected body-parts into accurate perceptions of pain that are necessary for decision-making.
+Witnessing another person’s suffering elicits vicarious brain activity in areas that are active when we ourselves are in pain. Whether this activity influences prosocial behavior remains the subject of debate. Here participants witnessed a confederate express pain through a reaction of the swatted hand or through a facial expression, and could decide to reduce that pain by donating money. Participants donate more money on trials in which the confederate expressed more pain. Electroencephalography shows that activity of the somatosensory cortex I (SI) hand region explains variance in donation. Transcranial magnetic stimulation (TMS) shows that altering this activity interferes with the pain–donation coupling only when pain is expressed by the hand. High-definition transcranial direct current stimulation (HD-tDCS) shows that altering SI activity also interferes with pain perception. These experiments show that vicarious somatosensory activations contribute to prosocial decision-making and suggest that they do so by helping to transform observed reactions of affected body-parts into accurate perceptions of pain that are necessary for decision-making.
 
 ## Introduction
 
@@ -40,11 +40,31 @@ The affective and somatosensory networks are also active when experiencing pain 
 
 Testing the causal contribution of mapping the pain of others onto our own pain representations in social decision-making has remained poorly explored in neuroscience because most scientists focus on the affective network (AI, ACC), which lies too deep in the brain to allow its selective targeting with traditional non-invasive neuro-manipulation tools (Keysers and Gazzola, 2017). Here, we leverage the less investigated hand representation of SI, which is superficial and reachable with TMS, to address two questions: does activity in the somatosensory cortex (measured using EEG) explain prosocial behavior on a trial-by-trial basis and does disturbing (with TMS) this activity alter decision-making? We explore prosocial behavior using a costly helping paradigm (Figure 1A), in which participants make a moral decision between two conflicting motives: maximizing their financial gains and minimizing the pain of another (see FeldmanHall et al. [2015]) for use of a similar tradeoff scenario). We then measure and alter brain activity in the hand region of SI to explore the impact of this activity on the decision-making.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32740/elife-32740-fig1-v2.jpg)
+
+**Figure 1.:** (A) Top: a snapshot from the Hand and Face videos (examples of each condition are presented in Videos 1–4). Middle: trial structure. The red arrow indicates the timing of the shock delivery, belt touching the hand or beginning of the color saturation changes. The gray gradient graphically illustrates the dynamic of the face reaction and color saturation changes, with stronger gray corresponding to stronger facial expression or stronger saturation. The intensity of the OutputMovie is equal to the intensity of InputMovie minus the donation. Bottom: run structure. The same structure was used in the EEG and TMS experiments. Gray lightning symbols indicate when TMS was applied in the TMS version of the experiment. (B) A snapshot from the Color videos (see Videos 5, 6) and the trial structure for the rating task.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32740/elife-32740-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The dotted grey line indicates the cut-off used as exclusion criteria.
+
 If somatosensory activity contributes to our decision to help, does it do so by being necessary for an accurate perception of how much pain other people experience? Whether somatosensory activation levels reflect the intensity of the pain experienced by others remains unclear (Lamm et al., 2011; Morrison et al., 2013), and we therefore use data from a third experiment in which high-definition tDCS (HD-tDCS) is used to alter SI activity to measure whether an SI perturbation also alters the accuracy of pain perception.
 
 As mentioned above, somatosensory cortices are mainly involved when the injured body parts are visible. In addition, ventral regions of SI have been reported to be involved in emotional facial perception (e.g Adolphs et al., 2000; van der Gaag et al., 2007; Preston and de Waal, 2002; but see Rütgen et al., 2015 for absence of SI activity in the perception of facial expression of pain). Given its somatotopic organization, SI activity could therefore be involved in pain perception in two ways. If we only see the painful reaction of a hand, the hand region of SI could reflect the intensity of the observed reaction by simulating the movements of the hand and/or the somatosensory consequences of the harm (Keysers et al., 2010). If we know that the painful stimulation originates from the hand, but the intensity of the pain has to be inferred from the facial expressions, somatosensory activation in the hand region could still reflect the intensity of the stimulation, through an indirect route in which information derived from the facial expression is referred back onto the hand region through a process akin to somatosensory imagery, or activation could instead fail to reflect pain intensity. Either way, we could expect the more ventral representation of the face in SI to be involved in representing the intensity of the facial expression (Adolphs et al., 2000; van der Gaag et al., 2007), but less involved in representing the intensity of a painful hand movement when the face is not visible.
 
 To shed further light on the properties of the hand region of SI in the decision-making task presented in this study, we therefore designed two types of input stimuli that probe the above-mentioned scenarios, both showing different intensity of pain (Videos 1, 2, 3 and 4) in order to look at quantitative relations between brain activity, perception and behavior (Wager et al., 2013). Specifically, participants witnessed a confederate receiving a noxious stimulation of randomly selected intensity (InputMovie) delivered as (a) a swat with a belt on the right hand, with only the hand reaction visible (Hand condition, Videos 1 and 2) or (b) an electroshock on the right hand with a visible facial expression and no hand movement (Face condition, Videos 3 and 4). In both kinds of videos, the confederate’s right hand receiving the painful stimulation was clearly visible on the screen, but in the case of the belt (Hand condition) the reaction of the hand itself was the only cue for the participants to deduce the painfulness of the stimulation. By contrast, when receiving the electroshock (Face condition), the hand did not show any reaction and the painfulness was deduced only by the confederate’s facial expression. At each trial, participants then received an endowment of 6€ and could reduce the intensity of the next noxious stimulation (OutputMovie) by giving up some of that money, knowing that the remainder would be part of their compensation (Figure 1A and Videos 1–6).
+
+![Video 1.](https://cdn.elifesciences.org/articles/32740/elife-32740-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/32740/elife-32740-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/32740/elife-32740-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/32740/elife-32740-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/32740/elife-32740-video5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/32740/elife-32740-video6.mp4.jpg)
 
 First, we investigated whether activation of the hand region of the left SI, as measured with EEG, explains prosocial behavior. The SI hand region was identified in an independent pool of participants by correlating fMRI BOLD responses within SI with subjective experience of pain elicited by electrical stimulations on the participant’s right hand. We hypothesized that activation of the hand region of SI would correlate with the donation given by the participants in the Hand condition, when the intensity of the stimulation had to be deduced from the hand movement. In the Face condition, we predicted that activity more ventrally in SI, where facial expressions are represented, would correlate with the donation. We were able to make this prediction because the relevance of facial mimicry has been highlighted in many studies (Oberman et al., 2007; Hess and Fischer, 2013; Fischer and Hess, 2017; Wood et al., 2016b), because we know that the ventral somatosensory cortex causally contributes to emotion perception from facial expression (Adolphs et al., 2000; Paracampo et al., 2017) and because we know that the emotions from visually presented facial expressions requires ventral somatosensory-related cortices (Adolphs et al., 2000). As mentioned above, for the hand region of SI during the Face condition, we had less defined predictions: the presence or absence of correlation of SI hand region activity with the donation while perceiving facial expressions will inform whether facially deduced pain intensity is re-represented in the SI locations reflecting the inferred origin of that pain.
 
@@ -54,15 +74,146 @@ Finally, we used data from a third experiment to explore whether a disruption of
 
 ## Results
 
-## Experiment 1: EEG study
+### Experiment 1: EEG study
 
 Participants (Table 1) donated on average the same amount in the Face and Hand conditions (Face: M = 2.14€, SD = 1.2; Hand: M = 2.16€, SD = 1.2; dependent sample t-test t(28)=–0.2, p=0.8), but comparing the standard deviation in donation within each participant showed more variability in donation for the Face condition (Face: MSD = 1.47, SDSD = 0.44; Hand: MSD = 1.22, SDSD = 0.40; dependent sample t-test t(28)=4, p=0.0004). To avoid this confound in further analysis, we Z-transformed the donation of each participant separately for the two conditions.
+
+**Table 1.**
+ Participants characteristics.The table indicates the number of tested participants for each experiment, with those excluded from the analyses within brackets; the average age and its standard deviation (SD); the gender ratio; and the experimental task. Three participants from the EEG and three from the TMS experiment were excluded because they did not sufficiently believe the cover story. One participant in the EEG was excluded because of EEG failure. One participant in the tDCS was excluded because they performed at chance level. Analyses on gender effects can be found in Supplementary file 3.Table 1—source data 1.Participant’s demographic information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Total NO subj. (excluded)</th>
+      <th>Age (SD)</th>
+      <th>Gender M /F</th>
+      <th>Experimental task</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Validation costly helping stimuli</td>
+      <td>40</td>
+      <td>24 (6)</td>
+      <td>23/17</td>
+      <td>Rating other’s pain</td>
+    </tr>
+    <tr>
+      <td>Validation rating stimuli</td>
+      <td>20</td>
+      <td>24-(3.4)</td>
+      <td>8/12</td>
+      <td>Rating other’s pain and color saturation</td>
+    </tr>
+    <tr>
+      <td>fMRI</td>
+      <td>25</td>
+      <td>25 (6)</td>
+      <td>11/14</td>
+      <td>Rating own pain</td>
+    </tr>
+    <tr>
+      <td>EEG</td>
+      <td>32 (4)</td>
+      <td>25 (5)</td>
+      <td>16/16</td>
+      <td>Decision to help</td>
+    </tr>
+    <tr>
+      <td>TMS</td>
+      <td>18 (3)</td>
+      <td>25 (7)</td>
+      <td>12/6</td>
+      <td>Decision to help</td>
+    </tr>
+    <tr>
+      <td>HD-tDCS</td>
+      <td>26 (1)</td>
+      <td>25 (4)</td>
+      <td>13/13</td>
+      <td>Rating other’s pain and color saturation</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Number of videos for each intensity presented as InputMovie in the EEG and TMS experiment.The last line shows the average movie intensities and their standard deviation presented for each condition and experiment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Perceived intensity</th>
+      <th colspan="2">EEG experiment</th>
+      <th colspan="2">TMS experiment per session</th>
+    </tr>
+    <tr>
+      <th>Hand</th>
+      <th>Face</th>
+      <th>Hand</th>
+      <th>Face</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>13</td>
+      <td>23</td>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>10</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>27</td>
+      <td>10</td>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+      <td>11</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average intensity</td>
+      <td>4 ± 1.4</td>
+      <td>3.7 ± 1.7</td>
+      <td>3.9 ± 1.2</td>
+      <td>3.8 ± 1.6</td>
+    </tr>
+  </tbody>
+</table>
 
 To assess whether participants’ donation was driven by the intensity of the reaction shown in the InputMovie, for each participant, we performed a robust linear regression (Holland and Welsch, 1977) between the intensity attributed to the movies by an independent pool of participants and the Z-donation. The analysis confirmed that participants’ Z-donation closely followed the pain intensity shown in the InputMovies (Figure 2A). In the Face condition, all participants had regression slopes that were positive and significantly different from zero (Face slope: M = 0.48, SD = 0.6, average t value for Face slope = 21.9, SD = 17, all p<0.05; group one-sample t-test on Face slopes t(28) = 37.9 p=0.0006E-21). In the Hand condition, one participant had a negative slope but the regression was not significant (t = −0.17, p=0.8), a second participant had a positive but not significant slope (t = 1.89, p=0.06), whereas the remaining participants all showed positive and significant slopes (all p<0.05). We considered the former two as normal variation along the population spectrum and kept them in the analysis (Hand slope: M = 0.45, SD = 1.4; average t value for Hand slope = 7.4, SD = 5.4; group single sample t-test on Hand slopes t(28) = 16.3 p=0.0001E–11). Importantly, the average slope did not differ between the two conditions (paired t-test t(28)=–1 p=0.3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32740/elife-32740-fig2-v2.jpg)
 
-**Figure 2.:** (A) The relationship between InputMovie intensity, as assigned by an independent pool of participants during the movies validation procedure, and given donation for hand and face videos. Each point is the group average donation for the specific intensity. Error bars represent S.E.M. (B) Pain Localizer ROIs. Left: results of the pain localizer within the primary somatosensory cortices (see 'Supplementary information') shown on the Colin brain together with contours of regions associated with hand (blue) and face (red) movements. These contours were generated using the meta-analyses tool Neurosynth (Yarkoni et al., 2011). Specifically, we generated reverse inference maps using the search terms ‘grasping’ and ‘speech production’ to probe movements of the hand and of the face, respectively, and intersected each with an anatomical map of the left SI from the anatomy toolbox (as the union of BA1, 2, 3a and 3b). Right: schematic visualization of the dorsal and ventral ROIs within the EEG template space, and approximate site of the TMS stimulation. (C) Interaction Condition x TMS results. *p<0.05. Error bars represent S.E.M. (D) The left render shows the location of the five HD-tDCS electrodes on the scalp and where the central anode is positioned relative to our d-SIL ROI (red). The image was created by inserting fish oil omega three pills in place of the HD-tDCS electrodes inside the electrodes holders. A participant was wearing the montage while a T1-weighted anatomical image was acquired (TR = 8.2 ms, TE = 3.8 ms, flip angle = 8°, FOV = 240 mm × 240 mm, 1 × 1 × 1 mm isotropic voxels). The right render shows the 3D simulation of current density changes expected from our tDCS montage, obtained using the electrostatic finite element method (FEM) offered by the Matlab toolbox COMETS 2 (Jung et al., 2013).10.7554/eLife.32740.016Figure 2—source data 1.Data source of Figure 2A.10.7554/eLife.32740.017Figure 2—source data 2.Figure 2A.10.7554/eLife.32740.018Figure 2—source data 3.Data source of Figure 2C.
+**Figure 2.:** (A) The relationship between InputMovie intensity, as assigned by an independent pool of participants during the movies validation procedure, and given donation for hand and face videos. Each point is the group average donation for the specific intensity. Error bars represent S.E.M. (B) Pain Localizer ROIs. Left: results of the pain localizer within the primary somatosensory cortices (see 'Supplementary information') shown on the Colin brain together with contours of regions associated with hand (blue) and face (red) movements. These contours were generated using the meta-analyses tool Neurosynth (Yarkoni et al., 2011). Specifically, we generated reverse inference maps using the search terms ‘grasping’ and ‘speech production’ to probe movements of the hand and of the face, respectively, and intersected each with an anatomical map of the left SI from the anatomy toolbox (as the union of BA1, 2, 3a and 3b). Right: schematic visualization of the dorsal and ventral ROIs within the EEG template space, and approximate site of the TMS stimulation. (C) Interaction Condition x TMS results. *p<0.05. Error bars represent S.E.M. (D) The left render shows the location of the five HD-tDCS electrodes on the scalp and where the central anode is positioned relative to our d-SIL ROI (red). The image was created by inserting fish oil omega three pills in place of the HD-tDCS electrodes inside the electrodes holders. A participant was wearing the montage while a T1-weighted anatomical image was acquired (TR = 8.2 ms, TE = 3.8 ms, flip angle = 8°, FOV = 240 mm × 240 mm, 1 × 1 × 1 mm isotropic voxels). The right render shows the 3D simulation of current density changes expected from our tDCS montage, obtained using the electrostatic finite element method (FEM) offered by the Matlab toolbox COMETS 2 (Jung et al., 2013).
 
 To interrogate the electrical activity originating from the primary somatosensory cortex, we used a linear constrained minimum variance beam-forming approach (Van Veen et al., 1997), in which spatial filters were designed to isolate brain electrical activity from the specified locations of interest. To identify regions of SI that reflect perceived pain intensity while participants experience pain on their own bodies, we performed an independent fMRI experiment in which participants received electrical stimulation at different intensities on their right hand and reported how painful each stimulation was. We then identified voxels in the left SI where the BOLD signal correlated with reported painfulness (see 'Supplementary information, Pain localizer experiment'), and used the following clusters as ROIs for the EEG beam-forming analysis: a dorsal (dSI-L; peak at MNI(x,y,z) = −30,–36, 62) and a ventral (vSI-L; peak at MNI(x,y,z,) = −54,–19, 32) somatosensory cluster (Figure 2B; Maldjian et al., 1999; Mancini et al., 2012). The ventral cluster has a dorso-ventral extent similar to the face representation in SI but seems unusually posterior (Figure 2B; van der Gaag et al., 2007). This suggests that the ventral cluster could originate from the posterior parietal region PF or could represent the facial reaction to the pain in SI. We focused on the left hemisphere, because electrical stimulation was always delivered to the right hand of both the confederate shown in the movies, and of the participants in the pain localizer study.
 
@@ -72,7 +223,7 @@ To assess whether EEG activity explained variance in participants’ donations, 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/32740/elife-32740-fig3-v2.jpg)
 
-**Figure 3.:** (A) Left: relationship between brain activity of one example participant at a given time-point and the Z-donation for all the trials of that participant. The linear trend represents the slope of the robust regression performed on these values. Right: time-course of the robust regression slopes (betas) for the same example participant. (B) Time-course of the Hotelling's t-squared (Ht2) test on the slopes for the significant ROI and condition. Because the two significant Hand clusters are very close in time, for illustrative purposes only, they have been evidenced by a single yellow band. (C) Grand averages for high (darker lines) and low (lighter lines) donation for each dipole, SI-ROI and condition. (D) Right hemisphere results. Significant clusters based on Ht2 are shown in yellow.10.7554/eLife.32740.020Figure 3—source data 1.Time-course of beta of the same participant. Data source of Figure 3A.10.7554/eLife.32740.021Figure 3—source data 2.Data source of Figure 3B.10.7554/eLife.32740.022Figure 3—source data 3.Data source of Figure 3C.10.7554/eLife.32740.023Figure 3—source data 4.Data source of Figure 3D.
+**Figure 3.:** (A) Left: relationship between brain activity of one example participant at a given time-point and the Z-donation for all the trials of that participant. The linear trend represents the slope of the robust regression performed on these values. Right: time-course of the robust regression slopes (betas) for the same example participant. (B) Time-course of the Hotelling's t-squared (Ht2) test on the slopes for the significant ROI and condition. Because the two significant Hand clusters are very close in time, for illustrative purposes only, they have been evidenced by a single yellow band. (C) Grand averages for high (darker lines) and low (lighter lines) donation for each dipole, SI-ROI and condition. (D) Right hemisphere results. Significant clusters based on Ht2 are shown in yellow.
 
 To visualize this effect, we categorized the trials into low and high donation categories (median split per participant) and calculated grand-averages voltage time courses during the InputMovie (Figure 3C) for each dipole. The grand averages along Y and Z present a negative deflection after the InputMovie onset independently of condition and donation, which probably reflects general attentional processes. For the Hand condition, the dipoles further present a positive peak some milliseconds after the slap, which is sustained along Z and transient along X and Y. No clear peak is recognizable after the shock (time 0) during the Face condition. Differences between low and high donation responses can be observed, in particular along Y, for all ROIs and conditions (Supplementary file 1 and 2).
 
@@ -80,7 +231,7 @@ There is evidence for a bilateral receptive field in the Brodmann 1 and 2 sub-re
 
 Our EEG findings therefore suggest that while witnessing the pain of another person, the magnitude of brain activity in the hand region of SI (d-SI) could inform decision-making. To examine the causal contribution of this region to decision-making, in a second experiment, we used TMS to disturb the activity of the SI hand region. We targeted the left hemisphere because it is contralateral to the hand that is stimulated in the confederate.
 
-## Experiment 2: TMS study
+### Experiment 2: TMS study
 
 A separate group of participants (Table 1) performed the costly helping paradigm for the Face and Hand conditions under both active and sham rTMS over the left SI hand region.
 
@@ -92,7 +243,7 @@ We then performed a two-factor repeated ANOVA on these slopes, using the above-m
 
 The effect on the Hand condition did not correlate with any of the TMS side effects perceived by the participant while performing the experiment (measured by questionnaire, all p>0.05). This suggests that TMS on the SI hand representation interferes with the process that normally couples a person’s donation to the needs of the other person (i.e. the observed pain intensity) when this need is perceived through the movements of the affected body part (Hand condition), but this is less the case when the need is perceived through facial expressions. To test whether the impact of TMS is mediated by an effect on pain perception, we used data from a third experiment.
 
-## Experiment 3: HD-tDCS study
+### Experiment 3: HD-tDCS study
 
 In this experiment, participants (Table 1) had to rate how much pain they perceived while watching the Face and Hand videos under the effect of tDCS centered over left SI. The high density 4 × 1 electrodes tDCS montage that we used would be expected to have a facilitatory effect on the hand region of SI under the anode (Figure 2D), and a weaker inhibitory effect on ventral SI, including the face representation, under one of the four return cathodes. To control for unspecific effects on intensity rating processes unrelated to pain in this experiment, we introduced a new type of video in which participants needed to rate color saturation intensity (Color condition, Figure 1B).
 
@@ -120,13 +271,13 @@ In summary, we provide evidence that activity in the hand region of SI that occ
 
 ## Methods and material
 
-## Participants
+### Participants
 
 A total of 169 healthy, right-handed volunteers, with normal or corrected-to-normal vision, (mean age = 25 +/– 5 SD) were recruited for our studies (Table 1). Because previous studies reported that racial biases modulate empathy (Xu et al., 2009; Avenanti et al., 2010; Cikara et al., 2014) and our videos showed a Caucasian confederate, only Caucasian individuals were recruited. All participants received monetary compensation and gave their informed consent for participation in the study. None of the participants reported neurological, psychiatric, or other medical problems or any contraindication to fMRI, TMS or tDCS (Rossini et al., 2015; Rossi et al., 2009). No discomfort or adverse TMS effects were reported by the participants or noticed by the experimenter. Table 1 summarizes the number and characteristics of the participants for each study.
 
 All studies have been approved by the Ethics Committee of the University of Amsterdam, The Netherlands (project identifiers: 2016-BC-7394, 2016-BC-7130, 2017-EXT-8467, 2016-PSY-6485, 2014-EXT-3476, and 2014-EXT-3432). All participants received monetary compensation and gave their informed consent for participation in the study. Consent authorization for the publication of images has been obtained.
 
-## Costly helping experimental set-up
+### Costly helping experimental set-up
 
 Central to our task was the aim of inducing an effective, naturalistic moral dilemma, in which the state induced by witnessing the distress of another individual is pitched against financial rewards. The other person’s distress was elicited by delivering electroshocks or slaps on the right-hand dorsum. To limit the total number of shocks or slaps delivered throughout the experiments and to avoid uncontrollable variance in the reactions of the victim, we developed a cover story. Each participant was made to believe that she/he would be paired to another participant, with whom she/he will draw lots to decide who would play the role of the observer and who of the pain-taker. The observer and the pain-taker will be allocated to separate adjacent rooms, connected through a video camera. While the pain-taker would receive the electroshocks and slaps, the observer would have an EEG recorded while they witnessed the reaction of the pain-taker to the stimulations (Experiment 1) or while brain stimulation was delivered over SI (Experiment 2). In reality, the lots were manipulated in such a way that the confederate would always be selected as the pain-taker and the participant as the observer. In addition, participants were misled to think that the noxious stimulations were delivered to the confederate in real-time, and that what the participants saw on the monitor was a live feed from the pain-taker’s room. In reality, we presented prerecorded videos of face and hand reactions to noxious stimuli previously delivered to the confederate (Videos 1, 2, 3 and 4). The confederate’s appearance during the experiment was carefully matched to the pre-recorded videos. The exact setup shown in the videos was recreated at every session, including the belt and electric stimulator used, and shown to the participants. Face and Hand videos were shown in separate sessions (order randomized across participants), with a long break in between. During the break, participants could move, leave the experimental room and, importantly, briefly interact with the confederate. This short break helped to maintain the cover story.
 
@@ -134,7 +285,7 @@ The choice to use a cover story was dictated by (i) pilot data showing that rela
 
 At the end of the costly helping paradigm, participants answered the question ‘Do you think the experimental setup was realistic enough to believe it’ on a scale from 1 (strongly disagree) to 7 (strongly agree). Five was used as cut off to discriminate participants who believed in the cover story from those who did not, and participant’s who reported four or less were excluded from the analyses. The credibility values for the whole sample of participants are shown in Figure 1—figure Supplement 1.
 
-## Costly helping visual stimuli
+### Costly helping visual stimuli
 
 Two types of 2 s long videos were generated (Figure 1A). The Hand-videos depicted the confederate’s right hand reactions to a slap delivered by a brown leather belt (procedure adapted from Meffert et al. [2013]). The hand, right arm and shoulder are the confederate’s only visible body parts. While the belt was visible, the hand holding it only entered the field of view marginally at times, and was covered by a black glove to blend in with the black background. The videos started with the belt laying on the hand dorsum. The slap occurred at the end of the first second, during which the belt would be lifted and prepared to hit. Videos ended one second after the slap, after showing the hand and shoulder reaction. A total of 200 Hand-videos were recorded by varying the intensity of the slap at every trial, with 30 s between each trial. The Face-videos showed the actor’s facial expressions in response to an electroshock delivered to the right-hand dorsum. The upper part of her body was clearly visible on a black background. Even though the stimulation was given to her hand and the hand was visible, the hand did not move in response to the shock making the face the main source of information about the stimulation intensity. The videos started with the face in a neutral expression. During the first second, the expression was kept neutral until the stimulation occurred.
 
@@ -146,11 +297,11 @@ The 392 videos that were generated were validated by an independent group of 40 
 
 Because the intensity of the OutputMovie depended on the participant’s donation, it was impossible to precisely predict the number of videos needed for each intensity and participant. This means that in some cases, the number of recorded videos was lower than the number of actual presentations of a particular intensity, and few videos had to be shown more than once. Care was taken to maximize the distance between repetitions of the same stimulus. The number of repeated videos is low and it was never the case that a participant saw all of the movies twice. During debriefing, we asked our participants to indicate on a seven step scale (from 1 = strongly disagree to 7 = strongly agree) how well the following statement applied to them: ‘You think you saw the same movie twice.’ On average, participants in the EEG experiment reported a value of 6.1 (Figure 1—figure Supplement 1), whereas those in the TMS experiment reported a value of of 6.3, suggesting that movie repetition was not easily recognized by our participants.
 
-## Costly helping paradigm
+### Costly helping paradigm
 
 For the participant, each trial of the costly helping paradigm started with a 1 s red fixation cross, followed by a video showing the actor’s reaction to the first stimulation (InputMovie, Figure 1A), the intensity of which was randomly determined by the computer. Participants then received an endowment of 6€, and had to decide whether to donate all or part of this money to reduce the intensity of the following stimulation. Participants knew, that every 1€ donated reduced the intensity by one unit, and that money was not donated directly to the confederate, who did not have monetary benefit from the donation. Instead, 10% of the money not donated was added as a ‘bonus’ to participants’ compensation for taking part in the study. InputMovie intensity varied from trial to trial to cover the entire range from 2 to 7, and was randomly chosen. Participants’ implicit task was to infer the intensity of the stimulation from the confederate’s reaction. Participants selected the donation amount by moving a rectangle along a bar with possible donations (0€ to 6€). The starting position of the cursor was randomized to avoid motor preparation of the response. Participants were instructed to use a two-pedal controller with their right foot to select the donation (USB Double Foot Switch II, Scythe Co., Ltd., Tokyo, Japan). We used a foot-pedal rather than a traditional button-box because SI activity in the hand region, critical for this experiment, may otherwise have been contaminated by the planning/performance of the button-presses. After three seconds without pressing any pedal, the software would select the current position of the rectangle as the chosen donation and move to the following black screen, which had a random duration from 1.5 to 3 s. Finally, depending on the donation, 2 s feedback video (OutputMovie) showed the confederate’s response to the second stimulation. OutputMovie would represent the end of a trial. A 5 s black screen separated consecutive trials.
 
-## EEG study
+### EEG study
 
 For the entire duration of the costly helping paradigm, electrophysiological brain signals were recorded from 64 active channels (10–20 positioning) by an ActiCHamp Brain Vision system. The ground electrode was placed on Fz. Electrode impedances were kept below 5 kΩ, and all signals were digitized (rate of 500 Hz) and stored for off-line processing. All data analyses were performed using the FieldTrip Toolbox (Oostenveld et al., 2011) and customized MATLAB (Mathworks Inc., Natick, MA, USA) scripts. The signals were low-pass filtered at 60 Hz and band-stop filtered within the range of 49.5–50.5 Hz, and harmonics were used to eliminate the electrical line noise. The data were re-referenced to a common average and segmented in epochs of 7 s, containing 5 s before InputMovie onset and lasting until InputMovie end. The segmented signals were visually inspected across all channels. Trials containing muscular and other non-ocular movement artifacts were discarded. The artifact rejection procedure resulted in 41.9 ± 1.7 artifact-free trials in the Hand task and 50.6 ± 1.9 in the Face task. Blinks and eye movements were corrected using Independent Component Analysis (Jung et al., 2000). Each trial was then baseline corrected using the average of the signal from 400 to 200 ms before the appearance of the fixation cross.
 
@@ -158,7 +309,7 @@ We used a linear constrained minimum variance beam-former approach (Van Veen et 
 
 To test whether brain activity in the ROIs while watching the videos could explain the Z-donation, we first conducted a mass-univariate robust regression analysis (within subjects) with the brain activity as the predictor variable and Z-donation as the observed variable. This was done separately for each time point, dipole, task, subject and ROI. Robust regression was chosen to be less sensitive to outliers in the data (Wager et al., 2005). The regression slopes of this subject level analysis were then subjected to Hotelling's T-Squared test (Ht2) at the group level. This is a multivariate test that examines whether the average slopes for the three dipoles are all zero. This test was repeated for each time point, condition and ROI. The family-wise error rate arising from multiple comparison of time-points was dealt with by using a cluster-based non-parametric Monte-Carlo correction. Neighboring values exceeding the cluster-cutting threshold (corresponding to Ht2 >4.675 and punc <0.01) were combined into a single cluster. Cluster-level statistics were computed by comparing the summed Ht2 values of each cluster against a permutation distribution. The permutation distribution was constructed by randomly flipping the sign of all of the slopes of randomly selected participants (1000 iterations) and by calculating the maximum group cluster statistic for each iteration. The null distribution of the cluster-based test statistic was obtained by taking the most extreme value of the statistic in each permutation. The cluster-based test statistic in the observed data was then associated with a corrected pseudo-p value based on its percentile in the null distribution for each cluster. Furthermore, we corrected for four ROIs (two left and two right mirror ROIs) and two conditions tested using a Bonferroni correction of 6 (Figure 3), leading to a pseudo-p-value of 0.0063 as the cut-off for the cluster-based test statistic.
 
-## TMS study
+### TMS study
 
 Sample size for the TMS experiment was determined though a power analysis conducted using G*Power 3 (Faul et al., 2007), with power (1 – β) set at 0.95 and α = 0.05. The effect size was chosen on the basis of the work of Paracampo et al. (2017) (Cohen’s d = 0.94), because this work was conducted by the experimenter who was also responsible for the TMS part of the work described in the current manuscript (RP), and because the Paracampo et al. (2017) study involved a task that made similar cognitive demands, used an equivalent rTMS protocol, and targeted the same brain region (SI). A comparable effect size (Cohen’s d = 0.89) was found when taking into account TMS studies in which participants are required to observe others and understand their behavior (Paracampo et al., 2017, 2018; Valchev et al., 2017; Tidoni et al., 2013). In our within subjects study, we hypothesed a perturbation of the activity in SI, and therefore a reduction in performance as a consequence of the perturbation, so we conducted a power analysis to compare performance in active stimulation with performance in sham stimulation using a matched paired one-tailed t-test at the second (group) level. This analysis yielded a required sample size of 15 participants.
 
@@ -168,7 +319,7 @@ A large body of evidence shows that the hand area in the somatosensory cortex ca
 
 The general procedure of the experiment was the same as that for Experiment 1, except for changes in the number of trials and in the video presented, which were necessary to adapt the task to the TMS (sham vs active) set-up. Participants underwent a total of 60 trials for Face Condition and 60 trials for Hand condition. The conditions were presented in four blocks (two blocks for the Face and two for the Hand condition), separated by a long break in the middle in which participants further interacted with the confederate. Each block was equally divided into two parts, which were assigned to active and sham TMS in a pseudo-randomized order (e.g. for one participant: ActiveTMSFaceBlock1part1, ShamTMSFaceBlock1part2, ShamHandBlock1part2, ActiveHandBlock1part2, long break, ActiveHandBlock2part1, ShamHandBlock2part2, ActiveFaceBlock2part2, ShamFaceBlock2part1). Although some videos might have been shown twice within block1 or block2, videos in block1 were different from those in block2. At the end of the experimental session, participants had to rate from 1 to 4 how much headache, neck stiffness, itching on the skin, pain on the skin below the stimulation site, sleepiness and mood-swing they experienced, and whether it was difficult to concentrate. Answers were then compared with the TMS effect in the two tasks by calculating the difference in slopes between the Active and the Sham Condition and by correlating this difference with the answer to these questions across participants. Results were corrected for multiple comparison and found to be non-significant.
 
-## HD-tDCS study
+### HD-tDCS study
 
 For this experiment, in addition to the Face and Hand movies, a new set of videos was created, in which no pain was depicted but the color saturation changed over time (Figure 1B, and Videos 5–6). To match the temporal dynamic of the Hand and Face videos, the saturation change started after 1 s from the beginning of the videos and reached its peak 0.5 s afterwards. Videos were created with three different levels of saturation changes. An independent group of 20 participants (Table 1) watched Color, Face and Hand videos (presented using EventIDE; OkazoLab Ltd., 2012), and rated from 1 to 10 how painful the stimulation was for the person in the Face and Hand videos, and how much the saturation changed in the Color videos. Using their left hand, they moved a rectangle along a bar with possible ratings, from 0 to 10. The starting position of the cursor was randomized to avoid motor preparation of the response. The validation procedure resulted in a total of 32 videos per category matched for average rating (F(2,93)=0.2, p=0.8) and accuracy, calculated as the square of the difference from the expected value (F(2,93)=0.4, p=0.6).
 

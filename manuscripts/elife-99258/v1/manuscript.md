@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0049erg63 Department of Bio and Fermentation Convergence Technology, Kookmin University Seoul Republic of Korea
+1. Department of Bio and Fermentation Convergence Technology, Kookmin University Seoul Republic of Korea ([ROR:0049erg63](https://ror.org/0049erg63))
 
 † Corresponding author
 
 ## Abstract
 
-Understanding how the brain controls nutrient storage is pivotal. Transient receptor potential (TRP) channels are conserved from insects to humans. They serve in detecting environmental shifts and in acting as internal sensors. Previously, we demonstrated the role of TRPγ in nutrient-sensing behavior (Dhakal et al., 2022). Here, we found that a TRPγ mutant exhibited in Drosophila melanogaster is required for maintaining normal lipid and protein levels. In animals, lipogenesis and lipolysis control lipid levels in response to food availability. Lipids are mostly stored as triacylglycerol in the fat bodies (FBs) of D. melanogaster . Interestingly, trpγ deficient mutants exhibited elevated TAG levels and our genetic data indicated that Dh44 neurons are indispensable for normal lipid storage but not protein storage. The trpγ mutants also exhibited reduced starvation resistance, which was attributed to insufficient lipolysis in the FBs. This could be mitigated by administering lipase or metformin orally, indicating a potential treatment pathway. Gene expression analysis indicated that trpγ knockout downregulated brummer , a key lipolytic gene, resulting in chronic lipolytic deficits in the gut and other fat tissues. The study also highlighted the role of specific proteins, including neuropeptide DH44 and its receptor DH44R2 in lipid regulation. Our findings provide insight into the broader question of how the brain and gut regulate nutrient storage.
+Understanding how the brain controls nutrient storage is pivotal. Transient receptor potential (TRP) channels are conserved from insects to humans. They serve in detecting environmental shifts and in acting as internal sensors. Previously, we demonstrated the role of TRPγ in nutrient-sensing behavior (Dhakal et al., 2022). Here, we found that a TRPγ mutant exhibited in Drosophila melanogaster is required for maintaining normal lipid and protein levels. In animals, lipogenesis and lipolysis control lipid levels in response to food availability. Lipids are mostly stored as triacylglycerol in the fat bodies (FBs) of D. melanogaster. Interestingly, trpγ deficient mutants exhibited elevated TAG levels and our genetic data indicated that Dh44 neurons are indispensable for normal lipid storage but not protein storage. The trpγ mutants also exhibited reduced starvation resistance, which was attributed to insufficient lipolysis in the FBs. This could be mitigated by administering lipase or metformin orally, indicating a potential treatment pathway. Gene expression analysis indicated that trpγ knockout downregulated brummer, a key lipolytic gene, resulting in chronic lipolytic deficits in the gut and other fat tissues. The study also highlighted the role of specific proteins, including neuropeptide DH44 and its receptor DH44R2 in lipid regulation. Our findings provide insight into the broader question of how the brain and gut regulate nutrient storage.
 
 ## Introduction
 
@@ -24,43 +24,67 @@ The use of a genetically tractable model organism such as Drosophila melanogaste
 
 ## Results
 
-## Trpγ mutants exhibit reduced sugar levels alongside elevated lipid and protein levels
+### Trpγ mutants exhibit reduced sugar levels alongside elevated lipid and protein levels
 
 In order to understand how D. melanogaster regulates the maintenance of major nutrient levels, including carbohydrates, lipids, and proteins, TRP channel mutants were examined as potential candidates. A recent study revealed that among TRP channel mutants, only trpγ mutant displayed only reduced carbohydrate levels (Dhakal et al., 2022), suggesting the involvement of additional TRP channels in regulating major nutrients. D. melanogaster possesses 13 members of the TRP channel family. Flies with mutations in trpM, trpML, and nompC showed high mortality rates with minimal survival, whereas those with mutations in the remaining 10 TRP superfamily genes were viable and healthy when homozygous. Investigation into the lipid and protein levels of other available TRP superfamily mutants under sated conditions revealed that, apart from the trpγ mutant, all tested mutants exhibited normal levels (Figure 1A and B). Specifically, the trpγ1 mutant showed 1.3 times higher triacylglycerol (TAG) levels and 1.5 times higher protein levels compared to the control. These metabolic changes were unique and specific to the trpγ mutants among the evaluated TRP superfamily mutants. Previous observations indicated that trpγ mutants had lower cellular sugar levels and stored glycogen (Dhakal et al., 2022). Consistently, trpγ mutants exhibited reduced levels of cellular sugars (glucose and trehalose), stored glycogen, and sugar levels in the hemolymph (Figure 1C–E). In conclusion, it was found that trpγ1 mutants displayed lower carbohydrate levels but higher lipid and protein levels compared to the control. Importantly, the increased TAG and protein levels observed in trpγ1 mutant were confirmed with a second trpγ1 allele (trpγG4) (Figure 1F and G). Furthermore, we restored the deficiency in lipid and protein levels using a genomic trpγ+ transgene, g(trpγ), and by introducing a UAS-trpγ cDNA, controlled by GAL4 knocked into the trpγ locus (trpγG4 flies; +).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig1-v1.jpg)
 
-**Figure 1.:** (A) Triacylglycerol (TAG) level measurement in the whole-body extract from control (w) and transient receptor potential (TRP) channel mutant lines (n=9). (1118B) Protein level measurement in the whole-body extract from control (w) and TRP channel mutant lines (n=6). (1118C) Measurement of total glucose and trehalose levels (µg/mg) in the whole-body extracts of control (w) and 1118trpγ adult males (n=6). (1D) Measurement of tissue glycogen levels (µg/mg) in adult control (w) and 1118trpγ males (n=6). (1E) Measurement of Hemolymph glucose +trehalose level in the male flies of control (w) and 1118trpγ (n=6). (1F) Measurement of TAG level in adult males to test for rescue of the TAG defect in trpγ flies with the UAS-trpγ and the trpγ or with the G4trpγ genomic transgene (n=6–10). (G) Rescue experiments showing the measurement of protein levels in adult flies with the indicated genotypes (n=6). Comparisons between multiple experimental groups were conducted via single-factor ANOVA coupled with Scheffe’s post hoc test. The asterisks indicate significant differences from the controls (**p<0.01).
+**Figure 1.:** (A) Triacylglycerol (TAG) level measurement in the whole-body extract from control (w1118) and transient receptor potential (TRP) channel mutant lines (n=9). (B) Protein level measurement in the whole-body extract from control (w1118) and TRP channel mutant lines (n=6). (C) Measurement of total glucose and trehalose levels (µg/mg) in the whole-body extracts of control (w1118) and trpγ1 adult males (n=6). (D) Measurement of tissue glycogen levels (µg/mg) in adult control (w1118) and trpγ1 males (n=6). (E) Measurement of Hemolymph glucose +trehalose level in the male flies of control (w1118) and trpγ1 (n=6). (F) Measurement of TAG level in adult males to test for rescue of the TAG defect in trpγ flies with the UAS-trpγ and the trpγG4 or with the trpγ genomic transgene (n=6–10). (G) Rescue experiments showing the measurement of protein levels in adult flies with the indicated genotypes (n=6). Comparisons between multiple experimental groups were conducted via single-factor ANOVA coupled with Scheffe’s post hoc test. The asterisks indicate significant differences from the controls (**p<0.01).
 
-## Trpγ regulates lipid metabolism through dh44 neuroendocrine cells in the pars intercerebralis
+### Trpγ regulates lipid metabolism through dh44 neuroendocrine cells in the pars intercerebralis
 
 We recently proposed that TRPγ expression in the six DH44 neuroendocrine cells in the pars intercerebralis (PI) located in the dorsal medial area of the brain (Figure 2—figure supplement 1A1–A3) is essential to maintain normal carbohydrate levels in tissues (Dhakal et al., 2022). Therefore, we next sought to determine whether protein and lipid levels can be regulated by the same neuroendocrine cells. To test this, we used a transgenic fly encoding an inwardly rectifying K+ channel (UAS-Kir2.1) to inactivate specific neurons (Hodge, 2009). Interestingly, inactivating the Dh44 neurons significantly increased the lipid levels but not protein levels (Figure 2A and B). Approximately 16 neurons in the PI express dILP2, which are also overlapped by two DH44-positive neurons in 5–10- d-old adult male flies (Figure 2—figure supplement 1B1–B3; Ohhara et al., 2018). However, inactivation of dILP2 neurons did not impair either lipid or protein levels (Figure 2A and B). In conclusion, our findings indicated that DH44 neuroendocrine cells contribute to lipid regulation but not protein regulation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig2-v1.jpg)
+
+**Figure 2.:** (A) Tissue triacylglycerol (TAG) level measurement in whole-body extracts of adult male flies after silencing of Dh44-GAL4 and dILP2-GAL4 with UAS-Kir2.1 (n=6). (B) Measurement of tissue protein level in whole-body extracts of adult male flies. Brain-specific Dh44-GAL4 and dILP2-GAL4 neurons were ablated using UAS-Kir2.1 (n=6). (C) Measurement of TAG from whole-body extract of adult male flies in the indicated genotypes (n=6–7). (D) Measurement of tissue protein level from the whole-body extracts of adult males (n=6). (E) TAG levels in whole-body extracts after RNAi knockdown of trpγ mutants under control of the Dh44-GAL4 (n=6). (F) Measurement of area (µm2) of LDs in adult fat body across the indicated genotypes involved the selection of the 30 largest lipid droplets (LDs), choosing the top 10 LDs from each sample for analysis (n=3). (G-L) Nile red stating of fat body from the male of indicated genotypes. Scale bars represent 50 µm. All values are reported as means ± SEM. Comparisons between multiple experimental groups were conducted via single-factor ANOVA coupled with Scheffe’s post hoc test. The asterisks indicate significant differences from the controls (*p<0.05, **p<0.01). Each dot indicates the distribution of individual sample values. (+) and (-) indicate the presence or absence of the indicated transgenes, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A1-A3) Immunohistochemistry of brain tissue in adult flies. (A1), anti-DsRed staining of trpγ reporter (UAS-dsred;trpγ G4). (A2), anti-DH44 staining of Dh44 cells in the brain. (A3), merged expression of A1 and A2. (B1-B3) Immunohistochemistry of brain tissues (UAS-mCD8::GFP/+;dilp2-mcherry/Dh44-GAL4).(B1), Anti-DsRed staining of dilp2 reporter. (B2), anti-GFP staining of Dh44 cells. (B3), merged expression of B1 and B2. Arrows indicate the co-expression of dilp2 and DH44 in two neurons. (C) Total triacylglycerol (TAG) levels in the whole-body extracts obtained from males and females, separately (n=4). (D-F) Fat body stains with Nile red. (D) is from the fat body of UAS-Kir2.1, (E) is from Dh44-GAL4 flies, and (F) is from flies with Dh44 neurons ablated with UAS-Kir2.1. Scale bars represent 50 µm. (G) Measurement of area of lipid droplets (LDs) in UAS-Kir2.1, Dh44-GAL4, and Dh44-GAL4>UAS- Kir2.1, respectively (n=3). Means ± SEMs. Single factor ANOVA with Scheffe’s analysis was used as a post hoc test to compare multiple sets of data. The asterisks indicate significance from control (*p<0.05, **p<0.01). Each dot indicates distribution of individual sample values.
 
 To assess whether trpγ expression in Dh44 neurons is sufficient to restore normal lipid and protein levels in trpγ mutant flies, we expressed the UAS-trpγ under the control of Dh44-GAL4 in the trpγ1 mutant background (Figure 2C and D). Our findings indicated that the increased lipid levels in the trpγ1 mutant background decreased to normal levels via the expression of the trpγ transgene in the DH44 neuroendocrine cells but not in its parent strains (Figure 2C). Again, the expression of the trpγ transgene in the dILP2 neurons had no appreciable effects (Figure 2C). In contrast, the expression of the trpγ transgene did not decrease the protein levels in either the DH44 or the dILP2 neurons (Figure 2D). This indicates that TRPγ expressed in Dh44 cells is sufficient for the regulation of lipid levels. Next, RNAi-mediated knockdown experiments were conducted to further examine the role of trpγ in Dh44 neurons. Interestingly, trpγ knockdown in Dh44 neurons significantly increased lipid levels, whereas flies harboring only the Dh44-GAL4 or the UAS-trpγRNAi transgenes displayed normal lipid levels (Figure 2E). This indicated that TRPγ in Dh44 cells is needed for the regulation of lipid levels. Furthermore, the total TAG level in the trpγ1 flies was higher in both males and females (Figure 2—figure supplement 1C), meaning that the functions of trpγ are not sex-specific.
 
 In D. melanogaster, lipids are mainly stored in the form of TAG and cholesterol ester in the adipose tissue [i.e., fat bodies (FBs)] as lipid droplets (LDs) (Liu and Huang, 2013). Consistent with the increased TAG in tissues, Nile red staining of the FBs of trpγ1 and trpγG4 flies exhibited larger lipid mass compared to control animals under sated condition (Figure 2F–I). These LDs returned to their normal size through the expression of trpγ in trpγ or Dh44 neurons but not dILP2 neurons (Figure 2F and J–L). Additionally, inactivating the Dh44 cells (Dh44-GAL4/UAS-Kir2.1) recapitulated the enlarged LD phenotype of the trpγ mutant flies (Figure 2—figure supplement 1D–G). Overall, our findings indicated that trpγ expression regulates lipid and carbohydrate homeostasis but not protein levels in DH44 neuroendocrine cells in the PI.
 
-## Trpγ mutants exhibit starvation susceptibility and deficits in lipolysis
+### Trpγ mutants exhibit starvation susceptibility and deficits in lipolysis
 
 Higher lipid cellular levels may decrease lifespan (Johnson and Stolzing, 2019; Tatar et al., 2014). Therefore, we measured the lifespan of control and trpγ1 flies fed with a standard cornmeal diet (Figure 3A). However, the lifespans of control and trpγ1 flies were not significantly different under normal conditions. The LT50 of the control was 59.34±0.92 d and that of trpγ1 was 55.75±2.35 d. In contrast, trpγ appeared to be required for proper metabolism under starvation conditions, as demonstrated by the decreased starvation resistance of the trpγ1 and trpγRNAi knockdown flies in Dh44 cells (Figure 3B; Dhakal et al., 2022). This defect was fully recovered by the expression of UAS-trpγ under the control of Dh44-GAL4 (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig3-v1.jpg)
+
+**Figure 3.:** (A) Survival assay to measure the total survival time (days) of control (w1118) and trpγ1 male flies fed with a normal corn meal diet (n=7–8). (B) Survival assay to measure the survival time (h) of the indicated genotypes with male flies under starvation conditions (n=4). (C) TAG level measurement in control (w1118) and trpγ1 adult male flies in both sated (0 hr starvation) and starved (24 hr starvation) conditions (n=8). (D, E) Nile red staining of the lipid droplets (LDs) extracted from FB of (D) w1118 and (E) trpγ1 flies under sated (D1, E1) and starved (D2, E2) conditions, respectively. Scale bars represent 50 µm. (F) Measurement of area (µm2) of the LDs extracted from the FBs of w1118 and trpγ1 flies under sated (0 hr starvation) and starved (24 hr starvation) conditions (n=3). (G) Measurement of triacylglycerol (TAG) level with controls and the flies after expressing UAS-AMPKTD under the control of Dh44-GAL4 in the trpγ1 mutant background (n=4). All values are reported as means ± SEM. Survival curves in A and B were estimated for each group, using a Kaplan-Meier method and compared statistically using the log-rank tests. Comparisons between multiple experimental groups in C, F, G, and H were conducted via single-factor ANOVA coupled with Scheffe’s post hoc test. The asterisks indicate significant differences from the controls (**p<0.01).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Measurement of total TAG levels in w1118, trpγ 1, and Dh44-GAL4/UAS-trpγ under sated and starved conditions (n=4). (B) Measurement of total TAG level in w1118, UAS-dicer2;trpγ RNAi, and UAS-dicer2/+; trpγ RNAi/+;Dh44-GAL4/+under sated and starved conditions (n=4). Means ± SEMs. Single factor ANOVA with Scheffe’s analysis was used as a post hoc test to compare multiple sets of data. The asterisks indicate significance from control (**p<0.01). Each dot indicates distribution of individual sample values.
 
 The starvation-sensitive phenotype in the trpγ mutants may have been due to decreased carbohydrate storage in tissues, including glucose, trehalose, and glycogen. However, we previously demonstrated that trpγ mutants could utilize carbohydrates under starved conditions (Dhakal et al., 2022). Furthermore, the elevated whole-body TAG levels in the trpγ mutant flies might suggest that they were unable to break down stored lipids even under starving conditions. Metazoans must coordinate the metabolism of glycogen, lipid, and protein to maintain metabolic homeostasis during fasting periods, thus providing an appropriate energy supply across tissues. Therefore, the total TAG levels of the control and trpγ mutant flies were assessed under sated and starved (starvation for 24 hr) conditions (Figure 3C–F). When the control flies were deprived of food for 24 hr, their TAG levels decreased significantly (Figure 3C). In contrast, the trpγ1 mutant exhibited no changes in whole-body TAG levels before and after starvation (Figure 3C). To further confirm that lipolysis was restricted in the trpγ mutants under starvation conditions, LDs were stained, after which we measured the sizes of individual LDs accumulated throughout the whole fat bodies of the flies (Figure 3D–F). Despite considerable variations, the sizes of the LDs in the control flies were significantly reduced after starvation. In contrast, no significant differences in LD sizes were identified between the sated and starved conditions in the trpγ1 flies. We examined how overexpression and knockdown of trpγ in Dh44 neurons affect the starvation phenotype. Overexpressing trpγ in Dh44 cells resulted in similarity to the wild-type in both sated and starved conditions, as well as normal survival time under starvation conditions (Figure 3B and Figure 3Figure 1A). Conversely, trpγRNAi knockdown flies in Dh44 neurons reproduced phenotypic traits observed in trpγ mutants, including decreased lipid levels (Figure 3—figure supplement 1B) and reduced survival time under starvation conditions (Figure 3B).
 
 Dh44 neurons regulate starvation-induced sleep suppression (Oh and Suh, 2023), which implies that these neurons become more active under starved conditions. Adenosine monophosphate-activated protein kinase (AMPK) serves as the master controller for maintaining energy balance in cells, and coordinating metabolic pathways (Hardie et al., 2003). It regulates the balance between building up and breaking down substances to ensure cellular stability during metabolic stress. AMPK is a key target for treating metabolic diseases like type 2 diabetes and obesity, as its activation increases fatty acid oxidation (Kim et al., 2016). We wonder if activating AMPK in Dh44 neurons improves lipolysis. The expression of AMPKTD, the activated form of AMPK (Lee et al., 2007) in Dh44 neurons indeed restored the elevated TAG levels observed in trpγ1 (Figure 3G). This suggests that AMPK functions as a downstream component of Dh44 neuronal activation.
 
-## Recovery of the starvation resistance of the trpγ mutant via metformin treatment
+### Recovery of the starvation resistance of the trpγ mutant via metformin treatment
 
 Metformin is widely used to treat many metabolic diseases such as type II diabetes (Lv and Guo, 2020). We previously demonstrated that 1–5 mM metformin can induce hypoglycemia, in addition to suppressing fat storage in flies (Nath and Lee, 2025; Sang et al., 2021). Therefore, we next sought to test whether the increased lipid levels of the trpγ mutant can be reduced to a normal level via oral administration of metformin. First, we measured TAG levels at 0, 7, and 14 d after dietary administration of 1 mM or 5 mM of metformin (the treatments were prepared by mixing the appropriate metformin concentrations into standard cornmeal diets) (Figure 4A and B). The high TAG levels in the trpγ mutant (41.91± 4.56) were decreased to levels similar to those of the control at 7 and 14 d (30.03± 4.34 and 33.79± 3.20, respectively) after treatment with 1 mM metformin (Figure 4A). Furthermore, although oral administration of 1 mM metformin did not affect the TAG level in the control, the 5 mM metformin treatment significantly reduced the TAG level of the control flies at 14 d (Figure 4B). Moreover, the 5 mM metformin treatment was more effective in reducing the TAG level in the trpγ mutant. These findings indicated that oral administration of metformin can either suppress lipogenesis or enhance lipolysis in D. melanogaster. To further confirm the effects of metformin treatment, LDs were analyzed under the same condition (Figure 4C and D). The sizes of the LDs in the control and trpγ mutant flies were significantly reduced after treatment with 1 mM metformin at 14 d or 5 mM metformin at 7 and 14 d (Figure 4D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig4-v1.jpg)
 
-**Figure 4.:** (A) Triacylglycerol (TAG) level measurement at 0, 7, and 14 d in the control (w) and 1118trpγ adult male flies after dietary exposure to 1 mM metformin (n=6). (1B) TAG measurement at 0, 7, and 14 d in w and 1118trpγ adult male flies after dietary exposure to 5 mM metformin (n=6). (1C) Pictures of Nile red staining of lipid droplets (LDs) after dietary exposure to 1 mM and 5 mM metformin in standard fly food for 7 and 14 d in w and 1118trpγ flies. Scale bars represent 50 µm. (1D) Measurement of area (µm2) of LDs extracted from the FB of w and 1118trpγ flies after dietary exposure to 1 mM and 5 mM metformin in standard fly food for 7 and 14 d (n=3). (1E) Survival assay to measure the survival time (h) of control (w) and 1118trpγ males after dietary exposure to 1 mM metformin in 1% agar food (n=6–10). (1F) Starvation survival assay of control (w) and 1118trpγ males after dietary exposure to 5 mM metformin in 1% agar food (n=6). All values are reported as means ± SEM. Comparisons between multiple experimental groups were conducted via single-factor ANOVA coupled with Scheffe’s 1post hoc test. Each dot indicates the distribution of individual sample values. Survival curves in E and F were estimated for each group, using a Kaplan-Meier method and compared statistically using the log-rank tests. The asterisks indicate significant differences from the controls (*p<0.05, **p<0.01).
+**Figure 4.:** (A) Triacylglycerol (TAG) level measurement at 0, 7, and 14 d in the control (w1118) and trpγ1 adult male flies after dietary exposure to 1 mM metformin (n=6). (B) TAG measurement at 0, 7, and 14 d in w1118 and trpγ1 adult male flies after dietary exposure to 5 mM metformin (n=6). (C) Pictures of Nile red staining of lipid droplets (LDs) after dietary exposure to 1 mM and 5 mM metformin in standard fly food for 7 and 14 d in w1118 and trpγ1 flies. Scale bars represent 50 µm. (D) Measurement of area (µm2) of LDs extracted from the FB of w1118 and trpγ1 flies after dietary exposure to 1 mM and 5 mM metformin in standard fly food for 7 and 14 d (n=3). (E) Survival assay to measure the survival time (h) of control (w1118) and trpγ1 males after dietary exposure to 1 mM metformin in 1% agar food (n=6–10). (F) Starvation survival assay of control (w1118) and trpγ1 males after dietary exposure to 5 mM metformin in 1% agar food (n=6). All values are reported as means ± SEM. Comparisons between multiple experimental groups were conducted via single-factor ANOVA coupled with Scheffe’s post hoc test. Each dot indicates the distribution of individual sample values. Survival curves in E and F were estimated for each group, using a Kaplan-Meier method and compared statistically using the log-rank tests. The asterisks indicate significant differences from the controls (*p<0.05, **p<0.01).
 
 Next, we sought to assess whether metformin could increase starvation resistance in the control and trpγ mutant flies. To test this hypothesis, the starvation resistance of the flies was measured with or without metformin. Neither of the metformin concentrations appeared to affect the starvation resistance of the control flies (Figure 4E and F). However, although metformin did not restore the starvation resistance of the trpγ mutant flies to the level of the controls, it did significantly extend their survival (Figure 4E and F; LT50 of the control at 1 mM and 5 mM: 56.06±1.40 hr and 52.39±2.09 hr, respectively; LT50 of the trpγ1 mutant at 1 mM and 5 mM: 50.35±3.34 hr and 46.42±1.54 hr, respectively). Our findings thus demonstrated that oral metformin administration can rescue TRPγ-mediated metabolic syndrome.
 
-## Downregulation of the lipolytic gene brummer in trpγ mutants
+### Downregulation of the lipolytic gene brummer in trpγ mutants
 
 The trpγ1 mutant exhibited marked alterations in the levels of major nutrients. Therefore, we next sought to analyze the transcriptional levels of genes related to gluconeogenesis, lipogenesis, and lipolysis. Gluconeogenesis is a metabolic process that produces glucose from non-carbohydrate carbon substrates. The genome of D. melanogaster harbors two gluconeogenic genes: fructose-1,6-bisphosphatase (fbp) and phosphoenolpyruvate carboxykinase 1 (pepck1) (Miyamoto and Amrein, 2019). The results of our real-time quantitative reverse transcription PCR (qRT-PCR) analyses indicated that the transcription levels of fbp and pepck1 were not significantly different between control flies under sated and starved conditions (Figure 5A). Next, we analyzed two lipogenic genes: acetyl–CoA carboxylase (acc) and desaturase 1 (desat1) (Figure 5A; Wang et al., 2022; Yee et al., 2013). No significant differences were identified between the control and trpγ1 flies under both conditions. Finally, we investigated the expression of the lipolytic gene brummer (bmm) (Figure 5A; Blumrich et al., 2021). Under starved conditions, the transcriptional level of bmm was highly increased in the control. In contrast, bmm was downregulated in trpγ1 under sated and starved conditions. Therefore, the transcriptional regulation of w1118 and trpγ1 during starvation was markedly and significantly different. The data indicates that the trpγ mutant can sense the starvation state but responds abnormally by suppressing lipolysis instead of activating it. This dysregulated lipolytic response likely increases the mutant’s vulnerability to starvation, as it cannot effectively mobilize lipid stores for energy during periods of nutrient deprivation. Brummer, a homolog of human adipocyte triglyceride lipase (ATGL), is associated with lipid storage in the form of LDs (Grönke et al., 2005; Men et al., 2016). These results suggest that the lipolytic process is not sufficient to deplete stored lipids in the trpγ1 mutant, resulting in excessive lipid storage. Therefore, the survival time of the trpγ1 mutant during starvation was significantly shorter than that of the control.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig5-v1.jpg)
+
+**Figure 5.:** (A) qRT-PCR analysis to measure the expression of gluconeogenic genes (fbp, pepck1), lipogenic genes (acc, desat1), and a lipolytic gene (bmm) under sated (0 hr starvation) and starved (24 hr starvation) conditions in w1118 and trpγ1 flies. The relative fold change in the expression of starvation-induced genes (gluconeogenic genes: fbp and pepck1; lipogenic genes: acc and desat1; and lipolytic gene: bmm) was determined in whole-body samples of male adult w1118 and trpγ1 flies by qRT-PCR. Tubulin was used as an internal control to standardize the samples. Each graph shows the number of evaluated samples (n=3). (B) Fluorescence microscopic imaging of bmm::GFP expression in the FBs of w1118 and trpγ1 under sated (0 hr starvation) and starvation (24 hr starvation) conditions. Scale bars represent 50 µm. (C) Quantification of intensity level of bmm::GFP in the FBs of w1118 and trpγ1 under sated and starvation conditions (n=3). (D-I) Nile red staining of lipids in the FB of flies with the indicated genotypes. Scale bars represent 50 µm. (J) Measurement of area of lipid droplets (LDs) from samples D–I entailed selecting a total of 30 LDs, with the 10 largest LDs chosen from each sample for analysis (n=3). (K) qRT-PCR analysis to measure the expression of acc, desat1, and bmm from the whole body samples of flies after feeding 5 mM metformin for 1 d (n=3). All values are reported as means ± SEM. Comparisons between multiple experimental groups were conducted via single-factor ANOVA coupled with Scheffe’s post hoc test. The asterisks indicate significant differences from the controls (*p<0.05, **p<0.01).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Means ± SEMs. Single factor ANOVA with Student t-test was used as a post hoc test to compare data. The asterisks indicate significance from the controls (**p<0.01).
 
 Transgenic flies expressing bmm::GFP (bmm promoter GFP) in their FB cells were used to examine bmm expression in LDs (Men et al., 2016). The fluorescent images obtained from the transgenic flies were then used to confirm our qRT-PCR results. Two images of control flies under sated and starved conditions were first analyzed both qualitatively and quantitatively (Figure 5B and C). Next, trpγ1 was analyzed under the two conditions (Figure 5B and C). A reduction in fluorescent intensity was clearly detectable in the trpγ1 mutant using the transgenic reporter line. These results further confirmed that trpγ1 has aberrant regulation in the lipolytic pathway.
 
@@ -68,15 +92,31 @@ To further substantiate the idea that the reduction in the expression level of b
 
 To conclusively explore whether metformin targets enzymes involved in lipid metabolism, specifically lipolytic or lipogenic genes, we administered 5 mM metformin supplemented in normal food for 1 d and measured the expression levels of bmm, acc, and desat1. Oral supplementation of metformin resulted in an increase in the expression level of the lipolytic gene, bmm lipase of the control as well as trpγ1 (Figure 5K). Importantly, there was no observed effect of metformin on the expression levels of lipogenic genes. This data provides insights into the mode of action of metformin, suggesting a specific impact on lipolysis.
 
-## Recovery of the trpγ mutant through oral lipase administration or lipid absorption
+### Recovery of the trpγ mutant through oral lipase administration or lipid absorption
 
 The intestine is a key organ for lipid absorption and metabolism (Han et al., 2020) and disturbances in intestinal lipid metabolism are associated with hyperlipidemia (Jia et al., 2021). To clarify if our observations were due to insufficient activity of lipase in the gut, lipase enzyme mixed with 1% agar food was supplied to both control and mutant flies. Given that the brief activity of lipase in the intestine, lipase-containing agar food was provided to the flies every 12 hr. Surprisingly, supplementation with lipase, but not denatured lipase, under starvation conditions increased the survival of trpγ mutant flies to levels comparable to those of the control flies (Figure 6A; LT50 of lipase treated-control and trpγ1: 50.35±0.93 hr and 44.94±1.33 hr, respectively). To support the hypothesis that the extended lifespan of mutant flies during starvation is associated with dietary lipase intake, we examined lipid accumulation (Figure 6—figure supplement 1A–E). Lipase treatment resulted in the breakdown of lipid deposits in the mutant R2 region of the intestine. Importantly, only active lipase showed an enhanced survival time under starvation conditions in mutant flies, while denatured lipase did not exhibit this effect. Therefore, our findings suggest that lipase may play a role in digesting accumulated lipids in the intestine, though the mechanisms of lipase absorption remain unclear.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig6-v1.jpg)
+
+**Figure 6.:** (A) Survival assays of w1118 and trpγ1 flies under starvation condition by feeding 0.1% lipase or 0.1% denatured lipase mixed into 1% agar food (n=8). (B) Starvation survival assay to measure the survival time (h) of w1118 and trpγ1 male flies after feeding 1% glycerol mixed into 1% agar food (n=4). (C) Survival assay to measure the survival time (h) of w1118 and trpγ1 flies after feeding 0.2% hexanoic acid (HA) supplemented into 1% agar food (n=8). (D) Survival assay to measure the survival time (hr) of w1118 and trpγ1 flies after feeding 0.2% mixed (mono-, di-, and tri-) glycerides (n=4). (E-I) Nile red staining of LDs in full gut and the magnified R2 region of adult male flies. (E) w1118, (F) trpγ1, (G) trpγ1,UAS-trpγ/trpγG4, (H) trpγ1,UAS-trpγ/trpγ1;Dh44-GAL4/+. Scale bars represent 50 µm. The arrow indicates the orientation of intestine from anterior to posterior. (I) Measurement of area of lipid droplets (LDs) in the R2 region of trpγ1, area of 28 LDs from 10 samples (n=10). Note that control and rescued flies have no LD. All values are reported as means ± SEM. Survival curves were estimated for each group, using a Kaplan-Meier method and compared statistically using the log-rank tests. (**p<0.01).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A-D) Nile red staining of full gut of w1118 and trpγ1 under normal and lipase-fed conditions. (A, B) Full gut of w1118 under 1% agar fed and 1% agar with 0.1% lipase fed, respectively. (C, D) Full gut of trpγ1 under 1% agar fed and 1% agar with 0.1% lipase fed, respectively. Scale bars represent 50 μm. Red arrows indicate the orientation of intestine from anterior to posterior. Blue arrow indicates accumulated LDs. (E) Measurement of area of LDs in gut of w1118 and trpγ1 after feeding 1% agar or 1% agar with 0.1% lipase (n=3). (F) Survival assays to measure the survival time (h) of control (w1118) and trpγ1 flies after feeding 0.5% hexanoic acid in 1% agarose food (n=4). (G) Survival assays of w1118 and trpγ1 flies after feeding 0.5% triglyceride mix (mixture of mono-, di-, tri-) in 1% agar food (n=4). Means ± SEMs. Single factor ANOVA with Student t-test was used as a post hoc test to compare data for E. Survival curves were estimated for each group, using a Kaplan-Meier method and compared statistically using the log-rank tests for F and G. The asterisks indicate significance from the controls (**p<0.01).
+
 Next, we sought to assess the involvement of each of the components of TAG in the recovery of starvation susceptibility. TAG is composed of glycerol and three fatty acids. Therefore, we first fed the flies with 1% glycerol only. Glycerol extended the survival of the control and trpγ1 flies by 3–4-fold (Figure 6B). However, the LT50 of the control and trpγ1 were still significantly different (Figure 6C; LT50 of control and trpγ1: 244.5± 20.10 hr and 117.75± 3.32 hr, respectively). Next, the flies were fed with 0.2% and 0.5% hexanoic acid (HA) (Figure 6C and Figure 6—figure supplement 1F; 0.2% HA, LT50 of control and trpγ1: 65.44±1.94 hr and 52.32±2.05 hr, respectively; 0.5% HA, LT50 of control and trpγ1: 56.27±1.30 hr and 46.27±1.47 hr, respectively). Additionally, we also tested the effects of 0.2% and 0.5% concentrations of a TAG mixture (combination of mono-, di-, and tri- acylglycerol) (Figure 6D and Figure 6—figure supplement 1G; 0.2% TAG, LT50 of control and trpγ1: 52.93±5.12 hr and 50.1±3.74 hr, respectively; 0.5% TAG, LT50 of control and trpγ1: 65.1±2.6 hr and 57.75±3.32 hr, respectively). The HA and mixed TAG treatments significantly extended the survival of the trpγ1 mutants, albeit not to levels similar to those of the control. This indicated that the TRPγ mutant could not fully absorb and burn the digested lipid. Furthermore, lipid-only dietary supplementation markedly limited the LT50 of the control. Importantly, supplementation with lipolytic drugs, lipase, TAG, and free fatty acids effectively rescued the survival of trpγ mutants under starvation conditions. This observation was consistent with our finding that trpγ mutants are unable to degrade lipid stores under starvation conditions. The dietary rescue of trpγ mutants suggests that although the trpγ mutation increases the levels of stored lipids, the flies were not able to utilize them when starved. We next sought to determine whether trpγ mutation reduces lipase production in the abdomen by comparing lipid accumulation in the intestine. The Drosophila midgut is divided into R1–R5 regions, each with distinct functions in nutrient processing and absorption. Notably, the R2 region serves as a critical interface between the fly’s diet and metabolic processes (Capo et al., 2019). To assess lipid distribution, we conducted Nile red staining in control and mutant animals (Figure 6E–H). Mutant flies displayed elevated lipid deposits on the intestinal wall of the R2 region (Figure 6F), a phenotype restored to normal levels by expressing trpγ in its own cells or Dh44 neurons (Figure 6G–I). Consequently, we quantified lipid droplets specifically within the intestinal wall of the R2 region in trpγ1 flies, with no such accumulation observed in control or rescued flies (Figure 6I). These findings indicate that TRPγ plays a crucial role in the brain-gut axis, specifically in controlling lipid metabolism in the intestine, as evidenced by the lipid accumulation observed in the gut region of trpγ1. Taken together, these observations indicate that TRPγ plays an important role in maintaining systemic lipid levels through proper expression of triglyceride lipase.
 
-## Assessment of the role of DH44 and its receptors (DH44R1 and DH44R2) in relation to the utilization of fat
+### Assessment of the role of DH44 and its receptors (DH44R1 and DH44R2) in relation to the utilization of fat
 
 In Drosophila, two receptors have been identified for DH44 (Hector et al., 2009). In order to investigate the potential roles of DH44 in fat utilization and identify the receptor responsible for nutrient regulation, we examined lipid and protein levels in Dh44Mi, Dh44R1Mi, and Dh44R2Mi. Dh44Mi and Dh44R1Mi showed normal total TAG levels, while Dh44R2Mi exhibited higher lipid levels like trpγ1 (Figure 7A). Additionally, Nile red staining of LDs in the FBs revealed that Dh44Mi and Dh44R2Mi mutants possessed larger LDs (Figure 7B–F), although protein levels remained unaffected across all three mutants (Figure 7G). Further investigations quantified the expression of the bmm in the FBs of Dh44Mi, Dh44R1Mi, and Dh44R2Mi under both sated and starved conditions. In sated conditions, bmm expression was found to be downregulated in Dh44R2Mi compared to the control (Figure 7H). Interestingly, under starved conditions, while bmm levels significantly increased in the control, indicating a normal response to starvation, such an increase was not observed in Dh44Mi and Dh44R2Mi. Instead, in these mutants, bmm levels significantly decreased compared to their levels under sated conditions (Figure 7H). In addition, bmm levels in Dh44R1Mi under starved conditions did not increase as significantly as in the control. This suggests a unique role of DH44 and its receptors in regulating lipid metabolism and response to nutritional status in Drosophila.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig7-v1.jpg)
+
+**Figure 7.:** (A) Total triacylglycerol (TAG) level (µg TAG/mg fly) measurement in whole body extracts from control (w1118), Dh44Mi, Dh44R1Mi, and Dh44R2Mi mutants (n=5). (B-E) Nile red stains of the fat body from w1118, Dh44Mi, Dh44R1Mi, and Dh44R2Mi, respectively. Scale bars represent 50 µm. (F) Area of lipid droplets (LDs) in each indicated genotype (n=3). (G) The protein (µg protein/mg fly) measurement in the whole-body extracts from control (w1118) and Dh44Mi, Dh44R1Mi, and Dh44R2Mi mutants (n=4). (H) Quantification (qRT-PCR) of lipolytic gene (bmm) expression level in the fat body of w1118, Dh44Mi, Dh44R1Mi, and D44R2Mi flies under sated and starved conditions (n=3). (I) Total TAG level measurement in whole body extracts from the indicated genotypes (n=4). (J-M) Nile red stains of the fat body from (J) w1118, (K) trpγ1 (L) trpγ1,UAS-trpγ1/trpγ1,Dh44R1-GAL4, and (M) trpγ1,UAS-trpγ1/trpγ1,Dh44R2-GAL4. (N) Area of LDs in each indicated genotype (n=3). Scale bars represent 50 µm. (O–Q) Immunohistochemistry with anti-GFP and anti-DsRed. (O, P) Co-expression of trpγ and Dh44R2 (trpγG4/Dh44R2-LexA;UAS-mCD8::GFP/LexAopmCherry) in the R2 region of the intestine. Arrows indicate co-expression of trpγ and Dh44R2 in the gut cell. (O) Full gut image. Scale bar represents 300 µm. (P) Magnified view of boxed R2 region in (O). Scale bar represents 50 µm. (Q) Co-expression of Dh44R2 and Dh44 (Dh44R2-GAL4/Dh44-LexA;UAS-mCD8::GFP/LexAop-mCherry) in the brain. Arrows indicate coexpressed two cells in the PI. Scale bar represents 50 µm. Means ± SEMs. Single-factor ANOVA with Scheffe’s analysis was used as a post hoc test to compare multiple sets of data. The asterisks indicate significance from control (*p<0.05, **p<0.01). Each dot indicates distribution of individual sample value.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Survival assay of w1118, Dh44Mi, Dh44R1Mi, and Dh44R2Mi after feeding 0.1% lipase and 0.1% denatured lipase in 1% agar food (n=4). (B) Survival assay of w1118, Dh44Mi, Dh44R1Mi, and Dh44R2Mi after feeding 1% glycerol in 1% agar food (n=4). (C) Survival assay of w1118, Dh44Mi, Dh44R1Mi, and Dh44R2Mi after feeding 0.2% hexanoic acid in 1% agar food (n=4). (D) Survival assay of w1118, Dh44Mi, Dh44R1Mi, and Dh44R2Mi after feeding 0.2% triglyceride mix (mixture of mono-, di-, tri-) in 1% agar food (n=4). (E) Measurement of TAG level after knockdown of Dh44R2RNAi in Dh44-GAL4, Myo1A-GAL4, and cg-GAL4 (n=4). Means ± SEMs. Survival curves were estimated for each group, using a Kaplan-Meier method and compared statistically using the log-rank tests. Single factor ANOVA with Scheffe’s analysis was used as a post hoc test to compare multiple sets of data in (E). The asterisks indicate significance from the controls (*p<0.05, **<0.01).
 
 To further verify whether Dh44, Dh44R1, and Dh44R2 mutants can be recovered by oral lipase administration or lipid absorption, we measured the starvation survival time with 1% agar and 1% agar with 0.1% lipase, 1% glycerol, 0.2 % HA, and 0.2% mix TAG (Figure 7—figure supplement 1A–D). Under starvation conditions, Dh44Mi and Dh44R2Mi showed significantly reduced survival time compared to control, whereas Dh44R1Mi flies were normal (LT50 of control, Dh44Mi, Dh44R1Mi, and Dh44R2Mi: 54.32±2.29 hr, 36.95±1.76 hr, 46.83±1.27 hr, and 36.33±1.03 hr, respectively). Interestingly, the reduced survival time observed in Dh44Mi and Dh44R2Mi mutants were improved with the supplementation of lipase (LT50 of Dh44Mi and Dh44R2Mi: 54.72±0.55 h and 48.63±1.18 hr), glycerol (LT50 of Dh44Mi and Dh44R2Mi: 239±1.91 hr and 238.5±5.12 hr), hexanoic acid (LT50 of Dh44Mi and Dh44R2Mi: 62.50±1.50 hr and 58.77±0.81 hr), and mixed TAG (LT50 of Dh44Mi and Dh44R2Mi: 54.70±3.53 hr and 59.50±2.06 hr) (Figure 7—figure supplement 1A–D).
 
@@ -87,8 +127,6 @@ To explore the connection between TRPγ and DH44 signaling, we expressed UAS-trp
 Here, we found that the function of TRPγ, one of the TRPC channels of D. melanogaster, in DH44 neuroendocrine cells plays an essential role in lipid regulation, which is linked to alterations in membrane lipids (Cobb et al., 2021; Overgaard et al., 2005). The trpγ1 mutant exhibited clear signs of metabolic syndrome, as demonstrated by reduced carbohydrate levels coupled with much higher protein and lipid levels in the body (Figure 8). More importantly, we found that the expression of trpγ in DH44 neurons was necessary and sufficient to regulate the carbohydrate and lipids. However, we failed to identify the specific cells required for regulating protein homeostasis because the increased protein levels in the trpγ mutants were not recovered by pilot screening (data not shown) except in the trpγ-GAL4. In conclusion, our findings suggested that the DH44 system has an important role in regulating the metabolic homeostasis of carbohydrates and lipids (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/99258/elife-99258-fig8-v1.jpg)
-
-**Figure 8.:** trpγ in metabolic regualtion of carbohydrate, lipid, and protein.
 
 The metabolic dysregulation of carbohydrates and lipids observed in the trpγ mutants was phenocopied by the cellular inactivation of DH44 cells. Compared to the controls, the Dh44-GAL4/UAS-Kir2.1 flies exhibited lower carbohydrate levels and increased lipid levels. We previously proposed that TRPγ holds DH44 neurons in a state of afterdepolarization, thus reducing firing rates by inactivating voltage-gated Na+ channels (Dhakal et al., 2022). At the physiological level, this induces the consistent release of DH44 and depletion of DH44 stores, resulting in nutrient utilization and storage malfunctions. Likewise, our findings revealed that Dh44 mutant and its receptor mutant, Dh44R2, displayed defects analogous to those observed in the trpγ mutant. The trpγ mutant phenotype in lipid regulation can be restored by the expression of trpγ in the Dh44-GAL4 as well as Dh44R2-GAL4. This indicates that TRPγ functions in the brain and gut independently for lipid homeostasis. The mode of action for TRPγ in the gut should be further investigated. Finally, it would also be interesting to investigate the potential roles of TRPC members in humans, especially the involvement of TRPC4 and TRPC5 in metabolic syndrome.
 
@@ -102,48 +140,464 @@ The therapeutic properties of metformin as a lipolytic and anti-diabetic drug ha
 
 ## Materials and methods
 
-## Chemical sources
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>trpγ1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:64311</td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpγG4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:64313</td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpγ1,UAStrpγ/CyO</td>
+      <td>Akitake et al., 2015</td>
+      <td></td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpγ1;g(trpγ)</td>
+      <td>Akitake et al., 2015</td>
+      <td></td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpA11</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:26504</td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>amo1</td>
+      <td>Watnick et al., 2003</td>
+      <td></td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpml2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:42230</td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trp343</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:25082</td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pyx3</td>
+      <td>Lee et al., 2005</td>
+      <td></td>
+      <td>Dr. Y. Lee</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wtrwex</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:59038</td>
+      <td>Provided by Dr. C. Montel</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>trpl29134</td>
+      <td>Bloomington Drosophila Stock center</td>
+      <td>BDSC:29134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>iav3621</td>
+      <td>Bloomington Drosophila Stock center</td>
+      <td>BDSC:24768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pain2</td>
+      <td>Tracey et al., 2003</td>
+      <td></td>
+      <td>Provided by Dr. S. Benzer</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nan36a</td>
+      <td>Kim et al., 2003</td>
+      <td></td>
+      <td>Provided by Dr. C. Kim</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>diLP2-GAL4</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC: 200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44-GAL4</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC: 2543</td>
+      <td>Provided by Dr. Y. Kim</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8::GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 5130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Kir2.1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 6596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-trpγRNAi</td>
+      <td>Vienna Drosophila Resource center</td>
+      <td>Transformant ID107656</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>r4-GAL4</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC: 2166</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>cg-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 7011</td>
+      <td>Provided by Dr. S. Hyun</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Myo1A-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 67057</td>
+      <td>Provided by Dr. S. Hyun</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-AMPKTD</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC:10099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bmm</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 76600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44Mi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 24345</td>
+      <td>Provided by Dr. Y. Kim</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44R1Mi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 23517</td>
+      <td>Provided by Dr. Y. Kim</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44R2Mi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 29129</td>
+      <td>Provided by Dr. Y. Kim</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44R1-GAL4</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC: 2734</td>
+      <td>Provided by Dr. Y. Kim</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44R2-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 66865</td>
+      <td>Provided by Dr. Y. Kim</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44R2RNAi</td>
+      <td>Korea Drosophila resource center</td>
+      <td>KDRC: 5121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yw;+;bmm::GFP</td>
+      <td>Men et al., 2016</td>
+      <td></td>
+      <td>Provided by Dr. Kaeko Kamei</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44-LexA</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC: 2776</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dh44R2-LexA</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC: 6616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop-mCherry</td>
+      <td>Korea Drosophila Resource Center</td>
+      <td>KDRC: 1247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GFP (mouse monoclonal)</td>
+      <td>Molecular probe</td>
+      <td>Cat # A11120RRID:AB_221568</td>
+      <td>1:1000 (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-DsRed(rabbit polyclonal)</td>
+      <td>Takara</td>
+      <td>Cat # 632496RRID:AB_ 10013483</td>
+      <td>1:1000 (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa Fluor 488</td>
+      <td>Thermo Fisher/Invitrogen</td>
+      <td>Cat # A11029RRID:AB_2534088</td>
+      <td>1:200 (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa Fluor 568</td>
+      <td>Thermo Fisher/Invitrogen</td>
+      <td>Cat # A11004RRID:AB_2534072</td>
+      <td>1:200 (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa Fluor 488</td>
+      <td>Thermo Fisher/Invitrogen</td>
+      <td>Cat # A11034RRID:AB_2576217</td>
+      <td>1:200 (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa Fluor 568</td>
+      <td>Thermo Fisher/Invitrogen</td>
+      <td>Cat # A11036RRID:AB_10563566</td>
+      <td>1:200 (1 µL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Dh44 (rabbit polyclonal)</td>
+      <td></td>
+      <td></td>
+      <td>1:500Provided by Dr.J.A. Veenstra</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucose (HK) Assay Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # GAHK-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucose (HK) Assay reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # G3293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>The Pierce BCA protein assay kit</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat # 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LiquiColor triglyceride test kit</td>
+      <td>Stanbio Laboratory</td>
+      <td>Cat # 2100–225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compounds or drug</td>
+      <td>Trehalase from porcine kidney</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # 9025-52-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Amyloglucosidase from Aspergillus</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # 9032-08-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Triglyceride mix</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #17810-1AMP-S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Lipase from Candida rugosa</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # L1754</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Metformin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # D150959</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Hexanoic acid</td>
+      <td>Sigma-Aldric</td>
+      <td>Cat # W255912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # 57-50-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Glycerol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # G5516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Nile red</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # N3013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin Pro Version</td>
+      <td>OriginLab corporation</td>
+      <td>RRID:SCR_002815</td>
+      <td>https://www.originlab.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpd.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji(ImageJ-win64)</td>
+      <td>Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://fiji.sc</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemical sources
 
 Trehalase from porcine kidney (cat. # 9025-52-9), amyloglucosidase (cat. # 9032-08-0), the glucose (HK) assay kit (cat. # GAHK-20-1KT), and triglyceride mix (cat. # 17810-1AMP-S), lipase from Candida rugosa (cat. # OT705690000), metformin (cat. # D150959), Nile Red (cat. # N3013), glycerol (cat. # G5516) were purchased from Sigma-Aldrich Co. Hexanoic acid (cat. # W255912) were purchased from Wako Pure Chemical Industry Ltd. The Pierce BCA protein assay kit (cat. # 23225) and the LiquiColor triglyceride test kit (cat. # 2100–225) were purchased from Thermo Fisher Scientific and Stanbio Laboratory, respectively.
 
-## TAG level measurement
+### TAG level measurement
 
 TAG levels were quantified as described previously with some modifications using a LiquiColor Triglyceride Test kit (cat. # 2100–225, Stanbio Laboratory, Germany) (Sang et al., 2021). Ten 5–10- d-old male flies were weighed and crushed in 1 mL of PBST (1 X PBS and 0.2 percent Triton X-100). The homogenate was incubated at 70 °C for 5 min and centrifuged for 3 min at 9500 g. Next, 100 µL of supernatant was transferred into a 1.5 mL Eppendorf tube and mixed with 1 mL of Stanbio LiquiColor Triglyceride Test kit reagent or 1 mL of deionized water to provide a baseline. The reaction mixture was kept at 37 °C for 15 min. Finally, the absorbance of the sample solution was measured at 500 nm using a spectrophotometer and the TAG level was calculated based on a standard calibration curve.
 
-## Protein level measurement
+### Protein level measurement
 
 Protein assays were performed as previously described using the Pierce BCA Protein Assay Kit with some modifications. Briefly, ten 5–10- d-old male flies were weighed and crushed in 1 mL of PBST (1 X PBS and 0.2 percent Triton X-10) and incubated at 70 °C for 5 min. The homogenate was then centrifuged for 3 min at 9500 g, after which 300 µL of supernatant was mixed with 600 µL of Pierce BCA Protein Assay Kit (UF289330). After a 30 min incubation period at 37 °C, the absorbance of the samples was measured at 530 nm using a spectrophotometer and compared to a standard calibration curve for quantification.
 
-## Trehalose and glucose measurements in whole adult flies or hemolymph
+### Trehalose and glucose measurements in whole adult flies or hemolymph
 
 Whole-body glucose and trehalose levels were measured in adult flies as previously described (Meunier et al., 2007). Briefly, ten 5–10- d old males were collected, weighed, and crushed in 250 µL of 0.25 M Na2CO3 buffer. The homogenates were then incubated in a water bath (95 °C) for 5 min to inactivate all enzymes. Next, 600 µL of 0.25 M sodium acetate and 150 µL of 1 M acetic acid (pH 5.2) were added to the samples, after which the mixtures were centrifuged at 12,500 g for 10 min at 24 °C. Afterward, 200 µL of supernatant was transferred to a new microfuge tube and 2 µL porcine kidney trehalase (Sigma: T8778 UN) was added to the sample mixture and incubated overnight at 37 °C to convert trehalose into glucose. Next, 1 mL of glucose hexokinase solution (Sigma: GAHK-20) was added to 100 µL of the sample and incubated for 20 min at 37 °C. Optical density (OD) values were measured at 340 nm. Finally, total glucose and trehalose levels were calculated using a standard glucose curve generated through similar reactions with standard trehalose and glucose.
 
 Glucose and trehalose level measurements in hemolymph were extracted from the male flies. Flies were punctured in the thorax with the help of a fine injection needle and kept in 0.5 mL tubes having a punctured base with a 21-gauge needle. The punctured flies were adjusted by keeping the shoulder down to prevent leakage from the genital tract. The tubes were set into the 1.5 mL microfuge tube and centrifuged at 4 °C for 5 min at 2800 g force. 0.5 µL of hemolymph was added to 14.5 µL PBS. 2 µL of porcine kidney trehalase (Sigma: T8778 UN) was added to the sample mixture and incubated overnight at 37 °C to convert trehalose into glucose. 1 mL of glucose hexokinase solution (Sigma: GAHK-20) was added to the 100 µL of the sample and incubated at 37 °C for 20 min. Optical density (OD) values were measured at 340 nm. Total glucose and trehalose levels were calculated using a standard glucose curve generated through similar reactions with standard trehalose and glucose.
 
-## Glycogen measurements
+### Glycogen measurements
 
 Tissue glycogen levels from whole-body extracts of adult flies were quantified as previously described (Dus et al., 2011). Briefly, 5 males were homogenized in 100 µL of ice-chilled 1 X PBS after measuring the weight. The homogenates were kept at 70 °C for 5 min to inactivate all metabolic enzymes. The homogenates were then centrifuged at 12,500 g for 3 min at 4 °C, after which 20 µL of the supernatant was transferred to 1.5 mL microfuge tubes and diluted with 1 X PBS to a 1:3 ratio. An amyloglucosidase dilution was prepared by mixing 1.5 µL of amyloglucosidase (Sigma A1602) suspension in 998.5 µL 1 X PBS. Finally, a 20 µL aliquot of the diluted sample was added to 20 µL of the diluted amyloglucosidase solution, as well as to the glycogen standard. Both the glycogen standard and test samples were then incubated at 37 °C for 1 hr. A commercial glucose (HK) assay reagent (Sigma: G3293 VER) was used to measure total glucose at 340 nm. The glycogen level was quantified by comparing it with a standard curve plotted from standard glycogen samples.
 
-## Survival assay
+### Survival assay
 
 Survival experiments were conducted as previously described (Lee et al., 2018b). Normal cornmeal diets were used to conduct the normal survival assays. To measure survival under starvation conditions, twenty 3–4 d-old male flies were fed with 1% agar food supplemented with or without various concentrations of lipase (0.1%; active or denatured), glycerol (1%), hexanoic acid (0.2%, 0.5%), glycerol (1%), TAG mix (0.2%, 0.5%), or metformin (1 mM, 5 mM). Every 12 hr, the flies were monitored/counted and then transferred to fresh vials with the same food supply. The experiments were conducted until the food vials had been cleared.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 We performed immunohistochemistry as previously described (Dhakal et al., 2022). Briefly, to fix and block the specimens, we placed freshly dissected tissues (brain and intestine) into a well of 24-well tissue culture plate (Costar Corp.) placed on ice, which contained 940 μL of fixing buffer (1 mM EGTA, 0.1 M Pipes pH 6.9, 2 mM MgSO4, 1% TritonX-100, 150 mM NaCl). 60 μL formaldehyde (37%) was added to the wells and mixed instantly before the tissues were added. As many as tissues that were dissected within 15 min were fixed and then the samples were incubated for 30 min more. Samples were washed with wash buffer (1 X PBS, 0.1% saponin) three times (15 min. for each washing), and blocked with 1 mL blocking buffer (1 X PBS, 0.1% saponin, and 5 mg/mL BSA) at 4 °C for 4–8 hr.
 
 To perform immunostaining, primary antibodies were inserted into the sample at 4 °C for 18 hr (Jais and Brüning, 2022). Samples were washed with wash buffer three times (15 min each) and added secondary antibodies {(1:200) goat anti-mouse Alexa Fluor 488 (cat. # A11029), goat anti-mouse Alexa Fluor 568 (cat. # A11004), goat anti-rabbit Alexa Fluor 488 (cat. # A11034), and goat anti-rabbit Alexa 568 (cat. # A11036) at 4 °C for 4 hr. Finally, samples were washed three times and stored into 1.25 X PDA (187.5 mM NaCl, 37.5% glycerol, 62.5 mM Tris pH 8.8), and kept at 4 °C for more than 1 hr. Samples were mounted and examined using a Leica Stellaris 5 Confocal Microscope.
 
-## Nile red staining
+### Nile red staining
 
 Nile Red is a dark purplish-red powder (Sigma N-3013), the stock solution must be prepared in acetone (1000 µg/mL) and kept in a tightly sealed, lightproof container at 4 °C. Briefly, 5–10 d-old male flies were fixed in a sagittal position on a glass slide and submerged in a 1 X PBS solution. FBs were gently dissected from a dorsal abdominal region along with a thorax or the gut under a stereomicroscope. The dissected tissues were fixed with 4% formaldehyde solution for 15 min at room temperature. The fixed tissues were gently washed three times with 1 X PBS (5 min for each wash). Nile Red (1:1000 dilution) was added to the tissue samples for 5 min. Finally, the stained tissues were washed with 1 mL 1 X PBS and mounted in 50% glycerol on a glass slide. LD deposition exhibits greater density in the upper abdominal region compared to the lower abdominal area. This comparison was meticulously conducted within the identical segments 2–3 of the abdomen to ensure accuracy.
 
 For intestinal lipid staining, 5–10 d-old male flies were fixed on a glass slide and submerged in 1 X PBS solution. Full intestine was dissected very carefully. The dissected intestine was fixed with a 4% formaldehyde solution for 15 min at room temperature. The fixed intestine was washed 3 times with 1 X PBS. Nile red was added to the sample for 5 min. The stained samples were washed with 1 mL 1 X PBS and mounted in 50% glycerol on a glass slide. The stained tissues were examined using a Leica Stellaris 5 Confocal Microscope.
 
-## qRT-PCR
+### qRT-PCR
 
 qRT-PCR assays were performed as described previously (Yoshinari et al., 2021). Briefly, ten 6–10 d-old male flies (control and mutant) were selected for the whole body and 15 flies were selected for fat body samples in Figure 7H. The experiments were conducted under sated (0 hr starvation) and starved (24 hr starvation) conditions. Total RNA was extracted using the TRizol reagent (Invitrogen) followed by DNase (Promega) treatment. cDNA was synthesized using the AMV reverse transcriptase system (Promega). RT-qPCR experiments were carried out using a Bio-rad CFX system. The Takara TB Green Premix was used to assess the mRNA expression level of each gene according to the manufacturer’s instructions. Relative gene expression was calculated using the 2–∆∆Ct method. Three biological samples were used and transcript levels were normalized to the D. melanogaster housekeeping gene tubulin. The experiments were conducted using the following primer pairs: acc, 5’-ACG AGG GCG AGC AGC GTT AC-3′ (forward) and 5′-TAG GGC GAC TTG GTG GGC AT-3′ (reverse); bmm, 5′-ATG ACT TCG GAC TTC TTC AGG G-3′ (forward) and 5′-CCA ATT CAG ATG GAA GAG CTG-3′ (reverse); fbp, 5′-CTC CAA CGA GCT GTT CAT CA-3′ (forward) and 5′-TGA ACC GAT CGA CAC CAG GC-3′ (reverse); pepck1, 5′-AGG TGC ACA TCT GCG ATG GC-3′ (forward) and 5′-CCA CCA CGT AAG CAG AGT CC-3′ (reverse); desat1, 5’-AAG CCG GTG CCC AGT CCA TC-3’ (forward) and 5’-ATG GTC GCG AGC CCA ATG GT-3’ (reverse); and tubulin, 5′-TCC TTG TCG CGT GTG AAA CA-3′ (forward) and 5′-CCG AAC GAG TGG AAG ATG AG-3' (reverse).
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 D. melanogaster was selected as a model organism in this study. For the experiments, male flies were mostly used unless we did not mention the sex. All of the experiments were conducted under laboratory conditions. The appropriate number of replicates was established based on previous research. A large enough sample size was used in all of our assays to ensure that our results were representative and repeatable. No data points were left out of the analysis. For each genotype, the data points indicate the values of individual replicates. The error bars in all of the figures represent the standard error of the mean (SEM). The analysis of the RT-qPCR data was conducted using the CT values. Comparisons between multiple experimental groups were conducted via single-factor ANOVA and Scheffe’s post hoc test. Pair-wise comparisons were conducted via Student’s t-test. Survival curves were estimated for each group, using a Kaplan-Meier method and compared statistically using the log-rank tests. The asterisks in the figures indicate statistical significance (*p<0.05, **p<0.01). All statistical analyses were conducted using the Origin Pro 8 software for Windows (ver. 8.0932; Origin Lab Corporation, USA).

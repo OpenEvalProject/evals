@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.35898.001 The COMMD proteins are a conserved family of proteins with central roles in intracellular membrane trafficking and transcription. They form oligomeric complexes with each other and act as components of a larger assembly called the CCC complex, which is localized to endosomal compartments and mediates the transport of several transmembrane cargos. How these complexes are formed however is completely unknown. Here, we have systematically characterised the interactions between human COMMD proteins, and determined structures of COMMD proteins using X-ray crystallography and X-ray scattering to provide insights into the underlying mechanisms of homo- and heteromeric assembly. All COMMD proteins possess an α-helical N-terminal domain, and a highly conserved C-terminal domain that forms a tightly interlocked dimeric structure responsible for COMMD-COMMD interactions. The COMM domains also bind directly to components of CCC and mediate non-specific membrane association. Overall these studies show that COMMD proteins function as obligatory dimers with conserved domain architectures.
+The COMMD proteins are a conserved family of proteins with central roles in intracellular membrane trafficking and transcription. They form oligomeric complexes with each other and act as components of a larger assembly called the CCC complex, which is localized to endosomal compartments and mediates the transport of several transmembrane cargos. How these complexes are formed however is completely unknown. Here, we have systematically characterised the interactions between human COMMD proteins, and determined structures of COMMD proteins using X-ray crystallography and X-ray scattering to provide insights into the underlying mechanisms of homo- and heteromeric assembly. All COMMD proteins possess an α-helical N-terminal domain, and a highly conserved C-terminal domain that forms a tightly interlocked dimeric structure responsible for COMMD-COMMD interactions. The COMM domains also bind directly to components of CCC and mediate non-specific membrane association. Overall these studies show that COMMD proteins function as obligatory dimers with conserved domain architectures.
 
 ## Introduction
 
@@ -41,19 +41,208 @@ In this study we provide a comprehensive and systematic analysis of the structur
 
 ## Results
 
-## COMMD proteins form homodimers via the C-terminal COMM domain
+### COMMD proteins form homodimers via the C-terminal COMM domain
 
 As a first step towards assessing the self-assembly activities of COMMD proteins, we studied the biophysical properties of recombinant full-length COMMD proteins in solution. Of all COMMD proteins we tested Commd1, Commd7 and Commd9 (Figure 1—figure supplement 1) were readily purified and tractable for biophysical analyses. We measured their molecular weights by analytical size exclusion chromatography coupled with multi-angle laser light scattering (SEC-MALLS). This showed that Commd1, Commd7 and Commd9 form homodimers and are monodisperse in solution (Figure 1A,B). SEC-MALLS data suggests that dimerization is likely to be a general property of the COMMD family members. To determine the domains required for homodimerisation we performed SEC-MALLS analyses of isolated HN and COMM domains. While the Commd1 and Commd9 HN domains behave as monomers, Commd1 and Commd9 COMM domains exist as dimeric species (Figure 1B,C). This data shows that the COMM domain is both required and sufficient to mediate COMMD protein dimerization.
 
-## Structural analysis of the COMMD proteins
+![Figure 1.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon representation of COMMD proteins, and the MALLS profile of Commd1 (black), Commd7 (red) and Commd9 (blue) showing Commd proteins are dimers in solution (B) Comparison of the theoretical molecular weight of the COMMD proteins and the experimentally measured molecular weight. (C) MALLS analyses of the COMM and HN domain shows that the protein dimerisation occurs through the C-terminal COMM domain of the COMMD proteins as represented schematically. (D) Ribbon representation of the dimeric Commd9 COMM domain (residues 115–198) chain A (yellow) and chain B (blue). (E) The structure of the COMM domain dimer is analogous in orientation to a left-handed handshake.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig1-figsupp1-v2.jpg)
+
+### Structural analysis of the COMMD proteins
 
 We next sought to determine the X-ray crystallographic structures of COMMD proteins. However, although crystals of various full-length COMMD proteins grew rapidly, their diffraction quality was not sufficient for structure determination. Therefore a divide-and-conquer approach was taken to determine structures of the two individual domains of the protein, the conserved C-terminal COMM domain, and the variable N-terminal HN domain.
 
-## Crystal structure of the Commd9 C-terminal COMM domain
+### Crystal structure of the Commd9 C-terminal COMM domain
 
 We determined the crystal structure of the Commd9 COMM domain to 2.2 Å resolution by single-wavelength anomalous dispersion (SAD). The overall structure of the Commd9 COMM domain is composed of two cone-shaped chains that are tightly intertwined with each other to form a globular dimeric module (Figure 1D, Table 1). Each monomer is comprised of an N-terminal three-stranded β-sheet capped by an α-helix, with the overall arrangement making an open, hairpin-like structure. A simple analogy for the COMM domain dimer is that it resembles a left-handed handshake, where the sheet and helix from each monomer represent the interlocked palms and thumbs of each hand respectively (Figure 1E). The overlapping C-terminal α-helices of each chain bury a large hydrophobic surface area of approximately 2100 Å2 (nearly 1/3rd of the monomer surface area) supporting the notion that the native state of COMMD proteins is to form dimers via the COMM domain.
 
-## COMMD proteins dimerise via a conserved hydrophobic interface in the COMM domain
+**Table 1.**
+ Summary of crystallographic structure determination statistics.*
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Commd9 HN domain (1–117)</th>
+      <th>Commd9 COMM domain (115–198)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Space group</td>
+      <td colspan="2">P 1</td>
+      <td>I 4</td>
+    </tr>
+    <tr>
+      <td colspan="2">28.5 Å, 35.6 Å, 54.3 Å;</td>
+      <td>79.4 Å, 79.4 Å, 58.5 Å</td>
+    </tr>
+    <tr>
+      <td>Unit cell dimensions (a,b,c; α,β,γ)</td>
+      <td colspan="2">104.0°, 93.3°, 91.1°</td>
+      <td>90°, 90°, 90°</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Remote</td>
+      <td>Inflection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9762</td>
+      <td>0.9796</td>
+      <td>0.9787</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>172817</td>
+      <td>146841</td>
+      <td>131332</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>19–84 – 1.55 (1.58)</td>
+      <td>19–84 – 1.55 (1.58)</td>
+      <td>47.13–2.17 (2.24)</td>
+    </tr>
+    <tr>
+      <td>Mean I/sigma(I)</td>
+      <td>16.9 (5.2)</td>
+      <td>25.2 (9.3)</td>
+      <td>26.7 (4.9)</td>
+    </tr>
+    <tr>
+      <td>R-merge</td>
+      <td>0.10 (0.54)</td>
+      <td>0.06 (0.18)</td>
+      <td>0.06 (0.5)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>27698</td>
+      <td>27442</td>
+      <td>9689</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>6.2 (6.0)</td>
+      <td>5.4 (5.3)</td>
+      <td>13.6 (11.8)</td>
+    </tr>
+    <tr>
+      <td>Anomalous Multiplicity</td>
+      <td>3.1 (3.1)</td>
+      <td>2.6 (2.7)</td>
+      <td>6.9 (6.1)</td>
+    </tr>
+    <tr>
+      <td>Mn(I) half-set correlation CC(1/2)</td>
+      <td>0.99 (0.89)</td>
+      <td>0.99 (0.98)</td>
+      <td>0.99 (0.95)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>91.9 (54.9)</td>
+      <td>91.0 (52.7)</td>
+      <td>99.7 (96.4)</td>
+    </tr>
+    <tr>
+      <td>Anomalous Completeness (%)</td>
+      <td>89.6 (50.3)</td>
+      <td>88.1 (48.1)</td>
+      <td>99.3 (93.0)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>8.4</td>
+      <td>18.6</td>
+      <td>53.1</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R-work</td>
+      <td></td>
+      <td>0.13 (0.25)</td>
+      <td>0.24 (0.30)</td>
+    </tr>
+    <tr>
+      <td>R-free</td>
+      <td></td>
+      <td>0.16 (0.33)</td>
+      <td>0.28 (0.35)</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td></td>
+      <td>26.28–1.55</td>
+      <td>30.36–2.17</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td></td>
+      <td>2078</td>
+      <td>1268</td>
+    </tr>
+    <tr>
+      <td>Protein atoms</td>
+      <td></td>
+      <td>1784</td>
+      <td>1259</td>
+    </tr>
+    <tr>
+      <td>RMS(bonds)</td>
+      <td></td>
+      <td>0.009</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>RMS(angles)</td>
+      <td></td>
+      <td>1.158</td>
+      <td>0.549</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td></td>
+      <td>100</td>
+      <td>98.06</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Average B-factor</td>
+      <td></td>
+      <td>13.11</td>
+      <td>85.61</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Highest resolution shell is shown in parentheses._
+
+### COMMD proteins dimerise via a conserved hydrophobic interface in the COMM domain
 
 In Figure 2 the interface that mediates Commd9 dimerisation is examined in closer detail. Using CONSURF (Ashkenazy et al., 2016; Landau et al., 2005), the most evolutionarily conserved residues in Commd9 were mapped onto the structure. There is a very high degree of sequence conservation seen in the hydrophobic core of the Commd9 COMM domain, particularly along the α-helical surface mediating dimerisation (Figure 2A). Multiple sequence alignment of the COMM domains of all the COMMD proteins demonstrates conservation of many hydrophobic amino acids, particularly leucine residues (Figure 2B). The high degree of conservation, and high degree of hydrophobicity within the dimerization interface strongly suggests that all of the COMMD proteins will form obligatory dimeric structures through similar mechanisms. We attempted to mutate several interfacial residues, but both the full-length mutated COMMD proteins and isolated COMM domains were aggregated due to poor protein solubility (not shown). This provides further support for the essential nature of dimer formation.
 
@@ -61,35 +250,368 @@ In Figure 2 the interface that mediates Commd9 dimerisation is examined in close
 
 **Figure 2.:** (A) A surface map of the conserved and variable residues of the Commd9 COMM domain showing the hydrophobic core is highly conserved while the surface residues are more variable, confirming the importance of dimerization for COMMD stability. These calculations are made using the Consurf server (Ashkenazy et al., 2010) on chain A. (B) A combined sequence alignment and secondary structure comparison of COMM domains of all the human COMMD proteins highlights that the C-terminal COMM domain is highly conserved across the COMMD family of proteins. Residues marked by asterisk depict conservation of amino acids that decorate the dimerization interface. Alignments were made with ESPript 2.2 (http://espript.ibcp.fr/ESPript/ESPript/) (Gouet et al., 2003) (C) Representation of dimer interface of Commd9 COMM domain highlighting key residues (chain A, worm in blue) making main chain-main chain, stacking, salt bridge interactions with the electrostatic surface (chain B).
 
-## Crystal structure of the Commd9 N-terminal HN domain
+### Crystal structure of the Commd9 N-terminal HN domain
 
 We next determined the structure of the Commd9 N-terminal domain by X-ray crystallography to a resolution of 1.55 Å using multi-wavelength anomalous dispersion. Overall, the Commd9 N-terminal domain has a globular architecture and is composed of a six-helix bundle with a meander topology (Figure 3A, Table 1). We therefore refer to this domain as the HN (Helical N-terminal) domain. The overall structure of the HN domain has a similar all α-helical fold to the equivalent domain of Commd1, which was previously determined by NMR (Figure 3B) (Sommerhalter et al., 2007). Compared to Commd1 however, the HN domain of Commd9 has an additional α-helix at its N-terminus that packs down on top of the structure, and a large disordered loop in Commd1 is better resolved in Commd9. In Commd9 the α4 helix forms a central core element that extends the length of the HN domain. In Commd1 however, the equivalent helix is bent and oriented differently. This could be due to the absence of the α1 helix to provide stability, or might also be due to an insufficient number of restraints in this region used for NMR structure calculations. However, the topology of the five shared α-helices (α2-α6) is similar overall. Comparing the HN domains of Commd1 and Commd9 using DALI (Holm and Laakso, 2016; Holm and Rosenström, 2010) showed structural similarity (DALI Z-score >3) with an RMSD of 3.2 Å over 83 Cα atoms.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cartoon representation of Commd9 HN domain (1–116) crystal structure crystallized at pH 4.9 showing a globular structure. (B) NMR structure of the Commd1 HN domain (PDB ID 2H2M) (Sommerhalter et al., 2007) shown in cartoon diagram in the same orientation as Commd9 in Figure 3A left panel. The Commd1 HN domain lacks the first helix (α1) and appears to have a kinked helix α4, but overall shares the same topology. (C) Sequence conservation of Commd9 HN domain mapped on the structure using CONSURF.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Electrostatic potential surface of Commd9 HN domain. (B) Species wide multiple sequence alignment of Commd9 showing conserved HN domain and COMM structural modules. (C) Multiple sequence alignment of human and zebrafish COMMD proteins.
+
 The electrostatic surface of the Commd9 HN domain reveals the presence of two basic patches and a negatively charged region, but it is not clear yet what their functional significance might be (Figure 3—figure supplement 1A). Mapping sequence conservation of the Commd9 HN domain across species shows conserved surface residues mainly in the α1 helix region (Figure 3C). The N-terminal regions of the COMMD proteins are quite variable in sequence across the ten family members (although they are well conserved in paralogous proteins across species), and this has led to it being referred to as a variable domain or VARD (Maine and Burstein, 2007). Bioinformatics and secondary structure analyses of the human COMMD proteins however, shows that in all of the family members the HN domain is very likely to share the same α-helical topology, as well as across various species of Commd9 (Figure 3—figure supplement 1B,C). In support of this, the HN domain of human Commd3 shows a strong α–helical l signal when examined using far-UV circular dichroism spectroscopy (not shown). The exception to this is human Commd6, which does not possess an HN domain at all, although Commd6 orthologs in other species such as fish and amphibians do (Figure 3—figure supplement 1C).
 
-## Solution structures of COMMD proteins reveal a conserved homodimeric structure
+### Solution structures of COMMD proteins reveal a conserved homodimeric structure
 
 In the absence of high-resolution crystal structures of full-length COMMD proteins, we employed SEC-SAXS to obtain solution structural information regarding the architectures of homodimeric Commd1, Commd7 and Commd9 proteins (Figure 4; Figure 4—figure supplement 1; Figure 4—figure supplement 2; Table 2). The scattering curves and pair distribution functions (P(r)s) both signify a relatively globular structure. Ab initio structures of these calculated from the SAXS data reveal compact but elongated molecules. We next performed rigid body fitting of the SAXS data with the program SASREF (Petoukhov and Svergun, 2005), using the crystal structures of the Commd9 HN and COMM domains for Commd7 and Commd9 whereas Commd1 HN and Commd9 COMMD domain was used for generating the Commd1 model. The resulting models obtained by this approach were superimposed on the SAXS envelope. The theoretical scattering profiles of Commd1, Commd7 and Commd9 models, and the ab initio molecular envelopes are in good agreement with the experimental scattering data with low χ2 values. These studies suggest that the COMMD proteins, including Commd9 are homodimers with an elongated shape in solution.
 
-## COMMD proteins are structurally related to a unique protein from chlamydial species
+![Figure 4.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig4-v2.jpg)
+
+**Figure 4.:** (A) (Left) Experimental scattering profile Commd9 in black overlaid with the theoretical scattering curve calculated from the Commd9 rigid body model (red) and the ab initio model determined by GASBOR (green) using CRYSOL. (Middle) The Guinier plot for the experimental data at the low-angle region (qmax × Rg < 1.3). (Right) P(r) functions derived from the SAXS data. (B) (Left) Averaged (grey) and filtered (coral) molecular envelopes from GASBOR. The ab initio model of Commd9 was docked with the rigid body model of Commd9 using SUPCOMB. (Right) Model of Commd9 protein from the experimental SAXS shown in ribbon diagram with HN domains in grey and the COMM domain dimer in blue and yellow.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) SEC-SAXS chromatogram (top) and Kratky plot (bottom) of Commd1, (B) Commd7 and, (C) Commd9.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A, C) (Left) Experimental scattering profiles of Commd1 and Commd7 in black overlaid with the theoretical scattering curves calculated from the Commd1 and Commd7 rigid body model (red) and the ab initio model determined by GASBOR (green) using CRYSOL. (Middle) The Guinier plot for the experimental data at the low-angle region (qmax × Rg < 1.3). (Right) P(r) functions derived from the SAXS data. (B, D) (Left) Averaged (grey) and filtered (coral) molecular envelopes from GASBOR. The ab initio models of Commd1 and Commd7 were docked with rigid body models of Commd1 and Commd7 respectively using SUPCOMB. (Right) Models of Commd1 and Commd7 generated from the experimental SAXS data shown in ribbon diagram with HN domains in grey and the COMM domain dimer in blue and yellow.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Ribbon representation of Commd9 COMM domain homodimer compared to the structures of Pur-α repeats (PDB ID 5FGO, 5FGP) (Graebsch et al., 2009; Weber et al., 2016). Pur-α repeat III forms a homodimer similar to Commd9, but possesses an additional β-strand at the N-terminus. Repeats I and II from Pur-α form an intramolecular ‘heterodimer’ that is responsible for binding to DNA (shown in sticks). (B) The structure of the C-terminal domain of the C. pneumoniae Cpn0803 protein (PDB ID 3Q9D) (Stone et al., 2012) is shown in ribbon diagram. The C-terminal domain forms a homodimer similar to the Commd9 COMM domain, but possesses two additional C-terminal α-helices. C. trachomatis protein CT584 has an identical structure (PDB ID 4MLK) (Barta et al., 2013). (C) Side by side view of Commd9 HN domain, and the N-terminal domain of Cpn0803 (residues 8–98) showing the similarity in the overall secondary structure topology. The chlamydial proteins lack helices corresponding to Commd9 α1 and α5 (D) Comparison of the full-length Commd9 structure determined by SAXS and the Cpn0803 crystal structure, highlighting the similarity in their domains and their inter-domain orientations. (E) Ribbon representation of Cpn0803 showing the dimerization (COMM domain-like) module and the trimerisation (HN domain like) domain.
+
+**Table 2.**
+ Summary of SAXS structural parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Commd1</th>
+      <th>Commd7</th>
+      <th>Commd9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Data collection parameters</td>
+    </tr>
+    <tr>
+      <td>Instrument</td>
+      <td colspan="3">Australian Synchrotron SAXS/WAXS beamline with Dectris PILATUS 1M detector</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td colspan="3">1.0332</td>
+    </tr>
+    <tr>
+      <td>Beam geometry (μM)</td>
+      <td colspan="3">250 × 130</td>
+    </tr>
+    <tr>
+      <td>Camera length (m)</td>
+      <td colspan="3">1.6</td>
+    </tr>
+    <tr>
+      <td>q-range (Å−1)</td>
+      <td colspan="3">0.011–0.251</td>
+    </tr>
+    <tr>
+      <td>Absolute scaling method</td>
+      <td colspan="3">Comparision with scattering from 1 mm H2O</td>
+    </tr>
+    <tr>
+      <td>Normalization</td>
+      <td colspan="3">To transmitted intensity by beam-stop counter</td>
+    </tr>
+    <tr>
+      <td>Method for monitoring radiation damage</td>
+      <td colspan="3">Dose maintained below 210 Gy</td>
+    </tr>
+    <tr>
+      <td>Exposure per frame (s)</td>
+      <td colspan="3">1</td>
+    </tr>
+    <tr>
+      <td>Sample temperature (K)</td>
+      <td colspan="3">283</td>
+    </tr>
+    <tr>
+      <td>Sample configuration</td>
+      <td colspan="3">SEC-SAXS with sheath-flow cell</td>
+    </tr>
+    <tr>
+      <td>Flow-rate (ml/min)</td>
+      <td colspan="3">0.25</td>
+    </tr>
+    <tr>
+      <td colspan="4">Structural parameters</td>
+    </tr>
+    <tr>
+      <td>Guinier analysis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I(0) (cm−1)</td>
+      <td>0.04 ± 0.00</td>
+      <td>0.03 ± 0.00</td>
+      <td>0.02 ± 0.00</td>
+    </tr>
+    <tr>
+      <td>Rg (Å)</td>
+      <td>29.26 ± 0.25</td>
+      <td>28.86 ± 0.60</td>
+      <td>27.61 ± 0.79</td>
+    </tr>
+    <tr>
+      <td>qmin (Å−1)</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>qRg max (Å−1)</td>
+      <td>1.3</td>
+      <td>1.3</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>P(r) analysis</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>I(0) (cm−1)</td>
+      <td>0.04 ± 0.0004</td>
+      <td>0.029 ± 0.0003</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Rg (Å)</td>
+      <td>30.37 ± 0.59</td>
+      <td>29.5 ± 0.53</td>
+      <td>28.26 ± 0.67</td>
+    </tr>
+    <tr>
+      <td>Dmax (Å)</td>
+      <td>101.47</td>
+      <td>99.47</td>
+      <td>96.99</td>
+    </tr>
+    <tr>
+      <td>q range (Å−1)</td>
+      <td>0.011–0.251</td>
+      <td>0.011–0.251</td>
+      <td>0.011–0.251</td>
+    </tr>
+    <tr>
+      <td>Porod volume (Å−3)</td>
+      <td>71951</td>
+      <td>65393</td>
+      <td>67180</td>
+    </tr>
+    <tr>
+      <td>Dry volume calculated from sequence (Å−3)</td>
+      <td>25848</td>
+      <td>27271</td>
+      <td>26622</td>
+    </tr>
+    <tr>
+      <td>Shape model-fitting results</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Gasbor (default paramters, 20 calculations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>q range (Å−1) for fitting</td>
+      <td>0.011–0.251</td>
+      <td>0.011–0.251</td>
+      <td>0.011–0.251</td>
+    </tr>
+    <tr>
+      <td>Symmetry, anisotropy assumptions</td>
+      <td>P2, none</td>
+      <td>P2, none</td>
+      <td>P2, none</td>
+    </tr>
+    <tr>
+      <td>NSD (standard deviation)</td>
+      <td>0.16 (0.004)</td>
+      <td>1.04 (0.55)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>χ2 range, CORMAP P values</td>
+      <td>0.15–0.20, 0.11</td>
+      <td>0.14–0.17, 0.47</td>
+      <td>0.14–0.15, 0.14</td>
+    </tr>
+    <tr>
+      <td>Atomistic modelling</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Crystal structures</td>
+      <td>PDB entry 2H2M and 6BP6</td>
+      <td>PDB entry 4OE9 and 6BP6</td>
+      <td>PDB entry 4OE9 and 6BP6</td>
+    </tr>
+    <tr>
+      <td>q range for all modelling</td>
+      <td>0.011–0.251</td>
+      <td>0.011–0.251</td>
+      <td>0.011–0.251</td>
+    </tr>
+    <tr>
+      <td>CRYSOL (with default parameters)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No constant subtraction</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>χ2</td>
+      <td>0.31</td>
+      <td>0.72</td>
+      <td>1.14</td>
+    </tr>
+    <tr>
+      <td>Predicted Rg (Å)</td>
+      <td>30.85</td>
+      <td>30.54</td>
+      <td>31.88</td>
+    </tr>
+    <tr>
+      <td>Vol (Å), Ra (Å), Dro (eÅ−3)</td>
+      <td>53643, 1.40, 0.007</td>
+      <td>46010, 1.400, 0.075</td>
+      <td>57201, 1.400, 0.007</td>
+    </tr>
+    <tr>
+      <td>FoXS</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>χ2, CORMAP P values</td>
+      <td>0.52, 0.99</td>
+      <td>0.78, 0.99</td>
+      <td>0.99, 0.93</td>
+    </tr>
+    <tr>
+      <td>Predicted Rg (Å)</td>
+      <td>30.82</td>
+      <td>29.18</td>
+      <td>31.84</td>
+    </tr>
+    <tr>
+      <td>c1,c2</td>
+      <td>1.03, 0.29</td>
+      <td>1.05, 4.0</td>
+      <td>1.04, 1.20</td>
+    </tr>
+    <tr>
+      <td>Molecular mass determination</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Estimated MW from Porod volume</td>
+      <td>41387 Da</td>
+      <td>38094 Da</td>
+      <td>39099 Da</td>
+    </tr>
+    <tr>
+      <td>Calculated MW from MALLS</td>
+      <td>40400 Da</td>
+      <td>53000 Da</td>
+      <td>47800 Da</td>
+    </tr>
+    <tr>
+      <td>Calculated MW from sequence</td>
+      <td>21362 Da (42724 Da for dimer)</td>
+      <td>22540 Da (45080 Da for dimer)</td>
+      <td>21819 Da (43639 Da for dimer)</td>
+    </tr>
+    <tr>
+      <td>Software employed</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primary data reduction</td>
+      <td colspan="3">Australian Synchrotron SAXS/WAXS data reduction package (Scatterbrain)</td>
+    </tr>
+    <tr>
+      <td>Data Processing</td>
+      <td colspan="3">PRIMUS and GNOM</td>
+    </tr>
+    <tr>
+      <td>Ab initio modeling</td>
+      <td colspan="3">GASBOR</td>
+    </tr>
+    <tr>
+      <td>Validation and averaging</td>
+      <td colspan="3">DAMAVER</td>
+    </tr>
+    <tr>
+      <td>Computation of models</td>
+      <td colspan="3">SASREF</td>
+    </tr>
+    <tr>
+      <td>Envelope representations</td>
+      <td colspan="3">PyMOL</td>
+    </tr>
+  </tbody>
+</table>
+
+### COMMD proteins are structurally related to a unique protein from chlamydial species
 
 The COMMD proteins share no detectable sequence homology to any other proteins. However, structural comparison of the Commd9 COMM domain to the structures in the Protein Data Bank (PDB) using DALI (Holm and Laakso, 2016; Holm and Rosenström, 2010) did identify low scoring (DALI Z-score >2.5) structural matches to the PH domain of human pleckstrin as well as the phox homology (PX) domain (DALI Z-score >3) of yeast Grd19. Interestingly, it is clear from these comparisons that the COMM domain has a similar topology to core fragments of the larger PX and PH structures (Figure 4—figure supplement 3). A closer structural match however was identified with the Pur-α (purine-rich element binding protein) repeat domain (DALI Z-score >4.5), a whirly-like nucleic acid binding fold (Graebsch et al., 2009; Weber et al., 2016) (Figure 4—figure supplement 4A). Overlay of the Commd9 COMM domain with repeats of Pur-α reveals a similar fold with a RMSD of 2.5 Å over nearly 50 Cα atoms.
 
 Intriguingly, the clearest structural matches to Commd9 are two closely related proteins from the bacterial species Chlamydia trachomatis (CT584) and Chlamydia pneumoniae (Cpn0803) (Barta et al., 2013; Stone et al., 2012) (DALI Z-scores > 7.5). CT584 and Cpn0803 are orthologous proteins found only in chlamydia. They are modular proteins with an α-helical N-terminal domain and an α/β C-terminal domain, both of which are structurally analogous to the respective HN and COMM domains of Commd9 (Figure 4—figure supplement 4B,C). The only major difference in the C-terminal structures is the presence of two additional α-helices at the C-terminus of the bacterial proteins (Figure 4—figure supplement 4B). The N-terminal domains of the chlamydial proteins also have an analogous overall topology to the HN domain, except that the bacterial proteins lack α1 and α5 (Figure 4—figure supplement 4C). Like the COMMD molecules the chlamydial proteins possess a core dimeric structure formed by the C-terminal domains, with an overall architecture that is very similar to that of Commd9 determined by SAXS (Figure 4—figure supplement 4D). In addition both chlamydial proteins appear to form hexameric assemblies via trimerisation of the core dimer structure (Figure 4—figure supplement 4E) (discussed further below).
 
-## COMMD proteins bind promiscuously to each other
+### COMMD proteins bind promiscuously to each other
 
 There are now a number of high-throughput proteomics studies that point to the existence of a large multi-subunit assembly containing all of the COMMD family proteins (Mallam and Marcotte, 2017; Wan et al., 2015; McNally et al., 2017; Dey et al., 2015; Hein et al., 2015; Huttlin et al., 2015). This is also well supported by several more targeted studies demonstrating that COMMD proteins associate with each other in both endogenous and over-expression conditions (Wan et al., 2015; McNally et al., 2017). In the majority of cases these interactions were found using co-immunoprecipitation strategies, although it has also been shown that heterodimeric complexes are formed upon bacterial co-expression of Commd1-Commd6, Commd1-Commd5 and Commd9-Commd5 (Wan et al., 2015). To study these pairwise interactions systematically we initially attempted a GST pull down assay with purified His-tagged Commd1 and all of the GST-tagged COMMD members. However, we did not observe any significant interactions using this approach (not shown). Next, we assessed whether co-translation would lead to heterodimeric interactions. GST-baits (all COMMDs) were co-expressed in E. coli with selected His-tagged preys (Commd1, 7, 9 and 10) followed by affinity purification using glutathione sepharose beads (Figure 5A, Figure 5—figure supplement 1). Western blotting was used to confirm interactions unambiguously as GST and His-tagged COMMD proteins are similar molecular weights. GST-Commd8 was not included in these experiments due to the tendency of this protein to degrade. This assay reveals that all of the COMMD proteins are able to co-assemble with each other in a highly promiscuous manner, while the lack of binding using separately purified proteins suggests that no exchange occurs between pre-formed homodimeric proteins. In general there is little specificity seen in the heteromeric complexes formed, although Commd10 binds most strongly to Commd2 and Commd5 and only weakly with Commd9, while Commd9 binds weakly to Commd6.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig5-v2.jpg)
+
+**Figure 5.:** (A) A representative Coomassie image showing the relative expression of the GST fusion COMMD proteins (top). Blots probed with anti-His6 antibody demonstrating the direct pair-wise interactions of the COMMD protein family (bottom). A schematic representation of COMMD-COMMD interaction as demonstrated by the pull-downs. (B, C, D) Representative Coomassie images showing the reconstitution of full length Commd5-Commd10 complex, full length Commd5-Comm domain of Commd10 complex and complex of COMM domains of Commd5 and Commd10 respectively. (E, F) MALLS analyses of full length Commd5-Commd10 complex and Commd5-COMM domain of Commd10 complex showing the complexes potentially form heterotetramers based on the calculated molecular weight of the complexes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig5-figsupp1-v2.jpg)
+
 Previous reports have shown that the COMM domain alone may be sufficient to allow interactions between COMMD proteins (Burstein et al., 2005). To test this we next performed our co-expression GST-pull down assays with His-tagged COMM domains of Commd1 and Commd9 and the HN domain of Commd1 as prey. While no interaction was observed between any COMMD proteins and the N-terminal domain of Commd1, strong interactions were seen for C-terminal COMM domains of Commd1 and Commd9 mirroring the full-length proteins (Figure 5A). Overall, our data indicates that COMMD proteins form promiscuous homo- and heterodimeric complexes through their C-terminal COMM domains. The fact that COMMD-COMMD interactions could only be reconstituted after co-translation suggest that these complexes most likely involve the formation of dimeric structures analogous to that seen in the Commd9 COMM domain crystal structure.
 
-## Reconstitution of stable heteromeric COMMD complexes
+### Reconstitution of stable heteromeric COMMD complexes
 
 Our GST pulldown experiment demonstrates that Commd10 preferentially binds to Commd2 and Commd5. To assess the stoichiometry of heteromeric Commd complexes, we co-expressed GST-Commd5 with Commd10-His and purified the complex by sequential affinity purification using glutathione sepharose and TALON beads. The eluted complex was subjected to size exclusion chromatography (SEC) to obtain a 1:1 stoichiometric complex. The SEC fractions under the peak clearly show reconstitution of a 1:1 Commd5-Commd10 complex (Figure 5B).
 
 Since the COMM domain singularly mediates the formation of homo- and heteromeric complexes of COMMD proteins, we also attempted to make the complex using the full-length Commd5 and COMM domain of Commd10 and COMM domains of Commd5 and Commd10 respectively. Indeed,highly pure and stoichiometric species were isolated confirming the role of the COMM domain in COMMD complexes (Figure 5C,D). Several Commd proteins form COMM domain dependent homodimers and this prompted us to investigate the biophysical properties of Commd5-Commd10 complexes. SEC-MALLS analysis of Commd5-Commd10 reveals that the complex is highly monodisperse in solution. Although the combined theoretical molecular weight of these proteins is 47.5 kDa, the experimental mass was calculated to be 85 kDa, which suggests the existence of a Commd5-Commd10 heterotetramer (Figure 5E,F). Along the same lines, the Commd5-Commd10 COMM domain complex appears to also form a heterotetrameric assembly (Figure 5E,F). Altogether, these data raises two possibilities. First, COMM domains of Commd5 and Commd10 form homodimers and assemble together as a tetramer. Second, the Comm domain of Commd5 and Commd10 when expressed together form heterodimers ultimately forming the larger heterotetramer. In both of these scenarios, COMMD proteins are seemingly interacting with each other through a second binding interface on the COMM domain that is potentially distinct from the dimerization interface.
 
-## The COMM domains bind the calponin homology domains of CCDC22 and CCDC93
+### The COMM domains bind the calponin homology domains of CCDC22 and CCDC93
 
 Central to the endosomal trafficking function of COMMD proteins is their assembly into the CCC complex (Mallam and Marcotte, 2017; Wan et al., 2015). CCDC22 and CCDC93 are large proteins predicted to contain N-terminal divergent calponin homology domains (NN-CH) and C-terminal coiled-coils (Schou et al., 2014), and are critical components of the CCC complex (Phillips-Krawczak et al., 2015; Bartuzi et al., 2016; Wan et al., 2015). A Commd1 knock out causes loss of CCDC22/CCDC93 (Phillips-Krawczak et al., 2015; Bartuzi et al., 2016). Therefore, we set out to examine whether CCDC22/CCDC93 directly interact with COMMDs, and their mode of association. Using the co-translation pull down assay, we found that Commd1, 7 and 10 bind to both CCDC22 and CCDC93 directly (Figure 6A, Figure 5—figure supplement 1). Commd9 in contrast appears to recognize CCDC93 specifically. We next performed domain-truncations and conducted the binding assay with isolated calponin homology-like domains (NN-CH) and C-terminal coiled coil regions of CCDC22 and CCDC93. Interestingly, CCDC22 and CCDC93 bind to COMMDs chiefly through the NN-CH domain. Consistent with the previous literature (Phillips-Krawczak et al., 2015; Starokadomskyy et al., 2013), we also observed relatively weaker interaction bands for the C-terminal coiled coil domain of CCDC22 and CCDC93. Our data also shows that similar to COMMD-COMMD interaction, COMMD-CCDC22/CCDC93 binding occurs through the COMM domain.
 
@@ -99,15 +621,365 @@ Central to the endosomal trafficking function of COMMD proteins is their assembl
 
 In contrast to interactions between COMMD family members, which require co-expression for assembly, we find that CCDC22 and CCDC93 interaction with pre-formed COMMD dimers occurs spontaneously in vitro (Figure 6B). GST-pull down experiments conducted by mixing the purified GST-NN-CH domain of CCDC22 and CCDC93 with full length Commd1 and Commd9 as well as the COMM domains showed a similar binding pattern to what was observed after co-expression (Figure 6A,B). Specifically, Commd1 and Commd9 bind more strongly to the N-terminal NN-CH domain of CCDC93 in comparison to CCDC22. Moreover, this assay also suggests that Commd1 has stronger affinity than Commd9 for CCDC proteins. The interaction of the CCDC22 and CCDC93 NN-CH domains with the COMM domain of Commd1 was recapitulated and quantified using biolayer interferometry (BLiTz). A dose-dependent increase in the binding of the COMM domain of Commd1 with NN-CH of CCDC22 and CCDC93 was observed, and the affinity (Kd) was calculated to be 10.3 and 14.6 µM respectively (Figure 6C,D).
 
-## Commd proteins bind to CCDC22 and CCDC93 via a conserved site
+### Commd proteins bind to CCDC22 and CCDC93 via a conserved site
 
 To identify the molecular determinants that govern the interaction between the COMM domain of COMMDs and NN-CH domain of CCDC22 and CCD93, we used cross-linking mass spectrometry (MS) in combination with pull down experiments. Non-deuterated BS3 cross-linker was used to crosslink full-length Commd9 with the NN-CH domain of CCDC93. Due to the availability of HN and COMM domain structures, Commd9 was chosen for these experiments. The NN-CH domain of CCDC22 could not be used as it does not contain any lysine residues. Upon crosslinking, three major bands (labeled as 1, 2 and 3) in the Commd9 and NN-CH domain of CCDC93 mixture were observed, which were excised for MS analysis (Figure 7A). Lysozyme was used as a negative control, and a similar presence of bands 1 and 3 suggest they are likely to be cross-linked dimers and tetramers of Commd9 alone (Figure 7A). This observation was further supported by inspection the MS spectra and xQuest database (Table 3). Analyses of MS data from band 2 revealed 5 unique cross-links, and 3 of these pairs connected Commd9 and NN-CH domain of CCDC93 (Figure 7B and Table 3). Mapping of these pairs onto the crystal structures of Commd9 showed that all three lysines (K100, K133 and K152) were located on the surface accessible to the solvent (Figure 7C,D). Notably, K133 and K152 are located on contiguous surfaces of the β-sheets of the COMM domains (Figure 7D), suggesting a likely binding surface for the CCDC93 NN-CH domain. This surface also includes the side-chains of the conserved residues 128WRVD131, with Trp128 in particular being strictly conserved across the entire Commd family (Figure 2B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig7-v2.jpg)
+
+**Figure 7.:** (A) Cross-linking of Commd9, NN-CH domain of CCDC93 and the mixture of two with BS3 for 30 min at room temperature. Three distinguishable SDS-PAGE gel bands were excised in the complex mixture sample (indicated by the number 1, 2 and 3) for MS analysis. In parallel, a cross-linking reaction between Commd9 and lysozyme was performed under the same condition. (B) Cross-link map for Commd9 in complex with the NN-CH domain of CCDC93. Intermolecular and intramolecular cross-linked peptides are labelled as black and brown dot lines respectively. (C and D) Ribbon representation of the Commd9 HN (C) and (D) COMM domain structures with mapped intramolecular and intermolecular cross-linked lysine residues (in spheres). In the Commd9 COMM domain, K133 and K152 are part of a contiguous surface that includes the side-chains of the conserved residues 128WRVD131 (indicated with sticks).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A, B) Cross-linked map for zfRetromer complex and the representative complex mode highlighting the cross-linked region. Intramolecular and intermolecular cross-linked peptides are labelled in the same format as Commd9 and the NN-CH domain of CCDC93 cross-links. Retromer complex model was generated using the crystal structures of VPS29 – VPS35 (PDB ID: 2R17) (Hierro et al., 2007) and VPS26 – VPS35 (PDB ID: 5F0J) (Lucas et al., 2016) as template.
+
+**Table 3.**
+ Identified cross-linked peptides of Commd9 and NN-CH domain of CCDC93.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Predicted mass (Da)</th>
+      <th rowspan="2">Observed mass (Da)</th>
+      <th rowspan="2">Error (ppm)</th>
+      <th rowspan="2">xQuest score</th>
+    </tr>
+    <tr>
+      <th colspan="2">Cross-linked peptides</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample 1:</td>
+      <td colspan="3"></td>
+      <td colspan="2">Commd9 - Commd9</td>
+    </tr>
+    <tr>
+      <td>2751.419</td>
+      <td>2751.407</td>
+      <td>2.3</td>
+      <td>21.10</td>
+      <td colspan="2">VDIK(133)TSSDSISR-VDIK(133)TSSDSISR</td>
+    </tr>
+    <tr>
+      <td>2305.209</td>
+      <td>2305.206</td>
+      <td>3.0</td>
+      <td>20.35</td>
+      <td colspan="2">ASSK(21)DVVR-VDIK(133)TSSDSISR</td>
+    </tr>
+    <tr>
+      <td>4316.319</td>
+      <td>4316.306</td>
+      <td>3.2</td>
+      <td>18.78</td>
+      <td colspan="2">DLSSAEAILALFPENFHQNLK(95)NLLTK(100)IILEHVSTWR</td>
+    </tr>
+    <tr>
+      <td>3266.789</td>
+      <td>3266.782</td>
+      <td>1.8</td>
+      <td>18.67</td>
+      <td colspan="2">NLLTK(100)IILEHVSTWR-VDIK(133)TSSDSISR</td>
+    </tr>
+    <tr>
+      <td>2820.589</td>
+      <td>2820.579</td>
+      <td>2.4</td>
+      <td>17.28</td>
+      <td colspan="2">ASSK(21)DVVR-NLLTK(100)IILEHVSTWR</td>
+    </tr>
+    <tr>
+      <td>3648.889</td>
+      <td>3648.881</td>
+      <td>1.0</td>
+      <td>15.22</td>
+      <td colspan="2">LVDLDWRVDIK()TSSDSISR-VDIK(133)TSSDSISR</td>
+    </tr>
+    <tr>
+      <td>3202.679</td>
+      <td>3202.677</td>
+      <td>2.0</td>
+      <td>14.22</td>
+      <td colspan="2">ASSK(21)DVVR-LVDLDWRVDIK(133)TSSDSISR</td>
+    </tr>
+    <tr>
+      <td>2571.299</td>
+      <td>2571.288</td>
+      <td>4.1</td>
+      <td>12.78</td>
+      <td colspan="2">IQEDPSLCGDK(163)PSISAVTVELSK(175)</td>
+    </tr>
+    <tr>
+      <td>1859.009</td>
+      <td>1859.006</td>
+      <td>2.7</td>
+      <td>12.40</td>
+      <td colspan="2">ASSK(21)DVVR-ASSK(21)DVVR</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sample 2:</td>
+      <td colspan="2">Commd9 - CCDC93</td>
+    </tr>
+    <tr>
+      <td>2998.479</td>
+      <td>2998.476</td>
+      <td>1.5</td>
+      <td>16.86</td>
+      <td>VDIK(133)TSSDSISR</td>
+      <td>AIETK(131)EEMGDYIR</td>
+    </tr>
+    <tr>
+      <td>3513.859</td>
+      <td>3513.842</td>
+      <td>1.4</td>
+      <td>14.74</td>
+      <td>NLLTK(100)IILEHVSTWR</td>
+      <td>AIETK(131)EEMGDYIR</td>
+    </tr>
+    <tr>
+      <td>4772.479</td>
+      <td>4772.501</td>
+      <td>5.1</td>
+      <td>7.11</td>
+      <td>MAVPTCLLQMK(152)IQEDPSLCGDKPSISAVTVELSK</td>
+      <td>IK(45)GLSPFDK</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">Commd9 - Commd9</td>
+    </tr>
+    <tr>
+      <td>2820.589</td>
+      <td>2820.583</td>
+      <td>1.1</td>
+      <td>18.60</td>
+      <td colspan="2">ASSK(21)DVVR-NLLTK(100)IILEHVSTWR</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">CCDC93 - CCDC93</td>
+    </tr>
+    <tr>
+      <td>3569.679</td>
+      <td>3569.675</td>
+      <td>0.3</td>
+      <td>14.92</td>
+      <td colspan="2">AIETK(131)EEMGDYIR-SYSVSQFQK(148)TYSLPED</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sample 3:</td>
+      <td colspan="2">Commd9 - Commd9</td>
+    </tr>
+    <tr>
+      <td>2820.589</td>
+      <td>2820.599</td>
+      <td>4.6</td>
+      <td>20.02</td>
+      <td colspan="2">ASSK(21)DVVR-NLLTK(100)IILEHVSTWR</td>
+    </tr>
+    <tr>
+      <td>2305.209</td>
+      <td>2305.226</td>
+      <td>5.8</td>
+      <td>19.51</td>
+      <td colspan="2">ASSK(21)DVVR-VDIK(133)TSSDSISR</td>
+    </tr>
+  </tbody>
+</table>
+
 To minimize the possibility that the cross-linked peptides captured were non-specific interactions caused by BS3, we also performed a cross-linking reaction using the unrelated VPS26 – VPS29 – VPS35 retromer complex from zebrafish (hereafter designated as zfRetromer) as a positive control. Inspection of the xQuest database and the MS spectra reveal a total of 18 cross-linked peptides (Table 4). VPS26 and VPS29 mainly cross-linked to two opposite regions of VPS35, which is in good agreement with the known crystal structures of Retromer (Figure 7—figure supplement 1). This implies that the cross-links we observe between Commd9 and CCDC93 are specific.
 
-## COMMD proteins associate non-specifically with negatively charged phospholipids
+**Table 4.**
+ Identified cross-linked peptides of zfRetromer.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Predicted mass (Da)</th>
+      <th>Observed mass (Da)</th>
+      <th>Error (ppm)</th>
+      <th>xQuest score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Intermolecular cross-linked peptides</td>
+      <td>zfVPS26</td>
+      <td>zfVPS29</td>
+      <td>zfVPS35</td>
+    </tr>
+    <tr>
+      <td>2929.569</td>
+      <td>2929.550</td>
+      <td>8.0</td>
+      <td>13.20</td>
+      <td>APEK(301)MR</td>
+      <td></td>
+      <td>K(90)VADLYELVQYAGNIIPR</td>
+    </tr>
+    <tr>
+      <td>1844.019</td>
+      <td>1844.040</td>
+      <td>9.4</td>
+      <td>10.12</td>
+      <td>SKYHLK(188)</td>
+      <td></td>
+      <td>NK(38)LMDALK</td>
+    </tr>
+    <tr>
+      <td>1342.809</td>
+      <td>1342.805</td>
+      <td>4.9</td>
+      <td>9.99</td>
+      <td>MRK(304)R</td>
+      <td></td>
+      <td>K(127)DILK</td>
+    </tr>
+    <tr>
+      <td>1756.069</td>
+      <td>1756.070</td>
+      <td>2.8</td>
+      <td>9.83</td>
+      <td></td>
+      <td>FK(23)KLLVPGK</td>
+      <td>WEKK(556)</td>
+    </tr>
+    <tr>
+      <td>3809.959</td>
+      <td>3809.982</td>
+      <td>7.1</td>
+      <td>8.01</td>
+      <td></td>
+      <td>GDFDENLNYPEQK(73)VVTVGQFK</td>
+      <td>TQCALAASK(659)LLK</td>
+    </tr>
+    <tr>
+      <td colspan="4">Intramolecular cross-linked peptides</td>
+      <td colspan="3">zfVPS26 – zfVPS26</td>
+    </tr>
+    <tr>
+      <td>1441.829</td>
+      <td>1441.819</td>
+      <td>3.3</td>
+      <td>28.12</td>
+      <td colspan="3">VNINVK(57)QTSK(61)R</td>
+    </tr>
+    <tr>
+      <td>1630.869</td>
+      <td>1630.863</td>
+      <td>4.6</td>
+      <td>26.54</td>
+      <td colspan="3">TAELK(30)TEEGK(35)LEK</td>
+    </tr>
+    <tr>
+      <td>1247.689</td>
+      <td>1247.679</td>
+      <td>2.1</td>
+      <td>26.15</td>
+      <td colspan="3">DVNK(266)K(267)FSVR</td>
+    </tr>
+    <tr>
+      <td>2571.239</td>
+      <td>2571.229</td>
+      <td>4.3</td>
+      <td>22.06</td>
+      <td colspan="3">TEEGK(35)LEK(38)HYLFYDGESVSGK</td>
+    </tr>
+    <tr>
+      <td>3241.639</td>
+      <td>3241.662</td>
+      <td>7.0</td>
+      <td>20.14</td>
+      <td colspan="3">K(25)TAELKTEEGK(35)LEKHYLFYDGESVSGK</td>
+    </tr>
+    <tr>
+      <td>3626.859</td>
+      <td>3626.875</td>
+      <td>5.8</td>
+      <td>19.78</td>
+      <td colspan="3">K(214)EMTGIGPSTTTETETVAK-YFK(288)QQEIVLWR</td>
+    </tr>
+    <tr>
+      <td>844.489</td>
+      <td>844.487</td>
+      <td>4.4</td>
+      <td>18.66</td>
+      <td colspan="3">K(25)TAELK(30)</td>
+    </tr>
+    <tr>
+      <td>1014.549</td>
+      <td>1014.544</td>
+      <td>1.4</td>
+      <td>12.32</td>
+      <td colspan="3">K(297)APEK(301)MR</td>
+    </tr>
+    <tr>
+      <td colspan="4">Intramolecular cross-linked peptides</td>
+      <td colspan="3">zfVPS29 - zfVPS29</td>
+    </tr>
+    <tr>
+      <td>1184.749</td>
+      <td>1184.736</td>
+      <td>5.9</td>
+      <td>18.59</td>
+      <td colspan="3">FK(23)KLLVPGK(30)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Intramolecular cross-linked peptides</td>
+      <td colspan="3">zfVPS35 – zfVPS35</td>
+    </tr>
+    <tr>
+      <td>1607.729</td>
+      <td>1607.726</td>
+      <td>3.3</td>
+      <td>22.38</td>
+      <td colspan="3">ENSSSDDK(552)WEKK(556)</td>
+    </tr>
+    <tr>
+      <td>844.469</td>
+      <td>844.449</td>
+      <td>6.9</td>
+      <td>19.26</td>
+      <td colspan="3">EK(208)REK(211)</td>
+    </tr>
+    <tr>
+      <td>2245.219</td>
+      <td>2245.215</td>
+      <td>5.1</td>
+      <td>18.55</td>
+      <td colspan="3">LLDEAVQAVK(24)VQSFQMK(31)R</td>
+    </tr>
+    <tr>
+      <td>1255.699</td>
+      <td>1255.688</td>
+      <td>2.5</td>
+      <td>17.69</td>
+      <td colspan="3">LLK(662)K(663)PDQCR</td>
+    </tr>
+  </tbody>
+</table>
+
+### COMMD proteins associate non-specifically with negatively charged phospholipids
 
 COMMD proteins are peripheral membrane proteins commonly associated with endosomal compartments (Phillips-Krawczak et al., 2015; Bartuzi et al., 2016; Wan et al., 2015; McNally et al., 2017; Burkhead et al., 2009; Drévillon et al., 2011). To examine if COMMD family proteins possess membrane-binding properties we performed qualitative liposome-pelleting assays with purified COMMD proteins (Figure 8A, Figure 8—figure supplement 1). The assay shows that Commd1 associates relatively non-specifically with various negatively charged membranes, including PC/PE liposomes doped with different phosphoinositides, generic Folch lipids from brain extracts, and liposomes containing 30% phosphatidylinositolserine (PS). We observed a similar binding characteristic for Commd7, but Commd10 showed a relatively strong interaction with Folch liposomes as well as di- and tri- phosphorylated phosphoinositide species.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig8-v2.jpg)
+
+**Figure 8.:** (A) Commd1, Commd1 (R133Q, H134A, K167A), Commd7, Commd9 and Commd10 were incubated with POPC (100%), POPC/POPE (90:10, molar ratio), POPC/POPE/POPS (60:10:30, molar ratio) and POPC/POPE/PIP (80:10:10, molar ratio) liposomes doped with different phosphoinositides to perform liposome pelleting assay by ultracentrifugation and subsequent protein content analysis of the supernatant (S) and pellet (P) fractions. (B) (Left) Homology model of Commd1 COMM domain shown as a transparent electrostatic surface overlaid with the ribbon representation, highlighting the residues crucial for forming the positively charged lipid-binding pocket. Inset shows the close up of the lipid-binding pocket. (Right) The electrostatic surface representation of Commd9 COMM domain, highlighting the absence of basic patch. (C) Sequence alignment of Commd1 and Commd9 COMM domains. Red asterisks mark the positively charged amino acids constituting the basic patch on Commd1, which are absent in Commd9. (D–H) Binding of liposomes containing various phosphoinositides to Commd1 measured at different concentrations and Commd1 (R133Q, H134A, K167A) using the BLiTz system. Binding kinetics was calculated using sigma-plot (Systat Software Inc.). (I) Lentiviral constructs of GFP-tagged Commd1 and Commd1 (R133Q, H134A, K167A) were transfected into HeLa cells and colocalisation with the Fam21 WASH subunit imaged by confocal immunofluorescence microscopy. The mutant Commd1 is still recruited to endosomes, presumably due to incorporation into heteromeric COMMD complexes and the CCC/Retreiver subunits.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/35898/elife-35898-fig8-figsupp2-v2.jpg)
 
 In contrast to the other family members, Commd9 appears to associate weakly if at all with the membranes tested (Figure 8A). A comparative analysis of the electrostatic surface of the COMM domain of Commd9 and a homology model of the COMM domain of Commd1 (constructed using the COMM domain of Commd9 as the template) shows that the Commd1 COMM domain exhibits a basic patch on its surface composed of solvent-exposed positively charged residues that are absent in Commd9 (Figure 8B,C). To test if this basic surface on Commd1 is involved in membrane recruitment, we made a triple mutant in the putative lipid-binding site (R133Q, H134A and K167A). In liposome-pelleting assays this mutant shows a drastic reduction in membrane interaction (Figure 8A).
 
@@ -129,15 +1001,15 @@ The ability to self-assemble and form heteromeric complexes is a core property o
 
 ## Materials and methods
 
-## Antibodies and phospholipids
+### Antibodies and phospholipids
 
 The monoclonal mouse anti-His antibody was purchased from Genscript Corporation (catalog no. A00186, 1:5000). Goat anti-mouse IgG HRP was from Life Technologies (Catalog no. A16072, 1:1000). POPC (1-palmitoyl-2oleoyl-sn-glycero-3-phosphocholine) (catalog no. 850475P), POPE (1-palmitoyl-2oleoyl-sn-glycero-3-phosphoethanolamine) (catalog no. 850757P), DOPS (1,2-dioleoyl-snglycero-3-phosphoserine) (catalog no. 850150P) and biotinylated POPE (1-palmitoyl-2oleoyl-sn-glycero-3-phosphoethanolamine-N-(biotinyl)) (catalog no. 870285P) were purchased from Avanti Polar Lipids. PI (1,2-dioleoyl-sn-glycero-3-phospho-(1'-myo-inositol)) (catalog no. P-0016), PI(3)P (1,2-dioctanoyl-sn-glycero-3-(phosphoinositol-3-phosphate)) (catalog no. P-3016), PI(4)P (1,2-dioleoyl-sn-glycero-3-phospho-(1'-myo-inositol-4'-phosphate)) (catalog no. P-4016), PI(5)P (1,2-dioleoyl-sn-glycero-3-phospho-(1'-myo-inositol-5'-phosphate)) (catalog no. P-5016), PI(3,4)P2 (1,2-dioctanoyl-sn-glycero-3-phospho-(1'-myo-inositol-3',4'-bisphosphate)) (catalog no. P-3416), PI(3,5)P2 (1,2-dioctanoyl-sn-glycero-3-phospho-(1'-myo-inositol-3',5'-bisphosphate)) (catalog no. P-3516), PI(4,5)P2 (1,2-dioctanoyl-sn-glycero-3-phospho-(1'-myo-inositol-4',5'-bisphosphate)) (catalog no. P-4516) and PI(3,4,5)P3 (1,2-dioctanoyl-sn-glycero-3-phospho-(1'-myo-inositol-3',4',5'-trisphosphate)) (catalog no. P-3916) lipids were obtained from Avanti Polar Lipids, Inc.
 
-## Molecular biology and cloning
+### Molecular biology and cloning
 
 All the constructs cloned into bacterial expression plasmids are listed in Figure 1—figure supplement 1. Briefly, DNA encoding full-length human Commd proteins and CCDC22 and, 93 was cloned into the pGEX-4T-2 plasmid for expression as N-terminal GST-tagged fusion proteins. Full length Commd1, 7 and 9 were also cloned into the pET30b(+) vector with a C-terminal His6 tag by Genscript Corporation. Commd1 HN domain (1-114), Commd1 COMM (116-190), Commd9 HN domain (1- 116), Commd9 COMM (115-198), CCDC22_N (1-139), CCDC22_C (194-627), CCDC93_N (17-155) and CCDC93_C (239-630) were artificially synthesized by Genscript Corporation and cloned into both pGEX-6P-1 and pET30b(+) plasmid as N-terminal GST tagged and C-terminal His6 tagged fusion proteins respectively. Genscript Corporation generated all the mutants used in this study. The construct used in crystallization of Commd9 HN domain (1-117) was cloned into pDEST17 with an N-terminal His6 tag.
 
-## Recombinant protein expression and purification
+### Recombinant protein expression and purification
 
 The bacterial expression plasmids were transformed into Escherichia coli BL21-CodonPlus (DE3)-RIPL competent cells (Agilent). The bacterial cultures were grown in LB until OD600nm reached 0.6. The cultures were cooled to 18˚C before inducing protein expression by adding 0.5 mM isopropylthio-β-galactoside (IPTG) and allowed to grow for 16 h (Ghai et al., 2011). The cells were harvested by centrifugation at 6000 × g for 5 min at 4˚C and the harvested cell pellet was resuspended in lysis buffer [20 mM Tris (pH 8.0), 500 mM NaCl, 10% glycerol, 0.2% IGEPAL, 50 μg/mL benzamidine, 100 units DNaseI, and 1 mM β-mercaptoethanol]. Cells expressing His6-fused proteins were resuspended in lysis buffer supplemented with 20 mM imidazole (pH 8.0). The cells were lysed by mechanical disruption at 30 kpsi using a Constant systems cell disrupter. The lysate was clarified by centrifugation at 50,000 × g for 30 min at 4˚C. Proteins were purified using affinity chromatography from the clarified lysate.
 
@@ -147,56 +1019,56 @@ The Commd5-Commd10 complexes were reconstituted by co-transformation of GST-Comm
 
 For crystallization, SAXS, and MALLS experiments, proteins were buffer exchanged into 10 mM Tris (pH 8.0), 100 mM NaCl and 2 mM DTT using SEC. For the structure determination of Commd9 COMM domain, the protein was labeled with selenomethionine using the method described by Van Duyne et al (Van Duyne et al., 1993). zfVPS26, zfVSP29 and zfVPS35 were expressed separately in E. coli BL21 (DE3) cells grown in LB at 37°C, and protein expression was induced at an OD600 of 0.7–0.8 by the addition of 1 mM IPTG. Cells were harvested after 18 hr of growth at 18°C. Cell pellets of overexpressed zfVPS26, zfVSP29 and zfVPS35 were mixed and purified using standard metal affinity, glutathione affinity and size-exclusion chromatography techniques to obtain the purified retromer complex. The size-exclusion buffer contains 50 mM HEPES (pH 7.5), 150 mM NaCl, 2 mM DTT.
 
-## Multi-angle laser light scattering
+### Multi-angle laser light scattering
 
 The molecular mass of the COMMD proteins was determined by size exclusion chromatography on an AKTA pure (GE Healthcare) connected to a multi angle laser light scattering and, differential refractive index (RI) detector. The protein samples were gel-filtered in a buffer containing 25 mM Tris (pH 8.0), 300 mM NaCl and 2 mM DTT that had been filtered (0.22 μm) and degassed. Measurements of full-length COMMD proteins were made using a superdex-200 increase 5/150 column (GE Healthcare) at a flow rate of 0.25 ml/min with in-line UV, MALLS, and RI detectros (Dawn Heleos II and Optilab reX, respectively, Wyatt Technology Corp) for MW characterization. Measurements of the COMMD COMM and HN domains were made using a superdex-75 5/150 column (GE Healthcare) at a flow rate of 0.25 ml/min. UV, MALLS and RI data were collected and analysed using the ASTRATM software (Wyatt Technology) (Folta-Stogniew, 2006) to compute the molecular mass.
 
-## Crystallisation, data collection and structure determination
+### Crystallisation, data collection and structure determination
 
 The Commd9 COMM domain was buffer-exchanged into 10 mM Tris (pH 8.0), 100 mM NaCl, 2 mM DTT, and concentrated to 8 mg/ml for crystallisation at 20˚C. The protein was supplemented with 10 mM DTT before setting up hanging-drop crystallization screens using a mosquito liquid handling robot (TTP LabTech). Commd9 COMM was crystallised in 0.1 M HEPES (pH 7.0), 6% Jeffamine M-600.
 
 In the case of the Commd9 HN domain, protein was buffer exchanged into 50 mM HEPES (pH 8.0), 200 mM NaCl, 1 mM tris (2-carboxyethyl) phosphine (TCEP) and initial crystallisation screens were set up at 12 mg/ml at 18 ˚C. Crystals of the HN domain were obtained in 0.2 M citric acid (pH 4.9), 28% MME-PEG5000 in a hanging drop setup respectively. Data were collected at the Australian Synchrotron MX1 and MX2 Beamlines. iMOSFLM (Battye et al., 2011) was used to integrate the data, and AIMLESS (Evans and Murshudov, 2013) was used for data scaling in the CCP4 suite (Winn et al., 2011). The Commd9 COMM domain structure was solved using single anamolous dispersion (SAD), and the phases were calculated using the peak wavelength data of selenium with AUTOSOL using the PHENIX suite (Adams et al., 2010; Terwilliger et al., 2009). The solution from AUTOSOL was built using autobuild (Terwilliger et al., 2008) and the resulting model was rebuilt with COOT (Emsley and Cowtan, 2004) followed by repeated refinement runs and model building with PHENIX (Adams et al., 2010) and COOT (Emsley and Cowtan, 2004). The Commd9 HN domain structure was determined using multiwavelength anamolous dispersion (MAD) and the phases were obtained using the program SOLVE. Model building and refinement was done using COOT and PHENIX refine.
 
-## Small angle X-ray scattering
+### Small angle X-ray scattering
 
 In line SEC-SAXS measurements on homogeneous protein samples (assessed using MALLS) were performed at the SAXS/WAXS beamline at the Australian Synchrotron using a superdex-200 increase 5/150 column (GE Healthcare), and Pilatus 1M detector (Dectris). The scattering data were measured in a q range of 0.011 to 0.4 Å at 12 keV using a 1.6 m camera length. Samples were loaded on to the size exclusion column that was equilibrated with 10 mM Tris (pH 8.0), 100 mM NaCl, 2 mM DTT and 5% Glycerol. Data reduction was performed using the ScatterBrain program (written and provided by the Australian Synchrotron; available at http://www.synchrotron.org.au). The buffer frames were averaged after assessing the statistical equivalence using CorMap p values with a significance threshold (α) of 0.01. The averaged buffer scattering was subtracted from statistically similar data from Commd proteins elution peak. Rg was evaluated using the Guinier approximation and was found to be consistent under the elution peak. Primary data processing was performed in Primus using the ATSAS suite (version 2.6) (Petoukhov et al., 2012). Pair distance distribution P(r) of Commd proteins was determined using GNOM. C2 symmetry was assumed in generating low-resolution three-dimensional Ab initio envelopes using the program GASBOR (Kozin and Svergun, 2001). DAMAVER (Volkov and Svergun, 2003) was used to average the 20 independent models generated by GASBOR. Rigid body modeling was performed using SASREF (Petoukhov and Svergun, 2005) and the partial scattering amplitudes were calculated with CRYSOL (Svergun et al., 1995). The ab initio models were superimposed on to the rigid body modeled structures using SUPCOMB (Kozin and Svergun, 2001).
 
-## Co-expression GST pull-downs
+### Co-expression GST pull-downs
 
 BL21-CodonPlus (DE3)-RIPL competent cells were co-transformed with either His6-tagged Commd1, Commd1 COMM domain, Commd1 HN domain, Commd9, Commd9 COMM domain or Commd10 with each of the GST-tagged proteins of interest (Commd1-10, CCDC22, CCDC22_N (1-139), CCDC22_C (194-627), CCDC93_N (17-155), CCDC93_C (239-630) and empty pGEX4T-2 vector (expressing GST). Transformants were selected via overnight growth using triple antibiotic agar plates. A single colony was picked to initiate the culture and proteins were co-expressed using the standard protein expression protocol as described above. Proteins were purified by affinity chromatography using glutathione sepharose beads (GE healthcare) and SDS-PAGE was run to visualize GST-tagged bait proteins. Binding of His-tagged proteins (prey) to GST-tagged (bait) was observed by Western blotting using mouse anti-His antibody (Genscript). Genscript generated all the mutants used in this study.
 
-## GST pull downs
+### GST pull downs
 
 1 nmol GST-tagged CCDC22_N (1-139) and CCDC93_N (17-155) were mixed with 1 nmol of His-tagged Commd1 and Commd9, and COMM domains of Commd1 and Commd9 and Commd1 HN domain, for 1 hr at 4˚C. Protein mixture was then centrifuged at high speed to remove any precipitated proteins. The supernatant was then added to pre-equilibrated (20 mM Tris (pH 8.0), 300 mM NaCl, 1 mM DTT) glutathione sepharose and allowed to mix for a further 30 min at 4˚C. Beads were washed five times in the above buffer supplemented with 0.5% triton X100 (Sigma Aldrich). Bound proteins were analysed by Western blots using mouse anti-His antibody (Genscript).
 
-## Chemical Cross-linking coupled with mass spectrometry
+### Chemical Cross-linking coupled with mass spectrometry
 
 For cross-linking, the purified full-length Commd9 and NN-CH domain of CCDC93 mixture at 50 μM in 50 mM Hepes (pH 7.5), 150 mM NaCl were incubated with 100 molar excess of BS3-d0 cross-linker (Sigma-Aldrich) for 30 min at room temperature. The reaction was quenched by addition of 100 mM Tris-HCl (pH 8.5), and the cross-linked products were analysed by SDS-PAGE and subjected to MS analysis. A negative control cross-linking reaction was performed between the full-length Commd9 and lysozyme using the same condition described above. For the positive control cross-linking reaction, the purified retromer complex at 15 μM was reacted with 100 molar excess of BS3-d0 cross-linker. BS3-d0 was purchased from Sigma Aldrich (catalog no. S5799). The gel band that corresponds to the molecular weight of monomeric retromer complex was subjected to MS analysis. The bands from the SDS-PAGE gels were excised and reduced with dithioerythritol followed by alkylation with iodoacetamide. Alkylated samples were digested with trypsin (Promega) in 50 mM ammonium bicarbonate pH 8.0 overnight using an enzyme-to-substrate ratio of 1:100 (w/w) at 37°C. The digested samples were extracted using extraction buffer containing 5% formic acid and 50% acetonitrile followed by sonication for 1 min. The supernatant was then dried down in a vacuum centrifuge and redissolved in 0.1% formic acid prior to analyse by LC-MS/MS. The extracted peptides were analysed by uHPLC-MS/MS on an Eksigent, Ekspert nano LC400 uHPLC (SCIEX, Canada) coupled to a Triple Tof 6600 mass spectrometer (SCIEX, Canada) equipped with a duo microelectrospray ion source. In brief, samples were injected onto a 300 µm x 150 mm ChromXP C18 CL 3 µm column (SCIEX, Canada) at 5 µl/min. The bound peptides were eluted with a gradient using solvent containing 0.1% formic acid in acetonitrile. 250 ms full scan TOF-MS data was acquired followed by up to 30 50 ms full scan product ion data in an Information Dependant Acquisition, IDA, mode. TOFMS data was acquired over the mass range 350–2000 and for product ion ms/ms 100–1600. Ions observed in the TOF-MS scan exceeding a threshold of 100 counts and a charge state of +2 to +5 were set to trigger the acquisition of product ion, ms/ms spectra of the resultant 30 most intense ions. Acquisition of all MS/MS samples was performed using Analyst TF 1.7 software (SCIEX, Canada). Inspection of the raw MS data was done using ProteinPilot software (SCIEX, Canada). The assignment of cross-linked peptides was made based on xQuest database search engine (Rinner et al., 2008). Trypsin was set as the enzyme used for digestion during sample preparation with an MS1 tolerance of 10 ppm and MS2 tolerance of 0.2 m/z.
 
-## Liposome preparation
+### Liposome preparation
 
 All the phosphoinositides were protonated prior to usage. In brief, powdered lipids were resuspended in chloroform (CHCl3) and dried under argon. Dried lipids were then left in a desiccator for 1 hr to remove any remaining moisture. Dried lipids were resuspended in CHCl3:Methanol (MeOH):1N hydrochloric acid in a 2:1:0.01 molar ratio, lipids were dried once again and allowed to desiccate. Lipids were then resuspended in CHCl3:MeOH in a 3:1 ratio dried once again under argon. Finally, dried lipids were resuspended in CHCl3 and stored at −20°C.
 
 Lipid stock solutions were mixed to the desired molar ratios and dried under argon. To prepare control liposomes POPC and POPE were mixed in a 90:10 molar ratio, for BLiTz experiments liposomes were doped with 0.5% biotinylated POPE. Liposomes containing phosphoinositides were prepared by mixing POPC, POPE and PIPs in a 80:10:10 molar ratio respectively. 30% POPS was used for POPC:POPE:POPS. Dried lipids were hydrated in 25 mM HEPES (pH 7.2), and 220 mM sucrose to obtain a suspension of multilamellar liposomes containing sucrose. This solution was then freeze-thawed five times to produce unilamellar liposomes. Liposomes were then diluted 1:5 in 25 mM HEPES (pH 7.2), and 125 mM NaCl solution. The solution was then centrifuged at 250,000 g to remove sucrose from the medium and maintain osmolarity. The pelleted liposomes were resuspended in 25 mM HEPES (pH 7.2), and 125 mM NaCl solution to the desired concentration of 0.5 mM. All liposomes were used within 1 day of preparation.
 
-## Liposome pelleting
+### Liposome pelleting
 
 10 µM of the protein of interest was added to a final volume of 200 µl of the liposome solution. This solution was left at room temperature for 25 min to allow for protein-liposome interaction. After incubation, the solution was centrifuged at 400,000 g for 30 min. Supernatant and pellet fractions were separated and the pellet was resuspended in 200 µl of 25 mM HEPES (pH 7.2), and 125 mM NaCl, samples were then collected for analysis on a precast 4–12% bis-tris gel (Novex) by coomassie staining.
 
-## Biophysical interaction using Bio-layer interferometry (BLiTz)
+### Biophysical interaction using Bio-layer interferometry (BLiTz)
 
 Protein-lipid and protein-protein interactions were determined using the bio-layer interferometry from the BLiTz system. Protein-lipid interactions were observed by immobilizing 500 µM of biotinylated liposomes on a streptavidin biosensor. After immobilization, the sensor was washed with buffer containing 10 mM Tris (pH 8.0), 150 mM NaCl and 0.1% BSA to prevent non-specific association. Increasing concentrations (12.5, 25, 50 and 100 µM) of protein were added to the sensor and the change in binding (nm) was measured. Proteins were then allowed to disassociate from the probe in the buffer previously mentioned. The kinetics of the protein-protein interactions were determined in the same fashion using 5 µM of His-tagged COMMD1 COMM domain immobilized on a nickel-NTA probe and increasing protein concentrations of 62.5, 125, 250 and 500 µM. The data was processed and plotted using the Sigmaplot package (Systat Software Inc.).
 
-## Cell culture
+### Cell culture
 
 RPE1, HEK293T cells were maintained in DMEM (D5796; Sigma-Aldrich) plus 10% fetal calf serum (F7524; Sigma-Aldrich) under standard conditions. These cell lines were obtained from America Type Culture Collection (ATCC). Parental and stable cells lines were negative for mycoplasma by DAPI staining, and authenticated by STR profiling. Lentivirus particles for producing stably expressing cell lines were generated in HEK293T cells using the pXLG3 vector to carry the GFP tagged Commd1 WT and Commd1 (R133Q, H134A, K167A). Cells were transfected with DNA using polyethylenimine (Sigma-Aldrich). Virus was harvested from the growth media 72 hr post transfection.
 
 For stable transduction with lentivirus, cells were seeded at 75,000 per well in six well plates. The cells were then incubated under normal conditions with titrations of viral supernatant for 72 hr. Cells were then passaged and expression of the GFP tagged protein of interest assessed by western analysis. Cell lines that displayed similar expression levels were selected for comparison and those closest to endogenous levels of protein.
 
-## Immunofluorescence
+### Immunofluorescence
 
 RPE1 cells grown on 13 mm coverslips were washed with PBS before being fixed in ice cold 4% formaldehyde in PBS for 25 min. Cells were permeabilised in 0.1% Triton X-100 (Sigma) for 6 min. The cells were then blocked with 1% bovine serum albumin (BSA) in 0.01% Triton for 15 min at room temperature. Primary antibodies were diluted in 1% BSA and samples were incubated for 1 hr at room temperature. The samples were then incubated with Alexa Fluor conjugated secondary antibody and 0.2 µM DAPI for 30 min at room temperature. Coverslips were mounted in Mowiol-DABCO mounting medium (Sigma). Cells were visualised using a Leica TCS SP5 X confocal microscope (Leica Biosystems).
 
-## Data availablity
+### Data availablity
 
 Coordinates and structure factors for the COMM and HN domain of Commd9 have been deposited at the Protein Data Bank (PDB) with accession codes 6BP6 (COMM domain Commd9) and 4OE9 (HN domain of Commd9).

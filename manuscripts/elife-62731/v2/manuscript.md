@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Ribosome-associated quality control pathways respond to defects in translational elongation to recycle arrested ribosomes and degrade aberrant polypeptides and mRNAs. Loss of a tRNA gene leads to ribosomal pausing that is resolved by the translational GTPase GTPBP2, and in its absence causes neuron death. Here, we show that loss of the homologous protein GTPBP1 during tRNA deficiency in the mouse brain also leads to codon-specific ribosome pausing and neurodegeneration, suggesting that these non-redundant GTPases function in the same pathway to mitigate ribosome pausing. As observed in Gtpbp2 -/- mice (Ishimura et al., 2016), GCN2-mediated activation of the integrated stress response (ISR) was apparent in the Gtpbp1 -/- brain. We observed decreased mTORC1 signaling which increased neuronal death, whereas ISR activation was neuroprotective. Our data demonstrate that GTPBP1 functions as an important quality control mechanism during translation elongation and suggest that translational signaling pathways intricately interact to regulate neuronal homeostasis during defective elongation.
+Ribosome-associated quality control pathways respond to defects in translational elongation to recycle arrested ribosomes and degrade aberrant polypeptides and mRNAs. Loss of a tRNA gene leads to ribosomal pausing that is resolved by the translational GTPase GTPBP2, and in its absence causes neuron death. Here, we show that loss of the homologous protein GTPBP1 during tRNA deficiency in the mouse brain also leads to codon-specific ribosome pausing and neurodegeneration, suggesting that these non-redundant GTPases function in the same pathway to mitigate ribosome pausing. As observed in Gtpbp2-/- mice (Ishimura et al., 2016), GCN2-mediated activation of the integrated stress response (ISR) was apparent in the Gtpbp1-/- brain. We observed decreased mTORC1 signaling which increased neuronal death, whereas ISR activation was neuroprotective. Our data demonstrate that GTPBP1 functions as an important quality control mechanism during translation elongation and suggest that translational signaling pathways intricately interact to regulate neuronal homeostasis during defective elongation.
 
 ## Introduction
 
@@ -39,33 +39,73 @@ In addition to Gtpbp2, the genome of many eukaryotes contains a related gene, Gt
 
 ## Results
 
-## Loss of Gtpbp1 leads to widespread neurodegeneration when tRNA is deficient
+### Loss of Gtpbp1 leads to widespread neurodegeneration when tRNA is deficient
 
 Previously we demonstrated that loss of the trGTPase GTPBP2 causes progressive neurodegeneration in mice (Ishimura et al., 2014). However, mice homozygous for a null mutation in Gtpbp1, which encodes a structurally related trGTPase (Figure 1A), were reported to have no apparent phenotypes on a mixed genetic background (Senju et al., 2000). Both GTPBP2 and GTPBP1 are expressed in many tissues, and in situ hybridization revealed that transcripts of these genes were widely expressed throughout the brain (Ishimura et al., 2014; Senju et al., 2000; Figure 1B–D, Figure 1—figure supplement 1A and B). Interestingly, expression of Gtpbp1 and Gtpbp2 occurred both in neurons that degenerate in Gtpbp2-/- mice (e.g. cerebellar granule cells, dentate gyrus (DG) granule cells, neurons in cortical layer IV) and those that do not (e.g. hippocampal pyramidal cells and non-layer IV cortical neurons) suggesting possible functional redundancy between these genes in some cell types.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain structure of mouse GTPBP2 and GTPBP1. The percent of identical amino acids for each domain is shown. (B–D) In situ hybridization demonstrating ubiquitous expression of Gtpbp1 (yellow) and Gtpbp2 (red) in the P28 wild type (B6J) cerebellum (B), and CA1 region of the hippocampus (C), dentate gyrus (DG) (D) (n = 2 mice). Images of individual probes from areas defined by rectangles in C and D are shown above merged images. (E, F) Hematoxylin and eosin staining of sagittal sections of the cerebellum (n = 3–4 mice/genotype). Higher magnification images of lobule IX are shown below each genotype. Cerebellar lobes are indicated by Roman numerals. (G, H) Number of cerebellar granule cells in lobule VI (G) and lobule IX (H) of 3-, 4-, and 6-week-old BP1 (B6J.Gtpbp1-/-); BP2 (B6J-Gtpbp2-/-); and BP1, BP2 (B6J.Gtpbp1-/-; Gtpbp2-/-) mice (n = 3 mice/genotype). Data represent mean + SD. ML, molecular cell layer; PL, Purkinje cell layer; GCL, granule cell layer. Scale bars: 20 μm (B, C, D); 500 μm and 50 μm (higher magnification) (E, F). One-way ANOVA was corrected for multiple comparisons using Tukey method (G, H). ***p≤0.001, ****p≤0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) In situ hybridization was performed on P28 B6J mice demonstrating ubiquitous expression of Gtpbp1 (yellow) and Gtpbp2 (red) throughout the cortex (A) and specifically in layer IV (B) (n = 2 mice). Sections were counterstained with DAPI (blue). Cortical layers are indicated by Roman numerals. Scale bar: 20 μm (A, B).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunofluorescence of hippocampal sections of the dentate gyrus (DG) with antibodies against cleaved caspase 3 (cas3, green; arrowheads indicate positive cells). Sections were counterstained with DAPI, (n = 3 mice/genotype). (B) Hematoxylin and eosin-stained sagittal sections of the DG (n ≥ 3 mice/genotype). Higher magnification images of the region indicated by the rectangle are shown for each genotype. Arrowheads indicate pyknotic cells. Note the similarity in neurodegeneration between mutant genotypes. (C) Immunofluorescence on cortical sections with antibodies against cleaved caspase 3 (cas3, green) and CTIP2 (red) to identify layer V neurons (n = 3 mice). Sections were counterstained with DAPI. Cortical layers are indicated by Roman numerals. Note the cas3-positive neurons in layer IV (above layer V CTIP2+ neurons). (D) Hematoxylin and eosin-stained sagittal sections of the cortex from 6-week-old mice (n ≥ 3 mice/genotype). Cortical layers are indicated by Roman numerals and higher magnifications (dashed line rectangle) of layer IV of the cortex are shown. (E) Hematoxylin and eosin-stained retina sections (n = 2–3 mice/genotype). Note the similarity in neurodegeneration between mutant genotypes. Scale bars: 50 μm (A, E); 25 μm (C); 50 μm and 20 μm (higher magnification) (B, D). OS, outer segment; IS, inner segment; ONL, outer nuclear layer; OPL, outer plexiform layer; INL, inner nuclear layer; IPL, inner plexiform layer; GCL, ganglion cell layer.
 
 To investigate if phenotypes in Gtpbp1-/- mice are dependent on genetic background as observed for B6J-Gtpbp2-/- mice, we generated congenic B6J.Gtpbp1-/- mice. Like B6J-Gtpbp2-/- mice, B6J.Gtpbp1-/- mice were indistinguishable from littermate controls at 3 weeks of age, developed overt ataxia by 6 weeks, and died by 8 weeks of age. Cerebellar degeneration was also similar to that observed in B6J-Gtpbp2-/- mice (Ishimura et al., 2014; Figure 1E). Apoptotic granule cells were observed in caudal lobes of the cerebellum just prior to 4 weeks of age and these neurons progressively died in a posterior to anterior manner. As previously observed in B6J-Gtpbp2-/- mice, granule cells in the DG, layer IV cortical neurons and multiple neurons in the retina degenerated in B6J.Gtpbp1-/- mice, but cell death was not observed for other neurons such as hippocampal pyramidal cells or neurons in the other layers of the cortex (Figure 1—figure supplement 2A–E). Consistent with the dependency of cerebellar granule cell degeneration on levels of n-Tr20, a tRNAArgUCU gene with a processing mutation in the B6J strain, transgenic expression of wild type n-Tr20 greatly attenuated degeneration of these neurons as has previously been observed for B6J-Gtpbp2-/- mice (Figure 1E).
 
 To genetically test for compensation between Gtpbp1 and Gtpbp2, we analyzed mice that had mutations in both genes. Neurodegeneration was not observed in mice heterozygous for mutations in both Gtpbp1 and Gtpbp2 (Figure 1F). Furthermore, the onset, progression and specificity of neurodegeneration were similar between B6J.Gtpbp1-/-; Gtpbp2-/-, B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice (Figure 1F–H). These results suggest that Gtpbp1 and Gtpbp2 are functionally distinct and act in a common pathway to mediate cellular homeostasis that is necessary for neuron survival.
 
-## GTPBP1 is a novel ribosome-rescue factor
+### GTPBP1 is a novel ribosome-rescue factor
 
 The genetic interaction between the B6J-derived n-Tr20 mutation and the loss of Gtpbp1 suggested that like GTPBP2, GTPBP1 might act as a rescue factor for ribosomes paused at AGA codons. To investigate this possibility, we performed ribosome profiling on cerebella from 3-week-old B6J.Gtpbp1-/- and B6J mice. As previously observed in the B6J-Gtpbp2-/- cerebellum, ribosome occupancy dramatically increased in the B6J-Gtpbp1-/- cerebellum when AGA codons were in the A-site of the ribosome (Figure 2A and B, Figure 2—figure supplement 1A). Comparison of genes with AGA pauses revealed that approximately 50% of pausing genes were shared between libraries generated from individual B6J.Gtpbp1-/- mice, and this was also true for B6J-Gtpbp2-/- mice, supporting that AGA pausing is likely stochastic (Figure 2C). Similarly, about 50% of genes with AGA pausing intersected between B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice (Figure 2—figure supplement 1B, Supplementary file 1). Consistent with stochastic pausing at AGA codons, gene ontology (GO) analysis of genes with pauses revealed enrichment in numerous biological processes and the majority of these processes were enriched in both Gtpbp1 and Gtpbp2 (Figure 2—figure supplement 1C). Thus, our data suggest that both GTPBP1 and GTPBP2 rescue stochastic ribosome-pausing events when the tRNAArgUCU pool is reduced.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig2-v2.jpg)
+
+**Figure 2.:** (A) Ribosome occupancy was calculated by dividing the number of genome-wide reads at codons by the expected reads in the ribosomal A-site (n = 3 biological replicates). Data represent mean + SEM. Note that ribosome occupancy increased only at AGA codons in P21 B6J.Gtpbp1-/- mice. (B) Ribosome occupancy at AGA codons was calculated by dividing genome-wide reads at AGA codons by expected reads. Data represent mean + SEM from ribosome profiling from cerebella of P21 B6J and B6J.Gtpbp1-/- mice (n = 3 biological replicates). (C) Venn diagram of genes with increased ribosome occupancy at AGA codons (z-score ≥10) between libraries prepared from individual B6J.Gtpbp1-/- (red) or B6J-Gtpbp2-/- (blue) mice (biological replicates 1–3). (D) Significant (q-value ≤0.05, q-value refers to the corrected p-value using Benjamini-Hochberg correction) transcriptional changes in gene expression between P21 B6J and B6J.Gtpbp1-/- cerebellum (x-axis, DE Gtpbp1) are plotted against those between P21 B6J and B6J-Gtpbp2-/- cerebellum (y-axis, DE Gtpbp2) (n = 3 biological replicates). Significant (q-value ≤0.05) Gtpbp1-dependent expression changes are colored in pink and Gtpbp2-dependent expression changes in blue. Significant (q-value ≤0.05) transcriptional changes in gene expression between B6J.Gtpbp1-/- and B6J-Gtpbp2-/- are shown in red (27 genes). The beta effect size is analogous to the natural log fold change in expression. (E) Analysis of differential gene expression between P21 B6J and B6J.Gtpbp1-/- mice (DE Gtpbp1). Significant (q-value ≤0.05) transcriptional changes in gene expression are shown in grey, and genes with increased AGA ribosome occupancy (z-score ≥10, detected in at least two biological replicates) that are differentially expressed are highlighted in red (260 genes). The beta effect size is analogous to the natural log fold change in expression and 1.5-fold changes in gene expression are indicated by the red dashed lines. Multiple t tests were corrected for multiple comparisons using Holm-Sidak method (B). **p≤0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap of ribosome occupancy (observed/expected reads) at AGA codons relative to nucleotide (nts) length of ribosome protected fragments. Note the increase in ribosome occupancy at the A-site AGA codon in P21 B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice (n = 3 biological replicates). (B) Venn diagram of all genes with increased AGA ribosome occupancy (z-score ≥10) observed in P21 B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice (n = 3 biological replicates). (C) Gene Ontology (GO) analysis using all AGA pausing genes (z-score ≥10) from P21 B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice. Top 24 enriched categories (Benjamini-Hochberg adjusted p-value≤0.05) are shown. The inner circle and outer circle represent GO categories that are shared between mutant genotypes or unique to each genotype, respectively.
 
 To determine if transcriptional changes are shared upon loss of Gtpbp1 and Gtpbp2, we performed RNA-sequencing analysis. Comparison of data from the cerebellum of 3-week-old B6J.Gtpbp1-/- and B6J mice revealed significant (q-value ≤0.05) differential expression (DE) of approximately 12% of the detected genes, with 46% upregulated and 54% downregulated (DE Gtpbp1, Supplementary file 2). Similarly, loss of Gtpbp2 altered expression of about 10% of the detected genes with 45% and 55% upregulated and downregulated, respectively, when compared to B6J (DE Gtpbp2, Supplementary file 2). Interestingly, only 27 genes (mostly non-coding genes) were differentially expressed between Gtpbp1-/- and Gtpbp2-/- cerebella, revealing that loss of either gene similarly altered the transcriptome (Figure 2D, Supplementary file 2).
 
 The high similarity of gene expression changes in Gtpbp1 and Gtpbp2 mutant mice, combined with our observation that ribosome-pausing defects are likely stochastic, suggested that transcriptional alterations might reflect a common cellular response to ribosome pausing rather than changes in levels of the specific genes that harbor paused ribosomes. In agreement, transcriptional changes were only weakly correlated with genes showing increased ribosomal occupancy (Spearman correlation coefficient of 0.0405, p-value=0.0083). Significant (q-value ≤0.05) changes in expression were only observed in 33% or 26% of the genes with AGA pauses (that were detected in at least two replicates) in the Gtpbp1-/- and Gtpbp2-/- cerebellum, respectively (Figure 2E).
 
-## Loss of GTPBP1 activates the ISR
+### Loss of GTPBP1 activates the ISR
 
 In order to identify molecular pathways that might respond to ribosome pausing, we performed upstream regulator analysis (Ingenuity Pathway Analysis) of genes differentially expressed between B6J and B6J.Gtpbp1-/- mice (DE Gtpbp1). This analysis revealed significant enrichment for activation of the transcription factor ATF4, an effector of the ISR (Figure 3A, inset). The ISR is induced by the coupling of stress signals to the phosphorylation of serine 51 of the translation initiation factor eIF2α to decrease translation initiation. While the ISR reduces translation of many mRNAs, translation of ATF4 is enhanced, which results in the upregulation of genes to restore cellular homeostasis. We previously observed induction of the ISR in the B6J-Gtpbp2-/- cerebellum suggesting that activation of this pathway may be a common cellular response to ribosome stalling (Ishimura et al., 2016). In agreement, Atf4 and 141 of the 153 differentially expressed ATF4 target genes (Han et al., 2013) were upregulated in the cerebellum of 3-week-old B6J.Gtpbp1-/- mice (DE Gtpbp1, Figure 3A). Furthermore, levels of phosphorylated eIF2α (p-eIF2αS51) were increased in the cerebellum and hippocampus of B6J.Gtpbp1-/- mice (Figure 3B and C). In agreement, in situ hybridization of the B6J.Gtpbp1-/- hippocampus with probes to ATF4 targets induced in the cerebellum of these mice demonstrated that these ATF4 targets were also induced in hippocampal neurons of 3-week-old mutant mice (Figure 3D). Interestingly, induction of ATF4 targets varied in different types of neurons. Sesn2, Slc7a1, and Chac1 were upregulated in both CA1 and DG neurons, whereas Ddr2 was only upregulated in CA1 neurons (Figure 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig3-v2.jpg)
+
+**Figure 3.:** (A) Analysis of transcriptional changes in gene expression between P21 B6J and B6J.Gtpbp1-/- mice (DE Gtpbp1) (n = 3 biological replicates). Significant (q-value ≤0.05, q-value refers to the corrected p-value using Benjamini-Hochberg correction) changes in expression are shown in grey and differentially expressed ATF4 targets are highlighted in green. The beta effect size is analogous to the natural log fold change in expression and 1.5-fold changes in gene expression are indicated (red dashed lines). (Inset) Identification of upstream regulators using Ingenuity Pathway Analysis (IPA) of differentially expressed genes between B6J and B6J.Gtpbp1-/- mice (DE Gtpbp1). Top ten transcription factors and kinases (italics) are shown. (B) Western blot analysis of tissue lysates from P21 mice. Vinculin was used as an input control. (C) Relative abundance of p-eIF2αS51 and p-S6S240/244 in the hippocampus and cerebellum of BP1 (B6J.Gtpbp1-/-), BP2 (B6J-Gtpbp2-/-), and control (B6J) mice (n = 3 mice/genotype). Levels of p-eIF2αS51 or p-S6S240/244 were normalized to total level of eIF2α or S6, and phosphorylation levels are relative to those of B6J. Data represent mean + SD. (D) In situ hybridization of ATF4 targets in the hippocampal CA1 and dentate gyrus (DG) at P21 (n = 3 mice/genotype). (E) Sagittal cerebellar sections stained with hematoxylin and eosin. Higher magnification images of lobule IX are shown below each genotype (n = 3 mice/genotype). Cerebellar lobes are indicated by Roman numerals. (F) Quantification of cerebellar granule cells of lobule VI and lobule IX of control (B6J), BP1 (B6J.Gtpbp1-/-), and Gcn2; BP1 (B6J.Gcn2-/-; Gtpbp1-/-) mice at P35 (n = 3 mice/genotype). Data represent mean + SD. (G) Percent of DG and CA1 neurons that are pyknotic in control (B6J), BP1 (B6J.Gtpbp1-/-), and Gcn2; BP1 (B6J.Gcn2-/-; Gtpbp1-/-) mice at P35 (n = 3 mice/genotype). Data represent mean + SD. (H) Sagittal sections of the CA1 area of the hippocampus stained with hematoxylin and eosin (n = 3 mice/genotype). Arrowheads indicate pyknotic cells. Scale bars: 50 μm (D); 500 μm and 50 μm (higher magnification) (E); 20 μm (H). One-way ANOVA was corrected for multiple comparisons using Tukey method (C, F, G). **p≤0.01, ***p≤0.001, ****p≤0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Gtpbp1-/- mice. Hippocampal sagittal sections of the dentate gyrus (DG) stained with hematoxylin and eosin (n = 3 mice/genotype). Higher magnification images of the DG region defined by the rectangle are shown. Arrowheads indicate pyknotic cells. Scale bars: 50 μm and 20 μm (higher magnification).
+
 In B6J-Gtpbp2-/- mice, the ISR is activated by the eIF2α kinase GCN2 (EIF2AK4). Inhibition of ISR activation via Gcn2 deletion in these mice accelerated cerebellar granule cell death and induced neurodegeneration of hippocampal pyramidal cells (Ishimura et al., 2016). GCN2 was enriched in upstream regulator analysis of differentially expressed genes in the B6J.Gtpbp1-/- cerebellum (DE Gtpbp1), suggesting that this kinase may also mediate activation of the ISR in Gtpbp1-deficient mice (Figure 3A, inset). In agreement, Gcn2 deletion in B6J.Gtpbp1-/- mice accelerated degeneration of cerebellar granule cells. In 5-week-old B6J.Gtpbp1-/-; Gcn2-/- mice, 65% of these neurons had degenerated compared to 37% in B6J.Gtpbp1-/- mice (Figure 3E and F). Furthermore, the DG of B6J.Gtpbp1-/-; Gcn2-/- mice had twice the number of granule cells with pyknotic nuclei compared to B6J.Gtpbp1-/- mice (Figure 3G, Figure 3—figure supplement 1). Finally, although CA1 pyramidal neurons do not normally degenerate in B6J.Gtpbp1-/- mice, 10.3% of these neurons were undergoing apoptosis in the hippocampus of 5-week-old B6J.Gtpbp1-/-; Gcn2-/- mice (Figure 3G and H). As previously reported (Ishimura et al., 2016; Zhang et al., 2002), neurodegeneration was not observed in the B6J.Gcn2-/- brain (data not shown).
 
-## Loss of Gtpbp1 or Gtpbp2 induces neuron-specific changes in mTOR signaling
+### Loss of Gtpbp1 or Gtpbp2 induces neuron-specific changes in mTOR signaling
 
 Our data suggest that defects in translation elongation activate the ISR, which regulates translation initiation and influences neurodegeneration. Thus, we wondered if ribosome pausing in Gtpbp1 or Gtpbp2 mutant mice could alter additional translational control pathways. Upstream regulator analysis of differentially expressed genes in the cerebellum of B6J.Gtpbp1-/- mice (DE Gtpbp1) revealed enrichment, although lower than that observed for ATF4, of the mammalian target of rapamycin kinase (mTOR) (Figure 3A, inset). mTOR functions in two distinct protein complexes known as mTOR complex 1 (mTORC1) and complex 2 (mTORC2). Although association with membrane bound ribosomes (i.e. the endoplasmic reticulum) has been observed for mTORC2, the central role of mTOR in protein translation is largely attributed to mTORC1 through phosphorylation of specific effector proteins and translation of particular genes that contain 5’ terminal oligopyrimidine (TOP) tracts (Dai and Lu, 2009; Laplante and Sabatini, 2013; Laplante and Sabatini, 2009; Ma and Blenis, 2009a; Ma and Blenis, 2009b; Nandagopal and Roux, 2015; Zinzalla et al., 2011). To determine if mTOR activity is altered by loss of Gtpbp1 or Gtpbp2, we analyzed the translational efficiency (TE) (Supplementary file 3) of genes regulated by mTORC1 via their TOP motifs by normalizing the number of ribosome footprint reads to that of RNA-sequencing reads. In addition, we assessed the phosphorylation status of the ribosomal protein S6 (p-S6240/244), a known downstream target of mTORC1 (Saxton and Sabatini, 2017; Thoreen et al., 2012). Only one of the 53 detected 5’TOP genes had an altered TE in the B6J.Gtpbp1-/- cerebellum (Rps29, TE Gtpbp1) or in the B6J-Gtpbp2-/- cerebellum (Rplp0, TE Gtpbp2) compared to the B6J cerebellum (Supplementary file 3, Figure 4—figure supplement 1A). In addition, levels of p-S6240/244 were unchanged at 3 weeks of age in the cerebellum of both mutant strains, suggesting that mTOR signaling is not altered by ribosome pausing in granule cells, which comprise the vast majority of cells in the cerebellum (Figure 3B and C).
 
 In contrast to the cerebellum, p-S6240/244 levels were decreased by about 90% in the hippocampus of 3-week-old B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice relative to wild type (Figure 3B and C). Interestingly, immunofluorescence using antibodies to p-S6240/244 revealed that the reduction of p-S6240/244 in the mutant hippocampus was more pronounced in specific neuron populations. In the control hippocampus, p-S6240/244 signal was most intense in CA3 pyramidal cells and lower in CA1 pyramidal cells and DG granule cells (Figure 4A). In B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mutant hippocampi, p-S6240/244 levels were dramatically reduced in the granule cells of the DG and some scattered CA1 neurons (Figure 4A). However, levels of p-S6240/244 were not affected in CA3 or cortical neurons (i.e. layer IV cortical neurons) of 3-week-old B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice (Figure 4—figure supplement 1B and C). Together, these results demonstrate that changes in mTOR signaling may occur in a celltype-specific manner in the brains of B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunofluorescence of P21 hippocampal sections with antibodies against p-S6S240/244 (orange) and S6 (green). Sections were counterstained with DAPI (blue). Higher magnifications of CA1 and dentate gyrus (DG) are shown (n = 3 mice/genotype). (B) Sagittal cerebellar sections of P28 mice injected with vehicle or rapamycin for 14 days stained with hematoxylin and eosin (n = 3 mice/genotype). Higher magnification images of lobule IX are shown below each genotype. Cerebellar lobes are indicated by Roman numerals. (C) Quantification of cerebellar granule cells in lobule VI and lobule IX of either vehicle (V) or rapamycin (R) treated control (B6J), BP1 (B6J.Gtpbp1-/-), and BP2 (B6J-Gtpbp2-/-) mice (n = 3 mice/genotype). Data represent mean + SD. Scale bars: 100 μm and 50 μm (higher magnification) (A); 500 μm and 50 μm (higher magnification) (B). Two-way ANOVA was corrected for multiple comparisons using Tukey method (C). **p≤0.01, ***p≤0.001, ****p≤0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Analysis of differential translation efficiency (TE) in the cerebellum of P21 B6J and B6J.Gtpbp1-/- (TE Gtpbp1) or B6J and B6J-Gtpbp2-/- (TE Gtpbp2) mice (n = 3 biological replicates/genotype). The TE of genes was determined by normalizing the abundance of ribosomal footprints to that of RNA-sequencing reads. 5’TOP genes regulated by mTOR are shown in magenta. The red dashed line marks significant changes in TE (adjusted p-value≤0.05). (B) Immunofluorescence of P21 cortical sections with antibodies against p-S6S240/244 (orange) (n = 3 mice/genotype). Cortical layers are indicated by Roman numerals. (C) Immunofluorescence of P21 hippocampal (CA3) sections with antibodies against p-S6S240/244 (orange) and counterstained with DAPI (blue) (n = 3 mice/genotype). (D) Western blotting analysis of p-S6S240/244 in cerebellar tissue extracts from P21 B6J and B6J.Gtpbp1-/- mice untreated or injected with rapamycin for 7 days. Vinculin was used as an input control. (E) Relative abundance of p-S6S240/244 in the cerebellum of P21 B6J and BP1 (B6J.Gtpbp1-/-) mice treated with rapamycin (R) (n = 3 mice/genotype/treatment). Levels of p-S6S240/244 were normalized to total levels of S6 and phosphorylation levels are relative to those of untreated B6J mice. Data represent mean + SD. (F) Relative abundance of p-S6S240/244 in the cerebellum of P21 B6J and BP2 (B6J-Gtpbp2-/-) mice treated with rapamycin (R). Levels of p-S6S240/244 were normalized to total levels of S6 and phosphorylation levels are relative to those of untreated B6J mice (n = 3 mice/genotype/treatment). Data represent mean + SD. (G) Quantitative RT-PCR analysis of ATF4 targets using cerebellar cDNA from P21 B6J, B6J.Gtpbp1-/-, and B6J-Gtpbp2-/- mice injected with rapamycin for 7 days or untreated (n = 3 mice/genotype/treatment). Data were normalized to beta-actin and fold change in gene expression is relative to that of B6J. Magenta colored genes were previously shown to be sensitive to mTOR inhibition (Park et al., 2017). Data represent mean + SD. Scale bar: 50 μm (B, C). Two-way ANOVA was corrected for multiple comparisons using Tukey method (E, F, G). ns, not significant, **p≤0.01, ***p≤0.001, ****p≤0.0001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62731/elife-62731-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Sagittal sections of the cortex of P28 mice injected with vehicle or rapamycin for two weeks stained with hematoxylin and eosin. Higher magnification images of layer IV (rectangle) are shown for each genotype (n = 3 mice/genotype/treatment). Cortical layers are indicated by Roman numerals and arrowheads indicate pyknotic cells. (B) Number of pyknotic cells in layer IV of the cortex in (B6J), BP1 (B6J.Gtpbp1-/-), and BP2 (B6J-Gtpbp2-/-) mice injected with vehicle (V) or rapamycin (R) (n = 3 mice/genotype/treatment). Data represent mean + SD. (C) Hematoxylin and eosin stained sagittal sections of the hippocampus of P28 mice injected with vehicle or rapamycin for 14 days (n = 3 mice/genotype/treatment). Arrowheads indicate pyknotic cells. Note: Due to the large number of pyknotic cells in rapamycin-treated B6J.Gtpbp1-/- mice, arrowheads to indicate pyknotic cells were not included. (D) Percent of neurons with pyknotic nuclei in the dentate gyrus (DG) in vehicle (V) or rapamycin (R) treated control (B6J), BP1 (B6J.Gtpbp1-/-), and BP2 (B6J-Gtpbp2-/-) mice (n = 3 mice/genotype/treatment). Data represent mean + SD. (E) Total number of neurons of the DG in vehicle (V) or rapamycin (R) treated control (B6J), BP1 (B6J.Gtpbp1-/-), and BP2 (B6J-Gtpbp2-/-) mice (n = 3 mice/genotype/treatment). Data represent mean + SD. (F) Sagittal sections of the hippocampus of P42 mice injected with vehicle or rapamycin for two weeks stained with hematoxylin and eosin (n = 3). Arrowheads indicate pyknotic cells. Scale bars: 50 μm and 20 μm (higher magnification) (A); 50 μm (C, F). Two-way ANOVA was corrected for multiple comparisons using Tukey method (B, D, E). ***p≤0.001, ****p≤0.0001.
 
 The decrease in translation initiation by inhibition of the mTOR pathway has been suggested to reduce ribosome pausing during amino acid deprivation (Darnell et al., 2018) suggesting that like the ISR, this pathway may also be protective in the Gtpbp1 and Gtpbp2 mutant brain. However, changes in levels of p-S6240/244 in the mutant hippocampus suggested that decreases in mTOR activity were most profound in hippocampal neurons that ultimately degenerate (i.e. the granule cells of the DG). Thus, to determine the role of mTOR signaling on neuron survival during ribosome pausing, we pharmacologically inhibited mTOR by treating B6J, B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice with rapamycin daily for two weeks beginning at P14. Similar to the dramatic decrease in p-S6240/244 in 3-week-old hippocampi in B6J.Gtpbp1-/- and B6J-Gtpbp2-/- mice, cerebellar levels of p-S6240/244 were decreased by approximately 85% by P21 in rapamycin-treated mice (Figure 4—figure supplement 1D–F). Examination of the cerebellum from P28 B6J.Gtpbp1-/- and B6J-Gtpbp2-/- cerebellum revealed that rapamycin treatment increased granule cell loss by 30% (lobule VI) and 40% (lobule IX) compared to mutant mice treated with vehicle (Figure 4B and C). No neuron loss was observed in rapamycin-treated control (B6J) mice (Figure 4B and C). Although it has been reported that mTOR inhibition may cause repression of Atf4 transcripts and some of its target genes (Park et al., 2017), no significant reduction of Atf4 or its targets was observed in rapamycin-treated mutant mice, suggesting that the ISR and mTOR pathways function independently upon loss of Gtpbp1 and Gtpbp2 in the B6J cerebellum (Figure 4—figure supplement 1G).
 
@@ -89,15 +129,319 @@ Whether mTORC1 responds directly to translational stress or alterations in this 
 
 ## Materials and methods
 
-## Mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Gtpbp1 &lt; tm1Ynim/tm1Ynim&gt;</td>
+      <td>Senju et al., 2000</td>
+      <td>RRID:MGI:3036546</td>
+      <td>Gtpbp1-/- strain (mixed genetic background)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6J.Gtpbp1&lt;tm1Ynim/tm1Ynim&gt;</td>
+      <td>This study</td>
+      <td>MGI:6467940</td>
+      <td>B6J.Gtpbp1-/- strain (congenic background, C57BL/6J)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6J-Gtpbp2-/-(C57BL/6J-Gtpbp2nmf205/J)</td>
+      <td>Ishimura et al., 2014</td>
+      <td>RRID:IMSR_JAX:004823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6J.Gcn2-/-(B6.129S6-Eif2ak4tm1.2Dron)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping wild type allele Gtpbp1</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Forward Primer: 5’GAGTACGGGCTGAGTGAAGC3’; Reverse Primer:5’TGGACAGGAACCTGATGTGA3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping mutant allele Gtpbp1</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Forward Primer: 5’TACGCCACCGTGAAGAGCAT3’; Reverse Primer:5’AGGGGAGGAGTGGAAGGTGG3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Quantitative RT-PCR (beta actin)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Forward Primer: 5’GGCTGTATTCCCCTCCATCG3’; Reverse Primer:5’ CCAGTTGGTAACAATGCCATGT3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Gtpbp2 (mouse)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#527461</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Gtpbp1 (mouse)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#527451-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Sesn2 (mouse)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td></td>
+      <td>Probe (reference number: 574751-C2) was modified for this study to be compatible with manual RNAscope protocol but is otherwise equivalent to #574758-C2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Slc7a1 (mouse)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#461021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Ddr2 (mouse)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#405991-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Chac1 (mouse)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#514501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent Reagent Kit v2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>#323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Plus Cyanine 5</td>
+      <td>PerkinElmer</td>
+      <td>NEL745001KT</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Plus Cyanine 3</td>
+      <td>PerkinElmer</td>
+      <td>NEL744001KT</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA-free DNA Removal Kit</td>
+      <td>Life Technologies</td>
+      <td>AM1906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand Synthesis System</td>
+      <td>Invitrogen</td>
+      <td>#18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iQ SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>#1708880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq v2 mRNA kit</td>
+      <td>Illumina</td>
+      <td>RS-122–2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>LC Laboratories</td>
+      <td>R5000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-phospho-EIF2alpha (polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #9721; RRID:AB_330951</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- EIF2alpha (polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #9722; RRID:AB_2230924</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-phospho S6 ribosomal protein, S240/244(polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #5364; RRID:AB_10694233</td>
+      <td>WB (1:4000) IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-S6 ribosomal protein (monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-74459; RRID:AB_1129205</td>
+      <td>WB (1:2000) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Vinculin (monoclonal)</td>
+      <td>Sigma</td>
+      <td>V9131; RRID:AB_477629</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto v0.42.4</td>
+      <td>Bray et al., 2016</td>
+      <td>RRID:SCR_016582; https://pachterlab.github.io/kallisto/about</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sleuth v0.30.0</td>
+      <td>Pimentel et al., 2017</td>
+      <td>RRID:SCR_016883; https://pachterlab.github.io/sleuth/about</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featureCounts</td>
+      <td>Liao et al., 2014</td>
+      <td>RRID:SCR_012919; http://bioinf.wehi.edu.au/featureCounts</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>hisat2 v2.1.0</td>
+      <td>Kim et al., 2019</td>
+      <td>RRID:SCR_015530; https://daehwankimlab.github.io/hisat2/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastx_clipper</td>
+      <td>Hannon Lab</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastx_trimmer</td>
+      <td>Hannon Lab</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie2 v 2.2.3</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID:SCR_005476; http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RiboWaltz v1.0.1</td>
+      <td>Lauria et al., 2018</td>
+      <td>RRID:SCR_016948; https://github.com/LabTranslationalArchitectomics/RiboWaltz</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 v1.22.2</td>
+      <td>Love et al., 2014</td>
+      <td>RRID:SCR_015687; https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>riborex v2.3.4</td>
+      <td>Li et al., 2017</td>
+      <td>RRID:SCR_019104; https://github.com/smithlabcode/riborex</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ensembldb v2.6.8</td>
+      <td>Rainer et al., 2019</td>
+      <td>RRID:SCR_019103; https://www.bioconductor.org/packages/release/bioc/html/ensembldb.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pause site identification algorithm</td>
+      <td>Ishimura et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis (IPA)</td>
+      <td>QIAGEN, Inc</td>
+      <td>RRID:SCR_008653; https://www.qiagenbioinformatics.com/products/ingenuity-pathway-analysis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID bioinformatics web server</td>
+      <td>Huang et al., 2009</td>
+      <td>RRID:SCR_001881; http://david.abcc.ncifcrf.gov</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains
 
 Gtpbp1-/+ mice were generated previously on a mixed genetic background with a portion of exon three and all of exon four replaced with a PGK-Neo cassette (Senju et al., 2000). These mice were backcrossed to C57BL/6J mice for more than 10 generations to generate congenic B6J.Gtpbp1-/- mice and genotyped with the following primers (wild-type forward primer: 5’GAGTACGGGCTGAGTGAAGC3’, wild type reverse primer: 5’TGGACAGGAACCTGATGTGA3’, mutant forward primer: 5’TACGCCACCGTGAAGAGCAT3’, mutant reverse primer: 5’AGGGGAGGAGTGGAAGGTGG3’). Homozygosity for the tRNA (n-Tr20J/J) mutation was confirmed by genotyping (Ishimura et al., 2014). For transgene rescue experiments, B6J.Tg(n-Tr20wt); Gtpbp1-/- mice were generated by crossing B6J.Gtpbp1+/- mice to B6J-Tg(n-Tr20wt) mice that transgenically express wild-type levels of wild type n-Tr20 (Ishimura et al., 2014) and then backcrossing to B6J.Gtpbp1-/+ mice. C57BL/6J (B6J) and B6J.Gcn2-/- (Eif2ak4tm1.2Dron) mice were obtained from The Jackson Laboratory. Neurological defects were observed in B6J.Gtpbp1-/- and B6J-Gtpbp2-/ males and females; therefore, mice of both sexes were used for experiments. The Jackson Laboratory Animal Care and Use Committee and the University of California San Diego Animal Care and Use Committee approved all mouse protocols (animal protocol number S15286).
 
-## Rapamycin treatment
+### Rapamycin treatment
 
 Rapamycin (LC laboratories) stock solution (50 mg/ml) was prepared in ethanol and diluted on the day of injection in equal volumes of a 10% PEG-400/8% ethanol solution and 10% Tween-80. Mice were injected intraperitoneally with 5 mg/kg rapamycin or vehicle daily; injections were performed from P14-P21 for tissue collection (RNA isolation or western blotting) or from P14-P28 or P28-P42 for histological analysis.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Anesthetized mice were transcardially perfused with 4% paraformaldehyde (PFA) for immunofluorescence, 10% neutral buffered formalin (NBF) for in situ hybridization or immunofluorescence, or Bouin’s fixative for histology. Tissues were post-fixed overnight and embedded in paraffin. For histological analysis, sections were deparaffinized, rehydrated, and were stained with hematoxylin and eosin according to standard procedures. Histological slides were imaged using a digital slide scanner (Hamamatsu).
 
@@ -105,42 +449,42 @@ For quantification of cerebellar granule cells, the total number of granule cell
 
 For immunofluorescence, antigen retrieval on deparaffinized PFA-fixed sections was performed by microwaving sections in 0.01M sodium citrate buffer (pH 6.0, 0.05% Tween-20), three times for three minutes each. NBF-fixed sections were microwaved three times for three minutes, followed by two times for nine minutes. PFA- or NBF-fixed sections were incubated with the following primary antibodies: rabbit anti-cleaved caspase 3-D175 (Cell Signaling, #9661, 1:100, PFA-fixed tissue), CTIP2/BCL11B (Abcam, ab18465, 1:500, PFA-fixed tissue), p-S6240/244 (Cell Signaling, #5364, 1:1000, NBF-fixed tissue), and RPS6 (Santa Cruz Biotechnology, sc-74459, 1:500, NBF-fixed tissue). Detection of primary antibodies was performed with goat anti-mouse Alexa Fluor-488, goat anti-rabbit Alexa Fluor-488, goat anti-rat Alexa Fluor-555, and goat anti-rabbit Alexa Fluor-555 secondary antibodies (Invitrogen). Sections were counterstained with DAPI, and treated with Sudan black to quench autofluorescence.
 
-## RNAscope (in situ hybridization)
+### RNAscope (in situ hybridization)
 
 In situ hybridization of Gtpbp1, Gtpbp2, Sesn2, Slc7a1, Ddr2 and Chac1 probes was performed as per the manufacturer’s protocol (RNAscope Multiplex Fluorescent Reagent Kit v2; Advanced Cell Diagnostics). Briefly, deparaffinized NBF-fixed sections were treated for 15 min with Target Retrieval Reagent at 100 °C and subsequently treated with Protease Plus for 30 min at 40 °C. RNAscope probes were hybridized for 2 hr. TSA Plus Cyanine 5 (PerkinElmer, 1:1000) was used as a secondary fluorophore for C1 probes (Gtpbp2, Slc7a1, Chac1) and TSA Plus Cyanine 3 (PerkinElmer, 1:2000) was used as a secondary fluorophore for C2 probes (Gtpbp1, Sesn2, Ddr2).
 
-## Reverse transcription, quantitative PCR, and genomic PCR analysis
+### Reverse transcription, quantitative PCR, and genomic PCR analysis
 
 Cerebella or hippocampi were isolated and immediately frozen in liquid nitrogen. Total RNA was extracted with Trizol reagent (Life Technologies). cDNA synthesis was performed on DNase-treated (DNA-free DNA Removal Kit, Life Technologies AM1906) total RNA using oligo(dT) primers and the SuperScript III First-Strand Synthesis System (Life Technologies). Quantitative RT-PCR (qRT) reactions were performed using iQ SYBR Green Supermix (Bio-Rad) and a CFX96 Real-Time PCR Detection System (Bio-Rad). Reactions were performed with primers previously published (Ishimura et al., 2016). Expression levels of the genes of interest were normalized to β-actin (Actb) (forward primer: 5’GGCTGTATTCCCCTCCATCG3’, reverse primer: 5’ CCAGTTGGTAACAATGCCATGT3’) using the 2-ΔΔCT method (Livak and Schmittgen, 2001) and expressed as fold change + standard error of the mean (SEM) relative to control (B6J).
 
-## RNA-Seq library preparation
+### RNA-Seq library preparation
 
 Cerebella from various strains were isolated from 3-week-old mice (P21, n = 3 mice for each genotype) and immediately frozen in liquid nitrogen. RNA-Seq libraries were prepared using the TruSeq v2 mRNA kit (Illumina). Briefly, total cerebellar RNA was isolated and RNA quality was assessed on an Agilent TapeStation. mRNA was purified using biotin-tagged poly(dT) oligonucleotides and streptavidin-coated magnetic beads. After fragmentation of mRNA, libraries were prepared according to the manufacturer’s instructions. Paired end reads (2 × 100 bp) were obtained using the HiSeq 4000 (Illumina).
 
-## Ribosome profiling library construction
+### Ribosome profiling library construction
 
 Ribosome profiling libraries were generated as previously described (Ingolia et al., 2012; Ishimura et al., 2014) with some minor modifications. Briefly, dissected cerebella were immediately frozen in liquid nitrogen. One cerebellum from P21 mice was used for each biological replicate, and three biological replicates were prepared for each genotype. Tissue homogenization was performed with a mixer mill (Retsch MM400) in 350 µl lysis buffer (20 mM Tris-Cl, pH 8.0, 150 mM NaCl, 5 mM MgCl2, 1 mM DTT, 100 µg/ml CHX, 1% (v/v) TritonX-100, 25 units/ml Turbo DNaseI). Lysates were treated with RNase I and overlaid on top of a sucrose cushion in 5 ml Beckman Ultraclear tubes and centrifuged in an SW55Ti rotor for 4 hr at 4°C at 46,700 rpm. Pellets were resuspended and RNA was extracted using the miRNeasy kit (QIAGEN) according to the manufacturer’s instructions. 26–34 nucleotide RNA fragments were purified by electrophoresis on a 15% denaturing polyacrylamide gel. Linker addition, cDNA generation (first-strand synthesis was performed at 50°C for 1 hr), circularization, rRNA depletion, and amplification of cDNAs with indexing primers were performed. Library quality and concentration were assessed using High Sensitivity D1000 ScreenTapes on the Agilent TapeStation, Qubit 2.0 Fluorometer, and qPCR. Libraries were run on a HiSeq4000 (SR75).
 
-## RNA-Seq data analysis
+### RNA-Seq data analysis
 
 Reads were quantified using kallisto version 0.42.4 (Bray et al., 2016) and pseudo-aligned to a Gencode M20 transcriptome reference with parameters –bias and -b 100. Differential expression was performed using sleuth version 0.30.0 (Pimentel et al., 2017). To identify differentially expressed genes the following pairwise comparisons were performed: B6J vs. B6J.Gtpbp1-/-, B6J vs. B6J-Gtpbp2-/-, and B6J.Gtpbp1-/- vs. B6J-Gtpbp2-/-. Using functions within sleuth, we aggregated transcript expression at the gene level (by Ensembl gene identifier), fit null models and models corresponding to the genotype of the samples for each gene, and performed Wald tests on the models for each gene to identify differentially expressed genes. Multiple hypothesis testing correction was done using a Benjamini-Hochberg correction, which is the default method in sleuth and referred to as q-value. For downstream TE analysis, mapping to mm10 using a Gencode M20 transcript annotation was performed using hisat2 version 2.1.0 (Kim et al., 2019) using default parameters.
 
-## Ribosome profiling data analysis
+### Ribosome profiling data analysis
 
 Reads were clipped to remove adaptor sequences (CTGTAGGCACCATCAAT) using fastx_clipper and trimmed so that reads start on the second base using fastx_trimmer (http://hannonlab.cshl.edu/fastx_toolkit/). Reads containing ribosomal RNA were then filtered out by mapping to a ribosomal RNA reference using bowtie2 version 2.2.3 using parameters -L 13 (Langmead and Salzberg, 2012). Remaining reads were mapped to a mm10 mouse reference using a Gencode M20 annotation, or a Gencode M20 transcript reference using hisat2 version 2.1.0 (Kim et al., 2019). Ribosomal A-sites were identified using RiboWaltz version 1.0.1 (Lauria et al., 2018), and read lengths 29–33 were retained for further analysis. Observed/expected reads were calculated with the expected reads being the read density expected at a given site with a given codon, assuming that reads are uniformly distributed across the coding part of the transcript. Pauses were identified using previous methodology (Ishimura et al., 2014) using a 0.5 reads/codon in all samples to threshold transcripts to analyze. Correlation between gene pauses and gene expression was calculated by taking the average pause scores of transcripts associated with a gene for transcripts with ≥0.5 reads/codon across the B6J.Gtpbp1-/- samples. The sum of these pause scores across all replicates was then correlated with the sleuth beta values (in the B6J.Gtpbp1-/- vs. B6J comparison) for genes that passed the reads/codon thresholding in the ribosome profiling datasets.
 
 Read counts for translational efficiency (TE) analysis were quantified using featureCounts (Liao et al., 2014) with footprints overlapping CDS features and RNA read pairs overlapping gene exon features. Histone mRNAs were removed from the analysis by removing gene names with the prefix ‘Hist’ and filtering out genes in HistoneDB 2.0 (Draizen et al., 2016). Differential TE analysis was performed using riborex version 2.3.4 using the DESeq2 engine (Li et al., 2017). TE analysis of AGA A-site filtered datasets was performed by identifying AGA codons in the transcriptome and transferring the coordinates to the genome using ensembldb v.2.6.8 (Rainer et al., 2019). Then reads with AGAs in the A-site (±1 codon based on riboWaltz A-site offset for each read length) were removed and the above TE analysis was performed. A list of mouse genes with known TOP motifs were identified in Yamashita et al., 2008.
 
-## Gene ontology (GO) and pathway analysis
+### Gene ontology (GO) and pathway analysis
 
 RNA-sequencing data were analyzed using Ingenuity Pathway Analysis (QIAGEN Inc, https://www.qiagenbioinformatics.com/products/ingenuity-pathway-analysis). Gene Ontology (GO) pathway analysis was performed using the DAVID bioinformatics web server (http://david.abcc.ncifcrf.gov) by uploading the gene lists from our ribosome profiling analysis (AGA pausing genes, z ≥ 10, stalls detected in any biological replicates). ﻿The functional annotation chart and clustering analysis modules were utilized for gene-term enrichment analysis, and terms with a Benjamini-Hochberg adjusted p-value≤0.05 were considered enriched.
 
-## Western blotting
+### Western blotting
 
 Cerebella or hippocampi were isolated and immediately frozen in liquid nitrogen. Proteins were extracted by homogenizing tissue in 5 volumes of RIPA buffer with cOmplete Mini, EDTA-free Protease Inhibitor Cocktail (Roche), sonicated two times for 10 s (Branson, 35% amplitude), incubated for 30 min at 4°C, centrifuged at 16,000xg for 25 min, and 25 µg of whole protein lysate were resolved on SDS-PAGE gels prior to transfer to PVDF membranes (GE Healthcare Life Sciences, #10600023) using a tank blotting apparatus (BioRad).
 
 For detection of phosphoproteins, frozen tissue samples were homogenized in 5 volumes of homogenization buffer (50 mM HEPES/KOH, pH 7.5, 140 mM potassium acetate, 4 mM magnesium acetate, 2.5 mM dithiothreitol, 0.32M sucrose, 1 mM EDTA, 2 mM EGTA) (Carnevalli et al., 2004), supplemented with phosphatase and protease inhibitors (PhosStop and cOmplete Mini, EDTA-free Protease Inhibitor Cocktail, Roche). Lysate samples were centrifuged at 12,000xg for 7 min, and either 30 µg (detection of ribosomal protein S6) or 70 µg (detection of eIF2alpha) of whole protein lysate were resolved on SDS-PAGE gels prior to transfer to PVDF membranes. After blocking in 5% nonfat dry milk (Cell Signaling, #9999S), blots were probed with primary antibodies at 4°C overnight: rabbit anti-phospho-S6240/244 (Cell Signaling, #5364, 1:4000), mouse anti-RPS6 (Santa Cruz Biotechnology, sc-74459, 1:2000), rabbit anti-phospho-eIF2alphaS51 (Cell Signaling, #9721, 1:1000), rabbit anti-eIF2alpha (Cell Signaling, #9722, 1:2000), mouse anti-vinculin (Sigma, V-9131, 1:20,000). Followed by incubation with HRP-conjugated secondary antibodies for 2 hr at room temperature: goat anti-rabbit IgG (BioRad, #170–6515) or goat anti-mouse IgG (BioRad, #170–6516). Signals were detected with SuperSignal West Pico Chemiluminescent Substrate (ThermoScientific, #34080).
 
-## Statistics
+### Statistics
 
 For quantification of protein expression, RNA expression, or histological quantifications, p-values were computed in GraphPad Prism using either multiple t-tests, one-way ANOVA, or two-way ANOVA, and corrected for multiple comparisons as indicated in the figure legends. All quantifications were performed with at least three mice of each genotype and time point. Neurological defects were observed in B6J.Gtpbp1-/- and B6J-Gtpbp2-/- male and female mice. Therefore, mice of both sexes were used for experiments.

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.40266.001 Nephron segmentation involves a concert of genetic and molecular signals that are not fully understood. Through a chemical screen, we discovered that alteration of peroxisome proliferator-activated receptor (PPAR) signaling disrupts nephron segmentation in the zebrafish embryonic kidney ( Poureetezadi et al., 2016 ). Here, we show that the PPAR co-activator ppargc1a directs renal progenitor fate. ppargc1a mutants form a small distal late (DL) segment and an expanded proximal straight tubule (PST) segment. ppargc1a promotes DL fate by regulating the transcription factor tbx2b, and restricts expression of the transcription factor sim1a to inhibit PST fate. Interestingly, sim1a restricts ppargc1a expression to promote the PST, and PST development is fully restored in ppargc1a/sim1a -deficient embryos, suggesting Ppargc1a and Sim1a counterbalance each other in an antagonistic fashion to delineate the PST segment boundary during nephrogenesis. Taken together, our data reveal new roles for Ppargc1a during development, which have implications for understanding renal birth defects.
+Nephron segmentation involves a concert of genetic and molecular signals that are not fully understood. Through a chemical screen, we discovered that alteration of peroxisome proliferator-activated receptor (PPAR) signaling disrupts nephron segmentation in the zebrafish embryonic kidney (Poureetezadi et al., 2016). Here, we show that the PPAR co-activator ppargc1a directs renal progenitor fate. ppargc1a mutants form a small distal late (DL) segment and an expanded proximal straight tubule (PST) segment. ppargc1a promotes DL fate by regulating the transcription factor tbx2b, and restricts expression of the transcription factor sim1a to inhibit PST fate. Interestingly, sim1a restricts ppargc1a expression to promote the PST, and PST development is fully restored in ppargc1a/sim1a-deficient embryos, suggesting Ppargc1a and Sim1a counterbalance each other in an antagonistic fashion to delineate the PST segment boundary during nephrogenesis. Taken together, our data reveal new roles for Ppargc1a during development, which have implications for understanding renal birth defects.
 
 ## Introduction
 
@@ -34,21 +34,61 @@ Here, we report the discovery that ppargc1a has essential roles during nephron s
 
 ## Results
 
-## Bioactive small molecule chemical genetic screen reveals that alteration of PPAR signaling leads to changes in embryonic nephron segmentation
+### Bioactive small molecule chemical genetic screen reveals that alteration of PPAR signaling leads to changes in embryonic nephron segmentation
 
 Chemical genetic screening is an efficient method used to employ the strengths of the zebrafish as a model organism to study a wide range of biological processes (North et al., 2007; Garnaas et al., 2012; Nissim et al., 2014; Poureetezadi et al., 2014). By applying different compounds to embryonic zebrafish, one is able to identify novel regulators in a high-throughput manner (Poureetezadi and Wingert, 2016). In a chemical genetic screen of known bioactive compounds, we identified novel regulators of zebrafish pronephros segmentation using a riboprobe cocktail to survey alternating tubule populations (Poureetezadi et al., 2016). One class of identified hits was compounds known to alter the activity of PPAR signaling (Figure 1—figure supplement 1A,B). For example, bezafibrate, a PPAR alpha agonist, was found to reduce the length of the PCT and DE tubule segments, suggesting alterations in processes such as the patterning, growth or cell turnover in the developing nephron (Figure 1—figure supplement 1A,B). Treatment with two PPAR gamma antagonists, BADGE and GW-9662, was associated with an increased DE; further, GW-9662 treatment was also scored as leading to a PCT segment increase (Figure 1—figure supplement 1A,B). These results similarly suggested that alterations in PPAR signaling could modulate nephron segmentation.
 
 To further explore the PPAR pathway result, we collected wild-type (WT) zebrafish embryos and then treated them with dimethyl sulfoxide (DMSO) vehicle control or 150 μM bezafibrate/DMSO from the 5 hpf stage (approximately 50% epiboly) until the 28 somite stage (ss) when the nephron is fully segmented. After removing the drug, embryos were fixed and whole mount in situ hybridization (WISH) was performed to specifically assess formation of each individual nephron tubule segment. For this, we utilized riboprobes to detect transcripts encoding: slc20a1a, to mark the PCT; trpm7, to mark the PST; slc12a1, to mark the DE; and slc12a3, to mark the DL (Wingert et al., 2007). Embryos incubated with bezafibrate displayed a significantly increased length of the PST segment and a reduced DL segment compared to WT controls (Figure 1A,B). In contrast, there were no significant changes in the length of either the PCT or DE segments (Figure 1—figure supplement 1C). This set of phenotypes was present in the majority of embryos (Figure 1—figure supplement 1D). These findings indicated that emergence of the PST and DL segment populations can be modulated by changes in PPAR signaling, and suggested that some component(s) of the PPAR network might normally serve as renal regulators during nephrogenesis.
 
-## ppargc1a is dynamically expressed in the developing zebrafish embryonic kidney
+![Figure 1.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig1-v2.jpg)
+
+**Figure 1.:** (A) Double WISH at the 28 ss for the PST segment marker trpm7 (top), and the DL segment marker slc12a3 (bottom), with smyhc (red) to mark somites in DMSO control (left) and PPAR agonist, 150 μM Bezafibrate-treated (right) samples confirmed the initial hit from the chemical screen. Scale bar = 90 μm. (B) Absolute length measurements of the changes to pronephros segment lengths in bezafibrate treated (grey) and control samples (black). (C) Double WISH for ppargc1a (purple) expression at the 8 ss, 20 ss, and 28 ss with somites stained (red) (8 ss = deltaC, 20 ss and 28 ss = smyhc). (D) Double FISH at the 28 ss showing colocalization of ppargc1a (red) with slc12a1 (distal early, left) and slc12a3 (DL, right). Expression boundaries are indicated with blue (DE, left and DL, right) and white (ppargc1a) arrowheads. Scale bars = 35 μm. Data are represented as ±SD, significant by t test comparing the drug treatment to the DMSO vehicle control, n.s. = not significant, *** = p < 0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Treatment with 150 μM bezafibrate does not alter two of the four segment boundaries at the 28 ss. (A) Table of hits from the initial chemical genetic screen that target the PPAR pathway (B) WISH for wt1b (podocytes), slc20a1a (PCT), and slc12a1 (DE) in 28 ss zebrafish treated with chemicals targeting the PPAR pathway. (C) Treatment with 150 μM bezafibrate does not alter two of the four segment boundaries at the 28 ss. Double WISH showing no change in the boundary of slc20a1a or slc12a1, markers for PCT and DE, respectively, in DMSO control treated embryos and treated embryos. smyhc (red) marks the somites. Scale bars = 70 μm. (D) Penetrance graph showing the percent of phenotypes observed (green = increase, red = decrease, and black = WT) in control and treated samples. Data are represented as ±SD.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Additional time points of ppargc1a (purple) mRNA expression illustrating the restricting domain from the 20 ss to the 28 ss. deltaC (12 ss) and smyhc (22–27 ss) were used to stain somites (red). ppargc1a mRNA expression at 30 hpf with a 20 X inset to show light proximal expression detectable at this stage. Scale bar = 90 μm. (B) Lateral (left) and flat-mounted dorsal (right) images of double WISH in 15 ss WT embryos for ppargc1a (purple) in and smyhc (red). The box indicates the approximate region of panel C. Scale bars = 110 μm (lateral) and 200 μm (dorsal flat-mount). (C) Double FISH in 15 ss WT embryos showing colocalization of ppargc1a (red, left) with pax2a (green, middle) and the images merged (right) with DAPI (blue). Scale bars = 100 μm.
+
+### ppargc1a is dynamically expressed in the developing zebrafish embryonic kidney
 
 Intrigued by these results, we next sought to identify whether the expression of any PPAR signaling components would situate them as possible candidates for involvement in nephron development. We surveyed online expression repositories and published literature and found that transcripts encoding ppargc1a/PGC-1α have been detected in nascent nephrons within the developing zebrafish pronephros and the mouse metanephros (Bertrand et al., 2007; Thisse and Thisse, 2008; Diez-Roux et al., 2011; Ai et al., 2017; Finger et al., 2017). To further investigate this, we performed WISH on WT embryos and assessed the spatiotemporal patterns of ppargc1a expression throughout the stages of zebrafish pronephros ontogeny. ppargc1a transcripts were expressed in a pattern suggesting their presence in the entire populace of the developing intermediate mesoderm at the 8 ss, followed by a caudal restriction at the 20 ss before localizing to the distal segments at the 28 ss (Figure 1C, Figure 1—figure supplement 2). At the 30 hpf time point, weak expression levels of ppargc1a transcripts were detected in the proximal tubule as well (Figure 1—figure supplement 2A).
 
 To confirm that ppargc1a was expressed in renal precursors, we employed double fluorescent WISH (FISH) and confocal imaging in WT embryos. At the 15 ss, ppargc1a transcripts were co-localized in the entire domain of cells that expressed transcripts encoding the intermediate mesoderm marker paired box 2a (pax2a) (Figure 1—figure supplement 2B,C) (Krauss et al., 1991; Püschel et al., 1992). By the 28 ss, ppargc1a transcripts were colocalized only in cells that expressed the distal segment markers slc12a1 and slc12a3, indicating restriction to the DE and DL, respectively (Figure 1D). These data provide strong evidence that renal progenitors, followed by segment precursors and eventually differentiated distal segments, express ppargc1a. Based on the evidence that ppargc1a is dynamically expressed in the developing nephron, we hypothesized that it was involved in segment patterning.
 
-## ppargc1a is necessary for proper formation of proximal and distal segment boundaries
+### ppargc1a is necessary for proper formation of proximal and distal segment boundaries
 
 To define whether ppargc1a is essential for nephrogenesis, we designed several parallel strategies to perform loss of function studies. The ppargc1a locus is comprised of a series of 12 exons (Figure 2A), and these encode a peptide that shares high sequence similarity, particularly in key functional domains, to mouse and human PGC-1α (Figure 2—figure supplement 1) (Puigserver and Spiegelman, 2003). Four distinct locations of the ppargc1a sequence were targeted for experimental manipulation (Figure 2A, Figure 2—figure supplement 1) in order to disrupt transcriptional processing or translation. First, we obtained a ppargc1a genetic knockout line (ppargc1asa13186), which encodes a T->A substitution located in exon seven that results in a premature STOP codon and eliminates a series of essential peptide domains (Figure 2A) (ZIRC - Eugene, Oregon; Busch-Nentwich et al., 2013). Sequencing confirmed the mutation and we developed a genotyping assay, which utilizes PCR amplification followed by NdeI restriction fragment length polymorphism digest analysis where the enzyme can cut the WT but not the mutant allele (Figure 2—figure supplement 2D). Second, we developed genetic models of ppargc1a deficiency using morpholinos (MOs). These included a translation blocking MO (MO1) (Hanai et al., 2007; Bertrand et al., 2007) and two splice blocking MOs (SB MO1, SB MO2) that we designed and subsequently validated through microinjection and RT-PCR studies in WT embryos (Figure 2A, Figure 2—figure supplements 3 and 4).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig2-v2.jpg)
+
+**Figure 2.:** (A) Exon map of zebrafish ppargc1a and the target sites (X) for morpholinos (MO) and the location of the ppargc1asa13186 mutant allele. (B) WISH images of 28 ss ppargc1asa13186 WT siblings (WT), ppargc1asa13186-/-, ppargc1a MO1 injected, and ppargc1asa13186-/- + ppargc1a cRNA illustrating the changes in PST (trpm7-purple, top) and DL (slc12a3-red, bottom) formation in the ppargc1asa13186-/- and ppargc1a morphants, and the subsequent rescue when ppargc1a cRNA was added to the ppargc1asa13186-/-. Scale bars = 100 μm. Absolute length measurements of the PST (C), and DL (D) segments. (E) ppargc1a expression in DMSO control (top) and 150 μM bezafibrate-treated (bottom) zebrafish at the 28 ss following vehicle or vehicle/drug addition at the 5 hpf stage. Scale bars = 65 μm. (F) Absolute length measurements of the ppargc1a expression domain at 28 ss in DMSO control and bezafibrate-treated embryos from panel E. (G) qRT-PCR results showing ppargc1a RNA expression levels in bezafibrate-treated samples compared to DMSO controls. Data are represented as ±SD, significant by t test, n.s. = not significant, ** = p < 0.01, *** = p < 0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Sequence alignment illustration of zebrafish (top), mouse (middle), and human Ppargc1a amino acids. Black background indicates conservation among species. Conserved protein functional domains are indicated with color labeling and lines to demarcate their locales.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Double or single WISH for the PCT (slc20a1a) and the DE (slc12a1) for WT, ppargc1a MO1 injected, and ppargc1asa13186-/- do not indicate a change in the domain length of either segment marker at the 28 ss. Scale bar = 70 μm. Absolute length measurements for the PCT (B) and DE (C). Data are represented as ±SD, significant by t test, n.s. = not significant. (D) Schematic showing the details of a genotyping assay performed to identify ppargc1asa13186-/-.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) WISH for slc12a3 (DL) in 28 ss WT (top) and splice blocking (SB) MO1 (bottom) with the graph (B) showing absolute length measurements of representative samples. Scale bar = 100 μm. (C) RT-PCR analysis revealed disrupted splicing of ppargc1a at the target site specified on the exon map schematic. Data are represented as ±SD, significant by t test, *** = p < 0.001.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) WISH for slc12a3 (DL) in 28 ss WT (top) and splice blocking (SB) MO2 (bottom) with the graph (B) showing absolute length measurements of representative samples. Scale bar = 100 μm. (C) RT-PCR analysis revealed disrupted splicing of ppargc1a at the target site specified on the exon map schematic. Data are represented as ±SD, significant by t test, *** = p < 0.001.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Various time points for chemical addition in DMSO control (left) and 150 μM bezafibrate (right) treated 28 ss zebrafish after WISH for ppargc1a. Scale bars = 60 μm. (B) The absolute measurement of ppargc1a domain length in DMSO control compared to 150 μM bezafibrate treated at the various time points of addition. Note: 5 hpf time of addition data is depicted here for statistical comparison in addition to Figure 2F. (C) WISH for ppargc1a expression at 15 ss in DMSO control and 150 μM bezafibrate treated (5 hpf - 15 ss) zebrafish. Scale bar = 100 μm. (D) WISH for slc12a3 (DL) in DMSO control and 150 μM bezafibrate treated (top) and DMSO control +ppargc1 a cRNA and 150 μM bezafibrate treated +ppargc1 a cRNA (bottom). (E) Absolute measurements of slc12a3 domain length. Scale bars = 100 μm. Data are represented as ±SD, significant by ANOVA (B) or t test (E), n.s. = not significant, * = p < 0.05, *** = p < 0.001.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) WISH for tubule marker cdh17 in 28 ss WT, ppargc1a MO1, ppargc1asa13186-/-, DMSO control, and 150 μM bezafibrate-treated zebrafish. Scale bar = 75 μm. (B) Absolute length measurements of cdh17 in the various treatment groups. (C) Body length absolute measurements from the head/yolk sac boundary to the tip of the cdh17 stain (approximate collecting duct area). Data are represented as ±SD, and comparisons between all groups were not significant by t test.
 
 The ppargc1a mutant and knockdown reagents were then utilized to evaluate nephron segment development. Embryos were collected from pairwise matings of ppargc1asa13186+/- adult carriers and fixed at the 28 ss. For the knockdowns, WT embryos were microinjected at the one-cell stage with either MO1, SB MO1 or SB MO2 and similarly fixed at the 28 ss. WISH was completed on the ppargc1a-deficient embryo cohorts using segment-specific riboprobes to assess formation of the PCT, PST, DE and DL. Both ppargc1asa13186-/-mutants and knockdown embryos had a significantly expanded PST segment and a significantly decreased DL segment (Figure 2B–D, Figure 2—figure supplements 3 and 4). In contrast, there were no significant changes in PCT or DE segment formation (Figure 2—figure supplement 2A–C).
 
@@ -56,27 +96,67 @@ To further verify the specificity of the phenotypes, we performed rescue studies
 
 Next, we explored whether there was a connection between the outcomes of bezafibrate treatment and ppargc1a loss of function during nephron segmentation. Previous publications have reported that PPAR agonists, including bezafibrate, can cause an increase or decrease of ppargc1a/PGC1a expression in cells and tissues in a context-dependent manner (Pardo et al., 2011; Liao et al., 2010; Sanoudou et al., 2010; Goto et al., 2017; Wang and Moraes, 2011). Since bezafibrate treatment and ppargc1a deficiency caused matching segment phenotypes, we hypothesized that bezafibrate decreased ppargc1a expression in renal progenitors. To test this, WT embryos were treated with either vehicle control or 150 μM bezafibrate/DMSO beginning at different developmental times (4 hpf, 5 hpf, 6 hpf, 8 hpf, 9 hpf, 10 hpf, 5 ss and 10 ss), incubated until the 28 ss, and then WISH was performed. Compared to WT controls, bezafibrate treatment resulted in a significant decrease in the expression domain of ppargc1a in the pronephros when the drug was added between 4 and 9 hpf (Figure 2E,F, Figure 2—figure supplement 5A,B). Next, we explored whether the ppargc1a expression domain was altered at the 15 ss when it is normally expressed in the pax2a+ renal progenitor domain. Embryos were treated with DMSO vehicle or 150 μM bezafibrate/DMSO at the 5 hpf stage, and then fixed at 15 ss for WISH. Interestingly, the ppargc1a expression domain in renal progenitors at 15 ss was not altered by the bezafibrate treatment (Figure 2—figure supplement 5C). We also performed qRT-PCR on pools of 28 ss embryos treated with DMSO vehicle or 150 μM bezafibrate/DMSO at the 5 hpf stage to quantify ppargc1a expression levels. There was no significant difference in total ppargc1a mRNA levels between WT and bezafibrate-treated embryos (Figure 2G). Furthermore, we found that ppargc1a RNA overexpression was not sufficient to rescue DL development at the 28 ss in embryos treated with bezafibrate at the 5 hpf stage (Figure 2—figure supplement 5D,E). Additionally, we assessed the overall morphology as well as pronephros formation in 28 ss embryos treated with bezafibrate or vehicle control at the 5 hpf, as well as wild-type and ppargc1a-deficient embryos (Figure 2—figure supplement 6). Analysis of body length and pronephros length, the latter through WISH to detect expression of the pan-tubule and duct marker cdh17, showed no statistically significant differences between the groups (Figure 2—figure supplement 6). Taken together, these results are consistent with the notion that the ppargc1a expression domain is reduced in bezafibrate-treated embryos because the DL is reduced, and not specifically due to the loss of ppargc1a activity.
 
-## Loss of ppargc1a does not change cellular turnover in the developing nephrons
+### Loss of ppargc1a does not change cellular turnover in the developing nephrons
 
 Segmentation of the renal progenitors in the intermediate mesoderm occurs from the early somitogenesis stages through to the 28 ss based on the detection of molecularly distinct regions that emerge and then show dynamic alterations over this developmental time period, all while the renal progenitors are also undergoing a mesenchymal to epithelial transition (Wingert et al., 2007; Wingert and Davidson, 2011; Li et al., 2014; Gerlach and Wingert, 2014; McKee et al., 2014; Kroeger and Wingert, 2014; Cheng and Wingert, 2015; Marra and Wingert, 2016; Drummond et al., 2017; Poureetezadi et al., 2016). The proliferation and caudal migration of renal precursors has also been reported to impact pronephros segment size (Naylor et al., 2016). To this end, we wanted to determine when the loss of ppargc1a first presented significant changes to the emerging segment domains, and to address if these changes were coincident with alterations in cellular dynamics in the nephron field.
 
 A series of WISH studies were performed with PST and DL markers to compare these emerging segment populations in WT controls and ppargc1a-deficient embryos (Figure 3). We found that the earliest time point of divergence between WT and ppargc1a-deficient embryos occurred at the 20 ss, when there was a distinction in the expression domain of both the PST marker trpm7 and DL marker slc12a3 (Figure 3A–D, Figure 3—figure supplement 1). ppargc1a-deficient embryos displayed a significant increase in the emerging PST length and a significant decrease in the emerging DL length (Figure 3A–D). These changes correlate with the result that ppargc1a mutants and morphants exhibit a longer PST and shortened DL when segmentation is completed (Figure 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig3-v2.jpg)
+
+**Figure 3.:** (A) WISH at the 20 ss for trpm7 (left) and (B) slc12a3 (right) in WT (top) and ppargc1a MO (bottom). Blue arrowheads indicate trpm7 expression in the developing pronephros. Scale bar = 100 μm. The representative graphs showing absolute length measurements of trpm7 (C) and slc12a3 (D). (E) FISH/IHC for trpm7 (red) and anti-Caspase-3 (green) with DAPI (blue) in WT (top) and ppargc1a MO1 (bottom). (F) FISH/IHC for trpm7 (red) and anti-phospho-Histone H3 (green) in WT (top) and ppargc1a MO1 (bottom). (G) FISH/IHC for slc12a3 (red) and anti-Caspase-3 (green) with DAPI (blue) in WT (top) and ppargc1a MO1 (bottom). (H) FISH/IHC for slc12a3 (red) and anti-phospho-Histone H3 (green) with DAPI (blue) in WT (top) and ppargc1a MO1 (bottom). (I) The number of trpm7/Caspase-3 or trpm7/pH3 double-positive cells is depicted. (J) The number of slc12a3/Caspase-3 or slc12a3/pH3 double positive cells is depicted. (WT quantifications = black bars, ppargc1a-deficient quantifications = white bars.) Data are represented as ±SD, significant by t test, n.s. = not significant, *** = p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Double WISH for slc12a3 (purple) and smyhc (red) in WT and ppargc1a MO1 injected zebrafish. Scale bars = 100 μm. (B) Graph indicating the slc12a3 domain length in relation to age (in ss) in WT (black) and MO1 injected (white).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** trpm7 (red) with DAPI (blue) on bottom, anti-Caspase-3 (green) with DAPI (blue) middle, and merge on top. Scale bar = 30 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** trpm7 (red) with DAPI (blue) on bottom, anti-pH3 (green) with DAPI (blue) middle, and merge on top. Scale bar = 30 μm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** slc12a3 (red) with DAPI (blue) on bottom, anti-Caspase-3 (green) with DAPI (blue) middle, and merge on top. Scale bar = 30 μm.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** slc12a3 (red) with DAPI (blue) on bottom, anti-pH3 (green) with DAPI (blue) middle, and merge on top. Scale bar = 30 μm.
+
 At this pivotal 20 ss time point, we then sought to identify whether either of these changes were associated with regional fluctuations in cell birth or death. To assess this, we combined FISH with whole mount immunohistochemistry and confocal imaging to assess the PST and DL. WT control and ppargc1a-deficient embryos were fixed at the 20 ss and nephron cells were detected based on trpm7 (PST) or slc12a3 (DL) transcripts in combination with either anti-Caspase-3 to detect cell death or anti-phospho-Histone H3 (anti-pH3) to label proliferating cells (Kroeger et al., 2017). The results showed that there was no significant difference between WT and ppargc1a-deficient embryos in the number of trpm7+/anti-Caspase-3+ cells (Figure 3E,I, Figure 3—figure supplement 2) or slc12a3+/anti-Caspase-3+ cells (Figure 3G,J, Figure 3—figure supplement 4). Quantification of trpm7+/pH3+ cell number (Figure 3F,I, Figure 3—figure supplement 3) and slc12a3+/pH3+ cell number (Figure 3H,J, Figure 3—figure supplement 5) also showed that there was no statistically significant difference between WT and ppargc1a-deficient groups. The results from these experiments suggest that there are no significant changes in cellular turnover driving the PST and DL segment boundary changes that occur in ppargc1a-deficient embryos.
 
-## ppargc1a promotes DL segment formation by positively regulating the expression domain of the tbx2b transcription factor in nephron precursors
+### ppargc1a promotes DL segment formation by positively regulating the expression domain of the tbx2b transcription factor in nephron precursors
 
 To gain insight into how ppargc1a influences nephron segmentation, we next explored its relationship with the T-box transcription factor tbx2b, which was recently shown to be essential for DL formation (Drummond et al., 2017). Transcripts encoding tbx2b are highly expressed in the distal regions of the zebrafish pronephros, and loss of tbx2b results in a significantly decreased DL segment size (Drummond et al., 2017). To test the relationship between ppargc1a and tbx2b, WISH was performed on ppargc1a deficient embryos to assess tbx2b expression. Compared to WT controls, the tbx2b expression domain in the nephron was significantly reduced in ppargc1asa13186-/- mutants (Figure 4A,B) as well as ppargc1a morphants (data not shown). These results led us to hypothesize that loss of tbx2b expression underlies the decreased DL segment domain when Ppargc1a activity is compromised. When the reciprocal experiment was performed in tbx2b-deficient embryos (Drummond et al., 2017; Gross and Dowling, 2005), we detected no change in ppargc1a expression (Figure 4C,D), consistent with the notion that ppargc1a is upstream of tbx2b.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig4-v2.jpg)
 
-**Figure 4.:** ppargc1a acts upstream of tbx2b to form the DL segment.(A) WISH for tbx2b (purple) expression in 28 ss WT and ppargc1azebrafish. Scale bars = 75 μm. (sa13186-/-B) Absolute length measurements of tbx2b mRNA expression domains in WT and ppargc1a zebrafish. (sa13186-/-C) ppargc1a expression in WT and tbx2b MO injected 28 ss zebrafish. Scale bars = 65 μm. (D) Absolute length measurements of ppargc1a expression domain in WT and tbx2b MO injected zebrafish. (E) WISH at 28 ss for slc12a3 (purple) in WT, ppargc1a, and sa13186-/-ppargc1a injected with sa13186-/-tbx2b cRNA. Scale bars = 75 μm. (F) Absolute length measurements of slc12a3 mRNA expression domains in WT, ppargc1a, and sa13186-/-ppargc1a + sa13186-/-tbx2b cRNA. Data are represented as ±SD, significant by t test, n.s. = not significant, ** = p < 0.01, and *** = p < 0.001.
+**Figure 4.:** (A) WISH for tbx2b (purple) expression in 28 ss WT and ppargc1asa13186-/-zebrafish. Scale bars = 75 μm. (B) Absolute length measurements of tbx2b mRNA expression domains in WT and ppargc1asa13186-/- zebrafish. (C) ppargc1a expression in WT and tbx2b MO injected 28 ss zebrafish. Scale bars = 65 μm. (D) Absolute length measurements of ppargc1a expression domain in WT and tbx2b MO injected zebrafish. (E) WISH at 28 ss for slc12a3 (purple) in WT, ppargc1asa13186-/-, and ppargc1asa13186-/- injected with tbx2b cRNA. Scale bars = 75 μm. (F) Absolute length measurements of slc12a3 mRNA expression domains in WT, ppargc1asa13186-/-, and ppargc1asa13186-/- + tbx2b cRNA. Data are represented as ±SD, significant by t test, n.s. = not significant, ** = p < 0.01, and *** = p < 0.001.
 
 To test this further, we examined whether overexpression of tbx2b was sufficient to rescue DL development in ppargc1a mutants. tbx2b cRNA was injected at the one-cell stage into clutches obtained from matings of ppargc1asa13186+/- adults, and segmentation was assessed at the 28 ss by WISH using our DL-specific riboprobe followed by genotype analysis (Figure 4E). While ppargc1asa13186-/- mutants displayed the hallmark short DL segment, there was no significant difference in DL length between WT controls and ppargc1asa13186-/- mutants that received tbx2b cRNA, indicating that tbx2b provision had rescued DL segment development (Figure 4E,F). Taken together, these results indicate that Ppargc1a regulates tbx2b, either directly or indirectly, to control formation of the DL segment.
 
-## ppargc1a regulates PST boundary formation through a reciprocally antagonistic relationship with the sim1a transcription factor
+### ppargc1a regulates PST boundary formation through a reciprocally antagonistic relationship with the sim1a transcription factor
 
 During zebrafish embryonic nephron segmentation, sim1a is necessary and sufficient for formation of the PST segment as well as the Corpuscle of Stannius (CS), the latter being an endocrine gland in teleost fish which arises from the intermediate mesoderm, where CS precursors are intermingled with distal segment precursors (Cheng et al., 2015). Thus, we sought to delineate the relationship between ppargc1a and sim1a. To do this, we examined ppargc1a expression in sim1a-deficient embryos in which transcript splicing is abrogated through morpholino knockdown (Figure 5—figure supplement 1) (Löhr et al., 2009; Cheng and Wingert, 2015). Interestingly, we found that the domain of ppargc1a expression in renal progenitors was significantly increased in length in the sim1a-deficient embryos compared to WT controls (Figure 5A,D). This result suggested sim1a was possibly upstream of ppargc1a.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig5-v2.jpg)
+
+**Figure 5.:** (A) WISH for ppargc1a (purple) expression at 28 ss in WT, sim1a MO, and sim1a cRNA injected zebrafish. The green and red dashed lines indicate the beginning and the end of WT expression, respectively, the expansion of the ppargc1a domain in sim1a MO is denoted with asterisks, and the reduction in the ppargc1a domain in sim1a cRNA injected is denoted with arrowheads. Scale bars = 60 μm. (B) WISH for sim1a (purple) and smyhc (red) in 20 ss WT, ppargc1asa13186-/-, and ppargc1a cRNA injected zebrafish. Arrows and the dashed green line represent the beginning of the sim1a domain expression, the red dashed line indicate the end of the WT sim1a expression domain to illustrate the expansion of the segment boundary in ppargc1asa13186-/- is denoted with asterisks, and the reduction of the sim1a domain in ppargc1a cRNA injected is denoted with arrowheads. Scale bar = 40 μm. (C) WISH for trpm7 at 28 ss in WT, sim1a cRNA, and ppargc1a cRNA injected zebrafish. Scale bar = 50 μm (D) Absolute length measurements of the ppargc1a domain in 28 ss in WT, sim1a MO injected, and sim1a cRNA injected zebrafish. (E) Absolute length measurements of the 20 ss sim1a domain in WT, ppargc1asa13186-/-, and ppargc1a cRNA injected zebrafish. (F) Absolute length measurements of the trpm7 domain in the 28 ss WT, sim1a cRNA injected, and ppargc1a cRNA injected zebrafish. (G) WISH for trpm7 (PST segment) in WT, WT + sim1 a MO, ppargc1asa13186-/-, and ppargc1asa13186-/- + sim1a MO zebrafish. The green and red dashed lines indicate the beginning and end of WT trpm7 expression domains respectively. Asterisks represent expanded expression domain. Scale bars = 100 μm. (H) Absolute length measurements for the trpm7 domain in WT, sim1a MO injected, ppargc1asa13186-/-, and ppargc1asa13186-/- sim1a MO injected zebrafish. (I) Expression summary table depicting the segment boundaries and expression domains of ppargc1a and sim1a in WT, sim1a-deficient, ppargc1a-deficient, and double-deficient zebrafish. (J) Genetic model illustrating the relationships supported in this study that ppargc1a works upstream of tbx2b to form the DL and has a cross-repressive relationship with sim1a to properly form the segment boundary of the PST. Data are represented as ±SD, significant by t test, n.s. = not significant, *** = p < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) WISH for previously published sim1a deficient phenotypes including the PST (top - trpm7) and CS (bottom - stc1) in WT (left) and sim1a MO injected (right) zebrafish. Scale bars = 100 μm. (B) RT-PCR showing a larger band in the sim1a MO lane of the gel and a schematic illustrating the results of sequencing the MO injected band verifying disrupted splicing of the sim1a transcripts.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Double WISH for stc1 (purple) and slc12a3 (red) in WT and ppargc1asa13186-/-. The DL was stained as an internal control to ID mutants that were later verified either by sequencing or the restriction enzyme digest previously described. Scale bars = 100 μm (4 x image) and 50 μm (inset). (B) Graph indicating stc1+ cell numbers in WT compared to ppargc1asa13186-/-. (C) WISH at 28 ss for sim1a (purple) in WT (top) and ppargc1a cRNA injected (middle) and double WISH for sim1a (purple) and slc12a3 (red) in ppargc1asa13186-/-. Scale bars = 100 μm (4 x image) and 50 μm (inset). (D) Graph indicating the number of sim1a+ cells in the WT CS compared to ppargc1asa13186-/- and ppargc1a cRNA injected zebrafish. Data are represented as ±SD, significant by t test, *** = p < 0.001. (E) Genetic model depicting the cross-repressive interactions between ppargc1a and sim1a that result in the CS.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/40266/elife-40266-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) WISH for slc12a3 (DL) in WT (top) and sim1a cRNA injected 28 ss zebrafish embryos. Scale bar = 100 μm. (B) Graph indicating the slc12a3 domain length in WT compared to sim1a cRNA overexpression. Data are represented as ±SD, and were not significant by t test, n.s. = not significant.
 
 Since ppargc1asa13186-/- mutants evince an increased PST segment (Figure 2B,C) in addition to an increased CS size (Figure 5—figure supplement 2A,B), we next examined whether Ppargc1a deficiency was associated with changes in sim1a expression in renal precursors. WISH was performed to investigate the pattern of sim1a expression in ppargc1asa13186-/- mutant embryos. This analysis revealed that ppargc1asa13186-/- mutant embryos had an increased sim1a domain at the 20 ss, a time point that coincides with sim1a expression in the PCT and PST segments, as well as at the 28 ss, which coincides with expression of sim1a in the CS anlage (Figure 5B,E, Figure 5—figure supplement 2C,D). Taken together, these results suggested that there were reciprocal antagonistic interactions between these two factors, which act to delineate segmental domains.
 
@@ -100,34 +180,191 @@ While there have been ongoing advancements in our understanding of nephron patte
 
 ## Materials and methods
 
-## Zebrafish husbandry and ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Caspase-3 (rabbit)</td>
+      <td>BD Biosciences</td>
+      <td>559565</td>
+      <td>dilution 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>phospho-Histone H3 (Ser10) (rabbit)</td>
+      <td>Millipore</td>
+      <td>06–570</td>
+      <td>dilution 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor anti-rabbit secondary (goat)</td>
+      <td>Invitrogen</td>
+      <td>A11037</td>
+      <td>dilution 1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dimethyl sulfoxide (DMSO)</td>
+      <td>American Bioanalytical</td>
+      <td>AB03091-00100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bezafibrate</td>
+      <td>Enzo Life Sciences</td>
+      <td>BML-GR211-0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>ppargc1asa13186 zebrafish line</td>
+      <td>Zebrafish International Resource Center (ZIRC)</td>
+      <td>ZMP:sa13186</td>
+      <td>Zebrafish Mutation Project allele sa13186</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>28106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NdeI restriction endonuclease enzyme</td>
+      <td>New England BioLabs</td>
+      <td>R0111S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol Reagent</td>
+      <td>Invitrogen</td>
+      <td>15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qScript cDNA SuperMix</td>
+      <td>QuantaBio</td>
+      <td>VWR 101414–106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PerfeCTa SYBR Green SuperMix with ROX</td>
+      <td>QuantaBio</td>
+      <td>VWR 101414–160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mMESSAGE mMACHINE SP6 Transcription kit</td>
+      <td>Ambion</td>
+      <td>AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>custom antisense morpholino oligonucleotide</td>
+      <td>Gene Tools, LLC</td>
+      <td>ppargc1a ATG MO1 (ZFIN: MO1-ppargc1a)</td>
+      <td>5’–CCTGATTACACCTGTCCCACGCCAT–3’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>custom antisense morpholino oligonucleotide</td>
+      <td>Gene Tools, LLC</td>
+      <td>ppargc1a SB MO1</td>
+      <td>5’–GGAGCTTCTTCAGCTACAAACAGAG–3’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>custom antisense morpholino oligonucleotide</td>
+      <td>Gene Tools, LLC</td>
+      <td>ppargc1a SB MO2</td>
+      <td>5’–GGTGAGCAGCTACCTTGGCAACAGC–3’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>custom antisense morpholino oligonucleotide</td>
+      <td>Gene Tools, LLC</td>
+      <td>tbx2b MO</td>
+      <td>5’–CCTGTAAAAACTGGATCTCTCATCGG–3’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>custom antisense morpholino oligonucleotide</td>
+      <td>Gene Tools, LLC</td>
+      <td>sim1a MO</td>
+      <td>5’–TGTGATTGTGTACCTGAAGCAGATG–3’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon Elements imaging software</td>
+      <td>Nikon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 8</td>
+      <td>GraphPad Prism (https://www.graphpad.com/scientific-software/prism/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (https://imagej.nih.gov/ij/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry and ethics statement
 
 Zebrafish were maintained in the Center for Zebrafish Research at the University of Notre Dame. All studies were performed with approval of the University of Notre Dame Institutional Animal Care and Use Committee (IACUC), under protocol numbers 13–021 and 16–025. For experiments with WT zebrafish, we utilized the Tübingen strain. Embryos were raised and staged as described (Kimmel et al., 1995). For all molecular studies, embryos were incubated in E3 medium from fertilization through the desired developmental stage at 28°C, anesthetized with 0.02% tricaine, and then fixed for analysis using 4% paraformaldehyde/1 x phosphate buffered saline (Westerfield, 1993).
 
-## Whole mount and fluorescent whole mount in situ hybridization (WISH, FISH)
+### Whole mount and fluorescent whole mount in situ hybridization (WISH, FISH)
 
 WISH was performed as previously described (Cheng et al., 2014; Galloway et al., 2008; Lengerke et al., 2011) with antisense RNA probes either digoxigenin-labeled (ppargc1a, slc20a1a, trpm7, slc12a1, slc12a3, sim1a, tbx2b, stc1, cdh17) or fluorescein-labeled (smyhc, slc12a3, -slc12a1, pax2a) by in vitro transcription using IMAGE clone templates as previously described (Wingert et al., 2007; O'Brien et al., 2011; Gerlach and Wingert, 2014; McKee et al., 2014). FISH was performed as previously described (Brend and Holley, 2009; Marra et al., 2017). For all gene expression studies, every analysis was done in triplicate for each genetic model, in a blinded fashion, with sample sizes of at least n = 20 for each replicate. A minimum of 5 representative individuals from each replicate were imaged and quantified, then subjected to statistical analysis.
 
-## Immunofluorescence (IF)
+### Immunofluorescence (IF)
 
 Whole mount IF experiments were completed as previously described (Kroeger et al., 2017; Marra et al., 2017). For cell death and proliferation assays, rabbit anti-Caspase-3 diluted 1:100 (BD Biosciences 559565) and rabbit phospho-Histone H3 (Ser10) antibody diluted 1:200 (Millipore 06–570) were used, respectively. Anti-rabbit secondary antibody (Alexa Fluor, Invitrogen) was diluted 1:500.
 
-## Chemical treatments
+### Chemical treatments
 
 Chemical treatments were completed as previously described (Poureetezadi et al., 2014; Poureetezadi et al., 2016). Bezafibrate (Enzo Life Sciences, BML-GR211-0001) was dissolved in 100% DMSO to make 1 M stocks and diluted to the working dosage. For segment analysis, treatments were completed in triplicate with sample sizes of at least 20 embryos per replicate.
 
-## Genetic models
+### Genetic models
 
 The ppargc1asa13186 line was obtained from ZIRC (Eugene, OR) (Busch-Nentwich et al., 2013). Mutant embryos and heterozygous adults were identified by performing PCR with the following primers flanking the mutation site: forward 5’–GGGCCGGCATGTGGAATGTAAAGACTTAAACATGCCAACCTCCACTACTACGACATCATCGTTGTCTTCCACCCCCCCTTCGTCTTCCTCACTGGCCA GG–3’ and reverse 5’–TCCCACTACCCCGCTATAGAAGGCTTGCTGAGGCTTTCCAAAGTGCTTGTTGAGCTCGTCCCGGATCTCCTGGTCCCTAAGAAGTTTCCTGCCACCAGAA–3’. PCR products were purified (Qiagen) and sent to the Notre Dame Genomics Core for sequencing analysis or subjected to restriction enzyme digest with NdeI (New England BioLabs) and separation on a 2% agarose gel to identify WT, heterozygous, or mutant samples. Antisense morpholino oligonucleotides (MOs) were obtained from Gene Tools, LLC (Philomath, OR) and solubilized in DNase/RNase-free water to create 4 mM stock solutions which were then stored at −20°C. Zebrafish embryos were injected at the 1 cell stage with 1–2 nL of diluted MO. ppargc1a was targeted with the following: ATG MO1 ‘MO1’ 5’–CCTGATTACACCTGTCCCACGCCAT–3’ (400 µM) (Hanai et al., 2007; Bertrand et al., 2007), Splice MO1 ‘SB MO1’ 5’–GGAGCTTCTTCAGCTACAAACAGAG–3’ (400 µM), and Splice MO2 ‘SB MO2’ 5’–GGTGAGCAGCTACCTTGGCAACAGC–3’ (400 µM). tbx2b knockdowns were performed with an ATG MO 5’–CCTGTAAAAACTGGATCTCTCATCGG–3’ (400 µM) (Gross and Dowling, 2005; Drummond et al., 2017). To target sim1a, a splice blocking MO 5’–TGTGATTGTGTACCTGAAGCAGATG–3’ (400 µM) was used (Löhr et al., 2009; Cheng and Wingert, 2015). RT-PCR was completed to determine efficacy of the sim1a splice MO knockdown as previously described (Marra and Wingert, 2016). To complete RT-PCR the following primers were used: ppargc1a-FWD 5’–AATGCCAGTGATCAGAGCTGTCCTT–3’, ppargc1a-RVS 5’–CAGCTCAGTGCAGGGACGTCTCATG–3’, sim1a-FWD 5’–GAATCTTGGGGCCATGTGAGTCGAACGACTTCACTGG–3’, sim1a-RVS 5’–GTACAGGATTTTCCCATCAGGAGCCACCACAAAGATG–3’.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Groups of 25–30 bezafibrate treated and vehicle control zebrafish were pooled with their respective group at the 28 ss. RNA was extracted using TRIZOL (Ambion) following the manufacturer instructions. cDNA was generated by qScript cDNA SuperMix (QuantaBio). qRT-PCR reactions were completed using PerfeCTa SYBR Green SuperMix with ROX (QuantaBio). To target ppargc1a, 100 ng of cDNA was optimal. For 18S control 1 ng was optimal. Primers used to amplify ppargc1a were forward 5’–AATGCCAGTGATCAGAGCTGTCCTT–3’ and reverse 5’–GTTCTGTGCCTTGCCACCTGGGTAT–3’. To target 18S the primers were as follows: forward 5’–TCGGCTACCACATCCAAGGAAGGCAGC–3’ and reverse 5’–TTGCTGGAATTACCGCGGCTGCTGGCA–3’. The AB StepOnePlus quantitative real time PCR machine program was: holding stage 2 min at 50°C, holding stage for 10 min at 95°C, then cDNA was amplified during 40 cycles, alternating between 15 s at 95°C to denature the cDNA and 1 min at 62°C for primer annealing and product extension. Data were recorded after each cycle to obtain the Ct values. Three technical replicates were completed for each of the three biological replicates for both treatments with the median Ct value normalized to control. Delta delta Ct was used for data analysis with 18S as a reference gene and the results calculated as relative expression change relative to DMSO control. For statistical analysis a Student’s t test was performed using the delta Ct values obtained after normalization to the 18S reference gene.
 
-## cRNA synthesis, and microinjections, rescue studies
+### cRNA synthesis, and microinjections, rescue studies
 
 The zebrafish ppargc1a ORF was cloned in to a pUC57 vector flanked by a 5’ KOZAK sequence, a Cla1 restriction enzyme site, and a SP6 promoter region, and on the 3’ by a series of STOP codons, a SV40 poly A tail, a Not1 restriction enzyme site, and a t7 promoter region. ppargc1a cRNA was generated by linearizing with Not1 and sp6 run off with the mMESSAGE mMACHINE SP6 Transcription kit (Ambion). cRNA was injected into WT and ppargc1asa13186 mutants at the one-cell stage at a concentration of 900 pg. Rescue studies were completed by performing WISH on injected ppargc1asa13186 mutants, then samples were imaged and genotyped. A minimum of three samples for each genotype was used to calculate segment phenotypes.
 
-## Image acquisition and quantification of phenotypes
+### Image acquisition and quantification of phenotypes
 
 WISH images were acquired using a Nikon Eclipse Ni with a DS-Fi2 camera. FISH and immunofluorescence images were acquired using a Nikon C2 confocal microscope. Segment phenotypes were quantified using the Nikon Elements imaging software polyline tool. Unless otherwise stated, a minimum of three representative samples from each biological replicate were imaged and measured. Experiments were completed in triplicate. From these measurements, an average and standard deviation (SD) were calculated, and unpaired t-tests or one-way ANOVA tests were completed to compare control and experimental measurements.

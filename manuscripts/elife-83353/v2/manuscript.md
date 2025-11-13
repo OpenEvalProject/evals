@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02dgjyy92 Katz Family Division of Nephrology and Hypertension, Department of Medicine, University of Miami Miller School of Medicine Miami United States
-2. https://ror.org/02dgjyy92 Peggy and Harold Katz Family Drug Discovery Center, University of Miami Miller School of Medicine Miami United States
-3. https://ror.org/02dgjyy92 Department of Radiation Oncology, University of Miami Miller School of Medicine Miami United States
-4. https://ror.org/01kd65564 Center for Precision Medicine, School of Medicine, University of Texas Health San Antonio San Antonio United States
-5. https://ror.org/02dgjyy92 Department of Biochemistry and Molecular Biology, University of Miami Miami United States
+1. Katz Family Division of Nephrology and Hypertension, Department of Medicine, University of Miami Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+2. Peggy and Harold Katz Family Drug Discovery Center, University of Miami Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+3. Department of Radiation Oncology, University of Miami Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+4. Center for Precision Medicine, School of Medicine, University of Texas Health San Antonio San Antonio United States ([ROR:01kd65564](https://ror.org/01kd65564))
+5. Department of Biochemistry and Molecular Biology, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
 
 † Corresponding author
 
@@ -39,27 +39,51 @@ Although all cells in the kidney are high energy-demanding, the metabolic substr
 
 ## Results
 
-## SGLT2 is expressed in human podocytes and immortalized podocytes established from wild-type (WT) and AS mice
+### SGLT2 is expressed in human podocytes and immortalized podocytes established from wild-type (WT) and AS mice
 
 Immunohistochemistry in normal human kidney sections demonstrated both glomerular and proximal tubule expression of SGLT2 (Figure 1A). Using western blot analysis, we demonstrate similar levels of SGLT2 protein expression levels in cultured human podocytes when compared to HK2 tubular cells. Mouse liver lysate, HepG2 liver cancer cells, and kidney lysate from Sglt2-/- mouse were used as the negative controls (Figure 1B). To study the effect of SGLT2i in an experimental model of non-diabetic kidney disease, we developed immortalized podocytes and tubular cell lines established from SV40+; Col4a3+/+ (immorto-WT) and SV40+; Col4a3-/- (immorto-AS) mice. The expression of the podocyte-specific marker Synaptopodin (SYNPO) and of the tubule-specific marker Aquaporin 1 (AQP1) was confirmed in podocyte and tubular cell lines, respectively (Figure 1—figure supplement 1). We found similar SGLT2 protein expression levels in both tubular cells and podocytes (Figure 1C and D), while Sglt2 mRNA expression levels were significantly higher in AS tubular cells and podocytes than in WT controls (Figure 1E). To confirm glomerular expression of SGLT2 in vivo, kidney cortices of Alport mice were co-stained with SYNPO and SGLT2 antibodies. As expected, the colocalization of SYNPO with SGLT2 staining confirmed that SGLT2 is expressed in podocytes (Figure 1F). Additionally, we examined the Kidney Interactive Transcriptomics (https://humphreyslab.com/SingleCell/) which is an online analysis tool for kidney single-cell datasets (Wu et al., 2018). In the Healthy Mouse Dataset (Wu et al., 2019), Sglt2 is expressed in podocytes, though its expression level in every cell type is low (Figure 1—figure supplement 2).
 
-## Treatment of AS podocytes with empagliflozin reduces lipid droplet accumulation and apoptosis
+![Figure 1.](https://cdn.elifesciences.org/articles/83353/elife-83353-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immunohistochemistry staining of human kidney cortex for SGLT2 (left panel, scale bar: 50 μm; right panel, scale bar: 25 μm). (B) Western blot images demonstrating SGLT2 expression in cultured human podocytes (hPodo). Mouse liver lysate (mLiver), HepG2 liver cancer cells, and kidney lysate from Sglt2-/- mouse (Sglt2-/- mKidney) were used as the negative controls. HK2 proximal tubular cells were used as the positive control. (C,D) Western blot images (C) and quantification (D) demonstrating SGLT2 expression in mouse proximal tubular cells (Tubu) and podocytes (Podo) established from wild-type (WT) and Alport (AS) mice (n=3). (E) Sglt2 mRNA expression in WT and AS podocytes and tubular cells (n=3). (F) Representative confocal images of kidney cortices of AS mice (scale bars: 25 μm) stained with DAPI (blue), Synaptopodin (SYNPO, green) and SGLT2 (red). Yellow represents the co-localization of SYNPO and SGLT2. (D), (E), Two-tailed Student’s t-test. *p<0.5.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83353/elife-83353-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83353/elife-83353-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Pod: podocyte; MC: mesangial cell; EC: endothelial cell; PT: proximal tubule; LH(AL/DL): loop of Henle ascending loop/descending loop; DCT: distal convoluted tubule; CNT: connecting tubule; CD-PC: collecting duct-principal cell; IC-A/B: intercalated cell type A/B; MΦ: macrophage.
+
+### Treatment of AS podocytes with empagliflozin reduces lipid droplet accumulation and apoptosis
 
 We previously described that AS podocytes are characterized by increased apoptosis and lipid droplet (LD) accumulation when compared to WT podocytes (Kim et al., 2021; Liu et al., 2020). To further evaluate whether SGLT2i can reduce lipotoxicity in podocytes as well as in tubular cells isolated from AS mice, immortalized WT and AS podocytes and tubular cells were treated with empagliflozin or vehicle. SGLT2i significantly decreases cytotoxicity in empagliflozin-treated compared with vehicle-treated AS tubular cells (Figure 2A). No differences in apoptosis and lipid droplet accumulation were observed in any of the groups (Figure 2B and E). As expected, AS podocytes showed increased cytotoxicity, apoptosis, and intracellular LD when compared to WT podocytes (Figure 2C, D and F). Empagliflozin treatment significantly reduced apoptosis and intracellular LD, but not cytotoxicity in AS podocytes (Figure 2C, D and F). Representative picture of Nile red staining revealed fewer LD per cell in empagliflozin-treated compared with vehicle-treated AS podocytes (Figure 2H), suggesting empagliflozin ameliorates lipotoxicity in AS podocytes. Interestingly, we observed a positive correlation between LD accumulation and apoptosis (Figure 2G). Treatment with empagliflozin significantly reduced the glucose content in both podocytes and tubular cells established from AS mice, which may result in glucose deprivation and a shift in energy fuel (Figure 2—figure supplement 1A and B).
 
-## Empagliflozin inhibits the utilization of pyruvate as a metabolic substrate in AS podocytes
+![Figure 2.](https://cdn.elifesciences.org/articles/83353/elife-83353-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Immortalized podocytes and tubular cells of wild-type (WT) and AS mice treated with empagliflozin (Empa) or vehicle for 48 hr. (A,C) Bar graph analysis showing cytotoxicity normalized to viability, then compared to WT (n=3). (B,D) Bar graph analysis showing apoptosis normalized to viability, then compared to WT (n=3). (E,F) LD accumulation in tubular cells (E) and podocytes (F) was measured by Nile red staining. Bar graph analysis showing the quantification of the number of LDs per cell (n=3). (G) Correlation analyses between the LD accumulation and apoptosis in podocytes (n=12). (H) Representative images of Nile red staining demonstrate increased LD numbers (Nile red: green) in AS podocytes (Cell mask blue: blue; DAPI: red) compared to WT podocytes, which is reduced by Empa treatment. (A–F), Two-tailed Student’s t-test. (G), Pearson’s correlation coefficient. *p<0.5, **p<0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83353/elife-83353-fig2-figsupp1-v2.jpg)
+
+### Empagliflozin inhibits the utilization of pyruvate as a metabolic substrate in AS podocytes
 
 To investigate if empagliflozin affects metabolic substrate preferences, endogenous cellular and coupled substrate-driven respiration were measured by high-resolution respirometry. Endogenous respiration measured in intact cells was not altered in either AS tubular cells or podocytes compared to WT (Figure 3A and B). Cells were then permeabilized with digitonin and substrates for fatty acids-driven and nicotinamide adenine dinucleotide (NAD)-driven respiration were provided sequentially. No difference in oxygen consumption rate (OCR) was detected between WT and AS tubular cells in response to fatty acids. However, AS tubular cells show elevated respiration after the addition of NADH-linked substrates. Treatment of empagliflozin did not affect the respiration of AS tubular cells independently of the substrate (Figure 3A). In contrast to tubular cells, AS podocytes showed a slightly but significant increase in FAO-linked OCR compared to WT podocytes, which could be due to the increase in intracellular lipid accumulation. This increase was maintained upon empagliflozin treatment and showed a tendency to increase, though not significant (Figure 3B). Moreover, the addition of NADH-linked substrates to WT and AS podocytes increased OCR to approximately the double of the value recorded in the presence of FAO-linked substrates, in agreement with podocytes preferential use of glucose oxidation for ATP production. Interestingly, NADH-linked respiration in AS podocytes was inhibited by treatment with empagliflozin (Figure 3B). To confirm the inhibitory effect of empagliflozin on NADH-driven respiration, we repeated the assay by measuring directly NADH-driven respiration without the addition of fatty acids. A similar change was observed (Figure 3—figure supplement 1A and B). Taken together, these data suggest that in podocytes established from AS mice, empagliflozin may induce a metabolic remodeling characterized by a reduction in glucose oxidation and a switch toward the use of alternative substrates for ATP production. To further characterize the adaptation to energy sources in AS podocytes, pyruvate dehydrogenase (PDH) activity was measured. PDH is an enzyme that converts glycolysis-derived pyruvate to acetyl-CoA and increases its influx into the tricarboxylic acid (TCA) cycle (Zhang et al., 2014). PDH plays a central role in the reciprocal regulation of glucose and lipid oxidation (Zhang et al., 2014). We found that PDH activity was reduced in AS podocytes by empagliflozin treatment (Figure 3C), suggesting a switch to the consumption of fatty acids as energy fuel. Additionally, we found that empagliflozin treatment reduced glycolysis in AS podocytes (Figure 3—figure supplement 1C). This finding is similar to what was observed in diabetic kidneys (Li et al., 2020) where aberrant glycolysis was inhibited by empagliflozin.
 
-## Sglt2 knockdown reduces lipotoxicity in AS podocytes
+![Figure 3.](https://cdn.elifesciences.org/articles/83353/elife-83353-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Bar graph analysis of endogenous and substrate-driven oxygen consumption rates in wild-type (WT) and Alport (AS) tubular cells (A) and podocytes (B) treated with or without empagliflozin (E) (n=3). The sequential addition of permeabilizing agent and substrates was labeled in the figure. (C) Pyruvate dehydrogenase (PDH) activity was measured by a colorimetric assay in protein extracts from AS podocytes, normalized to protein concentration (n=3). Two-tailed Student’s t-test, *p<0.5. FA: octanoylcarnitine; ML: malate-low concentration; MH: malate-high concentration; P: pyruvate; G: glutamate.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83353/elife-83353-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Bar graph analysis of endogenous and substrate-driven oxygen consumption rates in wild-type (WT) and Alport (AS) tubular cells (A) and podocytes (B) treated with or without empagliflozin (E) (n=3). The sequential addition of permeabilizing agent and substrates was labeled in the figure. (C) Bar graph analysis of the relative rate of extracellular acidification in AS podocyte after empagliflozin treatment (n=3). Two-tailed Student’s t-test, *p<0.5, ***p< 0.001. MH: malate-high concentration; P: pyruvate; G: glutamate.
+
+### Sglt2 knockdown reduces lipotoxicity in AS podocytes
 
 To confirm the anti-lipotoxic effects of SGLT2i in podocytes, we used gene silencing of SGLT2 by siRNA transfection in AS podocytes. We show that Sglt2 siRNA transfection downregulates the expression of Sglt2 in AS podocytes (Figure 4A and B). AS podocytes transfected with a nontargeting siRNA control (siCtrl) and Sglt2 siRNA (siSglt2) were treated with empagliflozin or vehicle. Cytotoxicity and apoptosis of AS podocytes were analyzed in siCtrl, siCtrl + empagliflozin, siSglt2, and siSglt2 + empagliflozin groups. Similar to siCtrl + empagliflozin AS podocytes, siSglt2, and siSglt2 + empagliflozin AS podocytes showed reduced apoptosis compared with vehicle-treated siCtrl AS podocytes in the absence of changes in cytotoxicity (Figure 4C and D). To study FAO in siSglt2 AS podocytes, carnitine palmitoyltransferase 1 A (CPT1A) was determined by western blot analysis. CPT1A is the rate-limiting enzyme of FAO (Schlaepfer and Joshi, 2020), which was found upregulated by empagliflozin treatment and knockdown of Sglt2. This observation is consistent with an interventional clinical trial in which dapagliflozin treatment led to an adaptive preference of skeletal muscle metabolism for fatty acids, as evidenced by increased expression of CPT1A (op den Kamp et al., 2022).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83353/elife-83353-fig4-v2.jpg)
 
-**Figure 4.:** Sglt2 knockdown reduces lipotoxicity in Alport syndrome (AS) podocytes.(A, B) Western blot images (A) and quantification (B) of Sodium-glucose cotransporter-2 (SGLT2) protein in AS podocytes transfected with Sglt2 siRNA (siSglt2) or nontargeting siRNA (siCtrl) for 72 hr. GAPDH was used as a sample loading control (n=3). (C,D) Bar graph analysis showing cytotoxicity (C) and apoptosis (D) normalized to viability (n=3) in siCtrl and siSGLT2 AS podocytes, with or without the treatment of empagliflozin (E), then compared with siCtrl. (E,F) Western blot images (E) and quantification (F) of CPT1A protein in siCtrl and siSglt2 AS podocytes, with or without the treatment of empagliflozin (n=3). (B), Two-tailed Student’s t-test, (C), (D), (F), One-Way ANOVA followed by Holm-Sidak’s multiple comparisons. *p < 0.05, ***p< 0.001.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A, B) Western blot images (A) and quantification (B) of Sodium-glucose cotransporter-2 (SGLT2) protein in AS podocytes transfected with Sglt2 siRNA (siSglt2) or nontargeting siRNA (siCtrl) for 72 hr. GAPDH was used as a sample loading control (n=3). (C,D) Bar graph analysis showing cytotoxicity (C) and apoptosis (D) normalized to viability (n=3) in siCtrl and siSGLT2 AS podocytes, with or without the treatment of empagliflozin (E), then compared with siCtrl. (E,F) Western blot images (E) and quantification (F) of CPT1A protein in siCtrl and siSglt2 AS podocytes, with or without the treatment of empagliflozin (n=3). (B), Two-tailed Student’s t-test, (C), (D), (F), One-Way ANOVA followed by Holm-Sidak’s multiple comparisons. *p < 0.05, ***p< 0.001.
 
-## Empagliflozin prolongs the survival of AS mice
+### Empagliflozin prolongs the survival of AS mice
 
 To investigate if empagliflozin can improve survival in mice with non-diabetic renal disease which typically die from renal failure, AS mice were fed an empagliflozin-supplemented chow (70 mg/kg) or a regular diet starting at 4 weeks of age for 6 weeks. Mice with experimental AS start developing proteinuria at 4 weeks of age, followed by death at 8–9 weeks of age. We found that empagliflozin extended the lifespan of AS mice by about 22% compared to untreated AS mice (Figure 5A). Blood glucose was measured at 8 weeks of age and no difference was observed in empagliflozin-treated compared to untreated AS mice (Figure 5B). These data suggest that the ability of empagliflozin to prolong the survival of AS mice is independent of its anti-hyperglycemic effects.
 
@@ -67,7 +91,7 @@ To investigate if empagliflozin can improve survival in mice with non-diabetic r
 
 **Figure 5.:** (A) Survival curve (n=4–5) of AS mice fed empagliflozin-supplemented (E) chow versus placebo diet starting at 4 weeks of age, compared to age-matched wild-type (WT) control mice. (B) Glycemia levels of WT and AS mice fed placebo diet and AS mice fed empagliflozin chow (n=3–8). (B), AS vs AS +E: Two-tailed Student’s t-test.
 
-## Empagliflozin improves renal function in a mouse model of Alport syndrome
+### Empagliflozin improves renal function in a mouse model of Alport syndrome
 
 To study the effects of SGLT2 inhibitors on the renal outcome, AS mice were fed empagliflozin-supplemented chow starting at 4 weeks of age for 4 weeks, and the renal phenotype was compared to AS mice fed a regular diet. Ramipril, an ACEi used as a standard of care for patients with AS, was also used alone or in combination with empagliflozin. At 4 weeks of age, ramipril was added to the drinking water and/or mice were fed with an empagliflozin-supplemented chow as indicated. Mice on the different regimens were compared with AS mice fed a regular diet. All mice were sacrificed at 8 week of age. Empagliflozin, ramipril, and the empagliflozin + ramipril (E+R) combination significantly reduced the albumin-to-creatinine ratio (ACR) and prevented body weight loss in AS mice (Figure 6A and B). Empagliflozin, ramipril, and E+R significantly reduced blood urea nitrogen (BUN) and creatinine levels in AS mice (Figure 6C and D). Unlike what has been observed in patients enrolled in DAPA-CKD, the addition of empagliflozin to the standard of care (SOC) ramipril did not confer additional renoprotection, and overall, no difference across treatment groups was observed. Glomeruli of AS mice exhibited significant mesangial matrix expansion (Figure 6E) as determined by Periodic acid-Schiff (PAS) staining and significantly increased fibrosis as determined by Picrosirius red staining (Figure 6F), which were reduced by the treatment of empagliflozin, ramipril, and E+R. Empagliflozin, ramipril, and E+R treatment of AS mice also prevented podocyte loss as suggested by similar podocyte numbers, as indicated by increased Wilms tumor 1 (WT1)-positive cells per glomerulus, in treated AS compared to WT mice (Figure 6G).
 
@@ -75,7 +99,7 @@ To study the effects of SGLT2 inhibitors on the renal outcome, AS mice were fed 
 
 **Figure 6.:** (A) Urinary albumin-to-creatinine ratio (ACR) in WT and Alport syndrome (AS) mice fed with placebo, empagliflozin (E), ramipril (R), or the combination of empagliflozin and ramipril (E+R). Urines were collected at the time of sacrifice (n = 7–8). (B) Bar graph analysis of body weights of mice from all experimental groups. (C,D) Bar graph analysis of blood urea nitrogen (BUN) (C) and creatinine (D) levels of mice from all experimental groups (n = 7–8). (E) Representative images of Periodic acid-Schiff (PAS) staining and bar graph analysis showing the mesangial expansion score of kidney cortices sections (scale bar: 50 μm; n = 7–8). (F) Representative Picrosirius red staining and bar graph analysis showing the quantification of fibrosis in kidney cortices sections (scale bar: 100 μm; n=7–8). (G) Representative images of kidney cortices stained with WT1 (green) to detect podocytes and DAPI (blue) to reveal nuclei and bar graph quantification of the average number of WT1-positive podocytes per glomerulus (scale bar: 25 μm, n = 7–8). One-Way ANOVA followed by Holm-Sidak’s multiple comparisons. *p < 0.05, **Pp< 0.01, ***p< 0.001.
 
-## Empagliflozin prevents renal lipid accumulation in experimental Alport syndrome
+### Empagliflozin prevents renal lipid accumulation in experimental Alport syndrome
 
 To investigate whether empagliflozin prevents lipid accumulation in kidney cortices of AS mice, Oil Red O (ORO) staining was performed. We found an increased number of LD-positive glomeruli in AS mice, while the number of LD-positive glomeruli in all treatment groups was similar to WT mice (Figure 7A). We then extracted lipids from kidney cortices to investigate the composition of specific lipids and found increased cholesterol ester (CE) and triglyceride contents in AS compared to WT mice (Figure 7B and D), similar to what we previously reported (Kim et al., 2021). Interestingly, though all treatment groups showed a decreased CE content in kidney cortices, only empagliflozin and E+R reduced triglyceride levels. The total cholesterol content was similar in all five groups (Figure 7C). We previously demonstrated a correlation between lipid accumulation and renal function decline in experimental models of metabolic and non-metabolic kidney disease (Ducasa et al., 2019; Ge et al., 2021; Wright et al., 2021). Similarly, we found a positive correlation between the CE, and triglyceride content in kidney cortices with ACR, serum BUN, and creatinine levels (Figure 7E–J).
 
@@ -103,90 +127,261 @@ In summary, our study demonstrates that empagliflozin reduces podocyte lipotoxic
 
 ## Methods
 
-## Animal studies
+**Key resources table**
 
-## Phenotypic analysis of mice
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>immortalized podocytes</td>
+      <td>This paper;PMID:33340991</td>
+      <td></td>
+      <td>Cell line established and maintained in Fornoni lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>immortalized tubular cells</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line established and maintained in Fornoni lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>CBA/CaxC57BL/10-H-2Kb-tsA58</td>
+      <td>Charles River;(PMID:1711218)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>129-Col4a3tm1Dec/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Strain# 002908RRID:IMSR_JAX:002908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-WT1 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-192RRID:AB_632611</td>
+      <td>1:300 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SGLT2 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-21537RRID:AB_2814658</td>
+      <td>1:100 (IHC)1:500 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SGLT2(rabbit polyclonal)</td>
+      <td>BiCell scientific</td>
+      <td>Cat# 20802RRID:AB_2935905</td>
+      <td>1:100 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SYNAPTOPODIN (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-21537RRID:AB_2201166</td>
+      <td>1:300 (IF)1:1,000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AQP1 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 20333–1-APRRID:AB_10666159</td>
+      <td>1:2,000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CPT1A(mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab128568RRID:AB_11141632</td>
+      <td>1:1,000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH(mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# CB1001RRID:AB_2107426</td>
+      <td>1:10,000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sglt2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGGAGCAACACGTAGAGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sglt2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGACCAGCAGGAAATAGGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTGGAGAAACCTGCCAAGTATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTCCTCAGTGTAGCCCAAGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: Sglt2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-61540</td>
+      <td>20 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: nontargetin control</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 4390843</td>
+      <td>20 nM</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>ApoTox-Glo Triplex assay</td>
+      <td>Promega</td>
+      <td>Cat# G6320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Amplex Red Cholesterol Assay</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# A12216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Triglyceride Colorimetric Assay</td>
+      <td>Cayman</td>
+      <td>Cat# 10010303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Empagliflozin (BI 10773)</td>
+      <td>Selleckchem</td>
+      <td>Cat# S8022</td>
+      <td>500 nM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad software</td>
+      <td>SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal studies
+
+#### Phenotypic analysis of mice
 
 Col4a3-/- mice (a model of AS) are in a 129X1/SvJ background and were purchased from Jackson Laboratory (129-Col4a3tm1Dec/J, stock #002908). Mice were fed empagliflozin-supplemented chow (70 mg/kg) versus a regular diet starting at 4 weeks of age. Ramipril was added to the drinking water at a concentration that would lead to a daily uptake of 10 mg/kg body weight (Kim et al., 2021). Five groups of mice were examined: WT + placebo, AS + placebo, AS + empagliflozin, AS + ramipril, and AS + empagliflozin + ramipril. Both male and female mice were used. Mice were sacrificed at 8 weeks and analyzed as described below.
 
-## Urinary albumin-to-creatinine ratios
+### Urinary albumin-to-creatinine ratios
 
 Morning spot urine samples were collected bi-weekly. Urinary albumin-to-creatinine ratios were determined using the Mouse Albumin ELISA Kit (Bethyl Laboratories, Montgomery, TX) and Creatinine LiquiColor (Stanbio, Boerne, TX). Albuminuria values are expressed as μg albumin per mg creatinine.
 
-## Serology
+### Serology
 
 Blood samples were collected and serum creatinine was determined by tandem mass spectrometry at the UAB-UCSD O’Brian Core Center (University of Alabama at Birmingham) as previously described (Takahashi et al., 2007). Serum BUN was analyzed in the Comparative Laboratory Core Facility of the University of Miami.
 
-## Oil red-O staining
+### Oil red-O staining
 
 Four μm kidney cortices optimal cutting temperature (OCT) compound embedded sections were incubated with 100 µl freshly prepared Oil Red O solution (Electron Microscopy Science, Hatfield, PA) for 15 min and counterstained with Hematoxylin Harris solution (VWR, 10143–606) for 5 min to detect lipid deposition. Images were examined under a light microscope (Olympus BX41, Tokyo, Japan), and quantified by the percentage of LD-positive glomeruli.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 To measure podocyte number per glomerulus, glomerular sections embedded in OCT were stained with a Wilms tumor 1 (WT1) antibody (Santa Cruz Biotechnology, Dallas, TX, sc-192, 1:300), followed by a secondary antibody (Invitrogen, Waltham, MA, A-11008, 1:500) and Mounting Medium with DAPI (Vectorlabs, Newark, CA, H-1200). To study the podocyte-specific localization of SGLT2, glomerular sections were stained with podocyte marker SYNPO (Santa Cruz Biotechnology, Dallas, TX, sc-21537, 1:300) and SGLT2 (BiCell scientific, Maryland Heights, MO, 20802, 1:100) with secondary antibodies (Invitrogen, Waltham, MA, A-11055 & A-11036, 1:500). Images were acquired using Olympus IX81 confocal microscope (Tokyo, Japan) coupled with a 60 x oil immersion objective lens and images were processed using Fiji/Image J.
 
-## Kidney histology analysis
+### Kidney histology analysis
 
 Perfused kidneys were fixed in 10% formalin and paraffin-embedded, and then cut into 4 µm thick sections. Periodic acid-Schiff (PAS) staining was performed to investigate mesangial expansion following a standard protocol. The mesangial expansion was visualized under a light microscope (Olympus BX41, Tokyo, Japan) and 20 glomeruli per section were scored by semi-quantitative analysis (scale 0–5), performed in a blinded manner. Picrosirius Red staining was performed to measure fibrosis. Paraffin-embedded sections were deparaffinized with xylene and a graded alcohol series. Sections were rinsed and stained for 1 hr with Picrosirius Red in saturated aqueous picric acid. Sections were examined under a light microscope (Olympus BX41, Tokyo, Japan), followed by analysis with Fiji/Image J.
 
-## Lipid extraction
+### Lipid extraction
 
 Kidney cortices were homogenized in a buffer containing 50 mM pH 7.4 potassium phosphate and cOmplete Protease Inhibitor Cocktail tablet (Roche, Indianapolis, IN, 1 pill in 10 ml buffer) by sonication for the 20 s, twice, on ice. Total lipids were extracted from homogenates using hexane:isopropanol (3:2) and placed in a mixer (1000 rpm) for 30 min. The mixed homogenate was then spun at top speed, lipids contained in the supernatants were collected, and pellets were disrupted by 2 sequential lipid extractions. Total lipids were then pooled and dried using a speed vacuum at 37 °C and reconstituted with 100 µl isopropanol:NP-40 (9:1). Proteins were extracted from the pellets using 8 M Urea, 0.1% SDS, and 0.1 M NaOH. Extracted lipids were used for determining total cholesterol, cholesterol ester and triglyceride contents, and normalized to protein concentrations.
 
-## Triglyceride (TG) assay
+### Triglyceride (TG) assay
 
 The TG content was determined using Triglyceride Colorimetric Assay Kit (Cayman, Ann Arbor, MI) following the manufacturer’s protocol. TG standards and lipid samples from the above-mentioned extraction were added to a 96-well plate. The reaction was initiated by adding 150 µl enzyme buffer to each well. Absorbance at 540 nm was measured using a SpectraMax M5 plate reader (Molecular Devices, San Jose, CA).
 
-## Cholesterol assay
+### Cholesterol assay
 
 Cholesterol assays were performed using the Amplex Red Cholesterol Assay Kit (ThermoFisher Scientific, Waltham, MA) following the manufacturer’s instructions with some modifications (Ge et al., 2021). Total cholesterol and cholesterol ester were quantified using a direct enzymatic method (Mizoguchi et al., 2004) and fluorescence was read at 530/580 nm. SpectraMax M5 plate reader (Molecular Devices, San Jose, CA) was used.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Four μm kidney sections were heated at 65 °C for 1 hr and deparaffinized in xylene, followed by rehydration in decreasing concentrations of ethanol (two washes in 100% ethanol, two washes in 95%, one wash in 70%, one wash in 50%, and three wash in TBS). Antigen retrieval was performed for 30 min in citrate buffer (Sigma-Aldrich, St. Louis, MO, C9999, 1:10). Sections were incubated with 3% hydrogen peroxidase (Sigma-Aldrich, St. Louis, MO, H1009, 1:10) for 20 min and incubated with a blocking reagent (Vector Laboratories, Newark, CA, SP-5035) for 1 hr at room temperature. Sections were then incubated with primary antibody SGLT2 (Santa Cruz Biotechnology, Dallas, TX, sc-393350, 1:100) overnight at 4 °C. Incubation with biotin-labeled secondary antibody (Vector Laboratories, Newark, CA, BA-2000, 1:200) was performed at room temperature for 1 hr, followed by incubation with avidin-biotin-peroxidase complex (Vector Laboratories, Newark, CA, PK-6100) and DAB substrate kit (Vector Laboratories, Newark, CA, SK-4100). Counterstain was performed with hematoxylin for 5 min, followed by dehydration in increasing concentrations of ethanol. Sections were examined under a light microscope (Olympus BX41, Tokyo, Japan).
 
-## Cell lines
+### Cell lines
 
-## Establishment and culture of conditionally immortalized mouse podocyte and tubular cell lines
+#### Establishment and culture of conditionally immortalized mouse podocyte and tubular cell lines
 
 To establish immortalized mouse podocyte and tubular cell lines, Col4a3+/- mice were bred with the immorto-mice carrying a temperature-sensitive T-antigen transgene (SV40+) (Charles River, Wilmington, MA, CBA/CaxC57BL/10-H-2Kb-tsA58) (Jat et al., 1991) to generate double heterozygous littermates, which were then crossed to generate SV40+; Col4a3-/- (immorto-AS) and SV40+; Col4a3+/+ (immorto-WT) (Kim et al., 2021; Liu et al., 2020). Glomeruli and tubules were isolated from 9 weeks old immorto-WT and -AS mice by differential sieving as previously described (Mundel et al., 1997; Terryn et al., 2007). Immortalized cell lines were cultured at 33 °C in RPMI growth medium (containing 10% FBS, 1% penicillin/streptomycin, 100 U/ml IFNγ) under permissive conditions. Podocyte cell lines will be thermo-shifted to 37 °C non-permissive condition in the absence of IFNγ for 12 days. Immortalized mouse podocyte and tubular cell lines were characterized by western blot analysis using podocyte and tubular cell markers. Cultured cells were incubated with 500 nM empagliflozin (Selleckchem, Houston, TX) or dimethylsulfoxide in a growth medium for 48 hr. To furthermore study the effects of SGLT2i, at day 9 of differentiation, AS podocyte cell lines were transfected with Sglt2 siRNA (20 nM, Santa Cruz Biotechnology, Dallas, TX) or nontargeting siRNA (20 nM, Thermo Scientific, Waltham, MA) for 72 hr using HiPerFect Transfection Reagent (Qiagen, Valencia, CA). After 24 hr of transfection, AS podocytes were then exposed to empagliflozin or vehicle. Cell lines are tested negative for mycoplasma contamination. We have not used any cell lines from the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 RNA was extracted from cultured cells using the RNeasy Mini Kit (Qiagen, Valencia, CA). Reverse transcription was performed using qScript cDNA SuperMix (QuantaBio, Beverly, MA). Quantitative real-time PCR was carried out using the StepOnePlus system (Applied Biosystems, Waltham, MA) with PerfeCTa SYBR Green FastMix (QuantaBio, Beverly, MA). Relative quantification was determined as 2−ΔΔCt. The following primers were used: Sglt2: forward-ATGGAGCAACACGTAGAGGC, reverse-ATGACCAGCAGGAAATAGGCA; Gapdh: forward-CCTGGAGAAACCTGCCAAGTATG, reverse-GGTCCTCAGTGTAGCCCAAGATG. Sglt2 expressions in Healthy Mouse Dataset were available in the Kidney Interactive Transcriptomics database (https://humphreyslab.com/SingleCell/).
 
-## Western blot analysis
+### Western blot analysis
 
 Cell lysates were prepared using 3-[(3-cholamidopropyl)dimethylammonio]–1-propanesulfonic (CHAPS) acid buffer. Protein concentration was measured with the bicinchoninic acid (BCA) reagent (Thermo Scientific, Waltham, MA). 20–30 µg of protein extract was loaded onto 4 to 20% SDS-polyacrylamide gel electrophoresis (SDS-PAGE) gels (Bio-Rad, Hercules, CA) and transferred to Immobilon-P PVDF membranes (Bio-Rad, Hercules, CA). Western blot analysis was performed using a standard protocol and the following primary antibodies: SGLT2 (Santa Cruz Biotechnology, Dallas, TX, sc-393350, 1:500), SYNAPTOPODIN (Santa Cruz Biotechnology, Dallas, TX, sc-21537, 1:1000), AQP1 (Proteintech, Rosemont, IL, 20333–1-AP, 1:2000), CPT1A (Abcam, Cambridge, UK, ab128568, 1:1,000), GAPDH (Sigma-Aldrich, St. Louis, MO, CB1001, 1:10,000); or secondary antibodies: anti-mouse IgG horseradish peroxidase (HRP) (Promega, Madison, WI, W402B, 1:10,000), anti-rabbit IgG HRP (Promega, Madison, WI, W401B, 1:10,000) or anti-goat IgG HRP (Promega, Madison, WI, V805A, 1:10,000). Signal was detected with Radiance ECL (Azure, Dublin, CA) using Azure c600 Imaging System.
 
-## Cytotoxicity and apoptosis assay
+### Cytotoxicity and apoptosis assay
 
 Cytotoxicity and apoptosis assays were performed using the ApoTox-Glo Triplex assay (Promega, Madison, WI) according to the manufacturer’s protocol. Briefly, mouse tubular cells and differentiated podocytes were cultured and treated as indicated above. Fluorescence was measured at 400 nm excitation/505 nm emission for viability, and 485 nm excitation/520 nm emission for cytotoxicity. Additionally, apoptosis was determined by luminescence for caspase-3/7 activation. Values were expressed as the cytotoxicity/viability and apoptosis/viability ratios, then compared with WT controls. Fluorescence and luminescence were measured on a SpectraMax i3x multi-mode microplate reader (Molecular Devices, San Jose, CA).
 
-## Lipid droplet quantification
+### Lipid droplet quantification
 
 Cultured cells were fixed with 4% paraformaldehyde (PFA) and 2% sucrose and then stained with Nile red (Sigma-Aldrich, St. Louis, MO) and High-Content Screening (HCS) Cell Mask Blue (Invitrogen, Waltham, MA) according to the manufacturer’s protocols. Images were acquired using the Opera high-content screening system (20 x confocal lens) and lipid droplets intensity per cell was determined using the Columbus Image Analysis System (Perkin Elmer, Waltham, MA) (Liu et al., 2020).
 
-## Cellular respiration measurements
+### Cellular respiration measurements
 
 Oxygen consumption rate (OCR) was measured using a high-resolution respirometer (O2k-Fluo-Respirometer, Oroboros Instruments, Innsbruck, Austria) filled with 2 mL of mitochondrial respiration buffer (MiR05, containing 0.5 mM EGTA, 3 mM MgCl2·6H2O, 60 mM K-lactobionate, 20 mM Taurine, 10 mM KH2PO4, 20 mM HEPES, 110 mM Sucrose, 1 g/l fatty acid-free BSA) at 37 °C, following the Substrate-Uncoupler-Inhibitor-Titration (SUIT)–002 protocol with some modifications. Specifically, 1 × 106 suspended cells were immediately placed into the chamber and continuously mixed by a stirrer at 750 rotations per minute. O2 consumption in nearly diffusion-tight closed chambers is calculated in real-time by polarographic oxygen sensors. First, endogenous respiration was measured in intact cells. For substrate-driven respiration, cells were permeabilized with 2.5 ug/ml digitonin (optimal digitonin concentration for podocytes and tubular cells was established prior to following the SUIT-010 protocol) and supplemented with 2.5 mM ADP. FAO-linked substrates (0.5 mM octanoylcarnitine plus 0.1 mM malate) were then added to the chamber using a Hamilton microsyringe, and the coupled FA-driven OCR was measured. Finally, 2 mM malate, 5 mM pyruvate, and 10 mM glutamate were added to initiate coupled NADH-linked respiration, and the additive effect of NADH-driven OCR was measured. Mitochondrial outer membrane integrity was tested by the addition of 10 uM cytochrome c. Respiration was inhibited by the addition of 100 mM sodium azide, which is a specific mitochondrial complex IV (CIV) inhibitor. Cell respiration was recorded as pmol O2 consumed for 1 s and normalized to cell numbers.
 
-## Pyruvate dehydrogenase activity assay
+### Pyruvate dehydrogenase activity assay
 
 Pyruvate dehydrogenase (PDH) activity in cells was determined using PDH Colorimetric Assay Kit (BioVision, Milpitas, CA) according to the manufacturer’s protocol. 1x106 cells were used. Absorbance at 450 nm was measured using a SpectraMax M5 plate reader (Molecular Devices, San Jose, CA).
 
-## Glucose measurement
+### Glucose measurement
 
 Glucose contents in cell lysates were quantified using the Glucose-Glo Assay (Promega, Madison, WI), according to the manufacturer’s instructions. This assay combines glucose oxidation and NADH generation to produce a luminescence signal proportional to the glucose concentration. Briefly, the cell lysates were incubated with Glucose Detection Reagent for 1 hr at room temperature, then the luminescence was measured by SpectraMax M5 plate reader (Molecular Devices, San Jose, CA).
 
-## Extracellular acidification
+### Extracellular acidification
 
 Extracellular acidification was determined by Glycolysis Assay [Extracellular Acidification] (Abcam, Cambridge, UK) according to the manufacturer’s protocol. Differentiated AS podocytes were cultured in a CO2 incubator and transferred to a CO2-free incubator at 37 °C 3 hr prior to performing the assay. A pH-sensitive reagent was added to detect an increased signal with increased acidification. Fluorescence was measured at 380 nm excitation/615 nm emission on a SpectraMax i3x multi-mode microplate reader (Molecular Devices, San Jose, CA).
 
-## Statistics
+### Statistics
 
 For each statistical test, biological sample size (n), and p-value are indicated in the corresponding figure legends. All values are presented as mean ± SD. Statistical analysis was performed using Prism GraphPad 7 software. Significant outliers were determined by the GraphPad outlier calculator and excluded from further statistical analysis. Animals were grouped according to genotypes and then randomized, and investigators were blinded for the analyses. When comparing two groups, a two-tailed Student’s t-test was performed. Otherwise, results were analyzed using One-way ANOVA followed by Holm-Sidak’s multiple comparisons. A p-value less than 0.05 was considered statistically significant. Only data from independent experiments were analyzed.
 
-## Study approval
+### Study approval
 
 All studies involving mice were approved by the Institutional Animal Care and Use Committee (IACUC) at the University of Miami. The University of Miami (UM) has an Animal Welfare Assurance on file with the Office of Laboratory Animal Welfare, NIH (A-3224–01, effective November 24, 2015). Additionally, UM is registered with the US Department of Agriculture Animal and Plant Health Inspection Service, effective December 2014, registration 58 R-007. As of October 22, 2013, the Council on Accreditation of the Association for Assessment and Accreditation of Laboratory Animal Care (AAALAC International) has continued UM’s full accreditation.

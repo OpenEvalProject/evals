@@ -43,7 +43,7 @@ In this study, we adopted a sequential neurofeedback-behavior task to test wheth
 
 ## Results
 
-## Neurofeedback control was achieved within 1 day of training
+### Neurofeedback control was achieved within 1 day of training
 
 Twelve Parkinsonian patients, who underwent bilateral implantation of DBS electrodes targeting the motor area of the STN, participated in this study during the time when the DBS leads were temporarily externalized. The position of a basketball displayed on a monitor was used as the visual feedback about the incidence of beta bursts detected in STN local field potentials (LFPs) (Figure 1A). The bipolar LFP channel and the peak frequency bands (5 Hz width) with the largest movement-related changes between 13 and 30 Hz were selected to drive the visual feedback for each hemisphere (Figure 2). Specifically, the average power in the selected beta frequency band over each 500 ms time window was used as a neurofeedback signal to control the vertical position of the basketball. In real-time, we assumed that a beta burst was detected when the average beta power within the past 500 ms time window exceeded a predefined threshold, which would result in a drop of the basketball. The patient details and patient-specific beta frequency bands are presented in Table 1. Each patient completed at least four sessions of the task with 10 trials in the ‘Training’ condition and 10 trials in the ‘No Training’ condition in each session with two hands separately (Figure 1B). The participants were asked to keep the position of the basketball high (corresponding to reduced beta bursts) during the neurofeedback phase in the ‘Training’ condition. In the ‘No Training’ control condition, they were asked to pay attention to the position of the basketball without trying to control it, though the ball was also moving toward the right as in the ‘Training’ condition, and the vertical position was controlled by the natural ongoing variations in beta activity. The average final basketball position in the vertical axis, which reflected the performance of neurofeedback control, was calculated for each tested hemisphere in each experimental condition. Paired t-test showed that the final basketball position was higher in the ‘Training’ condition compared to the ‘No Training’ condition (t20 = 4.6054, p = 0.0002, Figure 3A), and this was not consequent on physical movement that was monitored by EMGs attached to both forearms of the participants (Figure 3B).
 
@@ -55,13 +55,214 @@ Twelve Parkinsonian patients, who underwent bilateral implantation of DBS electr
 
 **Figure 2.:** (A) Resting (black) and movement-related (red) power spectral density in STN LFP recorded during the calibration procedure. The green shaded area indicates the average of the targeted beta frequency bands. (B) Group average time-frequency power spectra locked to the Go cue (red dashed line) which prompted a finger pinch movement. The white dashed rectangle indicates the average targeted beta band. The blue color displays a decrease in power relative to the pre-cue baseline (expressed as percentage change).
 
+**Table 1.**
+ Patients' details.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>G</th>
+      <th>Age (yr)</th>
+      <th>DD (yr)</th>
+      <th>U off</th>
+      <th>U on</th>
+      <th>DBS lead</th>
+      <th>Selected contact (L/R)</th>
+      <th>Beta peak (L/R Hz)</th>
+      <th>Predominant symptom(s) before surgery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>M</td>
+      <td>48</td>
+      <td>17</td>
+      <td>71</td>
+      <td>37</td>
+      <td>Bost</td>
+      <td>L03/R03</td>
+      <td>15/15</td>
+      <td>Tremor</td>
+    </tr>
+    <tr>
+      <td>2a</td>
+      <td>M</td>
+      <td>66</td>
+      <td>15</td>
+      <td>57</td>
+      <td>34</td>
+      <td>Medt</td>
+      <td>L23/R01</td>
+      <td>20/20</td>
+      <td>Mixed</td>
+    </tr>
+    <tr>
+      <td>3a</td>
+      <td>F</td>
+      <td>70</td>
+      <td>20</td>
+      <td>54</td>
+      <td>19</td>
+      <td>Medt</td>
+      <td>L01/R23</td>
+      <td>20/20</td>
+      <td>Akinetic-rigid, tremor</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>M</td>
+      <td>69</td>
+      <td>17</td>
+      <td>37</td>
+      <td>18.5</td>
+      <td>Medt</td>
+      <td>L23/R23</td>
+      <td>21/20</td>
+      <td>Akinetic-rigid, tremor</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>F</td>
+      <td>66</td>
+      <td>10</td>
+      <td>53</td>
+      <td>30</td>
+      <td>Bost</td>
+      <td>L01/R01</td>
+      <td>15/15</td>
+      <td>Akinetic-rigid</td>
+    </tr>
+    <tr>
+      <td>6b</td>
+      <td>M</td>
+      <td>65</td>
+      <td>5</td>
+      <td>34</td>
+      <td>16</td>
+      <td>Medt</td>
+      <td>L01/R23</td>
+      <td>15/25</td>
+      <td>Akinetic-rigid</td>
+    </tr>
+    <tr>
+      <td>7a,b</td>
+      <td>M</td>
+      <td>61</td>
+      <td>9</td>
+      <td>33</td>
+      <td>12</td>
+      <td>Bost</td>
+      <td>L01/R23</td>
+      <td>20/22</td>
+      <td>Tremor</td>
+    </tr>
+    <tr>
+      <td>8c</td>
+      <td>M</td>
+      <td>49</td>
+      <td>8</td>
+      <td>45</td>
+      <td>34</td>
+      <td>Bost</td>
+      <td>L01</td>
+      <td>15</td>
+      <td>Tremor</td>
+    </tr>
+    <tr>
+      <td>9c</td>
+      <td>F</td>
+      <td>57</td>
+      <td>6</td>
+      <td>48</td>
+      <td>19</td>
+      <td>Bost</td>
+      <td>L23</td>
+      <td>19</td>
+      <td>Mixed</td>
+    </tr>
+    <tr>
+      <td>10b</td>
+      <td>M</td>
+      <td>51</td>
+      <td>12</td>
+      <td>27</td>
+      <td>13</td>
+      <td>Bost</td>
+      <td>L23/R23</td>
+      <td>22/21</td>
+      <td>Akinetic-rigid</td>
+    </tr>
+    <tr>
+      <td>11a,b</td>
+      <td>M</td>
+      <td>67</td>
+      <td>6</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Bost</td>
+      <td>L23/R23</td>
+      <td>19/19</td>
+      <td>Tremor</td>
+    </tr>
+    <tr>
+      <td>12a,c</td>
+      <td>F</td>
+      <td>75</td>
+      <td>7</td>
+      <td>36</td>
+      <td>19</td>
+      <td>Medt</td>
+      <td>R12</td>
+      <td>18</td>
+      <td>Tremor, bradykinesia, freezing</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>-</td>
+      <td>62</td>
+      <td>11</td>
+      <td>45</td>
+      <td>22.9</td>
+      <td>-</td>
+      <td>-</td>
+      <td>18.9</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>-</td>
+      <td>8.8</td>
+      <td>5.1</td>
+      <td>13.1</td>
+      <td>9.1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.6</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_Patients 2, 3, 7, and 11 (a) had tremor during the experiment. Patients 6, 7, 10, and 11 (b) performed the test on two consecutive days. Patient 8, 9, and 12 (c) were only recorded on one side. G = gender; yr = year; U Off/On = UPDRS Off/On; DBS = deep brain stimulation; L/R = left/right; SEM = standard error of the mean; N/A = unknown; Bost = Vercise Cartesia Directional Lead, Boston Scientific; Medt = Quadripolar Macroelectrode, Model 3389, Medtronic._
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/60979/elife-60979-fig3-v2.jpg)
 
 **Figure 3.:** (A) The final vertical position of the basketball for each individual hemisphere (left) and group-averaged balls’ final vertical positions (mean ± SEM) in the ‘Training’ (T) and ‘No Training’ (N) conditions (right). The dots with crosses indicate the means and cross-trial SEMs for each tested hemisphere. The gray and dark-shaded dots indicate higher measurement in the ‘Training’ and ‘No Training’ conditions, respectively. The bar on the diagonal refers to the number of cases with higher measurement in each condition. The error bar plots on the right show the mean and SEM across all tested hemispheres in different conditions. (B) There was no significant difference between the rectified EMG amplitude during the neurofeedback phase in the ‘Training’ and ‘No Training’ conditions. Different colors on the left indicate the average EMGs for different hands contralateral to the tested hemispheres. The black line indicates the averaged EMG traces across hands in different conditions. The error bar plots on the right show the mean and SEM during the neurofeedback phase across hands in different conditions. (C) Group-averaged power spectra of the targeted STN LFP signals (normalized against the pre-cue resting period) in the ‘Training’ (orange) and ‘No Training’ (blue) conditions for different frequencies. Solid lines and the shaded areas show the average and SEM across all tested hemispheres. (D) The reduced beta power by neurofeedback training positively correlated with the movement-related power changes. Each pink dot indicates a hemisphere. ***p < 0.001.
 
-## Neurofeedback training reduced beta oscillations in STN LFPs and reduced beta band synchrony between the conditioned STN and ipsilateral motor cortex compared to a passive observation task
+### Neurofeedback training reduced beta oscillations in STN LFPs and reduced beta band synchrony between the conditioned STN and ipsilateral motor cortex compared to a passive observation task
 
 Compared to the ‘ready’ period, activity in STN was reduced over a broad frequency band (7–30 Hz) during the neurofeedback phase in the ‘Training’ condition (shown in Figure 3C), similar to the actual movement related modulation shown in Figure 2B. A paired t-test confirmed a significant effect of neurofeedback in facilitating beta suppression in terms of the average normalized power in the selected beta bands (t20 = −3.6975, p = 0.0014, Figure 4A). The difference in the normalized beta power between the ‘Training’ and ‘No Training’ conditions correlated positively with the percentage change in the beta power during real movement (r = 0.5896, p = 0.0057, Pearson’s correlation, Figure 3D). The neurofeedback training also led to reduced accumulated beta burst duration in the STN LFPs determined as percentage of time with beta amplitude being over the predefined threshold (t20 = −4.7415, p = 0.0001, 17.40 ± 1.44% compared to 22.43 ± 1.85%, mean ± SEM, Figure 4B), a reduced average burst duration (t20 = −3.9428, p = 0.0008, 319.6 ± 19.3 ms compared to 377.2 ± 21.5 ms, Figure 4C), and a reduced number of bursts per second (t20 = −4.8536, p = 0.0001, 0.446 ± 0.030 compared to 0.531 ± 0.033, Figure 4D). The bursts with durations longer than 400 ms were reduced more consistently compared with the shorter bursts (Figure 4—figure supplement 1). In addition, we observed an increase in the broad gamma frequency band (55–95 Hz) in the STN LFPs (t20 = 3.4899, p = 0.0023, Figure 5A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60979/elife-60979-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Normalized beta power (A), total burst duration (B), average burst duration (C), and number of beta bursts per second (D) in the STN LFP were all significantly reduced in the ‘Training’ condition compared to the ‘No Training’ condition. (E–H) The same for EEG from ipsilateral motor cortex. (I and J) The phase synchrony index (I) and spectral coherence (J) between STN and ipsilateral motor cortex were significantly reduced in ‘Training’ condition compared with ‘No Training’ condition. The dots with crosses indicate the means and cross-trial SEMs for each tested hemisphere. The gray and dark-shaded dots indicate higher measurement in the ‘Training’ and ‘No Training’ conditions, respectively. The bar on the diagonal refers to the number of cases with higher measurement in each condition. The error bar plots on the right show the mean and SEM across all tested hemispheres in different conditions; *p < 0.05, **p < 0.01/4 in (A) and (C), **p < 0.01 in (J), ***p < 0.001/4; Beta indicates hemisphere-specific beta band.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60979/elife-60979-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** X-axis indicates different burst durations and Y-axis indicates the total number of bursts in each condition. * indicates significant difference with correction for multiple comparison (p < 0.0167).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/60979/elife-60979-fig5-v2.jpg)
 
@@ -73,23 +274,128 @@ Although there was a trend of reduction in the average normalized beta power and
 
 The phase synchrony index (t20 = −2.5462, p = 0.0192, Figure 4I) and spectral coherence (z = −3.1803, p = 0.0015, Figure 4J) between the conditioned STN and ipsilateral motor cortex were significantly reduced in the beta band in the ‘Training’ condition compared with the ‘No Training’ condition, and this change did not happen in other frequency bands (‘Beta−8’ or ‘Beta+8’).
 
-## Carry-over effect of neurofeedback training
+### Carry-over effect of neurofeedback training
 
 There was a sustained carry-over effect of neurofeedback training over the short time window (~2 s) after the neurofeedback phase when a black screen was presented before the Go cue. The average normalized beta power (k = 0.6050 ± 0.0241, p < 0.0001), accumulated beta burst duration (k = 0.0892 ± 0.0144, p < 0.0001), and normalized gamma power (k = 0.9617 ± 0.0073, p < 0.0001) during the 2 s pre-Go cue were positively correlated with the average normalized beta power, beta burst duration, and normalized gamma power during the 4 s feedback phase, respectively, as identified by the generalized linear mixed effects (GLME) modeling using the measurements during the 2 s pre-Cue and 4 s feedback phase as the dependent variables and predictors, respectively. If we replaced the predictor by the experimental condition (‘Training’ or ‘No Training’) in the models, the results revealed that the average beta power (k = −0.2523 ± 0.0769, p = 0.0011) and accumulated beta burst duration (k = −0.0601 ± 0.0172, p = 0.0005) during the 2 s pre-Go cue were significantly reduced in the ‘Training’ condition compared to the ‘No Training’ condition. In contrast, the average gamma power during the 2 s pre-Go cue were significantly increased (k = 0.0781 ± 0.0296, p = 0.0083) in the ‘Training’ condition compared to the ‘No Training’ condition.
 
-## Neurofeedback training improved reaction time in subsequently cued movements
+### Neurofeedback training improved reaction time in subsequently cued movements
 
 The reaction time in response to the Go cue was significantly reduced in the ‘Training’ condition compared with the ‘No Training’ condition (487.4 ± 29.7 ms compared to 510.9 ± 32.3 ms, t20 = −2.7518, p = 0.0123, paired t-test, Figure 6A). Figure 6B shows an example of the recorded left-hand pinch force in the ‘Training’ and ‘No Training’ conditions from Patient 12.
 
-GLME modeling was used to investigate the relationship between the reaction time and the STN LFP activities in the beta (β) and gamma (γ) frequency bands considering all valid trials for both the ‘Training’ and ‘No Training’ conditions across all tested hemispheres. We focused on the neural activities during the 2 s window before the Go-cue when the visual neurofeedback was no longer presented. When STN average beta power or beta burst characteristics (average burst duration, accumulated burst duration) during the 2s before the Go-cue were used as the only predictor in separate models, all of them significantly contributed to the prediction of reaction time (Models 1–5, Table 2). We then used the model of RT ∼ k1×TorN+k2×β +k3×γ+ k4×α+1|SubID (Model 6) to evaluate if activities in broad band gamma (γ) and alpha (α) frequency bands also contributed to the prediction of reaction time. In the latter model, only average beta power (β) was used so as to keep the unit of beta similar to that of the other frequency bands used. This model confirmed the significant effect of beta-targeted neurofeedback training (i.e., whether patients were in the ‘Training’ or ‘No Training’ condition) in reducing reaction time (TorN: k1 = −0.0154 ± 0. 0071, p = 0.0297), and of a significant positive effect of the beta band power (β: k2 = 0.0061 ± 0.0020, p = 0.0017) and negative effect of gamma band power (γ:k3 = −0.0085 ± 0.0026, p = 0.0014) in the STN LFPs over the 2 s before the Go-cue. There was no significant effect of alpha band activity on reaction time (α:k4 = 0.0029 ± 0.0022, p = 0.1948). Overall, around 20% of the variance in the reaction time was being explained by the model (Model 6, R2 = 0.2072, Table 2). The significant negative k1 showed that there was an effect of ‘Training’ in reducing the reaction time, which cannot be explained by changes in the beta or gamma band power. The positive sign of k2 and negative sign of k3 indicate that reduced STN beta band power and increased gamma band power over the 2 s before the Go-cue predicted faster reaction time. In addition, we selected a subgroup (75%) of trials from the ‘Training’ and ‘No Training’ conditions that have similar normalized beta power (Figure 6—figure supplement 1A), and tested the differences in reaction time and normalized gamma power. The results showed no significant difference in the RT (t20 = −0.4374, p = 0.6665, Figure 6—figure supplement 1B) nor in the normalized gamma power (z = −0.8168, p = 0.4140, Figure 6—figure supplement 1C) between the selected trials from the ‘Training’ and ‘No Training’ conditions but with matched normalized beta power. Overall these analyses suggest that beta modulation during neurofeedback training does contribute to the changes in RT, even though other condition factors (e.g., cognitive requirement) may also contribute to the observed difference in the RT between the ‘Training’ and ‘No Training’ conditions.
+![Figure 6.](https://cdn.elifesciences.org/articles/60979/elife-60979-fig6-v2.jpg)
+
+**Figure 6.:** (A) The reaction time for each individual hemisphere (left) and group-averaged reaction time in the ‘Training’ and ‘No Training’ conditions (right). (B) Recorded left-hand pinch force in the ‘Training’ (red) and ‘No Training’ (blue) conditions for each individual trial (dashed line) and the trial-averaged curves (solid lines) from Patient 12. (C) Normalized tremor power quantified based on measurements from the accelerometer in the ‘Training’ and ‘No Training’ conditions for the nine hemispheres that displayed contralateral tremor during the experiment. (D) Normalized power in the tremor frequency band in the subthalamic nucleus local field potential for the nine hemispheres that displayed contralateral tremor during the experiment. * indicates significance after correction for multiple comparison p < 0.0167.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60979/elife-60979-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) A subgroup (75%) of trials with matched normalized beta power were selected from the ‘Training’ and ‘No Training’ conditions for each participant. When these trials with matched normalized beta power were considered, there was no significant effect of the experimental condition on the reaction time (B), normalized gamma power (C), or normalized tremor power (D). The dots with crosses indicate the means and cross-trial SEMs for each tested hemisphere. The gray and dark shading of the dots indicate higher measurement in the ‘Training’ and ‘No Training’ conditions, respectively. The bar on the diagonal refers to the number of cases with higher measurement in each condition. The error bar plots on the right show the mean and SEM across all tested hemispheres in different conditions.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60979/elife-60979-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Each dot indicates the average tremor power measured from accelerometer (X-axis) and the theta band power in the STN LFP (X-axis) in the ‘Training’ (orange) and ‘No Training’ (blue) conditions for one hemisphere.
+
+GLME modeling was used to investigate the relationship between the reaction time and the STN LFP activities in the beta ($\beta$) and gamma (γ) frequency bands considering all valid trials for both the ‘Training’ and ‘No Training’ conditions across all tested hemispheres. We focused on the neural activities during the 2 s window before the Go-cue when the visual neurofeedback was no longer presented. When STN average beta power or beta burst characteristics (average burst duration, accumulated burst duration) during the 2s before the Go-cue were used as the only predictor in separate models, all of them significantly contributed to the prediction of reaction time (Models 1–5, Table 2). We then used the model of $RT ∼ k_{1}\timesTorN+k_{2}\times\beta +k_{3}\times\gamma+ k_{4}\times\alpha+1|SubID$ (Model 6) to evaluate if activities in broad band gamma (γ) and alpha (α) frequency bands also contributed to the prediction of reaction time. In the latter model, only average beta power ($\beta$) was used so as to keep the unit of beta similar to that of the other frequency bands used. This model confirmed the significant effect of beta-targeted neurofeedback training (i.e., whether patients were in the ‘Training’ or ‘No Training’ condition) in reducing reaction time ($TorN: k_{1}$ = −0.0154 ± 0. 0071, p = 0.0297), and of a significant positive effect of the beta band power ($\beta:k_{2}$ = 0.0061 ± 0.0020, p = 0.0017) and negative effect of gamma band power ($\gamma:k_{3}$ = −0.0085 ± 0.0026, p = 0.0014) in the STN LFPs over the 2 s before the Go-cue. There was no significant effect of alpha band activity on reaction time ($\alpha:k_{4}$ = 0.0029 ± 0.0022, p = 0.1948). Overall, around 20% of the variance in the reaction time was being explained by the model (Model 6, R2 = 0.2072, Table 2). The significant negative $k_{1}$ showed that there was an effect of ‘Training’ in reducing the reaction time, which cannot be explained by changes in the beta or gamma band power. The positive sign of $k_{2}$ and negative sign of $k_{3}$ indicate that reduced STN beta band power and increased gamma band power over the 2 s before the Go-cue predicted faster reaction time. In addition, we selected a subgroup (75%) of trials from the ‘Training’ and ‘No Training’ conditions that have similar normalized beta power (Figure 6—figure supplement 1A), and tested the differences in reaction time and normalized gamma power. The results showed no significant difference in the RT (t20 = −0.4374, p = 0.6665, Figure 6—figure supplement 1B) nor in the normalized gamma power (z = −0.8168, p = 0.4140, Figure 6—figure supplement 1C) between the selected trials from the ‘Training’ and ‘No Training’ conditions but with matched normalized beta power. Overall these analyses suggest that beta modulation during neurofeedback training does contribute to the changes in RT, even though other condition factors (e.g., cognitive requirement) may also contribute to the observed difference in the RT between the ‘Training’ and ‘No Training’ conditions.
+
+**Table 2.**
+ Generalized linear mixed effects modeling details.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Model</th>
+      <th>Akaike's information criterion (AIC)</th>
+      <th>k-Value</th>
+      <th>p-Value</th>
+      <th>R2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>RT∼1+k×TorN+1|SubID</td>
+      <td>−1201.4</td>
+      <td>k=-0.0158±0.0072</td>
+      <td>p=0.0278</td>
+      <td>0.1893</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>RT∼1+k×βLFP+1|SubID</td>
+      <td>−1194.6</td>
+      <td>k=0.0061±0.0019</td>
+      <td>p=0.0011</td>
+      <td>0.1912</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>RT∼1+k×Dur1LFP+1|SubID</td>
+      <td>−1189.5</td>
+      <td>k=0.0284±0.0092</td>
+      <td>p=0.0021</td>
+      <td>0.1897</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>RT∼1+k×Dur2LFP+1|SubID</td>
+      <td>−1182.4</td>
+      <td>k=0.0274±0.0136</td>
+      <td>p=0.0436</td>
+      <td>0.1869</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>RT∼1+k×NumLFP+1|SubID</td>
+      <td>−1190</td>
+      <td>k=0.0231±0.0086</td>
+      <td>p=0.0074</td>
+      <td>0.1888</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>RT∼1+k1×TorN+k2×βLFP+k3×γLFP+k4×αLFP+1|SubID</td>
+      <td>−1236.5</td>
+      <td>k1=-0.0152±0.0071 k2=0.0069±0.0020 k3=-0.0010±0.0024 k4=0.0003±0.0013</td>
+      <td>p1=0.0316 p2=0.0008 p3=0.00003 p4=0.8365</td>
+      <td>0.2072</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>RT∼1+k×βEEG+1|SubID</td>
+      <td>−1195.7</td>
+      <td>k=0.0074±0.0019</td>
+      <td>p=0.0001</td>
+      <td>0.1924</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>RT∼1+k1×TorN+k2×βEEG+k3×αEEG+1|SubID</td>
+      <td>−1218.1</td>
+      <td>k1=-0.0158±0.0071 k2=0.0067±0.0024 k3=0.0007±0.0016</td>
+      <td>p1=0.0276 p2=0.0058 p3=0.6469</td>
+      <td>0.1965</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>RT∼1+k1×TorN+k2×βLFP+k3×γLFP+k4×βEEG+1|SubID</td>
+      <td>−1236.6</td>
+      <td>k1=-0.0154±0.0071 k2=0.0061±0.0020 k3=-0.0085±0.0026 k4=0.0029±0.0022</td>
+      <td>p1=0.0297 p2=0.0017 p3=0.0014 p4=0.1948</td>
+      <td>0.2076</td>
+    </tr>
+  </tbody>
+</table>
+
+_Response distribution: Inverse Gaussian.Link function: identity.T or N: ‘Training’ (valued 1) or ‘No Training’ (valued 0) conditions.βLFP: Average LFP beta power during the 2 s before the Go-cue.Dur1LFP: Accumulated LFP beta burst duration during the 2 s before the Go-cue.Dur2LFP: Average LFP beta burst duration during the 2 s before the Go-cue.NumLFP: LFP beta burst number during the 2 s before the Go-cue.γLFP: Average LFP gamma (55–95 Hz) power during the 2 s before the Go-cue.αLFP: Average LFP alpha (8–12 Hz) power during the 2 s before the Go-cue.βEEG: Average EEG beta power during the 2 s before the Go-cue.αEEG: Average EEG alpha (8–12 Hz) power during the 2 s before the Go-cue._
 
 When the EEG beta band and alpha band activities, and the experimental condition were considered as the only predictors in the model, the EEG beta band activity also contributed to the prediction of reaction time (k = 0.0067 ± 0.0024, p = 0.0058, Model 8, Table 2), consistent with previous findings in young healthy participants (He et al., 2020). However, when EEG beta, STN beta, and STN gamma were considered together in one model, only STN beta and STN gamma significantly contributed to the prediction of reaction time (Model 9, Table 2).
 
-## Neurofeedback training targeting STN beta activity increased tremor
+### Neurofeedback training targeting STN beta activity increased tremor
 
-Five out of the twelve participants (nine STN hemispheres) in the study displayed resting tremor during the recording, which enabled us to investigate how volitional suppression of STN beta oscillations affected tremor in Parkinson’s disease. The tremor severity, quantified based on the measurements from the tri-axial accelerometer attached to the contralateral hand, increased during the ‘Training’ condition compared to the ‘No Training’ condition contralateral to seven out of the tested nine hemispheres (Figure 6C, t8 = 3.2589, p = 0.0115). GLME modeling (Tremor ∼ k1×TorN+k2×β+k3×θ+1|SubID) confirmed the significant effect of neurofeedback training (TorN: k1 = 3.9415 ± 0.4925, p < 0.0001) on increasing tremor. It also indicated that increased tremor band activity (θ: k3 = 0.6341 ± 0.0499, p < 0.0001) and reduced beta band activity (β: k2 = −0.5971 ± 0.1990, p = 0.0028) in the STN LFPs predicted increased tremor. Overall, the model explained 58.39% of the variance in the tremor power (R2 = 0.5839). When the theta power in the EEG was included in the model, the prediction was not improved (k = −0.1526, p = 0.1103). In addition, a significantly positive correlation was observed between the tremor power and the theta band power in the STN LFP across hemispheres (R = 0.5003, p = 0.034, Pearson’s, Figure 6—figure supplement 2). There was no significant difference in the tremor severity between ‘Training’ and ‘No Training’ conditions when 75% of trials with matched normalized beta power from the two conditions were considered (t8 = −1.1152, p = 0.2971, Figure 6—figure supplement 1D). These results suggested that the difference in the experimental condition by itself did not lead to significant difference in the tremor severity between the ‘Training’ and ‘No Training’ conditions if the beta power was the same.
+Five out of the twelve participants (nine STN hemispheres) in the study displayed resting tremor during the recording, which enabled us to investigate how volitional suppression of STN beta oscillations affected tremor in Parkinson’s disease. The tremor severity, quantified based on the measurements from the tri-axial accelerometer attached to the contralateral hand, increased during the ‘Training’ condition compared to the ‘No Training’ condition contralateral to seven out of the tested nine hemispheres (Figure 6C, t8 = 3.2589, p = 0.0115). GLME modeling ($Tremor ∼ k_{1}\timesTorN+k_{2}\times\beta+k_{3}\times\theta+1|SubID$) confirmed the significant effect of neurofeedback training ($TorN: k_{1}$ = 3.9415 ± 0.4925, p < 0.0001) on increasing tremor. It also indicated that increased tremor band activity ($\theta:k_{3}$ = 0.6341 ± 0.0499, p < 0.0001) and reduced beta band activity ($\beta:k_{2}$ = −0.5971 ± 0.1990, p = 0.0028) in the STN LFPs predicted increased tremor. Overall, the model explained 58.39% of the variance in the tremor power ($R^{2}$ = 0.5839). When the theta power in the EEG was included in the model, the prediction was not improved (k = −0.1526, p = 0.1103). In addition, a significantly positive correlation was observed between the tremor power and the theta band power in the STN LFP across hemispheres (R = 0.5003, p = 0.034, Pearson’s, Figure 6—figure supplement 2). There was no significant difference in the tremor severity between ‘Training’ and ‘No Training’ conditions when 75% of trials with matched normalized beta power from the two conditions were considered (t8 = −1.1152, p = 0.2971, Figure 6—figure supplement 1D). These results suggested that the difference in the experimental condition by itself did not lead to significant difference in the tremor severity between the ‘Training’ and ‘No Training’ conditions if the beta power was the same.
 
-## Overnight learning effect of the neurofeedback training
+### Overnight learning effect of the neurofeedback training
 
 In most EEG-based neurofeedback studies, training sessions are repeated over several separate days (Engelbregt et al., 2016; Schabus et al., 2017). In this study, four participants (eight hemispheres) repeated the task on two separate, consecutive days. Comparing against Day 1, six out of the eight tested hemispheres showed increased neurofeedback control (indicated by the increased difference in the ‘Training’ and ‘No Training’ conditions) on Day 2 (Figure 7A). The other two tested hemispheres that had already achieved good neurofeedback control on Day 1 did not further improve on Day 2 (H7 and H8 in Figure 7A).
 
@@ -101,13 +407,13 @@ GLME modeling using the difference in the basketball's final position, average b
 
 To investigate whether the baseline beta power changes overnight, GLME modeling using the average beta power as dependent variable, experimental condition (‘Training’ or ‘No Training’) and experimental day (Day 1 or Day 2) as fixed predictor, and a random intercept for each hemisphere was applied. Apart from the significant interaction between experimental condition and the average beta power (k = −0.5835, p < 0.0001), the results also confirmed a significant interaction between experimental day and average beta power (k = −0.1949, p = 0.0108), which could not be explained by the different experimental conditions, suggesting a baseline reduction of the beta power over the two consecutive training days. There was no significant baseline change if we replaced average beta power by accumulated beta burst duration in the model (k = 0.0041, p = 0.8996).
 
-For the two patients (four hemispheres) who had tremor and repeated the task over two consecutive days, tremor during the ‘Training’ condition was increased more on Day 2 than Day 1 in all four hemispheres (Figure 7E). Considering all the individual trials across the two recording days for these hemispheres, GLME modeling using the average tremor power as dependent variable, experimental condition (T or N: ‘Training’ or ‘No Training’), experimental day (Day: 1 or 2), average beta power (β), and theta power (θ) in the STN LFP as fixed predictors, and a random intercept for each hemisphere confirmed significant effects for all predictors (T or N: k = 4.1901 ± 0.5696, p < 0.0001; Day: k = 3.2611 ± 0.5477, p < 0.0001; β: k = −0.6253 ± 0.2073, p = 0.0027; θ: k = 0.7016 ± 0.0487, p < 0.0001), suggesting the reduced beta and increased theta power in the STN during neurofeedback training on Day 2 associated with the increased tremor.
+For the two patients (four hemispheres) who had tremor and repeated the task over two consecutive days, tremor during the ‘Training’ condition was increased more on Day 2 than Day 1 in all four hemispheres (Figure 7E). Considering all the individual trials across the two recording days for these hemispheres, GLME modeling using the average tremor power as dependent variable, experimental condition (T or N: ‘Training’ or ‘No Training’), experimental day (Day: 1 or 2), average beta power ($\beta$), and theta power (θ) in the STN LFP as fixed predictors, and a random intercept for each hemisphere confirmed significant effects for all predictors (T or N: $k$ = 4.1901 ± 0.5696, p < 0.0001; Day: k = 3.2611 ± 0.5477, p < 0.0001; $\beta$: k = −0.6253 ± 0.2073, p = 0.0027; $\theta$: k = 0.7016 ± 0.0487, p < 0.0001), suggesting the reduced beta and increased theta power in the STN during neurofeedback training on Day 2 associated with the increased tremor.
 
 ## Discussion
 
 This is the first study to show that volitional suppression of beta bursts in the STN LFP facilitated by neurofeedback training is able to speed up movement initiation in subsequent cued movement in Parkinsonian patients. This is consistent with previous studies that demonstrate a positive correlation between purposely induced beta-power and reaction time (Khanna and Carmena, 2017; Peles et al., 2020). We also showed that the suppression of beta was accompanied by an increase in the broad gamma band activity in the STN. Both the reduced beta and increased gamma in the STN LFP before the Go-cue predicted faster reaction time.
 
-## Neurofeedback training for Parkinson’s disease
+### Neurofeedback training for Parkinson’s disease
 
 Neurofeedback training aiming to train subjects to self-regulate their neural activity has been proposed to be a promising technique to tune pathological brain activities underlying different diseases (Ros et al., 2014).
 
@@ -115,19 +421,19 @@ In the current study, online visual feedback reflected the activity that has 
 
 It should be acknowledged that proper sham control would be required to determine whether observed behavioral and electrophysiological alterations were due to veritable neurofeedback or mediated by other mental strategies (Thibault et al., 2015; Thibault et al., 2016). Our recent study (He et al., 2020) with double-blinded sham control in a similar paradigm targeting the EEG sensorimotor beta activity in young healthy participants showed that veritable neurofeedback had extra effect compared to mental strategies. Thus, considering that externalized patients provide a rare opportunity to understand the response of STN activity to interventions, we did not include a sham condition but only used veritable neurofeedback. Here we argue that veritable neurofeedback may help patients to develop an efficient mental strategy to modulate targeted pathological activities in a short period of time. Our recent study (He et al., 2020) suggested that suppression of sensorimotor cortex beta bursts facilitated by neurofeedback training could help improve movement initiation in healthy subjects. The current study suggests that suppression of STN beta bursts facilitated by neurofeedback training also led to a trend of reduced beta over the motor cortex, and reduced beta band coherence between the STN and ipsilateral motor cortex. In addition, it helped improve movement initiation in Parkinson’s disease. Even though STN beta is shown to be a more consistent biomarker for bradykinesia in Parkinson’s disease, cortical beta oscillation can be measured noninvasively and using cortical beta as neurofeedback signal may make the method more feasible in patients. However, it remains to be tested whether EEG-based neurofeedback training could be used to suppress STN beta bursts and improve movement initiation in Parkinson’s disease.
 
-## Broad band gamma activities in STN LFP for Parkinson’s disease
+### Broad band gamma activities in STN LFP for Parkinson’s disease
 
 In this study, we observed significant increase in the broad band gamma activity accompanied with reduced beta in the STN LFPs during the neurofeedback phase and during the short period of time after the neurofeedback disappeared. In addition, both the reduced beta and increased gamma in the STN LFPs before the Go-cue contributed to the prediction of shorter reaction times. The increase of gamma and reduction of beta band activity in STN have been reported during voluntary movements (Androulidakis et al., 2007; Kempf et al., 2009; Brücke et al., 2012; Brücke et al., 2013). The level of gamma increase and beta reduction during the onset of voluntary gripping movements also helps predict gripping force and movement speed (Tan et al., 2016; Lofredi et al., 2018). In the dopamine-depleted state, movement-related subcortical gamma power significantly decreased (Kempf et al., 2009; Litvak et al., 2012), particularly during the trials when peak velocity was slower than ON medication (Lofredi et al., 2018). These studies suggest that in addition to increased synchrony in the beta band, reduced subcortical gamma signaling in the dopamine-depleted state may also contribute to bradykinesia. The present study shows that Parkinsonian patients were able to purposely increase subcortical gamma band activities. The observed effect in the gamma frequency band may have been mediated by the mental strategy or arousal, since a previous study has shown that STN gamma activity increased during motor imagery and scaled with imagined gripping force (Fischer et al., 2017). We also showed that increases in gamma oscillations before the Go-cue predict faster reaction time, over and above the prediction afforded by reduced beta band activities. These results suggest that gamma oscillations may be another important treatment target for Parkinson’s disease. Treatments increasing subcortical gamma oscillations, such as medication with levodopa (Androulidakis et al., 2007), may also help improve motor initiation.
 
-## Different pathophysiology underlying akinesia-rigidity and tremor in Parkinson’s disease
+### Different pathophysiology underlying akinesia-rigidity and tremor in Parkinson’s disease
 
 Another important observation in this study is that neurofeedback training targeting beta oscillations may increase tremor, as well as tremor band activities in the STN LFP in tremulous patients. This was not just due to increased cognitive load during the neurofeedback phase since the tremor got worse on Day 2 even though neurofeedback control was improved. Our results are consistent with previous studies showing that, in the presence of tremor, neuronal oscillations at tremor frequency (3–7 Hz) tend to increase in the cortical-basal ganglia-thalamic circuit (Hirschmann et al., 2013), whereas beta power (13–30 Hz) and beta band coupling in the motor network are reduced (Qasim et al., 2016). Therefore, neurofeedback training targeting beta activity might not help patients with tremor. Such patients might be better served by neurofeedback training focusing on tremor-related oscillations.
 
-## Over-night training sessions
+### Over-night training sessions
 
 We showed that the patients’ ability to modulate their STN beta activity during the neurofeedback phase increased in Day 2 compared to Day 1, even though the baseline beta activities during rest were similar during Day 1 and Day 2. In particular, those patients who did not achieve good neurofeedback control carried on learning and showed significant improvement on Day 2 compared with Day 1. These results suggest that spaced training may facilitate further learning. However, it also remains to be tested if spaced training across multiple sessions would attenuate the connections in the targeted neural network that give rise to synchronization through Hebbian plasticity (Legenstein et al., 2008; Ros et al., 2014) and whether spaced training can lead to reduced beta synchrony even during rest outside of the neurofeedback task. It would also be interesting to test the effect of neurofeedback training spread out over longer periods as chronic sensing with bidirectional devices becomes more widely available (Herron et al., 2017; Khanna et al., 2017; Haddock et al., 2018; Houston et al., 2019).
 
-## Limitations
+### Limitations
 
 A within-participant design comparing the ‘Training’ against the ‘No Training’ conditions was used in this study to evaluate the effect of neurofeedback training. In a separate study with young healthy participants, we showed that ‘veritable feedback’ is better than ‘sham feedback’ in training participants to modulate neural activities even when using similar self-reported mental strategies (He et al., 2020). We did not use ‘sham feedback’ in the current study because intermixing ‘sham feedback’ and ‘veritable feedback’ might have had a negative impact on motivation and might have interfered with learning given the time constraints we had in the patients with externalized electrodes. Therefore, with the current study, we cannot disambiguate whether the observed effects are due to the neurofeedback training or mediated by mental strategy (motor imagery). However, the main results remain valid: Parkinsonian patients can purposely modulate pathological subcortical brain activities, and this modulation led to improved movement initialization. In addition, the more beta band reduction and increase in gamma band activities before the Go-cue predicted faster reaction time.
 
@@ -135,11 +441,11 @@ In summary, we designed a neurofeedback paradigm targeting the neural signal tha
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Twelve Parkinsonian patients (four females), who underwent bilateral implantation of DBS electrodes targeting the motor area of the STN, participated in this study. The DBS leads were temporarily externalized (3–6 days) prior to a second surgery to connect the leads to a pulse generator. The placements of the leads were confirmed by fusion of preoperative MRI and postoperative CT scans. All patients had normal or corrected-to-normal vision and an average age of 62 ± 8.8 (range 48–75) years and disease duration of 11 ± 5.1 (range 5–20) years. Patients showed good response to dopaminergic medication with mean scores of the Unified Parkinson’s Disease Rating Scale (UPDRS) of 45 ± 13.1 and 22.9 ± 9.1 for medication OFF and ON, respectively. All experiments were conducted with the patients off their dopaminergic medication overnight. The study was approved by the local ethics committees and all patients provided their informed written consent according to the Declaration of Helsinki before the experiments. The clinical details of the patients are summarized in Table 1.
 
-## Experimental protocol
+### Experimental protocol
 
 The neurofeedback training protocol comprised multiple short trials, similar to what was used in a previous study with healthy young participants (He et al., 2020). Each trial consisted of a 2–3 s period during which the patients were instructed to get ready, and a neurofeedback phase lasting 4–8 s followed by a cued motor task 2–3 s after the neurofeedback phase (see Figure A). During the neurofeedback phase, an image of a basketball was presented on a monitor with the vertical position of the basketball indicating the incidence of high amplitude beta bursts quantified in real-time based on the STN LFP measurements. The vertical movement of the basketball was sensitive to the STN beta power calculated within 500 ms long moving windows in real-time. For each update, which occurred every 250 ms (so that windows overlapped), if the calculated beta power was larger than a predefined threshold T, the basketball dropped downwards by a fixed distance. The distance of each drop of the basketball was set so that if the patient was in a resting state, the basketball would drop down to the bottom of the screen within 4–8 s due to spontaneous variations in the power of beta oscillations. If the threshold was not crossed, the ball only moved horizontally on the screen. Thus, the position of the basketball was independent from other variations in beta power that were lower than the threshold used to define beta bursts. This design reduced noise in the visual feedback, and thereby helped participants to gain a sense of agency within a short time period. In the ‘Training’ condition trials, participants were instructed to try to keep the ball floating at the top of the monitor screen during the neurofeedback phase. The patients were explicitly told that imagining moving their contralateral hand may help to improve the performance but were also encouraged to try different strategies without any real movements. In order to control for effects caused by attending to the moving visual stimulus, participants also performed the task in a ‘No Training’ condition, in which they were instructed to pay attention to the ball movement and get ready for the Go-cue without having to voluntarily control the position of the ball, though the ball was also moving toward the right as in the ‘Training’ condition, and the vertical position was controlled by the natural ongoing variations in beta activity.
 
@@ -149,43 +455,55 @@ Each experimental session consisted of 30 s of rest, a block of 10 trials in the
 
 Nine out of the twelve participants completed four sessions of the task separately with both hemispheres and contralateral arms, and the other three participants only completed the task with the dominant hand for the motor task and the contralateral STN. All trials were visually inspected and those with obvious movement artifact during the neurofeedback phase were excluded. Short breaks were provided between sessions, and the recording for each STN lasted for around 30 min. Four patients repeated the same task over two consecutive days with both hemispheres, which allowed us to investigate overnight learning effects.
 
-## Data recording
+### Data recording
 
 All recordings in this study were undertaken 3–6 days after the first surgery for bilateral DBS electrodes (Quadripolar Macroelectrode, Model 3389, Medtronic or Vercise Cartesia Directional Lead, Boston Scientific) implantation and prior to the second surgery for connecting the electrodes to the subcutaneous pulse generator. For directional DBS leads, the segmented contacts of levels 2 and 3 were ganged together to make one monopolar channel for the recording. Eight monopolar channels of bilateral STN LFPs and eight monopolar channels of EEG signals covering ‘Fz’, ‘FCz’, ‘Cz’, ‘Oz’, ‘C3’, ‘C4’, ‘CP3’, and ‘CP4’ according to the standard 10–20 system were recorded using a TMSi Porti amplifier (TMS International, The Netherlands) at a sampling rate of 2048 Hz. A common average reference was applied automatically to all recorded monopolar signals by the amplifier. The ground electrode was placed on the left forearm. Electromyography (EMG) was simultaneously recorded using the same amplifier from Flexor Carpi Radialis of both arms and the masseter muscle. One tri-axial accelerometer was taped to the back of each hand in order to monitor kinematic movements and any tremor. Generated force in the cued pinch movements was recorded using a pinch meter (P200, Biometrics Ltd). In addition, the real-time positions (X, Y) of the basketball in each trial, which allowed evaluation of the performance of neurofeedback training during the online experiment, and the trigger signals of the paradigm were recorded through an open-source toolkit named Lab Streaming Layer (LSL) (Kothe, 2014). The synchronization between different data streams was achieved through LSL and another open-source toolkit named Openvibe (Renard et al., 2010). The paradigm used in this study was developed in C++ (Visual Studio 2017, Microsoft) and the online/offline data processing was achieved in Matlab (R2018a, MathWorks, US).
 
-## Selecting the STN LFP channel and the target frequency band
+### Selecting the STN LFP channel and the target frequency band
 
 Prior to each experiment, monopolar STN LFPs and EEG data were first recorded during 60 s at rest and during 15 trials of cued finger pinch movements with each hand (Tan et al., 2015). The recorded monopolar STN LFPs were re-montaged to bipolar LFPs (through subtraction of adjacent annular or pseudo-annular contacts) prior to analysis. The movement-related power reduction for each bipolar LFP channel contralateral to the performing hand in the beta frequency band (13–30 Hz) was calculated and the bipolar LFP channel with the maximal reduction during movement was selected as the target LFP channel. A 5 Hz frequency band around the frequency showing maximal movement-related modulation ([f-2, f+2]) was determined as the individual-specific beta frequency band. The selected bipolar STN LFP channels and the selected frequency band for each STN are listed in Table 1. The frequency showing maximal movement-related modulation ranged from 17.4 Hz to 21.4 Hz across all tested STNs and coincided with the peak in the average power spectral density of the selected bipolar channel during rest (Figure 2A).
 
-## Estimating beta power in real-time to determine the position of visual feedback online
+### Estimating beta power in real-time to determine the position of visual feedback online
 
 During the online experiment, the beta power of the selected frequency band was calculated in real-time every 250 ms using a segment of 500 ms data (with 50% overlapping) recorded from the selected bipolar LFP channel. For each segment of 500 ms data, we first applied a mean subtraction followed by a 5–85 Hz band pass filter on the raw data. Next, FFT was applied to calculate the power spectrum of the filtered data and the average power of the selected frequency band was quantified as the beta band power of the current update. At the beginning of each session, data were recorded with the participant resting for 30 s, during which time the beta band power was also updated every 250 ms (119 times). From these values, we selected the 75th percentile as the threshold T for that recording session, which means that when the patient was at rest, their beta power would exceed the threshold 25% of the time (Tinkhauser et al., 2017a; Tinkhauser et al., 2017b). The threshold was recalculated at the beginning of each session in order to correct for any drift in the average beta power with time spent in the task.
 
 In this paradigm, the position of the basketball was updated every 250 ms, which corresponded to 16–32 updates during the 4–8 s of neurofeedback in each trial. For each update, the displacement of the basketball on the horizontal axis was constant, so the basketball moved from left to right at constant speed. The displacement of the basketball on the vertical axis was related to the beta band power calculated in real-time. When the updated beta power was larger than the threshold T, the basketball displayed on the screen dropped downwards by one step. The distance of each step was calibrated, so that the basketball would drop to the bottom of the screen if beta was over the threshold for 25% of the update time points during the feedback phase (4–8 s). Thus, the final vertical position of the basketball in each trial was directly associated with the number of incidences when beta power exceeded the threshold within that time window.
 
-## Offline data analysis
+### Offline data analysis
 
-## Visual feedback
+#### Visual feedback
 
 The trajectory of the basketball and the final vertical position of the basketball in each individual trial were recorded. The difference between the final vertical positions of the basketball between the ‘Training’ and ‘No Training’ conditions indicated the effect of the neurofeedback training. The variations across training days in the differences in the ball’s final vertical positions between these two conditions indicated the learning effect induced by neurofeedback training.
 
-## Motor performance
+#### Motor performance
 
 We quantified the reaction time in response to the Go-cue for each trial based on the recorded pinch force. Specifically, the measured force was first low-pass filtered with a 20 Hz cut-off frequency using a fourth order zero-phase digital filter and segmented into 4 s epochs extending between 1 s prior to and 3 s after the Go-cue. We then calculated a threshold to define pinch onset by taking the mean plus three times the standard deviation (SD) of a segment of 500 ms force data before the cue of the pinch task. The time delay between the Go-cue and the time point when the force crossed the determined threshold and sustained for at least 100 ms was taken as the RT of that trial. Force measurements from individual trials were visually inspected; those trials with obvious artifacts failed to pinch within 2 s after the Go-cue, or with a reaction time smaller than 0.2 s were excluded. Thus, for each of the 21 STN hemispheres we analyzed 44.38 ± 3.88 (mean ± SEM) and 44.57 ± 3.84 trials in the ‘Training’ and ‘No Training’ conditions, respectively, resulting in 1868 trials in total across all tested hemispheres.
 
 Hand tremor was monitored by a tri-axial accelerometer attached to the back of each hand. The power in the tremor frequency band (3–7 Hz) was quantified for each axis separately and then averaged across all axes.
 
-## Offline analysis of STN LFP and EEG
+#### Offline analysis of STN LFP and EEG
 
 The LFPs from the selected STN bipolar channel and EEGs recorded over motor cortex (C3 or C4) were further analyzed off-line with Matlab (v2018a, MathWorks, US). The signals were first band-pass filtered between 0.5 and 100 Hz and notch filtered at 50 Hz using a fourth order zero-phase digital filter. Time-frequency decomposition was obtained by continuous complex Morlet wavelet transformation with a linear frequency scale ranging from 1 to 95 Hz with 1 Hz resolution, and a linearly spaced number (4–8) of cycles across all calculated frequencies. The calculated power of each time point and each frequency was first normalized against the average value quantified across all the time periods when the participants were at rest throughout the whole experiment for that frequency, in order to derive the percentage change. The time courses of beta power percentage changes were separately averaged across trials in the ‘Training’ and ‘No Training’ conditions. The average normalized power in the frequency band and time window of interest were calculated for each individual trial for further analysis. In the offline analysis, different beta burst characteristics (accumulated duration, average duration, and number of bursts) during the first 4 s of the neurofeedback phase were recalculated as in Tinkhauser et al., 2017a. In order to investigate whether there would be a similar impact of neurofeedback training on the power and bursts in other non-targeted frequency bands, for each hemisphere, we repeated the power and burst characteristics calculation and analyses in two other frequency bands which were not overlapping with the selected 5 Hz beta band by shifting the center frequency band by 8 Hz down and up, to give ‘Beta−8 Hz’ and ‘Beta+8 Hz’ frequency bands.
 
-The connectivity between the STN LFP and ipsilateral motor cortex EEG was evaluated using the phase synchrony index (PSI, Equation 1; Lachaux et al., 2000) and spectral coherence (Coh, Equation 2; Lachaux et al., 1999) calculated based on the time-frequency decomposition results after complex Morlet transformation, and compared between experimental conditions (‘Training’ or ‘No Training’).(1)PSI= |n−1∑t=1nei(φlfpt−φeegt)|(2)Coh= |n−1∑t=1n|mlfpt||meegt|ei(φlfpt−φeegt)|2(n−1∑t=1n|mlfpt|2)(n−1∑t=1n|meegt|2)where n indicates the total time points in each trial (4 s), φlfpt and φeegt indicate the phase values of the selected LFP and EEG signals at time point t, and mlfpt and meegt indicate the amplitude values of the selected LFP and EEG signals at time point t, respectively.
+The connectivity between the STN LFP and ipsilateral motor cortex EEG was evaluated using the phase synchrony index (PSI, Equation 1; Lachaux et al., 2000) and spectral coherence (Coh, Equation 2; Lachaux et al., 1999) calculated based on the time-frequency decomposition results after complex Morlet transformation, and compared between experimental conditions (‘Training’ or ‘No Training’).
 
-## Generalized linear mixed effects modeling
+$$
+PSI= |n^{−1}\sumt=1ne^{i(\phi_{lfp}^{t}−\phi_{eeg}^{t})}|
+$$
+
+
+
+$$
+Coh= \frac{|n^{−1}\sumt=1n|m_{lfp}^{t}||m_{eeg}^{t}|e^{i(\phi_{lfp}^{t}−\phi_{eeg}^{t})}|^{2}}{(n^{−1}\sumt=1n|m_{lfp}^{t}|^{2})(n^{−1}\sumt=1n|m_{eeg}^{t}|^{2})}
+$$
+
+where n indicates the total time points in each trial (4 s), $\phi_{lfp}^{t}$ and $\phi_{eeg}^{t}$ indicate the phase values of the selected LFP and EEG signals at time point t, and $m_{lfp}^{t}$ and $m_{eeg}^{t}$ indicate the amplitude values of the selected LFP and EEG signals at time point t, respectively.
+
+#### Generalized linear mixed effects modeling
 
 GLME modeling (Matlab function fitglme) was used to assess the trial-to-trial within-subject relationship between different measurements, and how they were changed by neurofeedback training. Apart from transforming the dependent variable to eliminate the deviation from normality distribution, GLME also allows researchers to select a theoretical distribution that matches the properties of the dependent variable (Lo and Andrews, 2015). For example, the measured RT is skewed and closer to an Inverse Gaussian distribution instead of a normal Gaussian distribution, thus an Inverse Gaussian distribution was selected in the models using RT as dependent variable. When applying GLME modeling, data from all valid individual trials from all tested hemispheres were considered, and the average power (10log10 transferred to dB) was used when applicable. The slope(s) between the predictor(s) and the dependent variable were set to be fixed across all hemispheres; a random intercept was set to vary by hemisphere. The details of the models were described together with the results.
 
-## Statistical analysis
+### Statistical analysis
 
 Paired t-tests (Matlab function t-test) or nonparametric Wilcoxon signed-rank test (Matlab function signrank), depending on whether the normal distribution assumption was satisfied, was used to evaluate the effect of the experimental condition (‘Training’ and ‘No Training’) on neurofeedback task performance, the motor task reaction time, tremor severity, and neural activities measured in STN LFPs and EEGs. The normal distribution assumption was tested using Anderson–Darling test (Matlab function adtest) (Anderson and Darling, 1952). Multiple comparisons applied to different measurements were corrected using Bonferroni correction.
 

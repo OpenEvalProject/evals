@@ -41,6 +41,47 @@ The discontinuity theory proposes that effector immune responses are triggered b
 
 An immune response may be due to all sorts of sudden changes, and could be related to motifs being recognized and/or changes to the immune system (such as the migration of motifs or immune cells from one tissue to another, or the rapid appearance of a pathogen or a tumour). What clearly distinguishes the discontinuity theory from the self-nonself theory is that the criterion of immunogenicity is not the origin of the antigen (as it is in the self-nonself framework): rather, it is the speed of change in the relevant tissue (Table 1). Therefore, persistent or slowly appearing 'nonself motifs' are tolerated by the immune system, while fast-appearing 'self motifs' cause an effector response.
 
+**Table 1.**
+ Different theories of immunogenicity.The self-nonself theory and the discontinuity theory of immunity predict the same outcomes for persistent or slowly changing endogenous (self) elements, and also for suddenly appearing and/or rapidly changing exogenous (nonself) elements. The theories make different predictions for rapidly changing endogenous elements, and for persistent or slowly changing exogenous elements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Motifs</th>
+      <th>Examples</th>
+      <th>Self-nonself theory</th>
+      <th>Discontinuity theory</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rapidly changing endogenous elements</td>
+      <td>- Some significant bodily transformations, when uncontrolled (e.g., puberty, metamorphosis, pregnancy)</td>
+      <td>tolerogenic response</td>
+      <td>effector response</td>
+    </tr>
+    <tr>
+      <td>Persistent or slowly changing endogenous elements</td>
+      <td>- Usual functioning of the body</td>
+      <td>tolerogenic response</td>
+      <td>tolerogenic response</td>
+    </tr>
+    <tr>
+      <td>Persistent or slowly changing exogenous elements</td>
+      <td>- Many components of the microbiota acquired early during ontogeny - Chronic viruses</td>
+      <td>effector response</td>
+      <td>tolerogenic response</td>
+    </tr>
+    <tr>
+      <td>Suddenly appearing and/or rapidly changing exogenous elements</td>
+      <td>- Microorganisms that invade the organism suddenly - Most grafts</td>
+      <td>effector response</td>
+      <td>effector response</td>
+    </tr>
+  </tbody>
+</table>
+
 This could be relevant for the field of onco-immunology (Ribas and Wolchok, 2018; Pauken and Wherry, 2015). For example, the discontinuity theory predicts that a slowly growing tumour triggers a tolerogenic immune response, whereas a tumour that is growing rapidly (or a tumour in a microenvironment that is changing rapidly) triggers an effector response. The discontinuity theory has also been used to shed light on a range of different topics, including the effects of chemotherapeutic agents on immunomodulation in cancer (Hodge et al., 2013), the constant 'education' of natural killer cells to ensure tolerance of bodily constituents (Boudreau and Hsu, 2018), repeated vaccinations in immunocompromised individuals (Rinaldi et al., 2014), and mathematical models of immune activation (Sontag, 2017). Depending on future experimental results, this theory will be enriched, revised or, perhaps, abandoned.
 
 ## Conclusion

@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.04550.001 How generalist parasites with wide host ranges can evolve is a central question in parasite evolution. Albugo candida is an obligate biotrophic parasite that consists of many physiological races that each specialize on distinct Brassicaceae host species. By analyzing genome sequence assemblies of five isolates, we show they represent three races that are genetically diverged by ∼1%. Despite this divergence, their genomes are mosaic-like, with ∼25% being introgressed from other races. Sequential infection experiments show that infection by adapted races enables subsequent infection of hosts by normally non-infecting races. This facilitates introgression and the exchange of effector repertoires, and may enable the evolution of novel races that can undergo clonal population expansion on new hosts. We discuss recent studies on hybridization in other eukaryotes such as yeast, Heliconius butterflies, Darwin's finches, sunflowers and cichlid fishes, and the implications of introgression for pathogen evolution in an agro-ecological environment. DOI: http://dx.doi.org/10.7554/eLife.04550.001
+How generalist parasites with wide host ranges can evolve is a central question in parasite evolution. Albugo candida is an obligate biotrophic parasite that consists of many physiological races that each specialize on distinct Brassicaceae host species. By analyzing genome sequence assemblies of five isolates, we show they represent three races that are genetically diverged by ∼1%. Despite this divergence, their genomes are mosaic-like, with ∼25% being introgressed from other races. Sequential infection experiments show that infection by adapted races enables subsequent infection of hosts by normally non-infecting races. This facilitates introgression and the exchange of effector repertoires, and may enable the evolution of novel races that can undergo clonal population expansion on new hosts. We discuss recent studies on hybridization in other eukaryotes such as yeast, Heliconius butterflies, Darwin's finches, sunflowers and cichlid fishes, and the implications of introgression for pathogen evolution in an agro-ecological environment.
 
 ## Introduction
 
@@ -47,15 +47,179 @@ Much of the ecology and evolution of A. candida remains unknown, but with its ma
 
 ## Results
 
-## A. candida host specificity: single race isolates are host specific
+### A. candida host specificity: single race isolates are host specific
 
 AcNc2 was recovered from infected leaves of A. thaliana Eri-1 field-grown plants in Norwich (UK) in 2007. AcEm2 was isolated from wild C. bursa-pastoris in Kent (UK) in 1993 (Borhan et al., 2008). Isolate AcBoT was harvested from infected inflorescences of B. oleracea cultivar ‘Bordeaux F1’ in Lincolnshire in May 2009, and another isolate AcBoL was harvested from infected leaves of B. oleracea in Lincolnshire (UK) in January 2009. Races were single spore purified (Kemen et al., 2011). The Ac2V isolate virulent on B. juncea was provided by M Borhan (Agriculture and Agri-Food, Canada [Links et al., 2011]) and single-spore purified.
 
-We tested the virulence of single race infections of AcNc2, Ac2V and AcBoT on different host species and cultivars. AcNc2 was propagated on A. thaliana Ws-2. Two B. juncea cultivars (‘Cutlass’ and ‘Czerniac’) and 18 cultivars of B. oleracea were resistant to AcNc2. We screened 356 A. thaliana accessions for their susceptibility to AcNc2 and 38.5% were susceptible (Table 1, Supplementary files 1, 2). Race Ac2V was originally isolated in Canada on B. juncea (Rimmer et al., 2000). We confirmed virulence of Ac2V on B. juncea by spray inoculation of B. juncea ‘Cutlass’ and ‘Czerniac’. On 3-week-old A. thaliana plants, all 107 tested accessions were resistant. Two B. oleracea cultivars were also resistant to Ac2V (Table 1, Supplementary files 1, 2). Race AcBoT was virulent on all 15 tested cultivars of B. oleracea. In contrast, 34 accessions of A. thaliana were fully resistant to AcBoT, as were Brassica rapa and B. juncea cultivars (Table 1, Supplementary file 1). These tests confirm that A. candida races show pronounced host specificity to distinct host species. While we cannot prove that there are no host species in nature that support growth of more than one of the three races we define here, our experiments and all literature strongly suggest that Ac2V only grows on B. juncea, and on some accessions of B. rapa, a diploid ancestor of tetraploid B. juncea (Kole et al., 2002), AcBoT and AcBoL only grow on B. oleracea, and AcNc2 and AcEm2 can only grow on a subset of Arabidopsis and Capsella genotypes. Genetic exchange between races is unlikely to occur unless they colonize the same host. In our study, only the immune-compromised A. thaliana Ws-2-eds1 mutant was susceptible to all races.10.7554/eLife.04550.003Table 1.Virulence of the A. candida races on different plant host accessionsDOI: http://dx.doi.org/10.7554/eLife.04550.003A. candida raceArabidopsis thalianaBrassica rapaBrassica junceaeBrassica oleraceae+−+−+−+−AcNc21372190101018AcBoT1*340102150Ac2V1*,†1071‡4‡6‡0‡02+ Host-pathogen compatible interactions (number of susceptible accessions).− Host-pathogen incompatible interactions (number of resistant accessions).*A. thaliana Ws-eds1 (enhanced disease susceptibility) mutants were susceptible to all tested A. candida races.†In the laboratory conditions, the cotyledons of the A. thaliana accession Ws-3 were found to be susceptible to the Ac2V (Cooper et al., 2008).‡Data from (Rimmer et al., 2000) incorporated; in this study, one cultivar B. rapa (CrGC1-18, rapid-cycling accession) was infected by Ac2V race and four other tested cultivars (‘Torch’, ‘Colt’, ‘Horizon’, ‘Reward’) were incompatible with Ac2V race. All analysed cultivars of B. juncea (CrGC4-1S, ‘Burgonde’, ‘Domo’, ‘Cutlass’) were susceptible to Ac2V.
+We tested the virulence of single race infections of AcNc2, Ac2V and AcBoT on different host species and cultivars. AcNc2 was propagated on A. thaliana Ws-2. Two B. juncea cultivars (‘Cutlass’ and ‘Czerniac’) and 18 cultivars of B. oleracea were resistant to AcNc2. We screened 356 A. thaliana accessions for their susceptibility to AcNc2 and 38.5% were susceptible (Table 1, Supplementary files 1, 2). Race Ac2V was originally isolated in Canada on B. juncea (Rimmer et al., 2000). We confirmed virulence of Ac2V on B. juncea by spray inoculation of B. juncea ‘Cutlass’ and ‘Czerniac’. On 3-week-old A. thaliana plants, all 107 tested accessions were resistant. Two B. oleracea cultivars were also resistant to Ac2V (Table 1, Supplementary files 1, 2). Race AcBoT was virulent on all 15 tested cultivars of B. oleracea. In contrast, 34 accessions of A. thaliana were fully resistant to AcBoT, as were Brassica rapa and B. juncea cultivars (Table 1, Supplementary file 1). These tests confirm that A. candida races show pronounced host specificity to distinct host species. While we cannot prove that there are no host species in nature that support growth of more than one of the three races we define here, our experiments and all literature strongly suggest that Ac2V only grows on B. juncea, and on some accessions of B. rapa, a diploid ancestor of tetraploid B. juncea (Kole et al., 2002), AcBoT and AcBoL only grow on B. oleracea, and AcNc2 and AcEm2 can only grow on a subset of Arabidopsis and Capsella genotypes. Genetic exchange between races is unlikely to occur unless they colonize the same host. In our study, only the immune-compromised A. thaliana Ws-2-eds1 mutant was susceptible to all races.
 
-## Genome assemblies of A. candida isolates
+**Table 1.**
+ Virulence of the A. candida races on different plant host accessions
 
-The AcNc2 A. candida assembly was used as the reference in this study, and comprises 34 Mb in 5212 contigs of ∼160-fold coverage (Table 2). We assembled ∼73% of an estimated 45 Mb genome of A. candida AcNc2 (Voglmayr and Greilhuber, 1998; Links et al., 2011). In a previous study, a similar proportion (76%) of the A. candida Ac2V race genome was assembled (Links et al., 2011). The unassembled part of the genome (∼11 Mb) is likely to include repeats and duplicated sequences. Repeat sequences constitute ∼17.4% of the AcNc2 assembly. Approximately 8% of annotated repeats represent collapsed regions with coverage several times higher than average, so the real repeat content may be higher.10.7554/eLife.04550.004Table 2.Summary of the A. candida AcNc2, AcEm2, AcBoT, AcBoL and Ac2V genome assembliesDOI: http://dx.doi.org/10.7554/eLife.04550.004AcNc2AcEm2AcBoTAcBoLAc2VNumber of contigs521211,58111,92911,14312,210N50 length (bp)41,07829,32614,67314,95324,005N50 number231284584581353Mean contig length (bp)66102668278129982770Assembly size (bp)34,454,16933,409,14633,184,52633,409,85633,823,601GC content (%)43.19%43.09%43.15%43.15%43.11%CEGMA gene space coverage (%)*93.55%92.74%93.55%93,13%92.34%Average genome coverage160150140140200Repeat content (%)17.4%NANANANAPredicted genes10,907NANANANA*Completeness of the gene space in the different genome assemblies was estimated using CEGMA pipeline; the presence of over 90% of core eukaryotic genes in the assembly serves as an indication of a overall complete gene space.
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">A. candida race</th>
+      <th colspan="2">Arabidopsis thaliana</th>
+      <th colspan="2">Brassica rapa</th>
+      <th colspan="2">Brassica junceae</th>
+      <th colspan="2">Brassica oleraceae</th>
+    </tr>
+    <tr>
+      <th>+</th>
+      <th>−</th>
+      <th>+</th>
+      <th>−</th>
+      <th>+</th>
+      <th>−</th>
+      <th>+</th>
+      <th>−</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AcNc2</td>
+      <td>137</td>
+      <td>219</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>AcBoT</td>
+      <td>1*</td>
+      <td>34</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>15</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ac2V</td>
+      <td>1*,†</td>
+      <td>107</td>
+      <td>1‡</td>
+      <td>4‡</td>
+      <td>6‡</td>
+      <td>0‡</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_+ Host-pathogen compatible interactions (number of susceptible accessions).− Host-pathogen incompatible interactions (number of resistant accessions).*A. thaliana Ws-eds1 (enhanced disease susceptibility) mutants were susceptible to all tested A. candida races.†In the laboratory conditions, the cotyledons of the A. thaliana accession Ws-3 were found to be susceptible to the Ac2V (Cooper et al., 2008).‡Data from (Rimmer et al., 2000) incorporated; in this study, one cultivar B. rapa (CrGC1-18, rapid-cycling accession) was infected by Ac2V race and four other tested cultivars (‘Torch’, ‘Colt’, ‘Horizon’, ‘Reward’) were incompatible with Ac2V race. All analysed cultivars of B. juncea (CrGC4-1S, ‘Burgonde’, ‘Domo’, ‘Cutlass’) were susceptible to Ac2V._
+
+### Genome assemblies of A. candida isolates
+
+The AcNc2 A. candida assembly was used as the reference in this study, and comprises 34 Mb in 5212 contigs of ∼160-fold coverage (Table 2). We assembled ∼73% of an estimated 45 Mb genome of A. candida AcNc2 (Voglmayr and Greilhuber, 1998; Links et al., 2011). In a previous study, a similar proportion (76%) of the A. candida Ac2V race genome was assembled (Links et al., 2011). The unassembled part of the genome (∼11 Mb) is likely to include repeats and duplicated sequences. Repeat sequences constitute ∼17.4% of the AcNc2 assembly. Approximately 8% of annotated repeats represent collapsed regions with coverage several times higher than average, so the real repeat content may be higher.
+
+**Table 2.**
+ Summary of the A. candida AcNc2, AcEm2, AcBoT, AcBoL and Ac2V genome assemblies
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>AcNc2</th>
+      <th>AcEm2</th>
+      <th>AcBoT</th>
+      <th>AcBoL</th>
+      <th>Ac2V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of contigs</td>
+      <td>5212</td>
+      <td>11,581</td>
+      <td>11,929</td>
+      <td>11,143</td>
+      <td>12,210</td>
+    </tr>
+    <tr>
+      <td>N50 length (bp)</td>
+      <td>41,078</td>
+      <td>29,326</td>
+      <td>14,673</td>
+      <td>14,953</td>
+      <td>24,005</td>
+    </tr>
+    <tr>
+      <td>N50 number</td>
+      <td>231</td>
+      <td>284</td>
+      <td>584</td>
+      <td>581</td>
+      <td>353</td>
+    </tr>
+    <tr>
+      <td>Mean contig length (bp)</td>
+      <td>6610</td>
+      <td>2668</td>
+      <td>2781</td>
+      <td>2998</td>
+      <td>2770</td>
+    </tr>
+    <tr>
+      <td>Assembly size (bp)</td>
+      <td>34,454,169</td>
+      <td>33,409,146</td>
+      <td>33,184,526</td>
+      <td>33,409,856</td>
+      <td>33,823,601</td>
+    </tr>
+    <tr>
+      <td>GC content (%)</td>
+      <td>43.19%</td>
+      <td>43.09%</td>
+      <td>43.15%</td>
+      <td>43.15%</td>
+      <td>43.11%</td>
+    </tr>
+    <tr>
+      <td>CEGMA gene space coverage (%)*</td>
+      <td>93.55%</td>
+      <td>92.74%</td>
+      <td>93.55%</td>
+      <td>93,13%</td>
+      <td>92.34%</td>
+    </tr>
+    <tr>
+      <td>Average genome coverage</td>
+      <td>160</td>
+      <td>150</td>
+      <td>140</td>
+      <td>140</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Repeat content (%)</td>
+      <td>17.4%</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Predicted genes</td>
+      <td>10,907</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Completeness of the gene space in the different genome assemblies was estimated using CEGMA pipeline; the presence of over 90% of core eukaryotic genes in the assembly serves as an indication of a overall complete gene space._
 
 Ab initio gene predictions were conducted with several gene prediction programs, resulting in 10,907 predicted gene models. About 90% (9830) of the predicted proteins have homologous sequences in the proteome of A. candida Ac2V race (15,824 genes) (Links et al., 2011). In about 1000 cases, when we predict a single copy gene in the AcNc2 race, Links and co-authors (2011) have predicted multi-gene families in the Ac2V race, explaining the discrepancy in the predicted gene number for two assemblies.
 
@@ -63,49 +227,49 @@ Only 37% of AcNc2 proteins showed significant sequence similarity to known prote
 
 915 genes in the AcNc2 assembly are predicted to encode putative proteins with amino-terminal secretory signal peptides, but no trans-membrane domain. Only 34% of the predicted secretome was functionally annotated (BLASTP, E-value ≤ 10−5), including 115 proteins (proteases, hydrolases, elicitin-like proteins, elicitors, protease inhibitors) that could be involved in plant cell wall degradation and protection against host defense enzymes. In addition to the 35 CHXC proteins (Tyler et al., 2006), further candidate virulence factors were identified including 19 homologs of the Phytophthora Crinkler effectors (Haas et al., 2009), and another 23 secreted proteins with ‘RXLR’ and 35 proteins with similar ‘RXLQ’ motifs. Both motifs are located in the N-terminal part of protein after the predicted signal peptide, thus resembling the RXLR effectors of Phytophthora infestans and Hyaloperonospora arabidopsidis (Haas et al., 2009; Baxter et al., 2010), but not having any other significant sequence similarity to these proteins.
 
-After carrying out several assemblies based on different k-mer lengths, the quality of each assembly was assessed with various parameters and one best assembly was chosen for each isolate (
+After carrying out several assemblies based on different k-mer lengths, the quality of each assembly was assessed with various parameters and one best assembly was chosen for each isolate (Table 2). The high similarity of the five A. candida isolates enabled us to conclude we had sequenced three ‘races’, within which AcNc2 and AcEm2 were isolates of the same race and AcBoT and AcBoL were also isolates of the same race (Figure 1). Therefore, genome comparisons were first conducted on one representative from each race (AcNc2, Ac2V and AcBoT), from each of which ∼33–34 Mb of genome was assembled (Table 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04550/elife-04550-fig1-v2.jpg)
 
-**Figure 1.:** Albugo candida isolates fall into three divergent races.BEAST tree constructed based on using contig 1 (398,508 bp) shows the divergence among the three A. candida races (AcEm2 and AcNc2; AcBoT and AcBoL; Ac2V). Blue bars represent the 95% Higher Posterior Density (HPD). Here, we used a strict molecular clock fixed at 1.0 in order to show the relationship in the scale of substitutions per site.DOI: http://dx.doi.org/10.7554/eLife.04550.005
+**Figure 1.:** BEAST tree constructed based on using contig 1 (398,508 bp) shows the divergence among the three A. candida races (AcEm2 and AcNc2; AcBoT and AcBoL; Ac2V). Blue bars represent the 95% Higher Posterior Density (HPD). Here, we used a strict molecular clock fixed at 1.0 in order to show the relationship in the scale of substitutions per site.
 
-## Genome-wide similarity between races with non-overlapping host range
+### Genome-wide similarity between races with non-overlapping host range
 
-To assess the overall genome-wide similarity between races, we performed alignments of reads against the AcNc2 reference assembly. For the majority of the AcNc2 genome, we observed a significant positive correlation between read depth in the reference assembly and mapping depth of the Ac2V and AcBoT reads (r = 0.65, p < 2.2e-16;
+To assess the overall genome-wide similarity between races, we performed alignments of reads against the AcNc2 reference assembly. For the majority of the AcNc2 genome, we observed a significant positive correlation between read depth in the reference assembly and mapping depth of the Ac2V and AcBoT reads (r = 0.65, p < 2.2e-16; Figure 2A). Some AcNc2 regions (3–4% of the assembly) showed low or zero coverage by Ac2V and/or AcBoT reads (Figure 2—figure supplement 1), suggesting the presence of highly divergent or unique regions amongst the races. These are gene sparse regions (150 and 234 genes predicted in the AcNc2, respectively), without apparent enrichment for genes encoding for secreted proteins (χ2 = 0.11, d.f. = 1, p > 0.7). Amplification of randomly selected AcNc2 genes from these regions revealed that four of the selected five genes are indeed absent/or highly diverged in the AcBoT and Ac2V races, and present in the AcNc2 genome.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04550/elife-04550-fig2-v2.jpg)
 
-**Figure 2.:** A. candida races using alignments of Illumina reads against the AcNc2 assembly.(A) Positive correlation between the depths of coverage of the reference assembly (AcNc2) by the Ac2V and AcBoT reads. For the reference contigs less than 20 kb, the mean coverage was calculated across the whole contig length and log-transformed. For the contigs over 20 kb, the mean coverage was calculated for the sliding window of 20 kb and log-transformed. Y-axis shows the log-transformed depth of the reference coverage by the Ac2V reads; X-axis shows the log-transformed depth of the reference coverage by the AcBoT reads. (B) Nucleotide identity amongst the homologous genomic regions of Ac2V, AcBoT and AcNc2. The mean identity was calculated for the sliding window of 20 kb.DOI: http://dx.doi.org/10.7554/eLife.04550.006
+**Figure 2.:** (A) Positive correlation between the depths of coverage of the reference assembly (AcNc2) by the Ac2V and AcBoT reads. For the reference contigs less than 20 kb, the mean coverage was calculated across the whole contig length and log-transformed. For the contigs over 20 kb, the mean coverage was calculated for the sliding window of 20 kb and log-transformed. Y-axis shows the log-transformed depth of the reference coverage by the Ac2V reads; X-axis shows the log-transformed depth of the reference coverage by the AcBoT reads. (B) Nucleotide identity amongst the homologous genomic regions of Ac2V, AcBoT and AcNc2. The mean identity was calculated for the sliding window of 20 kb.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/04550/elife-04550-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Proportion of mean coverage is a measure relative to the depth of coverage of the reference reads mapped backed to the reference assembly. The proportion of AcNc2 assembly not covered by AcBoT and/or Ac2V reads (≤10% of the mean coverage) was 3.17% (971,030 bp) in Ac2V and 4.21% (1,285,877 bp) in AcBoT.DOI: http://dx.doi.org/10.7554/eLife.04550.007
+**Figure 2—figure supplement 1.:** Proportion of mean coverage is a measure relative to the depth of coverage of the reference reads mapped backed to the reference assembly. The proportion of AcNc2 assembly not covered by AcBoT and/or Ac2V reads (≤10% of the mean coverage) was 3.17% (971,030 bp) in Ac2V and 4.21% (1,285,877 bp) in AcBoT.
 
-The overall mean level of nucleotide identity in the homologous genomic regions amongst races is ∼99% (
+The overall mean level of nucleotide identity in the homologous genomic regions amongst races is ∼99% (Figure 2B). We verified 25 polymorphic genomic regions by Sanger sequencing (Supplementary file 3). We used the longest of all contigs from AcNc2, ‘contig 1’ (398,508 bp), to compare the levels of divergence between races vs the number of heterozygous positions within each race. An extremely low proportion of sites (0.03% and 0.01%) on ‘contig 1’ are heterozygous within AcNc2, AcEm2 and Ac2V races, respectively (Figure 3). Races AcBoT and AcBoL are more heterozygous than Ac2V and AcNc2, with 0.65% of nucleotide positions in ‘contig 1’ being heterozygous in AcBoT (Figure 3). Importantly, >97% of all heterozygous positions are shared in AcBoL and AcBoT (see below). In between-race comparisons, ∼1.0% of nucleotide positions on ‘contig 1’ have diverged between AcBoT, Ac2V and AcNc2.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04550/elife-04550-fig3-v2.jpg)
 
-**Figure 3.:** A. candida isolates.Mean (±5–95%CI) polymorphism expressed as the percentage observed heterozygote sites (solid symbols) and percentage nucleotide divergence (open symbols) at contig 1. Confidence intervals were calculated using a bootstrap of contig 1 after removal of indels. Isolates infecting the same host plant (i.e., AcBoT-AcBoL and AcEm2- AcNc2) show little nucleotide divergence, which indicates that they are genotypically almost identical (i.e., diverged by less than 0.05%). Nevertheless, the Brassica oleracea infecting race (AcBoT and AcBoL) possess a relatively high heterozygosity compared to the isolates of the Arabidopsis thaliana infecting race. Moreover, most of this heterozygous polymorphism is shared (low nucleotide divergence) and presence of the majority of heterozygous sites is consistent with clonal reproduction.DOI: http://dx.doi.org/10.7554/eLife.04550.008
+**Figure 3.:** Mean (±5–95%CI) polymorphism expressed as the percentage observed heterozygote sites (solid symbols) and percentage nucleotide divergence (open symbols) at contig 1. Confidence intervals were calculated using a bootstrap of contig 1 after removal of indels. Isolates infecting the same host plant (i.e., AcBoT-AcBoL and AcEm2- AcNc2) show little nucleotide divergence, which indicates that they are genotypically almost identical (i.e., diverged by less than 0.05%). Nevertheless, the Brassica oleracea infecting race (AcBoT and AcBoL) possess a relatively high heterozygosity compared to the isolates of the Arabidopsis thaliana infecting race. Moreover, most of this heterozygous polymorphism is shared (low nucleotide divergence) and presence of the majority of heterozygous sites is consistent with clonal reproduction.
 
-## Mosaic-like genome structure of A. candida races
+### Mosaic-like genome structure of A. candida races
 
-Polymorphisms are not homogeneously distributed among
+Polymorphisms are not homogeneously distributed among A. candida races. Some regions of the genome are identical for up to 10,000 base pairs, whereas the local nucleotide identity is as low as 89% in other regions of up to 5 kb (Figure 2B). We examined 133 contigs (12,373,253 bp), covering 38% of the reference assembly. Stretches of nucleotide similarity amongst races are distributed in a block-like structure; there are regions where AcNc2 is highly similar (or identical) to AcBoT and significantly (nucleotide divergence π > 1%) diverged from Ac2V, and vice versa (Figure 4). By using multiple different algorithms that can detect recombination in DNA sequence data incorporated in the software RDP3 (Martin et al., 2010), we examined whether this pattern can be explained by genetic introgression amongst races. In addition, we used the software HybRIDS (http://www.norwichresearchpark.com/HybRIDS) to perform a probabilistic recombination analysis, calculate the coalescence time of each recombinant block, and visualize the mosaic-like genome structure.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04550/elife-04550-fig4-v2.jpg)
 
-**Figure 4.:** (A) Alignment of nucleotides in between positions 158,779 and 167,382 within ‘contig 1’ of three A. candida races (AcNc2, AcBoT and Ac2V) illustrating two recombination blocks coloured blue and green. Both blocks show high sequence similarity between races. Also shown is the sequence divergence in between blocks. Alignment gaps and monomorphic sites have been removed. (B) The sequence similarity at ‘contig 1’ amongst three A. candida races was visualised using the colours of a RBG colour triangular in the software HybRIDS (http://www.norwichresearchpark.com/HybRIDS). Areas where two contigs have the same colour (yellow, purple or turquoise) are indicative of two races sharing the same polymorphisms. The linear plot of the proportion of SNPs shared between the three pairwise comparisons between the races. Shown on the X-axis is the actual base position. The graphs were made in the R package HybRIDS (http://www.norwichresearchpark.com/HybRIDS).DOI: http://dx.doi.org/10.7554/eLife.04550.009
+**Figure 4.:** (A) Alignment of nucleotides in between positions 158,779 and 167,382 within ‘contig 1’ of three A. candida races (AcNc2, AcBoT and Ac2V) illustrating two recombination blocks coloured blue and green. Both blocks show high sequence similarity between races. Also shown is the sequence divergence in between blocks. Alignment gaps and monomorphic sites have been removed. (B) The sequence similarity at ‘contig 1’ amongst three A. candida races was visualised using the colours of a RBG colour triangular in the software HybRIDS (http://www.norwichresearchpark.com/HybRIDS). Areas where two contigs have the same colour (yellow, purple or turquoise) are indicative of two races sharing the same polymorphisms. The linear plot of the proportion of SNPs shared between the three pairwise comparisons between the races. Shown on the X-axis is the actual base position. The graphs were made in the R package HybRIDS (http://www.norwichresearchpark.com/HybRIDS).
 
 Recombination analysis of 133 contigs highlighted a total of 675 recombined blocks on 127 contigs that were significant (after Bonferroni correction) in three or more tests using RDP3 (Supplementary file 4). The combined length of all identified blocks is nearly 3 Mb or ∼25% of the analysed regions. These blocks indicate regions of genome in one race that derive from another race (or the ancestor of another race). Figure 4 illustrates the effect of genetic introgression on the pattern of nucleotide similarity between the three races in the largest contig of ∼400 kb. The sequence (dis)similarity between the three races shows a mosaic-like genome structure with large regions where races AcNc2 and AcBoT show near sequence identity (yellow blocks in Figure 4B), whilst other areas show a high level of sequence similarity between AcNc2 and Ac2V, and AcBoT and Ac2V (indicated by the purple and turquoise regions, respectively). Note that the presence of such well-defined blocks of high sequence similarity in an otherwise diverged genome is characteristic for rare introgression between organisms that show a high (yet incomplete) level of reproductive isolation. Noteworthy too is the fact that a high level of recombination (relative to the mutation rate) would homogenise the sequence divergence between the races, and hence, that this would not result in the observed mosaic-like structure.
 
-Despite the fact that introgression between races is rare, it must have occurred multiple times between the ancestors of the three races given that the coalescence times varies markedly between the different blocks (
+Despite the fact that introgression between races is rare, it must have occurred multiple times between the ancestors of the three races given that the coalescence times varies markedly between the different blocks (Figure 5). Assuming a base mutation rate of µ = 10−8 per cell cycle, with 100 cell cycles per year (i.e., a combined mutation rate of 10−6 per year), analysis in the software HybRIDS show that the most recent introgression event has occurred circa 220 years ago, whilst the oldest event occurred almost 200,000 years ago. The mean age calculated across all introgression events equals 6237 (±12,594) years (Figure 5). (With a combined mutation rate of µ = 10−7 per base per year, the range in the age of introgression would span from 2200 to 2,000,000 years). Irrespective of the mutation rate, the principal finding is that genetic introgression amongst A. candida races is an ongoing evolutionary process occurring across a wide range of evolutionary times, and that it gives rise to mosaic genomes with the introgression blocks interspersed in the recipient genomic background.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04550/elife-04550-fig5-v2.jpg)
 
-**Figure 5.:** (A) Age of the 675 recombination blocks (mutation rate of μ = 10−6) estimated using binomial mass function; (B) Boxplot of the median (plus first nation blocks and third quartile) log-age of recombination events in contigs. Only contigs with eight or more events are shown. There is no significant difference in age of events between contigs (GLM: F22, 233 = 1.06, p = 0.387).DOI: http://dx.doi.org/10.7554/eLife.04550.010
+**Figure 5.:** (A) Age of the 675 recombination blocks (mutation rate of μ = 10−6) estimated using binomial mass function; (B) Boxplot of the median (plus first nation blocks and third quartile) log-age of recombination events in contigs. Only contigs with eight or more events are shown. There is no significant difference in age of events between contigs (GLM: F22, 233 = 1.06, p = 0.387).
 
 A total of 1655 predicted genes are located in the recombined regions, and amongst these, 125 are predicted to encode secreted proteins. In the introgression regions, we identified 14 genes encoding secreted proteases and hydrolases that in some pathogens act as virulence factors (Monod et al., 2002; Soanes et al., 2007; Lebrun et al., 2009). Thus, recombination between races, resulting in introgression can act as a mechanism for exchange of virulence gene alleles. However, neither gene density nor dN/dS are enriched or depleted in regions affected by introgression, compared to regions not affected (Paired t-test: T = −0.05, p = 0.958; Mann–Whitney test: W = 3.15 × 166, p = 0.152, respectively). It is however entirely likely that by studying only a small subset of all the known races, we have underestimated the actual level of introgression across all races.
 
-## Intra-race diversity suggests clonal propagation after creation of novel adapted allele repertoires
+### Intra-race diversity suggests clonal propagation after creation of novel adapted allele repertoires
 
 To better understand the evolution and diversification of A. candida genomes, we analysed the pattern of recombination and nucleotide divergence with the inclusion of two additional A. candida isolates. AcBoL is an additional isolate from the AcBoT race and AcEm2 is an additional isolate of the AcNc2 race (see Figure 1). We found evidence for 581 recombination events, of which 335 included AcBoT or AcBoL as recombinants. These two isolates shared a recombinant block in 97.3% of recombination events (AcBoT and AcBoL = 326; AcBoT = 6; AcBoL = 3). AcNc2 and AcEm2 shared a recombinant block in 99.6% of events (AcNc2 and AcEm2 = 246; AcNc2 = 0; AcEm2 = 1). This demonstrates that the AcBoT/AcBoL and AcNc2/AcEm2 races have remained largely unchanged since their initial emergence.
 
@@ -113,11 +277,13 @@ The nucleotide diversity within genomes (i.e., the observed heterozygosity) and 
 
 With little evidence for recombination and gene flow, most nucleotide divergence between AcBoT and AcBoL must have accumulated through mutation. The nucleotide divergence between these isolates is just 0.030% (121 polymorphisms in 398,508 bp in contig 1) (Figure 3). Assuming a mutation rate of 1 × 10−8 per cell division, and 100 cell divisions per lineage per year, we estimate that these isolates could have diverged 305 (262–353) years ago. The other pair of isolates, AcNc2 and AcEm2, were collected in Norfolk in 2007 and in Kent in 1993 (160 km apart), respectively. Similar to the former two isolates, AcNc2 and AcEm2 are also nearly identical (nucleotide divergence π = 0.046%, that is, they are >99.95% identical) (Figure 3). If we again assume that their nucleotide divergence arose by mutation alone, their estimated divergence time is 890 (814–970) years. However, unlike AcBoT and AcBoL, AcNc2 and AcEm2 are much less heterozygous (see Figure 3), which suggests that another genetic mechanism, for example, loss of heterozygosity (Lamour et al., 2012), might be operating which has eradicated the gene diversity in the clonally propagating races over time.
 
-## Sequential infections abolish host specificity of susceptibility to A. candida infection
+### Sequential infections abolish host specificity of susceptibility to A. candida infection
+
+A. candida infection compromises host resistance against otherwise avirulent pathogen species (Cooper et al., 2008). Conceivably, A. candida could suppress host defenses to otherwise avirulent races of A. candida, enabling co-infection and sexual exchange. To test this we performed sequential inoculation experiments, identifying races using the genome sequences to create race-specific DNA markers. Race-specific PCR of pre-inoculated plants (Supplementary files 5, 6) shows preinfection by AcNc2 suppresses resistance in A. thaliana accession Ws-2 leaves towards the B. juncea-infecting race, Ac2V (Figure 6A). Also, preinfection by AcBoT suppresses B. oleracea resistance towards Ac2V (Figure 6B). Furthermore, defense suppression was so effective that Ac2V was able to complete its life cycle on both A. thaliana Ws-2 and B. oleracea as observed by successful subsequent infection on B. juncea from the sequentially inoculated plants. In a reciprocal experiment, preinfection of B. juncea with Ac2V enabled AcNc2 growth on B. juncea (Figure 6C). Therefore, AcNc2 not only can suppress Ac2V recognition on A. thaliana, but Ac2V is also capable of suppressing B. juncea resistance towards AcNc2. TIR-NB-LRR resistance genes likely confer Ac2V resistance in Arabidopsis (McHale et al., 2006), as Ac2V grows on an eds1-1 mutant of A. thaliana Ws-2 (Supplementary file 6; [Parker et al., 1996]). It has long been noted that Albugo sp. have a remarkable capacity to suppress immunity in their hosts (Cooper et al., 2008). We hypothesise that suppression of host innate immunity enables co-infection of hosts by races with otherwise non-overlapping host ranges, thus providing a remarkable mechanism to enable sexual genetic exchange between specialised A. candida races.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/04550/elife-04550-fig6-v2.jpg)
 
-**Figure 6.:** (A) Co-infection assay of AcNc2 followed by Ac2V onto Ws-eds1 and Ws-2. (B) Co-infection of AcBoT followed by Ac2V onto Ws-eds1 and B. oleracea (B.o). (C) Co-infection of Ac2V followed by AcNc2 onto Ws-eds1 and B. juncea (B.j). Bands highlighted in orange indicate amplification of secondary inoculum on usually non-host plants upon primary inoculation with virulent A. candida. These experiments were repeated multiple times with similar results (see Supplementary file 6).DOI: http://dx.doi.org/10.7554/eLife.04550.011
+**Figure 6.:** (A) Co-infection assay of AcNc2 followed by Ac2V onto Ws-eds1 and Ws-2. (B) Co-infection of AcBoT followed by Ac2V onto Ws-eds1 and B. oleracea (B.o). (C) Co-infection of Ac2V followed by AcNc2 onto Ws-eds1 and B. juncea (B.j). Bands highlighted in orange indicate amplification of secondary inoculum on usually non-host plants upon primary inoculation with virulent A. candida. These experiments were repeated multiple times with similar results (see Supplementary file 6).
 
 ## Discussion
 
@@ -141,11 +307,11 @@ The ability of pathogens to recombine and generate novel recombinant genotypes a
 
 ## Materials and methods
 
-## Pathogen isolation and cultivation
+### Pathogen isolation and cultivation
 
 A. candida races were isolated and propagated by first washing zoosporangia from infected leaves and then infecting A. thaliana Ws-eds1 (enhanced disease susceptibility [Parker et al., 1996]) plants. After 2 weeks, one pustule was punched out and spores were treated on ice for 30 min to release zoospores. Unhatched zoosporangia were removed by filtration and zoospores were diluted to ∼10 zoospore per ml and sprayed on A. thaliana Ws–eds1 plants (∼100 μl/plant). This procedure was repeated four times until spores were bulked up on A. thaliana Ws-eds1 plants. Zoosporangia were harvested using a homemade cyclone spore collector (Mehta and Zadoks, 1971). Subsequently, A. candida races AcEm2/AcNc2, AcBoT/AcBoL and Ac2v were propagated and maintained on A. thaliana Ws-2, B. oleracea and B. juncea, respectively.
 
-## Virulence test
+### Virulence test
 
 Host specificity was tested for the AcNc2, Ac2V and AcBoT races on a number of A. thaliana and Brassica spp. accessions (Supplementary files 1, 2). A. candida inoculations were performed using the following method: zoospores were suspended in water (105 spores/ml) and incubated on ice for 30 min; the spore suspension was then sprayed on plants using a spray gun (∼700 µl/plant), and plants were incubated in a cold room in the dark over night. Infected plants were kept under 10-hr light and 14-hr dark cycles with 20°C day and 16°C night temperature. Plants were scored susceptible if a pathogen was capable of accomplishing its life cycle and sporulation was macroscopically visible within 3 weeks after plant inoculations.
 
@@ -155,17 +321,17 @@ Primary inoculum was sprayed onto control and test plants. In the case of AcNc2 
 
 Plants from which tissue was harvested were maintained for a further 7 days before re-inoculation onto the original host of the otherwise non-virulent pathogen. This was done in order to confirm the completion of the secondarily inoculated pathogen race's lifecycle on immunosuppressed non-host plants.
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 DNA was extracted from zoosporangia according to the method described in Mckinney et al. (1995), and Illumina libraries for sequencing were constructed according to Farrer et al. (2009). Paired-end libraries of 800 bp and 400 bp insert lengths (for the race Ac2V only one library of ∼400 bp) were sequenced using Illumina Genome Analyzer II platform at the Sainsbury Laboratory Sequencing Centre (GA2). The base calling was done on the Illumina GAP v1.3 pipeline.
 
-## cDNA extraction and sequencing
+### cDNA extraction and sequencing
 
 A. thaliana Ws-0 plants were infected with A. candida AcNc2 and infected plants were harvested at 0, 2, 4, 6, 8 and 10 days after infection. RNA was isolated using TRI Reagent RNA Isolation Reagent (Sigma, UK), and subsequently enriched for mRNA with Dynabeads (Invitrogen). cDNA was prepared using the SMART cDNA Library Construction Kit (Clontech, Sunnyvale, CA) according to manufacturer's instructions. These libraries were normalized using Evrogen Duplex-specific nuclease (DSN). Normalized cDNA libraries were fragmented using Covaris sonicator and libraries prepared according to Illumina genomic library preparation kit. Libraries were sequenced on the Illumina GA2 platform.
 
 The sequence data have been deposited at the EMBL Nucleotide Sequence Database, with the accession numbers for A. candida AcNc2: SRR1811450, SRR1811464, AcEm2: SRR1806791, AcBoT: SRR1811472, SRR1811473, AcBoL: SRR1811474, Ac2V: SRR1811471.
 
-## Genome and transcriptome assembly
+### Genome and transcriptome assembly
 
 The genomic assemblies were produced using program Velvet 1.0.19 (Zerbino and Birney, 2008). Using BLAST (Altschul et al., 1990), resulting contigs were searched (BLASTN, E-value ≤ 10−5) against genomic sequences of A. thaliana TAIR 9.0 (The Arabidopsis Genome Initiative, 2000), fungi Neurospora crassa (Galagan et al., 2003), a collection of bacterial genomes (such as, Xanthomonas sp. and Pseudomonas sp.: microbialgenomics.energy.gov), and against mitochondrion of Pythium ultimum (Levesque et al., 2010) to remove potential contamination and mitochondrial DNA. The assembly of AcNc2 was processed by merging the overlapping contigs from two velvet assemblies (based on the k-mers 55 and 61) with the Minimus2 genome merge pipeline (Sommer et al., 2007) and in-house perl scripts.
 
@@ -173,7 +339,7 @@ Read alignment and mapping was performed using programs BWA (0.7.3) and SAMtools
 
 Illumina sequenced cDNA from the AcNc2 infected A. thaliana Ws-0 leaves was assembled using Velvet/Oases (Schulz et al., 2012) with different k-mer lengths (43, 45, 47, 51, 55, 57, 61, 63). We used various characteristics (total number of contigs, assembly size, longest contig length and mean contig length, and the proportion of core eukaryotic genes (KOGs) predicted by CEGMA) to assess assembly quality. Two best assemblies based on the k-mers 55 and 57 were merged using VMATCH (http://www.vmatch.de/). The cDNA orientation was predicted using Illumina generated cDNA 5′ tags. Using Bowtie aligner (Langmead et al., 2009), cDNA 5′ tags were aligned against the assembled cDNA and, based on tag counts, orientated in the 5′–3′ direction.
 
-## Gene prediction and annotation
+### Gene prediction and annotation
 
 Ab initio gene predictions were performed for A. candida AcNc2 using the Augustus gene prediction package (Stanke et al., 2006), Geneid (Blanco et al., 2002) and GeneMark (Lomsadze et al., 2005). Alternative splice variants were predicted with Augustus. To improve gene predictions, the ‘hints’ files were created using cDNA evidence and gene homology information. The generated library of AcNc2 transcripts was aligned to the AcNc2 assembly using BLAT (Kent, 2002), setting minimal identity to 92; the ‘hints’ file was produced with script blat2hints.pl provided with the Augustus package. The parameters previously obtained for the gene prediction in the A. laibachii genome project were utilized when running the Augustus and Geneid. GeneMark predictions were made with the default settings. Consensus gene models were generated with Evigan (Liu et al., 2008). Subsequently, the catalog of non-overlapping gene models was created from the Evigan, Augustus, Genemark and Geneid predictions. The gene space coverage was assessed with CEGMA (Parra et al., 2007).
 
@@ -185,23 +351,23 @@ Signal peptides and cleavage sites were predicted by the hidden Markov Model and
 
 Candidate cytoplasmic effectors carrying ‘RXLR’ motif were identified through the string search of the predicted secreted proteins using ‘R[A-Z]L[RQ]’ regular expression in the first 100 residues downstream of the signal peptide cleavage site. Crinkler's homologs were detected using BLASTP searches (E-value ≤ 10−5) against NCBI non-redundant RefSeq database (Pruitt et al., 2009). Homologs of A. laibachii ‘CHXC’ proteins were identified through Tribe-MCL clustering, also using BLASTP searches (E-value ≤ 10−5) of the A. laibachii predicted proteome, and string search for the ‘CH[A-Z]C’ motif in the first 100 residues after predicted signal peptide.
 
-## Repetitive elements
+### Repetitive elements
 
 The library of repeats in AcNc2 assembly was constructed with RepeatScout (Price et al., 2005) and was joined with the previously made library for A. laibachii (Kemen et al., 2011). This updated library in combination with RepeatMasker (http://www.repeatmasker.org/) was used for the identification of repeats and their frequencies. Transposon elements were annotated using TBLASTX searches (E-value ≤ 10−5) against the database of transposon elements, RepBase (Jurka et al., 2005).
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Phylogenetic trees were built (MrBayes program [Huelsenbeck and Ronquist, 2001]) for the nucleotide sequence alignments of the orthologous genes present in four A. candida races and A. laibachii. Trees were built for 100 single copy genes (50 core eukaryotic genes and 50 singletons with unknown function) Phylogenetic Bayesian inference and Markov chain Monte Carlo (MCMC) methods were used to estimate the posterior distribution of model parameters. We used lset = 6, gamma model, mcmc of 10 million, samfreq = 7000 and burnin = 375. Population genetic parameter ‘theta’ (Θ = 4Neμ) was estimated using mlRho program (Haubold et al., 2010). Four different topologies were inferred with equal support which warranted further investigation into the role of introgression.
 
 Bayesian Evolutionary Analysis by Sampling Trees (BEAST) software package version 1.7 (Drummond and Rambaut, 2007) was used to produce the race phylogeny (based on contig 1). BEAST implements Markov chain Monte Carlo (MCMC) algorithms for Bayesian for divergence time dating (Drummond and Rambaut, 2007). Bayesian phylogenetic trees were constructed with a HKY+G nucleotide substitution model under a strict molecular clock (with units in mutations per site) and a Yule tree prior. We ran ten independent MCMC analyses each of 10 million steps and a 10% burn-in. MCMC chain mixing was assessed using Tracer 1.5 which showed ESS >3000 for each statistic.
 
-## Recombination analyses and detection of exchanged sequence blocks
+### Recombination analyses and detection of exchanged sequence blocks
 
 Recombination events were statistically identified on contigs ≥10,000 bp using the software RDP3 using five independent detection algorithms: RDP (Heath et al., 2006), GENECONV (Padidam et al., 1999), Maxchi (Smith, 1992), Chimaera (Posada and Crandall, 2001), and 3Seq (Boni et al., 2007). Tests were conducted using a critical value α = 0.05 and p-values were Bonferroni corrected for multiple comparisons of sequences. Sequences were linear using unphase base calling and the random assignment of one of the nucleotides at each polymorphic site. Given that recombination algorithms use cis mutations to define regions of a sequence that share the same phylogenetic history, the statistical power to detect recombination is reduced when using unphased data (Darren Martin pers. comm.). This is because the signal of unphase base calling erodes any underlying signal of recombination. This procedure is conservative and underestimates the true number of recombination events because it reduces sequence similarity between the recombinant and parental sequence. Phylogenetic evidence of recombination was required to confirm a recombination event. Window sizes for each detection method were set to defaults. Only events for which the software identified the parental sequences (i.e., no ‘unknowns’) without ambiguous start and end position of the recombination block are reported and used in the analyses. Furthermore, events were only considered to be genuine if they were supported by at least three of the five detection algorithms. Hence, the estimates of the number of recombination events are conservative.
 
 The effects of recombination on the sequence similarity between three genomes was visualised using a newly developed code in the R package HybRIDS (Hybrid Recombination, Identification and Dating, Software, http://www.elsa.ac.uk/). HybRIDS uses a colour triangle to visualise the sequence similarity between aligned sequences. It calculates the colour of each 100 bp window based on the proportion of SNPs shared between the pairwise sequences. All monomorphic sites were excluded in this calculation. HybRIDS uses the additive colour system in which the primary colours used are red, green, and blue. These colours are plotted on the corners of the RGB colour triangle, which is shown in the legend as a reference. In cases where all SNPs are shared between just two of the three races, the hybrid colour is an exact 50% mix of two primary colours. The hybrid colours are yellow, purple and turquoise, and these colours suggest recent gene exchange between the two races. At such recombined regions, the third race receives its primary colour (because by definition, it must be unique at the 100 bp window and completely dissimilar from the other two races). Older recombined regions are predicted to have accumulated SNPs unique to each race, causing the block of two hybridizing races to diverge. In the graph, the colour of such areas contains more than 50% of the primary colour of that race. The colours in the centre of the triangle are pale and reflect areas where the three races share approximately similar numbers of polymorphisms. The SNPs in these pale regions, and in regions where the colours are close to the primary colours, are more likely caused by mutations than by genetic exchange. Note that primary colours can also be assigned to regions that may have recombined, but which originate from a race that was not sampled, and hence, which polymorphisms were not included in this analysis.
 
-## Dating recombination events
+### Dating recombination events
 
 We used the sequence divergence of the recombination block between the recombinant and the minor parent (i.e., the sequence donating the recombinant region) to estimate the divergence time since a recombination event. We used two dating methods, a binomial mass function and an analysis with the Bayesian Evolutionary Analysis by Sampling Trees (BEAST) software package version 1.7 (Drummond and Rambaut, 2007). A binomial mass function was used to estimate the mean divergence time of a block of given size with an observed number of SNPs. In order to correct for mutation saturation, homoplasy, back mutations and transition/transversion ratios, we converted the observed number of SNPs into the number of mutations using a JC correction (Jukes and Cantor, 1969). The probability of finding a number of SNPs less or equal to the observed number in a block of known size was calculated. The mean time is found when the binomial mass function returns a probability value p = 0.5. This approach finds the most probable age of the recombination event, and it assumes that since the recombination event, the block evolved neutrally over t years, and that each base has the chance to mutate with a probability µ per year (µ = 10−6 and 10−7). The algorithm uses a strict molecular clock, and because the mutation rate in oomycetes is unknown, we assumed µ = 10−6 as well as µ = 10−7 per base per year. The lower value of the mutation rate of µ = 10−7 was used as a more conservative estimate. Given that we do not know the mutation rate of oomycetes, the estimated dates are merely an approximation and shown to illustrate that the exchanged blocks are dated back to a wide range of evolutionary times. The simple dating method based on the binomial mass function was compared to more computationally intensive analysis with BEAST by dating 20 recombination events from the ‘contig 1’ of AcNc2 and performing a linear regression analysis to confirm application of the faster binomial algorithm to all 675 recombination events. The principle aim of these analyses was to identify whether or not recombinant regions span a range of dates (in line with the expectation under an introgression model).
 
@@ -209,6 +375,6 @@ BEAST bayesian phylogenetic trees were constructed with a HKY+G nucleotide subst
 
 Note however that the divergence estimates made by the binomial mass function and the analysis with BEAST are conservative (i.e., the true time of the recombination event are probably more recent) given that we had only three sequences in the analysis. Consequently, the ‘true’ parental sequence has probably not been sampled, which means that the observed divergence is larger than that of the actual parental (donor) sequence.
 
-## Substitution rates and selection
+### Substitution rates and selection
 
 The substitution rates (non-synonymous substitution rate per non- synonymous site (dN) and synonymous substitution rate per synonymous site (dS)) and the ratio of the dN/dS for the orthologous protein-coding sequences between three isolates were estimated with the M0 model in PAML (Yang, 2007). The dN/dS ratio is traditionally used as an indicator of the strength and type of selective constrains acting upon a gene. Values of dN/dS ≈ 1 indicate neutral evolution. Values of dN/dS significantly less than unity indicate purifying selection, whereas dN/dS significantly larger than unity suggest positive selection. The Tajima's D statistics (Tajima, 1989) were not calculated because we do not possess allele frequency data.

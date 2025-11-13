@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom
+1. MRC Integrative Epidemiology Unit (IEU), Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 
 ## Abstract
 
-Vitamin D supplements are widely prescribed to help reduce disease risk. However, this strategy is based on findings using conventional epidemiological methods which are prone to confounding and reverse causation. In this short report, we leveraged genetic variants which differentially influence body size during childhood and adulthood within a multivariable Mendelian randomization (MR) framework, allowing us to separate the genetically predicted effects of adiposity at these two timepoints in the lifecourse. Using data from the Avon Longitudinal Study of Parents and Children (ALSPAC), there was strong evidence that higher childhood body size has a direct effect on lower vitamin D levels in early life (mean age: 9.9 years, range = 8.9–11.5 years) after accounting for the effect of the adult body size genetic score (beta = −0.32, 95% CI = −0.54 to –0.10, p=0.004). Conversely, we found evidence that the effect of childhood body size on vitamin D levels in midlife (mean age: 56.5 years, range = 40–69 years) is putatively mediated along the causal pathway involving adulthood adiposity (beta = −0.17, 95% CI = −0.21 to –0.13, p=4.6 × 10 -17 ). Our findings have important implications in terms of the causal influence of vitamin D deficiency on disease risk. Furthermore, they serve as a compelling proof of concept that the timepoints across the lifecourse at which exposures and outcomes are measured can meaningfully impact overall conclusions drawn by MR studies. This work was supported by the Integrative Epidemiology Unit which receives funding from the UK Medical Research Council and the University of Bristol (MC_UU_00011/1).
+Background:Vitamin D supplements are widely prescribed to help reduce disease risk. However, this strategy is based on findings using conventional epidemiological methods which are prone to confounding and reverse causation.Methods:In this short report, we leveraged genetic variants which differentially influence body size during childhood and adulthood within a multivariable Mendelian randomization (MR) framework, allowing us to separate the genetically predicted effects of adiposity at these two timepoints in the lifecourse.Results:Using data from the Avon Longitudinal Study of Parents and Children (ALSPAC), there was strong evidence that higher childhood body size has a direct effect on lower vitamin D levels in early life (mean age: 9.9 years, range = 8.9–11.5 years) after accounting for the effect of the adult body size genetic score (beta = −0.32, 95% CI = −0.54 to –0.10, p=0.004). Conversely, we found evidence that the effect of childhood body size on vitamin D levels in midlife (mean age: 56.5 years, range = 40–69 years) is putatively mediated along the causal pathway involving adulthood adiposity (beta = −0.17, 95% CI = −0.21 to –0.13, p=4.6 × 10-17).Conclusions:Our findings have important implications in terms of the causal influence of vitamin D deficiency on disease risk. Furthermore, they serve as a compelling proof of concept that the timepoints across the lifecourse at which exposures and outcomes are measured can meaningfully impact overall conclusions drawn by MR studies.Funding:This work was supported by the Integrative Epidemiology Unit which receives funding from the UK Medical Research Council and the University of Bristol (MC_UU_00011/1).
 
 ## Introduction
 
@@ -26,19 +26,19 @@ Whilst these applications serve as powerful examples of lifecourse MR as an appr
 
 ## Materials and methods
 
-## Genetic instruments for childhood and adult body size
+### Genetic instruments for childhood and adult body size
 
 Derivation of genetic instruments for childhood and adulthood body size have been described in detail previously (Richardson et al., 2020). In brief, genome-wide association studies (GWAS) were conducted on 463,005 UKB participants (mean age: 56.5 years, range = 40–69 years) who had both reported their body size at age 10 as well as had their BMI clinically measured. Genetic instruments were identified from these analyses (based on p<5 × 10–8) and the resulting genetic score for childhood body size has been validated using measured childhood BMI in ALSPAC (Richardson et al., 2020), the Young Finns Study (Richardson et al., 2021), and the Trøndelag Health (HUNT) study (Brandkvist et al., 2020).
 
-## The Avon Longitudinal Study of Parents and Children
+### The Avon Longitudinal Study of Parents and Children
 
 ALSPAC is a population-based cohort investigating genetic and environmental factors that affect the health and development of children. The study methods are described in detail elsewhere (Boyd et al., 2013; Fraser et al., 2013). In brief, 14,541 pregnant women residents in the former region of Avon, UK, with an expected delivery date between April 1, 1991, and December 31, 1992, were eligible to take part in ALSPAC. Detailed phenotypic information, biological samples, and genetic data which have been collected from the ALSPAC participants are available through a searchable data dictionary (http://‌www.bris.ac.uk/‌alspac/‌researchers/‌our-data/). Written informed consent was obtained for all study participants. Ethical approval for this study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees. Measures of 25OHD levels were obtained from non-fasting blood samples taken from ALSPAC participants at mean age 9.9 years (range = 8.9–11.5 years) which were log-transformed to ensure normality.
 
-## Adulthood estimates of 25OHD levels
+### Adulthood estimates of 25OHD levels
 
 Genetic estimates on adulthood 25OHD were obtained from a previously conducted GWAS in UKB by Manousaki et al., 2020, as well as by Revez et al., 2020. All data on adulthood 25OHD analysed in this study were based on summary-level information and therefore the relevant ethical approval for the individual-level data analyses which generated them can be found in their corresponding articles. Despite 431,074 of the 476,169 participants with measures of childhood and adult body size in UKB also having measures of vitamin D levels (90.5%), there was little evidence of inflated type 1 error rates (based on the calculator at https://sb452.shinyapps.io/overlap) (Burgess et al., 2016). Genetic estimates were harmonized using the ‘TwoSampleMR’ R package (Hemani et al., 2018) which by default removes palindromic variants and attempts to identify proxies for any instruments whose estimates are not available in the outcome dataset.
 
-## Lifecourse MR analysis
+### Lifecourse MR analysis
 
 MR analyses to estimate genetically predicted effects of adiposity on childhood 25OHD were conducted in a one-sample setting using individual-level data from ALSPAC after generating genetic risk scores for our body size instruments with adjustment for age and sex. MR analyses to estimate effects on adulthood 25OHD were undertaken in a two-sample setting using the inverse variance weighted method (Burgess et al., 2013), as well as the weighted median and MR-Egger methods (Bowden et al., 2015; Bowden et al., 2016; Supplementary file 1—Table 1). Multivariable MR analyses were performed in one- and two-sample settings respectively for childhood and adulthood measures of 25OHD (Sanderson et al., 2019; Supplementary file 1—Table 2).
 
@@ -60,6 +60,6 @@ Effect estimates derived from MR studies are conventionally interpreted as ‘li
 
 Furthermore, our results suggest that conducting GWAS on populations of different age groups will add value in helping uncover time-varying genetic effects scattered throughout the human genome. Findings from these endeavours should facilitate studies applying techniques such as lifecourse MR, which can provide insight into the direct and indirect effects of modifiable early life exposures on disease outcomes by harnessing genetic estimates obtained from unprecedented sample sizes when conducted in a two-sample setting. That said, lifecourse MR requires careful examination of genetic instruments to ensure that they are capable of robustly separating the effects of an exposure at different timepoints over the lifecourse (Sanderson et al., 2022). Doing so may help to elucidate the critical timepoints whereby conferred risk by these exposures on disease outcomes starts to become immutable, which has important implications for improving patient care in a clinical setting.
 
-## Consent
+### Consent
 
 Written informed consent was obtained for all study participants. Ethical approval for this study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees.

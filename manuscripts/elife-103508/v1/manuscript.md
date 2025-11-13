@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04p491231 Department of Mechanical Engineering and the Materials Research Institute, Pennsylvania State University University Park United States
+1. Department of Mechanical Engineering and the Materials Research Institute, Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
 
 † Corresponding author
 

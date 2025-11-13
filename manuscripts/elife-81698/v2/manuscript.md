@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/036nfer12 Department of Computer Science, University of Central Florida Orlando United States
-2. https://ror.org/03gds6c39 Center for Precision Health, School of Biomedical Informatics, The University of Texas Health Science Center at Houston Houston United States
+1. Department of Computer Science, University of Central Florida Orlando United States ([ROR:036nfer12](https://ror.org/036nfer12))
+2. Center for Precision Health, School of Biomedical Informatics, The University of Texas Health Science Center at Houston Houston United States ([ROR:03gds6c39](https://ror.org/03gds6c39))
 
 † Corresponding author
 
 ## Abstract
 
-Runs-of-homozygosity (ROH) segments, contiguous homozygous regions in a genome were traditionally linked to families and inbred populations. However, a growing literature suggests that ROHs are ubiquitous in outbred populations. Still, most existing genetic studies of ROH in populations are limited to aggregated ROH content across the genome, which does not offer the resolution for mapping causal loci. This limitation is mainly due to a lack of methods for the efficient identification of shared ROH diplotypes. Here, we present a new method, ROH-DICE (runs-of-homozygous diplotype cluster enumerator), to find large ROH diplotype clusters, sufficiently long ROHs shared by a sufficient number of individuals, in large cohorts. ROH-DICE identified over 1 million ROH diplotypes that span over 100 single nucleotide polymorphisms (SNPs) and are shared by more than 100 UK Biobank participants. Moreover, we found significant associations of clustered ROH diplotypes across the genome with various self-reported diseases, with the strongest associations found between the extended human leukocyte antigen (HLA) region and autoimmune disorders. We found an association between a diplotype covering the homeostatic iron regulator (HFE) gene and hemochromatosis, even though the well-known causal SNP was not directly genotyped or imputed. Using a genome-wide scan, we identified a putative association between carriers of an ROH diplotype in chromosome 4 and an increase in mortality among COVID-19 patients (p-value = 1.82 × 10 −11 ). In summary, our ROH-DICE method, by calling out large ROH diplotypes in a large outbred population, enables further population genetics into the demographic history of large populations. More importantly, our method enables a new genome-wide mapping approach for finding disease-causing loci with multi-marker recessive effects at a population scale.
+Runs-of-homozygosity (ROH) segments, contiguous homozygous regions in a genome were traditionally linked to families and inbred populations. However, a growing literature suggests that ROHs are ubiquitous in outbred populations. Still, most existing genetic studies of ROH in populations are limited to aggregated ROH content across the genome, which does not offer the resolution for mapping causal loci. This limitation is mainly due to a lack of methods for the efficient identification of shared ROH diplotypes. Here, we present a new method, ROH-DICE (runs-of-homozygous diplotype cluster enumerator), to find large ROH diplotype clusters, sufficiently long ROHs shared by a sufficient number of individuals, in large cohorts. ROH-DICE identified over 1 million ROH diplotypes that span over 100 single nucleotide polymorphisms (SNPs) and are shared by more than 100 UK Biobank participants. Moreover, we found significant associations of clustered ROH diplotypes across the genome with various self-reported diseases, with the strongest associations found between the extended human leukocyte antigen (HLA) region and autoimmune disorders. We found an association between a diplotype covering the homeostatic iron regulator (HFE) gene and hemochromatosis, even though the well-known causal SNP was not directly genotyped or imputed. Using a genome-wide scan, we identified a putative association between carriers of an ROH diplotype in chromosome 4 and an increase in mortality among COVID-19 patients (p-value = 1.82 × 10−11). In summary, our ROH-DICE method, by calling out large ROH diplotypes in a large outbred population, enables further population genetics into the demographic history of large populations. More importantly, our method enables a new genome-wide mapping approach for finding disease-causing loci with multi-marker recessive effects at a population scale.
 
 ## Introduction
 
@@ -31,9 +31,23 @@ We present an efficient positional Burrows–Wheeler transform (PBWT)-based (Dur
 
 ## Results
 
-## Methods overview
+### Methods overview
 
 An ROH diplotype is a pair of homozygous haplotypes of an individual. A frequent ROH diplotype is one shared by several individuals at the same location and with the same consensus sequence. Although long and frequent ROH diplotypes are not very common, it is difficult to enumerate ROH diplotypes above a certain length and a certain frequency. We refer to frequent ROH diplotypes above a certain frequency (set of individuals) and a length as ROH clusters. As a compromise, ROH regions are traditionally aggregated into single numbers and their association with phenotypes is investigated. As a result, the loci-specific association signals of the ROHs or the allele-specific signals are likely to be lost (see Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig1-v2.jpg)
+
+**Figure 1.:** The actual ROH contents (a) including the locations and sequence identities of ROH (indicated by different colors) were lost in traditional ROH analysis pipelines (b) which aggregate the ROH contents per individual and lose the chances for identifying associating loci. ROH-DICE (c) reveals ROH diplotype clusters that are long and wide enough, thus enabling mapping loci associated with phenotypes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) and (b) show the detection power and accuracy using different L and W values without genotype errors. (c) and (d) show the detection power and accuracy with a genotyping error rate of 0.1% using different L and W values.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The target was set to L = 100 and W = 20. Various length and width values were used as cut-offs.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig1-figsupp3-v2.jpg)
 
 To solve this problem, we first processed the biallelic genotype panel (with three possible values 0, 1, and 2 at each position) by randomly assigning any heterozygous sites to homozygous sites with the reference or the alternative allele. The reasons for such processing are twofold. One, through this conversion, the true ROH diplotype clusters, mostly consisting of homozygous sites, are relatively intact and will still have a high probability of maintaining a good portion of their haplotype. However, some post hoc processing may be needed to merge the ROH diplotype clustered with minor deviations of their consensus sequences. Notably, this conversion should introduce very few false positives as when the length and the width cut-offs are large, there is little chance a non-ROH diplotype cluster will emerge. Two, this effectively converts the panel into a haplotype panel (with two possible values 0 and 2 at each position), where efficient algorithms for identifying haplotype matching blocks are available. A haplotype matching block is defined as a sequence of variant sites that have a predefined minimum frequency. An extra benefit is, by doing this conversion, no phasing of haplotypes is needed.
 
@@ -43,37 +57,297 @@ Haplotype matching blocks can be identified by leveraging the efficient sorting 
 
 **Figure 2.:** The input is a genotype panel where each line represents an individual. The heterozygous sites are depicted in violet in the genotype panel. Input genotype data are converted into a binarized genotype panel where homozygous sites are preserved. The matching blocks (clusters) are searched using consensus PBWT (cPBWT). A matching block is defined by a minimum number of sites, individuals, and also an objective function. The objective can be either maximizing the number of individuals or maximizing the number of sites. The clusters of matches are highlighted in different colors. Red represents a cluster with the maximized number of individuals and blue represents a cluster with the maximized number of sites.
 
-## Evaluation of ROH clusters in simulated data
+### Evaluation of ROH clusters in simulated data
 
-## Accuracy and power of ROH clusters
+#### Accuracy and power of ROH clusters
 
 To evaluate the detection power and accuracy of ROH clusters, we simulated 200 individuals of European ancestry using msprime (Baumdicker et al., 2022). The IBD segments were computed using the tskit (Kelleher et al., 2018). The tskit package extracts IBD segments between any two individuals and genomic loci where the alleles have been inherited along the same genealogical path. The variant sites with a minor allele frequency of less than 1% were filtered out. We then created an artificial variant call file where the number of sites corresponds to the number of sites in the original file. We iterated over each pairwise IBD segment and assigned the identical randomly selected alleles for all sites covering the IBD segment. Finally, we ran a modified version of cPBWT on the interim panel where only homozygous sites are included in each matching block.
 
 We extracted the cluster from the ground truth with the maximum overlap for each reported cluster and computed the overlap ratio. The accuracy is then defined as the average of the overlap ratios. The computed accuracy would ensure that a reported percentage of each cluster belongs to the one exact cluster in the ground truth. The power is defined as the average cumulative overlap ratios between the reported clusters and clusters from the ground truth. Large clusters may be reported as two or several smaller clusters due to the strict cut-off values for L and W, and the power would determine what percentage of the clusters could be recovered based on the cut-off values. We computed accuracy and power for the reported ROH clusters using haplotypes with 0% and 0.1% genotyping error rates for different L and W cut-off values (Figure 1—figure supplement 1). The results show that our approach is robust against genotyping errors up to 0.1%. The detection power for W = 5 and L = 50 without any error was 79.6% whereas the power for the data with the genotyping error was 79.1%. The accuracy increases with increasing the target lengths and widths. For example for W = 5 and L = 50, the accuracy was 55% whereas the accuracy for W = 20 and L = 100 was 63%. Figure 1—figure supplement 2 shows the detection power for clusters with L = 100 and W = 20, where different cut-off values were used. The figure shows that the detection power increases with smaller cut-off values. The power for the target values W = 20 and L = 100 was 34% if the cut-offs were set the same, however, the power increased to 84% with smaller cut-offs (W = 5 and L = 50). To estimate the power and accuracy for W = 100 and L = 100, we simulated another dataset containing 1000 individuals of European ancestry with a genotyping error rate of 0.1%. The simulation parameters for this dataset were the same as for the 200 samples (except the number of samples) and ground truth clusters were extracted similarly. The power was 55.96% and accuracy 52.84%, while 58.97% of the reported clusters overlap 50% or more with a ground truth cluster.
 
-## Power of ROH-DICE in association studies
+#### Power of ROH-DICE in association studies
 
-To evaluate the effectiveness of ROH-DICE in association studies, we used the ROH clusters obtained from a sample of 200 genomes of 10 Mbp. We set the minimum length of variant sites to 100 and the minimum number of samples to 5 (L = 100 and W = 5). We generated 100 phenotypes associated with an ROH cluster for each effect size ranging from 0 to 0.3, using the formula Yi=Xiβ+N(0,σ2) with  σ2 = 0.1. We choose large effect sizes so that the power can be evaluated even with small sample sizes. Here, Xi equals 1 if the sample belongs to the ROH cluster and 0 otherwise.
+To evaluate the effectiveness of ROH-DICE in association studies, we used the ROH clusters obtained from a sample of 200 genomes of 10 Mbp. We set the minimum length of variant sites to 100 and the minimum number of samples to 5 (L = 100 and W = 5). We generated 100 phenotypes associated with an ROH cluster for each effect size ranging from 0 to 0.3, using the formula $Y_{i}=X_{i}\beta+N(0,\sigma^{2})$ with  $\sigma^{2}$ = 0.1. We choose large effect sizes so that the power can be evaluated even with small sample sizes. Here, Xi equals 1 if the sample belongs to the ROH cluster and 0 otherwise.
 
 The total number of variant sites was 23,566, and we extracted 1263 ROH clusters. We calculated the p-values for both ROH clusters and all variant sites. We used a p-value cut-off of 0.05 divided by the number of tests for each phenotype to determine whether the calculated p-value was smaller than the threshold, indicating an association. For genome-wide association studies (GWAS), only one variant site within the ROH cluster, contributing to the phenotype, was required. We tested for all additive, dominant, and recessive effects (Figure 1—figure supplement 3). The figure demonstrates that ROH-DICE outperforms GWAS when a phenotype is associated with a set of consecutive homozygous sites. The maximum effect size of 0.3 resulted in ROH clusters achieving a power of 100%, whereas the additive model only achieved 11%, and the dominant and recessive models achieved 52% and 70%, respectively. The GWAS with recessive effect yields the best results among other GWAS tests, however, its power is still lower than using ROH clusters.
 
-## ROH diplotypes in UK Biobank
+### ROH diplotypes in UK Biobank
 
 Here, we searched for the clusters of ROH regions in the UK Biobank data (Bycroft et al., 2018). All autosomal chromosomes of all UK participants (487,409) were searched for ROH regions that are shared among at least 100 individuals comprising at least 100 consecutive sites. 56,972 people with self-reported non-British ethnicity in UK Biobank were filtered out. We chose a minimal number of markers that is large enough to avoid an extensive number of clusters. Moreover, the longer the ROH segment, the more likely it is due to shared ancestry rather than statistical noise. Our objective is also to select clusters with a sufficiently large number of individuals to correlate them with phenotypes. It is worth noting that in previous studies, a minimum cut-off of 100 individuals was commonly used (Lencz et al., 2007; Christofidou et al., 2015; Moreno-Grau et al., 2021). On average ~18% of sites are heterozygous, and thus for a pair of 100 sites genotype sequences, there is a very small probability that they will be mapped to the same compressed haplotype. Thus, the rate of false positives should be low. To increase statistical power for downstream association tasks, the width-maximal blocks were reported. This was achieved by running the ROH-DICE program, with a wall clock time of 18 hr and 54 min where the program was executed for all chromosomes in parallel (total CPU hours of ~242.5 hr). The maximum residence size for each chromosome was approximately 180 MB. After running the ROH-DICE program, further post-processing steps were conducted. Each individual with more than 1% heterozygous sites within the block was removed from the cluster. Any two clusters with the same consensus and the exact starting and ending positions were merged.
 
 A total of 1,880,826 ROH clusters (shared among at least 100 individuals and extending at least 100 consecutive sites) were identified in all 22 autosomal chromosomes (Supplementary file 1). The average length of these ROHs is 553,095 bp (~0.55 cM). The distribution of ROH clusters is very uneven (Figure 3a). Interestingly, the number of ROH clusters in chromosome 6 is the highest. This is mainly due to the excessive number of ROH clusters in the MHC region (65,458). Figure 4 illustrates the genome-wide coverage of the ROH clusters, with visible peaks at chromosomes 2, 6, and 8. A peak region in chromosome 2 (chr2:135755899–136827560) has been reported to harbor a high selection signal (Browning and Browning, 2020). This region contains the lactase gene (LCT) gene which includes a variant selected for lactose tolerance in the European population (Itan et al., 2009), though the current understanding of the selection pressure is more nuanced (Mathieson and Terhorst, 2022; Evershed et al., 2022; Le et al., 2022). The most prominent peak in chromosome 6 is located in the MHC region (chr6:28477797–33448354), whose details are shown in Figure 3b. The peak in chromosome 8 (chr8:42531565–42629520) contains two known genes, CHRNB3 and CHRNA6. Previous studies have demonstrated the significant role of the CHRNB3–CHRNA6 gene cluster on chromosome 8 in nicotine dependence (Wen et al., 2016). Additionally, an earlier study has identified strong evidence for selection in the CHRNB3–CHRNA6 region (Sadler et al., 2015). Surprisingly, some clusters comprise more than a hundred thousand individuals sharing the same ROH consensus. The high rate of ROH clusters in the MHC region may be attributed to the high density of markers and low recombination rates (Traherne, 2008; Lam et al., 2013). We also filtered out all ROH clusters shorter than 0.1 cM (Figure 3—figure supplement 1). There is no excessive number of ROH clusters in chromosome 6, as identified by a minimum number of variant sites. The number of samples in ROH clusters within the MHC regions reduces significantly. Although there is still a peak, it is comparable to other chromosomes such as chromosome 10 or 12 (Figure 4—figure supplement 1). In all subsequent results, we have included clusters with more than 100 sites. However, all the corresponding tables contain the genetic length of the clusters. Low recombination rate regions may contain excessive ROH clusters that we prefer not to discard since it will artificially ignore some ROH clusters driven by selection. The ROH clusters are abundant in regions with low recombination rates and also their distribution is expected to be population specific. Moreover, the ‘hotspots’ and ‘coldspots’ may vary in different populations (Pemberton et al., 2012). ‘ROH hotspots’ in study (Pemberton et al., 2012) refer to locations where the single nucleotide polymorphism (SNP)-wise ROH frequency is the 99.5th percentile among all frequencies, where a frequency was defined for each variant site. To enable a comparison with the ROH frequencies from the Pemberton et al., 2012 study, we also calculated a score for the variant sites by using the intersecting ROH clusters with the sites. We extracted ROH clusters with more individuals than the 99.5th percentile and lower than the 0.5th percentile (see Methods section). The top-ranked ROH ‘coldspot’ in the European population is located in chromosome 18 (Pemberton et al., 2012) and is also identified as below the 0.5th percentile using our method. The top-ranked ‘hotspot’ was reported in chromosome 15 for Europeans (Pemberton et al., 2012) which also overlaps with a peak for British people in chromosome 15 (72100881–72681976) in our study where the number of samples in detected ROH cluster exceeds the 99.5th percentile. The common hotspots and coldspots are listed in Supplementary files 2 and 3, respectively. However, further investigation may be required to confirm ‘hotspots’ as other factors such as marker density may contribute to excessive clusters in certain regions. We also calculated Spearman’s rank correlation coefficient (ρ) between the two datasets. The correlation coefficient between combined ROH classes in the European population (Pemberton et al., 2012) and the ROH clusters in UKBB was 0.54. Of note, Pemberton et al., 2012 defined three types of ROH clusters (short or class A, intermediate or class B, and long or class C). Our reported ROH regions are based on shared diplotypes with at least 100 SNPs. These regions may not necessarily align with all ROH classes, as variations in length and consensus may lead to differences in ROH regions.
 
-## ROH clusters and disease association
+![Figure 3.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig3-v2.jpg)
+
+**Figure 3.:** Some regions may contain multiple overlapping clusters comprising different sets of individuals. The minimum length of the ROH regions was set to 100 sites and the minimum number of individuals to 100.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig3-figsupp1-v2.jpg)
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig4-v2.jpg)
+
+**Figure 4.:** Chromosome 18 has the lowest peak for individuals sharing an ROH diplotype. Chromosomes 2, 6, and 8 contain diplotypes shared with more than 100,000 individuals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig4-figsupp1-v2.jpg)
+
+### ROH clusters and disease association
 
 We conducted a phenotypic association analysis of the found ROH diplotype clusters with 445 self-reported non-cancerous diseases, as they are conveniently available in the UK Biobank. We first conducted a quick chi-squared test associating each of the 1,880,826 ROH diplotype cluster membership against each of the 445 phenotypes (see Methods section). The p-values for the 100 regions with the lowest p-values were re-computed using age, sex, genetics principal components, and genotype measurement batch fields by PHESANT (Millard et al., 2018) (details see Methods). This identified 61 associations passing the Bonferroni-corrected p-value threshold of 10−12. Table 1 shows the p-values for disease associated with the HLA region (chr6) computed by PHESANT. p-values for some diseases are very low in both the chi-squared test and regression analysis using PHESANT. It also includes the SNP with the lowest p-value in each cluster that is associated with the corresponding disease. The SNP with the lowest p-value in each cluster was extracted from Neale’s lab results [http://www.nealelab.is/blog/2017/9/15/heritability-of-2000-traits-and-disorders-in-the-uk-biobank]. Most of the clusters with low p-values contain at least one SNP with a very low p-value that is associated with the corresponding disease. The top 100 diplotypes with the lowest p-values using chi-squared tests and PHESANT are included in Supplementary file 4.
+
+**Table 1.**
+ Clusters of the runs-of-homozygosity (ROH) diplotypes with the lowest p-values in the HLA region for self-reported diseases using the British population in UK Biobank.Detailed diplotype consensus sequences are available in Supplementary file 5. The p-values were calculated using PHESANT. Only the region with the lowest p-value has been included for each disease. Beta represents the effect size reported by PHESANT and D′ describes the non-random association of an ROH cluster and the overlapping SNP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease (binary trait)</th>
+      <th>Diplotype ID</th>
+      <th>Position (on chr6)</th>
+      <th>p-value</th>
+      <th>Beta</th>
+      <th>Carrier frequency (%)</th>
+      <th>Odds ratio</th>
+      <th>Genetic length (cM)</th>
+      <th>GWAS p-value*</th>
+      <th>GWAS beta*</th>
+      <th>GWAS lead SNP*</th>
+      <th>D′</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ankylosing spondylitis</td>
+      <td>1</td>
+      <td>31431031–31464050</td>
+      <td>4.62 × 10−34</td>
+      <td>0.121</td>
+      <td>0.29</td>
+      <td>8.66</td>
+      <td>0.071198</td>
+      <td>0</td>
+      <td>1.45 × 10−2</td>
+      <td>rs113340460</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Hemochromatosis</td>
+      <td>2</td>
+      <td>25969631–26108168</td>
+      <td>8.02 × 10−120</td>
+      <td>0.417</td>
+      <td>0.09</td>
+      <td>24.51</td>
+      <td>0.011597</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Malabsorption/coeliac disease</td>
+      <td>3</td>
+      <td>32564985–32629755</td>
+      <td>3.41 × 10−259</td>
+      <td>0.315</td>
+      <td>4.12</td>
+      <td>1.64</td>
+      <td>0.005408</td>
+      <td>0</td>
+      <td>7.74 × 10−3</td>
+      <td>rs9271352</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Multiple sclerosis</td>
+      <td>4</td>
+      <td>32410215–32554129</td>
+      <td>4.36 × 10−45</td>
+      <td>0.192</td>
+      <td>0.37</td>
+      <td>3.79</td>
+      <td>0.012736</td>
+      <td>1.05 × 10−107</td>
+      <td>4.58 × 10−3</td>
+      <td>rs9268925</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>Polymyalgia rheumatica</td>
+      <td>5</td>
+      <td>31710968–31794592</td>
+      <td>7.31 × 10−09</td>
+      <td>0.080</td>
+      <td>0.23</td>
+      <td>5.90</td>
+      <td>0.006808</td>
+      <td>1.59 × 10−08</td>
+      <td>6.80 × 10−3</td>
+      <td>rs1150748</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Prostate problem (not cancer)</td>
+      <td>6</td>
+      <td>34607958–35163974</td>
+      <td>2.84 × 10−08</td>
+      <td>0.082</td>
+      <td>0.18</td>
+      <td>6.94</td>
+      <td>0.034889</td>
+      <td>9.81 × 10−04</td>
+      <td>9.81 × 10−4</td>
+      <td>rs76117834</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Psoriasis</td>
+      <td>7</td>
+      <td>31254263–31263216</td>
+      <td>1.20 × 10−122</td>
+      <td>0.214</td>
+      <td>1.21</td>
+      <td>2.73</td>
+      <td>3.07×10–05</td>
+      <td>0</td>
+      <td>1.93 × 10−2</td>
+      <td>rs13214872</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Psoriatic arthropathy</td>
+      <td>8</td>
+      <td>33072522–33115762</td>
+      <td>8.54 × 10−12</td>
+      <td>0.122</td>
+      <td>0.20</td>
+      <td>3.97</td>
+      <td>0.008708</td>
+      <td>4.76 × 10−10</td>
+      <td>1.01 × 10−3</td>
+      <td>rs17221401</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Rheumatoid arthritis</td>
+      <td>9</td>
+      <td>32412539–32573760</td>
+      <td>8.15 × 10−122</td>
+      <td>0.208</td>
+      <td>0.23</td>
+      <td>2.34</td>
+      <td>0.01293</td>
+      <td>6.96 × 10−124</td>
+      <td>8.24 × 10−3</td>
+      <td>rs188575117</td>
+      <td>0.98</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p-values are for the reported SNP from http://www.nealelab.is/blog/2017/9/15/heritability-of-2000-traits-and-disorders-in-the-uk-biobank._
 
 Not surprisingly, the most prominent associations we found are ROH diplotypes in the HLA region with autoimmune diseases. We found that malabsorption/coeliac disease, psoriasis, rheumatoid arthritis, and multiple sclerosis have the strongest association with loci in the HLA region. These results are largely consistent with known literature (Dieli-Crimi et al., 2015; Gutierrez-Achury et al., 2015; Kurkó et al., 2013; Bhalerao and Bowcock, 1998; Baranzini and Oksenberg, 2017; Canela-Xandri et al., 2018). One of the most significant associations we identified is the association between the ROH diplotype at chr6:25988167–26122453 and hemochromatosis (p-value = 9.16 × 10−120). The frequency of the ROH diplotype is only 0.02% and the odds ratio of having the disease for the carrier is 102.21. Interestingly, several other ROH diplotypes at this locus also have a strong association with hemochromatosis (Table 1). This locus is in the extended HLA region and has a low recombination rate. Hemochromatosis is an inherited disorder in which iron levels in the body slowly build up over several years. The gene HFE (chr6:26087509–26095469) is a well-known recessive locus for this disease (Pietrangelo, 2010). The C282Y polymorphism (rs1800562, chr6:26092913) in HFE is the most penetrant but other polymorphisms with lesser penetrance are also known. Interestingly, the minor allele frequency of the SNP rs1800562 is 6% in the European population but it is not genotyped (and is also not available in the imputed panel) in the UK Biobank data. As a result, this association signal has been completely missing in the Neale Lab results. In another study, the SNP has been imputed and a specific association study for the recessive effect between the homozygous alleles of rs1800562 and hemochromatosis has been reported (Tamosauskaite et al., 2019). Our approach found this recessive association signal without direct genotyping of any SNP with high linkage disequilibrium (LD) to the causal SNP, demonstrating the power of our approach beyond regular additive effect GWAS. However, we did not verify that this SNP is indeed part of the ROH diplotype as we do not have access to the WGS data.
 
 We also found some loci outside of the HLA region that are presumably associated with non-cancerous diseases (Table 2). The most prominent one is an ROH diplotype at chr1:151515188–151902494 with eczema/dermatitis. This signal overlaps with the GWAS finding of rs4845604 at chr1:151829204 (Johansson et al., 2019).
 
+**Table 2.**
+ Clusters of the runs-of-homozygosity (ROH) diplotypes with the lowest p-values outside of the HLA region for self-reported diseases using the British population in UK Biobank.The p-values were calculated using PHESANT.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease (binary trait)</th>
+      <th>Diplotype ID</th>
+      <th>Position</th>
+      <th>p-value</th>
+      <th>Beta</th>
+      <th>Carrier frequency (%)</th>
+      <th>Odds ratio</th>
+      <th>Genetic length (cM)</th>
+      <th>GWAS p-value*</th>
+      <th>GWAS beta*</th>
+      <th>GWAS lead SNP*</th>
+      <th>D′</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Deep venous thrombosis (dvt)</td>
+      <td>10</td>
+      <td>chr1:169075589–169528830</td>
+      <td>3.10 × 10−21</td>
+      <td>0.039</td>
+      <td>2.08</td>
+      <td>10.49</td>
+      <td>0.56</td>
+      <td>7.41 × 10−166</td>
+      <td>−3.13 × 10−2</td>
+      <td>rs6025</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Eczema/dermatitis</td>
+      <td>11</td>
+      <td>chr1:151515188–151902494</td>
+      <td>1.52 × 10−27</td>
+      <td>0.044</td>
+      <td>2.85</td>
+      <td>7.31</td>
+      <td>0.36</td>
+      <td>3.45 × 10−36</td>
+      <td>1.43 × 10−2</td>
+      <td>rs55875222</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>chr1:151940401–152280032</td>
+      <td>9.46 × 10−24</td>
+      <td>0.053</td>
+      <td>11.76</td>
+      <td>2.07</td>
+      <td>0.12</td>
+      <td>1.35 × 10−64</td>
+      <td>1.84 × 10−2</td>
+      <td>rs61815559</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>chr1:152493154–152964479</td>
+      <td>1.53 × 10−21</td>
+      <td>0.039</td>
+      <td>2.85</td>
+      <td>7.35</td>
+      <td>0.36</td>
+      <td>1.01 × 10−42</td>
+      <td>1.62 × 10−2</td>
+      <td>rs61813875</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Hypothyroidism/myxoedema</td>
+      <td>14</td>
+      <td>chr12:111910219–112874179</td>
+      <td>4.51 × 10−21</td>
+      <td>0.062</td>
+      <td>5.06</td>
+      <td>1.25</td>
+      <td>0.04</td>
+      <td>1.88 × 10−80</td>
+      <td>9.87 × 10−3</td>
+      <td>rs7137828</td>
+      <td>0.99</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p-values are for the reported SNP from http://www.nealelab.is/blog/2017/9/15/heritability-of-2000-traits-and-disorders-in-the-uk-biobank._
+
 The beta values for effect size were included in all reported tables. These beta values for ROH-DICE are positive, indicating that carriers of these ROH diplotypes may have an increased risk of certain non-cancerous diseases. We also used D′ as a measure of linkage between the reported GWAS results and ROH clusters (see Methods section). We found that most of the GWAS results and ROH clusters are strongly correlated. However, in a few cases, D′ is small or close to zero. In such cases, the reported p-value from GWAS was also insignificant, while the ROH cluster indicated a significant association (See Table 1 and Supplementary file 4). The SNP IDs and consensus alleles for all ROH clusters in Tables 1 and 2 are reported in Supplementary file 5.
 
-## ROH clusters and COVID-19 association
+### ROH clusters and COVID-19 association
 
 We computed the p-value using the chi-square test for the association between mortality of COVID-19 and the detected ROH regions. We considered only the clusters that had at least 10 cases (tested positive and passed away in 2020). Figure 5 shows the Manhattan plot for ROH regions and mortality of COVID-19. The most significant ROH region is located in chr4:106318456–106483898 (0.114 cM) with the p-value 1.63 × 10−10. 4389 individuals share the diplotypes and 76 of them have tested positive for COVID-19. Eleven persons who carried the same ROH consensus and had tested positive, died in 2020. In other words, carriers of this diplotype have a fivefold mortality compared to non-carriers among COVID-19 patients. We used the GMMAT (Hoare, 1961) mixed model regression to validate the association of this diplotype while adjusting for age, gender, and genetic similarity (see Methods section). The reported p-value was 1.82 × 10−11 which is even smaller than the p-value from the chi-square test. The region includes the PPA2 gene. The gene product is an inorganic pyrophosphatase located in the mitochondrion (Curbo et al., 2006). Missense mutations in this gene are reported to cause sudden unexpected cardiac arrest in infancy (Guimier et al., 2016). The PPA2 gene has also been recently implicated in COVID-19 through an integrated analysis of GWAS of European patients and lung expressed quantitative trait loci (eQTL) data by the summary-data-based (SMR) method (Zong and Li, 2021). The identified region linked to COVID-19 mortality overlaps also with the ARHGEF38 gene. A genetic variant within the gene (rs72670002) has been reported to be significantly associated with severe illness from COVID-19 in a recent study that used 24,202 cases of critical COVID-19 (Pairo-Castineira et al., 2023). Other nearby genes within a 200-kb range include TET2, INTS12, and GSTCD.
 
@@ -97,11 +371,11 @@ Our association analysis is a proof of concept and opens up many future opportun
 
 ## Methods
 
-## Identification of haplotype clusters in PBWT
+### Identification of haplotype clusters in PBWT
 
 The PBWT proposed by Durbin, 2014 facilitates an efficient approach to search for all pairs of long matches in haplotype or genotype panels. The basic idea behind the PBWT search is to sort the panels at each site by their reversed prefix order. As a result, the matches in the panel will be placed adjacent to each other. However, at the time we started this project, all existing PBWT algorithms (Durbin, 2014; Naseri et al., 2019c; Naseri et al., 2019a; Sanaullah et al., 2020) were aimed at identifying pairwise matches. In this work, we propose to employ the PBWT data structures to search for clusters of multi-way matches instead of individual pairs of matches. Independent of our work, a couple of algorithms have been proposed to find haplotype blocks in a PBWT panel (Cunha et al., 2018; Alanko et al., 2020). The algorithm by Cunha et al., 2018; Alanko et al., 2020 may not be feasible to handle biobank scale data. The recently proposed algorithms by Cunha et al., 2018; Alanko et al., 2020, however, will scale well for large-scale data, but they aim to enumerate all maximal haplotype blocks. For datasets comprising hundreds of thousands or millions of individuals, the number of reported clusters of any length may be excessive. Moreover, a minimum length threshold in terms of both sites and number of individuals would be more meaningful for downstream analysis especially association analysis, for example where a minimum number of cases are required. Hence, after detecting all possible clusters, filtering has to be applied to remove spurious clusters. Here, we formulate the haplotype blocks problem with two distinct objective functions which will reduce the complexity of filtering the detected clusters afterward.
 
-## Block maximal match problems
+### Block maximal match problems
 
 Based on the different formulations of the problem, we may have different objective functions: the first problem is to find all clusters with at least L sites that are shared among at least t sequences while maximizing the number of sequences for each cluster. Using proper data structures, we can keep track of the starting position of the matches and report them efficiently. The second problem is to find clusters with at least L sites among at least t sequences while maximizing the number of sites for each cluster. Again, the sequences that share a consensus are put in the same block.
 
@@ -111,54 +385,54 @@ For the PBWT block match problem, the goal is to identify all block maximal matc
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/81698/elife-81698-fig6-v2.jpg)
 
-**Figure 6.:** L) of 3 and a minimum width (W) of 3.(a) Clusters of haplotypes with two different objectives: maximizing the number of sites and maximizing the number of indivdiuals. The green rectangle ending at site 4 highlights a cluster that meets the requirement of W ≥ 3 and L ≥ 3 while maximizing the number of individuals (width-maximal). The blue rectangles ending at 4 maximize the number of sites (length-maximal). The blue rectangles ending at site 8 show a cluster with W ≥ 3 and L ≥ 3 maximizing the number of sites and number of individuals. This cluster is length-maximal because adding either column 5 or 9 will introduce a mismatch; It is also width-maximal because adding the third haplotype will introduce a mismatch. (b) Two clusters (clusters A and B) with the same starting and ending positions but different consensuses. Therefore, these two clusters are not merged and considered as separate clusters. Each line represents one individual and 0/0 alleles are highlighted in gray, and 1/1 alleles in black.
+**Figure 6.:** (a) Clusters of haplotypes with two different objectives: maximizing the number of sites and maximizing the number of indivdiuals. The green rectangle ending at site 4 highlights a cluster that meets the requirement of W ≥ 3 and L ≥ 3 while maximizing the number of individuals (width-maximal). The blue rectangles ending at 4 maximize the number of sites (length-maximal). The blue rectangles ending at site 8 show a cluster with W ≥ 3 and L ≥ 3 maximizing the number of sites and number of individuals. This cluster is length-maximal because adding either column 5 or 9 will introduce a mismatch; It is also width-maximal because adding the third haplotype will introduce a mismatch. (b) Two clusters (clusters A and B) with the same starting and ending positions but different consensuses. Therefore, these two clusters are not merged and considered as separate clusters. Each line represents one individual and 0/0 alleles are highlighted in gray, and 1/1 alleles in black.
 
-## cPBWT algorithms
+### cPBWT algorithms
 
-## Maximizing the number of haplotypes
+#### Maximizing the number of haplotypes
 
 Given a haplotype or genotype panel, the objective is to find all matches greater than a given length L that are shared among at least c haplotypes (or individuals). By sorting the panel at each site the matches are placed in the same block. The divergence value for each sequence contains the starting position of the match to its preceding sequence in the reversed prefix order. The matches are separated by a sequence with a divergence value greater than k − L. To maximize the number of sequences, the maximum value of the divergence values in each block is considered. The size of the block should also be greater than c to be reported. Algorithm 1 (Supplementary file 6) illustrates the procedure for finding long matches while maximizing the number of haplotypes or sequences in detail. Algorithm 2 (Supplementary file 6) illustrates the procedure for updating the intermediate variables V and Q to compute dk+1 and ak+1 based on the dk and ak. The time complexity of this algorithm is O(NM), where N denotes the number of variant sites and M denotes the number of individuals. Divergence values and prefix arrays are computed in linear time for each variant site and the maximal number of matching blocks at each site is bound by O(M).
 
-## Maximizing the length of the match
+#### Maximizing the length of the match
 
 The objective is to find the longest matches greater than a given length L shared among at least c sequences. The match will not be reported if the block of matches can be extended while at least c sequences are not terminating. To do this, two conditions should be held: First, at least c sequence for one allele should be present in the block, and second, the cth lowest divergence value in the block should be greater or equal to the cth lowest divergence of the matches ending with the allele with at least c occurrences. To find the cth lowest divergence value, the Quickselect algorithm, a modified one-sided version of Quicksort (Hoare, 1961), is used. Quickselect has the average time complexity of O(N), where N denotes the size of the given list. Algorithm 3 (Supplementary file 6) illustrates the procedure of finding long matches while maximizing the length of the match in detail.
 
-## ROH-DICE algorithm
+### ROH-DICE algorithm
 
 Any of the two cPBWT algorithms can be applied to search for ROH–diplotype clusters from genotype data. Maximizing the number of haplotypes would guarantee the inclusion of all samples that may share specific ROH diplotypes. Hence, for association analysis between ROH diplotype and phenotypes, this optimization would be preferred. On the other hand, maximizing the number of sites would ensure the inclusion of all variant sites between the individuals contributing to the matches which may be more appropriate for other applications such as studying population structures or imputation.
 
-ROH-DICE maps the genotype sequence x, defined over the alphabet of {0,1,2}, into a compressed haplotype sequence y, defined over the alphabet of {0,1}. For homozygous sites, the mapping is straightforward: for xi=0, yi=0; for xi=2, yi=1. For heterozygous sites xi=1, a random value from 0 and 1 was assigned with a probability of ½ for 0 and ½ for 1. The identified maximal matching blocks in the PBWT panel comprising all compressed haplotype sequences {yi}, correspond to the approximate ROH clusters in the original genotype sequences {xi}. After finding all ROH clusters for a given cut-off, the clusters with the identical start and end positions, and consensus (determined by majority alleles) was merged.
+ROH-DICE maps the genotype sequence $x$, defined over the alphabet of {0,1,2}, into a compressed haplotype sequence $y$, defined over the alphabet of {0,1}. For homozygous sites, the mapping is straightforward: for $x_{i}=0$, $y_{i}=0$; for $x_{i}=2$, $y_{i}=1$. For heterozygous sites $x_{i}=1$, a random value from 0 and 1 was assigned with a probability of ½ for 0 and ½ for 1. The identified maximal matching blocks in the PBWT panel comprising all compressed haplotype sequences ${y_{i}}$, correspond to the approximate ROH clusters in the original genotype sequences ${x_{i}}.$ After finding all ROH clusters for a given cut-off, the clusters with the identical start and end positions, and consensus (determined by majority alleles) was merged.
 
-## Identification of ROH hotspots and coldspots
+### Identification of ROH hotspots and coldspots
 
 The frequency of ROH calculated over all three size classes at each SNP in the combined data set from the Pemberton study was downloaded (Pemberton et al., 2012). The genomic locations were lifted over to hg19 using the liftOver tool (Hinrichs et al., 2006). The overlapping ROH cluster from ROH-DICE results with the maximum number of individuals (samples) was assigned for each SNP. ROH hotspots were considered locations where the number of samples in ROH clusters exceeded the 99.5th percentile. ROH coldspots were considered locations where the number of samples in ROH clusters was lower than the 0.5th percentile (equal to 0).
 
-## UK Biobank dataset
+### UK Biobank dataset
 
 The phased haplotype data of the UKBB data (version 2) comprising 658,720 sites were extracted. The Data-Field 20002 contains self-reported non-cancer illnesses comprising 445 categories (diseases). For the association analysis, 430,437 individuals of British ethnicity were selected. The ethnic backgrounds were extracted using the Data-Field 21000.
 
-## Genetic association analysis
+### Genetic association analysis
 
 We computed the p-values for each disease in all detected ROH clusters that were present in at least 10 individuals. p-values were computed using chi-squared test considering the following numbers: D1: Number of individuals sharing a disease within the detected consensus of ROH. N1: Number of individuals in the detected ROH not sharing the disease. D2: Total number of individuals sharing the disease subtracting D1. N2: M − N1 − N2 − D2, where M denotes the total number of individuals. 100 regions with the lowest p-values (for any disease) were selected and further investigated using PHESANT (downloaded on August 22, 2018).
 
 For PHESANT analysis, age was calculated manually using the date of attending the assessment center (53), year of birth (34), and month of birth (52). Sex (31), genetic principal components (22009), number of self-reported non-cancer illnesses (135), genotype measurement batch (22000), and non-cancer illness (20002) fields were also maintained. PHESANT tests the associations of a trait of interest with a set of other phenotypes, and we considered all diplotypes in the 100 regions as traits of interest. Most of the regions include multiple clusters with the same starting and ending positions but different consensus. We considered all of the clusters in the same region as traits of interest (660 traits of interest in total). Regressions were performed on each diplotype cluster separately, so more than one cluster may have been tested in the same region.
 
-## Retrieval and annotation using the genetic association result from Neale Lab
+### Retrieval and annotation using the genetic association result from Neale Lab
 
 Each of the associations (computed by PHESANT) was validated against the GWAS results published by Neale’s lab [http://www.nealelab.is/blog/2017/9/15/heritability-of-2000-traits-and-disorders-in-the-uk-biobank, accessed July 27, 2018]. For each disease in each cluster (according to PHESANT), all reported SNPs within the genomic region of the cluster that were reported to be associated with the disease (according to Neale’s lab results) were searched and the SNP with the lowest p-value was reported.
 
-## Linkage pattern analysis between GWAS and ROH-DICE results
+### Linkage pattern analysis between GWAS and ROH-DICE results
 
 In linkage disequilibrium analysis, D and D′ are commonly used measures to quantify the degree of non-random association between alleles at different loci. D measures the difference between the observed frequency of a haplotype and the frequency expected under random mating, while D′ is a normalized measure of D that considers the allele frequencies at each locus. In this study, we have adapted these measures between two loci into a location and an ROH cluster.
 
 D′ between an ROH cluster and an SNP overlapping the cluster was calculated by normalizing the D between the ROH cluster membership and alternate allele of the SNP similar to linkage analysis between variant sites. Assume pR is the frequency of samples that belong to the cluster, pS is the frequency of alternate allele, and pRS is the frequency of samples belonging to the cluster and having the minor allele. We calculate pr as 1 − pR and ps as 1 − pS. Finally, the D′ can be calculated by using the following formula:
 
-if (D<0):D′=max(−pRpS,−prps)
+if $(D<0):D^{′}=max(−p_{R}p_{S},−p_{r}p_{s})$
 
-else: D′=max(pRpS,prps)
+else: $D^{′}=max(p_{R}p_{S},p_{r}p_{s})$
 
-where D=pRS-pRpS.
+where $D=p_{RS}-p_{R}p_{S}$.
 
-## COVID-19 mortality and ROH diplotypes
+### COVID-19 mortality and ROH diplotypes
 
 Two tables ‘covid19_result.txt’ and ‘death.txt’ provided by the UK Biobank were downloaded on July 24, 2020. The table ‘covid19_result.txt’ contains the test results whether the sample was reported as positive or negative for COVID-19. The table ‘death.txt’ includes the date of death for samples. In the July 24, 2020 release of the table in UK Biobank, 201 British individuals have been reported COVID-19 positive and died in 2020. Those individuals were considered as cases for mortality analysis. A total of 8120 British individuals have been tested for COVID-19. The controls contained the individuals who had been tested but no death information was provided for them. We tested all detected ROH diplotypes for COVID-19 mortality association (with at least 10 cases) using the chi-square test. For the chi-square test, the total number of individuals M corresponds to the number of tested individuals for COVID-19 (8120). GMMAT (Hoare, 1961) was used to recalculate the p-value for the diplotype with the lowest p-value from the chi-square test (chr4:106318456–106483898) while adjusting for age, gender, and genomic relationship matrix (GRM). The GRM was computed using the kinship coefficients calculated from KING (Hoare, 1961).

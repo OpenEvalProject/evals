@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/017zqws13 Department of Neuroscience, University of Minnesota Minneapolis United States
-2. https://ror.org/012gwbh42 Instituto Cajal, CSIC Madrid Spain
-3. https://ror.org/04xzgfg07 Experimental Neurophysiology Group, Hospital Nacional de Parapléjicos SESCAM Toledo Spain
+1. Department of Neuroscience, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+2. Instituto Cajal, CSIC Madrid Spain ([ROR:012gwbh42](https://ror.org/012gwbh42))
+3. Experimental Neurophysiology Group, Hospital Nacional de Parapléjicos SESCAM Toledo Spain ([ROR:04xzgfg07](https://ror.org/04xzgfg07))
 
 † Corresponding author
 
 ## Abstract
 
-Astrocytes are active cells involved in brain function through the bidirectional communication with neurons, in which astrocyte calcium plays a crucial role. Synaptically evoked calcium increases can be localized to independent subcellular domains or expand to the entire cell, i.e., calcium surge. Because a single astrocyte may contact ~100,000 synapses, the control of the intracellular calcium signal propagation may have relevant consequences on brain function. Yet, the properties governing the spatial dynamics of astrocyte calcium remains poorly defined. Imaging subcellular responses of cortical astrocytes to sensory stimulation in mice, we show that sensory-evoked astrocyte calcium responses originated and remained localized in domains of the astrocytic arborization, but eventually propagated to the entire cell if a spatial threshold of >23% of the arborization being activated was surpassed. Using Itpr2 -/- mice, we found that type-2 IP 3 receptors were necessary for the generation of astrocyte calcium surge. We finally show using in situ electrophysiological recordings that the spatial threshold of the astrocyte calcium signal consequently determined the gliotransmitter release. Present results reveal a fundamental property of astrocyte physiology, i.e., a spatial threshold for astrocyte calcium propagation, which depends on astrocyte intrinsic properties and governs astrocyte integration of local synaptic activity and subsequent neuromodulation.
+Astrocytes are active cells involved in brain function through the bidirectional communication with neurons, in which astrocyte calcium plays a crucial role. Synaptically evoked calcium increases can be localized to independent subcellular domains or expand to the entire cell, i.e., calcium surge. Because a single astrocyte may contact ~100,000 synapses, the control of the intracellular calcium signal propagation may have relevant consequences on brain function. Yet, the properties governing the spatial dynamics of astrocyte calcium remains poorly defined. Imaging subcellular responses of cortical astrocytes to sensory stimulation in mice, we show that sensory-evoked astrocyte calcium responses originated and remained localized in domains of the astrocytic arborization, but eventually propagated to the entire cell if a spatial threshold of >23% of the arborization being activated was surpassed. Using Itpr2-/- mice, we found that type-2 IP3 receptors were necessary for the generation of astrocyte calcium surge. We finally show using in situ electrophysiological recordings that the spatial threshold of the astrocyte calcium signal consequently determined the gliotransmitter release. Present results reveal a fundamental property of astrocyte physiology, i.e., a spatial threshold for astrocyte calcium propagation, which depends on astrocyte intrinsic properties and governs astrocyte integration of local synaptic activity and subsequent neuromodulation.
 
 ## Introduction
 
@@ -35,9 +35,17 @@ To address these issues, we have monitored sensory-evoked astrocyte calcium acti
 
 ## Results
 
-## Imaging astrocyte structure and function simultaneously in vivo
+### Imaging astrocyte structure and function simultaneously in vivo
 
 We simultaneously monitored calcium activity in identified sulforhodamine 101 (SR101)-labeled astrocytes in the primary somatosensory cortex using two-photon microscopy in vivo. We used transgenic mice expressing GCaMP6f in astrocytes, generated as described in the Methods (Bindocci et al., 2017; Lines et al., 2020), to monitor sensory-evoked intracellular astrocyte calcium dynamics in combination with SR101 labeling to monitor astrocyte morphology (Nimmerjahn et al., 2004; Figure 1A and B). Regions of interest (ROIs) were computationally determined from SR101-positive structural imaging (Bindocci et al., 2017) by outlining individual astrocytes and performing semi-automatic segmentation into somas and arborizations (Figure 1C; see Figure 1—figure supplement 1 for an in-depth description of segmentation). Next, subcellular quantification of soma and arborization calcium signals from individual astrocytes was evaluated in response to peripheral electrical stimulation of the hindpaw (2 mA at 2 Hz for 20 s; Figure 1D). Following the segmentation of an individual astrocyte into soma and arborization, the astrocyte arborization was further discretized into a grid of maximally sized 4.3 × 4.3 µm2 square regions of interest, which we define as astrocyte domains (Figure 1E and F; Agarwal et al., 2017; Di Castro et al., 2011; Grosche et al., 1999; Shigetomi et al., 2013). The concept of domain to define all subcellular domains in the astrocyte arborization should not be confused with the concept of microdomain, that usually refers to the distal subcellular domains in contact with synapses. Thus, we were able to quantify the sensory-evoked calcium responses in individual domains, as well as in the arborization and soma (Figure 1G).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/90046/elife-90046-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scheme of in vivo preparation to image astrocyte Ca2+ and structure. (B) Sulforhodamine 101 (SR101)-stained astrocyte structure, GCaMP6 to monitor astrocyte Ca2+ signal, and merge. Scale bar = 50 µm. (C) Regions of interest (ROIs) from SR101-stained structure of somas (blue) and arborizations (red). (D) Ca2+ traces from B from somas (blue) and arborizations (red). Scale = F/Fo, 10 s. (E) SR101-stained astrocyte (left), ROIs outlining soma and arborization (center) and ROIs defining the soma and domains (right). Scale bar = 10 µm. (F) Pseudocolor Ca2+ image during basal (left) and hindpaw electrical stimulation (right). (G) Ca2+ traces from F from domains (salmon), arborization (red), and soma (blue). Scale = F/Fo, 10 s.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90046/elife-90046-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sulforhodamine 101 (SR101)-stained astrocyte population with an outlined cell. Scale bar = 50 µm. (B) Selected astrocyte placed in polar coordinates with rings overlaid to assess structural fluorescence. Scale bar = 10 µm. (C) Average fluorescence of rings centered on astrocyte soma as radius is extended outward. Note, overlay of values from rings in B. (D) Fluorescence of rings in panel B as a function of angle. (E) Regions of interest (ROIs) from algorithm. (F) Calcium pseudocolor image during basal and stimulation. (G) Calcium traces from F during stimulation. Scale = F/Fo, 10 s.
 
 The analysis of the sensory-evoked calcium activity from astrocyte arborization and soma uncovered that (1) the majority of responses occurred in both the soma and arborization (57.7 ± 4.5%; n=30 populations, 3 animals); (2) some responses occurred only in the arborization (15.1 ± 1.6%; n=30 populations, 3 animals; Figure 2A–D); (3) a small minority of responses included activity in the soma but not the arborization (3 ± 0.5%; n=30 populations, 3 animals; Figure 2D); and (4) some astrocytes did not respond (24.1 ± 3.6%; n=30 populations, 3 animals). Since the majority of cells showed responses in both the soma and arborization, we hypothesized that the proportion of domain activity within the arborization and the somatic calcium activity were correlated across a population of astrocytes. To test this hypothesis, we first examined the average percentage of responding arborizations vs the percentage of soma activation within a population and found a significant linear correlation between these subcellular measures of activity (linear correlation: p<0.001, R2=0.90; n=30 populations, 3 animals; Figure 2E). Additionally, averaging the percentage of active domains per cell over a population vs the percentage of somas active showed a significant linear correlation (linear correlation: p<0.001, R2=0.87; n=30 populations, 3 animals; Figure 2F). These results indicate that, on average, subcellular calcium events located in astrocyte arborizations are related to soma activation.
 
@@ -45,11 +53,19 @@ The analysis of the sensory-evoked calcium activity from astrocyte arborization 
 
 **Figure 2.:** (A) Sulforhodamine 101 (SR101) staining. Scale bar = 50 µm. (B) Pseudocolor Ca2+ images at basal and stimulation. (C) Regions of interest (ROIs) of soma and arborizations/domains along with activity during stimulation. (D) Proportion of subcellular responses to stimulation. (E) Percentage of active arborizations vs percent of somas active. (F) Percentage of domains active vs percent of somas active. Mean ± SEM. Pearson correlation.
 
-## Subcellular astrocyte calcium originates in the arborization
+### Subcellular astrocyte calcium originates in the arborization
 
 We then analyzed the spatial and temporal properties of the intracellular calcium dynamics in astrocytic somas and arborizations (Figure 3A–D). First, we determined the kinetics of the sensory-evoked astrocyte calcium signal. Sensory-evoked calcium rises in arborizations occurred with a delay of 11.1±0.3 s from the onset of the peripheral stimulation and significantly preceded those occurring in the soma with a 13.2±0.2 s delay from stimulus onset (p<0.001; n=30 populations, 3 animals; Figure 3D–F). Moreover, rise time to peak and decay time back to baseline of the calcium traces were faster in somas than arborizations (10–90% rise time: 5.7±0.2 s in arborizations vs 3.5±0.2 s in somas; p<0.001; 90–10% decay time: 4.8±0.2 s in arborizations vs 4.3±0.2 s in somas; p<0.01; n=30 populations, 3 animals; Figure 3E and F). These results indicate that astrocyte responses occurred initially in the arborizations, which is consistent with the idea that synapses are likely to be accessed at the astrocyte arborization (Arizono et al., 2020; Papouin et al., 2017).
 
-## A spatial threshold to activate the soma and calcium surge
+![Figure 3.](https://cdn.elifesciences.org/articles/90046/elife-90046-fig3-v1.jpg)
+
+**Figure 3.:** (A) Astrocyte with regions of interest (ROIs). Scale bar = 10 µm. (B) Pseudocolor Ca2+ image. (C) Ca2+ traces in B from domains (pink), arborization (red), and the soma (blue). Scale = F/Fo, 5 s. (D) Raster plot of astrocyte somas (blue) and arbors (red) in response to stimulation (gray). (E) Average calcium traces from somas (blue) and arborizations (red) aligned to their respective soma onset. (F) Soma and arbor latency to response (left), event rise time (center), and event decay time (right). n = 995 astrocyte reponses. Mean ± SEM. ‘**’ ≡ p<0.01 and ‘***’ ≡ p<0.001 using paired Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90046/elife-90046-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Average calcium traces from somas (blue) and domains activating before the soma (pre-soma; green) and after the soma (post-soma; pink) aligned to their respective soma onset. (B) Pre-soma and post-soma latency to response relative to their respective soma onset. (C) Event rise time. (D) Event decay time. n = 995 astrocyte reponses. Mean ± SEM. ‘***’ ≡ p<0.001 using paired Student’s t-test.
+
+### A spatial threshold to activate the soma and calcium surge
 
 Next, we determined the relative spatial relationship of calcium activity of domains within the arborizations and somas of individual astrocytes (Figure 4A). We quantified the proportion of subcellular domains in individual astrocytic arborizations that responded to electrical stimuli with varied parameters and assessed whether the corresponding soma responded (Figure 4A–C). When changing the stimulus parameters (duration, frequency, and intensity), the number of responding domains increased as the stimulus duration, frequency, and intensity increased (ANOVA: duration: p<0.001, frequency: p<0.001, intensity: p<0.001; n=11 populations, 4 animals; Figure 4D). As described above, the probability of soma activation vs the percentage of active domains could be accurately fit to a linear regression (see Figure 2F) indicating a correlation between these variables. To further characterize this relationship, we plotted paired values of on/off active soma (i.e. activated or not) vs the proportion of active domains from individual astrocytes. We found that the activation of a relatively low proportion of domains occurred without activation of the soma (Figure 4E). Conversely, large proportions of activated domains were accompanied by a calcium elevation in the soma (Figure 4E). This relationship suggested the existence of a threshold. Fitting these values to the Heaviside step function (in Methods, Equation 4; Davies, 2002) indicated that somas were active when at least 22.6% of their respective domains were active (R2=0.42; n=995 astrocytes from 30 populations and 3 animals; Figure 4E). This spatial threshold value was independent of the sensory input because similar values were found across various stimulus parameters (one-way ANOVA: duration: p=0.50, frequency: p=0.29, intensity: p=0.38; n=11 populations, 4 animals; Figure 4F), suggesting that it is determined by intrinsic astrocyte properties. Consolidating spatial threshold measurements from various stimulation parameters, we quantified the spatial threshold to be within 95% confidence intervals of [21.2%, 24.0%]. Moreover, plotting the percent of active domains for an individual astrocyte vs the amplitude of the somatic calcium response was fit to a sigmoid curve (R2=0.58; n=995 astrocytes from 30 populations and 3 animals; Figure 4G). These fits to cellular data as well as the large cluster of unchanged somatic amplitude with subthreshold domain activity further confirms that nonresponsive somas were not just below event detection, but indeed the soma does not become active. Taken together, these results indicate the existence of a spatial threshold for soma activation determined by astrocyte intrinsic properties and the proportion of active domains.
 
@@ -59,7 +75,7 @@ Next, we determined the relative spatial relationship of calcium activity of dom
 
 The presence of a spatial threshold for somatic responses suggests that cells that respond with soma activity would have a higher response of domains prior to the soma response (pre-soma) when compared to astrocytes without a soma response (no-soma). Indeed, when comparing these populations we found that astrocytes with responding somas had a significantly larger proportion of surrounding domains active prior to soma activation (pre-soma) when compared to cells without a somatic response (no-soma), confirming our hypothesis of a spatial cellular threshold (18.5 ± 1.7% of active domains in no-soma vs 23.9 ± 0.8% of domains in pre-soma cells, p<0.05; n=607 active vs n=388 not active, 30 populations and 3 animals; Figure 4H). Further, we found that astrocytes with an excess of 22.6% of domain activity, that induced a somatic response, led to increased domain activation throughout the remaining arborization (post-soma), i.e., domain activity before soma activation (pre-soma) vs domain activity after soma activation (post-soma) (23.9 ± 0.8% in pre-soma firing compared to 45.0 ± 1.8% in post-soma activation, p<0.001; n=607 astrocytes, 30 populations in 3 animals; Figure 4H, Figure 3—figure supplement 1). Together, these results confirm that astrocytes that respond with domain activity in excess of the spatial threshold precipitates somatic activity and a calcium surge of expanded responses throughout the astrocytic arborization (Figure 4I).
 
-## The spatiotemporal characteristics of active domains in astrocyte calcium responses
+### The spatiotemporal characteristics of active domains in astrocyte calcium responses
 
 Our results demonstrate the relationship between the percentage of active domains and soma activation and subsequent calcium surge. Next, we were interested in the spatiotemporal properties of domain activity leading up to and during calcium surge. Because we imaged groups of astrocytes, we were able to constrain our analyses to early responders (onset<median population onset) in order to evaluate astrocytes that were more likely to respond to neuronal-evoked sensory stimulation and not nearby astrocyte activation (Figure 5A). In this population the spatial threshold was 23.8% within the 95% confidence intervals of [21.2%, 24.0%]. First, we created temporal maps, where each domain is labeled as its onset relative to soma activation, of individual astrocyte calcium responses to study the spatiotemporal profile of astrocyte calcium surge (Bindocci et al., 2017; Figure 5B). Using temporal maps, we quantified the spatial clustering of responding domains by measuring the average distance between active domains. We found that the average distance between active domains in subthreshold astrocyte responses was not significantly different from pre-soma suprathreshold activity (16.3±0.4 µm in no-soma cells vs 16.2±0.3 µm in pre-soma cells, p=0.75; n=286 no-soma vs n=326 pre-soma, 30 populations and 3 animals; Figure 5C). Following soma activation, astrocyte calcium surge was marked with no significant change in the average distance between active domains (16.0±0.3 µm in post-soma cells vs 16.3±0.4 µm in no-soma cells, p=0.57 and 16.2±0.3 µm in pre-soma cells, p=0.31; n=326 soma active and n=286 no soma active, 30 populations and 3 animals; Figure 5C). Taken together this suggests that on average domain activation may happen in a nonlocal fashion, possibly illustrating the underlying nonlocal activation of nearby synaptic activity. Next, we interrogated the temporal patterning of domain activation by quantifying the average time between domain responses, and found that the average time between domain responses was significantly decreased in pre-soma suprathreshold activity compared to subthreshold activities without subsequent soma activation (9.4±0.3 s in no-soma cells vs 4.4±0.2 s in pre-soma cells, p<0.001; n=326 soma active vs n=286 not soma active, 30 populations and 3 animals; Figure 5D). The average time between domain activation was even less after the soma became active during calcium surge (2.1±0.1 s in post-soma vs 9.4±0.3 s in no-soma cells, p<0.001 and 4.4±0.1 s in pre-soma cells, p<0.001; n=326 soma active and n=286 not soma active, 30 populations and 3 animals; Figure 5D). This corroborates our findings in Figure 3—figure supplement 1 and highlights the difference in temporal profiles between subthreshold activity and astrocyte calcium surge.
 
@@ -71,15 +87,15 @@ We then tested the contribution of each of our three variables describing domain
 
 Recent work studying astrocyte integration has suggested a centripetal model of astrocyte calcium, where more distal regions of the astrocyte arborization become active initially and activation flows toward the soma (Fedotova et al., 2023; Rupprecht et al., 2024). Here, we confirm this finding, where activated domains located distal from the soma respond sooner than domains more proximal to the soma (linear correlation: p<0.05, R2=0.67; n=30 populations, 3 animals; Figure 5E). Next, we build upon this result to also demonstrate that following soma activation, astrocyte calcium surge propagates outward in a centrifugal pattern, where domains proximal to the soma become active prior to distal domains (linear correlation: p<0.01, R2=0.89; n=30 populations, 3 animals; Figure 5E). Together these results detail that intracellular astrocyte calcium follows a centripetal model until the soma is activated leading to a calcium surge that flows centrifugally. This suggests that astrocytes have the capabilities to integrate the nearby local synaptic population, and if this activity exceeds the spatial threshold then it leads to a whole-cell response that spreads outward.
 
-## The type-2 IP3 receptor is necessary for astrocyte calcium surge
+### The type-2 IP3 receptor is necessary for astrocyte calcium surge
 
 Previous reports have demonstrated in transgenic mice with type-2 IP3 receptors knocked out (Itpr2-/- mice) have ablated somatic calcium activity, but preserved certain domain calcium events (Agarwal et al., 2017; Lines et al., 2020; Schmidt and Oheim, 2020; Srinivasan et al., 2015). Since IP3R2-mediated calcium mobilization is an important signaling pathway in astrocyte calcium dynamics (Guerra-Gomes et al., 2017; Lim et al., 2021), we hypothesized that IP3R2 activity was necessary for astrocyte calcium surge. To test this, we injected an adeno-associated virus to express GCaMP6f within astrocytes under the astroglial GfaABD1d promoter (AAV-GfaABC1d-GCaMP6f, please see Methods) into the primary somatosensory cortex of Itpr2-/- mice. We then quantified the calcium activity within GCaMP6f-expressing SR101-labeled cortical astrocytes before and after sensory stimulation (2 mA, 2 Hz for 20 s; Figure 6A–C). In agreement with previous results (Agarwal et al., 2017; Lines et al., 2020; Srinivasan et al., 2015; Stobart et al., 2018), astrocytes in Itpr2-/- mice responded to stimulation within the domains, but not the arborizations (i.e. average signal over the entire astrocyte arborization) or the somas (in domains: 6.0 ± 0.5% in basal vs 9.0 ± 0.6% in stimulation, p<0.001; n=2450 domains; in arborizations: 1.8 ± 1.3% in basal vs 5.4 ± 2.1% in stimulation, p=0.15; n=112 arborizations; in somas: 3.6 ± 1.8% in basal vs 4.5 ± 2.0% in stimulation, p=0.74; n=112 somas, 5 populations in 2 animals; Figure 6D). Moreover, within individual astrocytes, the percentage of activated domains in Itpr2-/- mice in response to stimulation was reduced compared to wildtype mice (34.5 ± 0.8% in wildtype mice vs 14.5 ± 1.0% in Itpr2-/- mice, p<0.001; n=995 astrocytes in 30 populations in 3 wildtype mice vs n=112 astrocytes in 5 populations in 2 Itpr2-/- mice; Figure 6E). Notably, while domain activity in Itpr2-/- mice increased upon stimulation, the level of activation remained below the defined spatial threshold of 22.6% (Figure 6E; dashed blue line), which astrocytes in Itpr2-/- mice were unable to overcome. Further confirming this, the probability of astrocyte somatic responses to stimulation was dramatically reduced in Itpr2-/- mice compared to wildtype mice (61.0 ± 1.6% in wildtype mice vs 4.5 ± 2.2% in Itpr2-/- mice, p<0.001; n=995 somas in 30 populations in 3 wildtype mice vs n=112 somas in 5 populations in 2 Itpr2-/- mice; Figure 6F). Taken together, these results indicate that IP3R2-mediated calcium internal release is necessary for astrocyte calcium surge and further support the idea of the spatial threshold for astrocyte calcium spread.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90046/elife-90046-fig6-v1.jpg)
 
-**Figure 6.:** 2+ remains below the spatial threshold in mice lacking the IP3 receptor type-2.(A) Sulforhodamine 101 (SR101) staining. Scale bar = 50 µm. (B) Pseudocolor Ca2+ images at basal and stimulation. (C) Traces from astrocytes in B. Scale = F/Fo, 10 s. (D) Percentage of domains (left), arborizations (center), and somas (left) active at basal (open) and stimulation (hashed) in Itpr2-/- mice. (E) Percentage of domains active in wildtype (filled) and Itpr2-/- mice (hashed). Blue line denotes 22.6% spatial threshold. (F) Probability of soma activation in wildtype (filled) and Itpr2-/- mice (hashed). n = 30 populations in WT and 5 populations in knockout mice. Mean ± SEM. ‘***’ ≡ p<0.001 using paired and unpaired Student’s t-test.
+**Figure 6.:** (A) Sulforhodamine 101 (SR101) staining. Scale bar = 50 µm. (B) Pseudocolor Ca2+ images at basal and stimulation. (C) Traces from astrocytes in B. Scale = F/Fo, 10 s. (D) Percentage of domains (left), arborizations (center), and somas (left) active at basal (open) and stimulation (hashed) in Itpr2-/- mice. (E) Percentage of domains active in wildtype (filled) and Itpr2-/- mice (hashed). Blue line denotes 22.6% spatial threshold. (F) Probability of soma activation in wildtype (filled) and Itpr2-/- mice (hashed). n = 30 populations in WT and 5 populations in knockout mice. Mean ± SEM. ‘***’ ≡ p<0.001 using paired and unpaired Student’s t-test.
 
-## Astrocyte calcium surge is associated with gliotransmission
+### Astrocyte calcium surge is associated with gliotransmission
 
 We finally investigated whether the spatial threshold for astrocyte calcium was related to gliotransmission. We performed patch-clamp recordings of layer 2/3 cortical neurons in cortical brain slices to monitor the NMDAR-mediated SICs, a biological assay of glutamate gliotransmission (Araque et al., 2000; Gómez-Gonzalo et al., 2018) and applied different amounts of adenosine triphosphate (ATP) from a local micropipette with pressure pulses of different durations to gradually activate astrocytes (Figure 7A–C). Fluorescence imaging of astrocyte calcium in brain slices confirmed the existence of an astrocyte spatial threshold for calcium surge (22.9%; Figure 7C and D), that is within 95% confidence of our in vivo quantification [21.2%, 24.0%]. Beyond the threshold, increasing the duration of ATP puffs increased the proportion of activated astrocytic domains (one-way ANOVA: p<0.001, n=11 populations, 7 animals; Figure 7E; blue line indicates the threshold value obtained in Figure 7D). Likewise, similar to the domain activation, the SIC frequency increased as the duration of ATP puffs increased (one-way ANOVA: p<0.001, n=9 neurons, 9 animals; Figure 7F). Moreover, SIC frequency correlated with astrocyte domain activity (Pearson correlation: p<0.001, R2=0.95; Figure 7G) but SIC frequency increased only beyond the spatial threshold of the astrocyte calcium signal (blue line in Figure 7G), indicating that the spatial threshold of the astrocyte calcium is correspondingly associated with gliotransmitter release. These results indicate that spatial threshold of the astrocyte calcium surge has a functional impact on gliotransmission, e.g., SICs have been found to be calcium-dependent related to the soma calcium and thus calcium surge (Araque et al., 2000), which have important consequences on the spatial extension of the astrocyte-neuron communication and synaptic regulation.
 
@@ -115,42 +131,126 @@ Considering that a single astrocyte can contact ~100,000 synapses (Bushong et al
 
 ## Methods
 
-## Proper animal use and care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.Cg-Tg(Gfap-cre)77.6Mvs/2J</td>
+      <td>Jackson Laboratories</td>
+      <td>024098</td>
+      <td>Crossed with GCaMP6f mice to create Gfap-GCaMP6f transgenic mice.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6J.Cg-Gt(ROSA)26Sortm95.1(CAG-GCaMP6f)Hze/MwarJ</td>
+      <td>Jackson Laboratories</td>
+      <td>028865</td>
+      <td>Crossed with GFAP-cre mice to create GFAP-GCaMP6f transgenic mice.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Itpr2−/− mice</td>
+      <td>Ju Chen Kab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane</td>
+      <td>Sigma-Aldrich</td>
+      <td>U2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sulforhodamine 101</td>
+      <td>Sigma-Aldrich</td>
+      <td>S7635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-GfaABC1d-22 GCaMP6f</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Proper animal use and care
 
 All the procedures for handling and sacrificing animals were approved by the University of Minnesota Institutional Animal Care and Use Committee (IACUC) in compliance with the National Institutes of Health guidelines for the care and use of laboratory animals. We used both female and male transgenic animals that were 2–4 months of age, kept on a continuous 12 hr light/dark cycle and freely available to food and water. Expression of GCaMP6f in astrocytes was achieved by crossing Gfap-Cre mice with Gt(ROSA)26-lsl-GCaMP6f mice.
 
-## Stereotaxic surgery for in vivo recordings
+### Stereotaxic surgery for in vivo recordings
 
 Mice were anesthetized with 1.8 mg/kg urethane administered intraperitoneally. Anesthetized mice were placed in a stereotaxic atop a heating pad controlled with an anal probe feedback to maintain body temperature (37°C), respiration was continuously monitored and faux tears were applied to prevent corneal dehydration. An incision was made down the midline of the scalp and the skin was parted to expose the skull. Screws were placed over the right frontal plate and interparietal plate. A craniotomy was made no more than 2 mm in diameter centered over the primary somatosensory cortex (S1; in mm from bregma: –1a-p, 1.5m-l) (Franklin, 2019). After the dura was removed, SR101 was topically applied to the exposed cortex to label astrocytes (50 µM for 20 min) (Rasmussen et al., 2016). Agarose (1%) was made from artificial cerebrospinal fluid (ACSF) (containing in mM: NaCl 140, KCl 5, MgCl2 1, CaCl2 2, EDTA 1, HEPES-K 8.6, Glucose 10) and placed on the exposed cortex before fixing a glass coverslip over the craniotomy using dental cement. Finally, a frame was mounted onto the exposed skull using dental cement. In experiments testing IP3R2 in calcium surge, 2 weeks before imaging mice were injected with adenovirus encoding GCaMP6f under the GfaABC1d promoter (AAV5-GfaABC1d-GCaMPf) into S1 (Rupprecht et al., 2024).
 
-## In vivo two-photon calcium fluorescence imaging
+### In vivo two-photon calcium fluorescence imaging
 
 In vivo imaging was performed in layers 2/3 (100–300 µm below the cortical surface) of the exposed mouse cortex with a Leica SP5 multiphoton upright microscope. Videos were obtained for 60 s over an area of 366×366 µm2 at either 256×256 or 512×512 sized images with a sampling interval of 0.2–0.5 s. Red and green fluorescence was obtained in parallel to image calcium activity in identified SR101-labeled astrocytes.
 
-## Peripheral stimulation
+### Peripheral stimulation
 
 A bipolar electrode needle was placed in the hindpaw contralateral to the recorded cortical hemisphere. Square electrical pulses of 2 mA amplitude and 0.5 ms width were delivered at 2 Hz for 20 s. In experiments testing stimulation parameters were done to test different intensities (1, 2, 3 mA always with 2 Hz for 10 s) or variable frequencies (0.5, 1, 2, 5, 10 Hz at 2 mA for 10 s) or for different durations (1, 5, 10, 20 s at 2 mA and 2 Hz). Stimulus parameters were pseudorandomly ordered to differentially activate and characterize different levels of activation of astrocytes. Stimulations were separated by at least 2 min.
 
-## Calcium image processing and analysis
+### Calcium image processing and analysis
 
-All image processing and analysis was performed in the novel graphical user interface Calsee created in MATLAB (Figure 1—figure supplement 1; https://github.com/justinlines/Calsee; Lines, 2020). Previously published using in vivo and in situ data (Baraibar et al., 2023; Corkrum and Araque, 2021; Lines et al., 2022; Lines et al., 2020; Nanclares et al., 2023). Within Calsee, functional and structural video files can be loaded simultaneously. ROIs can be defined manually or automatically based on structural or functional imaging. In this study, structural images of SR101-stained astrocytes were used to manually create an outer border around individual astrocyte territories (Bindocci et al., 2017). These structurally defined ROIs labeling the outer boundary of individual astrocytes were refined using Calsee, which allows the user to click the center of the soma on a cell (xsoma,ysoma), marking the center of the cell in polar coordinates with radius rcell and angle θcell as defined in Equations 1 and 2 (Figure 1—figure supplement 1B).(1)rcell=(x−xsoma)2+(y−ysoma)2(2)θcell=tan−1((y−ysoma)(x−xsoma))
+All image processing and analysis was performed in the novel graphical user interface Calsee created in MATLAB (Figure 1—figure supplement 1; https://github.com/justinlines/Calsee; Lines, 2020). Previously published using in vivo and in situ data (Baraibar et al., 2023; Corkrum and Araque, 2021; Lines et al., 2022; Lines et al., 2020; Nanclares et al., 2023). Within Calsee, functional and structural video files can be loaded simultaneously. ROIs can be defined manually or automatically based on structural or functional imaging. In this study, structural images of SR101-stained astrocytes were used to manually create an outer border around individual astrocyte territories (Bindocci et al., 2017). These structurally defined ROIs labeling the outer boundary of individual astrocytes were refined using Calsee, which allows the user to click the center of the soma on a cell $(x_{soma},y_{soma})$, marking the center of the cell in polar coordinates with radius $r_{cell}$ and angle $\theta_{cell}$ as defined in Equations 1 and 2 (Figure 1—figure supplement 1B).
 
-To refine ROIs down to only SR101-positive pixels, we first define the soma. The fluorescence F(rj) of every concentric ring j of radius rj is found as in Equation 3 by averaging over θ and is used to plot the change in fluorescence vs radius (Figure 1—figure supplement 1B and C).(3)Frj=1N∑i=02πF(rj,θi)
+$$
+r_{cell}=\sqrt{(x−x_{soma})^{2}+(y−y_{soma})^{2}}
+$$
 
-The radius of the first ring from the center whose fluorescence falls below 50% of the center ring fluorescence (F(r1)) is used as the radius of the soma rsoma. Arborizations are defined as regions within each ring that is 0.25 standard deviations above the median fluorescence of that ring out until the algorithm reaches the manually drawn cellular border. Next, astrocyte territories are further discretized into a grid of domains that are maximally sized 4.3 × 4.3 µm2 square ROIs. At fine distal processes, ROIs were automatically reduced in size to only include SR101-positive pixels within the manually drawn territory boundary. These ROIs based on SR101 labeling were then used to quantify calcium activity from the simultaneously recorded green channel. The fluorescence traces were normalized by the average fluorescence of the 10 s preceding sensory stimulation onset. Event detection of calcium fluorescence was determined when the amplitude of the response was three times the standard deviation away from the average baseline amplitude.
+
+
+$$
+\theta_{cell}=tan^{−1}(\frac{(y−y_{soma})}{(x−x_{soma})})
+$$
+
+To refine ROIs down to only SR101-positive pixels, we first define the soma. The fluorescence $F(r_{j})$ of every concentric ring $j$ of radius $r_{j}$ is found as in Equation 3 by averaging over $\theta$ and is used to plot the change in fluorescence vs radius (Figure 1—figure supplement 1B and C).
+
+$$
+Fr_{j}=\frac{1}{N}\sum_{i=0}^{2\pi}F(r_{j},\theta_{i})
+$$
+
+The radius of the first ring from the center whose fluorescence falls below 50% of the center ring fluorescence ($F(r_{1})$) is used as the radius of the soma $r_{soma}$. Arborizations are defined as regions within each ring that is 0.25 standard deviations above the median fluorescence of that ring out until the algorithm reaches the manually drawn cellular border. Next, astrocyte territories are further discretized into a grid of domains that are maximally sized 4.3 × 4.3 µm2 square ROIs. At fine distal processes, ROIs were automatically reduced in size to only include SR101-positive pixels within the manually drawn territory boundary. These ROIs based on SR101 labeling were then used to quantify calcium activity from the simultaneously recorded green channel. The fluorescence traces were normalized by the average fluorescence of the 10 s preceding sensory stimulation onset. Event detection of calcium fluorescence was determined when the amplitude of the response was three times the standard deviation away from the average baseline amplitude.
 
 Every calcium event following the delivery of stimulation in the domains of an astrocyte before its soma becomes active is referred as pre-soma events. Events happening in the domains after soma activation are referred as post-soma events. Accordingly, a cell whose soma becomes active at a given moment can be subdivided into pre-soma cell (all the activity of the cell prior to soma activation) and post-soma cell (all the activity of the cell following soma activation).
 
-## Heaviside step function
+### Heaviside step function
 
-The Heaviside step function below in Equation 4 is used to mathematically model the transition from one state to the next and has been used in simple integrate and fire models (Bueno-Orovio et al., 2008; Gerstner, 2000).(4)H(a):={0,a<aT1,a≥aT
+The Heaviside step function below in Equation 4 is used to mathematically model the transition from one state to the next and has been used in simple integrate and fire models (Bueno-Orovio et al., 2008; Gerstner, 2000).
 
-The Heaviside step function H(a) is zero everywhere before the threshold area (aT) and one everywhere afterward. From the data shown in Figure 4E where each point (S(a)) is an individual astrocyte response with its percent area (a) domains active and if the soma was active or not denoted by a 1 or 0, respectively. To determine aT in our data we iteratively subtracted H(a) from S(a) for all possible values of aT to create an error term over a. The area of the minimum of that error term was denoted the threshold area.
+$$
+H(a):={0,a<a_{T}1,a\geqa_{T}
+$$
 
-## Slice experiments
+The Heaviside step function $H(a)$ is zero everywhere before the threshold area ($a_{T}$) and one everywhere afterward. From the data shown in Figure 4E where each point ($S(a)$) is an individual astrocyte response with its percent area ($a$) domains active and if the soma was active or not denoted by a 1 or 0, respectively. To determine $a_{T}$ in our data we iteratively subtracted $H(a)$ from $S(a)$ for all possible values of $a_{T}$ to create an error term over $a$. The area of the minimum of that error term was denoted the threshold area.
+
+### Slice experiments
 
 Following rapid decapitation, brains were extracted and placed in a vibratome to create 350 µm thick brain slices that included the primary somatosensory cortex. Brain slices were left to incubate in ACSF containing (in mM): NaCl 124, KCl 2.69, KH2PO4 1.25, MgSO4 2, NaHCO3 26, CaCl2 2, ascorbic acid 0.4, and glucose 10, and continuously bubbled with carbogen (95% O2 and 5% CO2) (pH 7.3). After incubation, brain slices were placed in a chamber with a perfusion system to image astrocytes as well as record neuronal membrane potential via patch clamp. To stimulate astrocytes locally, a pipette tip was lowered above the slice and used to apply a puff of 0.5 mM ATP. Like in vivo experiments, videos were obtained for 60 s with at least 2 min of interstimulus time. Processing and analysis were performed in the same manner as described above for in vivo experimental data.
 
-## Statistical analysis
+### Statistical analysis
 
 Astrocyte calcium quantifications were initially averaged, for data presented in Figures 2, 4D, F, 7E–G, over all astrocytes of a single video and these values were used in statistical testing. All other data and statistical examination presented in Figures 3—7D are based on individual astrocyte responses. Paired and unpaired two-tailed Student’s t-tests were performed with α=0.05 against the null hypothesis that no difference exists between the two groups. Correlations were confirmed using a Student’s t-test against the null hypothesis that no correlation exist. To test the stimulus dependence of a stimulus-response curve, one-way ANOVAs were performed with α=0.05 against the null hypothesis that no dependence exists. In the comparisons of two groups’ response curves a two-way ANOVA was performed with α=0.05 against the additional null hypotheses that the two groups are the same and no interaction exists. In some examinations following a significant ANOVA, multiple comparison testing was performed using Tukey’s range test using α=0.05 against the null hypothesis that no samples are different from each other. Sample sizes were based off of previous reports (Lines et al., 2022; Lines et al., 2020). Experimental ordering of stimulus intensity was randomized for each field of view. Only data from healthy preparations, for both in vivo and in situ experiments, were included. The GLM analysis was performed in MATLAB.

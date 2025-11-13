@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Molecular Physiology and Biophysics Section, Porter Neuroscience Research Center, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States
-2. https://ror.org/00hj54h04 Department of Molecular Biosciences, College of Natural Sciences, The University of Texas at Austin Austin TX United States
+1. Molecular Physiology and Biophysics Section, Porter Neuroscience Research Center, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Department of Molecular Biosciences, College of Natural Sciences, The University of Texas at Austin Austin TX United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
 
 † Corresponding author
 
@@ -32,9 +32,25 @@ Cryo-electron microscopy (cryo-EM) structures of rat TRPV2 channels obtained in 
 
 ## Results
 
-## CBD strongly sensitizes rTRPV2 channels to activation by 2-APB
+### CBD strongly sensitizes rTRPV2 channels to activation by 2-APB
 
 We expressed rat TRPV2 (rTRPV2) channels in HEK293 cells and began by measuring the magnitude of the currents elicited by a low concentration of 2-APB (0.5 mM) or a near-saturating concentration (10 µM) of CBD (Qin et al., 2008) in the whole-cell configuration of the patch clamp at a holding potential of –80 mV. Even at this low concentration, 2-APB elicited currents that were much larger than those by CBD (Figure 1A). When 2-APB and CBD were applied together, we observed large currents that were comparable to those measured in response to a concentration of 2-APB (6 mM) that maximally activates rTRPV2 channels (Figure 1A). Currents in the presence of 0.5 mM 2-APB were over two orders of magnitude larger in the presence of CBD than in its absence (Figure 1H). Importantly, 2-APB and CBD applied together elicited no increase in whole-cell currents from un-transfected cells recorded in response to voltage pulses from –100 to +100 mV (Figure 1B). In contrast, the same voltage-stimulation protocol elicited robust currents in rTRPV2-transfected cells when exposed to 0.5 mM 2-APB or 10 µM CBD applied separately (Figure 1C and D). The sensitization caused by CBD is so strong that it becomes challenging to quantitate; at 0.5 mM 2-APB, channel activity is barely detectable in the whole-cell configuration, and yet with CBD added currents reach maximal activation levels (Figure 1A and H). The magnitude of sensitization we measured (Figure 1H) likely represents a lower bound for the sensitizing effect of CBD on rTRPV2 channels. We therefore analyzed data in a semi-quantitative manner without attempting to quantify the energetics associated with sensitization.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative whole-cell gap-free current recording at –80 mV from a cell expressing rTRPV2 channels. The colored horizontal lines denote the duration of exposure to test compounds, and the red dotted line denotes the zero-current level. The inset shows a magnified view of a segment of the recording. (B) Mean current–voltage relations recorded in control solution and in the presence of 0.5 mM 2-APB + 10 µM obtained from un-transfected cells in the whole-cell configuration (n = 8). (C) Representative current families elicited by voltage steps from –100 to +100 mV obtained from an rTRPV2-expressing cell exposed to control solution, 0.5 mM 2-APB or 10 µM CBD. The dotted lines indicate the zero-current level. (D) Mean current–voltage relations obtained from data as in (C) and normalized to the mean value at +100 mV in the presence of 0.5 mM 2-APB. Data are shown as mean ± SEM (n = 5). (E) Dose–response relation for rTRPV2 channel activation by CBD measured at –80 mV in the whole-cell configuration (mean ± SEM; n = 4). The continuous curve is a fit to the Hill equation with parameters: EC50 = 4.3 ± 1.4 µM and Hill coefficient (nH) = 1.7 ± 0.1. (F) Concentration–response relations for rTRPV2 channel activation by 2-APB at –80 mV in the whole-cell configuration measured in the absence (blue symbols) or presence (black symbols) of 10 µM CBD (mean ± SEM; n = 7). Hill equation parameters: no CBD, EC50 = 1.5 ± 0.05 mM, Hill coefficient (nH) = 3.3 ± 0.2; 10 µM CBD, EC50 = 159.9 ± 7.7 µM, Hill coefficient (nH) = 2.9 ± 0.3. (G) Representative whole-cell gap-free recording at –80 mV in an rTRPV2-expressing cell. The bottom-left inset shows group data for the mean current amplitude at each of the three stimulations with 6 mM 2-APB, leak-subtracted and normalized to the amplitude during the first 6 mM 2-APB stimulation (solid squares – mean ± SEM, n = 5; empty circles – data from individual cells). The bottom-right inset displays steady-state data measured over each of the five intervals (① - ⑤) identified by the circled numbers on the current time course, normalized to the response to 2-APB in ① denoted by the horizontal blue line. Black squares are mean ± SEM, and circles are data from individual cells. (H) Leak-subtracted and normalized group data for: experiments in the whole-cell configuration as in (A) (n = 5) or post-sensitization by 6 mM 2-APB as in (G) (n = 5); experiments from outside-out patches as in Figure 1—figure supplement 3A (n = 6); experiments from inside-out patches as in Figure 1—figure supplement 3B (n = 9). Data was normalized to the first stimulation with 0.5 mM 2-APB (denoted by the horizontal blue lines) and shown as mean ± SEM (black squares) or values from individual cells (circles).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative experiments showing high-performance liquid chromatography (HPLC) runs for a blank sample (i.e. recording solution only), and samples containing 50 nmol of 2-APB or 5 nmol of CBD alone or with both compounds together at the same concentrations. Absorbance was monitored at 228 nm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Current–temperature relations recorded at +90 mV from rTPRV1-expressing cells in the whole-cell configuration. Currents were recorded during the first 90 s after the heating device was turned on, and the mean current at the end of each pulse plotted against temperature as calculated from Equation 4 (see ‘Materials and methods’). Relations from individual experiments are shown as gray lines, and their mean ± SEM shown in black (n = 11). Currents from individual experiments were normalized to their magnitude at 21°C. (B–D) Current temperature relations obtained and plotted as in (A) for experiments with (B) un-transfected cells (n = 5), (C) rTRPV2-expressing cells (n = 9), and (D) rTRPV2-expressing cells in the presence of 10 µM CBD (n = 9). (E) Q10 values calculated from data in (A–D). The circles denote the values for individual experiments, and the mean ± SEM is shown as squares.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative gap-free recording at –80 mV obtained from an outside-out patch expressing rTRPV2 channels. The colored horizontal lines denote the duration of exposures to test compounds. The red dotted line denotes the zero-current level. Group data shown in Figure 1H. (B) Representative gap-free recording at –80 mV obtained from an inside-out patch expressing rTRPV2 channels. Group data shown in Figure 1H.
 
 We were surprised at the minimal efficacy with which CBD activates rTRPV2 channels (Figure 1A, C and D), so we measured the magnitude of currents elicited by increasing concentrations of CBD in rTRPV2-expressing cells. The resulting concentration–response relations (Figure 1E) confirm that CBD activates rTRPV2 channels with much higher affinity (EC50 ~ 4 µM) than 2-APB but also with much lower efficacy, and that rTRPV2 channels can be assumed to be fully bound by CBD at a concentration of 10 µM CBD. We next tested whether rTRPV2 channels display an increased apparent affinity for 2-APB when bound to CBD by measuring rTRPV2 channel activation at increasing concentrations of 2-APB in the presence and absence of 10 µM CBD, and found that the EC50 for 2-APB activation decreased approximately tenfold in the presence of CBD (Figure 1F).
 
@@ -48,7 +64,7 @@ In addition to being weakly sensitized by 2-APB, rTRPV2 channels are strongly an
 
 Finally, we tested whether the sensitizing effect of CBD on activation of rTRPV2 channels by 2-APB also occurs in excised membrane patches devoid of many cellular components. Exposure of outside-out or inside-out patches expressing rTRPV2 channels to 0.5 mM 2-APB or 10 µM CBD alone elicited negligible currents (Figure 1—figure supplement 3), and similarly to our results in the whole-cell configuration, application of both agonists together elicited very large currents of the same magnitude as those elicited in response to 6 mM 2-APB that maximally activates channels (Figure 1H, Figure 1—figure supplement 3). These results indicate that patch excision does not disrupt sensitization of 2-APB responses by CBD, and that both agonists are capable of reaching their sites in the channel regardless of the side of the membrane to which they are applied.
 
-## rTRPV2 channel sensitization by CBD increases channel open probability
+### rTRPV2 channel sensitization by CBD increases channel open probability
 
 To determine whether CBD sensitizes rTRPV2 channels to activation by 2-APB by increasing channel open probability (Po), we undertook single-channel recordings. Although we were unable to obtain patches containing a single channel because the rTRPV2 channel expresses extremely well in HEK293 cells, we obtained recordings from inside-out patches containing multiple channels under conditions where the Po is very low and gating transitions of individual channels can be readily distinguished. For each patch, we recorded channel activity in the absence of agonists (i.e. control), and in the presence of 2-APB and CBD applied separately or together. All recorded data are displayed in Figure 2A as data blocks organized into two 3 × 4 arrays: each row of data blocks in the array contains data from a different inside-out patch (n = 6), and columns separate data obtained under different experimental conditions. For each individual data block in the array, current sweeps are stacked along the vertical axis (50 sweeps per block) and the horizontal axis within each block corresponds to the recoding duration of 500 ms per sweep. Individual data points are colored by current amplitude – see the color bar and the representative sweeps in Figure 2C for reference.
 
@@ -60,21 +76,230 @@ With the exception of a high-Po burst at 250 µM 2-APB observed in one patch, ch
 
 To compare between data from different patches at each experimental condition, we generated all-points current amplitude histograms from each of the 24 data blocks shown in Figure 2A; each vertical lane in Figure 2D is a histogram, with current–amplitude bins on the vertical axis and a color scale to denote the logarithm of the normalized number of points per bin. For almost all patches, the histograms in control, 2-APB, or CBD have a single peak centered at 0 pA, the mean current amplitude when no channels are open. Consistent with a much greater Po in the presence of 2-APB and CBD together, the corresponding histograms all have robust peaks at larger amplitudes representing the opening of one or more channels (Figure 2D, right panel). We could not accurately determine single-channel current amplitudes in 2-APB or CBD because of the short duration and sparsity of openings when the agonists were applied separately. In the presence of 2-APB and CBD together, the single-channel current amplitude was centered at around 4.3 pA in five out of the six patches, with one patch exhibiting a much larger open amplitude of 8.2 pA (Figure 2D). In one of the patches in the presence of the two agonists, the open-channel current amplitude was initially ~4 pA but we also began observing openings with a larger current amplitude of 10.5 pA that became predominant for the rest of the experiment (Figure 2C and D). We are fairly confident that both amplitudes correspond to open rTPRV2 channels because we were able to observe multiple transitions between the two single-channel current amplitude levels when only one channel was open (Figure 2C). Together, these findings imply that rTRPV2 channels can undergo transitions between open states with different cation-conducting properties, as described for the closely related rTRPV1 channel (Canul-Sánchez et al., 2018; Geron et al., 2018) and the RTx-sensitive TRPV2-QM variant (Zhang et al., 2016), and establish that the CBD-dependent sensitization of rTRPV2 channels arises from increased open probability of channels bound to CBD and 2-APB.
 
-## Interaction sites for CBD in the rTRPV2 channel
+### Interaction sites for CBD in the rTRPV2 channel
 
 To further explore the mechanism by which CBD sensitizes rTRPV2 to activation by 2-APB, we set out to confirm where CBD binds (Pumroy et al., 2019; Pumroy et al., 2022) and to solve structures of rTRPV2 with both ligands. We expressed an mVenus-tagged construct of full-length rTRPV2 in mammalian cells, purified and reconstituted the protein into lipid nanodiscs using MSP1E3D1 (Matthies et al., 2018), and solved its structure using cryo-EM in the presence of both CBD and 2-APB (Figure 3—figure supplements 1–4, Table 1). In our initial classification and refinement, we determined the structure of rTRPV2 spanning residues F75 to S728, including the transmembrane (TM) regions along with portions of the N- and C-termini and observed reasonably well-defined density for CBD between the S5 and S6 helices (Figure 3A), which we termed conformation A. The overall structure of rTRPV2 in conformation A and the location where CBD binds are remarkably similar to a previously published structure of rTPRV2 with CBD bound (Pumroy et al., 2019), as well as a more recent structure obtained in the presence of CBD and 2-APB (Pumroy et al., 2022) – in each of these instances, the internal pore remains closed and the structures are likely to represent a desensitized state. Although the overall resolution of conformation A was 3.23 Å, we could not see any density corresponding to 2-APB, including regions where 2-APB has been reported to bind to either TRPV2 or TRPV3 (Figure 3—figure supplement 5A; Singh et al., 2018b; Singh et al., 2018a; Zubcevic et al., 2019; Pumroy et al., 2022; Su et al., 2023).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig3-v1.jpg)
+
+**Figure 3.:** (A) Overall structure of the rTRPV2 channel in lipid nanodiscs in conformation A with one CBD molecule bound to each monomer (PDB: 8SLX). Magnified view of the single CBD binding site is shown in the right panel. Both CBD and interacting residues are presented in stick with the cryo-EM density (EMD-40582) corresponding to CBD shown as a white surface. (B) Overall structure of the rTRPV2 channel in lipid nanodiscs in conformation B with two CBD molecules bound to each monomer (PDB: 8SLY). Magnified view of the two CBD binding sites are shown in the right panel. CBD with interacting residues and lipid were presented in stick configuration and cryo-EM density (EMD-40583) corresponding to CBD and lipid are shown as a white surface. (C) Cryo-EM density for the two CBD binding sites in conformation B modeled using CBD and shown in two orientations. The top density corresponds to that closer to the extracellular side of the channel and the bottom towards the intracellular side. (D) Same cryo-EM densities shown in (C), but in this case modeling the more intracellular density using 2-aminoethoxydiphenyl borate (2-APB). (E) Cryo-EM density for the lipid near the more intracellular CBD binding site fitted with 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC). (F) Same cryo-EM density shown in (E), but fitted with phosphatidylinositol.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Gel filtration chromatograms of the rTRPV2 in detergent (left), reconstituted into nanodisc using MSP1E3D1 (middle) and SDS-PAGE of rTRPV2 in nanodisc (see Figure 3—figure supplement 1—source data 1 for uncropped gel image).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Local resolution map for the entire TM region (top), direction distribution plots of the 3D reconstruction (middle) and Fourier shell correlation (FSC) curves for rTRPV2 conformation A. (B) Local resolution map for rTRPV2 (top), direction distribution plots of the 3D reconstruction (middle) and FSC curves for rTRPV2 conformation B.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Regional cryo-EM densities are shown for conformation A (A) and conformation B (B).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Left: region of rTRPV2 conformation A where 2-APB was assigned in site 1 for TRPV3 (PDB: 6DVZ) (Singh et al., 2018b; Singh et al., 2018a; Zubcevic et al., 2019). (Middle) Region of rTRPV2 conformation A where 2-APB was assigned in site 2 for TRPV3 (PDB: 6DVZ). The extra density can also be found in the structure of TRPV2 without 2-APB added (PDB: 6U8A) (Pumroy et al., 2019). Right: region of rTRPV2 conformation A where 2-APB was assigned in rTRPV2 (PDB: 7NOM) (Pumroy et al., 2022). (B) Left: region of rTRPV2 conformation B where 2-APB was assigned in site 1 for TRPV3 (PDB: 6DVZ). Middle: region of rTRPV2 conformation B where 2-APB was assigned in site 2 for TRPV3 (PDB: 6DVZ). The extra density can also be found in the structure of TRPV2 without 2-APB added (PDB: 6U8A). Right: region of rTRPV2 conformation B where 2-APB was assigned in rTRPV2 (PDB: 7N0M). (C) Extra density within S1-S4 domains can be found in (left) apo-form TRPV2 (PDB: 6U84); (middle) TRPV2 with CBD (PDB:6U8A); and (right) TRPV2 with 2-APB (PDB: 7N0M).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Comparison between conformation B and TRPV2 in the presence of 2-aminoethoxydiphenyl borate (2-APB) and cannabidiol (CBD) (PDB: 7T37). Lipid in conformation B is shown in stick and density attributed to lipid in 7T37 is presented as a white surface. (B) Comparison between conformation B and TRPV2 with cholesterol bound (PDB: 7XEM). Lipids in vanilloid pocket are shown in stick. (C) Comparison between conformation B and TRPV1 apo form (PDB: 7L2P). Lipids in the vanilloid pocket are presented in stick.
+
+**Table 1.**
+ Cryo-EM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Conformation A</th>
+      <th>Conformation B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Magnification</td>
+      <td>105,000</td>
+      <td>105,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>52</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>–0.5 to –1.5</td>
+      <td>–0.5 to –1.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.415</td>
+      <td>0.415</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C4</td>
+      <td>C4</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>1,665,271</td>
+      <td>1,665,271</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>321,717</td>
+      <td>43,071</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.23</td>
+      <td>3.32</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>6U84</td>
+      <td>6U84</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>3.4</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>–50</td>
+      <td>–50</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>17,901</td>
+      <td>18,313</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2380</td>
+      <td>2376</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>9</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.455</td>
+      <td>0.566</td>
+    </tr>
+    <tr>
+      <td>B factor(Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>93.49</td>
+      <td>78.75</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>94.58</td>
+      <td>41.01</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.29</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>5.45</td>
+      <td>6.18</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>98.84</td>
+      <td>98.11</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>1.16</td>
+      <td>1.89</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_FSC: Fourier shell correlation._
 
 To identify where 2-APB binds in the presence of CBD, we undertook further focused classification of the TM region into seven classes without image alignment. Six classes were indistinguishable from conformation A, while one class shows interesting features that are distinct from conformation A which we refer to as conformation B. Although the reported resolution of conformation B was 3.32 Å, the density near the CBD binding site is much stronger compared to conformation A (Figure 3A–C; Figure 3—figure supplements 1–4, Table 1). In this new conformation, we observed density for CBD bound to the previously described site, similarly to conformation A. In addition, we observed a second non-protein density located nearby the S5 and S6 helices and the S4-S5 linker towards the intracellular side of the protein (Figure 3B and C), which represents a new potential binding site for small molecules in the rTRPV2 channel. Because this second non-protein density can be well fit by CBD in contrast to 2-APB, we have assigned this density to CBD over 2-APB based on its shape (Figure 3C and D), but we acknowledge that the density could represent another molecule carried over from the cells during purification. We also observed a well-defined density at the vanilloid site of a lipid molecule interacting with and likely stabilizing the second CBD molecule at this new site (Figure 3B, E and F). Because the headgroup density for this lipid has a conical shape that can be fit with 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) (Figure 3E and F), we tentatively assigned the lipid as POPC. In conformation A and earlier structures of TRPV2, the S4-S5 linker adopts a helical secondary structure, whereas in conformation B, residues at the C-terminal end of the S4-S5 linker are incorporated into the S5 helix to lengthen that TM, and the remaining residues in the linker adopt an extended loop (Figure 3B). Importantly, the position of the vanilloid site lipid in conformation B resembles density attributed to lipid in rTRPV2 structures obtained in the presence of 2-APB together with CBD that were proposed to represent an activated state of the channel (Pumroy et al., 2022). In both of these instances, the position of the lipid is closer to the S4-S5 linker when compared to vanilloid lipid observed in other structures of TRPV2 or TRPV1 (Figure 3—figure supplement 6; Zhang et al., 2021; Su et al., 2023). However, as with conformation A, we see no clear density for 2-APB in conformation B, including those regions where 2-APB has been reported to bind to either TRPV2 or TRPV3 (Figure 3—figure supplement 5B). Although we do see extra density within the S1-S4 domain in both conformation A and B (Figure 3—figure supplement 5A and B), similar density can also be seen in this region for structures solved for the apo-form of TRPV2 (Figure 3—figure supplement 5C, left) or TRPV2 in the presence of CBD or 2-APB (Figure 3—figure supplement 5C, middle and right, respectively). From these results, we conclude that it remains unclear where 2-APB binds to rTRPV2, but that CBD could potentially bind to two sites within each subunit of rTRPV2, with binding to the most intracellular site involving stabilizing interactions with the lipid at the vanilloid site and a localized conformational change in the S4-S5 linker.
 
 We note that a much larger number of particles were used to refine conformation A (321,717) compared to conformation B (43,071) (Figure 3—figure supplement 2), suggesting that the binding of CBD to the more extracellular site has higher occupancy compared to the more intracellular site. This difference in CBD occupancy might suggest that the affinity of CBD is higher for the more extracellular site. Another possibility is that conformation B is only transiently populated during activation or desensitization of rTRPV2. Finally, it is possible that CBD binding to the second site in conformation B requires the presence of a lipid other than the POPC that we modeled that has been carried over from purification, and the majority of particles are observed to adopt conformation A because they lost that lipid during purification. The conformational change in the S4-S5 linker observed in conformation B is interesting because this structural element plays a critical role in coupling conformational changes in the S1-S4 domain to the pore domain where the gate resides.
 
-## CBD sensitizes rTRPV1 channels weakly and mTRPV3 channels strongly to activation by 2-APB
+### CBD sensitizes rTRPV1 channels weakly and mTRPV3 channels strongly to activation by 2-APB
 
 Rat TRPV1 (rTRPV1) and mouse TRPV3 (mTRPV3) channels share 49 and 42% amino acid sequence identity with rTRPV2, respectively, and accumulating evidence suggests that some agonists follow similar mechanisms to activate these three channels (Yang et al., 2016; Zhang et al., 2016; Zhang et al., 2019; Zubcevic et al., 2018; Jara-Oseguera et al., 2019; Deng et al., 2020; Shimada et al., 2020). In addition, the three channels can be activated by 2-APB (Hu et al., 2004), and previous reports used Ca2+-imaging to show that CBD can also stimulate TRPV1 (Bisogno et al., 2001; Ligresti et al., 2006; De Petrocellis et al., 2012; Iannotti et al., 2014) and TRPV3 (De Petrocellis et al., 2012) channels with low micromolar affinity. We therefore tested whether CBD exerts a similar sensitizing effect on rTRPV1 and mTRPV3 channels. First, we confirmed that 10 µM CBD can elicit currents in rTRPV1 or mTRPV3-expressing cells by recording current–voltage relations in the absence and presence of CBD and found that for both channels 10 µM CBD noticeably increased currents relative to control (Figure 4A–D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig4-v1.jpg)
 
-**Figure 4.:** (A) Representative whole-cell current families obtained from rTRPV1 expressing cells in control or in the presence of 10 µM CBD. Currents were elicited by voltage steps from –100 to +100 mV. The red dotted line denotes the zero-current level. (B) Steady-state current–voltage relations obtained from data as in (A) and normalized to the steady-state current magnitude at +100 mV in CBD. Data is shown as mean ± SEM (n = 6). (C) Representative whole-cell current families from mTRPV3-expressing cells obtained as in (A). (D) Steady state mTRPV3 channel current–voltage relations obtained from data as in (C) (mean ± SEM, n = 7). (E) Representative whole-cell recording at –80 mV obtained from an rTRPV1-expressing cell. (F) Group data from experiments as in (E) obtained using 10 or 40 µM CBD, leak-subtracted and normalized to the current magnitude measured at steady state during the first stimulation with 50 µM 2-APB, denoted by the horizontal blue line. Data are shown as mean ± SEM (squares, 10 µM CBD, n = 6; 40 µM CBD, n = 5) or as individual cells (circles). (G) Representative whole-cell gap-free recording at –60 mV obtained from a cell expressing mTRPV3 channels stimulated with 2-APB and CBD. The first exposure to 2-APB alone (10 s duration) was used for normalization. (H) Representative experiment showing repeated stimulation with 2-APB. The first exposure to 2-APB (10 s duration) was used for normalization. Red curves are fits to a double-exponential function of time, with resulting fast (tau1) and slow (tau2) time constants in magenta and yellow superposed to the mean time-course in (K). (I, J) Representative experiments at – 60 mV for sensitized responses to (I) 2-APB and CBD or (J) 2-APB alone measured after three exposures to 3 mM 2-APB applied at –10 mV to preserve patch integrity (dotted black lines). The first exposure to 60 µM 2-APB (10 s duration) was used for normalization. The inset shows current amplitudes at each stimulation with 3 mM 2-APB (filled squares, mean ± SEM; empty circles, data from individual cells, n = 5). (K) Mean time courses for mTRPV3 channel activation by 60 µM 2-APB in the absence (blue symbols) or presence of 10 µM CBD (black symbols), measured in experiments as in (G) and (H), as well as sensitized responses to 2-APB (light blue symbols) or 2-APB + CBD (gray symbols) measured as in (I) and (J). The time course for the sensitized response to 2-APB alone does not start at t = 0 to account for the sensitizing exposures to 3 mM 2-APB. Data are shown as mean ± SEM (n = 5 for each condition). Data were fit to a mono-exponential function of time, with time constants shown on the right inset as mean ± SEM (open squares) or data from individual cells (circles). The yellow and magenta symbols are the time constants obtained from double-exponential fits to each stimulation by 2-APB over the course of experiments as in (H). Data is shown as mean ± SEM (symbols with black outline) as well as fits from each individual cell (smaller symbols without outline). The magenta curve is a fit to a mono-exponential function.Figure 4—source data 1.Figure 4B and D.Figure 4—source data 2.Figure 4F.Figure 4—source data 3.Figure 4I–K.
+**Figure 4.:** (A) Representative whole-cell current families obtained from rTRPV1 expressing cells in control or in the presence of 10 µM CBD. Currents were elicited by voltage steps from –100 to +100 mV. The red dotted line denotes the zero-current level. (B) Steady-state current–voltage relations obtained from data as in (A) and normalized to the steady-state current magnitude at +100 mV in CBD. Data is shown as mean ± SEM (n = 6). (C) Representative whole-cell current families from mTRPV3-expressing cells obtained as in (A). (D) Steady state mTRPV3 channel current–voltage relations obtained from data as in (C) (mean ± SEM, n = 7). (E) Representative whole-cell recording at –80 mV obtained from an rTRPV1-expressing cell. (F) Group data from experiments as in (E) obtained using 10 or 40 µM CBD, leak-subtracted and normalized to the current magnitude measured at steady state during the first stimulation with 50 µM 2-APB, denoted by the horizontal blue line. Data are shown as mean ± SEM (squares, 10 µM CBD, n = 6; 40 µM CBD, n = 5) or as individual cells (circles). (G) Representative whole-cell gap-free recording at –60 mV obtained from a cell expressing mTRPV3 channels stimulated with 2-APB and CBD. The first exposure to 2-APB alone (10 s duration) was used for normalization. (H) Representative experiment showing repeated stimulation with 2-APB. The first exposure to 2-APB (10 s duration) was used for normalization. Red curves are fits to a double-exponential function of time, with resulting fast (tau1) and slow (tau2) time constants in magenta and yellow superposed to the mean time-course in (K). (I, J) Representative experiments at – 60 mV for sensitized responses to (I) 2-APB and CBD or (J) 2-APB alone measured after three exposures to 3 mM 2-APB applied at –10 mV to preserve patch integrity (dotted black lines). The first exposure to 60 µM 2-APB (10 s duration) was used for normalization. The inset shows current amplitudes at each stimulation with 3 mM 2-APB (filled squares, mean ± SEM; empty circles, data from individual cells, n = 5). (K) Mean time courses for mTRPV3 channel activation by 60 µM 2-APB in the absence (blue symbols) or presence of 10 µM CBD (black symbols), measured in experiments as in (G) and (H), as well as sensitized responses to 2-APB (light blue symbols) or 2-APB + CBD (gray symbols) measured as in (I) and (J). The time course for the sensitized response to 2-APB alone does not start at t = 0 to account for the sensitizing exposures to 3 mM 2-APB. Data are shown as mean ± SEM (n = 5 for each condition). Data were fit to a mono-exponential function of time, with time constants shown on the right inset as mean ± SEM (open squares) or data from individual cells (circles). The yellow and magenta symbols are the time constants obtained from double-exponential fits to each stimulation by 2-APB over the course of experiments as in (H). Data is shown as mean ± SEM (symbols with black outline) as well as fits from each individual cell (smaller symbols without outline). The magenta curve is a fit to a mono-exponential function.
 
 We next probed for CBD-dependent sensitization in cells expressing rTRPV1 channels. We performed experiments where we exposed cells to 50 µM 2-APB and 10 µM CBD, first applied separately and then together, and finally we applied 10 µM capsaicin to maximally activate channels. To our surprise, we observed only moderate sensitization of the response to 2-APB in the presence of CBD (less than tenfold increase), and sensitized currents were much smaller than the maximal currents recorded in the presence of capsaicin (Figure 4E and F). In experiments using a higher concentration of CBD (40 µM), we obtained similar results, indicating that 10 µM CBD is enough to bind most rTRPV1 channels in the membrane, and that CBD-bound rTRPV1 channels are not strongly sensitized to activation by 2-APB, contrary to our observations with rTRPV2 channels.
 
@@ -82,13 +307,37 @@ We then tested the sensitizing effect of CBD on mTRPV3-expressing cells. We used
 
 Our results so far indicate that CBD can sensitize mTRPV3 channels much more rapidly than 2-APB at 60 μM. We next tested whether 2-APB at a much higher concentration (3 mM) would sensitize channels much more rapidly. We first found that pre-stimulation of cells with 3 mM 2-APB had negligible effect on the kinetics of activation by 60 μM 2-APB applied together with CBD, confirming that CBD binding rapidly sensitizes all channels in the recorded cell membrane to activation by 2-APB (Figure 4I and K). In contrast, we found that currents elicited by 60 μM 2-APB remained bi-exponential and continued to slowly increase upon repeated exposures after pre-stimulation with 3 mM 2-APB for >1.5 min (Figure 4J and K). These results establish that CBD is a much weaker agonist than 2-APB for the mTRPV3 channel, but has a more potent sensitizing effect, similarly to our results with rTRPV2 channels. The absence of a strong sensitizing effect of CBD in rTRPV1 channels points to a key energetic difference regarding activation of rTRPV1 channels by 2-APB relative to rTRPV2 and mTRPV3 channels.
 
-## Structural determinants of sensitization strength by CBD in rTRPV2 and rTRPV1 channels
+### Structural determinants of sensitization strength by CBD in rTRPV2 and rTRPV1 channels
 
 We next sought to identify the structural determinants for the strong sensitization by CBD observed in the rTRPV2 channel relative to the weak sensitization observed in the rTRPV1 channel. The CBD site first identified in the full-length rTRPV2 channel (Pumroy et al., 2019) shows high conservation at the amino acid sequence level between the TRPV1, TRPV2, and TRPV3 channels (Figure 5, Figure 5—figure supplement 1). Under the assumption that sensitization in CBD-bound rTRPV2 and mTRPV3 channels follows a similar mechanism, we began by inspecting the amino acid sequence alignment between the three channels and identified three residues in the S5 helix in the pore domain and the S4-S5 linker that are identical in rTRPV2 and mTRPV3 channels and different in rTRPV1 channels, and are also located very close to the CBD site in conformation A that is also supported by previous studies (Pumroy et al., 2019; Pumroy et al., 2022; Figure 5, Figure 5—figure supplement 1). We generated six mutant channels where we individually swapped each of the non-conserved residues between the rTRPV2 (V532M, L538C, L541M) and rTRPV1 channels (M572V, C578L, M581L). For each channel, we also generated a double (rTRPV2 L538C+L541M; rTRPV1-C578L+M581L) and a triple mutant (rTRPV2-V532M+L538C+L541M; rTRPV1-M572V+C578L+M581L). Our hypothesis was that if those amino acid side chain differences determine the strong or weak sensitization to 2-APB in CBD-bound rTRPV2 or rTRPV1 channels, respectively, then these introduced mutations should weaken sensitization in rTRPV2 channels and strengthen it in rTRPV1 channels.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig5-v1.jpg)
+
+**Figure 5.:** (A) Structure of full-length rTRPV2 in nanodiscs with CBD bound in conformation A (with one CBD per subunit; PDB: 8SLX). The S6 helix from one subunit is shown in orange, and in the adjacent subunit the S5 and S6 helices, the selectivity filter (S.F.), the pore-helix (P.H.), and the S4-S5 linker helix are shown in gray. Residues near the CBD site are shown in stick representation, and the bound CBD molecule in green. Residues that are similar in rTRPV2 and mTRPV3 channels but different in rTRPV1 channels are shown in purple. (B) Structure of apo full-length rTRPV2 in nanodiscs (PDB: 6U84) (Pumroy et al., 2019). Same color coding as in (A). (C) Structure of apo rTRPV1 (PDB: 5IRZ) (Gao et al., 2016b) depicting the CBD binding region from rTRPV2. Same color coding as in (A) and (B).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Primary sequence alignment encompassing the pre-S1 helix-loop-helix motif to the TRP helix in rat TRPV2 (rV2), human TRPV2 (hV2), rat and human TRPV1 (rV1 and hV1), and mouse and human TRPV3 (mV3 and hV3). Residues with distinct physical–chemical properties are shown in different colors. All side chains depicted in Figure 5 are highlighted with asterisks, with purple asterisks denoting side chains that are similar between rTRPV2 and mTRPV3 channels and distinct in rTRPV1 – these positions in purple were mutated in rTRPV1 channel constructs in Figure 7.
 
 We began by measuring the 2-APB concentration-response relations for all constructs (Figure 6—figure supplement 1A–F). Notably, the apparent affinity for 2-APB was nearly 10-fold higher in WT rTRPV1 than in the rTRPV2 channel (EC50 = 0.295 ± 0.22 mM in WT rTRPV1 vs. EC50 = 1.88 ± 0.15 mM in WT rTRPV2), and activation was somewhat less cooperative (Figure 6—figure supplement 1C and F). The L541M mutation closest to the CBD binding site in the rTRPV2 channel conformation A structure resulted in a small but appreciable increase in apparent affinity for 2-APB, which became more pronounced in the double mutant (rTRPV2 L538C+L541M EC50 = 0.97 ± 0.18 mM; Figure 6—figure supplement 1A and B). The corresponding mutations in TRPV1 had the opposite trend, with a small yet appreciable decrease in apparent affinity in the single mutants (C578L and M581L) and a slightly larger decrease in the double mutant (rTRPV1 C578L+M581L EC50 = 1.15 ± 0.14 mM; Figure 6—figure supplement 1D and E). Mutation at position V532 in rTRPV2 had the most profound effect: the single (V532M) and the triple (V532M+L538C+L541M) mutants were unresponsive to 2-APB or CBD, indicating that V532 is critical for rTRPV2 channel operation, potentially contributing to folding, surface expression, or gating. Consistent with a critical role for this site in gating, we found that mutation M572V in rTRPV1 impacted agonist sensitivity the most: the single mutation drastically reduced the apparent affinity for 2-APB to be even lower than in WT rTRPV2 (rTRPV1 M572V EC50 = 3.32 ± 0.2 mM), and for the triple mutant (rTRPV1 M572V+C578L+M581L) we were unable to determine an EC50 because even the highest attainable 2-APB concentrations in solution were insufficient to maximally activate channels (Figure 6—figure supplement 1D and E). Interestingly, for all rTRPV1 channel mutants we found a much stronger reduction in the apparent affinity for 2-APB than for capsaicin, and for the two constructs containing the M572V, the efficacy of activation by 2-APB was also reduced compared to capsaicin (Figure 6—figure supplement 1G and H).
 
 Although none of the side chains we mutated are reported to contact 2-APB when bound to any of its proposed sites in TRPV2 (Pumroy et al., 2022; Su et al., 2023), we observed altered sensitivity to this agonist in most mutant channels. This observation is consistent with our hypothesis that the region containing the CBD site in conformation A exerts allosteric control over the response to 2-APB by both rTRPV2 and rTRPV1 channels. We therefore proceeded to test whether sequence differences between the rTRPV2 and rTRPV1 channels at any of these three sites are responsible for the differences in sensitization strength between the two channels. To test our hypothesis, we performed experiments similar to those in Figure 1A and assessed sensitization at three different concentrations of CBD to ensure that for each mutant we measured sensitization at full channel occupancy by this ligand (Figure 6A–F, Figure 6—figure supplement 2A–E). To account for differences in sensitivity to 2-APB in each mutant when assessing sensitization, we related the current elicited by a sub-activating concentration of 2-APB (I2APB) to a maximally activating concentration of 2-APB (I2APB,max), given by the current ratio I2APB,max/I2APB, as well as to the sensitized response to 2-APB in the presence of the highest concentration of CBD (ICBD+2APB), given by the ratio ICBD+2APB/I2APB. For experiments with WT rTRPV2, where CBD-sensitized responses to 2-APB reached maximal channel activation, the two ratios yielded similar values and when graphed against each other, data localized close to the diagonal given by I2APB,max/I2APB = ICBD+2APB/I2APB (Figure 6G). For the WT rTRPV1 channel, which had weaker sensitization, data on the same plot localized further down from the diagonal.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) Representative gap-free whole-cell recordings at –80 mV obtained from cells expressing WT or mutant rTRPV2 channels. Horizontal bars denote the time of exposure to 2-APB (blue bars, mM concentrations) or CBD (green bars, µM concentrations). The red dotted line denotes the zero-current level. (D–F) Representative gap-free whole-cell recordings at –80 mV obtained from cells expressing WT or mutant rTRPV1 channels. Insets show a magnified view of the portion of the time courses contained within the dotted rectangles. (G) Leak-subtracted group data for WT and mutant rTRPV1 (empty symbols) and rTRPV2 (filled symbols) channels obtained from experiments as in (A–F) relating the response to a low concentration of 2-APB (I2APB) to either the maximal response to the same agonist (I2APB,max/I2APB, horizontal axis) or the sensitized response measured at the highest concentration of CBD in each experiment (ICBD+2APB/I2APB, vertical axis). The blue horizontal line denotes ICBD+2APB/I2APB = 1 (i.e. no sensitized response), and the dashed vertical line denotes ICBD+2APB/I2APB = I2APB,max/I2APB. Data are shown as mean ± SEM (WT rTRPV2, n = 4; L538C, n = 4 ; L541M, n = 4; L538C+L541M, n = 4; WT rTRPV1, n = 5; M572V, n = 5; C578L, n = 5; M581L, n = 5; C578L+M581L, n = 5; M572V+C578L+M581L, n = 6). All group data for measurements in experiments as in (A–F) are shown in Figure 6—figure supplement 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Dose–response relations for activation by 2-aminoethoxydiphenyl borate (2-APB) for WT and mutant rTRPV2 channels, including also WT rTRPV1 for comparison. Data is shown as mean ± SEM and curves are fits to the Hill equation. Fit parameters are shown in (B, EC50) and (C, Hill coefficients nH) with values: WT rTRPV2, EC50 = 1.88 ± 0.15 mM, nH = 3.46 ± 0.14, n = 5; L538C, EC50 = 2.18 ± 0.84 mM, nH = 1.95 ± 0.51, n = 4; L541M, EC50 = 1.46 ± 0.17 mM, nH = 3.2 ± 0.57, n = 4; L538C+L541M, EC50 = 0.97 ± 0.18 mM, nH = 2.9 ± 0.24, n = 3. Mean ± SEM for fit parameters are shown as black squares, and data from individual experiments as colored circles. (D) Dose–response relations for activation by 2-APB for WT and mutant rTRPV1 channels. Data is shown as mean ± SEM and curves are fits to the Hill equation. Fit parameters are shown in (E, EC50) and (F, Hill coefficients nH) with values: WT rTRPV1, EC50 = 0.294 ± 0.023 mM, nH = 1.98 ± 0.16, n = 5; M572V, EC50 = 3.3 ± 0.2 mM, nH = 3.25 ± 0.17, n = 5; C578L, EC50 = 0.447 ± 0.047 mM, nH = 2.76 ± 0.23, n = 5; M581L, EC50 = 0.485 ± 0.036 mM, nH = 2.5 ± 0.14, n = 5; C578L+M581L, EC50 = 1.15 ± 0.14 mM, nH = 2.21 ± 0.1, n = 4; M572V+C578L+M581L, EC50 > 9.5 ± 0.5 mM, nH = 3.6 ± 0.3, n = 4. Mean ± SEM for fit parameters are shown as black squares, and data from individual experiments as colored circles. (G) Ratios for leak-subtracted currents elicited by maximally activating concentrations of capsaicin relative to 2-APB for WT and mutant rTRPV1 channels. Data shown as mean ± SEM (black squares, n = 4–5) or as values from individual experiments (open circles). (H) Ratios of mean EC50 values for activation by capsaicin or 2-APB for select rTRPV1 channel mutants relative to the EC50 from WT. Dose–response relations for capsaicin (not shown) were fit to the Hill equation with parameters: WT, EC50 = 0.264 ± 0.036 µM, nH = 1.59 ± 0.10, n = 5; M572V, EC50 = 1.01 ± 0.26 µM, nH = 1.8 ± 0.08, n = 4; C578L+M581L, EC50 = 0.303 ± 0.027 µM, nH = 1.47 ± 0.11, n = 4; M572V+C578L+M581L, EC50 = 1.20 ± 0.13 µM, nH = 2.22 ± 0.07, n = 4.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) Representative gap-free whole-cell recordings at –80 mV obtained from cells expressing mutant rTRPV2 or rTRPV1 channels. Horizontal bars denote the time of exposure to 2-aminoethoxydiphenyl borate (2-APB) (blue bars, mM concentrations) or cannabidiol (CBD) (green bars, µM concentrations). The red dotted line denotes the zero-current level. The insets on some panels show magnified views of a portion of the experiment. (E) Group data for experiments as in (A–D) and Figure 6A–F for WT or mutant rTRPV1 and rTRPV2 channels. Data represents the leak-subtracted, steady-state current normalized by the non-sensitized response to a low concentration of 2-APB, denoted by the blue horizontal line, for the following conditions: (1) maximal 2-APB (I2APB,max); (2) non-sensitized response to a low concentration of 2-APB (I2APB); (3–5) sensitized response to 2-APB in the presence of three increasing concentrations of CBD (I2APB+CBD); (6) response to the largest concentration of CBD in the absence of 2-APB (ICBD). Data are shown as mean ± SEM (open squares; WT rTRPV1, n = 5; WT rTRPV2, n = 4; rTRPV2 L538C, n = 4; rTRPV2 L541M, n = 4; rTRPV2 L538C+L541M, n = 4; rTRPV1 M572V, n = 5; rTRPV1 C578L, n = 5; rTRPV1 M581L, n = 5; rTRPV1 C578L+M581L, n = 5; rTRPV1 M572V+C578L+M581L, n = 6), or as data from individual cells (circles).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A, B) Representative gap-free whole-cell recordings at –80 mV obtained from cells expressing rTRPV2 channels containing mutations (A) Q530A or (B) Q530G. Horizontal bars denote the time of exposure to 2-aminoethoxydiphenyl borate (2-APB) (blue bars, mM concentrations) or CBD (green bars, µM concentrations). The red dotted line denotes the zero-current level. (C) Group data for experiments as in (A) and (B). Data represents the leak-subtracted, steady-state current normalized by the non-sensitized response to a low concentration of 2-APB, denoted by the blue horizontal line, for the conditions listed on the figure. Data are shown as mean ± SEM (open squares; rTRPV2 Q530A, n = 4; rTRPV2 Q530G, n = 3), or as data from individual cells (circles).
 
 For the rTRPV2 mutants, we did not detect any notable differences relative to WT channels except for the double mutant rTRPV2 L538C+L541M, where the sensitized response at 10 μM CBD was less than maximal (Figure 6C, Figure 6—figure supplement 2E), suggesting that the combined mutations reduced apparent affinity for CBD. For rTRPV1, mutations C578L and M581L appeared to slightly increase sensitized responses, which became more marked for the double mutant, with data from the single and double mutants falling closer than WT to the diagonal on Figure 6G. However, sensitized responses in these rTRPV1 channel mutants remained lower than maximal activation, and weaker than for rTRPV2 channels. Notably, channels carrying the single mutation M572V lacked sensitization altogether (i.e. ICBD+2APB/I2APB < 1, Figure 6E and G), and in the triple mutant M572V+C578L+M581L sensitization was restored to levels similar to WT rTRPV1 (Figure 6F and G). Interestingly, the M572V mutation brought down the EC50 for 2-APB close to that of WT rTRPV2 without enhancing sensitization by CBD, establishing that apparent affinity for 2-APB and sensitization strength by CBD are not obligatorily coupled. Together, these results support the idea that the region containing the CBD site observed in conformation A of the rTRPV2 channel exerts allosteric control on the response to 2-APB in both rTRPV1 and rTRPV2 channels, and that position V532 in rTRPV2 and M572 in rTRPV1 has a prominent allosteric role in this mechanism. However, our results also showed that the difference in sensitization strength that we observed between the rTRPV2 and rTRPV1 channels is not determined by amino acid sequence differences near the CBD binding site in rTRPV2 conformation A.
 
@@ -98,7 +347,7 @@ We and others have shown that residues in the pore-domain can dramatically tune 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/86166/elife-86166-fig7-v1.jpg)
 
-**Figure 7.:** Representative time courses for (A) rTRPV1-12M channels (E570Q + M572V + C578L + M581L + S592A + T593V + V595L + T597S + S632D + T633A + T650Q + I660L) or (B) rTRPV1-14M channels (E570Q + M572V + C578L + M581L + S592A + T593V + V595L + T597S + S632D + T633A + Y653L + D654R + T650Q + I660L) displaying sensitization by cannabidiol (CBD) of the response to 12 mM 2-aminoethoxydiphenyl borate (2-APB). The red dotted line indicates the zero-current level. The inset in (B) is a magnification of the region within the dotted rectangle. Concentrations of 60 or 100 µM CBD were tested in separate experiments for rTRPV1-12M and in the same experiment for rTRPV1-14M. (C) Group data for the experiments in (A) and (B), showing leak-subtracted current responses to each of the stimuli, normalized to the current magnitude in the presence of 12 mM 2-APB, denoted by the horizontal blue line. Data points from individual experiments are shown as circles. Data are shown as mean ± SEM (n = 4 for rTRPV1-12M and 60 or 100 µM CBD; n = 5 for rTRPV1-14M).Figure 7—source data 1.Figure 7.
+**Figure 7.:** Representative time courses for (A) rTRPV1-12M channels (E570Q + M572V + C578L + M581L + S592A + T593V + V595L + T597S + S632D + T633A + T650Q + I660L) or (B) rTRPV1-14M channels (E570Q + M572V + C578L + M581L + S592A + T593V + V595L + T597S + S632D + T633A + Y653L + D654R + T650Q + I660L) displaying sensitization by cannabidiol (CBD) of the response to 12 mM 2-aminoethoxydiphenyl borate (2-APB). The red dotted line indicates the zero-current level. The inset in (B) is a magnification of the region within the dotted rectangle. Concentrations of 60 or 100 µM CBD were tested in separate experiments for rTRPV1-12M and in the same experiment for rTRPV1-14M. (C) Group data for the experiments in (A) and (B), showing leak-subtracted current responses to each of the stimuli, normalized to the current magnitude in the presence of 12 mM 2-APB, denoted by the horizontal blue line. Data points from individual experiments are shown as circles. Data are shown as mean ± SEM (n = 4 for rTRPV1-12M and 60 or 100 µM CBD; n = 5 for rTRPV1-14M).
 
 ## Discussion
 
@@ -114,15 +363,15 @@ It will be interesting to test whether other molecules in addition to CBD can ha
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Human embryonic kidney cells (HEK293) from ATCC (CRL-1573) were kept at 37°C in an atmosphere with 5% CO2 and grown in Dulbecco’s modified Eagle’s medium (DMEM) with high glucose, pyruvate, L-glutamine, and phenol red, supplemented with 10% fetal bovine serum (vol/vol) and 10 mg/mL gentamicin. For transfection, cells were detached with trypsin, resuspended in DMEM, and seeded onto No. 1 glass coverslips in 3 mL dishes at 10–40% confluency. Transfections were performed on the same day using FuGENE6 Transfection Reagent (Roche Applied Science, Madison, WI). TRP channel constructs were co-transfected with pGreen-Lantern (Invitrogen, Carlsbad, CA) at a ratio of 2:1 to visualize successfully transfected cells. Electrophysiological recordings were done 18–36 hr after transfection. Cells tested negative for Mycoplasma infection, and were not authenticated; cell type is not critical for this study, as the most relevant aspect concerning our observations is that there are no contaminating currents that might me confounded for the TRPV1, TRPV2, or TRPV3 channels studied here. To address this, we performed all the necessary experiments to show that no background currents exist in our cell line that respond to any of the test compounds (CBD and 2-APB) used in this study.
 
-## Molecular biology
+### Molecular biology
 
 The WT rat TRPV1 (Caterina et al., 1997) and TRPV2 (Caterina et al., 1999) channel cDNA were provided by Dr. David Julius (UCSF, CA), and mouse TRPV3 (Peier et al., 2002) was provided by Dr. Feng Qin (SUNY Buffalo, NY). All constructs were cloned into modified pcDNA3.1(+) and pcDNA1 for high and low levels of expression, respectively. CBD binding site mutants were generated using the two-step PCR method using Phusion High-Fidelity DNA polymerase (New England Biolabs, Ipswich, MA), T4 ligase Quick Ligation kit (New England Biolabs) and NovaBlue Singles competent cells (MilliporeSigma, Burlington, MA) and Sanger-sequenced to check for PCR errors. Cumulative pore mutants were generated by Gibson assembly (GeneArt Gibson Assembly kit, Thermo Fisher Scientific, Waltham, MA) following the manufacturer’s instructions and using a gBlock (Integrated DNA Technologies, Coralville, IA) encompassing nucleotides 1695–1993 in the rTRPV1 coding region.
 
-## Patch-clamp electrophysiology
+### Patch-clamp electrophysiology
 
 Patch-clamp recordings were performed on transiently transfected HEK293 cells at room temperature (21–23°C) unless stated otherwise. Data were acquired with an Axopatch 200B amplifier (Molecular Devices, Sunnyvale, CA) and digitized with a Digidata1550B interface and pClamp10 software (Molecular Devices). All data were analyzed using Igor Pro 8.04 (Wavemetrics, Portland, OR). Pipettes were pulled from borosilicate glass (1.5 mm O.D. × 0.86 mm I.D. × 75 mm L; Harvard Apparatus) using a Sutter P-97 puller and heat-polished to final resistances between 0.5 and 4 MΩ using a MF-200 microforge (World Precision Instruments). 90% series resistance (Rs) compensation was applied in all whole-cell recordings except those involving changes in temperature. An agar bridge (1 M KCl; 4% weight/vol agar; teflon tubing) was used to connect the ground electrode chamber and the main recording chamber.
 
@@ -132,44 +381,64 @@ Whole-cell and excised-patch data using gap-free recordings were acquired at 5 k
 
 For single-channel recordings in the inside-out configuration, we acquired data at 10 kHz, low-pass filtered at 2 kHz, and we covered pipettes with dental wax to reduce capacitive transients and used pipettes with open tip resistances between 4 and 10 MΩ. Holding voltage was –80 mV, and 500 ms sweeps were recorded with a 100 ms inter-sweep interval, with 50 sweeps per patch in either control, 2-APB or CBD, and 2-APB and CBD applied together. All recorded traces were baseline-subtracted so that the mean current value in the absence of opening events was centered at 0 pA. The all-points histograms containing data from all sweeps per patch and experimental condition were normalized to the number of points at the peak centered at 0 pA and binned using 0.2 pA intervals.
 
-Experiments involving temperature increases were carried out using a custom-built device as previously described (Islas et al., 2015; Sánchez-Moreno et al., 2018), which consists of using a wire-based microheater enclosed in a glass pipette for insulation and connected to a power source for heating. For our device, we used 0.1 mm diameter nichrome wire connected to a Keysight Technologies (Santa Rosa, CA) E3631A Triple Output DC Power Supply. Maximum output was utilized from the power supply, which was approximately 6 V and 0.74 A. The wire was introduced into a glass capillary pipette, which was bent to a U-shape using a flame. The U-shaped pipette with the wire inside connected to the power source was held on a micro-manipulator and placed right in front of the patch pipette inside the recording chamber. To estimate the changes in temperature achieved by our heating device, we used the resistance measured from an open patch pipette, whose resistance measurements as a function of heating were previously calibrated by exchanging the recording bath with solutions at multiple temperatures, which we measured with a thermistor (Warner TC-324B, Hamden, CT) placed close to the pipette tip inside the bath. The heating device was then placed at a defined distance from the same pipette tip and the pipette resistance measured after turning the power supply on with maximal output for 90 s. For each calibration, we measured the pipette resistance R as a function of bath temperature and fit the data to(1)R(Temp)=R0×exp⁡(A0/Temp)
+Experiments involving temperature increases were carried out using a custom-built device as previously described (Islas et al., 2015; Sánchez-Moreno et al., 2018), which consists of using a wire-based microheater enclosed in a glass pipette for insulation and connected to a power source for heating. For our device, we used 0.1 mm diameter nichrome wire connected to a Keysight Technologies (Santa Rosa, CA) E3631A Triple Output DC Power Supply. Maximum output was utilized from the power supply, which was approximately 6 V and 0.74 A. The wire was introduced into a glass capillary pipette, which was bent to a U-shape using a flame. The U-shaped pipette with the wire inside connected to the power source was held on a micro-manipulator and placed right in front of the patch pipette inside the recording chamber. To estimate the changes in temperature achieved by our heating device, we used the resistance measured from an open patch pipette, whose resistance measurements as a function of heating were previously calibrated by exchanging the recording bath with solutions at multiple temperatures, which we measured with a thermistor (Warner TC-324B, Hamden, CT) placed close to the pipette tip inside the bath. The heating device was then placed at a defined distance from the same pipette tip and the pipette resistance measured after turning the power supply on with maximal output for 90 s. For each calibration, we measured the pipette resistance $R$ as a function of bath temperature and fit the data to
 
-where the fit parameters R0 and A0 are constants specific for each pipette. From Equation 1, we obtained the temperature (Temp) as a function of resistance:(2)Temp=A0/[ln⁡(R)−ln⁡(R0)]
+$$
+R(Temp)=R_{0}\timesexp⁡(A_{0}/Temp)
+$$
 
-We then introduced the heating device and recorded resistance as a function of time at full power source output for 90 s and fitted the resulting function to a double-exponential function of time:(3)R(time)=R(time=0)+A1×exp⁡(−time×k1)+A2×exp⁡(−time×k2)
+where the fit parameters $R_{0}$ and $A_{0}$ are constants specific for each pipette. From Equation 1, we obtained the temperature (Temp) as a function of resistance:
 
-where the fitted parameters A1,A2,k1,K2, are constants specific to each heating device and its relative position to the tip of the pipette. The other fit parameter R(time=0) depends entirely on the pipette, and is equivalent to R0 in Equation 2 – the resistance of the pipette at the room temperature of 21°C. We obtained reproducible fitting parameters for the exponential using different pipettes with the same heating device, suggesting a highly reproducible time-dependent increase in temperature. To estimate the average temperature change during each experiment, we expressed Equation 2 in terms of Equation 3:(4)Temp(time)=A0[ln⁡(R(time))−ln⁡(R0)]
+$$
+Temp=A_{0}/[ln⁡(R)−ln⁡(R_{0})]
+$$
 
-and plotted our currents as a function of temperature by transforming recording time into temperature using Equation 4 and the mean fit parameters for the exponential terms that we obtained from several trials with the same heating device and different open pipettes (n = 15). Based on this high reproducibility, we assume that the time dependence and magnitude of the temperature change was similar in all experiments, and thus used the same parameters for all experiments. Q10 values were calculated by taking the logarithm of current–temperature relations from individual experiments, fitting them to a line with slope m over the range from 30–40°C, and then using(5)Q10=1010×m.
+We then introduced the heating device and recorded resistance as a function of time at full power source output for 90 s and fitted the resulting function to a double-exponential function of time:
 
-## High-performance liquid chromatography
+$$
+R(time)=R(time=0)+A_{1}\timesexp⁡(−time\timesk_{1})+A_{2}\timesexp⁡(−time\timesk_{2})
+$$
+
+where the fitted parameters $A_{1},A_{2},k_{1},K_{2}$, are constants specific to each heating device and its relative position to the tip of the pipette. The other fit parameter $R(time=0)$ depends entirely on the pipette, and is equivalent to $R_{0}$ in Equation 2 – the resistance of the pipette at the room temperature of 21°C. We obtained reproducible fitting parameters for the exponential using different pipettes with the same heating device, suggesting a highly reproducible time-dependent increase in temperature. To estimate the average temperature change during each experiment, we expressed Equation 2 in terms of Equation 3:
+
+$$
+Temp(time)=A_{0}[ln⁡(R(time))−ln⁡(R_{0})]
+$$
+
+and plotted our currents as a function of temperature by transforming recording time into temperature using Equation 4 and the mean fit parameters for the exponential terms that we obtained from several trials with the same heating device and different open pipettes (n = 15). Based on this high reproducibility, we assume that the time dependence and magnitude of the temperature change was similar in all experiments, and thus used the same parameters for all experiments. $Q_{10}$ values were calculated by taking the logarithm of current–temperature relations from individual experiments, fitting them to a line with slope m over the range from 30–40°C, and then using
+
+$$
+Q_{10}=10^{10\timesm}.
+$$
+
+### High-performance liquid chromatography
 
 Samples were prepared using our regular recordings solution without adding trifluoroacetic acid to maintain a neutral pH. We injected 50 nmol of 2-APB and 5 nmol of CBD, either by themselves or together, and the final volume injected into the HPLC column was 400 µL with the compound diluted in dH2O. We injected samples into a 5 µM Ultrasphere C18 column (Beckman Coulter, Brea, CA) on a 1525 Binary pump HPLC system (Waters Corporation, Milford, MA), and used a gradient of 0% to 100% acetonitrile over 40 min and monitored sample absorbance at 228 nm.
 
-## Sequence alignment and structural model depiction
+### Sequence alignment and structural model depiction
 
 We generated our amino acid sequence alignments using Jalview software (University of Dundee).
 
-## rTPRV2 channel expression using Baculovirus and mammalian expression system
+### rTPRV2 channel expression using Baculovirus and mammalian expression system
 
 To produce the rTRPV2 channel for cryo-EM, the channel was cloned into the pEG vector in which EGFP was substituted with mVenus (Rana et al., 2018) and expressed in tsA201 cells using the previously published Baculovirus-mammalian expression system with a few minor modifications (Goehring et al., 2014). Briefly, P1 virus was generated by transfecting Sf9 cells (~2.5 million cells on a T25 flask with a vent cap) with 50–100 ng of fresh Bacmid using Cellfectin. After 4–5 d incubation in a humidified 28°C incubator, the cell culture media was collected by centrifugation (3000 × g × 10 min), supplemented with 2% FBS, and filtered through a 0.45 μm filter to harvest the P1 virus. To amplify the P1 virus, ~500 mL Sf9 cell cultures at an ~1.5 million cells/mL density were infected with 1–200 μL of the virus and incubated in a 28°C shaking incubator for 3 d. The cell culture media was then collected by centrifugation (5000 × g 20 min), supplemented with 2% FBS, and filter through 0.45 μm filter to harvest P2 virus. The volume of P1 virus used for the amplification was determined by carrying out a small-scale amplification screening in which ~10 mL Sf9 cell cultures at the same density were infected with different volume of P1 virus and harvested after 3 d to transduce tsA201 cells and compare the expression level of rTRPV2 using mVenus fluorescence intensity. The P2 virus was protected from light using aluminum foil and stored at 4°C until use. To express the rTRPV2, tsA201 cells at ~1.5 million cells/mL in Freestyle medium with 2% FBS were transduced with 10% (v/v) P2 virus and incubated at a 37°C CO2 incubator. To boost the protein expression, sodium butyrate (2 M stock in H2O) was added to 10 mM at ~16 hr of post-transduction. The culture was continued at the 37°C CO2 incubator for another 24 hr, and the cells were harvested by centrifugation (5000 × g × 20 min) and frozen at –80°C until use.
 
-## rTRPV2 channel purification
+### rTRPV2 channel purification
 
 Prior to extraction of rTRPV2 from tsA201 cells, membrane fractionation was carried out using a hypotonic solution and ultracentrifugation. The cells were first resuspended in a hypotonic solution (20 mM Tris pH 7.5 and 10 mM NaCl) with protease inhibitors (pepstatin, aprotinin, leupeptin, benzamidine, trypsin inhibitor, PMFS) using a Dounce homogenizer, incubated at 4°C for ~30 min, and centrifuged at 1000 × g for 10 min to remove cell debris. The supernatant was ultracentrifuged for 1 hr (45,000 rpm, Beckman Ti45 rotor) and collected membranes were stored at –80°C until use. To purify rTRPV2, the fractionated membranes were resuspended in an extraction buffer (50 mM Tris pH 7.5, 150 mM NaCl, 5% glycerol,2 mM TCEP, 50 mM DDM, 5 mM CHS with the protease inhibitor mixture used above) and extracted for 1 hr at 4°C. The solution was clarified by centrifugation (12,000 × g × 10 min) and incubated with CoTALON resins at 4°C for 1 hr, at which point the mixture was transferred to an empty disposable column (Econo-Pac Bio-Rad). The resin was washed with 10 column volume of Buffer A (50 mM Tris pH 7.5, 150 mM NaCl, 1 mM DDM, 0.1 mM CHS, and 0.1 mg/mL porcine brain total lipid extract) with 10 mM imidazole, and bound proteins were eluted with Buffer A with 250 mM imidazole. The eluate was concentrated using Amicon Ultra (100 kDa) to ~350–450 μL and loaded onto a Superose6 (10 × 300 mm) gel filtration column and separated with Buffer A. All purification steps described above was carried out at 4°C or on ice.
 
-## Lipid nanodisc reconstitution of the rTRPV2 channel
+### Lipid nanodisc reconstitution of the rTRPV2 channel
 
 Lipid nanodisc reconstitution was performed following the previously published methods with minor modifications (Matthies et al., 2018; Tan et al., 2022). On the day of nanodisc reconstitution, the rTRPV2 channel purified by Superose6 in detergent was concentrated to ~1–3 mg/mL and incubated with histidine-tagged MSP1E3D1 and 3:1:1 mixture of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC), 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG), and 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE) for 30 min at room temperature. The mixture was transferred to a tube with Biobeads (~30–50-fold of detergent; w/w) and incubated at room temperature for ~3 hr in the presence of TEV protease (prepared in-house) and 2 mM TCEP to remove N-terminal fusion protein including poly-histidine and mVenus tag. The reconstituted protein was loaded onto Superose6 column (10 × 300 mm) and separated using 20 mM Tris and 150 mM NaCl buffer at 4°C. The success of nanodisc reconstitution was confirmed by collecting separated fractions and running SDS-PAGE to verify the presence of rTRPV2 and MSP1E3D1 bands at a similar ratio. Typically, optimal reconstitution required the incubation of 1:10:200 or 1:10:400 molar ratio of tetrameric rTRPV2, MSP1E3D1, and the lipid mixture.
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 6.5 mg/mL TRPV2 in nanodiscs were incubated with 100 µM CBD and 1 mM 2-APB on ice for 30 min and then 3 µL aliquots were applied to glow-discharged Quantifoil grids (R 1.2/1.3 Cu 300 mesh). The grids were blotted for 4 s, with blot force of 4 and 100% humidity, at 16°C using an FEI Vitrobot Mark IV (Thermo Fisher Scientific), followed by plunging into liquid ethane cooled by liquid nitrogen. Images were acquired using an FEI Titan Krios equipped with a Gatan LS image energy filter (slit width, 20 eV) operating at 300 kV. A Gatan K3 Summit direct electron detector was used to record movies in superresolution mode with a nominal magnification of ×105,000,, resulting in a calibrated pixel size of 0.415 Å per pixel. The typical defocus values ranged from −0.5 to −1.5 μm. Exposures of 1.6 s were dose-fractionated into 32 frames, resulting in a total dose of 52 e− Å−2. Images were recorded using the automated acquisition program SerialEM (Mastronarde, 2005).
 
-## Image processing
+### Image processing
 
 All processing was completed in RELION (Mastronarde, 2005). The beam-induced image motion between frames of each dose-fractionated micrograph was corrected and binned by 2 using MotionCor2 (Zheng et al., 2017) and contrast transfer function (CTF) estimation was performed using CTFFIND4 (Rohou and Grigorieff, 2015). Micrographs were selected, and those with outliers in defocus value and astigmatism, as well as low resolution (>5 Å) reported by CTFFIND4 were removed. The initial set of particles from 300 micrographs were picked using Gautomatch (www2.mrc-lmb.cam.ac.uk/research/locally-developed-software/zhang-software/#gauto) and followed by reference-free two-dimensional (2D) classification in RELION. The good classes were then used as template to pick particles from all selected micrographs using Gautomatch. Particles (1,665,271) were picked and extracted with 2× downscaling (pixel size, 1.66 Å). Several rounds of reference-free 2D classification were performed to remove ice spot, contaminants, and bad particles. The good particles were 3D classified with C4 symmetry using reference generated by 3D initial model. Good class (380,829) were then selected and reextracted without binning (pixel size, 0.83 Å) followed by 3D auto-refine. After that, the refined particles were expanded from C4 symmetry to C1 symmetry and then subjected to 3D Classification (skip alignment) with transmembrane domain mask. Six classes show one CBD binding site in each monomer (conformation A) and one class shows two CBD binding sites per monomer (conformation B). Particles (1,370,377) from these six classes were combined and duplication was removed. Finally, 321,717 unique particles were obtained and submitted to final step of 3D auto-refine with C4 symmetry. Particles (43,071) from conformation B were selected by removing duplication followed by 3D auto-refine. The final reconstruction was reported at 3.23 Å for conformation A and 3.32 Å for conformation B.
 
-## Model building and structure refinement
+### Model building and structure refinement
 
 Model building was first carried out by manually fitting the monomer of rTRPV2 (PDB 6U84) into the electron microscopy density map using UCSF Chimera (Pettersen et al., 2004). The model was then manually built in Coot (Emsley et al., 2010) and refined using real space refinement in PHENIX (Adams et al., 2010) with secondary structure and geometry restraints. The final model was evaluated by comprehensive validation in PHENIX. Structural figures were generated using PyMOL (https://pymol.org/2/support.html) and UCSF Chimera.

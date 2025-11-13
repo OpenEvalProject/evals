@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.36144.001 TALE factors are broadly expressed embryonically and known to function in complexes with transcription factors (TFs) like Hox proteins at gastrula/segmentation stages, but it is unclear if such generally expressed factors act by the same mechanism throughout embryogenesis. We identify a TALE-dependent gene regulatory network (GRN) required for anterior development and detect TALE occupancy associated with this GRN throughout embryogenesis. At blastula stages, we uncover a novel functional mode for TALE factors, where they occupy genomic DECA motifs with nearby NF-Y sites. We demonstrate that TALE and NF-Y form complexes and regulate chromatin state at genes of this GRN. At segmentation stages, GRN-associated TALE occupancy expands to include HEXA motifs near PBX:HOX sites. Hence, TALE factors control a key GRN, but utilize distinct DNA motifs and protein partners at different stages – a strategy that may also explain their oncogenic potential and may be employed by other broadly expressed TFs.
+TALE factors are broadly expressed embryonically and known to function in complexes with transcription factors (TFs) like Hox proteins at gastrula/segmentation stages, but it is unclear if such generally expressed factors act by the same mechanism throughout embryogenesis. We identify a TALE-dependent gene regulatory network (GRN) required for anterior development and detect TALE occupancy associated with this GRN throughout embryogenesis. At blastula stages, we uncover a novel functional mode for TALE factors, where they occupy genomic DECA motifs with nearby NF-Y sites. We demonstrate that TALE and NF-Y form complexes and regulate chromatin state at genes of this GRN. At segmentation stages, GRN-associated TALE occupancy expands to include HEXA motifs near PBX:HOX sites. Hence, TALE factors control a key GRN, but utilize distinct DNA motifs and protein partners at different stages – a strategy that may also explain their oncogenic potential and may be employed by other broadly expressed TFs.
 
 ## Introduction
 
@@ -28,49 +28,85 @@ In spite of their function having been defined primarily at gastrula/segmentatio
 
 ## Results
 
-## TALE factors control a gene network regulating formation of anterior embryonic structures in zebrafish
+### TALE factors control a gene network regulating formation of anterior embryonic structures in zebrafish
 
 TALE factors play a key role in early vertebrate embryogenesis, as evidenced by the phenotypes observed in TALE loss-of-function animals. In particular, loss of prep1.1, pbx2 and/or pbx4 function in zebrafish produces smaller heads and reduced eye size, as well as CNS defects – including disruptions of hindbrain segmentation – and cardiovascular defects that manifest themselves in the form of cardiac edema (Deflorian et al., 2004; Waskiewicz et al., 2002; Pöpperl et al., 2000), but the genetic basis of these defects is not well understood. In order to comprehensively identify TALE-dependent genes involved in embryogenesis, we used RNA-seq to compare gene expression in wildtype versus TALE loss-of-function animals. We focused on the function of pbx2, pbx4 and prep1.1 since these genes are ubiquitously expressed and represent the predominant TALE factors in the early zebrafish embryo (Deflorian et al., 2004; Waskiewicz et al., 2002; Pöpperl et al., 2000; Choe et al., 2002; Vlachakis et al., 2000). We used gene knock-down (KD; see Figure 1—figure supplement 1A–C for details) to generate embryos lacking Pbx and Prep function (as reported previously [Waskiewicz et al., 2002; Deflorian et al., 2004; Pöpperl et al., 2000]) and we observe the expected phenotype – including a reduced head, smaller eyes, cardiac edema, loss of pectoral fins, loss of hindbrain Mauthner neurons and disrupted cartilage formation in the head region (Figure 1—figure supplement 1A,B). Comparisons of RNA-seq data from control and TALE KD embryos at developmental stages (Figure 1A) when TALE-dependent tissues are being specified (early gastrula; 6hpf) or initiating morphogenesis (segmentation stages; 12hpf) revealed minimal gene expression changes at 6hpf (Figure 1—figure supplement 1D–F), but extensive changes at 12hpf (Figure 1B). Specifically, the expression of 671 genes (526 genes downregulated and 145 upregulated; Figure 1C) is altered in TALE KD embryos compared to control embryos at 12hpf. GO-term analysis on the genes downregulated in 12hpf TALE KD embryos revealed an enrichment for roles in embryonic development – particularly head formation, neural development (including eye and hindbrain development) and circulatory system formation (Figure 1D), consistent with the TALE KD phenotype. Furthermore, these TALE-regulated genes are enriched for transcriptional regulators and a large number encode known TFs (Figure 1D,E), suggesting that this gene set defines a gene regulatory network (GRN). Upon comparison to previously reported TALE loss-of-function phenotypes, we find that of 13 Pbx-dependent genes identified in the zebrafish retina and hindbrain (French et al., 2007), seven (egr2b, mafba, eng2b, rx2, gdf6a, hmx4, meis3) are also downregulated in our analysis. Similarly, of six genes downregulated in Prep loss-of-function zebrafish (Deflorian et al., 2004), four (pax6a, hoxb1a, hoxa2b, hoxb2a) are downregulated in our experiment. This suggests that our RNA-seq analysis captured a comprehensive set of TALE-dependent genes. We conclude that TALE TFs control a gene regulatory network (TALE GRN), which instructs anterior embryonic development and that becomes operative between 6hpf and 12hpf.
 
-## Genomic TALE occupancy is continuously and dynamically associated with the TALE GRN during embryogenesis
+![Figure 1.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig1-v2.jpg)
+
+**Figure 1.:** See also Figure 1—figure supplement 1. (A) Schematic of zebrafish embryogenesis indicating time points used for RNA-seq and ChIP-seq analyses. The 3.5hpf time point represents a stage prior to robust zygotic gene expression, while 12hpf corresponds to the time when tissue morphogenesis is initiated. The 6hpf time point for RNA-seq was selected to capture changes in gene expression occuring shortly after ZGA. ZGA = zygotic genome activation; hpf = hours post-fertlization. (B) Scatter plot showing average TPM gene expression as identified by RNA-seq in control vs TALE KD 12hpf embryos. Genes with significant expression variation (p-adj ≤0.01) are highlighted in red. Statistical test = Wald test in DeSeq2. (C) Graph showing the number of genes up/downregulated (p-adj ≤0.01, fold-change ≥1.5) in 12hpf TALE KD samples vs control. (D) DAVID analysis of genes downregulated (p-adj ≤0.01, fold-change ≥1.5) in 12hpf TALE KD samples vs control. Note that only select categories are presented, a full list of GO terms is available in Supplementary file 3. FDR = Benjamini multiple testing False Discovery Rate. (E) Expression fold-change of select genes significantly downregulated in 12hpf TALE KD samples compared to control. Genes were selected based on their role in regulation of relevant embryonic structures.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left panels; images of 4 days post-fertilization (dpf) zebrafish following TALE knockdown (TALE KD). Middle panels; views of the anterior region at higher magnification. The TALE KD phenotype is characterized by an overall small head with under-developed eyes (1), jaw (2) and otic vesicles (3), as well as cardiac edema (4). Right bar graphs; quantification of the phenotype for TALE KD zebrafish and zebrafish injected with mRNA encoding a dominant negative TALE protein (PBCAB [Choe et al., 2009]). Note that both strategies for TALE disruption produce similar results, showing the specificity of the phenotype. Numbers above bars indicate the total number of embryos analyzed in each condition. (B) Left panels; wildtype (top) and TALE KD (bottom) 48hpf embryos stained with 3A10 antibody to detect hindbrain Mauthner neurons (images show only the hindbrain and are in dorsal view with anterior to the left). Right panels; wildtype (top) and TALE KD (bottom) 5dpf embryos stained with alcian blue to detect cartilage (images are ventral views with anterior to the left). Asterisk indicates loss of cartilage in TALE KD embryos. Also note the absence of pectoral fins in TALE KD embryos. (C) ChIP-qPCR showing Prep binding at the hoxb1a r4 enhancer in TALE KD vs control embryos at 6hpf and 12hpf. Note that TALE KD disrupts genomic Prep occupancy. Three independent biological replicates are presented as mean fold-change ± SEM of Prep IP in TALE KD vs control samples. Statistical test: unpaired t-test. (D) Scatter plot showing average TPM gene expression as identified by RNA-seq in TALE KD embryos vs control at 6hpf. Genes with significant expression variation (p-adj ≤0.01) are colored in red. Statistical test = Wald test in DeSeq2. (E) Graph showing the number of genes up/downregulated (p-adj ≤0.01, fold-change ≥1.5) in 6hpf TALE KD embryos vs control. (F) Table listing all genes up/downregulated at 6hpf in TALE KD embryos relative to control.
+
+### Genomic TALE occupancy is continuously and dynamically associated with the TALE GRN during embryogenesis
 
 To determine how genomic TALE occupancy relates to the TALE GRN, we carried out ChIP-seq for Prep1.1 in zebrafish embryos. We assessed TALE binding both at 12hpf (early segmentation stage; when TALE-dependent gene expression is detectable; Figure 1A,B), and also at 3.5hpf (late blastula stage; prior to robust zygotic gene expression; Figure 1A, Figure 2—figure supplement 1A,B). Analysis of two biological replicates at each stage (using a cutoff of FE ≥ 10; Figure 2A, Supplementary file 1) yielded ~13,300 peaks at 3.5hpf (Prep3.5hpf) and ~24,200 peaks at 12hpf (Prep12hpf), the majority of which are located within 30 kb of a transcription start site (TSS; Figure 2B). We note that out of the 13,300 Prep3.5hpf peaks, ~60% co-localize with a Prep12hpf peak (Figure 2C), suggesting that a large fraction of binding sites remains occupied throughout embryogenesis. However, an additional ~16,500 peaks detectable at 12hpf do not co-localize with a Prep3.5hpf peak, demonstrating that additional binding sites become occupied at later stages. We refer to binding sites observed only at 12hpf as ‘12hpf-only’ (Prep12hpf-only). We noticed that although the Prep12hpf-only peaks do not co-localize with Prep3.5hpf peaks, the two types of sites nevertheless appear to be preferentially located near one another (Figure 2A). Indeed, a quantitative analysis of peak distribution revealed that 58% of all Prep12hpf-only peaks are located within 40 kb of a Prep3.5hpf peak (Figure 2D, Figure 2—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig2-v2.jpg)
+
+**Figure 2.:** See also Figure 2—figure supplement 1. (A) Representative UCSC browser tracks illustrating Prep binding at the hoxb1a and mafba loci in 3.5 and 12hpf embryos. (B) Graph showing the distribution of Prep3.5hpf and Prep12hpf binding sites relative to TSSs. (C) Venn diagram illustrating co-localization of Prep peaks in 3.5hpf and 12hpf embryos. Two peaks are considered to co-localize if their summits are within 50 bp. (D) Chart illustrating percent of Prep12hpf-only peaks found at various distances from Prep3.5hpf peaks. (E) GO term enrichment for Prep3.5hpf and Prep12hpf-only peaks identified by GREAT using the nearest gene within 5 or 30 kb association rule. In the case of GO terms associated with genes within 30 kb, only select categories are presented, a full list of GO terms is available in Supplementary file 3. FDR = Binomial False Discovery Rate. (F) Graph showing percent of TALE GRN genes (p-adj ≤0.01, fold-change ≥1.5) associated (≤5 or 30 kb) with Prep3.5hpf and Prep12hpf-only peaks. p-values for enrichment above a random set of genes were calculated using the Pearson correlation test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression levels of maternal and paternal prep1 and pbx2 transcripts during early zebrafish embryogenesis (from [Harvey et al., 2013]). Until 3.5hpf, transcripts from the paternal allele (which requires zygotic activation) are not detected, demonstrating that only maternal prep and pbx transcripts are present prior to this time point. (B) RT-PCR analysis on 0–1.25hpf, 3.5hpf and 9hpf zebrafish embryos demonstrating that prep1.1, prep1.2, pbx2 and pbx4 transcripts are maternally deposited. (C) Density plot illustrating the distance between each Prep12hpf-only peak and its nearest Prep3.5hpf peak. Peaks located >100 kb from a Prep3.5hpf peak are not shown (of 16,500 Prep12hpf-only peaks, 2,138 [13%] are located at >100 kb). p=1.85 E-11 (Chi-square comparison to shuffled peaks).
 
 GO-term analyses revealed that genes associated with either Prep3.5hpf or Prep12hpf-only peaks are enriched for functions related to transcriptional regulation and embryonic development – particularly neural development, but also heart and muscle formation (Figure 2E). These functions correspond well with the phenotype observed in TALE KD embryos (Figure 1—figure supplement 1A,B) and with the GO-terms associated with the TALE GRN (Figure 1D), suggesting that Prep occupancy is linked with the TALE GRN throughout embryogenesis. Accordingly, we find that ~70% (350/526) of the TALE GRN genes are located within 30 kb of a Prep3.5hpf or a Prep12hpf-only peak (Figure 2F).
 
 We conclude that Prep occupies genomic binding sites associated with the TALE GRN as early as late blastula stages. ~60% of these sites are also occupied at segmentation stages, but by this stage a large number of additional binding sites (Prep12hpf-only sites) have become bound by Prep. Since these later sites are also associated with the TALE-GRN, Prep binding is dynamically and continuously associated with the TALE GRN during zebrafish embryogenesis.
 
-## TALE factors utilize distinct binding motifs at early versus late stages of embryogenesis
+### TALE factors utilize distinct binding motifs at early versus late stages of embryogenesis
 
 The widespread genomic binding of Prep at blastula stages has not been reported previously and we therefore examined the characteristics of these binding sites in greater detail. To this end, we used the MEME de novo motif discovery tool (Bailey et al., 2009; Machanick and Bailey, 2011) and identified a 10 bp TGATTGACAG sequence as the predominant motif centered at Prep3.5hpf peak summits (Figure 3A). This ‘DECA motif’ contains immediately adjacent Pbx and Prep half sites and was initially identified as a binding site for TALE dimers in vitro (Chang et al., 1997; Knoepfler and Kamps, 1997). Subsequently, the DECA motif has been detected at sites co-occupied by Pbx and Prep in embryonic stem cells and in the mouse trunk (Laurent et al., 2015; Penkov et al., 2013; De Kumar et al., 2017), but it has not been assigned a biological function. To test if DECA sites are co-occupied by Pbx also in the zebrafish embryo, we selected twelve binding sites and used ChIP-qPCR to assay Pbx occupancy. We find that Pbx is present at eleven of the twelve sites at 3.5hpf and that all twelve are occupied by Pbx at 12hpf (Figure 3C), revealing that Prep and Pbx co-occupy DECA sites at least through segmentation stages.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig3-v2.jpg)
 
-**Figure 3.:** (A) Sequence logo and localization relative to Prep peak summits of sequence motifs identified by MEME at Prep3.5hpf peaks. (B) Sequence logo and localization relative to Prep peak summits of sequence motifs identified by MEME at Prep12hpf-only peaks. (C) ChIP-qPCR showing Pbx4 binding at Prep-occupied DECA sites at 3.5hpf and 12hpf, labeled with the name of the nearest gene. Data of three independent biological replicates are presented as mean fold change ± SEM of Pbx4 IP vs control IgG. Statistical test: unpaired t-test. (D) Graph showing percent of Prep3.5hpf and Prep12hpf-only peaks that contain DECA or HEXA motifs. (E) Heatmaps displaying chromatin accessibility at 4hpf (derived from ATAC-seq data [Kaaij et al., 2016]) at DECA (left panel) and HEXA (right panel) enriched peaks. (Prep3.5hpf and Prep12hpf-only peaks were used as a source of DECA- and HEXA-enriched sites, respectively.).10.7554/eLife.36144.007Figure 3—source data 1.
+**Figure 3.:** (A) Sequence logo and localization relative to Prep peak summits of sequence motifs identified by MEME at Prep3.5hpf peaks. (B) Sequence logo and localization relative to Prep peak summits of sequence motifs identified by MEME at Prep12hpf-only peaks. (C) ChIP-qPCR showing Pbx4 binding at Prep-occupied DECA sites at 3.5hpf and 12hpf, labeled with the name of the nearest gene. Data of three independent biological replicates are presented as mean fold change ± SEM of Pbx4 IP vs control IgG. Statistical test: unpaired t-test. (D) Graph showing percent of Prep3.5hpf and Prep12hpf-only peaks that contain DECA or HEXA motifs. (E) Heatmaps displaying chromatin accessibility at 4hpf (derived from ATAC-seq data [Kaaij et al., 2016]) at DECA (left panel) and HEXA (right panel) enriched peaks. (Prep3.5hpf and Prep12hpf-only peaks were used as a source of DECA- and HEXA-enriched sites, respectively.).
 
 Notably, the DECA motif detected at Prep3.5hpf peaks is distinct from the typical configuration of binding motifs recognized by TALE factors in their role as cooperating with tissue-specific TFs (reviewed in [Ladam and Sagerström, 2014; Merabet and Mann, 2016]). Since this role was characterized primarily at segmentation stages (Ferretti et al., 2005, 2000; Jacobs et al., 1999; Tümpel et al., 2007; Pöpperl et al., 1995), we considered the possibility that the Prep12hpf-only peaks may represent TALE factors acting together with tissue-specific TFs. Indeed, MEME analysis of Prep12hpf-only peaks returned a 6 bp TGACAG (HEXA) motif, but not the DECA motif (Figure 3B). HEXA motifs are binding sites for monomeric Prep (or Meis) factors (Chang et al., 1997; Berthelsen et al., 1998; Shen et al., 1997a) and have been found at several Hox-dependent regulatory elements (Amin et al., 2015; Ferretti et al., 2000; Ryoo et al., 1999; Jacobs et al., 1999; Tümpel et al., 2007). Accordingly, MEME also identified a TGATTTAT sequence, which represents a binding site for TALE:HOX dimers (Penkov et al., 2013; Shen et al., 1997b; Chang et al., 1996), at the Prep12hpf-only peaks (Figure 3B). This Hox motif is not located at the center of the Prep peaks, but is off-set by ~10 bp, as has been observed previously at regulatory elements where Prep/Meis acts with Hox TFs (Jacobs et al., 1999; Ferretti et al., 2005, 2000). We next examined the prevalence of the different motifs at Prep3.5hpf versus Prep12hpf-only peaks. We find that 75% of Prep3.5hpf binding sites contain a DECA motif, while only 7% of Prep12hpf-only sites do so. Conversely, 44% of all Prep12hpf-only binding sites, but only 11% of Prep3.5hpf sites, contain a HEXA motif (Figure 3D). Consistent with HEXA motifs being associated with a Prep cofactor role, we also find that PBX:HOX binding sites are more prevalent at Prep12hpf peaks (24%) than at Prep3.5hpf peaks (5%). It is surprising that HEXA sites are not occupied by Prep at blastula stages and we considered the possibility that HEXA sites may not be accessible at this stage. We made use of previously published ATAC-seq data (Kaaij et al., 2016) to examine DNA accessibility at DECA versus HEXA sites at 4hpf and find that HEXA sites are considerably more accessible than DECA sites (Figure 3E), suggesting that chromatin accessibility is not a limiting factor for Prep binding at HEXA sites in the blastula stage embryo.
 
 While both DECA and HEXA sites have been reported previously, our data show for the first time that there is a temporal order to how TALE factors utilize these motifs during embryogenesis. Specifically, TALE factors occupy primarily DECA sites at blastula stages and these motifs remain occupied at least until segmentation stages, but by segmentation stages additional binding sites become utilized so that TALE factors also occupy HEXA motifs associated with binding sites for tissue-specific TFs such as Hox proteins.
 
-## Some TALE-occupied sites are associated with chromatin marks at Blastula stages
+### Some TALE-occupied sites are associated with chromatin marks at Blastula stages
 
 Previous analyses of individual DNA elements containing HEXA motifs adjacent to PBX:HOX motifs demonstrated that these act as enhancers in mouse and zebrafish (Pöpperl et al., 1995; Jacobs et al., 1999; Ferretti et al., 2005; Choe et al., 2009; Ferretti et al., 2000; Di Rocco et al., 1997; Manzanares et al., 2001; Tümpel et al., 2007; Wassef et al., 2008). Conversely, de novo motif discovery in conserved hindbrain enhancers – combined with functional testing in zebrafish – identified HEXA and PBX:HOX motifs as being essential for enhancer activity (Parker et al., 2011; Grice et al., 2015). Accordingly, we find that the Prep12hpf-only peaks are found at highly conserved regions of the genome (Figure 4—figure supplement 1A) and are associated with chromatin modifications known to mark enhancers (Figure 4—figure supplement 1B). Finally, we find that of 74 hindbrain enhancers active at 48–72hpf (Grice et al., 2015), 19 (26%; Figure 4—figure supplement 1C) are associated with a Prep12hpf-only peak. Hence, the arrangement of HEXA sites associated with PBX:HOX motifs (and other tissue-specific TF motifs) that we observe at 12hpf is very likely to represent enhancer elements.
 
 In contrast, no biological function has yet been assigned to elements containing DECA motifs. We characterized 11 Prep-occupied DECA sites in greater detail and find that eight are associated with genomic regions conserved in five other fish species (Figure 4—figure supplement 1D). Six of these elements are also conserved in mammals, suggesting that they play an evolutionarily important role. To identify a role for these elements, we tested whether Prep3.5hpf peaks correlate with particular chromatin features by comparison to available ChIP-seq data sets from 4.5hpf blastula stage zebrafish embryos (Bogdanovic et al., 2012; Zhang et al., 2014; Lee et al., 2015). Ranking TALE-bound regions based on their level of H3K4me1 (a histone modification associated with enhancers and promoters) reveals a clear pattern (Figure 4A). In particular, K-means clustering produced four clusters of sequences, three of which (representing ~25% of all TALE-occupied sites) are highly marked by H3K4me1. To distinguish TALE-occupied sites associated with chromatin marks from sites that lack (or display very low levels of) such marks, we refer to them as MPADs (Modified Prep Associated Domains) and non-MPADs, respectively. We find that MPADs are also enriched for H3K4me3 (a mark of active promoters) and H3K27ac (a mark of active enhancers and promoters). In addition, MPADs center on nucleosome-depleted regions and are highly enriched for RNA polymerase II occupancy (Figure 4A,B). MPADs are also preferentially found within 5 kb of TSSs (Figure 4C), are enriched near genes involved in transcriptional regulation and embryonic development (Figure 4D, Supplementary file 2) and are found at conserved sites in the genome (Figure 4E). In contrast, the remaining 75% of TALE-occupied sites display only sparsely modified histones at this stage (Figure 4A). These non-MPAD sites lack a nucleosome free region (Figure 4B) and are only weakly associated with RNA Polymerase II, but they are highly methylated on CpG dinucleotides. The non-MPAD sites are mostly found at distances greater than 5 kb from TSSs (Figure 4C), associated genes are not enriched for any specific functions (Figure 4D) and they are not highly conserved (Figure 4E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig4-v2.jpg)
+
+**Figure 4.:** See also Figure 4—figure supplements 1 and 2. (A) Heatmaps displaying chromatin features at genomic regions occupied by Prep at 3.5hpf. H3K4me1 signals at Prep-occupied elements was analyzed by K-mean (k = 4) clustering (left panel). H3K4me3, H3K27ac, H3K27me3, nucleosome, RNA-pol2 subunit RPB1 and Methyl CpG signals are displayed based on the H3K4me1 clustering order. (B) Average nucleosome signal at MPADs and non-MPADs (as defined in A). (C) Distribution of MPADs and non-MPADs relative to TSSs. (D) GO term enrichment for MPADs and non-MPADs identified by GREAT (nearest gene within 30 kb). Note that genes associated with Class 3 MPADs or non-MPADS are not enriched for GO terms. Only select categories are presented, a full list of GO terms is available in Supplementary file 2. FDR = Binomial False Discovery Rate. (E) Conservation of 3.5hpf Prep-occupied sites among vertebrates generated using PhastCons vertebrate 8-way comparison. The score shown is the probability (0 ≤ p ≤ 1) that each nucleotide belongs to a conserved genomic element. (F) Heatmaps displaying chromatin features at MPADs. H3K27ac and H3K27me3 signals at MPADs were analyzed by K-mean (k = 4) clustering. H3K4me1, H3K4me3, nucleosome and RBP1 signals are displayed based on the H3K27ac/me3 clustering order. (G) Box plots showing average expression of genes near (≤30 kb) each of the four MPAD classes, as determined by RNA-seq on 6hpf embryos. Data are presented as log2 of mean TPM (transcripts per million) values from three biological replicates. Statistical test: pairwise comparison with Kruskal-Wallis followed by Dunn's post-hoc test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Conservation of Prep12hpf-only-occupied sites among vertebrates plotted using PhastCons vertebrate 8-way comparison. The score shown is the probability (0 ≤ p ≤ 1) that each nucleotide belongs to a conserved genomic element. (B) Average ChIP-seq signal for H3K27ac, H3K4me1 and H3K4me3 at Prep12hpf-only-occupied sites. (C) Table listing hindbrain enhancers (identified in [Grice et al., 2015]) that overlap with a Prep12hpf-only-occupied site by 50 bp. (D) Assessment of sequence conservation for eleven Prep3.5hpf-occupied sites. Browser shots of conservation among fish (displayed as PhastCons plots in the UCSC browser), mouse and rat (displayed in VISTA plots) were aligned based on the exon/intron structure of the nearest gene.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Sequence logo, enrichment and localization relative to Prep1 peak summit of the DECA motif in mESCs (using data from [Laurent et al., 2015]). p-values for enrichment above random occurrence were calculated using the ranksum test in AME. Motifs are shown in IUPAC code (B = C, G or T; K = T or G). (B) Identification of genes bound by Prep in 3.5hpf zebrafish embryos and mESC. 1595 genes are associated with (within 30 kb) Prep binding in 3.5hpf zebrafish embryos and mESCs. (C) DAVID analysis of the 1,595 Prep-associated genes common to 3.5hpf embryos and mESCs identified in Figure 4—figure supplement 2B. Note that only select categories are presented and that a full list of GO terms is available in Supplementary file 3. FDR = Benjamini multiple testing False Discovery Rate. (D) Heatmaps displaying chromatin features at genomic regions occupied by Prep1 in mESCs. H3K4me1 signal at Prep-occupied elements was analyzed by K-mean (k = 4) clustering (left panel). H3K4me3, H3K27ac, H3K27me3, DNAse Hypersensitivity Sites (DHS), and methyl CpG signals are displayed based on the H3K4me1 clustering order. (E) Distribution of mESC MPADs relative to TSSs. (F) Heatmaps displaying chromatin features at mESC MPADs. H3K27ac and H3K27me3 signals at MPADs were analyzed by K-mean (k = 4) clustering. H3K4me1, H3K4me3 signals are displayed based on the H3K27ac/me3 clustering order. (G) Graph showing the percent of Prep binding in each category (MPAD, non-MPAD and MPAD classes) in 3.5hpf zebrafish embryos and mESCs.
+
 Prep occupancy has not been assessed in blastula stage embryos of other animal species, but previous analyses in murine embryonic stem cells (mESCs) identified Prep as bound to DECA motifs ([Laurent et al., 2015]; see also Figure 4—figure supplement 2A). We find that ~40% (1595/4008) of the Prep-associated genes in mESCs have orthologs with a nearby Prep3.5hpf peak in zebrafish (Figure 4—figure supplement 2B,C), indicating that Prep binding near developmental control genes is evolutionarily conserved. Sorting Prep-occupied regions from mESCs based on their enrichment for H3K4me1 revealed characteristics similar to those observed in zebrafish (Figure 4—figure supplement 2D,E), although there are many fewer unmodified regions in mESCs than in zebrafish embryos. Hence, at blastula stages, TALE-occupied sites can be divided into ones that are associated with various chromatin marks and are located near promoter regions of developmental control genes (MPADs), and ones that are largely devoid of histone marks and that are not associated with specific gene functions (non-MPADs).
 
-## Developmental control genes are enriched near MPADs displaying repressive histone modifications
+### Developmental control genes are enriched near MPADs displaying repressive histone modifications
 
 We noticed that a subset of MPADs shows detectable enrichment for the repressive H3K27me3 histone modification (Figure 4A). To examine this finding further, we ranked MPADs based on their level of H3K27ac and H3K27me3 at blastula stages. K-means clustering divided the resulting distribution into four groups (Figure 4F). For the sake of comparison, we refer to these as Class 1–4 MPADs. In particular, MPADs with high (Class 1) and intermediate (Class 2) levels of H3K27ac are associated with high levels of H3K4me3 and RNA Pol II occupancy, while elements with low levels of H3K27ac (Class 3 and 4) are not. Notably, the subset of MPADs with the lowest level of H3K27ac are associated with high levels of H3K27me3 (Class 4). When we analyze the GO-terms of genes associated with each of the four MPAD classes, we find that H3K27me3-modified Class 4 MPADs are more highly associated with developmental control genes than are Class1-3 MPADs (Figure 4D). In agreement with the chromatin profile at MPADs, RNA-seq analysis at 6hpf (shortly after the onset of zygotic gene expression) revealed that genes associated with Class 1 and 2 MPADs are expressed at higher levels than genes associated with Class 3 and 4 MPADs (Figure 4G). Similarly, ranking MPADs from mESCs based on H3K27ac levels revealed categories analogous to those observed in zebrafish (Figure 4—figure supplement 2F,G).
 
 Hence, MPADs can be further subdivided such that Class 1 and 2 display active chromatin marks and are found near genes expressed at 6hpf. In contrast, Class 4 MPADs are marked by H3K27me3 and are associated with genes involved in developmental processes, but these are not highly expressed at 6hpf. Class 3 MPADs are only marked by H3K4me1 and genes associated with this class show an intermediate level of expression at 6hpf, but they are not enriched for specific biological functions. We conclude that the chromatin state of MPADs correlates with the biological function of nearby genes and that developmental control genes are primarily associated with repressed (H3K27me3-modified) Class 4 MPADs.
 
-## Class 4 MPADs transition to an active chromatin state during embryogenesis
+### Class 4 MPADs transition to an active chromatin state during embryogenesis
 
 We next examined whether chromatin modifications at MPADs change as embryogenesis progresses by comparing their H3K27ac status at the blastula stage (4.5hpf) to that at late gastrula (9hpf) – when the embryonic axes have formed and organogenesis is beginning. We find that Class 1 and 2 MPADs undergo a reduction in the level of H3K27ac modification from 4.5hpf to 9hpf (Figure 5A,B), while RNA-seq at 12hpf (to capture changes in gene expression corresponding to chromatin changes at 9hpf; Figure 5C) shows that the associated genes are expressed at similar levels at 12hpf and 6hpf (Figure 5D). In contrast, Class 4 MPADs display higher levels of H3K27ac at 9hpf than at 4.5hpf and their associated genes show the greatest increase in expression between 6hpf and 12hpf. Class 3 MPADs show an intermediate effect with a small change in H3K27ac levels and a slight increase in expression of associated genes. We also find that many of the TALE-occupied regions that are sparsely modified at 4.5hpf (non-MPADs defined in Figure 4A) become more highly modified by H3K27ac as development progresses (Figure 5—figure supplement 1A,B). Genes associated with the non-MPADs undergoing the greatest increase in H3K27ac levels show the greatest increase in expression (Figure 5—figure supplement 1C) and are also enriched for functions related to later stages of embryogenesis (Figure 5—figure supplement 1D). Hence, Class 4 MPADs (and, to a lesser extent, Class 3 MPADs and non-MPADs) undergo an increase in H3K27ac and expression of the associated genes is significantly upregulated by 12hpf.
 
-## TALE factors control the chromatin state at class 4 MPADs associated with the anterior GRN
+![Figure 5.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig5-v2.jpg)
+
+**Figure 5.:** See also Figure 5—figure supplement 1. (A) Heatmap displaying the change in H3K27ac signal (log2 of fold-change) at MPADs between 4.5 and 9hpf of zebrafish embryogenesis. Ranking of MPADs is the same as in Figure 4F. (B) Average change in H3K27ac signal between 4.5hpf and 9hpf (log2 of fold-change) at MPADs. (C, D) Box plots showing expression of genes associated (≤30 kb) with each of the four MPAD classes, as determined by RNA-seq on 6hpf and 12hpf embryos. Data are presented as log2 of mean TPM values at 12hpf (C) or as log2 of mean TPM fold-change between 12hpf and 6hpf (D). Statistical test: pairwise comparison with Kruskal-Wallis followed by Dunn's post-hoc test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmaps displaying the change in H3K27ac signal at non-MPAD Prep binding sites during zebrafish embryogenesis. H3K27ac signal log2 fold-change (9hpf vs 4.5hpf and 24hpf vs 4.5hpf) at non-MPAD elements was analyzed by K-mean (k = 3) clustering. Clustering identifies three non-MPAD categories with high (K27acFC-High), low (K27acFC-Low) or null/negative (K27acFC-Null) H3K27ac fold-change during embryonic development. (B) Average change in H3K27ac signal (log2 of fold-change) between 4.5hpf and 9hpf (left panel) or 4.5hpf and 24hpf (right panel) at non-MPAD categories from Figure 5—figure supplement 1A. (C) Box plot showing the expression change of genes near (≤30 kb) each of the three non-MPAD K27acFC categories, as determined by RNA-seq on 6hpf and 12hpf zebrafish embryos. Data are presented as log2 of mean TPM (transcripts per million) fold-change between 12hpf and 6hpf. Statistical test: pairwise comparison with Kruskal-Wallis followed by Dunn's post-hoc test. (D) GO term enrichment for non-MPAD regions highly acetylated (K27acFC-High) during gastrulation/segmentation as identified by GREAT using the nearest gene within 30 kb association rule. Note that only select categories are presented and that a full list of GO terms is available in Supplementary file 3. FDR = Binomial False Discovery Rate.
+
+### TALE factors control the chromatin state at class 4 MPADs associated with the anterior GRN
 
 The fact that developmental control genes are associated with Class 4 MPADs suggests that the TALE GRN genes may fall into this category. Indeed, we find that TALE GRN genes are significantly associated with Class 4 (and Class 3), but not Class 1 or 2, MPADs (Figure 6A,B). A closer analysis of the TALE GRN genes associated with Class 3 and 4 MPADs revealed that they are enriched for functions related to transcriptional regulation and early embryonic processes (Figure 6C) that align well with the developmental defects observed in TALE KD embryos. In fact, 27 of the 34 TALE GRN genes associated with Class 4 MPADs encode TFs (Figure 6E) and a literature review uncovered that ~65% (22/34) have been previously implicated in the formation of embryonic structures that are affected in TALE KD embryos (Figure 6E; Supplementary file 4). These findings suggest that TALE factors act via Class 4 (and, to a certain extent, Class 3) MPADs to control a core set of TFs in the TALE GRN. To directly test this possibility, we assessed whether TALE factors are required for the expression of MPAD-associated genes by 12hpf. We find that expression of genes associated with Class 1 and 2 MPADs is relatively insensitive to TALE KD, while genes associated with Class three and, in particular, Class 4 MPADs are downregulated in TALE KD embryos (Figure 6D,E). Since Class 4 MPADs show an increase in H3K27ac between 6hpf and 9hpf (Figure 5A), we examined the impact of TALE TFs on 9hpf H3K27ac levels. Using ChIP-qPCR, we find that H3K27ac levels are reduced at 57% (4/7) of TALE GRN-associated Class 4 MPADs in TALE KD embryos (Figure 6F). These findings indicate that TALE factors act by regulating a chromatin transition – from repressive chromatin in blastula stage embryos to active chromatin in segmentation stage embryos – at a core set of genes encoding TFs that direct primarily anterior development in the zebrafish embryo.
 
@@ -78,9 +114,17 @@ The fact that developmental control genes are associated with Class 4 MPADs sugg
 
 **Figure 6.:** (A) Localization of TALE KD downregulated genes (p-adj ≤0.01, fold-change ≥1.5) relative to MPADs. The number of TALE-dependent genes within 30 kb of MPADs is indicated above each bar. p-values for enrichment above a random set of genes were calculated using the Pearson correlation test. (B) Representative UCSC browser tracks of the zic5 locus illustrating the position of a Class 4 MPAD and histone modifications in 4.5hpf and 9hpf embryos. (C) DAVID analysis of TALE KD downregulated genes (p-adj ≤0.01, fold-change ≥1.5) near Class 3 and 4 MPADs. Note that only select categories are presented, a full list of GO terms is available in Supplementary file 3. FDR = Benjamini multiple testing False Discovery Rate. (D) Box plots showing change in expression of genes near (≤30 kb) each of the four MPAD classes, as determined by RNA-seq at 12hpf. Data are presented as log2 of mean TPM fold-change between TALE KD and control. Statistical test: pairwise comparison with Kruskal-Wallis followed by Dunn's post-hoc test. (E) Graph showing the TPM expression fold-change in TALE KD vs control 12hpf embryos for all TALE dependent genes (n = 34) near (≤30 kb) Class 4 MPADs. Genes in red control the formation of structures affected by TALE KD (see Supplementary file 4). (F) H3K27ac/Histone H3 signal ratio at Class 4 MPADs as determined by ChIP-qPCR in 9hpf control vs TALE KD embryos. MPADs are labeled with the name of the nearest TALE-dependent gene. Data of three independent biological replicates are presented as mean fold change ± SEM of TALE KD vs control. Statistical test: unpaired t-test.
 
-## NF-Y proteins regulate TALE GRN expression and form complexes with TALE factors
+### NF-Y proteins regulate TALE GRN expression and form complexes with TALE factors
 
 Since TALE factors commonly function in complexes with other TFs, it is possible that they have novel interaction partners when bound at DECA motifs. Indeed, the DREME discovery tool detected three motifs in addition to the DECA motif at Prep3.5hpf peaks (Figure 7A). We cannot confidently assign a TF to the AT(A/G)TTAA motif, and the CC(C/A)C(G/A)CCC motif could bind any member of the large Sp/Klf family. The CCAAT motif was detected in a previous Prep ChIP-seq analysis (Penkov et al., 2013), but it was not pursued further. In our analysis, DREME predicted this motif to be selective for the NF-Y transcription factor (Dolfini et al., 2009). While the other motifs are enriched at both Prep3.5hpf and Prep12hpf-only peaks, the NF-Y motif is specifically enriched at Prep3.5hpf peaks (Figure 7B). NF-Y is also maternally deposited in zebrafish (Figure 7—figure supplement 1A), consistent with a joint role for TALE and NF-Y factors at blastula stages. Using ChIP-qPCR, we tested 15 TALE-occupied sites with nearby CCAAT motifs and detect NF-Y binding at nine of them (Figure 7C), demonstrating that co-occupancy is relatively frequent. Accordingly, using ChIP-seq data from mESCs (Oldfield et al., 2014), we find that ~50% of all Prep peaks are found near NF-Y peaks also in this cell type (Figure 7D), demonstrating that co-localization of TALE and NF-Y TFs is evolutionarily conserved.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig7-v2.jpg)
+
+**Figure 7.:** See also Figure 7—figure supplement 1. (A) Sequence logo and localization relative to Prep peak summits of motifs identified by DREME at Prep3.5hpf peaks. (B) Enrichment of motifs in Prep3.5hpf and Prep12hpf-only peaks as defined by AME. p-values for enrichment above random occurrence (3.5hpf and 12hpf-only columns) or between two Prep peak populations (3.5hpf vs 12hpf-only and 12hpf-only vs 3.5hpf columns) were calculated using the ranksum test in AME. Motifs are represented in IUPAC code (M = A or C; R = A or G). (C) ChIP-qPCR showing NF-YB binding at CCAAT motif-containing MPADs in 9hpf embryos. MPADs are labeled with the name of the nearest gene. Data of three independent biological replicates are presented as mean fold change ± SEM of NF-YB IP vs control IgG. Statistical test: unpaired t-test. (D) Venn diagram illustrating the overlap of Prep and NF-YB peaks in mESCs. Two peaks are considered to overlap if their summits are within 500 bp. (E) RT-qPCR analysis of gene expression in 12hpf NF-YDN injected embryos. Results are shown as gene expression fold-change in NF-YDN vs control for select TALE-dependent genes. Data of three independent experiments are presented as mean fold change ± SEM of NF-YDN injected vs control embryos. Statistical test = unpaired t-test. (F) H3K27ac/Histone H3 signal ratio at MPADs (labeled with the name of the nearest gene) as determined by ChIP-qPCR in 9hpf control vs NF-YDN injected embryos. Data of three independent biological replicates are presented as mean fold change ± SEM of NF-YDN vs control. Statistical test: unpaired t-test. (G) Co-IP experiments showing interaction of Myc-Prep (left panels) and HA-Pbx4 (right panels) with Flag-NF-YB in transfected HEK293 cells. HC = Ig heavy chain. Asterisks indicate non-specific signal. (H) Model diagram. At blastula stages (left side) TALE binds DECA motifs (TGATTGACAG) near NF-Y motifs (CCAAT). At this stage, most binding sites are occupied by nucleosomes and those associated with developmental control genes are marked by H3K27me3 (red lollipops). Binding of TALE and NF-Y leads to deposition of H3K27ac (green lollipops) and improved accessibility. At segmentation stages (right side), TALE continues to bind DECA motifs near NF-Y motifs, but Prep also binds HEXA motifs (TGACAG) near PBX:HOX motifs (TGATTTAT). Most of the HEXA motifs lack nucleosomes and are found within 40 kb of a DECA/NF-Y site (indicated by dashed connecting line). At this stage, developmental control genes are marked by H3K27ac and are expressed.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36144/elife-36144-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Left panel: Expression levels of maternal and paternal nf-yb transcripts during early zebrafish embryogenesis (using data from [Harvey et al., 2013]). At 3.5hpf, transcripts from the paternal allele (which requires zygotic activation) are not detected, demonstrating that only maternal nf-yb transcripts are present at this time point. Right panel: RT-PCR analysis on 0–1.25hpf, 3.5hpf and 9hpf zebrafish embryos demonstrating that nf-ya, nf-yb and nf-yc transcripts are maternally deposited. (B) Images of 4 dpf zebrafish following injection with mRNA encoding a NF-Y dominant negative construct (NFY-DN). Control gfp mRNA injected fish show normal wild type morphology, while 21/38 and 11/38 NF-YDN injected fish have severe or mild developmental defects, respectively. Six NF-YDN injected embryos died. Note that some developmental defects are shared with TALE KD injected embryos; for example smaller head, eyes and cardiac edema (see Figure 1—figure supplement 1A). (C) Average H3K27ac, H3K27me3 and nucleosome signal at TALE sites with (red line) or without (black line) adjacent NF-Y (CCAAT) motifs. (D) Distribution of the various binding motifs (DECA, HEXA, TALE:Hox, NF-Y) at 12hpf-only and 3.5hpf Prep-occupied sites (3.5hpf sites are further broken down into MPAD classes), as well as at Prep-occupied sites associated with TALE-GRN genes (DEG = differentially expressed genes identified by RNA-seq after TALE-KD). Numbers in boxes indicate percent of all sequences in each class that contain each of the motifs. (E) Reporter assays in HEK293 cells testing enhancer activity. Each element was tested in triplicate using two concentrations (100 and 400 ng) of reporter plasmid in the presence (+TF) or absence (-TF) of co-transfected TALE and NF-Y factors. Data is presented as mean ± SD fold induction over control plasmid. (F) Co-IP experiments showing interaction of Myc-Prep (left panels) and HA-Pbx4 (right panels) with Flag-NF-YA in transfected HEK293 cells. HC = Ig heavy chain. Asterisks indicate non-specific signal. (G) Localization of early zygotic genes (Lee et al., 2013) relative to Prep ChIP-seq peak summits. The number of genes within 30 kb of Prep binding sites is indicated above each bar. p-values for enrichment above a random set of genes were calculated using the Pearson correlation test. (H) Localization of first-wave zygotic genes relative to MPADs and non-MPADs. Numbers above bars indicate the number of genes within 30 kb of each type of Prep binding site. p-values for enrichment above a random set of genes were calculated using the Pearson correlation test.
 
 The role for NF-Y in embryogenesis is not well characterized, but it has been reported that mice mutant for nf-ya (the DNA binding subunit of the NF-Y complex) die in utero prior to embryonic day 8.5 (Bhattacharya et al., 2003), consistent with a role for NF-Y in early embryogenesis. Furthermore, a study targeting zebrafish nf-yb with antisense morpholino oligos described a relatively mild head phenotype that was attributed to defective cartilage formation (Y.-H. Chen et al., 2009). Using a previously reported dominant negative construct (NF-YDN [Nardini et al., 2013; Mantovani et al., 1994]) to disrupt NF-Y function, we observe a small head, as well as defects in development of the eyes, heart and tail (Figure 7—figure supplement 1B). The effect of the NF-YDN is somewhat more severe than that resulting from TALE KD (Figure 1—figure supplement 1A,B), but the two phenotypes share some features – including smaller head and eyes, as well as cardiac edema – suggesting that NF-Y may also regulate the expression of genes in the TALE GRN. To test this, we analyzed expression of 21 TALE-dependent genes associated with Class 4 MPADs (out of the 34 such genes identified in Figure 6A; six of these were also confirmed as associated with NF-Y occupancy in Figure 7C) and find that 18 (86%) are downregulated upon NF-Y disruption (Figure 7E). Furthermore, NF-Y disruption leads to a decrease in H3K27ac at MPADs associated with these genes (Figure 7F), similar to our observation following disruption of TALE function (Figure 6F). A shared role for TALE and NF-Y factors in controlling H3K27ac may be broadly relevant at the blastula stage, since we find that TALE peaks with adjacent CCAAT motifs are generally associated with higher levels of H3K27ac and lower levels of H3K27me3 than TALE peaks that lack a nearby CCAAT box (Figure 7—figure supplement 1C). We do not find any differences in the distribution of NF-Y motifs among the various MPAD classes, suggesting that NF-Y is generally associated with TALE occupancy (Figure 7—figure supplement 1D). We noticed from our bioinformatics analysis that NF-Y sites occur very close to DECA sites, with the average spacing being ~20 bp (Figure 7A), raising the possibility that NF-Y may physically interact with TALE proteins. Since Prep:Pbx is a heterodimer and NF-Y is a heterotrimeric TF, we tested the ability of Prep and Pbx to bind NF-YA and/or NF-YB in pairwise combinations by co-immunoprecipitation from transfected HEK293 cells. In this context, we find that both Prep and Pbx interact with the NF-YB (Figure 7G) and NF-YA (Figure 7—figure supplement 1F) subunits, indicating that Prep:Pbx and NF-Y can form complexes. We conclude that NF-Y binds adjacent to TALE factors at DECA sites and that both factors are required for regulation of the TALE GRN, possibly by functioning in a complex.
 
@@ -102,31 +146,629 @@ Lastly, TALE factors act as oncogenes in several systems and have been specifica
 
 ## Materials and methods
 
-## Animal care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resources</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifier</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Prep</td>
+      <td>(Choe et al., 2014)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Pbx4</td>
+      <td>(Choe et al., 2014)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NF-YB</td>
+      <td>Santa-Cruz</td>
+      <td>sc13045</td>
+      <td>RRID:AB_2152107</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-H3K27ac</td>
+      <td>Abcam</td>
+      <td>ab4729</td>
+      <td>RRID:AB_2118291</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Histone H3</td>
+      <td>Abcam</td>
+      <td>ab1791</td>
+      <td>RRID:AB_302613</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Myc</td>
+      <td>Roche</td>
+      <td>11667149001</td>
+      <td>RRID:AB_390912</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165</td>
+      <td>RRID:AB_259529</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-HA</td>
+      <td>Abcam</td>
+      <td>ab9110</td>
+      <td>RRID:AB_307019</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IgG control</td>
+      <td>Abcam</td>
+      <td>ab46540</td>
+      <td>RRID:AB_2614925</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal anti-IgG control</td>
+      <td>Millipore</td>
+      <td>12-371b</td>
+      <td>RRID:AB_2617156</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-linked secondary antibody</td>
+      <td>GE healthcare</td>
+      <td>LNA91V/AG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, Alexa Fluor 488 conjugated secondary antibody</td>
+      <td>Molecular Probes</td>
+      <td>A11001</td>
+      <td>RRID:AB_2534069</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal 3A10</td>
+      <td>Developmental Studies Hybridoma bank</td>
+      <td>531874</td>
+      <td>RRID:AB_531874</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked secondary antibody</td>
+      <td>Jackson Laboratories</td>
+      <td>211-032-171</td>
+      <td>RRID:AB_2339149</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>52887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Subcloning Efficiency DH5α Competent Cells</td>
+      <td>ThermoFisher Scientific</td>
+      <td>18265017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Thiouridine</td>
+      <td>Santa-Cruz</td>
+      <td>sc204628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EZ-Link HPDP-Biotin</td>
+      <td>Pierce</td>
+      <td>21341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>ThermoFisher Scientific</td>
+      <td>65001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Protein-A Dynabeads</td>
+      <td>ThermoFisher Scientific</td>
+      <td>10001D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq ChIP Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>IP-202–1012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA LT sample prep Kit</td>
+      <td>Illumina</td>
+      <td>RS-122–2101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE SP6 Transcription Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prep ChIP-seq and Inputs in 3.5hpf zebrafish embryos</td>
+      <td>This paper</td>
+      <td>GEO</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prep ChIP-seq and Inputs in 12hpf zebrafish embryos</td>
+      <td>This paper</td>
+      <td>GEO</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TALE knock-down and control RNA-seq in 6hpf zebrafish embryos</td>
+      <td>This paper</td>
+      <td>GSE102662</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TALE knock-down and control RNA-seq in 12hpf zebrafish embryos</td>
+      <td>This paper</td>
+      <td>GSE102662</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prep1 ChIP-seq and Inputs in mESCs, WIG files</td>
+      <td>(Laurent et al., 2015)</td>
+      <td>GSM1545025 and GSM1545026</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ATAC-seq in 4hpf zebrafish embryos, fastq files</td>
+      <td>(Kaaij et al., 2016)</td>
+      <td>SRR2747531</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K4me1 ChIP-seq in 4.5hpf zebrafish embryos, WIG files</td>
+      <td>(Bogdanovic et al., 2012)</td>
+      <td>GSM915193</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K4me3 ChIP-seq in 4.5hpf zebrafish embryos, WIG files</td>
+      <td>(Bogdanovic et al., 2012)</td>
+      <td>GSM915189</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K27ac ChIP-seq in 4.5hpf zebrafish embryos, WIG files</td>
+      <td>(Bogdanovic et al., 2012)</td>
+      <td>GSM915197</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K27ac ChIP-seq in 9hpf zebrafish embryos, WIG files</td>
+      <td>(Bogdanovic et al., 2012)</td>
+      <td>GSM915198</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K27ac ChIP-seq in 24hpf zebrafish embryos, WIG files</td>
+      <td>(Bogdanovic et al., 2012)</td>
+      <td>GSM915199</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K27me3 ChIP-seq in 4.5hpf zebrafish embryos, WIG files</td>
+      <td>(Zhang et al., 2014)</td>
+      <td>GSM1081557</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MNase-seq in 4.5hpf zebrafish embryos, WIG files</td>
+      <td>(Zhang et al., 2014)</td>
+      <td>GSM1081554</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNA-Pol2 ChIP-seq in 4.5hpf zebrafish embryos, WIG files</td>
+      <td>(Zhang et al., 2014)</td>
+      <td>GSM1081560</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MeDIP-seq (Methyl CpG) in 4.5hpf zebrafish embryos, BedGraph files</td>
+      <td>(Lee et al., 2015)</td>
+      <td>GSM1274386</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NF-YA ChIP-seq in mESCs</td>
+      <td>(Oldfield et al., 2014)</td>
+      <td>GSM1370111</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K4me1 in mESCs, BigWig files</td>
+      <td>ENCODE www.encodeproject.org</td>
+      <td>GSM1000121</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K4me3 in mESCs, BigWig files</td>
+      <td>ENCODE www.encodeproject.org</td>
+      <td>GSM1000124</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K27ac in mESCs, BigWig files</td>
+      <td>ENCODE www.encodeproject.org</td>
+      <td>GSM1000126</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>H3K27me3 in mESCs, BigWig files</td>
+      <td>ENCODE www.encodeproject.org</td>
+      <td>GSM1000089</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNase-seq in mESCs, BigWig files</td>
+      <td>ENCODE www.encodeproject.org</td>
+      <td>GSM1014154</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MeDIP-seq (Methyl CpG) in mESCs</td>
+      <td>(C.-C. Chen et al., 2013)</td>
+      <td>GSM859494</td>
+      <td>Deposited data</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HEK-293T cells</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-3216</td>
+      <td>RRID:CVCL_0063</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>strain EKW</td>
+      <td>Ekkwill breeders</td>
+      <td>http://www.ekkwill.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oligonucleotides</td>
+      <td></td>
+      <td></td>
+      <td>See Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>6xMyc-Prep1.1 in PCS2 + MT</td>
+      <td>(Choe et al., 2002)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>HA-Pbx4 in PCS2+</td>
+      <td>(Choe et al., 2009)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Flag-NF-YA in PCS2+</td>
+      <td>This Paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Flag-NF-YB in PCS2+</td>
+      <td>This Paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>NF-YDN in PCS2+</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>pGL3-Promoter vector</td>
+      <td>Promega</td>
+      <td>E1761</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Tle3 element in pGL3 Promoter vector</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Pax5 element in pGL3 Promoter vector</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Prdm14 element in pGL3 Promoter vector</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Tcf3a element in pGL3 Promoter vector</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Her6 element in pGL3 Promoter vector</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Dachb element in pGL3 Promoter vector</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Fgf8 element in pGL3 Promoter vector</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>pGL3-Control vector</td>
+      <td>Promega</td>
+      <td>E1741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Institute</td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td>RRID:SCR_014583</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQ Screen</td>
+      <td>Babraham Institute</td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastq_screen/</td>
+      <td>RRID:SCR_000141</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic 0.32</td>
+      <td>(Bolger et al., 2014)</td>
+      <td>https://github.com/timflutre/trimmomatic</td>
+      <td>RRID:SCR_011848</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie 2.2.3</td>
+      <td>(Langmead and Salzberg, 2012)</td>
+      <td>https://github.com/BenLangmead/bowtie2</td>
+      <td>RRID:SCR_005476</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools 0.1.19</td>
+      <td>(Li et al., 2009)</td>
+      <td>https://github.com/samtools/samtools</td>
+      <td>RRID:SCR_002105</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS 2.1.0.20140616</td>
+      <td>(Zhang et al., 2008)</td>
+      <td>https://github.com/taoliu/MACS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM 1.2.28 in the Dolphin interface of University of Massachuetts Worcester Biocore</td>
+      <td>(Li and Dewey, 2011)</td>
+      <td>http://www.umassmed.edu/biocore/introducing-dolphin/</td>
+      <td>RRID:SCR_013027</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 in the Dolphin interface of University of Massachuetts Worcester Biocore</td>
+      <td>(Anders and Huber, 2010)</td>
+      <td>http://www.umassmed.edu/biocore/introducing-dolphin/</td>
+      <td>RRID:SCR_015687</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Galaxy web interface</td>
+      <td>(Goecks et al., 2010)</td>
+      <td>https://usegalaxy.org</td>
+      <td>RRID:SCR_006281</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BedTools in galaxy</td>
+      <td>(Quinlan and Hall, 2010)</td>
+      <td>https://usegalaxy.org</td>
+      <td>RRID:SCR_006646</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepTools in galaxy</td>
+      <td>(Ramírez et al., 2014)</td>
+      <td>https://usegalaxy.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEME-ChIP</td>
+      <td>(Machanick and Bailey, 2011; Bailey et al., 2009)</td>
+      <td>http://meme-suite.org/tools/meme-chip</td>
+      <td>RRID:SCR_001783</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID 6.8</td>
+      <td>(Huang et al., 2009b, 2009a)</td>
+      <td>https://david.ncifcrf.gov/</td>
+      <td>RRID:SCR_001881</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GREAT 3.0.0</td>
+      <td>(McLean et al., 2010; Hiller et al., 2013)</td>
+      <td>http://bejerano.stanford.edu/great/public/html</td>
+      <td>RRID:SCR_005807</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>anti-Prep1.1 morpholino oligonucleotide</td>
+      <td>Gene Tools, LLC</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5'-TGGACACAGACTGGGCAG CCATCAT-3'Fluorescein</td>
+      <td>(Deflorian et al., 2004)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>anti-Pbx2 morpholino oligonucleotide</td>
+      <td>Gene Tools, LLC</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5'-CCGTTGCCTGTGATG GGCTGCTGCG-3'</td>
+      <td>(Erickson et al., 2007)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>anti-Pbx4 morpholino oligonucleotide</td>
+      <td>Gene Tools, LLC</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5'-AATACTTTTGAGCCGA ATCTCTCCG-3'</td>
+      <td>(Erickson et al., 2007)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal care
 
 All procedures on zebrafish adults and embryos were approved by the University of Massachusetts Institutional Animal Care and Use Committee (IACUC). EKW zebrafish were kept in groups of 10 individuals under constant water flow at 28°C. To collect embryos, 2 males and three females were crossed for 30 min. Subsequently, the embryos were collected in egg water (60 ug/ml of instant ocean salts, 0.0002% methylene blue). After 2 hr, dead and un-fertilized embryos were manually removed and the remainder left to develop until they reached the appropriate developmental stage and then used in the experimental procedures described below.
 
-## Interference with protein function in embryos
+### Interference with protein function in embryos
 
 Injection of capped messenger RNAs encoding an NF-Y or a Prep/Meis dominant negative protein (NF-YDN and PBCAB, respectively [Mantovani et al., 1994; Choe et al., 2002]) or a cocktail of morpholino antisense oligonucleotides directed against the TALE proteins, were used to interfere with NF-Y and TALE function. TALE knockdown was achieved by injection of antisense morpholino oligos (MOs) targeting pbx2, pbx4 and prep1.1 as reported previously (Deflorian et al., 2004; Waskiewicz et al., 2002). The use of MOs is necessitated by the fact that mutant lines are not available for all TALE factors, and the existing mutants are embryonic lethal. Hence, MOs allow us to produce the large number of embryos required for RNA-seq and ChIP-qPCR experiments. Importantly, the phenotype of pbx4 MO-injected embryos is indistinguishable from that of pbx4 mutant embryos (Waskiewicz et al., 2002), demonstrating that pbx4 MOs are specific. prep1.1 MOs produce the same phenotype as pbx4 mutants (Deflorian et al., 2004), as expected of proteins acting together in a dimer. prep1.1 MOs also produce the same phenotype as embryos injected with a dominant negative construct disrupting Prep/Meis function (Choe et al., 2002), further indicating that the knockdown is specific.
 
 Sample size was not selected based on statistical analysis, but on previous published reports demonstrating that these reagents produce phenotypes in >85% of injected embryos (Deflorian et al., 2004; Waskiewicz et al., 2002; Choe et al., 2014; Mantovani et al., 1994). Embryos were randomly selected for inclusion in injected or control pools. Dead animals were excluded from RNA-seq and ChIP-seq experiments, but not from phenotypic analyses in Figure 1—figure supplement 1 and Figure 7—figure supplement 1. No other animals were excluded. Experiments were not blinded.
 
-## In vitro synthesis of capped mRNAs
+#### In vitro synthesis of capped mRNAs
 
 PCS2 + plasmids containing the NF-YDN or PBCAB coding sequence was linearized by NotI digest and purified with a PCR purification kit column (Qiagen). Capped messenger RNAs were synthesized using the SP6 mMessage mMachine kit (ThermoFisher Scientific) from 2 ug of linearized plasmid following manufacturer's instructions. The DNA template was then removed by the addition of 2 µl of TURBO DNase and incubation at 37°C for 15 min. Subsequently, synthesized capped mRNAs were purified on the RNeasy kit columns (Qiagen), quantified on a Nanodrop (ThermoFisher Scientifics) and their quality assessed on a 2% agarose gel.
 
-## Injections into zebrafish embryos
+#### Injections into zebrafish embryos
 
 300 pg of mRNA or a mixture of morpholinos (Prep1.1, Pbx2 and Pbx4 at 2.7 ng each) mixed with water and 0.1% phenol red dye were injected into 1 to 2 cell stage zebrafish embryos. Following the injection, embryos were raised to the desired time point and used for experimental procedures.
 
-## Assessment of TALE loss of function phenotype
+### Assessment of TALE loss of function phenotype
 
 For whole-mount immunostaining, 48hpf embryos were fixed in 4% paraformaldehyde/8% sucrose/1x PBS overnight. Fluorescent staining with the 3A10 primary antibody (1:100; Developmental Studies Hybridoma Bank) and the goat anti-mouse Alexa Fluor 488 secondary antibody (1:200; Molecular Probes A11001) was used to detect Mauthner neurons. For assessment of cartilage formation, 5dpf embryos were fixed in 4% paraformaldehyde/1X PBS overnight, bleached in 30% hydrogen peroxide for 2 hr and stained overnight in 1% HCL/70% ethanol/0.1% alcian blue.
 
-## Identification of in vivo TF binding sites
+### Identification of in vivo TF binding sites
 
-## ChIP-seq
+#### ChIP-seq
 
 Groups of 500 zebrafish embryos (total of 10,000 at 3.5hpf and 5000 at 12hpf per biological replicate) were dissociated in 1XPBS by pipetting and fixed for 10 min in 1% formaldehyde. Fixation was stopped by the addition of glycine to a final concentration of 125 mM and cells were pelleted and frozen in liquid nitrogen. Subsequently, cell pellets were processed following a ChIP protocol described previously (Amin et al., 2015). Nuclei were extracted by the addition of 500 μl L1 buffer (50 mM Tris-HCl pH8.0, 2 mM EDTA, 0.1% NP-40, 10% glycerol, 1 mM PMSF) followed by incubation for 5 min on ice and pelleted by centrifugation (3000 rpm, 5 min at 8°C). Nuclei were lysed in 300 μl SDS lysis buffer (50 mM Tris-HCl pH8.0, 10 mM EDTA, 1% SDS) and chromatin sheared into smaller fragments (300 bp on average) by 3 rounds of sonication with a Palmer sonicator (10 s ON – 2 s OFF for a total of 1 min per round, amplitude 40%).
 
@@ -136,104 +778,104 @@ Chromatin fragments were eluted by the addition of 50 μl of freshly made elutio
 
 ChIP DNA fragments and their corresponding input were quantified on a Qubit with the dsDNA HS assay kit (ThermoFisher Scientific). 10 ng of DNA was used for library preparation using the Tru-seq ChIP Sample Preparation Guide (Illumina Inc). For samples containing less than 10 ng of DNA the entire eluted DNA was used. Briefly, sample DNA was blunt-ended and phosphorylated, and a single 'A' nucleotide added to the 3' ends of the fragments in preparation for ligation to an adapter with a single-base 'T' overhang. Omitting the size selection step, the ligation products were then PCR-amplified to enrich for fragments with adapters on both ends. Libraries were sequenced on an Illumina HiSeq2500 Sequencer.
 
-## ChIP-qPCR
+#### ChIP-qPCR
 
 The ChIP protocol for ChIP-qPCR is the same as described in the ChIP-seq section above except that a total of 1000 wild-type or injected embryos were collected for NF-YB and Pbx4 ChIPs and 200 embryos for Histone H3 and H3K27ac ChIPs. The following antibodies were used: 10 µl of anti-Prep1.1 and anti-Pbx4 in house sera and their corresponding pre-bleed control sera; 8 µg of anti-NF-YB rabbit polyclonal antibody and control rabbit polyclonal IgG. The relative quantification of select genomic regions was determined by qPCR using specific primers pairs (see Supplementary file 5) and 2 µl of ChIP DNA eluate.
 
-## Quantification of gene expression
+### Quantification of gene expression
 
-## Total RNA extraction from zebrafish embryos
+#### Total RNA extraction from zebrafish embryos
 
 Total RNA from 50 to 100 6hpf or 12hpf zebrafish whole embryos was extracted with the RNeasy kit (Qiagen) following manufacturer's instructions. Total RNA was then used in RNA-seq and RT-qPCR reactions.
 
-## RNA-seq
+#### RNA-seq
 
 Total RNA quantification and quality assessment was performed on a Bioanalyzer (Agilent) and only total RNAs with a RNA Integrity Number above nine were further considered. Then, 3 ug of total RNA was used to construct RNA-seq libraries with the Illumina Truseq stranded mRNA library kit after PolyA + RNA enrichment. The quality and size of the fragments was determined on a Bioanalyzer (Agilent) and single-end 100 bp reads were generated on a Hi-Seq sequencer at the molecular biology core of the University of Massachusetts Medical School.
 
-## RT-qPCR
+#### RT-qPCR
 
 500 ng to 1 µg of total RNA was reverse transcribed using the high capacity cDNA kit (ThermoFisher Scientific). The relative quantity of select mRNAs was determined by qPCR: each 25 ul total PCR reaction contained 2 µl of cDNA diluted 10-fold, 0.2 mM of each specific primer (see Supplementary file 5) and qPCR master mix (Biotool) to a 1X final concentration. The reactions were loaded onto a 7300 real-time PCR system (Applied Biosystems).
 
-## Generation of expression vectors
+### Generation of expression vectors
 
 Myc-Prep1.1 (NM_131891.3), HA-Pbx4 (NM_131447.1) encoding plasmids were described previously (Choe et al., 2009, 2002). Flag-NF-YA and Flag-NF-YB plasmids were generated by PCR amplification of the zebrafish NF-YA (NM_001082795.1) and NF-YB (NM_001013322.2) coding sequences from 24hpf zebrafish cDNA using specific primers bearing EcoRI/XhoI and XbaI/SnabI restriction sites respectively. The amplified sequences were then introduced into a PCS2 + plasmid backbone. Subsequently, a Flag tag sequence was PCR amplified from a p3xFLAG-CMV−7.1 vector using specific primers bearing EcoRI (for NF-YA) or StuI/XbaI (for NF-YB) and cloned 5' to the NF-YA or B coding sequences. The NF-YDN plasmid was constructed as previously described (Mantovani et al., 1994). Briefly, three point mutations (R279A, G280A, D281A) located in the conserved NF-YA DNA binding domain, preventing NF-YA DNA binding but not interactions with the other members of the NF-Y complex, were introduced using the Q5 site directed mutagenesis kit (New England Biolabs) and primers bearing the mutations. Plasmids for luciferase reporter assays were generated by amplifying ~500 bp genomic fragments containing the Prep binding sites associated with the tle3a, pax5, prdm14, tcf3a, her6, dachb and fgf8 loci (using the primers listed in Supplementary file 5) and cloning into the XhoI sites of the pGL3-Promoter vector (Promega E1761)
 
 All the plasmids were validated by Sanger sequencing, amplified in DH5α bacterial cells and extracted using the PureLink HiPure Plasmid Midiprep Kit (ThermoFisher Scientific). All primer sequences can be found in Supplementary file 5.
 
-## Luciferase assays and assessment of protein-protein interactions
+### Luciferase assays and assessment of protein-protein interactions
 
-## Transfection
+#### Transfection
 
 3 × 106 HEK-293T cells were seeded on 10 cm dishes and allowed to grow overnight in antibiotic-free growth medium (DMEM (Gibco) supplemented with 10% FBS (Hyclone)). HEK293T cells were obtained from ATCC (ATCC CRL-3216). These cells were not independently authenticated and were not tested for mycoplasma. The next day, the cells were incubated for 5 hr in Opti-MEM (Gibco) medium containing a mixture of plasmid DNA and Lipofectamine 2000 (Invitrogen) following manufacturer’s instructions. Subsequently, the cells were incubated overnight in fresh antibiotic-free growth medium.
 
-## Immunoprecipitation of TALE-NF-Y protein complexes
+#### Immunoprecipitation of TALE-NF-Y protein complexes
 
 Transfected cells were lysed in 4 mL of ice cold Co-IP Buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.2 mM EDTA, 1 mM DTT, 0.5% Triton X100, 1X Complete Protease Inhibitor (Roche)) and incubated on ice for 30 min. Cell lysates were centrifuged at 2,000 g for 10 min at 4°C to remove cell debris and pre-cleared by incubation at 4°C after the addition of 50 μL of Protein A/G Agarose Beads blocked in 1% BSA for 1 hr (Roche). To immunoprecipitate the target protein, 8 μg of the appropriate antibody (see Key Resources Table) was added to each sample before incubation at 4°C overnight. The next morning 40 μL of Protein A/G Agarose beads blocked with 1% BSA was added and each sample incubated for 4 hr at 4°C. Non-specific binding was eliminated by five washes in 1 mL of Co-IP Buffer. Finally, the immune-complexes were eluted in 80 μL of 1X Laëmmli Buffer (Biorad) containing 2.5% beta-mercaptoethanol and agitated for five minutes at 95°C.
 
-## Western blot
+#### Western blot
 
 20 μL of each IP sample or 13 μL of each Input sample were loaded onto a 4–20% gradient polyacrylamide gel (Bio-Rad) and the proteins separated at 200V until the dye front reached the end of the gel. The separated proteins were then transferred onto a methanol-activated PVDF membrane at 100V for one hour. After incubation for one hour in blocking buffer (5% non-fat dehydrated milk in Tris Buffered Saline with Tween (TBST; 50 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.1% Tween 20)) the membranes were probed with specific antibodies (see Key Resources Table) diluted in TBS-Tween plus 5% BSA and incubated overnight at 4°C. The next day after four washes of 10 min in TBS-Tween the membrane were probed with the appropriate secondary antibody diluted in TBS-Tween plus 5% BSA and incubated at 4°C for two hours. After four washes of ten minutes in TBS-Tween the ECL reaction was performed and chemiluminescence detected with a LAS3000 (Fuji) machine.
 
-## Luciferase reporter assay
+#### Luciferase reporter assay
 
 For the reporter assays, 100 or 400 ng of each luciferase reporter plasmid was co-transfected (see above for transfection protocol) with 200 ng of each TF (Meis, Pbx, NF-YA and NF-YB) or with 800 ng of control plasmid, as well as together with 50 ng of a plasmid expressing renilla luciferase. Luciferase was quantified using the DualGlo Luciferase system (Promega E2920) in a Perkin Elmer Envision 2104 Multiplate reader and firefly luciferase levels were normalized to renilla levels. Each assay was performed in triplicate and is presented as mean fold induction ± SD over transfection with empty vector. A vector containing the SV40 enhancer (pGL3-Control vector; Promega E1741) was used as positive control.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Analysis of expression and ChIP data was done as outlined below using standard bioinformatics packages. Default statistics tools included in each package were used (except as indicated) and the exact parameters for each type of analysis are listed below.
 
-## Processing of RNA-seq data
+### Processing of RNA-seq data
 
 Fastq files containing strand specific trimmed and filtered reads were processed using the University of Massachusetts Medical School Dolphin web interface (see Key Resources Table). Reads were quality checked with FastQC aligned to the DanRer10 zebrafish transcriptome and normalized gene expression TPM (Transcripts Per Million) values calculated using RSEM_v1.2.28 with parameters -p4 --bowtie-e 70 --bowtie-chunkmbs 100 (Li and Dewey, 2011). Identification of differentially expressed genes (DEGs) was performed with DeSeq2 (Anders and Huber, 2010) on three independent biological replicates for each control or TALE KD conditions except for RNA-seq data of TALE KD vs Control embryos at 12hpf. In this latter experiment one outlier replicate was excluded from the analysis. DeSeq2 identified DEG with p-adj ≤0.05 (Benjamini and Hochberg FDR) and to compensate for the loss of one biological replicate only DEGs with p-adj ≤0.01 were used in all subsequent analyses.
 
-## Processing of ChIP-seq data
+### Processing of ChIP-seq data
 
 Fastq files for ChIP-seq analysis contained 101 bp paired-end sequence for Prep 3.5hpf and 12hpf, two biological replicates each, and matched input-DNA controls. After an assessment of the raw sequence quality using FastQC (Babraham Institute. n.d, 2016) and Fastq-screen (Babraham Institute. n.d, 2016) the sequence reads were filtered to remove any remaining adapter sequence or poor quality 3’ end sequence using Trimmomatic version 0.32 (Bolger et al., 2014). Default parameters for ILLUMINACLIP and SLIDINGWINDOW were used. MINLENGTH was set to 50 bp, except for Prep 3.5hpf replicate 2 with which 36 bp was used. The reads were then mapped to the GRCz10 (danRer10/September 2014) release of the entire zebrafish genome from the UCSC browser (Tyner et al., 2017) using Bowtie2 version 2.2.3 (Langmead and Salzberg, 2012). The output SAM file was further filtered to remove reads with poor mapping quality and discordant mapped read pairs, using SAMtools view version 0.1.19 (Li et al., 2009) (with flags used -f 2 -q30). Peak calling was performed using MACS2 version 2.1.0.20140616 (Zhang et al., 2008), excluding reads that mapped to the mitochondrial genome and unassembled contigs in the assembly. Default parameters were used, except that the effective genome size was set to 1.03e9 (this equates to 75% of the total genome sequence, excluding ‘N’ bases. The q-value threshold was set to 0.05. Candidate binding regions were then filtered to retain those with a fold enrichment of ≥10. Upon applying these criteria, we noticed that one biological replicate for each ChIP-seq experiment (3.5hpf and 12hpf) underperformed, but more than 95% of the peaks were identified also in the second biological replicate (see ‘Quantification of ChIP peak overlap’ below and Supplementary file 1). Therefore, the best biological replicate for each experimental condition was considered for downstream analysis.
 
-## Analysis of qPCR results
+### Analysis of qPCR results
 
-## Gene expression analysis
+#### Gene expression analysis
 
 Gene expression was determined and normalized to gapdh expression using the following formula (0.5gene of interest Ct value/0.5 gapdh Ct value). The mean value and standard error of the mean (SEM) for three independent biological replicates of control and experimental conditions were calculated using Excel. Statistical significance of mean variations between two conditions was calculated using an unpaired t-test in Excel. Two conditions are considered significantly different if p-value≤0.05.
 
-## ChIP DNA enrichment analysis
+#### ChIP DNA enrichment analysis
 
 DNA enrichment was determined and normalized to input values using the following formula (0.5IP Ct value/0.5 Input Ct value). Then the mean value and standard error of the mean (SEM) for three independent biological replicates of control and experimental conditions were calculated using Excel. When necessary the results were expressed as a fold change of specific ChIP signal over control IgG ChIP signal. Statistical significance of mean variations between two conditions was calculated using an unpaired t-test in Excel. Two conditions are considered significantly different if p-value≤0.05.
 
-## Analysis of GO term enrichment
+### Analysis of GO term enrichment
 
 GREAT (version 3.0.0 [McLean et al., 2010; Hiller et al., 2013]) allowed for the analysis of GO term enrichment using Prep binding site coordinates as Input. The analysis was performed using the single nearest gene within 5 or 30 kb association rule since most Prep sites are found within 30 kb of a TSS. GO terms were ranked by Binomial False Discovery Rate (FDR) values. The results are presented as -log2 transformed FDR values and only GO terms with FDR ≤ 0.05 (-log2(FDR) ≤ 4.32) were considered significant.
 
 DAVID (version 6.8 [Huang et al., 2009b, 2009a]) was used to identify enriched GO terms associated with genes identified in the RNA-seq analysis and/or found to be near Prep binding sites. The Benjamini multiple testing False Discovery Rate (FDR) was use to rank the identified GO terms. The results are presented as -log2 transformed FDR values and only GO terms with FDR ≤ 0.05 (-log2(FDR) ≤ 4.32) were considered significant.
 
-## Analysis of TF peak features
+### Analysis of TF peak features
 
 All TF binding site coordinates used in the following analysis were defined as 200 bp coordinates centered on the ChIP peak summit. Unless otherwise specified, only peaks with an FE ≥ 10 were considered.
 
-## Prep binding sites distribution relative to TSSs
+#### Prep binding sites distribution relative to TSSs
 
 The distribution of Prep binding sites relative to TSSs was calculated using the windowbed tool from the bedtools suite (Quinlan and Hall, 2010) in the Galaxy toolshed (Goecks et al., 2010) searching for the number of Prep binding sites found within 5 or 30 kb (from their center) of any Ensembl zebrafish (Zv9) or mouse (Mm9) TSSs.
 
-## Identification of prep peak associated genes
+#### Identification of prep peak associated genes
 
 A gene was considered associated with a Prep binding site if any of its Ensembl (Zv9) TSS was found within 5 or 30 kb from a Prep peak. Prep-associated genes were defined using the windowbed tool from the Bedtools suite in Galaxy searching for Ensembl TSS (for instance those of differentially expressed genes in TALE KD embryos or first-wave wave genes) found within 5 or 30 kb of the center of any Prep binding site. Statistical significance of Prep binding association with genes of interest (first wave genes and TALE KD differentially expressed genes) over a random population of genes was determined with a Pearson correlation test with a statistical significance ≤0.05.
 
-## Quantification of ChIP peak overlap
+#### Quantification of ChIP peak overlap
 
 The overlap between two populations of ChIP peaks was analyzed using the intersect tool from the Galaxy toolshed. Two Prep peaks (in different ChIP biological replicates or in ChIP-seq results from 3.5hpf vs. 12hpf) were considered to overlap if their summits were within 50 bp (See also Processing of ChIP-seq data above). Prep and NF-YA peaks in mESCs were considered to overlap if their summits were within 500 bp.
 
-## Identification of the Prep12hpf-only peak population
+#### Identification of the Prep12hpf-only peak population
 
 Prep12hpf-only ChIP-seq peaks were identified by subtracting Prep12hpf peaks overlapping with all Prep13.5hpf peaks identified by MACS2 without applying any enrichment cut-off. This strategy allowed for stringent identification of 11468 Prep12hpf-only binding sites not occurring at 3.5hpf that were used for subsequent analysis.
 
-## TF binding motif analysis
+#### TF binding motif analysis
 
 MEME and DREME (MEME-suite version 4.11.1 [Machanick and Bailey, 2011; Bailey et al., 2009]) were used to identify significantly enriched de novo binding motifs. DREME ran in a default mode, MEME was set to search for a maximum of six 4 to 12 nucleotide long motifs. Motif distribution relative to ChIP-seq peak summit was defined by CENTRIMO using default parameters. AME (MEME-suite version 4.11.1 [Machanick and Bailey, 2011; Bailey et al., 2009]) was used to calculate the relative enrichment between two datasets using default parameters (Ranksum test, p-value≤0.05). In the case of a relative enrichment against a control set of sequence, the « shuffled input sequences » mode was selected. The occurrence of TF binding motifs in Figure 3D and Figure 7—figure supplement 1D) was calculated using a custom Python script (moth.py, Source code 1) with the input files provided in Figure 3—source data 1. To do so, regular expression matches were identified on both strands of the input sequences, and the number of sequences containing at least one occurrence of a motif was calculated. HEXA motifs were identified in sequences that did not contain any DECA motif.
 
-## Sequence conservation analysis
+#### Sequence conservation analysis
 
 Average conservation score around Prep1 binding sites was computed in the Deeptool suite using Prep1-bound sequences and the UCSC vertebrate PhastCons eight way (Zebrafish, Medaka, Stickleback, Tetraodon, Fugu, X. tropicalis, Mouse, Human) wig file as regions of interest and score input files respectively. For Figure 4—figure supplement 1A, a set of 11000 random chromosomal coordinates was generated from the zv11 zebrafish genome assembly using the randCoord.py custom python script (Source code 2).
 
-## Analysis of chromatin features
+#### Analysis of chromatin features
 
 Chromatin heatmaps and mean score profiles of Prep binding sites in fish embryos and mESCs were generated with the Deeptools (version 2.0 [Ramírez et al., 2014]) suite of tools in the Galaxy toolshed. BED files containing Prep biding site coordinates and wiggle files of previously published datasets (Key Resources Table) downloaded from GEO or ENCODE were used as inputs. First, signal matrices at Prep bound regions were made using the compute matrix tool in reference-point mode with the following parameters: distance upstream and downstream of the start site of the regions defined in the BED file: 1000 or 2,000 bp, bin size: 25 bp. When necessary, the regions were ranked based on mean signal values. Second, score matrices were used to generate heatmaps and mean score profiles with the plot heatmaps and plot profile tools respectively. We note that the public ChIP-seq and ATAC-seq datasets are from slightly different timepoints (4.5hpf and 4hpf, respectively) than our Prep ChIP-seq dataset (3.5hpf). Since each dataset requires hundreds to thousands of embryos (that cannot be individually staged) and zebrafish development is slightly asynchronous, it is likely that collecting embryos at these three timepoints will result in considerable overlap of the actual stages analyzed.

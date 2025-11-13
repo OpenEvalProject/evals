@@ -12,13 +12,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00te3t702 Center for Tropical and Emerging Global Disease Athens United States
-2. https://ror.org/04twxam07 Michale E. Keeling Center for Comparative Medicine and Research, The University of Texas MD Anderson Cancer Center Bastrop United States
-3. https://ror.org/01f5ytq51 Department of Veterinary Integrative Biosciences, School of Veterinary Medicine and Biomedical Sciences, Texas A&M University College Station United States
-4. https://ror.org/01f5ytq51 Department of Small Animal Clinical Sciences, College of Veterinary Medicine and Biomedical Sciences, Texas A&M University College Station United States
+1. Center for Tropical and Emerging Global Disease Athens United States ([ROR:00te3t702](https://ror.org/00te3t702))
+2. Michale E. Keeling Center for Comparative Medicine and Research, The University of Texas MD Anderson Cancer Center Bastrop United States ([ROR:04twxam07](https://ror.org/04twxam07))
+3. Department of Veterinary Integrative Biosciences, School of Veterinary Medicine and Biomedical Sciences, Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
+4. Department of Small Animal Clinical Sciences, College of Veterinary Medicine and Biomedical Sciences, Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
 5. Research Department, Instituto Nacional de Parasitología "Dr. Mario Fatala Chaben", Buenos Aires, Argentina. Chagas Disease Unit, Hospital Interzonal General de Agudos Eva Perón Buenos Aires Argentina
-6. https://ror.org/00te3t702 Department of Statistics, University of Georgia Athens United States
-7. https://ror.org/00te3t702 Department of Cellular Biology, University of Georgia Athens United States
+6. Department of Statistics, University of Georgia Athens United States ([ROR:00te3t702](https://ror.org/00te3t702))
+7. Department of Cellular Biology, University of Georgia Athens United States ([ROR:00te3t702](https://ror.org/00te3t702))
 
 † Corresponding author
 
@@ -40,13 +40,13 @@ In the current study, we have used humans, non-human primates (NHPs), and dogs, 
 
 ## Results
 
-## Performing large numbers of replicate PCR reactions (‘deep-sampling’) extends the range to detection of T. cruzi infection in naturally infected hosts
+### Performing large numbers of replicate PCR reactions (‘deep-sampling’) extends the range to detection of T. cruzi infection in naturally infected hosts
 
 In order to determine the potential of deep-sampling for more sensitive detection of T. cruzi in blood samples, we spiked macaque blood with DNA equivalent to known numbers of parasites and conducted 40 replicate PCR reactions per DNA sample. A blood DNA aliquot for PCR amplification equivalent to 10–3 parasites per reaction was selected as the highest parasite concentration as this is the lowest standard that consistently provides a positive signal in our standard PCR assay. This result was confirmed in this assay when all 40 aliquots expected to contain 10–3 parasites were positive for T. cruzi DNA amplification (Figure 1). Decreasing the parasite equivalents (PE) in 10-fold increments expectedly reduced the frequency of positive PCR reactions and as well, the maximum Cq value of each positive amplification set, but demonstrated that as few as 10–7 PE per reaction could be detected if a sufficient number of replicate PCR reactions were conducted.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig1-v1.jpg)
 
-**Figure 1.:** T. cruzi in a decreasing frequency of replicate reactions to at least four orders of magnitude below the normal limit of quantitation (10–3) used for single PCR reactions.% positive is the percentage of replicate reactions that gave a detectable amplification in 40 cycles (Cq value <40). NTC = no T. cruzi DNA.Figure 1—source data 1.Figure 1.
+**Figure 1.:** % positive is the percentage of replicate reactions that gave a detectable amplification in 40 cycles (Cq value <40). NTC = no T. cruzi DNA.
 
 We next turned to the use of bona fide blood samples from T. cruzi-infected hosts to test the ability of deep-sampling PCR to detect T. cruzi DNA in naturally infected hosts with an expected variability of circulating parasites. NHPs in indoor/outdoor housing in the southern U.S. readily acquire T. cruzi by environmental exposure to the often plentiful infected triatomine insects present in these settings (Hodo et al., 2018) and maintain immunologically controlled but persistent infections similar to that in humans (Padilla et al., 2022; Padilla et al., 2021).
 
@@ -56,11 +56,19 @@ Samples were collected and processed as shown in Figure 2A. In brief, three appr
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig2-v1.jpg)
 
-**Figure 2.:** (A) Protocol for the collection and PCR analysis of non-human primate (NHP) blood samples. (B) The combined PCR results of samples A and B at the first of monthly sampling points, plotting Cq values for all replicates (bottom) and percent positive replicates (top).Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Protocol for the collection and PCR analysis of non-human primate (NHP) blood samples. (B) The combined PCR results of samples A and B at the first of monthly sampling points, plotting Cq values for all replicates (bottom) and percent positive replicates (top).
 
 To determine the constancy of detectable parasite DNA in blood over time, blood samples were collected monthly for up to 1 year and processed as in Figure 2A. Profiles of representative animals over this year of sampling are shown in Figure 3; the full dataset for all 28 animals involved in the study is shown in Figure 3—figure supplement 1. All 21 seropositive macaques had one or more positive PCR reaction at one or more of the sample points over the initial 12-month study period. Figure 3A–C shows a representative set of animals in which PCR reactions were, respectively, very rare, variable or frequent. Macaques P7 and P9 were two of the most extreme cases in terms of a low frequency of positive PCR reactions, with, respectively, 7 (0.21%) and 10 (0.29%) positive reactions from a total of >3000 reactions performed on 24 blood samples each. The example macaques shown in Figure 3B had higher frequencies of PCR positive reactions (1.76, 2.09, and 4.77) and with lower Cq values, but also had occasional months with no positive detection. Collectively 8 of the 21 seropositive macaques had 1 or more months in which as many as 388 replicate PCR reactions failed to detect an amplifiable product. Pearson correlation analysis revealed a very strong negative correlation between the overall frequency of positive PCR reactions in animals and the average Cq values for those positive reactions (low Cq values represent higher target DNA; Figure 3E). All macaques screened for a minimum of 12 months in the first year of the study or the eight additional bleed points in the second year (see below) were positive by hemoculture in one or more samples with one exception and the percent positive hemoculture correlated strongly with both the frequency of positive PCR reactions and the average Cq values of positive PCRs (Figure 3E, F). Thus, assessing the frequency of positive PCR reactions among deep-sampled, serially collected blood-derived DNA blood allows highly sensitive and quantitatively accurate determination of infection status and relative parasite abundance in naturally infected macaques with a wide range of parasite burdens.
 
-## Serial deep-sampling PCR can reveal changes in parasite burden over time
+![Figure 3.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig3-v1.jpg)
+
+**Figure 3.:** Animals in groups (A) and (B) were sampled all 12 months while those in (C) were sampled only for the first 6 months and then in the 12th month. Percentages indicate the overall percentage of positive PCR reactions across all sampling points. (D) Macaque P4 switched from 100% negative to 50% positive PCR reactions coincident with a change in health status. (E, F) Pearson correlation analysis indicated a strong positive correlation between the overall frequencies of positive PCRs and hemocultures and a negative correlation between these frequencies and Cq values, but no significant correlation between age or length of infection with any of the three parasite parameters.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The positive reactions (Cq values <40) plotted for each month are the total from two blood samples collected each month (see Figure 2A). The total number of PCR reactions, the average Cq values and the % positive PCR reactions are provided in Supplementary file 1.
+
+### Serial deep-sampling PCR can reveal changes in parasite burden over time
 
 In general, the frequency of positive PCRs and the Cq values of those positive reactions were relatively stable in macaques across the 1-year study period. The major exceptions to this rule are shown in Figure 3C, D. The three macaques in Figure 3C had among the highest fraction of positive PCR reactions (70, 81, and 68 %) in the study, but also displayed an increase in mean Cq values over the 1-year study period. Because of the consistent detection of positive PCR reactions (minimum 1 positive reaction in a maximum of 20 replicates every month) in 9 of the 18 initially sampled seropositive macaques (Figure 1), these macaques were only sampled for the first 6 months of the study period. However, for these macaques in Figure 3C with a pattern of increasing Cq values over 6 months, an additional set of samples was collected at month 12. In all three cases, a highly significant (p < 0.001) trend of increasing Cq values over time was evident, indicating a decreasing parasite load over the 1-year period. Not surprisingly, these three macaques were also among the most recently infected macaques studied (minimum 2–4 years post-infection) and likewise, the macaques in Figure 3A with a low frequency of PCR positive reactions were among the longest infected of the macaques under study (6–8 years). However, several macaques did not match this trend of lower parasite load with increasing length of infection (e.g. P11, infected for 2 years, had a low parasite load and P5 and P1, infected, respectively, for 8 and 10 years, had among the highest frequency of PCR positive reactions). There was no statistically significant correlation between the length of infection and the frequency of PCR positive reactions (p = 0.081) or the mean Cq value of positive PCR reactions (p = 0.11) among all macaques in the study (Figure 3E). This monthly monitoring of blood parasite DNA thus reveals a relatively stable parasite load over 12 months but huge differences when compared to the spiked samples (Figure 1) in the load between individual naturally infected macaques, irrespective of the length of infection.
 
@@ -68,13 +76,25 @@ The other exception to a relatively stable level of T. cruzi DNA in blood of inf
 
 Lastly, with the exception of a set of samples that were cross-contaminated during DNA isolation in the February batch (see Materials and methods), and a single replicate PCR for N1, the two seronegative macaques as well as five macaques previously infected but cured by treatment with benzoxaborole AN15368 (Padilla et al., 2022) were PCR negative in a collective 15,084 PCR reactions on samples obtained at 6–11 sampling points (Figure 3—figure supplement 1) and were likewise hemoculture negative in all samples.
 
-## DNA fragmentation further increases the sensitivity of detection of T. cruzi DNA in blood
+### DNA fragmentation further increases the sensitivity of detection of T. cruzi DNA in blood
 
 We noted that with the input of 10–3 PE per replicate PCR reaction, which consistently gives 100% positive reactions (Figure 1), that these positive reactions were mostly clustered at a relatively low Cq value. However, decreasing the amount of spiked-in parasite DNA to 10–4 PE or lower resulted in a wide spread in the Cq values, in addition to increasing frequency of negative reactions with decreasing PE/reaction. The parasite DNA sequence targeted for amplification in these assays is a ‘satellite DNA’ sequence that is represented in 100,000 or more copies spread throughout the parasite genome (Ramírez et al., 2015). We reasoned that the spread of Cq values at low DNA input might reflect an unequal distribution of linked PCR target sequences in the aliquots and that fragmentation of the DNA could more evenly distribute the target sequences throughout the blood DNA sample, and thus increase the frequency of positive PCR reactions. Comparison of fragmented and non-fragmented parasite-spiked blood DNA samples confirmed this hypothesis, shifting the 100% positive PCR reaction one order of magnitude more sensitive (from 10–3 to 10–4 PE per reaction; Figure 4A). Fragmentation by either Covaris ultrasonication or a cuphorn attachment to a standard sonicator proved equally effective in increasing assay sensitivity (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig4-v1.jpg)
+
+**Figure 4.:** (A) The quantity of parasite DNA required to yield 50% positive PCR reactions in replicate assays is reduced by >10-fold by cuphorn fragmentation of DNA from blood. A total of 72–96 replicate PCR reactions were conducted for each sample. (B) The increased sensitivity of consistent detection of T. cruzi DNA achieved by prior fragmentation is evident in samples from infected macaques. Blood samples were collected as described in Figure 2A for samples A and B but in this case, sample C was also used for DNA isolation and that DNA fragmented by cuphorn sonication. N = the number of replicate PCR.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Agarose gel profile of DNA isolated from macaque blood spiked with a known number of T. cruzi epimastigotes, either without fragmentation (Unfrag) or using Covaris settings to achieve an average fragment size of 300, 500, or 1000 bases. (B) Four DNA samples from seropositive dogs pre- and post-fragmentation using a sonicator and cuphorn attachment as described in the Materials and methods. Arrows indicate 500 bp band in DNA standards. (C) Fragmentation at all three Covaris settings increased the frequency of PCR positive replicate aliquots with an average of 10–5 parasite equivalents per aliquot. A total of 78–81 replicates were amplified for each condition. (D) The Covaris- and the cuphorn-fragmented DNA provided comparable increases in the frequency of product amplification at different parasite equivalents per aliquot as compared to unfragmented (Unfrag) DNA. A total of 72–90 aliquots were amplified for each condition.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Replicate aliquots (10 each) of non-fragmented and sonication-fragmented blood DNA from three macaques at three sampling times were amplified for detection of T. cruzi DNA.
+
 To determine if DNA fragmentation also increased the sensitivity of detection of T. cruzi DNA in blood samples from infected hosts, we resampled 6 macaques, focusing on those that had been the most difficult to detect in the initial 1-year sampling study (Figure 3, Figure 3—figure supplement 1). Samples were collected and processed similarly as shown in Figure 2A except that ‘C’ samples were processed for DNA extraction and then fragmented and compared to the unfragmented samples A and B. As with the DNA-spiked samples, prior DNA fragmentation increased the sensitivity of PCR detection; fragmented samples from four of the six macaques had 80–100% positive reactions using only five replicates, indicating that a single PCR reaction could have detected most of these as T. cruzi positive while the unfragmented samples had frequencies of positive amplification from 0 to 40% (Figure 4B). Fragmentation was also beneficial in animals with higher parasite loads, providing 100% positive PCRs when fragmented compared to as low as 20% in the same non-fragmented samples (Figure 4—figure supplement 2).
 
-## Replicate sampling, but not time between samples, facilitates detection of T. cruzi infection in hosts with the lowest parasite burden
+### Replicate sampling, but not time between samples, facilitates detection of T. cruzi infection in hosts with the lowest parasite burden
 
 Altogether, these results demonstrate that deep-sampling PCR can consistently detect T. cruzi DNA in the blood of T. cruzi-infected macaques well below the 10–3 level (equivalent to ~0.5 parasites/ml of blood) typically considered the limit of quantification in T. cruzi PCRs (Schijman et al., 2011) and that prior fragmentation can reduce by 10× the number of replicate reactions needed to detect a positive. However, animals with low and/or infrequent circulating parasite DNA still resist detection at a single bleed point (e.g. Figure 4; macaques P2 and P11); indeed, a number of macaques were negative by deep sampling PCR on duplicate blood samples at greater than half of the monthly sampling points. To determine if this variation in detection at different sampling times was random (due primarily to sampling error) or reflected true fluctuations in parasite load over time, the six macaques shown in Figure 4 were sampled an additional seven times over 4 weeks, and replicate fragmented blood DNA samples submitted to deep-sampling PCR.
 
@@ -82,27 +102,35 @@ As shown in Figure 5A, blood sampling over this short time frame gave a similar 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig5-v1.jpg)
 
-**Figure 5.:** (A) Frequent blood sampling demonstrates the sampling error involved in the detection of T. cruzi DNA in infected macaques with low parasite burden. Duplicate blood samples were collected twice weekly for 4 weeks from six macaques with the lowest overall PCR positive rate in the monthly sampling study (Figure 3, Figure 3—figure supplement 1, and Supplementary file 1). Bleed 1 was used in the experiments in Figure 4; the results of bleeds 2–8 are shown here. DNA was extracted from the duplicate samples at each bleed point and subjected to fragmentation before aliquots were used in 184 replicate PCR reactions/sample. The bottom of each subfigure shows the Cq value of each replicate reaction and the top plots the % positive reactions. (B) Replicate PCR analysis of fragmented macaque blood DNA spiked with known parasite equivalents (PE) of T. cruzi DNA. Insets show the linear relationship between Cq values and PE/reaction over the high range of PE and percent positive reactions and PE/reaction on the lower range of inputs. 10–388 replicate reactions were conducted for each dilution. NTC = no T. cruzi DNA.Figure 5—source data 1.Figure 5A.Figure 5—source data 2.Figure 5B.
+**Figure 5.:** (A) Frequent blood sampling demonstrates the sampling error involved in the detection of T. cruzi DNA in infected macaques with low parasite burden. Duplicate blood samples were collected twice weekly for 4 weeks from six macaques with the lowest overall PCR positive rate in the monthly sampling study (Figure 3, Figure 3—figure supplement 1, and Supplementary file 1). Bleed 1 was used in the experiments in Figure 4; the results of bleeds 2–8 are shown here. DNA was extracted from the duplicate samples at each bleed point and subjected to fragmentation before aliquots were used in 184 replicate PCR reactions/sample. The bottom of each subfigure shows the Cq value of each replicate reaction and the top plots the % positive reactions. (B) Replicate PCR analysis of fragmented macaque blood DNA spiked with known parasite equivalents (PE) of T. cruzi DNA. Insets show the linear relationship between Cq values and PE/reaction over the high range of PE and percent positive reactions and PE/reaction on the lower range of inputs. 10–388 replicate reactions were conducted for each dilution. NTC = no T. cruzi DNA.
 
 To determine the full range of quantification of T. cruzi DNA in blood that is possible using both DNA fragmentation and deep sampling, we analyzed blood spiked with T. cruzi DNA over 12 orders of magnitude (Figure 5B). As noted above, DNA fragmentation alone extends the range over which a single PCR reaction is dependably positive to 10–4 PE/reaction (Figure 4). Below 10–4 PE/aliquot, both the average Cq value and the percent positive reactions allow quantification to 10–5 PE and the percent positive reactions remains linear to 10–7 PE/assay. Thus, the combination of fragmentation and deep-sampling extends the quantifiable range of detection of T. cruzi by four orders of magnitude below previous estimates, to ~2.4 × 10–5 parasites/ml of blood, or fractions of a parasite in blood DNA. This detection level is also consistent with the known frequency of the target satellite DNA repeat (approximately 105/parasite) and suggests that the assay is approaching single copy DNA detection/reaction. Detection of T. cruzi is possible well below this limit of quantification but is essentially random and is dependent on the number of blood samples and their volume collected, as well as the number of replicate PCR reactions conducted on each.
 
-## The blood cell pellet routinely contains the highest amount of detectable parasite DNA relative to other blood fractions
+### The blood cell pellet routinely contains the highest amount of detectable parasite DNA relative to other blood fractions
 
 Several recent studies have successfully used patient serum or plasma as a source for detection of T. cruzi DNA (Kann et al., 2020; Kann et al., 2023). To directly determine the optimal source of DNA for parasite detection, we compared DNA extracted from whole blood, the cell pellet from blood, or plasma. In all cases, 125 ng of the source DNA was used for each replicate PCR. Although all DNA sources provided positive replicates for one or more animals, both plasma DNA and whole blood DNA had all negative replicates in several cases when the replicates of DNA from the cell pellet were majority positive (Figure 6). Thus, plasma is a useful, but probably less dependable source for detection of T. cruzi DNA in the blood of chronically infected macaques.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig6-v1.jpg)
 
-**Figure 6.:** T. cruzi DNA can be detected in whole blood, the cell pellet of heparinzed blood, or plasma, but is at the highest and most consistently detected in the blood cell pellet.Replicate blood samples taken at the same time were either processed as whole blood (sample 1) or separated into the cell pellet and plasma (sample 2) by centrifugation, for DNA purification and fragmentation. Twelve replicate aliquots of 125 ng of DNA each were amplified by PCR for each fraction. Mean and standard deviation are shown.Figure 6—source data 1.Figure 6.
+**Figure 6.:** Replicate blood samples taken at the same time were either processed as whole blood (sample 1) or separated into the cell pellet and plasma (sample 2) by centrifugation, for DNA purification and fragmentation. Twelve replicate aliquots of 125 ng of DNA each were amplified by PCR for each fraction. Mean and standard deviation are shown.
 
-## Deep-sampling PCR demonstrates that humans and dogs exhibit a similar range of T. cruzi burdens as macaques and detection of DNA in blood predicts DNA detection in tissues
+### Deep-sampling PCR demonstrates that humans and dogs exhibit a similar range of T. cruzi burdens as macaques and detection of DNA in blood predicts DNA detection in tissues
 
 The deep sampling approach optimized using samples from naturally infected macaques performs similarly with blood samples from humans and dogs (Figure 7) and both humans and dogs exhibited the same broad range of detectable parasite DNA in circulation across individuals as observed in the macaques. Although it is rare to be able to compare parasite detection in blood or plasma with that in tissues of the same animal, we had that opportunity in three T. cruzi-infected animals, a dog which succumbed to heartworm infection, and two macaques who were euthanized for health reasons unrelated to T. cruzi infection. As expected, animals with detectable blood parasite DNA also had PCR-amplifiable DNA in samples from multiple tissues (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig7-v1.jpg)
+
+**Figure 7.:** An additional 10 seropositive dogs from this study group were negative for up to 384 replicate PCR reactions (not shown).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The indicated percentages reflect the fraction of PCR positive aliquots of a single DNA sample prepared from blood or plasma, or DNA purified from multiple individual sites in the case of muscle and tissues.
 
 Lastly, we used the deep sampling PCR approach to monitor outcomes in dogs under treatment using benznidazole in a high-dose/less frequent dosing protocol which has shown variable efficacy in multiple species (Bustamante et al., 2023; Bustamante et al., 2020). Treatment monitoring by deep-sampling PCR in three dogs with different treatment outcomes is shown in Figure 8. TFu1 was infected as a puppy and one of his littermates succumbed to T. cruzi infection before treatment could be initiated (Lim et al., 2024). Twice weekly dosing for nearly 12 months reduced, but did not totally clear parasites from blood. Increasing the dosing frequency to 3 times per week resulted in undetectable parasites. Twice weekly dosing in TDa2 also initially appeared to be successful but detection of T. cruzi DNA in samples collected at 10 and 28 weeks prompted a decision to change the dosing frequency to 3 times per week. TPe3 still had robust levels of T. cruzi DNA at 1 week post-treatment but was negative by deep-sampling PCR while on a twice weekly dosing regimen. Proof of cure in these dogs will require evidence of continued negative deep-sampling PCR after the end of treatment, but these results demonstrate that, as expected based upon many studies in humans, the response to BNZ treatment can be variable between individuals but that rigorous assessment of treatment effectiveness during the treatment course allows adjustments to dosing that may provide higher overall treatment success.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/104547/elife-104547-fig8-v1.jpg)
 
-**Figure 8.:** T. cruzi DNA from whole blood in dogs during treatment with benznidazole.Dogs were treated with 18–20 mg/kg benznidazole twice (initially) or thrice (if remaining PCR positive) per week.Figure 8—source data 1.Figure 8.
+**Figure 8.:** Dogs were treated with 18–20 mg/kg benznidazole twice (initially) or thrice (if remaining PCR positive) per week.
 
 ## Discussion
 
@@ -128,23 +156,23 @@ There may also be opportunities for additional improvements in PCR-based detecti
 
 ## Materials and methods
 
-## Macaques
+### Macaques
 
 All NHP utilized for these studies were part of the approximately 1000-animal, Rhesus Macaque (Macaca mulatta) Breeding and Research Resource housed at the AAALAC accredited, Michale E. Keeling Center for Comparative Medicine and Research (KCCMR) of The University of Texas MD Anderson Cancer Center in Bastrop. TX. This is a closed colony, which is specific pathogen free for Macacine herpesvirus-1 (Herpes B), Simian retroviruses (SRV-1, SRV-2, SIV, and STLV-1), and Mycobacterium tuberculosis complex. Study animals that were seropositive for T. cruzi had acquired the infection naturally through exposure to the insect vector of the parasite while in their indoor–outdoor housing facilities. The NHP experiments were performed at the KCCMR and all protocols were approved by the MD Anderson Cancer Center’s IACUC (ACUF# 00002241-RN00 and 00000451-RN03), and followed the NIH standards established by the Guide for the Care and Use of Laboratory Animals (National Research Council, 2011).
 
 A total of 26 rhesus macaques that had been confirmed to be serologically positive for T. cruzi infection (a subset of which had been PCR positive in previous screenings; Hodo et al., 2018; Supplementary file 1) were utilized in these studies. Five of these macaques were previously treated and cured of T. cruzi infection in 2018 and consistently PCR negative since (Padilla et al., 2022). These cured macaques and two seronegative macaques served as control, uninfected animals. Under light injectable anesthesia, three ~5-ml peripheral blood samples (total ~15 ml) were collected from each animal and shipped overnight on ice packs for each sampling point. Except as indicated, whole blood was used for DNA extraction.
 
-## Canines
+### Canines
 
 Dogs used in these studies came from a network of kennels in central and south Texas with a history of triatomine vector occurrence and canine Chagas disease as previously described (Bustamante et al., 2022). At these large kennels, dogs are primarily bred and trained to aid hunting parties and the predominant breeds include Belgian Malinois, Brittany spaniels, cocker spaniels, English pointers, German shorthaired pointers, Kelpies, Labrador retrievers, and hound dogs. Dogs >2 months of age, including males and females were sampled. Approximately 3 ml of blood was collected via jugular venipuncture into heparinized tubes which were centrifuged at 2000 × g for 15 min and the cell pellet and plasma separated before overnight shipment on ice. T. cruzi seropositive dogs were identified by T. cruzi multiplex serology (Bustamante et al., 2022) before blood cell pellet DNA testing by PCR. Some dogs previously confirmed as infected were treated using a twice-weekly high-dosing protocol as previously described (Bustamante et al., 2023).
 
 Informed consent was obtained from dog owners prior to their participation, and this study was approved by the Texas A&M University Institutional Committee on Animal Use and Care and the Clinical Research Review Committee (IACUC 2018-0460 CA and IACUC 2022-0001 CA).
 
-## Human
+### Human
 
 Nine subjects with positive serological findings for T. cruzi infection (i.e., positive in ≥2 of the 3 tests performed, indirect immunofluorescence assay, hemagglutination, and enzyme-linked immunosorbent assay; as previously described; Castro Eiro et al., 2021) were enrolled at the Hospital Interzonal General de Agudos Eva Perón, in Buenos Aires, Argentina. All participants had no signs of cardiac disease as revealed by electrocardiography and echocardiography testing. The protocol was approved by the Institutional Review Board (IRB) of Hospital Interzonal General de Agudos Eva Perón (Memorandum 19/19) of the Province of Buenos Aires, Argentina. Signed informed consent for sample use and publication of results was obtained from all individuals included in the study. Ten milliliters of blood were drawn from seropositive subjects by venipuncture into heparinized tubes (Vacutainer; BD Biosciences) and centrifuged at 1000 × g for 15 min. The plasma was collected in a separate tube and the blood cell pellet and plasma were frozen at −20°C and the de-identified samples shipped to the University of Georgia on dry ice.
 
-## Blood DNA extraction and qPCR
+### Blood DNA extraction and qPCR
 
 DNA was extracted from all blood samples or fractions thereof (whole blood, pellet, plasma layer) using the Omega E.Z.N.A Blood DNA MAXI kit. Following the manufacturers protocol for ‘up to 10 ml whole blood’, approximately 2–5 ml of blood or blood fraction was lysed and processed bringing the initial volume of each sample up to 10 ml with the addition of PBS (Gibco 10010023) and eluting with 500 µl elution buffer. Samples that were frozen upon receipt (human samples) were thawed on ice before starting protocol. DNA samples were quantified with the nanodrop 2000 system (Themo Scientific) before diluting to 25 ng/µl in water (Invitrogen AM9937).
 
@@ -152,22 +180,22 @@ The qPCR assay used to detect T. cruzi DNA in blood in this study is essentially
 
 A step-by-step protocol is available at https://www.protocols.io/, DOI: https://dx.doi.org/10.17504/protocols.io.ewov1dm87vr2/v1.
 
-## Preventing contamination
+### Preventing contamination
 
 To prevent contamination when preparing high numbers of qPCR reactions, a number of safeguards were employed. The setup for all reactions was performed in a space separate from our main research laboratory and in a class II A2 laminar flow hood otherwise not used for work with T. cruzi and using supplies and instruments that were specific for this lab space. All components are sprayed with 70% ethanol and DNA decontamination spray (LookOUT, Sigma) before being brought into the hood and all hood surfaces are sprayed with ethanol and decontaminant at the end of each work session, followed by UV exposure. PCR assay components were aliquoted from large batches into individual tubes sufficient for each 384-well plate. The centrifuge used for DNA extractions was bleached and decontaminated before processing the final elution for each DNA batch. DNA samples are diluted into 96-well plates and then loaded 96 wells at a time into the 384-well plate using the mini 96 pipette (Integra Mini 96). Despite these procedures, one set of DNA isolations from T. cruzi-negative controls showed evidence of cross-contamination when they were all processed at the same time as a set of DNA standards containing high quantities of T. cruzi DNA. These ‘February’ samples for seven animals were excluded from further analysis. Otherwise, samples from animals previously cured of T. cruzi infection by treatment with AN15368 (Padilla et al., 2022) processed at the same time as other ‘infected’ samples showed no evidence of cross-contamination.
 
-## DNA fragmentation
+### DNA fragmentation
 
 Purified DNA from blood was fragmented by either in a Covaris E220 Focused-ultrasonicator (which allowed precise selection of target DNA fragment sizes of 1000, 500, or 300 bases), or using the 3 inch cuphorn attachment to a Branson SFX250 Sonifier cooled by a Bio-Rad 1000 mini chiller circulator. For cuphorn sonication, DNA samples (typically 500 µl in volume and 15–150 µg total DNA) in 1.5 ml Eppendorf snap cap tubes were wrapped securely in parafilm and kept on ice before fragmentation. Sonifier settings were set to continuous mode with a time interval of 50 s and 60% amplitude for five cycles.
 
-## PCR standards
+### PCR standards
 
 Samples containing known amounts of parasite DNA were generated using 5 ml whole blood with 107 T. cruzi epimastigotes of the Brazil strain added. The blood was then treated the same as experimental blood with DNA extracted as described with the Omega MAXI kit. The DNA was diluted to 25 ng/µl and serially diluted 10-fold with 25 ng/µl naive blood DNA.
 
-## Hemoculture
+### Hemoculture
 
 Peripheral blood (~5 ml) was aliquoted into five replicate T25 flasks for incubation at 26°C in supplemented liver digest neutralized tryptose medium as described previously (Padilla et al., 2021). The presence of T. cruzi parasites was assessed every week for up to 3 months under an inverted microscope.
 
-## Tissue PCR
+### Tissue PCR
 
 Single tissue samples (8 mm biopsies) or pooled samples from five sites totaling ~500 µl per pool were obtained from frozen necropsied tissues, processed and subjected to PCR amplification of T. cruzi DNA as previously described (Padilla et al., 2022).

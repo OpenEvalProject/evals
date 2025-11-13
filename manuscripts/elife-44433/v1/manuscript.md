@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.44433.001 The ancestral condition from which humans evolved is critical for understanding the adaptive origin of bipedal locomotion. The 4.4 million-year-old hominin partial skeleton attributed to Ardipithecus ramidus preserves a foot that purportedly shares morphometric affinities with monkeys, but this interpretation remains controversial. Here I show that the foot of Ar. ramidus is most similar to living chimpanzee and gorilla species among a large sample of anthropoid primates. The foot morphology of Ar. ramidus suggests that the evolutionary precursor of hominin bipedalism was African ape-like terrestrial quadrupedalism and climbing. The elongation of the midfoot and phalangeal reduction in Ar. ramidus relative to the African apes is consistent with hypotheses of increased propulsive capabilities associated with an early form of bipedalism. This study provides evidence that the modern human foot was derived from an ancestral form adapted to terrestrial plantigrade quadrupedalism.
+The ancestral condition from which humans evolved is critical for understanding the adaptive origin of bipedal locomotion. The 4.4 million-year-old hominin partial skeleton attributed to Ardipithecus ramidus preserves a foot that purportedly shares morphometric affinities with monkeys, but this interpretation remains controversial. Here I show that the foot of Ar. ramidus is most similar to living chimpanzee and gorilla species among a large sample of anthropoid primates. The foot morphology of Ar. ramidus suggests that the evolutionary precursor of hominin bipedalism was African ape-like terrestrial quadrupedalism and climbing. The elongation of the midfoot and phalangeal reduction in Ar. ramidus relative to the African apes is consistent with hypotheses of increased propulsive capabilities associated with an early form of bipedalism. This study provides evidence that the modern human foot was derived from an ancestral form adapted to terrestrial plantigrade quadrupedalism.
 
 ## Introduction
 
@@ -29,19 +29,108 @@ Foot proportions (e.g., tarsal, metatarsal, and phalangeal lengths) are hypothes
 
 ## Results
 
-## Morphometric affinities
+### Morphometric affinities
 
 The morphometric affinities of the Ar. ramidus foot were evaluated by constructing a morphospace based on six geometric mean-standardized variables that are preserved in the ARA-VP-6/500 foot skeleton using Principal Components Analysis (PCA, Figure 2). The first three principal components account for 96% of the total variance in the sample and clearly separate taxonomic groups along previously hypothesized axes of morphological variation (Schultz, 1963a; Schultz, 1963b; Jolly, 1967; Strasser, 1992; Strasser, 1994). The first principal component accounts for 63% of the variance and is positively loaded by the lengths of the fifth metatarsal and fourth proximal phalanx. The second principal component accounts for 18% of the variance and is positively loaded by the lengths of the first metatarsal and fourth proximal phalanx, and negatively loaded by the length of the fifth metatarsal. The third principal component, which represents 15% of the variance, is positively loaded by the length of the first metatarsal (Table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44433/elife-44433-fig2-v1.jpg)
+
+**Figure 2.:** (A) The first two principal components representing 82% of the variance. (B) The first and third principal components representing 76% of the variance. Star = Ar. ramidus, Grey = Homo, green = Gorilla, purple = Pan, orange = Pongo, blue = Hylobates, red = Old World monkeys, light green = New World monkeys. Note the placement of Ar. ramidus with the African apes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44433/elife-44433-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The cluster analysis was conducted using the first three principal components. African apes and Ar. ramidus cluster together, followed by Homo sapiens. Note that hylobatids cluster with Alouatta and Lagothrix.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44433/elife-44433-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Humans have the longest cuboids among living anthropoids. Note that Ar. ramidus has a cuboid that is relatively longer than most taxa, but falls within the range of variation for G. gorilla, Papio, and Theropithecus. (B) Humans have the shortest phalanges among living anthropoids. Note the convergence between terrestrial apes and monkeys. Ar. ramidus falls within the range of variation for G. gorilla, Papio, and Erythrocebus. (C) Hominoids and select anthropoids have relatively long first metatarsals. Note the long MT1 of Alouatta, Lagothrix, Cebus, and the arboreally adapted papionins. Ar. ramidus falls within the ranges of variation for African apes and Alouatta.
+
+**Table 1.**
+ Principal Components Analysis (PCA).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PC1</th>
+      <th>PC2</th>
+      <th>PC3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eigenvalue</td>
+      <td>0.17</td>
+      <td>0.05</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Percent variance</td>
+      <td>64.6</td>
+      <td>17.8</td>
+      <td>14.1</td>
+    </tr>
+    <tr>
+      <td>MT1 length</td>
+      <td>−0.01</td>
+      <td>0.34</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>MT5 length</td>
+      <td>0.64</td>
+      <td>−0.67</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>PP4 length</td>
+      <td>0.68</td>
+      <td>0.63</td>
+      <td>−0.18</td>
+    </tr>
+    <tr>
+      <td>Talar trochlea length</td>
+      <td>−0.29</td>
+      <td>0.04</td>
+      <td>−0.06</td>
+    </tr>
+    <tr>
+      <td>Talar neck length</td>
+      <td>−0.08</td>
+      <td>−0.07</td>
+      <td>−0.21</td>
+    </tr>
+    <tr>
+      <td>Cuboid length</td>
+      <td>−0.19</td>
+      <td>−0.17</td>
+      <td>0.06</td>
+    </tr>
+  </tbody>
+</table>
 
 The distribution of anthropoid taxa in the PCA is consistent with predictions based on locomotor behavior. For example, the more terrestrial taxa fall at the negative end (Homo, Pan, Gorilla, Theropithecus, Papio, and Erythrocebus) with shorter metatarsals and phalanges, whereas the most arboreal, suspensory, taxa fall at the positive end of PC1 (e.g., Pongo and Ateles). The terrestrial taxa are sort into those that are heel-strike plantigrade (Homo, Pan, and Gorilla) and those that are digitigrade (Theropithecus, Papio, Erythrocebus). Hylobatids, atelids, and Pongo are distinguished from other arboreal taxa along the same axis that separates terrestrial heel-strike plantigrade taxa from terrestrial digitigrade taxa. A UPGMA cluster analysis (cophenetic correlation coefficient = 0.82) shows that of the 44 extant taxa presented here Ar. ramidus is most similar to Pan and Gorilla (Figure 2—figure supplement 1). Univariate comparisons show that Ar. ramidus possesses a cuboid that is only slightly elongated relative to African apes (Figure 2—figure supplement 2A), a relatively short fourth proximal phalanx (Figure 2—figure supplement 2B), and an intrinsically elongated first metatarsal like African apes and atelids (Figure 2—figure supplement 2C).
 
 The scaling of various tarsals, metatarsals, and phalanges with body mass was investigated using phylogenetic generalized least squares regression (pGLS) to account for the statistical non-independence of the data due to phylogenetic relationships. The parameters for each of the pGLS models include the intercepts and slopes of the variables regressed on log body mass, their standard error (s.e.), T, and the p-value (Supplementary file 1). All variables scale with slight negative allometry in that larger species tend to have relatively shorter metatarsals, phalanges, and tarsals. The only exception is the length of the talar trochlea, which scales isometrically with body mass. Pagel’s lambda (λ) is a parameter commonly estimated in pGLS regression analyses as a measure of phylogenetic signal that can be used to transform the branches of the phylogenetic tree to improve model fit (Pagel, 1999; Revell, 2010). A λ value of 1 would be consistent with expectations under a Brownian motion evolutionary model. The tarsal measurements show departure from Brownian motion (λ = 0.574 or less), whereas the higher λ values of the metatarsal and phalangeal variables are consistent with a Brownian motion model. Several of the λ values are not significantly different from either 0 or 1, which suggests the true λ for these models is uncertain. The PC scores used in the evolutionary analyses are not correlated with body mass (pGLS p = 0.08 or higher), which suggests that body mass is not responsible for driving the differences in intrinsic foot proportions among anthropoid groups.
 
-## Evolutionary modeling
+### Evolutionary modeling
 
 The adaptive implications of an African ape-like morphology in Ar. ramidus (Figure 2) were evaluated using evolutionary modeling. The input data include the first three principal components from the PCA described above. This approach was chosen to reduce the dimensionality of the dataset for evolutionary modeling and ancestral state estimation. Alternative a priori evolutionary hypotheses were constructed and include a Brownian motion, single-optimum Ornstein-Uhlenbeck (OU), and several multi-optima OU models (Butler and King, 2004) (Figure 3—figure supplement 1). Alternative multi-optima OU models were constructed using different selective regimes associated with locomotion in extant taxa. The evolutionary models differ in increasing complexity where each model includes additional phenotypic optima in a hierarchical manner. Model comparisons using multiple criteria (AIC, AICc, SIC) show that the multi-optima OU models are a better fit to the data than a Brownian or single-optimum OU model (Supplementary file 2), which suggests there are multiple adaptive peaks associated with foot proportions among anthropoid primates. An additional evolutionary model was constructed without identifying selective regimes a priori and resulted in a similar pattern of selective regimes compared to the best fitting a priori hypothesis (Figure 3). The evolutionary hypothesis with the most favorable AICc value is the most complex and includes selective regimes associated with bipedalism, terrestrial plantigrady, terrestrial semiplantigrady, arboreal quadrupedalism, arboreal quadrupedalism with increased frequency of hindlimb-assisted suspension, and arboreal quadrupedalism with increased frequency of climbing. Simulations show that there is adequate power to distinguish between alternative models and provides support for the a priori model selection results obtained using AICc (Figure 3—figure supplements 1–2).
 
-## LCA reconstructions
+![Figure 3.](https://cdn.elifesciences.org/articles/44433/elife-44433-fig3-v1.jpg)
+
+**Figure 3.:** Best fitting evolutionary models. (A) Best fitting a priori evolutionary hypothesis according to OUCH. (B) Arrangement of selective regimes fit by SURFACE. (C) The first two principal components with phenotypic optima estimated by SURFACE. (D) The first and third principal components with phenotypic optima estimated by SURFACE. Note the tight fit of species means (small dots) around their optima (large dots) as well as the placement of Ar. ramidus near the African ape phenotypic optimum. The colors in C and D correspond to the selective regimes painted onto the phylogeny in B.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44433/elife-44433-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Regimes correspond to bipedality in humans and terrestrial quadrupedalism in African apes and several cercopithecine taxa. (B) The terrestrial regime is split into terrestrial plantigrady in the African apes and terrestrial semiplantigrady in the cercopithecines. (C) An additional climbing regime is added for gibbons, orangutans, and atelids.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44433/elife-44433-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The light grey distributions represent the simpler of the two models whereas the dark grey distributions represent likelihood ratio statistics for more complex models. The vertical line represents the actual likelihood ratio statistic measured between the two models. There is statistical power to distinguish between all a priori models, with weakest power for Brownian motion versus OU1.
+
+### LCA reconstructions
 
 A molecular consensus phylogeny with branch lengths proportional to elapsed time was superimposed on the multivariate data and ancestral values were estimated using a Markov chain Monte Carlo (MCMC) method. This approach relaxes assumptions of neutrality and gradualism and therefore minimizes the effect of exceptional lineage divergences on the estimation of ancestral values. The estimated value for the Homo-Pan LCA is nearest to the African apes and highly distinct from all other taxa (Figure 4). The 95% credibility intervals for the PC scores of the node representing the Homo-Pan LCA are relatively narrow and include the mean values for Pan paniscus and Gorilla gorilla. The estimated ancestral values for both hominids and hominoids are nearest to Alouatta and Lagothrix, which is consistent with prior suggestions based on the comparative morphology of the foot in extant and fossil taxa (Gebo, 1996; Sarmiento, 1983; Langdon, 1985; Harrison, 1986).
 
@@ -63,17 +152,17 @@ This study provides evidence that modern humans evolved from an ancestor with an
 
 ## Materials and methods
 
-## Extant and fossil sample
+### Extant and fossil sample
 
 The extant sample is composed 385 individuals representing 45 taxa: Homo sapiens, Ardipithecus ramidus, Pan troglodytes, Pan paniscus, Gorilla beringei beringei, Gorilla beringei graueri, Gorilla gorilla, Pongo pygmaeus, Pongo abelii, Hylobates lar, Hylobates muelleri, Hylobates klossii, Hylobates agilis, Hoolock hoolock, Symphalangus syndactylus, Macaca fascicularis, Macaca nemestrina, Papio anubis, Papio hamadryas, Theropithecus gelada, Lophocebus albigena, Mandrillus sphinx, Mandrillus leucophaeus, Cercocebus spp., Erythrocebus patas, Chlorocebus aethiops, Cercopithecus mitis, Miopithecus talapoin, Nasalis larvatus, Colobus polykomos, Trachypithecus cristatus, Semnopithecus entellus, Ateles geoffroyi, Ateles fusciceps, Ateles paniscus, Ateles belzebuth, Alouatta palliata, Alouatta seniculus, Lagothrix lagotricha, Cebus spp., Saimiri spp., Aotus spp., Pithecia spp., Chiropotes spp., and Callicebus donicophilus. These specimens are housed at the following collections: American Museum of Natural History (AMNH), Cleveland Museum of Natural History (CMNH), Harvard Museum of Comparative Zoology (MCZ), United States National Museum of National History, Smithsonian Institution (USNM), Field Museum (FM), Berkeley Museum of Vertebrate Zoology (MVZ), Human Evolution Research Center (HERC) at the University of California, Berkeley, and the Royal Museum for Central Africa (RMCA). The modern human sample is composed of recent modern individuals of European and African ancestry housed at the Hamann-Todd Collection at the CMNH as well as a Native American population from California housed at the Phoebe A. Hearst Museum of Anthropology (PAHMA) at the University of California, Berkeley. Measurements of Ardipithecus ramidus (ARA-VP-6/500) were initially taken on casts at the University of California, Berkeley. Observations were then made on the original fossils at the National Museum of Ethiopia (NME) and measurements confirmed by T. White.
 
-## Data acquisition
+### Data acquisition
 
 Six measurements were taken on the foot of each individual using Mitutoyo digital calipers: maximum talar articular length, talar trochlea length, cuboid length, first metatarsal (MT1) length, fifth metatarsal length (MT5), and fourth proximal phalanx (PP4) length. Talar neck length was derived by subtracting the talar trochlea length from maximum talar articular length. Maximum talar articular length is defined as the maximum proximodistal distance between the most proximal margin of the talar trochlea and the most distal point on the talar head. Talar trochlea length is defined as the maximum proximodistal distance between the most proximal margin of the talar trochlea and the most distal point of the talar trochlea. Cuboid length is defined as the proximodistal distance between the dorsal margin of the calcaneal facet and the most distal point of the tarsometatarsal joint, taken in dorsal view in approximate anatomical orientation. The purpose of measuring cuboid length in this manner is to explicitly avoid the cuboid beak or calcaneal process since it varies extensively among great apes (Lewis, 1983) and because it confounds the cuboid length measurement as a representation of midfoot length since it is articular and housed within a corresponding concavity on the cuboid facet of the calcaneus. MT1 length is defined as the maximum proximodistal distance between the most proximal points on the metatarsal base (with calipers held flush) and the most distal point of the metatarsal head. MT5 length is defined as the proximodistal distance between the most proximal point of the cuboid-MT4 articular margin and the most distal point on the metatarsal head. PP4 length is defined as maximum proximodistal distance between the most proximal point of the phalangeal base and the most distal point of the trochlea. The MT5 was chosen to represent non-hallucal metatarsal length because it is preserved in the ARA-VP-6/500 foot. The fossil is missing most of its metatarsal head and its length was estimated by Lovejoy et al. (2009a) using a combination of anatomical and statistical estimation. There is a nearly complete third metatarsal of Ar. ramidus, but it derives from a different locality and is therefore associated with a different individual. There is a partially preserved second metatarsal of Ar. ramidus also from a different individual (Lovejoy et al., 2009a). Therefore, for this study, the metrics are based on the preserved elements of the ARA-VP-6/500 foot of Ar. ramidus.
 
 The individual elements of the bony foot skeleton contribute to the production of three movements used in various forms of primate locomotor behavior that are hypothesized to be reflected in intrinsic foot proportions: hallucal adduction and flexion, non-hallucal digital flexion, and plantarflexion at the talocrural joint. Increasing the length of the first metatarsal should increase the moment arm of the intrinsic adductor musculature such as the m. adductor hallucis across a range of hallucal abduction angles, and therefore should increase the hallucal adduction force during grasping in non-human primates (Cartmill, 1979). Increasing hallucal metatarsal and non-hallucal phalangeal lengths also contributes to increasing the span of the pedal grasp in taxa with a mobile hallux, which also helps to maintain a friction grip in pedal grasping (Cartmill, 1979). Previous studies have modeled the foot skeleton as a second-class lever, where the fulcrum is at the metatarsophalangeal joints, the load passes through the talocrural joint at the rearfoot, and the force is produced by the plantarflexor muscles. The load arm is the distance between the fulcrum and the load, whereas the effort arm (or ‘power arm’) is the distance between the insertion of the ankle plantarflexors on the calcaneal tuberosity and the talocrural joint (Schultz, 1963a; Schultz, 1963b; Strasser, 1992). Increasing the effort arm of the foot relative to the load arm increases the mechanical advantage of the foot skeleton as a lever (Schultz, 1963a; Schultz, 1963b; Strasser, 1992). However, increasing the load arm increases the range of motion for a given amount of plantarflexor contraction (Schultz, 1963a; Schultz, 1963b). The length of the effort arm of the Ar. ramidus foot is unknown because its calcaneus is not well preserved (Lovejoy et al., 2009a). There are multiple anatomical strategies for increasing the length of the foot skeleton’s load arm. The length of the load arm can be increased by lengthening the metatarsals, tarsals (e.g., the talus and/or cuboid), or any combination of these elements. Increasing the length of the metatarsals subjects them to greater bending moments during stance phase, and therefore increases the possibility of injury, so humans achieve a longer load arm by instead increasing the length of the tarsals. As such, in a bipedal heel-strike plantigrade foot, the load arm is increased by lengthening the cuboid and other midtarsal elements. In contrast, in quadrupedal semiplantigrade or digitigrade primates, and indeed other terrestrial cursorial mammals (Taylor, 1976), the load arm is lengthened by increasing the length of the metatarsals. One implication of these differing anatomical arrangements (e.g., increasing metatarsal versus tarsal lengths), is that foot proportions may also be a correlate of foot postures (plantigrady and digitigrady or semiplantigrady), which is one of the hypotheses tested by this study using evolutionary modeling.
 
-## Statistical analysis
+### Statistical analysis
 
 To correct for differences in scale among species, each measurement was divided by the geometric mean of all six measurements per individual (Jungers et al., 1995). Morphometric affinities were evaluated using an unweighted pair-group with arithmetic mean (UPGMA) cluster analysis on Euclidean distances. The cophenetic correlation coefficient was used to assess the degree to which the resulting dendrogram represented the true pairwise distances between taxa (Sokal and Rohlf, 1962). Principal Components Analysis (PCA) on all six geometric mean-standardized variables was used to reduce, ordinate, and visualize the multivariate data. All evolutionary modeling and ancestral state estimation analyses use the first three principal components (PCs) derived from the PCA. The PC scores were used instead of the original data to avoid analytical problems surrounding correlations among variables (Clavel et al., 2015) and to maximize statistical power (Boettiger et al., 2012). Ardipithecus ramidus was added to a molecular phylogenetic tree from 10 k trees (Arnold et al., 2010) as a stem hominin (Strait and Grine, 2004; White et al., 2009; Dembo et al., 2015) with a branch length of 1.4 million years in accordance with first and last appearance data for the genus (5.8–4.4 Ma (Haile-Selassie, 2001; WoldeGabriel et al., 2001)) using Mesquite software (Maddison and Maddison, 2017). The branch length for Homo sapiens was reduced in order to improve estimation of phenotypic optima in evolutionary analyses (Butler and King, 2004; Ingram and Mahler, 2013). The scaling of individual foot elements with body mass among extant taxa (Smith and Jungers, 1997) was conducted using phylogenetic generalized least squares regression (Grafen, 1989) with the ‘caper’ package (Orme, 2013) in R (R Core Team, 2017). To increase the fit of the evolutionary model to the data, branch lengths were transformed using Pagel’s lambda (Pagel, 1999), which was estimated with maximum likelihood as a measure of phylogenetic signal in the residual error of each pGLS model (Revell, 2010).
 
@@ -85,7 +174,7 @@ A model-based approach was used to evaluate alternative evolutionary hypotheses:
 
 Hansen (1997) views phenotypic optima (θ) as peaks in an adaptive landscape, which are a compromise among the many possibly conflicting selective demands acting on a trait at any given time. Multi-optima Hansen models reflect adaptive hypotheses based on observations of extant primate posture and locomotion culled from the literature and quantitatively formalized as alternative arrangements of hypothetical phenotypic optima (θ) following the methodology of Butler and King (2004). Species means represent local optima surrounding a global optimum (θ) which correspond to a selective regime (Hansen, 1997). As such, individual species may differ significantly from one another while simultaneously occupying the same global phenotypic optimum, possibly due to other factors such as drift or pleiotropy (Hansen, 1997). Therefore, in evolutionary model comparison, the focus is on the number and arrangement of global phenotypic optima (θ) and their surrounding local optima (i.e., species means) rather than on individuals within species. Several recent studies have used modeling methods to test evolutionary hypotheses in paleoanthropology (Almécija et al., 2015; Grabowski and Jungers, 2017; Fernández et al., 2018).
 
-## Evolutionary hypotheses
+### Evolutionary hypotheses
 
 The evolutionary hypotheses for the link between foot proportions and behavior are informed by observations of locomotor behavior in the wild reported in the literature. The first evolutionary hypothesis is a Brownian motion model (H1). The second evolutionary hypothesis is the first Hansen model and it reflects a single global phenotypic optimum (H2). Support for these hypotheses would suggest that there are no major adaptive differences in foot proportions between anthropoid primate groups. Subsequent hypotheses represent multi-optima OU models of increasing complexity (i.e., number of phenotypic optima). The second Hansen model has three selective regimes associated with advanced bipedalism (Homo), mostly terrestrial quadrupedal locomotion (Pan, Gorilla, Papio, Theropithecus, Erythrocebus, Chlorocebus aethiops) and mostly arboreal quadrupedal locomotion in all other taxa (H3). African apes are competent climbers and possess foot adaptations related to this form of locomotion (DeSilva, 2009). However, observations from the wild show them to be highly terrestrial. Papio, Theropithecus, Erythrocebus, and Chlorocebus aethiops are the most terrestrial among the cercopithecoids. Previous studies suggest there may be effects of arboreality and terrestriality on foot proportions (Schultz, 1963a; Jolly, 1967).
 

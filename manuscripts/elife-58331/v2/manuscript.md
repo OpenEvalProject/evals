@@ -42,9 +42,23 @@ In this study, we examined neurobiological changes in the mouse frontal cortex i
 
 ## Results
 
-## Wake-sleep mediated control of the transcriptome
+### Wake-sleep mediated control of the transcriptome
 
 To evaluate the effects of sleep loss, we compared three sleep-related conditions for differentially expressed genes (DEGs) from samples of the frontal cortex (FC, the cortical region showing the highest power of SWS-SWA) of male C57BL/6J (WT) mice (Figure 1A) including: (1) control sleep (CS; mice free to sleep, ad libitum; n = 6), (2) sleep deprived for 6 hr (SD; n = 7), and (3) sleep deprived for 4 hr followed by recovery sleep for 2 hr (RS; n = 7). All samples were collected 6 hr after lights on (ZT6) to control for circadian influence and were processed for RNA-seq analysis (see Materials and methods).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the experimental design illustrating the protocol for frontal cortex brain tissue collection from three sleep conditions at Zeitgeber Time (ZT) = 6 hours: control sleep (CS), sleep deprived (SD) and recovery sleep (RS). Volcano plots showing differentially expressed genes across (B) CS to SD and (C) CS to RS. Significantly differentially expressed genes (DEGs) (adj. p-value<=0.05, absolute log2 fold change >= 0.3), unique to the sleep condition, are indicated as black dots whereas genes shared by SD and RS are indicated as either red (increased expression) or green (decreased expression) dots. (D) Upset plot showing the shared and unique sets of significant DEGs for CS to SD and CS to RS. (E) Dot plot showing enrichment of significant DEGs for cell-types identified using single cell RNA sequencing data (Hrvatin et al., 2018) from mouse cortex, identified Mef2c target genes (Harrington et al., 2016) and rapid primary response genes (rPRGs) (Tyssowski et al., 2018). A Fisher’s exact test was used to calculate the significance of the overlap of the sleep DEGs and the Mef2c-cKOEmx1 DEGs. The size of the dot indicates the odds ratio for enrichment and the color indicates the p-value. Dot plot showing GO analysis for shared significant DEGs with (F) increased and (G) decreased expression across SD and RS compared to CS (for a complete list of significant GO, see Supplementary file 3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** 27 genes are expressed in the frontal cortex and involved in glucocorticoid intracellular responses (MGI GO:0071385). Seven genes have both increased expression in response to SD and are involved in glucocorticoid responses (p-value=0.513 using Fisher’s exact test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Genes with increased expression in SD are marked with red up arrows and genes with decreased expression in SD are marked with green down arrows.
 
 The CS samples expressed, on average, ~13,000 genes with counts per million reads (CPM) ≥1.0 in the FC. Comparing the SD samples to the CS samples, we observed 6,248 DEGs with roughly half the number of genes having decreased expression (FDR <= 0.05; |log2 (fold change)|>=0.3; Figure 1B; Supplementary file 1), confirming an earlier report of massive transcriptome changes associated with SD (Diessler et al., 2018). Similarly, the RS cohort showed 3827 DEGs compared to CS, again with approximately half the number of genes showing decreased expression (Figure 1C; Supplementary file 1).
 
@@ -66,13 +80,21 @@ It was recently shown that the influence of circadian rhythms on gene transcript
 
 To further uncover the organizational architecture and prioritize the extensive SD-mediated transcriptome, we used weighted gene co-expression network analysis (WGCNA), with expressed genes from all three conditions (CS, SD, and RS) to generate a network of 59 modules. Many of the modules (53%) were enriched for either up or downregulated DEGs from CS to SD conditions (Figure 2A). Most of those enriched for upregulation from CS to SD (n = 11), were also enriched for upregulation from CS to RS (n = 10), and similarly, most modules enriched for downregulation from CS to SD (n = 18) were also enriched for downregulation from CS to RS (n = 13), showing an organization primarily driven by DEGs, that is consistent between SD and RS conditions. The GO of these shared modules (Supplementary file 4) is also consistent with those seen using only the lists of DEGs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig2-v2.jpg)
+
+**Figure 2.:** (A) Heatmap showing enrichment of sleep-state DEGs across modules of genes identified by weighted gene co-expression network analysis (WGCNA). First three rows show module eigengene correlation to sleep states (CS, SD and RS respectively) ordered by most positive to most negative correlation to CS sleep state. The following four rows highlight the significance of module enrichment for a specific set of DEGs colored by green for genes with decreased expression for CSxSD, CSxRS, SDxRS and MEF2C targets (Harrington et al., 2016) and the next four rows colored by red to highlight the significance of module enrichment for genes with increased expression for CSxSD, CSxRS, SDxRS and MEF2C targets (Harrington et al., 2016). The bottom four rows colored by shades of orangeyellow show enrichment of modules for cell types identified using single-cell RNA sequencing (Hrvatin et al., 2018) from mouse cortex. Each column is a module of genes as indicated by the module ID in last row. (B) Barplot for a selected module (Module ID 04) with eigengene correlation across sleep states showing a strong positive correlation to CS and negative correlation to SD and weak negative correlation to RS. (C) Network plot for selected module (Module ID 04) showing the top 250 connections between genes. Genes that are MEF2C targets (Harrington et al., 2016) are highlighted by red circles. (D) GO plot for genes within the selected module (Module ID 04).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Barplot for Module ID 10 with eigengene correlation across sleep states showing a strong positive correlation to CS and negative correlation to SD and RS. (B) GO plot for genes within the Module ID 10. (C) Network plot for Module ID 10 showing the top 250 connections between genes. Genes that are MEF2C targets (14) are highlighted by red circles.
+
 The advantage of WGCNA is that it allows for the prioritization of gene modules that may be central drivers of biological networks independent of arbitrary cutoffs of p-values and fold changes for individual genes. WGCNA identifies these modules containing genes with highly correlated expression that can be further assessed for significant expression patterns related to features such as the sleep conditions of CS, SD and RS via determination of module eigengenes.
 
 Notably, putative target genes of MEF2C, were enriched in a surprising, 15 of 59 modules generated from the three sleep conditions employed in this study. Using a Monte Carlo model to assess the likelihood of such a result gave a probability of p<0.001 from a sample of 1000 permutations of genes randomly assigned to the experimentally defined number of modules and module size. It is consistent with a widespread influence of MEF2C on the transcriptome as it varies from CS to SD to RS. Furthermore, most of the enriched modules had sleep-condition-related eigengenes indicating that sleep condition was the principal component factor driving their coordinated expression.
 
 We identified two modules (M04 and M10) whose module eigengenes were more positively correlated with CS or ad lib sleep or, conversely, more negatively correlated with SD and RS samples (Figure 2B and Figure 2—figure supplement 1), indicating that the primary component driving their pattern of coexpression is CS versus SD and RS conditions. These two modules were of interest due to significant enrichment of several major categories of genes (Figure 2A): (1) DEGs in neuronal Mef2c conditional KO cortex (Mef2c-cKOEmx1; Harrington et al., 2016), (2) excitatory and inhibitory neuronal genes, (3) genes downregulated in SD and RS, and (4) genes involved in synaptic function, epilepsy and cognitive pathologies including autism (Figure 2D). Both of these modules have hub genes encoding receptors, ionic channels or cell adhesion, and identified as autism and epilepsy risk factors (for complete GO of M04 and M10 and other modules, see Supplementary file 4). These characteristics are generally consistent with modulation by the MEF2C transcription factor and suggest the modulation by MEF2 is closely associated with sleep conditions. Also, we observe significant enrichment for Mef2c downstream genes (Harrington et al., 2016) in 15 out of 59 modules, which is significantly greater than randomly assigning the genes to simulated 59 modules of the same size (Monte Carlo p-value: 0.001, N: 1000 iterations).
 
-## The role of MEF2C in the transcriptomic response to sleep loss
+### The role of MEF2C in the transcriptomic response to sleep loss
 
 An association of MEF2C target genes was observed by comparing the CS to SD DEGs; we found enrichment for DEGs in Mef2c-cKOEmx1 compared to WT cortex involved in regulating synaptic strength (Figure 1E,G, Supplementary file 3). Additionally, modules of correlated gene expression across sleep conditions showed a similar enrichment of putative MEF2C targets, pattern of expression and GO as the DEGs across sleep conditions (Figure 2A, Supplementary file 5).
 
@@ -80,7 +102,7 @@ To better understand the role of MEF2C across sleep conditions, we examined a co
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig3-v2.jpg)
 
-**Figure 3.:** (A) Volcano plot showing the DEGs identified for Mef2cf/f and another, (B) for Mef2c-cKO between CS to SD sleep condition. DEGs (adj. P-val <= 0.05; absolute logCamk2a-Cre2(change) => 0.3) are indicated by black dots. (C) A Venn diagram showing overlap between DEGs for Mef2cf/f and Mef2c-cKO between CS and SD sleep states. (Camk2a-CreD) Immunoprecipitation of MEF2C to detect MEF2C, Phospho-S396 MEF2C Phospho-S396 and total MEF2C for each sleep condition. Phospho-MEF2 (top blot) re-labeled from immunoprecipitation of total MEF2C (middle blot) was quantified and normalized to total MEF2C signal for each sample (n = 4 samples/condition). Total MEF2C from total cell lysate was quantified and normalized to B-actin (bottom blot). Data reported as mean +/- SEM. Statistical significance was determined by one-way ANOVA with Tukey’s multiple comparisons test (interaction = p < 0.05, post-hoc test comparing CS to SD *=p < 0.05). (E) Model showing role of de-phosphorylated, activated MEF2C, increased relative to total MEF2C by loss of sleep and leading to synapse remodeling. MRE = Mef2 response element, CN = calcineurin.
+**Figure 3.:** (A) Volcano plot showing the DEGs identified for Mef2cf/f and another, (B) for Mef2c-cKOCamk2a-Cre between CS to SD sleep condition. DEGs (adj. P-val <= 0.05; absolute log2(change) => 0.3) are indicated by black dots. (C) A Venn diagram showing overlap between DEGs for Mef2cf/f and Mef2c-cKOCamk2a-Cre between CS and SD sleep states. (D) Immunoprecipitation of MEF2C to detect MEF2C, Phospho-S396 MEF2C Phospho-S396 and total MEF2C for each sleep condition. Phospho-MEF2 (top blot) re-labeled from immunoprecipitation of total MEF2C (middle blot) was quantified and normalized to total MEF2C signal for each sample (n = 4 samples/condition). Total MEF2C from total cell lysate was quantified and normalized to B-actin (bottom blot). Data reported as mean +/- SEM. Statistical significance was determined by one-way ANOVA with Tukey’s multiple comparisons test (interaction = p < 0.05, post-hoc test comparing CS to SD *=p < 0.05). (E) Model showing role of de-phosphorylated, activated MEF2C, increased relative to total MEF2C by loss of sleep and leading to synapse remodeling. MRE = Mef2 response element, CN = calcineurin.
 
 Although the observed attenuation of Mef2cf/f mouse DEGs from CS to SD induced by the conditional loss of Mef2c is striking, it is of note that the number of CS to SD DEGs comparing WT to Mef2cf/f also shows some attenuation. We further investigated the differences between WT and Mef2cf/f DEGs by down-sampling and permutation of the WT samples so that the numbers of observations between the two cohorts was comparable (CS (n = 4) and SD (n = 3)). We observed increased variability in gene expression and such increased variability can lead to decreased number of observed DEGs (Supplementary file 9). However, the decrease due solely to increased variability does not appear of sufficient magnitude to fully account for the difference between WT and Mef2cf/f mice.
 
@@ -88,15 +110,21 @@ A potential contributing factor could result from an effect of the LoxP insertio
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig4-v2.jpg)
 
-**Figure 4.:** Mef2cf/f and Mef2c-cKO samples, also indicating specific reduction of floxed exon in Mef2c-cKOCamk2a-Cre.Camk2a-Cre
-
 Another potential source of difference is from small differences in gene expression due to genetic background. The Mef2cf/f line employed in this study has been employed in several other studies of its role in synaptic function (Barbosa et al., 2008; Harrington et al., 2016; Rajkovich et al., 2017), but this does not rule out differences in transcriptional expression due to genetic background. While the Mef2cf/f mice were backcrossed to the same genetic background of the WT mice for five generations, there could still be variability in gene expression due to incomplete congenicity and/or epigenetic variability. Interestingly, an examination of the overlapping DEGs comparing CS to SD from WT and Mef2cf/f mice used in this study (Supplementary file 10, Tab ‘Overlap’), shows a gene ontology represented by genes controlling synaptic function (Supplementary file 10, Tab ‘Gene Ontology), indicating that sleep-condition regulation of synaptic genes is maintained between the two genotypes. Furthermore, the synaptic and EEG phenotypes of these genotypes across sleep conditions are indistinguishable as shown below (Figure 6—figure supplement 1 and Figure 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig5-v2.jpg)
+
+**Figure 5.:** (A) SWA power (normalized to average SWA power over 24 hr) declines over the light phase as shown in a Mef2cf/f mouse. (B) The decline is less apparent in an example from a Mef2c-cKOCamk2a-Cre mouse. (C) Pooled data (Mef2cf/f, n = 6; Mef2c-cKOCamk2a-Cre, n = 11; C57BL/6, n = 6) SWA power decay over the light phase for WT (BL/6), Mef2cf/f and Mef2c-cKOCamk2a-Cre. (D) The average waking SWA power in 24 hr is similar for Mef2c-cKOCamk2a-Cre and Mef2cf/f and is used as a normalizing factor to assess averaged SWS episode power. (E) SWS-SWA power over time from an average of SWS episodes aligned from the time of transition from waking to SWS, set to t = 0. The time constant of decay, τ = 8.4 min, was calculated by best fit of the decay of power for the Mef2cf/f but the decay fit was indeterminate for Mef2c-cKOCamk2a-Cre (see Materials and methods section for details). By setting τ = 8.4 min, a best fit to single exponential decay provided a plateau value (minimal value), an extrapolated peak value and an indication of goodness of fit in comparison to Mef2cf/f. The SWS-SWA power for Mef2c-cKOCamk2a-Cre mice is greater than Mef2cf/f as determined by the plateau value (Plt) and the peak value. The quality of the fit is reduced as indicated by the R2 value. (F) The average SWS-SWA power of each genotype following repeated, regular bouts of 4 hr SD, was significantly increased compared to SWS-SWA power under baseline conditions. Mef2c-cKOCamk2a-Cre mice failed to show this rebound response to sleep loss. (G) The time course of rebound across the 8 × 4 hr SD periods indicates that the lack of rebound in Mef2c-cKOCamk2a-Cre is particularly prominent during the dark phase.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) A cumulative histogram of SWS episode durations shows a shift to the right for Mef2cf/f from CS to SD condition indicative of increased need for sleep. For Mef2c-cKOCamk2a-Cre the SD induced rightward shift is occluded, suggesting high sleep need in CS condition. (B) Time in waking, SWS, and REM (right axis) as a percent of total time is unchanged by loss of Mef2c. (C) Spectral power distribution is modulated by loss of MEF2C function. During waking, relative power in Mef2c-cKOCamk2a-Cre mice is shifted to the slower delta range frequencies compared to Mef2cf/f mice; during SWS, power in the delta range is decreased with loss of MEF2C function; during REM the power distribution is unaffected by genotype. Significant group by frequency differences are indicated by * for Mef2cf/f and Mef2c-cKOCamk2a-Cre groups.
 
 MEF2 transcriptional activity is increased upon activity-dependent dephosphorylation of S396 (Flavell et al., 2006). Expression of a constitutively-active form of MEFC (MEF2C-VP16) is sufficient to reduce cortical excitatory synapses (Harrington et al., 2016), mimicking reduction of excitatory synaptic strength previously reported in response to recovery sleep (Liu et al., 2010). This led to our speculation that sleep loss might decrease MEF2C phosphorylation at S396. Using a phosphorylation site-specific antibody (Flavell et al., 2006), we examined the MEF2C phosphorylation status in FC under three sleep conditions (i.e. CS, SD and RS). We found that compared to CS, SD produced a significant reduction of MEF2C P-S396 (Figure 3D), consistent with an increase in MEF2C activity during SD, but without altering total MEF2C protein levels (Figure 3D). In contrast, RS did not significantly alter MEF2C P-S396 levels (Figure 3D), suggesting that SD triggers signaling events to transiently activate MEF2C-dependent transcription and promote the weakening and/or elimination of excitatory synapses.
 
 As noted above (Figure 1E), CS to SD and RS downregulated DEGs were enriched for genes that were downregulated in an earlier study comparing WT to Mef2c-cKOEmx1 in control conditions (Harrington et al., 2016). Similarly, the upregulated genes from CS to SD and RS are enriched for up-regulated WT to Mef2c-cKOCamk2a-Cre genes. In other words, the DEGs of Mef2c-cKOCamk2a-Cre (compared to WT) in control conditions are similar to the DEGs of CS to SD in WT mice. However, in the Mef2c-cKOCamk2a-Cre used in our study, there is little response to SD (Figure 3B,C), rather the DEGs of the WT sleep loss response are now differentially expressed in CS conditions in Mef2c-cKOCamk2a-Cre mice, potentially, a compensatory response, no longer responsive to sleep loss.
 
-## The role of Mef2c in the synaptic response to sleep loss
+### The role of Mef2c in the synaptic response to sleep loss
 
 Based on our transcriptome analyses, SD and RS induced many DEGs affecting synaptic strength and synaptic cellular components that required the MEF2C transcription factor (Figures 1, 2 and 3). MEF2C can regulate forebrain excitatory synapse strength of pyramidal neurons by decreasing synaptic density (Harrington et al., 2016) and frequency (Flavell et al., 2006). Down-scaling of cortical synaptic strength is associated with sleep (de Vivo et al., 2017; Diering et al., 2017). Previous observations indicate that acute loss of sleep is associated with increased miniature excitatory post-synaptic (mEPSC) frequency and amplitude and that recovery sleep reverses these changes in cortical neurons recorded from C57BL/6 mouse FC (Liu et al., 2010). However, neither the involvement of changes in probability of release nor changes in active excitatory synapse number and the role of Mef2c have been previously considered.
 
@@ -104,23 +132,43 @@ To directly examine sleep-associated changes in synaptic strength, the same cond
 
 As expected, we observed an increase of mEPSC frequency and amplitude after SD and the recovery to CS-levels in RS condition in the WT and Mef2cf/f mice (Figure 6A–F; Figure 6—figure supplement 1; Supplementary file 6).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig6-v2.jpg)
+
+**Figure 6.:** (A, G) Representative recordings of miniature excitatory postsynaptic current (mEPSC) traces (20 s, left panels, and expanded 1 s traces on the right corresponding to time bars underneath original traces) obtained for three different experimental sleep/wake conditions, CS (green), SD (red), and RS (blue), for Mef2cf/f mice (A) and Mef2c-cKOCamk2a-Cre mice (G). (B,C,D) and (H,I,J) illustrate mEPSC functional parameters obtained from Mef2cf/f and Mef2c-cKOCamk2a-Cre (number of cells for each condition shown above X axis condition label; also see Figure 6—figure supplement 1 for comparison to WT). Averaged cumulative probability histograms for instant frequency and peak amplitude show increased frequency and amplitude with SD compared to CS or RS for Mef2cf/f (E, F) but not for Mef2c-cKOCamk2a-Cre mice (K, L). See Materials and methods and Supplementary file 6 for details and statistics.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, G) Representative recordings of miniature excitatory postsynaptic current (mEPSC) traces (20 s, left panels, and expanded 1 s traces on the right corresponding to time bars underneath original traces) obtained for three different experimental sleep/wake conditions, CS (green), SD (red), and RS (blue), for WT mice (A) and Mef2cf/f mice (G). (B,C,D) and (H,I,J) illustrate mEPSC functional parameters obtained from WT and Mef2cf/fnumber of cells for each condition shown above X axis condition label. Averaged cumulative probability histograms for instant frequency and peak amplitude show increased frequency and amplitude with SD compared to CS or RS for WT (E, F) and Mef2cf/f mice (K, L).
+
 To determine if the SD-induced increase in mEPSC frequency was caused by an increased presynaptic release probability or an increase in synapse number, we examined the paired-pulse (P2/P1) ratio from CS to SD and RS (Figure 7A,B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig7-v2.jpg)
 
-**Figure 7.:** mice.Camk2a-Cre(A and C) Representative paired-pulse recordings of excitatory postsynaptic currents (evoked EPSC) evoked in layer 2/3 pyramidal neurons by two brief electrical stimulations of axon terminals in layer I, 50 ms interval, obtained for three different experimental sleep/wake conditions (CS, SD, RS) imposed on Mef2cf/f mice (A) and Mef2c-cKO mice (Camk2a-CreC), respectively. The probability of presynaptic release (Prelease), is inversely proportional to the ratio of EPSC amplitudes (1/Prelease ~ P2/P1); The P2/P1 ratio, obtained for three different experimental sleep/wake conditions (CS, SD, RS) and calculated separately for three different inter-pulse intervals (20, 50 and 100 ms), in Mef2cf/f (B) vs. Mef2c-cKO mice (Camk2a-CreD). The plots (see Materials and methods, numbers of experiments for each sleep/wake conditions shown underneath boxes), show no significant differences between CS and SD conditions in either control or in Mef2c-cKO mice.Camk2a-Cre
+**Figure 7.:** (A and C) Representative paired-pulse recordings of excitatory postsynaptic currents (evoked EPSC) evoked in layer 2/3 pyramidal neurons by two brief electrical stimulations of axon terminals in layer I, 50 ms interval, obtained for three different experimental sleep/wake conditions (CS, SD, RS) imposed on Mef2cf/f mice (A) and Mef2c-cKOCamk2a-Cre mice (C), respectively. The probability of presynaptic release (Prelease), is inversely proportional to the ratio of EPSC amplitudes (1/Prelease ~ P2/P1); The P2/P1 ratio, obtained for three different experimental sleep/wake conditions (CS, SD, RS) and calculated separately for three different inter-pulse intervals (20, 50 and 100 ms), in Mef2cf/f (B) vs. Mef2c-cKOCamk2a-Cre mice (D). The plots (see Materials and methods, numbers of experiments for each sleep/wake conditions shown underneath boxes), show no significant differences between CS and SD conditions in either control or in Mef2c-cKOCamk2a-Cre mice.
 
 The P2/P1 ratio tended toward an increase from CS to SD condition (this is consistent with a decreased probability of release), suggesting that the SD-associated increase in mEPSC frequency resulted from an increased number of active synapses. However, for CS to RS, the observed significant increase in P2 to P1 ratio and the normalization of mEPSC frequency after RS is due to either a decrease in release probability, a decrease in active synapse number or both.
 
 In Mef2c-cKOCamk2a-Cre mice, mEPSC frequency and amplitude was greater than in Mef2cf/f in CS condition. Consistent with the lack of change in the Mef2c-cKOCamk2a-Cre transcriptome, a significant change in frequency and mEPSC amplitude in response to SD and RS sleep conditions was absent (Figure 6G–L, Supplementary file 7). Finally, as expected from the absence of SD or RS induced effects on mEPSCs, the Mef2c-cKOCamk2a-Cre mice had no change in P2/P1 ratio across sleep conditions (Figure 7C,D). These observations support a necessary role for Mef2c in SD and RS associated changes in synaptic strength for FC layer 2/3 excitatory neurotransmission.
 
-## The role of Mef2c in the generation and resolution of sleep need
+### The role of Mef2c in the generation and resolution of sleep need
 
 Sleep need, inferred from the duration of time in waking without sleep (Borbély, 1982; Franken et al., 2001), is directly correlated with the ensuing SWS-SWA power calculated from surface EEG recorded from control Mef2cf/f and Mef2c-cKOCamk2a-Cre mice. In WT and Mef2cf/f mice, SWS-SWA is greatest at the start of the sleep phase and resolves over the sleep phase course as the mice spend time in SWS (ZT 0–12 hr; Figure 5A,C,E). In contrast, Mef2c-cKOCamk2a-Cre mice express, for their averaged SWS-SWA episodes, higher SWA (Figure 5E) that fails to normally resolve over the course of the sleep phase (Figure 5B,C). Another indicator of increased sleep need is increased consolidation of SWS as suggested by a rightward shift in the cumulative histogram of SWS episode duration going from CS to SD conditions (Bjorness et al., 2016), which is occluded in Mef2c-cKOCamk2a-Cre mice (Figure 5—figure supplement 1A).
 
 With respect to arousal-state duration (waking vs SWS vs REM), Mef2c-cKOCamk2a-Cre mice had no apparent significant differences and there were minimal differences in the power distribution across the frequency spectrum (Figure 5—figure supplement 1B,C). In response to SD, the Mef2c-cKOCamk2a-Cre mice show an attenuated or absent rebound of SWS-SWA (Figure 5F,G). These observations suggest that a loss of MEF2C function both increases the need for sleep and attenuates its resolution during SWS.
 
 Since MEF2C Haploinsufficiency Syndrome (MCHS) in humans is associated with sleep-disruption (Harrington et al., 2020; Paciorkowski et al., 2013), we examined constitutive gene dosage on SWS-SWA power of a global Mef2c heterozygous gene-deletion mouse model (Mef2c+/-) of MCHS under CS and SD conditions (Figure 8).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig8-v2.jpg)
+
+**Figure 8.:** (A,B) Average SWA power per 10 s epoch decreases during the sleep phase (ZT = 0 to 12 hr) to the same extent for Mef2c+/+ (n = 6) and Mef2c+/- (n = 6) mice (C). (D) Twenty-four hour average waking SWA power is greater for Mef2c+/- mice. (E) Decay of SWA power (normalized to the average 24 hr waking SWA) during an average SWS episode is preserved in the Mef2c+/- mice but with an increased τ, associated with increased sleep need. (F, G) Rebound increased SWS-SWA in response to SD is absent in Mef2c+/- mice. The SD was administered in repeated 6 hr cycles of 4 hr SD and 2 hr RS. (H) A table showing responses of Mef2c-cKOCamk2a-Cre and Mef2c+/- compared to their respective controls (see Figure 5).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) A cumulative histogram SWS episode duration showing a generalized shift to the right of the episode duration evoked by SD for both Mef2c+/- and Mef2c+/+ mice. (B) Histograms of relative time spent in waking, SWS or REM show Mef2c+/- mice have significantly less waking time and increased SWS time under baseline conditions. (C) The frequency/power distribution of the EEG shows that Mef2c+/- mice have relatively more fast delta and slow theta-range power during waking, more delta-range power during SWS, and more mid-theta-range power during REM, than their Mef2c+/+ controls.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** 476 differentially expressed genes from Mef2c+/- compared to Mef2c+/+ at CS share a significant set of overlapping genes (142; P-value: 5.28e-08, Fisher’s exact test).
 
 Under CS conditions, SWS-SWA power resolved across the sleep phase, unlike the Mef2c-cKOCamk2a-Cre mice, indicative of a resolution of sleep need. Similarly, Mef2c+/- mice showed resolution of sleep need over an average SWS episode, again, unlike Mef2c-cKOCamk2a-Cre mice; however, the rate of resolution (as indicated by the rate of decay of SWA in an average SWS episode) was slowed. On the other hand, SD did not induce the expected rebound SWS-SWA in Mef2c+/- mice similar to Mef2c-cKOCamk2a-Cre mice. Another similarity of Mef2c+/- mice with the Mef2c-cKOCamk2a-Cre mice is the apparent occlusion of the rightward shift in the cumulative histogram of SWS episode duration going from CS to SD conditions (Figure 8—figure supplement 1), associated with increased sleep need in WT mice (Bjorness et al., 2016). The Mef2c+/- mice are already shifted to the right compared to Mef2c+/+ mice in both CS and SD conditions. Furthermore, the Mef2c+/- mice had an abnormal relative increase in waking SWA power (in the high delta/low theta range of 4–5 Hz; Figure 8—figure supplement 1).
 
@@ -144,7 +192,261 @@ Taken together, these findings suggest a model of the sleep loss response that r
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus. Musculus)</td>
+      <td>C57BL/6 background</td>
+      <td>Jackson Laboratories</td>
+      <td></td>
+      <td>WT (8–19 weeks old)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. Musculus)</td>
+      <td>Mef2cf/f(C57BL/6J background)</td>
+      <td>Arnold et al., 2007; PMID:17336904</td>
+      <td>RRID:MGI:3719006</td>
+      <td>Mef2cf/f(8–19 weeks old): knock-in of loxP sites flanking exon 11 of the Mef2c gene, a control for the Mef2c-cKOCamk2a-Cre</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. Musculus)</td>
+      <td>C57BL/6 background, B6.Cg- Tg(Camk2a-Cre)T29-1Stl/J</td>
+      <td>Jackson Laboratories</td>
+      <td></td>
+      <td>Mef2c-cKOCamk2a-Cre (8–19 weeks old): CRE-mediated recombination of the Mef2cf/floxP sites, resulting in a region and cell type specific conditional knockout Mef2c-cKOCamk2a-Cre</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. Musculus)</td>
+      <td>Mef2c+/- (backcrossed to C57BL/6J)</td>
+      <td>Harrington et al., 2020. PMID:32418612.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MEF2C (Mouse, Monoclonal)</td>
+      <td>Novus</td>
+      <td>Cat. # NBP2-00493</td>
+      <td>Immunoprecipitation (2 ul (ug) per sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MEF2C (Rabbit, Monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab197070; RRID:AB_2629454</td>
+      <td>(1:2500) (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-MEF2 (Rabbit, Polyclonal)</td>
+      <td>Phospho-peptide affinity purified in-house (as described in Flavell et al., 2006. PMID:16484497)</td>
+      <td></td>
+      <td>(1:200) (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta-actin (Rabbit, Monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 4970S RRID:AB_2223172</td>
+      <td>(1:1000) (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW Goat anti-Rabbit IgG Secondary Antibody</td>
+      <td>Li-Cor</td>
+      <td>Cat. #: 926–32211</td>
+      <td>(1:20,000) (WB after IP)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mef2C KO F1</td>
+      <td>This paper (GGGAACCTGACAAATGTGGG)</td>
+      <td>PCR Primers</td>
+      <td rowspan="2">Products of 2 kb for non-recombined Mef2cf/fand 1 kb for recombined Mef2c-cKOCamk2a-Cre alleles</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mef2C KO R2</td>
+      <td>This paper (GTGCATGGCACAGACTACTAGC)</td>
+      <td>PCR Primers</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #. 74104</td>
+      <td>RNA purification</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TrueSeq Stranded mRNA Library Prep</td>
+      <td>Illumina</td>
+      <td>Cat. #. 20020596</td>
+      <td>RNA-seq library preparation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent Bioanalyzer High-Sensitivity DNA chip</td>
+      <td>Agilent</td>
+      <td>Cat. #. 5067–1504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DC Protein Assay Kit II</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #: 5000112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>7.5% Mini-PROTEAN TGX Stain-Free Protein Gels, 15 well, 15 µl</td>
+      <td>Bio-Rad</td>
+      <td>Cat.#: 4568026</td>
+      <td>WB after IP</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trans-Blot Turbo Midi PVDF Transfer Packs</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #: 1704157</td>
+      <td>WB after IP</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Odyssey blocking buffer</td>
+      <td>Li-Cor</td>
+      <td>Cat. #: NC9877369</td>
+      <td>WB after IP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #. 15596026</td>
+      <td>RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prismhttps://graphpad.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTQC</td>
+      <td>Babraham Bioinformaticshttps://www.bioinformatics.babraham.ac.uk/projects/fastqc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic</td>
+      <td>Bolger et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Foundationhttps://www.r-project.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTSeq</td>
+      <td>Anders et al., 2015</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>McCarthy et al., 2012 Robinson et al., 2010</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Anders and Huber, 2010 Love et al., 2014</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UpSetR</td>
+      <td>Conway et al., 2017</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WGCNA</td>
+      <td>Weighted gene co-expression network analysis Langfelder and Horvath, 2008</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DEXseq</td>
+      <td>Anders et al., 2012</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ToppGene</td>
+      <td>Chen et al., 2009 https://toppgene.cchmc.org</td>
+      <td></td>
+      <td>Web-tool</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REVIGO</td>
+      <td>http://revigo.irb.hr Supek et al., 2011</td>
+      <td></td>
+      <td>Web-tool</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Single-cell RNA-seq Dataset</td>
+      <td>Mouse visual cortex single cell RNA-seq dataset Hrvatin et al., 2018</td>
+      <td>NCBI GEO: GSE102827</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G Plus/A agarose beads</td>
+      <td>Millpore Sigma</td>
+      <td>IP05</td>
+      <td>Immunoprecipitation (75 ul per sample)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All mice (Mus musculus) had a C57BL/6J background, were male and of 8–19 weeks of age at time of data collection. Mice were on a 12 hr light-dark cycle with access to food and water ad libitum. For RNA-seq experiments, we employed three genotypes: wild type (WT); a knock-in of loxP sites flanking exon 11 of the Mef2c gene, the second coding exon for the DNA-binding site (Arnold et al., 2007)(Mef2cf/f), a control for the Mef2c-cKOCamk2a-Cre; and a CamKII-promoter (Tsien et al., 1996), CRE-mediated recombination of the Mef2cf/f loxP sites (founders obtained from Jackson Labs Jackson labs; B6.Cg-Tg(Camk2a-Cre)T29-1Stl/J), resulting in a region and cell-type-specific conditional knockout (Mef2c-cKOCamk2a-Cre [Arnold et al., 2007]). Primers and primer products are shown along with a map of the Mef2c gene (Figure 9). Initially, we used a primer pair, Mef2C.2 and Mef2C.3 that gave a product of 650 BP for WT, 750 BP for Mef2cf/f and no product for a CRE-mediated recombined allele to distinguish homozygous and heterozygous floxed knockins from WT mice.
 
@@ -156,61 +458,63 @@ We also determined that some of the offspring of male Mef2cf/wt;Camk2a-Cre mice 
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/58331/elife-58331-fig10-v2.jpg)
 
-**Figure 10.:** Mef2c-cKO mouse samples under CS or SD conditions.Camk2a-CreThe sample from the second column (CS) showed a similar DEG clustering pattern to the other two samples that had germline recombination.
+**Figure 10.:** The sample from the second column (CS) showed a similar DEG clustering pattern to the other two samples that had germline recombination.
 
 For in vivo electrophysiology (EEG/EMG analysis for sleep/waking state determination), in addition to the three strains described above, we also included constitutive heterozygous Mef2c knockouts (Mef2c+/-) and their littermate controls (Mef2c+/+); generation of these strains has been described previously (Harrington et al., 2020).
 
 All experimental procedures were approved by the University of Texas Southwestern IACUC or VA North Texas Health Care System IACUC.
 
-## Sleep deprivation protocol
+### Sleep deprivation protocol
 
 All mice underwent an accommodation protocol of 3 weeks duration, in 12/12 light/dark schedule, in plexiglass, false-bottomed cages, suspended over a treadmill (see Video 1) with ad libitum water and mouse chow as previously described (Bjorness et al., 2016). The treadmill (speed of treadmill = 3 cm/sec) was turned on daily for 10 min to accommodate the mice to the slow movement (mice are able to eat and drink with it running) and to clean it. For RNA-seq, 36 hr prior to the experimental day (CS, SD or RS) a dark/dark schedule was instituted. The use of the treadmill prevented transition to sleep, did not increase motor activity (due to the slow speed) and provided a mild, familiar, non-varying, arousing stimuli that reduced the experimental variability associated with more traditional ‘gentle handling’ techniques. Animals were randomly assigned to CS, SD or RS groups.
 
-## RNA collection, RNA-seq library preparation and Sequencing
+![Video 1.](https://cdn.elifesciences.org/articles/58331/elife-58331-video1.mp4.jpg)
+
+### RNA collection, RNA-seq library preparation and Sequencing
 
 Total RNA was extracted from all the samples using TRIzol reagent (Thermo Fisher Scientific, Cat. No. 15596026) and was purified with RNeasy mini kit (Qiagen, Cat No. 74104) according to manufacturer’s instructions. All the samples were then randomized in order to reduce the batch effect and submitted to McDermott Sequencing Core at University of Texas Southwestern Medical Center for library preparation and sequencing. Libraries were prepared using TrueSeq Stranded mRNA Library Prep (Illumina, Cat. No. 20020596) as per manufacturer’s instructions by McDermott Sequencing Core. The quality and concentration of the libraries was checked on Agilent Bioanalyzer High Sensitivity DNA chip (Agilent, Cat. No. 5067–1504). Samples were pooled and sequenced by McDermott Sequencing Core using Illumina’s NextSeq500 to yield paired-end (150 bp long) strand-specific reads.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 De-multiplexed raw reads were received from McDermott Sequencing Core. Raw reads were first filtered for phred quality and adapters using FASTQC (FastQC, Babraham Bioinformatics, URL: https://www.bioinformatics.babraham.ac.uk/projects/fastqc) and Trimmomatic (Bolger et al., 2014). Filtered reads were then aligned to the reference mouse genome mm10 (https://genome.ucsc.edu) using STAR (Dobin et al., 2013) aligner. Uniquely mapped reads were used to obtain the gene counts using HTSeq package (Anders et al., 2015), and the read counts were normalized using the CPM (counts per million) method implemented in the edgeR package (McCarthy et al., 2012; Robinson et al., 2010). For further analysis, we performed a sample-specific CPM filtering, considering genes with CPM values of 1.0 or greater in all replicates in one or more of the sleep conditions. DESeq2 (Anders and Huber, 2010; Love et al., 2014) was used to detect the DEGs across sleep states. We applied a filter of an adjusted p-value of ≤0.05 and absolute log fold change of ≥0.3 to identify DEGs. Significant DEGs are visualized using volcano plots. UpSetR (Conway et al., 2017) R package was used to identify shared and unique sets of DEGs across sleep states.
 
-## GO analysis
+### GO analysis
 
 GO analysis of the significant, sleep-states shared and unique DEGs was performed using ToppGene (https://toppgene.cchmc.org) (Chen et al., 2009) and GO terms were reduced using REVIGO (Supek et al., 2011). GO categories were considered significant if they contained at least three genes and if they had a Benjamini–Hochberg (B–H)-corrected p-value of ≤0.05.
 
-## DEG enrichment against cell types, MEF2C targets and rPRGs
+### DEG enrichment against cell types, MEF2C targets and rPRGs
 
 The mouse visual cortex single cell RNA-seq dataset was downloaded from NCBI Gene Expression Omnibus (accession no. GSE102827) and processed using Seurat (Butler et al., 2018). Retaining cluster annotations from the original source (Hrvatin et al., 2018), genes enriched in each cell-type/cluster were identified using the FindAllMarkers function of Seurat (Butler et al., 2018) with default parameters. The list of MEF2C target genes was obtained from Harrington et al., 2016. The list of rapid primary response genes was obtained from Tyssowski et al., 2018. The list of differentially expressed genes from Mef2c+/- compared to Mef2c+/+ at CS was obtained from Harrington et al., 2020. Enrichment analyses for shared and unique list of DEGs across sleep states against (i) cell types from mouse visual cortex single-cell datasets, (ii) MEF2C targets and (iii) rPRGs were performed using a Fisher’s exact test. Also, enrichment analysis for differentially expressed genes across Mef2cf/f and Mef2c-cKOCamk2a-Cre under CS and differentially expressed genes from Mef2c+/- compared to Mef2c+/+ at CS was performed using a Fisher’s exact test.
 
-## Weighted gene co-expression network analysis
+### Weighted gene co-expression network analysis
 
 Weighted gene co-expression network analysis (WGCNA) was performed on 19 total RNA-seq samples, including six control sleep (CS) samples, six sleep deprived (SD) and seven recovery sleep (RS) samples. The R package for WGCNA (Langfelder and Horvath, 2008) was used to build a gene co-expression network using filtered CPM data (CPM >= 1 across all replicates of one or more of each of the conditions). A signed network was constructed using the blockwiseModules function of the WGCNA R package. A value of 26 was chosen as Beta with highest scale-free R square (R2 = 0.796). For other parameters, we used corType = pearson, maxBlockSize = 15000, reassignThreshold = 1 × 10−5, mergeCutHeight = 0.05, deepSplit = 4, detectCutHeight = 0.999 and minModuleSize = 50. Visualizations of network plots were created using Cytoscape v3.4.0 (Shannon et al., 2003), representing the top 250 edges based on ranked weights.
 
-## Heat map plot for enrichment of gene lists against WGCNA module genes
+### Heat map plot for enrichment of gene lists against WGCNA module genes
 
 List of genes per WGCNA module were enriched against (i) DEGs per sleep state, (ii) cell type genes identified in mouse cortex (Hrvatin et al., 2018), (iii) MEF2C targets (Harrington et al., 2016), and (iv) module eigengene correlation to each sleep state using supertest function of SuperExactTest R package. The heat map is generated using ggplot2 functions geom_tile. The modules are ordered based on module eigengene correlation to CS sleep state starting from highest to lowest correlation.
 
-## Down-sampling and permutation DEG analysis
+### Down-sampling and permutation DEG analysis
 
 DESeq2 (Anders and Huber, 2010; Love et al., 2014) differential expression analysis for down-sampled WT CS (n = 4) and SD (n = 3) was performed by first randomly down-sampling the WT CS and SD sample sizes to match the sample sizes of Mef2cf/f. Down-sampling was performed for 100 permutations and number of DEGs were reported for all 100 permutations.
 
-## Assessment of Mef2c exon 11 encoding DNA-binding portion of MEF2C in WT, Mef2cf/f, Mef2c-cKOCamk2a-Cre mice
+### Assessment of Mef2c exon 11 encoding DNA-binding portion of MEF2C in WT, Mef2cf/f, Mef2c-cKOCamk2a-Cre mice
 
 Differential exon usage for exons across Mef2c was accessed using DEXSeq (Anders et al., 2012) indicating only minor variability in exon expression between WT, Mef2cf/f and Mef2c-cKOCamk2a-Cre samples. Analysis also shows the specific reduction of floxed exon (Exon 11) in Mef2c-cKOCamk2a-Cre mice (Figure 4). As expected, this reduction was only partial due to the selective expression of Camk2a-Cre that limited CRE-mediated recombination to CAMK-expressing cells.
 
-## Immunoprecipitation of MEF2C protein
+### Immunoprecipitation of MEF2C protein
 
 Frozen brain tissue from the frontal cortex of mice were immediately homogenized by sonication after addition of 600 mL mRIPA buffer with inhibitors (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% iGEPAL CA-630, 0.5% sodium deoxycholate, 0.1% SDS, 1 mM sodium fluoride, 1 µM cyclosporine A, 1 mM sodium orthovanadate, 50 nM okadaic acid, 1 tablet of cOmplete, EDTA-free Protease Inhibitor Cocktail (Sigma/Roche 11836170001) in deionized water for 10 mL total volume of solution). Samples were then centrifuged at max speed and supernatant was aliquoted. Protein concentration was quantified via Bio-Rad DC Protein Assay (Bio-Rad 5000112). Protein lysates (1.5 mg) were diluted in mRIPA buffer with inhibitors to a total volume of 500 mL. A volume of 2 µL of mouse monoclonal anti-MEF2C antibody (Novus NBP2-00493) was added to each diluted protein lysate and incubated for 2 hr at 4°C. Samples were then added to 75 µL washed protein G Plus/A agarose bead slurry (Millpore IP05) and incubated for 1 hr at 4°C. The samples were then washed three times with mRIPA buffer with inhibitors and eluted with 2X sample buffer + 10% 2-mercaptoethanol.
 
-## Western blot of MEF2C immunoprecipitation
+### Western blot of MEF2C immunoprecipitation
 
 Immunoprecitation (IP), pre-IP, and post-IP samples were loaded into 7.5% Mini-PROTEAN TGX Stain-Free gels (Bio-Rad 4568026). Gel electrophoresis was run at 250 V for 25 min in 1X Tris-gycine SDS buffer. Proteins were then transferred onto PVDF membranes using the Bio-Rad Trans-Blot Turbo System on the high-MW setting. Membranes were blocked in 1:1 Odyssey blocking buffer/1X PBS for 1 hr. Membranes were incubated overnight with primary antibodies: rabbit anti-phospho-MEF2 (1:200, lab purified) or rabbit anti-MEF2C (1:2500, Abcam ab197070). After washing, Licor secondary antibodies were incubated on the membranes (1:20,000, Licor IRDye 800CW goat anti-rabbit 926–32211). After washing, blots were imaged on the Licor Odyssey CLx system. The pre-IP sample membranes were then incubated with rabbit anti-beta-actin antibody (1:1000, Cell Signaling 4970S) overnight. After washing, the membrane was incubated with the Licor goat anti-rabbit secondary and imaged.
 
-## Analysis of MEF2C immunoprecipitation
+### Analysis of MEF2C immunoprecipitation
 
 Licor image files were imported into Licor ImageStudio software and protein bands were quantified. We calculated a ratio for phospho-MEF2C signal to the total MEF2C signal for each sample. The average ratio for the control samples was used as a normalization factor for each sample. The ratio for each sample were then divided by the normalization factor to generate normalized signal values for each sample. Similar analysis was used to compare total MEF2C signal to beta-actin signal. One-way ANOVA statistical analyses were performed in Graphpad Prism software.
 
-## Brain slice electrophysiological recordings
+### Brain slice electrophysiological recordings
 
 Brain slices 300 µm thick, cut 15°-angled in rostral direction to keep perpendicular blade penetration in the anterior cingulate area, were prepared from 8- to 12-week-old control (Mef2c fl/fl: Cre-) and Mef2c-cKOCamk2a-Cre mice at the same Circadian time ZT6 immediately after subjecting to one of the three 6 hr sleep/wake protocols (CS, SD, RS). The dissection was done in ice-cold solution containing (mM): NaCl 84, KCl 3, NaH2PO4 1.25, CaCl2 0.5, MgSO4 7, NaHCO3 26, glucose 20, sucrose 70, ascorbic acid 1.3, kynurenic acid 2 (brought to pH 7.3 by continuous saturation with carbogen gas containing 95% of O2 and 5% of CO2). After dissection, slices were transferred to the carbogen gas-saturated artificial cerebrospinal fluid (ACSF) solution containing (mM): NaCl 125, KCl 5, NaH2PO4 1.25, CaCl2 2, MgCl2 1.3, NaHCO3 25, glucose 12 (pH 7.3) at 32° C, and were used for experiments after 1 hr equilibration.
 
@@ -220,7 +524,7 @@ Pyramidal neurons in cortical layers 2/3 at the anterior cingulate cortex (ACC) 
 
 CaCl2 was removed, and 0.25 mM of QX 314, a Na+ voltage-dependent channel blocker was added to the patch pipette solution to suppress generation of postsynaptic Na+ currents during recordings of evoked excitatory post-synaptic current (eEPSC) in paired-pulse stimulation experiments. In these experiments, the identity of pyramidal neurons was verified immediately after breaking the membrane patch before suppression of action potentials. Stimulation of axons forming synapses at apical dendrites of L2/3 pyramidal cells during paired pulse experiments was done by placing a bipolar stimulation electrode in the L1 area at a distance ~ 100–200 µm from the recorded neuron axial projection to this area. Brief 0.4 ms biphasic stimulation current pulses of 30 to 60 µA delivered with Biphasic Stimulus Isolator BSI-950 (Dagan, MN) were enough to produce minimal-amplitude reproduceable eEPSCs in 95% of experiments.
 
-## Analysis of mEPSC
+### Analysis of mEPSC
 
 Functional parameters of miniature excitatory post-synaptic currents (mEPSCs) were calculated from 2 to 4 min continuous recordings following steady-state after application of 1 µl TTX. Recordings were high-pass filtered at 10 Hz and low-pass filtered at 500 Hz. Individual mEPSC were detected by the event template detection algorithm embedded into the pClamp 10 software. A combination of five mEPSCs templates varying from 6 to 25 ms durations was used, each template recognition window being ‘trained’ from ~ 100 real events. No minimal threshold for mEPSC amplitude was applied for medium and longer events to avoid potential exclusion of low-amplitude attenuated mEPSCs originating from distal dendrites. The same template recognition set of parameters was applied for the analysis of data obtained from all cells included in this study. The microscopic parameter values of individual events (peak amplitude, area, instant frequency) were calculated by the pClamp event analysis algorithm and transferred to the Microsoft Excel for secondary off-line general statistics analysis. Standard box and whiskers graphs for each analyzed mEPSC parameter averaged for all cells within a particular experimental group were plotted using GraphPad Prism software, which represents 25% to 75% interval as vertical boxes, the whole range of data points as whiskers, the line inside boxes as a median, and a '+' sign inside boxes indicates the mean value. One-way ANOVA analysis with Tukey’s multiple comparisons test was used to define significant differences within three experimental groups (CS, SD, RS for each genotype) for each reported parameter.
 
@@ -228,32 +532,32 @@ Cumulative histograms for each measured mEPSC parameter of a particular experime
 
 Paired-pulse eEPSC analysis. For each paired-pulse experiment, peak amplitudes of coupled evoked EPSCs (eEPSCs) were obtained after averaging traces of 5 to 10 repetitive paired stimulation sequences separated by 20 s relaxation time. P2/P1 amplitude ratio was calculated for three interpulse intervals: 20, 50 and 100 ms. Standard box and whiskers graphs for each P2/P1 ratio averaged for all cells within a particular experimental group were plotted for each of three interpulse intervals using GraphPad Prism software. Ordinary one-way ANOVA analysis with Tukey’s multiple comparisons test was used to define significant differences within three experimental groups (CS, SD, RS for each genotype) for each measured P2/P1 ratio.
 
-## EEG and EMG acquisition for sleep/waking state analysis
+### EEG and EMG acquisition for sleep/waking state analysis
 
 Animals (Mef2c-cKOCamk2a-Cre n = 7, Mef2cf/fn = 11, C57BL/6 n = 6, Mef2c+/- n = 6, Mef2c+/+ n = 6) were implanted with EEG and EMG electrodes using standard procedures (Bjorness et al., 2016). Briefly, mice were anesthetized with isoflurane and placed into a stereotaxic apparatus after which the hair is sheared and the scalp cleaned and incised. Four small holes were drilled for the placement of bilateral skull screw style electrodes over the frontal cortex (AP +1.7, ML +/- 1.77), parietal cortex (AP −1.7, ML +2.0), and occipital cortex (AP −5.5, ML −1.5). Paddle style EMG electrodes (Plastics One) were placed under the dorsal nuchal muscle. Electrode pins were gathered into a six pin pedestal (Plastics One) which was cemented to the skull using dental cement. The wound was closed using absorbable sutures and coated with triple antibiotic ointment. Mice received buprenorphine for analgesia and were given 14 days to recover from surgical procedures prior to experimental procedures.
 
 Mice were placed into individual cages suspended above the belt of a custom treadmill apparatus with food and water available ad libitum. Mice were given 2 weeks to acclimate to the new environment with daily short duration exposure to the treadmill belt moving after which mice were connected to an amplifier system via a tether attached to the pedestal with an additional week of acclimation to the tether. A balance bar was set between the tether and commutator to allow for unrestricted movement. Following acclimation, EEG and EMG signals were acquired using a 15LT amplifier system (Natus Neurology) for 2 days under baseline (undisturbed) conditions followed by 2 days of chronic, partial sleep deprivation (Bjorness et al., 2016). Sleep deprivation consisted of eight cycles of 4 hr TM 'ON' (belt moving) followed by 2 hr TM 'OFF' (belt fixed). State assignment was determined via a custom Matlab (Mathworks) autosorter program using standard criteria (Bjorness et al., 2016) for waking, SWS, and REM after which files were manually checked to ensure correct assignment of state and flag epochs featuring artifact. Epochs were scored in 10 s bins with artifact-flagged epochs excluded from power spectral analysis. Episodes began with 30 consecutive seconds of one state and ended with 30 consecutive seconds of a different state. Power spectrum values were calculated in a 2 s window with a 1 s overlap and a Hamming window using the mean squared spectrum function in Matlab. For statistical analyses, Mef2c-cKOCamk2a-Cre was compared to Mef2cf/f and C57BL/6, while Mef2c+/- was compared to Mef2c+/+.
 
-## Decay of SWA across the light (inactive) phase
+### Decay of SWA across the light (inactive) phase
 
 SWA (0.5–4.5 Hz) was normalized to the 24 hr average SWA and the percentage change between the first and last consolidated 1 hr sleep period was calculated as previously described (Nelson et al., 2013). The baseline day with the clearest consolidated sleep periods early and late in the light phase were used for statistical comparison via a one-way ANOVA with Sidak’s multiple comparison test.
 
-## Decay of SWS-SWA within an averaged SWS episode under baseline conditions
+### Decay of SWS-SWA within an averaged SWS episode under baseline conditions
 
 For a full description of the decay analysis see Bjorness et al., 2016. Briefly, SWS-SWA power was normalized to W SWA power after which SWS episodes of at least 5 min in duration were collected and gathered into an excel file with one episode per column such that the normalized SWS-SWA power of the first epoch was in the first row of each column, the normalized SWS-SWA power of the second epoch was in the second row of each column, and so forth. Based on the 5 min duration criteria, all columns had at least 30 rows; the longest four episodes were truncated to leave five episodes at the longest time point. One Mef2c-cKOCamk2a-Cre, one Mef2cf/f, and one Mef2c+/+ mouse per group was excluded on the basis of insufficient episodes of at least 12 min in duration (Bjorness et al., 2016). The natural log was taken after which episodes were averaged within animal to create a single averaged SWS episode per mouse followed by averaging across animals within group to result in a single episode per group. Next, the group average episode was transformed by taking the exponential. A fragment of the average was created (excluding the initial ascending phase and periods of high variability toward the end) and fit using a single phase decay (GraphPad Prism) in order to determine the time constant of decay (τ). Based on previously described exclusion criteria (absolute sum of squares, Bjorness et al., 2016), the averaged group episode for Mef2c-cKOCamk2a-Cre mice could not be fit. Thus, the time constant of decay determined for the Mef2cf/f group was used to determine the plateau and R2 value for the Mef2c-cKOCamk2a-Cre group.
 
-## Rebound SWS-SWA following chronic, partial SD
+### Rebound SWS-SWA following chronic, partial SD
 
 Mice underwent 8 cycles of 4 hr SD (TM ‘ON’) followed by 2 hr RS (TM ‘OFF’) starting at ZT0. SWS-SWA power was averaged in 2 hr bins. Rebound SWS-SWA was determined by the percent change in SWS-SWA from baseline conditions to TM ‘OFF’ conditions using time-matched circadian bins (i.e. ZT 4–6, ZT 10–12, ZT 16–18, ZT 22–24). A one-way ANOVA was used to compare average rebound across the 8 RS periods and a One sample T test was used to compare average values to a theoretical mean of 0 (GraphPad Prism).
 
-## Time in sleep/waking state
+### Time in sleep/waking state
 
 Time in each sleep/waking state (waking, SWS, REM) under baseline conditions was averaged in 2 hr bins and calculated as the percent time of the total period. Averaged percent time in state for each state was compared between groups using a one-way ANOVA (GraphPad, Prism).
 
-## Cumulative distribution of SWS episodes
+### Cumulative distribution of SWS episodes
 
 SWS episodes under baseline and SD (recovery periods) conditions were binned by duration using the histogram function in excel (Microsoft); the first bin was 90 s with successive bins increasing by 40 s. The number of episodes in each bin was divided by the total number of episodes for the condition and multiplied by 100 to get a percentage of the total episodes represented by each bin. Next, a cumulative percentage was calculated by adding the percentage of successive bins. A two-way ANOVA (condition, bin) was used to compare cumulative histogram episode durations across groups and conditions (baseline and SD).
 
-## Spectral power distribution across state
+### Spectral power distribution across state
 
 Under baseline conditions, individual 10 s epochs were separated by state (waking, SWS, REM) after which spectral power in each 1 Hz bin up to 50 Hz was normalized by the total power for that state (waking epoch normalized to waking total power, etc). Fraction power was then averaged across epochs within each 1 Hz bin to get an average spectral distribution from 1 to 50 Hz by state. Two-way ANOVA (group, frequency) was used to compare spectral distributions by state across groups.

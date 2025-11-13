@@ -17,22 +17,22 @@
 
 ### Affiliations
 
-1. https://ror.org/057zh3y96 Department of Physiological Chemistry and Metabolism, Graduate School of Medicine, The University of Tokyo Tokyo Japan
-2. https://ror.org/02cgss904 Developmental Cardiology Laboratory, International Research Center for Medical Science, Kumamoto University Kumamoto Japan
-3. https://ror.org/00krab219 Department of Molecular Pathophysiology, Institute of Advanced Medical Sciences, Nippon Medical School Tokyo Japan
-4. https://ror.org/00f2txz25 School of Pharmacy, Kitasato University Tokyo Japan
-5. https://ror.org/02956yf07 Institute of Applied Physics, University of Tsukuba Tsukuba Japan
-6. https://ror.org/02kpeqv85 Congenital Anomaly Research Center, Kyoto University Graduate School of Medicine Kyoto Japan
-7. https://ror.org/051k3eh31 Molecular Craniofacial Embryology, Graduate School of Medical and Dental Sciences, Tokyo Medical and Dental University Tokyo Japan
-8. https://ror.org/059d6yn51 Faculty of Life Sciences, Department of Applied Biosciences, Toyo University Gunma Japan
-9. https://ror.org/03kjjhe36 Heart Center, Department of Pediatric Cardiology, Tokyo Women’s Medical University Tokyo Japan
-10. https://ror.org/04gzb3214 Department of Animal Nursing Science, Yamazaki University of Animal Health Technology Tokyo Japan
+1. Department of Physiological Chemistry and Metabolism, Graduate School of Medicine, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+2. Developmental Cardiology Laboratory, International Research Center for Medical Science, Kumamoto University Kumamoto Japan ([ROR:02cgss904](https://ror.org/02cgss904))
+3. Department of Molecular Pathophysiology, Institute of Advanced Medical Sciences, Nippon Medical School Tokyo Japan ([ROR:00krab219](https://ror.org/00krab219))
+4. School of Pharmacy, Kitasato University Tokyo Japan ([ROR:00f2txz25](https://ror.org/00f2txz25))
+5. Institute of Applied Physics, University of Tsukuba Tsukuba Japan ([ROR:02956yf07](https://ror.org/02956yf07))
+6. Congenital Anomaly Research Center, Kyoto University Graduate School of Medicine Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+7. Molecular Craniofacial Embryology, Graduate School of Medical and Dental Sciences, Tokyo Medical and Dental University Tokyo Japan ([ROR:051k3eh31](https://ror.org/051k3eh31))
+8. Faculty of Life Sciences, Department of Applied Biosciences, Toyo University Gunma Japan ([ROR:059d6yn51](https://ror.org/059d6yn51))
+9. Heart Center, Department of Pediatric Cardiology, Tokyo Women’s Medical University Tokyo Japan ([ROR:03kjjhe36](https://ror.org/03kjjhe36))
+10. Department of Animal Nursing Science, Yamazaki University of Animal Health Technology Tokyo Japan ([ROR:04gzb3214](https://ror.org/04gzb3214))
 
 † Corresponding author
 
 ## Abstract
 
-Coronary arteries are a critical part of the vascular system and provide nourishment to the heart. In humans, even minor defects in coronary arteries can be lethal, emphasizing their importance for survival. However, some teleosts survive without coronary arteries, suggesting that there may have been some evolutionary changes in the morphology and function of coronary arteries in the tetrapod lineage. Here, we propose that the true ventricular coronary arteries were newly established during amniote evolution through remodeling of the ancestral coronary vasculature. In mouse ( Mus musculus ) and Japanese quail ( Coturnix japonica ) embryos, the coronary arteries unique to amniotes are established by the reconstitution of transient vascular plexuses: aortic subepicardial vessels (ASVs) in the outflow tract and the primitive coronary plexus on the ventricle. In contrast, amphibians ( Hyla japonica , Lithobates catesbeianus , Xenopus laevis , and Cynops pyrrhogaster ) retain the ASV-like vasculature as truncal coronary arteries throughout their lives and have no primitive coronary plexus. The anatomy and development of zebrafish ( Danio rerio ) and chondrichthyans suggest that their hypobranchial arteries are ASV-like structures serving as the root of the coronary vasculature throughout their lives. Thus, the ventricular coronary artery of adult amniotes is a novel structure that has acquired a new remodeling process, while the ASVs, which occur transiently during embryonic development, are remnants of the ancestral coronary vessels. This evolutionary change may be related to the modification of branchial arteries, indicating considerable morphological changes underlying the physiological transition during amniote evolution.
+Coronary arteries are a critical part of the vascular system and provide nourishment to the heart. In humans, even minor defects in coronary arteries can be lethal, emphasizing their importance for survival. However, some teleosts survive without coronary arteries, suggesting that there may have been some evolutionary changes in the morphology and function of coronary arteries in the tetrapod lineage. Here, we propose that the true ventricular coronary arteries were newly established during amniote evolution through remodeling of the ancestral coronary vasculature. In mouse (Mus musculus) and Japanese quail (Coturnix japonica) embryos, the coronary arteries unique to amniotes are established by the reconstitution of transient vascular plexuses: aortic subepicardial vessels (ASVs) in the outflow tract and the primitive coronary plexus on the ventricle. In contrast, amphibians (Hyla japonica, Lithobates catesbeianus, Xenopus laevis, and Cynops pyrrhogaster) retain the ASV-like vasculature as truncal coronary arteries throughout their lives and have no primitive coronary plexus. The anatomy and development of zebrafish (Danio rerio) and chondrichthyans suggest that their hypobranchial arteries are ASV-like structures serving as the root of the coronary vasculature throughout their lives. Thus, the ventricular coronary artery of adult amniotes is a novel structure that has acquired a new remodeling process, while the ASVs, which occur transiently during embryonic development, are remnants of the ancestral coronary vessels. This evolutionary change may be related to the modification of branchial arteries, indicating considerable morphological changes underlying the physiological transition during amniote evolution.
 
 ## Introduction
 
@@ -40,15 +40,31 @@ Coronary circulation refers to the network of blood vessels that supply oxygen a
 
 Because of the complete absence of coronary circulation in cyclostomes (lampreys and hagfishes), the coronary artery is generally considered a synapomorphy of jawed vertebrates (Grant and Regnier, 1926). However, there is an inconsistency between amniotes and non-amniotes. In humans, the branching points (orifices) are located at the aortic sinuses close to the ventricle, and the arteries are distributed on the ventricular surface. Although the branching patterns of the vessels are diverse, the rostro-caudal level of the orifice and the distribution of the arteries on the ventricles are conserved in mammals, birds, crocodiles, and lepidosaurians (Figure 1A; Spalteholz, 1924; Erhart, 1935; MacKinnon and Heatwole, 1981; Farrell et al., 2012). In teleosts and chondrichthyans, however, the orifices are located more cranially, with branching from the hypobranchial arteries, and the arteries pass long distances from the orifices to the heart (Parker, 1886; Grant and Regnier, 1926; Corrington, 1930; May and Herber, 1957; Halpern and May, 1958; De Andrés et al., 1990; Muñoz-Chápuli et al., 1994; Icardo, 2017). Such positional differences have led to two hypotheses: coronary arteries gradually shifted from the rostral to the caudal position (Halpern and May, 1958; MacKinnon and Heatwole, 1981), or non-homologous arteries nourishing the heart are collectively termed coronary arteries (Grant and Regnier, 1926; May and Herber, 1957). Data on amphibians may help to address this controversy, although few comparative studies have examined their extrinsic blood vessels, and some authors have mentioned that amphibians lack coronary arteries (Kapuria et al., 2018; Lupu et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83005/elife-83005-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scheme of lizard coronary artery based on the data for the lace monitor (Varanus varius). In this lizard, a single coronary artery originates from the root of the right systemicocarotid trunk (the aorta in mammals) close to the heart and bifurcates almost at its point of origin to form a ventral and a dorsal division. The figure is based on MacKinnon and Heatwole, 1981, with some modifications for clarity: we drew shadings and added the position of the pulmonary artery. (B) Resin-injected coronary vessels of the mouse (17.5 dpc) and quail (stage 28) embryos. Scale bars: 1 mm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83005/elife-83005-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The right panels are the partial enlargements of the left panels. The blue arrow shows the coronary vein. Scale bars: 500 µm.
+
 Coronary arteries are morphologically diverse and are frequently lost among teleosts, indicating that they are not essential for survival in this group, unlike in amniotes (e.g. Grant and Regnier, 1926). Thus, the knowledge of the morphological evolution of coronary arteries may contribute to our understanding of physiological changes in the heart during the water-to-land transition. Here, we compared the anatomy and development of the coronary vasculature in various vertebrate lineages to clarify the evolution of the unique coronary circulation of amniotes.
 
 ## Results
 
-## Early development of cardiac vessels is comparable in mice and frogs
+### Early development of cardiac vessels is comparable in mice and frogs
 
 We first compared the anatomy of mice (Mus musculus) and Japanese quails (Coturnix japonica) to confirm the morphology of the coronary arteries. In a 17.5 days post-coitum (dpc) murine fetus, the two coronary arteries branched from the root of the aorta, part of the outflow tract (Figure 1B and Figure 1—figure supplement 1). They were distributed on the surface of the ventricle. Similarly, in quail at stage 28, the two coronary arteries branched from the aortic root and were distributed on the ventricular wall (Figure 1B). Their branching points and distribution patterns were identical to those in lizards and snakes (Figure 1A; see MacKinnon and Heatwole, 1981).
 
 To investigate the early development of coronary arteries in mice, we performed immunohistochemical staining of pharyngula-stage embryos with antibody against PECAM-1. We found two distinct vessel structures: aortic subepicardial vessels (ASVs) and the primitive coronary plexus (The reconstructed image is in Figure 2A also see Figures 2B and 3A, B; Figure 2—figure supplement 1), in agreement with Chen et al., 2014. By 10.5 dpc, the primitive coronary plexus was already visible as a dotted pattern on the ventricular surface. The ASVs formed plexuses surrounding the pharyngeal arteries and one small vessel opening to the outflow tract at the root of the left branch of the truncus arteriosus (arrowheads in Figure 2A, Figure 2—figure supplement 1A). At 11.5 dpc, the position of the ASV orifice was identical to that at 10.5 dpc (arrowheads). No vasculature was detected on the outflow trunk at 10.5 and 11.5 dpc, indicating that the ASVs of the pharyngeal arches and ventricular primitive coronary plexus were physically separated (Figure 2A, Figure 2—figure supplement 1A). By 12.5 dpc, the ASVs extended from the orifice on the outflow trunk (aorta), and their peripheral end was anastomosed with the primitive coronary vessels (arrow in Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83005/elife-83005-fig2-v1.jpg)
+
+**Figure 2.:** (A) Ventral views of three-dimensional reconstructed images of murine hearts. We visualized two types of primitive blood vessels: aortic subepicardial vessels (ASVs; pink) and primitive coronary plexuses (green). Although a plexus of vessels surrounded the ASVs, we visualized only the thickest vessels connected to the orifice (pink, indicated with arrowheads) to facilitate recognition. The ASV orifices were located at the bifurcation point of the outflow tract. We also found an extra orifice in the left carotid artery at 11.5 dpc (asterisk). At 12.5 dpc, the peripheral end of the ASV formed an anastomosis with the primitive coronary plexus at the outflow tract–ventricle boundary (arrow). Blood vessels were visualized using immunohistochemical staining for PECAM-1 (panel B and Figure 2—figure supplement 1). (B) Fluorescence images used to construct the three-dimensional images in (A). Transverse sections at the levels a–c in the left panel are shown in the right panels. The peripheral end of the ASV merged into the aorta (c). (C) Ventral views of three-dimensional reconstructed images of the hearts of the Japanese tree frog (Hyla japonica) constructed from histological sections show small vessels located on the outflow tract with orifices at the same location as in mice (arrowheads). No primitive coronary plexuses were found. Ao, aorta; BC, bulbus cordis; Ca, carotid artery; LA, left atrium; oft, outflow tract; Pa, pulmonary artery; RA, right atrium; TA, truncus arteriosus; Vent, ventricle. Scale bars: 500 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83005/elife-83005-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Hearts at 10.5 and 11.5 dpc. Right panels are the transverse sections at the levels (dashed lines) of the ASV orifices (arrowheads). (B) Heart at 12.5 dpc. Panels a and b show images taken at different depths. The arrowhead and the arrow indicate the positions of the primary and secondary orifices, respectively. Also see Figure 2A and B. Ao, aorta; Ca, carotid artery; LA, left atrium; RA, right atrium; oft, outflow tract; Vent, ventricle.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83005/elife-83005-fig3-v1.jpg)
 
@@ -56,13 +72,13 @@ To investigate the early development of coronary arteries in mice, we performed 
 
 We also examined the development of the cardiac vasculature in Japanese tree frogs (Hyla japonica). In this species, larvae (tadpoles) are aquatic, but adults are terrestrial. In tadpoles (stage 33), we observed a small vasculature at the point of outflow tract bifurcation, with an orifice at the root of the left branch of the truncus arteriosus (Figure 2Ca). During metamorphosis (stage 42) and at the terrestrial juvenile stage (stage 46), the morphology of the truncus arteriosus did not change much, and the position of the orifice remained unchanged. At stage 46, the vessels that extended from the orifice were distributed on the outflow tract as truncal coronary vessels. On the basis of the positions of the orifices and the distribution patterns, these outflow truncal vessels in frogs were comparable to ASVs in mice. In contrast, no primitive coronary plexus was observed throughout the development in frogs.
 
-## Coronary arteries are established in amniotes by remodeling of ASVs and primitive coronary vessels
+### Coronary arteries are established in amniotes by remodeling of ASVs and primitive coronary vessels
 
 To understand late development of the coronary vasculature in amniotes, we conducted whole-mount immunohistochemistry with PECAM-1 staining in mice and quails. In mice at 13.5 dpc, the proximal part of the ASVs degenerated and the cranial half of the aorta became avascular (Figure 3A). Subsequently, ASVs disappeared and ventricular coronary arteries were established (Figure 1—figure supplement 1). The development of quail was consistent with that of mice (Figure 3B). At stage 19, no QH-1-positive cells were observed on the surface of the outflow tract and a small vascular network was found around the pharyngeal arches. At stage 27, QH-1-positive endothelial cells formed a fine vascular plexus from the cranial part of the outflow tract toward the aortic root. At stage 35, the arterial plexuses of the aorta and pulmonary trunk degenerated and coronary arteries were formed secondarily on the ventricular surface.
 
 The above developmental process was consistent with that reported in previous studies in mice. Namely, a novel orifice is formed by an ingrowth from the connection of the ASVs and the primitive coronary plexus, and remodeling results in the secondary formation of the adult ventricular coronary arteries (Bogers et al., 1989; Red-Horse et al., 2010; Peng et al., 2013; Tian et al., 2013; Chen et al., 2014; Ivins et al., 2015; He and Zhou, 2018). To confirm this pattern and to understand whether it is common to other amniotes, such as birds, we conducted histological analysis in mice and quails. In 12.5 dpc mouse embryos, the ASV orifice was found at the root of the carotid artery (Figure 3Ca) and contained PECAM-1-positive endothelial cells (Figure 3Cb), as observed by confocal microscopy (Figure 2B). At the anastomosis point between ASVs and the primitive coronary plexus, a vessel continued to the aorta, forming a novel (secondary) orifice (Figure 3Cc; also see Figure 2Bc, Figure 2—figure supplement 1B). At 13.5 dpc, the orifice of the carotid artery was lost and the secondary orifice became larger (Figure 3Cd). In quail embryos, ASVs were more finely reticulated than in mouse embryos, making it difficult to track their pathways; nevertheless, we found endothelial invasion into the aortic wall from the ASV network at the aortic root at stage 30 (Figure 3C). These results indicate that the amniote ASVs are formed as a continuous endothelial structure from the pharyngeal region to the vascular network around the aortic root and contribute to the formation of the secondary orifice of the coronary artery. Thus, the unique coronary arteries developed stepwise in amniotes through remodeling, establishing novel orifices, and reorganizing the vascular networks.
 
-## Amphibians retain ASV-like vascular networks throughout their lives
+### Amphibians retain ASV-like vascular networks throughout their lives
 
 To understand the development of coronary vessels in amphibians after metamorphosis, we examined the anatomy of some frogs and newts. In breeding-aged H. japonica, the orifice of the outflow coronary vessels opened in the left branch of the truncus arteriosus, particularly at the root of the carotid trunk (Figure 4A). Thus, the topographical position of the coronary vessel was the same as at the juvenile stage (stage 46; Figure 2C). Histologically, these vessels were distributed on the surface of the outflow tract, but not on the ventricle. Examination of the ink-injected hearts of the American bullfrog (Lithobates catesbeianus) was consistent with this result (Figure 4B).
 
@@ -76,7 +92,7 @@ We found the above vascular distribution to be conserved not only in Anura but a
 
 These findings suggest that frogs develop a vascular network that is morphologically similar to that of the ASVs and is arranged directly on the outflow tract as thick truncal coronary vessels, whereas the ventricle has no vascular network on its surface. Given the similarity of adult anatomical structures, the development of these ASV-like vessels is likely common to anuran and urodele amphibians.
 
-## Coronary veins are conserved among tetrapods
+### Coronary veins are conserved among tetrapods
 
 As we found that coronary arteries are divergent between amniotes and amphibians, we examined coronary veins in this respect. In amniotes, blood supplied by coronary arteries enters coronary veins and is collected in one trunk, which opens into the sinus venosus (Grant and Regnier, 1926; Figure 5A). In 15.5 dpc mouse embryos, the connections of the coronary artery and the vein were established (Figure 1—figure supplement 1).
 
@@ -86,9 +102,17 @@ As we found that coronary arteries are divergent between amniotes and amphibians
 
 In amphibians, a vascular system distinct from truncal ASV-like vessels was found in the outflow tract, which connected to a single tube and opened into the sinus venosus (Figure 5B and C). Although peripheral vessels were not distributed on the ventricle, as in amniotes, their brancheing points were in the same position (Figure 5D), and this vessel should be regarded as a coronary vein in amphibians. Thus, unlike coronary arteries, the coronary vein is likely conserved between amniotes and amphibians.
 
-## Coronary arteries in fishes
+### Coronary arteries in fishes
 
 To further investigate the evolutionary history of coronary arteries, we checked their morphology in the zebrafish (Danio rerio) and chondrichthyans. In adult flk1:egfp zebrafish (72 days post-fertilization, dpf), a peripheral network of coronary vessels was found throughout the entire surface of the ventricle (Figure 6A). These ventricular coronary arteries led to the heart over a long distance directly from the hypobranchial artery, which branched off from the branchial arches (Figure 6A and B), in agreement with Hu et al., 2001. Before reaching the ventricle, this hypobranchial artery bifurcated and its two branches extended ventrally and dorsally to connect to the vascular network on the ventricular wall. Unlike the ASVs of amniotes and in sharp contrast to the ASV-like vessels of amphibians, these vessels in the zebrafish were not distributed in the walls of the outflow tract.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83005/elife-83005-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) flk1:egfp zebrafish at 72 dpf (juvenile). (B) Three-dimensional image. (C) flk1:egfp zebrafish at 36, 46, and 50 dpf. The hypobranchial arteries (pink) arose from the dorsal side of the pharyngeal arch arteries. The vascular network (green) appeared on the ventricular surface at 46 dpf and connected with the hypobranchial artery at 50 dpf. The numbers indicate the branchial arteries. (D) Chondrichthyans. The anatomical pattern of the hypobranchial and coronary arteries was identical to that of zebrafish. BA, bulbus arteriosus; CA, conus arteriosus; VA, ventral aorta; Vent, ventricle. Scale bars: 100 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83005/elife-83005-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Two-photon excitation microscopy images of the heart and aortic arch. The hypobranchial arteries are green in the magnified images (right column). At 3–4 dpf, an EGFP-positive endothelial bud appeared in the midline of the pharyngeal region and formed a Y-shaped structure. After 3 dpf, the hypobranchial artery expanded toward the cardiac outflow tract (ventral aorta). At 21 dpf, the hypobranchial artery formed a vascular plexus along the ventral aorta. (B) Confocal images of the ventral side of the heart. At 45 dpf, egfp-positive vessels formed a network on the surface of the outflow tract (bulbus arteriosus). At 46 dpf, these vessels became connected with the hypobranchial artery. PA1, first pharyngeal artery; PA2, second pharyngeal artery; VA, ventral aorta. Scale bars: 100 μm.
 
 At the late pharyngula stage (31–38 hr post-fertilization, hpf) of flk1:egfp zebrafish embryos, the Y-shaped hypobranchial artery appeared in the midline of the pharyngeal region, and its lateral branches bilaterally connected with the first pharyngeal arteries of the mandibular arch (Figure 6—figure supplement 1A). The mid-caudal branch of the Y-shaped artery extended caudally toward the cardiac outflow tract. After hatching (48–72 hpf), it further extended along the ventral aorta (3–14 dpf) and formed a vascular plexus on the aorta around 21 dpf (Figure 6—figure supplement 1A). Around 36 dpf (juvenile stage), the hypobranchial artery was identified as a vessel running on the ventral side of the ventral aorta (Figure 6B). At 45 dpf, a vascular plexus was formed on the ventricle close to the aortic root, and part of it ttransiently covered the bulbus arteriosus (Figure 6—figure supplement 1B). At 46 dpf, it formed connections with the mid-caudal elongation of the hypobranchial artery (Figure 6C, Figure 6—figure supplement 1B). The formation of ventricular coronary arteries was complete by around 50 dpf, slightly before the adult stage.
 
@@ -96,7 +120,7 @@ In the zebrafish, the hypobranchial artery originates in the region of branchial
 
 In chondrichthyans, we found anatomical features similar to those of adult zebrafish, although their arteries supply the wall of the outflow tract (Figure 6D). In Lamna sp. and Narke japonica, the coronary artery originated from a vessel further cephalad than the bulbus arteriosus (outflow tract). In Deania calcea, the arterial trunk branched from the branchial artery bifurcated on the conus arteriosus (outflow tract) and then supplied its peripheral branches to the ventricle.
 
-## Histological structure of the ventricles
+### Histological structure of the ventricles
 
 We also compared the histology of the ventricles in fetuses and adults of each species to gain insights into the relationships between the morphology of coronary vasculature and ventricular structures (Figure 7).
 
@@ -110,7 +134,7 @@ Thus, histologically, there does not seem to be a clear correlation between the 
 
 ## Discussion
 
-## ASVs as ancestral coronary arteries
+### ASVs as ancestral coronary arteries
 
 Since Ibn al-Nafis discovered coronary arteries in the 13th century (Numan, 2014), their developmental origin has been controversial. Traditionally, it was believed that ventricular coronary arteries originate from the aortic wall in amniotes through outgrowth and sprouting angiogenesis (Bennett, 1936; Hutchins et al., 1988). However, more recent studies have demonstrated in mice that amniote-type ventricular coronary arteries develop through the reconstitution of embryonic vessels (ASVs) and the primitive coronary plexus, with the ingrowth formation of orifices (Bogers et al., 1989; Red-Horse et al., 2010; Peng et al., 2013; Tian et al., 2013; Chen et al., 2014; Ivins et al., 2015; He and Zhou, 2018). Our present results suggest that the coronary artery develops via reconstitution of the primitive vessels in mice and quails and this developmental process should be unique to amniotes.
 
@@ -124,7 +148,7 @@ We suggest that caecilian coronary arteries are unlikely to be ancestral to thos
 
 Histologically, ASV-like vessels in tadpoles are small and may have the identities of both lymphatic and blood vessels, similar to ASVs in mice. However, in adults, they thicken to form outflow tract vessels and contain numerous blood cells (Figure 4), indicating their function as mature blood vessels. Since these vessels constitute a network with coronary veins derived from the sinus venosus in their periphery, ASV-like vessels in tadpoles become arteries in adult amphibians. Comparison with the morphology of lungfish, bichir, and shark vessels suggests that amphibian ASV-like vessels are the ancestral form of coronary arterial vessels in jawed vertebrates, with ASVs in amniotes representing remnants of this form. While amniote ASVs have probably lost their arterial function, they may be maintained as embryonic primordia for the subsequent development. Thus, the existence of ASVs in amniotes may be explained as developmental burden (Riedl, 1978), which is typically exemplified by notochords in vertebrates (Fujimoto et al., 2022).
 
-## Diversity of coronary arteries in fishes
+### Diversity of coronary arteries in fishes
 
 Whereas the ancestral form of coronary arteries is conserved among mammals, birds, and amphibians (except caecilians) as ASVs or ASV-like vessels, the coronary circulation of fishes is highly diverse and whether it is homologous to that of tetrapods remains unclear (e.g. Grant and Regnier, 1926).
 
@@ -138,7 +162,7 @@ It should be noted that adult ventricular coronary arteries differ in their endo
 
 In summary, the origin of the coronary arteries of jawed vertebrates may be defined by the presence of the pharyngeal vessels (e.g., ASVs, amphibian ASV-like vessels, and hypobranchial arteries) and the primitive coronary plexus, and these two vascular networks have combined to produce a variety of coronary vasculature morphologies.
 
-## Amniote evolution and the establishment of the true coronary artery
+### Amniote evolution and the establishment of the true coronary artery
 
 The causes of the acquisition of novel amniote-type coronary arteries through remodeling are unclear. Coronary artery remodeling in amniotes can hardly be attributed solely to functional changes in the ventricles because lizards and snakes have spongy ventricles (Jensen et al., 2013a; Jensen et al., 2013b) but also have the amniote-type coronary arteries. Thus, the amniote-specific coronary artery remodeling may be related to morphological changes in the pharyngeal region rather than to functional requirements (Figure 8A).
 
@@ -152,7 +176,7 @@ Only one exception is known among amniotes. The orifice in turtles is in the mid
 
 The evolutionary origin of extrinsic cardiac arteries is still a mystery. Cyclostomes do not have coronary circulation, but whether this is the ancestral condition or a secondary loss is uncertain (Grant and Regnier, 1926). If they have retained the ancestral pattern, the establishment of extrinsic cardiac vessels may be related to the heterotopic shift of the cardiac region and head–trunk interface in the ancestor of gnathostomes (Higashiyama et al., 2016a), although further studies are warranted in this lineage.
 
-## Clinical implications of the coronary artery development
+### Clinical implications of the coronary artery development
 
 Using the present theory, we can explain some congenital coronary artery abnormalities, an uncommon disease entity covering a broad spectrum of abnormalities (Figure 8B). Although many cases remain asymptomatic and are incidentally found by coronary angiography, these abnormalities sometimes cause sudden death (Taylor et al., 1992; Yuan, 2014; Villa et al., 2016). In particular, the anomalous origin of the coronary artery from the innominate (brachiocephalic) artery or adjacent aortic arch is accompanied by other severe anomalies and is often lethal (Davis and Lie, 1977; Asada et al., 2019; Pandey et al., 2019), although some patients survive (Santucci et al., 2001; Duran et al., 2008; Kim et al., 2009). Since the brachiocephalic artery is derived from the right third pharyngeal arch artery and they pass across the ventral side of the ascending aorta, the anomalous coronary arteries in these reports are similar to ASVs. Thus, this type of anomaly can be considered persistent embryonic vasculature.
 
@@ -160,7 +184,7 @@ In conclusion, the present study suggests that the ventricular coronary artery, 
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Wild-type mice (Mus musculus) of the ICR background were kept in an environmentally controlled room at 23 ± 2°C with a relative humidity of 50–60% under a 12 hr light: 12 hr dark cycle. Embryonic ages were determined by timed mating, with the day of the plug being 0.5 dpc.
 
@@ -174,36 +198,36 @@ Chondrichthyan samples were obtained through fish markets, mainly from incidenta
 
 Data for lungfish and coelacanth were obtained from a single sample, but all other data are based on at least four samples; as we found no differences among the samples, we did not specify the sample size in the text. All animal experiments were approved by the University of Tokyo Animal Care and Use Committee and were performed in accordance with the institutional guidelines and the Act on Welfare and Management of Animals.
 
-## Histological sections
+### Histological sections
 
 To prepare cryosections, samples were fixed in 4% paraformaldehyde (PFA) in PBS overnight at 4 °C and washed with PBS. The samples were transferred consecutively into 10% sucrose in PBS, 30% sucrose in PBS, and 30% sucrose in Optimal Cutting Temperature (OCT) compound (Tissue Tek, Sakura Finetek, Tokyo, Japan) for 30 min at 4 °C for each step, and embedded in 100% OCT compound. The embedded block was stored at −20 °C before use. The samples were cryosectioned (8–12 µm thick).
 
 To prepare paraffin sections, samples were fixed with Serra’s solution (a mixture of formalin, ethanol, and acetic acid at 7:2:1) overnight and stored in 70% ethanol at RT. The samples were dehydrated stepwise with an ethanol-to-xylene series and embedded in paraffin. The paraffin blocks were cut into 6- to 9-µm-thick sections. The sections were stained with Alcian blue, hematoxylin, and eosin by using the standard protocol (HE staining).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Cryosections were blocked with 1% skim milk in PBS with 0.5% Tween-20 at RT for 15 min and incubated with primary monoclonal antibody (rat anti-mouse PECAM-1 [CD31; BD Pharmingen, San Diego, CA, USA; 1:400] or mouse monoclonal anti-QH-1 [Developmental Studies Hybridoma Bank; 1:100]) at 4 °C overnight. The sections were washed in PBS four times at RT and incubated with Alexa Fluor–conjugated secondary antibodies (Abcam, 1:400) for 1 hr. The sections were washed in PBS five times and mounted with Aqua-Poly/Mount (Cosmo Bio Co., Ltd., Tokyo, Japan). Nuclei were visualized with DAPI (Molecular Probes, Eugene, OR, USA). Fluorescence signals were visualized under a computer-assisted confocal microscope (Nikon D-Eclipse C1), and images were processed using NIS Elements software (Nikon, Tokyo, Japan). The same protocol was followed for whole-mount hearts and embryos, except that they were incubated with secondary antibodies overnight. Some sections were incubated with biotin-conjugated secondary antibodies and visualized using the Vectastain ABC System (Vector Laboratories, Burlingame, CA, USA).
 
-## Three-dimensional reconstruction
+### Three-dimensional reconstruction
 
 Images of histological sections or confocal images were loaded into the Amira software platform (Thermo Fisher Scientific, Waltham, MA, USA) with a voxel size appropriate to section thickness.
 
-## Ink and latex injection
+### Ink and latex injection
 
 To visualize coronary arteries, Xenopus laevis, red-bellied newts, and American bullfrogs were anesthetized at appropriate stages on ice or with 0.1% tricaine methanesulfonate (MS-222; Wako, Japan). Ink (Kiwa-Guro, Sailor, Japan) was gently injected using a glass micropipette from the hepatic portal vein. The hearts were then collected and fixed in 4% PFA overnight at 4 °C. The samples were cleared by CUBIC solution (Susaki et al., 2014) and examined under a stereo microscope. Mouse and quail hearts were injected with latex or resin as in Higashiyama et al., 2016b.
 
-## Visualization of the vascular system in zebrafish
+### Visualization of the vascular system in zebrafish
 
 Samples were fixed in 4% PFA overnight at 4 °C, trimmed, and immersed in the CUBIC solution overnight at RT. Fluorescence signals were visualized under the Nikon D-Eclipse C1 microscope; z-stack images (2–5 µm) were used.
 
-## Live imaging of zebrafish
+### Live imaging of zebrafish
 
 A multi-photon excitation microscope (FV1000MPE, Olympus, Tokyo, Japan) equipped with a water immersion 20×lens (XLUMPlanFL, 1.0NA, Olympus) was used. Sequential images were processed with FV10-ASW 3.1 viewer (Olympus) and analyzed with the Imaris software (Bitplane, Belfast, UK).
 
-## Micro CT scan
+### Micro CT scan
 
 The lungfish heart was fixed with 4% PFA and gradually dehydrated with the series of ethanol and then treated with 0.3% phosphotungstic acid (PTA; Wako, Japan) in 70% ethanol for 4 days according to Metscher, 2009. Images were acquired with a SkyScan 1172 scanner (Bruker) as following parameters; source voltage = 100 kV, source current = 100 µA, image pixel size = 10.14 µm, exposure = 295ms, and rotation step = 0.460 degree.
 
-## MRI scan
+### MRI scan
 
 The magnetic resonance image of the sample was acquired with a magnetic resonance imaging system using a vertical-bore 4.7 Tesla superconducting magnet (Hashimoto et al., 2014). The acquisition parameters are as follows: field of view (FOV)=25.6 mm cube, number of image matrix = 256 cube, voxel size = 100 microns cube, pulse sequence = three-dimensional spin-echo sequence, repetition time (TR)=200ms, echo time (TE)=12ms, number of signal accumulation = 2, and image acquisition time = 7.3 hr.

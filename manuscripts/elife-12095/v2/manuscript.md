@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.12095.001 GPIHBP1 is a glycolipid-anchored membrane protein of capillary endothelial cells that binds lipoprotein lipase (LPL) within the interstitial space and shuttles it to the capillary lumen. The LPL•GPIHBP1 complex is responsible for margination of triglyceride-rich lipoproteins along capillaries and their lipolytic processing. The current work conceptualizes a model for the GPIHBP1•LPL interaction based on biophysical measurements with hydrogen-deuterium exchange/mass spectrometry, surface plasmon resonance, and zero-length cross-linking. According to this model, GPIHBP1 comprises two functionally distinct domains: (1) an intrinsically disordered acidic N-terminal domain; and (2) a folded C-terminal domain that tethers GPIHBP1 to the cell membrane by glycosylphosphatidylinositol. We demonstrate that these domains serve different roles in regulating the kinetics of LPL binding. Importantly, the acidic domain stabilizes LPL catalytic activity by mitigating the global unfolding of LPL's catalytic domain. This study provides a conceptual framework for understanding intravascular lipolysis and GPIHBP1 and LPL mutations causing familial chylomicronemia. DOI: http://dx.doi.org/10.7554/eLife.12095.001
+GPIHBP1 is a glycolipid-anchored membrane protein of capillary endothelial cells that binds lipoprotein lipase (LPL) within the interstitial space and shuttles it to the capillary lumen. The LPL•GPIHBP1 complex is responsible for margination of triglyceride-rich lipoproteins along capillaries and their lipolytic processing. The current work conceptualizes a model for the GPIHBP1•LPL interaction based on biophysical measurements with hydrogen-deuterium exchange/mass spectrometry, surface plasmon resonance, and zero-length cross-linking. According to this model, GPIHBP1 comprises two functionally distinct domains: (1) an intrinsically disordered acidic N-terminal domain; and (2) a folded C-terminal domain that tethers GPIHBP1 to the cell membrane by glycosylphosphatidylinositol. We demonstrate that these domains serve different roles in regulating the kinetics of LPL binding. Importantly, the acidic domain stabilizes LPL catalytic activity by mitigating the global unfolding of LPL's catalytic domain. This study provides a conceptual framework for understanding intravascular lipolysis and GPIHBP1 and LPL mutations causing familial chylomicronemia.
 
 ## Introduction
 
@@ -44,59 +44,176 @@ In the current study, we used highly purified proteins and a combination of hydr
 
 ## Results
 
-## Production and purification of recombinant soluble GPIHBP1
+### Production and purification of recombinant soluble GPIHBP1
 
-A secreted version of human GPIHBP1
+A secreted version of human GPIHBP11–131 was produced in Drosophila S2 cells as a fusion protein with uPAR domain III (Figure 1—figure supplement 1). However, this protein proved to be prone to an internal cleavage after Arg38 during enterokinase-mediated removal of the uPAR tag. This unexpected cleavage event markedly reduced the yields of purified GPIHBP11–131. Alignments of multiple primate GPIHBP1 sequences revealed that Arg38 is not conserved during evolution. In GPIHBP1 from Nomascus leucogenys, which is 94% identical to human GPIHBP1, the residue corresponding to Arg38 is Gly38. Based on these homology considerations, we therefore expressed and purified a modified protein in which Arg38 was replaced with Gly; this construct yielded high levels of pure GPIHBP11–131/R38G along with moderate amounts of a truncated GPIHBP134–131/R38G. That truncated protein was the result of an additional cleavage after Arg33. Both GPIHBP11–131 and GPIHBP134–131 (lacking the acidic domain) were purified to homogeneity by cation-exchange chromatography (Figure 1—figure supplement 2). Importantly, both proteins were monomeric with no traces of aggregation, as judged by analytical size-exclusion chromatography (Figure 1C). This homogeneity is a noteworthy achievement because earlier studies had shown that GPIHBP1 is highly susceptible to multimerization (Beigneux et al., 2015). The anomalous partitioning of GPIHBP11–131 during size-exclusion chromatography is most likely a consequence of a large Stokes radius caused by the presence of an intrinsically disordered N-terminal peptide (see next section). Consistent with this assumption, GPIHBP134–131, which lacks the acidic domain, eluted with the expected hydrodynamic volume for a globular protein (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig1-v2.jpg)
 
-**Figure 1.:** Panel A shows a cartoon representation for glycolipid-anchored human GPIHBP1. Predicted β-sheets are shown in cyan; acidic amino acid residues in the N-terminal domain are highlighted by red sticks; and the consensus disulfide bonds are shown in yellow. Panel B shows a “disorder prediction” for human GPIHBP1 sequence based on the IUPred algorithm. Locations of the six strands of the three-fingered–fold of the LU domain are highlighted by boxes (A–F); strands predicted to form β-sheets are colored cyan. Panel C documents the homogeneity and monomer status of purified GPIHBP11–131/R38G (#A) and GPIHBP134–131/R38G (#B) by analytical size-exclusion chromatography with a Superdex HR75 column operated with 20 mM NaH2PO4 and 150 mM NaCl (pH 7.2) and SDS-PAGE (inset). Elution positions of the calibration standards are indicated by blue arrows: ovalbumin (43 kDa), carbonic anhydrase (29 kDa), ribonuclease (13 kDa), and aprotenin (6.5 kDa). Panel D provides a heat map representation of the relative deuterium uptakes (relative to a fully exchanged control) in peptic peptides from free and LPL-occupied GPIHBP11–131 as assessed by HDX-MS. Deuterium uptake was measured after 10, 100, and 1000 s incubations in D2O, and relative deuterium uptake is assigned according to the color code (ranging from blue, no deuterium uptake, to red, full deuterium uptake). A cartoon representation of the differential deuterium uptake for the LU domain between free and LPL-occupied GPIHBP1 after a 10-s exchange is shown in panel E. Shown as sticks are the positions of Thr85, Ser87, and Trp89 in β-strand D of GPIHBP1. Raw deuterium uptake values for peptides 1–21 and 83–109 are shown for free and LPL-occupied GPIHBP1 (blue and red solid lines, respectively). The dashed line represents a “full deuteration” control. GPI, glycosylphosphatidylinositol; MS, hydrogen–deuterium exchange mass spectrometry; LU, Ly6/uPAR; SDS-PAGE, sodium dodecyl sulfate polyacrylamide gel electrophoresisDOI: http://dx.doi.org/10.7554/eLife.12095.003
+**Figure 1.:** Panel A shows a cartoon representation for glycolipid-anchored human GPIHBP1. Predicted β-sheets are shown in cyan; acidic amino acid residues in the N-terminal domain are highlighted by red sticks; and the consensus disulfide bonds are shown in yellow. Panel B shows a “disorder prediction” for human GPIHBP1 sequence based on the IUPred algorithm. Locations of the six strands of the three-fingered–fold of the LU domain are highlighted by boxes (A–F); strands predicted to form β-sheets are colored cyan. Panel C documents the homogeneity and monomer status of purified GPIHBP11–131/R38G (#A) and GPIHBP134–131/R38G (#B) by analytical size-exclusion chromatography with a Superdex HR75 column operated with 20 mM NaH2PO4 and 150 mM NaCl (pH 7.2) and SDS-PAGE (inset). Elution positions of the calibration standards are indicated by blue arrows: ovalbumin (43 kDa), carbonic anhydrase (29 kDa), ribonuclease (13 kDa), and aprotenin (6.5 kDa). Panel D provides a heat map representation of the relative deuterium uptakes (relative to a fully exchanged control) in peptic peptides from free and LPL-occupied GPIHBP11–131 as assessed by HDX-MS. Deuterium uptake was measured after 10, 100, and 1000 s incubations in D2O, and relative deuterium uptake is assigned according to the color code (ranging from blue, no deuterium uptake, to red, full deuterium uptake). A cartoon representation of the differential deuterium uptake for the LU domain between free and LPL-occupied GPIHBP1 after a 10-s exchange is shown in panel E. Shown as sticks are the positions of Thr85, Ser87, and Trp89 in β-strand D of GPIHBP1. Raw deuterium uptake values for peptides 1–21 and 83–109 are shown for free and LPL-occupied GPIHBP1 (blue and red solid lines, respectively). The dashed line represents a “full deuteration” control. GPI, glycosylphosphatidylinositol; MS, hydrogen–deuterium exchange mass spectrometry; LU, Ly6/uPAR; SDS-PAGE, sodium dodecyl sulfate polyacrylamide gel electrophoresis
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** 1–131/R38G and DIII-ent-hLPL313–438.Schematic representation of the vectors used for Drosophila S2 cell expression of a soluble, secreted human GPIHBP11–131 (panel A) and the CTD313–448 of human LPL (panel B). Both constructs use the third LU domain from human uPAR (DIII192–283) as an N-terminal purification tag as described (Gårdsvoll et al., 2013). The enterokinase cleavage site used to excise the recombinant protein (and remove the uPAR tag) is highlighted in black. pMT and BiP represent the Drosophila metallothionein promoter and secretion signals, respectively. To optimize enterokinase-mediated excision of GPIHBP1, two mutations (DIIIR281G and GPIHBP1R38G) were introduced to silence two undesired cleavage sites for enterokinase. In the GPIHBP1 construct, the N-terminal signal peptide and the C-terminal hydrophobic peptide required for glycolipid anchoring have been omitted.DOI: http://dx.doi.org/10.7554/eLife.12095.004
+**Figure 1—figure supplement 1.:** Schematic representation of the vectors used for Drosophila S2 cell expression of a soluble, secreted human GPIHBP11–131 (panel A) and the CTD313–448 of human LPL (panel B). Both constructs use the third LU domain from human uPAR (DIII192–283) as an N-terminal purification tag as described (Gårdsvoll et al., 2013). The enterokinase cleavage site used to excise the recombinant protein (and remove the uPAR tag) is highlighted in black. pMT and BiP represent the Drosophila metallothionein promoter and secretion signals, respectively. To optimize enterokinase-mediated excision of GPIHBP1, two mutations (DIIIR281G and GPIHBP1R38G) were introduced to silence two undesired cleavage sites for enterokinase. In the GPIHBP1 construct, the N-terminal signal peptide and the C-terminal hydrophobic peptide required for glycolipid anchoring have been omitted.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** 1–131/R38G and GPIHBP134–131/R38G.Panel A shows a cation-exchange chromatography elution profile for 30 mg of purified DIII-ent-GPIHBP11–131/R38G after enterokinase cleavage. We used a 5 ml HiTrap SP FF column and a 35-ml linear gradient from 0 to 1.0 M NaCl in 50 mM CH3COOH, pH 4.5. The peaks correspond to: intact GPIHBP11–131/R38G (#A), GPIHBP134–131/R38G (#B), uncleaved fusion protein (#C) and the excised uPAR DIII tag (#D), as judged by SDS-PAGE of reduced and alkylated samples (panel B) and mass spectrometry (not shown). SDS-PAGE, sodium dodecyl sulfate polyacrylamide gel electrophoresis.DOI: http://dx.doi.org/10.7554/eLife.12095.005
+**Figure 1—figure supplement 2.:** Panel A shows a cation-exchange chromatography elution profile for 30 mg of purified DIII-ent-GPIHBP11–131/R38G after enterokinase cleavage. We used a 5 ml HiTrap SP FF column and a 35-ml linear gradient from 0 to 1.0 M NaCl in 50 mM CH3COOH, pH 4.5. The peaks correspond to: intact GPIHBP11–131/R38G (#A), GPIHBP134–131/R38G (#B), uncleaved fusion protein (#C) and the excised uPAR DIII tag (#D), as judged by SDS-PAGE of reduced and alkylated samples (panel B) and mass spectrometry (not shown). SDS-PAGE, sodium dodecyl sulfate polyacrylamide gel electrophoresis.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** 34–131 and GPIHBP11–131 in HDX-MS experiments.Differential deuterium uptake between intact GPIHBP11–131 and GPIHBP134–131 (a truncated GPIHBP1 lacking the N-terminal acidic domain) measured by HDX-MS at 25°C is shown as a butterfly plot. Deuterium uptake was traced for 10- (orange), 100- (black), and 1000-sec (blue). The shaded gray area corresponds to the largest standard deviation of the data sets recorded for each peptide. Data points represent the mean of triplicate measurements.DOI: http://dx.doi.org/10.7554/eLife.12095.006
+**Figure 1—figure supplement 3.:** Differential deuterium uptake between intact GPIHBP11–131 and GPIHBP134–131 (a truncated GPIHBP1 lacking the N-terminal acidic domain) measured by HDX-MS at 25°C is shown as a butterfly plot. Deuterium uptake was traced for 10- (orange), 100- (black), and 1000-sec (blue). The shaded gray area corresponds to the largest standard deviation of the data sets recorded for each peptide. Data points represent the mean of triplicate measurements.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** Peptides recovered after HDX and pepsin cleavage of recombinant human GPIHBP1 are shown as blue bars. HDX, hydrogen–deuterium exchange.DOI: http://dx.doi.org/10.7554/eLife.12095.007
+**Figure 1—figure supplement 4.:** Peptides recovered after HDX and pepsin cleavage of recombinant human GPIHBP1 are shown as blue bars. HDX, hydrogen–deuterium exchange.
 
-## Molecular model for GPIHBP1
+### Molecular model for GPIHBP1
 
 Homology considerations identify GPIHBP1 as a glycolipid-anchored protein with a single prototypical LU domain (Figure 1A). Unlike other members of this protein family, GPIHBP1 contains an N-terminal domain with 21 acidic amino acids (Glu, Asp). We propose that the first 30–35 N-terminal residues in GPIHBP1 have a very high propensity for being an intrinsically disordered region (Figure 1B). The disordered nature of the acidic domain is supported by: (1) the atypically large hydrodynamic volume of GPIHBP11–131 compared with GPIHBP134–131 (Figure 1C); (2) its susceptibility to limited proteolysis after Arg33 or Arg38; and (3) by the highly dynamic nature of the acidic domain as judged by extremely rapid hydrogen–deuterium exchange rates. In hydrogen–deuterium exchange/mass spectrometry (HDX-MS) studies, we observed 100% deuterium uptake in this domain even after the shortest exposure time (10 s) (Figure 1D and 1E), which is consistent with the predicted deuterium uptake for a disordered GPIHBP11–33 peptide (87% after 1 s and 100% after 10 s). In the same experiment, HDX profiles of peptides within the LU domain followed the secondary structure prediction. The deuterium uptake in the isolated LU domain in GPIHBP134–131 is indistinguishable from that of full-length GPIHBP11–131 (Figure 1—figure supplement 3), which implies that the acidic N-terminal region has little or no effect on the structure of GPIHBP1’s LU domain.
 
-## Characterizing the GPIHBP1•LPL interaction with HDX-MS
+### Characterizing the GPIHBP1•LPL interaction with HDX-MS
 
-To identify protein–protein binding interfaces and/or uncover conformational changes associated with GPIHBP1•LPL binding, we determined the hydrogen–deuterium exchange profiles for GPIHBP1, LPL, and GPIHBP1•LPL complexes. The GPIHBP1•LPL complexes were formed by incubating 5 µM GPIHBP1 with 5 µM LPL homodimers (LPL
+To identify protein–protein binding interfaces and/or uncover conformational changes associated with GPIHBP1•LPL binding, we determined the hydrogen–deuterium exchange profiles for GPIHBP1, LPL, and GPIHBP1•LPL complexes. The GPIHBP1•LPL complexes were formed by incubating 5 µM GPIHBP1 with 5 µM LPL homodimers (LPL2) for 15 min in 10 mM Na2HPO4, 150 mM NaCl (pH 7.4) at 25°C before monitoring solvent exchange after dilution into D2O for 10, 100, or 1000 s. We recovered 22 peptides from GPIHBP1 and 92 peptides from LPL after on-line pepsin digestion of quenched and tris (2-carboxyethyl) phosphine (TCEP)-reduced proteins at pH 2.5, which correspond to 100% and 87% sequence coverage, respectively (Figure 1–figure supplement 4 and Figure 2—figure supplement 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig2-v2.jpg)
 
-**Figure 2.:** Differential deuterium uptake values for free LPL and LPL occupied with intact GPIHBP11–131 (panel A) or the acidic domain peptide GPIHBP11–33 (panel B) are shown as butterfly representations. The butterfly plot in panel C compares LPL occupied with GPIHBP11–131 or GPIHBP11–33. Due to inherent instability of LPL homodimers, the deuterium uptake was only examined at 10- (orange) and 100-s (black) incubations. The data points represent the mean of triplicate measurements, and the shaded gray area corresponds to the largest standard deviation in the data sets recorded for each peptide. A total of 92 peptides were recovered from LPL, and they are numbered consecutively from the N-terminus. The sequences of the individual peptides are found in Figure 2—figure supplement 1B. The transparent red and cyan colors on the left in panel A localize peptides to either the NTD or the CTD domains of LPL, respectively. Panel D shows a cartoon representation of human LPL. Two regions having the most pronounced changes in deuterium uptake with GPIHBP1 binding are highlighted in green (residues 279–293) and blue (residues 402–419); basic residues are shown as sticks. CTD, C-terminal domain; LPL, lipoprotein lipase; NTD, N-terminal domain.DOI: http://dx.doi.org/10.7554/eLife.12095.008
+**Figure 2.:** Differential deuterium uptake values for free LPL and LPL occupied with intact GPIHBP11–131 (panel A) or the acidic domain peptide GPIHBP11–33 (panel B) are shown as butterfly representations. The butterfly plot in panel C compares LPL occupied with GPIHBP11–131 or GPIHBP11–33. Due to inherent instability of LPL homodimers, the deuterium uptake was only examined at 10- (orange) and 100-s (black) incubations. The data points represent the mean of triplicate measurements, and the shaded gray area corresponds to the largest standard deviation in the data sets recorded for each peptide. A total of 92 peptides were recovered from LPL, and they are numbered consecutively from the N-terminus. The sequences of the individual peptides are found in Figure 2—figure supplement 1B. The transparent red and cyan colors on the left in panel A localize peptides to either the NTD or the CTD domains of LPL, respectively. Panel D shows a cartoon representation of human LPL. Two regions having the most pronounced changes in deuterium uptake with GPIHBP1 binding are highlighted in green (residues 279–293) and blue (residues 402–419); basic residues are shown as sticks. CTD, C-terminal domain; LPL, lipoprotein lipase; NTD, N-terminal domain.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Panel A shows peptides recovered in the HDX-MS studies. Peptides recovered from bovine LPL after pepsin cleavage are shown as blue bars. The CTD is highlighted by the transparent light green box; N-linked glycosylation sites are shown (CHO); residues forming the catalytic triad are indicated by blue asterisks; heparin-binding sequences are shown by green asterisks. Panel B shows the inventory of 92 peptides recovered from LPL. Peptides designated with an asterisk display a bimodality of their isotopic envelopes after a 45-min incubation in H2O-buffers followed by 10 and 100 s incubations in D2O buffers (as illustrated for the peptic peptide 131–165 in Figure 6A). CHO, carbohydrate; CTD, C-terminal domain; HDX-MS, hydrogen–deuterium exchange mass spectrometry; LPL, lipoprotein lipase.DOI: http://dx.doi.org/10.7554/eLife.12095.009
+**Figure 2—figure supplement 1.:** Panel A shows peptides recovered in the HDX-MS studies. Peptides recovered from bovine LPL after pepsin cleavage are shown as blue bars. The CTD is highlighted by the transparent light green box; N-linked glycosylation sites are shown (CHO); residues forming the catalytic triad are indicated by blue asterisks; heparin-binding sequences are shown by green asterisks. Panel B shows the inventory of 92 peptides recovered from LPL. Peptides designated with an asterisk display a bimodality of their isotopic envelopes after a 45-min incubation in H2O-buffers followed by 10 and 100 s incubations in D2O buffers (as illustrated for the peptic peptide 131–165 in Figure 6A). CHO, carbohydrate; CTD, C-terminal domain; HDX-MS, hydrogen–deuterium exchange mass spectrometry; LPL, lipoprotein lipase.
+
+**Table 1.**
+ Kinetic rate constants for GPIHBP1 interactions with CTD and LPL homodimers.a
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>kon (105 M–1s–1)</th>
+      <th>koff (s–1)</th>
+      <th>KD (µM)</th>
+      <th>n</th>
+      <th>Capture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPIHBP11–131/R38G</td>
+      <td>10.4 ± 1.9</td>
+      <td>0.12 ± 0.04</td>
+      <td>0.12 ± 0.04</td>
+      <td>11</td>
+      <td>CTD</td>
+    </tr>
+    <tr>
+      <td>GPIHBP11–131</td>
+      <td>11.2 ± 4.0</td>
+      <td>0.22 ± 0.07</td>
+      <td>0.29 ± 0.13</td>
+      <td>10</td>
+      <td>CTD</td>
+    </tr>
+    <tr>
+      <td>GPIHBP134–131/R38G</td>
+      <td>1.0 ± 0.6</td>
+      <td>0.10 ± 0.01</td>
+      <td>1.41 ± 0.76</td>
+      <td>4</td>
+      <td>CTD</td>
+    </tr>
+    <tr>
+      <td>GPIHBP11–131/W89S</td>
+      <td>nbd</td>
+      <td>nbd</td>
+      <td>nbd</td>
+      <td>2</td>
+      <td>CTD</td>
+    </tr>
+    <tr>
+      <td>GPIHBP11–131/R38G N-glyb</td>
+      <td>10.6</td>
+      <td>0.16</td>
+      <td>0.15</td>
+      <td>2</td>
+      <td>CTD</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GPIHBP11–131/R38G</td>
+      <td>9.9 ± 5.0</td>
+      <td>0.023 ± 0.006</td>
+      <td>0.025 ± 0.007</td>
+      <td>8</td>
+      <td>LPL</td>
+    </tr>
+    <tr>
+      <td>GPIHBP11–131</td>
+      <td>6.5 ± 4.4</td>
+      <td>0.020 ± 0.007</td>
+      <td>0.038 ± 0.029</td>
+      <td>8</td>
+      <td>LPL</td>
+    </tr>
+    <tr>
+      <td>GPIHBP134–131/R38G</td>
+      <td>1.9 ± 0.4</td>
+      <td>0.019 ± 0.005</td>
+      <td>0.091 ± 0.012</td>
+      <td>4</td>
+      <td>LPL</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GPIHBP11–131/R38G</td>
+      <td>nbd</td>
+      <td>nbd</td>
+      <td>nbd</td>
+      <td>1</td>
+      <td>CTDC418Y</td>
+    </tr>
+    <tr>
+      <td>GPIHBP134–131/R38G</td>
+      <td>nbd</td>
+      <td>nbd</td>
+      <td>nbd</td>
+      <td>1</td>
+      <td>CTDC418Y</td>
+    </tr>
+  </tbody>
+</table>
+
+_aThe kinetic rate constants (kon and koff) were derived by global fitting of sensorgrams obtained by either single-cycle kinetics (LPL) or a mixture of single- and multi-cycle kinetics (the CTD of LPL); the dissociation equilibrium constant KD was calculated as kon/koff.bIntact GPIHBP11–131/R38G (2 nmols) was incubated overnight at 37°C with 2 U N-glycanase under native conditions. The deglycosylated protein remained monomeric, as judged by analytical size-exclusion chromatography (as performed in Figure 1C).n, number of separate determinations, each involving a complete set of analyte concentrations analyzed on different days and/or different CM4 chips; nbd, no specific binding detected; CTD, C-terminal domain; LPL, lipoprotein lipase._
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig3-v2.jpg)
 
-**Figure 3.:** Panel A shows repeat binding of 100 nM of recombinant CTD313–448 from human LPL to immobilized mAb 5D2 followed by multi-cycle injections of twofold dilutions of GPIHBP11–131 (black lines). The green line represents a buffer control; the blue line represents a repeat injection of 250 nM GPIHBP1 at the end of the experiment to demonstrate reproducibility. Panel B shows equilibrium binding isotherms for the interactions between the immobilized CTD of LPL and GPIHBP11–131 (blue), GPIHBP134–131 (red), and GPIHBP11–131/W89S (green) with the SPR signal at 380 s in panel A as equilibrium binding level. Panel C shows a kinetic evaluation of the double-referenced SPR data for GPIHBP11–131 with a global fit to a 1:1 binding model (fits shown in red). Note there is a slight decay of the binding signal at equilibrium due to a weak ligand-induced dissociation of the CTD from mAb 5D2; this effect translates into dissociation below baseline for the higher concentration of GPIHBP11–131. These effects were not observed for GPIHBP134–131. CTD, C-terminal domain; LPL, lipoprotein lipase; SPR, surface plasmon resonance.DOI: http://dx.doi.org/10.7554/eLife.12095.011
+**Figure 3.:** Panel A shows repeat binding of 100 nM of recombinant CTD313–448 from human LPL to immobilized mAb 5D2 followed by multi-cycle injections of twofold dilutions of GPIHBP11–131 (black lines). The green line represents a buffer control; the blue line represents a repeat injection of 250 nM GPIHBP1 at the end of the experiment to demonstrate reproducibility. Panel B shows equilibrium binding isotherms for the interactions between the immobilized CTD of LPL and GPIHBP11–131 (blue), GPIHBP134–131 (red), and GPIHBP11–131/W89S (green) with the SPR signal at 380 s in panel A as equilibrium binding level. Panel C shows a kinetic evaluation of the double-referenced SPR data for GPIHBP11–131 with a global fit to a 1:1 binding model (fits shown in red). Note there is a slight decay of the binding signal at equilibrium due to a weak ligand-induced dissociation of the CTD from mAb 5D2; this effect translates into dissociation below baseline for the higher concentration of GPIHBP11–131. These effects were not observed for GPIHBP134–131. CTD, C-terminal domain; LPL, lipoprotein lipase; SPR, surface plasmon resonance.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig4-v2.jpg)
 
-**Figure 4.:** The basic principles in the single-cycle kinetic titration are illustrated in panel A. Initially, LPL is captured in a noncovalent fashion on the CM4 sensor surface after a 150 s injection of 200 nM of purified LPL across the flow cell containing immobilized mAb 5D2. After a 600 s stabilization period, a series of five 90 s pulses with increasing analyte concentration are injected without intervening regeneration. The following concentrations of either mAb 4-1a (A), mAb 5D2 (A), GPIHBP11–131 (B), or GPIHBP134–131 (C) were analyzed: 12.5, 25, 50, 100, and 200 nM. Panels B and C shows the buffer referenced sensorgrams recorded for GPIHBP11–131 and GPIHBP134–131, respectively. The mathematical fitting to a simple 1:1 binding model are superimposed as red lines and the residuals are shown in green. LPL, lipoprotein lipase; SPR, surface plasmon resonance.DOI: http://dx.doi.org/10.7554/eLife.12095.012
+**Figure 4.:** The basic principles in the single-cycle kinetic titration are illustrated in panel A. Initially, LPL is captured in a noncovalent fashion on the CM4 sensor surface after a 150 s injection of 200 nM of purified LPL across the flow cell containing immobilized mAb 5D2. After a 600 s stabilization period, a series of five 90 s pulses with increasing analyte concentration are injected without intervening regeneration. The following concentrations of either mAb 4-1a (A), mAb 5D2 (A), GPIHBP11–131 (B), or GPIHBP134–131 (C) were analyzed: 12.5, 25, 50, 100, and 200 nM. Panels B and C shows the buffer referenced sensorgrams recorded for GPIHBP11–131 and GPIHBP134–131, respectively. The mathematical fitting to a simple 1:1 binding model are superimposed as red lines and the residuals are shown in green. LPL, lipoprotein lipase; SPR, surface plasmon resonance.
 
 As documented by the heat maps in Figure 1D, the conformation of the LU domain in GPIHBP11–131 was less dynamic when bound to LPL. In particular, we observed markedly reduced deuterium uptake within strands D and E of GPIHBP1 when it formed a complex with LPL (Figure 1E). This shift in the dynamics likely reflects a transition to a state with increased secondary structure and/or a direct engagement in a ligand-binding interface. The fact that the HDX-MS analysis of GPIHBP1 identified β-strand D as a candidate binding interface for LPL was not entirely unexpected given that a previous mutagenesis study had shown that individual alanine replacements of Thr85, Ser87, or Trp89 in β-strand D impaired LPL binding (Figure 1E) (Beigneux et al., 2011). Moreover, two missense mutations involving β-strand D have been associated with chylomicronemia in humans (i.e. Ser87→Pro [Buonuomo et al., 2015] and Thr88→Arg [Surendran et al., 2012]). Mutating residues within strand E of GPIHBP1 had little impact on LPL binding (Beigneux et al., 2011). The reduced deuterium uptake that we recorded for strand E in the presence of LPL probably relates to a higher propensity for β-sheet formation in the setting of the GPIHBP1•LPL complex. Strand E is one of the most versatile structures in LU proteins; it can adopt a random coil (snake venom α-neurotoxins), a β-strand (uPAR domains I and II), or an α-helix (CD59, Prod1, and uPAR domain III) (Kriegbaum et al., 2011). Interestingly, the deuterium uptake in the intrinsically disordered N-terminal acidic domain did not change with LPL binding. That finding suggests that the acidic domain either does not participate in the binding interaction or more likely is involved in very transient binding events with LPL (interactions that do not lead to the formation of stable hydrogen bonds).
 
 From the same set of experiments, we also extracted data concerning the effects on LPL by comparing the differential deuterium uptake between unoccupied LPL and LPL in complex with either intact GPIHBP11–131 (Figure 2A) or its N-terminal acidic domain peptide GPIHBP11–33 (Figure 2B). To minimize possible confounding effects from the inherent instability of unoccupied LPL, we only included deuterium uptake values for 10 and 100 s for the three different states of LPL. Comparing these states, we identified residues 402–419 in the CTD of LPL as the most likely interaction site for the LU domain of GPIHBP1 (shown in blue in the butterfly plot in Figure 2A). This assignment is based on the fact that GPIHBP11–131, but not GPIHBP11–33, attenuates the deuterium uptake in this particular region (Figure 2C). Two missense mutations in or close to this segment (C418Y and E421K) were identified in patients with chylomicronemia (Henderson et al., 1998; Henderson et al., 1996), and follow-up studies showed that both mutations impaired GPIHBP1 binding (Voss et al., 2011). It is possible that additional regions in the CTD of LPL are involved in GPIHBP1 binding but escaped detection in our HDX-MS experiments due to the lower level of sequence coverage for the CTD (69%) (Figure 2—figure supplement 1). The impact of the acidic domain peptide (GPIHBP11–33) on LPL deuterium uptake was less pronounced than with intact GPIHBP11–131 (Figure 2A and 2B), consistent with a more dynamic interaction (i.e. a shorter residence time of the peptide on LPL). Notwithstanding the more transient interaction, we did nevertheless observe that GPIHBP11–33 reduced deuterium uptake in LPL peptides spanning residues 279–293 (Figure 2B), which is localized in the domain interface between the NTD and CTD of LPL (Figure 2D). It is noteworthy that this region contains one of the heparin-binding sites in LPL enriched in basic residues (Arg281, Lys282, Arg284) (Hata et al., 1993) and therefore represents a potential binding partner for GPIHBP1’s acidic domain.
 
-## Kinetic rate constants for the interaction between GPIHBP1 and LPL
+### Kinetic rate constants for the interaction between GPIHBP1 and LPL
 
 To dissect the individual contributions of the folded LU domain and the intrinsically disordered acidic domain on the binding kinetics with LPL, we developed and optimized a SPR assay to measure this interaction. In brief, we used a BiacoreT200 to measure the binding kinetics between soluble, monomeric GPIHBP1 and either LPL’s CTD or intact LPL that had been captured on a CM4 sensor chip with an immobilized anti-LPL monoclonal antibody, 5D2. This antibody is well suited to capture and display both LPL and the CTD in a defined orientation because it recognizes both proteins with high affinity (Chang et al., 1998).
 
@@ -106,39 +223,82 @@ Kinetic assessment of the SPR binding data reveals that the 5–10-fold differen
 
 A similar kinetic assessment for the binding of LPL homodimers by multi-cycle titration was, however, inherently challenging because the conditions required to regenerate mAb 5D2 between cycles progressively reduced the capturing capacity of the sensor chip. To minimize this confounding factor, we performed a single-cycle kinetic titration of the interaction between GPIHBP1 and full-length LPL dimers captured by mAb 5D2. To be confident that the captured LPL was in a properly folded and homodimeric state, we initially performed a kinetic titration with two LPL-specific monoclonal antibodies (mAb 4-1a, which binds within residues 5–25 in LPL [Bensadoun et al., 2014] and mAb 5D2, which binds to residues 380–400 in the CTD of LPL [Chang et al., 1998]). As shown in Figure 4A, both antibodies bound immobilized LPL when analyzed by a single-cycle titration protocol. Calculation of their binding capacities [Rmax = 200 RU for mAb 4-1a (1.3 fmols/mm2) and Rmax = 309 RU for mAb 5D2 (2.1 fmols/mm2)] revealed molar surface-binding capacities that were similar to the surface density of the captured LPL homodimer (R900sec = 203 RU [2.0 fmols/mm2]). Because mAb 5D2 is used as both capture and detection agent in this experiment, our data suggest that the majority of the captured LPL on the sensor chip was in the form of homodimers.
 
-The single-cycle kinetic titrations revealed fast
+The single-cycle kinetic titrations revealed fast kon values for GPIHBP1•LPL interactions. The koff values for the LPL complexes with GPIHBP11–131 and GPIHBP134–131 were 5-fold slower than those for the corresponding CTD interaction, which indicates that GPIHBP1 forms a tighter complex with full-length LPL (Table 1, Figure 4B and 4C). To supplement the real-time binding kinetics recorded by SPR, we measured the equilibrium binding constants for the interaction between GPIHBP11–131/R38G and LPL in solution by microscale thermophoresis (MST) with a Monolith NT.115 (NanoTemper Technologies GmbH; Germany). In these studies, 5 nM Alexa-647–labeled GPIHBP11–131/R38G or GPIHBP134–131/R38G were incubated with increasing concentrations of LPL2 (10 pM to 350 nM). The binding isotherms were then calculated from the shifts in the thermophoresis of the fluorophore (Figure 5). With this experimental approach, we determined a KD of 5.7 nM for the LPL•GPIHBP11–131/R38G interaction and a KD of 147 nM for the GPIHBP134–131/R38G interaction. All things considered, we find that data with this solution-based assay aligns excellently with the binding affinities determined kinetically by SPR.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig5-v2.jpg)
 
-**Figure 5.:** The microscale thermophoresis signals for the interaction of LPL with 5 nM Alexa Flour-647–labeled GPIHBP11–131/R38G (panel A) and GPIHBP134–131/R38G (panel B) were recorded in quadruplicates for two-fold dilution series of unlabeled LPL2 (10 pM to 350 nM). The mean values and standard deviation for the thermophoresis are shown as well as a fitting to a 1:1 binding model (software supplied with Monolith NT.115). LPL, lipoprotein lipase.DOI: http://dx.doi.org/10.7554/eLife.12095.013
+**Figure 5.:** The microscale thermophoresis signals for the interaction of LPL with 5 nM Alexa Flour-647–labeled GPIHBP11–131/R38G (panel A) and GPIHBP134–131/R38G (panel B) were recorded in quadruplicates for two-fold dilution series of unlabeled LPL2 (10 pM to 350 nM). The mean values and standard deviation for the thermophoresis are shown as well as a fitting to a 1:1 binding model (software supplied with Monolith NT.115). LPL, lipoprotein lipase.
 
-## Global unfolding of LPL’s catalytic domain
+#### Global unfolding of LPL’s catalytic domain
 
-We next used hydrogen–deuterium exchange to probe for conformational changes associated with the time-dependent decay of the catalytic activity in LPL (
+We next used hydrogen–deuterium exchange to probe for conformational changes associated with the time-dependent decay of the catalytic activity in LPL (Osborne et al., 1985). For these studies, we incubated 5 µM LPL2 at 25°C for various times and then traced changes in the solvent exposure of backbone amide hydrogens with a 10-s pulse labeling in D2O. As illustrated in Figure 6, we observed a pronounced global unfolding of the catalytic domain in LPL as reflected by the appearance of a bimodal signature in the isotope envelopes from the majority of peptic peptides derived from this domain (colored red in Figure 6B). This finding implies that the NTD of LPL most likely enters a pre-molten globule-like state with little maintenance of secondary structure. The disordering of the catalytic triad is evident by the bimodal isotope envelope for the peptide 131–165, which encompasses active site residues Ser134 and Asp158 (Figure 6A and 6B). Of note, we also observed a time-dependent loss in both the triolein hydrolase and esterase activities of 2 µM LPL2 with experimental conditions comparable to those for the HDX-MS studies (Figure 6D). Unexpectedly, the time course for the inactivation of LPL catalytic activity appeared to be approximately twice as fast as the unfolding of the catalytic NTD documented by HDX-MS. With prolonged incubations, we did observe a more complete unfolding of the NTD by HDX-MS (74% unfolded after 180 min and 90% after 240 min). Of note, no changes were observed in the deuterium uptake of the CTD in LPL during the same time frame (Figure 6B), consistent with a greater stability of that domain (Gin et al., 2012).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig6-v2.jpg)
 
-**Figure 6.:** Panel A shows the unfolding of the catalytic domain of LPL when incubated at 25°C. The unfolding is evident from the appearance of a bimodal isotopic envelope for the peptide 131–165, which contains Ser134 and Asp158 of the catalytic triad. Panel B shows the global distribution of peptides in the catalytic domain that undergo unfolding (in red). The peptide 131–165 is highlighted in yellow. Peptides that are not exhibiting bimodal isotope envelopes are colored light blue; segments of LPL not recovered by the HDX-MS are colored gray. The impact of GPIHBP11–131 and the N-terminal acidic peptide GPIHBP11–33 on LPL unfolding is shown in panel C. In these studies, equimolar amounts of GPIHBP11–131 or GPIHBP11–33 (relative to the LPL2) inhibited unfolding of the NTD of LPL. The progressive unfolding of LPL was quantified by fitting two Gaussian distributions to the isotopic envelopes of peptide 131–165 representing the folded and unfolded states (panel A) and is shown in panel D (black circles). Unfolding at the 45-min incubation time point was measured in triplicates with and without equimolar amounts of GPIHBP11–131 (green circle) or GPIHBP11–33 (red circle). The progressive loss of triolein hydrolase and esterase activities of LPL were recorded in parallel as a time-dependent function of pre-incubating 2 µM LPL2 under identical conditions and is shown by the yellow squares and blue triangles, respectively. LPL, lipoprotein lipase; HDX-MS, hydrogen–deuterium exchange mass spectrometry; NTD, N-terminal domainDOI: http://dx.doi.org/10.7554/eLife.12095.014
+**Figure 6.:** Panel A shows the unfolding of the catalytic domain of LPL when incubated at 25°C. The unfolding is evident from the appearance of a bimodal isotopic envelope for the peptide 131–165, which contains Ser134 and Asp158 of the catalytic triad. Panel B shows the global distribution of peptides in the catalytic domain that undergo unfolding (in red). The peptide 131–165 is highlighted in yellow. Peptides that are not exhibiting bimodal isotope envelopes are colored light blue; segments of LPL not recovered by the HDX-MS are colored gray. The impact of GPIHBP11–131 and the N-terminal acidic peptide GPIHBP11–33 on LPL unfolding is shown in panel C. In these studies, equimolar amounts of GPIHBP11–131 or GPIHBP11–33 (relative to the LPL2) inhibited unfolding of the NTD of LPL. The progressive unfolding of LPL was quantified by fitting two Gaussian distributions to the isotopic envelopes of peptide 131–165 representing the folded and unfolded states (panel A) and is shown in panel D (black circles). Unfolding at the 45-min incubation time point was measured in triplicates with and without equimolar amounts of GPIHBP11–131 (green circle) or GPIHBP11–33 (red circle). The progressive loss of triolein hydrolase and esterase activities of LPL were recorded in parallel as a time-dependent function of pre-incubating 2 µM LPL2 under identical conditions and is shown by the yellow squares and blue triangles, respectively. LPL, lipoprotein lipase; HDX-MS, hydrogen–deuterium exchange mass spectrometry; NTD, N-terminal domain
 
-## GPIHBP11–33 attenuates the rate of LPL unfolding
+### GPIHBP11–33 attenuates the rate of LPL unfolding
 
-The impact of GPIHBP1 on the spontaneous unfolding of LPL was subsequently addressed by HDX-MS. This was accomplished by incubating LPL in the presence of GPIHBP11–131, GPIHBP11–33, or GPIHBP134–131 for 45 min at 25°C. We assessed the deuterium uptake after 10-s labeling with D2O. GPIHBP11–131 clearly inhibited LPL unfolding (Figure 6C). This protective effect was predominantly due to the acidic domain because the GPIHBP11–33 peptide alone also attenuated LPL unfolding. A distinct but much less pronounced contribution was provided by GPIHBP134–131 on both unfolding rates and preservation of triolein hydrolase and esterase activity of LPL (Table 2).10.7554/eLife.12095.015Table 2.Preservation of LPL structure and activity by GPIHBP1 binding.DOI: http://dx.doi.org/10.7554/eLife.12095.015Added ligandUnfolding of NTD in LPL (%)aLoss of triolein hydrolase activity (%)bLoss of esterase activity (%)bGPIHBP11–131/R38G32.6 ± 5.728.7 ± 1.511.4 ± 6.7GPIHBP134–131/R38G79.2 ± 4.251.5 ± 1.334.7 ± 8.4GPIHBP11–3343.0 ± 5.14.2 ± 1.8b9.8 ± 6.9bNone100100100aInhibition of the spontaneous decay of LPL by GPIHBP11–131, GPIHBP134–131, or GPIHBP11–33 was measured after a 45-min incubation at 25°C. Equimolar amounts of GPIHBP1 and LPL homodimers were present during the incubation step.bTriolein hydrolase activity was measured with a [3H]triolein substrate; esterase activity was measured with a soluble fluorescent substrate. Activity assays were performed on LPL samples that were subjected to the same pre-incubation conditions used for the HDX-MS experimentsa except that GPIHBP11–33was present in 5-fold molar excess compared to LPL. The protection by GPIHBP1 variants is shown relative to the decay of LPL after a 45-min incubation without any added binding partner (defined as 100%). Measurements were performed in triplicate.
+The impact of GPIHBP1 on the spontaneous unfolding of LPL was subsequently addressed by HDX-MS. This was accomplished by incubating LPL in the presence of GPIHBP11–131, GPIHBP11–33, or GPIHBP134–131 for 45 min at 25°C. We assessed the deuterium uptake after 10-s labeling with D2O. GPIHBP11–131 clearly inhibited LPL unfolding (Figure 6C). This protective effect was predominantly due to the acidic domain because the GPIHBP11–33 peptide alone also attenuated LPL unfolding. A distinct but much less pronounced contribution was provided by GPIHBP134–131 on both unfolding rates and preservation of triolein hydrolase and esterase activity of LPL (Table 2).
 
-## Mapping the binding site for GPIHBP11–33 on LPL
+**Table 2.**
+ Preservation of LPL structure and activity by GPIHBP1 binding.
 
-To map defined binding sites for GPIHBP1 on LPL, we used zero-length covalent cross-linking with N-ethyl-N′-[3-diethylamino)propyl]-carbodiimide (EDC), which forms an isopeptide bond by chemical condensation of carboxylates and primary amino groups that are in close spatial proximity. For these studies, we formed GPIHBP1•LPL complexes by incubating a high concentration of LPL with a twofold molar excess of GPIHBP1
+
+<table>
+  <thead>
+    <tr>
+      <th>Added ligand</th>
+      <th>Unfolding of NTD in LPL (%)a</th>
+      <th>Loss of triolein hydrolase activity (%)b</th>
+      <th>Loss of esterase activity (%)b</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPIHBP11–131/R38G</td>
+      <td>32.6 ± 5.7</td>
+      <td>28.7 ± 1.5</td>
+      <td>11.4 ± 6.7</td>
+    </tr>
+    <tr>
+      <td>GPIHBP134–131/R38G</td>
+      <td>79.2 ± 4.2</td>
+      <td>51.5 ± 1.3</td>
+      <td>34.7 ± 8.4</td>
+    </tr>
+    <tr>
+      <td>GPIHBP11–33</td>
+      <td>43.0 ± 5.1</td>
+      <td>4.2 ± 1.8b</td>
+      <td>9.8 ± 6.9b</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+_aInhibition of the spontaneous decay of LPL by GPIHBP11–131, GPIHBP134–131, or GPIHBP11–33 was measured after a 45-min incubation at 25°C. Equimolar amounts of GPIHBP1 and LPL homodimers were present during the incubation step.bTriolein hydrolase activity was measured with a [3H]triolein substrate; esterase activity was measured with a soluble fluorescent substrate. Activity assays were performed on LPL samples that were subjected to the same pre-incubation conditions used for the HDX-MS experimentsa except that GPIHBP11–33was present in 5-fold molar excess compared to LPL. The protection by GPIHBP1 variants is shown relative to the decay of LPL after a 45-min incubation without any added binding partner (defined as 100%). Measurements were performed in triplicate._
+
+### Mapping the binding site for GPIHBP11–33 on LPL
+
+To map defined binding sites for GPIHBP1 on LPL, we used zero-length covalent cross-linking with N-ethyl-N′-[3-diethylamino)propyl]-carbodiimide (EDC), which forms an isopeptide bond by chemical condensation of carboxylates and primary amino groups that are in close spatial proximity. For these studies, we formed GPIHBP1•LPL complexes by incubating a high concentration of LPL with a twofold molar excess of GPIHBP11–131 or GPIHBP134–131 (to saturate binding sites on LPL). Adding 10 mM EDC efficiently cross-linked LPL•GPIHBP11–131 in a 1:1 complex, consuming the majority of the LPL (Figure 7, lanes 5 & 11). In contrast, no covalent adducts were formed in the samples containing GPIHBP11–131 alone, LPL alone, or a mixture of LPL and GPIHBP134–131 (Figure 7, lanes 3, 4, 6 & 10). Adding EDC to LPL in the presence of a 10-fold molar excess of GPIHBP11–33 also led to the formation of a 1:1 complex with no evidence of higher-order adducts (Figure 7, lane 9). These studies imply that each LPL molecule interacts with only a single acidic domain peptide.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig7-v2.jpg)
 
-**Figure 7.:** 1–131 and GPIHBP11–33 to bovine LPL.Panel A, left shows a Coomassie Blue–stained 12% polyacrylamide gel after SDS-PAGE analysis of reduced and alkylated samples representing various combinations of 1.5 µM LPL2 and 7 µM GPIHBP1 variants subjected to EDC cross-linking. Lane 2 shows LPL GPIHBP11–131 before cross-linking. Lanes 3–6 show samples after EDC cross-linking: GPIHBP11–131 (lane 3); LPL (lane 4), LPL GPIHBP11–131 (lane 5), and LPL GPIHBP134–131 (lane 6). The covalently bound conjugate representing LPL•GPIHBP11–131 is marked by an asterisk. Right panel shows a Coomassie Blue–stained 4–12% gradient polyacrylamide gel after analysis of EDC cross-linked 3 µM LPL2 alone (lane 8) or in the presence of 15 µM GPIHBP11–33 (lane 9); 15 µM GPIHBP134–131 (lane 10); and 15 µM GPIHBP11–131 (lane 11). The covalent conjugates representing LPL•GPIHBP11–131 and LPL•GPIHBP11–33 are indicated by an asterisk and a solid dot, respectively. Molecular weight markers are shown in lanes 1, 7 & 12. Panel B shows a model of human LPL highlighting the cross-linking sites in GPIHBP1 that were identified by MS (asterisks). Areas that have been assigned as potential interaction sites for GPIHBP1 by HDX-MS are shown in green (for the acidic domain of GPIHBP1) and blue (for the LU domain of GPIHBP1). The position of the interdomain interface in LPL between the NTD and CTD is marked by a dashed line, and three residues within this interface linked to familial chylomicronemia when mutated (S259R, G409R, and E410V) are shown by gray numbers. Basic residues of the heparin-binding site in the catalytic domain of LPL (R279, K280, R282) are shown as sticks. Note, bovine LPL contains two additional residues compared with human LPL, for example Lys296 in human LPL is equivalent to Lys298 in bovine LPL. CTD, C-terminal domain; EDC, N-ethyl-N′-[3-diethylamino)propyl]-carbodiimide; HDX-MS, hydrogen–deuterium exchange mass spectrometry; LPL, lipoprotein lipase; MS, mass spectrometry; NTD, N-terminal domain; SDS-PAGE, sodium dodecyl sulfate polyacrylamide gel electrophoresis. DOI: http://dx.doi.org/10.7554/eLife.12095.016
+**Figure 7.:** Panel A, left shows a Coomassie Blue–stained 12% polyacrylamide gel after SDS-PAGE analysis of reduced and alkylated samples representing various combinations of 1.5 µM LPL2 and 7 µM GPIHBP1 variants subjected to EDC cross-linking. Lane 2 shows LPL GPIHBP11–131 before cross-linking. Lanes 3–6 show samples after EDC cross-linking: GPIHBP11–131 (lane 3); LPL (lane 4), LPL GPIHBP11–131 (lane 5), and LPL GPIHBP134–131 (lane 6). The covalently bound conjugate representing LPL•GPIHBP11–131 is marked by an asterisk. Right panel shows a Coomassie Blue–stained 4–12% gradient polyacrylamide gel after analysis of EDC cross-linked 3 µM LPL2 alone (lane 8) or in the presence of 15 µM GPIHBP11–33 (lane 9); 15 µM GPIHBP134–131 (lane 10); and 15 µM GPIHBP11–131 (lane 11). The covalent conjugates representing LPL•GPIHBP11–131 and LPL•GPIHBP11–33 are indicated by an asterisk and a solid dot, respectively. Molecular weight markers are shown in lanes 1, 7 & 12. Panel B shows a model of human LPL highlighting the cross-linking sites in GPIHBP1 that were identified by MS (asterisks). Areas that have been assigned as potential interaction sites for GPIHBP1 by HDX-MS are shown in green (for the acidic domain of GPIHBP1) and blue (for the LU domain of GPIHBP1). The position of the interdomain interface in LPL between the NTD and CTD is marked by a dashed line, and three residues within this interface linked to familial chylomicronemia when mutated (S259R, G409R, and E410V) are shown by gray numbers. Basic residues of the heparin-binding site in the catalytic domain of LPL (R279, K280, R282) are shown as sticks. Note, bovine LPL contains two additional residues compared with human LPL, for example Lys296 in human LPL is equivalent to Lys298 in bovine LPL. CTD, C-terminal domain; EDC, N-ethyl-N′-[3-diethylamino)propyl]-carbodiimide; HDX-MS, hydrogen–deuterium exchange mass spectrometry; LPL, lipoprotein lipase; MS, mass spectrometry; NTD, N-terminal domain; SDS-PAGE, sodium dodecyl sulfate polyacrylamide gel electrophoresis.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** 1–131 complexes.Panel A shows the fragment spectra produced for the EDC cross-linked peptide between residues 1–33 in GPIHBP1 and residues 295–299 (VARKR) in bovine LPL. Panel B shows the fragment spectra produced for the cross-linked peptide between residues 1–33 in GPIHBP1 and residues 416–422 (KVIFCSR) in bovine LPL. Fragments derived from residues 1–33 of GPIHBP1 are designated (A) and peptides from LPL are designated (B). The blue peaks correspond to y-fragment ions from either peptide; green peaks correspond to b-fragments ions from either peptide; red peaks represent unassigned peaks; purple peaks correspond to loss of NH3 or H2O (not labeled) or ions that have undergone two fragmentation reactions. Peaks corresponding to cross-linked peptide fragments are assigned by an × along with the two peptide fragments (e.g. DEDH×KR). EDC, N-ethyl-N′-[3-diethylamino)propyl]-carbodiimide; LPL, lipoprotein lipase.DOI: http://dx.doi.org/10.7554/eLife.12095.017
+**Figure 7—figure supplement 1.:** Panel A shows the fragment spectra produced for the EDC cross-linked peptide between residues 1–33 in GPIHBP1 and residues 295–299 (VARKR) in bovine LPL. Panel B shows the fragment spectra produced for the cross-linked peptide between residues 1–33 in GPIHBP1 and residues 416–422 (KVIFCSR) in bovine LPL. Fragments derived from residues 1–33 of GPIHBP1 are designated (A) and peptides from LPL are designated (B). The blue peaks correspond to y-fragment ions from either peptide; green peaks correspond to b-fragments ions from either peptide; red peaks represent unassigned peaks; purple peaks correspond to loss of NH3 or H2O (not labeled) or ions that have undergone two fragmentation reactions. Peaks corresponding to cross-linked peptide fragments are assigned by an × along with the two peptide fragments (e.g. DEDH×KR). EDC, N-ethyl-N′-[3-diethylamino)propyl]-carbodiimide; LPL, lipoprotein lipase.
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/12095/elife-12095-fig7-figsupp2-v2.jpg)
 
-**Figure 7—figure supplement 2.:** The cross-linking efficiencies between LPL and GPIHBP134–131 or GPIHBP11–131 are revealed by a Coomassie Blue–stained 12% SDS-polyacrylamide gel. The samples were cross-linked for 4 hr by 5 mM EDC and NHS in the following format: 3 µM LPL2 alone (lane 3) or in the presence of 15 µM GPIHBP134–131 (lane 4) or 15 µM GPIHBP11–131 (lane 5). LPL without EDC/NHS is shown in lane 2. Molecular mass markers are in lane 1. The asterisk shows a covalent LPL•GPIHBP134–131 conjugate. Using these cross-linking conditions, we observe a low level of covalently-linked LPL dimers (lane 3); the amount of these LPL dimers is reduced by the presence of GPIHBP134–131 or GPIHBP11–131 (lane 4 & lane 5), likely reflecting the engagement of LPL in interactions with these ligands. EDC, N-ethyl-N′-[3-diethylamino)propyl]-carbodiimide; LPL, lipoprotein lipase; NHS, N-hydroxysuccinimide; SDS-PAGE, sodium dodecyl sulfate polyacrylamide gel electrophoresis.DOI: http://dx.doi.org/10.7554/eLife.12095.018
+**Figure 7—figure supplement 2.:** The cross-linking efficiencies between LPL and GPIHBP134–131 or GPIHBP11–131 are revealed by a Coomassie Blue–stained 12% SDS-polyacrylamide gel. The samples were cross-linked for 4 hr by 5 mM EDC and NHS in the following format: 3 µM LPL2 alone (lane 3) or in the presence of 15 µM GPIHBP134–131 (lane 4) or 15 µM GPIHBP11–131 (lane 5). LPL without EDC/NHS is shown in lane 2. Molecular mass markers are in lane 1. The asterisk shows a covalent LPL•GPIHBP134–131 conjugate. Using these cross-linking conditions, we observe a low level of covalently-linked LPL dimers (lane 3); the amount of these LPL dimers is reduced by the presence of GPIHBP134–131 or GPIHBP11–131 (lane 4 & lane 5), likely reflecting the engagement of LPL in interactions with these ligands. EDC, N-ethyl-N′-[3-diethylamino)propyl]-carbodiimide; LPL, lipoprotein lipase; NHS, N-hydroxysuccinimide; SDS-PAGE, sodium dodecyl sulfate polyacrylamide gel electrophoresis.
 
 To identify the specific cross-linked sites responsible for the formation of the covalent LPL•GPIHBP1 adduct, we performed an in-gel trypsin digestion of the complex that had been separated by sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE) (Figure 7, lane 5). The extracted tryptic peptides were analyzed by a high-resolution Q-Exactive HF mass spectrometer, and cross-linked peptides were identified by their parent ion mass as well as subsequent HCD fragment spectra (Figure 7—figure supplement 1). All but one of the five identified cross-links was established between LPL and GPIHBP1’s acidic domain, consistent with the abundance of EDC-reactive carboxyl groups in the acidic domain. The corresponding cross-linking sites on LPL included Lys298 in the catalytic domain and Lys416, Lys424, and Lys430 in the CTD of LPL (Figure 7B). The one cross-linked peptide identified outside of the acidic domain occurred between residues 100–125 (most likely Glu102) in the LU-domain of GPIHBP1 and residues 423–430 of LPL. We did not detect cross-links between GPIHBP134–131 and LPL using 10 mM EDC for 90 min (Figure 7, lanes 6 & 10); however, we did observe such cross-links (Figure 7—figure supplement 2) if we drove the conjugation chemistry to higher yields by converting the o-acylisourea EDC intermediate to a more stable amine-reactive derivative (N-hydroxysuccinimide (NHS)-ester).
 
@@ -166,11 +326,11 @@ From a practical point of view, our discovery that the acidic domain stabilizes 
 
 ## Materials and methods
 
-## Purified proteins and reagents
+### Purified proteins and reagents
 
 Bovine LPL was purified from fresh bovine milk by heparin-Sepharose, hydroxyapatite, and Superdex HR200 size-exclusion chromatography as described (Cheng et al., 1985). Fractions containing dimeric LPL (LPL2) were precipitated with 3.6 M NH4SO4 and the pellet dissolved in 5 mM phosphate buffer (pH 6.5) containing 40% (v/v) glycerol. Small aliquots were stored at –80°C until use. Recombinant enterokinase (1 U/µl) produced in Pichia pastoris (EKMax) was purchased from Invitrogen (Carlsbad, CA). Monoclonal antibodies against human uPAR (R2 and R24) and human LPL (5D2 and 4-1A) were produced and characterized as described (Bensadoun et al., 2014; Chang et al., 1998; Gårdsvoll et al., 2011). A synthetic 33-mer peptide (GPIHBP11–33) representing the N-terminal acidic domain of GPIHBP1 (QTQQEEEEEDEDHGPDDYDEEEDEVEEEETNR) was obtained at a purity of >95% from TAG-Copenhagen A/S (Copenhagen, Denmark).
 
-## Expression and purification of human GPIHBP1 and LPL313–348 by Drosophila S2–cells
+### Expression and purification of human GPIHBP1 and LPL313–348 by Drosophila S2–cells
 
 A truncated version of human GPIHBP1 (residues 1–131), lacking the C-terminal signal peptide that normally triggers the covalent addition of a glycolipid anchor, was expressed by (and secreted from) Drosophila S2 cells as a fusion protein with uPAR domain III (RS-DIII-ent-GPIHBP1, Figure 1—figure supplement 1A). This strategy has been used for expressing other LU-domain proteins (Gårdsvoll et al., 2007; Gårdsvoll et al., 2013; Hansen et al., 2004). The N-terminal uPAR DIII serves the dual role of both the detection and the purification tag, and the DDDDK motif in the linker region allows excision of GPIHBP1 by enterokinase cleavage while preserving the original N-terminus of GPIHBP1. Using this strategy, we also expressed the mutants RS-DIII-ent-GPIHBP1W89S and RS-DIIIR281G-ent-GPIHBP1R38G. The latter construct was designed to improve the overall yield of purified intact GPIHBP1 after enterokinase cleavage.
 
@@ -178,11 +338,11 @@ A similar platform was employed to express the CTD of human LPL (residues 313–
 
 After 7 days of induction with 0.5 mM CuSO4, the medium from the Drosophila S2 cells was harvested and supplemented with 0.1 volume of 1 M Tris/HCl (pH 8.0) containing 0.2 M ethylenediaminetetraacetic acid (EDTA) and 0.1% (w/v) NaN3 and 0.005 volume of 200 mM PMSF in DMSO. The various RS-DIII-ent-GPIHBP1 proteins were purified from the medium of transfected cells by immunoaffinity chromatography with an anti-uPAR mAb R2 column with 0.1 M CH3COOH, 0.5 M NaCl (pH 2.5) as the eluent. The purified proteins were exchanged into 20 mM NaH2PO4, 150 mM NaCl (pH 7.2) and stored at –80°C. The RS-DIII-ent-CTD constructs were affinity purified with an anti-uPAR mAb R24 column (Gårdsvoll et al., 2011) and eluted with 0.1 M CH3COOH, 0.5 M NaCl (pH 2.5) containing 20% (v/v) glycerol and then exchanged into 20 mM NaH2PO4, 150 mM NaCl (pH 7.2) containing 20% (v/v) glycerol to prevent precipitation. Average yields of the fusion proteins were 2–5 mg/l.
 
-## Enterokinase cleavage and purification of human GPIHBP1
+### Enterokinase cleavage and purification of human GPIHBP1
 
 The DIII-tag was removed from the purified fusion proteins by adding 0.1 U enterokinase/mg and incubating at 37°C. An equal amount of enterokinase was added 6 hr later, and the incubation was continued for a total of 24 hr. This digest was dialyzed against 50 mM CH3COOH (pH 4.5). The excised GPIHBP1 was purified by cation-exchange chromatography with a 5-ml HiTrap SP FF (GE Healthcare; Uppsala, Sweden) and a 35-ml linear NaCl gradient (from 0 to 1.0 M) in 50 mM CH3COOH (pH 4.5) (Figure 1—figure supplement 2A). Relevant fractions were pooled and buffer-exchanged into 20 mM NaH2PO4, 150 mM NaCl (pH 7.2) before conducting a final purification step by size-exclusion chromatography on a Superdex HR75 column in the same buffer (Figure 1C).
 
-## Affinity of the GPIHBP1•LPL interaction as assessed by surface plasmon resonance
+### Affinity of the GPIHBP1•LPL interaction as assessed by surface plasmon resonance
 
 To minimize confounding effects resulting from the dextran surface of the sensor chip on the real-time kinetics recorded for the LPL•GPIHBP1 interaction, we used a CM4 sensor chip with a low degree of carboxylation to immobilize the LPL-specific monoclonal antibody 5D2 (Chang et al., 1998). As a further precaution, we used 1 M ethylenediamine rather than ethanolamine to block excess active NHS esters, which reduces the charge effects from the remaining unmodified carboxylates on the matrix (Glaser et al., 2014). Covalent immobilization of mAb 5D2 was accomplished by injecting 5 µg/ml 5D2 dissolved in 10 mM sodium acetate (pH 5.0) over a CM4 chip that had been pre-activated with NHS/EDC (N-ethyl-N´-[3-diethylamino)propyl]-carbodiimide), aiming at a surface density of 1500 resonance units (RU) corresponding to 10 fmols/mm2.
 
@@ -190,21 +350,23 @@ After a 100-s loading pulse with 100 nM recombinant LPL CTD313–448 at 20 µl/m
 
 After double-buffer referencing of the recorded real-time interaction analyses, the kinetic rate constants (kon and koff) were derived by global non-linear regression fitting of the association and dissociation phases to a simple bimolecular interaction model, including correction for mass transport limitations assuming pseudo–first-order reaction conditions with BIA evaluation 4.1 software (Biacore, Uppsala, Sweden). In some cases, the equilibrium binding constants KD and Rmax were also calculated separately from the corresponding equilibrium binding isotherms by nonlinear curve fitting assuming saturation of a single binding site:
 
-Req=(Rmax[GPIHBP1])/(Kd+[GPIHBP1]),
+$$
+R_{eq}=(R_{max}[GPIHBP1])/(K_{d}+[GPIHBP1]),
+$$
 
 where Req is the binding level at equilibrium, and Rmax is the binding capacity of the chip.
 
 To enable efficient capturing of intact dimeric bovine LPL (LPL2) on immobilized mAb 5D2, the purified LPL2 was diluted 500–1000 fold to 200 nM in 10 mM HEPES (pH 7.4), 150 mM NaCl, 4 mM CaCl2, 0.05% (v/v) surfactant P20 supplemented with 0.2 mg/ml bovine serum albumin (BSA) and 1% (w/v) carboxymethyl dextran to stabilize LPL and avoid non-specific adsorption to the microfluidics during loading. The running buffer was equivalent to the loading buffer, except that no carboxymethyl dextran was added. Regeneration of the capturing mAb was accomplished by two consecutive injections of 10 µl of 20 mM glycine/HCl (pH 2.5) and 10 µl of 5% (v/v) HCOOH-containing 0.5 M NaCl. To minimize deterioration from repetitive regenerations, single-cycle kinetic titration (Karlsson et al., 2006) of LPL•GPIHBP1 interactions were recorded during five consecutive injections of 20 µl of two-fold dilutions of purified GPIHBP1 at 20°C. After double-buffer referencing of the data, the corresponding kinetic rate constants were derived by fitting the data to a simple bimolecular interaction model using the mathematic model developed for single-cycle kinetics (T200 Evaluation Software 2.0, GE Healthcare Life Science, Uppsala, Sweden).
 
-## Equilibrium binding constants of the GPIHBP1•LPL interaction by microscale thermophoresis
+### Equilibrium binding constants of the GPIHBP1•LPL interaction by microscale thermophoresis
 
 To determine solution equilibrium binding constants between LPL and Alexa Flour-647–labeled versions of GPIHBP11–131/R38G and GPIHBP134–131/R38G, we used the MST technology (Jerabek-Willemsen et al., 2014). Purified GPIHBP11–131/R38G and GPIHBP134–131/R38G preparations were labeled for 30 min at 37°C with Alexa Flour-647 NHS ester (Thermo Fisher Scientific) at a molar ratio of 1:3 in phosphate-buffered saline (pH 7.4); these conditions favor modification of the N-terminal α-amino group. The reaction was terminated by adding 10 mM ethanolamine, and the proteins were desalted on a PD-10 column (GE Healthcare, Uppsala, Sweden). The average degree of labeling was 1.3 flurophore/protein for both GPIHBP11–131/R38G and GPIHBP134–131/R38G; both labeled proteins remained monomeric as judged by analytical size-exclusion chromatography on a 5/150 Superdex 75 column (GE Healthcare, Uppsala, Sweden). The equilibrium binding between 5 nM Alexa Flour-647–labeled GPIHBP1 and LPL were calculated from the change in thermophoresis (ΔFnorm = FHot/Fcold) measured with a Monolith NT.115 (NanoTemper Technologies GmbH) after adding increasing concentrations of non-fluorescent LPL. A two-fold dilution series ranging from 10 pM to 350 nM LPL2 was prepared in 10 mM HEPES (pH 7.4), 150 mM NaCl, 4 mM CaCl2, 0.05% (v/v) surfactant P20, and 1.0 mg/ml BSA. Samples were loaded into low-binding hydrophilic capillary tubes and the thermophoresis signals were measured at 22°C with a light-emitting diode (LED) power of 80% and an infrared (IR) laser power of 100%.
 
-## Determination of lipase and esterase activity of purified LPL
+### Determination of lipase and esterase activity of purified LPL
 
 Time-dependent inactivation profiles for LPL were determined by incubating 2 µM purified LPL2 alone or in the presence of 2 µM GPIHBP11–131,2 µM GPIHBP134–131, or 10 µM GPIHBP11–33 for various times at 25°C in 10 mM Na2HPO4, 150 mM NaCl (pH 7.4). The temperature-induced unfolding was quenched by adding ice-cold 100 mM Tris (pH 7.8) containing 5 mM deoxycholic acid (DOC) and 0.1 mM sodium dodecyl sulfate (SDS) (DOC/SDS buffer). Esterase activities were analyzed by mixing 5 μl of LPL diluted 100-fold in DOC/SDS buffer with 95 μl DGGR assay buffer to a final concentration of 50 mM Tris, 50 μM 1,2-o-dilauryl-rac-glycero glutaric acid-(6'-methylresorufin) ester (DGGR), 120 mM NaCl, 10 mg/ml BSA, 0.5% Triton X-100 (v/v), pH 7.4. Ester hydrolysis was determined by measuring the linear increase of resorufin fluorescence at λex 530 nm, λem 590 nm during the initial 5 min. Lipase activities were determined by adding 5 μl of LPL diluted 1000-fold in DOC/SDS to 195 μl of incubation mixtures with Intralipid containing [3H] triolein (Larsson et al., 2013).
 
-## Protein dynamics measured by HDX-MS
+### Protein dynamics measured by HDX-MS
 
 All hydrogen–deuterium exchange reactions were performed at 25°C and 300 RPM mixing, using 10 mM Na2HPO4, 150 mM NaCl buffers in either H2O or D2O, adjusted to pH 7.4 and pD 7.4 (pHread = 7.0), respectively. The following protein solutions were made with the H2O buffer: 5 µM LPL2, 5 µM GPIHBP11–131/R38G, 5 µM LPL2 5 µM GPIHBP11–131/R38G, 5 µM LPL2 25 µM GPIHBP11–33. Most solutions were pre-incubated for 15 min before deuterium labeling to promote efficient complex formation. Samples containing exclusively LPL2 were not pre-incubated because of concerns about the inherent instability of LPL homodimers.
 
@@ -212,30 +374,30 @@ Isotopic labeling was initiated by adding D2O buffer to the protein solutions to
 
 Full deuteration controls were prepared by (1) diluting LPL and GPIHBP1 to 10 µM in 10 mM Na2HPO4, 150 mM NaCl, 2 M urea, 70% (vol/vol) D2O, pD 7.4; (2) incubating samples for 48 hr at 37°C; and (3) quenching as described above without urea to achieve an identical solvent composition in the quenched samples. Labeling was performed in triplicate for each sample combination.
 
-## Unfolding of LPL assessed by pulse-labeling HDX-MS
+### Unfolding of LPL assessed by pulse-labeling HDX-MS
 
 Buffers and labeling conditions were identical to those described previously. The following protein solutions were prepared in H2O buffer: 5 µM LPL2, 5 µM LPL2 5 µM GPIHBP11–131/R38G, 5 µM LPL2 5 µM GPIHBP11–33, and 5 µM LPL2 5 µM GPIHBP134–131/R38G. Solutions were incubated for 15, 30, 45, 60, 90, and 120 min, diluted to 70% D2O buffer, allowed to exchange for 10 s, quenched by adding 1:1 ice-cold quench buffer, incubated for 2 min in an ice bath, and then snap frozen. Labeling was performed in triplicate for each sample combination incubated at 45 min.
 
-## MS of HDX-labeled samples and data analysis
+### MS of HDX-labeled samples and data analysis
 
 Quenched and reduced samples were analyzed with a nanoACQUITY UPLC reversed-phased chromatographic system equipped with HDX technology (Waters, Milford, MA) coupled to a Synapt G2 electrospray ionization mass spectrometer (Waters). Desalting was performed by applying a flow of 300 µL/min buffer A (0.23% [v/v] formic acid [FA]) to an ACQUITY UPLC BEH C18 1.7-μm, 2.1 × 5 mm Vanguard Pre-Column by an Agilent 1260 Infinity Quaternary pump (Agilent Technologies, Santa Clara, CA). Peptides were separated on a 1.0 × 100 mm ACQUITY UPLC BEH C18 1.7-μm analytical column by a 12-min gradient from 95% buffer A to 50% buffer B (0.23% [v/v] FA in acetonitrile) at a flow of 40 µl/min. Proteins were digested online with an Upchurch guard column (1.0 × 20 mm, IDEX, Oak Harbor, WA) packed with agarose-immobilized pepsin (Thermo Scientific Pierce, Rockford, IL). Peptides from peptic digests were identified from DDA MS/MS runs using ProteinLynx Global Server v2.4 (Waters) and MassAI v1.07 (MassAI Bioinformatics, Stenstrup, DK, http://www.massai.dk). Deuterium incorporation for intact proteins and peptides was quantified with DynamX V2.0 (Waters).
 
-## Homology modeling and disorder prediction for GPIHBP1
+### Homology modeling and disorder prediction for GPIHBP1
 
 Human GPIHBP1 (UniProt id: Q8VI16) without the N- and C-terminal signal sequences was used for a homology search with the program HHPred (Soding, 2005). To find suitable reference structures, the PDB database was used to generate a multiple sequence alignment with human GPIHBP1; the top five highest-ranking proteins (PDB entries: 20l3, 2h7z, 2h5f, 3neq, 1hcp) were selected as templates for homology modeling with MODELLER (Sali et al., 1995). Molecular structures are displayed by PyMOL (Schrödinger, LLC). A search for regions in human GPIHBP1 with a high propensity for intrinsic disorder was performed with the disorder prediction tools IUPred (Dosztanyi et al., 2005) and DISOPRED3 (Jones and Cozzetto, 2015).
 
-## Zero-length chemical cross-linking of GPIHBP1•LPL complexes
+### Zero-length chemical cross-linking of GPIHBP1•LPL complexes
 
 To initiate covalent cross-linking, mixtures of 1.5 µM LPL2 with either 7 µM GPIHBP11–131, 7 µM GPIHBP134–131, or 15 µM GPIHBP11–33 were exposed to 10 mM EDC for 90 min at 25°C in 10 mM Na2HPO4 (pH 8.0), 150 mM NaCl, 0.1% (v/v) Triton X-100, and 10% (v/v) glycerol. The cross-linking reaction was terminated by boiling in SDS-PAGE sample buffer; samples were subsequently reduced and alkylated before analysis by SDS-PAGE to assess the formation of covalent complexes. Cross-linked tryptic peptides were identified by high-resolution mass spectrometry with a Q-Exactive HF mass spectrometer (Thermo Scientific).
 
-## In-gel digestion and desalting of cross-linked LPL•GPIHBP11–131 complexes
+### In-gel digestion and desalting of cross-linked LPL•GPIHBP11–131 complexes
 
 Coomassie Blue–stained protein bands corresponding to cross-linked protein complexes were excised from the polyacrylamide gel and subjected to in-gel reduction, alkylation and digestion with trypsin, as described with minor modifications (Shevchenko et al., 1996). Gel pieces were cut into smaller pieces, washed twice in 50% ethanol (v/v) and shrunk with 96% (v/v) ethanol. The shrunken gel pieces were then swollen in a 10 mM dithiothreitol (DTT) 0.1 M NH4HCO3 solution and incubated for 45 min at 56°C. After reduction, the solution was cooled to room temperature. The excess DTT solution was removed and replaced with a 55 mM iodoacetamide (IAA) 0.1 M NH4HCO3 solution followed by incubation for 30 min in the dark at room temperature. Excess IAA solution was removed; the gel pieces were washed twice in 50% ethanol (v/v) and the gel pieces were shrunken again using 96% (v/v) ethanol. Finally, the gel pieces were rehydrated on ice with a 100 mM NH4HCO3 solution containing 12.5 ng/µl trypsin. After 45 min, excess trypsin solution was removed and replaced with 100 mM NH4HCO3, and the gel pieces were then incubated at 37°C overnight. The supernatant containing tryptic peptides was recovered the next day. Remaining peptides in the gel were extracted by adding 5% (v/v) formic acid, incubating for 15 min, and then adding an equal volume of acetonitrile and incubating for an additional 15 min. This supernatant was combined with the original supernatant and the entire pool dried in a vacuum centrifuge. Prior to analysis, the tryptic digest was resuspended in 0.1% trifluoroacetic acid (TFA) and desalted using solid-phase extraction in a pipet tip packed with Oligo R3 reversed phase resin (Applied Biosystems). The column was subsequently washed with 0.1% (v/v) TFA; the bound sample was eluted with 0.1% (v/v) TFA in 70% (v/v) acetonitrile and then dried in a vacuum centrifuge.
 
-## Reversed-phase nano-LC-ESI-MS/MS
+### Reversed-phase nano-LC-ESI-MS/MS
 
 The samples were resuspended in 0.1% (v/v) FA and loaded onto an EASY-nLC system (Thermo Scientific) with a two-column setup. Trapping was performed with a 100 µm × 2 cm Acclaim PepMap100 C18 Nano-Trap Column and peptides were separated along a 75 µm × 25 cm Acclaim PepMap RSLC analytical column (both Thermo Scientific). The peptides were eluted with an organic solvent gradient from 95% phase A (0.1% [v/v] FA) to 25% phase B (0.1% [v/v] FA, 95% [v/v] acetonitrile) over 80 min, followed by a 10-min gradient to 50% phase B at a flow rate of 250 nl/min. The eluted peptides were analyzed with a Q-Exactive HF mass spectrometer (Thermo Scientific), operated in the positive ionization mode with data-dependent acquisition. Each MS scan was acquired at a resolution of 60,000 FWHM followed by 20 high-resolution HCD-MS/MS scans of the most intense ions. Ions selected for MS/MS were dynamically excluded for durations of 10 sec.
 
-## Data analysis
+### Data analysis
 
 MGF files were generated from the raw data with Proteome Discoverer v1.3 (Thermo Scientific), and the protein crosslinks identified using MassAI (Peng et al., 2014) (www.MassAI.dk). Searches against a database containing bovine LPL and GPIHBP1 R38G were performed with the following parameters: Precursor mass tolerance 10 ppm, MS/MS mass tolerance of 0.05 Da, tryptic cleavage allowing up to two missed cleavage sites, and carbamido-methylation of cysteine as a fixed modification. The following variable modifications were allowed: oxidation of Met; phosphorylation of Ser, Thr, and Tyr; and N-glycosylation of Asn-X-Ser/Thr/Cys. Peptide cross-links between Lys and Asp/Glu, with a resulting loss of water, were allowed. Cross-links were considered to be true if they had a score above 20 and the MS/MS spectra either contained fragment ion series originating from both peptides or contained peaks that represented cross-linked fragment ions.

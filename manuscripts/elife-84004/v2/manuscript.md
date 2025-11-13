@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05f950310 KU Leuven, Department of Physics and Astronomy, Soft Matter and Biophysics Heverlee Belgium
-2. https://ror.org/04sc67422 NERF-NeuroElectronics Research Flanders, Kloosterman Lab Heverlee Belgium
-3. https://ror.org/05f950310 KU Leuven, Faculty of Psychology & Educational Sciences Leuven Belgium
+1. KU Leuven, Department of Physics and Astronomy, Soft Matter and Biophysics Heverlee Belgium ([ROR:05f950310](https://ror.org/05f950310))
+2. NERF-NeuroElectronics Research Flanders, Kloosterman Lab Heverlee Belgium ([ROR:04sc67422](https://ror.org/04sc67422))
+3. KU Leuven, Faculty of Psychology & Educational Sciences Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
@@ -33,9 +33,77 @@ This paper aims to narrow down the timeframe over which awake replay impacts mem
 
 ## Results
 
-## Awake sharp-wave ripple disruption does not affect performance on a single trial non-match-to-sample task
+### Awake sharp-wave ripple disruption does not affect performance on a single trial non-match-to-sample task
 
 In the first set of experiments, five rats performed a hippocampus-dependent spatial non-match-to-sample task (NMTS, Table 1) in an eight-arm radial maze (Packard et al., 1989; Sasaki et al., 2018). Each trial in the task is independent and consists of an instruction (encoding) and test (retrieval) phase, separated by several seconds. The NMTS task tests if rats can memorize visited locations in the instruction phase for the duration of the trial (~1 min) and use this memory to navigate to the remaining unvisited locations in the test phase (Figure 1a and b). Prior to SWR manipulations, all rats were familiarized with the task until they reached a learning criterion of more than 50% of trials without errors in one session (15 trials per session) for 3 days in a row (Figure 1c). Note that each trial featured a randomly chosen set of locations for the instruction phase that was different from the previous trials.
+
+**Table 1.**
+ Overview animals NMTS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal</th>
+      <th>N sessions</th>
+      <th>distruption trials</th>
+      <th>stim.control trials</th>
+      <th>no stim. trials</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LD06</td>
+      <td>8</td>
+      <td>34</td>
+      <td>32</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>LD07</td>
+      <td>7</td>
+      <td>27</td>
+      <td>30</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>LD08</td>
+      <td>7</td>
+      <td>31</td>
+      <td>31</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>LD12</td>
+      <td>6</td>
+      <td>40</td>
+      <td>39</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>LD13</td>
+      <td>4</td>
+      <td>15</td>
+      <td>21</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>32</td>
+      <td>147</td>
+      <td>153</td>
+      <td>152</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig1-v2.jpg)
+
+**Figure 1.:** (a) A schematic illustration of the setup used for the behavior. In a NMTS task all eight arms are rewarded but only four can be collected in the instruction phase and the rest needs to be collected in the test phase without an error. (b) Trajectory, speed and filtered LFP for an example trial. Red trajectory indicates a wrong visit, yellow dot a to be collected reward and the green dot an online ripple detection. (c) The learning curve over pretraining days for all animals (N=5) showing the average trial performance in a session. The dashed line indicates the learning criteria (small dots; results for individual animals, large dots; mean and 99% CI). (d) (top) Illustration showing the recording (HC) and stimulation (VHC) sites and a power spectral density of an example control session considering only the immobility periods (speed <5 cm/s). The grey shaded area indicates the chosen frequency range to filter the LFP before ripple detection. (bottom) Example LFP and envelope traces of a disrupted and delayed stimulated (bottom) ripple. The small grey line indicates the time of detection, the red dot the point of stimulation. The green shaded area covers the window in which the stimulation artifact was removed and the grey shaded areas indicate the time windows used to compare the ripple envelope before and after ripple detection. The top right shows the average envelope of all disrupted and delay stimulated ripples in one example session. (e) The average trial performance in a session per stimulation protocol (no stim: n=169, stim. control: n=155 and disruption: n=148). (f) Same as (e) but showing the number of visits in the test phase. (g) The instruction phase order number of the wrongly visited arm per stimulation protocol. Only wrong trials are considered. (no stim: n=47, stim. control: n=42and disruption: n=47). For visualization purpose each small dot in e, fand g represents a session average. The large dots represent the mean and 99%CI per condition. (h) The fraction of ripple detections during the trials on the rewards and central platforms. The small remaining fraction of detections happened on the arms. (i) The ripple detection rate during the instruction and test phase of the trials, considering only periods of immobility (speed <5 cm/s). In h and i the box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution. Outliers (defined using the inter-quartile range) are shown using a diamond marker. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Distribution of the average run speed on the central platform and maze arms for each stimulation protocol. The dashed line indicates the threshold used to determine immobility periods (5 cm/s). Running speed disruption: arms 54.02 cm/s [49.71,56.97], center 28.66 cm/s [26.03,31.84]. Running speed stim.control: arms 53.24 cm/s [47.93,56.45], center 28.39 cm/s [25.86,32.23]. Running speed no stim.: arms 53.09 cm/s [48.32,56.68], center 28.67 cm/s [26.37,31.51]. There is no significant difference due to ripple disruption: Kruskal-Wallis test, arms H=0.09, p=0.96, center H=0.42, p=0.81. (b) The average time per visit in the test phase of a trial per stimulation protocol: disruption 11.23 s [10.32,12.54], stim.control 11.64 s [10.69,12.96], no stim. 10.03 s [9.30,11.35]; Kruskal-Wallis test: H=12.19, p=0.0023 (no stim: n=169, stim. control: n=155 and disruption: n=148). (c) The distribution of the instruction order number for the incorrectly visit arm in incorrect trials, for all three stimulation protocols (no stim: n=47, stim. control: n=42and disruption: n=47). (d) The fraction of ripple detections during the instruction and test phase on the reward and central platforms. Fraction detections instruction phase at reward platforms: disruption 0.86 [0.79,0.91], stim.control 0.87 [0.81,0.91], no stim. 0.88 [0.82,0.92]. Fraction detections instruction phase at central platform: disruption 0.05 [0.03,0.09], stim.control 0.07 [0.05,0.11], no stim. 0.06 [0.03,0.10]. Fraction detections test phase at reward platforms: disruption 0.85 [0.77,0.90], stim.control 0.78 [0.72,0.84], no stim. 0.80 [0.74,0.86]. Fraction detections test phase at central platform: disruption 0.09 [0.06,0.15], stim.control 0.12 [0.08,0.16], no stim. 0.10 [0.08,0.14]. The reward bias is not significantly different between stimulation protocols: Kruskal-Wallis test, instruction: H=0.43, p=0.8, test: H=4.02, p=0.13. The box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution. Outliers (defined using the inter-quartile range) are shown using a diamond marker. (e) The distributions for the time between instruction and test phase, long 35.44 s [33.84,37.08], short 7.27 s [7.06,8.22]; Mann-Whitney test: U=920.00, p=8.2 × 10–27. (f) The average trial performance per stimulation protocol in sessions with a short (no stim: n=80, stim. control: n=62 and disruption: n=56) or long (no stim: n=89, stim. control: n=93 and disruption: n=92) interphase delay. Performance long delay: Kruskal-Wallis test: H=1.04, p=0.59. Performance short delay: Kruskal-Wallis test: H=0.15, p=0.93. Statistics for the number of correct visits (not shown), long delay: disruption 3.39 [3.08,3.59], stim.control 3.59 [3.38,3.73], no stim. 3.34 [2.96,3.60]; H=1.46, p=0.48. Number of correct visits, short delay: disruption 3.73 [3.31,3.89], stim.control 3.76 [3.35,3.89], no stim. 3.65 [3.26,3.84]; H=0.21, p=0.9. In b and f each small dot represents a session average for visualization purpose. The large dots represent the mean and 99%CI per condition.
 
 Following completion of the training, SWRs were detected in the extracellular field potentials recorded from hippocampal area CA1 (Buzsáki, 2015; Ciliberti and Kloosterman, 2017). In line with previous reports (Singer and Frank, 2009), most ripples occurred during reward consumption and immobility periods in the instruction and test phases (ripple rate, offline detected, instruction: 0.66  Hz [0.55,0.79], test: 0.58  Hz [0.47,0.71]).
 
@@ -51,9 +119,70 @@ To look for possible compensatory effects of ripple disruption on network activi
 
 The spatial distribution of ripple occurrence was not influenced by ripple disruption overall (Kruskal-Wallis test: H=1.53, P=0.46), nor in either instruction or test phase (Figure 1—figure supplement 1d). The online ripple detection rate, calculated using only periods of immobility (run speed <5 cm/s) in the trials was also not significantly different between the stimulation protocols in either the instruction and test phase (instruction: disruption: 0.61  Hz [0.49,0.72], stim.control: 0.58  Hz [0.50,0.65], no stim.: 0.64  Hz [0.54,0.76], Kruskal-Wallis test: H=0.73, p=0.7, test: disruption: 0.63  Hz [0.50,0.75], stim.control: 0.49  Hz [0.41,0.58], no stim.: 0.55  Hz [0.44,0.67], Kruskal-Wallis test: H=4.29, p=0.12, Figure 1i).
 
-## Awake sharp-wave ripple disruption does not affect performance on a multiple trial match-to-sample task
+### Awake sharp-wave ripple disruption does not affect performance on a multiple trial match-to-sample task
 
 In a second set of experiments, five rats performed a hippocampus-dependent spatial match-to-sample task (MTS, Table 2) in an eight-arm radial maze (Okaichi and Oshima, 1990; Figure 2a). In this task, rats were required to memorize and return to a number of fixed rewarded locations across repeated trials. In daily training sessions, four randomly selected arms were baited and rats had to learn over the course of 25 trials to only visit the four baited arms in each trial. As learning progressed within each session, rats made fewer excursions to non-rewarded arms and the number of arm visits per trial decreased (Figure 2b and d). Rats were trained until the average number of visits per trial for the final 10 trials met the learning criterium (<5 visits) consistently for three sessions in a row (Figure 2c).
+
+**Table 2.**
+ Overview animals MTS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animals</th>
+      <th>Disruption sessions</th>
+      <th>Stim.control sessions</th>
+      <th>No stim sessions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LD10</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>LD11</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>LD14</td>
+      <td>9</td>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>LD21</td>
+      <td>8</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>LD22</td>
+      <td>7</td>
+      <td>8</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>31</td>
+      <td>31</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig2-v2.jpg)
+
+**Figure 2.:** (a) A schematic illustration of the setup used for the behavior. In an MTS task only four of the eight arms are rewarded. (b) Learning curve of one example session showing the total number of visits in each trial. (c) The learning curve over pretraining days for all animals (N=5) showing the average number of visits in the final trials per session (small dots; results for individual animals, large dots; mean and 99% CI over animals). The dashed line indicates the learning criteria, the solid line the perfect performance. (d) Trajectory, speed and filtered LFP for an example trial. Red trajectory indicates a wrong visit, yellow dot a to-be-collected reward and the green dot an online ripple detection. (e) The average number of visits in the final trials per stimulation protocol. (f) The average performance (binary quantification) in the final visits per stimulation protocol. (g) The learning trial per stimulation protocol. In e, (f, and g) small dots represent results for individual sessions (disruption: n=32, stim.control: n=31, no stim.: n=19), large dots reflect the mean and 99%CI per stimulation protocol. (h) The fraction of ripple detections during the trials on the rewards and central platforms. The small remaining fraction of detections happened on the arms. (i) The ripple detection rate during trials considering only periods of immobility (speed <5 cm/s) and during inter-trial epochs. In h and i the box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution. Outliers (defined using the inter-quartile range) are shown using a diamond marker. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Distribution of the average run speed on the central platform and maze arms for each stimulation protocol. The dashed line indicates the threshold used to determine immobility periods (5 cm/s). The running speed is significantly lower on the central platform than in the arms for all three stimulation conditions. Running speed disruption condition: center 36.42 cm/s [33.13,39.02], arms 57.15 cm/s [52.20,59.65]; Mann-Whitney test: U=43.00, p=1.3 × 10–10. Running speed stim.control condition: center 38.06 cm/s [34.54,40.62], arms 58.12 cm/s [52.69,60.62]; Mann-Whitney test: U=30.00, p=1 × 10–10. Running speed no stim. condition: center 36.78 cm/s [33.72,41.01], arms 55.95 cm/s [53.39,59.50]; Mann-Whitney test: U=2.00, p=1 × 10–6. The running speed for each maze region is not significantly different across stimulation protocols (Kruskal-Wallis test, center: H=2.03, p=0.36, arms: H=4.14, p=0.13). (b) The average time per visit in the early (1-8), middle (9-17), and late (18-25) trials of a session is not significantly different in the disruption vs. control sessions (disruption: n=32, stim.control: n=31, no stim.: n=19). Time per visit in early trials, disruption 12.71 s [11.51,14.11], stim.control 12.49 s [11.41,14.02], no stim. 13.75 s [11.88,15.88]; Kruskal-Wallis test: H=1.74, p=0.42. Time per visit in middle trials, disruption 13.15 s [11.62,16.20], stim.control 13.83 s [12.01,16.53], no stim. 15.00 s [12.87,19.01]; Kruskal-Wallis test: H=2.25, p=0.32. Time per visit in late trials, disruption 14.73 s [12.77,17.00], stim.control 15.31 s [12.42,21.68], no stim. 15.87 s [13.04,20.90]; Kruskal-Wallis test: H=1.52, p=0.47. (c) Left: distributions of the per-session z-scores for the fraction of (counter)clockwise trials (circularity) and stereotypy index. Z-scores are computed with respect to shuffle distributions (see methods) and do not change due to ripple disruption (Kruskal-Wallis test, circularity: H=0.37, p=0.83, stereotypy: H=0.85, p=0.65). The box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution. Right: example shuffle distribution (gray) and actual value (black line) for circularity and stereotypy in single session. (d) The average performance in the final trials of a session, split by arm configuration. Configuration IIa: Kruskal-Wallis test: H=1.58, p=0.45 (disruption: n=8, stim.control: n=8, no stim.: n=3) . Configuration IIb: Kruskal-Wallis test: H=1.13, p=0.57 (disruption: n=11, stim.control: n=15, no stim.: n=5). Configuration III: Kruskal-Wallis test: H=6.21, p=0.045 (disruption: n=11, stim.control: n=6, no stim.: n=9). Average number of visits in final trials, configuration IIa: disruption 4.73 [4.26,5.51], stim.control 4.26 [4.06,4.62], no stim. 4.77 [4.40,5.40]; Kruskal-Wallis test: H=4.08, p=0.13. Configuration IIb: disruption 4.26 [4.11,4.47], stim.control 4.41 [4.19,4.73], no stim. 4.38 [4.08,4.80]; Kruskal-Wallis test: H=0.87, p=0.65. Configuration III: disruption 4.42 [4.22,4.67], stim.control 4.10 [4.00,4.23], no stim. 4.40 [4.18,4.68]; H=6.07, p=0.048. Learning trial, configuration IIa: disruption 10.38 [7.25,14.88], stim.control 10.00 [7.38,15.88], no stim. 14.00 [6.00,25.00]; Kruskal-Wallis test: H=0.40, p=0.82. Configuration IIb: disruption 12.18 [8.09,18.27], stim.control 9.00 [7.53,10.07], no stim. 8.80 [5.80,12.00]; Kruskal-Wallis test: H=0.71, p=0.7. Configuration III: disruption 10.27 [7.36,16.66], stim.control 9.83 [6.33,14.67], no stim. 9.00 [6.33,11.44]; Kruskal-Wallis test: H=0.07, p=0.96. In b and d small dots represent results for individual sessions , large dots reflect the mean and 99%CI per stimulation protocol.
 
 Once the rats reached the learning criterium and were familiar with the general task to memorize a new set of locations every session, awake ripples were disrupted in one group of sessions (N=32). The task performance of the rats in these disruption sessions was compared to the performance in the remaining control sessions with either delayed stimulation upon ripple detection (N=31) or without stimulation (N=19). Detection and disruption of ripples was performed during all trials and intervening inter-trial intervals. As expected, during the trials most ripples occurred during periods of immobility (ripple rate, offline detected: mean [99% CI], 0.52  Hz [0.43,0.61]) and reward consumption (Figure 2d). The ripple rate in the inter-trial periods was lower than during the trials (mean [99% CI], 0.14  Hz [0.10,0.18]).
 
@@ -67,11 +196,72 @@ In all of the above analyses, we assumed that each configuration of four arms is
 
 Similar to the NMTS task, the largest fraction of ripples was detected when the rats were on the reward platforms (disruption: 0.91 [0.88,0.93], stim.control: 0.92 [0.89,0.94], no stim.: 0.93 [0.91,0.95]) followed by the center (disruption: 0.07 [0.05,0.09], stim.control: 0.05 [0.04,0.09], no stim.: 0.04 [0.03,0.06]) and arms (disruption: 0.02 [0.02,0.04], stim.control: 0.02 [0.01,0.03], no stim.: 0.03 [0.02,0.05], Figure 2h). The spatial distribution of ripple occurrence was not influenced by ripple disruption (Kruskal-Wallis test: H=1.80, p=0.41). The online detection rate in the trial or inter-trial periods, calculated using only periods of immobility (run speed <5 cm/s), was not different in disruption sessions versus control sessions (trial; disruption: 0.62  Hz [0.52,0.78], stim.control: 0.50  Hz [0.42,0.56], no stim.: 0.56  Hz [0.43,0.66], H=4.71, p=0.095, inter-trial: disruption: 0.19  Hz [0.15,0.27], stim.control: 0.13  Hz [0.11,0.16], no stim.: 0.15  Hz [0.11,0.19], H=5.90, p=0.052, Figure 2i).
 
-## Awake sharp-wave ripple disruption does not affect performance on a continuous sequence task
+### Awake sharp-wave ripple disruption does not affect performance on a continuous sequence task
 
 The results from the first two experiments suggest that SWRs do not support the memorization of a set of locations within a short timeframe (single trial or session). Previous ripple manipulation studies used a spatial alternation task in which rats were required to go from a center arm to two outer arms in an alternating fashion, that is left, center, right, center, left,… To learn this rule, it is crucial to discover and remember the correct temporal order of arm visits, something that was not required in either the MTS or NMTS task.
 
 To test if SWRs are required for memorizing the temporal order of two or more recent events, we designed a spatial sequence memory paradigm (Figure 3a). In this task, rats need to learn each day the order in which to visit a set of four pseudo-randomly selected arms by remembering which arm-arm transitions are rewarded. After extensive pre-training on the linear track and a three-arm radial maze, five rats were pre-trained on the sequence memory paradigm (Table 3) for several days until the final average sequence performance (average sequence performance in the last 100 arm visits) was above 50% for at least two sessions in a row. The sequence performance is calculated by multiplying the outcome of all individual visits (1=correct transition, 0=incorrect transition) in a moving window of five visits. A correct sequence performance (i.e. five correct visits in a row), will yield a sequence performance of one (Figure 3b and c).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig3-v2.jpg)
+
+**Figure 3.:** (a) A schematic illustration of the setup used for the behavior. In a SEQ task only four of twelve possible arms are present. Reward is delivered when arms are visited in the correct order. (b) Learning curves of one example session showing the visit performance and sequence performance over visits, both visualized using a moving average with N=50. (c) Trajectory, speed and filtered LFP for five visits in an example session. Red trajectory indicates a wrong visit, yellow dot a to be collected reward and the green dot an online ripple detection. (d) The learning curve over pretraining days for all animals (N=5) showing the average sequence performance in the final 100 visits in a session. The dashed line indicates the learning criteria (small dots; result per animal, large dots: mean and 99% CI). (e) The average visit performance over the final visits of a session per stimulation protocol. One small dot represents one session (no stim: n=31, stim. control: n=29 and disruption: n=23) and the large dot the mean and 99%CI. (f) Same as (e) but showing the average sequence performance over the final visits of a session. (g) The visit learning trial of sessions per stimulation protocol defined using the smoothed learning curve of the visit performance (see methods). Only session where learning criteria was met within 400 visits are included. (h) Same as (g) but showing the sequence learning trial computed using the smoothed learning curve of the sequence performance. (i) The fraction of ripple detections during the trials on the rewards and central platforms. The small remaining fraction of detections happened on the arms. (j) The ripple detection rate during run on the maze, considering only periods of immobility (speed <5 cm/s), and during rest epochs in the sleep box. In i and j the box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution. Outliers (defined using the inter-quartile range) are shown using a diamond marker.See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Distribution of the average running speed on the central platform and maze arms for each stimulation protocol. The dashed line indicates the threshold used to determine immobility periods (5 cm/s). Running speed in center: disruption 46.01 cm/s [42.55,49.30], stim.control 47.56 cm/s [42.90,51.75], no stim. 46.93 cm/s [44.89,48.88]; Kruskal-Wallis test: H=1.20, p=0.55. Run speed in arms: disruption 47.49 cm/s [45.17,49.55], stim.control 48.43 cm/s [44.68,50.98], no stim. 48.29 cm/s [47.03,49.35]; Kruskal-Wallis test: H=1.79, p=0.41. (b) The average time per visit in a session per stimulation protocol: disruption 7.72 s [7.67,7.79], stim.control 7.73 s [7.68,7.78], no stim. 7.50 s [7.46,7.53]; Kruskal-Wallis test: H=0.77, p=0.68 (no stim: n=31, stim. control: n=29 and disruption: n=23) (c) Learning curves for individual transitions in one example session. The dashed line indicates the learning criterium, the tick marks at the top indicate correct visits. (d) Distribution of transition learning trials for all sessions in each stimulation protocol, Kruskal-Wallis test: H=10.62, p=0.0049. Post-hoc tests: disruption - stim.control, U=3946.00, p=0.43; disruption - no stim., U=4801.50, p=0.041; stim.control - no stim., U=9782.50, p=0.0021. (e) The learning trial difference for each session, defined as the difference between the learning trial of the slowest and fastest learned transition. Disruption: 38.95 [26.15,55.73]; stim.control: 38.30 [30.26,49.30]; no stim.: 49.31 [36.28,62.97]; Kruskal-Wallis test: H=3.10, p=0.21. Only sessions in which at least two transitions were learned are included (disruption: N=20, stim.control: N=27, no stim.: N=29). In b and e, a small dot represents one session and the large dot represents the mean and 99%CI.
+
+**Table 3.**
+ Overview animals SEQ.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animals</th>
+      <th>Disruption sessions</th>
+      <th>Stim. Control sessions</th>
+      <th>No stim. sessions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LD53</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>LD56</td>
+      <td>8</td>
+      <td>7</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>LD57</td>
+      <td>5</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>LD58</td>
+      <td>5</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>LD60</td>
+      <td>6</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>31</td>
+      <td>29</td>
+      <td>29</td>
+    </tr>
+  </tbody>
+</table>
 
 To test the involvement of awake SWRs in memorizing and learning a spatial sequence, we disrupted ripples in one third of the sessions (N=23), throughout the two run epochs and the rest epoch. The other sessions were used for stimulated (N=29) and non-stimulated (N=31) controls, similarly as defined for the MTS and NMTS task. Ripples were mostly detected on the reward platform when the animal is immobile (ripple rate, offline detected, 0.47  Hz [0.41,0.53], Figure 3c). The ripple rate during the interleaving rest epoch is comparably high (ripple rate, offline detected, 0.58  Hz [0.53,0.64]).
 
@@ -81,15 +271,61 @@ Quantification of general behavioral parameters did not reveal any change due to
 
 When we looked at the smoothed learning curves for the individual arm-arm transitions, we observed that not all transitions were learned equally fast (Figure 3—figure supplement 1c). This is an indication that rats are probably not learning individual transitions, but are aware that there is a repeating pattern to be found. Namely, the possibilities for the new transitions are lower when using the information of learned transitions in the correct temporal order. By looking at the learning visits for the individual transition learning curves, we can investigate if the strategy employed by the rats changes due to ripple disruption. For all three stimulation protocols, learning visits of individual transitions vary and the distributions were significantly different between stimulation protocol (Figure 3—figure supplement 1d). Post-hoc Mann-Whitney tests, however, revealed only a significant difference between the two control conditions (Figure 3—figure supplement 1d). Next, we quantified the difference between the learning visits of the slowest and fastest learned transition in sessions where the rat had learned at least two transitions, as a measure of how much use had been made of the repeating pattern. This quantification of the learning trial difference in each session showed no significant difference due to ripple disruption (Figure 3—figure supplement 1e). Together these quantifications suggest that SWR disruption has no overall effect on the behavior in the sequence task.
 
-In line with our expectations, ripples were detected mostly at reward sites (rewards; disruption: 0.82 [0.78,0.85], stim.control: 0.85 [0.82,0.87], no stim.: 0.85 [0.82,0.87], arms; disruption: 0.08 [0.06,0.10], stim. control: 0.07 [0.06,0.09], no stim.: 0.06 [0.05,0.07], center; disruption: 0.10 [0.09,0.12], stim. control: 0.08 [0.07,0.10], no stim.: 0.09 [0.08,0.11], Figure 3i), and this bias was not significantly different between stimulation protocols (Kruskal-Wallis test: H=0.33, p=0.85). The overall ripple detection rate calculated over the immobility periods in both run epochs and in the rest epochs did appear to be significantly different between sessions with a different stimulation protocol (RUN; disruption: 0.58 [0.52,0.67], stim.control: 0.46 [0.41,0.50]), no stim.: 0.49 [0.41,0.57], Kruskal-Wallis test: H=12.94, p=0.0016, (REST; disruption: 0.69 [0.58,0.78], stim. control: 0.49 [0.43,0.55]), no stim.: 0.64 [0.58,0.70], (Kruskal-Wallis test: H=21.02, p=2.7×10-5). Post-hoc Mann-Whitney tests for the run and rest epochs revealed a significant difference between the disruption and stimulated control sessions (run and rest) or between the stimulated control and non-stimulated control session (rest) and not between the other pairs (RUN: disruption - stim.control: U=1944.00, p=6.6×10-5, disruption - no stim.: U=1728.00, p=0.061, stim.control - no stim.: U=2011.00, p=0.26 REST: disruption - stim.control: U=520.00, p=0.00019, disruption - no stim.: U=435.00, p=0.17, stim.control - no stim.: U=695.00, p=7.7×10-5).
+In line with our expectations, ripples were detected mostly at reward sites (rewards; disruption: 0.82 [0.78,0.85], stim.control: 0.85 [0.82,0.87], no stim.: 0.85 [0.82,0.87], arms; disruption: 0.08 [0.06,0.10], stim. control: 0.07 [0.06,0.09], no stim.: 0.06 [0.05,0.07], center; disruption: 0.10 [0.09,0.12], stim. control: 0.08 [0.07,0.10], no stim.: 0.09 [0.08,0.11], Figure 3i), and this bias was not significantly different between stimulation protocols (Kruskal-Wallis test: H=0.33, p=0.85). The overall ripple detection rate calculated over the immobility periods in both run epochs and in the rest epochs did appear to be significantly different between sessions with a different stimulation protocol (RUN; disruption: 0.58 [0.52,0.67], stim.control: 0.46 [0.41,0.50]), no stim.: 0.49 [0.41,0.57], Kruskal-Wallis test: H=12.94, p=0.0016, (REST; disruption: 0.69 [0.58,0.78], stim. control: 0.49 [0.43,0.55]), no stim.: 0.64 [0.58,0.70], (Kruskal-Wallis test: H=21.02, p=$2.7\times10^{-5}$). Post-hoc Mann-Whitney tests for the run and rest epochs revealed a significant difference between the disruption and stimulated control sessions (run and rest) or between the stimulated control and non-stimulated control session (rest) and not between the other pairs (RUN: disruption - stim.control: U=1944.00, p=$6.6\times10^{-5}$, disruption - no stim.: U=1728.00, p=0.061, stim.control - no stim.: U=2011.00, p=0.26 REST: disruption - stim.control: U=520.00, p=0.00019, disruption - no stim.: U=435.00, p=0.17, stim.control - no stim.: U=695.00, p=$7.7\times10^{-5}$).
 
-## Awake sharp-wave ripples are accurately detected and disrupted
+### Awake sharp-wave ripples are accurately detected and disrupted
 
 All experiments were conducted using the same implementation for online ripple detection and disruption as in our previous work (Michon et al., 2019), where it was shown that ripple-triggered VHC stimulation following learning reduced spatial memory for highly rewarded places. Here, we use the same post-hoc quality metrics for both the disruption and detection to show that we indeed performed the manipulations in a way that is comparable to those that impacted behavior in a different scenario.
 
-Before each experimental session, the threshold for ripple detection and the stimulation current were manually adjusted by the experimenter to ensure accurate and complete detection and disruption. The disruption quality was quantified for all sessions in stimulated control and disruption condition by comparing the ripple amplitude in a 20ms window before and after the time of detection. The normalized post-detection ripple amplitude was significantly lower in the sessions with ripple disruption in all three tasks (Mann-Whitney test, NMTS: U=912.00, p=5.9×10-11, MTS: U=961.00, p=7×10-12, SEQ: U=2615.00, p=2.6×10-18), showing that detected ripples were successfully disrupted (Figure 4a).
+Before each experimental session, the threshold for ripple detection and the stimulation current were manually adjusted by the experimenter to ensure accurate and complete detection and disruption. The disruption quality was quantified for all sessions in stimulated control and disruption condition by comparing the ripple amplitude in a 20ms window before and after the time of detection. The normalized post-detection ripple amplitude was significantly lower in the sessions with ripple disruption in all three tasks (Mann-Whitney test, NMTS: U=912.00, p=$5.9\times10^{-11}$, MTS: U=961.00, p=$7\times10^{-12}$, SEQ: U=2615.00, p=$2.6\times10^{-18}$), showing that detected ripples were successfully disrupted (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig4-v2.jpg)
+
+**Figure 4.:** (a) Normalized post-detection ripple power for all tree tasks in run epochs (NMTS: disruption: n_trials=148, stim.control: n_trials=155 , MTS: disruption: n_sessions=31, stim.control: n_sessions=31 , SEQ: disruption: n_sessions=23, stim.control: n_sessions=29). A small dot represents the average over one session, the large dots represent the mean and 99%CI. (b) True positive rate versus False discovery rate for all tasks. One dot represents the average over one session. (c) The absolute detection delays (left), relative detection delays for both the short (74% of all ripples) and long ripples (26% of all ripples) (middle) and ripple peak amplitude for all epochs of all tasks, considering the no stim. and stim.control epochs. (d) Example online detected ripples that were also detected offline (true positive) from five different animals. Grey vertical lines indicate the start and end of the ripple. See also Figure 4—figure supplements 1 and 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Illustration showing the bilateral recording (HC) sites and stimulation (VHC) site. (b) Example LFP traces of disrupted ripples in the stimulated hemisphere (top) and non-stimulated hemisphere (bottom). (c) Normalized post-detection ripple power for stimulated and non-stimulated hemisphere in disruption and stimulated control conditions (Mann-Whitney test, stimulated hemisphere: U=121.00, p=4.1 × 10–5, non-stimulated hemisphere: U=118.00, p=9.1 × 10–5). Each small dot represents the average over one session, the large dots represent the mean and 99% CI. Quantification was performed on 11 sessions in total for each stimulation protocol that were acquired from three animals (on average, 214 ripples per session were analyzed). (d) Top: example MUA traces from the stimulated (left) and non-stimulated (right) hemispheres for both disruption (yellow) and stimulated control (green) conditions. Red/black vertical lines indicate the time of ripple detection and VHC stimulation, respectively. A short window around the time of the detection/stimulation (shaded green) that contains the stimulation artefact was excluded from the analysis. Bottom: average MUA power across all ripples for disruption (yellow) and stimulated control (blue) conditions. The grey shaded areas indicate the time windows that were used to compare the MUA power before and after ripple detection. (e) Normalized post-detection MUA power for stimulated and non-stimulated hemispheres in disruption and stimulated control conditions for all sessions (Mann-Whitney test, stimulated hemisphere: U=118.00, p=9.1 × 10–5, non-stimulated hemisphere: U=116.00, p=0.00015). The small dots represent the average over one session, the large dots represent the mean and 99% CI. Animals rested in a sleep box during the recordings.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84004/elife-84004-fig4-figsupp2-v2.jpg)
 
 Since the stimulation electrode is placed in the ventral hippocampal commissure, a large white matter structure constructed from axons connecting the left and right hippocampi, ripples are disrupted in both hemispheres. Indeed, recordings from three rats with recording tetrodes placed in both the left and right hemisphere showed a clear disruption of ripples in both hemispheres using the same unilateral stimulation method as in the three behavioral experiments (Table 4; Figure 4—figure supplement 1).
+
+**Table 4.**
+ Overview animals bilateral recordings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animals</th>
+      <th>Disruption sessions</th>
+      <th>Stim. Control sessions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ST3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>ST4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>ST5</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>11</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
 
 The quality of the ripple detection was quantified based on data from the stimulated and non-stimulated control sessions. In each session, ripples were detected offline (see Methods) and compared to the online detected ripples by quantifying a true positive rate (TPR) and false discovery rate (FDR) (Figure 4b). The high TPR for almost all sessions suggest that a large fraction of all offline-defined ripples were detected online. We observed a wider distribution for the FDR in comparison to the distribution for the TPR, likely due to a variable signal-to-noise ratio across experiments. Ripple detection and disruption were quantified separately for the inter-trial times in the MTS task and the rest epochs in the SEQ task (Figure 4—figure supplement 2). In both cases, ripple power was significantly reduced following stimulation (Figure 4—figure supplement 2a). The TPR-FDR distribution for the inter-trial periods in the REF task was shifted toward lower TPR and higher FDR, indicating a worse detection (lower TPR and higher FDR, Figure 4—figure supplement 2b). In the inter-trial times, the animals were locked in the center of the maze and they frequently engaged with the closed doors, which resulted in movement artifacts in the LFP signal that were falsely identified as ripples. Quantifications for the sleep box epochs in the SEQ task were similar to those on the maze, that is high TPR and variable FDR (Figure 4—figure supplement 2c). As online detection of ripples can only occur after their initiation, there will always be a detection delay (Figure 4c). The absolute detection delay over all epochs in each task, and considering only the no stim. and stim.control epochs, is median [iqr], 36.69ms [34.68,39.19], in line with what is expected when using the Falcon software platform (Ciliberti and Kloosterman, 2017). When we compare this to the total length of the ripple, we obtain a relative delay (median [iqr]) of 33.32% [29.97,36.47] for long ripples (duration >100ms) and 57.79% [54.61,60.49] for the remaining ripples. The average peak ripple amplitude, quantified by filtering in the ripple frequency band (140–225 Hz) and taking the peak value of the envelope in the ripple interval, is 159.76 μV [117.61,195.45].
 
@@ -109,82 +345,94 @@ In summary, our results provide clear causal evidence that the neural activity d
 
 ## Methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 A total of 15 male Long Evans rats (supplier Janvier Labs), food restricted to 85–90% of the free-feeding weight, were used in this study. At the start of behavioral training procedures, rats were 7–10 weeks old. All rats received an implant for neural recordings and stimulation. Tables 1–3 provides an overview of the experimental sessions for each rat. All experiments were carried out in accordance with protocols approved by KU Leuven animal ethics committee (P119/2015 and P175/2020) and in accordance with the European Council Directive, 2010/63/EU. Animals in experiment were housed separately in individually ventilated cages (IVC) with ad libitum access to water and controlled intake of standard food pellets. Health status and body weight were checked daily by the experimenters and dedicated animal care personnel. To improve the well-being of the rats, a playpen (100x55 cm) was constructed in the course of this study that allowed rats to spend spent time in an enriched environment with their (former) cage mate. The playpen can be divided into two parts separated by a transparent wall with ‘sniffle holes’ to encourage social interaction between the two rats without accidental damage to their implants. The enrichment consisted of a small maze with hidden food, toys, a climbing rope and ladder that provide access to an upper story with a running wheel. Experiments for the delayed non-match-to-sample and match-to-sample tasks were started prior to completion of the playpen. All five rats used to test the memory of temporally ordered information (third experiment), however, spent at least 30 min per day in the playpen.
 
-## Method details
+### Method details
 
-## Behavioral task
+#### Behavioral task
 
 In all experiments, the maze is elevated 40 cm above the ground and located in a 4x4 m black room with distinctive visual cues on all four walls.
 
-## Non-match-to-sample paradigm (NMTS)
+#### Non-match-to-sample paradigm (NMTS)
 
 We use an eight-arm radial maze with a 40 cm diameter central platform and 90 cm long arms that each terminate in a 20 cm two-reward platform. There are doors at 6 cm from the central platform on each arm, which open by moving down and are controlled wirelessly from outside the room. All animals received chocolate pellets as a reward, delivered in a small food well at the end of the reward platform. The doors were controlled wirelessly in sessions of two animals, for the sessions of the other three the doors are controlled manually. The goal of this task is for rats to remember which arms in an eight-arm radial maze they had and had not visited recently (Sasaki et al., 2018). In each daily session, rats perform 15 independent trials. Every trial consists of two phases: an instruction phase in which rats are forced to visit four randomly selected arms one by one, and test phase in which rats have access to all eight arms and need to visit the remaining four arms to collect reward (Figure 1a). At the start of each trial, all eight arms are baited with a chocolate reward at the end of the reward platform. All reward platforms contain inaccessible rewards to minimize olfactory strategies. The instruction phase starts with the rat in the center of the maze with all doors closed. Next, one after the other, four randomly chosen doors are opened and the rat is allowed to run down the arm and collect the reward. After each arm visit, the corresponding door closes so that at any moment only one arm can be visited. After the fourth visit, all doors are closed, the instruction phase ends and the rat is constrained to the central platform, in case automated doors (Peira bvba) were used, or placed on a nearby platform next to the maze, when manual doors were used. After a short delay all doors open, rats are returned to the central platform if needed, and the test phase started. After a correct visit in the test phase, the door of that arm was closed for the remainder of the trial. A trial ended after rats visited all four correct arms or after the first incorrect visit. In between trials, rats either waited for 90–120 s in the center of the maze with all doors closed (in case of automated doors) or were placed on a nearby platform (in case of manually operated doors). During the inter-trial wait period, all reward wells were refilled by the experimenter.
 
-## Match-to-sample paradigm (MTS)
+#### Match-to-sample paradigm (MTS)
 
 We use the same apparatus as for the NMTS task with the doors controlled wirelessly for all animals. Three animals received chocolate pellets as reward, delivered in a small food well at the end of the reward platform. The remaining two animals received a liquid reward (chocolate syrup), dispensed through a pump that was also controlled wirelessly from outside the behavior room. The goal of the task is for rats to learn in daily sessions which set of four out of eight arms lead to reward. Each session consists of 25 trials and the four rewarded arms are randomly varied between sessions, such that each session is an independent assessment of the rats’ ability to learn the location of reward. Configurations that have all four arms located next to each other were not used. When a solid reward is used, a trial starts with the four chosen arms baited. The other arms contain inaccessible rewards to minimize olfactory strategies. When liquid rewards are used, a pump containing chocolate syrup is placed on every arm to minimize olfactory and visual strategies. Only the pumps on the correct arms deliver reward (~2 ml) when the rat visits that arm. At the start of a session, rats are placed on the central platform, the experimenter leaves the room, and all doors open simultaneously. Rats can now explore all arms freely. After the last rewarded arm has been visited, the rats are allowed to return to the central platform, after which all doors close and the first trial ends. In case solid rewards are used, the reward wells of the same four arms are now refilled by the experimenter. Rats remain on the central platform for 60–120 s, after which all doors are opened and the next trial starts.
 
-## Sequence memory paradigm (SEQ)
+#### Sequence memory paradigm (SEQ)
 
 For the sequence memory paradigm we use a 12-arm radial maze with a 37.5 cm diameter central platform and 60 cm long arms that each terminate in a 22 cm two-reward platform. There is a door on each arm, 6cm from the central platform, and all animals receive a liquid reward (condensed milk, ~2 ml) that was delivered wirelessly from outside the behavior room. In the sequence memory task, the goal is for rats to learn the correct order in which four arms need to be visited to receive reward. Each daily session is a separate experiment in which four arms of a 12-arm radial maze are randomly chosen, and the remaining arms are removed. A crossing visit order is selected (i.e. clockwise and counter clockwise orders are not used), for example if arms in positions 2,3,4,11 are chosen then valid visit orders are for example 2→4→3→11→2 and 2→3→11→4→2, but not the counterclockwise order 2→11→4→3→2. Every session consists of two run epochs lasting 25 min and an intervening rest epoch lasting 10 min. At the beginning of the session, rats are placed in the center of the maze with all doors closed. The first run epoch starts when all doors open and the rat is free to move around. Each time a correct transition is made to the next arm in the sequence the rat is rewarded. After 25 min rats are allowed to return to the center, the doors are closed and rats are taken off by the experimenter and put back in the sleep box for the rest epoch. The second run epoch is identical to the first. The rats’ position is tracked by an overhead camera and liquid rewards are automatically delivered (Peira bvba, Belgium) based on the tracked behavior using custom developed software in the lab (Catanzariti et al., 2022; https://bitbucket.org/kloostermannerflab/fklab-controller-lab copy archived at KloostermanNERFLab, 2024).
 
-## Behavioral training
+### Behavioral training
 
 All animals were pretrained to run on elevated mazes for reward, habituated to automated doors (when used) and to a separate sleep box. For each of the three behavioral tasks, the pretraining and training procedures to teach the rats the task rules are described below.
 
-## Non-match-to-sample paradigm
+### Non-match-to-sample paradigm
 
 In the first phase of pretraining (5–7days), rats are habituated to the eight-arm radial maze and learn to look for reward at the end of the arms. On days 1–2, rats are placed in the center of the maze and allowed to freely explore for 15–30min. Chocolate rewards are scattered throughout the maze to promote exploration. On the next 2–3days, rewards are progressively restricted to only the arms and finally the reward wells at the end of each arm. Once rats are suﬀiciently comfortable and motivated to run for the rewards, the second phase of the pretraining starts. This phase lasts three days and rats are required to perform at least three to six trials of the NMTS paradign. Rats are then taken off food restriction and undergo surgery. After 1 week of post-surgery recovery, the food restriction is resumed and once rats are at 85–90% of their post-surgery weight. Finally, rats run 6–15 trials per day until the average performance is above 50% for at least three days in a row.
 
-## Match-to-sample paradigm
+### Match-to-sample paradigm
 
 The pretraining prior to surgery is the same as for the NMTS paradigm, except in the second phase where rats perform daily sessions of the MTS paradigm until they complete at least 15 trials in 30 min. Training is completed after recovery from surgery when rats are back at 85–90% of their post-surgery weight. In daily sessions (25 trials), rats perform the MTS paradigm until the average number of visits on the last 10 trials is less than 5 for 3 days in a row. In total rats take on average 14 days to reach the learning criterium.
 
-## Sequence memory paradigm
+### Sequence memory paradigm
 
 Prior to surgery, rats are trained to run back and forth on a linear track (130 cm) for liquid reward. Animals perform two 15 min sessions per day, with a 15–20 min intervening rest in the sleep box. Training continues until rats collected at least 50 rewards in 15 min. Food restriction is then stopped to prepare for surgery. After one week of post-surgery recovery, food restriction is resumed, and rats are put back on the linear track until they perform at least 70 crossings in 15 min. Next, rats are trained on a continuous spatial alternation task in a three-arm radial maze following a single-day acquisition procedure that consist of eight 15 min learning sessions. Training on the alternation task is repeated on 3 days (separated by a rest day), and each day a different arm is chosen as the home arm. On the rest days, the rats perform two 15 min sessions with the same home arm as the day before. Finally, rats are introduced to the sequence memory paradigm as described above until their sequence performance is above 80% by the end of the session, for 3 days in a row. We found that pretraining rats on the alternation task improved the acquisition of the sequence task.
 
-## Surgical procedure
+### Surgical procedure
 
 A custom-designed 3D-printed micro-drive array (Kloosterman et al., 2009), carrying up to eight tetrodes (four twisted 0.012 mm polyimide- insulated nickel-chrome wires, angled cut; Sandvik, Kista, Sweden) and three stimulation electrodes (two twisted 0.06 mm polyimide-insulated stainless-steel wires, angled cut; California Fine Wire, Grover Beach, CA), was surgically attached to the rat skull using standard aseptic techniques. To induce anesthesia, the rat was placed in an induction chamber filled with oxygen (0.5–1 L/m) and 5% isoflurane. Next, its head was securely mounted in a stereotaxic frame after shaving the head, and eyes were protected from drying out and prolonged light exposure with eye ointment and aluminum foil. During the surgery, anesthesia was maintained by administration of 0.5–2% isoflurane through a nose mask and adjusted if necessary, based on vital signs: blood oxygen level, heart rate and breathing rate. The body temperature (measured with a rectal probe) was kept constant using a heating pad. After disinfection of the skin with iodine and ethanol, an incision with a scalpel along the mid-line exposed the skull. Small scratches were carved in the bone plates to allow better adhesion of the dental cement used to fix the implant to the skull. Nine anchoring bone screws were inserted (three frontal, two left parietal, two occipital, and one right parietal) and gaps between the screws and the skull were filled up with bio compatible glue (VetBond) and after extra disinfection (10 min Baytril submersion) all screws were fixed together with dental cement. Next, two craniotomies were drilled for rats for the behavioral experiments, and the dura was removed to allow access to the brain above the HC and ventral hippocampal commissure (VHC) (HC-craniotomy center coordinates: 4 mm posterior to Bregma, 2.5 mm right from the midline; VHC-craniotomy center coordinates: 1.3 mm posterior to Bregma, 0.9 mm right from the midline). For bilateral recordings two extra craniotomies were drilled above the HC and VHC on the other hemisphere (HC-craniotomy center coordinates: 4 mm posterior to Bregma, 2.5 mm left from the midline; VHC-craniotomy center coordinates: 1.3 mm posterior to Bregma, 0.9 mm left from the midline). Before mounting of the implant, craniotomies were covered in silicon grease to seal the gaps between the edge of the craniotomies and the tetrode-carrying tubes. Additionally, mineral oil was applied to the tip of the cannulas prior to implantation which prevents back-filling (and possible clogging) of the tetrode-carrying tubes with cerebrospinal fluid or blood. The implant was fixed to the skull with light-curable dental cement (SDI, Bayswater, Australia) and one screw was wired to the electrode interface board to serve as electrical ground. The skin was sutured in the front and back of the implant with surgical threads (4–0 Silk wax coated braided silk, Sofsilk). While the rat was still under light anesthesia, all tetrodes and stimulation wires were lowered 1 mm into the cortex. Finally, 0.7 ml of saline (anti-dehydration) and 0.3 ml Metacam (anti-inflammatory and pain relieve) were administered subcutaneously. The Metacam injection was repeated in the three days following completion of the surgery.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 After approximately one week of post-surgical recovery, four to five tetrodes were positioned in the CA1 pyramidal cell layer of the dorsal HC over the course of 3 days to minimize tissue damage. One tetrode was lowered in the white matter above the CA1 cell layer to serve as a reference and one tetrode was placed in the cortex above (parietal association cortex) to aid the online ripple detection. Wide-band (0.1–4 kHz) signals were sampled at 4 kHz, digitized using a 128- channel data acquisition system (Digilynx SX acquisition system with HS-36 analog headstage and Cheetah software; Neuralynx, Bozeman, MO) and saved to a hard disk for offline analysis.
 
-## Online ripple detection and disruption
+### Online ripple detection and disruption
 
-A live network stream of digitized multi-channel samples from the Digilynx acquisition system was fed into a quad-core workstation that runs the real-time detection software Falcon (Ciliberti and Kloosterman, 2017). Falcon initiates TTL pulses via a microcontroller board (Arduino UNO) that is connected to a constant-current stimulator (MultiChannel System, Reutlingen, Germany) which generates a biphasic current for electrical stimulation of the VHC. Here, raw signals of 2–4 electrodes (with the clearest ripples) are first filtered in the ripple band (135–255 Hz) using a Chebyshev type-II IIR filter (order 20). Using the neuralynx acquisition system, the total round trip latency was below 1ms (Ciliberti and Kloosterman, 2017). After summing of the ripple power (RP) of the different electrodes, ripples were identified based on the following criteria.RP−μ(t)>f⋅mad(t)
+A live network stream of digitized multi-channel samples from the Digilynx acquisition system was fed into a quad-core workstation that runs the real-time detection software Falcon (Ciliberti and Kloosterman, 2017). Falcon initiates TTL pulses via a microcontroller board (Arduino UNO) that is connected to a constant-current stimulator (MultiChannel System, Reutlingen, Germany) which generates a biphasic current for electrical stimulation of the VHC. Here, raw signals of 2–4 electrodes (with the clearest ripples) are first filtered in the ripple band (135–255 Hz) using a Chebyshev type-II IIR filter (order 20). Using the neuralynx acquisition system, the total round trip latency was below 1ms (Ciliberti and Kloosterman, 2017). After summing of the ripple power (RP) of the different electrodes, ripples were identified based on the following criteria.
+
+$$
+RP−\mu(t)>f⋅mad(t)
+$$
 
 In this equation, μ(t) and mad(t) are the running estimates of the mean and mean absolute deviation calculated on the ripple power, and f is a multiplier set to a value in the range 5–13. The value of f was adjusted for each daily session to maximize the ratio of positive over false ripple detections. The RP is the root mean square of the filtered signal. Estimates of μ(t) and mad(t) were computed using an exponential moving average filter with span set to 7 s. Estimates were not updated during a 50ms window after each detection to avoid multiple detections of the same event. To avoid false detections due to heavy head movements or chewing artifacts, the same ripple detection procedure was applied to signals from the cortical electrode. Detections were marked as false positive if a cortical detection occurred within a fixed time window ([–40, 1.5] ms) around a HC detection. While ripple-like events have been described in the parietal association cortex during sleep, only a small fraction is coupled to HC ripples and they have a much lower power compared to HC ripples (Khodagholy et al., 2017; Aleman-Zapata et al., 2022). In our experiments in the awake state, the limited cortical detections predominantly represent artifacts rather than joint hippocampal-cortical ripples.
 
 The detected hippocampal ripples triggered the generation of a second TTL pulse by Arduino UNO either immediately (disruption condition) or after a random delay between 150 and 250ms. This TTL-pulse was sent to a constant-current stimulator (MultiChannel System, Reutlingen, Germany) to electrically stimulate the VHC. Both the detection event and the time of stimulation (=stimulation event) were sent to the Neuralynx acquisition system for logging. The amplitude of the biphasic electrical pulses (0.2ms duration) varied from 50 to 250 μA and was set in each session to the lowest amplitude that resulted in consistent disruption of hippocampal ripple events. To avoid over-stimulation that could lead to damage of the surrounding tissue, no stimulations could occur within a 150ms lockout period after a prior stimulation. In the disruption condition, this is achieved by discarding detections in a 150ms window after each detection. In the stimulated control condition, all detections that would trigger a stimulation that falls withing a 150ms window after the delayed stimulation are were discarded. Ripple detection and disruption started after rats acquired the task rules reached according to the learning criteria specific for the behavioral task. In the NMTS paradigm, ripple detection and/or disruption occurs only during a trial (i.e. both during and in between the instruction and test phase), but not in the inter-trial time. For every trial one of the control/disruption conditions was picked pseudo-randomly. In the MTS paradigm, ripple detection and/or disruption was applied during both the trials and the inter-trial times intervals. In the sequence memory paradigm, ripple detection and/or disruption was applied during both run epochs and rest epoch. In both the MTS and sequence memory paradigm, the stimulation condition was constant through the whole session.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Analysis of neural and behavioral data was performed using Python and its scientific extension modules (Millman and Aivazis, 2011), augmented with custom Python and C++toolboxes. Throughout the result section, all description summary statistics report mean [99% CI], unless stated otherwise.
 
-## Behavior
+### Behavior
 
-Position and speed of the rat were tracked using LED lights mounted on one of the headstages and an overhead video camera (25 Hz). Entry into a maze arm was detected as soon as the animal moved past the first 20 cm of the arm (regardless of the rat actually reaching the reward platform). To assess stereotypical behavior in the MTS task, we defined for every session a stereotypy index. First, a string representing the sequence of arm visits in a trial was created for each of the last 10 trials in a session (for example, ‘1345’ or ‘5471’). The stereotypy index was defined as the average similarity (based on the normalized Levenshtein distance) between the strings of all trial pairs. The Levenshtein distance measures the minimum number of single character edits that are necessary to change one string into another, and for two strings a and b with lengths |a| and |b| is computed according to the following formula:lev(a,b)={|a|if |b|=0,|b|if |a|=0,lev(tail(a),tail(b))if a[0]=b[0]1+min{lev(tail(a),b)lev(a,tail(b))lev(tail(a),tail(b))otherwise,
+Position and speed of the rat were tracked using LED lights mounted on one of the headstages and an overhead video camera (25 Hz). Entry into a maze arm was detected as soon as the animal moved past the first 20 cm of the arm (regardless of the rat actually reaching the reward platform). To assess stereotypical behavior in the MTS task, we defined for every session a stereotypy index. First, a string representing the sequence of arm visits in a trial was created for each of the last 10 trials in a session (for example, ‘1345’ or ‘5471’). The stereotypy index was defined as the average similarity (based on the normalized Levenshtein distance) between the strings of all trial pairs. The Levenshtein distance measures the minimum number of single character edits that are necessary to change one string into another, and for two strings a and b with lengths |a| and |b| is computed according to the following formula:
 
-with tail(x) equal to all of string x except for the first character. The similarity is then computed as one minus the normalized Levenshtein distance:similarity(a,b)=1-lev(a,b)max(|a|,|b|)
+$$
+lev(a,b)={|a|if |b|=0,|b|if |a|=0,lev(tail(a),tail(b))if a[0]=b[0]1+min{lev(tail(a),b)lev(a,tail(b))lev(tail(a),tail(b))otherwise,
+$$
+
+with $tail(x)$ equal to all of string x except for the first character. The similarity is then computed as one minus the normalized Levenshtein distance:
+
+$$
+similarity(a,b)=1-\frac{lev(a,b)}{max(|a|,|b|)}
+$$
 
 The shuffled distributions used to compute the z-scores for the circularity and stereotypy quantifications of every MTS session, were created by randomizing the visit order of each trial 2000 times.
 
 For behavioral analysis of the sequence paradigm, only sessions in which the rat performed at least 150 visits in the first run epoch are considered. After this selection, data from run 1 and run 2 are merged and we only consider the first 400 visits to assess the (learning) behavior. To compute smoothed learning curves we use a Gaussian kernel with a bandwidth of 50 trials. Next, we calculated the corresponding binomial probability that the (smoothed) number of correct responses is significantly higher (alpha = 0.01) than would be expected by chance (0.5) and define the last trial at which this criteria is met. If the criteria were never met, no learning visit was defined.
 
-## Offline ripple detection
+### Offline ripple detection
 
-Ripple events were detected in the hippocampal field potential for all trials and sessions of the non-stimulated and stimulated control conditions. For the stimulated control condition, the stimulation artifact is first removed and replaced by cubic interpolation of the signal in a 10ms window around the stimulation. To detect ripples offline, the local field potential recorded from 1 to 3 tetrodes was filtered in the ripple frequency band (140–225 Hz). The ripple envelope was computed as the absolute value of the Hilbert-transformed ripple signal, averaged across the recording sites and smoothed with a Gaussian kernel (bandwidth 15ms). Finally, ripple events were detected when the ripple envelope exceeded a high threshold of med+9⋅(Q3-med). Here, med and Q3 represent the median and upper quartile range of the envelope. To determine the start and end time of each ripple, a second threshold was computed with the same method as before, but now only using the signal statistics of a 30ms window before each detected ripple (–100ms to –70ms) and a multiplier of 0.4 instead of 9. Ripple events that were separated by less than 20ms were merged into one, and events with a duration shorter than 40ms were excluded. Offline ripple detection was performed on the same task epochs when online ripple detection was performed. It should be noted that the multiplier for the percentile-based threshold, that we use, should not be compared directly to the multiplier for z-score based threshold that is used in previous studies because of the different statistics being used (median / upper quartile range vs mean / standard deviation). When computing the equivalent z-score multiplier that produces the same absolute threshold as our percentile multiplier, we find that these multiplier values are comparable to the 3–6 standard deviations reported in previous papers (Girardeau et al., 2009; Jadhav et al., 2012; Fernández-Ruiz et al., 2019; Figure 4—figure supplement 2d e).
+Ripple events were detected in the hippocampal field potential for all trials and sessions of the non-stimulated and stimulated control conditions. For the stimulated control condition, the stimulation artifact is first removed and replaced by cubic interpolation of the signal in a 10ms window around the stimulation. To detect ripples offline, the local field potential recorded from 1 to 3 tetrodes was filtered in the ripple frequency band (140–225 Hz). The ripple envelope was computed as the absolute value of the Hilbert-transformed ripple signal, averaged across the recording sites and smoothed with a Gaussian kernel (bandwidth 15ms). Finally, ripple events were detected when the ripple envelope exceeded a high threshold of $med+9⋅(Q3-med)$. Here, med and Q3 represent the median and upper quartile range of the envelope. To determine the start and end time of each ripple, a second threshold was computed with the same method as before, but now only using the signal statistics of a 30ms window before each detected ripple (–100ms to –70ms) and a multiplier of 0.4 instead of 9. Ripple events that were separated by less than 20ms were merged into one, and events with a duration shorter than 40ms were excluded. Offline ripple detection was performed on the same task epochs when online ripple detection was performed. It should be noted that the multiplier for the percentile-based threshold, that we use, should not be compared directly to the multiplier for z-score based threshold that is used in previous studies because of the different statistics being used (median / upper quartile range vs mean / standard deviation). When computing the equivalent z-score multiplier that produces the same absolute threshold as our percentile multiplier, we find that these multiplier values are comparable to the 3–6 standard deviations reported in previous papers (Girardeau et al., 2009; Jadhav et al., 2012; Fernández-Ruiz et al., 2019; Figure 4—figure supplement 2d e).
 
-## Evaluation of online ripple detection and disruption
+### Evaluation of online ripple detection and disruption
 
 Online ripple detection accuracy was verified for all trials and sessions of the non-stimulated and stimulated control conditions. Online detected ripples were compared to offline detected ripples to identify the fraction of offline ripples that were also detected online (true positive rate or TPR) and the fraction of online detections that did not correspond to an offline detected ripples (false discovery rate, FDR). To assess the disruption of ripples after a closed-loop stimulation of the VHC, the mean ripple envelope after each detection/stimulation was computed in a 30ms time window (from +20ms to +50ms) and normalized to the mean ripple envelope in a 30ms time window (from –50ms to –20ms) before detection/stimulation (=normalized post-detection ripple power). The ripple envelope was computed as described above, including the removal of the stimulation artifact for the disruption session. The artifact removal was also performed at the time of detection for the stimulated control sessions to have a fair comparison between the disruption and stimulated control sessions. The normalized post-detection MUA power was obtained in the same way but using the LFP filtered in 300–2000 Hz range.
 
-## Statistics
+### Statistics
 
 To test a difference in means between two (unpaired) samples, we used the Mann-Whitney test. To test the difference in means between three (unpaired) samples we used the Kruskal-Wallis test.

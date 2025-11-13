@@ -10,17 +10,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Evolutionary Anthropology, Duke University Durham United States
-2. https://ror.org/03s41ze97 Zoo New England Boston United States
-3. https://ror.org/05a0ya142 Broad Institute of MIT and Harvard Cambridge United States
-4. https://ror.org/024mw5h28 Department of Human Genetics, University of Chicago Chicago United States
-5. https://ror.org/024mw5h28 Section of Genetic Medicine, Department of Medicine, University of Chicago Chicago United States
-6. https://ror.org/024mw5h28 Committee on Immunology, University of Chicago Chicago United States
-7. https://ror.org/02vm5rt34 Department of Biological Sciences, Vanderbilt University Nashville United States
-8. https://ror.org/01sdtdd95 Canadian Institute for Advanced Research Toronto Canada
-9. https://ror.org/00py81415 Duke Population Research Institute, Duke University Durham United States
-10. https://ror.org/00py81415 Department of Biology, Duke University Durham United States
-11. https://ror.org/02a33b393 Department of Primate Behavior and Evolution, Max Planck Institute for Evolutionary Anthropology Leipzig Germany
+1. Department of Evolutionary Anthropology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Zoo New England Boston United States ([ROR:03s41ze97](https://ror.org/03s41ze97))
+3. Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+4. Department of Human Genetics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+5. Section of Genetic Medicine, Department of Medicine, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+6. Committee on Immunology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+7. Department of Biological Sciences, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+8. Canadian Institute for Advanced Research Toronto Canada ([ROR:01sdtdd95](https://ror.org/01sdtdd95))
+9. Duke Population Research Institute, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+10. Department of Biology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+11. Department of Primate Behavior and Evolution, Max Planck Institute for Evolutionary Anthropology Leipzig Germany ([ROR:02a33b393](https://ror.org/02a33b393))
 
 † Corresponding author
 
@@ -42,9 +42,57 @@ We used these data to pursue three goals. First, we describe overall patterns of
 
 ## Results
 
-## mSTARR-seq captures enhancer activity and methylation-dependent enhancer activity genome-wide
+### mSTARR-seq captures enhancer activity and methylation-dependent enhancer activity genome-wide
 
 We assessed regulatory activity and methylation-dependent regulatory activity for 4,558,475 600-base pair windows of the genome by pairing hybridization capture of targeted loci in the human genome with the massively parallel reporter assay, mSTARR-seq (Lea et al., 2018). In brief, mSTARR-seq performs enzymatic manipulation of DNA methylation across hundreds of thousands to millions of reporter DNA fragments simultaneously. By measuring the ability of fragments to self-transcribe (as in Arnold et al., 2013; Shlyueva et al., 2014; reviewed in Gallego Romero and Lea, 2022), it generates estimates of the enhancer-like regulatory potential for each fragment when that fragment is in an unmethylated versus a methylated state (Figure 1A, B). Notably, results from the unmethylated condition are akin to those from a conventional STARR-seq experiment, in that they assess regulatory activity irrespective of CpG content or methylation status. To focus on the CpG sites most likely to be included in DNA methylation studies in humans, we performed custom capture with SeqCap EZ Prime Choice Probes (Roche), targeting all CpG sites on the Illumina Infinium MethylationEPIC array and those likely to be profiled using reduced representation bisulfite sequencing, which enriches for CpG sites near targets of MspI restriction enzyme digestion (Figure 1—figure supplement 1). Because of substantial attention to potential environmental and early life effects on DNA methylation at the glucocorticoid receptor gene (NR3C1, reviewed in Liu and Nusslock, 2018), we also targeted the 6.5 Mb in and flanking NR3C1. Finally, to assess background expectations for regulatory and methylation-dependent regulatory activity in the human genome, we targeted a control set of 100,000 loci for capture, chosen at random across the human genome after excluding centromeres, gaps, and uncalled bases in the hg38 genome.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-v1.jpg)
+
+**Figure 1.:** (A) Sheared DNA from the GM12878 cell line was subjected to enrichment via capture with probes targeting loci selected in reduced representation bisulfite sequencing (RRBS) workflows (MspI targets), CpG sites on the Infinium EPIC array, the gene NR3C1 and flanking regions, and 100,000 randomly distributed control regions. Note that a single 600 bp window can contain multiple target types (Figure 1—figure supplement 1). Library diversity summaries are shown in Figure 1—figure supplement 2. (B) Captured loci were cloned into the mSTARR-seq vector, pmSTARRseq1, treated with either the CpG methylating enzyme M. SssI or a sham treatment, and transfected into K562 cells. Methylation levels post-transfection and rarefaction analyses of sequencing depth of replicate samples are shown in Figure 1—figure supplements 3 and 4. Right panel shows an example of DNA methylation-dependent regulatory activity near the first exon of the TTC32 gene, where the methylation-dependent regulatory element overlaps an active promoter chromatin state (red horizontal bar denotes active promoter as defined by ENCODE: The ENCODE Project Consortium, 2012). (C) mSTARR-seq regulatory activity in the baseline condition is strongly enriched in ENCODE-defined enhancers and some classes of promoters (indicated in blue), and depleted in repressed, repetitive, and heterochromatin states. See Supplementary file 4 for full results of this analysis. Regions with mSTARR-seq regulatory activity detected in this experiment also significantly overlap with regions with regulatory activity in other mSTARR-seq and conventional STARR-seq datasets (Figure 1—figure supplement 5; see also Figure 1—figure supplement 6 for estimates of concordance across technical replicates). (D) Left column shows, under the baseline condition (i.e. unstimulated cells), the proportion of 600 bp windows that exhibited minimal regulatory activity (at least 3 replicate samples produced non-zero RNA-seq reads in either the methylated condition or the unmethylated condition) in the mSTARR-seq assay (pink) versus those with detectable input DNA but no evidence of regulatory activity (blue), for windows containing sites from each target set. Right column shows the proportion of windows with regulatory capacity (i.e., the subset of the windows represented in pink on the left that produce excess RNA relative to the DNA input at FDR <1%) that are also methylation-dependent (dark brown). Within each column, pie charts are scaled by the total numbers of windows represented. See Figure 1—figure supplements 7 and 8 for comparisons to regulatory regions in other datasets. Figure 1—figure supplements 9 and 10 show window-level RNA to DNA ratios. Figure 1—figure supplement 11 shows the relationship between CpG density and methylation-dependent regulatory activity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Upset plot showing the degree to which 600 bp non-overlapping genomic windows are shared between the four target genomic regions (EPIC CpGs, Msp1 CpG cut sites, the NR3C1 region, or control sites). Overlap occurs because a single 600 bp genomic window can simultaneously include EPIC CpGs, Msp1 CpG cut sites, the NR3C1 region, and/or control sites. This plot includes 722,472 unique windows, reflecting the set of windows containing at least 1 basepair of sequence in the target loci.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Comparison of diversity of unique mSTARR-seq DNA and RNA fragments from the library generated in this study (transfected into K562 cells) relative to the library published in Lea et al., 2018 (independently transfected into K562 cells). Each dot represents an experimental replicate (Lea DNA replicates n=12; Lea RNA n=12; current DNA replicates n=35; current RNA replicates n=35). Each box represents the interquartile range, with the median value depicted as a horizontal bar. Whiskers extend to the most extreme values within 1.5 x of the interquartile range.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Bisulfite sequencing shows that DNA methylation on the mSTARR-seq plasmid is maintained until the end of the experiment (i.e. 48 hr after transfection), with significantly higher methylation levels in the replicates from the methyltransferase reaction relative to the replicates from the sham methyltransferase reaction (mean methylated = 0.885 [n=17], mean unmethylated = 0.066 [n=15]; unpaired t-test: t=–14.66, df=15.124, p=2.39 x 10–10). Each dot represents an experimental replicate. Red dots indicate post-transfection DNA samples; the single blue dot per condition indicates pre-transfection DNA methylation levels. Methylation estimates are based on the CpG at the position 2294, which is located in the plasmid region used for Gibson assembly. We assessed methylation of this CpG, rather than across CpGs genome-wide, because the genomic coverage of our bisulfite sequencing data across replicates was too variable to perform reliable site-by-site analysis of DNA methylation levels before and after the 48 hr experiment. One sample from the dex sham reaction, L31395, shows an unexpectedly high level of methylation, which appears to be due to an error during generation of the bisulfite sequencing library (e.g. mislabeled tube or poor bisulfite conversion), and not the experimental replicate of cells itself, as the mSTARR-seq RNA library (L31244) from the same replicate clusters with the unmethylated sham replicates as expected (panel B). (B) The first two principal components summarizing overall counts of mSTARR-seq reads for the dex-treated RNA samples (i.e. the raw readout of overall regulatory activity). Each dot represents an experimental replicate, with red and black indicating sham and methylated replicates, respectively. Overall regulatory activity of sample L31244 (indicated by arrow) clusters with the sham replicates as expected, suggesting that this replicate was indeed transfected with sham-treated mSTARR-seq DNA.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Sequencing reads from the (A) DNA replicates or (B) RNA replicates of the baseline dataset were rarefied to the values shown on the x-axis before running the data processing steps and applying the filtering criteria described in the Materials and Methods for the full data set. Dashed vertical lines represent the mean number of sequenced reads per DNA replicate (mean [SD]=30.375 million [3.335 million]) or RNA replicate (mean [SD]=31.712 million [8.194 million]) in the full baseline dataset. These analyses show that our sequencing effort saturated the number of formally analyzable windows based on either our criteria for inclusion based on DNA library sequencing depth or RNA library sequencing depth.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Regulatory regions (in either the unmethylated sham condition, the methylated condition, or both) identified via mSTARR-seq in this study significantly overlap with: K562 regulatory regions (in either the unmethylated sham or methylated condition, or both) from a previously generated mSTARR-seq dataset reanalyzed with our pipeline (Lea et al., 2018) (log2(OR) [95% CI]=6.212 [6.086, 6.440], p<1.0 x 10–300); regulatory regions (in either the unmethylated sham or methylated condition, or both) from an mSTARR-seq experiment in HepG2 liver cells (log2(OR) [95% CI]=3.534 [3.381, 3.684], p=5.21 x 10–307); and regulatory regions from a conventional STARR-seq experiment (i.e. an unmethylated condition) in A549 lung epithelial cells (Johnson et al., 2018) (log2(OR) [95% CI]=2.451 [2.442, 2.461], p<1.0 x 10–300). Bars represent 95% confidence intervals.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Pearson correlations (r) of raw counts between RNA replicates (A–D) and between DNA replicates (E–H) within the windows we formally analyzed for enhancer activity in the baseline dataset reported here and in Lea et al., 2018, following a uniform data processing pipeline. All replicate pairs (both RNA and DNA, in both sham and methylated conditions) in the baseline dataset show correlations ≥0.89, demonstrating replicate reproducibility comparable to other STARR-seq studies (e.g. Klein et al., 2020). For RNA libraries, replicates in the baseline dataset are more correlated than in the Lea et al., 2018 dataset (RNA replicates: baseline mean r=0.926; Lea et al., 2018 mean r=0.347), although DNA replicates show similar inter-replicate consistency (baseline mean r=0.992; Lea et al., 2018 mean r=0.991).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Comparison of diversity of unique mSTARR-seq DNA and RNA fragments from the library published in Lea et al., 2018 (transfected into K562 cells) versus the same library transfected into HepG2 cells in this study. Each dot represents an experimental replicate (n=12 replicates for each box). Each box represents the interquartile range, with the median value depicted as a horizontal bar. Whiskers extend to the most extreme values within 1.5 x of the interquartile range. (B) mSTARR-seq regulatory activity in HepG2 cells is strongly enriched in ENCODE-defined enhancers (indicated in blue) and some classes of promoters, and depleted in repressed and repetitive states.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Effects of methylation on regulatory activity estimated in this study in the baseline dataset are consistent with methylation effects in K562s estimated from a previously generated mSTARR-seq dataset (Lea et al., 2018) and with methylation effects estimated in HepG2 liver cells (Lea et al., 2018: Pearson’s r=0.534 for 1250 windows with FDR <1% in both data sets, R2=0.286, p=3.19 x 10–93; HepG2: Pearson’s r=0.526 for 511 windows with FDR <1% in both data sets, R2=0.277, p=8.87 x 10–38). Each dot represents a 600 bp regulatory window identified, in either the sham or methylated states, in both datasets (FDR <1%; note that not all regulatory windows show significant methylation dependence [MD]). Dashed lines are the best fit lines. In all cases, negative effect sizes correspond to reduced activity in the methylated condition and positive effect sizes correspond to increased activity in the methylated condition.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** Mean RNA (in counts per million) to DNA ratios for methylated replicates (x-axis) versus unmethylated replicates (y-axis). A constant of 0.5 was added to the initial raw counts to ensure no denominator values were 0. Each dot represents a 600 bp window that was formally tested for enhancer activity (A), exhibited significant regulatory activity (B), or exhibited significant methylation-dependent regulatory activity (C) in the baseline dataset. Solid diagonal lines represent y=x, and dashed lines represent the best fit lines. As expected, 600 bp windows tend to show higher RNA to DNA ratios in the unmethylated condition relative to the methylated condition.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp10-v1.jpg)
+
+**Figure 1—figure supplement 10.:** The x-axis represents the log2(mean RNA [in counts per million] to DNA ratios) for the baseline dataset. A constant of 0.5 was added to the initial raw counts to prevent 0 from being in the denominator. Lower values on the x-axis indicate windows showing lower regulatory activity. N=3721 regulatory windows; N=1768 MD regulatory windows.
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig1-figsupp11-v1.jpg)
+
+**Figure 1—figure supplement 11.:** CpG-dense mSTARR-seq regulatory regions are more likely to be repressed by DNA methylation (positive y-axis value; Spearman’s rho=0.370, p=9.865 x 10–121; n=3,721 regions with mSTARR-seq regulatory activity). Each dot represents a 600 bp window that showed significant regulatory activity (FDR <1%). Red and blue dots represent regulatory windows where methylation-dependent activity was or was not detected, respectively. The dashed line represents the best fit line.
 
 We generated an mSTARR-seq library from captured DNA from the GM12878 cell line, followed by transfection into the K562 erythroleukemic cell line and co-purification of plasmid-derived RNA and DNA (6 replicates per condition: methylated versus unmethylated; see Materials and methods; Supplementary file 1). Based on our minimal criteria for assessment (600 basepair windows where at least half of the plasmid-derived DNA samples had non-zero reads covering the window; see Materials and methods), 90.2% of the human genome was included in the plasmid DNA library purified at the end of the mSTARR-seq experiment (mean sequencing depth per replicate = 30.4 million reads; mean read coverage per window = 12.723 ± 41.696 s.d.). Within this set, which also included off-target regions, windows were ~15 fold enriched for targeted regions in the genome (Fisher’s Exact Test log2(OR) 95% confidence interval (CI)=3.971 [3.934, 4.009], p<1.0 x 10–300). Thus, in windows that passed our minimal assessment criteria, we successfully targeted 99.3% of CpG sites on the MethylationEPIC array and 99.4% of sites likely to be included in RRBS libraries. Across target sets, read depth was not predicted by CpG density, indicating no systematic power differences in assessing methylation-dependent activity due to differences in CpG number per window (R2=0.099, p=0.6852; Supplementary file 2). Our results are comparable to published fragment diversity levels achieved with this method (Lea et al., 2018; Figure 1—figure supplement 2). Because demethylation or remethylation of DNA fragments could occur within cells during the experiment, we performed bisulfite sequencing at the end of the experiment. We confirmed that DNA methylation levels were substantially higher in the methylated condition samples than in the unmethylated samples, where methylation levels were near zero (mean methylated = 0.885, mean unmethylated = 0.066, Figure 1—figure supplement 3; unpaired t-test: t=–14.66, df = 15,124, p=2.39 x 10–10). We note that the observed small deviations from 0% and 100% methylation would reduce our power to detect methylation-dependent activity, but should not incur false positive results.
 
@@ -56,15 +104,35 @@ Regions with mSTARR-seq-annotated regulatory activity also exhibited a high degr
 
 Among the 3721 windows with regulatory activity in either the methylated or unmethylated condition, 1768 windows (47.5% of regulatory windows; FDR <1%) were differentially active depending on condition, pointing to DNA methylation-dependent regulatory activity. This result is also concordant when we apply the current pipeline to previously published data from K562s and our new HepG2 data, which exhibit correlated effects of DNA methylation on regulatory activity in the windows examined in both cases (K562: R2=0.286 for 1250 regulatory windows with FDR <1% in both data sets, p=3.19 x 10–93; HepG2: R2=0.277 for 511 regulatory windows with FDR <1% in both data sets, p=8.87 x 10–38 Figure 1—figure supplement 8). Among methylation-dependent regulatory regions, the majority of regions (1744 windows, 98.6%) were more active in the unmethylated condition than the methylated condition (Figure 1—figure supplements 9 and 10). Consistent with previous findings (Lea et al., 2018), regulatory regions with more CpGs are more likely to be repressed by DNA methylation (Figure 1—figure supplement 11; Spearman’s rho = 0.370, p=9.865 x 10–121; n=3,721 regions with mSTARR-seq regulatory activity). Regulatory windows showing higher activity in the methylated condition (24 windows) were enriched for binding motifs of the transcription factors p53, which has been previously reported to have increased binding affinity to methylated DNA relative to unmethylated DNA (Kribelbauer et al., 2017) (log2(OR) [95% CI]=2.352 [0.714, 3.767], p=2.91 x 10–3; Supplementary file 8), and Tfcp2I1, which has been found to recruit Tet2 to mediate enhancer demethylation (Sardina et al., 2018) (log2(OR) [95% CI]=2.615 [0.580, 4.229], p=6.84 x 10–3).
 
-## Commonly studied CpG sites are enriched for methylation-dependent regulatory activity
+### Commonly studied CpG sites are enriched for methylation-dependent regulatory activity
 
 We compared methylation-dependent regulatory activity between CpGs targeted on the EPIC array, CpGs typically profiled in RRBS libraries (i.e. near MspI cut sites), the 6.5 Mb in or flanking the glucocorticoid receptor gene NR3C1, and the control set of genome-representative loci. As expected, windows that contained EPIC CpG sites, sites associated with RRBS, or that were located in or near NR3C1 were significantly more likely to show at least some degree of transcriptional activity (i.e. show plasmid-derived RNA reads in at least half the sham or methylated replicates) than the genomic background (i.e. 98,967 randomly distributed loci: see Materials and Methods), and thus were more likely to be included in our analysis set (n=216,091 windows) for regulatory activity (EPIC: log2(OR) [95% CI]=2.189 [2.152, 2.227], p<1.0 x 10–300; RRBS: log2(OR) [95% CI]=4.126 [4.086, 4.163], p<1.0 x 10–300; NR3C1: log2(OR) [95% CI]=3.259 [3.193, 3.325], p<1.0 x 10–300; Figure 1D). However, conditional on minimal transcriptional activity, windows containing EPIC array sites were not more likely to exhibit significant enhancer-like regulatory activity (FDR <1%; n=3721 windows) than background windows of the genome, and RRBS- and NR3C1-associated sites were in fact slightly less likely to do so (EPIC: log2(OR) [95% CI]=0.112 [-0.168, 0.405], p=0.47; RRBS: log2(OR) [95% CI]=−0.493 [-0.779,–0.195], p = 1.11 x 10–3; NR3C1: log2(OR) [95% CI]=−0.730 [-1.263,–0.217], p = 3.89 x 10–3). This result is likely explained by our inclusion criteria, as only regions with evidence for minimal RNA transcription were retained prior to formal analysis.
 
 In contrast, among regions with detectable regulatory activity, 63.3% of those containing RRBS-associated CpG sites exhibited methylation-dependent regulatory activity, compared to 45.9% of control background loci (RRBS against control: log2(OR) [95% CI]=1.025 [0.430, 1.624], p=4.39 x 10–4; Figure 1D). Note that of 109 regulatory windows in the control set, 108 contain at least 1 CpG, so this difference is not because the control set is CpG-free (mean number CpGs per fragment in control set = 13.291 ± 11.179 s.d.; EPIC = 19.641 ± 14.471; RRBS = 20.870 ± 13.883; NR3C1=7.405 ± 9.409). Neither windows with EPIC CpGs nor windows in or near NR3C1 were enriched for methylation-dependent regulatory activity relative to the genomic background (EPIC against control: log2(OR) [95% CI]=0.284 [-0.297, 0.871], p=0.33; NR3C1 versus control: log2(OR) [95% CI]=−0.948 [-2.129, 0.178], p=0.11). Consequently, differential methylation identified through RRBS is more likely to be capable of driving differences in gene regulation, as detectable by mSTARR-seq, than differential methylation elsewhere in the genome. We caution, however, that even among RRBS sites, 98.8% do not occur in regions of the genome with detectable regulatory activity in either the methylated or unmethylated conditions, at least in the K562 cell type, and 35.0% of those that fall in putative regulatory elements exhibit no evidence for methylation-dependent activity.
 
-## Environmental perturbation reveals cryptic regulatory elements and cryptic effects of DNA methylation
+### Environmental perturbation reveals cryptic regulatory elements and cryptic effects of DNA methylation
 
 Enhancer activity can be cell type- or environment-dependent (e.g. Ostuni et al., 2013; Johnson et al., 2018; Chaudhri et al., 2020). DNA methylation-dependent enhancer activity may show similar context-dependence, thus potentially accounting for the large number of sites that fall in functionally silent regions described above. However, this possibility has not been systematically tested. To do so, we next compared regulatory activity between the baseline unchallenged condition and cells challenged with interferon alpha (IFNA) or dexamethasone (dex) (Figure 2A; Figure 2—figure supplements 1–2; Supplementary file 9). Regions that were identified to have regulatory potential in the baseline condition were highly likely to retain regulatory potential after cells were challenged with IFNA or dex (Figure 2—figure supplement 3; IFNA log2(OR) [95% CI]=8.639 [8.499, 8.812], p<1.0 x 10–300; dex log2(OR) [95% CI]=9.640 [9.483, 9.776], p<1.0 x 10–323; Supplementary files 10-11). However, environmental challenges also revealed thousands of putative regulatory regions that were undetectable at baseline but active post-stimulation (Figure 2B; 1614 IFNA-specific; 1131 dex-specific). Of 4632 IFNA regulatory regions (<1% FDR), 44.1% are not detectable at baseline at a 1% FDR threshold in the baseline condition, and even with a relaxed baseline FDR of 10%, 25.1% remain undetectable. Of 4217 dex regulatory regions (<1% FDR), 40.2% are not detectable at baseline (1% FDR), and 31.5% remain undetectable at a baseline FDR of 10%.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig2-v1.jpg)
+
+**Figure 2.:** (A) Full mSTARR-seq design across DNA methylation and challenge conditions (see Figure 2—figure supplements 1 and 2 for filtering and overlap of the datasets, and Supplementary files 3, 10 and 11 for effect sizes). An example of a DNA methylation-environment interaction is shown overlapping the interferon-induced gene IFIT5 and an ENCODE-annotated weak promoter (pink denotes weak promoter, yellow denotes heterochromatin, and green denotes weak transcription; the endogenous IFIT5 gene expression response to IFNA in our experiment is shown in Figure 2—figure supplement 4). Three consecutive 600 bp windows have interaction FDR <1 x 10–4 in this region. Panels depict non-normalized, raw read pileups for mSTARR-seq RNA replicates, with all y-axis maximums set to 14,000. No methylation-dependent activity is detectable in the baseline condition because this enhancer element is inactive. Upon IFNA stimulation, only unmethylated enhancer elements are capable of responding. (B) Upset plot showing shared and unique mSTARR-seq identified enhancer elements across conditions. While many elements are shared, 3426 are unique to a single condition (FET log-odds results for magnitude of overlap are shown in Figure 2—figure supplement 3). (C) Top five most enriched transcription factor binding motifs in IFNA- and dex-specific mSTARR-seq enhancers, compared to all windows tested. Whiskers show the 95% CI. See Supplementary files 12 and 13 for all enrichment results. (D) Genes targeted by ISRE enhancers (ISRE enhancers identified from ENCODE ChIP-seq data; gene targets identified from enhancer-gene linkages from EnhancerAtlas 2.0: Gao et al., 2016) that are also identified as IFNA condition-specific mSTARR-seq enhancers (n=119) show stronger K562 endogenous gene expression responses to IFNA stimulation than non-ISRE targets (n=10557; unpaired t-test: t=3.58, df = 118.36, p=5.01 x 10–4; Supplementary file 16). Each box represents the interquartile range, with the median value depicted as a horizontal bar. Whiskers extend to the most extreme values within 1.5 x of the interquartile range. (E) mSTARR-seq regulatory activity for windows containing ISRE targets (n=1,005 windows) interacts strongly with exposure to IFNA. These windows are capable of mounting a strong response to IFNA stimulation when unmethylated (dashed line; paired t-test: t=23.02, df = 1004, p=1.78 x 10–94) but not when methylated (solid line; paired t-test: t=–1.74, df = 1004, p=0.082). Dots show the mean beta corresponding to enrichment of RNA reads versus DNA reads across windows; whiskers show the standard error. Because y-axis values correspond to model estimates, they can be positive (i.e. more mSTARR-seq RNA reads than input DNA reads) or negative values (i.e. fewer mSTARR-seq RNA reads than mSTARR-Seq input DNA reads, indicating no regulatory activity).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Each of the five datasets began with 5,051,776 600 bp genomic windows. For each of the five datasets, we reduced the dataset to windows that had nonzero counts in at least three DNA samples in the methylated condition and three DNA samples in the unmethylated condition (i.e. 6 DNA samples total; ‘DNA filter’). We then reduced the dataset to windows that had nonzero counts in at least three RNA samples in either the methylated or unmethylated condition (‘RNA filter’). Finally, we retained only windows that showed high repeatability across DNA samples, following Lea et al., 2018 (‘DNA repeatability’). Numbers correspond to million windows that passed or failed each filter for which the arrow points to. Note that one mSTARR RNA-seq sample in the baseline condition [sample ID L31250] was removed from further analysis because it had an unusually high proportion of zero counts in the testable windows; we therefore also removed the corresponding paired DNA sample prior to analysis. See Supplementary file 9 for the precise window numbers corresponding to the plots.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Upset plots showing the degree to which 600 bp non-overlapping genomic windows are shared between five datasets (baseline null, IFNA, dex, HepG2, and Lea et al., 2018; all datasets were analyzed following the same pipeline). Note that the same input library was used in Lea et al., 2018 and the HepG2 experiment, which differs from the library used here for baseline, dex, and IFNA experiments.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Regulatory regions in the baseline condition are highly likely to retain regulatory activity upon challenge with IFNA or dex (IFNA log2(OR) [95% CI]=8.639 [8.499, 8.812], p<1.0 x 10–300; dex log2(OR) [95% CI]=9.640 [9.483, 9.776], p<1.0 x 10–300). Regulatory regions also significantly overlap between IFNA- and dex-challenged cells (log2(OR) [95% CI]=8.554 [8.420, 8.698], p<1.0 x 10–300). (B) Regulatory windows identified in two environmental conditions tend to share significant effects of DNA methylation on regulatory activity (i.e. interaction effects between methylation and regulatory activity) across the two environmental conditions (baseline and IFNA log2(OR) [95% CI]=6.345 [5.673, 7.102], p<7.33 x 10–239; baseline and dex log2(OR) [95% CI]=5.982 [5.599, 6.384], p<1.0 x 10–300; IFNA and dex log2(OR) [95% CI]=5.576 [5.123, 6.055], p<4.70 x 10–266). Whiskers show the 95% CI.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Tracks show non-normalized, raw read pile-ups of endogenous IFIT5 (ENSG00000152778) gene expression in either the unmethylated (open circle) or methylated (filled circle) condition, with all y-axis maximums set to 100. The replicates for endogenous gene expression shown here are the same replicates used for measuring regulatory activity shown in Figure 2A. IFIT5 is only detectably expressed after IFNA stimulation (note that the difference in peak heights between the IFNA-stimulated unmethylated and methylated conditions is because the plot shows raw reads; there is no effect of methylation treatment on endogenous IFIT5 gene expression after normalization for library size: P=0.489).
 
 Regulatory windows specific to the IFNA treatment were enriched for 33 transcription factor binding motifs (TFBMs) (Supplementary file 12), with strong enrichments detected for TFBMs involved in innate immune defense in general, and interferon signaling specifically (Figure 2C). For example, the most enriched motif was the canonical DNA target of interferon signaling, known as IFN-stimulated response elements (ISRE; log2(OR) [95% CI]=3.158 [2.953, 3.358], Bonferroni corrected p=7.31 x 10–133), followed by binding motifs for several IFN-regulatory factors (IRF1, IRF2, IRF3, IRF4, IRF8; all OR >1.5 and Bonferroni corrected p<1 x 10–15; Chen et al., 2017). Regulatory windows specific to the dex-stimulated condition were significantly enriched for 28 transcription factor binding motifs, including the glucocorticoid response element IR3 and binding motifs of several transcription factors known to interact with or be modulated by the glucocorticoid receptor (AP-1, CEBP:CEBP, CEBP:AP1, JunB, Jun-AP1, GATA1, STAT3, and STAT5; all OR >1.3, Bonferroni corrected p<0.01; Supplementary file 13; Cain and Cidlowski, 2017). Results were qualitatively similar if we used a more stringent definition of IFNA-specific and dex-specific regulatory activity (e.g. ‘IFNA-specific’ defined as FDR <1% in IFNA condition and FDR >10% in the other two conditions; Supplementary files 14-15).
 
@@ -72,19 +140,35 @@ To evaluate the relevance of these regions to in vivo gene regulation, we also g
 
 For the IFNA challenge, the DNA methylation state of each window appears to play an important role in shaping condition-specific responses to stimulation in the mSTARR-seq data set. Nearly twice as many regulatory windows (81.4%; 1314 of 1614) exhibited methylation-dependent regulatory activity in the IFNA-specific condition than in the baseline or dex-specific condition (47.5% and 48.4% respectively; two-sided binomial test for IFNA compared to baseline: p=3.58 x 10–312). Further, regulatory regions that harbor TFBMs for TFs central to the interferon response (ISRE, IRF1, IRF2, IRF3, IRF4, IRF8; N=663 windows) strongly responded to IFNA challenge if in an unmethylated state, but mounted systematically attenuated responses if in a methylated state. As a result, 562 of these 663 windows (84.7%) exhibited significant methylation-dependent regulatory activity and 561 of them (99.8%) were more active in the IFN-challenged state when unmethylated. This pattern is recapitulated when focusing on analyzed windows with external experimental support for ISRE binding (n=1005 windows; ChIP-Seq data from The ENCODE Project Consortium, 2012). These windows show no evidence for methylation-dependent regulatory activity in the baseline condition (paired t-test; t=–0.792, df = 1004, p=0.43), primarily because they show no regulatory activity at all without IFNA stimulation. After IFNA stimulation, though, they exhibit strong methylation-dependence. Specifically, only unmethylated windows are capable of a response (paired t-test; t=31.748, df = 1004, p=1.02 x 10–153; Figure 2E).
 
-## Methylation levels at mSTARR-seq IFNA-specific enhancers predict the transcriptional response to influenza virus in human macrophages
+### Methylation levels at mSTARR-seq IFNA-specific enhancers predict the transcriptional response to influenza virus in human macrophages
 
 Our findings show that, in the context of mSTARR-seq, pre-existing DNA methylation state can capacitate or constrain the regulatory response to IFNA stimulation. This result suggests that DNA methylation-environment interactions may be an important determinant of gene expression levels in vivo. To test this possibility, we drew on matched whole genome bisulfite sequencing (WGBS) and RNA-seq data collected from human monocyte-derived macrophages (n=35 donors), with and without infection with the influenza A virus (IAV), commonly known as flu (Figure 3A; Aracena et al., 2024). We asked whether variation in the gene expression response to flu is predicted by DNA methylation levels in the baseline (non-infected) condition, especially at loci where the response to IFNA is affected by DNA methylation in mSTARR-seq. Importantly, flu and IFNA challenges induce similar innate immune responses (Killip et al., 2015).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig3-v1.jpg)
+
+**Figure 3.:** (A) Study design of the in vivo experiment, in which matched macrophage samples from 35 individuals were either left non-infected or infected with influenza A virus (IAV) for 24 hours and processed for RNA-seq and whole genome bisulfite sequencing (WGBS; Aracena et al., 2024). (B) Within individuals, DNA methylation (DNAm) levels at mSTARR-seq enhancers in non-infected cells are negatively correlated with the nearest genes’ transcriptional responses to IAV, but only in mSTARR-seq enhancers that were specific to the IFNA condition (IFNA-specific enhancers: n=1033, mean Pearson’s r=–0.170 ± 0.009 s.d., all Bonferroni-corrected p<2 x 10–5; shared enhancers: n=1736, mean Pearson’s r=–0.049 ± 0.01 s.d., all Bonferroni-corrected p>0.1). Each colored line represents an individual, and vertical gray lines represent 95% confidence intervals (see Supplementary file 17 for full results). (C) The average within-individual correlation (r) between DNA methylation and gene expression (GE) is 2.44 times as large after infection (r=–0.261 ± 0.006) than at baseline (r=–0.106 ± 0.008) in IFNA-specific mSTARR-seq enhancers (right panel), but much less affected by infection at mSTARR-seq enhancers that are shared across conditions (left panel). Within each panel, each colored line represents an individual for the same set of enhancers (see Supplementary file 18 for full results), without and with IAV infection. (D) Across individuals, the ISG15 transcriptional response to IAV is significantly correlated with average DNAm at the mSTARR-seq enhancer chr1:1013400–1014000 in non-infected cells (R2=0.381, p=6.05 x 10–5, q=0.084). Each dot represents an individual (see Supplementary file 19 for full results and Figure 3—figure supplement 1 for condition-specific results). (E) The mSTARR-seq enhancer predictive of ISG15 response to IAV (dark green bar) is located in the active promoter of ISG15 (as defined by ENCODE The ENCODE Project Consortium, 2012; red denotes active promoter, pink denotes weak promoter, orange denotes strong enhancer, yellow denotes weak enhancer). Three adjacent, methylation-dependent, IFNA-specific mSTARR-seq enhancers were identified (light green), but do not significantly predict ISG15 response to IAV (q>10%). The bottom 6 tracks depict non-normalized, raw read pileups for mSTARR-seq RNA replicates in either the unmethylated (open circle) or methylated (filled circle) condition, with all y-axis maximums set to 20,000.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Across individuals, average methylation within the mSTARR-seq annotated enhancer chr1:1013400–1014000 in non-infected baseline macrophages significantly predicts ISG15 gene expression (GE) in the non-infected condition (R2=0.324, p=2.66 x 10–4), but (B) not in the IAV-infected condition (R2=0.001, p=0.316). Each dot represents an individual. Relative GE is log(CPM) after regressing out the effects of sequencing batch and age. (C) Individuals with relatively low methylation in the mSTARR-seq chr1:1013400–1014000 enhancer (indicated by lighter line color) in the baseline, non-infected condition tend to have higher ISG15 gene expression in the non-infected condition, ultimately resulting in a shallower ISG15 transcriptional response to IAV infection (as indicated by slope of the line). Each line represents an individual.
 
 Within each individual in the macrophage data set, mean DNA methylation levels at baseline significantly predict the mean gene expression response to flu across the full set of mSTARR-seq enhancer windows detected in the IFNA condition: higher methylation at baseline predicts an attenuated gene expression response, on average (n=35 individuals at 2769 enhancer windows: mean Pearson’s r=–0.105 ± 0.006 s.d., all Bonferroni-corrected p<3 x 10–5; Supplementary file 17). This effect is largely driven by the subset of mSTARR-seq IFNA-specific enhancers. Specifically, the correlation between baseline DNA methylation levels and the gene expression response to flu is 3.44-fold stronger in IFNA-specific enhancers than for enhancers identified in both the IFNA condition and at least one other condition (Figure 3B; IFNA-specific enhancers: n=1033, mean Pearson’s r=–0.170 ± 0.009 s.d., all Bonferroni-corrected p<2 x 10–5; shared enhancers: n=1736, mean Pearson’s r=–0.049 ± 0.01 s.d., all Bonferroni-corrected p>0.1). These results appear to be driven by strong methylation-dependence in flu-infected cells, as the average within-individual correlation between DNA methylation and gene expression is 2.44 times as large after infection (r=–0.261 ± 0.006) than at baseline (r=–0.106 ± 0.008) in IFNA-specific mSTARR-seq enhancers (Figure 3C; Supplementary file 18).
 
 The limited sample size of the macrophage data set makes it better suited for analyses of the overall relationship between DNA methylation and gene expression within an individual, rather than locus-specific analyses of interindividual variation (especially as locus-specific variance in DNA methylation across individuals is low: mean = 0.004, standard deviation = 0.008). Nevertheless, across 1382 testable loci (600 bp windows containing at least 1 CpG with interindividual variance >0.01), we identified one IFNA-specific, methylation-dependent mSTARR-seq enhancer where endogenous variation in DNA methylation levels across individuals clearly predicts the response of the nearest gene’s transcriptional response to flu (Figure 3D–E; p=6.05 x 10–5, q-value=0.0837; Supplementary file 19). This mSTARR-seq enhancer (chr1:1013400–1014000) overlaps the promoter of interferon-stimulated gene 15 (ISG15; Figure 3E), and its average methylation explains 38% of the variance in the ISG15 transcriptional response to flu across individuals. The magnitude of ISG15 transcriptional response to flu appears primarily driven by the enhancer’s effect on gene expression at baseline. Lower enhancer methylation at baseline is associated with higher ISG15 expression at baseline, ultimately resulting in a shallower fold change response to flu (Figure 3—figure supplement 1). This example illustrates the value of integrating observational data on DNA methylation and gene expression with mSTARR-seq. The population data support the in vivo relevance of the mSTARR-seq data, while the mSTARR-seq data suggest that baseline variation in ISG15 methylation in vivo is causally meaningful to the response to influenza. Notably, ISG15 plays critical roles in regulating the type I interferon response and modulating host immunity to both viral and bacterial infections (reviewed in Perng and Lenschow, 2018).
 
-## Most CpG sites associated with early life adversity do not show regulatory activity in K562s
+### Most CpG sites associated with early life adversity do not show regulatory activity in K562s
 
 Finally, because changes in DNA methylation are of particular interest to research on the biological embedding of early life experience (Hertzman and Boyce, 2010), we tested whether DNA methylation differences associated with early life adversity (ELA) translate to functional effects on gene regulation in the mSTARR-seq data. We first performed a literature search to compile CpG sites that have previously been associated with ELA in humans using the Illumina EPIC array or one of its precursors (Infinium Human Methylation 450K and 27K BeadChips). Our search resulted in a total of 27 studies (Supplementary file 20), which together identified 8,525 unique ELA-associated sites.
 
 For 26 of 27 studies, ELA-associated CpG sites were not more likely to occur within putative regulatory windows (detected in either the methylated condition, unmethylated condition, or both) than background chance (Figure 4). This pattern was qualitatively consistent regardless of whether we considered baseline, IFNA-, or dex-challenged samples (Supplementary file 20). The only exception was for a set of differentially methylated regions in the children of mothers exposed to objective hardship (e.g. living in a shelter, loss of electricity) who were pregnant during or within 3 months of the 1998 Quebec Ice Storm (Cao-Lei et al., 2014). In this study, ELA-associated sites were more likely to fall in windows with regulatory potential in our sample (log2(OR) [95% CI]=1.343 [0.715, 1.909], p=3.39 x 10–5). Among these sites, 53.85% were also detected to have methylation-dependent activity, which is slightly, but not significantly higher than the proportion of methylation-dependent sites on the Illumina Methylation450K chip as a whole (log2(OR) [95% CI]=0.884 [-0.338, 2.130], p=0.16). Consequently, ELA-associated sites in this study were not more likely to exhibit methylation-dependent activity than chance. We speculate that regulatory enrichment in this data set is due to its focus on intermediately methylated CpG sites with substantial interindividual variance in DNA methylation levels, which tends to enrich for enhancer elements. Indeed, ELA-associated sites in this study were more strongly enriched in enhancer regions than the union set of sites in other studies we investigated (log2(OR) [95% CI]=1.295 [0.543, 2.015], p=6.64 x 10–4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig4-v1.jpg)
+
+**Figure 4.:** Log2-tranformed odds ratios from Fisher’s Exact Tests for enrichment relative to the background set of sites on each array platform, for 27 studies of early life adversity-DNA methylation level correlations (see Supplementary file 20 for full FET results). Whiskers show standard error. Only Cao-Lei et al., 2014 shows significant enrichment for regulatory activity (log2(OR) [95% CI]=1.343 [0.715, 1.909], p=3.39 x 10–5), but these sites are not more likely to exhibit methylation-dependent activity than expected by chance (log2(OR) [95% CI]=0.884 [-0.338, 2.130], p=0.16). For details on the source tissue and measures of ELA, see Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89371/elife-89371-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Colored rectangles indicate ranges of age at adversity. Circles represent mean ages at sample collection and are colored according to the tissue type used to measure methylation levels. Ranges and standard errors of ages at sample collection, when reported, are indicated by gray rectangles and horizontal black solid lines, respectively. See Supplementary file 20 for results of Fisher’s exact tests assessing enrichment of ELA-associated CpGs for regulatory activity.
 
 ## Discussion
 
@@ -98,11 +182,154 @@ Applying mSTARR-seq in additional cell types may therefore help resolve whether 
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SeqCap EZ Prime Choice XL Probes</td>
+      <td>Roche</td>
+      <td>Cat # 08247528001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SeqCap EZ Reagent Kit Plus</td>
+      <td>Roche</td>
+      <td>Cat # 06953247001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>ATCC CCL-243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HepG2</td>
+      <td>ATCC</td>
+      <td>Cat # HB-8065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmSTARRseq1</td>
+      <td>Addgene</td>
+      <td>Plasmid #96945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IFNA-2b</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat # 111051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # D4902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GT115 strain chemically competent E. coli cells</td>
+      <td>Invivogen</td>
+      <td>ChemiComp GT115</td>
+      <td>GT115 E. coli cells were initially purchased from Invivogen, and a custom electrocompetent version of the strain was prepared by Intact Genomics.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GT115 strain electrically competent E. coli cells</td>
+      <td>Intact Genomics</td>
+      <td></td>
+      <td>Custom order to grow Invivogen’s ChemiComp GT115 strain and prepare cells for electroporation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LIMMA</td>
+      <td>LIMMA</td>
+      <td>RRID:SCR_010943</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>HOMER</td>
+      <td>RRID:SCR_010881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trim Galore</td>
+      <td>Trim Galore</td>
+      <td>RRID:SCR_011847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt</td>
+      <td>cutadapt</td>
+      <td>RRID:SCR_011841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTSeq</td>
+      <td>HTSeq</td>
+      <td>RRID:SCR_005514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bedtools</td>
+      <td>bedtools</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>edgeR</td>
+      <td>RRID:SCR_012802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sva package</td>
+      <td>sva package</td>
+      <td>RRID:SCR_012836</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 The K562 and HepG2 cell lines were obtained from ATCC, who performed cell line validation using short tandem repeat (STR) profiling and mycoplasma contamination testing (both lines tested negative).
 
-## DNA capture and mSTARR-seq
+### DNA capture and mSTARR-seq
 
 We used the DNEasy Blood and Tissue Kit (Qiagen) to extract 5 µg DNA from the GM12878 lymphoblastoid cell line. We sheared the extracted DNA on a Covaris S2 with the following parameters: intensity = 3; duty cycle = 5%, cycles/burst = 200, treatment time = 40 s, temperature = 4 ° C; intensifier = yes. We then performed agarose gel size selection of ~600–700 bp DNA fragments followed by purification with the Qiaquick Gel Extraction Kit (QIAGEN). We note that we intentionally targeted longer fragments (~600–700 bp) than those targeted in Lea et al., 2018 (~300–700 bp) because our previous work showed that longer fragments are more likely to drive regulatory activity (Lea et al., 2018).
 
@@ -114,15 +341,19 @@ We performed four and six replicate Gibson assemblies and transformations for th
 
 Replicate methyltransferase reactions and parallel mock methyltransferase reactions, in which the M. SssI enzyme was replaced with water, were performed in 500 µl reactions, cleaned with Ampure beads, and then pooled. The methylated DNA library and unmethylated DNA library were each transfected into 18 replicate T75 flasks, each containing 12 million K562s, with Lipofectamine 3000 (Thermo Fisher Scientific) following the manufacturer’s instructions. Forty-two hours post-transfection, replicates were treated with 2000 U/mL IFNA2b (Thermo Fisher Scientific), 1 µM dex (Sigma-Aldrich), or vehicle control (media; six replicates per treatment, following Lea et al., 2018). Forty-eight hours post-transfection (6 hr post-treatment), cells were harvested for mSTARR-seq sequencing library generation. At harvest, 5x105 cells were aliquoted separately into Buffer RLT to measure endogenous RNA response to treatment, and 2 million cells were aliquoted for plasmid DNA extraction to measure input DNA in each replicate. mSTARR RNA-seq and DNA-seq libraries were generated following Lea et al., 2018. To measure endogenous gene expression from K562s in each condition, we extracted RNA from the separately aliquoted cells using the Qiagen RNEasy kit and prepared RNA-seq libraries using the NEBNext Ultra II RNA Library Prep Kit for Illumina.
 
-## Comparison of mSTARR MD regulatory activity across cell types and experiments
+### Comparison of mSTARR MD regulatory activity across cell types and experiments
 
 To assess cell type-specificity of methylation-dependent regulatory activity, we transfected the mSTARR-seq library from Lea et al., 2018, comprised of 1:3 sheared genomic DNA:MspI-digested DNA, into the HepG2 cell line. For the HepG2 experiment, we performed one methyltransferase reaction and one sham methyltransferase reaction. Transfections were performed with Lipofectamine 3000 (Thermo Fisher Scientific) following the manufacturer’s instructions, with reagent quantities scaled to the following per replicate: 6.9 million HepG2 cells, 46 µg of DNA, 138 µl of Lipofectamine 3000, and 180 µl of P3000 (transfection enhancer reagent). We performed all regulatory and MD regulatory analyses of HepG2 cells, as well as analyses of K562s from a previously published smaller mSTARR-seq experiment (Lea et al., 2018), following the same bioinformatics pipeline used for our main K562 experiment, described below. To compare against previously published STARR-seq data in A549 cells, we identified the union set of all regulatory peaks identified across six replicate STARR-seq experiments collected at time point 0 in Johnson et al., 2018. To test for significant overlap between the current K562 results and the other three data sets, we used Fisher’s exact tests against a background set of windows tested in both the current K562 experiment and each of the other data sets.
 
-## mSTARR-seq regulatory and MD regulatory analyses
+### mSTARR-seq regulatory and MD regulatory analyses
 
 mSTARR RNA-seq and DNA-seq libraries were sequenced on the Illumina NovaSeq platform as 100 basepair, paired-end reads (Supplementary file 1). Reads were trimmed with Trim Galore (version 0.6.4; Krueger, 2019) to remove basepairs at the ends of reads with Phred scores less than 20 and stretches of 2 or more basepairs that matched adapter sequences. Trimmed reads with a minimum length of 25 basepairs were retained. We mapped reads using bwa (version 0.7.12; Li and Durbin, 2009) using default settings. We retained read pairs that mapped to a single best location using the samtools (version 1.3.1; Li et al., 2009) package ‘view’ command with options -q 10 f 0 x2. We segmented the genome into 600 bp, non-overlapping windows, and used the bedtools (version 2.25.0; Quinlan and Hall, 2010) coverage function to count the number of RNA and DNA fragments overlapping each 600 bp window. We chose 600 bp for the genomic window size to accommodate our library’s DNA fragment size (600–700 bp; Supplementary file 1), and because using smaller windows resulted in the identification of many adjacent windows as separate regulatory elements when they likely represent a single true enhancer (the median length of ENCODE-annotated enhancers is 600 bp).
 
-For each of the three treatment conditions (baseline, IFNA, and dex), we reduced our dataset to windows for which at least three DNA samples in the methylated condition and three DNA samples in the unmethylated condition (i.e. 6 DNA samples total), and three RNA samples in either the methylated or unmethylated condition, had nonzero counts. One mSTARR RNA-seq sample in the baseline condition (sample ID L31250) was removed from further analysis because it had an unusually high proportion of zero counts in the testable windows; the corresponding paired DNA sample was therefore also removed prior to analysis (Supplementary file 1). Next, we retained only windows that showed high repeatability across DNA samples, following Lea et al., 2018. In brief, for each window we calculated the pairwise difference of read abundance for every pair of samples and created a distribution of all pairwise differences; windows were removed if at least 25% of pairs fell outside the central 90th percentile of the distribution (37,410 windows, 14.8% of the overall data set). On this reduced data set of testable windows, we performed voom normalization using the limma (version 3.44.3) voomWithQualityWeights function (Smyth, 2005; Law et al., 2014), with methylation status included as a covariate in the design. We then used the limma function lmFit to apply the following model for each window:yi=μ+miβ1+siβ2∗I(m=0)+siβ3∗I(m=1)+εi
+For each of the three treatment conditions (baseline, IFNA, and dex), we reduced our dataset to windows for which at least three DNA samples in the methylated condition and three DNA samples in the unmethylated condition (i.e. 6 DNA samples total), and three RNA samples in either the methylated or unmethylated condition, had nonzero counts. One mSTARR RNA-seq sample in the baseline condition (sample ID L31250) was removed from further analysis because it had an unusually high proportion of zero counts in the testable windows; the corresponding paired DNA sample was therefore also removed prior to analysis (Supplementary file 1). Next, we retained only windows that showed high repeatability across DNA samples, following Lea et al., 2018. In brief, for each window we calculated the pairwise difference of read abundance for every pair of samples and created a distribution of all pairwise differences; windows were removed if at least 25% of pairs fell outside the central 90th percentile of the distribution (37,410 windows, 14.8% of the overall data set). On this reduced data set of testable windows, we performed voom normalization using the limma (version 3.44.3) voomWithQualityWeights function (Smyth, 2005; Law et al., 2014), with methylation status included as a covariate in the design. We then used the limma function lmFit to apply the following model for each window:
+
+$$
+y_{i}=\mu+m_{i}\beta_{1}+s_{i}\beta_{2}∗I(m=0)+s_{i}\beta_{3}∗I(m=1)+\epsilon_{i}
+$$
 
 where yi is the vector of normalized counts for n=24 samples (12 RNA and 12 DNA samples; 22 samples for the baseline condition); μ is the intercept; mi is methylation condition (0=unmethylated; 1=methylated) and β1 its effect size; and I is an indicator variable in which β2 and β3 are the effects of sample type (si; 0=DNA; 1=RNA) in the unmethylated (m=0) and methylated conditions (m=1), respectively. εi is the residual error.
 
@@ -132,13 +363,13 @@ To identify methylation-dependent enhancer activity, we focused on the windows t
 
 To assess whether mSTARR RNA-seq and DNA-seq libraries were sequenced deeply enough to saturate detection of unique 600 bp windows included in the formal analyses, we used seqtk (https://github.com/lh3/seqtk, copy archived at Li, 2024) to randomly subset sequence reads from the raw fastq files for all RNA-seq or all DNA-seq replicates in the baseline dataset. We then applied to these data subsets the same filtering pipeline described above to generate a reduced data set of testable windows. The results of this rarefaction analysis (shown in Figure 1—figure supplement 4) show that our sequencing depth is sufficient to capture all analyzable windows based on both the DNA read filter and the RNA read filter.
 
-## Enrichment of transcription factor binding motifs
+### Enrichment of transcription factor binding motifs
 
 To identify enrichment of potential transcription factor binding sites in the methylated condition, we used HOMER and motifs defined in the HOMER database (Heinz et al., 2010) and the baseline treatment dataset to compare motifs within regulatory regions in the methylated condition, relative to motifs across all regulatory regions.
 
 To identify potential transcription factor binding sites in windows with condition-specific regulatory or methylation-dependent regulatory activity, we first identified regions showing regulatory activity uniquely in the dex or IFNA conditions relative to both other conditions (based on an FDR of 1% to define regulatory activity). We used HOMER and motifs defined in the HOMER database to test for enrichment of transcription factor binding motifs within windows showing condition-specific regulatory activity relative to all windows tested for regulatory activity in that condition. We set a threshold of Bonferroni-corrected p-value <0.01 to identify significantly enriched binding motifs.
 
-## Endogenous gene expression response of K562s to dex and IFNA
+### Endogenous gene expression response of K562s to dex and IFNA
 
 Endogenous RNA-seq libraries from K562 cells challenged with dex or IFNA were sequenced on an Illumina NovaSeq 6000 S1 flow cell as 100 base pair, paired-end reads. Reads were trimmed with Trim Galore (Trim Galore version 0.6.4_dev; Cutadapt version 2.3) to remove basepairs with a Phred score less than 20, and end sequences that matched at least two basepairs of the adapter sequence. Only trimmed reads longer than 25 basepairs were retained. We used the STAR package (version 2.5.0; Dobin et al., 2013) two-pass mapping to map the filtered reads to the hg38 genome. We retained uniquely mapped reads by filtering the output SAM file to keep reads with MAPQ = 255. We then used htseq (version 0.6.0; Anders et al., 2015) to quantify read counts per gene. We only retained genes that had TPM >3 in at least three of six samples in at least one of the three conditions (baseline, IFNA, or dex). Only protein-coding genes were retained for final analysis, resulting in a total of 10,676 testable genes.
 
@@ -146,7 +377,7 @@ We performed differential expression analysis separately for IFNA and dex, by su
 
 To test whether genes were more responsive to IFNA stimulation if they were predicted targets of IFNA-specific ISRE enhancers, we first used the bedtools intersect function to identify the union set of ChIP-seq peaks for STAT1 and STAT2 (two of the three components of the ISGF3 transcription factor that binds ISRE motifs; ENCODE accession numbers ENCFF478XGE and ENCFF394KTR; ChIP-Seq data were not available for the third ISGF3 component, IRF9). We then reduced these regions to those showing significant, IFNA condition-specific regulatory activity in the mSTARR-seq dataset (FDR <1%). We used K562 enhancer-gene links from EnhancerAtlas 2.0 (Gao et al., 2016) to link the resulting IFNA-specific ISRE enhancers to their target genes. Finally, we performed a two-sided, unpaired t-test to compare the endogenous expression responses to IFNA for genes associated with putative IFNA-specific ISRE enhancers relative to genes that are not associated with IFNA-specific ISRE enhancers.
 
-## Endogenous gene expression and methylation in human macrophages
+### Endogenous gene expression and methylation in human macrophages
 
 To assess effects of DNA methylation-environment interactions on gene expression in vivo, we evaluated endogenous methylation and gene expression from matched whole genome bisulfite sequencing (WGBS) and RNA-seq data collected from human monocyte-derived macrophages (n=35 donors), with and without infection with the influenza A virus (IAV; Aracena et al., 2024). Unsmoothed methylation counts were obtained for 19,492,906 loci in both non-infected and IAV-infected samples (total n=70) as described (Aracena et al., 2024). We filtered loci to require coverage of ≥4 sequence reads in at least half of the non-infected or IAV-infected samples. In the RNA-seq dataset for the same 35 individuals, we excluded any genes that did not have an average RPKM >2 in non-infected or IAV-infected samples. This resulted in a total of 19,041,420 CpG sites and 14,122 genes used in downstream analyses.
 
@@ -158,7 +389,7 @@ We first sought to assess, within each of the 35 individuals, the correlation be
 
 Finally, for each mSTARR-seq enhancer-gene pair, we sought to test the extent to which average methylation level in the enhancer in non-infected samples explained the gene’s transcriptional response to IAV, across individuals. Here, we calculated the average CpG methylation level for each 600 bp enhancer, after excluding CpGs with methylation variance less than 0.01 across individuals. Thus, enhancers that did not contain any CpGs with appreciable interindividual variation in DNA methylation levels were excluded from the analysis. This filtering step resulted in 1,382 enhancer-gene pairs for this analysis. For each enhancer-gene pair, we calculated the Pearson’s correlation coefficient (and R2) between the average methylation level of the enhancer and the transcriptional response of the linked gene. p-values were corrected for multiple hypothesis testing using the q-value method in R (Storey and Tibshirani, 2003).
 
-## CpG methylation associated with early life adversity
+### CpG methylation associated with early life adversity
 
 We performed a literature search to identify studies for which CpG methylation differences have been linked to adverse conditions during early life. We considered all journal articles that contained the words ‘early life adversity’ and ‘Infinium’ on https://scholar.google.com on May 10, 2021, which produced 269 results. We required that the study evaluated CpG methylation using an Illumina Infinium array (27K, 450K, or EPIC), and that the article provided Infinium CpG probe IDs or CpG genomic coordinates of candidate CpGs. Articles that reported no significant CpG sites, but still reported ‘top’ CpG sites, were retained. Articles that performed analyses to identify differentially methylated regions (DMRs; as opposed to CpG site-by-site analysis), and then reported individual CpG sites within the candidate DMRs, were retained. We considered early life adversity to encompass both social and nonsocial sources of environmental adversity (e.g. exposure to severe weather), any time from prenatal development to 18 years of age. We did not impose criteria for cell type or subject age at time of sampling. See Figure 4—figure supplement 1 and Supplementary file 20 for a summary of the resulting studies.
 

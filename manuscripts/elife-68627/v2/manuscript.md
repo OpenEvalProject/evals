@@ -37,31 +37,107 @@ Here, we utilize live-cell imaging combining MP-TFM and lattice light-sheet micr
 
 ## Results
 
-## LLSM reveals sequence of target deformations induced during live phagocytic engulfment
+### LLSM reveals sequence of target deformations induced during live phagocytic engulfment
 
 Given the fast, 3D, and light-sensitive nature of phagocytosis, we used LLSM for high-speed volumetric imaging with minimal phototoxicity to investigate cytoskeletal dynamics and phagocytic forces. To monitor internalization in real time, RAW264.7 macrophages were transfected with mEmerald-Lifeact for labeling of filamentous actin and were fed deformable acrylamide-co-acrylic acid-microparticles (DAAMPs) (Figure 1a). To investigate FcR-mediated phagocytosis, DAAMPs were functionalized with BSA and anti-BSA IgG, as well as AF647-Cadaverine for visualization (Vorselen et al., 2020b; Figure 1b). RAW macrophages were fed DAAMPs with a diameter of 9 µm and a Young’s modulus of 1.4 or 6.5 kPa, which is in the same range as healthy tissue cells and physiological targets of macrophages like apoptotic cells (Cross et al., 2007; Van der Meeren et al., 2020). RAW macrophages typically formed a chalice-shaped phagocytic cup and completed phagocytosis in a similar timeframe (~3 min) as previously reported for much stiffer (2–3 GPa) polystyrene particles (Horsthemke et al., 2017; Figure 1a, Video 1, Figure 1—figure supplement 1). 3D shape reconstructions of the DAAMPs enabled us to examine target deformations as a direct readout of phagocytic forces in real time (Figure 1b–c). We observed target constriction defined by discrete spots of deformation that appeared around the circumference of the DAAMP at the rim of the phagocytic cup (Figure 1d, Video 2). While these deformations were more apparent using the softer 1.4 kPa DAAMPs, qualitatively similar force patterns were observed using stiffer 6.5 kPa targets (Figure 1—figure supplement 2, Video 3) and previously using 0.3 kPa targets with fixed J774 macrophages (Vorselen et al., 2020b). Interestingly, these indentations traveled parallel to the direction of phagocytic cup elongation, along the length of the DAAM particle until cup closure and were associated with ~400 nm maximum target constriction for 1.4 kPa DAAMPs (Video 2, Figure 1—figure supplement 1). To determine whether this behavior was also present in primary macrophages, we also imaged bone marrow-derived macrophages (BMDMs) transfected with mEmerald-Lifeact and observed a similar mechanical progression, albeit with smaller deformations (Figure 1—figure supplement 3). In addition to local deformations in RAW macrophages, we also observed bulk compressive stresses during phagocytic cup progression (~0.5 kPa) and after complete internalization of the DAAMPs (up to 1.5 kPa), leading to a dramatic reduction in DAAMP diameter (Figure 1—figure supplement 1). The spherical appearance of targets and the gradual monotonic increase in compression after completion of engulfment suggests that this compression may relate to the recently observed shrinkage of internalized macropinosomes by osmotic pressure changes regulated by ion flux (Freeman et al., 2020). However, we sometimes observed the appearance of an F-actin shell around the target, similar to previous reports (Liebl and Griffiths, 2009), suggesting that cytoskeletal forces may also contribute to such compression (Figure 1—figure supplement 1, Video 4).
 
-## Forces normal to the target surface are dominant during phagocytic engulfment and lead to strong target constriction
+![Figure 1.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig1-v2.jpg)
+
+**Figure 1.:** RAW macrophages transfected with mEmerald-Lifeact were fed soft deformable acrylamide-co-acrylic acid micro (DAAM)-particles (9 μm,1.4 kPa) functionalized with IgG and AF647-Cadaverineand imaged using LLSM. (a) Time lapse montage (min:s) of maximum intensity projections in x/y and x/z. Scale bar, 5 μm. (b,c) Schematic of the combined LLSM and MP-TFM experimental approach and analysis, respectively. (d) Front and side view of reconstructed DAAM-particle internalized in (a) showing target deformations and F-actin localization on particle surface. Colorscale represents the deviation of each vertex from a perfect sphere with radius equal to the median radial distance of edge coordinates to the particle centroid. Scale bar, 3 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a,b,c) Violin plot shows individual phagocytic events (colored markers, n = 23), mean (black cross), and median (dashed line). (a) Engulfment time for individual phagocytic events. (b) Maximum target constriction by live-cell imaging using lattice light-sheet microscopy (LLSM). For each movie, the single time point in which target constriction was maximal was identified, and the exact constriction value was determined as described in Figure 3—figure supplement 1. (c) Average target constriction at 50% engulfment. Average is 0.25 ± 0.04 μm (s.e.m., n = 23 cups), which is ~40% larger than observed with fixed cell data at similar stage at 0.18 ± 0.02 μm (s.e.m., n = 19) (Figure 2i). This indicates that partial relaxation of the particle to a more spherical shape occurs during fixation, and that the fixed cell force measurements are likely a slight underestimate of the real phagocytic forces. (d) Volume of deformable acrylamide-co-acrylic acid-microparticles (DAAMPs) decreases with phagocytic internalization. Since hydrogel microparticles are not completely incompressible, their volume can decrease under exertion of bulk forces (Vorselen et al., 2020b). Same event is shown as in Figure 1a and d. Colorscale denotes radial distance to the centroid. Time stamps are provided in min:s, and internalization is complete at the 3:58 time point. Scale bar, 3 μm. (e) Quantification of effective particle diameter, bulk stress, and sphericity over time for DAAMP in (d) Bulk compressive forces can be estimated from the previous DAAMP bulk modulus measurements (~3.8 kPa) (Vorselen et al., 2020b). Gray area indicates time interval of phagocytosis. Compressive stresses arise during phagocytosis and are increased after completion of internalization. (f) Quantification of bulk stresses, target sphericity, and displacement of 23 live-cell phagocytic events. Compressive stresses are exerted during phagocytosis (~0.5 kPa) and increase after completion (~1.3 kPa). Particle sphericity dips during phagocytosis, but the particles return to a more spherical shape after internalization completion. Gray area indicates the duration of phagocytosis, where normalized time t = 0 indicates the start of the phagocytic event, and t = 1 internalization completion for individual events. Particle diameter and sphericity (because it could be strongly affected by imaging artifacts, see h) were normalized to 1, using the measurements before the start of phagocytosis. (g) Brief F-actin accumulation (orange arrow) observed on DAAMP phagosome following internalization. Time lapse montage (min:s) of RAW macrophage transfected with mEmerald-Lifeact internalizing a DAAMP (9 μm, 6.5 kPa) functionalized with IgG and AF647-Cadaverine and imaged using LLSM. Scale bar, 5 μm. (h) Typical LLSM images showing artifacts that hinder particle reconstruction and force analysis. Artifacts are not obvious in the xy-plane, but a strong ‘striping’ artifact, with strong fluctuations in fluorescent intensity (yellow arrows) are visible along the optical axis. Shape reconstruction in microparticle traction force microscopy (MP-TFM) is critically dependent on particle edge detection, which shows clear irregularities (yellow arrows) because of the striping artifact. Such artifacts result in large apparent particle deformations inside and outside the cell-target contact area, and can make it impossible to converge on a solution when solving the elasticity theory problem to infer tractions from target deformations. Because of this, we only used the confocal image data for force analysis. Scale bar, 5 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Time lapse montage (min:s) of RAW macrophage transfected with mEmerald-Lifeact internalizing a deformable acrylamide-co-acrylic acid-microparticle (DAAMP) (9 μm, Young’s modulus 6.5 kPa) functionalized with IgG and AF647-Cadaverine and imaged using lattice light-sheet microscopy (LLSM). Maximum intensity projections in x/y are shown. Scale bar, 5 μm. (b) Side view of reconstructed DAAMP internalized in (a) showing target deformations and F-actin localization on particle surface. Arrows point at loci of F-actin accumulation and protrusion into the target, similar to those observed for 1.4 kPa particles (Figure 1b). Scale bar, 3 μm. (c) Average deformation and F-actin intensity profiles along the phagocytic axis to the cup rim for fixed RAW cells imaged using confocal microscopy. Signals were first processed on a per-particle basis by averaging over the surface along the phagocytic targets (in 30 bins). Only targets beyond 40% engulfment were included (n = 28, 17 for 1.4 and 6.5 kPa particles, respectively). (d) Target sphericity. Violin plots show individual phagocytic events (markers) (n = 33, 19 for 1.4 and 6.5 kPa particles, respectively), mean (black cross) and median (dashed line). ***Two-sided Wilcoxon rank sum test: p = 5.9 × 10–6. (e) Analysis of constriction magnitude for all phagocytic events (n = 33, 19 for 1.4 and 6.5 kPa particles, respectively). Individual markers indicate individual measurements, lines indicate averages within the five bins. **Two-sided Wilcoxon rank sum test: p < 0.01. Unsurprisingly, the average target constriction is higher for 1.4 kPa targets (170 ± 25 nm, s.e.m.) than for 6.5 kPa targets (70 ± 15 nm, s.e.m.). Modeling this constriction as a simple cylindrical indentation into a flat surface ($F≈\frac{4\piEd}{9}$), where F is the force, E is the target Young’s modulus, and d is the target Young’s modulus, rough force estimates can be obtained. With ~7 and ~13 nN for the 1.4 and 6.5 kPa targets, respectively, moderately higher total contractile forces are observed on the stiffer targets. All error bars indicate s.e.m. (f) Phagocytic efficiency upon drug treatment follows the same trends as for softer particles (see Figure 3g and Figure 3—figure supplement 5). Efficiency was evaluated as the number of internalized particles divided by the total number of cell-associated particles. Uptake was evaluated 15 min after addition of particles and normalized to internalization by DMSO-treated cells. Two independent experiments were performed where 40–200 particles were measured per condition for each experiment. *p = 0.04 (t-test result for hypothesis, mean = 1).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Time lapse montage (min:s) of a BMDM transfected with mEmerald-Lifeact internalizing a soft deformable acrylamide-co-acrylic acid-microparticle (DAAMP) (9 μm, Young’s modulus 0.3 kPa) functionalized with IgG and AF647-Cadaverine and imaged using lattice light-sheet microscopy (LLSM). Maximum intensity projections in x/z are shown. Softer targets were chosen than those for RAW cells, because BMDMs induced less strong target deformations. Scale bar, 5 μm. (b) Side view of reconstructed DAAMP internalized in (a) showing target deformations and F-actin localization on particle surface. Similar spots of F-actin accumulation and protrusion into the target can be observed as for RAW cells engulfing 1.4 or 6.5 kPa particles (Figure 1b and Figure 1—figure supplement 1b, Lim et al., 2017). Scale bar, 3 μm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/68627/elife-68627-video1.mp4.jpg)
+
+**Video 1.:** RAW macrophages transfected with mEmerald-Lifeact (gray) were fed DAAM-particles (9 μm,1.4 kPa) (blue) functionalized with AF647-Cadaverine, BSA, and anti-BSA IgG. Maximum intensity projections in xy (left) and xz (right). Lower left time stamp: min:s. Scale bar, 5 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/68627/elife-68627-video2.mp4.jpg)
+
+**Video 2.:** Base, side, and front views of reconstructed deformable acrylamide-co-acrylic acid-microparticle (DAAMP) internalized in Figure 1, Video 1 showing target deformations (above) and F-actin localization on particle surface (below). Color scales for radial deviation and F-actin intensity shown on right. Upper right time stamp: min:s. Scale bar, 3 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/68627/elife-68627-video3.mp4.jpg)
+
+**Video 3.:** Maximum intensity projection of RAW macrophage transfected with mEmerald-Lifeact (gray) ingesting DAAM-particles (9 μm, 6.5 kPa) (blue) functionalized with AF647-Cadaverine, BSA, and anti-BSA IgG. Lower left time stamp: min:s. Scale bar, 5 μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/68627/elife-68627-video4.mp4.jpg)
+
+**Video 4.:** Maximum intensity projection of RAW macrophage transfected with mEmerald-Lifeact (gray) ingesting DAAM-particles (9 μm, 6.5 kPa) (blue) functionalized with AF647-Cadaverine, BSA, and anti-BSA IgG. Lower left time stamp: min:s. Scale bar, 5 μm.
+
+### Forces normal to the target surface are dominant during phagocytic engulfment and lead to strong target constriction
 
 To more closely investigate the role of the actin cytoskeleton in force generation during FcR-mediated engulfment, we performed MP-TFM measurements on fixed cells during phagocytosis. RAW macrophages were exposed to 9 µm, 1.4 kPa DAAMPs, after which they were fixed and stained for F-actin (Figure 2a). Immunostaining of the exposed particle surface allowed precise determination of the stage of engulfment (Figure 2—figure supplement 1). Confocal z-stacks of phagocytic cups enabled 3D target shape reconstructions with super-resolution accuracy and inference of cellular traction forces (Figure 2b and c). The deformation patterns, although slightly lower in magnitude for the fixed samples (Figure 1—figure supplement 1), were similar to those observed in living cells by the LLSM imaging (Figure 2b and Figure 1—figure supplement 1). Specifically, we noted a ring of inhomogeneous F-actin localized along the rim of the phagocytic cup, where high F-actin intensity strongly correlated with inward target deformation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig2-v2.jpg)
+
+**Figure 2.:** (a) Confocal images of fixed RAW macrophages phagocytosing soft deformable acrylamide-co-acrylic acid micro (DAAM)-particles functionalized with IgG, and AF488-Cadaverine for visualization. Cells were stained for F-actin, and particles with a fluorescent secondary antibody to reveal the exposed surface. Left column: composite maximum intensity projections (MIP) of confocal z-stacks, second to fourth column: single confocal slices through particle centroid. Scale bar, 5 μm. (b) 3D shape reconstructions of deformable acrylamide-co-acrylic acid-microparticle (DAAMP) in (a) revealing detailed target deformations induced during phagocytosis and localization of F-actin over the particle surface. Stars mark the base of the phagocytic cup, and cups are aligned with the phagocytic axis (see e) from left to right. Scale bars, 3 μm. (c) Normal and shear stresses inferred from the shape deformations of the targets in (a,b). Negative normal forces denote (inward) pushing forces. (d) Averages of absolute magnitudes of normal and shear stresses in phagocytic cups (n = 18). Violin plots show individual phagocytic events (blue markers), mean (black cross) and median (dashed line). *Two-sided Wilcoxon rank sum test: p = 2.0 × 10–4. (e) Schematic representation of phagocytic parametrization. Normalized cup position indicates the position along the phagocytic axis relative to the rim of the cup, with 0 the cup base and 1 the rim of the phagocytic cup. (f) Average profiles of target deformation and F-actin intensity along the phagocytic axis, where 0 and 1 are the cup base and rim, respectively. Signals were first processed on a per-particle basis by averaging over the surface along the phagocytic targets (in 30 bins). Only targets beyond 40% engulfment were included (54 out of 68 events in total). (g) Cumulative distribution function of the engulfment stage of randomly selected phagocytic events before completion of engulfment (n = 68). Dashed red line indicates a linear fit. (h) Target sphericity and elongation dependence on phagocytic stage. Blue squares indicate individual measurements, black lines indicate averages within five bins. Middle graph inset schematic shows how relative elongation was determined. (i) Analysis of the radially symmetric component of particle deformation and F-actin fluorescence along the phagocytic axis for all phagocytic events (n = 68). Marker and line styles as in (h). (j) Analysis of forces in the contractile ring at the cup rim and throughout the remainder of the cup for 18 cups selected for force analysis. All error bars indicate s.e.m. unless indicated otherwise. Raw data are available in Figure 2—source data 1 and raw images are available on a FigShare repository (Barger et al., 2021a).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Determination of contact area between cell and target was calculated using both I/O signal (immunostain of exposed particle surface) and the F-actin signal for confocal microscopy data. First, an initial mask was determined based on thresholding the logarithm of the F-actin signal. Then, for each area with low F-actin intensity, the I/O stain is compared to the mean I/O stain, and each area is marked as inside (when the I/O stain is below average) or outside (when the I/O stain is above average). A region-based active contour algorithm was used to optimize the mask (Lankton and Tannenbaum, 2008; Vorselen et al., 2020b). Finally, particles were aligned, and their fraction engulfed (masked area/total area) calculated. (b) Visualization of deformations, F-actin intensity, and I/O stain for all 68 control particles (being phagocytosed by DMSO-treated cells) used in this manuscript shown using Mollweide projections (see c). The particles are sorted by phagocytic stage, with the upper left the lowest percentage of the particle surface area engulfed and the bottom right the highest percentage. (c) Comparison of equirectangular projection and Mollweide projection for mapping spherical surface for 2D visualization. All 2D projections of a sphere are necessarily distorted. The Mollweide projection is an equal area projection, and therefore does not lay emphasis on the polar regions. Angles are, however, not preserved in this mapping.
+
 Force analysis (see Materials and methods) revealed compressive stresses up to 400 Pa at these sites (Figure 2c), which is substantially greater than our previous findings of stresses of ~100 Pa using softer targets with Young’s modulus 0.3 kPa (Vorselen et al., 2020b), and suggests that force exertion during phagocytosis may be regulated based on target rigidity. The total compressive forces in the phagocytic rim, which lead to target constriction, increased from ~1 nN in early-stage phagocytosis (fraction engulfed ~22%) to ~10 nN in later stages (fraction engulfed >50%). The shear forces were consistent in magnitude with reported values using TFM during frustrated phagocytosis on planar gels of similar rigidity (Rougerie and Cox, 2020) and were ~7-fold lower than the observed normal forces, independent of the stage of phagocytic engulfment (Figure 2d). This suggests that normal forces dominate the mechanical interaction in phagocytosis, which is in stark contrast with lamellipodial extensions during cell migration where shear forces dominate (Case and Waterman, 2015; Legant et al., 2013).
 
-## Target constriction coincides with sites of F-actin accumulation and increases with uptake progression
+### Target constriction coincides with sites of F-actin accumulation and increases with uptake progression
 
 To identify overall trends in F-actin distribution and location of target deformations within the phagocytic cup, we aligned the 3D images of phagocytic cups and analyzed profiles along the phagocytic axis, defined as the axis from the centroid of the cell-target contact area through the target centroid to the opposing target surface (Figure 2e). This analysis confirmed a clear accumulation of F-actin near the front of the phagocytic cup (~5-fold higher than at the cup base), which precisely colocalized with the site of maximal applied inward normal forces regardless of engulfment stage, as illustrated by quantifying the surface mean curvature (Figure 2f). A similar distribution of F-actin and deformation was observed with stiffer 6.5 kPa targets, albeit with smaller target deformations, and interestingly, less F-actin accumulation in the cup rim (Figure 1—figure supplement 2).
 
 To investigate how phagocytic forces change during phagocytic progression, we arranged cups in order by the fraction of their particle surface engulfed, which allowed us to reconstruct phagocytic engulfment over time from fixed cell images (Figure 2g and Figure 2—figure supplement 1). Since DAAMPs cause little optical distortion, measurable features of the phagocytic cups could be analyzed independent of cup orientation and engulfment stage (Vorselen et al., 2020b). We found no marked accumulation of cups at any specific stage, suggesting no bottleneck or rate-limiting steps, which had been previously reported around 50% engulfment (van Zon et al., 2009). However, we did observe a strong increase in global target deformation, measured as the inverse of target sphericity, with phagocytic progression (Spearman’s ρ = –0.62, p = 5.0 × 10–8) (Figure 2h). This decrease in target sphericity was, at least partially, due to a 4% ± 1% (p = 1.9 × 10–7) average increase in DAAMP elongation along the phagocytic axis (Figure 2h), which is consistent with constriction orthogonal to the phagocytic axis. Direct analysis of target constriction and F-actin peak intensity for each phagocytic cup (Figure 2i, Figure 2—figure supplement 1) revealed an apparent contractile ring in almost all (~96%) cups. The location of this actin contractile ring along the phagocytic axis correlated extremely well with phagocytic progression (ρ = 0.93, p = 3.2 × 10–29) and led to target constriction increasing from ~80 nm in early-stage (fraction engulfed <40%) to ~210 nm in late-stage cups (fraction engulfed >70%). This is a direct effect of increasing normal forces at the cup rim (Figure 2j). Strikingly, in early stages of phagocytosis, net pulling (or outward normal) forces were observed throughout the phagocytic cup and particularly at the base (~3 nN total force, > 100 Pa tensile stresses) (Figure 2j), whereas in late-stage phagocytosis strong net compressive stresses were observed.
 
-## Arp2/3-mediated actin polymerization drives force generation throughout phagocytosis, whereas myosin-II powers cup closure
+### Arp2/3-mediated actin polymerization drives force generation throughout phagocytosis, whereas myosin-II powers cup closure
 
 The striking observations of target constriction becoming more pronounced later in engulfment inspired us to consider distinct contributions of actin assembly and myosin-mediated contractility to force generation during phagocytosis. To separate the effects of these two actin-dependent processes, we inhibited Arp2/3-mediated and formin-mediated actin polymerization, as well as myosin-II activity using the small molecule inhibitors CK666, SMIFH2, and Blebbistatin, respectively (Figure 3a, Figure 3—figure supplements 2–5). Although SMIFH2 was recently reported to exhibit off-target effects, most notably myosin-II inhibition (Nishimura et al., 2021), we observed markedly different behaviors upon SMIFH2 treatment compared to direct myosin-II inhibition using Blebbistatin (Figure 3—figure supplement 5). Target deformation analysis and force calculations revealed that target constriction was diminished upon inhibition of the Arp2/3 complex and myosin-II activity, while formin inhibition had a relatively modest effect (Figure 3c,d, Figure 3—figure supplements 2 and 5). The loss of target constriction coincided with a strong reduction (~40%) in F-actin accumulation at the rim of the cup, as well as a 50% broadening of the typical narrow (~2 μm) F-actin band observed in the DMSO control (Figure 3d,e, Figure 3—figure supplements 2 and 5). Of note, upon myosin-II inhibition alone, the loss of F-actin at the rim of the cup was complemented by a small, but significant (p = 0.04), increase in F-actin density at the base of the cup (Figure 3d,f, Figure 3—figure supplement 5). This observation suggests that myosin-II may be promoting actin disassembly at the base of the phagocytic cup during internalization, similar to the role of myosin-II in disassembling the F-actin network at the cell rear during cell motility (Wilson et al., 2010). To understand the implications of these distinct force generation profiles on phagocytic efficiency, we challenged RAW macrophages to engulf 9 μm 1.4 kPa DAAMPs under drug treatment. Similar to previous reports using large polystyrene particles (Rotty et al., 2017), inhibition of the Arp2/3 complex strongly reduced phagocytosis after 15 min and uptake remained low after longer incubation (Figure 3g, Figure 3—figure supplement 2). Meanwhile, uptake was not significantly affected by Blebbistatin treatment and slightly reduced upon SMIFH2 treatment (Figure 3g, Figure 3—figure supplement 5).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig3-v2.jpg)
+
+**Figure 3.:** (a) Confocal images of drug-treated fixed RAW cells phagocytosing deformable acrylamide-co-acrylic acid micro (DAAM)-particles functionalized with IgG and AF488-Cadaverine for visualization. Cells were treated with DMSO, CK666 (150 μM), and Blebbistatin (15 μM) for 30 min prior to phagocytic challenge. Each target is approximately 60% engulfed. Fixed cells were stained for F-actin, and particles were labeled with a fluorescent secondary antibody to reveal the exposed surface. Left column: composite maximum intensity projections (MIP) of confocal z-stacks, second to third column: single confocal slices through particle centroid. Scale bar, 5 μm. (b) Particle shape reconstructions from (a) revealing cell-induced target deformations and localization of F-actin over the particle surface. Stars mark the base of the phagocytic cup, cups are aligned with the phagocytic axis (see Figure 2e) from left to right. Scale bars, 3 μm. (c) Normal and shear stresses derived from target deformations. Negative normal forces denote (inward) pushing forces. (d) Average profiles of target deformation and F-actin intensity along the phagocytic axis. Signals were first processed on a per-particle basis by averaging over the surface along the phagocytic targets in 30 bins. Targets before 40% engulfment were excluded. (e, f) Violin plots showing individual phagocytic events (colored markers), mean (black cross), and median (dashed line). (e) F-actin peak intensity and band width. (f) F-actin intensity in the cup (behind the rim), measured right (3 μm) behind the main peak for each particle. (g) Phagocytic efficiency upon drug treatment evaluated as the number of internalized particles divided by the total number of cell-associated particles. Uptake was evaluated 15 min after addition of particles and normalized to internalization by DMSO-treated cells. Three independent experiments were performed where 80–200 particles were measured per condition for each experiment. ***p = 0.0007 (t-test result for hypothesis, mean = 1). (h) Upper panel, cumulative distribution function of the engulfment stage of randomly selected phagocytic events before completion of engulfment (n = 68, 63, 73 respectively) from three independent experiments. Two sample Kolmogorov-Smirnov test was used (p = 0.016*). Lower panel, fraction late-stage cups. Error bars indicate st.d. estimated by treating phagocytosis as a Bernoulli process. Fisher’s exact test was used to compare fractions (p = 1.9 × 10–4)***. (i) Sphericity and (j) constriction magnitude of DAAM-particle changes with phagocytic progression upon drug treatment. Colored markers indicate individual events, black lines indicate averages of five bins. Right column, violin plots of all events. Marker and line styles as in (e). All statistical tests were two-sided Wilcoxon rank sum test comparing with the DMSO control (gray) over the same bin with significance levels: p < 0.05*; p < 0.01**; p < 0.001***, unless otherwise indicated. All error bars indicate s.e.m. unless indicated otherwise. Raw data are available in Figure 3—source data 1 and raw images are available on a FigShare repository (Barger et al., 2021a).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Determination of F-actin and contractile ring localization, peak magnitude, and peak width. Particles were aligned with the centroid of the cell-target contact area (base of the cup) at the south pole (see inset middle panel). All particle edge coordinates (~4250) were then divided into bins per latitude of which the median was calculated. Finally, peak height, location, and full width at half maximum (FWHM) were determined. Data shown corresponds to the particle in the third column, second to last row in Figure 2—figure supplement 1. (b) Average target deformation profiles along the phagocytic axis until the cup rim. Signals were first processed on a per-particle basis by averaging over the surface along the phagocytic targets in 30 bins. (c) Determination of F-actin statistics along the phagocytic axis for all phagocytic events (n = 68, 63, 73, and 55 respectively). Colored markers indicate individual measurements, black lines indicate averages within five bins. (d) Uptake efficiency over time. Cells were fixed at various time points and immunostaining of the deformable acrylamide-co-acrylic acid-microparticle (DAAMP) surface was used to differentiate internalized from external particles. Shown is a single time course representative for two experiments with 80–400 cups measured for each condition/time point. Phagocytic index is defined as the number of internalized particles divided by all cell-associated particles. Error bars indicate st.d. estimated by treating phagocytosis as a Bernoulli process. Fisher’s exact test was used to compare fractions (p < 0.01**; p < 0.001***). (e) Target elongation changes with phagocytic progression upon drug treatment. Marker and line styles as in (c). Inset in leftmost panel shows schematically how relative elongation was determined. Right column, violin plots of all events, showing individual phagocytic events (colored markers) mean (black cross), median (dashed line). Statistical tests for all figure panels are two-sided Wilcoxon rank sum test comparing with the DMSO control over the same bin with significance levels: p < 0.05*; p < 0.01**; p < 0.001***, unless otherwise indicated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Visualization of deformations, F-actin intensity, and I/O stain for all 63 particles being phagocytosed by CK666-treated cells used in this manuscript shown using Mollweide projections. Particles are sorted by phagocytic stage, with the upper left the lowest percentage of the particle surface area engulfed and the bottom right the highest percentage.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Visualization of deformations, F-actin intensity, and I/O stain for all 75 particles being phagocytosed by Blebbistatin-treated cells used in this manuscript shown using Mollweide projections. Particles are sorted by phagocytic stage, with the upper left the lowest percentage of the particle surface area engulfed and the bottom right the highest percentage.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Visualization of deformations, F-actin intensity, and I/O stain for all 55 particles being phagocytosed by SMIFH2-treated cells used in this manuscript shown using Mollweide projections. Particles are sorted by phagocytic stage, with the upper left the lowest percentage of the particle surface area engulfed and the bottom right the highest percentage.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a) Confocal images of representative SMIFH2-treated fixed RAW cell phagocytosing deformable acrylamide-co-acrylic acid-micro (DAAM)-particle functionalized with IgG and AF488-Cadaverine for visualization. Cells were treated with 10 μM SMIFH2 for 30 min prior to phagocytic challenge. The target is approximately 60% engulfed. Fixed cells were stained for F-actin, and particles were labeled with a fluorescent secondary antibody to reveal the exposed surface. Left column: composite maximum intensity projection (MIP) of confocal z-stacks, second to third column: single confocal slices through particle centroid. Scale bar, 5 μm. (b) Particle shape reconstructions from (a) revealing cell-induced target deformations and localization of F-actin over the particle surface. Stars mark the base of the phagocytic cup, cups are aligned with the phagocytic axis (see Figure 1e) from left to right. Scale bars, 3 μm. (c) Normal and shear stresses derived from target deformations. Negative normal forces denote (inward) pushing forces. (d) Average profiles of target deformation and F-actin intensity along the phagocytic axis. Signals were first processed on a per-particle basis by averaging over the surface along the phagocytic targets in 30 bins. Targets before 40% engulfment were excluded. (e, f) Violin plots showing individual phagocytic events (colored markers), mean (black cross), and median (dashed line). (e) F-actin peak intensity and band width. (f) F-actin intensity in the cup (behind the rim), measured right (3 μm) behind the main peak for each particle. (g) Phagocytic efficiency evaluated as the number of internalized particles divided by the total number of cell-associated particles upon SMIFH2 treatment. Three independent experiments were performed, and uptake was evaluated 15 min after addition of particles and normalized to internalization by DMSO-treated cells. t-Test result for hypothesis that the mean = 1 revealed no significant (n.s.) difference to DMSO control cells (p = 0.09). (h) Left panel, cumulative distribution function of the engulfment stage of randomly selected phagocytic events before completion of engulfment (n = 68 DMSO control and 55 SMIFH2-treated) from three independent experiments. Two sample Kolmogorov-Smirnov test revealed no significant difference. Right panel, fraction late-stage cups. Error bars indicate st.d. estimated by treating phagocytosis as a Bernoulli process. Fisher’s exact test was used to compare fractions (n.s.). (i) Sphericity and (j) constriction magnitude of DAAM particle is not affected by SMIFH2 treatment. Colored markers indicate individual events, black lines indicate averages of five bins. Right columns, violin plots of all events. Marker and line styles as in (e). Two-sided Wilcoxon rank sum test comparing with the DMSO control (gray) over the same bins revealed no significant differences. (k) SMIFH2 treatment reduces formation of actin-based teeth within the phagocytic cup. Teeth size and shape are not affected. *** indicates Wilcoxon rank sum test results comparing with the DMSO control with p < 0.001. All error bars indicate s.e.m. unless indicated otherwise. Raw data are available in Figure 3—source data 1 and Figure 4—source data 1.
+
 We then investigated whether the activity of these molecular players may be associated with specific phagocytic stages. Our analysis revealed a significant change in the observed distribution of cup stages upon myosin-II inhibition, but not Arp2/3 or formin perturbation, compared to DMSO-treated control cells (Figure 3h and Figure 3—figure supplement 5). Specifically, in the Blebbistatin-treated cells, we found an >6-fold enrichment of cups that were beyond 90% engulfment, but not yet closed (p = 1.9 × 10–4). This high prevalence of late-stage phagocytic cups suggests a specific role for myosin-II in cup closure. Throughout phagocytosis, general particle deformations, as measured by the decrease in target sphericity, were strongly reduced upon both CK666 and Blebbistatin treatment (Figure 3i). Inhibition of formins generally reduced target deformations, but also increased the cell-to-cell variability in particle deformation, suggesting that formins may play a role in fine-tuning phagocytic force production (Figure 3—figure supplement 5). Whereas overall target deformations were reduced in all stages of phagocytosis upon Arp2/3 inhibition, myosin-II inhibition only significantly affected phagocytic force generation at later stages, after 50% engulfment (Figure 3i). A similar effect was observed when quantifying target constriction and target elongation specifically (Figure 3j, Figure 3—figure supplement 2). This analysis strongly suggests that there is a specific role for myosin-II in late-stage phagocytosis despite previous data that shows myosin-II is dispensable for phagocytosis (Figure 3g; Jaumouillé et al., 2019; Olazabal et al., 2002; Rotty et al., 2017). The strong effect of Arp2/3 inhibition on phagocytic efficiency and target deformations throughout phagocytosis, and the lack of effect on the distribution of cups-in-progress, suggests that branched actin assembly plays an important role throughout phagocytic progression.
 
-## Actin-based protrusive teeth drive target constriction and are mechanosensitive
+### Actin-based protrusive teeth drive target constriction and are mechanosensitive
 
 Based on our observations of discrete spots of inward deformation using MP-TFM (Figures 1a, b, 2a and b), and the significant reduction in target deformation after treatment of cells with the Arp2/3 inhibitor CK666, we hypothesized that these local deformations were the result of actin-based protrusions pushing against the surface of the phagocytic target. Indeed, we frequently observed actin-rich puncta that appeared as oblong or triangular tooth-like projections locally indenting the target surface along the internal rim of the phagocytic cup (Figure 4a) and sometimes deeper within the cup (Figure 4b). Similar actin ‘teeth’ were formed by primary murine BMDMs, bone marrow-derived dendritic cells (BMDCs), and HL-60 human neutrophils when challenged with IgG-functionalized DAAMPs, suggesting that these structures are a common feature of phagocytosis (Figure 4c).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig4-v2.jpg)
+
+**Figure 4.:** (a,b) RAW macrophages were fed 1.4 kPa deformable acrylamide-co-acrylic acid-microparticles (DAAMPs) and stained for F-actin. Images represent maximum intensity projections of confocal z-stacks. Yellow arrows point to actin-based ‘teeth’. (a) Representative images of teeth at the rim of the phagocytic cup deforming the target. Scale bar, 5 μm. (b) Example of actin-based teeth observed within the phagocytic cup. Scale bar, 5 μm. (c) Primary murine bone marrow-derived macrophage (BMDM), as well as primary bone marrow-derived dendritic cell (BMDC) and HL-60 neutrophil-like cells also form actin teeth in response to DAAMP internalization. Scale bar, 5 μm. Zoom scale bar, 2 μm. (d) CK666 and Blebbistatin treatments reduce formation of actin-based teeth within the phagocytic cup. Teeth size and shape are also modestly affected. Violin plots with individual particles (colored markers), means (black cross), median (dashed line). Stars indicate Wilcoxon rank sum test results comparing with the DMSO control with significance levels: p < 0.05*; p < 0.001***. (e) Manually tracked actin teeth trajectories from DAAMP internalization imaged by lattice light-sheet microscopy (LLSM). Particle surface is shown using Mollweide projection (Figure 2—figure supplement 1). Three time points of a single phagocytic event are shown, with different colors representing unique teeth. Circles indicate current or final position of a tracked tooth. Lines connect the previous positions of tracked teeth. Lower left: great circle distance (GCD) of teeth to the equator for two events. Target 1 is visualized above, time 0 corresponds to the time at which engulfment was completed. Lower right: distribution of tooth speeds with average 0.094 ± 0.08 μm/s (=5.6 μm/min) from three phagocytic events (60 teeth in total from targets 1 and 2 in this panel, and from Figure 4—figure supplement 1). Tooth speeds were averaged over the trajectory of individual teeth. (f) Teeth are mostly located at the rim of the cup. Markers represent individual teeth (n = 716). (g) Constriction magnitude correlates with the number of teeth with Spearman’s rank correlation coefficient (r) = 0.42 (p = 4.4*10–4) for individual DMSO phagocytic events (left) and between drug treatments (right). (h) Teeth number and features change with phagocytic progression, with, from left to right, r = 0.2 (p = 0.11 n.s.), r = 0.17 (p = 1.0 × 10–4), r = 0.16 (p = 2.1 × 10–4). (i) Phagocytic cups with actin teeth appear more frequently when cells are challenged with softer targets. RAW macrophages were challenged with 9 μm DAAMPs of 1.4 or 6.5 kPa, fixed and stained for F-actin. (j) Elasticity theory simulations of the relation between tooth size and depth and overall constriction magnitude. Inset shows teeth, simulated as spherical indenters on a spherical target. Bar graph represents pooled data (n = >150 cups) from three independent experiments. Error bars indicate st.d. estimated by treating phagocytosis as a Bernoulli process. Pooled data was compared using Fisher’s exact test to compare fractions (p = 1.5 × 10–24***). All error bars indicate s.e.m. unless otherwise indicated. Raw data are available in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Example of teeth identification method. Teeth were defined as areas of high-actin intensity and inward protrusion. For the mean curvature, the average value of mean curvature for edge coordinates (vertices) at similar latitude (with the base of the cup at the south pole) were subtracted to negate any influence of the typical ring of target constriction at the rim of the cup. Then the values of corrected mean curvature deviation and F-actin intensity were multiplied for each vertex. Vertices with values above the threshold were identified as teeth, and a watershed algorithm was used to separate clusters of teeth. Base of the phagocytic cup is at the south pole. (b) Determination of the threshold for tooth identification is based on the product of F-actin intensity and mean curvature deviation. Generally, there is a negative correlation between F-actin intensity and mean curvature (high F-actin concentration is found at regions of indentation). The threshold was set as the negative of the 97.5 percentile value, which represents an estimate of the mean – two standard deviations in the case that F-actin would not have correlated with inward deformation. (c) Time lapse montage (min:s) showing example of stationary F-actin teeth during phagocytosis. F-actin signal reconstructed over the target surface from lattice light-sheet microscopy (LLSM) data. Particle surface is shown using Mollweide projection (Figure 2—figure supplement 1). Four time points of a single phagocytic event are shown. Arrows point at locations of F-actin puncta that can be tracked from an early stage and are still present at the same location in late-stage phagocytosis, when they are far behind the rim of the phagocytic cup. (d) Great circle distance (GCD) of manually tracked teeth to the equator for a third phagocytic event. Data of the other phagocytic events are presented in Figure 4i. (e) Actomyosin activity affects teeth localization. Markers represent individual teeth (n = 716, 138, 377, and 363 from left to right) for all recorded phagocytic events (n = 68, 63, 73, and 55, respectively). Violin plots show individual teeth (colored markers), means (black cross), median (dashed line). Right: fraction of teeth localized in the rim as opposed to deeper in the cup. The threshold for differentiating teeth in the rim from teeth throughout the cup was based on the distribution of teeth distances from the rim in the DMSO condition. Specifically, it was set as the mode of the distribution (see left panel) summed with 2× the 2.5 percentile value of the distribution, which represents an estimate of the mean tooth distance from the cup edge – two standard deviations of the teeth specifically localized in the rim. Fisher’s exact test was used to compare fractions (p = 0.0076**). Error bars indicate st.d. estimated by treating phagocytosis as a Bernoulli process. (f) Number of rim teeth and tooth diameter variation between drug treatment groups correlates with constriction magnitude. (g) Teeth statistics correlate with constriction magnitude within drug treatment groups. Markers indicate individual measurements; black lines indicate averages within five bins. Spearman’s rank correlation coefficient (r) is given above each graph. All statistical tests were two-sided Wilcoxon rank sum test comparing with the DMSO control over the same bin with significance levels: p < 0.05*; p < 0.01**; p < 0.001***. All error bars indicate s.e.m.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Parametrization of the model. Ten rigid teeth indent a target around the equator of the particle, with Rteeth the tooth radius, Rtarget the target radius (3.7 μm), d the absolute indentation depth, and a the contact radius. Red arrows indicate direction of simulated forces. (b) Displacement result for d = 0.3 μm, Rtooth = 0.5 μm. (c) Derivation of quantities that are obtained from experimental data from the simulation results. The indentation depth variation is shown along the equator of the particle in blue, for the same parameters as (b). Averaging this profile allows us to find the average constriction depth. The effective tooth depth is then found by subtracting the minimum indentation from the maximum indentation.
 
 To investigate the nature and biological function of these actin ‘teeth’ more carefully, we identified them on individual particles based on their protrusive nature and high F-actin intensity (Figure 4—figure supplement 1). According to these criteria, teeth were found in almost all phagocytic cups, with ~10 distinct teeth per cup (Figure 4d). Typically ~1 μm in diameter, and protruding ~200 nm into the 1.4 kPa DAAMP targets, they resembled podosomes in size and protrusive nature (Labernadie et al., 2014). Cells treated with the Arp2/3 inhibitor CK666, and to a lesser extent cells treated with the formin inhibitor SMIFH2, exhibited a reduction in the number of actin teeth per cup (80% and 40% reduction, respectively) compared to control cells treated with DMSO (Figure 4d, Figure 3—figure supplement 5). This result suggests that, like podosomes (van den Dries et al., 2019b), target-deforming phagocytic teeth include both Arp2/3- and formin-nucleated actin filaments. Surprisingly, a strong decrease (~50%) in the number of actin teeth was also observed upon myosin-II inhibition. For all treatments, the reduced number of individual teeth that still formed were remarkably similar to those formed by control cells. Although tooth size and depth were reduced upon CK666 or Blebbistatin treatment, the effect size was small (<15%), suggesting that ‘teeth’ are resilient structures that, once formed, have well-defined properties (Figure 4d).
 
@@ -71,15 +147,51 @@ To test whether the actin teeth were mechanosensitive, we challenged RAW macroph
 
 Given the ring-like organization of phagocytic teeth in the cup rim, combined with their individual protrusive activity, we questioned whether they were sufficient to explain our observations of target constriction orthogonal to the phagocytic axis, or if a separate contractile mechanism is required. We first distinguished the teeth positioned at the rim of the cup (~70% of teeth), which likely contribute to target constriction, from those deeper in the cup, based on their distance from the cup rim (Figure 4f, Figure 4—figure supplement 1). We then determined whether the properties of teeth near the rim correlated with the overall target constriction. Indeed, the number of teeth per cup and tooth size correlated with overall constriction in DMSO-treated cells and between groups treated with actomyosin activity inhibitors CK666, SMIFH2, and Blebbistatin (Figure 4g, Figure 4—figure supplement 1). We further examined whether changes in the teeth could be related to increasing target constriction with phagocytic cup progression. Teeth numbers increased only slightly with phagocytic progression, which suggests that they are formed quickly early on in phagocytosis and are then typically maintained at constant numbers throughout engulfment (Figure 4h). Teeth size and depth increased significantly but modestly during phagocytic progression (Figure 4h, Figure 4—figure supplement 1). Elasticity theory simulations of teeth-like indentations of a spherical target allowed us to test whether teeth protrusive activity is sufficient to explain the extent of overall target constriction in different stages of phagocytosis (Figure 4—figure supplement 2). Remarkably, this revealed that teeth activity is indeed sufficient to account for total target constriction in early-stage phagocytosis (<50% engulfment), but insufficient to explain the greater degree of target constriction later in the process (Figure 4j). This is consistent with additional myosin-II-based contractile forces in late-stage phagocytosis, as suggested by our observations using Blebbistatin.
 
-## Regulators of branched actin assembly (Arp2/3 and WASP) and myosin-I isoforms localize to actin teeth while myosin-II forms contractile rings within the phagocytic cup
+### Regulators of branched actin assembly (Arp2/3 and WASP) and myosin-I isoforms localize to actin teeth while myosin-II forms contractile rings within the phagocytic cup
 
 Due to the resemblance of the phagocytic actin teeth to podosomes in size, protrusive activity (Figure 4d), and dynamics (Figure 4e), we naturally questioned whether these structures were similar in protein composition as well. Given technical challenges with immunohistochemical staining and MP-TFM (see Materials and methods), we transfected the RAW macrophages with fluorescently tagged proteins to assess localization relative to the actin teeth using 3D reconstructions of the DAAMPs. Consistent with our earlier results showing a decrease in the number of teeth after treating cells with the Arp2/3 inhibitor, we found that the Arp2/3 complex and its activator, WASP, colocalized with the actin teeth (Figure 5a and b). Moreover, cortactin and cofilin, actin-binding proteins that are frequently found in association with densely branched actin networks, also localized to the phagocytic teeth (Figure 5—figure supplement 1). In contrast, myosin-II often appeared distinctly behind the actin teeth in an anti-correlated fashion (Figure 5b). In particular, rings composed of myosin-II filaments could be seen within the phagocytic cup (Figure 5a). In cups that were almost closed, myosin-II coalesced into a ring behind the actin rim (Figure 5—figure supplement 1) and clearly localized to sites of target constriction in cases of extreme target deformation (Figure 5c). Meanwhile, the two long-tailed myosin-I isoforms, myo1e and myo1f, localized specifically to the tips of the actin teeth, consistent with our previous observations (Figure 5a; Barger et al., 2019).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig5-v2.jpg)
+
+**Figure 5.:** (a) RAW macrophages were transfected with fluorescently tagged actin-binding proteins and challenged to ingest deformable acrylamide-co-acrylic acid-microparticles (DAAMPs) (11 μm, 1.4 kPa) functionalized with IgG and AF647-Cadaverine to assess localization to actin teeth (yellow arrowheads). Images are maximum intensity projections of confocal z-stacks. White boxes in leftmost panels indicate the site of the zoomed images to the right. Scale bar, 5 μm. Zoom scale bar, 1 μm. (b) DAAM-particle reconstructions for examples shown in (a) showing target deformations and localization of fluorescent proteins with respect to actin teeth. Scale bar, 3 μm. (c) Myosin-II condensing into thick concentric rings (marked by orange arrowheads) during late-stage phagocytosis of a highly deformed target. Images are maximum intensity projections of confocal z-stacks. Scale bar, 5 μm. Zoom scale bar, 1 μm. Raw images are available on a FigShare repository (Barger et al., 2021b).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** RAW macrophages were transfected with fluorescently tagged actin binding proteins and challenged to ingest deformable acrylamide-co-acrylic acid-micro (DAAM)-particles (11 μm, 1.4 kPa) functionalized with IgG and AF647-Cadaverine. (a) Actin-binding proteins, cortactin, and cofilin localize to phagocytic teeth (yellow arrowheads) during DAAM-particle internalization. (b) Myosin-II forming concentric rings (orange arrowhead) during late-stage phagocytosis. (c) Adaptor proteins, vinculin and paxillin, localize at the base of phagocytic teeth in a punctate pattern (red arrowheads). DAAMPs are 9 μm, 1 kPa. Images are maximum intensity projections of confocal z-stacks. Scale bar, 5 μm. Zoom scale bar, 1 μm.
+
 Given both recent and older observations identifying adhesion adaptor proteins at the phagocytic cup (Beningo and Wang, 2002; Greenberg et al., 1990), we were particularly interested in the localization of paxillin and vinculin. In comparison to the branched actin-binding proteins, both paxillin and vinculin localized behind the phagocytic teeth in a punctate-like pattern (Figure 5—figure supplement 1). Altogether, these studies support a model whereby actin teeth are composed of branched actin filaments guided by myosin-I motor proteins. The localization of myosin-II and paxillin/vinculin behind the teeth suggests that these proteins may play a role in the potential interconnection of the teeth, similar to podosomes on 2D surfaces (Meddens et al., 2016; van den Dries et al., 2019b).
 
-## Contractile activity may enable resolution of phagocytic conflicts via partial target eating (‘nibbling’) or forfeit of uptake (‘popping’)
+### Contractile activity may enable resolution of phagocytic conflicts via partial target eating (‘nibbling’) or forfeit of uptake (‘popping’)
 
 While we have found that target constriction is a signature mechanical feature of FcR-mediated phagocytic progression, it is unclear what functional role target constriction might play during phagocytosis, since actin-driven membrane advancement along the target surface should in principle be sufficient for internalization (Herant et al., 2006; Tollis et al., 2010). In addition to the many successful internalization events we observed using LLSM, we also observed some strikingly different target encounters in which RAW macrophages assembled large amounts of F-actin, only to squeeze futilely at the base of the target without completing engulfment. In these cases, the contractile activity resulted in dramatic deformations and even dumbbell-like appearance of the target (Figure 6a and b, Video 5). In addition to this kind of internalization failure by single cells, we also observed incidents where two macrophages engaged one DAAMP target. Similar to previous observations of red blood cells being squeezed into multilobed shapes when attacked by two macrophages simultaneously (Swanson et al., 1999), these conflicts were also observed using primary BMDMs challenged with DAAMPs (Video 6). Although the polymeric targets used in this study prohibit partial target eating because each particle is effectively one single crosslinked macromolecule that cannot easily be severed by cell-exerted forces, this behavior may be reminiscent of trogocytosis, the process which has been observed during immune cell attack of cancer cells whereby phagocytes ingest small bits of their target (Matlung et al., 2018; Morrissey et al., 2018; Velmurugan et al., 2016). By imaging RAW macrophages transfected with GFP-tagged non-muscle myosin-IIa, we observed highly enriched rings of myosin-II signal at DAAMP deformations during attempts of partial target eating (Figure 6c, Video 7). Target encounters involving extreme deformations of the DAAMP also revealed the existence of a ‘popping’ mechanism that could lead to a sudden release of the target (Video 8) or, conversely, a sudden completion of engulfment (Video 9, Figure 6—figure supplement 1). During such events, targets were first gradually deformed to a dumbbell-like shape, followed by a sudden translocation of the particle, as well as an immediate recovery of its original spherical shape and volume (Figure 6d, Video 7). The rapid timescale of this process suggests that it is likely purely mechanical, representing an elastic recoil of the DAAMP. Importantly, these encounters were rather common, with the attempted partial eating attempts (~14%) and popping (~24%) making up almost 40% off all recorded events (Figure 6e). Furthermore, such events, and specifically popping, were mechanosensitive and occurred much less frequently for stiffer 6.5 kPa targets (~1%, n = 89, p = 1.5 × 10–6), resulting in the overall more frequent failure of phagocytosis for soft particles (Figure 6f).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig6-v2.jpg)
+
+**Figure 6.:** (a) Maximum intensity projections (MIP) of lattice light-sheet microscopy (LLSM) stacks showing failed internalization attempt of RAW macrophage with IgG-functionalized 1.4 kPa deformable acrylamide-co-acrylic acid-microparticle (DAAMP). Zoomed images of the area marked by the white box showing only the DAAMP channel (inverse grayscale LUT) are shown below. (b) 3D reconstructions showing both the particle shape and F-actin signal over the particle surface corresponding to the event in (a). Scale bar, 3 μm. (c) Maximum intensity projections (MIP) of LLSM stacks showing myosin-II accumulation (orange arrows) during a partial eating event. RAW macrophages (marked by *) were transfected with EGFP-NMMIIA (non-muscle myosin-IIa) to label myosin-II and challenged with IgG-functionalized 1.4 kPa DAAMP. (d) Top: MIPs of LLSM stacks of RAW macrophage suddenly releasing heavily deformed target. Red dashed line outlines DAAMP. Middle: particle position and outline (left), and kymograph of particle position (right). Bottom: particle displacement, sphericity, and apparent diameter over time of the same event shows the sudden nature of the release. (e) Sudden forfeit by a popping mechanism and attempted partial eating are common for 1.4 kPa targets, with ~24% and ~ 14% occurrence of all phagocytic events, respectively. (f) Percentage of failed phagocytic events is dependent on particle rigidity. Data from two to three independent experiments was pooled (n = 89, 91 phagocytic events) and compared using Fisher’s exact test (p = 7.4 × 10–4). (g) Schematic representation of the multiple ways in which target constriction may enable resolving macrophage conflicts in which two cells attempt a single target. All scale bars are 5 μm, unless otherwise indicated. All error bars indicate s.d. estimated by treating phagocytosis as a Bernoulli process. Raw data are available in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68627/elife-68627-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Top, maximum intensity projections (MIP) of lattice light-sheet microscopy (LLSM) time lapse (min:s) showing successful internalization attempt of RAW macrophage with IgG-functionalized 1.4 kPa deformable acrylamide-co-acrylic acid-micro (DAAM)-particle, showing strong deformation and a sudden internalization step. Bottom: DAAM-particle-only channel (inverted grayscale). (b) Left: particle position and outline with color-coded kymograph of particle position. Right: particle displacement, sphericity, and apparent diameter over time of the same event shows the sudden nature of the internalization. Scale bars, 5 μm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/68627/elife-68627-video5.mp4.jpg)
+
+**Video 5.:** Maximum intensity projections of RAW macrophages transfected with mEmerald-Lifeact (gray) challenged with DAAM-particles (9 μm,1.4 kPa) (blue). Merged images (left) with single DAAMP channel in gray (right) to highlight target deformations. Time stamp: min:s. Scale bar, 5 μm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/68627/elife-68627-video6.mp4.jpg)
+
+**Video 6.:** Murine BMDMs transfected with mEmerald-Lifeact (gray) were fed DAAM-particles (11 μm,1.4 kPa) (blue) functionalized with TRITC-Cadaverine, BSA, and anti-BSA IgG. Merged maximum intensity projections (left) with single DAAMP channel in gray (right) to highlight target deformation. Transfected macrophage attempts to bite DAAMP in half with second untransfected macrophage on the other end, whose presence is implicated by local deformations on the side of the particle not in contact with the transfected cell. Time stamp: min:s. Scale bar, 5 μm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/68627/elife-68627-video7.mp4.jpg)
+
+**Video 7.:** Maximum intensity projections of RAW macrophages transfected with EGFP-NMMIIA (non-muscle myosin-IIa) (gray) challenged with deformable acrylamide-co-acrylic acid-micro (DAAM)-particles (9 μm,1.4 kPa) (blue). Time stamp: min:s. Scale bar, 5 μm.
+
+![Video 8.](https://cdn.elifesciences.org/articles/68627/elife-68627-video8.mp4.jpg)
+
+**Video 8.:** Lattice light-sheet microscopy (LLSM) maximum intensity projections of RAW macrophage expressing mEmerald-Lifeact (gray) challenged with deformable acrylamide-co-acrylic acid-micro (DAAM)-particles (DAAMPs) (9 μm,1.4 kPa) (blue). Transfected cell attempts to internalize second DAAMP target leading to meal sharing event with second, untransfected cell. Dramatic biting of the DAAMP in two leads to the sudden forfeit of the phagocytic target. Merged images (left) with single DAAMP channel in gray (right) to highlight target deformations. Time stamp: min:s. Scale bar, 5 μm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/68627/elife-68627-video9.mp4.jpg)
+
+**Video 9.:** Lattice light-sheet microscopy (LLSM) maximum intensity projections of RAW macrophage expressing mEmerald-Lifeact (gray) ingesting deformable acrylamide-co-acrylic acid-micro (DAAM)-particles (DAAMPs) (9 μm,1.4 kPa) (blue). Contractile activity on the DAAMP leads to sudden ‘popping’ of target toward the cell to complete ingestion. Concentrated F-actin ring appears to lag behind this event. Merged images (left) with single DAAMP channel in gray (right) to highlight target displacement. Time stamp: min:s. Scale bar, 5 μm.
 
 ## Discussion
 
@@ -101,66 +213,330 @@ We show that FcR-mediated phagocytosis is hallmarked by a unique force balance, 
 
 We observed that actin teeth formed more frequently when cells were challenged with softer targets (Figure 4i), yet we also associated softer targets with more instances of failed internalization (Figure 6f). This calls into question the effectiveness of actin teeth, and, more generally, target constriction, in driving phagocytic internalization. Aside from a role in cup closure, target constriction could be important for creating a tight apposition between the cell and target, which is essential for receptor engagement (Bakalar et al., 2018). Surprisingly though, we noticed that overly strong target constriction leads to failure of attempted phagocytosis, expressed either as partial eating or a popping mechanism leading in forfeit of uptake. Although these mechanisms may lead to reduced uptake efficiency in isolated phagocyte-target interaction, we suspect they may be critical in more complex phagocytic encounters that occur in vivo, for example, when multiple macrophages approach a single target (Figure 6g), or attempt to engulf adherent and hard-to-reach targets (Colucci-Guyon et al., 2011; Davidson and Wood, 2020; Vorselen et al., 2020a). Altogether, our findings show that actin polymerization-dependent protrusive forces and myosin-II-dependent contractile forces contribute to target deformation and phagocytic internalization, and likely both participate in the mechanosensation required for phagocytic plasticity.
 
-## Code availability
+### Code availability
 
 The MATLAB code for analysing confocal images and deriving particle shape is publicly available on https://gitlab.com/dvorselen/DAAMparticle_Shape_Analysis; Vorselen, 2021. The Python code used for analysing tractions is provided on https://gitlab.com/micronano_public/ShElastic; Wang and Cai, 2021.
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>RAW264.7</td>
+      <td>ATCC</td>
+      <td>TIB-71RRID:CVCL_0493</td>
+      <td>Macrophage-like cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HL-60</td>
+      <td>ATCC</td>
+      <td>CCL-240RRID:CVCL_0002</td>
+      <td>Differentiated into neutrophil-like cells</td>
+    </tr>
+    <tr>
+      <td>Biological sample (mouse)</td>
+      <td>Primary bone marrow cells</td>
+      <td>Barger et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit-Alexa Fluor-405</td>
+      <td>Invitrogen</td>
+      <td>A31556RRID:AB_221605</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-mouse BSA</td>
+      <td>MP Bio</td>
+      <td>0865111RRID: AB_2335061</td>
+      <td>(3 mg/mL)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-myo1e (plasmid)</td>
+      <td>Krendel et al., 2007</td>
+      <td></td>
+      <td>Plasmid construct to transfect and examine myo1e localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-myo1f (plasmid)</td>
+      <td>Barger et al., 2019</td>
+      <td></td>
+      <td>Plasmid construct to transfect and examine myo1f localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mEmerald-Lifeact (plasmid)</td>
+      <td>Addgene (a gift from Michael Davidson)</td>
+      <td>#54148</td>
+      <td>Plasmid construct to transfect and monitor F-actin dynamics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-RLC (plasmid)</td>
+      <td></td>
+      <td></td>
+      <td>Plasmid construct to transfect and examine myosin-II localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUB-Halo-WASP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construct to transfect and examine WASP localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CMV-GFP-NMHCII-A (plasmid)</td>
+      <td>Addgene</td>
+      <td>#11347</td>
+      <td>Plasmid construct to transfect and examine myosin-II localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-ARP3 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construct to transfect and examine Arp2/3 complex localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mEmerald-cortactin (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construct to transfect and examine cortactin localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cofilin-EGFP(plasmid)</td>
+      <td>Addgene</td>
+      <td>#50859</td>
+      <td>Plasmid construct to transfect and examine cofilin localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mScarlet-i-paxillin(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construct to transfect and examine paxillin localization</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUB-mEmerald-vinculin(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construct to transfect and examine vinculin localization</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BSA</td>
+      <td>Sigma</td>
+      <td>A3059</td>
+      <td>20 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alexa Fluor-488 conjugated phalloidin</td>
+      <td>Life Technologies</td>
+      <td>A12379</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alexa Fluor-568 conjugated phalloidin</td>
+      <td>Life Technologies</td>
+      <td>A12380</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alexa Fluor-488 Cadaverine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A30679</td>
+      <td>0.2 mM final concentration</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alexa Fluor-647 Cadaverine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A30676</td>
+      <td>0.2 mM final concentration</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Neon Transfection System 100 µL Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>MPK10096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CK666</td>
+      <td>EMD Millipore</td>
+      <td>SML0006</td>
+      <td>150 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SMIFH2</td>
+      <td>EMD Millipore</td>
+      <td>S4826</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>EMD Millipore</td>
+      <td>B0560</td>
+      <td>15 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAAM-particles</td>
+      <td>Vorselen et al., 2020b</td>
+      <td></td>
+      <td>Can be obtained by contacting Julie A Theriot</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (ImageJ)</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python Software foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom MATLAB code</td>
+      <td>Other</td>
+      <td></td>
+      <td>https://gitlab.com/dvorselen/DAAMparticle_Shape_Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom Python code</td>
+      <td>Other</td>
+      <td></td>
+      <td>https://gitlab.com/micronano_public/ShElastic</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VECTASHIELD Antifade Mounting Medium</td>
+      <td>Vector Laboratories</td>
+      <td>H-1000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 The RAW 264.7 and HL-60 cell lines were obtained directly from the ATCC and used within passages 3–15. Cell identity was confirmed prior to each experiment using examination of cell morphology by phase-contrast morphology, and cells were regularly tested for mycoplasma contamination using DAPI staining. The cells used in this study do not appear on the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
-## Cell culture
+### Cell culture
 
 RAW 264.7 (ATCC; male murine cells) were cultured in DMEM, high glucose, containing 10% FBS and 1% antibiotic-antimycotic (Gibco) (cDMEM) at 37°C with 5% CO2. HL-60 cells (ATCC; CCL-240) were cultured in RPMI plus L-glutamine supplemented with 20% FBS and 1% antibiotic-antimycotic (cRPMI). HL-60 cells were differentiated into neutrophil-like cells in culture media containing 1.5% DMSO and used at day 5–6 post-differentiation and plated on 20 μg/mL fibronectin. For the collection of primary murine bone marrow progenitor cells, femurs and tibias of C57BL/6 mice were removed and flushed with cDMEM. Red blood cells were lysed using ACK buffer (0.15 M NH4Cl) and bone marrow progenitor cells were recovered by centrifugation (250× g, 5 min, 4°C), washed once with sterile PBS and plated on tissue culture dishes in cDMEM at 37°C with 5% CO2. For differentiation into BMDMs, non-adherent cells were moved to bacteriological Petri dishes the next day and differentiated over 1 week in cDMEM containing 20 ng/mL recombinant murine M-CSF (Biolegend, 576404). Generation of murine BMDCs has been previously described (Gosavi et al., 2018). In brief, bone marrow progenitor cells were collected in cRPMI and replated in cRPMI containing 20 ng/mL recombinant murine GM-CSF (Peprotech, 315–03) (DC media). On day 3, DC media was supplemented. On days 6 and 8, half of the culture supernatant and nonadherent cells were spun down and resuspended in cRMPI containing 5 ng/mL GM-CSF. DC maturation was assessed on day 10 by flow cytometry using PE-Cd11c (Biolegend, 117307) and FITC-MHC-II (Biolegend, 107605) staining. Cells were used on day 12. All procedures utilizing mice were performed according to animal protocols approved by the IACUC of SUNY Upstate Medical University and in compliance with all applicable ethical regulations.
 
-## Chemicals and drugs
+### Chemicals and drugs
 
 Blebbistatin, CK666, SMIFH2, and fibronectin were purchased from EMD Millipore. Alexa Fluor-488 and Alexa Fluor-568 conjugated phalloidin were purchased from Life Technologies. Janelia Fluor 549 (JF549) HaloTag Ligand was a generous gift from Luke Lavis.
 
-## Constructs and transfection
+### Constructs and transfection
 
 Human myo1e and myo1f constructs tagged with EGFP have been previously described (Barger et al., 2019). mEmerald-Lifeact was a gift from Michael Davidson (Addgene #54148). Cofilin-EGFP was a gift from James Bamburg (Addgene #50859). Chicken regulatory light chain (RLC) tagged with EGFP was a gift from Klaus Hahn. WASP tagged with myc was a gift from Dianne Cox, and was subcloned into a pUB-Halo-C1 vector. CMV-GFP-NMHCII-A was a gift from Robert Adelstein (Addgene #11347). ARP3-mCherry (Addgene #27682) and mCherry-cortactin (Addgene #27676) were gifts from Christien Merrifield that were subcloned into EGFP-C1 and mEmerald-C1, respectively. Chicken paxillin was a gift from Chris Turner, which was subcloned into mScarlet-i-C1. Chicken vinculin was a gift from Kenneth Yamada (Addgene #50513) and subcloned into pUB-mEmerald-C1. Immunohistochemical staining to determine localization of select podosome-related proteins in relation to the actin teeth did not produce good results, which may be due to the adhesive and porous nature of the IgG-functionalized DAAMPs. As an alternative, we transfected the RAW macrophages with fluorescently tagged proteins. All transfections were accomplished by electroporation (Neon) using the manufacturer’s instructions.
 
-## Microparticle synthesis
+### Microparticle synthesis
 
 DAAMPs were synthesized as previously described (Vorselen et al., 2020b). First, acrylamide mixtures containing 100 mg/mL acrylic components, 150 mM NaOH, 0.3% (v/v) tetramethylethylenediamine, 150 mM MOPS (prepared from MOPS sodium salt, pH 7.4) were prepared. Mass fraction of acrylic acid was 10% and crosslinker mass fraction was 0.65% or 2.3%, for 1.4 and 6.5 kPa particles, respectively. Prior to extrusion, the gel mixture was degassed for 15 min and then kept under nitrogen atmosphere until the extrusion process was complete. Tubular hydrophobic Shirasu porous glass (SPG) were sonicated under vacuum in n-heptane, mounted on an internal pressure micro kit extruder (SPG Technology Co) and immersed into the oil phase (~125 mL) consisting of hexanes (99%) and 3% (v/v) Span 80 (Fluka, 85548 or Sigma-Aldrich, S6760); 10 mL of gel mixture was extruded through SPG membranes under nitrogen pressure of ∼7 kPa, 15 kPa, for membranes with pore size 1.9 and 1.4 μm, respectively; 9 μm, 1.4 kPa particles were synthesized using 1.4 μm pore size membranes, whereas 9 μm, 6.5 kPa particles and 11 μm, 1.4 kPa particles were made using 1.9 μm pore size membranes. The oil phase was continuously stirred at 300 rpm and kept under nitrogen atmosphere. After completion of extrusion, the emulsion temperature was increased to 60°C and polymerization was induced by addition of ~225 mg 2,2’-azobisisobutyronitrile (1.5 mg/mL final concentration). The polymerization reaction was continued for 3 hr at 60°C and then at 40°C overnight. Polymerized particles were subsequently washed (5× in hexanes, 1× in ethanol), dried under nitrogen flow for ∼30 min, and resuspended in PBS (137 mM NaCl, 2.7 mM KCl, 8.0 mM Na2HPO4, 1.47 mM KH2PO4, pH 7.4) and stored at 4°C.
 
-## Microparticle functionalization
+### Microparticle functionalization
 
 DAAM-particles were functionalized as previously described (Vorselen et al., 2020b). In brief, DAAMPs were diluted to 5% (v/v) concentration and washed twice in activation buffer (100 mM MES, 200 mM NaCl, pH 6.0). They were then incubated for 15 min in activation buffer supplemented with 40 mg/mL 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide, 20 mg/mL N-hydroxysuccinimide (NHS), and 0.1% (v/v) Tween 20, while rotating. Afterward they were spun down (16,000× g, 2 min) and washed 4× in PBS, pH 8 (adjusted with NaOH) with 0.1% Tween 20. Immediately after the final wash, the particles were resuspended in PBS, pH 8 with 20 mg/mL BSA (Sigma, A3059) and incubated, rocking for 1 hr. Then cadaverine conjugate was added: either Alexa Fluor-488 Cadaverine (Thermo Fisher Scientific, A-30679) or Alexa Fluor-647 Cadaverine (Thermo Fisher Scientific, A-30676) to a final concentration of 0.2 mM. After 30 min, unreacted NHS groups were blocked with 100 mM TRIS and 100 mM ethanolamine (pH 9). DAAMPs were then spun down (16,000× g, 2 min) and washed 4× in PBS, pH 7.4 with 0.1% Tween 20. BSA-functionalized DAAMPs were resuspended in PBS, pH 7.4 without Tween. Finally, DAAMPs were washed 3× in sterile PBS and opsonized with 3 mg/mL rabbit anti-BSA antibody (MP Biomedicals, 0865111) for 1 hr at room temperature. DAAMPs were then washed 3× (16,000× g, 2 min) with PBS and resuspended in sterile PBS.
 
-## Phagocytosis assays
+### Phagocytosis assays
 
 DAAMPs were added to a total volume of 400 μL of serum-free DMEM, briefly sonicated in a bath sonicator, and applied to phagocytes in a 12-well plate. To synchronize phagocytosis and initiate DAAMP-phagocyte contact, the plate was spun at 300 × g for 3 min at 4°C. Cells were incubated at 37°C to initiate phagocytosis for a period of 3–5 min. Media was then removed and cells were fixed with 4% PFA/PBS for 15 min. Any unbound DAAMPs were then washed away with 3× washes of PBS and samples were stained with goat anti-rabbit-Alexa Fluor-405 antibodies (Invitrogen, A31556, 1:400) for 30 min to visualize exposed DAAM area. Cells were then washed with PBS (3× for 5 min each) and permeabilized with 0.1% Triton X-100/PBS for 3 min, then stained with Alexa Fluor-568 or -488 conjugated phalloidin (1:300). Coverslips were then mounted using VECTASHIELD Antifade Mounting Medium (Vector Laboratories, H-1000) and sealed with nail polish. For both live and fixed cell assays, cells were randomly selected for imaging, and all cells were considered, including those having already internalized a particle and those interacting with multiple particles. For drug treatments, cells were exposed to the indicated drug concentration for 30 min prior to the assay and DAAM particles were resuspended and exposed to cells in the same drugged media. For phagocytic efficiency assays, cells were incubated 15, 30, or 60 min before fixation. Similar staining of the exposed DAAM area (using Alexa Fluor-488-AffiniPure Fab Fragment Goat Anti-Rabbit IgG [Jackson Immunoresearch, 111-547-003, 1:1000]) was performed to differentiate fully internalized from adherent and partly internalized particles. Cells were imaged at 20× magnification and the phagocytic index, defined here as the number of internal particles divided by the number of all cell-associated particles, was determined.
 
-## Microscopy
+### Microscopy
 
 Confocal images were taken using a PerkinElmer UltraView VoX Spinning Disc Confocal system mounted on a Nikon Eclipse Ti-E microscope equipped with a Hamamatsu C9100-50 EMCCD camera, a 100× (1.4 NA) PlanApo objective, and controlled by Volocity software. Images for protein localization were taken using a Leica TCS SP8 laser scanning confocal microscope with an HC Pl APO 63×/1.4 NA oil CS2 objective at Upstate/Leica Center of Excellence for Advanced Light Microscopy. LLSM images were prone to image artifacts (Figure 1—figure supplement 1), and therefore only confocal image data was used for accurate force analysis.
 
 The LLSM (Chen et al., 2014) utilized was developed by E Betzig and operated/maintained in the Advanced Imaging Center at the Howard Hughes Medical Institute Janelia Research Campus (Ashburn, VA); 488, 560, or 642 nm diode lasers (MPB Communications) were operated between 40 and 60 mW initial power, with 20–50% acousto-optic tunable filter transmittance. The microscope was equipped with a Special Optics 0.65 NA/3.75 mm water dipping lens, excitation objective, and a Nikon CFI Apo LWD 25 × 1.1 NA water dipping collection objective, which used a 500 mm focal length tube lens. Live cells were imaged in a 37°C-heated, water-coupled bath in FluoroBrite medium (Thermo Scientific) with 0–5% FBS and Pen/Strep. Opsonized DAAMPs were added directly to the media bath prior to acquisition. Images were acquired with a Hamamatsu Orca Flash 4.0 V2 sCMOS cameras in custom-written LabView Software. Post-image deskewing and deconvolution was performed using HHMI Janelia custom software and 10 iterations of the Richardson-Lucy algorithm.
 
-## Microparticle 3D shape reconstruction
+### Microparticle 3D shape reconstruction
 
-Image analysis was performed with custom software in MATLAB, similar to as described previously (Vorselen et al., 2020b). Briefly, images were thresholded to estimate the volume and centroid of individual microparticles. Cubic interpolation was then used to calculate the intensity values along lines originating from the particle centroid and crossing the particle edge. Edge coordinates were then directly localized with super-resolution accuracy by fitting a Gaussian to the discrete derivative of these line profiles. This is significantly faster than using pre-processing of the image stacks with the 3D Sobel operator as used previously (Vorselen et al., 2020b). Particle properties, such as sphericity, relative elongation and surface curvature, as well as traction forces, are all sensitive to high-frequency noise, so before further calculations edge coordinates were smoothed. To this end, great circle distances (d) between edge coordinates with indices i and j were first calculated along a perfect sphere: d=arccos(sinθisinθj+cosθicosθjcos(φi−φj))R, where R is the equivalent radius of a sphere to the particle. Smoothing was then performed by averaging the radial component of the edge coordinates within the given window size (1 μm2), which is similar to a 2D moving average, but adapted for a spherical surface. A triangulation between edge coordinates was then generated, and the particle surface area S and volume V calculated. Sphericity was calculated as Ψ = (6π1/3V2/3S–1). For surface curvature calculations, first principal curvatures (k1 and k2) of the triangulated mesh were determined as described previously (Ben Shabat and Fischer, 2015; Rusinkiewicz, 2004). The mean curvature was calculated H = (k1 + k2)/2.
+Image analysis was performed with custom software in MATLAB, similar to as described previously (Vorselen et al., 2020b). Briefly, images were thresholded to estimate the volume and centroid of individual microparticles. Cubic interpolation was then used to calculate the intensity values along lines originating from the particle centroid and crossing the particle edge. Edge coordinates were then directly localized with super-resolution accuracy by fitting a Gaussian to the discrete derivative of these line profiles. This is significantly faster than using pre-processing of the image stacks with the 3D Sobel operator as used previously (Vorselen et al., 2020b). Particle properties, such as sphericity, relative elongation and surface curvature, as well as traction forces, are all sensitive to high-frequency noise, so before further calculations edge coordinates were smoothed. To this end, great circle distances (d) between edge coordinates with indices i and j were first calculated along a perfect sphere: $d=arccos(sin\theta_{i}sin\theta_{j}+cos\theta_{i}cos\theta_{j}cos(\phi_{i}−\phi_{j}))R,$ where R is the equivalent radius of a sphere to the particle. Smoothing was then performed by averaging the radial component of the edge coordinates within the given window size (1 μm2), which is similar to a 2D moving average, but adapted for a spherical surface. A triangulation between edge coordinates was then generated, and the particle surface area S and volume V calculated. Sphericity was calculated as Ψ = (6π1/3V2/3S–1). For surface curvature calculations, first principal curvatures (k1 and k2) of the triangulated mesh were determined as described previously (Ben Shabat and Fischer, 2015; Rusinkiewicz, 2004). The mean curvature was calculated H = (k1 + k2)/2.
 
-## Force analysis
+### Force analysis
 
-Force calculations were performed using the fast spherical harmonics method within custom Python package ShElastic as described in detail previously (Vorselen et al., 2020b; Wang et al., 2019). Briefly, to derive both normal and shear forces, we solve the inverse problem of inferring the traction forces T in an iterative process. We start with a trial displacement field u, and during optimization the observed particle shape is always matched exactly, while the following cost function is minimized:,(1)f(u)=Eel+αR2(T;∂Ωt)+βEpen(T)
+Force calculations were performed using the fast spherical harmonics method within custom Python package ShElastic as described in detail previously (Vorselen et al., 2020b; Wang et al., 2019). Briefly, to derive both normal and shear forces, we solve the inverse problem of inferring the traction forces T in an iterative process. We start with a trial displacement field $u$, and during optimization the observed particle shape is always matched exactly, while the following cost function is minimized:
 
-where RT;∂Ωt are the cellular forces exerted outside of the cell-target contact area, which is obtained from fluorescent actin and immunostaining (Figure 2—figure supplement 1), Eel is the elastic energy included in this minimization algorithm to penalize unphysical solutions were higher forces producing the same shape, and βEpen is an anti-aliasing term. The weighing parameter α for residual traction outside of the cell-target contact area and β for anti-aliasing were both 1. Similar to most TFM methods, polyacrylamide gels were assumed to be linearly elastic in the small strain regime (ε ≲ 0.1) in which force measurements were made. Tractions were calculated with spherical harmonic coefficients up to lmax = 20, and evaluated on a 21 × 41 grid.
+$$
+f(u)=E_{el}+\alphaR^{2}(T;∂Ω_{t})+\betaE_{pen}(T)
+$$
 
-## Fluorescent mapping on particle surface and determination of fraction engulfed
+where $RT;\partialΩ_{t}$ are the cellular forces exerted outside of the cell-target contact area, which is obtained from fluorescent actin and immunostaining (Figure 2—figure supplement 1), Eel is the elastic energy included in this minimization algorithm to penalize unphysical solutions were higher forces producing the same shape, and $\betaE_{pen}$ is an anti-aliasing term. The weighing parameter α for residual traction outside of the cell-target contact area and β for anti-aliasing were both 1. Similar to most TFM methods, polyacrylamide gels were assumed to be linearly elastic in the small strain regime (ε ≲ 0.1) in which force measurements were made. Tractions were calculated with spherical harmonic coefficients up to lmax = 20, and evaluated on a 21 × 41 grid.
+
+### Fluorescent mapping on particle surface and determination of fraction engulfed
 
 Mapping of fluorescent proteins, phalloidin, and immunostaining to the particle surface was done by determining of the fluorescent intensity along radial lines originating from the particle centroid and passing through each edge coordinate (Figure 1c). Linear interpolation was used to determine the intensity along each line, and the maximum value within a 1 μm distance of the edge coordinate was projected onto the surface. The calculation of the fraction engulfed, alignment of particles using the centroid of the contact area, and obtaining of a stress-free boundary for force calculations was done as described previously (Vorselen et al., 2020b), with the exception that here both the phalloidin stain and the immunostaining of the free particle surface were used to determine the mask (Figure 2—figure supplement 1). For LLSM data, where no staining of the free particle surface was present, alignment was done manually.
 
-## Indentation simulations
+### Indentation simulations
 
-Indentation simulations of teeth on a spherical target particle were based on the Hertz contact model (Johnson, 1985). Parameters of the model were estimated from experimental data: the undeformed radius of the target particle was set at Rtarget=3.7μm; the teeth are considered as rigid spherical indenters with radius Rteeth≈0.5μm; and 10 teeth were simulated for each target, which were equally distributed around the equator of the target sphere (Figure 4—figure supplement 2). The force F and the contact area radius a produced by indentation to absolute depth d for each individual indenter were then evaluated:F=43ER12d32,a=3FR4E,3
+Indentation simulations of teeth on a spherical target particle were based on the Hertz contact model (Johnson, 1985). Parameters of the model were estimated from experimental data: the undeformed radius of the target particle was set at $R_{target}=3.7\mum$; the teeth are considered as rigid spherical indenters with radius $R_{teeth}≈0.5\mum$; and 10 teeth were simulated for each target, which were equally distributed around the equator of the target sphere (Figure 4—figure supplement 2). The force $F$ and the contact area radius $a$ produced by indentation to absolute depth d for each individual indenter were then evaluated:
 
-where the effective Young’s modulus E and effective radius R are1E=1-νtooth2Etooth+1-νtarget2Etarget=34Etarget,1R=1Rteeth+1Rtarget
+$$
+F=\frac{4}{3}E^{}R^{}^{\frac{1}{2}}d^{\frac{3}{2}},a=\sqrt[3]{\frac{3FR^{}}{4E^{}},}
+$$
 
-given that the target particle is near incompressible (νtarget=0.5) and the teeth are rigid compared to the target (Etooth>> Etarget). Considering non-friction contact, the force distribution on the target sphere in the contact area of each tooth can be written as:pr=p01-ra2,p0=3F2πa2,r∈0,a,
+where the effective Young’s modulus $E^{}$ and effective radius $R^{}$ are
 
-where r is the radius to the initial contact point, and p0 is the maximum pressure on the contact plane. Given the resulting traction force map Tθ,φ as the boundary condition on the target sphere surface, we solved the elasticity problem, and obtained the displacement map uθ,φ using our ShElastic package (Figure 4—figure supplement 2; Wang et al., 2019). The θ,φ map on the spherical surface has the size of 61 × 121, which is defined by Gauss-Legendre quadrature (Wieczorek and Meschede, 2018). Simulations were carried out for a range of tooth radii Rteeth and absolute depth d to obtain the effective tooth depth and the average constriction along the equator (Figure 4—figure supplement 2), which are directly comparable with experimentally obtained data.
+$$
+\frac{1}{E^{}}=\frac{1-ν_{tooth}^{2}}{E_{tooth}}+\frac{1-ν_{target}^{2}}{E_{target}}=\frac{3}{4E_{target}},\frac{1}{R^{}}=\frac{1}{R_{teeth}}+\frac{1}{R_{target}}
+$$
+
+given that the target particle is near incompressible ($ν_{target}=0.5$) and the teeth are rigid compared to the target (Etooth>> Etarget). Considering non-friction contact, the force distribution on the target sphere in the contact area of each tooth can be written as:
+
+$$
+pr=p_{0}\sqrt{1-\frac{r}{a}^{2}},p_{0}=\frac{3F}{2\pia^{2}},r\in0,a,
+$$
+
+where $r$ is the radius to the initial contact point, and $p_{0}$ is the maximum pressure on the contact plane. Given the resulting traction force map $T\theta,\phi$ as the boundary condition on the target sphere surface, we solved the elasticity problem, and obtained the displacement map $u\theta,\phi$ using our ShElastic package (Figure 4—figure supplement 2; Wang et al., 2019). The $\theta,\phi$ map on the spherical surface has the size of 61 × 121, which is defined by Gauss-Legendre quadrature (Wieczorek and Meschede, 2018). Simulations were carried out for a range of tooth radii Rteeth and absolute depth $d$ to obtain the effective tooth depth and the average constriction along the equator (Figure 4—figure supplement 2), which are directly comparable with experimentally obtained data.

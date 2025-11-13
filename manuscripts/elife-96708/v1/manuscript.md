@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01qz7fr76 Department of Neuroscience, Brighton and Sussex Medical School, University of Sussex Brighton United Kingdom
+1. Department of Neuroscience, Brighton and Sussex Medical School, University of Sussex Brighton United Kingdom ([ROR:01qz7fr76](https://ror.org/01qz7fr76))
 
 † Corresponding author
 

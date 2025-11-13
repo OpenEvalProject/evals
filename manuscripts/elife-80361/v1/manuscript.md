@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05x2bcf33 Department of Biomedical Engineering, Carnegie Mellon University Pittsburgh United States
-2. https://ror.org/05x2bcf33 Center for the Neural Basis of Cognition, Carnegie Mellon University Pittsburgh United States
-3. https://ror.org/05x2bcf33 Neuroscience Institute, Carnegie Mellon University Pittsburgh United States
-4. https://ror.org/05x2bcf33 Department of Biological Sciences, Carnegie Mellon University Pittsburgh United States
+1. Department of Biomedical Engineering, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
+2. Center for the Neural Basis of Cognition, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
+3. Neuroscience Institute, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
+4. Department of Biological Sciences, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
 
 † Corresponding author
 
@@ -36,7 +36,96 @@ However, similar to olfactory cortex, an increase in the rate of representation 
 
 To assess the impact of 8 days of DE on tuning stability and neural discriminability, the activity of individual layer 2/3 excitatory V1 neurons in the binocular zone was imaged in response to randomized presentations of static grating stimuli using two-photon microscopy in head-fixed transgenic mice positioned atop a floating spherical treadmill, expressing the calcium indicator GCaMP6f driven by the EMX1 promoter. Our goal was to assess the stability of stimulus representation before and after DE. Therefore prior to DE, two baseline imaging sessions acquired 8±1 days apart, referred to here as Baseline 1 (B1) and Baseline 2 (B2) were recorded. The acquisition of two baseline sessions allowed the stability of tuning to grating stimuli of varying orientation and spatial frequency (s.f.) to be assessed before DE was initiated. A third imaging session was recorded immediately after DE and is referred to as the post-DE (pDE) session. A final forth imaging session was acquired after 8±1 days of LRx, referred to as the recovery (Rec) session. These four sessions were used to define three experimental conditions: control, DE, and LRx (Figure 1A and B). To facilitate interpretation of stability, the elapsed time in-between imaging sessions was held constant. A total of six mice was included in the study (see Table 1 for sex and age information). The fraction of visually responsive neurons, defined as those neurons whose activity was significantly modulated by stimulus feature (ANOVA, α=0.05; see Methods), is reported in Supplementary file 1A for the six mice in each of the imaging sessions. As expected, 30–50% of the segmented neurons were responsive to full-field static gratings (Ohki et al., 2005; Montijn et al., 2016; Ko et al., 2014; Jeon et al., 2018; de Vries et al., 2020). Locomotion and pupil diameter were monitored; trials in which locomotion or eye blinking was detected were removed from analysis.
 
-## Orientation preference of well-tuned neurons is stabilized by DE
+![Figure 1.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental design; three conditions were studied: control, DE, and light reintroduction (LRx), bounded by four imaging sessions, as indicated. Imaging sessions were acquired, while static gratings were presented to awake, head-fixed mice, 8±1 days apart. 12 orientations and 15 spatial frequencies, ranging from 0.02 to 0.3 cycles/°, were presented. (B) Example of longitudinal imaging across two sessions. (C) Example neuron tuning curve (left) and trial responses to 180 stimuli (right). Stimulus presentations were sorted post-hoc. (D) The change in four features, as indicated, is plotted for individual neurons and pooled across six animals. Orientation preference was significantly less stable in the control condition (Wilcoxon rank-sum test corrected for four multiple comparisons [z: 2.467], p=0.032; approximately 30% of the population is shifted leftward in the DE condition) in the control condition (n=249 neurons) compared to the DE condition (n=230 neurons). All neurons that were tracked and tuned to grating stimuli on both sessions were included in the analysis. The same set of neurons was used for a given condition but could differ across conditions to maximize the number of neurons tracked. Statistics for the other three parameters, left to right: Wilcoxon rank-sum test corrected for four multiple comparisons (z: 2.213, 1.478, and 0.5596, powere: 0.711, 0.317, and 0.255), p=0.0538, 0.186, and 0.576. (E) Response profiles of two example neurons (tuning curves, left, and trial responses cropped to 0.1 cycles/°, right) are shown for the Baseline 1 (B1), Baseline 2 (B2), and post-DE (pDE) imaging sessions. (F) Example of signal correlation matrices from one animal comparing the B1 and B2 imaging sessions, and the B2 and Post-DE imaging sessions. For visualization of correlation structure, neuron #1 was randomly selected, and the remaining neurons were sorted in descending order. The same sort-matrix was applied to both sessions. (G) Similarity of signal correlation matrices for a given animal (computed as the Pearson’s correlation coefficient between the two signal correlation matrices) was significantly higher in the DE condition compared to the control condition (Wilcoxon rank-sum test [ranksum: 23], p=0.009, n=6 animals). All tracked and tuned neurons were included, as in ‘D’. * p<0.05 and **p<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quartile values of the change in orientation preference for the individual animals shown in Figure 1D. All animals except mouse #5 had a distribution similar to the pooled distribution. Age at the time the animals entered the dark, which was immediately after the ‘Baseline 2’ (B2) imaging session was acquired, is shown in parentheses. Paired t-test values from left to right corrected for three multiple comparisons (df: 5, t: 0.897, 1.484, and 5.63): p=0.411, 0.297, and 0.007. (B) There was not a systematic difference in the quality of fits across the two conditions in which a difference was detected (Figure 1D). Tuning curve fits were not different between baseline 1 (B1, n=601 neurons) and B2 (n=532 neurons) nor between B1 and post-DE (pDE, n=419 neurons) imaging sessions (Wilcoxon rank-sum test corrected for two multiple comparisons [z: –2.0304 and –1.3794, powere: 0.972 and 0.999], p=0.0846 and 0.1678, respectively). (C) The difference in the stability of orientation preference between baseline and DE conditions was detected in the case that the worst-fit neurons were removed from analysis. Goodness of fit R2 values was ranked for all neurons that were determined to be significantly tuned (e.g. included in Figure 1D), and the neurons in the bottom 10% were removed from analysis. Orientation preference was significantly less stable in the baseline condition (Wilcoxon rank-sum test [z: 2.0748], p=0.038; n=266 and n=205 neurons for baseline and DE conditions, respectively). (D) To determine whether the quality of tuning fits was related to the stability of orientation preference, the change in orientation preference for all neurons included in Figure 1D was sorted and divided into three equal groups (n=159 neurons, ‘top,’ ‘middle,’ and ‘lower’), and the two corresponding R square values generated from the two-dimentional Gaussian fits for each neuron were averaged to give one value per neuron. The mean and SD of the R square values are plotted; the values are largely overlapping. p Values are calculated using the Wilcoxon rank-sum test (z: 1.54, –5.83) and are not corrected for multiple comparisons. Importantly, the analysis presented in ‘B’ indicates that the distribution of R square values was similar across conditions, thus this association is unlikely to contribute to the differences observed in Figure 1D. (E) The difference in the stability of signal correlation between baseline and DE conditions was detected when tuning was not included as a criterion. All neurons that were tracked and responsive were included. Similarity of signal correlation matrices for a given animal (computed as the Pearson’s correlation coefficient between the two signal correlation matrices) was significantly higher (Wilcoxon rank-sum test [ranksum: 24], p=0.015) in the DE condition compared to the control condition (n=6 animals). (F) All neurons that were tracked and tuned on sessions B1, B2, and pDE were analyzed by animal. The change in orientation preference was smaller in the DE condition compared to the control condition (paired t-test [df: 5, t:3.036], p=0.0289, n=6 animals). The number of neurons included, by animal: 28, 59, 45, 30, 27, and 30. (G) Same pool of neurons as in ‘E’. Left, neurons were sorted from maximum to minimum change in orientation preference across the two conditions, for all animals. Each row is a single neuron. The change in orientation preference was significantly lower in the DE condition compared to control (paired t-test [df: 218, t:2.751], p=0.00644, n=219 neurons from six animals). Note, qualitatively the fraction of neurons showing large changes in orientation preference was higher in the baseline condition compared to the DE condition. Right, the same data plotted as a cumulative distribution. *p<0.05 and ** <0.01.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Size and position of the binocular zone in V1 (purple) in the left hemisphere relative to the center of the chronic window (+). At the widest, the binocular zone is 737 microns (yellow line), calculated based on data from Wagor et al., 1980; Kalatsky and Stryker, 2003; Samonds et al., 2019. The distance of the window center from Bregma is indicated. Upper left, relative angle and scaled size of the imaging field of view (red). (B) Imaging field of view contains binocular neurons extending across the entire field. Neurons responsive to ipsilateral pathway stimulation (red) were identified in a pilot experiment (one animal). (C) Example ipsilateral-driven activity in response to full field drifting gratings (0.02 cycles/°, 1 Hz). Individual trials (gray) and the mean (black) are shown. Angle of the stimulus drift is indicated (arrows). Stimulus duration, 1.5 s, is indicated in blue. Calcium indicator was expressed using AAV virus (pAAV.Syn.GCaMP6f.WPRE.SV40) in this case. Scale bar: 100 microns.
+
+**Table 1.**
+ Animal information including age at each imaging session.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Animal ID</th>
+      <th rowspan="2">Animal label</th>
+      <th rowspan="2">Sex</th>
+      <th colspan="4">Age at time of imaging, days old(days in between sessions)</th>
+    </tr>
+    <tr>
+      <th>Baseline 1</th>
+      <th>Baseline 2</th>
+      <th>Post-DE</th>
+      <th>Recovery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2452_1R</td>
+      <td>Mouse 1</td>
+      <td>M</td>
+      <td>83</td>
+      <td>90 (7)</td>
+      <td>98 (8)</td>
+      <td>106 (8)</td>
+    </tr>
+    <tr>
+      <td>2452_1R1L</td>
+      <td>Mouse 2</td>
+      <td>M</td>
+      <td>83</td>
+      <td>90 (7)</td>
+      <td>98 (8)</td>
+      <td>106 (8)</td>
+    </tr>
+    <tr>
+      <td>2454_1R</td>
+      <td>Mouse 3</td>
+      <td>M</td>
+      <td>86</td>
+      <td>94 (8)</td>
+      <td>102 (8)</td>
+      <td>110 (8)</td>
+    </tr>
+    <tr>
+      <td>2472_1L</td>
+      <td>Mouse 4</td>
+      <td>F</td>
+      <td>59</td>
+      <td>66 (7)</td>
+      <td>74 (8)</td>
+      <td>82 (8)</td>
+    </tr>
+    <tr>
+      <td>2473_1R</td>
+      <td>Mouse 5</td>
+      <td>M</td>
+      <td>45</td>
+      <td>54 (9)</td>
+      <td>62 (8)</td>
+      <td>70 (8)</td>
+    </tr>
+    <tr>
+      <td>2474_1R1L</td>
+      <td>Mouse 6</td>
+      <td>F</td>
+      <td>56</td>
+      <td>65 (9)</td>
+      <td>73 (8)</td>
+      <td>81 (8)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Orientation preference of well-tuned neurons is stabilized by DE
 
 Tuning to visual stimuli was assessed by fitting deconvolved responses of visually responsive neurons to a two-dimensional Gaussian function, on a trial-by-trial basis (Jeon et al., 2018). This method takes into account trial-to-trial variability and ensures that the stimulus identities that elicit activity are more consistent across trials than expected by chance. The stimulus set consisted of 12 orientations and 15 spatial frequencies spanning a range of 0.02–0.30 cycles/°, resulting in a total of 180 stimuli (Figure 1C). Four parameters were computed from the two-dimensional fits: orientation preference and bandwidth, as well as s.f. preference and bandwidth. Stability of each of the four parameters was calculated by comparing the absolute change (Δ) during the control and DE experimental conditions. We took a conservative approach and only considered neurons that were tracked and tuned (i.e. well-fit by the two-dimensional Gaussian function, see Methods for details) on both of the imaging sessions used to calculate the change. DE induced a significant shift in the stability of orientation preference (Wilcoxon rank-sum p=0.032, Figure 1D and E). Analysis at the level of individual animals revealed that five out of the six mice reflected the pooled population of neurons (Figure 1—figure supplement 1A). The age at the time of the first imaging session ranged from p45 to p86. Notably, the atypical animal was the youngest, p45. Prior work establishes that some rejuvenating influences of DE do not occur until on or after p55 (Huang et al., 2010), therefore age might be a contributing factor as to why this animal was distinct.
 
@@ -52,13 +141,21 @@ Next, we examined whether LRx, which is known to potently induce gene expression
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig2-v1.jpg)
 
-**Figure 2.:** (A) Neither the change in orientation preference or bandwidth was different between dark exposure (DE) and LRx conditions (Wilcoxon rank-sum test corrected for two multiple comparisons [z:–0.3098 and 0.2599, powere: 0.110 and 0.100], p=0.795 and p=0.999, respectively; n=230 and n=216, respectively). All tracked and tuned neurons were included. (B) Example of signal correlation matrices from one animal comparing the post-DE (pDE) and recovery (Rec) imaging sessions. For visualization of correlation structure, neuron #1 was randomly selected, and the remaining neurons were sorted in descending order. The same sort-matrix was applied to both sessions. (C) Similarity of signal correlation matrices for a given animal (computed as the Pearson’s correlation coefficient) was not different across the DE condition compared to the Rec condition (Wilcoxon rank-sum test [ranksum: 35, power], p=0.589, n=6 animals). All tracked and tuned neurons were included.e: 0.999
+**Figure 2.:** (A) Neither the change in orientation preference or bandwidth was different between dark exposure (DE) and LRx conditions (Wilcoxon rank-sum test corrected for two multiple comparisons [z:–0.3098 and 0.2599, powere: 0.110 and 0.100], p=0.795 and p=0.999, respectively; n=230 and n=216, respectively). All tracked and tuned neurons were included. (B) Example of signal correlation matrices from one animal comparing the post-DE (pDE) and recovery (Rec) imaging sessions. For visualization of correlation structure, neuron #1 was randomly selected, and the remaining neurons were sorted in descending order. The same sort-matrix was applied to both sessions. (C) Similarity of signal correlation matrices for a given animal (computed as the Pearson’s correlation coefficient) was not different across the DE condition compared to the Rec condition (Wilcoxon rank-sum test [ranksum: 35, powere: 0.999], p=0.589, n=6 animals). All tracked and tuned neurons were included.
 
-## Stimulus representation rebounds within eight days of LRx
+### Stimulus representation rebounds within eight days of LRx
 
 Not all neurons are well tuned to grating stimuli, yet such neurons can contribute to visual processing (Levy et al., 2020). Therefore, we expanded our analysis to include all tracked neurons, regardless of their responsiveness or tuning characteristics to grating stimuli.
 
 We used a k-nearest neighbor (KNN) classifier to decode stimulus identity, as a measure of neural discriminability. First, we designed the classifiers such that they were trained separately for each session type to estimate the amount of stimulus information contained within the network. The identity of the neurons used was the same for all three sessions, referred to as the ‘tracked pool.’ Three imaging sessions were examined, the baseline session that immediately preceded DE (B2), the session that immediately followed DE (pDE), and the last session which occurred 8 days after LRx was initiated (Rec). We found that accuracy significantly decreased by 15 ± 3% ( ± SEM, across animals) on the pDE session compared to the B2 session (paired t-test, p=0.046) and recovered within 8 days (B2 versus Rec sessions, paired t-test p=0.16; Figure 3A). Visual inspection of the confusion matrices indicated that accuracy was degraded across all spatial frequencies (Figure 3B and C). To confirm and quantify this observation, two separate classifiers were constructed for all stimuli less than or equal to 0.1 cycles/° (low s.f.) and all stimuli greater than 0.1 cycles/° (high s.f.). In both cases, accuracy was significantly lower on the pDE imaging session (paired t-test, p=0.037 and p=0.028, respectively; Figure 3D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig3-v1.jpg)
+
+**Figure 3.:** (A) Classification accuracy was significantly lower during the post dark exposure (pDE) imaging session compared to the Baseline 2 imaging session (B2), and recovered within 8 days of light reintroduction (LRx; paired t-test corrected for two multiple comparisons [df: 5, t: 3.234], p=0.046 and 0.16; n=6 animals). All neurons that were tracked across the B2, pDE and Recovery (Rec) sessions were included. See Methods for number of neurons and trials. Chance was 0.0056. (B) Example of a confusion matrix from one animal during the B2 imaging session. (C) Cumulative sum of classifier accuracy, same mouse as in ‘B.’ The classification accuracies of the 12 orientations for a given spatial frequency were averaged to produce 15 data points. (D) Classifiers using only low (≤0.1 cycles/°, 60 stimuli) and high (>0.1 cycles/°, 120 stimuli) spatial frequency stimuli were decoded separately. In both cases, accuracy decreased during the pDE imaging session compared to the B2 session (paired t-test corrected for two multiple comparisons [df: 5, t: 3.434 and 3.687], p=0.037 and p=0.028, respectively), and recovered within 8 days of LRx (paired t-test corrected for two multiple comparisons [df: 5, t: 0.417 and –1.286, power: 0.063 and 0.188], p=0.69 and p=0.25, respectively). Chance was 0.0167 and 0.0083, respectively. (E) Fixed classifiers were used to quantify representational drift (n=6 animals, the mean ± SEM). The session used to train the classifier is indicated, as well as the specific sessions tested and the condition label. Note, the rate of drift between the Rec and B2 imaging sessions was comparable to ±1 STD of the baseline drift (gray). In contrast, the rate of drift was significantly higher during the DE and LRx conditions compared to the control condition (paired t-test, corrected for three multiple comparisons, values left to right [df: 5,t: 4.056, 1.086, and 3.280], p=0.0293, 0.327, and 0.0329). All neurons that were tracked for a given tested session pair were included. (F) The median reliability of responses to the preferred stimulus for a given animal was significantly lower during the pDE imaging session compared to the B2 imaging session (paired t-test corrected for two multiple comparisons [df: 5, t: 5.474 and –0.2081], p=0.006 and 0.843); n=6 animals. All tracked and tuned neurons for a given session were included. (G) Reliability of individual neuron responses to the preferred stimulus, pooled across animals, was significantly reduced during the pDE imaging session and recovered within 8 days of light reintroduction (Wilcoxon rank-sum corrected for two multiple comparisons [z: 4.670 and –0.9493], p=6.0E-06 and 0.343). All tuned neurons were included, n=532 B2, n=419 pDE, and n=450 Rec. (H) Decoding accuracy was not correlated with pupil radius (Pearson’s correlation [r: –0.013], p=0.951). All imaging sessions from six animals were included. Least-squared line indicated. Neuron number (36) was set to the minimum number of tuned neurons among all animals and sessions; trial number (25) was set to the minimum number of trials among all animals and sessions. * p<0.05 and **<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80361/elife-80361-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The within-neuron change in reliability was lowest in the dark exposure (DE) condition (Wilcoxon rank-sum corrected for three multiple comparisons, control versus DE, and DE versus light reintroduction [LRx] [z: 10.832 and 5.4766], p=7.286E-27 and p=6.502E-8, n=249 neurons control, n=230 neurons DE, and n=117 neurons LRx). All neurons that were tracked and tuned for both of the imaging sessions comprising the condition were included. Furthermore, the change in reliability was skewed in the positive direction in the control and LRx conditions and negatively skewed in the DE condition (single-sample KS-test corrected for three multiple comparisons, control, DE, and LRx values: [k: 0.3638, 0.4242, and0.2350], p=2.993E-29, 2.138E-36, and 3.705E-6). (B) In the control and DE conditions, reliability was significantly correlated across sessions (Pearson’s correlation [r: 0.598, 0.7430, and –0.0901], p=1.53e-25, 1.25e-41, and 0.334, n=249 neurons control, n=230 neurons DE, and n=117 neurons LRx). This correlation was not present in the LRx condition, as might be expected given reliability was higher in the recovery imaging session compared to the post-DE (pDE) imaging session. The least-squares fit (dashed red) and unity line (blue) are shown. (C) Neurons were categorized as either have high (≥0.5) or low (<0.5) reliability in the first imaging session for a given condition (control, DE, or LRx) and then scored as either tuned or untuned in the second session. The fraction of previously tuned neurons that became untuned was significantly lower in the high reliability category for the control and DE condition (two-sample proportions Z-test corrected for three multiple comparisons [z: 2.907, 7.336, and 0.8224], p=0.0054, 6.6015e-13, and 0.4108, number of tracked neurons in each category that were tuned on the first session indicated in white). (D) Basal activity during gray screen presentation is not higher in the imaging session immediately following DE (t-test [df: 949, t: –1.4068, power: 0.311], p=0.1598, n=532 neurons BS2, n=419 neurons pDE). (E) Considering the three-session tracked pool of neurons, on average, there was a 11% decrease in the fraction of tuned neurons across the six mice on the pDE session compared to the BS2 session (paired t-test corrected for two multiple comparisons, [df: 5, t: 3.600 and –2.235], p=0.0311 and p=0.6867). (F) Neurons tracked for the three sessions were pooled and scored as either tuned or untuned. Each row is a single tracked neuron. The red box highlights the neurons that lost tuning on the pDE imaging session. Note, roughly half of those neurons re-gained tuning on the recovery imaging session. Additionally, some neurons that were not previously tuned became tuned (plotted immediately below the red box). *p<0.05 and ** p<0.01.
 
 A possible explanation for the decrease in decoding accuracy is that the response reliability (Sadeh and Clopath, 2022) of individual neurons or the number of tuned neurons decreased in the pDE session. Either scenario would be consistent with the observations reported in Figure 1D. To determine whether these factors contributed to the decrease in decoding accuracy, first the trial-to-trial response reliability of tuned neurons was compared between the B2 and pDE sessions. Within the tracked pool, a decrease in response reliability for the preferred stimulus was observed. The median reliability of tuned and tracked neurons for individual mice was significantly lower in the pDE session compared to the B2 session (paired-t test, p=6.0E-3; Figure 3F). Analysis of within-neuron comparisons corroborated this interpretation and in addition demonstrated that in control conditions, reliability on the initial imaging sessions was predictive of reliability on the subsequent session (Figure 3—figure supplement 1A, B). Furthermore, low reliability was associated with loss of tuning on the subsequent session (Figure 3—figure supplement 1C).
 
@@ -74,7 +171,7 @@ Notably, there was not a difference in the change in decoding accuracy across th
 
 In summary, we found that in the adult, stimulus encoding is robust to transient deprivation and is capable of recovering not only in terms of the estimated amount of stimulus information contained in V1 but also that the stimulus representation rebounds to its original form. LRx, despite initiating a cascade of changes in gene expression (Torrado Pacheco et al., 2019; Mardinly et al., 2016), did not persistently disturb stimulus encoding. Thus, using DE as a treatment for amblyopia is not expected to have a negative impact on previously established visual function. Furthermore, our results establish that exposure to naturalistic statistics in the home-cage environment improves neural discriminability well into adulthood. It will be of interest in future studies to determine whether stimulus discrimination reaches a plateau and requires continuous experience to maintain the plateau or continues to improve past the classic critical period for ocular dominance plasticity.
 
-## Ideas and speculation
+### Ideas and speculation
 
 Our DE experiments revealed that vision has a destabilizing influence on the persistence of orientation preference for approximately 30% of the population of imaged neurons. Similarly, the persistence of pairwise signal correlation among V1 neurons was lower in control conditions compared to the DE condition. Thus, it is possible that under normal natural viewing conditions in the adult, orientation preference is subjected to on-going Hebbian plasticity which has an observable net destabilizing effect on the preference of individual neurons in V1; these changes potentially occupy the null coding space such that they do not impact downstream readout in the visual hierarchy but are sufficient and necessary to maintain retinotopic and matched organization of receptive field structure. In this scenario, DE-induced stabilization would not be a direct consequence of mechanisms associated with deprivation-induced homeostasis (Bridi et al., 2018; Turrigiano, 2008) rather the removal of a disrupting influence.
 
@@ -84,7 +181,7 @@ Notably, the development of natural scene processing is protracted relative to g
 
 ## Methods
 
-## Animal preparation and timeline of imaging
+### Animal preparation and timeline of imaging
 
 All experimental procedures were compliant with the guidelines established by the Institutional Animal Care and Use Committee of Carnegie Mellon University and the National Institutes of Health, and all experimental protocols were approved by the Institutional Animal Care and Use Committee of Carnegie Mellon University (protocol # PROTO201600014). To express the calcium indicator GCaMP6f selectively in excitatory neurons, homozygous Emx1cre mice (Jackson Laboratories, stock number 005628) were crossed with homozygous Ai93/heterozygous Camk2a-tTA mice (Jackson Laboratories, stock number 024108). Experimental mice were heterozygous for all three alleles. Mice were housed in groups of 2–3 per cage, in a 12 hr light/12 hr dark cycle; all imaging sessions started at Zeitgeber time (ZT) 14.5±1, where ZT0 is lights on, and ZT12 is lights off. The same enrichment materials were provided in all cages including a Plexiglas hut and nesting material. Mice were housed in the barrier section of the animal facility until the time of surgery, luminance in this room was 240 lux. After surgery mice were maintained in a different location that also had a luminance of 240 lux. During animal set up and tracking prior to recording luminance was 60 lux. See Table 1 for information on animal sex and genotype. Males and females were randomly selected. None of the mice used in this study exhibited aberrant, interictal events (Kowalewski et al., 2021; Steinmetz et al., 2017) in V1 or adjacent regions.
 
@@ -92,47 +189,67 @@ Mice (29–31 days old) were anesthetized with isoflurane (3% induction, 1–2% 
 
 Prior to the first baseline recording session in the experimental mice, the location of binocular neurons in V1 was identified using the following search strategy: neural activity in response to ipsilateral pathway stimulation was visualized at low magnification using a field of view sized approximately 900×900 microns and moved until the location of the highest-intensity ipsilateral-driven activity was identified. This location was centered in the imaging field of view and the same location used in subsequent imaging sessions. The search area was restricted to an area 2.7 mm posterior of Bregma, thus ensuring extra striate regions anterior to V1 were avoided. Note, although the lateral medial area adjacent to the binocular zone contains binocular neurons (Wagor et al., 1980), the responses are weaker compared to V1 (Kalatsky and Stryker, 2003). After the initial screening described above, four imaging sessions were acquired, each session was separated by 8±1 days (see Table 1 for the precise age of each animal on each imaging session). Animals were dark-exposed for 8 days. On the pDE imaging session, animals were removed from the dark and exposed to low-light conditions (60 lux) for 30–40 min during the animal mounting and neuron tracking procedure, prior to data collection.
 
-## Data acquisition, neuron segmentation, and neuron tracking
+### Data acquisition, neuron segmentation, and neuron tracking
 
 Two-photon calcium imaging was performed in awake head-fixed mice mounted atop a floating spherical treadmill using a resonant scanning microscope (Neurolabware) outfitted with a 16× Nikon objective (0.80 NA) and 8 kHz resonant scanning mirror. Treadmill motion was recorded using a camera (Dalsa Genie M640-1/3) for off-line analysis of locomotion (Jeon et al., 2018), and eye blinks were captured using a second camera (Dalsa Genie M1280; Kowalewski et al., 2021). A laser excitation wavelength of 920 nm was used (Coherent, Inc); green emissions were filtered (Semrock 510/84–50), amplified (Edmund Optics 59–179), and detected with a photomultiplier tube (PMT; Hamamatsu H1 0770B-40). The imaged field of view was 620×504 microns, pixel dimensions were 0.85×0.98 µm, and the acquisition rate was 15.5 Hz. The acquired image time series were motion-corrected by computing the horizontal and vertical translation of each frame using phase correlation (Kowalewski et al., 2021) and individual neurons segmented using the Matlab version of Suite2p toolbox (Pachitariu et al., 2017), as described in Kowalewski et al., 2021.
 
 To identify neurons that were tracked across imaging sessions, we registered repeat imaging sessions using the mean intensity image of each session. The mean intensity image for a session was computed by averaging the intensity of each pixel in the aligned calcium image series across time for the entire imaging session (roughly 50,000 frames). Then, the mean intensity images of the two sessions were registered using an affine transform with one-plus-one evolutionary optimizer. Once the sessions were registered, the percentage of pixel overlap between the neurons from two sessions was computed. Neurons were accepted to be the same neuron across sessions if the percentage of overlapping pixels across the two sessions was larger than 75%. On average, there were 160 pixels in a given neuron.
 
-## Visual stimulation
+### Visual stimulation
 
 Static sinusoidal grating stimuli were generated using psychophysics toolbox (http://psychtoolbox.org/) in Matlab (Mathworks, Boston, MA, USA). Stimuli were presented at 100% contrast; the luminance output of the screen was 17 cd/m2. The stimulus was presented on a screen positioned 25 cm away from the right eye angled at 50° with respect to the midline of the animal. The size of the screen was 64×40 cm, thereby subtending 142×96° of visual angle. The s.f. range of the stimulus set was 0.02 cycles/° to 0.3 cycles/° at 0.02 cycles/° interval. The orientations ranged from 0 to 180° at 15° spacing interval, yielding a total of 180 different sinusoidal gratings with 12 different orientations and 15 different spatial frequencies. Each grating was presented for 250 ms consecutively in a random order without interleaved gray screen; this was repeated four times, and data were saved to disk. This sequence was repeated a minimum of nine times, resulting in a total of at least 36 trials for a given stimulus. Taking into account trials removed due to locomotion or pupil tracking (see Quantification of visual responses), a minimum of 25 trials was used in analysis. 2 s of isolumant gray screen was presented at the onset of each sequence.
 
-## Quantification of visual responses
+### Quantification of visual responses
 
 Reverse correlation was used to determine the response window of a given stimulus (Ringach et al., 1997). The peak in the stimulus-averaged events was observed 194–320 ms after the stimulus was presented on the screen. Therefore, for each stimulus, the corresponding event activity was computed by averaging the number of events between 194 ms and 320 ms window. We defined this period as the response window for a given stimulus.
 
 A neuron was defined as responsive to visual stimuli when the number of events following a presentation of a visual stimulus was modulated by the stimuli presented. To test for modulation, we performed a one-way ANOVA(α=0.01) on the observed events during the response window using stimuli as the factor for each neuron.
 
-GCaMP6f expressed in neurons has a longer decay than the presentation rate of our stimuli (Chen et al., 2013). Therefore, we used deconvolution to remove the effects of decay in calcium fluorescence in quantifying responses of each neuron to our visual stimuli as in Jeon et al., 2018. The amplitude of calcium transients was expressed in units of inferred events. For each segment n, inferred events sn were estimated from fluorescence using the following model:fn=sn*k+ βnpn+bn
+GCaMP6f expressed in neurons has a longer decay than the presentation rate of our stimuli (Chen et al., 2013). Therefore, we used deconvolution to remove the effects of decay in calcium fluorescence in quantifying responses of each neuron to our visual stimuli as in Jeon et al., 2018. The amplitude of calcium transients was expressed in units of inferred events. For each segment n, inferred events $s_{n}$ were estimated from fluorescence using the following model:
 
-where k is the temporal kernel, and bn is the baseline fluorescence. Neuropil fluorescence, which is a contamination of the fluorescence signal fn from out of focus cell bodies and nearby axons and dendrites, is modeled by pn, the time course of the neuropil contamination, and, βn the scaling coefficients * denotes convolution. Using this model, sn, k, βn, and bn were estimated by a matching pursuit algorithm with L0 constraint, in which spikes were iteratively added and refined until the threshold determined by the variance of the signal was met.
+$$
+f_{n}=s_{n}*k+ \beta_{n}p_{n}+b_{n}
+$$
+
+where k is the temporal kernel, and $b_{n}$ is the baseline fluorescence. Neuropil fluorescence, which is a contamination of the fluorescence signal $f_{n}$ from out of focus cell bodies and nearby axons and dendrites, is modeled by $p_{n}$, the time course of the neuropil contamination, and, $\beta_{n}$ the scaling coefficients * denotes convolution. Using this model, $s_{n}$, k, $\beta_{n}$, and $b_{n}$ were estimated by a matching pursuit algorithm with L0 constraint, in which spikes were iteratively added and refined until the threshold determined by the variance of the signal was met.
 
 Trials containing locomotion or eye blinks were removed. Pupil location was estimated from eye-tracking videos using a circular Hough transform algorithm; the algorithm failed to find the pupil on frames during which the mice were blinking. These frames were marked as eye blink frames and removed from further analysis. Trials with locomotion were identified as in Jeon et al., 2018. Briefly, after applying a threshold on the luminance intensity of the treadmill motion images, phase correlation was computed between consecutive frames to estimate the translation between the frames. To define a motion threshold, the data were smoothed using a 1 s sliding window. Any continuous non-zero movement periods during which the animal’s instantaneous running speed exceeded 10 cm/s threshold for at least one frame were marked as running epochs.
 
-## Estimation of preferred stimulus and tuning bandwidth
+#### Estimation of preferred stimulus and tuning bandwidth
 
-Orientation and s.f. preference were determined using a two-dimensional Gaussian model, fit to single trial responses. For neurons that were responsive to grating stimuli, a two-dimensional Gaussian model was fit using non-linear least-squared regression such that the number of events R as a function of the orientation θ and the s.f. φ of the stimulus wasR(θ,φ)=A2πσθσφ1−ρ2e(−12(1−ρ)2[(θ−μθ)2σθ2 + (φ−μφ)2σφ2 − 2ρ(θ−μθ)(φ−μφ)σθσφ])+B
+Orientation and s.f. preference were determined using a two-dimensional Gaussian model, fit to single trial responses. For neurons that were responsive to grating stimuli, a two-dimensional Gaussian model was fit using non-linear least-squared regression such that the number of events R as a function of the orientation θ and the s.f. φ of the stimulus was
 
-where μθ was the preferred orientation, and μφ was the preferred s.f. of the stimulus, and the σθ and σφ described the widths of respective tuning. The covariance of responses for orientation and s.f. was captured by the correlation term ρ. A was a parameter accounting for the amplitude of the responses in number of events, while B was the baseline event activity of the cell. For fitting, the lower and the upper bound of allowed values for μφ were set by the range of the presented stimuli, which was 0.02–0.30 cycles/°. The lower bound for σθ and σφ was set at 1° and 0.001 cycles/°, respectively, to prevent fits with zero or negative widths. Prior to fitting, the preferred orientation was initialized by estimating the preferred orientation by averaging the response, R across all spatial frequencies for a given stimulus orientation, θ and calculating half the complex phase of the value (Niell and Stryker, 2008; Kuhlman et al., 2011).S=∑Rθe2iθ∑R(θ)
+$$
+R(\theta,\phi)=\frac{A}{2\pi\sigma_{\theta}\sigma_{\phi}\sqrt{1−ρ^{2}}}e^{(−\frac{1}{2(1−ρ)^{2}}[\frac{(\theta−\mu_{\theta})^{2}}{\sigma_{\theta}^{2}} + \frac{(\phi−\mu_{\phi})^{2}}{\sigma_{\phi}^{2}} − \frac{2ρ(\theta−\mu_{\theta})(\phi−\mu_{\phi})}{\sigma_{\theta}\sigma_{\phi}}])}+B
+$$
+
+where μθ was the preferred orientation, and μφ was the preferred s.f. of the stimulus, and the σθ and σφ described the widths of respective tuning. The covariance of responses for orientation and s.f. was captured by the correlation term ρ. A was a parameter accounting for the amplitude of the responses in number of events, while B was the baseline event activity of the cell. For fitting, the lower and the upper bound of allowed values for μφ were set by the range of the presented stimuli, which was 0.02–0.30 cycles/°. The lower bound for σθ and σφ was set at 1° and 0.001 cycles/°, respectively, to prevent fits with zero or negative widths. Prior to fitting, the preferred orientation was initialized by estimating the preferred orientation by averaging the response, R across all spatial frequencies for a given stimulus orientation, θ and calculating half the complex phase of the value (Niell and Stryker, 2008; Kuhlman et al., 2011).
+
+$$
+S=\frac{\sumR\thetae^{2i\theta}}{\sumR(\theta)}
+$$
 
 The preferred s.f. was initialized by selecting the s.f. that generated the maximal significant response at the estimated preferred orientation. For the model above, the goodness of fit (R2) was used to identify neurons with significant tuning. The chance distribution of R2 values was calculated from fitting the above model with permuted stimulus labels on individual trials 1000 times for each neuron. Neurons whose R2 exceeded the 95th percentile of the chance R2 distribution were accepted as significant and referred to as well tuned to grating stimuli. Fitting on individual trials ensures that only neurons with responses that are similar across trials are considered well tuned. The tuning curves of all such neurons are provided in an associated metadata file, ‘Source data 1.’ Note, the goodness of fit R2 values is calculated using individual trials, as such are lower than what is typically observed for fits using trial-averaged responses. The associated metadata demonstrates that the fits are an accurate representation of the data.
 
-The bandwidths of the Gaussian tuning were described using half-width at half-maximum (HWHM). The HWHM bandwidths for both orientation and s.f. were calculated asBW=2*ln⁡(2)*σ
+The bandwidths of the Gaussian tuning were described using half-width at half-maximum (HWHM). The HWHM bandwidths for both orientation and s.f. were calculated as
 
-where σ was the width parameter of the Gaussian fit.
+$$
+BW=\sqrt{2*ln⁡(2)}*\sigma
+$$
 
-## Computation of signal correlation (Figure 1F, G; Figure 2B)
+where $\sigma$ was the width parameter of the Gaussian fit.
 
-Signal correlation ρsig between a pair of neurons is defined as Pearson’s correlation between the average responses to stimuli (Averbeck et al., 2006). Therefore, we computed pairwise signal correlation between neuron i and neuron j asρi,jsig=corr(R¯i,Rj¯)
+#### Computation of signal correlation (Figure 1F, G; Figure 2B)
 
-where R- is a vector of average response in number of spikes to 180 sinusoidal gratings for the respective neuron.
+Signal correlation ρsig between a pair of neurons is defined as Pearson’s correlation between the average responses to stimuli (Averbeck et al., 2006). Therefore, we computed pairwise signal correlation between neuron i and neuron j as
 
-## Stimulus classification (Figure 3A-E)
+$$
+ρ_{i,j}^{sig}=corr(R¯_{i},R_{j}¯)
+$$
+
+where $R-$ is a vector of average response in number of spikes to 180 sinusoidal gratings for the respective neuron.
+
+#### Stimulus classification (Figure 3A-E)
 
 KNN classifiers were used to decode the presented stimuli from vectors of single trial population responses (de Vries et al., 2020; Kowalewski et al., 2021). In our case, the KNN classifier estimated the stimulus identity for a given response vector by identifying the most frequent stimulus identity of its k closest response vectors. To identify the nearest neighbors for a given response vector, we computed the Euclidean distance to the other response vectors. For each session, data were divided so that a single set of response vectors consisted of one trial of each stimulus. This resulted in the number of sets being equal to the number of trials that each stimulus was shown. When the number of trials available was larger than the minimum number of trials, trials were randomly subsampled from the available trials. During decoding, the possible neighbors for a test response vector consisted of all response vectors not belonging to the test set. This ensures an unbiased representation of possible nearest neighbors across stimuli. This process was repeated across each response vector and each set. We reported the performance of this decoding process as accuracy across all response vector tested. Previously, we found that a value of k=4 resulted in the best average rank across mice (Jeon et al., 2021), therefore we fixed the value of k to 4. Chance performance of the classifiers was 1 divided by the number of stimuli classified. The number of trials and neurons was matched to the minimum number of available trials and neurons across the three sessions, B2, pDE, and Rec. In the case, more trials or neurons were available; neurons and trials were randomly subsampled.
 
@@ -140,28 +257,40 @@ To quantify representation drift, we modified the KNN classifier described above
 
 The number of neurons and trials used were as follows: Figure 3A and D, for mouse # 1–6, the number of trials was 42, 31, 33, 27, 26, and 37 for each of the imaging sessions, and the number of neurons was 114, 98, 75, 64, 55, and 96, respectively; Figure 3E, the number of trials ranged between 25 and 44 and the number of neurons ranged between 68 and 167, depending on the animal and condition. Figure 3H, the number of trials was 25, and the number of neurons was 36.
 
-## Reliability across trials (Figure 3F, G)
+#### Reliability across trials (Figure 3F, G)
 
 Reliability was computed as the proportion of trials in which the response amplitude was at least 2 SDs above baseline activity, where baseline activity was defined as the activity during presentation of the isolumant gray screen.
 
-## Two-sample proportions Z-test (Figure 1—figure supplement 2C)
+### Two-sample proportions Z-test (Figure 1—figure supplement 2C)
 
-We computed the Z-statistic for the hypothesis that the fraction of untuned neurons came from two separate binomial distributions against the null hypothesis that they came from the same distribution. The Z-statistic for the difference in performance between the first session and the ith session was computed by the following equation.Z=p1-piSE
+We computed the Z-statistic for the hypothesis that the fraction of untuned neurons came from two separate binomial distributions against the null hypothesis that they came from the same distribution. The Z-statistic for the difference in performance between the first session and the ith session was computed by the following equation.
 
-SE was the standard error of the sampling distribution difference between the two performances and p1 and pi were the performance of the first session and the ith session, respectively. SE of the first session and the ith session was computed by the equation below,SE=p*1-p*(1n1+1ni)
+$$
+Z=\frac{p_{1}-p_{i}}{SE}
+$$
 
-where p is the pooled performance between session 1 and session i, weighted by the number of trials, n, of the respective session.p=p1*n1+pi*nin1+ni
+SE was the standard error of the sampling distribution difference between the two performances and p1 and pi were the performance of the first session and the ith session, respectively. SE of the first session and the ith session was computed by the equation below,
+
+$$
+SE=\sqrt{p*1-p*(\frac{1}{n_{1}}+\frac{1}{n_{i}})}
+$$
+
+where p is the pooled performance between session 1 and session i, weighted by the number of trials, n, of the respective session.
+
+$$
+p=\frac{p_{1}*n_{1}+p_{i}*n_{i}}{n_{1}+n_{i}}
+$$
 
 p Values were computed from the Z-statistic.
 
-## Statistics
+### Statistics
 
 Error is reported as SEM, unless noted. In the case data were not normally distributed, non-parametric tests were used. Alpha was set to 0.05 unless noted. In the case p values were corrected for multiple comparisons, the number of comparisons is noted in the figure legend; correction was computed using the false discovery rate Benjamini-Hochberg procedure. Degrees of freedom (df) and the test statistic are reported in italics in the figure legends. In the case of small sample sizes when using the Wilcoxon rank-sum test, the rank-sum statistic is reported when the approximate method is not used. The fraction of neurons (normalized to the total number of neurons segmented with a given imaging sessions) that were responsive is reported in Supplementary file 1A. Furthermore, the fraction of neurons that were included in each figure panel is listed in Supplementary file 1B-D; in the case the SEM was non-overlapping between the first imaging session and a given imaging sessions, the SD is included and paired t-test p values, adjusted for multiple comparisons as appropriate, are indicated. Prior to initiating the study, based on prior work (Jeon et al., 2021), it was estimated that a sample size of n=6 animals would be sufficient to detect differences if present. Reported power was computed using IBM SPSS in the case of t-tests, and a power estimate (powere) was computed in the case of Wilcoxon rank-sum tests using the Matlab function ‘sampsizepwr’ with alpha set to 0.01.
 
-## Materials availability statement
+### Materials availability statement
 
 No new biological materials were created in this study.
 
-## Code availability
+### Code availability
 
 The code used for analysis is available on GitHub (https://github.com/bjjeon5111/BCI_V1, copy archived at swh:1:rev:e026800170840d001bd27632db2a2008798653a4; Jeon, 2022).

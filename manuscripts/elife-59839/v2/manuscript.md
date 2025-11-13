@@ -39,7 +39,7 @@ The question of how VA drugs modulate TREK1 is the key issue addressed in this s
 
 ## Results
 
-## Azi-isoflurane photolabeling of TREK1 identifies VA-binding sites
+### Azi-isoflurane photolabeling of TREK1 identifies VA-binding sites
 
 In order to identify TREK1 VA-binding sites, we utilized a previously validated photoreactive analog of the clinically important VA isoflurane (Eckenhoff et al., 2010). This biochemical adduct, azi-isoflurane, features a diazirine moiety capable of generating a highly reactive and chemically non-selective carbene adduct when irradiated with UV light. Azi-isoflurane has been shown to retain the anesthetic effects of isoflurane in animals, and we first sought to ensure that the chemical modifications present in the azi-isoflurane compound would not alter the effect of this drug on the TREK1 channel. Two electrode voltage clamp studies of Xenopus laevis oocytes expressing mouse TREK1 (mTREK1) showed that application of azi-isoflurane causes a dose-dependent potentiation of mTREK1, with an EC50 of 735 ± 192 µM (Figure 1). We found no statistically significant difference between the effect of saturating doses of isoflurane (Patel et al., 1999) or azi-isoflurane on mTREK1 channel function (Figure 1C).
 
@@ -51,11 +51,35 @@ For photolabeling studies, recombinantly expressed, purified and liposome recons
 
 drTREK1 was reacted with 30 µM azi-isoflurane, a concentration well below the EC50 of azi-isoflurane for mTREK1, chosen to minimize non-specific modification. Following photolabeling, mass spectrometry (MS) of the drTREK1 protein showed evidence of adduction of azi-isoflurane at two residues, G182 and K194, both located on the second transmembrane domain (TM2) of the channel (Figure 2). To examine whether the clinically relevant parent VA isoflurane also binds at these two sites, we performed a parallel azi-isoflurane photolabeling study of drTREK1 in the presence of 3 mM isoflurane as a competitive inhibitor. The 100-fold excess concentration of isoflurane protected the G182 site from azi-isoflurane photolabeling but did not prevent labeling at K194 (Figure 2—figure supplements 2 and 3), suggesting that only the G182 site is specifically occupied by the parent VA isoflurane.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mass spectra of drTREK1 photoaffinity labeled peptides labeled at Glycine182 (top) and Lysine 194 (bottom). Colored intensities denote the identified peptide a, b, z, and y ion fragments for the sequence assignment, as shown in the inset boxes. See Figure 2—figure supplement 3 for corresponding peptide tables. (B) A structural model of mouse TREK1 (PDBID 6CQ6), showing the positions of residues G182 and K194 (labeled lime spheres) along the TM2 helix. (C) Alignment of the TREK1 TM2 and TM3 helixes from human (hTREK1), mouse (mTREK1), and zebrafish (drTREK1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Zebrafish TREK1 or human TRAAK DNA sequences were purified by metal chromatography via a C-terminal HIS tag, and expressed as fusion proteins with GFP, cleaved off via a 3C protease cleavage site prior to (B,E) final size exclusion chromatography. (C, F) After SDS PAGE electrophoresis, purified protein ran at a molecular weight of approximately 65 kDa, consistent with a K2P dimer. Prior to photolabeling experiments, purified TREK1 protein was assessed for functional integrity by reconstitution into planar lipid bilayers to measure single-channel activity at the indicated holding potentials. Recordings were performed in symmetrical 150 mM KCl solution (D). hTRAAK protein was similarly active when reconstituted into bilayers (not shown).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Results of MS analysis of TREK1 wildtype (WT) in the (top) absence of reaction with azi-isoflurane, (second) following reaction with 30 μM azi-isoflurane, (third) following reaction with 30 μM azi-isoflurane in the presence of 3 mM Isoflurane, or (bottom) TREK1 G182W following reaction with 30 μM azi-isoflurane. Regions positively identified by MS analysis are shown in red in the TREK1 structural model (PDB ID 6CQ6) and in black font in the sequence data. Regions absent from MS data occurred in five distinct regions, all of which are displayed in matching color in both the structural model and the sequence data. The G182 and K194 residues found to be modified by azi-isoflurane in TREK1 WT are shown as pink spheres in the structural model, and positive photolabeling is denoted in the sequence data by enlarged font and pink color. The A67 and T303 residues modified by azi-isoflurane in TREK1 G182W are similarly denoted in blue. The initial and final residues in the TREK1 protein were not identified in the majority of the MS results and are shown in gray to denote absence from positive MS identification. These residues are not present in the TREK1 structural model.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Shown are the fragmentation tables of the (top) 176-GVGDQLGTI-184 photolabeled peptide in the presence of 30 μM azi-isoflurane (middle) the 193-EKMFVKWNVSQTKIRVT-209 photolabeled peptide in the presence of 30 μM azi-isoflurane, and (bottom) the 193-EKMFVKWNVSQTKIRVT-209 photolabeled peptide in the presence of 30 μM azi-isoflurane (AziISO) and 3 mM isoflurane. Detected identified a, b (red) and z, y (blue) ions are colored red and blue, respectively. Residues detected with a modification are noted, and those modified by azi-isoflurane are additionally noted in bold and underlined.
+
 Although our MS results cover >91% of the drTREK1 protein sequence with high confidence, there are notable regions of the TM3 and TM4 helices that are not identified by MS (Figure 2—figure supplement 2). We attributed lack of coverage in these regions to the difficulty in ionizing and resolving hydrophobic transmembrane protein regions with this technique. Alternatively, binding of the hydrophobic azi-isoflurane photolabel could reduce the MS signal from bound protein peptides, causing gaps in MS coverage that correspond to regions where photolabeling has occurred. To exclude this possibility, we performed MS on non-photolabeled drTREK1 protein, finding essentially the same lack of high confidence coverage within the TM3 and TM4 region (Figure 2—figure supplement 2). This suggests that the poor MS coverage of drTREK1 TM3 and TM4 is not the result of photolabeling within these regions. However, we cannot rule out the possibility that azi-isoflurane might label positions within the TM3 or TM4 domains that we are simply unable to detect with our MS approach.
 
-## Functional validation of TREK1 VA-binding sites
+### Functional validation of TREK1 VA-binding sites
 
 To determine the functional importance of the VA- binding sites identified by azi-isoflurane photolabeling, we introduced mutations into the mTREK1 gene at positions 182 and 194 and used two-electrode voltage clamp recordings to assay for changes in mTREK1 channel properties. We first substituted the endogenous mTREK1 amino acids at positions 182 and 194 with tryptophan, to mimic the size and hydrophobic nature of the azi-isoflurane photolabel. Tryptophan mutagenesis at position 194 (as well as other more conservative modifications) had no significant effect on the functional properties of the resultant mutant mTREK1 channels (Figure 3). The amino acid at position 194 is poorly conserved across species, a lysine in the drTREK1 gene used for azi-isoflurane photolabeling but an aspartic acid in the mTREK1 construct used for our functional studies. To account for this difference, we introduced a D194K mutant into the mTREK1 background and found that this mutation also had no effect on mTREK1 basal current or temperature dependence (Figure 3E and F). The absence of any observable functional effect of mutation at mTREK1 194, along with the inability of excess isoflurane to protect position 194 from photolabeling by azi-isoflurane, suggest that despite being modified by azi-isoflurane, this site is unlikely to be relevant to the mechanism by which isoflurane and other clinically relevant VAs modulate TREK1. This notion is supported by the location of position 194 at the far end of TM2, facing toward the bulk solution and away from the core of the TREK1 protein.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig3-v2.jpg)
+
+**Figure 3.:** Representative two electrode voltage clamp recordings of mTREK1 wildtype (WT) and channel mutants G182W and D194W. (A) Basal current measured 24 hr after microinjection of 2.4 ng cRNA. (B) Temperature dependence of TREK1 currents, measured at temperatures of 20–35°C, in 5°C increments. (C) Response to administration of 2 mM isoflurane, followed by washout. (D) Response to administration of 10 μM BL1249. For temperature, isoflurane, and BL1249, experiments performed on TREK1 channels bearing mutations that alter basal current density, the concentration of microinjected cRNA was titrated to achieve 1 μA of current at 20°C, to approximate WT channel current density. (E) Quantification of TREK1 channel activity on basal current level, (F) temperature dependence as measured by Q10 (30°C/20°C), (G) response to isoflurane administration, (H) changes in external pH, or (I) BL1249 administration, as measured by TREK1 current at 0 mV. Number of replicate experiments indicated. Statistical significance was determined by one-way ANOVA combined with a Dunnetts multiple comparison test against mTREK1 WT data, results indicated, *p<0.5, **p<0.05, ****p<0.0005. Error bars are mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Pairwise alignment of the mouse and zebrafish TREK1 protein sequences, with the transmembrane domains (TM), extracellular cap (CAP), and selectivity filter (SF) sequences denoted. (B) Representative traces showing temperature dependence of drTREK1 current, measured at temperatures of 20–35°C, in 5°C increments and (C) quantification of temperature responsiveness as measured by drTREK1 current at 0 mV. (D) Representative traces of drTREK1 response to administration of 2 mM Isoflurane or (E) 10 μM BL1249. Experiments performed on mTREK1 channels bearing mutations that alter basal current density, the concentration of microinjected cRNA was titrated to achieve 1 µA of current at 20°C, to approximate wild-type channel current density. (E) Quantification of mTREK1 channel activity on basal current level, (F) temperature dependence as measured by Q10 (30°C/20°C), (G) response to isoflurane administration, (H) changes in external pH, or (I) BL1249 administration, as measured by mTREK1 current at 0 mV. Number of replicate experiments indicated. Error bars are mean ± SEM. Statistically significance was determined in panels F–H by unpaired two tailed t-tests. Results indicated, **p<0.05, ****p<0.0005.
 
 TREK1 G182 is located within the center of TM2, one helical turn away from a glycine at position 178 previously shown to be a hinge point for a buckling motion of the TM2 helix that occurs during K2P gating (Lolicato et al., 2014). Tryptophan mutagenesis at mTREK1 G182 demonstrated a large increase in basal current density and a near complete loss of modulation by heat, isoflurane, and the TREK1 activator BL1249, findings suggestive of mTREK1 channel activation (Figure 3A–D, note that in Figure 3 panels B-D the concentration of injected cRNA was adjusted to normalize basal current density between mutant and WT mTREK1 channels). Given the unique ability of glycine residues to impart helical flexibility and the known conformational movements in the region of TREK1 around G182 (Lolicato et al., 2014; Brohawn et al., 2014a; Dong et al., 2015), we sought to determine whether loss of flexibility at position 182 was responsible for the major functional effects observed in the mTREK1 G182W mutant. By introducing more conservative mutations at G182, we discovered that the effect of mutagenesis was correlated with the size of the introduced amino acid. mTREK1 G182A showed only a small potentiating effect on current density and no significant effect on gating by heat and mTREK1 G182C showed an intermediate phenotype (Figure 3E–F).
 
@@ -71,7 +95,7 @@ While the G182 residue is located at the cytosolic face of the TREK1 channel, ac
 
 Many of the biophysical modalities known to modulate TREK1 channels, including heat, mechanical stretch, intracellular acidosis, and bioactive lipids, are believed to alter channel activity by affecting the selectivity filter ‘C-type’ gate (Bagriantsev et al., 2011; Bagriantsev et al., 2012; Piechotta et al., 2011), though the input sensor for these biophysical gating cues is thought to be the intracellular C-terminal domain (Honoré et al., 2002; Chemin et al., 2005b; Bagriantsev et al., 2012). Structurally defined ‘TM4 up’ and ‘TM4 down’ conformational states Brohawn et al., 2014a; Lolicato et al., 2014; Dong et al., 2015 have been identified as the key rearrangements that allow these C-terminal domain inputs to traverse the protein and converge at the selectivity filter to modulate gating (Zhuo et al., 2016). Within this gating model, the location of the G182 anesthetic-binding site along the TM2 helix in direct opposition to TM4 (Figure 4C) is intriguing. It suggests that VA occupancy at the G182 site could modulate TREK1 activity by influencing TM4 intramolecular rearrangements known to play a key role in K2P gating. To further explore the isoflurane-binding site and gain insight into the effect of anesthetic binding on TREK1 channel gating, we utilized MD simulation.
 
-## MD simulation identifies residues important for VA modulation to TREK1 channels
+### MD simulation identifies residues important for VA modulation to TREK1 channels
 
 In order to establish a suitable starting point for MD simulations, we evaluated potential ligand binding configurations compatible with our photoaffinity results, using Autodock Vina docking software (Trott and Olson, 2010). A pocket formed by G182 and the nearby TM3 and TM4 helices had the highest ranked score and was the only predicted binding site near the G182 residue. This binding site is located entirely within the transmembrane region of mTREK1 and isoflurane is a relatively low-affinity ligand with minimal electrostatic interactions. Our docking results confirmed that the binding site near G182 was a sterically favorable starting point to place isoflurane for subsequent equilibrium MD simulation. Simulations of mTREK1 embedded in a POPC:cholesterol lipid bilayer were conducted of mTREK1 wildtype (WT; 440 ns) and mTREK1 G182W in the absence of isoflurane (960 ns), and of mTREK1 WT with a single isoflurane molecule placed at the G182 site in one of the two K2P subunits (two trajectories, 700 ns and 1200 ns). A representative MD snapshot of the isoflurane-binding site is depicted in Figure 5A.
 
@@ -83,9 +107,142 @@ Simulation of WT mTREK1 in the presence of VA demonstrated isoflurane to be high
 
 The two independent MD trajectories converge on a number of high occupancy positions (Table 1, Figure 5A), with occupancy defined as the percentage of MD trajectory snapshots in which the isoflurane ligand was within 7 Å of a given residue. These positions include the G182 residue and numerous additional amino acids on mTREK1 TM2, TM3, and TM4. In agreement with our photolabeling findings, MD simulations demonstrated that isoflurane remained in close proximity to the G182 residue for >94% of the time VA occupied the binding site. This finding supports the notion that isoflurane imposes a consistent steric crowding at the G182 position, akin to the activity enhancing modifications we introduced through either mutagenesis or biochemical modification.
 
+**Table 1.**
+ Occupancy of residues in G182 isoflurane-binding pocket, defined as the percentage of snapshots where isoflurane within 7 Å of the given residue during two independent molecular dynamics (MD) simulation trajectories.Residues with occupancy of less than 20% in both trajectories are omitted. TREK1 residues homologous to positions previously found to mediate volatile anesthetic (VA) sensitivity in TASK K2P channels are annotated (*).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mouse TREK1 residue number</th>
+      <th>Percent occupancy during MD trajectory 1</th>
+      <th>Percent occupancy during MD trajectory 2</th>
+      <th>Transmembrane domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GLY178</td>
+      <td>47.65%</td>
+      <td>79.20%</td>
+      <td>TM2</td>
+    </tr>
+    <tr>
+      <td>ASP179</td>
+      <td>35.19%</td>
+      <td>35.36%</td>
+      <td>TM2</td>
+    </tr>
+    <tr>
+      <td>LEU181</td>
+      <td>68.40%</td>
+      <td>91.72%</td>
+      <td>TM2</td>
+    </tr>
+    <tr>
+      <td>GLY182</td>
+      <td>94.01%</td>
+      <td>98.65%</td>
+      <td>TM2</td>
+    </tr>
+    <tr>
+      <td>THR183</td>
+      <td>69.07%</td>
+      <td>41.84%</td>
+      <td>TM2</td>
+    </tr>
+    <tr>
+      <td>PHE185*</td>
+      <td>92.17%</td>
+      <td>97.89%</td>
+      <td>TM2</td>
+    </tr>
+    <tr>
+      <td>GLY186</td>
+      <td>89.16%</td>
+      <td>57.30%</td>
+      <td>TM2</td>
+    </tr>
+    <tr>
+      <td>ILE189</td>
+      <td>52.96%</td>
+      <td>10.07%</td>
+      <td>TM2</td>
+    </tr>
+    <tr>
+      <td>THR211*</td>
+      <td>56.20%</td>
+      <td>88.69%</td>
+      <td>TM3</td>
+    </tr>
+    <tr>
+      <td>PHE214</td>
+      <td>44.39%</td>
+      <td>82.77%</td>
+      <td>TM3</td>
+    </tr>
+    <tr>
+      <td>ILE215</td>
+      <td>25.65%</td>
+      <td>95.46%</td>
+      <td>TM3</td>
+    </tr>
+    <tr>
+      <td>GLY218</td>
+      <td>9.25%</td>
+      <td>61.26%</td>
+      <td>TM3</td>
+    </tr>
+    <tr>
+      <td>ALA283</td>
+      <td>28.07%</td>
+      <td>61.74%</td>
+      <td>TM4</td>
+    </tr>
+    <tr>
+      <td>TYR284</td>
+      <td>67.95%</td>
+      <td>96.27%</td>
+      <td>TM4</td>
+    </tr>
+    <tr>
+      <td>PHE285</td>
+      <td>27.41%</td>
+      <td>41.74%</td>
+      <td>TM4</td>
+    </tr>
+    <tr>
+      <td>ALA287</td>
+      <td>88.05%</td>
+      <td>99.48%</td>
+      <td>TM4</td>
+    </tr>
+    <tr>
+      <td>VAL288</td>
+      <td>78.20%</td>
+      <td>94.79%</td>
+      <td>TM4</td>
+    </tr>
+    <tr>
+      <td>MET291*</td>
+      <td>56.11%</td>
+      <td>37.02%</td>
+      <td>TM4</td>
+    </tr>
+  </tbody>
+</table>
+
 The proximity of the VA-binding site to the neighboring TM4 helix (Figure 4C) suggested a mechanism by which anesthetic binding could influence K2P activity by influencing TM4 position, a concept bolstered by our MD simulation data. We found a number of TM4 residues that directly interact with the bound isoflurane molecule, most notably Y284 and M291. mTREK1 Y284, the only polar residue in the otherwise hydrophobic TM4 helix, has been proposed to form stabilizing hydrogen bonds with one of two alternative TM3 backbone carbonyls in the ‘up’ versus ‘down’ conformations of TM4 (Dong et al., 2015) but is highly occupied by isoflurane when the drug is bound in the VA site. Similarly, the M291 position has been proposed to form TM4 conformation-dependent interactions with neighboring TM3 and TM4 residues and we found that M291 is occupied by the bound isoflurane molecule during both of the simulation trajectories.
 
 To assess for structural changes in the mTREK1 protein induced by the presence of bound isoflurane, we compared the MD simulations of isoflurane-free versus isoflurane-bound mTREK1 and calculated the per residue root-mean-square deviation (RMSD) of the mTREK1 protein during the two simulations, with respect to the last frame of the WT-free mTREK1 simulation. The isoflurane molecule did not induce any major conformational changes in mTREK1 during either of the simulation trajectories, and we did not observe any alteration in the position of the TM4 helix attributable to the presence of isoflurane. However, we found localized increases in RMSD within the VA-binding pocket at mTREK1 F185 and I189 (TREK1 + Isoflurane MD trajectory 1) or F214 (TREK1 + Isoflurane MD trajectory 2) (Figure 6a). These localized deviations in RMSD were absent when we limited our analysis to the main chain Cα carbon (Figure 6—figure supplement 1B), and we found that side-chain rotameric orientation was clearly altered at these positions by the presence of the isoflurane ligand (Figure 6C and Figure 6—figure supplement 1D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig6-v2.jpg)
+
+**Figure 6.:** (A) All atom per residue RMSD within the TREK1 TM2/TM3 loop from TREK1 wildtype (WT) + Isoflurane Trajectory 1 (black symbols) or Trajectory 2 (gray symbols), as compared with the final frame of the equilibrated TREK1 WT-Free simulation. (B) A representative equilibrium MD simulation snapshot of TREK1 WT. The G182 residue is represented as a sphere and the pi-stacking interaction between F185 and F214 is shown. (C) Side chain χ 1 dihedral angle residence plots for residue F185 and F214 during the TREK1 WT-free (top) and TREK1 WT + isoflurane simulation trajectories (middle, bottom) (D) Pi-stacking plots for the F185/F214 residue interaction, examined by sampling the average number of pi-stacked snapshots over a rolling window of 10 snapshots spanning every 200 fs across the entire simulation timescale. The red bar in the TREK1 WT + Isoflurane trajectory one panel represents the time when isoflurane escaped the binding pocket during this simulation. (E) Representative equilibrium MD simulations snapshots of G182W, showing retained pi-stacking of the F185 and F214 residues or (G,H) simulation snapshots of TREK1 in the presence of isoflurane with disrupted F185/F214 pi-stacking.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Distance of the center of geometry of the isoflurane ligand from the center of the spherical restraint, of radius 7A, as a function of simulation time during TREK1 wildtype (WT) + isoflurane trajectory 2 (B) C-alpha limited per residue RMSD within the TREK1 TM2/TM3 loop from TREK1 WT + isoflurane trajectory 1 (black symbols) or trajectory 2 (gray symbols), as compared with the final frame of the equilibrated TREK1 WT-free simulation. (C) Pi-stacking plots, as described in the Figure 6 legend, for the F185/F214 residue interaction in the unliganded neighboring TREK1 subunit. (D) Side chain χ 1 and χ 2 dihedral angle residence plots for mTREK1 I189 during the TREK1 WT-free (top) and TREK1 WT + isoflurane simulation trajectories (middle, bottom).
 
 The F185 residue has previously been shown to impact K2P responsiveness to heat, VAs, mechanical stretch, and the pharmacological efficacy of BL1249, a K2P activator (Lolicato et al., 2014; Dong et al., 2015; Luethy et al., 2017; Pope et al., 2018) and is known to form a pi-stacking interaction with the TM3 F214 residue (Figure 6B). This F185/Y214 interaction has been proposed to stabilize the ‘TM4-down’ gating conformation in TREK2 channels (Dong et al., 2015). To explore the effect of isoflurane binding on this structurally important interaction, we quantified pi-stacking between F185 and F214 in our simulations, such that the two aromatic rings were considered to be pi-stacked if their centroids were separated by 4.4 Å or less and the angles between the ring planes were less than 30° (McGaughey et al., 1998). In the mTREK1 WT and mTREK1 G182W simulations, pi-stacking between these residues occurred in 37% and 38% of trajectory frames, respectively, but pi-stacking occurred in less than 2% of the trajectory frames in both of the isoflurane-bound wild-type mTREK1 simulations (Figure 6D). In TREK1 + isoflurane MD simulation trajectory 1, the isoflurane ligand directly interrupts the pi-stacking interaction (Figure 6B and F), while in trajectory two it is the ligand induced reorientation of the F214 rotamer that is responsible for disrupting the pi-stacking interaction (Figure 6G). Even after the isoflurane molecule escapes from its binding site during trajectory 1 (Figure 6D), the F185/F214 interaction remained disrupted due to the isoflurane induced reorientation of the F185 sidechain.
 
@@ -93,13 +250,21 @@ While additional sampling time might have allowed the F185/F214 interaction to e
 
 Based on our MD findings, we hypothesize that a combination of VA-induced local structural perturbations, disruption of the F185/F214 pi-stacking interaction, and direct steric effects upon TM4 movement all combine to alter the dynamics of the TM4 movements known to influence K2P gating. While our MD simulations did not directly reveal major conformational rearrangements of TM4, the observed isoflurane occupancy at numerous positions known to govern the energetics of TM4 translocation from the ‘down’ to ‘up’ position suggest a mechanism by which VA binding ultimately alters K2P activity by modulating TM4 movements.
 
-## Key residues transfer VA insensitivity from TRAAK to TREK1
+### Key residues transfer VA insensitivity from TRAAK to TREK1
 
 Although both TREK and TASK channels are potentiated by VA agents, the TRAAK K2P channel is anesthetic insensitive (Patel et al., 1999). TRAAK is 44% identical and 69% homologous to TREK1, and the two channels share many functional properties, including modulation by heat, mechanical stretch, pH, and arachidonic acid (Maingret et al., 1999; Kang et al., 2005). The relative selectivity of VA agents for TREK1 over TRAAK despite the many similarities between these two channels allowed us to utilize the TRAAK channel as a negative control to further characterize the K2P VA-binding site.
 
 VA insensitivity of TRAAK could arise from one of two possibilities; failure of VAs to bind to TRAAK or inability of bound VA to modulate TRAAK activity. To distinguish between these possibilities and ascertain whether VAs bind to the TRAAK channel, we recombinantly expressed, purified, and reconstituted human TRAAK (hTRAAK) into liposomes (Figure 2—figure supplement 1) and performed azi-isoflurane photolabeling studies identical to those used for drTREK1 channels. The G182 residue identified by azi-isoflurane photolabeling of drTREK1 is conserved in the hTRAAK sequence, but we found no evidence of azi-isoflurane photolabeling at this glycine or at any other position in the hTRAAK channel (Figure 7—figure supplement 1). MS of hTRAAK protein after photolabeling showed a relatively lower total coverage of the hTRAAK sequence compared to our results for drTREK1 (84% for hTRAAK versus 91% for drTREK1), but all hTRAAK residues homologous to the drTREK1 azi-isoflurane binding region identified by MD simulations were positively identified, precluding the possibility that azi-isoflurane binds within this region of hTRAAK. Our results suggest that the inability of VA agents to activate TRAAK channels is due to either an absence of binding or a significantly reduced affinity of anesthetic for this VA binding region.
 
 We next explored the sequence similarity between mTREK1 and mTRAAK at the residues that showed the highest isoflurane occupancy during MD simulations. Amongst the identified amino acids, we found four residues that differ significantly between the mTREK1 and mTRAAK sequences (Figure 7A–B) and created a series of mutant mTREK1 channels that contain one or two of the corresponding mTRAAK residues at these positions (Figure 7C–E). When examined by TEVC, the ‘TRAAK-like’ mutant mTREK1 channels all exhibit diminished responsiveness to the potentiating effect of isoflurane (Figure 7C), supporting a role for these residues in either forming the VA binding domain or transducing the effects of binding to channel opening. While the extent of the effect of these mutants was less dramatic than the near complete absence of isoflurane responsiveness in the G182W mutant, the effect of combining two TRAAK-like mutations was additive, as shown for the double mutant mTREK1 F185L G186R (Figure 7C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative MD) snapshot showing the isoflurane-binding site, including residues predicted to have >20% occupancy by isoflurane shown in sphere representation and isoflurane shown in stick representation (lime). (B) Alignments of mouse TREK1 and TRAAK sequences, with the isoflurane-binding domain regions of TREK1 TM2, TM3, and TM4 (as identified by MD simulation) highlighted in blue. Arrows denote positions of high isoflurane occupancy. Poorly conserved residues are color coded throughout the figure [F185 (blue), G186 (green), T211 (red), and M291 (black)]. (C) Quantification of TREK1 wildtype and mutant responses to 2 mM isoflurane administration, (D) temperature, as measured by TREK1 current at 0 mV, or (E) temperature dependence as measured by Q10 (30°C/20°C). Number of replicate experiments indicated. Error bars are mean ± SEM. Statistically significance was determined by one-way ANOVA combined with a Dunnetts multiple comparison test against mTREK1 WT data, results indicated, **p<0.05,****p<0.0005.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59839/elife-59839-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Results of MS analysis of TRAAK in the absence of reaction with azi-isoflurane (top) or following reaction with 30 μM azi-isoflurane (bottom). Regions positively identified by MS analysis are shown in blue in the TRAAK structural model (PDB ID 4WFE) and in black font in the sequence data. Regions absent from MS data are displayed in matching color in both the structural model and the sequence data. TRAAK residues homologous to TREK1 positions that exhibit high isoflurane occupancy in MD simulation are displayed as spheres in the structural model of TRAAK and are denoted in the sequence data by an enlarged font. All these residues are identified by MS, but none show evidence of azi-isoflurane labeling. A group of residues in the C-terminal region of TRAAK (marked in gray in the sequence data) were absent from our MS analysis but are not present in the TRAAK structural model.
 
 Although the G182W mutant exhibited diminished responsiveness to both VA activation and heat, the ‘TRAAK-like’ mutants maintain their sensitivity to activation by heat (Figure 7D–E). The fact that the ‘TRAAK-like’ mutants selectively alter VA activation without significantly perturbing gating by heat argues for their specificity to the mechanism of action of VAs. Activation of TREK1 by heat is known to be critically related to the phosphorylation state of serine 333 in the intracellular C-terminal domain of TREK1 (Maingret et al., 2000) and the persistence of mTREK1 heat activation in these ‘TRAAK-like’ mutants suggests that these mutations do not eliminate VA modulation by simply causing a global activation of the mTREK1 ‘C-type’ gate (as was the case for the G182W mutant). Rather, the ‘TRAAK-like’ mutations appear to reduce VA sensitivity by acting specifically at the VA site of action, consistent with predictions made by our MD simulation data and mTREK1 vs mTRAAK sequence homology.
 
@@ -119,7 +284,7 @@ While our results support the presence of a defined modulatory site within the T
 
 ## Materials and methods
 
-## Purification of drTREK1 or hTRAAK
+### Purification of drTREK1 or hTRAAK
 
 TREK1 and TRAAK proteins were expressed in Pichia pastoris using previously described pPICZ vectors bearing residues 1–300 of the human TRAAK gene (hTRAAK, K2P4.1, UniProt Q9NYG8-2) or residues 1–322 of the D. rerio TREK1 gene (drTREK1, K2P2.1, UniProt X1WC65), followed by a PreScission protease-cleavage site (LEVLFQ/GP) and C-terminal GFP and His10 tags (Brohawn et al., 2014b). Mutations to eliminate N-linked glycosylation sites were inserted into both the hTRAAK (N104Q and N108Q) and drTREK1 (N95Q, N122Q) gene constructs. Expression plasmids were linearized with the PmeI restriction enzyme and were subsequently transformed by electroporation into P. pastoris strain SMD1168H. Screening for successful recombinant integration was performed by plating transformants on yeast extract peptone dextrose sorbitol (YPDS) plates containing increasing concentrations of zeocin from 0.5 to 3 mg/mL.
 
@@ -127,31 +292,31 @@ Screening, expression, and purification of K2Ps was performed as previously desc
 
 Cell powder was added to breaking buffer (150 mM KCl, 50 mM Tris pH 8.0, 1 mM phenylmethysulfonyl fluoride, 0.1 mg/mL DNase 1, and one tablet/50 mL of EDTA-free complete inhibitor cocktail [Roche]) at a ratio of 1 g cell pellet/4 mL lysis buffer. Solubilized cell powder was centrifuged at 4000 × g at 4°C for 5 min to pellet large debris and the supernatant was then centrifuged at 100,000 × g at 4°C for 1.5 hr to pellet cell membranes. The pellet was re-suspended in 50 mL breaking buffer containing 60 mM n-Dodecyl-B-D-Maltoside (DDM) and incubated for 3 hr with gentle stirring to solubilize the membranes, followed by centrifugation at 35,000 × g for 45 min. Talon cobalt resin (Takara Bio USA) was added to the supernatant at a ratio of 1 mL of resin per 10 g of cell powder and incubated in an orbital rotor overnight at 4°C. Resin was then collected on a column and washed with 10 column volumes of Buffer A (150 mM KCl, 50 mM Tris pH 8.0, 6 mM DDM, 30 mM imidazole) and bound protein was subsequently eluted from the resin by washing with Buffer B (150 mM KCl, 50 mM Tris pH 8.0, 6 mM DDM, 300 mM imidazole). PreScission protease (∼1:25 wt:wt) was added to the eluate and the cleavage reaction was allowed to proceed overnight at 4°C under gentle rocking. Cleaved drTREK1 or hTRAAK protein was concentrated in 50 kDa molecular weight cutoff (MWCO) Amicon Ultra Centrifugal Filters (Millipore) and applied to a Superdex200 10/300 gel filtration column (GE Healthcare) equilibrated in size exclusion chromatography (SEC) buffer (150 mM KCl, 20 mM Tris pH 8.0, 1 mM DDM). Purified hTRAAK or drTREK1 protein was concentrated (50 kDa MWCO) to 8 mg/mL prior to reconstitution and analyzed for purity by SDS-PAGE [12% (wt/vol) gels; Bio-Rad] followed by staining with coomassie blue. All protein purification steps were carried out at 4°C.
 
-## Reconstitution of K2P channels into liposomes
+### Reconstitution of K2P channels into liposomes
 
 Immediately following purification, drTREK1 or hTRAAK channel protein was reconstituted into liposomes (Heginbotham et al., 1998). Five mg of a 3:1 (wt/wt) ratio of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho- (1′-rac-glycerol) (POPG) in chloroform was used for reconstitution. The lipids were dried in a borosilicate glass vial under nitrogen flow and then solubilized in reconstitution buffer (400 mM KCl, 10 mM HEPES, 5 mM NMDG [N-methylglucamine D-gluconate], pH 7.6) containing 34 mM CHAPS (3-((3-cholamidopropyl) dimethylammonio)−1-propanesulfonate). The lipid containing solution was bath sonicated until clear. drTREK1 or hTRAAK protein was then added to the lipid solution at a concentration of 100 µg protein/mg of solubilized lipids. Proteoliposomes were formed by applying the lipid/protein containing sample (500 µL total volume) to an 18 mL detergent-removal column (Sephadex G-50 fine beads, GE Healthcare Life Sciences). Turbid fractions containing proteoliposomes were pooled, aliquoted, flash frozen in liquid nitrogen, and stored at −80°C.
 
-## Photoaffinity labeling of drTREK1 or hTRAAK potassium channels for protein microsequencing
+### Photoaffinity labeling of drTREK1 or hTRAAK potassium channels for protein microsequencing
 
 A total of 5–7 μg of drTREK or hTRAAK in proteoliposomes was added to a 30 μM solution of azi-isoflurane ±3 mM isoflurane. Each sample was equilibrated on ice in the dark for 5 min and then transferred to a 1 mm path length quartz cuvette and exposed for 25 min to 300 nm ultraviolet light produced by an RPR-3000 Rayonet lamp filtered by a WG295 295 nm glass filter (Newport Corporation).
 
-## In-solution protein digestion
+### In-solution protein digestion
 
 Photolabeled samples underwent dialysis and buffer exchange using 10 kDa MWCO Amicon Ultra Centrifugal Filters (Millipore). ProteaseMAX Surfactant (Promega) was added to a concentration of 0.2%, and the samples were vortexed vigorously for 30 s. Samples were then diluted with NH4HCO3 to a final concentration of 50 mM NH4HCO3 in a 93.5 μL volume. 1 μL of 0.5 M dithiothreitol (DTT) was then added and samples were incubated at 56°C for 30 min. 2.7 µL of 0.55 M iodoacetamide (IAA) was subsequently added and protein samples were incubated at room temperature in the dark for 45 min. An additional 1 μL of 1% (w/v%) ProteaseMax Surfactant was added to the sample, followed by sequencing grade-modified trypsin (Promega) to a 1:20 protease:protein final ratio (w:w). Proteins were digested overnight at 37°C. Trypsin digested peptides were again diluted with NH4HCO3 to a final concentration of 100 mM NH4HCO3 and 0.02% ProteaseMAX Surfactant in a 200 μL total volume, prior to addition of sequencing grade chymotrypsin (Promega) to a final 1:20 protease:protein ratio (w:w). Proteins were again digested overnight at 37°C. Acetic acid was added to reach a pH <2 and the peptide digests were then incubated at room temperature for 10 min, prior to centrifugation at 16,000 x g for 20 min to remove insoluble debris. Samples were then desalted using C18 stage tips prepared in house, dried by speed-vac, and resuspended in 0.1% formic acid immediately prior to MS analysis.
 
-## In-gel protein digestion
+### In-gel protein digestion
 
 Photolabeled samples underwent dialysis and buffer exchange using 10 kDa MWCO Amicon Ultra Centrifugal Filters (Millipore). Samples were then mixed with SDS loading buffer containing DTT to a final concentration of 100 mM DTT, vortexed vigorously and incubated at room temperature for 45 min before separation by SDS-PAGE. The resulting gels were stained with Coomassie Blue G250 (BioRad), destained, and washed with ddH2O. Protein bands between ~30 and 40 kDa (corresponding to drTREK or hTRAAK) were identified and excised. Excised bands were destained, dehydrated and dried by speed vac. Proteins were then reduced by incubation at 56° C for 30 min in 5 mM DTT and 50 mM NH4HCO3. The DTT solution was removed and proteins were then alkylated by the addition of 55 mM IAA in 50 mM NH4HCO3 and incubation at room temperature for 45 min in the dark. Bands were dehydrated and dried by speed vac before resuspension in 100 μL 0.2% ProteaseMAX surfactant and 50 mM NH4HCO3 solution containing trypsin at a 1:20 protease:protein ratio (w:w). Proteins were digested overnight at 37°C. To enhance sequence coverage, a second protease digestion was performed with chymotrypsin. Samples were diluted to a final volume of 200 μL with final concentrations of 100 mM NH4HCO3 and approximately 0.02% ProteaseMAX Surfactant. Sequencing grade chymotrypsin (Promega) to a 1:20 protease:protein ratio (w:w) was then added and proteins were digested overnight at 37°C. Multiple extraction steps were performed to remove peptides embedded in the gel. The digest solution was removed and the remaining gel was suspended in 100 μL 30% acetylnitrile and 5% acetic acid in ddH2O (v/v%) and sonicated for 20 min. The solution was removed and the gel was then resuspended in 100 μL 70% acetylnitrile and 5% acetic acid in ddH2O (v/v%) and sonicated for 20 min. The digest and two extraction solutions were pooled and dried by speed vac before resuspension in 0.5% acetic acid (pH <2). Samples were sonicated for 10 min prior to centrifugation to remove insoluble debris. Samples were desalted using C18 stage tips prepared in house. Samples were dried by speed vac and resuspended in 0.1% formic acid immediately before MS analysis.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Desalted peptides were analyzed employing either an Orbitrap Elite Hybrid Ion Trap-Orbitrap mass spectrometer (MS) or Q Exactive Hybrid Quadrupole-Orbitrap MS coupled to an Easy-nanoLC 1000 system. In both instances, the same liquid chromatography procedure and data-dependent acquisition mode was applied. Peptides were eluted over 100 min with linear gradients of ACN in 0.1% formic acid in water (v/v%) starting from 2% to 40% (85 min), then 40% to 85% (5 min) and finally 85% (10 min) using a flow rate of 300 mL/min. For Orbitrap Elite, in every 3 s cycle, one full MS scan was collected at a scan range of 350–1500 m/z, a resolution of 60K, and a maximum injection time of 50 ms with automatic gain (AG) control of 500,000. The MS2 scans were followed from the most intense parent ions. Ions were filtered with charge 2–5 with an isolation window of 1.5 m/z in quadruple isolation mode. Ions were fragmented using collision induced dissociation (CID) with collision energy of 35%. Iontrap detection was used with normal scan range mode and rapid iontrap scan rate. For Q Exactive, one full MS was performed with 70K resolution, maximum injection time of 100 ms and scan range of 350–1200 m/z. The MS2 scans were performed in Higher-energy Collisional Dissociation (HCD) with normalized collision energy (NCE) of 30, and isolation window of 3 m/z. The AG control was set to be 10,000 with a maximal injection time of 100 ms.
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 Analysis was performed as previously reported (Eckenhoff et al., 2010; Woll et al., 2018). Spectral analysis was conducted using Thermo Proteome Discoverer 2.0 (Thermo Scientific) and the Mascot Daemon search engine with a customized database containing drTREK or hTRAAK protein sequences. All analyses included dynamic oxidation of methionine (+15.9949 m/z) as well as static alkylation of cysteine (+57.0215 m/z; iodoacetamide alkylation). Photolabeled samples were run with the additional dynamic azi-isoflurane (+195.97143 m/z) modification. A mass variation tolerance of 10 ppm and 20 ppm for MS and 0.8 and 0.02 Da for MS/MS were used for the for Orbitrap Elite and Q Exactive, respectively. Both the in-solution and in-gel sequential trypsin/chymotrypsin digests were searched without enzyme specification with a false discovery rate of 0.01. All MS experiments were conducted in triplicate and samples containing no photoaffinity ligand were processed and analyzed equivalently to those containing the photolabel, to control for false-positive detection of photoaffinity ligand modifications.
 
-## Molecular dynamics simulation
+### Molecular dynamics simulation
 
 The crystallographically derived structural model of Mus musculus TREK1 (PDBID 6CQ6) was used for MD simulation. Missing nonterminal loops were predicted using MODELLER (Webb and Sali, 2017) with side-chain conformations predicted using SCRWL4 (Krivov et al., 2009). Molecular mechanics parameters for isoflurane were used, as previously published (Hénin et al., 2010). In the ligand-bound simulation, one isoflurane molecule was placed manually, adjacent to G182, in the position of the best-scoring hit from molecular docking of isoflurane to TREK1 using AutoDock Vina software (Trott and Olson, 2010). Docking parameters were: num_modes = 9, exhaustiveness = 8, energy_range = 3. The search box was 43.5 × 40.0×30.0 Å in size, centered on one of the two G182 residues. Docking scores of the nine hits requested from AutoDock Vina ranged from −5.1 to −4.6. Three of these were adjacent to G182, including the best-scoring hit.
 
@@ -161,7 +326,7 @@ During isoflurane-bound mTREK1 WT simulation trajectory 2, a flat-well spherical
 
 For root-mean-square deviation (RMSD) calculations to assess binding site changes induced by isoflurane, both of the isoflurane-bound mTREK1 WT simulation trajectories were analyzed using the last frame of the WT-free simulation as reference. To remove global rotation and translation, simulation trajectories were aligned at selectivity filter residues I143, F145, and N147.
 
-## Two electrode voltage clamp electrophysiology
+### Two electrode voltage clamp electrophysiology
 
 For electrophysiological studies, Xenopus laevis oocytes were microinjected with capped RNA translated from full length mouse or zebrafish TREK1 (K2P2.1, UniProt P97438-2) or mouse TRAAK (K2P4.1, UniProt O88454) genes. TREK1 mutations were introduced using a Phusion site-directed mutagenesis kit (ThermoFisher), with the mTREK1 C93S C159S C219S C365S C399S mutant channel referred to as mTREK1 cys- for brevity. cRNA from WT or mutant K2P genes was synthesized using an mMessage mMachine Kit (T7 promoter, Ambion, Life Technologies) and purified using an RNeasy RNA cleanup kit (Qiagen). Defolliculated stage V–VI Xenopus laevis oocytes were purchased commercially from Xenoocyte (Dexter, MI) and were stored in antibiotic supplemented ND96 (96 mM NaCl, 2 mM KCl, 1.8 mM CaCl2, 2 mM MgCl2, 100 units mL–1 penicillin, 100 μg mL–1 streptomycin) until use. Oocytes were microinjected with 2.5 ng cRNA (unless otherwise noted) and two-electrode voltage clamp (TEVC) recordings were performed 24–48 hr after microinjection. All TEVC data in the manuscript represents recordings from oocytes isolated from at least two independent ovaries, n > 3 oocytes per group.
 

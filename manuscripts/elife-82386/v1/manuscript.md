@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00671me87 Language and Computation in Neural Systems Group, Max Planck Institute for Psycholinguistics Nijmegen Netherlands
-2. https://ror.org/016xsfp80 Donders Centre for Cognitive Neuroimaging, Radboud University Nijmegen Netherlands
+1. Language and Computation in Neural Systems Group, Max Planck Institute for Psycholinguistics Nijmegen Netherlands ([ROR:00671me87](https://ror.org/00671me87))
+2. Donders Centre for Cognitive Neuroimaging, Radboud University Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 
 ## Abstract
 
-When we comprehend language from speech, the phase of the neural response aligns with particular features of the speech input, resulting in a phenomenon referred to as neural tracking . In recent years, a large body of work has demonstrated the tracking of the acoustic envelope and abstract linguistic units at the phoneme and word levels, and beyond. However, the degree to which speech tracking is driven by acoustic edges of the signal, or by internally-generated linguistic units, or by the interplay of both, remains contentious. In this study, we used naturalistic story-listening to investigate (1) whether phoneme-level features are tracked over and above acoustic edges, (2) whether word entropy, which can reflect sentence- and discourse-level constraints, impacted the encoding of acoustic and phoneme-level features, and (3) whether the tracking of acoustic edges was enhanced or suppressed during comprehension of a first language (Dutch) compared to a statistically familiar but uncomprehended language (French). We first show that encoding models with phoneme-level linguistic features, in addition to acoustic features, uncovered an increased neural tracking response; this signal was further amplified in a comprehended language, putatively reflecting the transformation of acoustic features into internally generated phoneme-level representations. Phonemes were tracked more strongly in a comprehended language, suggesting that language comprehension functions as a neural filter over acoustic edges of the speech signal as it transforms sensory signals into abstract linguistic units. We then show that word entropy enhances neural tracking of both acoustic and phonemic features when sentence- and discourse-context are less constraining. When language was not comprehended, acoustic features, but not phonemic ones, were more strongly modulated, but in contrast, when a native language is comprehended, phoneme features are more strongly modulated. Taken together, our findings highlight the flexible modulation of acoustic, and phonemic features by sentence and discourse-level constraint in language comprehension, and document the neural transformation from speech perception to language comprehension, consistent with an account of language processing as a neural filter from sensory to abstract representations.
+When we comprehend language from speech, the phase of the neural response aligns with particular features of the speech input, resulting in a phenomenon referred to as neural tracking. In recent years, a large body of work has demonstrated the tracking of the acoustic envelope and abstract linguistic units at the phoneme and word levels, and beyond. However, the degree to which speech tracking is driven by acoustic edges of the signal, or by internally-generated linguistic units, or by the interplay of both, remains contentious. In this study, we used naturalistic story-listening to investigate (1) whether phoneme-level features are tracked over and above acoustic edges, (2) whether word entropy, which can reflect sentence- and discourse-level constraints, impacted the encoding of acoustic and phoneme-level features, and (3) whether the tracking of acoustic edges was enhanced or suppressed during comprehension of a first language (Dutch) compared to a statistically familiar but uncomprehended language (French). We first show that encoding models with phoneme-level linguistic features, in addition to acoustic features, uncovered an increased neural tracking response; this signal was further amplified in a comprehended language, putatively reflecting the transformation of acoustic features into internally generated phoneme-level representations. Phonemes were tracked more strongly in a comprehended language, suggesting that language comprehension functions as a neural filter over acoustic edges of the speech signal as it transforms sensory signals into abstract linguistic units. We then show that word entropy enhances neural tracking of both acoustic and phonemic features when sentence- and discourse-context are less constraining. When language was not comprehended, acoustic features, but not phonemic ones, were more strongly modulated, but in contrast, when a native language is comprehended, phoneme features are more strongly modulated. Taken together, our findings highlight the flexible modulation of acoustic, and phonemic features by sentence and discourse-level constraint in language comprehension, and document the neural transformation from speech perception to language comprehension, consistent with an account of language processing as a neural filter from sensory to abstract representations.
 
 ## Introduction
 
@@ -39,13 +39,114 @@ Our aim in this current study was to investigate the following questions: (1) Ca
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 To evaluate if the stories were comprehended by participants, we compared the percentage of correct answers to comprehension questions after each story part. Participants replied 88% (SD = 7%) of questions, significantly above the chance level 25% (t(46)=39.45, p<0.0001) about Dutch stories correctly and 25% (SD = 11%) of questions about French stories which was not significantly different than the chance level (t(46)=0.44, p=0.66).
 
-## Tracking performance of linguistic features
+### Tracking performance of linguistic features
 
 Firstly, to investigate the question whether linguistic units are tracked by the brain signal even when acoustic features are controlled, we compared the averaged reconstruction accuracies over all source points to see if adding each feature is increasing the reconstruction accuracy. To assess the individual contribution of each feature toward reconstruction accuracy, we conducted a stepwise analysis by fitting various TRF models. We added each feature sequentially to an acoustic base model, and then calculated the difference in accuracy between the model with the feature of interest and the previous model without that feature. Detailed information can be found in Table 11 in the Materials and methods section. We then fitted a linear mixed model for reconstruction accuracies with random intercept for subjects and a random slope for fixed effects. Independent variables were language (Dutch and French) and models (Acoustic, Phoneme Onsets, Phoneme Surprisal, Phoneme Entropy and, Word Frequency). Linear mixed model (LMM) with a random slope both for models and language did not converge as the reconstruction accuracies were highly correlated, so we only fitted a random slope for language. We used backward difference coding for the model contrasts, so each contrast shows the difference between consecutive models (e.g. In Table 1, Phoneme Onset row shows the contrast between the accuracies of Phoneme Onset model and Acoustic model.) To evaluate weather adding language and models and their interaction as fixed effect increased predictive accuracy, we compared LMMs with and without these effects using R’s anova() function.
+
+**Table 1.**
+ LMM results of reconstruction accuracies for Dutch and French stories.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>2.86E-03</td>
+      <td>2.38E-04</td>
+      <td>12.00</td>
+      <td>2.16E-11</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Language (French - Dutch)</td>
+      <td>–7.70E-04</td>
+      <td>1.57E-04</td>
+      <td>–4.91</td>
+      <td>5.64E-05</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Phon. Onset – Acoustic</td>
+      <td>5.50E-05</td>
+      <td>1.14E-05</td>
+      <td>4.82</td>
+      <td>3.04E-06</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Phon. Surprisal – Phon. Onset</td>
+      <td>7.90E-05</td>
+      <td>1.14E-05</td>
+      <td>6.91</td>
+      <td>7.51E-11</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Phon. Entropy – Phon. Surprisal</td>
+      <td>1.33E-04</td>
+      <td>1.14E-05</td>
+      <td>11.63</td>
+      <td>2.00E-16</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Word Frequency – Phon. Entropy</td>
+      <td>1.48E-04</td>
+      <td>1.14E-05</td>
+      <td>12.95</td>
+      <td>2.00E-16</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Language: Phon. Onset – Acoustic</td>
+      <td>–3.64E-05</td>
+      <td>1.62E-05</td>
+      <td>–2.25</td>
+      <td>2.55E-02</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>Language: Phon. Surprisal – Phon. Onset</td>
+      <td>–5.97E-05</td>
+      <td>1.62E-05</td>
+      <td>–3.70</td>
+      <td>2.88E-04</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Language: Phon. Entropy – Phon. Surprisal</td>
+      <td>–1.04E-04</td>
+      <td>1.62E-05</td>
+      <td>–6.45</td>
+      <td>9.83E-10</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Language:Word Frequency – Phon. Entropy</td>
+      <td>–1.30E-04</td>
+      <td>1.62E-05</td>
+      <td>–8.07</td>
+      <td>9.12E-14</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+_****<0.0001, ***<0.001, **<0.01, *<0.05._
 
 The formulas used for the LMMs were then:
 
@@ -55,6 +156,138 @@ Averaged reconstruction accuracies were significantly higher in Dutch stories. E
 
 Then we run two separate mixed-effect models for French and Dutch stories with random intercept for subjects and a random slope for models. Each feature incrementally increased averaged reconstruction accuracy compared to previous model for each language (Figure 2A, Figure 2B, Table 2 and Table 3).
 
+**Table 2.**
+ LMM results of reconstruction accuracies for Dutch stories.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>Df</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>2.86E-03</td>
+      <td>2.38E-04</td>
+      <td>23.1</td>
+      <td>11.99</td>
+      <td>2.14E-11</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Phoneme Onset – Acoustic</td>
+      <td>5.50E-05</td>
+      <td>1.49E-05</td>
+      <td>92.0</td>
+      <td>3.70</td>
+      <td>3.63E-04</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Phoneme Surprisal – Phoneme Onset</td>
+      <td>7.90E-05</td>
+      <td>1.49E-05</td>
+      <td>92.0</td>
+      <td>5.32</td>
+      <td>7.41E-07</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Phoneme Entropy – Phoneme Surprisal</td>
+      <td>1.33E-04</td>
+      <td>1.49E-05</td>
+      <td>92.0</td>
+      <td>8.94</td>
+      <td>3.82E-14</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Word Frequency - Phoneme Entropy</td>
+      <td>1.48E-04</td>
+      <td>1.49E-05</td>
+      <td>92.0</td>
+      <td>9.96</td>
+      <td>2.84E-16</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ LMM results of reconstruction accuracies for French stories.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>Df</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>2.09E-03</td>
+      <td>2.09E-04</td>
+      <td>23.0</td>
+      <td>10.00</td>
+      <td>7.54E-10</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Phoneme Onset – Acoustic</td>
+      <td>1.86E-05</td>
+      <td>6.34E-06</td>
+      <td>92.0</td>
+      <td>2.94</td>
+      <td>4.15E-03</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>Phoneme Surprisal – Phoneme Onset</td>
+      <td>1.93E-05</td>
+      <td>6.34E-06</td>
+      <td>92.0</td>
+      <td>3.04</td>
+      <td>3.09E-03</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>Phoneme Entropy – Phoneme Surprisal</td>
+      <td>2.88E-05</td>
+      <td>6.34E-06</td>
+      <td>92.0</td>
+      <td>4.54</td>
+      <td>1.70E-05</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Word Frequency - Phoneme Entropy</td>
+      <td>1.76E-05</td>
+      <td>6.34E-06</td>
+      <td>92.0</td>
+      <td>2.78</td>
+      <td>6.54E-03</td>
+      <td>**</td>
+    </tr>
+  </tbody>
+</table>
+
+_****<0.0001, ***<0.001, **<0.01, *<0.05._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/82386/elife-82386-fig2-v1.jpg)
 
 **Figure 2.:** (A) Accuracy improvement (averaged over the sources in whole brain) by each feature for Dutch Stories (B) Accuracy improvement (averaged over the sources in whole brain) by each feature for French Stories. Braces in Figure A and B shows the significance values of the contrasts (difference between consecutive models, ****<0.0001, ***<0.001, **<0.01, *<0.05) in linear mixed effect models (Tables 2 and 3). Error bars show within subject standard errors. (C) Source points where accuracies of base acoustic model were significantly different than 0 (D) Source points where reconstruction accuracies of the model were significantly different than previous model. Accuracy values shows how much each linguistic feature increased the reconstruction accuracy compared to the previous model.
@@ -63,19 +296,389 @@ Then, we identified the source points that each feature changed the reconstructi
 
 We compared LMMs with and without Hemisphere effect using R’s anova() function. LMM comparison showed that Hemisphere (LMM1 - LMM2 Δχ2 = 4.03, p<0.05, LLM1 Bayesian Information Criterion (BIC): –3331.5, LMM2 BIC: –3329.5) predicted the averaged reconstruction accuracies in Dutch stories but not in French stories. We reported the results of LMM1 in Table 4 and Table 5.
 
+**Table 4.**
+ LMM results of accuracy improvement by linguistic features for Dutch stories.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>df</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>4.22E-05</td>
+      <td>6.83E-06</td>
+      <td>31.58</td>
+      <td>6.18</td>
+      <td>6.83E-07</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>hemisphere_right</td>
+      <td>–1.06E-05</td>
+      <td>5.26E-06</td>
+      <td>167.00</td>
+      <td>–2.02</td>
+      <td>4.55E-02</td>
+      <td>*</td>
+    </tr>
+  </tbody>
+</table>
+
+_****<0.0001, ***<0.001, **<0.01, *<0.05._
+
+**Table 5.**
+ LMM results of accuracy improvement by linguistic features for French stories.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>df</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>5.16E-06</td>
+      <td>3.05E-06</td>
+      <td>41.24</td>
+      <td>1.69</td>
+      <td>9.80E-02</td>
+      <td>.</td>
+    </tr>
+    <tr>
+      <td>hemisphere_right</td>
+      <td>–1.52E-06</td>
+      <td>3.10E-06</td>
+      <td>167.00</td>
+      <td>–0.49</td>
+      <td>6.26E-01</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_****<0.0001, ***<0.001, **<0.01, *<0.05._
+
 In Dutch stories, linguistic features increased the reconstruction accuracy mostly on the left hemisphere however in French stories only Phoneme Onset and Entropy slightly increased the reconstruction accuracies and we couldn’t find any significant lateralization effect.
 
-## Effect of sentence context on neural tracking
+### Effect of sentence context on neural tracking
 
-To investigate the second question, how do higher level cues (sentence and discourse constraint embodied by word entropy) interact with lower level cues (acoustic- and phoneme-level features), words in each story are grouped into low and high entropy conditions. TRFs including all features were estimated for each condition and language on each hemisphere. We compared the reconstruction accuracies of high and low entropy words by subtracting the reconstruction accuracy of the model which has all features except phoneme features from the full model which includes all features. Similarly, to isolate the effect of contextual constraint on acoustic edges, we compared the averaged reconstruction accuracies by subtracting the reconstruction accuracies of the model which has all features except acoustic edges from the full model which includes all features. To compare the reconstruction accuracies averaged over all brain sources in each hemisphere, we fitted a linear mixed model with random intercept for subjects and a random slope for word entropy, language and hemisphere. The LMM with a random slope for all effects did not converge, so we fitted a random slope for language, hemisphere. As we were interested in the interaction between language and word entropy, we evaluated whether adding language and word entropy interaction increased predictive accuracy. Model comparison between a model with and without interaction was done with ANOVA. The formula of the LMM reads:LMM1: Accuracy ∼  Language + Word Entropy + Hemisphere + Word Entropy ∗ Language + (1+ Language + Hemisphere | Subject)LMM2: Accuracy ∼  Language + Word Entropy + Hemisphere + (1+ Language + Hemisphere | Subject)
+To investigate the second question, how do higher level cues (sentence and discourse constraint embodied by word entropy) interact with lower level cues (acoustic- and phoneme-level features), words in each story are grouped into low and high entropy conditions. TRFs including all features were estimated for each condition and language on each hemisphere. We compared the reconstruction accuracies of high and low entropy words by subtracting the reconstruction accuracy of the model which has all features except phoneme features from the full model which includes all features. Similarly, to isolate the effect of contextual constraint on acoustic edges, we compared the averaged reconstruction accuracies by subtracting the reconstruction accuracies of the model which has all features except acoustic edges from the full model which includes all features. To compare the reconstruction accuracies averaged over all brain sources in each hemisphere, we fitted a linear mixed model with random intercept for subjects and a random slope for word entropy, language and hemisphere. The LMM with a random slope for all effects did not converge, so we fitted a random slope for language, hemisphere. As we were interested in the interaction between language and word entropy, we evaluated whether adding language and word entropy interaction increased predictive accuracy. Model comparison between a model with and without interaction was done with ANOVA. The formula of the LMM reads:
+
+$$
+LMM1: Accuracy ∼  Language + Word Entropy + Hemisphere + Word Entropy ∗ Language + (1+ Language + Hemisphere | Subject)
+$$
+
+
+
+$$
+LMM2: Accuracy ∼  Language + Word Entropy + Hemisphere + (1+ Language + Hemisphere | Subject)
+$$
 
 Model comparison showed that language and word entropy interaction predicted the averaged reconstruction accuracies of phoneme features (LMM1 vs LMM2: Δχ2 = 15.315, p<0.00001) and also acoustic edges (LMM1 vs LMM2: Δχ2 = 33.92, p<0.00001). We found a significant main effect both for Language (p<0.001) and Word Entropy (p<0.0001), and interaction between them (p<0.0001). There was a significant main effect of Hemisphere for Acoustic Edges (p=0.045) but not for Phoneme Features. Interaction of reconstruction accuracies averaged over whole brain between language and word entropy are shown in Figure 3A for acoustic edges and 3-B for phoneme features. LMM results are shown in Table 6 and Table 7.
+
+**Table 6.**
+ LMM results of reconstruction accuracies for Phoneme features.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>df</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>8.68E-04</td>
+      <td>8.17E-05</td>
+      <td>26.4</td>
+      <td>10.62</td>
+      <td>5.11E-11</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>French</td>
+      <td>–8.49E-04</td>
+      <td>6.75E-05</td>
+      <td>35.1</td>
+      <td>–12.58</td>
+      <td>1.46E-14</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Low Word Entropy</td>
+      <td>–2.69E-04</td>
+      <td>4.21E-05</td>
+      <td>118.0</td>
+      <td>–6.38</td>
+      <td>3.65E-09</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Right Hemisphere</td>
+      <td>1.22E-04</td>
+      <td>9.96E-05</td>
+      <td>23.0</td>
+      <td>1.23</td>
+      <td>2.33E-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>French: Low Word Entropy</td>
+      <td>3.74E-04</td>
+      <td>5.96E-05</td>
+      <td>118.0</td>
+      <td>6.29</td>
+      <td>5.69E-09</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 7.**
+ LMM results of reconstruction accuracies for Acoustic Edges.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>df</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>6.83E-05</td>
+      <td>1.66E-05</td>
+      <td>32.8</td>
+      <td>4.11</td>
+      <td>2.45E-04</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>French</td>
+      <td>8.85E-05</td>
+      <td>1.10E-05</td>
+      <td>141.0</td>
+      <td>8.03</td>
+      <td>3.48E-13</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Low Word Entropy</td>
+      <td>–6.08E-05</td>
+      <td>1.10E-05</td>
+      <td>141.0</td>
+      <td>–5.52</td>
+      <td>1.61E-07</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Right Hemisphere</td>
+      <td>4.11E-05</td>
+      <td>1.94E-05</td>
+      <td>23.0</td>
+      <td>2.12</td>
+      <td>4.49E-02</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td>French: Low Word Entropy</td>
+      <td>–9.54E-05</td>
+      <td>1.56E-05</td>
+      <td>141.0</td>
+      <td>–6.12</td>
+      <td>8.76E-09</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+_****<0.0001, ***<0.001, **<0.01, *<0.05._
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82386/elife-82386-fig3-v1.jpg)
+
+**Figure 3.:** Light orange and light green represent Low Word Entropy condition, dark orange and dark green represent High Word Entropy condition for Dutch and French stories, respectively. (A) Reconstruction accuracy interaction between word entropy and language for acoustic features (B) Reconstruction accuracy interaction between word entropy and language for phoneme features (Braces in Figure A and B indicate the significant different between high and low entropy word conditions, ****<0.0001, ***<0.001, **<0.01, *<0.05. Error bars shows within subject standard errors.) (C-D) Acoustic Edge TRFs on left hemisphere (LH) and right hemisphere (RH) (E-F) Phoneme Features TRFs on LH and RH. Lines on the graphs in Figure C-F show the mean and shaded areas show the standard error of the mean. (G) Sources where the main effect of Language and Word Entropy, and interaction are found.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82386/elife-82386-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Phoneme Onset TRF (B) Phoneme Surprisal TRF (C) Phoneme Entropy TRF Lines on the graphs in Figure A-C show the mean and shaded areas show the standard error of the mean. (D) Sources where the main effect of Language and Word Entropy, and interaction are found.
 
 To examine the contribution of each feature to tracking performance, we compared the TRFs of each feature by running a mass-univariate repeated measures ANOVA on source data to see the main effect of language and word entropy, while also modeling their interaction. Before the statistical analysis, we took the power of TRF weights and smoothed for 2 voxels (Gaussian window, SD = 14 mm) to compensate for head movements of participants. The multiple comparisons problem was handled with a cluster-level permutation test across space and time with 8000 permutations (Oostenveld et al., 2011). Figure 3C, D, E and F shows the averaged TRFs over all source points of acoustic edge and phoneme features (phoneme onset, phoneme surprisal, and phoneme entropy). For all TRF components, we found a significant main effect of language, word entropy and interaction between them on both hemispheres. Significant source clusters of main effects and interactions for each feature are shown in Figure 3G. To show each contrast on the same scale, percentage of power of weights was calculated for each hemisphere.
 
 Power of weights of high entropy words are greater than low entropy word in each speech feature TRF. As opposed to phoneme features, in acoustic edge TRF, power of weights in French stories are greater than in Dutch stories. Interaction between language and word entropy ends earlier for acoustic edges compared to phoneme features. Acoustic Edge TRF peaks around 80ms and 200ms for both languages, whereas phoneme features TRF has a peak around 80ms for both languages but there is a second peak between 200ms and 600ms in Dutch stories.
 
 We validated our analysis on the next 4 Dutch story parts and found the same effects with the reconstruction accuracies and weights of TRFs (Table 8, Table 9 and Figure 4).
+
+**Table 8.**
+ LMM results of reconstruction accuracies for Phoneme Features (Next 4 Dutch Story Parts).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>Df</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>8.14E-05</td>
+      <td>7.03E-06</td>
+      <td>39.1</td>
+      <td>11.57</td>
+      <td>3.36E-14</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>French</td>
+      <td>–8.00E-05</td>
+      <td>5.62E-06</td>
+      <td>141.0</td>
+      <td>–14.23</td>
+      <td>2.00E-16</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Low Word Entropy</td>
+      <td>–5.00E-05</td>
+      <td>5.62E-06</td>
+      <td>141.0</td>
+      <td>–8.89</td>
+      <td>2.61E-15</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Right Hemisphere</td>
+      <td>–5.32E-06</td>
+      <td>7.61E-06</td>
+      <td>23.0</td>
+      <td>–0.70</td>
+      <td>4.91E-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>French: Low Word Entropy</td>
+      <td>3.67E-05</td>
+      <td>7.95E-06</td>
+      <td>141.0</td>
+      <td>4.61</td>
+      <td>8.87E-06</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 9.**
+ LMM results of reconstruction accuracies for Acoustic Edges (Next 4 Dutch Story Parts).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>Std. Error</th>
+      <th>df</th>
+      <th>t value</th>
+      <th>Pr(&gt;|t|)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>8.38E-05</td>
+      <td>1.70E-05</td>
+      <td>32.0</td>
+      <td>4.93</td>
+      <td>2.44E-05</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>French</td>
+      <td>7.70E-05</td>
+      <td>1.09E-05</td>
+      <td>141.0</td>
+      <td>7.06</td>
+      <td>7.15E-11</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Low Word Entropy</td>
+      <td>–8.18E-05</td>
+      <td>1.09E-05</td>
+      <td>141.0</td>
+      <td>–7.49</td>
+      <td>6.76E-12</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td>Right Hemisphere</td>
+      <td>3.30E-05</td>
+      <td>1.92E-05</td>
+      <td>23.0</td>
+      <td>1.72</td>
+      <td>9.89E-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>French: Low Word Entropy</td>
+      <td>–7.44E-05</td>
+      <td>1.54E-05</td>
+      <td>141.0</td>
+      <td>–4.82</td>
+      <td>3.66E-06</td>
+      <td>***</td>
+    </tr>
+  </tbody>
+</table>
+
+_****<0.0001, ***<0.001, **<0.01, *<0.05._
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82386/elife-82386-fig4-v1.jpg)
+
+**Figure 4.:** Light orange and light green represent Low Word Entropy condition, dark orange and dark green represent High Word Entropy condition for Dutch and French stories, respectively. (A) Reconstruction accuracy interaction between word entropy and language for acoustic features. (B) Reconstruction accuracy interaction between word entropy and language for phoneme features. (Braces in Figure A and B indicate the significant different between high and low entropy word conditions, ****<0.0001, ***<0.001, **<0.01, *<0.05. Error bars shows within subject standard errors.) (C-D) Acoustic Edge TRFs on left hemisphere (LH) and right hemisphere (RH). (E-F) Phoneme Features TRFs on LH and RH. Lines on the graphs in Figure C-F show the mean and shaded areas show the standard error of the mean. (G) Sources where the main effect of Language and Word Entropy, and interaction are found.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82386/elife-82386-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Phoneme Onset TRF (B) Phoneme Surprisal TRF (C) Phoneme Entropy TRF Lines on the graphs in Figure A-C show the mean and shaded areas show the standard error of the mean.(D) Sources where the main effect of Language and Word Entropy, and interaction are found.
 
 We also run new models with changing time lags and computed the model accuracy improvement by each feature (See Models with varying time lags in Materials and methods Section) Figures 5 and 6 shows the reconstruction accuracy improvement by each feature for each time window. On x axis, accuracy of each time windows is shown on their center time. For example, for the window between –100ms and 0ms, it’s shown on t=0.05 s. Red bar below shows the time intervals when there was a significant interaction between language and word entropy. Analysis results shows that word entropy modulated the encoding of phoneme onset more in the comprehended language between 200 and 750ms in LH and RH, between 150 and 650ms in LH and between 0 and 600ms in RH for phoneme surprisal, and it was between 550ms and 650ms in LH for phoneme entropy.
 
@@ -105,74 +708,265 @@ In this study, to disassociate the effects of word entropy and word frequency, w
 
 Another limitation of our study is that linear regression modeling does not allow the dissociation of the weights of highly correlated features. When we compared the TRF weights of phoneme onset, surprisal and entropy separately between the set of the first four and the second four Dutch story parts, we saw that TRF weights of these features showed differences (Figure 3—figure supplement 1, Figure 4—figure supplement 1). However, acoustic-edge features and averaged phoneme-level features were highly consistent between different story parts, as acoustic and averaged phoneme features are not as correlated as phoneme onset, phoneme surprisal and phoneme entropy (Figure 3 and Figure 4). Thus, it would be problematic to interpret how language comprehension and sentence and discourse level constraint affects these features separately. As alternative solution to this problem, we also fitted different models with varying time lags separated by 50ms with a 100ms sliding window between –100 and 800ms and also compared the reconstruction accuracies of these models instead of TRF weights. Results showed that word entropy modulated the encoding of phoneme onset and phoneme surprisal for a longer time, starting earlier compared to phoneme entropy.
 
-## Conclusion
+### Conclusion
 
 In this study, we show that modeling phoneme-level linguistic features in addition to acoustic features better reconstructs the neural tracking response to spoken language, and that this improvement is even more pronounced in the comprehended language, likely reflecting the transformation of acoustic features into phoneme-level representations when a language is fully comprehended. Although acoustic edges are important for speech tracking, internally generated phonemes are more strongly encoded in comprehended language. This suggests that language comprehension can be seen as a neural filter over acoustic edges of the speech signal in the service of transforming sensory input into abstract linguistic units. We demonstrated that low sentence- and discourse-level constraints enhanced the neural encoding of both acoustic and phoneme features. When language is not comprehended, the neural encoding of acoustic features was stronger, likely due to the absence of comprehensive lexical access and interpretation, including higher level linguistic structure formation, in addition to the recognition of single, highly frequent function words (viz., the/a) in isolation. When a language is comprehended from speech, phoneme features were more strongly encoded in the neural response compared to when it is not comprehended. Only in the comprehended language, phoneme features aligned with the phase of neural signal between 200 and 600ms, and this is effect was stronger when the context was less constraining and more information must be extracted from the sensory signal. This pattern of results may reflect the persistence of phoneme-related neural activity before a word is recognized and phoneme-level information can be inhibited. Relying more on low-level features when high-level cues are not reliable, and suppressing low-level information when contextual cues are informative could be a strategy for the brain to utilize its resources in an efficient way toward its behavioral goal. In summary, our results support an account of language comprehension where the flexible modulation of the acoustic and phonemic features by lexical, sentential, and discourse-level information is instrumental in the transformation of sensory input into interpreted linguistic structure and meaning.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We collected MEG data from 24 participants between 18 and 58 years old (average age: 31.17 years, 18 F and 6 M) while they were listening audiobooks in Dutch and French. They were all right handed native Dutch speakers with either no or very little French proficiency. Four of the participants reported that they can only comprehend a full French sentence only if it is spoken very slowly or it is a very simple sentence. Rest of the participants reported they cannot comprehend a full sentence. This study was approved by the ethical Commission for human research Arnhem/Nijmegen (project number CMO2014/288). Participants were reimbursed for their participation.
 
-## Stimuli
+### Stimuli
 
 The stimuli (Table 10) consisted of one story by Hans Christian Andersen, two stories by the Brothers Grimm in Dutch and one story by Grimm, one by E.A. Poe, and one by Andersen in French. (Kearns, 2015; Hart, 1971) All stories are divided into 5–6 min story parts (9 story parts in Dutch, 4 story parts in French). The stories are presented in a randomized order to the participants. After each part, participants were asked to answer five multiple-choice comprehension questions. For our analysis, we used the first four story parts in each language to balance the length of data in each language. Then we repeated the same analysis for second four part of Dutch stories.
 
-## Data acquisition
+**Table 10.**
+ Stimuli.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Story Part</th>
+      <th>Language</th>
+      <th>Duration</th>
+      <th>Speaker</th>
+      <th>Parts used in analysis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anderson_S01_P01</td>
+      <td>NL</td>
+      <td>4 min 58 s</td>
+      <td>Woman 1</td>
+      <td>Dutch Part 1</td>
+    </tr>
+    <tr>
+      <td>Anderson_S01_P02</td>
+      <td>NL</td>
+      <td>5 min 17 s</td>
+      <td>Woman 1</td>
+      <td>Dutch Part 1</td>
+    </tr>
+    <tr>
+      <td>Anderson_S01_P03</td>
+      <td>NL</td>
+      <td>4 min 49 s</td>
+      <td>Woman 1</td>
+      <td>Dutch Part 1</td>
+    </tr>
+    <tr>
+      <td>Anderson_S01_P04</td>
+      <td>NL</td>
+      <td>5 min 50 s</td>
+      <td>Woman 1</td>
+      <td>Dutch Part 1</td>
+    </tr>
+    <tr>
+      <td>Grimm_23_1</td>
+      <td>NL</td>
+      <td>5 min 3 s</td>
+      <td>Woman 2</td>
+      <td>Dutch Part 2</td>
+    </tr>
+    <tr>
+      <td>Grimm_23_2</td>
+      <td>NL</td>
+      <td>5 min 32 s</td>
+      <td>Woman 2</td>
+      <td>Dutch Part 2</td>
+    </tr>
+    <tr>
+      <td>Grimm_23_3</td>
+      <td>NL</td>
+      <td>5 min 2 s</td>
+      <td>Woman 2</td>
+      <td>Dutch Part 2</td>
+    </tr>
+    <tr>
+      <td>Grimm_20_1</td>
+      <td>NL</td>
+      <td>6 min 6 s</td>
+      <td>Woman 2</td>
+      <td>Dutch Part 2</td>
+    </tr>
+    <tr>
+      <td>ANGE_part1</td>
+      <td>FR</td>
+      <td>4 min 34 s</td>
+      <td>Woman 3</td>
+      <td>French Part 1</td>
+    </tr>
+    <tr>
+      <td>BALL_part1</td>
+      <td>FR</td>
+      <td>4 min 58 s</td>
+      <td>Woman 3</td>
+      <td>French Part 1</td>
+    </tr>
+    <tr>
+      <td>EAUV_part1</td>
+      <td>FR</td>
+      <td>5 min 43 s</td>
+      <td>Man 1</td>
+      <td>French Part 1</td>
+    </tr>
+    <tr>
+      <td>EAUV_part2</td>
+      <td>FR</td>
+      <td>6 min 1 s</td>
+      <td>Man 1</td>
+      <td>French Part 1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data acquisition
 
 Brain activity of participants were recorded using magnetoencephalography (MEG) with a 275-sensor axial gradiometer system (CTF Systems Inc) in a magnetically shielded room. Before presenting each story part, 10 s of resting state data were recorded. All stimuli were presented audibly by using the Psychophysics Toolbox extensions of Matlab (Brainard, 1997; Pelli, 1997; Kleiner et al., 2007) while participants were fixating a cross in the middle of the presentation screen. MEG data were acquired at a sampling frequency of 1200 Hz. Head localization was monitored during the experiment using marker coils placed at the cardinal points of the head (nasion, left and right ear canal) and head position was corrected before each story part presentation to keep it at the same position as at the beginning of the experiment. Bipolar Ag/AgCl electrode pairs were used to record electrooculogram (EOG) and electrocardiogram (ECG). In addition to MEG data, we also acquired T1-weighted structural MR images using a 3 T MAGNETOM Skyra scanner (Siemens Healthcare, Erlangen, Germany). Lastly, three-dimensional coordinates of each participants head surface was measured using a digitizing pen system (Polhemus Isotrak system, Kaiser Aerospace Inc).
 
-## MEG data preprocessing
+### MEG data preprocessing
 
 MEG data were analyzed using mne-python (version 0.23.1). First, data were annotated to exclude the response parts from the rest of the analysis, then ﬁltered between 0.5 and 40 Hz with one-pass, zero-phase, non-causal FIR ﬁlter using the default settings of mne-python. Bad channels were removed using mne implementation of Maxwell filtering, and removed channels were interpolated. Then data were resampled to 600 Hz and ocular and cardiac artifacts were removed with independent components analysis. Each story part segments were cropped from preprocessed data and source localization was done separately for each part. Before the source localization, each part was low pass filtered at 8 Hz with one-pass, zero-phase, non-causal FIR ﬁlter.
 
 Individual head models were created for each participant with their structural MR images with Freesurfer (surfer.nmr.mgh.harvard.edu) and were co-registered to the MEG coordinate system with mne coregistration utility. A surface-based source space was computed for each participant using fourfold icosahedral subdivision. Cortical sources of the MEG signals were estimated using noise-normalized minimum norm estimate method, called dynamic statistical parametric map (dSPM). Orientations of the dipoles were constrained to be perpendicular to the cortical surface. Resting state data before the presentation of each story part (130 s in total) were used to calculate the noise covariance matrix. Lastly, source time courses were resampled at 100 Hz.
 
-## Predictor variables
+### Predictor variables
 
-## Acoustic features
+#### Acoustic features
 
 Acoustic features (8 band gammatone spectrogram and an 8-band acoustic onset spectrogram, both covering frequencies from 20 to 5000 Hz in equivalent rectangular bandwidth (ERB) space) for each story part were generated using Eelbrain toolbox (Brodbeck et al., 2021).
 
-## Phoneme onsets
+#### Phoneme onsets
 
 Phoneme onsets were extracted from the audio files of the stories automatically using the forced alignment tool from WebMAUS Basic module of the BAS Web Services (Schiel, 1999; Strunk et al., 2014).
 
-## Phoneme surprisal and entropy
+#### Phoneme surprisal and entropy
 
-Probabilities of each phoneme in a given word was calculated according to the probability distribution over the lexicon of each language weighted by the occurrence frequency of each word. When each phoneme unfolds in a word, it reduces the number of possible words in the cohort and generates a subset of cohorti. Conditional probability of each phoneme Phi given the previous phoneme equals to the ratio of total frequencies of the words in the remaining cohort to previous cohort.PPhiPh(i-1) =∑word ∈ cohortifreqword(i)/∑word ∈ cohort(i-1)freqword(i-1)
+Probabilities of each phoneme in a given word was calculated according to the probability distribution over the lexicon of each language weighted by the occurrence frequency of each word. When each phoneme unfolds in a word, it reduces the number of possible words in the cohort and generates a subset of cohorti. Conditional probability of each phoneme Phi given the previous phoneme equals to the ratio of total frequencies of the words in the remaining cohort to previous cohort.
 
-The surprisal of phoneme Phi is inversely related to the likelihood of that phoneme.SPhiCohort(i) = - log2 (P(Phi))
+$$
+PPh_{i}Ph_{(i-1)} =\sumword \in cohort_{i}freq_{word}(i)/\sumword \in cohort_{(i-1)}freq_{word}(i-1)   
+$$
 
-The entropy of phoneme Phi quantifies the uncertainty about the next phoneme Phi+1. It is calculated by taking the average of expected surprisal values of all possible phonemes.E(Phi|Cohort(i))=∑PhAll phonemes− P(Ph|cohort(i−1)) ∗ log2 (P(Ph|cohort(i−1)))
+The surprisal of phoneme Phi is inversely related to the likelihood of that phoneme.
+
+$$
+SPh_{i}Cohort_{(i)} = - log_{2} (P(Ph_{i}))
+$$
+
+The entropy of phoneme Phi quantifies the uncertainty about the next phoneme Phi+1. It is calculated by taking the average of expected surprisal values of all possible phonemes.
+
+$$
+E(Ph_{i}|Cohort_{(i)})=\sumPhAll phonemes− P(Ph|cohort_{(i−1)}) ∗ log_{2} (P(Ph|cohort_{(i−1)}))
+$$
 
 To calculate the probabilities of phonemes, we used SUBTLEX-NL dictionary (Keuleers et al., 2010) for Dutch stories and Lexique383 dictionary (9_freqfilms from subtitles) for French stories. Both dictionaries were filtered to eliminate the words which contains nonalphabetic characters. French dictionary had 92.109 words, so the same number of most frequent words also selected from Dutch dictionary. Words in the dictionaries are transformed into phonemic transcription by using the g2p module of The BAS Web Services (Schiel, 1999; Schiel, 2015).
 
-## Word frequency
+#### Word frequency
 
-Word frequency features were calculated by taking negative logarithm of word frequencies varying between 0 and 1 which were calculated as word occurrence per 1,000,000 words in SUBTLEX-NL dictionary (Keuleers et al., 2010) for Dutch stories and Lexique383 dictionary (9_freqfilms from subttitles) for French stories (New et al., 2001).Word Freq = - log2 (Freqi)
+Word frequency features were calculated by taking negative logarithm of word frequencies varying between 0 and 1 which were calculated as word occurrence per 1,000,000 words in SUBTLEX-NL dictionary (Keuleers et al., 2010) for Dutch stories and Lexique383 dictionary (9_freqfilms from subttitles) for French stories (New et al., 2001).
 
-## Word entropy
+$$
+Word Freq = - log_{2} (Freq_{i})
+$$
 
-To quantify the uncertainty about the next word given previous 30 words, we used the transformer-based language model GPT-2 which were fine tuned for Dutch (de Vries and Nissim, 2020) and French (Louis, 2020). Entropy values for each word were calculated from the probability distribution generated by the GPT-2 language model.E(Wordi|Context(i−30:i−1))=∑TAll tokens− P(T|Context(i−30:i−1)) ∗ log2 (P(T|Context(i−30:i−1)))
+#### Word entropy
+
+To quantify the uncertainty about the next word given previous 30 words, we used the transformer-based language model GPT-2 which were fine tuned for Dutch (de Vries and Nissim, 2020) and French (Louis, 2020). Entropy values for each word were calculated from the probability distribution generated by the GPT-2 language model.
+
+$$
+E(Word_{i}|Context_{(i−30:i−1)})=\sumTAll tokens− P(T|Context_{(i−30:i−1)}) ∗ log_{2} (P(T|Context_{(i−30:i−1)}))
+$$
 
 Words in each story part were divided into two conditions; high and low word entropy, so that each condition has equal length of signal in each story part (Figure 1).
 
-## Linear encoding models
+### Linear encoding models
 
 Four different models were built by incrementally adding each phonemic feature on top of acoustic control features. Model names and features included in models are shown in Table 11.
 
-Temporal response functions (TRF) were computed for each model, subject and source using the Eelbrain toolbox (Brodbeck et al., 2021). For each model, corresponding speech features were shifted by T lags between –100ms and 800ms from the onset of each phoneme. With 50ms wide Hamming windows at 100 Hz sampling rate that yields T=90 time points. MEG response at time t yitnj=1N (N=5,124 virtual current source, i: subject number, tn: time point) was predicted by convolving the TRF with predictor features shifted by T time delays xftn-τkf=1F (F: number of speech features in the model). βijfτk is the TRF of ith subject, jth source point, fth speech features at kth latency.yij(tn)=∑f=1F∑k=1Tβijf(τk)xf(tn−τk)
+**Table 11.**
+ Model names and speech features in models.
 
-All predictors and MEG signals were normalized by dividing by the absolute mean value. To estimate TRFs, boosting algorithm of Eelbrain toolbox was used to minimize the l1 error using a fivefold cross-validation procedure. We used the early stopping from the toolbox. It uses a validation set which is distinct from the test set to stop training when the error starts to increase to prevent overfitting (Brodbeck et al., 2021). As there were four French story parts, we only used the first four Dutch story parts. Total duration of French stories was 21 min 17 s and it was 20 min 54 s for Dutch stories. Then we repeated the same analysis with the next four Dutch story parts. Total duration of the next four Dutch stories was 21 min 43 s.
 
-## Model accuracy comparison
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Spectrogram</th>
+      <th>Acoustic Edge</th>
+      <th>Phoneme Onset</th>
+      <th>Phoneme Surprisal</th>
+      <th>Phoneme Entropy</th>
+      <th>Word Frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acoustic</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phoneme Onset</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phoneme Surprisal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phoneme Entropy</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Word Frequency</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+Temporal response functions (TRF) were computed for each model, subject and source using the Eelbrain toolbox (Brodbeck et al., 2021). For each model, corresponding speech features were shifted by T lags between –100ms and 800ms from the onset of each phoneme. With 50ms wide Hamming windows at 100 Hz sampling rate that yields T=90 time points. MEG response at time t $y_{i}t_{n}_{j=1}^{N}$ (N=5,124 virtual current source, i: subject number, tn: time point) was predicted by convolving the TRF with predictor features shifted by T time delays $x_{f}t_{n}-\tau_{k}_{f=1}^{F}$ (F: number of speech features in the model). $\beta_{ijf}\tau_{k}$ is the TRF of ith subject, jth source point, fth speech features at kth latency.
+
+$$
+y_{i}^{j}(t_{n})=\sumf=1F\sumk=1T\beta_{ijf}(\tau_{k})x_{f}(t_{n}−\tau_{k})
+$$
+
+All predictors and MEG signals were normalized by dividing by the absolute mean value. To estimate TRFs, boosting algorithm of Eelbrain toolbox was used to minimize the $l1 error$ using a fivefold cross-validation procedure. We used the early stopping from the toolbox. It uses a validation set which is distinct from the test set to stop training when the error starts to increase to prevent overfitting (Brodbeck et al., 2021). As there were four French story parts, we only used the first four Dutch story parts. Total duration of French stories was 21 min 17 s and it was 20 min 54 s for Dutch stories. Then we repeated the same analysis with the next four Dutch story parts. Total duration of the next four Dutch stories was 21 min 43 s.
+
+### Model accuracy comparison
 
 To evaluate the effect of adding each feature on top of acoustic features on the reconstruction accuracy, proportion of the explained variance values on each source point were smoothed (Gaussian window, SD = 14 mm) and a linear mixed model with random slope for subjects were fitted for the average reconstruction accuracy values of each model on each hemisphere using the lmer function in the lme4 package for R.
 
 To identify the brain region where a specific feature increased model accuracy, model accuracies on each source point for each model were compared with the model accuracies of previous model that has all other speech features except the features of interest using a mass-univariate two-tailed related sample t-test with threshold-free cluster enhancement (TFCE) (Smith and Nichols, 2009).
 
-## Models with varying time lags
+### Models with varying time lags
 
 We also run new models with changing time lags and computed the model accuracy improvement by each feature by subtracting the reconstruction accuracy of a model from the previous model which does not have the feature of interest as it was done in the first analysis where we showed the additional contribution of each feature to the reconstruction accuracy. We use 17 different time lags separated by 50ms with a 100ms sliding window between –100 and 800ms. We then compared the averaged reconstruction accuracies over whole brain of high and low word entropy conditions of each language (French and Dutch) with a cluster-level permutation test across time with 8000 permutations.

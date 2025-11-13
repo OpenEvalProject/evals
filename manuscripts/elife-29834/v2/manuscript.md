@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.29834.001 The physiological functions of microtubules (MTs) are poorly understood in many differentiated cell types. We developed a genetic toolkit to study MT dynamics and function in diverse cells. Using TRE-EB1-GFP mice, we found that MT dynamics are strongly suppressed in differentiated keratinocytes in two distinct steps due to alterations in both growth rate and lifetime. To understand the functions of these MT populations, we developed TRE-spastin mice to disrupt MTs in specific cell types. MT perturbation in post-mitotic keratinocytes had profound consequences on epidermal morphogenesis. We uncoupled cell-autonomous roles in cell flattening from non-cell-autonomous requirements for MTs in regulating proliferation, differentiation, and tissue architecture. This work uncovers physiological roles for MTs in epidermal development, and the tools described here will be broadly useful to study MT dynamics and functions in mammals.
+The physiological functions of microtubules (MTs) are poorly understood in many differentiated cell types. We developed a genetic toolkit to study MT dynamics and function in diverse cells. Using TRE-EB1-GFP mice, we found that MT dynamics are strongly suppressed in differentiated keratinocytes in two distinct steps due to alterations in both growth rate and lifetime. To understand the functions of these MT populations, we developed TRE-spastin mice to disrupt MTs in specific cell types. MT perturbation in post-mitotic keratinocytes had profound consequences on epidermal morphogenesis. We uncoupled cell-autonomous roles in cell flattening from non-cell-autonomous requirements for MTs in regulating proliferation, differentiation, and tissue architecture. This work uncovers physiological roles for MTs in epidermal development, and the tools described here will be broadly useful to study MT dynamics and functions in mammals.
 
 ## Introduction
 
@@ -24,19 +24,93 @@ The mammalian epidermis develops from a single layer of proliferative basal cell
 
 ## Results
 
-## Visualizing microtubule dynamics during differentiation in vivo with the TRE-EB1 mouse
+### Visualizing microtubule dynamics during differentiation in vivo with the TRE-EB1 mouse
 
 To visualize and quantify microtubule dynamics in vivo, we generated a transgenic mouse containing a cassette encoding a GFP-tagged copy of the microtubule plus-tip tracking protein EB1 under the tetracycline-responsive element (TRE) promoter (Figure 1A). With this line, EB1-GFP expression can be temporally controlled through doxycycline exposure and spatially controlled via cell- or tissue-specific tTA/rtTA lines (Urlinger et al., 2000) or tissue-specific Cre lines paired with the Rosa-rtTA line (Hochedlinger et al., 2005). After screening founders by assaying EB1-GFP induction in primary keratinocytes, we chose a line with mosaic expression (hereafter referred to as TRE-EB1) to allow precise resolution of single cells in a complex tissue field.
 
 We generated CMV-rtTA; TRE-EB1 embryos to visualize microtubule dynamics in keratinocytes during progressive differentiation transitions with sub-cellular resolution (Figure 1B, Figure 1—figure supplement 1A). Importantly, we did not observe any cell morphology or tissue architecture phenotypes associated with EB1-GFP expression using this system. Microtubules in basal keratinocytes grew from the cell center to the periphery in a roughly radial orientation, in agreement with previous data that the centrosome is the primary MTOC in these cells (Figure 1C, Video 1) (Lechler and Fuchs, 2007). In spinous cells, clear radial organization was lost, and microtubules were observed growing in all directions (Figure 1C, Video 2). Despite the reorientation of microtubule growth in spinous cells, EB1 density was unaffected by this initial differentiation transition (Figure 1—figure supplement 1B). Similar to spinous cells, microtubules in granular cells grow throughout the cytoplasm in all directions (Figure 1C, Video 3). However, the density of EB1-GFP puncta was higher in granular cells, and projections over time revealed that microtubules in these cells exhibited greatly reduced dynamics (Figure 1C,D). Treatment of embryos with nocodazole eliminated the GFP puncta, strongly suggesting that these EB1-GFP comets mark plus-ends of very slowly growing and/or paused microtubules (Figure 1—figure supplement 1C).
 
+![Video 1.](https://cdn.elifesciences.org/articles/29834/elife-29834-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/29834/elife-29834-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/29834/elife-29834-video3.mp4.jpg)
+
 Quantification of microtubule growth distances revealed a gradual decrease in motility over keratinocyte differentiation (Figure 1E, Table 1). Surprisingly, this gradual decrease in microtubule growth distance was due to two changes in microtubule behavior that occurred at distinct differentiation transitions. At the basal to spinous cell transition, microtubule growth speed was relatively unaffected, although there was a minor increase in growth speed in spinous cells (basal mean growth speed 11.1 ± 3.1 µm/min versus spinous mean growth speed 12.2 ± 3.3 µm/min) (Figure 1F, Table 1). These growth rates were similar to those observed in vivo in cells of the C. elegans egg-laying apparatus and in mouse muscle (Lacroix et al., 2014; Oddoux et al., 2013). In contrast, microtubule growth speeds were strongly suppressed as spinous cells differentiated into granular cells (granular mean growth speed 7.1 ± 3.7 µm/min) (Figure 1F, Table 1). Examination of the persistence of a single EB1-GFP puncta revealed that growth duration was significantly shorter in spinous versus basal keratinocytes (Figure 1G). The growth duration was unchanged between spinous and granular cells. The short growth periods likely reflect pause and/or catastrophe events that cannot be discriminated because EB1-GFP marks only growing microtubules. While there was no correlation between the growth speed and duration (R2 = 0.002–0.19) or the growth speed and distance (R2 = 0.004–0.2), there was a clear correlation between the length of time an EB1-GFP puncta moved and how far it traveled in basal (R2 = 0.87) and spinous cells (R2 = 0.85), as would be expected for microtubules polymerizing at a constant speed (Figure 1—figure supplement 2). Interestingly, this correlation is greatly reduced in granular cells (R2 = 0.23), (Figure 1—figure supplement 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram of the TRE-EB1-GFP transgene. (B) Cross-section of e17.5 CMV-rtTA; TRE-EB1 epidermis. Scale-20μm. (C) Representative standard deviation projections of a basal, spinous, and granular keratinocyte. Scale-10μm. (D) Kymographs of EB1-GFP in indicated cell types. Scale-1µm. (E) Quantification of microtubule growth distance. (F) Quantification of microtubule growth speed. (G) Quantification of duration of microtubule growth. n = 160 microtubules for each stage. Data are presented as mean ± S.E.M. n.s.-p>0.05, *p<0.05. ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) EB1-GFP labeling of a mitotic spindle at sub-cellular resolution in a basal keratinocyte. Scale-5µm. (B) Quantification of EB1-GFP density in indicated cell types. n = 25 cells for each cell type. (C) Single frame of EB1-GFP in granular cells in e17.5 embryos treated with either DMSO or nocodazole. Scale-10µm. Data are represented as mean ± S.E.M. n.s.-p>0.05, ***p<0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Note the loss of correlation between growth distance and duration in granular cells.
+
+**Table 1.**
+ Quantifications of microtubule parameters in indicated cell types.Data are represented as mean ± standard deviation. n = 160 microtubules for each cell type.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>EB1 density (puncta/100 µm2)</th>
+      <th>Mean growth distance (µm)</th>
+      <th>Mean growth speed (µm/min)</th>
+      <th>Mean growth duration (s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">In vivo</td>
+      <td>Basal</td>
+      <td>9.1 ± 2.1</td>
+      <td>3.1 ± 1.77</td>
+      <td>11.09 ± 3.11</td>
+      <td>17.84 ± 10.98</td>
+    </tr>
+    <tr>
+      <td>Spinous</td>
+      <td>8.68 ± 2.3</td>
+      <td>2.1 ± 1.5</td>
+      <td>12.2 ± 3.27</td>
+      <td>10.24 ± 6.32</td>
+    </tr>
+    <tr>
+      <td>Granular</td>
+      <td>17.39 ± 4.64</td>
+      <td>0.89 ± 0.57</td>
+      <td>7.1 ± 3.66</td>
+      <td>8.49 ± 4.33</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Primary</td>
+      <td>Basal</td>
+      <td>3.56 ± 1.17</td>
+      <td>6.74 ± 3.9</td>
+      <td>29.23 ± 9.19</td>
+      <td>14.63 ± 9.11</td>
+    </tr>
+    <tr>
+      <td>Suprabasal</td>
+      <td>4.23 ± 1.76</td>
+      <td>5.31 ± 3.34</td>
+      <td>31.46 ± 7.97</td>
+      <td>10.15 ± 5.62</td>
+    </tr>
+  </tbody>
+</table>
 
 To assess the importance of quantifying microtubule dynamics in vivo, we compared the microtubule dynamics we observed during differentiation in intact embryos to dynamics in cultured primary keratinocytes. Primary keratinocytes begin to stratify when cultured, forming a proliferative basal layer and a single, post-mitotic, ‘suprabasal’ layer, which recapitulates some of the features of spinous cell differentiation (Muroyama et al., 2016). Absolute polymerization rates were dramatically increased in isolated cells, suggesting that microtubule dynamics are altered as primary cells initiate a wound-healing response in culture, as has been noted for cell-cell junctions (Figure 1D–G) (Foote et al., 2013). Interestingly, although the absolute polymerization rate was greatly increased, the overall trends across all three measured parameters consistently mirrored the trends seen at the basal to spinous transition in vivo (Figure 1E–G). These data highlight that while there is some utility in assessing microtubule dynamics in cultured cells, they do not fully recapitulate the physiological setting.
 
 Taken together, we have established the TRE-EB1-GFP mouse line as a tool to visualize and quantify microtubule behavior in single cells in vivo in mice. We used this line to make qualitative observations about microtubule organization during differentiation that confirmed that microtubules reorganize into non-centrosomal arrays as basal cells differentiate. Interestingly, by following microtubule dynamics over distinct differentiation transitions, we demonstrate that pause/catastrophe events are initially increased as basal cells differentiate into spinous cells. As spinous cells mature into granular cells, microtubule polymerization rates are strongly suppressed and the occurrence of very slow growing microtubules increases significantly. To determine the functions of these distinct populations of microtubules, we next created a transgenic tool to disrupt their organization.
 
-## Development of TRE-spastin to genetically perturb MTs in vivo
+### Development of TRE-spastin to genetically perturb MTs in vivo
 
 Because loss-of-function approaches that specifically target differentiated cells are not always feasible in tissues that rapidly turn over, we pursued a gain-of-function strategy to disrupt microtubule organization via spastin overexpression (OE). Spastin is a single-subunit microtubule severing protein whose overexpression is sufficient to dramatically perturb microtubule organization in numerous cell types (Le Droguen et al., 2015; Quintin et al., 2016; Sherwood et al., 2004). Therefore, we placed the highly active M85 spastin isoform with an N-terminal HA tag under the TRE promoter, hereafter referred to as TRE-spastin (Figure 2A) (Solowska et al., 2008).
 
@@ -48,7 +122,7 @@ We validated the utility of this method in keratinocytes transfected with K14-rt
 
 Next, we generated TRE-spastin transgenic mice to genetically perturb MT organization in vivo. To validate that spastin OE can (1) be temporally controlled and (2) disrupt microtubules in tissue, we globally induced spastin OE by administering doxycycline to CMV-rtTA; TRE-spastin mice. We detected robust spastin OE in CMV-rtTA; TRE-spastin mice within 24 hr of doxycycline administration, and we did not detect HA expression in doxycycline-treated TRE-spastin mice (Figure 2E). CMV-rtTA; TRE-spastin mice rapidly lost weight and had macroscopic alterations to some organs (Figure 2F and data not shown). Importantly, spastin OE greatly reduced α-tubulin signal in all tissues assayed; often only small fragments of MTs remained following spastin induction (Figure 2G,H). In addition to cytoplasmic microtubules, spastin OE also dramatically shortened cilia, although it is unclear if this treatment shortens existing cilia or perturbs new cilia growth (Figure 2G). Therefore, the TRE-spastin mouse can be used to genetically perturb microtubule organization in vivo to assess the functional roles for microtubules in numerous tissues.
 
-## Microtubule disruption in proliferative cells of the mammalian epidermis
+### Microtubule disruption in proliferative cells of the mammalian epidermis
 
 Next, we used the TRE-spastin mouse to understand how microtubules in distinct cell populations influence epidermal development. We generated K14-rtTA; TRE-spastin mice and induced spastin OE in proliferative basal keratinocytes (Figure 3A). Between 20–40% of basal cells overexpressed spastin using this strategy (Figure 3B). Spastin OE perturbed microtubule organization in basal cells and, as expected, induced a dramatic increase in mitotically arrested cells in mutant tissue (Figure 3C–E). Only spastin-positive cells in mutant tissue had uniformly unaligned, condensed chromosomes, demonstrating that spastin OE in basal keratinocytes caused a mitotic arrest in a cell-autonomous manner (Figure 3F). Consequently, we observed increased apoptosis, presumably due to mitotic catastrophe, and a tissue-wide hyper-proliferative response to maintain progenitor number (Figure 3G,H). At this level of induction, the tissue remained architecturally normal with no detectable barrier defects, demonstrating that the epidermis is highly robust to perturbations in basal keratinocytes (Figure 3I).
 
@@ -58,17 +132,41 @@ Next, we used the TRE-spastin mouse to understand how microtubules in distinct c
 
 Interestingly, we noted spastin-positive cells in the upper layers of the epidermis after several days of induction in the K14-rtTA; TRE-spastin line. These suprabasal spastin-positive cells expressed keratin 5/14, which are normally exclusively expressed in basal keratinocytes (Figure 3J). As we have not detected any mis-expression of the K14-rtTA transgene, this result suggests that spastin-expressing cells delaminated from the basement membrane. Indeed, we identified many mitotically arrested cells that appeared to be in the process of delaminating, suggesting that spastin-positive cells in the suprabasal layers were generated, at least partially, through delamination (Figure 3K). Thus, the epidermis eliminates mitotically arrested cells from the proliferative niche either through apoptosis or delamination. Areas with numerous suprabasal spastin-positive cells displayed local thickening, suggesting that disruption of microtubules in suprabasal keratinocytes may more severely disrupt epidermal architecture (Figure 3J). Therefore, we next sought to specifically perturb microtubule organization in post-mitotic suprabasal cells, where their functions are unknown.
 
-## Generation of K10-rtTA to specifically induce expression in suprabasal keratinocytes in vivo
+### Generation of K10-rtTA to specifically induce expression in suprabasal keratinocytes in vivo
 
 Few tools currently exist to control transgene expression specifically in the suprabasal layers of the mammalian epidermis. Therefore, we generated a BAC transgenic in which rtTA is expressed from a large region of the keratin 10 promoter (Figure 4—figure supplement 1A). Using TRE-H2B-GFP mice, we validated that K10-rtTA faithfully recapitulates endogenous K10 expression in both embryos and adults (Figure 4—figure supplement 1A). K10-rtTA induction was observed in e14.5 epidermis, as stratification commences, and was robustly and uniformly induced by e15.5 (Figure 4—figure supplement 1B) (Tumbar et al., 2004). Robust expression was observed in all K10-expressing tissues assayed, with the exception of the embryonic dorsal tongue, which only exhibited minimal induction (Figure 4—figure supplement 1C,D). Importantly, H2B-GFP expression was only detected in cells that endogenously express K10, demonstrating that our K10-rtTA line is a powerful tool to reliably control expression exclusively in post-mitotic suprabasal cells, thereby bypassing any potential mitotic abnormalities that may result from perturbations utilizing the widely adopted K14-rtTA and K5/14-Cre systems.
 
-## Disruption of MTs in differentiated cells induces epidermal hyperproliferation and profound architecture defects
+### Disruption of MTs in differentiated cells induces epidermal hyperproliferation and profound architecture defects
 
 To understand the functions of non-centrosomal MTs in the differentiated cells of the epidermis, we used K10-rtTA; TRE-spastin mice to overexpress spastin in post-mitotic spinous and granular cells from e16.5 (Figure 4A). We confirmed that spastin expression was confined to post-mitotic suprabasal keratinocytes by HA staining and found that spastin was expressed on average in 77% of suprabasal cells (Figure 4B). Mutant neonates were recognizable from control littermates, and some exhibited flaky skin (Figure 4—figure supplement 2A). Surprisingly, spastin OE in K10-rtTA; TRE-spastin mice led to a severe thickening of the epidermis and disruptions to epidermal architecture (Figure 4C–E), phenotypes not predicted by prior studies. Therefore, we concentrated on understanding the mechanisms by which MTs in suprabasal cells control tissue morphology.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig4-v2.jpg)
+
+**Figure 4.:** (A) Alleles used to overexpress spastin in suprabasal keratinocytes. (B) Images and quantification of HA-spastin expression in control and K10-rtTA; TRE-spastin epidermis. Asterisks indicate autofluorescence of the cornified envelope. Scale-25µm. Quantification is the percentage of suprabasal cells expressing spastin averaged over 5 different mice. (C) Hematoxylin and eosin staining of control and K10-rtTA; TRE-spastin tissue. Note the cornified envelope thickness. Scale-25µm. (D) Quantification of epidermal thickness in control and K10-rtTA; TRE-spastin mice. Each column is 120 measurements from 4 mice per genotype. (E) Quantification of the number of cell layers present in control and K10-rtTA; TRE-spastin epidermis. n = 100 measurements from 4 mice per genotype. (F) Quantification of BrdU+ basal cells in control and K10-rtTA; TRE-spastin epidermis. n = 4 mice per genotype. (G) Cell rounding is observed in a cell-autonomous manner in K10-rtTA; TRE-spastin tissue. Scale-25μm. Zoomed regions show a spastin-negative and a spastin-positive cell within K10-rtTA; TRE-spastin tissue. Note the accompanying aspect ratios (AR). Scale-10μm. (H) Quantification of the aspect ratio of individual control and spastin-positive cells. n = 100 cells for each group. (I). Spastin-positive granular cells remain flattened after short spastin induction. Scale-10µm. (J) Isolated granular cells treated with DMSO or nocodazole. Scale-10µm. (K) Example of an entotic cell in K10-rtTA; TRE-spastin epidermis. Scale-25μm. (L) Quantification of the number of entotics per mm of basement membrane. n = 4 mice per genotype. (M) Example of an entosis where the invading cell has up-regulated phospho-myosin light chain II. The dotted line marks the cell outlines. Scale-10μm. (N) Example of cell potentially invading its neighbor. Scale-10µm. (O) Examples of types of entosis observed in K10-rtTA; TRE-spastin epidermis. Scale-10μm. Data are presented as mean ± S.E.M. *p<0.05, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Alleles and experimental scheme used to validate K10-rtTA expression. (B) K10-rtTA induction begins at e14.and is uniform by e15.5. Scale-25μm. (C) Examples of robust K10-rtTA induction in multiple tissues in P0 pups. Scale (backskin, top)−200 μm. Scale (paw, bottom left)−200 μm. Scale (back skin, tongue, palate, tail, bottom right)−25 μm. (D) Examples of robust K10-rtTA induction across multiple tissues in adult (P30) mice. Note that in the tail, where endogenous K10 is restricted to the interscale region, H2B-GFP expression is only observed in interscale regions. Scale-25μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) P0 control and K10-rtTA; TRE-spastin mice. (B) Cleaved caspase-3 staining in control and K10-rtTA; TRE-spastin epidermis. (C) Quantification of cleaved-caspase-3-positive cells in control and K10-rtTA; TRE-spastin epidermis. n = 4 mice for each genotype. (D) Epidermal cross-sections stained for markers of stress (K6), stratification (K5/14 and K10), and terminal differentiation (loricrin and filaggrin). All scale bars are 25 μm. Data are presented as mean ± S.E.M. n.s.-p>0.05.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) HA-spastin cells in the K14-rtTA; TRE-spastin epidermis fail to flatten, in contrast to their wild-type neighbors. Asterisk indicates autofluorescence from cornified envelope. Scale-25µm. Zoomed regions with associated aspect ratios for outlined cells are shown below. Scale-10µm. (B) Quantification of the aspect ratio of individual control and spastin-positive cells. n > 100 cells for each group. *p<0.05, ***p<0.001.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Scale-25µm.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Cross-section of adult (P45) epidermis in control and K10-rtTA; TRE-spastin mice demonstrating epidermal thickening in the mutant. (B) Spastin OE in adult mice causes a thickening of the suprabasal, K10-positive layers of the interfollicular epidermis. Dashed lines indicate the basement membrane. All scale bars are 10 µm.
+
 We found that the increased thickness of the mutant epidermis was associated with an increase in the number of cell layers (Figure 4E). This increase in cell number was due to a specific hyperproliferation of basal progenitor cells, as no proliferation was noted in the suprabasal cell compartment (Figure 4F). These data demonstrate a non-cell-autonomous response of the progenitor cells to microtubule loss in their differentiated progeny. Hyperproliferation was not caused by elevated apoptosis, as apoptosis was not significantly increased (Figure 4—figure supplement 2B,C). Stratification occurred normally, as K5/14+ basal cells remained in a single layer above the basement membrane, but there was a dramatic thickening of the K10 +layers (Figure 4—figure supplement 2D). Taken together, our data indicate that spastin OE in differentiated keratinocytes causes dramatic hyperproliferation within the basal layer, leading to a severe thickening of all of the differentiated layers of the tissue. While barrier defects are known to induce compensatory proliferation of basal cells, we show below that the effects seen here are independent of barrier loss.
 
-## Microtubules are required for differentiation-induced cell-shape changes
+### Microtubules are required for differentiation-induced cell-shape changes
 
 While hyperproliferation contributes to the epidermal thickening in mutant tissue, closer examination revealed that thickening was additionally driven by changes to cell shape. As keratinocytes transition from spinous to granular cells, they adopt a flattened shape that, when viewed in cross-section, is highly anisotropic (spinous mean aspect ratio (AR) = 1.88; granular mean AR = 5.08). Currently, little is known about how this cell-shape change is controlled. Strikingly, differentiating spastin-positive cells were incapable of properly flattening (spinous AR = 1.72 versus granular AR = 1.89) (Figure 4G,H). Cell-shape defects were cell-autonomous, as wild-type cells in K10-rtTA; TRE-spastin epidermis were still able to flatten, although were sometimes distorted by their spastin-positive neighbors. Identical cell-shape defects were also seen in granular cells expressing HA-spastin in K14-rtTA; TRE-spastin mice (Figure 4—figure supplement 3). These cell-shape changes were not due to gross loss of adherens junctions, as we noted no obvious disruptions to cortical E-cadherin localization in mutant tissue (Figure 4—figure supplement 4). This is consistent with E-cadherin loss-of-function mutants, which are still able to undergo squamous morphogenesis (Tinkle et al., 2004; Tunggal et al., 2005). Additionally, granular cell markers were still induced in the proper layers, indicating that inability to flatten is not due to a general block in differentiation (Figure 4—figure supplement 2D). These data reveal an unexpected role for microtubules in differentiation-induced cell flattening in the epidermis. Interestingly, these phenotypes were not observed upon deletion of type II myosins or core actin regulators such as the Arp2/3 complex (Sumigray et al., 2012 ;Zhou et al., 2013), suggesting that changes in granular cell morphology are not driven by alterations in acto-myosin contractility and demonstrating a role for MTs in this process.
 
@@ -76,21 +174,41 @@ To address whether MTs are required for initial flattening and/or maintenance of
 
 While adherens junctions appeared normal in the mutant epidermis, we were also interested in whether desmosomes, which are known upstream regulators of microtubule organization (Lechler and Fuchs, 2007; Sumigray et al., 2011), were perturbed and could underlie the cell-shape defects observed in K10-rtTA; TRE-spastin suprabasal cells. While some data in cultured cells suggests MTs are required for desmosome assembly, other studies have found little to no effect of MT disruption on desmosome formation in culture (Nekrasova et al., 2011; Pasdar et al., 1992; Simard-Bisson et al., 2017; Sumigray et al., 2011). We found a significant loss of cortical desmosomal protein staining (including DSG1, desmoplakin, and DSC2/3) in the spastin OE epidermis (Figure 5A–C). Ultrastructural analysis confirmed that desmosomes were smaller in K10-rtTA; TRE-spastin epidermis compared to control tissue (Figure 5D). Surprisingly, however, loss of cortical desmosomal components was non-cell autonomous; line-scan analysis confirmed that cortical localization of desmoplakin and DSC2/3 were similarly disrupted between two spastin-positive, one spastin-positive and one control, and two control cells in K10-rtTA; TRE-spastin epidermis (Figure 5B,C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig5-v2.jpg)
+
+**Figure 5.:** (A) Immunofluorescence of desmosome components in control and K10-rtTA; TRE-spastin epidermis. Scale-25µm. (B,C) Quantifications of desmoplakin and DSC2/3 immunofluorescence at cell-cell boundaries between indicated cell pairs in K10-rtTA; TRE-spastin epidermis. n = 40 pairs from 2 mice for each pair type. (D) Transmission electron micrographs of desmosomes in control and K10-rtTA; TRE-spastin epidermis. Scale-500nm. (E) A pair of spastin-positive cells in K14-rtTA; TRE-spastin epidermis showing that spastin expression does not intrinsically alter cortical desmoplakin localization. Scale-10µm. (F) Quantification of desmoplakin immunofluorescence at cell-cell boundaries between indicated cell pairs in K14-rtTA; TRE-spastin epidermis with sparse HA-spastin suprabasal cells. Control (n = 25 pairs), HA+/HA+ (n = 15 pairs), HA+/HA- (n = 26 pairs), and HA-/HA- (n = 36 pairs) from 2 mice for each pair type.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Desmoplakin immunofluorescence in P0 control and K14-rtTA; TRE-spastin epidermis with a high number of spastin-expressing suprabasal cells. (B) Quantification of desmoplakin immunofluorescence between indicated cell pairs in control or K14-rtTA; TRE-spastin epidermis with many suprabasal spastin-positive cells. Control (n = 33 pairs), HA+/HA+ (n = 32 pairs), HA+/HA- (n = 33 pairs), HA-/HA- (n = 28 pairs) from 2 mice for each cell pair. (C) Cortical DSG1 localization is maintained in individual spastin-positive suprabasal cells (indicated by asterisks). (D) Cortical DSG1 expression is perturbed in K14-rtTA; TRE-spastin epidermis when a large number of suprabasal cells overexpress spastin. All scale bars are 25 µm.
+
 To determine whether microtubule disruption could intrinsically influence desmosome assembly, we examined pairs of spastin-positive cells surrounded by wild-type neighbors in K14-rtTA; TRE-spastin mice, where the percentage of spastin-expressing cells was lower. Desmoplakin localization was normal between these single spastin OE pairs within otherwise wild-type cells, arguing that microtubule disruption does not autonomously alter desmosome assembly in the epidermis (Figure 5E,F). However, in areas where a significant number of cells expressed HA-spastin, we saw the same desmosomal phenotypes as those observed in the K10-rtTA; TRE-spastin line (Figure 5—figure supplement 1A,B). Similarly, desmoglein-1 was also maintained at cell borders of single spastin expressing cells in the K14-rtTA; TRE-spastin line and was globally lost in areas where many suprabasal cells expressed spastin (Figure 5—figure supplement 1C,D). Therefore, the observed desmosome defects are not a primary effect of microtubule disruption, but rather are a tissue-wide response to it. Examination of spastin-positive cell pairs also clearly demonstrated that the cell-shape changes are not secondary to desmosome dysfunction, as these spastin OE cells with normal cortical desmoplakin levels also fail to flatten (Figure 5E). Finally, because basal cell hyperproliferation is not seen in desmoplakin-mutant skin, the progenitor hyperproliferation we observe in K10-rtTA; TRE-spastin epidermis is not likely to be secondary to desmosome disruption.
 
 Strikingly, microtubule disruption resulted in a remarkable number of entosis-like structures in both the spinous and granular layers (Figure 4K,L). Imaging whole-cell volumes provided further evidence that the cell-in-cell structures strongly resemble entotic events (Video 4). Canonical entosis is an active invasion of one cell into the cytoplasm of another as it loses substrate attachment (Overholtzer et al., 2007). We observed invading cells with elevated pMLC-2, consistent with an active actin-based entotic invasion (Figure 4M). Additionally, we observed F-actin based protrusions that appeared to be invading into neighboring cells, potentially reflecting the initial stages of entosis (Figure 4N). Entotic events ranged from entosis of a single spastin+ cell to what appeared to be concentric rings of cells, suggesting multiple layers of entosis (Figure 4O). We did not observe any examples of a wild-type cell within a spastin+ cell. Taken together, our data demonstrate that microtubules prevent entosis in vivo, although the underlying mechanism remains unknown. One possibility is that without microtubules, differentiated keratinocytes cannot flatten and consequently invade one another, potentially due to imbalances in membrane tension. Other possibilities, such as a stress and/or transcriptional responses, may also underlie this phenomenon. This phenotype was not noted in desmoplakin-null epidermis (Vasioukhin et al., 2001), again suggesting that this is not secondary phenotype associated with adhesion defects.
 
+![Video 4.](https://cdn.elifesciences.org/articles/29834/elife-29834-video4.mp4.jpg)
+
+**Video 4.:** Phalloidin marks the cell outlines.
+
 The phenotypes described above – thickening of the epidermis and cell-shape defects – were also found upon disruption of microtubules in the adult epidermis, demonstrating that these phenotypes are not specific to embryonic development. Rather, microtubules are similarly essential for the homeostasis of the epidermis throughout life (Figure 4—figure supplement 5).
 
-## Non-centrosomal microtubules are required for proper corneocyte formation but are dispensable for barrier function
+### Non-centrosomal microtubules are required for proper corneocyte formation but are dispensable for barrier function
 
 Next, we wanted to assess whether the profound disruptions to epidermal architecture upon microtubule loss resulted in impaired barrier function. Epidermal barrier function is conferred through both tight junctions, which form in the granular layer, and the cornified envelopes, which are composed of enucleated, highly cross-linked corneocytes. Immunostaining for the tight junction proteins ZO-1 and occludin did not reveal any defects in spastin-positive cells or K10-rtTA; TRE-spastin tissue, demonstrating that microtubules are not required for localization of tight junction proteins in the mammalian epidermis (Figure 6—figure supplement 1A–C). Additionally, tight junctions halted biotin diffusion in mutant tissue, demonstrating that tight junction function is not observably impaired upon microtubule disruption (Figure 6—figure supplement 1D).
 
 We noted that microtubule perturbation in K10-rtTA; TRE-spastin embryos caused formation of an abnormally thick cornified envelope (Figure 6A). By TEM, the thickened mutant CE was electron dense and many cytoplasmic remnants were observed, demonstrating a defect in corneocyte formation (Figure 6B). We confirmed that a subset of cytoplasmic proteins was retained in corneocytes in mutant back skin (Figure 6C). Retention of cytoplasmic components appeared to be cell autonomous, as we observed clear co-localization of the irregular staining with spastin-positive corneocytes (Figure 6D). Isolation of the cornified envelopes confirmed that spastin OE caused severe defects in corneocyte morphology (Figure 6E,F).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig6-v2.jpg)
+
+**Figure 6.:** (A) CE is thickened in K10-rtTA; TRE-spastin tissue. Red lines indicate CE thickness. Scale-10µm. (B) Transmission electron micrographs of cornified envelopes in control and K10-rtTA; TRE-spastin epidermis. Scale-500nm. (C) Examples of protein localization in the corneocytes of K10-rtTA; TRE-spastin mice. All images are inverted fluorescence (black indicates signal). All of the indicated proteins are absent in wild-type corneocytes. Scale-10µm. (D) Spastin expression cell-autonomously causes abnormal retention of cytoplasmic proteins. Scale-10μm. (E) Isolated corneocytes from control and K10-rtTA; TRE-spastin mice. Scale-25μm. (F) Quantification of isolated cornified envelopes. n = 40 random fields from 4 mice for each genotype. (G) X-gal barrier assay on e18.5 control and K10-rtTA; TRE-spastin embryos. (H) Epidermal cross-sections from e16.5 control and K10-rtTA TRE-spastin embryos, stained for the differentiation marker filaggrin. Scale-25μm. (I) Premature differentiation is non-cell autonomous in K10-rtTA; TRE-spastin epidermis. Filaggrin is induced in both spastin-positive and spastin-negative cells in prematurely differentiating K10-rtTA; TRE-spastin epidermis. Spastin-positive cells in the spinous layer do not induce filaggrin. Scale-25μm. (J) K10-rtTA; TRE-spastin e16.5 embryos prematurely form an epidermal barrier. Data are presented as mean ± S.E.M. ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29834/elife-29834-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) ZO-1 localization in control and K10-rtTA; TRE-spastin epidermis. Scale-25µm. (B) Region where spastin-positive cells are next to spastin-negative cells in K10-rtTA; TRE-spastin tissue. Note that ZO-1 is still cortically localized in spastin-positive cells. Scale-10µm. (C) Localization of occludin at the cell cortex is maintained in K10-rtTA; TRE-spastin epidermis. Scale-10µm. (D) Biotin diffusion is blocked by occludin in K10-rtTA; TRE-spastin epidermis. Scale-10µm.
+
 Because of the numerous cornified envelope defects, we performed a barrier assay to test epidermal exclusion of X-gal. Surprisingly, despite the numerous morphological defects in corneocytes, K10-rtTA; TRE-spastin embryos formed a fully functional barrier by e18.5, consistent with the fact that these mice survive postnatally (Figure 6G). We speculate that the thickening of the stratum corneum compensates for abnormal corneocyte formation. That said, our data reveal a previously unrecognized role for microtubules in the proper formation of the cornified envelope, which could either be a direct effect on corneocyte assembly or secondary to cell shape defects in granular cells.
 
-## Microtubule disruption causes premature epidermal differentiation and barrier formation
+### Microtubule disruption causes premature epidermal differentiation and barrier formation
 
 Having identified cell-autonomous and non-cell-autonomous functions for microtubules late in embryonic development, we turned to understand how microtubules influence the earlier stages of epidermal differentiation. We analyzed K10-rtTA; TRE-spastin embryos where spastin induction began at e14.5 as stratification commences. Surprisingly, the epidermis in mutant embryos was severely thickened even by e16.5, demonstrating that basal-cell hyperproliferation is a rapid response to suprabasal microtubule disruption, even before the barrier normally forms (Figure 6H). Concurrent with thickening, mutant epidermis exhibited signs of premature differentiation, including robust expression of the granular marker filaggrin, ZO-1, and the presence of cornified envelopes (Figure 6H and data not shown). Premature differentiation was not confined to spastin-positive cells; wild-type cells in e16.5 K10-rtTA; TRE-spastin epidermis also expressed filaggrin in the upper layers of the tissue (Figure 6I). We performed the X-gal exclusion assay on e16.5 embryos to determine if premature differentiation in K10-rtTA; TRE-embryos resulted in premature barrier formation. Interestingly, while control embryos had no barrier function at this stage, the back skin of K10-rtTA; TRE-spastin embryos had already formed a functional barrier (Figure 6J). Therefore, microtubule disruption in suprabasal cells during early epidermal stratification unexpectedly induces premature differentiation and barrier formation, potentially through dramatic tissue thickening.
 
@@ -106,7 +224,7 @@ One of the clear strengths of the TRE-spastin mouse is the ability to distinguis
 
 ## Materials and methods
 
-## Mice and tissues
+### Mice and tissues
 
 All mice were maintained in accordance with Duke IACUC-approved protocols. To generate the TRE-EB1-GFP transgenic mouse line, EB1-GFP was digested out of K14-EB1-GFP with SacII and NotI and ligated into pTre2 cut with the same (Muroyama et al., 2016). MAPRE1 is the official name for the gene encoding Eb1. The XhoI site next to the SapI site in pTre2 was mutated using site-directed mutagenesis (pTre XhoI mut). Proper doxycycline-dependent expression of the TRE-EB1-GFP vector was verified in cultured keratinocytes co-transfected with a K14-rtTA plasmid and placed in doxycycline-containing media for 16 hr. TRE-EB1-GFP was linearized using XhoI and was used by the Duke Transgenic Core to generate transgenics via pronuclear injection.
 
@@ -116,44 +234,44 @@ To generate the K10-rtTA transgenic mouse line, the rtTA sequence was cloned beh
 
 Additional mouse lines used in this study were K14-rtTA (Nguyen et al., 2006), CMV-rtTA (Jackson labs), EMTB-GFP (Lechler and Fuchs, 2007) and TRE-H2B-GFP (Tumbar et al., 2004). For BrdU experiments, BrdU (10 mg/kg) was injected into adult mice, pregnant dams (for embryos) or neonatal pups. Animals were sacrificed one hour after BrdU injection for tissue dissection and processing.
 
-## Mouse keratinocytes
+### Mouse keratinocytes
 
 All keratinocytes used were primary cells isolated from newborn mouse backskin. Full thickness backskin was treated with dispase II (Roche, Indianapolis, IN) overnight at 4°C and isolated epidermis was trypsin treated to generate single cells.
 
-## Cornified envelope preparations
+### Cornified envelope preparations
 
 Cornified envelopes were isolated as previously described (Sumigray et al., 2011). Epidermis was isolated from P0 mice and boiled in 10 mM Tris (pH 7.4), 1% β-mercaptoethanol, and 1% SDS. Remaining corneocytes were pelleted and resuspended in PBS. Resuspended corneocytes were placed on slides for imaging.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Isolated P0 back skins were fixed in EM fix buffer (2% glutaraldehyde, 4% paraformaldehyde, 1 mM CaCl2, 0.05M cacodylate pH 7.4) for one hour at room temperature and then were placed at 4°C. Subsequent fixation, embedding, and sectioning were performed as previously described (Sumigray et al., 2011).
 
-## X-gal barrier assay
+### X-gal barrier assay
 
 For the X-gal barrier assay, e18.5 embryos were placed into an X-gal solution (1 mg/ml X-gal, 1.3 mM MgCl2, 100 mM NaH2PO4, 3 mM K3Fe[CN]6, 0.01% sodium-deoxycholate, 0.2% NP-40). After 5 hr, embryos were washed with PBS and photographed.
 
-## Biotin barrier assay
+### Biotin barrier assay
 
 To assess tight junction barrier function, P0 mouse pups were injected with 50 µl of 10 mg/ml NHS-biotin. After 30 min, pups were sacrificed and back skins were isolated and frozen in OCT. Biotin was detected using Streptavidin-FITC (Invitrogen).
 
-## Cell culture
+### Cell culture
 
 Stable wild-type keratinocytes were maintained in E low Ca2+ media at 37°C. Plasmid transfection was performed using the Mirus transfection reagent (Mirus).
 
-## Granular cell isolation and drug treatment
+### Granular cell isolation and drug treatment
 
 Granular cells were isolated from P0 mice. Epidermis was isolated by placing back skin into Dispase II (2.8 units/ml) for 1 hr at 37°C and 5% CO2. Isolated epidermis was then placed into 0.25% Trypsin-EDTA with rotating for 1 hr to effectively isolate granular cells. Cells were washed with PBS, pelleted, and then resuspended in E low Ca2+ media with either DMSO or 10 mg/ml nocodazole and placed at 37°C and 5% CO2 for 1 hr. Cells were fixed in 4% PFA and stained with Rhodamine Ulex Europaeus Agglutinin one for visualization.
 
-## Staining and antibodies
+### Staining and antibodies
 
 Tissue was embedded in OCT, frozen, and sectioned using a cryostat. Depending on the antibodies used, tissue sections were fixed either with room-temperature 4% PFA for seven minutes or ice-cold methanol for two minutes. Slides were washed with PBS + 0.2% Triton-X and blocked with BSA, NGS, and NDS before adding the primary antibody. The following primary antibodies were used in this study: rat anti-HA (11867423001, Sigma-Aldrich), rat anti-α-tubulin (sc-53029, Santa Cruz), rabbit anti-keratin 6 (PRB-169P, Covance), chicken anti-keratin 5/14 (generated in the Lechler lab), rabbit anti-keratin 10 (905401, Covance), rabbit anti-filaggrin (905801, Biolegend), rabbit anti-loricrin (kind gift from Colin Jamera), rat anti-BrdU (ab6326, Abcam), rabbit anti-active-caspase-3 (AF835, R and D systems), rat anti-β4 integrin (553745, BD Biosciences), rat anti-ECCD2 (kind gift from Colin Jamora), rabbit anti-keratin 1 (kind gift from Colin Jamora), mouse anti-desmoplakin (CBL173, Chemicon/Millipore), mouse anti-desmocollin-2/3 (clone 7G6, Santa Cruz), mouse anti-desmoglein-1 (610273, BD Biosciences), rabbit anti-phospho-myosin light chain 2 (Thr18/Ser19) (3674, Cell Signaling), rabbit anti-occludin (ab3172, Abcam), rabbit anti-ZO-1 (61–7300, Zymed/Invitrogen), rabbit anti-centrin1 (ab101332, Abcam), mouse anti-acetylated tubulin (T7451, Sigma-Aldrich), Rhodamine Ulex Europaeus Agglutinin 1 (RL-1062, Vector Laboratories). F-actin was visualized using fluorescently conjugated Phalloidin (A12379, Invitrogen and P1951, Sigma-Aldrich).
 
-## Image acquisition
+### Image acquisition
 
 Images of the K14-rtTA; TRE-spastin keratinocytes and mice were acquired on a Zeiss Axio Imager microscope with Apotome attachment with the following objective lenses: 20x Plan-Apo 0.8 NA lens, 40x Plan-Neofluar 1.3 NA oil lens, and 63x Plan-Apo 1.4 NA oil lens. Images were acquired using AxioVision software. All images of the K10-rtTA; TRE-spastin mice were acquired on a Zeiss Axio Imager microscope with Apotome 2 attachment and Axiocam 506 mono camera with the same objectives. When making intensity measurement comparisons, all images within one experiment were taken with identical exposure times.
 
 Movies of EB1-GFP in CMV-rtTA; TRE-EB1 embryos were acquired on an Andor XD revolution spinning disc confocal microscope at 37°C and 5% CO2 using a 60x Plan-Apo 1.2 NA water objective. Briefly, embryos (e11.5 (for basal), e15.5 (for spinous), or e17.5 (for granular)) were dissected and placed onto glass-bottom dishes (MatTek) in E media for imaging. EB1-GFP movies were acquired at 1 frame per second. Embryos were used for a maximum of one hour after isolation. Images on the spinning disc microscope were acquired using MetaMorph software. For imaging EB1-GFP in isolated, primary keratinocytes, epidermis was isolated from P0 back skin by overnight incubation in dispase (1 U/ml). Keratinocytes were isolated by incubation in 1:1 0.25% trypsin-EDTA:versene and plated onto glass-bottom dishes in E no Ca2+ media supplemented with 0.5 mM Ca2+ for 48 hr before imaging. Images of EB1-GFP in isolated, primary keratinocytes were acquired on a Leica DMI6000 microscope at 37°C and 5% CO2 using a 63x Plan-Apo 1.4–0.6 NA oil objective. These images were acquired using SimplePCI software. For DMSO and nocodazole experiments, embryos were first screened for EB1-GFP expression on the Leica DMI6000 microscope, placed into E media with 10 μg/ml nocodazole or DMSO for 30 min at 37°C and then imaged on the spinning disc microscope.
 
-## Image quantification
+### Image quantification
 
 All image quantification was done using FIJI software. EB1-GFP comets were tracked manually by marking the starting and ending positions of an EB1 comet and noting the number of frames during which the comet was visible. All EB1 tracks were considered to be straight lines, and any that deviated sharply or curved were excluded from the analysis. For quantifying EB1 comet density, the number of EB1 comets was counted and the cell cytoplasm was manually outlined to calculate the cellular area. For quantification of α-tubulin intensity in K14-rtTA; TRE-spastin keratinocytes, each cell was outlined and the average HA and α-tubulin intensities were obtained for each cell. The mean intensities for each cell were then normalized to the maximum value in the picture (HA from spastin+ cells and α-tubulin from control cells). Aspect ratios for the differentiation-induced cell shape changes were calculated by tracing individual cells and using the measurement option in FIJI. Line-scan analysis of desmoplakin and desmocollin2/3 was performed by manually drawing 5 pixel-wide lines across cell-cell boundaries and calculating the mean fluorescence intensities at each point along the lines. Maxima were aligned and the ends were trimmed to yield the final line scan. All statistical analysis was performed using GraphPad Prism 5 software.

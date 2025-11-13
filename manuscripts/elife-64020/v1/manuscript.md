@@ -34,13 +34,174 @@ As a source of patient-specific, high-quality images of coronary plaques for thi
 
 ## Results
 
-## Population and lesion characteristics
+### Population and lesion characteristics
 
 Of the 20 patients with type 2 diabetes enrolled in this study, 10 underwent coronary angiography due to acute coronary syndrome and 10 due to chronic coronary syndrome. All selected patients with acute coronary syndromes showed plaque rupture as the morphological correlate. Patients with (n = 10) and without (n = 10) plaque rupture did not differ with respect to their clinical characteristics, apart from a worse glycemic control in patients with plaque rupture (HbA1c: 7.4 ± 1.4 vs. 6.1 ± 0.5, p=0.026). As expected, ruptured lesions presented a lower FCT (minimal FCT: 49 ± 10 µm vs. 97 ± 15 µm, p<0.001; mean FCT: 94 ± 17 µm vs. 133 ± 12 µm, p=0.006), a more extensive necrotic lipid core (lipid arc: 178 ± 39° vs. 110 ± 8°, p=0.001; lipid volume index: 9876 ± 3088 vs. 3853 ± 1294, p=0.011), and a higher incidence of thin-capped fibroatheromas (70% vs. 0%, p=0.003) compared to non-ruptured lesions.
 
 Patients and lesions characteristics are reported in Table 1.
 
-## Stress analysis in ruptured and non-ruptured plaques
+**Table 1.**
+ Patients and lesions characteristics.Abbreviations: BMI = body mass index, FCT = fibrous cap thickness, TCFA = thin-capped fibroatheroma.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Non-ruptured</th>
+      <th>Ruptured</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>n = 10</td>
+      <td>n = 10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clinical characteristics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male sex (n, %)</td>
+      <td>8 (80%)</td>
+      <td>8 (80%)</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>68 ± 7</td>
+      <td>70 ± 10</td>
+      <td>0.689</td>
+    </tr>
+    <tr>
+      <td>Hypertension (n, %)</td>
+      <td>10 (100%)</td>
+      <td>9 (90%)</td>
+      <td>0.305</td>
+    </tr>
+    <tr>
+      <td>Hyperlipidemia (n, %)</td>
+      <td>7 (70%)</td>
+      <td>6 (60%)</td>
+      <td>0.639</td>
+    </tr>
+    <tr>
+      <td>Nicotine use (n, %)</td>
+      <td>3 (30%)</td>
+      <td>4 (40%)</td>
+      <td>0.639</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>33 ± 5</td>
+      <td>30 ± 7</td>
+      <td>0.230</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol (mg/dl)</td>
+      <td>172 ± 43</td>
+      <td>165 ± 33</td>
+      <td>0.663</td>
+    </tr>
+    <tr>
+      <td>LDL-c (mg/dl)</td>
+      <td>106 ± 41</td>
+      <td>101 ± 32</td>
+      <td>0.724</td>
+    </tr>
+    <tr>
+      <td>HDL-c (mg/dl)</td>
+      <td>39 ± 6</td>
+      <td>39 ± 6</td>
+      <td>0.972</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dl)</td>
+      <td>161 ± 62</td>
+      <td>180 ± 108</td>
+      <td>0.640</td>
+    </tr>
+    <tr>
+      <td>HbA1c (%)</td>
+      <td>6.1 ± 0.5</td>
+      <td>7.4 ± 1.4</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>hsCRP</td>
+      <td>5.0 ± 2.3</td>
+      <td>26.7 ± 46.9</td>
+      <td>0.175</td>
+    </tr>
+    <tr>
+      <td>Aspirine therapy (n, %)</td>
+      <td>10 (100%)</td>
+      <td>9 (90%)</td>
+      <td>0.305</td>
+    </tr>
+    <tr>
+      <td>Statine therapy (n, %)</td>
+      <td>6 (60%)</td>
+      <td>6 (60%)</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Lesion characteristics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minimal FCT (µm)</td>
+      <td>97 ± 15</td>
+      <td>49 ± 10</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Mean FCT (µm)</td>
+      <td>133 ± 12</td>
+      <td>94 ± 17</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Maximal lipid arc (°)</td>
+      <td>110 ± 8</td>
+      <td>178 ± 39</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Lipid volume arc (mm*°)</td>
+      <td>3853 ± 1294</td>
+      <td>9876 ± 3088</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Presence of TCFA (n, %)</td>
+      <td>0 (0%)</td>
+      <td>7 (70%)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Presence of macrophages (n, %)</td>
+      <td>4 (40%)</td>
+      <td>6 (60%)</td>
+      <td>0.371</td>
+    </tr>
+    <tr>
+      <td>Presence of spotty calcifications (n, %)</td>
+      <td>7 (70%)</td>
+      <td>8 (80%)</td>
+      <td>0.527</td>
+    </tr>
+  </tbody>
+</table>
+
+### Stress analysis in ruptured and non-ruptured plaques
 
 In ruptured plaques, the maximal stress within the fibrous cap (peak cap stress) was significantly higher than in non-ruptured ones (174 ± 67 vs. 52 ± 42 kPa, p<0.001). Furthermore, also the maximal stress within the whole plaque (maximal plaque stress) was more than fourfold higher in ruptured plaques compared to stable ones (399 ± 233 vs. 90 ± 95 kPa, p=0.001). Exemplary images of stress concentrations on the fibrous cap and overall in plaques, as well as a box-plot depicting stress concentrations in lesions with and without rupture are shown in Figure 1. Variation of stress distribution in dependence of various model assumptions are reported in the Supplementary Results in Appendix 1.
 
@@ -48,7 +209,7 @@ In ruptured plaques, the maximal stress within the fibrous cap (peak cap stress)
 
 **Figure 1.:** In (A, D), model reconstructions for ruptured and non-ruptured plaques are shown. In both fibrous cap (B) vs. (E) and vessel wall (C) vs. (F), ruptured plaques present higher stress concentrations than non-ruptured ones. Color-code scale is the same for both reconstructions, and maximal stress is shown at the upper edge of the scale. In (G) is shown a box-plot demonstrating the different stress concentrations both on the fibrous cap (in blue) and in the whole plaque (in red).
 
-## Spatial correlation between stress concentrations and rupture site in OCT images
+### Spatial correlation between stress concentrations and rupture site in OCT images
 
 After documenting much greater stress in ruptured compared with stable plaques, we assessed the effects of these morphology-driven peaks of intra-plaque stress on the lesion and if points of highest stress co-localize with plaque rupture within coronary lesions. Thus, we aimed to analyze the spatial correlation between the rupture point, as visualized in OCT images, and the point of maximal stress concentration, in order to further support the mechanistic role of stress concentrations in the fibrous cap in the genesis of plaque rupture. Only 50% of the plaque ruptures were in the shoulder region. The angle between the peak cap stress and the detectable rupture site was very low at 21.8 ± 30.3°; the angle between the maximal plaque stress and the detectable rupture site was even lower (20.7 ± 23.7°). Overall, 50% of plaque ruptures occurred within 10° of the peak cap stress and of the maximal plaque stress, suggesting that plaque rupture occurs in the very proximity of highest stress concentrations. A graphical presentation of spatial correlation between the sites presenting the peak cap stress and the maximal plaque stress in finite-element analysis and the rupture site in OCT pullback is shown in Figure 2.
 
@@ -56,7 +217,7 @@ After documenting much greater stress in ruptured compared with stable plaques, 
 
 **Figure 2.:** In (A, B), stress concentrations on the fibrous cap and on the vessel wall in the same coronary segment; in (C), the points of maximal stress concentration on the fibrous cap (blue asterisk) and on the vessel wall (red hash) are reported, in the OCT-frame immediately following the one used for reconstruction shown. Here, the rupture is marked with a white arrow. In (D, E), polar histograms showing distribution of angles between rupture and maximal stress on fibrous cap (D) and on the vessel wall (E). Angles higher than 120° have not been detected and for this reason are not shown in the polar graphs.
 
-## Diagnostic value of stress distribution in predicting plaque rupture
+### Diagnostic value of stress distribution in predicting plaque rupture
 
 In order to assess the diagnostic efficacy of finite-element analyses in predicting plaque rupture, we performed receiver operating characteristic (ROC) analysis for both peak cap stress and maximal plaque stress.
 
@@ -82,17 +243,17 @@ Current research on coronary plaque vulnerability mainly focused on morphologica
 
 Previous pioneering studies could show the applicability of finite-element analysis to the assessment of the biomechanics of the atherosclerotic plaque (Loree et al., 1992; Cheng et al., 1993). However, pathology-based simulations lack a direct applicability in patient care. Other studies, although based on intravascular imaging, were based on single lesions, which were analyzed on a qualitative basis (Finet et al., 2004; Reith et al., 2019). On the contrary, our study is to the best of our knowledge first to perform complex mechanistic analysis of coronary plaques based on high-definition intravascular imaging on a patient-specific level, with a high potential for direct clinical application.
 
-## Stress concentration is closely associated to plaque rupture
+### Stress concentration is closely associated to plaque rupture
 
 First, we could in vivo detect higher stress concentrations both within the fibrous cap and within the whole plaque in ruptured plaques compared to non-ruptured plaques. This is in line with previous simulation studies based on pathology specimens (Loree et al., 1992; Cheng et al., 1993) and confirms our hypothesis of stress concentration as a central factor in the genesis of plaque rupture. As a further step in confirming this theory, we extended current knowledge by showing that plaque ruptures arise in the immediate proximity of maximal stress concentrations. This spatial coincidence between maximal stress concentrations and sites of plaque rupture confirms the causal link between plaque biomechanics on the one hand and plaque rupture and acute coronary syndromes on the other. In fact, on the basis of our data, it is tempting to speculate about the mechanistic process eventually leading to plaque rupture. Stress within the fibrous cap and overall within the plaque is concentrated in a pattern which is closely dependent on the morphology of the plaque (for instance, in dependence of the extent and morphology of the necrotic lipid core and/or of calcification). A specific force is exerted on each point of the fibrous cap; should this stress concentration trespass the ultimate tensile strength of the vessel wall – which is highly likely to happen in points of maximal stress concentration – material failure and, eventually, plaque rupture occurs.
 
 An interesting question is, of course, the magnitude of the threshold that needs to be trespassed to cause material failure and plaque rupture. A previous pathology-based study by Cheng et al., 1993 sets the stress threshold for plaque rupture to 300 kPa. In our study, we found 150.5 kPa in the fibrous cap and 169.5 kPa in the vessel wall to be the optimal thresholds for predicting plaque rupture. The difference between these values and the initially estimated threshold of 300 kPa may be explained through the different imaging modalities used to reconstruct the coronary plaque. In fact, in pathology specimens (on which the 300 kPa value is based on), the fixation process may cause a shrinkage of the fibrous cap with a shortening of ca. 10–20% compared to the thickness measured in vivo with OCT. This effect may be sufficient to explain the numerical difference of the ‘critical’ peak cap stress needed for plaque rupture, especially considering – as pointed out by Finet et al. – that the relationship between FCT and peak cap stress is exponential (Finet et al., 2004). Further clinical validation of these thresholds is, however, needed. Another possible explanation might be the hyperelastic behavior of certain plaque components, which has been described by some authors previously (Yang et al., 2009; Cardoso et al., 2014); such an effect is, however, only present at large displacements (>20–30% of the initial dimensions) (Yang et al., 2009; Kobielarz et al., 2020), which are way over the average displacements reported in our study. In this range, a linear equation adequately depicts the behavior of the material. Also, stress on the lesion in patients is not only derived from the static factors included in our analysis, but also dynamic flow shear stress caused by blood flow (Bourantas et al., 2020), which was not included in our study.
 
-## Potential clinical utility of finite-element analysis in predicting plaque rupture
+### Potential clinical utility of finite-element analysis in predicting plaque rupture
 
 Although dynamic flow shear stress was not included in our analysis, we could also show an excellent diagnostic efficiency of our finite-element analysis in predicting plaque rupture. Furthermore, the model we developed presented a clearly superior diagnostic efficiency compared with accepted parameters of plaque vulnerability as FCT (Kato et al., 2012; Kubo et al., 2013; Reith et al., 2014; Uemura et al., 2012) or plaque macrophage infiltration (Kato et al., 2012; Reith et al., 2014; Uemura et al., 2012) and a numerically superior efficiency when compared to lipid volume index (Kato et al., 2012) in our cohort. The diagnostic efficiency of our model even presented a comparable efficiency when compared with the combination of lesion morphologies including FCT, plaque macrophage infiltration, and lipid volume index. In the light of these findings, it may be tempting to speculate about the strong link existing between stress concentrations and plaque rupture, which may explain the excellent predictive value of our model and may pave the way for widespread use of morpho-mechanical analysis in the clinical routine to detect vulnerable plaques.
 
-## Limitations
+### Limitations
 
 To the best of our knowledge, although we are first to develop an OCT-based finite-element model allowing patient-specific analysis of plaque biomechanics, several limitations have to be acknowledged. First of all, we faithfully reproduced plaque morphology in a 2D-based reconstruction; on the other hand, we are not taking into account several phenomena that may influence stress concentration, as for instance the longitudinal structure of the plaque or the longitudinal profile of the stenosis and flow shear stress – the relevance of these factors needs to be addressed in future studies.
 
@@ -104,11 +265,11 @@ To the best of our knowledge, although being the first to employ a morpho-metric
 
 ## Materials and methods
 
-## Patient population
+### Patient population
 
 We retrospectively selected 20 patients with type 2 diabetes mellitus and CAD, who underwent OCT prior to percutaneous coronary intervention at the Department of Cardiology of the University Hospital of the RWTH Aachen. Clinical presentation was stable CAD without evidence of plaque rupture in the OCT pullback (n = 10) or acute coronary syndrome with plaque rupture (n = 10). Sample size calculation was performed based on previous results of calculation of mechanical stresses in histopathological samples, resulting in a minimal sample size of seven lesions per group in order to achieve α = 0.001 and power of 0.95; this was then arbitrarily rounded to 10 lesions per group. Informed consent of all patients was obtained prior to inclusion in the study. The study was approved by the Ethics Committee of the University Hospital of the RWTH Aachen (EK 071/11 and EK 277/12) and is in accordance with the declaration of Helsinki on ethical principles for medical research involving human subjects.
 
-## OCT image acquisition and analysis
+### OCT image acquisition and analysis
 
 The acquisition of OCT pullbacks was performed as previously described in the literature (Tearney et al., 2012; Milzi et al., 2017). In brief, OCT images were acquired prior to coronary intervention using a frequency domain OCT C7XR system and the DragonFly catheter (St. Jude Medical Systems; Lightlab Imaging Inc, Westford, MA). Blood removal was obtained by the injection of 14 ml contrast dye (iodixanol) at a flow rate of 4 ml/s through the guiding catheter. Image acquisition was obtained with automated pull-back rate of 20 mm/s.
 
@@ -116,15 +277,67 @@ Analysis of plaque morphology was performed as previously described (Tearney et 
 
 In order to combine different features of plaque vulnerability for comparison with results of morpho-mechanical analysis, we calculated two different, established scores. The score validated in a publication from Burgmaier et al. (following: Burgmaier Score) is calculated as −2.401 + 1.568 * (insert one if macrophages present; else 0) + 2.639 * (medium lipid arc in multiples of 90°) + 0.255 * (lipid plaque length in mm) − 0.738 * (minimal FCT in multiples of 10 μm), as previously described (Burgmaier et al., 2014). The score based on the CLIMA study (following: CLIMA score) attributed one point each to the presence of MLA < 3.5 mm2, FCT < 75 µm, lipid arc circumferential extension > 180°, and presence of OCT-defined macrophages (Prati et al., 2020).
 
-## Manual segmentation and reconstruction
+### Manual segmentation and reconstruction
 
 In order to obtain a patient-specific model of the coronary plaque, we selected a single frame from every OCT pullback. In ruptured plaques, the frame immediately preceding the site of the rupture was chosen; this was based on the consideration that, due to rupture of the fibrous cap and to the present artifacts (caused for instance by thrombotic material), exact reconstruction of the rupture site may be inaccurate. For stable lesions, the frame with the minimal lumen area was selected; this was based on the need to select in a uniform way the site with the most advanced plaque development, assuming only a negative remodeling. After image selection, the operator (AM) was blinded to clinical presentation, as each frame was marked with a random ID. The selected image was then scaled 10:1 previous to segmentation of the different components of the atherosclerotic plaque, which was manually performed using commercial software (AutoCAD 2017, AutoDesk INC, San Rafael, CA). Plaque composition was analyzed according to the Consensus standards (Tearney et al., 2012). Specifically for segmentation, we first delineated the vessel lumen, defined as the signal-poor region centrally located in the OCT image. We then proceeded to tracing the boundaries of the fibrous cap, which was defined as the signal-rich region surrounding the lumen; for clarity’s sake, this area will be denominated fibrous cap also when overlying a calcific or fibrocalcific plaque. When present, we segmented the necrotic lipid core, which was identified as a signal-poor region with poorly delineated borders, a fast signal drop-off, and little or no signal backscattering. When present, calcifications have also been segmented; as calcifications we considered signal-poor or heterogeneous regions with a sharply delineated border. In case of non-detectable borders of each of the segmented components due to artifacts or to the limited penetration of light, we delineated contours with the automatic interpolation function of the software. We conventionally shaped the coronary vessel as a cylinder and set its external diameter to 4 mm. A sample reconstruction is shown in Figure 5.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64020/elife-64020-fig5-v1.jpg)
+
+**Figure 5.:** Using manual segmentation, a reconstruction of a vessel segment was performed based on OCT images. In (A), the source image from the OCT pullback shows a vulnerable plaque with extensive lipid core and thin fibrous cap. In (B), the result after manual segmentation of the plaque components is shown; here, fibrous cap is in red, lipid core in yellow, and the rest of the vessel wall in light grey.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64020/elife-64020-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** In (A), representation of the generated mesh. In (B-D), single components of the plaque structure are highlighted in blue.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64020/elife-64020-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** In (A–C), analysis of stress on the fibrous cap, of stress on the vessel wall, and of displacement in the developed model. In (D–F), the same analyses are repeated after applying constraints on both ends of the simulated vessel segments. As results are almost identical, the model without constraint has been employed throughout the study.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/64020/elife-64020-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Stress distribution on the vessel wall is shown in 2 mm interval throughout the simulated vessel segment (which has a length of 10 mm), as shown in (A–G); legend is shown on the three-dimensional vessel reconstruction on the left side. As results show minimal differences, the 5 mm cross-section (D) has been used for further analysis.
+
 In order to obtain a three-dimensional model of the vessel, we performed a graphical extrusion of the segmented contours over a length of 10 mm.
 
-## Finite-element analysis
+### Finite-element analysis
 
 The modeled vessel was then imported in commercial software to perform finite-element analysis (COMSOL Multiphysics 5.0, Stockholm, Sweden). A solid mechanics physics was chosen, and the used mechanical properties for the different components of the plaque were extrapolated from previous literature (Loree et al., 1992; Cheng et al., 1993; Finet et al., 2004; Reith et al., 2019) and are reported in Table 2.
+
+**Table 2.**
+ Mechanical properties of the different plaque components.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Poisson’s ratio (ν)</th>
+      <th>Young’s modulus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fibrous cap</td>
+      <td>0.27</td>
+      <td>244 kPa</td>
+    </tr>
+    <tr>
+      <td>Necrotic lipid core</td>
+      <td>0.48</td>
+      <td>1 kPa</td>
+    </tr>
+    <tr>
+      <td>Calcification</td>
+      <td>0.30</td>
+      <td>10 GPa</td>
+    </tr>
+    <tr>
+      <td>Vessel wall</td>
+      <td>0.27</td>
+      <td>800 kPa</td>
+    </tr>
+  </tbody>
+</table>
 
 Nevertheless, in the literature, there is no consensus regarding mechanical properties of the atherosclerotic plaque. This is a consequence of the very limited number of samples used for mechanical testing, of the need for pre-treatment of pathology samples (which may potentially alter their mechanical properties), and of the intrinsic difficulty of the measurement of some properties (specifically, the Poisson’s ratio, which is only indirectly measurable). In particular, some authors hypothesized an incompressible behavior of the vessel wall, which would lead to a Poisson’s ratio of 0.48 for this component (instead of 0.27 as used in our simulations) (Yang et al., 2009). Moreover, very different values of stiffness of calcifications have been detected and employed in previous studies, ranging from about 10 MPa for mildly calcified tissues to even 17–25 GPa emulating the properties of bone tissue (Loree et al., 1992; Cheng et al., 1993; Finet et al., 2004; Kobielarz et al., 2020; Holzapfel et al., 2005; Barrett et al., 2019; Wong et al., 2012; Cahalane et al., 2018). Specifically, the use of smaller Young’s moduli is justified by the inhomogeneity of macrocalcifications, which may be only partly constituted by crystalline calcium Wong et al., 2012; this could be associated, in previous studies, to the density of calcifications in computed tomography (Cahalane et al., 2018). Though, as calcium density is not defined in OCT, we preferred to use 10 GPa, as the Young’s modulus of crystalline calcium, as calcification’s stiffness. Nevertheless, in order to exclude a relevant impact of these assumptions on our stress analysis, we assessed stress distribution in the presence of different assumptions. If not differently specified, the data presented in the rest of the manuscript derive from the model using constants shown in Table 2.
 
@@ -134,14 +347,14 @@ The finite-element analysis was performed in a dedicated core lab from an operat
 
 To exclude excess interobserver variability in manual segmentation, a different experienced OCT operator (RD) redraw the analyzed structures in a randomly selected 20% of the plaques in each group. Based on these segmentations, we run finite-element analysis.
 
-## Spatial correlation analysis between stress concentration and rupture site
+### Spatial correlation analysis between stress concentration and rupture site
 
 Rupture site was identified in OCT images as a clear, visible continuity interruption in the fibrous cap. The rupture site was marked from an operator (AM) blinded to the results of stress distribution. In case of non-punctual ruptures of the fibrous cap, an arbitrary middle point was used for calculation purposes. Then, results of stress analysis for both the fibrous cap and the overall vessel wall were reported on the OCT-image of the rupture site, correlating them to anatomic landmarks (morphology of lumen; morphology of the fibrous cap; presence of calcifications, lipid deposits, cholesterol crystals, or macrophage accumulations). The angular distance between the rupture site and the sites where the simulation highlighted maximal stress concentrations was noted. Graphical representation was obtained with polar angle histograms generated with Origin (OriginLab Corp, Northampton, MA).
 
-## Statistical analysis
+### Statistical analysis
 
 Continuous variables were reported as mean ± standard deviation, categorical as count (percentage). Distributions of continuous variables were compared using t-test; for comparing categorical values, Fisher’s exact test was used for comparing distribution of categorical variables. To compare results of simulations with different assumptions regarding material properties, paired-samples t-test was used. Furthermore, in order to validate the finite-element simulation, we correlated results obtained in different models and after segmentation through different operators using one-way random effects model; results were expressed as intraclass correlation coefficient. We performed ROC analysis to validate diagnostic value of the results of simulation models as well as ‘classical’ features of plaque vulnerability (FCT, lipid volume index, extent of plaque macrophages infiltration) in predicting plaque rupture. Values with the highest Youden index were identified as optimal cut-off values; in case of equal Youden index between two or more data points, we selected one based on clinical judgment. In order to evaluate the value of a combination of OCT-derived morphologic parameters to predict plaque rupture, we performed multivariable logistic regression including minimal or mean FCT, lipid volume index, and macrophage volume index. Lipid volume index was calculated as the product of mean lipid angle and lipid length, as defined in previous works (Kato et al., 2012; Kubo et al., 2013; Reith et al., 2014; Uemura et al., 2012; Ehara et al., 2004; Reith et al., 2018; Tearney et al., 2012; Milzi et al., 2017). For calculation purposes, non-defined parameters such as FCT in case of calcified plaques or lipid volume index in non-lipidic plaques were set to zero. Then, ROC analysis was performed based on the predictive values of this multiple regression model. A classification of the diagnostic efficiency according to the values of the area under the curve (AUC) was used as described elsewhere (Šimundić, 2009). In order to compare diagnostic efficiency of results of morpho-mechanic analysis with combined features of coronary plaque vulnerability, we calculated the Burgmaier and CLIMA scores as previously described. Comparison of the diagnostic efficiency among different ROC curves was performed with the DeLong test, as previously described (DeLong et al., 1988). All statistical analyses were performed with SPSS software (v. 26.0, IBM Corp., Armonk, NY). Statistical significance was awarded for p<0.05.
 
-## Conclusion
+### Conclusion
 
 In our proof-of-concept study, we demonstrate that OCT-based finite-element analysis is a feasible tool to determine plaque biomechanics, which in turn may predict plaque rupture in patients. Whereas the minimal fibrous cap thickness protects the plaque from its rupture, our data highlight the importance of morpho-mechanic analysis assessing the disrupting effects of plaque stress. These data need, however, to be verified in larger populations. This new method may offer valuable insights on the interplay between various plaque components in the determination of the net vulnerability of a plaque, bringing stress concentrations – the disrupting force of plaque rupture – back into clinical practice.

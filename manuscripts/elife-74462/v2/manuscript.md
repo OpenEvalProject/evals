@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Laboratory of Functional and Molecular Imaging, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States
-2. https://ror.org/01cwqze88 Flow and Imaging Cytometry Core Facility, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States
-3. https://ror.org/00py81415 Department of Immunology, Duke University School of Medicine Durham United States
-4. https://ror.org/01cwqze88 Viral Immunology and Intravital Imaging Section, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States
+1. Laboratory of Functional and Molecular Imaging, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Flow and Imaging Cytometry Core Facility, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+3. Department of Immunology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+4. Viral Immunology and Intravital Imaging Section, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
@@ -39,23 +39,47 @@ In this study, we used intranasal infection of mice with vesicular stomatitis vi
 
 ## Results
 
-## Detection of microbleeds in the VSV-infected turbinates and brain by MRI
+### Detection of microbleeds in the VSV-infected turbinates and brain by MRI
 
 Upon intranasal VSV inoculation, immune cell accumulation in the turbinates and OB has been reported (Chhatbar et al., 2018; Moseman et al., 2020). To determine how VSV infection affects vessel integrity, high resolution T2*-weighted MRI was used to detect bleeding at different time points post-infection (Figure 1). Large areas of bleeding were readily detected in the turbinates at day 4 (Figure 1A; Figure 1—figure supplement 1A). The amount of bleeding, as indicated by hypointense areas (red arrows), increased from day 4–11. Two major sites of bleeding were also detected by MRI in the OB (Figure 1B–D; Figure 1—figure supplement 1B). Bleeding was observed at the edge of the bulb, in the olfactory nerve layer (ONL) and glomerular layer (GL), and at the center of the bulb near the granule cell layer (GCL). The in-vivo and ex-vivo images on each day were obtained from the same mouse before and after perfusion. In the in-vivo images (upper panel), the asymmetric hypointense region at the edge of the OB indicates the bleeding. As early as day 4, in-vivo MRI revealed microbleeds and vessel rupture starting in the ONL and GL of the OB (red arrows; Figure 1B and C; Figure 1—figure supplement 1B). Ex-vivo high-resolution MRI detected punctate hypointensities in the ONL and GL on day 4, which confirmed the results of in-vivo MRI. On day 6, punctate hypointensities near the center of the OB were also detected by in-vivo MRI (Figure 1D). The number of microbleeds in the OB increased from day 4–11. The increasing amount of hypointensities in the turbinates and OB were quantified as a function of time (Figure 1E). A previous study (Moseman et al., 2020) reported that VSV infected OB very efficiently and viral titers reached ~104 plaque-forming units (PFU) on day 1. Viral titer peaked on day 6, ~105 PFU, before being cleared on day 8. Viral RNA measurements on day 6 and 11 (Figure 1F) agreed with this earlier report.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig1-v2.jpg)
+
+**Figure 1.:** (A) Ex-vivo MRI of turbinates (axial view) from a normal mouse and VSV-infected mice on day 4, 6, and 11 post-infection. (B) Axial view and (C) coronal view of in-vivo (upper panel) and ex-vivo (lower panel) MRI of OB. The coronal view was sectioned from the bleeding site on the axial view, as indicated by red arrows. (D) At the center of the OB, microbleeds were detected since around day 6 by in-vivo MRI. The inserted figure was the enlarged views of the framed bleeding sites in the full views. The scale bar in the full view: 2 mm. The scale bar in the inserted view: 0.5 mm (D). (E) Quantification of volume of hypointensity in the turbinates and numbers of hypointensity spots in the OB on day 4, 6, and 11 (n=6). * p=0.046; ** p<0.0001. (F) Viral titers, represented as relative to actin RNA, at the OB on day 6 and 11 (n=6). ** p<0.0001. (G, H) Immunohistochemical (IHC) study to show microbleeds and vesicular stomatitis virus (VSV) in the OB of VSV-infected mice on day 4 (G) and 6 (H). EPL, external plexiform layer; GCL, granule cell layer; GL, glomerular layer; MCL, mitral cell layer; ONL, olfactory nerve layer. Blue, DAPI for nuclei; Green, VSV-GFP; Red, Alexa Fluor 647-conjugated anti-Ter119 for RBCs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 3D view of ex-vivo MRM of turbinates from normal mouse and VSV-infected mice on day 4, 6, and 11. (B) 3D view of in-vivo MRI of OB from normal mouse and VSV-infected mice on day 4. (C–E) IHC verification of the MRI results. Separated color channels of fluorescence images of the OB from a normal mouse (C) and VSV-infected mice on day 4 (D) and 6 (E). GL, glomerular layer; EPL, external plexiform layer; MCL, mitral cell layer. Blue, DAPI for nuclei; Green, VSV-GFP; Red, Alexa Fluor 647-conjugated anti-Ter119 for RBCs.
 
 Immunohistochemical (IHC) analyses verified the MRI results by showing that the ONL, GL, and GCL were the major sites of bleeding (Figure 1G and H; Figure 1—figure supplement 1D, E). These are also the sites where VSV entered the brain and replicated. On day 4, IHC showed microbleeds and VSV in the ONL, GL and external plexiform layer (EPL) of the OB (Figure 1G, Figure 1—figure supplement 1D). On day 6, microbleeds and VSV were shown at the mitral cell layer (MCL) (Figure 1 H1; Figure 1—figure supplement 1E) and center of the OB (Figure 1 H2). Most of the virus was localized in ONL, GL, and the center of the OB on day 6 when viral titer was the highest (Figure 1H). Thus, microbleeds largely co-localized with sites of VSV replication in the brain.
 
 Although VSV replication is usually contained within the OB (Detje et al., 2009), we detected vessel breakdown and microbleeds in other parts of the brain by MRI (Figure 2A and B; more views are shown in Figure 2—figure supplement 1A, B). Punctate hypointensities were detected from frontal brain to midbrain beginning at day 4. In most of the infected mice, microbleeds were detected in the orbital frontal cortex area and somatomotor areas of the cortex around day 4. On day 6, microbleeds were detected in the caudoputamen (CP) and thalamus (TH). From day 8–11, microbleeds were observed from midbrain to hindbrain. IHC verified the presence of microbleeds and VSV in the brain on different days (Figure 2D; Figure 2—figure supplement 1C, D). The increasing amount of hypointensities in the brain (not including the OB) was quantified as a function of time (Figure 2C). For the OB and other brain regions, sites of bleeding were enumerated without accounting for size. This was done to assess the number of new bleeding regions that developed. Foci of bleeding (defined as spots/mm3) were ~100-fold greater in the OB than the brain. For these calculations, the size of mouse OB was assumed to be ~2% of the brain by volume (McGann, 2017). The elevated bleeding in the OB is consistent with the fact that VSV is most abundant in this brain region following intranasal inoculation.
 
-## VSV caused vascular endothelium activation and induced cerebral hemorrhage that does not require peripheral immune cells
+![Figure 2.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig2-v2.jpg)
+
+**Figure 2.:** (A) Axial view and (B) coronal view of in-vivo (upper panel) and ex-vivo (lower panel) MRI of brain, showing the breakdown of vessels from frontal brain to midbrain. The scale bar in the full view: 2 mm. The scale bar in the inserted view: 1 mm (A) and 0.5 mm (B). CB, cerebellum; CP, caudoputamen; CTX, cerebral cortex; HPF, hippocampal formation; HY, hypothalamus; MB, midbrain; STR, striatum; TH, thalamus; V3, third ventricle; VL, lateral ventricle. (C) Quantification of numbers of hypointensity spots in the brain (not including OB) on day 4, 6, and 11 (n=6). * p<0.0001. (D) Immunohistochemical (IHC) staining to show microbleeds and VSV in the forebrain on day 6. Blue, DAPI for nuclei; Green, VSV-GFP; Red, Alexa Fluor 647-conjugated anti-Ter119 for RBCs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** More (A) axial view and (B) coronal view of in-vivo (upper panel) and ex-vivo (lower panel) MRI of brain, showing the breakdown of vessels from frontal brain to midbrain. (C, D) IHC verification of the MRI results. Separated color channels of fluorescence images to show microbleeds and vesicular stomatitis virus (VSV) in the forebrain on day 6 (C) and midbrain on day 11 (D). Blue, DAPI for nuclei; Green, VSV-GFP; Red, Alexa Fluor 647-conjugated anti-Ter119 for RBCs.
+
+### VSV caused vascular endothelium activation and induced cerebral hemorrhage that does not require peripheral immune cells
 
 Significantly increased expression of vascular cell adhesion molecule 1 (VCAM-1) and intercellular adhesion molecule 1 (ICAM-1) were found in the OB on day 6 of infection. VCAM-1 and ICAM-1 vessel surface coverage was around 50% near the ONL/GL/EPL region (Figure 3A) and around 30% near the center of the OB (Figure 3—figure supplement 1A, C) using anti-CD31 or anti-PECAM-1 to stain the entire vessel. Upregulation of VCAM-1 and ICAM-1 were also found in many other locations in the midbrain and hindbrain on day 6, e.g., thalamus (Figure 3—figure supplement 1B, C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunohistochemical (IHC) staining showed increased expression of endothelial VCAM-1 and ICAM-1 in the OB on day 6 of infection. n=3 per group. * p<0.0001. (B) Anti-LFA-1/VLA-4 blockade antibodies decreased CD45+ cells over 95% in the OB on day 6. n=4 per group. * p<0.0001. (C) Treatment with anti-LFA-1/VLA-4 blockade antibodies increased bleeding in the turbinates. Ex-vivo MRI of the turbinates (axial view) from normal mouse treated with the blockade antibodies, VSV infected mouse treated with isotype control (rat IgG2a) antibody on day 6, and VSV infected mouse treated with the blockade antibodies on day 6. In the glomerular layer (GL) (D) and the granule cell layer (GCL) of OB (E), MRI detected bleeding earlier upon treatment with the blockade antibodies. (F) Axial and (G) coronal view of MRI of the brain showed a large area of hemorrhage at the thalamus of anti-LFA-1/VLA-4 treated mouse on day 6. The coronal view was sectioned from the hemorrhage site on the axial view, as shown in the frame. In (F) and (G), scale bar in the full view: 2 mm; in the inserted view: 0.5 mm. (H) Quantification of the volume of bleeding in the turbinates and the numbers of hypointensity spots in the OB and brain on day 6, in the isotype control group and anti-LFA-1/VLA-4 antibodies treated group (n=4). * p=0.039; ** p=0.005; *** p<0.0001. (I) Blocking immune cell infiltration increased viral RNA in the OB on day 6 (n=4). *** p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Immunohistochemical (IHC) staining showed increased expression of endothelial VCAM-1 and ICAM-1 in the OB (A) and thalamus (B) on day 6 of infection, as quantified in (C) n=3 per group. * p<0.0001. (D) Anti-LFA-1/VLA-4 blockade antibodies decreased inflammatory cells (neutrophiles, Ly6C+, CD8+, and CD11b+) in the olfactory bulb (OB) on day 6 significantly. Neutrophils is defined as Ly6Cint, Ly6Ghi, CD11b+. n=4 per group. * p<0.0001. (E–G) Sagittal view of Magnetic resonance imaging (MRI) of the brain showed a large area of hemorrhage at the thalamus of anti-LFA-1/VLA-4 treated mouse on day 6.
 
 To determine whether the vessel breakdown and microbleeds associated with VSV infection required the peripheral immune system, anti-LFA-1/VLA-4 antibodies were used to block infiltration by peripheral immune cells. LFA-1 and VLA-4 are the ligands for ICAM-1 and VCAM-1, which are expressed on activated T cells, monocytes, and neutrophils (Yusuf-Makagiansar et al., 2002). We verified the efficacy of anti-LFA-1/VLA-4 antibodies by cell counting and flow cytometric analysis. The blocking antibodies decreased the number of CD45+ cells by more than 95% on day 6 (Figure 3B). Reduced numbers of neutrophils, Ly6C+, CD8+, and CD11b+ cells are shown in Figure 3—figure supplement 1D. MRI studies showed that, upon treatment with anti-LFA-1/VLA-4 blocking antibodies, a greater volume of bleeding was detected in the turbinates on day 6, relative to the two control groups, i.e., normal mice treated with anti-LFA-1/VLA-4 antibodies and VSV infected mice treated with isotype control (rat IgG2a) antibodies (Figure 3C). Within the OB, upon treatment with blocking antibodies, in-vivo MRI revealed significant bleeding at multiple sites (ONL/GL and the center) as early as day 3 (Figure 3D and E). At the ONL/GL, MRI could detect significant bleeding in mice treated with isotype control antibodies on day 4 (Figure 3D), which was the same as untreated VSV-infected mice (Figure 1B). Blocking immune cell infiltration also increased bleeding at the center of the OB on day 3 (Figure 3E), and a large area of hemorrhage was detected in the thalamus on day 6 (Figure 3F and G; Figure 3—figure supplement 1E–G).
 
 As quantified in Figure 3H, the volume of hypointensity in the turbinates increased from 2.1 ± 0.8 mm3 to 5.0 ± 1.0 mm3 on day 6 in anti-LFA-1/VLA-4 treated mice, and the number of bleeding spots increased in the brain by ~2-fold. In addition, blockade of immune infiltration elevated viral RNA in the OB by ~2–3-fold on day 6 (Figure 3I). Thus, VSV induces hemorrhage in the brain without involvement of the peripheral immune system. In fact, inhibition of peripheral immune infiltration increased viral RNA, which was associated with more bleeding.
 
-## VSV infects vascular endothelial cells
+### VSV infects vascular endothelial cells
 
 VSV was previously shown to enter the brain through olfactory sensory neurons via retrograde trans-neuronal transport and spread in the CNS via both anterograde and retrograde transport (Beier et al., 2013; Cornish et al., 2001). Although VSV is highly cytopathic, most VSV-infected neurons in the brain are cleared noncytolytically (Moseman et al., 2020). While it is generally known that neurons are infected by VSV, we became interested in whether other cell types supported VSV infection. We assessed if cerebrovascular endothelial cells were infected by the virus given the bleeding observed in the brains of VSV-infected mice. As shown in Figure 4A and B, we detected VSV in endothelial cells comprising cerebral blood vessels, which sometimes showed evidence of bleeding (Figure 4C and quantified in Figure 4D). These data suggest that infection of cerebrovascular endothelial cells by VSV may contribute to the mechanism responsible for bleeding.
 
@@ -63,27 +87,71 @@ VSV was previously shown to enter the brain through olfactory sensory neurons vi
 
 **Figure 4.:** (A, B) Representative views of VSV infected vessels in the mitral cell layer (MCL) and glomerular layer (GL), as indicated by the red arrows and red star. Blue, DAPI for nuclei; Green, VSV-GFP; Orange, Alexa Fluor 647 conjugated anti-CD31. (C) Bleedings were observed from VSV infected vessels in the MCL. (D) Quantification of vessels colocalized with virus only or colocalized with virus and RBCs in the GL on day 6, under 40 x view (0.2 mm x 0.2 mm). n=3 mice. 6 views were counted manually per mouse. Orange, Alexa Fluor 594 conjugated anti-CD31; Red, Alexa Fluor 700 conjugated anti-Ter119 for RBCs.
 
-## Adoptive transfer of antiviral CD8 T cells decreases brain bleeding and increases viral clearance
+### Adoptive transfer of antiviral CD8 T cells decreases brain bleeding and increases viral clearance
 
 Because inhibition of peripheral immune infiltration enhanced brain bleeding, we next evaluated whether adoptive transfer of virus-specific CD8 T cells could be used to reduce viral loads and bleeding. 5 × 105 virus-specific mTomato CD8+ OT-I T cells (purity shown in Figure 5—figure supplement 1) activated overnight with ovalbumin (OVA)257–264 peptide were transferred i.v. into VSV-OVA infected mice at two time points. For early-stage transfer, OT-I cells were transferred on day 0–2, and MRI was performed on day 6. For peak-stage transfer, OT-I cells were transferred on day 6 and mice were imaged on day 11 (Figure 5—figure supplement 2). Adoptive transfer of OT-I cells had a therapeutic benefit in both early- and peak-late-stage paradigms (Figure 5A–D). For peak-late-stage treatment, in the turbinates (representative images shown in Figure 5A), the volume of bleeding decreased from 12.2 ± 1.3 mm3 to 1.6 ± 1.1 mm3 on day 11 (Figure 5E). In the OB (Figure 5B), the number of hypointensity spots decreased from 665 ± 127–114 ± 23 on day 11 (Figure 5F). In the brain (Figure 5D), the number of hypointensity spots decreased from 329 ± 72 to 83 ± 19 on day 11 (Figure 5G). T cell transfer reduced microbleeds (Figure 5B and C) and also reduced viral RNA in the OB for early stage transfer. Relative VSV to actin RNA decreased from 0.95 ± 0.37 to 0.29 ± 0.07 (Figure 5H).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) MRI showed that both early and late transfer of OT-I CD8 T cells reduced bleeds in the turbinates (A), GL of the OB (B), center of the OB (C) and brain (D). Red arrows, microbleeds. Quantification of volume of bleeding in the turbinates (E) and numbers of hypointensity spots in the OB (F) and brain (G) without or with T cells early and late transfer (n=5–7 mice per group). * p<0.0001. (H) CD8 T cells reduced viral RNA on day 6 (n=4). * p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** CD8 T cells were isolated using the Dynabeads Untouched Mouse CD8 Cells Kit.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Paradigm for CD8 T cell transfer study during early stage infection. CD8 T cells were transferred on day 0–2. In-vivo MRI study was performed from day 1–6. The encephalitis peak time was day 6, which was labeled in red. Remarkable amount of CD45+ cells infiltration into the olfactory bulb (OB) was reported since day 4, which was labeled in purple. (B) Paradigm for CD8 T cell transfer study during peak-stage infection. CD8 T cells were transferred on day 6. In-vivo MRI study was performed from day 7–11.
+
 IHC confirmed that, without T cell transfer, there was a large amount of VSV and microbleeds, and a small number of CD8 T cells at the ONL, GL (Figure 6A), and center of the OB on day 6 (Figure 6D). Figure 6A and D also showed that GL and OB center were major sites of virus invasion and replication, which was consistent with Figure 1H. Upon transfer of OT-I cells, an increased number of CD8+ T cells, and a reduced amount of VSV and microbleeds was observed in the GL (Figure 6B) and OB center (Figure 6E). Quantification of these data is shown Figure 6C and F. Some microbleeds, however, were still seen in mice receiving antiviral T cells, especially in regions with a high density of T cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig6-v2.jpg)
+
+**Figure 6.:** (A) On day 6, VSV-induced bleeding at the olfactory nerve layer (ONL) and glomerular layer (GL) and there was a small number of CD8 T cells. (B) CD8 T cells transfer reduced bleeding and virus and there was a larger number of CD8 T cells at the ONL and GL. (D, E) In the granule cell layer (GCL), T cell transfer also reduced bleeding and virus comparing with non-T cells transferred. White, Brilliant Violet 421 conjugated anti-CD8 for T cells; Green, VSV-GFP; Red, Alexa Fluor 647 conjugated anti-Ter119 for RBCs. (C, F) Quantification of CD8 T cells and bleeds in the GL and GCL, under 40 x view (0.2 mm x 0.2 mm). n=4–6 mice per group. Six views were counted manually per mouse. * p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** T cells are transferred on day 6 and images were shown for day 11. Axial views (A), coronal views (B), and sagittal views (C) of normal mice, vesicular stomatitis virus (VSV) infected mice with no T cells transfer, with the transfer of 5 × 105 CD8 T cells, with the transfer of 3 × 106 CD8 T cells. (D, E, F) were enlarged views. Green arrows, reduced bleeding in the turbinates. Red arrows, bleeding in the turbinates, OB, or brain. (G) Quantification of bleeding volume in turbinates, and number of hypointensity spots in OB and brain without (black bar, n=7) or with T cell transfer (red bar, 5 × 105 T cells, n=5; purple bar, 3 × 106 T cells, n=5) on day 11. * p<0.0001 comparing with 5 × 105 T cells. (H) Viral titer. (I) IHC study showed large amount of VSV, CD8 T cells, and RBCs in the midbrain of overdose treated mice. Green, VSV-GFP; White, OT-1 CD8 T cells; Red, Ter119 for RBCs.
 
 However, having too many antiviral T cells can also elevate cerebral bleeding. Administering a higher number of virus-specific CD8+ T cells (3 × 106 T cells, relative to the therapeutic lower dose 5 × 105) on day 6 was pathogenic as detected by MRI and IHC (Figure 6—figure supplement 1). This finding suggests that antiviral CD8+ T cells at high doses can contribute to vessel damage while attempting to control virus. Thus, care must be used when determining T cell doses for therapeutic adoptive cell transfers.
 
-## Individual MPIO labeled T cells can be detected by MRI
+### Individual MPIO labeled T cells can be detected by MRI
 
 To understand the spatial relation between transferred T cells and microbleeds, we developed a method to label T cells with MPIO particles, which can be detected by MRI with high sensitivity (Pothayee et al., 2017; Shapiro et al., 2004; Wu et al., 2006). Labeling non-phagocytic T cells with contrast agents is challenging. Cationic agents, such as transfection agents and HIV-TAT peptide, or electroporation and mechanoporation have been shown to increase the labeling efficiency (Bhatnagar et al., 2013; Hingorani et al., 2020 ; Kiru et al., 2022; Thu et al., 2012). A previous study has also shown that T cells can be labeled with MPIOs by way of an antibody-mediated, biotin–streptavidin recognition strategy (Shapiro et al., 2007). We therefore modified the surface of streptavidin-MPIO particles with cationic amine groups (Liu et al., 2012) to increase the efficiency of uptake by T cells. A representative structure of the particle is shown in Figure 7A, and a detailed synthetic scheme is shown in Figure 7—figure supplement 1. Briefly, a streptavidin-MPIO was chemically conjugated with ethylenediamine to increase T cell uptake. In addition, anti-CD3 was conjugated to MPIO as an affinity ligand and to increase internalization of the particles by T cells. DyLight 488 was conjugated to MPIO for FACS and fluorescence microscopy studies.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig7-v2.jpg)
+
+**Figure 7.:** (A) A representative structure of the conjugated MPIO particle used in this study to label T cells. (B) FACS MPIO-labeled CD8 T cells, defined as DAPI-, mTomato+, DyLight 488+, DyLight 650-. (C) Fluorescence images of MPIO-labeled T cells. Green, MPIO-DyLight 488; Red, Alexa Fluor 647 conjugated anti-CD8. (D) EM images of CD8 T cells labeled with MPIO intracellularly and extracellularly. (E) Quantification of intracellular and extracellular MPIO through EM images. (F) MR sensitivity of labeled T cells. (G) Percentage of migrating T cells in the migration assay (n=6).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) FACS method for isolating MPIO-labeled T cells. (B, C) Fluorescence images of MPIO-labeled T cells in the cell culture (B) and after fixation with 2% PFA for 15 min (C). (D) Representative EM images of MPIO-labeled T cells. (E, F) Labeling T cells with MPIO did not affect T cell function on IL-2 (E) and IFN-gamma release (F).
 
 mTomato CD8 + OT-I T cells were incubated with MPIO-DyLight 488 overnight. For FACS analyses, anti-streptavidin-DyLight 650 was used to identify the location of MPIO as either extracellular (i.e. attached to the cell membrane) or intracellular. A detailed flow chart of the FACS method is shown in Figure 7—figure supplement 2A. As shown in Figure 7B and Figure 7—figure supplement 2A, the yield of MPIO-labeled T cells was ~8.3% and the majority of MPIOs were localized inside the cells. Fluorescence images of MPIO labeled OT-I cells in cell culture is shown in Figure 7—figure supplement 2B. The mTomato color on the OT-I cells was not bright especially after fixation (Figure 7—figure supplement 2C), thus anti-CD8 was used to stain OT-I cells (Figure 7C). Electron microscopy (EM) images were used to confirm the cellular location of MPIO (Figure 7D, Figure 7—figure supplement 2D). 91% MPIOs were localized intracellularly (Figure 7E). Some T cells contained more than one MPIO. MPIO-labeled T cells showed MR sensitivity enabling single cell detection (Figure 7F).
 
 Labeling of T cells with nanoparticles, especially cell surface labeling, may alter T cell functions (Stephan et al., 2010). Several key functions of MPIO-labeled T cells were checked in vitro, including migration (Figure 7G) and IL-2 and IFN-gamma release (Figure 7—figure supplement 2E, F). There was no significant change in these functions.
 
-## MRI based tracking of T cells and microbleeds on day 1 of infection
+### MRI based tracking of T cells and microbleeds on day 1 of infection
 
 With MRI having the sensitivity to detect both single T cells and microbleeds, we used this approach to guide histology studies and determine what gave rise to hypointensities at the earliest stages of VSV infection and inflammation in the brain. We wanted to determine whether vessel breakdown or T cell extravasation occurred first after adoptive transfer of antiviral T cells.
 
 MPIO-labeled OT-I cells were transferred just prior to VSV infection. At 15 hr post-infection, no hypointensities were detected in the OB by MRI (Figure 8A). At 24 hr post-infection, the earliest hypointensity spots were detected near the GL (Figure 8B) and the center, MCL/GCL areas of the bulb (Figure 8C). Similar hypointensities were not detected in the controls infused with unlabeled CD8 T cells. Since MPIOs and blood generate similar T2* effects, IHC was required to assess the cause of the hypointensities detected by MRI. IHC showed that, in the GL, CD8 T cell infiltration and bleeding co-localized and both occurred by 24 hr (Figure 8D). The MRI hypointensity in the GL was caused by the combination of MRI contrast from MPIO-labeled T cells and microbleeds. As quantified in Figure 8H, 85% of MPIO-labeled T cells were in the region with microbleeds and 15% were in a region with no evidence of bleeding in the ONL/GL. Interestingly, hypointensities in the MCL/GCL areas were due only to MPIO-labeled T cells, and no evidence for bleeding was detected (Figure 8E–G). To determine if MRI based tracking of T cells could determine the precise time of T cell arrival into the MCL/GCL area and whether these cells migrated to this area from within the bulb, time-lapse MRI was performed from 20–24 hr post-infection. The appearance of hypointensity, caused by MPIO-labeled T cells was detected at 22 hr (Figure 8I, Videos 1 and 2). No migration tracks of T cells from ONL/GL, where bleeding had already begun, to the center from MRI was detected. Thus, T cells at the center of the bulb likely extravasated from the local vasculature. Representative MRI from 22–24 hr post-infection is shown in Figure 8—figure supplement 1. No evidence for T cell migration over this 2 hr time interval could be detected on the MRI distance scale.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig8-v2.jpg)
+
+**Figure 8.:** (A) No hypointensity was detected at 15 hr post-infection in the olfactory bulb (OB). (B, C) The earliest hypointensity spots were detected near the GL (B) and the center, mitral cell layer (MCL) to granule cell layer (GCL) (C), at 24 hr post-infection. Similar hypointensities were not detected in the controls infused with unlabeled CD8 T cells. RBCs were detected at the GL (D), but not near the MCL (E) and GCL (F, G), as shown by Immunohistochemical (IHC). In (D–F), Vesicular stomatitis virus (VSV) with no GFP was used to verify the presence of MPIO-DyLight 488 in the T cells. White, Alexa Fluor 594 conjugated anti-CD8 for T cells. Green, VSV-GFP or MPIO-DyLight 488; Red, Alexa Fluor 700 conjugated anti-Ter119 for RBCs. (H) Frequencies of MPIO-labeled T cells present with microbleeds versus without microbleeds at the ONL/GL and MCL/GCL [under 40 x view (0.2 mm x 0.2 mm); n=4 mice; 35 MPIO-labeled T cells total: 26 cells at the ONL/GL and 9 cells at the MCL/GCL]. (I) The appearance of MPIO-labeled T cells at the center at 22 hr post-infection. (J) Activation of vessel endothelium cells and microglia were found at the ONL/GL (J1) and MCL/GCL (J2) on day 1. n=3 per group. 3–6 views were quantified per mouse. * p<0.0001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/74462/elife-74462-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) MRI, on day 6 and 11, of olfactory bulb (OB) from the mice transferred with unlabeled CD8 T cells. (B) MRI from the mice transferred with MPIO-labeled CD8 T cells. Red arrows, hypointensities caused by microbleeds. Green arrows, hypointensities caused by infiltration of MPIO-labeled CD8 T cells. Quantification of the number of hypointensity spots in OB (C) and brain (D) on day 6 and 11, upon transfer of unlabeled CD8 T cells (n=5 mice per group) or MPIO-labeled CD8 T cells (n=7 mice per group). Red bar, quantification from transfer of unlabeled T cells. Green bar, quantification from transfer of MPIO-labeled T cells. * p<0.001; ** p<0.0001. (E) Immunohistochemical (IHC) study showed the infiltration of MPIO-labeled CD8 T cells. Green arrows, MPIO. Blue, nuclei; White, CD8 T cell; Green, MPIO.
+
+![Video 1.](https://cdn.elifesciences.org/articles/74462/elife-74462-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/74462/elife-74462-video2.mp4.jpg)
 
 In Figure 8D–F, to verify the presence of MPIO-DyLight 488 particles in transferred T cells, VSV with no GFP was used in the experiments. In Figure 8G, to track the virus, VSV-GFP was used. Virus localized to the center of the bulb on day 1. As shown in Figures 1H and 6D, the center of the bulb was a major site of virus infection. It is likely that the ability of T cells to traffic to sites of viral infection rapidly prior to vascular damage explains why adoptive transfer of T cells greatly reduced brain bleeding during VSV infection. That T cells can enter sites of viral infection prior to vessel break down is consistent with earlier studies using the LCMV model to study this issue on the surface of the brain (Herz et al., 2015).
 
@@ -111,66 +179,398 @@ In conclusion, our MRI guided studies have revealed that VSV has the ability to 
 
 ## Materials and methods
 
-## Animal procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C57BL/6-Tg(TcraTcrb)1,100Mjb/J (OT-I) mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#: 003831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>B6.129(Cg)-Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J (mTomato)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#: 007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 421 conjugated anti-CD8 (Clone 53–6.7) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100,753</td>
+      <td>(1:100 dilution)(2 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 conjugated anti-CD8 (Clone 53–6.7) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100,758</td>
+      <td>(1:100 dilution)(2 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 conjugated anti-CD8 (Clone 53–6.7) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100,730</td>
+      <td>(1:80 dilution)≤0.25 µg per 106 cells in 100 µl volume for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 421 conjugated anti-CD45 (Clone 30-F11) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103,134</td>
+      <td>(1:80 dilution)≤0.25 µg per 106 cells in 100 µl volume for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC conjugated anti-Thy1.2 (Clone 30-H12) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 105,312</td>
+      <td>(1:80 dilution)≤0.25 µg per 106 cells in 100 µl volume for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 605 conjugated anti-CD11b (Clone M1/70) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101,257</td>
+      <td>(1:80 dilution)≤0.25 µg per 106 cells in 100 µl volume for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 785 conjugated anti-Ly6C (Clone HK1.4) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 128,041</td>
+      <td>(1:80 dilution)≤0.25 µg per 106 cells in 100 µl volume for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE conjugated anti-Ly6G (Clone 1A8) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 127,608</td>
+      <td>(1:80 dilution)≤0.25 µg per 106 cells in 100 µl volume for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 conjugated anti-CD31 (Clone 390) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 102,432</td>
+      <td>(1:250 dilution)(2 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 conjugated anti-CD31 (Clone 390) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 102416</td>
+      <td>(1:250 dilution)(2 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 conjugated anti-TER-119 (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 116,218</td>
+      <td>(1:200 dilution)(2.5 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 conjugated anti-TER-119 (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 116,220</td>
+      <td>(1:200 dilution)(2.5 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IBA-1 (Rabbit polycolonal)</td>
+      <td>FUJIFILM Wako</td>
+      <td>Distributor Barcode No019–197414987481428584</td>
+      <td>(1:500 dilution)(0.4 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD68 antibody (Clone FA-11) (Rat monocolonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat# MCA1957GA</td>
+      <td>(1:200 dilution)(5 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 conjugated anti- CD106/VCAM-1 (Clone 429 or MVCAM.A) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 105,712</td>
+      <td>(1:250 dilution)(2 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 anti-CD54/ICAM-1 (Clone YN1/1.7.4) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 116,112</td>
+      <td>(1:250 dilution)(2 μg/mL) for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LFA-1(Clone M17/4) (Rat monocolonal)</td>
+      <td>BioCell</td>
+      <td>Cat# BE0006</td>
+      <td>(500 μg each IP injection)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VLA-4(Clone PS/2) (Rat monocolonal)</td>
+      <td>BioCell</td>
+      <td>Cat# BE0071</td>
+      <td>(500 μg each IP injection)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat IgG2a (Rat monocolonal)</td>
+      <td>BioCell</td>
+      <td>Cat# BE0089</td>
+      <td>(1000 μg each IP injection)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC conjugated anti-IFN-γ (Clone XMG1.2) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 505,809</td>
+      <td>(1:20 dilution)≤1 µg per 106 cells in 100 µl volume for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cy7 conjugated anti-IL-2 (Clone JES6-5H4) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 503,831</td>
+      <td>(1:160 dilution)≤0.125 µg per 106 cells in 100 µl volume for flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Streptavidin (Rabbit polycolonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# S6390</td>
+      <td>(20 μl for 107T cells for FACS)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>biotin anti-CD3 (Clone 145–2 C11) (Rat monocolonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100,304</td>
+      <td>25 μl (12.5 μg) for 5 × 109 MPIO particles during conjugation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Untouched mouse cd8 cells kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11,417D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QCM chemotaxis cell migration assay, 24-well (3 μm)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# ECM505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cyto-Fast Fix/Perm buffer set</td>
+      <td>BioLegend</td>
+      <td>Cat# 426,803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 217,084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green PCR master mix</td>
+      <td>Applied Biosystems</td>
+      <td>Cat# 1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DyLight 488-NHS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 46,403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DyLight 650-NHS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 62,266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>recombinant murine JE/MCP-1 (CCL2)</td>
+      <td>Peprotech</td>
+      <td>Cat# 250–10</td>
+      <td>10 ng/mL for migration assay</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OVA257-264 peptide</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# S7951</td>
+      <td>2 μg/ml for OT-I cell culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Mercaptoethanol</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# M3148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-(N-morpholino)ethanesulfonic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# M3885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Ethyl-3-[3-dimethylaminopropyl]carbodiimide hydrochloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# E6383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sulfo-N-hydroxysuccinimide</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 130,672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylenediamine</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# E26266-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>brefeldin A</td>
+      <td>BioLegend</td>
+      <td>Cat# 420,601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MIPAV</td>
+      <td>http://mipav.cit.nih.gov</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Cat# D1306</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>flow cytometry staining buffer</td>
+      <td>Invitrogen</td>
+      <td>Cat# 00-4222-26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 65,001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal procedures
 
 C57BL/6 J (B6), B6.129(Cg)-Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J (mTomato), and C57BL/6-Tg(TcraTcrb)1,100Mjb/J (OT-I) mice were purchased from The Jackson Laboratory. mTomato x OT-I mice were bred and maintained under specific pathogen-free conditions at the National Institutes of Health. All mice in this study were handled in accordance with the Institute of Laboratory Research guidelines and were approved by the Animal Care and Use Committee of the National Institute of Neurological Disorders and Stroke.
 
-## Intranasal (i.n.) VSV Infection
+### Intranasal (i.n.) VSV Infection
 
 Twelve- to 13-week-old C57BL/6 mice were used in all the infection and control experiments. Recombinant VSV expressed a truncated form of OVA and with or without GFP. For intranasal (i.n.) VSV-OVA infection, a dose of 3.5 × 104 PFU in 10 μL of PBS was pipetted into the opening of each nostril.
 
-## MRI study
+### MRI study
 
 For MRI scans, VSV infected mice were placed into the chamber shown in Figure 5—figure supplement 2. MRI experiments were performed at 11.7T on a Bruker Biospec MRI system (Bruker BioSpin). T2*-weighted 3D gradient-recalled echo (GRE) sequences were used for acquisitions. For in-vivo imaging, the following parameters were used: isotropic resolution = 75 μm, TE/TR = 10/30ms, FA = 10°, NA = 3, scan time = 36 m. For time-lapse MRI: isotropic resolution = 75 µm, TE/TR = 8/25ms, FA = 10°, NA = 1, each scan time = 10m2 s208ms. After in-vivo acquisitions, mice were perfused transcardially with 5% formalin. The heads were post-fixed with 10% formalin. 24 hr before ex-vivo MRI imaging acquisition, heads were transferred to PBS buffer. For ex-vivo MRI: isotropic resolution = 50 μm, TE/TR = 20/40ms, FA = 15°, NA = 12, scan time = 15h8 m.
 
-## Quantification of bleeding in the nasal turbinates and brain
+### Quantification of bleeding in the nasal turbinates and brain
 
 Ex-vivo high-resolution MRI was used to quantify nasal and brain bleeding in VSV infected mice. Because bleeding in the turbinates was so extensive, volumes were measured. Hypointensity volumes were obtained by manually drawn serial voxels of interest (VOI) using the Medical Image Processing, Analysis, and Visualization (MIPAV) program (http://mipav.cit.nih.gov) (Saar et al., 2015). Hypointensities in the brain were more focal so the number of spots was counted manually. The volume of hypointensities and number of hypointensity spots from normal healthy mice were used as background and subtracted from the measurements for each infected mouse.
 
-## Quantitative real-time PCR (RT-qPCR) for VSV RNA
+### Quantitative real-time PCR (RT-qPCR) for VSV RNA
 
 Total RNA was isolated from OB using miRNeasy Mini Kit (Qiagen). Subsequently, 1 μg of RNA was treated with amplification grade DNAse I (Life Technologies) to remove any contaminating genomic DNA. We used 250 ng of total RNA for cDNA synthesis using iScript cDNA Synthesis Kit (Bio-Rad). All Q-PCRs were performed in 20 μL volumes using SYBR Green PCR master mix (Applied Biosystems) in a 96-well optic tray using a CFX96 Real-Time PCR machine (Bio-Rad). The reactions were conducted in duplicate, and samples without reverse transcriptase were used as non-template controls. Forward primer (specific for the VSV genes): TGA TGA TGC ATG ATC CAG CTC T; reverse primer: ACA CAC CTC CAA TGG AAG GGT. Actin RNA was used as internal standard. Q-PCR reactions were run with an initial denaturation temperature of 95 °C for 10 min, followed by 40 cycles of three-step amplification (denaturation at 95 °C for 10 s, 60 °C annealing for 15 s and extension at 72 °C for 20 s).
 
-## Adhesion molecule blockade studies
+### Adhesion molecule blockade studies
 
 Anti-LFA-1 (clone M17/4), anti-VLA-4 (clone PS/2), and isotype control (rat IgG2a) antibodies were purchased from BioXcell. Mice were treated with a combination of 500 μg anti-LFA-1 and 500 μg anti-VLA-4, or 1000 μg isotype control antibody at day 1, 3, and 5 post-infection through intraperitoneal injection. Normal healthy mice were used as the control group.
 
 To evaluate the efficacy of antibody blockades, cell counting and flow cytometry analysis were performed. On day 6 of infection, mice were perfused with cold PBS and olfactory bulbs were isolated. Tissues were dissected with scissors and digested in 1 mg/mL Collagenase-D and 0.25 mg/mL DNAse in RPMI Complete Medium (Gibco) for 30 min at 37 °C with frequent trituration. Tissues were then dissociated into single cell suspensions by smashing and passed through a 100 μm filter mesh. Cells were then spun down at 350 g for 6 min and resuspended in 3 mL of a 37% isotonic Percoll solution. The samples were spun at 350 x g for 6 min, and the supernatant was removed. Pelleted cells were washed with cold RPMI and spun down. Absolute cell numbers were counted before staining. Cells were suspended in Fc block solution for 10 min. A 2 x antibody cocktail was added directly to cells for 20 min before a final wash and resuspension in FACS buffer for flow cytometry analysis. Antibodies were from BioLegend: CD45 (BV421; 30-F11), anti-Thy1.2 (APC, 30-H12), anti-CD8 (AF700; 53–6.7), anti-CD11b (BV605; M1/70), anti-Ly6C (BB790; HK1.4), anti-Ly6G (PE; 1A8).
 
-## Adoptive transfer of CD8 T cells for MRI
+### Adoptive transfer of CD8 T cells for MRI
 
 We considered day 6 post-infection as the peak of encephalitis in this model of VSV infection (Huneycutt et al., 1994). For MRI studies ranging from day 1–6 post-infection, we injected 5 × 105 mTomato OT-I CD8+ T cells into the tail vein on day 0 or 2. T cells were injected intravenously on day 6 for MRI studies performed on day 7–11. Figure 5—figure supplement 2 provides an illustration of these two experiment paradigms.
 
-## OT-I CD8 T cell isolation, culture, and labeling with MPIO
+### OT-I CD8 T cell isolation, culture, and labeling with MPIO
 
 Splenocytes were isolated from mTomato OT-I mice. Splenocytes were prepared by smashing with the textured end of a sterile 10 mL syringe followed by pipetting through a 40 micron filter into a 15 mL conical tube. The cells were collected by centrifugation at 300 g for 6 min and decanted. Cell pellets were resuspended in mouse ACK lysis buffer and waited for 10 min at room temperature followed by two washes with PBS (w/1% FBS). OT-I CD8 T cells were isolated using a Dynabeads Untouched Mouse CD8 Cells Kit (Invitrogen). The purity of CD8 T cells was confirmed by flow cytometry (Figure 5—figure supplement 1), using the Beckman Coulter’s MoFlo Astrios cell sorter and analyzed by the Summit 6.3.1 software. CD8 T cells were cultured overnight in RPMI medium supplemented with OVA257–264 peptide (2 μg/ml), 2-mercaptoethanol (50 μM), FBS (10%), penicillin (50 U/ml), streptomycin (50 μg/ml), and l-glutamine (2 mM) and incubated at 37 °C with 5% CO2 in a humidified (85% humidity) cell culture incubator.
 
 For MPIO labeling, mTomato OT-I CD8+ T cells were incubated with MPIO at a ratio of 1:5 overnight. The CD8 T cells were then washed with cell staining buffer (BioLegend), harvested, and stained with anti-streptavidin-DyLight 650 and DAPI for 30 min on ice. Anti-streptavidin-DyLight 650 was used to identify the cellular location of MPIO, since MPIO was modified with streptavidin. MPIO labeled OT-I cells, defined as DAPI-, mTomato+, DyLight 488+, DyLight 650-, were collected. We used the Beckman Coulter’s MoFlo Astrios cell sorter installed with the Summit 6.3.1 software for cell sorting.
 
-## MPIO bioconjugation for T cell labeling
+### MPIO bioconjugation for T cell labeling
 
 The synthetic scheme is shown in the Figure 7—figure supplement 1. MPIO particles with streptavidin modification and carboxylic acid group on the surface (Dynabeads MyOne Streptavidin C1, Thermo Fisher Scientific) was used for the bioconjugation reactions. 0.5 ml of MPIO particles (5 × 109) was resuspended in 10 ml of 2-(N-morpholino) ethanesulfonic acid buffer (MES, 50 mM, pH 5.5). 1-Ethyl-3-[3-dimethylaminopropyl] carbodiimide hydrochloride (EDAC) and sulfo-N-hydroxysuccinimide (Sulfo-NHS) were added to the particle suspension. The final concentrations of EDAC and NHS were 75 mM and 150 mM, respectively. The reaction mixture was stirred at room temperature for 30 min. The resulting NHS ester was purified by a magnetic stand separator (Miltenyi Biotec). 20 μl of ethylenediamine (shall be large folds excess of calculated carboxyl groups on the particles) was dissolved in 10 ml PBS and pH was adjusted to 7.5. The purified NHS ester was added to the ethylenediamine solution. The reaction mixture was allowed to stir for 4 hr at room temperature. The resulted MPIO-NH2 particles were purified by a magnetic separator and washed 2 times with borate buffer (50 mM, pH 8.5, with 0.05% Tween 20). 50 μg of DyLight 488 or DyLight 650-NHS ester (Thermo Fisher Scientific) was added to MPIO-NH2 particles in 5 ml of borate buffer. Covered the vial with aluminum foil to prevent photobleaching and placed it on a slowly rotating platform for 1 hr at room temperature. Wash the beads 3 times with antibody washing and binding buffer (AWBB, 50 mM Tris-HCl, 150 mM NaCl, 0.05% Tween 20, pH 8.0). 25 μl Biotin anti-mouse CD3 stock solution (12.5 μg, BioLegend) was added to 5 ml of the beads in AWBB. Covered the tube with aluminum foil and placed it on the rotating platform for 30 min at room temperature. The resulted particles were washed and kept in AWBB. Right before T cell labeling, beads were washed three times with RPMI medium.
 
-## Electron microscopy
+### Electron microscopy
 
 Freshly sorted cells were spun at 350 x g for 5 min. 1 mL of 4% glutaraldehyde in 0.1 M cacodylate buffer at pH 7.4 was added gently to the cell pellet without disturbing the pellet. Then one small drop of 20% bovine albumin was added to the solution using a fine tip pipette. After 1 hr of fixation at room temperature, the sample was stored in refrigerator overnight. The pellet was treated with 1% OsO4 plus 1% ferrocyanide in cacodylate buffer for 1 hr and 1% uranyl acetate in acetate buffer at pH 5.0 overnight, dehydrated in a series of ethanol and embedded in epoxy resins. Thin sections were counterstained with uranyl acetate and lead citrate and examined with a JEOL 1200 EXII transmission electron microscope. Images were photographed with a bottom-mounted digital CCD camera (AMT XR-100, Danvers, MA, USA).
 
-## Histology
+### Histology
 
 Following perfusion or ex-vivo MRI acquisition, brains were isolated and post-fixed with 5% formalin for 2 hr. Brains were then transferred into 15% sucrose for 1 day, followed by 30% sucrose for 1 day. Brains were cut coronally and embedded in tissue freezing medium (Fisher HealthCare). Cryosections were cut coronally (30 μm) by a cryostat (Leica CM 1850). Brain sections were stained using a standard procedure for free-floating immunohistochemistry. Briefly, brain sections were rinsed with TBS 3 × 5 min, followed by blocking in 5% normal serum in TBS with 0.5% Triton X-100 for 2 hr at 4 °C. Then the sections were stained in the following antibody solutions in TBS with 3% normal serum and 0.3% Triton X-100 overnight at 4 °C. To label red blood cells (RBC), Alexa Fluor 647 or Alexa Fluor 700 conjugated anti-TER119 (2.5 μg/mL; BioLegend) was used. For vascular endothelial cells, Alexa Fluor 594 or Alexa Fluor 647 conjugated anti-mouse CD31 (2 μg/mL; clone 390; BioLegend) was used. To study vessel inflammation, Alexa Fluor 488 anti-CD54 antibody (2 μg/mL, ICAM-1, YN1/1.7.4, BioLegend), and Alexa Fluor 647 anti-CD106 antibody (2 μg/mL, VCAM-1, 429 MVCAM.A, BioLegend) were used. For CD8 T cells, Brilliant Violet 421 or Alexa Fluor 594 conjugated anti-mouse CD8a (2 μg/mL; clone 53–6.7; BioLegend) was used. To study microglia and activation, rabbit anti-IBA-1 antibody (0.4 μg/mL, FUJIFILM Wako) and rat anti-CD68 antibody (5 μg/mL, clone FA-11, Bio-Rad) was used. For secondary antibody staining, Alexa Fluor 700 goat anti-rabbit or Alexa Fluor 488 goat anti-rat were used, and the staining was at 4 °C for 2 hr. Then tissue sections were put on the Superfrost microscope slides (Fisherbrand). After dried overnight at room temperature, slides with brain sections were then coverslipped using ProLong Gold antifade reagent with or without DAPI (Thermo Fisher Scientific). Images were captured using a Nikon Eclipse Ti microscope (Nikon).
 
-## Quantification of vessel VCAM-1 and ICAM-1 coverage and intensity of CD68 signals
+### Quantification of vessel VCAM-1 and ICAM-1 coverage and intensity of CD68 signals
 
 Images obtained under 20 x view (0.4 mm x 0.4 mm) were used for quantification. ImageJ was used for quantification. During quantifications of vessel coverage, the CD31 area was taken as 100% and the VCAM-1 or ICAM-1 positive area was expressed as a percentage normalized to CD31 area.
 
-## Migration assay
+### Migration assay
 
 T cell migration assays were performed using QCM Chemotaxis Cell Migration assay, 24-well (3 μm) (Millipore Sigma), according to supplier’s instruction. 1 × 105 unlabeled or MPIO-labeled CD8 T cells, in serum free and chemoattractant free RPMI, were plated in the upper wells. In the lower well, 10% FBS and 10 ng/mL T cell chemoattractant MCP-1/CCL-2 were added to the RPMI. After 16 hr, T cells that migrated into the lower chamber were counted by Trypan Blue assay.
 
-## IL-2 and IFN-gamma release assay for T cell function
+### IL-2 and IFN-gamma release assay for T cell function
 
 Briefly, MPIO-labeled OT-1 CD8 T cells or unlabeled CD8 T cells (1 × 106) were treated with brefeldin A (BioLegend) for 4 hr. Then cells were stained with APC anti-mouse IFN-γand PE/Cy7 anti-mouse IL-2 antibodies (BioLegend), by using the Cyto-Fast Fix/Perm Buffer Set (BioLegend) followed the Intracellular Flow Cytometry Staining Protocol from BioLegend.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was carried out with the Student’s t-test. A p<0.05 was considered statistically significant.

@@ -16,15 +16,15 @@
 
 ### Affiliations
 
-1. https://ror.org/021wm7p51 Division of Molecular Biochemistry and Microbiology, CSIR Institute of Microbial Technology Chandigarh India
-2. https://ror.org/021wm7p51 Division of Medicinal Chemistry, CSIR Institute of Microbial Technology Chandigarh India
+1. Division of Molecular Biochemistry and Microbiology, CSIR Institute of Microbial Technology Chandigarh India ([ROR:021wm7p51](https://ror.org/021wm7p51))
+2. Division of Medicinal Chemistry, CSIR Institute of Microbial Technology Chandigarh India ([ROR:021wm7p51](https://ror.org/021wm7p51))
 3. Clinical Proteomics Unit, Division of Molecular Medicine, St. John's Research Institute, St John's Medical College Bangalore India
 
 † Corresponding author
 
 ## Abstract
 
-Spermidine and other polyamines alleviate oxidative stress, yet excess spermidine seems toxic to Escherichia coli unless it is neutralized by SpeG, an enzyme for the spermidine N -acetyl transferase function. Thus, wild-type E. coli can tolerate applied exogenous spermidine stress, but Δ speG strain of E. coli fails to do that. Here, using different reactive oxygen species (ROS) probes and performing electron paramagnetic resonance spectroscopy, we provide evidence that although spermidine mitigates oxidative stress by lowering overall ROS levels, excess of it simultaneously triggers the production of superoxide radicals, thereby causing toxicity in the Δ speG strain. Furthermore, performing microarray experiment and other biochemical assays, we show that the spermidine-induced superoxide anions affected redox balance and iron homeostasis. Finally, we demonstrate that while RNA-bound spermidine inhibits iron oxidation, free spermidine interacts and oxidizes the iron to evoke superoxide radicals directly. Therefore, we propose that the spermidine-induced superoxide generation is one of the major causes of spermidine toxicity in E. coli .
+Spermidine and other polyamines alleviate oxidative stress, yet excess spermidine seems toxic to Escherichia coli unless it is neutralized by SpeG, an enzyme for the spermidine N-acetyl transferase function. Thus, wild-type E. coli can tolerate applied exogenous spermidine stress, but ΔspeG strain of E. coli fails to do that. Here, using different reactive oxygen species (ROS) probes and performing electron paramagnetic resonance spectroscopy, we provide evidence that although spermidine mitigates oxidative stress by lowering overall ROS levels, excess of it simultaneously triggers the production of superoxide radicals, thereby causing toxicity in the ΔspeG strain. Furthermore, performing microarray experiment and other biochemical assays, we show that the spermidine-induced superoxide anions affected redox balance and iron homeostasis. Finally, we demonstrate that while RNA-bound spermidine inhibits iron oxidation, free spermidine interacts and oxidizes the iron to evoke superoxide radicals directly. Therefore, we propose that the spermidine-induced superoxide generation is one of the major causes of spermidine toxicity in E. coli.
 
 ## Introduction
 
@@ -36,11 +36,19 @@ A tremendous volume of work has been dedicated to unravel the biological importa
 
 ## Results
 
-## Increased cellular spermidine inhibits overall oxidative stress while apparently evoking less harmful O2- production
+### Increased cellular spermidine inhibits overall oxidative stress while apparently evoking less harmful O2- production
 
 To determine the working concentrations of exogenous spermidine that sufficiently inhibits the growth of ΔspeG, but not WT strain, we added various amounts of spermidine in the growth medium. WT cells showed a modest reduction in growth up to 6.4 mM of spermidine concentration (Figure 1—figure supplement 1). On the contrary, ΔspeG strain exhibited a striking decrease in growth when supplemental spermidine level was >3.2 mM (Figure 1—figure supplement 1). Therefore, we chose spermidine concentration ≥3.2 mM for our further experiments. We performed HPLC analyses to show whether elevated spermidine level in the ΔspeG strain caused growth inhibition. Supplementation of 3.2 mM exogenous spermidine in the growth medium increased the intracellular spermidine levels in the ΔspeG strain, while no significant increase was observed in the WT cells (Figure 1—figure supplement 1). The SpeG function apparently converted the excess spermidine to N1- and N8-acetyl-spermidines maintaining the level of spermidine in the WT cells (Miller-Fleming et al., 2015). The spermidine synthase-defective (ΔspeE) strain of E. coli also acquired spermidine at a low level from the LB medium (Figure 1—figure supplement 1).
 
 It is well documented that polyamine spermidine is an anti-ROS agent (Balasundaram et al., 1993; Chattopadhyay et al., 2003; Chattopadhyay et al., 2006; Ha et al., 1998a; Khan et al., 1992a; Khan et al., 1992b; Pegg, 2018; Murray Stewart et al., 2018). However, all the in vivo studies in the past have been conducted under polyamine deficient conditions to show ROS production, thereby implicating the anti-ROS function of polyamines. Thus, assessing ROS levels both in spermidine-enriched and spermidine-deficient conditions are missing. To address this, we incubated E. coli strains with 2',7'-dichlorodihydrofluorescein diacetate (H2DCFDA) and dihydroethidium (DHE) probes, which generate fluorescent compounds reacting with one-electron-oxidizing species. While H2DCFDA is a generic ROS probe that nonspecifically reacts with many ROS, the DHE is somewhat specific to the O2- anions in the system (Chen et al., 2013; Kalyanaraman et al., 2012). The relative mean fluorescence intensity (MFI) of H2DCFDA was increased about 1.5-fold in the spermidine synthase-defective (ΔspeE) strain, while no change in MFI was observed in the ΔspeG strain (Figure 1A). However, spermidine treatment significantly decreased the H2DCFDA fluorescence in WT, ΔspeG, and ΔspeE strains (Figure 1A). Interestingly, despite no apparent increase in the spermidine level in WT cells under spermidine stress (Figure 1—figure supplement 1), a significant decrease in the H2DCFDA fluorescence was observed (Figure 1A). It is possible that the acetylated products of spermidine might have some role in the declined ROS levels causing decreased H2DCFDA fluorescence in spermidine-fed WT cells. Similarly, the relative MFI of DHE probe was increased significantly (1.5-fold) in ΔspeE strain (Figure 1B). These findings are consistent with the observations that spermidine is an anti-ROS agent (Balasundaram et al., 1993; Chattopadhyay et al., 2003; Chattopadhyay et al., 2006; Ha et al., 1998a; Khan et al., 1992a; Khan et al., 1992b; Pegg, 2018; Murray Stewart et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig1-v3.jpg)
+
+**Figure 1.:** (A) The relative mean fluorescence intensity (MFI) values for the 2',7'-dichlorodihydrofluorescein diacetate (H2DCFDA), which is an indicator of •OH radical production, obtained by flow cytometry analyses are plotted. (B) The relative MFI values of dihydroethidium (DHE) probe, which is an indicator of O2- radical production, obtained by flow cytometry analyses are plotted. (C) The absolute H2O2 production for a span of 5 hr from the different E. coli strains are shown. *** are p-values generated comparing with WT value. (D) Zone of inhibitions (ZOIs) surrounding SPD well on the agar plates were shown for the WT and ΔspeG strains of E. coli under aerobic and anaerobic conditions. (E) Serially diluted E. coli cells were spotted on LB-agar plates to show their sensitivity to SPD. (F) Viability of different knockout strains were plotted from the CFU counts in different time intervals after treatment with lethal dose of SPD. ** and *** are p-values generated comparing with the values of ΔspeG and ΔspeGΔsodA, respectively. Error bars in the panels are mean ± SD from the three independent experiments. Whenever mentioned, *** and ** are <0.001 and <0.01, respectively; unpaired t test. See also Figure 1—figure supplement 1, and Figure 1—source data 1, Figure 1—source data 2, Figure 1—source data 3, Figure 1—source data 4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) and (B) represent the growth curves of Escherichia coli WT and ΔspeG strains, respectively, in the presence of varying concentrations of spermidine. (C) Bar diagram represents intracellular spermidine levels in different strains in the presence or absence of spermidine. (D) Cell viability assays show that single ΔsodA and ΔsodB mutants are not affected by spermidine (SPD). See also Figure 1—figure supplement 1—source data 1 and Figure 1—figure supplement 1—source data 2.
 
 Surprisingly, the relative MFI of DHE probe was increased significantly (2-fold) in the spermidine-fed ΔspeG as compared to WT strain of E. coli (Figure 1B). Tyron (Tr), an O2- quencher, decreased the MFI of DHE in the spermidine-fed ΔspeG strain (Figure 1B). These observations indicate that although spermidine accumulation in the ΔspeG strain reduces overall ROS levels and oxidative stress (Figure 1A), it may simultaneously evoke less harmful O2- production (Balasundaram et al., 1993; Chattopadhyay et al., 2003; Chattopadhyay et al., 2006; Ha et al., 1998a; Khan et al., 1992a; Khan et al., 1992b; Pegg, 2018; Murray Stewart et al., 2018). In another assay, we determined that the ΔspeE and spermidine-fed ΔspeG strains release substantially low levels of H2O2 compared to the untreated counterpart and WT cells (Figure 1C).
 
@@ -48,7 +56,7 @@ Next, we allowed WT and ΔspeG strains to grow against the spermidine-diffusing 
 
 If spermidine induces O2- production, superoxide dismutase (SOD) genes (e.g., sodA and sodB) would play vital roles. Therefore, the serial dilutions of WT, ΔspeG, ΔsodA, ΔsodB, and corresponding double and triple mutants, viz. ΔspeGΔsodA, ΔspeGΔsodB, ΔsodAΔsodB, and ΔspeGΔsodAΔsodB, were transformed with either empty vector, pDAK1, or pSodA vectors. The ΔspeGΔsodA and ΔspeGΔsodAΔsodB mutants containing empty vector exhibited higher growth defects than ΔspeG strain on LB-agar plate supplemented with spermidine (Figure 1E). However, the cell viability of the double mutants was similar to the ΔspeG strain, while the triple mutant exhibited an accelerated loss of cell viability, in the presence of spermidine (Figure 1F). The multicopy induction of SodA from pSodA plasmid suppressed the growth defect in the ΔspeG and ΔspeGΔsodA strains (Figure 1E). The overexpression of SodA also improved the viability of ΔspeGΔsodA strain (Figure 1F). Note that, unlike ΔspeG strain, the single mutants show growth and viability similar to the WT strain in the presence or absence of spermidine (Figure 1E and Figure 1—figure supplement 1). This data suggests that the absence of SOD enzymes aggravates O2- toxicity in the spermidine-fed ΔspeG strain.
 
-## Spermidine stress evokes O2- production in ΔspeG strain
+### Spermidine stress evokes O2- production in ΔspeG strain
 
 Although the above experiments apparently suggest for the production of O2- anions under spermidine stress, they are not direct and confirmatory in nature, as the ROS probes often reacts with multiple ROS (Kalyanaraman et al., 2012). Spermidine transport is a proton motif force (PMF)-dependent process (Kashiwagi et al., 1986). Therefore, the observed narrower ZOI in the presence of spermidine under anaerobic condition (Figure 1D) could also be due to the low PMF under anaerobic condition. Thus, to determine the relative levels of intracellular O2- species, we performed electron paramagnetic resonance (EPR) using a cell-permeable cyclic hydroxylamine spin-probe, 1-hydroxy-3-methoxycarbonyl-2,2,5,5-tetramethylpyrrolidine (CMH) (Dikalov et al., 2018). Compared to spin-trap agents, lower level of CMH reacts at a much faster rate with O2- anion, producing highly stable and EPR-sensitive nitroxide radicals (Dikalov et al., 2018). However, peroxynitrite and •OH radicals can also oxidize CMH (Dikalov et al., 2018; Thomas et al., 2015).
 
@@ -56,41 +64,285 @@ In the first set of reactions, the unfed and spermidine-fed ΔspeG cells carryin
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig2-v3.jpg)
 
-**Figure 2.:** 2- radical production in ΔspeG strain.(A) 1-Hydroxy-3-methoxycarbonyl-2,2,5,5-tetramethylpyrrolidine (CMH) probe incubated with KDD buffer before electron paramagnetic resonance (EPR) analysis. (B, C, D) EPR spectra ΔspeG strain with the plasmids pDAK1 (empty vector) or pSodA were grown without spermidine and performed EPR adding CMH probe. (E, F, G) ΔspeG strain with the plasmids pDAK1 (empty vector) or pSodA were grown with spermidine and performed EPR adding CMH spin probe, as mentioned in the Materials and methods. See also Figure 2—source data 1.Figure 2—source data 1.Figure 2 Raw data.
+**Figure 2.:** (A) 1-Hydroxy-3-methoxycarbonyl-2,2,5,5-tetramethylpyrrolidine (CMH) probe incubated with KDD buffer before electron paramagnetic resonance (EPR) analysis. (B, C, D) EPR spectra ΔspeG strain with the plasmids pDAK1 (empty vector) or pSodA were grown without spermidine and performed EPR adding CMH probe. (E, F, G) ΔspeG strain with the plasmids pDAK1 (empty vector) or pSodA were grown with spermidine and performed EPR adding CMH spin probe, as mentioned in the Materials and methods. See also Figure 2—source data 1.
 
-## O2- production under spermidine stress affects cellular redox state
+### O2- production under spermidine stress affects cellular redox state
 
 Antioxidant chemicals viz. Tr, sodium pyruvate (SP), and thiourea (TU) scavenge O2-, H2O2, and •OH, respectively (Bleeke et al., 2004; Franco et al., 2007). Whereas, N-acetyl cysteine (NAC) and ascorbate counterbalance oxidative stress replenishing glutathione levels and donating electrons to reducing partners (Nimse and Pal, 2015; Sun, 2010). We show that Tr, NAC, and ascorbate, but not SP and TU, rescued the spermidine-mediated growth inhibition phenotype (Figure 3A). This observation further suggests that the O2- stress-derived redox imbalance could be the route of spermidine toxicity.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig3-v3.jpg)
 
-**Figure 3.:** 2- radical production affects redox balance in the spermidine-fed ΔspeG strain.(A) Growth curves show that Tyron (Tr), ascorbate (Asc), and N-acetyl cysteine (NAC) can overcome spermidine (SPD) stress while sodium pyruvate (SP) and thiourea (TU) fail to do so. (B) Growth curves show that ΔspeGΔzwf strain is hypersensitive to SPD in comparison to ΔspeG strain. Complementation of ΔspeGΔzwf strain with pZwf plasmid overcomes this SPD hypersensitivity. (C) CFUs were obtained for different Escherichia coli strains pretreated with SPD for desired time points and plotted to show the reduced viability of ΔspeGΔzwf strain in comparison to theΔspeG strain. (D) Relative levels of NADPt and reduced nicotinamide adenine dinucleotide phosphate (NADPH) were significantly decreased in the ΔspeG strain under SPD stress. (E) Relative levels of GSt, GSH, and GSSG were significantly decreased in the SPD-fed ΔspeG strain. (F) No significant change in the relative total NAD (NADt), NAD+, and NADH levels were recorded. However, NAD+ to NADH ratio was significantly increased in the ΔspeG strain compared to WT cells. No further increase of the ratio was observed by adding SPD in the growth medium of WT and ΔspeG strain. (G) The relative level of ATP was declined in ΔspeG strain and spermidine-fed WT cells in comparison to the unfed WT. SPD supplementation decreased the ATP level further in the SPD-fed ΔspeG strain. Error bars in the panels are mean ± SD from the three independent experiments. Whenever mentioned, the *** and ** denote p-values < 0.001 and < 0.01, respectively; unpaired t test. See also Figure 3—source data 2, Figure 3—source data 3, Figure 3—source data 4, Figure 3—source data 5.Figure 3—source data 1.Figure 3A Raw data.Figure 3—source data 2.Figure 3B Raw data.Figure 3—source data 3.Figure 3C Raw data.Figure 3—source data 4.Figure 3D, E and F Raw data.Figure 3—source data 5.Figure 3G Raw data.
+**Figure 3.:** (A) Growth curves show that Tyron (Tr), ascorbate (Asc), and N-acetyl cysteine (NAC) can overcome spermidine (SPD) stress while sodium pyruvate (SP) and thiourea (TU) fail to do so. (B) Growth curves show that ΔspeGΔzwf strain is hypersensitive to SPD in comparison to ΔspeG strain. Complementation of ΔspeGΔzwf strain with pZwf plasmid overcomes this SPD hypersensitivity. (C) CFUs were obtained for different Escherichia coli strains pretreated with SPD for desired time points and plotted to show the reduced viability of ΔspeGΔzwf strain in comparison to theΔspeG strain. (D) Relative levels of NADPt and reduced nicotinamide adenine dinucleotide phosphate (NADPH) were significantly decreased in the ΔspeG strain under SPD stress. (E) Relative levels of GSt, GSH, and GSSG were significantly decreased in the SPD-fed ΔspeG strain. (F) No significant change in the relative total NAD (NADt), NAD+, and NADH levels were recorded. However, NAD+ to NADH ratio was significantly increased in the ΔspeG strain compared to WT cells. No further increase of the ratio was observed by adding SPD in the growth medium of WT and ΔspeG strain. (G) The relative level of ATP was declined in ΔspeG strain and spermidine-fed WT cells in comparison to the unfed WT. SPD supplementation decreased the ATP level further in the SPD-fed ΔspeG strain. Error bars in the panels are mean ± SD from the three independent experiments. Whenever mentioned, the *** and ** denote p-values < 0.001 and < 0.01, respectively; unpaired t test. See also Figure 3—source data 2, Figure 3—source data 3, Figure 3—source data 4, Figure 3—source data 5.
 
 The reduced nicotinamide adenine dinucleotide phosphate (NADPH) is a potent reducing agent. NADPH drives glutathione and thioredoxin cycles, thereby producing reduced forms of glutathione (GST), glutaredoxins, and thioredoxins to cope up with oxidative stress. A large fraction of NADPH in E. coli is provided by a glucose-6-phosphate 1-dehydrogenase (Zwf) catalyzed reaction (Olavarría et al., 2012). We show that both the growth and viability of ΔspeGΔzwf double mutant were significantly affected compared to the ΔspeG strain under spermidine stress (Figure 3B and C). Complementing ΔspeGΔzwf with a plasmid, pBAD-zwf, rescues the growth defect and mortality under spermidine stress (Figure 3B and C). We compared the levels of the total NADP (NADPt), total glutathione (GSt), and their oxidized (NADP+ and GSSG) and reduced (NADPH and GSH) species in the WT and ΔspeG strains grown in the absence and presence of spermidine. The relative levels of total and reduced species of NADP and GST were decreased significantly in the spermidine-fed ΔspeG strain (Figure 3D and E). NAD serves as the precursor for NADP production. However, the levels of total (NADt), oxidized (NAD+), and reduced (NADH) did not alter significantly (Figure 3F). Nevertheless, the NAD + to NADH ratio was significantly increased in the ΔspeG strain compared to WT cells (Figure 3F). No significant increase of the ratios was observed by adding spermidine in the growth medium of WT and ΔspeG strain (Figure 3F). In consistence with the increased ratio of NAD + to NADH, the level of ATP was declined in ΔspeG strain compared to the unfed WT (Figure 3G). ATP level was further decreased in the spermidine-fed ΔspeG strain (Figure 3G).
 
-## Spermidine blocks the induction of SoxR regulon
+### Spermidine blocks the induction of SoxR regulon
 
 To understand the global impact of spermidine toxicity, we performed a microarray experiment on the ΔspeG strain in the presence and absence of spermidine. The genes that were >2-fold downregulated are involved in flagellar biogenesis, acid resistance, hydrogenase function, nitrogen metabolism, electron transport, aromatic and basic amino acid metabolism, etc. (Figure 4A and Supplementary file 1). Interestingly, transcription of the genes encoding chaperones, heat shock, and other stress factors (groL, groS, dnaK, hdeAB, ibpAB, uspAB, etc.) was also downregulated under spermidine stress (Supplementary file 1). On the other hand, among the highly upregulated category, the genes that encode for the ribosome, RNA polymerase, transcription factors, DNA polymerase, and enzymes for the fatty acid biosynthesis and iron-sulfur cluster (isc) biogenesis were prominent (Supplementary file 1 and Figure 4A). These observations indicate that apart from inducing superoxide production (Figures 1 and 2), the excess spermidine could interfere with broad cellular processes, such as protein folding and proteostasis, DNA, RNA and lipid metabolisms, and iron-sulfur cluster biogenesis. Many operons regulated by Fis and IHF were activated or repressed in our microarray indicating that spermidine could activate Fis and IHF regulon (Supplementary file 2). Performing Fisher’s exact test, we show that the differential expression of the Fis-regulated operons was significantly enriched (p-value 0.0023). Corroborating with this finding, we show that ΔspeGΔfis, but not ΔspeGΔihfA strain, generated small colonies upon overnight incubation (Figure 4—figure supplement 1), suggesting that the role of Fis regulator is critical under spermidine stress. Quantitative real-time PCR (RT-qPCR) experiment was performed to validate the microarray data partially (Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig4-v3.jpg)
+
+**Figure 4.:** (A) (i) Microarray heat map showing various categories of genes (I: Replication and transcription associated genes, II: Iron homeostasis, ROS, multidrug resistance and sugar metabolism genes, III: Ribosomal and ribosome biogenesis-associated genes, IV: Oxidoreductase and ATP synthesis genes, V: Fatty acid metabolism-related genes, VI: Flagellar biogenesis-related genes, VII: Acid resistance and chaperone genes, VIII: Hydrogenase and nitrogen metabolizing genes, IX: Amino acid metabolizing genes; see Supplementary file 1) that were differentially expressed under spermidine stress. (ii) Zoomed in heat map of the category II genes responsible for iron metabolism and reactive oxygen species (ROS) regulation. (iii) Color key represents the expression fold-change (FC) of the genes. (B) The subpanel (i) represents a flow cytometry experiment to demonstrate that spermidine (SPD) stress inhibits menadione (MD)-induced PsoxS-gfpmut2 reporter fluorescence. The subpanel (ii) represents relative mean fluorescence intensities (MFIs) in the presence or absence of SPD and MD calculated from three different flow cytometry experiments. (C, D, E) Western blotting experiments show SodA, KatG, and AhpC levels in the various strains in the presence or absence of SPD: (i) developed blot, (ii) ponceau S-stained counterpart of the same blot, (iii) the bar diagrams represent relative FC of the proteins under SPD stress. The relative FC values were calculated from the band intensity values obtained from three independent blots in comparison to the untreated WT counterparts. Purified 6X His-tagged SodA, KatG, and AhpC proteins were loaded as positive controls. The cellular protein extracts from ΔsodA, ΔkatG, and ΔahpC strains were used for negative controls. Whenever mentioned, the *** and ** denote p-values < 0.001, < 0.01, respectively; unpaired t test.Figure 4—source data 2., Figure 4—source data 3, Figure 4—source data 4, Figure 4—source data 5, Figure 4—source data 6, Figure 4—source data 7, Figure 4—source data 8, Figure 4—source data 9, Figure 4—source data 10, Figure 4—source data 11, Figure 4—source data 12, Figure 4—source data 13 and Figure 4—source data 14.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** The colonies of different mutant Escherichia coli strains were steaked on the LB-agar surface to show that ΔspeGΔfis slow growing compared to ΔspeG and ΔspeGΔihfA strains.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Microarray data was validated by performing quantitative real-time PCR (RT-qPCR) against some of the genes that were up- or downregulated in the microarray. (B) RT-qPCR data to show that the spermidine stress does not alter the expression of soxS, sodA, and zwf genes in the ΔspeG strain. (C) Flow cytometry experiments determined that spermidine stress does not upregulate PsoxS-gfpmut2 reporter in the ΔspeG strain. The upper portion of the panel (i) represents a flow cytometry histogram. Gray area is background fluorescence of the ΔspeG cells. The areas within saffron line and blue line represent GFP fluorescence in the absence and presence of spermidine, respectively. The bar diagram in the lower part of the panel (ii) exhibits relative mean fluorescence intensity (MFI) values calculated from three independent flow cytometry experiments. (D) β-Galactosidase reporter assay shows that the promoter activity of sodA gene remains unchanged under spermidine stress. (E) Flow cytometry experiments were performed to show that spermidine stress does not upregulate PahpC-gfp reporter in the ΔspeG strain. The subpanel (i) represents a flow cytometry histogram of background fluorescence of the ΔspeG cells (gray area). The pink-lined and green-lined areas of histogram represent fluorescence in the absence and presence of spermidine, respectively. The bar diagram in the subpanel (ii) exhibits relative MFI values calculated from three independent flow cytometry experiments. (F) Flow cytometry experiments show that spermidine stress downregulates PkatG-gfp reporter expression in the ΔspeG strain. The subpanel (i) represents histogram of background fluorescence of the ΔspeG cells (gray area). The green-lined and pink-lined areas of histogram represent GFP fluorescence in the absence and presence of spermidine, respectively. The bar diagram in the lower part of the panel (ii) exhibits relative MFI values in the presence or absence of spermidine calculated from three independent flow cytometry experiments. *** denotes p-value < 0.001; unpaired t test.
+
 Iron-sulfur center of SoxR senses the levels of cellular O2- or NO (Fujikawa et al., 2017; Hidalgo and Demple, 1994; Kobayashi, 2017; Liochev and Fridovich, 2011; Lo et al., 2012) and triggers transcription of a set of genes, including soxS, sodA, and zwf (Touati, 2000; Wu and Weiss, 1992). Surprisingly, none of the three critical genes was found to be activated in the microarray. RT-qPCR analyses verified the unaltered expression of soxS, sodA, and zwf under spermidine stress (Figure 4—figure supplement 2). Consistently, using ΔspeG harboring pUA66_soxS, a reporter plasmid expressing gfpmut2 from the soxS promoter (PsoxS-gfpmut2), and RKM1 strain containing a chromosomally fused lacZ reporter under sodA promoter (PsodA-lacZ) (Table 1), we did not find any transcriptional activation of soxS and sodA promoters (Figure 4—figure supplement 2). Therefore, we suspected whether spermidine in excess blocks the O2- -mediated activation of SoxR, thereby aggravating O2- toxicity. However, an alternative explanation for this observation would be that the redox cycling drugs, but not O2-, are the efficient activators of SoxR (Gu and Imlay, 2011). Therefore, we used menadione, a redox cycling agent and O2- generator, to observe the PsoxS-gfpmut2 reporter induction and chased it by spermidine in the ΔspeG strain. Spermidine also suppressed the menadione-induced GFP reporter fluorescence (Figure 4B), suggesting that spermidine indeed blocks SoxR-mediated activation of soxS in E. coli. A possible mechanism of spermidine-mediated SoxR inactivation is discussed. Among other ROS-responsive genes, the catalase coding genes (katE and katG) were downregulated (Figure 4A), while no change was observed in the expression of ahpCF genes under spermidine stress (GEO accession #154618). Using pUA66_ahpC and pUA66_katG reporter plasmids (PahpC-gfpmut2 and PkatG-gfpmut2, respectively), we validated these microarray observations (Figure 4—figure supplement 2).
+
+**Table 1.**
+ The list of strains and plasmids used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strains and plasmids</th>
+      <th>Genotype/features</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strains</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BW25113</td>
+      <td>Escherichia coli; rrnB3 ΔlacZ4787 hsdR514Δ(araBAD) 567 Δ(rhaBAD)568 rph-1</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔspeG</td>
+      <td>BW25113, ΔspeG::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔsodA</td>
+      <td>BW25113, ΔsodA::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔsodB</td>
+      <td>BW25113, ΔsodB::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Δzwf</td>
+      <td>BW25113, ΔsodC::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Δfis</td>
+      <td>BW25113, Δfis::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔihfA</td>
+      <td>BW25113, ΔihfA::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔiscU</td>
+      <td>BW25113, ΔiscU::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔygfZ</td>
+      <td>BW25113, ΔygfZ::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔsoxS</td>
+      <td>BW25113, ΔsoxS::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔmarA</td>
+      <td>BW25113, ΔmarA::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔmarB</td>
+      <td>BW25113, ΔmarB::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔahpC</td>
+      <td>BW25113, ΔahpC::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔkatG</td>
+      <td>BW25113, ΔkatG::kanR</td>
+      <td>Baba et al., 2006</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔsodA</td>
+      <td>BW25113, ΔspeG, ΔsodA::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔsodB</td>
+      <td>BW25113, ΔspeG, ΔsodB::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔsodAΔsodB</td>
+      <td>BW25113, ΔspeG, ΔsodA, ΔsodB::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔzwf</td>
+      <td>BW25113, ΔspeG, Δzwf::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔsoxS</td>
+      <td>BW25113, ΔspeG, ΔsoxS::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔfis</td>
+      <td>BW25113, ΔspeG, Δfis::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔihfA</td>
+      <td>BW25113, ΔspeG, ΔihfA::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔiscU</td>
+      <td>BW25113, ΔspeG, ΔiscU::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔygfZ</td>
+      <td>BW25113, ΔspeG, ΔygfZ::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔmarA</td>
+      <td>BW25113, ΔspeG, ΔmarA::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>ΔspeGΔmarB</td>
+      <td>BW25113, ΔspeG, ΔmarB::kanR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>JRG3533</td>
+      <td>MC4100 ф(sodA-lacZ)49, cmR</td>
+      <td>Tang et al., 2002</td>
+    </tr>
+    <tr>
+      <td>RKM1</td>
+      <td>BW25113, ΔspeG, sodA-lacZ:cmR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pET28a (+)</td>
+      <td>kanR; T7-promoter; IPTG inducible</td>
+      <td>Novagen</td>
+    </tr>
+    <tr>
+      <td>pBAD/Myc-His A</td>
+      <td>ampR; pBAD-promoter; Ara inducible</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>pDAK1</td>
+      <td>pBAD/Myc-His A; Two NdeI sites were mutated and NcoI site was replaced by NdeI</td>
+      <td>Lab resource</td>
+    </tr>
+    <tr>
+      <td>pZwf</td>
+      <td>zwf cloned in pDAK1 NdeI and HindIII sites</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSodA</td>
+      <td>sodA cloned in pDAK1 vector</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pET-sodA</td>
+      <td>sodA cloned in pET28a (+) vector</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pET-ahpC</td>
+      <td>ahpC cloned in pET28a (+) vector</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pET-katG</td>
+      <td>katG cloned in pET28a (+) vector</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSpeG</td>
+      <td>speG cloned in pDAK1 vector</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pUA66_soxS</td>
+      <td>kanR; soxS promoter cloned upstream of gfpmut2 reporter in pUA66</td>
+      <td>Zaslaver et al., 2006</td>
+    </tr>
+    <tr>
+      <td>pUA66_ahpC</td>
+      <td>kanR; ahpC promoter cloned upstream of gfpmut2 reporter in pUA66</td>
+      <td>Zaslaver et al., 2006</td>
+    </tr>
+    <tr>
+      <td>pUA66_katG</td>
+      <td>kanR; katG promoter cloned upstream of gfpmut2 reporter in pUA66</td>
+      <td>Zaslaver et al., 2006</td>
+    </tr>
+    <tr>
+      <td colspan="3">Note: kanR, kanamycin resistance; ampR, ampicillin resistance, and cmR, chloramphenicol resistance.</td>
+    </tr>
+  </tbody>
+</table>
 
 Consistent with the microarray expressions, our western blotting experiments exhibited the unchanged expression of SodA and a decreased expression of KatG in the spermidine-treated ΔspeG strain compared to untreated counterparts (Figure 4C and D). However, SodA level was modestly elevated in the ΔspeG strain, and the spermidine-treated WT strain, in contrast to the untreated WT strain (Figure 4C). Contrary to the microarray data, a profound increase in AhpC level was observed while growing WT or ΔspeG cells in the presence of spermidine, indicating a translational elevation of AhpC level under spermidine stress (Figure 4E). Increased AhpC level indicating the activation of alkyl hydroperoxidase (AhpCF) enzyme could be responsible for the decline in cellular H2O2 level (Figure 1C). Thus, declined H2O2 concentration could be the limiting factor for the cellular •OH radical production under spermidine stress (Figure 1A).
 
-## Spermidine affects iron-sulfur cluster biogenesis
+### Spermidine affects iron-sulfur cluster biogenesis
 
 O2- has the potential to oxidize the solvent-exposed iron-sulfur clusters of E. coli dehydratases, aconitase, and fumarase enzymes to liberate free Fe2+ (Benov, 2001; Fridovich, 1986; Imlay, 2008). Therefore, supplementation of Fe2+ ions helps to repair the damaged clusters (Gardner and Fridovich, 1992; Imlay, 2008). Consistently, we observed that the declined aconitase activity in the spermidine-stressed ΔspeG strain was rescued by supplemental Fe2+ ion (Figure 5A). Besides, the intracellular level of iron in the ΔspeG strain was decreased more than 3-fold in the presence of spermidine (Figure 5B). Consequently, the supplementation of Fe2+ salt in the LB-agar plate rescued the growth of spermidine-fed ΔspeG strain supports this claim (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig5-v3.jpg)
+
+**Figure 5.:** (A) The bar diagram represents relative aconitase activity in the Escherichia coli WT and ΔspeG strains in the presence and absence of spermidine (SPD). (B) Intracellular levels of Fe in the E. coli strains determined in the presence or absence of SPD stress were plotted. (C) Spot assay using serially diluted ΔspeG cells demonstrated that Fe2+ can rescue SPD stress. (D) Intracellular levels of Mn levels in the E. coli strains determined in the presence or absence of SPD stress were plotted. (E) Spot assay shows the relative sensitivity of various double mutants, ΔspeGΔygfZ, ΔspeGΔiscU, and ΔspeGΔsoxS strains to SPD. Error bars in the panels are mean ± SD from the three independent experiments. Whenever mentioned, the ***, **, and * denote p-values < 0.001, < 0.01, and < 0.1 respectively; unpaired t test. See also Figure 5—figure supplement 1, and Figure 5—source data 1, Figure 5—source data 2, Figure 5—source data 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** The spot assay shows that single mutants are not affected by SPD.
 
 The iron scarcity was also reflected in the gene expression pattern of IscR regulon (Figure 4A). IscR forms a functional holoenzyme with the iron-sulfur cluster. The de-repression of iron-sulfur cluster biogenesis operon (iscRSUA-hscBA-fdx-iscX) in the microarray (Figure 4A) signifies the presence of non-functional apo-IscR under the scarcity of cellular Fe2+ ion (Esquilin-Lebron et al., 2021; Schwartz et al., 2001). Besides, apo-IscR and apo-Fur activate and derepress the alternative iron-sulfur cluster assembly system (sufABCDSE), respectively (Esquilin-Lebron et al., 2021; Outten et al., 2004). Interestingly, no genes of the suf operon were found to be upregulated under spermidine stress. Instead, a 3-fold downregulation of sufA was observed (Figure 4A). Since suf operon is also positively regulated by OxyR (Esquilin-Lebron et al., 2021) but spermidine stress declined the cellular H2O2 levels (Figure 1C), we suggest that the combined action of apo-IscR, apo-Fur, and inactivated form of OxyR kept suf operon expression indifferent under spermidine stress. Spermidine also activated rsxA and rsxB (Figure 4A), which encode the critical components of the iron-sulfur cluster reducing system of SoxR (Koo et al., 2003).
 
 The level of manganese, an antioxidant metal that determines sodA activity, is usually increased under iron scarcity (Kaur et al., 2017; Kaur et al., 2014; Martin et al., 2015; Waters et al., 2011). However, a modest decrease in the level of cellular manganese under spermidine stress was observed (Figure 5D). The low level of manganese could slow down the rate of dismutation of O2- anion compromising SodA function, thereby elevating the O2- anion levels in the spermidine-treated cells. Finally, we spotted the serially diluted cultures of E. coli strains to show that the deletion of two individual genes (iscU and ygfZ), which are involved in the iron-sulfur cluster biogenesis (Waller et al., 2010), affects the growth of the spermidine-treated ΔspeG strain (Figure 5E). Interestingly, the ΔspeGΔsoxS strain was more sensitive to spermidine than the ΔspeG strain (Figure 5E), indicating that the basal level of soxS expression has some potential to ameliorate O2- under spermidine stress. Although marA and marB genes were expressed at the highest level in the spermidine-stressed ΔspeG strain (Figure 4A), ΔspeGΔmarA and ΔspeGΔmarB strains did not show any difference in growth compared to ΔspeG strain under spermidine stress (Figure 5E). Note that, unlike ΔspeG strain, the single mutants, viz. ΔmarA, ΔmarB, ΔygfZ,ΔiscU, andΔsoxS, grow similarly to the WT strain in the presence or absence of spermidine (Figure 5E and Figure 5—figure supplement 1).
 
-## Free spermidine interacts and oxidizes Fe2+ ion to generate superoxide radicals in vitro
+### Free spermidine interacts and oxidizes Fe2+ ion to generate superoxide radicals in vitro
 
 To probe whether spermidine directly interacts with iron, we performed isothermal titration calorimetry (ITC) using Fe3+ (ferric citrate) and Fe2+ (ferrous ammonium sulfate) ions. Titration of spermidine with Fe3+ generated exothermic peaks indicating a standard binding reaction with a stoichiometry (N) of 0.711 (Figure 6A). On the other hand, titration of spermidine with Fe2+ in two different isothermal conditions produced consistent and complex patterns (Figure 6B and C). To explain it, we divided the pattern into two halves. In the first half, Fe2+ injections to spermidine generated alternate exothermic and endothermic peaks till the ratio of spermidine to Fe2+ reaches about 1:1.3 (Figure 6B and C). In the second half of the profile, after the ratio of spermidine to Fe2+ crosses 1:1.3, no endothermic peaks were observed, and a gradual shortening of exothermic peaks was generated, leading to saturation (Figure 6B and C). From the first half of pattern, we suspected Fe2+ interaction with spermidine also involves some other reactions, such as oxidation of the Fe2+ to generate Fe3+ and O2-, Fe3+ release, and subsequent Fe3+ binding to spermidine.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77704/elife-77704-fig6-v3.jpg)
 
-**Figure 6.:** 2+ generating O2- radical in aerobic condition.(A) Isothermal titration calorimetry (ITC) data demonstrates the interaction of spermidine with Fe3+. (B) and (C) ITC data shows the interaction of spermidine with Fe2+ ion at 4°C and 25°C, respectively. (D) 100 µM spermidine was incubated with different concentrations of Fe2+ followed by estimation of Fe2+ levels by bipyridyl chelator. The color formation was recorded at 522 nm and plotted them along with standard curve. The panel depicts that the incubations of 100 µM spermidine with 100, 200, and 300 µM of Fe2+ in the anaerobic condition do not lead to the loss of Fe2+ ions detected by bipyridyl chelator. However, when 100 µM spermidine was incubated with the different concentrations of Fe2+ (25–350 µM) in the aerobic condition, the bipyridyl-mediated color formation was observed when Fe2+ level was between above 125 µM and 150 µM (i.e., till spermidine to Fe2+ ratio reaches approximately 1.3). The mean values from the three independent experiments were plotted. SD is negligible and is not shown for clarity. (E) Nitro blue tetrazolium (NBT) assay was performed to determine that spermidine and Fe2+ interaction yields O2- radical. The colorimetry at 575 nm suggests that 100 µM of spermidine interacts with approximately 125 µM of Fe2+ (ratio 1:1.3) to generate saturated color. Error bars in the panel are mean ± SD from the three independent experiments. *** denotes p-value < 0.001; unpaired t test. (F) Model to show final coordination complex formation. An Fe2+ interacts with two spermidine molecules forming hexadentate coordination complex. This interaction oxidizes Fe2+ liberating one electron to reduce oxygen molecule. Finally, two spermidine coordinates one Fe3+ with an octahedral geometry. (G) The curves represent the Escherichia coli total RNA inhibits iron oxidation. Spermidine further reduces the RNA-mediated iron oxidation at concentration 10 µM but higher concentrations of spermidine increase the iron oxidation despite the presence of RNA. The mean values are derived from the three independent experiments and plotted. SD is negligible and is not shown for clarity. See also Figure 6—source data 1, Figure 6—source data 2, Figure 6—source data 3.Figure 6—source data 1.Figure 6D Raw data.Figure 6—source data 2.Figure 6E Raw data.Figure 6—source data 3.Figure 6G Raw data.
+**Figure 6.:** (A) Isothermal titration calorimetry (ITC) data demonstrates the interaction of spermidine with Fe3+. (B) and (C) ITC data shows the interaction of spermidine with Fe2+ ion at 4°C and 25°C, respectively. (D) 100 µM spermidine was incubated with different concentrations of Fe2+ followed by estimation of Fe2+ levels by bipyridyl chelator. The color formation was recorded at 522 nm and plotted them along with standard curve. The panel depicts that the incubations of 100 µM spermidine with 100, 200, and 300 µM of Fe2+ in the anaerobic condition do not lead to the loss of Fe2+ ions detected by bipyridyl chelator. However, when 100 µM spermidine was incubated with the different concentrations of Fe2+ (25–350 µM) in the aerobic condition, the bipyridyl-mediated color formation was observed when Fe2+ level was between above 125 µM and 150 µM (i.e., till spermidine to Fe2+ ratio reaches approximately 1.3). The mean values from the three independent experiments were plotted. SD is negligible and is not shown for clarity. (E) Nitro blue tetrazolium (NBT) assay was performed to determine that spermidine and Fe2+ interaction yields O2- radical. The colorimetry at 575 nm suggests that 100 µM of spermidine interacts with approximately 125 µM of Fe2+ (ratio 1:1.3) to generate saturated color. Error bars in the panel are mean ± SD from the three independent experiments. *** denotes p-value < 0.001; unpaired t test. (F) Model to show final coordination complex formation. An Fe2+ interacts with two spermidine molecules forming hexadentate coordination complex. This interaction oxidizes Fe2+ liberating one electron to reduce oxygen molecule. Finally, two spermidine coordinates one Fe3+ with an octahedral geometry. (G) The curves represent the Escherichia coli total RNA inhibits iron oxidation. Spermidine further reduces the RNA-mediated iron oxidation at concentration 10 µM but higher concentrations of spermidine increase the iron oxidation despite the presence of RNA. The mean values are derived from the three independent experiments and plotted. SD is negligible and is not shown for clarity. See also Figure 6—source data 1, Figure 6—source data 2, Figure 6—source data 3.
 
 To test whether Fe2+ was oxidized in the presence of spermidine to liberate Fe3+, we titrated spermidine by increasing amounts of Fe2+ iron followed by assessing the level of Fe2+ by using bipyridyl chelator. Chelation of Fe2+ ions by bipyridyl generates pink color indicating Fe2+ levels. No color formation was observed till the ratio of spermidine to Fe2+ reaches 1:1.3 (Figure 6D), a number that exactly matches with the ratio of spermidine to Fe2+ in the first half of ITC experiments (Figure 6B and C). The color formation starts appearing when the ratio crosses 1:1.3 (Figure 6D), suggesting that 1 molecule of spermidine (or 10 molecules) exactly oxidizes 1.3 molecules (or 13 molecules) of Fe2+. The colorimetric values overlap with the standard curve when reactions were under anoxic condition, indicating Fe2+ was not oxidized (Figure 6D). We used nitro blue tetrazolium (NBT) dye to check whether the loss of one electron from Fe2+ generates O2- anion under spermidine stress. An increased NBT absorption at 575 nm till the ratio of spermidine to Fe2+ reaches 1:1.3 confirms that 1 molecule (or 10 molecule) of spermidine interacts with 1.3 molecules (or 13 molecules) of Fe2+ generating 1.3 molecules (or 13 molecules) O2- anion radical (Figure 6E). From the stoichiometry of 0.711 (which is close to 0.5) (Figure 6A), we postulate that two spermidine and one Fe3+ together could form a hexadentate coordination complex with an octahedral geometry (Figure 6F). It appears that when spermidine molecules engaged to form a hexadentate coordination complex with Fe2+, the former helps oxidizing latter to form Fe3+ in sufficient concentrations. Fe3+ finally forms coordination complex with spermidine (Figure 6F). It may be noted that the binding of spermidine and Fe3+ is entirely enthalpy-driven, as indicated by a large negative ΔH. The negative entropy (ΔS) value presumably results from the ordering of spermidine from an extended conformation to a compact and rigid one after metal chelation (Figure 6A).
 
@@ -114,45 +366,45 @@ Our study in E. coli observed quite a few biochemical aspects which might explai
 
 ## Materials and methods
 
-## Bacterial strains, plasmids, proteins, and chemicals
+### Bacterial strains, plasmids, proteins, and chemicals
 
 Bacterial strains and plasmids used in this study are listed in Table 1. BW25113 strain of E. coli was used as WT in this study. Oligonucleotides were purchased from IDT. Bacterial broths and agar media were purchased from BD Difco. The knockout strains of E. coli were procured from the KEIO library (Baba et al., 2006), verified by PCR, freshly transduced into the WT background by P1 phage, and sequenced to confirm the deletion. The double and triple knockout mutants were generated following the standard procedure described by Datsenko and Wanner, 2000. E. coli strain JRG3533 was a generous gift from Dr Rachna Chaba, IISER Mohali, India. RKM1 strain was constructed by P1 transduction of sodA-lacZ:CmR genotype of JRG3533 to BW25113ΔsoxS strain.
 
 The plasmids, pUA66_soxS, pUA66_ahpC, pUA66_katG, were the gifts from Dr Csaba Pal, Biological Research Centre of the Hungarian Academy of Sciences (Zaslaver et al., 2006). pBAD-zwf was a generous gift from Dr CC. Vasquez, Universidad de Santiago de Chile (Sandoval et al., 2011). sodA, katG, ahpC, and speG genes were PCR-amplified by DG12-DG13, RM7-RM8, DG9-DG10, and RK3-RK4 primer pairs (Supplementary file 3), respectively. The PCR products were double-digested at the primer-specific unique restriction sites and inserted into identically digested pET28a (+) plasmid vector so that the 6X His-tagged SodA, KatG, and AhpC proteins are being produced (Table 1). The protein expression vectors, pET-sodA, pET-ahpC, pET-katG, were transformed to BL21 (DE3) cells, and expressions were induced by 0.4 mM IPTG. The overexpressed proteins were purified using Ni-NTA beads. The purified proteins were used to raise rabbit polyclonal antibodies following the standard procedure. sodA and speG were additionally subcloned in pDAK1, a derivative of pBAD/Myc-His A vector to get pSodA, and pSpeG multicopy expressions for complementation assays (Table 1). We also PCR-amplified zwf using RK55-RK56 primer pairs and cloned in the pDAK1 vector to get pZwf vector for complementation assays.
 
-## Growth, viability, spermidine sensitivity, and complementation assays
+### Growth, viability, spermidine sensitivity, and complementation assays
 
 An automated BioscreenC growth analyzer (Oy growth curves Ab Ltd) was used to generate growth curves mentioned in the Results. For this purpose, overnight cultures of different strains were diluted in fresh LB medium and grown in the presence and absence of 3.2–6.4 mM of spermidine. Ten mM of each of the ROS quenchers (TU, Tr, SP, ascorbate, and NAC) were used wherever mentioned. For growth assay of E. coli strains on the LB-agar supplemented with or without spermidine were performed by spotting serially diluted overnight cultures and growing them at 37°C. For viability assays, serially diluted E. coli strains were spread on LB-agar surface supplemented with 6.4 mM spermidine. We determined the viability under spermidine stress from the number of colonies grown. ZOIs, which appeared following overnight growth of the strains in the presence of 6.4 mM spermidine in the wells on agar plates, were determined both in aerobic and in anaerobic conditions. The anaerobic condition was created in an anaerobic Petri dish jar using AnaeroGas Pack 3.5 l pouches. For complementation experiments, the pSodA, pSpeG, and pZwf plasmids were transformed into ∆speG∆zwf and ∆speG∆sodA strains, respectively, and growth assays were performed in the presence of spermidine. Since the leaky expressions were sufficient to rescue growth defects, induction with arabinose was avoided for this purpose.
 
 The reporter plasmids, pUA66_soxS, pUA66_ahpC, pUA66_katG, were transformed into ∆speG strain. The transformed cells were grown in the presence or absence of 3.2 mM spermidine. Wherever mentioned, 25 µM menadione was used as a positive control for O2- generation. The cell pellets were washed twice with PBS and dissolved in 500 µl phosphate buffer saline (PBS). Flow cytometry was done using the Fl1 laser for 0.05 million cells using FACSVerse (BD Biosciences). The MFI values from three biological replicates have been calculated.
 
-## Determining relative ROS levels in the cells
+### Determining relative ROS levels in the cells
 
 H2DCFDA (10 µM) and DHE (2.5 µM) were used to measure cellular •OH and O2- anion, respectively. The cells were grown in the presence or absence of 3.2 mM spermidine. Cells were harvested, washed with PBS, and an equal mass of cell pellets was incubated with DHE or H2DCFDA probes for an hour. The data were acquired using BD accuri Fl3 laser (for DHE) and Fl1 laser (for H2DCFDA) for 0.05 million cells. The MFI values of triplicate experiments were calculated. For H2O2 detection, the E. coli cells were grown in the presence or absence of 3.2 mM of spermidine for 4 hr. Cells were harvested and washed with 1× M9 minimal media. The equal mass of cells (2.5 mg each) suspended in 6 ml M9 minimal media were incubated for different time points to allow H2O2 liberation. The relative H2O2 liberation was measured by a Fluorimetric Hydrogen Peroxide Assay kit (Sigma Aldrich).
 
-## EPR spectroscopy
+### EPR spectroscopy
 
 The protocol was adopted from Thomas et al., 2015, with some modifications. The ΔspeG strain harboring pDAK1 empty vector or pSodA was grown in the presence or absence of 3.2 mM spermidine for 2 hr and then 0.001% arabinose was added and further grown for 2 more hours; 100 mg cell pellets were quickly resuspended in 700 µl of KDD buffer, pH 7.4 (99 mM NaCl, 4.69 mM KCl, 2.5 mM CaCl2, 1.2 mM MgSO4, 25 mM NaHCO3, 1.03 mM KH2PO4, 5.6 mM D-glucose, 20 mM HEPES, 5 µM DETC, and 25 µM deferoxamine); 100 µl cell suspensions were preincubated with or without 20 mM DMTU and 200 µM UA for 5 min; and 500 µM of CMH spin probe (Enzo Life Sciences) were added and incubated for 30 min at 37°C. EPR spectra were acquired using a Bruker EMX MicroX EPR spectrometer with the following settings: center field, 3438 G, sweep width, 500 G; microwave frequency, 9.45 GHz; microwave power, 8.04 mW; modulation frequency 100 kHz; modulation amplitude, 5.64 G; conversion time, 40 ms; time constant, 40.96 ms; receiver gain, 1120; data points 1024; number of X-Scans, 5.
 
-## β-Galactosidase and GFP reporter assays
+### β-Galactosidase and GFP reporter assays
 
 For the β-galactosidase assay, the RKM1 strain was grown in the presence or absence of 3.2 mM of spermidine. The cell pellets were washed twice with Z-buffer (60 mM Na2HPO4, 40 mM NaH2PO4, 10 mM KCl, and 1 mM MgSO4) and diluted to OD600 ~0.5. Promoter activity was measured by monitoring β-galactosidase expression from single-copy sodA-lacZ transcriptional fusion; 100 µl of 4 mg/ml ONPG was used as a substrate, which was cleaved by β-galactosidase to produce yellow-colored O-nitrophenol. Colorimetric detection of this compound was done at 420 nm.
 
 The reporter plasmids, pUA66_soxS, pUA66_ahpC, pUA66_katG, containing GFP-mut2 reporters, were used to determine the promoter activities of soxS, ahpC, and katG genes in the presence or absence of 3.2 mM spermidine. Flow cytometry was done using the FL1 laser for 0.05 million cells using FACSVerse (BD Biosciences) or BD Accuri C6 Plus Flow Cytometer (BD Biosciences) machine.
 
-## Western blotting experiments
+### Western blotting experiments
 
 Overnight culture of E. coli strains was inoculated in fresh LB medium in 1:100 dilution and grown for 1.5 hr at 37°C. Next, 3.2 mM of spermidine were added, wherever required and allowed to grow again at 37°C for 2.5 hr. Cells were harvested and lysed with B-PER bacterial protein extraction reagent (Thermo Scientific). The total protein level was checked by the Bradford assay kit (Bio-Rad); 40 µg of total cellular proteins from the individual samples were subjected to SDS-PAGE. The proteins were transferred to a nitrocellulose membrane and stained with Ponceau S to visualize protein resolution and equal loading in the PAGE. Western blotting was performed using polyclonal rabbit primary antibodies and HRP-conjugated secondary antibodies. The blots were developed by Immobilon Forte Western HRP substrate (Millipore).
 
-## Estimating cellular spermidine levels
+### Estimating cellular spermidine levels
 
 Cells were grown in presence or absence of spermidine for 4 hr. The cells were washed with 1 M NaCl at 37°C for 10 min; 500 nmol of hexane-diamine (internal standard) was added and the pellets were resuspended in 750 µl of 10% perchloric acid. The cells were lysed by freeze-thawing using liquid nitrogen, and 800 µl of saturated sodium carbonate and 800 µl of 10 mg/ml of dansyl chloride were added to the supernatants. The dansylation was carried out at 60°C for 3 hr in dark. The reaction was stopped using 400 µl of 100 mg/ml proline and kept at 60°C for 30 min; 400 µl toluene was added to each sample and mixed thoroughly. The organic layer was collected and dried using a speed vac; 2 ml 80% acetonitrile was added and sonicated to dissolve the dry samples. The samples were then passed through 0.22 µm filter and injected to HPLC system (Agilent 1260 Infinity II) attached with a reversed-phase C-18 column (Agilent ZORBAX Eclipse Plus C18 of dimension 4.6 × 100 mm, 3.5 µm). Acetonitrile gradient (0–100%) with 0.8 ml/min flow rate was used for all samples. A PDA detector was used to monitor the elution peaks. The corresponding mass of individual peaks were detected using either a single quadrupole Agilent MSD using the ESI source or a separate Agilent LC-MS/MS equipment. Pure spermidine and hexane-diamine were also dansylated and determined their 100% tri- or di-dansylation. The dansylated spermidine was also used to generate a standard curve. The peak areas of spermidine (mAu*s) were normalized with the average peak area of internal standards. The absolute amounts of spermidine were calculated from the standard curve.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 A MicroCal VP-ITC calorimeter, MicroCal Inc, was used for calorimetric measurements to probe the interaction of spermidine with Fe2+ and Fe3+ species. In order to achieve this, 100 µM of spermidine solution was prepared in 20 mM sodium acetate buffer (pH 5.5) and put into the sample cell. The ligands, 2.1 mM of FeCl3 or ferrous ammonium sulfate, were also dissolved in the identical sodium acetate buffer. The titrations involved 30 injections of individual ligands (5 µl per shot) at 300 s intervals into the sample cell containing 1.8 ml of 100 µM spermidine. The titration cell was kept at some specific temperature and stirred continuously at 286 rpm. The heat of dilution of ligand in the buffer alone was subtracted from the titration data. The data were analyzed using Origin 5.0 software.
 
-## 2,2′-Bipyridyl and NBT assays
+### 2,2′-Bipyridyl and NBT assays
 
 2,2′-Bipyridyl chelates Fe2+ producing color that absorbs at 522 nm (A522). The standard curve for 0–350 µM of Fe2+ ion was generated simply by recording A522 in the presence of 2,2′-bipyridyl. Dissolved oxygen of medium and headspace oxygen was replaced by flushing N2 gas in the medium for 5 min to create an anoxic condition as described (Stieglmeier et al., 2009). To check whether spermidine acts as a catalyst for Fe2+ to Fe3+ oxidation, we performed 2,2′-bipyridyl assay probing leftover Fe2+ after the reaction. For this assay, 100 µM of spermidine was incubated with increasing concentrations (25–350 µM) of ferrous ammonium sulfate for 10 min at room temperature (RT); 900 µl of the reaction products were mixed with 90 µl 4 M sodium acetate buffer (pH 4.75) and 90 µl bipyridyl (0.5% in 0.1 N HCl). The color formation was recorded at 522 nm (A522) using UV-1800 Shimandzu UV-spectrophotometer. In another experiment, the assay was performed in anoxic condition using rubber-capped sealed glass vials containing anoxic reactants and needle-syringe-mediated mixing of the reagents. Here, three different concentrations (100, 200, and 300 µM) of ferrous ammonium sulfate were reacted with 100 µM of spermidine for 10 min followed by spectrophotometry at A522. The standard curve for 0–350 µM of Fe2+ ion was generated simply by recording A522 of the mixture of 900 µl ferrous ammonium sulfate, 90 µl sodium acetate buffer, and 90 µl bipyridyl solutions.
 
@@ -160,11 +412,11 @@ Iron oxidation in the presence of RNA and spermidine was performed as described 
 
 We used NBT dye to probe whether spermidine-stimulated Fe2+ to Fe3+ oxidation liberates O2- anion in vitro. For this assay, different concentrations of Fe2+ were incubated with 100 µM of spermidine for 2 min; 100 µl of NBT (5 mg/ml) was added to the mixture and incubated at RT for another 5 min. The absorbance was recorded at 575 nm using UV-1800 Shimandzu UV-spectrophotometer.
 
-## RT-qPCR
+### RT-qPCR
 
 Bacterial mRNAs were isolated by TRIzol reagent and the Qiagen bacterial RNA isolation Kit. DNase I treatment was done to remove residual DNA contaminant, and the integrity of the mRNA was checked on a 1% agarose gel. The RNA concentration was determined by a Nano-drop spectrophotometer (Thermo Scientific) and by a UV-1800 Shimandzu UV-spectrophotometer; 200 ng of RNA samples, primer pairs (Supplementary file 3), and GoTaq 1-Step RT-qPCR System (Promega) were used for RT-qPCR. Reaction mixture without template were included as negative controls. At least three independent experiments were conducted for the determination of cycle threshold (CT) values. Fold expression change between spermidine-fed and unfed samples was calculated by the ΔΔCT method. The values were normalized to the level of betB mRNA that was expressed constitutively as observed in the microarray.
 
-## Other biochemical assays
+### Other biochemical assays
 
 The relative levels of cellular NAD+/NADH and NADP/NADPH were measured using MAK037 and MAK038 kits (Sigma), respectively. ATP Bioluminescence assay Kit CLS II (Roche) were used to determine cellular ATP levels. The glutathione assay was performed, as described (Rahman et al., 2006). Cells were grown in the presence or absence of 3.2 mM spermidine for 4 hr. The PBS-washed cell pellets were kept on the ice.
 
@@ -174,22 +426,22 @@ For ATP estimation, 30 mg cell pellets were resuspended in 100 mM Tris-HCl (pH 7
 
 For GSt assay, 20 mg E. coli cell pellets were resuspended in 5% sulfosalicylic acid and boiled at 95°C for 5 min; 100 µl supernatant was mixed with 700 µl KPE buffer, 0.6 mM DTNB, and 0.3 units of glutathione reductase; 0.2 mM of β-NADPH was added finally. To estimate oxidized form of glutathione (GSSG) only, the cell extracts were pretreated with 10 mM 2-vinylpyridine for 1 hr so that GSH were cross-linked with it. The excess 2-vinylpyridine was neutralized with tri-ethanolamine. The reactions were carried out for 30 min and A412 was recorded and the values were directly used to calculate the relative levels of each species. Aconitase assay was performed as per the protocol described (Gardner and Fridovich, 1992). Metal contents were determined by ICP-MS analyses at Punjab Biotechnology Incubator, Mohali, India. The metal concentration in the cell was determined as parts per billion (mg/kg) of E. coli cell pellets.
 
-## Microarray experiments and interpretation
+### Microarray experiments and interpretation
 
 The saturated overnight culture of ΔspeG strain was inoculated in the fresh LB medium and grown for 1.5 hr. After that 3.8 mM spermidine was added to one of the flasks, and the cultures were grown further for 2.5 hr. The cell pellets were harvested and washed with PBS, and dissolved in RLT buffer. The microarray was done from Genotypic Technology, Bangalore. The microarray had three probes for each gene on average.
 
-## RNA extraction and RNA quality control for microarray
+### RNA extraction and RNA quality control for microarray
 
 E. coli cell pellet was resuspended in 300 µl of 5 mg/ml lysozyme and incubated at RT for 30 min. Isolation of RNA from E. coli was carried out using Qiagen RNeasy mini kit (Cat # 74106) as per manufacturer’s guidelines. A separate DNase treatment of the isolated total RNA was performed. The purity of the RNA was assessed using the Nanodrop Spectrophotometer (Thermo Scientific; ND-1000), and the integrity of the RNA was analyzed on the Bioanalyzer (Agilent 2100). We considered RNA to be of good quality based on the 260/280 values (Nanodrop), rRNA 28S/18S ratios, and RNA integrity number (RIN) (Bioanalyzer).
 
-## Microarray labeling
+### Microarray labeling
 
 The sample labeling was performed using Quick-Amp Labeling Kit, One Color (Agilent Technologies, Part Number: 5190-0442); 500 ng of each sample were denatured along with WT primer with a T7 polymerase promoter. The cDNA master mix was added to the denatured RNA sample and incubated at 40°C for 2 hr for double-stranded cDNA synthesis. Synthesized double-stranded cDNA was used as a template for cRNA generation. cRNA was generated by in vitro transcription, and the cyanine-3-CTP (Cy3-CTP) dye incorporated during this step and incubated at 40°C for 2.30 hr. The Cy3-CTP labeled cRNA sample was purified using the Qiagen RNeasy column (Qiagen, Cat # 74106). The concentration of cRNA and dye incorporation was determined using Nanodrop-1000.
 
-## Microarray hybridization and scanning
+### Microarray hybridization and scanning
 
 About 4 µg of labeled Cy-3-CTP cRNA was fragmented at 60°C for 30 min, and the reaction was stopped by adding 2× GE HI-RPM hybridization buffer (Agilent Technologies, In situ Hybridization kit, Part Number: 5190-0404). The hybridization was carried out in Agilent’s Surehyb Chambers at 65°C for 16 hr. The hybridized slides were washed using Gene Expression Wash Buffer 1 (Agilent Technologies, Part Number: 5188-5325) and Gene Expression Wash Buffer 2 (Agilent Technologies, Part Number: 5188-5326) and were scanned using Agilent Scanner (Agilent Technologies, Part Number: G2600D). Data extraction from the images was done using Feature Extraction Software Version 11.5.1.1 of Agilent.
 
-## Microarray data analysis
+### Microarray data analysis
 
 Microarray data analysis was undertaken by in-house coded R Script (https://cran.r-project.org/). Processing of raw data into expression profiles was achieved by utilizing the packages limma and affy. Probe intensities were converted into expression measures by standard procedures. Briefly, the design-sets depicting the ‘control/test’ arrays were carefully generated by reading the raw data from MA image files. Background correction was done by the method ‘normexp’. This data was quantile normalized (between arrays depending on the design set), and within-array replicates were averaged. Processed data were categorized into major functional categories and tabulated. The detailed microarray array discussed in this manuscript have been deposited in GEO with accession number GSE154618.

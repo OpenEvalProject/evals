@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.47970.001 Targeted differentiation of pluripotent stem (PS) cells into myotubes enables in vitro disease modeling of skeletal muscle diseases. Although various protocols achieve myogenic differentiation in vitro, resulting myotubes typically display an embryonic identity. This is a major hurdle for accurately recapitulating disease phenotypes in vitro, as disease commonly manifests at later stages of development. To address this problem, we identified four factors from a small molecule screen whose combinatorial treatment resulted in myotubes with enhanced maturation, as shown by the expression profile of myosin heavy chain isoforms, as well as the upregulation of genes related with muscle contractile function. These molecular changes were confirmed by global chromatin accessibility and transcriptome studies. Importantly, we also observed this maturation in three-dimensional muscle constructs, which displayed improved in vitro contractile force generation in response to electrical stimulus. Thus, we established a model for in vitro muscle maturation from PS cells.
+Targeted differentiation of pluripotent stem (PS) cells into myotubes enables in vitro disease modeling of skeletal muscle diseases. Although various protocols achieve myogenic differentiation in vitro, resulting myotubes typically display an embryonic identity. This is a major hurdle for accurately recapitulating disease phenotypes in vitro, as disease commonly manifests at later stages of development. To address this problem, we identified four factors from a small molecule screen whose combinatorial treatment resulted in myotubes with enhanced maturation, as shown by the expression profile of myosin heavy chain isoforms, as well as the upregulation of genes related with muscle contractile function. These molecular changes were confirmed by global chromatin accessibility and transcriptome studies. Importantly, we also observed this maturation in three-dimensional muscle constructs, which displayed improved in vitro contractile force generation in response to electrical stimulus. Thus, we established a model for in vitro muscle maturation from PS cells.
 
 ## Introduction
 
@@ -41,45 +41,121 @@ In this study, we performed a small molecule screening and identified four candi
 
 ## Results
 
-## Optimal differentiation of PS cells into somite-like stage enhances PAX7-induced myogenesis
+### Optimal differentiation of PS cells into somite-like stage enhances PAX7-induced myogenesis
 
 To induce mesoderm differentiation of PS cells, we utilized CHIR99021 (GSK3β inhibitor) treatment for two days (Figure 1—figure supplement 1A), which we and others have previously reported to improve skeletal myogenic differentiation from PS cells (Borchin et al., 2013; Kim et al., 2016). This treatment resulted in the expression of the early mesoderm marker T as well as the paraxial mesoderm markers MSGN1 and TBX6 (Figure 1—figure supplement 1B). Considering the recent literature demonstrating the ability of the BMP inhibitor LDN193189 and the TGFβ inhibitor SB431542 to induce somitic mesoderm-like cells (Xi et al., 2017), we investigated whether these inhibitors would enhance myotube generation in the context of PAX7-induced myogenic differentiation. Treatment of differentiating PS cells from day 4 to day 6 with LDN193189 and SB431542 (+LS) (Figure 1—figure supplement 1A) resulted in increased expression of MEOX1, TCF15, PAX3 and FOXC2 on day 6 (Figure 1—figure supplement 1B). Induction of PAX7 expression with doxycycline began on day 5, two days earlier than our standard protocol (Darabi et al., 2012), as we reasoned that optimal myogenic specification by PAX7 would be achieved if it was induced when cells are at the peak of somite-like state. On day 12, PAX7+ myogenic progenitors were purified based on GFP expression, expanded in the presence of doxycycline and bFGF for three cell passages, and then subjected to terminal differentiation culture conditions, as described previously (Darabi et al., 2012). Of note, MyHC-expressing myotubes were detected only when cultures were subjected to terminal differentiation following withdrawal of doxycycline. Our results showed significant improvement in the differentiation efficiency of several of the seven PS cell lines investigated (unaffected and diseased), when compared to the unmodified protocol (-LS) (Figure 1—figure supplement 2). This result was particularly evident in PS cell lines displaying limited in vitro differentiation potential using the unmodified protocol.
 
-## Small molecule library screening for enhancing myogenic differentiation/maturation
+### Small molecule library screening for enhancing myogenic differentiation/maturation
 
 Despite the promising results described above, PS cell-derived myotubes remained immature, as indicated by their thin morphology (Figure 1—figure supplement 2) and predominant expression of the embryonic isoform of myosin heavy chain (MYH3) (Figure 1A). To determine whether small molecule compounds may enhance the maturation of PS cell-derived myotubes, we performed a small molecule library screening using the Tocriscreen stem cell toolbox kit (Tocris). This library consists of 80 stem cell modulator compounds. Myogenic progenitors were seeded onto 96-well plates and incubated for three days in the presence of expansion medium (bFGF and Dox). Then, culture medium was switched to differentiation medium supplemented or not with small molecules from the library, with each well containing an individual compound in a final concentration of 10 μM. Five days later, cells were stained for MyHC expression (Figure 1—figure supplement 3A). We reasoned that an increase in the ratio of MyHC (+) to DAPI (+) area would indicate thicker myotubes as a consequence of increased multinucleation, hypertrophy and/or enhanced differentiation, which could be potentially accompanied by increased maturation (Biressi et al., 2007b). We identified several compounds exhibiting a positive or negative effect on terminal differentiation (Figure 1—source data 1). For the purposes of this study, we selected five compounds that consistently showed statistically significant increase (p<0.001) in MyHC/DAPI area ratio in myotubes derived from multiple PS cell lines (Figure 1B). This set includes the TGFβ signaling inhibitor SB431542 (S), the γ-Secretase inhibitor DAPT (Da), the anti-inflammatory glucocorticoid Dexamethasone (De), the MEK inhibitor PD0325901 (P), and the adenylyl cyclase activator Forskolin (F) (Figure 1B and Figure 1—figure supplement 3B). Since concentrations ranging from 5 to 20 μM of the selected compounds did not significantly change the MyHC/DAPI area ratio (Figure 1—figure supplement 3C), in subsequent studies we used 10 μM for each compound.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig1-v1.jpg)
+
+**Figure 1.:** (A) Bar graph shows expression profile of MYH isoforms in hiPSC-1-derived myotubes. Data are shown as mean ± S.E.M.; n = 3, ***p<0.001. (B) Bar graph shows the ratio of % MyHC-stained area to % DAPI area in myotubes resulting from treatment with five candidates identified by the small molecule screening. Data show significant increase (***p<0.001) compared to DMSO in all three PS cell lines analyzed (hESC-1, hiPSC-1 and hiPSC-2). Data from three independent replicates are shown, normalized to DMSO, as mean ± S.E.M. (C) Bar graph shows the ratio of % MyHC-stained area to % DAPI area in iPS cell-derived myotubes that had been differentiated in the presence of all candidates combined, or with individual candidates excluded from the overall combination. Data from three independent replicates are shown normalized to DMSO. Values are shown as mean ± S.E.M. ***p<0.001. (D) Representative images show immunostaining for MyHC (in red) in hiPSC-1 myotubes differentiated with combinatory treatments of small molecules or DMSO. DAPI stains nuclei (in blue). Scale bar is 100 μm. (E) Bar graph shows fusion index analysis of myotubes that were differentiated with small molecule combinations or DMSO. Data are shown as mean of three independent replicates ± S.E.M. ***p<0.001. (F) Stacked bar graph shows the frequency of number of nuclei per myotube upon differentiation with combinatory treatments or DMSO. Data are shown as mean of three independent replicates ± S.E.M. Statistical analysis compares each combination to DMSO. *p<0.05 **p<0.01 ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of the modified EB-iPAX7 protocol, which includes incubation with LDN193189 and SB431542, BMP and TGFβ signaling inhibitors, respectively, addition of Doxycycline on day 5, and sorting of myogenic progenitors on day 12. (B) Bar graphs show expression analysis of paraxial mesoderm (MSGN1, T and TBX6) and somite (FOXC2, MEOX1, PAX3 and TCF15) genes relative to GAPDH in hESC-1 and hiPSC-1 lines at day 4 and day 6 of the EB-iPAX7 protocol (A) with or without addition of LDN193189 and SB431542 (LS). Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 ***p<0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Representative images show immunostaining for MyHC (in red) in myotubes derived from four iPS cell control (1, 2, 3 and 4), one ES cell control and two patient-specific (DMD one and DMD 2) iPS cell lines differentiated under the standard EB-iPAX7 protocol (-LS) or including LDN193189 and SB431542 treatment (+LS) for somite-like specification. DAPI stains nuclei (in blue). Scale bar is 200 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic representation of the small molecule screening procedure. Each well from a 96-well plate contained an individual compound from the Tocriscreen Stem cell toolbox added in the differentiation medium. (B) Representative images of MyHC (red) immunostaining in myotubes differentiated with selected candidates upon small molecule screening (A). DAPI stains blue. Scale bar is 100 μm. (C) Bar graph shows ratio of % MyHC-stained area to % DAPI area from hiPSC-1 myotubes differentiated with compounds candidates at 5, 10 or 20 μm relative to DMSO. Data are shown as mean of three independent replicates ± S.E.M. Statistical analyses showed no significant differences among concentrations for each compound. (D) Bar graphs show gene expression analysis of MYOG and MYH isoforms relative to GAPDH of hiPSC-1 myotubes differentiated with compound candidates. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01 ***p<0.001.
+
 Expression of MYH isoforms can be used as a readout for the maturation state of generated myotubes, as each MYH isoform is found predominantly expressed at specific developmental stages: MYH3 for embryonic, MYH8 for neonatal, and MYH1, MYH2 and MYH7 for adult muscle (Schiaffino et al., 2015). Therefore, we analyzed the MYH expression profile for each of the individual compound treatments. Although there was an overall increase in the expression of embryonic, neonatal and adult MYH isoforms among compounds, we did not detect a trend of maturation shift for a particular candidate (Figure 1—figure supplement 3D). Therefore, we assessed the combination of all five compounds (S/Da/De/P/F) along with combinations obtained by excluding each compound from the overall mixture. Significant increase in MyHC/DAPI area ratio (>2 fold relative to DMSO) was observed in all combinations (Figure 1C). Morphologically, myotubes exposed to S/Da/De/P/F treatment appeared thicker and denser relative to DMSO. Exclusion of S, Da, De or F led to the generation of thinner myotubes compared with the full combinatorial condition, while exclusion of P did not affect myotube morphology (Figure 1D). Consistently, this correlated with remarkable increases in fusion index and number of nuclei per myotube in the S/Da/De/P/F condition, which again were unaffected when excluding P but not the other compounds (Figure 1E–F).
 
-## Combinatorial treatment induces maturation switch
+### Combinatorial treatment induces maturation switch
 
 To determine whether enhanced myogenic differentiation, multinucleation and changes in myotube morphology are accompanied by molecular changes, we performed gene expression analysis for Myogenin (MYOG) and several MYH isoforms. Although S/Da/De/P/F or S/Da/De/P combinatorial conditions showed significant increase for some MYH isoforms, our data demonstrated that only S/Da/De/F (excluding P) consistently resulted in significantly increased expression of all MYH isoforms analyzed, with a more dramatic upregulation observed for neonatal MYH8 (neo-MyHC) (Figure 2A). Based on these results, we selected the S/Da/De/F condition for subsequent studies. We tested S/Da/De/F combinatorial treatment on additional differentiating PS cell lines, and consistently observed increased expression of MYH8 (Figure 2B). Of note, significant increase in the gene expression of adult isoforms MYH2 and MYH7 was observed in myotubes derived from iPSC-2, while ES cell-derived myotubes remained unchanged for these isoforms (Figure 2B). Western blot and immunostaining analysis confirmed expression of neo-MyHC at the protein level only upon S/Da/De/F treatment (Figure 2C–D), whereas MYH1 and MYH2 were not detected upon treatment (Figure 2C). Furthermore, immunostaining revealed cross-striation staining pattern of neo-MyHC co-localizing with that of F-actin (stained with Phalloidin), suggesting protein functionality (Figure 2—figure supplement 1A). Importantly, neo-MyHC protein expression was confirmed in additional three PS cell lines subjected to the combinatorial treatment (Figure 2—figure supplement 1B). Of relevance, a previous study reported that neo-MyHC protein expression only occurs at later stages of human muscle development, thus further confirming the enhanced maturation status of myotubes treated with S/Da/De/F (Cho, 1993). As shown by Titin immunofluorescence staining (Figure 2E), both DMSO- and S/Da/De/F-treated myotubes are striated. However, S/Da/De/F treatment resulted in thicker and larger myotubes (Figure 2E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig2-v1.jpg)
+
+**Figure 2.:** (A) Bar graphs show the expression profile of MYOG, MYOD and MYH isoforms normalized to ACTB in hiPSC-1 myotubes differentiated with small molecule combinatorial treatment or DMSO. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01. (B) Bar graphs show expression levels of MYOG, and MYH isoforms normalized to ACTB in hESC-1, hESC-2 and hiPSC-1 myotubes differentiated with combinatory treatment or DMSO. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01. (C) Western blot shows protein expression for MYH3 (e-MyHC), MYH8 (neo-MyHC) and MYH1/2 (ad-MyHC) in hiPSC1 myotubes that had been subjected to treatment with S/Da/De/F or DMSO. Human adult skeletal muscle is shown as a reference. ACTB is used as loading control. (D, E) Representative images show immunostaining for neo-MyHC (in green) (D) and Titin (in green) (E) in hiPSC-1 myotubes differentiated in the presence of DMSO or S/Da/De/F. DAPI stains nuclei (blue). Scale bars are 100 μm (D) and 20 μm (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative image of F-actin (green) and neo-MyHC (red) immunostaining analyzed by confocal microscopy in hiPSC-1 myotubes differentiated with combinatorial treatment. DAPI stains nuclei. Mid Z section is shown. Scale bar is 20 μm. (B) Protein expression analysis for neo-MyHC and Desmin by western blot of hiPSC-1, hiPSC2 and hESC-1 myotubes differentiated in the presence of combinatorial treatment (S/Da/De/F) or DMSO. Actin is used as loading control. (C and D) Bar graph shows percentage of EdU (+) nuclei (C) and ratio of % MyHC-stained area to % DAPI area (D) at days 1, 3 and 5 of hiPSC-1 myotube differentiation in the presence of combinatorial treatment or DMSO. **p<0.01.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–D) Bar graphs show gene expression analysis, relative to GAPDH, of genes related with Dexamethasone (CEBPB, CEBPD and FKBO5, (A), DAPT (NOTCH2, HES1 and JAG1, (B), SB431542 (COL1A1, ID3 and SERPINE1, (C) and Forskolin (PPARGC1A, RGS2 and NR4A1, (D) targeted-pathways in hiPSC-1 myotubes differentiated in presence of combinatorial treatment or DMSO. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 ***p<0.001.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative images of MyHC (in red) immunostaining of transgene-free hiPSC-1 myotubes differentiated in the presence of DMSO or S/Da/De/F. DAPI stains nuclei (blue). Scale bar is 200 μm. (B) Bar graphs show gene expression analysis of MYH isoforms and MYOG relative to ACTB of transgene-free hiPSC-1 myotubes differentiated in the presence of DMSO or S/Da/De/F. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01.
 
 To determine the temporal window by which small molecule treatment enhances in vitro terminal differentiation, we analyzed proliferation and differentiation parameters at days 1, 3, and 5 of terminal differentiation by EdU staining and MyHC/DAPI ratio, respectively. Interestingly, whereas no differences were observed between DMSO and S/Da/De/F at days 1 and 3 for both parameters, at day 5, we observed dramatic reduction in cell proliferation and increase in differentiation in the S/Da/De/F group (Figure 2—figure supplement 1C–D). These data suggest that the small molecule treatment may be particularly relevant at the late stage of differentiation. Next, we analyzed the expression of genes related to the pathways targeted by each of the small molecules (S, Da, De and F) at day 5 of myotube differentiation. As shown in Figure 2—figure supplement 2A–D, we found significant differential expression of CEBPD and FKBP5 (De targets; Luedi et al., 2017; MacDougald et al., 1994; Pan et al., 2010; Pereira et al., 2014; Reddy et al., 2012; Scharf et al., 2011), HES1 and NOTCH2 (Da targets; Huang et al., 2011; Jarriault et al., 1995; Mao et al., 2018), COL1A1 and ID3 (S targets; Lehmann et al., 2018; Ramachandran et al., 2018; Sato et al., 2015) and PPARGC1A (F target; Charos et al., 2012; Martin et al., 2009; Sayasith et al., 2014). Of note, S/Da/De/F treatment also induced the maturation of PS cell-derived myotubes generated under transgene-free conditions (Xi et al., 2017) (Figure 2—figure supplement 3A–B).
 
 Based on the relevance of these findings for the disease modeling of muscular dystrophies (MD), we then investigated the effect of this small molecule combination on the differentiation and maturation of myotubes derived from a panel of MD patient-specific iPS cells, including two Duchenne Muscular Dystrophy (DMD1 and DMD2), two Myotonic Dystrophy type 1 (DM1-1 and DM1-2) and one LGMD2A (Key resources table) (Magli et al., 2017; Mondragon-Gonzalez and Perlingeiro, 2018; Selvaraj et al., 2019). Consistently, our data showed enhanced differentiation (Figure 3A) and maturation (Figure 3B) of MD patient-specific iPS cell-derived myotubes upon S/Da/De/F treatment. These findings confirm the positive effects of this combinatorial treatment in the differentiation and maturation of human iPS cell-derived myotubes.
 
-## Ultrastructural differences between DMSO and S/Da/De/F-treated PS-derived skeletal myotubes
+![Figure 3.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative images show immunostaining for MyHC (in red) in hiPS cell-derived myotubes from two DMD (DMD1 and DMD2), two DM1 (DM1-1 and DM1-2) and one LGMD2A patients differentiated with small molecule combinatorial treatment or DMSO. DAPI stains nuclei (blue). Scale bar is 100 μm. (B) Bar graphs show the expression profile of MYH isoforms and MYOG isoforms normalized to GAPDH in hiPS cell-derived myotubes from two DMD (DMD one and DMD 2), two DM1 (DM1-1 and DM1-2) and one LGMD2A patients differentiated with small molecule combinatorial or DMSO treatments. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01 ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images show typical pluripotent colony morphology for each reprogrammed iPS cell line. Scale bar is 200 μm. (B) Representative images show immunostaining of NANOG, OCT3/4, SOX2 and SSEA-4 (in red) in reprogrammed iPS cell lines. DAPI stains nuclei (in blue). Scale bar is 200 μm. (C) Images show H and E staining of teratomas generated by reprogrammed iPS cell lines. (D) Cytogenetic analyses show normal karyotypes of reprogrammed iPS cell lines.
+
+### Ultrastructural differences between DMSO and S/Da/De/F-treated PS-derived skeletal myotubes
 
 Transmission electron microscopy was performed on ultrathin sections of PS cell-derived myotubes differentiated for 19 days in the absence or presence of small molecules. Analysis of a large number of samples at high magnification showed that myofibrils reached various degrees of sarcomeric organization even within the same cell in both conditions (Figure 4). This may be explained by ongoing fusion between cells with different maturation levels or stages (see below). Examples of well-differentiated sarcomeres with clearly delineated Z-band, alternating A-I bands, and M-line crossing the H-zone are shown in Figure 4B and F. Intermediate stages of sarcomeric formation with discernable A-I banding pattern, but discontinuous Z-band are depicted in Figure 4C and G, and nascent sarcomeres with undefined banding pattern and Z-bodies are shown in Figure 4D and H. S/Da/De/F-treated myotubes were clearly richer in mitochondria than their DMSO counterparts. As illustrated in Figure 4E and I, mitochondria were often densely packed between the myofibrils, or spread along the plasma membrane. Figure 4I–L focuses on the high occurrence of SR-TT junctions following the treatment with small molecules. Indeed, these structures were readily detectable in all S/Da/De/F- treated myotubes (Figure 4 and Figure 4—figure supplement 1D), while they remained scarce in the DMSO-treated myotubes (Figure 4D). Internal junctions were usually multiple and varied in shape, size and location. They were not associated with the myofibrils and had rarely a triadic configuration. Similar junctions were shown to produce voltage-dependent intracellular Ca2+ transients upon membrane depolarization, and hence, support excitation-contraction coupling (Skoglund et al., 2014). Therefore, the high occurrence of SR-TT junctions in treated cells may contribute to the increase in their contraction capacity.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) DMSO-treated myotubes (control) are shown at different magnifications. (A) Low magnification shows a thin and elongated myotube. (B, C) Myofibrils from control myotubes display different degrees of sarcomeric organization. (B) Discernable A-I bands, M line, and winding Z-bands, (C) Incomplete banding pattern and Z-bodies. (D) High magnification shows one SR-TT junction at the periphery of the cell. The SR has been highlighted by artificial post-coloring. (E–H) S/Da/De/F treated myotubes are shown at different magnifications. (E) Large myotube with relatively well-organized myofibrils located at the periphery or in close proximity to large bundles of mitochondria; red arrows indicate SR-TT junctions. (F–H) Myotubes subjected to S/Da/De/F treatment also display myofibrils with various degrees of sarcomeric organization. (F) Well defined A-I pattern, well delineated Z bands and visible M lines. (G) Alternating A and I bands, but discontinuous Z-band. (H) Nascent sarcomere with undefined banding patterned and Z–bodies. (I) Large myotube with a great number of SR-TT junctions (red arrows). Notice the presence of numerous mitochondria. The junctions identified by J, K and L letters are enlarged below (J–L) Different examples of representative SR-TT junctions; the SR is highlighted by artificial post-coloring. Scale bars: 5 µm in A, E and I; 1 µm in B, C and F-H; 500 nm in D and J-L.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Myotubes treated with DMSO shown at low (A) and high (B) magnifications. (C, D) Myotubes treated with S/Da/De/F shown at low (C) and high (D) magnifications. These microphotographs reveal ongoing fusion processes between apposed plasma membranes of two untreated (B, numbered 1,2), and five treated myotubes (D, numbered 1–5). The fusion path is highlighted by artificial post-coloring (orange). Black arrow heads in B and d1 delimit regions of full cell fusion. Red arrows show SR-TT junctions, which are abundant in treated myotubes (D), and generally scarce in the control; they were undetectable in the present untreated myotube (B). Bars = 20 µm in A, C; 2 µm in B, D; 500 nm in d1, d2.
+
 Ultrastructural examination of adjacent cells at high magnification revealed ongoing plasma membrane fusion in both conditions. Such a process was, however, undoubtedly more prolific in S/Da/De/F-treated cells (Figure 4—figure supplement 1). Indeed, a larger number of S/Da/De/F-treated cells were engaged in fusion (>5 cells) as compared with mainly 2 (or rarely 3) in the control. Fusion paths between 2 DMSO treated and 5 S/Da/De/F-treated cells are highlighted in Figure 4—figure supplement 1B and D, respectively. This goes in line with the increase in fusion index and number of myonuclei observed in the S/Da/De/F group (Figure 1E–F).
 
-## Increased chromatin accessibility at myogenic loci upon small molecule treatment
+### Increased chromatin accessibility at myogenic loci upon small molecule treatment
 
 To dissect the mechanism behind S/Da/De/F-mediated myogenic maturation, we investigated the chromatin accessibility landscape using ATAC-seq (Buenrostro et al., 2013). Following a 2 day treatment, we detected 62,748 and 80,334 chromatin accessible peaks in DMSO- and S/Da/De/F-treated cells, respectively (Figure 5A). Comparison of these two datasets showed an overlap of 20,682 peaks, while 42,066 and 59,652 peaks were specific for DMSO and S/Da/De/F treatments, respectively. To determine whether S/Da/De/F treatment led to significant changes in chromatin accessibility, we next compared the normalized sequencing depth at chromatin accessible peaks identified in all replicates. Principal component analysis (PCA) showed that DMSO- and S/Da/De/F-treated groups clustered separately (Figure 5—figure supplement 1A). Differential analysis of chromatin accessibility followed by exclusion of loci overlapping to centromeric and other repetitive elements (referred as blacklist; ENCODE Project Consortium, 2012) identified 2782 peaks displaying increased chromatin accessibility in the S/Da/De/F-treated group (Figure 5B). As expected, this group included genomic elements associated with myogenic genes such as MYOG, MYH3 and the muscle microRNAs MIR206 and MIR133B (Chen et al., 2006; Kim et al., 2006; Koutsoulidou et al., 2011; Swiderski et al., 2016) (Figure 5C and Figure 5—figure supplement 1B). Similarly, increased chromatin accessibility was detected at the CEBPD locus (Figure 5C), a Dexamethasone target gene in human cells (MacDougald et al., 1994; Pan et al., 2010; Reddy et al., 2012). In agreement with the biological function of SB431542 and DAPT, we also observed significant reduction in chromatin accessibility at loci encoding or regulating downstream target genes of the TGFβ (ID3) (Ramachandran et al., 2018) and NOTCH (HES1) (Jarriault et al., 1995) signaling pathways. (Figure 5—figure supplement 1B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig5-v1.jpg)
+
+**Figure 5.:** (A) Venn diagram displaying overlap between loci detected in 2-day S/Da/De/F- and DMSO-treated cells. (B) Heatmap shows changes in chromatin accessibility between DMSO- and S/Da/De/F-treated cells (three independent biological replicates). Loci were selected based on adjusted p-value<0.05 and log2FoldChange > 1. Loci overlapping to blacklist regions are included in this heatmap. (C) Chromatin accessibility at the genomic loci proximal to MYOG, MYH3 and CEBPD genes. Dashed black boxes indicate loci characterized by significant change in chromatin accessibility. Tracks represent snapshots from the IGV browser. (D) Selected enriched motifs identified at S/Da/De/F-specific peaks using MEME-ChIP. Plot below the sequence logo indicates distribution of the motifs across the regions used as input. (E) Table schematizing the results obtained by MEME-ChIP. Only selected motifs are displayed.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Principal component analysis of DMSO- and S/Da/De/F-treated samples using sequencing depth coverage calculated at a list of loci comprising all ATAC-seq peaks detected in this experiment. (B) Chromatin accessibility at the genomic loci proximal to HES1, ID3 and MIR206-MIR133B genes. Dashed black boxes indicate loci characterized by significant change in chromatin accessibility. Tracks represent snapshots from the IGV browser.
+
 To further characterize these elements, we analyzed the S/Da/De/F specific regions for the presence of conserved DNA binding motifs. This analysis showed enrichment for several motifs associated with known myogenic transcription factors, including MYOG, MEF2, and POU (Figure 5D–E). Among these, the POU transcription factor Pou2f1 (also known as Oct1), through cooperation with SRF and MEF2, regulates transcription of the fast MyHC (MyHC-2b) (Allen et al., 2005). Analogously, Pou6f1 (also called Emb) was identified in a complex with MEF2D and p300, whose function is to control Actc1, an actin isoform expressed in developing skeletal muscle and cardiac muscle (Molinari et al., 2004).
 
-## Transcriptomic analysis reveals genes associated with muscle differentiation, maturation and contractile function upon small molecules treatment
+### Transcriptomic analysis reveals genes associated with muscle differentiation, maturation and contractile function upon small molecules treatment
 
 To further define the molecular changes induced by S/Da/De/F, we performed RNA sequencing analysis on differentiated myotubes obtained upon treatment with small molecules and DMSO control. We identified about 1859 significantly differentially expressed genes, from which about half were downregulated and the other half were upregulated in the treated group compared to controls (Figure 6A). To dissect the transcriptome profile associated with S/Da/De/F treatment, we first performed ingenuity pathway analysis (IPA) and corroborated the four small molecules (and their targets) as upstream regulators of the differentially expressed genes, which was evidenced by the ‘activation Z-scores’ (<-2 or >2) and validated by the overlap p-values (<0.01) (Figure 6—source data 1). Interestingly, the analysis also revealed transcription factors and miRNAs involved in muscle differentiation as upstream regulators of changes in gene expression upon S/Da/De/F treatment, including TEAD4 (Joshi et al., 2017), MYF6 (Kassar-Duchossoy et al., 2004; Montarras et al., 1991), KLF4 (Sunadome et al., 2011), MEF2A, MEF2C (Liu et al., 2014), MIR-133B, MIR-206 and MIR-503 (Chen et al., 2006; Kim et al., 2006; Koutsoulidou et al., 2011; Sarkar et al., 2010) (Figure 6B). The differentially expressed targets of these transcription factors and miRNAs, are listed in Figure 6—source data 2. According to our IPA data, skeletal and muscular system development was found the most upregulated physiological system (Figure 6C). In addition, among upregulated canonical pathways, the analysis identified oxidative phosphorylation and calcium signaling, indicating an increase in mitochondrial biogenesis and muscle contraction, respectively (Figure 6D), corroborating the increased number of mitochondria observed by TEM (Figure 4). This makes sense as skeletal myogenesis has been documented to be accompanied by mitochondrial biogenesis (Remels et al., 2010; Sin et al., 2016). Moreover, Sarcolipin (SLN), a gene reported to play a critical role in mitochondrial biogenesis and oxidative metabolism in skeletal muscle (Maurya et al., 2018), was found among the highest expressed genes (around 30-fold) in the treated group (a result we have validated by qPCR; Figure 6—figure supplement 1A). Gene ontology analysis of upregulated genes for biological processes and cellular components identified various muscle function groups, indicating increased muscle differentiation and function (Figure 6E–F). Consistently, we found upregulation of genes, such as ENO3, MYF6, CKM, TNNT3, MYH8, ATP2A1, ITGA7 and PRKCQ, all reported to be upregulated in fetal, postnatal and adult myotubes in comparison to embryonic myotubes (Biressi et al., 2007a; Burkin and Kaufman, 1999; Hinterberger et al., 1991; Ju et al., 2013; Schiaffino et al., 2015), supporting our observations on the enhancing effect of the combinatorial treatment on myotubes maturation. We validated the upregulation of some of these genes by RT-qPCR (Figure 6—figure supplement 1A). Correspondingly, we found that S/Da/De/F-treated myotubes showed downregulation of MEOX1, PAX3, CDH11, EYA2 and FST, genes known to be expressed at higher levels in embryonic myotubes than in fetal myotubes (Biressi et al., 2007b) (Figure 6—figure supplement 1B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig6-v1.jpg)
+
+**Figure 6.:** (A) Heatmap shows differentially expressed genes in hiPSC-1 myotubes upon combinatorial treatment compared to DMSO from three independent replicates. (B) Table shows muscle differentiation associated transcription factors and miRNAs that were upregulated in combinatorial treatment group when compared to DMSO group as revealed by IPA. (C–D) Bar graphs show the top physiological systems (C) and canonical pathways (D) associated with genes upregulated in combinatorial treatment group when compared to that of DMSO as revealed by IPA. (E–F) Bar graphs show the top biological processes (E) and cellular components (F) associated with genes upregulated upon combinatorial treatment based on gene ontology (GO) analysis. Data are plotted as –log (p-value) in C-F.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Bar graphs show quantitative analysis of gene expression of selected genes associated with skeletal muscle maturation in hESC-1, hiPSC-1 and hiPSC-2 myotubes, which were differentiated with combinatorial treatment or DMSO. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01 ***p<0.001. (B) Bar graphs show expression levels of genes associated with embryonic myogenic identity relative to GAPDH in hiPSC-1 myotubes, which were differentiated with combinatorial treatment or DMSO. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01 ***p<0.001.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Differential expression analysis of genes annotated to peaks with increased chromatin accessibility upon S/Da/De/F treatment. Genes were annotated using GREAT following a two gene association and 500 kb regulatory domain. (B–C) Gene ontology classification of S/Da/De/F-specific peaks using DAVID. Bar graphs show Biological Process categories for (B) upregulated and (C) downregulated genes from panel A.
+
 Taking advantage of our epigenetic analysis, we next assessed whether changes in chromatin accessibility were associated with differential gene expression. For this analysis, we focused on the loci characterized by increased chromatin accessibility upon S/Da/De/F treatment. Upon annotation of the ATAC-seq peaks to the two nearest genes followed by comparison with the transcriptomic data, we observed that 42% of the loci were associated to differentially expressed genes (1727/4145 annotated genes). Of these, 878 and 849 transcripts were upregulated and downregulated, respectively (Figure 6—figure supplement 2A). Gene ontology classification of these two lists of genes confirmed that loci characterized by increased chromatin accessibility and increased expression are associated with muscle contraction, regulation of calcium storage and muscle development (Figure 6—figure supplement 2B). In contrast, loci with increased chromatin accessibility and decreased expression demonstrated enrichment for non-myogenic developmental pathways (Figure 6—figure supplement 2C). Based on these data, we conclude that S/Da/De/F treatment alters the epigenetic landscape of differentiating PS cell-derived myogenic progenitors by increasing chromatin accessibility at elements associated with key myogenic genes and pathways, potentially underlying the mechanism of small molecule-induced maturation of myotubes.
 
-## Functional maturation using 3D muscle constructs
+### Functional maturation using 3D muscle constructs
 
 To determine the effect of the combinatorial treatment on the contractile function of resulting myotubes, we tested them on 3D muscle constructs that allow force measurement of PS cell-derived myotubes. Myogenic progenitors were seeded in 3D hydrogels containing fibrin and Matrigel to allow for expansion. After 3 days, the medium was switched to differentiation medium supplemented with DMSO or combinatorial treatment and cultured for 5 days (Figure 7—figure supplement 1A). At this point, the contractile force generation (twitch and tetanus) in response to electrical stimulus was measured. We found a remarkable increase in both twitch and tetanus force generation in the treated group (about 15-fold; Figure 7A–B). Gene expression analysis showed that treated-3D constructs expressed higher levels of various MYH isoforms (Figure 7C). Whereas we could not reliably detect upregulation of MYH1 and MYH2 gene expression levels in 2D cultures, we observed significant increase in expression of both genes upon treatment in 3D cultures (Figure 7—figure supplement 1B). Neo-MyHC was also upregulated at the protein level as revealed by western blot and immunostaining of the 3D muscle constructs (Figure 7D and Figure 7—figure supplement 1C), confirming superior differentiation and maturation. Increased pan-MyHC and α-actinin were observed as well by immunostaining of 3D constructs upon treatment (Figure 7—figure supplement 1C). In summary, the combinatorial treatment on 3D muscle constructs composed of PS cell-derived myotubes leads to higher levels of maturation and contractile force generation in response to electrical stimulus.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig7-v1.jpg)
+
+**Figure 7.:** (A–B) Representative twitch (A) and tetanic (B) force patterns at 0.5 Hz and 20 Hz, respectively, generated by hiPSC-1 3D muscle constructs differentiated with combinatorial treatment or DMSO. Bar graphs show the twitch force (A) and tetanic force (B) as mean of three independent replicates ± S.E.M. ***p<0.001. Nine twitch peaks and three tetanic measurements from three independent muscle constructs were used for analysis. (C) Bar graphs show myogenic genes expression analysis relative to ACTB in 3D muscle constructs differentiated with combinatorial treatment or DMSO (from A and B). Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01 ***p<0.001. (D) Protein expression analysis of MYH3 (e-MyHC) and MYH8 (neo-MyHC) by western blot of hiPSC-1 3D muscle constructs and 2D differentiated myotubes with combinatorial treatment or DMSO. Actin is shown as loading control.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/47970/elife-47970-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative images of PS cell-derived 3D muscle constructs differentiated in the presence of S/Da/De/F or DMSO. Images were taken on the day of functional assessment. Scale bar is 1 cm. (B) Bar graphs show gene expression analysis of MYH isoforms and MYOG relative to ACTB in hiPSC-1 myotubes differentiated in 2D and 3D cultures. Data are shown as mean of three independent replicates ± S.E.M. *p<0.05 **p<0.01 ***p<0.001. (C) Representative images show immunostaining for neo-MyHC, pan-MyHC and α-actinin in longitudinal cryosections of 3D muscle constructs differentiated with S/Da/De/F or DMSO. DAPI stains nuclei. Scale bar is 100 μm.
 
 ## Discussion
 
@@ -91,68 +167,589 @@ Interestingly, we found that S/Da/De/F combination dramatically increased fusion
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens, Male)</td>
+      <td>hiPSC-1</td>
+      <td>PMID: 22560081</td>
+      <td>PLZ</td>
+      <td>Control line, available with the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Male)</td>
+      <td>hiPSC-2</td>
+      <td>PMID: 26411904</td>
+      <td>TC-1133</td>
+      <td>Control line, available with RUCDR Infinite Biologics</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Male)</td>
+      <td>hiPSC-3</td>
+      <td>This study</td>
+      <td>MNP-120</td>
+      <td>Control line, available with the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Female)</td>
+      <td>hiPSC-4</td>
+      <td>This study</td>
+      <td>MNP-119</td>
+      <td>Control line, available with the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Male)</td>
+      <td>hESC-1</td>
+      <td>WiCell</td>
+      <td>H9</td>
+      <td>ESC control line (WA09)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Female)</td>
+      <td>hESC-2</td>
+      <td>WiCell</td>
+      <td>H1</td>
+      <td>ESC control line (WA01)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Male)</td>
+      <td>hiPSC-DMD1</td>
+      <td>This study</td>
+      <td>DMD1108</td>
+      <td>DMDΔex31, available with the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Male)</td>
+      <td>hiPSC-DMD2</td>
+      <td>PMID: 28658631</td>
+      <td>DMD1705</td>
+      <td>DMDΔex52-54, available with the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Male)</td>
+      <td>hiPSC-DM1-1</td>
+      <td>PMID: 29898953</td>
+      <td>DM1-1</td>
+      <td>2,000 CTG repeats in 3'UTR of DMPK gene, available with the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Male)</td>
+      <td>hiPSC-DM1-2</td>
+      <td>PMID: 29898953</td>
+      <td>DM1-2</td>
+      <td>1,500 CTG repeats in 3'UTR of DMPK gene, available with the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, Female)</td>
+      <td>hiPSC-LGMD2A</td>
+      <td>PMID: 31501033</td>
+      <td>9015</td>
+      <td>CAPN3Δex17-24, available with the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tocriscreen Stem Cell Toolbox</td>
+      <td>Tocris</td>
+      <td>Cat# 5060</td>
+      <td>10 µM of each compound</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Tocris</td>
+      <td>Cat# 4423</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LDN193189</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 19396</td>
+      <td>200 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 13031</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPT</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 13197</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 11015</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 11018</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD0325901</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 13034</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# D9891</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant Human FGF-basic</td>
+      <td>Peprotech</td>
+      <td>Cat# 100-18B</td>
+      <td>5 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant Human HGF</td>
+      <td>Stem Cell Technologies</td>
+      <td>Cat# 78019</td>
+      <td>10 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant Human IGF-1</td>
+      <td>Stem Cell Technologies</td>
+      <td>Cat# 78022</td>
+      <td>2 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iClick EdU Andy Fluor 555 Imaging Kit</td>
+      <td>GeneCopoeia</td>
+      <td>Cat# A004</td>
+      <td>Cell proliferation assay</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MHC (all isoforms), mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>Cat# MF20, RRID: AB_2147781</td>
+      <td>Dilution-1:100 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Desmin, mouse monoclonal</td>
+      <td>SCBT</td>
+      <td>Cat# sc-23879, RRID: AB_627416</td>
+      <td>Dilution-1:500 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ACTB, mouse monoclonal</td>
+      <td>SCBT</td>
+      <td>Cat# sc-4778, RRID: AB_626632</td>
+      <td>Dilution- 1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Titin, mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>Cat# 9D10, RRID: AB_528491</td>
+      <td>Dilution- 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MyHC-neo, mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>Cat# N3.36, RRID: AB_528380</td>
+      <td>Dilution- 1:50 (IF), 1:200 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MyHC-neo, mouse monoclonal</td>
+      <td>Leica</td>
+      <td>Cat# MHCN, RRID: AB_563900</td>
+      <td>Dilution- 1:20 (IF), 1:200 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MyHC-emb, mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>Cat# F1.652, RRID: AB_528358</td>
+      <td>Dilution- 1:200 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MYH1/2, mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>Cat# SC-71, RRID: AB_2147165</td>
+      <td>Dilution- 1:200 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-actinin, mouse monoclonal</td>
+      <td>Thermofisher</td>
+      <td>Cat# MA122863, RRID: AB_557426</td>
+      <td>Dilution- 1:25 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OCT3/4, mouse monoclonal</td>
+      <td>SCBT</td>
+      <td>Cat# C-10, RRID: AB_628051</td>
+      <td>Dilution- 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOX2, goat polyclonal</td>
+      <td>SCBT</td>
+      <td>Cat# Y-17, RRID: AB_2286684</td>
+      <td>Dilution- 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NANOG, mouse monoclonal</td>
+      <td>SCBT</td>
+      <td>Cat# H-2, RRID: AB_10918255</td>
+      <td>Dilution- 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SSEA4, mouse monoclonal</td>
+      <td>SCBT</td>
+      <td>Cat# sc-21704, RRID: AB_628289</td>
+      <td>Dilution- 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG HRP-linked (sheep polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA931, RRID: AB_772210</td>
+      <td>Dilution- 1:20000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa fluor 555 goat anti-mouse IgG (goat polyclonal)</td>
+      <td>Thermofisher</td>
+      <td>Cat# A-21424, RRID: AB_141780</td>
+      <td>Dilution- 1:500 (IF)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 488 Phalloidin, F-actin probe</td>
+      <td>Thermofisher</td>
+      <td>Cat# A12379</td>
+      <td>Dilution- 1:40 (IF)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYH1</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00428600_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYH2</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00430042_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYH3</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01074230_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYH7</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01110632_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYH8</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00267293_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYOD1</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs02330075_g1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYOG</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01072232_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ACTB</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs99999903_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs99999905_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SLN</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00161903_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CAPN3</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01115989_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ATP2A1</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01115989_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ENO3</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01093275_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYF6</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00231165_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CKM</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00176490_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KLF4</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01034973_g1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNNT3</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00952980_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CDH11</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00901479_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EYA2</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00193347_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FST</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01121165_g1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CEBPB</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00270923_s1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CEBPD</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00270931_s1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FKBP5</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01561006_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NOTCH2</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01050702_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HES1</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00172878_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JAG1</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01070032_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>COL1A1</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00164004_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ID3</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00954037_g1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SERPINE1</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00167155_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PPARGC1A</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00173304_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RGS2</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs01009070_g1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NR4A1</td>
+      <td>Thermofisher</td>
+      <td>Assay ID: Hs00374226_m1</td>
+      <td>Taqman probe for RT-qPCR</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 Studies involved de-identified fibroblast samples according to procedures approved by the Institutional Review Board of the University of Minnesota (Ref: 0904M63241). PS cell lines used in this study are described in key resources table. hiPSC-3, hiPSC-4 and hiPSC-DMD1 were generated by the Pluripotent Stem Cell Facility at Cincinnati Children’s Hospital Medical Center. Pluripotency characterization is shown in Figure 3—figure supplement 1. All muscular dystrophy patient iPS cell lines were authenticated by verification of genetic mutation by southern blot or sanger sequencing. All tested iPS cell lines were negative for mycoplasma contamination.
 
-## Mice
+### Mice
 
 Animal experiments were carried out according to protocols (protocol ID: 1702-34580A) approved by the University of Minnesota Institutional Animal Care and Use Committee. Teratoma studies were performed by injecting 1.5 × 10^6 PS cells in the quadriceps of NSG mice (from Jackson labs). Before injection, cells were resuspended in 1:1 solution DMEM-F12 and Matrigel (final volume including cells: 65 µl).
 
-## Cell culture and myogenic differentiation of PS cells
+### Cell culture and myogenic differentiation of PS cells
 
 ES and iPS cells were maintained in mTeSR1 medium (Stem Cell Technologies) on Matrigel-coated plates. ES/iPS cells were dissociated with Accumax and passaged once they reached 90% confluency and plated with 10 μM ROCK inhibitor, Y-27632 (APExBIO). To induce conditional expression of PAX7, ES/iPS cells were co-transduced with lentiviral vectors, pSAM2-iPAX7-IRES-GFP and FUGW-rtTA to generate iPAX7 cells (Darabi et al., 2012). For myogenic differentiation, 1 × 106 iPAX7-ES/iPS cells were plated with 10 μM Y-27632 in a 60 mm petri dish and incubated for 2 days on a shaker at 60 rpm at 37°C to derive embryoid bodies (EBs). Cells were then switched to myogenic medium (MM) supplemented with 10 μM GSK3β inhibitor (CHIR99021; Tocris). Myogenic medium consisted of IMDM basal medium (Gibco) supplemented with 15% fetal bovine serum, 10% horse serum, 1% penicillin/streptomycin (Invitrogen), 1% glutamax (Gibco), 1% KnockOut Serum Replacement (KOSR; Gibco), 50 μg/ml ascorbic acid (Sigma-Aldrich), 4.5 mM monothioglycerol (MP biomedicals). After 2 days, cells were switched to MM supplemented with 200 nM BMP inhibitor (LDN193189; Cayman Chemical) and 10 μM TGFβ inhibitor (SB431542, Cayman Chemical). 24 hr later, on day 5, 1 μg/ml Doxycycline (Dox; Sigma-Aldrich) was added to the medium. After 24 hr, cells were switched to fresh MM with 1 μg/ml Dox and incubated at 37°C for 2 days. EBs were collected and 1/10th of the EBs volume was plated on gelatin coated T75 flasks in expansion medium (EM), consisting of MM with 1 μg/ml Dox and 5 ng/ml human basic fibroblast growth factor (bFGF; PeproTech). After 4 days, cells were dissociated with 0.25% trypsin-EDTA and FACS sorted for GFP to derive myogenic progenitors which were plated at a density of 2 × 106/T75 flask in EM. Myogenic progenitors were passaged upon reaching 90% confluence with 0.25% trypsin-EDTA at a ratio of 1:6 to 1:8. To induce terminal differentiation, myogenic progenitors at P3-4 were plated at a density of 75,000 cells/well of a 24-well plate and allowed to grow confluent for 3 days. The medium was then switched to low nutrient differentiation medium (DM) consisting of DMEM-KO supplemented with 20% KOSR, 1% Non-Essential amino acids (NEAA; Gibco), 1% glutamax and 1% penicillin-streptomycin and incubated for 5 days to derive myotubes.
 
 Transgene-free myogenic differentiation was performed following a previously described protocol (Xi et al., 2017). Briefly, hiPS cells were plated as single cells onto a well of a Matrigel-coated 6-well dish in mTeSR1 with 10 μM Y-27632 (day 0). The next day (day 1), medium was switched to basal medium (1% ITS-G and 1% penicillin/streptomycin in DMEM/F12) supplemented with 3 μM CHIR99021. At day 3, medium was switched to basal medium supplemented with 200 nM LDN193189 and 10 μM SB431542. At day 5, medium was switched to basal medium supplemented with 3 μM CHIR99021 and 20 ng/ml bFGF. At day 7, medium was switched to 15% KOSR and 1% penicillin/streptomycin in DMEM supplemented with 10 ng/ml HGF and 2 ng/ml IGF1 for 14 days. Medium was replaced every other day. At day 21, cells were dissociated with Collagenase IV for 5 min followed by TryPLE Express for 5 min. Cell suspension was filtered through 100 μm and 40 μm cell strainers, sequentially. Cells were cultured and expanded on Matrigel coated dishes in MM. For terminal myotube differentiation, cells were grown to confluency and then MM was replaced by DM.
 
-## Small molecule library screening
+### Small molecule library screening
 
 Small molecule library screening was performed using the Tocriscreen Stem Cell Toolbox Kit (Tocris), which consists of 80 compounds. Myogenic progenitors were seeded at 12,000 cells/well in 96-well plates (triplicates) and incubated at 37°C for 3 days to reach 100% confluency. After 3 days, the cells were switched to DM supplemented with 10 μM of the compounds from the library or with DMSO. Each well contained an individual compound. Cells were incubated in this differentiation medium for 5 days to derive myotubes. Cells were then fixed and processed for immunostaining of MyHC and counterstained with DAPI. Stained plates were imaged such that most of the well area was covered. The ratio of area of MyHC/DAPI staining was quantified using Image J and normalized to that of DMSO treated cells. Compounds showing a significant increase of 1.2-fold or more in ratio of MyHC/DAPI relative to DMSO among replicates and among the three cell lines tested were used for further studies: S (Cayman Chemical), Da (Selleckchem), De (Cayman Chemical), P (Cayman Chemical) and F (Cayman Chemical. Different combinations were made with selected compounds and their effect on differentiation was tested and quantified as above.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 For immunofluorescence staining, samples were fixed with 4% PFA for 20–30 min at RT, followed by permeabilization with 0.3% Triton X-100 in PBS for 20 min at RT. Samples were then blocked with 3% BSA in PBS for 1 hr. Primary antibody diluted in 3% BSA was added after blocking and was incubated overnight at 4°C. Following this incubation, samples were washed with PBS and incubated with secondary antibody and DAPI for 45–60 min at RT in dark. After this incubation, samples were washed with PBS and stored in dark at 4°C until imaging. For immunofluorescence staining of 3D muscle constructs, these were fixed in 4% PFA for 1 hr at RT, followed by incubation in a solution of 30% Sucrose and 5% DMSO for 4 hr at RT and then incubated in a solution of 15% Sucrose, 2.5% DMSO and 50% OCT embedding medium at 4°C overnight. Next, constructs were embedded in OCT and frozen with liquid nitrogen cooled isopentane. Frozen 3D constructs were cryosectioned longitudinally at 45 µm thickness. Frozen sections were allowed to dry at RT for 15 min and the sections were rehydrated in PBS for 5 min prior to 10 min fixation with 4% PFA. Following staining procedure, slides were mounted with coverslips using ProLong Gold Antifade Mountant with DAPI (Invitrogen). The stained sections were imaged using Zeiss upright microscope.
 
-## Myotubes fusion index
+### Myotubes fusion index
 
 Differentiated myotubes were processed for pan-MyHC immunostaining. Cells were imaged using Zeiss upright microscope and analysis was performed from aleatory fields of the well. Myotubes were identified as elongated MyHC (+) cells containing at least two nuclei. Fusion index was calculated as the percentage of nuclei within myotubes relative to the total number of nuclei. Approximately 500 nuclei and 100 myotubes were counted for fusion index and number of nuclei per myotube, respectively, for each replicate.
 
-## EdU cell proliferation assay
+### EdU cell proliferation assay
 
 This was performed using iClick EdU Andy Fluor 555 Imaging Kit (GeneCopoeia). Cells were incubated with 10 µM of EdU for 24 hr. After this incubation, cells were fixed with 4% PFA for 15 min at RT and then permeabilized with 0.3% Triton X-100 for 20 min at RT. Following this, EdU staining was performed as per the manufacturer’s instructions. Stained cells were imaged using Cytation 3 (BioTek) and EdU positive nuclei were quantified using Image J.
 
-## Western blotting
+### Western blotting
 
 Protein extraction was performed using lysis buffer (20 mM Tris HCl, 0.1 mM EDTA, 1 mM DTT, 20 μg/ml soybean trypsin inhibitor, 28 μM E64 and 2 mM PMSF) combined with 1X Laemmli sample buffer. Samples were boiled at 95°C for 10 min. The total protein concentration of the lysate was quantified using Bradford assay. 100 μg of total protein was electrophoresed in 7.5% SDS-PAGE gel. The proteins were transferred onto immobilon PVDF membrane (Millipore). The blot was blocked with 5% dry milk in TBST for 1 hr at RT. After blocking, the blot was incubated with primary antibody diluted in 5% BSA in TBST overnight at 4°C. Following this incubation, the blot was washed three times with TBST and then incubated with HRP conjugated secondary antibody. After three washes with TBST, protein detection was performed using Pierce ECL or Supersignal west chemiluminescent substrate (Thermo Fisher Scientific). The chemiluminescence signal was captured in X-ray film or using chemidoc imager (Bio-Rad Laboratories).
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used for immunofluorescence or western blot: pan-MyHC (MF20; DSHB), Titin (9D10; DSHB), MyHC-neo (N3.36; DSHB) (MHCN; Leica), MYH3 (F1.652; DSHB), MYH1/2 (SC-71; DSHB), α-actinin (MA122863; Thermofisher), Desmin (sc-23879; SCBT), ACTB (sc-4778; SCBT), OCT3/4 (C-10; SCBT), SOX2 (Y-17; SCBT), NANOG (H-2; SCBT), Alexa Fluor 488 Phalloidin (A12379; Thermofisher), Alexa fluor 555 goat anti-mouse IgG (A-21424; Thermo Fisher), Alexa fluor 488 goat anti-rabbit IgG (A-11008; Thermo Fisher), and mouse IgG HRP-linked (NA931; GE Healthcare).
 
-## RNA isolation and quantitative RT-PCR
+### RNA isolation and quantitative RT-PCR
 
 Cells were lysed using Trizol reagent (Thermo Fisher) and RNA was extracted using purelink RNA mini kit (Thermo Fisher) with on-column DNAse treatment following manufacturer’s instructions. RNA concentration was quantified using Nanodrop. For quantitative RT-PCR analysis, reverse transcription was performed using Superscript Vilo cDNA synthesis kit (Thermo Fisher) as per manufacturer’s instruction. qPCR was performed using taqman probes (Applied Biosystems) and Premix Ex Taq probe qPCR kit (Takara). For each qPCR reaction in 384-well plate, cDNA amount corresponding to 10 ng of total RNA, 0.5 μl of taqman probe and 5 μl of 2X master mix was utilized. QPCR was performed using QuantStudio 6 Flex Real-Time PCR System and the Ct values were determined. Ct value for gene of interest was normalized to that of the house keeping control using the 2^-delta Ct calculation and compared between the treated and untreated groups. Following are the taqman probes used in this study, MYH1 (Hs00428600_m1), MYH2 (Hs00430042_m1), MYH3 (Hs01074230_m1), MYH7 (Hs01110632_m1), MYH8 (Hs00267293_m1), MYOG (Hs01072232_m1), MYOD1 (Hs02330075_g1), ACTB (Hs99999903_m1), GAPDH (Hs99999905_m1), SLN (Hs00161903_m1), CAPN3 (Hs01115989_m1), ATP2A1 (Hs01115989_m1), ENO3 (Hs01093275_m1), MYF6 (Hs00231165_m1), CKM (Hs00176490_m1), KLF4 (Hs01034973_g1), TNNT3 (Hs00952980_m1), CDH11 (Hs00901479_m1), EYA2 (Hs00193347_m1), FST (Hs01121165_g1), CEBPB (Hs00270923_s1), CEBPD (Hs00270931_s1), FKBP5 (Hs01561006_m1), NOTCH2 (Hs01050702_m1), HES1 (Hs00172878_m1), JAG1 (Hs01070032_m1), COL1A1 (Hs00164004_m1), ID3 (Hs00954037_g1), SERPINE1 (Hs00167155_m1), PPARGC1A (Hs00173304_m1), RGS2 (Hs01009070_g1), NR4A1 (Hs00374226_m1).
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 Transmission electron microscopy (TEM) was performed on myotubes cultured in 6-well plates and differentiated for 19 days under standard conditions or in the presence of small molecules. Cells were pre-fixed at room temperature for one hour in 2% (w/v) paraformaldehyde 2% (w/v) glutaraldehyde in PBS, then rinsed and stored in PBS for a few days. Samples were prepared by post-fixation in 1% (w/v) OsO4 in PBS, followed by gradual dehydration in ethanol that includes a staining with step with 1% (w/v) uranyl acetate in 70° ethanol and embedding in Epon resin (EMS, Fort Washington, PA, USA). Blocks were cut in 70 nm ultrathin sections which were further stained with uranyl acetate and lead citrate. Sections were examined using a Philips CM120 electron microscope (Philips, Eindhoven, Netherlands) operated at 80kV, and photographed with SIS Morada digital camera (Olympus, Münster, Germany). Experiments were carried out in triplicates and in a blind manner.
 
-## ATAC-seq
+### ATAC-seq
 
 Analysis of chromatin accessibility was performed following the protocol described by Buenrostro and colleagues (Buenrostro et al., 2015). Briefly, 50,000 cells from 2 day DMSO- and S/Da/De/F-treated cultures were collected using trypsin/EDTA and washed with cold PBS prior to permeabilization and Tn5-mediated transposition for 30 min at 37°C. Following DNA extraction using MinElute Qiagen columns, transposed DNA was used for primer extension and 5 cycles of PCR amplification to insert Illumina-compatible adapter-barcodes. Final number of cycles required for library amplification was determined by qPCR. Libraries were purified using AMPure beads and then resuspended in H2O. Libraries were sequenced at the University of Minnesota Genomic Center on a lane of the NextSeq 550 in paired-end mode at an average depth of 40M reads/sample.
 
 Reads were then mapped to the human genome (hg38) using bowtie2 (Langmead and Salzberg, 2012) (parameters -I 25 -X 2000 --local --dovetail --no-mixed --no-discordant) and filtered to remove PCR duplicates. Peaks were identified using MACS2.1 (Zhang et al., 2008) (parameters --nomodel --nolambda --keep-dup all --call-subpeaks) and then analyzed using BEDtools (Quinlan and Hall, 2010) to identify treatment-specific peaks. For this analysis, we considered peaks detected in 2 of 3 biological replicates. Analysis of differential accessibility was performed by generating a list of peaks representative of all samples using the peak summits identified by MACS2. Each summit was extended 50 bp in both directions and the resulting lists of peaks were combined, sorted and merged to obtain a dataset of unique and non-overlapping loci. This list was then used to extrapolate the sequencing depth coverage from each sample bedgraph file. Coverage files were then analyzed using DEseq2 (Love et al., 2014) to identify loci with differential chromatin accessibility. For the subsequent analyses, loci were converted to the hg19 human genome release. Annotation of the S/Da/De/F specific peaks was performed using GREAT (McLean et al., 2010) using a two gene association and 500 kb regulatory domain. Analyses included proximal promoters and distal enhancers. GO analysis was performed using DAVID (Huang et al., 2009). Enriched motifs were identified in a region of ±200 bp from the peak center using MEME-ChIP (Machanick and Bailey, 2011). Files for visualization using IGV (Thorvaldsdóttir et al., 2013) were generated by converting. wig files to the bigwig format.
 
-## RNA sequencing
+### RNA sequencing
 
 Myotubes treated with DMSO or S/Da/De/F differentiated for 5 days were used for RNA sequencing in triplicates. RNA was isolated as described above. 500 ng of total RNA was used for generating dual-indexed libraries using the TruSeq stranded mRNA library kit. The libraries were sequenced in NextSeq 550 sequencer using 75 bp paired end run at around 20 million reads per sample. 75 bp FastQ paired-end reads (n = 20.9 Million per sample) were trimmed using Trimmomatic (v 0.33). Quality control on raw sequence data was performed with FastQC. Reads were mapped to the human genome (hg38) reference using Hisat2 (v2.1.0). Gene quantification was done via Cuffquant for FPKM values and Feature Counts for raw read counts. Differentially expressed genes were identified using the edgeR (negative binomial) feature in CLC genomics work bench (Qiagen) using raw read counts. We filtered the generated list based on a minimum 2X Absolute Fold Change and FDR corrected p<0.05. These filtered genes were then imported into Ingenuity Pathway Analysis Software (Qiagen) for identification of canonical pathways, upstream regulators and their targets. Gene ontology enrichment analysis was performed by uploading the list of differentially expressed genes in the GO database to identify the top enriched cellular components and biological processes. Heatmap of differentially expressed genes was generated using the heatmapper web tool as per the manufacturer’s instructions.
 
-## Three-dimensional muscle construct generation and contractile force measurement
+### Three-dimensional muscle construct generation and contractile force measurement
 
 Three-dimensional muscle constructs were generated in home-made culture wells having dimensions of 15 mm ×5 mm × 5 mm (length ×width × depth), with each well containing two posts near the ends of the well. A suspension of hiPS cell-derived myogenic progenitors (10 million cells/mL, passage 4) was prepared in a solution containing 6 mg mL−1 bovine fibrinogen (Sigma-Aldrich), 1-unit bovine thrombin (Sigma-Aldrich), and 10% (v/v) growth factor reduced Matrigel (R and D), and the suspension was quickly pipetted into the culture wells, followed by gelation at 37°C for 1 hr. All the constructs were cultured in the myogenic expansion medium for 3 days, followed by differentiation for 5 days in the KOSR medium supplemented with S/Da/De/F (each dissolved in DMSO at 10 μM). Controls in which the KOSR differentiation medium containing the same amount of DMSO (0.4% v/v) were conducted. On day 3 of differentiation, 25% of the medium was replaced with the fresh medium. All the media were supplemented with 2 mg/mL ε-aminocaproic acid (Sigma-Aldrich) to prevent fibrin degradation.
 
 Contractile forces generated by the constructs in response to electrical stimulation at 0.5 Hz (twitch) or 20 Hz (tetanus) were measured on a custom-built apparatus after five days of differentiation (Black et al., 2009). In brief, a construct was maintained at 37°C, and the two ends were mounted on two pins, one of which was adjustable and connected to a force transducer (Harvard Apparatus, 60–2994 model). Prior to measurements, the construct was stretched by 20% of its initial length with the adjustable pin. Electrical pulses were generated with a cardiac stimulator (Astro-Med Inc, S88 × Model, 10 ms pulse width) at a frequency of 0.5 or 20 Hz for 6 s. Contractile forces were recorded using LabView and the data were analyzed using MATLAB (the code is available at GITHUB, https://github.com/weishenumn/contractile-force-analysis.git ; Shen, 2019; copy archived at https://github.com/elifesciences-publications/contractile-force-analysis) (Black et al., 2009). For each twitch peak or tetanic plateau, the maximum force was used for analysis. The construct was then treated with TRI Reagent (Sigma-Aldrich) for qPCR analysis or immediately frozen in liquid nitrogen for Western blotting. For each differentiation condition, three constructs were quantitatively examined.
 
-## Statistics
+### Statistics
 
 Differences between samples were assessed by using the Student’s two-tailed t test for independent samples or two-way ANOVA for multiple comparisons. Statistical analyses were performed using Prism Software (GraphPad).

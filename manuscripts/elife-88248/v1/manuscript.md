@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05fazth07 Arthur Riggs Diabetes Metabolism Research Institute, Beckman Research Institute, City of Hope Duarte United States
+1. Arthur Riggs Diabetes Metabolism Research Institute, Beckman Research Institute, City of Hope Duarte United States ([ROR:05fazth07](https://ror.org/05fazth07))
 
 † Corresponding author
 

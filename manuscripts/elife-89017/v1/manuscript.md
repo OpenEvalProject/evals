@@ -7,10 +7,10 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Computational Biology Program, Public Health Sciences Division, Fred Hutchinson Cancer Center Seattle United States
-2. https://ror.org/007ps6h72 Basic Sciences Division, Fred Hutchinson Cancer Center Seattle United States
-3. https://ror.org/00cvxb145 Department of Genome Sciences, University of Washington Seattle United States
-4. https://ror.org/00cvxb145 Medical Scientist Training Program, University of Washington Seattle United States
+1. Computational Biology Program, Public Health Sciences Division, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Basic Sciences Division, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+3. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+4. Medical Scientist Training Program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -34,19 +34,35 @@ Since DUX4 expression in cancer cells suppresses MHC class I-mediated antigen pr
 
 ## Results
 
-## DUX4 is commonly expressed in diverse metastatic cancer types
+### DUX4 is commonly expressed in diverse metastatic cancer types
 
 To assess the prevalence of DUX4-expressing human malignancies, we performed a large-scale analysis of publicly available RNA-seq data across diverse cancer types (Figure 1A, Figure 1—figure supplement 1A). The majority of the cohorts in The Cancer Genome Atlas (TCGA) are most commonly comprised of primary samples and local metastases. We found that DUX4 expression is a particularly common feature across advanced-stage cancers, with 10–50% of cancer samples (depending upon cancer type) displaying DUX4 expression levels comparable to or greater than those observed in the early embryo, where expression of the highly stereotyped DUX4-induced gene expression program is observed (Chew et al., 2019; Hendrickson et al., 2017). A markedly higher proportion of advanced metastatic cancers express DUX4—and tend to have higher absolute DUX4 expression levels—than do their TCGA cancer counterparts (Figure 1B,C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig1-v1.jpg)
+
+**Figure 1.:** (A) Matched The Cancer Genome Atlas (gray, TCGA) and advanced metastatic (orange) cancer datasets analyzed in our study. (B) The proportion of DUX4-expressing cancers in TCGA (purple shading) and metastatic (red shading) cancers. The blue line indicates the median over TCGA cancer cohorts. The 95% confidence intervals were estimated via a two-sided proportion test. (C) DUX4 expression values (TPM, transcripts per million) in TCGA (purple shading) and advanced metastatic (red shading) cancer cohorts analyzed in our study. (D) Representative RNA-seq coverage plots from primary and metastatic cancers for reads mapping to the DUX4 cDNA. Open reading frame (ORF, black rectangle); UTR (untranslated region, gray line); homeobox domains (yellow rectangles).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) As in Figure 1A, but The Cancer Genome Atlas (TCGA) cancer cohorts without matched advanced metastatic counterparts analyzed in our study are shown. (B) A comparison of DUX4 expression values (TPM, transcripts per million) measured from sequencing libraries prepared via poly(A) capture or hybrid capture. (C) As in (B), but a heatmap where patient samples (columns) were stratified according to the indicated categories of DUX4 expression.
 
 We sought to determine if the DUX4 transcripts in metastatic cancers express the entire coding sequence or only a portion thereof, as expressed DUX4 truncations due to genomic rearrangements are frequent oncogenic drivers in particular cancer subtypes, most notably undifferentiated round cell sarcomas (CIC-DUX4 oncoprotein) (Antonescu et al., 2017; Choi et al., 2013; Graham et al., 2012; Italiano et al., 2012; Kawamura-Saito et al., 2006; Yoshida et al., 2016; Yoshimoto et al., 2009) and adolescent B-cell acute lymphoblastic leukemia (ALL) (Lilljebjörn et al., 2016; Liu et al., 2016; Qian et al., 2017; Yasuda et al., 2016). We aligned RNA-seq reads to the DUX4 cDNA sequence and examined read coverage over the open reading frame. Resembling the cleavage stage embryo and DUX4-expressing primary cancers, DUX4-positive metastatic tumors transcribe the full-length coding region. In contrast, B-cell ALL exhibited the expected C-terminal truncation due to DUX4 fusion with the IGH locus (Figure 1D).
 
 Since DUX4 is typically silent in most healthy tissue contexts outside the cleavage-stage embryo (Das and Chadwick, 2016; Snider et al., 2010), we investigated if artifacts related to sequencing and sample processing could account for the observed high rates of DUX4 expression in metastatic vs. primary cancers. We were particularly interested in determining whether the method of RNA recovery influenced DUX4 detection rate, as the analyzed metastatic cohorts frequently relied upon formalin-fixed samples rather than the frozen samples frequently used by TCGA. We took advantage of a cohort of patients with diverse metastatic tumor types for which patient-matched flash-frozen and formalin-fixed metastatic tumor samples were analyzed by RNA-seq (via poly(A)-selection and hybrid probe capture sequencing library preparations, respectively) (Robinson et al., 2017). Our re-analysis revealed that DUX4 expression is readily detectable and quantifiable for both sample and library preparation methods. DUX4 transcript levels in the majority of the sequenced samples were higher in poly(A)-selected sequencing than were the analogous measurements obtained from hybrid capture (Figure 1—figure supplement 1B,C). These data demonstrate that the high rates of DUX4 expression that we observed across metastatic cancer cohorts reflect true DUX4 expression rather than technical biases introduced by studying formalin-fixed tissues and are consistent with expression of a polyadenylated DUX4 transcript in both primary and metastatic cancers.
 
-## DUX4 expression is associated with immune cell exclusion
+### DUX4 expression is associated with immune cell exclusion
 
 We next sought to assess the downstream consequences of DUX4 expression in metastatic cancers. We focused on urothelial cancers for two reasons. First, urothelial cancers exhibited one of the highest frequencies of DUX4 expression (54% of patients) in any of the five metastatic cancer cohorts that we analyzed, suggesting that DUX4 could be particularly important in that tumor type. Second, pretreatment samples from 347 patients enrolled in the IMvigor210 trial, a phase 2 trial of anti-PD-L1 (atezolizumab) therapy with advanced urothelial carcinoma, were subject to transcriptome profiling by RNA-seq as well as immunohistochemical analysis, enabling us to conduct comprehensive studies of the association between DUX4 expression, the global transcriptome, and immunophenotypes in a well-powered cohort (Balar et al., 2017; Mariathasan et al., 2018; Rosenberg et al., 2016).
 
 We examined associations between global gene expression profiles and DUX4 expression in this advanced urothelial carcinoma cohort. We performed differential gene expression analyses on the individuals stratified according to tumor DUX4 expression status. Gene Ontology (GO) network analyses on the upregulated genes in DUX4-positive cancers identified multiple clusters of development-associated terms, consistent with the known role of DUX4 in early embryogenesis (Figure 2—figure supplement 1A; De Iaco et al., 2017; Hendrickson et al., 2017; Sugie et al., 2020; Whiddon et al., 2017). In contrast, we found a single network associated with downregulated genes: GO terms corresponding to humoral or cell-mediated immunity (Figure 2A). Using an IFN-γ gene signature predictive of response to blockade of the PD-1/PD-L1 axis, we found that DUX4-expressing cancers have statistically lower levels of IFN-γ activity (Figure 2—figure supplement 1B; Ayers et al., 2017). Consistent with IFN-γ suppression, we observed extensive downregulation of genes involved in anti-tumor immunity such as those involved in MHC class I-dependent antigen presentation and T cell activation, checkpoint proteins, and chemokines involved in effector T cell recruitment. DUX4-expression was also correlated with suppression of genes critical for MHC class II-mediated antigen presentation, namely: MHC class II isotypes (HLA–DP/DQ/DR), HLA-DM, and HLA-DO, and the invariant chain (CD74) (Roche and Furuta, 2015). MHC class II gene expression is regulated by the transactivator CIITA via a conserved SXY-module present in the promoter regions of these genes. CIITA is induced by IFN-γ and is also conspicuously downregulated in DUX4-expressing tumors (Figure 2B; Glimcher and Kara, 1992; Masternak et al., 2000; Steimle et al., 1993; Steimle et al., 1994). MHC class II-mediated antigen presentation can regulate T cell abundance in the tumor microenvironment and patient response to PD-1 blockade (Johnson et al., 2020). These analyses suggest that DUX4 expression in the metastatic context induces an immunosuppressive gene expression program, concordant with its established function in inhibiting JAK–STAT signaling in primary cancers (Chew et al., 2019).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig2-v1.jpg)
+
+**Figure 2.:** (A) Gene Ontology (GO) enrichment network analysis of DUX4-downregulated genes. Differentially expressed genes were identified from the comparison of advanced urothelial carcinoma tumors with high (>1 TPM) vs. low (≤1 TPM) DUX4 expression. The nodes and node sizes correspond to significantly enriched GO terms (Benjamini–Hochberg-adjusted p-value <0.05) and the number of DUX4-downregulated genes in each, respectively. The edges connecting nodes indicate shared genes. (B) Downregulated (blue) and upregulated (red) anti-tumor immunity genes in tumors with DUX4-positive (>1 TPM) vs. -negative (≤1 TPM) advanced urothelial carcinomas. (C) Effector CD8+ T cell score, defined as the mean of the z-score normalized gene expression values in the signature (Mariathasan et al., 2018) for DUX4+/− tumors. The p-value was estimated via a Mann–Whitney U test. (D) CXCL9 expression for DUX4+/− tumors. The p-value was estimated via a Mann–Whitney U test. (E) As in (D), but illustrating CXCL10 expression. (F) Proportion of immune phenotypes in DUX4+/− cancers. The phenotypes were based on the CD8+ T cell abundance and degree of tumor infiltration determined by anti-CD8 staining of tumor formalin-fixed paraffin-embedded (FFPE) sections in the original study (Mariathasan et al., 2018). The p-value was estimated via a multinomial proportion test. (G) PD-L1 expression on tumor cells stratified by DUX4 expression status measured by immunohistochemistry in the original study. The samples were categorized based on the percentage of PD-L1-positive tumor cells. The p-value was estimated via a multinomial proportion test. (H) As in (G), but PD-L1 staining on tumor-infiltrating immune cells (lymphocytes, macrophages, and dendritic cells) is represented.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) As in Figure 2A, but the Gene Ontology (GO) enrichment network analysis corresponding to DUX4-upregulated genes, compared against the set of coding genes, is shown. (B) IFN-γ signature score (Ayers et al., 2017). The p-value was estimated via a Mann–Whitney U test. (C) CD8 T cell score from Danaher et al., 2017. The p-value was estimated via a Mann–Whitney U test. (D) As in (C), showing the other immune cell signatures available in Danaher et al., 2017. (E) Chemokine signature score (Coppola et al., 2011). The p-value was estimated via a Mann–Whitney U test. (F) DUX4 expression (TPM) in inflamed, immune-excluded, and immune-desert tumors. The phenotypes are based on CD8+ T cell abundance and degree of tumor infiltration determined by anti-CD8 staining of tumor formalin-fixed paraffin-embedded (FFPE) sections in the original study (Mariathasan et al., 2018). The p-values were estimated via the Mann–Whitney U test. (G) DUX4 expression (TPM) in advanced urothelial carcinoma tumors. The percentage of tumor cells with positive PD-L1 staining are indicated on the x-axis. The p-values were estimated via the Mann–Whitney U test. (H) As in (G), but showing the percentage of tumor-infiltrating immune cells (lymphocytes, macrophages, and dendritic cells) with positive PD-L1 staining on the x-axis.
 
 We hypothesized that DUX4 expression in these cancers will generate related transcriptomic signals consistent with CD8+ T cell exclusion from the tumor. We assessed this using an effector CD8+ T cell transcriptomic signature developed from initial studies of the IMvigor210 phase 2 trial (Balar et al., 2017; Rosenberg et al., 2016). DUX4-expressing cancers had lower measures of the gene signature, consistent with decreased CD8+ T cell infiltration into the tumor (Figure 2C). We also investigated the possible effects of DUX4 expression on the exclusion of other immune cell types using gene signatures developed from TCGA (Danaher et al., 2017). In these analyses, we recapitulated the observation of lower CD8+ T cell signature associated with DUX4 positivity (Figure 2—figure supplement 1C). In addition, we observed patterns consistent with widespread immune cell exclusion from the tumor microenvironment (Figure 2—figure supplement 1D).
 
@@ -54,25 +70,49 @@ Defects in chemokine signaling could partially account for the observed DUX4-ass
 
 We directly assessed the correlation of DUX4 expression to immune cell exclusion by examining CD8+ T cell abundance in the tumor microenvironment, measured by immunohistochemistry (IHC) on formalin-fixed paraffin-embedded patient tumor sections. We verified that DUX4 expression in the advanced urothelial carcinoma tumors was associated with an immune exclusion phenotype: a higher proportion of DUX4+ tumors exhibit either an immune-excluded or immune-desert phenotype compared to malignancies where DUX4 is silent (Figure 2F, Figure 2—figure supplement 1F). We similarly examined the correlation of DUX4 expression status with PD-L1 levels in the tumor and immune compartments quantified via IHC. We determined that DUX4 expression was associated with a significant decrease in PD-L1 levels on both tumor and host immune cells, consistent with DUX4-induced suppression of IFN-γ signaling (Figure 2G,H, Figure 2—figure supplement 1G,H). PD-L1 expression on immune cells such as dendritic cells and macrophages modulate anti-tumor immune suppression and response to ICI in in vivo mouse models (Lau et al., 2017; Lin et al., 2018; Noguchi et al., 2017). Importantly, PD-L1 levels on immune cells are correlated with response to ICI in clinical trials (Powles et al., 2014; Rosenberg et al., 2016).
 
-## DUX4 expression is correlated with poor response to ICI in advanced urothelial carcinoma
+### DUX4 expression is correlated with poor response to ICI in advanced urothelial carcinoma
 
 Given the correlation between cancer DUX4 expression and signatures of anti-tumor immune response suppression, we sought to understand if DUX4 expression in patient tumors was associated with accompanying changes to overall survival during PD-L1 inhibition. DUX4 expression was associated with a significant decrease in objective response rates, assessed using the Response Evaluation Criteria in Solid Tumors (RECIST) (Figure 3A). As expected, higher tumor mutational burden (TMB) was linked to improved survival outcomes in this cohort (Figure 3B). Interestingly, we found that DUX4 expression was correlated with statistically lower survival rates in this cohort after crudely adjusting for the effects of TMB by removing the bottom quartile of patients, those with the lowest number of missense mutations in their tumors (Figure 3C, Figure 3—figure supplement 1A). Those results motivated us to more carefully control for the effects of other patient covariates in order to better clarify the effects of DUX4 expression on survival.
 
-## Risk assignments are improved with DUX4 expression
+![Figure 3.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig3-v1.jpg)
+
+**Figure 3.:** (A) The proportion of clinical response classifications (RECIST, Response Evaluation Criteria in Solid Tumors) in DUX4-positive (DUX4+, >1 TPM) or -negative (DUX4−, ≤1 TPM) advanced urothelial carcinoma patients. RECIST categories were assigned in the original study (Mariathasan et al., 2018). The p-value was estimated via a multinomial proportion test. (B) Kaplan–Meier (KM) estimates of overall survival for the patients in (A) stratified by tumor mutational burden (TMB, number of missense mutations). The estimated survival functions (solid lines), censored events (crosses), and 95% confidence intervals (transparent ribbons) for the patients in the top and bottom TMB quartiles are plotted. The p-value was estimated via a log-rank test. (C) As in (B), but patients are stratified by DUX4 expression. To control for possible confounding by TMB, the quartile of patients with the lowest TMB was excluded.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Kaplan–Meier (KM) estimates of overall survival (solid lines), 95% confidence intervals (transparent ribbons), and censored events (crosses) for immune checkpoint inhibition (ICI)-treated advanced urothelial carcinoma patients stratified by DUX4 expression status. The p-value was estimated via a log-rank test.
+
+### Risk assignments are improved with DUX4 expression
 
 We next determined whether DUX4 expression was a significant predictor of survival for ICI-treated patients after controlling for TMB and other potentially relevant variables in a statistically rigorous manner. We used Cox Proportional Hazards (PH) regression to quantify the effects of multiple clinical, demographic, and molecular features on risk of death during ICI. For these and subsequent analyses, we elected to define DUX4-negative samples as those with DUX4 expression levels <0.25 TPM. This scheme excludes 126 patients but presumably produces more reliable categorizations, avoiding potential misclassifications due to loss of sensitivity of bulk RNA-seq at very low expression levels (Mortazavi et al., 2008). In the context of multivariate Cox PH regression, which controls for the confounding effects of all other covariates simultaneously, we observed that TMB was positively associated with survival [hazard ratio (HR) = 0.14], as expected. Conversely, DUX4 expression, Eastern Cooperative Oncology Group Performance Status (ECOG PS) >0, and previous administration of platinum chemotherapy were correlated with increased risk (or shorter survival), while other features that have previously been reported as associated with reduced survival e.g., TGFB1 expression (Mariathasan et al., 2018) did not remain significant after controlling for TMB and other variables. In particular, DUX4 positivity was associated with dramatically worse survival, with a 3.2-fold increase in risk of death at any point in time compared to DUX4-negative status (Figure 4A, Supplementary file 1, Supplementary file 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig4-v1.jpg)
+
+**Figure 4.:** (A) Hazard ratios (HRs) and 95% confidence intervals for the variables included in univariate (left) or multivariate (right) Cox Proportional Hazards (PH) regression. For categorical variables, the reference groups are indicated by points at HR = 1. Statistically significant predictors that are associated with increased (orange) or decreased (blue) risk in both the univariate and multivariate contexts are highlighted. ECOG (Eastern Cooperative Oncology Group); BCG (Bacillus Calmette–Guerin). (B) Bayesian information criterion (BIC) measurements for goodness of fit for the full (tumor mutational burden [TMB], Clinical, DUX4 expression) vs. reduced Cox PH models, where lower values indicate better fit. The bootstrapped BIC mean and the 95% confidence interval are illustrated. Clinical (ECOG Performance Status and Platinum treatment history). (C) Kaplan–Meier (KM) estimates of overall survival, 95% confidence interval (transparent ribbon), and censored events (crosses) for low-risk (solid gray line) and high-risk (solid orange line) patients in the training (left) and test (right) sets. Risk group assignments were based on risk scores estimated by the full Cox PH model. p-values were estimated via a log-rank test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Akaike information criterion (AIC) measurements for goodness of fit for the full (tumor mutational burden [TMB], Clinical, DUX4 expression) vs. reduced Cox PH models, where lower values indicate better fit. The bootstrapped AIC mean and the 95% confidence interval are illustrated. Clinical (ECOG Performance Status and Platinum treatment history). (B) Harrell’s concordance indices (C-index) for the full (TMB, Clinical, DUX4 expression) vs. reduced Cox PH models, where high values indicate better model performance. The bootstrapped C-index mean and the 95% confidence interval are illustrated. (C) Kaplan–Meier (KM) estimates of overall survival, 95% confidence interval (transparent ribbon), and censored events (crosses) for low-risk (solid gray line) and high-risk (solid orange line) patients in the training (left) and test (right) sets. Risk group assignments were based on risk scores estimated by the Cox PH model with only TMB as a predictor. p-values were estimated via a log-rank test. (D) As in (C), but the risk group assignments were based on risk scores estimated by the Cox PH model with TMB, ECOG Performance Status, and Platinum treatment history as predictors. (E) Time-dependent Brier scores for the full and reduced Cox PH models applied on the training (left) and test (right) sets. The Continuous Ranked Probability Scores (CRPS), defined as the integrated Brier score divided by time, are shown in parentheses. Reference refers to the Kaplan–Meier prediction model. A Brier score = 0.25 indicates random guessing (gray dashed line).
 
 We next investigated if DUX4 expression status carried added value as a predictor over routinely collected clinical and molecular information. We focused on the variables with significant HRs under both the univariate and multivariate regression settings: DUX4 expression status, TMB, ECOG PS, and history of platinum chemotherapy. We employed goodness-of-fit measurements, which compare the observed data to expectations from Cox PH models created using various combinations of the covariates. In these analyses, we observed a quantifiable improvement in data-model congruence with the addition of DUX4 expression status (Figure 4B, Figure 4—figure supplement 1A,B). Additionally, we measured statistically significant differences in the likelihoods of the reduced models (without DUX4 expression as a predictor) when compared to the full model (employs all covariates) (Supplementary file 3). Taken together, these analyses indicate that DUX4 expression status is an informative predictor of risk under ICI treatment.
 
 We evaluated the utility of DUX4 expression status for pretreatment risk assignment in predicting patient response to ICI. We trained full and reduced Cox PH models on randomly sampled patients (training set, 70% of the cohort) and quantified their respective risk scores. A reference risk score per model was computed as the median score across the training set and was used to ascribe patients into low- vs. high-risk groups. Using these models, we quantified risk scores on the individuals excluded from model construction (test set, 30% of the patients), and similarly assigned patients into low- or high-risk groups based on the training set reference score. By empirically quantifying survival of the two risk groups using KM (Kaplan–Meier) estimation, we found that the full model stratifies patients in an informative manner, appropriately discriminating patients with longer vs. shorter survival times (Figure 4C, Figure 4—figure supplement 1C,D). Furthermore, the addition of DUX4 expression status improves model performance as illustrated by the time-dependent Brier score, a measure of survival prediction accuracy at specific timepoints (Figure 4—figure supplement 1E).
 
-## DUX4 expression impedes response to ICI after controlling for other clinical characteristics
+### DUX4 expression impedes response to ICI after controlling for other clinical characteristics
 
 We used a Random Survival Forest (RSF) model to quantify the effect of DUX4 expression on survival in ICI-treated advanced urothelial carcinoma patients (Ishwaran et al., 2008). The RSF is a machine learning ensemble, an extension of the Random Forest algorithm for right-censored data (Breiman, 2001). It can provide accurate estimates of risk and survival probability at definite times by aggregating predictions from a multitude of base learners (survival trees) (Ishwaran et al., 2008). RSFs have been successfully used to study time-to-event problems in medicine, including measurement of variable importance (Dietrich et al., 2016; Hsich et al., 2019; Ishwaran et al., 2009; O’Brien et al., 2021; Semeraro et al., 2011). We utilized the RSF model to address potential limitations of our Cox PH analyses. First, the RSF model is fully non-parametric and as such does not operate under the Cox PH assumptions: a constant relative hazard between strata over time (PH), a linear relationship between the predictors and the log hazard, and the unspecified baseline hazard function. Second, the RSF model can compute estimates of absolute risk and survival probability over time independent of a reference, unlike relative risk models such as Cox PH (Ishwaran et al., 2008).
 
 We used all available molecular, clinical, and demographic covariates to grow an RSF. We randomly selected 70% of the patients to grow the forest, with the resulting model having an out-of-bag (OOB) error of 38.4%. The OOB error stabilizes with increasing number of trees and converges to the leave-one-out cross-validation error estimate. Thus, OOB error is characterized as an unbiased estimate of the model’s true prediction error (Breiman, 2001; Hastie et al., 2009). In some instances, the OOB error provides overestimates and some reports have recommended treating it as an upper bound (Bylander, 2002; Janitza and Hornung, 2018; Mitchell, 2011). Thus, we measured the RSF model’s test error using a holdout set (the remaining 30% of the cohort) excluded from training. The RSF model recorded a test error of 32.6% illustrating an appropriate fit (Figure 5—figure supplement 1A). Our error measurements are comparable to Ishwaran et al., 2008, suggesting our model can be used for inference purposes. Furthermore, the time-dependent Brier score of the RSF model on the training and test sets confirms informative survival prediction (Figure 5—figure supplement 1B).
 
 The RSF model predicted worse survival outcomes in patients with DUX4-expressing cancers compared to their DUX4-silent counterparts. These predictions were mirrored in the test dataset, illustrating robustness of the model (Figure 5A). Using time-dependent receiver operating characteristic (ROC) curve analyses, we identified the time range for which the RSF predictive performance is statistically divergent from random guessing: approximately 6–20 months (Figure 5—figure supplement 1C). In this window, we observed significant survival differences between patients with DUX4+ and DUX4− tumors. We highlighted the model’s performance at predicting 1- and 1.5-year survival, typical timepoints of clinical interest. For these times, the RSF appropriately discriminates patient death and survival (Figure 5—figure supplement 1D). Examining the absolute effects of DUX4 expression on survival, the RSF model predicted an approximately 20% decrease in both 1- and 1.5-year survival probabilities in patients with DUX4-expressing cancers (Figure 5B). Importantly, RSF survival predictions conform closely with the empirical survival estimates obtained via the Kaplan–Meier model (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig5-v1.jpg)
+
+**Figure 5.:** (A) Random Survival Forest (RSF) predicted overall survival for patients with either DUX4-positive or -negative tumors in the training and test sets. Out-of-bag (OOB) survival predictions are shown for the patients in the training set. Survival predictions for individual patients (thin lines) and the median survival function across the cohort (thick line) are represented. DUX4− (<0.25 TPM); DUX4+ (>1 TPM). (B) Training (OOB) and test set survival probability predictions for patients with DUX4+/− tumors at 12 and 18 months. The p-values were estimated using a two-sided Mann–Whitney U test. (C) Survival probability for patients in the training and test sets. Survival functions corresponding to the median RSF prediction (solid orange line) and the Kaplan–Meier estimate (dashed gray) are displayed. (D) Feature importance for variables used in the RSF model. The average absolute estimated Shapley values (solid lines) are shown, associated with predicting survival probability at particular times. The 95% confidence interval of the mean (transparent ribbon) is plotted.(E) Surface plot showing adjusted (marginal) survival probability, measured via partial dependence, as a function of tumor mutational burden (TMB, number of missense mutations) and time. Each point on the surface corresponds to the mean survival prediction (at the respective timepoint) after TMB is fixed to the respective value for all patients. (F) Partial plot showing adjusted survival probability as a function of DUX4 expression status. The median survival probability (solid lines) and the 95% confidence interval (transparent ribbon) after DUX4 expression status is fixed to the indicated value for all patients are plotted.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89017/elife-89017-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Error (1 − Harrell’s concordance index) as a function of the number of trees in the RSF model. The training out-of-bag error (OOB error, solid gray line) and the test error (solid orange line) are shown. 1500 trees were used in the final model. (B) Time-dependent Brier scores for the RSF model estimated from the training (solid turquoise line) or test (solid teal line) sets. OOB survival predictions were used to calculate the Brier score for the training set. The Continuous Ranked Probability Scores (CRPS), defined as the integrated Brier score divided by time, for both sets are shown. A Brier score = 0.25 indicates random guessing (gray dashed line). (C) Time-dependent receiver operating characteristic (ROC) analyses. The cumulative/dynamic area under the ROC curve (AUCC/D) (solid orange line) and the 95% confidence interval (transparent orange ribbon) are shown over the observation time for the training and test sets. The OOB mortality predictions were used to calculate the training set AUCC/D. (D) The ROC curves for the RSF model at 12 (solid turquoise line) and 18 (solid teal line) months. The AUCC/D and 95% confidence interval are specified. The OOB mortality predictions were used to calculate the training set AUCC/D. (E) RSF feature importance. The mean absolute Shapley values and the 95% confidence intervals are shown (left). The standardized permutation importance and confidence regions estimated via delete-d jackknife subsampling are plotted (middle); noise variables are indicated by permutation importance measures ≤0. The minimal depth measures are shown (right); variables with values exceeding the depth threshold (gray dashed line) are designated as noise variables. (F) Shapley dependence plot illustrating the relationship between tumor mutational burden (TMB, number of missense mutations) and mortality. Each point corresponds to a single patient. (G) As in (F), but showing DUX4 expression status. (H) Partial plot illustrating the marginal effect of TMB on mortality. Each point corresponds to the average RSF mortality predictions when TMB is fixed to the indicated value for all patients. The transparent ribbon corresponds to the 95% confidence interval. (I) Partial plot illustrating the marginal effect of DUX4 expression status. The points correspond to the RSF prediction for mortality for each patient when DUX4 expression status is fixed to the indicated value for the entire cohort.
 
 We sought to determine the importance of DUX4 expression status relative to the other covariates in the RSF model. We measured feature importance using estimated Shapley values, which quantify the marginal contribution of each variable to the RSF prediction (Lundberg and Lee, 2017; Maksymiuk et al., 2020; Shapley, 1953; Štrumbelj and Kononenko, 2014). Specifically, Shapley values measure variable contributions to predictions at the level of each patient. Contributions to the overall performance of the RSF model can be assessed by examining the aggregated summary: the average of the absolute Shapley values for a predictor across the patient cohort. We estimated Shapley values associated with predicting ensemble mortality, the RSF risk estimate. In these analyses, ECOG PS had the largest contribution, followed by TMB and DUX4 expression (Figure 5—figure supplement 1E). We validated these feature rankings using two independent metrics. The first metric was permutation importance, which quantifies the change in prediction error associated with permutation of a variable’s data; important covariates will record large deviations from the original predictions (Breiman, 2001; Ishwaran, 2007). The second measure employed was minimal depth, a measure of the variable-node-to-root-node distance within the survival trees of the RSF; important variables tend to have smaller minimal depth values as they are typically used for earlier decision splits (Ishwaran et al., 2010; Ishwaran et al., 2011). Feature contributions measured using permutation importance and minimal depth were consistent with the Shapley-based assignments, notably identifying DUX4 expression as an important contributor to patient survival outcomes (Figure 5—figure supplement 1E). We investigated time-dependent changes in variable importance by estimating Shapley values associated with predicting survival probability at distinct timepoints along the observation window. Interestingly, we observed the strong dependence on ECOG PS for predicting survival at early timepoints under this paradigm. The importance of DUX4 expression for survival prediction is most prominent at later times (Figure 5D). Altogether, we found that diverse variable importance measures converge on identifying DUX4 as a major contributor to patient survival prediction.
 
@@ -92,21 +132,436 @@ Our data motivate the investigation into DUX4’s potential to prognosticate res
 
 ## Materials and methods
 
-## Datasets analyzed in this study
+**Key resources table**
 
-## Genome annotations, gene expression, and GO enrichment analyses
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSC knownGene</td>
+      <td>Meyer et al., 2013; PMID:23155063</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ensembl 71</td>
+      <td>Flicek et al., 2013; PMID:23203987</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MISO v2.0</td>
+      <td>Katz et al., 2010; PMID:21057496</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM v1.2.4</td>
+      <td>Li and Dewey, 2011; PMID:21816040</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie v1.0.0</td>
+      <td>Langmead et al., 2009; PMID:19261174</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TopHat v.2.0.8b</td>
+      <td>Trapnell et al., 2009; PMID:19289445</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmed mean of M values (TMM) method</td>
+      <td>Robinson and Oshlack, 2010; PMID:20196867</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clusterProfiler</td>
+      <td>Wu et al., 2021; Yu et al., 2012; PMID:34557778, 22455463</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>samtools</td>
+      <td>Li et al., 2009; PMID:19505943</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto v.0.46.1</td>
+      <td>Bray et al., 2016; PMID:27043002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>Thorvaldsdóttir et al., 2013; PMID:22517427</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>survival</td>
+      <td>Therneau and Grambsch, 2000; Therneau, 2022; https://github.com/therneau/survival</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>stats</td>
+      <td>R Development Core Team, 2022; https://www.r-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>caret</td>
+      <td>Kuhn, 2022; https://github.com/topepo/caret/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>Wickham, 2016; https://github.com/tidyverse/ggplot2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dplyr</td>
+      <td>Wickham et al., 2022; https://github.com/tidyverse/dplyr</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>survminer</td>
+      <td>Kassambara et al., 2021; https://rpkgs.datanovia.com/survminer/index.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>randomForestSRC</td>
+      <td>Ishwaran et al., 2008; https://www.randomforestsrc.org/articles/survival.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastshap</td>
+      <td>Greenwell, 2021; https://github.com/bgreenwell/fastshap</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pammtools</td>
+      <td>Bender and Scheipl, 2018; https://adibender.github.io/pammtools/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>plotly</td>
+      <td>Sievert, 2020; https://plotly.com/r/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>timeROC</td>
+      <td>Blanche et al., 2013; https://CRAN.R-project.org/package=timeROC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pec</td>
+      <td>Mogensen et al., 2012; https://CRAN.R-project.org/package=pec</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Datasets analyzed in this study
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset name</th>
+      <th>Accession number(s)</th>
+      <th>PMID(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2013/TCGA.ACC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.BLCA</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.BRCA</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.CESC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.CHOL</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.COAD</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.DLBC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.ESCA</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.GBM</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.HNSC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.KICH</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.KIRC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.KIRP</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.LAML</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.LGG</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.LIHC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.LUAD</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.LUSC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.MESO</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.OV</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.PAAD</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.PCPG</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.PRAD</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.READ</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.SARC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.SKCM</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.STAD</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.TGCT</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.THCA</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.THYM</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.UCEC</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.UCS</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013/TCGA.UVM</td>
+      <td>NCI Genomic Data Commons</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2014/su2c.prostate_cancer</td>
+      <td>phs000915.v1.p1 (dbGaP)</td>
+      <td>26000489</td>
+    </tr>
+    <tr>
+      <td>2016/chen-chen.acute_lymphoblastic_leukemia</td>
+      <td>Chinese Genotype-phenotype Archive</td>
+      <td>27428428</td>
+    </tr>
+    <tr>
+      <td>2016/fioretos.acute_lymphoblastic_leukemia</td>
+      <td>EGAD00001002112 (EGA)</td>
+      <td>27265895</td>
+    </tr>
+    <tr>
+      <td>2016/mano.acute_lymphoblastic_leukemia</td>
+      <td>JGAS00000000047 (JGA)</td>
+      <td>27019113</td>
+    </tr>
+    <tr>
+      <td>2015/garraway-schadendorf.melanoma_checkpoint_blockade</td>
+      <td>phs000452.v2.p1 (dbGaP)</td>
+      <td>26359337</td>
+    </tr>
+    <tr>
+      <td>2016/hammerbacher.melanoma_checkpoint_blockade</td>
+      <td></td>
+      <td>27956380</td>
+    </tr>
+    <tr>
+      <td>2016/lo.melanoma_checkpoint_blockade</td>
+      <td>GSE78220 (GEO)</td>
+      <td>26997480</td>
+    </tr>
+    <tr>
+      <td>2017/chinnaiyan.metastatic_cancer</td>
+      <td>phs000673.v3.p1 (dbGaP)</td>
+      <td>28783718</td>
+    </tr>
+    <tr>
+      <td>2017/yang-yeoh.acute_lymphoblastic_leukemia</td>
+      <td>EGAD00001002151 (EGA)</td>
+      <td>27903646</td>
+    </tr>
+    <tr>
+      <td>2018/perou.metastatic_breast_cancer</td>
+      <td>phs000676.v2.p2 (dbGaP)</td>
+      <td>29480819</td>
+    </tr>
+    <tr>
+      <td>2018/powles.urothelial_cancer_checkpoint_blockade</td>
+      <td>EGAD00001003977 (EGA)</td>
+      <td>29443960</td>
+    </tr>
+    <tr>
+      <td>2018/van_allen-choueiri.clear_cell_checkpoint_blockade</td>
+      <td>phs001493.v1.p1 (dbGaP)</td>
+      <td>29301960</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genome annotations, gene expression, and GO enrichment analyses
 
 A genome annotation was created through merging of the UCSC knownGene (Meyer et al., 2013), Ensembl 71 (Flicek et al., 2013), and MISO v2.0 (Katz et al., 2010) annotations for the hg19/GRCh37 assembly. Furthermore, this annotation was expanded by generating all possible combinations of annotated 5′ and 3′ splice sites within each gene. RNA-seq reads were mapped to the transcriptome using RSEM v1.2.4 (Li and Dewey, 2011) calling Bowtie v1.0.0 (Langmead et al., 2009), with the option ‘-v 2’. TopHat v.2.0.8b (Trapnell et al., 2009) was used to map the unaligned reads to the genome and to the database of splice junctions obtained from the annotation merging described previously. Gene expression estimates (TPM, transcripts per million) obtained were normalized using the trimmed mean of M values (TMM) method (Robinson and Oshlack, 2010). Endogenous expression of DUX4 during early embryogenesis range from approximately 2 to 10 TPM (Chew et al., 2019; Hendrickson et al., 2017). We have therefore defined DUX4-positive samples as those with expression levels >1 TPM. In the differential gene expression analyses for the DUX4-positive vs. -negative comparison, gene expression values per sample group were compared using a two-sided Mann–Whitney U test. Differentially expressed genes illustrated in Figure 2B were identified as those with an absolute log2(fold-change) ≥ log2(1.25) and a p-value <0.05. GO enrichment analyses, using the clusterProfiler package (Wu et al., 2021; Yu et al., 2012), were performed on DUX4-upregulated or -downregulated genes [absolute log2(fold-change) ≥ log2(1.5) and a p-value <0.05] compared against the set of coding genes. Significant GO terms were defined as ‘Biological Process’ terms with a Benjamini–Hochberg FDR-adjusted p-value <0.05. The top 25 significant GO terms were illustrated (Figure 2A and Figure 2—figure supplement 1A). To investigate DUX4 RNA-seq coverage patterns, a fasta file containing the DUX4 cDNA sequence was assembled, indexed using samtools (Li et al., 2009), and used as a reference for read pseudoalignment by kallisto v.0.46.1 (Bray et al., 2016). The following kallisto parameters were used: kmer size of 31, estimated fragment length of 200, and estimated fragment length standard deviation of 80. Usage of the single-end option (‘--single’) and bias correction (‘--bias’) were also specified. DUX4 read coverage was visualized using the Integrative Genomics Viewer (IGV, Thorvaldsdóttir et al., 2013).
 
-## Gene signature analyses
+### Gene signature analyses
 
 For a given gene set, z-score normalization of the expression values per gene was performed across the patient cohort. The signature score was defined as the mean of the normalized values across the genes of the set.
 
-## Survival analyses, goodness-of-fit measures, and risk modeling
+### Survival analyses, goodness-of-fit measures, and risk modeling
 
 KM estimation, p-value estimates from the log-rank test, and Cox PH regression in the univariate and multivariate contexts were performed using the survival package (Therneau, 2022; Therneau and Grambsch, 2000). Goodness-of-fit evaluations of the Cox PH models were done by measuring the Akaike information criterion (AIC) and Bayesian information criterion (BIC). AIC and BIC metrics balance model complexity with maximized likelihood, penalizing feature number increases without a concomitant improvement in performance. The likelihood ratio test was also used to compare goodness of fit of full (all variables) vs. reduced (subset of variables) Cox PH models. Specifically, the null hypothesis that the simple model provides as good as a fit as the more complex model was evaluated. The AIC, BIC, and likelihood ratio test p-values were computed using R’s stats package (R Development Core Team, 2022). For the Cox PH risk modeling, the patients were randomly assigned into training (70%) and test (30%) datasets. The createDataPartition() function from the caret package (Kuhn, 2022) was used to preserve the DUX4 status class distribution after splitting. Full and reduced Cox PH models were created using the training data and the risk scores for each respective model were calculated using caret’s predict.coxph() function. For a given patient, the calculated risk score is equal to the HR relative to a ‘reference patient’ (an individual whose covariate values are set to the respective means, from the training set). Specifically, the risk score is the quotient of the patient’s and the reference’s exponentiated linear predictors (the sum of the covariates in the model, weighted by the model’s regression coefficients). A ‘reference risk score’ for each model was defined as the median risk score in the training data. Patients were assigned into low- or high-risk groups if their risk scores were lower or higher than the reference, respectively. The trained models were used to calculate risk scores and assign risk labels (based on the training set risk score reference) in the test set. The survival difference between low- and high-risk patients was empirically assessed via KM estimation and the log-rank test. Visualizations were created using the ggplot2 (Wickham, 2016), dplyr (Wickham et al., 2022), and survminer (Kassambara et al., 2021) packages.
 
-## Random Survival Forest, feature importance, and partial dependence
+### Random Survival Forest, feature importance, and partial dependence
 
 We implemented an RSF model, an ensemble of multiple base learners (survival trees), using the randomForestSRC package (Ishwaran et al., 2008). The RSF algorithm is an extension of the Random Forest Algorithm (Breiman, 2001) for usage with right-censored data. Here, B bootstrap datasets are created from the original data, used to grow B concomitant survival trees (usually constrained by membership size in the terminal nodes) constructed using a randomly selected subset of the variables. Terminal node statistics are obtained for each tree: the survival function (via the KM estimator), the cumulative hazard function (CHF, via the Nelson–Aalen estimator), and mortality (expected number of deaths; sum of the CHF over time). The RSF prediction is the average across the forest. Of note, each bootstrap dataset excludes 36.8% of the original data on average, the OOB samples. Thus, predictions for a particular sample can be made using the subset of the trees for which it was excluded from training (OOB predictions). Similarly, the associated OOB error for the RSF model can calculated, representing an unbiased estimate of the test error. We randomly assigned patients into training (70%) and test (30%) datasets. Since the DUX4-positive status was a minority class, we utilized the createDataPartition() function from the caret package (Kuhn, 2022) to preserve the class distribution within the splits. To determine optimal hyperparameters, we evaluated 5616 RSF models representing different combinations of ntree (number of trees), nodesize (minimum terminal node size), mtry (number of randomly selected splitting variables), na.action (handling of missing data), splitrule (splitting rule), and samptype (type of bootstrap). We selected the model with hyperparameters which minimized both the OOB training and the test errors (defined as 1 − concordance index), namely: ntree = 1500, nodesize = 15, mtry = 3, na.action = "na.impute", splitrule = "bs.gradient", and samptype = "swr". We specified the use of an nsplit (number of random splits) value of 0 to indicate evaluation of all possible split points and usage of the optimum. For test set predictions, patients with missing data were omitted (na.action = "na.omit").
 
@@ -114,6 +569,6 @@ Feature importance in the final RSF model was evaluated using three metrics. Fir
 
 The relationships of DUX4 expression and TMB to mortality or survival probability (marginal contributions) were assessed via Shapley dependence plots and partial dependence plots. Partial dependence values were obtained using randomForestSRC’s partial() function and OOB predictions for mortality and survival probability were used as input. Visualizations were created in the R programming environment using the dplyr (Wickham et al., 2022), ggplot2 (Wickham, 2016), pammtools (Bender and Scheipl, 2018), and plotly (Sievert, 2020) packages.
 
-## Measuring survival model predictive accuracy
+### Measuring survival model predictive accuracy
 
 The time-dependent ROC curve analyses were done to evaluate the RSF model’s accuracy in differentiating patients who die before a particular time t, from those who survive past t (Heagerty and Zheng, 2005). Specifically, for each timepoint, the cumulative/dynamic area under the ROC curve (AUCC/D) was calculated by computing the sensitivity (true positive rate) and specificity (1 − false positive rate) associated with using RSF-predicted mortality as the prognostic marker. The time-dependent AUCC/D and 95% confidence interval per timepoint were estimated using the timeROC package, which adds the inverse-probability-of-censoring weights (IPCW) to the sensitivity calculation to correct for selection bias due to right-censoring (Blanche et al., 2013). The OOB (training) or the test mortality predictions were used as input. The time-dependent Brier score and the Continuous Ranked Probability Score (CRPS, integrated Brier score divided by time) for the Cox PH models were computed using the pec package (Mogensen et al., 2012). The time-dependent Brier score and the CRPS for the RSF model was calculated using the randomForestSRC package (Ishwaran et al., 2008). The KM estimator for the censoring times was used to estimate the IPCW (cens.model = "marginal"). Harrell’s concordance index for the Cox PH and RSF models was calculated using the survival (Therneau, 2022; Therneau and Grambsch, 2000) and randomForestSRC packages, respectively. Visualizations were created in the R programming environment using the dplyr and ggplot2 (Wickham, 2016) packages.

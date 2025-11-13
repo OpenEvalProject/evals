@@ -42,13 +42,13 @@ Here, we generated conditional knockouts of Atg7, a protein required for autopha
 
 ## Results
 
-## Generation of conditional knockout mice lacking autophagy in dSPNs or iSPNs
+### Generation of conditional knockout mice lacking autophagy in dSPNs or iSPNs
 
 To address the role of autophagy in SPN physiology and striatal function, we generated separate lines of mice lacking Atg7 in dSPNs or iSPNs using Cre driver lines (CreDrd1aey262 for dSPNs and CreAdora2aKG139 for iSPNs) (Figure 1A–B) (Gong et al., 2007; Komatsu et al., 2006; Komatsu et al., 2005). Mice lacking Atg7 in dSPNS or iSPNs (referred to as dSPNAtg7cKO and iSPNAtg7cKO, respectively) were born at Mendelian ratios and survived into adulthood (data not shown). Littermate control mice harbored the floxed Atg7 allele without the Cre driver. We conducted a subset of electrophysiological and biochemical experiments in Cre+ Atg7wt mice but found no effect of Cre expression compared to Cre- Atg7Fl/Fl controls and have thus combined these data.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig1-v2.jpg)
 
-**Figure 1.:** Atg7cKO mice and iSPNAtg7cKO, respectively.(A) Schematic representation of the role of Atg3, 5, 7, 8, 10, and Atg12 in a cascade leading to autophagosome formation. (B) Schematic of Atg7 locus in Atg7Fl/Fl mice and following Cre-mediated recombination. (Adapted from Komatsu et al., 2006). (C) Immunofluorescent images of striatal sections from Atg7Fl/Fl (Control), D1-cre Atg7Fl/Fl (dSPNAtg7cKO) or A2Acre-Atg7Fl/Fl (iSPNAtg7cKO) mice. (D) p62+ cells per field in control, dSPNAtg7cKO or iSPNAtg7cKO mice. Control: N=6 mice, dSPNAtg7cKO: N = 6 mice, iSPNAtg7cKO: N=4 mice. Data analyzed by one-way ANOVA, F(2,13)=65.73, p = 0.001. (E-F) Number of (E) D1-tomato+ or (F) D1-Tomato-, p62+ cells in dSPNAtg7cKO and iSPNAtg7cKO mice. N = 6 dSPNAtg7cKO mice and N=4 iSPNAtg7cKO mice. Data in (E-F) were analyzed by two-tailed unpaired t test. (E) t8=8.816, p = 0.0001. (F) t8=24.94, p = 0.0001. (G-H) There were no differences in NeuN+ [Control: N = 3 mice, dSPNAtg7cKO: N = 3 mice, iSPNAtg7cKO: N = 3 mice; analyzed by one-way ANOVA F(2,6) = 1.019, p = 0.4160] or D1-tomato+ cells per field [Control: N=6 mice, dSPNAtg7cKO: N = 6 mice, iSPNAtg7cKO: N=4 mice; analyzed by one-way ANOVA F(2,13) = 0.3144, p = 0.7356]. ns p>0.05, * p<0.05, ** p<0.01, *** p<0.001, † p<0.0001.
+**Figure 1.:** (A) Schematic representation of the role of Atg3, 5, 7, 8, 10, and Atg12 in a cascade leading to autophagosome formation. (B) Schematic of Atg7 locus in Atg7Fl/Fl mice and following Cre-mediated recombination. (Adapted from Komatsu et al., 2006). (C) Immunofluorescent images of striatal sections from Atg7Fl/Fl (Control), D1-cre Atg7Fl/Fl (dSPNAtg7cKO) or A2Acre-Atg7Fl/Fl (iSPNAtg7cKO) mice. (D) p62+ cells per field in control, dSPNAtg7cKO or iSPNAtg7cKO mice. Control: N=6 mice, dSPNAtg7cKO: N = 6 mice, iSPNAtg7cKO: N=4 mice. Data analyzed by one-way ANOVA, F(2,13)=65.73, p = 0.001. (E-F) Number of (E) D1-tomato+ or (F) D1-Tomato-, p62+ cells in dSPNAtg7cKO and iSPNAtg7cKO mice. N = 6 dSPNAtg7cKO mice and N=4 iSPNAtg7cKO mice. Data in (E-F) were analyzed by two-tailed unpaired t test. (E) t8=8.816, p = 0.0001. (F) t8=24.94, p = 0.0001. (G-H) There were no differences in NeuN+ [Control: N = 3 mice, dSPNAtg7cKO: N = 3 mice, iSPNAtg7cKO: N = 3 mice; analyzed by one-way ANOVA F(2,6) = 1.019, p = 0.4160] or D1-tomato+ cells per field [Control: N=6 mice, dSPNAtg7cKO: N = 6 mice, iSPNAtg7cKO: N=4 mice; analyzed by one-way ANOVA F(2,13) = 0.3144, p = 0.7356]. ns p>0.05, * p<0.05, ** p<0.01, *** p<0.001, † p<0.0001.
 
 To identify SPN subtype, we utilized BAC transgenic mice expressing the tdTomato fluorescent protein under the dopamine D1 receptor promoter (D1-tomato), which specifically labels dSPNs (Ade et al., 2011) and crossed this line into control, iSPNAtg7cKO and dSPNAtg7cKO mice. A Cre-dependent reporter at the Rosa26 locus could have been used to mark recombined cells but the Atg7 locus is close to the Rosa26 locus on chromosome six and we were therefore unable to generate recombinants (data not shown).
 
@@ -56,7 +56,7 @@ As SPNs represent >95% of neurons in the striatum, D1-tomato negative cells are
 
 Loss of neuronal autophagy can lead to neurodegeneration (Hara et al., 2006; Komatsu et al., 2006). We found no difference in the number of NeuN+ or D1-Tomato+ cells at 5 months of age in dSPNAtg7cKO or iSPNAtg7cKO mice compared to controls (Figure 1G–H). Together, these results demonstrate that these conditional knockouts permit the analysis of the consequences of the specific loss of dSPN or iSPN autophagy in the absence of neurodegeneration.
 
-## Loss of autophagy in SPNs leads to behavioral deficits
+### Loss of autophagy in SPNs leads to behavioral deficits
 
 We generated multiple cohorts of male and female dSPNAtg7cKO and iSPNAtg7cKO mice along with respective littermate controls. We combined data from the littermate control groups of each cross as there was no difference between littermate controls from these two crosses in any behavioral task. We included approximately equal numbers of male and female mice from each genotype in these cohorts and did not find an interaction between sex and genotype. Table 1 includes behavioral results split by sex.
 
@@ -66,11 +66,229 @@ We identified several behavioral and phenotypic consequences of loss of autophag
 
 **Figure 2.:** (A) Nine-week-old male and female dSPNAtg7cKO mice, but not iSPNAtg7cKO mice, weigh less than controls. Data were analyzed by two-way ANOVA followed by Bonferroni post-hoc test. Sex x Genotype: F(2,111) = 0.1073, p = 0.8983; Genotype: F(2,111) = 17.58, p<0.0001; Sex: F(1,111) = 87.65, p<0.0001. (B) Both dSPNAtg7cKO and iSPNAtg7cKO mice have a lower latency to fall off the accelerating rotarod. Control n = 50, dSPNAtg7cKOn = 34, iSPNAtg7cKOn = 23. Data were analyzed by two-way ANOVA followed by Bonferroni post-hoc test. Trial x Genotype: F(4,208) = 6.198, p<0.0001; Trial: F(2,208) = 26.34, p<0.0001; Genotype: F(2,104) = 20.73, p<0.0001. (C) iSPNAtg7cKO mice, but not dSPNAtg7cKO, demonstrate locomotor hyperactivity in the open field arena. One-way ANOVA followed by Bonferroni post-hoc test. (D) Time course of locomotor activity in the open field. Control n = 32, dSPNAtg7cKOn = 15, iSPNAtg7cKOn = 14. Data were analyzed by two-way ANOVA followed by Bonferroni post-hoc test. Time x Genotype: F(8,240) = 2.547, p = 0.0111; Time: F(4,240) = 21.99, p<0.0001; Genotype: F(2,60) = 6.270, p = 0.0034. (E) Automated scoring of stereotypies in the open field. Control: n = 15; iSPNAtg7cKO: n = 16. Data analyzed by two-tailed, unpaired t test. t29 = 2.994, p = 0.0056. (F) Manual scoring of grooming bouts over thirty minutes following habituation during a separate session. Control: n = 23; iSPNAtg7cKO: n = 26. Data analyzed by two tailed, unpaired t test. t47 = 3.623, p = 0.0007. See Table 1 for detailed statistics split by sex. ns p>0.05, *p<0.05, **p<0.01, ***p<0.001, † p<0.0001.
 
+**Table 1.**
+ Statistics split by sex for behavioral experiments in Figure 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sex</th>
+      <th>Genotype (N)</th>
+      <th>Mean (SEM)</th>
+      <th>Statistics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Rotarod – learning rate (rpm/trial; trial 3- trial 1)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Male</td>
+      <td>Control (28)</td>
+      <td>57.29 (10.17)</td>
+      <td rowspan="3">p = 0.0088</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO (20)</td>
+      <td>15.85 (8.333)</td>
+    </tr>
+    <tr>
+      <td>iSPNAtg7cKO (11)</td>
+      <td>22.45 (13.17)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Female</td>
+      <td>Control (22)</td>
+      <td>57.18 (12.89)</td>
+      <td rowspan="3">p = 0.0029</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO (14)</td>
+      <td>38.43 (12.69)</td>
+    </tr>
+    <tr>
+      <td>iSPNAtg7cKO (12)</td>
+      <td>−11.92 (12.33)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Combined</td>
+      <td>Control (50)</td>
+      <td>57.24 (7.954)</td>
+      <td rowspan="3">p = 0.0001</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO (34)</td>
+      <td>25.15 (7.306)</td>
+    </tr>
+    <tr>
+      <td>iSPNAtg7cKO (23)</td>
+      <td>4.522 (9.526)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sex x Genotype F(2,101) = 2.218 p = 0.1141</td>
+    </tr>
+    <tr>
+      <td colspan="4">Weight (g)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Male</td>
+      <td>Control (31)</td>
+      <td>26.07 (0.4074)</td>
+      <td rowspan="3">p = 0.0003</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO (19)</td>
+      <td>22.66 (0.8216)</td>
+    </tr>
+    <tr>
+      <td>iSPNAtg7cKO (12)</td>
+      <td>24.67 (0.6438)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Female</td>
+      <td>Control (31)</td>
+      <td>21.15 (0.4341)</td>
+      <td rowspan="3">p = 0.0003</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO (11)</td>
+      <td>17.85 (0.5850)</td>
+    </tr>
+    <tr>
+      <td>iSPNAtg7cKO (13)</td>
+      <td>20.29 (0.4439)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sex x Genotype F(2,111) = 0.1073 p = 0.8983</td>
+    </tr>
+    <tr>
+      <td colspan="4">Open Field – Distance traveled (cm)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Male</td>
+      <td>Control (17)</td>
+      <td>6777 (397.9)</td>
+      <td rowspan="3">p = 0.0159</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO (7)</td>
+      <td>8073 (883.5)</td>
+    </tr>
+    <tr>
+      <td>iSPNAtg7cKO (6)</td>
+      <td>9318 (573.1)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Female</td>
+      <td>Control (15)</td>
+      <td>9307 (369.4)</td>
+      <td rowspan="3">p = 0.0257</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO (7)</td>
+      <td>7967 (773.3)</td>
+    </tr>
+    <tr>
+      <td>iSPNAtg7cKO (8)</td>
+      <td>10433 (584.5)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Combined</td>
+      <td>Control (32)</td>
+      <td>7963 (351.7)</td>
+      <td rowspan="3">p = 0.0048</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO (15)</td>
+      <td>7762 (585.4)</td>
+    </tr>
+    <tr>
+      <td>iSPNAtg7cKO (15)</td>
+      <td>9955 (427.4)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sex x Genotype F(2,54) = 3.045 p = 0.0558</td>
+    </tr>
+    <tr>
+      <td colspan="4">Open Field – Stereotypies (data normalized)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Male</td>
+      <td>iSPNCtrl (7)</td>
+      <td>1.00 (0.030)</td>
+      <td rowspan="2">p = 0.0293</td>
+    </tr>
+    <tr>
+      <td>iSPNcKO (6)</td>
+      <td>1.136 (0.047)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Female</td>
+      <td>iSPNCtrl (8)</td>
+      <td>1.00 (0.038)</td>
+      <td rowspan="2">p = 0.0819</td>
+    </tr>
+    <tr>
+      <td>iSPNcKO (8)</td>
+      <td>1.094 (0.032)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Combined</td>
+      <td>iSPNCtrl (15)</td>
+      <td>1.00 (0.024)</td>
+      <td rowspan="2">p = 0.0043</td>
+    </tr>
+    <tr>
+      <td>iSPNcKO (14)</td>
+      <td>1.112 (0.027)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sex x genotype F(1,25) = 0.3226 p = 0.5751</td>
+    </tr>
+    <tr>
+      <td colspan="4">Grooming bouts</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Male</td>
+      <td>iSPNCtrl (11)</td>
+      <td>3.091 (0.8252)</td>
+      <td rowspan="2">p = 0.0542</td>
+    </tr>
+    <tr>
+      <td>iSPNcKO (13)</td>
+      <td>5.846 (1.031)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Female</td>
+      <td>iSPNCtrl (12)</td>
+      <td>3.500 (0.4174)</td>
+      <td rowspan="2">p = 0.0048</td>
+    </tr>
+    <tr>
+      <td>iSPNcKO (13)</td>
+      <td>7.385 (1.130)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Combined</td>
+      <td>iSPNCtrl (23)</td>
+      <td>3.304 (0.4420)</td>
+      <td rowspan="2">p = 0.0007</td>
+    </tr>
+    <tr>
+      <td>iSPNcKO (26)</td>
+      <td>6.615 (0.7648)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Sex x genotype F(1,45) = 0.3781 p = 0.5417._
+
 We assessed motor learning, a task dependent on the striatum, as well as other brain regions, using the accelerating rotarod (Durieux et al., 2012). Both dSPNAtg7cKO and iSPNAtg7cKO mice had a significantly lower latency to fall off the rotarod than controls on all three trials, indicating that Atg7 in dSPNs and iSPNs was required for motor learning and performance (Figure 2B). We note that differences in motor learning may exist between dSPNAtg7cKO and iSPNAtg7cKO mice as the rotarod test is highly sensitive to body weight (McFadyen et al., 2003) and dSPNAtg7cKO mice weight significantly less than iSPNAtg7cKO mice (Figure 2A).
 
 Changes in striatal activity can also lead to alterations in locomotor behavior in a novel environment (Durieux et al., 2012). iSPNAtg7cKO mice displayed hyperactivity in the open-field arena, which arose during the later habituation phase, than controls while dSPNAtg7cKO were not different (Figure 2C–D). Automated scoring of iSPNAtg7cKO mutants during the open field test revealed increased stereotypies (Figure 2E), which was confirmed by manually scoring self-directed grooming bouts in a separate session (Figure 2F). These results demonstrate that loss of Atg7 in dSPNs or iSPNs leads to behavioral deficits and disruptions in striatal function.
 
-## Autophagy is required for proper excitatory synapse function on dSPNs but not iSPNs
+### Autophagy is required for proper excitatory synapse function on dSPNs but not iSPNs
 
 Autophagy regulates dendritic spine density and both excitatory and inhibitory synaptic transmission in the cortex and hippocampus (Nikoletopoulou and Tavernarakis, 2018; Sumitomo et al., 2018; Tang et al., 2014; Yan et al., 2018). Due to the deficit in motor learning in dSPNAtg7cKO and iSPNAtg7cKO mice, we examined if synaptic deficits were present on dSPNs or iSPNs in the dorsal striatum, a striatal subregion required for motor learning (Durieux et al., 2012; Yin et al., 2009). Note that we have combined data from both sexes in this analysis. We did not design these experiments to detect sex differences as there was no interaction between sex and genotype in the behavioral analysis.
 
@@ -80,29 +298,214 @@ Reconstruction of the dendritic tree from neurobiotin-filled dSPNs (D1-tomato-po
 
 **Figure 3.:** (A) Sample dendritic trees of dSPNs from control of dSPNAtg7cKO mice. Reconstructions of neurobiotin filled neurons (left) and dendritic segment (right). (B) Sample dendritic trees from reconstructed iSPNs in control or iSPNAtg7cKO mice. Left: reconstructed dendritic tree, scale bar 100 μm. Right: dendritic segment, scale bar 1 μm. (C) Cumulative dendritic length is significantly reduced in dSPNs from dSPNAtg7cKO mice compared to control (left) but not in iSPNs from iSPNAtg7cKO mice compared to control (right). dSPNCtrl: n = 22 cells, five mice, dSPNcKO: n = 12,4. iSPNCtrl: n = 12,3; iSPNcKO: n = 16,3. (D) Sholl analysis reveals a significant reduction in dendritic complexity in dSPNs from dSPNAtg7cKO mice compared to control (left) but not in iSPNs from iSPNAtg7cKO mice compared to control (right). dSPNCtrl: n = 22, 5, dSPNcKO: n = 12,4. iSPNCtrl: n = 13,3; iSPNcKO: n = 16,3. (E) Dendritic spine density on dendritic segments 50–100 µm from the soma. dSPNCtrl: n = 15, 5, dSPNcKO: n = 13,4. iSPNCtrl: n = 8,3; iSPNcKO: n = 8,3. (F) Representative traces of mEPSCs in dSPNs (top) and iSPNs (bottom). (G-H) A significant reduction in (G) mEPSC frequency and (H) mEPSC amplitude in dSPNs from dSPNAtg7cKO mice compared to control but no difference in iSPN mEPSC frequency or amplitude between genotypes. Frequency: dSPNCtrl: n = 21, 5, dSPNcKO: n = 25,4. iSPNCtrl: n = 22,3; iSPNcKO: n = 26,4. Amplitude: dSPNCtrl: n = 19, 5, dSPNcKO: n = 26,4. iSPNCtrl: n = 23,5; iSPNcKO: n = 26,4. (I) Representative traces of mIPSCs in dSPNs (top) and iSPNs (bottom) (J-K) No difference in mIPSC frequency or amplitude after loss of autophagy in either dSPNs or iSPNs. Frequency: dSPNCtrl: n = 17, 5, dSPNcKO: n = 23,4. iSPNCtrl: n = 20,5; iSPNcKO: n = 25,4. Amplitude: dSPNCtrl: n = 17,5, dSPNcKO: n = 22,4. iSPNCtrl: n = 21,5; iSPNcKO: n = 24,4. See Table 2 for detailed statistics. ns p>0.05, *p<0.05, **p<0.01, † p<0.0001.
 
+**Table 2.**
+ Detailed statistics for Figure 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Groups (n;N)*: Mean (sem)</th>
+      <th>Test$</th>
+      <th>Results</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3C (left)</td>
+      <td>dSPNCtrl (23;5): 26.05 (77.83) dSPNAtg7cKO (13;4): 2172 (145.6)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T34 = 2.888</td>
+      <td>0.0067</td>
+    </tr>
+    <tr>
+      <td>3C (right)</td>
+      <td>iSPNCtrl (12;3): 2640 (128.4) iSPNAtg7cKO (16;3): 2556 (90.11)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T26 = 0.5380</td>
+      <td>0.5952</td>
+    </tr>
+    <tr>
+      <td>3D (left)</td>
+      <td>dSPNCtrl (22;5) dSPNAtg7cKO (12;4)</td>
+      <td>Two-way repeated measures ANOVA</td>
+      <td>Distance: F(18,576) = 198.9 Genotype: F(1,32) = 7.124 Interaction: F(18,576) = 2.981</td>
+      <td>Distance:&lt;0.0001 Genotype: 0.0118 Intx:&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>3D (right)</td>
+      <td>iSPNCtrl (13;3) iSPNAtg7cKO (16;3)</td>
+      <td>Two-way repeated measures ANOVA</td>
+      <td>Distance: F(18,486) = 204.9 Genotype: F(1,27) = 0.8747 Interaction: F(18,486) = 0.5927</td>
+      <td>Distance:&lt;0.0001 Genotype: 0.3580 Intx: 0.9057</td>
+    </tr>
+    <tr>
+      <td>3E (left)</td>
+      <td>dSPNCtrl (15;5): 1.428 (0.062) dSPNAtg7cKO (13;4): 0.8928 (0.066)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T26 = 4.286</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>3E (right)</td>
+      <td>iSPNCtrl (8;3): 1.062 (0.07246) iSPNAtg7cKO (8;3): 1.054 (0.06648)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T16 = 0.07856</td>
+      <td>0.9384</td>
+    </tr>
+    <tr>
+      <td>3G (left)</td>
+      <td>dSPNCtrl (21;5): 3.435 (0.2402) dSPNAtg7cKO (25;4): 2.155 (0.1928)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T44 = 4.206</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>3G (right)</td>
+      <td>iSPNCtrl (22;5): 3.192 (0.2325) iSPNAtg7cKO (26;4): 3.344 (0.2382)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T46 = 0.4523</td>
+      <td>0.6531</td>
+    </tr>
+    <tr>
+      <td>3H (left)</td>
+      <td>dSPNCtrl (19;5): −11.03 (0.5341) dSPNAtg7cKO (26;4): −9.174 (0.4162)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T43 = 2.788</td>
+      <td>0.0079</td>
+    </tr>
+    <tr>
+      <td>3H (right)</td>
+      <td>iSPNCtrl (23;5): −9.669 (0.4282) iSPNAtg7cKO (26;4): −9.417 (0.3507)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T47 = 0.4599</td>
+      <td>0.647</td>
+    </tr>
+    <tr>
+      <td>3J (left)</td>
+      <td>dSPNCtrl (17;5): 3.351 (0.2287) dSPNAtg7cKO (23;4): 3.000 (0.2634)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T38 = 0.9654</td>
+      <td>0.3404</td>
+    </tr>
+    <tr>
+      <td>3J (right)</td>
+      <td>iSPNCtrl (20;5): 3.480 (0.2026) iSPNAtg7cKO (25;4): 3.708 (0.2449)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T43 = 0.6942</td>
+      <td>0.4913</td>
+    </tr>
+    <tr>
+      <td>3K (left)</td>
+      <td>dSPNCtrl (17;5): 9.972 (0.3499) dSPNAtg7cKO (22;4): 9.346 (0.5072)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T37 = 0.9558</td>
+      <td>0.3454</td>
+    </tr>
+    <tr>
+      <td>3K (right)</td>
+      <td>iSPNCtrl (21;5): 9.950 (0.3571) iSPNAtg7cKO (24;4): 9.409 (0.3485)</td>
+      <td>Two-tailed, unpaired t test</td>
+      <td>T43 = 1.081</td>
+      <td>0.2859</td>
+    </tr>
+  </tbody>
+</table>
+
+_*n is the number of cells, N is the number of mice.$ Post hoc analysis: for two way ANOVA, we used Bonferroni post-hoc test. For one way ANOVA, we used the Holm-Sidak posthoc test._
+
 Changes in dendritic spine density and dendritic architecture may lead to functional differences in excitatory or inhibitory inputs onto SPNs. We recorded miniature excitatory postsynaptic currents (mEPSC; VHold = −70 mV) and miniature inhibitory postsynaptic currents (mIPSC; VHold = 0 mV) in whole-cell patch clamp recordings in the presence of tetrodotoxin (TTX) to block action potentials. The use of this internal solution permits measurement of both mEPSCs and mIPSCs in individual cells. In a subset of cells, we confirmed that inward currents at VHold = −70 mV were glutamatergic in origin by bath applying the AMPAR antagonist, CNQX (5 µM) and outward currents at VHold = 0 mV were GABAergic by bath application of picrotoxin (25 µM; data not shown). We found a reduction in both mEPSC frequency and amplitude in dSPNs lacking Atg7 without a change in mIPSC frequency or amplitude (Figure 3F–K). In iSPNs lacking Atg7, in contrast, neither mEPSC frequency and amplitude nor mIPSC frequency and amplitude were different than controls (Figure 3F–K), consistent with the absence of a change in dendritic length or spine density. These data demonstrate that, as in excitatory neurons of the cortex and hippocampus (Tang et al., 2014; Yan et al., 2018), autophagy contributes to synaptic function in dSPNs but is dispensable for proper synaptic transmission onto iSPNs.
 
-## Autophagy controls iSPN intrinsic excitability
+### Autophagy controls iSPN intrinsic excitability
 
 Despite the absence of synaptic deficits in iSPNs lacking Atg7, iSPNAtg7cKO mice demonstrated locomotor hyperactivity and deficits in motor learning (Figure 2). How is iSPN function affected by loss of Atg7? SPN activity is governed by the interplay of synaptic excitation and inhibition with a low intrinsic excitability (Kreitzer, 2009; Wilson and Kawaguchi, 1996). We, therefore, hypothesized that iSPNs lacking Atg7 may be dysfunctional due to a change in their intrinsic excitability. In whole cell recordings, iSPNs from iSPNAtg7cKO mice exhibited a depolarized RMP, increased input resistance, and decreased rheobase, suggesting that autophagy is required for the normally low intrinsic excitability of iSPNs (Figure 4A–D). These effects occurred in the absence of a change in membrane capacitance (Figure 4E). The combination of increased input resistance, decreased rheobase and depolarized RMP led to a left-shifted current-response curve, suggesting that iSPNs were hyperresponsive to depolarizing inputs (Figure 4F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative current clamp traces in iSPNs from control or iSPNAtg7cKO mice. (B-F) iSPNs lacking Atg7 display (B) depolarized resting membrane potential (t70=3.617, p = 0.0006; iSPNCtrl: n=34 (8), iSPNAtg7cKO: n=38 (9)), (C) elevated input resistance (t68=3.630, p = 0.0005; iSPNCtrl: n=32 (8), iSPNAtg7cKO: n=38 (9)), (D) decreased rheobase (t61=4.456, p<0.0001; iSPNCtrl: n=26 (7), iSPNAtg7cKO: n=37(9)), (E) no change in capacitance (t67 = 0.8096, p = 0.4210; iSPNCtrl: n=33 (8), iSPNAtg7cKO: n=39 (9)) and (F) a left-shifted current-response curve [APs/500 msec (Current x Genotype: F(13,772) = 1.538, p = 0.0983; Current F(13,772)=421.5, p<0.0001; Genotype: F(1,772) = 6.586, p = 0.0141); iSPNCtrl: n=25(7), iSPNAtg7cKO: n=36(8)]. Data in (B-F) analyzed with a two-tailed, unpaired t test. Data in (F) analyzed with two-way repeated measures ANOVA. (G) Representative voltage clamp recordings of Kir2 currents. (H) iSPNs have lower Kir2 current density in iSPNAtg7cKO mice compared to iSPNs in iSPNCtrl mice. iSPNCtrl: n = 17(5), iSPNAtg7cKO: n=25(6). Data analyzed with a two-way repeated measures ANOVA, followed by Bonferooni post-hoc test. Voltage x Genotype: F(10,400) = 13.39, p<0.0001. ns p>0.05, * p<0.05, *** p<0.001, † p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Representative traces of voltage clamp recordings of iSPNs in (A) ACSF, (B) ACSF + BaCl2, and (C) BaCl2-sensitive (Kir2) currents. (D-F) Reduction in Ba2+-sensitive current Kir2 current, but not the Ba2+-resistant leak current, in iSPNs lacking autophagy. iSPNCtrl: N = 19,5; iSPNAtg7cKO: N = 25,6. (D) Data analyzed with repeated measure two-way ANOVA. Voltage x Genotype: F(10,400) = 13.31, p<0.0001. (E) Data analyzed with repeated measure two-way ANOVA. Voltage x Genotype: F(10,400) = 1.852, p = 0.0503; Voltage: F(10, 400)=250.1, p<0.0001; Genotype: F(1,40)=2.942, p = 0.0941. (F) Data analyzed with repeated measure two-way ANOVA. Voltage x Genotype: F(10,400) = 17.33, p<0.0001. (G) No difference in the voltage dependence or (H) voltage at half-maximal activation for Kir2 currents between genotypes. (G) Data analyzed with repeated measure, two-way ANOVA. Voltage x Genotype: F(10,400) = 0.8522, p = 0.5785; Voltage: F(10,400)=2599, p<0.0001; Genotype: F(1,40) = 0.01361, p = 0.9077. (I) Slope of Kir2 current is greater in iSPNControl than iSPNAtg7cKO cells. Data in (H-I) analyzed with a two-tailed, unpaired t test. Data in D-G were analyzed with a repeated measures two-way ANOVA followed by Bonferroni post-hoc tests. Data in H and I were analyzed with a two-tailed unpaired t test. ns p>0.05, *p<0.05, **p<0.01, ***p<0.001, † p<0.0001.
+
 We next asked whether Atg7 also regulated intrinsic excitability in dSPNs. While neither the RMP nor the rheobase of dSPNs in dSPNAtg7cKO were different from controls, dSPNs lacking Atg7 had an elevated input resistance and decreased membrane capacitance (Table 3). These results are consistent with change in the passive membrane properties of dSPNs caused by reduced dendritic length and complexity (Figure 3), in contrast to a prim﻿ary effect on intrinsic excitability (see Discussion).
+
+**Table 3.**
+ Intrinsic excitability in dSPNs from control, dSPNAtg7cKO, and iSPNAtg7cKO mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>RMP (mV)</th>
+      <th>Rin (MΩ)</th>
+      <th>Rheobase (pA)</th>
+      <th>Capacitance (pF)</th>
+      <th>Kir2 current density (pA/pF)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dSPNControl</td>
+      <td>−77.39 ± 0.8508 (24)</td>
+      <td>145.7 8.110 (24)</td>
+      <td>175 6.285 (24)</td>
+      <td>80.28 ± 4.808 (22)</td>
+      <td>−16.59 ± 0.8121 (20)</td>
+    </tr>
+    <tr>
+      <td>dSPNAtg7cKO</td>
+      <td>−77.75 ± 0.9328 (30)</td>
+      <td>189.3 12.52 (25) **</td>
+      <td>156.1 9.409 (26)</td>
+      <td>62.22 ± 4.766 (27) *</td>
+      <td>−17.05 ± 0.8715 (22)</td>
+    </tr>
+    <tr>
+      <td>dSPNs from iSPNAtg7cKO</td>
+      <td>−78.40 ± 0.7481 (16)</td>
+      <td>129.1 8.452 (14)</td>
+      <td>177.8 8.685 (14)</td>
+      <td>81.58 ± 4.728 (14)</td>
+      <td>−15.20 ± 1.675 (14)</td>
+    </tr>
+  </tbody>
+</table>
 
 The change in intrinsic excitability in iSPNs from iSPNAtg7cKO may arise as a response to differences in the striatal network activity, in which case, dSPNs from iSPNAtg7cKO mice (which have autophagy) may also be affected, or they could be cell-intrinsic, in which case dSPNs in these mice would not be affected. We recorded from dSPNs in iSPNAtg7cKO mice and found no difference in the RMP, rheobase, input resistance or capacitance in dSPNs from iSPNAtg7cKO mice compared to control dSPNs, suggesting that Atg7 regulates intrinsic excitability in iSPNs through a cell-intrinsic mechanism (Table 3).
 
 These results suggest that Atg7 may directly regulate intrinsic excitability in iSPNs but not dSPNs and provide a new mechanism through which autophagy can control neuronal function.
 
-## Kir2 currents are decreased in the absence of autophagy
+### Kir2 currents are decreased in the absence of autophagy
 
 Although either reduced dendritic complexity (Gertler et al., 2008; Mainen and Sejnowski, 1996) or changes in specific ionic conductances can lead to intrinsic hyperexcitability following somatic current injection, we did not observe a change in dendritic arborization in iSPNs lacking autophagy (Figure 3), suggesting that a change in ion channel function underlies this phenotype. Inwardly rectifying potassium currents, mediated by Kir2.1 and Kir2.3 channels (referred to as Kir2 currents) (Cazorla et al., 2012; Karschin et al., 1996; Shen et al., 2007), are the predominant potassium conductance active around the resting membrane potential of SPNs and are the critical determinants of RMP, input and input resistance (Nisenbaum et al., 1994; Wilson and Kawaguchi, 1996). As iSPNs lacking autophagy exhibit a depolarized RMP and elevated input resistance, we hypothesized that autophagy may regulate Kir2 function.
 
 Kir2 currents are measured as an inwardly rectifying, barium-sensitive current triggered by hyperpolarizing current steps (Figure 4—figure supplement 1A–F). We found a decrease in the whole cell Kir2 current density in iSPNs from iSPNAtg7cKO mice compared to control iSPNs (Figure 4G–H). This was not associated with a change in the voltage dependence of the Kir2 current (Figure 4—figure supplement 1G–I). Interestingly, there was no difference in Kir2 current density in dSPNs from dSPNAtg7cKO or iSPNAtg7cKO mice compared to controls (Table 3). These results suggest that autophagy is required for Kir2 currents in iSPNs but not dSPNs and further support the conclusion that autophagy controls neuronal function via cell-type-specific pathways.
 
-## Autophagy controls Kir2 degradation
+### Autophagy controls Kir2 degradation
 
 Because autophagy has not been described to regulate neuronal intrinsic excitability or potassium channel function, we further investigated the relationship between Atg7 and Kir2 channels.
 
 To test if loss of Atg7 leads to reduced Kir2 current via downregulation of Kir2.1 or Kir2.3 mRNA levels, we coupled immunofluorescence and RNAScope analysis to measure the abundance of Kir2.1 and Kir2.3 mRNA on a single-cell level in DARPP32+ (to label all SPNs) and p62+ cells. Loss of Atg7 did not affect the number of Kir2.1 or Kir2.3 RNAScope puncta per cell in iSPNAtg7cKO mice compared to controls (Figure 5A–C). These results suggest that decreased Kir2 current in the absence of Atg7 does not result from a change in Kir2.1 or Kir2.3 mRNA expression.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) There was no difference in Kir2.1 or Kir2.3 mRNA expression in SPNs of iSPNAtg7cKO mice in an RNAscope assay (N = 77–173 cells from three mice per group). Inset shows just RNAscope and DAPI. Scale bar 30 µm. Data analyzed by the Kolmogorov-Smirnov test, Genotype effect: p>0.05 for Kir2.1 and Kir2.3. (D) Representative western blots of specified proteins from total striatal lysates from iSPNCtrl or iSPNAtg7cKO mice. Quantifications of (E) p62 (t20 = 3.551, p = 0.0020), (F) DARPP32 (t23 = 1.984, p = 0.0593), (G) Kir2.1 (t14 = 3.435, p = 0.0040), and (H) Kir2.3 (t14 = 4.492, p = 0.0005) relative to actin. p62: iSPNctrl: n = 11, iSPNAtg7cKO: n = 11. DARPP32: iSPNctrl: n = 14, iSPNAtg7cKO: n = 11. Kir2.1: iSPNctrl: n = 7, iSPNAtg7cKO: n = 9. Kir2.3: iSPNctrl: n = 7, iSPNAtg7cKO: n = 9. Data analyzed by two-tailed, unpaired t test. (I-J) Kir2.1 is localized in LC3-GFP+ puncta in Atg5WT but not Atg5KO MEFs. BafilomycinA1 (BafA1; 100 nM 2 hr) treatment increases the number of LC3/Kir2.1-double labeled puncta in Atg5WT MEFs. Scale bar 20 µm. Inset scale bar 1 µm. Analyzed by one-way ANOVA followed by Bonferroni post-hoc test. F(2,26)=25.64, p<0.0001. (K-L) A reduction of Lamp1+Kir2.1+ puncta in Atg5KO MEFs. Scale bar 20 µm, inset scale bar 1 µm. Data analyzed by two-tailed, unpaired t test. t23 = 3.083, p = 0.0053. (M) Reduced degradation of SNAP-tag labeled Kir2.1 in Atg5KO MEFs. N: (WT,KO): T = 0 min (35,30), T = 30 min (30,27), T = 60 min (25,38), T = 180 min (33,67), T = 360 min (40,20). Data analyzed by two-way ANOVA. Genotype x time: F4,335 = 7.880, p<0.0001. (N) No significant difference in the internalization of antibody-labeled surface Kir2.1 channels in Atg5KO MEFs. N: (WT,KO): T = 0 min (76,56), T = 30 min (52,37), T = 60 min (41,42), T = 120 min (28,38). Data analyzed by two-way ANOVA. Genotype x time: F3,362 = 0.8038, ns; Time: F(3,362) = 25.88, p = 0.0001; Genotype: F(1,362) = 1.877, ns. ns p>0.05, *p<0.05, **p<0.01, ***p<0.001, † p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative western blots from control or dSPNAtg7cKO mice. (B-G) Quantification of relative protein levels in control and dSPNAtg7cKO mice shows no significant difference between (B) Kir2.1 [dSPNCtrl: n = 10, dSPNAtg7cKO: n = 11; t19 = 0.5816, p = 0.5677], (C) Kir2.3 [dSPNCtrl: n = 12, dSPNAtg7cKO: n = 10; t20 = 0.08775, p = 0.9309], (D) Kv1.2 [dSPNCtrl: n = 10, dSPNAtg7cKO: n = 11; t19 = 0.04627, p = 0.9636], (E) PSD95 [dSPNCtrl: n = 11, dSPNAtg7cKO: n = 12; t21 = 0.3730, p = 0.7129], or (G) DARPP32 [dSPNCtrl: n = 6, dSPNAtg7cKO: n=5; t9 = 0.6178, p = 0.5520], but a significant increase in (F) p62 [dSPNCtrl: n = 11, dSPNAtg7cKO: n = 11; t20=6.936, p<0.0001]. (H) Representative western blots for Kv1.2 and PSD95 in control or iSPNAtg7cKO mice. (I-J) Quantification of Kv1.2 [iSPNCtrl: n = 11, iSPNAtg7cKO: n = 11; t20 = 0.3213, p = 0.7513] and PSD95 [iSPNCtrl: n = 12, iSPNAtg7cKO: n = 11; t21 = 1.264, p = 0.2202] shows no difference between control and iSPNAtg7cKO mice. Data analyzed by two-tailed unpaired t test. ns p>0.05, *** p<0.0001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Schematic of Kir2.1-externalHA-Flag-SNAP (abb. Kir2.1 below) construct. (B) Representative western blots and (C) quantification for Flag, Kir2.1, LC3B and actin show elevated steady state levels of Kir2.1 in transiently transfected in Atg5KO MEFs compared to Atg5WT MEFs. N = 3 per genotype. Data analyzed with two-tailed unpaired t test, t4 = 3.390, p = 0.0275. (D and E) Representative blots and aggregate data from six independent replicates per timepoint treated with cycloheximide at t = 0 min. Data were analyzed with a two-way ANOVA followed by Bonferroni post-hoc test. Time x genotype: F(4,44)=2.764, p = 0.0391. ns p>0.05, *p<0.05, **p<0.01, ***p<0.001, † p<0.0001.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Representative western blot showing the absence of Atg7 in Atg7KO primary MEFs. (B) Representative images of primary MEFs transfected with Kir2.1-Flag-SNAP and labeled with SNAPcell ligand. (C) Snap-labeled Kir2.1 is significantly reduced in Atg7WT cells but not Atg7KO cells. N: (0,120 min) WT: (7,6), KO: (7,6). Data analyzed by two-way ANOVA. Genotype x time: F(1,22)=2.323, p = 0.1417; Genotype: F(1,22)=2.323, p = 0.1417. Time: F(1,22)=7.675, p = 0.0112. (D) The distribution of Kir2.1 is not different between Atg7WT and Atg7KO cells. Data are combined from two independent replicates. *p<0.05.
 
 Instead of regulating Kir2 channels at the transcriptional level, Atg7 could affect Kir2 protein stability, which would explain reduced Kir2 current. We generated total striatal lysates from control, dSPNAtg7cKO, or iSPNAtg7cKO mice and confirmed that loss of Atg7 led to an increase in p62 levels in both dSPNAtg7cKO and iSPNAtg7cKO mice compared to controls (Figure 5D–E and Figure 5—figure supplement 1F).
 
@@ -130,11 +533,19 @@ We generated primary Atg7KO MEFs to confirm that Atg7, in addition to Atg5, was 
 
 We conclude that autophagy is required for the lysosomal delivery and degradation of endocytosed Kir2.1 channels.
 
-## Lack of autophagy leads to increased surface levels of Kir2 channels despite reduced channel function
+### Lack of autophagy leads to increased surface levels of Kir2 channels despite reduced channel function
 
 If autophagy is required for Kir2.1 degradation, but Kir2 channel abundance is elevated in the absence of autophagy, why are Kir2 currents decreased in cells lacking autophagy? One possibility is that Kir2 channels could be mislocalized in the absence of autophagy and are absent from the plasma membrane.
 
 To address whether Kir2.1 function is regulated by autophagy in MEFs, we measured Kir2 currents using whole-cell patch clamp recordings in Kir2.1FlagSNAP transfected MEFs. We detected a Ba2+-sensitive, inwardly rectifying current that was absent from untransfected cells (Figure 7A). Despite the increase in total Kir2.1FlagSNAP levels in Atg5KO MEFs (Figure 5—figure supplement 3B–C), the Kir2 current in Atg5KO MEFs was decreased relative to Atg5WT MEFs (Figure 7B). This phenocopies the situation in the iSPNAtg7cKO striatum and suggests that the mechanism through which Kir2.1 is regulated by autophagy can be explored in this heterologous system.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig7-v2.jpg)
+
+**Figure 7.:** (A) Sample traces from MEFs transfected with Kir2.1 demonstrate an inwardly rectifying, barium sensitive current that is absent in untransfected cells. (B) Atg5KO MEFs have reduced Kir2.1 current compared to Atg5WT MEFs. WT: N = 8, KO: N = 12. Voltage step x genotype: F(14, 252)=8.985, p<0.0001. (C) Representative micrographs of Atg5WT and Atg5KO MEFs. On right, the Kir2.1 channel in the WT image has been contrasted to compare staining pattern. Scale bar 20 µm. (D-F) Elevated levels of both surface and total levels of Kir2.1 in Atg5KO MEFs. Scale bar 20 µm, inset scale bar 1 µm. (E) t147=4.511, p<0.0001. (F) t147=4.511, p<0.0001. (G-J) Subcellular fractionation reveals elevated levels of Kir2.1 and Kir2.3 in all fractions of iSPNAtg7cKO mice compared to controls but no change in the relative distribution of Kir2.1 or Kir2.3 between genotypes. (H) p62 is elevated in the total homogenate of iSPNAtg7KO mice. (I) No change in distribution or level of Kv1.2 between genotypes. iSPNCtrl: N = 5. iSPNAtg7cKO: N = 3. TH, total homogenate; PNS, post-nuclear supernatant; S2, 20,000xg supernatant; P2, 20,000xg pellet; P3, resuspended P2 spun at 100,000xg; SPM, synaptic plasma membranes isolated from 1.0M and 1.2M sucrose interface. Data were analyzed by two-way ANOVA for each analyzed protein with fraction and genotype as factors. No significant interaction between fraction and genotype was found for any protein. Fraction was significant for each protein. Genotype was only significant for Kir2.1 and Kir2.3. Kir2.1: Genotype: F(1,6)=9.373, p = 0.0222. Kir2.3: Genotype: F(1,6)=6.615, p = 0.0422. See Table 1 for detailed statistics. ns p>0.05, *p<0.05, **p<0.01, ***p<0.001, † p<0.0001. Experiments in B, E, and F were combined from at least three independent experiments.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic of iodixanol gradient. (B,D) representative blots of gradient fractions. (C) Aggregate data of Kir2.1 in each fraction normalized to the total amount of Kir2.1 across the gradient. No difference in Kv1.2 levels or distribution and no difference in Kir2.1 distribution was seen. N = 3 mice per genotype. Data analyzed by repeated measure, two-way ANOVA. Genotype x fraction: F(8,48) = 0.3456, p = 0.9433; Genotype: F(1,6)=2.455, p = 0.1682; Fraction: F(8,48) = 16.28, p<0.0001. (E) Kir2 currents from iSPNs from slices pretreated with methyl-β-cyclodextrin (MBCD; 10 mM) were recorded. No effect of MBCD was seen at either genotype. iSPNCtrl: Veh N = 8, MBCD N = 6. iSPNAtg7cKO: Veh N = 5, MBCD N = 7 (Cells from two mice per condition).
 
 Autophagy may be required for both the localization and the degradation of Kir2.1, which would explain why, in the absence of autophagy, Kir2.1 levels are elevated but Kir2.1 current is decreased. We found, however, that Kir2.1FlagSNAP was located on the surface and in intracellular vesicles in both control and Atg5KO MEFs (Figure 7C). In addition, similar patterns of Kir2.1 localization were observed in Atg7WT and Atg7KO primary MEFs (Figure 5—figure supplement 3D).
 
@@ -148,9 +559,17 @@ These results were further confirmed by floating striatal membrane pellets in a 
 
 These results demonstrate that Kir2 channels are localized to the plasma membrane but are less functional in the absence of Atg7.
 
-## Kir2 channels are acetylated and inactivated in the absence of autophagy
+### Kir2 channels are acetylated and inactivated in the absence of autophagy
 
 As Kir2 channels are localized to the plasma membrane in higher quantities in the absence of autophagy both in vivo and in MEFs (Figure 7D–J), it remained unclear why Kir2 currents were decreased. We hypothesized that these channels may be inhibited by a post-translational modification in the absence of autophagy. Several proteins that are selectively degraded by autophagy undergo lysine modification by ubiquitin or acetylation (Khaminets et al., 2016). Immunoprecipitation of Kir2.1extHA-FlagSNAP from Atg5WT or Atg5KO cells indicated that in the absence of autophagy the level of Kir2.1 acetylation was markedly increased while its ubiqutination status was unaffected (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig8-v2.jpg)
+
+**Figure 8.:** (A) Immunoprecipitation of Kir2.1 reveals elevated levels of acetylated lysines on Kir2.1 in Atg5KOMEFs without a change in ubiquitination. Representative blots shown from at least three independent replicates. (B) A conserved motif in the C-terminal tail of Kir2.1 and Kir2.3 contains three modifiable lysines and has previously been implicated in Kir2 channel degradation. (C) A degradation screen in which K334, K338 and K346 were mutated to the unmodifiable residue, arginine, reveals that K334 is required for Kir2.1 degradation in Atg5WT MEFs. N: (T=0min, T = 120 min) WT (52,79), K334R (27,51), K338R (40,41), K346R (23,11). Data analyzed by two-way ANOVA followed by Bonferroni post-hoc test. Kir genotype x time: F(3,390) = 3.211, p = 0.0230. (D-E) Kir2.1 K334R current is normalized in Atg5KO MEFs but does not affect Kir2.1 current in Atg5WT MEFs. Data analyzed by two-way ANOVA followed by Bonferroni post-hoc test. Cell genotype x Kir genotype: F(1,42) = 9.603, p = 0.0035. (F-G) Kir2.1 K334Q, with an acetylation-mimic at K334, has reduced current in Atg5WT MEFs. Voltage step protocol is the same as in (D). Data analyzed by two-tailed unpaired t test. t24=2.707, p=0.0123. ns p>0.05, * p<0.05, ** p<0.01, *** p<0.001, † p<0.0001. Experiments in C, E and G were combined from at least three independent experiments.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/50843/elife-50843-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative western blots of immunoprecipitated WT Kir2.1extHA-Flag-SNAP or Kir2.1extHA-Flag-SNAP K334R. Immunoblots for acetylated lysines (AceK) or Flag. (B) Quantification of acetylated lysine signal normalized to WT or K334R Kir2.1extHA-Flag-SNAP in immunoprecipiates from Atg5KO MEFs shows a reduction in total Kir2.1 acetylation when K334 is mutated to arginine. Data analyzed with two-tailed, unpaired t test. t10 = 2.452; p = 0.0341. (C) Surface staining for WT Kir2.1, Kir2.1 K334R, and Kir2.1 K334Q in Atg5WT or Atg5KO MEFs reveals that mutations at K334 does not affect surface localization of Kir2.1 in either MEF cell line. Data analyzed with two-way ANOVA. Cell genotype x Channel genotype: F(2,142)=0.04505, p = 0.9560; Cell genotype: F(1,142)=75.66, p<0.0001; Channel Genotype: F(2,142)=0.6539, p = 0.5216. *p<0.05, † p<0.0001.
 
 Both of these modifications can signal for proteins to enter the autophagy pathway for degradation and we therefore hypothesized that the acetylated lysine residue was also required for autophagic degradation of Kir2.1, as this would explain why a modified channel accumulates in the absence of autophagy: acetylated Kir2.1 may be targeted for degradation but, in the absence of autophagy, cannot be eliminated.
 
@@ -170,7 +589,7 @@ These data indicate that, in the absence of autophagy, Kir2 channels are present
 
 Although originally studied in the central nervous system in the context of neurodegenerative disease, autophagy has recently been identified as a key regulator of neurotransmission. Emphasizing the need to understand autophagic function at the synapse, autophagic dysfunction has been reported in neurodevelopmental disorders that are thought to arise from synaptic deficits. Here, we investigated the role of autophagy in the function of both classes of GABAergic projection neurons in the striatum, a region implicated in the pathophysiology of several neurodevelopmental disorders. We found that, in dSPNs, the required autophagy gene, Atg7, is required for dendritic structure and spine density and the function of excitatory inputs onto dSPNs. In iSPNs, we did not detect changes in dendritic arborization, spine density or excitatory and inhibitory inputs in the absence of Atg7. In contrast, however, loss of Atg7 in iSPNs led to intrinsic hyperexcitability, due to reduced Kir2 function. We then demonstrated that Kir2 channels are degraded by autophagy and have decreased activity in the absence of autophagy. Furthermore, loss of Atg7 in either dSPNs or iSPNs led to deficits in behavioral tasks considered to depend at least in part on the striatum (Durieux et al., 2012). These results demonstrate that autophagy contributes to striatal function via distinct molecular pathways in dSPNs and iSPNs.
 
-## Autophagic control of synaptic function in dSPNs
+### Autophagic control of synaptic function in dSPNs
 
 Autophagy is required for normal synaptic structure and function in C. elegans, the Drosophila neuromuscular junction, and excitatory neurons in the mouse cortex and hippocampus (Glatigny et al., 2019; Nikoletopoulou et al., 2017; Shehata et al., 2012; Shen and Ganetzky, 2009; Stavoe et al., 2016; Tang et al., 2014; Vanhauwaert et al., 2017; Yan et al., 2018). We report that, in dSPNs, loss of autophagy led to reduced complexity of the dendritic tree, lower dendritic spine density, and functional deficits in excitatory inputs. The mechanism through which autophagy may regulate dendritic structure and function in dSPNs remains unknown. Dendritic complexity and spine density can be controlled by neurotrophic factors (Horch et al., 1999; Li et al., 2012), mitochondrial function (Li et al., 2004), neuromodulatory signaling (Villalba and Smith, 2013), and synaptic inputs and neurotransmission (Alvarez and Sabatini, 2007; Lambot et al., 2016). Each of these cellular pathways is modulated by autophagy and therefore could lead to altered dSPN dendritic arborization and excitatory synaptic inputs (Kononenko et al., 2017; Nikoletopoulou et al., 2017; Youle and Narendra, 2011). A key unanswered question is whether these synaptic pathologies arise during early dSPN development or as a degenerative process and could be addressed via a longitudinal analysis of these parameters in dSPNAtg7cKO mice. We hypothesize that, given the dynamic changes in autophagic flux that occur in SPNs during early postnatal development (P10-P18; Lieberman et al., 2019a), autophagy may play a role in dendritic growth and excitatory synaptogenesis on dSPNs.
 
@@ -184,7 +603,7 @@ Alternatively, excitatory synaptogenesis onto iSPNs may occur in an autophagy-in
 
 Atg7 is also involved in non-autophagic processes such as LC3-associated phagocytosis and secretion of lysosomal contents (Subramani and Malhotra, 2013). It is possible that Atg7 contributes to dSPN dendritic morphology and synaptic inputs via these processes as opposed to ‘classical’ autophagic degradation. Future studies comparing loss of other autophagy-associated genes that do not contribute to LC3-associated phagocytosis or lysosomal exocytosis may provide further insight.
 
-## Autophagy regulates iSPN intrinsic excitability via Kir2 currents
+### Autophagy regulates iSPN intrinsic excitability via Kir2 currents
 
 In contrast to dSPNs, Atg7 was not required for excitatory or inhibitory transmission onto iSPNs. Rather, whole cell recordings revealed an intrinsic hyperexcitability in iSPNs lacking Atg7 that was characterized by a depolarized RMP, elevated input resistance, decreased rheobase and left-shifted current response curve.
 
@@ -198,7 +617,7 @@ Autophagy associated genes, such as Atg5 and Atg7, have been proposed to play a 
 
 While autophagic degradation is classically initiated when cytosolic proteins are sequestered in newly formed autophagosomes or autophagic membranes surround membrane-bound organelles (Klionsky, 2007), autophagy may be required for Kir2.1 degradation via a distinct mechanism. We found that autophagy is not required for Kir2.1 internalization, suggesting that autophagy acts at a post-endocytic step. Endosomes fuse with autophagosomes to form amphisomes, and this step is required for the degradation of some proteins and the overall function of the autophagosomal and endosomal system (Filimonenko et al., 2010; Hollenbeck, 1993; Liang et al., 2008; Rabinowitz et al., 1992; Sanchez-Wandelmer and Reggiori, 2013; Wang et al., 2016). We speculate that Kir2.1+ endosomes require fusion with an autophagic intermediate for lysosomal delivery. Alternatively, autophagic membranes may form de novo on the surface of Kir2.1+ endosomes, leading to the lysosomal degradation of endosomal contents. We cannot exclude the possibility that Kir2 channels are endocytosed in early autophagic structures that mature into autophagosomes in an Atg5/7-dependent manner for degradation (Ravikumar et al., 2010; Wu et al., 2016). These potential mechanisms are consistent with data demonstrating a role for autophagy in the degradation of other membrane proteins including Notch1 (Wu et al., 2016), GluR1 (Shehata et al., 2012), and the Na+/H+ exchanger regulatory factor 2 (Gao et al., 2018).
 
-## Selectivity and cell-type specificity of the autophagic degradation of Kir2 channels
+### Selectivity and cell-type specificity of the autophagic degradation of Kir2 channels
 
 Recent work has highlighted a role for selective, as opposed to bulk, autophagy in the maintenance of cellular homeostasis. Here, we find that loss of autophagy does not lead to a global disruption of membrane or synaptic protein levels, but instead has relatively specific effects on Kir2.1 and Kir2.3 channels. For example, the protein level of the voltage-gated potassium channel, Kv1.2, which is expressed by both dSPNs and iSPNs (Shen et al., 2004) is not affected by loss of autophagy. Furthermore, components of the postsynaptic density, such as PSD95, which are degraded by autophagy in excitatory neurons (Nikoletopoulou et al., 2017; Tang et al., 2014; Yan et al., 2018), are not affected by loss of autophagy in dSPNs or iSPNs. Finally, AMPA receptors, which can be degraded by autophagy in excitatory neurons (Shehata et al., 2012), do not seem to be affected in iSPNs as mEPSC amplitude is unchanged in iSPNAtg7cKO mice. An unbiased proteomics approach in iSPNAtg7cKO mice would provide additional evidence for the relatively selective degradation of Kir2 channels in iSPNs.
 
@@ -206,7 +625,7 @@ How might this specificity be achieved? Other forms of selective autophagy depen
 
 In contrast to iSPNs, Kir2.1 and Kir2.3 abundance and Kir2 currents were unaffected by loss of autophagy in dSPNAtg7cKO mice. As Kir2 channels are expressed in both populations of SPNs and play important roles in both dSPN and iSPN physiology (Cazorla et al., 2012; Gertler et al., 2008; Lieberman et al., 2018; Shen et al., 2007), these data suggest that the degradation of Kir2 channels by autophagy occurs via cell type-specific mechanisms. This cell-type specificity could arise from differential expression of cargo adapters, post-translational modification of Kir2 channels that target them for autophagic degradation, or increased activity of alternative endolysosomal protein degradation pathways that contribute to Kir2 degradation in cardiomyocytes (Ambrosini et al., 2014; Jansen et al., 2008; Kolb et al., 2014). Future work will focus on the mechanism that confers cell-type specificity to the autophagic degradation of Kir2 channels.
 
-## Kir2 channels are acetylated and have reduced activity in the absence of autophagy
+### Kir2 channels are acetylated and have reduced activity in the absence of autophagy
 
 In previous cases where autophagy regulates membrane proteins, substrate protein levels correlate with substrate protein activity (Gao et al., 2018; Shehata et al., 2012; Wu et al., 2016). Furthermore, most mutations or manipulations that inhibit lysosomal degradation of Kir2.1 lead to increased Kir2 currents (Ambrosini et al., 2014; Jansen et al., 2008; Kolb et al., 2014; Varkevisser et al., 2013). In iSPNs, however, loss of autophagy led to increased Kir2 abundance and decreased Kir2 current.
 
@@ -220,51 +639,614 @@ Although acetylation was initially described as a PTM for histones and other nuc
 
 Several alternative models could explain our data including decreased levels of a required cofactor for Kir2 in autophagy-deficient cells and changes in membrane localization that are below the detection limit of our approaches. Future examination of the Kir2 interactome in wild-type and autophagy-deficient cells could elucidate these mechanisms.
 
-## Implications for neuropsychiatric disorders with dysfunctional autophagy
+### Implications for neuropsychiatric disorders with dysfunctional autophagy
 
 We demonstrate here that the absence of autophagy in dSPNs or iSPNs results in deficits in striatal-based behaviors. Our data are consistent with reports of hyperactivity in the open-field and reduction of motor learning in multiple animal models with disrupted SPN function (Durieux et al., 2012; Fuccillo, 2016; Peça et al., 2011; Rothwell et al., 2014; Wang et al., 2017). A disruption of striatal-based learning, hyperactivity and increased stereotypies, as seen in dSPNAtg7cKO and iSPNAtg7cKO mice, is also observed in neurodevelopmental syndromes including autism spectrum disorder (ASD) (Fuccillo, 2016). Genetic variants in autophagy-associated genes are risk factors for the development of ASDs and reduced autophagic function is observed in human post-mortem tissue from ASD cases and in mouse models of the disease, suggesting that changes in autophagic function in the striatum in addition to other brain regions may contribute to the pathophysiology of ASDs (Lieberman et al., 2019b; Poultney et al., 2013; Tang et al., 2014; Yan et al., 2018). Identifying the cell-type-specific effects of loss of autophagy in distinct neuronal subtypes may permit targeted development of therapeutics that act downstream of the autophagy machinery to correct neural circuit deficits and avoid undesired effects of non-specific autophagic activation.
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mouse)</td>
+      <td>Atg7</td>
+      <td></td>
+      <td>Ensembl:ENSMUSG00000030314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mouse)</td>
+      <td>Atg5</td>
+      <td></td>
+      <td>Ensembl:ENSMUSG00000038160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, Male and Female)</td>
+      <td>C57/Bl6J</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH5α</td>
+      <td>ThermoFisher</td>
+      <td>Cat # 18265017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mouse)</td>
+      <td>B6.Cg-Tg(Drd1a-tdTomato)6Calak/J</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID: IMSR_JAX:016204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mouse)</td>
+      <td>Tg(Adora2a-cre)KG139Gsat</td>
+      <td>MMMRC</td>
+      <td>RRID:MMRRC_031168-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mouse)</td>
+      <td>Tg(Drd1-cre)EY262Gsat</td>
+      <td>MMMRC</td>
+      <td>RRID:MMRRC_030989-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mouse)</td>
+      <td>Atg7tm1.1Tchi/Atg7tm1.1Tchi</td>
+      <td>Gift of Masaaki Komatsu</td>
+      <td>RRID:MGI:3590136</td>
+      <td>(Komatsu et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mouse)</td>
+      <td>129S1/Sv-Hprttm1(CAG-cre)Mnn/J</td>
+      <td>(Tang et al., 2002)</td>
+      <td>RRID:IMSR_JAX:004302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>Atg5-/- transformed MEF</td>
+      <td>Gift of Ana Maria Cuervo; (Kuma et al., 2004)</td>
+      <td>RRID:CVCL_0J75</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>Atg5+/+ transformed MEF</td>
+      <td>Gift of Ana Maria Cuervo; (Kuma et al., 2004)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>Atg7-/- primary MEF</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>Atg7+/+ primary MEF</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Red fluorescent protein polyclonal</td>
+      <td>Rockland</td>
+      <td>Cat # 600-401-379</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-DARPP32 monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 2306S</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-beta actin monoclonal</td>
+      <td>Novus Biologicals</td>
+      <td>Cat # NB600-501</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Kir2.1 monoclonal</td>
+      <td>Antibodies Incorporated</td>
+      <td>Item # 73–210 RRID:AB_11000720</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Kir2.3 monoclonal</td>
+      <td>Antibodies Incorporated</td>
+      <td>Item # 75–069 RRID:AB_2130742</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Kv1.2 monoclonal</td>
+      <td>Antibodies Incorporated</td>
+      <td>Item # 75–008 RRID:AB_2296313</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-PSD95 polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # Ab18258</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti p62 polyclonal</td>
+      <td>American Research Products</td>
+      <td>Cat # 03-GP62-C</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti p62 polyclonal</td>
+      <td>MBL</td>
+      <td>Cat # PM045</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti LC3B polyclonal</td>
+      <td>Novus Biologicals</td>
+      <td>Cat # NB600-1384</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti GFP polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # Ab13970</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti Lamp1 monoclonal</td>
+      <td>Iowa Hybridoma Bank</td>
+      <td>Cat # 1D4B</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti Kir2.1 polyclonal</td>
+      <td>Alomone Labs</td>
+      <td>Cat # APC-026</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti ubiquitin antibody monoclonal VU-1</td>
+      <td>LifeSensors</td>
+      <td>Cat # VU101</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-acetyl-lysine monoclonal, clone 4G12</td>
+      <td>Millipore</td>
+      <td>Cat # 05–515</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-Flag M2 monoclonal</td>
+      <td>Sigma</td>
+      <td>Cat # F1804</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-HA polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab9110</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-NeuN, monoclonal clone A60</td>
+      <td>Millipore</td>
+      <td>Cat # MAB377</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Atg7 (D12B11) monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 8558</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Tubulin (TU-01)</td>
+      <td>Invitrogen</td>
+      <td>Cat # 13–8000</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pierce Protein A/G Magnetic Beads</td>
+      <td>Thermo</td>
+      <td>Cat # 88802</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti Guinea Pig IgG (H+L) Secondary antibody, Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-11073</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti Guinea Pig IgG (H+L) Secondary antibody, Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-24150</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H+L) Secondary Antibody, Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-21206</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H+L) Secondary Antibody, Alexa 594</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-21207</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG1 (H+L) Secondary Antibody, Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-21121</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse IgG1 (H+L) Secondary Antibody, Alexa 594</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-21125</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Chicken IgY (H+L) Secondary Antibody, Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-11039</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rat IgG1 (H+L) Secondary Antibody, Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>Cat # A-21248</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H+L) Secondary IRDye 680LT</td>
+      <td>LI-COR</td>
+      <td>P/N 925–68023</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin, Alexa 488 conjugate</td>
+      <td>Invitrogen</td>
+      <td>S11223</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse IgG (H+L) conjugated to HRP</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Code: 715-035-151</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H+L) conjugated to HRP</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Code: 715-035-152</td>
+      <td>See Table S3 in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVDJ-CMV-DIO-Kir2.1-t2A-ZsGreen</td>
+      <td>Stanford Viral Vector Core (Rothwell et al., 2014)</td>
+      <td>AAV61</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-EF1a-DIO-mCherry (3.2 × 1012 viral genomes/mL)</td>
+      <td>UNC Viral Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVDJ-hSyn-FLEX-mmAtg7-t2A-ZsGreen (1.7 × 1013 genome copies/mL)</td>
+      <td>Vector BioLabs</td>
+      <td>This study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope Multiplex Fluorescent Reagent</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat # 320850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope probe: Mm-Kcnj2 (Kir2.1)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat # 476261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAScope probe: Mm-Kcnj4 (Kir2.3)</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat # 525181-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein assay kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat # 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Immobilon Western Chemiluminescent HRP Substrate</td>
+      <td>Millipore</td>
+      <td>Can # WBKLS0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>XhoI</td>
+      <td>New England Biolabs</td>
+      <td>Cat # R0146S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BamHI-HF</td>
+      <td>New England Biolabs</td>
+      <td>Cat # R3136S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HindIII-HF</td>
+      <td>New England Biolabs</td>
+      <td>Cat # R3104S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DpnI</td>
+      <td>New England Biolabs</td>
+      <td>Cat # R0176S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Herculase II fusion DNA polymerase</td>
+      <td>Agilent Technologies</td>
+      <td>Cat # 600675</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>dNTP mix</td>
+      <td>ThermoFisher</td>
+      <td>Cat # R0191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Halt Protease Inhibitor Cocktail (100X)</td>
+      <td>ThermoFisher</td>
+      <td>Cat # 78430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td>Tocris Biosciences</td>
+      <td>Cat # 1334</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin citrate</td>
+      <td>Tocris Biosciences</td>
+      <td>Cat # 1069/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Tocris Biosciences</td>
+      <td>Cat # 1128/1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Cell 505-Star</td>
+      <td>New England Biolabs</td>
+      <td>Cat # S9103S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Cell TMR-Star</td>
+      <td>New England Biolabs</td>
+      <td>Cat # S9105S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobiotin tracer</td>
+      <td>Vector Laboratories</td>
+      <td>Cat # SP-1120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TrypLE</td>
+      <td>ThermoFisher</td>
+      <td>Cat # 12604054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichostatin A</td>
+      <td>Tocris Biosciences</td>
+      <td>Cat # 1406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide</td>
+      <td>Tocris Biosciences</td>
+      <td>Cat # 4106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-ethylmaleimide</td>
+      <td>Sigma</td>
+      <td>Cat # E3876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PR-619</td>
+      <td>Sigma</td>
+      <td>Cat # SML0430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite</td>
+      <td>LI-COR</td>
+      <td>RRID:SCR_014211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Benchling</td>
+      <td></td>
+      <td>RRID:SCR_013955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, David Sulzer (ds43@columbia.edu).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Animals
+#### Animals
 
 A2A-cre (KG139) and D1-cre (ey262) were obtained from the Mutant Mouse Resource and Research Center (MMRRC). Mice were backcrossed onto C57Bl6J mice from Jackson Laboratories (Bar Harbor, ME). Atg7Fl/Fl mice were a gift of Masaaki Komatsu (Komatsu et al., 2005) and backcrossed onto the C57Bl6 background. D1-tomato mice (B6.Cg-Tg(Drd1a-tdTomato)6Calak/J) were obtained from Jackson Laboratories. iSPNCtrl (Atg7Fl/Fl) and iSPNAtg7cKO experimental mice were obtained as follows. A2Acre hemizygous mice were crossed with Atg7Fl/Fl mice. A2Acre Atg7Fl/wt offspring were crossed with Atg7Fl/Fl mice, yielding experimental offspring. For experiments with mice expressing the D1-tomato allele, either parent (A2Acre Atg7Fl/wt or Atg7Fl/Fl) harboring a single D1-tomato allele was used. The D1-tomato and the A2Acre alleles were always maintained in hemizygosity. The same strategy was used to generate dSPNCtrl (Atg7Fl/Fl) and dSPNAtg7cKO (D1cre Atg7Fl/Fl) mice. For viral injections, some crosses included A2Acre Atg7Fl/wt, D1cre Atg7Fl/wt with Atg7Fl/wt to generate A2Acre Atg7wt/wt (or D1cre Atg7wt/wt) and A2Acre Atg7Fl/Fl (or D1cre Atg7Fl/Fl) littermates. Mice were housed on a 12:12 hr light:dark cycle and provided with food and water ad libitum. Mice were genotyped using Transnetyx genotyping services (Memphis, TN). Pups were weaned on postnatal day 18–21 into same sex groups of 3–5 mice. All subjects were randomly assigned to groups. All experiments were conducted according to NIH guidelines and approved by the Institutional Animal Care and Use Committees of Columbia University and the New York State Psychiatric Institute.
 
-## Generation of primary Atg7WT and Atg7KO MEFs
+#### Generation of primary Atg7WT and Atg7KO MEFs
 
 To generate Atg7 wildtype and knockout MEFs, male C57BL/6 mice homozygous for the conditional Atg7Fl allele (Komatsu et al., 2005), were crossed to female mice expressing Cre recombinase in the X-linked Hprt gene (Tang et al., 2002), permitting excision of the loxP-flanked exon 14 of Atg7 at the zygote or early cleavage stage in progeny. Mice in the F1 generation (Atg7+/-) were intercrossed to generate pregnant dams with F2 embryos for experimental isolation.
 
 At E14.5, embryos were collected from deeply anesthetized pregnant dams. Uterine horns were dissected and rinsed in ice-cold Hank’s buffered saline solution (HBSS), and embryos were individually separated into HBSS. The liver, heart, and head were removed from the embryos and collected for genomic DNA extraction. The remaining tissue was incubated in 0.25% trypsin first overnight at 4°C, then 10 min at 37°C. Samples were triturated with fire-polished glass pipettes and diluted in MEF media: DMEM (Thermo Fisher) with 10% FBS (Thermo Fisher), 0.1 mM beta-mercaptoethanol (Sigma), and 1x Antibiotic-Antimycotic (Thermo Fisher). Cells were filtered through a 100-micron sieve and plated in MEF media. After plating, genotypes were confirmed and cells were collected for western blot analysis.
 
-## Method details
+### Method details
 
-## Behavior
+#### Behavior
 
 Cohorts of iSPNCtrl and iSPNAtg7cKO or dSPNCtrl and dSPNAtg7cKO mice were assembled from 4 to 6 litters of the cross described above born within 3 weeks of each other. Behavioral experiments were conducted on these cohorts between 3 and 5 months of age. A similar number of male and female mice was used in behavioral experiments. Data were combined for Figure 2 as no interaction between sex and genotype was observed. See Table 1 for behavioral data split by sex. All behavioral results were combined from at least three independent cohorts of mice. Mice in these cohorts were handled weekly by the experimenter and weighed at these times. Two dSPNAtg7cKO mice were excluded from the behavioral analysis due to observed handling-induced seizures.
 
-## Open field
+#### Open field
 
 Each mouse is gently placed in the center of a clear Plexiglas arena (27.31 × 27.31×20.32 cm, Med Associates ENV-510) lit with dim light (~10 lux), and is allowed to ambulate freely for 50 min. Infrared (IR) beams embedded along the X, Y, Z axes of the arena automatically track distance moved, horizontal movement, vertical movement, stereotypies, and time spent in center zone. At the end of the test, the mouse is returned to the home cage and the arena is cleaned with 70% ethanol and wiped dry.
 
-## Rotarod
+#### Rotarod
 
 The accelerating rotarod test is widely to evaluate the motor coordination and motor learning in rodents. Two to four experimental mice are placed on the still rotarod (Ugo Basile) in one lane of the rotating drum (3 cm in diameter, textured to avoid slips) for two minutes. The mice are returned to the homecage for thirty minutes. Mice are then returned to the rotarod, rotating at a constant speed for 5 rpm, for 2 min, followed by return to the homecage for thirty minutes. For the first experimental session (Trial 1), experimental mice are placed on the rotating drum. The rotating speed of the Rotarod (Ugo Basile) is set at 5 rpm. Once all mice are steady, the rotation speed is gradually increase from 5 to 40 rpm over a 5-min period. Latency to fall is recorded automatically when the animal lands on the sensing platform below each lane or when the mouse grabbed on to the drum and executed a full revolution without running. To avoid injury, a cut-off latency of 300 s is applied to each trial. Animals were returned to the home cage for 30 min followed by two additional trials. The drum and the platform are wiped clean with paper towel moistened with 70% ethanol and let dry.
 
-## Home cage repetitive behaviors
+### Home cage repetitive behaviors
 
 Repetitive behaviors and stereotypies such as excessive self-grooming, circling, jumping, and back flipping were evaluated in a simple test using clean mouse cages as described in a recent study (Yang et al., 2015). Each subject mouse was placed in a clean home cage, allowed to habituate for 30 min and monitored for an additional 30 min. The cage bottom was covered with a thin layer of clean bedding. The cage is equipped with a metal wire bar lid as some repetitive back flipping involve the use of the metal lid. Occurrences of self-grooming were quantified for one minute every ten minutes from the final thirty minutes and summed together.
 
-## Viral injections
+### Viral injections
 
 D1cre Atg7wt/wt, D1cre Atg7Fl/Fl, A2Acre Atg7wt/wt or A2Acre Atg7Fl/Fl mice (2–3 months old littermates of both sexes) were anesthetized with 5% isoflurane. Animals were transferred onto a Kopf Stereotax and maintained under isoflurane anesthesia (1–2%). Hair was removed, the scalp was sterilized using chlorhexidine solution and an incision was made. The coordinates of Bregma and Lambda were determined. Virus was injected at AP +0.8, ML, −1.6, and DV −2.8 from the dura. A small hole was drilled into the skull and 230 nL of virus (see above table for viral titers) was injected through a glass pipet using a Nanoject 2000 (Drummond Scientific; 50 pulses of 4.6 nL). The glass pipet was slowly withdrawn after 5 min. The skull was closed using vicryl sutures. Animals were housed for 3–4 weeks before being sacrificed for electrophysiology.
 
-## Cloning/molecular biology
+### Cloning/molecular biology
 
 The Kir2.1 coding sequence was PCR amplified from pAAV-mmKir2.1 (Gift from C. Kellendonk) into FUGW-VAMP2-Flag-SNAP (Sheehan et al., 2016) using the XhoI-BamHI sites (Tables S1 and S2 in Supplementary file 1). Kir2.1-ExtHA was synthesized by Genewiz with the HA tag inserted at amino acid 114 (Chen et al., 2002) and subcloned into FUGW-mmKir2.1-FLAG-SNAP. For cell culture electrophysiology experiments, mmKir2.1 CDS was PCR amplified from FUGW-mmKir2.1-FLAG-SNAP into the HindIII-BamHI sites of pcDNA2.1-eGFP (Addgene 13031).
 
@@ -272,17 +1254,17 @@ Site-directed mutagenesis of FUGW-mmKir2.1-FLAG-SNAP or FUGW-mmKir2.1-ExtHA-FLAG
 
 Plasmid preps for transfection were generated using Qiagen midi or maxiprep kits following manufacturer instructions.
 
-## Cell culture
+### Cell culture
 
 Atg5WT and Atg5KO MEFs were obtained from Ana Maria Cuervo (Albert Einstein College of Medicine, New York). Cells were cultured using standard techniques in Dulbecco’s modified Eagle medium (DMEM; Gibco) supplemented with 10% fetal bovine serum (Gibco) and antibiotic-antimycotic mix (Gibco). Cells were not passaged more than ten times. Cells were incubated at 37°C in 5% CO2. Cell lines were Mycoplasma negative. Genotype of the cell line was validated biochemically with assays for autophagy function as described in the manuscript.
 
-## Transfection
+### Transfection
 
 For experiments, cells were plated and allowed to settle for 1–2 days. Cells were then transfected with Calfectin and plasmid DNA prepared with Qiagen Maxiprep or Midiprep kits according to manufacturer’s instructions. Experiments were conducted 36–48 hr after transfection.
 
-## Electrophysiology
+### Electrophysiology
 
-## Slice
+#### Slice
 
 Animals of either sex in Figures 3–4 were 4–6 weeks old at the time of experiment. Animals in Figure 6 were 3–4 months old. No interaction between sex and genotype was observed in electrophysiological or morphological analysis; however, we were underpowered for these analyses. Acute slices were generated as described (Lieberman et al., 2018). Briefly, mice underwent rapid cervical dislocation without anesthesia. Brains were removed and submerged in ice-cold cutting solution (in mM): 10 NaCl, 2.5 KCl, 25 NaHCO3, 0.5 CaCl2, 7 MgCl2, 1.25 NaH2PO4, 180 sucrose, 10 glucose bubbled with 95% O2/5% CO2 to pH 7.4. The cerebellum was removed and the brain was mounted on its caudal surface on a vibratome. 250 µm coronal sections including the striatum were collected.
 
@@ -294,17 +1276,17 @@ For synaptic recordings (in voltage clamp), whole cell recordings were establish
 
 For current clamp recordings, glass pipets were filled with (in mM): 115 potassium gluconate, 20 KCl, 20 HEPES, 1 MgCl2, 2 MgATP, 0.2 NaGTP adjusted to pH 7.25 with KOH, osmolarity 285 mOsm. ACSF contained 1.5 mM CaCl2 instead of 2 mM CaCl2 to reduce contribution of calcium currents to Kir2 current measurements (Lieberman et al., 2018). Excitability parameters and Kir2 currents were measured as described in Lieberman et al. (2018). For current density measurements, the barium-sensitive current (0.1 mM BaCl2) was normalized to that cell’s capacitance measured in current clamp recordings as described (Lieberman et al., 2018).
 
-## MEFs
+#### MEFs
 
 MEFs were cultured as described above. For electrophysiology experiments cells were cultured on 15 mm diameter glass coverslips placed in 35 mm diameter tissue culture dishes. Cells were transfected 36–48 hr before the experiment as described above. At the time of the experiment, coverslips were washed three times in recording saline (in mM): 135 NaCl, 4.8 KCl, 1.8 CaCl2, 1 MgCl2, 10 Glucose, 5 HEPES, pH 7.4 (Ambrosini et al., 2014). Cells were identified using IR/DIC optics and fluorescence was confirmed. In recordings in Figure 5, cells were transfected with Kir2.1-Flag-SNAP and labeled 1 hr prior to recording with SNAPcell TMR Star as described below. Because of the low intensity of the TMR star fluorescence, we subcloned Kir2.1 into pcDNA-eGFP as described above to have native GFP fluorescence for recordings in Figure 6. No difference was found in maximal Kir2 amplitude between cells transfected with Kir2.1-Flag-SNAP compared to Kir2.1-eGFP. Glass pipets (2–4 MΩ) were filled with (in mM): 115 potassium gluconate, 20 KCl, 20 HEPES, 1 MgCl2, 2 MgATP, 0.2 NaGTP adjusted to pH 7.25 with KOH, osmolarity 285 mOsm. After the whole cell configuration was established, cells were voltage clamped at −60 mV and currents were recorded using the same protocol as used for SPNs above (Lieberman et al., 2018).
 
-## Neuronal fills/spine counting
+### Neuronal fills/spine counting
 
 Dendritic reconstructions were obtained and analyzed essentially as described in Lieberman et al. (2018). For dendritic reconstructions, neurobiotin (1 mg/mL, Vector Laboratories) was added to the internal solution. Once the whole cell configuration was established, the neurobiotin was allowed to diffuse into the recorded cell for 15 min. The patch pipette was then carefully withdrawn. The slice was removed from the recording chamber and fixed overnight in 4% PFA in 0.1M phosphate buffer (PB), pH7.4. Only one cell was filled per slice. Slices were then washed in TBS. Slices were stained overnight with Alexafluor488-conjugated streptavidin (1:200, ThemoFisher) in 0.6% TritonX-100 in TBS. Slices were then washed in TBS and mounted on slides. Slices were allowed to dry overnight in the dark before being coverslipped with Fluoromount-G containing DAPI. Slides were imaged on a Leica SP5 confocal microscope in system optimized Z-stacks using a 20X objective. Segments of the dendritic tree approximately 50 microns from the soma were subsequently imaged with a 63x/1.4x oil objective with system optimized z stacks to permit analysis of spine density.
 
 Dendritic trees were traced using the simple neurite tracer plugin in ImageJ. Traced neurites were collapsed into a max projection and analyzed using the Sholl analysis plugin. Dendritic spine density was manually determined from max projections of z-stacks obtained using the 63x objective. Dendritic protrusions defined by being 0.5–2 µm long with a shaft and head were counted from at least three dendritic segments of 20–50 µm per cell. The number of spines per micron were then averaged for each cell. At least three cells were analyzed per animal. Data were combined from 3 to 5 animals per group.
 
-## In vivo biochemistry
+### In vivo biochemistry
 
 Whole striatal lysates were generated by acute cervical dislocation and decapitation. The brain was rapidly removed and the striatum was removed as described in Lieberman et al. (2018). Striata were sonicated in RIPA buffer containing 1X protease inhibitor cocktail (Pierce). Protein concentration was determined using the BCA kit and lysates were diluted in sample buffer. Lysates were stored at −80°C until analysis.
 
@@ -314,31 +1296,31 @@ For the optiprep (iodixanol) gradient, samples were prepared using a procedure m
 
 Preparations were completed for the specified number of adult mice (3–4 months old, littermate and sex-matched iSPNCtrl and iSPNAtg7cKO) in parallel. For the total lysate experiment, samples were collected from four separate cohorts and combined for final analysis.
 
-## Perfusion fixation
+### Perfusion fixation
 
 Perfusion fixation was conducted as described (Lieberman et al., 2018). Animals were deeply anesthesized with an intraperitoneal injection of euthasol. Following loss of the righting and toe-pinch reflex, animals were transcardially perfused with 10–20 mL 0.9% NaCl followed by 50 mL of freshly prepared 4% paraformaldehyde in 0.1M PB, pH 7.4. Brains were removed and post-fixed in 4%PFA overnight at 4°C. Brains were subsequently washed with PBS and sectioned in 30–50 µm sections on a Leica vibratome. Sections were stored at −20°C in cryoprotective solution (30% ethylene glycol, 30% glycerol, 0.1M PB, pH7.4) until staining.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemical analysis was performed as described (Lieberman et al., 2018). Briefly, sections were removed from cryoprotectant solution and washed three times in TBS. Sections were then blocked in 10% normal donkey serum (NDS), 0.1% Triton-X 100, TBS for 1 hr at room temperature. Sections were then transferred to primary antibody solution in 2% NDS, 0.1% Triton-X 100, TBS overnight at 4°C. The next day, sections were washed three times in TBS and subsequently incubated in secondary antibodies in 2% NDS, 0.1% Triton-X 100, TBS at room temperature for 1 hr. Alexafluor conjugated secondary antibodies were used at a concentration of 1:500. Sections were then washed in TBS and mounted on slides, coversliped with Fluoromount-G containing DAPI and stored for imaging.
 
-## RNAScope
+### RNAScope
 
 Brain sections were removed from cryoprotectant and washed in TBS. Sections were then mounted on charged Superfrost slides and allowed to dry overnight. A border was made with a PAP pen around the sections. Sterile water was dropped onto the slide and allowed to sit twice for two minutes. Pretreat IV was dropped onto the slide and slides were incubated in a humidified oven at 40°C for 30 min. Sections were rinsed twice for 2 min each in sterile water. Premixed probes were added to the slide and allowed to incubate for 2 hr at 40°C. Each section received probes against either Kir2.1 or Kir2.3. A custom probe in the C3 channel was developed by Advanced Cell Diagnostics (Newark, CA) for Kir2.3. A commercially available probe in the C1 channel was used for Kir2.1. Signals were amplified using the RNAScope Fluorescence Multiplex Kit. Sections were then immunohistochemically labeled for DARPP32 and p62 as described above.
 
-## Cell culture lysates
+### Cell culture lysates
 
 Cells were grown in 10 cm diameter dishes. Dishes were rinsed twice with PBS. RIPA buffer containing 1X protease inhibitors, deubiquitinase inhibitors (5 mM N-ethylmaleimide, 50 µM PR619) and deacetylase inhibitors (200 nM Trichostatin A and 5 mM Nicotinamide) was added to the plate. Dishes were rotated at 4°C for 5 min. Cells were scraped off of the dish, sonicated and allowed to sit on ice for 1 hr. Lysates were then spun at 10,000xg for 10 min. The supernatant was saved. Protein concertation was determined.
 
-## Cycloheximide pulse chase
+### Cycloheximide pulse chase
 
 Cells were plated and transfected in a 6-well plate. 36–48 hr after transfection with FUGW-Kir2.1-FLAG-SNAP, cells were treated with cycloheximide (0.1 mg/mL) for the specified amount of time. Cells were then lysed as described above.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Cells were transfected with FUGW-Kir2.1-extHA-FLAG-SNAP or FUGW-Kir2.1-K334R-FLAG-SNAP 36–48 hr before lysis. Cell lysates were generated as above. All steps were performed at 4°C. For immunoprecipitation (IP), equal amounts of protein (0.5–1.0 mg) of lysate was precleared with Protein A/G magnetic beads (Thermo) for 1 hr. Beads were removed with a strong magnet. Four µg of rabbit anti-HA (Abcam) were added to the cleared supernatant and rotated overnight. The next day, 25 µL of Protein A/G magnetic beads were added and samples were rotated for 1 hr. Beads were collected, washed once in one volume of RIPA buffer, three times in one volume of RIPA buffer containing 500 mM NaCl (instead of 150 mM NaCl) and one final time in RIPA Buffer. Beads were then lysed in 1X sample buffer. The entire eluted volume of the IP was used for a gel.
 
-## Western blot analysis
+### Western blot analysis
 
 10% or 12% polyacrylamide homemade gels were prepared as described (Santini et al., 2007). For some experiments, 4–12% gradient NuPage gels were used. Protein was transferred on PVDF membrane (pore size 0.2 µm; Immobilon-Fl). Membranes were blocked in 5% non-fat milk (Biorad) in TBS-T (TBS + 0.1% Tween-20) at room temperature for 1 hr. Membranes were incubated overnight at 4° in primary antibody in 5% bovine serum albumin in TBS-T. Antibody concentrations are specified in Table S3 in Supplementary file 1. Blots were then washed three times in TBS-T, followed by incubation in secondary antibody in 5% milk TBS-T for one hour at room temperature. Blots were washed three more times in TBS-T.
 
@@ -348,13 +1330,13 @@ For some experiments, blots were stripped using 2% SDS, 62 mM Tris pH6.8, 0.8% �
 
 Blots developed using the ECL technique were analyzed in ImageJ using standard routines. Blots developed using the LICOR Odyssey were analyzed in ImageStudio Lite.
 
-## Snap labeling/immune/quantification
+### Snap labeling/immune/quantification
 
 For YFP-LC3 colocalization with Kir2.1, FUGW-Kir2.1-FLAG-SNAP and an expression vector expressing YFP-LC3 were co-transfected. Some cells were treated with Bafilomycin (100 nM) or DMSO vehicle control (DMSO concentration 0.1%) for 2 hr.
 
 SNAPcell ligands were purchased from New England Biolabs, dissolved to 1 mM in DMSO and frozen in aliquots. Transfected cells (with FUGW-Kir2.1-FLAG-SNAP or specified mutants) on glass coverslips were placed in a 24-well plate in complete media. The media was replaced with complete media containing 1 µM SNAPcell ligand and incubated at 37°C in 5% CO2 for 30 min. Coverslips were then washed three times in PBS and returned to the incubator in fresh complete media (without SNAPcell ligand) for 30 min. Complete media was replaced again. This was considered time = 0 min. At the specified time, cells were removed from the incubator and fixed as described below.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were fixed as described (Lieberman et al., 2017). Cells on glass coverslips were removed from the incubator and washed three times in PBS. Cells were then fixed in 4% paraformaldehyde (Electron Microscopy Sciences) diluted in 5% Sucrose and 1X PBS for 5 min at room temperature. Coverslips were then washed in PBS and incubated in pre-chilled methanol and stored at −20°C until staining.
 
@@ -362,23 +1344,23 @@ Coverslips were removed and washed in PBS three times. Coverslips were then bloc
 
 For experiments that quantified colocalization of Kir2.1 signal with another organelle marker, images were acquired using a confocal microscope (Leica SP5 system) in a single mid-nuclear plane using a 63/1.4x oil objective.
 
-## Surface labeling/internalization
+### Surface labeling/internalization
 
 For determining the level of Kir2.1 on the cell surface in cell culture, cells were grown and transfected as described above with FUGW-Kir2.1-extHA-FLAG-SNAP. Cells were then fixed in 4% PFA, 5% Sucrose, 1X PBS for 10 min at room temperature. Coverslips were washed in PBS and then blocked in 10% NDS, PBS (without triton) for one hour at room temperature. Coverslips were then incubated in Rabbit anti HA (Abcam) in 2% NDS, PBS (no triton) for one hour at room temperature. Coverslips were washed three times in PBS and then blocked and permeabilized with 10% NDS, PBS and 0.1% Triton X-100 for 1 hr at room temperature. They were then transferred to primary antibody solution containing Ms anti FLAG M2 (Sigma) 2% NDS, PBS, 0.1% Triton X-100 for 1 hr at room temperature. Coverslips were then washed in PBS and transferred to secondary antibody in 2% NDS, PBS, 0.1% Triton X-100 for 1 hr followed by washes and mounting.
 
 For quantifying Kir2.1 internalization, live, transfected cells on glass coverslips were washed in ice cold Earl’s balanced salt solution (EBSS). Coverslips were then labeled with Rabbit anti HA antibody (10 µg/mL) in 5% BSA in EBSS for 15 min at 4°C. Cells were then washed 2x in ice-cold 5% BSA/EBSS, 1x in PBS and into complete media. This was considered time = 0 min. Coverslips were fixed at the specified time as described for surface labeling. Coverslips were blocked for 30 min in 10% NDS, PBS followed by incubation in AlexaFluor conjugated anti Rabbit secondary antibody. Cells were then blocked and permeabilized for staining against the FLAG tag as described above.
 
-## Epifluorescence imaging
+### Epifluorescence imaging
 
 For quantification of SNAPcell fluorescence, surface labeling and surface internalization, cells were imaged following staining on an Olympus IX81 inverted fluorescence microscope using a 63x/1.35 oil objective (Olympus) and the corresponding fluorescence fulter set. Images were captured using an Orca Flash 4 V3 camera (Hamamatsu) and MetaMorph software (Molecular Devices). For all experiments, specified fluorescence (i.e. SNAPcell ligand, surface signal) was normalized to FLAG fluorescence intensity (total Kir2.1 protein) for each cell to control for variations in the level of Kir2.1 expression following transient transfection. Exposures were set to ensure that no pixels were saturated. The exposure times were constant for each fluorescence channel across condition. For each transfection (independent replicate) at least 20 cells from three to four fields were imaged. In all experiments, data was combined from at least three independent replicates, unless otherwise specified.
 
-## Image analysis
+### Image analysis
 
-## Brain slice
+#### Brain slice
 
 NeuN, p62, or D1-tomato -positive cells were manually counted in single Z-planes of 500 µm2 containing the dorsal striatum. Cells were counted from 4 to 8 images per animal. RNAScope puncta were manually counted in single Z-planes. The number of cells counted are listed in the Figure legend and arise from sections from at least four mice. All counting was conducted by an observer blind to genotype.
 
-## Cell culture
+#### Cell culture
 
 For analysis of colocalization of Kir2.1 puncta with organelle markers (YFP-LC3, Lamp1, or EEA1), a mask was created using a multiple threshold analysis plugin on ImageJ (Borgkvist et al., 2015) over YFP-LC3, Lamp1, or EEA1 puncta in single, mid-nuclear Z-planes. Results were similar when data were combined from multiple Z-sections per cell. Puncta with Kir2.1 intensity greater than two standard deviations above the background were considered Kir2.1+.
 
@@ -388,6 +1370,6 @@ A similar approach was taken to analyze surface staining of Kir2.1-extHA-FLAG-SN
 
 All image analysis was conducted blind to condition.
 
-## Data analysis
+### Data analysis
 
 All data analysis were conducted blinded to genotype and treatment. Electrophysiology data was analyzed offline using Clampfit Software (Molecular Devices, Sunnyvale, California). Statistical analysis was conducted in GraphPad Prism 7 (La Jolla, CA). No explicit power analysis was used but group sizes were determined based on past work from our group (Lieberman et al., 2018; Tang et al., 2014). Comparisons between two groups were made with a two-tailed, unpaired t-test. Comparisons between two or more groups were made with a one-way ANOVA followed by a Bonferroni post-hoc test. Comparisons with two variables were made with a two-way ANOVA followed by Bonferroni post-hoc tests unless otherwise specified. For electrophysiology N is the number of cells recorded from and the number of mice is listed in parentheses. Data were not formally tested for being parametric. Some datasets were formally tests for outliers with the Grubbs’ test with a cutoff of p<0.05. RNAScope data (puncta per cell) were analyzed with the Kolmogorov-Smirnov test.

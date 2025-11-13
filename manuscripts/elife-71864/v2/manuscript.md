@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04byxyr05 Unit on Cellular and Molecular Neurodevelopment, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States
-2. https://ror.org/04byxyr05 Bioinformatics and Scientific Programming Core, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States
-3. https://ror.org/01s5ya894 Flow and Imaging Cytometry Core, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States
+1. Unit on Cellular and Molecular Neurodevelopment, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States ([ROR:04byxyr05](https://ror.org/04byxyr05))
+2. Bioinformatics and Scientific Programming Core, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States ([ROR:04byxyr05](https://ror.org/04byxyr05))
+3. Flow and Imaging Cytometry Core, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States ([ROR:01s5ya894](https://ror.org/01s5ya894))
 
 † Corresponding author
 
@@ -34,15 +34,47 @@ In this study, we performed scRNAseq analyses on the LGE, MGE, CGE, and cortex f
 
 ## Results
 
-## Identification of distinct cell groups in the E12.5 mouse telencephalon
+### Identification of distinct cell groups in the E12.5 mouse telencephalon
 
 To characterize cellular heterogeneity in the developing telencephalon, we used the 10X Genomics scRNAseq platform to profile the transcriptome of cells from the LGE, MGE, CGE and CTX of E12.5 wild-type (WT) mice. At E12.5, neurogenesis has been occurring in the GEs for several days, with most cells residing in the SVZ and MZ with significantly fewer cycling VZ neural progenitors (Turrero García and Harwell, 2017; Wichterle et al., 2001). Conversely, the vast majority of E12.5 dorsal cortical cells are VZ neural progenitors, with a small number of layer VI projection neurons starting to emerge at this time (Di Bella et al., 2021; Kwan et al., 2012). To ensure that we collected a sufficient number of VZ cells from the GEs to identify transcriptional diversity in this population, we also dissected E12.5 brains from transgenic reporter mice that express destabilized Venus driven by the Nestin promoter and intronic enhancer (Nes-dVenus) (Sunabori et al., 2008; Figure 1A–B). We used fluorescence-activated cell sorting (FACS) to isolate GFP-positive cells from Nes-dVenus E12.5 mouse telencephalon (Figure 1—figure supplement 1). Note that ~ 87% of cortical cells are GFP-positive at E12.5 compared to 41–53% of GE cells, consistent with different proportions of VZ cells in these regions (Figure 1—figure supplement 1B). After filtering out non-viable outliers via the 10X Genomics Cell Ranger pipeline, we obtained >84,000 potential cells (Figure 1—figure supplement 2). We then removed predicted doublets using Doubletfinder (McGinnis et al., 2019) and applied a stringent cutoff of >1500 genes per cell, which resulted in 36,428 E12.5 cells passing quality control that were used for downstream analysis. Cells harvested from both WT and Nes-dVenus mice were used for all subsequent analysis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig1-v2.jpg)
+
+**Figure 1.:** (A) Coronal section through the LGE/MGE (left) and CGE (right) of a E12.5 Nes-dVenus telencephalon immunostained for GFP (green), Nestin (Red) and Dcx (Blue). Scale bar = 200 μm. (B) Schematic of telencephalic cell dissection and single-cell dissociation. (C) Uniform manifold approximation and projection (UMAP) plots of all cells labeled by brain region (left), mouse line (middle) or putative cell clusters (right). (D) Representative genes displaying enriched temporal and/or spatial expression patterns. CTX, cortex; LGE, lateral ganglionic eminence; MGE, medial ganglionic eminence; CGE, caudal ganglionic eminence; WT, wild-type.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Flow cytometry gating strategy: gated for potential live cells, then gated for DRAQ5+/DAPI- live cells, then gated by DRAQ5 width vs. height to select singlets, then EGFP vs. DAPI to collect GFP+ live cells. (B) FACS plots depicting GFP-positive cells collected from the CTX, LGE, MGE, and CGE in E12.5 Nes-dVenus mice. (C) FACS plots depicting GFP-positive cells collected from the LGE, MGE, and CGE in E14.5 Nes-dVenus mice.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cells that had unique feature counts < 4500 or > 1500 were filtered out using Seurat (black horizontal line in top right plot approximates 1500 gene/cell cutoff). Mitochondrial counts over 0.05% and Hbb gene counts over 0.01% were also filtered out. (B) Scatterplots showing the total number of molecules detected versus the number of genes detected before and after the filtrations (top). Additional set of scatterplots showing the total number of molecules detected versus the percentage of mitochondrial genes before and after the filtrations (bottom).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) UMAP plot of all cells annotated by brain region. (B) Heatmap showing expression of top 20 differentially expressed genes (DEGs) in each region. Each column represents averaged expression in cells, color-coded as per the color scale. (C) UMAP plots depicting the top 5 DEGs from each region. Cells are color-coded for levels of gene expression as per the color scales.
+
 We used the Seurat software package (Stuart et al., 2019) to integrate these cells and identified 20 cell clusters that were largely segregated by brain regions, with clean separation of the CTX and MGE cells while there was greater overlap between the LGE and CGE populations (Figure 1C). We observed common VZ markers (Nestin and Hes5) and SVZ/early neurogenic markers (Dcx and Ccnd2) present in cells from all four regions, as well as GABAergic-specific (Ascl1, Dlx5, and Gad2) and glutamatergic-specific (Pax6, Neurod6, Eomes, Tbr1, and Slc17a7) genes restricted to their expected populations (Figure 1D). By comparing each region individually within the dataset, we observed many genes strongly enriched in the CTX, LGE, MGE, and CGE. While some of these genes have well-described roles in specific brain regions, we did uncover many genes whose regional restricted patterns have not been previously described, such as the alpha-internexin encoding gene Ina and Insulin like Growth Factor Binding Protein five encoding gene Igfbp5 in the CGE (Figure 1—figure supplement 3f). Together, these data reveal different cohorts of telencephalic cells display distinct region-specific gene expression profiles exist at E12.5.
 
-## Common neurogenic zones within each ganglionic eminence
+### Common neurogenic zones within each ganglionic eminence
 
 To identify specific cell clusters in the GEs, we removed cortex-derived cells and identified 17 GE-derived cell clusters (Figure 2A). Based on Nestin and Dcx expression patterns, we identify seven clusters that likely represent VZ cells (high Nestin), six clusters that likely represent postmitotic cells (high Dcx), and four clusters that likely represent SVZ basal progenitors (moderate levels of both Nestin and Dcx). To confirm successful enrichment of Nestin-expressing VZ cells with the Nes-dVenus mouse, we plotted GE cells based on which mouse line they were derived from. This approach clearly demonstrates that the vast majority of high Nestin-expressing cells are indeed derived from the Nes-dVenus mouse, with significantly fewer VZ cells captured in the WT mice (Figure 2A). Violin plots revealed that most cells expressing VZ-enriched genes such as Nestin, Hes5, and Ccnd1 were harvested from the Nes-dVenus mouse whereas a greater percentage of cells expressing more mature markers such as Dcx, Tubb3, and Gad2 arose from the WT mice (Figure 2—figure supplement 1A). Thus, we have a significantly greater percentage of VZ cells compared to previous studies (Mayer et al., 2018; Mi et al., 2018; Figure 2—figure supplement 2), which provides us greater power to identify transcriptional heterogeneity and smaller subgroups in this VZ cell population that may have been previously overlooked.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig2-v2.jpg)
+
+**Figure 2.:** (A) UMAP plots displaying all GE-derived cells annotated from left to right by: brain region, putative cell clusters, mouse strain and expression of VZ marker Nestin and SVZ/MZ marker Dcx. (B) UMAP visualizations show transcriptional diversity in each GE region. Several genes are depicted to highlight distinct neurogenic stages: Nestin, Hes5, and Olig2 are indicative of VZ cells (green), Asc1 and Gadd45g label intermediate SVZ cells (blue), and Dcx, Sp9, and Mapt depict postmitotic neuronal precursors (red). (C) UMAP plots of MGE, LGE, and CGE cells annotated via putative cell clusters and including Slingshot analyses depicting developmental progression through neurogenic stages.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Violin plots showing expression of pan-VZ-enriched genes from Nes-dVenus mice and expression of SVZ/early postmitotic genes enriched in cells from WT mice. (B–C) Violin plots depicting differential gene expression profiles of cells arising from the LGE (yellow), MGE (blue), and CGE (red). Highlighted genes include those that are predominantly expressed within one GE (B) or display intriguing expression profiles based on scRNAseq and/or in situ hybridization data (C).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Integration of 3 scRNAseq datasets of embryonic mouse ventral telencephalon: This study, E13.5 MGE and E14.5 LGE and CGE dataset acquired via Drop seq from Mayer et al., 2018, and MGE and CGE dataset from two different timepoints (E12.5 and E14.5) acquired via Fluidigm C1 system by Mi et al., 2018. UMAP plots depicting all cells from the three studies annotated by dataset (A), putative cell clusters (B) and expression of Nestin and Dcx (C). (D–E) High Nestin-expressing cells (> 1.5 normalized dataset) were extracted from the combined dataset. UMAP plot annotated by dataset (D) and bar graphs showing the total number of high Nestin-expressing cells present in each study (E).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** UMAP visualizations highlighting genes that help define VZ (green), SVZ (blue) and MZ (red) cell populations in the MGE, LGE, and CGE. Cells are color-coded according to their levels of expression as per the color scale. Red ovals in LGE and CGE highlight the Ebf1-positive, Mapt-positive, Sp9-negative population of putative immature GABAergic projection neurons.
 
 The LGE, MGE, and CGE cells were individually extracted out and reanalyzed to reveal three common cell types shared between regions: (1) Nestin, Hes5, and Olig2 expressing mitotic VZ cells, (2) Ascl1, Ccnd2, and Gadd45g expressing SVZ/BP cells, and (3) Dcx, Sp9, and Mapt expressing postmitotic SVZ and MZ cells (Figure 2B and Figure 2—figure supplement 3). Focusing on MGE-specific genes, Nkx2.1 was expressed by most cells within the MGE whereas Lhx6 was restricted to postmitotic MGE cells, a subset of which also expressed the mature MGE-derived subtype marker Sst (Figure 1—figure supplement 2B and Figure 2—figure supplement 3). Within LGE and CGE clusters, Ebf1-positive, Mapt-positive and Sp9-negative clusters likely identify GABAergic projection neurons (Nery et al., 2002; Figure 2—figure supplement 3). Also, Npy- and Sst-positive clusters were captured within LGE and CGE dataset representing MGE-derived migrating cortical interneurons migrating through both regions towards the cortex (Kessaris et al., 2014; Figure 2—figure supplement 3). Pseudotime analysis with Slingshot (Street et al., 2018; Trapnell et al., 2014) showed clear trajectories in each region originating from Nestin-positive clusters progressing towards the postmitotic cell markers (Figure 2C). This analysis displays many branching patterns within VZ neural progenitors which could reflect distinct developmental trajectories among Nestin-positive VZ cells in GEs.
 
@@ -52,17 +84,45 @@ We next asked how GE-derived Nestin-expressing VZ neural progenitors are transcr
 
 **Figure 3.:** (A) High Nestin- and Dcx-expressing cells (> 1.5 fold expression above normalized dataset) were extracted from the GE populations and replotted. UMAP plots are annotated by: expression of Nestin and Dcx (upper left), brain region (lower left), separated into VZ (high-Nestin, red), SVZ (Dcx-, Mki67-, and Ccnd2-expressing, light blue) and MZ (Dcx-positive and Ccnd2- and Mki67-negative, dark blue) (upper right), and putative cell clusters (lower right). (B) Heatmap of genes enriched in VZ, SVZ and MZ cells. Each column represents expression in a single cell, color-coded as per the color scale. (C) UMAP plots depicting the top five differentially expressed genes (DEGs) in the VZ, SVZ, and MZ regions. (D) Heatmap showing expression of top 5 DEGs in each cell cluster from (A), with colored bar depicting whether each cluster contains predominantly VZ (red), SVZ (light blue), or MZ (dark blue) cells.
 
-## Transcriptional heterogeneity throughout the ventricular zone
+### Transcriptional heterogeneity throughout the ventricular zone
 
 To uncover transcriptional heterogeneity specifically in VZ cells, we extracted and replotted the high Nestin-expressing cells (threshold >1.5) from the LGE, MGE, and CGE (Figure 4). This resulted in analysis of 9,308 high Nestin-expressing cells (3036 from LGE, 3890 from MGE, and 2302 from CGE). These cells were largely clustered based on brain region and were grouped into eight clusters. There was a large cohort of VZ-enriched genes that were restricted to one specific GE (Figure 4B–C), with some genes being confined to specific VZ clusters (subdomains) within a GE (Figure 4D). We selected ~20 genes that displayed intriguing spatial or cell-type-specific expression patterns within the VZ, the majority of which have not been previously described and visualized them with the RNAscope HiPlex in situ hybridization assay. We identified several pan-VZ genes such as Ednrb, Pkdcc, and Nrarp that are known to regulated by Wnt and Notch signaling pathways that are critical for embryonic development (Krebs et al., 2001; Takeo et al., 2016; Vitorino et al., 2015), as well as mitosis associated genes Prc1, Cenpf, and Ube2c (Engeland, 2018; Figure 5—figure supplement 1A-C). There were also genes that were strongly expressed in VZ cells in only two regions: Ptx3 was expressed in VZ cells throughout the LGE and CGE yet absent from the MGE, while Fgfr3 was strongly expressed in MGE and CGE VZ cells and absent in the LGE (Figure 5A, Figure 2—figure supplement 1C and Figure 2—figure supplement 3C). And several genes were restricted or strongly enriched in VZ cells in only one region, such as Shisa2 and Cntnap2 in the LGE, Igfbp5 in the CGE, and Asb4 in the MGE (Figure 5B–D, Figure 2—figure supplement 1C and Figure 2—figure supplement 3C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig4-v2.jpg)
+
+**Figure 4.:** (A) High Nestin-expressing (> 1.5 normalized dataset) cells were extracted from GE dataset and replotted as UMAP graphs annotated by brain region and putative cell clusters. (B) Heatmap of top 20 DEGs enriched in VZ cells from the LGE, MGE, and CGE. Each column represents expression in a single cell, color-coded as per the color scale. (C) Dot-plot depicting expression levels of DEGs within each brain region (LGE, MGE, and CGE) and cell cluster. (D) Heatmap showing expression of top 5 DEGs in each cluster from (A), with colored bar depicting whether each cluster contains cells from the LGE (yellow), MGE (blue), or CGE (red). Gray bar indicates cluster containing cells from all three GEs. Each column represents averaged expression in cells, color-coded as per the color scale.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Ridgeline plots showing the distribution of Nestin (A, red) and Dcx (B, blue) expression when E12.5 GEs were isolated at different expression values from the log normalized count data. (C–D) Violin plot showing the median and interquartile range of Nestin and Dcx post-subsetting at Nestin > 1.5 (C) and Dcx > 1.5 (D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig5-v2.jpg)
+
+**Figure 5.:** (A–E) Left, RNAscope HiPlex and HiPlexUp in situ hybridization assays of differentially expressed VZ genes on E12.5 GE coronal sections. Right, the corresponding UMAP plots of VZ-enriched genes depicted in the in situs. Scale bar in A = 200 μm. (F) UMAP plot of Nes-enriched cells annotated by brain region. (G) Schematic of a whole mount view of the E12.5 ventral telencephalon depicting the approximate spatial location of VZ-enriched genes within the GEs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Left, RNAscope HiPlex and HiPlexUp in situ hybridization assays of VZ-enriched genes expressed in all GEs. Right, the corresponding UMAP plots of SVZ/MZ-enriched genes depicted in the in situs. Scale bar in A = 200 μm. (D) UMAP plot of Nes-enriched cells annotated by brain region.
 
 We also observed many genes that had more refined spatially restricted expression patterns within various GEs, highlighting several examples below. Gadd45g, a gene that regulates stem cell proliferation (Kaufmann and Niehrs, 2011), displayed a salt-and-pepper profile with enriched expression in the dorsal LGE (dLGE) and ventral MGE and CGE (vMGE and vCGE) (Figure 5—figure supplement 1C). The UMAP plots of Id4 and Mest look quite similar, but we observed slight differences in their VZ expression profiles. Id4 was expressed in VZ cells throughout the LGE, CGE, and MGE, whereas Mest was strongly enriched in the LGE and dorsal CGE (Figure 5C). These moderate differences highlight the need to confirm transcriptome expression profiles from scRNAseq experiments via in situ hybridizations.
 
 Mt3 and Rbp1 are both strongly enriched in middle-to-ventral LGE VZ cells and in the dCGE, with only a smattering of Mt3- and Rbp1-expressing cells observed in the MGE (Figure 5D, Figure 2—figure supplement 1C and Figure 2—figure supplement 3C). Igfbp5 expression is exclusively restricted to vCGE VZ cells (Figure 5D, Figure 2—figure supplement 1C and Figure 2—figure supplement 3C). Bcan and Wnt7b are enriched in vMGE VZ cells, with Wnt7b expression extends into the vCGE, whereas Nkx6.2 is expressed at the LGE/MGE boundary as previously described (Sousa et al., 2009; Figure 5E, Figure 2—figure supplement 1C and Figure 2—figure supplement 3C). Of note, Fabp7 is strongly enriched in VZ cells in the dLGE, vMGE, and both dCGE and vCGE, as if forming longitudinal stripes along the dorsal and ventral GE boundaries (Figure 5E). In sum, our data reveal previously unidentified transcriptional heterogeneity within VZ cells throughout the GEs that define specific progenitor subdomains and likely regulate specific GABAergic cell types from these regions (Figure 5G).
 
-## Transcriptional heterogeneity in SVZ/MZ cells within the ventral telencephalon
+### Transcriptional heterogeneity in SVZ/MZ cells within the ventral telencephalon
 
 We utilized a similar approach to extract SVZ/MZ cells from the GEs that had high expression levels of Dcx, which displayed fairly clean segregation between LGE, MGE and CGE resulting in 11 cell clusters (total of 12,307 high Dcx-expressing cells with 3900 from LGE, 3902 from MGE and 4505 from CGE; Figure 6—figure supplement 1A). We observed clusters containing previously described region-enriched genes such Nkx2.1, Lhx6 and Lhx8 in the MGE, and Nr2f1 and Nr2f2 for CGE (Kanatani et al., 2008; Lodato et al., 2011); the expression profile of these genes was confirmed with in situ hybridizations (Figure 6A–C, Figure 6—figure supplement 1A-C and Figure 6—figure supplement 2A). CGE-enriched genes Nr2f1 and Nr2f2 are also expressed in the dLGE and POA, in agreement with previous observations (Hu et al., 2017; Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig6-v2.jpg)
+
+**Figure 6.:** (A–E) Left, RNAscope HiPlex and HiPlexUp in situ hybridization assays of differentially expressed SVZ/MZ genes on E12.5 GE coronal sections. Right, the corresponding UMAP plots of SVZ/MZ-enriched genes depicted in the in situs. Scale bar in A = 200 μm. (F) UMAP plot of Dcx-enriched cells annotated by brain region. (G) Schematic of a coronal section through the E12.5 ventral telencephalon depicting the approximate spatial location of SVZ/MZ-enriched genes within the GEs.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) High Dcx-expressing cells (> 1.5 normalized dataset) were extracted from the full GE dataset and replotted, annotated by brain region (middle) and putative cell clusters (right). (B) Heatmap of top 20 SVZ/MZ-enriched genes showing differential expression between LGE, MGE, and CGE. Each column represents expression in a single cell, color-coded as per the color scale. (C) Dot-plot depicting expression levels of SVZ/MZ-enriched DEGs within each brain region (LGE, MGE, and CGE) and cell cluster. (D) Heatmap showing expression of top 5 DEGs in each cluster from (A), with colored bar depicting whether each cluster contains cells from the LGE (yellow), MGE (blue), or CGE (red). Each column represents averaged expression in cells, color-coded as per the color scale.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) Left, RNAscope HiPlex and HiPlexUp in situ hybridization assays of SVZ/MZ-enriched genes on E12.5 GE coronal sections. Right, the corresponding UMAP plots of SVZ/MZ-enriched genes depicted in the in situs. Scale bar in A = 200 μm. (E) UMAP plot of Dcx-enriched cells annotated by brain region.
 
 We also identified markers that separated cycling SVZ/BP cells from postmitotic MZ cells. Genes such as Ascl1, Dlk2, E2f1, and Tcf4 are expressed in the VZ-SVZ boundary throughout all GEs and then downregulated in postmitotic MZ cells (Figure 6—figure supplement 2B). Conversely, Zfhx3, Ina, Mapt, Mpped2, and Stmn2 are predominantly expressed in Dcx-positive postmitotic cells in the MZ layers, with Zfhx3 and Mpped2 expressed near the SVZ-MZ boundary, whereas Ina, Mapt and Stmn2 are found in deeper MZ regions (Figure 6B and Figure 6—figure supplement 2C). These expression patterns reveal a conserved set of genes that are tightly regulated as cells transition from cycling progenitors to postmitotic GABAergic neurons throughout all GEs.
 
@@ -72,15 +132,35 @@ Focusing specifically on the CGE, Cxcl14 is expressed by many CGE-derived intern
 
 To highlight a few more notable expression patterns, the pro-neural gene Pou3f1/Oct-6 is strongly enriched in LGE SVZ adjacent to the Ebf1 domain and is not expressed in the MGE or CGE (Figure 6D). Nrp2 is enriched in deep MZ cells within the dLGE, dMGE, and vCGE, whereas Pcsk1n displays a complementary pattern in the vLGE and vMGE but is not expressed within the CGE (Figure 6—figure supplement 2D). Ccnd2 and Flrt2 were enriched in the SVZ layer of both LGE and CGE with significantly weaker expression in the MGE (Figure 6C–E). Curiously, Rprm is enriched in the SVZ of both the dMGE and a small group of cells in the most ventral CGE (Figure 6C). In sum, these single-cell gene expression profiles provide new insight into the transcriptional diversity in Dcx-positive SVZ/MZ postmitotic GE cells (Figure 6G) and revealed subdomains of genetically defined SVZ/MZ cells that have not been previously described.
 
-## Developmental transition of ventral telencephalic VZ neural progenitors over time
+### Developmental transition of ventral telencephalic VZ neural progenitors over time
 
 There is ample evidence that the capacity for neural progenitors to generate specific neuronal subtypes changes over time (Gal et al., 2006; Pilz et al., 2013). In the MGE, production of SST-expressing interneurons is significantly decreased at E14.5 compared to E12.5 (Bandler et al., 2017; Inan et al., 2012; Miyoshi and Fishell, 2011). To characterize transcriptional changes in GE progenitors over time, we collected LGE, MGE and CGE cells from E14.5 WT and Nes-dVenus mice. These cells were largely segregated by brain region and consisted of 19 cell clusters (Figure 7—figure supplement 1A-C). As with the E12.5 population, significant heterogeneity was still observed when extracting out the highest Nestin- and Dcx-expressing cells (Figure 7—figure supplement 1D-G).
 
 To compare the E12.5 and E14.5 cells, we integrated these datasets together. The majority of postmitotic cell clusters consisted of E14.5 cells, and most Nestin-expressing cells were derived from the Nes-dVenus mouse (Figure 7A). These integrated populations were still primarily segregated based on region and were divided into seventeen different clusters (Figure 7B–C). We isolated strong Nestin- and Dcx-expressing cells from the integrated dataset and performed a differential expression analysis on both sets of cells (Figure 7D–F). High Dcx-expressing from E12.5 and E14.5 were nearly completely overlapping with no significant differences, indicating that the global population of postmitotic cells from GEs are transcriptionally very similar at these ages (Figure 7F). However, when we compared the high Nestin-expressing cells, we observed more age-specific segregation in the dot plot clusters, with one subdomain predominantly consisting of E12.5 cells and another population containing E14.5 cells (Figure 7E).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig7-v2.jpg)
+
+**Figure 7.:** (A–C) UMAP plots of all E12.5 and E14.5 cells annotated by mouse line and embryonic timepoint (A), brain region (B), and putative cell clusters (C). (D) UMAP plot of E12.5 and E14.5 cells depicting expression levels of Nestin and Dcx. Red box = approximate location of high Nestin-expressing cells (> 1.5 normalized dataset), blue box = approximate location of high Dcx-expressing cells (> 1.5 normalized dataset). (E) UMAP plot depicting high Nestin-expressing cells annotated by brain region (top), putative cell clusters (lower left) and timepoint (lower right). Note the clouds that are strongly enriched for E12.5 cells (dark green oval) and E14.5 cells (dark red oval). (F) UMAP plot depicting high Dcx-expressing cells annotated by brain region (top), putative cell clusters (lower right) and timepoint (lower left). Note that E12.5 and E14.5 cells are largely overlapping populations with no clear differential clustering. (G) Heatmap depicting the top 20 DEGs between the E12.5-enriched (dark green oval) and E14.5-enriched (dark red oval) clouds of VZ cells from (E). The E14.5-derived cells were removed from the E12.5-enriched cloud, and vice versa. Each column represents expression in a single cell, color-coded as per the color scale. (H) Heatmap depicting the top 5 DEGs in VZ cells from each GE region at E12.5 and E14.5. Each column represents averaged expression in cells, color-coded as per the color scale.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Chart describing the number of cells, with mean reads per cell and genes per cell from each E14.5 ganglionic eminence based on CellRanger output. (B–E) UMAP plots of all E14.5 cells annotated by putative cell clusters (B), brain region (C), mouse line (D) and expression of Nestin and Dcx (E). (F) UMAP plot of high Nestin-expressing E14.5 cells (> 1.5 normalized dataset) annotated by brain region (left) and putative cell clusters (right). (G) UMAP plot of high Dcx-expressing E14.5 cells (> 1.5 normalized dataset) annotated by brain region (left) and putative cell clusters (right).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** UMAP visualizations show a high level of pan-VZ gene expressions throughout the high Nestin subset E12.5 and E14.5 dataset.
+
 To compare these two cell clusters, we removed the E12.5 cells from the E14.5 cloud (and vice versa) and identified many genes enriched specifically in E12.5 or E14.5 Nestin-expressing cells (Figure 7G). Changes in VZ gene expression between these two timepoints were also observed within specific GEs (Figure 7H). Many genes enriched in E14.5 high Nestin-expressing are commonly associated with BPs or postmitotic cells such as Dcx, Tubb3, Mpped2, Arx, and Nrxn3 (Figure 7G). The adult neural progenitor marker Igfbpl1 (Artegiani et al., 2017) was also upregulated in E14.5 VZ cells when compared to E12.5 (Figure 7G). To ensure that the dVenus is not ‘leaking’ into non-VZ cells at E14.5 and contaminating this dataset with SVZ/BP cells, we confirmed that many previously reported pan-VZ cell markers are still expressed in the E14.5 high Nestin-expressing cells (Figure 7—figure supplement 2). Taken together, this data suggests that while Dcx-positive cells are transcriptionally very similar between E12.5 and E14.5, Nestin-positive VZ cells in the GEs display a transition in their gene expression profiles, with a greater number of neurogenic and postmitotic genes present in E14.5 VZ cells.
 
 We next validated some of the differentially expressed genes between E12.5 and E14.5 via RNAscope HiPlexUp. As predicted from the scRNAseq data (Figure 7G), Sfrp1 and Sparc were strongly downregulated in E14.5 VZ GE cells compared to E12.5 (Figure 8A). Mir124a-1hg was strongly enriched in E14.5 VZ cells in the LGE compared to E12.5, agreeing the predictions from the scRNAseq data (Figure 7G), whereas Gucy1a1 expression was upregulated in the SVZ of E14.5 LGE and CGE (Figure 8B). Id4 was strongly downregulated in E14.5 VZ cells in the LGE and MGE, but was significantly upregulated in E14.5 SVZ cells in the LGE and CGE (Figure 8C). Notably, several of these genes displayed weaker expression in the MGE SVZ at E14.5 compared to E12.5 (Mir124a-1hg, Gucy1a1 and Cited2; Figure 8B–C). Focusing specifically on the CGE, we observe a strong downregulation of Hmga2 and Igfbp5 in E14.5 VZ cells and an upregulation of Sox6 in both VZ and SVZ cells (Figure 8D). We also observed numerous gene expression patterns that were consistent between E12.5 and E14.5, such as Slc1a3 in the dCGE VZ, Sp8 in the dLGE SVZ and Ebf1 throughout the LGE SVZ/MZ (Figure 8—figure supplement 1). These in situ hybridizations confirm our scRNAseq data indicating dynamic changes in gene expression patterns in VZ and SVZ cells between E12.5 and E14.5, likely reflecting changes in cell fate trajectories throughout embryonic development.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig8-v2.jpg)
+
+**Figure 8.:** (A–D) RNAscope HiPlexUp assay of genes differentially expressed in VZ and SVZ cells between E12.5 and E14.5 on coronal sections through the GEs. Dashed circles on the UMAP plot (A) indicate the clouds that are strongly enriched for E12.5 cells (dark green) and E14.5 cells (dark red). Scale bar in A = 200 μm. Dotplot in (A) contains high Nestin-expressing cells from E12.5 and E14.5, dotplots in B-D consist of all E12.5 and E14.5 cells.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/71864/elife-71864-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–C) Left, RNAscope HiPlexUp assay of genes displaying similar expression profiles in VZ and/or SVZ cells between E12.5 and E14.5. Right, UMAP plots of the genes depicted in the in situ panels. Scale bar in A = 200 μm. (D–E) UMAP plots of all E12.5 and E14.5 cells annotated by brain region (D) and mouse line and embryonic timepoint (E).
 
 ## Discussion
 
@@ -98,29 +178,144 @@ In sum, this study characterized the gene expression profiles of VZ and SVZ cell
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Nes-dVenus</td>
+      <td>RIKEN BioResource Research Center</td>
+      <td>C57BL/6-Tg(Nes-d4YFP*)1HOkn,RRID:IMSR_RBRC04058</td>
+      <td>Pooled sexes</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild-Type</td>
+      <td>The Jackson Laboratory</td>
+      <td>C57BL/6 J000664,RRID:IMSR_JAX:000664</td>
+      <td>Pooled sexes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chromium Next GEM Single Cell 3' Kit</td>
+      <td>10X Genomics</td>
+      <td>v2 (120267) v3 (1000092)</td>
+      <td>v2 &amp; v3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope HiPlex Assays</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>324,102</td>
+      <td>v1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11122,RRID:AB_221569</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Doublecortin (Chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>AB153668,RRID:AB_2728759</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nestin (Rat Monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB353,RRID:AB_94911</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger</td>
+      <td>10X Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td>v3.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>the Satija Lab at the New York Genome Center</td>
+      <td>RRID:SCR_007322</td>
+      <td>v3.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slingshot</td>
+      <td>Kelly Street and Sandrine Dudoit at UC Berkeley</td>
+      <td>RRID:SCR_017012</td>
+      <td>https://github.com/kstreet13/slingshotv2.2.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DoubletFinder</td>
+      <td>Christopher S. McGinnis and Zev J. Gartner at UCSF</td>
+      <td>RRID:SCR_018771</td>
+      <td>https://github.com/chris-mcginnis-ucsf/DoubletFinderv3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNAscope HiPlexImage Registration</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td></td>
+      <td>v1 and v2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CC</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td>20.0.9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Health Institution</td>
+      <td>RRID:SCR_003070</td>
+      <td>http://imagej.nih.gov/ij/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All mouse colonies were maintained in accordance with protocols approved by the Animal Care and Use Committee at the Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD). Wild-type (WT) C57BL/6 mice were obtained from The Jackson Laboratory whereas Nestin-d4-Venus (Nes-dVenus) mice were provided by RIKEN BioResource Research Center (Sunabori et al., 2008). For all embryonic experiments, the day on which a vaginal plug was found was considered as embryonic day (E) 0.5.
 
-## Single-cell isolation
+### Single-cell isolation
 
 WT and Nes-dVenus pregnant dams at stage E12.5 and E14.5 were euthanized with Euthasol. Embryos were removed and incubated on ice in oxygenated artificial cerebrospinal fluid (ACSF) throughout dissection. ACSF, in mM: 87 NaCl, 26 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 0.5 CaCl2, 7 MgCl2, 10 glucose, 75 sucrose saturated with 95% O2, 5% CO2, pH 7.4. Cortices and all three GEs were microdissected and tissue collected into labeled tubes with ACSF. Tissue was pooled from > 4 embryos for each experiment and was then enzymatically dissociated with 1 mg/ml of Pronase (Sigma-Aldrich #10165921001) in ACSF for 15–20 min. Pronase solution was removed and 1–2 ml of reconstitution solution (ACSF +1:100 fetal bovine serum (FBS) +0.01% DNase) was added to each tube before mechanically dissociating with fire-polished glass pipettes of large, medium and small-bore openings. DAPI (1 μl) and DRAQ5 (5 μM, ThermoFisher #62251) were then added and cell solution was passed through a pre-wetted 35 μm filter prior to sorting (Nes-dVenus) or cell counting (WT).
 
-## Fluorescence-activated cell sorting
+### Fluorescence-activated cell sorting
 
 Dissociated cell solution from Nes-dVenus mice were sorted with Beckman Coulter MoFlo Astrios cell sorter or Sony SH800S sorter with 100 μm chips. Cells were first gated with forward scatter (FSC) vs. side scatter (SSC) to remove debris, then gated with DAPI vs. DRAQ5 to select for live cells (DRAQ5+/DAPI-), then gated with GFP 488 vs. FSC to harvest GFP-expressing cells. Cells were collected into DNA LoBind microcentrifuge tubes (Eppendorf #022431021) containing cold oxygenated ACSF supplemented with 1% FBS.
 
-## Single-cell RNA sequencing and library generation
+### Single-cell RNA sequencing and library generation
 
 For each experiment, ~ 15,000 cells from WT or sorted Nes-dVenus mice were run through the 10X Genomics Single Cell controller. Chromium Single Cell 3’ GEM (versions 2 and 3), Library and Gel Bead Kits were used according to the manufacturer’s instructions. Libraries were sequenced on Illumina HiSeq 2500 by the NICHD Molecular Genomics Core. For the E12.5 MGE/LGE/CGE, three biological replicates were used to make independent libraries (1 WT and 2 Nes-dVenus). For the E12.5 CTX and the E14.5 MGE/LGE/CGE samples, two replicates were used for library construction (1 WT and 1 Nes-dVenus). Library quality and DNA content were assessed using a BioAnalyzer (Agilent) and Qubit (ThermoFisher), respectively. Libraries from each experiment were balanced by DNA quantity, pooled, and sequenced on an Illumina HiSeq 2500 by the NICHD Molecular Genomics Core.
 
-## Single-cell RNA sequencing analysis
+### Single-cell RNA sequencing analysis
 
 Reads were aligned to the mouse genome (mm10) before generating a gene by barcode count matrix using Cell Ranger (10X Genomics) with default parameters. In total, ~120,000 cells were obtained from the original Cell Ranger pipeline. To analyze high quality cells only, we first removed cells that had unique molecular identifier (UMI) counts > 4500 or < 1500. We also ran Doubletfinder (McGinnis et al., 2019) to identify doublets and removed data points when the doublet score was greater than 0.3 from further analysis in each of the datasets. Cells were further filtered based on the percentage of UMI counts associated with mitochondrial mapped reeds and number of detected genes per cell, and we removed cells > 3 median absolute deviations (MADs) from the median of the total population. For cells derived from WT mice, an additional step was taken by filtering out cells based on the percentage of UMI associated with hemoglobin subunit beta (Hbb) transcripts (since Nes-dVenus cells were sorted, they did not require this additional filtering step). Filtration of cells based on quality control metrics, data normalization, scaling, dimensionality reduction, highly variable feature detections, population subsetting and data integration were all performed with the Seurat package using the standard gene expression workflow and default parameters except when scaling counts, where the mitochondrial transcript and ribosomal transcript percentages were regressed out, before non-linear dimensional reduction and community detection were performed (Stuart et al., 2019). Applying these stringent filtration steps resulted in a total of 36,428 E12.5 cells and 24,218 E14.5 cells that were analyzed in this manuscript, with the following breakdown: E12.5: 12,052 MGE cells, 10,316 LGE cells, 9275 CGE cells, 4785 CTX cells. E14.5: 8389 MGE cells, 8658 LGE cells, 7171 CGE cells.
 
 To characterize lineage arising from progenitors, Slingshot was used for single cell trajectory inference using UMAP projections (Street et al., 2018). For the comparative analysis of VZ, SVZ, and MZ cells, the effects of cell cycle heterogeneity were mitigated by calculating cell-cycle phase scores based on known canonical markers (Nestorowa et al., 2016) and the scores were regressed out during the data scaling using ScaleData. To distinguish cycling and postmitotic cells from Dcx-expressing population subsets, Mki67- and Ccnd2-expressing cells (> 0.5 the log normalized count data) were considered SVZ cells whereas Mki67- and Ccnd2-negative cells (< 0.5 the log normalized count data) were labeled as MZ cells. To integrate multiple datasets, standard Seurat integration workflow was followed by performing the log normalization method. However, when combining previously reported datasets (GES103983 and GES109796; Mayer et al., 2018; Mi et al., 2018) with our data, the SCTransform normalization method was used under Seurat v3 integration workflow. For GSE109796, CGE, dMGE, and vMGE datasets from both E12.5 and E14.5 were analyzed. Cells that expressed the dorsal telencephalic cortical markers such as Tbr1, Eomes, Neurod2, and Neurod6 were considered contamination from the microdissected GE samples and removed prior to SCTransform normalization.
 
-## Fluorescent in situ hybridization and immunostaining
+### Fluorescent in situ hybridization and immunostaining
 
 E12.5 and E14.5 embryonic brains were removed and drop-fixed in 4% paraformaldehyde overnight at 4°C. Fixed brains were washed in PBS, incubated in 30% sucrose overnight at 4°C and the cryopreserved. Tissues were cryosectioned at 14–16 µm in the coronal plane. RNAscope HiPlex and HiPlexUp in situ hybridization assays (Advanced Cell Diagnostics) were performed according to the manufacturer’s instructions. In situ hybridization images were taken using Zeiss AxioImager.M2 with or without ApoTome.2. Autofluorescence signals from blood vessels in embryonic brain tissues were corrected using Photoshop (Adobe) layer masking strategies. Image outlining was performed using ImageJ’s (National Institutes of Health) Canny Edge Detector and superimpose of all images was conducted with RNAscope HiPlex Image Registration software (Advanced Cell Diagnostics).
 

@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05hs6h993 Michigan State University East Lansing United States
+1. Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
 
 † Corresponding author
 
@@ -31,9 +31,29 @@ Our results reveal a novel mechanism of IP inhibition in which the second predic
 
 ## Results
 
-## SpoIVFB inhibition requires both BofA and SpoIVFA in Escherichia coli
+### SpoIVFB inhibition requires both BofA and SpoIVFA in Escherichia coli
 
 To study RIP of Pro-σK, we engineered Escherichia coli to synthesize variants of SpoIVFB and Pro-σK, and the inhibitory proteins BofA and SpoIVFA, in various combinations. The SpoIVFB variant contains the extra TMS cytTM (Saribas et al., 2001; Figure 1A), which improves accumulation (Zhou et al., 2009). The substrate variant Pro-σK(1–127) lacks the C-terminal half of Pro-σK, but SpoIVFB cleaves Pro-σK(1–127) accurately and the cleavage product is easily separated from the substrate by SDS-PAGE (Prince et al., 2005). cytTM-SpoIVFB cleaved about 80% of the Pro-σK(1–127) upon production from a single plasmid (Figure 1B, lane 1). The additional production of GFPΔ27BofA, a functional fusion protein lacking the first predicted TMS (TMS1) of BofA (Rudner and Losick, 2002), and SpoIVFA from a second plasmid reduced cleavage to about 30% (lane 2). Production of full-length BofA (undetectable by immunoblot due to lack of antibodies) and SpoIVFA from a second plasmid gave a similar result (lane 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig1-v1.jpg)
+
+**Figure 1.:** (A) Diagram of SpoIVFB inhibition during Bacillus subtilis endosporulation and upon heterologous expression in Escherichia coli. During endosporulation (Left), the mother cell (MC) produces SpoIVFB and its inhibitory proteins BofA and SpoIVFA, which localize to the outer forespore (FS) membrane (OFM). The MC also produces Pro-σK, which associates with membranes. When synthesized in E. coli (Right), the proteins localize to the inner membrane (IM). The expanded view of the membranes (Center) shows a SpoIVFB variant with an extra N-terminal transmembrane segment (cytTM), and highlights several residues (E44, V70, and P135) at or near the active site in the membrane domain, which is connected to the CBS domain by an interdomain linker. When produced in E. coli, cytTM-SpoIVFB cleaves Pro-σK(1–127), removing its N-terminal Proregion [Note: Pro-σK(1–126) was renamed Pro-σK(1–127) as explained in Halder et al., 2017]. Coproduction of SpoIVFA and either full-length BofA or GFPΔ27BofA (lacking predicted TMS1) inhibits Pro-σK(1–127) cleavage. The dashed double-headed arrows indicate that SpoIVFB, BofA or GFPΔ27BofA, and SpoIVFA form a complex of unknown structure. (B) Cleavage assays comparing inhibition by SpoIVFA and either GFPΔ27BofA or full-length BofA in E. coli. Pro-σK(1–127) and cytTM-SpoIVFB were produced alone (lane 1, pYZ2) or in combination with GFPΔ27BofA and SpoIVFA (lane 2, pYZ46), or full-length BofA and SpoIVFA (lane 3, pSO212). Alternatively, ‘pET Quartet’ plasmids were used to produce Pro-σK(1–127), cytTM-SpoIVFB, SpoIVFA, and either GFPΔ27BofA (lane 4, pSO40) or full-length BofA (lane 5, pSO213). Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis with SpoIVFA (Top), GFP (Middle), or penta-His antibodies (Bottom, 2 and 30 s exposures). The single star (*) indicates cross-reacting proteins below SpoIVFA and the double star (**) indicates breakdown species of GFPΔ27BofA. A breakdown species below SpoIVFA (not indicated) is observed in some experiments. The graph shows quantification of the cleavage ratio (cleavage product/[Pro-σK(1–127)+cleavage product]) for three biological replicates. Error bars, 1 standard deviation. (C) Cleavage assays comparing inhibition by either GFPΔ27BofA or SpoIVFA. pET Triplet plasmids were used to produce Pro-σK(1–127), cytTM-SpoIVFB, and either GFPΔ27BofA (lane 2, pSO64) or SpoIVFA (lane 3, pSO65). Samples were subjected to immunoblot analysis and quantification as in (B).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Upon starvation, a polar septum forms that divides the cell into mother cell (MC) and forespore (FS) compartments (Top). The MC engulfs the FS, resulting in two membranes surrounding the FS. Upon completion of engulfment, RIP releases σK into the MC (Bottom), where it directs RNA polymerase to transcribe genes whose products form the spore coat and cause MC lysis. The proteolytic cascade begins with SpoIVB, which is exported from the FS into the intermembrane space between the inner FS membrane (IFM) and the outer FS membrane (OFM). SpoIVB cleaves the C-terminal region of SpoIVFA. A second protease, CtpB, is also exported from the FS, and further cleaves the C-terminal region of SpoIVFA, and can cleave the C-terminal end of BofA. Inhibition of SpoIVFB is lost, allowing it to cleave Pro-σK (lightning bolt), releasing σK into the MC. The dashed double-headed arrows indicate that SpoIVFB, BofA, and SpoIVFA initially form a complex. See the text for references. Neither the structure of the complex nor how it changes during the proteolytic cascade are fully known.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cleavage assays examining inhibition by full-length BofA alone. A pET Triplet plasmid was used to produce Pro-σK(1–127), cytTM-SpoIVFB, and BofA (lane 2, pSO312), and compared with a pET Duet plasmid that produces only Pro-σK(1–127) and cytTM-SpoIVFB (lane 1, pYZ2) or with a pET Quartet plasmid that produces Pro-σK(1–127), cytTM-SpoIVFB, SpoIVFA, and GFPΔ27BofA (lane 3, pSO40). Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis, and the graph shows quantification of the cleavage ratio, as explained in the Figure 1B legend. (B) Cleavage assays with full-length Pro-σK as substrate. Pro-σK and cytTM-SpoIVFB were produced alone (lane 1, pSO290) or with GFPΔ27BofA (lane 2, pSO313), full-length BofA (lane 3, pSO314), SpoIVFA (lane 4, pSO315), or both GFPΔ27BofA and SpoIVFA (lane 5, pSO289) in E. coli. Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis with SpoIVFA, GFP, FLAG, or penta-His antibodies as indicated. Quantification was as in (A).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Cleavage assays examining the effects of SpoIVB production on BofA and SpoIVFA inhibition of SpoIVFB in E. coli. pET Quintet plasmids were used to produce Pro-σK(1–127), cytTM-SpoIVFB, SpoIVFA, GFPΔ27BofA or full-length BofA, and SpoIVB or SpoIVB S378A from pSO240, pSO241, and pSO251–pSO254. For comparison, a pET Quartet plasmid was used to produce Pro-σK(1–127), cytTM-SpoIVFB, SpoIVFA, and GFPΔ27BofA (lane 1, pSO40). Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis, and the graph shows quantification of the cleavage ratio, as explained in the Figure 1B legend. For the penta-His antibodies, 2 and 30 s exposures are shown. Student’s two-tailed t-tests were performed to compare certain cleavage ratios (p values are indicated). With pET Quintet plasmids that produced active SpoIVB and either GFPΔ27BofA or BofA (lanes 2 and 4), the Pro-σK(1–127) cleavage ratios were greater than with corresponding pET Quintet plasmids that produced inactive SpoIVB S378A (lanes 3 and 5), indicating partial relief from inhibition of SpoIVFB. When spoIVB was expressed under the same T7 promoter as inhibitory proteins (i.e., gfpΔ27bofA/spoIVFA or bofA/spoIVFA), accumulation of GFPΔ27BofA and SpoIVFA was consistently less (lanes 2–5) compared to pET Quartet (lane 1), which exhibited a very low cleavage ratio, as expected. To try to increase protein production, we attempted to engineer pET Quintet plasmids with spoIVB under control of an additional T7 promoter. Samples with spoIVB S378A under control of an additional T7 promoter (T7-SpoIVB S378A) (lanes 6 and 7) accumulated more SpoIVB S378A (compared with lanes 3 and 5), and more GFPΔ27BofA and SpoIVFA (similar to that observed for pET Quartet in lane 1), and exhibited a very low cleavage ratio (similar to lane 1). Attempts at engineering pET Quintet plasmids to express active spoIVB from an additional T7 promoter were unsuccessful. Cell lysis occurred in overnight cultures of strains containing such plasmids, suggesting that T7-SpoIVB is toxic to E. coli.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The phenylalanine residue at position 66 of SpoIVFB was predicted to help stabilize a closed conformation that would prevent Pro-σK access to the active site, and BofA and SpoIVFA were envisioned to further stabilize SpoIVFB in a closed conformation (Ramirez-Guadiana et al., 2018). SpoIVB-dependent cleavage of SpoIVFA would presumably favor an open conformation of SpoIVFB capable of cleaving Pro-σK. In the absence of SpoIVB, it was found that an F66A substitution in SpoIVFB-YFP allowed Pro-σK cleavage during Bacillus subtilis sporulation, albeit with reduced efficiency (Ramirez-Guadiana et al., 2018). To test whether SpoIVFB inhibition could be relieved by the F66A substitution in E. coli, pET Quartet plasmids were used to produce Pro-σK(1–127), SpoIVFA, GFPΔ27BofA, and cytTM-SpoIVFB from pSO40 as a control (lane 1) or cytTM-SpoIVFB F66A from pSO193 (lane 2). Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis, and the graph shows quantification of the cleavage ratio, as explained in the Figure 1B legend. A Student’s two-tailed t-test was performed to compare the cleavage ratios (p value is indicated). The Pro-σK(1–127) cleavage ratio was greater when cytTM-SpoIVFB F66A was produced (lane 2) than when cytTM-SpoIVFB was produced (lane 1), but not as great as in the absence of inhibitory proteins (Figure 1B, lane 1), indicating that cytTM-SpoIVFB F66A partially overcomes inhibition by GFPΔ27BofA and SpoIVFA in E. coli.
 
 To improve inhibition of cytTM-SpoIVFB in E. coli, we created single ‘pET Quartet’ plasmids to synthesize all four proteins, reasoning that unequal copy number of the two plasmids in some cells could result in too little of the inhibitory proteins. Indeed, pET Quartets producing either GFPΔ27BofA or BofA exhibited very little Pro-σK(1–127) cleavage (Figure 1B, lanes 4 and 5). A longer exposure of the immunoblot revealed a faint cleavage product with pET Quartet GFPΔ27BofA, but not with pET Quartet BofA, indicating that full-length BofA inhibits cleavage slightly better than GFPΔ27BofA.
 
@@ -41,19 +61,43 @@ To determine whether cleavage inhibition requires both inhibitory proteins, we c
 
 The E. coli system also mimics the endogenous pathway with respect to the effects of SpoIVB and an F66A substitution in SpoIVFB on cleavage inhibition. SpoIVB relieves inhibition of SpoIVFB during B. subtilis sporulation, although efficient relief also requires CtpB (Pan et al., 2003; Campo and Rudner, 2006; Campo and Rudner, 2007; Zhou and Kroos, 2005). Addition of SpoIVB to the E. coli system partially relieved cytTM-SpoIVFB inhibition, resulting in 14% and 5% more cleavage in systems with GFPΔ27BofA and full-length BofA, respectively, as compared with the addition of catalytically inactive SpoIVB S378A (Figure 1—figure supplement 3). In the absence of SpoIVB, an F66A substitution in SpoIVFB-YFP allowed Pro-σK cleavage during B. subtilis sporulation, albeit with reduced efficiency (Ramirez-Guadiana et al., 2018). An F66A substitution in cytTM-SpoIVFB partially relieved inhibition, resulting in 12% more cleavage in the E. coli system with GFPΔ27BofA (Figure 1—figure supplement 4). We conclude that the E. coli system mimics the endogenous pathway of B. subtilis. Since most endospore formers encode BofA, but about half lack a recognizable gene for SpoIVFA (de Hoon et al., 2010; Galperin et al., 2012), we focused on using the strong cleavage inhibition observed with pET Quartet plasmids in E. coli (Figure 1B) to identify residues of BofA important for inhibition of SpoIVFB.
 
-## Three conserved residues of BofA are important for inhibition of SpoIVFB in E. coli
+### Three conserved residues of BofA are important for inhibition of SpoIVFB in E. coli
 
 To identify residues of BofA that may play a role in SpoIVFB inhibition, we analyzed an alignment of 70 BofA orthologs (Figure 2—figure supplement 1A). Thirteen highly conserved residues reside in predicted TMS2 and the C-terminal region. Predicted TMS1 lacks highly conserved residues and GFPΔ27BofA (with a deletion of predicted TMS1) is a functional inhibitor (Rudner and Losick, 2002; Zhou and Kroos, 2004) albeit slightly less inhibitory than full-length BofA (Figure 1B, longer exposure). These observations suggest that TMS1 plays a minor role in SpoIVFB inhibition and that any residues compatible with TMS formation may suffice for that role. An alignment of the 31 BofA orthologs from species with a recognizable gene for SpoIVFA revealed an additional four conserved residues that we deemed of interest for Ala substitutions (Figure 2—figure supplement 1B). We also substituted Ala for F85 and I87 (as well as for I86, which is conserved), since deletion of three residues from the C-terminal end of BofA caused a loss of function or stability in B. subtilis (Ricca et al., 1992; Varcamonti et al., 1997). We made the Ala substitutions in GFPΔ27BofA and coproduced the variants with Pro-σK(1–127), cytTM-SpoIVFB, and SpoIVFA from pET Quartet plasmids in E. coli.
 
 Three GFPΔ27BofA variants, N48A, N61A, and T64A allowed 40%–60% cleavage of Pro-σK(1–127), indicating that these substitutions strongly impaired inhibition of cytTM-SpoIVFB (Figure 2, lanes 4, 7, and 8). We observed less of the N61A and T64A variants than most of the other GFPΔ27BofA variants. This effect depended on coproduction with the other B. subtilis proteins, since the three GFPΔ27BofA variants accumulated normally in E. coli in the absence of the other proteins (Figure 2—figure supplement 2). For all three variants, we observed less SpoIVFA and cytTM-SpoIVFB, perhaps indicative of altered complex formation leading to protein instability, as inferred from studies in B. subtilis (Rudner and Losick, 2002; Resnekov, 1999).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig2-v1.jpg)
+
+**Figure 2.:** pET Quartet plasmids were used to produce Pro-σK(1–127), cytTM-SpoIVFB, SpoIVFA, and GFPΔ27BofA (lane 1, pSO40) or Ala-substituted GFPΔ27BofA (lanes 2–20, pSO44-pSO58 and pSO60-pSO63). Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis with SpoIVFA, GFP, and penta-His antibodies. Single (*) and double (**) stars are explained in the Figure 1B legend, as is the graph.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sequence alignment of Bacillus subtilis BofA with 69 orthologs. Five residues (gray: M1, G51, I60, G69, and L71) are at least 70% conserved and nine residues (black: G40, L44, N48, N61, T64, G72, P74, G75, and L79) are at least 90% conserved, all within transmembrane segment 2 (TMS2) and the C-terminal region, except M1. (B) Sequence alignment of B. subtilis BofA with 30 orthologs that contain spoIVFA in their genome. In comparison to (A), four additional residues in predicted TMS2 and the C-terminal region were deemed of interest for Ala substitutions (H57, I82, and I86 are at least 70% conserved, and P59 is at least 90% conserved). A77 and A78 are also at least 70% conserved, but ineligible for Ala substitutions. V45 of B. subtilis does not match F, which is at least 70% conserved at the corresponding position of orthologs.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Plasmids were used to produce GFPΔ27BofA (pZR62, lane 1) or Ala-substituted GFPΔ27BofA (lanes 2–4, pSO332–pSO334). Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis with GFP antibodies. Double stars (**) indicate breakdown species of GFPΔ27BofA and its variants, which were not quantified. The graph shows the quantification of the GFPΔ27BofA and variant protein levels in arbitrary units (AUs) for three biological replicates. Error bars, 1 standard deviation. The protein levels of variants were indistinguishable from GFPΔ27BofA based on Student’s two-tailed t-tests (p>0.46).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Cleavage assays examining the effects of a GFPΔ27BofA truncation and a triple-Ala substitution for the last three residues of GFPΔ27BofA. pET Quartet plasmids were used to produce Pro-σK(1–127), cytTM-SpoIVFB, SpoIVFA, and GFPΔ27BofA from pSO40 as a control (lane 1), GFPΔ27BofA lacking the last three residues (Δ85–87) from pSO43 (lane 2), or GFPΔ27BofA with a triple-Ala substitution for the last three residues from pSO67. Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis, and the graph shows quantification of the cleavage ratio, as explained in the Figure 1B legend. For comparison, lanes 3–5 show data from Figure 2 for single-Ala substitutions in GFPΔ27BofA. The triple-Ala variant increased the cleavage ratio (lane 6), as did the variant lacking the three residues (lane 2). Both variants accumulated normally, but less SpoIVFA accumulated compared to the controls, indicating that residues near the C-terminal end of GFPΔ27BofA affect the synthesis and/or stability of SpoIVFA, and contribute to inhibition of cytTM-SpoIVFB in E. coli. (B) GFPΔ27BofA lacks TMS1 and all but nine residues preceding predicted TMS2 (Rudner and Losick, 2002). GFPΔ36BofA additionally lacks the nine residues. Cleavage assays were used to compare inhibition by GFPΔ27BofA, GFPΔ36BofA, or GFPΔ36BofA with a nine-residue glycine/serine (G/S) linker added between GFP and Δ36BofA. pET Quartet plasmids were used to produce Pro-σK(1–127), cytTM-SpoIVFB, SpoIVFA, and GFPΔ27BofA from pSO40 as a control lane 1, same data as in (A), GFPΔ36BofA from pSO42 (lane 2), or GFPΔ36BofA with the nine-residue G/S linker from pSO69 (lane 3). Samples were subjected to immunoblot analysis and quantification as in (A). Samples containing GFPΔ36BofA have a much greater cleavage ratio than samples containing GFPΔ27BofA. Since all four proteins accumulated well in both cases, the nine residues appeared to contribute to the inhibitory function of GFPΔ27BofA. Replacement of the nine residues with the G/S linker decreased the cleavage ratio, based on a Student’s two-tailed t-test (p value is indicated), suggesting that moving the GFP tag away from the membrane restored inhibitory function almost completely.
+
 The other GFPΔ27BofA variants had less effect on Pro-σK(1–127) cleavage, indicating less effect on cytTM-SpoIVFB inhibition in E. coli (Figure 2). Although the F85A, I86A, and I87A variants had little effect, both a triple-Ala variant and a variant lacking residues 85–87 strongly impaired inhibition of cytTM-SpoIVFB (Figure 2—figure supplement 3A); the latter mimicking the results in B. subtilis (Ricca et al., 1992; Varcamonti et al., 1997). We also used pET Quartet plasmids in E. coli to show for the first time that the nine residues preceding predicted TMS2 of GFPΔ27BofA contribute to its inhibitory function, perhaps by moving the GFP tag away from the membrane (Figure 2—figure supplement 3B).
 
-## The conserved residues of BofA are important for SpoIVFB inhibition during B. subtilis sporulation
+### The conserved residues of BofA are important for SpoIVFB inhibition during B. subtilis sporulation
 
 To test the effects of the three GFPΔ27BofA variants (N48A, N61A, and T64A) during sporulation, we produced each in a spoIVB165 bofA::erm double mutant in which production of GFPΔ27BofA from a non-native chromosomal locus inhibits Pro-σK cleavage by SpoIVFB (Rudner and Losick, 2002; Zhou and Kroos, 2004). The null mutation in spoIVB (spoIVB165) prevents SpoIVFA cleavage, so a spoIVB165 single mutant exhibits little or no RIP of Pro-σK, but the double mutant exhibits unregulated Pro-σK cleavage because the additional null mutation in bofA (bofA::erm) relieves inhibition of SpoIVFB. We produced GFPΔ27BofA and the variants in the double mutant under control of the native bofA promoter from the non-native amyE chromosomal locus. We examined the levels of GFPΔ27BofA and the variants, and SpoIVFA, SpoIVFB, Pro-σK, and σK (i.e., cleavage product) during sporulation, and we included wild type, the spoIVB165 single mutant, and the spoIVB165 bofA::erm double mutant as controls.
 
 The controls and the double mutant producing GFPΔ27BofA gave the expected results. We observed Pro-σK cleavage primarily between 4 and 5 hr poststarvation (PS) in wild type, very little cleavage in the spoIVB165 single mutant, and premature cleavage at 4 hr in the spoIVB165 bofA::erm double mutant (Figure 3A, lanes 1–6). We detected very little SpoIVFA and SpoIVFB in the double mutant, consistent with the need for BofA to stabilize these proteins (Rudner and Losick, 2002). We observed little cleavage in the double mutant producing GFPΔ27BofA, indicative of SpoIVFB inhibition (Figure 3A, lanes 7 and 8). GFPΔ27BofA allowed slightly more Pro-σK cleavage at 5 hr (lane 8) than BofA in the spoIVB165 single mutant (lane 4), suggesting that full-length BofA is a slightly better inhibitor of SpoIVFB during B. subtilis sporulation, as observed in E. coli (Figure 1B, longer exposure).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig3-v1.jpg)
+
+**Figure 3.:** (A) Effects of GFPΔ27BofA variants (N48A, N61A, and T64A) on Pro-σK cleavage. Wild-type strain PY79, a spoIVB165 null mutant, a spoIVB165 bofA::erm double mutant, and the double mutant with PbofA-gfpΔ27bofA integrated at amyE to express GFPΔ27BofA with no substitution (none) or the indicated Ala substitution, were starved to induce sporulation. Samples collected at 4 and 5 hr poststarvation (PS) were subjected to immunoblot analysis with antibodies against SpoIVFA, GFP, SpoIVFB, and Pro-σK. The graph shows quantification of the cleavage ratio [σK/(Pro-σK+σK)] for three biological replicates. Error bars, 1 standard deviation. Student’s two-tailed t-tests were performed to compare certain cleavage ratios (p values). (B) Localization of GFPΔ27BofA and the three variants. Samples collected at 3 hr PS were treated with FM 4–64 to stain membranes. Confocal microscopy images of fluorescence from GFPΔ27BofA, membranes, and merged images are shown for representative sporangia with discrete (no substitution in GFPΔ27BofA, designated ‘none’), partial (N48A and T64A), or no forespore (FS) localization (N61A). Scale bar, 1 μm. The percentage of sporangia (44–93 counted; nonsporulating cells were not counted) with each localization pattern is shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** A spoIVB165 bofA::erm double mutant with PbofA-gfpΔ27bofA or the indicated mutant version integrated ectopically at amyE, were starved to induce sporulation. Samples collected at 3 hr poststarvation were subjected to immunoblot analysis with antibodies against GFP. The star (*) indicates very small amounts of potential breakdown species of GFPΔ27BofA and the variants detectable in the long exposure.
 
 Strikingly, production of the GFPΔ27BofA N48A or N61A variant in the double mutant allowed premature cleavage of Pro-σK at 4 hr (Figure 3A, lanes 9 and 11), indicating loss of SpoIVFB inhibition. The levels of the variants were similar to GFPΔ27BofA at 4 hr, but reduced at 5 hr, especially for the N61A variant (lane 12). In comparison with the strain that produced GFPΔ27BofA, the SpoIVFA level was normal in the strain that produced the N48A variant, but the SpoIVFB level was very low, and the levels of both SpoIVFA and SpoIVFB were low in the strains producing the N61A and T64 variants. The reduced levels of SpoIVFB and SpoIVFA may reflect protein instability due to altered complex formation with the GFPΔ27BofA variants, as inferred from reduced SpoIVFB and SpoIVFA levels in the absence of BofA during B. subtilis sporulation (Rudner and Losick, 2002).
 
@@ -61,7 +105,7 @@ Production of the T64A variant in the double mutant (Figure 3A, lanes 13 and 14)
 
 Since GFPΔ27BofA co-localizes with SpoIVFA and SpoIVFB to the outer FS membrane during sporulation (Resnekov et al., 1996; Rudner et al., 2002; Rudner and Losick, 2002), we examined the ability of the GFPΔ27BofA variants to localize to the FS. As a control, GFPΔ27BofA produced in the spoIVB165 bofA::erm double mutant localized discretely to the FS at 3 hr PS (Figure 3B). The N48A and T64A variants localized partially to the FS, but the MC cytoplasm also exhibited GFP fluorescence, suggesting partial mislocalization. The N61A variant failed to localize to the FS, instead showing GFP fluorescence throughout the MC cytoplasm. The fusion proteins were intact, demonstrating that the cytoplasmic GFP fluorescence was not attributable to breakdown (Figure 3—figure supplement 1). Inability of the N61A variant to localize to the FS may explain the loss of SpoIVFB inhibition and the abundant cleavage of Pro-σK at 4 hr (Figure 3A, lane 11). Importantly, the similar ability of the N48A and T64A variants to localize to the FS (Figure 3B) does not account for their differential effects on the level of SpoIVFB and its ability to cleave Pro-σK (Figure 3A). The strain producing GFPΔ27BofA N48A exhibited less SpoIVFB yet more Pro-σK cleavage at 4 hr (lane 9) than the strain producing GFPΔ27BofA T64A (lane 13), so the N48A substitution more severely impairs the ability of GFPΔ27BofA to inhibit SpoIVFB.
 
-## BofA TMS2 occupies the SpoIVFB active site cleft
+### BofA TMS2 occupies the SpoIVFB active site cleft
 
 We hypothesized that TMS2 of BofA occupies the SpoIVFB active site cleft in the inhibition complex, because the GFPΔ27BofA N48 side chain is important for inhibition (Figures 2 and 3) and located near the middle of predicted TMS2 (Figure 2—figure supplement 1). To begin testing our hypothesis, we devised a strategy based on a model of the SpoIVFB membrane domain derived from the crystal structure of an archaeal homolog (Feng et al., 2007) and supported by cross-linking studies of catalytically inactive SpoIVFB E44Q in complex with Pro-σK(1–127), whose Proregion appears to occupy the SpoIVFB active site cleft (Zhang et al., 2013; Halder et al., 2017; Zhang et al., 2016). A cleft between TMS1 and TMS6 of SpoIVFB may gate substrate access to the active site (Ramirez-Guadiana et al., 2018) formed by a zinc ion near E44 of the HELGH metalloprotease motif within SpoIVFB TMS2 (Rudner et al., 1999, Yu and Kroos, 2000; Figure 4—figure supplement 1A). We reasoned that BofA TMS2 occupancy of the SpoIVFB active site cleft (Figure 4—figure supplement 1B) would exclude the substrate Proregion and may be detectable using a disulfide cross-linking approach. To implement disulfide cross-linking in the context of the inhibition complex formed with pET Quartet plasmids in E. coli, two of the proteins must have a single-Cys residue at positions hypothesized to be in proximity and the other two proteins must be Cys-less.
 
@@ -69,23 +113,87 @@ We took advantage of the sole Cys residue of BofA, C46, near N48 and the middle 
 
 For MBPΔ27BofA C46 (Figure 4A, lane 2), but not the Cys-less C46S negative control (lane 5), treatment with oxidant caused formation of a species of the expected size for a cross-linked complex with single-Cys E44C cytTM-SpoIVFB, as detected by immunoblotting with anti-FLAG antibodies. Treatment with the reducing agent DTT greatly diminished the abundance of the apparent complex, consistent with cross-link reversal (lane 3). We also observed a species of the expected size for a cross-linked dimer of single-Cys E44C cytTM-SpoIVFB. Formation of the apparent dimer varied, as reported previously (Zhang et al., 2013). As expected, anti-MBP antibodies detected the presumptive cross-linked complex of MBPΔ27BofA C46 with single-Cys E44C cytTM-SpoIVFB, albeit weakly, and the negative control with E44Q rather than E44C failed to form the complex (Figure 4—figure supplement 3, lanes 2 and 5). Since the signal for the complex was stronger with anti-FLAG antibodies (Figure 4A), we used those antibodies in the cross-linking experiments reported below.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig4-v1.jpg)
+
+**Figure 4.:** (A) Disulfide cross-linking of E44C at the cytTM-SpoIVFB active site to C46 in TMS2 of MBPΔ27BofA. pET Quartet plasmids were used to produce single-Cys E44C cytTM-SpoIVFB in combination with MBPΔ27BofA C46 (pSO91) or Cys-less MBPΔ27BofA C46S as a negative control (pSO110), and Cys-less variants of SpoIVFA and Pro-σK(1–127) in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated for 60 min with Cu2+(phenanthroline)3 (Cu+) to promote disulfide bond formation or with 2-phenanthroline (Cu–) as a negative control, then treated with TCA to precipitate proteins and resuspended in sample buffer with DTT (+) to reverse cross-links or without (–) to preserve cross-links, and finally subjected to immunoblot analysis with FLAG antibodies to visualize cytTM-SpoIVFB monomer, dimer, and complex with MBPΔ27BofA. (B) Disulfide cross-linking of V70C or P135C near the cytTM-SpoIVFB active site to C46 in TMS2 MBPΔ27BofA. pET Quartet plasmids were used to produce single-Cys V70C or P135C cytTM-SpoIVFB E44Q variants in combination with MBPΔ27BofA (pSO92 and pSO93) or Cys-less MBPΔ27BofA C46S as a negative control (pSO111 and pSO112), and Cys-less variants of SpoIVFA and Pro-σK(1–127) in E. coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as in (A). A representative result from at least two biological replicates is shown in (A) and (B).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Model of SpoIVFB. At Left, a side view of a SpoIVFB monomer. The model shows the six TMSs of the SpoIVFB membrane domain, the zinc ion (magenta) involved in catalysis, the interdomain linker, and the CBS domain. In the enlarged view of the active site cleft (Center), TMSs 1–6 and residues 44, 70, and 135 of SpoIVFB are labeled. At Right, a top view is shown. (B) Model of SpoIVFB with BofA TMS2. Labeling is as in (A) and BofA TMS2 (cyan) is modeled in the SpoIVFB active site cleft. The enlarged view of the active site cleft depicts experimentally observed disulfide cross-links (dashed lines) between BofA C46 and both E44C (in TMS2) and P135C (in a short loop in TMS4) of single-Cys cytTM-SpoIVFB variants (Figure 4).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Pro-σK(1–127) and cytTM-SpoIVFB were produced from pYZ2 as a control (lane 1), or pET Quartet plasmids were used to produce Pro-σK(1–127), cytTM-SpoIVFB, and either SpoIVFA and GFPΔ27BofA from pSO40 as another control (lane 2), Cys-less SpoIVFA and MBPΔ27BofA from pSO90 (lane 3), or Cys-less SpoIVFA and Cys-less MBPΔ27BofA from pSO97 (lane 4). Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis with SpoIVFA, GFP, or penta-His antibodies as indicated. The single star (*) indicates cross-reacting proteins below SpoIVFA. The double (**) and triple (***) stars indicate breakdown species of GFPΔ27BofA and MBPΔ27BofA, respectively. A breakdown species below SpoIVFA (not indicated) is observed in some samples. The graph shows quantification of the cleavage ratio, as explained in the Figure 1B legend.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Disulfide cross-linking of single-Cys E44C cytTM-SpoIVFB to MBPΔ27BofA C46. pET Quartet plasmids were used to produce single-Cys E44C cytTM-SpoIVFB (pSO91) or Cys-less cytTM-SpoIVFB E44Q as a negative control (pSO94) in combination with MBPΔ27BofA, and Cys-less variants of SpoIVFA and Pro-σK(1–127) in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated as explained in the Figure 4 legend and subjected to immunoblot analysis with MBP antibodies to visualize MBPΔ27BofA monomer, dimer, and complex with cytTM-SpoIVFB. A representative result from at least two biological replicates is shown. The star indicates the complex in lane 2. The immunoblot images (raw and annotated) are in the Figure 4—source data 1 folder, with explanation on the annotated Figure 4A image.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Disulfide cross-linking of single-Cys cytTM-SpoIVFB variants to BofA C46. pET Quartet plasmids (pSO226–pSO231) were used to produce single-Cys E44C cytTM-SpoIVFB, or single-Cys V70C or P135C cytTM-SpoIVFB E44Q variants, in combination with BofA or BofA C46S, and Cys-less variants of SpoIVFA and Pro-σK(1–127) in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated as explained in the Figure 4 legend and subjected to immunoblot analysis with FLAG antibodies to visualize cytTM-SpoIVFB monomer, dimer, and complex with full-length BofA. The star (*) indicates likely nonspecific cross-linking of single-Cys cytTM-SpoIVFB variants to E. coli proteins. A representative result from at least two biological replicates is shown.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Enlarged view of the model of SpoIVFB and BofA TMS2 shown in Figure 4—figure supplement 1B, which is based in part on disulfide cross-linked complexes shown in (C). At Left, the side view of SpoIVFB TMS2 and TMS6 (green) is shown with the zinc ion (magenta) involved in catalysis and BofA TMS2 (cyan). This view depicts experimentally observed cross-links (dashed lines) between BofA I56C and SpoIVFB A32C, and between BofA H57C and SpoIVFB Q181C. In the bottom view (Center), BofA TMS2 is shown with SpoIVFB TMS3. The dashed line indicates a cross-link between BofA A41C and SpoIVFB V86C that was observed. At Right, the top view of the model is shown. The dashed lines indicate observed cross-links between SpoIVFB residue M30C (located in the loop connecting TMS1 and TMS2) and BofA L62C and V63C (in a loop near the C-terminal end of TMS2). (B) Cleavage assays examining the effects of Cys substitutions for residues of interest in cytTM-SpoIVFB or GFPΔ27BofA. BofA TMS2 was modeled in the SpoIVFB active site cleft based on our initial cross-linking results (Figure 4). The initial model predicted proximity between residues at or near the ends of BofA TMS2 and residues of SpoIVFB, thus identifying residues of interest for cross-linking experiments. First, we examined the effects of Cys substitutions for the residues of interest using cleavage assays. pET Duet plasmids were used to produce Pro-σK(1–127) in combination with cytTM-SpoIVFB from pYZ2 as a control (lane 1) or with the indicated Cys-substituted cytTM-SpoIVFB from pSO141 or pSO256-pSO259 in E. coli (Left). pET Quartet plasmids were used to produce Pro-σK(1–127), cytTM-SpoIVFB, and SpoIVFA in combination with GFPΔ27BofA from pSO40 as a control (lane 7) or with the indicated Cys-substituted GFPΔ27BofA from pSO142, pSO143, or pSO260-pSO263 in Escherichia coli (Right). Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis, and the graph shows quantification of the cleavage ratio, as explained in the Figure 1B legend. Since cytTM-SpoIVFB with Cys substitutions for residues of interest cleaved Pro-σK(1–127) (lanes 2–6), we included the inactivating E44Q substitution in the single-Cys cytTM-SpoIVFB variants created for cross-linking. GFPΔ27BofA with Cys substitutions for residues of interest inhibited Pro-σK(1–127) cleavage by cytTM-SpoIVFB, although the G40C and H57C substitutions caused partial loss of inhibition, and the G40C substitution resulted in less accumulation of all four proteins (lanes 8–13). Ala substitutions at these positions had similar effects (Figure 2, lanes 2 and 15). (C) Disulfide cross-linking of single-Cys cytTM-SpoIVFB variants to single-Cys MBPΔ27BofA variants. pET Quartet plasmids (pSO93 as a positive control in lanes 1 and 2, pSO147, pSO148, and pSO186–pSO190) were used to produce single-Cys cytTM-SpoIVFB E44Q variants in combination with single-Cys MBPΔ27BofA variants or Cys-less MBPΔ27BofA from pSO144 as a negative control, and Cys-less variants of SpoIVFA and Pro-σK(1–127) in E. coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 4A legend. A representative result from two biological replicates is shown. In agreement with the model shown in (A), I56C and H57C MBPΔ27BofA variants formed a cross-linked complex with A32C and Q181C cytTM-SpoIVFB variants, respectively (lanes 4 and 13). The I56C MBPΔ27BofA variant formed very little complex with the L33C cytTM-SpoIVFB variant (lane 10), suggesting that a preferred orientation of BofA TMS2 places I56C farther from L33C than from A32C in TMS2 of SpoIVFB. Similarly, comparison of complex formation by G40C and A41C MBPΔ27BofA variants with the V86C cytTM-SpoIVFB variant (lanes 7 and 16) suggested that a preferred orientation of BofA TMS2 places G40C farther than A41C from V86C near the C-terminal end of SpoIVFB TMS3. Likewise, L62C and V63C MBPΔ27BofA variants formed a cross-linked complex with the M30C cytTM-SpoIVFB variant (lanes 19 and 22), suggesting a loop near the C-terminal end of BofA TMS2 is in proximity to a loop between SpoIVFB TMS1 and TMS2.
+
 In addition to E44 of SpoIVFB, V70 in a predicted membrane-reentrant loop and P135 in a predicted short loop interrupting TMS4 (Figure 1A and Figure 4—figure supplement 1A) were shown to be in proximity to the Proregion of Pro-σK(1–127) (Zhang et al., 2013). Therefore, we tested cross-linking of MBPΔ27BofA C46 to single-Cys V70C or P135C cytTM-SpoIVFB E44Q variants. We included the inactivating E44Q substitution since the V70C and P135C variants (unlike the E44C variant) could cleave Cys-less Pro-σK(1–127) (Zhang et al., 2013), even though we expected the inhibitory proteins to almost completely inhibit cleavage (Figure 4—figure supplement 2). MBPΔ27BofA C46 formed a complex with the P135C variant, but not with the V70C variant (Figure 4B, lanes 2 and 8). As expected, Cys-less MBPΔ27BofA C46S failed to form a complex with either variant (lanes 5 and 11). Full-length BofA C46 (lacking MBP) also formed a complex of the expected (smaller) size with the E44C and P135C variants, but not with the V70C variant (Figure 4—figure supplement 4, lanes 2, 14, and 8). As expected, Cys-less BofA C46S failed to form a complex with any of the variants (lanes 5, 11, and 17). Our cross-linking results show that BofA TMS2 occupies the SpoIVFB active site cleft in the inhibition complex, placing BofA C46 in proximity to SpoIVFB E44 and P135, but not V70.
 
 Based on our initial cross-linking results, we modeled BofA TMS2 in the SpoIVFB active site cleft, and tested predictions of the model using additional disulfide cross-linking experiments (Figure 4—figure supplement 5). The results confirmed predictions of the initial model and suggested a preferred orientation of BofA TMS2 in the SpoIVFB active site cleft, which led to the refined model shown in Figure 4—figure supplement 1B.
 
-## BofA and SpoIVFA do not prevent Pro-σK(1–127) from interacting with SpoIVFB
+### BofA and SpoIVFA do not prevent Pro-σK(1–127) from interacting with SpoIVFB
 
 Since our cross-linking results show that BofA TMS2 occupies the SpoIVFB active site cleft, we tested whether BofA and SpoIVFA prevent Pro-σK(1–127) from interacting with SpoIVFB in E. coli. We coproduced a catalytically inactive E44C cytTM-SpoIVFB variant with a FLAG2 epitope tag with Pro-σK(1–127), SpoIVFA, and GFPΔ27BofA. We then prepared cell lysates and detergent-solubilized proteins, which we co-immunoprecipitated in pull-down assays with anti-FLAG antibody beads. We observed all four proteins in the bound sample (Figure 5A, lane 4), so GFPΔ27BofA and SpoIVFA did not completely prevent Pro-σK(1–127) from interacting with the cytTM-SpoIVFB variant. However, we detected only the cytTM-SpoIVFB variant when the bound sample was diluted tenfold (lane 3) to match the input sample concentration (lane 1), and we observed portions of the other three proteins in the unbound sample (lane 2), indicating that co-purification was inefficient. A negative control with the cytTM-SpoIVFB variant lacking the FLAG2 epitope tag showed no Pro-σK(1–127) in the bound sample, but did show small amounts of GFPΔ27BofA and SpoIVFA (lane 8), indicative of weak, nonspecific binding to the beads.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig5-v1.jpg)
+
+**Figure 5.:** (A) Pro-σK(1–127), SpoIVFA, and GFPΔ27BofA co-purify with cytTM-SpoIVFB. pET Quartet plasmids were used to produce a catalytically inactive E44C cytTM-SpoIVFB variant with a FLAG2 tag (pSO73), or a variant lacking FLAG2 as a negative control (pSO149), in combination with Pro-σK(1–127), SpoIVFA, and GFPΔ27BofA in Escherichia coli. Samples collected after 2 hr of IPTG induction were subjected to co-immunoprecipitation with anti-FLAG antibody beads. Input, unbound, 1/10 bound (diluted to match input), and (undiluted) bound samples were subjected to immunoblot analysis with FLAG, penta-His, SpoIVFA, and GFP antibodies. The single star (*) indicates cross-reacting proteins below SpoIVFA and the double star (**) indicates a cross-reacting protein or breakdown species of GFPΔ27BofA that fail to co-purify. A representative result from two biological replicates is shown. (B) A231C in the cytTM-SpoIVFB CBS domain forms disulfide cross-links with A97C in the C-terminal region of Pro-σK(1–127) in the absence or presence of inhibitory proteins. pET Duet plasmids were used to produce single-Cys A231C cytTM-SpoIVFB E44Q in combination with single-Cys A97C Pro-σK(1–127) (pSO130; squares and line with long dashes labeled ‘No BofA’, although SpoIVFA is also absent) or with Cys-less Pro-σK(1–127) as a negative control (pSO255; crosses and line labeled ‘Cys-less’) in E. coli. pET Quartet plasmids were used to produce single-Cys A231C cytTM-SpoIVFB E44Q, single-Cys A97C Pro-σK(1–127), and Cys-less SpoIVFA in combination with Cys-less MBPΔ27BofA (pSO133; circles and line labeled ‘MBPΔ27BofA’) or with Cys-less full-length BofA (pSO246; diamonds and line labeled ‘BofA’) in E. coli. Samples collected after 2 hr of IPTG induction were treated for 15, 30, 45, or 60 min with Cu2+(phenanthroline)3 oxidant to promote disulfide bond formation and subjected to immunoblot analysis with FLAG antibodies to visualize the cytTM-SpoIVFB monomer, dimer, and complex with Pro-σK(1–127) (Figure 5—figure supplement 3C). Abundance of the complex was divided by the total amount of cytTM-SpoIVFB monomer, dimer, and complex. The ratio over time was plotted (n=2) with a best-fit trend line.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) GFPΔ27BofA and SpoIVFA do not prevent SpoIVFB from co-purifying with Pro-σK(1–127). pET Quartet plasmids were used to produce Pro-σK(1–127) (pSO73), or a variant lacking His6 as a negative control (pSO82), in combination with a catalytically inactive E44C cytTM-SpoIVFB variant containing FLAG2 but lacking His6, GFPΔ27BofA, and SpoIVFA in Escherichia coli. Samples collected after 2 hr of IPTG induction were subjected to co-purification with cobalt resin. Input, unbound, wash, 1/15 bound (diluted to match input), and (undiluted) bound samples were subjected to immunoblot analysis with FLAG, Pro-σK, SpoIVFA, and GFP antibodies as indicated. The single star (*) indicates cross-reacting proteins above and below Pro-σK(1–127) that fail to co-purify. The double star (**) indicates cross-reacting proteins below SpoIVFA that fail to co-purify. The triple star (***) indicates a putative breakdown species of SpoIVFA that appears to co-purify, but also binds nonspecifically. The quadruple star (****) indicates a cross-reacting protein or breakdown species of GFPΔ27BofA that fails to co-purify. All four proteins were seen in the bound sample (lane 7). Only Pro-σK(1–127) and the cytTM-SpoIVFB variant were detected in the diluted bound sample (lane 6). Most of the cytTM-SpoIVFB variant, GFPΔ27BofA, and SpoIVFA were observed in the unbound sample (lane 2), indicating inefficient co-purification. A negative control with a Pro-σK(1–127) variant lacking the His6 tag showed none of the Pro-σK(1–127) variant or GFPΔ27BofA in the bound sample, but a small amount of the cytTM-SpoIVFB variant and considerable SpoIVFA were detected (lane 14), indicative of nonspecific binding to the resin. In the case of SpoIVFA, nonspecific binding rather than co-purification with Pro-σK(1–127) appears to account for most of the signal in lane 7. A putative SpoIVFA breakdown species (indicated by ***) exhibited a similar pattern of abundance in samples as intact SpoIVFA. (B) Full-length BofA and SpoIVFA do not prevent Pro-σK(1–127) from co-purifying with SpoIVFB. pET Quartet plasmids were used to produce a catalytically inactive E44C cytTM-SpoIVFB variant containing FLAG2 but lacking His6 (pSO215), or a variant lacking FLAG2 as a negative control (pSO217), in combination with Pro-σK(1–127), BofA, and SpoIVFA in E. coli. Samples collected after 2 hr of IPTG induction were subjected to co-immunoprecipitation with anti-FLAG antibody beads. Input, unbound, wash, 1/10 bound (diluted to match input), and (undiluted) bound samples were subjected to immunoblot analysis with FLAG, penta-His, and SpoIVFA antibodies as indicated. Stars indicate proteins as in (A). (C) Full-length BofA and SpoIVFA do not prevent SpoIVFB from co-purifying with Pro-σK(1–127). pET Quartet plasmids were used to produce Pro-σK(1–127) (pSO215), or a variant lacking His6 as a negative control (pSO216), in combination with a catalytically inactive E44C cytTM-SpoIVFB variant containing FLAG2 but lacking His6, BofA, and SpoIVFA in E. coli. Samples collected after 2 hr of IPTG induction were subjected to co-purification with cobalt resin. Input, unbound, wash, 1/15 bound (diluted to match input), and (undiluted) bound samples were subjected to immunoblot analysis with FLAG, Pro-σK, and SpoIVFA antibodies as indicated. Stars indicate proteins as in (A). A representative result from two biological replicates is shown in each panel. BofA and SpoIVFA did not completely prevent Pro-σK(1–127) from interacting with the cytTM-SpoIVFB variant in (B) or (C) (lane 7 in each panel). We note that coproduction of BofA decreased the accumulation of Pro-σK(1–127) in the input samples (lane 1 in each panel) compared to coproduction of GFPΔ27BofA (lane 1 in Figure 5A and in (A)). We also note that SpoIVFA failed to co-purify with the cytTM-SpoIVFB variant when BofA was coproduced ((B), lane 7), in contrast to the result when GFPΔ27BofA was coproduced (Figure 5, lane 4). Perhaps BofA decreased Pro-σK(1–127) accumulation and SpoIVFA co-purification more than GFPΔ27BofA because TMS1 in full-length BofA hinders the interaction between Pro-σK(1–127) and the cytTM-SpoIVFB variant, making Pro-σK(1–127) more susceptible to degradation, which may impair SpoIVFA co-purification.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) GFPΔ27BofA and SpoIVFA do not prevent Pro-σK from co-purifying with SpoIVFB. pET Quartet plasmids were used to produce a catalytically inactive E44C cytTM-SpoIVFB variant containing FLAG2 but lacking His6 (pSO211), or a variant lacking FLAG2 as a negative control (pSO221), in combination with Pro-σK-His6, GFPΔ27BofA, and SpoIVFA in Escherichia coli. Samples collected after 2 hr of IPTG induction were subjected to co-immunoprecipitation with anti-FLAG antibody beads. Input, unbound, wash, 1/10 bound (diluted to match input), and (undiluted) bound samples were subjected to immunoblot analysis with FLAG, penta-His, SpoIVFA, and GFP antibodies as indicated. The single star (*) indicates cross-reacting proteins below SpoIVFA that fail to co-purify. The double star (**) indicates a putative breakdown species of SpoIVFA that appears to co-purify, but also binds nonspecifically. The triple star (***) indicates a cross-reacting protein or breakdown species of GFPΔ27BofA that fails to co-purify. (B) GFPΔ27BofA and SpoIVFA do not prevent SpoIVFB from co-purifying with Pro-σK. pET Quartet plasmids were used to produce Pro-σK-His6 (pSO211), or a variant lacking His6 as a negative control (pSO220), in combination with a catalytically inactive E44C cytTM-SpoIVFB variant containing FLAG2 but lacking His6, GFPΔ27BofA, and SpoIVFA in E. coli. Samples collected after 2 hr of IPTG induction were subjected to co-purification with cobalt resin. Input, unbound, wash, 1/15 bound (diluted to match input), and (undiluted) bound samples were subjected to immunoblot analysis with FLAG, Pro-σK, SpoIVFA, and GFP antibodies as indicated. Stars indicate proteins as in (A). A representative result from two biological replicates is shown in each panel. We note that when Pro-σK-His6 was coproduced rather than Pro-σK(1–127), less SpoIVFA and more GFPΔ27BofA co-purified with the cytTM-SpoIVFB variant (compare (A) and Figure 5A), and less of both inhibitory proteins co-purified with Pro-σK-His6 (compare (B) and Figure 5—figure supplement 1A), consistent with the notion that the C-terminal half of full-length Pro-σK affects complex formation.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Cross-linking between single-Cys cytTM-SpoIVFB variants and single-Cys Pro-σK(1–127) variants. pET Duet plasmids (pSO122–pSO126 and pSO130) were used to produce single-Cys S228C, V229C, K230C, or A231C cytTM-SpoIVFB E44Q variants in combination with single-Cys S96C, A97C, or G98C Pro-σK(1–127) variants in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 4A legend. A representative result from two biological replicates is shown. (B) Cleavage assays examining the effects of Cys substitutions in cytTM-SpoIVFB or Pro-σK(1–127). pET Duet plasmids were used to produce Pro-σK(1–127) and cytTM-SpoIVFB from pYZ2 as a control (lane 1), cytTM-SpoIVFB and the indicated Cys-substituted Pro-σK(1–127) from pSO157 or pSO158 (lanes 2 and 3), or Pro-σK(1–127) and the indicated Cys-substituted cytTM-SpoIVFB from pSO159 or pSO160 (lanes 4 and 5) in E. coli. Samples collected after 2 hr of IPTG induction were subjected to immunoblot analysis, and the graph shows quantification of the cleavage ratio, as explained in the Figure 1B legend. (C) Time course of cross-linking between the single-Cys A231C CBS domain variant of cytTM-SpoIVFB E44Q and single-Cys A97C Pro-σK(1–127) in the absence or presence of inhibitory proteins. See the Figure 5B legend for explanation of the experiment. A representative result from two biological replicates is shown.
 
 We also performed pull-down assays with cobalt resin, which binds to the His6 tag on Pro-σK(1–127), and we performed both types of pull-down assays (i.e., anti-FLAG antibody beads and cobalt resin) on proteins from E. coli coproducing full-length BofA rather than GFPΔ27BofA with the other three proteins (Figure 5—figure supplement 1). Neither BofA nor GFPΔ27BofA when coproduced with SpoIVFA prevented Pro-σK(1–127) from interacting with the cytTM-SpoIVFB variant. However, GFPΔ27BofA and SpoIVFA reduced co-purification of full-length Pro-σK-His6 with the cytTM-SpoIVFB variant in both types of pull-down assays (Figure 5—figure supplement 2), as compared with Pro-σK(1–127) (Figure 5A and Figure 5—figure supplement 1), suggesting that the C-terminal half of Pro-σK affects complex formation.
 
 To explain the presence of substrate in the pulled-down protein complexes, but the absence of substrate cleavage (Figure 1B), we hypothesized that inhibitory proteins block substrate access to the SpoIVFB active site cleft, but do not prevent substrate interaction with the soluble C-terminal CBS domain of SpoIVFB (Figure 1A). The model of catalytically inactive SpoIVFB E44Q in complex with Pro-σK(1–127) predicts extensive interactions between the SpoIVFB CBS domain and the Pro-σK(1–127) C-terminal region (Halder et al., 2017). We used the model to guide the testing of single-Cys variants of the two proteins for disulfide cross-link formation. We discovered that A231C in the cytTM-SpoIVFB CBS domain can be cross-linked to A97C in the Pro-σK(1–127) C-terminal region upon oxidant treatment of E. coli coproducing the proteins (Figure 5—figure supplement 3A). We showed that the Cys substitutions do not impair cytTM-SpoIVFB activity or Pro-σK(1–127) susceptibility to cleavage (Figure 5—figure supplement 3B). Finally, we measured time-dependent cross-linking in the presence or absence of Cys-less inhibitory proteins. Coproduction of inhibitory proteins had little or no effect on the formation of cross-linked complex (Figure 5B and Figure 5—figure supplement 3C). These results suggest that neither full-length BofA nor MBPΔ27BofA, when coproduced with SpoIVFA, prevent Pro-σK(1–127) from interacting with the CBS domain of SpoIVFB in E. coli, consistent with the results of our pull-down assays (Figure 5A and Figure 5—figure supplement 1).
 
-## Inhibitory proteins block access of the substrate N-terminal Proregion to the SpoIVFB active site
+### Inhibitory proteins block access of the substrate N-terminal Proregion to the SpoIVFB active site
 
 SpoIVFB cleaves Pro-σK (Kroos et al., 1989) and Pro-σK(1–127) (Zhou and Kroos, 2004) between residues S21 and Y22. In disulfide cross-linking experiments, Cys substitutions for several residues near the cleavage site in otherwise Cys-less Pro-σK(1–127) formed a cross-linked complex with single-Cys (E44C, V70C, or P135C) cytTM-SpoIVFB variants (Zhang et al., 2013). The complex was most abundant with the E44C and V70C variants, so we compared these interactions in the presence or absence of Cys-less inhibitory proteins.
 
 SpoIVFB E44 is presumed to activate a water molecule for substrate peptide bond hydrolysis at the enzyme active site (Rudner et al., 1999; Yu and Kroos, 2000). To test access of the substrate Proregion to the enzyme active site, we first measured time-dependent cross-linking between single-Cys E44C cytTM-SpoIVFB and single-Cys (F18C, V20C, S21C, or K24C) Pro-σK(1–127) variants coproduced in the absence of inhibitory proteins in E. coli. The V20C and K24C Pro-σK(1–127) variants formed abundant complex that increased over time, but the F18C and S21C variants formed much less complex, only slightly more than the Cys-less Pro-σK(1–127) negative control (Figure 6A and Figure 6—figure supplement 1A). Figure 6B shows a representative immunoblot (60 min oxidant treatment). Upon coproduction with Cys-less MBPΔ27BofA and SpoIVFA, the V20C and K24C Pro-σK(1–127) variants formed much less complex and its abundance did not increase over time (Figure 6C and Figure 6—figure supplement 1B). Figure 6D shows a representative immunoblot (60 min oxidant treatment) for comparison with Figure 6B. Upon coproduction with Cys-less full-length BofA and SpoIVFA, abundance of the complex decreased similarly (Figure 6—figure supplement 2). Figure 6E and F summarize the cross-linking time courses with and without inhibitory proteins for the V20C and K24C Pro-σK(1–127) variants. The effects of MBPΔ27BofA (lacking TMS1) and full-length BofA were indistinguishable. These results likely explain why BofA TMS1 is dispensable for most of the inhibitory function of BofA (Rudner and Losick, 2002; Zhou and Kroos, 2004; Figures 1B and 3A). We conclude that inhibitory proteins block access of the substrate N-terminal Proregion to the SpoIVFB active site.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig6-v1.jpg)
+
+**Figure 6.:** (A) E44C at the cytTM-SpoIVFB active site forms abundant disulfide cross-links with V20C or K24C in the N-terminal region of Pro-σK(1–127) in the absence of inhibitory proteins. pET Duet plasmids were used to produce single-Cys E44C cytTM-SpoIVFB in combination with single-Cys F18C (pSO167), V20C (pSO169), S21C (pSO170), or K24C (pSO128) Pro-σK(1–127), or with Cys-less Pro-σK(1–127) (pSO79) as a negative control, in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated with Cu2+(phenanthroline)3 oxidant for 15, 30, 45, or 60 min to promote disulfide bond formation and subjected to immunoblot analysis with FLAG antibodies to visualize the cytTM-SpoIVFB monomer, dimer, and complex with Pro-σK(1–127) (Figure 6—figure supplement 1A). Abundance of the complex was divided by the total amount of cytTM-SpoIVFB monomer, dimer, and complex. The ratio over time was plotted (n=2) with a best-fit trend line. (B) Representative immunoblots of 60 min samples from the experiment are described in (A). (C) MBPΔ27BofA and SpoIVFA decrease cross-linking between E44C cytTM-SpoIVFB and V20C or K24C Pro-σK(1–127). pET Quartet plasmids were used to produce single-Cys E44C cytTM-SpoIVFB in combination with single-Cys F18C (pSO163), V20C (pSO165), S21C (pSO166), or K24C (pSO131) Pro-σK(1–127), or with Cys-less Pro-σK(1–127) (pSO110) as a negative control, and Cys-less variants of MBPΔ27BofA and SpoIVFA in E. coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as in (A) (Figure 6—figure supplement 1B). The complex/total ratio was plotted as in (A). (D) Representative immunoblots of 60 min samples from the experiment are described in (C). (E, F) Summaries of the effects of inhibitory proteins on cross-linking between E44C cytTM-SpoIVFB and V20C or K24C Pro-σK(1–127). Data from (A) (labeled ‘No BofA’ in (E), although SpoIVFA is also absent), (C) (labeled ‘MBPΔ27BofA’ in (E), although SpoIVFA is also present), and Figure 6—figure supplement 2 (labeled ‘BofA’ in (E), although SpoIVFA is also present) are plotted along with Cys-less Pro-σK(1–127) as a negative control. In (F), symbols and lines are as in (E). (G, H) Summaries of the effects of inhibitory proteins on cross-linking between V70C in the cytTM-SpoIVFB membrane-reentrant loop and F18C or K24C in the Pro-σK(1–127) N-terminal region. Data from Figure 6—figure supplement 3 are plotted using symbols and lines as in (E). (I) Summary of the effects of inhibitory proteins on cross-linking between Y214C in the cytTM-SpoIVFB interdomain linker and L41C in the Pro-σK(1–127) N-terminal region. Data from Figure 6—figure supplement 5 are plotted using symbols and lines as in (E).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Time course of cross-linking between single-Cys E44C cytTM-SpoIVFB and single-Cys Pro-σK(1–127) variants in the absence of inhibitory proteins. See the Figure 6A legend for explanation of the experiment. (B) Time course of cross-linking between single-Cys E44C cytTM-SpoIVFB and single-Cys Pro-σK(1–127) variants in the presence of Cys-less variants of MBPΔ27BofA and SpoIVFA. See the Figure 6C legend for explanation of the experiment. Representative results from two biological replicates are shown in (A) and (B).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Time course of cross-linking between single-Cys E44C cytTM-SpoIVFB and single-Cys Pro-σK(1–127) variants in the presence of Cys-less variants of BofA and SpoIVFA. pET Quartet plasmids were used to produce single-Cys E44C cytTM-SpoIVFB in combination with single-Cys F18C (pSO238), V20C (pSO234), S21C (pSO235), or K24C (pSO239) Pro-σK(1–127), or with Cys-less Pro-σK(1–127) (pSO229) as a negative control, and Cys-less variants of BofA and SpoIVFA in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 6A legend. A representative result from two biological replicates is shown. (B) Quantification of cross-linking for the experiment is described in (A). Abundance of the complex was divided by the total amount of cytTM-SpoIVFB monomer, dimer, and complex. The ratio over time was plotted (n=2) with a best-fit trend line.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Time course of cross-linking between the single-Cys V70C cytTM-SpoIVFB E44Q and single-Cys Pro-σK(1–127) variants in the absence of inhibitory proteins. pET Duet plasmids were used to produce single-Cys V70C cytTM-SpoIVFB E44Q in combination with single-Cys F18C (pSO168) or K24C (pSO134) Pro-σK(1–127), or with Cys-less Pro-σK(1–127) (pSO136) as a negative control, in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 6A legend. A representative result from two biological replicates is shown. (B) Quantification of cross-linking for the experiment is described in (A). Abundance of the complex was divided by the total amount of cytTM-SpoIVFB monomer, dimer, and complex. The ratio over time was plotted (n=2) with a best-fit trend line. (C) Time course of cross-linking between single-Cys V70C cytTM-SpoIVFB E44Q and single-Cys Pro-σK(1–127) variants in the presence of Cys-less variants of MBPΔ27BofA and SpoIVFA. pET Quartet plasmids were used to produce single-Cys V70C cytTM-SpoIVFB E44Q in combination with single-Cys F18C (pSO164) or K24C (pSO132) Pro-σK(1–127), or with Cys-less Pro-σK(1–127) (pSO111) as a negative control, and Cys-less variants of MBPΔ27BofA and SpoIVFA in E. coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 6A legend. A representative result from two biological replicates is shown. (D) Quantification of cross-linking for the experiment is described in (C). Quantification was performed as described in (B). (E) Time course of cross-linking between single-Cys V70C cytTM-SpoIVFB E44Q and single-Cys Pro-σK(1–127) variants in the presence of Cys-less variants of full-length BofA and SpoIVFA. pET Quartet plasmids were used to produce the single-Cys V70C cytTM-SpoIVFB E44Q in combination with single-Cys F18C (pSO236) or K24C (pSO237) Pro-σK(1–127), or with Cys-less Pro-σK(1–127) (pSO230) as a negative control, and Cys-less variants of BofA and SpoIVFA in E. coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 6A legend. A representative result from two biological replicates is shown. (F) Quantification of cross-linking for the experiment is described in (E). Quantification was performed as described in (B). (G) Immunoblot of 60 min samples (Cu+) from the experiment is described in (E) with a longer exposure (10 s). Star (*) indicates four novel species.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A, B) Time courses of cross-linking between single-Cys E44C cytTM-SpoIVFB and MBPΔ27BofA C46 or full-length BofA C46. pET Quartet plasmids were used to produce single-Cys E44C cytTM-SpoIVFB in combination with MBPΔ27BofA C46 (pSO91) or BofA C46 (pSO226), or with Cys-less MBPΔ27BofA C46S (pSO110) or BofA C46S (pSO229) variants as negative controls, and Cys-less variants of Pro-σK(1–127) and SpoIVFA in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 6A legend. A representative result from two biological replicates is shown. (C) Quantification of cross-linking for the experiments is described in (A, B). Abundance of the complex was divided by the total amount of cytTM-SpoIVFB monomer, dimer, and complex. The ratio over time was plotted (n=2) with a best-fit trend line. (D, E) Time courses of cross-linking between single-Cys P135C cytTM-SpoIVFB and MBPΔ27BofA C46 or full-length BofA C46. pET Quartet plasmids were used to produce single-Cys P135C cytTM-SpoIVFB E44Q in combination with MBPΔ27BofA C46 (pSO93) or BofA C46 (pSO228), or with Cys-less MBPΔ27BofA C46S (pSO112) or BofA C46S (pSO231) variants as negative controls, and Cys-less variants of Pro-σK(1–127) and SpoIVFA in E. coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 6A legend. A representative result from two biological replicates is shown. (F) Quantification of cross-linking for the experiments is described in (D, E). Quantification was performed as described in (C).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A) Cross-linking between single-Cys cytTM-SpoIVFB variants and single-Cys Pro-σK(1–127) variants. pET Duet plasmids (pSO117–pSO121) were used to produce single-Cys R213C, Y214C, or Y215C cytTM-SpoIVFB E44Q variants in combination with single-Cys L41C, E42C, or L43C Pro-σK(1–127) variants in Escherichia coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 5—figure supplement 3A legend. A representative result from two biological replicates is shown. (B) Time course of cross-linking between Y214C in the cytTM-SpoIVFB interdomain linker and L41C in the Pro-σK(1–127) N-terminal region in the absence or presence of inhibitory proteins. pET Duet plasmids were used to produce single-Cys Y214C cytTM-SpoIVFB E44Q in combination with single-Cys L41C Pro-σK(1–127) from pSO120 or with Cys-less Pro-σK(1–127) from pSO114 as a negative control, in E. coli. pET Quartet plasmids were used to produce single-Cys Y214C cytTM-SpoIVFB E44Q, single-Cys L41C Pro-σK(1–127), and Cys-less SpoIVFA in combination with Cys-less MBPΔ27BofA from pSO127 or with Cys-less full-length BofA from pSO245 in E. coli. Samples collected after 2 hr of IPTG induction were treated and subjected to immunoblot analysis as explained in the Figure 6A legend. A representative result from two biological replicates is shown.
 
 SpoIVFB V70 is located in a predicted membrane-reentrant loop (Figure 1A), which may bind to the Proregion and present it to the active site for cleavage (Halder et al., 2017) based on a study of E. coli RseP (Akiyama et al., 2015). Single-Cys V70C cytTM-SpoIVFB E44Q formed abundant cross-linked complex with F18C and K24C Pro-σK(1–127) variants in the absence of inhibitory proteins (Zhang et al., 2013; Figure 6G and H; Figure 6—figure supplement 3A and B). Upon coproduction with Cys-less MBPΔ27BofA and SpoIVFA, less complex formed (Figure 6G and H; Figure 6—figure supplement 3C and D). Coproduction with Cys-less full-length BofA and SpoIVFA further decreased complex formation (Figure 6G and H; Figure 6—figure supplement 3E and F). Since full-length BofA hindered cross-linking more than MBPΔ27BofA (lacking TMS1) (Figure 6G and H), both TMSs of BofA appear to interfere with the normal interaction between the SpoIVFB membrane-reentrant loop and the substrate Proregion. BofA may cause the SpoIVFB membrane-reentrant loop to be exposed since we observed four novel species (Figure 6—figure supplement 3G), perhaps due to cross-linking of the V70C cytTM-SpoIVFB variant to E. coli proteins.
 
@@ -93,11 +201,23 @@ Since full-length BofA also inhibited cleavage of Pro-σK(1–127) in E. coli (F
 
 To examine the extent to which inhibitory proteins hinder the interaction of the substrate with SpoIVFB, we used the model of catalytically inactive SpoIVFB E44Q in complex with Pro-σK( 1–127) (Halder et al., 2017) to guide testing for disulfide cross-link formation and found that A214C in the cytTM-SpoIVFB linker (Figure 1A) can be cross-linked to A41C in Pro-σK(1–127) (Figure 6—figure supplement 5A). We showed that the Cys substitutions do not impair cytTM-SpoIVFB activity or Pro-σK(1–127) susceptibility to cleavage (Figure 5—figure supplement 3B). Finally, we measured time-dependent cross-linking in the presence or absence of Cys-less inhibitory proteins. Interestingly, full-length BofA hindered cross-linking more than MBPΔ27BofA (Figure 6I and Figure 6—figure supplement 5B), similar to cross-linking between V70C in the cytTM-SpoIVFB membrane-reentrant loop and F18C or K24C near the cleavage site in Pro-σK(1–127) (Figure 6G and H). The similar pattern suggests that in both cases BofA TMS2 partially interferes with the interaction and BofA TMS1 augments the interference.
 
-## A model of SpoIVFB in complex with BofA and parts of SpoIVFA and Pro-σK
+### A model of SpoIVFB in complex with BofA and parts of SpoIVFA and Pro-σK
 
 We generated computational models using a similar protocol as described previously (Halder et al., 2017), but included additional constraints reflecting experimental cross-linking data reported herein, as well as newly predicted intra- and inter-chain contacts based on co-evolutionary couplings. The two final models are: (1) full-length SpoIVFB modeled as a tetramer, with part of one Pro-σK molecule (residues 1–114), referred to as ‘fb.sigk’; (2) full-length SpoIVFB, again modeled as a tetramer, with one molecule each of full-length BofA and parts of Pro-σK (residues 38–114) and SpoIVFA (residues 65–111), referred to as ‘fb.sigk.bofa.fa.’ We omitted residues of Pro-σK and SpoIVFA that we could not place with sufficient confidence. Figure 7—figure supplement 1 shows the first model.
 
 Figure 7 illustrates relevant features of the second model (only one molecule of SpoIVFB is shown). The first side view shows SpoIVFB with BofA TMS2 and the C-terminal part of Pro-σK(1–127) (Figure 7A). The membrane domain of SpoIVFB (green) interacts with BofA TMS2 (cyan) while the interdomain linker and CBS domain of SpoIVFB interact with the modeled portion of Pro-σK(1–127) (red). The enlarged view of the SpoIVFB active site cleft shows BofA TMS2 surrounded by SpoIVFB (TMSs labeled 1–6). The top view of the membrane domain emphasizes proximity between BofA TMS2, SpoIVFB TMSs 2–4, and the zinc ion (magenta) involved in catalysis.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig7-v1.jpg)
+
+**Figure 7.:** (A) Model of SpoIVFB, BofA TMS2, and the C-terminal part of Pro-σK(1–127). At Left, a side view of the complex, showing the six TMSs of the SpoIVFB membrane domain with the active site zinc ion (magenta), the interdomain linker, and the CBS domain (green), BofA TMS2 (cyan), and Pro-σK(38–114) (red). In the enlarged view of the active site cleft (Center), TMSs 1–6 of SpoIVFB and TMS2 of BofA are numbered. At Right, a top view is shown. (B) Model of SpoIVFB with full-length BofA and Pro-σK(38–114). Predicted TMSs 1 and 2 of BofA are numbered and its C-terminal region is labeled ‘C’ near the C-terminus in the views shown in the Center and at Right. (C) Model of SpoIVFB with full-length BofA, SpoIVFA(65–111) (purple, residue 111 is numbered), and Pro-σK(38–114). TMS, transmembrane segment.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** At Upper Left, a side view shows the SpoIVFB membrane domains at the top and the CBS domains at the bottom, facing the A (dark green) and B chains (light green), whose CBS domains primarily provide the dimerization interface. The SpoIVFB A chain also interacts with the Pro-σK Y chain (residues 1–114) (red). The top view (Center) reveals the SpoIVFB C (light blue) and D (dark blue) chains, whose CBS domains dimerize. The bottom view (Upper Right) emphasizes the CBS domains, as well as the interface between the A/B and C/D dimers, formed primarily by the CBS domains of the B and C chains. At Lower Left, a side view facing the A and C chains also shows the interface between the A/B and C/D dimers of the SpoIVFB tetramer. Each SpoIVFB chain is labeled near its zinc ion (gray), which is hidden in some views. At Lower Center, a side view of the SpoIVFB A chain monomer (TMSs 1–6 labeled) interacting with the Pro-σK Y chain (Proregion residues 1–21 yellow and σK residues 22–114 red), in the same orientation as at Upper Left (hence the arrow), but with the other SpoIVFB chains hidden. At Lower Right, a side view into the active site cleft of the SpoIVFB A chain emphasizes proximity between the zinc ion and the cleavage site in the Pro-σK Y chain (between residues 21 and 22). TMS, transmembrane segment.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/74275/elife-74275-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** At Left, a side view of full-length BofA in the same orientation as Figure 7C shows the side chains of conserved residues N48, N61, and T64 colored blue. Numbers indicate predicted TMSs 1 and 2, and N indicate the N-terminus. In the enlarged side view (Center), labels indicate the conserved residues important for SpoIVFB inhibition. At Right, a top view shows the 5.6 Å distance (dashed yellow line) between the Cβ atoms of the N48 and T64 side chains that may interact. The model predicts that the N61 side chain points away from the N48 and T64 side chains, but the orientation of the N61 and T64 side chains is uncertain given the predicted loop structure. TMS, transmembrane segment.
 
 The second side view shows SpoIVFB with full-length BofA and the C-terminal part of Pro-σK(1–127) (Figure 7B). Our model predicts that BofA contains two TMSs and a membrane-embedded C-terminal region (labeled C near the C-terminus in the enlarged view of the SpoIVFB active site cleft) that forms two short α-helices connected by a turn. The enlarged and top views show that BofA interacts extensively with SpoIVFB and occupies its active site cleft, which would sterically hinder access of the Proregion of Pro-σK. In the model, the conserved residue N48 in BofA TMS2 is near T64 and N61. Both T64 and N61 are in a loop that precedes the first short α-helix of the C-terminal region (Figure 7—figure supplement 2). All three residues are likely able to interact, but the constraints from experiments and co-evolutionary couplings are not sufficient for predicting the exact side-chain orientations with high certainty. So, even though the N61 side chain is shown pointing away from the N48 and T64 side chains in the model, slight structural rearrangements within the modeling constraints could allow the N61 side chain to interact more directly with the N48 and/or T64 side chain(s). Alternatively, the three conserved residues may contact other residues within BofA, based on co-evolutionary couplings, to stabilize the BofA structure or they may be essential for interactions with nearby elements of SpoIVFA and SpoIVFB.
 
@@ -107,7 +227,7 @@ Figure 7C shows the addition of the modeled portion of SpoIVFA (purple). Co-evol
 
 Our results provide evidence that BofA TMS2 occupies the SpoIVFB active site cleft. Both inhibitory proteins block access of the substrate N-terminal Proregion to the SpoIVFB active site, but do not prevent interaction between the C-terminal region of Pro-σK(1–127) and the SpoIVFB CBS domain. The mechanism of SpoIVFB inhibition is novel in comparison with previously known mechanisms of IP regulation. Structural modeling predicts that conserved BofA residues interact to stabilize TMS2 and a membrane-embedded C-terminal region. The model also predicts that SpoIVFA contacts the BofA C-terminal region and SpoIVFB TMS4, bridging the two proteins to stabilize the inhibition complex. The model has clear implications for relief of SpoIVFB and its orthologs from inhibition during sporulation, as well as for IP inhibitor design.
 
-## A novel mechanism of IP regulation
+### A novel mechanism of IP regulation
 
 Previous work revealed three mechanisms of IP regulation—substrate localization, substrate extramembrane domain cleavage, and substrate interaction with an adapter protein. Substrate localization to a different organelle than its cognate IP is common in eukaryotic cells (Kühnle et al., 2019; Morohashi and Tomita, 2013). An early example of this regulatory mechanism emerged from studies of S2P. SREBP substrates are retained in the ER by SCAP and Insig proteins, then transported to the Golgi when more cholesterol is needed (Rawson, 2003; Figure 8A).
 
@@ -127,7 +247,7 @@ A second observation that our proposed model for the SpoIVFB inhibition complex 
 
 Third, our proposed model for the SpoIVFB inhibition complex (Figure 7C) can explain why GFPΔ27BofA inhibits substrate cleavage (Figures 1B and 3A) and MBPΔ27BofA occupies the SpoIVFB active site cleft (Figure 6—figure supplement 4) nearly as well as full-length BofA. Both Δ27BofA variants lack predicted TMS1, but have TMS2 and the C-terminal region proposed to interact with SpoIVFA and SpoIVFB (Figure 7C), accounting for most of the steric hindrance mechanism of inhibition. BofA TMS1 appears to play a minor role by sterically hindering some interactions between the Pro-σK N-terminal region and SpoIVFB, based on the comparison between full-length BofA and MBPΔ27BofA in cross-linking time courses. The interactions hindered more by full-length BofA included cross-links between the Pro-σK Proregion and the SpoIVFB membrane-reentrant loop (Figure 6G and H), which may bind to the Proregion and present it to the SpoIVFB active site for cleavage (Halder et al., 2017) based on a study of the homologous membrane-reentrant loop of E. coli RseP (Akiyama et al., 2015). Full-length BofA also hindered cross-links between Pro-σK L41C and the SpoIVFB interdomain linker (Y214C) more than MBPΔ27BofA (Figure 6I), suggesting that BofA TMS1 weakens the interaction between the interdomain linker and Pro-σK, which is crucial for cleavage (Halder et al., 2017; Ramirez-Guadiana et al., 2018). Our model predicts that both TMSs of BofA, as well as its C-terminal region, occupy the SpoIVFB active site cleft (Figure 7B), plausibly explaining the additional steric hindrance that BofA TMS1 appears to provide. The minor role of BofA TMS1 may be important since premature σK production can reduce sporulation efficiency (Cutting et al., 1990).
 
-## Implications for activation of SpoIVFB and its orthologs in other endospore formers
+### Implications for activation of SpoIVFB and its orthologs in other endospore formers
 
 Activation of SpoIVFB during B. subtilis sporulation occurs when SpoIVB cleaves the C-terminal end of SpoIVFA (Dong and Cutting, 2003; Campo and Rudner, 2006; Campo and Rudner, 2007; Mastny et al., 2013) and CtpB cleaves the C-terminal ends of both SpoIVFA and BofA (Campo and Rudner, 2006; Campo and Rudner, 2007; Zhou and Kroos, 2005; Figure 1—figure supplement 1). The levels of inhibitory proteins decrease coincident with increasing Pro-σK cleavage (Kroos et al., 2002; Dong and Cutting, 2003; Campo and Rudner, 2006; Zhou and Kroos, 2005), suggesting that degradation of SpoIVFA and BofA permits SpoIVFB activity. Alternatively, a conformational change in the inhibition complex may suffice to trigger SpoIVFB activity, based on in vitro experiments indicating that SpoIVB cleavage of SpoIVFA alters the susceptibility of the complex to general proteolysis but does not disrupt the complex (Campo and Rudner, 2006).
 
@@ -141,7 +261,7 @@ Whether BofA and SpoIVFA completely prevent Pro-σK from interacting with SpoIVF
 
 The mechanisms of inhibition and activation of B. subtilis SpoIVFB likely apply to its orthologs in spore-forming bacilli since these bacteria encode BofA, SpoIVFA, SpoIVB, and CtpB (Galperin et al., 2012; Ramos-Silva et al., 2019). This group includes well-known human or plant pathogens such as B. anthracis, B. cereus, and B. thuringiensis. In contrast, clostridia that form endospores do not have a recognizable gene for SpoIVFA (de Hoon et al., 2010; Galperin et al., 2012). In some clostridia, a nonorthologous gene has been proposed to code for a protein that performs the same function as SpoIVFA (Galperin et al., 2012), so similar mechanisms of SpoIVFB regulation may apply. The E. coli system described herein will facilitate further testing of heterologous protein function. Many spore-forming clostridia also lack a recognizable gene for BofA (Ramos-Silva et al., 2019). Our results imply that SpoIVFB activity is unregulated in these bacteria (i.e., coordination between FS and MC gene expression is lost). A precedent for less precise control of σK-dependent gene expression is known from studies of the human pathogen Clostridioides difficile (Pereira et al., 2013; Saujet et al., 2013), in which the gene for σK does not encode a Proregion and a gene for SpoIVFB is absent (Haraldsen and Sonenshein, 2003). Based on phylogenomic analysis, the precise control of σK-dependent gene expression observed in B. subtilis emerged early in evolution and persisted in bacilli which propagate primarily in aerobic environments, but has been modified or lost in many clostridia which are found mainly in anaerobic habitats (Ramos-Silva et al., 2019).
 
-## Design of IP Inhibitors
+### Design of IP Inhibitors
 
 Efforts toward the development of therapeutic peptidyl inhibitors of serine IPs (rhomboids) are well-advanced (Cho et al., 2019; Tichá et al., 2017; Tichá et al., 2018). Translational work on aspartyl IPs has focused on γ-secretase owing to its processing of the amyloid precursor protein (APP) associated with Alzheimer’s disease (Wolfe, 2019). Wide-spectrum inhibitors of γ-secretase exhibit toxicity in clinical trials, mainly due to inhibition of signaling via Notch receptors, which are also substrates of γ-secretase (De Strooper and Chávez Gutiérrez, 2015). The structures of γ-secretase complexes with APP and Notch reveal differences in binding that may allow substrate-specific inhibitors to be developed as therapeutics (Yang et al., 2019; Zhou et al., 2019). Stabilization of complexes in which γ-secretase progressively cleaves APP is another promising approach toward the development of drugs to treat Alzheimer’s disease (Szaruga et al., 2017).
 
@@ -153,41 +273,296 @@ Our findings also suggest that BofA TMS1 interferes with interactions between th
 
 ## Materials and methods
 
-## Plasmids, primers, and strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Bacillus subtilis)</td>
+      <td>bofA</td>
+      <td>Subtiwiki</td>
+      <td>BSU_00230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (B. subtilis)</td>
+      <td>spoIIIC (sigK)</td>
+      <td>Subtiwiki</td>
+      <td>BSU_26390</td>
+      <td>3′ part of the interrupted sigma K gene</td>
+    </tr>
+    <tr>
+      <td>Gene (B. subtilis)</td>
+      <td>spoIVCB (sigK)</td>
+      <td>Subtiwiki</td>
+      <td>BSU_25760</td>
+      <td>5′ part of the interrupted sigma K gene</td>
+    </tr>
+    <tr>
+      <td>Gene (B. subtilis)</td>
+      <td>spoIVFA</td>
+      <td>Subtiwiki</td>
+      <td>BSU_27980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (B. subtilis)</td>
+      <td>spoIVFB</td>
+      <td>Subtiwiki</td>
+      <td>BSU_27970</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Novagen</td>
+      <td>Cat# 69450</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. subtilis)</td>
+      <td>PY79</td>
+      <td>Youngman et al., 1984</td>
+      <td>Prototrophic wild-type strain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. subtilis)</td>
+      <td>BK754</td>
+      <td>Cutting et al., 1991a</td>
+      <td>spoIVB165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (B. subtilis)</td>
+      <td>ZR264</td>
+      <td>Zhou and Kroos, 2004</td>
+      <td>spoIVB165bofA::erm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-penta-His-HRP conjugate (Mouse monoclonal)</td>
+      <td>QIAGEN</td>
+      <td>Cat# 34460</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2-HRP conjugate (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A8592</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Kroos et al., 2002</td>
+      <td></td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MBP (Rabbit polyclonal)</td>
+      <td>NEB</td>
+      <td>Cat# E8030S</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SpoIVFA (Rabbit polyclonal)</td>
+      <td>Kroos et al., 2002</td>
+      <td></td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SpoIVFB (Rabbit polyclonal)</td>
+      <td>Yu and Kroos, 2000; Halder et al., 2017</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pro-σK (Rabbit polyclonal)</td>
+      <td>Lu et al., 1990</td>
+      <td></td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSO40 (plasmid)</td>
+      <td>This paper</td>
+      <td>pET Quartet</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSO78(plasmid)</td>
+      <td>This paper</td>
+      <td>PbofA-GFPΔ27BofA</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSO96(plasmid)</td>
+      <td>This paper</td>
+      <td>Cys-less pET Duet</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSO139(plasmid)</td>
+      <td>This paper</td>
+      <td>Cys-less pET Quartet</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quikchange</td>
+      <td>Stratagene</td>
+      <td>Cat# 200518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,10-phenanthroline monohydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P9375-5G</td>
+      <td>Also called 2-phenanthroline</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-dodecyl-β-D-maltoside (DDM)</td>
+      <td>Anatrace</td>
+      <td>Cat# D310S</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Lab</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td>Version 5.2.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>(http://imagej.nih.gov/ij/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>T-Coffee</td>
+      <td>Notredame et al., 2000, (https://tcoffee.crg.eu)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UniClust30 database</td>
+      <td>(https://uniclust.mmseqs.com)</td>
+      <td></td>
+      <td>Version 2020_02</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>trRosetta</td>
+      <td>Yang et al., 2020, (https://github.com/gjoni/trRosetta)</td>
+      <td></td>
+      <td>Model version 2019_07</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HHblits</td>
+      <td>Remmert et al., 2011, (https://github.com/soedinglab/hh-suite)</td>
+      <td></td>
+      <td>Version 3.3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyRosetta</td>
+      <td>Chaudhury et al., 2010, (https://www.pyrosetta.org/)</td>
+      <td></td>
+      <td>Version 2020.28</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHARMM</td>
+      <td>(https://www.charmm.org)</td>
+      <td></td>
+      <td>Version c42a2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MM 4–64 (FM 4–64)</td>
+      <td>AAT Bioquest</td>
+      <td>Cat# 21487</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-DYKDDDDK magnetic agarose</td>
+      <td>Pierce</td>
+      <td>Cat# A36797</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TALON Superflow Metal Affinity Resin</td>
+      <td>TaKaRa</td>
+      <td>Cat# 635507</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids, primers, and strains
 
 Plasmids used in this study are described in Supplementary file 1, as are primers used in plasmid construction. Plasmids were cloned in E. coli strain DH5α (Hanahan, 1983). Relevant parts of plasmids were verified by DNA sequencing with primers listed in Supplementary file 1 B. subtilis strains used in this study are also described therein.
 
-## Pro-σK(1-127) cleavage in E. coli
+### Pro-σK(1-127) cleavage in E. coli
 
 Strain BL21(DE3) (Novagen) was used to produce proteins in E. coli. Two plasmids with different antibiotic resistance genes were cotransformed (Zhou and Kroos, 2004) or a single plasmid was transformed, with selection on Luria-Bertani (LB) agar supplemented with kanamycin sulfate (50 μg/ml) and/or ampicillin (100 μg/ml). Transformants (4–5 colonies) were grown in LB medium with 50 μg/ml kanamycin sulfate and/or 200 μg/ml ampicillin at 37°C with shaking (200 rpm). Typically, overnight culture (200 μl) was transferred to 10 ml of LB medium with antibiotics, cultures were grown at 37°C with shaking (250 rpm) to an optical density of 60–80 Klett units, and isopropyl β-D-thiogalactopyranoside (IPTG) (0.5 mM) was added to induce protein production for 2 hr. For transformants with either pET Quintet or full-length Pro-σK-His6, overnight growth was avoided. Transformants were transferred directly to 10 ml of LB medium with antibiotic, and cultures were grown and induced as described above. Equivalent amounts of cells (based on optical density in Klett units) were collected (12,000×g for 1 min) and extracts were prepared (Zhou and Kroos, 2004), then subjected to immunoblot analysis.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Samples were subjected to immunoblot analysis as described (Kroos et al., 2002). Briefly, proteins were separated by SDS-PAGE using Prosieve (Lonza) polyacrylamide gels (10% for disulfide cross-linking experiments and 14% for cleavage assays) and electroblotted to Immobilon-P membranes (Millipore). Protein migration was monitored using SeeBlue Plus2 Prestained Standard (Invitrogen) and blots were blocked with 5% nonfat dry milk (Meijer) in TBST (20 mM Tris-HCl pH 7.5, 0.5 M NaCl, and 0.1% Tween 20) for 1 hr at 25°C with shaking. Blots were probed with antibodies against His6 (penta-His QIAGEN catalog #34460; 1:10,000), FLAG2 (Sigma-Aldrich catalog #A8592; 1:10,000), GFP (Kroos et al., 2002) (1:10,000), MBP (NEB catalog #E8030S; 1:10,000), SpoIVFA (Kroos et al., 2002) (1:3000), Pro-σK (Lu et al., 1990) (1:3000), and/or SpoIVFB (Yu and Kroos, 2000; Halder et al., 2017) (1:5000) diluted in TBST with 2% milk, overnight at 4°C with shaking. Since the GFP, MBP, SpoIVFA, Pro-σK, and SpoIVFB antibodies were not HRP-conjugated, they were detected with goat anti-rabbit-HRP antibody (Bio-Rad catalog #170-6515; 1:10,000) diluted in TBST with 2% milk, 1 hr at 25°C with shaking. Signals were generated using the Western Lightning Plus ECL reagent (PerkinElmer) and detected using a ChemiDoc MP imaging system (Bio-Rad). Unsaturated signals were quantified using the Image Lab 5.2.1 software (Bio-Rad) lane and bands tool in order to determine the Pro-σK(1–127) cleavage ratio or the ratio of disulfide cross-linked complex to the total intensity of the cytTM-SpoIVFB variant monomer, dimer, and complex.
 
-## BofA sequence analysis
+### BofA sequence analysis
 
 Orthologs of B. subtilis bofA, which are present in the genomes of most endospore-forming bacteria (Galperin et al., 2012), were collected from the NCBI and Uniprot databases. The protein sequences of BofA orthologs were aligned using the T-Coffee multiple sequence alignment (MSA) package (Notredame et al., 2000). Residues identical in at least 70% of the sequences were considered conserved.
 
-## B. subtilis sporulation and GFPΔBofA localization
+### B. subtilis sporulation and GFPΔBofA localization
 
 GFPΔ27BofA or its variants were expressed under control of the bofA promoter (PbofA) after chromosomal integration at the amyE locus. Plasmids bearing PbofA-gfpΔ27bofA or its variant, bordered by regions of homology to B. subtilis amyE, were transformed into strain ZR264. Transformants with a gene replacement at amyE were selected on LB agar with spectinomycin sulfate (100 μg/ml) and identified by loss of amylase activity (Harwood and Cutting, 1990). Sporulation was induced by growing cells in the absence of antibiotics, followed by the resuspension of cells in SM medium (Harwood and Cutting, 1990). At indicated times PS, samples (50 μl) were centrifuged (12,000×g for 1 min), supernatants were removed, and cell pellets were stored at –80°C. Whole-cell extracts were prepared as described for E. coli (Zhou and Kroos, 2004), except samples were incubated at 50°C for 3 min instead of boiling for 3 min (Halder et al., 2017), and proteins were subjected to immunoblot analysis.
 
 To image GFPΔ27BofA localization, samples collected at 3 hr PS were examined by fluorescence microscopy using an Olympus FluoView FV-1000 filter-based confocal microscope. GFPΔ27BofA (ex/em ~488/507 nm) was excited using a 458 nM argon laser and fluorescence was captured using a BA465–495 nm band pass filter. The lipophilic dye FM 4–64 (1 μg/ml) (AAT Bioquest) was used to stain membranes. FM 4–64 (ex/em ~515/640 nm) was excited using a 515 nm argon laser and fluorescence was captured using a BA560IF band pass filter (Parrell and Kroos, 2020).
 
-## Disulfide cross-linking
+### Disulfide cross-linking
 
 A method described previously (Koide et al., 2008) was used with slight modifications (Zhang et al., 2013). As described above for Pro-σK(1–127) cleavage, E. coli BL21(DE3) was transformed with a plasmid, grown in LB (10 ml), induced with IPTG, and equivalent amounts of cells were collected. Cells were mixed with chloramphenicol (200 μg/ml) and 2-phenanthroline (3 mM), collected by centrifugation (12,000×g for 1 min), washed with 10 mM Tris-HCl pH 8.1 containing 3 mM 2-phenanthroline, and suspended in 10 mM Tris-HCl pH 8.1. Samples were treated with 1 mM Cu2+(phenanthroline)3 or 3 mM 2-phenanthroline (as a negative control) for 15, 30, 45, or 60 min at 37°C, followed by incubation with neocuproine (12.5 mM) for 5 min at 37°C. Cells were lysed and proteins were precipitated by the addition of trichloroacetic acid (5%) and inversion every 5 min for 30 min on ice. Proteins were sedimented by centrifugation (12,000×g) for 15 min at 4°C, the supernatant was removed, and the pellet was washed with cold acetone. The pellets were sedimented by centrifugation (12,000×g) for 5 min at 4°C and the supernatants were discarded. The pellets were dried for 5 min at 25°C and resuspended in buffer (100 mM Tris-HCl pH 7.5, 1.5% SDS, 5 mM EDTA, 25 mM N-ethylmaleimide) for 30 min at 25°C. Portions were mixed with an equal volume of sample buffer (25 mM Tris-HCl pH 6.8, 2% SDS, 10% glycerol, and 0.015% bromophenol blue) with or without 100 mM DTT, and were typically incubated at 37°C for 10 min, prior to immunoblot analysis. In experiments with single-Cys V70C cytTM-SpoIVFB E44Q, single-Cys Pro-σK(1–127) variants, and Cys-less variants of BofA and SpoIVFA, samples were boiled 3 min prior to immunoblot analysis, which helped to resolve species (Figure 6—figure supplement 3E and G).
 
-## Co-immunoprecipitation (FLAG2 pull-down assays)
+### Co-immunoprecipitation (FLAG2 pull-down assays)
 
 E. coli BL21(DE3) was transformed with a plasmid, grown in LB (1 L), and induced with IPTG as described above. The culture was split, cells were harvested, and cell pellets were stored at –80°C. Cell lysates were prepared as described (Zhang et al., 2016), except that each cell pellet was resuspended in 20 ml of lysis buffer containing 50 mM Tris-HCl pH 7.1 rather than PBS. Cell lysates were centrifuged (15,000×g for 15 min at 4°C) to sediment cell debris and protein inclusion bodies. The supernatant was treated with 1% n-dodecyl-β-D-maltoside (DDM) (Anatrace) for 1 hr at 4°C to solubilize membrane proteins, then centrifuged at 150,000×g for 1 hr at 4°C. The supernatant was designated the input sample and 1 ml was mixed with 50 µl anti-DYKDDDDK magnetic agarose (Pierce) that had been equilibrated with buffer (50 mM Tris-HCl pH 7.1, 0.1% DDM, 5 mM 2-mercaptoethanol, and 10% glycerol) and the mixture was rotated for 1 hr at 25°C. The magnetic agarose was removed with a DynaMag-2 magnet (Invitrogen) and the supernatant was saved (unbound sample). The magnetic agarose was washed three times by gently vortexing with 500 μl wash buffer (50 mM Tris-HCl pH 7.1, 150 mM NaCl, 10% glycerol, and 0.1% DDM), then washed once with 500 μl water. The magnetic agarose was mixed with 50 μl of 2× sample buffer (50 mM Tris·HCl pH 6.8, 4% SDS, 20% glycerol, 200 mM DTT 0.03% bromophenol blue) and boiled for 3 min (bound sample). A portion of the bound sample was diluted tenfold (1/10 bound sample) with 1× sample buffer to match the concentration of the input sample. Samples were subjected to immunoblot analysis.
 
-## Cobalt affinity purification (His6 pull-down assays)
+### Cobalt affinity purification (His6 pull-down assays)
 
 Input sample (15 ml) prepared as described above was mixed with imidazole (5 mM) and 0.5 ml of Talon superflow metal affinity resin (Clontech) that had been equilibrated with buffer (as above for magnetic agarose). The mixture was rotated for 1 hr at 4°C. The cobalt resin was sedimented by centrifugation at 708×g for 2 min at 4°C and the supernatant was saved (unbound sample). The resin was washed three times with 5 ml wash buffer (as above plus 5 mM imidazole), each time rotating the mixture for 10 min at 4°C and sedimenting resin as above. The resin was mixed with 0.5 ml 2× sample buffer and boiled for 3 min (bound sample). A portion of the bound sample was diluted 15-fold (1/15 bound sample) with 1× sample buffer to match the concentration of the input sample. Samples were subjected to immunoblot analysis.
 
-## Modeling of complexes containing SpoIVFB, BofA, and parts of SpoIVFA and Pro-σK
+### Modeling of complexes containing SpoIVFB, BofA, and parts of SpoIVFA and Pro-σK
 
 The modeling proceeded through stages where initial monomeric models were assembled step-by-step into multimeric complexes guided primarily by the restraints from cross-linking experiments and predicted contacts from co-evolutionary coupling analysis. More specifically, a SpoIVFB monomer was first assembled from the membrane and CBS domains. Two monomers were combined into a dimer and the dimer was assembled into a plausible tetramer. Part of one molecule of Pro-σK (residues 1–114) was subsequently added, which resulted in ‘fb.sigk.’ The ‘fb.sigk.bofa.fa’ model was developed by starting from ‘fb.sigk,’ truncating the Pro-σK N-terminus (residues 1–37), and subsequently adding first BofA and finally SpoIVFA (residues 65–111).
 

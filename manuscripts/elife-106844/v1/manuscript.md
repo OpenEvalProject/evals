@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02dxx6824 Department of Chemistry, Scripps Research La Jolla United States
-2. https://ror.org/02dxx6824 Department of Integrative Structural and Computational Biology, Scripps Research La Jolla United States
-3. https://ror.org/04qh86j58 Chemical & Biological Integrative Research Center, Korea Institute of Science and Technology Seoul Republic of Korea
-4. https://ror.org/02dxx6824 Department of Biology, Calibr-Skaggs at Scripps Research La Jolla United States
+1. Department of Chemistry, Scripps Research La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+2. Department of Integrative Structural and Computational Biology, Scripps Research La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+3. Chemical & Biological Integrative Research Center, Korea Institute of Science and Technology Seoul Republic of Korea ([ROR:04qh86j58](https://ror.org/04qh86j58))
+4. Department of Biology, Calibr-Skaggs at Scripps Research La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
 
 † Corresponding author
 
@@ -31,6 +31,14 @@ Targeted protein degradation has emerged as an alternative strategy to modulate 
 
 Among potential E3 ligases for PROTAC development, KLHDC2 (Kelch-like homology domain-containing protein 2) has emerged as a promising candidate (Békés et al., 2022). A CUL2 adaptor protein, KLHDC2, serves as a key component of the C-end degron pathway, recognizing C-terminal diglycine residues of client proteins, promoting their ubiquitination and degradation (Pilcher et al., 2025). Client proteins of KLHDC2 include selenocysteine-containing proteins, like SelK (Selenoprotein K), which, in the context of selenocysteine depletion, undergo premature translational termination, revealing a C-terminal diglycine degron (Rusnac et al., 2018). Previous work has shown that recognition of the diglycine degron of SelK by KLHDC2 in its Kelch beta propellor domain is characterized by low nanomolar dissociation constants (<10 nM) and with favorable binding kinetics for PROTAC development (Figure 1A; Rusnac et al., 2018). Unbiased protein proximity-based screens for generalizable E3 degraders have also indicated that KLHDC2 is among the best E3 ligases for fully degrading generic protein substrates (Poirson et al., 2024; Röth et al., 2023). Similarly, others have shown that peptide-based PROTACs derived from a 7-mer peptide of the C-terminus of SelK can be used to degrade a variety of kinase targets in human cells (Kim et al., 2023).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig1-v1.jpg)
+
+**Figure 1.:** (A) Structure of the Kelch domain of KLHDC2 from PDB 6DO3 bound to PPPMAGG, C-terminal peptide from SelK (left). Interface of SelK peptide (teal) bound to KLHDC2 (right) with TAMRA-labeled peptide used in this work above. (B) Fluorescence polarization signal of TAMRA-SelK peptide in response to increasing concentrations of GST-KLHDC2. (C) Fluorescence polarization signal from KLHDC2 and KEAP1 assays in response to increasing concentrations of unlabeled SelK peptide (n=3; mean and s.e.m.). Fluorescence polarization signals in Z’-based determination assays with and without unlabeled SelK peptide (1 µM) in 384-well (D) and 1536-well (E) assays (n=20). (F) Corrected fluorescence polarization signal from the primary screening campaign with hits noted in teal. (G) Screening funnel depicting the high-throughput screening campaign.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fluorescence polarization signal of TAMRA-conjugated NRF2 peptide in response to increasing concentrations of KEAP1. (B) Structure of KEAP1 Kelch domain ligand KI696. (C) Fluorescence polarization signal in response to the indicated concentrations of KI696 in the KEAP1 assay. n=3; mean and s.e.m.
+
 We reasoned that the well-characterized interaction between KLHDC2 and SelK could be exploited to identify small molecule binders of KLHDC2 from a competitive in vitro screen using recombinant protein. Accordingly, we report here the development and execution of an FP-based high-throughput screen that identified a tetrahydroquinoline-based scaffold that competes for SelK peptide binding. We demonstrate this scaffold can be optimized for potency, achieving submicromolar affinity for KLHDC2 binding and can be further derivatized with JQ1 to degrade BRD4 in cell-based assays.
 
 ## Results
@@ -43,17 +51,25 @@ In parallel, we devised a counter screen to control for nonspecific binders usin
 
 We then characterized the four hits for their capacity to bind to KLHDC2 in vitro. Two of these hits, 1 and 2, share a conserved 8-carboxy tetahydroquinoline scaffold (Figure 2A and B), whereas the other two compounds, 3 and 4, were closely related imidazopyridines that varied only by an additional methyl substitution present in 4 (Figure 2—figure supplement 1). The four compounds displayed dose-dependent inhibitory effects in the SelK-KLHDC2 competitive FP assay in 384-well format (IC50s=2.5 µM for 1, 1.3 µM for 2, 3.6 µM for 3, and 2.8 µM for 4) and did not have an inhibitory effect in the KEAP1 counter-screening assay at concentrations less than 20 µM (Figure 2C and D; Figure 2—figure supplement 1C, D). We next evaluated these four molecules for direct binding to immobilized KLHDC2 using surface plasmon resonance (SPR). 1 and 2 gave robust interaction responses, yielding Kd values of 810 nM and 440 nM, respectively (Figure 2E and F). Compounds 3 and 4 were not found to provide robust sensorgram signals. Whether this observation derives from incompatibility under the assay conditions or requires the presence of the SelK peptide for interaction with KLHDC2 remains unclear. As such, we chose to evaluate the tetrahydroquinoline series for further study.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig2-v1.jpg)
+
+**Figure 2.:** Structures and summary of activities of compounds 1 (A) and 2 (B). (C) Fluorescence polarization signal from KLHDC2 and KEAP1 assays in response to increasing concentrations of 1 (C) and 2 (D) (n=3; mean and s.e.m.). Representative surface plasmon resonance (SPR) sensorgrams of KLHDC2 binding from the indicated concentrations of 1 (E) and 2 (F).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Structures of compounds 3 (A) and 4 (B). Fluorescence polarization signal from KLHDC2 and KEAP1 assays from the indicated concentrations of 3 (C) and 4 (D) (n=3; mean and s.e.m.).
+
 We next sought to understand if the tetrahydroquinoline scaffold might be further optimized for increased affinity with KLHDC2. We evaluated all commercially available analogs that shared the 8-carboxy tetrahydroquinoline core (53 analogs) in 384-well FP assays measuring association between KLHDC2 and the labeled SelK peptide. Notably, substitution of 2,5-dimethyl substituted phenyl group present in 2 to 3-substituted trifluoromethyl or trifluoromethoxy groups was found to increase potency in this initial screen (Figure 3A). We evaluated the trifluoromethyl substituted analog 5 and the trifluoromethoxy substituted 6 (Figure 3B and C) in follow-up FP assays with KLHDC2, observing increased potency for these analogs (IC50s=760 nM and 670 nM respectively, Figure 3D and E) with no inhibitory effect in the KEAP1 counter-screening assay. Compounds 5 and 6 also displayed increased potency in SPR assays measuring affinity for KLHDC2 binding with Kds of 380 nM and 160 nM, respectively (Figure 3F and G).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig3-v1.jpg)
 
-**Figure 3.:** (A) Heatmap of fluorescence polarization signal in response to dose responses of the 54 related compounds. Structures and summary of activities of compounds 5 (B) and 6 (C). Fluorescence polarization signal from KLHDC2 and KEAP1 assays in response to increasing concentrations of 5 (D) and 6 (E) (n=3; mean and s.e.m.). Representative surface plasmon resonance (SPR) sensorgrams of KLHDC2 binding from the indicated concentrations of 5 (F) and 6 (G).Figure 3—source data 1.Figure 3A, D–G.
+**Figure 3.:** (A) Heatmap of fluorescence polarization signal in response to dose responses of the 54 related compounds. Structures and summary of activities of compounds 5 (B) and 6 (C). Fluorescence polarization signal from KLHDC2 and KEAP1 assays in response to increasing concentrations of 5 (D) and 6 (E) (n=3; mean and s.e.m.). Representative surface plasmon resonance (SPR) sensorgrams of KLHDC2 binding from the indicated concentrations of 5 (F) and 6 (G).
 
 We next sought to determine if the tetrahydroquinoline series could be used for targeted protein degradation. We performed docking studies using AutoDock Vina to evaluate the potential binding modes of 6 to the previously solved crystal structure of the Kelch domain of KLHDC2 (PDB 6DO3) (Rusnac et al., 2018). Surprisingly, 6 was not predicted to be capable of making interactions with Arg236 or Arg241, which recognize the anionic carboxy terminus of the C-terminal diglycine motif of SelK, as anticipated. Instead, 6 occupies a more distal, lipophilic spot in the SelK binding pocket, making a predicted H-bond interaction with Arg189 of KLHDC2 (Figure 4A). In this orientation, the trifluoromethoxy group points to solvent, providing a potential vector for derivatizing PROTAC linkers. We evaluated this hypothesis by synthesizing three PROTAC molecules bearing JQ1, a well-characterized ligand to BRD4 (bromodomain-containing protein 4), which has been used often in the literature as a means of testing PROTAC activity (Winter et al., 2015; Lu et al., 2015). These molecules were based on the methyl ester substituted scaffold represented by 2 (for increased cellular permeability and subsequent hydrolysis of the carboxylate by cellular esterases) and bore 3 position substituted PROTAC linkages to JQ1. These PROTACs linkers consisted of the flexible three ethylene glycol substituted 7 as well as the more structured linkers represented by 8 and 9 (Figure 4B). We evaluated the ability of these molecules to degrade BRD4 using a HEK293T-based assay in which the luminescence produced from a transiently transfected BRD4-HiBiT transgene correlates to the amount of cellular BRD4 present. We found 7 degraded BRD4 in the BRD4-HiBiT with modest activity after 4 hr of treatment (half-maximal degradation concentration, DC50=2.6 µM) and that degradation by this molecule persisted for 24 hr (DC50=4 µM; Figure 4C and D). Notably, the more rigid PROTAC 8 displayed considerably enhanced activity in degrading BRD4 within 4 hr of treatment (DC50=164 nM) that further increased (DC50=80 nM) at the 24 hr timepoint (Figure 4C and D). This result contrasts with dBET1, a reported CRBN-targeting PROTAC degrader of BRD4 (Winter et al., 2015), which potently promoted degradation at 4 hr in this assay (DC50=22 nM) but became inactive at the 24 hr timepoint. Notably, the most rigid biphenyl linker containing 9 did not promote BRD4 degradation at any concentration (<20 µM) or timepoint (4 or 24 hr) tested. We lastly confirmed the ability of 8 to degrade endogenous BRD4 in SK-BR-3 cells. 8 (100 nM) degraded more than 60% of endogenous BRD4 protein in 24 hr of treatment; maximal degradation was observed with the highest concentration tested (10 µM; 94% degradation; Figure 4E). Importantly, the 10 µM condition could be partially rescued when co-treated with MG-132 (29% remaining vs. 4% in the DMSO condition), indicating degradation occurs through a proteasome-mediated mechanism.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/106844/elife-106844-fig4-v1.jpg)
 
-**Figure 4.:** (A) Binding pose of compound 6 to KHLDC2 (PDB 6DO3). (B) Structure and summary of activities of the indicated proteolysis-targeting chimeras (PROTAC) molecules. Relative BRD4 levels at 4 (C) or 24 hr (D) as measured by luminescence from HEK293T cells expressing a HiBiT-tagged BRD4 transgene (n=3; mean and s.e.m.). (E) Representative western blot and densitometry-based quantification of BRD4 levels from SK-BR-3 in response to 24 hr treatment with the indicated concentrations of 8.Figure 4—source data 1.Figure 4C and D.Figure 4—source data 2.Figure 4E.Figure 4—source data 3.Figure 4E.
+**Figure 4.:** (A) Binding pose of compound 6 to KHLDC2 (PDB 6DO3). (B) Structure and summary of activities of the indicated proteolysis-targeting chimeras (PROTAC) molecules. Relative BRD4 levels at 4 (C) or 24 hr (D) as measured by luminescence from HEK293T cells expressing a HiBiT-tagged BRD4 transgene (n=3; mean and s.e.m.). (E) Representative western blot and densitometry-based quantification of BRD4 levels from SK-BR-3 in response to 24 hr treatment with the indicated concentrations of 8.
 
 ## Discussion
 
@@ -61,38 +77,38 @@ Here, we have reported the development and execution of a high-throughput compet
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 HEK293T and SK-BR-3 cells were purchased from American Type Culture Collection (ATCC) and were profiled for identity using Short Tandem Repeat (STR) profiling. HEK293T cells were maintained in DMEM (Gibco) containing 10% fetal bovine serum (Gibco) and 1% penicillin streptomycin (Gibco). SK-BR-3 cells were maintained in McCoy’s 5A medium (Gibco) supplemented with 10% fetal bovine serum (Gibco) and 1% penicillin streptomycin (Gibco).
 
-## Protein expression and purification
+### Protein expression and purification
 
 The Kelch domain of human KLHDC2 (amino acids 1–362) was cloned in frame with an N-terminal glutathione-S-transferase (GST) tag and TEV-cleavage sequence into the pFastBac vector and was expressed in two rounds of baculoviral production in insect Sf9 monolayer cells. The produced 15 mL of P3 virus was used to infect 1.5 L HiFive suspension cells at a cellular density of 106/mL in a 27°C shaker at 110 RPM. After 3 days of infection, the cells were harvested at 8000×g for 30 min and then lysed in 20 mM Tris, pH 8.0, 200 mM NaCl, 5 mM DTT in the presence of protease inhibitors (1 mg/mL leupeptin, 1 mg/mL pepstatin, and 100 mM PMSF) with sonication. The lysate was incubated with Pierce Glutathione Agarose (Thermo Scientific) at 4°C overnight and eluted with 250 mM glutathione. The crude protein was first dialyzed into dialysis buffer (20 mM Tris, pH 8.0, 200 mM NaCl, 5 mM DTT) and further purified with size exclusion using a Superdex-75 column (GE Healthcare). The human KEAP1 Kelch domain was expressed using a pET21a-KEAP1 plasmid outfitted cloned in frame with an N-terminal HIS6 tag. Plasmid-containing BL21(DE3) cells were amplified in 1 L 2YT culture at 37°C until the OD600 reached 0.8, followed by 1 mM IPTG induction at 4°C overnight. The harvested cells were lysed in the aforementioned lysis buffer and purified via a standard Ni-NTA purification protocol. Both proteins were concentrated with an Amicon concentrator (Sigma), and the protein concentrations were determined by BCA assay (Thermo Fisher 23327). All protein samples were flash-frozen in liquid nitrogen for future use.
 
-## Small molecule libraries
+### Small molecule libraries
 
 The small molecule library of 354,274 compounds consisted of a ChemDiv library (150,114 compounds), an Enamine library (142,208 compounds), a Life Chemicals library (33,792 compounds), and the ReFrame library (28,160 compounds).
 
-## High-throughput screening
+### High-throughput screening
 
 Compounds from selected small molecule libraries were pre-spotted at 10 µM (final concentration) with Echo Acoustic liquid handler system (Beckman) in the format of 1536-well or 384-well in Greiner solid black microplates (Cat.No. 782076 and 781209). The C-terminal peptide of SelK, native substrate KLHDC2 protein, HLRGSPPPMAGG (InnoPep. Inc), was spotted into each individual plate, which serves as positive control at a final concentration of 1 μM. The FP assay was carried out by first dispensing 5 μL of KLHDC2 protein at 25 nM for 1536-well microplates or 25 μL at 25 nM for 384-well microplates with a Multidrop Dispenser (Thermo Fisher) followed by incubation at room temperature for 1 hr. An equal volume of 3.12 nM TAMRA-HLRGSPPPMAGG (InnoPep. Inc) was dispensed into the plates and incubated at room temperature for another 1 hr in the dark. The final concentration of the protein and the corresponding TAMRA-peptide was 12.5 nM and 1.56 nM, respectively. FP signals were recorded using an Envision plate reader (Perkin Elmer), and the robust Z-scores were calculated using Genedata Screener where ~3% of the hits were selected each batch based on robust Z-scores for the primary screening. The second round of triplicate validation and the third round of dose-response characterization were carried out in a similar format.
 
-## Fluorescence polarization assays
+### Fluorescence polarization assays
 
 The in-house validation of KLHDC binders including re-purchased SAR by inventory compounds was carried out in black solid-bottom 384-well microplates. 25 μL of KLHDC2 or KEAP1 protein was first dispensed into the plates, followed by transferring the corresponding concentration of compound through the Bravo Automated liquid handling system (Agilent). The mixture was incubated at room temperature for 1 hr before the TAMRA-peptide was added. The final concentration of the protein and the corresponding TAMRA-peptide was 25 nM and 3.12 nM, respectively. The plates were incubated at room temperature in a shaded environment for 1 more hour, and the FP signals were measured by Envision plate reader (Perkin Elmer). The data were analyzed and visualized by GraphPad Prism software.
 
-## SPR binding experiments with KLHDC2Klech
+### SPR binding experiments with KLHDC2Klech
 
 10 μM His-GST-KLHDC2 in 100 μL of 1X HBS (HEPES-buffered saline, 10 mM HEPES, 150 mM NaCl, pH 7.4) containing 25 μM EZ-Link NHS-PEG4-biotin was incubated at 4°C for 2 hr, after which the reaction was quenched with 2 μL of 1 M Tris pH 7.5. The solution was dialyzed over an 18 hr period against three changes of 500 mL of 1X HBSS buffer. Biotinylated-His-GST-KLHDC2 was immobilized onto Xantec High Density SA chip by diluting to 0.7 μM injected over the surface for 60 s at 10 μL/min and resulting in approximate immobilized signal gain of 4000–4500 response units (RU). The running buffer for all immobilization assays was 50 mM Tris pH 8, 250 mM NaCl, 0.05% Tween 20, 0.1 mM DTT, and 2% DMSO. All measurements of direct binding in SPR experiments were collected using the Biacore 8K+ instrumentation.
 
-## Cell-based HiBIT BRD4 degradation assay
+### Cell-based HiBIT BRD4 degradation assay
 
 HEK293T cells (0.2×106 cells/well, 40 μL) were seeded in white opaque bottom Greiner 384-well microplates for 24 hr before transfection with 1 ng pCMV6-HiBIT-BRD4 plasmid, 99 ng pUC19 plasmid, and 4 µL/µg FuGene (Promega) in OptiMEM (Thermo Fisher). The next day, compounds were spotted as DMSO solutions (100 nL) using a Bravo Automated Liquid Handler (Agilent) affixed with a pintool head (V&P Scientific) in serial dilution. After 4 hr of incubation, 30 μL of Nano-Glo HiBiT Lytic Reagent was added, and the plates were shaken for 5 min. The HiBIT-BRD4 levels of each well were measured by Envision plate reader (Perkin Elmer). The raw data was analyzed and visualized by GraphPad Prism software.
 
-## Cell-based endogenous BRD4 degradation assay
+### Cell-based endogenous BRD4 degradation assay
 
 SK-BR-3 cells (0.25×106 cells/well, 2 mL) were seeded in six-well polystyrene plates for 24 hr before the compounds were added at the indicated doses as DMSO solutions. The protease inhibitor MG132 (Selleck Chemicals) was added to the sixth well along with 10 μM 3d at a concentration of 10 μM. The plate was incubated at 37°C for 24 hr, and the cells from each well were collected and lysed in RIPA buffer (Thermo Fisher 89900) with Halt protease and phosphatase inhibitor cocktail (Thermo Fisher 78440). The cellular content was extracted on ice for 20 min, and the protein concentration was determined by BCA assay (Thermo Fisher 23327). 2 μg of each sample was resolved via SDS-PAGE gels, and western blotting was used to visualize the endogenous BRD4 level (BRD4 primary antibody Abcam plc, Ab128874, RRID:AB_11145462, 1:10,000 dilution) with Bio-Rad Gel Doc XR+ imaging system.
 
-## Statistics
+### Statistics
 
 All experiments were performed at least twice. All data are technical replicates.

@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01an3r305 Department of Structural Biology, University of Pittsburgh Pittsburgh United States
-2. https://ror.org/05qghxh33 Laufer Center for Physical and Quantitative Biology, and Department of Biochemistry and Cell Biology, School of Medicine, Stony Brook University Stony Brook United States
+1. Department of Structural Biology, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+2. Laufer Center for Physical and Quantitative Biology, and Department of Biochemistry and Cell Biology, School of Medicine, Stony Brook University Stony Brook United States ([ROR:05qghxh33](https://ror.org/05qghxh33))
 
 † Corresponding author
 
@@ -24,31 +24,239 @@ Neuronal signaling by monoaminergic neurotransmitters controls all aspects of hu
 
 VMAT1 and -2 are members of the solute carrier 18 (SLC18) family and are also known as SLC18A1 and SLC18A2. The SLC18 subfamily also includes the vesicular transporters for acetylcholine (Arvidsson et al., 1997) (VAChT, SLC18A3) and polyamines (Hiasa et al., 2014) (VPAT, SLC18B1). Sequence alignments also show that SLC18 transporters belong to the major facilitator superfamily (MFS) of membrane transport proteins which use an alternating access mechanism (Jardetzky, 1966; Mitchell, 1957) to transport substrate across membranes. SLC18 members are predicted to be comprised of 12 transmembrane (TM) spanning helices (TM1–12), which are arranged in two pseudosymmetric halves each with six TM helices containing a primary binding site for neurotransmitters, polyamines, and inhibitors located approximately halfway across the membrane (Radestock and Forrest, 2011; Figure 1a). Conformational changes driven by the proton electrochemical gradient are thought to alternatively expose the binding site to either side of the membrane allowing for transport of neurotransmitter from the cytoplasm to the lumen of SVs (Yaffe et al., 2013; Yaffe et al., 2016).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig1-v1.jpg)
+
+**Figure 1.:** (a) Predicted structural elements of VMAT2. The neurotransmitter substrate is bound at the central site (yellow, circle) between the two repeats comprised of transmembrane (TM)1–6 and 7–12. The red and blue triangles depict the pseudo twofold symmetric repeats. A disulfide bond (purple line) is predicted between lumenal loops LL1 and LL4. The N-linked glycosylation sites in LL1 are shown as red ‘Y’ shapes. (b) Intrinsic fiducial strategy involves attachment of mVenus and GFP-Nb to the N- and C-terminus of VMAT2. (c) Left panel, plots of [3H]-DTBZ saturation binding to wild-type VMAT2 (black, circles) and chimera (red, squares). Symbols show the mean derived from n=3 technical replicates. Error bars show the s.e.m. Right panel, graphs of competition binding of 3H-DTBZ with unlabeled reserpine, error bars show the s.e.m. DTBZ, dihydrotetrabenazine. (d) Plots of transport into vesicles using 1 and 10 µM 3H-serotonin for wild-type VMAT2 (gray bars) and chimera (red bars). The bars show the means and points show the value for each technical replicate. Error bars show the s.e.m. (e, f) Occluded map of VMAT2-tetrabenazine complex (3.1 Å resolution, contour level 0.336). The mVenus and GFP-Nb fiducial is not shown for clarity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The mVenus and GFP-Nb was fused to the N- and C-terminus of VMAT2 and the length of the termini is varied to find constructs which can be studied by cryo-electron microscopy (cryo-EM) and retain functional activity. (b) Sequence and secondary structure prediction. The position of the various transmembrane helices and the position of mVenus and GFP-Nb are shown. (c) Screening of various constructs by FSEC. (d) The SEC profile of the 17–481 chimera exhibits a single monodisperse peak. (e), SDS-PAGE gel showing purified VMAT2 chimera which migrates as an ~75 kDa species. (f) Time course accumulation of serotonin in vesicles using 1 µM 3H-serotonin for wild-type (black trace) and chimera (red trace). (g) VMAT2 colored by sequence variation from different species, using the ConSurf server (Carlsson et al., 1957).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** A representative micrograph (defocus –1.3 µm) is shown (scale bar equals 80 nm). The workflow depicts the data processing scheme used to reconstruct VMAT2. Two datasets were collected comprising 7742 and 17,133 micrographs, respectively. Videos were corrected for drift using patch motion correction in CryoSPARC (Punjani et al., 2017) and resultant micrographs were used to estimate defocus and pick particles. Blob picking followed by template picking was utilized to select approximately 5 million particles from each dataset. 2D classification was used to sort particles and the sorted particles were subjected to ab initio reconstructions to obtain initial reference. Next, all of the particles picks from each dataset were subjected to multiple rounds of heterogeneous classification/refinement with the ab initio VMAT2 map and two ‘decoy’ classes (yellow, a spherical blob, and red, empty detergent micelle) starting with a box size of 128 pixels, followed by subsequent rounds of classification at box size of 256. This resulted in approximately 212k particles after combining both datasets. Particles were then extracted at full box size 384 before Bayesian polishing in RELION (Scheres, 2012) and local CTF refinement in CryoSPARC (Punjani et al., 2017). The resulting 3.5 Å map was then subjected to CryoSPARC 3D classification using a transmembrane domain (TMD) mask (Punjani et al., 2017). The final stack of 65k particles was then subjected to local refinement to produce the final unsharpened map. DeepEMhancer was used to locally sharpen the map for interpretation (Sanchez-Garcia et al., 2021).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Cryo-EM density colored by local resolution estimation. (b) FSC curves for cross-validation, the unmasked map (blue), loose mask (green), tight mask (red), and the reported corrected (purple) curves. The dotted line indicates an FSC value of 0.143. (c) FSC curves for model versus half map 1 (working, red), half map 2 (free, blue), and model versus final map (black). (d) Angular distribution of particles used in the final reconstruction. (e) Cryo-EM density segments of transmembrane (TM)1 to TM12.
+
 VMAT2 and VMAT1 share 62% sequence identity but have distinct substrate specificity and pharmacological properties (Erickson et al., 1996). Small-molecule ligands such as TBZ and reserpine are high-affinity inhibitors of VMAT2, which prevent neurotransmitters from binding, arrest VMAT2 from cycling, and consequently reduce neuronal signaling. VMAT2 exhibits higher affinity for TBZ, monoamines, and amphetamines, whereas reserpine binds equally to both VMAT2 and VMAT1 (Peter et al., 1994). TBZ is the only drug which is approved for treatment of chorea associated with Huntington’s disease and has shown to be effective in various other hyperkinetic conditions such as tardive dyskinesia, dystonia, tics, and Tourette’s syndrome (Kaur et al., 2016). A proposed mechanism for TBZ inhibition of VMAT2 involves two sequential steps, initial low-affinity binding of TBZ to the lumenal-open state of VMAT2 which produces a conformational change, resulting in a high-affinity dead-end TBZ-bound occluded complex (; Scherman et al., 1983; Scherman and Henry, 1984; Ugolev et al., 2013).
 
 Here, we report a structure of VMAT2 bound to TBZ at 3.1 Å resolution in an occluded conformation using single-particle cryo-electron microscopy (cryo-EM), describing the architecture of VMAT2, identifying the high-affinity TBZ binding site, and revealing the mechanisms of drug and neurotransmitter binding, inhibition, and transport.
 
 ## Results
 
-## Cryo-EM imaging of human VMAT2
+### Cryo-EM imaging of human VMAT2
 
 Since VMAT2 is a small monomeric membrane protein of approximately 55 kDa, cryo-EM structure determination is challenging. To overcome this, we incorporated mVenus and the anti-GFP nanobody into the N- and C-terminus respectively of human VMAT2 to provide mass and molecular features to facilitate the cryo-EM reconstruction (Figure 1b), this created a hook-like fiducial feature by reconstituting the interaction of these proteins on the cytosolic side of VMAT2 (Kubala et al., 2010). Attachment of both proteins to the termini proved to be ineffective as the unstructured N- and C-terminus of VMAT2 are flexible; to combat this problem, we determined the minimal termini length that would reduce flexibility while maintaining VMAT2 folding. After successive optimizations, our final construct contained mVenus fused to the N-termini at position 17, and the anti-GFP nanobody at position 482 which we denote the VMAT2 chimera (Figure 1—figure supplement 1a–e). We investigated the consequences of VMAT2 modification to ensure the chimera maintained functional activity. First, we performed binding experiments with 3H-labeled dihydrotetrabenazine (DTBZ) and found the chimera-bound DTBZ with a similar affinity (Kd = 26 ± 9 nM) to the wild-type control (Kd = 18 ± 4 nM) (Figure 1c). Competition binding of labeled DTBZ with unlabeled reserpine stabilizes cytoplasmic-open (Yaffe et al., 2018), a state which is incompatible with TBZ binding and produced a Ki of 173±1 nM for reserpine, which was like wild type (161±1 nM). Next, we performed transport experiments using permeabilized cells, initial time course experiments using 3H-labeled serotonin showed clear accumulation (Figure 1—figure supplement 1f), and steady-state experiments using 1 and 10 µM serotonin measured within the linear uptake range showed similar transport activity as wild-type VMAT2 (Figure 1d). Thus, the functional properties of the chimera are comparable to wild-type VMAT2.
 
 To understand the architecture, locate the drug binding site, and assess how TBZ binding influences the conformation of the transporter, we studied the VMAT2 chimera using single-particle cryo-EM (Figure 1e and f, Figure 1—figure supplement 2). The resulting cryo-EM map was determined to a resolution of 3.1 Å, the densities of the TM helices were well defined, continuous, and exhibited density features for TBZ in the primary binding site and most of the side chains (Table 1, Figure 1—figure supplement 3). This demonstrates the feasibility of our approach and enabled us to build a model of VMAT2.
 
-## Architecture of VMAT2
+**Table 1.**
+ Cryo-electron microscopy (cryo-EM) data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>VMAT2-TBZ(EMDB-41269)(PDB 8THR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>77,279</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–1.0 to –2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.647</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>~10,000,000</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>65516</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)FSC threshold</td>
+      <td>3.120.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)*</td>
+      <td>6.6–2.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)FSC threshold</td>
+      <td>3.70.5</td>
+    </tr>
+    <tr>
+      <td>Model resolution range (Å)</td>
+      <td>20.4–3.7</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor Å2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model compositionNon-hydrogen atomsProtein residuesLigands</td>
+      <td>29373891</td>
+    </tr>
+    <tr>
+      <td>B-factors Å2ProteinLigand</td>
+      <td>28.9955.22</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviationsBond lengths (Å)Bond angles (°)</td>
+      <td>0.0004 (0)0.37 (15)</td>
+    </tr>
+    <tr>
+      <td>ValidationMolProbity scoreClashscorePoor rotamers (%)</td>
+      <td>1.234.340.96</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plotFavored (%)Allowed (%)Disallowed (%)</td>
+      <td>98.02.000.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Local resolution range at 0.5 FSC._
+
+### Architecture of VMAT2
 
 The TBZ-bound VMAT2 complex adopts an occluded conformation, with TBZ in a binding site between the central TM helices. The 12 TM helices of the transmembrane domain (TMD) of VMAT2 are arranged in a tight bundle with TM1–6 and TM7–12 each organized into a pseudosymmetrical half (Figure 2a). The cytosolic facing side of VMAT2 is characterized primarily by the unstructured N- and C- termini along with a 20-residue loop that connects the two halves, extending from TM6 to TM7 before terminating in a short α-helix that runs parallel to the bilayer and connects to TM7 with a short linker. TM5 and -11 both contain proline residues near the lumenal face, which break the helical structure and facilitate connections to TM6 and -12 respectively. TM9 and -12 exhibit significant heterogeneity in our cryo-EM reconstructions; we speculate that this is likely due to a dynamic nature intrinsic to the TMs, an aspect that may offer a glimpse into VMAT2 dynamics.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig2-v1.jpg)
+
+**Figure 2.:** (a) Overall view of the VMAT2-tetrabenazine (TBZ) complex. TBZ is shown in light green sticks with its map density in transparent surface. (b) Closeup view of lumenal gating residues and TBZ, shown in stick representation together with transparent surface representation of their map density. (c) Cytosolic gating residues, same representation as in (b). (d) Binding of dihydrotetrabenazine (DTBZ) to various VMAT2 mutants in the lumenal and cytosolic gates including wild type (black), W318R (brown), W318H (light green), E127A (purple), W318F (orange), Y433A (forest green), F429A (blue), W318A (red), and F135A (teal). Data were normalized to wild type with error bars denoting standard deviation. (e) Serotonin transport activity of lumenal and cytosolic gating residue mutants. Symbols show the mean derived from n=6 technical replicates with an identical color scheme to (d). Asterisks denote statistical significance from wild type, with no significance being denoted with n.s. Data were normalized to wild-type transport. Statistics were calculated in GraphPad Prism using a one-way ANOVA with Dunnett’s multiple comparison test. Error bars show the standard deviation. (f) Alignment of five sequential residues of human VMAT2 (two residues on either side of W318) against their counterparts in Xenopus laevis (Xl), Helobdella robusta (Hr), and VMAT1, VAChT, and VPAT from humans. The residues which align with W318 in VMAT2 are shown in red.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The positions of mutated residues are shown in red boxes. The human variants are shown in blue boxes (Yariv et al., 2023; Pei et al., 2008).
+
 VMAT1 and -2 encode a large lumenal loop (LL) 1 which contains several N-linked glycosylation sites (Yao and Hersh, 2007) and a disulfide bridge between LL1 and LL4 (Thiriot et al., 2002). LL1 and -4 also contain intriguing elements of structure: LL1 extends into the lumenal space in an unstructured loop which is mostly not resolved in our structure, before terminating in a short helix which interacts with the lumenal face of the transporter near TM7, -11, and -12; LL4 extends outward from TM7 into the lumen before connecting back to TM8. A striking feature of LL4 is the location of W318 which positions its indole side chain directly into a lumenal cavity near the TBZ site, acting as a plug to completely occlude the lumenal side of the transporter (Figure 2b). Together, these loops cinch the lumenal side of the transporter closed, locking VMAT2 in an occluded conformation and preventing ligand egress. The conserved nature of LL4 and W318 suggests this motif is necessary for transport function and is a key player in the transport mechanism (Figure 1—figure supplement 1b and g, Figure 2—figure supplement 1). The conformation of LL1 and -4 is also likely aided by a disulfide bond between cysteines 117 and 324, which is known to be necessary for transporter function (Thiriot et al., 2002), our structure was not able to unequivocally place this bond due to the lack of density for residues 48–118 of LL1.
 
-## Cytosolic and lumenal gates
+### Cytosolic and lumenal gates
 
 The structure of the VMAT2-TBZ complex reveals that both the cytosolic and lumenal gates are closed, which precludes solvent and ligand access from either the cytosolic or lumenal compartments (Figure 2a–c). Previous studies have suggested that residues R217, M221, Y418, and Y422 make up the cytosolic gate (Yaffe et al., 2016). We find R217 and Y418 form the outer cytosolic gate with the guanidino group of R217 involved in a cation-π interaction with the aromatic benzyl group of Y418 which seals off cytosolic access to the binding site (Figure 2c). M221 and Y422 form a second set of cytosolic gating residues ‘above’ the outer cytoplasmic gate through a stable methionine-aromatic interaction which acts to fully seal the cytoplasmic gate (Figure 2c). It is likely that M204 and M403 also contribute to cytosolic gating in this region as their side chains also act to fill this space. On the lumenal side, F135, F334, and W318 form the lumenal gate where they interact with one another to block access to the binding site. W318 acts as ‘cap’ with the indole side chain facing into a tightly packed hydrophobic pocket consisting of residues I44, V131, L134, L315, I317, and I381 which completely prevent access on the lumenal side. W318 is highly conserved in the SLC18 family, suggesting that SLC18 transporters share a common mechanism of lumenal-gate closure (Figure 2—figure supplement 1). E127 of LL1 may play a role in stabilizing the tryptophan in this conformation, with the carboxyl group of the side chain orienting itself near the indole nitrogen potentially forming a hydrogen bond pair. We found that mutation of this residue to alanine did not significantly reduce TBZ binding relative to wild type (Figure 2d). The inner gate is located just below TBZ and comprises residues Y341, F429, and Y433 (Figure 2b; Yaffe et al., 2016). When probed for their role in inhibitor binding, we found that alanine mutants of F135, Y433, and W318 all greatly reduced DTBZ binding (Figure 2d). Extensive contacts of TBZ with F135 may function to keep the transporter closed on the lumenal side, which would trap VMAT2 in the occluded conformation. F135 and Y433 form π-stacking interactions with TBZ which coordinate the benzene ring of TBZ. F429A did not reduce DTBZ affinity (Kd = 7.7 ± 0.6 nM) compared to the wild-type control (Kd = 15 ± 2 nM), showing that while mutation of this residue compromises the inner cytosolic gate (Figure 2b), it is not directly involved in binding TBZ. Conversely, while W318 in LL4 also does not interact directly with TBZ, W318 is required for stabilizing the occluded conformation, and replacement with alanine prevents TBZ from being trapped inside the transporter by preventing closure of the lumenal gate. Sequence alignment with other members of the SLC18 family reveals broad conservation of W318 except for VAChT which contains a phenylalanine in its place (Figure 2—figure supplement 1) and a W318F mutation retained some DTBZ binding (Kd = 24 ± 16 nM) (Table 2, Figure 2d). Alignment of VMAT2 sequences from other species also shows a high degree of conservation of W318 with some notable exceptions which substitute W318 for a large positively charged residue such as an arginine or histidine; and upon investigation we found these mutants all greatly diminish DTBZ binding (Figure 2d).
 
+**Table 2.**
+ Calculated Kd values of dihydrotetrabenazine (DTBZ) for various single-point mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutant</th>
+      <th>Kd (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>15±3</td>
+    </tr>
+    <tr>
+      <td>N34A</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>N34D</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>N34Q</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>N34T</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>E127A</td>
+      <td>15±6</td>
+    </tr>
+    <tr>
+      <td>F135A</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>R189A</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>V232L</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>E312Q</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>W318A</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>W318F</td>
+      <td>24±16</td>
+    </tr>
+    <tr>
+      <td>W318H</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>W318R</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>F429A</td>
+      <td>7.7±0.6</td>
+    </tr>
+    <tr>
+      <td>Y433A</td>
+      <td>ND</td>
+    </tr>
+  </tbody>
+</table>
+
 To further investigate the functional role of the identified gating residues, we performed serotonin transport experiments. We found that mutation of both E127 and F135 to alanine significantly reduced transport activity (Figure 2e). E127A produced a large reduction in transport, resulting in just 34% activity. Replacing F429 with alanine reduced transport as well, but only to about half the level of wild type (Figure 2e). Interestingly, the Y433A mutation appeared to enhance transport, and while critical for TBZ binding, this mutant does not prevent transporter cycling (Figure 2d and e). Mutation of W318 to alanine greatly reduced transport, paralleling the effect observed with DTBZ binding (Figure 2d and e) while a histidine mutant at this position maintained a significant amount of transport activity (Figure 2d–f) and the phenylalanine substitution had about half the activity of wild type. The highest activity of the examined W318 mutants was W318R, which fully recapitulated the transport activity of wild type despite being unable to bind DTBZ (Figure 2d and e).
 
-## Polar networks
+### Polar networks
 
 Upon careful inspection of the model, we were able to identify distinct polar networks that we believe may play a role in proton coordination and subsequent transporter conformational change (Figure 3a). The first and largest of these networks lies between TM-1, -4, and -11, and consists of residues D33, N34, K138, Q142, R189, Q192, S196, S197, S200, and D426 (Figure 3b; Yaffe et al., 2013). At the center of this network lies D33 (Yaffe et al., 2013), which makes critical contacts with the side chains of N34, K138, S196, and Q192. Together, the residues comprise a complex hydrogen bond network linking TM1, -4, and -11. D426 (Merickel et al., 1997) lies further toward the cytosol with the side chain carboxyl group facing the bulk of the network, likely forming a hydrogen bond with the hydroxyl group of S200. In the other TMD half there are two distinct groups of interacting polar residues, which bridge between TM7, -8, and -10 (Figure 3a, c, and d). The second group is a pair of residues found on the lumenal side, between residues E312 and N388 with the amide group of the N388 side chain pointed toward the carboxyl group of E312, which could act to stabilize TBZ in the binding site (Figure 3c). The third group is located toward the cytosolic side and consists of N305, Y341, and D399 (Merickel et al., 1997), the latter two of which have previously been speculated to form a hydrogen bond pair (Yaffe et al., 2013). The side chains of these residues are positioned toward one another, with the carboxyl group of D399 forming a hydrogen bond with N305 and likely Y314 (Figure 3d).
 
@@ -56,29 +264,353 @@ Upon careful inspection of the model, we were able to identify distinct polar ne
 
 **Figure 3.:** (a) Overall view showing three distinct polar networks. Polar residues involved in each network and tetrabenazine (TBZ) are shown in sticks. (b) Cartoon representation showing a zoomed view of polar network 1. (c) Polar network 2. (d) Polar network 3.
 
-## TBZ binding site
+### TBZ binding site
 
 The resolution of our map allowed us to unambiguously place TBZ in the central binding site (Figure 4a and b). TBZ adopts a pose which is predominantly perpendicular to the direction of the TM helices in the lumenal half of VMAT2 near the location of the lumenal gating residues. The TBZ binding site exhibits an amphipathic environment, comprised of both polar and non-polar residues where the tertiary amine of TBZ orients itself toward the negatively charged surface of the binding site near TM7 and -11, and toward E312 (Figure 4c, Figure 4—figure supplement 1a). We considered that E312 may play an analogous role to the highly conserved aspartate residue present in neurotransmitter sodium symporters such as the serotonin, DA, and norepinephrine transporters (Yamashita et al., 2005) which utilize a negatively charged residue to directly bind to amine groups (Figure 4d and e, Figure 2—figure supplement 1). We thus performed radiolabeled binding experiments to assess the effect of mutating residues in the TBZ binding site by measuring binding of 3H-labeled DTBZ (Figure 4f, Table 2). E312 was previously shown to be necessary for substrate transport and inhibitor binding, so we first selected this residue for mutagenesis to probe its importance in TBZ binding (Yaffe et al., 2013; Støve et al., 2022). The E312Q mutant did not fully abolish DTBZ binding (Figure 4—figure supplement 1b) but did greatly reduce DTBZ affinity. This demonstrates that, while not completely essential, E312 is important for inhibitor binding and likely substrates transport by interacting with the amine of the neurotransmitter (Figure 4d and e). Next, we observed that R189 orients its guanidino group toward the methoxy groups of TBZ likely forming hydrogen-bonding interactions and we found that replacement of R189 with an alanine nearly completely abolished DBTZ binding at all concentrations tested (Figure 4f, Figure 4—figure supplement 1b). The high degree of conservation of this residue suggests that it plays an important role in transporter function, and even a conservative substitution to a lysine nearly eliminated DTBZ binding (Figure 4f, Table 2). K138 has been previously shown to play an important role in both TBZ binding and serotonin transport and the primary amine side chain is positioned toward the TBZ binding site (Merickel et al., 1997; Figure 4d and e). K138 is positioned between two aspartate residues (D426 and D33) and is part of a hydrogen bond network that has been previously hypothesized (Merickel et al., 1997). Previous experiments found that mutating K138 to alanine resulted in an approximate fourfold reduction in TBZ binding affinity (Yaffe et al., 2013) but did not extinguish TBZ binding and therefore K138 is likely involved in direct interactions with substrate or inducing conformational changes during proton transport and is not directly involved in TBZ binding. N34 is of particular interest since the amide group of its side chain appears to form a hydrogen bond with the carbonyl oxygen of TBZ (Figure 4d and e) which is a hydroxyl group in DTBZ. DTBZ binding was not detectable to N34 mutants of either glutamine, threonine, or aspartate while substitution to alanine preserved some binding (Figure 4f, Table 2, Figure 4—figure supplement 1b).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig4-v1.jpg)
+
+**Figure 4.:** (a) Chemical structure of TBZ. The blue dotted circle indicates the position of the hydroxyl group in dihydrotetrabenazine (DTBZ). (b) Density associated with TBZ is shown in green transparent surface sharpened with a B-factor of –50 Å2. TBZ is shown in sticks fit to the density. (c) Electrostatic potential of the TBZ binding site. (d, e) Binding site of TBZ, residues which are involved in binding are shown in sticks. Density associated with TBZ is shown in light green surface. (f) Plots of 3H-DTBZ saturation binding to wild type (black), V232L (pink), R189A (blue), E312Q (forest green), N34D (orange), N34T (light purple), N34A (teal), N34Q (brown) R189K (purple) L37F (red), and K138A (light green). (g) Serotonin transport activity of mutants in TBZ binding site. Symbols show the mean derived from n=6 technical replicates with an identical color scheme to f. Asterisks denote statistical significance from wild type, with no significance being denoted with n.s. Statistics were calculated in GraphPad Prism using a one-way ANOVA with Dunnett’s multiple comparison test. Error bars show the s.e.m.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) 2D cartoon of the TBZ binding site showing only highlighted residues. Green, red, and blue indicate hydrophobic, negatively, or positively charged properties of the side chains (Schrödinger, 2023) (a). (b) Plots of binding of 60 nM of [3H]-DTBZ. The bars show the means and points show the value for each technical replicate. Error bars show the s.e.m. (c) Binding site showing the positions of L37 and V232 which are a phenylalanine and a leucine in vesicular monoamine transporter 1 (VMAT1), respectively. DTBZ, dihydrotetrabenazine.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a–c) Time evolution of (a) root-mean-square-deviations (RMSDs) in vesicular monoamine transporter 2 (VMAT2) Cα-coordinates from those resolved in the cryo-electron microscopy (cryo-EM) structure, (b) RMSD for TBZ heavy atoms, and (c) TBZ binding affinities, observed in three different runs conducted for the TBZ_1 system (see Table 3). Binding affinities were calculated using PRODIGY-LIG. (d) The TBZ binding poses and variations of W318 captured in these MD simulations, with a snapshot taken every 4 ns and a total of 50 frames are shown from 0 to 100 ns for each run. The ligand conformations are shown in cyan sticks with blue stick illustrating cryo-EM-resolved binding pose. The variations of W318 are displayed in purple sticks with dark purple showing the cryo-EM-resolved orientation. Docking simulations of TBZ onto VMAT2 revealed two poses, shown in the panels (e) and (f). The former, captured in runs 1 and 3, is almost identical (RMSD of 0.4 Å) to the cryo-EM-resolved pose, illustrated in panel (e). The latter, captured in run 2, differs from the cryo-EM pose by 3.0 Å.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Results are presented for three different types of simulations (TBZ_2–TBZ-4; see Table 3). In each case, the top panels (a), (b), and (c) display the RMSDs in the heavy atoms of TBZ and the lower panels (d), (e), and (f) display the RMSDs in the Cα-atoms of VMAT2. Multiple runs are displayed by curves in different colors.
 
 To investigate the functional role of residues in the binding site, we again performed a series of serotonin transport experiments. We found R189A, E312Q, N34T, N34A, and K138A mutations all exhibited reduced transport activity (Figure 4g). R189A and E312Q exhibited the largest change, reducing transport to essentially zero. Substitution of N34 with glutamine had little or no effect on transport activity, opposite of what was noted for DTBZ binding. Replacing N34 with alanine was detrimental, reducing transport to less than half of wild type (Figure 4g). We found N34D and N34T to have opposing effects, with N34D having activity slightly less than wild type and N34T having little to no transport activity at all. R189K greatly affected transport but retained some activity despite lacking measurable DTBZ binding.
 
 Our model of the VMAT2-TBZ complex allowed us to pinpoint two residues which contribute to the specificity of TBZ to VMAT2 over VMAT1. Previous studies have highlighted V232 (Støve et al., 2022), which is a leucine in VMAT1, as being putatively involved in conferring differences in affinity, and our model shows that V232 is positioned closely to the isobutyl of TBZ which is wedged into a small hydrophobic pocket (Figure 4—figure supplement 1). The addition of an extra carbon of the leucine side chain would produce a steric clash and limit the ability of TBZ to bind (Figure 4e). The V232L mutant in VMAT2 reduces the affinity of DTBZ to VMAT2, confirming its importance in specificity, but the V232L mutant did not show a complete loss in binding (Figure 4f, Figure 4—figure supplement 1b). Therefore, we carefully inspected the binding site of VMAT2 and compared it to the predicted structure of VMAT1 to find additional differences in the binding site (Figure 2—figure supplement 1), we found that L37 in VMAT2 is a phenylalanine in VMAT1 (Figure 4—figure supplement 1c). Given its proximity to TBZ, this substitution would produce a steric clash with the benzene ring (Figure 4—figure supplement 1a and c). We found that the L37F mutant resulted in nearly no detectable binding of DTBZ at 60 nM concentration (Figure 4-figure supplement 4b). Thus, the combination of these two substitutions likely constitutes the differences in TBZ affinity of VMAT2 vs. VMAT1. Interestingly, V232L and L37F both retained some transport activity with L37F producing a more significant reduction in activity (Figure 4g).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig5-v1.jpg)
+
+**Figure 5.:** Comparison of (a) DA (yellow sticks) and (b) tetrabenazine (TBZ) (green sticks) binding to VMAT2, captured by molecular dynamics (MD) simulations. Two water pathways are observed in the MD simulations of VMAT2 bound to DA (run DA_2 in Table 5). Water molecules and key residues are shown in sticks. (c) Positions of DA (yellow van der Waals [VDW] spheres) with respect to hydrophobic gate composed of F135, W318, and F334 (purple VDW spheres), and charged residues lining the binding pocket at t=0, 30, 100, 170, and 200 ns. W318 side chain isomerization plays a critical role in mediating the opening/closure of the hydrophobic gate, accompanied by the reorientation of F135 side chain, permitting a flux of water molecules eventually giving rise to the destabilization and release of DA to the synaptic vesicle (SV) lumen by translocating through a hydrated channel. Waters within 10 Å radius from the center of mass (COM) of the hydrophobic gate residues are displayed.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Docking of DA and (b) serotonin to the cryo-electron microscopy (cryo-EM)-resolved vesicular monoamine transporter 2 (VMAT2). The most energetically favorable poses are shown for both substrates. Residues within 4 Å of the ligand are shown in sticks. DA and serotonin are displayed in violet and cyan as van der Waals (vdW) surfaces. In both cases, the amine group (of either substrate) is in close contact with E312 and the hydroxyl group interacts with R189. (c) Resolved 3D positions of aspartates and glutamates in VMAT2. (d) DA binding pose to the cryo-EM-resolved VMAT2 conformer (initial). (e–h) DA binding poses captured by 100 ns MD simulations of system DA_0 (f) in which none of the four acidic residues D33, E312, D399, and D426 were protonated and DA bound to D399; DA_1 (g) in which D399 was protonated and DA bound to E312; DA_2 (i), in which E312 and D399 were protonated; and DA_3 (h) in which E312, D399, and D426 were protonated. DA is shown in yellow vdW spheres around 100 ns, along with hydrophobic gate residues F135, W318, and F334 (purple vdW spheres), and charged residues lining the binding pocket. Waters within 10 Å radius from the center of mass (COM) of the hydrophobic gate residues are displayed.
+
 Our docking simulations suggested that TBZ may sample two different binding poses by small reorientation and movements within the same binding pocket (Figure 4—figure supplement 2), both exhibiting similar binding affinities (–9.5±0.2 kcal/mol); the first pose is almost identical to that resolved in our cryo-EM structure (0.4 Å root-mean-square-deviation [RMSD], Figure 4—figure supplement 2e); and the second (3 Å RMSD in TBZ heavy atom coordinates) shows a reorientation of the TBZ methoxy groups toward C430, a residue previously identified to play an important role in binding TBZ (Thiriot and Ruoho, 2001; Figure 4—figure supplement 2f). These two poses were also observed in molecular dynamics (MD) simulations as illustrated in Figure 4—figure supplement 2a–d and Figure 4—videos 1–3, Video 1. The second pose provides insights into the adaptability of TBZ to the conformational dynamics of VMAT2, while it preferentially positions itself into the pocket resolved in our cryo-EM map. TBZ is thought to enter from the lumenal side of VMAT2 by binding to the lumenal-open conformation (Ugolev et al., 2013). It may interact first with C430 and the other coordinating residues at this pose before R189 moves between the two methoxy groups and allows TBZ to settle into the resolved orientation (Figure 4—figure supplement 2f). This result highlights the stepwise events that inhibitors like TBZ may undergo to stably bind to their targets.
+
+![Video 1.](https://cdn.elifesciences.org/articles/91973/elife-91973-video1.mp4.jpg)
+
+**Video 1.:** TBZ adopted the predominant pose similar to that resolved in the cryo-electron microscopy (cryo-EM) structure.
 
 The binding stability of TBZ is also influenced by its protonation state. When TBZ is protonated (TBZ+), it induces the diffusion of three to four times more water molecules within the TBZ binding pocket compared to neutral TBZ (Table 3, Figure 4—figure supplement 3). This flux of water results in the dissociation of TBZ from its binding site as illustrated in Videos 2 and 3. Several titratable residues, including D33, E312, D399, D426, K138, and R189, line the central cavity of VMAT2 and impact TBZ binding stability (Table 4). We found that maintaining an overall neutral charge within the TBZ binding pocket, as observed in system TBZ_1, most effectively preserves the TBZ-bound occluded state of VMAT2. Residues R189 and E312 in particular are within close proximity of TBZ and participate directly in binding.
 
-## Neurotransmitter release
+![Video 2.](https://cdn.elifesciences.org/articles/91973/elife-91973-video2.mp4.jpg)
+
+**Video 2.:** (Related to Table 3). This is a 100 ns run, termed TBZ_2 run 1. The same format as Figure 4—videos 1–3 is adopted for the coordinating residues. TBZ tends to alter its binding pose to approximate the one observed in Figure 4—video 2.
+
+![Video 3.](https://cdn.elifesciences.org/articles/91973/elife-91973-video3.mp4.jpg)
+
+**Video 3.:** (Related to Table 3).This is a 100 ns run, termed TBZ_4 run 1. In the presence of protonation, TBZ preferentially samples the pose observed in Figure 4—video 2, Video 2.
+
+**Table 3.**
+ Molecular dynamics (MD) simulation systems of vesicular monoamine transporter 2 (VMAT2) in the presence of tetrabenazine (TBZ), their properties and simulation durations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System ID</th>
+      <th>Protonated residues</th>
+      <th>Bound ligand</th>
+      <th>Duration (ns)</th>
+      <th>Waters in binding pocket*</th>
+      <th>RMSD in VMAT2 Cα-atoms (Å)†</th>
+      <th>RMSD in TBZ heavy atoms (Å) ‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TBZ_1</td>
+      <td rowspan="2">E312 and D399</td>
+      <td>TBZ</td>
+      <td>3×180</td>
+      <td>2.8±1.3</td>
+      <td>2.4±0.3</td>
+      <td>2.7±0.5</td>
+    </tr>
+    <tr>
+      <td>TBZ_2</td>
+      <td>TBZ+</td>
+      <td>2×100</td>
+      <td>8.1±1.4</td>
+      <td>2.4±0.4</td>
+      <td>5.9±1.4</td>
+    </tr>
+    <tr>
+      <td>TBZ_3</td>
+      <td rowspan="2">E312, D399, and D426</td>
+      <td>TBZ</td>
+      <td>3×100</td>
+      <td>4.6±1.4</td>
+      <td>2.7±0.5</td>
+      <td>3.5±1.3</td>
+    </tr>
+    <tr>
+      <td>TBZ_4</td>
+      <td>TBZ+</td>
+      <td>2×100</td>
+      <td>14.3±2.4</td>
+      <td>2.3±0.2</td>
+      <td>3.7±0.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Number of water molecules within 3.5 Å of TBZ (or TBZ+) averaged over multiple MD snapshots.†RMSDs (root-mean-square-deviations) of VMAT2 Cα-atoms from their initial (cryo-EM resolved) positions.‡RMSD of the heavy atoms of TBZ from their cryo-EM-resolved positions. All averages and standard deviations were calculated between 50 and 100 ns portion of the MD trajectories._
+
+**Table 4.**
+ pKa calculations performed by PROPKA 3.5.0.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Residue</th>
+      <th>pKa with TBZ</th>
+      <th>pKa without TBZ</th>
+      <th>Model pKa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D33</td>
+      <td>5.48</td>
+      <td>5.43</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D121</td>
+      <td>4.46</td>
+      <td>4.46</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D123</td>
+      <td>4.75</td>
+      <td>4.75</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D213</td>
+      <td>3.23</td>
+      <td>3.23</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D214</td>
+      <td>4.95</td>
+      <td>4.95</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D262</td>
+      <td>6.44</td>
+      <td>6.44</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D291</td>
+      <td>4.44</td>
+      <td>4.44</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D399</td>
+      <td>7.64</td>
+      <td>7.56</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D411</td>
+      <td>2.74</td>
+      <td>2.74</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D426</td>
+      <td>6.38</td>
+      <td>6.35</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>D460</td>
+      <td>8.19</td>
+      <td>8.07</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>E120</td>
+      <td>3.06</td>
+      <td>3.06</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>E127</td>
+      <td>4.77</td>
+      <td>4.77</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>E215</td>
+      <td>4.27</td>
+      <td>4.27</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>E216</td>
+      <td>3.91</td>
+      <td>3.91</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>E244</td>
+      <td>4.52</td>
+      <td>4.52</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>E278</td>
+      <td>4.22</td>
+      <td>4.22</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>E312</td>
+      <td>6.71</td>
+      <td>7.46</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>E321</td>
+      <td>4.53</td>
+      <td>4.53</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>K138</td>
+      <td>9.86</td>
+      <td>10.04</td>
+      <td>10.5</td>
+    </tr>
+    <tr>
+      <td>R189</td>
+      <td>9.10</td>
+      <td>10.02</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>TBZ</td>
+      <td>8.57</td>
+      <td></td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+_The cryo-EM structure (with or without TBZ) was used for pKa calculations using PROPKA 3.5.0. Key residues of interest are written in boldface._
+
+### Neurotransmitter release
 
 To examine the binding propensity of DA to VMAT2 in the occluded conformation, we constructed five simulation systems with varying protonation states for the four acidic residues (D33, E312, D399, and D426) that line the binding pocket (Table 5). For all five systems, DA carried a +1 charge and was initially placed with a pose predicted by docking simulations to be the most favorable binding pose (Figure 5—figure supplement 1a and b); and for each system, two MD runs of 100 ns were performed, except for the case where all acidic residues were in a protonated state of which one of the runs was extended to 200 ns to visualize the release of DA to the vesicular lumen. The simulations revealed alterations in DA’s binding properties depending on the protonation states of the four acidic residues (Figure 5—figure supplement 1c, Table 5). Two notable differences were observed when comparing DA to TBZ binding (system DA_2 vs. TBZ_1). First, upon binding TBZ, R189 orients its guanidino group toward the methoxy groups of TBZ and forms hydrogen bonds in both the cryo-EM structure and MD simulations; in the case of DA, hydrogen bond formation of the hydroxyl groups of DA was primarily facilitated by K138, D33 or D426, or N34, rather than R189. This resulted in the exposure of R189, triggering a continuous water pathway near the hydrophobic gate residue F135 (Figure 5a). This water path recurred in multiple runs conducted with DA and was lined by the hydrophilic network composed of Y182, R189, Q192, S137, K138, D33, N34, Q142, N146, S200, and D426 (Figure 5—figure supplement 1d).
+
+**Table 5.**
+ Molecular dynamics (MD) simulations of vesicular monoamine transporter 2 (VMAT2) in the presence of dopamine and the observed events.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System #</th>
+      <th>Protonated residues</th>
+      <th>Duration(ns)</th>
+      <th>Waters in binding pocket*</th>
+      <th>VMAT2 RMSD† fromcryo-EM (Å)</th>
+      <th>Observed events</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DA_0</td>
+      <td>None</td>
+      <td>2×100</td>
+      <td>7.7±1.5</td>
+      <td>2.6±0.2</td>
+      <td>Salt bridge formation between DA and D399; influx of water into the binding pocket.</td>
+    </tr>
+    <tr>
+      <td>DA_1</td>
+      <td>D399</td>
+      <td>2×100</td>
+      <td>10.5±2.2</td>
+      <td>2.2±0.2</td>
+      <td>Salt bridges formation between DA and E312; influx of water into the binding pocket.</td>
+    </tr>
+    <tr>
+      <td>DA_2</td>
+      <td>E312, D399</td>
+      <td>2×100</td>
+      <td>8.8±2.1</td>
+      <td>2.2±0.3</td>
+      <td>Fluctuations in DA binding pose while remaining within the binding pocket. Formation of two water wires.</td>
+    </tr>
+    <tr>
+      <td>DA_3</td>
+      <td>E312, D399, D426</td>
+      <td>2×100</td>
+      <td>8.8±2.1</td>
+      <td>2.5±0.2</td>
+      <td>Fluctuations in DA binding pose; dislocation of DA from its binding site in one of the two simulations.</td>
+    </tr>
+    <tr>
+      <td>DA_4</td>
+      <td>E312, D399, D426, D33</td>
+      <td>1×1001×200</td>
+      <td>11.7±2.3</td>
+      <td>2.6±0.3</td>
+      <td>Fluctuations in DA binding pose; dislocation and release of DA in the 200 ns run.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Number of water molecules within 3.5 Å of dopamine averaged over MD snapshots recorded in the time interval 50–100 ns.†RMSDs (root-mean-square-deviations) in VMAT2 Cα-atoms positions; all averages and standard deviations refer to the portion 50–100 ns of MD simulations._
 
 Second, an additional water wire near the hydrophobic gate residue F334 was observed in DA-bound VMAT2 (Figure 5a), but not in TBZ-bound VMAT2 which, in contrast, was minimally hydrated (Figure 5b). The second water wire was lined by the backbone polar groups of hydrophobic residues, e.g., F334, together with a hydrophilic network containing K379, N388, S338, E312, Y433, Y341, N305, and D399. We also observed that the amine group of DA acted to facilitate the water influx from the lumenal side.
 
 We hypothesize that those two water paths may be related to proton transfer and be associated with protonating the pocket-lining acidic residues. Likely, lumenal DA release depends on the number of protonated acidic residues (Figure 5—figure supplement 1d–h). When at least two acidic residues were protonated, we observed fluctuations in DA position (run DA_2; Video 4) and dislocation of DA from its pocket (run DA_3; Video 5). In system DA_4 (Table 5), the protonation of E312, D399, D426, and D33 resulted in complete opening of the hydrophobic gates formed by F135, W318, and F334, which led to the release of DA to the vesicle lumen (Figure 5c, Figure 5—video 1). DA was observed to migrate toward a cluster of acidic residues, including E127, E120, D121, and D123, before complete dissociation, and the acidic environment within the vesicle lumen should assist in promoting the release of DA.
 
+![Video 4.](https://cdn.elifesciences.org/articles/91973/elife-91973-video4.mp4.jpg)
+
+**Video 4.:** VMAT2 E312 and D399 are protonated; and D33 and D426 are deprotonated. Hydrophobic gate residues F135, W318, and F334 are displayed in purple vdW spheres, and acidic and basic residues K138 and R189 are shown in red and blue vdW representation.
+
+![Video 5.](https://cdn.elifesciences.org/articles/91973/elife-91973-video5.mp4.jpg)
+
+**Video 5.:** E312, D399, and D426 were protonated and D33 was deprotonated.
+
 ## Discussion
 
 The VMAT2-TBZ complex captures the transporter in a fully occluded state with the ligand binding site centrally located between the two repeated substructures TM1–6 and TM7–12. VMAT2 functions by alternating access which involves alternate exposure of the primary binding site to either side of the membrane and isomerization between a cytosolic-open and lumenal-open state in a mechanism known as the rocker-switch (Figure 6a and b; Eiden and Weihe, 2011; Radestock and Forrest, 2011; Drew et al., 2021). Studies have proposed that TBZ first enters VMAT2 from the lumenal side, binding to a lumenal-open conformation (Scherman et al., 1983). TBZ makes extensive contact with residues in the primary site, likely in a lower affinity state as the transporter subsequently closes to forming the high-affinity occluded state. The lumenal gates lock the transporter into an occluded state, preventing displacement by other ligands and producing a so-called dead-end complex (Yaffe et al., 2016; Kaur et al., 2016; Scherman et al., 1983; Chen et al., 2012; Figure 6a).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig6-v1.jpg)
+
+**Figure 6.:** (a) Cartoon depicting substrate transport and tetrabenazine binding to vesicular monoamine transporter 2 (VMAT2). Neurotransmitter (yellow cartoon) binds to the cytosolic-open conformation before being released from the transporter in the lumenal-open state. Tetrabenazine (green cartoon) binds to the lumenal-facing state and induces a conformational change to a high-affinity occluded conformation which is the resolved cryo-electron microscopy (cryo-EM) structure reported in this work. The VMAT2–tetrabenazine complex highlighting significant features including both cytosolic (slashes) and lumenal gates (hexagon and pentagon depicting W318), the three polar networks (numbered circles) and relative location of the tetrabenazine binding site (green). (b) Water penetrating through two pathways is involved in opening the lumenal gate. Dopamine is shown in yellow cartoon. (c) Opening of W318 is associated with neurotransmitter release.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Comparison of the cryo-electron microscopy (cryo-EM) structure (light blue) vs. AlphaFold (navy). The position of TM1, -2, -4, -7, -8, -10, and -11 and LL4 in the cryo-EM structure shows the most substantial differences and is shown in white for clarity. (b) Comparison with the outward-open VGLUT2 structure (PDB: 8SBE) shown in navy. (c) Comparison with the inward-open GLUT4 structure (PDB: 7WSM) shown in navy.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/91973/elife-91973-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** P316A, P237H, and P387L localize to LL4 and the lumenal ends of TM5 and TM9, respectively.
 
 Comparison of the TMD with more distantly related MFS transporters in other conformational states such as the outward-open VGLUT2 (Li et al., 2020) and inward-open GLUT4 (Yuan et al., 2022) models (1.2 Å RMSD) shows that the conformational changes involving TM1, -7, -8, and -11 are likely involved in mediating the transport cycle and alternating access (Figure 6—figure supplement 1). Comparison with the AlphaFold model shows that while the TMD is largely similar (1.1 Å RMSD overall difference in TMD), AlphaFold lacks several key features such as the conformations of the LLs and is unable to predict key details that are critical to ligand binding. Hence, computational docking could not identify the TBZ binding site using the AlphaFold-predicted model, alluding to the critical importance of our experimental structural data (and simulations based on that structure) for gaining insights into VMAT2 functional mechanisms.
 
@@ -106,43 +638,228 @@ In summary, we have developed a new fiducial tool incorporating mVenus and the G
 
 ## Methods
 
-## Data reporting
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Human vesicular monoamine transporter 2</td>
+      <td>Clone ID 40025175</td>
+      <td>NCBI Reference Sequence: BC108928</td>
+      <td>Horizon Discovery</td>
+    </tr>
+    <tr>
+      <td>Gene (Lama glama)</td>
+      <td>Anti-GFP nanobody</td>
+      <td>Plasmid #49172</td>
+      <td></td>
+      <td>Addgene</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293S GnTI-</td>
+      <td>ATCC</td>
+      <td>Cat # ATCC CRL-3022</td>
+      <td>Used for expression of VMAT2 (PMID:27929454)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>ATCC</td>
+      <td>Cat # ATCC CRL-1711</td>
+      <td>Used in production of baculovirus for transduction (PMID:27929454)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pEG BacMam</td>
+      <td>Gouaux lab</td>
+      <td></td>
+      <td>PMID:25299155</td>
+    </tr>
+    <tr>
+      <td>Affinity chromatography resin</td>
+      <td>Strep-Tactin Superflow high capacity resin</td>
+      <td>IBA Lifesciences</td>
+      <td>Cat # 2-1208-500</td>
+      <td>Affinity purification resin</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-β-D-maltoside</td>
+      <td>Anatrace</td>
+      <td>Cat # D310</td>
+      <td>Detergent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl hemisuccinate</td>
+      <td>Anatrace</td>
+      <td>Cat # CH210</td>
+      <td>Lipid</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Reserpine</td>
+      <td>Sigma</td>
+      <td>Cat # 83580</td>
+      <td>Inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydrotetrabenazine</td>
+      <td>Cayman Chemicals</td>
+      <td>Cat # 27182</td>
+      <td>Inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H]5-HT</td>
+      <td>PerkinElmer</td>
+      <td>Cat # NET1167250UC</td>
+      <td>Radiolabeled substrate</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H]dihydrotetrabenazine</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td>Cat # ART 2119</td>
+      <td>Radiolabeled inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrabenazine</td>
+      <td>Sigma</td>
+      <td>Cat # T2952</td>
+      <td>Inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, detergent</td>
+      <td>Digitonin</td>
+      <td>Sigma</td>
+      <td>Cat # 300410</td>
+      <td>Detergent</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>PMID:22505256</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>PMID:16182563</td>
+      <td>RRID:SCR_017293</td>
+      <td>http://bio3d.colorado.edu/SerialEM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CryoSPARC</td>
+      <td>PMID:28165473</td>
+      <td>RRID:SCR_016501</td>
+      <td>https://cryosparc.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>PMID:23000701</td>
+      <td>RRID:SCR_016274</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF-Chimera</td>
+      <td>PMID:15264254</td>
+      <td>RRID:SCR_004097</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID:15572765</td>
+      <td>RRID:SCR_014222</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>PMID:20057044</td>
+      <td>RRID:SCR_014226</td>
+      <td>http://molprobity.biochem.duke.edu/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>R 2/1 200 mesh Au holey carbon grids</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat # Q210AR1</td>
+      <td>Cryo-EM grids</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>R 1.2/1.3 200 mesh Cu holey carbon grids</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat # Q2100CR1.3</td>
+      <td>Cryo-EM grids</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Copper HIS-Tag YSI</td>
+      <td>PerkinElmer</td>
+      <td>Cat # RPNQ0096</td>
+      <td>SPA beads</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data reporting
 
 No statistical methods were used to predetermine sample size. The experiments were not randomized, and the investigators were not blinded to allocation during experiments and outcome assessment.
 
-## VMAT2 construct design and cloning
+### VMAT2 construct design and cloning
 
 Wild-type VMAT2 was expressed as a C-terminal eGFP fusion protein containing an 8x His-tag. The VMAT2 chimera consisted of mVenus (Kremers et al., 2006; Rothbauer et al., 2008) fused to the N-terminus of VMAT2 at amino acid position 17, and the anti-GFP nanobody (Kubala et al., 2010; Rothbauer et al., 2008) containing both a 10x His-tag and a TwinStrep tag fused to the C-terminus at position 482 by Infusion cloning. Single-point mutants were made using PCR starting from wild-type VMAT2 C-terminally tagged eGFP construct, and constructs were initially evaluated using FSEC (Hattori et al., 2012).
 
-## Expression and purification
+### Expression and purification
 
 VMAT2 was expressed in HEK293S GnTI- cells (Reeves et al., 2002) using baculovirus-mediated transduction (Goehring et al., 2014). Enriched membranes were first isolated by sonication followed by an initial spin at 10,000×g followed by a 100,000×g spin and subsequent homogenization. Membranes resuspended in 25 mM Tris pH 8.0 and 150 mM NaCl and frozen at –80°C until use. Membranes were thawed and solubilized in 20 mM n-dodecyl-β-D-maltoside (DDM) and 2.5 mM cholesteryl hemisuccinate (CHS) with 1 mM DTT and 10 µM TBZ for 1 hr before centrifugation at 100,000×g. VMAT2 was purified into buffer containing 1 mM DDM, 0.125 mM CHS, 25 mM Tris, 150 mM NaCl, 1 mM DTT, and 1 µM TBZ pH 8.0 using either a NiNTA column which was eluted in the same buffer containing 250 mM imidazole (for the wild-type VMAT2 C-terminally tagged eGFP protein) or a StrepTactin column eluted with 5 mM desthiobiotin. Purified VMAT2 was pooled and concentrated using a 100 kDa concentrator (Amicon) before separating by size-exclusion chromatography on a Superose 6 Increase column in 1 mM DDM, 0.125 mM CHS, 25 mM Tris pH 8.0, 150 mM NaCl, 1 mM DTT, and 1 µM TBZ. Peak fractions were pooled, concentrated to 6 mg/ml with a 100 kDa concentrator before addition of 100 µM TBZ, and ultracentrifuged at 60,000×g prior to cryo-EM grid preparation.
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 The VMAT2 chimera (1.5 µl) at a concentration of 6 mg/ml was applied to glow discharged Quantifoil holey carbon grids (1.2/1.3 or 2/1 200 mesh copper or gold). Grids were blotted for 4 s at 100% humidity, 4°C, with a blot force of 4 using a Vitrobot Mk IV (Thermo Fisher) before flash freezing into a 50/50 mixture of liquid propane/ethane cooled to ~170°C with liquid nitrogen. Videos containing 40 frames were recorded on a FEI Titan Krios operating at 300 kV equipped with a Gatan K3 direct electron detector and a Bioquantum energy filter set to a slit width of 20 eV. Images were collected in super-resolution counting mode at a pixel size of 0.647 Å/pixel with defocus ranges from –1 to –2.5 µm with a total dose of 60 e–/Å2. Images were recorded using SerialEM (Mastronarde, 2003).
 
-## Image processing
+### Image processing
 
 Micrographs were corrected using Patch Motion Correction and contrast transfer function estimated using Patch CTF in CryoSPARC v4.2 (Punjani et al., 2017). A total of 24,875 micrographs were collected between two datasets recorded on the same microscope. Particles were initially classified by 2D classification in CryoSPARC to generate an ab initio model for template picking which resulted in ~10 million picks which were extracted at a box size of 384 binned to 128 and classified multiple times using 2D classification and hetero-refinement using a newly generated ab initio model, an empty detergent ‘decoy’ class, and a junk class containing random density. The resulting approximately 500,000 particles from each dataset were re-extracted at a box size of 384 binned to 256, refined using non-uniform refinement (Punjani et al., 2020), and combined before being subjected to further classification and refinement. The remaining 212k particles were then re-extracted at a full box size of 384, refined, and subjected to Bayesian polishing in RELION 3.1 (Scherman et al., 1983; Scheres, 2012). The resulting 3.5 Å map still exhibited significant anisotropy and was subjected to further rounds of 3D classification and refinement in CryoSPARC with a TMD mask to improve features of the peripheral TMs. The final 65,516 particles resulted in a 3.12 Å map that was sharpened in DeepEMhancer (Sanchez-Garcia et al., 2021) using the mask setting and utilizing a mask around the TMD only.
 
-## Model building
+### Model building
 
 The resulting EM map was sufficient for modeling most VMAT2 side chains in the TMD. The AlphaFold2 (Jumper et al., 2021) model of VMAT2 was used for initial fitting and was further refined using RosettaCM (Wang et al., 2016). After successive rounds of RosettaCM, the model was locally fit using Coot 0.98 (Emsley and Cowtan, 2004) and Isolde (Croll, 2018) with the majority of the manual rebuilding being done in Isolde. The model was refined in real space using Phenix 1.2 (Liebschner et al., 2019) and validated by comparing the FSC between the half maps and the refined model.
 
-## Radioligand binding assays
+### Radioligand binding assays
 
 Purified VMAT2 (wild-type eGFP tagged and VMAT2 chimera) were diluted to 5 nM in 1 mM DDM, 0.125 mM CHS in 20 mM Tris pH 8.0, 150 mM NaCl with 1 mg/ml CuYSi beads (PerkinElmer). Protein concentration was estimated using FSEC and a standard GFP concentration curve. Protein was then mixed 1:1 to a final protein concentration of 2.5 nM in detergent buffer containing serially diluted 3H-labeled DTBZ (American Radiolabeled Chemicals) starting at 60 nM final concentration. Counts were then measured using a Microbeta2 scintillation counter in 96-well plates with triplicate measurements (Green et al., 2015). Specific counts were obtained by subtracting values obtained by the addition of 100 µM reserpine. Mutants were evaluated similarly from cell lysates of transfected cells. Data were fit to a single-site binding equation using GraphPad Prism.
 
 Competition binding experiments were performed at the same protein concentration in the same detergent buffer. 10 nM 3H-labeled DTBZ was added to buffer and used for nine 1:1 serial dilutions with detergent buffer which initially contained 100 µM reserpine (10 µM for chimera). Measurements were done in triplicates and fit with a one-site competitive binding equation in GraphPad Prism.
 
-## Serotonin transport
+### Serotonin transport
 
 Cells transduced overnight were spun down and resuspended in 140 mM KCl, 5 mM MgCl2, 50 mM HEPES-KOH pH 7.4, and 0.3 M sucrose. Cells were permeabilized at 30°C for 10 min in the presence of 5 mM MgATP and 0.01% digitonin (Yaffe et al., 2016). Controls additionally included 100 µM reserpine. After 10 min, cells were spun down and resuspended in the same buffer containing 2.5 mM MgATP and incubated at 30°C for 10 min. Cells were then mixed 1:1 with buffer containing 3H-labeled serotonin at a final concentration of 1 or 10 µM and incubated at room temperature for 6 min. Transport was stopped by the addition of ice-cold buffer, and the cells were collected on Glass Fiber C filters. The filters were then counted in scintillation fluid. Time course experiments were performed in the same way using 1 µM serotonin.
 
 To evaluate mutants, ~5 million cells were transfected with 5 µg of DNA using Polyjet reagent. 24 hr after transfection, the cells were harvested into assay buffer containing 130 mM KCl, 5 mM MgCl2, 25 mM HEPES-KOH pH 7.4, 1 mM ascorbic acid, 5 mM glucose, and washed once with 1 ml of assay buffer. Cells were permeabilized in 500 µl of assay buffer containing 0.001% digitonin and washed once with 1 ml of assay buffer. Next the cells were resuspended, mixed 1:1 with of 0.2 µM 3H-labeled serotonin with 5 mM ATP in assay buffer, and incubated at room temperature for 15 min. In some cases, 12.5 µM reserpine was added to the cells along with 3H-labeled serotonin for a control. Cells were washed with 2 ml of ice-cold assay buffer and solubilized with 5% Triton X-100 followed by scintillation counting. Mutant expression was assessed with fluorescent microscopy to ensure protein expression levels were comparable.
 
-## MD simulations
+### MD simulations
 
 The initial MD simulation system was prepared using CHARMM-GUI Membrane Builder module (Wu et al., 2014). The structure of VMAT2 bound to TBZ was aligned using PPM2.0 webserver (Lomize et al., 2012) and embedded into 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) membrane lipids. The pKa values of titratable residues of VMAT2 in the presence or absence of TBZ were calculated using PROPKA 3.5.0 (Olsson et al., 2011); and the computed pKa values for acidic residues and TBZ are listed in Table 4. Of note, D33 and E312, as well as D399 and D426 (yellow highlights in Figure 5—figure supplement 1c and bold in Table 4) are in proximity to TBZ; thus, their protonation states may impact substantially TBZ binding. Given that D33 may form a salt bridge with its nearby K138, we assumed it to be deprotonated; and E312 and D399 were assumed to be protonated because of their comparatively higher pKa values. To further assess how the protonation states on TBZ and/or D426 affect the binding propensity of TBZ, we constructed four different simulation systems (see Table 3) with either protonated or deprotonated TBZ and with/without protonation of D426 (in addition to E312 and D399), denoted as systems TBZ_1–TBZ_4. For each system, TIP3P waters and K+ and Cl- ions corresponding to 0.1 M KCl solution were added to build a simulation box of 92×92×108 Å3. The simulated systems contained approximately 86,000 atoms, including VMAT2 and TBZ, 203 POPC molecules, and 17,400 water molecules.
 
@@ -150,10 +867,10 @@ All MD simulations were performed using NAMD (Phillips et al., 2005) (version NA
 
 For DA bound to the occluded VMAT2, we constructed five simulation systems with varying protonation states for the four pocket-lining acidic residues (denoted as runs DA_0 to DA_4; see Table 5). In all systems, the DA carried +1 charge and was initially positioned at the top (lowest energy) docking-predicted binding pose (see Figure 5—figure supplement 1); and for each system, two runs of 100 ns were performed, following the same simulation protocols described above for TBZ, except for an extended run of 200 ns conducted to visualize the DA release to the SV lumen, which comprised 170 ns conventional MD simulations, followed by 4 ns of enhanced conformation sampling using the adaptive biasing force method (Cheng et al., 2018; Chipot and Hénin, 2005), and subsequent 30 ns conventional MD simulations.
 
-## Docking simulations
+### Docking simulations
 
 The binding of DA, serotonin, and TBZ to the AlphaFold2-modeled VMAT2 conformer (AF-Q05940-F1-model_v4) and to the present cryo-EM-resolved structure were simulated using AutoDock Vina (Trott and Olson, 2010). The molecular structures of protonated DA and serotonin were adopted from the previous studies (Cheng et al., 2015; Yang and Gouaux, 2021). Docking simulations were carried out using a grid with dimensions set to 65×65×70 Å3 to encapsulate the entire structure of the transporter. The exhaustiveness of the simulation was set to 50, and the algorithm returned a maximum of 20 ligand binding poses.
 
-## Computational data analysis
+### Computational data analysis
 
 MD trajectory analysis and visualization were performed using VMD (Humphrey et al., 1996). For each snapshot, the TBZ binding affinity was evaluated using contact-based binding affinity predictor PRODIGY-LIG (Vangone et al., 2019); and the number of waters within the TBZ binding pocket were assessed by counting the number of oxygen (OH2) atoms within 3.5 Å of TBZ. For RMSD calculations, the Cα-atoms of VMAT2 and the heavy atoms from TBZ were used after alignment of the simulated VAMT2 onto the cryo-EM structure. The binding pockets of VMAT2 were assessed using Essential Site Scanning Analysis (ESSA) (Kaynak et al., 2020) and Fpocket (Le Guilloux et al., 2009), implemented in ProDy 2.0 (Zhang et al., 2021). Sequence conservation of VMAT2 was computed using the ConSurf server with default parameters (Yariv et al., 2023). Multiple sequence alignment for SLC18 family members was performed using PROMALS3D (Pei et al., 2008).

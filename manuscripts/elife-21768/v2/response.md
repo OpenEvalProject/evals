@@ -49,11 +49,9 @@ One of the reviewers’ comments led us to check the concentrations of dynein an
 
 Second, washing the chamber in a solution lacking Lis1 means that the dynein-Lis1 binding reaction will not have been at the desired equilibrium during the experiment: Lis1 will have been gradually dissociating in the time post wash out, and thus the fraction of dynein molecules with Lis1 bound will have depended critically on the time that elapsed between the washout and the start of the data acquisition. Was this elapsed time kept constant? It would be much safer to include Lis1 at the desired concentration in the final assay mixture.
 
-We kept the time between addition of proteins and imaging constant in our previous image series and observed no diminution over time of the inhibitory effect of LIS1 on microtubule gliding. This was also the case in our new experimental series. We illustrate this point in Author response image 1 using data from the new gliding assays.10.7554/eLife.21768.026Author response image 1.Comparison of microtubule gliding velocity during the first and second 5 minutes after the beginning of image acquisition.Magenta circles: values for individual microtubules. Error bars: S.D.DOI: http://dx.doi.org/10.7554/eLife.21768.026
+We kept the time between addition of proteins and imaging constant in our previous image series and observed no diminution over time of the inhibitory effect of LIS1 on microtubule gliding. This was also the case in our new experimental series. We illustrate this point in Author response image 1 using data from the new gliding assays.10.7554/eLife.21768.026Author response image 1.Comparison of microtubule gliding velocity during the first and second 5 minutes after the beginning of image acquisition.Magenta circles: values for individual microtubules. Error bars: S.D.
 
 Magenta circles: values for individual microtubules. Error bars: S.D.
-
-DOI: http://dx.doi.org/10.7554/eLife.21768.026
 
 Thus, there is sufficient LIS1 associated with dynein to exert a strong inhibitory effect for the duration of the gliding assay. Including LIS1 with the microtubules in the final assay mixture is therefore not necessary (it is also not practical due to the requisite dilution factor for LIS1). We have now made it clear in the Materials and methods that the time between protein addition and image acquisition was kept constant and that there was no reduction in LIS1’s inhibitory effect over the time course of the experiment.
 

@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03kpps236 Centre for Genomic Regulation, Barcelona Institute of Science and Technology Barcelona Spain
-2. https://ror.org/04n0g0b29 Universitat Pompeu Fabra Barcelona Spain
+1. Centre for Genomic Regulation, Barcelona Institute of Science and Technology Barcelona Spain ([ROR:03kpps236](https://ror.org/03kpps236))
+2. Universitat Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))
 
 † Corresponding author
 

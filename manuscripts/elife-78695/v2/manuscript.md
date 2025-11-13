@@ -16,21 +16,21 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Genetics, Stanford University Stanford United States
-2. https://ror.org/03mtd9a03 Medical Scientist Training Program, Stanford School of Medicine Stanford United States
-3. https://ror.org/03s65by71 Department of Molecular, Cell, and Developmental Biology, University of California, Santa Cruz Santa Cruz United States
-4. https://ror.org/046rm7j60 Helen Diller Family Comprehensive Cancer Center, University of California, Los Angeles Los Angeles United States
-5. https://ror.org/043mz5j54 Department of Cellular and Molecular Pharmacology, University of California, San Francisco San Francisco United States
-6. https://ror.org/043mz5j54 Department of Urology, University of California, San Francisco San Francisco United States
-7. https://ror.org/00f54p054 Department of Chemical and Systems Biology, Stanford University Stanford United States
-8. https://ror.org/00f54p054 Department of Biology, Stanford University Stanford United States
-9. https://ror.org/03mtd9a03 Department of Comparative Medicine, Stanford School of Medicine Stanford United States
+1. Department of Genetics, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Medical Scientist Training Program, Stanford School of Medicine Stanford United States ([ROR:03mtd9a03](https://ror.org/03mtd9a03))
+3. Department of Molecular, Cell, and Developmental Biology, University of California, Santa Cruz Santa Cruz United States ([ROR:03s65by71](https://ror.org/03s65by71))
+4. Helen Diller Family Comprehensive Cancer Center, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. Department of Cellular and Molecular Pharmacology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+6. Department of Urology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+7. Department of Chemical and Systems Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+8. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+9. Department of Comparative Medicine, Stanford School of Medicine Stanford United States ([ROR:03mtd9a03](https://ror.org/03mtd9a03))
 
 † Corresponding author
 
 ## Abstract
 
-The formation of paralogs through gene duplication is a core evolutionary process. For paralogs that encode components of protein complexes such as the ribosome, a central question is whether they encode functionally distinct proteins or whether they exist to maintain appropriate total expression of equivalent proteins. Here, we systematically tested evolutionary models of paralog function using the ribosomal protein paralogs Rps27 ( eS27 ) and Rps27l ( eS27L ) as a case study. Evolutionary analysis suggests that Rps27 and Rps27l likely arose during whole-genome duplication(s) in a common vertebrate ancestor. We show that Rps27 and Rps27l have inversely correlated mRNA abundance across mouse cell types, with the highest Rps27 in lymphocytes and the highest Rps27l in mammary alveolar cells and hepatocytes. By endogenously tagging the Rps27 and Rps27l proteins, we demonstrate that Rps27- and Rps27l-ribosomes associate preferentially with different transcripts. Furthermore, murine Rps27 and Rps27l loss-of-function alleles are homozygous lethal at different developmental stages. However, strikingly, expressing Rps27 protein from the endogenous Rps27l locus or vice versa completely rescues loss-of-function lethality and yields mice with no detectable deficits. Together, these findings suggest that Rps27 and Rps27l are evolutionarily retained because their subfunctionalized expression patterns render both genes necessary to achieve the requisite total expression of two equivalent proteins across cell types. Our work represents the most in-depth characterization of a mammalian ribosomal protein paralog to date and highlights the importance of considering both protein function and expression when investigating paralogs.
+The formation of paralogs through gene duplication is a core evolutionary process. For paralogs that encode components of protein complexes such as the ribosome, a central question is whether they encode functionally distinct proteins or whether they exist to maintain appropriate total expression of equivalent proteins. Here, we systematically tested evolutionary models of paralog function using the ribosomal protein paralogs Rps27 (eS27) and Rps27l (eS27L) as a case study. Evolutionary analysis suggests that Rps27 and Rps27l likely arose during whole-genome duplication(s) in a common vertebrate ancestor. We show that Rps27 and Rps27l have inversely correlated mRNA abundance across mouse cell types, with the highest Rps27 in lymphocytes and the highest Rps27l in mammary alveolar cells and hepatocytes. By endogenously tagging the Rps27 and Rps27l proteins, we demonstrate that Rps27- and Rps27l-ribosomes associate preferentially with different transcripts. Furthermore, murine Rps27 and Rps27l loss-of-function alleles are homozygous lethal at different developmental stages. However, strikingly, expressing Rps27 protein from the endogenous Rps27l locus or vice versa completely rescues loss-of-function lethality and yields mice with no detectable deficits. Together, these findings suggest that Rps27 and Rps27l are evolutionarily retained because their subfunctionalized expression patterns render both genes necessary to achieve the requisite total expression of two equivalent proteins across cell types. Our work represents the most in-depth characterization of a mammalian ribosomal protein paralog to date and highlights the importance of considering both protein function and expression when investigating paralogs.
 
 ## Introduction
 
@@ -50,9 +50,21 @@ In sum, investigating the functions of RP paralogs is valuable for elucidating t
 
 ## Results
 
-## Rps27 and Rps27l are vertebrate ohnologs encoding highly conserved proteins
+### Rps27 and Rps27l are vertebrate ohnologs encoding highly conserved proteins
 
 To guide our functional analysis of Rps27 and Rps27l, we first considered their probable evolutionary trajectory by examining their gene structure, intraspecies synteny, and interspecies molecular phylogeny. In general, several lines of evidence can support whether a duplicated gene arose through DNA-based events such as DNA transposition, tandem duplication, segmental duplication, or whole-genome duplication (WGD); or through retrotransposition of RNA (reviewed in Graur and Li, 1997). In human and mouse, Rps27 and Rps27l are located on separate chromosomes. Unlike the approximately 2000 mostly intronless processed RP pseudogenes resulting from retrotransposition in these genomes (Balasubramanian et al., 2009), the canonical transcripts for Rps27 and Rps27l each contain three introns and their exon junctions correspond to similar positions within the encoded proteins (Figure 1—figure supplement 1A). Furthermore, the Rps27l locus is flanked by several other genes that also have paralogs near the Rps27 locus and are arranged in similar order (Figure 1A). Thus, these syntenic genomic regions likely originated via DNA-based duplication.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig1-v2.jpg)
+
+**Figure 1.:** (A) 5 Mb windows centered on the Rps27 and Rps27l loci in human genome (GRCh38.p13). Points indicate individual Ensembl-annotated (version 109) genes. Y-axis indicates total number of Ensembl-annotated paralogs in the genome for each gene. Label colors indicate paralogous genes. (B) Phylogenetic tree of representative animal species showing putative timing of whole-genome duplications (WGD) and number of Rps27 paralogs per species. See details for included genes in Supplementary file 1. (C) Multi-species alignment of Rps27 and Rps27l N-terminal protein sequences. For species with >2 Rps27 paralogs, the protein sequences with the highest homology to human Rps27 and Rps27l are shown. The three residues that differ between Rps27 and Rps27l in human and mouse are shaded. (D) Rps27 and Rps27l scRNA-seq values across cell types from the Mouse Cell Atlas (Han et al., 2018; Pearson’s r = –0.58, p=4.4e-09). See also Figure 1—figure supplement 2. (E) Correlation between Rps27l and milk protein transcripts in scRNA-seq (Bach et al., 2017) from alveolar cells in lactating mammary glands (‘Avd-L’ cells as termed by Bach et al.). Csn2: Spearman’s ρ = 0.63, p=5.7e-13. Wap: Spearman’s ρ = 0.56, p=6.7e-10. (F) RT-qPCR of Rps27, Rps27l, and a control RP gene, Rps27a, in mammary glands of nulliparous and lactating female mice. Values are normalized to Rps6 and are shown as log fold differences over NP. For Rps27 and Rps27l, two independent primer sets (‘–1’ and ‘–2’) were used. n = 3 biological replicates. Significance compared to NP was assessed by t-test. Rps27-1 LD2: p=0.050; Rps27l-1 LD2: p=0.035; Rps27l-2 LD2: p=0.028; Rps27l-2 LD10: p=0.032. ‘ns’ indicates p>0.05. Error bars show standard error.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Protein sequences of human and mouse Rps27 and Rps27l. Blue and orange denote segments encoded by alternating exons. Black residues denote positions split across an exon junction. (B) Phylogenetic tree constructed from Rps27/Rps27l ortholog coding sequences in representative vertebrate species, rooted by the outgroup sea squirt. Numbers are a shorthand identification for Rps27 paralogs within a species, with ‘1’ being the paralog with the greatest sequence homology to human RPS27 protein. Arrows denote the two human paralogs, human-1 (RPS27) and human-2 (RPS27L). For additional details of the sequences used, see Supplementary file 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Using single-cell RNA-seq data from the Mouse Cell Atlas (Han et al., 2018), correlation of transcript abundance among RP genes is plotted for three example cell types (y-axis) against the average values across all cell types (x-axis). Each point represents an RP gene. Chondrocytes: Pearson’s r = 0.97, p-value <2.2e-16. Endothelial cells: Pearson’s r = 0.97, p-value<2.2e-16. Macrophages: Pearson’s r = 0.97, p-value<2.2e-16. ‘c11,’ ‘c17,’ and ‘c27’ refer to the cell--type cluster IDs as annotated by Han et al. (B) Expression patterns for RP genes across all cell types in the Mouse Cell Atlas. Read counts are normalized per 100 RP reads and scaled to the maximum value for each gene. (C) Rps27 and Rps27l scRNA-seq values across cell types from Tabula Muris (Tabula Muris Consortium, 2018; Pearson’s r = –0.23, p=0.024). (D) Rps27 and Rps27l RNA-seq values (Fu et al., 2015) in flow-sorted mammary luminal cells from nulliparous (NP), pregnancy day 18.5 (PD18), and lactation day 2 (LD2) mice. n = 2 biological replicates (individual animals). Significance compared to NP was assessed by t-test. Rps27 LD2: p=0.0049; Rps27l LD2: p=0.016. ‘ns’ indicates p>0.05. Error bars show standard error. (E) RT-qPCR of Rps27, Rps27l, and a control RP gene, Rps27a, in mammary glands, heart, liver, and brain of LD2 female mice. Values are normalized to Rps6 and are shown as log fold differences over NP mammary gland. n = 3 biological replicates. Error bars show standard error.
 
 To infer the evolutionary timing of this duplication, we examined the copy number and molecular phylogeny of Rps27 and Rps27 across genomes from invertebrates, jawless vertebrates, cartilaginous and bony fish, amphibians, sauropsids, and mammals (Supplementary file 1). While none of the nine included invertebrates had more than one Rps27 ortholog, nearly all vertebrates had two Rps27 paralogs, and most teleost fish species had three to six (Figure 1B). Additionally, in a phylogenetic tree constructed from the coding sequences of Rps27 and Rps27l across species, the Rps27 sequences from mammals and coelacanth formed a distinct clade from the corresponding Rps27l sequences (Figure 1—figure supplement 1B), suggesting that duplication and subsequent divergence of these loci began in a common ancestor of these species. Interestingly, it has long been hypothesized that at least one WGD occurred in a common ancestor of all vertebrates (‘1R’), followed closely by either a second WGD (‘2R’) with subsequent loss of many duplicates or by several large segmental duplications (Dehal and Boore, 2005; Nakatani et al., 2021; Ohno, 1970; Sacerdot et al., 2018; Simakov et al., 2020; Smith et al., 2018). Indeed, in systematic efforts to map 1R/2R remnants throughout vertebrate genomes based on phylogeny and large-scale synteny (Makino and McLysaght, 2010; Sacerdot et al., 2018; Singh and Isambert, 2020), Rps27 and Rps27l are consistently identified among the ‘ohnolog’ gene duplicates that still comprise 25–35% of present-day vertebrate genes. Furthermore, a third WGD occurred in the common ancestor to teleost fish. Carp and salmon, which each have six Rps27 paralogs, have each experienced an independent fourth WGD (Macqueen and Johnston, 2014; Xu et al., 2019). Thus, increases in the number of Rps27 paralogs coincide in evolutionary timing with WGDs.
 
@@ -60,7 +72,7 @@ The probable evolutionary trajectory of Rps27 and Rps27l should also be consider
 
 Based on these evolutionary features of Rps27 and Rps27l, we can preliminarily assess the relevance of the proposed paralog retention models. Given the evidence from fungi that RP genes are subject to dosage balance constraints, beneficial dosage increase and neofunctionalized expression are less likely models of paralog retention in this case. However, the other proposed models all remain plausible. In contrast to tandem duplications in which both paralogs reside near the same regulatory features (Lan and Pritchard, 2016) or transpositions that introduce a duplicate into a completely different regulatory context, WGD produces duplicates on separate chromosomes with initially identical regulatory features that may then diverge. Notably, while the coding sequences of Rps27 and Rps27l are highly divergent, almost all substitutions are synonymous and their protein sequences only differ by three N-terminal residues out of a total of 84: K5R, P12L, and R17K. These differences between the two paralogous proteins are well-conserved among mammals (Figure 1C). This high degree of protein sequence conservation over a long evolutionary history suggests that the proteins still perform related molecular roles in the cell and could thus participate in dosage sharing or paralog buffering. On the other hand, the three differing residues could confer partially distinct protein functions by affecting protein structure or post-translational modifications. Thus, we proceeded to compare both the expression patterns and the protein characteristics of Rps27 and Rps27l.
 
-## Rps27 and Rps27l mRNA expression are cell type-dependent
+### Rps27 and Rps27l mRNA expression are cell type-dependent
 
 We next leveraged publicly available single-cell RNA-seq datasets to compare expression levels of Rps27, Rps27l, and other RP genes in previously unexamined primary cell types. Different cell types express RP genes at different levels, likely reflecting the ribosome production rate needed to accommodate each cell type’s translational or proliferative demands. However, transcript abundance among the core RP genes is highly correlated across cell types (Figure 1—figure supplement 2A), which is consistent with the theory that components of a protein complex must have balanced expression for effective assembly (Guimaraes and Zavolan, 2016; Papp et al., 2003). Thus, for each cell, we used the summed transcript abundances of all RP genes to normalize each RP gene’s expression level by the cell type’s ribosome production rate, allowing us to identify RP genes with disproportionately high or low expression relative to other RP genes in a cell type.
 
@@ -74,33 +86,49 @@ It has previously been reported that Rps27l is transcriptionally upregulated by 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig2-v2.jpg)
 
-**Figure 2.:** Rps27 and Rps27l mRNA abundance versus Trp53 expression and activity.(A) RT-qPCR of Rps27, Rps27l, and Trp53 in mammary glands at nulliparous (NP), pregnancy days 6–18 (PD6–18), and lactation day 2 (LD2) timepoints. Rps27 and Rps27l are normalized by ribosomal protein (RP) Rps27a. Trp53 is normalized by Gapdh. n = 5–6 biological replicates (individual animals) per timepoint. Significance versus NP was assessed by t-test. ‘ns’ indicates p>0.05. Error bars show standard error. (B) Correlation between Rps27l and other targets of Trp53 transcriptional activation in scRNA-seq of alveolar cells from lactating mammary glands (Bach et al., 2017). Cdkn1a: Spearman’s ρ = –0.51, p=3.7e-8. Mdm2: Spearman’s ρ = –0.37, p=1.2e-4.
+**Figure 2.:** (A) RT-qPCR of Rps27, Rps27l, and Trp53 in mammary glands at nulliparous (NP), pregnancy days 6–18 (PD6–18), and lactation day 2 (LD2) timepoints. Rps27 and Rps27l are normalized by ribosomal protein (RP) Rps27a. Trp53 is normalized by Gapdh. n = 5–6 biological replicates (individual animals) per timepoint. Significance versus NP was assessed by t-test. ‘ns’ indicates p>0.05. Error bars show standard error. (B) Correlation between Rps27l and other targets of Trp53 transcriptional activation in scRNA-seq of alveolar cells from lactating mammary glands (Bach et al., 2017). Cdkn1a: Spearman’s ρ = –0.51, p=3.7e-8. Mdm2: Spearman’s ρ = –0.37, p=1.2e-4.
 
 Our findings that Rps27 and Rps27l have inversely correlated mRNA abundance across cell types suggest that Rps27 and Rps27l have complementary expression patterns, a hallmark of subfunctionalized expression. While Rps27 and Rps27l have previously been included in bulk transcriptomic analysis of RPs (Guimaraes and Zavolan, 2016; Gupta and Warner, 2014; He and Sun, 2007), our observations were facilitated by including lactating mammary gland samples and achieving single-cell resolution of cell types. Importantly, dosage sharing via subfunctionalized expression could alone explain the retention of these paralogs through a duplication–degeneration–complementation (DDC) process (Force et al., 1999): whereas the ancestral Rps27 gene may have been expressed widely, the two paralogs may have lost complementary sets of regulatory elements until both were needed to maintain the appropriate expression level across all cell types. If Rps27 and Rps27l are indeed remnants of WGD as discussed in the previous section, DDC of Rps27 and Rps27l may have happened in concert with the other RP paralog pairs’ reversion to single genes.
 
-## Rps27 and Rps27l-ribosomes differentially associate with cell cycle-related mRNAs
+### Rps27 and Rps27l-ribosomes differentially associate with cell cycle-related mRNAs
 
 Having established their distinct expression patterns, it remained to be explored whether the two paralogs could not only have different expression but also encode functionally different proteins, which has been observed with other paralogs (Conant and Wolfe, 2006). Using mouse embryonic stem cells (mESCs) as a primary cell line amenable to genetic editing, we first confirmed whether Rps27 and Rps27l are incorporated into actively translating ribosomes. mESC lysate was fractionated over a sucrose density gradient to separate mRNAs based on the number of ribosomes bound to them. Using antibodies specific to each paralog with only trace cross-reactivity to the other paralog (Figure 3—figure supplement 1A), we found that Rps27 and Rps27l are both detectable among fractions corresponding to actively translating ribosomes (polysomes), fractions corresponding to single ribosomes (80S), and fractions representing the 40S small subunit. Rps27 and Rps27l are not detectable in early fractions where most extra-ribosomal proteins are found (Figure 3A). In the structure of the human ribosome (Natchiar et al., 2017), Rps27 is incorporated into the 40S subunit such that the three paralog-specific amino acid positions are solvent-accessible (Figure 3B) and could modulate interactions with other molecules.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig3-v2.jpg)
+
+**Figure 3.:** (A) Fractionation of mouse embryonic stem cell (mESC) lysate by density to separate non-ribosomal proteins, ribosome 40S and 60S subunits, mRNAs bound by one ribosome (80S), and mRNAs bound by multiple ribosomes (polysomes). See Figure 3—source data 1–3. (B) Ribosome structure showing the 60S subunit (with 28S rRNA in dark blue), 40S subunit (with 18S rRNA in yellow), and Rps27 protein (light blue) within the 40S. Orange denotes residues that differ between Rps27 and Rps27l. Gray denotes other RPs. Neighboring RPs are labeled. (C) CRISPR-mediated insertion of 3xFLAG epitope tag C-terminally at the endogenous Rps27 and Rps27l genomic loci in mESCs. (D) FLAG-IP ribosome profiling of paralog-containing ribosomes. (i) Cell lysate is treated with RNAse to digest mRNA sequences that are not protected by bound ribosomes. (ii) Ribosomes and associated ribosome-protected fragments (RPFs) are collected by ultracentrifugation. These are termed total RPFs. (iii) anti-FLAG immunoprecipitation (IP) is performed on total ribosomes. IP RPFs are eluted. (E) Comparison of RPFs enriched after IP in Rps27l-FLAG versus Rps27-FLAG mESCs. (F) Examples of genes differentially enriched upon Rps27-FLAG or Rps27l-FLAG pulldown. Significance was assessed using an empirical Bayes method for detecting differential expression, applied to a multilevel linear model to find genes whose RPF abundance is differentially affected by IP from Rps27- and Rps27l-FLAG mESCs. n = 3 biological replicates (independent mESC clones). Multiple-hypothesis-corrected false discovery rates (FDRs) are shown. (G) Top enriched gene ontology terms for RPFs that preferentially associate with Rps27l-ribosomes. See also Figure 3—figure supplement 1 and Appendix 1—figure 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Plasmids encoding Rps27- and Rps27l-GFP fusion proteins were transfected into mouse embryonic stem cells (mESCs). A western blot was performed on cell lysate using commercially available antibodies to assess whether they are paralog-specific. GFP fusion adds 27 kDa of molecular weight. The anti-Rps27l antibody has trace detection of Rps27. (B) Western blots of cell lysates from WT, Rps27-FLAG and Rps27l-FLAG mESCs. Each lane is an independently selected clone. Beta-actin is used as a loading control. Clones with an asterisk (*) were used as biological replicates in subsequent experiments. (C) Western blot of density-fractionated cell lysates from Rps27- and Rps27l-FLAG mESCs. A representative UV absorbance trace and blot from each mESC line is shown. (D) Western blot of cell lysates from one biological replicate each of Rps27-FLAG, Rps27l-FLAG, and WT mESCs; supernatant containing no ribosomes after ultracentrifugation; pellet containing total ribosomes after centrifugation, used as input for FLAG immunoprecipitation (IP); flow-through of FLAG IP, and eluate of FLAG-IP. Rps3 is shown as a typical ribosomal protein (RP) that is also in the 40S small subunit. Gapdh is shown as a typical protein that is not ribosome-associated. Dashed boxes indicate the Rps27-FLAG or Rps27l-FLAG protein targeted for IP in the respective cell lines. Asterisks in the anti-Rps27l blot indicate trace detection of Rps27 by the Rps27l antibody. (E) Comparison of total ribosome-protected fragments (RPFs) between Rps27-FLAG, Rps27l-FLAG and passage-matched wild-type (WT) control cell line. CPM, counts per million. (F) Comparison of IP RPFs versus total RPFs in Rps27-FLAG and Rps27l-FLAG mESCs. Purple indicates enriched or depleted transcripts at a multiple-hypothesis-corrected false discovery rate (FDR) < 0.05 using the same statistical test described in Figure 3. See also Supplementary file 3 and Figure 3—figure supplement 1—source data 1–14.
 
 To compare the molecular interactions of Rps27- and Rps27l-ribosomes, we devised a strategy to isolate the two ribosome populations from in vitro cultured mouse cells and focused on comparing the mRNAs with which they associate. To enable isolation of Rps27- and Rps27l-ribosomes without overexpressing an exogenous epitope-tagged construct, we used CRISPR to homozygously insert 3xFLAG epitope tags immediately preceding the stop codon at the Rps27 and Rps27l loci (Figure 3C). This approach yielded three independently selected clones (biological replicates) of Rps27-FLAG mESCs and three of Rps27l-FLAG mESCs. Rps27- and Rps27l-FLAG proteins are expressed at comparable levels to the untagged proteins and are incorporated into actively translating ribosomes (Figure 3—figure supplement 1B and C). We confirmed by western blot that anti-FLAG immunoprecipitation (FLAG-IP) efficiently enriches for Rps27- and Rps27l-ribosomes from the Rps27-FLAG and Rps27l-FLAG mESCs, respectively (Figure 3—figure supplement 1D). Minimal Rps27 is detected when targeting Rps27l for pulldown and vice versa, confirming that a ribosome does not simultaneously contain Rps27 and Rps27l and that we did not isolate undigested polysomes containing multiple ribosomes (Figure 3—figure supplement 1D). We then performed ribosome profiling on the total ribosome population in each line and on the paralog-containing ribosomes isolated via FLAG-IP (Figure 3D). Ribosome profiling identifies mRNA regions occupied by ribosomes, using RNAse digestion to enable sequencing of ribosome-protected fragments of mRNA (RPFs) (Ingolia et al., 2009). The total RPFs from the two FLAG-tagged cell lines did not contain mRNAs that differed significantly in abundance either in comparison between the Rps27-FLAG line and Rps27l-FLAG line or in comparison to a passage-matched wild-type (WT) control line (Figure 3—figure supplement 1E). This confirms that FLAG-tagging did not alter the landscape of normally translated mRNAs. We then compared the IP RPFs from both cell lines to each other using the total RPFs from each clone to normalize for its overall translational landscape (Figure 3E and F). After excluding a Tmod3 transcript as a likely artifact of FLAG-IP (Appendix 1, Appendix 1—figure 1), we identified 8 transcripts enriched among Rps27-ribosomes and 46 transcripts enriched among Rps27l-ribosomes (absolute value of log2 fold change > 0.25, false discovery rate < 0.05; Supplementary file 3). Among the latter set of transcripts, Gene Ontology terms associated with cell cycle processes were enriched (Figure 3G). These findings intriguingly demonstrated that Rps27- and Rps27l-ribosomes associate differently with specific mRNAs.
 
 Importantly, our experimental design minimized the possibility that these results reflect translational changes due to genetically editing the cell lines: no knockdown, knockouts, or overexpression were used, and the IP RPF transcript abundances were normalized by the total RPF transcript abundances for each clone. A critical consideration, however, is that this approach demonstrates a correlation between Rps27l incorporation and ribosome association with cell cycle-related transcripts, but it does not directly demonstrate that Rps27l causes ribosomes to preferentially bind these transcripts. To definitively compare the functions of the two proteins, we next turned to in vivo approaches.
 
-## Rps27 and Rps27l homozygous knockouts are lethal at different developmental stages
+### Rps27 and Rps27l homozygous knockouts are lethal at different developmental stages
 
 To compare Rps27 and Rps27l in vivo, we first examined the organism-level effects of knocking out each paralog. We generated mice harboring two truncation alleles at the endogenous Rps27 and Rps27l loci: Rps27exon2del, in which the splicing junctions flanking exon 2 of Rps27 are deleted; and Rps27lexon2del, which harbors a 320 bp deletion in Rps27l that spans exon 2 and part of the subsequent intron (Figure 4A). Similar to a previously described Rps27l gene-trapped loss-of-function mouse model (here termed Rps27lGT) (Xiong et al., 2014), Rps27lexon2del / + males and females are viable and fertile, but Rps27lexon2del / exon2del mice are observed at lower-than-expected frequencies in crosses of Rps27lexon2del / + males and females (Figure 4B). These Rps27lexon2del / exon2del offspring died or needed to be euthanized due to animal distress by postnatal days 13–17 (P13–17). Interestingly, Rps27exon2del / + mice were also viable, but no Rps27exon2del / exon2del offspring were recovered from crosses of Rps27exon2del / + males and females (Figure 4B). When we dissected embryonic day 8.5 (e8.5) embryos from Rps27exon2del / + × Rps27exon2del / + crosses, only one Rps27exon2del / exon2del specimen out of 35 dissected embryos was recovered. This Rps27exon2del / exon2del embryo was severely delayed in development compared to littermates (Figure 4C and D). For the Rps27 and Rps27l truncation allele genotypes that are viable at birth, we confirmed by western blot of multiple postnatal day 0 (P0) tissues that detectable protein expression from the respective truncated paralog is slightly diminished in Rps27exon2del / + specimens and nearly eliminated in Rps27lexon2del / exon2del specimens (Figure 4E and F), with residual detection due to trace antibody cross-reactivity against the intact paralog (as demonstrated in Figure 3—figure supplement 1A and D). Interestingly, we observed that Rps27lexon2del / + and Rps27lexon2del / exon2del tissues had increased expression of the intact Rps27 protein, which is analogous to previously reported instances in which depletion of an RP gene is associated with increased expression of a paralogous gene (Milenkovic et al., 2023; O’Leary et al., 2013). Together, these findings demonstrate that impaired expression from the Rps27 locus impacts viability at significantly earlier embryonic stages than impaired expression from the Rps27l locus.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig4-v2.jpg)
 
-**Figure 4.:** Rps27 and Rps27l truncation alleles are homozygous lethal at embryonic and early postnatal stages, respectively.(A) CRISPR-mediated deletions in Rps27 and exon2delRps27l alleles. (exon2delB) Genotype ratios among live offspring of Rps27 and exon2del / +Rps27l heterozygous crosses at postnatal day 13 (P13). * indicates animals that died or required euthanasia by postnatal days 13–17 (P13–17). (exon2del / +C) Genotype ratios and (D) photographs of embryonic day 8.5 (e8.5) embryos from Rps27 heterozygous crosses. * indicates severely delayed development. (exon2del / +E) Western blots of postnatal day 0 (P0) tissues with Gapdh as loading control and n = 3 biological replicates (animals) per genotype. The early embryonic lethal Rps27 genotype was excluded due to lack of sufficient obtainable tissue. (exon2del / exon2delF) Rps27 and Rps27l protein abundance in (E) quantified as Gapdh-normalized log2 fold difference relative to averaged +/+ samples for each tissue. Error bars show standard error. *p<0.05 by t-test; unmarked = not significant. (G) Genotype ratios among live offspring of Rps27 double heterozygous crosses and exon2del / +;Trp53null / +Rps27l double heterozygous crosses at P13. See exon2del / +;Trp53null / +Figure 4—source data 1–15.Figure 4—source data 1.Rps27 P0 liver Rps27 western blot.exon2delFigure 4—source data 2.Rps27l P0 liver Rps27 western blot.exon2delFigure 4—source data 3.Rps27 P0 heart Rps27 western blot.exon2delFigure 4—source data 4.Rps27l P0 heart Rps27 western blot.exon2delFigure 4—source data 5.Rps27, exon2delRps27l P0 forelimb Rps27 western blot.exon2delFigure 4—source data 6.Rps27, exon2delRps27l P0 brain Rps27 western blot.exon2delFigure 4—source data 7.Rps27, exon2delRps27l P0 liver Rps27l western blot.exon2delFigure 4—source data 8.Rps27, exon2delRps27l P0 heart Rps27l western blot.exon2delFigure 4—source data 9.Rps27, exon2delRps27l P0 forelimb Rps27l western blot.exon2delFigure 4—source data 10.Rps27, exon2delRps27l P0 brain Rps27l western blot.exon2delFigure 4—source data 11.Rps27, exon2delRps27l P0 liver Gapdh western blot.exon2delFigure 4—source data 12.Rps27, exon2delRps27l P0 heart Gapdh western blot.exon2delFigure 4—source data 13.Rps27, exon2delRps27l P0 forelimb Gapdh western blot.exon2delFigure 4—source data 14.Rps27, exon2delRps27l P0 brain Gapdh western blot.exon2delFigure 4—source data 15.Figure 4B and G.
+**Figure 4.:** (A) CRISPR-mediated deletions in Rps27exon2del and Rps27lexon2del alleles. (B) Genotype ratios among live offspring of Rps27exon2del / + and Rps27lexon2del / + heterozygous crosses at postnatal day 13 (P13). * indicates animals that died or required euthanasia by postnatal days 13–17 (P13–17). (C) Genotype ratios and (D) photographs of embryonic day 8.5 (e8.5) embryos from Rps27exon2del / + heterozygous crosses. * indicates severely delayed development. (E) Western blots of postnatal day 0 (P0) tissues with Gapdh as loading control and n = 3 biological replicates (animals) per genotype. The early embryonic lethal Rps27exon2del / exon2del genotype was excluded due to lack of sufficient obtainable tissue. (F) Rps27 and Rps27l protein abundance in (E) quantified as Gapdh-normalized log2 fold difference relative to averaged +/+ samples for each tissue. Error bars show standard error. *p<0.05 by t-test; unmarked = not significant. (G) Genotype ratios among live offspring of Rps27exon2del / +;Trp53null / + double heterozygous crosses and Rps27lexon2del / +;Trp53null / + double heterozygous crosses at P13. See Figure 4—source data 1–15.
 
 The phenotypes of these Rps27exon2del and Rps27lexon2del loss-of-function alleles yield several preliminary insights on the possible roles of these RP paralogs in vivo. The fact that Rps27 and Rps27l loss-of-function alleles are each lethal in homozygosity, even with both alleles of the other paralog intact, disfavors the hypothesis that Rps27 and Rps27l engage in paralog buffering. The difference in the timing of lethality could be consistent with the two proteins having distinct functions; under such a model, it would appear that Rps27 protein has a critical function in very early developmental processes, while the functions of Rps27l protein are dispensable until postnatal stages. Divergent protein function could also explain why an increase in Rps27 protein is insufficient to rescue the Rps27lexon2del / exon2del genotype. However, divergent protein function is not the only possible explanation for either of these observations: the timing difference could also be explained by early reliance on expression from the Rps27 locus, whereas this dependence later shifts to expression of an equivalent protein from the Rps27l locus. If the regulatory characteristics of Rps27 and Rps27l are sufficiently dissimilar, it may be impossible for one paralog to compensate for the other’s loss of function in specific cell types. Therefore, with the evidence presented thus far, it remains possible that Rps27 and Rps27l are functionally identical proteins, and that the Rps27lexon2del / exon2del genotype is lethal because the quantity of Rps27 increase is insufficient to compensate for the Rps27l deficiency.
 
 Previous work has shown that the early postnatal lethality of Rps27lGT/GT can be rescued on a Trp53 loss-of-function (Trp53LOF/+ or Trp53LOF/LOF) background. This finding was attributed to a model in which Rps27l depletion impairs ribosome biogenesis and thus causes accumulation of unincorporated RPs, which increase Trp53 activity by blocking its degradation by Mdm2. The increased Trp53 triggers apoptosis in hematopoietic tissues (Xiong et al., 2014). We thus crossed the Rps27exon2del and Rps27lexon2del mice to Trp53null mice (Jacks et al., 1994). We indeed found that Rps27lexon2del / exon2del;Trp53null / + mice are viable. However, no Rps27exon2del / exon2del;Trp53null / + or Rps27exon2del / exon2del;Trp53null / null offspring were recovered from crossing Rps27exon2del / +;Trp53null / + males and females (Figure 4G). These results suggest that disabling expression from the Rps27 locus disrupts ribosome biogenesis either to a greater degree than Rps27l that cannot be mitigated by Trp53 depletion or through a non-Trp53-mediated mechanism.
 
-## Rps27 and Rps27l proteins are functionally interchangeable across all examined murine tissues
+### Rps27 and Rps27l proteins are functionally interchangeable across all examined murine tissues
 
 Having demonstrated that expression of both Rps27 and Rps27l is essential to development at different stages, we next asked whether Rps27 protein can rescue loss of Rps27l protein, and vice versa, at the whole-organism level. This test is critical to understanding whether the two paralogs’ gene products are functionally interchangeable, especially in light of the above finding that the Rps27lexon2del / exon2del genotype is early postnatal lethal despite an increased amount of Rps27 protein. In order to do so rigorously, it was ideal to express the swapped protein sequences from the endogenous genomic loci with minimal perturbation to the regulatory contexts. Using CRISPR in mouse embryos, we minimally edited the endogenous genomic loci for Rps27 and Rps27l to encode the protein sequence of the other paralog. This yielded two novel mouse alleles: Rps27Rps27l, which expresses Rps27l protein from the Rps27 locus; and Rps27lRps27, which expresses Rps27 protein from the Rps27l locus (Figure 5A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig5-v2.jpg)
+
+**Figure 5.:** (A) CRISPR editing to generate Rps27Rps27l and Rps27lRps27 homogenized mice. (B) Sanger sequencing of Rps27Rps27l and Rps27lRps27 homogenized mouse alleles. (C) Genotype ratios among live offspring of Rps27Rps27l / + and Rps27lRps27 / + heterozygous crosses at postnatal day 13 (P13). (D) Western blots of adult mouse (9–10 mo) tissues with Gapdh as loading control and n = 3 biological replicates (animals) per genotype. (E) Rps27 and Rps27l protein abundance in (D) quantified as Gapdh-normalized log2 fold difference relative to averaged +/+ samples for each tissue. Error bars show standard error. *p<0.05 by t-test; unmarked = not significant. (F) Pup weights at P13 and P21, grouped by pup genotype. Each data point represents the average weight among pups of the indicated genotype within a litter. Only pups from the first litters born to Rps27Rps27l / + and Rps27lRps27 / + dams are included. n = 6–9 litters per genotype. Significance versus Rps27 +/+ and Rps27l+/+, respectively, was assessed by t-test. Error bars show standard error. See Figure 5—source data 1–7; see also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** n = 5–19 litters per dam genotype and timepoint. Significance relative to WT was assessed by t-test. All females were housed with stud males beginning at 8 weeks of age. Only first litters are included. Statistically significant differences in litter size and mating-birth interval were observed in Rps27Rps27l / + dams relative to Rps27+/+ dams, and a statistically significant difference in mating-birth interval was observed in Rps27Rps27l / Rps27l dams relative to Rps27+/+ dams. However, considering the litter sizes and mating-birth intervals observed in Rps27l+/+ dams, we conclude that these variations are within the normal phenotypic range for wild-type animals. Error bars show standard error.
 
 To assess the organism-wide impact of substituting the Rps27 protein sequence with Rps27l or vice versa, we performed a detailed characterization of Rps27Rps27l and Rps27lRps27 mice. Remarkably, heterozygous crosses for both alleles (Rps27Rps27l /+ × Rps27Rps27l /+, and Rps27lRps27 /+ × Rps27lRps27 /+) resulted in normal genotype frequencies among offspring of both sexes (Figure 5C). Western blots of adult mouse tissues confirmed loss of Rps27 protein and increased Rps27l protein in Rps27Rps27l / Rps27l mice (Figure 5D and E). This effect is most pronounced in the spleen, which contains abundant B cells, one of the cell types that highly express the Rps27 locus as shown above (Figure 1D). Likewise, loss of Rps27l protein expression with concurrently increased Rps27 protein was observed in Rps27lRps27Rps27 / Rps27 mice (Figure 5D and E) and the effect is most pronounced in liver tissue, which contains hepatocytes that highly express the Rps27l locus (Figure 1D and Figure 1—figure supplement 2E). This demonstrates that expressing Rps27 from the Rps27l locus completely rescues the early lethality observed upon homozygous truncation of Rps27l, and vice versa. Later organism fitness was also rescued: pups of all genotypes gained weight at similar rates (Figure 5F), and male and female heterozygous and homozygous mice are viable to at least 1 year of age and are fertile. A detailed necropsy of homozygous 10–16-week-old males and age-matched wild-type controls, performed by a veterinary pathologist blinded to specimen genotype, revealed no clinically significant differences in gross organ weight, gross organ morphology, or tissue histology for either line (Supplementary file 4) upon examination of neurological, cardiovascular, respiratory, gastrointestinal, genitourinary, lymphatic, endocrine, hematopoietic, integumentary, and musculoskeletal tissues.
 
@@ -108,17 +136,17 @@ Given the cell type-specific patterns of Rps27 and Rps27l mRNA levels that we ha
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig6-v2.jpg)
 
-**Figure 6.:** Rps27 and Rps27l does not impact tissues that preferentially express one paralog.(A) Selected biomarkers from bloodwork performed on 10–16-week-old homozygous males and age-matched wild-type controls from the Rps27 and Rps27lRps27l mouse lines. See Rps27Supplementary file 5 for additional biomarkers. AST, aspartate aminotransferase; ALT, alanine aminotransferase; WBC, white blood cells; HGB, hemoglobin. n = 3 biological replicates (individual animals) per genotype. Significance relative to WT was assessed by t-test. Error bars show standard error. (B) Mean pup weight per litter at postnatal days (PDs) 4, 13, and 21, grouped by dam genotype. Only pups from a dam’s first litter are included. n = 5–19 litters per dam genotype and timepoint. Significance relative to WT was assessed by t-test. Error bars show standard error. (C) Representative images of carmine alum-stained or hematoxylin-eosin (H&E)-stained mammary glands at the indicated stages. T, animal ear tag number. See also Figure 6—source data 1–18.Figure 6—source data 1.Rps27  nulliparous 8-week-old.+/+Figure 6—source data 2.Rps27 nulliparous 8-week-old.Rps27l /+Figure 6—source data 3.Rps27Rps27l / Rps27l nulliparous 8-week-old.Figure 6—source data 4.Rps27l nulliparous 8-week-old.+/+Figure 6—source data 5.Rps27l nulliparous 8-week-old.Rps27 /+Figure 6—source data 6.Rps27lRps27 nulliparous 8-week-old.Rps27 / Rps27Figure 6—source data 7.Rps27  pregnancy day 15.+/+Figure 6—source data 8.Rps27 pregnancy day 15.Rps27l /+Figure 6—source data 9.Rps27 pregnancy day 15.Rps27l / Rps27lFigure 6—source data 10.Rps27l pregnancy day 15.+/+Figure 6—source data 11.Rps27l pregnancy day 15.Rps27 /+Figure 6—source data 12.Rps27lRps27 pregnancy day 15.Rps27 / Rps27Figure 6—source data 13.Rps27  lactation day 4.+/+Figure 6—source data 14.Rps27 lactation day 4.Rps27l /+Figure 6—source data 15.Rps27 lactation day 4.Rps27l / Rps27lFigure 6—source data 16.Rps27l lactation day 4.+/+Figure 6—source data 17.Rps27l lactation day 4.Rps27 /+Figure 6—source data 18.Rps27lRps27 lactation day 4.Rps27 / Rps27
+**Figure 6.:** (A) Selected biomarkers from bloodwork performed on 10–16-week-old homozygous males and age-matched wild-type controls from the Rps27Rps27l and Rps27lRps27 mouse lines. See Supplementary file 5 for additional biomarkers. AST, aspartate aminotransferase; ALT, alanine aminotransferase; WBC, white blood cells; HGB, hemoglobin. n = 3 biological replicates (individual animals) per genotype. Significance relative to WT was assessed by t-test. Error bars show standard error. (B) Mean pup weight per litter at postnatal days (PDs) 4, 13, and 21, grouped by dam genotype. Only pups from a dam’s first litter are included. n = 5–19 litters per dam genotype and timepoint. Significance relative to WT was assessed by t-test. Error bars show standard error. (C) Representative images of carmine alum-stained or hematoxylin-eosin (H&E)-stained mammary glands at the indicated stages. T, animal ear tag number. See also Figure 6—source data 1–18.
 
 We considered the possibility that female mice housed under standard laboratory conditions may have a substantial reserve of lactation capacity, which could mask a moderate effect of Rps27(l) homogenization on mammary gland development and function. We, therefore, used carmine alum staining and hematoxylin-eosin staining to assess the gross morphology and mammary fat pad filling of nulliparous, pregnant, and lactating females (Figure 6C). No anomalies in mammary gland morphogenesis were detected, with all genotypes exhibiting similar epithelial branch length and number, fat pad filling, alveolar size, and alveolar wall thickness. From this evidence, we conclude that homogenization of either the Rps27 or Rps27l locus has no effect on overall mouse fitness and also no effect on the morphology or function of tissues that preferentially express either Rps27 or Rps27l. These findings suggest that the Rps27 and Rps27l proteins are functionally similar in the setting of normal organism physiology, even in tissues that preferentially express one paralog.
 
-## Rps27 and Rps27l homogenization do not affect health in later life or in response to genotoxic stress
+### Rps27 and Rps27l homogenization do not affect health in later life or in response to genotoxic stress
 
 Having assessed for phenotypes in young homogenized male and female mice, we considered the possibility that the Rps27 and Rps27l proteins may function similarly under optimal conditions of homeostasis in young animals, but could act differently to confer an evolutionary benefit at a later age or under stress. To assess this hypothesis, we co-housed Rps27Rps27l and Rps27lRps27 homozygous, heterozygous, and wild-type male littermates under standard husbandry conditions (see ‘Materials and methods’) until 9–10 months of age. At that time, we weighed the mice and performed a complete blood count and liver panel, again targeting the organ systems with preferential Rps27 or Rps27l expression. No clinically significant differences were observed between genotypes in any of the included assays (Figure 7A, Supplementary file 6). Thus, homogenization of Rps27 or Rps27l has no detectable effect on the physiology of these organs, even later in life. These findings diminish the likelihood that there might be functional differences between the Rps27 and Rps27l protein sequences that have cumulative effects over the mouse lifespan.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig7-v2.jpg)
 
-**Figure 7.:** Rps27 and Rps27l homogenization does not affect physiology at later age or impact response to genotoxic stress.(A) Biomarkers from 9- to 10-month-old Rps27 and Rps27lRps27l homozygous and heterozygous males and age-matched wild-type (WT) controls. n = 3–11 animals per genotype. See Rps27Supplementary file 6 for additional biomarkers. AST, aspartate aminotransferase; ALT, alanine aminotransferase; WBC, white blood cells; HGB, hemoglobin. (B) Percent of singlet mouse embryonic fibroblasts (MEFs) in each cell cycle phase as measured by EdU/DAPI flow cytometry. n = 4–7 biological replicates (MEF lines isolated from single embryos). (C) Fraction of viable MEFs relative to untreated controls after doxorubicin (DOX) or etoposide (ETO) treatment. n = 4–7 biological replicates; n = 2 technical replicates (separate wells) per biological replicate. For all panels, significance relative to WT was assessed by t-test and error bars show standard error. For (C), no comparisons were significant at p<0.05.
+**Figure 7.:** (A) Biomarkers from 9- to 10-month-old Rps27Rps27l and Rps27lRps27 homozygous and heterozygous males and age-matched wild-type (WT) controls. n = 3–11 animals per genotype. See Supplementary file 6 for additional biomarkers. AST, aspartate aminotransferase; ALT, alanine aminotransferase; WBC, white blood cells; HGB, hemoglobin. (B) Percent of singlet mouse embryonic fibroblasts (MEFs) in each cell cycle phase as measured by EdU/DAPI flow cytometry. n = 4–7 biological replicates (MEF lines isolated from single embryos). (C) Fraction of viable MEFs relative to untreated controls after doxorubicin (DOX) or etoposide (ETO) treatment. n = 4–7 biological replicates; n = 2 technical replicates (separate wells) per biological replicate. For all panels, significance relative to WT was assessed by t-test and error bars show standard error. For (C), no comparisons were significant at p<0.05.
 
 Lastly, we tested the effects of stress stimuli on ex vivo cells derived from Rps27Rps27l and Rps27lRps27 mice. It has previously been reported that Trp53 differentially regulates Rps27 and Rps27l expression (He and Sun, 2007; Li et al., 2007; Xiong et al., 2011). Furthermore, Rps27 and Rps27l proteins reportedly bind and regulate the Trp53-regulating ubiquitin ligase Mdm2 with different affinity in vitro, and thus may form distinct feedback loops impacting Trp53 activity (Xiong et al., 2011). Even though the expression patterns of Rps27 and Rps27l that we observed are not likely driven by Trp53 (Figure 2A and B), we hypothesized that functional differences between the Rps27 and Rps27 proteins might be revealed under the types of genotoxic or cell cycle-related stress conditions for which Trp53 is classically a master regulator of response. We isolated mouse embryonic fibroblasts (MEFs) from homozygous, heterozygous, and wild-type mice of the Rps27Rps27l and Rps27lRps27 lineages. We first analyzed their distribution across cell cycle phases when cultured in vitro and found that MEFs of all genotypes had similar frequency in each phase (Figure 7B). We then treated them with varying doses of doxorubicin and etoposide, two chemotherapeutic drugs that induce DNA damage and consequently activate Trp53. The number of viable and metabolically active cells was assessed after 24–48 hr of drug treatment (Figure 7C). Higher doses of doxorubicin and etoposide consistently resulted in decreased cell viability, yet the same degree of effect was seen across all genotypes. Thus, for the purposes of cellular survival and proliferation under doxorubicin or etoposide treatment, the Rps27 and Rps27l proteins also appear to be interchangeable.
 
@@ -128,7 +156,7 @@ In this work, we set out to test two categories of hypotheses regarding the evol
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/78695/elife-78695-fig8-v2.jpg)
 
-**Figure 8.:** Rps27 and Rps27l characteristics with hypothesized evolutionary trajectories.Yellow boxes indicate the most likely trajectory for Rps27 and Rps27l. In brief, a whole-genome duplication (WGD) during early vertebrate evolution duplicated all RP genes. This mechanism is probable because the maintained dosage balance between RPs would have promoted initial preservation of duplicates. While most RP genes then reverted to single genes via nonfunctionalization of one paralog, some paralog pairs evolved features that promoted retention. Immediately after duplication, Rps27 and Rps27l probably had similar regulatory elements and thus would have expressed symmetrically, but our findings suggest that Rps27 and Rps27l now exhibit subfunctionalized expression that renders both paralogs necessary to achieve the requisite total expression of this RP. We found no evidence of functional differences between Rps27 and Rps27l protein, nor successful compensation by either paralog for a loss-of-function of the other. Not pictured here are neofunctionalized expression and beneficial dosage increase; while these modes of paralog retention have been observed for other genes, they are less relevant for RP paralogs if it is assumed that excess dosage of an individual RP gene is not advantageous. *Symmetric expression frequently shifts towards asymmetric expression, which can be an intermediate state towards nonfunctionalization of the minor paralog.
+**Figure 8.:** Yellow boxes indicate the most likely trajectory for Rps27 and Rps27l. In brief, a whole-genome duplication (WGD) during early vertebrate evolution duplicated all RP genes. This mechanism is probable because the maintained dosage balance between RPs would have promoted initial preservation of duplicates. While most RP genes then reverted to single genes via nonfunctionalization of one paralog, some paralog pairs evolved features that promoted retention. Immediately after duplication, Rps27 and Rps27l probably had similar regulatory elements and thus would have expressed symmetrically, but our findings suggest that Rps27 and Rps27l now exhibit subfunctionalized expression that renders both paralogs necessary to achieve the requisite total expression of this RP. We found no evidence of functional differences between Rps27 and Rps27l protein, nor successful compensation by either paralog for a loss-of-function of the other. Not pictured here are neofunctionalized expression and beneficial dosage increase; while these modes of paralog retention have been observed for other genes, they are less relevant for RP paralogs if it is assumed that excess dosage of an individual RP gene is not advantageous. *Symmetric expression frequently shifts towards asymmetric expression, which can be an intermediate state towards nonfunctionalization of the minor paralog.
 
 Several questions arise when considering the in vivo homogenized mouse outcomes alongside the molecular findings reported here and in previous literature. We detected preferential association of Rps27- or Rps27l-ribosomes with cell cycle-related transcripts, yet replacing Rps27 protein with Rps27l and vice versa had no detectable impact on cell cycle progression (Figure 7B). One explanation is that Rps27- and Rps27l-ribosomes may have cell cycle-dependent abundance and therefore differentially encounter cyclically expressed transcripts, a consideration that remains to be addressed in future work. Another possibility is that Rps27 and Rps27l proteins do affect ribosome affinity for specific transcripts, but other pathways compensate to maintain a normal cell cycle in homogenized cells.
 
@@ -140,31 +168,321 @@ Lastly, our findings raise questions about the two Rps27 copies that have long b
 
 ## Materials and methods
 
-## Phylogenetic analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Rps27 (eS27)</td>
+      <td>Ensembl version 109</td>
+      <td>ENSMUSG00000090733</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Rps27l (eS27L)</td>
+      <td>Ensembl version 109</td>
+      <td>ENSMUSG00000036781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>RPS27 (eS27)</td>
+      <td>Ensembl version 109</td>
+      <td>ENSG00000177954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>RPS27L (eS27L)</td>
+      <td>Ensembl version 109</td>
+      <td>ENSG00000185088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (multiple species)</td>
+      <td>Rps27 and Rps27l orthologs</td>
+      <td>Multiple</td>
+      <td></td>
+      <td>See Figure 1, Supplementary file 1 for full details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rps27exon2del, C57BL/6J</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Generation of genetically edited mouse lines,’ Figure 4, Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rps27lexon2del, C57BL/6J</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Generation of genetically edited mouse lines,’ Figure 4, Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rps27Rps27l, C57BL/6J</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Generation of genetically edited mouse lines,’ Figure 4, Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rps27lRps27, C57BL/6J</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Generation of genetically edited mouse lines,’ Figure 4, Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Trp53null, C57BL/6J</td>
+      <td>Jackson Laboratories https://doi.org/10.1016/s0960-9822(00)00002-6</td>
+      <td>Strain #002101; RRID:IMSR_JAX:002101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Rps27-FLAG mESCs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Generation of CRISPR-edited mESCs,’ Figure 3, Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Rps27l-FLAG mESCs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Generation of CRISPR-edited mESCs,’ Figure 3, Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rps27 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>PA5-18092; RRID:AB_10980328</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rps27l (rabbit polyclonal)</td>
+      <td>ProteinTech</td>
+      <td>15871-1-AP; RRID:AB_2253903</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actb (mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>3700S; RRID:AB_2242334</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rps3 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab77330; RRID:AB_1566697</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG (mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>F3165; RRID:AB_259529</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gapdh (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>AM4300; RRID:AB_2536381</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Trp53 (rabbit polyclonal)</td>
+      <td>Leica Biosystems</td>
+      <td>CM5; RRID:AB_563933</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Genotyping primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ribosome profiling primers</td>
+      <td>https://doi.org/10.1016/j.ymeth.2017.05.028</td>
+      <td></td>
+      <td>See also Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin RNA</td>
+      <td>Macherey-Nagel</td>
+      <td>740955.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink RNA Mini</td>
+      <td>Thermo Fisher</td>
+      <td>12183018A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProteoExtract protein precipitation</td>
+      <td>Calbiochem</td>
+      <td>539180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-Zol Microprep Kit</td>
+      <td>Zymo</td>
+      <td>R2060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zymo Oligo Clean &amp; Concentrator</td>
+      <td>Zymo</td>
+      <td>D4060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboZero Gold</td>
+      <td>Illumina</td>
+      <td>20020598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zymo DNA Clean &amp; Concentrator</td>
+      <td>Zymo</td>
+      <td>D4003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EdU labelling kit</td>
+      <td>Click Chemistry Tools</td>
+      <td>1381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA11</td>
+      <td>https://doi.org/10.1093/molbev/msab120</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAxML-ng</td>
+      <td>https://doi.org/10.1093/bioinformatics/btz305</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cutadapt version 2.4</td>
+      <td>https://doi.org/10.14806/ej.17.1.200</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastx_barcode_splitter.pl</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>umi_tools version 1.0.1</td>
+      <td>https://doi.org/10.1101/gr.209601.116</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastq_quality_filter</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie2 version 2.3.4.3</td>
+      <td>https://doi.org/10.1038/nmeth.1923</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EdgeR</td>
+      <td>https://doi.org/10.1093/bioinformatics/btp616</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Voom</td>
+      <td>https://doi.org/10.1186/gb-2014-15-2-r29</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Phylogenetic analysis
 
 To detect Rps27 orthologs in representative animal species, NCBI BLASTP was performed through the Ensembl and RefSeq interfaces against the annotated proteins associated with the reference genome assemblies listed in Supplementary file 1, with human RPS27 protein (ENSP00000499044) as query and default BLASTP parameters. Search hits were excluded if their corresponding transcripts contained a single coding exons (indicating likely processed pseudogene) or if they overlapped a higher-scoring protein at the same genomic locus. The majority of protein annotations used in the analysis are Ensembl or RefSeq gene models; exceptions are noted in Supplementary file 1. tBLASTn was also performed to detect unannotated paralogous protein-coding genes and corroborated by RNA-Seq-based gene models when available. Protein sequences and coding sequences were downloaded from Ensembl and RefSeq. Several orthologs were annotated to have N-terminal extensions relative to the human RPS27 proteins sequence; for calculation of similarity, these were truncated.
 
 For multispecies sequence alignment and phylogenetic tree construction, protein and coding sequence alignment was performed in the MEGA11 interface using the MUSCLE algorithm and default parameters. The codon-aware setting was used for coding sequences. Phylogenetic tree construction was performed with RAxML-ng in the RAxML graphical user interface (Kozlov et al., 2019). Parameters were optimized using the ModelTest-NG module (v0.1.7). Tree construction was performed with 50 starting trees and 100 bootstrap replicates.
 
-## Animal husbandry
+### Animal husbandry
 
 All animal work was reviewed and approved by the Stanford Administrative Panel on Laboratory Animal Care (APLAC, protocol #27463). The Stanford APLAC is accredited by the American Association for the Accreditation of Laboratory Animal Care. All mice used in the study were housed at Stanford University except where otherwise noted. CRISPR-edited mouse lines were generated at the Gladstone Institute Transgenic Gene Targeting Core (San Francisco, CA). All animal procedures were approved by the Institutional Animal Care and Use Committee at the University of California, San Francisco (protocol #AN180952-01B). Mouse lines were maintained on a C57BL6/J background unless otherwise stated. Trp53null (Jacks et al., 1994) mice were purchased from Jackson Laboratories (strain #002101, Bar Harbor, ME). Mice were housed under 12 hr light–dark cycles with ad libitum irradiated chow (Teklad 2018SX, Envigo, Madison, WI), acidified water, and filtered air flow. For timed pregnancies, 1–2 female mice were housed overnight with one adult male and examined daily for vaginal plugs. Embryo stage was considered to be E0.5 on the day the vaginal plug was observed. Mice used in the same experiment were colony-matched, and also littermate-matched whenever possible. Adult mice were euthanized by CO2 inhalation and confirmed by cervical dislocation per APLAC guidelines. Neonatal mice were euthanized by decapitation per APLAC guidelines. Genotyping was performed using standard PCR protocols for MyTaq HotStart Red Mix (Bioline BIO-25048, Memphis, TN) with primers listed in Supplementary file 7.
 
-## Reanalysis of RNA-seq datasets
+### Reanalysis of RNA-seq datasets
 
 Analysis scripts are available on GitHub (see ‘Data availability statement’). Gene count matrices and cell or sample type annotations were downloaded from the Mouse Cell Atlas (Han et al., 2018), Tabula Muris (Tabula Muris Consortium, 2018), Bach et al., 2017, and Fu et al., 2015. For scRNA-seq datasets, read counts from single cells were pooled. Total reads of each RP gene in a cell type were normalized by the total read count of all RP genes in the cell type to normalize for the cell type-specific rate of ribosome production, then multiplied by 100. For non-RP genes, normalized read counts are reported as reads per million.
 
-## RT-qPCR from mouse mammary glands, heart, liver, and brain
+### RT-qPCR from mouse mammary glands, heart, liver, and brain
 
 For Figure 2A, whole mammary gland tissue was harvested from abdominal glands at the indicated timepoints. The central lymph node was removed, and total RNA was isolated using NucleoSpin RNA (Macherey-Nagel 740955.50, Düren, Germany) according to the manufacturer’s instructions. For Figures 1F and 2E, tissues were harvested, cut into ~3 mm pieces, and snap-frozen in liquid nitrogen. For mammary glands, the central lymph node was removed prior to freezing. Snap-frozen tissues were powderized in a ceramic mortar and pestle while submerged in liquid nitrogen. Powder was suspended in TRIzol (Thermo Fisher 15596-018, Waltham, MA). RNA was extracted according to the manufacturer’s protocol and isolated using the PureLink RNA Mini kit (Thermo Fisher 12183018A). Samples were treated with Turbo DNAse and inactivated (Thermo Fisher AM1907).
 
 For all samples, 1 µg of RNA was reverse-transcribed using iScript RT Supermix (Bio-Rad 1708841, Hercules, CA). qPCR was performed using SsoAdvanced SYBR Green Super Mix (Bio-Rad 1725270) on a Bio-Rad CFX384 using the primers listed in Supplementary file 7. Two technical replicates were performed for each of the three biological replicates per condition. Ct values were normalized to a housekeeping gene or another RP gene as stated in figure legends and displayed as a fold difference relative to a reference sample.
 
-## Mouse embryonic stem cell (mESC) culture
+### Mouse embryonic stem cell (mESC) culture
 
 E14Tg2a.4 mESCs (Smith and Hooper, 1987) were a gift from Thom Saunder’s lab (University of Michigan). Cell line identity was verified via short tandem repeat profiling performed by the American Type Culture Collection (ATCC, 137-XV, Manassas, VA). Cells were cultured in Knockout DMEM (Thermo Fisher 10829-018) supplemented to a final concentration of 15% ES-qualified fetal bovine serum (MilliporeSigma ES-009-B, Burlington, MA), 1% non-essential amino acids (MilliporeSigma TMS-001-C), 2 mM L-glutamine (MilliporeSigma TMS-002-C), 1% penicillin/streptomycin (Thermo Fisher 15140-122), 55 µM beta-mercaptoethanol (Thermo Fisher 21985-023), and 1000 U/mL mouse leukemia inhibitory factor (mLIF, Gemini 400-495 10^7, West Sacramento, CA). Media was changed daily and cells were passaged every 2 d. To passage, plates with ~70% confluent colonies of mESCs were washed in Dulbecco’s phosphate buffered saline (DPBS) (Thermo Fisher 14190-250) and trypsinized (0.05% trypsin, dilution of Thermo Fisher 15400-054 in DPBS) for 5 min at 37°C. Trypsin was neutralized by a double volume of media. Cells were immediately dissociated by vigorous pipetting, pelleted at 200 × g for 3 min at room temperature, and resuspended in fresh warmed media for plating. Fresh plates were pre-coated at 37°C overnight with 0.1% gelatin (MilliporeSigma ES-006-B), which was aspirated prior to plating cells. Unless otherwise stated, cells were plated at a density equivalent to 5 × 106 cells per 10 cm plate. Mycoplasma testing was performed according to the manufacturer’s instructions using the PromoKine PCR Mycoplasma Test Kit (PK-CA91-1096, Heidelberg, Germany).
 
-## Density gradient fractionation
+### Density gradient fractionation
 
 Gradient lysis buffer: 20 mM Tris pH 7.5 (Thermo Fisher AM9850G, AM9855G), 150 mM NaCl (Thermo Fisher AM9760G), 15 mM MgCl2 (Thermo Fisher AM9530G), 1% v/v Triton-X 100 (MilliporeSigma X100-500ML), 8% v/v glycerol (MilliporeSigma G6279), 1 mM DTT (MilliporeSigma 43815), 1X cOmplete mini protease inhibitor EDTA-free (Roche 11836170001, Basel, Switzerland), 0.5% w/v deoxycholate (MilliporeSigma S1827), 100 µg/mL cycloheximide (MilliporeSigma C7698), 0.02 U/μL Turbo DNAse (Thermo Fisher AM2239), and 0.2 U/μL Superase RNAse Inhibitor (Thermo Fisher AM2696) in Ultrapure distilled water (Thermo Fisher 10977-015).
 
@@ -172,7 +490,7 @@ Gradient sucrose buffer: 10 or 45% w/v sucrose (Fisher 8510500GM), 20 mM Tris pH
 
 A 10 cm plate of mESCs at ~50% confluence was treated with 100 µg cycloheximide (CHX) for 2 min at 37°C. Cells were washed, trypsinized, and neutralized with media as described above, except that all buffers contained 100 µg/mL CHX. The cells were pelleted at 200 × g × 3 min at 4°C, washed with ice-cold DPBS + CHX, and pelleted again. To the pellet, 400 µL gradient lysis buffer (above) was added and vortexed for 30 s with 30 s rest on ice for three cycles, then incubated for 30 min rotating at 4°C. The lysate was clarified by centrifuging at 700 × g for 5 min at 4°C, then again at 7000 × g for 5 min at 4°C. RNA concentration was measured by Nanodrop 2000 (Thermo Fisher), and samples were adjusted to equal concentrations using additional lysis buffer. 250 µL of clarified lysate was layered onto a 10–45% sucrose gradient (see above), which was made on a Biocomp Model 108 Gradient Master (Colorado Springs, CO). Gradients were spun on a Beckman SW-41 rotor (Indianapolis, IN) at 40,000 rpm for 2.5 hr at 4°C. After centrifugation, gradients were fractionated using a density gradient fraction system (Brandel BR-188, Gaithersburg, MD) with measurement of UV absorbance. Fractions were precipitated using the ProteoExtract protein precipitation kit (MilliporeSigma 539180) as per the manufacturer’s protocol and redissolved in 2X Laemmli buffer (Fisher 50-196-784). For western blot, an equal volume of each fraction was loaded onto an SDS-PAGE gel.
 
-## Cell culture western blot
+### Cell culture western blot
 
 Western blot lysis buffer: 25 mM Tris pH 7.5 (Thermo Fisher AM9850G, AM9855G), 150 mM NaCl (Thermo Fisher AM9760G), 15 mM MgCl2 (Thermo Fisher AM9530G), 1% v/v Triton-X 100 (MilliporeSigma X100-500ML), 8% v/v glycerol (MilliporeSigma G6279), 1 mM DTT (MilliporeSigma 43815), 1X cOmplete mini protease inhibitor EDTA-free (Roche 11836170001), 0.5% w/v deoxycholate (MilliporeSigma S1827), 0.02 U/μL Turbo DNAse (Thermo Fisher AM2239), and 0.2 U/μL Superase RNAse Inhibitor (Thermo Fisher AM2696) in Ultrapure distilled water (Thermo Fisher 10977-015).
 
@@ -180,19 +498,19 @@ Unless otherwise stated, cells were washed, trypsinized, and neutralized with me
 
 Samples were resolved on a 4–20% Tris-glycine gradient SDS-PAGE gel (Bio-Rad 5671095) and transferred to a polyvinylidene difluoride membrane (Bio-Rad 1704273). Membranes were blocked for 1 hr at room temperature with 5% milk in phosphate-buffered saline (PBS) (Fisher BP2944100) with 0.1% Tween-20 (MilliporeSigma P9416) (PBST). Blots were incubated for 16 hr at 4°C with the following primary antibodies at 1:1000 dilution in 5% BSA/PBST, unless stated otherwise: anti-Rps27 (1:10,000, Thermo Fisher PA5-18092), anti-Rps27l (ProteinTech 15871-1-AP, Rosemont, IL), anti-B-actin (Cell Signaling 3700S, Danvers, MA), anti-Rps3 (Abcam ab77330, Cambridge, UK), anti-FLAG (MilliporeSigma F3165), anti-Gapdh (1:5000, Thermo Fisher AM4300), and anti-Trp53 (Leica Biosystems CM5, Wetzlar, Germany). Membranes were washed three times for 10 min in PBST before incubation for 30 min at room temperature with secondary antibodies coupled to horseradish peroxidase at 1:10,000 dilution in 5% milk/PBST: donkey anti-mouse (GE Healthcare NA931-1ML, Chicago, IL), donkey anti-rabbit (GE Healthcare NA934-1ML), and chicken anti-goat (R&D Systems HAF019, Minneapolis, MN). Membranes were washed three times for 10 min in PBST before detection using Clarity Western ECL Substrate (Bio-Rad 170-5061) and imaging on a ChemiDoc MP (Bio-Rad 17001402). Protein band intensity was quantified using the Fiji distribution of ImageJ.
 
-## Tissue western blot
+### Tissue western blot
 
 Lysis buffer: 50 mM Tris-HCl pH 8 (Thermo Fisher AM9855G), 150 mM NaCl (Thermo Fisher AM9760G), 1% Triton X-100 (MilliporeSigma X100-500ML), 0.5% sodium deoxycholate (MilliporeSigma S1827), 0.1% sodium dodecyl sulfate (MilliporeSigma 436143), 1 mM EDTA (Thermo Fisher AM9260G), and 1X cOmplete Protease Inhibitor, EDTA-free (Roche 11836170001) in UltraPure distilled water (Thermo Fisher 10977-015).
 
 After euthanasia as described above, mice were dissected. The relevant tissues were minced to 1 mm pieces, frozen in liquid nitrogen, and stored at –80°C. Chilled lysis buffer was added to the samples in 2 mL microcentrifuge tube. A handheld homogenizer (Fisher Scientific 150, 15-340-167) with a fresh 7 mm plastic probe was used on setting 4 for 10 s to homogenize each sample. Homogenized samples were incubated on ice for 30 min, then centrifuged at 17,000 × g for 10 min at 4°C. The supernatant was transferred to a fresh chilled tube. Normalization, denaturation, SDS-PAGE, western blotting, and quantification were performed as described above for cell culture western blots.
 
-## Generation of CRISPR-edited mESCs
+### Generation of CRISPR-edited mESCs
 
 The CRISPR strategy for inserting 3xFLAG C-terminally at the endogenous Rps27 or Rps27l locus in mESCs via exon replacement was designed as follows: first, two guide RNA (gRNA) recognition sites were identified that flanked the exon of Rps27 or Rps27l containing the stop codon, using on- and off-target gRNA site scoring algorithms (Doench et al., 2016; Hsu et al., 2013) implemented in Benchling (San Francisco, CA). gRNA sites were only used if they had no other high-probability predicted cut sites throughout the mouse genome. Each 20 nt gRNA sequence was each cloned into a PX459 (Ran et al., 2013) (Addgene 62988, Watertown, MA) backbone digested with BbsI (Thermo FD1014), with a single upstream G nucleotide preceding the gRNA sequence since this has been shown to improve cutting efficiency (Ran et al., 2013). To construct the homology-directed repair template, the sequence between the two gRNA cut sites was cloned along with 300 bp homology arms on each end. Immediately preceding the stop codon in the repair template, a sequence was inserted to encode a 2xGGGS linker and a 3xFLAG peptide. The gRNA recognition sites or protospacer adjacent motifs (PAM) on the repair template were modified at silent coding positions or non-coding positions with low evolutionary conservation to prevent cutting of the repair template or of the repaired genomic DNA. To deliver the repair template, an unmodified PAM and gRNA recognition sequence were appended to each end of the repair template, distal to the homology arms. Distal to the appended gRNA and PAM sequences on each side, 10 additional bases were appended to buffer against small deletions that occur with TOPO cloning. This construct was then inserted into a non-expressing pCR4Blunt-TOPO backbone (Thermo Fisher 450031) such that the Cas9-gRNAs expressed from the PX459 plasmids would cleave the repair template as a linear dsDNA from the circular pCR4Blunt-TOPO plasmid (Zhang et al., 2017a).
 
 At passage number 28, 106 mESCs were transfected with the two PX459-based plasmids harboring a Cas9-puromycin fusion construct and gRNAs flanking the targeted exon (0.5 µg each), and one pCR4Blunt-TOPO-based plasmid harboring the linearizable repair template (2 µg) (see Supplementary file 7 for sequences). The three combined plasmids were diluted in 100 µL Opti-MEM Reduced Serum Medium (Thermo Fisher 11058021). In parallel, 7.5 µL of Lipofectamine 2000 (Thermo Fisher 11668-019) was diluted in 100 µL Opti-MEM. The plasmid/Opti-MEM and Lipofectamine/Opti-MEM were combined and incubated for 20 min at room temperature. Cells were trypsinized as described above, resuspended in 250 µL Opti-MEM, added to the plasmid-Lipofectamine complexes for 10 min at room temperature, and plated into one 12-well. Media was changed after 4 hr. At 24 hr after transfection, cells were treated with media containing 1 µg/mL puromycin (Millipore P8833). At 48 hr after transfection, fresh media containing puromycin was changed in. At 72 hr after transfection, puromycin-free media was changed in. At 96 hr after transfection, cells were washed, trypsinized, dissociated, and plated at 1000 cells per 10 cm plate to form colonies derived from single cells. At 7 d after sparse plating, individual colonies were lifted using a pipet tip, dissociated at 37°C in 0.025% trypsin-EDTA in DPBS, replica plated in gelatinized 96-well plates in regular mESC media, and screened by genomic DNA PCR and western blot for desired edits. Importantly, PCR primers were designed such that at least one primer bound distal to the 300 bp homology arms to avoid amplifying residual repair template.
 
-## FLAG-IP ribosome profiling
+### FLAG-IP ribosome profiling
 
 IP lysis buffer: 25 mM Tris pH 7.5 (Thermo Fisher AM9850G, AM9855G), 150 mM NaCl (Thermo Fisher AM9760G), 15 mM MgCl2 (Thermo Fisher AM9530G), 1% v/v Triton-X 100 (MilliporeSigma X100-500ML), 8% v/v glycerol (MilliporeSigma G6279), 1 mM DTT (MilliporeSigma 43815), 1X cOmplete Mini Protease Inhibitor EDTA-free (Roche 11836170001), 0.5% w/v deoxycholate (MilliporeSigma S1827), 200 µg/mL cycloheximide (MilliporeSigma C7698), 0.02 U/μL Turbo DNAse (Thermo Fisher AM2239), and 0.2 U/μL Superase RNAse Inhibitor (Thermo Fisher AM2696) in Ultrapure distilled water (Thermo Fisher 10977-015).
 
@@ -210,7 +528,7 @@ For western blot, an aliquot of the cushion supernatant and eluate were precipit
 
 Ribosome profiling libraries were prepared following the published protocol of McGlincy and Ingolia, 2017 with modifications as stated below, using oligonucleotides synthesized by Integrated DNA Technologies (Coralville, IA; Supplementary file 7). Total RPFs and IP RPFs were extracted from TRIzol using the Direct-Zol Microprep Kit (Zymo R2060, Irvine, CA) according to the manufacturer protocol, omitting the DNAse digestion. RPF volume was adjusted to 90 µL with Ultrapure water. 10 µL 3 M NaOAc pH 5.5 (Thermo Fisher AM9740) and 2 µL of 15 mg/mL GlycoBlue (Thermo Fisher AM9515) were added before precipitating the RPFs in 150 µL 100% isopropanol overnight at –80°C. Precipitated RPFs were pelleted at 21,000 × g for 30 min at 4°C, washed with ice-cold 80% ethanol in water, dried at room temperature for 10 min, and dissolved in Ultrapure water. RPFs were denatured at 80°C for 90 s in denaturing sample loading buffer (McGlincy and Ingolia, 2017), then incubated on ice for 5 min before running on a 15% Tris-borate-EDTA-urea (TBE-urea) polyacrylamide gel. Fragments were size-selected using NI-800 and NI-801 (McGlincy and Ingolia, 2017) as 26–34 nt markers. Gel slices were freeze-thawed for 30 min at –80°C, crushed, and extracted at room temperature overnight in 400 µL RNA extraction buffer (McGlincy and Ingolia, 2017), then re-extracted with an additional 200 µL RNA extraction buffer. The combined 600 µL extraction was precipitated with 2 µL GlycoBlue and 750 µL 100% isopropanol overnight at –80°C. The RPFs were pelleted, washed, and dried as described above, then dissolved in 4 µL of 10 mM Tris pH 8, dephosphorylated, and ligated to barcoded linkers as per the published protocol. Between replicates, barcodes were permuted among the samples. Unreacted linker was deadenylated and digested as per the published protocol. The barcoded RPFs were pooled within each replicate and purified on a Zymo Oligo Clean & Concentrator column (Zymo D4060) according to the manufacturer’s protocol. Pooled RPFs were diluted to 100 ng/μL and 1 µg was used as input for rRNA depletion using RiboZero Gold (part of Illumina 20020598, San Diego, CA) as per the manufacturer’s protocol. rRNA-depleted RPFs were purified on a Zymo Oligo Clean & Concentrator column, then reverse-transcribed as per the published protocol. Template RNA was degraded by alkaline hydrolysis as per the published protocol. cDNA was purified on a Zymo Oligo Clean & Concentrator column, denatured in denaturing sample loading buffer, and size-selected on a 10% TBE-urea gel, as marked by NI-800 and NI-801 that had been ligated and reverse-transcribed in parallel with the samples. Gel slices were freeze-thawed for 30 min at –80°C, crushed, and extracted at room temperature overnight in 400 µL DNA extraction buffer (McGlincy and Ingolia, 2017), then re-extracted with an additional 200 µL DNA extraction buffer. The combined 600 µL extraction was precipitated with 2 µL GlycoBlue and 750 µL 100% isopropanol overnight at –80°C. The cDNA was pelleted, washed, and dried as described above, then resuspended in 15 µL 10 mM Tris pH 8. cDNA was circularized by adding 2 µL 10X CircLigase I buffer, 1 µL of 1 mM ATP, 1 µL of 50 mM MnCl2, and 1 µL of CircLigase I (Lucigen CL4111K, Middleton, WI) to the 15 µL of cDNA and incubating at 60°C for 12 hr, then 80°C for 10 min. Circularized cDNA was purified on a RNA Clean & Concentrator column. cDNA concentration was quantified by qPCR as per the published protocol except using SsoAdvanced Universal SYBR Green qPCR master mix (Bio-Rad 1725274) and following the manufacturer’s protocol. Library construction to add indexing primers was performed as per the published protocol using a different reverse primer for each replicate. PCR products were purified using a Zymo DNA Clean & Concentrator column (Zymo D4003). Size selection was performed on a 8% TBE-urea gel, with the lower bound marked by NI-803 (McGlincy and Ingolia, 2017) that had undergone library construction in parallel with the samples, and the upper bound at 170 nt as marked by O’Range 20 bp DNA ladder (Thermo SM1323). Gel slices were extracted as described above. DNA was precipitated as described above, except using 1.25 µL of 20 µg/mL glycogen (Themo 10814-010) instead of GlycoBlue in the precipitation and incubating at –80°C for 2 hr. The pellet was resuspended in 10 mM Tris pH 8. Library quality and concentration was analyzed on an Agilent 2100 Bioanalyzer (High-Sensitivity DNA) at the Stanford Protein and Nucleic Acid Facility. Libraries were sequenced by Novogene (Sacramento, CA) on an Illumina HiSeq 4000 with paired-end 150 bp reads.
 
-## Ribosome profiling analysis
+### Ribosome profiling analysis
 
 Analysis scripts are available on GitHub (see ‘Data availability statement’). Due to the short insert length, only analysis of Read 1 was necessary. cutadapt version 2.4 (Martin, 2011) was used to trim 3′ adapter sequences from Read 1 with parameters “-j 0 -u 3 -a AGATCGGAAGAGCACAGTCTGAACTCCAGTCAC --discard-untrimmed -m 15”. In-line barcodes were demultiplexed using fastx_barcode_splitter.pl (http://hannonlab.cshl.edu/fastx_toolkit/) with parameters “--eol”. Unique molecular identifiers and in-line barcodes were extracted using umi_tools version 1.0.1 (Smith et al., 2017) with parameters “extract --extract-method=string --bc-pattern=NNNNNCCCCC -–3prime”. Reads were filtered by quality using fastq_quality_filter (http://hannonlab.cshl.edu/fastx_toolkit/) with parameters “-Q33 -q 20 -p 70 -z”. To remove reads originating from rRNA, transfer RNA (tRNA), and small nuclear RNA (snRNA), reads aligning to these sequences using bowtie2 version 2.3.4.3 (Langmead and Salzberg, 2012) with parameters “-L 18” were discarded. Remaining reads were aligned using bowtie2 with parameters “--norc -L 18” to a reference GRCm38/mm10 mouse transcriptome that was derived from UCSC/GENCODE VM20 knownCanonical annotations filtered for transcripts associated with at least one of the following: a Uniprot ID, a RefSeq ID, or an Entrez ID. PCR duplicates were removed using umi_tools. RPFs were parsed for uniquely aligned reads and grouped by read length. Ribosome A site positions were determined by offsetting the distance of the 5′ end of each read to canonical start sites in each length group and adding 4 nucleotides. RPF reads aligning to the coding sequence (CDS) of a transcript (excluding the first 15 codons and last 5 codons of each CDS) were counted using the above transcriptome annotation. Because genes encoded by mitochondrial DNA are translated by mitoribosomes in the mitochondrial lumen that are distinct from cytoplasmic ribosomes, reads mapping to these genes were excluded from further analysis. Transcripts with counts per million (CPM) >2 were retained for downstream analysis. IP RPF and total RPF libraries were normalized separately by the trimmed mean of M-values method in edgeR (Robinson et al., 2010).
 
@@ -226,34 +544,34 @@ For all comparisons, the data for the relevant samples were transformed using vo
 
 Gene Ontology enrichment analysis was performed using the goana function in limma after excluding a Tmod3 transcript as a likely artifact of anti-FLAG IP (Appendix 1, Appendix 1—figure 1).
 
-## Generation of genetically edited mouse lines
+### Generation of genetically edited mouse lines
 
 The CRISPR strategy to produce mice with Rps27 or Rps27l homogenization or truncation is analogous to the strategy described above for CRISPR insertion of 3xFLAG into mESCs. Highly specific gRNA recognition sites were selected that flanked exon 2 of either gene, which encodes the three residues that differ between the paralogs. Instead of a linearizable dsDNA template, an ssDNA repair template with 100 nt homology arms was synthesized by GeneWiz (South Plainfield, NJ). This repair template contained the modified codons to homogenize the targeted paralog. Additionally, the gRNA recognition sites or protospacer adjacent motifs (PAM) on the ssDNA repair template were modified at silent coding positions or non-coding positions with low evolutionary conservation to prevent cutting of the repaired genomic DNA. gRNA and ssDNA sequences are listed in Supplementary file 7.
 
 CRISPR-edited mouse lines were generated at the Gladstone Institute Transgenic Gene Targeting Core (San Francisco, CA). All animal procedures were approved by the Institutional Animal Care and Use Committee at the University of California, San Francisco (protocol #AN180952-01B). Superovulated female C57BL/6 mice (4 weeks old) were mated to C57BL/6 stud males. Fertilized zygotes were collected from oviducts and injected with Cas9 protein (20 ng/μL), two sgRNAs with recognition sites that flanked exon 2 (10 ng/μL each) (synthesized by IDT as Alt-R CRISPR-Cas9 crRNA, Coralville, IA), and one ssDNA repair template (10 ng/μL) into the pronucleus of fertilized zygotes. Injected zygotes were implanted into oviducts of pseudopregnant CD1 female mice. The targeted loci were PCR-amplified from genomic DNA of F0 animals, subcloned, and Sanger sequenced to identify successfully edited alleles. The Rps27exon2del and Rps27lexon2del alleles were recovered serendipitously from mice injected with reagents designed to produce the Rps27Rps27l and Rps27lRps27 alleles, which were also successfully recovered. F0 mice were backcrossed to wild-type C57BL6 males and females (Jackson Labs) for at least four generations.
 
-## Adult mouse necropsy and bloodwork
+### Adult mouse necropsy and bloodwork
 
 For necropsy of 10–16-week-old adult male mice, mice were euthanized by CO2 asphyxiation and cardiac exsanguination. Whole cardiac blood was collected in EDTA-coated microtainers (Becton Dickinson 365974) and 1.5 mL plastic tubes for complete blood counts and serum biochemistry, respectively. Blood samples were analyzed as described below. Mice were routinely processed for gross examination. In addition to body weight, the following organs were weighed, and a percentage of body weight calculation was conducted for each organ: liver, spleen, heart, kidneys (left and right), and testicles (left and right). Tissues were immersion-fixed in 10% neutral buffered formalin (Fisher Scientific) for 72 hr. Tissues containing bone were decalcified for 24 hr using Cal-Ex II Fixative/Decalcifier (Fisher CS511-1D). Formalin-fixed tissues were processed routinely, embedded in paraffin, sectioned at 5 µm, and stained with hematoxylin and eosin. The following organs were evaluated histologically by a board-certified veterinary pathologist blinded to the sample genotypes: liver, kidneys, heart, spleen, thymus, pancreas, salivary glands, lungs, thyroid, trachea, esophagus, tongue, haired skin (interscapular), testes, accessory sex glands (preputial, seminal vesicles, prostate), urinary bladder, brain, gastrointestinal tract, bone marrow (pelvic limb), nasal cavity, eyes, teeth, ears, vertebral column, and spinal cord.
 
 For bloodwork of aged adult mice, male mice were co-housed with male littermate controls until 9–10 months of age. Mice were euthanized by CO2 asphyxiation and cardiac exsanguination. Whole cardiac blood was collected as described above. Samples were handled at room temperature during collection and submitted for analysis within 1 hr of collection. Automated hematology was performed on a Sysmex XN-1000V hematology analyzer. Blood smears were made for all CBC samples, Wright–Giemsa stained, and reviewed by a clinical laboratory scientist. Manual differentials were performed as indicated by species and automated analysis. Liver panel analysis was performed on a Siemens Dimension EXL200/LOCI analyzer.
 
-## Mammary carmine alum, H&E
+### Mammary carmine alum, H&E
 
 After euthanasia, mammary glands were dissected from littermate-matched female mice at the indicated pregnancy and lactation stages. From each mouse, the left abdominal mammary gland was used for carmine alum staining as previously described (Plante et al., 2011). The right abdominal mammary gland was fixed overnight in 10% neutral-buffered formalin, washed in phosphate buffered saline with 0.2% w/v glycine, and stored in 70% ethanol until paraffin embedding, sectioning, and staining with hematoxylin-eosin.
 
-## Mouse embryonic fibroblast isolation and culture
+### Mouse embryonic fibroblast isolation and culture
 
 Mouse embryonic fibroblasts (MEFs) were isolated at E13.5 as previously described (Durkin et al., 2013) from heterozygous crosses of the Rps27Rps27l and Rps27lRps27 lines. MEFs were cultured in DMEM with high glucose (Gibco 11965), supplemented with 10% fetal bovine serum (MilliporeSigma TMS-013-B) and 1% penicillin/streptomycin (Thermo Fisher 15140-122). MEFs were cultured at 37°C with 5% CO2 and passaged every 2–3 d following the same passaging protocol as performed for mESCs (above). MEFs were used for experiments at passage numbers 2–4.
 
-## EdU/DAPI flow cytometry
+### EdU/DAPI flow cytometry
 
 MEFs were plated at 250,000 cells per T25 flask. After 72 hr, 5-ethynyl-2′-deoxyuridine (EdU) (Click Chemistry Tools 1381, Scottsdale, AZ) was added to a final concentration of 10 µM. The media was kept warm during the EdU addition and thoroughly mixed in the flask afterward. The cells were incubated at 37°C for 2 hr, then washed once with 3 mL of 0.05% trypsin-EDTA in DPBS and trypsinized for 5 min at 37°C in 1 mL 0.05% trypsin-EDTA in DPBS. The trypsin was neutralized with 1 mL MEF media and pipetted thoroughly to obtain a single-cell suspension. The media and trypsin wash previously poured off from the flask was recombined with the cells. The cells were pelleted at 200 × g for 3 min at room temperature and washed in 1 mL 1% bovine serum albumin (BSA) in DPBS. For each MEF line, 500K cells were fixed in 200 µL 4% paraformaldehyde in PBS (dilution of Fisher 43368-9M in 1.33× PBS) for 15 min in the dark at room temperature. To the fixative reaction, 1 mL ice-cold 70% ethanol was added and incubated on ice for 10 min. Cells were washed twice in 1 mL DPBS + 0.1% Triton X-100 and resuspended in 50 µL DPBS + 0.1% Triton X-100. The click reaction master mix was prepared as per the manufacturer’s instructions (Click Chemistry Tools 1381) and 250 µL was added to each sample. The click reaction was incubated for 30 min in the dark at room temperature, then washed with 1 mL DPBS + 0.1% Triton X-100. The cells were resuspended in 150 µL DPBS + 0.1% Triton X-100 containing 4 µg/mL 4′,6-diamidino-2-phenylindole (DAPI) (Thermo 62248), filtered through a mesh-top tube, and incubated in the dark overnight at 4°C before running on a Novocyte Quanteon flow cytometer using NovoExpress 1.3.0 software (Agilent, Santa Clara, CA) at a flow rate of 14 µL/min. Gating for singlets was performed in FlowJo (Ashland, OR) on forward scatter area (FSC-A) × forward scatter height (FSC-H), then DAPI area × height.
 
-## Cell viability assays
+### Cell viability assays
 
 MEFs were plated in the appropriate media (see above) in 96-well half-area black plates (Corning CLS3603) at 2500 MEFs per well for 24 hr prior to treatment. Media was exchanged for media containing doxorubicin (MilliporeSigma 324380) or etoposide (MilliporeSigma E1383) at the specified doses. Cells were incubated for the specified time. Cell viability was measured using CellTiterGlo 2.0 (Promega G9242) following the manufacturer’s instructions.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample sizes, the number of technical or biological replicates, statistical tests, significance values, and significance thresholds are reported in the main text or figure legends pertaining to each experiment. No explicit power analysis was used to predetermine sample size. Randomization was not applicable for these experiments. No samples were excluded from analysis.

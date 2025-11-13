@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Psychology, Stanford University Stanford United States
-2. https://ror.org/00f54p054 Wu Tsai Neurosciences Institute, Stanford University Stanford United States
-3. https://ror.org/013q1eq08 Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University Shanghai China
-4. https://ror.org/00f54p054 Neurosciences Program, Stanford University Stanford United States
+1. Department of Psychology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Wu Tsai Neurosciences Institute, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))
+4. Neurosciences Program, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -44,7 +44,17 @@ As the EEG-SSVEP paradigm is novel and we are restricted in the amount of data w
 
 As infants have lower cortical visual acuity, we also tested if the stimuli are distinguishable to infants. Thus, we simulated how they may look to infants by filtering the images to match the cortical acuity of 3-month-olds (Appendix 1—figure 4). Despite being blurry, images of different categories are readily distinguishable by adults (Videos 1–5), suggesting that there is sufficient visual information in the lower spatial frequencies of the stimuli for infants to distinguish visual categories.
 
-## Robust visual responses in occipital regions to visual stimuli in all infant age groups
+![Video 1.](https://cdn.elifesciences.org/articles/100260/elife-100260-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/100260/elife-100260-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/100260/elife-100260-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/100260/elife-100260-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/100260/elife-100260-video5.mp4.jpg)
+
+### Robust visual responses in occipital regions to visual stimuli in all infant age groups
 
 We first tested if there are significant visual responses to our stimuli in infants’ brains by evaluating the amplitude of responses at the image presentation frequency (4.286 Hz) and its first three harmonics. We found that in all age groups, visual responses were concentrated spatially over occipital electrodes (Figure 2A–D, left panel, Appendix 1—figure 1). Quantification of the mean visual response amplitude over a region of interest (ROI) spanning nine electrodes over early visual cortex (occipital ROI) revealed significant responses in all infant age groups at the image frequency and its first three harmonics (response amplitudes significantly above zero with false discovery rate [FDR] corrected at four levels; except for the first harmonic at 8.571 Hz in 6- to 8-month-olds; Figure 2A–D, right panel). Analysis of visual responses separately by category condition revealed that visual responses were not significantly different across category conditions (Appendix 1—figure 5; no significant main effect of category, βcategory = 0.08, 95% CI: –0.08–0.24, t(301) = 0.97, p=0.33, or category by age interaction, βcategory × age = -0.04, 95% CI: –0.11–0.03, t(301) = –1.09, p=0.28, linear mixed model (LMM) on response amplitude to 4.286 Hz and its first three harmonics). We also tested if experimental noise varied across age groups. Noise level was estimated in the occipital electrodes by measuring the amplitude of response in frequencies up to 8.571 Hz excluding image presentation frequencies (4.286 Hz and harmonics) and category frequencies (0.857 Hz and harmonics) as this frequency range includes the relevant main harmonics. We found no significant difference in noise across age groups (Figure 2E). These analyses indicate that infants were looking at the stimuli as there are significant visual responses even in the youngest 3- to 4-month-old infants’ and there are no significant differences in noise levels across infants of different ages.
 
@@ -56,7 +66,7 @@ Prior EEG data (Conte et al., 2020; Taylor et al., 1999) suggest that the timing
 
 We observed that during the 233 ms image presentation, temporal waveforms had two deflections in 3- to 4-month-olds (one negativity and one positivity, Figure 2F) and four deflections for infants older than 4 months (two minima and two maxima, Figure 2F). To evaluate developmental effects, we examined the latency and amplitude of the peak visual response during two time windows related to the first deflection (60–90 ms), and the second deflection (90–160 ms for 3- to 4-month-olds, and 90–110 ms for other age groups). In general, we find that the latency of the peak deflection decreased from 3 to 15 months (Figure 2G and H). As data includes both cross-sectional and longitudinal measurements and we observed larger development earlier than later in infancy, we used an LMM to model peak latency as a function of the logarithm of age (see Methods). Results reveal that the latency of the peak deflection significantly and differentially decreased with age in the two time windows (βage × time window = –45.78, 95% CI: –58.39 to –33.17, t(118) = –7.19, p=6.39 × 10–11; LMM with age and time window as fixed effects, and participant as a random effect, all stats in Appendix 1—table 4, Appendix 1—table 5). There were larger decreases in the peak latency in the second than first time window (Figure 2G and H, first:βage = –7.44, 95% CI: –13.82 to –1.06, t(118) = –2.33, pFDR<0.05; second: βage = –46.91, 95% CI: –56.56 to –37.27, t(59) = –9.73, pFDR<0.001). Peak amplitude also differentially develops across the two windows (βage × time window = –4.90, 95% CI: –8.66 to –1.14, t(118) = –2.58, p=0.01, Appendix 1—table 6, Appendix 1—table 7). The decrease in peak amplitude with age was significant only for the second deflection (βage = –3.59, 95% CI: –6.38 to –0.81, t(59) = –2.58, p=0.01, LMM). These data suggest that the temporal dynamics of visual responses over occipital cortex develop from 3 to 15 months of age.
 
-## What is the nature of category-selective responses in infants?
+### What is the nature of category-selective responses in infants?
 
 We next examined if in addition to visual responses to the rapid image stream, there are also category-selective responses in infants, by evaluating the amplitude of responses at the category frequency (0.857 Hz) and its harmonics. This is a selective response as it reflects the relative response to images of category above the general visual response. Figure 3 shows the spatial distribution and amplitude of the mean category response for faces and its harmonics in each age group. Mean category-selective responses to limbs, cars, corridors, and words are shown in Appendix 1—figures 6–9. We analyzed mean responses over two ROIs spanning seven electrodes each over the left (LOT) and right occipitotemporal (ROT) cortex where high-level visual regions are located (Xie et al., 2019).
 
@@ -80,7 +90,7 @@ We next examined the development of the peak response and latency of the categor
 
 Additionally, for all categories, the latency of the peak response in the ROT ROI significantly decreased from 3 to 15 months of age (βage = –173.17, 95% CI: –284.73 to –61.61, t(301) = –3.05, p=0.002, LMM as a function of log(age) and category; participant: random effect). We found no significant development of peak latency in the LOT ROI (Appendix 1—table 8, Appendix 1—table 9).
 
-## Are spatiotemporal patterns of responses to visual categories consistent across infants?
+### Are spatiotemporal patterns of responses to visual categories consistent across infants?
 
 As we observed different mean waveforms over the lateral occipital ROIs for the five categories (Figure 4), we asked whether the distributed spatiotemporal patterns of brain responses evoked by each category are unique and reliable across infants. We reasoned that if different categories generated consistent distributed spatiotemporal responses, an independent classifier would be able to predict the category an infant was viewing from their distributed spatiotemporal pattern of response. Thus, we used a leave-one-out-cross-validation (LOOCV) approach (Figure 5A) and tested if a classifier can decode the category a left-out infant viewed based on the similarity of their distributed spatiotemporal response to the mean response to each of the categories in the remaining N–1 infants. We calculated for each infant the mean category waveform (same as Figure 4) across the occipital and lateral occipitotemporal ROIs and concatenated the waveforms across the three ROIs to generate the distributed spatiotemporal response to a category (Figure 5A). The classifier was trained and tested separately for each age group.
 
@@ -90,7 +100,7 @@ As we observed different mean waveforms over the lateral occipital ROIs for the 
 
 Results reveal two main findings. First, the LOOCV classifier decoded category information from brain responses significantly above the 20% chance level in infants aged 6 months and older but not in younger infants (Figure 5B, 6- to 8-month-olds, significant above chance: t(14) = 4.1, pFDR<0.01, one-tailed, FDR corrected over four age groups; 12- to 15-month-olds, t(14) = 3.4, pFDR<0.01). This suggests that spatiotemporal patterns of responses to different categories become reliable across infants after 6 months of age. Second, examination of classification by category shows that the LOOCV classifier successfully determined from spatiotemporal responses when infants were viewing faces in 64% of 4- to 6-month-olds, in 93% of 6- to 8-month-olds, and 87% of 12- to 15-month-olds (Figure 5C). In contrast, classification performance was numerically lower for the other categories (successful classification in less than 40% of the infants). This suggests that a reliable spatiotemporal response to faces that is consistent across infants develops after 4 months of age and dominates classification performance.
 
-## What is the nature of categorical spatiotemporal patterns in individual infants?
+### What is the nature of categorical spatiotemporal patterns in individual infants?
 
 While the prior analyses leverage the power of averaging across electrodes and infants, this averaging does not provide insight to fine-grained neural representations within individual infants. To examine the finer-grain representation of category information within each infant’s brain, we examined the distributed spatiotemporal responses to each category across the 23 electrodes spanning the LOT and ROT cortex in each infant. We tested: (i) if categorical representations in an infant’s brain are reliable across different images of a category, and (ii) if category representations become more distinct during the first year of life. We predicted that if representations become more similar across items of a category and more dissimilar between items of different categories then category distinctiveness (defined as the difference between mean within and between category similarity) would increase from 3 to 15 months of age.
 
@@ -114,7 +124,7 @@ We find that both selective responses to items of a category over others across 
 
 **Figure 7.:** Blue arrows: presence of significant mean region of interest (ROI) category-selective responses in lateral occipital ROIs, combining results of analyses in the frequency and time domains. Yellow arrows: presence of significantly above zero distinctiveness in the distributed spatiotemporal response patterns across occipital and lateral occipital electrodes.
 
-## Reliable category representations start to emerge at 4 months of age
+### Reliable category representations start to emerge at 4 months of age
 
 While 3- to 4-month-old infants have significant and reliable evoked visual responses over early visual cortex, we find no reliable category representations of faces, limbs, corridors, or characters in these young infants. Both analyses of average responses across lateral occipital ROIs and analyses of distributed spatiotemporal responses across visual cortex find no reliable category representations in 3- to 4-month-olds, either when examining mean response across an ROI or in distributed spatiotemporal patterns across visual cortex. The earliest categorical responses we find are for faces, and they emerge at 4–6 months of age.
 
@@ -122,7 +132,7 @@ Is it possible that there are some category representations in 3- to 4-month-old
 
 Our findings together with a recent fMRI study in 2- to 10-month-olds (Kosakowski et al., 2022) provide accumulating evidence for multiple visual categories representations in infants’ brains before the age of one. However, there are also differences across studies. The earliest we could find reliable group-level category-selective responses for faces was 4- to 6-month-olds and for limbs and corridors only after 6 months of age. In contrast, Kosakowski et al., 2022, report category-selective responses to faces, bodies, and scenes in example 4- to 5-month-olds. Group average data in their study found significant face- and place-selective responses in infants’ VTC but not in LOTC, and significant body-selective responses in LOTC, but not VTC. Because Kosakowski et al., 2022, report group-averaged data across infants spanning 8 months, their study does not provide insights to the time course of this development. We note that, the studies differ in several ways: (i) measurement modalities (fMRI in Kosakowski et al., 2022, and EEG here), (ii) the types of stimuli infants viewed: in Kosakowski et al., 2022, infants viewed isolated, colored, and moving stimuli, but in our study, infants viewed still, gray-level images on phase-scrambled backgrounds, which were controlled for several low-level properties, and (iii) contrasts used to detect category-selective responses, whereby in Kosakowski et al., 2022, the researchers identified within predefined parcels – the top 5% of voxels that responded to the category of interest vs. objects, here we contrasted the category of interest vs. all other categories the infant viewed. Thus, future research is necessary to determine whether differences between findings are due to differences in measurement modalities, stimulus format, and data analysis choices.
 
-## Face representations emerge around 4–6 months of age
+### Face representations emerge around 4–6 months of age
 
 Recognizing faces (e.g. a caregiver’s face) is crucial for infants’ daily lives. Converging evidence from many studies suggest that infants have significant and reliable face-selective neural responses at 4–6 months of age (Farzin et al., 2012; de Heering and Rossion, 2015; Deen et al., 2017; Guy et al., 2016; Halit et al., 2004). While some studies report responses to face-like (high-contrast paddle-like) stimuli in newborns (Johnson et al., 1991; Buiatti et al., 2019; Goren et al., 1975) and significant visual evoked responses to faces in 3-month-olds (Halit et al., 2003; Cassia et al., 2006; Peykarjou, 2022; Tzourio-Mazoyer et al., 2002), these studies have largely compared responses to an isolated face vs. another isolated object. In contrast, we do not find reliable face-selective responses (Figures 3–4) or reliable distributed representations (Figures 5–6) to faces in 3- to 4-month-olds when responses to faces are contrasted to many other items and when stimuli are shown on a background rather than in isolation. Our findings are consistent with longitudinal research in macaques showing that robust cortical selectivity to faces takes several months to emerge (Livingstone et al., 2017) and support the hypothesis that experience with faces is necessary for the development of cortical face selectivity (Arcaro et al., 2019; Livingstone et al., 2017; Arcaro et al., 2017).
 
@@ -130,7 +140,7 @@ Our data also reveal that face-selective responses and distributed representatio
 
 One fascinating aspect of the development of cortical face selectivity is that among the categories we tested, selectivity to faces seems to emerge the earliest at around 4 months of age, yet the development of selectivity and distributed representations to faces is protracted compared to objects and places (Golarai et al., 2007; Peelen et al., 2009; Scherf et al., 2007). Indeed, in both our data and prior work, face-selective responses and distributed representations to faces in infants are immature compared to adults (Conte et al., 2020; Xie et al., 2022), and a large body of work has shown that face selectivity (Nordt et al., 2021; Golarai et al., 2007; Scherf et al., 2007; Taylor et al., 1999; Peelen et al., 2009; Cantlon et al., 2011; Cohen et al., 2019) and distributed representations to faces (Nordt et al., 2023) continue to develop during childhood and adolescence. This suggests that not only experience during infancy but also life-long experience with faces, sculpts cortical face selectivity. We speculate that the extended cortical plasticity for faces may be due to both the expansion of social circles (family, friends, and acquaintances) across the lifespans and also the changing statistics of faces we socialize with (e.g. child and adult faces have different appearance).
 
-## A new insight about cortical development: different category representations emerge at different times during infancy
+### A new insight about cortical development: different category representations emerge at different times during infancy
 
 To our knowledge, our study is the first to examine the development of both ROI level and spatiotemporal distributed responses in infants across the first year of life. We note that both analyses find that category information to faces develops before other categories. However, there are also some differences across analyses (Figure 7). For example, for limbs and corridors we find significant category-selective responses at the ROI level in lateral occipitotemporal ROIs starting at 6–8 months but no reliable distinct distributed responses across visual cortex at this age. In contrast, for cars, we find an opposite pattern where there is a distinct spatiotemporal pattern in 12- to 15-month-olds even as there is no significant car-selective response in the ROI level. As these approaches have different sensitivities, they reveal insights to the nature of the underlying representations. For example, as visible in Figure 4, limbs and corridor have a clear category-selective waveform in both in 6- to 8- and 12- to 15-months-olds, but the waveform of limbs and its spatial distribution is not that different from that to corridors, which may explain why distinctiveness of spatiotemporal patterns for limbs is low in 6- to 8-month-olds (Figure 6). Likewise, even as there is no significant response for cars (Figure 4e), its spatiotemporal pattern is consistently different than for other categories giving rise to a distinctive spatiotemporal response by 12 months (Figure 6).
 
@@ -140,7 +150,7 @@ Together our findings not only suggest that visual experience is necessary for t
 
 ## Methods
 
-## Participants
+### Participants
 
 Ethical permission for the study was obtained from the Institutional Review Board of Stanford University. Parents of the infant participants provided written informed consent prior to their first visit and also prior to each session if they came for multiple sessions. Participants were paid 20$/hr for participation. Participants were recruited via ads on social media (Facebook and Instagram).
 
@@ -148,80 +158,135 @@ Sixty-two full-term, typically developing infants were recruited. Twelve partici
 
 Data exclusion criteria: We excluded participants who had less than 20 valid epochs (1.1667 s/epoch) per category, had noise/muscular artifacts during the EEG recordings, couldn’t record data, or had no visual responses over the occipital electrodes. As such, we excluded (i) five infants due to an insufficient number of epochs, (ii) two infants who had no visual responses, (iii) ten infants due to technical issues during data collection, and (iv) three adults due to excessive noise/muscular artifacts during EEG. In total, we report data from 45 infants (Appendix 1—table 1) and 20 adults (13 females, 19–38 years) that met inclusion criteria.
 
-## Visual stimuli
+### Visual stimuli
 
 Natural grayscale images of adult faces, limbs, corridors, characters, and cars are used as stimuli, with 144 images per category from the fLOC image database (https://github.com/VPNL/fLoc, copy archived at Yan, 2024; Stigliani et al., 2015). The size, view, and retinal position of the items varied, and the items were overlaid on phase-scrambled backgrounds that were generated from a randomly drawn image in the stimulus set. The images were also controlled for multiple low-level differences between stimuli of different categories including their luminance, contrast, similarity, and spatial frequency power distributions using the SHINE toolbox (Willenbockel et al., 2010). As only five of ten categories from Stigliani et al., 2015, were used, we evaluated the stimuli used in our experiments to test if they differed in (i) contrast, (ii) luminance, (iii) similarity, and (iv) spatial frequency. Results show that categories were largely matched on most metrics (Figure 1B and Appendix). The stimuli were presented on a gamma-corrected OLED monitor screen (SONY PVM-2451; SONY Corporation, Tokyo Japan) at a screen resolution of 1920 ×1080 pixels and a monitor refresh rate of 60 Hz. When viewed from 70 cm away, each image extended a visual angle of approximately 12°.
 
-## EEG protocol
+### EEG protocol
 
 The experiments were conducted in a calm, dimly illuminated lab room. Stimuli were presented using custom stimulus presentation software with millisecond timing precision. During testing, infant participants were seated on their parent’s laps in front of the screen at a distance of 70 cm. One experimenter stood behind the presentation screen to monitor where the infant was looking. The visual presentation was paused if the infant looked away from the screen and was continued when the infant looked again at the center of the screen. To motivate infants to fixate and look at the screen, we presented at the center of the screen small (~1°) colored cartoon images such as butterflies, flowers, and ladybugs. They were presented in random order with durations uniformly distributed between 1 and 1.5 s. For adults, we used a fixation cross of the same size instead of the cartoons and asked the participants to fixate and indicate when the fixation’s color changed by pressing a space bar key on a keyboard. EEG measurements for infant participants continued until the infant no longer attended the screen and we obtained between 2 and 12 different 70 s sequences per individual. For adult participants, we acquired 12 sequences per individual.
 
 A frequency-tagging paradigm (de Heering and Rossion, 2015; Farzin et al., 2012) was used to measure brain responses. In the experiment, randomly selected images from five categories were presented sequentially at a rate of 4.286 Hz (~233 ms per image) with no inter stimulus interval during each 70 s sequence. For each condition, one category was determined as the target category; for this category random selected images from that category were presented first and followed by four images randomly drawn from the other four categories with no regular order (Figure 1A). The target images are therefore presented periodically at 0.857 Hz (i.e. 4.286 Hz/5), but the intervals between sequential presentations of images from the other four categories was not periodic. The probability of image occurrences across categories was equal at 20%. The experiment had five conditions, one for each of the following target categories: faces, limbs, corridors, characters, and cars. Each 70 s experimental sequence was composed of five 14 s long conditions which included a 1.1667 s stimulus fade-in and a 1.1667 s stimulus fade-out. The order of the category conditions was randomized within each 70 s sequence. No image was repeated within a sequence. Two presentation frequencies were embedded in the experiment: (i) the image frequency (4.286 Hz), which is predicted to elicit visual responses to all stimuli over occipital visual cortex, and, (ii) the category frequency (0.857 Hz), which is predicted to elicit a category-selective response over lateral occipital-temporal electrodes.
 
-## EEG acquisition
+### EEG acquisition
 
 EEG data were recorded at 500 Hz from a 128-channel EGI High-Density Geodesic Sensor Net. For infants, the net was connected to a NetAmps 300 amplifier (Electrical Geodesics, Inc, Eugene, OR, USA). For the adults, the net was connected to a NetAmps400 amplifier. The EEG recording was referenced online to a single vertex (electrode Cz) and the channel impedance was kept below 50 KΩ.
 
-## Pre-processing
+### Pre-processing
 
 EEG recordings were down-sampled to 420 Hz and were filtered using a 0.03–50 Hz bandpass filter with custom signal processing software. Artifact rejection was performed in two steps. For infants, first, channels with more than 20% of samples exceeding a 100–150 μV amplitude threshold were replaced with the average amplitude of its six nearest-neighbor channels. The continuous EEG signals were then re-referenced to the common average of all channels and segmented into 1166.7 ms epochs (i.e. duration of five stimuli starting with a target category image followed with four images drawn from the rest four categories). Epochs with more than 15% of time samples exceeding threshold (150–200 μV) were excluded further on a channel-by-channel basis (Norcia et al., 2017). For adults, the two-step artifact rejection was performed with different criteria as EEG response amplitudes are lower in adults than infants (Norcia et al., 2017). EEG channels with more than 15% of samples exceeding a 30 μV amplitude threshold were replaced by the average value of their neighboring channels. Then the EEG signals were re-referenced to the common average of all channels and segmented into 1.1667 s epochs. Epochs with more than 10% of time samples exceeding threshold (30–80 μV) were excluded on a channel-by-channel basis (Kohler et al., 2020).
 
 Appendix 1—table 2 shows the number of epochs (1.1667 s each) we acquired before and after data pre-processing summing across all five categories. We used data after pre-processing for further analyses. There was no significant difference in the number of pre-processed epochs across infant age groups (F(3,57) = 1.5, p=0.2). The number of electrodes being interpolated for each age group were 10.0±4.8 for 3- to 4-month-olds, 9.9 ± 3.7 for 4- to 6-month-olds, 9.9 ±3.9 for 6- to 8-month-olds, and 7.7 ±4.7 for 12- to 15-month-olds. There was no significant difference in the number of electrodes being interpolated across infant age groups (F(3,55) = 0.78, p=0.51).
 
-## Univariate EEG analyses
+### Univariate EEG analyses
 
 Both image-update and categorical EEG visual responses are reported in the frequency and time domain over three ROIs: two occipito-temporal ROIs (LOT: channels 57, 58, 59, 63, 64, 65, and 68; ROT channels: 90, 91, 94, 95, 96, 99, and 100) and one occipital ROI (channels 69, 70, 71, 74, 75, 76, 82, 83, and 89). These ROIs were selected a priori based on a previously published study (Xie et al., 2019). We further removed several channels in these ROIs for two reasons: (i) Three outer rim channels (i.e. 73, 81, and 88) were not included in the occipital ROI for further data analysis for both infant and adult participants because they were consistently noisy. (ii) Three channels (66, 72, and 84) in the occipital ROI, one channel (50) in the LOT ROI, and one channel (101) in the ROT ROI were removed because they did not show substantial responses in the group-level analyses.
 
-## Frequency domain analysis
+#### Frequency domain analysis
 
 Individual participant’s pre-processed EEG signals for each stimulus condition were averaged over two consecutive epochs (2.3334 s). The averaged time courses for each participant were then converted to the frequency domain at a frequency resolution of 0.4286 Hz via a discrete Fourier transform (DFT). The frequency bins of interest are at exactly every other bin in the frequency spectrum. The real and imaginary Fourier coefficients for each of the categorical and image-update responses for each condition were averaged across participants (vector averaging) to obtain a group-level estimate. The amplitudes of response were then computed from the coherently averaged vector. Hotelling’s T2 statistic (Victor and Mast, 1991) was used to test whether response amplitudes were significantly different from zero. We used Benjamini’s & Hochberg’s FDR procedure to correct for multiple comparisons.
 
-## Image-update visual responses (image frequency)
+##### Image-update visual responses (image frequency)
 
 The amplitude and phase of the evoked response at the image presentation rate and its first three harmonics (4.286 Hz, 8.571 Hz, 12.857 Hz, and 17.143 Hz).
 
-## Categorical responses (category frequency)
+##### Categorical responses (category frequency)
 
 The amplitude and phase of the response at the category repetition frequency and its second harmonic (0.857 Hz, 1.714 Hz) for each category condition.
 
-## Time domain analyses
+### Time domain analyses
 
 Pre-processed time domain EEG signals of each participant were low-passed filtered with a 30 Hz cut-off. The raw EEG signals contain many components including categorical responses (0.857 Hz and harmonics), general visual responses (4.286 Hz and harmonics), and noise. To separate out the temporal waveforms of these two responses, we first transformed the epoch-averaged (2.3334 s) time series of each condition into frequency domain using a DFT. Then, we used an inverse DFT to transform back to the time domain keeping only the responses at the category frequency and its harmonics, zeroing the other frequencies. The same approach was used to separate the visual responses by using an inverse DFT transform of the responses at 4.286 Hz and harmonics.
 
-## Categorical responses
+### Categorical responses
 
 We kept responses at frequencies of interest (0.857 Hz and its harmonics up to 30 Hz, excluding the harmonic frequencies that overlapped with the image frequency and its harmonics) and zeroed responses in other frequencies. Then we applied an inverse Fourier transform to transform the data to the time domain. We further segmented the time series into 1.1667 s epochs and averaged across these epochs for each condition and individual. The mean and standard error across participants were computed for each condition at each time point.
 
-## Image-update visual responses
+### Image-update visual responses
 
 A similar procedure was performed except that frequencies of interest are 4.286 Hz and its harmonics, and the rest were zeroed. As temporal waveforms for image-update responses were similar across different category conditions, we averaged waveforms across all five conditions and report the mean response (Figure 2).
 
-## Statistical analyses
+### Statistical analyses
 
 To determine time windows in which amplitudes were significantly different from zero for each condition, we used a cluster-based nonparametric permutation t-test, 10,000 permutations, with a threshold of p<0.05, two-tailed on the post-stimulus onset time points (0–1167 ms) (Appelbaum et al., 2006; Blair and Karniski, 1993). The null hypothesis is that the evoked waveforms are not different from zero at any time point. For each permutation, we assigned random signs to the data of individual participants and computed the group-level difference against zero using a t-test. We then calculated the cluster-level statistic as the sum of t-values in the consecutive time points with p-values less than 0.05 (Maris and Oostenveld, 2007). We calculated the maximum cluster-level statistic for each permutation to generate a nonparametric reference distribution of cluster-level statistics. We rejected the null hypothesis if the cluster-level statistic for any consecutive time points in the original data was larger than 97.5% or smaller than 2.5% of the values in the null distribution.
 
-## Decoding analyses
+### Decoding analyses
 
-## Group level
+#### Group level
 
 We used an LOOCV classifier to test if spatiotemporal responses patterns to each of the five categories were reliable across participants. The classifier was trained on averaged data from N–1 participants and tested on how well it predicted the category the left-out participant was viewing from their brain activations. This procedure was repeated for each left-out participant. We calculated the averaged category temporal waveform for each category across channels of our three ROIs: seven LOT, nine occipital, and seven ROT, as the exact location of the channels varies across individuals. Then, we concatenated the waveform from the three ROIs to form a spatiotemporal response vector (Figure 5A). At each iteration, the LOOCV classifier computed the correlation between each of the five category vectors from the left-out participant (test data, for an unknown stimulus) and each of the mean spatiotemporal vectors across the N–1 participants (training data, labeled data). The winner-take-all classifier classifies the test vector to the category of the training vector that yields the highest correlation with the training vector (Figure 5A). For a given test pattern, correct classification yields a score of 1 and an incorrect classification yields a score of 0. For each left-out infant, we computed the percentage correct across all categories, and then the mean decoding performance across all participants in an age group (Figure 5B).
 
-## Individual level
+#### Individual level
 
 Similar to group level with two differences: (i) All analyses were done within an individual using a split-half approach. That is, the classifier was trained on one half of the data (i.e. odd or even trials) and tested on the other half of the data. (ii) Spatiotemporal patterns for each category used the concatenated waveforms across 23 channels spanning the occipital and bilateral occipitotemporal ROIs.
 
-## Category distinctiveness (Nordt et al., 2023)
+#### Category distinctiveness (Nordt et al., 2023)
 
 Category distinctiveness is defined as the difference between the similarity (correlation coefficient) of spatiotemporal responses within a category across odd and even splits using different images and the average between-category similarity of spatiotemporal responses across odd and even splits (Nordt et al., 2023). Distinctiveness is higher when the within-category similarity is positive and the between-category similarity is negative and varies from –2 (no category information) to 2 (maximal category information). We computed category distinctiveness for each of the five categories as in each infant and determined if it varied from 3 to 15 months of age.
 
-## Statistical analyses of developmental effects
+### Statistical analyses of developmental effects
 
 To quantify developmental effects, we used LMMs (Bosker and Snijders, 2011), with the ‘fitlme’ function in MATLAB version 2021b (MathWorks, Inc). LMMs allow explicit modeling of both within-subject effects (e.g. longitudinal measurements) and between-subject effects (e.g. cross-sectional data) with unequal number of points per participants, as well as examine main and interactive effects of both continuous (age) and categorical (e.g. stimulus category) variables. We used random-intercept models that allow the intercept to vary across participants (term: 1|participant). In all LMMs, we measured development as a function of log 10(age in days) as development is typically faster earlier on. Indirect evidence comes from neuroimaging and post-mortem studies showing that the structural development of infants’ brains is nonlinear, with development in the first 2 years being rapid, especially the first year (Gilmore et al., 2018).
 
 We report slope (rate of development), interaction effects, and their significance. Table 1 summarizes LMMs used in this study.
 
-## Analysis of noise
+**Table 1.**
+ Linear mixed models (LMMs).
 
-To test whether EEG noise levels vary with age, e.g. whether noise in the EEG data is larger in the younger infants than older ones, we quantified the response amplitudes in the occipital ROI in the frequency domain, at frequency bins next to the category and image frequency bins (white bars in Figure 2A–D, right panel). The noise level was quantified as the amplitude of response up to 8.571 Hz excluding image presentation frequencies (4.286 Hz and harmonics) and category frequencies (0.857 Hz and harmonics) as this frequency range includes the relevant main harmonics (Figure 2E). We used a LMM to test if noise varies with age, with participant as a random effect:Noiseamplitude∼ 1+log10(ageindays)+(1|participant)
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>LMM formula</th>
+      <th>Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peak latency: latency of the peak waveform in each time window; window 1: 60–90 ms or window 2: 90–160 ms for 3- to 4-month-olds, and 90–110 ms for other age groups</td>
+      <td>Peak latency ~1 + log10(age in days)×time window + (1|participant)</td>
+      <td>Figure 2G.Appendix 1—table 4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Peak latency ~1 + log10(age in days) + (1|participant)</td>
+      <td>Figure 2H. Appendix 1—table 5</td>
+    </tr>
+    <tr>
+      <td>Category-selective response amplitude:root mean square (RMS) of category-selective response at category frequency (0.857 Hz) and its first harmonic (1.714 Hz)</td>
+      <td>Response amplitude ~1 + log10(age in days)×category + (1|participant)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peak amplitude: peak response in a 400–700 ms time window</td>
+      <td>Peak amplitude ~1 + log10(age in days)×category + (1|participant)</td>
+      <td>Appendix 1—table 7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Peak amplitude ~1 + log10(age in days) + (1|participant)</td>
+      <td>Figure 4. Appendix 1—table 8</td>
+    </tr>
+    <tr>
+      <td>Category distinctiveness of spatiotemporal responses for each of the five categories</td>
+      <td>Category distinctiveness ~log10(age in days)×category + (1|participant)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Category distinctiveness ~log10(age in days) + (1|participant)</td>
+      <td>Figure 6B</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Analysis of noise
+
+To test whether EEG noise levels vary with age, e.g. whether noise in the EEG data is larger in the younger infants than older ones, we quantified the response amplitudes in the occipital ROI in the frequency domain, at frequency bins next to the category and image frequency bins (white bars in Figure 2A–D, right panel). The noise level was quantified as the amplitude of response up to 8.571 Hz excluding image presentation frequencies (4.286 Hz and harmonics) and category frequencies (0.857 Hz and harmonics) as this frequency range includes the relevant main harmonics (Figure 2E). We used a LMM to test if noise varies with age, with participant as a random effect:
+
+$$
+Noiseamplitude∼ 1+log10(ageindays)+(1|participant)
+$$
 
 We found no significant differences in noise amplitude across infant age groups (Figure 2E, mean amplitude across the first five noise bins: βage = –0.005, 95% CI: –0.12 to –0.11, t(59) = –0.09, p=0.93; mean noise across the first 10 bins: βage = .04, 95% CI: –0.03 to –0.12, t(59) = 1.16, p=0.25, LMMs with age (log transformed) as fixed effects and participant as a random effect).

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.40671.001 The right temporo-parietal junction (rTPJ) has been proposed to play a key role in guiding human altruistic behavior, but its precise functional contribution to altruism remains unclear. We aimed to disentangle three possible functions of the rTPJ for human altruism, namely: implementing the motivation to help, signaling conflicts between moral and material values, or representing social reputation concerns. Our novel donation-decision task consisted of decisions requiring trade-offs of either positive moral values and monetary cost when donating to a good cause, or negative moral values and monetary benefits when sending money to a bad cause. Disrupting the rTPJ using transcranial magnetic stimulation did not change the general motivation to give or to react to social reputation cues, but specifically reduced the behavioral impact of moral-material conflicts. These findings reveal that signaling moral-material conflict is a core rTPJ mechanism that may contribute to a variety of human moral behaviors.
+The right temporo-parietal junction (rTPJ) has been proposed to play a key role in guiding human altruistic behavior, but its precise functional contribution to altruism remains unclear. We aimed to disentangle three possible functions of the rTPJ for human altruism, namely: implementing the motivation to help, signaling conflicts between moral and material values, or representing social reputation concerns. Our novel donation-decision task consisted of decisions requiring trade-offs of either positive moral values and monetary cost when donating to a good cause, or negative moral values and monetary benefits when sending money to a bad cause. Disrupting the rTPJ using transcranial magnetic stimulation did not change the general motivation to give or to react to social reputation cues, but specifically reduced the behavioral impact of moral-material conflicts. These findings reveal that signaling moral-material conflict is a core rTPJ mechanism that may contribute to a variety of human moral behaviors.
 
 ## Introduction
 
@@ -29,6 +29,20 @@ In the present study, we focus on the rTPJ, a brain area thought to contribute t
 
 To test the predictions of these three accounts, we employed a novel paradigm (Figure 1) requiring participants to accept or reject monetary transfers to two organizations (supporting morally ‘good’ or ‘bad’ causes) that were coupled with changes in the participants’ financial payoff. One of these organizations was a charity perceived as having a high moral value that should be supported. Monetary transfers to this organization were coupled with a variable monetary cost to the participants (deducted from their initial endowment; see Figure 1 and materials and methods). Choices about transfers to this organization therefore required a comparison of the moral benefit of the transfer with the conflicting monetary cost. The other organization had a negative moral value that participants did not agree with, but transfers to this organization were coupled with a monetary payment to the subject. That is, participants had to weigh the moral cost of the transfer to the bad organization versus the conflicting personal financial benefit resulting from it. Additionally, both types of decisions were coupled with an audience manipulation to facilitate an ‘audience effect’: on half of the trials, an observer could see choices made by the participant, whereas choices were fully private on the other half of the trials. Concerns about the effects of the donation on social reputation should therefore be mainly prominent in the condition where choices were being watched by another person. This paradigm allowed us to compare opposing predictions of the three accounts given above, based on a rich literature proposing these different functions for the rTPJ in human altruistic behavior.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40671/elife-40671-fig1-v1.jpg)
+
+**Figure 1.:** (A) Presentation of moral context and public trial conditions, with green leaf logo from ‘Bread for all’ organization; (B) presentation of immoral context and private trial conditions, showing the ‘Lewas’ organization logo. (C) It shows the trial distribution of the moral context and D the trial distribution of the immoral context.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40671/elife-40671-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Every participant rated both organizations based on familiarity (‘How much do you understand and are familiar with the organization?”), monetary implication (‘Will you contribute with your own money for the organization profit?”), personal implication (‘Will you use your own resources (personal time, effort, participate in activities, publicity…) to help the organization?”), empathy (‘How attached or close you feel to the organization?”) and friend´s empathy (‘How attached or close do you think your friends will be to the organization?”).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40671/elife-40671-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** For both stimulation groups, public versus private choices led to similar increased donations to the good organization and similar decreased donations to the bad organization. The audience effect was obtained by subtracting the number of accepted choices in the public minus the private context, separately for each organization type and stimulation group. While an Audience effect was found in the full regression model (Audience coefficient = 0.51; p = 0.043), no Group x Audience interaction was found (Audience x cTBS coefficient = 0.04; p = 0.78).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40671/elife-40671-fig1-figsupp3-v1.jpg)
+
 As for the first account, many recent findings are consistent with the interpretation that the rTPJ underlies other-regarding motivation during choices to do good to others. For instances, several studies have reported TPJ activation during choices to help others even though this is personally costly (Hare et al., 2010; Hutcherson et al., 2015); moreover, TPJ was significantly activated when participants chose to help others by showing social inclusion (van der Meulen et al., 2016) or by refraining from punishment (Will et al., 2015). Several of these reports show that the larger the TPJ activation (experimentally manipulated by different characteristics of the other person, that is, social distance), the more willing participants are to share money with the other person (Hare et al., 2010; Hutcherson et al., 2015; Strombach et al., 2015). Overall, these findings are consistent with the idea that TPJ activity underlies the motivation for other-regarding choices to help. This account would therefore predict that TMS should bias participants to transfer less money to either ‘good’ or ‘bad’ recipients, reflecting a reduced general motivation to help.
 
 The second account relates to the potential role of the rTPJ in signaling conflicts between moral and material interests during helping decisions. For instance, the rTPJ has been reported to be most active for donation decisions that were associated with the maximum financial cost each individual was willing to pay for the transfer; the TPJ was less active for the same donations when they cost less and were thus accepted or when they cost more and were not accepted (Morishima et al., 2012). If TPJ activity thus serves to signal the conflict associated with the material cost/benefit of the donation, then TMS-related reductions of this conflict signal may lead subjects to require more conflicting information in order to switch away from the default response (giving to the worthy cause and not giving to the unworthy cause). In other words, subjects with TMS-related disruption of the TPJ should require a higher financial cost before not accepting donations to a good cause, or higher financial compensation before accepting donations to a morally bad cause. This behavioral prediction clearly differs from that of the first account, which would predict higher acceptance of transfers to both morally good or bad organizations. However, the predictions of the conflict account would be consistent with existing proposals that specific brain networks may bias conflict between moral values and material benefits, as documented for stimulation of prefrontal cortex during honesty (Maréchal et al., 2017) or fairness-related behaviors (Knoch et al., 2006).
@@ -39,9 +53,17 @@ To test these three competing predictions, we used continuous theta-burst stimul
 
 ## Results
 
-## Behavioral experiment
+### Behavioral experiment
 
 In an initial pilot experiment, 20 participants rated the moral value of 10 different, real organizations operating in Switzerland. We selected the two organizations that were most consistently judged as having morally ‘right’ or ‘wrong’ objectives (Likert scale −7 - + 7; cut-off ±4). One organization was ‘Bread for all’ (www.brotfueralle.ch), which fights against starvation in underdeveloped countries. The other organization, called ‘Lewas’ (www.lewas.ch), intends to expand population use of weapons. Importantly, both groups did not differ in how they valued the organizations (see Figure 1—figure supplement 1). Moreover, the ratings show that participants were clearly motivated to financially support the good organization and to not support the bad organization (as also evident in their default responses at the lower right-hand corner of the heatmaps in Figures 2 and 3 below).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40671/elife-40671-fig2-v1.jpg)
+
+**Figure 2.:** Trials relative to both audience conditions (public/private) are shown. The black line represents the control group’s responses at which donations were accepted with 50% probability for each given cost level. Vertical bar indicates the number of times a response was selected, that is one per subject.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40671/elife-40671-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40671/elife-40671-fig2-figsupp2-v1.jpg)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40671/elife-40671-fig3-v1.jpg)
 
@@ -49,9 +71,88 @@ In an initial pilot experiment, 20 participants rated the moral value of 10 diff
 
 With these organizations included in our task design, we tested the rTPJ contributions to moral decisions by comparing choice behavior across two groups. One of these received cTBS over the rTPJ and the other over the vertex, to control for unspecific side-effects of TMS. To eliminate potential learning of moral decisions, we kept the two cTBS groups independent. Because our experimental setting could in principle induce physical consequences such as fatigue or headache, we also evaluated mood changes from prior to after the experiment (Multidimensional Mood State Questionnaire, MMSQ). We found no significant differences between both cTBS groups (see Supplementary file 1).
 
-## rTPJ stimulation leads to an increased impact of moral values.
+### rTPJ stimulation leads to an increased impact of moral values.
 
-Figures 2 and 3 show the choice outcomes (proportion of accepted donations) for transfers to the good and the bad organization, respectively. These choice outcomes already show that participants by default were motivated to give to the good organization and to not give to the bad organization: when donations were large and associated with only minimal material consequences for participants themselves, all donations to the good organization were accepted and all donations to the bad organization were rejected (see lower right-hand corner of the heatmaps in Figures 2 and 3, respectively). Participants started to systematically switch away from this default response when transfers were coupled with larger material consequences for themselves, and these switching points were affected by the cTBS. To quantify these effects, we employed mixed-effect logistic regression to calculate how cTBS effects modulated participants’ choices in the moral (‘good organization’) and immoral (‘bad organization’) contexts, depending on all choice parameters (the participants’ monetary loss in the moral context or their monetary gain in the immoral context, the gain for the organization, the effect of cTBS, and the interaction between cTBS and the gain of the organization and cTBS). The model predicted the subject’s probability P(accept) of accepting each specific offer during the donation task (Table 1) based on the offer’s potential monetary value Vs (loss in the moral context or gain in the immoral context) to the subject and the gain Go for the organization on each trial. We set up separate models for choices concerning the good organization versus the bad organization, since these choices were paired in our design with diametrically opposite material consequences (material costs versus material gains, respectively). This required separate models with different regressors (resulting in parameter estimates of opposite valence). Our predictions took the following form (Equation 1):(1)P(accept)=β0+β1∗Vs+β2∗Go+β3∗cTBS+β4∗GoxcTBS
+Figures 2 and 3 show the choice outcomes (proportion of accepted donations) for transfers to the good and the bad organization, respectively. These choice outcomes already show that participants by default were motivated to give to the good organization and to not give to the bad organization: when donations were large and associated with only minimal material consequences for participants themselves, all donations to the good organization were accepted and all donations to the bad organization were rejected (see lower right-hand corner of the heatmaps in Figures 2 and 3, respectively). Participants started to systematically switch away from this default response when transfers were coupled with larger material consequences for themselves, and these switching points were affected by the cTBS. To quantify these effects, we employed mixed-effect logistic regression to calculate how cTBS effects modulated participants’ choices in the moral (‘good organization’) and immoral (‘bad organization’) contexts, depending on all choice parameters (the participants’ monetary loss in the moral context or their monetary gain in the immoral context, the gain for the organization, the effect of cTBS, and the interaction between cTBS and the gain of the organization and cTBS). The model predicted the subject’s probability P(accept) of accepting each specific offer during the donation task (Table 1) based on the offer’s potential monetary value Vs (loss in the moral context or gain in the immoral context) to the subject and the gain Go for the organization on each trial. We set up separate models for choices concerning the good organization versus the bad organization, since these choices were paired in our design with diametrically opposite material consequences (material costs versus material gains, respectively). This required separate models with different regressors (resulting in parameter estimates of opposite valence). Our predictions took the following form (Equation 1):
+
+$$
+P(accept)=\beta_{0}+\beta_{1}∗V_{s}+\beta_{2}∗Go+\beta_{3}∗cTBS+\beta_{4}∗GoxcTBS
+$$
+
+**Table 1.**
+ Regression model results.A, good organization; B, bad organization.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>(A)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Coefficient</th>
+      <th>Std. error</th>
+      <th>Z</th>
+      <th>P&gt;|z|</th>
+      <th colspan="2">95% Conf. Interval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Subject loss</td>
+      <td>−0.7989</td>
+      <td>0.0226</td>
+      <td>35.3</td>
+      <td>0.0001</td>
+      <td>0.7546</td>
+      <td>0.8433</td>
+    </tr>
+    <tr>
+      <td>Organization gain</td>
+      <td>0.1449</td>
+      <td>0.0120</td>
+      <td>12.04</td>
+      <td>0.0001</td>
+      <td>0.1213</td>
+      <td>0.1684</td>
+    </tr>
+    <tr>
+      <td>cTBS</td>
+      <td>1.3760</td>
+      <td>0.5994</td>
+      <td>2.3</td>
+      <td>0.022</td>
+      <td>0.2011</td>
+      <td>2.5509</td>
+    </tr>
+    <tr>
+      <td>Gain organizationxcTBS</td>
+      <td>−0.0086</td>
+      <td>0.0075</td>
+      <td>−1.14</td>
+      <td>0.254</td>
+      <td>−0.0233</td>
+      <td>0.0061</td>
+    </tr>
+    <tr>
+      <td>constant</td>
+      <td>0.2288</td>
+      <td>0.4353</td>
+      <td>0.53</td>
+      <td>0.599</td>
+      <td>−0.6244</td>
+      <td>1.0820</td>
+    </tr>
+  </tbody>
+</table>
+
+_Table 1(A):Equation 1: logit (prob. accept) = βo + β1*GS + β2*GO + α0*cTBS + α1*cTBS*GONumber of obs = 5800; Number of participants = 29; Obs per group: min = 200; max = 200; avg. = 200Integration points = 7, Wald chi2(4)=1342.55Log Likelihood = −1948.13, Prob > chi2=0.00001Estimate: 1.65; Standard error: 0.21; cTBS: groupTable 1(B):Number of obs = 5800; Number of participants = 29; Obs per group: min = 200; max = 200; avg. = 200Integration points = 7, Wald chi2(4)=1294.59Log Likelihood = −1902.89, Prob > chi2=0.00001Estimate: 1.68; Standard error: 0.25; cTBS: group_
 
 where Vs is the monetary consequence of the transfer (material loss for good organizations or material gain for bad organizations), Go is the gain for the organization, and cTBS is a dummy variable indicating stimulation group. Employing this approach, we found that in the good moral context, rTPJ stimulation increased the probability that participants accepted a given donation paired with a given monetary loss (cTBS Group coefficient = 1.37; p = 0.02; Figure 2 and Table 1A). In other words, disruption of rTPJ functioning led participants to reduce monetary self-interest and to give away significantly more than the control group. In Figure 2, the black line represents the control group’s indifference line at which donations were accepted with 50% probability for each given cost level; the significant change in the likelihood to accept is represented by a shift in this line between the TMS groups. Thus, this figure shows that for all possible donations levels, rTPJ stimulation lead participants to require a significantly higher cost to decide to switch away from their morally prescribed default to accept payments to the good organization.
 
@@ -59,13 +160,13 @@ In the bad moral context, rTPJ cTBS had a very different overall effect, since i
 
 Overall, the cTBS effects on donation decisions are therefore inconsistent with the predictions of the ‘other-regarding motivation’ account, which would have predicted that cTBS leads to an overall decreased motivation to help and therefore lower levels of donations in both contexts. Instead, the pattern of results is consistent with the predictions of the ‘conflict’ account, since cTBS appeared to have lowered the behavioral impact of the conflict between moral and material values, leading participants in both contexts to require a higher financial consequence (cost/benefit) to switch away from their morally motivated default choice (giving/not giving to the good/bad organization, respectively; cf. Figures 2 and 3).
 
-## Reputation-based behavior is not affected by rTPJ stimulation
+### Reputation-based behavior is not affected by rTPJ stimulation
 
 It is well established that prosocial behavior is increased when people know they are watched by others, which is often interpreted as reflecting reputation concerns (Ariely et al., 2009; Izuma, 2012; Izuma et al., 2011; Izuma et al., 2010). These reputation concerns may rely on the TPJ, in line with its presumed role in representing what others think our intentions are (Saxe and Kanwisher, 2003). However, although our data do reveal an audience effect presumably driven by reputation concerns, our analysis shows that this effect is not modulated by cTBS (Figure 1—figure supplement 2). We did not observe an interaction between cTBS and the audience condition, neither in the moral (cTBSxAudience coefficient = 0.04; p = 0.78; Supplementary file 2A) nor the immoral context (cTBSxAudience coefficient = −0.08; p = 0.59; Supplementary file 2B). In other words, participants in both groups reacted similarly to being watched while taking the moral decisions, making it unlikely that the stimulation changed the motivation to engage in reputation-enhancing behaviors. This provides evidence that the rTPJ’s role in moral choices seems unrelated to the encoding of social reputation concerns.
 
 Together, our results indicate that cTBS over the rTPJ increased the weight participants assigned to moral values over conflicting monetary values, irrespective of whether this conflict arises in situations with or without reputation concerns. This is consistent with the notion that the rTPJ signals the degree with which material values conflict with the morally prescribed default option (giving to a good cause and not giving to a bad cause), since a stimulation-related reduction in this signal would lead to the pattern of increased/decreased donations to the good/bad organization we observed here.
 
-## Personality variables do not account for group differences
+### Personality variables do not account for group differences
 
 Traits, mood and social status are known to relate to an individual’s propensity to help altruistically (Guinote et al., 2015; Oda et al., 2014; Shaffer and Graziano, 1983). To rule out that our results may have been biased by differences in the personality of subjects in the different groups, we compared the groups in terms of their personality characteristics, social value orientation, and their willingness to help others (see materials and methods). The experimental groups did not differ in these personality measures (Supplementary file 1). Moreover, we directly controlled for personality and questionnaires’ influence in our statistical analysis, by repeating model 1 (Equation 1) with all personality covariates in Supplementary file 1 added as regressors. This showed similar results to the original model, as the effects of group remain significant (moral context: cTBS coefficient = 1.31; p = 0.02; immoral context: cTBSxGo coefficient = 3.14; p < 0.001). Thus, cTBS results in both moral and immoral contexts cannot be attributed to (non-significant) group differences in prosocial attitudes, social interaction preferences, social value orientation or impulsivity.
 
@@ -91,17 +192,17 @@ To conclude, our study provides insights into the causal role of the rTPJ in con
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 All data collection took place at the Laboratory for Social and Neural Systems research (SNS-Lab) at the University of Zurich, Switzerland. Thirty-two right-handed participants were included in the experiment. All of them were fluent English speakers recruited from the University of Zurich database and gave informed written consent in accordance with local ethics, approved by the Kantonale Ethikkommission Zürich (2010-0326/3). Participants were included in the study following established TMS safety procedures (Keel et al., 2001). Data of subjects with fixed responses (accept/reject every response) was not included in the analysis due to biased preferential responses. One subject was excluded prior to the study due to recent migraine symptoms and two others were excluded after the experiment as they showed the fixed response pattern of rejecting all trials in the task.
 
-## Experimental design
+### Experimental design
 
 A between-subject design was used with 16 participants receiving cTBS over the rTPJ (age: 19–30 y, mean: 23.0; nine women; mean cTBS intensity: 38%) and 16 participants over the vertex area as a control target (age: 20–27 y, mean: 23.0; eight women; mean cTBS intensity: 40%). Subjects allocated to each stimulation group following strict random assignment. Power calculations based on two previous studies using cTBS over the rTPJ in human decision-making tasks (Jeurissen et al., 2014; Young et al., 2010) suggested a minimum sample size of 12 and 17 participants respectively per group to be required for an 80% probability of finding a significant effect (a = 0.05). Hence, our design included a total of 32 participants to satisfy statistical requirements.
 
 To avoid potential habituation effects in donations during the charity task, we used a between-group design. Before the experiment, structural MRIs were obtained from all participants in a 3T scanner (181 sagittal slices, matrix size = 256 × 256, voxel size = 1 mm3, TR/TE/TI = 8.3/2.26/181 ms). Before the day of experiment, the participants completed an online survey with several questionnaires to evaluate prosocial and altruistic behaviors (see Supplementary material; Supplementary file 1). On the day of experiment, motor thresholds were obtained (see Supplementary material for details), followed by a mood questionnaire and organization ratings, task training, cTBS and task performance. The right TPJ was localized in each subject’s MRI based on mean coordinates obtained from previous meta-analysis of functional MRI studies showing brain activation during several social psychology tasks (coordinates obtained from a pooled meta-analysis: social interaction [53 -31 9]; false belief [45 -59 39]; theory of mind [47 -36 9]; Schurz et al., 2014). Coordinates were individually adjusted for each subject to fully match anatomical landmarks (rostral of the caudal fissure and anterior to the angular gyrus). This resulted in the following average coordinates: [MNI: 48–42 19]. The vertex was manually localized in each participant’s brain at the intersection between the midline and central sulcus. cTBS was administered with standard parameters (trains of 3 pulses at 50 Hz repeated every 200 ms; Huang et al., 2005) applied at 80% active motor thresholds from hand motor area (see Supplementary material for more TMS details). Immediately after the cTBS, participants performed the donation task, which lasted an average of 20.12 min (SD: 3.56, range 16–23) min.
 
-## Donation task
+### Donation task
 
 Participants decided whether to accept or reject donations to two different organizations, either in presence or absence of an observer (Figure 1A–B). One organization was ‘Bread for all’ (www.brotfueralle.ch), which fights against starvation in underdeveloped countries. The other organization, called ‘Lewas’ (www.lewas.ch), intends to expand the broader population use of weapons. Both are real organizations that operate in Switzerland; they were selected amongst 10 different Swiss organizations as being the most consistent in deservingness or non-deservingness to help (Likert scale −7 - +7; cut-off ±4) when tested in 20 participants from the same population. Participants received an initial endowment (100 CHF) that was modified after task completion: One public trial and one private trial were randomly selected at the end of task performance and the total payoff was modified (if trial was accepted) or not (if trial was rejected) by the corresponding monetary cost/benefit. The money going to the organization (if the trials were accepted) was sent by the experimenter and the participant received a written confirmation of the donation. Thus, participants knew their choices could let the experimenter send real money taken from the two random trials, which ensured incentive-compatibility of the choices.
 
@@ -115,15 +216,23 @@ A trial event (Figure 1A–B) was presented as follows. Initially, an offer prop
 
 The task was presented in blocks counterbalancing by organization and audience conditions. The same organization was presented during two blocks (one in public, one in private in counterbalanced order), then switched to the other organization in the two following blocks (counterbalanced by public and private conditions). Thus, each block presented 25 dilemmas from the 100 possible combinations. The task was designed in Presentation software (Neurobehavioral Systems).
 
-## Linear regression analysis
+### Linear regression analysis
 
 Separately for each organization, two models were fit to the data using mixed-effect regression analysis in STATA v.10. We set up separate models for choices concerning the good organization versus the bad organization, since these choices were paired in our design with diametrically opposite material consequences (material costs versus material gains, respectively). This required separate models with different regressors (resulting in parameter estimates of opposite valence). Each of the models predicted the probability of accepting an offer (logit), where model 1 (Equation 1, see results) tested the group’s difference in acceptance rates for each context and model 2 (Equation 2) the cTBS effects on the audience effect.
 
-The logit parameters in model 2 (Equation 2) test the likelihood of acceptance as influenced by the offer’s potential monetary value where Vs is the monetary consequence of the transfer (material loss for good organizations or material gain for bad organizations), Go is the gain for the organization, cTBS is a dummy variable indicating stimulation group, and audience is a dummy variable coding whether choices were observed or not.(2)P(accept)=β0+β1∗Vs+β2∗Go+β3∗Audience+β4∗cTBS+β5∗cTBSxAudience
+The logit parameters in model 2 (Equation 2) test the likelihood of acceptance as influenced by the offer’s potential monetary value where Vs is the monetary consequence of the transfer (material loss for good organizations or material gain for bad organizations), Go is the gain for the organization, cTBS is a dummy variable indicating stimulation group, and audience is a dummy variable coding whether choices were observed or not.
 
-Other models tested additional potential effects of cTBS on the decision variables. The full model took the following form and results presented in Supplementary file 3:(3)P(accept)=β0+β1∗Vs+β2∗Go+β3∗Audience+β4∗cTBS+β5∗cTBSxAudience+β6∗cTBSxVs+β7∗cTBSxGo
+$$
+P(accept)=\beta_{0}+\beta_{1}∗V_{s}+\beta_{2}∗Go+\beta_{3}∗Audience+\beta_{4}∗cTBS+\beta_{5}∗cTBSxAudience
+$$
 
-## TBS and MRI procedures
+Other models tested additional potential effects of cTBS on the decision variables. The full model took the following form and results presented in Supplementary file 3:
+
+$$
+P(accept)=\beta_{0}+\beta_{1}∗V_{s}+\beta_{2}∗Go+\beta_{3}∗Audience+\beta_{4}∗cTBS+\beta_{5}∗cTBSxAudience+\beta_{6}∗cTBSxV_{s}+\beta_{7}∗cTBSxGo
+$$
+
+### TBS and MRI procedures
 
 A Magstim super-rapid stimulator (Magstim, Whitland, Dyfed, UK) was used to stimulate both cortical sites using a 7 cm figure of eight-coil. To obtain each individual’s TBS stimulation, the coil was placed tangentially over the subject’s scalp with the handle pointing 45 degrees backwards and laterally over the right motor cortex. A quadricular grid was marked on each MRI using Brainsight over the hand motor region (located in the anterior portion of the central sulcus) to apply at least five pulses on each grid point and localize the most responding point to be selected as the hotspot. Responses to each grid point were measured by applying single pulses over the left hemisphere hand motor region and observing motor evoked potentials (MEPs) from the right first dorsal interosseous (FDI). The MEPs were triggered and continuously monitored by Brainsight amplifier with scalar feedback to ensure the pulses provoked clear. The stimulation coil was moved away from unresponsive grid points until a point showed consistent MEPs. Once the hotspot was selected, we asked subjects to activate their FDI by slightly pressing the thumb and index fingers to obtain their active motor threshold (AMT). The AMT was defined as the minimal stimulus intensity required to produce MEPs of ≥200 mV amplitude in ≥5 of 10 consecutive pulses.
 
@@ -131,12 +240,12 @@ After obtaining the stimulation output from the hotspot, a distance-correction f
 
 We used theta burst stimulation (TBS) applying repeated burst of 3 pulses at 50 Hz, known to deactivate the stimulated neurons during 30 min (Huang et al., 2005) when applied continuously. Every TBS burst was repeated at a 5 Hz rate resulting in 200 bursts with a total of 600 pulses. For TPJ TBS, the coil was placed with the handle perpendicular to the supramarginal gyrus anterior to TPJ (with the current going in the anterior to posterior direction) and for the vertex TBS it was held parallel to the midline. TBS was applied using online tracking system held by a robotic arm to guarantee correct placement during TBS period.
 
-## Individual differences
+### Individual differences
 
 Since the comparisons of interest were based between two groups of different subjects, we were aware of potential personality effects on our results. To check that the decisions were not influenced by individual differences in personality and predispositions for types of social behavior, we employed several questionnaires to measure the participants’ personality characteristics (International Personality Item Pool, IPIP), Machiavellism levels (Mach IV Scale), social orientation (Social Value Orientation, SVO), impulsiveness (Barratt impulsive scale- III) and their willingness to help others (Prosocial Personality Battery, PSB). Personality characteristics that could interfere with social interactions (such as fear of being observed) were also assessed (Social Interaction Anxiety Scale, SIAS). Finally, we designed a questionnaire to obtain precise information of subject’s beliefs about the experimental set-up (i.e. how observed they felt, how they perceived the cTBS, etc).
 
 Supplementary file 1 shows that groups had similar personality measures that did not differ significantly due to our randomization process. However, we directly tested the questionnaires influence in our statistical analysis in a repeated model 1 (Equation 1) but now adding all personality variables in Supplementary file 1 as regressors. The results show similar results to the original model where effects of group remain significant (moral context coefficient = 1.31; p = 0.02; amoral context TBSxGO coefficient = 3.14; p < 0.001). This confirms that the effects of TBS are real and significantly different between groups, and not due to any possible (non-significant) differences in personality measures.
 
-## Rating of organizations
+### Rating of organizations
 
 We obtained measures of each subject valuation of each organization to ensure no between-group differences coexisted in the behavioral results. Using a 7-likert scale, Familiarity, the monetary and personal implication, empathy and how subjects thought their friends will view the organizations. As expected, the good organization was rated higher overall than the bad organization (see Figure 1—figure supplement 1). Importantly, the valuation of organizations was not different between the cTBS and sham groups (F > 1).

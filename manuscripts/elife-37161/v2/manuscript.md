@@ -44,7 +44,7 @@
 
 ## Abstract
 
-10.7554/eLife.37161.001 Acquired resistance to endocrine therapy remains a significant clinical burden for breast cancer patients. Somatic mutations in the ESR1 (estrogen receptor alpha (ERα)) gene ligand-binding domain (LBD) represent a recognized mechanism of acquired resistance. Antiestrogens with improved efficacy versus tamoxifen might overcome the resistant phenotype in ER +breast cancers. Bazedoxifene (BZA) is a potent antiestrogen that is clinically approved for use in hormone replacement therapies. We found that BZA possesses improved inhibitory potency against the Y537S and D538G ERα mutants compared to tamoxifen and has additional inhibitory activity in combination with the CDK4/6 inhibitor palbociclib. In addition, comprehensive biophysical and structural biology studies show BZA’s selective estrogen receptor degrading (SERD) properties that override the stabilizing effects of the Y537S and D538G ERα mutations.
+Acquired resistance to endocrine therapy remains a significant clinical burden for breast cancer patients. Somatic mutations in the ESR1 (estrogen receptor alpha (ERα)) gene ligand-binding domain (LBD) represent a recognized mechanism of acquired resistance. Antiestrogens with improved efficacy versus tamoxifen might overcome the resistant phenotype in ER +breast cancers. Bazedoxifene (BZA) is a potent antiestrogen that is clinically approved for use in hormone replacement therapies. We found that BZA possesses improved inhibitory potency against the Y537S and D538G ERα mutants compared to tamoxifen and has additional inhibitory activity in combination with the CDK4/6 inhibitor palbociclib. In addition, comprehensive biophysical and structural biology studies show BZA’s selective estrogen receptor degrading (SERD) properties that override the stabilizing effects of the Y537S and D538G ERα mutations.
 
 ## Introduction
 
@@ -56,9 +56,45 @@ Here, we explore whether bazedoxifene (BZA), a potent antiestrogen that retains 
 
 In this study, breast cancer reporter gene assays reveal the inhibitory capacity of BZA against the ERα mutants compared to the SERM 4-hydroxytamoxifen (4-OHT) and SERD FULV in several ER+ breast cancer cell lines (MCF-7, ZR75, T47D). We further assessed the ability of BZA to induce the degradation of WT, Y537S, and D538G somatic mutant ERα in MCF7 cells. Additionally, because inhibitors of CDK4/6 combined with antiestrogens are approved for first-line therapy and beyond in metastatic ER+ breast cancers (Wardell et al., 2015a; Dean et al., 2010; Yang et al., 2017), we examined whether the CDK4/6 inhibitor, palbociclib, can be used in combination with BZA to enhance the inhibition of breast cancer cell proliferation. Importantly, comprehensive structural and biophysical studies provide additional molecular insights into the chemical differences between BZA, 4-OHT, and raloxifene (RAL, another SERM) that appear to underlie the SERD properties of BZA and its improved inhibitory efficacy against the Y537S and D538G mutants in breast cancer cells. Table 1 shows the chemical structures of the molecules examined in this study and summarizes their clinical indications.
 
+**Table 1.**
+ Competitive inhibitors of estrogen receptor alpha.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antiestrogen</th>
+      <th>Class</th>
+      <th>Approved clinical indications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4-Hydroxytamoxifen (4-OHT)</td>
+      <td>SERM</td>
+      <td>• Adjuvant treatment for ER + breast cancers (Early Breast Cancer Trialists' Collaborative Group., 1998). • Metastatic Breast Cancer (Lipton, 1982). • Ductal Carcinoma in Situ (Allred et al., 2012). • Reduction in Breast Cancer Incidence in High Risk Women (Visvanathan, 2009).</td>
+    </tr>
+    <tr>
+      <td>Raloxifene (RAL)</td>
+      <td>SERM</td>
+      <td>• Osteoporosis in postmenopausal women (Messalli and Scaffa, 2010). • Reduction in Breast Cancer Incidence in High Risk Women(Cauley et al., 2001).</td>
+    </tr>
+    <tr>
+      <td>Fulvestrant (FULV)</td>
+      <td>SERD</td>
+      <td>• First-line therapy for metastatic breast cancer (Howell et al., 2004). • Postmenopausal women with progressive breast cancer following other antiestrogen therapy (Osborne et al., 2002; Howell et al., 2002).</td>
+    </tr>
+    <tr>
+      <td>Bazedoxifene (BZA)</td>
+      <td>SERM/SERD</td>
+      <td>• In combination with conjugated equine estrogens (DUAVEE) to prevent postmenopausal osteoporosis (Tikoo and Gupta, 2015).</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Bazedoxifene displays SERD activity in MCF-7 cells that express WT ERα
+### Bazedoxifene displays SERD activity in MCF-7 cells that express WT ERα
 
 To assess the ability of BZA to inhibit WT ERα in breast cancer cells, we examined its impact on ERα transcriptional activity, degradation and cell growth in MCF-7 cells. 4-hydroxytamoxifen (4-OHT) was used as a representative SERM and FULV was used as a representative SERD (Figure 1). In MCF7 cells that expressed an ERE-luciferase reporter gene, BZA was a more potent inhibitor of WT ERα transcription than either 4-OHT or FULV (inhibition of luciferase IC50 for BZA = 0.12 nM, 4-OHT = 0.39 nM and FULV = 0.76 nM) (Figure 1A). To test the effect of BZA on endogenous WT ERα transcriptional activity, qPCR was used to quantify the relative mRNA levels of known ER target genes, including cyclin D1, c-myc, CA12, and GREB1, in MCF-7 cells treated with estradiol (E2) or with E2 in combination with BZA, 4-OHT or FULV at 10−8 and 10−6 M (antagonistic mode). For cyclin D1, 4-OHT increased the mRNA level at 10−8 M and showed little effect at 10−6M, while both FULV and BZA decreased mRNA levels at 10−6 M (Figure 1B). The agonist activity of tamoxifen at high concentrations has been described previously (Horwitz et al., 1978). BZA increased c-myc mRNA levels at 10−8 M while it significantly decreased c-myc mRNA at 10−6 M (Figure 1C). Presumably, this effect is similar to the behavior of low-level tamoxifen stimulation and merits further examination. Interestingly, 10−6 M BZA showed the greatest reduction in mRNA levels of both CA12 and GREB compared to 4-OHT and FULV (Figure 1D and E).
 
@@ -68,13 +104,25 @@ To assess the ability of BZA to inhibit WT ERα in breast cancer cells, we exami
 
 As BZA was shown to behave as a SERM/SERD in previous studies (Wardell et al., 2013a; Lewis-Wambi et al., 2011), we next tested the activity of BZA as an inducer of ERα degradation and observed dose-dependent ER degradation in MCF7 cells. Overall, BZA mediated similar levels of ERα degradation compared to FULV (Figure 1F). In terms of cell growth inhibition, BZA showed an improved IC50 compared to 4-OHT and in the same range as fulvestrant (BZA IC50 = 2.4×10−10 M, FULV IC50 = 3.1×10−10 M and 4-OHT IC50 = 1.19×10−9 M (Figure 1G). Together, these data indicate that BZA degrades WT ERα in breast cancer cells and is more effective at inhibiting ER transcription and cell growth than 4-OHT and FULV.
 
-## BZA is a potent inhibitor of activating somatic mutants of ERα in breast cancer cells
+### BZA is a potent inhibitor of activating somatic mutants of ERα in breast cancer cells
 
 We next tested the activity of BZA in MCF7 cells that ectopically expressed theY537S mutant ERα to determine the inhibition of Y537S mutant cell growth. BZA demonstrated an increased potency compared to FULV and 4-OHT, with an IC50 of 1 × 10−10 M vs 2 × 10−9 M and 7 × 10−9 M, respectively (Figure 2A). In addition, qPCR data showed that BZA inhibited the transcription of ERα target genes cyclin D1, c-Myc, and PR, in cells expressing the Y537S mutant, in a dose-dependent manner, confirming the on-target effects of BZA in the presence of the mutation (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cell growth in MCF-7 cells with DOX-induced Y537S ERα expression. (B) Inhibition of ERα target genes in DOX-induced Y537S ERα expressed MCF-7 cells with increasing doses of BZA. (C) Representative immunoblot of HA-ERα WT, 537S, or D538G treated with E2, 4-OHT, BZA, RAL, or FULV for 24 hr. (D) Representative counts of HA-ERα from the immunoblot normalized to actin.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Replicate immunoblot to that shown in Figure 1 probing for HA-ERα and actin in MCF-7 cells upon treatment. (B) Counts from immunoblot A normalized to actin. (C) Third replicate immunoblot to that shown in Figure 1 probing for HA-ERα and actin in MCF-7 cells upon treatment. (D) Counts from immunoblot C normalized to actin.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Numbers along the top indicate concentrations of BZA in nM.
+
 To evaluate the ability of BZA to induce WT and mutant ERα degradation in breast cancer cells, we treated MCF-7 cells that ectopically expressed HA-tagged WT, Y537S and D538G ERα with BZA and other ligands for comparison. Levels of WT and mutant ERα were quantified using immunoblots with an anti-HA antibody. Cells were treated with 10 nM E2, or 100 nM 4-OHT, 100 nM BZA, 100 nM RAL, 1 µM FULV or vehicle for 24 hr before immunostaining; 1 µM FULV was chosen because it was the minimal concentration necessary to achieve maximal ERα degradation. All data were normalized to vehicle-treated cells. In cells expressing HA-WT ERα, BZA and FULV induced degradation of the receptor to similar levels while the amount of the receptor increased upon 4-OHT treatment and was slightly reduced with E2 and RAL (Figure 2C and D). Interestingly, for the Y537S mutant, ERα expression remained unchanged for E2 and FULV, while it increased for 4-OHT and RAL. Y537S ERα also increased with BZA but less so than RAL or 4-OHT. Surprisingly, BZA degraded the D538G ERα mutant to a greater extent than FULV, while 4-OHT and RAL both increased its expression after 24 hr. It should be noted that BZA and FULV elicited consistent WT and mutant ERα degradation across all replicates Figure 2—figure supplement 1. However, 4-OHT and RAL elicited slight variations in the actin-normalized quantity of ERα after 24 hr. Because SERDs can possess differential activities between cell lines (Guan et al., 2018), we examined the ability of BZA to induce ERα degradation in T47D, ZR75-1, CAMA-1, and MDA-MB-361 cells between 25 and 100 nM (Figure 2—figure supplement 2). In each cell line, near complete degradation was observed at 25 nM BZA. Interestingly, in the T47D cells, an ERα band emerged at 100 nM BZA, suggesting that it is behaving more SERM-like at that concentration in that cell line. Overall, these data suggest that BZA degrades WT and D538G ERα in MCF7 cells, but that the Y537S mutant is resistant to degradation. However, the levels of Y537S ERα in the BZA-treated cells were still reduced compared to 4-OHT and RAL treatment, consistent with the reduced activities demonstrated by these compounds in MCF-7 reporter gene assays (Toy et al., 2013).
 
-## Dual treatment with BZA and palbociclib
+### Dual treatment with BZA and palbociclib
 
 CDK4/6 inhibitors have emerged as potent agents in the treatment of metastatic ER+ breast cancer in combination with endocrine treatment. Combined endocrine treatment with a CDK4/6 inhibitor is now the standard of care in either first- or second-line treatment of metastatic ER+ breast cancer (Wardell et al., 2015a; Dean et al., 2010; Yang et al., 2017). Because BZA showed increased activity over FULV and 4-OHT, we explored whether the activity of BZA combined with the CDK4/6 inhibitor, palbociclib (PB), in multiple ER positive cell lines (MCF-7, ZR75, T47D) and long-term, estrogen-deprived (LTED) ER +MCF7 cells that mimic resistance to aromatase inhibitors. For the first three cell lines, the combination of BZA and PB demonstrated the greatest arrest in cellular proliferation, whereas for the LTED cells it was comparable to PB+ FULV (Figure 3A–D). Additionally, reduced proliferation of MCF-7 cells expressing the Y537S mutant was observed for the BZA +PB treatment compared to all other treatments (Figure 3E and F). Transcriptional reporter gene assays in MCF7 cells showed that: 1. BZA had superior activity in the inhibition of ER transcriptional activity compared to fulvestrant. In addition, palbociclib does not affect ER transcriptional activity either as a single agent or in combination with BZA (Figure 3G and H). Similarly, immunoblotting for ER showed that treatment with PB does not affect BZA or FULV-induced degradation of ERα (Figure 3I). In sum, these data show that dual inhibition of CDK4/6 with PB and ERα with BZA is an effective combination with significant activity against breast cancer cells expressing WT or constitutively active mutant ERα.
 
@@ -82,7 +130,7 @@ CDK4/6 inhibitors have emerged as potent agents in the treatment of metastatic E
 
 **Figure 3.:** (A) Cell growth inhibit with MCF7 breast cancer cells. (B) ZR75 breast cancer cells. (C) T47D breast cancer cells. (D) LTED breast cancer cells. (E) Non-induced MCF7 breast cancer cells with a dox-inducible ERα Y537S mutant. (F) MCF7 cells expressing ERα Y537S. (G) Dose-response curves for inhibition of ERα transcriptional activity in the presence of BZA, PALBO, and FULV in MCF7 cells. (H) ERα transcriptional reporter gene assays for combination treatments. (I) ERα stability resulting from combination treatments.
 
-## Coregulator binding specificity and affinities of WT and mutant ERα with BZA, 4-OHT, and FULV
+### Coregulator binding specificity and affinities of WT and mutant ERα with BZA, 4-OHT, and FULV
 
 Because hormone regulated coactivator recruitment is crucial for ERα genomic action and inhibition of coactivator recruitment is a key aspect of SERM-mediated ERα antagonism (Liao et al., 2002), we tested the effects of 4-OHT, BZA and FULV on co-regulator binding. We applied the Microarray Assay for Real-time Coregulator-Nuclear receptor Interaction (MARCoNI), which allows the quantification of binding affinity of a nuclear receptor with co-regulator peptides. To determine the effect of 4-OHT, BZA and FULV on co-regulator binding to WT, Y537S and D538G ERα, MCF7 cells that ectopically express HA-tagged WT, Y537S, or D538G ERα were used in conjunction with an HA antibody to detect ER binding to the co-regulator array. Experiments were performed under E2 stimulated conditions for WT ER and under apo conditions for mutant ERα. Overall, dose-dependent inhibition of co-regulator binding was observed for the majority of co-regulator peptides with the three drugs (Figure 4A). A comparison of EC50 levels for inhibition of co-regulator binding of the three ER antagonists showed that EC50 levels for FULV in both the WT and mutant cells was higher, as expected given the mechanism of action of FULV, compared to SERMs. The 4-OHT and BZA EC50s were higher in the presence of the Y537S and D538G mutations. Collectively, these results show that differences in antagonistic activity manifested by the three endocrine treatments are reflected by changes in co-regulator binding. There are significant differences among these drugs in their antagonistic activity on WT-ER and mutant ER.
 
@@ -90,31 +138,109 @@ Because hormone regulated coactivator recruitment is crucial for ERα genomic ac
 
 **Figure 4.:** (A) EC50 quartiles for cells treated with 4-OHT (red), BZA (blue), or FULV (green). (B) In vitro quantification of the effect of ligands on promoting (E2) or inhibiting (4-OHT, RAL, BZA) the binding of SRC3-NRD to recombinant expressed WT, Y537S, or D538G ERα LBD. To be able to measure a signal from all three receptors, they were first primed with 20 nME2 before adding ligand. IC50 values (nM) are shown next to the legend for each protein.
 
-## SERMs and SERDs abolish hormone-independent ERα-coactivator binding in vitro and reverse hormone recruitment of coactivators
+### SERMs and SERDs abolish hormone-independent ERα-coactivator binding in vitro and reverse hormone recruitment of coactivators
 
 To further dissect the molecular basis for the reduced BZA, 4-OHT, and RAL potency/efficacy observed with mutant ERs, biochemical coactivator recruitment and competitive ligand-binding experiments were performed. As described previously (Fanning et al., 2016), Förster resonance energy transfer (FRET) assays were used to evaluate the interaction of wild-type and Y537S and D538G mutant ERα with steroid receptor coactivator 3 (SRC3), a key coregulator in breast cancer cells. The nuclear receptor recognition domain (NRD) of SRC3 and LBD of the ERs, were used in these experiments.
 
 Previously, we showed that in the absence of hormone, SRC3 did not bind to WT ERα LBD, whereas Y537S ERα bound SRC3 markedly in the absence of E2 with a 10-fold reduced affinity, and D538G ERα bound SRC3 with a 100-fold reduced affinity compared to hormone-bound WT receptor (Fanning et al., 2016). To better ascertain the potency of ligands to inhibit coactivator recruitment, we titrated the ligands into fixed concentrations of LBD and SRC3 and monitored LBD-SRC3 interaction by a FRET assay; the three samples were primed with E2 to get a measurable signal from WT and D538G ER. 4-OHT, BZA and RAL reversed the binding of SRC3 NRD to the two mutant ERs and WT-ERα with similar potencies (Figure 4B). Together, these data show that BZA, 4-OHT, and RAL inhibit both the basal and E2-stimulated recruitment of SRC3 coregulator by the WT and mutant ERα in vitro.
 
-## BZA, RAL and FULV elicit similar reduced binding affinities for Y537S and D538G compared to WT ERα LBD
+### BZA, RAL and FULV elicit similar reduced binding affinities for Y537S and D538G compared to WT ERα LBD
 
 To examine what role alterations in binding affinity may play in this reduced potency, competitive [3H]-E2 ligand binding assays ligand-binding experiments were used to examine the effect of Y537S and D538G mutations on BZA, RAL, and FULV ER binding affinities in vitro. We previously showed that the E2 and 4-OHT binding was significantly reduced for both the Y537S and D538G mutants (Fanning et al., 2016). Affinities were reported using Ki values calculated from IC50 values using the Cheng-Prusoff equation (Table 2) (Cheng and Prusoff, 1973). The affinities of RAL, BZA and FULV for the ERα mutants were reduced 9 to 27-fold relative to WT-ERα. It should be noted that the binding affinity of 4-OHT remained the highest compared to RAL, BZA and FULV against the mutant LBDs. The binding affinities of all tested antiestrogens were somewhat more reduced in D538G than in Y537S. However, FULV and BZA demonstrated the highest potencies in the transcriptional reporter gene assays, even though they exhibited reduced affinities compared to 4-OHT. Therefore, our data indicate that other factors beyond the reduced binding affinity of mutant LBDs for SERM or SERD must play a role in their decreased potency.
 
-## The SERD properties of BZA arise from its disruption of helix 12
+**Table 2.**
+ Ligand-binding affinities for WT, Y537S, and D538G mutant ERα LBD.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Ligand/Mutant</th>
+      <th colspan="3">Kd (nM)*</th>
+    </tr>
+    <tr>
+      <th>WT</th>
+      <th>Y537S</th>
+      <th>D538G</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E2‡</td>
+      <td>0.22 ± 0.11</td>
+      <td>1.40 ± 0.54</td>
+      <td>1.77 ± 0.66</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3">Ki (nM)†</td>
+    </tr>
+    <tr>
+      <td>4-OHT‡</td>
+      <td>0.12 ± 0.003</td>
+      <td>2.64 ± 0.4</td>
+      <td>3.28 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>RAL</td>
+      <td>0.30 ± 0.05</td>
+      <td>3.59 ± 1.0</td>
+      <td>3.77 ± 1.0</td>
+    </tr>
+    <tr>
+      <td>BZA</td>
+      <td>0.37 ± 0.01</td>
+      <td>3.50 ± 0.6</td>
+      <td>5.53 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>Fulvestrant‡</td>
+      <td>0.13 ± 0.03</td>
+      <td>3.68 ± 0.8</td>
+      <td>5.06 ± 1.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Measured directly by Scatchard Analysis using [3H]E2.† Calculated using the Cheng-Prusoff equation from the IC50 values determined in a competitive radiometric binding analysis using [3H]E2 as a tracer.‡Indicates previously published data (Fanning et al., 2016; Zhao et al., 2017)._
+
+### The SERD properties of BZA arise from its disruption of helix 12
 
 X-ray crystallography was used to reveal the structural details of BZA’s antiestrogen properties. An X-ray crystal structure for the WT ERα LBD, in complex with BZA was solved to 2.4 Å with two dimers in the asymmetric unit (ASU) (PDB: 4XI3). The BZA ligand and H12 are well resolved in each monomer in the ASU; poorly resolved residues were not included in the model. Figure 5—figure supplement 1 shows the observed difference map density for the BZA ligand for chain A. We were unable to obtain diffraction quality crystals with BZA or RAL in complex with either the Y537S or D538G mutant LBDs.
 
 Clear structural differences are apparent compared to the previously published molecular modeling and docking simulations of the ERα LBD-BZA complex (Lewis-Wambi et al., 2011). Specifically, the C3 methyl on the indole ring of BZA appears to shift the core of the molecule away from M386, L391 and L428 and towards H12. BZA is most structurally similar to RAL; however, BZA displays more SERD-like behavior (Wardell et al., 2013a). Figure 5 shows a superposition of the ERα LBD-BZA or RAL x-ray crystal structures. Interestingly, the distal phenol on BZA appears to form a hydrogen bond with improved binding geometry to H524 compared to the distal phenol of RAL. This suggests that the ketone on the RAL linker constrains the phenyl group, sterically precluding the adoption of an ideal hydrogen bonding geometry with H524. The core differences for BZA broadcast down the linker arm to alter its vector towards H12 where the azepan ring now pushes against V534 and P535 (Figure 5B). The alterations to V534 and P535 propagate to H12 which appears displaced out of the AF-2 cleft into a less stable orientation.
 
-## BZA binding conformation is energetically favored compared to RAL
+![Figure 5.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig5-v2.jpg)
+
+**Figure 5.:** (A) Overlay of BZA (cyan) with RAL (grey) X-ray crystal structures showing differences in H11-12 loop and H12 orientation. (B) Hydrogen bonds (dashed lines) formed by BZA and RAL in the binding pocket and highlighting differences in H11-12 loop and H12 conformation. PDBs: 1ERR and 4XI3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig5-figsupp1-v2.jpg)
+
+### BZA binding conformation is energetically favored compared to RAL
 
 Quantum mechanical calculations were employed to determine whether inherent differences in the BZA and RAL ligands accounted for differences in antagonist potency. A significant energetic shift was observed between the dihedral scans, revealing that the BZA arm can adopt a set of torsion angles with significantly reduced energetic penalties compared to RAL (Figure 6A). Importantly, the energetic minima well is significantly broader for BZA compared to RAL, indicating that the angles adopted by BZA in the ERα ligand-binding site are more favorable than RAL. Furthermore, an energetic penalty of approximately 1 kcal/mol would be incurred by RAL to adopt the same conformation observed for BZA in the X-ray crystal structure. Together these data show that the BZA ligand itself possesses physical properties that are more favorable to impact ERα H12 compared to RAL.
 
-## BZA and FULV reduce the impact of Y537S and D538G mutations on helix 12 dynamics
+![Figure 6.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig6-v2.jpg)
+
+**Figure 6.:** Deuterium uptake for each peptide is calculated as the average of % D for the 6 time points (10 s, 30 s, 60 s, 300 s, 900 s and 3600 s), and the difference in average % D values between the Apo-ERα and ERα-E2 bound samples is shown as a heat map with a color code given at the bottom of the figure (warm colors for deprotection and cool colors for protection). Peptides are colored only if they show a > 5% difference (less or more protection) in average deuterium uptake between the two states, and the software employs a paired two-tailed student’s t-test-based coloring scheme (p-value < 0.05 for two consecutive time points or a p-value < 0.01 for a single time point) to distinguish real protection differences from inherent variation in the data. Grey color represents no significant change (0–5%) between the two states.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Deuterium uptake for each peptide is calculated as the average of % D for the 6 time points (10 s, 30 s, 60 s, 300 s, 900 s and 3600 s) and the difference in average % D values between the Apo-ERα and ERα-FULV bound samples is shown as a heat map with a color code given at the bottom of the figure (warm colors for deprotection and cool colors for protection). Peptides are colored only if they show a > 5% difference (less or more protection) in average deuterium uptake between the two states and the software employs a paired two-tailed student’s t-test-based coloring scheme (p-value < 0.05 for two consecutive time points or a p-value < 0.01 for a single time point) to distinguish real protection differences from inherent variation in the data. Grey color represents no significant change (0–5%) between the two states.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Deuterium uptake for each peptide is calculated as the average of % D for the 6 time points (10 s, 30 s, 60 s, 300 s, 900 s and 3600 s) and the difference in average % D values between the Apo-ERα and ERα-FULV bound samples is shown as a heat map with a color code given at the bottom of the figure (warm colors for deprotection and cool colors for protection). Peptides are colored only if they show a > 5% difference (less or more protection) in average deuterium uptake between the two states and the software employs a paired two-tailed student’s t-test-based coloring scheme (p-value < 0.05 for two consecutive time points or a p-value < 0.01 for a single time point) to distinguish real protection differences from inherent variation in the data. Grey color represents no significant change (0–5%) between the two states.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/37161/elife-37161-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Deuterium uptake for each peptide is calculated as the average of % D for the 6 time points (10 s, 30 s, 60 s, 300 s, 900 s and 3600 s) and the difference in average % D values between the Apo-ERα and ERα-FULV-bound samples is shown as a heat map with a color code given at the bottom of the figure (warm colors for deprotection and cool colors for protection). Peptides are colored only if they show a > 5% difference (less or more protection) in average deuterium uptake between the two states and the software employs a paired two-tailed student’s t-test-based coloring scheme (p-value < 0.05 for two consecutive time points or a p-value < 0.01 for a single time point) to distinguish real protection differences from inherent variation in the data. Grey color represents no significant change (0–5%) between the two states.
+
+### BZA and FULV reduce the impact of Y537S and D538G mutations on helix 12 dynamics
 
 SERDs competitively bind to the ERα LBD and destabilize helix 12 (H12), leading to proteosomal degradation, while SERMs push the helix into the AF2 cleft to block coregulator binding (Fanning et al., 2016). Furthermore, AZD9496, a newer orally available SERD pushes H12 into the AF2 cleft but destabilizes the helix (De Savi et al., 2015). Previous work showed that the Y537S and D538G mutants, in complex with 4-OHT, adopts an altered antagonist conformation with respect to the WT-4-OHT complex (Fanning et al., 2016). Here, we explored how Y537S and D538G ERα LBD mutations impact H12 mobility in the BZA complex using differential hydrogen-deuterium exchange mass spectrometry (HDX-MS). For comparisons we chose E2 as a representative hormone, FULV as a representative SERD, and 4-OHT as a representative SERM. Average time-dependent amide-deuterium uptake kinetics is indicative of conformational flexibility in proteins with highly dynamic regions being more susceptible to solvent deuterium exchange compared to conformationally rigid regions. As expected, addition of E2 resulted in an increased protection against exchange in H12 (inferred as increased stability or less dynamic), and this protection was enhanced for the Y537S and D538G mutants (Figure 6). Also, FULV treatment led to increased D2O uptake in H12 (interpreted as destabilization) of regions near H12 in both the WT and D538G mutant (Figure 6—figure supplement 1), consistent with its SERD-like properties. Unfortunately, we were unable to collect HDX data for the Y537S mutant with FULV because it precipitated out of solution. Similar to previously published data (Fanning et al., 2016), binding of 4-OHT resulted in decreased stability of H12 with the Y537S compared to D538G and WT receptor (Figure 6—figure supplement 2), suggesting that these mutants resist the ability of the SERM to alter their structure. Interestingly, addition of BZA did not increase the stability (lesser protection) of the region near H12 to as great of an extent as 4-OHT in WT and mutant ERα LBDs, suggesting that BZA-bound ERα adopts a less stable antagonist conformation than 4-OHT-bound ERα (Figure 6—figure supplement 3), consistent with the crystal structure. These data suggest that, while their antagonist conformations are altered by Y537S or D538G mutations, the ERα-BZA and FULV complexes maintain potency because they resist the stabilizing impact of the mutations better than 4-OHT.
 
-## How Y537S and D538G erα LBD mutants alter the BZA antagonist structure
+### How Y537S and D538G erα LBD mutants alter the BZA antagonist structure
 
 To understand the structural basis for the reduced BZA degradation of Y537S compared to WT ERα, atom-level explicit-solvent molecular dynamics (MD) simulations for the LBD of ERα Y537S-BZA and D538G-BZA were performed using the WT-BZA crystal structure as template. When compared to the WT-4-OHT structure (PDB: 3ERT), the D538G-4-OHT structure displayed a significantly altered H11-12 loop, which leads to a perturbed H12 antagonist state (Figure 6 and Figure 7B) (Fanning et al., 2016).
 
@@ -140,15 +266,165 @@ Overall, our findings show the molecular basis for the SERD-like activity of BZA
 
 ## Materials and methods
 
-## Breast cancer cellular reporter gene assays
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifier</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Estrogen Receptor Alpha Ligand Binding Domain WT or Y537S</td>
+      <td>Fanning SW, Mayne CG, Dharmarajan V, Carlson KE, Martin TA, Novick SJ, Toy W, Green B, Panchamukhi S, Katzenellenbogen BS, Tajkhorshid E, Griffin PR, Shen Y, Chandarlapaty S, Katzenellenbogen JA, Greene GL. Estrogen receptor alpha somatic mutations Y537S and D538G confer breast cancer endocrine resistance by stabilizing the activating function-2 binding conformation. eLife. 2016;5:e12792. doi: 10.7554/eLife.12792.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Protein Expression)</td>
+      <td>E.coli BL21(DE3)</td>
+      <td>https://www.neb.com/products/c2527-bl21de3-competent-e-coli#Product%20Information</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mammary Cells)</td>
+      <td>MCF7, MCF7 HA-Y537S, MCF7 HA-D538G, T47D, CAMA-1, ZR75-1, MDA-MB-361</td>
+      <td>ATCC; this paper; this paper; ATCC; ATCC; ATCC; ATCC</td>
+      <td>ATCC HTB-22, ATCC HTB-23, ATCC HTB-21, ATCC CRL-1500, ATCC HTB-27</td>
+      <td>CVCL_0031, CVCL_0553, CVCL_1115, CVCL_0588, CVCL_0620</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ERα antibody F10</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-8002</td>
+      <td>AB_627558</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-actin antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-69879</td>
+      <td>AB_1119529</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA antibody</td>
+      <td>Cell Signaling</td>
+      <td>C29F4</td>
+      <td>AB_1549585</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CCP4i</td>
+      <td>https://www.ccp4.ac.uk/ccp4i_main.php</td>
+      <td></td>
+      <td>SCR_007255</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>VMD</td>
+      <td>https://www.ks.uiuc.edu/Research/vmd/</td>
+      <td></td>
+      <td>SCR_004905</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Gaussion G09</td>
+      <td>http://gaussian.com/</td>
+      <td></td>
+      <td>SCR_014897</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GaussView</td>
+      <td>http://gaussian.com/</td>
+      <td></td>
+      <td>SCR_014897</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>HDX Workbench</td>
+      <td>http://hdxworkbench.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Bionavigator</td>
+      <td>PamGene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PamStation96</td>
+      <td>PamGene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert Mycoplasma Detection Kit</td>
+      <td>Lonza</td>
+      <td>LT07-518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>protease inhibitor cocktail solution III</td>
+      <td>CalBiochem</td>
+      <td>539134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-hydroxytamoxifen</td>
+      <td>Tocris</td>
+      <td>3412</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ICI 182–780 (fulvestrant)</td>
+      <td>Tocris</td>
+      <td>1047/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Raloxifene</td>
+      <td>Sigma- Aldrich</td>
+      <td>R1402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Estradiol</td>
+      <td>Sigma- Aldrich</td>
+      <td>E8875</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Breast cancer cellular reporter gene assays
 
 Luciferase reporter assay system (Promega) was used to monitor luciferase activity in MCF7 cells with stable expression of ERE luciferase per the manufacturer's recommendations, using a single tube luminometer (BD Monolight 2010). MCF7 cells were plated in six-well plates and treated with increasing doses of BZA, FULV or 4-OHT (0/0.01/0.1/1/10/100/1000 nM) in complete medium for 24 hr. All studies were performed in triplicates, and luciferase results are reported as relative light units (RLU) and normalized with β-Galactosidase activity using Mammalian β-gal assay kit (Thermo Scientific). Mycoplasma was tested every 6 weeks in these cells, and no mycoplasma was detected in the MCF-7 cell lines using the MycoAlert Mycoplasma Detection Kit (Lonza). MCF-7 cells were purchased directly from ATCC and the studies were completed within 1 year of purchase. Cells reached a maximum of 30 passages during these studies.
 
-## Cell proliferation
+### Cell proliferation
 
 For proliferation studies the breast cancer cells were plated in 24 well plates (2.5 × 104/well). At the indicated time points, the cells were trypsinized. We determined the number of viable cells by Trypan blue exclusion staining and manual counting with a hemacytometer using independent triplicates.
 
-## RT-PCR
+### RT-PCR
 
 Total RNA was isolated with the RNeasy kit (Qiagen). The high-capacity RT kit (Applied Biosystems) was used for preparation of the cDNA, and the PCR reaction was carried out with SYBR Green (Qiagen).
 
@@ -174,49 +450,168 @@ CCDN1 F: 5’- AACTACCTGGACCGCTTCCT-3’
 
 CCDN1 R: 5’- CCACTTGAGCTTGTTCACCA-3’
 
-## ERα stability immunoblots
+### ERα stability immunoblots
 
 Tet-ON MCF7 cells lines (HA-ERα WT, HA-ERα Y537S, HA-ERα D538G) were cultured in DMEM supplemented with 10% fetal bovine serum (FBS), 2 mM L-glutamate, 1% penicillin-streptomycin, 100 μg/mL geniticin, and 100 μg/mL hygromycin. Before western blotting experiments, 300,000 cells were plated in each well of a 6-well culture dish and cultured for 48 hr in DMEM supplemented with 10% charcoal-stripped FBS (SFBS), 2 mM L-glutamate, 1% penicillin-streptomycin, and 0.2 μg/mL doxycycline. Compounds were diluted in ethanol or DMSO. Cells were treated with either 10 nM estradiol (Sigma), 1 μM FULV (Tocris), 100 nM Ral (Sigma), 100 nM BZA (Pfizer), 100 nM 4-OHT (Tocris), or vehicle (ethanol) for 24 hr. Subsequently, cells were washed twice with 1 mL of ice-cold PBS, harvested via scraping, and pelleted at 4°C. Cells were resuspended in 50 μL lysis buffer [0.1% CHAPS, 50 mM HEPES (pH 8.0), 120 mM NaCl,1mM EDTA, 10 mM Na pyrophosphate, and 10 mM glycerophosphate; supplemented with a protease inhibitor cocktail solution III (CalBiochem)]. Cells were lysed via three freeze-thaw cycles. Lysates were then pelleted at 4°C, and 100 μg of protein was mixed with standard 2x Laemmli buffer. Samples were loaded onto a 10% SDS-polyacrylamide electrophoresis gel, transferred after electrophoresis onto nitrocellulose membrane, and immunoblotted using anti-HA-tag (Cell Signaling C29F4) and anti-actin (Santa Cruz Biotechnology AC-15) antibodies. Membranes were probed using anti-rabbit 800 nm (Rockland) and anti-mouse 680 nm (Rockland) and imaged on the Licor Odyssey. Membrane intensities were normalized to actin control and quantified using ImageStudio. Mycoplasma was tested every 6 weeks in these cells and no mycoplasma was detected in any of the Tet-ON MCF-7 cell lines using the MycoAlert Mycoplasma Detection Kit (Lonza).
 
 For experiments using ZR75-1, MDA-MB-361, CAMA-1, and T47D cells, all cell lines were purchased directly from ATCC. T47D and ZR75-1 cells were grown in RPMI-1640 with 10% FBS. CAMA-1 cells were grown in DMEM with 10% FBS. MDA-MB-361 were grown in L15 media with 20% FBS. Cells were plated at 300 k per well. Once cells reached ~60% confluency, they were placed in charcoal-stripped FBS media for 48 hr. Cells were treated with 0 (vehicle), 25 nM, 50 nM, and 100 nM BZA in DMSO and harvested after 24 hr. Cells were lysed with M-PER lysis reagent. Experiments with CAMA-1 and MDA-MB-361 were performed using traditional Western blot. For those experiments, 100 µg of protein was loaded per lane. Experiments in ZR75-1 and T47D were done using a Wes Automated Western Blot (Protein Simple). For the Wes, 9 µg of protein was loaded per lane. ERα F10 antibody (sc-8002) was used at dilutions of 1:500 for traditional western blotting, and 1:50 for the Wes. Mouse β-actin antibody (60008–1-Ig) was used at dilutions of 1:5000 on the Wes, and rabbit β-actin antibody (20536–1-AP) was used at dilutions of 1:10000 for traditional western blotting.
 
-## Co-regulator interaction profiling
+### Co-regulator interaction profiling
 
 This method has been described previously (Koppen et al., 2009). Cell lysates of MCF7 cells expressing HA-tagged WT-ER, Y537S mutant ER and D538G mutant ER were quantified by ELISA (Active Motif, USA) to enable equimolar input. An array with a set of immobilized peptides representing coregulator-derived NR-binding motifs was incubated with a reaction mixture of crude lysate, vehicle (2% DMSO) with or without 1 μM 17β-estradiol (E2), increasing concentrations of BZA, 4-OHT or FULV (0.1, 1, 10, 100, 1000 nM) and anti-HIS-Alexa488 (Qiagen, USA). Incubation was performed for 40 min at 20°C, followed by removal of unbound receptor by washing and generation of a TIFF image of each array using a PamStation96 (PamGene International). Image processing and quantification of ERα binding to each peptide on the array was performed by Bionavigator software (PamGene International).
 
-## Coactivator binding assays
+### Coactivator binding assays
 
 Protein preparation for TR-FRET. Expression, purification, and site-specific labeling of the ERα-LBD was performed as described previously (Tamrazi et al., 2002). Generation of the nuclear receptor interaction domain (NRD) of human SRC3 coactivator has also been described previously (Kim et al., 2005). ERα LBD and the SRC3 fragment were labeled with Mal-dPEG4-biotin (Quanta BioDesign, Powell, OH), and 5-iodoacetamido fluorescein (Molecular Probes, Invitrogen, Eugene, OR), respectively.
 
-## Coactivator recruitment with ligand titration
+### Coactivator recruitment with ligand titration
 
 To raise the background level of SRC3 NRD binding, the ERα LBD preparation (1 nM ER-LBD, 0.25 nM SaTb, 100 nM SRC3-fluorescein) was primed with 20 nM E2, and then increasing ligand concentrations (from 3 × 10−12 to 3 × 10−7 M) were added. Diffusion-enhanced FRET was determined by a parallel incubation without biotinylated ER-LBD and subtracted as a background signal. The time-resolved Förster resonance energy transfer measurements were performed with a Victor X5 plate reader (Perkin Elmer, Shelton, CT) with an excitation filter at 340/10 nm and emission filters for terbium and fluorescein at 495/20 and 520/25 nm, respectively, with a 100-µs delay (Tamrazi et al., 2005; Moore et al., 2015; Jeyakumar et al., 2011). The data, representing 2–3 replicate experiments, each with duplicate points, was analyzed using GraphPad Prism 4, and are expressed as the IC50 in nM.
 
-## Ligand binding assays
+### Ligand binding assays
 
 The dissociation constant, (Kd) of estradiol binding to each ER was measured by saturation binding with [3H]17β-E2 and Scatchard plot analysis (Scatchard, 1949), as described previously (Fanning et al., 2016; Hurth et al., 2004). Relative binding affinities (RBA) were determined by a competitive radiometric ligand binding assay with 2 nM [3H]E2 as tracer (Fanning et al., 2016). Incubations were at 0°C for 18–24 hr. Hydroxyapatite was used to adsorb the receptor-ligand complex, and unbound ligand was washed away. The determination of the RBA values is reproducible in independent experiments with a CV of 0.3, and the values shown represent the average ±range or SD of two or more separate determinations. Ki was determined by the Cheng-Prusoff equation (Cheng and Prusoff, 1973) Ki = IC50/(1 + [tracer total/Kd of tracer]).
 
-## Hydrogen/deuterium exchange-mass spectrometry (HDX-MS)
+### Hydrogen/deuterium exchange-mass spectrometry (HDX-MS)
 
 Solution-phase amide HDX experiments were carried out with a fully automated system (CTC HTS PAL, LEAP Technologies, Carrboro, NC; housed inside a 4°C cabinet) as described previously (Fanning et al., 2016) with slight modifications.
 
-## Peptide identification
+#### Peptide identification
 
 Peptides were identified using tandem MS (MS2 or MS/MS) experiments performed with a LTQ linear ion trap mass spectrometer (LTQ Orbitrap XL with ETD, ThermoFisher, San Jose, CA) over a 70 min gradient. Product ion spectra were acquired in a data-dependent mode and the five most abundant ions were selected for the product ion analysis per scan event. The MS/MS *.raw data files were converted to *.mgf files and then submitted to MASCOT ver2.3 (Matrix Science, London, UK) for peptide identification. The maximum number of missed cleavage was set at four with the mass tolerance for precursor ions ± 0.6 Da and for fragment ions ± 8 ppm. Oxidation to Methionine was selected for variable modification. Pepsin was used for digestion and no specific enzyme was selected in the MASCOT during the search. Peptides included in the peptide set used for HDX detection had a MASCOT score of 20 or greater. The MS/MS MASCOT search was also performed against a decoy (reverse) sequence and false positives were ruled out. The MS/MS spectra of all the peptide ions from the MASCOT search were further manually inspected and only the unique charged ions with the highest MASCOT score were used in estimating the sequence coverage and included in HDX peptide set.
 
-## HDX-MS analysis
+#### HDX-MS analysis
 
 For differential HDX experiments, 5 μL of a 10 μM ERα LBD (Apo or in complex with 10-fold excess compound) was diluted to 25 μL with D2O-containing HDX buffer (20 mM Tris-HCl pH 8.0, 150 mM NaCl, 5% glycerol, 1 mM DTT) and incubated at 4°C for 10 s, 30 s, 60 s, 900 s, and 3600 s. Following on-exchange, unwanted forward or backward exchange is minimized, and the protein is denatured by dilution to 50 μL with 0.1% TFA in 5 M urea with 50 mM TCEP (held at 4°C, pH 2.5). Samples are then passed across an immobilized pepsin column (prepared in house) at 50 μL min−1 (0.1% TFA,15°C), and the resulting peptides are trapped onto a C8 trap cartridge (Thermo Fisher, Hypersil Gold). Peptides were then gradient eluted (5% CH3CN to 50% CH3CN, 0.3% formic acid over 6 min, 4°C) across a 1 mm ×50 mm C18 analytical column (Hypersil Gold, Thermo Fisher) and electrosprayed directly into a high resolution orbitrap mass spectrometer (LTQ Orbitrap XL with ETD, Thermo Fisher). Percent deuterium exchange values for peptide isotopic envelopes at each time point were calculated and processed using HDX Workbench (Pascal et al., 2012). Each HDX experiment was carried out in triplicate with a single preparation of each protein-ligand complex. The intensity weighted mean m/z centroid value of each peptide envelope was calculated and subsequently converted into a percentage of deuterium incorporation. This is accomplished by determining the observed averages of the undeuterated and using the conventional formula described elsewhere (Zhang and Smith, 1993). Statistical significance for the differential HDX data is determined by an unpaired t-test for each time point, a procedure that is integrated into the HDX Workbench software (Pascal et al., 2012). Corrections for back-exchange were made on the basis of an estimated 70% deuterium recovery and accounting for 80% final deuterium concentration in the sample (1:5 dilution in D2O HDX buffer).
 
-## X-ray crystallographic analysis of the WT erα LBD-BZA complex
+### X-ray crystallographic analysis of the WT erα LBD-BZA complex
 
 The 6 × His TEV-tagged ERα-L372S, L536S double mutant LBD was expressed in E.coli BL21(DE3) and purified as described (Sharma et al., 2017). LBD (10 mg/mL) and incubated with 1 mM BZA overnight at 4°C. LBD-BZA was crystallized using vapor diffusion by hanging drop in 33% PEG 3,350, 100 mM Tris pH 6.6, and 250 mM MgCl2. Diffraction data were collected at the Canadian Light Source at beamline 08ID-1 at a wavelength of 0.97 Å. Indexing, scaling, and structure refinement were performed as described (Fanning et al., 2016). Table 3 shows data collection and refinement statistics. Final coordinates were deposited in the Protein Databank with the accession code 4XI3.
 
-## Quantum mechanical calculations
+**Table 3.**
+ Crystallographic data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ERα LBD-BZA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space Group</td>
+      <td>P1</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>53.57, 59.17, 94.14</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>86.76, 75.36, 63.03</td>
+    </tr>
+    <tr>
+      <td>Resolution Range</td>
+      <td>50–2.49</td>
+    </tr>
+    <tr>
+      <td>Number of Reflections</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(all/unique)</td>
+      <td>63,978/29,080</td>
+    </tr>
+    <tr>
+      <td>I/σ (highest resolution)</td>
+      <td>1.35</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>97.6</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>21.1/29.3</td>
+    </tr>
+    <tr>
+      <td>No. Residues/Chain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ERα LBD D538G</td>
+      <td>241</td>
+    </tr>
+    <tr>
+      <td>GRIP Peptide</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RMSD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.575</td>
+    </tr>
+    <tr>
+      <td>Chiral volume</td>
+      <td>0.1016</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot statistics</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Preferred number (%)</td>
+      <td>837 (97.44%)</td>
+    </tr>
+    <tr>
+      <td>Additional allowed (%)</td>
+      <td>18 (2.10%)</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>4 (0.47%)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Quantum mechanical calculations
 
 Torsion scans were performed on the bond connecting the internal substituents to the central core for each ligand. The ligand coordinates were extracted from x-ray crystal structures of BZA (PDB code 4XI3) and RAL (PDB code 2QXS) and all hydrogens were added. Relaxed potential energy surface scans in which the remainder of the structure is geometry optimized at each torsion step were prepared and analyzed using the torsion scan module of the Force Field Toolkit (Mayne et al., 2013) (ffTK) plugin of VMD (Humphrey et al., 1996). Quantum mechanical calculations were performed using Gaussion G09 (Frisch et al., 2016) at the MP2 level of theory with a 6–31G* basis set. Both ligands were scanned using a bidirection technique originating from the crystal structure conformation and scanning outward in the (+) and (-) directions independently. The BZA ligand was scanned in four-degree increments while the RAL ligand required a smaller two-degree step size to avoid discontinuities due to broader conformational changes when taking larger steps.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Ligand parameterization. A 3D structure of BZA (without hydrogen atoms) was first built using the computer program GaussView (version 4.1.2; part of the computer program Gaussian 03 (Frisch, 2004). The remaining ligand parameterization was carried out as described (Fanning et al., 2016).
 

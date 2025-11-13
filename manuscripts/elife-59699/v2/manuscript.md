@@ -35,9 +35,17 @@ To overcome these caveats, we developed a method to rapidly immunopurify SVs fro
 
 ## Results
 
-## A method for rapid and specific capture of SVs from cultured neurons
+### A method for rapid and specific capture of SVs from cultured neurons
 
 In developing a method to dramatically reduce SV purification times while maintaining purity, we were inspired by immunoprecipitation (IP)-based workflows for organellar isolation which are highly specific and do not require time-consuming differential centrifugation techniques classically used to isolate organelles (Abu-Remaileh et al., 2017; Chen et al., 2016; Ray et al., 2020). We developed SV-tag, a construct in which a hemagglutinin (HA) tag is fused to the C-terminus of synaptophysin, an SV-specific, integral membrane protein and an ideal candidate to tag due to its ubiquitous presence and high abundance on SVs (Figure 1A; Takamori et al., 2006). In addition, we appended a tdTomato sequence followed by a self-cleaving T2A sequence to allow quick identification of infected cells via florescence. This strategy has several advantages compared to using an antibody against endogenous synaptophysin to isolate SVs. First, the SV-tag construct can be easily modified to express in genetically-defined subpopulations, which is crucial given the heterogeneity of neurons and brain tissue. Furthermore, the HA antibody is highly specific, sensitive, and well-characterized. Finally, the SV-tag strategy enables this method to be generalizable as the HA-tag is easily appended to other proteins and is compatible with many other applications, including metabolic and proteomic studies (Chen et al., 2017; Huttlin et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59699/elife-59699-fig1-v2.jpg)
+
+**Figure 1.:** (A) Construct design for tagging SVs and schematic of the workflow used to isolate SVs. (B) Representative traces of mEPSCs in uninfected neurons (black) and neurons infected with SV-tag (red). (C) Summary of the average amplitude (± standard deviation (std) and rate of mEPSCs in uninfected neurons and neurons infected with SV-tag (Vhold = −70 mV, 1 µM TTX, 10 µM gabazine)). Non-significant p-value = n.s. (D) Immunostaining of uninfected primary neurons for endogenous synaptophysin (green) and synapsin (magenta). Cyan in the merged image represents DAPI-stained nuclei. Insets show selected fields that were magnified 1.6X. Scale bars: 10 µm. (E) Immunostaining of infected primary neurons expressing SV-tag (green) and synapsin (magenta) in. Insets show selected fields that were magnified 1.6X. Scale bars: 10 µm. (F) Immunoblot analysis of protein markers for SVs and indicated subcellular compartments and membranes in whole-cell lysates, purified SVs, and control immunoprecipitates. Lysates were prepared from neurons infected with lentivirus encoding SV-tag. 0.4% of the lysate and 5% of the immunoprecipitates were loaded into the indicated lane. (G) Electron microscope image of vesicles isolated with the workflow. Values denote diameter of indicated particles, specified by black arrows. Scale bar: 100 nm (H) Table summarizing the relative enrichment of synaptobrevin in the final immunoisolate from SV-tagged neurons, as assessed by quantitative immunoblotting. Values represent the mean ± std of three biological replicates. Source data is included (Figure 1—source data 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59699/elife-59699-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunostaining of bassoon (magenta) in uninfected primary neurons (top panel) and neurons expressing SV-tag (green) (bottom panel). Cyan in merged image represents DAPI-stained nuclei. Insets show selected fields that were magnified 1.5X. Scale bars: 10 µm. (B) Immunostaining of primary neurons expressing indicated HA-tagged proteins (green) and endogenous synapsin (magenta). Specifically, neurons are expressing endogenously tagged synaptophysin with a triple HA-tag (top row), SV2A tagged at the N-terminus with nine tandem HA-tags (9x HA) (middle row), and synaptogyrin tagged at the N-terminus with a 9X HA-tag (bottom row). Insets show selected fields that were magnified 1.7X (top row) and 1.35X (middle and bottom row). Scale bars, 10 µm. (C) Electron microscope image of synaptosomes generated with the workflow. Scale bar, 100 nm. (D) Immunoblot analysis of the effect of the number of HA-tags on the efficiency of SV isolation. Lysates were prepared from neurons infected with lentivirus encoding for synaptophysin conjugated to three HA-tags (3X) or nine HA-tags (9X). (E) Proteomics analysis of isolated SVs vs. control IP. The blue dot denotes proteins in which there were no detected peptides in the control IP (n = 70, 14 of which are validated SV proteins), and red dots represent established SV proteins based on literature. (F) Histogram of the distribution of particle diameters observed by EM imaging of the final immunoisolate from SV-tagged neurons (source data included in Figure 1—source data 2) (G) Percent of initial input of synaptobrevin (sbrev), VGLUT1, and SV2A proteins present in the immunoisolate from SV-tagged neurons (H) Immunoblot analysis of SVs isolated with the SV-tag based workflow compared to a previously established one based on differential centrifugation. WC: whole cell, L: whole-cell lysate, P5: SV pellet, IP: HA immunoprecipitate (I) Electron microscope image of SVs generated with the differential centrifugation method used in S1H. Values denote diameter of indicated particles. Scale bar, 100 nm (J) Luminescence-based detection of glutamate in SVs isolated from neurons treated with DMSO or Bafilomycin A (500 nM) 2 hr prior to isolation. (K) Luminescence-based detection of glutamate in SVs isolated in the absence or presence of 1 mM MgCl2.
 
 Because our workflow relies on immuno-affinity purification of subcellular compartments labeled with an ectopically expressed construct, it is necessary to ensure that this fusion protein does not perturb neurotransmitter release and is properly localized to SVs. In cultured mouse cortical neurons, the expression of SV-tag did not alter glutamate release from these cells, as determined by recording spontaneous miniature excitatory post-synaptic currents (mEPSCs) at a holding potential of −70 mV in the presence of TTX and gabazine (Figure 1B–C). To assess the localization of SV-tag, we compared its distribution to that of synapsin-1 and bassoon, both markers of presynaptic boutons (De Camilli et al., 1983; Figure 1D and E, Figure 1—figure supplement 1A). Although SV-tag colocalizes with synapsin and bassoon, a fraction of it is also detected in the soma in apparently synapsin-free areas (Figure 1E). In contrast, endogenous synaptophysin completely colocalizes with synapsin, with a small fraction of the signal in the perinuclear area (Figure 1D). We therefore pursued multiple optimization routes to improve the targeting of SV-tag. We moved the HA-tag to the N-terminus, lowered expression levels, tagged endogenous synaptophysin using CRISPR, tested other epitope tags (FLAG, GFP), and tagged other SV resident proteins (SV2A, VAMP2, synaptotagmin) (Figure 1—figure supplement 1B). Surprisingly, for all of these approaches the epitope tagged protein exhibited somatic localization comparable to that of SV-tag (Figure 1—figure supplement 1B). This suggests that for recombinant SV proteins, it is difficult to achieve the correct level of expression to ensure that they are trafficked from the soma to the boutons. Alternatively, it could indicate that a population of endogenous synaptophysin is somatically localized but not accessible by the synaptophysin antibody. This latter hypothesis is supported by the appearance of a somatic pool of synaptophysin when an HA-tag was introduced into the endogenous gene (Figure 1—figure supplement 1B, top row). Therefore, we decided to use our original synaptophysin-based SV-tag construct, due to the advantages of synaptophysin being a protein that is easy to express, abundant, and ubiquitously present on SVs (Takamori et al., 2006).
 
@@ -47,9 +55,17 @@ To assess the quality and integrity of SVs isolated by this rapid procedure, we 
 
 Although these analyses indicate we were able to enrich for SVs, they do not provide evidence that the SVs are intact, which is crucial for subsequent metabolite analysis. If the integrity of isolated SVs is not compromised, they should contain glutamate, the principal neurotransmitter of cultured cortical neurons (Beaudoin et al., 2012). Using a luminescence-based assay to detect glutamate, we observed an enrichment of glutamate in isolated SVs compared to the material obtained when the same protocol was applied to uninfected neurons (Figure 1—figure supplement 1J). Importantly, glutamate was depleted upon treatment of neurons with BafilomycinA (BafA), a vATPase inhibitor that dissipates the proton gradient of SVs that is essential for the import of glutamate into SVs (Bowman et al., 1988). In our isolation, it was not necessary to supplement ATP with magnesium (Figure 1—figure supplement 1K), likely due to the rapidity of the method and/or sufficient levels of magnesium released during cell lysis to maintain vATPase function. Taken together, multiple lines of evidence demonstrate that our SV-tag workflow enables rapid and specific high-affinity capture of intact SVs.
 
-## Targeted and global metabolite profile of SVs from cultured neurons
+### Targeted and global metabolite profile of SVs from cultured neurons
 
 To interrogate the metabolite contents of SVs in a precise and robust manner, we initially used targeted gas chromatography-mass spectrometry (GC/MS), a method with high sensitivity for many analytes, low cost and ease of operation, all of which are important considerations for optimization studies (Beale et al., 2018). We selected a panel of amino acids to profile, which included bona fide neurotransmitters (glutamate and glycine) (Gundersen et al., 2005), a putative neurotransmitter (aspartate) (Fleck and Palmerv, 1993), and non-neurotransmitter amino acids to assess the cleanliness of our preps. To identify metabolites that are enriched in SVs, we compared the signal of metabolites present in HA immunoprecipitates from SV-tag infected neurons vs. the signal from immunoprecipitates of uninfected neurons, which served as a control for metabolites that non-specifically adhere to HA beads (Chen et al., 2017; Supplementary file 3). In primary cortical cultures, glutamate was the sole metabolite that was significantly enriched in SVs when compared to control (Figure 2A) and it was the only metabolite depleted by BafA treatment (Figure 2B), consistent with the excitatory and glutamatergic identity of these neurons. Importantly, non-neurotransmitter amino acids were not enriched, demonstrating that our SV preparations are of high purity as they lack contaminating metabolites. Of note, aspartate was not detected in these vesicles, suggesting that it does not function as a neurotransmitter in these cells. The same conclusion was reached via electrophysiological studies for hippocampal excitatory synapses (Herring et al., 2015).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59699/elife-59699-fig2-v2.jpg)
+
+**Figure 2.:** (A) Fold change (mean ± standard error of the mean (SEM), n = 3) of selected amino acids detected by GC/MS in purified SVs vs. control IPs. Asterisk denotes a statistically significant difference (p-value < 0.05) of the abundance of the indicated amino acid in SVs profiled from cells infected with SV-tag compared to uninfected cells. (B) Effect of pretreatment of neurons with BafilomycinA on the abundance of selected amino acids in purified SVs, as detected with GC/MS (mean ± SEM, n = 3) (C) Relative abundance via LC/MS of 153 polar metabolites present in purified SVs derived from SV-tag infected cells, compared to preps from uninfected cells (mean ± SEM, n = 3–4). Red indicates p-value < 0.05, blue indicates p- value > 0.05, and gray indicates that the metabolite was undetected in all samples. Single letter codes annotate selected amino acids. Metabolites are listed in alphabetical order, and their corresponding identities can be found in Supplementary file 2. (D) Effect of BafilomycinA on the presence of a panel of polar metabolites in purified SVs profiled with LC/MS (mean ± SEM, n = 3–4). Fold changes are color coded using the same specifications as in (C). (E) Immunoblot analysis of neurons expressing control guides (sgAAVS1) or guides targeting glutamate transporters (sgVGLUT1 and sgVGLUT2). Lysates were prepared from neurons infected with lentivirus encoding the indicated constructs. Fold changes are color coded using the same specifications as in (C). (F) LC/MS metabolite profile of SVs isolated from cells with glutamate transporter knockdown compared with control cells expressing the control guide.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59699/elife-59699-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunoblot analysis of indicated proteins in whole-cell lysates, HA immunoprecipitates from medial ganglionic eminence (MGE) cultures infected with SV-tag, and control immunoprecipitates from uninfected MGE cultures. (B) Immunoblot analysis of whole-cell lysates of primary cortical, hippocampal, and MGE neurons. Lysates were probed for the presence of indicated synaptic and pan neuronal markers. (C) Comparison of the relative abundances of specified amino acids in purified synaptic vesicles (SVs) isolated from cortical vs. MGE cultures and profiled with GC/MS (mean ± SEM, n = 3). Asterisk denotes statistical significance. Glutamate fold change p-value = 7.5e−5, GABA fold change p-value = 4.8e−3.
 
 To demonstrate the applicability of this method to profile other neuron types, we isolated SVs from inhibitory neuron cultures (Figure 2—figure supplement 1A), prepared from the medial ganglionic eminence (MGE) (Franchi et al., 2018). Unlike cortical cultures, these neurons are GABAergic, as evidenced by their expression of VGAT, a GABA transporter (Wojcik et al., 2006), and their lack of VGLUT1 protein, a glutamate transporter (Pines et al., 1992; Figure 2—figure supplement 1B). Reflecting the differences in the neurotransmitter identities of cortical and MGE-derived neurons, GC/MS analysis revealed that SVs isolated from MGE cells are enriched for GABA but not glutamate, whereas the converse is observed for cortical cultures (Figure 2—figure supplement 1C). Highlighting the specificity of our method, MGE SVs were not significantly enriched for any other amino acids profiled. Thus, by combining the SV-tag isolation workflow with GC/MS, we can successfully obtain neurotransmitter profiles of diverse neuron subtypes.
 
@@ -65,9 +81,17 @@ Previous work has proposed that other polar molecules may function as neurotrans
 
 To identify SV-specific metabolites, we filtered for peaks that were significantly enriched by at least two-fold in SVs and concomitantly depleted by BafA by at least two-fold. To assign the peak identity of this small subset of features, we used a variety of manual approaches including spectral library search, accurate mass formula search, and isotope fine structure. To our surprise, only three metabolites satisfied these criteria – glutamate, GABA, and potassium (Figure 3C, Supplementary file 4). In these samples, GABA likely originates from a minority population of interneurons in cultured cortical neurons, consistent with the low expression level of VGAT, the GABA transporter, observed in these cultures (Figure S2B). The variability of the number of GABAergic interneurons across different cortical culture preps likely contributes to the variation in the GABA levels detected across MS runs. In addition to GABA, we identified a peak that is associated with potassium, which arises from the putative pairing of this ion with carbonate ions in the LC buffers used in the IP/MS workflow. However, potassium is a ubiquitous component of multiple reagents and sample-to-sample fluctuations in their levels can contribute to altered potassium content. Follow-up studies using atomic absorption spectroscopy or inductively coupled plasma mass spectrometry (ICP-MS) will be necessary to establish how much potassium these SVs quantitatively contain, whether these weakly enriched potassium peaks are indeed internalized within SVs, and if they contribute to SV function.
 
-## Adaptation of the method for SV isolation and profiling from brain tissue
+### Adaptation of the method for SV isolation and profiling from brain tissue
 
 Given their relative homogeneity of neuron types and ease of preparation, cultured cortical neurons provide an ideal setting to optimize and test purification protocols. However, in the brain, molecularly and functionally distinct neurons are intermingled in an intricate and heterogeneous environment, and they rely on the uptake of extracellular metabolites found in this environment for neurotransmitter synthesis (Elsworth and Roth, 1997; Mathews and Diamond, 2003; Schousboe et al., 2013). To gain a more complete understanding of neurotransmission and potentially identify unknown endogenous neurotransmitters, it is necessary to profile SVs isolated from their native environment. We therefore adapted the method for use in brain tissue (Figure 4A). First, we expressed SV-tag in the brain by transducing desired brain regions of mice via stereotaxic injections of adeno-associated viruses (AAV) encoding Cre-independent SV-tag. To ensure neuron-specific expression, the expression of SV-tag was driven by the synapsin promoter (Kügler et al., 2003). SV-tag readily expresses in diverse areas, as evidenced by the abundance of tdTomato positive neurons in targeted regions (Figure 4B). To ensure that SV-tag does not impair neurotransmission in vivo, we examined synaptic transmission at well-characterized Schaffer collateral synapses between hippocampal CA3 and CA1 pyramidal cells (Figure 4—figure supplement 1A; Jackman et al., 2014). Paired-pulse facilitation, which indicates changes in probability of release from presynaptic terminals, was assessed using pairs of closely spaced electrical stimuli (Figure 4—figure supplement 1B). Paired-pulse ratios, measured at an inter-stimulus interval of 50 ms, were unaffected by SV-tag expression in presynaptic neurons, which indicated that SV-tag did not significantly alter neurotransmitter release probability at this synapse (Figure S4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59699/elife-59699-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of the workflow used to isolate SVs from mouse brain tissue. (B) Immunofluorescence images of coronal sections from wild-type mouse brains transduced with SV-tag in the indicated brain regions. Neurons are labeled with DAPI nuclear stain (blue) and SV-tag (red). Scale bar: 1 mm. (C) Immunoblot analysis of indicated protein markers present in brain lysates, control immunoprecipitates from uninfected brains, and HA immunoprecipitates from hippocampi and striatum that were infected with SV-tag. (D) LC/MS profile of SVs isolated from wild-type mice brains infected with SV-tag in hippocampus compared to a control IP from uninfected brains. (mean ± SEM, n = 4). Color code and legend is the same as in Figure 2C. (E) LC/MS profile of SVs isolated from wild-type mice brains infected with SV-tag in striatum compared to uninfected brains. (mean ± SEM, n = 4) (F) Construct design for expression of SV-tag in neurons in a Cre-dependent manner. (G) LC/MS profile of SVs isolated from Slc32a1IRES-Cre/wt (VGATIRES-Cre) mice brains infected with SV-tag in striatum compared to uninfected brains. (mean ± SEM, n = 4) (H) Coronal sections from a Slc6a3IRES-Cre/wt mouse transduced with Cre-dependent SV-tag in dopaminergic neurons of the midbrain. Dopamine neurons are immunolabelled for tyrosine hydroxylase (TH, magenta), DAPI nuclear stain (blue) and SV-tag (red). (I) Targeted LC/MS profiling of dopamine in SVs isolated from Slc6a3IRES-Cre/wt mice transduced with Cre-dependent SV-tag in dopaminergic neurons of the midbrain. Indicated mice were subjected to saline injection or tetrabenazine injection intraperitoneally 2 hr prior to harvesting of SVs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59699/elife-59699-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunofluorescence images of transverse sections containing hippocampal CA3 transduced with SV-tag. A cut was made between CA2 and CA1 (dashed white line) to prevent recurrent excitation of these synapses. (B) Representative traces of evoked current responses in hippocampus from electrical stimulation. Vertical blue bars indicate stimulation that occurred with an interstimulus interval of 50 ms of Schaffer collaterals with (red) and without (black) expression of SV-tag. Vertical bar indicates 100 pA. Non-significant p-value = n.s. (C) Summary of paired-pulse ratios of electrically evoked synaptic responses from CA3 to CA1 synapses that were uninfected or expressing SV-tag. (D) Immmunoblot analysis of indicated proteins for synaptic vesicles (SVs) isolated from the whole-cell lysis method of brains compared to vesicles isolated with the synaptosome method. (E) Immunoblot analysis of SVs isolated from mouse brains transduced with SV-tag in the cortex. (F) Electron microscope image of SVs generated with the workflow. Values denote diameter of indicated particles. Scale bar: 100 nm (G) Coronal sections from Slc32a1IRES-Cre/wt (VGAT IRES-Cre/wt) and Adora2aCre/wt mice transduced with a Cre-dependent SV-tag in the striatum. (H) LC/MS profile of SVs isolated from Adora2aCre/wt mice brains infected with SV-tag in striatum compared with uninfected brains. (mean ± SEM, n = 4) (I) Representative traces of amperometry demonstrating the effects of DMSO (black) and tetrabenazine (black) on evoked dopamine. Blue indicates electrical stimulation. (J) Amperometry for dopamine in coronal slices prepared from mice administered intraperitoneally with tetrabenazine (30 mg/kg) or vehicle control 2 hr before slicing.
 
 Our initial attempts to isolate SVs from brain tissue using the same strategy developed for cultured neurons resulted in preps with poor yield and high background. This is not surprising given the complex structure and composition of brain tissue compared to cultured neurons, which grow as a homogeneous monolayer. To resolve these issues, we compared several lysis protocols for their efficiency in releasing SVs from neurons. Compared to forming and lysing synaptosomes, homogenizing the whole brain to immediately free SVs greatly improved yields (Figure 4—figure supplement 1D). Importantly, a motorized homogenizer was necessary for effective and rapid lysis. The addition of a final five-minute high-salt incubation after the IP further reduced background contamination. In combination, these changes enabled SV isolation in under 30 min from diverse brain regions, including hippocampus, cortex, and striatum (Figure 4C, Figure 4—figure supplement 1E). Moreover, SVs had minimal contamination of other subcellular organelles as demonstrated by immunoblot and electron microscope analyses (Figure 4C, Figure 4—figure supplement 1E, F).
 
@@ -91,7 +115,304 @@ In conclusion, the robustness and ease of our SV isolation and profiling methodo
 
 ## Materials and methods
 
-## Preparation of neuronal cultures and drug treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Wild-type</td>
+      <td>Jackson Labs</td>
+      <td>C57BL6/J, RRID:MGI:5650797</td>
+      <td>Stock #00644</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Albino Swiss mice</td>
+      <td>Charles River</td>
+      <td>CD-1 IGS, RRID:MGI:5653285</td>
+      <td>Stock #022</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Vgatires-cre</td>
+      <td>Jackson Labs</td>
+      <td>Slc32a1IRES-Cre, RRID:IMSR_NM-KI-200081</td>
+      <td>Stock #016962</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Datires-cre</td>
+      <td>Jackson Labs</td>
+      <td>Slc6a3IRES-Cre,RRID:IMSR_NM-KI-200092</td>
+      <td>Stock #006660</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Adora2aCre</td>
+      <td>GENSAT</td>
+      <td>RRID:MMRRC_034744-UCD</td>
+      <td>founder line KG139</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV2/9 hSynapsin SV-tag WPRE</td>
+      <td>BCH Viral Core</td>
+      <td>NA</td>
+      <td>Titer: 1.6 × 1014 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV2/9 Cre floxed SV-tag WPRE</td>
+      <td>BCH Viral Core</td>
+      <td>NA</td>
+      <td>Titer: 1.7 × 1014 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal synaptophysin</td>
+      <td>Synaptic Systems</td>
+      <td>101004, RRID:AB_1210382</td>
+      <td>(1:100) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal synaptophysin</td>
+      <td>Synaptic Systems</td>
+      <td>101002, RRID:AB_887905</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal synapsin</td>
+      <td>Cell Signaling Technology</td>
+      <td>5297S, RRID:AB_261578</td>
+      <td>(1:500) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal HA-Tag</td>
+      <td>Cell Signaling Technology</td>
+      <td>3724S, RRID:AB_1549585</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal synaptotagmin</td>
+      <td>Synaptic Systems</td>
+      <td>105011, RRID:AB_887832</td>
+      <td>(1:1500) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal synaptobrevin</td>
+      <td>Synaptic Systems</td>
+      <td>104211. RRID:AB_887811</td>
+      <td>(1:5000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal SV2A</td>
+      <td>Synaptic Systems</td>
+      <td>119003, RRID:AB_2725760</td>
+      <td>(1:2000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal VGLUT1</td>
+      <td>Synaptic Systems</td>
+      <td>135303, RRID:AB_887875</td>
+      <td>(1:1500) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal VGLUT2</td>
+      <td>Synaptic Systems</td>
+      <td>135421, RRID:AB_2619823</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal calreticulin</td>
+      <td>Cell Signaling Technology</td>
+      <td>12238S, RRID:AB_2688013</td>
+      <td>(1:250) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal GAPDH</td>
+      <td>Cell Signaling Technology</td>
+      <td>2118S, RRID:AB_1031003</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal Golgin-97</td>
+      <td>Cell Signaling Technology</td>
+      <td>13192S, RRID:AB_2798144</td>
+      <td>(1:200) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal VDAC</td>
+      <td>Cell Signaling Technology</td>
+      <td>4661S, RRID:AB_10557420</td>
+      <td>(1:500) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal LC3B</td>
+      <td>Cell Signaling Technology</td>
+      <td>2775S, RRID:AB_915950</td>
+      <td>(1:200) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal NMDA receptor</td>
+      <td>Synaptic Systems</td>
+      <td>114011, RRID:AB_887750</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Myelin basic protein</td>
+      <td>Synaptic Systems</td>
+      <td>295003, RRID:AB_2620036</td>
+      <td>(1:300) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Ca2+channel P/Q-type alpha1A unit</td>
+      <td>Synaptic Systems</td>
+      <td>152103, RRID:AB_887699</td>
+      <td>(1:300) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal apha1 Na+ K+ ATPase</td>
+      <td>Abcam</td>
+      <td>Ab7671, RRID:AB_306023</td>
+      <td>(1:300) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Transferrin receptor</td>
+      <td>Abcam</td>
+      <td>Ab84036, RRID:AB_10673794</td>
+      <td>(1:300) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal GLUT4</td>
+      <td>Cell Signaling Technology</td>
+      <td>2213S, RRID:AB_823508</td>
+      <td>(1:200) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal tyrosine hydroxylase</td>
+      <td>ImmunoStar</td>
+      <td>22941, RRID:AB_572268</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Bassoon</td>
+      <td>Enzo Life Sciences</td>
+      <td>SAP7F407, RRID:AB_1641480</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal VGAT</td>
+      <td>Synaptic Systems</td>
+      <td>131011, RRID:AB_887872</td>
+      <td>(1:1000) dilution</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse synatopbrevin protein (His tagged)</td>
+      <td>Abcam</td>
+      <td>Ab222979</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BafilomycinA</td>
+      <td>Millipore Sigma</td>
+      <td>196000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrabenazine</td>
+      <td>Sigma</td>
+      <td>T2952-10MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUbc SV-tag (lentiviral vector)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 1A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV hSynapsin SV-tag (AAV vector)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 4F</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV hSynapsin flexed SV-tag (AAV vector)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Figure 4F</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti CRISPR sgVGLUT1 (lentiviral vector)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Methods section,‘Lentiviral constructs and production’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti CRISPR sgVGLUT2 (lentiviral vector)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Methods section,‘Lentiviral constructs and production’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glutamate- Glo assay</td>
+      <td>Promega</td>
+      <td>J7021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-HA magnetic beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>88837, RRID:AB_2861399</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of neuronal cultures and drug treatments
 
 Primary dissociated cortical cultures were prepared from cortices of E16-E18 embryos of CD-1 mice (Charles River stock # 022) as described (Sciarretta and Minichiello, 2010). Cultured inhibitory neurons were prepared from the MGE of E13-E14 mice. The following modifications were made to enhance culture health: tissue pieces were digested with papain (Worthington) instead of trypsin-EDTA, DNAse (Sigma) was added to break down released genomic DNA and aid in more efficient trituration, and 1 ml pipette tips (PipetOne) were used to titurate the tissue instead of fire polished pipettes for more consistency.
 
@@ -99,45 +420,45 @@ For immunohistochemistry experiments, ~1 million cells were plated onto 24-well
 
 In experiments where SVs were isolated from BafilomycinA (BafA) treated neurons, prior to the isolation cells were treated for 2 hr with 500 nM BafA (EMD Millipore) or the corresponding DMSO volume.
 
-## Lentiviral constructs and production
+### Lentiviral constructs and production
 
 The following sense (S) and antisense (AS) oligonucleotides encoding the guide RNAs were cloned into a pLentiCRISPR vector (Addgene 52961):
 
 Lentiviruses were produced by transfection of viral HEK-293T cells with SV-tag in combination with the VSV-G envelope and CMV ΔVPR packaging plasmids. Twenty-four hours after transfection, the media was changed to fresh DMEM (Invitrogen) with 20% heat inactivated fetal bovine serum (Gemini BioProducts). Forty-eight hours after transfection, the virus containing supernatant was collected from the cells and centrifuged at 1000 g for 5 min to remove cells and debris. Supernatants were stored for up to 1 week at 4°C and added to plated cortical neurons at DIV 3.
 
-## SV isolation from cortical cultures
+### SV isolation from cortical cultures
 
 Five million neurons plated on a 10 cm tissue culture dish at DIV12-14 were used for each immunoisolation. No more than two plates were processed at a time to increase the speed of isolation. All buffers and tubes used were prechilled on ice, with the exception of the metabolite extraction mix, which was kept on dry ice, and all steps were performed swiftly. Neurons were placed on ice to chill, rapidly rinsed with ice-cold phosphate buffered saline (PBS) to remove residual media, and gently scraped into 1 ml PBS. Cells were pelleted by a brief centrifugation step at 2400 g for 40 s. The PBS was aspirated and 1 ml of homogenization buffer (320 mM sucrose, 4 mM HEPES NaOH, pH 7.4) supplemented with ﻿cOmplete EDTA-free protease inhibitor (Roche) and 1 mM ATP NaOH, pH 7.4. The cell pellet was uniformly resuspended with a 1 ml large bore tip (Fisher Scientific) and transferred to a 2 ml homogenizer (VWR International). To generate synaptosomes, the cells were homogenized with 25 steady strokes, with care taken to minimize formation of air bubbles. The homogenate was centrifuged at 2400 g for 40 s to pellet unbroken cells. The supernatant was then transferred to a new tube and centrifuged at 14000 g for 3 min to pellet synaptosomes. The supernatant was carefully removed and the pellet resuspended in 100 µl of homogenization buffer using a 200 ul large bore tip (Fisher Scientific). 900 µl of ice-cold ddH2O (MS grade) was added, and the liquid was immediately transferred to a 2 ml homogenizer. To lyse synaptosomes, the cells were homogenized with 12 steady strokes. Osmolarity was restored following homogenization by the addition of 1 mM ATP, 5 mM HEPES NaOH and 1X cOmplete EDTA-free protease inhibitor (final osmolality = 70 Osm). Finally, the homogenate was centrifuged at 17000 g for 3 min to remove any unbroken synaptosomes and debris. This process takes a total of ~12 min.
 
 To immunoisolate SVs, 150 µl of suspended, prewashed magnetic HA beads (Thermo Fisher Scientific) were added to the supernatant and incubated at 4°C with end-over-end rotation for 15 min. For washes, beads were captured with ﻿a DynaMag Spin Magnet (Thermo Fisher Scientific) for 40 s. Four washes were performed in succession by the addition of 1 ml of KPBS (﻿136 mM KCl, 10 mM KH2PO4, pH 7.25 in MS grade water) (Chen et al., 2016). Following the final wash, 25% of the KPBS-bead suspension was aliquoted for immunoblot analysis and the remaining 75% was subjected to metabolite extraction with 100 µl of 80% methanol/20% water supplemented with 500 µM internal amino acid standards. To ensure complete extraction, the beads were incubated with extraction mix for at least 10 min on dry ice prior to being separated from the mix. Extracted metabolites were subjected to a final 17000 g spin for 3 min to remove any particulates and stored at −80°C until the MS run. Results reported are from a single run with each condition containing at least three technical replicates.
 
-## Immunoblotting
+### Immunoblotting
 
 Protein from lysates were denatured by the addition of 50 µl of sample buffer. For whole-cell lysates, 0.5 µl of Benzonase (EMD Millipore) was added and incubated with the lysates for at least 5 min to break down genomic DNA. Samples were resolved by 8–16% SDS-PAGE, transferred for 2 hr at room temperature at 45 V to 0.45 mm PVDF membranes, and analyzed by immunoblotting as described previously (Chantranupong et al., 2016). Briefly, membranes were blocked with 5% milk prepared in TBST (Tris-buffered Saline with Tween 20) for at least 5 min at room temperature, then incubated with primary antibodies in 5% BSA TBST overnight at 4°C with end-over-end rotation. Primary antibodies targeting the following proteins were used at the indicated dilutions and obtained from the denoted companies: synaptophysin 1:2000 (SySy Cat # 101002), SV2A 1:2000 (SySy # 119003), HA 1:1000 (CST #C29F4), NMDAR 1:1000 (SySy #114011) (1:1000), synaptobrevin 1:5000 (SySy #104211), calreticulin 1:300 (CST #12238), VDAC 1:200 (CST#4661), LC3B 1:300 (CST #2775), GAPDH 1:2000 (CST #2118), synaptotagmin 1:1000 (SySy #105011), VGLUT1 1:2000 (SySy #135303), and VGLUT2 1:500 (SySy #135421). Following overnight incubation, membranes were washed three times, 5 min each, with TBST and incubated with the corresponding secondary antibodies in 5% milk (1:5000) for 1 hr at room temperature. Membranes were then washed three more times, 5 min each, with TBST before being visualized using enhanced chemiluminescence (Thermo Fisher Scientific).
 
-## Endogenous tagging of synaptophysin
+### Endogenous tagging of synaptophysin
 
 An endogenous triple HA-tag was appended onto the C-terminus of synaptophysin using the vSLENDR method (Nishiyama et al., 2017). An AAV construct (below) containing a guide targeting the C-terminus of synaptophysin (bracketed text), gRNA scaffold ( italic text), 5’ and 3’ homology arms flanking this region (normal text), and the triple HA-tag ( text within parentheses) replaced the mEGFP-cmak2a HDR cassette in the backbone of the pAAV-HDR-mEGFP-camk2a (Addgene #104589). This construct, which we term pAAV-HDR-sphys-3XHA, along with pAAV-EFS-SpCas9 were packaged at Boston Children’s Viral Core. Cortical neurons cultured on a cover slip were coinfected on DIV3 with 3.45e7genome copies (GC) of AAV-EFS-SpCas9 and 1.42e10 GC of AAV-HDR-sphys-3XHA. Neurons were processed for immunostaining at DIV12-14.
 
 ﻿5’ [﻿TTCTCCAATCAGATGTAATC]GTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGCTTTTTTGAATTCTTTTGGTTTTGTTTGAGACAGGATCTACTTATGTGACCCTGGCTGTCCTGGAACTCACTACTCAGACCAGACTGGCCTCAAACTCACAGACCTCTGCTTGCCTCTGCCTCCTGAGTACTAAGATGAAGACTGCACCACCACACCCAGCCCAAAAATGAGTTGTTTGAGGCTGACTTTCATGTTGCACAGGCTAGCCTCAAACTATGAATTTAAAGGTAGACTTGAATTTCTGGGTAGTGGAGGCAGAGACAGGCGACTTCTATGAGTTCCAGGCCAGCCTGGTCTACAGAGTGAATTCCAGGACAGCCAGGGCTGCAGAGAGACCCTGTCTCAAAAAAAAAAAGCTAGCCTTGAAGTGATCGCCCCTGCCTCCAGCTTCCTAAGATTACAAGATGTGGGCCTTCAGACTTGTCCATGTAAACACTGATAGAAGTTGAACATCATGGGAATCTAACACACACACACACACTCCCAAGTTTTTCTGTACACTGATAGTCATAGAGGCCCACGAATTTATGCCCTAAAAATGCCCATTCCTGTTCACTCAGCCTCAAAGACCCTGGGGCTGCCGAGGCAATGGGTAAGAGACAACAGCTTTGGTCATGTCTCCCTGCAGGTGTTTGGCTTCCTGAACCTGGTGCTCTGGGTTGGCAACCTATGGTTCGTGTTCAAGGAGACAGGCTGGGCCGCCCCATTCATGCGCGCACCTCCAGGCGCCCCAGAAAAGCAACCAGCTCCTGGCGATGCCTACGGCGATGCGGGCTATGGGCAGGGCCCCGGAGGCTATGGGCCCCAGGACTCCTACGGGCCTCAGGGTGGTTATCAACCCGATTACGGGCAGCCAGCCAGCGGCGGTGGCGGTGGCTACGGGCCTCAGGGCGACTATGGGCAGCAAGGCTACGGCCAACAGGGTGCGCCCACCTCCTTCTCCAACCAAATG(GGAGGGAGCGGCTATCCCTATGACGTGCCTGATTACGCCGGCACAGGATCCTACCCCTATGATGTGCCTGACTACGCTGGCAGCGCCGGATACCCTTATGATGTGCCTGATTATGCTTAA)TCTGGTGAGTGACAACTGGGCGGATGCGGTAGGCAGGGAGCATACAAGGAGTGAAGTTTGAAGGAACCAATAGATAGGCAGAACCAAAAAAAAAAAAAGGTGAACTTGGTAAAACTAGCCAATGAGAGGAACCGTGAGAAGGAAGGGGACGGAGCAGTGCTCAGAGTAACCAATGAAAGGAGTGTAGGGGCACTTGCGCAGTGGAGAATCACCAAAGTGGTGTAGGTTTCCAGGAAGGGAAGGGGAGGAGGGTCTTTGAAATCATTGGTAAACCAATAGGCGGTAACGCCAGTAGGTGGAAGAAGGTAAACACGTTGGGTTTTGAAGGGCGCTAGCGCTAAAGCAGGATGTAGGTCAGCTGCTACCTCTCCTTAACCCTTTAATGAAAGAGAGAGTTTGGAATTTCAAATGAGGAAAAGGGGAGGGCTGGAGGCCTTAGAAACACGAGTATGCCTTTTTGTTGGGCCTTTAAAAAATGAATGCCGCCGGACGGTGGAGGCGCACGCCTTTAATCCCAGCACTTGGGAGGCAGAAGCAGGCGGAGTTTTTGAGTTCGAGGCCAGCCTGGTCTACAAAGTGAGTTCCAGGACAGCCAGGGCTATACAGAGAAACCCTGTCGCGAAAAAAAAAAAAAAAAAAAAACCCTGCCTGGTGTGATGGAGCACATATATAATCCCAGCACTTGAGAGGTAGAGGCATGGGGATTGCAAGTTCTCGAGTCCTGCGTGGTCAGTATAGCCCAATCCTGTCTTAAACAGAGACGGTAACAGCATCTAGGTGGGAGCAGATGTGGTCCTGGGTGAGCCTTCTACAGCAACCCACATTTAATTGTTTTTAAACTCCTTGGACAGGCTCTGAGACACACCTTTAAGCACAGCTCTGGGGGAATTAGAGACAGGCCTAGGTCTCTTGTTTTGCAAAGCAATTTCCAGGCTGC 3’.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Cells were fixed in 4% PFA 4% sucrose in PBS for 10 min, and washed in PBS twice for 10 min each with shaking at room temperature. Cells were then blocked in 1 ml of blocking solution (10% BSA, 10% normal goat serum, PBS) for 30 min at room temperature. Cells were washed with 1 ml of TBST (0.2% TritonX-100 in PBS) for 10 min. Primary antibodies were suspended in BTBST (1% BSA, 1% normal goat serum PBS) and 300 ul was added to each slip. The following concentrations were used: synapsin 1:500 (CST #5297), synaptophysin 1:1000 (SySy 101004), synaptotagmin 1:1000, and HA 1:500 (CST#2367). Cells were incubated overnight at 4°C or at room temperature for 1.5 hr. Following this, cells were washed three times, 10 min each, in 1 ml of PBS with rocking at room temperature. The following secondary antibodies (Thermo Fisher Scientific) were diluted in BTBST and added at a 1:500 dilution: goat anti-rabbit Alexa Fluor 488, goat anti-guinea pig Alexa Fluor 488, goat anti-rabbit Alexa Fluor 647. Cells were covered from light and incubated at room temperature for 2 hr, washed three more times in PBS for 10 min each and mounted on cover slides with Floromount G (Thermo Fisher Scientific). Slips were imaged an Olympus VS120 slide scanning microscope.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 To free SVs from beads, we relied on a protease strategy as the HA binding strength to its cognate antibody is too strong to be dissociated by peptide competition. We used ficin (Sigma), a cysteine protease that can rapidly digest murine monoclonal IgGs (Mariani et al., 1991). Following the IP, SVs were equilibrated with three washes of ficin buffer (50 mM Tris pH 7.0, 2 mM EDTA, 1 mM cysteine). The supernatant was removed and replaced with 100 µl of ficin buffer supplemented with 5 mg/ml ficin (Sigma). SVs were incubated at 37°C for 20 min to enable ficin to be active. Supernatant was removed and immediately chilled on ice prior to EM analysis. Images were acquired at the Electron Microscopy Core at Harvard Medical School. 5 µl of the sample was adsorbed for 1 min to a carbon coated grid that had been made hydrophilic by a 30 s exposure to a glow discharge. Excess liquid was removed with a filter paper (Whatman #1) and the samples were stained with 0.75% uranyl formate for 30 s. After removing the excess uranyl formate with a filter paper the grids were examined in a JEOL 1200EX Transmission electron microscope or a TecnaiG² Spirit BioTWIN and images were recorded with an AMT 2 k CCD camera.
 
-## Quantitative immunoblotting
+### Quantitative immunoblotting
 
 To determine the protein concentration of the whole-cell input, 50 µl of the initial cellular lysate was pelleted with a 17,000 g spin at 4°C for 5 min and the whole-cell pellet lysed for 10 min in Triton elution buffer (1% TritonX-100, 500 mM NaCl, 5 mM HEPES pH 7.4, 1X protease inhibitors). The lysate was clarified with at 17,000 g spin at 4°C for 10 min and the supernatant analyzed for protein content with the BCA assay (Pierce). To determine the protein concentration of isolated SVs, the final HA immunoisolate from SV-tag expressing cells was eluted in 70 μl Triton buffer for 15 min at 32°C and 30 μl was analyzed for protein content with the BCA assay. A fraction of the immunoisolate and the whole-cell input were loaded onto an SDS-PAGE gel alongside varying concentrations of recombinant His tagged synaptobrevin (Abcam) and immunoblotting was performed for synaptobrevin (Synaptic Systems). The immunoblot signal intensity was quantified via ImageJ and the concentration of synaptobrevin extrapolated based on the standard curve generated by recombinant synaptobrevin.
 
-## Luminescence assay for glutamate
+### Luminescence assay for glutamate
 
 Following immunoisolation, SVs were permeabilized with 70 μl of Triton elution buffer and incubated at 37°C for 20 min to ensure complete permeabilization. 15 µl of this eluent was saved for immunoblot analyses. To detect glutamate, the Glutamate Glo Assay Kit (Promega) was used. 50 µl of eluent was combined into a 96-well plate with a 50 µl mix of Luciferin detection solution, which contains reductase, reductase substrate, glutamate hydrogenase, and NAD as specified. The mixture was incubated at room temperature for 1 hr and luminescence was detected with a florescent plate reader (BioTek).
 
-## Proteomics run and analysis
+### Proteomics run and analysis
 
 To ensure sufficient yields for proteomic analysis, each sample combined cells from three plates, for a total of 15 million neurons. Following immunoisolation, SVs were permeabilized with 70 µl of Triton elution buffer at 32°C for 20 min. Eluents from the three plates were pooled into a common tube. 20 µl of this mix was saved for immunoblot analysis. The remaining eluent was transferred to a new tube and subjected to TCA precipitation. Briefly, the volume of eluent was raised to 400 μl with MS grade, ice-cold water. 100 µl of 100% tricloroacetic acid (TCA) was added to this mixture.
 
@@ -147,60 +468,60 @@ On the day of analysis the samples were reconstituted in 5–10 µl of HPLC solv
 
 As peptides eluted they were subjected to electrospray ionization and then entered into an LTQ Orbitrap Velos Pro ion-trap mass spectrometer (Thermo Fisher Scientific, Waltham, MA). Peptides were detected, isolated, and fragmented to produce a tandem mass spectrum of specific fragment ions for each peptide. Peptide sequences (and hence protein identity) were determined by matching protein databases with the acquired fragmentation pattern by the software program, Sequest (Thermo Fisher Scientific, Waltham, MA) (Eng et al., 1994). All databases include a reversed version of all the sequences and the data was filtered to between a one and two percent peptide false discovery rate. Results reported are from a single run with each condition containing three technical replicates.
 
-## Mice
+### Mice
 
 The following mouse strains/lines were used in this study: CD-1 IGS (Charles River Laboratories, Stock # 022); C57BL/6J (The Jackson Laboratory, Stock # 000664); DAT-IRES-Cre (The Jackson Laboratory, Stock #006660)(referred to as Slc6a3IRES-Cre mice); VGAT-IRES-Cre (The Jackson Laboratory, Stock #016962) (referred to as Slc32a1IRES-Cre mice); genetically targeted Adora2aCre BAC transgenic mice (GENSAT, founder line KG139), which express Cre under transcriptional control of the adenosine A2A receptor genomic promoter (Durieux et al., 2009). All animals were kept on a regular 12:12 light/dark cycle under standard housing conditions. All experimental manipulations were performed in accordance with protocols approved by the Harvard Standing Committee on Animal Care following guidelines described in the US National Institutes of Health Guide for the Care and Use of Laboratory Animals.
 
-## SV isolation from whole brain
+### SV isolation from whole brain
 
 Mice were rapidly anesthetized with isoflurane and brains were quickly extracted from mice on ice. To ensure more efficient homogenization, each brain was divided in half along the midline and transferred immediately to a homogenizer containing 1.5 ml of ice-cold lysis buffer (KPBS supplemented with 1 mM ATP and cOmplete EDTA-free protease inhibitor). Brains were rapidly lysed with 30 strokes using a motorized homogenizer, taking care not to introduce bubbles. Lysates were transferred to prechilled 2 ml tubes and centrifuged at 17, 000 g for 3 min to pellet unbroken cells, contaminating organelles and debris. Supernatants were transferred to new 1.5 ml tubes and subjected to IP with 150 µl HA beads for 15 min with end-over-end rotation. Following the IP, the beads were washed four times in KPBS supplemented with 500 mM NaCl to enhance cleanliness. In the final wash, the IP was incubated with end-over-end rotation at 4°C for 5 min to further remove contaminants. Following this final wash, immunoprecipitates were processed for immunoblot and metabolite analysis as described for cortical culture SVs described above.
 
-## Stereotaxic injections
+### Stereotaxic injections
 
 Injections were performed as previously described (Huang et al., 2019). AAVs for SV-tag was obtained from Boston Children’s Virus Core and infused at a concetration of ~10^12 GC/ml. AAVs were infused into target regions at approximately 50 nl/min using a syringe pump (Harvard Apparatus, #883015), and pipettes were slowly withdrawn (<10 µm/s) at least 8 min after the end of the infusion. All coordinates are relative to Bregma along the anterior-posterior (AP) axis and medial-lateral (ML) axis, and relative to the pial surface along the dorsoventral axis (DV). Coordinates for injections are as follows: cortex site 1: AP = −2.5 mm, ML = −2.0 mm, DV = −0.4 mm, cortex site 2: AP = −1.0 mm, ML = −1.5 mm, DV = −0.4 mm, striatum: AP = +0.6 mm, ML = 1.7 mm, DV = −3.33 mm, hippocampus AP = −2.5 mm, ML = −1.5 mm, DV = −1.5 mm; hippocampus transverse (for paired-pulse ratio measurements): AP = −2.9 mm, ML = −3.15 mm, DV = −3.3 mm, substantia nigra: AP = −3.3 mm, ML = −1.5 mm, DV = −4.3 mm. Bilateral injections were performed for all mice used, with the exception of cortex, in which four injections were performed to maximally cover the cortical area. Following wound closure, mice were placed in a cage with a heating pad until their activity was recovered before returning to their home cage. Mice were given pre- and post-operative oral carprofen (MediGel CPF, 5 mg/kg/day) as an analgesic, and monitored daily for at least 4 days post-surgery.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were anaesthetized by isoflurane inhalation and perfused cardiacly with PBS followed by 4% PFA in PBS. Brains were extracted and stored in 4% PFA PBS for at least 8 hr. Brains were sliced into 70 μm thick free-floating sections with a Leica VT1000 s vibratome. Selected slices were transferred to a clean six well plate and rinsed three times, 5 min each in PBS. They were then blocked with rotation at room temperature for an hour in blocking buffer (5% normal goat serum (Abcam), 0.2% TritonX-100 PBS). Blocking buffer was removed and replaced with 500 μl of a solution containing a 1:500 dilution of anti- tyrosine hydroxylase antibody (Millipore Sigma). Slices were incubated overnight with side to side rotation at 4°C. The next day, slices were transferred to a clean well and washed five times, 5 min each in PBST (PBS with 0.2% TritonX-100). Following the final wash, slices were incubated for 1.5 hr in 500 μl of secondary antibody (goat anti mouse Alexa Fluor 647) diluted 1:500 in blocking buffer. Slices were washed four times in PBST, then four times in PBS for 5 min (5 min for each wash) before mounting with Floromount G (Thermo Fisher Scientific). Slices were imaged an Olympus VS120 slide scanning microscope, including those housed in the Neuro Imaging Facility.
 
-## Electrophysiology
+### Electrophysiology
 
 Coverslips containing cultured neurons or acute brain slices were transferred into a recording chamber mounted on an upright microscope (Olympus BX51WI) and continuously superfused (2–3 ml min−1) with ACSF containing (in mM) 125 NaCl, 2.5 KCl, 25 NaHCO3, 2 CaCl2, 1 MgCl2, 1.25 NaH2PO4, and 25 glucose (295 mOsm kg−1). ACSF was warmed to 32–34°C by passing it through a feedback-controlled in-line heater (SH-27B; Warner Instruments). Cells were visualized through a 60X water-immersion objective with either infrared differential interference contrast optics or epifluorescence to identify tdTomato+ cells. For whole-cell voltage clamp recordings, patch pipettes (2–4 MΩ) pulled from borosilicate glass (G150F-3, Warner Instruments) were filled with a Cs+-based low Cl– internal solution containing (in mM) 135 CsMeSO3, 10 HEPES, 1 EGTA, 3.3 QX-314 (Cl− salt), 4 Mg-ATP, 0.3 Na-GTP, 8 Na2-phosphocreatine (pH 7.3 adjusted with CsOH; 295 mOsm·kg−1) For voltage clamp recordings, mEPSCs were recorded for 5 min in the presence of 1 μM tetrodotoxin (Tocris), 10 μM CPP (Tocris), and 10 μM gabazine (Tocris) at a holding potential of −70 mV. Paired evoked EPSCs for probability of release measurements were recorded as previously described (Jackman et al., 2016). Briefly, a cut was made between CA3 and CA1 to prevent recurrent excitation. Extracellular stimulation was performed with a stimulus isolation unit (Iso-flex). Bipolar electrodes (PlasticOne) were placed near CA3 proximal to the cut and stimulation parameters were 20 Hz, 50–100 µA. Paired evoked-EPSCs from CA1 cells were recorded at a holding potential of −70 mV with 10 μM gabazine added to the bath.
 
-## Acute brain slice preparation
+### Acute brain slice preparation
 
 Brain slices were obtained from 2- to 4-month-old mice (both male and female) using standard techniques. Mice were anaesthetized by isoflurane inhalation and perfused cardiacly with ice-cold ACSF containing (in mM) 125 NaCl, 2.5 KCl, 25 NaHCO3, 2 CaCl2, 1 MgCl2, 1.25 NaH2PO4, and 25 glucose (295 mOsm kg−1). Brains were blocked and transferred into a slicing chamber containing ice-cold ACSF. Coronal slices of striatum for amperometric recordings or transverse slices of hippocampus (for probability of release measurements) were cut at 300 μm thickness with a Leica VT1000 s vibratome in ice-cold ACSF, transferred for 10 min to a holding chamber containing choline-based solution (consisting of (in mM): 110 choline chloride, 25 NaHCO3, 2.5 KCl, 7 MgCl2, 0.5 CaCl2, 1.25 NaH2PO4, 25 glucose, 11.6 ascorbic acid, and 3.1 pyruvic acid) at 34°C then transferred to a secondary holding chamber containing ACSF at 34C for 10 min and subsequently maintained at room temperature (20–22°C) until use. All recordings were obtained within 4 hr of slicing. Both choline solution and ACSF were constantly bubbled with 95% O2/5% CO2.
 
-## Amperometric recordings
+### Amperometric recordings
 
 To deplete presynaptic terminals of dopamine, Slc6a3IRES−Cre mice were administered the VMAT2 antagonist tetrabenazine (Sigma, 30 mg kg−1 intraperitoneally) 2 hr before slicing. Control mice were injected with a DMSO/saline mixture containing the same proportion of both solvents as would be used for a tetrabenazine injection. Constant-potential amperometry was performed as previously described (Tritsch et al., 2012). Briefly, glass-encased carbon-fiber microelectrodes (CFE1011 from Kation scientific - 7 μm diameter, 100 μm length) were placed approximately 50–100 μm within dorsal striatum slices and held at a constant voltage of + 600 mV vs. Ag/AgCl by a Multiclamp 700B amplifier (Molecular Devices). Electrodes were calibrated with fresh 5 μM dopamine standards in ACSF to determine CFE sensitivity and to allow conversion of current amplitude to extracellular dopamine concentration. Dopaminergic terminals surrounding the CFE were stimulated by Bipolar electrodes with 0.1 ms and 100–250 µA delivered at 3 min intervals.
 
-## Data acquisition and analysis
+### Data acquisition and analysis
 
 Membrane currents were amplified and low-pass filtered at 3 kHz using a Multiclamp 700B amplifier (Molecular Devices), digitized at 10 kHz and acquired using National Instruments acquisition boards and a custom software (https://github.com/bernardosabatini/SabalabAcq) written in MATLAB (Mathworks). Amperometry and electrophysiology were analyzed offline using Igor Pro (Wavemetrics). Detection threshold for mEPSCs was set at 7 pA. Averaged waveforms were used to obtain current latency, peak amplitude, 10–90% rise time and decay time. Current onset was measured using a threshold set at three standard deviations of baseline noise. Peak amplitudes were calculated by averaging over a 2 ms window around the peak. Data were compared statistically by unpaired two-tailed Student’s t-test. p values less than 0.05 were considered statistically significant.
 
-## GC/MS
+### GC/MS
 
 GC-MS analysis was carried out and analyzed as described (Parker et al., 2017). In brief, dried, extracted metabolites were derivatized using a MOX-tBDMCS method and analyzed by GC-MS using a DB-35MS column (30 m × 0.25 mm i.d., 0.25 µm) in an Agilent 7890B gas chromatograph interfaced with a 5977B mass spectrometer. Metabolites were identified by unique fragments and retention time in comparison to known standards. Peaks were picked in OpenChrom and integrated and corrected for natural isotopic abundance using in-house algorithms adapted from Fernandez et al., 1996; Lewis et al., 2014; Wenig and Odermatt, 2010.
 
-## LC-MS/MS with the hybrid metabolomics method
+### LC-MS/MS with the hybrid metabolomics method
 
 Samples were subjected to an LCMS analysis to detect and quantify known peaks. A metabolite extraction was carried out on each sample with a previously described method (Pacold et al., 2016). The LC column was a Millipore ZIC-pHILIC (2.1 × 150 mm, 5 μm) coupled to a Dionex Ultimate 3000 system and the column oven temperature was set to 25°C for the gradient elution. A flow rate of 100 μl/min was used with the following buffers; (A) 10 mM ammonium carbonate in water, pH 9.0, and (B) neat acetonitrile. The gradient profile was as follows; 80–20%B (0–30 min), 20–80%B (30–31 min), 80–80%B (31–42 min). Injection volume was set to 1 μl for all analyses (42 min total run time per injection). MS analyses were carried out by coupling the LC system to a Thermo Q Exactive HF mass spectrometer operating in heated electrospray ionization mode (HESI). Method duration was 30 min with a polarity-switching data-dependent Top five method for both positive and negative modes. Spray voltage for both positive and negative modes was 3.5kV and capillary temperature was set to 320°C with a sheath gas rate of 35, aux gas of 10, and max spray current of 100 μA. The full MS scan for both polarities utilized 120,000 resolution with an AGC target of 3e6 and a maximum IT of 100 ms, and the scan range was from 67 to 1000 m/z. Tandem MS spectra for both positive and negative mode used a resolution of 15,000, AGC target of 1e5, maximum IT of 50 ms, isolation window of 0.4 m/z, isolation offset of 0.1 m/z, fixed first mass of 50 m/z, and 3- way multiplexed normalized collision energies (nCE) of 10, 35, 80. The minimum AGC target was 1e4 with an intensity threshold of 2e5. All data were acquired in profile mode.
 
-## Metabolomics data processing
+### Metabolomics data processing
 
-## Relative quantification of metabolites
+#### Relative quantification of metabolites
 
 The resulting Thermo RAW files were converted to mzXML format using ReAdW.exe version 4.3.1 to enable peak detection and quantification. The centroided data were searched using an in-house python script Mighty_skeleton version 0.0.2 and peak heights were extracted from the mzXML files based on a previously established library of metabolite retention times and accurate masses adapted from the Whitehead Institute (Chen et al., 2016), and verified with authentic standards and/or high-resolution MS/MS spectral manually curated against the NIST14MS/MS (Voge et al., 2016) and METLIN (2017) (Smith et al., 2005) tandem mass spectral libraries. Metabolite peaks were extracted based on the theoretical m/z of the expected ion type for example [M+H]+, with a ± 5 part-per-million (ppm) tolerance, and a ± 7.5 s peak apex retention time tolerance within an initial retention time search window of ±0.5 min across the study samples.
 
-## Detection of untargeted features
+#### Detection of untargeted features
 
 The MS1 level data in both positive and negative mode were searched for representative features across all study files using an in-house python script called Ungrid (version 0.5). The algorithm reduces all detected MS1 peak data into representative features by sorting intensity from high to low (across all samples) and then applying an array bisection algorithm (python v3.0.1) on the m/z and retention time values with custom tolerances (25 ppm m/z tolerance for peak discrimination, 0.5 min RT delta for chromatographic discrimination, 1e5 minimum intensity, 10X signal to noise (within spectrum)). The output is a list of representative high intensity features of a defined m/z and retention time. These feature intensities were then extracted across all samples using Mighty_skeleton (above) to give the peak intensities for each feature in each sample.
 
-## Metabolomics informatics
+#### Metabolomics informatics
 
 The resulting data matrices of metabolite intensities for all samples and blank controls (either retention time library data or untargeted data) was processed with an in-house statistical pipeline Metabolyze version 1.0 and final peak detection was calculated based on a signal to noise ratio (S/N) of 3X compared to blank controls, with a floor of 10,000 (arbitrary units). For samples where the peak intensity was lower than the blank threshold, metabolites were annotated as not detected, and the threshold value was imputed for any statistical comparisons to enable an estimate of the fold change as applicable. The resulting blank corrected data matrix was then used for all group-wise comparisons, and t-tests were performed with the Python SciPy (1.1.0) (Jones et al., 2020) library to test for differences and generate statistics for downstream analyses. Any metabolite with p-value<0.05 was considered significantly regulated (up or down). Any outliers were omitted with the Grubb’s outlier test. Values are reported as log2 fold changes ± standard error of the mean. In order to adjust for significant covariate effects (as applicable) in the experimental design the R package, DESeq2 (1.24.0) (Love et al., 2014) was used to test for significant differences. Data processing for this correction required the blank corrected matrix to be imputed with zeroes for non-detected values instead of the blank threshold to avoid false positives. This corrected matrix was then analyzed utilizing DESeq2 to calculate the adjusted p-value in the covariate model.
 
-## Targeted LC/MS for absolute quantification of dopamine
+### Targeted LC/MS for absolute quantification of dopamine
 
 Metabolite profiling was conducted on a QExactive bench top orbitrap mass spectrometer equipped with an Ion Max source and a HESI II probe, which was coupled to a Dionex UltiMate 3000 HPLC system (Thermo Fisher Scientific, San Jose, CA). External mass calibration was performed using the standard calibration mixture every 7 days. 5 µl were injected onto a SeQuant ZIC-pHILIC 150 × 2.1 mm analytical column equipped with a 2.1 × 20 mm guard column (both 5 mm particle size; EMD Millipore). The following method was adapted from Tufi et al., 2015: Buffer A was 10 mM ammonium formate with 0.2% formic acid in 90% acetonitrile; Buffer B was water with 0.2% formic acid. The column oven and autosampler tray were held at 25°C and 4°C, respectively. The chromatographic gradient was run at a flow rate of 0.300 ml/min as follows: 0–2 min: hold at 0% B; 2.5–15 min.: linear gradient form 0–40% B; 15.5–16 min.: linear gradient from 40–0% B; 16–21 min.: hold at 0% B. The mass spectrometer was operated in full-scan, polarity-switching mode, with the spray voltage set to 3.0 kV, the heated capillary held at 275°C, and the HESI probe held at 350°C. The sheath gas flow was set to 40 units, the auxiliary gas flow was set to 15 units, and the sweep gas flow was set to one unit. MS data acquisition was performed in a range of m/z = 70–1000, with the resolution set at 70,000, the AGC targeted at 1 × 106, and the maximum injection time was 20 msec. In addition, timed targeted selected ion monitoring (tSIM) scans were included in positive mode to enhance detection of Dopamine (m/z 154.08626). MS settings were as described above, with the AGC target set at 1 × 105, the maximum injection time was 200 ms, and the isolation window was 1.0 m/z. Raw peak areas were normalized to phenylalanine-13C9-15N as an internal standard.

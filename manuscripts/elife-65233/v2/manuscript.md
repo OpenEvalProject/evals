@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Intracisternal A-particles (IAPs) are endogenous retroviruses (ERVs) responsible for most insertional mutations in the mouse. Full-length IAPs harbour genes flanked by long terminal repeats (LTRs). Here, we identify a solo LTR IAP variant ( Iap5-1 ) recently formed in the inbred C57BL/6J mouse strain. In contrast to the C57BL/6J full-length IAP at this locus ( solo Iap5-1 ), full Iap5-1 lacks DNA methylation and H3K9 trimethylation. The distinct DNA methylation levels between the two alleles are established during preimplantation development, likely due to loss of KRAB zinc finger protein binding at the solo Iap5-1 variant. solo Iap5-1 methylation increases and becomes more variable in a hybrid genetic background yet is unresponsive to maternal dietary methyl supplementation. Differential epigenetic modification of the two variants is associated with metabolic differences and tissue-specific changes in adjacent gene expression. Our characterisation of solo Iap5-1 as a genetically induced epiallele with functional consequences establishes a new model to study transposable element repression and host-element co-evolution.
+Intracisternal A-particles (IAPs) are endogenous retroviruses (ERVs) responsible for most insertional mutations in the mouse. Full-length IAPs harbour genes flanked by long terminal repeats (LTRs). Here, we identify a solo LTR IAP variant (Iap5-1solo) recently formed in the inbred C57BL/6J mouse strain. In contrast to the C57BL/6J full-length IAP at this locus (Iap5-1full), Iap5-1solo lacks DNA methylation and H3K9 trimethylation. The distinct DNA methylation levels between the two alleles are established during preimplantation development, likely due to loss of KRAB zinc finger protein binding at the Iap5-1solo variant. Iap5-1solo methylation increases and becomes more variable in a hybrid genetic background yet is unresponsive to maternal dietary methyl supplementation. Differential epigenetic modification of the two variants is associated with metabolic differences and tissue-specific changes in adjacent gene expression. Our characterisation of Iap5-1 as a genetically induced epiallele with functional consequences establishes a new model to study transposable element repression and host-element co-evolution.
 
 ## Introduction
 
@@ -32,19 +32,43 @@ Here we show that IAP-Pgm2, in sharp contrast to VM-IAPs, exhibits two distinct 
 
 ## Results
 
-## IAP-Pgm2 methylation is tri-modally distributed in inbred B6 mice
+### IAP-Pgm2 methylation is tri-modally distributed in inbred B6 mice
 
 Following our genome-wide screen for VM-IAPs in the B6 genome, DNA methylation at the distal CpGs of the 5′ LTR of each candidate was validated using genomic DNA (gDNA) extracted from adult inbred B6 mice (Elmer et al., 2021; Kazachenka et al., 2018). While VM-IAP DNA methylation levels display continuous probability distributions in the B6 population, the IAP-Pgm2 5′ LTR exhibited three distinct states: high (>85%), low (<20%), and intermediate (60–70%) methylation (Figure 1A and B). This pattern was observed in both sexes (Figure 1—figure supplement 2). In addition, 5′ and 3′ LTR methylation levels were consistent with one another within an individual (Figure 1A and B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig1-v2.jpg)
+
+**Figure 1.:** (A) Map of CpG positions in the IAP-Pgm2 long terminal repeats (LTRs). CpGs assayed in panel B are shown in red. (B) IAP-Pgm2 methylation levels are consistent between the 5′ and 3′ ends. Methylation levels were quantified at the most distal CpGs of the IAP-Pgm2 5′ and 3′ LTRs (nearest to the boundary with unique DNA) using bisulphite pyrosequencing in ear DNA. Each point represents a CpG, each line represents an individual, and error bars represent standard deviations of technical triplicates. (C) Inter-individual methylation variation collapses within 500 bp on either side of IAP-Pgm2. Data presentation as in panel A. Assayed CpGs are shown in red above the graph. (D) Stable Mendelian inheritance of IAP-Pgm2 methylation reveals that high (blue, H) and low (orange, L) methylation reflect two allelic states of IAP-Pgm2, with intermediate methylation (orange, I) representing heterozygosity. Each data point represents average methylation of ear DNA across the four most distal CpGs of the 5′ LTR for one individual.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Details lifted from the Pfam database (https://pfam.xfam.org). Genomic distances are drawn to scale.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** IAP-Pgm2 methylation levels in both B6 males and females segregate into three distinct DNA methylation states: high (blue), intermediate (green), and low (orange).
+
 Methylation quantification of unique non-repetitive DNA immediately up- and downstream of IAP-Pgm2 showed that the three distinct methylation states become less defined as the distance from the LTR borders increases, ultimately collapsing approximately 500 bp from either side of the IAP (Figure 1C). This provides evidence for short-distance spreading of DNA methylation levels from IAP-Pgm2 into bordering DNA and suggests that the methylation differences observed between individuals are intrinsic to the IAP-Pgm2 element rather than a reflection of differential methylation of the insertion site prior to integration.
 
-## IAP-Pgm2 methylation exhibits stable Mendelian inheritance
+### IAP-Pgm2 methylation exhibits stable Mendelian inheritance
 
 One of the characteristic properties of VM-IAPs is the reconstruction of inter-individual methylation variability from one generation to another regardless of parental methylation level (Kazachenka et al., 2018). To test whether this phenomenon occurs at IAP-Pgm2, specific parental combinations were set up for breeding and IAP-Pgm2 5′ LTR methylation levels were quantified in the offspring. In stark contrast to VM-IAPs, IAP-Pgm2 exhibited stable inheritance of methylation levels. Offspring born to highly methylated parents were all highly methylated and offspring born to lowly methylated parents were all lowly methylated (Figure 1D). When one parent was highly methylated and the other lowly methylated, all offspring were intermediately methylated (Figure 1D). This indicates that high and low methylation states are allelic variants of IAP-Pgm2 (designated IAP-Pgm2HH and IAP-Pgm2LL), with intermediate methylation representing co-dominant epigenetic heterozygosity (IAP-Pgm2HL). Additional crosses confirmed this inheritance pattern: an IAP-Pgm2HL intercross produced IAP-Pgm2HH, IAP-Pgm2LL, and IAP-Pgm2HL offspring; an IAP-Pgm2HH x IAP-Pgm2HL cross produced IAP-Pgm2HH and IAP-Pgm2HL offspring; and an IAP-Pgm2LL x IAP-Pgm2HL cross produced IAP-Pgm2LL and IAP-Pgm2HL offspring (Figure 1D). These results additionally demonstrate that the methylation state of one IAP-Pgm2 variant does not influence the methylation state of the other in a heterozygous context.
 
-## The methylation state of IAP-Pgm2 is genetically determined
+### The methylation state of IAP-Pgm2 is genetically determined
 
 The stable inheritance of IAP-Pgm2 methylation is indicative of a spontaneous genetic mutation in the B6 population, either in the IAP element itself or in a gene involved in its epigenetic regulation. To investigate the former possibility, we designed PCR primers amplifying the entirety of IAP-Pgm2 from IAP-Pgm2HH and IAP-Pgm2LL gDNA (Figure 2A). Nested primer pairs N1 and N2 amplified two overlapping fragments, each containing half of the IAP-Pgm2 element (Figure 2A). Agarose gel electrophoresis of the PCR products revealed amplification of both fragments from IAP-Pgm2HH gDNA but no amplification of either fragment from IAP-Pgm2LL gDNA (Figure 2B and C), pointing to a substantial genetic difference between IAP-Pgm2HH and IAP-Pgm2LL individuals.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig2-v2.jpg)
+
+**Figure 2.:** (A) Map of PCR primer pairs P1–P3 and nested PCR primer pairs N1–N3 (not drawn to scale). (B and C) Agarose gel electrophoresis of PCR products amplified from three IAP-Pgm2HH and three IAP-Pgm2LL DNA samples using primer pairs N1 and N2. (D) As in panels B and C, but using primer pair N3 and including three IAP-Pgm2HL DNA samples. (E) Schematic representation of the alignment of the IAP-Pgm2 mm10 reference sequence and the assembled IAP-Pgm2H and IAP-Pgm2L sequences following Sanger sequencing (not drawn to scale). The IAP-Pgm2L solo LTR could have equivalently been shown aligned to the 3′ LTR because the 5′ and 3′ LTRs have identical sequences. The base-resolution sequence of the new IAP-Pgm2L allele, renamed Iap5-1solo, is available on GenBank (accession number: MW308129). (F) Both Iap5-1 variants are methylated in the male germline, with differential methylation re-established in early embryonic development. DNA methylation levels at the Iap5-1full and Iap5-1solo alleles were quantified in oocytes, sperm, blastocysts, ESC lines, and E16.5 embryonic tail and placenta samples. Respective data points represent the following: 100 pooled oocytes, sperm collected from one male, pooled littermate blastocysts, one ESC line, and individual E16.5 embryos and placentas. All data points represent average DNA methylation across the four most distal CpGs of the 5′ end of Iap5-1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Intra-chromosomal homologous recombination between the 5′ and 3′ LTRs of the repeat element, giving rise to a solo LTR and a circularised unintegrated viral fragment. (B) Inter-chromosomal recombination between identical LTRs on sister chromatids or homologous chromosomes, producing a solo LTR on one DNA strand and a tandem duplication on the other. Diagrams adapted from Seperack et al., 1988.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A and B) Clonal bisulphite sequencing of the 5′ and 3′ ends of Iap5-1full (A) and of the Iap5-1solo LTR (B) in adult liver. Each line represents an individual PCR clone and each circle represents a single CpG (white circle, unmethylated CpG; black circle, methylated CpG). Each block of clones represents an individual mouse. Diagrams of the two variants are shown above the sequencing data.
 
 The nested primer pair N3 was designed to target the unique bordering regions on either side of the IAP element, amplifying an 8.5 kb fragment based on the GRC38/mm10 (mm10) genome assembly (Figure 2A). While no DNA bands were observed following the use of this primer pair on IAP-Pgm2HH gDNA, a 1.5 kb band was amplified from both IAP-Pgm2LL and IAP-Pgm2HL gDNA (Figure 2D). The smaller amplicon is indicative of a 7 kb deletion on the IAP-Pgm2L allele between the two primer annealing sites, while the lack of amplification from the IAP-Pgm2H allele is likely due to the technical challenges associated with amplifying a large repetitive DNA fragment.
 
@@ -52,7 +76,7 @@ To determine the location of the 7 kb deletion, we purified and sequenced the PC
 
 Inter-LTR recombination events occur when identical or near-identical LTR sequences engage in ectopic homologous recombination, resulting in the formation of solo LTRs (Jern and Coffin, 2008). These can occur both intra- and inter-chromosomally (Figure 2—figure supplement 1). Although we identified both Iap5-1 allelic variants in our own B6 colony, we also detected them in B6 samples sent to us from mainland Europe and North America (data not shown), so the recombination event most likely occurred at a B6-distributing facility. This type of proviral excision event is common: approximately half of the IAPs in the mouse genome are solo LTRs (Nellåker et al., 2012). However, the vast majority of the ~5,000 solo LTRs in the B6 genome are highly methylated (Shimosuga et al., 2017), making Iap5-1solo unique from a regulatory perspective and raising questions regarding the functional consequences of a solo LTR left unmodified. Using clonal bisulphite sequencing, we confirmed that the entirety of the Iap5-1solo solo LTR is unmethylated (bar the occasional methylated CpGs at the 5′ end, consistent with the pyrosequencing data) while all CpGs in both the 5′ and 3′ LTRs of Iap5-1full are highly methylated (Figure 2—figure supplement 2).
 
-## Developmental dynamics of Iap5-1 methylation states
+### Developmental dynamics of Iap5-1 methylation states
 
 The experiments described thus far have focused on adult somatic Iap5-1 DNA methylation within and across generations. Given the dynamic nature of DNA methylation during mammalian development and considering previous reports on the resistance of IAPs to genome-wide methylation erasure (Lane et al., 2003; Seisenberger et al., 2012), we sought to examine and compare DNA methylation levels of the Iap5-1full and Iap5-1solo variants in the germline and during early embryonic development.
 
@@ -62,35 +86,55 @@ We examined the behaviour of Iap5-1 methylation levels during early development 
 
 Despite the marked distinction in methylation states between Iap5-1full and Iap5-1solo blastocysts, Iap5-1full methylation levels are lower at the blastocyst stage than in adult somatic tissue. It is possible that this incomplete methylation is symptomatic of lower methylation levels in the developing trophectoderm which counteract the higher methylation levels in the inner cell mass (ICM). In support of this, DNA methylation levels in embryonic stem (ES) cell lines derived from the ICM of Iap5-1full and Iap5-1solo blastocysts closely matched those observed in adult somatic tissues, with ES cells derived from Iap5-1full blastocysts nearing 100% methylation (Figure 2F). In addition, we found that Iap5-1full methylation levels in E16.5 placentas were lower than those in E16.5 embryonic tissue (Figure 2F), consistent with reduced global DNA methylation in the placenta (Ehrlich et al., 1982; Schroeder et al., 2015). These results provide evidence for differential methylation between ICM- and trophectoderm-derived lineages at the Iap5-1 locus. Of note, even though placental Iap5-1 methylation levels are less methylated compared to their embryonic counterparts, the two variants retain a pronounced difference in DNA methylation levels in this tissue.
 
-## Loss of H3K9me3 occupancy at Iap5-1solo
+### Loss of H3K9me3 occupancy at Iap5-1solo
 
 To determine whether loss of DNA methylation at Iap5-1solo is associated with changes in histone modifications, we quantified H3K9me3 enrichment in Iap5-1full and Iap5-1solo adult liver samples via ChIP-qPCR. The retrotransposons IAP-Asxl3 and SINE-Rbak, used as positive controls, exhibited equivalent H3K9me3 enrichment between Iap5-1full and Iap5-1solo individuals (Figure 3A). The Gapdh promoter was used as a negative control. Because the sequence of Iap5-1solo is identical to that of the 5′ and 3′ LTRs of Iap5-1full, the same primers were used to probe H3K9me3 enrichment at the borders of both variants. H3K9me3 enrichment at the 5′ and the 3′ borders was significantly decreased in Iap5-1solo samples compared to Iap5-1full samples (Figure 3A). Iap5-1full showed comparable H3K9me3 levels to those observed at the positive controls (Figure 3A). We suggest that the slightly higher H3K9me3 enrichment at the 3′ end compared to the 5′ end in Iap5-1solo samples is due to the presence of an ERV element immediately downstream of Iap5-1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig3-v2.jpg)
 
-**Figure 3.:** Iap5-1 is accompanied by a loss of H3K9me3 marks.solo(A) H3K9me3 ChIP-qPCR on Iap5-1 and fullIap5-1 adult male livers. IAP-soloAsxl3 and SINE-Rbak are positive control loci, the Gapdh promoter is a negative control locus, and the Rabbit IgG antibody serves as a negative isotype control in the two B6 populations. H3K9me3 enrichment was calculated using the per cent input method and compared between genotypes using unpaired t-tests (*p<0.05; ***p<0.0005). Error bars represent standard deviations of biological replicates. (B) Iap5-1 is bound by multiple KZFPs. Publicly available ChIP-seq data sets indicate that KZFPs Gm14419 and Gm8898 are capable of binding the internal region of fullIap5-1 and that KZFP Zfp429 is capable of binding the long terminal repeat (LTR) sequence shared by both fullIap5-1 and fullIap5-1. The primer binding site (PBS) and the short heterochromatin inducing sequence (SHIN), both frequently bound by KZFPs, are shown with dashed lines. ChIP-seq data sets were downloaded from the GEO database (accession numbers: Gm14419, GSM3173720; Gm8898, GSM3173728; Zfp429, GSM3173732; KAP1, sum of GSM3173661, GSM3173662, and GSM3173663).soloFigure 3—source data 1.
+**Figure 3.:** (A) H3K9me3 ChIP-qPCR on Iap5-1full and Iap5-1solo adult male livers. IAP-Asxl3 and SINE-Rbak are positive control loci, the Gapdh promoter is a negative control locus, and the Rabbit IgG antibody serves as a negative isotype control in the two B6 populations. H3K9me3 enrichment was calculated using the per cent input method and compared between genotypes using unpaired t-tests (*p<0.05; ***p<0.0005). Error bars represent standard deviations of biological replicates. (B) Iap5-1full is bound by multiple KZFPs. Publicly available ChIP-seq data sets indicate that KZFPs Gm14419 and Gm8898 are capable of binding the internal region of Iap5-1full and that KZFP Zfp429 is capable of binding the long terminal repeat (LTR) sequence shared by both Iap5-1full and Iap5-1solo. The primer binding site (PBS) and the short heterochromatin inducing sequence (SHIN), both frequently bound by KZFPs, are shown with dashed lines. ChIP-seq data sets were downloaded from the GEO database (accession numbers: Gm14419, GSM3173720; Gm8898, GSM3173728; Zfp429, GSM3173732; KAP1, sum of GSM3173661, GSM3173662, and GSM3173663).
 
 Heterochromatin formation at mammalian TEs occurs in early development following their sequence-specific recognition by KZFPs. KZFPs recruit the scaffold protein KAP1, which in turn recruits the H3K9 methyltransferase SETDB1 as well as de novo DNA methyltransferases (Ecco et al., 2017). We reasoned that Iap5-1full may be targeted for repression in the early embryo by KZFP(s) whose binding sites are located in the internal proviral portion of the IAP which is no longer present in the Iap5-1solo variant. To explore this hypothesis, we analysed previously published ChIP-seq (chromatin immunoprecipitation followed by high-throughput sequencing) binding profiles of more than 60 murine KZFPs (Wolf et al., 2020) and identified two Iap5-1full-binding candidates, Gm14419 and Gm8898 (Figure 3B). The ChIP-seq profiles for Gm14419 and Gm8898 in B6 ES cells displayed peaks immediately downstream and 1.5 kb downstream of the 5′ LTR, respectively (Figure 3B). We observed KAP1 occupancy at the Gm14419 binding site, rendering Gm14419 a particularly promising candidate for future mechanistic research (Figure 3B). The Gm14419 peak overlaps with the primer binding site (PBS) just downstream of the 5′ LTR (Figure 3B), a retroviral sequence often bound by KZFPs to effectuate repression (Wolf and Goff, 2007). Furthermore, it is likely that additional as yet unidentified KZFP(s) bind to Iap5-1full, as evidenced by a second KAP1 peak in the Iap5-1full internal region which does not overlap with the binding site of any of the KZFPs identified in our analysis (Figure 3B). This is consistent with the redundant nature of KZFP-mediated ERV repression (Imbeault et al., 2017; Wolf et al., 2020). In addition, we detected ZFP429 binding peaks at the 5′ and 3′ LTRs of Iap5-1full (Figure 3B). Given the shared sequence between the Iap5-1full LTRs and Iap5-1solo, this observation suggests that ZFP429 does not recruit heterochromatin factors as effectively as other KZFPs. This is in line with our previous finding that ZFP429 is enriched at VM-IAPs compared to fully methylated IAPs of the same subclass (Bertozzi et al., 2020).
 
-## Genetic background influences Iap5-1solo methylation levels
+### Genetic background influences Iap5-1solo methylation levels
 
 Previous studies have shown that in some cases IAP methylation is modulated by genetic background (Bertozzi et al., 2020; Elmer and Ferguson-Smith, 2020; Rakyan et al., 2003; Wolff, 1971). To assess whether this is the case for Iap5-1 methylation, we carried out reciprocal crosses between B6 and wild-derived CAST/EiJ (CAST) mice (BC, B6 female × CAST male; CB, CAST female × B6 male). F1 hybrid offspring carry a single copy of Iap5-1 inherited from their B6 parent because the Iap5-1 insertion is absent from the CAST genome (Figure 4A). In line with our breeding experiments in pure B6 mice, hemizygous offspring born to a Iap5-1full B6 parent were highly methylated and those born to a Iap5-1solo B6 parent were lowly methylated (Figure 4B). However, although Iap5-1solo methylation levels remained low in BC and CB F1 hybrids, they were significantly higher compared to those in pure B6 individuals (Figure 4C), suggesting that CAST-derived modifier(s) act on Iap5-1solo in trans. In addition, CB offspring displayed higher and more variable Iap5-1solo methylation levels compared to BC offspring, indicative of a genetic background-specific maternal effect similar to those recently reported at VM-IAPs (Bertozzi et al., 2020).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig4-v2.jpg)
+
+**Figure 4.:** (A) B6 and CAST sequence alignment of the Iap5-1 insertion site reveals that the Iap5-1 element (purple) and its associated target site duplication (TSD) sequence (red) are not present in the CAST genome. Asterisks indicate nucleotide conservation. The internal portion of the B6 sequence was omitted; nothing was omitted from the CAST sequence. (B) Reciprocal F1 hybrids uncover a variant-specific genetic background effect. Iap5-1full and Iap5-1solo B6 females were crossed to CAST males (BC, left); Iap5-1full and Iap5-1solo B6 males were crossed to CAST females (CB, right). DNA methylation levels were quantified in ear samples collected from hemizygous offspring. Each data point represents average DNA methylation across the four distal CpGs of the 5′ end of Iap5-1 for one individual. (C) The genetic background-specific maternal effect at Iap5-1solo is strengthened upon backcrossing to a CAST female and lost following backcross to a B6 female. The N1 generation was produced by crossing F1 CB males to CAST females, and the N2 generation was generated by crossing N1 males harbouring the Iap5-1solo allele to CAST females. After five generations of backcrossing to CAST, N5 males were crossed to B6 females. Offspring that did not inherit the Iap5-1solo allele were not included in the analysis. Thick and thin lines in the violin plots designate the median and distribution quartiles, respectively. Sample sizes are shown on the graph. Grey shaded area represents the range of methylation levels observed in B6 individuals. Statistics: Welch’s ANOVA test followed by Games-Howell’s post hoc multiple comparison test (****p<0.0001; ns: not significant).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Iap5-1solo females were fed a control or methyl supplemented diet 2 weeks prior to mating and for the duration of pregnancy and lactation. DNA methylation levels were quantified in 8-week-old offspring liver samples at the four distal CpGs of the 5′ end of Iap5-1solo. Statistics: Unpaired t-tests on litter averages for each CpG and for the CpG average.
+
 We further interrogated the strain-specific maternal effect by backcrossing Iap5-1solo CB hybrid males to pure CAST females. This resulted in a cumulative effect, whereby N1 Iap5-1solo mice showed even higher and more variable methylation levels compared to F1 Iap5-1solo mice (Figure 4C). Therefore, the CAST content of the inherited paternal genome and passage through a CAST egg may compound each other. The subsequent N2 backcrossed generation did not cause a further increase in methylation, and backcrossing N5 males to B6 females resulted in a reversion to the original B6 methylation state (Figure 4C). These results are reminiscent of strain-specific behaviours of transgene methylation reported decades ago and support a role for strain-specific oocyte factors (possibly polymorphic KZFPs) in driving these genetic–epigenetic interactions (Allen et al., 1990; Bertozzi et al., 2020; Kearns et al., 2000).
 
-## Iap5-1solo methylation is not affected by maternal dietary methyl supplementation
+### Iap5-1solo methylation is not affected by maternal dietary methyl supplementation
 
 The IAPs located at the Avy and AxinFu VM-IAPs exhibit increased DNA methylation following gestational methyl supplementation, resulting in shifts in the associated coat colour and tail morphology phenotypes, respectively (Waterland et al., 2006; Waterland and Jirtle, 2003). However, it remains unclear whether susceptibility to this environmental exposure is conferred by variable or by incomplete DNA methylation at these epialleles (or neither). The unmethylated Iap5-1solo variant provides an opportunity to test the latter.
 
 To examine whether Iap5-1solo is responsive to methyl supplementation, Iap5-1solo females were put on a methyl-supplemented diet 2 weeks prior to mating and were kept on the same diet throughout pregnancy and lactation. Control females were fed standard chow throughout and all pups in the experiment were weaned onto standard chow. DNA methylation levels at the Iap5-1solo LTR were quantified in 8-week-old offspring liver samples. Unlike Avy and AxinFu loci, Iap5-1solo remained unmethylated in the methyl-supplemented offspring (Figure 4—figure supplement 1), indicating that complete lack of methylation at IAPs does not go hand-in-hand with susceptibility to dietary methyl supplementation.
 
-## Iap5-1 variants influence adjacent gene expression in a tissue-specific manner
+### Iap5-1 variants influence adjacent gene expression in a tissue-specific manner
 
 IAP insertions can influence neighbouring gene expression. Intergenic IAPs can induce the formation of chimeric transcripts initiated at the promoter in the IAP LTR and may also act as enhancers (Gagnier et al., 2019). These effects are sometimes dependent on the epigenetic properties of the IAP, as illustrated by the Avy and AxinFu IAPs which modulate Agouti or Axin expression in a methylation-dependent manner.
 
 We asked whether allelic variation at the Iap5-1 locus influences the expression of neighbouring genes by quantifying expression of the four closest genes (Figure 5A) in liver, cortex, thymus, and placental tissues collected from Iap5-1full and Iap5-1solo individuals. Protein-coding genes Pgm2, TBC1 domain family, member 1 (Tbc1d1), and RELT-like protein 1 (Rell1) were expressed in all tissues examined; long non-coding RNA (lncRNA) 5830416l19Rik transcripts were only detected in the thymus. Pgm2 and Rell1 expression levels in the thymus and placenta were significantly higher in Iap5-1solo than in Iap5-1full individuals, indicating that in these tissues the unmethylated solo LTR is associated with increased expression (Figure 5B). Tbc1d1, the furthest in distance from Iap5-1, did not display significant differences in expression in any of the tested tissues, suggesting that proximity to the Iap5-1 locus is predictive of its transcriptional effect (Figure 5B). 5830416l19Rik expression in the thymus was barely detected in Iap5-1full samples, showing a highly significant increase in Iap5-1solo samples (Figure 5B). Rell1 was the only gene to show a significant difference in expression in liver tissue and the directionality of the effect was inversed, with lower expression levels observed in Iap5-1solo individuals (Figure 5B). No significant differences in expression were observed for any of the genes in cortex samples (Figure 5B). In thymus and cortex, however, we detected transcription of the unique non-coding regions bordering Iap5-1solo, which was not observed for the equivalent regions bordering Iap5-1full (Figure 5—figure supplement 1). Together, these data show that the Iap5-1 polymorphism is associated with tissue-specific altered adjacent gene expression.
 
-## The formation of the Iap5-1solo variant is associated with metabolic phenotypes
+![Figure 5.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig5-v2.jpg)
+
+**Figure 5.:** (A) Scaled map of the genes surrounding Iap5-1. Gene transcripts were extracted from the UCSC Genome Browser (Haeussler et al., 2019). (B) The Iap5-1 polymorphism influences neighbouring gene expression in a tissue-specific manner. Expression of Rell1 (exon 7), 5830416l19Rik (exon 3), Pgm2 (exon 9), and Tbc1d1 (exon 3) was quantified in Iap5-1full and Iap5-1solo thymus, placenta, liver, and brain tissues via RT-qPCR (NE: not expressed). Relative expression was normalised to Hprt1 and β-actin expression and calculated using the ΔCt method. Means and standard deviations of biological replicates are shown in the graphs. (C and D) Plasma glucose (C) and triglyceride (D) concentrations in Iap5-1full and Iap5-1solo adult males. Box plots show the distribution quartiles and median. Statistics: unpaired t-tests (*p<0.05; **p<0.005; ****p<0.0001; ns: not significant).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Map of RT-qPCR primers (drawn to scale). (B) Transcription of bordering unique DNA was quantified in Iap5-1full and Iap5-1solo thymus and cortex tissues via RT-qPCR. Relative expression was normalised to β-actin expression and calculated using the ΔCt method. Means and standard deviations of biological replicates are indicated on the graphs. Statistics: unpaired t-tests (*p<0.05; **p<0.005; ***p<0.001; ****p<0.0001).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/65233/elife-65233-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Concentration of metabolic biomarkers in plasma samples collected from Iap5-1full and Iap5-1solo adult males. Box plots show the distribution quartiles and median. Statistics: unpaired t-tests. (B) Glucose tolerance test on Iap5-1full and Iap5-1solo adult males. Following an overnight fast, mice were weighed (left panel) and fasting tail blood glucose was measured prior to administering an intraperitoneal 2 g/kg glucose injection. Tail blood glucose measurements were taken 15, 30, 45, 60, 90, and 120 min from the time of injection (right panel). Error bars represent standard deviations of biological replicates. Statistics: unpaired t-test (left panel) and multiple unpaired t-tests corrected for multiple comparisons using the Holm-Šidák method (right panel).
+
+### The formation of the Iap5-1solo variant is associated with metabolic phenotypes
 
 Little is known about the biological functions of Rell1 and 5830416l19Rik, but Pgm2 is better characterised. Pgm2 is the closest coding gene to Iap5-1, lying 55 kb downstream of the 3′ LTR. PGM2 catalyses the interconversion between glucose 1-phosphate and glucose 6-phosphate and has a secondary role to that of the predominant PGM isozyme, PGM1 (Geer et al., 2010). PGM1 deficiency in humans is associated with glycogen storage disease and a congenital disorder of glycosylation (Beamer, 2015). PGM2 has been associated with metabolic disease in GWAS studies (Timmons et al., 2018).
 
@@ -114,76 +158,121 @@ In summary, we have identified and characterised a recent spontaneous inter-LTR 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory via Charles River</td>
+      <td>000664 (JAX) 632 (Charles River)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CAST/EiJ</td>
+      <td>MRC Harwell Institute</td>
+      <td>FESA:773</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C57BL6/J ES cell lines</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Generation of ESC lines.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-H3K9me3</td>
+      <td>Active Motif</td>
+      <td>RRID:AB_2532132</td>
+      <td>ChIP (2.5 µl/30 mg liver tissue)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mouse work was carried out in accordance with the Animals (Scientific Procedures) Act 1986 Amendment Regulations 2012 following ethical review by the University of Cambridge Animal Welfare and Ethical Review Body (Home Office project license # PC213320E). C57BL/6J (RRID:IMSR_JAX:000664) and CAST/EiJ (RRID:IMSR_JAX:000928) mice were obtained from Charles River and the MRC Harwell Institute, respectively, and maintained under a 12 hr light–dark cycle in temperature- and humidity-controlled conditions. Mice were fed a standard chow diet (RM3(E); Special Diet Services) ad libitum unless otherwise noted. For pure and hybrid breeding experiments, mice were mated at 8–12 weeks of age and 10 day old pups were ear notched for DNA methylation quantification. Male and female offspring from multiple litters per breeding pair were included in the analyses.
 
-## Dietary methyl supplementation
+### Dietary methyl supplementation
 
 Adult Iap5-1solo females were randomly placed on control diet (RM3(E); Special Diet Services) or methyl supplemented diet (RM3(E) supplemented with 15 g Choline, 15 g Betaine, 15 mg Folic acid, 1.5 mg Vitamin B12, 7.5 g L-methionine, 150 mg Zinc; Special Diet Services) 2 weeks prior to mating with Iap5-1solo males and kept on their respective diets throughout pregnancy and lactation. Eight dams were used for each dietary group. The methyl supplemented diet recipe matches the 3SZM diet in Wolff et al., 1998. All offspring were weaned onto the control diet and culled at 8 weeks of age. DNA methylation was quantified at the distal CpGs of the 5′ end of Iap5-1solo in all offspring livers (control diet: 38 born from eight litters; methyl supplemented diet: 41 born from eight litters). Statistics were carried out on litter averages because the dietary intervention was done on the dams, not the offspring.
 
-## Metabolic biomarker assays
+### Metabolic biomarker assays
 
 Blood was sampled from 4-month-old Iap5-1full and Iap5-1solo males via cardiac puncture following isoflurane-induced deep terminal anaesthesia. Blood samples were placed in EDTA-coated tubes and centrifuged at 1500 × g for 15 min at 4°C. Plasma was collected from the separated upper phase and stored at −80°C before sending to the Core biochemical assay laboratory (CBAL) at the Cambridge University Hospitals for analysis. Assays performed on the plasma samples included adiponectin (ng/ml), albumin (g/l), ALT (U/l), cholesterol (mmol/l), corticosterone (ng/ml), glucagon (pg/ml), glucose (mmol/l), HDL (mmol/l), insulin (µg/l), LDL (mmol/l), leptin (pg/ml), NEFA (µmol/l), and triglycerides (mmol/l).
 
-## Glucose tolerance tests
+### Glucose tolerance tests
 
 Glucose tolerance tests were conducted on Iap5-1full and Iap5-1solo 16-week-old males (n = 12 per genotype). Following an overnight fast of 15 hr, mice were weighed and baseline blood glucose levels (time 0) were measured using the Glucomen Areo glucometer. A glucose dosage of 2 g/kg was calculated for each mouse based on weight and administered via intraperitoneal injection. Tail blood glucose levels were measured 15, 30, 45, 60, 90, and 120 min post injection. Blood glucose levels were compared between Iap5-1full and Iap5-1solo mice at each time point using multiple unpaired t-tests corrected for multiple comparisons using the Holm-Šidák method.
 
-## Isolation and storage of biological samples
+### Isolation and storage of biological samples
 
-## Somatic tissues
+#### Somatic tissues
 
 Liver, cortex, and thymus tissues dissected from adult Iap5-1full and Iap5-1solo males were snap frozen in liquid nitrogen and stored at −80°C before use. Ear notches were stored at −20°C.
 
 GV oocytes. Iap5-1full and Iap5-1solo females were injected interperitoneally with 5 IU of gonadotropin. Ovaries were dissected 40 hr later and placed in M2 medium supplemented with 0.06 g/l potassium penicillin-G, 0.05 g/l streptomycin sulphate, and 240 µM dbcAMP. Ovary follicles were punctures and GV oocytes were detached from their associated cumulus cells using a mouth aspirator and a pulled capillary tube. GV oocytes were stored at −80°C in pools of 100 oocytes collected from multiple females with matching Iap5-1 genotype.
 
-## Sperm
+#### Sperm
 
 Mature sperm was isolated from the cauda epididymides of fertile adult Iap5-1full and Iap5-1solo males as previously described (Sharma et al., 2015) and stored in 1× PBS at −80°C. Sperm samples from different males were analysed separately.
 
-## Blastocysts
+#### Blastocysts
 
 Iap5-1full and Iap5-1solo females were mated with Iap5-1full and Iap5-1solo males, respectively. The uteri and oviducts of pregnant females were dissected 3 days after the identification of a vaginal plug and flushed with M2 medium (Sigma-Aldrich) supplemented with 0.06 g/l potassium penicillin-G and 0.05 g/l streptomycin sulphate. Embryos developed to the blastocyst stage were washed in M2 medium and stored at −80°C. Blastocysts collected from each female were pooled prior to freezing.
 
-## E16.5 embryos and placentas
+#### E16.5 embryos and placentas
 
 Iap5-1full and Iap5-1solo females were mated with Iap5-1full and Iap5-1solo males, respectively. Sixteen days after the identification of a vaginal plug, the uterus was excised from the abdominal cavity and individual E16.5 embryos were removed and rinsed in cold 1× PBS. After removal of the yolk sac and an additional rinse in cold 1× PBS, embryonic tails and full placentas were flash frozen in liquid nitrogen and stored at −80°C.
 
-## DNA extraction
+### DNA extraction
 
 For somatic tissues and ES cells, samples were treated with RNase A at 37°C for 60 min and digested with Proteinase K at 55°C overnight in lysis buffer (10 mM EDTA, 150 mM NaCl, 10 mM Tris-HCl pH 8, 0.1% SDS). gDNA was isolated the next day using a standard phenol–chloroform extraction and ethanol precipitation protocol. The same protocol was followed for sperm gDNA extraction except that the Proteinase K digestion was carried out in equal volumes of Solution A (75 mM NaCl pH 8; 25 mM EDTA) and Solution B (10 mM Tris-HCl pH 8; 10 mM EDTA; 1% SDS; 80 mM DTT) following centrifugation and removal of PBS from thawed sperm. To extract oocyte and blastocyst gDNA, pooled GV oocytes or blastocysts were incubated for 1 hr at 37°C in 14 µl of ddH2O, 1 µl of 1 mg/ml Carrier RNA (QIAGEN), 1 µl of 10% SDS, and 1 µl of 10 mg/ml Proteinase K. After a 15 min incubation at 98°C, samples was directly bisulphite-converted as described below.
 
-## Generation of ESC lines
+### Generation of ESC lines
 
 ESC lines were generated as previously described (Nichols and Jones, 2017) with the following modifications. The concentration of MEK inhibitor PDO325901 used in the KSOM+2i and N2B27+2i+LIF media was reduced to 0.2 µM for the initial stages of the protocol and increased to 1 µM following disaggregation of the ICM. The zona pellucide was removed from unhatched embryos using a 10 min pronase digestion at 37°C rather than using acidic Tyrode’s solution, and rat serum was used as a source of complement instead of guinea pig serum. Laminin-coated wells were used to ensure proper cell attachment and Accutase solution was used to detach cells prior to passaging. Only male embryos were kept for the generation of ESC lines. Established lines were screened for mycoplasma contamination using the PCR Mycoplasma Test Kit I/C (PromoCell).
 
-## Genotyping
+### Genotyping
 
 Ear notches were used for Iap5-1 allelic variant genotyping. Ear notch gDNA was extracted using the PCRBIO Rapid Extract lysis kit (PCR Biosystems) and 1 μl of 1:10 diluted DNA was used as a template for PCR using the REDTaq ReadyMix PCR Reaction Mix (Sigma-Aldrich). The PCR conditions were as follows: (1) 95°C for 4 min 30 s; (2) 94°C for 30 s, optimised T°C for 30 s, 72°C for 30 s, 40 cycles; (3) 72°C for 5 min. For trophectoderm sex-genotyping, trophectoderm lysates were placed in PCR buffer with Proteinase K (50 mM KCl, 10 mM Tris-HCl pH 8.3, 2.5 mM MgCl2, 0.1 mg/ml gelatin, 0.45% NP40, 0.45% Tween 20, 200 µg/ml Pro K) and incubated at 55°C for 1 hr followed by 95°C for 10 min. Trophectoderm gDNA samples were sex-genotyped by PCR using HotStarTaq DNA Polymerase (QIAGEN) and in the following conditions: (1) 95°C for 3 min; (2) 94°C for 30 s, 56°C for 30 s, 72°C for 55 s, 40 cycles; (3) 72°C for 5 min. Amplified DNA was evaluated by agarose gel electrophoresis. Genotyping primers for Iap5-1 allelic variants and the Y-linked Sry gene are listed in Supplementary file 1.
 
-## Sanger sequencing
+### Sanger sequencing
 
 The PCR primer pairs P1, P2, and P3 were designed to amplify the 5′ half, 3′ half, and the entirety of IAP-Pgm2 prior to Sanger sequencing, respectively (Figure 2A, Supplementary file 1). PCR amplification was carried out using the Expand Long Template PCR System (Roche) with the following thermocycler conditions: (1) 94°C for 2 min; (2) 94°C for 10 s, optimised T°C for 30 s, 68°C for 6 min, 10 cycles; (3) 94°C for 15 s, optimised T°C for 30 s, 68°C for 6 min + 20 s each successive cycle, 20 cycles; (4) 68°C for 7 min. Nested PCRs with primer pairs N1, N2, and N3 were performed using HotStarTaq DNA Polymerase (QIAGEN) and a 1:20 dilution of the first PCR products as templates (Figure 2A, Supplementary file 1). Conditions for the nested PCRs were as follows: (1) 95°C for 3 min; (2) 94°C for 30 s, optimised T°C for 30 s, 72°C for 55 s, 40 cycles; (3) 72°C for 5 min. Nested PCR products were purified by gel extraction using the QIAquick Gel Extraction Kit (QIAGEN) according to the manufacturer’s instructions and DNA was eluted in ddH2O. Sanger sequencing was carried out by Source BioScience. Sequencing primers were interspersed regularly across the IAP element (Supplementary file 1). Sequence traces were visually examined, and reliable sequences were merged using the EMBOSS merger tool. The resulting sequences for the two Iap5-1 alleles were aligned to the GRCm38/mm10 reference sequence using CLC Sequence Viewer 6. The base-resolution sequence for the Iap5-1solo allele has been uploaded to GenBank (accession number: MW308129).
 
-## Bisulphite pyrosequencing
+### Bisulphite pyrosequencing
 
 Bisulphite conversions were carried out using the two-step modification procedure of the Imprint DNA Modification Kit (Sigma-Aldrich) according to the manufacturer’s instructions. 1 µg gDNA was used per conversion with the exception of the oocyte and blastocyst experiments. PyroMark Assay Design SW 2.0 software (QIAGEN) was used to design the pyrosequencing assays (primers listed in Supplementary file 1). Target regions were PCR-amplified in technical triplicates from bilsulphite-converted DNA using a biotinylated forward or reverse primer and HotStarTaq DNA Polymerase (QIAGEN). PCR conditions were as follows: (1) 95°C for 3 min; (2) 94°C for 30 s, optimised T°C for 30 s, 72°C for 55 s, 40 cycles; (3) 72°C for 5 min. For low-input pyrosequencing of oocyte and blastocyst DNA, two rounds of PCRs were performed: the first PCR used non-biotinylated primers and 20 amplification cycles (other conditions remained the same); the second PCR used 1 µl of the product from the first PCR as template as well as a biotinylated forward or reverse primer. Following PCR, Streptavidin Sepharose High Performance beads (GE healthcare) were bound to the product in binding buffer (10 mM Tris-HCl pH 7.6, 2 M NaCl, 1 mM EDTA, 0.1% Tween-20) at 1400 rpm for 5 min. The bead-bound biotinylated strands were washed consecutively in 70% ethanol, denaturation solution (0.2 M NaOH), and wash buffer (10 mM Tris-acetate, pH 7.6) using the PyroMark Q96 Vacuum Workstation (QIAGEN). Purified DNA resuspended in annealing buffer (20 mM Tris-acetate pH 7.6, 2 mM magnesium acetate) was incubated with the sequencing primer at 85°C for 4 min. Pyrosequencing was performed on the PyroMark Q96 MD pyrosequencer (QIAGEN) with PyroMark Gold Q96 Reagents and HS Capillary Tips (QIAGEN) according to the manufacturer’s instructions. Per cent CpG methylation was calculated by Pyro Q-CpG 1.0.9 software (Biotage) using the ratio of C-to-T at each site. Technical triplicates were averaged, and samples were kept for subsequent analysis if the standard deviation of technical triplicates did not exceed 5%. Where indicated, methylation levels were averaged across CpGs for each individual at each locus.
 
-## Clonal bisulphite sequencing
+### Clonal bisulphite sequencing
 
 Bisulphite-converted liver DNA was amplified by PCR using the primers listed in Supplementary file 1 and HotStarTaq DNA Polymerase (QIAGEN). PCR conditions were as follows: (1) 95°C for 10 min; (2) 94°C for 30 s, 60°C for 30 s, 72°C for 30 s, 40 cycles; (3) 72°C for 5 min. PCR products were purified by gel extraction using the QIAquick Gel Extraction Kit (QIAGEN) and cloned into the pGEM-T Easy vector (Promega) using Stellar Competent Cells (Takara Bio). Sanger sequencing of individual clones was carried out by Source BioScience. QUMA software (Kumaki et al., 2008) was used to analyse the sequencing data and generate figures.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 ChIP was carried out as previously described with modifications for use on frozen tissue (Imbeault et al., 2017). 100 mg of manually powdered frozen liver tissue dissected from adult Iap5-1full and Iap5-1solo males was cross-linked in 1% formaldehyde for 10 min at room temperature (RT) and quenched in 250 mM Tris-HCl pH 8 for 10 min at RT on a rotating wheel. Quenched samples were washed twice in 1× PBS supplemented with EDTA-free protease inhibitor cocktail cOmplete (Sigma Aldrich), flash frozen in liquid nitrogen, and stored at −80°C. Fixed liver cells were thawed on ice and sequentially lysed in the following buffers for 10 min at 4°C: LB1 buffer (50 mM HEPES-KOH pH 7.4, 140 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 10% glycerol, 0.5% NP-40, 0.25% Triton-X-100, 1× EDTA-free cOmpleteTM; one wash), LB2 buffer (10 mM Tris-HCl pH 8.0, 200 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 1× EDTA-free cOmpleteTM; one wash), and SDS shearing buffer (10 mM Tris-HCl pH 8, 1 mM EDTA, 0.15% SDS, 1× EDTA-free cOmpleteTM; three washes). Samples were centrifuged at 1700 × g for 5 min at 4°C after every wash. The resulting chromatin was sonicated for eight cycles (one cycle: 30 s on and 30 s off) at 4°C using a Bioruptor. The sonicated lysate was cleared by centrifugation at maximum speed for 10 min at 4°C and 10% of the input for each ChIP was stored at −20°C. 50 µl magnetic beads (Protein G Dynabeads, Invitrogen) were pre-blocked in fresh blocking buffer (0.5% BSA in PBS) and incubated with 2.5 µl of polyclonal H3K9me3 antibody (RRID:AB_2532132, Active Motif) or Rabbit IgG (negative control) for 4 hr at 4°C. Antibody-bound beads were washed twice in blocking buffer using a magnetic stand at 4°C. The cleared lysate was topped up to 1 ml SDS shearing buffer + 150 mM NaCl and 1% Triton-X-100 and incubated with the antibody-bound beads on a rotating wheel overnight at 4°C. Non-specifically bound proteins were removed with the following sequential washes at 4°C: low salt buffer (10 mM Tris-HCl pH 8.0, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.15% SDS, 1 mM PMSF; two washes), high salt buffer (10 mM Tris-HCl pH 8.0, 500 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.15% SDS, 1 mM PMSF; one wash), LiCl buffer (10 mM Tris-HCl pH 8.0, 1 mM EDTA, 0.5 mM EGTA, 250 mM LiCl, 1% NP40, 1% Na- deoxycholate, 1 mM PMSF; one wash), and 10 mM Tris pH 8.0 (one wash). ChIP samples were resuspended in elution buffer (10 mM Tris pH 8.0, 1 mM EDTA, 1% SDS, 150 mM NaCl), treated with RNaseA at 37°C for 1 hr at 1100 rpm, and reverse cross-linked overnight at 65°C at 1100 rpm. The eluted samples were treated with Proteinase K and DNA was purified using the Monarch PCR and DNA Cleanup Kit (NEB).
 
-## RNA extraction and cDNA synthesis
+### RNA extraction and cDNA synthesis
 
 20–30 mg of thymus, liver, cortex, or placenta tissues was homogenised using the MagNA Lyser (Roche) at 6000 × g for 40 s. Thymus and placenta tissues were selected due to the specific expression of 5830416l19Rik in the thymus and the high expression of Rell1 and Pgm2 in the placenta, as reported by NCBI (Geer et al., 2010). Liver and cortex were randomly selected to increase the number of tested tissue types. Total RNA was extracted using the AllPrep DNA/RNA Mini Kit (QIAGEN). Tissue DNA was digested on the RNeasy spin column membrane using the RNase-Free DNase Set (QIAGEN) and RNA integrity was confirmed by agarose gel electrophoresis. cDNA was synthesised from 5 µg RNA using random hexamer primers and the RevertAid H Minus First Strand cDNA Synthesis kit (Thermo Scientific).
 
 Quantitative PCR (qPCR) primers were designed using Primer3 software (Supplementary file 1). Each reaction was carried out in technical triplicates with Brilliant III Ultra-Fast SYBR Green QPCR Master Mix (Agilent) on the LightCycler 480 Instrument (Roche) under the following conditions: (1) 95°C for 5 min; (2) 95°C for 10 s, 60°C for 10 s, 72°C for 10 s, 45 cycles; (3) melting curve analysis of 65–95°C. For RT-qPCR, minus RT and no template controls were run for each sample and each primer pair, respectively. Relative expression was normalised to Hprt1 and β-actin expression and calculated using the ΔCt method. For ChIP-qPCR, no template controls and 10% ChIP input were run alongside the H3K9me3 and Rabbit IgG ChIP samples for each primer pair. Enrichment was calculated as per cent input.
 
-## Computational and statistical analyses
+### Computational and statistical analyses
 
 ChIP-seq data sets were downloaded in Bigwig format from the GEO database and visualised in the Integrative Genomics Viewer using the NCBI37/mm9 mouse reference genome (Thorvaldsdóttir et al., 2013). The three KAP1 ChIP-seq biological replicate tracks were summed in IGV before importing into Adobe Illustrator CC 2020 v24.0 for figure design. GEO accession numbers are listed in Supplementary file 1. B6 and CAST DNA sequences at the Iap5-1 insertion site were extracted from the GRCm38/mm10 and CAST_EiJ_v1 assemblies, respectively, accessed through the UCSC genome browser. The sequence alignment was generated using CLUSTAL OMEGA. All statistical tests in this study were carried out using GraphPad Prism 8 software as indicated in the figure legends.

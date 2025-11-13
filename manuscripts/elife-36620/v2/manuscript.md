@@ -32,7 +32,7 @@
 
 ## Abstract
 
-10.7554/eLife.36620.001 Nitrogen-containing-bisphosphonates (N-BPs) are a class of drugs widely prescribed to treat osteoporosis and other bone-related diseases. Although previous studies have established that N-BPs function by inhibiting the mevalonate pathway in osteoclasts, the mechanism by which N-BPs enter the cytosol from the extracellular space to reach their molecular target is not understood. Here, we implemented a CRISPRi-mediated genome-wide screen and identified SLC37A3 (solute carrier family 37 member A3) as a gene required for the action of N-BPs in mammalian cells. We observed that SLC37A3 forms a complex with ATRAID (all-trans retinoic acid-induced differentiation factor), a previously identified genetic target of N-BPs. SLC37A3 and ATRAID localize to lysosomes and are required for releasing N-BP molecules that have trafficked to lysosomes through fluid-phase endocytosis into the cytosol. Our results elucidate the route by which N-BPs are delivered to their molecular target, addressing a key aspect of the mechanism of action of N-BPs that may have significant clinical relevance.
+Nitrogen-containing-bisphosphonates (N-BPs) are a class of drugs widely prescribed to treat osteoporosis and other bone-related diseases. Although previous studies have established that N-BPs function by inhibiting the mevalonate pathway in osteoclasts, the mechanism by which N-BPs enter the cytosol from the extracellular space to reach their molecular target is not understood. Here, we implemented a CRISPRi-mediated genome-wide screen and identified SLC37A3 (solute carrier family 37 member A3) as a gene required for the action of N-BPs in mammalian cells. We observed that SLC37A3 forms a complex with ATRAID (all-trans retinoic acid-induced differentiation factor), a previously identified genetic target of N-BPs. SLC37A3 and ATRAID localize to lysosomes and are required for releasing N-BP molecules that have trafficked to lysosomes through fluid-phase endocytosis into the cytosol. Our results elucidate the route by which N-BPs are delivered to their molecular target, addressing a key aspect of the mechanism of action of N-BPs that may have significant clinical relevance.
 
 ## Introduction
 
@@ -42,9 +42,29 @@ N-BPs are the most commonly prescribed drugs used to treat osteoporosis (Drake e
 
 To gain further insight into the mechanism of action of N-BPs, including the mechanism by which N-BPs are delivered to their molecular target, we implemented an unbiased genome-wide screening approach based on CRISPR-mediated interference (CRISPRi) (Figure 1A) (Gilbert et al., 2014). We transduced a genome-scale CRISPRi single-guide RNA (sgRNA) library into K562 human myeloid leukemia cells that stably express a dCas9-KRAB fusion protein, which functions as an sgRNA-guided transcription inhibitor. The cells were split into a population treated with alendronate (ALN), a representative N-BP, and an untreated control population. Through deep sequencing, we quantified the enrichment/depletion of each sgRNA in the treated population compared to the control population (Figure 1B, Figure 1—figure supplement 1A), and designated the target genes of those sgRNAs enriched in the treated population as resistance hits and those depleted as sensitizing hits (Figure 1B, Figure 1—figure supplement 1B and Supplementary file 1). Consistent with the current model for the action of N-BPs, enzymes, co-factors, and regulators of the mevalonate pathway are enriched in top hits (Figure 1C–D and Figure 1—figure supplement 1C–D). Particularly, in accordance with the model that N-BPs induce cell death through inhibiting the enzymatic activities of FDPS and GGPPS1 (Drake et al., 2008), silencing of FDPS and GGPPS1 strongly sensitized cells to ALN (Figure 1C–D). However, in contradiction with the current model of N-BP action, we observed that silencing of numerous enzymes in the pathway upstream of FDPS in fact conferred strong resistance to ALN (Figure 1D). A recent genome-wide genetic interaction study may resolve this paradox (Horlbeck et al., unpublished). That work demonstrated that isopentenyl-5-pyrophosphate (IPP), the substrate of FDPS, is a toxic intermediate that interferes with DNA synthesis and causes DNA damage, suggesting that inhibition of enzymes upstream of FDPS protects cells from ALN by preventing ALN-induced accumulation of IPP.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic illustrating the workflow of the genome-wide CRISPRi screen. The IC50 of alendronate in K562 cells is 250 μM. (B) Volcano plot showing, for each gene, a ρ score that averages the normalized fold enrichment (in the treated population compared to the untreated control) of the gene’s three most effective sgRNAs, and a Mann-Whitney P-value for fold enrichment (Gilbert et al., 2014). The dashed lines represent thresholds used to identify significant hits. Positive ρ scores correspond to resistance hits and negative scores to sensitizing hits. (C) Gene names and annotated functions of the top seven resistance and sensitizing hits. Genes are sorted by the absolute values of their ρ scores in descending order. SLC37A3 is marked in bold. (D) Diagram of the mevalonate pathway, with genes in the pathway that were identified as significant hits marked with their ρ scores. Resistance hits are color-coded in red and sensitizing hits in blue.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Evaluation of the reproducibility of the CRISPRi screen. The enrichment score (ρ) of each sgRNA was calculated separately from two biological replicates of the CRISPRi screen and compared in a scatter plot. Data points corresponding to negative control sgRNAs are colored in gray. (B) Quantile-quantile plot comparing the distribution of observed average sgRNA enrichment scores (ρ scores) of each gene in the genome with a Gaussian distribution that has the same mean and standard deviation. The dashed gray line represents the predicted location of data points if the distribution of ρ scores is indeed Gaussian. The large deviations from the gray line observed at the two ends of the distribution indicate that the silencing of those genes has stronger effects than expected by pure Gaussian noise and is therefore likely to be biologically meaningful. The dotted lines are arbitrary thresholds set to select resistance hits (red dotted line) and sensitizing hits (blue dotted line) that deviate significantly from Gaussian predictions. 398 resistance hits and 28 sensitizing hits passed the thresholds. (C–D) Gene Ontology (GO) pathway enrichment analysis of the top 100 resistance hits (C) and the top 30 sensitizing hits (D) identified in the CRISPRi screen. Only the most specific subclasses that are statistically significant are shown. Both fold enrichment of pathway genes and P-values of fold enrichment are displayed. Fold enrichment values were clipped at 100 fold. P-values were corrected for multiple testing using Bonferroni correction. Note that genes involved in the mevalonate pathway, which includes IPP biosynthesis, geranyl phosphate synthesis and farnesyl phosphate synthesis, are significantly enriched in top hits from the screen. IPP: isopentenyl pyrophosphate. (E) Volcano plot showing the results from a second CRISPRi screen using zoledronate, another representative N-BP, as the selection agent. Plot layout is the same as in Figure 1B. SLC37A3 and ATRAID are highlighted in red and cyan, respectively. Significant hits were defined as genes that had a fold enrichment with an absolute value larger than 0.1, and a P-value smaller than 0.05.
+
 Amongst the resistance hits not known to be involved in the mevalonate pathway, the gene that conferred the strongest resistance was SLC37A3 (Figure 1C), which is predicted to encode a membrane protein with 12 transmembrane segments (Chou et al., 2013). SLC37A3 also appeared as a top resistance hit in a second CRISPRi screen using zoledronate, another representative N-BP, as the selection agent (Figure 1—figure supplement 1E and Supplementary file 2), further supporting its role in the mechanism of action of N-BPs. SLC37A3 is predicted based on sequence homology to be a glucose-6-phosphate/phosphate antiporter (Chou et al., 2013). However, it has been demonstrated that SLC37A3 in fact lacks this predicted activity (Pan et al., 2011). To the best of our knowledge, the physiological function of SLC37A3 has remained elusive. Intriguingly, a recent human protein interactome study reported an interaction between SLC37A3 and ATRAID (Huttlin et al., 2017), a type I transmembrane protein that was identified as an N-BP target in a previous work (Surface et al., unpublished) and our zoledronate CRISPRi screen (Figure 1—figure supplement 1E), suggesting SLC37A3 and ATRAID might be functionally related.
 
 To investigate the roles of SLC37A3 and ATRAID in the action of N-BPs, we generated SLC37A3-knockout (SLC37A3KO) and ATRAID-knockout (ATRAIDKO) cells in K562 cells, human embryo kidney (HEK) 293 T cells and murine macrophage-like RAW 264.7 cells (Figure 2—figure supplement 1A–E) (Surface et al., unpublished; Ran et al., 2013), with K562 and HEK 293 T cells serving as human cell models that represent distinct lineages, and RAW 264.7 macrophages as a mouse cell model that can be differentiated into mature osteoclasts (Collin-Osdoby and Osdoby, 2012). Consistent with the CRISPRi screen and our previous results, knockout of SLC37A3 and ATRAID in all cell types conferred resistance to ALN (Figure 2A–C) (Surface et al., unpublished). Similarly, mature osteoclasts differentiated from knockout RAW cells are more resistant to ALN compared to those differentiated from wild-type cells (Figure 2D and Figure 2—figure supplement 2A) (Surface et al., unpublished). We also measured the reduction in protein prenylation as a readout of N-BP toxicity and verified that ALN treatment had significantly less of an effect on protein prenylation in SLC37A3KO and ATRAIDKO cells compared to wild-type cells (Figure 2E). Complementation with epitope-tagged SLC37A3 or either isoform of ATRAID (a short isoform, UniProt Q6UW56-1, and a long isoform, UniProt Q6UW56-3) in SLC37A3KO or ATRAIDKO HEK 293 T cells, respectively, restored sensitivity to ALN (Figure 2—figure supplement 2B–D), confirming that the resistance to ALN observed in the knockout cells is indeed caused by the lack of SLC37A3 or ATRAID expression, and that the epitope-tagged versions of the two proteins are functional.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Dose response curves of wild-type, ATRAIDKO and SLC37A3KO K562 cells (A) and HEK 293 T cells (B), and wild-type and SLC37A3KO RAW cells (both undifferentiated macrophages, (C), and differentiated osteoclasts, (D) to alendronate. Cells were treated with a series of doses of alendronate (x-axis) for 48 hr. Relative cell viability was determined by measuring post-treatment total cellular ATP levels and normalizing to those in untreated cells (y-axis). Data depict mean with s.d. for biological triplicate measurements. (E) Immunoblots measuring alendronate-induced reduction in protein prenylation in wild-type and knockout K562 and HEK 293 T cells. Cells were treated with indicated doses of alendronate for 24 hr before analysis by immunoblotting. (F) Immunoblots comparing alendronate-induced reduction in protein prenylation in single and double-knockout HEK 293 T cells. Experimental procedure is as in (C). Note that higher alendronate doses were used in (F) compared to (E) to induce detectable levels of unprenylated proteins. ALN: alendronate.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Sequences of the ATRAID (A, C and F) or SLC37A3 locus (B, D and E) in ATRAIDKO (A) and SLC37A3KO (B) K562 cells, ATRAIDKO (C), SLC37A3KO (D) and KO2 (F) HEK 293 T cells, and SLC37A3KO (E) RAW 264.7 cells, showing that truncations in ATRAID and SLC37A3 coding sequences (CDS) have caused frame shifts in the knockout cell lines. The SLC37A3 locus in KO2 HEK 293 T cells is identical to that in SLC37A3KO HEK 293 T cells. Introns and exons are not drawn to scale. Note that more than two alleles are present for the SLC37A3 locus in HEK 293 T cells as these cells are hypo-triploidic. KO2: ATRAIDKO; SLC37A3KO.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Expression of osteoclast markers (Ctsk, Rank and Trap) in undifferentiated RAW macrophages (Mφ) and differentiated RAW osteoclasts (OC), demonstrating successful differentiation of RAW cells. (B–C) Dose responses to alendronate in SLC37A3KO or ATRAIDKO HEK 293 T cells complemented with epitope tagged SLC37A3 or ATRAID, respectively, compared with those in wild-type, ATRAIDKO and SLC37A3KO cells. (D) Immunoblot comparing the short isoform of ATRAID (sATRAID) with the long isoform of ATRAID (lATRAID), showing that the long isoform of ATRAID is expressed as the same protein as the short isoform of ATRAID. Note that unequal amount of protein was loaded in each lane to obtain even exposure. The amount of protein loaded from left to right was: 100 µg, 40 µg, 10 µg and 4 µg, respectively. (E–F) Dose response curves of wild-type, ATRAIDKO and SLC37A3KO HEK 293 T cells to nitrogen-containing bisphosphonates (E) and non-nitrogen-containing bisphosphonates (F). (G–H) Dose response curves of wild-type, ATRAIDKO and SLC37A3KO K562 cells (G) and HEK 293 T cells (H) to lovastatin. (I) Immunoblots measuring lovastatin-induced reduction in protein prenylation in wild-type, ATRAIDKO and SLC37A3KO K562 cells and HEK 293 T cells. (J) Dose response to alendronate in KO2 HEK 293 T cells, compared with those in wild-type, ATRAIDKO and SLC37A3KO cells. For (B–C), (E–H) and (J), data depict mean with s.d. for biological triplicate measurements. LOV: lovastatin. KO2: ATRAIDKO; SLC37A3KO. PNGase F: peptide: N-glycosidase F, an enzyme that removes asparagine (N)-linked sugar modifications on glycoproteins.
 
 The knockout cells are also resistant to N-BPs other than ALN (Figure 2—figure supplement 2E) but not to non-nitrogen-containing bisphosphonates (non-N-BPs), which do not target FDPS (Figure 2—figure supplement 2F) (Drake et al., 2008). Interestingly, knockout of SLC37A3 and ATRAID did not protect cells from lovastatin (LOV), a statin drug that also targets the mevalonate pathway (Figure 2—figure supplement 2G–I) (Tiwari and Khokhar, 2014). The distinctive responses of SLC37A3KO and ATRAIDKO cells to N-BPs, non-N-BPs, and LOV indicate that the roles of SLC37A3 and ATRAID in the mechanism of action of N-BPs are not related to the mevalonate pathway but are instead specific to N-BPs. As knockout of SLC37A3 and ATRAID in different cell types conferred similar responses, we focused on HEK 293 T cells for further studies as they host various tools for molecular biology.
 
@@ -52,29 +72,423 @@ To probe the epistatic relationship between the two genes, we generated double k
 
 Next, we investigated the mechanism underlying the observed functional relationship between ATRAID and SLC37A3. As protein localization can often provide clues to protein function and functionally linked proteins frequently share subcellular distribution patterns, we expressed functional, epitope-tagged SLC37A3 and ATRAID (Figure 2—figure supplement 2B–C) and characterized their localization with immunofluorescence (IF). We confirmed that epitope-tagged SLC37A3 and ATRAID are not over-expressed (Figure 3—figure supplement 1A). We observed that SLC37A3 co-localizes with LAMP2, a lysosomal marker, but not with Na+/K+-ATPase or EEA1, which mark the plasma membrane and early endosomes, respectively (Figure 3A,B and Figure 3—figure supplement 1C). Consistent with a previous report (Ding et al., 2015), both isoforms of ATRAID also predominantly localize to lysosomes but not to the plasma membrane or early endosomes (Figure 3C–D and Figure 3—figure supplement 1D,F–H). When we co-expressed functional and epitope-tagged SLC37A3 and ATRAID (Figure 3—figure supplement 1A–B), we observed that both isoforms of ATRAID predominantly co-localize with SLC37A3 (Figure 3E and Figure 3—figure supplement 1E). To investigate whether the observed co-localization between SLC37A3 and ATRAID represents a physical interaction, we performed reciprocal co-immunoprecipitation (co-IP) experiments in HEK 293 T cells over-expressing the two proteins. We detected an interaction between SLC37A3 and ATRAID in both pull-down directions (Figure 3F), confirming that SLC37A3 and ATRAID physically interact, likely forming a lysosomal complex.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Localization of HA-tagged SLC37A3 (SLC37A3-HA) (A–B) and V5-tagged short isoform of ATRAID (sATRAID-V5) (C–D) shown with markers for lysosomes (LAMP2, (A and C) and the plasma membrane (Na+/K+-ATPase, (B and D). (E) Co-localization of SLC37A3-HA and sATRAID-V5. Nuclei were stained with DAPI in blue. Scale bars represent 10 µm. Each image displayed is the representative example chosen from at least five similar images. (F) Reciprocal co-IP of SLC37A3A3-HA and sATRAID-V5 in KO2 HEK 293 T cells stably overexpressing both proteins. In each negative control cell line, one of the two tagged proteins was replaced with GFP tagged with the same epitope. (G) Immunoblots measuring SLC37A3-HA protein levels in various cells, showing that deletion of ATRAID significantly reduces the protein level of SLC37A3-HA. The un-glycosylated population of SLC37A3 that appears in the absence of ATRAID is marked with an asterisk. (H) Immunoblots measuring ATRAID-V5 protein levels in various cells, demonstrating that deletion of SLC37A3 significantly reduces the protein level of ATRAID-V5. IP, immunoprecipitation. IB, immunoblot. KO2: ATRAIDKO; SLC37A3KO.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) mRNA levels of ATRAID and SLC37A3 in various HEK 293 T cells used in this study. Data depict mean and s.d. for technical triplicate measurements. (B) Dose responses to alendronate in KO2 HEK 293 T cells complemented with either only SLC37A3-HA or both ATRAID-V5 and SLC37A3-HA, compared with those in wild-type and KO2 HEK 293 T cells. Data depict mean and s.d. for biological triplicate measurements. (C–H) Localization of SLC37A3-HA (C), sATRAID-V5 (D) or lATRAID-V5 (F–H) shown with LAMP2 (F), EEA1 (C, D and H) and Na+/K+-ATPase (G), and co-localization of SLC37A3-HA and lATRAID-V5 (E). Scale bars represent 10 µm. Each image displayed is the representative example chosen from at least five similar images. Note that in E), there exists a subpopulation of lATRAID-V5 that localizes to the plasma membrane but not with SLC37A3-HA. Such distribution is likely a result of a higher-than-endogenous expression level of lATRAID-V5 in KO2 +SLC37A3-HA + lATRAID-V5 HEK 293 T cells (A), as such distribution is not observed in ATRAIDKO +lATRAID-V5 HEK 293 T cells (G), which express lATRAID-V5 at a lower-than-endogenous level (A). KO2: ATRAIDKO; SLC37A3KO. sATRAID: short isoform of ATRAID. lATRAID: long isoform of ATRAID.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Analysis of IF images comparing the expression levels of SLC37A3-HA (A) or both isoforms of ATRAID-V5 (B and C) in their respective single knockout backgrounds and the KO2 background. The two images in each sub-figure were acquired with the same setting and adjusted to the same contrast. In each image a background area (turquoise or blue, inside nuclei, where no stain should be present) and a signal area (orange or red) were selected and the distribution of pixel values within each area was plotted in a histogram. The outlines in the histogram are color-coded to match the boarders of selected areas. (D–E) Polysome profiling experiment assessing the translation efficiency of SLC37A3 transcripts in SLC37A3KO and KO2 backgrounds. Lysates from indicated cell lines were analyzed on a gradient station and fractionated into five fractions: untranslated transcripts (UT), small and large ribosome subunits (SL), lowly translated transcripts (LT), medially translated transcripts (MT) and highly translated transcripts (HT). The level of SLC37A3 transcripts relative to the level of TBP (TATA-binding protein) transcripts in each fraction was measured and plotted. The SL fraction was excluded from the analysis. A total RNA fraction was included as a reference. No overall shift was observed in the distribution of SLC37A3 transcripts in the KO2 background compared to that in the SLC37A3KO background, suggesting that the translation efficiency of SLC37A3 is not affected by the absence of ATRAID. (F) Immunoblot comparing the glycosylation patterns of SLC37A3 in SLC37A3KO and KO2 backgrounds. Lysates from SLC37A3KO + SLC37A3-HA (lane 1–3) and KO2 + SLC37A3-HA (lane 4–6) HEK 293 T cells were left untreated (lane 1 and 4), treated with PNGase-F (lane 2 and 5), or with Endo H (lane 3 and 6). The band corresponding to an un-glycosylated population of SLC37A3 that is present in the absence of ATRAID but not in the presence of ATRAID is marked with an asterisk. (G) Immunoblot comparing the glycosylation patterns of total cellular SLC37A3 and the sub-population of SLC37A3 that interacts with ATRAID. In KO2 HEK 293 T cells over-expressing SLC37A3-HA and sATRAID-V5, proteins that interact with sATRAID-V5 were purified with immuno-precipitation against V5 epitope and compared with total proteins in the lysate. The pre-IP total lysate (lane 1–2) and anti-V5 IP eluate (lane 3–4) were either left untreated (lane 1 and 3) or treated with PNGase F (lane 2 and 4) and analyzed by blotting against SLC37A3-HA. IF: immunofluorescence. IB: immunoblot. KO2: ATRAIDKO; SLC37A3KO. PNGase F: peptide: N-glycosidase F, an enzyme that removes all asparagine (N)-linked sugar modifications from glycoproteins. Endo H: endoglycosidase H, an enzyme that only removes high mannose sugar moieties on ER glycoproteins that have not been processed by the Golgi apparatus.
+
 As it has been reported that the expression levels of certain solute carriers depend on the presence of accessory proteins (Makrides et al., 2014), we investigated the possibility that the functional relationship between ATRAID and SLC37A3 is due to the impaired expression of SLC37A3 in the absence of ATRAID. Indeed, when we expressed SLC37A3 in the KO2 cells, we observed a substantial decrease in the protein level of SLC37A3 compared to that when expressed in the SLC37A3KO background (Figure 3G and Figure 3—figure supplement 2A), even though the mRNA levels of SLC37A3 in both backgrounds are similar (Figure 3—figure supplement 1A). The protein level of SLC37A3 was restored by complementation with either isoform of ATRAID (Figure 3G). (Note that the reduction in SLC37A3 expression in the absence of ATRAID is not clearly observed in Figure 3F due to the over-expression of SLC37A3. Indeed, in samples analyzed in Figure 3F, SLC37A3 exists predominantly in an un-glycosylated form, suggesting saturation of machineries required for the post-translational processing of SLC37A3 (compare Figure 3F and G, also see discussion below).) In reciprocity, we also observed reduced protein levels of both isoforms of ATRAID in the KO2 background that cannot be explained by changes in transcript levels (Figure 3H, Figure 3—figure supplement 2B–C and Figure 3—figure supplement 1A). As the translation efficiency of SLC37A3 transcripts is not significantly altered in the absence of ATRAID (Figure 3—figure supplement 2D–E), the decreased SLC37A3 protein level in the KO2 background is likely caused by shortened protein half-life, suggesting that ATRAID and SLC37A3 are mutually dependent for their stability. Intriguingly, the deletion of ATRAID also altered the glycosylation pattern of SLC37A3. In the absence of ATRAID, the mature, glycosylated population of SLC37A3 (around 50kD) became undetectable, whereas a population of un-glycosylated SLC37A3 (around 40kD) emerged (Figure 3G and Figure 3—figure supplement 2F). Moreover, in cells overexpressing SLC37A3, although a significant proportion of SLC37A3 remained un-glycosylated, only the glycosylated population of SLC37A3 interacted with ATRAID (Figure 3—figure supplement 2G), suggesting that the interaction with ATRAID is crucial for the expression of correctly modified SLC37A3.
 
 Finally, we explored the mechanism by which the knockout of SLC37A3 and ATRAID conferred resistance to N-BPs. Given the predicted function of SLC37A3 as a transporter, we hypothesized that ATRAID and SLC37A3 transport N-BP molecules across the lipid bilayer to inhibit FDPS. Indeed, we observed that SLC37A3 resides on the membrane of vesicles in which internalized fluorescently-labeled zoledronate (AF647-ZLN) accumulates (Figure 4A), supporting its role as a transporter of N-BPs. This hypothesis is also consistent with our finding that the role of SLC37A3 and ATRAID in the mechanism of action of N-BPs is specific to the chemical properties of N-BPs. We implemented radioactive uptake assays to test this hypothesis. When we incubated wild-type, ATRAIDKO and SLC37A3KO cells with radioactive ALN (3H-ALN) and measured total intracellular radioactivity, we observed no significant difference in whole-cell accumulation of radioactivity between the knockouts and wild-type cells (Figure 4B). As N-BP molecules accumulate in SLC37A3-positive vesicles and SLC37A3 localizes to lysosomes, we further hypothesized that N-BP molecules traffic to lysosomes and that SLC37A3 and ATRAID, together as a lysosomal complex, might function to release N-BP molecules from the lumen of lysosomes into the cytosol. This model predicts that the total amount of intracellular 3H-ALN will remain the same in wild-type, SLC37A3KO and ATRAIDKO cells, but 3H-ALN will not be able to exit lysosomes in knockout cells. To detect this potential shift in the subcellular distribution of 3H-ALN in knockout cells, we used digitonin to selectively permeabilize the plasma membrane of 3H-ALN treated cells and generated a cytosolic fraction and a membranous fraction, which contained intact membrane-bound organelles (Figure 4—figure supplement 1A) (Liu and Fagotto, 2011). We observed that the distribution of radioactive signal changed from being primarily in the cytosolic fraction in wild-type cells to being predominantly in membranous fractions in SLC37A3KO and ATRAIDKO cells (Figure 4C), suggesting that 3H-ALN cannot be released from membrane-bound organelles in knockout cells. As our model specifically predicts that 3H-ALN will be trapped in lysosomes in the absence of SLC37A3 or ATRAID, we affinity-purified lysosomes from 3H-ALN treated cells (Figure 4—figure supplement 1B–D) (Abu-Remaileh et al., 2017; Wyant et al., 2017) to assess the lysosomal accumulation of 3H-ALN. As our model predicted, we observed a significant enrichment of 3H-ALN in lysosomes purified from knockout cells compared to those from wild-type cells (Figure 4D). Additionally, consistent with the observation that ATRAID is required for the stable expression of SLC37A3, ATRAIDKO cells phenocopied SLC37A3KO cells in these uptake assays. Taken together, our results suggest that N-BPs traffic to lysosomes after internalization through endocytosis, and SLC37A3 and ATRAID form a lysosomal transporter complex that releases N-BP molecules from the lumen of lysosomes into the cytosol.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig4-v2.jpg)
+
+**Figure 4.:** (A) Live imaging of HEK 293 T cells that express Halo tagged SLC37A3 (SLC37A3-Halo) and have internalized AlexaFlour 647 labeled zoledronate (AF647-ZLN). SLC37A3-Halo is labeled with Janelia flour 549 (JF549). SLC37A3-Halo is expressed at a lower-than-endogenous level and has been verified to be functional (data not shown). The scale bar represents 10 µm. The image displayed is a representative example chosen from five similar images. (B) Radioactive uptake assay measuring total intracellular radioactivity in indicated HEK 293 T cells treated with 3H-alendronate. Data depict mean and s.d. for biological triplicate measurements. (C) Radioactive uptake assay measuring levels of radioactivity in subcellular fractions in indicated HEK 293 T cells treated with 3H-alendronate. Data depict mean with s.d. for biological duplicate measurements. Significance was determined using unpaired two-way ANOVA test. Effect of genotype: F(2,6) = 74.93, p<0.0001; effect of subcellular location: F(1,6) = 864.9, p<0.0001; effect of interaction between genotype and subcellular location: F(2,6) = 312.4, p<0.0001. (D) Radioactive uptake assay measuring levels of radioactivity in lysosomes purified from indicated HEK 293 T cells treated with 3H-alendronate. Data depict mean and s.d. for biological triplicate measurements. Significance was determined using two-tailed unpaired t-test with equal s.d. Comparison between wild-type and ATRAIDKO cells: df = 4, t = 36.24, p<0.0001. Comparison between wild-type and SLC37A3KO cells: df = 4, t = 17.96, p<0.0001. HEK 293 T cells were treated with 1 μCi/mL 3H-alendronate for 24 hr in (B–C) and 3 hr in (D). ****: p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36620/elife-36620-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunoblot against markers for cytosol (GAPDH), plasma membrane (Caveolin1), early endosome (EEA1), lysosome (LAMP1), nucleosol (RaN-BP3), and nucleoskeleton (LaminB1) in cytosolic fractions and membranous fractions in wild-type, ATRAIDKO and SLC37A3KO HEK 293 T cells, demonstrating successful subcellular fractionation in the fractionation-based radioactive uptake assay. Cyt: cytosolic fraction. Mem: membranous fraction. Tot: total cell lysate. (B–D) Localization of HA tagged TMEM192 (TMEM192-HA), a lysosomal protein we expressed in wild-type (B), ATRAIDKO (C) and SLC37A3KO (D) HEK 293 T cells and used as a handle to immuno-precipitate lysosomes, shown with a lysosomal marker, LAMP2, demonstrating correct localization of TMEM192-HA to lysosomes and, consequently, successful purification of lysosomes in the lysosome-purification-based uptake assay. Scale bars represent 10 µm. Each image displayed is the representative example chosen from at least five similar images.
 
 In summary, this study elucidates the route by which N-BPs enter the cytosol and inhibit their molecular target. As a recent study has proposed that patients who harbor a genetic variant of GGPS1 might be more prone to the side-effects of N-BP treatment (Roca-Ayats et al., 2017), it is possible that patients with variants of SLC37A3 or ATRAID, which are genes crucial for the action of N-BPs, might also exhibit non-canonical responsiveness to the drugs. Therefore, our results may bear significant relevance to the clinical applications of N-BPs.
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SLC37A3</td>
+      <td>NA</td>
+      <td>NCBI: 84255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Slc37a3</td>
+      <td>NA</td>
+      <td>NCBI: 72144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ATRAID</td>
+      <td>NA</td>
+      <td>NCBI: 51374</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>ATCC: CCL-243, RRID:CVCL_0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>RAW 264.7</td>
+      <td>ATCC</td>
+      <td>ATCC: TIB-71, RRID:CVCL_0493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>K562 SLC37A3 knock-out</td>
+      <td>this paper</td>
+      <td></td>
+      <td>SLC37A3 was deleted by removing exon 6</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T SLC37A3 knock-out</td>
+      <td>this paper</td>
+      <td></td>
+      <td>SLC37A3 was deleted by removing exon 6</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>K562 ATRAID knock-out</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ATRAID was deleted by trucating exon 3, 4 and 5</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T ATRAID knock-out</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ATRAID was deleted by trucating exon 3, 4 and 5</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T KO2 (double knock-out)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>ATRAID was deleted in the SLC37A3 knockout background</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>RAW Slc37a3 knock-out</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Slc37a3 was deleted by introducing microdeletions in exon 2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>HEK 293T SLC37A3KO + SLC37A3-HA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>An HA-tagged SLC37A3 CDS under PGK promoter was integrated in to the AAVS1 expression harbor inSLC37A3 knockout background</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>HEK 293T ATRAIDKO + s/lATRAID-V5</td>
+      <td>this paper</td>
+      <td></td>
+      <td>A V5-tagged short/long ATRAID CDS under PGK promoter was integrated in to the AAVS1 expression harbor in ATRAID knockout background</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>HEK 293T KO2 + SLC37A3-HA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>An HA-tagged SLC37A3 CDS under PGK promoter was integrated in to the AAVS1 expression harbor in double knockout background</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>HEK 293T KO2 + SLC37A3-HA + s/lATRAID-V5</td>
+      <td>this paper</td>
+      <td></td>
+      <td>letiviral vectors containing V5-tagged short/long ATRAID CDS under PGK promoter was transduced intoKO2 + SLC37A3-HA background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (rat mAb)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 11867423001, RRID:AB_390918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (rabbit mAb)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 13202, RRID:AB_2687461</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (mouse mAb)</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher: R960-25, RRID:AB_2556564</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-LAMP2 (mouse mAb)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz: sc-18822, RRID:AB_626858</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ATP1A1 (mouse mAb)</td>
+      <td>Abcam</td>
+      <td>Abcam: ab7671, RRID:AB_306023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rap1A (goat pAb)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz: sc-1482</td>
+      <td>This item has been discontinued due to animal welfare concerns</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HDJ2 (mouse mAb)</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher: MS-225-P0, RRID:AB_10982482</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (rabbit mAb)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 2118, RRID:AB_561053</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)−2A-GFP</td>
+      <td>Addgene</td>
+      <td>Addgene: 48138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVS1-Puro-PGK1−3 × FLAG-TwinStrep</td>
+      <td>Addgene</td>
+      <td>Addgene: 68375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti PGK Hygro DEST (w530-1)</td>
+      <td>Addgene</td>
+      <td>Addgene: 19066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVS1-Puro-PGK1-SLC37A3-HA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>The FLAG-TwinStrep sequence in AAVS1-Puro-PGK1−3 × FLAG TwinStrep was replaced with an HA-tagged SLC37A3 CDS.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVS1-Puro-PGK1-s/lATRAID-V5</td>
+      <td>this paper</td>
+      <td></td>
+      <td>The FLAG-TwinStrep sequence in AAVS1-Puro-PGK1−3 × FLAG TwinStrep was replaced with an V5-tagged short/long ATRAID CDS.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti PGK Hygro s/lATRAID-V5</td>
+      <td>this paper</td>
+      <td></td>
+      <td>A V5-tagged short/long ATRAID CDS was inserted under the PGK promoter for lentiviral expression</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA_human_ATRAID_exon3_1</td>
+      <td>this paper</td>
+      <td>sequence: GCCTGATGAAAGTTTGGACC</td>
+      <td>a sgRNA targeting exon 3 of ATRAID for generating knock-out cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA_human_ATRAID_exon3_2</td>
+      <td>this paper</td>
+      <td>sequence: CCCTGGTCCAAACTTTCATC</td>
+      <td>a sgRNA targeting exon 3 of ATRAID for generating knock-out cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA_human_ATRAID_exon5</td>
+      <td>this paper</td>
+      <td>sequence: GTCCTGGAGGAATTAATGCC</td>
+      <td>a sgRNA targeting exon 5 of ATRAID for generating knock-out cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA_human_SLC37A3_intron5_1</td>
+      <td>this paper</td>
+      <td>sequence: GTGTGAGTGTATCCTTCACG</td>
+      <td>a sgRNA targeting intron 5 of SLC37A3 for generating knock-out cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA_human_SLC37A3_intron5_2</td>
+      <td>this paper</td>
+      <td>sequence: GCCAGTGCCTGTAAGTCACG</td>
+      <td>a sgRNA targeting intron 5 of SLC37A3 for generating knock-out cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA_human_SLC37A3_intron6</td>
+      <td>this paper</td>
+      <td>sequence: GTAGCAAGTCAGAGTTGTTCA</td>
+      <td>a sgRNA targeting intron 6 of SLC37A3 for generating knock-out cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA_mouse_ SLC37A3_exon1_1</td>
+      <td>this paper</td>
+      <td>sequence: TCTCTGCAAAAATCGTGGCC</td>
+      <td>a sgRNA targeting exon 2 of SLC37A3 for generating knock-out cells</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA_mouse_SLC37A3_exon1_2</td>
+      <td>this paper</td>
+      <td>sequence: TGTTCCTGCTCACGTTCTTC</td>
+      <td>a sgRNA targeting exon 2 of SLC37A3 for generating knock-out cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HA peptide</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher: 26184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>V5 peptide</td>
+      <td>APExBIO</td>
+      <td>APExBIO: A6005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTiter-Glo</td>
+      <td>Promega</td>
+      <td>Promega: G7572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>anti-HA affinity matrix</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: A2095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>anti-V5 affinity matrix</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: A7345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>alendronate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: A4978</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>zoledronate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: SML0223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ibandronate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: I5784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>lovastatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: PHR1285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AlexaFlour 647 labeled zoledronate</td>
+      <td>BioVinc</td>
+      <td>BioVinc: AF647-ZOL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>digitonin</td>
+      <td>Millipore-Sigma</td>
+      <td>Millipore-Sigma:300410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>saponin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 47036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens Professional</td>
+      <td>Scientific Volume Imaging</td>
+      <td>RRID:SCR_014237</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 Reagents were obtained from the following sources: antibodies against LAMP2 (mouse, sc-18822), Ran BP3 (mouse, sc-373678) and Rap 1A (goat, sc-1482) were from Santa Cruz Biotechnology (Dallas, Texas); antibodies against GAPDH (rabbit, 2118), V5-tag (rabbit, 13202) and EEA1 (rabbit, 2411) were from Cell Signaling Technology (Danvers, Massachusetts); antibodies against Na+/K+-ATPase (mouse, ab7671) and Lamin B1 (rabbit, ab16048) were from Abcam (Cambridge, Massachusetts); antibodies against V5-tag (mouse, R960-25) and HDJ2 (mouse, MS-225-P0) were from ThermoFisher Scientific (Waltham, Massachusetts); antibodies against Caveolin-1 (rabbit, C3237) and HA-tag (rat, 11867423001) were from Sigma-Aldrich (Burlington, Massachusetts); antibody against EEA1 (mouse, 610456) was from BD Biosciences (San Jose, California); antibody against LMAP1 (mouse, H4A3) was from DSYB (Developmental Studies Hybridoma Bank, Iowa City, Iowa); antibody against Ubiquitin (mouse, 05–944) was from Millipore-Sigma (Burlington, Massachusetts); alendronate (A4978), lovastatin (PHR1285), zoledronate (SML0223), ibandronate (I5784), etidronate (P5248), tiludronate (T4580), chloroquine (C6628), puromycin (P8833), polybrene (H9268), anti-HA (A2095) and anti-V5 (A7345) agarose affinity matrix, poly-L-lysine solution (P4707), fibronectin solution (F0895), Triton X-100 (T8787), saponin (47036), Bovine Serum Albumin (BSA, A9647) and complete protease inhibitor cocktail (11836170001) were from Sigma-Aldrich; HRP-conjugated anti-rat secondary antibody (31470), Alexa 488 and Alexa 647-conjugated secondary antibodies (A21208, A32728, A11034 and A32733), 0.1 µm TetraSpeck microspheres (T7279), SlowFade Diamond mounting medium (S36968), Halt protease-phosphatase inhibitor cocktail (78443), BCA protein assay kit (23225), SuperSignal west femto substrate (34095), TOPO TA cloning kit (450030), TRIzol and TRIzol LS reagents (15596018 and 10296028), SuperScript IV (18090050), RNase-free Turbo DNase (AM2238), SUPERase. In RNase Inhibitor (AM2694), SYBR Green qPCR master mix (A25742), Hygromycin B (10687010), DMEM (11965118), RPMI (11875093), Fetal Bovine Serum (FBS, 16000044) and Lipofectamine 3000 reagent (L3000008) were from ThermoFisher Scientific; HRP-conjugated anti-mouse and anti-rabbit secondary antibodies (1706515 and 1706516) were from Bio-Rad (Hercules, California); PNGase F (P0704) and Endo Hf (P0703) were from New England Biolabs (NEB, Ipswich, Massachusetts); cell line Nucleofector kit V (VACA-1003) was from Lonza (Walkersville, Maryland); CellTiter-Glo kit (G7572) was from Promega (Fitchburg, Wisconsin); mouse RANK ligand (RANKL, 462-TEC-010) was from R and D systems (Minneapolis, Minnesota); IMDM (30–2005) was from ATCC (American Type Culture Collection, Manassas, Virginia); digitonin (300410) was from Millipore-Sigma; QuickExtract DNA extraction solution (QE0905T) was from Epicentre (Madison, Wisconsin); tritium-labeled alendronate (MT-1727) was from Moravek (Brea, California); Alexa flour 647 labeled zoledronate (AF647-ZOL) was from BioVinc (Pasadena, California); Janelia flour 549 was a gift from Luke Lavis; pSpCas9(BB)−2A-GFP (PX458) was a gift from Feng Zhang (Addgene plasmid # 48138); AAVS1-Puro-PGK1 −3 × FLAG TwinStrep was a gift from Yannick Doyon (Addgene plasmid # 68375); pLenti PGK Hygro DEST (w530-1) was a gift from Eric Campeau and Paul Kaufman (Addgene plasmid # 19066); psPAX2 and pMD2.G were gifts from Didier Trono (Addgene plasmid # 12260 and # 12259).
 
-## Cell lines and tissue culture
+### Cell lines and tissue culture
 
 K562 human myeloid leukemia cells, Human Embryo Kidney (HEK) 293 T cells and RAW 264.7 murine macrophage-like cells were obtained from ATCC. Cell line identities were verified by determining species identity and examining morphology. All cell lines were tested for mycoplasma contamination using ATCC universal mycoplasma detection kit and/or DAPI staining. All cell lines were free of mycoplasma contamination. K562 cells were cultured in RPMI supplemented with 25 mM HEPES, 2 mM L-glutamine, 2 g/L NaHCO3, 10% FBS and penicillin/streptomycin; HEK 293 T cells and RAW 264.7 cells were cultured in DMEM supplemented with 10% FBS and penicillin/streptomycin. All cultures were maintained at 37°C and 5% CO2.
 
-## Unbiased whole-genome CRISPRi screen
+### Unbiased whole-genome CRISPRi screen
 
 K562 cell line generation, genome-scale library design and cloning, virus production, and bioinformatic analysis were conducted as previously described (Gilbert et al., 2014; Jost et al., 2017). In summary, K562 cells stably expressing dCas9-KRAB were transduced in duplicate with the v1 CRISPRi sgRNA library to achieve ~30% infection to ensure no more than one viral integration event per cell. Two days after transduction, cells were selected with 0.75 µg/mL of puromycin for 2 days and then kept with fresh puromycin-free medium for 2 days for recovery. At this point (t0), 250 million cells (ensuring a minimum of 1000 × library coverage) were harvested from each replicate and the remaining cells in each replicate were split into two populations for untreated growth and alendronate-treated growth. For alendronate treatment, cells were cultured in medium containing 250 µM alendronate for 24 hr, spun down to remove the drug and re-suspended in fresh medium. Cells were cultured for another 13 days to allow the untreated population to double seven more times than the alendronate-treated population. 250 million cells were then harvest from each group (two replicates for each condition, four groups in total). Cells were maintained at a density of 500,000 to 1,000,000 cells/mL in 2-liter cultures to ensure a library coverage of at least 1000 cells per sgRNA during the entire screening period. Genomic DNA was collected from all harvested samples and the genomic regions containing the inserted sgRNAs were amplified for 20 cycles by PCR and sequenced at 800 × coverage on Ilumina HiSeq-2500 using custom primers as previously described (Kampmann et al., 2013).
 
 For data analysis, sequencing reads were aligned to the v1 CRISPRi library sequences, counted, and quantified using the Python-based ScreenProcessing pipeline (Horlbeck et al., 2016). Sensitivity phenotypes (ρ) were calculated by computing the log2 difference in enrichment of each sgRNA between the treated and untreated samples, subtracting the equivalent median value for all non-targeting sgRNAs, and dividing by the number of population doubling differences between the treated and untreated populations (Gilbert et al., 2014; Jost et al., 2017). Similarly, untreated growth phenotypes (γ) were calculated from the untreated endpoint samples and t0 samples, dividing by the total number of doublings of the untreated population. Phenotypes from sgRNAs targeting the same gene were collapsed into a single sensitivity phenotype for each gene using the average of the top three scoring sgRNAs (by absolute value) and assigned a P-value using the Mann-Whitney test of all sgRNAs targeting the same gene compared to the non-targeting controls (Supplementary file 1). For genes with multiple independent transcription start sites (TSSs) targeted by the sgRNA libraries, phenotypes and P-values were calculated independently for each TSS and then collapsed to a single score by selecting the TSS with the lowest Mann-Whitney P-value. Replicate-averaged sensitivity phenotype and P-value for each gene were obtained by performing the above computations on the average of sgRNA phenotype values calculated from both replicates and used for illustration. The CRISPRi screen was performed only once.
 
-## Generation of knockout cell lines in K562, HEK 293T and RAW cells
+### Generation of knockout cell lines in K562, HEK 293T and RAW cells
 
 Genome editing experiments were designed based on an established protocol (Ran et al., 2013). For the human ATRAID locus, one sgRNA targeting exon three and another targeting exon five were used to act simultaneously and remove part of exon 3, the entire exon four and part of exon 5. For the human SLC37A3 locus, one sgRNA targeting intron five and another targeting intron six were used to act simultaneously and remove the entire exon 6, which contains 146 bp of CDS. For murine SLC37A3 locus, two sgRNAs targeting exon two were designed to cause microdeletions and frameshifts in the CDS. sgRNAs were cloned into PX458 for co-expression with Cas9.
 
@@ -110,15 +524,15 @@ Mouse_SLC37A3_KO_verification_forward: CCCACAGGCAGAAGACAAGA
 
 Mouse_ SLC37A3_KO_verification_reverse: TGTAACTCAGTCACTGGGAGGA
 
-## Differentiation of RAW macrophages into osteoclasts
+### Differentiation of RAW macrophages into osteoclasts
 
 Differentiation of RAW cells to osteoclasts was achieved following an established protocol (Collin-Osdoby and Osdoby, 2012). Briefly, RAW 264.7 cells were seeded into a 24-well plate and treated with 35 ng/mL RANKL for 6 days to reach a large, multi-nucleated morphology that is characteristic of osteoclasts. For experiments with alendronate, the drug was added at the indicated concentrations 48 hr prior to harvesting. RAW cell differentiation was repeated independently for three times.
 
-## Cell viability assays
+### Cell viability assays
 
 On day one, cells were seeded at 8000 cells per well for K562 and HEK 293 T cells or 4000 cells per well for RAW 264.7 cells in a 96-well plate and treated with a series of doses of the desired drug. Three wells were prepared for each combination of cell line and drug concentration. Forty-eight hours later, the total cellular ATP level in each well was measured using the CellTiter-Glo luminescent assay following manufacturer instructions. Relative ATP levels were then plotted as percentages of ATP levels in the untreated samples and interpreted as a proxy for cell viability under drug treatments. Each viability curve was repeated independently for at least two times.
 
-## Generation of HEK 293 T cells stably expression epitope tagged ATRAID and SLC37A3
+### Generation of HEK 293 T cells stably expression epitope tagged ATRAID and SLC37A3
 
 V5-tagged ATRAID and HA-tagged SLC37A3 were constructed by appending codon-optimized sequences of V5 (sequence: GGA AAG CCC ATA CCG AAT CCT CTC CTT GGG TTG GAT AGC ACT) and HA tags (sequence: TAC CCC TAT GAT GTT CCT GAT TAC GCG) to the C-termini of ATRAID (both the short isoform, 229 a.a., and the long isoform, 284 a.a.) and SLC37A3 CDSs, respectively. A GGGGSGGGGS flexible linker (sequence: GGT GGA GGG GGA AGT GGC GGA GGA GGT TCA) was added between each CDS and its epitope tag.
 
@@ -128,11 +542,11 @@ sgRNA_AAVS1: GGGGCCACTAGGGACAGGAT
 
 To generate HKE 293 T cells that co-express ATRAID-V5 and SLC37A3-HA at near-endogenous levels, the CDS of sATRAID-V5 or lATRAID-V5 was cloned into w530-1 and transduced into KO2 +SLC37A3-HA cells. To generate the lentiviruses, on day one 150,000 HEK 293 T cells were seeded into a well of a 6-well plate. 24 hr later, cells were transfected with 2 µg w530-1 construct, 0.8 µg psPAX2 and 0.4 µg pMD2.G using Lipofectamine 3000 reagent. On the next day culture medium was replenished. 48 hr after transfection, supernatant from the culture was collected and filtered through a 0.45 µm filter. 150 µL of the viral medium was added to a 40% confluent well of KO2 +SLC37A3-HA cells in a 6-well plate in the presence of 8 µg/mL Polybrene to a total volume of 2 mL. 48 hr later cells were re-plated into a 6 cm dish in DMEM containing 200 µg/mL hygromycin. Selection was continued for one week, with medium replenished every other day. After selection, expression levels of epitope-tagged proteins were analyzed by immunoblotting and RT-qPCR as described below.
 
-## Immunoblot assays
+### Immunoblot assays
 
 Cells were washed once with PBS and lysed on ice by scraping into ice-cold RIPA buffer supplemented with Halt protease-phosphatase inhibitor. The lysate was then cleared by centrifuging at 20,000 × g, 4°C for 15 min. Protein concentration in the lysate was determined with BCA protein assays. Loading samples were prepared by mixing lysates with SDS loading buffer and incubating at 37°C for 15 min. (Higher denaturing temperatures may cause SLC37A3 to aggregate and prevent it from entering the gel.) SDS-PAGE electrophoresis and protein transfer onto nitrocellulose membranes were performed according to standard protocols. Membranes were blocked in TBST containing 2.5% BSA and 2.5% skim milk for 1 hr and incubated with primary antibodies overnight in TBST containing 5% BSA. (Primary antibody concentrations: α-HA, 100 ng/mL; α-GAPDH and α-HDJ-2, 250 ng/mL; α-V5 (mouse), α-LAMP1, and α-Lamin B1, 500 ng/mL; α-Rap 1A, α-Ran BP3, α-EEA1 (rabbit) and α-Caveolin-1, 1 µg/mL.) Membranes were then washed 3 × 5 min in TBST and incubated with either HRP-conjugated or fluorophore-conjugated secondary antibodies (1:2000 dilution for all secondary antibodies) in TBST containing 5% skim milk for 1 hr. Membranes were then washed again for 3 × 5 min in TBST and visualized with either SuperSignal substrate or a Typhoon scanner. Each blot was repeated independently for two times.
 
-## RT-qPCR
+### RT-qPCR
 
 RNA was extracted from near-confluent 3 cm dishes using TRIzol reagent following manufacturer instructions. Purified RNA was reverse transcribed using SuperScript IV and oligo d(T)20 following manufacturer instructions. qPCR reactions were performed with SYBR Green qPCR master mix and primers listed below using a CFX96 or CFX384 Real-Time PCR machine (Bio-Rad). Ct values were calculated for each transcript using triplicate measurements, and relative mRNA levels were determined for each gene using TBP (TATA binding protein) and RPLP1 (60S acidic ribosomal protein P1) as loading references for human transcripts and Actb (β actin) and Rplp0 (60S acidic ribosomal protein P0) as loading references for mouse transcripts. Each qPCR measurement was repeated independently for two times.
 
@@ -172,7 +586,7 @@ mouse_Trap_forward: AAGAGATCGCCAGAACCGTG
 
 mouse_Trap_reverse: CGTCCTCAAAGGTCTCCTGG
 
-## Immunofluorescence assays
+### Immunofluorescence assays
 
 On day one, coverslips are placed into wells of 6-well plates and coated for 1 hr at 37°C with 0.01% Poly-L-lysine solution supplemented with 10 µg/mL fibronectin. Coating solution was aspirated and 120,000 HEK 293 T cells were plated into each well. Twenty-four hours later, the coverslips were rinsed two times with PBS++ (PBS containing calcium and magnesium) and fixed in 4% formaldehyde in PBS++ for 15 min at room temperature. The coverslips were rinsed three times with PBS++ and cells were permeabilized/blocked with 0.1% Saponin and 2% BSA in PBS++ for 30 min. After rinsing briefly with PBS++, the coverslips were transferred to a humidity chamber and incubated overnight at 4°C in PBS++ containing 2% BSA and desired primary antibodies. (Antibody concentrations: α-HA and α-EEA1 (mouse), 500 ng/mL; α-LAMP2, 1 µg/mL; α-V5 (rabbit), 2 µg/mL; α-Na+/K+-ATPase, 5 µg/mL.) On the next day, the coverslips were washed 3 × 5 min in PBS++ and incubated for 1 hr with Alexa-488 and Alexa-647-conjugated secondary antibodies diluted in PBS++ containing 2% BSA. The coverslips were again washed 4 × 5 min in PBS++ and mounted onto slides in SlowFade Diamond anti-fade mountant supplemented with DAPI, and the edges of the coverslips were sealed with nail polish. (We do not recommend curing mountants such as ProLong Gold, as they distort/flatten the samples. We also do not recommend Vectashield if Alexa 647 is chosen as a fluorophore.)
 
@@ -180,23 +594,23 @@ Images were acquired on a Zeiss AxiObserver Z.1 microscope equipped with a Zeiss
 
 With each batch of samples, one slide of 0.1 µm TetraSpeck microspheres immersed in SlowFade Diamond was also prepared and imaged with the same settings. The point-spread function (PSF) of each channel was distilled from the microsphere images and used to deconvolute sample images using Huygens Professional deconvolution software (Scientific Volume Imaging). Chromatic aberration (shift, rotation and scaling) were estimated by correlating different channels of the microsphere images. The estimated aberration parameters were then used to align different channels of deconvoluted images using Huygens Profession software. Only images that have been deconvoluted and aligned were used for analysis. Images displayed in figures are representative single Z-slices.
 
-## Live cell imaging
+### Live cell imaging
 
 150,000 HEK 293 T cells expressing SLC37A3-Halo were seeded into a 35 mm glass bottom tissue culture dish (MatTek) coated with poly-L-lysine and fibronectin (see the previous section). Cells were cultured in DMEM containing 500 nM AF647-ZLN for 16 hr. Cells were washed once in PBS and stained with DMEM containing 100 nM JF549 for 30 min, washed three times with PBS, incubated in fresh DMEM for 30 min, and washed again in PBS for three times and finally cultured in DMEM without phenol Red to facilitate live cell imaging. The glass bottom dish was then placed in an incubation chamber mounted onto a microscope, and images were taken and analyzed as described in the previous section.
 
-## Reciprocal co-immunoprecipitation
+### Reciprocal co-immunoprecipitation
 
 10 cm dishes of near-confluent KO2 HEK 293 T cells over-expressing the proteins indicated in Figure 3Ff were lysed by scraping on ice into 1 mL of ice-cold lysis buffer (1% Trition X-100, 20 mM Tris-HCl pH 8.0, 150 mM NaCl and 2 mM EDTA in ddH2O) supplemented with cOmplete protease inhibitors. The lysates were cleared as described above. 10 µL of each cleared lysate was saved for input analysis. The rest of the lysates were transferred to Eppendorf tubes containing 20 µL (settled volume) of anti-HA or anti-V5 agarose beads that had been blocked overnight in lysis buffer containing 2% BSA. Lysates were incubated with the beads for 90 min at 4°C, washed three times in low-salt wash buffer (0.1% Triton X-100, 10 mM Tris-HCl pH 7.5, 150 mM NaCl and 1 mM EDTA in ddH2O) supplemented with protease inhibitors and three times in high-salt wash buffer (0.1% Triton X-100, 10 mM Tris-HCl pH 7.5, 300 mM NaCl and 1 mM EDTA in ddH2O) supplemented with protease inhibitors, and eluted in 100 µL elution buffer (1% Triton X-100, 10 mM Tris-HCl pH 7,5 and 150 mM NaCl) containing 2 mg/mL HA or V5 peptide. Inputs and eluates were then analyzed by immunoblotting as described. The co-IP experiment was repeated independently for two times.
 
-## Analysis of protein glycosylation
+### Analysis of protein glycosylation
 
 Protein lysates and IP eluates were prepared as described above. Once obtained, samples (lysates containing 20–40 µg of total protein or IP eluates that correspond to 60 µg of total protein input) were either left untreated, or treated with peptide-N-Glycosidase F (PNGase F) or endo-glycosidase H (Endo H) following manufacturer instructions (NEB) using non-denaturing conditions (without adding SDS or boiling for denaturation). The reactions were incubated at 37°C overnight and subsequently analyzed by SDS-PAGE electrophoresis and immunboblotting.
 
-## Inferring translation efficiency with polysome profiling
+### Inferring translation efficiency with polysome profiling
 
 For each cell line of interest, one near-confluent 15 cm dish of cells was lysed on ice by scraping into 300 µL of ice-cold lysis buffer (1% Triton X-100, 20 mM Tris-HCl pH 7.0, 20 mM Tris-HCl pH 8.0, 15 mM MgCl2, 150 mM NaCl, 5 mM CaCl2, 25 U/mL RNase-free Turbo DNase, 500 U/mL SUPERase.In RNase Inhibitor and 0.1 mg/mL cycloheximide in RNase-free water) supplemented with protease inhibitors. Lysates were homogenized by passing through a 22-gauge needle for 10 times and then cleared as described above. 10–50% Sucrose gradients were composed by mixing 6 mL of 10% Sucrose solution (20 mM Tris-HCl pH 7.0, 20 mM Tris-HCl pH 8.0, 15 mM MgCl2, 150 mM NaCl, 0.1 mg/mL cycloheximide and 10% (w/v) sucrose in RNase-free water) with 6 mL of 50% sucrose solution (20 mM Tris-HCl pH 7.0, 20 mM Tris-HCl pH 8.0, 15 mM MgCl2, 150 mM NaCl, 0.1 mg/mL cycloheximide and 50% (w/v) sucrose in RNase-free water) on a Gradient Master device (BioComp). 450 µL of each cleared lysate was loaded onto a 10–50% sucrose gradient and centrifuged at 35,000 rpm, 4°C for 2.5 hr using a SW 41 Ti rotor (Beckman). At the same time, 50 µL of each cleared lysate was used to extract total RNA. The density-separated RNA samples were loaded onto a Gradient Master device, collected from the top (low density) to the bottom (high density) and analyzed by measuring A254. Fractionation of samples was carried out manually by visually determining the boundaries between desired fractions during sample analysis. RNA was then extracted from each fraction using TRIzol LS reagent following manufacturer instructions. Levels of SLC37A3 transcripts in collected fractions were then measured by RT-qPCR as described above and the distribution of SLC37A3 transcript in the differentially translated fractions was plotted and interpreted as a proxy for translation efficiency. The polysome profiling experiment was repeated independently for two times.
 
-## Radioactive uptake assays
+### Radioactive uptake assays
 
 For whole-cell uptake assays, on day one 1.5 million WT, ATRAIDKO or SLC37A3KO HEK 293 T cells were seeded into each poly-L-lysine coated 6 cm dish in DMEM containing 1 µCi/mL 3H-alendronate. 24 hr later, cells were washed three times with PBS++, each time thoroughly removing the PBS. Cells were then trypsinized, pelleted and re-suspended in PBS. Cell density in each sample was measured on a Multisizer 3 Coulter Counter (Beckman Coulter). Total intracellular radioactivity in 2 million cells from each sample was measured by scintillation counting on a LS6500 Liquid Scintillation Counter (Beckman Coulter). Three plates were used as triplicates for each cell line.
 
@@ -206,10 +620,10 @@ Lysosome purification-based uptake assays were adapted from established protocol
 
 All uptake assays were repeated independently for two times.
 
-## Statistical tests
+### Statistical tests
 
 P-values assigned to individual genes in the CRISPRi screen were calculated using non-parametric Mann-Whitney U test (11, 23). P-values in Figure 4b were calculated using unpaired two-way ANOVA test. P-values in Figure 4c were calculated using two-tailed unpaired t-test assuming equal variance. Degrees of freedom, F values and t values are reported in figure legends.
 
-## Data availability
+### Data availability
 
 The data that support the findings in this study are available within the paper and its supplementary files.

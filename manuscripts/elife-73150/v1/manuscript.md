@@ -19,17 +19,17 @@
 
 ### Affiliations
 
-1. https://ror.org/029brtt94 Cancer Research Center of Lyon (CRCL), INSERM 1052, CNRS Lyon France
-2. https://ror.org/01rk35k63 Cancer Cell Death Laboratory, part of LabEx DEVweCAN, Université de Lyon Lyon France
-3. https://ror.org/01rk35k63 Université Lyon 1, Villeurbanne Villeurbanne France
-4. https://ror.org/01cmnjq37 Centre Léon Bérard Lyon France
-5. https://ror.org/0220qvk04 Department of General Surgery, Pancreatic Disease Center, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China
-6. https://ror.org/00ws9ra62 Netris Pharma Lyon France
-7. https://ror.org/01rk35k63 Université Claude Bernard Lyon 1, Faculté d’Odontologie, Hospices Civils de Lyon Lyon France
-8. https://ror.org/029brtt94 ENS de Lyon, Université Claude Bernard Lyon 1, CNRS, Laboratoire de Physique Lyon France
-9. https://ror.org/029brtt94 Université Claude Bernard Lyon 1 Lyon France
-10. https://ror.org/03pv69j64 Cancer Research UK Beatson Institute Glasgow United Kingdom
-11. https://ror.org/00vtgdb53 Institute of Cancer Sciences, University of Glasgow Glasgow United Kingdom
+1. Cancer Research Center of Lyon (CRCL), INSERM 1052, CNRS Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))
+2. Cancer Cell Death Laboratory, part of LabEx DEVweCAN, Université de Lyon Lyon France ([ROR:01rk35k63](https://ror.org/01rk35k63))
+3. Université Lyon 1, Villeurbanne Villeurbanne France ([ROR:01rk35k63](https://ror.org/01rk35k63))
+4. Centre Léon Bérard Lyon France ([ROR:01cmnjq37](https://ror.org/01cmnjq37))
+5. Department of General Surgery, Pancreatic Disease Center, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+6. Netris Pharma Lyon France ([ROR:00ws9ra62](https://ror.org/00ws9ra62))
+7. Université Claude Bernard Lyon 1, Faculté d’Odontologie, Hospices Civils de Lyon Lyon France ([ROR:01rk35k63](https://ror.org/01rk35k63))
+8. ENS de Lyon, Université Claude Bernard Lyon 1, CNRS, Laboratoire de Physique Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))
+9. Université Claude Bernard Lyon 1 Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))
+10. Cancer Research UK Beatson Institute Glasgow United Kingdom ([ROR:03pv69j64](https://ror.org/03pv69j64))
+11. Institute of Cancer Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
 
 † Corresponding author
 
@@ -49,17 +49,33 @@ Mechanical stress has emerged as a key factor in shaping the pro-metastatic feat
 
 ## Results
 
-## CM confers breast cancer cells with resistance to anoikis
+### CM confers breast cancer cells with resistance to anoikis
 
 The human breast cancer cells MDA-MB-231 are highly invasive and aggressive in vitro and in vivo, and represent an ideal cellular model to study metastasis (Cailleau et al., 1974). To investigate the effects of constriction on these cells, we subjected them to a forced passage through a membrane with 3 µm in diameter pores, via a serum gradient, mimicking the CM encountered during cancer progression (Rudzka et al., 2021; Porporato et al., 2014; Xia et al., 2019). MDA-MB-231 cells were seeded onto a matrigel-coated tissue culture insert, prior to applying the serum gradient, and thus initially invaded the matrigel plug before following the serum through the microporous membrane (Figure 1A). We ascertained that CM did not affect cell viability, by verifying the incorporation of Calcein AM (viability dye), and by showing that apoptosis-triggering cytochrome c was not released by the mitochondria of CM cells, as it co-localized with COX IV (mitochondrial marker) (Figure 1B, C). Since caspases are the main apoptotic executioners, we next tested if they were activated in CM-challenged cancer cells. For this experiment, MDA-MB-231 cells expressing a bimolecular fluorescence complementation-based caspase-3 reporter (Zhang et al., 2013), which is functional in actinomycin D-treated and not in CRISPRBAX/BAK cells, were subjected to CM (Figure 1—figure supplement 1A, B). Recovered cells were viable and had not activated apoptotic effector caspases (Figure 1D), substantiating our previous result. In a complementary approach, we determined cell cycle distribution and found that CM cells have a negligible proportion of cells in subG1 (apoptotic cells) right after constriction (Figure 1—figure supplement 1C, D) and while they have a slight arrest in G1 phase (Figure 1—figure supplement 1E), this does not affect the overall cellular proliferation (Figure 1E). In line with this, CM cells displayed an unaltered mitochondrial membrane potential, ATP production and did not generate excessive reactive oxygen species (ROS) (Figure 1—figure supplement 1F–I). Hence, the CM model used here did not alter cell viability and was deemed suitable for studying phenotypic changes occurring in these mechanically challenged cancer cells.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the 3-µm transwell-based CM model. (B) MDA-MB-231 control cells or cells recovered from CM were stained with the Calcein AM viability dye and imaged by epifluorescence microscopy. (C) Representative immunofluorescence images of control and CM-challenged MDA-MB-231 cells stained for COX IV and cytochrome c. (D) Flow cytometry-based quantitative analysis of cells activating the VC3AI caspase reporter (n = 3, one-way analysis of variance [ANOVA] statistical test). (E) IncuCyte ZOOM live-cell imaging-based analysis of cell proliferation (n = 3, a representative experiment is shown). (F) Representative images of clonogenic structures from control and confined MDA-MB-231 cells grown in anoikis-promoting, ultra-low attachment conditions (left panel). Corresponding quantification of resistance to anoikis after 7 and 14 days of culture (right panel, n = 3, two-way ANOVA statistical test). (G) Control and CM-challenged MDA-MB-231 cells were grown in soft agar to test their anchorage-independent growth. Left panel depicts representative images, while the right panel is the quantification of clonogenic structures after 1 month (n = 3, t-test). (H) Control and CM-challenged MDA-MB-231 cells were imaged for 48 hr in an IncuCyte ZOOM imager in anoikis-promoting, ultra-low attachment conditions, and stained with SYTOX Green (n = 3, a representative experiment is shown). (I) IncuCyte-based SYTOX Green staining quantification of cell survival in control and CM MDA-MB-231 cells in anoikis-promoting conditions (n = 3, a representative experiment is shown). (J) Quantitative analysis of clonogenic structures illustrating the duration of resistance to anoikis between control and CM MDA-MB-231 cells up to 7 days post-CM (n = 3, one-way ANOVA statistical test). (K) Western blot analysis of PARP-1 cleavage and caspase-3 processing following CM and anoikis growth in control and in CRISPR/Cas9-mediated BAX/BAK DKO MDA-MB-231 cells. Actinomycin D treatment (1 µM for 12 hr) is used as a positive control for induction of apoptosis. (L) Densitometry analysis of PARP-1 and caspase-3 cleavage (ratio of CM cells to control) in anoikis conditions in MDA-MB-231 cells (n = 3–4, t-test). (M) The effect of CM on effector caspase activation was assessed using a fluorometric assay. Caspase activation was tested either immediately after CM, or in cells that were subsequently grown 24 hr in anoikis conditions (n = 3, two-way ANOVA statistical test). (N) Quantification of clonogenic structures formed by control or compressed MDA-MB-231 cells (subjected to 200, 400, or 600 Pa of compression for 16 hr) after 7 and 14 days of culture in anoikis conditions (n = 3, two-way ANOVA statistical test). (O) Quantification of clonogenic structures formed in soft agar by compressed MDA-MB-231 cells (n = 3, one-way ANOVA statistical test). (Statistical significance: ns - P > 0.05; * - P ≤ 0.05; ** - P ≤ 0.01; *** - P ≤ 0.001; **** - P ≤ 0.0001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative epifluorescence and phase images of VC3AI caspase reporter-expressing control and BAX/BAK double-KO MDA-MB-231 cells validating the bimolecular fluorescence complementation (BiFC) caspase reporter. Treatment with Actinomycin D was used as a positive control to induce caspase activation. (B) Western blot analysis of BAX and BAK protein expression, validating their KO through CRISPR/Cas9 in VC3AI-expressing MDA-MB-231 cells. The expression of the caspase reporter VC3AI is determined through anti-GFP immunoblotting. (C) Flow cytometry-based cell cycle profiles for PI-stained control, CM, and Actinomycin D-treated MDA-MB-231 cells. (D) Flow cytometry-based subG1 quantification (n = 3, one-way analysis of variance [ANOVA] statistical test). (E) Assessment of MDA-MB-231 cell cycle profile using PI staining and flow cytometry analysis (n = 3, two-way ANOVA statistical test). (F) Flow cytometry analysis of mitochondrial membrane potential (tetramethylrhodamine ethyl ester perchlorate [TMRE] staining). Carbonyl cyanide 3-chlorophenylhydrazone (CCCP) treatment at 12.5 µM was used as a positive control for disrupting the mitochondrial membrane potential (n = 3, one-way ANOVA statistical test). (G) Quantification of total ATP content in control and constricted MDA-MB-231 cells (n = 3, one-way ANOVA statistical test). Flow cytometry-based quantification as mean fluorescence intensity (MFI) for mitochondrial reactive oxygen species (ROS) (H) and overall cellular ROS (I). Cells treated with 500 µM H2O2 were used as a control for the production of ROS (n = 3, one-way ANOVA statistical test). (J) Representative pictures of control and CM Hs578T cells cultured in ultra-low attachment condition and forming clonogenic structures (left panel). The corresponding quantitative analysis of the number of clonogenic structures after 7 and 14 days of culture is shown in the right panel (n = 3, two-way ANOVA statistical test). (K) Schematic diagram of the compression device, allowing the compression of breast cancer cells MDA-MB-231 with a constant force. Cells are plated on a transwell membrane, allowing gas and passage of nutrients. An agarose cushion is placed on top of the cell monolayer (control cells were compressed only by the agarose disk) and a custom printed cup is then added on top and filled with the corresponding weight in lead, resulting in various pressures. (L) Representative images of MDA-MB-231 nuclei (stained with Hoechst) during 600 Pa compression (left panel) and the corresponding quantification of nuclear area showing a significant increase under compression (right panel, n = 3, t-test). (M, N) Quantitative comparison of the number of clonogenic structures for MDA-MB-231 passing through transwells with 8 µm in diameter pores in ultra-low attachment conditions (M, n = 3, two-way ANOVA statistical test) or in soft agar (N, n = 3, t-test). (O) The effect of MDA-MB-231 cells migrating through transwells with 8 µm in diameter pores on caspase-3/7 activation as assessed by a fluorometric assay. This was either tested immediately after the transwell assay or in cells that were subsequently grown 24 hr in anoikis conditions (n = 3, two-way ANOVA statistical test). (P) Western blot analysis of BCL-xL, BCL2, and MCL1 expression in control and CM MDA-MB-231 cells. (Statistical significance: ns - P > 0.05; * - P ≤ 0.05; ** - P ≤ 0.01; *** - P ≤ 0.001; **** - P ≤ 0.0001).
 
 We then focused on their response to anoikis, as we hypothesized that circulating tumour cells (CTCs) capable of withstanding such a physiological barrier and forming metastases may have acquired tumourigenic properties through the unique mechanical constriction imposed by CM (Shen and Kang, 2020). Importantly, CM-challenged MDA-MB-231 cells survived, grew, and formed clonogenic structures in low attachment conditions, as evidenced by the spheres generated, more efficiently than control cells (Figure 1F). The effect was not restricted to MDA-MB-231 cells since CM-challenged Hs578T breast cancer cells also developed more colonies than control counterparts, indicating that CM-challenged cells had overcome anoikis (Figure 1—figure supplement 1J). This is also the case when cells are grown in soft agar, in an anchorage-independent manner (Figure 1G). In addition, resistance to anoikis was assessed by IncuCyte Imager-based real-time imaging, using SYTOX Green dye exclusion, and again breast cancer cells undergoing CM had a survival advantage when grown in low attachment conditions (Figure 1H, I). Next, we investigated whether the survival advantage acquired following a single round of CM was transient. MDA-MB-231 cells were challenged by CM once and anoikis resistance was quantified at 3, 5, and 7 days post-CM, revealing that resistance to anoikis was transient (Figure 1J). Since anoikis is a variant of apoptosis, we wondered whether the activation of pro-apoptotic effector caspases was affected by CM. This was assessed by immunoblotting for cleaved caspase-3 and PARP-1, a proxy for efficient caspase activation. Strikingly, CM-challenged cancer cells had lower caspase-3 processing into the active p17 and p19 fragments, whereas PARP-1 cleavage followed the same pattern (Figure 1K, L). Lower effector caspase activation was also confirmed using a fluorometric caspase-3/7 assay, demonstrating that inhibition was particularly important for cells grown in ultra-low attachment and soft agar conditions (further designated as anoikis-favouring conditions) (Figure 1M).
 
 To verify whether this resistance to anoikis was specific to cells having undergone CM and could not arise following the compressive stress experienced within primary tumours upon uncontrolled proliferation or increased extracellular matrix deposition, we tested the effects of compression on resistance to anoikis. We exposed MDA-MB-231 cells in vitro to a defined compression by pressing them against a permeable membrane with a weighted piston. The different weights translated into different pressures (200, 400, or 600 Pa) (Figure 1—figure supplement 1K). As shown by the increased nuclear size in compressed cells, this device was suitable to evaluate the effects of compression (Figure 1—figure supplement 1L). Resistance to anoikis, as assessed by growing these cells in anoikis-favouring conditions, was not modified under compression (Figure 1N, O), suggesting that acquisition of resistance to anoikis may be specific to CM. In addition, cancer cell migration through 8 µm in diameter microporous transwells, which does not impose cellular constriction, did not confer cancer cells with resistance to anoikis (Figure 1—figure supplement 1M, N) and had no impact on caspase activation (Figure 1—figure supplement 1O). Of note, the expression of several anti-apoptotic proteins such as BCL-xL, BCL2, and MCL1 was unchanged in CM cells, suggesting another resistance mechanism to anoikis (Figure 1—figure supplement 1P). In conclusion, these results show that CM has a profound impact on cancer cells resistance to cell death through inhibition of pro-apoptotic caspases.
 
-## CM-driven resistance to anoikis relies on the anti-apoptotic IAP proteins
+### CM-driven resistance to anoikis relies on the anti-apoptotic IAP proteins
 
 Previous studies reported that IAPs such as cIAP1, cIAP2, and XIAP promote resistance to anoikis in several cancers, through caspase inhibition (Toruner et al., 2006; Liu et al., 2006; Berezovskaya et al., 2005). We therefore hypothesized that under CM challenge, IAPs expression may underlie resistance to anoikis. This was tested by immunoblotting for cIAP1, cIAP2, and XIAP protein expression in CM MDA-MB-231 cells grown in anoikis-favouring conditions, which revealed an upregulation of all three IAPs (Figure 2A, left panel for densitometry analysis). Conversely, MDA-MB-231 cells subjected to compression or migration through 8 µm in diameter microporous transwells had unaltered levels of IAPs (Figure 2—figure supplement 1A, B). To further investigate this correlation, we transiently overexpressed all three IAPs in MDA-MB-231 cells (Figure 2B). Enforced expression of cIAP1 and XIAP significantly enhanced resistance to anoikis in cells grown under anoikis-favouring conditions, while cIAP2 overexpression was dispensable (Figure 2C–E). In a complementary approach, we deleted all three IAPs in MDA-MB-231 cells through CRISPR/Cas9-mediated gene editing (Figure 2F). Following CM and growth in anoikis-favouring conditions, control cells (EV) displayed the expected resistance to anoikis, whereas IAP-depleted cells lost their survival advantage (Figure 2G and Figure 2—figure supplement 1C). In addition, the use of a SMAC mimetic, one of several developed to specifically induce IAP degradation, namely BV6, successfully depleted both cIAP1 and XIAP (Figure 2H; Varfolomeev et al., 2007). Interestingly, it also abrogated the resistance to anoikis observed in CM-challenged breast cancer cells (Figure 2I, J).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig2-v1.jpg)
+
+**Figure 2.:** (A) Western blot analysis of IAPs protein expression in MDA-MB-231 cells after CM through 3 µm in diameter membranes, with cells grown in ultra-low attachment conditions (left panel) and the corresponding densitometry analysis (right panel) (n = 3–4, two-way analysis of variance [ANOVA] statistical test). (B) Validation of IAPs protein overexpression in MDA-MB-231 cells by Western blot. Quantitative comparison of resistance to anoikis in cIAP1 (C), cIAP2 (D), and XIAP (E) overexpressing MDA-MB-231 cells in steady-state conditions. Clonogenic structures were counted after 7 and 14 days of culture in ultra-low attachment condition (n = 3, two-way ANOVA statistical test). (F) Western blot analysis of protein expression validating the efficacy of CRISPR/Cas9-mediated deletion of IAPs. (G) Quantitative comparison of resistance to anoikis in MDA-MB-231 cells deleted for cIAP1, cIAP2, and XIAP using CRISPR/Cas9 and subjected to CM (n = 3, two-way ANOVA statistical test). (H) Validation by Western blot of IAPs expression inhibition by treating MDA-MB-231 cells with BV6. Two concentrations of BV6 (0.5 and 1 µM) were used for 16 hr of treatment. (I) Representative images of clonogenic structures from MDA-MB-231 control and CM cells cultured in low attachment conditions and treated with 0.5 µM of BV6. (J) Quantitative comparison of resistance to anoikis in CM MDA-MB-231 cells treated with 0.5 µM of SMAC mimetic BV6. Western blot analysis confirming inhibition of cIAP1 and XIAP expression following BV6 treatment (n = 3, two-way ANOVA statistical test). (K) CRISPR EV (control) and CRISPR cIAP1 or XIAP MDA-MB-231 cells were stained with DiO and DiI, respectively, mixed at a 50:50% ratio and then tested in CM. The cells undergoing CM were then scored for the ratio DiO:DiI and representative fluorescence images are shown. (L) Quantification of the percentage of CRISPR EV versus CRISPR cIAP1 and XIAP cells passing through constrictive pores (n = 3, t-test). (M) Control and anoikis-resistant cells (selected for 7 days in ultra-low attachment culture plates) were stained with DiO and DiI, respectively, mixed at a 50:50% ratio and then tested in CM. The cells undergoing CM were then scored for the ratio DiO:DiI and representative fluorescence images are shown. (N) Quantification of the percentage of control versus anoikis-resistant cells passing through constrictive pores (n = 3, t-test). (Statistical significance: ns - P > 0.05; * - P ≤ 0.05; ** - P ≤ 0.01; *** - P ≤ 0.001; **** - P ≤ 0.0001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot analysis of Inhibitory of Apoptosis Proteins (IAPs) expression in MDA-MB-231 cells compressed 16 hr with 200, 400, or 600 Pa. The right panel represents the corresponding densitometry analysis (n = 3–4, two-way analysis of variance [ANOVA] statistical test). (B) Western blot analysis of IAPs expression, PARP-1 cleavage, and caspase-3 processing in MDA-MB-231 cells after their migration through transwell pores of 8 µm in diameter, with or without culturing cells in anoikis-promoting conditions (in ultra-low attachment culture plates). (C) Quantitative comparison of soft agar clonogenic survival using control or CM MDA-MB-231 cells deleted for individual IAPs using CRISPR/Cas9 (n = 3, one-way ANOVA statistical test). (D) IAPs relative mRNA expression by qRT-PCR in control and CM MDA-MB-231 cells (n = 3, one-way ANOVA statistical test). (E) Western blot analysis of K48 ubiquitination in total protein lysates from control and CM cells (left panel). Treatment with MG132 was used as a positive control for proteasome inhibition. The right panel depicts the corresponding densitometry analysis (n = 4, t-test). (F) Cycloheximide chase assay (50 ng/ml) showing by Western blot XIAP and MCL1 proteosomal degradation (upper panel). Lower panel represents the corresponding densitometry analysis, n = 2. (G) The effect of confined migration on p65 nuclear localization in MDA-MB-231 cells was assessed by immunofluorescence. TNFα treatment (20 ng/ml for 1 hr) was used to induce p65 nuclear translocation. Corresponding quantification of the percentage of cells with nuclear p65 staining is shown in the right panel. (H) Luciferase assay to validate the NF-κB luciferase reporters following stimulation with TNFα (20 ng/ml for 1 hr) (n = 4, two-way ANOVA statistical test). (I) MDA-MB-231 cells transiently expressing two NF-κB luciferase reporters were mechanically stressed by CM and luciferase activity was immediately assessed (n = 3, two-way ANOVA statistical test). (J) Quantification for the percentage of EV versus IkBSR-expressing cells treated or not with TNFα and presenting nuclear p65 staining. (K) Quantification of resistance to anoikis in empty vector or IkBSR-expressing MDA-MB-231 by SYTOX Green incorporation and IncuCyte ZOOM-based live-cell microscopy (n = 3, a representative experiment is shown). (L) Empty vector or IkBSR-expressing MDA-MB-231 control or CM cells were cultured for 7 and 14 days in anoikis-favouring conditions and the surviving clonogenic structures were quantified (n = 3, two-way ANOVA statistical test). (M) Luciferase assay validating NF-κB activation following TNFα treatment (20 ng/ml) for 6 and 24 hr (n = 3, one-way ANOVA statistical test). (N) Western blot analysis of IAPs expression in MDA-MB-231 cells treated as in (M). (Statistical significance: ns - P > 0.05; * - P ≤ 0.05; ** - P ≤ 0.01; *** - P ≤ 0.001; **** - P ≤ 0.0001).
 
 Next, we sought to understand the mechanisms responsible for IAPs upregulation in constricted cells. We initially performed qRT-PCR analysis to assess IAPs mRNA expression in CM cells and uncovered that their transcript expression was not increased compared to control cells, with a significant inhibition observed for cIAP2 and XIAP (Figure 2—figure supplement 1D). IAPs contain a RING domain with E3 ubiquitin ligase activity which mediates their own K48 polyubiquitination and that of other protein targets and thus it is crucial for the role of IAPs in suppressing apoptosis (Estornes and Bertrand, 2015). To identify a possible post-transcriptional regulation of IAPs, we first compared the total amount of K48-ubiquitin-linked proteins in control and CM cells. Constricted cells displayed an accumulation of ubiquitinated proteins, indicating a possible bottleneck for protein degradation in CM-stressed cells (Figure 2—figure supplement 1E). In addition, we performed a chase assay with the protein synthesis inhibitor cycloheximide, in order to assess protein half-life (Figure 2—figure supplement 1F), using MCL-1 as a positive control as it is rapidly degraded by the proteasome. When focusing on XIAP, which was the most differentially expressed IAP in CM-challenged cells, we observed a slower decrease in XIAP protein in CM cells compared to control cells, suggesting a lower proteasomal degradation (Figure 2—figure supplement 1F). XIAP may thus be more stable in CM cells, which might explain its higher expression following CM. CM-triggered resistance to anoikis therefore involves the pro-survival IAP proteins, which can be efficiently targeted by pre-clinically validated SMAC mimetics.
 
@@ -69,19 +85,35 @@ An important issue is whether CM selects for a cellular population exhibiting hi
 
 To conclude, resistance to anoikis driven by CM mechanical stress relies on the pro-survival function of IAPs, regulated at the post-transcriptional level following mechanical stress.
 
-## CM enhances the aggressiveness of breast cancer cells and promotes evasion from immune surveillance
+### CM enhances the aggressiveness of breast cancer cells and promotes evasion from immune surveillance
 
 To gain mechanistic insights into the relationship between cellular constriction and resistance to anoikis, we performed RNA sequencing (RNA seq) analysis on MDA-MB-231 cells undergoing CM, compared to control cells. Remarkably, CM cells displayed an almost global inhibition of transcription, making their transcriptional profile distinct from control cells (Figure 3—figure supplement 1A, B). To investigate this effect further, we performed a Western blot analysis for histone H3 epigenetic modifications, associated with transcriptional activation (H3K27 acetylation) or heterochromatin (H3K9 tri-methylation). Consistently with their overall transcriptional inhibition, CM cells had a lower histone H3 acetylation and a reduction in heterochromatin (lower H3K9 me3), which may indicate a decrease in nuclear stiffness, which is needed when cells navigate through narrow spaces (Figure 3—figure supplement 1C). When querying the Gene Ontology (GO) Biological Processes using both Enrichr (Figure 3—figure supplement 1D) and g:Profiler (Figure 3—figure supplement 1E), several pathways associated with cellular motility such as ‘Extracellular matrix organization’, ‘Cell-matrix adhesion’, or ‘Cell adhesion’ were significantly overrepresented in CM cells (Chen et al., 2013; Raudvere et al., 2019). Given that metastatic cells acquire an aggressive phenotype, we thus hypothesized that CM may impact cancer cell motility (Lambert et al., 2017).
 
 Since external mechanical forces are responsible for rapid cytoskeleton rearrangement, we first stained F-actin in control and CM-stressed MDA-MB-231 cells (Torrino et al., 2021). This revealed an increased number of stress fibres following CM, in addition to more abundant filopodia (Figure 3A). By using Nanolive imager-based cellular tomography, we uncovered that cancer cells subjected to CM had a higher variation in cell area over time (Figure 3B). To test whether these phenotypic changes were accompanied by increased cell motility, single-cell migration was first tracked in control and CM cells over a 24-hr period. CM-challenged cancer cells displayed a significantly higher velocity and travelled further than control cells (Figure 3C–E). Proliferating cancer cells adhere to their substrate via focal adhesions that are equally important during migration, especially metastasis (Devreotes and Horwitz, 2015; Roussos et al., 2011). Here, we used immunofluorescence for two key components of focal adhesions, namely paxillin and vinculin (Figure 3—figure supplement 1F), to assess the number of focal adhesions following CM. The increased single-cell migration observed was not correlated with the number of focal adhesions. In contrast to single-cell migration, breast cancer cells subjected to a single round of CM did not outperform control cells when assessed by collective cell migration and invasion (Figure 3F–K). As cells encounter several mechanical challenges during metastasis, we then imposed three consecutive CM passages on MDA-MB-231 cells, and found that challenged cells had a significant gain in chemotaxis and collective cell migration (Figure 3L–N, experimental setup in Figure 3—figure supplement 1G). In an effort to determine other features that might facilitate CM, we focused on nuclear lamins, which are important regulators of nuclear stiffness and shape during CM (Harada et al., 2014; de Leeuw et al., 2018). To establish whether lamins have a role during MDA-MB-231 CM, we stably overexpressed lamin A GFP (Figure 3—figure supplement 1H) and set up a competition-like scenario between lamin A GFP overexpressing and control cells stained in red with DiI, similar to the experiments performed in Figure 2K, M (Figure 3—figure supplement 1I). Confirming previous studies, we also found that MDA-MB-231 cells with higher levels of lamin A have a lower capacity to perform CM, most probably due to increased nuclear stiffness (Figure 3—figure supplement 1J). Yet, when the expression of lamin A/C was tested in cancer cells right after CM, it was similar to that found in control cells, implying once more that CM does not select for cells with certain characteristics, such as lower expression of lamins (Figure 3—figure supplement 1K).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative immunofluorescence images of MDA-MB-231 cells after CM with phalloidin-stained actin filaments. The right panels are quantification of the number of stress fibres and filopodia. (B) Representative kinetics holotomographic images (phase and cell segmentation) of control and MDA-MB-231 cells subjected to CM obtained by Nanolive imaging (left panel). Corresponding quantitative analysis of cell area variations of control and CM cells during a 60-min time-lapse acquisition is shown in the right panel. (C) Spider plot analysis for single-cell migration assay. Control (117 cells) and CM (110 cells) cells were tracked for 24 hr. Quantitative analysis of single-cell migration velocity (D) and distance travelled (E) between control and CM MDA-MB-231 cells. (F) Schematic representation of the IncuCyte ZOOM imager-based wound-healing assay. (G) Monolayers of MDA-MB-231 control and CM cells were wounded and pictures were taken immediately after wound induction (T0) and 24 hr later. (H) Corresponding quantitative analysis of the migratory potential of control and CM cells through wound area measurement (n = 3, a representative experiment is shown). (I) Schematic representation of invasion assay. After the wound was made, breast cancer MDA-MB-231 cells invaded through a matrigel plug until they closed the wound. (J) Monolayers of MDA-MB-231 control and CM cells were wounded and pictures were taken immediately after wound induction (T0) and 24 hr later. (K) Corresponding quantitative analysis of the invasive potential of control and CM cells through wound area measurement (n = 3, a representative experiment is shown). (L) Representative images of control and MDA-MB-231 cells subjected to serial CM and undergoing chemotaxis through transwell membranes with 8 µm in diameter pores. (M) Chemotaxis quantification relative to (l) (n = 3, one-way analysis of variance [ANOVA] statistical test). (N) Comparative quantitative analysis based on IncuCyte ZOOM imager of the migratory potential between control and MDA-MB-231 cells that have undergone serial CM (for three different clones) (n = 3, a representative experiment is shown). (O) FACS analysis of apoptotic cells among CM tumour cells compared to control cells, co-cultured with natural killer (NK cells at the ratio of 1:20 for NK cells). Results were analysed by assessing the ratio of CFSElow/CFSEhigh with baseline-correction to no NK cell culture condition (n = 3, t-test). (P) FACS analysis of GrzB+ tumour cells among CM and control MDA-MB-231 cells, co-cultured with NK cells at a ratio of 1:20 (n = 3, t-test). (Statistical significance: ns - P > 0.05; * - P ≤ 0.05; ** - P ≤ 0.01; *** - P ≤ 0.001; **** - P ≤ 0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Unsupervised clustering of the RNA sequencing data in control and confined migration (CM) MDA-MB-231 cells. Orange indicates increased and blue decreased mRNA abundance of selected genes with fold change above 3, 3 replicates/condition. (B) Volcano plot displaying the expression (in log fold change) of each differentially expressed gene. (C) Western blot analysis of H3K27 acetylation and H3K9 tri-methylation in control and CM MDA-MB-231 cells. The right panel is the densitometry analysis (n = 3, one-way analysis of variance ANOVA statistical test). Enrichr- (D) and g:Profiler- (E) based gene ontology (GO) analysis of the genes differentially expressed (above 2 FC, up- and downregulated) in cancer cells subjected to CM. Signatures related to cellular motility are in red while those concerning immune surveillance are in green. (F) Assessment of the number of focal adhesions between control and CM MDA-MB-231 cells based on immunostaining for paxillin and vinculin (t-test). (G) Schematic representation of the serial CM. Between CM events, cells were amplified and re-challenged until reaching three consecutive CM. (H) Upper panel: Western blotting analysis for GFP showing the expression of lamin A GFP into MDA-MB-231 cells. Lower panel: representative image of lamin A GFP-positive MDA-MB-231 cellular nuclei. (I) Control cells were stained in red with DiI, mixed at a 50:50% ratio with lamin A GFP-expressing MDA-MB-231 and then tested in CM. The cells undergoing CM were then scored for the ratio DiI:GFP and a representative fluorescence image is shown. (J) Quantification of the percentage of control versus lamin A GFP-expressing cells passing through constrictive pores (n = 4, t-test). (K) Western blot analysis for lamin A/C expression in control and CM MDA-MB-231 cells. (Statistical significance: ns - P > 0.05; * - P ≤ 0.05; ** - P ≤ 0.01; *** - P ≤ 0.001; **** - P ≤ 0.0001).
+
 Two of the gene expression signatures over-represented in breast cancer cells undergoing CM involve the regulation of T-cell-mediated immunity and most importantly the negative regulation of NK cells mediated cytotoxicity (Figure 3—figure supplement 1D, E). The immune system plays a crucial role in preventing metastatic dissemination through a process called immune surveillance. The innate immune NK cells and the adaptive ones, T cells αβ (CD4+ and CD8+), as well as γδ T lymphocytes are the unique actors of this phenomenon (Pagès et al., 2005; Barrow et al., 2018). The advantage of NK-mediated immune surveillance is that it is very effective on cancer cells that are in the blood circulation (Garrido and Aptsiauri, 2019). We therefore reasoned that CM might also influence NK-mediated immune surveillance. To test this, we co-cultured control and CM-challenged cells stained with carboxyfluorescein succinimidyl ester (CFSE) with primary NK cells, obtained from healthy donor blood. Interestingly, breast cancer cells were partially protected from the NK-mediated cytotoxicity following CM (Figure 3O, CFSElow population represents apoptotic cells), consistent with lower levels of toxic granzyme B incorporation (Figure 3P).
 
 Taken together, these data demonstrate that a single event of CM has a profound effect on single-cell migration, while several rounds of CM enhance cancer cell chemotaxis and collective migration. In addition, CM contributes to evasion from NK-mediated immune surveillance.
 
-## Breast cancer cells subjected to CM have an increased metastatic potential in vivo
+### Breast cancer cells subjected to CM have an increased metastatic potential in vivo
 
 We next wondered whether the effect of CM on the in vitro breast cancer aggressiveness was applicable in vivo. We injected control and MDA-MB-231 cells subjected to one round of CM into the tail vein of immune-deficient mice and then analysed lung metastatic colonization by micro-computed tomography (microCT). We observed that metastasis incidence was significantly higher for CM cells 6 weeks post-engraftment (Figure 4A). Moreover, the volume of healthy lung tissue in mice engrafted with CM breast cancer cells was considerably smaller than control counterparts, indicating their increased aggressiveness (Figure 4B, C). Of note, this was also the case for breast cancer cells experiencing three consecutive rounds of CM (Figure 4—figure supplement 1A). In addition, the increased aggressiveness of constricted cells was also quantified by measuring the area of metastatic lesions following H&E staining (Figure 4D, E).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig4-v1.jpg)
+
+**Figure 4.:** (A) Analysis of lung metastasis incidence in nude mice engrafted with either control or CM MDA-MB-231 cells (two-tailed Fisher’s exact test). (B) Representative micro-computed tomography (microCT)-based 3D reconstructions (red represents healthy lung volume) of lungs from mice engrafted with either control or MDA-MB-231 cells undergoing CM, 15 mice/condition. (C) Corresponding quantification of remaining healthy lung volume 6 and 8 weeks post-engraftment. (D) Representative H&E staining of lung sections. (E) Quantification of lung metastatic foci (ratio to total lung surface). (F) Model: as a consequence of CM but not compression, cancer cells become resistant to cell death triggered by loss of cell attachment (anoikis), which relies on increased expression of IAPs proteins. NF-κB is also activated by mechanical stress, yet it does not impact resistance to anoikis. In addition, CM cancer cells are more resistant to natural killer (NK)-mediated immune surveillance. Together with a marked motility advantage, this confers an increased metastatic colonization advantage to breast cancer cells having undergone CM. (Statistical significance: ns - P > 0.05; * - P ≤ 0.05; ** - P ≤ 0.01; *** - P ≤ 0.001; **** - P ≤ 0.0001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73150/elife-73150-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Analysis of lung metastasis incidence in nude mice engrafted with either control or MDA-MB-231 cells undergoing three consecutive rounds of confined migration (CM; left panel). Right panel presents the corresponding quantification of remaining healthy lung volume in engrafted mice, 4–5 mice/condition.
 
 Collectively, these data demonstrate that a single event of CM was sufficient to enhance lung metastatic colonization in mice. Hence, we show here that CM is characterized by resistance to anoikis, increased single-cell motility, NF-κB activation and escape from immune surveillance. Although independent of NF-κB activation, the resistance to anoikis relies on pro-survival IAPs, regulated at the post-transcriptional level following mechanical stress. Overall, these events contribute to enhancing breast cancer cell aggressiveness (Figure 4F).
 
@@ -109,23 +141,64 @@ In summary, this study refines our understanding of the pathophysiological relat
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 Human breast cancer cells MDA-MB-231 and Hs 578T (both a gift from P. Mehlen, CRCL, Lyon) were maintained in RPMI supplemented with 2 mM L-glutamine (Thermo Fisher Scientific, 25030-24), non-essential amino acids (Thermo Fisher Scientific, 11140-035), 1 mM sodium pyruvate (Thermo Fisher Scientific, 11360-039), 10% fetal bovine serum (FBS) (Eurobio, CVFSVF00-01), and 1% penicillin/streptomycin (Thermo Fisher Scientific, 15140-122).
 
-## Stable cell line generation by lentiviral transduction
+### Stable cell line generation by lentiviral transduction
 
 293T cells (1.5 × 106 in a 10-cm Petri dish) were transfected with lentiviral plasmids together with pVSVg (Addgene, 8454) and psPAX2 (Addgene, 12260) using Lipofectamine 2000 (Thermo Fisher Scientific, 11668019) according to the manufacturer’s instructions. Twenty-four and 48 hr later, virus-containing supernatant was collected, filtered, supplemented with 1 µg/ml polybrene (Sigma-Aldrich, H9268), and used to infect target cells. Two days later, the transduced cells were selected by growth in the appropriate antibiotic.
 
-## Plasmid transfection
+### Plasmid transfection
 
 For the transient overexpression of cIAP1 and XIAP, MDA-MB-231 cells (1.2 × 106) were plated overnight on a 10-cm Petri dish. The cells were then transfected using Lipofectamine 2000 (Thermo Fisher Scientific, 11668019) with pcDNA3 as empty vector or PEF-hXIAP-Flag for XIAP. A co-transfection with PV2L-Blasti-TRAF2 and pEF6 2xHA cIAP1 WT was needed for overexpressing cIAP1. Six hours later, the transfection medium was replaced by fresh medium and the cells were allowed to grow for 48 h.
 
-## Generation of CRISPR/Cas9-based KO cells
+### Generation of CRISPR/Cas9-based KO cells
 
 The oligos containing the gene-specific sgRNA target were cloned into the LentiCRISPRv2 Blasticidin (Addgene, 83480) as previously described (Shalem et al., 2014). Following lentiviral transduction, cells were selected with 10 mg/ml blasticidin (Invivogen, ant-bl) for 2 weeks prior to analysis. The CRISPR/Cas9 primers are presented in Table 1.
 
-## Transwell assays
+**Table 1.**
+ List of CRISPR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene of interest</th>
+      <th>Forward primer (5′–3′)</th>
+      <th>Reverse primer (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BAX</td>
+      <td>CACCGAGTAGAAAAGGGCGACAACC</td>
+      <td>AAACGGTTGTCGCCCTTTTCTACTC</td>
+    </tr>
+    <tr>
+      <td>BAK1</td>
+      <td>CACCGGCCATGCTGGTAGACGTGTA</td>
+      <td>AAACTACACGTCTACCAGCATGGCC</td>
+    </tr>
+    <tr>
+      <td>BIRC2</td>
+      <td>CACCGCATGGGTAGAACATGCCAAG</td>
+      <td>AAACCTTGGCATGTTCTACCCATGC</td>
+    </tr>
+    <tr>
+      <td>BIRC3</td>
+      <td>CACCGCATGGGTTCAACATGCCAAG</td>
+      <td>AAACCTTGGCATGTTGAACCCATGC</td>
+    </tr>
+    <tr>
+      <td>XIAP</td>
+      <td>CACCGTATCAGACACCATATACCCG</td>
+      <td>AAACCGGGTATATGGTGTCTGATAC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Transwell assays
 
 Breast cancer cells (MDA-MB-231, Hs578T; 3 × 106) were plated on a 75-mm transwell insert with a polycarbonate membrane pore size of 3 µm (Corning, 3420). Before seeding, the insert was coated with a layer of matrigel (300 µg/ml). A gradient of serum was then created between the two compartments of the transwell (0% FBS in the top compartment and 20% below) and renewed 5 hr later. After 72 hr, cells were harvested after washing the insert with phosphate-buffered saline (PBS) and incubation with trypsin. Cells that have migrated through the 3 µm pores were designated as the ‘constricted cells’, whereas the ones that did not migrate were the ‘control cells’.
 
@@ -133,87 +206,87 @@ For the 8-µm transwell experiments, 5 × 105 MDA-MB-231 cells were plated on a 
 
 For certain experiments, cells recovered for the transwell assay were stained with Hoechst 33,342 (10 µg/ml, Thermo Fisher Scientific, H1399), Calcein AM (0.4 mg/ml, Life, C1430), and Vybrant cell-labelling solutions (DiI and DiO, V-22885 and V-22886) according to the manufacturer’s instruction.
 
-## Anoikis assay
+### Anoikis assay
 
 MDA-MB-231 and Hs578T cells (2 × 105) were seeded onto a 6-well Clear Flat Bottom Ultra-Low Attachment plate (Corning, 3471) in complete RPMI medium. Cells then formed 3D clonogenic structures that were imaged and scored after 7 and 14 days of culture. Six wells were plated for each condition and experiments were repeated three times for each cell line. Cells were also grown on a 1% agarose Petri dish in RPMI medium without serum for 24 hr and proteins were extracted with protein lysis buffer.
 
-## Soft agar colony assay
+### Soft agar colony assay
 
 Cells (103/well) were suspended in 1 ml of 0.3% low gelling temperature agarose (Sigma, A9414) and plated onto a 1% agarose layer in three wells of a 6-well plate. When the 0.3% agarose solidified, the wells were covered in complete RPMI media and colonies were scored 4 weeks later.
 
-## Immunofluorescence
+### Immunofluorescence
 
 MDA-MB-231 (5 × 104) were seeded onto coverslips placed in 24-well plate overnight. For studies on focal adhesions, the coverslips were first coated with 100 µg/ml matrigel (Sigma-Aldrich, E1270). After washing in PBS, cells were fixed in 4% PFA for 5 min and then washed once. Cells were permeabilized with 0.2% Triton X-100 (Pan Reac, A4975.01) diluted in PBS, for 10 min at room temperature and the blocking of non-specific binding sites was done using 2% bovine serum albumin (BSA) in PBS, for 1 hr at room temperature. Cells were then incubated with the primary antibody COX IV (Cell Signaling, 4850 S), cytochrome c (Cell Signaling, 12,963 S), Alexa Fluor 647 Phalloidin (Invitrogen, A22287), vinculin (Sigma-Aldrich, V9131), paxillin (BD Transduction Biosciences, 610052), or p65 at 1/400–500 dilution in PBS, for 1 hr at room temperature or overnight at 4°C. Next, the cells were washed in PBS three times and then incubated with the appropriate secondary antibody coupled to Alexa Fluor (1/300, Thermo Fisher scientific, A21151 and A31571) for 1 hr at room temperature protected from light. The staining of nuclei was done with Hoechst 33,342 (10 µg/ml, Thermo Fisher Scientific, H1399) or with DAPI mounting medium (Vectashield). The coverslips were finally mounted using Fluoromount (Southern Biotech, 0100-01). Slides were left to dry overnight before image acquisition using a Zeiss Axio Imager microscope (Zeiss).
 
-## Anoikis resistance assay using the IncuCyte ZOOM imager
+### Anoikis resistance assay using the IncuCyte ZOOM imager
 
 MDA-MB-231 cells (104 cells) were plated in a 96-well Clear Round Bottom Ultra-Low Attachment Microplate (Corning, 7007). SytoxGreen (30 nM, Life, 1846592) was also added to the medium to stain apoptotic cells. Cells were then imaged every 60 min using the IncuCyte ZOOM imager.
 
-## VC3AI reporter-based caspase activation assay
+### VC3AI reporter-based caspase activation assay
 
 MDA-MB-231 VC3AI (control and constricted) cells (2 × 105) were collected from transwell assay and the mean fluorescence intensity of the green signal (VC3AI) was then determined by FACS Calibur flow cytometry (BD Biosciences, San Jose, CA, USA). Control cells were treated with 1 µM Actinomycin D as a positive control for cell death.
 
-## Fluorometric caspase-3/7 activity assay
+### Fluorometric caspase-3/7 activity assay
 
 The cell pellets were resuspended in Cell Lysis Buffer before evaluating the amount of protein in each sample. Twenty µg of proteins were then mixed with Reaction Buffer supplemented with DEVD-AFC substrate. After 1 hr of incubation at 37°C, the caspase-3/7 activity was assessed by fluorescence measurement. Caspase-3 activity was determined using the caspase-3/CPP32 Fluorometric assay kit according to the manufacturer’s instructions (BioVision, K105).
 
-## Mitochondrial membrane potential assay
+### Mitochondrial membrane potential assay
 
 MDA-MB-231 cells (105) were harvested and resuspended in 0.1 µM tetramethylrhodamine ethyl ester perchlorate (TMRE, Thermo Fisher Scientific, T669) for 30 min at 37°C. This fluorescent compound accumulates only in intact mitochondria and highlights the mitochondrial membrane potential of living cells. CCCP (carbonyl cyanide 3-chlorophenylhydrazone) was used as a mitochondrial membrane potential disruptor. When mitochondria are depolarized, leading to a decrease in membrane potential, TMRE accumulation is reduced. After washing, the membrane potential (mean fluorescence intensity of the red signal) was determined by flow cytometry.
 
-## Evaluation of mitochondrial superoxide levels
+### Evaluation of mitochondrial superoxide levels
 
 MDA-MB-231 (control and constricted) cells (5 × 104) were harvested and resuspended in 5 µM Mitosox (Thermo Fisher Scientific, M36008) for 15 min at 37°C. After washing with PBS, the level of mitochondrial superoxide was determined by flow cytometry. Cells treated 1 hr with 500 µM H2O2 were used as a positive control for ROS production.
 
-## Measurement of total ROS in live cells using CellROX staining
+### Measurement of total ROS in live cells using CellROX staining
 
 After plating 5 × 104 MDA-MB-231 cells (control and constricted) overnight in a 12-well plate, cells were trypsinized and treated 30 min at 37°C with 5 µM CellROX Deep Red reagent (Life Technologies, C10422) diluted in medium. This cell-permeant dye exhibits a strong fluorescence once oxidized by cytosolic ROS. Positive control of ROS consisted in cells treated 1 hr with 500 µM H2O2 (Sigma, H1009) before staining. Cells were then centrifuged and washed in PBS three times, before being resuspended in 200 µl of medium. The subsequent analysis was performed using FACS Calibur.
 
-## ATP assay
+### ATP assay
 
 ATP levels were measured in control and constricted breast cancer cells (3 × 105 cells) using the ATP fluorometric assay kit (Sigma-Aldrich, MAK190), following the manufacturer’s instructions. Cells treated 1 hr with 500 µM H2O2 served as a negative control. To evaluate the ATP concentration, an ATP standard curve from 0 to 10 nM was used.
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 105 MDA-MB-231 cells (control and constricted) were washed once in PBS and pelleted in FACS tubes. Cold ethanol at 100% was added drop by drop while vortexing at a final concentration of 70% in PBS. Cells were then stored at −20°C until use. For FACS analysis, the cells were centrifuged at 1500 rpm to remove ethanol, rinsed with PBS and then centrifuged at 2200 rpm for 5 min. The pellet was then treated with 100 µg/ml ribonuclease A (A8950) in order to specifically stain DNA. Propidium iodide (Sigma, P4864) was added at 100 µg/ml and cells were immediately analysed by flow cytometry.
 
-## Cell compression
+### Cell compression
 
 MDA-MB-231 cells (3 × 106) were plated on 75-mm transwell inserts with a polycarbonate membrane pore size of 3 µm (Corning, 3420) that allows media and gas exchange during compression. Twenty-four hours later, a 2% agarose (Sigma, A9539-100G) disk was placed on top of the cells in order to prevent the direct contact with the plastic cup (3D printed by F. B.) placed above the agarose disk. A range of pressure was then tested for 24 hr (0, 200, 300, 400, and 600 Pa) by adding the appropriate lead weights in the plastic cup. At the end of the compression time, the cells under the agarose disk were washed and collected for further analysis.
 
-## Western blot analysis
+### Western blot analysis
 
 Proteins were isolated by lysing cell pellets in RIPA lysis buffer (Cell Signaling, 9806 S) supplemented with phosphatase inhibitors complexes 2 and 3 (Sigma-Aldrich, P5726-1ML, P6044-1ML), dithiothreitol (DTT) 10 mM, and protease inhibitor cocktail (Sigma-Aldrich, 4693116001). The protein concentration was then determined using the Protein Assay dye Reagent Concentrate (BioRad, 50000006). Equal amounts (15–20 μg) of each sample were separated on 4–12% sodium dodecyl sulfate–polyacrylamide gels (BioRad) under denaturating conditions (SDS–PAGE sample loading buffer [VWR, GENO786-701] supplemented with 1 mM DTT). The gels were then transferred onto a nitrocellulose membrane using the Transblot Turbo Transfer System (BioRad, 1704150EDU). An incubation of 1 hr with Intercept blocking buffer (Licor, 927-70001) blocked non-specific binding sites before incubating the membranes with the primary antibody (1/1000 in Intercept T20 Antibody Diluent (Licor)) overnight at 4°C, under agitation. The primary antibodies used were: actin (Sigma-Aldrich, A3854), PARP-1 (Cell Signaling, 9532), caspase-3 (Cell Signaling, 9,62 S), GFP (Life, A11122), BAX (Cell Signaling, 2772 S), BAK (Cell Signaling, 12,105 S), HSP60 (Cell Signaling, 4870), K48-Ub (Cell Signaling, 8081 S), COX IV (Cell Signaling, 4850 S), cIAP1 (Cell Signaling, 7065T), cIAP2 (Cell Signaling, 3130T), XIAP (Cell Signaling, 14,334 S), HSC70 (Santa Cruz Biotechnology, sc-7298), H3K27ac (Diagenode, C15210016), H3K9me3 (Diagenode, C15200153), BCL-xL (Cell Signaling, 2764), BCL2 (Cell Signaling, 15071), MCL1 (Cell Signaling, 4572), and lamin A/C (Cell Signaling, 4777). The membranes were rinsed four times for 5 min in tris buffered saline, with Tween 20 (TBST) 0.1% and then incubated with appropriate secondary antibody coupled to IRDye 800CW or 680RD dye (Licor; 1/10,000) for 1 hr at room temperature under agitation and protected from light. Four extra washing steps in TBST 1% and one in TBS were performed before scanning the membrane by Odyssey Imaging System for near infrared detection.
 
-## Cycloheximide chase assay
+### Cycloheximide chase assay
 
 To determine protein half-life, control and constricted MDA-MB-231 cells (5 × 105) were treated in ultra-low attachment conditions with cycloheximide (50 µg/ml) for different durations (0, 6, 16, 24, 33, and 48 hr) and protein extracts were analysed by Western blot.
 
-## Dual luciferase reporter assay
+### Dual luciferase reporter assay
 
 MDA-MB-231 cells (105) were plated in 12-well plates for 24 hr and were then co-transfected with the NF-κB luciferase reporter-containing plasmid and a Renilla plasmid using Lipofectamine 2000. After 48 hr of transfection, the luciferase activity was assessed with the Dual luciferase reporter assay (Promega, E1910) following the manufacturer’s instructions. Firefly luciferase activity was then normalized against Renilla luciferase activity.
 
-## Holotomographic microscopy
+### Holotomographic microscopy
 
 MDA-MB-231 cells (5 × 104) cells were seeded onto Fluorodishes (Ibidi GmbH, Gräfeling, Germany). Holotomographic microscopy was performed on the 3D Cell-Explorer Fluo (Nanolive, Ecublens, Switzerland) using a ×60 air objective at a wavelength of λ = 520 nm. Physiological conditions for live-cell imaging were maintained using a top-stage incubator (Oko-lab, Pozzuoli, Italy). A constant temperature of 37°C and an air humidity saturation as well as a level of 5% CO2 were maintained throughout imaging. Refractory index maps were generated every 5 min for 1 hr. Images were processed with the software STEVE.
 
-## Single-cell migration assay
+### Single-cell migration assay
 
 103 breast cancer cells were seeded onto a 96-well ImageLock plate (Sartorius, 4379) and imaged for 24 hr using the IncuCyte ZOOM-based time-lapse microscopy. The acquired time-lapse images were treated with a manual tracking plugin using the ImageJ software. About 100 cells/condition were followed for 30 min in order to determine the accumulated distance and their velocity.
 
-## Wound-healing assay
+### Wound-healing assay
 
 MDA-MB 231 cells (5.5 × 104) were seeded onto a 96-well imageLock plate (Sartorius, 4379) and grown for 24 hr until cell confluency was reached. A scratch was then performed in the cell monolayer using a WoundMaker (Sartorius, 4563), following the manufacturer’s instructions. Wound closure was imaged and quantified using the IncuCyte ZOOM imaging system.
 
-## Invasion assay
+### Invasion assay
 
 Wells of a 96-well imageLock plate (4379, Sartorius) were first coated with 100 µg/ml of Matrigel (Sigma-Aldrich, E609-10 ml). After 1 hr, MDA-MB-231 cells (5.5 × 104) were seeded 24 hr prior to the assay. A wound was then performed in the cell monolayer with the WoundMaker and a new layer of Matrigel (800 µg/ml, 2.55 mm thickness) was deposited onto cells for 1 hr at 37°C to allow polymerization. The top of the cells was covered with complete medium and the invasion potential of cancer cells was evaluated and quantified using IncuCyte ZOOM-based time-lapse microscopy.
 
-## RNA sequencing
+### RNA sequencing
 
 RNA sequencing from control and mechanically challenged MDA-MB-231 cells was done by the CRCL Cancer Genomics core facility. The libraries were prepared from 600 ng total RNA using the TruSeq Stranded mRNA kit (Illumina) following the manufacturer’s instructions. The different steps include the PolyA mRNA capture with oligo dT beads, cDNA double strand synthesis, adaptors ligation, library amplification, and sequencing. Sequencing was carried out with the NextSeq500 Illumina sequencer in 75-bp paired-end.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 All genomic data were analysed with R/Bioconductor packages, R version 4.0.3 (2020-10-10) [https://cran.r-project.org/https://cran.r-project.org/; http://www.bioconductor.org/] on a linux platform (x86_64-pc-linux-gnu [64-bit]).
 
@@ -221,26 +294,72 @@ Illumina sequencing was performed on RNA extracted from triplicates of each cond
 
 Rsamtools: Binary alignment (BAM), FASTA, variant call (BCF), and tabix file import. R package version 2.6.0. https://bioconductor.org/packages/Rsamtools.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA extraction was performed using the Nucleospin RNA Macherey-Nagel kit (740955) and quantified by NanoDrop. The conversion of messenger RNA into cDNA was performed using the Sensifast cDNA synthesis kit (Bioline, BIO-65053). cDNA was then amplified by PCR using specific primers for each gene designed with Primer-blast software (https://www.ncbi.nlm.nih.gov/tools/primer-blast/) and listed in Table 2. GAPDH, ACTB, and HPRT were used as housekeeping genes. The thermal cycling steps included an initial polymerase activation step at 95°C for 2 min, followed by 40 cycles at 95°C, 5 s, and 60°C, 30 s. The qRT-PCR experiments were performed using SYBR Green and a Lightcycler96 (Roche, Indianapolis, USA).
 
-## In vivo lung metastasis model and lung imaging
+**Table 2.**
+ List of qRT-PCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene of interest</th>
+      <th>Forward primer (5′–3′)</th>
+      <th>Reverse primer (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GAPDH</td>
+      <td>TGCACCACCAACTGCTTAGC</td>
+      <td>GGCATGGACTGTGGTCATGAG</td>
+    </tr>
+    <tr>
+      <td>ACTB</td>
+      <td>AGAGCTACGAGCTGCCTGAC</td>
+      <td>AGCACTGTGTTGGCGTACAG</td>
+    </tr>
+    <tr>
+      <td>HPRT</td>
+      <td>TGAGGATTTGGAAAGGGTGT</td>
+      <td>GAGCACACAGAGGGCTACAA</td>
+    </tr>
+    <tr>
+      <td>XIAP</td>
+      <td>TGAGGGAGACGAAGGGACTT</td>
+      <td>TTGTCCACCTTTTCGCGCC</td>
+    </tr>
+    <tr>
+      <td>BIRC2</td>
+      <td>ATCGTGCGTCAGAGTGAGC</td>
+      <td>CTTCAGGGTTGTAAATCGCAGT</td>
+    </tr>
+    <tr>
+      <td>BIRC3</td>
+      <td>CTCTGGGCAGCAGGTTTACAA</td>
+      <td>AGGTCTCCATTTTGAGATGTTTTGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vivo lung metastasis model and lung imaging
 
 MDA-MB-231 control and constricted cells (2.5 × 104) were suspended in 100 µl PBS and injected into the tail vein of NMRI nude female mice. To attain statistical significance of a p value between 0.05 and 0.02, we grafted 15 mice for each group. Sample-size calculation was performed as previously described (Fitts, 2011). The absence of mycoplasma in injected cells was controlled before injection in animals. Burden of lung metastasis was evaluated over time by X-ray microCT-Scan (Quantum FX, Perkin Elmer). Mice were anesthetized with a continuous flow of 2–4% isoflurane/air (1.5 l/min). The lungs were imaged in a longitudinal manner for 2 min with an exposure of 0.746 Gy and the obtained raw data were reconstructed with the following acquisition settings: a 24-mm FOV diameter, 512 slices, and 50 µm voxel. The resulting images were viewed and analysed using ‘Analyze of Caliper’ software (AnalyzeDirect) and the remaining healthy lung volume was quantified and 3D represented.
 
-## Histological analyses
+### Histological analyses
 
 If limiting points were not observed, mice were euthanized 8 weeks post-engraftment. Lungs were fixed in 4% buffered formalin, paraffin embedded, and three 3-µm sections separated by 300 µm were stained with hematoxylin–eosin. The slides were scanned using the panoramic scan II (3D Histech). These were then analysed with CaseViewer 2.2.0.85100 software (3DHISTECH Ltd) for the detection of metastasis.
 
-## NK-mediated immune surveillance
+### NK-mediated immune surveillance
 
 Control and constricted MDA-MB-231 cells were cocultured with human NK cells sorted from peripheral blood using the NK cell isolation Kit (Miltenyi Biotec 130-092-657) at the ratio of 1:20, in triplicate for each condition. Before co-culturing, tumour cells were pretreated with 10 µg/ml mitomycin for 1 hr to stop proliferation, and were incubated and tagged with CFSE (Invitrogen CellTrace, C34570) at 1 µl/ml for 20 min. Twenty-four hours later, cells in each condition were recovered by trypsin and stained intracellularly with Granzyme B (Biolegend, AF647, clone GB11). Flow cytometry was performed by BD LSR Fortessa HTS and data were analysed using GraphPad Prism V9.
 
-## Image analysis
+### Image analysis
 
 Image analysis was performed using the ImageJ software 1.52a.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are expressed as the mean ± standard error of the mean. A two-tailed Student’s t-test was applied to compare two groups of data. Analyses were performed using the Prism 5.0 software (GraphPad).

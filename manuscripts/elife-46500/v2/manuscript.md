@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.46500.001 The CRISPR-associated endonuclease Cas9 from Streptococcus pyogenes (SpyCas9), along with a programmable single-guide RNA (sgRNA), has been exploited as a significant genome-editing tool. Despite the recent advances in determining the SpyCas9 structures and DNA cleavage mechanism, the cleavage-competent conformation of the catalytic HNH nuclease domain of SpyCas9 remains largely elusive and debatable. By integrating computational and experimental approaches, we unveiled and validated the activated Cas9-sgRNA-DNA ternary complex in which the HNH domain is neatly poised for cleaving the target DNA strand. In this catalysis model, the HNH employs the catalytic triad of D839-H840-N863 for cleavage catalysis, rather than previously implicated D839-H840-D861, D837-D839-H840, or D839-H840-D861-N863. Our study contributes critical information to defining the catalytic conformation of the HNH domain and advances the knowledge about the conformational activation underlying Cas9-mediated DNA cleavage.
+The CRISPR-associated endonuclease Cas9 from Streptococcus pyogenes (SpyCas9), along with a programmable single-guide RNA (sgRNA), has been exploited as a significant genome-editing tool. Despite the recent advances in determining the SpyCas9 structures and DNA cleavage mechanism, the cleavage-competent conformation of the catalytic HNH nuclease domain of SpyCas9 remains largely elusive and debatable. By integrating computational and experimental approaches, we unveiled and validated the activated Cas9-sgRNA-DNA ternary complex in which the HNH domain is neatly poised for cleaving the target DNA strand. In this catalysis model, the HNH employs the catalytic triad of D839-H840-N863 for cleavage catalysis, rather than previously implicated D839-H840-D861, D837-D839-H840, or D839-H840-D861-N863. Our study contributes critical information to defining the catalytic conformation of the HNH domain and advances the knowledge about the conformational activation underlying Cas9-mediated DNA cleavage.
 
 ## Introduction
 
@@ -29,9 +29,65 @@ The clustered regularly interspaced short palindromic repeats (CRISPR)-associate
 
 Several structures of the SpyCas9-sgRNA-DNA ternary complex to depict the HNH nuclease domain in a ‘cleavage-competent’ state have been reported (Huai et al., 2017; Palermo et al., 2018; Palermo et al., 2017; Zuo and Liu, 2017). Notably, the amino acid residue D861 in the HNH domain of SpyCas9 pointed towards the catalytic center in the absolute majority of resolved crystal structures (Anders et al., 2016; Anders et al., 2014; Dong et al., 2017; Hirano et al., 2016; Jiang et al., 2015; Jiang et al., 2016; Jinek et al., 2014; Liu et al., 2019; Nishimasu et al., 2014; Olieric et al., 2016; Yang and Patel, 2017), molecular dynamic simulation models (Palermo et al., 2018; Zuo and Liu, 2017), and cryo-electron microscopy (cryo-EM) structures (Huai et al., 2017; Jiang et al., 2019; Shin et al., 2017) (Figure 1a–1d). Despite lacking experimental evidence, it is generally believed that D861 directly participates in Mg2+ chelation and tDNA cleavage (Huai et al., 2017; Palermo et al., 2018; Palermo et al., 2017; Zuo and Liu, 2017). An in silico model (Yoon et al., 2019) that was recently reported also suggested that D861 and N863 are potentially involved in chelating the Mg2+ ion at the catalytic center of the HNH domain, although this discovery also remained untested in an experimental setting. In the diverse homologous structures of DNA/RNA nucleases from other species (Yang, 2008; Yang, 2011), however, the residues spatially equivalent to the D861 of SpyCas9 are conserved as an asparagine. The substitution (N62D) of the corresponding asparagine in the active center of bacteriophage T4 Endonuclease VII (T4 Endo VII) has been shown to abrogate its DNA cleavage activity (Biertümpfel et al., 2007). These observations motivated us to examine the potential role of D861 in the HNH domain of Cas9. We mutated D861 to alanine and tested the activity of the D861A variant using an experimental approach based on Cas9-mediated disruption of the egfp gene in EGFP-expressing human cells. Unexpectedly, this Cas9 variant exhibited DNA-cleavage activity level similar to that of the wild-type protein (Figure 1e and Figure 1—figure supplement 1). To further validate our finding, we performed in vitro cleavage assays using either plasmid or oligo DNA as a substrate and observed that the D861 variant retained similar activity as the wild type, given enough reaction time (Figure 1—figure supplement 2 and Figure 1—figure supplement 3). Our experiments thus demonstrate that D861 is not critical for HNH domain-catalyzed tDNA cleavage, unlike what would be expected from the reported Cas9 complex structures (Anders et al., 2014; Huai et al., 2017; Jiang et al., 2016; Palermo et al., 2018; Palermo et al., 2017; Zuo and Liu, 2017). In other words, the previously reported structures of the HNH domain of DNA-bound Cas9 (Huai et al., 2017; Palermo et al., 2018; Palermo et al., 2017; Zuo and Liu, 2017) potentially represent a conformation that is incompetent for tDNA cleavage. Hence, we refer to this cleavage-incompetent conformation with an inward-facing D861 as ‘psuedoactive state’ hereafter. This report aims to unmask the catalytic state of the HNH nuclease domain in Cas9 and explore the underlying mechanism of activation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig1-v2.jpg)
+
+**Figure 1.:** (a–d) ββα-Me fold in the sgRNA-bound state of Cas9 (a), in the intermediate state (b), in the pre-catalytic state (c), and in the pseudoactive state (d). The ββα-Me fold is represented as pink ribbons, and the residues are shown in stick models and colored by atom type (C, dark green; N, blue; O, red). If present, the bound Mg2+ ion is depicted as a magenta sphere, and only the tDNA phosphate-sugar backbone is displayed for clarity. The location of the Cas9 D861 is highlighted by an arrow, and the dashed lines denote hydrogen bonds or coordinative bonds. (e) The expression and DNA-editing activity of the wild-type and D861A variants of Cas9 paired with an sgRNA sequence that targets the egfp gene in HEK293T-EGFP cells. (f) The expression and DNA-editing activity of the wild-type and indicated variants of Cas9 paired with an sgRNA sequence that targets the egfp gene in HEK293T-EGFP cells. The retention of EGFP expression reflected the loss of activity of Cas9 protein in the cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Upper panel: A DNA sequencing chromatogram showing the D861A mutation of the Cas9 gene open reading frame in the lentiCRISPR expression vector of Cas9 with the EGFP sgRNA1 sequence. Lower panel: Representative histograms of flow cytometry analysis in HEK293T-EGFP cells with the expression vectors of wild-type (WT) and D861A Cas9. (b) Upper panel: DNA sequencing chromatograms showing the D837A, D839A, N863A and D861A/N863A mutations of the Cas9 gene open reading frames in the lentiCRISPR expression vectors of Cas9 with the EGFP sgRNA1 sequence. Lower panel: Representative histograms of flow cytometry analysis in HEK293T-EGFP cells with the expression vectors of WT, D837A, D839A, N863A and D861A/N863A Cas9.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) SpyCas9D861A (b) and SpyCas9N863A (c) Left panels: The gel images of DNA electrophoresis showing the bands of different plasmid conformations due to the cleavage activity of Cas9. Right panels: The quantitative results of cleaved DNA over the indicated reaction time. Each data point presents the average value of three replications. Error bars represents standard error of mean. The results indicate that SpyCas9D861A has a similar activity profile as SpyCas9WT, expect for a slower rate. SpyCas9N863A produces only nicked products even after one hour of reaction. [N: nicked, L: linear, SC: supercoiled].
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) A schematic illustration of radioisotope-labeled oligo DNA substrate used in this study. The duplex is labeled with 32P at the 5’-end of both strands. The sequences in bold are the protospacer; the PAM sequence is in red. Black triangles indicate the anticipated cleavage sites by HNH and RuvC. The size of denatured DNA products as visible in electrophoresis followed by film exposure is indicated for each DNA strand. (b) A representation of gel image showing the products of oligo DNA cleavage. Reactions were performed for different time periods, and the products were resolved on a denaturing 16% urea-formamide gel. The NT-strand cleavage product and T-strand cleavage product are produced respectively by the RuvC and HNH domains. SpyCas9N863A lacks T-strand cleavage product, suggesting that the HNH activity is eliminated in this variant. In summary, our in vitro cleavage reactions of plasmid and oligo DNAs clearly indicate that N863 is indispensable for the HNH nuclease activity, whereas D861 appears to provide a supporting role to enable a faster reaction rate but is nonessential for target DNA strand cleavage. A close inspection of our simulation trajectories led us to propose that D861 might have a role in stabilizing the catalytic ββα-Me motif by forming an intra-molecular salt bridge (Figure 2d), or aid initial recruitment of metal ions around the active center with other negative species like D839 and D837 (Figure 2a).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The ββα fold is depicted as a pink ribbon diagram, and the residues at and around the fold core are shown as a stick model and colored by atom types (C, dark green; N, blue; O, oxygen). The disordered loop in apo-SpyCas9 is indicated by a chain of beads. The magenta sphere represents the bound Mg2+, and the dashed lines denote hydrogen bonds or coordination bonds.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** The ββα fold is depicted as a pink ribbon diagram, and the residues at and around the fold core are shown as a stick model and colored by atom types (C, dark green; N, blue; O, oxygen). The magenta sphere represents the bound Mg2+, and the dashed lines denote hydrogen bonds or coordination bonds.
+
 ## Results and discussion
 
 Intrigued by the above paradoxical findings between the structural and functional experiments, we performed molecular modeling and molecular dynamics (MD) simulations to further investigate the residues that may participate in the catalysis of tDNA cleavage. We first examined the apo-state crystal structure of Cas9 (Jinek et al., 2014). One noticeable feature in this apo-Cas9 structure is that the α-helical element in the HNH domain ββα-metal (ββα-Me) fold appears to pose a unique conformation with N863 pointing toward the catalytic center (Figure 1—figure supplement 4a). This inward orientation of N863 was distinct from the inward orientation of D861 observed in the Cas9 structures co-crystalized with sgRNA and/or DNA (Figure 1a–1d). However, the N-terminal of the α-helical segment is disordered in this apo-Cas9 structure (Figure 1—figure supplement 4a), suggesting a high conformational flexibility around this region. We completed the disordered regions of the apo-Cas9 structure by homology modeling and performed molecular dynamics (MD) simulation with a Mg2+ ion placed in the catalytic ββα-Me motif (Figure 1—figure supplement 4b). As a result, the Mg2+ ion formed an octahedral coordination with D839, N863, and four water molecules (Figure 1—figure supplement 4c), which closely resembled the Mg2+ coordination in the X-ray crystal structure of Actinomyces naeslundii Cas9 (AnaCas9, Figure 1—figure supplement 5a) (Jinek et al., 2014). Encouraged by this finding, we next applied the above Mg2+-bound α-helical conformation in our optimized pseudoactive Cas9 complex structure (Zuo and Liu, 2017) (Figure 2a–2b) and performed MD-based refinement on the entire structure (see details in Materials and methods). In our final structure, D839, H840 and N863 on the ββα-Me motif formed the catalytic triad that was poised for cleaving the tDNA. The Mg2+ ion was coordinated with the residues D839 and N863 of SpyCas9, a scissile phosphate (the pro-Sp oxygen and leaving O3’ engaged), and two water molecules in a strained geometry (Figure 2d–2e). This structure highly resembled the catalytic configuration present in the X-ray structure of T4 Endo VII/DNA complex (Biertümpfel et al., 2007) (Figure 2c), indicating the N863 of Cas9 could be engaged in the formation of the catalytic center for tDNA cleavage.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig2-v2.jpg)
+
+**Figure 2.:** (a–b) Zoomed-in view (a) and zoomed-out view (b) of the HNH domain docked onto the tDNA and REC lobe in the optimized pseudoactive state. (c) Close-up view of the catalytic configuration of the T4 Endo VII (N62D) ββα-Me motif complexed with a DNA substrate. (d–f) Zoomed-in views (d, f) and zoomed-out view (e) of the HNH domain docked onto the tDNA and REC lobe in the catalytically active state. (g) Schematic diagram of the proposed mechanism underlying Cas9 HNH domain conformational activation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Type II restriction endonuclease Hpy99I; (b–c) Homing endonucleases I-HmuI (b) and I-PpoI (c); (d) non-specific periplasmic nuclease from Vibrio vulnificus (Vvn); and (e) Endonuclease I from Vibrio cholerae (Vcl). See also Figure 2c for the Holliday Junction resolvase phage T4 Endo VII.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The primary sequences of Type II-A Cas9 orthologs from Streptococcus pyogenes (Spy, GI 15675041), Streptococcus thermophilus LMD-9 (Sth, GI 11662823), Listeria innocua Clip 11262 (Lin, GI 16801805), Streptococcus agalactiae A909 (Sag, GI 76788458), Streptococcus mutans UA159 (Smu, GI 4379809), Enterococcus faecium 1231408 (Ffa, GI 257893735), Treponema denticola (Tde, WP_002676671.1), and Staphylococcus aureus (Sau, GI 1027923597), together with Type II-C Cas9 orthologs from Neisseria meningitidis (Nme, WP_019742773.1), Campylobacter jejuni (Cje, WP_002876341.1) and Actinomyces naeslundii str. Howell 279 (Ana, EJN84392.1) were aligned using Cluster Omega. The alignment was illustrated by MSAViewer with default settings. The secondary structures of SpyCas9 from its apo-state crystal structure (PDB code: 4CMP) are represented at the top of the sequence alignment diagram, with the residue numbers indicated below.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The ββα-Me motif is represented by pink ribbons, and the residues is depicted as stick models and colored by atom types (C, dark green; N, blue; O, oxygen). The Mg2+ is rendered as a magenta sphere. For the tDNA, only the phosphate-sugar backbone is shown for clarity. The dashed lines denote coordination bonds.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The residues on the REC2 and HNH domains are colored by green and yellow, respectively. The dashed lines indicate hydrogen bonds or salt bridges.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a)-(b) Free energy landscapes of the α structure element as obtained based on the principal component analysis of the replicated simulations initiated from the N863-IN (a) and N863-OUT (b) state. (c) Free energy landscape of the α structure element derived from the combined sets of simulations. The total sampling time adds up to 50 μs and the Cα atoms are selected for the present calculations. In deriving the landscapes in (a) and (b), the simulation trajectories (500,000 snapshots in total) of each state are projected onto the same subspace defined by the two principal components (i.e., PC1 and PC2) that are calculated over the combined trajectories (1000,000 snapshots). The starting structure for each system is mapped on the PC1-PC2 plane, highlighted with a circle filled in magenta. The free landscape in (c) are constructed from the combined sets of simulations for the N863-IN and N863-OUT state, against the distance RMSD (dRMSD) with reference to the N863-IN simulation starting structure (marked with a magenta circle) and the difference in distances of D839-D861 (dD839-D861) and D839-N863 (dD839-N863). Note that dRMSD compares pairs of internal distances (not absolute coordinates) and is thus insensitive to translations and rotations. The representative structures at the prominent minima are illustrated below panel (c).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** The drawing style and coloring scheme are as in Figure 2a and Figure 2d. Remarkable similarities have been observed at the metal center by the QM/MM simulations, confirming the desirable accuracy of the current metal ion model in MD simulations.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/46500/elife-46500-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** In this structure, the active center Mg2+ lost one critical coordination bond with the leaving group O3’ as compared to the catalytic configuration captured in the homologous T4 Endo VII in complex with a DNA substrate (Figure 2c). Here we refined this structure using an advanced multisite Mg2+ model based on a 12-6-4 LJ potential, and the resulting active center configuration (Figure 2a) well reproduced that in the T4 Endo VII system (Figure 2c).
 
 To validate the role of N863 in SpyCas9 function, we examined the gene-editing activities of an N863A variant and a D861A/N863A double-mutant variant using cell-based assays. Both SpyCas9 variants virtually lost the entire gene-editing capability compared to the wild-type protein (Figure 1f and Figure 1—figure supplement 1). Consistently, our in vitro assays also showed an effective loss of tDNA cleavage activity for the N863A variant, essentially producing only nicked products in the plasmid cleavage assay (Figure 1—figure supplement 2) and causing the disappearance of the 23-nucleotide tDNA cleavage product in the oligo assay (Figure 1—figure supplement 3). We note that the DNA nicks produced in the cell-based assay could be efficiently repaired by the cellular machinery, thereby causing the apparent loss of gene-editing capability in the above N863A variants. Together, our results clearly show N863, instead of D861, is the functional catalytic residue. Some studies have also suggested the possibility of N863 in forming the catalytic center of the Cas9 HNH domain (Nishimasu et al., 2014; Yoon et al., 2019). In contrast to the observation from another in silico model that was recently published (Yoon et al., 2019), our computational model indicated that D861 and N863 are unlikely to be simultaneously involved in the coordination of Mg2+ ion for cutting the tDNA. Besides N863, the functional significance of H840 (acting as a general base) has been confirmed by experiments (Jinek et al., 2012; Nishimasu et al., 2014). Another putative active residue in the HNH domain is D839, which could be inferred from the structures of homologous nucleases (Yang, 2008), despite lacking experimental data to support its catalytic role. Here, we discovered that the D839A mutation substantially compromised the gene-editing activity of Cas9 (Figure 1f), which is consistent with our simulation studies (Zuo and Liu, 2017) and directly supports the significance of D839 for Cas9 activity. Collectively, our structural and functional data corroborate the essence of D839, H840 and N863 for the cleavage function of the HNH domain.
 
@@ -49,47 +105,162 @@ Based on the findings reported here and in the previous studies (Dagdas et al., 
 
 Meanwhile, we note that the possibility cannot be ruled out that the N863-IN conformation may be stably formed when enough Mg2+ ions are present in the solvent. In other words, the N863-IN conformation could be induced by Mg2+ even without engaging a DNA substrate. To test this hypothesis, we have performed additional simulations on the pre-cleavage Cas9 complex (Jiang et al., 2016) with multiple Mg2+ ions positioned around N863, but were unable to observe the trend toward the N863-IN conformation over µs time scales (data not shown). Consistently, the HNH domain in 4UN3 (Figure 1b, right panel) and other crystals (like 5B2R, 5B2T, 5B2S, 5FQ5, 5FW1, 5FW2, 5FW3 and 6AI6) remained in the N863-OUT conformation even though as high as eight Mg2+ ions were cocrystalized (Anders et al., 2016; Hirano et al., 2016; Nishimasu et al., 2014; Olieric et al., 2016; Shin et al., 2017). Therefore, the presence of metal ions alone appears to be insufficient for the HNH domain conformational activation. Nevertheless, further experimental and computational research is needed to elucidate the transition process between the two states shown herein as well as the chemical principles defining the requirement for asparagine instead of aspartic acid.
 
-## Conclusion
+### Conclusion
 
 Overall, our study has delineated a molecular framework underlying the catalytic conformation of the HNH nuclease domain of SpyCas9. The findings presented here advance our knowledge of conformational activation that enables Cas9-mediated DNA cleavage, set an important foundation for future studies to further understand the structure-function relationships of Cas9, and facilitate the rational design of Cas9 variants in the future.
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216 (RRID: CVCL_0063)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cas9 (7A9-3A3) mouse monoclonal Ab</td>
+      <td>Cell Signaling Technology</td>
+      <td>14697 (RRID: AB_2750916)</td>
+      <td>WB (1:500), nonfat milk blocking</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACTIN mouse monoclonal Ab (C4)</td>
+      <td>MP Biomedicals</td>
+      <td>SKU08691002 (RRID: AB_2335127)</td>
+      <td>WB (1:5000), nonfat milk blocking</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>pLenti CMV GFP Puro</td>
+      <td>Addgene</td>
+      <td>17448</td>
+      <td>Campeau et al., 2009 Aug 6;4 (8):e6529.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>lentiCRISPR-EGFP sgRNA 1 (WT Cas9)</td>
+      <td>Addgene</td>
+      <td>51760</td>
+      <td>Shalem et al, Science. 3;343 (6166):84–7.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>lentiCRISPR-EGFP sgRNA 1 (D861A Cas9)</td>
+      <td>Site-directed mutagenesis (Wang lab)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>lentiCRISPR-EGFP sgRNA 1 (D837A Cas9)</td>
+      <td>Site-directed mutagenesis (Wang lab)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>lentiCRISPR-EGFP sgRNA 1 (D839A Cas9)</td>
+      <td>Site-directed mutagenesis (Wang lab)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Tansfected construct (Synthetic)</td>
+      <td>lentiCRISPR-EGFP sgRNA 1 (N863A Cas9)</td>
+      <td>Site-directed mutagenesis (Wang lab)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Synthetic)</td>
+      <td>lentiCRISPR-EGFP sgRNA 1 (N863A/D861A Cas9)</td>
+      <td>Site-directed mutagenesis (Wang lab)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Human embryonic kidney 293T (HEK293T) cells (ATCC, Manassas, VA) as a subclone of the HEK293 cell line were cultured in DMEM (Thermo Fisher Scientific, Carlsbad, CA) containing 10% fetal bovine serum (FBS; Thermo Fisher Scientific, Carlsbad, CA) at 37°C. All cells were periodically tested using the MycoAlert mycoplasma detection kit (Lonza, Walkersville, MD) and free of mycoplasma. The HEK293T cells were used to established EGFP-expressing cells by the lentivirus-mediated transduction of pLenti-CMV-GFP-Puro expression plasmid (Addgene, Cambridge, MA) into the cells followed by the selection of single-cell clones that stably express EGPF and fluorescence green (Campeau et al., 2009). The stable clone A2 was used in this study.
 
-## CRISPR-Cas9-mediated gene editing
+### CRISPR-Cas9-mediated gene editing
 
 For testing Cas9-mediated editing of the egfp gene in the HEK293T-EGFP (A2) cells, an EGFP-targeting sgRNA sequence (EGFP sgRNA1: 5’GGGCGAGGAGCTGTTCACCG3’) was cloned into a lentiCRISPR plasmid (Addgene, Cambridge, MA) and resulted in a construct of a one-vector system for co-expression of sgRNA and wild-type SpyCas9 (Addgene, Cambridge, MA) (Shalem et al., 2014). The site-directed mutagenesis was performed to specifically introduce mutations into the cas9 gene open reading frame (ORF) in the expression construct to generate the expression vectors of different Cas9 variants with the EGFP sgRNA sequence. After mutagenesis, the DNA sequencing of each expression construct was performed to confirm the mutations of the Cas9 gene ORF. HEK293T-EGFP (A2) cells transduced with the Cas9 and sgRNA expression constructs were selected using 5 ug/ml puromycin for two weeks prior to the downstream analysis to determine the editing efficiencies of different Cas9 variants.
 
-## Immunoblotting
+### Immunoblotting
 
 The general procedure for immunoblotting was described in previously published reports (Wang et al., 2008; Zolekar et al., 2018). The primary antibody against SpyCas9 (catalog# ab191468) was obtained from Abcam (Cambridge, MA). HRP-conjugated secondary antibodies were from Jackson ImmunoResearch Laboratories (West Grove, PA).
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 For determining fluorescence intensity and quantifying the percentages of EGFP fluorescence-positive cells in cell samples, samples (~5×105 cells per sample) harvested and resuspended in phosphate-buffered saline (PBS) were analyzed using a SH800Z cell sorter (Sony Biotechnology, San Jose, CA).
 
-## Site directed mutagenesis, and protein overexpression and purification
+### Site directed mutagenesis, and protein overexpression and purification
 
 The protein variants, SpyCas9D861A and SpyCas9N863A were produced by sequence independent cloning method (SLIC) using SpyCas9WT template plasmid (Addgene: pMJ806) (Jinek et al., 2012) and mutagenic primers (Supplementary file 2) (Scholz et al., 2013). Sequence confirmed clones were transformed into Escherichia coli Rosetta strain 2 (DE3) for protein expression. Overexpression and protein purification were carried out using previously published protocols (Babu et al., 2019; Jinek et al., 2012).
 
-## sgRNA and substrate DNA preparation
+### sgRNA and substrate DNA preparation
 
 The template for in vitro transcription of sgRNA (98-nucleotide long) contained a 20 nt long spacer as previously described (Babu et al., 2019; Nishimasu et al., 2014). The protocols used for in vitro transcription and sgRNA annealing were as reported previously (Babu et al., 2019). For creating target DNA, a 30 nt long protospacer flanked by a PAM (GGG) was introduced into pUC19 (Babu et al., 2019).
 
-## Plasmid DNA cleavage assay
+### Plasmid DNA cleavage assay
 
-The proteins were diluted in 20 mM HEPES pH 7.5, 150 mM KCl, and 2 mM TCEP, and the cleavage assays were carried out in a final volume of 10 μL. The reaction mix contained 20 mM Tris-HCl pH 7.5, 100 mM KCl, 5 mM MgCl2, 5% (v/v) glycerol, 0.5 mM TCEP, 100 ng of substrate plasmid, 50 nM SpyCas9, and 60 nM sgRNA (protein and RNA at a ratio of 1:1.2 molar). The reaction mixture was incubated at 37°C and stopped at different time points (15 s, 30 s, 1 min, 2.5 min, 5 min, 7.5 min, 10 min, 15 min, 30 min, 45 min, and 60 min) by the addition of 50 mM EDTA and 1% SDS. The reaction products were resolved on 1% agarose gel and products were visualized by ethidium bromide staining. The gel was imaged using a BioRad ChemiDoc MP apparatus. To quantify the cleavage activities, each gel image was analyzed using the ImageJ software (Schneider et al., 2012). The bands of nicked (N), linear (L), and supercoiled (SC) DNA were quantified and designated as IN, IL, and ISC respectively. The nicked, linear and total activity (TA) was calculated using the following equations:(1)Nicked (%)=[ININ+IL+ISC]×100(2)Linear (%)=[ILIN+IL+ISC]×100(3)TA (%)=[IN+ILIN+IL+ISC]×100
+The proteins were diluted in 20 mM HEPES pH 7.5, 150 mM KCl, and 2 mM TCEP, and the cleavage assays were carried out in a final volume of 10 μL. The reaction mix contained 20 mM Tris-HCl pH 7.5, 100 mM KCl, 5 mM MgCl2, 5% (v/v) glycerol, 0.5 mM TCEP, 100 ng of substrate plasmid, 50 nM SpyCas9, and 60 nM sgRNA (protein and RNA at a ratio of 1:1.2 molar). The reaction mixture was incubated at 37°C and stopped at different time points (15 s, 30 s, 1 min, 2.5 min, 5 min, 7.5 min, 10 min, 15 min, 30 min, 45 min, and 60 min) by the addition of 50 mM EDTA and 1% SDS. The reaction products were resolved on 1% agarose gel and products were visualized by ethidium bromide staining. The gel was imaged using a BioRad ChemiDoc MP apparatus. To quantify the cleavage activities, each gel image was analyzed using the ImageJ software (Schneider et al., 2012). The bands of nicked (N), linear (L), and supercoiled (SC) DNA were quantified and designated as IN, IL, and ISC respectively. The nicked, linear and total activity (TA) was calculated using the following equations:
 
-For each reported data point, average values were obtained from a minimum of three replications that were performed using proteins produced from two independent preparations to account for variations in active protein fraction between different preparations. Standard deviation (SD) and standard error of mean (SEM) were calculated based on the number of replications using the following equations:(4)SD=∑R-RAV2/n-1(5)SEM=SD/nwhere R is a data value from each replication, RAV is average of data values of all the replications, and n is the number of replications (a total of three for each protein variant).
+$$
+Nicked (%)=[\frac{I_{N}}{I_{N}+I_{L}+I_{SC}}]\times100
+$$
 
-## Radioactive assay
+
+
+$$
+Linear (%)=[\frac{I_{L}}{I_{N}+I_{L}+I_{SC}}]\times100
+$$
+
+
+
+$$
+TA (%)=[\frac{I_{N}+I_{L}}{I_{N}+I_{L}+I_{SC}}]\times100
+$$
+
+For each reported data point, average values were obtained from a minimum of three replications that were performed using proteins produced from two independent preparations to account for variations in active protein fraction between different preparations. Standard deviation (SD) and standard error of mean (SEM) were calculated based on the number of replications using the following equations:
+
+$$
+SD=\sqrt{\sumR-R_{AV}^{2}}/n-1
+$$
+
+
+
+$$
+SEM=SD/\sqrt{n}
+$$
+
+where R is a data value from each replication, RAV is average of data values of all the replications, and n is the number of replications (a total of three for each protein variant).
+
+### Radioactive assay
 
 Two separate oligo DNA strands used for the radioactive assay were ordered from Integrated DNA technology (IDT, Supplementary file 2). Target (T) and non-target (NT) strands were mixed at equimolar concentration in the annealing buffer (30 mM HEPES pH 7.5, 100 mM potassium acetate) and heated at 95°C for 2 min and allowed for slow cooling. The annealed duplex oligo DNA was 5’ end labeled with 32P (γ−32P ATP purchased from PerkinElmer) using T4 polynucleotide kinase (New England Biolabs). The labeled oligo DNA was purified using BioSpin column P-30 (BioRad). The reaction buffer contained 20 mM Tris-HCl pH 7.5, 100 mM KCl, 10 mM MgCl2, 5% (v/v) glycerol, 0.5 mM TCEP. Approximately 5 nM of labeled oligo duplex was incubated with 250 nM SpyCas9 and 300 nM sgRNA (protein and RNA at a ratio of 1:1.2 molar) at 37°C and stopped at different time points (15 min, 30 min, and 60 min) using EDTA at 10 mM final concentration. Then the samples were treated with proteinase K (New England Biolabs) for 15 min at 50° C to remove SpyCas9. This was followed by addition of equal volume of loading dye (2X concentration is 20 mM EDTA, 95% formamide, 2% SDS, and 0.025% bromophenol blue). The reaction samples were resolved on a 16% poly-acrylamide gel containing 20% formamide and 6.4 M urea. The bands were visualized by phosphor imaging with Typhoon FLA 7000 system (GE life sciences). Three independent replications were performed using proteins from two independent preparations.
 
-## Molecular modeling and molecular dynamics simulations of apo-Cas9
+### Molecular modeling and molecular dynamics simulations of apo-Cas9
 
 The initial coordinates of the apo-state SpyCas9 were taken from the Protein Data Bank (PDB) under accession number 4CMP (solvated at 2.6 Å resolution) (Jinek et al., 2014). This X-ray structure contains two Cas9 monomers, and the molecule B was considered for modeling here (Figure 1—figure supplement 4a). The disordered regions were built up with the tool SWISS-MODEL (Waterhouse et al., 2018) and the missing heavy atoms and hydrogens were added by using the leap program within AMBERTOOL16 (Salomon-Ferrer et al., 2013). The complete structure was then solvated in a cubic water box with a minimal thickness of 13.5 Å from each edge, leading to a periodic boundary box of 138 × 153×126 Å3. The system was neutralized by Na+, and additional NaCl was added to generate a physiological ionic strength of 150 mM. The resulting simulation box contains ~230,000 atoms.
 
@@ -97,22 +268,22 @@ The above system was simulated by the CUDA-accelerated version of AMBER16 pmemd 
 
 The final structural snapshot from the above simulation was then extracted, and a Mg2+ ion was placed at its HNH domain active center to set up the Mg2+-bound system (Figure 1—figure supplement 4) by reference to the AnaCas9 crystal structure bound with a Mg2+ ion (Figure 1—figure supplement 5a) (Jinek et al., 2014). Also, extra Mg2+ ions were introduced into the system to obtain a physiological concentration of 5 mM. The parameter set developed by Li et al. (Li et al., 2013b) was selected for Mg2+. In the equilibration stage, the distances between the Mg2+ and the coordinating oxygens on D839 and N863 was restrained to 2.1 Å (i.e., the experimental ion-oxygen distance; Zheng et al., 2008). The production run without restrains was extended to 50 ns.
 
-## Molecular dynamics refinement of the pseudoactive Cas9 complex
+### Molecular dynamics refinement of the pseudoactive Cas9 complex
 
 The starting structure of the pseudoactive Cas9 complex (Figure 1d, right panel) was obtained from our recent work (Zuo and Liu, 2017), which was derived by employing the unbiased, brute-force MD simulations on the crystal structure of Cas9-sgRNA-DNA (PDB code: 5F9R) that was captured in the pre-cleavage state (Jiang et al., 2016). The structural model has been validated by different experiments, yet the Mg2+ ion at the HNH domain catalytic center appeared to lose one critical coordination bond with the leaving group O3’ of the scissile phosphate (Zuo and Liu, 2017) (Figure 2—figure supplement 7), as compared to the homologous T4 Endo VII structure complexed with a DNA junction (Biertümpfel et al., 2007) (Figure 2c). We reasoned that this issue may be due to the deficiency with the simple point-charge Mg2+ model used. Most recently, we systematically evaluated the performance of all four types of non-bonded Mg2+ ion models in terms of maintaining a challenging metal center configuration in a nuclease system (Nowotny et al., 2005). Our benchmark calculations demonstrated that the multisite models based a 12-6-4 Lennard-Jones potential (Li and Merz, 2014; Liao et al., 2017), which take charge-induced dipole effects into account, are the only ones that are capable of reproducing the experimental coordination patterns (Zuo and Liu, 2018a). Accordingly, the 12-6-4 type multisite model (Jorgensen et al., 1983) (here the midC4 set) was considered for the Cas9 complex simulation, along with the TIP4PEw model for water, the Joung-Cheatham parameter sets for monovalent ions (Joung and Cheatham, 2008), and the amber force fields ff14SBonlysc, ff99bsc0_chiOL3, ff99bsc0_OL15 for protein, RNA and DNA, respectively. Basically, the complex system was set up and simulated following the above protocol for the apo-Cas9 systems. The generated simulation box is approximately 109 × 145×166 Å3 sized, containing ~282,000 atoms. With different random seed numbers, two parallel simulations were carried out by using the latest AMBER18 (Salomon-Ferrer et al., 2013) that enables GPU calculations of the 12-6-4 ion potential. The simulation length was set to 200 ns each.
 
-## Molecular modelling and molecular dynamics simulations of the active Cas9 complex
+### Molecular modelling and molecular dynamics simulations of the active Cas9 complex
 
 The initial model for the active Cas9 complex was constructed by replacing the α-helical segment of the ββα-Me motif in the optimized pseudoactive Cas9 complex (Figure 1a) with the corresponding part in the Mg2+-bound apo-Cas9 structure (Figure 1—figure supplement 4c). The pseudoactive Cas9 complex structure was taken from the above production simulation near 100 ns (i.e. about half of the simulation time). The Mg2+-bound apo-Cas9 structure from the simulation trajectory was selected based on the observation of reasonable bonding with the connecting residues and minimal steric clashes after replacement of the α-helical segment. After sufficient energy minimization, the structural model was subjected to multi-stage equilibration: an initial 20-ns relaxation of the α-helical segment and surrounding residues, an another 20-ns equilibration with the inter-atomic distances within the metal center retrained relative to the T4 Endo VII system (Biertümpfel et al., 2007), followed by an additional 20-ns equilibration with the restraints gradually released. Subsequently, two independent replicas were performed (250 ns/run) under the same simulation conditions set for the pseudoactive system above.
 
-## Molecular dynamics simulations of isolated Cas9 HNH domain
+### Molecular dynamics simulations of isolated Cas9 HNH domain
 
 Additional MD simulations were performed to investigate the relative stability of the two conformational states (i.e. N863-IN and N863-OUT) of the α structure element containing N863 and D861. The starting coordinates were taken from the respective structure models above, and only the HNH domain of Cas9 (residues 781 to 905) was included in our simulation to enhance the sampling efficiency. Each isolated HNH domain in the two states was immersed in a truncated octahedral water box, with a minimal thickness of 14.5 Å. The ionic centration was set to 100 mM by adding an appropriate number of K+ and Cl- ions in the aqueous solution. The amber force field ff14SBonlysc and the TIP3P model were used for describing the protein and the water molecules, respectively, and the parameter sets for the monovalent ion were derived from the work by Joung and Cheatham (2008). For each system, five independent simulations were performed under the NPT ensemble with different initial velocities, using a timestep of 2-ps. Each replica was extended to ~10 us, yielding a total of ~50 us of sampling for each system.
 
-## Hybrid quantum mechanics/molecular mechanics simulations
+### Hybrid quantum mechanics/molecular mechanics simulations
 
 The semiempirical DFTB3 QM/MM simulations were further implemented to improve the reliability of our MD-derived structure models. DFTB3 is the third-order variant of density functional theory tight binding (DFTB) that is formulated in a DFT framework (Gaus et al., 2012). According to the extensive benchmark calculations, DFTB3 in its current form is most reliably for structural properties, including for fairly complex bimetallic motifs in diverse metalloenzymes (particularly the phosphoryl-transfer enzymes) (Gaus et al., 2012; Lu et al., 2015; Lu et al., 2016; Roston et al., 2018). The QM region includes the catalytic Mg2+ ion, the protein residues that coordinate the metal ion (i.e., D839 and D861/N863), the general base H840, part of the scissile phosphate and nearby atoms on the target strand, and the water molecules surrounding the metal ions, H840, and the scissile phosphate (cf. Figure 2a and d). Only the side chains of protein and the backbone of DNA are kept in the QM region, and link atoms are added between the Cα and Cβ atoms for the amino acids or between the C4’ and C5’ atoms for the nucleotides. The partitioning results in a total of 72 and 75 QM atoms for the pseudoactive and active Cas9 models, respectively. The dummy complex for the Mg2+ ions employed in pure MD simulations is changed back to the realistic single-atom form. The MM part of the protein and nucleic acids are described using the same AMBER force fields as mentioned above, and the water molecules are described with the TIP3P model. After the stages of energy minimization and slow heating, each system was subjected to two parallel 1,000-ps QM/MM simulations performed with the AMBER program.
 
-## Computation of conformational free energies
+### Computation of conformational free energies
 
 The free energies of the Cas9-nucleic acid complex conformers were estimated through the end-point Molecular Mechanics-Generalized Born Surface Area (MM-GBSA) approach (Miller et al., 2012). Compared to the alternative Molecular mechanics-Poisson Boltzmann Surface Area (MM-PBSA), MM-GBSA has been proven to be give comparable or even better accuracy in ranking ligand binding affinities as well as in calculating the relative stability of multiple conformations of a biomolecular system, though MM-PBSA is physically more rigorous (Li et al., 2013a; Zuo and Liu, 2016a; Zuo et al., 2018b). For each state, the MM-GBSA calculations were performed over an ensemble of 2000 snapshots extracted from the last 50 ns of the simulation trajectories using the program MMPBSA.py in AmberTools16. The pairwise GB model of Hawkins, Cramer, and Truhlar (GBHCT) (Hawkins et al., 1995; Hawkins et al., 1996) was used, with the parameters described by Tsui and Case (2000). The default values of the surface tension and the offset to correct the non-polar contribution to the solvation free energy were adopted and the salt concentration was set to 150 mM. Following our recent works (Zuo and Liu, 2016a; Zuo et al., 2018b), the two water molecules closest to the Mg2+ ion at the HNH domain active center were retained as part of the complex, considering the importance of the interfacial water for binding. The entropic contribution was not taken into account due to high computational demand and potential convergence problem, yet omission of this term does not qualitatively affect the results as previously suggested (Hou et al., 2011; Li et al., 2013a; Zuo et al., 2018b; Zuo et al., 2016b).

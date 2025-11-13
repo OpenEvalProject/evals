@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05abbep66 Department of Biology, Brandeis University Waltham United States
-2. https://ror.org/05abbep66 Volen Center for Complex Systems, Brandeis University Waltham United States
-3. https://ror.org/05abbep66 Sloan-Swartz Center for Theoretical Neurobiology, Brandeis University Waltham United States
+1. Department of Biology, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
+2. Volen Center for Complex Systems, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
+3. Sloan-Swartz Center for Theoretical Neurobiology, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
 
 † Corresponding author
 
@@ -43,21 +43,29 @@ We made multichannel recordings at a developmental time point when past studies 
 
 We recorded responses to long batteries of visual stimulation with sinusoidal gratings where multiple parameters were co-varied in order to assess a wide variety of possible receptive field differences between control animals and animals that had their eyes opened prematurely. In this study, all recordings were performed in the monocular visual cortex in order to simplify the interpretation of these changes without needing to consider interactions between the two eyes. We labeled cells as EO1contra (monocular neurons contralateral to a single early-opened eye), EO1ipsi (monocular neurons ipsilateral to a single early-opened eye), EO2 (monocular neurons contralateral to an early opened eye where both eyes were opened early), and control (monocular neurons in control animals). EO1 contra and EO2 cells observed the world through early-opened eyes, while EO1ipsi neurons observed the world through eyes that opened on time but were ipsilateral to early-opened eyes.
 
-## Orientation and direction tuning index values are slightly increased by premature experience
+### Orientation and direction tuning index values are slightly increased by premature experience
 
 Cells in all animals exhibited some degree of orientation and direction selectivity. Orientation selectivity was assessed for stimuli that moved back and forth in two opposite directions at each cell’s preferred spatial frequency. Direction selectivity was assessed at the neuron’s optimal temporal frequency and a spatial frequency of 0.1. Example responses for each group are shown in Figure 2A–H. Control animals exhibited a baseline average orientation index value (1-CV) of 0.42, and this value was not significantly elevated in EO1ipsi neurons (0.45, p<0.54, Linear Mixed Effects Model). However, orientation selectivity was slightly elevated in EO1contra neurons (0.52, p<0.024) and EO2 neurons (0.54, p<0.016, LMEM). Direction selectivity as assessed by 1-DCV was slightly reduced in EO1ipsi neurons (0.24, p<0.027, LMEM) as compared to control values (0.29), and 1-DCV values were not significantly different in EO1contra neurons (0.29, p<0.296) or EO2 neurons (0.33, p<0.169, LMEM). The overall distribution of direction preferences in 45° bins did not significantly differ across the groups (chi-square test, p=0.11), nor did the distribution of orientation angle preferences in 45° bins (chi-square test, 5.3x10–2). Therefore, we observed only minor long-term changes in orientation and direction tuning between animals with premature vision and control animals.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/106513/elife-106513-fig2-v1.jpg)
 
-**Figure 2.:** A) Example direction tuning curves of individual EO1contra cells measured after the close of the critical period.Direction tuning curves are shown for stimulation at the optimal temporal frequency. Direction tuning curves look coarsely normal. Vertical scale bar represents 10 spikes per second (standard indicated in italics) unless otherwise indicated. The dashed line shows mean response to blank / control stimuli. Number indicates 1-DCV value. (B) Same, for EO2 cells (C) Same, for EO1ipsi cells: (D) Same, for control cells (E) Orientation tuning curves of individual EO1contra cells, measured in different epochs and in some different animals than the direction tuning curves. Temporal frequency was 2 Hz, and the spatial frequency was optimal for each cell. Numbers indicate orientation selectivity index values 1-CV. (F) EO2 cells G: EO1ipsi cells (H) control cells (I) Results of a linear mixed effects analysis of direction selectivity index values, as assessed by (1-DCV), for all cells and conditions in the study. Each small column shows the cells for an individual animal. Yellow lines indicate random effect values for each animal. Gray lines indicate condition means and standard errors of the mean from the linear mixed effect model. Animals within a group have been sorted by mean index value. Condition coefficients that differ significantly from 0 are indicated with * (p<0.05), and conditions compared are indicated by comparison bars. See text for p values. (J) Same for orientation selectivity index values (1-CV) . EO1contra and EO2 cells exhibited slightly higher orientation selectivity index values than control animals, while EO1ipsi cells exhibited slightly lower direction selectivity values than other conditions.
+**Figure 2.:** Direction tuning curves are shown for stimulation at the optimal temporal frequency. Direction tuning curves look coarsely normal. Vertical scale bar represents 10 spikes per second (standard indicated in italics) unless otherwise indicated. The dashed line shows mean response to blank / control stimuli. Number indicates 1-DCV value. (B) Same, for EO2 cells (C) Same, for EO1ipsi cells: (D) Same, for control cells (E) Orientation tuning curves of individual EO1contra cells, measured in different epochs and in some different animals than the direction tuning curves. Temporal frequency was 2 Hz, and the spatial frequency was optimal for each cell. Numbers indicate orientation selectivity index values 1-CV. (F) EO2 cells G: EO1ipsi cells (H) control cells (I) Results of a linear mixed effects analysis of direction selectivity index values, as assessed by (1-DCV), for all cells and conditions in the study. Each small column shows the cells for an individual animal. Yellow lines indicate random effect values for each animal. Gray lines indicate condition means and standard errors of the mean from the linear mixed effect model. Animals within a group have been sorted by mean index value. Condition coefficients that differ significantly from 0 are indicated with * (p<0.05), and conditions compared are indicated by comparison bars. See text for p values. (J) Same for orientation selectivity index values (1-CV) . EO1contra and EO2 cells exhibited slightly higher orientation selectivity index values than control animals, while EO1ipsi cells exhibited slightly lower direction selectivity values than other conditions.
 
-## Temporal frequency tuning is aberrant in animals with premature visual experience
+### Temporal frequency tuning is aberrant in animals with premature visual experience
 
 We were struck by the unusual temporal frequency tuning curves that we observed in animals whose eyes were opened prematurely. Many EO1contra cells exhibited strong responses at the lowest temporal frequency tested (Figure 3A), and we observed a trend for this in EO2 cells as well (Figure 3B). Further, several cells also showed evidence of a suppression of the response below baseline. Tuning curves from EO1ipsi cells (Figure 3C) superficially looked more like curves from control animals (Figure 3D), although quantitative analyses uncovered small differences. Most cell types exhibited similar peak temporal frequency values (Figure 3E), except that EO1ipsi cells exhibited slightly higher temporal frequency preferences (p<0.021, LMEM). To quantify the response to the lowest temporal frequency tested, we calculated a low-pass index, defined as the ratio of the response to the lowest temporal frequency tested to the largest temporal frequency response observed (Figure 3F). Temporal frequency low-pass index values of control cells were 0.20 on average, while EO1contra cells showed low-pass index values that averaged 0.35 (p<0.039, LMEM) and EO2 cells showed empirically elevated values of 0.33 that were not significantly different from control (p<0.142, LMEM). High pass index values, determined by calculating the response at the highest temporal frequency tested divided by the maximum response, did not differ across these animals (Figure 3G).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/106513/elife-106513-fig3-v1.jpg)
+
+**Figure 3.:** Representative temporal frequency tuning curves recorded from single cells: (A) EO1contra: cells contralateral to a single prematurely opened eye. Several cells exhibited strong responses at the lowest temporal frequency tested (that is, several exhibited low-pass tuning). Temporal frequency was reported at each cell’s overall preferred direction (assessed over all temporal frequencies). Number indicates bandwidth in octaves. -∞ is low-pass. Vertical scale bar indicates firing rate (20 spikes/sec standard in italics unless otherwise noted). (B) EO2: cells recorded in an animal with both eyes prematurely opened. Again, many cells exhibited low-pass responses. (C) EO1ipsi: cells ipsilateral to a single prematurely opened eye. (D) Control: cells recorded in animals that opened both eyes naturally. (E) Linear mixed effects model plot of median temporal frequency preference; linear mixed effects plotted as in Figure 2. Median temporal frequency preference was slightly higher in EO1ipsi cells than other cells. (F) Temporal frequency low-pass index values were significantly elevated in EO1contra cells, indicating stronger responses to the lowest temporal frequency tested. (G) No differences were observed in high pass index values. (H) Bandwidth of the rectified response. (I) Bandwidth of the absolute value of responses. Cells in animals that experienced early eye opening exhibited wider bandwidths (less selectivity) than control animals. See text for numbers and p-values.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/106513/elife-106513-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Temporal frequency L50 values across the experimental conditions. E01contra cells exhibited significantly lower L50 values than control animals (p<0.002, LMEM). (B) EO2 cells, by contrast, exhibited widened bandwidths by showing increased H50 values (p<0.004, LMEM). (C) Considering the absolute value of the temporal frequency response (where deviations above or below background firing rates contributed to response), EO1contra cells again exhibited significantly lower L50 values compared to control cells (p<0.00029, LMEM). EO1ipsi cells exhibited a slight increase in L50 values (p<0.0148, LMEM). (D) EO1ipsi cells showed a substantial increase in absolute H50 cutoff values (p<0.00169, LMEM).
+
 In order to assess tuning bandwidth, we calculated low- and high-frequency cutoff values by identifying the low- and high-frequency values where the response dropped below half the maximum response value. If this never occurred, the cell was considered to be low-pass (if this never occurred on the low-frequency side) or high-pass (if this never occurred on the high-frequency side). We then calculated the bandwidth between this low and high value in octaves. If a cell was low-pass or high-pass or both, the cell was said to have infinite bandwidth. In Figure 3H, we show bandwidth computed from rectified responses and saw empirically elevated bandwidths in EO1contra cells (2.33 octaves, p<0.07) and EO2 cells (2.33 octaves, p<0.08) compared to control cells (1.95 octaves) or EO1ipsi cells (1.91 octaves, p<0.937). Many cells exhibited suppression, where the response fell below the response to a control stimulus, and we took the absolute value of the response in calculating the absolute bandwidth so that both positive and negative responses were considered. The median absolute bandwidth (Figure 3I) of control cells (4.1 octaves) was narrower than any of the cells in animals whose eyes were opened early, including EO1ipsi cells (4.7 octaves, p<0.0013), EO1contra cells (4.8 octaves, p<0.002), and EO2 cells (5.1 octaves, p<0.00015, LMEM). These changes in bandwidth were related to changes in low- and high-cutoff values (Figure 3—figure supplement 1).
 
-## Spatial frequency tuning is relatively unaffected by premature visual experience
+### Spatial frequency tuning is relatively unaffected by premature visual experience
 
 Spatial frequency tuning was hardly influenced by early eye opening. We assessed spatial frequency at a cell’s preferred orientation, as determined by responses to drifting gratings that moved back and forth in opposite directions. Example tuning curves are shown in Figure 4A–D.
 
@@ -71,7 +79,7 @@ We observed no significant effects with respect to spatial frequency bandwidth, 
 
 In short, we found very little evidence of substantial changes to spatial frequency tuning in these monocularly-driven cells.
 
-## Spontaneous firing rates and response suppression are increased in animals that have had premature visual experience
+### Spontaneous firing rates and response suppression are increased in animals that have had premature visual experience
 
 Hebbian and homeostatic mechanisms are active early in development (Turrigiano and Nelson, 2004) and may be critical for setting response gains and the background excitability of neural circuits (Roy et al., 2018; Roy et al., 2020a). To examine whether response gains or excitability were impacted by premature vision, we quantified maximum firing rates in response to visual stimuli, response suppression, and background firing rates.
 
@@ -91,7 +99,7 @@ In all, early eye opening induced changes in response suppression and background
 
 We explored the impact of premature vision on the development of a number of V1 RF properties in ferrets. We found small increases in direction and orientation tuning in cells that viewed the world through prematurely opened eyes. We observed profound changes in temporal frequency tuning: cells recorded from animals that had their eyes opened prematurely exhibited more low-pass temporal frequency tuning curves and broader temporal frequency bandwidths compared to controls. Spatial frequency preferences were not substantially altered. Finally, cells in either hemisphere in animals with prematurely opened eyes had higher spontaneous firing rates and exhibited marked suppression below this spontaneous firing rate in response to some visual stimuli.
 
-## A novel temporal frequency tuning deficit with possible implications for motion processing
+### A novel temporal frequency tuning deficit with possible implications for motion processing
 
 We found that ferrets with premature visual experience exhibited a pronounced broadening of temporal frequency tuning curves and increases in the fraction of low-pass neurons. The alterations in temporal frequency tuning identified in ferrets following premature eye opening are strongly suggestive of a deficit in motion processing. The broadening of temporal frequency tuning curves and increase in the proportion of low-pass cells in V1 could translate to a decrease in the animal’s ability to distinguish the temporal frequency (and perhaps the speed) of a moving visual stimulus.
 
@@ -99,7 +107,7 @@ Altered rearing has been shown to influence the subsequent development of motion
 
 In sum, the deficits in temporal frequency tuning we observed are unlike those reported previously. Premature vision produces permanent alteration of temporal frequency tuning curves, while dark-rearing does not, and comparable results from strobe rearing are not available.
 
-## Biology of early development in mustelids
+### Biology of early development in mustelids
 
 In the wild, mustelids raise their young in nests in the ground, in cavities such as holes in trees or caves, or in areas of dense vegetation (Ruggiero et al., 1994). They may move the young from one nest to another as they grow, but otherwise, the young are primarily in the relatively dark nest. It is highly likely that some light penetrates and that information about the 24 hr cycle is available, but the light is likely to be dim and unlikely to provide a basis for high luminance, high contrast stimulation through the closed lids. The animals begin to spend substantial time outside the nest after eye opening.
 
@@ -107,7 +115,7 @@ The ferret is a domesticated strain of the European polecat. In laboratory setti
 
 Although the light that reaches the close lids in developing ferrets is likely to be relatively dim, and any image-forming signal passing through the closed lids would be highly filtered in luminance, spatial frequency, and contrast, it is important to remember that visual input before natural eye opening (through the closed lids) can drive activity in retina, LGN, and cortex (Huttenlocher, 1967; Chapman and Stryker, 1993; Krug et al., 2001; Akerman et al., 2002; Akerman et al., 2004). Further, orientation selectivity can be observed through the closed lids (Krug et al., 2001), indicating that some coarse image-forming information does make it through the closed lids.
 
-## Mechanisms underlying altered receptive fields
+### Mechanisms underlying altered receptive fields
 
 One way that premature patterned vision could alter the development of the brain is by altering the character of retinal waves. The low-resolution visual input before natural eye opening is capable of driving activity in the visual circuit (Huttenlocher, 1967; Chapman and Stryker, 1993; Krug et al., 2001; Akerman et al., 2002; Akerman et al., 2004), and evidence shows that this early form of low-resolution visual experience plays a role in the development of ON-OFF segregation in dLGN (Akerman et al., 2002) and the initiation of retinal waves (Tiriac et al., 2018). Propagation of high luminance, high contrast, and high spatial frequency input through the developing retina may alter or disrupt the typical retinal wave formation and propagation, and thus may have deleterious effects on developmental processes driven by endogenous activity. Alternatively, high-contrast signals may not interrupt retinal waves but may contribute independent activity that, through experience-dependent plasticity mechanisms, produces the alterations in receptive field properties that we observed.
 
@@ -117,7 +125,7 @@ We introduced premature patterned vision at a time when cortical inhibition is u
 
 The broad tuning in temporal frequency and elevated spontaneous firing rates that we observed could reflect a deficit in cortical inhibition in animals that experienced premature vision. Yet selectivity was not entirely destroyed, as neurons still exhibited selectivity for orientation and direction. Selectivity can be achieved with a combination of amplification of appropriate excitatory signals and inhibitory suppression that is either selective or broad (Ben et al., 1995; Rubin et al., 2015; Somers et al., 1995; Hatta et al., 1998), so it is unclear how the circuit has changed. The amount and timing of inhibition, whether feed-forward or feedback, could be altered.
 
-## Alterations in ipsilateral receptive fields
+### Alterations in ipsilateral receptive fields
 
 One of our most surprising findings was a difference in the receptive fields and firing properties of cells that were ipsilateral to the early opened eye. It is straightforward to imagine how Hebbian mechanisms might influence monocular cells that are contralateral to the early-opened eye, but one would have to imagine different and possibly more global mechanisms to explain changes in monocular cells that view the world through the eye that opened naturally.
 
@@ -125,78 +133,314 @@ Homeostatic mechanisms such as synaptic scaling (Desai et al., 1999, Turrigiano 
 
 Alternatively, opening a single eye early may still influence feed-forward activity in the ipsilateral hemisphere. Work in ferrets and rats suggests a role for retinal waves in the development of interhemispheric connectivity; bilateral enucleation of ferrets induces anomalies in the distribution of callosal cells in primary visual cortex (Bock et al., 2012), and results in callosal projections connecting topographically mismatched loci in VC in P4-6 rats (Olavarria and Hiroi, 2003). Further, retinal waves demonstrate coordinated activity between both hemispheres in mice and ferrets (Weliky and Katz, 1999; Ackman et al., 2012; Ackman and Crair, 2014). Recent findings describe a transient retina to retina connection in mice and ferret, which exists during the period of retinal waves (Murcia-Belmonte et al., 2019). This connection provides a plausible mechanism for the theorized inter-retinal coordination of waves thought to be necessary to drive development of bilateral topographic maps (Adams and Horton, 2003; Murcia-Belmonte et al., 2019). Given that light is capable of initiating retinal waves (Tiriac et al., 2018), it is feasible that exposure to light through a single, prematurely opened eye would initiate retinal waves capable of propagating to the closed eye. Given the qualitative differences between vision through a closed lid vs open eye, initiation and propagation of retinal waves would be both asymmetric and mutually influential between retinas, potentially accounting for the differences in RFs observed between EO1ipsi and control hemispheres.
 
-## Comparison with prior studies
+### Comparison with prior studies
 
 There have been only a few animal studies that have sought to introduce inappropriately early vision. Lichliter and colleagues (Lickliter, 2018; Lickliter, 2000; Sleigh and Casey, 2014) prematurely opened the shells of bobwhite quail eggs and provided visual experience to the chick and found a subsequent loss of visual selectivity to bobwhite hens vs. hens of another species (Sleigh and Lickliter, 1995). Further, they demonstrated multi-modal impacts on auditory processing after premature visual experience, in that animals failed to eventually become responsive to cross-species hen calls. In behavioral studies of rats whose eyes were prematurely opened 7 days early, investigators found that opening a single eye (but not opening both eyes early) caused a deficit in pivoting locomotor reactions on the side of the early-opened eye; that is, rats pivoted more frequently towards stimuli viewed through the eye that opened on time (Foreman and Altaha, 1991). To our knowledge, the present work is the first to study cortical receptive fields after premature sensory experience. All of these studies, including our own, have noted deficits after premature experience.
 
-## Premature vision as a risk factor for visual dysfunction
+### Premature vision as a risk factor for visual dysfunction
 
 Very premature human babies exhibit a variety of visual deficits later in life that are not explained by the condition of the eye, broadly termed Cortical/Cerebral Visual Impairment (CVI; Ortibus et al., 2009; Kozeis, 2010; Dutton, 2013; Sakki et al., 2018; Pamir et al., 2021). These very premature babies are a heterogeneous population. Some of these infants have suffered clear brain injuries (Slidsborg et al., 2012; Dutton, 2013) of various types, such as hypoxia, brain bleeding, or periventricular leukomalacia (Gallo and Lennerstrand, 1991; Hokken et al., 2023, Kozeis, 2010), and these injuries clearly have a direct impact on subsequent visual deficits that go beyond any influence of early experience. But studies that have excluded individuals with known brain damage or retinal problems (or analyzed these populations separately) have also found that extreme prematurity itself has an impact on later vision, particularly on motion perception (Atkinson and Braddick, 2007; Benassi et al., 2018; Guzzetta et al., 2009; Hou et al., 2011; MacKay et al., 2005) and sometimes lowered visual acuity (Jain et al., 2022). Previous investigators have speculated that inappropriately early visual stimulation may contribute to these deficits, as in Taylor et al., 2009: “Why the dorsal stream should be particularly vulnerable in this population is not completely understood. One possibility is that the unusually early visual stimulation that very premature infants are exposed to may, in itself, have a differential effect on the functional development of the dorsal and ventral streams”. Our data are consistent with the idea that inappropriately early visual stimulation contributes to deficits in motion processing. A moving object has both a speed and direction, and temporal frequency is critical to determine an object’s speed. The major temporal frequency tuning deficits we have observed in receptive fields are consistent with a motion deficit.
 
-## Premature vision as a cause of visual plasticity
+### Premature vision as a cause of visual plasticity
 
 Regardless of whether premature patterned vision has a clinically relevant role for human vision, the experiments here demonstrate clearly that premature patterned vision has a long-lasting impact on the development of receptive fields in the visual cortex. The results suggest that the evolved late eye opening of many rodents and carnivores, and the prolonged prenatal period of primates, may help to protect the visual system from exposure to high luminance, high contrast, and high spatial frequency stimulation until the visual system is ready for this type of stimulation. This shielding of the developing visual system is not found in all vertebrates, as tadpoles and zebrafish have transparent eyelids that permit patterned vision from very early stages (Avitan et al., 2017; Demas et al., 2012). By altering premature patterned vision, it may be possible to uncover the plasticity rules that are at play in the developing mammalian visual system before the natural onset of vision.
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Ferret)</td>
+      <td>Ferret</td>
+      <td>Marshall Bio-Resources</td>
+      <td>Mustelo putorius furo</td>
+      <td>Female ferrets used</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-NeuN, Alexa Fluor 488 conjugated</td>
+      <td>Millipore</td>
+      <td>Cat# ABN78A4</td>
+      <td>Dilution: 1:300</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketamine</td>
+      <td>Patterson Veterinary</td>
+      <td>07-890-8598</td>
+      <td>20 mg kg⁻¹ im</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane Covetrus</td>
+      <td>Covetrus</td>
+      <td>029405</td>
+      <td>1.5–3% in N₂O/O₂ mixture for surgery</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane Covetrus</td>
+      <td>Covetrus</td>
+      <td>061843</td>
+      <td>Infused into wound margins</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Patterson Veterinary</td>
+      <td>07-808-8194</td>
+      <td>0.5 mg kg⁻¹ im</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atropine</td>
+      <td>Patterson Veterinary</td>
+      <td>07-869-6061</td>
+      <td>0.16–0.8 mg kg⁻¹ im</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gallamine triethiodide</td>
+      <td>Sigma Aldrich</td>
+      <td>G8134-25G</td>
+      <td>10–30 mg kg⁻¹ h⁻¹</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pentobarbital (Euthasol)</td>
+      <td>Patterson Veterinary</td>
+      <td>07-805-9296</td>
+      <td>200 mg/kg, IP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiI</td>
+      <td>Sigma Aldrich</td>
+      <td>42364–100 MG</td>
+      <td>Used for electrode track reconstruction (DiCarlo et al., 1996)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma Aldrich</td>
+      <td>P6148-1KG</td>
+      <td>4% in 0.1 M PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton-X 100</td>
+      <td>Sigma Aldrich</td>
+      <td>9002-93-1</td>
+      <td>0.3% in PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoromount-G</td>
+      <td>Southern Biotech</td>
+      <td>0100–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Used for stimulus creation and data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Psychophysics Toolbox</td>
+      <td>Brainard, 1997; Pelli, 1997</td>
+      <td>RRID:SCR_002881</td>
+      <td>Used for visual stimuli display</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike2</td>
+      <td>Cambridge Electronic Design</td>
+      <td>RRID:SCR_000903</td>
+      <td>Used for stimulus timing acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JRClust</td>
+      <td>Jun et al., 2017</td>
+      <td></td>
+      <td>Used for offline spike sorting in Matlab</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fitlme</td>
+      <td>Matlab</td>
+      <td>N/A</td>
+      <td>Used for linear mixed-effects modeling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neuroscience Data Interface (NDI)</td>
+      <td>García Murillo et al., 2022</td>
+      <td>RRID:SCR_023368</td>
+      <td>Data management and sharing</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Multichannel electrodes</td>
+      <td>Plexon</td>
+      <td>Plexon S probes</td>
+      <td>32 channels, 50 µm spacing</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amplifier/Digitizer</td>
+      <td>Intan Technologies</td>
+      <td>RHD2000 system</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data acquisition board</td>
+      <td>Cambridge Electronic Design</td>
+      <td>Micro1401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Manipulator</td>
+      <td>Sutter Instruments</td>
+      <td>MP-285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CRT Monitor</td>
+      <td>Sony</td>
+      <td>GDM-520</td>
+      <td>21-inch, 800x600, 100 Hz</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ophthalmoscope</td>
+      <td>Heine</td>
+      <td>Heine Omega 600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ophthalmic Lens</td>
+      <td>Volk</td>
+      <td>78D or 90D lens</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sliding Microtome</td>
+      <td>Leica</td>
+      <td>SM2010R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorescent Microscope</td>
+      <td>Keyence</td>
+      <td>BX-Z 710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Brandeis Light Microscopy Core Facility</td>
+      <td>Brandeis University</td>
+      <td>RRID:SCR_025892</td>
+      <td>Houses SM2010R and BX-Z 710</td>
+    </tr>
+  </tbody>
+</table>
+
 All experimental procedures were approved by the Brandeis University’s Institutional Animal Care and Use Committee (IACUC) and performed in compliance with National Institutes of Health guidelines.
 
-## Animal source and housing
+### Animal source and housing
 
 Ferrets (Mustelo putorius furo) were obtained from Marshall Bio-Resources. Litters of 4 or more kits arrived with a jill between postnatal days (P) 12–21. Animals were housed in a room with timed lights (12 hr on, 12 hr off) in a custom stainless-steel cage (60 cm × 60 cm×35 cm) with a hammock and small toys. For the entire study, a total of 27 female ferrets were used and all experimental procedures were carried out between postnatal days P55–68. Female ferrets were used because housing mature male ferrets in the same room with mature female ferrets causes stress to the female ferrets.
 
-## Facilitating premature visual experience
+### Facilitating premature visual experience
 
 We divided animals into three experimental groups. The first group of animals had one of their eyes gently opened with forceps at P25, while the other eye was left closed to open naturally, and time of natural eye opening was noted. We used the label early Eye Opening One Contralateral (henceforth EO1contra) to indicate neurons in the monocular visual cortex that viewed the world through the (contralateral) eye that was opened early, and early Eye Opening 1 Ipsilateral (henceforth EO1ipsi) to indicate neurons in the monocular visual cortex that viewed the world through the eye that opened on time. In the second group of animals, both eyes were opened at P25, and neurons from the monocular visual cortex that viewed the world through either of these eyes were labeled early Eye Opening 2 (henceforth EO2). Finally, the third group of animals was two eye controls and was allowed to open both eyes normally, with the time of natural eye opening noted. Ferrets frequently open one eye up to a day before the other, and any disparity in the time of opening between the eyes was noted. Ferret kits in laboratory housing receive limited visual stimulation through their closed lids, as the mother actively keeps the kits in their relatively dark nest. In order to ensure that animals with early-opened eyes actually had patterned visual experience (and animals with closed lids had the same stimulation filtered through the lids), animals were brought to the lab for 2 hr a day for 4 consecutive days beginning at P25. These ferret kits were placed in a rat cage atop a heating pad and gently manipulated to maintain wakefulness during this natural, unguided viewing. We studied 17 animals that had one eye prematurely opened, 4 animals that had both eyes opened, and 11 controls.
 
-## Surgical preparation for terminal physiology experiments P55-68
+### Surgical preparation for terminal physiology experiments P55-68
 
 The ferret was sedated with ketamine (20 mg kg−1 im). Atropine (0.16–0.8 mg kg−1 im) and dexamethasone (0.5 mg kg−1 im) were administered to reduce bronchial and salivary secretion and to reduce inflammation, respectively. The animal was next anesthetized with a mixture of isoflurane, oxygen, and nitrous oxide through a mask, and a tracheostomy was performed. The animal was then ventilated with 1.5–3% isoflurane in a 2:1 mixture of nitrous oxide and oxygen. A cannula was inserted into the intraperitoneal (ip) cavity for delivery of neuromuscular blockers and Ringer solution (3 ml kg−1 hr−1), and the animal was inserted in a custom stereotaxic frame that did not obstruct vision. All wound margins were infused with bupivacaine. A suture was made in the scalp and the skin resected over the posterior half of the skull. A small opening in the cranium was drilled over V1 with a dental drill (Medidenta). The dura covering the brain at the craniotomy site was removed over a 1 mm × 1 mm area to allow for electrode placement. Craniotomies were made over V1 of each hemisphere. The eyelids were sutured open, and contact lenses were placed on the eyes to prevent corneal damage. Before visual stimulation commenced, the ferret was paralyzed with the neuromuscular blocker gallamine triethiodide (10–30 mg kg−1 hr−1) through the ip cannula to suppress spontaneous eye movements, and the nitrous oxide : oxygen mixture was adjusted to 1:1. The animal’s ECG was continuously monitored to ensure adequate anesthesia, and the percentage of isoflurane was increased if the ECG indicated any distress. Body temperature was maintained at 37°C. At the conclusion of the experiment, the animal was killed with an overdose of sodium pentobarbitol (200 mg/kg, IP) and transcardially perfused to retrieve the brain for histology.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 32 channel electrodes (Plexon S probes, 50 um inter-tetrode spacing; 50 µm intra-tetrode spacing) were used for all recordings. The signal was amplified using the RHD2000 amplifying/digitizing chip and USB interface board (Intan Technologies). Stimulus timing information was acquired using a Micro1401 acquisition board and Spike2 software (Cambridge Electronic Design). Spike sorting was performed offline using JRClust running in Matlab (Jun et al., 2017). An electrode was inserted into the brain using a Sutter Instruments MP-285 manipulator. To reduce sampling bias, we recorded from any site that had a signal-to-noise ratio sufficient for isolation and had a response that appeared to be modulated by the presentation of drifting gratings. Data are reported from all units that are responsive enough to be included in analysis (see below). After finishing the recording at one site, the electrode was lowered at least 640 microns before attempting to identify a suitable subsequent recording site. The experiment was concluded when successful recordings were made from one or both hemispheres.
 
-## Locating monocular neurons
+### Locating monocular neurons
 
 After placing the electrode at a minimum depth of 200 μm in the brain, entering the brain at an angle of 30–45 degrees, the search for monocular neurons commenced. The electrode was driven into the brain until monocular neurons were discovered. A population of neurons was deemed monocular if their receptive fields were in the periphery of the eye contralateral to the recording hemisphere. Monocularity was ensured by determining whether movement in the central visual and ipsilateral visual fields evoked a response; any such responses indicated binocularity. If no purely monocular cells were found in a given penetration, the electrode was removed and another penetration was made elsewhere in the brain.
 
-## Locating the optic disk
+### Locating the optic disk
 
 An indirect ophthalmoscope (Heine Omega 600) and handheld 78 or 90D lens (Volk) were used to locate the optic disk and determine the orientation of the eye. This was necessary as the orientation of the eye is necessary for determining the true eccentricity of receptive fields. When one investigator had the optic disk in the center of view of the indirect ophthalmoscope, another investigator introduced a wooden rod into the line of sight and moved it until the end of the rod was centered on the image of the optic disk (also the center of view). The position of the end of the rod was then measured in X, Y, and Z relative to the animal’s eye to make the optic disk direction.
 
-## Visual stimuli
+### Visual stimuli
 
 Visual stimuli were created in MATLAB (MathWorks) using the Psychophysics Toolbox (Brainard, 1997; Pelli, 1997) and displayed on a 21-inch flat face CRT monitor (GDM-520, Sony) with a resolution of 800×600 and a refresh rate of 100 Hz. We manually mapped receptive fields by displaying circular patches of drifting sinusoidal gratings at different positions and moving the monitor to accommodate different eccentricities while listening to the responses on a loudspeaker.
 
 Drifting grating stimuli were full-field, drifting sinusoidal gratings (4 s duration; 3.5 s interstimulus interval) presented pseudorandomly, with direction of motion (in steps of 45°) in either of the two directions orthogonal to the axis of orientation. Each individual grating stimulus was full screen and had a single set of parameters (direction, spatial frequency, temporal frequency) and was separated from the other stimuli by a gray screen interstimulus interval. We ran two sets of stimuli where multiple grating parameters were covaried in order to sample a wide variety of receptive field properties in our multi-neuron recordings. In the first set, orientation (angles 0°/horizontal, 45°, 90°/vertical, 135°) was co-varied with 8 different spatial frequencies (0.04, 0.08, 0.16, 0.24, 0.32, 0.64, 0.90, and 1.25), and 6 different contrasts (0.04, 0.08, 0.16, 0.32, 0.64, and 1), while temporal frequency was held constant at 4 Hz. In this first set of stimuli, gratings drifted back and forth every 4 cycles; for example, horizontal stimuli drifted upward and then downward. In a second set of stimuli, direction (0°/up, 45°, 90°/right, 135°, 180°/down, 225°, 270°/left, 315°) was co-varied with stimuli of 7 different temporal frequencies (0.5, 1, 2, 4, 8, 16, and 32 Hz) at 100% contrast and a fixed spatial frequency of 0.1 cycles/° visual angle. In this second set of stimuli, gratings drifted in a single direction and did not move back and forth. Each stimulus set had a blank, control stimulus that was the same duration as the other stimuli where the screen did not change. The first set of stimuli was repeated five times, and the second set seven times.
 
-## Data analysis
+### Data analysis
 
 Responses were determined by examining either the mean response during the entire stimulus or by taking the F1 component of the response. The same analysis (mean, or F1 at the temporal frequency of the stimulus of interest) was performed for the closest blank (control) stimulus and the response to the control stimulus was subtracted to yield the stimulus-driven response. For each tuning curve for orientation, direction, and spatial frequency analyses, we examined whether the mean or the F1 response was higher, and used those responses for analysis and fits. For temporal frequency analysis, we only used mean responses because we found a profound response suppression in many cells. Inclusion/exclusion: For each stimulus type, we examined the set of all responses to visual stimuli and blanks with an ANOVA test to evaluate the null hypothesis that the mean response to all of these stimuli was the same; cells with a p<0.05 to this visual responsiveness test were included in fits and analyses, and cells with p>0.05 were excluded.
 
-Orientation selectivity was examined in the first set of stimuli at the preferred spatial frequency for each cell. Circular variance was calculated in orientation space (Ringach et al., 2002; Mazurek et al., 2014) with the equation V=1 - |R |, where R is the resultant calculated as: R=∑krkei20k∑krk\begin{document}$$\displaystyle  R=\frac{\sum\limits_{k}{r_ke^{i20_k}}}{\sum\limits_{k}{r_k} }$$\end{document}
+Orientation selectivity was examined in the first set of stimuli at the preferred spatial frequency for each cell. Circular variance was calculated in orientation space (Ringach et al., 2002; Mazurek et al., 2014) with the equation V=1 - |R |, where R is the resultant calculated as: 
+
+$$
+R=\frac{\sumkr_{k}e^{i20_{k}}}{\sumkr_{k}}
+$$
 
 where rk was the mean spike rate in response to a grating drifting with angle θk.
 
 Tuning curves from cells that showed significant variation across orientation stimuli and blank ANOVA test (Mazurek et al., 2014) were fit with a double Gaussian to obtain the angle preference.
 
-Direction selectivity was examined in the second set of stimuli for the preferred temporal frequency of each cell (unless noted). Circular variance was calculated in direction space with the following equation:1−DirCirVar=|∑kR(θk)exp(iθk)∑kR(θk)|\begin{document}$$\displaystyle  1-DirCirVar=\left|\frac{\sum_k{R(\theta_k)\rm {exp}(i\theta_k)} }{\sum_k{R(\theta_k)} } \right|$$\end{document}
+Direction selectivity was examined in the second set of stimuli for the preferred temporal frequency of each cell (unless noted). Circular variance was calculated in direction space with the following equation:
 
-Preferred spatial frequency was determined by responses to the first stimulus battery at the preferred orientation at 100% contrast. Preferred temporal frequency was determined by responses to the second stimulus battery at the preferred direction. Each was fitted with a model due to Movshon et al., 2005:R(f)=k∗exp⁡(−(ffc)2)/[1+(fhf)β]\begin{document}$$\displaystyle  R\left (f\right)=k\ast \exp \left (- \left (\frac{f}{fc}\right)^{2}\right)\bigg/\left [1+\left (\frac{fh}{f}\right)^{\beta }\right ]$$\end{document}
+$$
+1−DirCirVar=|\frac{\sumkR(\theta_{k})exp(i\theta_{k})}{\sumkR(\theta_{k})}|
+$$
+
+Preferred spatial frequency was determined by responses to the first stimulus battery at the preferred orientation at 100% contrast. Preferred temporal frequency was determined by responses to the second stimulus battery at the preferred direction. Each was fitted with a model due to Movshon et al., 2005:
+
+$$
+R(f)=k∗exp⁡(−(\frac{f}{fc})^{2})/[1+(\frac{fh}{f})^{\beta}]
+$$
 
 Low-frequency cutoffs were determined by following the fit from its peak to lower frequencies until the first frequency where the response dropped to half its maximum (L50); high-frequency cutoffs (H50) were determined by the same procedure, except that the fit was followed from the peak towards higher frequencies (Moore et al., 2005; Heimel et al., 2005). If the response never dropped below half its maximum, then the low-frequency cutoff was said to be 0 or the high-frequency cutoff was said to be infinity. Temporal frequency tuning bandwidth was defined as log2(H50/L50).
 
-We defined a low-pass index as the response to the lowest temporal frequency tested (in this case 0.5 Hz) to the maximum response obtained to the set of temporal frequencies shown. LPI = R(TF=0.5Hz)max(R(TF=0.5Hz),R(TF=1Hz),…,R(TF=32Hz))\begin{document}$\frac{R\left (TF=0.5Hz\right)}{max \left (R\left (TF=0.5Hz\right),R\left (TF=1Hz\right),\ldots ,R\left (TF=32Hz\right)\right)}$\end{document} . If a cell exhibited the highest firing for a temporal frequency of 0.5 Hz then it would have a low-pass index of 1. If it exhibited a similar firing rate in response to a temporal frequency of 0.5 Hz even if the preferred temporal frequency were higher, then the low-pass index would still be near 1. If the cell responded poorly at a temporal frequency of 0.5 Hz, then it would have a low-pass index near 0.
+We defined a low-pass index as the response to the lowest temporal frequency tested (in this case 0.5 Hz) to the maximum response obtained to the set of temporal frequencies shown. LPI = $\frac{R(TF=0.5Hz)}{max(R(TF=0.5Hz),R(TF=1Hz),…,R(TF=32Hz))}$ . If a cell exhibited the highest firing for a temporal frequency of 0.5 Hz then it would have a low-pass index of 1. If it exhibited a similar firing rate in response to a temporal frequency of 0.5 Hz even if the preferred temporal frequency were higher, then the low-pass index would still be near 1. If the cell responded poorly at a temporal frequency of 0.5 Hz, then it would have a low-pass index near 0.
 
-Contrast responses were fit with Naka-Rushton functions as described in Peirce, 2007 and sensitivity determined by the reciprocal of the contrast for which the response exceeds 5 standard deviations of the response to a blank screen. The Naka-Rushton function is defined as:R=RmaxCnC50n+Cn+B\begin{document}$$\displaystyle R=R_{\rm max} \frac{C^n}{C^n_{50}+C^n}+B$$\end{document}
+Contrast responses were fit with Naka-Rushton functions as described in Peirce, 2007 and sensitivity determined by the reciprocal of the contrast for which the response exceeds 5 standard deviations of the response to a blank screen. The Naka-Rushton function is defined as:
+
+$$
+R=R_{max}\frac{C^{n}}{C_{50}^{n}+C^{n}}+B
+$$
 
 where Rmax is the maximum response of the neuron, c50 is the contrast at which the response is halfway between baseline and maximum, c is the contrast of the stimulus presented to the neuron, and B is the baseline response of the neuron. n is a factor simply referred to as the exponent.
 
-## Statistics
+### Statistics
 
 Index values were examined with linear mixed effects models in Matlab (function: fitlme), where treatment condition (control, EO1contra, EO1ipsi, EO2) were fixed effects and animal identities were random effects.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Upon completion of experiments, an electrode coated in the fluorescent dye DiI (DiCarlo et al., 1996) was inserted at the location and depth and left in place for 20 min. Animals were then transcardially perfused and the brain was placed in 4% paraformaldehyde in 0.1 M PBS at 4 °C for 24 hr and then moved to 10% sucrose in PBS for 24–48 hr. This was followed by placement in 30% sucrose in PBS at 4 °C until sectioning. The brain was sectioned sagittally into 100 μm sections using a sliding microtome (Leica SM2010R). We washed sections in 0.1 M PBS 3×5 min and permeabilized in 0.3% Triton-X 100 diluted in PBS for 2 hr at room temperature on a shaker. Then slices were incubated in fluorophore-conjugated anti-NeuN antibody (Alexa Fluor 488 Rabbit anti NeuN, Millipore ABN78A4) at a 1:300 dilution overnight (>12 hr) at room temperature on a shaker. Sections were then washed 3×5 min in PBS and mounted on slides and allowed to air dry. Slides were then cover-slipped with Fluoromount-G media (Electron Microscopy Sciences, Ft. Washington, PA) and edges were sealed using nail polish. Histological sections were viewed using a fluorescent microscope (Keyence BX-Z 710) and electrode tracks were reconstructed using DiI dye traces.

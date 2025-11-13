@@ -32,9 +32,21 @@ Despite the recent advances in deep learning for population genetics, no dedicat
 
 ## Results
 
-## A CNN for detecting adaptive introgression
+### A CNN for detecting adaptive introgression
 
-We assume we have sequence data from multiple populations: the donor population and the recipient population in an admixture event, as well as an unadmixed population that is a sister group to the recipient (Figure 1). Our method relies on partitioning the genomes into windows, which we chose to be 100 kbp in size. For each window, we constructed an n×m matrix, where n corresponds to the number of haplotypes (or diploid genotypes, for unphased data) and m correspond to a set of equally sized bins along the genomic length of the window. Each matrix entry contains the count of minor alleles in an individual’s haplotype (or diploid genotype) in a given bin. Within each population, we sorted these pseudo-haplotypes (or genotypes) according to similarity to the donor population, and concatenated the matrices for each of the populations into a single pseudo-genotype matrix (Figure 1).
+We assume we have sequence data from multiple populations: the donor population and the recipient population in an admixture event, as well as an unadmixed population that is a sister group to the recipient (Figure 1). Our method relies on partitioning the genomes into windows, which we chose to be 100 kbp in size. For each window, we constructed an $n\timesm$ matrix, where $n$ corresponds to the number of haplotypes (or diploid genotypes, for unphased data) and $m$ correspond to a set of equally sized bins along the genomic length of the window. Each matrix entry contains the count of minor alleles in an individual’s haplotype (or diploid genotype) in a given bin. Within each population, we sorted these pseudo-haplotypes (or genotypes) according to similarity to the donor population, and concatenated the matrices for each of the populations into a single pseudo-genotype matrix (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig1-v2.jpg)
+
+**Figure 1.:** We first simulate a demographic history that includes introgression, such as Demographic Model A1 shown in (A), using the SLiM engine in stdpopsim. Parameter values for this model are given in Appendix 3—table 1. Three distinct scenarios are simulated for a given demographic model: neutral mutations only, a sweep in the recipient population, and adaptive introgression. The tree sequence file from each simulation is converted into a genotype matrix for input to the CNN. (B) shows a genotype matrix from an adaptive introgression simulation, where lighter pixels indicate a higher density of minor alleles, and haplotypes within each population are sorted left-to-right by similarity to the donor population (Nea). In this example, haplotype diversity is low in the recipient population (CEU), which closely resembles the donor (Nea). Thousands of simulations are produced for each simulation scenario, and their genotype matrices are used to train a binary-classification CNN (C). The CNN is trained to output Pr[AI], the probability that the input matrix corresponds to adaptive introgression. Finally, the trained CNN is applied to genotype matrices derived from a VCF/BCF file (D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Schematic overview of Demographic Model A1 (A) and A2 (B). Each population is depicted as a tube, where the tube’s width is proportional to the population’s size at any given time. Horizontal lines with arrows indicate either an ancestor/descendant relation (thick solid lines, open arrow heads), an admixture pulse (dashed lines, closed arrow heads), or a period of continuous migration (thin solid lines, closed arrow heads). The time of continuous migration lines were drawn randomly from the time interval over which the migrations occur. A Demes-format YAML file for each demographic model is available from the genomatnn git repository.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Overview of the Jacobs et al., 2019 demographic model (A), featuring two pulses of Denisovan gene flow into Papuans, which we implemented as the PapuansOutOfAfrica_10J19 model in stdpopsim. The same model is shown in (B), zoomed in to more clearly show the many events occurring between generations 800–2300. Each population is depicted as a tube, where the tube’s width is proportional to the population’s size at any given time. Horizontal lines with arrows indicate either an ancestor/descendant relation (thick solid lines, open arrow heads), an admixture pulse (dashed lines, closed arrow heads), or a period of continuous migration (thin solid lines, closed arrow heads). The time of continuous migration lines were drawn randomly from the time interval over which the migrations occur. DenA and NeaA are the sampled populations corresponding to Altai Denisovan and Altai Neanderthal, while Den1, Den2, and Nea1 correspond to introgressing lineages. A Demes-format YAML file for each demographic model is available from the genomatnn git repository.
 
 We designed a CNN (Figure 1) that takes this concatenated matrix as input to distinguish between adaptive introgression scenarios and other types of neutral or selection scenarios. The CNN was trained using simulations, and uses a series of convolution layers with successively smaller outputs, to extract increasingly higher level features of the genotype matrices—features which are simultaneously informative of introgression and selection. The CNN outputs the probability that the input matrix comes from a genomic region that underwent adaptive introgression. As our simulations used a wide range of selection coefficients and times of selection onset, the network does not assume these parameters are known a priori, and is able to detect complete or incomplete sweeps at any time after gene flow.
 
@@ -44,29 +56,41 @@ Furthermore, we incorporated a framework to visualise the features of the input 
 
 We also provide downloadable pre-trained CNNs as well as a pipeline for training new CNNs (see Materials and methods). These interface with a new selection module that we designed and incorporated into the stdpopsim framework (Adrion et al., 2020a), using the forwards-in-time simulator SLiM (Haller and Messer, 2019). We believe this will facilitate the application of the method to other datasets, allowing users to modify its parameters according to the specific requirements of the biological system under study.
 
-## Performance on simulations
+### Performance on simulations
 
 We aimed to assess the performance of our method on simulations. We performed simulations under two main demographic models:
 
 When training a CNN on Demographic Model A1 using phased data, we obtained a precision of 90.2% (the proportion of AI predictions that were AI simulations) and 97.9% negative predictive value (NPV; the proportion of ‘not-AI’ predictions that were either neutral or sweep simulations) (Figure 2). The network output higher probabilities for AI simulations with larger selection coefficients, and for older times of onset of selection. We also observed that the network falsely classified neutral simulations as AI more frequently than it falsely classified sweep simulations. When the CNN was trained on this same demographic model assuming genotypes were unphased, the results were very similar, with 88.1% precision and 98.7% NPV.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig2-v2.jpg)
+
+**Figure 2.:** The CNN was trained using only AI simulations with selected mutation having allele frequency >0.25. (A) Confusion matrix. For the two prediction categories, either 'not AI' or AI, we show the proportion attributed to each of the true (simulated) scenarios. (B) Average CNN prediction for AI scenarios, binned by selection coefficient, $s$, and time of onset of selection $T_{s⁢e⁢l}$. (C) ROC curves, precision-recall curves and MCC-F1 curves. The positive condition is AI. The negative conditions are shown using different line styles/colours. The circles indicate the point in ROC-space (respectively Precision-Recall-space, and MCC-F1-space) when using the threshold Pr[AI]>0.5 for classifying a genotype matrix as AI. DFE: distribution of fitness effects. TP: true positives; FP: false positives; TN: true negatives; FN: false negatives; TPR: true positive rate; FPR: false positive rate; ROC: Receiver operating characteristics; MCC: Mathews correlation coefficient; F1: harmonic mean of precision and recall.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** CNN performance on validation simulations for Demographic Model B with unphased data. The CNN was trained using only AI simulations with selected mutation having allele frequency > 25%. (A) Confusion matrix. For the two prediction categories, either 'not AI' or AI, we show the proportion attributed to each of the true (simulated) scenarios. (B) Average CNN prediction for AI scenarios, binned by selection coefficient, $s$, and time of onset of selection $T_{s⁢e⁢l}$. (C) ROC curves, precision-recall curves and MCC-F1 curves. The positive condition is AI. The negative conditions are shown using different line styles/colours. The circles indicate the point in ROC-space (respectively Precision-Recall-space, and MCC-F1-space) when using the threshold Pr[AI]>0.5 for classifying a genotype matrix as AI. DFE: distribution of fitness effects. TP: true positives; FP: false positives; TN: true negatives; FN: false negatives; TPR: true positive rate; FPR: false positive rate; ROC: Receiver operating characteristics; MCC: Mathews correlation coefficient; F1: harmonic mean of precision and recall.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Unit-normalised Matthews correlation coefficient (MCC) versus F1 score (the harmonic mean of accuracy and precision). A value of 0.5 on the vertical axis corresponds to the performance of a random classifier. The point at coordinate $(1,1)$ marked with a black dot corresponds to 100% true positives and 0% false negatives. Lines in MCC-F1 space were drawn by calculating the MCC and F1 values for 100 false-positive rates between 0 and 100, and the point closest to $(1,1)$ is indicated with the symbol shown in the legend. This point may not correspond to an acceptably low false-positive rate, but for the classifiers shown here it is indicative of the method’s overall performance. In all panels, condition positive is the AI simulation scenario, and the condition negative varies by panel column (indicated at top). The 'weakly misspecified' row used simulations of Model A1 as the training/null, and evaluated the method on simulations of Model A2. The 'strongly misspecified' row used simulations of Model A1 as the training/null, and evaluated the method on simulations of Model B.
+
 When training a CNN on Demographic Model B (assuming unphased genotypes, as accurately phased data are not readily available for Melanesian genomes), we obtained 88.8% precision and 82.5% NPV (Figure 2—figure supplement 1). We note here that the network had greater precision when detecting AI derived from the more ancient pulse of Denisovan gene flow than the younger pulse.
 
 Kim et al., 2018 and Zhang et al., 2020 recently suggested that introduced genetic material can mask deleterious recessive variation and produce a signal very similar to adaptive introgression. To assess whether heterosis following introgression affects the false positive rates in our CNN, we simulated a distribution of fitness effects (DFE) with recessive dominance for 70% of derived mutations (the rest were simulated as neutral), and found this only slightly increases the false positive rate (Figure 2).
 
-## MCC-F1 curve
+#### MCC-F1 curve
 
 While precision, recall, and false positive rate are informative, these each consider only two of the four cells in a confusion matrix (true positives, true negatives, false positives, false negatives), and may produce a distorted view of performance with imbalanced datasets (Chicco, 2017). To obtain a more robust performance assessment, we plotted the Matthews correlation coefficient (MCC; Matthews, 1975) against F1-score (the harmonic mean of precision and recall) for false-positive-rate thresholds from 0 to 100 (Figure 2, Figure 2—figure supplement 1, Figure 2—figure supplement 2), as recently suggested by Cao et al., 2020. MCC produces low scores unless a classifier has good performance in all four confusion matrix cells, and also accounts for class imbalance. In MCC-F1 space, the point (1, 1) indicates perfect predictions, and values of 0.5 for the (unit-normalised) MCC indicate random guessing. These results confirm our earlier findings, that the CNN performance is excellent for Demographic Model A1 when considering either neutral and sweep simulations as the condition negative, and performance decreases slightly when DFE simulations are the negative condition (Figure 2). Furthermore, the CNN performance is not as good for Demographic Model B, but this is unlikely to be caused by using unphased genotypes (Figure 2—figure supplement 1 and Figure 2—figure supplement 2).
 
-## Comparison to other methods
+#### Comparison to other methods
 
 We compared the performance of our CNN to VolcanoFinder (Setter et al., 2020), which scans genomes of the recipient population for patterns of diversity indicative of AI using a coalescent-based model of adaptive introgression (Figure 2—figure supplement 2). However, this method only incorporates information from a single population and is designed to detect 'ghost' introgression in cases where the source is not available. VolcanoFinder performed poorly for the demographic models considered here—in some cases, worse than guessing randomly. We also compared our CNN to an outlier-based approach for a range of summary statistics that are sensitive to AI (Racimo et al., 2017b). Our CNN is closest to a perfect MCC-F1 score for Demographic model A1 and B, closely followed by the Q95(1%, 100%) and then U(1%, 20%, 100%) statistics developed in Racimo et al., 2017b.
 
-## Demographic model misspecification
+#### Demographic model misspecification
 
 We then tested robustness to demographic misspecification, by evaluating the CNN trained on Demographic Model A1 against simulations for two other demographic models (Figure 2—figure supplement 2). We considered weak misspecification, where the true demographic history is similar to Demographic Model A1 but also includes archaic admixture within Africa following Ragsdale and Gravel, 2019 (Demographic Model A2; Figure 1—figure supplement 1). This resulted in only a small performance reduction. We also considered strong misspecification, where the true demographic history is Demographic Model B. As there are more Melanesian individuals than European individuals in our simulations (because we aimed to mimic the real number of genomes available in our data analysis below), we downsampled the Melanesian genomes to match the number of European genomes, so as to perform a fair misspecification comparison. In this case, the performance of the CNN was noticeably worse than that of the summary statistics, but still better than VolcanoFinder. We note that the summary statistics performance decreased also, to match their performance for the correctly-specified assessments on Demographic Model B. Interestingly, we found that the Q95(1%, 100%) statistic was the most robust method for both cases of misspecification.
 
-## Network attention
+### Network attention
 
 To understand which features of the input matrices were used by the CNN to make its predictions, we constructed saliency maps (Simonyan et al., 2014). This technique works by computing the gradient of a network’s output with respect to a single input. Thus, highlighted regions from the saliency map indicate where small changes in the input matrix have a relatively large influence over the CNN output prediction.
 
@@ -76,13 +100,134 @@ We calculated an average saliency map for each simulation scenario (neutral, swe
 
 **Figure 3.:** Each panel shows the average gradient over 300 input matrices encoding either neutral (top), sweep (middle), or AI (bottom) simulations. Pink/purple colours indicate larger gradients, where small changes in the genotype matrix have a relatively larger influence over the CNN’s prediction. Columns in the input matrix correspond to haplotypes from the populations labelled at the bottom.
 
-## Calibration
+### Calibration
 
 We implemented a score calibration scheme to account for the fact that our simulation categories (neutrality, sweep, and AI) will be highly imbalanced in real data applications (Guo et al., 2017; Kull et al., 2017). CNN classifiers sometimes produce improperly calibrated probabilities (Guo et al., 2017). In our case, this occurs because the proportion of each category is not known in reality, and thus does not match the simulated proportion. For this reason, we fitted our calibration procedure using training data resampled with various ratios of neutral:sweep:AI simulations (Figure 4). We tested different calibration methods by fitting the calibrator to the training dataset, and inspecting reliability plots and the sum of residuals on a validation dataset (see Materials and methods, Figure 4—figure supplement 1, Figure 4—figure supplement 2, Figure 4—figure supplement 3, Figure 4—figure supplement 4). When the probabilities are calibrated for even class ratios, Manhattan plots show a large number of high probability candidates across the genome, which obscure the strongest peaks (Figure 4). However, once calibrated for class ratios that are skewed towards the neutral class, strong candidates for AI become more apparent.
 
-## Candidates for Neanderthal adaptive introgression in European genomes
+![Figure 4.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig4-v2.jpg)
+
+**Figure 4.:** Each row indicates a single CNN, with equivalent data filtering. Each column indicates different class ratios used for calibration (Neutral:Sweep:AI). AF = Minimum beneficial allele frequency.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Reliability of probabilities produced by the CNN, for the validation dataset, with and without calibration, for Demographic Model A1 with a minimum beneficial allele frequency of 5%. The variance-normalised sum of residuals is inset in the upper left corner of each of the reliability plots ($Z$), which for well-calibrated predictions is approximately normally distributed (Turner et al., 2019).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Reliability of probabilities produced by the CNN, for the validation dataset, with and without calibration, for Demographic Model A1 with a minimum beneficial allele frequency of 25%. The variance-normalised sum of residuals is inset in the upper left corner of each of the reliability plots ($Z$), which for well-calibrated predictions is approximately normally distributed (Turner et al., 2019).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Reliability of probabilities produced by the CNN, for the validation dataset, with and without calibration, for Demographic Model B with a minimum beneficial allele frequency of 5%. The variance-normalised sum of residuals is inset in the upper left corner of each of the reliability plots ($Z$), which for well-calibrated predictions is approximately normally distributed (Turner et al., 2019).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/64669/elife-64669-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Reliability of probabilities produced by the CNN, for the validation dataset, with and without calibration, for Demographic Model B with a minimum beneficial allele frequency of 25%. The variance-normalised sum of residuals is inset in the upper left corner of each of the reliability plots ($Z$), which for well-calibrated predictions is approximately normally distributed (Turner et al., 2019).
+
+### Candidates for Neanderthal adaptive introgression in European genomes
 
 We applied our method to a combined genomic panel of archaic hominins (Prüfer et al., 2017; Meyer et al., 2012) and present-day humans (The 1000 Auton et al., 2015; Jacobs et al., 2019), to look for regions of the genome where Non-African humans show signatures of AI from archaic hominins. First, we looked for Neanderthal introgression into the ancestors of Northwestern Europeans (CEU panel), using Yoruba Africans (YRI panel) as the unadmixed sister population. To give the network the best chance of avoiding false positives, we tried two different beneficial-allele frequency cutoffs for training: 5% and 25% (Table 1 and Appendix 1—table 1).
+
+**Table 1.**
+ Top ranking gene candidates corresponding to Neanderthal AI in Europeans.We show genes which overlap, or are within 100 kbp of, the 30 highest ranked 100 kbp intervals. Adjacent intervals have been merged. The CNN was trained using only AI simulations with selected mutation having allele frequency >0.25, and subsequently calibrated with resampled neutral:sweep:AI ratios of 1:0.1:0.02.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chrom</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>104500001</td>
+      <td>104600000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>109360001</td>
+      <td>109460000</td>
+      <td>LIMS1; RANBP2; CCDC138; EDAR</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>160160001</td>
+      <td>160280000</td>
+      <td>TANC1; WDSUB1; BAZ2B</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>114480001</td>
+      <td>114620000</td>
+      <td>ZBTB20</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>54240001</td>
+      <td>54340000</td>
+      <td>SCFD2; FIP1L1; LNX1</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>39220001</td>
+      <td>39320000</td>
+      <td>FYB; C9; DAB2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>28180001</td>
+      <td>28320000</td>
+      <td>ZSCAN16-AS1; ZSCAN16; ZKSCAN8; ZSCAN9; ZKSCAN4; NKAPL; PGBD1; ZSCAN31; ZKSCAN3; ZSCAN12; ZSCAN23</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>143440001</td>
+      <td>143560000</td>
+      <td>TSNARE1; BAI1</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>16700001</td>
+      <td>16820000</td>
+      <td>BNC2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>85780001</td>
+      <td>85880000</td>
+      <td>ALX1</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>20220001</td>
+      <td>20380000</td>
+      <td>ZNF682; ZNF90; ZNF486</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>33580001</td>
+      <td>33740000</td>
+      <td>RHPN2; GPATCH1; WDR88; LRP3; SLC7A10</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>62100001</td>
+      <td>62280000</td>
+      <td>CHRNA4; KCNQ2; EEF1A2; PPDPF; PTK6; SRMS; C20orf195; HELZ2; GMEB2; STMN3; RTEL1; TNFRSF6B; ARFRP1; ZGPAT; LIME1; SLC2A4RG; ZBTB46</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>25840001</td>
+      <td>25940000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We focus here on describing the results from the 25% condition (Figure 5 and Appendix 4). We found several candidate genes for AI that have been reported before (Sankararaman et al., 2014; Vernot and Akey, 2014; Gittelman et al., 2016; Racimo et al., 2017b), including BNC2, KCNQ2/EEF1A2 WRD88/GPATCH1 and TANC1. Notably, the candidate region we identify on chromosome 2 around TANC1 extends farther downstream of this gene, also overlapping BAZ2B (Appendix 4—figure 3). This codes for a protein related to chromatin remodelling, and may have a role in transcriptional activation. Mutations in BAZ2B have recently been associated with neurodevelopmental disorders, including developmental delay, autism spectrum disorder and intellectual disability (Scott et al., 2020).
 
@@ -90,11 +235,160 @@ We focus here on describing the results from the 25% condition (Figure 5 and App
 
 **Figure 5.:** The CNN was applied to overlapping 100 kbp windows, moving along the chromosome in steps of size 20 kbp. The CNN was trained using only AI simulations with selected mutation having allele frequency > 25%, and subsequently calibrated with resampled neutral:sweep:AI ratios of 1:0.1:0.02.
 
-Additionally, we found two novel candidates for AI that have not been previously reported, spanning the regions chr6:28.18 Mb–28.32 Mb (Appendix 4—figure 7) and chr20:62.1 Mb–62.28 Mb (Appendix 4—figure 13), including multiple genes encoding zinc finger proteins. UK-biobank PheWAS associations (Canela-Xandri et al., 2018) suggest both regions generally affect phenotypes related to blood, including platelet, erythrocyte and leukocyte counts (at the p<10-8 association level, the chr6 region has 91 hits, while the chr20 region has 19, with 10 of these traits in common).
+Additionally, we found two novel candidates for AI that have not been previously reported, spanning the regions chr6:28.18 Mb–28.32 Mb (Appendix 4—figure 7) and chr20:62.1 Mb–62.28 Mb (Appendix 4—figure 13), including multiple genes encoding zinc finger proteins. UK-biobank PheWAS associations (Canela-Xandri et al., 2018) suggest both regions generally affect phenotypes related to blood, including platelet, erythrocyte and leukocyte counts (at the $p<10^{-8}$ association level, the chr6 region has 91 hits, while the chr20 region has 19, with 10 of these traits in common).
 
-## Candidates for Denisovan adaptive introgression in Melanesian genomes
+### Candidates for Denisovan adaptive introgression in Melanesian genomes
 
 We then looked for Denisovan AI in Melanesian genomes from the IGDP panel (Jacobs et al., 2019), also considering Yoruba Africans as the unadmixed sister group, and using two different beneficial-allele frequency cutoffs for training: 5% and 25% (Table 2 and Appendix 1—table 2).
+
+**Table 2.**
+ Top ranking gene candidates corresponding to Denisovan AI in Melanesians.We show genes which overlap, or are within 100 kbp of, the 30 highest ranked 100 kbp intervals. Adjacent intervals have been merged. The CNN was trained using only AI simulations with selected mutation having allele frequency >0.25, and subsequently calibrated with resampled neutral:sweep:AI ratios of 1:0.1:0.02.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chrom</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>129960001</td>
+      <td>130060000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3740001</td>
+      <td>3840000</td>
+      <td>SUMF1; LRRN1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>41980001</td>
+      <td>42080000</td>
+      <td>TMEM33; DCAF4L1; SLC30A9; BEND4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>420001</td>
+      <td>520000</td>
+      <td>PDCD6; AHRR; C5orf55; EXOC3; CTD-2228K2.5; SLC9A3; CEP72</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>74640001</td>
+      <td>74740000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>81960001</td>
+      <td>82060000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>137920001</td>
+      <td>138120000</td>
+      <td>TNFAIP3</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>25100001</td>
+      <td>25200000</td>
+      <td>OSBPL3; CYCS; C7orf31; NPVF</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>38020001</td>
+      <td>38120000</td>
+      <td>EPDR1; NME8; SFRP4; STARD3NL</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>121160001</td>
+      <td>121260000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>3040001</td>
+      <td>3140000</td>
+      <td>CSMD1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>84640001</td>
+      <td>84740000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>108240001</td>
+      <td>108340000</td>
+      <td>PRDM4; ASCL4</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>114020001</td>
+      <td>114280000</td>
+      <td>RBM19</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>61860001</td>
+      <td>61960000</td>
+      <td>PRKCH</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>63120001</td>
+      <td>63220000</td>
+      <td>KCNH5</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>96700001</td>
+      <td>96820000</td>
+      <td>BDKRB2; BDKRB1; ATG2B; GSKIP; AK7</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>55260001</td>
+      <td>55400000</td>
+      <td>RSL24D1; RAB27A</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>62600001</td>
+      <td>62700000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>78360001</td>
+      <td>78460000</td>
+      <td>WWOX</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>22060001</td>
+      <td>22160000</td>
+      <td>OSBPL1A; IMPACT; HRH4</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>19040001</td>
+      <td>19140000</td>
+      <td>DGCR5; DGCR2; DGCR14; TSSK2; GSC2; SLC25A1; CLTCL1</td>
+    </tr>
+  </tbody>
+</table>
 
 Again, we focus on describing the results from the 25% condition (Figure 6 and Appendix 5) Among the top candidates, we found a previously reported candidate for AI in Melanesians: TNFAIP3 (Vernot et al., 2016; Gittelman et al., 2016). Denisovan substitutions carried by the introgressed haplotype in this gene have been found to enhance the immune response by tuning the phosphorylation of the encoded A20 protein, which is an immune response inhibitor (Zammit et al., 2019).
 
@@ -112,7 +406,7 @@ We have developed a new method to detect adaptive introgression along the genome
 
 As reported previously (Kim et al., 2018; Zhang et al., 2020), heterosis following introgression can produce patterns very similar to AI, and we found this can inflate false positive detection of AI by our CNN to a small extent. However, we simulated a DFE with recessive dominance for all mutations, which is not realistic in general, so our results in this regard represent a worst-case scenario. A possible future improvement would be to train the CNN on simulations incorporating heterosis. We did not attempt this here because realistic DFE simulations represent a substantial computational burden.
 
-When the demographic model is correctly specified, our CNN performed better than using summary statistics, although the Q95(1%, 100%) statistic (Racimo et al., 2017b) also performed remarkably well. This statistic captures high-frequency derived alleles that are shared between the donor and recipient population, to the exclusion of a non-introgressed sister population—intuitively, these are the same features we expect our CNN to be learning. Because of its relative robustness to model misspecification, an outlier approach based on Q95 may be a better choice than our CNN when there is uncertainty regarding the demographic history of the study system. We also found that VolcanoFinder performed very poorly across all our tests, but this is arguably an unfair comparison because it only incorporates information from a single population, and Setter et al., 2020 themselves found that their method has low sensitivity when the donor population split from the recipient population recently (on the order of N generations ago for Neanderthals/Denisovans and humans).
+When the demographic model is correctly specified, our CNN performed better than using summary statistics, although the Q95(1%, 100%) statistic (Racimo et al., 2017b) also performed remarkably well. This statistic captures high-frequency derived alleles that are shared between the donor and recipient population, to the exclusion of a non-introgressed sister population—intuitively, these are the same features we expect our CNN to be learning. Because of its relative robustness to model misspecification, an outlier approach based on Q95 may be a better choice than our CNN when there is uncertainty regarding the demographic history of the study system. We also found that VolcanoFinder performed very poorly across all our tests, but this is arguably an unfair comparison because it only incorporates information from a single population, and Setter et al., 2020 themselves found that their method has low sensitivity when the donor population split from the recipient population recently (on the order of $N$ generations ago for Neanderthals/Denisovans and humans).
 
 The CNN took approximately 15 min to train on one NVIDIA Tesla T4 GPU, which amounts to 60 CPU hours for an equivalent CPU-only training procedure. All data were loaded into memory, which required approximately 120 GB RAM during training. The computational bottleneck lay in the generation of SLiM forward simulations: 300,000 simulations took approximately 80 weeks of CPU time for each of demographic models A1 and B. In the future, considerable speedups could potentially be obtained by optimising the simulation step, perhaps by implementing an adaptive introgression simulation framework that takes advantage of the backwards coalescent (e.g. building on the work by Setter et al., 2020).
 
@@ -136,70 +430,70 @@ In summary, we have shown that CNNs are a powerful approach to detecting adaptiv
 
 ## Materials and methods
 
-## Simulations
+### Simulations
 
 For CNN training, we performed simulations under three scenarios: neutral mutations only; positive selection of a de novo mutation in the recipient population (selective sweep); and positive selection of a derived mutation that was transferred via gene flow from the donor population to the recipient population (adaptive introgression, AI). In the sweep and AI scenarios, the selection coefficient was drawn log-uniformly from between 0.0001 and 0.1 for Europeans and between 0.001 and 0.1 for Melanesians (in the latter case, very few selected alleles survive with a very small selection coefficient, so we narrowed the range to reduce computational burden). The uniformly distributed time of mutation was decoupled from the uniformly distributed time of selection onset, thus allowing for soft sweeps (Hermisson and Pennings, 2005). For the selective sweep scenario, the mutation and selection times could occur at any time older than 1 kya but more recent than the split between the recipient population and its unadmixed sister population, with the constraint that the mutation must be introduced before the onset of selection. For the AI scenario, a neutrally evolving mutation was introduced to the donor population any time more recent than the split between the donor and the ancestor of recipient and unadmixed sister population, but older than 1 kya before the introgression event. Then, this mutation was transmitted to the recipient population, whereupon selection could start to act on it at any time after introgression but before 1 kya.
 
-We further evaluated our Demographic Model A1 CNNs using an additional 10,000 simulations that incorporated a DFE using the parameters estimated for Europeans in Kim et al., 2017 and used in Kim et al., 2018. We considered two mutation types: 30% neutral and 70% deleterious. The deleterious portion of introduced mutations had a selection coefficient drawn from a reflected gamma distribution with shape parameter 0.186, and expected value −0.01314833. We approximated the dominance scheme from Kim et al., 2018, using a fixed dominance coefficient for deleterious mutations of 0.5/(1-7071.07*E⁢[s]) where E⁢[s] is the expected value from the gamma distribution (i.e. all deleterious mutations were effectively recessive).
+We further evaluated our Demographic Model A1 CNNs using an additional 10,000 simulations that incorporated a DFE using the parameters estimated for Europeans in Kim et al., 2017 and used in Kim et al., 2018. We considered two mutation types: 30% neutral and 70% deleterious. The deleterious portion of introduced mutations had a selection coefficient drawn from a reflected gamma distribution with shape parameter 0.186, and expected value −0.01314833. We approximated the dominance scheme from Kim et al., 2018, using a fixed dominance coefficient for deleterious mutations of $0.5/(1-7071.07*E⁢[s])$ where $E⁢[s]$ is the expected value from the gamma distribution (i.e. all deleterious mutations were effectively recessive).
 
 To incorporate selection, we implemented a new module in stdpopsim (Adrion et al., 2020a), which leverages the forwards-in-time simulator SLiM (Haller and Messer, 2019) for simulating selection. For consistency, we also used stdpopsim’s SLiM engine for neutral simulations. stdpopsim uses SLiM’s ability to output tree sequences (Haller et al., 2019; Kelleher et al., 2018), which retains complete information about the samples’ marginal genealogies. Further, stdpopsim recapitates the tree sequences (ensuring that all sampled lineages have a single common ancestor), and applies neutrally evolving mutations to the genealogies, using the coalescent framework of msprime (Kelleher et al., 2016).
 
-We simulated 100 kbp regions, with a mutation rate of 1.29×10-8 per site per generation (Tian et al., 2019), an empirical recombination map drawn uniformly at random from the HapMapII genetic map (Frazer et al., 2007), and the selected mutation introduced at the region’s midpoint. For both the sweep scenario and the AI scenario, we used a rejection-sampling approach to condition on the selected allele’s frequency being ≥ in the recipient population at the end of the simulation. This was done by saving the simulation state prior to the introduction of the selected mutation (and saving again after successful transmission to the recipient population, for the AI scenario), then restoring simulations to the most recent save point if the mutation was lost, or if the allele frequency threshold was not met at the end of the simulation.
+We simulated 100 kbp regions, with a mutation rate of $1.29\times10^{-8}$ per site per generation (Tian et al., 2019), an empirical recombination map drawn uniformly at random from the HapMapII genetic map (Frazer et al., 2007), and the selected mutation introduced at the region’s midpoint. For both the sweep scenario and the AI scenario, we used a rejection-sampling approach to condition on the selected allele’s frequency being ≥ in the recipient population at the end of the simulation. This was done by saving the simulation state prior to the introduction of the selected mutation (and saving again after successful transmission to the recipient population, for the AI scenario), then restoring simulations to the most recent save point if the mutation was lost, or if the allele frequency threshold was not met at the end of the simulation.
 
-To speed up simulations, we applied a scaling factor of Q=10. Scaling divides population sizes (N) and event times (T) by Q, and multiplies the mutation rate µ, recombination rate r and selection coefficient s by Q, such that the population genetic parameters θ=4⁢N⁢μ, ρ=4⁢N⁢r, and N⁢s remain approximately invariant to the applied scaling factor (Haller and Messer, 2019). After simulating, we further filtered our AI scenario simulations to exclude those that ended with a minor beneficial allele frequency less than a specific cutoff. We tried two cutoffs—5% and 25%—and present results for both. Rejection sampling within SLiM was not possible at these higher thresholds, as simulations often had low probability of reaching the threshold, particularly for recently introduced mutations. We note that this post-simulation filtering alters the distributions of selection coefficients and times of selection onset used for CNN training.
+To speed up simulations, we applied a scaling factor of $Q=10$. Scaling divides population sizes ($N$) and event times ($T$) by $Q$, and multiplies the mutation rate µ, recombination rate $r$ and selection coefficient $s$ by $Q$, such that the population genetic parameters $\theta=4⁢N⁢\mu$, $ρ=4⁢N⁢r$, and $N⁢s$ remain approximately invariant to the applied scaling factor (Haller and Messer, 2019). After simulating, we further filtered our AI scenario simulations to exclude those that ended with a minor beneficial allele frequency less than a specific cutoff. We tried two cutoffs—5% and 25%—and present results for both. Rejection sampling within SLiM was not possible at these higher thresholds, as simulations often had low probability of reaching the threshold, particularly for recently introduced mutations. We note that this post-simulation filtering alters the distributions of selection coefficients and times of selection onset used for CNN training.
 
 To investigate Neanderthal gene flow into Europeans, we simulated an out-of-Africa demographic model with a single pulse of Neanderthal gene flow into Europeans but not into African Yoruba (Demographic Model A1, Figure 1—figure supplement 1), using a composite of previously published model parameters (Appendix 3—table 1). The number of samples to simulate for each population was chosen to match the YRI and CEU panels in the 1000 Genomes dataset (Auton et al., 2015), and the two high coverage Neanderthal genomes (Prüfer et al., 2014). The two simulated Neanderthals were sampled at times corresponding to the estimated ages of the samples as reported in Prüfer et al., 2017. To test model misspecification, we performed an additional 10,000 simulations per simulation scenario on a modified version of this model that also incorporates archaic admixture in Africa (Ragsdale and Gravel, 2019) (Demographic Model A2; Figure 1—figure supplement 1).
 
 To investigate Denisovan gene flow into Melanesian populations, we simulated an out-of-Africa demographic history incorporating two pulses of Denisovan gene flow (Malaspinas et al., 2016; Jacobs et al., 2019) implemented as the PapuansOutOfAfrica_10J19 model in stdpopsim (Adrion et al., 2020a). For this demographic model we sampled a single Denisovan and a single Neanderthal (with sampling time of the latter corresponding to the Altai Neanderthal’s estimated age). The number of Melanesian samples was chosen to match a subset of the IGDP panel (Jacobs et al., 2019). The Baining population of New Britain was excluded at the request of the IGDP data access committee, and we also excluded first-degree relatives, resulting in a total of 139 Melanesian individuals used in the analysis. As this demographic model includes two pulses of Denisovan admixture, we simulated half of our AI simulations to correspond with gene flow from the first pulse, and half from the second pulse.
 
-## Conversion of simulations to genotype matrices
+### Conversion of simulations to genotype matrices
 
 We converted the tree sequence files from the simulations into genotype matrices using the tskit Python API (Kelleher et al., 2016). Major alleles (those with sample frequency greater than 0.5 after merging all individuals) were encoded in the matrix as 0, while minor alleles were encoded as 1. In the event of equal counts for both alleles, the major allele was chosen at random. Only sites with a minor allele frequency >5% were retained. For sweep and AI simulations, we excluded the site of the selected mutation.
 
 We note that different simulations result in different numbers of segregating sites, but a constraint for efficient CNN training is that each datum in a batch must have the same dimensions. Existing approaches to solve this problem are to use only a fixed number of segregating sites (Chan et al., 2018), to pad the matrix out to the maximum number of observed segregating sites (Flagel et al., 2019), or to use an image-resize function to constrain the size of the input data (Torada et al., 2019). Each approach discards spatial information about the local density of segregating sites, although this may be recovered by including an additional vector of inter-site distances as input to the network (Flagel et al., 2019).
 
-To obtain the benefits of image resizing (fast training times for reduced sizes and easy application to genomic windows of a fixed size), while avoiding its drawbacks, we chose to resize our input matrices differently, and only along the dimension corresponding to sites. To resize the genomic window to have length m, the window was partitioned into m bins, and for each individual haplotype we counted the number of minor alleles observed per bin. Compared with interpolation-based resizing (Torada et al., 2019), binning is qualitatively similar, but preserves inter-allele distances and thus the local density of segregating sites. Furthermore, as we do not resize along the dimension corresponding to individuals, this also permits the use of permutation-invariant networks (Chan et al., 2018), although we do not pursue that network architecture here.
+To obtain the benefits of image resizing (fast training times for reduced sizes and easy application to genomic windows of a fixed size), while avoiding its drawbacks, we chose to resize our input matrices differently, and only along the dimension corresponding to sites. To resize the genomic window to have length $m$, the window was partitioned into $m$ bins, and for each individual haplotype we counted the number of minor alleles observed per bin. Compared with interpolation-based resizing (Torada et al., 2019), binning is qualitatively similar, but preserves inter-allele distances and thus the local density of segregating sites. Furthermore, as we do not resize along the dimension corresponding to individuals, this also permits the use of permutation-invariant networks (Chan et al., 2018), although we do not pursue that network architecture here.
 
-We report results for m=256, but also tried m=32, 64, and 128 bins. Preliminary results indicated greater training and validation accuracy for CNNs trained with more bins, around 1% difference between both 32 and 64, and 64 and 128, although only marginal improvement for 256 compared with 128 bins. When matching unphased data, we combined genotypes by summing minor allele counts between the chromosomes of each individual. We note that all data were treated as either phased, or unphased, and no mixed phasing was considered.
+We report results for $m=256$, but also tried $m=32$, 64, and 128 bins. Preliminary results indicated greater training and validation accuracy for CNNs trained with more bins, around 1% difference between both 32 and 64, and 64 and 128, although only marginal improvement for 256 compared with 128 bins. When matching unphased data, we combined genotypes by summing minor allele counts between the chromosomes of each individual. We note that all data were treated as either phased, or unphased, and no mixed phasing was considered.
 
 We then partitioned the resized genotype matrix into submatrices by population. Submatrices were ordered left-to-right according to the donor, recipient, and unadmixed populations respectively. For genotype matrices including both Neanderthals and Denisovans, we placed the non-donor archaic population to the left of the donor. To ensure that a non-permutation-invariant CNN could learn the structure in our data, we sorted the haplotypes (Flagel et al., 2019; Torada et al., 2019). The resized haplotypes/individuals within each submatrix were ordered left-to-right by decreasing similarity to the donor population, calculated as the Euclidean distance to the average minor-allele density of the donor population (analogous to a vector of the donor allele frequencies). An example (phased) genotype matrix image for an AI simulation is shown in Figure 1.
 
-## Conversion of empirical data to genotype matrices
+### Conversion of empirical data to genotype matrices
 
 Using bcftools (Li, 2011), we performed a locus-wise intersection of the following VCFs: 1000 Genomes (The 1000 Auton et al., 2015), IGDP (Jacobs et al., 2019), the high coverage Denisovan genome (Meyer et al., 2012), and the Altai and Vindija Neanderthal genomes (Prüfer et al., 2014). All VCFs corresponded to the GRCh37/hg19 reference sequence. Genotype matrices were constructed by parsing the output of bcftools query over 100 kbp windows, filtering out sites with sample allele frequency <5% or with more than 10% of genotypes missing, then excluding windows with fewer than 20 segregating sites. Each genotype matrix was then resized and sorted as described for simulations. When data were considered to be phased, as for the CEU/YRI populations, we also treated the Neanderthal genotypes as if they were phased according to REF/ALT columns in the VCF. While this is equivalent to random phasing, both high-coverage Neanderthal individuals are highly inbred, so this is unlikely to be problematic in practice.
 
-## CNN model architecture and training
+### CNN model architecture and training
 
 We implemented the CNN model in Keras (Chollet, 2015), configured to use the Tensorflow backend (Abadi et al., 2015). To save disk space and memory, the input matrices were stored as eight bit integers rather than floating point numbers, and were not mean-centred or otherwise normalised prior to input into the network. We instead made the first layer of our network a batch normalisation layer, which simultaneously converts the input layer to floating point numbers and learns the best normalisation of the data for the network.
 
-The CNN architecture (Figure 1) consists of k convolution blocks each comprised of a batch normalisation layer followed by a 2D convolution layer with 2 × 2 stride, 16 filters of size 4 × 4, and leaky ReLU activation. The k blocks are followed by a single fully-connected output node of size one, with sigmoid activation giving the probability Pr[AI]. We do not include pooling layers, as is common in a CNN architecture (e.g. Torada et al., 2019), and instead use a 2 × 2 stride size to reduce the output size of successive blocks (Springenberg et al., 2015). This is computationally cheaper and had no observable difference in network performance. We sought to maximise the depth of the network, but the size of the input matrix constrains the maximum number of blocks in the network due to successive halving of the dimensionality in each block. For m=256 resizing bins, we used k=7 blocks.
+The CNN architecture (Figure 1) consists of $k$ convolution blocks each comprised of a batch normalisation layer followed by a 2D convolution layer with 2 × 2 stride, 16 filters of size 4 × 4, and leaky ReLU activation. The $k$ blocks are followed by a single fully-connected output node of size one, with sigmoid activation giving the probability Pr[AI]. We do not include pooling layers, as is common in a CNN architecture (e.g. Torada et al., 2019), and instead use a 2 × 2 stride size to reduce the output size of successive blocks (Springenberg et al., 2015). This is computationally cheaper and had no observable difference in network performance. We sought to maximise the depth of the network, but the size of the input matrix constrains the maximum number of blocks in the network due to successive halving of the dimensionality in each block. For $m=256$ resizing bins, we used $k=7$ blocks.
 
 We partitioned 100,000 independent simulations for each of the three selection scenarios into training and validation sets (approximate 90%/10% split). The hyperparameters and network architecture were tuned on a smaller preliminary set of simulations that did not vary the selection coefficient or time of onset of selection, so we chose not to split the simulations into a third 'test’ set when evaluating the models trained on our final simulations. The model was trained for three epochs, with model weights updated after batches of 64, using the Adam optimiser and cross-entropy for the loss function. We evaluated model fit by inspecting loss and accuracy terms at the end of training (Appendix 2—table 1). Preliminary analyses indicated three epochs were sufficient for approximate convergence between training and validation metrics, but we did not observe divergence (likely indicating overfitting) even when training for additional epochs.
 
-## Comparison to other methods
+### Comparison to other methods
 
 We converted our simulated tree sequences to VolcanoFinder (Setter et al., 2020) input (a per-locus allele counts file, and a frequency-spectrum input file). One frequency-spectrum input file was created for each distinct demographic model, obtained by averaging over all neutral-scenario simulations. VolcanoFinder was run following examples in the manual, using 800 evenly-spaced genomic bins (-G 800), and taking the maximum value for the likelihood-ratio test statistic (LRT) as the summary statistic for that simulation. VolcanoFinder further requires a value for the divergence between the donor and recipient populations, which it can estimate by doing a grid search for the value which maximises the LRT. However, this is more computationally intensive than providing a value, so we obtained a value by grid search for a small sample of our simulations for each of Demographic Models A1 and B, and used the most frequently observed value (-D 0.001075 for Demographic Model A1 and A2, and -D 0.001465 for Demographic Model B).
 
 Additional AI-related summary statistics were chosen based on Racimo et al., 2017b and calculated on the simulated tree sequences. The fd statistic was implemented from the description in Martin et al., 2015 and the remaining statistics were implemented from their description in Racimo et al., 2017b. Summary statistics (including the VolcanoFinder LRT) were obtained for 600,000 simulations (100,000 for each of three simulation scenarios, for each of Demographic Models A1 and B). We calculated p-values by comparing each statistic to the null distribution that was obtained from the neutral simulation scenarios.
 
-## Calibration
+### Calibration
 
-For a well calibrated output, we expect proportion x of the output probabilities with Pr[AI] ∼x to be true positives. It has been noted elsewhere (Guo et al., 2017) that CNNs may produce improperly calibrated probabilities. However, even if the probabilities are calibrated with respect to the validation dataset (which has even class ratios), this is unlikely to hold for empirical data, as the relative ratios of AI versus not-AI windows in the genome are very skewed.
+For a well calibrated output, we expect proportion $x$ of the output probabilities with Pr[AI] $∼x$ to be true positives. It has been noted elsewhere (Guo et al., 2017) that CNNs may produce improperly calibrated probabilities. However, even if the probabilities are calibrated with respect to the validation dataset (which has even class ratios), this is unlikely to hold for empirical data, as the relative ratios of AI versus not-AI windows in the genome are very skewed.
 
 We tested three calibration methods: beta regression (Kull et al., 2017), isotonic regression (Chakravarti, 1989), and Platt, 1999 scaling. To calibrate our CNN output, we first resampled our training dataset to the desired class ratios. We then fit each calibrator to predict the true class in the resampled training dataset from the CNN prediction for the resampled training dataset. To assess the calibration procedure, we inspected reliability plots for our calibrated and uncalibrated predictions, as evaluated with a resampled validation dataset (Figure 4—figure supplement 1, Figure 4—figure supplement 2, Figure 4—figure supplement 3, Figure 4—figure supplement 4). We also checked if the sum of the residuals was normally distributed, following the approach of Turner et al., 2019. Both beta calibration and isotonic regression gave well-calibrated probabilities compared with uncalibrated model outputs, and for our predictions on empirical data we chose to apply beta calibration due to its relative simplicity.
 
-## Saliency maps
+### Saliency maps
 
 We computed average saliency maps, by averaging over a set of input-specific saliency maps that were calculated for a set of 300 simulated genotype matrices for each simulated scenario. The input-specific saliency maps were calculated using tf-keras-vis v0.5.5 (Kubota, 2020) configured to use ‘vanilla’ saliency maps. A sharper image was obtained by exchanging the CNN output layer’s sigmoid activation with linear activation, as recommended in the tf-keras-vis documentation. For the ‘vanilla’ saliency option, the image-specific class saliency is calculated by computing the gradient of a network’s output with respect to a single input. The exact details of how the saliency is calculated via propagation through a neural network can be found in Simonyan et al., 2014, who offer this interpretation: ‘[T]he magnitude of the derivative indicates which pixels need to be changed the least to affect the class score the most’.
 
-## Application of trained CNN to empirical datasets
+### Application of trained CNN to empirical datasets
 
 We show Manhattan plots where each data point is a 100 kbp window that moves along the genome in steps of size 20 kbp. Gene annotations were extracted from the Ensembl release 87 GFF3 file (with GRCh37/hg19 coordinates), obtained via ensembl’s ftp server. We extracted the columns with source=‘ensembl_havana’ and type=‘gene’, and report the genes which intersected with the 30 top ranking CNN predictions or a 100 kbp flanking region. Adjacent regions were merged together prior to intersection, so that genes were reported only once.
 
-## Compute resources
+### Compute resources
 
 All simulations and results reported here were obtained on an compute server with two Intel Xeon 6248 CPUs (80 cores total), 768 GB RAM, and five NVIDIA Tesla T4 GPUs. 300,000 SLiM simulations took approximately 80 weeks of CPU time for each of Demographic Model A1 and B. Each simulation executes independently, and is readily distributed across cores or compute nodes. This produced 450 GB of tree sequence files. The resized genotype matrices were compressed into a Zarr cache (Zarr Development Team, 2020) with size 2.8 GB, for faster loading. Training a single CNN on one GPU took approximately 15 min, or 60 CPU hours for an equivalent CPU-only training procedure. We did not attempt to optimise memory usage, and thus all data were loaded into memory, requiring approximately 120 GB RAM during training. Predicting AI for all genomic windows on an empirical dataset (22 single-chromosome BCF files) took 1 CPU hour. However, our prediction pipeline uses multiprocessing and efficiently scales to 80 cores.
 
-## Code availability
+### Code availability
 
 The source code for performing simulations, training and evaluating a CNN, and applying a CNN to empirical VCF data, were developed in a new Python application called genomatnn, available at Gower, 2021.

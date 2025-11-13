@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Endonucleolytic removal of 5’-leader sequences from tRNA precursor transcripts (pre-tRNAs) by ribonuclease P (RNase P) is essential for protein synthesis. Beyond RNA-based RNase P enzymes, protein-only versions of the enzyme exert this function in various eukarya (there termed PRORPs) and in some bacteria ( Aquifex aeolicus and close relatives); both enzyme types belong to distinct subgroups of the PIN domain metallonuclease superfamily. Homologs of Aquifex RNase P (HARPs) are also expressed in some other bacteria and many archaea, where they coexist with RNA-based RNase P and do not represent the main RNase P activity. Here, we solved the structure of the bacterial HARP from Halorhodospira halophila by cryo-electron microscopy, revealing a novel screw-like dodecameric assembly. Biochemical experiments demonstrate that oligomerization is required for RNase P activity of HARPs. We propose that the tRNA substrate binds to an extended spike-helix (SH) domain that protrudes from the screw-like assembly to position the 5’-end in close proximity to the active site of the neighboring dimer. The structure suggests that eukaryotic PRORPs and prokaryotic HARPs recognize the same structural elements of pre-tRNAs (tRNA elbow region and cleavage site). Our analysis thus delivers the structural and mechanistic basis for pre-tRNA processing by the prokaryotic HARP system.
+Endonucleolytic removal of 5’-leader sequences from tRNA precursor transcripts (pre-tRNAs) by ribonuclease P (RNase P) is essential for protein synthesis. Beyond RNA-based RNase P enzymes, protein-only versions of the enzyme exert this function in various eukarya (there termed PRORPs) and in some bacteria (Aquifex aeolicus and close relatives); both enzyme types belong to distinct subgroups of the PIN domain metallonuclease superfamily. Homologs of Aquifex RNase P (HARPs) are also expressed in some other bacteria and many archaea, where they coexist with RNA-based RNase P and do not represent the main RNase P activity. Here, we solved the structure of the bacterial HARP from Halorhodospira halophila by cryo-electron microscopy, revealing a novel screw-like dodecameric assembly. Biochemical experiments demonstrate that oligomerization is required for RNase P activity of HARPs. We propose that the tRNA substrate binds to an extended spike-helix (SH) domain that protrudes from the screw-like assembly to position the 5’-end in close proximity to the active site of the neighboring dimer. The structure suggests that eukaryotic PRORPs and prokaryotic HARPs recognize the same structural elements of pre-tRNAs (tRNA elbow region and cleavage site). Our analysis thus delivers the structural and mechanistic basis for pre-tRNA processing by the prokaryotic HARP system.
 
 ## Introduction
 
@@ -34,21 +34,109 @@ HARPs belong to the PIN domain-like superfamily of metallonucleases. They were a
 
 ## Results
 
-## Dodecameric structure of the HARP from H. halophila
+### Dodecameric structure of the HARP from H. halophila
 
 Structural information on A. aeolicus RNase P (Aq880) and HARPs is lacking and a mechanistic understanding of pre-tRNA processing by HARPs has remained unknown so far. As previously observed by size exclusion chromatography (SEC), Aq880 forms large oligomers of ~420 kDa (Nickel et al., 2017). Our attempts to resolve its structure by X-ray crystallography or nuclear magnetic resonance were unsuccessful. Therefore, we also purified other HARPs to increase the chances of successful structure determination. Among those was the HARP of H. halophila (Hhal2243) that was purified to homogeneity using a two-step protocol consisting of Ni2+-affinity chromatography and anion-exchange chromatography (Figure 1—figure supplement 1; see Materials and methods). Hhal2243 formed an assembly of similar size as Aq880 (Figure 1—figure supplement 2A) but adopted a more uniform oligomeric state than Aq880 (see below). Like Aq880 (Marszalkowski et al., 2008), Hhal2243 showed pre-tRNA processing activity in the presence of Mg2+ and Mn2+ (Figure 1—figure supplement 2B,C).
 
 We succeeded in solving the structure of Hhal2243 by cryo-EM to 3.37 Å resolution (Figure 1, Figure 1—figure supplement 3, supplementary file 1a). Hhal2243 assembles into a dodecamer in a left-handed screw-like manner, with each molecule being rotated by approximately 58°, except for the interface between dimers 1/1* and 6/6*. Upon completion of the single screw turn, the first and last dimers (1/1* and 6/6*) encounter each other at a slightly larger angle of 70° (Figure 1A, top view, left) and laterally displaced (Figure 1A, side view, right); they cannot form the same inter-dimer contacts as dimers can form within the screw turn; the steric clash between dimers 1/1* and 6/6* terminates oligomerization. Hypothetic geometric scenarios that would allow a continuation of oligomerization beyond a dodecamer are illustrated in Figure 1—figure supplement 4. Hhal2243 consists of a PIN-like metallonuclease domain into which two helices are inserted that we termed the ‘spike-helix’ (SH) domain (Figure 1B). The PIN-like domain is formed by six α-helices (α1–α4, α7, and α8) and four β-strands (β1–β4) that fold into an α/β/α domain with a central, four-stranded parallel β-sheet (Figure 1C). Two Hhal2243 monomers align head-to-head with their SH domains consisting of helices α5 and α6 to form a dimer, while two SH domains form a four-helix bundle resulting in six spikes that protrude from the dodecameric assembly (Figure 1C). The dimer interface covers a buried surface area of 1300 Å2 and is mainly of hydrophobic nature with two clamping salt bridges formed by R141 and E91 from either monomer, respectively (Figure 1D,E).
 
-## Oligomerization and its influence on pre-tRNA processing activity
+![Figure 1.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cryo-EM electron density map of Hhal2243 shown from a top view (left) and a side view (right). The monomers are colored in blue and olive, respectively. The angles between dimers are indicated in the top view. The sketch in the upper left corner of the view on the right indicates how the dimers assemble to form the screw-like arrangement of the dodecamer. (B) Domain architecture of Hhal2243. (C) Model of the Hhal2243 dimer. The protein consists of a PIN five domain with an inserted spike-helix (SH) domain forming the dimer interface. The numbers indicate the amino acid boundaries of the SH domain. (D, E) Detailed view of the dimer interface. The clamping salt bridges are shown as sticks and indicated with dashed yellow lines. The hydrophobic core between the two monomers is marked by the gray sphere in (D). EM, electron microscopy.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Chromatograms of the Ni-ion-affinity chromatography (HisTrap 1 mL column, left) and ion-exchange chromatography (MonoQ column, right). (B) SDS-PAGEs of fractions from the HisTrap (left) and MonoQ column (right). (C) Western blot analysis of fractions from the MonoQ column to verify successful removal of the His6-tag by thrombin digestion using an α−6His-HRP antibody (Thermo Fisher Scientific, Invitrogen) diluted 1:5000 in 1% Casein Blocker (Thermo Fisher Scientific). Source data of the SDS-PAGEs and the western blot are available in Figure 1—figure supplement 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Chromatographic analysis of Hhal2243. The sample was analyzed on a Superose 6 3.2/300 column using an ÄKTA PURE (GE Healthcare) FPLC system operated at room temperature. (B) Secondary structure of precursor tRNAGly (pre-tRNAGly) of the thermophilic bacterium Thermus thermophilus carrying a 5’-leader of 14 nucleotides; the curved arrow indicates the canonical (c0) RNase P cleavage site. (C) RNase P processing of 5’-32P-labeled T. thermophilus pre-tRNAGly by recombinant HARPs from the hyperthermophilic bacterium A. aeolicus (Aq880) and the γ-proteobacterium Halorhodospira halophila (Hhal2243) in the presence of either 4.5 mM Mg2+, Mn2+, Sr2+ or Ca2+ in buffer F for 2 hr at 37°C. Enzyme and substrate concentrations were 500 nM and ~5 nM, respectively. Samples were separated by 20% denaturing PAGE and analyzed by phosphor imaging (for details, see Materials and methods of the main text). C, control, substrate alone incubated for 2 hr at 37°C in enzyme dilution buffer (30 mM Tris-HCl pH 7.8, 30 mM NaCl, 0.3 mM EDTA, and 1 mM DTT). Source data of phosphor images are available in Figure 1—figure supplement 2—source data 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative cryo-EM micrograph collected with a Thermo Fisher Scientific Titan Krios microscope, operated at 300 kV, and equipped with a K3 direct electron detector. Representative reference-free 2D class averages are shown on the right side of the micrograph. (B) FSC analysis of the dataset with the blue line representing the estimated global FSC of 3.4 Å. (C) The 2,749,587 particles from the dataset were 3D classified into three classes using a reference ab initio model generated in Cryosparc v3.1. The class consisting of the best aligning particles was selected for 3D homogenous refinement in Cryosparc resulting in a final map at 3.37 Å resolution. (D) Local resolution estimation of the final map colored from blue (3 Å) to red (5 Å). (E) Representative images of the Hhal2243 model and surrounding electron density. Maps are displayed as mesh and contoured at 3σ. EM, electron microscopy.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Geometry of the HARP dodecamer. (B, C) Hypothetic geometric scenarios that would allow a continuation of oligomerization beyond a dodecamer. In (B), the screw diameter would be expanded, while in (C) a helical pitch would be increased to such an extent that any steric interference between the first and last dimers is avoided.
+
+### Oligomerization and its influence on pre-tRNA processing activity
 
 Our findings and the conservation of HARPs suggested that the dodecameric superstructure represents a conserved feature of HARPs and might therefore be required for their RNase P-like activity. To scrutinize this idea, we took a closer look at the interactions between two dimers. The covered interface between neighboring dimers extends over 900 Å2 and involves the long α4–α5 loop of one monomer and the α7–α8 loop as well as helix α8 of the respective other monomer (Figure 2A). The interactions between interdimer residues are mainly of polar nature.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig2-v2.jpg)
+
+**Figure 2.:** (A) Oligomer interface between two monomers (colored in blue and olive) of interacting dimers. The C-terminus starting at residue 177 is colored in red to highlight the region deleted in the ‘shortest’ Aq880 variant (Δ177–191). Salt bridges are indicated with yellow dashed lines. (B) Mass photometry of Hhal2243, Aq880 wt, Aq880Δ184–191, Aq880Δ181–191, Aq880Δ179–191, and Aq880Δ177–191. Molecular masses corresponding to the respective Gaussian fits are shown in kDa above the fits. (C) Processing of pre-tRNAGly by Aq880 wt and derived mutant variants. Aliquots were withdrawn at different time points (1, 3, 10, or 25 min) of incubation at 37°C; 0, substrate without addition of enzyme. Aq880 wt in comparison with the C-terminal deletion variants Δ177–191, Δ179–191, Δ181–191, and Δ184–191, all at 500 nM enzyme. For more details, see Materials and methods. Source data of phosphor images are available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Chromatogram of the Ni-ion-affinity chromatography (HisTrap 5 mL column). (B) 12% TGX-gel of fractions from the HisTrap. Source data of the SDS-PAGEs are available in Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Samples were analyzed on a Superose 6 10/300 GL column using an ÄKTA Purifier (GE Healthcare) FPLC system operated at room temperature. The running buffer contained 20 mM Tris-HCl pH 8.0, 100 mM KCl, 0.1 mM EDTA, and 3 mM DTT. The flow rate was 0.5 mL/min. (A) Overlay of two column runs with three marker proteins each, termed Standard Mix 1 and 2 (Gel Filtration Markers Kit for Protein Molecular Weights 12–200 kDa and Apoferritin, Merck Sigma-Aldrich). Identities of individual proteins and elution volumes of the respective peak fractions are indicated; ADH, alcohol dehydrogenase; BSA, bovine serum albumin. (B) Elution profile of Aq880 wt. (C) Elution profiles of C-terminal deletion variants of Aq880 lacking the indicated amino acids of the native protein. The elution profiles in panel A suggest an approximate mass of 430 kDa for Aq880 wt. The elution volumes of the C-terminal deletions mutants suggest molecular masses between ~55 and 68 kDa.
 
 To investigate the oligomerization behavior, we employed MP, a method allowing for the rapid and reliable determination of the dynamic oligomeric distribution of macromolecules in solution (Sonn-Segev et al., 2020; Soltermann et al., 2020). Application of this method to Hhal2243 revealed a stable dodecameric assembly of 295 kDa that included 98% of all molecules in the sample (Figure 2B, top left panel). To compare this oligomerization behavior with that of Aq880, we purified Aq880 by Ni-ion affinity chromatography and SEC (Figure 2—figure supplements 1 and 2). Interestingly, despite their similar behavior on SEC, MP of Aq880 unveiled a major species at 277 kDa that, however, included only 47% of all molecules, while several subspecies with lower molecular weights became visible (Figure 2B, top right panel; supplementary file 1b). This polydispersity of Aq880, not detectable in SEC profiles, is probably the reason why all structural approaches failed so far in the case of Aq880.
 
 To investigate whether oligomerization of Aq880 might impact its pre-tRNA processing activity, we analyzed the oligomer interface of the Hhal2243 structure in more detail. As outlined above, the interdimer interaction involves the α4–α5 loop of one monomer (e.g., monomer 1) and the α7–α8 loop as well as the C-terminal helix α8 of the other monomer (e.g., monomer 2) provided by the neighboring dimer (Figure 2A). This implied that C-terminal protein truncations affecting the integrity of helix α8 will impede oligomer formation. We thus evaluated the ability of C-terminally truncated Aq880 variants to oligomerize by MP and their activity in pre-tRNA processing experiments. Five truncated variants of Aq880 were purified to homogeneity and analyzed by SEC (Figure 2—figure supplement 2). Notably, SEC calibration suggested molecular masses of 55–68 kDa for all truncated Aq880 variants (Figure 2—figure supplement 2). MP of protein variant Aq880Δ184–191 still showed a considerable subfraction (~18%; see supplementary file 1b) of higher-order oligomers (≥133 kDa), whereas Aq880Δ181–191 formed only 4% hexamer (peak at 134 kDa), 41% tetramer (peak at 81 kDa) beyond the dimer subfraction at 42 kDa (Figure 2B, middle panels; supplementary file 1b). Further truncation of Aq880 had an impact on protein stability, as judged by lower purification yields, and MP revealed that variants Aq880Δ179–191 and Aq880Δ177–191 form only dimeric species (Figure 2B, lower panels). Processing assays revealed that deletion of residues 184–191 resulted in a protein that still had substantial activity, while all the other truncations showed almost no activity or were entirely inactive (Table 1, Figure 2C). Thus, our experiments show that the activity of the enzyme in pre-tRNA processing assays depends on its ability to form higher-order oligomers.
 
-## The active site is conserved among HARPs and PRORPs
+**Table 1.**
+ Processing activities of Aq880 variants.n.d., no cleavage detectable.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Aq880 variant</th>
+      <th>kobs (min-1) (±SD)</th>
+      <th>Substrate cleaved after 25 min (in %)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wt 50 nM wt 500 nM</td>
+      <td>0.62 ± 0.15 2.06 ± 0.42</td>
+      <td>95 98</td>
+    </tr>
+    <tr>
+      <td>∆184–191 50 nM ∆184–191 500 nM</td>
+      <td>0.22 ± 0.08 1.41 ± 0.07</td>
+      <td>46 97</td>
+    </tr>
+    <tr>
+      <td>∆181–191 500 nM ∆179–191 500 nM</td>
+      <td>(4 ± 1) × 10–3 (7 ± 3) × 10–3</td>
+      <td>9 15</td>
+    </tr>
+    <tr>
+      <td>∆177–191 500 nM</td>
+      <td>–</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>R125A 50 nM R125A 500 nM</td>
+      <td>(15 ± 3) × 10−4 (16.1 ± 0.3) × 10–2</td>
+      <td>2 26</td>
+    </tr>
+    <tr>
+      <td>R129A 500 nM</td>
+      <td>–</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>R125A/R129A 500 nM</td>
+      <td>–</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>K119A/R123A/R125A/K127A/R129A 500 nM</td>
+      <td>–</td>
+      <td>n.d.</td>
+    </tr>
+  </tbody>
+</table>
+
+### The active site is conserved among HARPs and PRORPs
 
 Phylogenetic analyses indicate that the two protein-only RNase P systems found in bacteria and eukarya evolved independently (Lechner et al., 2015; Nickel et al., 2017). This is consistent with the different structural basis of the two types of enzymes acting on tRNAs. PRORPs are composed of a PPR domain important for substrate recognition, a central zinc finger domain, and a flexible hinge connecting it to the metallonuclease domain (Howard et al., 2012; Teramoto et al., 2020). In contrast, HARPs solely consist of a metallonuclease domain (Figure 3A). The active sites of both molecules superpose well with a root mean square deviation (r.m.s.d.) of 0.445 over 30 Cα atoms. More precisely, the β-strands 5, 6, and 8, and the α-helices 16 and 20 within the metallonuclease domain of Arabidopsis thaliana PRORP1 (AtPRORP1) were used for the structural superposition with β1, β4, α1, and α6 of Hhal2243, as the overall scaffold of the two metallonuclease domains is related but shows large structural deviations. In earlier studies, we could already show that the catalytic aspartates D7, D138, D142, and D161 are indispensable for Aq880 activity (Nickel et al., 2017; Schwarz et al., 2019). Our Hhal2243 structure supports the prediction that these residues constitute the active site of the protein (Figure 3B), including an almost perfect superposition with three of the four active site aspartates of AtPRORP1 (D399, D475, and D493; Howard et al., 2012; Figure 3B). We conclude that the mechanism of catalysis is conserved among the two distinct protein families with RNase P activity.
 
@@ -56,11 +144,19 @@ Phylogenetic analyses indicate that the two protein-only RNase P systems found i
 
 **Figure 3.:** (A) Superposition of AtPRORP1 (PDB: 4G24) and Hhal2243 shows that the metallonuclease domain superposes well, while the PPR domain is absent in HARPs. The red rectangle shows the closeup in (B). (B) Orientation of active site residues is conserved among PRORPs and HARPs; the active site residues are positioned similarly in both enzyme types. AtPRORP1 is colored in gray and Hhal2243 in blue.
 
-## The SH domain is critical for RNase P activity
+### The SH domain is critical for RNase P activity
 
 In the next step, we sought to identify those amino acid residues that are required for the interaction of the enzyme with its pre-tRNA substrate. Helices α5 and α6 of the SH domain expose several conserved arginines and lysines that might be critical for pre-tRNA binding. Notably, several of the residues lie within the distal part of the SH domain that was not resolved in our cryo-EM structure, likely due to a high degree of conformational flexibility. As secondary structure predictions indicated a continuation of the helical arrangement in this region, we generated a homology model of Aq880 based on the Hhal2243 structure and the secondary structure prediction (Figure 4—figure supplement 1A). The resulting Aq880 model was further verified by rigid-body docking into the electron density map of our Hhal2243 structure (Figure 4—figure supplement 1B).
 
 All residues that were varied to alanines are within the distal part of helix α6 of the SH domain (Figure 4A). Variation of the entire positive arginine/lysine stretch resulted in the inability of the mutant protein to cleave off the 5’-leader sequence (Figure 4B). To narrow down the critical residues, we generated the R125A/R129A double mutant and protein variants with single mutations of R125 or R129. While both R129A and the double mutant R125A/R129A were inactive, R125A retained residual activity (Figure 4C, Table 1). Notably, variation of positively charged residues to alanines in the SH domain did not significantly change the oligomerization behavior of Aq880 as judged by MP (Figure 4D). Our data suggest that the cluster of positively charged side chains in the SH domain is required for pre-tRNA binding. Although this part is less ordered in our cryo-EM structure, it might become more rigid upon tRNA substrate binding.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig4-v2.jpg)
+
+**Figure 4.:** (A) Homology model of Aq880 with residues critical for pre-tRNA processing activity in the SH domain displayed as sticks. Processing of pre-tRNAGly by Aq880 wt and derived mutant variants. Aliquots were withdrawn at different time points (1, 3, 10, or 25 min) of incubation at 37°C; 0, substrate without addition of enzyme. (B) Aq880 wt and the quintuple mutant K119A/R123A/R125A/K127A/R129A at 50 nM (left) or 500 nM (right) enzyme; (C) Aq880 wt, the single mutants R125A and R129A, and the double mutant R125A/R129A, assayed at 50 nM (left) or 500 nM (right) enzyme. Source data of phosphor images are available in Figure 4—source data 1. (D) Mass photometry of Aq880R125A, Aq880R129A, and Aq880K119A/R123A/R125A/K127A/R129A. Molecular masses corresponding to the respective Gaussian fits are shown in kDa above the fits. Source data of phosphor images are available in Figure 4—source data 1. SH, spike helix.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70160/elife-70160-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sequence alignment of Hhal2243 and Aq880. Secondary structure elements are drawn as observed in the cryo-EM structure of Hhal2243. The secondary structure prediction has been generated using PSIPRED (3) and is shown below the sequence alignment. The alignment colors are according to the physico-chemical properties of the respective amino acids. (B) Electron density map contoured at level 0.12 with the docked Aq880 model shown in yellow. EM, electron microscopy.
 
 ## Discussion
 
@@ -86,36 +182,179 @@ Taken together, we here present the molecular framework for pre-tRNA processing 
 
 ## Materials and methods
 
-## Molecular cloning and plasmid generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Aquifex aeolicus)</td>
+      <td>Aq_880</td>
+      <td>GenBank</td>
+      <td>AAC07003.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Halorhodospira halophila)</td>
+      <td>Hhal_2243</td>
+      <td>GenBank</td>
+      <td>ABM63007.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta (DE3)</td>
+      <td>Merck Novagen</td>
+      <td>70954–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Lemo21 (DE3)</td>
+      <td>NEB Biolabs</td>
+      <td>HC2528J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>6×His Tag HRP (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific, Invitrogen</td>
+      <td>Catalog #MA1-21315-HRP</td>
+      <td>Dilution 1:5000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gel Filtration Markers Kit for Protein Molecular Weights12–200 kDa</td>
+      <td>Merck Sigma-Aldrich</td>
+      <td>MWGF200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Apoferritin</td>
+      <td>Merck Sigma-Aldrich</td>
+      <td>A3660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Adobe Illustrator CC</td>
+      <td>Adobe</td>
+      <td></td>
+      <td>Version 25.0</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Adobe Photoshop CC</td>
+      <td>Adobe</td>
+      <td></td>
+      <td>Version 22.0.0</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>CryoSparc</td>
+      <td>doi: 10.1038/nmeth.4169</td>
+      <td></td>
+      <td>v3.1</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>CTFfind4</td>
+      <td>doi: 10.1016/j.jsb.2015.08.008</td>
+      <td></td>
+      <td>Version 4.1.14</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Topaz</td>
+      <td>doi: 10.1038/s41592-019-0575-8</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>COOT</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td></td>
+      <td>Version 0.9.3</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Phenix</td>
+      <td>http://www.phenix-online.org</td>
+      <td></td>
+      <td>Version 1.18</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/</td>
+      <td></td>
+      <td>Version 1.2.5</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Molprobity</td>
+      <td>Duke Biochemistry,http://molprobity.biochem.duke.edu/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>PyMol 2</td>
+      <td>https://pymol.org/2/</td>
+      <td></td>
+      <td>Version 2.0.6</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>AcquireMP</td>
+      <td>Refeyn (https://www.refeyn.com)</td>
+      <td></td>
+      <td>v.2.3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular cloning and plasmid generation
 
 In order to overexpress the Aq880cHis protein, a pET-28a(+)_Aq880cHis plasmid was constructed. For this purpose, the genomic DNA of A. aeolicus strain was isolated and used as template for amplification of the aq_880 gene with the primer pair listed in supplementary file 1c as described by (1). The PCR product was inserted into the pET-28a(+) vector via XhoI and NcoI restriction sites. For all the Aq880cHis variants, site-directed mutagenesis was done to gain either the C-terminal truncated proteins or the arginine and lysine-to-alanine mutants. The polymerase chain reaction (PCR) was performed using the Platinum SuperFi PCR Master Mix (Invitrogen) and the primers listed in supplementary file 1c. For the pET-28a(+)_Hhal2243nHis construct, isolated chromosomal DNA of H. halophila was used as template, and the PCR amplified product (primers listed below) was inserted via the restriction sites NheI and Bpu1102I into the pET-28a(+) vector (2). For Primer and plasmid constructions, see the Supplementary file 1c.
 
-## Expression and purification of recombinant proteins
+### Expression and purification of recombinant proteins
 
-## Preparation of Hhal2243
+#### Preparation of Hhal2243
 
 For recombinant overexpression of the HARP from H. halophila SL1 (Hhal2243) with N-terminal His tag, a pET28(+) Hhal2243nHis plasmid was introduced into Lemo21 (DE3) competent E. coli cells as well as into the Rosetta (DE3) strain. For protein expression in the Lemo21 strain, an LB broth culture supplemented with 50 µg/mL kanamycin and 34 µg/mL chloramphenicol was incubated for 6 hr at 37°C. The main culture was inoculated 1:50 with this pre-culture supplemented with 500 µM rhamnose. After 2 hr at 37°C, overexpression of the Hhal2243nHis protein was induced upon addition of IPTG (0.4 mM) and cells were incubated for another 16 hr. Protein expression in the Rosetta strain was done as described below for Aq880 and mutants thereof. Cells obtained in both expression systems were harvested by centrifugation at 2000×g for 30 min at 4°C and combined. The combined cell pellets were resuspended in NPI-20 buffer (50 mM NaH2PO4/NaOH, pH 8.0, 300 mM NaCl, and 20 mM imidazole) and disrupted by sonification (output control: 50%, duty cycle: 50%, output: 20%) in three cycles for 2 min on ice. After centrifugation (4°C, 1 hr, 10,500×g), the lysate was filtered and loaded onto a 1 mL HisTrap column. Elution was performed with NPI-500 buffer (as NPI-20, but containing 500 mM imidazole) applying a linear gradient over 30 column volumes (Figure 1—figure supplement 1A), and HARP-containing fractions were dialyzed against thrombin cleavage buffer (10 mM Tris-HCl, pH 8.0, 100 mM KCl, 0.1 mM EDTA, 2 mM CaCl2, and 10% (v/v) glycerol). The N-terminal His6-tag was then removed by digestion with thrombin (≈1 U/mg; GE Healthcare) at 4°C overnight. For removal of thrombin and further purification, the protein fractions were subjected to MonoQ anion-exchange chromatography (Figure 1—figure supplement 1A). The tag-free HARP was eluted with thrombin cleavage buffer containing 1 M KCl and dialyzed against ‘crystallization buffer’ (10 mM Tris-HCl pH 8.0, 100 mM KCl, and 0.1 mM EDTA). Protein purity was analyzed by 15% SDS-PAGE (Figure 1—figure supplement 1B), and successful removal of the His6-tag by thrombin digestion was verified using an α−6His-HRP antibody (Figure 1—figure supplement 1C). The protein was frozen in liquid nitrogen and stored at −80°C. All protein concentrations were determined via Bradford assay. All protein preparations were nucleic acid-free based on absorption ratios > 1 for 280/260 nm.
 
-## Preparation of Aq880 and mutants
+#### Preparation of Aq880 and mutants
 
 Aq880 with C-terminal His6 tag (Aq880cHis) and mutants thereof were overexpressed in Rosetta (DE3) cells in LB autoinduction medium (0.2% [w/v] lactose, 0.05% [w/v] glucose) supplemented with 50 µg/mL kanamycin and 34 µg/mL chloramphenicol. Cells grown at 37°C for 18–22 hr were harvested by centrifugation at 2000×g for 30 min at 4°C. After resuspension in NPI-20 buffer (see above), cells were lysed via sonification (output control: 50%, duty cycle: 50%, output: 20%) in five cycles (each 2 min) and with cooling on ice between the cycles. After centrifugation (10,500×g for 4°C, 1 hr), the lysate was filtered and loaded onto a 1 mL HisTrap column. Elution was performed with NPI-500 buffer applying a step gradient in 20% steps over 20 column volumes. Protein purity was analyzed using 12% stain-free TGX gels detected via the ChemiDoc MP Imaging System (BioRad). The protein was dialyzed against ‘storage buffer’ (10 mM Tris-HCl pH 8.0, 100 mM KCl, 10 mM MgCl2, 0.1 mM EDTA, 3 mM DTT immediately added before use, and 50% [v/v] glycerol) and stored at −20°C. For analyzing the protein's oligomerization state, analytical SEC was performed. Beforehand, Aq880cHis was purified over a MonoQ column and eluting protein fractions were dialyzed against ‘crystallization buffer’ (10 mM Tris-HCl pH 8.0, 100 mM KCl, and 0.1 mM EDTA). Then 250 µL protein (0.2–2.3 mg) was loaded onto the Superose 6 10/300 GL column. To obtain a calibration curve for molecular mass estimation, protein standards (Merck Sigma-Aldrich) specified in Figure 2—figure supplement 2 were separated on the same column.
 
-## Cryo-EM grid preparation and data collection
+#### Cryo-EM grid preparation and data collection
 
 To prepare cryo-EM grids, 3 µL of Hhal2243 at 100 µM concentration was applied to CF 1.2/1.3 grids (Protochips) that were glow-discharged 20 s immediately before use. The sample was incubated 30 s at 100% humidity and 10°C before blotting for 11 s with blotforce −2 and then plunge-frozen into a liquid ethane cooled by liquid nitrogen using a Vitrobot Mark IV (FEI). Data were acquired on a Titan Krios electron microscope (Thermo Fisher Scientific, FEI) operated at 300 kV, equipped with a K3 direct electron detector (Gatan). Movies were recorded in counting mode at a pixel size of 0.833 Å per pixel using a cumulative dose of 40 e−/Å2 and 40 frames. Data acquisition was performed using EPU two with two exposures per hole with a target defocus range of 1.5–2.4 μm.
 
-## Cryo-EM data processing
+#### Cryo-EM data processing
 
 The Hhal2243 dataset was processed in CryoSparc v3.1 (Punjani et al., 2017). Dose-fractionated movies were gain-normalized, aligned, and dose-weighted using Patch Motion correction. The contrast transfer function (CTF) was determined using CTFfind4 (Rohou and Grigorieff, 2015). A total of 52,710 particles was picked using the blob picking algorithm and used to train a model that was subsequently used to pick the entire dataset using TOPAZ (Bepler et al., 2019). A total of 2,749,587 candidate particles were extracted and cleaned using iterative-rounds of reference-free 2D classification. The 2,665,011 particles after 2D classification were used for ab initio model reconstruction. The particles were further iteratively classified in 3D using heterogenous refinement. The 1,736,597 particles belonging to the best-aligning particles were subsequently subjected to homogenous 3D refinement, yielding 3.37 Å global resolution and a B-factor of −181.8 Å2.
 
-## Model building
+#### Model building
 
 The reconstructed density was interpreted using COOT (Emsley and Cowtan, 2004); a model was built manually into the electron density of the best resolved molecule and superposed to reconstruct the symmetry mates. Model building was iteratively interrupted by real-space refinements using Phenix (Liebschner et al., 2019). Statistics assessing the quality of the final model were generated using Molprobity (Chen et al., 2010). Images of the calculated density and the built model were prepared using UCSF Chimera (Pettersen et al., 2004), UCSF ChimeraX (Goddard et al., 2018), and PyMOL.
 
-## Mass photometry
+#### Mass photometry
 
 MP experiments were performed using a OneMP mass photometer (Refeyn Ltd, Oxford, UK). Data acquisition was performed using AcquireMP (Refeyn Ltd. v2.3). MP movies were recorded at 1 kHz, with exposure times varying between 0.6 and 0.9 ms, adjusted to maximize camera counts while avoiding saturation. Microscope slides (70 × 26 mm2) were cleaned for 5 min in 50% (v/v) isopropanol (HPLC grade in Milli-Q H2O) and pure Milli-Q H2O, followed by drying with a pressurized air stream. Silicon gaskets to hold the sample drops were cleaned in the same manner and fixed to clean glass slides immediately prior to measurement. The instrument was calibrated using the NativeMark Protein Standard (Thermo Fisher Scientific) immediately prior to measurements. The concentration during measurement of Aq880, Aq880 mutants, or Hhal2243 during measurements was typically 100 nM. Each protein was measured in a new gasket well (i.e., each well was used once). To find focus, 18 µL of fresh buffer (10 mM Tris pH 8.0, 100 mM KCl, and 0.1 mM EDTA) adjusted to room temperature was pipetted into a well, the focal position was identified and locked using the autofocus function of the instrument. For each acquisition, 2 µL of diluted protein was added to the well and thoroughly mixed. For each sample, three individual measurements were performed. The data were analyzed using the DiscoverMP software.
 
-## Pre-tRNA processing assays
+#### Pre-tRNA processing assays
 
 Activity of recombinant HARPs was analyzed essentially as described (Nickel et al., 2017). Processing assays were carried out in buffer F (50 mM Tris-HCl, pH 7.0, 20 mM NaCl, and 5 mM DTT added immediately before use) supplemented with 4.5 mM divalent metal ions (usually 4.5 mM MgCl2). Cleavage assays were performed with 50 or 500 nM HARP and ~5 nM 5’-32P-labeled pre-tRNAGly. Enzyme and substrate were preincubated separately (enzyme: 5 min at 37°C; substrate 5 min at 55°C/5 min at 37°C). To start the reaction, 4 µL of substrate mix was added to 16 µL enzyme mix. At different time points, 4 µL aliquots were withdrawn, mixed with 2× denaturing loading buffer (0.02% [w/v] bromophenol blue, 0.02% [w/v] xylene cyanol blue, 2.6 M urea, 66% [v/v] formamide, and 2× TBE) on ice and subjected to electrophoresis on 20% denaturing polyacrylamide gels. 5’-32P-labeled pre-tRNAGly substrate and the cleaved off 5’-leader product were visualized using a Bio-Imaging Analyzer FLA3000-2R (Fujifilm) and quantified with the AIDA software (Raytest). First-order rate constants of cleavage (kobs) were calculated with Grafit 5.0.13 (Erithacus Software) by nonlinear regression analysis. HARP working solutions, obtained by dilution from stock solutions, were prepared in EDB buffer (10 mM Tris-HCl pH 7.8, 30 mM NaCl, 0.3 mM EDTA, and 1 mM DTT added immediately before use) and kept on ice before use; ~1 µL enzyme working solution was added to the aforementioned enzyme mix (Σ16 µL). All experiments were at least performed in triplicates.

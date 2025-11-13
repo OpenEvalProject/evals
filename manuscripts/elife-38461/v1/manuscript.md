@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.38461.001 SWELL1 (LRRC8A) is the only essential subunit of the Volume Regulated Anion Channel (VRAC), which regulates cellular volume homeostasis and is activated by hypotonic solutions. SWELL1, together with four other LRRC8 family members, potentially forms a vastly heterogeneous cohort of VRAC channels with different properties; however, SWELL1 alone is also functional. Here, we report a high-resolution cryo-electron microscopy structure of full-length human homo-hexameric SWELL1. The structure reveals a trimer of dimers assembly with symmetry mismatch between the pore-forming domain and the cytosolic leucine-rich repeat (LRR) domains. Importantly, mutational analysis demonstrates that a charged residue at the narrowest constriction of the homomeric channel is an important pore determinant of heteromeric VRAC. Additionally, a mutation in the flexible N-terminal portion of SWELL1 affects pore properties, suggesting a putative link between intracellular structures and channel regulation. This structure provides a scaffold for further dissecting the heterogeneity and mechanism of activation of VRAC.
+SWELL1 (LRRC8A) is the only essential subunit of the Volume Regulated Anion Channel (VRAC), which regulates cellular volume homeostasis and is activated by hypotonic solutions. SWELL1, together with four other LRRC8 family members, potentially forms a vastly heterogeneous cohort of VRAC channels with different properties; however, SWELL1 alone is also functional. Here, we report a high-resolution cryo-electron microscopy structure of full-length human homo-hexameric SWELL1. The structure reveals a trimer of dimers assembly with symmetry mismatch between the pore-forming domain and the cytosolic leucine-rich repeat (LRR) domains. Importantly, mutational analysis demonstrates that a charged residue at the narrowest constriction of the homomeric channel is an important pore determinant of heteromeric VRAC. Additionally, a mutation in the flexible N-terminal portion of SWELL1 affects pore properties, suggesting a putative link between intracellular structures and channel regulation. This structure provides a scaffold for further dissecting the heterogeneity and mechanism of activation of VRAC.
 
 ## Introduction
 
@@ -39,7 +39,47 @@ Previous studies have shown that SWELL1 is required for VRAC activity, and that 
 
 SWELL1 is organized as a hexameric trimer of dimers with a four-layer domain architecture and an overall jellyfish-like shape (Figure 1A). The transmembrane (TM) and extracellular domains (ECDs) surround the central pore axis, and share a previously unappreciated structural homology with the connexin (Maeda et al., 2009) and innexin (Oshima et al., 2016) gap junction channels (Figure 1—figure supplement 5A–D). The ECD is composed of two extracellular loops (ECL1 and ECL2) that are stabilized by three disulfide bonds (Figure 1B–C and Figure 1—figure supplement 5E–F). ECL1 contains one strand of a small beta-sheet and a helix (ECH) that faces the center of the ECD while ECL2 contains two additional antiparallel beta strands of the beta-sheet that faces the outside of the ECD. Each subunit contains four TM helices (TM1-4). TM1 lies closest to the central pore axis and is tethered to a short N-terminal coil (NTC) that is parallel to the inner leaflet of the membrane. In the cytosol, the intracellular linker domains (ILD) create a tightly packed network of helices connecting the channel pore to the LRR domains. Each ILD is composed of two-four helices from the TM2-TM3 cytoplasmic loop (LH1-4), and five helices from the TM4-LRR linker (LH5-9) (Figure 1C). Each protomer terminates in 15–16 LRRs which form a prototypical solenoid LRR fold (Figure 1B–C). LRRs from the six protomers dimerize into three pairs, which interact to form a Celtic knot-like assembly (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cryo-EM reconstruction of SWELL1 homohexamer viewed from the membrane plane highlighting a dimer pair (top left, red and pink subunits) and an interface between dimers (top right, pink and green subunits), from the extracellular side (bottom left), and from the cytosolic side (bottom right). (B) Detailed view of SWELL1 ‘inner’ protomer. (C) Topology diagram denoting secondary structural elements. Dashed lines indicate unresolved regions on both protomers in a dimer pair, while dashed shape borders indicate regions that are only resolved on one protomer.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) HeLa LRRC8-/- cells were transfected with SWELL1-pIres-GFP or empty pIres-GFP vector and tested for hypotonic (230 mOsm/kg) solution-induced currents using voltage ramp protocols (Qiu et al., 2014). Whole cell currents were measured at −100 and +100 mV before and 5–7 min after hypotonic challenge and normalized to cell capacitance. Shown are means ± s.e.m. for the number of cells indicated from 3 separate experiments. (B) Hypotonic solution-induced currents (blue) were blocked by DCPIB (20 μM) (purple); ramp-induced current in isotonic solution prior to challenge with hypotonic solution is shown in black. Traces were filtered at 1900 Hz and averaged (ten sweeps each). Extracellular solution (in mM): 90 NaCl, 2 KCl, 1 MgCl2, 1 CaCl2, 10 HEPES, 110 mannitol (isotonic, 300 mOsm/kg) or 30 mannitol (hypotonic, 230 mOsm/kg), pH 7.4 with NaOH. Recording pipettes were filled with intracellular solution containing (in mM): 133 CsCl, 5 EGTA, 2 CaCl2, 1 MgCl2, 10 HEPES, 4 Mg-ATP, 0.5 Na-GTP (pH 7.3 with CsOH; 106 nM free Ca2+) and had resistances of 2–3 MΩ.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Gel filtration trace of SWELL1-FLAG after affinity purification. (B) SDS-PAGE gel of SWELL1-FLAG. Lane 1 is eluate after affinity purification (Pre-SEC) and lane 2 is combined fractions from SWELL1-FLAG peak post size exclusion. Expected molecular weight is 94 kDa.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative aligned micrograph (scale bar, 100 µm). 4355 movies were collected of SWELL1-FLAG in vitreous ice. (B) Representative 2D classes showing range of orientations of SWELL1-FLAG particles. (C) Euler distribution for final map. Applied C3 symmetry was used, thus only one third of the sphere is shown. (D) Fourier shell correlation between two independently refined cryo-data half sets. (E) Local resolution estimates of the final reconstruction. (F) Data-processing flow chart.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Selected regions of the model are shown with superimposed electron density. Density is derived from the final C3 symmetry-imposed map sharpened with a b-factor of −110 Å2. The cytosolic loop helices (LH1-4) and LRR 15–16 are from the outer subunit.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A–B) Comparison of the SWELL1 ‘inner subunit’ and ‘outer subunit’ in a dimer pair. In the inner subunit, the TM2-TM3 linker contributes two long parallel helices (LH1 and LH4) with a flexible loop of res175-231 between them, while the outer subunit has an additional pair of parallel helices (LH2 and LH3) kinked to place them between the two subunits, though still with an unresolved loop of residues 176–213 between them. LH2, corresponding to residues R214-E236, sits atop of the LRR in the outer subunit (green arrow). Additionally, there is a rotation of the LRR domains relative to the TM domains that allows them to dimerize. (A–D) The LRRC8 family has been shown to be related by weak sequence homology to pannexins (Abascal and Zardoya, 2012), which are in turn related by structural homology to connexins and innexins. The transmembrane helices (TM1-4) of SWELL1 share the same order and arrangement as those of connexin-26 (Cx26; PDB: 2ZW3) (Maeda et al., 2009) and innexin-6 (PDB: 5H1Q) (Oshima et al., 2016) with TM1 closest to the central axis and TM3 and TM4 facing the membrane environment. An N-terminal helix in both Cx26 and innexin-6 creates a pore funnel that forms the narrowest constriction of the channel (Maeda et al., 2009; Oshima et al., 2016), which may be recapitulated in SWELL1 (purple arrows) (E–F) The extracellular loops of SWELL1 (red box) share 3 structurally conserved disulfide bonds with connexin-26 (green box), as well as a three-strand antiparallel beta sheet composed of the antiparallel beta hairpin of ECL2, and a beta strand from ECL1 (Maeda et al., 2009). (A–B, D) In SWELL1, cytoplasmic core formed by the intracellular linker domains share the same topology with portions of the C-terminal domains of distantly related innexin-6 (blue arrows) (Oshima et al., 2016).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Human LRRC8 family aligned using ClustalW. Secondary structure and domain assignments are annotated above. Residues mentioned in text are boxed red.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Human LRRC8 family aligned using ClustalW. Secondary structure and domain assignments are annotated above. Residues mentioned in text are boxed red.
+
 Perhaps the most striking architectural feature of VRAC is the symmetry mismatch between the cytosolic LRR domains and the pore-forming domains of the channel, despite its homo-hexameric assembly (Figure 2). The ECDs, TMs, and ILDs all share the same 6-fold symmetric arrangement (Figure 2B); however, in the cytosol, LRR domains dimerize in a parallel fashion with each LRR at either a 10 or −20° offset relative to the rest of its protomer, producing a 3-fold symmetric trimer of dimers (Figure 2C). The nonequivalence between identical subunits arises from a hinge around the conserved residue L402 in a helix of the TM4-LRR linker (Figure 2D and Figure 1—Figure supplements 6 and 7). This hinge allows the LRR domains to shift as rigid bodies, producing sufficient flexibility for them to interface at their edges via several charged residues (Figures 2D and 3A). As a result, the helical C-termini of the two subunits in a dimer pair make two different sets of interactions with the neighboring LRR (Figure 3B). Focused 3D classification of the LRR domains revealed several arrangements of LRRs suggesting that flexibility of the LRR domains may play a functional role in channel gating (Figure 2—figure supplement 1), similar to the intracellular domains of the CorA magnesium channel (Matthies et al., 2016). Interestingly, the outer LRR subunit in the dimer exhibits helical density in the C-terminal half of the TM2-TM3 linker that rests on top of the outer protomer’s LRR domain, adding an additional layer of intricacy to the network of cytosolic interactions (Figure 1—figure supplement 5A–B). Symmetry mismatch is also observed in the homotetrameric AMPA receptor GluA2, which similarly forms local dimers in different domain layers (Sobolevsky et al., 2009). Furthermore, the dimer-of-dimers topology of homotetrameric AMPA-subtype ionotropic glutamate receptors (iGluRs) defines the subunit organization of di- and tri-heteromeric NMDA-subtype iGluR structures (Karakas and Furukawa, 2014; Lee et al., 2014; Lü et al., 2017). By analogy, we speculate that the trimer-of-dimers assembly of SWELL1 is recapitulated in, and influences the composition of, heteromeric VRACs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig2-v1.jpg)
+
+**Figure 2.:** (A) SWELL1 model viewed from the membrane plane with domain layers viewed perpendicular to the symmetry axis. (B–C) Domain layers viewed from the top of the channel grouped according to shared symmetry with simple schematic to demonstrate subunit arrangement. (B) From left to right: extracellular domain layer (EC), transmembrane domain layer (TM), and intracellular linker domain layer (ICL) all share the same 6-fold rotation symmetry axis (black hexagon). (C) The LRR domain layer has 3-fold rotational symmetry (black triangle), resulting from parallel pairing of three sets of LRR domains. (D) Asymmetry in LRR pairing arises from a hinge at L402 on LH8 that allows rotation of the LRR domain as a rigid body in a dimer pair. The first two TM domains of the inner (red) and outer (yellow) subunits are aligned to one another using the PyMOL align function.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Bottom view of arrangement of LRR domains in representative subclasses of density-subtracted 3D classification (see Materials and methods). Pre-cleaned particle picks were distributed into classes with clear organization of three (A; 25,607 particles), two and one half (B; 29,638 particles), two (C; 7197 particles), and one (D; 8071 particles) pairs of LRRs are observed. The highest resolution map was produced with the particles in the classes in which all three pairs are resolved, while the classes in which one or more LRR pairs are flexible produce lower resolution refinements. (E) Example refinement of LRR class (B) with two and one half LRR pairs resolved and one LRR flexible (~5.7 Å resolution).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig3-v1.jpg)
 
@@ -49,6 +89,18 @@ Unlike other ion channels, there is little domain swapping between the subunits 
 
 The ECDs, TMs, and ILDs of all six subunits contribute to the ion-conducting pore (Figure 4A–B). Below that, windows of 35 by 40 Å between LRR dimer pairs are sufficiently large to allow ions and osmolytes to freely pass. In the extracellular domain, 25 Å above the membrane, a ring of arginines (R103) at the N-terminal tip of the extracellular helix forms the narrowest constriction in the channel structure (Figure 4A–C). We hypothesized that these arginines, only conserved between SWELL1 and the LRRC8B subunit (R99) (Figure 1—figure supplement 6), might directly interact with permeant anions. To test this hypothesis, we mutated positively-charged R103 to phenylalanine, and determined whether ion selectivity was altered in SWELL1-R103F + LRRC8C heteromeric channels heterologously expressed in HeLa LRRC8(A,B,C,D,E)-/- cells. We determined the reversal potential (Vrev) for hypotonicity-induced Cl- currents mediated by SWELL1-R103F + LRRC8C channels. The Vrev of currents mediated by SWELL1-R103F + LRRC8C was significantly reduced compared to wildtype channels, indicating that the channels are less selective for Cl- (Figure 4D) (Ackerman et al., 1994; Jackson and Strange, 1995; Tsumura et al., 1996). Furthermore, extracellular ATP at concentrations that block ~75% of wildtype VRAC currents was ineffective on channels containing R103F (Figure 4E and Figure 4—figure supplement 1). Therefore, R103 is a critical residue within SWELL1 that impacts ion selectivity as well as pore block of heteromeric VRAC channels.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig4-v1.jpg)
+
+**Figure 4.:** (A) Cartoon model of the SWELL1 pore, with two subunits removed for clarity. A surface representation of the radial distance between the protein surface and the pore axis is shown in grey. Pore-facing residues R103, T48 and T44, and N-terminal coil (NTC) are labeled in pink. (B) Graph of van der Waals radii of the pore, plotted against distance along the pore axis. Locations of residues R103, T48, T44, and NTC are labeled along 2D plot. Grey box covers potential area the N-terminus might occupy. (C) Electrostatic surface potential of channel pore, viewed by vertical cross-section. Narrow constriction on the extracellular side of the channel is formed by a ring of R103 residues (yellow arrows). Calculated using APBS implemented by Pymol2.0 with potentials ranging from −10 kT (red) to +10 kT (blue). (D–E) Cells expressing heteromeric VRACs composed of mutant SWELL1-R103F + LRRC8C show reduced chloride selectivity and insensitivity to external ATP block. (D) For highly Cl- selective channels, the voltage at which there is no net current (Vrev) is close to the equilibrium potential for Cl- (in these experiments ECl = +9.75 mV; indicated by the dotted line). Vrev of currents mediated by SWELL1-R103F-containing channels (orange bar; +4.6 ± 1.0 mV (mean ± s.e.m., n = 6 cells from 3 separate transfections)) is significantly reduced compared to WT (blue bar; +8.8 ± 0.8 mV (n = 13 from 6 separate transfections); p = 0.003, Student’s t-test. (E) The percent block of whole cell leak subtracted hypotonic-induced currents by extracellular applied Na2ATP (2 mM) was determined at +100 mV. Outward WT SWELL1 + LRRC8C-mediated currents are blocked 72 ± 2% (mean ± s.e.m., n = 7 from 4 separate transfections; blue bar). Outward currents mediated by SWELL1-R103 + LRRC8C are not blocked by extracellular ATP (2 ± 3% (mean ± s.e.m., n = 5 from 3 separate transfections; orange bar); this difference is highly significant (p = 5.4e^-8, Student’s t-test). (F) Detailed view of coordination of NTC (purple). The NTC makes intrasubunit contacts with V157 on LH1 and a conserved Y382 at the kink between LH6 and LH7 of the TM4-LRR linker. Additionally, P22 of the NTC makes an intersubunit contact with a conserved P147 at the kink between TM2 and the TM2-TM3 linker of the neighboring subunit. (G–H) SWELL1-T5 is close to or part of the pore. (G) A cysteine mutation at SWELL1-T5 confers sensitivity to the polar MTS reagent MTSES applied extracellularly; maximum percent block of T5C-containing channels (red bars) by 3.33 mM MTSES was 74.2 ± 7.7% at −100 mV (left) and 50.4 ± 9.5% at +100 mV (right) (n = 5; mean ± s.e.m.; four separate transfections). The unmodifiable T5R-containing heteromeric channels (blue bars) are unaffected (n = 3 from 3 separate transfections; p=0.0009 at −100 mV and p=0.010 at +100 mV, Student’s t-test). (H) Relative permeability PI/PCl is enhanced by the T5R mutation. Reversal potentials in iodide (left) and chloride (right) 230 mOsm/kg solutions are shown for the number of cells from 3 to 7 separate transfections (WT-, T5C- and T5R-expressing cells were from 6, 4, and 3 transfections, respectively, in the Cl- condition, and 3, 3, and 3 transfections, respectively, in the I- condition). The Vrev of currents mediated by SWELL1-T5R + LRRC8C (blue) in I- solution was significantly more negative than either WT- (black) or T5C (red)-containing channels (p=0.0088 (**) and 0.0047 (***), respectively. Table: PI/PCl is shown as means with lower and upper 95% confidence intervals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Detailed view of neighboring extracellular loops with KYD motif and pore-constricting residue R103 labeled. (B) Representative data from HeLa LRRC8-/- cells transfected 1–3 days earlier with WT SWELL1 (top) and SWELL1-R103F (bottom) together with LRRC8C in a 2:1 ratio. Whole cell currents at +100 mV (upper trace) and −100 mV (lower trace) were measured from voltage ramp-induced currents and plotted. Blue arrow indicates addition of hypotonic solution; red bar, Na2ATP. Chloride solutions described in bianionic experiments (Qiu et al., 2014; Syeda et al., 2016) were used (Cl- in: 130 mM; Cl- out: 88 mM). For cells expressing wildtype SWELL1 +LRRC8C-containing channels outward currents were rapidly reduced by ATP block, while essentially no ATP block was observed in cells expressing R103F-containing channels. (C) Representative leak subtracted whole cell ramp-induced currents elicited by hypotonic solutions (230 mOsm/kg) containing 88 mM NaCl/10 mM HEPES from HeLa LRRC8-/- cells overexpressing WT (black trace) or the R103F mutant (orange trace) together with LRRC8C at a 2:1 ratio. The calculated Pother/PCl was 0.05 + 0.04 (n = 12; mean + s.e.m.) and 0.27 + 0.05 (n = 5) for WT and R103F, respectively (p=0.00036 using Student’s t-test). The relative permeability of other ions to Cl- was determined from the Erev observed in individual cells using the equation (Yang et al., 2012). Pother/PCl = ([Cl-]o*e(F(Erev)/RT) – [Cl-]i)/[Na+]o where [Cl-]o = 88mM, [Cl-]i = 130mM, [Na+]o = 88mM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/38461/elife-38461-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A,B) Representative examples of whole cell currents tested for sensitivity to the extracellularly applied polar MTS reagent MTSES. (A) MTSES blocks SWELL1-T5C-containing channels (top) but has no effect on T5R-containing channels that are not modifiable by MTS reagents. (B) Whole cell currents induced by hypotonic solution (230 mOsm/kg; blue arrows) in HeLa LRRC8-/- cells heterologously expressing SWELL1-T5C (top) or SWELL1-T5R (bottom) with LRRC8C in a 2:1 ratio (0.8 and 0.4 γ/ml). MTSES (purple bar, 3.33 mM) strongly reduced T5C-but not T5R-mediated currents in a manner consistent with covalent modification since reversibility of the T5C block was not observed during washout. Representative currents elicited by voltage ramps from −100 mV to +100 mV are shown (black, before; blue, in hypotonic solution before MTSES; purple, during MTSES). (C) Representative leak subtracted whole cell ramp-induced currents elicited by hypotonic solutions (230mOsm/kg) containing either 88 mM NaCl/10 mM HEPES (green traces) or 88 mM Na-Iodide/10 mM HEPES (black traces) from HeLa LRRC8-/- cells overexpressing WT, T5C or T5R mutants together with LRRC8C at 2:1 ratio. Bianionic solutions described in Qiu et al. (2014) were used to determine relative permeability (PI/PCl).
+
 Within the pore, constrictions are observed at pore-facing residues T44 and T48 (Figure 4A–B). Interestingly, we had previously identified residue T44 via the substituted cysteine accessibility method (SCAM) on heteromeric channels as likely to be at or near the pore (Qiu et al., 2014). Near the bottom of the pore cavity, a constriction at the intracellular face of the membrane corresponds to a short N-terminal coil (NTC) sitting parallel to the inner leaflet of the membrane. The first 14 residues of the N-terminus of the channel are not resolved in the cryo-EM density, presumably due to flexibility. The absence of these residues is conspicuous; in the Cx26 and innexin-6 structures, an N-terminal helix forms a pore funnel structure that is the narrowest constriction in the structures of these channels and is thought to contribute to trafficking, selectivity, and gating (Kyle et al., 2008; Maeda et al., 2009; Oshima, 2014; Oshima et al., 2016). In our reconstruction, the short portion of the NTC that is resolved is highly coordinated by cytosolic domains and positioned to respond to conformational changes in the cytosolic domains of one protomer, as well as movements of the neighboring protomer (Figure 4F). Due to the similarities in pore structure between VRAC and connexin/innexin (Figure 1—figure supplement 5), we conducted functional assays to interrogate the role of the NTC in VRAC. We focused on residue T5 because the homologous residue is involved in stabilizing the pore funnel through a hydrogen bonding network in the Cx26 structure (Maeda et al., 2009). We made the mutation T5C to test whether extracellular addition of the negatively-charged, membrane-impermeable thiol-reactive reagent, 2-sulfonatoethyl methanethiosulfonate (MTSES), could alter VRAC activity in heteromeric channels composed of SWELL1-T5C + LRRC8C in HeLa LRRC8(A,B,C,D,E)-/- cells via cysteine modification. While MTSES has no effect on wildtype heteromeric channels (Qiu et al., 2014) or channels containing SWELL1-T5R (Figure 4G), whole-cell currents mediated by SWELL1-T5C + LRRC8C are strongly suppressed upon the addition of MTSES, suggesting that T5C is part of a constriction narrow enough to block the pore upon covalent modification by MTSES (Figure 4G and Figure 4—figure supplement 2). We next determined the role of T5 in anion selectivity. Although SWELL1-T5C-containing channels have similar relative permeability to wildtype, SWELL1-T5R-containing channels are significantly more selective to iodide compared to chloride, confirming that this residue is close to or part of the channel pore (Figure 4H and Figure 4—figure supplement 2). Thus, the unresolved portion of the N-terminus plays a role in pore constriction in native channels composed of SWELL1 and LRRC8C. Its absence in our structure is likely due to either the high flexibility of the region or a peculiarity of the homomeric assembly of the channel.
 
 ## Discussion
@@ -57,26 +109,162 @@ Here we report the architecture and homo-hexameric assembly of SWELL1 channels. 
 
 ## Materials and methods
 
-## CRISPR LRRC8 KO cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th colspan="2">Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Gene (Homo sapiens)</td>
+      <td>LRRC8A</td>
+      <td>Origene</td>
+      <td colspan="2">Uniprot: Q8IWT6</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Cell line (Homo sapiens)</td>
+      <td>Freestyle 293-F</td>
+      <td>ThermoFisher</td>
+      <td colspan="2">RRID: CVCL_D603</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td colspan="2">RRID: CVCL_0030</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Recombinant DNA reagent</td>
+      <td>pcDNA3.1/Zeo(-)</td>
+      <td>ThermoFisher</td>
+      <td colspan="2">cat no: V86520</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Chemical compound</td>
+      <td>digitonin</td>
+      <td>Sigma-Aldrich</td>
+      <td colspan="2">CAS Number: 11024-24-1</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>doi:10.1038/nmeth.4193</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>EMHP</td>
+      <td>doi:10.1093/bioinformatics/btx500</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>Gctf</td>
+      <td>doi:10.1016/j.jsb.2015.11.003</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>FindEM template correlator</td>
+      <td>doi:10.1016/j.jsb.2003.11.007</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>doi: 10.1038/nmeth.4169</td>
+      <td colspan="2"></td>
+      <td colspan="2">https://cryosparc.com/</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>RELION</td>
+      <td></td>
+      <td colspan="2">RRID:SCR_016274</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>Rosetta</td>
+      <td></td>
+      <td colspan="2">RRID:SCR_015701</td>
+      <td colspan="2">https://www.rosettacommons.org/software</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>Robetta</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td colspan="2">http://robetta.bakerlab.org/</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>COOT</td>
+      <td></td>
+      <td colspan="2">RRID:SCR_014222</td>
+      <td colspan="2">http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>Phenix</td>
+      <td></td>
+      <td colspan="2">RRID:SCR_014224</td>
+      <td colspan="2">https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>PyMOL Molecular Graphics System, Schrodinger LLC</td>
+      <td colspan="2">RRID:SCR_000305</td>
+      <td colspan="2">http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>UCSF</td>
+      <td colspan="2">RRID:SCR_004097</td>
+      <td colspan="2">http://plato.cgl.ucsf.edu/chimera/</td>
+    </tr>
+  </tbody>
+</table>
+
+### CRISPR LRRC8 KO cell lines
 
 Knock-out of LRRC8 genes in HeLa and suspension Freestyle HEK293-F cell line was completed using CRISPR/Cas9-mediated gene disruption (Ran et al., 2013). SWELL1 (LRRC8A), LRRC8B, LRRC8D, and LRRC8E genes were targeted using guideRNA (gRNA) sequences reported by Voss et al. (2014); the LRRC8C gene was targeted with a gRNA sequence reported by Syeda et al. (2016). Cloning of the gRNAs into PX458-mCherry plasmid was completed as reported in Syeda et al. (2016). Multiple plasmids were transfected simultaneously using either Lipofectamine 2000 or PEI max. After 48–72 hr, fluorescent mCherry positive cells were single-cell sorted into 96-well plates. Successful knock-out was determined by genotyping targeted regions for frameshift mutations and verified by mass spectrometry analysis. For HeLa cells (LRRC8-/- HeLa cells), complete knock-out was verified for all five LRRC8 genes. For HEK293-F suspension cells, complete knock-out was verified for LRRC8B-E (LRRC8(B,C,D,E)-/- HEK293-F cells). One SWELL1 allele remained intact in all surviving suspension culture lines. All cell lines tested negative for mycoplasma contamination.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Human SWELL1 (LRRC8A) (Origene #RC208632) was cloned with a C-terminal FLAG-tag (DYKDDDDK) separated by a triple glycine linker (SWELL1-GGG-FLAG) into a pcDNA3.1/Zeo(-) vector using Gibson cloning. HEK293-F LRRC8(B,C,D,E)-/- cells were transfected at a cell density of 1.8*10^6 cells/mL with 1 mg/L cells of SWELL1-GGG-FLAG plasmid DNA combined with 3 mg/L cells of PEI max. After 48 hr, cells were pelleted and solubilized in solubilization buffer (20 mM Tris pH 8, 150 mM NaCl, 1% DMNG, 2 mg/mL iodoacetamide, and EDTA-free protease inhibitor cocktail (PIC)) at 4°C with vigorous shaking. The cell lysate was ultracentrifuged at 90,000 x g for 30 min at 4°C and the supernatant was collected and combined with 1 mL/L cells of FLAG M2 affinity resin for 1 hr batch incubation at 4°C with gentle shaking. Resin was washed in a gravity column with 5 mL per mL of resin (column volumes; CV) of solubilization buffer (20 mM Tris pH 8, 150 mM NaCl, 1% DMNG, 2 mg/mL iodoacetamide, and EDTA-free PIC), 5CV of high salt wash buffer (20 mM Tris pH 8, 150 mM NaCl, 0.05% digitonin, and EDTA-free PIC), and 10CV of wash buffer (20 mM Tris pH 8, 150 mM NaCl, 0.05% digitonin, and EDTA-free PIC). Protein was eluted using elution buffer (20 mM Tris pH 8, 150 mM NaCl, 0.05% digitonin, EDTA-free PIC and 3x FLAG peptide (Sigma or in-house peptide production)). Sample was concentrated and injected onto Shimadzu HPLC and separated using a Superose 6 Increase column equilibrated with running buffer (20 mM Tris pH 8, 150 mM NaCl, 0.05% digitonin, and EDTA-free PIC). The peak corresponding to SWELL1 homomeric oligomers (~800 kDa) was collected and used for cryo-EM grid preparation. The sample was concentrated to ~8 mg/mL using 100 kDa MWCO concentrators. Protein (3 μl) was applied to plasma cleaned UltrAuFoil 1.2/1.3 300 mesh grids, blotted for 6 s with 0 blot force, and plunge frozen into nitrogen cooled liquid ethane using a Vitrobot Mark IV (ThermoFisher).
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 Images were collected at 200 kV on a Talos Arctica electron microscope (ThermoFisher) with a K2 direct electron detector (Gatan) at a nominal pixel size of 1.15 Å. Leginon software was used to automatically collect micrographs (Suloway et al., 2005). The total accumulated dose was ~55 e-/Å2 and the defocus range was 0.8–1.5 µm. Movies were aligned and dose-weighted using MotionCor2 (Zheng et al., 2017).
 
-## Image processing
+### Image processing
 
 Images were assessed for quality and edges of gold holes were masked using EMHP (Berndsen et al., 2017). CTF values were estimated using Gctf (Zhang, 2016). Template-based particle picking was completed using FindEM template correlator (Roseman, 2004). Particles were extracted using Relion 2.1 (Scheres, 2012) then subjected to 2D classification using cryoSPARC (Punjani et al., 2017). 130,054 particles corresponding to good 2D class averages were selected for further data processing. An ab initio initial model was created in cryoSPARC followed by iterative angular reconstitution and reconstruction. The resulting density map was used as a seed for refinement of the data set in Relion 2.1. Resolution of the resulting map was 4.6 Å. The map showed significant disorder in the LRR regions; however the map reveals that LRR regions arrange pairwise around a three-fold symmetry axis. As the transmembrane and extracellular domains were well-resolved, refinement was pursued imposing C3 symmetry and introducing a mask that excluded density outside of the well-defined, three-fold symmetric transmembrane/extracellular domains. Resolution of the resulting map was 4.0 Å; transmembrane/extracellular domains were well-resolved whereas LRR regions were largely disordered. This map was then used to create suitable projections that were subtracted from particles, thereby creating a particle data set corresponding mostly to LRR densities. This new data set was then subjected to 3D classification in Relion 2.1 (K-means split of 12). One of the resulting classes showed order in the pairwise LRR arrangement around the three-fold symmetry axis. Particles corresponding to this class (25,719) were then refined locally around the previously obtained coordinate assignment imposing three-fold symmetry resulting in an LRR density map at 5.0 Å resolution. Additionally – due to the overall higher degree of order – original particles corresponding to the 25,719 density-subtracted particles were refined under three-fold symmetry constraints. Resolution of the resulting map was 4.4 Å.
 
-## Model building and refinement
+### Model building and refinement
 
 An initial model of an N-terminal portion of SWELL1 was generated with RobettaCM using innexin-6 (5H1Q) as a template structure (Oshima et al., 2016; Song et al., 2013). The SWELL1 topology was predicted using OCTOPUS (Viklund and Elofsson, 2008). Predicted transmembrane regions were manually aligned to the transmembrane helices of the template structure 5H1Q (Oshima et al., 2016). Intervening regions of SWELL1 were aligned to 5H1Q using BLASTp. 10,000 independent homology models were generated with RosettaCM and clustered using Calibur (Li and Ng, 2010). The resulting model with the lowest Rosetta energy from the largest cluster was used as a guide for ab initio building of the transmembrane helices, extracellular domains, and intracellular linker domain. Sequence register was aided by bulky side chains and disulfide bonds in the extracellular domain. A Robetta-generated model of the SWELL1 LRR domain was docked into the EM density corresponding to the LRR of the outer subunit, which was better resolved than the inner subunit (Kim et al., 2004). This LRR model was adjusted manually to fit the density, then copied and docked into the LRR density of the inner subunit, followed by further adjustments. During the building process, manual building in COOT (Emsley and Cowtan, 2004) was iterated with real space refinement using Phenix (Adams et al., 2010) or RosettaRelax (DiMaio et al., 2009). Structures were evaluated using EMRinger (Barad et al., 2015) and MolProbity (Chen et al., 2010). The final model contains residues 15–68, 94–174, 232–802 in the inner subunit and 15–68, 94–175, 214–802 in the outer subunit. Side chains of residues 15–21, 359–364, 787–802 of both subunits and 214–233 of the outer subunit were trimmed to Cβ because of limited resolution and lack of well-defined secondary structures in these regions. Structure figures were made in Pymol (Schrodinger,, 2017) and UCSF Chimera (Pettersen et al., 2004). Pore radii were calculated using HOLE (Smart et al., 1996). The APBS plugin in pymol was used to calculate surface representations of electrostatic potentials.
 
-## Electrophysiology and cell culture
+### Electrophysiology and cell culture
 
 Electrophysiology experiments were completed with HeLa LRRC8-/- cells. HeLa LRRC8-/- cells were transfected 1–3 days earlier with SWELL1 constructs together with LRRC8C-ires-GFP in a 2:1 ratio (0.8 and 0.4 γ/ml for each coverslip). VRAC currents using a 2:1 ratio of SWELL1:LRRC8C were at least twice as large as those using a 1:1 ratio (data not shown). Only one cell per coverslip was tested for its response to hypotonic solution. In experiments aimed at determining whether HeLa LRRC8-/- cells transfected with SWELL1 only could express VRAC currents, the extracellular solution contained (in mM) 90 NaCl, 2 KCl, 1 MgCl2, 1 CaCl2, 10 HEPES, 110 mannitol (isotonic, 300 mOsm/kg) or 30 mannitol (hypotonic, 230mOsm/kg), pH 7.4 with NaOH; recording pipettes were filled with intracellular solution containing (in mM): 133 CsCl, 5 EGTA, 2 CaCl2, 1 MgCl2, 10 HEPES, 4 Mg-ATP, 0.5 Na-GTP (pH 7.3 with CsOH; 106 nM free Ca2+) and had resistances of 2–3 MΩ. Experiments testing R103F and T5 mutants used extracellular solutions described in Qiu et al. (2014) (‘bianionic’) and intracellular solution used in Syeda et al. (2016) (130 mM CsCl, 10 HEPES, 4 Mg-ATP, pH 7.3). These were used to determine relative permeability PI/PCl. An agar bridge was used between the ground electrode and the bath in all experiments.

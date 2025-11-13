@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02r109517 Department of Pharmacology, Weill Cornell Medicine, Cornell University New York United States
+1. Department of Pharmacology, Weill Cornell Medicine, Cornell University New York United States ([ROR:02r109517](https://ror.org/02r109517))
 
 † Corresponding author
 
 ## Abstract
 
-N 6 ,2’- O -dimethyladenosine (m 6 Am) is a modified nucleotide located at the first transcribed position in mRNA and snRNA that is essential for diverse physiological processes. m 6 Am mapping methods assume each gene uses a single start nucleotide. However, gene transcription usually involves multiple start sites, generating numerous 5’ isoforms. Thus, gene-level annotations cannot capture the diversity of m 6 Am modification in the transcriptome. Here, we describe CROWN-seq, which simultaneously identifies transcription-start nucleotides and quantifies m 6 Am stoichiometry for each 5’ isoform that initiates with adenosine. Using CROWN-seq, we map the m 6 Am landscape in nine human cell lines. Our findings reveal that m 6 Am is nearly always a high stoichiometry modification, with only a small subset of cellular mRNAs showing lower m 6 Am stoichiometry. We find that m 6 Am is associated with increased transcript expression and provide evidence that m 6 Am may be linked to transcription initiation associated with specific promoter sequences and initiation mechanisms. These data suggest a potential new function for m 6 Am in influencing transcription.
+N 6,2’-O-dimethyladenosine (m6Am) is a modified nucleotide located at the first transcribed position in mRNA and snRNA that is essential for diverse physiological processes. m6Am mapping methods assume each gene uses a single start nucleotide. However, gene transcription usually involves multiple start sites, generating numerous 5’ isoforms. Thus, gene-level annotations cannot capture the diversity of m6Am modification in the transcriptome. Here, we describe CROWN-seq, which simultaneously identifies transcription-start nucleotides and quantifies m6Am stoichiometry for each 5’ isoform that initiates with adenosine. Using CROWN-seq, we map the m6Am landscape in nine human cell lines. Our findings reveal that m6Am is nearly always a high stoichiometry modification, with only a small subset of cellular mRNAs showing lower m6Am stoichiometry. We find that m6Am is associated with increased transcript expression and provide evidence that m6Am may be linked to transcription initiation associated with specific promoter sequences and initiation mechanisms. These data suggest a potential new function for m6Am in influencing transcription.
 
 ## Introduction
 
@@ -37,11 +37,23 @@ To understand the transcriptome-wide distribution of m6Am, we developed CROWN-se
 
 ## Results
 
-## ReCappable-seq reveals high transcript isoform diversity at the 5’ end
+### ReCappable-seq reveals high transcript isoform diversity at the 5’ end
 
 In previous m6Am mapping studies, genes were annotated to be m6Am, Am, Gm, Cm, or Um (Akichika et al., 2019; Mauer et al., 2019; Sendinc et al., 2019; Boulias et al., 2019), based on the assumption that each gene has one major transcription-start nucleotide. To determine how often genes are characterized by a single major TSS we used ReCappable-seq (Yan et al., 2022), a method for quantitative measurement of transcription-start sites. ReCappable-seq is similar to traditional TSS-seq methods which involve ligation of an oligonucleotide to the 5’ end of mRNAs (Yamashita et al., 2011), thus precisely marking the TSN. However, ReCappable-seq adds an enrichment step for capped mRNA fragments to significantly reduce background signals from internal sites that are derived from RNA cleavage. Thus, ReCappable-seq provides a highly sensitive and precise mapping of TSNs at single-nucleotide resolution (see Materials and methods).
 
 By analyzing ReCappable-seq data in HEK293T cells, we found that protein-coding genes tend to have multiple TSNs. Among the 9199 genes analyzed, we identified 87,624 TSNs (see Materials and methods). On average, a gene uses 9.5±9 (mean and s.d., hereafter) TSNs (Figure 1A). Only ~9% of genes contain a single TSN (Figure 1A). Thus, most genes cannot be characterized by a single start nucleotide.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig1-v1.jpg)
+
+**Figure 1.:** (A) Genes tend to have multiple TSSs. Shown is a histogram displaying the number of TSSs per protein-coding gene in HEK293T cells. TSSs (87,624 TSSs from 9199 genes) were mapped using ReCappable-seq. These TSSs have expression levels ≥1 TPM (transcription-start nucleotide per million). (B, C) Examples of genes that were mistakenly classified by previous studies (Boulias et al., 2019). SRSF1 (B) was previously designated as m6Am because of the miCLIP signals overlapping with A-TSSs. However, based on ReCappable-seq, ~41.5% of the reads are mapped to non-A-TSSs in SRSF1. Notably, one of the most expressed m6Am A-TSS (chr17:58,007,228) was mistakenly considered as internal m6A because this position was not previously annotated as a TSS (Linder et al., 2015). ADAR (C) was previously classified as Gm. There is no m6Am signal based on miCLIP (Boulias et al., 2019), m6Am-seq (Sun et al., 2021), or m6ACE-seq (Koh et al., 2019) mapped to ADAR. However, ~71% of the transcripts from ADAR are A-initiated. (D) Previously classified m6Am genes express considerable levels of non-A-initiated transcripts. Each column represents a gene previously classified as m6Am gene by miCLIP (Boulias et al., 2019). For each gene, the percentage of transcript isoforms starting with m6Am/Am (in green) or Gm/Cm/Um (in gray) are shown. The percentage was calculated by weighting each transcript isoform by its expression level. The TSN frequencies were obtained using ReCappable-seq in HEK293T cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Corresponding to Figure 1B and C, the heterogeneity of TSS usage in SRSF1 and ADAR can also be observed in TSS mapping data generated by CAGE and TSS-seq. In these plots, HEK293T CAGE data were downloaded from FANTOM5 Noguchi et al., 2017; HEK293T TSS-seq data were generated in our previous study (Despic and Jaffrey, 2023). (C, D) Similar to Figure 1B, shown are the m6Am genes classified by (C) (Sendinc et al., 2019) and (D) (Akichika et al., 2019). For each gene, the percentage of transcripts starting with m6Am/Am (in green) or Gm/Cm/Um (in gray) are shown. The transcription-start nucleotide frequencies are obtained by ReCappable-seq data of HEK293T cells. For (D), the 25 m6Am genes are collected from Table S3 ‘List of genes whose TEs are up- or down-regulated upon CAPAM KO’ from Akichika et al., 2019. (E) Venn diagram showing the inconsistency between m6Am maps generated by the existing m6Am mapping methods. In this analysis, only m6Am sites mapped to the primary chromosome are used. Source of data: miCLIP, Boulias et al., 2019; m6Am-seq, Sun et al., 2021; m6ACE-seq, (Koh et al., 2019).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Similar to Figure 1D, the fractions of transcripts starting with m6Am, Am, and other bases in different cell lines. This estimation is based on CROWN-seq. Only genes with at least 50 mapped reads were shown.
 
 As an example, SRSF1, which was previously classified as an m6Am gene, has ~37 different 5’ isoforms in HEK293T cells, of which ~41.5% do not use an A-TSN (Figure 1B). As another example, ADAR was previously classified as a Gm gene, but ~71.0% of transcripts use A-TSNs (Figure 1C). These observations are not artifacts of ReCappable-seq because similar results were also found using other TSN mapping methods (Figure 1—figure supplement 1A, B).
 
@@ -49,7 +61,7 @@ Conceivably m6Am genes produce multiple 5’ isoforms, but the isoforms predomin
 
 Our ReCappable-seq analysis also suggested that previous m6Am mapping methods may not have detected the diversity of m6Am in the transcriptome. ReCappable-seq identified many more A-TSNs than the total number of previously mapped m6Am sites. For example, in both SRSF1 and ADAR, many A-TSNs are seen using ReCappable-seq, however, m6Am signals were only found at a few of these A-TSNs by either miCLIP (Boulias et al., 2019), m6Am-seq (Sun et al., 2021), or m6ACE-seq (Koh et al., 2019, Figure 1B and C). This might suggest that only a few A-TSNs are m6Am modified. However, it is also possible that the antibody-based mapping methods do not have the resolution or sensitivity to distinguish between m6Am at different 5’ isoforms. Notably, previous m6Am mapping studies exhibited very low overlap with each other. miCLIP (Boulias et al., 2019), m6Am-seq (Sun et al., 2021), and m6ACE-seq (Koh et al., 2019) together identified 7480 m6Am sites in HEK293T cells (Figure 1—figure supplement 1E). Among these sites, only 1.1% (84) are found in all three methods and 9.7% (728) are found in at least two studies (Figure 1—figure supplement 1E). Taken together, these data demonstrate a variety of concerns about existing m6Am mapping studies.
 
-## CROWN-seq integrates TSN mapping and m6Am quantification
+### CROWN-seq integrates TSN mapping and m6Am quantification
 
 To understand the distribution of m6Am in the transcriptome, we sought to develop a method to identify the entire repertoire of TSNs among all the 5’ transcript isoforms for each gene. In this way, we can identify the specific 5’ isoforms for each gene that contain m6Am. Additionally, we wanted a quantitative method rather than the qualitative assessment provided by previous antibody-based methods. Recently, chemical methods using sodium nitrite were developed for m6A analysis (Liu et al., 2023; Mahdavi-Amiri et al., 2021; Werner et al., 2021). This method identifies m6A by chemically deaminating (‘converting’) unmethylated A’s into inosines (I’s), while leaving m6A’s intact. During sequencing, the A-to-I conversions are readily detected because I’s are reverse transcribed into G’s. This approach leads to precise and robust m6A quantification (Liu et al., 2023). Because of the chemical similarity between m6Am and Am, we explored the potential use of sodium nitrite conversion to map and quantify m6Am.
 
@@ -59,15 +71,23 @@ We considered the possibility that GLORI data (Liu et al., 2023) could be mined 
 
 We developed CROWN-seq, which selectively analyzes TSNs throughout the transcriptome (Figure 2A). In this method, Am residues in mRNA are converted to Im using sodium nitrite. Next, we specifically isolate the 5’ ends of mRNA by replacing the m7G cap with a desthiobiotin affinity tag using a decapping-and-recapping strategy (Yan et al., 2022). By enriching the m7G-proximal sequence, we can simultaneously sequence the TSN of all transcripts, including both m6Am and non-m6Am TSNs. This is conceptually different from existing m6Am mapping methods which only examine the m6Am transcripts. For A-TSNs, m6Am stoichiometry can be quantified by counting the number of A reads (reflecting m6Am) or G reads (reflecting Am). In this way, we not only obtain TSN locations but also m6Am stoichiometry in the same RNA molecule.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of CROWN-seq. RNAs are firstly treated with sodium nitrite, which causes Am at the transcription-start position to be converted to Im. To isolate the TSN, m7G caps are replaced with 3’-desthiobiotin (DTB) caps. These DTB caps are enriched on streptavidin beads, while uncapped background RNA fragments are uncapped and washed away. After washing, an enriched pool of transcript 5’ ends is released from the beads by cleaving the triphosphate bridge, leaving 5’ monophosphate ends that are ligated to an adapter. After adapter ligation, cDNA was synthesized and amplified for Illumina sequencing. During sequencing, the converted sequences were aligned to a reference genome. The TSNs can be determined as the first base immediately after the 5’ adapter sequence. To quantify m6Am stoichiometry, we count the number of A (m6Am) and G (Am) bases at the TSN position. (B) CROWN-seq enriches reads that contain the TSN. The relative coverage of reads mapped to the TSS and non-TSS regions across the m7G-ppp-Am-initiated RNA standard was calculated. The average relative coverage of reads that map to the TSS and to non-TSS positions are shown for three technical replicates. The 95% CI of the relative coverages is shown using error bars. (C) CROWN-seq exhibits high quantitative accuracy for measuring m6Am stoichiometry. RNA standards were prepared with 0%, 25%, 50%, 75%, and 100% m6Am stoichiometry. To make m6Am standards in different m6Am levels, we generated both Am transcripts and m6Am transcripts by in vitro transcription with cap analogs m7G-ppp-Am and m7G-ppp-m6Am. Five transcripts were made in the Am and m6Am form and mixed to achieve the indicated m6Am stoichiometry. These transcripts have identical 5’ ends and different barcodes. Linear least-squares regression was performed to calculate the correlation between expected non-conversion rates and the observed average non-conversion rates for each standard. All TSNs shown in this plot have high sequencing coverage, ranging from 656 to 21,545 reads. (D) CROWN-seq results for SRSF1. CROWN-seq shows that 54.0% of SRSF1 transcripts initiate with A. Among the A-initiated transcripts, 93.4% were resistant to conversion (A’s, shown in green), and therefore m6Am. As a result, SRSF1 has 50.4% m6Am transcripts, 3.6% Am transcripts, and 46.0% non-A-initiated transcripts. Notably, a previous miCLIP study identified an internal m6A site (Linder et al., 2015) which we found was m6Am at the TSN based on CROWN-seq. (E) CROWN-seq results for JUN. CROWN-seq shows that ~58% of JUN transcripts initiate with A. Unlike SRSF1 which A-TSNs are highly methylated, JUN A-TSNs are only ~75% methylated. As a result, JUN has 43.5% m6Am transcripts, 14.5% Am transcripts, and 42% non-A-initiated transcripts. (F) CROWN-seq identifies most m6Am sites identified in previous studies. 7480 m6Am sites in HEK293T cells found either by miCLIP (Boulias et al., 2019), m6Am-seq (Sun et al., 2021), or m6ACE-seq (Koh et al., 2019) were analyzed. The high-confidence sites in CROWN-seq were defined as A-TSN with ≥20 unique mapped reads. The results shown are from HEK293T cells, which is the same cell line used in all previous studies. Among the 1,284 sites uniquely found in other studies, 811 sites are also mapped by CROWN-seq but at lower coverage (1–19 reads); 319 sites are mapped very far (>100 nt) away from any TSS annotation and thus can be considered as false positives; the remaining 154 sites are mapped very closely to known TSSs and may be false negative results in CROWN-seq. (G) Many A-TSNs identified in CROWN-seq in HEK293T cells are not annotated. In this analysis, A-TSSs in (F) were intersected with the TSS annotation in Gencode v45. Only 12.2% of A-TSSs found by CROWN-seq are previously annotated. (H) CROWN-seq exhibits high accuracy in TSN discovery. In this analysis, we compared the non-conversion of A-TSNs between wild-type and PCIF1 knockout cells. For the 6,457 A-TSNs annotated by Gencode v45, most of them have high non-conversion rates in wild-type cells and very low non-conversion rates in PCIF1 knockout cells, indicating correct TSN mapping. Similar to the annotated TSNs, 25,435 newly found A-TSNs were also found to have differential m6Am between wild-type and PCIF1 knockout. Thus, these newly found A-TSNs were also mostly true positives. In this analysis, only A-TSNs mapped by at least 20 reads in both wild-type and PCIF1 knockout HEK293T cells were used. (I) The previously identified m6Am sites are biasedly in higher expression and higher m6Am stoichiometry. Shown are the sequencing coverage (left) and non-conversion rates (right) of different sets of m6Am sites in HEK293T CROWN-seq data. In total, 98,147 sites found by CROWN-seq, 2129 sites found by miCLIP (Boulias et al., 2019), 3693 sites found by m6ACE-seq (Koh et al., 2019), and 1610 sites found by m6Am-seq (Sun et al., 2021) are shown. (J) CROWN-seq has much higher sensitivity in m6Am discovery than all existing m6Am mapping methods. In this analysis, sensitivity is defined as m6Am/A-TSN found per million mapped reads. For CROWN-seq, sensitivity was defined as the slope of linear regression result between sequencing depth and A-TSN number among different samples in this study (see Figure 2—figure supplement 1G). For other methods, sensitivity was defined as the number of reported m6Am sites over the number of reads in all libraries required for m6Am identification.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) GLORI can completely convert 5’ end Am in a transcript synthesized by in vitro transcription. Shown is the IGV plot demonstrating the coverage and individual reads mapped to the TSS of ERCC-00057–1-TCGTCG transcript. The reference sequence is also shown at the bottom. In this plot, the bases that match the reference are shown in gray, while G mismatches are shown in brown. The A-to-G mutation in the TSS position indicates successful A-to-I conversion during sodium nitrite treatment. In this assay, the 5’ Am in ERCC-00057–1-TCGTCG transcript was made by using m7GpppAmG analog during in vitro transcription (see Materials and methods). The ERCC-00057–1-TCGTCG transcript was decapped and spiked into the RNA sample for GLORI experiment. (B) GLORI underestimated m6Am stoichiometry in m6Am sites found by miCLIP. In this analysis, we reanalyzed the reads in HEK293T GLORI libraries (GSE210563) generated by Liu et al., 2023. To obtain the non-conversion rate of m6Am sites, we extracted the 5’ ends mapped to miCLIP sites found by Boulias et al., 2019 (GSE122948). 1084 and 1067 m6Am sites were analyzed in each replicate, respectively. (C) Only a few reads in GLORI can mapped to the desired TSS. In this analysis, we analyzed the GLORI mapping result of ERCC-00057–1-TCGTCG transcript in (A). We calculated the relative ratio of reads whose 5’ end mapped to not failed to map to the desired TSS of the ERCC-00057–1-TCGTCG. Only ~4.5% of the reads can be correctly mapped to the TSS. (D) A schema showing the reason why m6Am stoichiometry is incorrectly estimated in the transcriptome. In transcriptome, a gene can have multiple TSSs, whose 5’ ends can overlap with each other. As a result, the A-TSN from TSS-2 can also be transcribed as an internal A base in transcripts generated by TSS-1. During the GLORI experiment, 5’ cleavage happens very frequently, which results in massive 5’ ends from internal A’s. Since the GLORI library is unable to distinguish between the ‘true’ 5’ ends with m7G cap and the ‘false’ 5’ ends with monophosphate, both ‘true’ 5’ ends and ‘false’ 5’ ends are counted for TSS-2. Because most of the internal A’s are not N6-methylated, the ‘false’ 5’ ends will dilute the m6Am signal from the ‘true’ 5’ ends and result in underestimated m6Am stoichiometry. (E) CROWN-seq shows high reproducibility in m6Am identification. In the Venn diagram, four replicates of HEK293T CROWN-seq results were compared. Among the replicates, replicates #1 and #2 are two technical replicates of the same biological sample; while replicates #3 and #4 are the two technical replicates of another biological sample. In this analysis, A-TSNs with at least 20 reads mapped were included. Since replicate #1 and #2 have lower sequencing depth (~3 million reads each) than replicate #3 and #4 (~70 million reads each), the numbers of A-TSNs reported by replicate #1 and #2 are much lower than that by replicate #3 and #4. (F) Kernel density estimate (KDE) plot for the distribution of non-conversion rates of A-TSNs belonging to mRNA and snRNA/snoRNA reported by CROWN-seq. In this analysis, all sequencing results from HEK293T replicates were merged. Only A-TSNs with at least 20 reads were analyzed. (G) The distance between CROWN-seq identified TSSs and annotated TSSs in Gencode v45. In this plot, the TSSs identified in CROWN-seq replicate #3 were analyzed. 2,054,368, 333,959, 120,378, and 63,849 TSSs with 1–3, 3–19, 19–99, and ≥100 mapped reads were shown respectively. The percentage of TSSs well overlapped with annotation, as well as TSS located within the [–25, 25], [–50, 50], and [–100, 100] regions proximal to the annotated TSSs were also indicated. (H) Corresponding to Figure 2J, shown are the number of uniquely mapped reads (X-axis) and the number of called m6Am or A-TSN in different methods. For CROWN-seq, all libraries used in this study are shown in dots. We performed linear regression (shown in line) to calculate the sensitivity of CROWN-seq (i.e. the slope of linear regression) which is shown in Figure 2J. (I) CROWN-seq exhibited high TSS mapping accuracy in low-coverage sites. In this heatmap, each block represents A-TSNs with a certain number of A reads (i.e. m6Am reads) mapped in wild-type (Y-axis) and PCIF1 knockout (X-axis) HEK293T. Only A-TSNs have 3 reads mapped in wild-type and 3–39 mapped in PCIF1 knockout are shown. For example, shown in the upper left corner, there are 248 A-TSNs that have 3 A reads in wild-type (i.e. 100% non-conversion) and 0 A reads (i.e. 0% non-conversion) in PCIF1 knockout cells.
+
 To increase the accuracy of m6Am quantification, we made several optimizations to the ReCappable-seq protocol to markedly increase the read depth of TSNs. These include steps for on-bead adapter ligation and the introduction of unique molecular identifiers (UMIs) in the library preparation (see Materials and methods).
 
-## Benchmarking CROWN-seq using m6Am-modified standards
+### Benchmarking CROWN-seq using m6Am-modified standards
 
 To test TSN enrichment in CROWN-seq, we used a m7G-ppp-m6Am standard spiked into cellular mRNA. Among three technical replicates, we observed that ~93% of the reads mapped to the TSN (Figure 2B), confirming the enrichment of TSN. To further assess the enrichment of TSNs, we performed GLORI on the same sample. However, in GLORI only a few reads map to the TSN (Figure 2—figure supplement 1C). Thus, the decapping-and-recapping approach markedly enriches for TSNs.
 
 We next wanted to determine the quantitative accuracy of CROWN-seq. To test this, we performed CROWN-seq on a mixture of RNA standards with predefined ratios of m6Am and Am (see Materials and methods). We found a highly linear correlation between the expected m6Am levels and the observed non-conversion rates measured by CROWN-seq across three technical replicates (Pearson’s r=0.992, Figure 2C). Taken together, CROWN-seq achieves both precise TSS mapping and m6Am quantification in m6Am standards.
 
-## CROWN-seq markedly expands the number of mapped m6Am sites
+### CROWN-seq markedly expands the number of mapped m6Am sites
 
 To assess the ability of CROWN-seq to map and quantify m6Am throughout the transcriptome, we performed CROWN-seq on poly(A)-selected RNA from HEK293T. In total, we identified 219,195 high-confidence TSNs, of which 92,278 were A-TSNs (see Materials and methods). These TSNs were highly reproducible across biological and technical replicates (Figure 2—figure supplement 1E). Among the A-TSNs, 89,898 were from protein-coding genes, and 219 were from snRNA or snoRNA. Notably, among the mRNA A-TSNs, nearly all had high non-conversion rates (Figure 2—figure supplement 1F), indicating that nearly all A-TSNs contain high stoichiometry m6Am.
 
@@ -79,7 +99,7 @@ CROWN-seq clearly identified vastly more A-TSNs than all the other m6Am mapping 
 
 In contrast to m6Am sites identified in CROWN-seq, m6Am that were identified in previous m6Am mapping methods tended to derive from high abundance transcripts or high abundance TSNs (Figure 2I). Because of the high read depth at TSNs, CROWN-seq enables the detection of m6Am at more m6Am sites than previous methods (Figure 2J, Figure 2—figure supplement 1H). Although we used a 20-read cutoff for mapping m6Am, m6Am sites identified with fewer reads are also likely to represent true TSNs. These m6Am TSNs typically show high non-conversion (e.g. 2 or 3 reads among a total of 3 reads) in HEK293T cells but zero non-conversions in PCIF1 knockout cells (Figure 2—figure supplement 1I). The PCIF1 dependence of these sites is consistent with a true m6Am TSN and further highlights the sensitivity of CROWN-seq for mapping m6Am at TSNs.
 
-## CROWN-seq reveals consistently high m6Am stoichiometry in mRNA across diverse human cell lines
+### CROWN-seq reveals consistently high m6Am stoichiometry in mRNA across diverse human cell lines
 
 Although our data showed that m6Am in mRNA generally exhibits very high stoichiometry (Figure 2—figure supplement 1F), we considered the possibility that these results were unique to HEK293T cells. Several studies have shown that PCIF1 expression can vary considerably in different cell lines (Wang et al., 2023b; Li et al., 2023), which may indicate that m6Am stoichiometry is dependent on the cell line. We therefore wanted to determine the m6Am landscape across cell lines with varying levels of PCIF1.
 
@@ -89,11 +109,19 @@ For each cell line, we performed CROWN-seq using two to four biological/technica
 
 Quantification of m6Am across all TSNs showed that mRNA m6Am stoichiometry is generally high. For most of the cells, the average m6Am stoichiometry is 0.895±0.03 (Figure 3A), indicating high overall mRNA m6Am levels. Some cell lines, for example, Jurkat E6.1, HT-29, and Huh-7 cells show very high and less variable m6Am levels (0.933±0.1, 0.924±0.1, and 0.916±0.1, respectively); while other cell lines such as CCD841 CoN, HCT-116, and K-562 have relatively low and more variable m6Am levels (0.825±0.2, 0.877±0.1, and 0.891±0.1, respectively). It should be noted that in all cell lines, the m6Am stoichiometry is still high compared with other mRNA modifications (Liu et al., 2023).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig3-v1.jpg)
+
+**Figure 3.:** (A) Boxplot showing the overall mRNA m6Am levels (i.e., m6Am stoichiometry) among different cell lines. Only m6Am sites with ≥50 reads mapped in at least one cell line were analyzed. (B) mRNA m6Am stoichiometry is positively correlated with PCIF1 expression. In this plot, PCIF1 expression was estimated by the number of reads mapped to PCIF1 TSSs. The read counts were normalized into transcription-start nucleotide per million (TPM) for gene expression comparison. Three cell lines (CCD841 CoN, HCT-116, and HT-29) whose PCIF1 expression was estimated by western blots and RT-qPCR by Wang et al., 2023b are highlighted. Pearson’s r and p-value in this analysis were obtained by linear regression. (C) Overall mRNA m6Am stoichiometry is not correlated with CTBP2 expression. Similar to (B), CTBP2 expression was estimated by CROWN-seq. Four cell lines with very low CTBP2 expression are highlighted. (D) Some A-TSNs have relatively low and more variable m6Am stoichiometry among cell lines. In this plot, the variability of the m6Am stoichiometry of a site, which is defined as the maximum m6Am subtracted by the minimum m6Am stoichiometry among all cell lines is shown on the X-axis; the average m6Am level of a site among all cell lines is shown on the Y-axis. Several example genes are indicated in different colors. (E) Boxplots and dotplots showing the m6Am levels of different A-TSNs in JUN, ENO1, MYC, and ACTB. These genes contain A-TSNs with relatively low m6Am stoichiometry. In this plot, the exact m6Am levels of individual A-TSNs are shown in dots, while the median and IQR of the m6Am levels are shown in boxplots. Only m6Am sites with ≥50 reads mapped were analyzed. (F) Gene Ontology enrichment (Cellular Components) of genes containing lowly methylated m6Am sites. (G) A-TSNs in histone genes tend to have relatively low m6Am stoichiometry. In this plot, histone genes are categorized by their genomic localizations. Histone gene cluster 6p22.1–2 and 1q21.1–2 are the two major histone gene clusters. For histone gene cluster 6p22.1–2, 55–173 A-TSNs are shown in different cell lines; for histone gene cluster 1q21.1–2, 9–14 A-TSNs are shown; for other histone genes, 24–109 A-TSNs are shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Several cell lines exhibit low CTBP2 expression. Shown are normalized RNA expression results from the Human Protein Atlas (https://www.proteinatlas.org) (Uhlén et al., 2015). (B) The 50 reads threshold yields highly correlated non-conversion rates among replicates. Shown are the pairwise comparisons of non-conversion rates of A-TSNs quantified in different HEK293T replicates. In this analysis, A-TSNs were required to have at least 50 reads mapped. As a result, the A-TSNs in different replicates have median read counts of 105–149. High correlations (Pearson’s r) in non-conversion rates were found between replicates. (C) RNA secondary structure is unlikely to affect m6Am quantification accuracy in CROWN-seq. Shown are the non-conversion rates of A-TSNs grouped by the degrees of RNA secondary structure in PCIF1 knockout HEK293T cells, which have no m6Am in mRNA. To obtain the degree of RNA secondary structure of each 5’ end, we calculated the minimum free energy of A-TSN plus the first 30 nt downstream sequence by RNAfold (Lorenz et al., 2011). 18,235 A-TSNs were binned into 10 bins based on the quantile of minimum free energy. For each bin (from left to right), the medium minimum free energies are −11.4,–9.2, −7.9,–6.9, −6.0,–5.3, −4.5,–3.6, –2.6, and –0.9 kJ/mol. (D) Comparing median mRNA m6Am stoichiometry and PCIF1 expression estimated by RT-qPCR. In this assay, RT-qPCR on PCIF1 and GADPH transcripts was performed among all nine different cell lines. The relative expression levels of PCIF1 were normalized by the expression of GAPDH. Linear regression was performed to obtain Pearson’s r and P-value. (E) Boxplots showing the m6Am levels of HOX genes among different cell lines. (F) Histone genes in cluster 6p22.1–2 exhibited distinct sequence context in the core promoter. Shown are the flanking sequences of the 146,285 A-TSN that annotated in Gencode v45 (upper left), 104,733 A-TSNs mapped to protein-coding genes in CROWN-seq (upper right), 228 histone genes in cluster 6p22.1–2 (lower left), and 119 histone genes not in neither cluster 6p22.1–2 nor 1q21.1–2 (lower left). Since a few (14) A-TSNs were found in cluster 1q21.1–2, A-TSNs in cluster 1q21.1–2 are not shown.
+
 We considered the possibility that the high m6Am stoichiometry might be caused by RNA structure that blocks access to sodium nitrite leading to non-conversion. However, essentially complete conversion was seen in PCIF1 knockout HEK293T cells, which makes it likely that m6Am is the cause of non-conversions. Also, we found that A-TSNs completely converted in 5’ ends predicted to be highly structured, suggesting that RNA structure does not impair conversion in CROWN-seq (Figure 3—figure supplement 1C).
 
 The differences in m6Am stoichiometry are related to PCIF1 expression (Figure 3B, Figure 3—figure supplement 1D). For example, CCD841 CoN cells, which have very low PCIF1 expression based on our measurements (Figure 3B, Figure 3—figure supplement 1D) and previous measurements (Wang et al., 2023b), exhibit the lowest median m6Am stoichiometry at ~0.878. However, even this stoichiometry is still relatively high. Thus, m6Am levels are affected by PCIF1 expression, but m6Am can be considered as a high stoichiometry modification across all tested cell lines. On the other hand, the proposed PCIF1 coactivator CTBP2, exhibited a weak correlation to mRNA m6Am (Figure 3C).
 
-## Several mRNAs show low m6Am stoichiometry
+### Several mRNAs show low m6Am stoichiometry
 
 Although most A-TSNs in mRNA exhibit high m6Am stoichiometry, some exhibit stoichiometry below 0.8, and even below 0.5 (Figure 3A). To identify A-TSNs with low m6Am, we examined each A-TSN and calculated its average stoichiometry across all cell lines (Figure 3D). For each A-TSN, we also assessed its variability by calculating the range of m6Am levels measured across cell lines (Figure 3D). This analysis demonstrates that a significant subset of A-TSNs have low stoichiometry, with some showing variability depending on the cell type. For example, JUN contains a lowly methylated A-TSN, as shown above in HEK293T cells (Figure 2E), and also exhibits low stoichiometry in many other cell lines (Figure 3E). In addition, ENO1, MYC, and ACTB also show low m6Am stoichiometry in some of their A-TSNs (Figure 3E).
 
@@ -101,11 +129,19 @@ We next used Gene Ontology (GO) analysis to determine if the low m6Am A-TSNs are
 
 Among all different gene categories, histone genes exhibited the lowest overall m6Am stoichiometry (Figure 3G). Notably, histone genes have unique mechanisms of gene expression. Many histone genes are located in gene clusters (i.e. clusters 6p22.1–2 and 1q21.1–2) and transcribed in histone locus bodies (Marzluff and Koreski, 2017). These clustered histone genes tend to contain upstream TATA-box and downstream T-rich sequences (Figure 3—figure supplement 1F). In contrast, non-clustered histone genes tend to have high m6Am stoichiometry (Figure 3G) and show different promoter sequence contexts (Figure 3—figure supplement 1F). This data suggests that transcription mechanisms might be important for determining m6Am stoichiometry.
 
-## m6Am stoichiometry is linked to the sequence of core promoter
+### m6Am stoichiometry is linked to the sequence of core promoter
 
 The differential methylation in histone genes based on their transcription mechanisms raises the possibility that transcription initiation mechanisms might affect m6Am stoichiometry. Because m6Am is the first nucleotide in mRNA, its deposition may be highly influenced by early transcription events. Notably, PCIF1 binds to RNA polymerase II (Fan et al., 2003) and is enriched in promoter regions (Sugita et al., 2021), which may be important for methylation of the 5’ end of mRNAs. We therefore considered the possibility that different transcription mechanisms may be linked to different levels of m6Am.
 
 As a first test, we examined whether nucleotide preferences upstream (which would reflect sequences involved in transcription initiation) or downstream of the A-TSN are linked to m6Am stoichiometry. We binned A-TSNs based on the m6Am stoichiometry and examined nucleotide preferences at each position. Using this approach, we found that the nucleotides upstream of the A-TSN were markedly different for A-TSNs with low vs. high m6Am stoichiometry (Figure 4—figure supplement 1A). For example, at positions –4 and –1, there was a clear positive correlation between the use of C and m6Am stoichiometry (Figure 4A). The correlation of these nucleotide positions that lie in the promoter region to m6Am stoichiometry suggests that transcriptional mechanisms might influence m6Am stoichiometry.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig4-v1.jpg)
+
+**Figure 4.:** (A) m6Am stoichiometry is related to base composition in both upstream and downstream of A-TSNs. In these plots, 58,723 A-TSNs are grouped into twenty 5-percentile bins (X-axis). For each bin, the frequency of A, T, C, and G bases at each position relative to the A-TSN are plotted on the Y-axis. Among different positions in the promoter region, C’s in −4,–1, and +3, as well as G’s in +2 are positively correlated with high m6Am; while A’s in +2 are negatively correlated with high m6Am. Results for other promoter positions can be found in Figure 4—figure supplement 1A. (B) Motif analysis of A-TSNs with the lowest 5% m6Am stoichiometry (upper) and the A-TSNs with the highest 5% m6Am stoichiometry (lower). The core promoter region (–40 to +41) was screened for enriched motifs. The lowest 5% A-TSNs exhibited a VA+1RR TSS (V=A/C/G, R=A/G) motif, while the highest 5% A-TSNs exhibited a SSCA+1GC (S=C/G) motif. The sequence contexts for all A-TSNs are shown in Figure 3—figure supplement 1F. (C) A-TSNs expressed from different core promoters exhibit different m6Am stoichiometry. Core promoters containing the VA+1RR motif produce transcripts with relatively low m6Am stoichiometry. Transcripts using the SSCA+1GC motif exhibited relatively high m6Am stoichiometry. In comparison, the m6Am stoichiometry in conventional A-TSNs from either BBCA+1BW or BA+1 is also shown and exhibits intermediate m6Am stoichiometry. In this analysis, 14,788, 7981, 34,578, and 1376 A-TSNs were used for each of the four motifs. p-values, Student’s t-test, two-sided. (D) TATA-box containing core promoters exhibit relatively low m6Am stoichiometry. For this analysis, the TATA-box is defined as TATAWAWR (Haberle and Stark, 2018). Because many TATA-boxes found in our A-TSN dataset are outside the classic –31 to –24 region, we extended the region for the TATA-box search to –36 to –19. Since histone genes preferentially contain TATA box, we separately plotted TATA-box-containing histone genes (N=155) and TATA-box-containing non-histone genes (N=28). 58,540 A-TSNs without TATA-box are also shown. p-values, Student’s t-test, two-sided.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Corresponding to Figure 4A, the base preference in –10 to +11 core promoter region of the 58,723 A-TSNs in HEK293T cell. To examine the correlation between m6Am stoichiometry and base compositions, we equally binned the A-TSNs by m6Am stoichiometry into twenty 5-percentile bins. For each bin, the frequency of A, T, C, and G bases are shown. (B) A pie plot showing the fractions of A-TSNs using different TSS motifs. In this plot, 58,723 A-TSNs in HEK293T cells are shown, where 1376 are from the SSCA+1 GC motif, 7981 are from BBCA+1BW motif, 14,788 are from VA+1RR motif, and 34,578 are from BA+1 motif. (C) Examining the relationship between core promoter elements and m6Am stoichiometry. In this analysis, core promoter elements (BREu, BREd, and DCE) were defined according to the description by Haberle and Stark, 2018 (indicated as ‘True’). BREu-containing promoters were defined as promoters that contain SSRCGCC (S=C/G, R=A/G) at –38 to –32; BREd-containing promoters were promoters that contain RTDKKKK (D=A/G/T, K=G/T) at –23 to –17; DCE containing promoters were defined as promoters which contain CTTC at +6 to+11, or CTGT at +16 to+21, or AGC at +30 to+34. Among these elements, BREu and BREd are related to TFIIB binding, while DCE is related to TAF1 binding (Haberle and Stark, 2018). (D, E), Examples of m6Am stoichiometry for A-TSNs containing specific transcription factor-binding sites. In this analysis, m6Am stoichiometry of the 58,723 A-TSNs in HEK293T was used; transcription factor-binding sites within the –50 to +51 region were identified by FIMO (Grant et al., 2011) based on the HOCOMOCO v11 core motifs database (Kulakovskiy et al., 2018). Transcripts containing NANOG and FOXJ3-binding sites (indicated as ‘True’) exhibit relatively lower m6Am stoichiometry, while SP2 and KLF4-binding sites are associated with higher relative m6Am stoichiometry. The overall effect size is relatively small, which suggests that transcription factors may not have large effects on m6Am stoichiometry. p-values, Student’s t-test, two-sided. (F) Some transcription factor binding sites (TFBS) are related to higher or lower m6Am stoichiometry. In this figure, the top 20 and bottom 20 m6Am-related TFBS are shown. The m6Am stoichiometry and the –50 to +51 sequence of the 58,723 A-TSNs in HEK293T cells were analyzed. FIMO (Grant et al., 2011) was used to scan for core motifs in the HOCOMOCO v11 database. Only TFBS occurred in the flanking sequence of at least 200 A-TSNs are shown.
 
 We also observed strong nucleotide preferences at positions downstream of the A-TSN. These include nucleotide preferences at +2 (Figure 4A). These could reflect sequence preferences for PCIF1; however, this position is also part of transcription-initiation motifs (see below), and thus the contribution of transcription mechanisms and direct sequence preferences of PCIF1 are difficult to deconvolve.
 
@@ -119,15 +155,23 @@ We next analyzed the relationship between m6Am and transcription factor-binding 
 
 Taken together, our data show a linkage between transcriptional mechanisms and m6Am stoichiometry.
 
-## m6Am does not substantially influence mRNA stability or translation
+### m6Am does not substantially influence mRNA stability or translation
 
 Previous studies sought to determine the effect of m6Am on mRNA stability and translation based on gene-level annotations of the starting nucleotide (Akichika et al., 2019; Boulias et al., 2019; Mauer et al., 2017; Zhang et al., 2019). However, the gene level annotations do not take into account the potential for many transcription-start nucleotides (Figure 1—figure supplement 2). Rather than using a binary metric of m6Am or non-m6Am, we developed a metric that reports the fraction of all TSNs for each gene that contains m6Am. This ‘m6Am gene index’ is the ratio of m6Am TSNs over all TSNs, as measured by CROWN-seq, for each gene. Using the m6Am gene index, we reanalyzed the previously published translation efficiency (Akichika et al., 2019; Boulias et al., 2019) and RNA stability (Boulias et al., 2019) data in HEK293T cells. We found that genes with low or high m6Am gene index do not show differences in translation (Figure 5—figure supplement 1A, B) or RNA stability (Figure 5—figure supplement 1C) in PCIF1 knockout cells compared to wild-type.
 
-## m6Am is involved in efficient transcription of A-initiated transcripts
+### m6Am is involved in efficient transcription of A-initiated transcripts
 
 We next wanted to examine other potential functions of m6Am. Although we found no clear effect of m6Am on mRNA stability, we asked if m6Am influences transcript expression levels. To test this, we quantified the abundance of each A-TSN isoform in HEK293T and A549 cells. For these experiments, we added a mixture of pre-capped ERCC spike-ins (see Materials and methods) to the RNA samples before performing TSN expression quantification by ReCappable-seq. This ERCC spike-in mixture calibrates sequencing results and increases TSN expression quantification accuracy (see Materials and methods).
 
 In this analysis, we binned A-TSNs into percentiles based on their m6Am stoichiometry. Here, we could see that transcripts with the highest levels of m6Am also exhibited the highest overall expression levels (Figure 5A, Figure 5—figure supplement 1D). This suggests that m6Am is associated with higher transcript expression.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig5-v1.jpg)
+
+**Figure 5.:** (A) m6Am stoichiometry is positively related to A-TSN expression in wild-type HEK293T cells. In this cumulative distribution plot, the expression of each A-TSN was quantified by ReCappable-seq, for all A-TSNs in each indicated m6Am stoichiometry bin. A-TSNs (n=58,723) were grouped into five bins based on m6Am stoichiometry quantified by CROWN-seq. In total, 5125, 6962, 7991, 8368, and 8009 A-TSNs are shown in each bin (from low m6Am to high m6Am). These A-TSNs have an average TPM ≥1 in two ReCappable-seq replicates and coverage ≥50 in CROWN-seq. p-values, Student’s t-test for TPM (log-transformed), two-sided. (B) The expression level of high m6Am stoichiometry A-TSNs is reduced in PCIF1 knockout. Shown is a cumulative distribution plot of A-TSN expression change in HEK293T cells upon PCIF1 knockout. The differential expression of A-TSN was calculated by DESeq2 (Love et al., 2014). Similar to (A), the A-TSNs were binned based on the m6Am stoichiometry. In total, 3269, 2272, 3218, 3813, and 3369 A-TSNs are shown in each bin (from low m6Am to high m6Am). A-TSNs with a baseMean (i.e. the average of the normalized count among replicates) ≥100 were used in the differential expression test (two replicates were used for both wild-type and PCIF1 knockout) and coverage ≥50 reads in CROWN-seq. p-values, Student’s t-test, two-sided. (C) Shown are cumulative distribution plots of expression changes of A-TSNs and G-TSNs after PCIF1 depletion. 14,516 A-TSNs and 9667 G-TSNs with expression levels quantified by ReCappable-seq are shown. These A-TSNs and G-TSNs have baseMean ≥ 100 during the differential expression test. p-values, Student’s t-test, two-sided. (D) Similar to (B), A-TSNs that use different TSS motifs exhibit different changes in expression upon PCIF1 knockout. In total, 352 A-TSNs using SSCA+1GC, 7928 A-TSNs using BA+1, 2958 A-TSNs using BBCA+1BW, and 2760 A-TSNs using VA+1RR are shown. These A-TSNs have baseMean ≥ 100 during differential expression test (two replicates for both wild-type and PCIF1 knockout) and coverage ≥50 reads in CROWN-seq. p-values, Student’s t-test, two-sided.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) PCIF1 knockout did not alter translation efficiency in HEK293T cells. Shown are ribosome profiling results by Akichika et al., 2019. In this analysis, 3325 genes were equally binned into quantiles by gene m6Am index. p-values, Student’s t-test, two-sided. (B) PCIF1 knockout did not alter translation efficiency in HEK293T cells. Shown are ribosome profiling results by Boulias et al., 2019. In this analysis, 637 genes were equally binned into quantiles by gene m6Am index. p-values, Student’s t-test, two-sided. (C) PCIF1 knockout did not alter RNA stability in HEK293T cells. Shown are RNA half-life results estimated by SLAM-seq by Boulias et al., 2019. In this analysis, 666 genes were equally binned into quantiles by gene m6Am index. p-values, Student’s t-test, two-sided. (D) m6Am stoichiometry is positively related to A-TSN expression in wild-type A549 cells. In this cumulative distribution plot, A-TSNs with expression quantified by ReCappable-seq in different m6Am stoichiometry bins are shown. To group different A-TSNs, we first binned 58,723 A-TSNs into five bins based on m6Am stoichiometry quantified by CROWN-seq. Then the A-TSNs detected in ReCappable-seq were annotated by the predefined bins. In total, 5125, 6962, 7991, 8368, and 8009 A-TSNs are shown in each bin (from low m6Am to high m6Am). These A-TSNs have an average TPM ≥1 in two ReCappable-seq biological replicates and coverage ≥50 in CROWN-seq. p-values, Student’s t-test for TPM (log-transformed), two-sided. (E) A-TSNs in high m6Am stoichiometry are more susceptible to PCIF1 knockout. Shown are the cumulative distributions of A-TSN expression change in A549 cells upon PCIF1 knockout. The differential expression of A-TSN was calculated by DESeq2 (Love et al., 2014). Similar to (D), the A-TSNs were binned based on the m6Am stoichiometry. In total, 481, 738, 973, 1212, and 1087 A-TSNs are shown in each bin (from low m6Am to high m6Am). These A-TSNs have baseMean (i.e. the average of the normalized count among replicates) ≥100 during the differential expression test (2 biological replicates for both wild-type and PCIF1 knockout) and coverage ≥50 in CROWN-seq. p-values, Student’s t-test, two-sided. (F) Shown are cumulative distributions of expression changes of A-TSNs and G-TSNs. 4975 A-TSNs and 3510 G-TSNs with expression levels quantified by ReCappable-seq are shown. These TSNs have an average baseMean ≥ 100 of two replicates. p-values, Student’s t-test, two-sided. (G) Similar to (F), A-TSNs using different TSS motifs exhibited different changes in expression upon PCIF1 knockout. In total, 135 A-TSNs using SSCA+1GC, 2.502 A-TSNs using BA+1, 1131 A-TSNs using BBCA+1BW, and 723 A-TSNs using VA+1RR are shown. These A-TSNs have baseMean ≥ 100 during the differential expression test (two biological replicates for both wild-type and PCIF1 knockout) and coverage ≥50 in CROWN-seq. p-values, Student’s t-test, two-sided.
 
 To determine if m6Am causes the increased expression of A-TSN transcripts, we measured the expression change for each A-TSN in wild-type and PCIF1 knockout HEK293T and A549 cells. We found that A-TSNs with higher m6Am stoichiometry exhibit significantly reduced expression in PCIF1 knockout, while A-TSNs with the lowest m6Am stoichiometry were almost unchanged (Figure 5B, Figure 5—figure supplement 1F). In contrast, G-TSNs were slightly increased in PCIF1 knockout cells (Figure 5C, Figure 5—figure supplement 1F). These data suggest that m6Am promotes the expression of A-TSN transcripts.
 
@@ -137,17 +181,25 @@ An important difference between A-TSN in different bins is that they tend to use
 
 Taken together, these data suggest that the effect of m6Am is not related to mRNA stability but instead is related to transcription. Our data suggest that certain transcription initiation complexes, such as those that use the SSCA+1GC motif, rely on m6Am for efficient expression. However, other TSS motifs do not rely as strongly on m6Am to achieve efficient expression. These data suggest that m6Am may have important roles in the transcription processes.
 
-## CROWN-seq reveals diverse m6Am stoichiometry in snRNA and snoRNA
+### CROWN-seq reveals diverse m6Am stoichiometry in snRNA and snoRNA
 
 In addition to mRNAs, m6Am is also found on snRNAs and snoRNA (Mauer et al., 2019; Koh et al., 2019). However, the stoichiometry and dynamics of m6Am in these RNAs are unknown. Using CROWN-seq we quantified m6Am stoichiometry in several snRNAs, including U1, U2, U4, U4ATAC, U5, U7, U11, and U12. These snRNAs are transcribed by RNA polymerase II (Kiss, 2004), are capped, and use A-TSNs (Mauer et al., 2019). Among these snRNAs, we identified 51 m6Am sites, of which 29 were unannotated 5’ variants located close to the annotated TSNs.
 
 Compared with mRNA, m6Am in snRNA exhibited a very different distribution of stoichiometry (Figure 2—figure supplement 1F). First, snRNA m6Am sites exhibited generally low m6Am stoichiometry, typically below 0.3. Second, m6Am stoichiometry between different snRNA genes was much more variable than in mRNA (Figure 6A). Third, some snRNA genes show highly variable stoichiometry in different cell lines.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig6-v1.jpg)
+
+**Figure 6.:** (A) Heatmaps showing m6Am stoichiometry in different snRNA gene families and isoforms. Cell lines in the column are ranked by the overall mRNA m6Am stoichiometry. The name of each snRNA isoform is shown on the right. A-TSNs already annotated in Gencode v45 are highlighted in bold. For newly found A-TSNs, the relative distance between the new A-TSN and the nearest annotated A-TSN is shown in brackets. Note that Gencode v45 contains snRNA annotation from different databases. For example, RNU1-4 and U1.22 are both U1 snRNA, however, RNU1-4 is from the HGNC database and U1.22 is from the RFAM database. (B) Similar to (A), Heatmaps show the m6Am stoichiometry in different snoRNA isoforms. (C, D), snRNA methylation levels are not well correlated with PCIF1 expression, but negatively correlated with FTO expression. The RNA expression levels of PCIF1 and FTO were estimated by reading counts in CROWN-seq, which were converted into TPM to normalize the sequencing depth. Linear regressions were performed to obtain Pearson’s r and p-value of the correlations. (E) FTO depletion leads to increased m6Am level (i.e. m6Am stoichiometry) in many kinds of snRNA and snoRNA. In this plot, the difference in m6Am levels between wild-type and FTO knockout cells is shown in the first row. The exact m6Am levels in FTO knockout and wild-type cells are shown in the second and third rows. Different kinds of snRNA and snoRNA are shown in different colors. (F) FTO depletion leads to increased m6Am stoichiometry in snRNA and snoRNA pseudogenes. In this plot, shown are the annotated pseudogenes of U1, U2, U4, U5, and 7SK, as well as the newly identified snRNA/snoRNA pseudogenes in intronic and intergenic regions. Several mRNAs exhibited 5’ ends resembling snRNA pseudogenes. However, these snRNA-like mRNA 5’ ends showed high and stable m6Am stoichiometry in both wild-type and FTO knockout cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104139/elife-104139-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) FTO expression correlates weakly to mRNA m6Am stoichiometry. Shown are FTO expression measured by CROWN-seq (X-axis) and median mRNA m6Am levels among nine different cell lines. (B) FTO depletion causes small changes in mRNA m6Am stoichiometry. In this scatter plot, only mRNA A-TSNs which have at least 50 reads in both wild-type and FTO knockout cells were shown. m6Am levels were estimated by CROWN-seq. (C) The internal m6A sites identified by both CROWN-seq and GLORI (Liu et al., 2023) showed a classic DRACU motif. (D, E) FTO knockout showed a subtle effect in changing the stoichiometry of internal m6A around 5’ ends. Shown are (D) a scatter plot comparing m6A stoichiometry between wild-type and FTO knockout cells, and (E) a boxplot showing the overall m6A stoichiometry difference. In (E), Student’s t-test (two-sided) was performed to calculate the significance of the difference in m6A stoichiometry.
+
 For example, among U1 snRNA genes, U1.22 exhibited relatively high m6Am levels (~0.47–0.80) in all cell lines, while RNU1-3 and RNU1-4 show relatively low m6Am levels (~0.09–0.45, Figure 6A). U5 snRNAs have the highest variability m6Am stoichiometry between cell types (Figure 6A). The U5 snRNA isoform RNU5E-1 varies 31.6-fold in the m6Am level between HEK293T (0.0185) and Jurkat E6.1 cells (0.586). In contrast, m6Am in U2 and U7 snRNA are generally high (at 0.35–0.76 and 0.48–0.89, respectively) and not variable between cell lines (Figure 6A).
 
 In addition to snRNA, we also examined 17 A-TSNs in C/D box snoRNA including U3, U8, and U13. These snoRNAs are involved in rRNA 2’-O-methylation during pre-rRNA processing (Huang et al., 2022). m6Am stoichiometry in snoRNA is highly related to snoRNA species and snoRNA isoform. For example, among different U3 snoRNA isoforms, A-TSNs of U3.18 have much higher m6Am stoichiometry than others (e.g. SNORD3A; Figure 6B). These data indicate that snoRNA also has highly variable m6Am stoichiometry.
 
-## FTO specifically controls m6Am stoichiometry in snRNA and snoRNA
+### FTO specifically controls m6Am stoichiometry in snRNA and snoRNA
 
 We next sought to understand why m6Am stoichiometry is low in snRNA and snoRNA. We considered the possibility that the overall m6Am stoichiometry in snRNA is correlated with PCIF1 expression, as we saw with mRNA (Figure 3B). However, we found a poor correlation of overall m6Am stoichiometry in snRNA with PCIF1 expression (Pearson’s r=0.204, p-value = 0.597, Figure 6C).
 
@@ -159,7 +211,7 @@ Notably, FTO depletion does not increase m6Am levels in snRNA and snoRNA to the 
 
 We also found FTO demethylates m6Am in snRNA pseudogenes. Overall, we mapped 69 A-TSNs in annotated snRNA/snoRNA pseudogenes. These pseudogenes exhibited increased methylation upon FTO knockout (Figure 6F). We also identified 202 snRNA/snoRNA pseudogene-like transcripts. These transcripts exhibited very high similarity to the annotated snRNA/snoRNA pseudogenes, and therefore likely reflect previously unannotated pseudogenes (see Materials and methods). Upon FTO knockout, A-TSNs in these unannotated pseudogenes also exhibited increased m6Am levels (Figure 6F).
 
-## FTO has minimal effects on m6Am and m6A at 5’ ends of mRNA
+### FTO has minimal effects on m6Am and m6A at 5’ ends of mRNA
 
 We next asked whether FTO levels affect m6Am levels in mRNA. To address this question, we compared FTO RNA expression and median mRNA m6Am stoichiometry in all nine cell lines. This analysis shows a weak negative correlation between FTO expression and mRNA m6Am (Pearson’s r=–0.239, p-value = 0.535, Figure 6—figure supplement 1A).
 
@@ -195,7 +247,7 @@ Although most studies of m6Am and PCIF1 focus on mRNAs, we find that m6Am in snR
 
 Notably, m6Am in snRNA is highly regulated by FTO, which is consistent with our earlier findings (Mauer et al., 2019). However, the previous study did not have transcript isoform level resolution in analyzing the effect of FTO demethylation. With CROWN-seq, we find that FTO has markedly different effects on different snRNAs, where some snRNAs appear highly demethylated by FTO while others are insensitive to FTO. Some snoRNA, and snRNA/snoRNA pseudogenes are also demethylated by FTO. Notably, FTO depletion affects numerous aspects of cell function (Mauer and Jaffrey, 2018). Our results thus raise the possibility that FTO-depletion phenotypes may result from increased m6Am levels in snRNAs, snoRNAs, or their pseudogenes.
 
-## Limitations of the study
+### Limitations of the study
 
 One limitation of CROWN-seq is that it can be difficult to align sequencing reads to the genome. Unlike normal reads, which contain A, G, C, and U, most reads in CROWN-seq comprise only G, C, and U due to the conversion of A’s. This makes it difficult to align reads to highly similar genes, such as snRNA isoforms and pseudogenes which have very similar 5’ ends. For this reason, only a small fraction of reads from snRNA and pseudogenes were uniquely mapped to one genomic location and were used in this analysis. To better understand m6Am in these 5’ ends with similar sequences, future optimization is desired to increase the read lengths, which can help distinguish these sequences from each other. This requires technical innovations in reducing RNA fragmentation during sodium nitrite conversion, which comes from acid-catalyzed depurination and backbone cleavage (Mahdavi-Amiri et al., 2021).
 
@@ -205,47 +257,358 @@ The last limitation of this study is that the focus of this study was to quantif
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Cell lines
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>PCIF1</td>
+      <td>Enesmbl</td>
+      <td>ENSG00000100982</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>FTO</td>
+      <td>Enesmbl</td>
+      <td>ENSG00000140718</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T, PCIF1 knockout</td>
+      <td>Boulias et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T, FTO knockout</td>
+      <td>Mauer et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A549, PCIF1 knockout</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HepG2</td>
+      <td>ATCC</td>
+      <td>HB-8065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Huh-7</td>
+      <td>ThermoFisher</td>
+      <td>huh 7 Cells</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Jurkat E6.1</td>
+      <td>ATCC</td>
+      <td>TIB-152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>K-562</td>
+      <td>ATCC</td>
+      <td>CCL-243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>CCD841 CoN</td>
+      <td>ATCC</td>
+      <td>CRL-1790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HCT-116</td>
+      <td>ATCC</td>
+      <td>CCL-247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HT-29</td>
+      <td>ATCC</td>
+      <td>HTB-38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ReCappable-seq 5' adapter (11 N)</td>
+      <td>IDT</td>
+      <td>RNA adapter</td>
+      <td>rCrCrUrArCrArCrGrArCrGrCrUrCrUrUrCrCrGrArUrCrUrNrNrNrNrNrNrNrNrNrNrNrArUrArU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ReCappable-seq 3' adapter</td>
+      <td>IDT</td>
+      <td>DNA adapter</td>
+      <td>/5rApp/WWAGATCGGAAGAGCACACGTC/3ddC/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CROWN-seq 5' adapter (8 N)</td>
+      <td>IDT</td>
+      <td>RNA adapter</td>
+      <td>rCrCrUrArCrArCrGrArCrGrCrUrCrUrUrCrCrGrArUrCrUrNrNrNrNrNrNrNrNrArUrArU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CROWN-seq 5' adapter (11 N)</td>
+      <td>IDT</td>
+      <td>RNA adapter</td>
+      <td>rCrCrUrArCrArCrGrArCrGrCrUrCrUrUrCrCrGrArUrCrUrNrNrNrNrNrNrNrNrNrNrNrArUrArU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CROWN-seq 3' adapter</td>
+      <td>IDT</td>
+      <td>RNA adapter</td>
+      <td>/5’rApp/AGATCGGAAGAGCACACGTCTGAACTCCAGTCACAAAAAAAAAAAAAAACCCCCCCCCCAAAAAAAAAAAAAAA/3AmMO/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ReCappable-seq/ CROWN-seq RT primer</td>
+      <td>IDT</td>
+      <td>RT primer</td>
+      <td>GACGTGTGCTCTTCCGATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GLORI 5' adapter (11 N)</td>
+      <td>IDT</td>
+      <td>RNA adapter</td>
+      <td>rCrCrUrArCrArCrGrArCrGrCrUrCrUrUrCrCrGrArUrCrUrNrNrNrNrNrNrNrNrNrNrNrArUrArU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GLORI 3' adapter</td>
+      <td>IDT</td>
+      <td>DNA adapter</td>
+      <td>/5rApp/AGATCGGAAGAGCACACGTC/3AmMO/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GLORI RT primer</td>
+      <td>IDT</td>
+      <td>RT primer</td>
+      <td>GACGTGTGCTCTTCCGATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCIF1_qPCR_F</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>GGAGAATCGTCCCTACTACTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCIF1_qPCR_R</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>GCTTTCTGGGCTTGTTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_qPCR_F</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>GTGGACCTGACCTGCCGTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_qPCR_R</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>GGAGGAGTGGGTGTCGCTGT</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2</td>
+      <td>Kim et al., 2019</td>
+      <td>RRID:SCR_015530</td>
+      <td>v2.2.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UMI-tools</td>
+      <td>Smith et al., 2017</td>
+      <td>RRID:SCR_017048</td>
+      <td>v1.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDtools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td>RRID:SCR_006646</td>
+      <td>v2.27.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools</td>
+      <td>Li et al., 2009</td>
+      <td>RRID:SCR_002105</td>
+      <td>v1.16.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python3</td>
+      <td>Python</td>
+      <td>RRID:SCR_008394</td>
+      <td>v3.8.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R</td>
+      <td>RRID:SCR_001905</td>
+      <td>v4.2.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>numpy</td>
+      <td>PyPI</td>
+      <td>RRID:SCR_008633</td>
+      <td>v1.23.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pandas</td>
+      <td>PyPI</td>
+      <td>RRID:SCR_018214</td>
+      <td>v1.5.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scipy</td>
+      <td>PyPI</td>
+      <td>RRID:SCR_008058</td>
+      <td>v1.93</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pysam</td>
+      <td>Li et al., 2009</td>
+      <td>RRID:SCR_021017</td>
+      <td>v0.19.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td>RRID:SCR_015687</td>
+      <td>v1.38.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RUVSeq</td>
+      <td>Risso et al., 2014</td>
+      <td>RRID:SCR_006263</td>
+      <td>v1.38.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GLORI analysis pipeline</td>
+      <td>This paper</td>
+      <td></td>
+      <td>v1.0; https://github.com/jhfoxliu/GLORI_pipeline</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ReCappble-seq analysis pipeline</td>
+      <td>This paper</td>
+      <td></td>
+      <td>v1.0; https://github.com/jhfoxliu/ReCappable-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CROWN-seq analysis pipeline</td>
+      <td>This paper</td>
+      <td></td>
+      <td>v1.0; https://github.com/jhfoxliu/CROWN-seq</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Cell lines
 
 HEK293T, A549, Jurkat E6.1, HCT-116, HT-29, CCD841 CoN, K562, and HepG2 were purchased from ATCC (American Type Culture Collection). Huh-7 was purchased from Thermo Fisher. PCIF1 knockout, and FTO knockout cells were generated by CRISPR knockout, validated by Western blots and m6Am TLC. The identities of the cell lines were authenticated by STR profiling. No mycoplasma contamination was detected.
 
 HEK293T (wild-type, PCIF1 knockout, and FTO knockout cells), A549 (wild-type and PCIF1 knockout), HCT-116, Huh-7, and HT-29 cells were maintained in DMEM (Gibco #11995065). HepG2 and CCD841 CoN cells were maintained in EMEM (ATCC #30–2003). K562 and Jurkat E6.1 cells were maintained in RPMI1640 (Gibco #11875093). All media was supplemented with 10% FBS and 1 X penicillin-streptomycin (Gibco #15140148). Cells were grown at 37 °C with 5% CO2. We followed the instructions from the manufacturer to maintain the cells.
 
-## Methods details
+### Methods details
 
-## RNA extraction and mRNA purification
+#### RNA extraction and mRNA purification
 
 Cellular total RNA in TRIzol LS (Thermo Fisher #10296028) was extracted by Direct-zol RNA Miniprep kit (Zymo #R2070) or by Phenol Chloroform extraction. mRNA was purified by NEBNext Oligo d(T)25 Beads (NEB #E7499) or Dynabeads Oligo (dT)25 (Ambion #61002) based on mRNA purification from total RNA protocol of Dynabeads Oligo (dT)25 (Ambion #61002).
 
-## m6Am standard preparation
+#### m6Am standard preparation
 
 We used in vitro transcription to prepare m7G capped m6Am- or Am-initiated transcripts, which are based on HiScribe T7 mRNA Kit with CleanCap Reagent AG (NEB #E2080S). We first obtained DNA templates from IDT gBlock. In total, five DNA templates which are identical expect for the 6-nt long barcode 42-nt downstream to the TSS were used. The DNA templates contain 5’-TAATACGACTCACTATAAG-3’ T7 promoter for in vitro transcription. We used CleanCap Reagent AG (3' OMe) (TriLink #N-7413), which is included in NEB #E2080S, to generate m7G-ppp-Am modified transcripts. We used CleanCap Reagent M6 (TriLink #N-7453) to generate the m7G-ppp-m6Am modified transcripts. The RNAs made by in vitro transcription were DNase I treated, purified, and then quantified by both Agilent TapeStation (RNA high sensitivity assay). We then mixed the Am and m6Am modified oligos to generate m6Am standards with expected m6Am stoichiometry at 0%, 25%, 50%, 75%, and 100% m6Am stoichiometry. Notably, the guaranteed purity of the CleanCap Reagent M6 is >95%. The CleanCap Reagent M6 can contain m7G-ppp-AmG analog, which results in the reduced non-conversion rate in CROWN-seq.
 
-## Genomic assembly and annotations
+#### Genomic assembly and annotations
 
 The genomic sequence and annotations of Gencode v45 primary assembly were used in this study.
 
-## GLORI experiment
+#### GLORI experiment
 
 To validate whether sodium nitrite conversion can convert Am into Im, we spiked ~0.01 ng Am transcripts (ERCC-00057–1-TCGTCG) into ~250 ng poly(A) selected mRNA for GLORI assay. Ligation-based GLORI protocol was used in this study. Notably, the Am transcripts were decapped by mRNA Decapping Enzyme (NEB #M0608S) in advance. We first fragmentized the input RNA into ~200 nt long fragments (NEBNext Magnesium RNA Fragmentation Module (NEB #E6150S), 94 °C, 2 min). The fragmentized RNAs were then A-to-I converted based on the GLORI protocol (Liu et al., 2023): we converted the glyoxal-protected RNA by 750 mM NaNO2 at 16 °C for 8 hr and 4 °C overnight. The RNA was then deprotected in a deprotection buffer at 95 °C for 10 min. The deprotected RNA was then T4 PNK (NEB #M0210S) treated and processed to ligation-based small RNA-seq library preparation (Vigneault et al., 2012). Notably, the 5’ adapter in library preparation contains an 11 nt UMI sequence.
 
-## GLORI data processing
+#### GLORI data processing
 
 GLORI libraries were analyzed based on a modified mRNA bisulfite sequencing pipeline (Huang et al., 2019). The first 10 bases in GLORI libraries made with eCLIP protocol were first extracted by a customized script. GLORI reads were first quality trimmed by Cutadapt (Martin, 2011). For the GLORI library generated by eCLIP protocol, the parameters are --max-n 0 --trimmed-only -a AGATCGGAAGAGCGTCGTG -e 0.1 -q 30 m 40 --trim-n; for GLORI library prepared by ligation-based protocol generated in this study, the parameters are -m 32 j 4 -q 20 -e 0.25 -a AGATCGGAAGAGCACACGTC -A ATATNNNNNNNNNNNAGATCGGAAGAGCGTCGTG. After pre-processing, the reads were firstly A-to-G converted and aligned to A-to-G (positive strand) and T-to-C (negative strand) converted reference genome and transcriptome by Hisat2-2.1.0 (Kim et al., 2019). Parameters in alignment: -k 5 –fr –rna-strandness FR –no-temp-splicesite –no-mixed. Only unique alignments were used. After alignment, the base information in sequences was restored so that m6Am signals can be reflected by the A-to-G mismatches. No further transcriptome alignment was performed on the unmapped reads. After alignment, a customized script based on Pysam (Li et al., 2009) was used to pileup every single base to obtain the A, C, G, and U counts. Every single base was assigned to a transcript isoform if possible (order: mRNA > lncRNA > functional RNAs > pseudogenes). Non-conversion rate is defined as the number of A counts against the sum of A count and G count. Filters were applied to obtain high-quality non-converted A (m6A/m6Am) signals in a gene-specific manner: (1) only genes with at least 1000 counts were analyzed; (2) gene-specific non-conversion rates were computed for Binomial test on the frequency of non-conversion and sites with Binomial test p-value <0.05 were used; (3) reads with more than three non-converted As were considered as noise and discarded; (4) sites with more than 5% signals were discarded due to the site may fall in a conversion-resistant region; (5) Only sites with no less than 20 reads covered and non-conversion rates over 0.1 were considered as m6A/m6Am sites. (6) Non-conversion rates of the same site from different replicates were averaged. Details of this pipeline can be found at https://github.com/jhfoxliu/GLORI_pipeline (Liu, 2023).
 
-## ReCappable-seq library preparation
+#### ReCappable-seq library preparation
 
 A modified ReCappable-seq protocol (Yan et al., 2022) was developed to reduce background, reduce material loss, and increase the utility of mapped reads. Several steps of library construction are now performed while the 5’ desthiobiotinylated cap is bound to streptavidin beads. This reduces the opportunity for carry-through of random fragmentation products to occur that would previously result in non-cap-derived 5’ ends to be ligated. Next, 5’ adapters with unique molecular indexes (UMIs) are used to permit robust PCR duplicate removal. Finally,~160 spike-in mRNAs from SIRV-ERCC Spike-in mixture (Lexogen #051.03) with single defined 5’ termini are used, which are used during analysis to build a dynamic thresholding pipeline that exclude false positive start sites. A complete step-by-step protocol as performed here are available at https://github.com/jhfoxliu/ReCappable-seq (Liu, 2025a).
 
 5 μg total RNA was used as input for all experiments. RNA was denatured at 65 °C for 2 min before reaction mixes were added. First, 5’-phosphorylated RNAs were dephosphorylated using 25 U Quick CIP (NEB #M0525L) in a 50 μL reaction for 30 min at 37 °C. The reaction was cleaned using a Zymo RCC-5 column following the manufacturer’s>200 nt protocol and eluted with 20 μL water. m7G capped RNAs were then decapped using 200 U yDcpS (NEB #M0463S) for 1 hr at 37 °C. This unique decapping enzyme liberates m7GMP, resulting in mRNAs with a 5’-diphosphate. The reaction was cleaned and eluted as before. Next, the 5’-diphosphorylated mRNAs were recapped with desthiobiotin-GTP (DTB-GTP) using vaccinia capping enzyme (5 μL VCE buffer, 0.5 μL inorganic pyrophosphatase (NEB #M0361S), 5 μL DTB-GTP (5 mM; NEB #N0761S), 50 U VCE (#M2080S)) for 45 min at 37 °C. The reaction was clean as before, however, a total of our washes were performed to ensure the complete removal of excess DTB-GTP. RNA was then fragmented by incubating at 95 °C for 2.5 min in a 25 μL reaction containing 100 mM Tris-HCl pH 8.0 and 2 mM MgCl2. Fragmented RNA was placed on ice and brought to 30 μL with water. Streptavidin beads (NEB #S1421S) were washed in a high-salt wash buffer (10 mM Tris-HCl pH 7.5, 2 M NaCl, 1 mM EDTA) and resuspended in the high salt buffer at 4 mg/mL. 30 μL beads were added to 30 μL fragmented RNA and incubated for 45 min at room temperature with agitation. Beads were washed twice in a high-salt buffer, twice in a lower salt buffer (10 mM Tris-HCl pH 7.5, 250 mM NaCl, 1 mM EDTA), and twice in PNK wash buffer (20 mM Tris-HCl pH 7.5, 10 mM MgCl2, 0.2% Tween). Beads were next resuspended in 40 μL PNK reaction mix 8 μL 5 X pH 6.5 PNK buffer (350 mM Tris-HCl pH 6.5, 50 mM MgCl2, 5 mM DTT), 1 μL T4 PNK (NEB #M0201S), 1 μL RNaseOUT (Thermo Fisher #10777019) and incubated at 37 °C for 30 min with agitation to remove 3’ phosphates resulting from the fragmentation. Beads were washed once in PNK wash, once in the high salt wash, then twice again in PNK wash. Next, a 3’ adapter was added to RNA by resuspending beads in 40 μL 3’ ligation reaction mix (4 μL T4 RNA ligase buffer, 2 μL T4 RNA ligase 2 truncated KQ (NEB #M0373L), 1 μL RNaseOUT, 2 μL L7 adapter (20 μM stock), 16 μL of 50% PEG-8000) and incubated at 25 °C for 2 hr. The beads were washed once in PNK wash, once in high-salt wash, twice in lower salt wash, then resuspended in 30 μL lower salt wash containing 1 mM biotin (ThermoFisher #B20656) to elute DTB-capped RNA fragments. The eluted RNA was cleaned by ethanol-AMPure XP (1.8 volumes AMPure XP, then 1.5 volumes 100% ethanol). To increase stringency, the streptavidin bead enrichment was repeated omitting enzymatic steps and instead washing three times with high salt and then three times with lower salt wash, and the eluate was cleaned again by ethanol-AMPure XP. The DTB-GTP cap was removed using 0.5 U/µl RppH (NEB #M0356S) in 1 X ThermoPol buffer (NEB #M0356S) and incubating at 37 °C for 1 hr. The resulting 5’-monophosphate RNA fragments were purified by ethanol-AMPure XP. 30 pmol of a 5’ adapter was ligated for 3 hr at 25 °C with 2 U/μL T4 RNA ligase 1 (NEB #M0437M). This RNA adapter contains an 11 nt UMI followed by a fixed sequence (AUAU) at its 3’ end. The UMI allows robust duplicate removal, and the fixed sequence provides an anchor point to correctly identify the first nucleotide of the mRNA. The ligation reaction was inactivated by heating at 65 °C for 10 min and then immediately used in a reverse transcription reaction. 3 pmol of ReCappable-seq RT primer was annealed to the 3’ adapter of RNA fragments by heating to 65 °C for 5 min and cooling to 25 °C at a rate of 0.1 °C/s. Reverse transcription was carried out at 55 °C for 45 min in a reaction containing 0.5 mM dNTPs, 5 mM DTT, 20 U RNaseOUT, 50 mM Tris-HCl pH 8.3, 75 mM KCl, and 300 U SuperScript III (Thermo Fisher #18080044). Following heat inactivation, the reaction was cleaned using ethanol-AMPure XP and cDNA was resuspended in 21 μL. The final PCR was performed using 8 μL cDNA in a 40 μL reaction containing 1 X Phusion HF master mix (NEB #M0531L) and 4 μL each of a unique i5 and i7 barcoded primer combination for each sample (NEB #E7600S). Cycling conditions were typically 98 °C 2 minutes, then 11–13 cycles of 98 °C 15 s, 65 °C 30 s, 72 °C 30 s, with a final 5 min 72 °C extension. The optimal number of cycles for each library was determined by performing a set of test cycles using 1 μL cDNA in a 20 μL reaction. PCR libraries were purified with 2 rounds of bead clean-up using 0.9 X volume SPRIselect beads. Libraries were pooled at equimolar concentrations and sequenced in paired-end mode with 50–150 bp reads depending on the library on either an Illumina NovaSeq, NextSeq, or HiSeq (please refer to GEO accession for specific details for each library).
 
-## ReCappable-seq analysis
+#### ReCappable-seq analysis
 
 The beginning of read 1 is the UMI plus an ATAT spacer sequence, and the nucleotide directly following this is the TSS. Reads were first filtered to identify pairs with the correct UMI +ATAT sequence, then the UMI was added to FASTQ headers using UMI-tools v1.1.1 (Smith et al., 2017). ATAT sequence discarded. Adapters were trimmed using Cutadapt v3.4 (Martin, 2011). Next, reads mapping to ribosomal RNA and small non-coding RNAs were filtered away by aligning to these sequences using bowtie2 v2.4.2 (Langmead and Salzberg, 2012). Reads were then aligned to GRCh38 and m6Am standard sequences using HISAT2 (Kim et al., 2019). The alignment results were deduplicated by UMI-tools (--paired --chimeric-pairs=discard --unpaired-reads=discard --method=unique). Only reads without 5’ softclipping were used. A customized script based on Pysam (Li et al., 2009) was used to extract the 5’ ends from the BAM file. To annotate the sites by a gene, the 5’ ends were firstly annotated by the nearest TSS within the 100 bp region. If multiple annotations were found, the annotation was selected by the priority of snRNA > snoRNA > mRNA > lncRNA > others. BEDtools v2.27.1 (Quinlan and Hall, 2010) was used to find the nearest annotation. To more accurately estimate the expression levels of each TSN, we normalized the read counts using the ‘RUVg’ function in RUVSeq pacakge (Risso et al., 2014). To calculate the expression levels of TSNs in wide-type cells, we calculated the TPM values based on the normalized read counts. To calculate the differential expression between wild-type and PCIF1 knockout cells, the normalized read counts were proceeded by DESeq2 (Love et al., 2014).
 
-## The comparison of TSS mapping methods
+#### The comparison of TSS mapping methods
 
 Currently, there are several types of TSS mapping methods. CAGE (Murata et al., 2014) and TSS-seq (Yamashita et al., 2011) are the two most popular methods being used.
 
@@ -255,7 +618,7 @@ TSS-seq is another available method in TSS mapping. TSS-seq relies on several en
 
 ReCappable-seq (Yan et al., 2022) can be considered as an improved TSS-seq. Recappable-seq overcomes the 5’ end background clean-up issue. In ReCappable-seq, the m7G caps of RNA polymerase II transcribed RNA is replaced by 3´-Desthiobiotin-G caps. The recapped RNAs can thus be enriched on streptavidin beads. During high-stringency washing, the 5’ end background can be completely removed. Thus, ReCappable-seq exhibited extremely high specificity in mapping transcription-start nucleotides.
 
-## CROWN-seq library preparation
+#### CROWN-seq library preparation
 
 CROWN-seq uses the glyoxal-based guanosine protection protocol from GLORI (Liu et al., 2023) and a TSN enrichment protocol that is modified from ReCappable-seq (Yan et al., 2022). In CROWN-seq, glyoxal protection is very important to prevent both internal G’s from being converted into xanthosine, which can interrupt base pairing and cause mutations during reverse transcription (Mair et al., 2022). Because N7-methyl does not interrupt the interaction between glyoxal and N1 and N2 positions of guanosines, glyoxal protection is also very useful to prevent m7G from being converted, which can help 5’ end enrichment. After glyoxal protection, A bases are deaminated into inosines by sodium nitrite. After deamination, the 5’ end RNA fragments with a m7G cap were enriched by ReCappable-seq workflow, where the m7G caps were replaced by a 5’ desthio-biotinylated cap for enrichment by streptavidin beads. 3’ adapter and 5’ adapter (with unique molecular indexes [UMIs]) were ligated to the enriched 5’ RNA fragments, so that the library can be made by reverse transcription followed by indexing PCR. Detailed workflow is described below.
 
@@ -269,7 +632,7 @@ Recapping. To eliminate the contamination of RNA with 5’-triphosphate and 5’
 
 cDNA synthesis and PCR. Reverse transcription was carried out at 50 °C for 45 min in a 50 μl reaction containing 0.5 mM dNTPs, 5 mM DTT, 20 U RNaseOUT, 50 mM Tris-HCl pH 8.3, 75 mM KCl, and 300 U SuperScript III. To perform indexing PCR, 40 μl Phusion master mix (NEB # M0532L) was added to the reverse transcription product, along with 5 μl i5 indexing primer and 5 μl i7 indexing primer (NEB #E7600S). Cycling conditions were typically 98 °C 2 min, then 16 cycles of 98 °C 15 s, 65 °C 30 s, 72 °C 30 s, with a final 5 min 72 °C extension. Two rounds of 0.9 X AMPureXP bead purifications were performed to remove primers. Normally ~10 ng indexed library was obtained for each library. The libraries were mixed and sequenced by NovaSeq 6000 or NovaSeqX.
 
-## CROWN-seq data processing
+#### CROWN-seq data processing
 
 The read pairs were firstly quality trimmed by Cutadapt (Martin, 2011): -m 32 -q 20 -e 0.25-a AGATCGGAAGAGCACACGTC. For the 8 nt-long 5’ adapter, -A ATATNNNNNNNNAGATCGGAAGAGCGTCGTG was used; for the 11 nt-long adapter, -A ATATNNNNNNNNNNNAGATCGGAAGAGCGTCGTG was used. Then the UMI along with the fixed ATAT spacer sequences were extracted by UMI-tools (Smith et al., 2017). The alignment process was modified from the previous RNA bisulfite alignment strategy (Huang et al., 2019). In brief, in silico converted read pairs (read1 A-to-G, read2 T-to-C) were aligned by HISAT2 (Kim et al., 2019) against A-to-G converted (for positive strand) and T-to-C converted (for negative strand) reference genome and transcriptome first (key options: -k 5 –fr –rna-strandness FR –no-temp-splicesite –no-mixed). Then the unique alignments were extracted and the in silico converted reads were inverse-transformed to the original format. Since two sequences after conversion can be easily confused, we require the best alignment results can be well distinguished from the secondary alignments. Here, the alignment scores (AS tag in Hisat2 alignments, higher is better) of the best alignments should be higher than –10. Meanwhile, the difference between the best alignments and secondary alignments should be larger than 9. For paired-end alignments, the alignment scores of read1 and read2 were summed. Only read1 was used in the 5’ end analysis. Only read1 reads without 5’ end softclips were used. Pileup was performed to obtain the read coverages of every 5’ end in the transcriptome. Non-conversion rates of the transcription start nucleotides were calculated by A counts over A and G counts.
 
@@ -279,25 +642,25 @@ The choice of parameters can significantly affect the accuracy of TSS maps and t
 
 The related pipeline and scripts are available at https://github.com/jhfoxliu/CROWN-seq (Liu, 2025b).
 
-## RT-qPCR
+#### RT-qPCR
 
 1 μg total RNA was used as input. The RNA was then mixed with 1 μl Oligo dT(18) (100 pmoles) (Thermo Fisher #SO131), and 1 μl dNTP in 14.5 μl total volume. The mix was incubated at 65 °C for 5 min, then on ice for >30 s. After the incubation, 4 μl 5 X RT mix (Maxima H- buffer, Thermo Fisher #EP0751), 0.5 μl RNaseOUT (Thermo Fisher #10777019), and 1 μl Maxima H- RTase were added to the mix. Reverse transcription was performed at 25 °C for 10 min, then 50 °C for 30 min. After reverse transcription, 1 μl cDNA was used for qPCR. In addition to the cDNA input, the qPCR buffer contains 10 μl Power SYBR Green PCR Master Mix (Thermo Fisher #368577), 0.5 μl forward primer, 0.5 μl reverse primer, and 8 μl water. qPCR was performed based on the standard quantification program in QuantStudio 5 System.
 
-## Gene ontology analysis
+#### Gene ontology analysis
 
 Gene ontology analyses were performed with R package ClusterProfiler (Yu et al., 2012). p-value cutoffs were set to 0.05 and q-value cutoffs were set to 0.1. ‘Cellular Components’ and ‘Biological Process’ terms were analyzed. Importantly, corresponding gene sets, rather than all genes, were used as the backgrounds in term enrichment computation. Since the output terms were normally redundant, terms were de-redundancy by the ‘simplify’ function in R package GOSemSim (Yu et al., 2010; cutoff = 0.7, by="p.adjust", select_fun = min).
 
-## Motif analysis
+#### Motif analysis
 
 To search for the potential motifs for elements related to transcription initiation, we used ‘re’ package in Python to match specific motifs, which are indicated in the figure legends.
 
 To search for the transcription factor binding sites, we used FIMO (Grant et al., 2011) to scan for motifs in HOCOMOCO v11 core motifs database (Kulakovskiy et al., 2018).
 
-## RNA secondary prediction and minimal free energy calculation
+#### RNA secondary prediction and minimal free energy calculation
 
 ViennaRNA package (version 2.5.1) was used to perform RNA secondary structure prediction (Lorenz et al., 2011). The RNAfold Python API ‘RNA’ was used in the analysis. The folding temperature was set to 37 °C. The minimum free energy of the predicted structure was used.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Quantitative and statistical methods are described above and in figure legends according to their respective technologies and analytic approaches. Statistical analysis and visualization were mainly performed with Python (version 3.8.7). R (version 4.2.2) was used in differential gene expression analysis and Gene Ontology analysis.
 
@@ -307,6 +670,6 @@ Versions of key R packages: DESeq2 (1.38.1); clusterProfiler (4.6.0); enrichplot
 
 All boxplots and violin plot summary statistics show the median and IQR of the underlying data. Statistical tests are described in the appropriate figure legends. Student’s t-test was applied for two sample non-paired comparisons. One-sided or two-sided testing was performed according to figure legends. If possible, we omitted significance ‘stars’ from figures; p-values (or equivalent) are instead reported.
 
-## Materials availability
+### Materials availability
 
 This study did not generate new unique reagents.

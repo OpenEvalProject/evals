@@ -44,17 +44,77 @@ Here, we describe the pre-clinical in vitro and in vivo study of irradiated haNK
 
 haNKs were engineered to express a CAR targeting PD-L1. This second-generation CAR includes a single-chain variable fragment (scFv) derived from NANT-601, and IgG1 mAb targeting PD-L1, along with a CD8 hinge, a CD28 transmembrane domain and an intracellular FcεR1γ signaling domain (diagramed in Figure 1—figure supplement 1A). Expression of the PD-L1 CAR was verified on PD-L1 CAR haNK cells by flow cytometry (Figure 1—figure supplement 1B). The ability of irradiated PD-L1 CAR haNKs to kill a panel of HPV-positive and -negative human HNSCC cells was directly compared to that of irradiated parental haNKs that do not express the CAR (Figure 1). To determine if increased PD-L1 expression on target cells would increase killing capacity by PD-L1 CAR haNKs, some cells were exposed to IFNγ. Exposure to IFNγ significantly increased PD-L1 expression on all cells (left panels, Figure 1A–E). Exposure of cells to IFNγ also consistently increased MHC class I expression, but variably decreased expression of NKG2D ligands MHC class I polypeptide-related sequence A/B (MICA/B) on target cells (Figure 1—figure supplement 2). As measured by real-time impedance analysis (middle and right panels, Figure 1A–E), killing of HNSCC cells by PD-L1 CAR haNKs at low effector-to-target ratios (0.5:1 or 1:1) was significantly greater compared to haNKs in the absence of IFNγ pre-treatment of target cells. Pre-treatment of target cells with IFNγ significantly increased killing by PD-L1 CAR haNKs but did not increase killing by haNKs. Killing of IFNγ pre-treated human target cells by PD-L1 CAR haNKs was durable as no tumor cell growth rebound was observed. No clear correlation between HLA class I or MICA/B expression and killing by PD-L1 CAR haNKs or haNKs existed. These data suggested that at matched effector-to-target ratios, PD-L1 CAR haNKs kill multiple human HNSCC targets to a greater degree than haNKs, and that susceptibility to PD-L1 CAR haNK killing can be increased with greater PD-L1 expression following IFNγ pre-treatment of target cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig1-v1.jpg)
+
+**Figure 1.:** Cell surface PD-L1 expression was measured by flow cytometry in the presence or absence of IFNγ (20 ng/mL for 24 hr, left panels) and killing of control or IFNγ pre-treated tumor cells (20 ng/mL for 24 hr) by haNKs or PD-L1 CAR haNKs was measured by impedance analysis for human UMSCC-1 (A), UMSCC-11A (B), UMSCC-74B (C), UMSCC-109 (D) and UMSCC-47 (E) HNSCC cells. Representative impedance curves are shown in the central panels, and plots of quantification of effector cell killing (% loss of cell index) at 12 hr are shown in the right panels. Cumulative data from at least three independent experiments for each cell line are shown. MFI, median fluorescent intensity. *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the design of the second-generation PD-L1 CAR. (B) haNKs or PD-L1 CAR haNKs were assayed for PD-L1 CAR expression via flow cytometry. Representative histograms are shown, with MFI of CAR expressed inset into the legend.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Cell surface HLA-A/B/C and MICA/B expression was measured by flow cytometry in the presence or absence of IFNγ (20 ng/mL for 24 hr, left panels) on human UMSCC-1 (A), UMSCC-11A (B), UMSCC-74B (C), UMSCC-109 (D) and UMSCC-47 (E) HNSCC cells. n/s, non-significant. **, p<0.01; ***, p<0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** PD-L1 CAR haNKs were exposed to UMSCC-1 or UMSCC-47 target cells at an E:T ratio of 1:1 for four hours, then target cells were assessed for viability via sytox staining on flow cytometry (A, C) to verify killing. PD-L1 CAR haNKs exposed to target cells were harvested and compared to target-naive PD-L1 CAR haNKs for their ability to kill UMSCC-1 or UMSCC-47 cells, respectively (B, D). Representative impedance curves are shown in the left panels, and plots of quantification of effector cell killing (% loss of cell index) at 12 hr are shown in the right panels. **, p<0.01; ***, p<0.001.
+
 NK cell exhaustion can limit their effector function (Bi and Tian, 2017). To determine the effect of prior target cell engagement on effector killing capacity in PD-L1 CAR haNK cells, these cells were assayed for their ability to lyse HPV-negative UMSCC-1 or HPV-positive UMSCC-47 targets after a prior exposure to each cell line, respectively. Following efficient killing of target cells for a period of 4 hr, PD-L1 CAR haNKs retained their ability to kill target cells albeit at a reduced capacity compared to target-naïve PD-L1 CAR haNKs (Figure 1—figure supplement 3). Prior exposure to target cells partially reduces but does not abrogate the effector capacity of PD-L1 CAR haNKs.
 
 The ability of PD-L1 CAR haNKs or haNKs to kill HPV negative murine HNSCC cells in the presence or absence of IFNγ pre-treatment was next determined. PD-L1 CAR haNKs killed IFNγ pre-treated murine HNSCC cells in a dose-dependent fashion, with 70–80% cell killing at a 1:1 effector-to-target ratio (Figure 2—figure supplement 1). In the absence of IFNγ pre-treatment, baseline expression of PD-L1 on murine HNSCC cells was low, and PD-L1 CAR haNks and haNKs killed targets to a similar degree at 1:1 effector-to-target ratios (Figure 2A&B). IFNγ pre-treatment significantly increased expression of PD-L1 and killing by PD-L1 CAR haNKs, but no increase in killing by haNKs was observed. PD-L1 CAR haNK killing of IFN pre-treated murine target cells was less durable compared to human target cells, with a degree of rebound of target cell growth by 72 hr. These data revealed that PD-L1 CAR haNKs also kill murine HNSCC cells to a greater degree than haNKs, and that PD-L1 CAR haNK killing can be increased with IFNγ-induced PD-L1 expression.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig2-v1.jpg)
+
+**Figure 2.:** Cell surface PD-L1 expression was measured by flow cytometry in the presence or absence of IFNγ (20 ng/mL for 24 hr, left panels) and killing of control or IFNγ pre-treated tumor cells (20 ng/mL for 24 hr) by haNKs or PD-L1 CAR haNKs was measured by impedance analysis for murine MOC1 (A) or MOC2 (B) HNSCC cells. Representative impedance curves are shown in the central panels, and plots of quantification of effector cell killing (% loss of cell index) at 12 hr are shown in the right panels. Cumulative data from at least three independent experiments for each cell line are shown. MFI, median fluorescent intensity. ***, p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Killing of IFNγ pre-treated tumor cells (20 ng/mL for 24 hr) by PD-L1 CAR haNKs was measured by impedance analysis for murine MOC1 (A) or MOC2 (B) HNSCC cells. Representative impedance curves are shown in the left panels, and plots of quantification of effector cell killing (% loss of cell index) at 12 hr are shown in the right panels. Cumulative data from at two independent experiments for each cell line are shown. **, p<0.01.
+
 To determine the relative contribution of direct and PD-L1 CAR-mediated killing of human and murine HNSCC targets by PD-L1 CAR haNKs, CRISPR/Cas9 gene editing was used to generate PD-L1 knockout cell variants of human UMSCC-1, human UMSCC-11A and murine MOC1 cells. Exposure of these PD-L1 knockout cells to IFNγ demonstrated a lack of baseline and IFNγ-inducible PD-L1 expression (compared to isotype control staining) but retained baseline and IFNγ-inducible HLA class I expression, demonstrating that overall IFNγ responses remained intact (Figure 3—figure supplement 1). Impedance analysis was next used to determine the ability of PD-L1 CAR haNKs to kill IFNγ pre-treated parental cells, PD-L1 knockout cells, or mixtures of these cells at different ratios (Figure 3A–C). Although killing of IFNγ pre-treated parental cells was nearly complete, killing of PD-L1 knockout cells ranged from 10–40%, suggesting that 10–40% of PD-L1 CAR haNK killing is due to direct NK cytotoxicity and independent of the PD-L1 CAR. Increased PD-L1 CAR haNK killing of targets correlated with increased ratios of parental-to-PD-L1 knockout cells. These data demonstrated that PD-L1 CAR haNKs utilize both direct and PD-L1 CAR-dependent killing of human and murine HNSCC cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig3-v1.jpg)
+
+**Figure 3.:** The ability of PD-L1 CAR haNK cells (1:1 effector:target ratio) to kill IFNγ pretreated parental and PD-L1 knockout UMSCC-1 (A), UMSCC-11A (B) and MOC1 (C) cells mixed at different ratios was measured by impedance analysis. Representative impedance plots are shown on the left, and plots of quantification of killing are shown on the right. Cumulative data from two independent experiments for each cell line are shown. *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** PD-L1 knockout cells were generated via CRISPR/Cas9 gene editing and control or IFNγ pre-treated UMSCC-1 (A), UMSCC-11A (B) or MOC1 (C) HNSCC tumor cells (20 ng/mL for 24 hr) were assayed for PD-L1 or HLA-A/B/C expression via flow cytometry. Isotype control MFI shown in the bar graphs. **, p<0.01; ***, p<0.001.
 
 The ability of PD-L1 CAR haNKs to kill murine HNSCC allows the in vivo study of efficacy and changes in immune correlatives in a syngeneic system. Immune-competent mice bearing established (100–200 mm3) MOC1 tumors were treated with irradiated PD-L1 CAR haNKs, and the ability of these cells to induce tumor growth inhibition or changes in peripheral or tumor immune composition was measured. PD-L1 CAR haNKs (1 × 107) were administered twice weekly given their short lifespan following irradiation. PD-L1 CAR haNK monotherapy induced tumor rejection in 30% of treated mice and tumor growth inhibition in a subset of remaining mice (Figure 4A). No weight loss, alterations in select blood chemistries, or other measurable forms of toxicity were observed with systemic PD-L1 CAR haNK treatment administered via intravenous or intraperitoneal routes (Figure 4—figure supplement 1). Tumor rejection was abrogated in mice bearing PD-L1 knockout MOC1 tumors (Figure 4B), but heterogeneous tumor growth inhibition was still observed. IFNγ is a primary driver of PD-L1 expression on MOC1 tumor cells (Shah et al., 2016). To determine if IFNγ is the major driver of PD-L1 being targeted by PD-L1 CAR haNKs and if CD8 T cells are the major source of IFNγ, treatments were repeated in the presence or absence of antibody depletions. IFNγ or CD8 depletion abrogated the anti-tumor effect of PD-L1 CAR haNKs (Figure 4C). Depletion of TNFα did not alter the anti-tumor effect of PD-L1 CAR haNKs. This data suggested that IFNγ produced by CD8 T cells was the major driver of tumor cell PD-L1 expression being targeted by PD-L1 CAR haNKs. Tumor cell-specific PD-L1 expression was significantly increased after PD-L1 CAR haNKs, and this increase was abrogated in the presence of CD8 depletion (Figure 4D). These data suggested that PD-L1 CAR haNKs can induce PD-L1-dependent tumor rejection in a syngeneic murine system, and that CD8 T cells are a primary source of IFNγ driving tumor cell PD-L1 expression in this model.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig4-v1.jpg)
+
+**Figure 4.:** Wild-type C57BL/6 mice bearing parental (A) or PD-L1 knockout (B) MOC1 tumors were treated with PD-L1 CAR haNKs (1 × 107 cells IP, beginning day 10, twice weekly for six doses, n = 10 mice/group) or 1xPBS control and primary tumors were followed for growth. Individual tumor growth curves shown on the left, with summary growth curves shown on the right. The number of mice that rejected established tumors is inset. C, wild-type C57BL/6 mice bearing parental MOC1 tumors were treated with PD-L1 CAR haNKs (1 × 107 cells IP, beginning day 14, twice weekly for six doses, n = 10 mice/group) or 1xPBS control with and without antibody-based depletion (CD8 clone YTS 169.4, IFNγ clone XMG1.2, TNFα clone XT3.11, each 200 μg IP twice weekly starting on day 13, n = 5–10 mice/group) and primary tumors were followed for growth. Summary growth curve shown. D, one day after the final CD8 depletion and two days after the final PD-L1 CAR haNK treatment, some tumors (n = 4) were assessed for tumor cell-specific PD-L1 expression by flow cytometry. Representative histograms shown with median fluorescent intensity (MFI) inset. Significance of summary growth curves was determined by 2-way ANOVA of repeat measures with the treatment condition as the variable. Results from one of three independent experiments with similar results are shown. *, p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Wild-type C57BL/6 mice bearing parental (A) or PD-L1 knockout (B) MOC1 tumors were treated with IP or IV PD-L1 CAR haNKs (1 × 107 cells IP, beginning day 10, twice weekly for six doses, n = 5–10 mice/group) or 1xPBS control (administered IP) and mice were weighed twice weekly. 24 hr after the final treatment, peripheral blood was drawn from a subset of mice (n = 5/group) and assayed for standard blood chemistries. BUN, blood urea nitrogen; ALT, alanine aminotransferase; AST, aspartate aminotransferase; LDH, lactate dehydrogenase.
+
 Circulating and tumor infiltrating immune cells can express high levels of PD-L1. To determine if treatment of MOC1 tumor bearing mice altered immune constituency, splenic and tumor immune subsets were measured by flow cytometry following PD-L1 CAR haNK administration (Figure 5A). In the periphery of tumor bearing mice, PD-L1 was uniformly expressed on macrophages and Ly6Ghi neutrophilic myeloid cells to a greater degree compared to other cells types. Quantification of splenic immune cell fractions revealed that macrophages and neutrophilic myeloid cells endogenously expressing high levels of PD-L1 were decreased compared to control following treatment, whereas no changes were observed in other immune subsets (Figure 5B&C). In the tumor microenvironment, PD-L1 was expressed to a greater degree on macrophages, neutrophilic and monocytic myeloid cells compared to tumor cells or other immune subsets. Flow cytometric analysis 1 hr after treatment verified the presence of adoptively transferred PD-L1 CAR haNKs in the blood, spleens and tumors of MOC1 tumor bearing mice (Figure 5—figure supplement 1). Quantification of tumor immune infiltration revealed decreased macrophages, neutrophilic and monocytic myeloid cells, increased CD8 and CD4 T-lymphocytes, and no change in Tregs or NK cells following treatment (Figure 5B&D). To validate these findings in an ex vivo setting, peripheral or tumor leukocytes were isolated from mice bearing MOC1 tumors, co-incubated with PD-L1 CAR haNKs and flow cytometry was used to determine immune constituency. Similar to results observed in vivo, immune cell subsets from the periphery and tumor that expressed comparatively greater levels of PD-L1 were reduced following 24 hr of co-incubation with PD-L1 CAR haNKs (Figure 5—figure supplement 2). Cumulatively, these data exhibited that PD-L1 CAR haNKs can mediate reduction of immune cells endogenously expressing high levels of PD-L1 in the periphery and tumor microenvironment of MOC1 tumor-bearing wild-type mice.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig5-v1.jpg)
+
+**Figure 5.:** MOC1 tumors Wild-type C57BL/6 mice bearing parental MOC1 tumors were treated with four PD-L1 CAR haNK administrations (1 × 107 cells IP, each four days apart) and 24 hr after the last treatment, spleens and tumors were harvested and assessed for immune composition via flow cytometry (schema shown in A). (B) representative dot plots of live CD11c-F4/80- myeloid cells from the spleen (left panels) or tumor (right panels) are shown. Baseline cell surface PD-L1 expression on immune cell subsets along with changes in immune cell composition following PD-L1 CAR haNK treatment are shown from the spleen (C) and tumor (D) compartments (n = 5 spleens or tumors/group). Cell surface markers used to identify immune cell subsets are shown. *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Wild-type C57BL/6 mice bearing parental MOC1 tumors were treated with one PD-L1 CAR haNK administration (1 × 107 cells IP) or 1xPBS control and 1 hr or 24 hr later, peripheral blood, spleens and tumors were harvested and assessed for PD-L1 CAR haNKs composition via flow cytometry (n = 5/group). Representative dot plots of control or PD-L1 CAR haNKs treated tumors are shown on the left, with quantification of PD-L1 CAR haNKs infiltration on the right. **, p<0.01, ***, p<0.001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Spleens and tumors from wild-type C57BL/6 mice bearing parental day 14 MOC1 tumors were co-incubated with PD-L1 CAR haNKs for 24 hr, then changes in immune composition was assessed via flow cytometry (schema shown in A). (B) representative dot plots of myeloid cell subsets from tumors are shown. Baseline cell surface PD-L1 expression on immune cell subsets along with changes in immune cell composition following PD-L1 CAR haNK co-incubation are shown from the spleen (C) and tumor (D) compartments (n = 5 spleens or tumors/group). Cell surface markers used to identify immune cell subsets are shown. *, p<0.05; **, p<0.01.
+
 To determine if adoptive transfer of PD-L1 CAR haNKs could mediate tumor growth inhibition in a xenograft system lacking immunity, treatment was performed in severely immunodeficient NSG mice bearing UMSCC-1 human tumors. Tumor growth inhibition was observed, but no tumors were rejected (Figure 6A). Tumor growth inhibition following PD-L1 CAR haNK treatment was abrogated in NSG mice bearing PD-L1 knockout UMSCC-1 tumors (Figure 6B). Flow cytometry and immunofluorescence were used to verify that tumor cell-specific PD-L1 expression within UMSCC-1 tumors was increased following treatment with PD-L1 CAR haNKs (Figure 6—figure supplement 1A&B). PD-L1 CAR haNKs produce IFNγ at rest, and to a higher degree following target engagement (Figure 6—figure supplement 1C). These data suggested that the PD-L1 CAR haNKs may be the source of the IFNγ leading to increased expression of PD-L1 on the UMSCC-1 tumor cells. Cumulatively, these data demonstrated that PD-L1 CAR haNKs can also mediate PD-L1-dependent tumor growth inhibition in immunodeficient mice bearing human HNSCCs, possibly through the ability of PD-L1 CAR haNKs to induce IFNγ-dependent PD-L1 expression on tumor cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig6-v1.jpg)
+
+**Figure 6.:** NOD-scid IL2Rgammanull (NSG) mice bearing parental (A) or PD-L1 knockout (B) UMSCC-1 tumors were treated with PD-L1 CAR haNKs (1 × 107 cells IP, beginning day 14, twice weekly for six doses, n = 10 mice/group) or 1xPBS control and primary tumors were followed for growth. Individual tumor growth curves shown on the left, with summary growth curves shown on the right. The number of mice that rejected established tumors is inset. Significance was determined by 2-way ANOVA of repeat measures with the treatment condition as the variable. Results from one of two independent experiments with similar results are shown. *, p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54854/elife-54854-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** NOD-scid IL2Rgammanull (NSG) mice bearing parental UMSCC-1 tumors were treated with one dose of PD-L1 CAR haNKs (1 × 107 cells IP) or 1xPBS control. 24 hr after treatment, tumor cell PD-L1 expression was determined by flow cytometry (A). Representative histograms shown, and MFI inset into legend. PD-L1 expression was also assessed by immunofluorescence (B, PD-L1 in green, DAPI nucleus stain in blue). (C) IFNγ production by PD-L1 CAR haNK cells alone or 4 hr after co-incubation at a 1:1 E:T ratio with UMSCC-1 cells was measured by ELISA. **, p<0.01.
 
 The ability of PD-L1 CAR haNKs to reduce the frequency of immune subsets endogenously expressing high levels of PD-L1 may be an important complementary mechanism of action to tumor cell killing. To explore whether this phenomenon can also be observed in patients with cancer, peripheral leukocytes from patients with advanced stage HPV negative HNSCC were co-incubated ex vivo with PD-L1 CAR haNK and changes in immune cell frequency were determined by flow cytometry (Figure 7A). In the peripheral blood of HNSCC patients, macrophages expressed the greatest levels of PD-L1, and CD14+ and CD15+ myeloid subsets expressed greater levels of PD-L1 compared to lymphoid or NK cells. PD-L1 high macrophages and CD14+/CD15+ myeloid cell subsets were significantly reduced following 24 hr of co-incubation with PD-L1 CAR haNKs (Figure 7B&C). These results validated that PD-L1 CAR haNKs possess the ability to reduce the cell frequency of leukocytes endogenously expressing high PD-L1 from patients with HNSCC.
 
@@ -80,40 +140,190 @@ Based upon our data along with the data of others, CAR targeting of NK cells app
 
 ## Materials and methods
 
-## Tumor cells and culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>UM-SCC-1</td>
+      <td>U of Michigan</td>
+      <td></td>
+      <td>Available from EMDMillipore</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>UM-SCC-11A</td>
+      <td>U of Michigan</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>UM-SCC-74B</td>
+      <td>U of Michigan</td>
+      <td></td>
+      <td>Available from EMDMillipore</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>UM-SCC-109</td>
+      <td>U of Michigan</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>UM-SCC-47</td>
+      <td>U of Michigan</td>
+      <td></td>
+      <td>Available from EMDMillipore</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>MOC1</td>
+      <td>WashU St. Louis</td>
+      <td></td>
+      <td>Available from Kerafast</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>MOC2</td>
+      <td>WashU St. Louis</td>
+      <td></td>
+      <td>Available from Kerafast</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>UM-SCC-1 PD-L1 ko</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Knockout by Synthego, cells available from senior author</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>UM-SCC-11A PD-L1 ko</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Knockout by Synthego, cells available from senior author</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>MOC1 PD-L1 ko</td>
+      <td>This paper</td>
+      <td>Sc-425636</td>
+      <td>Santa Cruz knockout reagents, cells available from senior author</td>
+    </tr>
+    <tr>
+      <td>NK cell therapy</td>
+      <td>haNKs</td>
+      <td>NantKWest</td>
+      <td></td>
+      <td>Effector cells</td>
+    </tr>
+    <tr>
+      <td>NK cell therapy</td>
+      <td>PD-L1 CAR haNKs</td>
+      <td>NantKWest</td>
+      <td></td>
+      <td>Effector cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Human IFNγ</td>
+      <td>Peprotech</td>
+      <td>300–02</td>
+      <td>In vitro stim (20 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Murine IFNγ</td>
+      <td>Biolegend</td>
+      <td>575304</td>
+      <td>In vitro stim (20 ng/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8</td>
+      <td>BioXCell</td>
+      <td>YTS 169.4</td>
+      <td>In vivo depletion (200 μg/injection)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IFNγ</td>
+      <td>BioXCell</td>
+      <td>XMG1.2</td>
+      <td>In vivo depletion (200 μg/injection)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TNFα</td>
+      <td>BioXCell</td>
+      <td>XT3.11</td>
+      <td>In vivo depletion (200 μg/injection)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IFNγ ELISA</td>
+      <td>R and D Systems</td>
+      <td>DIF50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PD-L1</td>
+      <td>Cell Signaling</td>
+      <td>E1L3</td>
+      <td>IF (1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tumor cells and culture
 
 A panel of four human papillomavirus (HPV) negative (UM-SCC-1, UM-SCC-11A, UM-SCC-74B and UM-SCC-109) and one HPV positive (UM-SCC-47) HNSCC cell lines were obtained from Drs. T. E. Carey, M. E. Prince, and C. R. Bradford at the University of Michigan (Ann Arbor, MI) and cultured as described (Brenner et al., 2010). Original stocks of genomically characterized (Onken et al., 2014) parental mouse oral cancer 1 (MOC1) and MOC2 cells were obtained from R. Uppaluri at Washington University (St. Louis, MO) and cultured as described (Judd et al., 2012). Cell lines were serially verified to be free of mycoplasma and other pathogens and used at low (<30) passage number. Cells were harvested for experiments using 0.25% trypsin. In some experiments, cells were exposed to human (PeproTech) or murine (Biolegend) recombinant IFNγ.
 
 NK cell therapy products haNK cells (Jochems et al., 2016) and haNK cells transduced with a second-generation CAR targeting PD-L1 produced through proprietary transduction and cell culture techniques were obtained from NantKWest through a Cooperative Research and Development Agreement. Cells were irradiated (15 Gy) prior to cryopreservation and shipment from NantKWest to the NIH for experimental use.
 
-## PD-L1 knockout cells
+### PD-L1 knockout cells
 
 PD-L1 knockout was achieved with CRISPR/Cas9 genome editing without antibiotic selection using commercially available plasmids for human (Synthego) and murine (Santa Cruz) cells. Following CRISPR/Cas9 genome editing, cells were exposed to IFNγ (20 ng/mL for 24 hr) and sorted to >99% knockout purity (PD-L1 negative) using fluorescence-activated cell sorting (BD Aria III sorter).
 
-## In vivo experiments
+### In vivo experiments
 
 Wild-type C57BL/6 mice were purchased from Taconic and NOD-scid IL2Rgammanull (NSG) mice were purchased from Jackson Laboratories. Mice were housed in a pathogen-free environment and all experiments were performed under an Animal care and Use Committee approved protocol. Syngeneic murine or xenograft human tumors were established by subcutaneous flank injection of tumor cells in Matrigel (Trevigen, 30% by volume). Mice were assessed for tumor growth three times weekly and tumor volume was calculated as: (length2 x width)/2. In some experiments, antibody-based depletion was performed via intraperitoneal (IP) injection of a CD8 (clone YTS 169.4, BioXCell), IFNγ (clone XMG1.2) or TNFα (clone XT3.11) mAb, 200 μg each twice weekly starting 13 days following tumor implantation. Murine blood chemistries were performed by the National Institutes of Health Department of Laboratory Medicine.
 
-## Impedance analysis
+### Impedance analysis
 
 Real-time assessment of alterations in cell viability upon exposure to effector cells was measured via impedance analysis using the xCELLigence RTCA platform as described (Sun et al., 2018). For all experiments, target cells were plated (1 × 104 cells/well) and allowed to adhere and gain impedance overnight in exponential growth phase before the addition of effectors. For each experiment, the effector-to-target ratio detailed in the figure legends is based upon the number of initially plated target cells. Triton X-100 (0.2%) was used as a positive control for complete cell lysis. Percent loss of cell index was calculated as: 1 - (experimental cell index/control cell index) for a given timepoint.
 
-## Flow cytometry
+### Flow cytometry
 
 PD-L1 CAR haNK cells were assessed for PD-L1 CAR expression via staining with biotinylated recombinant human PD-L1 (ACROBiosystems) followed by staining with a fluorophore conjugated to streptavidin. Cultured tumor cells harvested for flow analysis were exposed to CD16/32 (FcR block) antibodies for 10 min prior to staining with primary conjugated antibodies for 30 min. For some experiments, spleen and tumors were harvested from mice and processed into single cell suspensions for flow analysis. Only fresh tissues processed as described (Clavijo et al., 2017) were analyzed. Following FcR block, primary conjugated antibodies were applied for 45 min. Anti-human PD-L1 (clone 29E.203), MICA/B (6D4), HLA-A/B/C (W6/32), CD45 (H130), CD31 (WM59), CD140a/PDGFR (aR1), CD11b (ICRF44), CD68 (Y1/82A), CD16 (3G8), CD33 (WM53), CD14 (M5E2), CD15 (W6D3), HLA-DR (L243), CD3 (SK7), CD4 (OKT4), CD8 (SK1), FoxP3 (206D), CD11c (3.9), CD25 (M-A251) and anti-mouse PD-L1 (10F.9G2), CD45.2 (104), CD31 (390), CD140a/PDGFR (APA5), CD11b (M1/70), F4/80 (Bm8), Ly6G (1A8), Ly6C (HK1.4), CD3 (17A2), NK1.1 (PK136), CD4 (GK1.5), CD8 (53–6.7), FoxP3 (FJK-16s), CD11c (N418), CD25 (PC61.5) antibodies were purchased from Biolegend, Thermo or BD Biosciences. Isotype control antibodies (Biolegend) and fluorescence-minus-one approaches were used to ensure staining specificity. For some experiments, cells were fixed and permeabilized for intranuclear staining using the FoxP3 transcription factor staining buffer set (eBioscience) per manufacturer recommendations. Dead cells were excluded using non-fixable (Sytox, Thermo) or fixable (Zombie, BioLegend) viability dyes. All analyses were performed on a BD Fortessa analyzer running FACSDiva software and interpreted using FlowJo (vX10.0.7r2).
 
-## IFNγ ELISA
+### IFNγ ELISA
 
 Human IFNγ ELISA kit was purchased from R and D Systems and used per manufacturer protocol.
 
-## Cancer patient samples
+### Cancer patient samples
 
 Whole peripheral blood from patients with advanced stage HPV-negative head and neck cancer was obtained via venipuncture in green top heparinized tubes under an IRB-approved biospecimen procurement protocol (NIDCD 18-DC-0051, NCT03429036). Leukocytes were enriched using a 40/80% Percoll density gradient (cells suspended in upper 40% layer with 80% underlay, 325xg for 23 min at room temperature with slow centrifuge brake and acceleration).
 
-## Multiplex immunofluorescence staining and multispectral imaging
+### Multiplex immunofluorescence staining and multispectral imaging
 
 We stained 5-µm-thick formalin-fixed paraffin-embedded sections from human xenograft tumors (UMSCC-1) using Opal multiplex kits (PerkinElmer/Akoya), for a panel of DAPI, and PD-L1 (clone E1L3) internally validated on a fully automated platform (Leica Bond RX). Multispectral images were acquired using Polaris System (PerkinElmer/Akoya).
 
-## Statistics
+### Statistics
 
 Tests of significance between pairs of data are reported as p-values, derived using a student’s t-test with a two-tailed distribution and calculated at 95% confidence. Comparison of multiple sets of data was achieved with analysis of variance (ANOVA) with Tukey’s multiple comparisons. Differences in summary tumor growth curves were determined via 2-way ANOVA of repeat measures with the treatment condition as the variable All error bars indicate standard deviation. Statistical significance was set to p<0.05. All analysis was performed using GraphPad Prism v7.

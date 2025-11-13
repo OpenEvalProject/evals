@@ -21,12 +21,12 @@
 ### Affiliations
 
 1. Antimicrobial Resistance and Healthcare Associated Infections (AMRHAI) Reference Unit, National Infection Service, Public Health England London United Kingdom
-2. https://ror.org/052gg0110 Nuffield Department of Medicine, University of Oxford Oxford United Kingdom
-3. https://ror.org/03h2bh287 Oxford University Hospitals NHS Trust Oxford United Kingdom
-4. https://ror.org/0378g3743 Animal and Plant Health Agency Addlestone United Kingdom
-5. https://ror.org/00aps1a34 NIHR Biomedical Research Centre Oxford United Kingdom
-6. https://ror.org/00pggkr55 Centre for Ecology and Hydrology Wallingford United Kingdom
-7. https://ror.org/052gg0110 Department of Biology, University of Oxford Oxford United Kingdom
+2. Nuffield Department of Medicine, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Oxford University Hospitals NHS Trust Oxford United Kingdom ([ROR:03h2bh287](https://ror.org/03h2bh287))
+4. Animal and Plant Health Agency Addlestone United Kingdom ([ROR:0378g3743](https://ror.org/0378g3743))
+5. NIHR Biomedical Research Centre Oxford United Kingdom ([ROR:00aps1a34](https://ror.org/00aps1a34))
+6. Centre for Ecology and Hydrology Wallingford United Kingdom ([ROR:00pggkr55](https://ror.org/00pggkr55))
+7. Department of Biology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -48,15 +48,144 @@ To explore Enterobacterales plasmid diversity and sharing across niches in a geo
 
 Our dataset of n=3697 plasmids from n=1458 isolates (Figure 1a, Table 1) contained bacteria from human BSIs (n=1880 plasmids from n=738 isolates), livestock-associated sources (cattle, pig, poultry, and sheep faeces, soils surrounding livestock farms; n=1155 plasmids from n=512 isolates), and from wastewater treatment works (WwTW)-associated sources (influent, effluent, waterways upstream/downstream of effluent outlets; n=662 plasmids from n=208 isolates). All sampling sites were <60 km apart (Figure 1b) and timeframes overlapped (2008–2020; Figure 1c). Isolates had a median 2 plasmids (IQR = 1–4, range = 0–16). Major Enterobacterales genera represented included: n=1044 Escherichia, n=212 Klebsiella, n=125 Citrobacter, and n=63 Enterobacter.
 
+**Table 1.**
+ Isolate niche breakdown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Niche</th>
+      <th>Sample type(s)</th>
+      <th>No. isolates</th>
+      <th>No. plasmids</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bloodstream infections (BSIs)</td>
+      <td>Community, nosocomial, and other healthcare-associated infections</td>
+      <td>738</td>
+      <td>1880</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Livestock-associated</td>
+      <td>Cattle faeces</td>
+      <td>133</td>
+      <td>215</td>
+    </tr>
+    <tr>
+      <td>Sheep faeces</td>
+      <td>113</td>
+      <td>286</td>
+    </tr>
+    <tr>
+      <td>Pig faecesan</td>
+      <td>104</td>
+      <td>352</td>
+    </tr>
+    <tr>
+      <td>Poultry faeces</td>
+      <td>34</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>Soil surrounding livestock farms</td>
+      <td>128</td>
+      <td>190</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Wastewater treatment work (WwTW)-associated</td>
+      <td>Influent</td>
+      <td>88</td>
+      <td>313</td>
+    </tr>
+    <tr>
+      <td>Upstream waterways</td>
+      <td>25</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Effluent and downstream waterways</td>
+      <td>95</td>
+      <td>289</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total</td>
+      <td>1458</td>
+      <td>3697</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/85302/elife-85302-fig1-v2.jpg)
 
-**Figure 1.:** .(a) Number of chromosomes and plasmids by niche, stratified by isolate genus. (b) Map of approximate, relative distances between sampling sites, coloured by niche (human bloodstream infection [BSI], livestock-associated [cattle, pig, poultry, and sheep faeces, soils nearby livestock sites], and wastewater treatment work [WwTW]-associated sources [influent, effluent, waterways upstream/downstream of effluent outlets]). Number in circles indicates how many of the n=1458 isolates are from that location. (c) Sampling timeframe for BSI and REHAB (non-BSI) isolates.
+**Figure 1.:** (a) Number of chromosomes and plasmids by niche, stratified by isolate genus. (b) Map of approximate, relative distances between sampling sites, coloured by niche (human bloodstream infection [BSI], livestock-associated [cattle, pig, poultry, and sheep faeces, soils nearby livestock sites], and wastewater treatment work [WwTW]-associated sources [influent, effluent, waterways upstream/downstream of effluent outlets]). Number in circles indicates how many of the n=1458 isolates are from that location. (c) Sampling timeframe for BSI and REHAB (non-BSI) isolates.
 
 Sampling niche was strongly associated with isolate genus (Fisher’s test, p-value <0.001; Table 2). Klebsiella isolates were disproportionately derived from BSI versus other niches (22% [161/738] Klebsiella from BSI versus 8% [51/669] from other niches). Citrobacter and Enterobacter were disproportionately derived from WwTW-associated versus other niches (51% [107/208] Citrobacter and Enterobacter from WwTW versus 6% [81/1250] Citrobacter and Enterobacter from other niches). Chromosomal Mash trees (see Materials and methods) for the two most common species in the dataset, Escherichia coli (72% [1,044/1,458]; see Appendix 1—figure 1) and Klebsiella pneumoniae (11% [163/1458]; Appendix 1—figure 2), demonstrated intermixing of human and non-human isolates within clades, consistent with species lineages not being structured by niche.
 
+**Table 2.**
+ Isolate genus breakdown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Niche</th>
+      <th colspan="5">Isolate genus</th>
+      <th rowspan="2">Total</th>
+    </tr>
+    <tr>
+      <th>Citrobacter</th>
+      <th>Enterobacter</th>
+      <th>Escherichia</th>
+      <th>Klebsiella</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bloodstream infections (BSIs)</td>
+      <td>6</td>
+      <td>11</td>
+      <td>547</td>
+      <td>161</td>
+      <td>13</td>
+      <td>738</td>
+    </tr>
+    <tr>
+      <td>Livestock-associated</td>
+      <td>54</td>
+      <td>10</td>
+      <td>433</td>
+      <td>14</td>
+      <td>1</td>
+      <td>512</td>
+    </tr>
+    <tr>
+      <td>Wastewater treatment work (WwTW)-associated</td>
+      <td>65</td>
+      <td>42</td>
+      <td>64</td>
+      <td>37</td>
+      <td>0</td>
+      <td>208</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>125</td>
+      <td>63</td>
+      <td>1044</td>
+      <td>212</td>
+      <td>14</td>
+      <td>1458</td>
+    </tr>
+  </tbody>
+</table>
+
 We contextualised our plasmids within known plasmid diversity using ‘plasmid taxonomic units’ (PTUs; using COPLA, see Materials and methods), designed to be equivalent to a plasmid ‘species’. We found 32% (1193/3697) of plasmids were unclassified, highlighting the substantial plasmid diversity within this geographically restricted dataset, whilst the remaining 68% (2,504/3,697) were assigned a PTU. In total, we found n=67 known PTUs, containing a median 9 plasmids (IQR = 4–30, range = 1–556), with the largest PTU-FE (556/2,504), corresponding to F-type Escherichia plasmids.
 
-## Near-identical plasmid sharing observed between human and livestock-associated Enterobacterales
+### Near-identical plasmid sharing observed between human and livestock-associated Enterobacterales
 
 We screened for near-identical plasmids shared across isolates by grouping those with a low Mash distance (d<0.0001) and highly similar lengths (longest plasmid ≤1% longer than shorter plasmids; note that this near-identical threshold becomes an identical threshold for extremely small plasmids; see Materials and methods). We found n=225 near-identical groups of ≥2 members, recruiting 19% (712/3697) plasmids. Bootstrapping accumulation curves for near-identical plasmid groups and singletons per the number of isolates (ACs; see Materials and methods), we revealed a highly ‘open’ accumulation (Heap’s parameter γ=0.97, Appendix 1—figure 3), suggesting further isolate sampling would detect more unique plasmids approximately linearly. Restricted to BSI/livestock-associated isolates alone, we found similar curves for both niches (BSI γ=0.98, livestock-associated γ=0.94), suggesting they had similar levels of plasmid diversity.
 
@@ -68,7 +197,7 @@ The most common group size of near-identical plasmids were pairs, representing 7
 
 Sharing between BSI and livestock-associated isolates was supported by 8/17 cross-niche groups (n=45 plasmids). Of these, n=3/8 groups contained BSI/sheep plasmids: one group contained mobilisable Col-type plasmids, the remaining two groups contained conjugative FIB-type plasmids, of which one group contained plasmids carrying the AMR genes aph(3'')-Ib, aph(6)-Id, blaTEM-1, dfrA5, sul2, and the other group contained plasmids carrying the MDR efflux pump protein robA (see Materials and methods). A further n=2/8 groups contained BSI/pig mobilisable Col-type plasmids, of which one group other carried the AMR genes aph(3'')-Ib, aph(6)-Id, dfrA14, and sul2. Lastly, n=1/8 groups contained BSI/poultry non-mobilisable Col-type plasmids, n=1/8 contained BSI/pig/poultry/influent non-mobilisable Col-type plasmids, and n=1/8 contained BSI/cattle/pig/poultry/influent mobilisable Col-type plasmids.
 
-## Plasmid clustering reveals a diverse but intertwined population structure across niches
+### Plasmid clustering reveals a diverse but intertwined population structure across niches
 
 Near-identical plasmids shared across niches are a likely signature of recent transfer events, but we also wanted to examine the wider plasmid population structure. We therefore agnostically clustered all plasmids based on alignment-free sequence similarity (clusters were groups of n≥3 plasmids; see Materials and methods and Appendix 1—figures 4 and 5). We defined n=247 plasmid clusters with median 5 members (IQR = 3–10, range = 3–123) recruiting 71% (2627/3697) of the plasmids. The remainder were either singletons (i.e. single, unconnected plasmids; 19% [718/3697]) or doubletons (i.e. pairs of connected plasmids; 10% [352/3697]). By bootstrapping b=1000 ACs for plasmid clusters, doubletons, and singletons found against number of isolates sampled (Appendix 1—figure 6; see Materials and methods), we estimated that the rarefaction curve had a Heap’s parameter γ=0.75, suggesting further isolate sampling would likely detect more plasmid diversity and clusters.
 
@@ -84,7 +213,7 @@ Plasmids carrying AMR genes were found in 21% (52/247) of the plasmid clusters (
 
 The beta-lactamase blaTEM-1 was the most common AMR gene detected (8% of total AMR gene annotations [424/5402]; see Materials and methods). In terms of sequence length (bp), plasmids made up 3.1% of the overall dataset but 13.8% of the blaTEM-1 -carrying proportion. Of the plasmid clusters, 16% (39/247) carried blaTEM-1, and of these nine clusters were seen in human BSI and at least one other niche. Plasmid clusters either variably or always carrying blaTEM-1 were strongly associated with BSI (p<0.01, Chi-squared test X2=8.19, 33/161 of BSI clusters containing blaTEM-1 vs. 5/86 for non-BSI clusters) and carried a higher number of other AMR genes (p<0.01, Wilcoxon text of blaTEM-1-plasmid clusters vs. others; see Appendix 1—figure 7).
 
-## An intertwined ecology of plasmids across human and livestock-associated niches
+### An intertwined ecology of plasmids across human and livestock-associated niches
 
 Plasmids can change their genetic content, particularly when subject to new selective pressures (Rodríguez-Beltrán et al., 2021; Pesesky et al., 2019). Many plasmids have a structure with a ‘backbone’ of conserved core genes and a ‘cargo’ of variable accessory genes (Orlek et al., 2017b; Matlock et al., 2021a; Coluzzi et al., 2022). We wanted to explore evidence for cross-niche plasmids with minimal mutational evolution in a shared backbone (compatible withapproximately years of evolutionary separation) but variable accessory gene repertoires.
 
@@ -98,7 +227,7 @@ Alongside the core-gene phylogenies, we generated gene repertoire heatmaps (exam
 
 **Figure 4.:** (a) Consensus gene ordering for plasmid cluster 2, coloured by gene type (total n=99 plasmids; n=1 Salmonella enterica isolate omitted). Genes are coloured by core, accessory, or transposase. (b) Plasmid core-gene phylogeny with tips coloured by sampling niche. The grey circle highlights the clade of n=44 plasmids which were further analysed. (c) Plasmid host chromosome core-gene phylogeny with tips coloured by sampling niche. Plasmid and host phylogeny tips are connected in a ‘tanglegram’ which connects pairs of plasmids and chromosomes from the same isolate. (d) Visualisation of the pangraph for n=44 plasmids in the grey-circled clade in (b). Blocks are coloured by presence in plasmids. (e) Core blocks (found in at least 95% of the n=44 plasmids). (f) Accessory blocks (found in less than 95% of the n=44 plasmids).
 
-## Plasmid dissemination between human and livestock-associated niches is not structured by bacterial host
+### Plasmid dissemination between human and livestock-associated niches is not structured by bacterial host
 
 Alongside vertical inheritance, conjugative and mobilisable plasmids are capable of inter-host transfer, crossing between bacterial lineages, species, up to phyla (Redondo-Salvo et al., 2020). Phylogenetic analysis can determine whether plasmid evolution between BSI and livestock-associated niches is driven by host clonal expansion or other means, as well as allow us to explore the early emergence of AMR gene carrying plasmids.
 
@@ -130,47 +259,51 @@ In conclusion, this study presents to our knowledge the largest evaluation of sy
 
 Livestock-associated isolates n=247 Enterobacterales isolates from farm-proximate soils and poultry faeces (n=19 farms; n=5 cattle, n=4 pig, n=5 poultry, n=5 sheep) were collected and sequenced for this study in 2017–2020. DNA extraction and sequencing was performed as in Shaw et al., 2021. Genomes were hybrid assemblies reconstructed using Unicycler (Wick et al., 2017) (v. 0.4.4; default hybrid assembly parameters except --min_component_size 500 --min_dead_end_size 500). Only complete assemblies (plasmids and chromosomes) were considered (n=162/247).
 
-## BSI isolates
+### BSI isolates
 
 Sequenced Human BSI Enterobacterales isolates from patients presenting to n=4 hospitals within Oxfordshire, UK, September 2008–December 2018, as described in Lipworth et al., 2021, were also included. Although all patients were sampled in Oxfordshire, a total of n=505/738 patients resided in Oxfordshire, n=133/738 in surrounding counties, and n=100/738 had location information omitted. Only complete assemblies (n=738/953 total assembled) were considered.
 
-## Other livestock-associated and WwTW-associated isolates
+### Other livestock-associated and WwTW-associated isolates
 
 Enterobacterales isolates from faeces from the n=14 non-poultry farms and wastewater influent, effluent, and waterways upstream/downstream of effluent outlets surrounding n=5 WwTWs, across three seasonal timepoints in 2017 were included (as in Shaw et al., 2021), were included. Only complete assemblies (n=558/827 total assembled) were considered.
 
-## Taxonomic assignment
+### Taxonomic assignment
 
 Chromosome STs were determined with mlst, 2017 (v. 2.19.0; PubMLST database; Jolley and Maiden, 2010). For the n=11/1458 chromosomes which could not be typed with mlst, species were determined with the PubMLST ‘species ID’ web-tool (Jolley et al., 2018), for which all had a support = 100, except for Lelliottia nimipressuralis (support = 83). Of these, n=5/11 were from BSI, n=4/11 from livestock, and n=2/11 from effluent/downstream of WwTWs. From the BSI isolates, we also included n=2 Aeromonas spp., a non-Enterobacterales genus from the wider Gammaproteobacteria class.
 
-## Chromosome trees
+### Chromosome trees
 
 Trees for E. coli and K. pnemoniae chromosomes were produced using Mashtree (Katz et al., 2019) on ‘accurate’ mode (--mindepth 0 --numcpus 12).
 
-## PTU classification
+### PTU classification
 
 Plasmids were assigned a PTU using COPLA (Redondo-Salvo et al., 2021) (default parameters except -t circular, -k Bacteria, -p Pseudomonadota, -c Gammaproteobacteria, and -o Enterobacterales) (Redondo-Salvo et al., 2020). COPLA compares query plasmids to a database of PTU reference plasmids, assigning a PTU when both (i) the ANI >0.7 along 50% of the length of the smallest plasmid in the comparison and (ii) a graph-neighbouring condition to existing PTU clusters is satisfied. The COPLA reference database contains over 10,000 curated, non-redundant plasmids retrieved from the 84th NCBI RefSeq database in 2017 (Pruitt et al., 2007). We contextualised our plasmids within known plasmid diversity using COPLA to determine each plasmid’s ‘PTU’ (see Materials and methods), which is designed to be equivalent to a ‘species’ concept for plasmids (Redondo-Salvo et al., 2021). Briefly, COPLA classifies query plasmids based on average nucleotide identity (ANI) against a non-redundant reference plasmid database where most plasmids have been assigned to a reference PTU (Pruitt et al., 2007). Within our sample, 64% (2369/3697) plasmids were assigned a PTU and 4% (135/3,697) a putative PTU (i.e. the query plasmid was clustered with three unclassified reference plasmids). This is consistent with a previous COPLA analysis of 1000 Enterobacterales plasmids which found that 63% were classified into a PTU (Redondo-Salvo et al., 2021). The remaining 32% (1193/3697) of plasmids were unclassified (i.e. connected set with less than four plasmids) highlighting the previously unsampled plasmid diversity within our dataset. In total, we found n=67 known PTUs, containing a median 9 plasmids (IQR = 4–30, range = 1–556), where the largest assigned PTU (556/2504) was PTU-FE, corresponding to F-type Escherichia plasmids (Matlock et al., 2021a; Rozwandowicz et al., 2018). The proportion of unclassified plasmids was higher in environmental/livestock samples (33%; 385/1155) versus BSI samples (26%; 485/1880), emphasising the underrepresentation of non-human plasmids in reference plasmid databases.
 
-## Plasmid annotation
+### Plasmid annotation
 
 All plasmids were annotated with Prokka (Seemann, 2014) (v. 1.14.5) with default parameters. For replicon typing, Abricate (Seeman, 2015) (v. 1.0.0) was used with the PlasmidFinder (Carattoli et al., 2014), ISfinder (Siguier et al., 2006), and BacMet (Pal et al., 2014) databases with default parameters and output filtered for 80% minimum coverage. For annotating AMR genes, NCBI Antimicrobial Resistance Gene Finder (AMRFinderPlus) (Feldgarden et al., 2021) (v. 3.10.18) was used with default parameters. To assign putative plasmid mobilities, we used MOB-typer from MOB-suite (Robertson and Nash, 2018) (v. 3.03) with default parameters. MOB-typer predicts mobility based on annotations of relaxase (mob), mating pair formation (MPF) complex, and oriT genes. Briefly, a plasmid is putatively labelled conjugative if it has both relaxase and MPF, mobilisable if it has either relaxase or oriT but no MPF, and non-mobilisable if it has no relaxase and oriT.
 
-## Near-identical plasmid screening
+### Near-identical plasmid screening
 
 Groups of near-identical plasmids were detected as connected components in a plasmid-plasmid network with Mash distance (Ondov et al., 2016) (v. 2.3; default parameters except sketch size -s 1000000) weighted edges, at a threshold d<0.0001. Briefly, Mash distance estimates an evolutionary distance on a reduced-length MinHash sketch of the sequences. Since Mash is a probabilistic estimate of evolutionary distance, we confirmed the probability of seeing any of our pairwise Mash distances in the near-identical groups by chance was 0. For whole genomes, Mash distance has a strong positive correlation with ANI (Figueras et al., 2014). We also required the shortest plasmid to be within 1% length (bp) of the longest plasmid, to account for assembly errors. Network analysis was performed using the igraph (Csardi and Nepusz, 2006) library (v. 1.2.7) in R.
 
-The stringency of a k-mer-based distance threshold for near-identical plasmid clustering is equivalent to a threshold on the Jaccard index (i.e. rearranging the Mash distance calculation (d=-1kln(2j1+j)) with d=10–4 and k=21 gives a Jaccard index threshold of j=0.9958). The effect of this threshold varies with plasmid size: at very small plasmid sizes, clusters contain only identical plasmids because the presence of a single SNP means plasmids are placed in different clusters. For example, two 1552 bp plasmids with a single SNP (e.g. RHB03-C05_6 and RHB02-C22_6) will have a Mash distance of d=5.0 × 10–4 (>10–4 threshold). In contrast, at length = 150 kb a single SNP (not at the start/end of the plasmid) would lead to d=5.6 × 10–6 (<<10–4 threshold); even two 150 kbp plasmids with ~30 SNPs would have d≈2×10–4 (>10–4 threshold) and so be split into near-identical plasmids. Our analysis of plasmid sharing is therefore maximally conservative at small plasmid sizes but remains highly conservative for large plasmids.
+The stringency of a k-mer-based distance threshold for near-identical plasmid clustering is equivalent to a threshold on the Jaccard index (i.e. rearranging the Mash distance calculation ($d=\frac{-1}{k}ln(\frac{2j}{1+j})$) with d=10–4 and k=21 gives a Jaccard index threshold of j=0.9958). The effect of this threshold varies with plasmid size: at very small plasmid sizes, clusters contain only identical plasmids because the presence of a single SNP means plasmids are placed in different clusters. For example, two 1552 bp plasmids with a single SNP (e.g. RHB03-C05_6 and RHB02-C22_6) will have a Mash distance of d=5.0 × 10–4 (>10–4 threshold). In contrast, at length = 150 kb a single SNP (not at the start/end of the plasmid) would lead to d=5.6 × 10–6 (<<10–4 threshold); even two 150 kbp plasmids with ~30 SNPs would have d≈2×10–4 (>10–4 threshold) and so be split into near-identical plasmids. Our analysis of plasmid sharing is therefore maximally conservative at small plasmid sizes but remains highly conservative for large plasmids.
 
-## Accumulation and rarefaction curves
+### Accumulation and rarefaction curves
 
 To generate an accumulation curve, isolates were sampled without replacement in a random order. For each isolate, the new plasmid diversity was recorded. For Appendix 1—figure 3, we recorded the number of new near-identical plasmid groups and singletons. For Appendix 1—figure 9, we recorded the number of near-identical matches with BSI plasmids from only environmental/livestock isolates. For Appendix 1—figure 6, we recorded the number of new clusters, doubletons, and singletons. A bootstrapped average of b=1000 accumulation curves was plotted for the rarefaction curve. The bootstraps were also used to estimate Heap’s parameter (γ) by fitting a linear regression to log-log transformed data using standard R libraries. For γ<0, it is possible to sample the entire diversity, and for 1>γ>0, the diversity will increase with every additional sample (Tettelin et al., 2008).
 
-## Plasmid similarity
+### Plasmid similarity
 
-Plasmid Jaccard index (JI) was calculated using Mash (Ondov et al., 2016) (v. 2.3; default parameters except sketch size -s 1000000). The JI, given byJI⟮A,B⟯=|A∪B||A∩B|
+Plasmid Jaccard index (JI) was calculated using Mash (Ondov et al., 2016) (v. 2.3; default parameters except sketch size -s 1000000). The JI, given by
+
+$$
+JI⟮A,B⟯=\frac{|A∪B|}{|A∩B|}
+$$
 
 where A, B are the sets of k-mers of plasmids a, b, respectively. This measures extent of k-mer sharing between plasmids, range = 0–1, where 1 indicates an identical k-mer repertoire. Since the sketch size was larger than the plasmid lengths (except for one plasmid in the dataset, OX-ENV-67_2, which was larger than 1 Mbp at 1,310,597 bp and was not clustered; the next smallest was OX-WTW-80_2 at 394,284 bp), the calculated Jaccard indices were almost always exact.
 
-## Plasmid network and clustering
+### Plasmid network and clustering
 
 The determination of the plasmid-plasmid network, threshold, and clusters could be achieved with several alternative methodologies. Plasmid networks have previously been constructed by full sequence alignments (Yamashita et al., 2014), annotated genes (Branger et al., 2018), and alignment-free Mash distances (Matlock et al., 2021a; Acman et al., 2020; Jesus et al., 2019). We chose to use the Jaccard index of entire plasmid 21-mer distributions to capture coding sequences, their immediate contexts (Matlock et al., 2021b; Arcilla et al., 2016), and intergenic regions (Zhi et al., 2015; Delihas, 2009), all of which have known importance to bacterial evolution. Further, our contained previously unsampled diversity as seen by the PTU analysis, and because reference-based classifications such as MOB and replicon typing schemes are known to be incongruent (Orlek et al., 2017a) or unreliable: 16% (602/3697) of our plasmids had an unidentifiable replicon type, which is not uncommon (Rozwandowicz et al., 2018). The evolutionary histories of plasmids can incorporate multiple gain, loss, and rearrangement events in addition to mutations (Kizny Gordon et al., 2020), and as such, traditional measures of genetic relatedness (e.g. single nucleotide variant thresholds) used for genomic epidemiology of whole genomes are likely less appropriate here. These similarities formed the edge weights in a plasmid-plasmid network, which was subsequently thresholded to sparsify the network and allow the detection of clusters.
 
@@ -180,54 +313,74 @@ We defined plasmid clusters as groups of n≥3 plasmids with high within-cluster
 
 Near-identical plasmid groups were also included in the wider cluster analysis, as many were cross-compartmental and found across bacterial hosts (see earlier, Figure 2). Of the n=194/225 groups which were clustered, 100% (194/194) had all members fall within the same plasmid cluster, with n=30/247 clusters containing multiple near-identical plasmid groups. Only 6% (14/247) of plasmid clusters comprised exclusively near-identical plasmid groups, suggesting that near-identical groups of plasmids often have nearby genetically related plasmids. Examining the entire PTU distribution within clusters, most contained at least one unclassified plasmid (51%; 127/247) or plasmid assigned a putative PTU (9%; 23/247). However, many clusters exclusively contained just one known PTU (42%; 105/247).
 
-## Cluster homogeneity and completeness
+### Cluster homogeneity and completeness
 
-Homogeneity (h) and completeness (c) are dual conditional entropy-based measures, independent of cluster and metadata label distributions (Rosenberg and Hirschberg, 2007). A clustering satisfies homogeneity (h=1) if all cluster members have the same metadata label type. Consider a network with N nodes, partitioned by a set of metadata labels, M={mi|i=1,…,n}, and a set of communities, C={cj|j=1,…,m}. Let A={aij} represent the ijth entry in the contingency table of partitions. Hence, aij counts the number of nodes with label mi in community cj . We then sayh={1if H(M,C)=01−H(M|C)H(M)else
+Homogeneity (h) and completeness (c) are dual conditional entropy-based measures, independent of cluster and metadata label distributions (Rosenberg and Hirschberg, 2007). A clustering satisfies homogeneity (h=1) if all cluster members have the same metadata label type. Consider a network with $N$ nodes, partitioned by a set of metadata labels, $M={m_{i}|i=1,…,n}$, and a set of communities, $C={c_{j}|j=1,…,m}$. Let $A={a_{ij}}$ represent the ijth entry in the contingency table of partitions. Hence, $a_{ij}$ counts the number of nodes with label $m_{i}$ in community $c_{j}$ . We then say
 
-whereH(M|C)=−∑c=1|C|∑m=1|M|amcNlogamc∑c=1|M|amc
+$$
+h={1if H(M,C)=01−\frac{H(M|C)}{H(M)}else
+$$
 
-andH(M)=−∑m=1|M|∑c=1|C|amcnlog∑c=1|C|amcn
+where
 
-are the conditional entropy of the metadata given the clusters and the entropy of the clusters, respectively H(M|C)=0 when the cluster partition coincides with the metadata partition, and no new information is added. A cluster partition satisfies completeness (c=1) if all instances of a metadata label type are assigned the same cluster. Completeness is defined dually byc={1ifH(C,M)=01−H(C|M)H(C)else
+$$
+H(M|C)=−\sumc=1|C|\summ=1|M|\frac{a_{mc}}{N}log\frac{a_{mc}}{\sumc=1|M|a_{mc}}
+$$
+
+and
+
+$$
+H(M)=−\summ=1|M|\frac{\sumc=1|C|a_{mc}}{n}log\frac{\sumc=1|C|a_{mc}}{n}
+$$
+
+are the conditional entropy of the metadata given the clusters and the entropy of the clusters, respectively $H(M|C)=0$ when the cluster partition coincides with the metadata partition, and no new information is added. A cluster partition satisfies completeness (c=1) if all instances of a metadata label type are assigned the same cluster. Completeness is defined dually by
+
+$$
+c={1ifH(C,M)=01−\frac{H(C|M)}{H(C)}else
+$$
 
 The measures were calculated using the clver library (v. 0.1.1) in R.
 
-## Cluster pangenome analysis
+### Cluster pangenome analysis
 
 Cluster pangenomes were generated using Panaroo (Tonkin-Hill et al., 2020) (v. 1.2.9) with parameters default except --clean-mode sensitive --aligner mafft -a core --core_threshold 0.95. For core-gene alignments, the threshold was set at minimum 95% presence amongst clustered plasmids, whereby they were aligned using MAFFT (Katoh and Standley, 2013) (v. 7.407) with default parameters. An identical approach was taken for the host chromosome phylogeny in Figure 4. The median length of plasmids within a cluster was positively correlated with number of core genes (R=0.85, t=13.4, p-value <2.2e-16) and total pangenome size (R=0.87, t=14.6, p-value <2.2e-16).
 
-## Plasmid core-gene phylogenies
+### Plasmid core-gene phylogenies
 
 Maximum likelihood core-gene phylogenies were generated using IQ-Tree (Minh et al., 2020) (v. 2.0.6) with parameters -m GTR +F + I + G4 -keep-ident -T 2 -B 1000. The substitution model used was general time reversible (GTR) using empirical base frequencies form the alignment (F), allowing for invariable sites (I) and variable rates of substitution (G4). We used n=1000 ultrafast bootstraps (B 1000; see Minh et al., 2013) to visually inspect larger clades for support. Briefly, 95% support approximates a 95% probability that the clade is genuine. Only the n=62/69 clusters (excluding 6, 8, 26,2 9,3 2, 40, and 65) where every plasmid carried at least 1 core gene were analysed. Phylogenies were primarily plotted using the R library ggtree (Yu et al., 2017).
 
-## Fritz and Purvis’ D
+### Fritz and Purvis’ D
 
-Fritz and Purvis’ D measures phylogenetic signal for binary traits (Fritz and Purvis, 2010). First, we calculate the character state changes required to observe our phylogeny (dobs). To account for phylogeny size and prevalence, dobs is standardised under the two null models: (i) tip labels are random permuted (dr), and (ii) tip labels are distributed under the expectation of a Brownian motion model of evolution (db). Then, we defineD=(dobs−db¯)/(dr¯−db¯).
+Fritz and Purvis’ D measures phylogenetic signal for binary traits (Fritz and Purvis, 2010). First, we calculate the character state changes required to observe our phylogeny (dobs). To account for phylogeny size and prevalence, dobs is standardised under the two null models: (i) tip labels are random permuted (dr), and (ii) tip labels are distributed under the expectation of a Brownian motion model of evolution (db). Then, we define
+
+$$
+D=(d_{obs}−d_{b}¯)/(d_{r}¯−d_{b}¯).
+$$
 
 Hence, for D≈1, dobs follows dr more closely, and for D≈0, dobs follows db more closely. We calculated dobs n=10,000 times and averaged the result, as well as calculate p-values for significant deviation from dr or db. D was implemented using the R library caper (Orme, 2013). Fritz and Purvis’ D is normally used for cross-species analysis so is not benchmarked for plasmids. Results for phylogenies with less than 25 tips should be viewed more conservatively due to reduced statistical power in these instances.
 
 We considered the binary ‘trait’ of human or livestock-associated isolate and estimated D with n=10,000 permutations. We found 42% (11/26) clusters had D>0.5 (see Supplementary file 2). However, only 23% (6/26) of phylogenies were significantly different (p-value <0.05) from the conserved null model, compared to 50% (13/26) significantly different from the random null model.
 
-## Consensus gene synteny heatmaps
+### Consensus gene synteny heatmaps
 
 For each cluster, we first generated a list of every possible pair of genes in the pangenome. Then for each plasmid, we counted the distance between these pairs, modulo the number of genes in the plasmid. If a gene was absent in a plasmid, NA was used. We then calculated the median of these values across all plasmids in the cluster. We then built a dendrogram from a hierarchical clustering of the median distances. The order of the tip labels in the dendrogram were then used as the ‘consensus gene synteny’.
 
-## Accessory gene distances
+### Accessory gene distances
 
 Plasmid accessory gene distances were calculated using pairwise Jaccard distances on gene presence-absences matrices. For plotting the cluster-wise plasmid core-gene cophenetic distance against accessory gene presence-absence Jaccard distance, only the n=26/62 clusters with at least 50 accessory genes were plotted. The log-transformed linear regression of Jaccard distance of accessory genes presence against core-gene cophenetic distance was fitted in R with standard libraries.
 
-## Chromosome core-gene phylogeny
+### Chromosome core-gene phylogeny
 
 An identical approach was taken to the plasmid phylogenies. E. coli phylogroups were typed using EzClermont (Waters et al., 2020) (v. 0.7.0) with default parameters. Robinson-Foulds distance was calculated using the R library phangorn (Schliep, 2011).
 
-## Plasmid mutation rate
+### Plasmid mutation rate
 
 Mutation rates per base pair in microbes typically arise from DNA replication and tend to be below m=10–9 per site per generation (Drake, 1991) or perhaps as low as 10–10 per site per generation (Foster et al., 2015; Wielgoss et al., 2013). For a plasmid of size L, one therefore expects L × m mutations per plasmid per generation. For example, if the plasmid has L=105 then in each generation 1 in 10,000 plasmids will gain a mutation. The generation time of E. coli per day in the human gut has been estimated to be between 6 and 20 generations per day (Ghalayini et al., 2018). For large plasmids that exist at a copy number of ~1, the plasmid generation time is the cell generation time. More generally, for a plasmid copy number p the number of replications of the plasmid expected for a given number of cell generations g will be p × g (assuming that plasmid copies are simply and linearly related to the realised number of replications per cell). A crude estimate for the expected mutation rate per time period for a plasmid is therefore given by L × m × p × g. For a plasmid of L=100 kbp and P=1, assuming m=[0.1–1] ×10–9 per site per generation and g=[6–20]×365 per year, one would expect it to accumulate ~0.5 mutations a year (between ~0.02 and 0.7 depending on assumptions). One obtains the same result for L=10 kbp and P=10. There is a strong inverse correlation between plasmid size and copy number. This suggests that a suitable upper bound for the expected number of mutations for a typical plasmid per year (under neutral evolution) is of the order of magnitude of 1 SNP a year. This rough ‘SNPs and years’ rule-of-thumb appears consistent with known empirical results. For example: 100 kbp I1-type Shigella plasmids isolated between 2007 and 2010 in Vietnam were separated by at most 2 SNPs (Holt et al., 2013); 30 kbp X4-type plasmids carrying mcr-1 isolated between 2016 and 2018 in China were separated by most 4 SNPs (Shen et al., 2020) (analysis not shown); 63.5 kbp pOXA48-like plasmids (n=202) in K. pneumoniae collected across Europe between 2013 and 2014 as part of EUSCAPE were overwhelmingly within 2 SNPs of each other (176/202) (David et al., 2020); the same was true of 45.4 kbp IncX3 plasmids (n=135) from the EUSCAPE dataset (all were within 6 SNPs of each other; see Figure 4 of that paper); and also of 113.4 kbp pKpQIL-like plasmids (n=91) from the EUSCAPE dataset – although a minority of these plasmids were separated by up to 20 SNPs, which seems suggestive of either ancestry before the 2-year sampling frame or recombination.
 
-## Pangraph analysis
+### Pangraph analysis
 
 We used pangraph (Noll et al., 2022) (v. 0.5.0) to build a pangraph of the clade within plasmid cluster 2, using the --circular flag and otherwise default parameters. We removed duplicated blocks from the pangraph. We used pangraph export (--edge-minimum-length 0, default parameters) to export the graph to GFA format and then visualised this using Bandage (Wick et al., 2015). Supplementary file 4 used Prokka annotations (see above) of the core and accessory pancontigs.
 
-## Data visualisation
+### Data visualisation
 
 Plots were primally produced using the R library ggplot2 (Gómez-Rubio, 2017), with additional graphics in BioRender (Munday, 2021).

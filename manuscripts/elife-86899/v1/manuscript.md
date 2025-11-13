@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/019whta54 Department of Ecology and Evolution, Biophore Building, University of Lausanne Lausanne Switzerland
+1. Department of Ecology and Evolution, Biophore Building, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
 2. Social Evolution Unit Chesières Switzerland
 
 † Corresponding author
 
 ## Abstract
 
-Understanding how a single genome creates distinct phenotypes remains a fundamental challenge for biologists. Social insects provide a striking example of polyphenism, with queen and worker castes exhibiting morphological, behavioral, and reproductive differences. Here, we show that trophic eggs, which do not contain an embryo and are primarily regarded as a source of food, play a role in the process of caste determination in the harvester ant Pogonomyrmex rugosus . When first instar larvae were given access to trophic eggs, they mostly developed into workers. By contrast, larvae without access to trophic eggs developed into queens. We found that trophic eggs differ in many ways from viable eggs, including texture, morphology, and their contents of protein, triglycerides, glycogen, sugar, and small RNAs. Moreover, comparison of miRNA fragment size distributions suggests differences in the composition of miRNAs between the two egg types. This is the first demonstration of trophic eggs playing a role in caste determination in social insects.
+Understanding how a single genome creates distinct phenotypes remains a fundamental challenge for biologists. Social insects provide a striking example of polyphenism, with queen and worker castes exhibiting morphological, behavioral, and reproductive differences. Here, we show that trophic eggs, which do not contain an embryo and are primarily regarded as a source of food, play a role in the process of caste determination in the harvester ant Pogonomyrmex rugosus. When first instar larvae were given access to trophic eggs, they mostly developed into workers. By contrast, larvae without access to trophic eggs developed into queens. We found that trophic eggs differ in many ways from viable eggs, including texture, morphology, and their contents of protein, triglycerides, glycogen, sugar, and small RNAs. Moreover, comparison of miRNA fragment size distributions suggests differences in the composition of miRNAs between the two egg types. This is the first demonstration of trophic eggs playing a role in caste determination in social insects.
 
 ## Introduction
 
@@ -35,19 +35,102 @@ While conducting egg cross-fostering experiments in the ant Pogonomyrmex rugosus
 
 ## Results
 
-## Trophic and viable egg characteristics
+### Trophic and viable egg characteristics
 
 P. rugosus queens lay two types of eggs that are morphologically different. Viable eggs are white with a bright surface and have a distinct oval shape, a homogenous content as well as a solid chorion (Figure 2A), while trophic eggs are rounder, have a smooth surface and a granular-looking content as well as a fragile chorion (Figure 2D). Trophic eggs had a significantly larger volume (94.3 ± 4.3 nL; n = 11) than viable eggs (n = 14; 63.3 ± 1.6 nl; two-sample t-test, t(23) = –9.54, p = 1.8 × 10–09). While viable eggs showed embryonic development at 25 and 65 hr (Figure 2B and C) there was no such development for trophic eggs (Figure 2E, F). P. rugosus workers only laid viable eggs. They started to lay eggs approximately 3 weeks after queen removal (n = 12 queenless recipient colonies), and approximately 90% of the eggs successfully hatched. However, only approximately 5% successfully developed into pupae which were all males.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86899/elife-86899-fig2-v1.jpg)
 
-**Figure 2.:** P. rugosus queens.Morphology of viable (A) and trophic (D) eggs. Fluorescence images with DAPI-counterstained nuclei showing embryonic development of viable eggs at approximately 25 hr (B) and 65 hr (C). For trophic eggs, there was no embryonic development at 25 hr (E) nor at 65 hr (F).
+**Figure 2.:** Morphology of viable (A) and trophic (D) eggs. Fluorescence images with DAPI-counterstained nuclei showing embryonic development of viable eggs at approximately 25 hr (B) and 65 hr (C). For trophic eggs, there was no embryonic development at 25 hr (E) nor at 65 hr (F).
 
 The percentage of eggs that were trophic was higher before hibernation (61.6 ± 1.4% mean ± SE; n = 43 colonies) than after (50.3 ± 2.0%; LMER, t(86) = 5.04, p = 9 × 10–6). The production of the two types of eggs was not random (Wald–Wolfowitz runs tests, p-values for the 11 queens in Table 1). Instead, each of the 11 queens tended to lay relatively long sequences of either viable (6.1 ± 0.7; mean number per sequence ± SE) or trophic eggs (6.0 ± 0.5; Figure 3).
 
+**Table 1.**
+ Wald–Wolfowitz runs tests on the queen’s egg sequence.Significant p-values (corrected for multiple testing) indicate that queens do not lay viable and trophic eggs in a random sequence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Queen ID</th>
+      <th>p-value for egg sequence</th>
+      <th>p-value of random sequence</th>
+      <th>Number of eggs per sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>338</td>
+      <td>4.1 × 10–11</td>
+      <td>0.419</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>4.3 × 10–07</td>
+      <td>0.567</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>1.7 × 10–03</td>
+      <td>0.755</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>303</td>
+      <td>4.8 × 10–13</td>
+      <td>0.765</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td>9.8 × 10–11</td>
+      <td>0.292</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>1.4 × 10–05</td>
+      <td>0.518</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>12B</td>
+      <td>1.9 × 10–03</td>
+      <td>0.298</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>316</td>
+      <td>3.4 × 10–09</td>
+      <td>0.737</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td>4.3 × 10–12</td>
+      <td>0.655</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>1.4 × 10–10</td>
+      <td>0.630</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>1.5 × 10–05</td>
+      <td>0.404</td>
+      <td>58</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/86899/elife-86899-fig3-v1.jpg)
 
-**Figure 3.:** P. rugosus queens.Every row shows the sequence of viable (V) and trophic (T) eggs laid by a given queen (queen ID in the orange cell). Each egg-laying session lasted 10 hr. The yellow squares indicate the intervals (16 hr to several days) between egg-laying sessions.
+**Figure 3.:** Every row shows the sequence of viable (V) and trophic (T) eggs laid by a given queen (queen ID in the orange cell). Each egg-laying session lasted 10 hr. The yellow squares indicate the intervals (16 hr to several days) between egg-laying sessions.
 
 The concentrations of protein, triglycerides, glycogen, and glucose were significantly higher in viable than trophic eggs (LMER, protein: t = –13.11, p < 0.0001; triglycerides: t = –11.66, p < 0.0001; glycogen: t = –11.98, p < 0.0001; glucose: t = –18.60, p < 0.0001; Figure 4).
 
@@ -65,7 +148,7 @@ There was a significant difference in the miRNA fragment size distribution betwe
 
 **Figure 5.:** First two principal components (PC1 and PC2) explaining size distribution variation for (A) miRNA and (B) tRNA across egg samples, with viable eggs in gray dots and trophic eggs in black triangles. Ellipses enclose each of the egg type groups.
 
-## Trophic eggs influence caste fate of larvae
+### Trophic eggs influence caste fate of larvae
 
 The percentage of larvae that developed into queens was significantly lower in recipient colonies that received trophic eggs (27 ± 9% mean ± SE; n = 22) than in recipient colonies without trophic eggs (83 ± 10%; n = 22; binomial GLMM (link=‘logit’), z = 4.25, p = 2 × 10–5; Figure 6A and Supplementary file 1, table 2). The survival of larvae until the pupal stage was also significantly lower in the colonies without trophic eggs (16.9 ± 3.8%; n = 22; LMER, z = 2.66, p = 0.008) than in colonies with trophic eggs (30.2 ± 6.7%; mean ± SE; n = 22), but the 1.8-fold survival decrease cannot fully account for the threefold difference in queen percentage between the two treatments. Furthermore, there was no significant correlation between larval mortality and the percentage of larvae developing into queens (n = 44 recipient colonies; LMER, z = 0.97, p = 0.34; Figure 6B). These analyses allow us to exclude differential survival between castes as the sole explanation for the higher percentage of queens developing in the recipient colonies without trophic eggs.
 
@@ -97,7 +180,7 @@ Some populations of P. rugosus are characterized by a genetic caste determinatio
 
 All statistical analyses were performed with RStudio (RStudio Team, 2015).
 
-## Trophic and viable egg production
+### Trophic and viable egg production
 
 To verify that workers do not lay trophic eggs, as previously shown for other Pogonomyrmex species (Supplementary file 1, table 1), we created 12 queenless colonies (by removing the queen) and waited approximately 3 weeks until workers started laying eggs. From each of these colonies, we isolated two groups of five workers for 12 hr every 2 days for 2 weeks in November 2020 to obtain eggs. Collected eggs were then placed for 10 days in a Petri dish containing a water reservoir to study their development and distinguish whether they were trophic or viable.
 
@@ -105,13 +188,13 @@ To determine whether queens laid variable percentages of trophic eggs over time,
 
 To assess whether viable and trophic eggs were laid in a random order, or whether eggs of a given type were laid in clusters, we isolated 11 queens for 10 hr, eight times over 3 weeks, and collected every hour the eggs laid. To determine whether viable and trophic eggs were laid in a random order, we performed a Wald–Wolfowitz runs test for each queen’s egg-laying sequence (package snpar v.1.0; this non-parametric test calculates the likelihood that a binomial data sequence is random).
 
-## Trophic egg influence on the larval caste fate
+### Trophic egg influence on the larval caste fate
 
 To determine whether trophic eggs influence the process of caste determination, we compared the development of freshly hatched (first instar) larvae placed in small recipient colonies with and without trophic eggs. From each of 22 donor colonies, we obtained approximately 30 freshly hatched larvae by isolating the queens for 16 hr (from 2 pm to 6 am) every day for 3 weeks (in October 2020), with a 24-hr break every 3 days. Eggs were collected every 8 hr and placed during 10 days in a Petri dish with a water reservoir ensuring a high humidity until they hatched. After hatching, for each colony, half of the larvae (i.e., 15 larvae) were then transferred into a recipient colony containing 20 workers, while the other half were placed in identical recipient colonies, which received in addition 45 0- to 4-hr-old trophic eggs (i.e., there were 3 trophic eggs per larva). There was no cross-fostering between colonies, so that larvae were always placed in recipient colonies containing workers from the same donor colony. The recipient colonies were maintained at 28°C and 60% humidity, with a 12/12 hr light:dark cycle and fed ad libitum twice a week with grass seeds, flies and 20% honey water. The caste of each newly produced individual was recorded at the pupal stage. To compare the proportion of queen pupae produced between recipient colonies with and without trophic eggs, we used the package lme4 (Bates et al., 2015) to perform a binomial generalized linear mixed-effects analysis (GLMM/link=‘logit’) fit by maximum likelihood, with caste as response variable (binary categorical factor) and presence/absence of trophic eggs as an explanatory variable. Donor colony was included as a random effect. To test whether the presence of trophic eggs affects survival, we performed a linear mixed-effects analysis with mortality as a response variable, presence/absence of trophic eggs as explanatory variable, and colonies as random effects. As we found a significantly higher survival of larvae in recipient colonies with trophic eggs than recipient colonies without trophic eggs (see results), we tested whether the percentage of larvae developing into queens was correlated with survival by performing a linear mixed-effects analysis with the percentage of queen pupae as response variable, the survival as an explanatory variable and colonies as a random factor.
 
-## Volume and content of trophic and viable eggs
+### Volume and content of trophic and viable eggs
 
-The volumes of trophic (n = 11) and viable eggs (n = 14) were estimated by using the volume of an ellipse (43×π×egg length×(egg width2)2)\begin{document}$\left(\frac{4}{3} \times \pi \times \mathit{egg\ length} \times \left(\frac{\mathit{egg\ width}}{2}\right)^2 \right) $\end{document} with egg length and width estimated on images under ×10 magnification using ZEN Microscopy Software (v. 1.1.2.0).
+The volumes of trophic (n = 11) and viable eggs (n = 14) were estimated by using the volume of an ellipse $(\frac{4}{3}\times\pi\timesegg length\times(\frac{egg width}{2})^{2})$ with egg length and width estimated on images under ×10 magnification using ZEN Microscopy Software (v. 1.1.2.0).
 
 To determine the nutritional content of viable and trophic eggs, we quantified the proteins, triglycerides, glycogen, and glucose in both types of eggs. We also quantified long and small RNAs (including miRNAs) as these compounds have been shown to be involved in caste determination in other eusocial species. To obtain the two types of eggs, we isolated 12 queens for 10 hr (7 am to 5 pm; from March to October 2021) in a dark Petri dish with three workers and a water supply. Eggs were collected every hour (so all eggs were a maximum of 1 hr old), and trophic and viable eggs were flash-frozen separately in liquid nitrogen. Twenty eggs were pooled for triglycerides–sugar–protein analyses and six eggs for RNA analyses. They were kept at –80°C until the extractions were performed. After the 10 hr of isolation, queens and workers were returned to their colony until the next isolation session. For each of the 12 colonies, we obtained two replicates of viable and trophic egg pools (i.e., 24 replicates in total).
 
@@ -125,7 +208,7 @@ Glucose and glycogen were quantified as in Tennessen et al., 2014. A 90-µl aliq
 
 Concentrations of each compound (protein, triglycerides, glycogen, and glucose) were compared between viable and trophic eggs using a linear mixed-effects analysis (LMER; package lme4), with the concentration as response variable and egg type as explanatory variable. Colony and extraction batch were added as random effects in the model.
 
-## Total and small RNA, and DNA
+### Total and small RNA, and DNA
 
 RNA (>200 nt) and small RNA were isolated using the miRNeasy Mini Kit (QIAGEN, cat. no. 217004) and RNeasy MinElute Cleanup Kit (QIAGEN, cat. no. 74204), respectively, following manufacturer instructions. RNA (>200 nt) and small RNA concentrations were measured with a QuantiFluor RNA System (Promega). RNA (>200 nt) integrity was examined with an Agilent Fragment Analyzer (at the Lausanne Genomic Technologies Facility) using a High Sensitivity Assay and small RNA were examined using the small RNA kit (at the Gene Expression Core Facility at EPFL).
 

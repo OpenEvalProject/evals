@@ -42,7 +42,7 @@ Here, we recorded high-density EEG and high resolution eye-tracking in toddlers 
 
 ## Results
 
-## Summed outflow
+### Summed outflow
 
 The summed outflow (i.e.- the amount of information transfer) is a measure that reflects the importance (i.e.-the amount of driving) of a given region of interest (ROI) in the network (see Materials and methods section). To understand the functional wiring and the dynamic flow underlying the processing of the dynamic social stimuli, we used a data-driven method to explore in which frequency band the highest summed outflow occurred in 82 ROIs across the whole brain. A ROI with a strong summed outflow has a key role in directing the activity towards other ROIs in the network. The strongest summed outflow across the whole brain occurred in the theta band (4–7 Hz) in both groups. The summed outflow of the largest drivers across frequencies is illustrated for each group in Figure 1a. As can be seen, the largest peaks of activity are present in the theta band range (4–7 Hz) in both groups followed by peaks of activity in the alpha band range (8–12 Hz). The global driving in the theta and alpha bands did not differ between groups (theta : df = 34, t = 0.6201, p = 0.536; alpha : df = 34, t = 0.1736, p = 0.8632). Driving in the theta band was higher compared to the driving in the alpha band in both groups (ASD: df = 17, t = 11.86, p < 0.0001; TD:df = 17, t = 8.025, p < 0.0001). Several regions common to both groups showed a large driving (summed outflow) in both frequency bands, and notably the bilateral medial frontal and superior orbitofrontal regions, the bilateral hippocampi, the bilateral ACC and the right amygdala (Figure 1b).
 
@@ -56,21 +56,33 @@ Thereafter, we characterized the differences in the summed outflow across all br
 
 **Figure 2.:** (a) On the left, the 6 ROIs with a statistically significant different summed outflow in the ASD group compared to their TD peers for the theta band. On the right, the 3 ROIs with a statistically significant different summed outflow in the ASD group compared to their TD peers for the alpha band. A red nod indicates increased driving, a blue nod indicates decreased driving. Corresponding ROIs are displayed on an ICBM Average Brain, with sagital, axial and corronal views. (b) Boxplots with the summed outflow values comparing each group for each significant ROI in the theta band. (c) Boxplots with the summed outflow values comparing each group for each significant ROI in the alpha band. The boxplots display the full range of variation of the summed outflows (from min to max), rectangles span the interquartile range and the median. See acronyms list in Table 2.
 
-## Region-to-region directed functional connectivity
+### Region-to-region directed functional connectivity
 
 We looked for differences in the region-to region directed functional connectivity using Granger-causal modelling (see Materials and methods section) from each of the six nodes for the theta band, and from each of the three nodes in the alpha band separately in both groups. In the theta band, all the connections from the six ROIs in the toddlers and preschoolers with ASD were stronger than the strongest connections in the TD participants (Mann − Whitney − Wilcoxon, two − tailed, p < 0.05, Benjamini − Hochberg = 0.05). This suggests the presence of hyper-connectivity in the toddlers and preschoolers with ASD in theta. The region-to-region directed functional connectivity from the six ROIs in theta is illustrated in Figure 3. The estimation of the region-to-region directed connectivity (i.e. to which other ROIs the activity was directed) also revealed different network patterns for all the six ROIs in the toddlers and preschoolers with ASD compared to their TD peers. The boxplots of the outflow values of the connections from the right orbital part of the superior frontal gyrus seed region are provided in Figure 3—figure supplement 2 for the ASD group and Figure 3—figure supplement 2 for the TD group. In the alpha band, the region-to-region directed functional connectivity analysis revealed stronger connections from the right orbital part of the middle frontal gyrus and the left cuneus whereas the right STG had weaker connection in the toddlers and preschoolers with ASD compared to their TD peers (Mann-Whitney-Wilcoxon, two-tailed, p<0.05, Benjamini-Hochberg = 0.05). Similarly to what we found in the theta band, all three significant ROIs in the alpha band had different network patterns in the toddlers and preschoolers with ASD compared to their TD peers (Figure 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31670/elife-31670-fig3-v2.jpg)
+
+**Figure 3.:** Outflows are represented as arrows: the larger the arrow, the stronger the outflow. ROIs and connections are displayed on an ICBM Average Brain, axial and coronal views. See acronyms list in Table 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31670/elife-31670-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Boxplots with the outflow values comparing each group for each connection. Outflows are represented as arrows: the larger the arrow, the stronger the outflow. The boxplots display the full range of variation (from min to max) of the outflow values, rectangles span the interquartile range and the median. See acronyms list in Table 2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31670/elife-31670-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Boxplots with the outflow values comparing each group for each connection. Outflows are represented as arrows: the larger the arrow, the stronger the outflow. The boxplots display the full range of variation (from min to max) of the outflow values, rectangles span the interquartile range and the median. See acronyms list in Table 2.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31670/elife-31670-fig4-v2.jpg)
 
 **Figure 4.:** Outflows are represented as arrows: the larger the arrow, the stronger the outflow. ROIs and connections are displayed on an ICBM Average Brain, axial and coronal views. See acronyms list in Table 2.
 
-## Correlations with ADOS-2, PEP-3, VABS-II and gaze Proximity Index
+### Correlations with ADOS-2, PEP-3, VABS-II and gaze Proximity Index
 
 We further explored associations between the summed outflow in the theta and alpha bands from the ROIs and clinical and behavioural phenotypes (Spearman − rho, two − tailed, p <0.05, Benjamini − Hochberg = 0.05). None of the correlations between the summed outflow and ADOS-2 severity scores survived False discovery rate (FDR) correction for either bands (Benjamini − Hochberg = 0.05). For the summed outflow in the theta band, we found strong positive correlations between the summed outflow in the right lingual area and standard scores from the socialization domain (rs = 0.751, N = 18, p=0.0003, two-tailed, <0.05; Benjamini-Hochberg = 0.05) as well as with standard scores from the leisure and play skills subdomain of the VABS-II (rs = 0.802, N = 18, p=0.0001, two-tailed, <0.05; Benjamini-Hochberg = 0.05). None of the correlations between the summed outflow and VABS-II standard scores survived FDR correction for the alpha band (Benjamini-Hochberg = 0.05). Higher summed outflow within the left Heschl area near the posterior convolutions of the insula and the left rolandic operculum near the circular sulcus of the insula rostrally were positively related to better fine (rs = 0.745, N = 18, p=0.0004, two-tailed, <0.05; Benjamini-Hochberg = 0.05) and gross motor skills (rs = 0.744, N = 18, p=0.0004, two-tailed, <0.05; Benjamini-Hochberg = 0.05) as measured by the PEP-3. For the alpha band, higher summed outflow within the left hippocampus and the left rolandic operculum were positively related to better fine (rs = 0.736, N = 18, p=0.0005, two-tailed, <0.05; Benjamini-Hochberg = 0.05) and gross motor skills (rs = 0.737, N = 18, p=0.0005, two-tailed, <0.05; Benjamini-Hochberg = 0.05) as measured by the PEP-3. The toddlers and preschoolers with ASD with a gaze pattern similar to their TD peers showed an increased driving in theta within the left middle cingulate cortex (rs = 0.726, N = 18, p=0.0007, two-tailed, <0.05; Benjamini-Hochberg = 0.05) and the right paracentral lobule (rs = 0.738, p = 0.0005, two − tailed, <0.05; Benjamini − Hochberg = 0.05). There was no significant relationship between the Proximity Index (see Materials and methods section) and the summed outflow in the alpha band after FDR correction. The significant correlations between the summed outflows and the Proximity Index, VABS-II standard scores and PEP-3 standard scores for each frequency band are displayed in Figure 5. Finally, we explored associations between gaze performance with developmental scores obtained from the PEP-3 and with adaptive scores obtained from the VABS-II (D'Agostino-Pearson omnibus normality test, K2, p<0.05; Pearson’s r, two-tailed, p<0.05). We didn't find any significant correlations between the Proximity Index and the global level of autistic severity as measured with the calibrated ADOS-2 severity score. However, we found that the toddlers and preschoolers with ASD with a better gaze performance had better global adaptive functioning as measured by the VABS-II (K2 = 3.339, p=0.1883; r = 0.578, p=0.012), which was driven by better global (K2 = 0.8179, p=0.6643; r = 0.575, p=0.013) and fine (K2 = 0.5438, p=0.7619; r = 0.509, p=0.031) motor skills, and better development of interpersonal relationships (K2 = 5.308, p=0.0704; r = 0.581, p=0.011). We also found that these children with a better gaze performance had better visual motor imitation skills (K2 = 2.671, p=0.263; r = 0.534, p=0.022) as measured by the PEP-3.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/31670/elife-31670-fig5-v2.jpg)
 
-**Figure 5.:** a) standardized VABS-II scores, (b) PEP-3 standardized scores and (c) Proximity Index.(d) Significant correlations after FDR correction between the summed outflow in alpha and PEP-3 standardized scores. TD summed outflow values are plotted on the Y axis in red. Corresponding ROI are displayed on an ICBM Average Brain, axial top view.
+**Figure 5.:** (d) Significant correlations after FDR correction between the summed outflow in alpha and PEP-3 standardized scores. TD summed outflow values are plotted on the Y axis in red. Corresponding ROI are displayed on an ICBM Average Brain, axial top view.
 
 ## Discussion
 
@@ -98,19 +110,632 @@ Beyond functional and structural brain alterations reported elsewhere in older c
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Recruitment of toddlers and preschoolers with ASD was achieved via clinical centres specialized in ASD and French-speaking parent associations. TD toddlers and preschoolers were recruited via announcements in the Geneva community. Prior to the experiments, all the procedures were approved by the Ethics Committee of the Faculty of Medicine of the University of Geneva Hospital in accordance with the ethical standards proclaimed in the Declaration of Helsinki. For all participants, an interview over the phone and a medical developmental history questionnaire were completed before their initial visit. All participants' parents gave their informed consent prior to inclusion in the study. 120 participants were recruited for the experiment. We did not manage to put the EEG cap on the head of 23 ASD and 7 TD participants. We managed to put the cap on 90 participants. Out of those, we excluded 28 ASD and 26 TD participants because of too many movement-related artefacts, unrepairable noisy signal, lack of interest, or insufficient amounts of epochs available for subsequent analysis. This was to be expected given the extremely sensitive population at study here. As a result, 36 participants were included: 18 young children with ASD (2 females; mean age 3.1 years ± 0.8, range 2.2–4.4) and 18 age matched (df = 34, t = 2.72, p=0.852) TD peers (5 females; mean age 3.1 years ± 0.9, range 2.0–4.8). All participants with ASD included in the study received a clinical diagnosis prior to their inclusion in the research protocol. Diagnosis of ASD was rigorously verified and confirmed with either the Autism Diagnosis Observation Schedule-Generic (Lord et al., 2000) or the Autism Diagnosis Observation Schedule, second edition (ADOS-2) (Luyster et al., 2009). The latter contains a toddler module that defines concern for ASD. ADOS assessments were administered and scored by experienced clinicians working at the institution and specialized in ASD identification. In order to compare scores from different modules, we transformed the ADOS-G scores into Calibrated Severity Scores (ADOS-CSS) (Gotham et al., 2009). For the participants that underwent the ADOS-2-toddler module, we calibrated the scores into Severity Scores (Esler et al., 2015). Five children under 30 months of age performed the toddler module of the ADOS-2. All scored in the moderate to severe range of concern for ASD. For all the participants younger than 3 years of age (n = 10) at the EEG acquisition, clinical diagnosis was confirmed after one year by a clinician specialized in ASD identification using the ADOS-G or ADOS-2. The mean global ADOS-CSS for the entire group of patients with ASD was 7.9 (SD = 1.6). The assessment of the participants with ASD also included the administration of additional clinical standardized tests. Adaptive behaviour was assessed using the Vineland Adaptive Behaviour Scale-II (VABS-II) (Sparrow et al., 2005), a standardized parent report interview. Developmental level was assessed with the Psycho-educational Profile Third Edition (PEP-3) (Lansing et al., 2005). See Table 1 for characteristics of study participants. Prior to their inclusion in our research protocol, potential TD participants were initially screened for neurological/psychiatric problems and learning disabilities using a medical and developmental history questionnaire before their visit. Moreover, they underwent ADOS-G or ADOS-2 evaluations to exclude any ASD symptomatology. Fourteen controls were tested with Modules 1 or 2 and four underwent the toddler module of the ADOS-2. All TD participants had a minimal severity score of 1, except one child who had a score of 3.
 
-## Stimuli
+**Table 1.**
+ Characteristics of Study Participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Autism spectrum disorder</th>
+      <th>Typically developing</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender ratio (M/F)</td>
+      <td>16/2</td>
+      <td>13/5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean, SD, N</td>
+      <td>Mean, SD, N</td>
+      <td>T value</td>
+      <td>df</td>
+      <td>P value</td>
+    </tr>
+    <tr>
+      <td>Age in years</td>
+      <td>3.1, 0.8, 18</td>
+      <td>3.1, 0.9, 18</td>
+      <td>0.165</td>
+      <td>34</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>ADOS CSS</td>
+      <td>7.9, 1.6, 18</td>
+      <td>1.1, 0.47, 18</td>
+      <td>17.87</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>PEP-Cognitive verbal/pre-verbal</td>
+      <td>67.78, 18.85, 18</td>
+      <td>95.81, 7, 16</td>
+      <td>−5.87</td>
+      <td>32</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>PEP-Expressive language</td>
+      <td>50.28, 27.49, 18</td>
+      <td>92.94, 8.61, 16</td>
+      <td>−6.24</td>
+      <td>32</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>PEP-Receptive language</td>
+      <td>60.06, 23.93, 18</td>
+      <td>96.19, 6.17, 16</td>
+      <td>−6.17</td>
+      <td>32</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>PEP-Fine motor</td>
+      <td>61.83, 23.59, 18</td>
+      <td>88.81, 16.01, 16</td>
+      <td>−3.85</td>
+      <td>32</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>PEP-Gross motor</td>
+      <td>59.33, 27.86, 18</td>
+      <td>90.56, 7.66, 16</td>
+      <td>−4.56</td>
+      <td>32</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>PEP-Visual Motor Imitation</td>
+      <td>56.11, 25.29, 18</td>
+      <td>93.69, 6.93, 16</td>
+      <td>−6.05</td>
+      <td>32</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-Adaptive Behaviour Composite</td>
+      <td>75.5, 10.73, 18</td>
+      <td>105.28, 10.19, 18</td>
+      <td>−8.53</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-Communication</td>
+      <td>76.5, 12.59, 18</td>
+      <td>107.28, 8.16, 18</td>
+      <td>−8.7</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-Daily living skills</td>
+      <td>79.94, 11.28, 18</td>
+      <td>103.56, 9.28, 18</td>
+      <td>−6.85</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-Socialization</td>
+      <td>74.67, 11.26, 18</td>
+      <td>102.89, 6.98, 18</td>
+      <td>−9.03</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-Motor Skills</td>
+      <td>83.56, 10.8, 18</td>
+      <td>101.44, 12.15, 18</td>
+      <td>−4.66</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-receptive language</td>
+      <td>10, 2.45, 18</td>
+      <td>16.89, 2.32, 18</td>
+      <td>−8.65</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-expressive language</td>
+      <td>10.11, 2.4, 18</td>
+      <td>16.56, 1.5, 18</td>
+      <td>−9.65</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-gross motor skills</td>
+      <td>13.83, 5.53, 18</td>
+      <td>14.89, 1.78, 18</td>
+      <td>−0.77</td>
+      <td>34</td>
+      <td>0.449</td>
+    </tr>
+    <tr>
+      <td>VABS-II-fine motor skills</td>
+      <td>12.06, 2.58, 18</td>
+      <td>15.61, 2.45, 18</td>
+      <td>−4.23</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-interpersonal relationships</td>
+      <td>10.06, 2.6, 18</td>
+      <td>15.83, 2.26, 18</td>
+      <td>−7.12</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>VABS-II-play and leisure time</td>
+      <td>10.33, 2.03, 18</td>
+      <td>17, 1.68, 18</td>
+      <td>−10.73</td>
+      <td>34</td>
+      <td>0.000</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Acronyms Table
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>PreCG.L</td>
+      <td>Precentral Gyrus Left</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>PreCG.R</td>
+      <td>Precentral Gyrus Right</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SFGdor.L</td>
+      <td>Frontal Superior Left</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>SFGdor.R</td>
+      <td>Frontal Superior Right</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>ORBsup.L</td>
+      <td>Frontal Superior Orbital Left</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>ORBsup.R</td>
+      <td>Frontal Superior Orbital Right</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>MFG.L</td>
+      <td>Frontal Middle Left</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>MFG.R</td>
+      <td>Frontal Middle Right</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>ORBmid.L</td>
+      <td>Frontal Middle Orbital Left</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>ORBmid.R</td>
+      <td>Frontal Middle Orbital Right</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>IFGoperc.L</td>
+      <td>Frontal Inferior Operculum Left</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>IFGoperc.R</td>
+      <td>Frontal Inferior Operculum Right</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>IFGtriang.L</td>
+      <td>Frontal Inferior Triangularis Left</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>IFGtriang.R</td>
+      <td>Frontal Inferior Triangularis Right</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>ORBinf.L</td>
+      <td>Frontal Inferior Orbital Left</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>ORBinf.R</td>
+      <td>Frontal Inferior Orbital Right</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>ROL.L</td>
+      <td>Rolandic Operculum Left</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>ROL.R</td>
+      <td>Rolandic Operculum Right</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>SMA.L</td>
+      <td>Supplementary Motor Area Left</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>SMA.R</td>
+      <td>Supplementary Motor Area Left</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>OLF.L</td>
+      <td>Olfactory Left</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>OLF.R</td>
+      <td>Olfactory Right</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>SFGmed.L</td>
+      <td>Frontal Superior Medial Left</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>SFGmed.R</td>
+      <td>Frontal Superior Medial Right</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>ORBsupmed.L</td>
+      <td>Frontal Medial Orbital Left</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>ORBsupmed.R</td>
+      <td>Frontal Medial Orbital Right</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>REC.L</td>
+      <td>Rectus Left</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>REC.R</td>
+      <td>Rectus Right</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>INS.L</td>
+      <td>Insula Left</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>INS.R</td>
+      <td>Insula Right</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>ACG.L</td>
+      <td>Cingulum Anterior Left</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>ACG.R</td>
+      <td>Cingulum Anterior Right</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>DCG.L</td>
+      <td>Cingulum Middle Left</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>DCG.R</td>
+      <td>Cingulum Middle Right</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>PCG.L</td>
+      <td>Cingulum Posterior Left</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>PCG.R</td>
+      <td>Cingulum Posterior Right</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>HIP.L</td>
+      <td>Hippocampus Left</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>HIP.R</td>
+      <td>Hippocampus Right</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>PHG.L</td>
+      <td>ParaHippocampal Left</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>PHG.R</td>
+      <td>ParaHippocampal Right</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>AMYG.L</td>
+      <td>Amygdala Left</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>AMYG.R</td>
+      <td>Amygdala Right</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>CAL.L</td>
+      <td>Calcarine Left</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>CAL.R</td>
+      <td>Calcarine Right</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>CUN.L</td>
+      <td>Cuneus Left</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>CUN.R</td>
+      <td>Cuneus Right</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>LING.L</td>
+      <td>Lingual Left</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>LING.R</td>
+      <td>Lingual Right</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>SOG.L</td>
+      <td>Occipital Superior Left</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>SOG.R</td>
+      <td>Occipital Superior Right</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>MOG.L</td>
+      <td>Occipital Middle Left</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>MOG.R</td>
+      <td>Occipital Middle Right</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>IOG.L</td>
+      <td>Occipital Inferior Left</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>IOG.R</td>
+      <td>Occipital Inferior Right</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>FFG.L</td>
+      <td>Fusiform Left</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>FFG.R</td>
+      <td>Fusiform Right</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>PoCG.L</td>
+      <td>Postcentral Left</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>PoCG.R</td>
+      <td>Postcentral Right</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>SPG.L</td>
+      <td>Parietal Superior Left</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>SPG.R</td>
+      <td>Parietal Superior Right</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>IPL.L</td>
+      <td>Parietal Inferior Left</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>IPL.R</td>
+      <td>Parietal Inferior Right</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>SMG.L</td>
+      <td>SupraMarginal Left</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>SMG.R</td>
+      <td>SupraMarginal Right</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>ANG.L</td>
+      <td>Angular Left</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>ANG.R</td>
+      <td>Angular Right</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>PCUN.L</td>
+      <td>Precuneus Left</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>PCUN.R</td>
+      <td>Precuneus Right</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>PCL.L</td>
+      <td>Paracentral Lobule Left</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>PCL.R</td>
+      <td>Paracentral Lobule Right</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>HES.L</td>
+      <td>Heschl Left</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>HES.R</td>
+      <td>Heschl Right</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>STG.L</td>
+      <td>Temporal Superior Left</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>STG.R</td>
+      <td>Temporal Superior Right</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>TPOsup.L</td>
+      <td>Temporal Pole Superior Left</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>TPOsup.R</td>
+      <td>Temporal Pole Superior Right</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>MTG.L</td>
+      <td>Temporal Middle Left</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>MTG.R</td>
+      <td>Temporal Middle Right</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>TPOmid.L</td>
+      <td>Temporal Pole Middle Left</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>TPOmid.R</td>
+      <td>Temporal Pole Middle Right</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>ITG.L</td>
+      <td>Temporal Inferior Left</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>ITG.R</td>
+      <td>Temporal Inferior Right</td>
+    </tr>
+  </tbody>
+</table>
+
+### Stimuli
 
 Stimuli consisted of two video sequences of dynamic social images without audio information of approximatively two minutes each. These videos included ecologically valid and complex naturalistic dynamic images where young children practised yoga alone, imitated animal-like behaviours (behaving like a monkey or jumping like a frog), waived their arms, struck a pose, jumped, made faces or whistled (Yoga Kids 3 ; Gaiam, Boulder, Colorado, http://www.gaiam.com, created by Marsha Wenig, http://yogakids.com/). Presentation and timing of stimuli were controlled by Tobii Studio software (Sweden, http://www.tobii.com).
 
-## Procedure and task
+### Procedure and task
 
 The experiment was conducted in a lit room at the office Médico-Pédagogique in Geneva. To familiarize the child with the procedure, the families received a kit containing a custom-made EEG replica cap and pictures illustrating the protocol two weeks prior to their first visit. Participants were seated on their parents lap in order to make them feel as secure as possible and to minimize head and body movements or alone. Once seated, the experimenter measured the circumference of the head and placed the corresponding cap on the participant's head. A couple of minutes were taken in order to allow the participants to settle into the experiment's environment and get used to the cap before starting the experiment. Following this, a five point eye-tracking calibration procedure was initiated using the Tobii system (Sweden, http://www.tobii.com). An attractive colourful object (either a kitten, a bus, a duck, a dog or a toy) was presented together with its corresponding sound on a white background and the participants had to follow the object visually. The recording and presentation of the visual stimuli started when a minimum of four calibration points were acquired for each eye. To best capture the child’s attention, we first showed them an age-appropriate animated cartoon, followed by some fractals and another animated cartoon. The block ended with a film containing dynamic social images, the condition of interest in the present experiment. All participants were presented with the same visual stimuli in the same order. Following the first block, impedances were rechecked and electrodes were readjusted where needed to maintain them below 40 kOhm. A second block was then acquired (animated cartoon; animated fractals; animated cartoon; second condition of interest: dynamic social images). The experimenter continuously monitored the eye-tracking to ensure children were looking at the screen. The whole experiment lasted about half an hour. We used stringent criteria and only participants with the highest data quality were kept for subsequent analysis.
 
-## Eye-tracking measurements
+### Eye-tracking measurements
 
 Eye-tracking data were recorded with the TX300 Tobii eye-tracking system (sampling rate resolution of 300 Hz). In order to analyse and quantify differences in visual exploration between our groups, we developed a data-driven method to define dynamic norms of the exploration of the visual scenes (Kojovic et al., in preparation). First, we applied a kernel density distribution estimation (Botev et al., 2010) on the eye-tracking data recorded from the TD group at each time frame of the films containing dynamic complex social images to compute a normative gaze distribution pattern. Then, for each of the participants with ASD individually, we computed a deviation index from this normative gaze distribution, and this, for each single time frame separately (Figure 6). We averaged these values across the two films to obtain a mean Proximity Index (PI) value. This index describes for a given ASD participant, his distance from the normative gaze distribution pattern calculated on the TD group. A high index value indicates a visual behaviour approaching the visual exploration of the TD participants (more similarity), while a low index indicates a visual behaviour deviating from the TD group (more dissimilarity).
 
@@ -118,17 +743,17 @@ Eye-tracking data were recorded with the TX300 Tobii eye-tracking system (sampli
 
 **Figure 6.:** Each dot represents the gaze position for an individual participant. The face has been blurred on purpose to preserve anonymity but was fully visible for the participants during the experiment.
 
-## EEG acquisition and preprocessing
+### EEG acquisition and preprocessing
 
 The EEG was acquired with a Hydrocel Geodesic Sensor Net (HCGSN, Electrical Geodesics, USA) with 129 scalp electrodes at a sampling frequency of 1000Hz. On-line recording was band-pass filtered at 0−100Hz using the vertex as reference. Data pre-processing was done using Matlab (Natick, MA) and Cartool (http://sites.google.com/site/cartoolcommunity/). We down-sampled the montage to a 111-channel electrode array to exclude electrodes on the cheek and the neck since those are often contaminated with artefacts. Data were filtered between 1 and 40Hz (using non-causal filtering) and a 50Hz notch filter was applied. Each file was then visually inspected by one of the three EEG experts (HFS, TAR, and RKJ) to exclude periods of movements artefacts. Periods where subjects were not looking at the screen were excluded. Independent component analysis (ICA) was performed on the data to identify and remove the components related to eye movement artefacts (eye blinks, saccades). Subsequently, channels with substantial noise were interpolated using spherical spline interpolation for each recording. Finally, the cleaned data were down-sampled to 125Hz, recalculated against the average reference and inspected by two EEG experts (HFS and AC) to ensure that no artefacts had been missed. One hundred and twenty artefact-free epochs of 1 second per participant were included for further analysis and were considered as a minimum to ensure high enough data quality.
 
-## Electrical Source Imaging and selection of regions of interest
+### Electrical Source Imaging and selection of regions of interest
 
 The general analysis strategy is summarized in Figure 7. Electrical source imaging (ESI) was performed to reconstruct the sources of brain activity that gave rise to the scalp EEG field. For this, we used a toddler template head model (33–44 month) (using the Montreal Neurological Institute (MNI) brain) with consideration of skull thickness (Locally Spherical Model with Anatomical Constraints, LSMAC). 4159 solution points were equally distributed in the grey matter. We used a distributed linear inverse solution (Low Resolution Electromagnetic Tomography, LORETA [Pascual-Marqui et al., 1994]) to compute the 3-dimensional (3D) current source densities. We then projected this 3D dipole time-series onto the predominant dipole direction of each region of interest (ROI) across time and epochs, therefore obtaining a scalar time-series (Coito et al., 2016a; Coito et al., 2015; Plomp et al., 2015a; Coito et al., 2016b). We parcelled the grey matter in 82 ROIs based on the automated anatomical labelling (AAL) digital atlas (Tzourio-Mazoyer et al., 2002), after normalization to the MNI space using SPM8 (Wellcome Trust Centre for Neuroimaging, University College London, UK, www.fil.ion.ucl.ac.uk/spm). In order to reduce the dimensionality of the solution space, we considered the solution point closest to the centroid of each ROI as representative of the source activity in that ROI for further analysis. This allowed to obtain the source activity across time of 82 solution points, representative of 82 ROIs (Coito et al., 2016b).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/31670/elife-31670-fig7-v2.jpg)
 
-## Directed functional connectivity using Granger-causality
+### Directed functional connectivity using Granger-causality
 
 Directed functional connectivity estimates the influence that one signal exerts onto another, facilitating the study of directional relationships between brain regions. It is commonly assessed using the concept of Granger-causality: given two signals in a process, if the knowledge of the past of one allows a better prediction of the presence of the other signal in the process, then the former signal is said to Granger-cause the latter signal (Granger, 1969).
 

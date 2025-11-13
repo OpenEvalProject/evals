@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Department of Ecology and Evolution, University of Chicago Chicago United States
-2. https://ror.org/024mw5h28 Program in Genetics, Genomics, and Systems Biology, University of Chicago Chicago United States
-3. https://ror.org/024mw5h28 Department of Biochemistry and Molecular Biophysics, University of Chicago Chicago United States
-4. https://ror.org/024mw5h28 Department of Human Genetics, University of Chicago Chicago United States
+1. Department of Ecology and Evolution, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+2. Program in Genetics, Genomics, and Systems Biology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+3. Department of Biochemistry and Molecular Biophysics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+4. Department of Human Genetics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ The data we analyze were generated in a complete combinatorial scan at four site
 
 ## Results
 
-## Experimental data
+### Experimental data
 
 Steroid hormone receptors are a family of ligand activated transcription factors that are involved in vertebrate development, behavior, and reproduction (Bentley, 1998). There are two major subfamilies of steroid hormone receptors, which recognize distinct palindromic DNA response elements (REs). Estrogen receptors (ERs) bind to a palindrome of the ER response element (ERE, AGGTCA), whereas the ketosteroid receptors (kSRs, including the receptors for androgens, progestogens, glucocorticoids, and mineralocorticoids) strongly prefer the steroid receptor response element (SRE, AGAACA; Chusacultanachai et al., 1999; So et al., 2007; Welboren et al., 2009). Earlier experiments showed that the reconstructed DBD of the last common ancestor of the two subfamilies (called AncSR1) was ERE-specific, whereas the last common ancestor of the kSRs (AncSR2) was SRE-specific (McKeown et al., 2014). During the interval between AncSR1 and AncSR2, three substitutions occurred in the protein’s recognition helix (RH), which inserts into the DNA major groove and makes contact with the bases that vary between ERE and SRE. These substitutions were shown experimentally to cause the evolutionary change in specificity (McKeown et al., 2014).
 
@@ -44,9 +44,33 @@ The data that we analyze here come from a previously published deep mutational s
 
 To reduce the effect of measurement noise on the characterization of genetic architecture, we transformed the continuous functional data into categorical form. Each variant was categorized on each RE as a null, weak, or strong activator relative to negative control (stop-codon-containing variants) and historically relevant positive control reference sequences (the RH sequence of AncSR1 and extant ERs on ERE, or that of AncSR2 and extant kSRs on SRE). Variants were classified as null if their mean fluorescence was indistinguishable from the negative controls, weak if they produced fluorescence between null and the historical reference state, and strong if their fluorescence was as great or greater than the reference. Across both REs, 1342 variants were classified as strong and 3166 as weak activators. Categorization substantially reduced the effect of technical noise in the assay: concordance in the activation class assigned to each variant between replicates was >97%, much better than the between-replicate correlation of mean fluorescence as a continuous variable (R2=0.62 for functional variants, and R2=0.11 when null variants are included).
 
-## Ordinal linear regression of genetic architecture
+### Ordinal linear regression of genetic architecture
 
 To dissect the genetic architecture of RE binding and specificity by AncSR-DBD, we developed an ordinal regression model and fit it to the experimental data. The model contains terms for the main effect of every possible amino acid at each variable site in the protein and for the epistatic effect of every pair and triplet of sites (Figure 1A). The genetic score of each variant is defined as the sum of the main and epistatic effects of the sequence states and combinations it contains (Figure 1B). The variant’s genetic score determines the probability that a variant is a null, weak, or strong activator through an ordinal logistic function: an increase in the genetic score causes a corresponding linear increase in the log of the odds that a variant is in a higher vs. lower activation class. The only other free parameters in the model are the average genetic score across all variants and the threshold scores that represent the boundaries between activation classes.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig1-v1.jpg)
+
+**Figure 1.:** (A) The ordinal logistic model. The probability that a protein variant is in each binding class is a logistic function of its genetic score. Thresholds between classes (dotted lines) correspond to scores at which the probability of being in two classes is equal. (B) A variant’s genetic score is the sum of the effects of the sequence states and combinations it contains, including main (1°), pairwise (2°), and third-order (3°) effects. Each state and combination has a term for its effect on generic binding averaged over REs (β, red) and another for its effect on specificity (σ, blue) for ERE vs. SRE; specificity terms are added or subtracted to give the genetic score on SRE or ERE, respectively. All terms are defined relative to the global average over all variants (β°). Components of the score for variant EGKA is shown as an example. (C) Schematic of reference-free model terms. Each term represents the average deviation of sequences containing a state (or combination) from the sum of the variant’s terms at lower orders, including the global average. Vertical and horizontal lines show range and mean of genetic scores for variants containing the specified states; *, any of the 20 amino acid states. (D) Reference-free specificity effects. Binding effects (red) are defined the same as in C. The global specificity effect (σ0) is the deviation from the global average for all genotypes on ERE (purple) vs. SRE (green). First order specificity effects (σ1s) are additional deviations from this global effect between ERE and SRE for genotypes with a particular amino acid at a particular site. (E) Distribution of genetic scores after fitting to the experimental DMS data for all 320,000 protein:DNA combinations. Scores were rescaled so that the global average is zero and the threshold score to be classified as a strong binder is 1. Dashed lines, interclass thresholds. Inset, right tail of the distribution. Estimated −ΔΔG values of binding associated with each genetic score are shown along the top, based on calibration to experimental binding data for a subset of variants. Arrows, biological reference sequences GSKV (SRE binder, green) and EGKA (ERE binder, purple).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Average misclassification rate. Misclassification rate was measured by 10-fold cross-validation. The x-axis gives the lambda value used in ridge regression for the models containing main effects (1°, light red), main and pairwise epistatic effects (1°+2°, medium red), and main, pairwise, and third-order epistatic effects (1°+2°+3°, Full model, dark red). In each case, variance around the estimate from 10 independent cross-validation runs is shown in black. Dashed lines show the lambda value at which misclassification error is minimized. (B) Deviance explained by each model as the lambda ridge regression penalty parameter is reduced. Deviance is measured as two times the difference in log(Likelihood) of the model compared to a saturated model that contains a single parameter for every data point and is thus a perfect predictor of genotype binding class. For generalized linear models, deviance is the measure analogous to R2. Dashed lines are the same as in A and thus maximize deviance explained without over-fitting. (C) Comparison of estimated genetic score and mean fluorescence for the main effects only model (1°). Threshold genetic score between Null and Weak genotypes (vertical brown line) and between Weak and Strong genotypes (vertical orange line) are shown. The dashed horizontal lines show the 10th percentile of variants estimated as weak (orange) or strong (brown) based on their mean fluorescence. (D) Same as C, but for the model containing pairwise epistasis (1°+2°). (E) Same as C, but for the full model containing pairwise and third order epistasis (1°+2°+3°).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sensitivity versus the false positive rate of the full model for each classification. The non-strong class (dark red) consists of genotypes labeled as either null (black) or weak (red); the activator class (light red) consists of genotypes labeled as weak or strong (pink). Sensitivity is the percent of genotypes correctly estimated to be in a class (TP) among the set of all genotypes originally assigned to that class (TP + FN). The false positive rate is the percent of genotypes incorrectly estimated to be in a class (FP) among the set of all genotypes not originally assigned to that class (TN+FP). Circles show the sensitivity and false positive rate in the full model. (B) Same as A, showing a reduced portion of the x-axis. (C) Precision versus sensitivity of the full model for each classification. Colors are the same as C. Precision is the percent of genotypes correctly estimated to be in a class (TP) among the set of all genotypes estimated to be in that class (TP + FP). (F) Lift of each percentile for each classification. Genotypes were ordered by genetic score and lift calculated as the frequency of each class in a percentile relative to the average frequency of each class in the entire data set.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Each panel shows estimated main-effect coefficients for each amino acid at the variable sites using simple logistic regression, when the activation class of variants was coded in two different ways: null vs.weak+strong (brown), or null+weak vs. strong (orange). Under the proportional odds assumption, the difference between the two estimates should be the same across coefficients. Coefficients for the effect on ERE and SRE were estimated separately, and no epistasis was included in this preliminary model. Missing symbols indicate amino acid states never observed among strong activators (no brown) or only observed in null activators (no orange or brown). N gives the number of genotypes containing the specified state for which mean fluorescence values. The weighted average of all estimated coefficients is shown at the bottom.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) ΔG relative to the weakest binder as estimated from fluorescence polarization versus the estimated genetic score. Genetic scores are scaled relative to the threshold to be a strong binder (vertical orange dashed line), with zero being the average genetic score of all genotypes. Dashed horizontal line shows the ΔG values estimated to correspond to this threshold by fitting a linear model (solid red line). (B) ΔG from fluorescence polarization versus the observed mean fluorescence of each genotype prior to categorization. Linear regression between ΔG and mean fluorescence (solid blue line).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Unconstrained (x-axis) and constrained (y-axis) estimates for all coefficients in the third order model. Each panel is for a particular order of epistasis and either binding or specificity. Colors indicate the site, or combination of sites, for each set of coefficients.
 
 To incorporate functional specificity, the model contains two terms for every amino acid state or combination: one for its effect on nonspecific DNA binding (the contribution to genetic score averaged over ERE and SRE) and another that reflects its impact on specificity (the difference between its score on each RE and the average over REs). The model also contains a single term for the global effect of SRE vs. ERE, averaged across all protein variants, which represents the main effect of the RE itself. The total genetic score for any protein:RE complex is the sum of all the main and epistatic effects of its amino acids on nonspecific DNA binding, plus all the main and epistatic effects on RE specificity, plus the global effect of the RE. (The sign of the specificity and RE terms in the summation is determined by whether the complex contains SRE or ERE.)
 
@@ -56,9 +80,33 @@ This approach has several advantages. First, it reduces the effect of estimation
 
 We fit the model to the DMS data by least-squares ordinal logistic regression (Figure 1E). To reduce overfitting and maximize predictive accuracy, we used L2 regularization with cross-validation to identify the optimal regularization parameters. The model fits the experimental data well. When we used the best-fit model to predict the highest-probability activation class for each protein variant on each RE, the predicted class matched the observed class for 99.5% of all variants. The deviance of the model – an analog of the coefficient of determination used in linear regression – was 0.86 (Figure 1—figure supplement 1, Figure 1—figure supplement 2, Figure 1—figure supplement 3). The remaining variation in function not explained by the model is attributable to technical error in measurement and/or fourth-order epistasis. The genetic score of activators is well correlated with the apparent ΔG of dissociation from DNA, which was previously measured for a subset of variants by fluorescence anisotropy (R2=0.75, Figure 1—figure supplement 4; this correlation is slightly better than the correlation between the mean fluorescence values used to classify variants and ΔG, R2=0.63).
 
-## Low-order genetic architecture
+### Low-order genetic architecture
 
 We found that main effects and pairwise epistasis are important in RE recognition, but higher order epistasis is not. Of all the genetic variance explained by the best-fit model, more than half is attributable to the main effects of single amino acids, and virtually all of the remainder is attributable to pairwise interactions or the global effect of the RE. Main effects are the primary determinants of nonspecific DNA binding, but pairwise interactions explain the majority of RE-specificity. Third-order epistasis accounts for only 2% of total variance, with similarly small contributions to both nonspecific binding and specificity (Figure 2A–C). Of all the specific variance explained by epistatic interactions, about half involves sign epistasis – interactions that on average change the direction of a state’s effects in the presence of another amino acid – while the other half changes the magnitude but not the direction of effect (Figure 2D). Although high-order interactions are unimportant, the model is very dense at low orders. Of the nearly 69,000 possible terms in the complete model, it takes >7000 to account for 99% of genetic variance (“the 99% set”, Figure 2E). This set includes the main effect of every possible amino acid state at all four sites and >80% of all possible second-order epistatic terms. Every amino acid state participates in a minimum of 60 pairwise interactions with states at other sites (Figure 2—figure supplement 1). By contrast, the 99% set includes only 5% of all possible third-order terms.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig2-v1.jpg)
+
+**Figure 2.:** (A) Fraction of genetic variance explained by all terms in the protein’s amino acid sequence (non-RE-specific binding, red), the RE’s DNA sequence (black), or the interaction between them (specificity, blue). (B) Fraction of genetic variance explained by terms in each model order for non-RE-specific binding. Indexes within each column show the variance explained by terms at each site or combination of sites. (C) Fraction of genetic variance explained by specificity terms at each order. (D) Fraction of genetic variance explained by pairwise epistatic effects that affect only the magnitude or affect the sign of interaction between two states; red and blue, effects on pairwise binding and specificity. (E) Cumulative fraction of genetic variance explained by model terms, ordered by the fraction of variance explained by each. Dashed lines indicate 90% and 99% of the total variance in genetic score explained by the complete model. (F) Frequency of amino acid states among sequences predicted to be strong activators on ERE (purple) and SRE (green). (G) Distribution of amino acid differences among predicted strong activator sequences on ERE (purple) and SRE (green). (H) Distributions of effect sizes on non-RE-specific binding. Largest-magnitude effects are labeled by amino acid state (x, any state). (I) Distribution of effect sizes on RE specificity. (J) Structural view of DBD recognition helix (white tube) and DNA response elements (surface). Blue, nucleotides that differ between ERE and SRE; red, nucleotides identical between ERE and SRE; gray, nucleotides outside of RE. Cα and Cβ atoms of variable residues in the recognition helix are shown as large and small spheres, respectively (cyan, largest effects on RE specificity; pink, largest effects on non-RE-specific binding). Coordinates are from the X-ray crystal structure of AncSR1-DBD, PDB 4OLN.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Number of pairwise interaction terms involving each amino acid (rows) at each site (columns) that are needed to explain 99% of the full model specific genetic variance for positive binding, negative binding, ERE specificity, and SRE specificity. In each case, an amino acid can be involved in a maximum of 60 interactions (20 at each of the other three sites). (B) Same as left, but for third-order interactions. Each amino acid can be involved in a maximum of 1200 interactions (400 at each pair of the other three sites).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Distribution of effects for each site/site combination for the full model (1°+2°+3°). Effects are scaled to the value needed to be a strong binder. Binding effects (red) and specificity effects (blue) are separated. For main effects (light, bottom), all 20 amino acids are shown with single letter codes. For pairwise epistatic effects (medium, middle) and third-order effects (dark, top), only the most extreme five values for each site combination are shown.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Comparison of the main effect of each amino acid on binding with its epistatic effects on binding. Each point is a different amino acid (letter) at a different site (number). Each site is a different color from dark (site 1) to light (site 4). (B) Same as A, but for third-order interactions. (C) Same as A, but for the comparison of pairwise and third-order binding effects. (D) Comparison of the main effect of each amino acid on specificity with its epistatic effects on specificity. Each point is a different amino acid (letter) at a different site (number). Each site is a different color from dark (site 1) to light (site 4). (E) Same as D, but for third-order interactions. (F) Same as D, but for the comparison of pairwise and third-order specificity effects.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** First- and second-order effects on non-RE-specific binding (above the diagonal) and on specificity (below) for all amino acid sites and pairs. Effects are scaled relative to the value necessary to be classified as a strong binder. Arrows indicate the states found among extant steroid receptors (purple, estrogen receptors; green, ketosteroid receptors; black, both categories).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Third-order epistatic effects for binding (top) and specificity (bottom). Effects that increase binding (black), decrease binding (red), prefer ERE (purple) and prefer SRE (green) are shown, with intensity corresponding to strength of effect. All effects are scaled relative to the value necessary to be classified as a strong binder. Scale is the same as Figure 2—figure supplement 4 for comparison. The majority of third-order terms are estimated as near zero and not shown.
 
 The non-sparsity of the DBD’s genetic architecture reflects the fact that thousands of variants activate from ERE and/or SRE, and their sequences are very diverse (Figure 2F–G). The effects of most amino acids and pairs are therefore of small to moderate magnitude, changing the genetic score by a median of 3% and 2% of the threshold required for strong activation, respectively. Third-order effects were generally tiny, with a median absolute magnitude of just 0.02% (Figure 2H–I, Figure 2—figure supplement 2, Figure 2—figure supplement 3). As a consequence, no single amino acid state or pair is sufficient to make a sequence into a strong activator; rather, favorable states and combinations of small to moderate size at three or all four of the sites are required to generate a functional protein.
 
@@ -66,29 +114,81 @@ The sequence-function relationship of DNA recognition is therefore complex but n
 
 The functional effects of variation at each site can to some extent be structurally rationalized (Figure 2J). The largest effects of states at sites 2 and 3 are on nonspecific binding, which have their side chains positioned near the parts of the DNA that are shared between ERE and SRE. The most favorable effects come from having small-volume amino acids at site 2, particularly in combination with a basic residue at site 3, which can potentially hydrogen-bond with a guanine common to both REs. By contrast, the largest effects of states at sites 1 and 4 are on specificity, and these residues are closest to the bases in the major groove that differ between the REs. Small hydrophobic residues at site 4 favor SRE binding, where they can pack against the hydrophobic methyl groups that are unique to SRE but leave ERE’s hydrogen bond (donors/acceptors) unpaired.
 
-## Epistasis generates functional activators
+### Epistasis generates functional activators
 
 To determine if epistatic effects have a directional bias on functional sequences, we calculated the net contribution of all epistatic terms to the genetic score of each active variant on each RE (Figure 3A–B). Contrary to the expectation of diminishing returns (in which epistasis predominantly impairs function; Chou et al., 2011; Tokuriki et al., 2012; Wei and Zhang, 2019; Wünsche et al., 2017), we found that epistatic terms overwhelmingly enhance the function of active variants. Epistatic terms make a net positive contribution to the genetic score of 100% of strong activators, contributing an average of 64% of the score needed to be a strong activator, and the epistatic contribution was necessary to surpass this threshold in every single case. Weak activators also benefit from epistatic interactions, which contribute positively to 98% of variants in this class, but their effect is smaller. Both pairwise and third-order effects contribute, but second-order interactions make a far larger positive contribution than third-order effects do (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig3-v1.jpg)
+
+**Figure 3.:** (A) Net contribution of second- and third-order epistatic effects to the total genetic score of all variants predicted to be strong binders, scaled relative to the threshold for classification as a strong binder. Dashed lines, thresholds between activation classes. (B) Same as A, but for variants predicted as weak binders. (C) Number of variants classified as a weak (brown) or strong (orange) binder using terms from a model fit with no epistasis (1° effects only, left) or the full model with epistasis (1°+2°+3° effects, right). Dark colors represent the number of variants that retain the same class membership in both models; pale colors change class. (D) Percent of genetic variance explained by positive (black) and negative (red) pairwise binding interactions, classified by the sign of the main effects of the states.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Net contribution of third-order epistatic effects to the total genetic score of all predicted strong binders. Dashed lines are the thresholds where net third-order epistatic effects are sufficient for a genotype to be classified as a weak (brown) or strong (orange) binder. (B) Same as A, but for predicted weak binders.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Variants classified as a non (white), weak (brown), or strong (orange) binder in a model without epistasis (1°, left), the model with pairwise epistasis (1°+2°, middle), or the full model with epistasis (1°+2°+3° effects, right). Solid colors in skinny bars are genotypes that retain the same class membership as epistatic effects are added (to the right of a bar) or removed (to the left of a bar); pale colors indicate genotypes that change class membership and what class they are changed to.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Distribution of effects for each site for the main effect only model (1°). Effects are scaled to the value needed to be a strong binder. Binding effects (red) and specificity effects (blue) are separated.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Percent of specific genetic variance explained by positive (black) and negative (red) third-order binding interactions when main effects are positive (++), both are negative (--), or the main effects are of opposite signs (+-).
 
 To directly characterize the effect of epistasis on the number, identity, and function of genotypes, we fit to the data truncated first-order models of genetic architecture that allow only main effects and thus exclude all epistasis. We also fit second-order models that allow main and pairwise effects but exclude higher order interactions. We then used each fitted model to predict which variants would be functional activators. Confirming the key role of epistasis in generating functional proteins, we found that the number of strong activators in the main-effects-only model is reduced by about 25% compared to the third-order model, and the number of weak activators is also substantially reduced (Figure 3C). Most of this increase is caused by pairwise epistasis, because a second-order model contains 98% as many activators as the third-order model (98%, Figure 3—figure supplement 2). Epistasis also changes which sequences are functional: of variants that are strong activators in the first-order model, only 64% remain strong activators when epistasis is included.
 
 Why does epistasis increase the number of functional variants and change their identity? Even in the first-order-only model, main effects are mostly of small magnitude (Figure 3—figure supplement 3): the only way to achieve a genetic score sufficient for activation is to combine the few amino acids that have the largest main effects, and the number of ways to do this is limited. With epistasis, however, positive epistatic terms can supplement main effects, improving the function of sequences that contain states that have weak main effects. Consistent with this explanation, states with positive main effects on binding overwhelmingly have positive pairwise and third-order epistatic interactions (Figure 3D, Figure 3—figure supplement 4).
 
-## The genetic architecture of mutation effects
+### The genetic architecture of mutation effects
 
 The genetic architecture of a protein directly describes how the sequence of each protein determines its function, but evolution involves mutations – changes that turn one sequence into another. Exchanging one amino acid for another in a particular protein alters the main effect at that site and all the epistatic interactions involving that site. We used our model to characterize the impacts on the genetic score for ERE and SRE binding of all 1.2 million possible context-specific mutations, defined as one of the 1520 mutation types (a single-residue exchange from one of the 20 possible starting residues to 19 ending states at each of four sites) introduced into any of the 8000 possible combinations of states at the other three sites.
 
 We found that there are >200,000 context-mutations that can transform a null protein into a functional activator, and epistasis is critical to these transitions (Figure 4A). The underlying mutations are diverse, with 1160 of the 1520 unique types of amino acid exchanges moving one or more variants into a higher activation class (Figure 4B). In nearly every case (99%), the net epistatic impact of the mutation’s effects are positive; in 94% of cases, the epistatic contribution is necessary to move the variant to the higher class, and in almost half of cases it is sufficient (Figure 4C–D). Sign epistasis was rampant among mutations: every single one of the 1520 mutation types caused positive effects in some backgrounds and negative effects in others, and more than 90% of mutation types (1380 of 1520) had both positive and negative effects on more than 10% of genetic backgrounds (Figure 4E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig4-v1.jpg)
+
+**Figure 4.:** (A) Number of mutations that can promote protein variants from one activation class to another (circles). Each mutation is a single-amino-acid change from one unique sequence into another. (B) Effects on activation class of variants by unique mutation types (a change from one amino acid state to another at a particular site, irrespective of the background at other sites). Each column shows the number of mutation types that do (+) or do not (-) promote one or more variants from one class to another. (C, D) Of mutations that change a variant’s binding class, the fraction is shown for which the contribution of epistasis is necessary (C) and/or sufficient (D) to cross the threshold for reclassification. (E) Context-dependence of mutation effects. Fraction of genetic backgrounds in which a mutation type increases (x-axis) or decreases (y-axis) genetic score. Only mutations that change the genetic score by at least 5% of the threshold to be a strong activator are included. (F) Single-amino-acid mutations that change DNA specificity from ERE to SRE in the complete model (top) or the first-order-only model (bottom). Lines show mutations from the state in an ERE-specific variant (purple) to that in the SRE-specific variant (green); thickness is proportional to the number of backgrounds at other sites against which the mutation changes specificity. (G, H) Of mutations that change RE specificity, the fraction for which epistasis is necessary (G) and/or sufficient (H) to lose ERE binding (purple), gain SRE binding (green) or both (black).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Percent of time epistasis is necessary for transition in specificity for the loss of ERE binding activity (purple), the gain of SRE binding activity (green), or either change for either all epistasis (dark), only pairwise epistasis (middle), or only third-order epistasis (light). (B) Percent of time epistasis is sufficient for the loss of ERE binding activity (purple) and the gain of SRE binding activity (green), or both (black) for either all epistasis (dark), only pairwise epistasis (medium), or only third-order epistasis (light).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Single step mutations which change DNA specificity in the presence of pairwise epistasis. The ERE-specific amino acid state (purple) is on top, with the SRE-specific amino acid state (green) on the bottom. Line thickness is proportional to the frequency that a mutation causes the change in specificity.
+
 Epistasis also expands the mutational opportunities to change the protein’s DNA specificity. There are hundreds of context-specific mutations and mutation types that change a strong ERE-specific activator directly into a strong SRE-specific activators. These involve changes at all four sites and use dozens of different amino acid states to generate both ERE and SRE specificity (Figure 4F). In every single case, the net change in epistatic effects caused by the mutation is necessary for the switch in specificity, and in almost half of cases the epistatic effects are also sufficient (Figure 4G–H). Both pairwise and third-order epistasis contributed: in about half of cases, third-order epistasis is necessary, but it is rarely sufficient (Figure 4—figure supplement 1).
 
 To directly test the role of epistasis in creating mutational opportunities to switch DNA specificity, we compared the mutations available under the best-fit third-order model to those under the best-fit first-order model. Without epistasis, the total number of specificity-switching mutations is reduced by >80%, and the number of mutation types declines from 85 to just three (Figure 4F). Under a model that incorporates pairwise but not third-order epistasis, the number of RE-switching mutations is intermediate, but closer to that in the third-order model (Figure 4—figure supplement 2). Thus, epistasis – mainly second order – is the primary factor in the opportunity for mutations to change RE-specificity with a single amino acid change.
 
-## Evolutionary paths in sequence space
+### Evolutionary paths in sequence space
 
 We next assessed trajectories of functional evolution in sequence space and the effect of epistasis on those trajectories. The RH sequence space consists of all 160,000 possible sequences, each representing one protein variant, with edges connecting nodes that can be directly interconverted by a single nucleotide change given the standard genetic code. We assigned to each node the function(s) predicted by its genetic score under each model. Nonfunctional nodes – those that are null or weak on both REs – were excluded from the network, because purifying selection will remove these genotypes from an evolving population under most circumstances (Smith, 1969). We focused our analysis on evolutionary paths from ERE-specific starting points to SRE-specific endpoints, because this is the functional transition that occurred during history.
 
 Sign epistasis is generally thought to constrain epistasis by creating a fragmented sequence space in which local optima are separated by impassable valleys. Sign epistasis is rampant in our datasets (Figure 2D, Figure 4E), we found that given the best-fit third-order model, 99.8% of functional sequences are connected to each other in a single mutually accessible network (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig5-v1.jpg)
+
+**Figure 5.:** (A) Force-directed graph of all variants that are predicted to be strong activators on one or both REs in the complete model (left) or the first-order-only model (right) after fitting to the DMS data. Lines connect variants that are separated by a single nucleotide change given the standard genetic code. Nodes are colored by their predicted functions given each model: strong activator on ERE (purple), SRE (green), or both (cyan); black nodes are null but predicted to be a strong activator under the other model. Nodes that are null in both models are excluded from the network. (B) Average number of steps in sequence space for each ERE-specific genotype to reach an SRE-specific genotype when evolution is simulated using a model with only purifying selection and drift. Error bars, 95% confidence interval based on 100 replicates per starting point. (C) Distribution of the average difference in steps needed to reach an SRE-specific variant from each ERE-specific variant when epistasis is included or excluded, using the same evolutionary process as in B. Light and dark bars show cases in which epistasis makes the path shorter or longer, respectively, from a given ERE-specific variant. (D) Average number of steps needed to reach an SRE-specific genotype from each ERE-specific genotype in the sequence space of the complete (dark line) and first-order model (light line), when evolution is simulated with positive selection for increased SRE specificity. The “population size” parameter controls the strength of positive selection relative to drift. (E) Average distance from each ERE-specific variant to the closest SRE-specific genotype in the sequence space of the first-order and complete models. (F) Average number of single-step neighbors in sequence space per node that is ERE-specific (left) or SRE-specific (right), in the presence or absence of epistasis. Each column shows the average number of neighbors adjacent to the designated node that are strong activators on ERE (purple), SRE (green), or both (cyan). (G) Average number of unique minimum length paths connecting ERE-specific variants to their nearest SRE-specific neighbor in the first-order and complete models. (H) Same as G for distinct minimum length paths. All p-values were calculated from a permutation test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Force directed graph of genotypes that are activators in either the absence of epistasis (left), the presence of pairwise epistasis, or both pairwise and third-order epistasis (right). In each case, each node is a genotype, colored by if it is ERE-specific (purple), SRE-specific (green), promiscuous (blue), or a non-binder in the network but an activator in one of the other networks (black). All activator nodes are connected in a given network based on single amino acid changes via the genetic code. (B) Amino acid state at each node in the force directed graph for each site. Amino acids are colored to reveal clustering in the force directed graph and are labeled by single letter codes. S and Z are used to represent the two non-connected regions of the genetic code containing serine codons.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Average number of steps needed to reach an SRE-specific genotype from an ERE-specific genotype in the absence of epistasis (left, light), the presence of pairwise epistasis (middle), or both pairwise and third-order epistasis (right, dark) in a model with no positive selection for function. Error bars give a 95% confidence interval on the estimate based on 100 replicates from each ERE-specific genotype. Values are shown for either all ERE-specific starting genotypes or only ERE-specific genotypes found in all three networks when genotypes are connected via either the genetic code or by hamming distance. All p-values were calculated from a permutation test.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Average number of steps needed to reach an SRE-specific genotype from an ERE-specific genotype in the absence of epistasis (light), the presence of pairwise epistasis (middle), or both pairwise and third-order epistasis (dark) in a model with positive selection for increased SRE specificity for all ERE-specific starting genotypes (left) or shared ERE-specific genotypes found in all three networks (right). The population size was varied to control the relative strength of positive selection. (B) Same as A, but after removing paths that are greater than 20 steps long.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/88737/elife-88737-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Average number of steps needed to reach an SRE-specific genotype from an ERE-specific genotype in the absence of epistasis (left, light), the presence of pairwise epistasis (middle), or both pairwise and third-order epistasis (right, dark) in a model with no positive selection for function. Error bars give a 95% confidence interval on the estimate based on 100 replicates from each ERE-specific genotype. (B) Average distance between all ERE-specific genotypes and all SRE-specific genotypes in the absence of epistasis (left, light), the presence of pairwise epistasis (middle), or both pairwise and third-order epistasis (right, dark). (C) Average distance between all ERE-specific genotypes and the closest SRE-specific genotype in the absence of epistasis (left, light), the presence of pairwise epistasis (middle), or both pairwise and third-order epistasis (right, dark). (D) Average number of single step neighbors for ERE-specific (left) and SRE-specific (right) genotypes in the absence of epistasis (left, light), the presence of pairwise epistasis (middle), or both pairwise and third-order epistasis (right, dark). In each case, the average number of neighbors that are ERE-specific (purple), promiscuous (blue), or SRE-specific (green) are shown. (E) Average number of shortest paths between all ERE-specific and nearest SRE-specific genotype in the absence of epistasis (left, left), the presence of pairwise epistasis (middle), or both pairwise and third-order epistasis (right, dark). (F) Average number of distinct shortest paths between all ERE-specific and nearest SRE-specific genotype in the absence of epistasis (left, light), the presence of pairwise epistasis (middle), or both pairwise and third-order epistasis (right, dark). All p-values were calculated from a permutation test.
 
 Epistasis also enlarges the network of connected functional sequences, consistent with the function-enhancing effect of epistatic terms on functional variants. The third-order model contains 1603 functional nodes (1600 of which are connected in a single network), whereas the first-order epistasis-free model contains only 1080 functional nodes. The second-order model is almost as large as the complete third-order model, indicating that pairwise interactions account for most of the network-enlarging effect of epistasis (Figure 5—figure supplement 1). In multidimensional sequence space, epistasis therefore does not isolate functional variants: rather, it expands the network of functional sequences, virtually any of which can reach any other through a series of single-nucleotide substitutions.
 
@@ -100,7 +200,7 @@ Epistasis therefore shortens rather than lengthens the paths taken during the ev
 
 Epistasis therefore facilitates the evolution of new protein functions, rather than constraining it. Epistasis does constrain evolution on a fine scale by making some of the paths between designated pairs of sequences inaccessible. But epistasis also shapes which pairs exist in the network of functional sequences in the first place and how many steps apart those sequences are. When the genetic architecture includes epistasis, there are more functional sequences; also, similar sequences are more likely to have different functions, because a single amino acid difference can combine with the particular residues at the other sites, sometimes dramatically improving one function and impairing the other. By contrast, if the genetic architecture consisted entirely of main effects, variants that share functions would tend to have sequences that are more similar to each other and more different from those with different functions: in this case, each function would be distributed more smoothly across sequence space, and neighboring sequences would be less likely to have distinct functions than when epistasis is present.
 
-## Genetic architecture of a historical change in function
+### Genetic architecture of a historical change in function
 
 Finally, we sought to understand how the DBD’s genetic architecture shaped the historical transition from ERE- to SRE-specificity that occurred during the phylogenetic interval between AncSR1 and AncSR2. Each of the three amino acid changes from the ancestral RH sequence egKa to the derived GSKV (ancestral in lower case, derived in upper case) can be conferred by a single nucleotide change. The functions of the intermediates along the direct path from egKa to GSKV suggest the order in which the substitutions are likely to have occurred: of the three single-mutant variants, only one (GgKa) is functional on either RE – indicating that this was probably the first step – and the same is true of the possible second steps (GgKV being the only accessible functional node, Figure 6A).
 
@@ -116,7 +216,7 @@ The historical transition from ERE- to SRE-specificity also altered the architec
 
 Many of our findings differ from other studies of the genetic architecture of protein function and evolution. We found only a small role for high-order epistasis, with almost all functional variation among genotypes attributable to main and pairwise effects. Furthermore, the genetic architecture is dense at these low epistatic orders, instead of sparse as found in prior work. Finally, epistasis is not simply a constraint on evolution, but instead facilitates the evolution of new functions by altering which sequences are functional in the first place and how similar sequences with different functions are. These differences arise primarily because we take a global instead of a local view of epistasis, and we expand the scope of analysis to incorporate all possible amino acid states for multiple functions.
 
-## A global view of genetic architecture
+### A global view of genetic architecture
 
 Most prior studies have attempted to decompose protein genetic architecture by estimating the effects of mutations (and combinations) on a designated reference sequence (Buda et al., 2022; Lyons et al., 2020; Otwinowski et al., 2018; Sailer and Harms, 2017a; Sailer and Harms, 2017b; Weinreich et al., 2018; Weinreich et al., 2013). This strategy provides an accurate local picture of mutation effects when they are introduced into the reference or nearby proteins, but accuracy is poor across other backgrounds and is very sensitive to experimental error (Poelwijk et al., 2019). A method called background averaging reduces this problem by averaging estimates of mutation effects across sets of variants containing a state or combination of interest, but it still defines mutation effects relative to a particular reference state, which may make it sensitive to error in the measurement of variants containing the reference state (Poelwijk et al., 2019). In contrast, our approach provides a globally optimal dissection of genetic architecture by minimizing the total deviation between predicted and observed functions across the entire ensemble of variants, regardless of the number of states allowed at each site.
 
@@ -124,13 +224,13 @@ The shift from a reference-based account to a global model of genetic architectu
 
 A reference-free model of genetic architecture, in contrast, asks how sequence states per se – not just a change from a particular beginning state to a particular end state – determine function. The function of each variant in the entire ensemble of sequences is caused by all the states it contains, not by the differences that separate it from a wild-type sequence. Epistasis not only affects the available paths through sequence space from the reference to other nodes: it also determines which nodes are in the space in the first place – the entire set of possible starting, ending, and intermediate genotypes. The effect of mutations is also conceived differently: in the global model, a pair of mutations replaces the main effect of the ancestral states with two new derived main effects, and replaces the original epistatic interactions with every site in the protein – including with those sites at which the state does not change. A mutation does not simply replace one brick in a static genetic architecture; it also changes many of the second-order interactions that determined the protein’s functions but that are invisible if the starting point is viewed as a functional black-box. As a protein evolves, each substitution can epistatically change the effect on function of the state at many other sites or modify the effect of other future mutations.
 
-## Low-order, dense genetic architecture
+### Low-order, dense genetic architecture
 
 Like other researchers, we found pervasive epistasis within a protein (Buda et al., 2022; Otwinowski et al., 2018; Sailer and Harms, 2017a; Sailer and Harms, 2017b; Weinreich et al., 2018). Unlike most previous studies, we found that higher-order epistasis plays only a tiny role (Buda et al., 2022; Otwinowski et al., 2018; Sailer and Harms, 2017a; Sailer and Harms, 2017b; but see Weinreich et al., 2018). We did not measure fourth-order epistasis, but it is unlikely that it will account for much global variation: we obtained good predictions of function from main and pairwise effects alone, with third-order effects explaining very little variance. Moreover, for fourth-order terms to have much of a global effect, each one would have to be considerably larger on average than third-order and second-order terms, but we, like others (Weinreich et al., 2018), have observed that effects shrink in magnitude as epistatic order increases. Why do our findings concerning higher order epistasis differ from previous studies? A likely cause is that prior work used reference-based methods and/or they did not adequately account for global nonlinearities. Both of these factors are known to cause spurious inference of higher order epistasis (Otwinowski et al., 2018; Poelwijk et al., 2019; Sailer and Harms, 2017b).
 
 Another difference from previous work is that we found a dense genetic architecture at first and second orders, such that main and pairwise effects involving virtually all possible states at all sites make substantial contributions to genetic architecture. Some other studies have found a very sparse architecture, with just a few states or combinations explaining the distribution of functions across variants (Poelwijk et al., 2019). One cause of this difference may be that we analyzed all 20 amino acid states rather than just two, so the number of possible terms in our model is far larger than studies that analyze only pairs of states present in two high-functioning proteins. Consistent with this idea, combinatorial DMS studies have found that there are often numerous functional sequences that share few to no sequence states at the mutated sites, which necessitates a denser genetic architecture to account for the entire set of functional sequences compared to a set of sequences where only two amino acid states are allowed at each site (Podgornaia and Laub, 2015; Starr et al., 2017; Wu et al., 2016). Another factor may be that all the sites we examined are in the protein’s ‘active site’ – in this case, making direct contact with the DNA to which the protein binds.
 
-## Epistasis and evolution
+### Epistasis and evolution
 
 Prior work has viewed epistasis as an evolutionary constraint, but we found that the primary effect of epistasis is to facilitate functional evolution. Virtually all earlier studies on this topic considered only the effect of epistasis on direct paths through a binary sequence space between two functional sequences designated a priori as starting and ending points, and they have focused on optimization of a single function. In that context, the major effect of epistasis is to create idiosyncrasies in the functions of the intermediates between two high-functioning proteins, so epistasis can only constrain evolution along those paths (Poelwijk et al., 2007; Weinreich et al., 2005). But this narrow perspective never considers the effect of epistasis in making the designated sequences functional in the first place, and it excludes from view the vast number of additional potential starting, ending, and intermediate nodes in a 20-state combinatorial sequence space.
 
@@ -138,7 +238,7 @@ By incorporating a global perspective, our analysis reveals the facilitating eff
 
 Overall, epistasis makes the topography of sequence space idiosyncratic enough that new functions are easily accessible from nodes with different functions, but not so idiosyncratic that functional nodes become inaccessible from each other. Although epistatic interactions do constrain trajectories when we limit our view to arrival at a particular destination from a particular origin, interactions open opportunities to evolve new functions that are often just a step away from the trajectories that were realized during evolution.
 
-## Limitations and future work
+### Limitations and future work
 
 We are aware of several limitations in our study. First, we used an ordinal model to analyze the genetic architecture of functional data transformed into categorical form. This approach could reduce precision in estimating the terms of genetic architecture compared to direct analysis of continuous phenotypic data. The advantage of this approach is that it can reduce the impact of noise. In our dataset, many genotypes are at the lower bound of measurement, and much of the variation in measured florescence for these variants is measurement noise; ordinal regression is therefore expected to reduce the impact of noise on estimates of genetic architecture, and it appears to have done so in this case. Another potential issue is nonspecific epistasis, which if not incorporated can result in inflated estimates of specific epistasis. The logistic model assumes that an amino acid state or combination has a consistent effect on the log-odds of changing a variant’s functional category, irrespective of the level of function of the background into which it is introduced. It therefore does not explicitly incorporate nonspecific epistasis, such as that imposed by a limited dynamic range of measurement, although the sigmoid shape may fortuitously accommodate this kind of nonspecific context-dependence. Because our categorical analysis of variants’ functional class depends only on the functional rank-order of variants and not on their quantitative function per se, the logistic model is expected to be robust to nonspecific epistasis, so long as the underlying relationship between genotype and phenotypic measurement is monotonic.
 
@@ -150,168 +250,310 @@ We found that within the DBD’s recognition helix, the relationship between gen
 
 ## Methods
 
-## Experimental data
+### Experimental data
 
 The experimental data analyzed here were first reported in Starr et al., 2017. Libraries of all combinations of all 20 amino acid states at four variable sites in the SR DBD recognition helix (RH, 160,000 total protein variants) were prepared in two different reconstructed ancestral backgrounds: AncSR1 and AncSR1+11P, which contains 11 historical permissive substitutions, which nonspecifically increase DNA affinity without strongly affecting specificity (McKeown et al., 2014). The libraries were transformed into yeast strains in which a fluorescent reporter is driven by the ancestral estrogen receptor response element (ERE) or the derived ketosteroid receptor response element (SRE). Activation by each variant on each RE was measured using a FACS-assisted sort-seq assay and then discretized into three ordered activation categories on each RE: Null if their mean fluorescence was not significantly greater than stop-codon-containing variants, Strong if their mean fluorescence was significantly greater than stop-codon variants and not less than 80% of the historical reference for that RE (AncSR1 on ERE, AncSR1 +11P+GSKV on SRE, where GSKV is the sequence of extant ketosteroid receptors in the RH), or Weak if they were neither Null nor Strong. Further details of the categorization can be found in Starr et al., 2017. For model fitting, we only used data from the combinatorial library created on the AncSR1 +11 P background as it contained the most balanced number of variants across the three classes.
 
-## Model description
+### Model description
 
-We formulated an ordinal logistic regression model to dissect the effects of amino acid states and combinations on the activation class of RH variants on the two REs (Figure 1). The model is a forward-cumulative model with a proportional log-odds assumption – a standard approach to modeling data discretized into ordered classes of an otherwise continuous variable (in this case, mean fluorescence). The model imposes a linear relationship between the predictors (the genetic states/combinations) and the log-odds that a variant is in a set of higher classes vs. a set of lower classes; log-odds is defined as the logarithm of the ratio of the probabilities of the higher vs. the lower classifications. For three activation classes, the relationship between the predicted class Yg of a genetic variant with sequence g is:log(P(Y(g)=Null)P(Y(g)=WeakorStrong))=θNW+βXlog(P(Y(g)=NullorWeak)P(Y(g)=Strong))=θWS+βX
+We formulated an ordinal logistic regression model to dissect the effects of amino acid states and combinations on the activation class of RH variants on the two REs (Figure 1). The model is a forward-cumulative model with a proportional log-odds assumption – a standard approach to modeling data discretized into ordered classes of an otherwise continuous variable (in this case, mean fluorescence). The model imposes a linear relationship between the predictors (the genetic states/combinations) and the log-odds that a variant is in a set of higher classes vs. a set of lower classes; log-odds is defined as the logarithm of the ratio of the probabilities of the higher vs. the lower classifications. For three activation classes, the relationship between the predicted class $Yg$ of a genetic variant with sequence g is:
+
+$$
+log(\frac{P(Y(g)=Null)}{P(Y(g)=WeakorStrong)})=\theta_{NW}+\betaX
+$$
+
+
+
+$$
+log(\frac{P(Y(g)=NullorWeak)}{P(Y(g)=Strong)})=\theta_{WS}+\betaX
+$$
 
 where θNW and θWS are thresholds that delimit the boundaries between the Null/Weak and Weak/Strong binding classes, X is a matrix of indicator variables that represent all the possible sequence states and combinations, and β (the variables to be estimated) is a set of coefficients that describe the effect of each state or combination on the log-odds of classification. We evaluated the proportional odds assumption by fitting two simple logistic regression models to the observed activation class data, with variants reclassified as null vs. weak-or-strong, and again as null-or-weak vs. strong. Estimated effects across the two thresholds were similar, as required by the proportional odds assumption (Figure 1—figure supplement 3). However, this assumption can be relaxed if there is evidence that the effects of amino acid states or combinations is dependent on the binding class.
 
 We used a reference-free encoding of indicator variables and effect coefficients. First, we describe the form of the model that would be used if only a single phenotype were measured; we then expand the description to incorporate two different phenotypes. For the single-phenotype model, the indicator matrix X describes the amino acid states and combinations contained by each of the 160,000 protein variants. Each row in X specifies a protein variant with sequence q1 q2 q3 q4 at the four variable sites, and each column represents a particular state at a site (e.g. q1=A) or a particular combination of states at a combination of sites (e.g. q1q2=AA, or q1q2q3=AAA). Each cell is assigned value 1 or 0 to specify whether that state or combination is present or absent in the variant. Each coefficient represents the effect of having one of these states or combinations on the log-odds of being in an activation class, relative to the average across all variants. The complete model therefore consists of 80 first-order effects (20 amino acid states at each of the four sites), 2400 second-order effects (400 pairs of states at each of the six pairs of sites), and 32,000 third-order effects (8000 triplets of states at each of the four triplets of sites). A single global intercept, b0 describes the average across all variants (and is associated with indicator variable with value 1 in all variants). In principle, the model could contain all fourth-order combinations and effects, but we did not include them, because each fourth-order coefficient would be estimated from the observed activation class of a single variant and so would be indistinguishable from measurement error.
 
-To incorporate the effects of genetic states on two different functions, the indicator matrix is expanded to uniquely identify all 320,000 protein-RE complexes based on the RE it contains and the amino acid states/combinations in the protein variant. Each amino acid state/combination is now associated with two coefficients – one for its average effect across the two REs (β, which represents the RE-nonspecific effect on activation) and the other for the difference in effect on ERE vs. SRE (σ, representing the effect on specificity). Indicator variables for the RE-nonspecific effects are assigned value 1 if an amino acid state/combination is present in a complex and 0 if absent; indicators for specificity effects are assigned value 1 if the complex contains ERE (and the amino acid state/combination is present), or –1 if it contains SRE. The net effect of any amino acid state or combination on ERE activation is therefore its binding coefficient plus its specificity coefficient; its effect on SRE is the binding coefficient minus the specificity coefficient. A global RE coefficient (σ0) represents the main effect of having ERE vs SRE in the complex, averaged over all protein variants (with indicator 1 or –1 for complexes containing ERE or SRE, respectively). As in the single-phenotype model, a global intercept coefficient represents the global average across all complexes (β0 , with indicator 1 in all complexes).
+To incorporate the effects of genetic states on two different functions, the indicator matrix is expanded to uniquely identify all 320,000 protein-RE complexes based on the RE it contains and the amino acid states/combinations in the protein variant. Each amino acid state/combination is now associated with two coefficients – one for its average effect across the two REs (β, which represents the RE-nonspecific effect on activation) and the other for the difference in effect on ERE vs. SRE (σ, representing the effect on specificity). Indicator variables for the RE-nonspecific effects are assigned value 1 if an amino acid state/combination is present in a complex and 0 if absent; indicators for specificity effects are assigned value 1 if the complex contains ERE (and the amino acid state/combination is present), or –1 if it contains SRE. The net effect of any amino acid state or combination on ERE activation is therefore its binding coefficient plus its specificity coefficient; its effect on SRE is the binding coefficient minus the specificity coefficient. A global RE coefficient $(\sigma_{0})$ represents the main effect of having ERE vs SRE in the complex, averaged over all protein variants (with indicator 1 or –1 for complexes containing ERE or SRE, respectively). As in the single-phenotype model, a global intercept coefficient represents the global average across all complexes ($\beta_{0}$ , with indicator 1 in all complexes).
 
-Although the number of total coefficients in the model is large (68,962 possible), each of the 320,000 complexes is described by just 30 non-zero indicator variables: one for the global intercept, one for the main RE effect, and a binding and specificity coefficient for each of the four amino acid states, six pairs, and four triplets that it contains. For a particular variant with sequence q1q2q3q4 the complete model is specified as follows, after coefficients are multiplied by the relevant indicator variables:log(P(Y(q1q2q3q4|ERE)=Null)P(Y(q1q2q3q4|ERE)=WeakorStrong))=θNW+β0+∑iβqi+∑i<jβqiqj+∑i<j<kβqiqjqk+σ0+∑iσqi+∑i<jσqiqj+∑i<j<kσqiqjqklog(P(Y(q1q2q3q4|SRE)=Null)P(Y(q1q2q3q4|SRE)=WeakorStrong))=θNW+β0+∑iβqi+∑i<jβqiqj+∑i<j<kβqiqjqk−σ0−∑iσqi−∑i<jσqiqj−∑i<j<kσqiqjqklog(P(Y(q1q2q3q4|ERE)=NullorWeak)P(Y(q1q2q3q4|ERE)=Strong))=θWS+β0+∑iβqi+∑i<jβqiqj+∑i<j<kβqiqjqk+σ0+∑iσqi+∑i<jσqiqj+∑i<j<kσqiqjqklog(P(Y(q1q2q3q4|SRE)=NullorWeak)P(Y(q1q2q3q4|SRE)=Strong))=θWS+β0+∑iβqi+∑i<jβqiqj+∑i<j<kβqiqjqk−σ0−∑iσqi−∑i<jσqiqj−∑i<j<kσqiqjqk
+Although the number of total coefficients in the model is large (68,962 possible), each of the 320,000 complexes is described by just 30 non-zero indicator variables: one for the global intercept, one for the main RE effect, and a binding and specificity coefficient for each of the four amino acid states, six pairs, and four triplets that it contains. For a particular variant with sequence $q_{1}q_{2}q_{3}q_{4}$ the complete model is specified as follows, after coefficients are multiplied by the relevant indicator variables:
+
+$$
+log(\frac{P(Y(q_{1}q_{2}q_{3}q_{4}|ERE)=Null)}{P(Y(q_{1}q_{2}q_{3}q_{4}|ERE)=WeakorStrong)})=\theta_{NW}+\beta_{0}+\sumi\beta_{q_{i}}+\sumi<j\beta_{q_{i}q_{j}}+\sumi<j<k\beta_{q_{i}q_{j}q_{k}}+\sigma_{0}+\sumi\sigma_{q_{i}}+\sumi<j\sigma_{q_{i}q_{j}}+\sumi<j<k\sigma_{q_{i}q_{j}q_{k}}
+$$
+
+
+
+$$
+log(\frac{P(Y(q_{1}q_{2}q_{3}q_{4}|SRE)=Null)}{P(Y(q_{1}q_{2}q_{3}q_{4}|SRE)=WeakorStrong)})=\theta_{NW}+\beta_{0}+\sumi\beta_{q_{i}}+\sumi<j\beta_{q_{i}q_{j}}+\sumi<j<k\beta_{q_{i}q_{j}q_{k}}−\sigma_{0}−\sumi\sigma_{q_{i}}−\sumi<j\sigma_{q_{i}q_{j}}−\sumi<j<k\sigma_{q_{i}q_{j}q_{k}}
+$$
+
+
+
+$$
+log(\frac{P(Y(q_{1}q_{2}q_{3}q_{4}|ERE)=NullorWeak)}{P(Y(q_{1}q_{2}q_{3}q_{4}|ERE)=Strong)})=\theta_{WS}+\beta_{0}+\sumi\beta_{q_{i}}+\sumi<j\beta_{q_{i}q_{j}}+\sumi<j<k\beta_{q_{i}q_{j}q_{k}}+\sigma_{0}+\sumi\sigma_{q_{i}}+\sumi<j\sigma_{q_{i}q_{j}}+\sumi<j<k\sigma_{q_{i}q_{j}q_{k}}
+$$
+
+
+
+$$
+log(\frac{P(Y(q_{1}q_{2}q_{3}q_{4}|SRE)=NullorWeak)}{P(Y(q_{1}q_{2}q_{3}q_{4}|SRE)=Strong)})=\theta_{WS}+\beta_{0}+\sumi\beta_{q_{i}}+\sumi<j\beta_{q_{i}q_{j}}+\sumi<j<k\beta_{q_{i}q_{j}q_{k}}−\sigma_{0}−\sumi\sigma_{q_{i}}−\sumi<j\sigma_{q_{i}q_{j}}−\sumi<j<k\sigma_{q_{i}q_{j}q_{k}}
+$$
 
 where | indicates the RE in the complex, and i, j, and k index sites in the RH sequence.
 
-## Specific vs non-specific epistasis and the genetic score
+### Specific vs non-specific epistasis and the genetic score
 
 In general, epistatic interactions among states can be classified as specific or non-specific (Harms and Thornton, 2013; Starr and Thornton, 2016). Non-specific epistasis occurs if a global non-linear relationship between an underlying physical property and the measured phenotype affects all combinations of states in the same way. Specific epitasis occurs when combinations of states have distinct non-additive effects on the underlying physical properties. Failure to account for non-specific epistasis when modeling epistatic interactions can artificially inflate inferences of specific epistasis (Otwinowski et al., 2018; Sailer and Harms, 2017b). Nonspecific epistasis can arise from intrinsically nonlinear relationships between physical properties and measured phenotypes (such as the energy of binding and occupancy of the bound state), limited dynamic range in an assay or biological phenotype, non-linear scaling within the dynamic range, or the imposition of thresholds within the dynamic range for classifying the functionality of variants.
 
-Our model estimates specific and non-specific epistatic effects in a single fitting procedure by including both forms of epistasis in the model. We do so by defining the genetic score y(g) of any variant g with sequence q1q2q3q4 in complex with ERE or SRE as the sum of all the specific genetic effects of the states in g and the complex:y(g|ERE)=β0+∑iβqi+∑i<jβqiqj+∑i<j<kβqiqjqk+σ0+∑iσqi+∑i<jσqiqj+∑i<j<kσqiqjqky(g|SRE)=β0+∑iβqi+∑i<jβqiqj+∑i<j<kβqiqjqk−(σ0+∑iσqi+∑i<jσqiqj+∑i<j<kσqiqjqk)
+Our model estimates specific and non-specific epistatic effects in a single fitting procedure by including both forms of epistasis in the model. We do so by defining the genetic score y(g) of any variant g with sequence q1q2q3q4 in complex with ERE or SRE as the sum of all the specific genetic effects of the states in g and the complex:
+
+$$
+y(g|ERE)=\beta_{0}+\sumi\beta_{q_{i}}+\sumi<j\beta_{q_{i}q_{j}}+\sumi<j<k\beta_{q_{i}q_{j}q_{k}}+\sigma_{0}+\sumi\sigma_{q_{i}}+\sumi<j\sigma_{q_{i}q_{j}}+\sumi<j<k\sigma_{q_{i}q_{j}q_{k}}
+$$
+
+
+
+$$
+y(g|SRE)=\beta_{0}+\sumi\beta_{q_{i}}+\sumi<j\beta_{q_{i}q_{j}}+\sumi<j<k\beta_{q_{i}q_{j}q_{k}}−(\sigma_{0}+\sumi\sigma_{q_{i}}+\sumi<j\sigma_{q_{i}q_{j}}+\sumi<j<k\sigma_{q_{i}q_{j}q_{k}})
+$$
 
 The specific epistatic interactions are estimated as the second- and third-order epistatic terms of the model, which have an additive effect on the genetic score (together with all the non-epistatic first- and zero-order effects). Nonspecific epistasis is then incorporated through the logit function, which makes classification a nonlinear outcome of the genetic score.
 
-## Epistatic coding and interpreting coefficient estimates
+### Epistatic coding and interpreting coefficient estimates
 
-Most efforts to model sequence-function relationships have encoded genetic effects as the effects of mutations (singly or in combination) relative to a designated reference or ‘wild-type’ sequence. Others have used a Fourier transformation to recode genotypes and estimate the effects of the transformed states relative to the average across all genotypes (Brookes et al., 2022; Poelwijk et al., 2016; Stormo, 2011). Here, we develop a reference-free approach that directly estimates the effect of any amino acid state or combination on the genetic score relative to the global average across all variants. In our model, the zero-order term is the global average:β0=12⋅204∑gϵGy(g)=y(G)¯
+Most efforts to model sequence-function relationships have encoded genetic effects as the effects of mutations (singly or in combination) relative to a designated reference or ‘wild-type’ sequence. Others have used a Fourier transformation to recode genotypes and estimate the effects of the transformed states relative to the average across all genotypes (Brookes et al., 2022; Poelwijk et al., 2016; Stormo, 2011). Here, we develop a reference-free approach that directly estimates the effect of any amino acid state or combination on the genetic score relative to the global average across all variants. In our model, the zero-order term is the global average:
 
-where y(g) is the genetic score of a particular genotype g and G is the set of all possible protein sequence/RE element complexes; the factor before the sum averages over all protein genotypes times 2 to reflect the number of REs. The main effect of a particular amino acid state q at a particular site i on the log-odds of activation (not specific to an RE) is the average difference between the genetic score of all variants with that state and the global average:βqi=y(Gqi)¯−β0=12⋅203∑gϵGqiy(g)−β0
+$$
+\beta_{0}=\frac{1}{2⋅20^{4}}\sumgϵGy(g)=y(G)¯
+$$
 
-where Gqi is the set of genotypes with amino acid state q at site i. Similarly, a pairwise epistatic effect is the difference between the average genetic score of Gqiqj – the set of variants containing states qi and qj at a particular pair of sites i and j – and the expected score if there was no pairwise interaction:βqiqj=y(Gqiqj)¯−(β0+βqi+βqj)=12⋅202∑gϵGqiqjy(g)−(β0+βqi+βqj)
+where y(g) is the genetic score of a particular genotype g and $G$ is the set of all possible protein sequence/RE element complexes; the factor before the sum averages over all protein genotypes times 2 to reflect the number of REs. The main effect of a particular amino acid state q at a particular site i on the log-odds of activation (not specific to an RE) is the average difference between the genetic score of all variants with that state and the global average:
 
-Third-order interactions are the difference between the expected genetic score based on the relevant lower-order effects:βqiqjqk=y(Gqiqjqk)¯−(β0+βqi+βqj+βqk+βqiqj+βqiqk+βqjqk)=12⋅20∑gϵGqiqjqky(g)−(β0+βqi+βqj+βqk+βqiqj+βqiqk+βqjqk)
+$$
+\beta_{q_{i}}=y(G_{q_{i}})¯−\beta_{0}=\frac{1}{2⋅20^{3}}\sumgϵG_{q_{i}}y(g)−\beta_{0}
+$$
 
-The specificity coefficients are encoded similarly. The global RE coefficient reflects the average difference between the genetic score of all complexes containing ERE and the global average (which is of equal magnitude but opposite sign as the average difference of all complexes containing SRE from the global average). This equals half the difference between the average genetic scores for all complexes on ERE and all complexes on SRE:σ0=y(GE)¯−y(G)¯=−(y(GS)¯−y(G)¯)=12(y(GE)¯−y(GS)¯)=1204(∑gϵGEy(gE)−∑gϵGSy(gS))
+where $G_{q_{i}}$ is the set of genotypes with amino acid state q at site i. Similarly, a pairwise epistatic effect is the difference between the average genetic score of $G_{q_{i}q_{j}}$ – the set of variants containing states qi and qj at a particular pair of sites i and j – and the expected score if there was no pairwise interaction:
 
-where y(gE) is the genetic score when a protein variant with sequence g is bound to ERE and y(gS) is the genetic score when a genotype g is bound to SRE. The remaining specificity coefficients follow the same pattern, reflecting differences in specificity beyond what is expected from lower-order effects. For the main specificity coefficients:σqi=12(y(GqiE)¯−y(GqiS)¯)−σ0
+$$
+\beta_{q_{i}q_{j}}=y(G_{q_{i}q_{j}})¯−(\beta_{0}+\beta_{q_{i}}+\beta_{q_{j}})=\frac{1}{2⋅20^{2}}\sumgϵG_{q_{i}q_{j}}y(g)−(\beta_{0}+\beta_{q_{i}}+\beta_{q_{j}})
+$$
 
-For pairwise specificity coefficients:σqiqj=12(y(GqiqjE)¯−y(GqiqjS)¯)−(σ0+σqi+σqj)
+Third-order interactions are the difference between the expected genetic score based on the relevant lower-order effects:
 
-For third-order specificity coefficients:σqiqjqk=12(y(GqiqjqkE)¯−y(GqiqjqkS)¯)−(σ0+σqi+σqj+σqk+σqiqj+σqiqk+σqjqk)
+$$
+\beta_{q_{i}q_{j}q_{k}}=y(G_{q_{i}q_{j}q_{k}})¯−(\beta_{0}+\beta_{q_{i}}+\beta_{q_{j}}+\beta_{q_{k}}+\beta_{q_{i}q_{j}}+\beta_{q_{i}q_{k}}+\beta_{q_{j}q_{k}})=\frac{1}{2⋅20}\sumgϵG_{q_{i}q_{j}q_{k}}y(g)−(\beta_{0}+\beta_{q_{i}}+\beta_{q_{j}}+\beta_{q_{k}}+\beta_{q_{i}q_{j}}+\beta_{q_{i}q_{k}}+\beta_{q_{j}q_{k}})
+$$
 
-## Model selection, regularization, and cross-validation
+The specificity coefficients are encoded similarly. The global RE coefficient reflects the average difference between the genetic score of all complexes containing ERE and the global average (which is of equal magnitude but opposite sign as the average difference of all complexes containing SRE from the global average). This equals half the difference between the average genetic scores for all complexes on ERE and all complexes on SRE:
+
+$$
+\sigma_{0}=y(G^{E})¯−y(G)¯=−(y(G^{S})¯−y(G)¯)=\frac{1}{2}(y(G^{E})¯−y(G^{S})¯)=\frac{1}{20^{4}}(\sumgϵG^{E}y(g^{E})−\sumgϵG^{S}y(g^{S}))
+$$
+
+where $y(g^{E})$ is the genetic score when a protein variant with sequence g is bound to ERE and $y(g^{S})$ is the genetic score when a genotype g is bound to SRE. The remaining specificity coefficients follow the same pattern, reflecting differences in specificity beyond what is expected from lower-order effects. For the main specificity coefficients:
+
+$$
+\sigma_{q_{i}}=\frac{1}{2}(y(G_{q_{i}}^{E})¯−y(G_{q_{i}}^{S})¯)−\sigma_{0}
+$$
+
+For pairwise specificity coefficients:
+
+$$
+\sigma_{q_{i}q_{j}}=\frac{1}{2}(y(G_{q_{i}q_{j}}^{E})¯−y(G_{q_{i}q_{j}}^{S})¯)−(\sigma_{0}+\sigma_{q_{i}}+\sigma_{q_{j}})
+$$
+
+For third-order specificity coefficients:
+
+$$
+\sigma_{q_{i}q_{j}q_{k}}=\frac{1}{2}(y(G_{q_{i}q_{j}q_{k}}^{E})¯−y(G_{q_{i}q_{j}q_{k}}^{S})¯)−(\sigma_{0}+\sigma_{q_{i}}+\sigma_{q_{j}}+\sigma_{q_{k}}+\sigma_{q_{i}q_{j}}+\sigma_{q_{i}q_{k}}+\sigma_{q_{j}q_{k}})
+$$
+
+### Model selection, regularization, and cross-validation
 
 We fit the model to the DMS data using regularized logistic regression in R (R Development Core Team, 2023). To avoid overfitting model parameters to measurement noise, we used regularization via ridge regression (L2 norm) (Figure 1—figure supplement 1). To identify the optimal regularization penalty lambda, we used iterated 10-fold cross-validation. Specifically, we fit a series of models with 900 lambda values of decreasing magnitude from 10–1 to 10–8 on a log10 scale. The data were randomly divided into 10 equally sized blocks, and the model at each lambda was fit to 90% of the data, leaving out 10% of the data as a test set, and the activation class of each variant in the test set was predicted on each RE. We compared these predictions to the observed class for each variant, counting misclassification into an adjacent category (weak-null or weak-strong) as a single error and misclassification between null and strong as two errors. We repeated this procedure, using each of the 10 blocks as the test set in turn and calculated the mean misclassification rate. We then repeated this entire procedure ten times, dividing the data into different blocks each time, and using the variation in the estimated misclassification ratio to determine the standard error in our estimate. We applied this procedure to all values of lambda and selected the value with the lowest average misclassification rate.
 
-## Model implementation
+### Model implementation
 
 To implement the cumulative odds model with three ordered classes and the proportional odds assumption in a framework that allowed for regularization and cross-validation, we made several modifications to the glmnetcr function in the glmnetcr package (Archer, 2010).
 
-## Proportional odds assumption via logistic regression
+#### Proportional odds assumption via logistic regression
 
 In general, the cumulative odds model can be viewed as generating a set of binary variables around each threshold, each of which distinguishes between the set of classes lower and the set of classes higher than the threshold. For our three activation classes, we recoded the categories using two binary variables – one that distinguishes the Null class from Weak-or-Strong and another that distinguishes Null-or-Weak from Strong. Null corresponds to the 00 class, weak to the 10 class, and strong to the 11 class. Logistic regression can then be used to estimate the best-fit model parameters that predict these recoded classes. This produces equivalent estimates of model coefficients as ordinal regression.
 
-## Sparse matrix representation
+#### Sparse matrix representation
 
 Manipulating the large model matrix imposed a large computational burden. Since a large portion of the matrix consists of zeros (each row contains only 30 non-zero values), we used the MatrixModels R package (Bates and Maechler, 2022) and modification of functions in the glmnetcr package to implement the handling of sparse matrices.
 
-## Long vector accommodation
+#### Long vector accommodation
 
 The version of R we used fit logistic regression models with regularization using Fortran. To accommodate the large number of observations and covariates, we modified the lognet function from the glmnet R package to handle long vectors and passed this to the underlying Fortan code using the dotCall64 R package (Gerber et al., 2018).
 
-## Zero-sum constraint on coefficients
+### Zero-sum constraint on coefficients
 
 The reference-free framework requires the sum of model coefficients for a given site (or combination of sites) to sum to zero. All marginal subsets of pairwise or third-order coefficients – defined as the subset of coefficients for a given pair (or triplet) of sites that share a particular state (or pair of states) – must also sum to zero. For example, of the 400 pairwise interactions between sites 1 and 2, the entire set must sum to zero; of these, 20 have an A at site 1, and this marginal set must also sum to zero. This constraint guarantees that all coefficients represent the average effect of having some sequence state or combination relative to prediction from applicable lower-order terms and the global average.
 
-Imposing this constraint during regularized regression is computationally expensive. We therefore performed unconstrained regularized regression and then adjusted the unconstrained coefficients post-hoc to impose this constraint. Specifically, we calculated the average of each set of unconstrained coefficients and each marginal set of unconstrained coefficients. We then subtracted the relevant averages from each unconstrained coefficient, thus recentering each set and marginal subset around an average of zero. For third-order interactions, the constrained estimates are:β^qiqjqk=βqiqjqk−(β∗iqjqk¯+βqi∗jqk¯+βqiqj∗k¯)+(β∗i∗jqk¯+β∗iqj∗k¯+βqi∗j∗k¯)−β∗i∗j∗k¯σ^qiqjqk=σqiqjqk−(σ∗iqjqk¯+σqi∗jqk¯+σqiqj∗k¯)+(σ∗i∗jqk¯+σ∗iqj∗k¯+σqi∗j∗k¯)−σ∗i∗j∗k¯
+Imposing this constraint during regularized regression is computationally expensive. We therefore performed unconstrained regularized regression and then adjusted the unconstrained coefficients post-hoc to impose this constraint. Specifically, we calculated the average of each set of unconstrained coefficients and each marginal set of unconstrained coefficients. We then subtracted the relevant averages from each unconstrained coefficient, thus recentering each set and marginal subset around an average of zero. For third-order interactions, the constrained estimates are:
 
-where β^ and σ^ are the constrained coefficients, β and σ the unconstrained coefficients, and the averages are over the possible states at a site (or combination) indicated by the ∗. Pairwise coefficients follow the same pattern, with the total marginal effect of each combination of amino acids to be zero:β^qiqj=βqiqj−(β∗iqj¯+βqi∗j¯−β∗i∗j¯)+(βqiqj∗k¯−βqi∗j∗k¯−β∗iqj∗k¯+β∗i∗j∗k¯)+(βqiqj∗l¯−βqi∗j∗l¯−β∗iqj∗l¯−β∗i∗j∗l¯)σ^qiqj=σqiqj−(σ∗iqj¯+σqi∗j¯−σ∗i∗j¯)+(σqiqj∗k¯−σqi∗j∗k¯−σ∗iqj∗k¯+σ∗i∗j∗k¯)+(σqiqj∗l¯−σqi∗j∗l¯−σ∗iqj∗l¯−σ∗i∗j∗l¯)
+$$
+\beta^_{q_{i}q_{j}q_{k}}=\beta_{q_{i}q_{j}q_{k}}−(\beta_{∗_{i}q_{j}q_{k}}¯+\beta_{q_{i}∗_{j}q_{k}}¯+\beta_{q_{i}q_{j}∗_{k}}¯)+(\beta_{∗_{i}∗_{j}q_{k}}¯+\beta_{∗_{i}q_{j}∗_{k}}¯+\beta_{q_{i}∗_{j}∗_{k}}¯)−\beta_{∗_{i}∗_{j}∗_{k}}¯
+$$
 
-Similarly for the main effect terms:β^qi=βqi−β∗i¯+(βqi∗j¯−β∗i∗j¯)+(βqi∗k¯−β∗i∗k¯)+(βqi∗l¯−β∗i∗l¯)+(βqi∗j∗k¯−β∗i∗j∗k¯)+(βqi∗j∗l¯−β∗i∗j∗l¯)+(βqi∗k∗l¯−β∗i∗k∗l¯)σ^qi=σqi−σ∗i¯+(σqi∗j¯−σ∗i∗j¯)+(σqi∗k¯−σ∗i∗k¯)+(σqi∗l¯−σ∗i∗l¯)+(σqi∗j∗k¯−σ∗i∗j∗k¯)+(σqi∗j∗l¯−σ∗i∗j∗l¯)+(σqi∗k∗l¯−σ∗i∗k∗l¯)
 
-The intercepts then capture the average deviations from zero:β^0=β0+β∗1¯+β∗2¯+β∗3¯+β∗4¯+β∗1∗2¯+β∗1∗3¯+β∗1∗4¯+β∗2∗3¯+β∗2∗4¯+β∗3∗4¯+β∗1∗2∗3¯+β∗1∗2∗4¯+β∗1∗3∗4¯+β∗2∗3∗4¯σ^0=σ0+σ∗1¯+σ∗2¯+σ∗3¯+σ∗4¯+σ∗1∗2¯+σ∗1∗3¯+σ∗1∗4¯+σ∗2∗3¯+σ∗2∗4¯+σ∗3∗4¯+σ∗1∗2∗3¯+σ∗1∗2∗4¯+σ∗1∗3∗4¯+σ∗2∗3∗4¯
+
+$$
+\sigma^_{q_{i}q_{j}q_{k}}=\sigma_{q_{i}q_{j}q_{k}}−(\sigma_{∗_{i}q_{j}q_{k}}¯+\sigma_{q_{i}∗_{j}q_{k}}¯+\sigma_{q_{i}q_{j}∗_{k}}¯)+(\sigma_{∗_{i}∗_{j}q_{k}}¯+\sigma_{∗_{i}q_{j}∗_{k}}¯+\sigma_{q_{i}∗_{j}∗_{k}}¯)−\sigma_{∗_{i}∗_{j}∗_{k}}¯
+$$
+
+where $\beta^$ and $\sigma^$ are the constrained coefficients, $\beta$ and $\sigma$ the unconstrained coefficients, and the averages are over the possible states at a site (or combination) indicated by the ∗. Pairwise coefficients follow the same pattern, with the total marginal effect of each combination of amino acids to be zero:
+
+$$
+\beta^_{q_{i}q_{j}}=\beta_{q_{i}q_{j}}−(\beta_{∗_{i}q_{j}}¯+\beta_{q_{i}∗_{j}}¯−\beta_{∗_{i}∗_{j}}¯)+(\beta_{q_{i}q_{j}∗_{k}}¯−\beta_{q_{i}∗_{j}∗_{k}}¯−\beta_{∗_{i}q_{j}∗_{k}}¯+\beta_{∗_{i}∗_{j}∗_{k}}¯)+(\beta_{q_{i}q_{j}∗_{l}}¯−\beta_{q_{i}∗_{j}∗_{l}}¯−\beta_{∗_{i}q_{j}∗_{l}}¯−\beta_{∗_{i}∗_{j}∗_{l}}¯)
+$$
+
+
+
+$$
+\sigma^_{q_{i}q_{j}}=\sigma_{q_{i}q_{j}}−(\sigma_{∗_{i}q_{j}}¯+\sigma_{q_{i}∗_{j}}¯−\sigma_{∗_{i}∗_{j}}¯)+(\sigma_{q_{i}q_{j}∗_{k}}¯−\sigma_{q_{i}∗_{j}∗_{k}}¯−\sigma_{∗_{i}q_{j}∗_{k}}¯+\sigma_{∗_{i}∗_{j}∗_{k}}¯)+(\sigma_{q_{i}q_{j}∗_{l}}¯−\sigma_{q_{i}∗_{j}∗_{l}}¯−\sigma_{∗_{i}q_{j}∗_{l}}¯−\sigma_{∗_{i}∗_{j}∗_{l}}¯)
+$$
+
+Similarly for the main effect terms:
+
+$$
+\beta^_{q_{i}}=\beta_{q_{i}}−\beta_{∗_{i}}¯+(\beta_{q_{i}∗_{j}}¯−\beta_{∗_{i}∗_{j}}¯)+(\beta_{q_{i}∗_{k}}¯−\beta_{∗_{i}∗_{k}}¯)+(\beta_{q_{i}∗_{l}}¯−\beta_{∗_{i}∗_{l}}¯)+(\beta_{q_{i}∗_{j}∗_{k}}¯−\beta_{∗_{i}∗_{j}∗_{k}}¯)+(\beta_{q_{i}∗_{j}∗_{l}}¯−\beta_{∗_{i}∗_{j}∗_{l}}¯)+(\beta_{q_{i}∗_{k}∗_{l}}¯−\beta_{∗_{i}∗_{k}∗_{l}}¯)
+$$
+
+
+
+$$
+\sigma^_{q_{i}}=\sigma_{q_{i}}−\sigma_{∗_{i}}¯+(\sigma_{q_{i}∗_{j}}¯−\sigma_{∗_{i}∗_{j}}¯)+(\sigma_{q_{i}∗_{k}}¯−\sigma_{∗_{i}∗_{k}}¯)+(\sigma_{q_{i}∗_{l}}¯−\sigma_{∗_{i}∗_{l}}¯)+(\sigma_{q_{i}∗_{j}∗_{k}}¯−\sigma_{∗_{i}∗_{j}∗_{k}}¯)+(\sigma_{q_{i}∗_{j}∗_{l}}¯−\sigma_{∗_{i}∗_{j}∗_{l}}¯)+(\sigma_{q_{i}∗_{k}∗_{l}}¯−\sigma_{∗_{i}∗_{k}∗_{l}}¯)
+$$
+
+The intercepts then capture the average deviations from zero:
+
+$$
+\beta^_{0}=\beta_{0}+\beta_{∗_{1}}¯+\beta_{∗_{2}}¯+\beta_{∗_{3}}¯+\beta_{∗_{4}}¯+\beta_{∗_{1}∗_{2}}¯+\beta_{∗_{1}∗_{3}}¯+\beta_{∗_{1}∗_{4}}¯+\beta_{∗_{2}∗_{3}}¯+\beta_{∗_{2}∗_{4}}¯+\beta_{∗_{3}∗_{4}}¯+\beta_{∗_{1}∗_{2}∗_{3}}¯+\beta_{∗_{1}∗_{2}∗_{4}}¯+\beta_{∗_{1}∗_{3}∗_{4}}¯+\beta_{∗_{2}∗_{3}∗_{4}}¯
+$$
+
+
+
+$$
+\sigma^_{0}=\sigma_{0}+\sigma_{∗_{1}}¯+\sigma_{∗_{2}}¯+\sigma_{∗_{3}}¯+\sigma_{∗_{4}}¯+\sigma_{∗_{1}∗_{2}}¯+\sigma_{∗_{1}∗_{3}}¯+\sigma_{∗_{1}∗_{4}}¯+\sigma_{∗_{2}∗_{3}}¯+\sigma_{∗_{2}∗_{4}}¯+\sigma_{∗_{3}∗_{4}}¯+\sigma_{∗_{1}∗_{2}∗_{3}}¯+\sigma_{∗_{1}∗_{2}∗_{4}}¯+\sigma_{∗_{1}∗_{3}∗_{4}}¯+\sigma_{∗_{2}∗_{3}∗_{4}}¯
+$$
 
 This procedure does not change the genetic score of any variant, and it does not change the likelihood of any model. Constraining the model this way merely centers and scales coefficients so that each represents the average effect of an amino acid or interaction relative to the average of the entire data set (and to the average predicted by lower order terms). In practice, we found that L2 regularization brings the average of most sets of coefficients close to zero anyway, so the post-hoc constraint changes most terms by less than 1% of the unconstrained estimates (Figure 1—figure supplement 5).
 
-## Alternative models without epistasis
+### Alternative models without epistasis
 
 To understand the effects of specific epistasis on protein function and evolution, we compared the third-order model described above to models that do not incorporate any epistasis, and thus contain only first-order terms (first-order model), or no higher order epistasis, and thus contains only first- and second-order terms (second-order model). To implement these lower order models, we modified the matrix of indicator variables by removing all indicators for combinations at the orders to be excluded. These models were then fit to the data using analogous selection procedures for the full model containing first-, second-, and third-order terms.
 
-## Comparison to observed DMS data
+### Comparison to observed DMS data
 
 To estimate the quality of the model fit, we compared the observed class of each protein variant to the observed classification from the empirical data. In each case, we calculated the number of true positives, true negatives, false positives, and false positives for each of the three activation categories, as well as a ‘non-strong’ category (union of null and weak) and an ‘activators’ category (union of weak and strong) (Figure 1—figure supplement 2).
 
-## Comparison to measured ΔG
+### Comparison to measured ΔG
 
 We compared the estimated genetic score for a subset of protein variants to their energy of binding to ERE and SRE, previously measured using fluorescence anisotropy (Anderson et al., 2015; Figure 1—figure supplement 4). We used simple least-squares linear regression to estimate the relationship between the genetic score and the ΔG of binding. Because both genetic score and ΔG accrue additively, the relationship between these quantities should be linear. The slope and intercept of the relationship between genetic score and ΔG was then used it to estimate the ΔG of binding for all variants in the data set from their genetic score.
 
-## Model variance explained by individual terms
+### Model variance explained by individual terms
 
 The reference-free coding of model coefficients leads to a simple relationship between the effect size of a term and the fraction of genetic variance in phenotype that it explains. A detailed proof is provided in Appendix 1 and summarized here.
 
-The genetic variance is defined as the variance in phenotype attributable to all the effects of individual genetic states and combinations; it excludes genetic variance caused by nonspecific epistasis (which is captured by the logit function in our model). The total genetic variance is the average squared deviation of each variant’s genetic score from the global mean:Var(y(G))=12⋅204∑g∈G(y(g)−y(G)¯)2
+The genetic variance is defined as the variance in phenotype attributable to all the effects of individual genetic states and combinations; it excludes genetic variance caused by nonspecific epistasis (which is captured by the logit function in our model). The total genetic variance is the average squared deviation of each variant’s genetic score from the global mean:
 
-where G is the set of all protein variants on either RE, y(g) is the genetic score of a particular protein-RE complex, and 2 x 204 is the total number of complexes.
+$$
+Var(y(G))=\frac{1}{2⋅20^{4}}\sumg\inG(y(g)−y(G)¯)^{2}
+$$
 
-The total variance explained by a model can be partitioned into the partial variances explained by each causal factor. In the case of our model, the total genetic variance can be partitioned into the partial variances attributable to the possible states at each site or (combination of states at multiple sites). Organizing these partial variances by the epistatic order and effect type (nonspecific or RE-specific):(1)Var(y(G))=∑iVar(βi)+∑i<jVar(βi,j)+∑i<j<kVar(βi,j,k)+Var(σ0)+∑iVar(σi)+∑i<jVar(σi,j)+∑i<j<kVar(σi,j,k)
+where $G$ is the set of all protein variants on either RE, y(g) is the genetic score of a particular protein-RE complex, and 2 x 204 is the total number of complexes.
+
+The total variance explained by a model can be partitioned into the partial variances explained by each causal factor. In the case of our model, the total genetic variance can be partitioned into the partial variances attributable to the possible states at each site or (combination of states at multiple sites). Organizing these partial variances by the epistatic order and effect type (nonspecific or RE-specific):
+
+$$
+Var(y(G))=\sumiVar(\beta_{i})+\sumi<jVar(\beta_{i,j})+\sumi<j<kVar(\beta_{i,j,k})+Var(\sigma_{0})+\sumiVar(\sigma_{i})+\sumi<jVar(\sigma_{i,j})+\sumi<j<kVar(\sigma_{i,j,k})
+$$
 
 where i, j, and k index the four variable sites, the variances are over all the possible states (or combinations), and the summations are over all sites (or combination).
 
-The model coefficients have a straightforward relationship to this partitioned variance. Main-effect coefficients are defined as the average deviation of a subset of variants containing a state or combination relative to the global mean, and higher-order coefficients are defined as deviations from the sum of lower-order terms. The variance attributable to any state (or combination) is therefore simply the square of its coefficients, and the variance attributable to any set of states is the average of the squared coefficients (see proof in Appendix 1). Thus, for any given site i (or site combination i,j or i,j,k), the variance attributable to the set of model terms applicable to that site can be written as follows:(2)Var(βi)=120∑qβqi2Var(βi,j)=1202∑q2βqiqj2Var(βi,j,k)=1203∑q3βqiqjqk2Var(σ0)=σ02Var(σi)=120∑qσqi2Var(σi,j)=1202∑q2σqiqj2Var(σi,j,k)=1203∑q3σqiqjqk2
+The model coefficients have a straightforward relationship to this partitioned variance. Main-effect coefficients are defined as the average deviation of a subset of variants containing a state or combination relative to the global mean, and higher-order coefficients are defined as deviations from the sum of lower-order terms. The variance attributable to any state (or combination) is therefore simply the square of its coefficients, and the variance attributable to any set of states is the average of the squared coefficients (see proof in Appendix 1). Thus, for any given site i (or site combination i,j or i,j,k), the variance attributable to the set of model terms applicable to that site can be written as follows:
 
-The leading factors in Equation 2 can all be expressed as a function of O, the epistatic order of the effect they represent, where O=0 for the global average effect of the RE, and 1, 2, or 3 for the main, pairwise, and third-order epistatic effects of each amino acid combination. Substituting into Equation 1, the total genetic variance is therefore the sum of the squared effects of every model term at every order (except for the global average), each divided by the number of model terms at that order:Var(y(G))=∑β,O≠0β220O(β)+∑σσ220O(σ)
+$$
+Var(\beta_{i})=\frac{1}{20}\sumq\beta_{q_{i}}^{2}Var(\beta_{i,j})=\frac{1}{20^{2}}\sumq^{2}\beta_{q_{i}q_{j}}^{2}Var(\beta_{i,j,k})=\frac{1}{20^{3}}\sumq^{3}\beta_{q_{i}q_{j}q_{k}}^{2}Var(\sigma_{0})=\sigma_{0}^{2}Var(\sigma_{i})=\frac{1}{20}\sumq\sigma_{q_{i}}^{2}Var(\sigma_{i,j})=\frac{1}{20^{2}}\sumq^{2}\sigma_{q_{i}q_{j}}^{2}Var(\sigma_{i,j,k})=\frac{1}{20^{3}}\sumq^{3}\sigma_{q_{i}q_{j}q_{k}}^{2}
+$$
 
-We can use this same approach to calculate FVarθ , the fraction of the total genetic variance explained by any coefficient θ (a particular β or σ of any order, except the global average):FVarθ=θ220OθVaryG
+The leading factors in Equation 2 can all be expressed as a function of O, the epistatic order of the effect they represent, where O=0 for the global average effect of the RE, and 1, 2, or 3 for the main, pairwise, and third-order epistatic effects of each amino acid combination. Substituting into Equation 1, the total genetic variance is therefore the sum of the squared effects of every model term at every order (except for the global average), each divided by the number of model terms at that order:
 
-The fraction of genetic variance explained by any set of coefficients is simply the sum of FVarθ over all the coefficients in the set.
+$$
+Var(y(G))=\sum\beta,O\neq0\frac{\beta^{2}}{20^{O(\beta)}}+\sum\sigma\frac{\sigma^{2}}{20^{O(\sigma)}}
+$$
+
+We can use this same approach to calculate $FVar\theta$ , the fraction of the total genetic variance explained by any coefficient $\theta$ (a particular $\beta$ or $\sigma$ of any order, except the global average):
+
+$$
+FVar\theta=\frac{\frac{\theta^{2}}{20^{O\theta}}}{VaryG}
+$$
+
+The fraction of genetic variance explained by any set of coefficients is simply the sum of $FVar\theta$ over all the coefficients in the set.
 
 This formalizes the intuition that within an epistatic order, model terms of large magnitude explain more variation than smaller terms; if two terms at different order have the same magnitude, the lower order term explains more variation than the higher-order term, because the former affects more genotypes than the latter. The leading terms effectively weight each set of coefficients in a set by the number of genotypes to which they apply.
 
 We used this simple relationship between the magnitude of a model coefficient, its order of epistatic effect, and the fraction of genetic variance explained by that coefficient to directly calculate the percent of variance explained by every model term. We then summed the percent variance explained by individual terms to determine the percent of variance explained by sets of terms (Figure 2). Finally, we used this relationship to define the ‘important’ terms in the model as those terms needed to explain 99% of the model variance. Thus setting all of the ‘unimportant’ terms to zero reduces the amount of variance explained by less than 1% of the full model (Figure 2—figure supplement 1).
 
-## Fraction of genetic score attributable to epistasis or specificity
+### Fraction of genetic score attributable to epistasis or specificity
 
 To find the relative impact of epistasis terms on each variant’s genetic score, we calculated the sum of the absolute value of all pairwise and third-order model terms for that genotype and divided it by the sum of the absolute value of all model terms for that genotype (Figure 3; Figure 3—figure supplement 1; Figure 3—figure supplement 2). For specificity, we summed the absolute value of only the specificity terms divided by the total absolute sum of all terms.
 
-## Types of epistasis
+### Types of epistasis
 
 Epistasis can be divided into several subtypes depending on the signs and magnitude of mutational effects on different genetic backgrounds. These distinctions are most commonly made for pairwise epistatic interactions. For example, sign epistasis arises when the direction of effect of a mutation depends on the genetic background. Reciprocal sign epistasis occurs when the direction of effect of both mutations depends on the genetic background. All other instances of epistasis are classified as magnitude epistasis. Within magnitude epistasis, there are two broad forms, diminishing returns and diminishing costs epistasis. The former, diminishing returns, also includes common forms of epistasis such as amplifying costs, differing only on which genotype is considered ‘wild-type’ or the starting point of a mutant cycle. Likewise, diminishing costs epistasis also covers amplifying returns epistasis, only differing in which genotype is considered the beginning of a mutant cycle.
 
 To classify the types and frequencies of different forms of epistasis, we compared the estimated effect of each pairwise interaction to the estimated effect of each single amino acid involved in that pairwise interaction. The fraction of genetic variance explained by the particular pairwise effect was then added to the appropriate category, either sign, reciprocal sign, diminishing returns, or diminishing costs epistasis. To extend this approach to third-order interactions, we sequentially fixed each amino acid in the third order interaction, taking that genotype as the starting genotype and then varied the other two amino acids in a manner analogous to the pairwise epistasis calculation. The fraction of genetic variance explained by a particular third order interaction was then divided by three (as there are three states that can be fixed) and added to the appropriate category (Figure 3; Figure 3—figure supplement 4).
 
-## Direction of the effect of mutations’ effects
+### Direction of the effect of mutations’ effects
 
 The genetic score of a specific genotype is the summation of the effects in that sequence, that is the single global term, four single site effects, six pairwise interactions, and four three-way interactions for both binding and specificity. The model thus gives the effect of each amino acid or interaction relative to the average of all genotypes, not the effect of individual mutations from one state to another. To calculate the effect of a mutation in a given genetic background, we calculated the difference in the genetic score between two genotypes with a single amino acid difference. This entails a change in one main effect, three pairwise interactions, and three third-order interactions. In this way, the model directly captures the fact that even a single amino acid change has the potential to alter numerous epistatic interactions. As a result, to determine the effect of a mutation requires measuring its impact across numerous genetic backgrounds. To determine the range of possible effects of a single mutation, we compared the genetic score between two genotypes differing by a single amino acid on each of the 8000 genetic backgrounds on which the particular change from one amino acid to another could occur and determined the frequency in which that particular mutation increased or decreased binding on a particular DNA element. To minimize the effect of small changes in genetic score upon mutation being counted, we only considered changes in genetic score greater than 5% of the difference between the average genotype and the threshold needed to be classified as a strong activator. We also used the fact that the model identifies which epistatic factors (main, pairwise, third-order) are responsible for the change in genetic score between variants, as well as how this effect is partitioned between binding and specificity, to identify when changes in epistasis were necessary, sufficient, or both for the change in genetic score (Figure 4; Figure 4—figure supplement 1).
 
-## Sequence space analysis
+### Sequence space analysis
 
-## Network types
+#### Network types
 
 To determine how epistasis affected the evolution of DBD binding specificity, we generated connected networks for each model of epistasis using the R package igraph (Csárdi and Nepusz, 2006). In each case, genotypes were connected if they differed by a single amino acid (hamming distance) or if the single amino acid difference could occur via a single nucleotide mutation (genetic code distance). In the latter case, we accounted for the disjoint nature of serine codons in the genetic code, treating the two groups as non-interchangeable by coding all serine amino acids in both an S and a Z form. Thus, for a sequence containing n serine amino acid, there are 2n versions of that amino acid sequence with the same phenotype that inhabit different locations in sequence space with different connectivity to neighboring sequences. We created networks for the full model, the model containing up to pairwise epistasis, and the model containing no specific epistasis (Figure 5; Figure 5—figure supplement 1). We used only those genotypes that were functional in a particular model, that is were either weak or strong on either ERE, SRE, or both. In addition, we created a network of all 160,000 genotypes. This latter network contained no information about the function of each genotype and was used to model evolution over sequence space unconstrained by function.
 
-## Network distance
+#### Network distance
 
 Network distances were calculated as the shortest path distance between two genotypes, constrained to only take steps to neighboring genotypes in a network. Because only functional genotypes are present in a network, the distance between genotypes in a network can exceed four, even when connections are made by hamming distance, if there are no direct paths between the genotypes. We also calculated the distance from each ERE-specific genotype to the nearest SRE-specific genotype, of which there may be several, by finding the minimum distance for each ERE-specific genotype (Figure 5—figure supplement 2).
 
-## Shared vs unique network genotypes
+#### Shared vs unique network genotypes
 
 One of the main effects of epistasis is to influence whether a genotype is functional or not. Thus, many genotypes are only functional in one or a subset of networks. However, even if the same genotypes are functional with and without epistasis, epistasis can influence the paths between them that evolution is likely to take. To distinguish between these effects, we compared the effects of epistasis on path lengths for all functional genotypes and for the set of genotypes that are functional in all three networks.
 
-## One-step functional transitions and epistatic necessity/sufficiency
+#### One-step functional transitions and epistatic necessity/sufficiency
 
 To determine how epistasis influenced changing binding classes or specificity, we identified all instances in which two neighboring genotypes in a network differ in binding class or specificity. These represent portions of sequence space where a single amino acid mutation can move a genotype from one binding class to another or alter specificity from ERE-specific to SRE-specific. For changes between binding classes, we identified all such mutations on the full network with third order epistasis. For changes in specificity, we identified the mutation responsible for all such instances in the full network, as well as the networks that had no third-order epistasis or had no epistatic effects (Figure 4; Figure 4—figure supplement 2).
 
 We calculated whether epistasis was necessary, sufficient, or both for transitions in binding classes and specificity. For binding classes, epistasis was categorized as necessary if the main effect of the amino acid change was not large enough to move the genotype into the new binding class without contribution from the epistatic effects. Similarly, epistasis was categorized as sufficient if epistatic changes were large enough to move the genotype into the new binding class without contribution from the main effects. For single step transitions in specificity, epistasis was necessary if the main, non-epistatic, effect of an amino acid change was not large enough to either reduce ERE binding or increase SRE binding enough to switch the binding class from ERE-specific to SRE-specific. Epistasis was sufficient if the epistatic effects alone were large enough to both reduce ERE binding and increase SRE binding enough to switch the binding class from ERE-specific to SRE-specific. In the full model, a similar distinction was made for third order epistasis relative to main effects and pairwise epistasis and calculated in an analogous manner.
 
-## Number of paths and path distinctiveness
+#### Number of paths and path distinctiveness
 
-The number of paths between two genotypes was calculated as the number of distinct shortest paths between them. Two paths were considered distinct if at least one genotype along the paths were different. To account for the fact that many paths traverse similar sets of genotypes, we also developed a metric for distinctiveness of a set of paths between two genotypes. To calculate this metric, we extracted from the larger network the set of genotypes along any shortest path between the starting and ending genotype. Intuitively, for a path with S genotypes, the set of paths between the starting and ending genotypes should be considered more distinct if they contain more unique genotypes or fewer shared edges between intermediate genotypes. To capture these aspects, we calculated two metrics. The first metric relates the effective number of paths (Pg) to the number of unique genotypes (G) and the path length (S - 1). The second metric relates a different measure of the effective number of paths (Pe) to the number of unique edges (E) and the number of genotypes along a single path (S).Pg=G−2S−1andPe=ES
+The number of paths between two genotypes was calculated as the number of distinct shortest paths between them. Two paths were considered distinct if at least one genotype along the paths were different. To account for the fact that many paths traverse similar sets of genotypes, we also developed a metric for distinctiveness of a set of paths between two genotypes. To calculate this metric, we extracted from the larger network the set of genotypes along any shortest path between the starting and ending genotype. Intuitively, for a path with S genotypes, the set of paths between the starting and ending genotypes should be considered more distinct if they contain more unique genotypes or fewer shared edges between intermediate genotypes. To capture these aspects, we calculated two metrics. The first metric relates the effective number of paths (Pg) to the number of unique genotypes (G) and the path length (S - 1). The second metric relates a different measure of the effective number of paths (Pe) to the number of unique edges (E) and the number of genotypes along a single path (S).
 
-The first calculation provides the maximum number of completely distinct paths with no shared genotypes that could be created given the path length and the number of genotypes present. It thus provides an upper bound on the number of distinct paths possible. If a set of paths are completely distinct, that is sharing no genotypes, then Pg will equal Pe. However, if the paths are not completely distinct, then there will be more edges among the set of paths than if all paths were distinct. Thus, for a given number of genotypes and path length, the greater the number of edges connecting those genotypes, the less distinct the set of paths are. By comparing the difference in these metrics to the maximum possible value, we can estimate the effective number of distinct paths (D) in a set.D=Pg−(Pe−Pg)PgPe=Pg2Pe=S(G−2S−1)2E
+$$
+P_{g}=\frac{G−2}{S−1}andP_{e}=\frac{E}{S}
+$$
+
+The first calculation provides the maximum number of completely distinct paths with no shared genotypes that could be created given the path length and the number of genotypes present. It thus provides an upper bound on the number of distinct paths possible. If a set of paths are completely distinct, that is sharing no genotypes, then Pg will equal Pe. However, if the paths are not completely distinct, then there will be more edges among the set of paths than if all paths were distinct. Thus, for a given number of genotypes and path length, the greater the number of edges connecting those genotypes, the less distinct the set of paths are. By comparing the difference in these metrics to the maximum possible value, we can estimate the effective number of distinct paths (D) in a set.
+
+$$
+D=P_{g}−(P_{e}−P_{g})\frac{P_{g}}{P_{e}}=\frac{P_{g}^{2}}{P_{e}}=\frac{S(\frac{G−2}{S−1})^{2}}{E}
+$$
 
 We used this equation to calculate the distinctiveness of paths from each ERE-specific genotype to each SRE-specific genotype over the network.
 
-## Evolutionary simulations
+### Evolutionary simulations
 
-## Neutral model
+#### Neutral model
 
 To determine whether epistasis increased or decreased the ability of evolution to find a protein variant with altered specificity, we performed forward evolutionary simulations over the previously described genotype networks. These simulations captured neutral wandering among a set of functional variants and are similar to the verbal model of protein evolution described by Smith, 1969. In each simulation, evolution was constrained to move among only functional variants, that is those classified by the particular model as either ERE-specific, SRE-specific or promiscuous. Genotypes were classified as either ERE-specific if they bound ERE and not SRE, SRE-specific if they bound SRE and not ERE, and promiscuous if they bound both ERE and SRE. Genotypes were considered neighbors if a single nucleotide change could mutate one variant into the other (genetic code) or if they differed by a single amino acid (hamming distance). To estimate the global effect of epistasis, evolution was initiated from each ERE-specific genotype and allowed to take a random step to a neighboring genotype, regardless of DNA binding specificity, until an SRE-specific genotype was reached. This was repeated 100 times for each starting genotype. For the subset of ERE-specific genotypes found in each of the three models with varying amounts of epistasis (Full model, pairwise only, no epistasis), an additional 1000 simulations were performed to estimate how epistasis altered particular evolutionary paths. For each simulation, we recorded the number of steps, ending genotype identity, and the identity of each intermediate genotype during the evolutionary walk.
 
-## Model with selection for increased specificity
+#### Model with selection for increased specificity
 
 To estimate how epistasis might interact with selection for increased specificity, we performed additional forward evolutionary simulations. As before, evolution was initiated from ERE-specific genotypes and terminated when an SRE-specific genotype was first encountered. Unlike the neutral simulations, however, we incorporated selection for increased specificity. At each step, the specificity of each neighboring genotype was calculated from the underlying genetic scores as the difference in binding to SRE and ERE. We then used Kimura’s formula for fixation probability to calculate the relative probability of fixation among all possible neighbors (Kimura, 1962). The effects of specificity were scaled such that the difference between a non-binder and a strong binder corresponded to a scaled selection coefficient (i.e. Ns) of 1 in a population of size 100. We initiated evolution with a range of population sizes between 1 and 10,000 to capture the transition between neutrality and selection driven changes, performing 100 simulations for each population size on each network using the genetic code to connect genotypes. We noticed during these simulations, that for a small subset of starting genotypes, evolution would often become ‘stuck’ on local optimum in the pairwise model, continuously cycling between two genotypes. These genotypes were substantially more SRE-specific than the neighboring functional sequences. Simulations with strong selection for specificity (i.e. large population sizes) were therefore more likely to continuously cycle between these genotypes. To account for this effect, we also estimated evolutionary path lengths after removing all evolutionary simulations in which more than 20 steps were taken (Figure 5—figure supplement 3).

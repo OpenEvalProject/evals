@@ -34,31 +34,63 @@ Here, we provide evidence on the role of Lnc-Rewind in the epigenetic regulation
 
 ## Results
 
-## Lnc-Rewind is a conserved chromatin-associated lncRNA expressed in satellite cells
+### Lnc-Rewind is a conserved chromatin-associated lncRNA expressed in satellite cells
 
 In an attempt to uncover novel regulators of MuSC activity, we decided to take advantage of the atlas of newly discovered lncRNAs, which we previously identified as expressed in proliferating muscle cells (Ballarino et al., 2015). Among them, we focused on Lnc-Rewind, which is a lncRNA enriched in proliferating myoblasts and overlapping pre-Mirlet7c-2 (mmu-let7c-2) and pre-Mirlet7b (mmu-let7b) genomic loci (Figure 1A). An evolutionary conservation analysis performed by examining FANTOM5 datasets (Noguchi et al., 2017) revealed the existence of a conserved transcriptional start site (TSS) localized in the human (hs_Lnc-Rewind) syntenic locus (Figure 1B). This region exhibits an overall ~46% of (exonic and intronic) sequence identity (Figure 1—figure supplement 1A), which is relatively high for lncRNAs. Moreover, RNA-seq (Legnini et al., 2017; Figure 1B) and semiquantitative (sq)RT-PCR analyses (Figure 1—figure supplement 1B) confirmed that, in proliferating human myoblasts, this region is actively transcribed. To note, the distribution of the read coverage in both mouse and human revealed the existence of spliced and unspliced Lnc-Rewind isoforms originating from the two loci (Figure 1A,B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig1-v2.jpg)
+
+**Figure 1.:** (A) UCSC visualization showing the chromosome position and the genomic coordinates of Lnc-Rewind (red shade) in the mm9 mouse genome. Mmu_Lnc-Rewind reads coverage and quantification (FPKM) from RNA-Seq experiments performed in proliferating C2C12 cells (Ballarino et al., 2015; GSE94498) are shown. (B) UCSC visualization showing the chromosome position and the genomic coordinates of hs_Lnc-Rewind (red shade) in the hg19 human genome. Hs_Lnc-Rewind reads coverage and quantification (FPKM) from RNA-Seq experiments performed in proliferating myoblasts (Legnini et al., 2017; GSE70389) are shown together with the genomic structure of the human locus (magnified box). (C) Relative Lnc-Rewind expression assessed by quantitative RT-PCR (qRT-PCR) in C2C12 myoblast (C2C12) and MuSC-derived myoblasts (referred as MuSCs) maintained in growing (GM) or differentiated (DM) conditions. Data represent the mean ± SEM from three biological replicates. Gapdh RNA was used as a normalization control. (D) Semiquantitative RT-PCR (sqRT-PCR) analysis of spliced and unspliced Lnc-Rewind isoforms in cytoplasmic (Cyt) and nuclear (Nuc) fractions from proliferating C2C12 and MuSC-derived myoblasts. The quality of fractionation was tested with mature (Gapdh) and precursor (pre-Gapdh) RNAs. –rt represents the negative control. (E) RNA-FISH analysis for Lnc-Rewind RNA (red) in proliferating MuSC-derived myoblasts. Autofluorescence (grey) is shown with false colour to visualize the cell body. (F) Digital magnification and 3D visualization of the square insert of (E). Asterisks indicate the Lnc-Rewind RNA signals inside the nuclear volume. DAPI, 4’,6-diamidino-2-phenylindole (blue). Data information: *p<0.05, unpaired Student’s t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Table represents the values obtained by analysing the local sequence alignment between the human and murine Lnc-Rewind transcripts. Data were produced by using the implementation of the Smith–Waterman algorithm available at http://www.ebi.ac.uk/Tools/psa/emboss_water/. (B) Semiquantitative RT-PCR (sqRT-PCR) quantification of the human hs_Lnc-Rewind transcript in proliferating (GM) myoblasts from a healthy donor. Mature Gapdh was used as endogenous control. (C) FACS plot showing MuSC isolation strategy from WT mice. MuSCs are isolated, among the lineage (CD45/CD31/Ter119) negative cells, as α7integrin+/Sca1− cells (magenta box) (left and middle panels). The right plot shows the check purity of sorted MuSCs. (D) qRT-PCR quantification of Myog and Mck in C2C12 and MuSC-derived myoblasts in growth (GM) and differentiated (DM) conditions. Data represent the mean ± SEM of three biological replicates and were normalized on Gapdh mRNA. (E) sqRT-PCR quantification of Lnc-Rewind, using different primers, in cytoplasmic (Cyt) and nuclear (Nuc) fractions from proliferating C2C12 and MuSC-derived myoblasts. The quality of fractionation was tested with mature (Gapdh) and precursor (pre-Gapdh) RNAs. –rt represents the negative control (F) Representative 60X confocal images of MuSC-derived myoblasts cell cultures hybridized with probes set specific for Lnc-Rewind (upper panels) and for a human mRNA (dlc1), as negative control (neg ctrl) (bottom panels). Autofluorescence (gray) is shown with false colour to visualize the cell body. DAPI, 4’,6-diamidino-2-phenylindole (blue); scale bar: 25 μm. (G) Representative 60× confocal images of C2C12 cell cultures hybridized with probes set specific for Lnc-Rewind (upper panels) and for a human mRNA (dlc1), as negative control (neg ctrl) (bottom panels). Autofluorescence (grey) is shown with false colour to visualize the cell body. DAPI, 4’,6-diamidino-2-phenylindole (blue); scale bar: 25 μm. Data information: *p<0.05, unpaired Student’s t-test.
+
 To pinpoint possible roles of the murine transcript in muscle cells, we first assessed Lnc-Rewind expression and subcellular localization in both C2C12 and Fluorescence-activated cell sorting (FACS) isolated MuSC (Figure 1—figure supplement 1C) grown under proliferative (hereafter referred to as MuSC-derived myoblasts) and differentiating conditions. Proper myogenic differentiation was confirmed by the expression of late muscle-specific genes such as myogenin (Myog) and muscle creatin kinase (Mck) (Figure 1—figure supplement 1D). Quantitative qRT-PCR analysis revealed that Lnc-Rewind expression is high in proliferating (GM) C2C12 and MuSC-derived myoblasts and significantly decreased in fully differentiated (DM) cells (Figure 1C). Subcellular fractionation of cytoplasmic (Cyt) and nuclear (Nuc) fractions showed that both spliced and unspliced isoforms localizes in the nuclear compartment (Figure 1D, Figure 1—figure supplement 1E). Accordingly, RNA fluorescence in situ hybridization (FISH) experiments performed in both MuSC-derived myoblasts (Figure 1E,F, Figure 1—figure supplement 1F) and C2C12 cells (Figure 1—figure supplement 1G) confirmed the nuclear localization of Lnc-Rewind and further revealed its specific enrichment to discrete chromatin foci. Overall, these results point towards a role for Lnc-Rewind in chromatin-based processes and suggest its possible involvement in the epigenetic regulation of MuSC homeostasis.
 
-## Lnc-Rewind regulates muscle system processes and MuSC expansion
+### Lnc-Rewind regulates muscle system processes and MuSC expansion
 
 To gain insights into the functional role of Lnc-Rewind and to identify the molecular pathways involved in the regulation of muscle stem cells, we performed a global transcriptional profiling on MuSC-derived myoblasts treated with either a mix of three different LNA GapmeRs against Lnc-Rewind (GAP-REW) or the scramble control (GAP-SCR) (Figure 2—figure supplement 1A, upper panel). Under these conditions, we obtained ~70% reduction of Lnc-Rewind expression (Figure 2—figure supplement 1A, lower panel), which led to the identification of a set of 1088 differentially expressed genes (DEGs) (p<0.05, GAP-SCR vs GAP-REW). Of these, 332 were upregulated and 756 downregulated in GAP-REW as compared to the GAP-SCR condition (Figure 2A, Figure 2—source data 1). A principal component analysis (PCA) performed on the DEG datasets revealed that the GAP-SCR and GAP-REW experimental groups displayed a clear different pattern of gene expression since they occupy different regions of the PCA plot (Figure 2—figure supplement 1B). The DEG list was then subjected to Gene Ontology (GO) term enrichment analysis (Biological process) to define functional clusters. It emerged that DEGs were mostly associated with muscle cell physiology (skeletal muscle contraction, p-value=4.23E-6) (Figure 2B, Figure 2—figure supplement 1C). Of note, the analysis of Lnc-Rewind generated miRNAs (Mirlet7b and Mirlet7c-2) revealed that, although the lncRNA depletion results on their concomitant downregulation (Figure 2—figure supplement 1D), none of the upregulated transcripts that are also putative Mirlet7b and Mirlet7c-2 targets (~1% of the upregulated genes) (Figure 2—figure supplement 1E), belong to any of the GO enriched categories. This result emphasizes a specific and miRNA-independent role for Lnc-Rewind. Both ‘muscle system process’ (p-value=3.45E-7) and ‘striated muscle contraction’ (p-value=4.63E-7) were the most significantly enriched GO terms (Figure 2—figure supplement 1C). Of note, genes encoding for different proteins involved in muscle contraction, such as myosins (i.e. Myh8, Myl1, Myh3) and troponins (i.e. Tnnt2, Tnnt1) (Figure 2C), were downregulated. Accordingly, Lnc-Rewind-depleted cells express lower levels of MyHC protein (Figure 2D). Moreover, morphological evaluation highlighted a decreased number of MuSC-derived myoblasts after Lnc-Rewind depletion (Figure 2—figure supplement 1F), suggesting a primary defect in MuSC proliferation. This led us to hypothesize that the defects in myogenic capacity (Figure 2C,D, Figure 2—figure supplement 1F) might result by a decreased cell density that normally leads to a lower rate of myogenic differentiation. In line with this hypothesis, EdU incorporation experiments revealed a striking reduction of proliferating MuSC-derived myoblasts upon depletion of Lnc-Rewind (Figure 2E). Accordingly, the Ccnd3 gene encoding for Cyclin D3, a cyclin specifically involved in promoting transition from G1 to S phase, was significantly downregulated in Lnc-Rewind-depleted cells at both transcript (Figure 2—source data 1) and protein levels (Figure 2D). In further support of this, MuSCs on single myofibres cultured for 96 hr gave rise to a decreased percentage of proliferating (Pax7+/Ki67+) progeny upon Lnc-Rewind downregulation (Figure 2F). Moreover, quantification of the number of Pax7+-derived clusters (composed of more than two nuclei), pairs (composed of two nuclei), or single MuSCs within each myofibre revealed a reduction of activated pairs and clusters upon Lnc-Rewind depletion (Figure 2G), suggesting a role for the lncRNA in sustaining MuSC activation and expansion.
 
-## Lnc-Rewind and Wnt7b genes display opposite pattern of expression and a functional interplay
+![Figure 2.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig2-v2.jpg)
+
+**Figure 2.:** (A) Heatmap representing hierarchical clustering performed on the final list of genes differentially expressed in MuSC-derived myoblasts upon Lnc-Rewind depletion (p-value threshold<0.05; see also Figure 2—source data 1). The analysis was performed using the Heatmapper webserver tool (Babicki et al., 2016). For each gene, expression levels are expressed as Z-score values. (B) Gene Ontology (GO) enrichment analysis performed by GORILLA (Eden et al., 2009) in Biological process for genes differentially expressed upon Lnc-Rewind depletion in MuSC-derived myoblasts. (C) Heatmap representing hierarchical clustering performed on DEGs belonging to the Skeletal Muscle contraction GO category (GO:0003009). The analysis was performed using the Heatmapper webserver tool (Babicki et al., 2016). For each gene, expression levels are expressed as Z-score values. (D) Western blot analysis performed on protein extracts from MuSC-derived myoblasts treated with GAP-SCR or GAP-REW. GAPDH protein was used as endogenous control. (E) Representative images of MuSC-derived myoblasts treated with GAP-SCR and GAP-REW and incubated with EdU (red). Nuclei were visualized with DAPI (blue). Histogram shows the percentage of EdU-positive cells on the total of DAPI-positive cells. Data are graphed as mean ± SEM; n = 6 mice. (F) Representative images of single muscle fibres from WT mice treated with GAP-SCR or GAP-REW and stained for Pax7 (red) and Ki67 (green). Nuclei were visualized with DAPI (blue); histogram shows the percentage of Pax7+/Ki67− cells on the total of Pax7+/Ki67+ cells per cluster. Data represent the mean ± SEM of 40 clusters per condition; n = 5 mice. (G) Representative images of single muscle fibres from WT mice treated with GAP-SCR or GAP-REW and incubated for 24 hr with EdU (red). Nuclei were visualized with DAPI (blue); left histogram shows the number of Pax7+ cells per fibre (50 fibres per condition; n = 5 mice). Right histograms represent the mean of clusters (nuclei [n], n > 2), pairs (n = 2), and single cells Pax7+ (n = 1) per fibre. Data represent the mean ± SEM of 80 fibres per condition; n = 5 mice. Data information: *p<0.05, **p<0.01, ***p<0.001, unpaired Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Upper part: Experimental timeline used for the transfection of MuSC-derived myoblasts with GAP-SCR or GAP-REW. Lower part: qRT-PCR quantification of Lnc-Rewind spliced and unspliced transcript in MuSC-derived myoblasts treated with GAP-SCR or GAP-REW. Data were normalized to Gapdh mRNA and expressed as fold change of the mean ± SEM of four biological replicates. (B) PCA analysis of DEGs upon Lnc-Rewind depletion. GAP-REW and GAP-SCR RNA-seq replicates are shown, respectively, as red and black dots. PC1 and PC2 represent the top two dimensions of the PCA which account, respectively, for 65% and 25% of the total variability. (C) Table shows the GO terms, their description, the p-value, the false discovery rate (in decreasing order of statistical significance), and the enrichment of the different categories listed in the diagram of Figure 2B. (D) qRT-PCR quantification of mmu-Mirlet7-b and mmu-Mirlet7-c-2 miRNAs in GAP-SCR- or GAP-REW-treated MuSC-derived myoblasts. Data were normalized to Gapdh mRNA and expressed as fold change of the mean ± SEM of three biological replicates. (E) Target prediction analyses performed by crossing the genes upregulated upon Lnc-Rewind depletion with the mmu-Mirlet7b/c2-3p (yellow) and mmu-Mirlet7b/c2-5p (blue) predicted target genes. Predictions were obtained from Targetscan database (Agarwal et al., 2015). (F) Representative images (left) and cells number quantification (right) of MuSC-derived myoblasts treated with GAP-SCR or GAP-REW. Data represent the mean percentage ± SEM of three biological replicates. Data information: *p<0.05, **p<0.01, ***p<0.001, unpaired Student’s t-test.
+
+### Lnc-Rewind and Wnt7b genes display opposite pattern of expression and a functional interplay
 
 Together with the muscle-specific genes, the ‘regulation of Wnt signalling pathway’ GO term caught our attention as it was represented by a significant subset of trancripts (p-value=5.44E-4, Figure 2—figure supplement 1C). Among them, we found Wnt7b, which expression was found upregulated at both transcript and protein levels (Figure 3—figure supplement 1A and Figure 2—source data 1), suggesting a role for Lnc-Rewind as a repressor of Wnt7b expression. Intriguingly, Wnt7b transcriptional locus localizes only 100 kb upstream Lnc-Rewind gene (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic UCSC visualization showing the Lnc-Rewind chromosome position and its neighbouring genes. (B) TSS usage analyses of Wnt7b, Lnc-Rewind, Atxn10, and Cdpf1 performed by using FANTOM5 (Phases 1 and 2) CAGE datasets. Each bar represents the Relative Logarithmic Expression (RLE) of the tag per million (TPM) values of the TSS of each gene in one sample (1196 samples). The order of the samples is the same in each of the histograms and shown in Figure 3—source data 1. R value represents the Spearman’s rank correlation coefficient between Lnc-Rewind and Wnt7b expression, and the p-value was calculated using the Spearman’s rank correlation test. (C) qRT-PCR quantification of Lnc-Rewind neighbouring genes in GAP-SCR versus GAP-REW treated. MuSCs-derived myoblasts. Data were normalized to Gapdh mRNA and represent the average ± SEM from four biological replicates. (D) Representative images of MuSC-derived myoblasts treated with GAP-SCR/si-SCR, GAP-REW, and GAP-REW/si-Wnt7b and incubated with EdU (red). Nuclei were visualized with DAPI, 4′,6-diamidino-2-phenylindole (blue). Histogram shows the percentage of EdU-positive cells on the total of DAPI-positive cells. Data are graphed as mean ± SEM; n = 5 mice. (E) Representative images of single muscle fibres treated with GAP-SCR/si-SCR, GAP-REW, and GAP-REW/si-Wnt7b from WT mice after 96 hr in culture, stained for Pax7 (red) and Ki67 (green). Nuclei were visualized with DAPI, 4′,6-diamidino-2-phenylindole (blue). Histogram (upper panel) shows the number of Pax7+ cells per fibre. Histograms (lower panel) represent the mean of the number of clusters (nuclei [n]: n > 2), pairs (n = 2), and single cells Pax7+ (n = 1) per fibre. Data represent the mean ± SEM; n = 5 mice. Data information: (C): *p<0.05, paired Student’s t-test. 3D and 3E: *p<0.05, **p<0.01, ***<0.001, one-way Anova with Tukey’s multiple comparison test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) qRT-PCR (left panel) and Western blot (right panel) analyses performed on extracts from MuSC-derived myoblasts, treated with GAP-SCR or GAP-REW. Gapdh mRNA and protein were used as endogenous control. Error bars represent the mean ± SEM of four biological replicates. (B) TPM (transcripts per million) values of Lnc-Rewind neighbouring genes obtained from the RNA-seq analyses performed in GAP-SCR- versus GAP-REW-treated MuSC-derived myoblasts. TPM values are presented as average ± SD of four biological replicates. (C) qRT-PCR quantification of Lnc-Rewind and Wnt7b in GAPSCR/si-SCR, GAP-REW, and GAP-REW/si-Wnt7b conditions. Data were normalized to Gapdh mRNA and represent the mean ± SEM of four biological replicates. Data information: (A) **p<0.01, unpaired Student’s t-test. (B) *p<0.05, **p<0.01, paired Student’s t-test. (C) *p<0.05, **p<0.01, one-way Anova with Tukey’s multiple comparison test.
 
 The genomic proximity between Lnc-Rewind/Wnt7b loci, together with their anti-correlated expression in muscle cells and the lncRNA chromatin enrichment (Figure 1D,E), led us to hypothesize that Lnc-Rewind might have a direct, in cis-regulatory role on Wnt7b transcription. A first clue in favour of such hypothesis came from FANTOM5 Cap Analysis Gene Expression (CAGE) profiles of mouse samples, available on ZENBU genome browser (Noguchi et al., 2017). Indeed, the inspection of the TSS usage among all the available murine samples (n = 1196, Figure 3—source data 1) revealed a distinctive anti-correlated expression between Lnc-Rewind and Wnt7b transcripts (Figure 3B, left panels). In contrast, the other Lnc-Rewind-neighbouring genes, such as Cdpf1 and Atxn10, displayed no specific expression correlation (Figure 3B, right panels). Of note, Wnt7b was the only gene that was significantly upregulated upon the lncRNA depletion with a concomitant increase in WNT7b protein levels (Figure 3C, Figure 3—figure supplement 1A, B).
 
 To uniquely link the defects in MuSC activation/proliferation induced by Lnc-Rewind depletion (Figure 2E–G) to the aberrant induction of Wnt7b expression, we performed a rescue experiment. To this end, in a context where the upregulation of Wnt7b was triggered by Lnc-Rewind depletion, we restored its expression to physiological levels by si-Wnt7b-mediated knockdown (Figure 3—figure supplement 1C). Of note, rescuing Wnt7b repression promoted an increase in the percentage of proliferating MuSC-derived myoblasts towards control levels (Figure 3D). Similarly, restoration of Wnt7b repression on single myofibres was sufficient to restore the capacity of the associated MuSCs to properly activate and proliferate ex vivo (Figure 3E), as assessed by the quantification of the number of Pax7+ MuSCs and the percentage of single MuSCs, and derived clusters and pairs, within each myofibre (Figure 3E). Together, these findings clearly candidate the Lnc-Rewind transcript as a regulator of Wnt7b repression in muscle stem cells and prompted us towards the study of the underlying mechanism by which this regulation occurs.
 
-## Lnc-Rewind directly interacts with the methyltransferase G9a and mediates specific in cis repression of Wnt7b in MuSCs
+### Lnc-Rewind directly interacts with the methyltransferase G9a and mediates specific in cis repression of Wnt7b in MuSCs
 
 The above results suggest that Lnc-Rewind exerts a repressive role on Wnt7b gene expression. Several works accumulated so far indicate that most of the cis-acting chromatin-associated lncRNA function occurs by recruiting and guiding chromatin modifiers to target genes (Batista and Chang, 2013; Guttman and Rinn, 2012; Khalil et al., 2009; Rinn and Chang, 2012). In light of our data showing a negative correlation of Wnt7b expression by Lnc-Rewind, we focused our attention on the two most known repressive lysine methyltransferases, EZH2 and G9a, which catalyse the deposition of H3K27me3 and H3K9me1/2 on target genes, respectively (Mozzetta et al., 2015). Both EZH2 (Caretti et al., 2004) and G9a (Ling et al., 2012) are mostly expressed in proliferating MuSCs and become downregulated during muscle differentiation (Figure 4—figure supplement 1A), similarly to Lnc-Rewind (Figure 1C). Moreover, both EZH2 (Rinn et al., 2007; Zhao et al., 2008) and G9a (Nagano et al., 2008; Pandey et al., 2008) have been previously reported to be recruited to specific genomic loci through the interaction with different lncRNAs. Thus, we hypothesized that in proliferating myoblasts Lnc-Rewind might interact with EZH2 and/or G9a repressive complexes to tether them on Wnt7b genomic locus. Therefore, we performed RNA immunoprecipitation (RIP) analysis in proliferating C2C12 cells using antibodies against G9a and EZH2. We observed that, although both G9a and EZH2 were successfully immunoprecipitated (Figure 4—figure supplement 1B, upper panel), Lnc-Rewind transcript was efficiently retrieved only in the G9a native RIP, while it was almost undetectable in EZH2 IP (Figure 4—figure supplement 1B, lower panel). To note, the levels of RNA obtained in the specific IP fraction were similar to the ones of the Kcnq1ot1 lncRNA, which was previously demonstrated to be physically associated with both G9a and Ezh2 proteins (Pandey et al., 2008). The specificity of Lnc-Rewind and G9a interaction was strengthened by the use of two reciprocal strategies (Figure 4). On the one hand, the G9a-crosslinked immunoprecipitation (CLIP) assay (Figure 4A) revealed the presence of Lnc-Rewind in the G9a immunoprecipitated samples. As for RIP, also in this case, Lnc-Rewind RNA-specific enrichment was comparable to the Kcnq1ot1-positive control. As a further validation, endogenous Lnc-Rewind RNA pulldown (Figure 4B) revealed the presence of G9a in the lncRNA-precipitated fraction. This evidence confirmed the direct interaction between these two partners and led us to hypothesize that Lnc-Rewind might exert its repressive function on the Wnt7b locus through G9a. In support of this, depletion of G9a by siRNA-mediated knockdown in MuSC-derived myoblasts induced Wnt7b upregulation (Figure 4C). To test whether Lnc-Rewind and G9a binds the Wnt7b locus in vivo, we applied RNA-DNA-FISH (Figure 4D) and a chromatin immunoprecipitation (ChIP) assay (Figure 4—figure supplement 1C), respectively. In agreement with our hypothesis, we found an overlap between Lnc-Rewind (RNA) and Wnt7b (DNA) localization (Figure 4D) and an intriguing enrichment of the methyltransferase in the Wnt7b upstream regions (Figure 4—figure supplement 1C). Consistent with a role of Lnc-Rewind in the G9a-mediated epigenetic repression of Wnt7b, quantification of the H3K9me2 mark on the G9a-occupied genomic regions (Figure 4E, upper panel) showed that H3K9me2 deposition decreased upon Lnc-Rewind knockdown, compared to the GAP-SCR control (Figure 4E, lower panel). Moreover, a combined Lnc-Rewind (RNA)/Wnt7b (DNA) FISH/G9a (PROTEIN) immunostaining approach showed the colocalization of both G9a and Lnc-Rewind on Wnt7b genomic locus (Figure 5A). Taken together, these results support a mechanism of action through which in MuSC Lnc-Rewind represses Wnt7b gene transcription by mediating the specific G9a-dependent H3K9me2 deposition on its locus (Figure 5B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig4-v2.jpg)
+
+**Figure 4.:** (A) G9a crosslinked RNA immunoprecipitation assay (CLIP) performed on nuclear extracts from C2C12 proliferating myoblasts. Western blot analysis of G9a (left panel) and qRT-PCR quantification of Lnc-Rewind recovery (right panel) expressed as input percentage (Input %) are shown. EZH2 protein and Gapdh RNA serve as negative controls; Kcnq1ot RNA is used as positive control. Data represent mean ± SEM of three biological replicates. (B) Lnc-Rewind RNA pulldown assay performed on nuclear extracts from C2C12 proliferating myoblasts. qRT-PCR quantification of Lnc-Rewind recovery (left panel) and Western blot analysis of G9a (right panel) are shown. Gapdh RNA and EZH2 protein serve as negative controls. Data represent mean ± SEM of three biological replicates. (C) qRT-PCR quantification of G9a and Wnt7b in MuSC-derived myoblasts treated with si-SCR or si-G9a. Data were normalized to Gapdh mRNA and represent the mean ± SEM of three biological replicates. (D) RNA/DNA-FISH experiments performed in proliferating MuSC-derived myoblasts showing the Lnc-Rewind RNA (red) and a DNA control (CTRL) region (green) (a) or the Wnt7b locus (green) (b). Inserts in (c) show single fluorescent channels for Lnc-Rewind and Wnt7b signals labelled by asterisks. Blue lines indicate the edges of the nuclei. DAPI, 4′,6‐diamidino‐2‐phenylindole (blue). Histogram reports the mean percentage ± SD of Lnc-Rewind signals colocalizing with Wnt7b locus or with the control region from three biological replicates. The extended list of the DNA and RNA probes used is listed in Key resources table. (E) Zoom-in into the genomic region upstream the Wnt7b TSS (upper panel). ChIP amplicons used to test the H3K9me2 enrichments are shown in green. Histogram shows the levels of H3K9me2 as analysed by ChIP experiments performed in MuSC-derived myoblasts upon GAP-SCR or GAP-REW transfection (lower panel). The H3K9me2 enrichment is represented as input percentage (Input %). Ube2b and R15 genomic regions were used as negative and positive controls, respectively. The graph shows the mean ± SEM of six independent experiments. Data information: (B) and (E): *p<0.05, paired Student’s t-test. (C) and (D): **p<0.01, ***p<0.001, unpaired Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western blot analysis performed on protein extracted from WT MuSC-derived myoblasts cultured in growth (GM) and differentiated (DM) conditions. GAPDH protein was used as endogenous control. (B) G9a and EZH2 native RNA immunoprecipitation (RIP) performed on nuclear extracts of C2C12 proliferating myoblasts. Data represent mean ± SEM of four biological replicates. Western blot analysis of G9a and EZH2 (upper panel) and qRT-PCR quantification of Lnc-Rewind recovery (lower panel) are shown. EZH2 protein serves as negative control. Gapdh and Kcnq1ot1 RNAs serve, respectively, as negative and positive controls. (C) Chromatin immunoprecipitation (ChIP) of G9a performed in C2C12 proliferating myoblasts; enrichment was calculated as (IP-IgG)/Input and represented as input percentage (Input %). Gapdh genomic region was used as negative control, while Myog and R15 genomic regions were used as positive controls. The graph shows the mean ± SEM of three biological replicates. Data information: *p<0.05, **p<0.01, ***p<0.001, unpaired Student’s t-test.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/54782/elife-54782-fig5-v2.jpg)
 
-**Figure 5.:** Wnt7b gene locus.(A) Top panel: RNA/DNA-FISH combined with immunofluorescence performed on MuSC-derived myoblasts; Lnc-Rewind RNA (red), Wnt7b DNA locus (green), and G9a protein (grey) are shown. Bottom panel: Isosurface rendering of nuclear sections is indicated by the yellow dashed lines. The overlapping regions between Lnc-Rewind (RNA) and Wnt7b (DNA) locus (left) and among Lnc-Rewind, Wnt7b locus, and G9a (right) are indicated by the white asterisks inside the nuclear volume. (B) Proposed model for the functional interplay between Lnc-Rewind and G9a on Wnt7b gene locus. Representation of mmu_Lnc-Rewind mode of action in muscle cells. In proliferating myoblasts, the Lnc-Rewind transcript is expressed, recruits the silencing methyltransferase G9a on the locus that represses Wnt7b transcription.
+**Figure 5.:** (A) Top panel: RNA/DNA-FISH combined with immunofluorescence performed on MuSC-derived myoblasts; Lnc-Rewind RNA (red), Wnt7b DNA locus (green), and G9a protein (grey) are shown. Bottom panel: Isosurface rendering of nuclear sections is indicated by the yellow dashed lines. The overlapping regions between Lnc-Rewind (RNA) and Wnt7b (DNA) locus (left) and among Lnc-Rewind, Wnt7b locus, and G9a (right) are indicated by the white asterisks inside the nuclear volume. (B) Proposed model for the functional interplay between Lnc-Rewind and G9a on Wnt7b gene locus. Representation of mmu_Lnc-Rewind mode of action in muscle cells. In proliferating myoblasts, the Lnc-Rewind transcript is expressed, recruits the silencing methyltransferase G9a on the locus that represses Wnt7b transcription.
 
 ## Discussion
 
@@ -72,11 +104,413 @@ Although the function of WNT7b has been studied in different cell types and deve
 
 ## Materials and methods
 
-## Cell preparation and FACS sorting
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>C57Bl/10 (WT)</td>
+      <td>JAX</td>
+      <td>Stock# 000665 RRID:MGI:5656893</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>C2C12</td>
+      <td>ATCC</td>
+      <td>C3H RRID:CVCL_UR38</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Male myoblast (WT)</td>
+      <td>Telethon Biobank</td>
+      <td>N/A</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31-PE (cell line monoclonal)</td>
+      <td>MiltenyBiotec</td>
+      <td>Cat# 130111540 RRID:AB_2657296</td>
+      <td colspan="2">(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45-PE (cell line monoclonal)</td>
+      <td>MiltenyBiotec</td>
+      <td>Cat# 130110797 RRID:AB_2658218</td>
+      <td colspan="2">(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ter119-PE (cell line monoclonal)</td>
+      <td>MiltenyBiotec</td>
+      <td>Cat# 130112909 RRID:AB_2654115</td>
+      <td colspan="2">(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sca1-FITC (cell line monoclonal)</td>
+      <td>MiltenyBiotec</td>
+      <td>Cat# 130116490 RRID:AB_2751322</td>
+      <td colspan="2">(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α7Integrin-APCVio770 (cell line monoclonal)</td>
+      <td>MiltenyBiotec</td>
+      <td>Cat# 130095212 Custom</td>
+      <td colspan="2">(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-G9a (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab185050 RRID:AB_2792982</td>
+      <td colspan="2">(CLIP, RIP: 10 ug; ChIP: 5 ug; WB: 1:1000; IF: 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EZH2 (mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3147 RRID:AB_10694383</td>
+      <td colspan="2">(RIP: 5 ug; WB: 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (rabbit polyclonal)</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# G9545 RRID:AB_796208</td>
+      <td colspan="2">(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MyHC (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# Mf20-s RRID:AB_2147781</td>
+      <td colspan="2">(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CyclinD3 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-182 RRID:AB_2259653</td>
+      <td colspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Wnt7b (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab94915 RRID:AB_10675749</td>
+      <td colspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K9me2(mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1220 RRID:AB_449854</td>
+      <td colspan="2">(ChIP: 5 ug)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pax7 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# Pax7-s RRID:AB_2299243</td>
+      <td colspan="2">(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG Anti-Rabbit</td>
+      <td>Invitrogen</td>
+      <td>Cat# 14-4616-82 RRID:AB_2865072</td>
+      <td colspan="2">(CLIP, RIP:10 ug; ChIP: 5 ug)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit IgG Alexa Fluor Plus 647</td>
+      <td>Invitrogen</td>
+      <td>Cat# A32795 RRID:AB_2762835</td>
+      <td colspan="2">(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab15580 RRID:AB_443209</td>
+      <td colspan="2">(1:100)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: nontargeting control</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# SIC007</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LNA Gapmer: nontargeting control</td>
+      <td>Qiagen</td>
+      <td>Cat# 300610</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mir-Let7-b</td>
+      <td>Qiagen</td>
+      <td>Cat# MS00003122</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mir-Let7-c</td>
+      <td>Qiagen</td>
+      <td>Cat# 18300</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siG9a</td>
+      <td>Sigma–Aldrich</td>
+      <td>SASI_Mm01_00136174 SASI_Mm_00136174_AS SASI_Mm01_00136175 SASI_Mm01_00136175_AS</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siWnt7b</td>
+      <td>Sigma–Aldrich</td>
+      <td>SASI_MM02_00316332 SASI_MM02_00316332_AS SASI_MM01_00033690 SASI_MM01_00033690_AS</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HS-DLC1 mRNA probe set</td>
+      <td>Advanced Cell Diagnostics, Inc</td>
+      <td>Ref. 716041</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Wnt7b BAC probe</td>
+      <td>Invitrogen clones</td>
+      <td>RP23-272K17</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NCTC BAC probe</td>
+      <td>Invitrogen clones</td>
+      <td>RP23-352B6</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mm-Lnc-Rewind probe set</td>
+      <td>Advanced Cell Diagnostics, Inc</td>
+      <td>Ref. 722581</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TriReagent</td>
+      <td>Sigma</td>
+      <td>Cat#T9424</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>Cat# 28718-90-3</td>
+      <td colspan="2">(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSG (di-succinimidyl glutarate)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>CAS 79642-50-5</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green Master mix</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A25742</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Paris Kit</td>
+      <td>Thermo fisher scientific</td>
+      <td>Cat# AM1921</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-Zol RNA MiniPrep Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat# R2050</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MAGnify ChIP</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 492024</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MyTaq DNA polymerase</td>
+      <td>Bioline</td>
+      <td>Cat# bio-21105</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript RT Vilo Master Mix</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 11754050</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BaseScope Reagent Kit v2-RED</td>
+      <td>Advanced Cell Diagnostics, Inc</td>
+      <td>Ref. 323900</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MiScript II RT kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 218160</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11668019</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Alexa Flour 594 HCS Assay</td>
+      <td>Invitrogen</td>
+      <td>Cat# C10354</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce ChIP-grade Protein A/G Magnetic Beads</td>
+      <td>ThermoFisher scientific</td>
+      <td>Cat# 26162</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Dispase II</td>
+      <td>Roche</td>
+      <td>4942078001</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K</td>
+      <td>Roche</td>
+      <td>EO0491</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase A</td>
+      <td>Roche</td>
+      <td>10103578001</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNase I</td>
+      <td>Roche</td>
+      <td>10104159001</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNase I</td>
+      <td>ThermoFisher scientific</td>
+      <td>#EN0521</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase I</td>
+      <td>Sigma</td>
+      <td>C0130</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva</td>
+      <td>BD Biosciences</td>
+      <td>Version 6.1.3.</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>Tree Star</td>
+      <td>Version 9.3.2 RRID:SCR_008520</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji image processing package</td>
+      <td>Open-source software (OSS) projects</td>
+      <td>https://imagej.net/Fiji RRID:SCR_002285</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph</td>
+      <td>Molecular Devices</td>
+      <td>https://www.moleculardevices.com/ RRID:SCR_002368</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FV10-ASW Viewer software</td>
+      <td>Olympus</td>
+      <td>https://www.olympus-lifescience.com/ RRID:SCR_014215</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN 3.0 Blue edition</td>
+      <td>ZEISS</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell preparation and FACS sorting
 
 Cell isolation and labelling were essentially performed as described in Mozzetta, 2016. Isolation of cells from 2 months old C57/Bl10 (RRID:MGI:5656893) WT mice was performed as follows: briefly, whole lower hindlimb muscles were carefully isolated, minced, and digested in phosphate-buffered saline (PBS) (Sigma) supplemented with 2.4 U/ml Dispase II (Roche), 100 μg/ml Collagenase A (Roche), 50 mM CaCl2, 1 M MgCl2, 10 mg/ml DNase I (Roche) for 1 hr at 37°C under agitation. Muscle slurries were passed 10 times through a 20G syringe (BD Bioscience). Cell suspension was obtained after three successive cycles of straining and washing in Washing Buffer consisting of HBSS containing 0.2% bovine serum albumin (BSA) (Sigma–Aldrich), 1% penicillin-streptomycin. Cells were incubated with primary antibodies CD31-PE (MiltenyBiotec, 130111540; RRID:AB_2657296), CD45-PE (MiltenyBiotec, 139110797; RRID:AB_2658218), Ter119-PE (MiltenyBiotec, 130112909; RRID:AB_2654115) 1:25; Sca1-FITC (MiltenyBiotec, 130116490; RRID:AB_2751322) 1:50; α7Integrin-APCVio770 (MiltenyBiotec, 130095212; Custom) 1:20 for 45 min on ice diluted in HBSS containing 0.2% BSA, 1% penicillin-streptomycin, and 1% DNAse I. The suspension was finally washed and resuspended in PBS containing 2% fetal bovine serum (FBS) and 0.5 μM ethylenediaminetetraacetic acid (EDTA). Cells were sorted using a FACSAriaIII (Becton Dickinson, BD Biosciences) equipped with 488 nm, 561 nm, and 633 nm laser and FACSDiva software (BD Biosciences, version 6.1.3). Data were analyzed using a FlowJo software (Tree Star, version 9.3.2). Briefly, cells were first gated based on morphology using forward versus side scatter area parameter (FSC-A versus SSC-A) strategy followed by doublets exclusion with morphology parameter area versus width (A versus W). Muscle satellite cells (MuSCs) were isolated as Ter119neg/CD45neg/CD31neg/a7-integrinpos/Sca1neg cells. To reduce stress, cells were isolated in gentle conditions using a ceramic nozzle of size 100 μm, a low sheath pressure of 19.84 pound-force per square inch (psi) that maintain the sample pressure at 18.96 psi and a maximum acquisition rate of 3000 events/s. Cells were collected in five polypropylene tubes. Following isolation, an aliquot of the sorted cells was evaluated for purity at the same instrument resulting in an enrichment >98–99% (see Figure 1—figure supplement 1C, right panel).
 
-## Cell culture conditions and transfection
+### Cell culture conditions and transfection
 
 Freshly sorted cells were plated on ECM Gel (Sigma)-coated dishes in Cyto-grow (Resnova) complete medium as a growth medium (GM) and cultured at 37°C and 5% CO2. After 5 days in GM, MuSC-derived myoblasts were exposed, generally for 2 days, to differentiation medium consisting of Dulbecco’s modified Eagle’s medium (DMEM) with 5% horse serum (HS). Cells were counted on DAPI-stained images using the Fiji (RRID:SCR_002285) tool ‘Multi point’. Downregulation of RNA expression was performed at ∼50% confluence by transfection in Lipofectamine 2000 (Invitrogen) according to manufacturer’s instructions, with 75 nM of LNA GapmeRs (Euroclone) for the downregulation of Lnc-Rewind and with siRNA (Sigma) for G9a and Wnt7b, according to manufacturer’s instructions. Negative Control A (Euroclone) (GAP-SCR) and Mission siRNA Universal Negative Control (Sigma) (si-SCR) were used as controls. See Supplementary file 1 and Key resources table for details. MuSC-derived myoblasts were subjected to two consecutive (overnight) rounds of transfection in GM and harvested 24 hr after second transfection.
 
@@ -84,7 +518,7 @@ GapmeRs were designed against Lnc-Rewind sequence using the Exiqon web tool (htt
 
 For EdU (Invitrogen) detection cells were incubated for 6 hr and stained using Click-iT EdU Alexa Flour 594 HCS Assay (Invitrogen) according to the manufacturer’s instructions.
 
-## Single myofibre isolation and immunofluorescence
+### Single myofibre isolation and immunofluorescence
 
 Single myofibres were isolated from Extensor digitorum longus (EDL) muscles of C57/Bl10 mice and digested in 2 mg/ml collagenase I (Sigma) for 1 hr at 37°C, gently shacked every 10 min. Single fibres were obtained gently triturating the digested EDL muscles using a glass pipette in DMEM supplemented with 10% HS. The myofibres were manually collected under a dissecting microscope and cultured in DMEM + Pyr with 20% FBS, 2.5 ng/ml FGF (Gibco), and 1% chick embryo extract (CEE) (Life Science Production). RNAi experiments were performed 4 hr after plating with one round of transfection, as described above. The fibres were incubated for 24 hr with EdU (Invitrogen) and were analyzed 96 hr after plating.
 
@@ -92,40 +526,40 @@ For EdU detection cells were stained using Click-iT EdU Alexa Flour 594 HCS Assa
 
 For the immunofluorescence, the single myofibres were fixed with 4% paraformaldehyde in PBS for 20 min at room temperature (RT), permeabilized with 0.5% Triton X-100 in PBS, and blocked with 10% FBS in PBS for 1 hr at RT. Primary antibodies (Pax7 (DSHB, Pax7-s; RRID:AB_2299243) 1:10 and Ki67 (Abcam, ab15580; RRID:AB_443209) 1:100) were diluted in 10% FBS–PBS and incubated overnight at 4°C. After incubation for 1 hr with the appropriate secondary antibodies (Alexa Fluor 488 or 594, Thermo Fisher), nuclei were counterstained with DAPI (Sigma), and fibres were mounted on cover-glasses. Images were taken with Axio Observer microscope (ZEISS) and processed with ZEN 3.0 (Blue edition) software.
 
-## RNA/DNA-FISH
+### RNA/DNA-FISH
 
 Lnc-Rewind in situ hybridization analyses were performed as previously described (Rossi et al., 2019). Briefly, proliferating MuSC-derived myoblasts and C2C12 cells were cultured on pre-coated glass coverslips and then fixed in 4% paraformaldehyde/PBS (Electron Microscopy Sciences, Hatfield, PA). RNA hybridization and signal development were carried out using Basescope assay (Advanced Cell Diagnostics, Bio-Techne) and BA-Mm-Lnc-Rewind probe-set (ref. 722581) designed to detect three junction regions of Lnc-Rewind (exon/intron1, intron1/exon2, exon/intron2). A probe specific for exon junction exon1/exon2 of human Dlc1 mRNA (BA-HS-DLC1, ref. 716041) was used as negative control. Confocal images were acquired at Olympus IX73 spinning disk confocal microscope equipped with a Confocal Imager (CREST X‐LIGHT) plus CoolSNAP Myo CCD camera (Photometrics) and at Olympus iX83 FluoView1200 laser scanning confocal microscope. Stacks of images were taken automatically with 0.2 or 0.3 microns between the Z-slices using a 60x NA1.35 oil objective and 405/473/559/635 nm or 405/470/555/640 nm lasers subset, respectively. Filter setting for DAPI, Alexa Fluor 488, Cy3, and Alexa Fluor 594 was used. The images were collected with MetaMorph or FV10-ASW confocal image acquisition software, and post-acquisition processing was performed by FIJI software to the entire image. 3D viewer plugin was used to perform 3D-rendering. DNA-FISH were sequentially carried out after RNA-FISH staining according to Santini et al., 2021. In particular, Wnt7b and negative control (corresponding to the nctc locus, previously used in Ballarino et al., 2018 and Desideri et al., 2020) genomic regions were visualized by nick-translated BAC clones (RP23-272K17 and RP23-352B6, respectively) labelled with Green 496 [5-fluorescein] dUTP (Enzo Life-Sciences). Percentage of colocalized signals in RNA/DNA-FISH experiments were measured as percentage ratio (%) of punctate Lnc-Rewind signals localized on the same focal plane of Wnt7b and negative control genomic regions, with respect to the total of Lnc-Rewind signals. In particular, we analysed a total of 135 nuclei for Lnc-Rewind/Wnt7b and 126 nuclei for Lnc-Rewind/negative control, from three independent biological replicates. G9a Immunofluorescence was performed sequentially to RNA-FISH staining by incubation in blocking solution (1% goat serum/1% BSA/PBS) for 30 min at RT. G9a primary antibody (Abcam, ab185050) was incubated in 1% donkey serum/PBS overnight at 4°C, while secondary antibody (donkey anti-rabbit Alexa Fluor Plus 647, Invitrogen A32795) were applied in the same incubation buffer for 45 min at RT.
 
-## RNA analyses
+### RNA analyses
 
 Total RNA from myoblasts/myotubes and MuSC-derived myoblasts was extracted with TriReagent (Sigma) using the Direct-Zol RNA MiniPrep Kit (Zymo Research) according to protocol specification. 0.5–1.0 µg of RNA were treated with RNase-free DNase I enzyme (Thermo scientific). Nuclear/cytoplasmic fractionation was performed using the Paris kit (Ambion, AM1921) according to the protocol specifications. RNA was reverse transcribed using the SuperScript VILO Master Mix (Thermo Scientific). Real-time quantitative PCRs were performed by using SYBR Green Master mix (Applied Biosystems), according to the manufacturer’s instructions. Relative expression values were normalized to the housekeeping Gapdh transcript.
 
-## Western blot
+### Western blot
 
 Total proteins were prepared by resuspending cells in RIPA buffer (50 mM Tris–HCl pH 7.4, 150 mM NaCl, 0.1% sodium dodecyl sulphate (SDS), 0.5% sodium deoxycholate, 1% NP-40, 1 mM EDTA, protease and phosphatase inhibitors [Roche]). Protein concentration was determined using a BCA assay (ThermoFisher Scientific). The cell lysate was denatured at 95°C for 5 min. The cell lysates were resolved on 4–15% TGX gradient gels (Bio-Rad Laboratories) and transferred to nitrocellulose membrane (Amersham). Membranes were blocked with 5% non-fat dried milk in TBS with 0.2% Tween for 1 hr at RT and then incubated with primary antibody overnight at 4°C. Primary antibodies used were against MF20 (MyHC) (DSHB, Mf20-s; RRID:AB_2147781), G9a (Abcam, ab185050; RRID:AB_2792982), Ezh2 (Cell Signaling, #3147; RRID:AB_10694383), Wnt7b (Abcam, ab94915; RRID:AB_10675749), Cyclin D3 (Santa Cruz biotechnology, sc-182; RRID:AB_2259653), and GAPDH (Sigma, G9545; RRID:AB_796208). After washing in TBS with 0.2% Tween, membranes were incubated in HRP-conjugated specific secondary antibody (goat anti-rabbit-anti-mouse [IgG-HRP Santa Cruz Biotechnologies]) for 1 hr at RT. After washing in TBS with 0.2% Tween, blots were developed with Western lightning enhanced chemiluminescence (ThermoFisher Scientific), the signal detection was performed with the use of ChemiDoc (Bio-Rad).
 
-## RNA immunoprecipitation
+### RNA immunoprecipitation
 
 C2C12 cells were washed with PBS, centrifuged at 2000 rpm for 5 min and resuspended in Buffer A (20 mM Tris–HCl pH 8.0, 10 mM NaCl, 3 mM MgCl2, 0.1% NP40, 10% glycerol, 0.2 mM EDTA, 0.4 mM phenylmethylsulfonyl fluoride (PMSF), 1× Protease Inhibitor cocktail (PIC). After a 15 min incubation on ice, the cell suspension was centrifuged at 2000 rpm for 5 min at 4°C to pellet the nuclei. The supernatant was collected as cytoplasmic extract. The pellet was re-washed with Buffer A for three times. The pellet was resuspended in NT2/Wash buffer (50 mM Tris pH 7.4, 150 mM NaCl, 1 mM MgCl2, 0.5% NP40, 20 mM EDTA, 1× PIC, 1× phenylmethylsulfonyl fluoride (PMSF), 1 mM dithiothreitol [DTT]), break with 7 ml dounce (tight pestel/B pestel), and centrifuged at 14,000 rpm for 30 min at 4°C. Protein A/G Magnetic beads (Thermo Scientific) were incubate with IgG (Invitrogen, 14-4616-82; RRID:AB_2865072), G9a (Abcam, ab185050; RRID:AB_2792982), and Ezh2 (Cell Signaling, #3147; RRID:AB_10694383) antibody on rotating wheel ON at 4°C, while the nuclear extract (NE) was precleared with the beads. Ten percent of the NE was collected for INP. The NE was divided in each sample with the coated beads (beads + Ab) and incubates on rotating wheel ON at 4°C. The beads were washed with NT2 buffer, and ¼ was collected for protein and ¾ for RNA analyses. RIP qRT-PCR results were represented as percentage of IP/input signal (% input).
 
-## Crosslinking immunoprecipitation
+### Crosslinking immunoprecipitation
 
 CLIP experiments were performed on NE obtained with some modification of the Rinn et al.’s protocol (Rinn et al., 2007). Briefly, C2C12 cells were washed with PBS, crosslinked with UV rays and collected in Buffer A (20 mM Tris–HCl pH 8.0, 10 mM NaCl, 3 mM MgCl2, 0.1% NP40, 10% glycerol, 0.2 mM EDTA, 0.4 mM PMSF, 1× PIC). Cells were centrifuged at 500 x g for 10 min and the supernatant was collected as cytoplasmic extract. The nuclei pellet was re-washed with Buffer A for three times. After the last wash, the nuclei pellet was resuspended in NP40 lysis buffer (50 mM HEPES–KOH, 150 Mm KCl, 2 Mm EDTA, 1 Mm NaF, 0.5% NP40 pH 7.4, 0.5 Mm DTT, 100× PIC), break with 7 ml dounce (tight pestel/B pestel) and centrifuged at maximum speed for 20 min at 4°C. The supernatant was collected and quantified with Bradford assay. Ten percent of the NE was collected for INP. Protein A/G Magnetic beads (Thermo Scientific) were washed with PBS Tween 0.02% (1× PBS, 0.02% Tween-20) and incubated in PBS Tween 0.02% with IgG (Invitrogen, 14-4616-82; RRID:AB_2865072) and G9a (Abcam, ab185050; RRID:AB_2792982) antibody on rotating wheel 1 hr at RT. The NE was divided in each sample with the coated beads (beads + Ab) and incubated on rotating wheel ON at 4°C. The beads were washed three times with the NP40 High Salt Buffer 0.5. (25 mM HEPES–KOH pH7.5, 250 mM KCl, 0.025% NP40) and two times with polynucleotide kinase PNK Buffer (50 mM Tris–HCL, 50 Mm NaCl, 10 mM MgCl2 pH 7.5) and resuspended in 100 μl of NP40 lysis buffer. Seventy-five microlitres were collected for RNA analysis: an equal volume of 2× Proteinase K Buffer (100 mM Tris–HCl, pH 7.5, 150 mM NaCl, 12.5 mM EDTA, 2% [wt/vol] SDS) was added, followed by the addition of Proteinase K (Roche) to a final concentration of 1.2 mg/ml and incubated for 30 min at 55°C. The RNA was recovered and analyzed through qRT-PCR. Twenty-five microlitres were heated at 95°C for 5 min, and the supernatant collected and resuspended in Protein elution buffer (4× Laemmli sample buffer [Bio-Rad]) with DTT 50 mM and analyzed by Western blot.
 
-## RNA pulldown
+### RNA pulldown
 
 RNA pulldown experiments were performed on NE obtained with some modification of the Rinn et al.’s protocol (Rinn et al., 2007). C2C12 cells were washed with PBS and harvested in Buffer A (20 mM Tris–HCl pH 8.0, 10 mM NaCl, 3 mM MgCl2, 0.1% NP40, 10% glycerol, 0.2 mM EDTA, 0.4 mM PMSF, 1× PIC). After a 15 min incubation on ice, they were centrifuged at 2000 rpm for 5 min at 4°C to pellet the nuclei. After three washes performed with Buffer A, the pellet was resuspended in NT2 buffer (50 mM Tris pH7.4, 150 mM NaCl, 1 mM MgCl2, 0.5% NP40, 20 mM EDTA, 1× PIC, 1× PMSF, 1 mM DTT), broken with 1 ml dounce (tight pestel/B pestel) and centrifuged at 14,000 rpm for 30 min at 4°C. The supernatant was quantified with Bradford assay. Streptavidin magnetic beads (Promega) were incubated with biotinylated primers against Lnc-Rewind and LacZ on a rotating wheel for 30 min at RT, while the NE was precleared with the beads with the same conditions. One percent of the NE was collected for INP. The NE was divided in each sample with the coated beads (beads + primers) and incubated on rotating wheel for 2 hr at RT. The beads were washed with NT2 buffer and 1/5 was collected for the RNA. The remaining 4/5 were eluted in elution buffer (2% SDS, 10% glycerol, 62.5 mM Tris–HCl pH 7.5, 0.5 M DTT, 1× PIC) and incubated 15 min at 70° before incubation of 5 min at 90° in order to collect proteins. Pulldown (PD) qRT-PCR results were represented as percentage of PD/input signal (% input).
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 ChIP experiments on MuSC-derived myoblasts were performed on chromatin extracts according to the manufacturer's protocol (MAGnify ChIP; Life Technologies) by O.N. incubation with 3 μg of immobilized anti-H3K9me2 (Abcam ab1220; RRID:AB_449854) or rabbit IgG (14-4616-82; RRID:AB_2865072) antibodies. A standard curve was generated for each primer pair testing 5-point dilutions of input sample. Fold enrichment was quantified using qRT-PCR (SYBR Green; Qiagen) and calculated as a percentage of input chromatin (% Inp). Data from GAP-SCR vs GAP‐REW conditions represent the mean of six independent experiments ± SEM. For G9a ChIP experiments on proliferating C2C12, crosslinking was performed by adding DSG (di-succinimidyl glutarate; Santa Cruz) at a final concentration of 2 mM for 45 min at RT. Then, formaldehyde (Sigma) was added to culture medium to a final concentration of 1% for 10 min at RT and stopped by glycine to a final concentration of 0.125 M. Chromatin was extracted as described in Mozzetta et al., 2014 and immunoprecipitated with 5 μg of G9a (Abcam, ab185050; RRID:AB_2792982) or rabbit IgG (14-4616-82; RRID:AB_2865072) antibodies carried out overnight at 4°C. Sequences of the oligonucleotides used for ChIP analyses are reported in Supplementary file 1.
 
-## 3′-End mRNA sequencing and bioinformatic analyses
+### 3′-End mRNA sequencing and bioinformatic analyses
 
 Total RNA was quantified using the Qubit 2.0 Fluorimetric Assay (ThermoFisher Scientific). Libraries were prepared from 100 ng of total RNA using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen GmbH); the quality was assessed by using screen tape high-sensitivity DNA D1000 (Agilent Technologies). Sequencing was performed on a NextSeq 500 using a high-output single-end, 75 cycles, v2 Kit (Illumina Inc). Illumina novaSeq base call (BCL) files were converted in fastq file through bcl2fastq (version v2.20.0.422). Sequence reads were trimmed using trimgalore (v0.4.1) to remove adapter sequences and low-quality end bases (regions with average quality below Phred score 20). Alignment was performed with STAR 2.5.3a (Dobin et al., 2013) on mm10 reference. The expression levels of genes were determined with htseq-count 0.9.1 (Anders et al., 2015) by using mm10 Ensembl assembly (release 90). Genes having <1 count per million in at least four samples and those with a percentage of multi-mapping reads > 20% were filtered out. Paired t-test was performed to select differentially expressed genes in GAP-REW vs GAP-SCR conditions, setting 0.05 as p-value threshold. Gene Ontology term enrichment analyses were performed using GORILLA (Eden et al., 2009) by providing the list of genes expressed in at least one of the two conditions as background.
 
 RNA-Seq reads from WT myoblasts cultured in GM (Legnini et al., 2017) were downloaded from GEO (GSE70389), preprocessed using Trimmomatic 0.32 software (Bolger et al., 2014), and aligned to human GRCh38 assembly using STAR 2.5.3a. The normalized read coverage tracks (.tdf files) were created and loaded on IGV genome browser (Robinson et al., 2011).
 
-## Statistical analyses
+### Statistical analyses
 
 The statistical analyses were performed using Microsoft Excel (v16). The use of an unpaired or paired two-tailed Student’s t-test is specified in each figure legend. For the data that did not show a normal distribution, the Spearman’s rank correlation test was used. When more than two conditions were compared, one-way Anova with Tukey’s multiple comparison test was applied using Prism (v9). Statistical significance was set at p<0.05.

@@ -17,9 +17,7 @@ In two previous papers we showed that Protocadherin-19 can interact with N-cadhe
 
 In the analysis of FE mutations, the T146R and E313K mutants shown in Figure 4G are notably shifted in their migration. Can the authors exclude that the failure of these mutants to aggregate is due to being improperly processed rather than an interface disruption?
 
-We include Author response image 1 as an image of the original full SDS-page gel and western blot that shows all mutants running as the wild-type protein. The apparent shift in migration is due to “smiling of the gel,” and placement of lanes 2 and 3 (T146R and E313K mutants) next to lane 6 (wild type). We have changed the order of lanes in the revised manuscript figure to avoid confusion (Figure 4G). In addition, we have verified that the mutation E313K does not dramatically affect the stability of protocadherin-19 (subsection “PCDH19-FE Mutations Analyzed in the Context of the Pcdh19 EC1-4 Structure”, last paragraph; Figure 1H).10.7554/eLife.18529.027Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.18529.027
-
-DOI: http://dx.doi.org/10.7554/eLife.18529.027
+We include Author response image 1 as an image of the original full SDS-page gel and western blot that shows all mutants running as the wild-type protein. The apparent shift in migration is due to “smiling of the gel,” and placement of lanes 2 and 3 (T146R and E313K mutants) next to lane 6 (wild type). We have changed the order of lanes in the revised manuscript figure to avoid confusion (Figure 4G). In addition, we have verified that the mutation E313K does not dramatically affect the stability of protocadherin-19 (subsection “PCDH19-FE Mutations Analyzed in the Context of the Pcdh19 EC1-4 Structure”, last paragraph; Figure 1H).10.7554/eLife.18529.027Author response image 1.
 
 [Editors' note: further revisions were requested prior to acceptance, as described below.]
 

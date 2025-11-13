@@ -32,15 +32,31 @@ In this study, we report a novel role for PHF19 in controlling the balance betwe
 
 ## Results
 
-## PHF19L interacts with the PRC2 complex in prostate cancer cells
+### PHF19L interacts with the PRC2 complex in prostate cancer cells
 
 Two isoforms of PHF19 are generated in humans: PHF19L has a Tudor domain, two PHD fingers, an extended homology (EH) domain, and a chromo-like domain, while PHF19S, contains only the N-terminal Tudor and PHD1 domains (Figure 1A). To investigate the role of PHF19 in prostate cancer, we first evaluated its expression in two common human prostate cancer cell models, the poorly-differentiated metastatic PC3 and DU145 cell lines, as well as in a normal counterpart, the prostate epithelial cell line RWPE1. PHF19L/S were both expressed in PC3 and DU145 cells, and at higher levels as compared to those in RWPE1 cells (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of PHF19L and PHF19S and their domains. (B) Western blot analysis showing expression of PHF19L, PHF19S, EZH2, and GAPDH in RWPE1, PC3, and DU145 cells. *, non-specific bands (C) Summary of the main interactors of PHF19L and PHF19S identified by mass spectrometry (MS). PC3 cells stably expressing FLAG-tagged PHF19L or PHF19S, or FLAG-tagged empty vector (control), were subjected to FLAG affinity purification followed by MS. The table displays the score and the peptide count from two independent experiments. (D,E) Endogenous co-immunoprecipitation (IP) of PHF19L with EZH2 or SUZ12 in control (shCTR) and PHF19L-depleted (shPHF19L#1 or shPHF19L#4) PC3 cells (D) or DU145 cells (E). IgG was used as a control. *, non-specific band.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Co-immunoprecipitation (IP) of FLAG-tagged proteins in PC3 cells overexpressing FLAG-PHF19L, FLAG-PHF19S, or FLAG-Empty. IP experiments were performed using anti FLAG-M2 antibody followed by EZH2 and PHF19L detection by Western blot. (B) RT-qPCR showing expression of the PHF19L (upper panels) and PHF19S (lower panels) isoforms in PC3 (left panels) and DU145 (right panels) cells. Cells were transduced with lentivirus expressing different shRNAs against PHF19L (shPHF19L#1, shPHF19L#4 or shPHF19L#B), PHF19S (shPHF19S#55 or shPHF19S#168) or a control shRNA (shCTR). Results are shown relative to shCTR and are normalized to the housekeeping gene RPLPO. Data represent mean ± SD from three biological replicates.
+
 We then analyzed protein interactors for each PHF19 isoform by mass spectrometry (MS). To this end, PC3 cells stably expressing a FLAG-tagged version of PHF19L or PHF19S, or a FLAG-tagged empty vector (as a control) were generated, and subjected to FLAG affinity purification followed by MS. As previously reported for ESCs (Ballaré et al., 2012; Brien et al., 2012), PHF19L mainly interacted with the core subunits of the PRC2 complex. On the other hand, PHF19S did not interact with any PRC2 component (Figure 1C). This suggests that PHF19L and PHF19S have different functions in prostate cancer. Co-immunoprecipitation assays confirmed that only FLAG-PHF19L interacted with EZH2 (Figure 1—figure supplement 1A). We then validated the interaction of PHF19L with the PRC2 complex at endogenous level. Indeed, PHF19L co-immunoprecipitated with EZH2 and SUZ12 in PC3 and DU145 cells (Figure 1D,E). Depletion of PHF19L with specific short hairpin RNAs (shRNAs) disrupted these interactions but did not affect the stability of the PRC2 complex, as the association between the core subunits EZH2 and SUZ12 remained unchanged (Figure 1D,E). In addition, by using specific knockdowns for each PHF19 isoform, we confirmed that the depletion of one of the isoforms had no impact on the expression of the other (Figure 1—figure supplement 1B).
 
-## PHF19L co-localizes with PRC2 on chromatin
+### PHF19L co-localizes with PRC2 on chromatin
 
 We next investigated the cellular localization of PHF19 in DU145 and PC3 cells. Cell fractionation revealed that, in both prostate cancer cell lines, PHF19L is mainly present on chromatin, whereas PHF19S is cytoplasmic (Figure 2A). Moreover, ectopically overexpressed PHF19S in DU145 cells was also only present in the cytoplasm, indicating that the lack of signal of PHF19S on chromatin was not due to technical limitations in detecting low levels of protein (Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig2-v1.jpg)
+
+**Figure 2.:** (A) Cell fractionation followed by Western blot analysis in DU145 (left) and PC3 (right) cells, showing that PHF19L is mainly present in the chromatin and PHF19S, in the cytoplasm. Total, total cell extract; Cyt, cytoplasm; Nuc, nucleus; NP, nucleoplasm; Chr, chromatin. (B) Metagene profile showing enrichment of PHF19 ChIP-signal along the 1010 PHF19L target genes in control (shCTR) and PHF19L knockdown (shPHF19L#4) cells, for two independent biological replicates (R1 and R2). Enrichment levels are normalized for the total number of reads of each sample. (C) Pie chart representing the distribution of PHF19L binding sites (ChIP-seq peaks) in the indicated genomic regions. (D) Gene ontology (GO) analysis of biological processes of PHF19L target genes in DU145 cells. (E,F) (Top) TSS (± 5 kb) enrichment plots of the indicated ChIP-seq experiments (Replicate 1) at the 1010 PHF19L target genes in DU145 cells. Boxplots showing the corresponding distribution of values are presented next to each TSS plot. Enrichment levels are normalized for the total number of reads of each sample. (Bottom) Scatter plots comparing the ChIP-seq enrichment signals (IP/IgG) of PHF19L against EZH2 (E, left panel), SUZ12 (E, right panel), or H3K27me3 (F) in the 1245 PHF19L ChIP-peaks. CC is the correlation between each pair of variables (P value ≤ 10−16 in all 3 cases). P values were computed using Pearson’s product-moment correlation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cell fractionation in DU145 cells overexpressing PHF19S followed by Western blot analysis, showing that PHF19L is present on chromatin, and PHF19S in the cytoplasm. Total, total cell extract; Cyt, cytoplasm; Nuc, nucleus; NP, nucleoplasm; Chr, chromatin. (B) Volcano plot of the 1,245 PHF19L significant peaks identified by DiffBind (P value < 0.05 and FDR < 0.2) introducing two biological replicates of each sample (ChIP and Input). The x-axis represents the difference in the number of reads at each peak between ChIPs and the corresponding inputs. The y-axis represents the significance of the peaks (–log P value). (C) Histogram showing the distribution of PHF19L binding sites (ChIP-seq peaks) relative to the nearest TSS. The x-axis represents relative distance (bp) from the peak summit to the TSS, and the y-axis, the number of peaks in each class. (D) Boxplot showing PHF19 ChIP-seq signal intensity at the 1245 binding sites in two independent replicates (R1 and R2) of control (shCTR) and PHF19L knockdown (shPHF19L#4) DU145 cells. PHF19L knockdown cells showed strongly reduced binding, demonstrating the specificity of the antibody. Input signal is shown as negative control. Values associated to the peaks were normalized by the total number of reads of each ChIP-seq experiment. (E) UCSC genome browser screenshots of three PHF19L target genes showing the profiles of the corresponding ChIP-seq experiments in control and PHF19L knockdown (shPHF19L#4) DU145 cells. (F) ChIP-qPCR validation of eight representative PHF19L binding sites and two negative controls (GATA2 and an intergenic region) in control (shCTR) and PHF19L-depleted (shPHF19L#4 and shPHF19L#B) DU145 cells. Data represent the mean ± SD from three biological replicates. (G,H) (Top) TSS (± 5 kb) enrichment plot of the indicated ChIP-seq experiments (Replicate 2) at the 1,010 PHF19L target genes in DU145 cells. Boxplots showing the corresponding distribution of values are shown next to each TSS plot. Enrichment levels are normalized for the total number of reads of each sample. (Bottom) Scatter plots comparing the ChIP-seq enrichment signals (IP/IgG) of PHF19 against EZH2 (G, left panel), SUZ12 (G, right panel), or H3K27me3 (H) in the 1,245 PHF19 peaks for the second set of replicates. CC is the correlation between each pair of variables (P value ≤ 10−16 in all cases). P values were computed using Pearson’s product-moment correlation. (I) Venn diagram showing a significant overlapping between the 1,010 PHF19L target genes and the 4,256 H3K27me3 target genes in DU145 cells (P value ≤ 10−16; Fisher’s exact test).
 
 In order to explore the role of PHF19L on chromatin in prostate cancer, we carried out chromatin immunoprecipitation using an anti-PHF19 antibody followed by high-throughput sequencing (ChIP-seq) in DU145 cells. To ensure the specificity of the detected sites, ChIP-seq assay was also performed in PHF19L-depleted (shPHF19L#4) cells. We performed two independent biological ChIP-seq replicates to assess the statistical significance of the results. Differential binding analysis (DiffBind) (Ross-Innes et al., 2012) identified a total of 1245 significant PHF19-binding regions (peaks, P value < 0.05 and FDR < 0.2), corresponding to 1010 target genes (Supplementary file 1, Figure 2—figure supplement 1B). PHF19 was mainly bound near the transcription start site (TSS) of the target genes (Figure 2B,C and Figure 2—figure supplement 1C). The ChIP signal was strongly reduced upon knockdown of PHF19L (Figure 2B and Figure 2—figure supplement 1D,E). The presence of PHF19L was further validated in a subset of target genes by ChIP-qPCR and the specificity of the signal was confirmed by using two different shRNAs (shPHF19L#4 and shPHF19L#B) (Figure 2—figure supplement 1F).
 
@@ -48,13 +64,29 @@ Gene ontology (GO) analysis revealed a significant enrichment of PHF19L at genes
 
 To investigate whether PHF19L co-localizes with the PRC2 on chromatin, we performed ChIP-seq experiments for EZH2, SUZ12, and H3K27me3 in DU145 cells (shCTR). In concordance with the mass-spectrometry data showing that PHF19L interacts with PRC2, PHF19L target genes were also occupied by EZH2 and SUZ12 (Figure 2E, upper panels). Additionally, a strong correlation was found between signals of PHF19 with EZH2, as well as with SUZ12, in the PHF19L ChIP-seq peaks (Figure 2E, lower panels). These results were confirmed in a second set of ChIP-seq replicates (Figure 2—figure supplement 1G). Consistently, PHF19L target genes were also strongly enriched in H3K27me3, and a significant correlation was observed between PHF19 and H3K27me3 signals in PHF19L peaks (Replicate 1, Figure 2F and Replicate 2, Figure 2—figure supplement 1H). In fact, almost all of the PHF19L target genes (93%) were decorated by H3K27me3 (Figure 2—figure supplement 1I).
 
-## Genome-wide increase in PRC2 in the absence of PHF19L
+### Genome-wide increase in PRC2 in the absence of PHF19L
 
 In ESCs, PHF19 is required for stable association of PRC2 at target genes (Ballaré et al., 2012; Brien et al., 2012). To investigate whether PHF19 also affects PRC2 binding in prostate cancer, we analyzed the genome-wide occupancy of PRC2 subunits and the H3K27me3 mark, in control (shCTR) and PHF19L-depleted (shPHF19L#4) DU145 cells. Unexpectedly, loss of PHF19L did not reduce but rather triggered a global increase in the recruitment of EZH2 and SUZ12, as well as in H3K27me3 deposition (Figure 3A). This observation was confirmed in a second set of ChIP-seq replicates (Figure 3—figure supplement 1A). Indeed, in the absence of PHF19L, there was a substantial increase of EZH2, SUZ12, and H3K27me3 ChIP-seq peaks and target genes (Supplementary file 1, Figure 3B and Figure 3—figure supplement 1B). Furthermore, differential binding analysis (DiffBind) found a significant gain in ChIP signal for EZH2, SUZ12 and H3K27me3 peaks, after knockdown of PHF19L (Figure 3C). Interestingly, almost no peaks had the opposite trend. This observation was clearly evident for PHF19L target genes, which exhibited a strong increase in PRC2 and H3K27me3 levels after PHF19L depletion (Figure 3D,E, and Figure 3—figure supplement 1C). We further validated these results by performing ChIP-qPCR in a subset of PHF19L targets, where we confirmed the presence of EZH2 and H3K27me3 in control conditions (shCTR), and the gain of signal in two different PHF19L knockdowns (shPHF19L#4 and shPHF19L#B) (Figure 3—figure supplement 1D).
 
-## MTF2 is enriched in chromatin after loss of PHF19L
+![Figure 3.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig3-v1.jpg)
+
+**Figure 3.:** (A) Scatter plots showing correlation of EZH2, SUZ12, and H3K27me3 ChIP-seq reads in shCTR versus shPHF19L#4 DU145 cells. Each dot in the plot corresponds to the number of ChIP-seq reads normalized by the number of fly spike-in reads of each sample for each target gene. Data correspond to replicate 1 (R1). Upper panel: EZH2 target genes; middle panel: SUZ12 target genes; lower panel: H3K27me3 target genes. After depletion of PHF19L a significant increase in EZH2, SUZ12 and H3K27me3 signal was observed. P value ≤ 10−16 in all cases. P values were computed using Wilcoxon test (two-sided). (B) (Top) Venn diagram showing the overlapping of H3K27me3 target genes in control (shCTR) and PHF19L-depleted (shPHF19L#4) DU145 cells (P value ≤ 10−16, Fisher’s exact test). (Bottom) Boxplot showing H3K27me3 ChIP-seq signal intensity for common genes and new targets in control (shCTR) and PHF19L knockdown (shPHF19L#4) DU145 cells. The increase of signal is significant in all cases (P value ≤ 10−16, Wilcoxon test, two-sided). Values associated to the peaks were normalized by the total number of fly spike-in reads of each ChIP-seq experiment. (C) Volcano plots of the EZH2 (top), SUZ12 (middle), and H3K27me3 (bottom) ChIP-seq peaks, showing significant changes in signal upon PHF19 loss, as reported by DiffBind using two biological replicates for each condition (shCTR and shPHF19L#4) (P value < 0.05). For each plot, the union of all peaks of the corresponding ChIP (peaks called in shCTR and peaks called in shPHF19L) was considered. The x-axis represents the difference in the number of reads between the shCTR and the shPHF19L#4, considering both replicates. The y-axis represents the significance of the peaks (-log P value). (D) ChIP-seq heatmap showing the distribution of the PHF19L, EZH2, SUZ12, and H3K27me3 reads on PHF19L peaks (peak summit ± 5 kb) in control and PHF19L-depleted (shPHF19L#4) DU145 cells. Enrichment levels are normalized for the total number of spike-in reads of each sample. Peaks are ranked by the intensity of PHF19 signal in the control condition. (E) UCSC genome browser screenshot of PHF19, EZH2, SUZ12, and H3K27me3 ChIP-seq-profiles from control or PHF19L-depleted (shPHF19L#4) DU145 cells in two representative PHF19L target genes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Scatter plots showing correlation of ChIP-seq reads for the second replicate (R2) of EZH2, SUZ12, and H3K27me3 ChIP-seq experiments in shCTR versus shPHF19L#4 DU145 cells. Each dot in the plot corresponds to the number of ChIP-seq reads normalized by the number of fly spike-in reads of each sample for each target gene. Upper panel: EZH2 target genes; middle panel: SUZ12 target genes; lower panel: H3K27me3 target genes. After PHF19L depletion, a significant increase in EZH2, SUZ12 and H3K27me3 signal was observed. P value ≤ 10−16 in all cases. P values were computed using Wilcoxon test (two-sided). (B) (Top) Venn diagrams showing overlapping of EZH2 (left) and SUZ12 (right) target genes in control (shCTR) and PHF19L-depleted (shPHF19L#4) DU145 cells (P value ≤ 10−16, Fisher’s exact test). (Bottom) Boxplot showing EZH2 and SUZ12 ChIP-seq signal intensity for common genes and new targets in control (shCTR) and PHF19L knockdown (shPHF19L#4) DU145 cells. The increase of signal is significant in all cases (P value ≤ 10−16 in all cases except for SUZ12 common targets: P value ≤ 10−11. P values were calculated using the Wilcoxon test, two-sided). Values associated to the peaks were normalized by the total number of fly spike-in reads of each ChIP-seq experiment. (C) Boxplot showing ChIP signal intensity of EZH2, SUZ12, and H3K27me3 in control (shCTR) or PHF19L-depleted (shPHF19L#4) DU145 cells, at the H3K27me3 peaks that overlap (left panel) or not (right panel) with PHF19L peaks. Values associated to the peaks were normalized by the total number of spike-in reads of each ChIP-seq experiment. After PHF19L depletion, a significant increase in signal was observed in all cases. P value ≤ 10−16 (**). P values were computed using Wilcoxon test (two-sided). (D) ChIP-qPCR validation of the increase in EZH2 and H3K27me3 signal upon depletion of PHF19L using two different shRNAs (shPHF19L#4 and shPHF19L#B) in DU145 cells. Eight representative PHF19L binding sites and two negative controls (GATA2 and an intergenic region) are evaluated. Data represent mean ± SD from two biological replicates.
+
+### MTF2 is enriched in chromatin after loss of PHF19L
 
 Two PRC2 subcomplexes (termed PRC2.1 and PRC2.2) have recently been identified; these share the core canonical subunits but are associated with different accessory proteins that can modulate their activity and recruitment to chromatin (Figure 4A; Hauri et al., 2016). To address the mechanism by which PRC2 occupancy increases in the absence of PHF19L, we investigated other PRC2-associated factors that could potentially compensate for the loss of PHF19L and mediate an accentuated PRC2 recruitment. Gene expression analysis of different PRC2 accessory proteins revealed a specific and significant upregulation of MTF2 (PCL2) expression after depletion of PHF19L (Figure 4B). This increase was also verified at the protein level, in both whole cell extracts and the chromatin fraction (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic representation of PRC2.1 and PRC2.2 complexes. (B) RT-qPCR of PRC2-associated factors in control and PHF19L-depleted (shPHF19L#4) DU145 cells. Expression was normalized to that of the housekeeping gene RPLPO. Data are presented as the mean ± SD of three biological replicates. Significance was analyzed through Student’s t-test. P value was < 0.05 (*). (C) Cell fractionation showing specific increase of MTF2 protein in whole cell extracts (total) and in the chromatin compartment after knockdown of PHF19L (shPHF19L#4) in DU145 cells. (D) Venn diagram showing overlapping of 1010 PHF19L targets with MTF2 target genes in control (shCTR) and PHF19L-depleted (shPHF19L#4) DU145 cells. (P value ≤ 10−16; Fisher’s exact test). (E) ChIP-seq heatmap of MTF2 on PHF19L peaks (peak summit ± 5 kb) in control and PHF19L-depleted (shPHF19L#4) DU145 cells. Enrichment levels are normalized for the total number of spike-in reads of each sample. Peaks are ranked by the intensity of PHF19 signal in the control condition. (F) UCSC genome browser screenshot showing two examples of genes (CBX4 and SHH) that gain MTF2 after PHF19L knockdown in DU145 cells. (G) Knockdown and rescue of PHF19: ChIP-qPCR experiments of PHF19L and MTF2 in DU145 cells control (shCTR) and PHF19L knockdown (shPHF19L#B, targeting the 3’ UTR region), transduced with either FLAG-tagged PHF19L (+PHF19) or FLAG-Empty vector (-). Amplification of the GATA2 and an intergenic region were used as a negative control. Data represent the mean ± SD from two biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Volcano plot of the MTF2 ChIP-seq peaks, showing a significant gain in signal upon PHF19 loss, as reported by DiffBind biological replicates for each condition (shCTR and shPHF19L#4) (P value < 0.05). The union of all MTF2 peaks (peaks called in shCTR and peaks called in shPHF19L) was considered. The x-axis represents the difference in the number of reads between the shCTR and the shPHF19L#4 replicates. The y-axis represents the significance of the peaks (–log P value). (B) TSS (± 5 kb) enrichment plot of MTF2 ChIP-seq in DU145 cells, showing a general gain of MTF2 signal after PHF19L depletion (shPHF19L#4) in both MTF2+/PHF19+ target genes (left panel) and MTF2+/PHF19– target genes (right panel). Boxplots showing the corresponding distribution of values are shown next to each TSS plot. The increase is significant in both cases (P value ≤ 10−16). P values were computed using Wilcoxon test (two-sided). Enrichment levels were normalized to the total number of spike-in reads of each sample. (C) ChIP-qPCR validation showing increase of MTF2 ChIP-signal in PHF19L target genes after PHF19L depletion (shPHF19L#4 and shPHF19L#B) in DU145 cells. Data represent mean ± SD from two biological replicates. (D) ChIP-qPCR showing no changes in JARID2 binding in PHF19L target genes after PHF19L knockdown (shPHF19L#4) in DU145 cells. Data represent mean ± SD from two biological replicates.
 
 To study whether PHF19L affects MTF2 occupancy in chromatin, we performed ChIP-seq of MTF2 in two biological replicates of control and PHF19L-depleted DU145 cells. Genome-wide analysis of MTF2 occupancy showed a clear enrichment following knockdown of PHF19L, with MTF2 target genes rising from 2011 to 2811 (Figure 4D, Supplementary file 1). DiffBind analysis between both conditions showed a significant increase in the ChIP-signal for most of the MTF2 peaks in the absence of PHF19L (Figure 4—figure supplement 1A). Regarding the PHF19L targets, most of them (73%) coincided with MTF2 targets in control conditions, and this number is further increased (87%) in knockdown cells (Figure 4D). PHF19L binding sites exhibited a strong increase in MTF2 signal after PHF19L loss (Figure 4E,F). Furthermore, a general gain in MTF2 levels was also observed in the MTF2 targets that were not occupied by PHF19L (Figure 4—figure supplement 1B). We validated these results by ChIP-qPCR in a subset of PHF19L target genes using two different shRNAs (Figure 4—figure supplement 1C). Importantly, this effect was specific for MTF2 and not a general mechanism affecting all PRC2 associated factors, as the occupancy of JARID2 did not change in the absence of PHF19L (Figure 4—figure supplement 1D).
 
@@ -62,15 +94,31 @@ To further confirm the interplay between the occupancy of PHF19L and MTF2, we ec
 
 Together, these results indicate that, in prostate cancer, PHF19L restricts an excessive occupancy of MTF2 at chromatin, suggesting that MTF2 could be responsible for the increase in PRC2 recruitment and activity following PHF19L depletion.
 
-## PHF19L regulates the expression of genes essential for tumor growth, invasiveness, and metastasis
+### PHF19L regulates the expression of genes essential for tumor growth, invasiveness, and metastasis
 
 To understand the functional role of PHF19L in prostate cancer, we carried out global transcriptome analysis by RNA-seq in cells depleted of PHF19L (shPHF19L#4) or PHF19S (shPHF19S#168) and in DU145 control cells (shCTR). Loss of PHF19L resulted in upregulation of 652 genes and downregulation of 847 genes (Figure 5A, Supplementary file 2). Conversely, depletion of PHF19S had no significant impact on gene expression, with an almost unaltered transcriptome profile (Figure 5—figure supplement 1A). Gene Ontology (GO) analysis showed that genes upregulated after PHF19L loss were mainly involved in signaling pathways such as Ser/Thr kinases and ERBB, response to hypoxia, cell migration, extracellular matrix organization, and angiogenesis (Figure 5B, upper panel). GO annotation of genes downregulated after PHF19L loss indicated enrichment in those involved in the interferon pathway, development, morphogenesis, and signaling pathways (Figure 5B, lower panel). A closer analysis of the transcriptional changes revealed deregulation of essential genes involved in control of cell proliferation, several members of dual-specificity phosphatases (DUSPs) that negatively regulate MAP kinases and cell growth (Caunt and Keyse, 2013; Zhai et al., 2014; Arnoldussen and Saatcioglu, 2009), and a set of genes that are usually upregulated upon hypoxia but known to drive angiogenesis and metastasis such as VEGFA, VEGFC (Sullivan and Graham, 2007; Vergis et al., 2008), CXCR4 (Darash-Yahana et al., 2004), and LOX (Erler et al., 2006). We validated the changes in the expression of several of these genes by RT-qPCR in both DU145 cells (Figure 5C) and PC3 cells (Figure 5—figure supplement 1B). To examine whether these effects were directly related to loss of PHF19L, we performed rescue experiments by stably overexpressing PHF19L in knockdown cells (shPHF19L#B, which targets the 3’ UTR of endogenous PHF19L), and evaluated the expression of a panel of up- or downregulated genes by RT-qPCR. Changes in gene expression observed in PHF19L- depleted cells were reversed after overexpression of exogenous PHF19L (Figure 5D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig5-v1.jpg)
+
+**Figure 5.:** (A) Scatter plot showing changes in gene expression as detected by RNA-seq in PHF19L knockdown (shPHF19L#4) as compared to control (shCTR) DU145 cells. Up- and downregulated genes are highlighted in red and blue, respectively. The remaining genes are shown in black. (B) GO analysis of biological processes of upregulated (upper panel) and downregulated (lower panel) genes in DU145 cells after PHF19L knockdown. (C) Expression levels of selected genes were determined by RT-qPCR in control and PHF19L-depleted (shPHF19L#4) DU145 cells. Results are shown relative to shCTR and are normalized to the housekeeping gene RPLPO. Data are presented as mean ± SD of three biological replicates. (D) Expression levels of selected genes were determined by RT-qPCR in DU145 cells control (shCTR) and PHF19L knockdown (shPHF19L#B, targeting the 3’ UTR region), transduced with either FLAG-tagged PHF19L (+PHF19) or FLAG-Empty vector. Results are shown relative to shCTR /-and are normalized to the housekeeping gene RPLPO. Data are presented as the mean ± SD of two biological replicates. (E) Heatmaps showing RNA-seq signal on PHF19L direct target genes that are transcriptionally up- or downregulated after loss of PHF19L (shPHF19L#4) in DU145 cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Scatter plot showing no significant changes in gene expression detected by RNA-seq in control (shCTR) versus PHF19S knockdown (shPHF19S#168) DU145 cells. Up- and downregulated genes are highlighted in red and blue, respectively. The remaining genes are shown in black. (B) Expression levels of selected genes were determined by RT-qPCR in control and PHF19L-depleted (shPHF19L#4) PC3 cells. Results are shown relative to shCTR and are normalized to the housekeeping gene RPLPO. Data represent mean ± SD from three biological replicates. (C) Representative examples from UCSC genome browser showing RNA-seq and the indicated ChIP-seq results from control (shCTR) or PHF19L-depleted (shPHF19L#4) DU145 cells. Screenshots correspond to genes downregulated after PHF19L depletion. Left, IGFBP3 gene, which has a PHF19L binding site around its TSS; right, EPHB3 gene, which has two adjacent intergenic PHF19L binding sites. Data corresponding to H3K4me1 and H3K3me3 were obtained from Li et al. (2016) (GSE82260). (D) Enrichment plot of H3K4me1 and PHF19 ChIP-seqs on PHF19L intergenic binding sites (peak summit ± 5 kb) in DU145 cells. Data corresponding to H3K4me1 were obtained from Li et al. (2016) (GSE82260).
+
 Comparative analysis between differential expression data and ChIP-seq results revealed that only 9% of the PHF19L direct targets (91/1010) were deregulated, with 59 genes upregulated and 32 downregulated (Figure 5E), suggesting that indirect or secondary effects play an essential role in controlling changes in gene expression after PHF19L depletion. Nevertheless, among the PHF19L targets, we found several downregulated genes directly implicated in inhibition of tumor progression and metastasis in prostate cancer, such as IGFBP3 (Mehta et al., 2011) and NDRG2 (Gao et al., 2011; Figure 5E; Figure 5—figure supplement 1C left panel). On the other hand, the upregulated PHF19L direct targets included several genes typically induced by hypoxia that are required for homing and establishment of pre-metastatic niche, such as LOX (Erler et al., 2006), CXCR4 (Darash-Yahana et al., 2004), EGLN3 (Henze et al., 2010), and ADM (Zhang et al., 2017). We also observed upregulation of Hedgehog signaling pathway components (e.g. BMP4, SHH, and WNT7A) as well as of genes that drive the epithelial-to-mesenchymal transition (HEY1, HMGA2, and SOX9) (Francis et al., 2018; Shi et al., 2016; Chen et al., 2010; Figure 5E). Moreover, as the ChIP-seq results revealed that about 17% of PHF19L binding sites are located in intergenic regions, we cannot exclude the possibility that PHF19L binds also to enhancer elements, thus regulating the expression of neighboring genes. Indeed, we observed substantial enrichment in H3K4me1, a histone mark associated to enhancers, in these intergenic peaks (Figure 5—figure supplement 1D). Interestingly, we found several examples of intergenic PHF19L binding sites located in the vicinity of downregulated genes (Figure 5—figure supplement 1C right panel).
 
-## Depletion of PHF19L switches the cells to a less proliferative but more aggressive phenotype
+### Depletion of PHF19L switches the cells to a less proliferative but more aggressive phenotype
 
 Global gene expression analysis after depletion of PHF19L showed deregulation of multiple genes involved in control of cell cycle and growth (Figure 5C). Indeed, growth curves of DU145 and PC3 cells revealed that PHF19L loss dramatically decreased cell growth (Figure 6A,B and Figure 6—figure supplement 1A). BrdU incorporation assays also showed a significant reduction in cell proliferation in knockdown cells as compared with control cells (Figure 6C and Figure 6—figure supplement 1B). On the other hand, and in concordance with the gene expression data, depletion of PHF19S did not have any effect on cell proliferation (Figure 6—figure supplement 1C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig6-v1.jpg)
+
+**Figure 6.:** (A) Growth curve comparing cell growth of control and PHF19L knockdown (shPHF19L#1 or shPHF19L#4) DU145 cells. Data are presented as mean ± SD of three biological replicates. (B) Phase contrast microscope images of DU145 cells in culture showing decrease in cell growth after PHF19L depletion. (C) Effect of PHF19L depletion (shPHF19L#4) on BrdU incorporation in DU145 cells. Data are presented as mean ± SD of three biological replicates. Significance was analyzed using Student’s t-test. P value was ≤ 0.05 (*). (D) Transwell invasion assay in control and PHF19L-depleted (shPHF19L#4) DU145 cells. Graph shows the percentage of invasion (mean ± SD) from two biological replicates. Significance was analyzed through Student’s t test. P value ≤ 0.05 (*). (E,F) Tube formation assays were performed by treating HUVECs with conditioned media from control (shCTR) or PHF19L-depleted (shPHF19L#1 or #4) DU145 cells. (E) Representative images showing increased tube formation in the PHF19L-knockdown as compared to control DU145 cells. VEGF (50 ng/ml) and unconditioned medium were used as positive and negative controls, respectively. (F) Quantification of the number of loops in each condition. Bars represent the mean ± SD from two biological replicates. Significance was analyzed using Student’s t-test. P value was ≤ 0.05 (*).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51373/elife-51373-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Growth curve comparing cell growth of control and PHF19L-knockdown PC3 cells. Error bars represent SD of three independent experiments. (B) Effect of PHF19L depletion (shPHF19L#4) on BrdU incorporation in PC3 cells. Data represent mean ± SD from three biological replicates. Significance was analyzed through Student’s t-test. P value was ≤ 0.0005 (*). (C) Growth curve showing no changes in cell growth after PHF19S knockdown in PC3 cells. Data represent mean ± SD from three biological replicates. (D) Transwell invasion assay in control and PHF19L-depleted PC3 cells. Graph shows percentage of invasion (mean ± SD) from three biological replicates. Significance was analyzed through Student’s t test. P value was ≤ 0.05 (*); or ≤0.01 (**).
 
 Although PHF19L knockdown cells had reduced proliferation, they had multiple genes upregulated that are associated with invasion and metastasis, as well as several angiogenic factors (Figure 5B,C). To explore the potential role of PHF19L in stimulating prostate cancer cell invasion, we performed in vitro invasion assays using matrigel-coated transwells. DU145 cells lacking PHF19L showed a significantly increased capacity to invade the matrigel as compared to wild-type cells (Figure 6D). A similar effect was observed for PC3 cells (Figure 6—figure supplement 1D).
 
@@ -90,65 +138,334 @@ Interestingly, PHF19L depletion triggered both up- and downregulation of direct 
 
 ## Materials and methods
 
-## Cell lines and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>DU145</td>
+      <td>ATCC HTB-81</td>
+      <td>RRID:CVCL_0105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>PC3</td>
+      <td>ATCC CRL-1435</td>
+      <td>RRID:CVCL_0035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>RWPE1</td>
+      <td>ATCC CRL-11609</td>
+      <td>RRID:CVCL_3791</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PHF19 (rabbit, polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling #77271; RRID:AB_2799892</td>
+      <td>WB (1:1000), ChIP (1:50, 5 µl/chip), IP (1:500, 5 µl/IP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EZH2 (rabbit, monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling #5246; RRID:AB_10694683</td>
+      <td>WB (1:1000), ChIP (1:50, 5 µl/chip), IP (1:500, 5 µl/IP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SUZ12 (rabbit, monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam #ab12073; RRID:AB_442939</td>
+      <td>ChIP (5 µg/chip)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27me3 (rabbit, polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore #07–449; RRID:AB_310624</td>
+      <td>ChIP (5 µg/chip)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MTF2 (rabbit, polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Proteintech 16208–1-AP; RRID:AB_2147370</td>
+      <td>WB (1:1000), ChIP (5 µg/chip)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>JARID2 (rabbit, polyclonal)</td>
+      <td>Novus</td>
+      <td>Novus #NB100-2214; RRID:AB_10000529</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG (rabbit, monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam #ab172730; RRID:AB_2687931</td>
+      <td>ChIP (5 µg/chip)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EPOP (rabbit polyclonal)</td>
+      <td>ActiveMotif</td>
+      <td>Active Motif #61753; RRID:AB_2793758</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PALI1 (rabbit polyclonal)</td>
+      <td>Generated in Adrian Bracken's laboratory (Conway et al., 2018)</td>
+      <td></td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Drosophila H2Av</td>
+      <td>Active Motif</td>
+      <td>Active Motif #61686; RRID:AB_2737370</td>
+      <td>ChIP (1 µg/chip)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz #sc32233; RRID:AB_627679</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam #ab1791 RRID:AB_302613</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: MISSION pLKO.1-puro Empty Vector Control</td>
+      <td>Addgene</td>
+      <td>Addgene: SHC001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: Plko.1-Puro_ shPHF19L#1</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: Plko.1-Puro_ shPHF19L#4</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: Plko.1-Puro_ shPHF19L#B</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: Plko.1-Puro_ shPHF19L#168</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: Plko.1-Puro_ shPHF19L#55</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ChIP-qPCR primers</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChIP-IT High Sensitivity Kit</td>
+      <td>Active Motif</td>
+      <td>Active Motif #53040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen #28106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen #74134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>APC BrdU Flow Kit</td>
+      <td>BD Pharmingen</td>
+      <td>BD #552598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>PMID:19261174</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS</td>
+      <td>PMID:18798982</td>
+      <td>RRID:SCR_013291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DiffBind</td>
+      <td>PMID:22217937</td>
+      <td>RRID:SCR_012918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R software</td>
+      <td>R Development Core Team, 2019</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSC genome browser</td>
+      <td>PMID:29106570</td>
+      <td>RRID:SCR_005780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Enrichr</td>
+      <td>PMID:27141961</td>
+      <td>RRID:SCR_001575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TopHat</td>
+      <td>PMID:19289445</td>
+      <td>RRID:SCR_013035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cufflinks</td>
+      <td>PMID:22383036</td>
+      <td>RRID:SCR_014597</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SeqCode</td>
+      <td>http://ldicrocelab.crg.eu/</td>
+      <td>RRID:SCR_018070</td>
+      <td>Applications to generate ChIP-seq meta-plots, heat maps and boxplots of counts</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and cell culture
 
 The PC3 and DU145 prostate cancer cell lines are derived from bone and brain metastasis of prostate adenocarcinoma, respectively. They were cultured in Dulbecco's Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (FBS) (Gibco), 1 × L glutamine (Gibco) and 1 × penicilin/streptomycin (Gibco). RWPE1, a normal prostate epithelial cell line, was cultured in keratinocyte serum free medium (K-SFM) supplemented with 0.05 mg/ml bovine pituitary extract (BPE) and 5 ng/ml human recombinant epidermal growth factor (EGF). Cells used in this study were authenticated cell lines obtained from ATCC. Mycoplasma contamination tests gave negative results on all the cells used.
 
-## Cell growth curve
+### Cell growth curve
 
 About 20,000 cells were seeded in 1 ml medium in a 12-well plate for each condition (day 0); medium was changed every two day. Cells were counted on days 2, 4, 6, and 8, under a light microscope using a counting chamber with Trypan blue staining to exclude dead cells.
 
-## BrdU cell proliferation assay
+### BrdU cell proliferation assay
 
 PC3 and DU145 cells were treated with 10 μM of BrdU solution for 30 min and 2 hr, respectively, and then analyzed for BrdU incorporation using APC BrdU Flow Kit (BD Pharmingen) according to manufacturer´s protocol. The percentage of BrdU-positive cells was analyzed by a Becton Dickinson FACSCanto flow cytometer.
 
-## Transwell migration and invasion assay (Boyden chamber assay)
+### Transwell migration and invasion assay (Boyden chamber assay)
 
 Cell invasion and migration experiments were performed using cell culture inserts (8 μm pore size, Transparent PET membrane; Corning) as the upper chamber, on 12-well Multiwells (Corning). For the invasion assays the upper membranes were coated with 100 µl Matrigel (Corning #356230). A total of 2 × 105 DU145 cells (shCTR or shPHF19) in 400 µl of serum-free medium were seeded on the upper chamber. The lower chambers were filled with 1.4 ml of growth medium supplemented with 10% FBS. After a 24 hr incubation at 37°C and 5% CO2, non-migrated cells were gently removed from the upper side of the membrane using a cotton swab. The inserts were transfer to 70% ethanol for 10 min to allow cell fixation and air-dried for 15 min. The cells were stained with crystal violet 0.2% for 10 min and then with DAPI (1 µg/ml) for nuclei visualization. The migration assay was performed similarly to the invasion assay but without coating the upper membranes with Matrigel. Images of the stained cells were then captured under bright-field microscopy and cells from at least five randomly selected fields were counted for each experiment. Percentage of invasion was calculated as the ratio of cells that passed through the Matrigel-coated membrane divided by cells that migrated through the uncoated membrane ×100.For PC3 cells, FluoroBlok 24-Mutliwell Insert Plates (8 µm pore size, PET membrane, Corning) coated or not with Matrigel, were used. Cells were pre-labelled with 10 μg/ml DilC12 (Pasini and Di Croce, 2016) (BD Biosciences) fluorescent dye overnight at 37°C. The assay was performed according to manufacturer´s protocol. Fluorescence was read at wavelength of 549/565 nm (Ex/Em) using Tecan Infinite 200 Pro microplate reader.
 
 Percentage of Invasion was calculated as the ratio of the mean RFU of cells that passed through the Matrigel coated membrane divided by the mean RFU of cells that migrated through uncoated membrane ×100. RFU = relative fluorescence units.
 
-## In vitro HUVEC tube-formation assay
+### In vitro HUVEC tube-formation assay
 
 In vitro HUVEC tube formation assay was performed following a previously published protocol (Jm and Lung, 2012). Briefly, DU145 cells, shCTR and shPHF19L, were seeded and grown to 40% confluence. The growth medium was replaced with serum free DMEM and cells incubated for 24 hr. The conditioned medium (CM) was then harvested. Umbilical vein endothelial cells (HUVECs), grown at 70–80% confluency, were serum starved in Medium 200PRF for 3 hr prior to performing the tube formation assay. After serum starvation, cells were collected and resuspended in serum free DMEM at 4 × 105 cells/ml. 500 μl of this HUVEC cell suspension were centrifuged at 4000 rpm for 3 min and resuspended in 500 μl of CM obtained from shCTR or shPHF19L DU145 cells, and supplemented with FBS to a final concentration of 1%. Cell suspension was plated in a 96-well plate (100 µl/well) pre-coated with growth factor-reduced Matrigel and incubated at 37°C, 5% CO2 for 6 hr. The cells were then visualized under the light microscope and images of the capillary network were taken.
 
-## Calcium phosphate transfection
+### Calcium phosphate transfection
 
 HEK-293T (2.5 × 106) or Phoenix-AMPHO (2 × 106) cells were plated onto a p10 plate. The following day, the calcium phosphate-DNA precipitates were prepared by pooling together the plasmids in 0.25 M CaCl2. While vortexing, calcium phosphate-DNA solution was added dropwise to an equal volume of HBS 2× (HEPES-buffered saline solution, pH 7.05: 0.28 NaCl, 0.05 M HEPES, and 1.5 mM Na2HPO4) at RT. After 30 min at RT, the solution was added to the HEK-293T cells for lentivirus production or Phoenix-AMPHO cells for retrovirus production. Cells were incubated 16 hr with the transfection mix, after that the medium was replaced. At 48 hr and 72 hr, medium containing viral particles was collected and filtered (0.45 μm filter).
 
-## Lentivirus production and infection
+### Lentivirus production and infection
 
 Lentivirus were produced by transfecting HEK-293T cells with 10 μg CMVDR-8.91, 5 µg pCMV-VSV-G and 7 μg pLKO-shRNA (shCTR or shPHF19, Sigma) plasmids, using the calcium phosphate method. Medium containing the lentiviral particles was used to infect target cells 24 hr and 48 hr after seeding. Infected cells were selected with puromycin (1 μg/ml for DU145, and 2 μg/ml for PC3 cells).
 
-## Retrovirus production and infection
+### Retrovirus production and infection
 
 For overexpression of FLAG-PHF19L or -PHF19S, retroviral vector pMSCV-puro (or pMSCV-neo for rescue experiments) was used. cDNA from PHF19L and PHF19S were cloned into pCMV-FLAG which was then used to PCR purify the FLAG-PHF19L and FLAG-PHF19S sequences and clone them into pMSCV. The pMSCVpuro-FLAG-PHF19S plasmid was digested with EcoRI to release PHF19S and generate pMSCVpuro-FLAG-empty vector. Retrovirus were produced by transfecting Phoenix cells with 10 μg of pMSCV-puro (or neo)-FLAG (empty/PHF19L/PHF19S) and 5 µg pCMV-VSV-G using the calcium phosphate method. For the infection, 2 ml of the medium containing the viral particles were added to each well in 6-well plate containing target cells, plus Polybrene 5 g/µl. The plates were spun at 1000 × g, 32°C for 90 min. The infected cells were then incubated for 3 hr at 37°C and the medium was replaced. Following a second round of infection, cells were selected with 2 μg/ml puromycin. shRNAs specifically targeting PHF19S were designed using http://hannonlab.cshl.edu/GH_shRNA.html and cloned into XhoI and EcoRI site of pLMP/MLP-Puro-GFP retroviral vector. Retrovirus were produced by transfecting Phoenix cells with 10 µg pMLP plasmid (MLP or shPHF19S) and 6.6 µg pCMV-VSV-G using the calcium phosphate method. For the infection, medium containing the viral particles was used to infect target cells. Three rounds of infections (2 hr each) were performed. Infected cells were selected using puromycin (2 μg/ml).
 
-## Rescue experiments
+### Rescue experiments
 
 DU145 cells were stably transduced with pMSCV-neo-FLAG-PHF19L or FLAG-empty by spinoculation as previously described (see Retrovirus production and infection). After neomycin selection, cells were infected with pLKO-shRNAs (shPHF19L#B or shCTR) and infected cells were selected with puromycin (see Lentivirus production and infection). shPHF19L#B targets the 3’ UTR of PHF19L and therefore only affects the expression of endogenous PHF19L.
 
-## FLAG affinity purification and mass spectrometry
+### FLAG affinity purification and mass spectrometry
 
 PC3 cells stably expressing FLAG-tagged constructs (PHF19L, PHF19S, or empty vector), were incubated in lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 0.5% Triton X-100, plus protease inhibitors) for 30 min on a rotating wheel at 4°C, followed by sonication for 3 cycles (10’ ON/30’ OFF) in a Bioruptor (Diagenode). The lysates were then clarified by centrifugation (15,000 × g, 30 min, 4°C). Cell lysates (5 mg) were incubated with 100 μl FLAG M2 affinity gel (SIGMA) 3 hr at 4°C. The beads were then washed three times with lysis buffer and twice with TBS. Two rounds of elution were performed with a buffer containing 6 M urea and 200 mM NaHCO3. Samples were eluted using a Thermoshaker at 1000 rpm, 30 min each, at room temperature. Eluted complexes were analysed by mass spectrometry (MS) at the UPF/CRG Proteomics Unit. About 10% of the eluates were used to validate the FLAG immunoprecipitation by Western blot. Proteins were considered to be interactors only when two or more peptides were assigned to the protein in two independent replicates, and none of its peptides were found in FLAG-empty.
 
-## Preparation of protein extracts and western blot
+### Preparation of protein extracts and western blot
 
 Cell extracts for Western blot analysis were prepared in lysis buffer (25 mM Tris–HCl pH7.6, 1% SDS, 1 mM EGTA, 1 mM EDTA), incubated 10 min at 95°C, sonicated for 3 cycles (30’ ON/30’ OFF) in a Bioruptor (Diagenode) and centrifuged for 30 min at 13000 rpm at 4°C. Protein supernatant was quantified by Bradford assay, diluted in Laemmli buffer, and analyzed by SDS–PAGE. Western blot was performed as was previously described (Santanach et al., 2017).
 
-## Co-immunoprecipitation (co-IP)
+### Co-immunoprecipitation (co-IP)
 
 Cells were lysed in IP buffer (50 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 5 mM MgCl2, 0.5% Triton X-100, plus with protease and phosphatase inhibitors) 30 min at 4°C, and sonicated (3 cycles, 10’ ON/30’ OFF) in a Bioruptor. The lysates were clarified by centrifugation (15,000 × g, 30 min, at 4°C) and soluble material was quantified by Bradford. Per IP, 60 µl Protein A or G Sepharose 4FastFlow Beads (GE Healthcare) pre-blocked with BSA (0.5 mg/ml) were conjugated to the specific antibodies (5 µg) for 3 hr in a rotating wheel at 4°C. Lysates (2 mg) were incubated overnight with the antibodies conjugated to the beads. The beads were then washed four times with IP buffer and eluted with Laemmli buffer. Eluates were separated over SDS–PAGE gels for Western Blot analysis.
 
-## Cell fractionation
+### Cell fractionation
 
 Cell fractionation was performed following Mendez and Stillman’s protocol (Méndez and Stillman, 2000) with few modifications. Briefly, 25 × 106 cells were resuspended in 500 µl Buffer A (10 mM HEPES pH 7.9, 10 mM KCl, 1.5 mM MgCl2, 0.34 M sucrose, 10% glycerol, 1 mM DTT, 0.1% Triton X-100, plus protease/phosphatase inhibitors) and incubated 5 min. on ice (total fraction). After a low-speed centrifugation (5 min, 1,300 × g, 4°C), the supernatant was recovered and further clarified by a high-speed centrifugation (15 min, 15,000 × g, 4°C) to remove cell debris and insoluble aggregates (cytoplasmic fraction). Nuclear pellets were washed in Buffer A and resuspend in 50 µl of Buffer A (nuclear fraction). Nuclei were lysed by adding 500 µl of Buffer B (3 mM EDTA, 0.2 mM EGTA, 1 mM DTT, protease/phosphatase inhibitors), and incubated 30 min on ice. Chromatin was collected by centrifugation (5 min, 1,700 × g, 4°C), washed once in Buffer B, resuspended in 500 µl Buffer B.SDS (25 mM TrisCl pH 7.5; 1% SDS; 1 mM EDTA) and sonicated 4 cycles (15’ ON/45’ OFF) in a Bioruptor (Diagenode). Supernatant was recovered and further clarified by high-speed centrifugation (15 min, 15,000 × g, 4°C) (nucleoplasmic fraction). Aliquots of each fraction (10% of the volume) were collected, mixed with an equal volume of Buffer B.SDS 2 × and boiled 10 min. Proteins were quantified in the total fraction. Proportional volumes of each fraction were loaded for Western blot.
 
-## Gene expression analysis
+### Gene expression analysis
 
 RNA was extracted using RNeasy mini kit (Qiagen) following the manufacturer’s instructions. cDNA was synthesized by reverse transcription from 1 µg of RNA using qScript cDNA synthesis kit (Quanta Biosciences). Real-time PCR reactions were performed using SYBR Green I PCR Master Mix (Roche) and the Roche LightCycler 480. Expression values were normalized to the housekeeping gene RPLP0. All primers used are listed in Supplementary file 3. For RNA-seq, RNA samples (triplicates) were quantified, and the quality evaluated using Bioanalyser. Libraries were prepared at the UPF/CRG Genomics Unit, using 1 ug total RNA and sequenced using the Illumina HiSeq2000 sequencer.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Four 15 cm plates for each cell line were prepared at 70–80% confluency. Cells were crosslinked in 1% formaldehyde in DMEM for 10 min at RT. To stop the fixation, glycine was added to a final concentration of 0.125 M and incubated for 5 min at RT. Cell were then washed twice with ice cold PBS, harvested by gently scrapping on ice, centrifuged at 3,000 × g, 5 min, and cell pellets were frozen at −80°C until use. Chromatin preparation and ChIP experiments were performed with the ChIP-IT High Sensitivity Kit from Active Motif (#53040) according to the manufacturer’s instructions. ChIPs were performed using 5 µg/ChIP of the following antibodies: PHF19 (Cell Signaling #77271), EZH2 (Cell Signaling #5246), SUZ12 Abcam #ab12073), H3K27me3 (Millipore #07–449), MTF2 (Proteintech 16208–1-AP), JARID2 (Novus #NB100-2214), and control IgG (Abcam #ab172730). ChIP experiments of EZH2, SUZ12, H3K27me3 and MTF2 in control and PHF19L knockdown condition were performed with spike-in control. For this, an equal amount of Drosophila melanogaster S2 cell chromatin was added to each ChIP reaction (2.5% of the DU145 cell chromatin for H3K27me3 ChIPs, and 0.1% for the rest of the ChIPs), together with 1 μg of an antibody against a Drosophila specific histone variant, H2Av (Active Motif, catalog no. 61686).
 
@@ -158,9 +475,9 @@ For ChIP-seq experiments, library preparation was performed at the UPF/CRG Genom
 
 Antibodies, primers and shRNAs used in this study are listed in Supplementary file 3.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
-## ChIP-seq analysis
+#### ChIP-seq analysis
 
 ChIP-seq samples containing spike-in were mapped against a synthetic genome constituted by the human and the fruit fly chromosomes (hg19 + dm3) and those without spike-in were mapped against the hg19 human genome assembly, using Bowtie with the option –m 1 to discard those reads that could not be uniquely mapped to just one region (Langmead et al., 2009). A second replicate of each sample was sequenced to evaluate the statistical significance of the results. MACS was run individually on each replicate with the default parameters but with the shift-size adjusted to 100 bp to perform the peak calling against the corresponding control sample (Zhang et al., 2008). DiffBind was initially run over the peaks reported by MACS for each pair of replicates of the same experiment to generate a consensus set of peaks (Ross-Innes et al., 2012). Next, DiffBind was run again over each pair of replicates of the same experiment - samples and inputs - to find the peaks from the consensus set that were significantly enriched in both replicates in comparison to the corresponding controls (categories = DBA_CONDITION, block = DBA_REPLICATE and method = DBA_DESEQ2_BLOCK). In all cases, DiffBind peaks with P value < 0.05 and FDR < 0.2 were selected for further analysis. The genome distribution of each set of peaks was calculated by counting the number of peaks fitted on each class of region according to RefSeq annotations. Promoter is the region between 2.5 Kbp upstream and 2.5 Kbp downstream of the transcription start site (TSS). Genic regions correspond to the rest of the gene (the part that is not classified as promoter) and the rest of the genome is considered to be intergenic. Peaks that overlapped with more than one genomic feature were proportionally counted the same number of times. Each set of target genes was retrieved by matching the ChIP-seq peaks in the region 2.5 Kbp upstream of the TSS until the end of the transcripts as annotated in RefSeq. The significance of the overlap between two gene sets was computed using the GeneOverlap R package (Fisher’s exact test). Reports of functional enrichments of GO and other genomic libraries were generated using the EnrichR tool (Kuleshov et al., 2016). The UCSC genome browser was used to generate the screenshots of each profile.
 
@@ -168,10 +485,10 @@ Aggregated meta-plots showing the average distribution of ChIP-seq reads of each
 
 Aggregated plots of ChIP-seq shCTR and shPHF19L#4 samples containing spike-in were generated by counting the number of reads mapped in human for each gene and then normalizing these values for the total number of reads mapped on the fruit fly spike-in genome and the number of targets of the gene list, as previously described Orlando et al. (2014). Boxplots showing the ChIP level distribution for each replicate of a particular ChIP-seq experiment in shCTR and shPHF19L#4 conditions on a set of genes were calculated by determining the maximum value on the region +/-5 Kbp around the TSS of every gene in both samples. The resulting values of the samples including spike-in were corrected by the number of fly reads mapped of the sequencing experiment. Each point on the scatterplots of ChIP-seq intensities between shCTR and shPHF19L#4 conditions of EZH2/SUZ12/H3K27me3 were calculated by determining the maximum value of the sample inside each peak at each condition. These values were normalized by the corresponding number of fly spike-in reads in the same experiment. DiffBind was run for each pair of shCTR and shPHF19L#4 ChIP-seq replicates of EZH2/SUZ12/H3K27me3/MTF2 to identify the set of peaks that were significantly enriched in one of the conditions against the other (P value < 0.05). The heatmaps displaying the density of ChIPseq reads around the summit of each ChIP-seq peak were generated by counting the number of reads in this region for each individual peak and normalizing this value with the total number of mapped reads of the sample or the spike-in control, if available. Peaks on each ChIP heatmap were ranked by the logarithm of the average number of reads in the same genomic region.
 
-## RNAseq analysis
+#### RNAseq analysis
 
 RNA-seq samples in triplicates were mapped against the hg19 human genome assembly using TopHat (Trapnell et al., 2009) with the option –g 1 to discard those reads that could not be uniquely mapped in just one region. Cufflinks and Cuffdiff (Trapnell et al., 2012) were run to quantify the expression in RPKMs of each annotated transcript in RefSeq and to identify the list of differentially expressed genes for each case (P value ≤ 0.05; FC ≥ 1.4). Expression values shown in the boxplots correspond to the average RPKMs across the 3 replicates in each condition.
 
-## Accession numbers
+### Accession numbers
 
 Raw data and processed information of the ChIPseq and RNA-seq experiments generated in this article were deposited in the National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO) repository under the accession number GSE135623.

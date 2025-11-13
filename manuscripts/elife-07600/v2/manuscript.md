@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.07600.001 Accelerating discoveries of non-coding RNA (ncRNA) in myriad biological processes pose major challenges to structural and functional analysis. Despite progress in secondary structure modeling, high-throughput methods have generally failed to determine ncRNA tertiary structures, even at the 1-nm resolution that enables visualization of how helices and functional motifs are positioned in three dimensions. We report that integrating a new method called MOHCA-seq ( M ultiplexed •OH C leavage A nalysis with paired-end seq uencing) with mutate-and-map secondary structure inference guides Rosetta 3D modeling to consistent 1-nm accuracy for intricately folded ncRNAs with lengths up to 188 nucleotides, including a blind RNA-puzzle challenge, the lariat-capping ribozyme. This multidimensional chemical mapping (MCM) pipeline resolves unexpected tertiary proximities for cyclic-di-GMP, glycine, and adenosylcobalamin riboswitch aptamers without their ligands and a loose structure for the recently discovered human HoxA9D internal ribosome entry site regulon. MCM offers a sequencing-based route to uncovering ncRNA 3D structure, applicable to functionally important but potentially heterogeneous states. DOI: http://dx.doi.org/10.7554/eLife.07600.001
+Accelerating discoveries of non-coding RNA (ncRNA) in myriad biological processes pose major challenges to structural and functional analysis. Despite progress in secondary structure modeling, high-throughput methods have generally failed to determine ncRNA tertiary structures, even at the 1-nm resolution that enables visualization of how helices and functional motifs are positioned in three dimensions. We report that integrating a new method called MOHCA-seq (Multiplexed •OH Cleavage Analysis with paired-end sequencing) with mutate-and-map secondary structure inference guides Rosetta 3D modeling to consistent 1-nm accuracy for intricately folded ncRNAs with lengths up to 188 nucleotides, including a blind RNA-puzzle challenge, the lariat-capping ribozyme. This multidimensional chemical mapping (MCM) pipeline resolves unexpected tertiary proximities for cyclic-di-GMP, glycine, and adenosylcobalamin riboswitch aptamers without their ligands and a loose structure for the recently discovered human HoxA9D internal ribosome entry site regulon. MCM offers a sequencing-based route to uncovering ncRNA 3D structure, applicable to functionally important but potentially heterogeneous states.
 
 ## Introduction
 
@@ -35,39 +35,39 @@ We hypothesized that the recent availability of tabletop deep sequencing would e
 
 ## Results
 
-## Deep proximity maps of ncRNA 3D structure from single experiments
+### Deep proximity maps of ncRNA 3D structure from single experiments
 
-To complement the prior M
+To complement the prior M2 method for secondary structure inference (Figure 1A) with tertiary proximity maps, we developed and tested the MOHCA-seq workflow, shown in Figure 1B. The workflow was designed to read out proximal nucleotide pairs by introducing radical sources at random locations into the RNA, creating radicals that initiate strand breaks at positions close in three dimensions to each source, and mapping the sequence positions of each strand break and its parent source. We randomly incorporated 2′-NH2-2′-dATP during transcription so that each RNA contained on average one or fewer modifications and then coupled these sites to isothiocyanobenzyl-Fe(III)•EDTA. We chose these reagents because they are commercially available and therefore can be readily acquired by other laboratories. These RNAs were purified and then folded in buffer containing 50 mM Na-HEPES pH 8.0, 10 mM MgCl2, and any ligands appropriate for the system (see below and ‘Materials and methods’). After folding, RNAs were fragmented by activating the Fenton reaction at the backbone-tethered Fe(III) atoms using ascorbate as a reducing agent (Das et al., 2008). In the prior MOHCA-gel approach, electrophoresis in one dimension separated RNAs at strand breaks, and then fragments were cleaved at the location of the radical source by iodine-catalyzed scission of phosphorothioate tags (incorporated with the 2′-NH2 modifications), before electrophoresis in the second, perpendicular direction (Das et al., 2008). The resulting patterns gave information on pairs of proximal nucleotides based on their position in the 2D gel, but the method's low signal-to-noise necessitated tedious experiments with radical sources separately incorporated at A, C, G, and U residues, each carried out in triplicate, each with at least two different gel electrophoresis times, to achieve a proximity map.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic of mutate-and-map (M2) workflow, showing transcription of comprehensive point mutant library and chemical mapping of library with reverse transcription readout (Kladwang et al., 2011a). (B) Schematic of Multiplexed •OH (hydroxyl radical) Cleavage Analysis (MOHCA)-seq workflow, showing random incorporation of radical sources, fragmentation, adapter ligations, and analysis by sequencing. (C) M2 data set for P4–P6 domain of Tetrahymena group I ribozyme. (D) MOHCA-seq data set (proximity map) for P4–P6. In (C) and (D), rounded rectangles indicate helix elements with colors matching helices in (E–F), purple circles indicate hits corresponding to < 30 Å pairwise distance in the crystal structure, and pink circles indicate hits corresponding to > 30 Å pairwise distance in the crystal structure. In (D), magenta arrows indicate MOHCA-seq hits due to diffusion across the major (top arrow) or minor (bottom arrow) grooves from radical sources located in P5b. (E–F) Representation of MOHCA-seq tertiary proximities on M2-guided secondary structure (E) and on final single Rosetta model (F). Purple lines indicate MOHCA-seq hits corresponding to < 30 Å pairwise distance in the crystal structure. Figure 1—figure supplement 1 shows stages of MOHCA-seq data analysis in the MAPseeker software package (accessible through the RNA Mapping Database server at http://rmdb.stanford.edu/tools/). Figure 1—figure supplement 2 shows the pseudo-energy potential used for pairwise MOHCA-seq constraints in Rosetta modeling and plots of MOHCA-seq signal vs pairwise distance.DOI: http://dx.doi.org/10.7554/eLife.07600.003
+**Figure 1.:** (A) Schematic of mutate-and-map (M2) workflow, showing transcription of comprehensive point mutant library and chemical mapping of library with reverse transcription readout (Kladwang et al., 2011a). (B) Schematic of Multiplexed •OH (hydroxyl radical) Cleavage Analysis (MOHCA)-seq workflow, showing random incorporation of radical sources, fragmentation, adapter ligations, and analysis by sequencing. (C) M2 data set for P4–P6 domain of Tetrahymena group I ribozyme. (D) MOHCA-seq data set (proximity map) for P4–P6. In (C) and (D), rounded rectangles indicate helix elements with colors matching helices in (E–F), purple circles indicate hits corresponding to < 30 Å pairwise distance in the crystal structure, and pink circles indicate hits corresponding to > 30 Å pairwise distance in the crystal structure. In (D), magenta arrows indicate MOHCA-seq hits due to diffusion across the major (top arrow) or minor (bottom arrow) grooves from radical sources located in P5b. (E–F) Representation of MOHCA-seq tertiary proximities on M2-guided secondary structure (E) and on final single Rosetta model (F). Purple lines indicate MOHCA-seq hits corresponding to < 30 Å pairwise distance in the crystal structure. Figure 1—figure supplement 1 shows stages of MOHCA-seq data analysis in the MAPseeker software package (accessible through the RNA Mapping Database server at http://rmdb.stanford.edu/tools/). Figure 1—figure supplement 2 shows the pseudo-energy potential used for pairwise MOHCA-seq constraints in Rosetta modeling and plots of MOHCA-seq signal vs pairwise distance.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Raw counts for a single P4–P6 MOHCA-seq data set. Following paired-end sequencing, the MAPseeker software is used to align the reads to the sequence of the RNA that was probed. (B) Closure-based •OH COrrelation Analysis (COHCOA) after 40 iterations on P4–P6 data set. (C) Final analyzed P4–P6 proximity map. A filter is applied to remove points with signal-to-noise ratio < 1, a 2D smoothing algorithm aids visualization of the strongest features, and the data are scaled using the mean of the data. A full description of the analysis is given in the ‘Materials and methods’.DOI: http://dx.doi.org/10.7554/eLife.07600.004
+**Figure 1—figure supplement 1.:** (A) Raw counts for a single P4–P6 MOHCA-seq data set. Following paired-end sequencing, the MAPseeker software is used to align the reads to the sequence of the RNA that was probed. (B) Closure-based •OH COrrelation Analysis (COHCOA) after 40 iterations on P4–P6 data set. (C) Final analyzed P4–P6 proximity map. A filter is applied to remove points with signal-to-noise ratio < 1, a 2D smoothing algorithm aids visualization of the strongest features, and the data are scaled using the mean of the data. A full description of the analysis is given in the ‘Materials and methods’.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Pseudo-energy potentials for strong (blue) and weak (red) MOHCA-seq constraints. The potential was generated using the smoothstep function (see ‘Materials and methods’). (B) MOHCA-seq signal vs pairwise distance plot for crystal structures of RNAs listed in Table 1. (C) MOHCA-seq signal vs pairwise distance plot for MCM models of RNAs listed in Table 1 and HoxA9 IRES domain. (D) MOHCA-seq signal vs pairwise distance plot for ligand-free MCM models of c-di-GMP, glycine, and AdoCbl riboswitch aptamers shown in Figures 4C, 5C, 6B. Pairwise distances are calculated between 2′-OH of first residue (‘radical source location’) and C4′ of second residue (‘cleavage location’). MOHCA-seq signal is from final COHCOA data sets and ignores pairs of residues separated by fewer than 7 nucleotides due to ambiguities in aligning short reads to the RNA sequence.DOI: http://dx.doi.org/10.7554/eLife.07600.005
+**Figure 1—figure supplement 2.:** (A) Pseudo-energy potentials for strong (blue) and weak (red) MOHCA-seq constraints. The potential was generated using the smoothstep function (see ‘Materials and methods’). (B) MOHCA-seq signal vs pairwise distance plot for crystal structures of RNAs listed in Table 1. (C) MOHCA-seq signal vs pairwise distance plot for MCM models of RNAs listed in Table 1 and HoxA9 IRES domain. (D) MOHCA-seq signal vs pairwise distance plot for ligand-free MCM models of c-di-GMP, glycine, and AdoCbl riboswitch aptamers shown in Figures 4C, 5C, 6B. Pairwise distances are calculated between 2′-OH of first residue (‘radical source location’) and C4′ of second residue (‘cleavage location’). MOHCA-seq signal is from final COHCOA data sets and ignores pairs of residues separated by fewer than 7 nucleotides due to ambiguities in aligning short reads to the RNA sequence.
 
-MOHCA-seq simplifies and accelerates the readout using techniques developed for RNA-seq (see, e.g., ref. [
+MOHCA-seq simplifies and accelerates the readout using techniques developed for RNA-seq (see, e.g., ref. [Ingolia et al., 2012]). To read out strand cleavage sites, the new workflow includes an end-repair step using T4 polynucleotide kinase under conditions that promote its 3′-phosphatase activity (Cameron and Uhlenbeck, 1977). This reaction permits ligation of a pre-adenylated universal adapter sequence to the 3′-ends of the hydroxyl radical-cleaved RNA fragments, allowing reverse transcription with primers harboring an Illumina adapter and experiment-specific barcodes (Ingolia et al., 2012). We expected reverse transcription to then stop at the nucleotide tethered to the bulky radical source at its C2′ position, providing a readout of the source position that is more convenient than the MOHCA-gel strand-scission method (Figure 2A, left). However, we were surprised to find additional stop sites beyond these source attachment positions (Figure 2A, right), suggesting that reverse transcription could also terminate at sites of additional oxidative damage events, including not only radical-induced strand scission but also other products of ribose or nucleobase oxidation (e.g., 8-oxo-purines and 5-hydroxy-pyrimidines) (Yanagawa et al., 1990, 1992; Rhee et al., 1995; Pogozelski and Tullius, 1998; Barciszewski et al., 1999; Gong et al., 2006), which are indistinguishable at the cDNA level from stops at tethered radical sources. This high rate of stops would have been difficult to quantify in prior gel and capillary electrophoresis (CE) measurements (Mitra et al., 2008; Kladwang et al., 2014); the rate and proximity of these stops to the radical source were confirmed through both CE and next-generation sequencing tests on a model hairpin RNA with a single radical source attachment position (Figure 2B–D). The rate of reverse transcription-terminating oxidative damage events exceeds that of strand scission alone by many fold (Figure 2E). Since these sites of reverse transcription termination marked locations that were also nearby in three dimensions to the radical source, the 5′ and 3′ ends of the resulting cDNAs would still be expected to report pairs of sites that were proximal in the RNA structure, albeit at longer average distances than source-to-cleavage pairs (illustrated in Figure 2A). Thus, MOHCA-seq enables detection of correlated events previously invisible to MOHCA-gel, and we hypothesized that this significantly larger number of pairwise proximities would permit rapid ncRNA modeling with comparable accuracy to the prior method (Figure 2A,F–G).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic illustrating RNA fragments detectable by MOHCA-seq. At left, reverse transcription from a strand scission position (orange bolt) terminates at the radical source (in green); these fragments are also detectable by MOHCA-gel. At right, reverse transcription from strand scission positions can also terminate at additional oxidative damage events (orange circles) caused by the same radical source; these fragments are only detectable by MOHCA-seq. (B) Sequence and secondary structure of a proof-of-concept RNA with one radical source attachment site (U13, in green). Cyan rounded rectangles indicate expected MOHCA-seq hits due to RT stops at the radical source after cleavage at the circled residues. (C) MOHCA-seq proximity map showing expected hits (cyan rounded rectangles), as well as additional reverse transcription stops occurring 3′ of the radical source position but 5′ of the cleaved and ligated position, due to oxidative damage events 3′ of the radical source that are spatially correlated with the radical source (magenta rounded rectangles). At right, strand scission rates detected by paired-end sequencing (see (D)) are shown on a scale from white (low) to black (high) on a visualization-only model of the proof-of-concept RNA. Pairwise hits detectable by MOHCA-gel and MOHCA-seq (as in (A), left) are shown as cyan lines; hits detectable by MOHCA-seq only (as in (A), right) are shown as magenta lines. (D) Quantified strand scission and reverse transcription-terminating modification rates (note difference in scale) in the proof-of-concept RNA from capillary electrophoresis (CE) or paired-end sequencing data (Seq). Blue and orange bars are data for a MOHCA-seq sample with a tethered radical source, and gray bars are data for an identically treated control sample without a radical source. A ‘*’ indicates a data point that was not included in calculation of the total rate of strand scission due to high background or bleed-through of a fluorescent reference ladder peak. (E) Total modification rates for strand scission or reverse transcription stops calculated from CE or sequencing data. (F–G) MOHCA-seq (F) and MOHCA-gel (G) proximity maps of P4–P6 from single experiments. MOHCA-gel data were collected previously according to the published method, with 5′-32P-labeled P4–P6 RNA (Das et al., 2008). Rounded rectangles indicate helix elements, purple circles indicate hits corresponding to < 30 Å pairwise distance in the crystal structure, pink circles indicate hits corresponding to > 30 Å pairwise distance in the crystal structure, and black circles indicate MOHCA-gel ‘spectator hits’, which appear due to lack of rigorous background subtraction (Das et al., 2008; Kim et al., 2011). The pink and purple circles in (C) correspond to the hits annotated in Figure 1D, which shows the average of four data replicates; features that are not circled disappear after averaging. Note distortion of MOHCA-gel compared to MOHCA-seq due to nonlinearity of gel electrophoresis rates with RNA length. (H–K) MOHCA-seq proximity maps for P4–P6 with alternative 2′-NH2-modified nucleotides incorporated during transcription. Modified nucleotide triphosphate included in transcription reaction at molar ratio of 0.5 to unmodified NTP: (H) 2′-NH2-2′-dATP; (I) 2′-NH2-2′-dUTP; (J) 2′-NH2-2′-dGTP; (K) 2′-NH2-2′-dCTP. All fragmentation reactions were performed for 30 min. All four data sets were collected in one Illumina MiSeq run using a 50-cycle MiSeq Reagent Kit v2. Additional variations of the MOHCA-seq protocol are shown in Figure 2—figure supplement 1 (variation of radical source incorporation rate) and Figure 2—figure supplement 2 (variation of fragmentation reaction time).DOI: http://dx.doi.org/10.7554/eLife.07600.006
+**Figure 2.:** (A) Schematic illustrating RNA fragments detectable by MOHCA-seq. At left, reverse transcription from a strand scission position (orange bolt) terminates at the radical source (in green); these fragments are also detectable by MOHCA-gel. At right, reverse transcription from strand scission positions can also terminate at additional oxidative damage events (orange circles) caused by the same radical source; these fragments are only detectable by MOHCA-seq. (B) Sequence and secondary structure of a proof-of-concept RNA with one radical source attachment site (U13, in green). Cyan rounded rectangles indicate expected MOHCA-seq hits due to RT stops at the radical source after cleavage at the circled residues. (C) MOHCA-seq proximity map showing expected hits (cyan rounded rectangles), as well as additional reverse transcription stops occurring 3′ of the radical source position but 5′ of the cleaved and ligated position, due to oxidative damage events 3′ of the radical source that are spatially correlated with the radical source (magenta rounded rectangles). At right, strand scission rates detected by paired-end sequencing (see (D)) are shown on a scale from white (low) to black (high) on a visualization-only model of the proof-of-concept RNA. Pairwise hits detectable by MOHCA-gel and MOHCA-seq (as in (A), left) are shown as cyan lines; hits detectable by MOHCA-seq only (as in (A), right) are shown as magenta lines. (D) Quantified strand scission and reverse transcription-terminating modification rates (note difference in scale) in the proof-of-concept RNA from capillary electrophoresis (CE) or paired-end sequencing data (Seq). Blue and orange bars are data for a MOHCA-seq sample with a tethered radical source, and gray bars are data for an identically treated control sample without a radical source. A ‘*’ indicates a data point that was not included in calculation of the total rate of strand scission due to high background or bleed-through of a fluorescent reference ladder peak. (E) Total modification rates for strand scission or reverse transcription stops calculated from CE or sequencing data. (F–G) MOHCA-seq (F) and MOHCA-gel (G) proximity maps of P4–P6 from single experiments. MOHCA-gel data were collected previously according to the published method, with 5′-32P-labeled P4–P6 RNA (Das et al., 2008). Rounded rectangles indicate helix elements, purple circles indicate hits corresponding to < 30 Å pairwise distance in the crystal structure, pink circles indicate hits corresponding to > 30 Å pairwise distance in the crystal structure, and black circles indicate MOHCA-gel ‘spectator hits’, which appear due to lack of rigorous background subtraction (Das et al., 2008; Kim et al., 2011). The pink and purple circles in (C) correspond to the hits annotated in Figure 1D, which shows the average of four data replicates; features that are not circled disappear after averaging. Note distortion of MOHCA-gel compared to MOHCA-seq due to nonlinearity of gel electrophoresis rates with RNA length. (H–K) MOHCA-seq proximity maps for P4–P6 with alternative 2′-NH2-modified nucleotides incorporated during transcription. Modified nucleotide triphosphate included in transcription reaction at molar ratio of 0.5 to unmodified NTP: (H) 2′-NH2-2′-dATP; (I) 2′-NH2-2′-dUTP; (J) 2′-NH2-2′-dGTP; (K) 2′-NH2-2′-dCTP. All fragmentation reactions were performed for 30 min. All four data sets were collected in one Illumina MiSeq run using a 50-cycle MiSeq Reagent Kit v2. Additional variations of the MOHCA-seq protocol are shown in Figure 2—figure supplement 1 (variation of radical source incorporation rate) and Figure 2—figure supplement 2 (variation of fragmentation reaction time).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** MOHCA-seq proximity maps for P4–P6. Ratio of concentrations of 2′-NH2-2′-dATP to ATP in transcription reaction: (A) 0; (B) 0.2; (C) 0.5 (standard); (D) 1.25. All fragmentation reactions were performed for 10 min. Note that ‘hits’ in (A) were weak but are accentuated on the proximity map by scaling (see ‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.07600.007
+**Figure 2—figure supplement 1.:** MOHCA-seq proximity maps for P4–P6. Ratio of concentrations of 2′-NH2-2′-dATP to ATP in transcription reaction: (A) 0; (B) 0.2; (C) 0.5 (standard); (D) 1.25. All fragmentation reactions were performed for 10 min. Note that ‘hits’ in (A) were weak but are accentuated on the proximity map by scaling (see ‘Materials and methods’).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** MOHCA-seq proximity maps for P4–P6. Fragmentation reaction time: (A) 0 min (no ascorbate added); (B) 5 min; (C) 12.5 min; (D) 30 min. All fragmentations reactions used a 2′-NH2-2′-dATP:ATP ratio of 0.5. The P4–P6 construct used for this experiment included flanking hairpins 5′ and 3′ reference hairpins used for standardizing chemical mapping data (Kladwang et al., 2014) (sequence listed in Supplementary file 1). All four data sets were collected in one Illumina MiSeq run using a 50-cycle MiSeq Reagent Kit v2. Note that ‘hits’ in (A) were weak but are accentuated on the proximity map by scaling (see ‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.07600.008
+**Figure 2—figure supplement 2.:** MOHCA-seq proximity maps for P4–P6. Fragmentation reaction time: (A) 0 min (no ascorbate added); (B) 5 min; (C) 12.5 min; (D) 30 min. All fragmentations reactions used a 2′-NH2-2′-dATP:ATP ratio of 0.5. The P4–P6 construct used for this experiment included flanking hairpins 5′ and 3′ reference hairpins used for standardizing chemical mapping data (Kladwang et al., 2014) (sequence listed in Supplementary file 1). All four data sets were collected in one Illumina MiSeq run using a 50-cycle MiSeq Reagent Kit v2. Note that ‘hits’ in (A) were weak but are accentuated on the proximity map by scaling (see ‘Materials and methods’).
 
 After reverse transcription, the MOHCA-seq workflow is completed by ligating a second Illumina adapter to the cDNA library and then determining the 5′ and 3′ ends of each cDNA by paired-end sequencing on a standard Illumina platform (Mortimer et al., 2012; Seetin et al., 2014). MAPseeker software analysis quantifies the data and converts the raw counts into a pairwise proximity map (‘Materials and methods’ and Figure 1—figure supplement 1). Analogous to nuclear Overhauser spectroscopy for NMR structure determination, constraints selected from the analyzed data are then used to guide 3D computational modeling of the ncRNA using the Rosetta software (Cheng et al., 2015). Unlike MOHCA-gel, MOHCA-seq does not require specially synthesized nucleotides or 2D gel electrophoresis; the high-throughput sequencing readout improves the signal-to-noise as well as the length windows visible per experiment; and the detection of previously invisible oxidation events enhances the mapping coverage of a single experiment. The protocol's throughput is also enhanced by its highly parallel nature, which we leveraged to co-load libraries for multiple RNAs on single sequencing runs (‘Materials and methods’).
 
-## MOHCA-seq tertiary proximity map complements M2 secondary structure for Rosetta modeling of P4–P6
+### MOHCA-seq tertiary proximity map complements M2 secondary structure for Rosetta modeling of P4–P6
 
 We first tested the ability of MOHCA-seq to complete our M2/Rosetta pipeline by applying it to a well-studied model system with known crystallographic structure, the 158-nucleotide P4–P6 domain of the Tetrahymena ribozyme (Cate et al., 1996) (sequence listed in Supplementary file 1). In comparison to prior MOHCA-gel data in which a single experiment yielded a few proximity pairs, raw sequencing counts from a single MOHCA-seq experiment exhibited dozens of pairwise proximity ‘hits’ throughout the ncRNA (Figure 2F–G). Additionally, the digital form of MOHCA-seq data enabled computational analysis to resolve further features. Our analysis, called closure-based •OH correlation analysis (COHCOA), is described fully in the ‘Materials and methods’. Briefly, COHCOA assumes a two-dimensional background in the raw aligned sequencing data, which arises from two one-dimensional background profiles that are uncorrelated with tethered radical sources: a strand scission profile (leading to horizontal striations) and a reverse transcription-terminating profile (leading to vertical striations) (Figure 1—figure supplement 1A). Through iterative fitting, COHCOA calculates this two-dimensional background and subtracts it from the raw data and additionally corrects for reverse transcription attenuation. The procedure isolates the MOHCA-seq signal, which arises from oxidative damage that is spatially correlated with tethered radical sources (Figure 1—figure supplement 1B). To prevent false positive identification of MOHCA-seq hits due to noise in areas of the proximity map with fewer reads and therefore less signal, we apply a two-dimensional smoothing algorithm to produce the final proximity map for visualization (Figure 1—figure supplement 1C).
 
@@ -81,43 +81,392 @@ To apply the MOHCA-seq data in Rosetta, we generated a list of pairs of residues
 
 Finally, we selected a single representative model by clustering the lowest-energy 3% of the refined models using Rosetta. An all-heavy-atom RMSD threshold was chosen to give 1/6 of the clustered models in the most populated cluster, as in prior work (Das et al., 2008). As in protein structure modeling (Shortle et al., 1998), the final single model of this MCM pipeline is the model with the largest number of neighboring models within the RMSD threshold, called the ‘cluster center’, which is not necessarily the model with the lowest Rosetta energy score. The cluster center represents the best tertiary structure prediction of the MCM pipeline for automated Rosetta modeling guided by experimental data. The RMSD threshold used for clustering represents the intra-cluster RMSD between models in the cluster and is used to calculate an in situ RMSD estimate, representing the precision of modeling (see ‘Materials and methods’). The accuracy of the MCM model was calculated as the all-heavy-atom RMSD between the cluster center and the crystal structure, as in our previous study (Das et al., 2008).
 
-For the P4–P6 benchmark case, we found that the cluster center of the MCM pipeline had an accuracy of 8.6 Å RMSD to the crystal structure (
+For the P4–P6 benchmark case, we found that the cluster center of the MCM pipeline had an accuracy of 8.6 Å RMSD to the crystal structure (Figures 1F, 3A and Table 1), which was within the 16.5 Å precision of the modeling estimated from the clustering threshold (Table 2). This suggests that MCM is capable of defining the global 3D structure of the RNA, without crystallographic information, at near the resolution of a single-nucleotide register shift (6 Å) even when weak MOHCA-seq features not explained by the crystal structure are used to constrain modeling. Performing the same Rosetta modeling protocol without MOHCA-seq pairwise constraints led to a strikingly worse model with 38.3 Å accuracy to the crystal structure (Figure 3A and Table 1), demonstrating that MOHCA-seq constraints are required for accurate modeling. The 8.6 Å accuracy of the cluster center was better than the previous 13 Å accuracy of modeling guided by MOHCA-gel data, which were collected at substantially greater experimental expense and did not allow base-pair resolution inference of secondary structure, as is now provided by M2 analysis (Das et al., 2008).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig3-v2.jpg)
 
-**Figure 3.:** (A) P4–P6 domain: M2/Rosetta model (left), 38.3 Å root-mean-squared-deviation (RMSD); crystal structure (PDB ID 1GID, center left); M2/MOHCA-seq/Rosetta (MCM) model (center right), 8.6 Å RMSD. (B) V. cholerae cyclic-di-GMP riboswitch aptamer: M2/Rosetta model (left), 11.3 Å RMSD; crystal structure (PDB ID 3IRW, center left); MCM model (center right), 7.6 Å RMSD. (C) F. nucleatum double glycine riboswitch ligand-binding domain: M2/Rosetta model (left), 30.5 Å RMSD; crystal structure (PDB ID 3P49, center left); MCM model (center right), 7.9 Å RMSD. (D) S. thermophilum adenosylcobalamin (AdoCbl) riboswitch aptamer: M2/Rosetta submission rank 1 of 10 for RNA-puzzle 6 (left), 17.1 Å RMSD; crystal structure (PDB ID 4GXY, center left); MCM model (center right), 11.9 Å RMSD. (E) Class I ligase: M2/Rosetta model (left), 26.3 Å global RMSD, and 14.0 Å core RMSD; crystal structure (PDB ID 3HHN, center left); MCM model (center right), 14.5 Å global RMSD and 11.1 Å core RMSD. (F) D. iridis lariat-capping ribozyme: M2/Rosetta submission rank 1 of 2 for RNA-puzzle 5 (left), 17.0 Å P2.1/P4–P6 RMSD and 9.6 Å global RMSD; crystal structure (PDB ID 4P8Z, center left); MCM model (center right), 11.2 Å P2.1/P4–P6 RMSD and 8.2 Å global RMSD. In (A–F), MOHCA-seq proximity maps with annotated helix elements (rounded rectangles) and tertiary hits (purple and pink circles) as in Figure 1D are shown at right. Full-size proximity maps, including 5′- and 3′-flanking sequences outside the region of interest, are shown in Figure 3—figure supplement 3. M2 analyses of AdoCbl riboswitch aptamer, class I ligase, and lariat-capping ribozyme are shown in Figure 3—figure supplements 1, 2, 7. Figure 3—figure supplement 4 shows comparisons of models generated by different computational methods for RNA-puzzle 6. Figure 3—figure supplements 5, 6 show comparisons of additional modeling runs for class I ligase and AdoCbl riboswitch aptamer to crystal structures.DOI: http://dx.doi.org/10.7554/eLife.07600.009
+**Figure 3.:** (A) P4–P6 domain: M2/Rosetta model (left), 38.3 Å root-mean-squared-deviation (RMSD); crystal structure (PDB ID 1GID, center left); M2/MOHCA-seq/Rosetta (MCM) model (center right), 8.6 Å RMSD. (B) V. cholerae cyclic-di-GMP riboswitch aptamer: M2/Rosetta model (left), 11.3 Å RMSD; crystal structure (PDB ID 3IRW, center left); MCM model (center right), 7.6 Å RMSD. (C) F. nucleatum double glycine riboswitch ligand-binding domain: M2/Rosetta model (left), 30.5 Å RMSD; crystal structure (PDB ID 3P49, center left); MCM model (center right), 7.9 Å RMSD. (D) S. thermophilum adenosylcobalamin (AdoCbl) riboswitch aptamer: M2/Rosetta submission rank 1 of 10 for RNA-puzzle 6 (left), 17.1 Å RMSD; crystal structure (PDB ID 4GXY, center left); MCM model (center right), 11.9 Å RMSD. (E) Class I ligase: M2/Rosetta model (left), 26.3 Å global RMSD, and 14.0 Å core RMSD; crystal structure (PDB ID 3HHN, center left); MCM model (center right), 14.5 Å global RMSD and 11.1 Å core RMSD. (F) D. iridis lariat-capping ribozyme: M2/Rosetta submission rank 1 of 2 for RNA-puzzle 5 (left), 17.0 Å P2.1/P4–P6 RMSD and 9.6 Å global RMSD; crystal structure (PDB ID 4P8Z, center left); MCM model (center right), 11.2 Å P2.1/P4–P6 RMSD and 8.2 Å global RMSD. In (A–F), MOHCA-seq proximity maps with annotated helix elements (rounded rectangles) and tertiary hits (purple and pink circles) as in Figure 1D are shown at right. Full-size proximity maps, including 5′- and 3′-flanking sequences outside the region of interest, are shown in Figure 3—figure supplement 3. M2 analyses of AdoCbl riboswitch aptamer, class I ligase, and lariat-capping ribozyme are shown in Figure 3—figure supplements 1, 2, 7. Figure 3—figure supplement 4 shows comparisons of models generated by different computational methods for RNA-puzzle 6. Figure 3—figure supplements 5, 6 show comparisons of additional modeling runs for class I ligase and AdoCbl riboswitch aptamer to crystal structures.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** 2 analysis of the S. thermophilum adenosylcobalamin riboswitch aptamer, performed during the sixth RNA-puzzles structure prediction trial.(A) M2 data set for 1M7 modification across 168 single mutations along the AdoCbl riboswitch aptamer sequence in the presence of 60 µM AdoCbl ligand. Mutants showing poor data quality are marked by red bars. (B) Z-score contact map extracted from (A). (C) Secondary structure prediction and (D) bootstrap support matrix using M2 data. In (B) and (D), the crystallographic secondary structure is overlaid as cyan circles.DOI: http://dx.doi.org/10.7554/eLife.07600.010
+**Figure 3—figure supplement 1.:** (A) M2 data set for 1M7 modification across 168 single mutations along the AdoCbl riboswitch aptamer sequence in the presence of 60 µM AdoCbl ligand. Mutants showing poor data quality are marked by red bars. (B) Z-score contact map extracted from (A). (C) Secondary structure prediction and (D) bootstrap support matrix using M2 data. In (B) and (D), the crystallographic secondary structure is overlaid as cyan circles.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** 2 analysis of class I ligase.(A) M2 data set for 1M7 modification across 127 single mutations along the class I ligase sequence. (B) Z-score contact map extracted from (A). (C) Secondary structure prediction and (D) bootstrap support matrix using M2 data. In (B) and (D), the crystallographic secondary structure is overlaid as cyan and green circles, with an alternative P3 helix predicted by M2 data overlaid as red circles. When SHAPEknots (Hajdin et al., 2013) was used to predict the pseudoknots in the full sequence, only the P2 pseudoknot was recovered. However, SHAPEknots successfully predicted the P3 helix when the P1 helix was omitted.DOI: http://dx.doi.org/10.7554/eLife.07600.011
+**Figure 3—figure supplement 2.:** (A) M2 data set for 1M7 modification across 127 single mutations along the class I ligase sequence. (B) Z-score contact map extracted from (A). (C) Secondary structure prediction and (D) bootstrap support matrix using M2 data. In (B) and (D), the crystallographic secondary structure is overlaid as cyan and green circles, with an alternative P3 helix predicted by M2 data overlaid as red circles. When SHAPEknots (Hajdin et al., 2013) was used to predict the pseudoknots in the full sequence, only the P2 pseudoknot was recovered. However, SHAPEknots successfully predicted the P3 helix when the P1 helix was omitted.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** Full COHCOA-analyzed MOHCA-seq proximity maps of (A) P4–P6, (B) S. thermophilum adenosylcobalamin riboswitch aptamer in the presence (left) or absence (right) of 70 µM AdoCbl, (C) D. iridis lariat-capping ribozyme, (D) V. cholerae cyclic-di-GMP riboswitch aptamer in the presence (left) or absence (right) of 10 µM c-di-GMP, (E) F. nucleatum glycine riboswitch ligand-binding domain without leader sequence in the presence (left) or absence (right) of 10 mM glycine, (F) class I ligase, (G) HoxA9 5′-UTR 957–1132 IRES domain, and (H) F. nucleatum glycine riboswitch ligand-binding domain with leader sequence (Kladwang et al., 2012) in the presence (left) or absence (right) of 10 mM glycine. On all maps, the region of interest is enclosed by red lines. All RNAs except for P4–P6 include 5′ and 3′ reference hairpins used for normalizing chemical mapping data from other techniques (Kladwang et al., 2014) (sequences listed in Supplementary file 1).DOI: http://dx.doi.org/10.7554/eLife.07600.012
+**Figure 3—figure supplement 3.:** Full COHCOA-analyzed MOHCA-seq proximity maps of (A) P4–P6, (B) S. thermophilum adenosylcobalamin riboswitch aptamer in the presence (left) or absence (right) of 70 µM AdoCbl, (C) D. iridis lariat-capping ribozyme, (D) V. cholerae cyclic-di-GMP riboswitch aptamer in the presence (left) or absence (right) of 10 µM c-di-GMP, (E) F. nucleatum glycine riboswitch ligand-binding domain without leader sequence in the presence (left) or absence (right) of 10 mM glycine, (F) class I ligase, (G) HoxA9 5′-UTR 957–1132 IRES domain, and (H) F. nucleatum glycine riboswitch ligand-binding domain with leader sequence (Kladwang et al., 2012) in the presence (left) or absence (right) of 10 mM glycine. On all maps, the region of interest is enclosed by red lines. All RNAs except for P4–P6 include 5′ and 3′ reference hairpins used for normalizing chemical mapping data from other techniques (Kladwang et al., 2014) (sequences listed in Supplementary file 1).
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** (A) M2-derived secondary structure of S. thermophilus adenosylcobalamin riboswitch aptamer, generated for the RNA-puzzle 6 challenge (Miao et al., 2015). Bootstrap support values for each helix are shown as percentages. Crystallographic Watson–Crick base pairs missing in the secondary structure are connected by yellow lines, and non-crystallographic Watson–Crick base pairs predicted in the secondary structure are connected by blue lines. (B–G) Blind 3D models of the S. thermophilus adenosylcobalamin riboswitch aptamer generated for the RNA-puzzle 6 challenge. Models were generated using (B) M2/Rosetta, 12.1 Å all-heavy-atom RMSD to crystal; (C) M2/Rosetta, 17.1 Å RMSD; (D) Vfold, 22.1 Å RMSD; (E) MC-Fold and MC-Sym, 23.4 Å RMSD; (F) DMD, 24.0 Å RMSD; (G) M2/Rosetta, 32.8 Å RMSD. Modeling methods were previously described in detail (Miao et al., 2015). For each modeling method, the most accurate submitted model to the crystal structure is shown (B, D–F). The ranks predicted by the modelers of their own submissions (‘submission rank’) are given below each model. (H) Crystal structure of the S. thermophilus adenosylcobalamin riboswitch aptamer (PDB ID 4GXY).DOI: http://dx.doi.org/10.7554/eLife.07600.013
+**Figure 3—figure supplement 4.:** (A) M2-derived secondary structure of S. thermophilus adenosylcobalamin riboswitch aptamer, generated for the RNA-puzzle 6 challenge (Miao et al., 2015). Bootstrap support values for each helix are shown as percentages. Crystallographic Watson–Crick base pairs missing in the secondary structure are connected by yellow lines, and non-crystallographic Watson–Crick base pairs predicted in the secondary structure are connected by blue lines. (B–G) Blind 3D models of the S. thermophilus adenosylcobalamin riboswitch aptamer generated for the RNA-puzzle 6 challenge. Models were generated using (B) M2/Rosetta, 12.1 Å all-heavy-atom RMSD to crystal; (C) M2/Rosetta, 17.1 Å RMSD; (D) Vfold, 22.1 Å RMSD; (E) MC-Fold and MC-Sym, 23.4 Å RMSD; (F) DMD, 24.0 Å RMSD; (G) M2/Rosetta, 32.8 Å RMSD. Modeling methods were previously described in detail (Miao et al., 2015). For each modeling method, the most accurate submitted model to the crystal structure is shown (B, D–F). The ranks predicted by the modelers of their own submissions (‘submission rank’) are given below each model. (H) Crystal structure of the S. thermophilus adenosylcobalamin riboswitch aptamer (PDB ID 4GXY).
 
 ![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig3-figsupp5-v2.jpg)
 
-**Figure 3—figure supplement 5.:** (A) Crystal structure of the class I ligase. (B) Final MCM model from a cluster with knotted 3′-end (black arrow). (C) Final MCM model from a cluster without knotted 3′-end.DOI: http://dx.doi.org/10.7554/eLife.07600.014
+**Figure 3—figure supplement 5.:** (A) Crystal structure of the class I ligase. (B) Final MCM model from a cluster with knotted 3′-end (black arrow). (C) Final MCM model from a cluster without knotted 3′-end.
 
 ![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig3-figsupp6-v2.jpg)
 
-**Figure 3—figure supplement 6.:** (A) Crystal structure of S. thermophilum AdoCbl riboswitch aptamer (PDB ID 4GXY) and MCM models using MOHCA-seq data collected in the presence of (B) 70 µM AdoCbl ligand or (C) 0 µM AdoCbl ligand. MCM models were generated using three distinct sets of prebuilt RNA fragments prepared during RNA-puzzle modeling (labeled setups 1–3; see ‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.07600.015
+**Figure 3—figure supplement 6.:** (A) Crystal structure of S. thermophilum AdoCbl riboswitch aptamer (PDB ID 4GXY) and MCM models using MOHCA-seq data collected in the presence of (B) 70 µM AdoCbl ligand or (C) 0 µM AdoCbl ligand. MCM models were generated using three distinct sets of prebuilt RNA fragments prepared during RNA-puzzle modeling (labeled setups 1–3; see ‘Materials and methods’).
 
 ![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig3-figsupp7-v2.jpg)
 
-**Figure 3—figure supplement 7.:** 2 analysis of the GIR1 lariat-capping ribozyme, performed during the fifth RNA-puzzles structure prediction trial.(A) M2 data set for 1M7 modification across 188 single mutations along the GIR1 ribozyme sequence. Mutants showing poor data quality are marked by red bars. (B) Z-score contact map extracted from (A). (C) Secondary structure prediction and (D) bootstrap support matrix using M2 data. In (B) and (D), the crystallographic secondary structure is overlaid as cyan circles.DOI: http://dx.doi.org/10.7554/eLife.07600.016
+**Figure 3—figure supplement 7.:** (A) M2 data set for 1M7 modification across 188 single mutations along the GIR1 ribozyme sequence. Mutants showing poor data quality are marked by red bars. (B) Z-score contact map extracted from (A). (C) Secondary structure prediction and (D) bootstrap support matrix using M2 data. In (B) and (D), the crystallographic secondary structure is overlaid as cyan circles.
+
+**Table 1.**
+ Benchmark of MCM on RNAs with crystal structures
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">RNA</th>
+      <th rowspan="2">Length</th>
+      <th colspan="2">M2/Rosetta (no MOHCA, control)</th>
+      <th colspan="2">MCM</th>
+    </tr>
+    <tr>
+      <th>RMSD to crystal (Å) (accuracy)</th>
+      <th>p-value§</th>
+      <th>RMSD to crystal (Å) (accuracy)</th>
+      <th>p-value§</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tetrahymena ribozyme P4–P6 domain</td>
+      <td>158</td>
+      <td>38.3</td>
+      <td>&gt;0.9</td>
+      <td>8.6</td>
+      <td>&lt;1.0 × 10−16</td>
+    </tr>
+    <tr>
+      <td>V. cholerae cyclic-di-GMP riboswitch aptamer, ligand-bound*</td>
+      <td>89</td>
+      <td>11.3</td>
+      <td>2.6 × 10−3</td>
+      <td>7.6</td>
+      <td>6.3 × 10−7</td>
+    </tr>
+    <tr>
+      <td>F. nucleatum double glycine riboswitch ligand-binding domain, ligand-bound*</td>
+      <td>159</td>
+      <td>30.5</td>
+      <td>&gt;0.9</td>
+      <td>7.9</td>
+      <td>&lt;1.0 × 10−16</td>
+    </tr>
+    <tr>
+      <td>S. thermophilum adenosylcobalamin riboswitch aptamer, ligand-bound*</td>
+      <td>168</td>
+      <td>17.1†</td>
+      <td>5.3 × 10−7</td>
+      <td>11.9</td>
+      <td>4.0 × 10−15</td>
+    </tr>
+    <tr>
+      <td>Class I ligase</td>
+      <td>127</td>
+      <td>26.3</td>
+      <td>&gt;0.9</td>
+      <td>14.5</td>
+      <td>6.8 × 10−5</td>
+    </tr>
+    <tr>
+      <td>Class I ligase, core domain‡</td>
+      <td>87</td>
+      <td>14.0</td>
+      <td>0.13</td>
+      <td>11.1</td>
+      <td>3.1 × 10−3</td>
+    </tr>
+    <tr>
+      <td>D. iridis lariat-capping ribozyme</td>
+      <td>188</td>
+      <td>9.6†</td>
+      <td>&lt;1.0 × 10−16</td>
+      <td>8.2</td>
+      <td>&lt;1.0 × 10−16</td>
+    </tr>
+    <tr>
+      <td>D. iridis lariat-capping ribozyme, MCM refined regions‡</td>
+      <td>69</td>
+      <td>17.0†</td>
+      <td>n.a.§</td>
+      <td>11.2</td>
+      <td>n.a.§</td>
+    </tr>
+  </tbody>
+</table>
+
+_*MCM modeling was performed with MOHCA-seq constraints from data sets collected on the ligand-bound state; ligands were not included during Rosetta modeling.†M2/Rosetta statistics are reported for RNA-puzzle submission rank 1 models, which included subdomains built by homology modeling.‡Calculated over core domain residues or refined regions after alignment using MAMMOTH; (Ortiz et al., 2002) see ‘Materials and methods’.§p-value computed using analytical formula for secondary-structure-constrained 3D modeling in ref. (Hajdin et al., 2010); it is not applicable to peripheral domains. Values above 0.9 are not well-determined and are presented as > 0.9.MCM: multidimensional chemical mapping; RMSD: root-mean-squared-deviation._
+
+**Table 2.**
+ Precision and constraint statistics of MCM modeling, including conformationally heterogeneous states
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RNA</th>
+      <th>Length</th>
+      <th>Number of models</th>
+      <th>Size of largest cluster</th>
+      <th>RMSD to crystal, cluster center (Å) (accuracy)</th>
+      <th>In situ RMSD estimate (Å) (precision)</th>
+      <th>Total constraints</th>
+      <th>Percent strong constraints satisfied,* cluster center</th>
+      <th>Percent strong constraints satisfied, crystal</th>
+      <th>Percent weak constraints satisfied, cluster center</th>
+      <th>Percent weak constraints satisfied, crystal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tetrahymena ribozyme P4–P6 domain</td>
+      <td>158</td>
+      <td>61,115</td>
+      <td>48</td>
+      <td>8.6</td>
+      <td>16.5</td>
+      <td>35</td>
+      <td>65.4</td>
+      <td>69.2</td>
+      <td>55.6</td>
+      <td>44.4</td>
+    </tr>
+    <tr>
+      <td>V. cholerae cyclic-di-GMP riboswitch aptamer, bound</td>
+      <td>89</td>
+      <td>15,632</td>
+      <td>10</td>
+      <td>7.6</td>
+      <td>6.8</td>
+      <td>19</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <td>V. cholerae cyclic-di-GMP riboswitch aptamer, unbound†</td>
+      <td>89</td>
+      <td>26,421</td>
+      <td>5</td>
+      <td>(26.0)‡</td>
+      <td>9.8</td>
+      <td>14</td>
+      <td>100.0</td>
+      <td>83.3</td>
+      <td>75.0</td>
+      <td>37.5</td>
+    </tr>
+    <tr>
+      <td>F. nucleatum double glycine riboswitch ligand-binding domain, bound</td>
+      <td>159</td>
+      <td>16,506</td>
+      <td>14</td>
+      <td>7.9</td>
+      <td>10.0</td>
+      <td>31</td>
+      <td>95.8</td>
+      <td>100.0</td>
+      <td>57.1</td>
+      <td>42.9</td>
+    </tr>
+    <tr>
+      <td>F. nucleatum double glycine riboswitch ligand-binding domain, unbound†</td>
+      <td>159</td>
+      <td>15,771</td>
+      <td>12</td>
+      <td>(25.4)‡</td>
+      <td>26.7</td>
+      <td>12</td>
+      <td>N/A§</td>
+      <td>N/A§</td>
+      <td>58.3</td>
+      <td>83.3</td>
+    </tr>
+    <tr>
+      <td>F. nucleatum double glycine riboswitch ligand-binding domain with leader, bound</td>
+      <td>167</td>
+      <td>23,153</td>
+      <td>19</td>
+      <td>11.8</td>
+      <td>10.6</td>
+      <td>49</td>
+      <td>89.5</td>
+      <td>84.2</td>
+      <td>83.3</td>
+      <td>83.3</td>
+    </tr>
+    <tr>
+      <td>F. nucleatum double glycine riboswitch ligand-binding domain with leader, unbound†</td>
+      <td>167</td>
+      <td>18,096</td>
+      <td>15</td>
+      <td>(15.6)‡</td>
+      <td>14.7</td>
+      <td>34</td>
+      <td>77.8</td>
+      <td>33.3</td>
+      <td>64.0</td>
+      <td>68.0</td>
+    </tr>
+    <tr>
+      <td>S. thermophilum adenosylcobalamin riboswitch aptamer, bound#</td>
+      <td>168</td>
+      <td>14,219</td>
+      <td>12</td>
+      <td>11.9</td>
+      <td>13.9</td>
+      <td>38</td>
+      <td>84.0</td>
+      <td>76.0</td>
+      <td>84.6</td>
+      <td>69.2</td>
+    </tr>
+    <tr>
+      <td>S. thermophilum adenosylcobalamin riboswitch aptamer, unbound†,#</td>
+      <td>168</td>
+      <td>11,980</td>
+      <td>10</td>
+      <td>(17.3)‡</td>
+      <td>19.7</td>
+      <td>33</td>
+      <td>83.3</td>
+      <td>94.4</td>
+      <td>73.3</td>
+      <td>73.3</td>
+    </tr>
+    <tr>
+      <td>Class I ligase (unknotted)</td>
+      <td>127</td>
+      <td>17,881</td>
+      <td>7</td>
+      <td>14.5</td>
+      <td>11.6</td>
+      <td>24</td>
+      <td>86.7</td>
+      <td>53.3</td>
+      <td>22.2</td>
+      <td>77.8</td>
+    </tr>
+    <tr>
+      <td>Class I ligase (unknotted), core domain¶</td>
+      <td>87</td>
+      <td>17,881</td>
+      <td>7</td>
+      <td>11.1</td>
+      <td>12.0</td>
+      <td>18</td>
+      <td>91.7</td>
+      <td>58.3</td>
+      <td>33.3</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <td>Class I ligase (knotted)</td>
+      <td>127</td>
+      <td>17,881</td>
+      <td>14</td>
+      <td>16.1</td>
+      <td>11.6</td>
+      <td>24</td>
+      <td>86.7</td>
+      <td>53.3</td>
+      <td>55.6</td>
+      <td>77.8</td>
+    </tr>
+    <tr>
+      <td>D. iridis lariat capping ribozyme</td>
+      <td>188</td>
+      <td>19,741</td>
+      <td>16</td>
+      <td>8.2</td>
+      <td>5.7</td>
+      <td>32</td>
+      <td>90.0</td>
+      <td>70.0</td>
+      <td>54.5</td>
+      <td>54.5</td>
+    </tr>
+    <tr>
+      <td>D. iridis lariat capping ribozyme, RNA-puzzles submission model #1 (2012)</td>
+      <td>188</td>
+      <td>–</td>
+      <td>–</td>
+      <td>9.6</td>
+      <td>–</td>
+      <td>–</td>
+      <td>60.0</td>
+      <td>70.0</td>
+      <td>59.1</td>
+      <td>54.5</td>
+    </tr>
+    <tr>
+      <td>D. iridis lariat capping ribozyme, MCM refined regions¶</td>
+      <td>69</td>
+      <td>19,741</td>
+      <td>16</td>
+      <td>11.2</td>
+      <td>10.5</td>
+      <td>32</td>
+      <td>87.5</td>
+      <td>62.5</td>
+      <td>46.2</td>
+      <td>38.5</td>
+    </tr>
+    <tr>
+      <td>D. iridis lariat capping ribozyme, RNA-puzzles submission model #1 (2012), MCM refined regions#</td>
+      <td>69</td>
+      <td>–</td>
+      <td>–</td>
+      <td>17.0</td>
+      <td>–</td>
+      <td>–</td>
+      <td>50.0</td>
+      <td>62.5</td>
+      <td>46.2</td>
+      <td>38.5</td>
+    </tr>
+    <tr>
+      <td>HoxA9 5′-UTR 957–1132 domain, pseudoknot</td>
+      <td>176</td>
+      <td>15,580</td>
+      <td>12</td>
+      <td>–</td>
+      <td>19.5</td>
+      <td>20</td>
+      <td>41.7</td>
+      <td>–</td>
+      <td>50.0</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>HoxA9 5′-UTR 957–1132 domain, no pseudoknot</td>
+      <td>176</td>
+      <td>11,234</td>
+      <td>8</td>
+      <td>–</td>
+      <td>19.8</td>
+      <td>21</td>
+      <td>33.3</td>
+      <td>–</td>
+      <td>22.2</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Constraints were considered satisfied if the O2′ of the 5′-residue was less than 30 Å from the C4′ of the 3′-residue (Supplementary file 2).†For ligand-free states of the adenosylcobalamin riboswitch aptamer, cyclic-di-GMP riboswitch aptamer, and glycine riboswitch ligand-binding domain, RMSDs and percent constraints satisfied were calculated for gold-standard crystal structures solved in the presence of ligand.‡For states not expected to agree with crystal structures, RMSD accuracy is given in parentheses.§No strong constraints were selected for the unbound state of the glycine riboswitch ligand-binding domain without leader sequence.#Three separate modeling runs were performed for each ligand-binding state of the riboswitch aptamer, using distinct sets of prebuilt fragments prepared for RNA-puzzle 6; see ‘Materials and methods’. The number of models, size of largest cluster, cluster center RMSD (accuracy), and constraint satisfaction percentages are representative data from the modeling run with the most models generated. The intra-cluster RMSD used to estimate the in situ RMSD is calculated as the mean pairwise RMSD between the cluster centers of the top cluster from each of the three modeling runs.¶Calculated over refined regions or core domain residues after alignment using MAMMOTH; (Ortiz et al., 2002) see ‘Materials and methods’.MCM: multidimensional chemical mapping; RMSD: root-mean-squared-deviation._
 
 The cluster center MCM model correctly inferred the global 3D structure of the P4–P6 domain, including the compaction of the P5c helix and A-rich bulge toward P4 and the clothespin-like bend allowing proximity of the L5b tetraloop and the J6a/6b receptor. Nevertheless, we found that the resolution was not sufficient to recapitulate nucleotide-level details, such as the base stacking and base–triple interactions in the tetraloop/tetraloop receptor contact. If the P4–P6 domain were a blind prediction case, the MOHCA-seq data and MCM model would have marked these regions as sites for further biochemical investigation, but accurate recovery of the detailed interactions would still require advances in computational methods being developed for refining conformations of motifs to high resolution (Sripakdeevong et al., 2011). Additionally, not all MOHCA-seq constraints were satisfied by either our cluster center MCM model or the crystal structure, an observation discussed further below.
 
-## MCM allows rapid modeling of diverse ncRNAs, including blind prediction challenges
+### MCM allows rapid modeling of diverse ncRNAs, including blind prediction challenges
 
 Our initial studies on the P4–P6 RNA suggested that the MCM pipeline, consisting of M2 and MOHCA-seq experiments followed by Rosetta modeling, could be a generally applicable approach for determining global structures of ncRNAs. To further test this hypothesis, we benchmarked MCM on several additional ncRNAs with known structures but distinct functions: the 89-nucleotide Vibrio cholerae cyclic-di-GMP (c-di-GMP) riboswitch aptamer bound to its ligand at 10 µM c-di-GMP (Smith et al., 2009), the 159-nucleotide ligand-binding domain of the Fusobacterium nucleatum double glycine riboswitch (consisting of two tandem glycine aptamers) bound to two glycines at 10 mM glycine (Butler et al., 2011), the 168-nucleotide Symbiobacterium thermophilum adenosylcobalamin (AdoCbl) riboswitch aptamer bound to its ligand at 70 µM AdoCbl (Peselis & Serganov, 2012), and the 127-nucleotide class I ligase including substrate obtained from in vitro selection (Ekland and Bartel, 1995; Shechner et al., 2009) (sequences listed in Supplementary file 1). For the glycine riboswitch ligand-binding domain, the AdoCbl riboswitch aptamer, and the class I ligase, the secondary structures were first defined at nucleotide resolution by high-throughput M2 analysis; data from this previously established approach were collected in prior work (Kladwang et al., 2011a) or are shown in Figure 3—figure supplements 1, 2. MOHCA-seq data and Rosetta modeling completed the MCM pipeline (Figure 3B–E and Figure 3—figure supplement 3B–E). As described above for the P4–P6 RNA and in prior work on 3D ncRNA modeling, precision estimates were possible in situ without knowledge of the actual structure by assessing convergence of independent modeling runs (‘Materials and methods’); all cases suggested 1-nm resolution had been achieved (Table 2). Indeed, this resolution was attained by MCM in all cases: 7.6 Å for the c-di-GMP riboswitch aptamer; 7.9 Å for the glycine riboswitch ligand-binding domain; 11.9 Å for the AdoCbl riboswitch aptamer (compare to RNA-puzzle 6 models, Figure 3—figure supplement 4); and 11.1 Å (ribozyme) and 14.5 Å (ribozyme including substrate) for the class I ligase (Shechner et al., 2009) (Figure 3B–E and Table 1; clusters with knots were not accepted, see Figure 3—figure supplement 5 and Table 2). The lack of correlation between the fraction of satisfied MOHCA-seq pairwise constraints and the accuracy of the models (Table 2) suggests that unsatisfied constraints are due to conformational fluctuations in the RNA or radical-source linkers around the dominant global structures of these molecules, rather than systematic structural shifts or incomplete computational sampling. The generally consistent accuracy of these predictions supports our hypothesis that highly sampled computational modeling is able to filter out such inconsistent constraints, as has been observed in prior macromolecule modeling based on pairwise information (Bowers et al., 2000; Das et al., 2008; Thompson et al., 2012). Further supporting the assumptions of modeling, including the form of the pseudo-energy function, the relationship of MOHCA-seq signal intensities to pairwise distances seen in crystal structures was recovered by MCM models (Figure 1—figure supplement 2B,C). Again, we tested the necessity of MOHCA-seq data for completing the MCM pipeline by performing identical modeling of all ncRNA domains without MOHCA-seq constraints (M2/Rosetta modeling). Just as for the P4–P6 domain, these runs produced dramatically less accurate models, as can be visually assessed (Figure 3) and quantitated by both RMSD to the crystal structure and statistical significance (Hajdin et al., 2010) (Table 1).
 
@@ -125,37 +474,37 @@ In addition to generating accurate models, the full MCM pipeline enabled selecti
 
 As a rigorous test, we applied MCM to model another RNA-puzzle before the release of its crystal structure, a 188-nucleotide lariat-capping ribozyme from Didymium iridis. As part of this blind challenge, we previously collected and shared M2 data (Figure 3—figure supplement 7) that supported literature models of the ncRNA's secondary structure and suggested two additional tertiary contacts creating a ‘ring’ around the ribozyme. Nevertheless, during the RNA-puzzle time window in the summer of 2012, modeling from M2 alone was uncertain, particularly in the long, kissing helical stacks P2.1 and P4–P6, which had no homologies to any experimentally solved structure (blue and green regions, Figure 3F). After developing MOHCA-seq but before the release of the lariat-capping ribozyme crystal structure, we completed the MCM pipeline by acquiring MOHCA-seq data for the ncRNA (Figure 3F), and the resulting map highlighted potential errors in these extended peripheral regions. We then blindly refined the peripheral regions based on the full MCM data (Figure 3F and Table 1), and the subsequent release of the ribozyme crystal structure (Meyer et al., 2014) confirmed that their accuracy significantly improved, from an original RMSD of 17.0 Å (original RNA-puzzle submission, M2/Rosetta) to a final RMSD of 11.2 Å (full MCM, i.e., M2/MOHCA-seq/Rosetta). The global accuracy of the models also improved, with a range of RMSDs over the full ribozyme from 7.6 to 8.9 Å, compared to our original submission, which turned out to have an overall RMSD accuracy of 9.6 Å. Taken together, these results rigorously demonstrated the ability of the full MCM pipeline to detect errors and to consistently and blindly refine ncRNA structures to 1-nm resolution or better throughout complex structures.
 
-## Direct nucleotide-resolution observation of preformed riboswitch aptamer tertiary structure using MCM
+### Direct nucleotide-resolution observation of preformed riboswitch aptamer tertiary structure using MCM
 
 Riboswitches form a major class of ncRNAs, and understanding their structures in the absence of ligands is critical for dissecting mechanisms of ligand capture and modulation of gene expression. While crystal structures and solution scattering of a few ligand-free riboswitch aptamers have suggested the possibility of extensive preformed tertiary structure in special cases (Serganov et al., 2008; Baird et al., 2010; Wood et al., 2012), whether these structures are generally sampled in solution in the absence of ligand has remained poorly understood due to the lack of an unbiased, high-throughput solution structural technique. We tested if MCM could resolve previously missing information on ligand-free states of the three riboswitch aptamers that were characterized above in their ligand-bound forms. Because the computational modeling of heterogeneous conformational ensembles from experimental data is an open problem (Beauchamp et al., 2014; Salmon et al., 2014; Shi et al., 2014), our primary conclusions below are based on the M2 and MOHCA-seq data themselves, with Rosetta modeling carried out for initial visualization only (see ‘Materials and methods’).
 
-We first applied MCM to the c-di-GMP riboswitch aptamer without its ligand, which had been previously studied with state-of-the-art small-angle X-ray scattering, single-molecule FRET, and kinetic analysis (
+We first applied MCM to the c-di-GMP riboswitch aptamer without its ligand, which had been previously studied with state-of-the-art small-angle X-ray scattering, single-molecule FRET, and kinetic analysis (Kulshina et al., 2009; Wood et al., 2012). These prior studies revealed an extended conformation of this ncRNA transiently interconverting with a ‘docked’ conformation that shares at least one tertiary contact with the ligand-bound docked state (P1b/P2 tetraloop/receptor). MCM rapidly recovered this picture and provided additional information. In terms of secondary structure, M2 measurements gave P1a, P1b, and P2 helices in both ligand-free and ligand-bound states, up to possible rearrangements in edge base pairs (Kladwang et al., 2011a), and MOHCA-seq additionally confirmed all 3 helices in both states (Figure 4A). In terms of tertiary structure, unambiguous proximities between several segments of P1b and P2 that were detected in the ligand-bound state (Figure 4A, left) were also observed at the same locations, albeit weakly, in the ligand-free state (Figure 4A, right). To test that these tertiary features were not due to noise or experimental artifacts in MOHCA-seq experiments or data processing, we confirmed that they disappeared in solution conditions without Mg2+ (Figure 4B). The matching ‘fingerprints’ of cross-helix tertiary features in ligand-free and ligand-bound MOHCA-seq maps provided evidence that the ligand-free riboswitch aptamer samples the same tertiary conformation as the ligand-bound docked state at nanometer resolution, including and going beyond the known tetraloop/receptor contact.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig4-v2.jpg)
 
-**Figure 4.:** V. cholerae cyclic-di-GMP riboswitch aptamer exhibits Mg2+-dependent preformed tertiary structure in its ligand-free state.(A) Proximity maps of c-di-GMP riboswitch aptamer in 10 µM (left) or 0 µM (right) c-di-GMP, folded in 10 mM Mg2+, with annotated helix elements (rounded rectangles) and tertiary hits (purple and pink circles). (B) Proximity maps of c-di-GMP riboswitch aptamer in 10 µM (left) or 0 µM (right) c-di-GMP, folded in 0 mM Mg2+, showing absence of tertiary proximities that are present for the aptamer folded in 10 mM Mg2+. (C) Five MCM models with lowest Rosetta energy of c-di-GMP riboswitch aptamer give an initial visualization of ligand-free ensemble (left); modeling included pseudo-energy constraints from 0 µM c-di-GMP and 10 mM Mg2+ proximity map. The crystal structure is shown at right for comparison.DOI: http://dx.doi.org/10.7554/eLife.07600.019
+**Figure 4.:** (A) Proximity maps of c-di-GMP riboswitch aptamer in 10 µM (left) or 0 µM (right) c-di-GMP, folded in 10 mM Mg2+, with annotated helix elements (rounded rectangles) and tertiary hits (purple and pink circles). (B) Proximity maps of c-di-GMP riboswitch aptamer in 10 µM (left) or 0 µM (right) c-di-GMP, folded in 0 mM Mg2+, showing absence of tertiary proximities that are present for the aptamer folded in 10 mM Mg2+. (C) Five MCM models with lowest Rosetta energy of c-di-GMP riboswitch aptamer give an initial visualization of ligand-free ensemble (left); modeling included pseudo-energy constraints from 0 µM c-di-GMP and 10 mM Mg2+ proximity map. The crystal structure is shown at right for comparison.
 
 To visualize the ensemble, we performed Rosetta modeling as above and discovered that the conformational heterogeneity of the top cluster was significantly larger than clustering of ligand-bound states above (9.8 Å vs 6.8 Å, respectively; Table 2), suggesting that a significant fraction of the visible variance (Figure 4C) arises from actual RNA conformational dynamics rather than from modeling uncertainties. As in NMR studies of dynamic molecules, we therefore inspected an ensemble of models with the lowest Rosetta energy score instead of focusing on the cluster center; the resulting ensemble was used for initial visualization only (Al-Hashimi, 2007; Bothe et al., 2011; Salmon et al., 2014). Four of the five lowest energy models were primarily extended and without tertiary contacts, with one showing a more compact state similar to the one stabilized by ligand. The MOHCA-seq data are thus consistent with a picture of the ligand-free state of the c-di-GMP riboswitch aptamer primarily adopting extended conformations but also interconverting to more compact ones (Figure 4C).
 
-MCM analysis of riboswitch aptamers for glycine and adenosylcobalamin gave surprisingly similar results to our investigation of the c-di-GMP riboswitch aptamer. The glycine riboswitch ligand-binding domain consists of two glycine-binding aptamers connected by a linker; the formation of cross-aptamer contacts upon ligand binding could explain the cooperativity of glycine binding between the aptamers (
+MCM analysis of riboswitch aptamers for glycine and adenosylcobalamin gave surprisingly similar results to our investigation of the c-di-GMP riboswitch aptamer. The glycine riboswitch ligand-binding domain consists of two glycine-binding aptamers connected by a linker; the formation of cross-aptamer contacts upon ligand binding could explain the cooperativity of glycine binding between the aptamers (Erion and Strobel, 2011; Kladwang et al., 2012a; Esquiaqui et al., 2014; Ruff and Strobel, 2014), but has not been directly visualized. In terms of secondary structure, previous M2 data indicated that three major helical elements P1, P2, and P3 were formed by each of the two aptamers, both with and without glycine (Kladwang et al., 2011a); MOHCA-seq data gave additional support for this six-helix secondary structure being preformed without ligand (Figure 5A). Strikingly, tertiary proximity hits observed both within and across the two aptamers in the glycine-bound state were retained, though weakened, in the absence of glycine (Figure 5A and Figure 3—figure supplement 3H). Analogous to our control experiments for the c-di-GMP riboswitch aptamer, these tertiary proximities were not detectable in conditions without Mg2+ (Figure 5B). Completing the MCM pipeline, Rosetta modeling of the ligand-free state with M2/MOHCA-seq constraints gave a structural ensemble with an approximately similar global structure but substantially more conformational variance than the ligand-bound state (Figure 5C and Table 2). These MCM models provide a framework for further dissection of the ligand-free state of the glycine riboswitch aptamers through mutation and MCM. As an example, we discovered that the preformed tertiary proximities detected by MCM in the ligand-free riboswitch aptamer depend critically on at least one junction element, a leader sequence that was missed in crystallographic studies but later shown to stabilize a K-turn linker between the aptamers (Figure 5D,E) (Kladwang et al., 2012a; Esquiaqui et al., 2014; Ruff and Strobel, 2014).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig5-v2.jpg)
 
-**Figure 5.:** F. nucleatum double glycine riboswitch ligand-binding domain retains preformed tertiary structure in its ligand-free state, with a requirement of a leader sequence.(A) Proximity maps of glycine riboswitch ligand-binding domain in 10 mM (left) or 0 mM (right) glycine, folded in 10 mM Mg2+, with annotated helix elements (rounded rectangles) and tertiary hits (purple and pink circles). A black box encloses each glycine-binding aptamer. (B) Proximity maps of glycine riboswitch ligand-binding domain in 10 mM (left) or 0 mM (right) glycine, folded in 0 mM Mg2+, showing absence of tertiary proximities both within and between aptamers that are present for the ligand-binding domain folded in 10 mM Mg2+. (C) Five MCM models with lowest Rosetta energy of glycine riboswitch ligand-binding domain give an initial visualization of ligand-free ensemble (left); modeling included pseudo-energy constraints from 0 mM glycine and 10 mM Mg2+ proximity map. The crystal structure, with kink-turn linker grafted from PDB ID 3CC2 (Kladwang et al., 2012a), is shown at right for comparison. (D) Proximity maps of glycine riboswitch ligand-binding domain without leader sequence in 10 mM (left) or 0 mM (right) glycine, folded in 10 mM Mg2+, showing absence of tertiary proximities between aptamers even in presence of Mg2+. (E) Five MCM models with lowest Rosetta energy of glycine riboswitch ligand-binding domain without leader sequence give an initial visualization of ligand-free ensemble (left); modeling included pseudo-energy constraints from 0 mM glycine and 10 mM Mg2+ proximity map.DOI: http://dx.doi.org/10.7554/eLife.07600.020
+**Figure 5.:** (A) Proximity maps of glycine riboswitch ligand-binding domain in 10 mM (left) or 0 mM (right) glycine, folded in 10 mM Mg2+, with annotated helix elements (rounded rectangles) and tertiary hits (purple and pink circles). A black box encloses each glycine-binding aptamer. (B) Proximity maps of glycine riboswitch ligand-binding domain in 10 mM (left) or 0 mM (right) glycine, folded in 0 mM Mg2+, showing absence of tertiary proximities both within and between aptamers that are present for the ligand-binding domain folded in 10 mM Mg2+. (C) Five MCM models with lowest Rosetta energy of glycine riboswitch ligand-binding domain give an initial visualization of ligand-free ensemble (left); modeling included pseudo-energy constraints from 0 mM glycine and 10 mM Mg2+ proximity map. The crystal structure, with kink-turn linker grafted from PDB ID 3CC2 (Kladwang et al., 2012a), is shown at right for comparison. (D) Proximity maps of glycine riboswitch ligand-binding domain without leader sequence in 10 mM (left) or 0 mM (right) glycine, folded in 10 mM Mg2+, showing absence of tertiary proximities between aptamers even in presence of Mg2+. (E) Five MCM models with lowest Rosetta energy of glycine riboswitch ligand-binding domain without leader sequence give an initial visualization of ligand-free ensemble (left); modeling included pseudo-energy constraints from 0 mM glycine and 10 mM Mg2+ proximity map.
 
-Compared to the riboswitch aptamers above, much less was previously known about the AdoCbl riboswitch aptamer. Indeed, long-standing controversies in modeling this ncRNA raised the possibility of differences in both secondary and tertiary structure in states with and without ligand (
+Compared to the riboswitch aptamers above, much less was previously known about the AdoCbl riboswitch aptamer. Indeed, long-standing controversies in modeling this ncRNA raised the possibility of differences in both secondary and tertiary structure in states with and without ligand (Ravnum and Andersson, 2001; Nahvi et al., 2002; Vitreschak et al., 2003; Nahvi et al., 2004; Barrick and Breaker, 2007; Miao et al., 2015). Nevertheless, MCM revealed striking similarities between the states, most clearly visible in MOHCA-seq data (Figure 6A). In terms of secondary structure, features for six major helical stacks appeared identical with and without ligand. In terms of tertiary structure, the data without ligand showed reduction but not complete loss of strong tertiary proximities between helices that enclose the ligand-binding site (Figure 6A). As above, Rosetta modeling produced an initial visualization of a loose structural ensemble that samples, but does not stably remain in, the ligand-bound structure within the nanometer resolution of the MOHCA-seq method (Figure 6B and Table 2). Again, by rapidly resolving secondary and tertiary structure, this MCM analysis sets a foundation for further dissection of this RNA's ligand-free globule. As a first example, we found that the sole long-range tertiary interaction in the AdoCbl-binding site (an A-minor contact between J11-10 and helix P6) was necessary for ligand binding but not the global tertiary proximities measured by MOHCA-seq (Figure 6C,D). Like the data for the glycine riboswitch aptamers above, these data further suggest that the ligand-free proximities in the AdoCbl riboswitch aptamer arise not from direct tertiary contacts but from conformational preferences encoded in the riboswitch aptamer junctions.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig6-v2.jpg)
 
-**Figure 6.:** S. thermophilus adenosylcobalamin riboswitch aptamer retains preformed tertiary structure without binding ligand.(A) Proximity maps of AdoCbl riboswitch aptamer in 70 µM (left) or 0 µM (right) AdoCbl with annotated helix elements (rounded rectangles) and tertiary hits (purple and pink circles). Red arrows indicate regions of proximity between J11-10 and helix P6 in the crystal structure. (B) Three MCM models with lowest Rosetta energy of AdoCbl riboswitch aptamer give an initial visualization of ligand-free ensemble (left); modeling included pseudo-energy constraints from 0 µM AdoCbl proximity map. The crystal structure is shown at right for comparison. (C–D) Mutation of A124 and A125 to U disrupts ligand-binding but not preformed tertiary structure. (C) Proximity maps of A124U/A125U mutant AdoCbl riboswitch aptamer in 70 µM (left) or 0 µM (right) AdoCbl, showing retention of tertiary proximity hits similar to the wild-type aptamer in 0 µM AdoCbl. (D) 1D chemical mapping reactivities of wild-type and A124U/A125U (‘Mut’) AdoCbl riboswitch aptamer. Green arrows in DMS reactivity lanes indicate locations of reduced reactivity in the presence of ligand in the wild type only. Residues 124 and 125 are unreactive to DMS in the A124U/A125U mutant because DMS does not modify U residues. Blue arrow in CMCT reactivity lanes indicates lack of protection of U124 and U125 in the mutant in the presence of ligand. Magenta arrows in SHAPE reactivity indicate locations of reduced/altered reactivity in the presence of ligand in the wild type but not in the mutant. All ligand-dependent protections are located in or near the AdoCbl-binding site in the riboswitch aptamer (Peselis & Serganov, 2012).DOI: http://dx.doi.org/10.7554/eLife.07600.021
+**Figure 6.:** (A) Proximity maps of AdoCbl riboswitch aptamer in 70 µM (left) or 0 µM (right) AdoCbl with annotated helix elements (rounded rectangles) and tertiary hits (purple and pink circles). Red arrows indicate regions of proximity between J11-10 and helix P6 in the crystal structure. (B) Three MCM models with lowest Rosetta energy of AdoCbl riboswitch aptamer give an initial visualization of ligand-free ensemble (left); modeling included pseudo-energy constraints from 0 µM AdoCbl proximity map. The crystal structure is shown at right for comparison. (C–D) Mutation of A124 and A125 to U disrupts ligand-binding but not preformed tertiary structure. (C) Proximity maps of A124U/A125U mutant AdoCbl riboswitch aptamer in 70 µM (left) or 0 µM (right) AdoCbl, showing retention of tertiary proximity hits similar to the wild-type aptamer in 0 µM AdoCbl. (D) 1D chemical mapping reactivities of wild-type and A124U/A125U (‘Mut’) AdoCbl riboswitch aptamer. Green arrows in DMS reactivity lanes indicate locations of reduced reactivity in the presence of ligand in the wild type only. Residues 124 and 125 are unreactive to DMS in the A124U/A125U mutant because DMS does not modify U residues. Blue arrow in CMCT reactivity lanes indicates lack of protection of U124 and U125 in the mutant in the presence of ligand. Magenta arrows in SHAPE reactivity indicate locations of reduced/altered reactivity in the presence of ligand in the wild type but not in the mutant. All ligand-dependent protections are located in or near the AdoCbl-binding site in the riboswitch aptamer (Peselis & Serganov, 2012).
 
-## Solution structure determination of a recently discovered ncRNA
+### Solution structure determination of a recently discovered ncRNA
 
-The discovery in recent months of cellular internal ribosome entry site (IRES) elements in the 5′-UTRs of the Hox mRNAs has suggested new roles of structured ncRNAs in mammalian development (
+The discovery in recent months of cellular internal ribosome entry site (IRES) elements in the 5′-UTRs of the Hox mRNAs has suggested new roles of structured ncRNAs in mammalian development (Xue et al., 2015). To further demonstrate the potential of MCM 3D modeling for investigating systems of timely biological interest, we probed a 176-nt structured domain of the HoxA9 5′-UTR that was shown to be critical for IRES activity. The secondary structure of the domain was determined by M2, along with in vivo mutation-rescue experiments that confirmed key helix elements (Figure 7A) (Xue et al., 2015). We collected MOHCA-seq data that corroborated the secondary structure described previously and provided independent support for a pseudoknot (pk3-4) connecting two arms of a four-way junction, a common feature of viral IRESes that has not been demonstrated for cellular IRESes (Figure 7A,B). We completed the MCM pipeline to computationally model the domain's global 3D structure, revealing a core four-way junction aligned by the pseudoknot, defined at an estimated resolution of 19.5 Å, similar to the loose ensembles seen in our MCM models of ligand-free riboswitch aptamers (Figure 7C and Table 2). Supporting this global structure and estimated resolution, modeling that used an alternative pk3-4-free secondary structure gave a final conformation within 19.5 Å RMSD of the cluster center with pseudoknot (Figure 7D; alternative secondary structure from Extended Data Figure 6C in ref. [Xue et al., 2015]). Given the conformational heterogeneity of this 176-nucleotide ncRNA in the absence of partners, MCM appears to be the only front-line technique able to resolve this domain's global structure in isolation, which we propose to be a recognition site for the mammalian 80S ribosome. These models provide fiducial landmarks to seek in upcoming cryo-electron microscopy studies of the HoxA9 IRES in the presence of the ribosome and other macromolecular partners (PDB-formatted models are available online in Source code 1).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/07600/elife-07600-fig7-v2.jpg)
 
-**Figure 7.:** (A) M2-derived secondary structure model of HoxA9 5′-UTR 957–1132 internal ribosome entry site (IRES) domain. (B) MOHCA-seq proximity map of HoxA9 IRES domain, with evidence for secondary structure elements and pseudoknot predicted by M2 and validated by mutate-and-rescue experiments (Xue et al., 2015) (rounded rectangles). Tertiary hits are indicated by purple circles. (C) MCM model of HoxA9 IRES domain with explicit pseudoknot pk3-4. (D) MCM model of HoxA9 IRES domain without explicit pseudoknot pk3-4. In (C–D), cluster center (opaque) and four additional models (semi-transparent) from the top cluster are shown. Magenta lines connect base pairs of pk3-4 in each cluster center model. Top cluster models for both modeling setups are available in Source code 1.DOI: http://dx.doi.org/10.7554/eLife.07600.022
+**Figure 7.:** (A) M2-derived secondary structure model of HoxA9 5′-UTR 957–1132 internal ribosome entry site (IRES) domain. (B) MOHCA-seq proximity map of HoxA9 IRES domain, with evidence for secondary structure elements and pseudoknot predicted by M2 and validated by mutate-and-rescue experiments (Xue et al., 2015) (rounded rectangles). Tertiary hits are indicated by purple circles. (C) MCM model of HoxA9 IRES domain with explicit pseudoknot pk3-4. (D) MCM model of HoxA9 IRES domain without explicit pseudoknot pk3-4. In (C–D), cluster center (opaque) and four additional models (semi-transparent) from the top cluster are shown. Magenta lines connect base pairs of pk3-4 in each cluster center model. Top cluster models for both modeling setups are available in Source code 1.
 
 ## Discussion
 
@@ -169,37 +518,37 @@ In addition to establishing MCM as a routine approach to achieve medium-resoluti
 
 ## Materials and methods
 
-## Mutate-and-map (M2)
+### Mutate-and-map (M2)
 
 High-confidence secondary structures derived from M2 experiments were used as inputs to computational modeling. We previously collected M2 data on the AdoCbl riboswitch aptamer in the presence of 60 µM AdoCbl and separately performed M2 on the class I ligase using experimental methods and data analysis that have been described in detail (Kladwang et al., 2011a; Cordero et al., 2014). The M2 data are available on the RNA Mapping Database (RMDB) with accession IDs RNAPZ6_1M7_0002 (AdoCbl riboswitch aptamer) and CL1LIG_1M7_0001 (class I ligase). The solution conditions were 50 mM Na-HEPES, pH 8.0, and 10 mM MgCl2, as used previously and for MOHCA-seq experiments below. Figure 3—figure supplements 1, 2, 7 present previously unpublished M2 data and analysis for the AdoCbl riboswitch aptamer, class I ligase, and lariat-capping ribozyme, respectively.
 
-## MOHCA-seq measurements
+### MOHCA-seq measurements
 
-## RNA preparation
+#### RNA preparation
 
 Double-stranded DNA templates for the RNAs of interest were constructed using PCR assembly with primers purchased from IDT (Integrated DNA Technologies, San Diego, CA) (Kladwang et al., 2011b). RNAs were transcribed at 37°C for 3 hr in 320 µl reactions containing 32 pmol of dsDNA template, 100 mM Tris–HCl, pH 8.1, 200 mM MgCl2, 3.5 mM spermidine, 0.1% Triton X-100, 40 mM DTT, 4% PEG 8000, 20 U T7 RNA Polymerase (New England Biolabs [NEB], Ipswich, MA), 1 mM NTPs, and 0.5 mM 2′-NH2-2′-deoxy-ATP (TriLink BioTechnologies, San Diego, CA). The yield of transcription was 1–1.5 nmol after purification using RNA Clean & Concentrator columns (Zymo Research, Irvine, CA). Purified RNA was then ethanol precipitated to concentrate it for 5′-end labeling using a 5′ EndTag kit and fluorescein maleimide (Vector Labs, Burlingame, CA) to enable gel visualization in subsequent steps; the RNA was then purified again using RNA Clean & Concentrator columns. The hydroxyl radical source, isothiocyanobenzyl-EDTA chelating Fe(III) (ITCB-Fe(III)•EDTA) (Dojindo Molecular Technologies, Inc., Santa Clara, CA), was covalently attached to the 2′-NH2 groups on the RNA backbone using a two-step process. First, to couple ITCB-EDTA to the RNA, 0.5 mg ITCB-EDTA was dissolved in 5.7 µl 0.4 M KPO4, pH 8.5 for a concentration of 200 mM, then mixed with 15 µl of RNA and 15 µl 0.8 M KPO4, pH 8.5. The coupling reactions were incubated at 37°C for 12–16 hr. Then, 1/3 vol of 200 mM FeCl3 was added and the coupling reactions were incubated at room temperature for 15 min, after which 10 µl 500 mM Na-EDTA, pH 8.0 was added to chelate excess Fe(III). After purifying with RNA Clean & Concentrator columns to remove excess reagents, the RNA was PAGE-purified using denaturing 8% polyacrylamide/7 M urea gels. Bands were located by scanning with a Typhoon imager (GE, Pittsburgh, PA) for fluorescein fluorescence, and excised gel slices were immersed in approximately 500 µl RNase-free H2O in non-stick tubes overnight at 4°C to elute the RNA. The RNA was purified from the eluate using RNA Clean & Concentrator columns and stored at −20°C. The yield of PAGE purification was 10–30% of the amount loaded on the gel, which was sufficient for multiple MOHCA-seq experiments.
 
-## Activation of radical source
+### Activation of radical source
 
 Before activating the radical source to produce spatially localized hydroxyl radicals, 3–4 pmol of folded RNA was prepared in 50 mM Na-HEPES, pH 8.0, and 10 mM MgCl2, as follows. First, the RNA was heated to 65°C in HEPES buffer in 8 µl for 3 min, then cooled to room temperature for 10 min; then 1 µl of 100 mM MgCl2 was added and the RNA was heated to 50°C for 5 min, then cooled to room temperature for 10 min. (For P4–P6, HEPES buffer and MgCl2 were added concurrently, and the RNA was incubated for 10 min at room temperature. For ligand-bound cyclic-di-GMP riboswitch aptamer samples, 100 pmol cyclic-di-GMP [BioLog, Bremen, Germany] was added before the first heating step for 10 µM in a 10 µl reaction. For ligand-bound glycine riboswitch ligand-binding domain samples, 100 nmol glycine [Sigma, St. Louis, MO] was added before the first heating step for 10 mM in a 10 µl reaction. For ligand-bound adenosylcobalamin [AdoCbl] riboswitch aptamer samples, 700 pmol AdoCbl [Sigma] was added before the first heating step for 70 µM in a 10 µl reaction, and all steps until post-fragmentation ethanol precipitation [below] were performed under low-light conditions. For 0 mM Mg2+ conditions, RNase-free H2O was added instead of MgCl2.) After folding, the radical source was activated by adding 1 µl 100 mM sodium ascorbate stock for a final concentration of 10 mM. A control reaction was also prepared with 1 µl RNase-free H2O added instead of ascorbate; this reaction was carried through all subsequent steps in parallel. After 5 to 30 min of incubation at room temperature (10 min was standard), 1 µl 100 mM thiourea was added to quench the Fenton reaction. The RNA fragments were ethanol precipitated as follows: First, 1 µl GlycoBlue (Life Technologies, Carlsbad, CA) and 1/10 vol (1.2 µl) of 3 M sodium acetate, pH 5.2 were added to the quenched reaction and mixed. Then, 3 vol (40 µl) of 100% ethanol chilled on dry ice were added, and the sample was mixed. Samples were spun down immediately in a tabletop microcentrifuge at maximum speed for 20 min, washed with 50 µl ice-cold 70% ethanol, then spun down again at max speed for 10 min. The supernatant was removed by pipetting and the pellets were allowed to dry, after which 15 µl RNase-free H2O was added and the pellet was allowed to dissolve for 10 min at room temperature.
 
-## Repair of 3′ ends
+### Repair of 3′ ends
 
 To remove 3′-phosphates left by hydroxyl radical strand scission events in the RNA backbone (Balasubramanian et al., 1998; Pogozelski and Tullius, 1998), the purified RNA fragments were treated with T4 polynucleotide kinase (T4 PNK) in conditions that promoted 3′-phosphatase activity (Cameron and Uhlenbeck, 1977). Each end-repair reaction contained 14 µl of the RNA from the previous step (the remaining 1 µl was used for quality checks by capillary electrophoresis), as well as 50 mM Na-MES, pH 6.0, 10 mM MgCl2, 5 mM DTT, 5 µM ATP, and 10 units T4 PNK (NEB), in a 20 µl reaction volume and was incubated at 37°C for 30 min. After end-repair, RNAs were ethanol precipitated as above, except with 0.5 µl GlycoBlue, 2.05 µl 3 M sodium acetate, pH 5.2, and 68 µl 100% ethanol chilled on dry ice. The dried pellets were resuspended in 5.2 µl RNase-free H2O. The T4 PNK reaction was necessary and sufficient for ligation of a pre-adenylated ssDNA universal adapter sequence to the radical-cleaved fragments (see next section), based on experiments with PAGE-purified RNA fragments cleaved by hydroxyl radicals from FeEDTA in solution. The ligation efficiency after T4 PNK treatment was ∼50%, suggesting that non-phosphate end products of strand scission, such as 3′-phosphoglycolates, may not be removed by T4 PNK; however, the yield of ligated product was still sufficient for reverse transcription using limiting amounts of sequencing primers.
 
-## Ligation of ssDNA universal adapter sequence
+### Ligation of ssDNA universal adapter sequence
 
 To prepare the fragmented RNA for reverse transcription, a pre-adenylated and 3′-blocked ssDNA universal adapter sequence (Universal miRNA cloning linker, NEB) was ligated to the 3′-end of the end-repaired fragments. Each ligation reaction contained 4.9 µl of the RNA from the previous step (the remaining 0.3 µl was used for quality checks by CE), as well as 1× T4 RNA ligase buffer (NEB), 15% PEG 8000, 4–5 pmol ssDNA adapter, and 200 U T4 RNA ligase 2 truncated, K227Q or KQ mutant (NEB), in a 10 µl reaction volume. The reactions were incubated at 4°C for 12 hr, followed by heat inactivation at 65°C for 20 min. After ligation, reaction volumes were supplemented with 50 µl RNase-free H2O, and RNAs were purified from the reaction using RNA Clean & Concentrator columns, which also removed excess ssDNA adapter. Ligation was assayed using 5% of the purified sample by observing the mobility shift of the full-length RNA on CE. Mobility shifts of radical-cleaved fragments were not directly observed in this quality check but were observed in pilot experiments, as described above.
 
-## Reverse transcription with sequencing primers (first adapter)
+### Reverse transcription with sequencing primers (first adapter)
 
 After ligation of the ssDNA adapter, RNAs were reverse transcribed with sequencing primers containing, in 5′ to 3′ order, a 5′-fluorescein modification, the Illumina TruSeq Universal adapter, 12-nucleotide barcodes (sequence-balanced in sets of 4 primers), and a primer for the ssDNA adapter sequence on the 3′-end (sequence listed in Supplementary file 1). Three of the four primers were used for reverse transcription of the ascorbate-treated sample and the remaining primer was used for reverse transcription of the no-ascorbate control sample. Each 15 µl reverse transcription reaction contained 250 fmol sequencing primer (which is limiting compared to the ∼2–3 pmol of RNA remaining at this stage), 1× First Strand buffer (Life Technologies), 5 mM DTT, 0.8 mM dNTPs, and 120 U SuperScript III (Life Technologies) and was incubated at 55°C for 30 min. To degrade the RNA templates, 5 µl of 0.4 M NaOH was added and the samples were incubated at 90°C for 3 min. After cooling on ice for 3 min, the cDNA samples were neutralized by addition of 1 µl of an acid quench (2 ml 5 M NaCl, 2 ml 2 M HCl, and 3 ml 3 M Na-acetate) and then purified by incubating with DynaBeads magnetic beads (Life Technologies) conjugated to double-biotin-labeled ssDNA complementary to the TruSeq adapter. For the glycine riboswitch ligand-binding domain with K-turn construct, the cDNA samples after RNA hydrolysis and neutralization were split in half. One half was purified as described above, and the other was purified using AMPure XP beads (Beckman Coulter, Indianapolis, IN), to provide size-selection for larger fragments corresponding to tertiary proximities between more distant sequence positions. Approximately, 65–75% of the sequencing primer was extended in the reverse transcription reactions, based on CE detection and quantification of ‘null ligation’ reads (consisting of the second sequencing adapter ligated directly to the sequencing primer) after paired-end sequencing.
 
-## Ligation of second sequencing adapter
+### Ligation of second sequencing adapter
 
 The second sequencing adapter (“Second ligation adapter 1”, listed in Supplementary file 1), derived from the TruSeq Indexed adapter with a 5′-phosphate (to enable ligation to the cDNA) and a 3′-phosphate (to block circularization), was ligated onto the 3′-ends of the cDNAs. The four cDNA samples for each RNA/condition were pooled prior to the ligation reaction. Each 50 µl ligation reaction contained 1.25 µM adapter, 1× CircLigase buffer (Epicentre, Madison, WI), 50 µM ATP, 2.5 mM MnCl2, 4% PEG 1500, and 250 U CircLigase I (Epicentre) and was incubated at 68°C for 2 hr, followed by heat inactivation at 80°C for 10 min. The samples were purified by DynaBeads as above with magnetic separation, and a fraction of the sample was run on a capillary electrophoresis machine (Applied Biosystems, Foster City, CA) with co-loaded fluorescein-labeled standards and analyzed using HiTRACE (Yoon et al., 2011) to estimate the concentration of ligated cDNA by comparing the total intensities of ligated cDNAs to the total intensity of the standard. We observed approximately 50% ligation yield from the CircLigase reaction, consistent with earlier work (Seetin et al., 2014). For the glycine riboswitch ligand-binding domain with K-turn construct, the DynaBead-purified samples were ligated with "Second ligation adapter 1" as described above, while the AMPure XP-purified samples were ligated with a separate sequencing adapter ("Second ligation adapter 2", listed in Supplementary file 1). This allowed multiplexed sequencing of the DynaBead- and AMPure XP-purified sample libraries.
 
-## Sequencing
+### Sequencing
 
 The MOHCA-seq cDNA libraries were sequenced using either 50-cycle MiSeq v2 kits or 150-cycle MiSeq v3 kits on Illumina MiSeq instruments or using an Illumina HiSeq 2500 instrument (Elim Biopharmaceuticals, Hayward, CA). For runs using MiSeq v2 kits, the following protocol was used to prepare the library for sequencing: beads harboring 25 fmol of single-stranded library fragments, usually about 1/5 of the final library volume after ligation of the second adapter, were mixed with 2.5 fmol of PhiX dsDNA control (Illumina, Inc., Hayward, CA) and EB buffer (Qiagen, Venlo, Netherlands) to 5 µl total. Then, 5 µl of 0.2 N NaOH was added and the fragments were eluted for 10 min at room temperature. The supernatant of the magnetic beads was diluted into chilled HT1 buffer (10 µl added to 990 µl HT1), and then diluted again (375 µl added to 225 µl HT1) before loading all 600 µl onto MiSeq kits following manufacturer instructions. Paired-end sequencing involved 51 and 25 sequencing cycles for the first and second reads, respectively. For runs using MiSeq v3 kits, the following protocol was used to prepare the library for sequencing: beads harboring 32 fmol of single-stranded library fragments were mixed with 4.2 µl of 95% formamide and 10 mM EDTA and heated at 90°C for 2 min and 40 s, then cooled at room temperature for several minutes. The beads were magnetically separated, and 4 fmol of PhiX dsDNA control (Illumina) was added to the isolated supernatant. Then, 5 µl of 0.2 N NaOH was added and the samples were denatured for 10 min at room temperature. This sample was diluted into chilled HT1 buffer (10 µl added to 990 µl HT1) and 600 µl of this dilution was loaded onto MiSeq kits following manufacturer instructions. Paired-end sequencing involved 51 and 51 sequencing cycles for the first and second reads, respectively.
 
@@ -243,7 +592,7 @@ Lariat-capping ribozyme: RNAPZ5_MCA_0001-0002
 
 HoxA9 5′-UTR 957–1132 domain: HOXA9D_MCA_0001
 
-## Quantification of oxidative damage
+### Quantification of oxidative damage
 
 To evaluate the rates of strand scission and reverse transcription-terminating modifications, we quantified data from both paired-end sequencing and CE for the model hairpin RNA shown in Figure 2B, which contained a single radical source at U13 (blue and orange bars, Figure 2D). As a background control, we quantified data collected in parallel on a sample that did not have a tethered radical source but was otherwise treated identically (gray bars, Figure 2D).
 
@@ -251,9 +600,9 @@ To quantify strand scission events from sequencing data, we calculated the sum o
 
 To quantify reverse transcription stops from sequencing data, we calculated the sum of all raw counts for fragments with stops at the same position after MAPseeker analysis. To account for reverse transcriptase attenuation, we normalized the signal at each position by the total counts for all fragments that were ligated 3′ of that position and were terminated at that position or 5′ of that position, analogous to the exact correction applied for CE data (Figure 2D, bottom) (Yoon et al., 2011). For an independent measurement of reverse transcription stops, we also ran a fraction of the same sample on CE, after reverse transcription with sequencing primers but before ligation of the second sequencing adapter, and quantified the reactivity of each position using HiTRACE (Yoon et al., 2011) (Figure 2D, bottom center). The reverse transcription stop profiles from sequencing and CE are similar, showing reverse transcription-terminating events on the strand of the helix complementary to the radical source, as well as a stronger termination event at the location of the radical source (Figure 2D, bottom center and bottom). We calculated the rate of reverse transcription stops from the CE and sequencing data by taking the sum of the fraction modified over all stop sites, excluding the signal at residue 13 because the reactivity at that position is due to the tethered radical source and not oxidative modifications. The rate of RT stops was similar between the CE and sequencing data and was at least sixfold higher than the rate of strand scission (Figure 2E).
 
-## MOHCA-seq data analysis
+### MOHCA-seq data analysis
 
-## General MOHCA-seq analysis framework
+#### General MOHCA-seq analysis framework
 
 Analysis of MOHCA-seq data requires modeling backgrounds, modulation from reverse transcription attenuation, and sources of error. Here, we outline a general analysis framework for MOHCA-seq experiments, with the following section describing a statistical procedure developed to reach a numerical solution, that gave consistent proximity maps. The resulting processed proximity maps have been deposited in the RMDB with the following accession IDs:
 
@@ -293,39 +642,89 @@ Lariat-capping ribozyme: RNAPZ5_MCA_0000
 
 HoxA9 5′-UTR 957–1132 domain: HOXA9D_MCA_0000
 
-A MOHCA-seq product stemming from a radical cleavage event at nucleotide j and a radical source at nucleotide i corresponds to a sequence i + 1 to j − 1 ligated between the two adapters necessary for paired-end Illumina sequencing. The frequency Fij of such products is related to the proximity of i and j but is modulated by the actual distribution of radical sources, for example, primarily at adenosines for 2′-NH2-dATP-incorporating transcripts. The frequency is also suppressed by signal attenuation for long sequence separations j − i due to the possibility of reverse transcription termination between i and j. A master expression for these MOHCA-seq frequencies is:(1)Fij=∑spis(1−pi+1s)(1−pi+2s)…(1−pj−1s)qjsε(s),with s indexing the possible source positions (0, 1, … N with s = 0 corresponding to no source) and ε(s) the fraction of transcripts containing a source at s. Values pis give the probability that a reverse-transcription terminating event occurs at the nucleotide immediately 3′ to i for a transcript with source at s, and values qjs give the probability of a cleavage event between j − 1 and j for a transcript with source at s. This expression simplifies in the limit of no background processes and low-oxidative damage rates (including radical-induced strand scission and nucleobase oxidation) (pis,qjs≪1, except at pis=i=1, corresponding to a reverse transcriptase stop at the site of radical source attachment). In that limit, Equation 1 reduces to:(2)Fij=qjiε(i),
+A MOHCA-seq product stemming from a radical cleavage event at nucleotide j and a radical source at nucleotide i corresponds to a sequence i + 1 to j − 1 ligated between the two adapters necessary for paired-end Illumina sequencing. The frequency Fij of such products is related to the proximity of i and j but is modulated by the actual distribution of radical sources, for example, primarily at adenosines for 2′-NH2-dATP-incorporating transcripts. The frequency is also suppressed by signal attenuation for long sequence separations j − i due to the possibility of reverse transcription termination between i and j. A master expression for these MOHCA-seq frequencies is:
 
-That is, the observed frequencies provide a direct readout of the probability that a source at i leads to radical cleavage at position j. This was the limit assumed in prior gel-based MOHCA analysis based on reading out i through cleavage of phosphorothioate tags associated with the radical sources. In the present MOHCA-seq protocol, we found empirically that the reverse transcription readout of i led to a more complete portrait of the proximity map, including information at nucleotides i at which radical sources were not attached. Indeed, increasing the incorporation rate of radical sources or the time of ascorbate-induced radical damage produced higher signal-to-noise data sets with clear proximity map signals, despite bringing the analysis away from the regime of single-hit incorporation and damage (Figure 2—figure supplements 1, 2). The extra information was derived from oxidative damage events that did not lead to backbone cleavage encapsulated in the term pis (Figure 2B–E; also, compare Figure 1D to initial MOHCA-gel data [Das et al., 2008], these events were previously invisible to gel-based analysis), but required a more advanced analysis to elicit the signal from the raw data.
+$$
+F_{ij}=\sumsp_{i}^{s}(1−p_{i+1}^{s})(1−p_{i+2}^{s})…(1−p_{j−1}^{s})q_{j}^{s}\epsilon(s),
+$$
 
-In the general case, the number of observed frequencies Fij is on the order of N(N − 1)/2, whereas the total number of model parameters ε(s), pis, and qjs is substantially higher (>2N2), leading to an ill-posed problem. However, basic chemical considerations reduce the number of parameters. First, we assume that the cleavage fraction that allows ssDNA adapter ligation, qjs, is composed of a ‘background’ rate of cleavage bj that is independent of source s but can vary with nucleotide j (e.g., due to inline attack during the fragmentation reaction), and additional, correlated cleavage due to hydroxyl radical-induced strand scission events (the desired MOHCA-seq signal), parameterized by πjs:(3)Cleavage at j from source s=qjs=1−(1−bj)(1−πjs)≈bj+πjs.
+with s indexing the possible source positions (0, 1, … N with s = 0 corresponding to no source) and ε(s) the fraction of transcripts containing a source at s. Values $p_{i}^{s}$ give the probability that a reverse-transcription terminating event occurs at the nucleotide immediately 3′ to i for a transcript with source at s, and values $q_{j}^{s}$ give the probability of a cleavage event between j − 1 and j for a transcript with source at s. This expression simplifies in the limit of no background processes and low-oxidative damage rates (including radical-induced strand scission and nucleobase oxidation) ($p_{i}^{s},q_{j}^{s}≪1$, except at $p_{i}^{s=i}=1$, corresponding to a reverse transcriptase stop at the site of radical source attachment). In that limit, Equation 1 reduces to:
 
-Second, we assume that the stopping events pis are composed of two components: (1) a background rate ri of uncorrelated oxidative damage (e.g., due to hydroxyl radicals from FeEDTA that has self-cleaved from the RNA during ascorbate treatment, which would provide background similar to standard FeEDTA hydroxyl radical footprinting) and (2) additional, correlated oxidative damage due to hydroxyl radicals generated at source s, which is tethered to the RNA (the desired MOHCA-seq signal), πis:(4)Stop at i from source s=pis=1−(1−ri)(1−ρiπis)≈ri+ρiπis.
+$$
+F_{ij}=q_{j}^{i}\epsilon(i),
+$$
 
-In Equations 3, 4, a reduction in the number of parameters arises from assuming that oxidative damage events producing reverse transcription stops occur at rates proportional to backbone cleavage rates by a factor ρi. That is, πis parameterizes the local effective concentration of radicals at i from source s, and the partitioning of these radicals into events that lead to cleavage (contributing to qis) vs total damage that can terminate reverse transcription (contributing to pis) is dependent on the chemical environment of the site i and not on source s. The total number of parameters thus reduces from greater than 2N2 to N(N − 1)/2 for πis and 3N for bj, ri, and ε(s). By further enforcing positivity of each of these parameters and assuming that πis is sparse, that is, that each nucleotide gives non-negligible cleavage at a number of residues smaller than N, the number of parameters is reduced to below the number of observables, and the problem becomes well-posed. Requiring sparsity of the proximity map is similar to assumptions used in solvent flattening and other density modification approaches in crystallography (Wang, 1985).
+That is, the observed frequencies provide a direct readout of the probability that a source at i leads to radical cleavage at position j. This was the limit assumed in prior gel-based MOHCA analysis based on reading out i through cleavage of phosphorothioate tags associated with the radical sources. In the present MOHCA-seq protocol, we found empirically that the reverse transcription readout of i led to a more complete portrait of the proximity map, including information at nucleotides i at which radical sources were not attached. Indeed, increasing the incorporation rate of radical sources or the time of ascorbate-induced radical damage produced higher signal-to-noise data sets with clear proximity map signals, despite bringing the analysis away from the regime of single-hit incorporation and damage (Figure 2—figure supplements 1, 2). The extra information was derived from oxidative damage events that did not lead to backbone cleavage encapsulated in the term $p_{i}^{s}$ (Figure 2B–E; also, compare Figure 1D to initial MOHCA-gel data [Das et al., 2008], these events were previously invisible to gel-based analysis), but required a more advanced analysis to elicit the signal from the raw data.
 
-Determining proximity information from raw observables still requires solving a complex system of non-linear equations. We found that direct least-squares optimization of the thousands of variables πis to fit the observed Fij, including Laplace priors to enforce sparsity, required hours even with state-of-the-art numerical optimizers. We instead developed a rapid, iterative strategy to carry out the solution, as described next.
+In the general case, the number of observed frequencies Fij is on the order of N(N − 1)/2, whereas the total number of model parameters ε(s), $p_{i}^{s}$, and $q_{j}^{s}$ is substantially higher (>2N2), leading to an ill-posed problem. However, basic chemical considerations reduce the number of parameters. First, we assume that the cleavage fraction that allows ssDNA adapter ligation, $q_{j}^{s}$, is composed of a ‘background’ rate of cleavage bj that is independent of source s but can vary with nucleotide j (e.g., due to inline attack during the fragmentation reaction), and additional, correlated cleavage due to hydroxyl radical-induced strand scission events (the desired MOHCA-seq signal), parameterized by $\pi_{j}^{s}$:
 
-## COHCOA
+$$
+Cleavage at j from source s=q_{j}^{s}=1−(1−b_{j})(1−\pi_{j}^{s})≈b_{j}+\pi_{j}^{s}.
+$$
 
-A closure-based •OH correlation analysis (COHCOA) estimates a solution to Equation 1 to determine a two-point correlation function that is directly read out by MOHCA-seq. In the limit that the fraction damaged at any single nucleotide is smaller than one,(5)Fij≈∑s[pisqjs−∑i<m<jpispmsqjs]ε(s)=〈piqj〉−∑i<m<j〈pipmqj〉,where the bracket notation refers to a summation over sources:(6)〈f〉=∑sε(s)fs,and terms beyond second order are neglected. The effects of the radical cleavage result in a one-dimensional damage profile Ri (corresponding to uncorrelated oxidative damage) and cleavage profile Bj and a two-point correlation function Qij (corresponding to correlated oxidative damage or radical source locations), which encodes the desired proximity map:(7)Bj=bj+〈πj〉Ri=ri+ρi〈πi〉Qij=ρi[〈πiπj〉−〈πi〉〈πj〉],leading to the equation(8)Fij≈RiBj+Qij−∑i<m<j(RiRmBj+RmQij+RiQmj+ρmQimBj),
+Second, we assume that the stopping events $p_{i}^{s}$ are composed of two components: (1) a background rate ri of uncorrelated oxidative damage (e.g., due to hydroxyl radicals from FeEDTA that has self-cleaved from the RNA during ascorbate treatment, which would provide background similar to standard FeEDTA hydroxyl radical footprinting) and (2) additional, correlated oxidative damage due to hydroxyl radicals generated at source s, which is tethered to the RNA (the desired MOHCA-seq signal), $\pi_{i}^{s}$:
 
-In the derivation of (8), we have dropped higher order terms corresponding to neglecting higher cumulants of the damage function (e.g., the three-point cumulant Jimj=〈πiπmπj〉−〈πiπm〉〈πj〉−〈πiπj〉〈πm〉−〈πjπm〉〈πi〉+2〈πi〉〈πj〉〈πm〉) to match the lowest order assumed in Equation 5. We also note that stops due to the possibility of more than one radical source attached to the transcript (neglected in the derivation above) can be modeled accurately, to first order, by including a rate ε(i) within the general ‘background’ stopping rate Ri (not shown). In general, all processes that lead to stops or cleavage across all transcripts are subsumed into Ri and Bj. As a corollary to this simplification, however, this framework does not seek or enable deconvolution of the separate contributions to each of these background rates.
+$$
+Stop at i from source s=p_{i}^{s}=1−(1−r_{i})(1−ρ_{i}\pi_{i}^{s})≈r_{i}+ρ_{i}\pi_{i}^{s}.
+$$
 
-In practice, Equation 8 can give unphysical negative values if the subtracted summand becomes large. Following a strategy used in, for example, reference interaction site models for solvation, we ‘close’ the expansion by solving an equation system that is equal to (8) at lowest order, exact in certain limits, and guaranteed to give positive results:(9a)Fij=Aij(RiBj+Qij),(9b)Aij=∏i<m<j(1−Rm)(1−RiQmjFij)(1−ρQimBjFij).
+In Equations 3, 4, a reduction in the number of parameters arises from assuming that oxidative damage events producing reverse transcription stops occur at rates proportional to backbone cleavage rates by a factor $ρ_{i}$. That is, $\pi_{i}^{s}$ parameterizes the local effective concentration of radicals at i from source s, and the partitioning of these radicals into events that lead to cleavage (contributing to $q_{i}^{s}$) vs total damage that can terminate reverse transcription (contributing to $p_{i}^{s}$) is dependent on the chemical environment of the site i and not on source s. The total number of parameters thus reduces from greater than 2N2 to N(N − 1)/2 for $\pi_{i}^{s}$ and 3N for bj, ri, and ε(s). By further enforcing positivity of each of these parameters and assuming that $\pi_{i}^{s}$ is sparse, that is, that each nucleotide gives non-negligible cleavage at a number of residues smaller than N, the number of parameters is reduced to below the number of observables, and the problem becomes well-posed. Requiring sparsity of the proximity map is similar to assumptions used in solvent flattening and other density modification approaches in crystallography (Wang, 1985).
 
-Intuitively, many of the observed products Fij are due to uncorrelated cleavage events Bj and reverse transcription stop events Ri, which produce a ‘plaid’ background pattern. On top of this background is the desired two-point correlation signal Qij, which is non-zero only when nucleotides i and j have both been chemically modified by the same proximal source. Modulating these signals is an attenuation factor Aij, which parameterizes the loss of signal, as a reverse transcriptase must polymerize from j back to i. This factor depends on the general background stop rate Ri, but also includes two additional terms representing the possibility for additional reverse-transcription-stopping damage correlated with the observed cleavage event at j and the observed stopping event at i. (For simplicity and based on separate experiments, we fixed ρ, the ratio of chemical modification to backbone cleavage, as a constant at 2.5; changing this value from 1 to 5 gave indistinguishable results.) We note that the Equation 9a,b is exact in the case of negligible Qij; see references (Aviran et al., 2011; Kladwang et al., 2011b; Kladwang et al., 2014).
+Determining proximity information from raw observables still requires solving a complex system of non-linear equations. We found that direct least-squares optimization of the thousands of variables $\pi_{i}^{s}$ to fit the observed Fij, including Laplace priors to enforce sparsity, required hours even with state-of-the-art numerical optimizers. We instead developed a rapid, iterative strategy to carry out the solution, as described next.
+
+### COHCOA
+
+A closure-based •OH correlation analysis (COHCOA) estimates a solution to Equation 1 to determine a two-point correlation function that is directly read out by MOHCA-seq. In the limit that the fraction damaged at any single nucleotide is smaller than one,
+
+$$
+F_{ij}≈\sums[p_{i}^{s}q_{j}^{s}−\sumi<m<jp_{i}^{s}p_{m}^{s}q_{j}^{s}]\epsilon(s)=〈p_{i}q_{j}〉−\sumi<m<j〈p_{i}p_{m}q_{j}〉,
+$$
+
+where the bracket notation refers to a summation over sources:
+
+$$
+〈f〉=\sums\epsilon(s)f^{s},
+$$
+
+and terms beyond second order are neglected. The effects of the radical cleavage result in a one-dimensional damage profile Ri (corresponding to uncorrelated oxidative damage) and cleavage profile Bj and a two-point correlation function Qij (corresponding to correlated oxidative damage or radical source locations), which encodes the desired proximity map:
+
+$$
+B_{j}=b_{j}+〈\pi_{j}〉R_{i}=r_{i}+ρ_{i}〈\pi_{i}〉Q_{ij}=ρ_{i}[〈\pi_{i}\pi_{j}〉−〈\pi_{i}〉〈\pi_{j}〉],
+$$
+
+leading to the equation
+
+$$
+F_{ij}≈R_{i}B_{j}+Q_{ij}−\sumi<m<j(R_{i}R_{m}B_{j}+R_{m}Q_{ij}+R_{i}Q_{mj}+ρ_{m}Q_{im}B_{j}),
+$$
+
+In the derivation of (8), we have dropped higher order terms corresponding to neglecting higher cumulants of the damage function (e.g., the three-point cumulant $J_{imj}=〈\pi_{i}\pi_{m}\pi_{j}〉−〈\pi_{i}\pi_{m}〉〈\pi_{j}〉−〈\pi_{i}\pi_{j}〉〈\pi_{m}〉−〈\pi_{j}\pi_{m}〉〈\pi_{i}〉+2〈\pi_{i}〉〈\pi_{j}〉〈\pi_{m}〉$) to match the lowest order assumed in Equation 5. We also note that stops due to the possibility of more than one radical source attached to the transcript (neglected in the derivation above) can be modeled accurately, to first order, by including a rate ε(i) within the general ‘background’ stopping rate Ri (not shown). In general, all processes that lead to stops or cleavage across all transcripts are subsumed into Ri and Bj. As a corollary to this simplification, however, this framework does not seek or enable deconvolution of the separate contributions to each of these background rates.
+
+In practice, Equation 8 can give unphysical negative values if the subtracted summand becomes large. Following a strategy used in, for example, reference interaction site models for solvation, we ‘close’ the expansion by solving an equation system that is equal to (8) at lowest order, exact in certain limits, and guaranteed to give positive results:
+
+$$
+F_{ij}=A_{ij}(R_{i}B_{j}+Q_{ij}),
+$$
+
+
+
+$$
+A_{ij}=\prodi<m<j(1−R_{m})(1−\frac{R_{i}Q_{mj}}{F_{ij}})(1−\frac{ρQ_{im}B_{j}}{F_{ij}}).
+$$
+
+Intuitively, many of the observed products Fij are due to uncorrelated cleavage events Bj and reverse transcription stop events Ri, which produce a ‘plaid’ background pattern. On top of this background is the desired two-point correlation signal Qij, which is non-zero only when nucleotides i and j have both been chemically modified by the same proximal source. Modulating these signals is an attenuation factor Aij, which parameterizes the loss of signal, as a reverse transcriptase must polymerize from j back to i. This factor depends on the general background stop rate Ri, but also includes two additional terms representing the possibility for additional reverse-transcription-stopping damage correlated with the observed cleavage event at j and the observed stopping event at i. (For simplicity and based on separate experiments, we fixed $ρ$, the ratio of chemical modification to backbone cleavage, as a constant at 2.5; changing this value from 1 to 5 gave indistinguishable results.) We note that the Equation 9a,b is exact in the case of negligible Qij; see references (Aviran et al., 2011; Kladwang et al., 2011b; Kladwang et al., 2014).
 
 The Equations 9 are solved through iteration in a single script cohcoa_classic.m available in the MAPseeker package. A starting estimate of Ri and attenuation matrix Aij comes from data corresponding to cleavages in the 3′-flanking region, which is initially assumed to not give specific contacts with the target RNA domain. One-dimensional ‘background’ profiles Ri and Bj are determined, which best fit the attenuation-corrected data Fij/Aij. Subtracting the resulting background matrix RiBj from observed Fij results in an initial solution for Qij via equation (9a). Any point of Qij that is negative is reset to zero, and these Ri, Bj, and Qij give an updated solution for the attenuation matrix Aij via equation (9b). New estimates of Ri and Bj are derived from fitting Fij/Aij − Qij via equation (9d) and the process is iterated until convergence. This procedure does not require assuming symmetry of the two-point correlation function Qij, but in the end returns an estimate of this matrix only for (i < j), where there are data Fij. Propagating Poisson counting errors on Fij in Equation 9b gives standard errors on Aij, and combining these errors in quadrature with the errors on Fij in Equation 9a gives final error estimates for the two-point correlation function Qij. Empirically, 20 or fewer iteration cycles lead to convergence for all data sets tested; 40 iterations have been used in this study to ensure convergence of final Qij values within 1% (taking less than 1 min on a MacBook Pro 2.8 GHz Intel Core i7 running MATLAB 2012B). A comparison of raw counts and COHCOA-analyzed data is shown in Figure 1—figure supplement 1.
 
 For visualization of the COHCOA-analyzed data as 2D proximity maps, we first applied a filter to remove points with signal-to-noise ratio < 1, then applied a 2D smoothing algorithm to aid visualization of the strongest features. Finally, we calculated the mean of the filtered and smoothed data with all negative values set to 0, then scaled the data by dividing by 5 times this value.
 
-## One-dimensional chemical mapping of AdoCbl riboswitch aptamer
+### One-dimensional chemical mapping of AdoCbl riboswitch aptamer
 
 We performed one-dimensional (1D) chemical mapping of wild-type AdoCbl riboswitch aptamer and the A124U/A125U double mutant using dimethyl sulfate (DMS), 1-cyclohexyl-[2-morpholinoethyl] carbodiimide metho-p-toluene sulfonate (CMCT), and 1-methyl-7-nitroisatoic anhydride (1M7, SHAPE reagent), as described previously (Kladwang et al., 2011a; Cordero et al., 2012; Kladwang et al., 2014). Briefly, RNAs were transcribed as above with unmodified NTPs only, then PAGE-purified as above on a denaturing 8% polyacrylamide/7 M urea gel, using UV-shadowing of a duplicate sample in an adjacent lane to avoid UV-induced damage (Kladwang et al., 2012b). For 1D chemical mapping, 1.2 pmol of RNA was folded with AdoCbl as described above in 15 µl samples, then modified by adding 5 µl of freshly prepared modification reagent (0.5% DMS, 10.5 mg/ml CMCT, or 4.2 mg/ml 1M7) and incubating at room temperature for 10 min (1M7) or 15 min (DMS, CMCT). RNase-free H2O was added to a no-modification control reaction. Reactions were quenched and RNA was purified and reverse-transcribed as described previously (Tian et al., 2014), then cDNAs were purified, eluted from magnetic beads, and analyzed on an ABI3130xl capillary electrophoresis instrument (Applied Biosystems) (Tian et al., 2014). Sequencing ladders were also prepared in parallel (Tian et al., 2014). The HiTRACE software package version 2.0 (MATLAB toolbox available at https://github.com/hitrace [Yoon et al., 2011] and web server available at http://hitrace.org [Kim et al., 2013]) was used to analyze CE data as described previously, including normalization against GAGUA reference hairpins included at the 5′- and 3′-ends of each construct (Kladwang et al., 2014; Tian et al., 2014).
 
-## Computational modeling
+### Computational modeling
 
-## De novo RNA modeling with M2 and MOHCA-seq constraints
+#### De novo RNA modeling with M2 and MOHCA-seq constraints
 
 We used the Rosetta software (version r56277) to model all RNAs of interest in three steps (software available at https://www.rosettacommons.org/software) (Cheng et al., 2015). Modeling for the AdoCbl riboswitch aptamer was performed with some differences, as noted below. First, we pre-assembled the helix regions of the RNAs using FARNA with full-atom refinement (FARFAR), using the python script helix_preassemble_setup.py. Pre-assembling helices reduced overall computational expense by removing sampling of secondary structure elements. For each helical region, 100 FARFAR models were generated, with the following sample Rosetta command line:
 
@@ -333,7 +732,17 @@ rna_denovo -nstruct 100 -params_file helix.params -fasta helix.fasta -out:file:s
 
 For small RNAs, such as the c-di-GMP riboswitch aptamer, we allowed conformational sampling of helix elements by omitting helix pre-assembly and instead including pseudo-energy constraints (as described below) for secondary structure elements.
 
-Second, we performed low-resolution modeling using the pre-assembled helices and tertiary constraints derived from maxima in the 2D MOHCA-seq proximity map. Tertiary constraints were determined by identifying peaks from analyzed data that were (1) distinguishable from the local background signal by unbiased inspection and (2) not attributable to secondary structure, based on secondary structures inferred by M2 (Kladwang et al., 2011a). This produced a list of pairs of residues that were suggested to be spatially proximal by the MOHCA-seq data (tabulated in Supplementary file 2). We sorted the selected pairs for each RNA into strong and weak hits based on the apparent intensity of the signal relative to the background. For each pair of residues showing a strong MOHCA-seq hit, we constrained the distance between the O2′ of first residue and C4′ of the second residue using a potential of the following form (see graph in Figure 1—figure supplement 2A):S(x)=3x2−2x3,E(d)={4(1−S(d/15))if 0≤d<154S(d/15−1)if 15≤d<304+36S(d/30−1)if 30≤d<6040if d≥60.
+Second, we performed low-resolution modeling using the pre-assembled helices and tertiary constraints derived from maxima in the 2D MOHCA-seq proximity map. Tertiary constraints were determined by identifying peaks from analyzed data that were (1) distinguishable from the local background signal by unbiased inspection and (2) not attributable to secondary structure, based on secondary structures inferred by M2 (Kladwang et al., 2011a). This produced a list of pairs of residues that were suggested to be spatially proximal by the MOHCA-seq data (tabulated in Supplementary file 2). We sorted the selected pairs for each RNA into strong and weak hits based on the apparent intensity of the signal relative to the background. For each pair of residues showing a strong MOHCA-seq hit, we constrained the distance between the O2′ of first residue and C4′ of the second residue using a potential of the following form (see graph in Figure 1—figure supplement 2A):
+
+$$
+S(x)=3x^{2}−2x^{3},
+$$
+
+
+
+$$
+E(d)={4(1−S(d/15))if 0\leqd<154S(d/15−1)if 15\leqd<304+36S(d/30−1)if 30\leqd<6040if d\geq60.
+$$
 
 Here, S is the smoothstep function, d is the distance between the atom pair, and E is the constraint potential in Rosetta energy units. For residue pairs with a weak MOHCA-seq signal, we applied a constraint potential of the same shape but weaker amplitude (1/5 of the original potential).
 

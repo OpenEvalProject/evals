@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.04316.001 Whereas it is well established that chronic stress induces female reproductive dysfunction, whether stress negatively impacts fertility and fecundity when applied prior to mating and pregnancy has not been explored. In this study, we show that stress that concludes 4 days prior to mating results in persistent and marked reproductive dysfunction, with fewer successful copulation events, fewer pregnancies in those that successfully mated, and increased embryo resorption. Chronic stress exposure led to elevated expression of the hypothalamic inhibitory peptide, RFamide-related peptide-3 (RFRP3), in regularly cycling females. Remarkably, genetic silencing of RFRP3 during stress using an inducible-targeted shRNA completely alleviates stress-induced infertility in female rats, resulting in mating and pregnancy success rates indistinguishable from non-stress controls. We show that chronic stress has long-term effects on pregnancy success, even post-stressor, that are mediated by RFRP3. This points to RFRP3 as a potential clinically relevant single target for stress-induced infertility. DOI: http://dx.doi.org/10.7554/eLife.04316.001
+Whereas it is well established that chronic stress induces female reproductive dysfunction, whether stress negatively impacts fertility and fecundity when applied prior to mating and pregnancy has not been explored. In this study, we show that stress that concludes 4 days prior to mating results in persistent and marked reproductive dysfunction, with fewer successful copulation events, fewer pregnancies in those that successfully mated, and increased embryo resorption. Chronic stress exposure led to elevated expression of the hypothalamic inhibitory peptide, RFamide-related peptide-3 (RFRP3), in regularly cycling females. Remarkably, genetic silencing of RFRP3 during stress using an inducible-targeted shRNA completely alleviates stress-induced infertility in female rats, resulting in mating and pregnancy success rates indistinguishable from non-stress controls. We show that chronic stress has long-term effects on pregnancy success, even post-stressor, that are mediated by RFRP3. This points to RFRP3 as a potential clinically relevant single target for stress-induced infertility.
 
 ## Main Text
 
@@ -32,29 +32,29 @@ The present series of studies sought to answer two main questions: 1) Do stressf
 
 In sum, we found that chronic stress led to elevated RFRP3 at all stages of the ovulatory cycle. This elevated level of expression persisted after a full cycle of recovery from stress, indicating that the impact of stress on RFRP3 lasts well beyond removal of the stressor. Stressed females exhibited fewer successful copulation events, fewer pregnancies in those that did successfully mate, and increased frequency of embryo resorption in the achieved pregnancies. These marked effects of stress on fertility were completely blocked by knockdown of RFRP3, even though RFRP3 function was restored following stress cessation. These findings indicate that stress has lingering negative consequences for female reproductive function that are mediated by a transient rise in RFRP3.
 
-Female rats were subjected to an 18 day stress paradigm followed by quantification of hypothalamic markers of reproductive function either immediately after stress exposure or after one full estrous cycle (4 days) of recovery (
+Female rats were subjected to an 18 day stress paradigm followed by quantification of hypothalamic markers of reproductive function either immediately after stress exposure or after one full estrous cycle (4 days) of recovery (Figure 1A). Serum levels of corticosterone (CORT) were measured on days 1, 4, 7, 11, and 18 of the 18 days immobilization stress paradigm, and on day 22, 4 days after the cessation of stressor. Baseline levels at the onset of stress exposure sessions were unchanged throughout the 18 days. However, CORT levels were significantly elevated in samples drawn on days 1, 4, 7, and 11 at the end of the 3-hr stress exposure.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04316/elife-04316-fig1-v1.jpg)
 
-**Figure 1.:** (A) Experimental timeline. (B). Corticosterone was measured in serum samples from tail vein blood immediately before and after stress sessions on days 1, 4, 7, 11, and 18, and on day 22, 4 days post-stress cessation (N = 36/group in 1,4,7,11,18 timepoints, N = 18/group on 22). (C, E, G, I) Gene expression changes in the hypothalamus immediately after stress and (D, F, H, J) 4 days after stress. mRNA levels of all (mean ± SEM, N = 6/group) were determined using qRT–PCR relative to the ribosomal reference gene RPLP at day 0 and 4 post-stress cessation. Estrous cycle staging was determined by inspection of daily vaginal smears. *p < 0.05, **p < 0.01, ***p < 0.001. PCR statistics were done by a Kruskal–Wallis one-way ANOVA followed by Dunn's multiple comparison test for post-hoc analysis, CORT statistics analyzed by a repeated two-way ANOVA.DOI: http://dx.doi.org/10.7554/eLife.04316.003
+**Figure 1.:** (A) Experimental timeline. (B). Corticosterone was measured in serum samples from tail vein blood immediately before and after stress sessions on days 1, 4, 7, 11, and 18, and on day 22, 4 days post-stress cessation (N = 36/group in 1,4,7,11,18 timepoints, N = 18/group on 22). (C, E, G, I) Gene expression changes in the hypothalamus immediately after stress and (D, F, H, J) 4 days after stress. mRNA levels of all (mean ± SEM, N = 6/group) were determined using qRT–PCR relative to the ribosomal reference gene RPLP at day 0 and 4 post-stress cessation. Estrous cycle staging was determined by inspection of daily vaginal smears. *p < 0.05, **p < 0.01, ***p < 0.001. PCR statistics were done by a Kruskal–Wallis one-way ANOVA followed by Dunn's multiple comparison test for post-hoc analysis, CORT statistics analyzed by a repeated two-way ANOVA.
 
 On day 22, after 4 days of recovery from the stressor, the stressed rats exhibited serum CORT concentrations indistinguishable from baseline values (Figure 1B). Rats exhibit a 4–5 days long estrous cycle, with rising estrogen concentrations triggering a surge of luteinizing hormone (LH) to initiate ovulation, and estrogen and progesterone driving sexual receptivity on the night of proestrus (Blaustein, 2008). Stress acutely inhibits the LH surge (Du Ruisseau et al., 1979) and subsequent sexual receptivity and fertility (Sirinathsinghji et al., 1983; Sato et al., 1996). However, it is unknown whether reproductive function continues to be negatively impacted even following recovery from stress (defined as exhibiting baseline levels of CORT after 4 days of no stress exposure). Rats were monitored daily by vaginal smear to determine whether estrous cyclicity was affected during application of the stressor and to allow separation of animals into different cycle stages (diestrus, proestrus, and estrus) at the termination of the stressor. Stress did not affect estrous cyclicity, with all animals exhibiting normal vaginal cytology throughout the stressor, and all animals exhibited a normal 4- to 5-day estrous cycle after the cessation of stress. At all estrous cycle stages, RFRP3 mRNA expression in the hypothalamus was significantly elevated both 0 and 4 days after the stressor was terminated (Figure 1C,D). Hypothalamic expression of the RFRP3 receptor, G-protein-coupled receptor-147 (GPR147), was also upregulated after stress during all stages of the cycle, and returned to baseline values after the cessation of stress (Figure 1E,F). We did not find significant differences in either GnRH or kisspeptin (KISS1) mRNA expression post-stress in any stage of the cycle (Figure 1G–J). However, hypothalamic samples were taken from whole hypothalamus, precluding the ability to differentiate between rostral and caudal kisspeptin cell populations, potentially masking subtle differences. Notably, the persistent increases in the expression of both RFRP3 and its receptor specifically in proestrus coincide with the cyclical onset of sexual receptivity, suggesting that RFRP3 provides a mechanistic basis for long-lasting suppression of reproductive behavior after stress.
 
-To investigate whether the stress-induced increase in RFRP3 plays a causal role in prolonged sexual inhibition, we developed a conditional viral vector to knock down RFRP3 expression (tet-OFF lentivirus RFRP3 shRNA) in vivo during the strictly-defined time window of the chronic stressor. This lentiviral construct expresses RFRP3 shRNA from a constitutively active CMV promoter, driving both shRNA and blue fluorescent protein (BFP) marker expression. When exposed to doxycycline (DOX, via drinking water) (
+To investigate whether the stress-induced increase in RFRP3 plays a causal role in prolonged sexual inhibition, we developed a conditional viral vector to knock down RFRP3 expression (tet-OFF lentivirus RFRP3 shRNA) in vivo during the strictly-defined time window of the chronic stressor. This lentiviral construct expresses RFRP3 shRNA from a constitutively active CMV promoter, driving both shRNA and blue fluorescent protein (BFP) marker expression. When exposed to doxycycline (DOX, via drinking water) (Figure 2A), the tet-Off element is prevented from driving TRE-initiated transcription and both shRNA and BFP production cease (location and extent of viral infection can be seen in Figure 2B,C). Stereotaxic infusion of RFRP3 shRNA lentivirus into the hypothalamus led to an 87% down-regulation of RFRP3 mRNA expression within 7 days relative to a control-scrambled shRNA (Figure 2D). Immunohistological labeling verified that the peptide level in the hypothalamus was similarly knocked down by 85% compared to scrambled control virus, measured 2 weeks following viral injection (Figure 2E, representative images of RFRP labeling with either scramble or RFRP-shRNA virus and pre- and post-DOX administration Figure 2F–I). Critically, administration of doxycycline in the drinking water restored RFRP3 mRNA to normal levels within 4 days (Figure 2D). This viral vector system permitted knocking down of RFRP3 expression during chronic stress and restoration of RFRP3 during the later stages of copulation, mating, and birthing, which may rely on RFRP3 function in unknown ways.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04316/elife-04316-fig2-v1.jpg)
 
-**Figure 2.:** (A) Map of RFRP-shRNA viral plasmid. (B) Brain sectioned and stained with an anti-BFP antibody to label virus infection (green) and anti-RFRP 2 weeks post-injection (WPI) to show injection location and (C) spread. Scale bar indicates 100 µm. (D) mRNA levels of RFRP following injection of RFRP-shRNA viral vector were determined using qRT-PCR (WPI = weeks post-injection, mean ± SEM, N = 4). (E) RFRP3-ir cells/section counts in the DMH after 2 weeks post-injection with either scramble or RFRP-shRNA virus. (F–I) Brain sectioned stained with anti-RFRP3 antibody 2 weeks post-injection with scramble or RFRP-shRNA virus and before and after DOX administration. Scale bar indicates 100 µm. *p < 0.05, **p < 0.01, ***p < 0.001. Statistics were done by one-way analysis of variance (ANOVA) and Bonferroni post-hoc tests. For mRNA data, PCR statistics were done by a Kruskal–Wallis one-way ANOVA followed by Dunn's multiple comparison test for post-hoc analysis and statistics for protein counts were a student's t-test.DOI: http://dx.doi.org/10.7554/eLife.04316.004
+**Figure 2.:** (A) Map of RFRP-shRNA viral plasmid. (B) Brain sectioned and stained with an anti-BFP antibody to label virus infection (green) and anti-RFRP 2 weeks post-injection (WPI) to show injection location and (C) spread. Scale bar indicates 100 µm. (D) mRNA levels of RFRP following injection of RFRP-shRNA viral vector were determined using qRT-PCR (WPI = weeks post-injection, mean ± SEM, N = 4). (E) RFRP3-ir cells/section counts in the DMH after 2 weeks post-injection with either scramble or RFRP-shRNA virus. (F–I) Brain sectioned stained with anti-RFRP3 antibody 2 weeks post-injection with scramble or RFRP-shRNA virus and before and after DOX administration. Scale bar indicates 100 µm. *p < 0.05, **p < 0.01, ***p < 0.001. Statistics were done by one-way analysis of variance (ANOVA) and Bonferroni post-hoc tests. For mRNA data, PCR statistics were done by a Kruskal–Wallis one-way ANOVA followed by Dunn's multiple comparison test for post-hoc analysis and statistics for protein counts were a student's t-test.
 
-A second group of female rats received dorsomedial hypothalamic injections of either RFRP3 shRNA or a scrambled control shRNA lentivirus 3 weeks before the 18 days of immobilization. Estrous cycles were monitored for each rat with immobilization timed to coincide with the onset of estrus, leaving most rats in proestrus 4 days after the end of stress. All rats were administered DOX on the final day of stress so that restoration of RFRP3 expression coincided with the onset of proestrus after the 4-day recovery period. (
+A second group of female rats received dorsomedial hypothalamic injections of either RFRP3 shRNA or a scrambled control shRNA lentivirus 3 weeks before the 18 days of immobilization. Estrous cycles were monitored for each rat with immobilization timed to coincide with the onset of estrus, leaving most rats in proestrus 4 days after the end of stress. All rats were administered DOX on the final day of stress so that restoration of RFRP3 expression coincided with the onset of proestrus after the 4-day recovery period. (Figure 3A). After one full estrous cycle of recovery from stress, rats underwent a timed mating test on the night of proestrus and were monitored through gestation and birth, to assess the long-term effects of stress on reproductive success including successful copulation and pregnancy outcome.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04316/elife-04316-fig3-v1.jpg)
 
-**Figure 3.:** (A) Experimental time line. (B) Corticosterone concentrations were measured in serum samples from tail vein blood immediately before and after stress sessions on days 1, 11, and 18. (C) Total reproductive success was measured as percentage of females that successfully brought a litter to full term (Scramble/control N = 17, Scramble/Stress N = 14, shRNA/control N = 20, shRNA/stress N = 14, g-statistics: G = 5.836, df = 1 p = 0.016, fisher's exact test p = 0.0031). Breaking down total reproductive success, (D) copulation success was measured as percentage of females that exhibited lordosis and allowed a male to achieve intromission within 15 min (g-statistics: G = 2.405, df = 1 p = 0.028, fisher's exact test p = 0.0062), and (E) pregnancy success refers to the percentage of females that got pregnant out of the subgroup that successfully copulated (Scramble/control N = 15, Scramble/Stress N = 6, RFRP-shRNA/control N = 18, RFRP-shRNA/stress N = 11). (F) Litter sizes measured as number of pups born alive immediately after birth (dams-Scramble/control N = 13, Scramble/Stress N = 3, RFRP-shRNA/control N = 16, RFRP-shRNA/stress N = 9). (G) Embryos implanted measured as number of placental scars identified in the dam's uterine horns after birth. (H) Embryo survival was calculated as the number of birthed pups divided by number of maternal placental scars and shown as a percentage (indicative of initial implantation, mean ± SEM) *p < 0.05, **p < 0.01, ***p < 0.001. Reproductive success statistics were done by G-statistics tests followed by Fisher's Exact test, statistics for litter size, placental scars, and embryo resorption were done by a two-way analysis of variance (ANOVA) followed by Bonferroni post-hoc tests and CORT statistics analyzed by a repeated two-way ANOVA.DOI: http://dx.doi.org/10.7554/eLife.04316.005
+**Figure 3.:** (A) Experimental time line. (B) Corticosterone concentrations were measured in serum samples from tail vein blood immediately before and after stress sessions on days 1, 11, and 18. (C) Total reproductive success was measured as percentage of females that successfully brought a litter to full term (Scramble/control N = 17, Scramble/Stress N = 14, shRNA/control N = 20, shRNA/stress N = 14, g-statistics: G = 5.836, df = 1 p = 0.016, fisher's exact test p = 0.0031). Breaking down total reproductive success, (D) copulation success was measured as percentage of females that exhibited lordosis and allowed a male to achieve intromission within 15 min (g-statistics: G = 2.405, df = 1 p = 0.028, fisher's exact test p = 0.0062), and (E) pregnancy success refers to the percentage of females that got pregnant out of the subgroup that successfully copulated (Scramble/control N = 15, Scramble/Stress N = 6, RFRP-shRNA/control N = 18, RFRP-shRNA/stress N = 11). (F) Litter sizes measured as number of pups born alive immediately after birth (dams-Scramble/control N = 13, Scramble/Stress N = 3, RFRP-shRNA/control N = 16, RFRP-shRNA/stress N = 9). (G) Embryos implanted measured as number of placental scars identified in the dam's uterine horns after birth. (H) Embryo survival was calculated as the number of birthed pups divided by number of maternal placental scars and shown as a percentage (indicative of initial implantation, mean ± SEM) *p < 0.05, **p < 0.01, ***p < 0.001. Reproductive success statistics were done by G-statistics tests followed by Fisher's Exact test, statistics for litter size, placental scars, and embryo resorption were done by a two-way analysis of variance (ANOVA) followed by Bonferroni post-hoc tests and CORT statistics analyzed by a repeated two-way ANOVA.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/04316/elife-04316-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Estradiol levels as measured from tail bleed samples over the cycles of all stressed rats with either scrambled or RFRP-shRNA virus (n = 14). (B) Within proestrus, estradiol measurements were separated by mating success and virus (n = 10, 21, 11, 25 samples for each successive group). (C) Lordosis intensity, or quality of the lordosis pose, scored between 0 and 3 as published in Hardy and Debold (1971). We found a significant main effect of stress (F(1, 61) = 5.15, p = 0.0268), however, no significant differences within groups. (D) Lordosis quotient was calculated as the ratio of male mounts to female lordosis poses of a score of 2 or 3. We found a significant main effect of stress (F(1, 61) = 11.66, p = 0.0011), as well a significant decrease in the scramble stress group. p < 0.05, **p < 0.01, ***p < 0.001. Estradiol, lordosis intensity and quotient statistics were a two-way analysis of variance (ANOVA) followed by Bonferroni post-hoc tests.DOI: http://dx.doi.org/10.7554/eLife.04316.006
+**Figure 3—figure supplement 1.:** (A) Estradiol levels as measured from tail bleed samples over the cycles of all stressed rats with either scrambled or RFRP-shRNA virus (n = 14). (B) Within proestrus, estradiol measurements were separated by mating success and virus (n = 10, 21, 11, 25 samples for each successive group). (C) Lordosis intensity, or quality of the lordosis pose, scored between 0 and 3 as published in Hardy and Debold (1971). We found a significant main effect of stress (F(1, 61) = 5.15, p = 0.0268), however, no significant differences within groups. (D) Lordosis quotient was calculated as the ratio of male mounts to female lordosis poses of a score of 2 or 3. We found a significant main effect of stress (F(1, 61) = 11.66, p = 0.0011), as well a significant decrease in the scramble stress group. p < 0.05, **p < 0.01, ***p < 0.001. Estradiol, lordosis intensity and quotient statistics were a two-way analysis of variance (ANOVA) followed by Bonferroni post-hoc tests.
 
 Tail vein serum samples taken at the onset and end of stress sessions on days 1, 11, and 18 revealed that post-stress circulating levels of CORT were elevated on days 1 and 11 of the immobilization period (Figure 3B). Moreover, RFRP3 knockdown during stress did not significantly alter CORT response during stress, indicating an intact hormonal stress response (Figure 3B). Stress exposure led to a profound decrease in total reproductive success in females that received the control virus: only 21% of stressed females became pregnant and carried to live birth, as compared to 76% of non-stressed females with control virus (Figure 3C). 80% of the females that received the RFRP-shRNA virus became pregnant and carried to live birth (Figure 3C). The stress-induced decline in reproductive success resulted from a cumulative decrease in mating success (from 88 and 90% in non-stressed groups to 43% in the stress-scrambled group, Figure 3D) and pregnancy rates in the females that mated (from 87 and 89% in non-stressed groups to 50% in the stress-scrambled group, Figure 3E). Interestingly, knockdown of RFRP3 expression in the hypothalamus during stress exposure prevented the stress-induced suppression of reproduction, leading to 79% copulation success, 82% pregnancy success, and overall reproductive success to 64%, a rate statistically equivalent to control (non-stress) levels (76%, Figure 3C).
 
@@ -66,11 +66,11 @@ Finally, we investigated behavioral measures of female receptivity to test its p
 
 ## Discussion
 
-In humans, high anxiety and psychological stress can lead to long-term impaired fertility, ranging from reduced libido, delayed pregnancy success to the extreme of complete reproductive axis suppression as in the case of hypothalamic amenorrhea (
+In humans, high anxiety and psychological stress can lead to long-term impaired fertility, ranging from reduced libido, delayed pregnancy success to the extreme of complete reproductive axis suppression as in the case of hypothalamic amenorrhea (Ferin, 1999). In our studies, selective knock-down of hypothalamic RFRP3 during stress exposure preserved all aspects of reproductive function that were otherwise reduced in stress-exposed animals (summary schematic, Figure 4). The stress-induced spike in RFRP3 initiates a long-lasting suppression of reproduction, well after the removal of the stressor, perhaps via positive feedback that maintains elevated RFRP3 levels or engages downstream suppressive targets. These findings reveal a single molecular target that persistently underlies a range of different reproductive dysfunctions that may provide a novel translational framework for clinical study of human reproductive health.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04316/elife-04316-fig4-v1.jpg)
 
-**Figure 4.:** Female rats (in pink at top) were injected with either an inducible RFRP-shRNA or a scrambled control virus. Each group was furthered separated into a no stress control or subjected to 18 days of immobilization stress. Stressed females exhibited fewer successful copulation events, fewer pregnancies in those that did successfully mate, and increased frequency of embryo resorption. These marked effects of stress on fertility were completely blocked by knockdown of RFRP3.DOI: http://dx.doi.org/10.7554/eLife.04316.007
+**Figure 4.:** Female rats (in pink at top) were injected with either an inducible RFRP-shRNA or a scrambled control virus. Each group was furthered separated into a no stress control or subjected to 18 days of immobilization stress. Stressed females exhibited fewer successful copulation events, fewer pregnancies in those that did successfully mate, and increased frequency of embryo resorption. These marked effects of stress on fertility were completely blocked by knockdown of RFRP3.
 
 The stress-induced rise in RFRP may be acting on neural circuits influencing mating and pregnancy, potentially independently of sex steroids. RFRP projects to multiple brain regions responsible for successful reproduction and mating behavior, including the medial pre-optic area (mPOA) (where it is known to affect GnRH release) as well as the BNST, medial amygdala, anterior hypothalamus, and arcuate nucleus (Kriegsfeld et al., 2006). Piekarski et al. found that administering RFRP3 to hamsters reduced sexual motivation (as measured by percent of time spent with castrated vs intact males) and vaginal scent marking without effect on lordosis behavior, similar to our present findings. Additionally, RFRP3 administration altered cellular activation in regions of the brain implicated in female sexual motivation, including the mPOA, medial amygdala, and BNST—all regions that receive RFRP projections. These effects were independent of gonadal steroids and kisspeptin cellular activation (Piekarski et al., 2013). While we were unable to measure progesterone or prolactin in this study, it is possible that RFRP projections to the arcuate nucleus affect dopaminergic signaling required for prolactin release and maintenance of progesterone levels and pregnancy success. Future studies aimed at systematically examining each step in these processes is required to gain a full understanding of the neural circuits underlying the deleterious effects of stress on reproduction.
 
@@ -78,33 +78,33 @@ In humans, RFRP 1 and 3, and their cognate receptor are expressed in the hypotha
 
 ## Materials and methods
 
-## Experimental subjects
+### Experimental subjects
 
 Adult female Sprague–Dawley rats were triple-housed on a 12/12-hr light–dark cycle with lights on at 0700 hr and ad libitum food and water. For all studies, rats were acclimated for a week and then vaginal smears were obtained daily to verify normal cyclicity for 12 days before the studies commenced. Rats that did not cycle normally were removed from the study. For the chronic stress experiment, rats were immobilized daily from 9 am to 12 pm (N = 6 for each cycle time point) or left undisturbed in their home cages (N = 6 for each cycle time point) until terminal samples were collected (stress paradigm described below). In the RFRP knockdown study, animals received stereotaxic injections of either RFRP-shRNA (N = 30) or scrambled control (N = 28), then allowed to recover for 3 weeks. After recovery, rats were exposed to the same stress paradigm as the previous experiment. After cessation of stress all animals were left undisturbed in their home cage for 4 days, and on the night of the fourth day observed during timed mating (see below). Rats that successfully mated were left in their home cages for the duration of gestation and then perfused within 24 hr after parturition. (stress/shRNA, N = 14, control/shRNA, N = 20, stress/scrambled, N = 14, control/scrambled, N = 17). One cage of control/scrambled animals were removed from analysis due to fighting. All animal care and procedures were approved by the University of California–Berkeley Animal Care and Use Committee (Protocol R303-0313BC).
 
-## Immobilization stress
+### Immobilization stress
 
 Rats were immobilized in Decapicone bags (Braintree scientific) and placed in individual cages in a fume hood for 3 hr/day for 18 days from 9am-12pm. Blood samples were collected for corticosterone measurement on days 1, 4, 7, 11, and 18 at the onset of the stressor and again at the end of the 3 hr.
 
-## Plasma corticosterone and E2 hormone sampling
+### Plasma corticosterone and E2 hormone sampling
 
 All blood samples were collected from tail vein and centrifuged at 2000×g for 15 min. Plasma was extracted and stored at −20°C until assayed. Corticosterone was measured using a Corticosterone EIA kit (Enzo Life Sciences, Farmingdale, NY) with individual samples used for analysis. Sample values below the detection level of the assay were included as the lowest detectible value. Samples were assayed in duplicate and groups were balanced across different plates. Inter-assay coefficients were <3% and intra-assay coefficients were <5%.
 
 Estradiol assays were run at the University of Virginia Center for Research in Reproduction and were measured by CalBiotech EIA (Spring Valley, CA) in singlet with individual samples used for analysis. Again, sample values below the detection level of the assay were included as the lowest detectible value. Inter-assay coefficients were <2% and intra-assay coefficients were <8%.
 
-## Copulation tests
+### Copulation tests
 
 Females verified to be in proestrus were paired with a novel male in a large rectangular cage under red light illumination during the lights off phase. The male was permitted to mate with the female for up to two ejaculations after which the male was removed from the cage. The interactions were videotaped and both male and female behaviors were blindly scored post-hoc. Females that never exhibited lordosis posture during the test were removed from analysis. Females that exhibit at least one lordosis posture but that did not allow the male to achieve intromission were termed an ‘unsuccessful maters’ and after 15 min removed from the cage.
 
-## Scoring of sexual behaviors
+### Scoring of sexual behaviors
 
 All mating tests were videotaped in real-time for subsequent behavioral scoring. Videos were scored by two individuals blind to the experimental conditions. Behaviors of male and female animals were scored. The lordosis intensity was scored on a 4-point scale (0–3) as described by Hardy and DeBold (Hardy and Debold, 1971) where 0 indicates no lordosis response and 3 indicates a pronounced spinal flexion, and averaged over the number of lordotic poses presented. The lordosis quotient (LQ) was determined as the number of lordosis responses (scores of 2 or 3) divided by the total number of mounts during the scored session. The number of proceptive behaviors was calculated as number of ear wiggles/minute during duration of test, as well as the number of darts and hops through duration of test. Males were scored for total number of mounts and intromissions.
 
-## Measurement of placental scars
+### Measurement of placental scars
 
 Post-partum mothers were sacrificed 1-day post-partum. The abdominal cavity was opened and both uterine horns gently removed. Placental scars were identified as distinctive dark brown spots, counted, and logged (Conaway and Conaway, 1955).
 
-## Virus preparation
+### Virus preparation
 
 The viral vector pLenZs-tetOFF-BFP-shRNAmir-HygR was redesigned based on the backbone of pGIPZ vector originally from Open Biosystems to implement the new features and better single restriction enzyme cutting sites for molecular cloning. Briefly, PCR products for tetOFF and its response elements (TetOff Gene Expression System from Clontech, Mountain View, CA), tagBFP (pTagBFP-H2B vector from Evrogen, Farmingdale, NY), and a hygromycin-resistant gene (pSilencer-hygro vector from Ambion, Grand Island, NY) were inserted in to the original pGIPZ vector to replace the unwanted components (e.g., original fluorescent protein and the puromycin resistant gene). The constructed vector map is shown in Figure 2D. To construct the shRNA against RFRP, a 22 nucleotide-mer oligo against RFRP gene was designed using the online program maintained by Dr Ravi Sachidanandam's Lab (http://katahdin.mssm.edu/siRNA/RNAi.cgi?type=shRNA). The oligo was inserted into the linearized pLenZs-tetOFF-BFP-shRNAmir-HygR vector using KpnI and EcoRI enzymes after adding enzyme arms on both sides of the oligo using PCR. Lentiviral particles were prepared by PEG-2000 purification of transfected Hek-293 cells and concentrated to titers of 109–1010 infectious particles per ml. The control virus was a non-silence vector commercially available from Open Biosystems (Lafayette, CO), with similar GC content and BLASTed to verify non-specificity.
 
@@ -112,20 +112,95 @@ RFRP sequence: CACAGCAAAGAAGGTGACGGAA.
 
 Control sequence: CTCTCGCTTGGGCGAGAGTAAG.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 Stereotaxic microinjections of the RFRP-shRNA and scrambled control viral particles were injected in the hypothalamus as described previously (Goosens and Maren, 2001). Coordinates for viral injection into the dorsal medial hypothalamus were: −3.3 mm anterior/posterior, ±0.5 mm medial/lateral relative to bregma, −8.4 mm relative to dura with skull level between bregma and lambda. Virus was infused at a rate of 0.2 μl/min for 5 min (1 μl total). At 6–8 hr after surgery, all rats received an injection of meloxicam (2 mg/kg, s.c.).
 
-## Immunohistochemical staining for virus verification
+### Immunohistochemical staining for virus verification
 
 One series of free-floating sections were rinsed in 0.1M PBS then incubated in 0.3% H202 in PBS for 10 min. After rinsing, tissue was blocked with 2% normal donkey serum, 0.3% Triton-X 100 in PBS, then transferred into primary antibody against GnIH (PAC123/124, Bentley) 1:5000 in PBS plus 0.3% Triton-100 [PBS-T] and sections were incubated in antibody overnight, on rotation, at 4°C. The next day, sections were rinsed in PBS and incubated in secondary for 1 hr at room temperature (Biotin donkey anti-rabbit 1:500, Jackson ImmunoResearch, West Grove, PA). Following rinsing, sections were incubated in ABC reagent (Vector) and then amplified by incubating in biotinylated tyramide for 30 min. Tertiary incubation for 1 hr at room temperature followed with streptavidin-Alexa594 (1:1000 in PBS, Jackson Immunoresearch). Following tertiary incubation, sections were incubated in an antibody against blue-fluorescent protein (anti-BFP; 1:5000, Abcam, Cambridge, MA) on a rotating stage, overnight, at 4°C. The next day, sections were rinsed in PBS then incubated in secondary antibody for 2 hr at room temperature (donkey anti-rabbit cy5, Jackson Immunoresearch). After rinsing in PBS-T, slides were coverslipped using DABCO antifading medium and stored in the dark at 4°C.
 
-## Real-time reverse transcriptase PCR
+### Real-time reverse transcriptase PCR
 
 Real-time reverse transcriptase PCR was run on TRIzol-extracted RNA further purified with DNase (DNA-free, Ambion). Rat primers were designed using NCBI Primer BLAST software, which verifies specificity. The Ct values were determined using PCR miner (Zhao and Fernald, 2005) and normalized to the ribosomal reference gene, ribosomal protein L16P (RPLP). There were no significant differences in RPLP values across any groups. For all studies, two-step PCR was used, following the manufacturer's instructions for iScript cDNA synthesis kit (BioRad, Hercules, CA) and then the manufacturer's instructions for SsoAdvanced SYBR supermix (BioRad). Samples were run in a BioRad CFX96 real-time PCR system. After the PCR was complete, specificity of each primer pair was confirmed using melt curve analysis, and all samples run on a 2% ethidium bromide agarose gel with a 50-bp DNA ladder (Invitrogen, Carlsbad, CA) to verify correct product size.
 
-Primer sequences:PrimerForwardReverseTempProduct SizeRPLPATCTACTCCGCCCTCATCCTGCAGATGAGGCTTCCAATGT55159RFRPCCAAAGGTTTGGGAGAACAAGGGTCATGGCATAGAGCAAT55110GPR147GGTCAGAACGGGAGTGATGTAGGAAGATGAGCACGTAGGC55119LHβGCAAAAGCCAGGTCAGGGATAGAGGCCCACACCACACTTGG5592FSHβTTCAGCTTTCCCCAGGAGAGATAGATCTTATGGTCTCGTACACCAGCT55305TSHβTCGTTCTCTTTTCCGTGCTTCGGTATTTCCACCGTTCTGT55245glycoprotein alpha subunitCTATCAGTGTATGGGCTGTTGCTTGTGGTAGTAACAAGTGC55199KISS1TGGCACCTGTGGTGAACCCTGATCAGGCGACTGCGGGTGGCA61.4202GnRHGCAGATCCCTAAGAGGTGAACCGCTGTTGTTCTGTTGACT55201
+Primer sequences:
 
-## Statistical analysis
+<table>
+  <tbody>
+    <tr>
+      <td>Primer</td>
+      <td>Forward</td>
+      <td>Reverse</td>
+      <td>Temp</td>
+      <td>Product Size</td>
+    </tr>
+    <tr>
+      <td>RPLP</td>
+      <td>ATCTACTCCGCCCTCATCCT</td>
+      <td>GCAGATGAGGCTTCCAATGT</td>
+      <td>55</td>
+      <td>159</td>
+    </tr>
+    <tr>
+      <td>RFRP</td>
+      <td>CCAAAGGTTTGGGAGAACAA</td>
+      <td>GGGTCATGGCATAGAGCAAT</td>
+      <td>55</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>GPR147</td>
+      <td>GGTCAGAACGGGAGTGATGT</td>
+      <td>AGGAAGATGAGCACGTAGGC</td>
+      <td>55</td>
+      <td>119</td>
+    </tr>
+    <tr>
+      <td>LHβ</td>
+      <td>GCAAAAGCCAGGTCAGGGATAG</td>
+      <td>AGGCCCACACCACACTTGG</td>
+      <td>55</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>FSHβ</td>
+      <td>TTCAGCTTTCCCCAGGAGAGATAG</td>
+      <td>ATCTTATGGTCTCGTACACCAGCT</td>
+      <td>55</td>
+      <td>305</td>
+    </tr>
+    <tr>
+      <td>TSHβ</td>
+      <td>TCGTTCTCTTTTCCGTGCTT</td>
+      <td>CGGTATTTCCACCGTTCTGT</td>
+      <td>55</td>
+      <td>245</td>
+    </tr>
+    <tr>
+      <td>glycoprotein alpha subunit</td>
+      <td>CTATCAGTGTATGGGCTGTTG</td>
+      <td>CTTGTGGTAGTAACAAGTGC</td>
+      <td>55</td>
+      <td>199</td>
+    </tr>
+    <tr>
+      <td>KISS1</td>
+      <td>TGGCACCTGTGGTGAACCCTG</td>
+      <td>ATCAGGCGACTGCGGGTGGCA</td>
+      <td>61.4</td>
+      <td>202</td>
+    </tr>
+    <tr>
+      <td>GnRH</td>
+      <td>GCAGATCCCTAAGAGGTGAA</td>
+      <td>CCGCTGTTGTTCTGTTGACT</td>
+      <td>55</td>
+      <td>201</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 In the chronic stress and reproductive success experiments, group differences in reproductive success, mating success, and pregnancy success were examined using G-statistics and Fisher's exact tests on raw numbers, not percentages. Litter size, placental scar, embryo survival, estradiol measurements, lordosis quotient, and intensity differences were assessed using two-way analysis of variance (ANOVA) followed by Bonferroni post-hoc tests. Differences in genes examined via RT-PCR were analyzed by a Kruskal–Wallis one-way ANOVA followed by Dunn's multiple comparison test for post-hoc analysis. Differences in corticosterone concentrations were subjected to repeated two-way ANOVAs followed by Bonferroni post-hoc test to determine statistical differences. *p < 0.05, **p < 0.01, ***p < 0.001. Statistics were performed using R (for G-statistics and Fisher's exact test) and Prism software.

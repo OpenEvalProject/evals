@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02en5vm52 Laboratoire Jean Perrin, Sorbonne Université Paris France
-2. https://ror.org/013cjyk83 Laboratoire de Physique de l’Ecole normale supérieure, ENS, Université PSL, CNRS, Sorbonne Université, Université Paris Cité Paris France
-3. https://ror.org/05290cv24 Department of Structures for Engineering and Architecture, University of Naples "Federico II" Naples Italy
-4. https://ror.org/013cjyk83 Institut Curie, PSL Research University, INSERM Paris France
-5. https://ror.org/02en5vm52 Institut Universitaire de Cancérologie, Faculté de médecine, Sorbonne Université Paris France
+1. Laboratoire Jean Perrin, Sorbonne Université Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
+2. Laboratoire de Physique de l’Ecole normale supérieure, ENS, Université PSL, CNRS, Sorbonne Université, Université Paris Cité Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+3. Department of Structures for Engineering and Architecture, University of Naples "Federico II" Naples Italy ([ROR:05290cv24](https://ror.org/05290cv24))
+4. Institut Curie, PSL Research University, INSERM Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+5. Institut Universitaire de Cancérologie, Faculté de médecine, Sorbonne Université Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
 
 † Corresponding author
 
@@ -35,11 +35,11 @@ To this end, we briefly review the literature on the interactions between differ
 
 **Figure 1.:** We incorporate four species with specific interactions, that may lead to different outcomes.
 
-## Lung cancer microenvironment
+### Lung cancer microenvironment
 
 Modeling the tumor environment requires a deep understanding of the interactions between the various components, such as cells of different types, soft materials, and fibers as well as fluids and diffusing molecules. These interactions are summarized in section Interactions Between TME Components. Next, in section Lung TME Composition, we present data on the density of the different cell types in the TME. Indeed, our continuous approach incorporates in vivo biological data that vary between patients and tumor sites, and also evolve over time within the tumor. Therefore, after a review of the available values found in the literature, we performed direct measurements from samples stained by multiplex IHC to study the composition of fibroblasts and distribution of T-cells in human NSCLC tumors in situ (Grout et al., 2022).
 
-## Interactions between TME components
+#### Interactions between TME components
 
 Almost all tissues contain a population of fibroblasts that provide the tissue architecture, and serve as sentinels for tissue dysfunctions. When a solid tumor grows, quiescent or progenitor lung fibroblasts activate an initial wound-healing response with increased production of ECM and growth factor (cytokine) and upregulation of activation markers such as FAP (Salmon et al., 2019). Due to mechanotransduction and/or biochemical signals from tumor or immune cells, CAFs often increase their level of contractility, which affects the maintenance of the tumor stroma (Dvorak, 1986). CAFs are characterized by their increased mobility, proliferation, and ECM remodeling and, unlike wound-associated fibroblasts, they seem to undergo poorly reversible activation in absence of an appropriate therapy (Nakamura et al., 2004; Wang et al., 2009; Peng et al., 2013; Kalluri, 2016). The diversity of this population, resulting from phenotypic modifications, explains their diverse functions and localization in the stroma, close or distant from the tumor nest (Barrett and Puré, 2020; Grout et al., 2022).
 
@@ -51,149 +51,488 @@ Activated fibroblasts produce fibers that act as a mechanical barrier around the
 
 In the context of non-small cell lung carcinoma (NSCLC), the recruitment of CD8 + T-cells seems to be modulated by a specific tumor-associated antigen present on the surface of the cancer cells (Hiraoka et al., 2006). In particular, in the family of inflammatory proteins, also called cytokines, Interlukin-6 (IL6) and (IL8) seem, among others to stimulate the infiltration of CD8+ (Liu et al., 2022; McKeown et al., 2004; Brenner et al., 2017). The origins of CD8+ T-cells that infiltrate the tumor are diverse, as they differentiate from both circulating and tissue-resident precursors (Gueguen et al., 2021). However, infiltration alone does not imply that the immune response is efficient. In fact, an immunotherapy such as anti-PD1/PDL1 antibodies is often needed to boost the response of these T-cells. Chemical factors also play an important role in attracting T-cells via chemotaxis, such as the chemokines produced by dendritic cells or cancer cells (Brown et al., 2007). The absence of such chemicals leads to the formation of the so-called immune-desert tumor (Figure 2A).
 
-## Lung TME composition
+#### Lung TME composition
 
 For a quantitative modeling, it is critical to use biologically well-identified data on both tumor and stroma, in terms of the density and the localization of the different species. Therefore, we survey the literature to build a quantitative view for the composition of the TME. We recapitulate these values in Table 1. However, human data show a great diversity depending on many factors such as tumor edge, patient age, non-cancer health status, as well as method of analysis. The fibroblast population in the stroma, which is very heterogeneous and not easy to identify, is the best example. In particular, although fibroblasts are often considered to be a major component of the stroma, they are only found in small proportions in scRNA-seq with 10 X single-cell systems, which may be rather surprising. This situation is well known and may be due to tissue digestion processes, to the fact that part of the stroma is not extracted with the tumor nodule, and to a lower efficiency of 10 X single-cell systems for fibroblasts. Another caveat is that identifying the surface fraction of cells by staining can be very different from counting individual cells. In fact, cell types can vary greatly in size. For example, lung cancer cells have a diameter between 13–18 μm (Hosokawa et al., 2013), fibroblasts ∼16 μm (Mitsui and Schneider, 1976), and T-cells between 5–10 μm (Tasnim et al., 2018), resulting in volumes and projected areas that can be 10 times smaller for T-cells compared to fibroblasts and cancer cells for the same densities. Moreover, in some studies, authors focus on well-characterized zones of enrichment for the different species (tumor nest, fibrotic areas), and do not consider each cell type per se (Sieren et al., 2010; Sieren et al., 2011). Despite these remarks, cancer cells, T-cells, and α TME. The limitations of using data coming from the literature led us to perform our own measurements. In this study, we analyzed data from 13 patients with lung squamous cell carcinoma (LUSC) and 22 patients with lung adenocarcinoma (LUAD), based on a recent publication by some of the present authors (Grout et al., 2022). In this previous study, different fibroblast types were identified using multiplex IHC imaging. Tumor islets were stained with keratin, T-cells with CD3, and fibroblasts with αSMA, FAP, and ADH1B. The coverage was evaluated for each fibroblast type and the total fibroblast coverage corresponds to the sum of these different coverages. Here, in the case of LUSC, we found that fibroblasts (composed of 6% ADH1B, 37% FAP+ αSMA, 25% FAP+ αSMA+, 31% FAP+ αSMA+) occupy 35% of the stroma with a tumor stroma ratio (TSR) of 1.29. In LUAD, these proportions were partly modified: fibroblasts (composed of 48% ADH1B, 18% FAP+ αSMA−, 7% FAP++ αSMA+, 26% FAP− αSMA+) occupy 31% of the stroma, with a TSR of 1.07. The fibroblasts most responsible for T-cell exclusion are shown to be FAP+ αSMA+(Grout et al., 2022). In Figure 3, we compare two microenvironments. In the top one, FAP+ αSMA+ are lining the tumor (Figure 3a, c, d), and T-cells are excluded from it (Figure 3b). On the contrary, in cases where no FAP+ αSMA+ are observed, fibroblasts are homogeneously distributed in the stroma (Figure 3g, e, h), and T-cells infiltrate the tumor (Figure 3f). Although no data were directly obtained for the surface fraction of T-cells, the estimated number of CD3+ T-cells measured in both tumor islands and stroma suggests a low surface fraction compared to cancer cells and fibroblasts (see Appendix C, Raw data for Table 1).
+
+**Table 1.**
+ Composition of the tumor microenvironment.This table presents the literature about the fraction of different species in the lung TME. The values found in the present studies are written in the two last rows (raw data is provided as Supplementary Material). Different methods have been used, in different subtypes of lung cancer. We introduce the following abbreviations. (C-c): Cancer cells. (MΦ): Macrophages. (T-c): T-cells. (Fb): Fibroblasts. (scRNA-seq): single-cell RNA seq,(NSCLC): Non Small Cell Lung Cancer, (LUAD): Adenocarcinoma, (SSN): Sub-Solid Nodule. (S): stroma region. (T): tumor nest region. (ST): Stroma + tumor nest region. (TSR): tumor stroma ratio. Data for Ref (Ireland et al., 2020; Kim et al., 2020; Laughney et al., 2020; Maynard et al., 2020; Qian et al., 2020) were extracted from Curated Cancer Cell Atlas, 2023.Table 1—source data 1.Raw data for the two last lines of the table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Sample</th>
+      <th>C-c (%)</th>
+      <th>T-c (%)</th>
+      <th>Fb (%)</th>
+      <th>MΦ(%)</th>
+      <th>TSR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Staining Sieren et al., 2010</td>
+      <td>LUAD</td>
+      <td>&gt;25</td>
+      <td></td>
+      <td>&gt;20</td>
+      <td></td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Staining Sieren et al., 2011</td>
+      <td>LUAD</td>
+      <td>67</td>
+      <td></td>
+      <td>&gt;6.5</td>
+      <td></td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <td>scRNA-seq Lambrechts et al., 2018</td>
+      <td>NSCLC</td>
+      <td></td>
+      <td>55 (S)</td>
+      <td>4 (S)</td>
+      <td>15 (S)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scRNA-seq Ireland et al., 2020</td>
+      <td>SCLC</td>
+      <td>76</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scRNA-seq Kim et al., 2020</td>
+      <td>LUAD</td>
+      <td>33</td>
+      <td>19.5</td>
+      <td>∼6</td>
+      <td>20.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scRNA-seq Laughney et al., 2020</td>
+      <td>LUAD</td>
+      <td>&lt;12</td>
+      <td>42.6</td>
+      <td>∼1</td>
+      <td>12.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scRNA-seq Maynard et al., 2020</td>
+      <td>NSCLC</td>
+      <td>&lt;22.7</td>
+      <td>16</td>
+      <td>8</td>
+      <td>23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scRNA-seq Qian et al., 2020</td>
+      <td>mixed</td>
+      <td>19.9</td>
+      <td>28.1</td>
+      <td>∼2</td>
+      <td>27.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scRNA-seq Xing et al., 2021</td>
+      <td>LUAD</td>
+      <td>16.4</td>
+      <td>30</td>
+      <td>∼2</td>
+      <td>18.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scRNA-seq Altorki et al., 2022</td>
+      <td>LUAD</td>
+      <td>12</td>
+      <td>7.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Staining Mathieson et al., 2022</td>
+      <td>NSCLC</td>
+      <td></td>
+      <td></td>
+      <td>75 (S), 0 (T)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Staining (present article)</td>
+      <td>LUAD</td>
+      <td>47±13</td>
+      <td></td>
+      <td>31±17 (S), 0 (T)</td>
+      <td></td>
+      <td>1.07±0.68</td>
+    </tr>
+    <tr>
+      <td>Staining (present article)</td>
+      <td>LUSC</td>
+      <td>54±10</td>
+      <td></td>
+      <td>35±12 (S), 0(T)</td>
+      <td></td>
+      <td>1.30±0.53</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101885/elife-101885-fig3-v1.jpg)
 
 **Figure 3.:** Staining was performed by multiplex immuno-histochemistry (IHC). FFPE NSCLC sections were stained for keratin as a marker of cancer cells (gray), CD3 (yellow), and fibroblast markers αSMA (green), FAP (red). First row: CD3 excluded patient. (a) Scheme of the section showing CD3+ cell exclusion from tumor nests. The green arrow highlights border regions with contractile fibroblast barrier αSMA+ FAP+ and low CD3+ cells. (b) CD3+ cells are localized in the center of the stroma. (c) Dense αSMA staining at the tumor border are associated with a decrease of CD3+ cell abundance. (d) Recap of all the markers. Second row: CD3 infiltrated patient. (e) Scheme of the section showing CD3+ infiltration in the tumor islets. The green arrow shows αSMA+ staining on vessels. (f) CD3+ are localized in the tumor nest. (g) FAP+ staining is localized throughout the stroma. (h) Recap of all the markers.
 
-## Dynamic modeling in the lung cancer TME
+### Dynamic modeling in the lung cancer TME
 
 Our theoretical and numerical analyses consist of two steps in the spirit of the article of Olmeda and Ben Amar, 2019 for the study of cancer stem cells. In a first analysis, we examine only the dynamics of an interactive ecological system in order to evaluate the physical parameters that quantify these interactions and how the dynamics depend on them. Spatial constraints are represented by a pressure term avoiding overcrowding. We present this approach step by step in order to set the parameters one by one, highlighting the physical importance of each choice through stability analyzes of the system. In addition, this first step allows to explore efficiently the parameter space without time-consuming numerical resolution, and to already produce a first classification of the global outcomes. The second step is the spatial description of the tumor growth in Section Spatio-Temporal Behavior of Tumor Growth. In both approaches, the case where fibroblasts, cancer cells, and T-cells are present is intended to correspond to the patient data presented in the previous section.
 
-## Dynamical system for immune and cancer cells in interaction
+#### Dynamical system for immune and cancer cells in interaction
 
 As we saw in the previous section, the complexity of the microenvironment makes the role of the immune system hardly predictable and highly dependent on the tumor being studied. In the case of lung tumors, the immune system is triggered as the carcinoma expands, but T-cells may be excluded from the tumor nest by activated fibroblasts. Therefore, the goal of this work is to physically and quantitatively understand the process of T-cell exclusion from the tumor mass in the simplest way possible, and to explore different possible scenarios, since the dynamical system can be seen as the spatial integration of the different processes over the domain under study.
 
-We focus on the interaction between different cell types in the case of the NSCLC. In particular, we consider a closed system including the cancer cells, T-cells, non-activated fibroblasts (NAFs), cancer-associated fibroblasts (CAFs) and healthy cells with the extracellular medium. Diffusive signaling molecules are not explicitly introduced: their production by one cell type and their effect on another cell type is modeled as a direct interaction between the two. For example, the attraction of T-cells to cancer cells by chemotaxis is introduced in the mathematical model as a source term proportional to the product of the two concentrations T and C in the T-cell equation (see below Equation 2). We also hypothesize that the main difference between NAFs and CAFs is the fiber production of the latter, which prevents T-cells from infiltrating the tumor. Furthermore, our model does not consider transformation of NAFs into CAFs as a reversible process. All these cells have the same mass density and the sum of their mass fraction satisfies the relationship S=C+T+FNA+FA=1−N, where N is a healthy non active component such as healthy cells and interstitial fluid, for example. The mass fraction of cancer cells is represented by C, T-cells by T, quiescent or non-activated fibroblasts NAFs by FNA, activated fibroblasts CAFs by FA. Note that N which is not an active component does not appear in the following equations. Also, we do not consider here the recruitment of macrophages to better highlight the competing mechanisms related to the sole role of T-cells and CAFs in the tumor mass development. With this in mind, we write an evolution equation for each component of the system: dX/dt=ΓX, where ΓX corresponds to a source term modeling the proliferation, death, differentiation, or fluxes into/out of the system under study. The source terms for each species are described in detail below.
+We focus on the interaction between different cell types in the case of the NSCLC. In particular, we consider a closed system including the cancer cells, T-cells, non-activated fibroblasts (NAFs), cancer-associated fibroblasts (CAFs) and healthy cells with the extracellular medium. Diffusive signaling molecules are not explicitly introduced: their production by one cell type and their effect on another cell type is modeled as a direct interaction between the two. For example, the attraction of T-cells to cancer cells by chemotaxis is introduced in the mathematical model as a source term proportional to the product of the two concentrations T and C in the T-cell equation (see below Equation 2). We also hypothesize that the main difference between NAFs and CAFs is the fiber production of the latter, which prevents T-cells from infiltrating the tumor. Furthermore, our model does not consider transformation of NAFs into CAFs as a reversible process. All these cells have the same mass density and the sum of their mass fraction satisfies the relationship $S=C+T+F_{NA}+F_{A}=1−N$, where $N$ is a healthy non active component such as healthy cells and interstitial fluid, for example. The mass fraction of cancer cells is represented by $C$, T-cells by $T$, quiescent or non-activated fibroblasts NAFs by $F_{NA}$, activated fibroblasts CAFs by $F_{A}$. Note that $N$ which is not an active component does not appear in the following equations. Also, we do not consider here the recruitment of macrophages to better highlight the competing mechanisms related to the sole role of T-cells and CAFs in the tumor mass development. With this in mind, we write an evolution equation for each component of the system: $dX/dt=Γ_{X}$, where $Γ_{X}$ corresponds to a source term modeling the proliferation, death, differentiation, or fluxes into/out of the system under study. The source terms for each species are described in detail below.
 
-The dynamics of the cancer cells are driven by their proliferation, controlled by a growth rate coefficient αC, and limited by a death rate δ~C. It takes into account the population pressure caused by self-inhibition as well as by the inhibition of the other species. In the following, we will choose αC−1 as the unit of time, and all coefficients introduced in the following will be pure constants without unit, so that δ~C=αCδC. In addition, cytotoxic T-cells eliminate cancer cells if their anti-tumor activity is not inhibited by the activated fibroblasts (although they do not remove T-cells from the mixture). This process is quantified by the cytotoxic coefficient δCT, and by the coefficient of T-cell inhibition by CAFs, δTF. With these assumptions, the dynamics of the cancer cell mass fraction can be read:(1)dCdt=C−δCTCT1+δTFFA−δCCS.
+The dynamics of the cancer cells are driven by their proliferation, controlled by a growth rate coefficient $\alpha_{C}$, and limited by a death rate $\delta~_{C}$. It takes into account the population pressure caused by self-inhibition as well as by the inhibition of the other species. In the following, we will choose $\alpha_{C}^{−1}$ as the unit of time, and all coefficients introduced in the following will be pure constants without unit, so that $\delta~_{C}=\alpha_{C}\delta_{C}$. In addition, cytotoxic T-cells eliminate cancer cells if their anti-tumor activity is not inhibited by the activated fibroblasts (although they do not remove T-cells from the mixture). This process is quantified by the cytotoxic coefficient $\delta_{CT}$, and by the coefficient of T-cell inhibition by CAFs, $\delta_{TF}$. With these assumptions, the dynamics of the cancer cell mass fraction can be read:
 
-Although proliferation of cytotoxic T-cells has been observed, we do not consider explicitly proliferation in our study as we focus on their ability to infiltrate the tumor. Rather, we consider that T-cells proliferate outside the domain boundaries, so that this proliferation is included in the boundary source contributions. Therefore, their only source is their attraction to cancer cells, which occurs at a recruitment rate of αTCC, while the crowding limits this recruitment:(2)dTdt=αTCC−δTTS.
+$$
+\frac{dC}{dt}=C−\frac{\delta_{CT}CT}{1+\delta_{TF}F_{A}}−\delta_{C}CS.
+$$
 
-Fibroblasts are the key regulators of tumor immunity and progression. Their dynamics involve a recruitment of non-activated fibroblasts αNA whose role is to maintain an adequate supply given by αNA/δNA in healthy tissue, i.e., in the absence of cancer cells, and a death rate due to the pressure exerted by the cells and controlled by δNA. NAFs are attracted to the tumor nest at a rate αNA,CC by the cancer cells that activate them to become CAFs. This process is accounted by introducing a specific transformation rate controlled by the plasticity coefficient KA, so that the dynamic equation for NAFs reads:(3)dFNAdt=αNA+αNA,CC−KAFNAC−δNAFNAS.
+Although proliferation of cytotoxic T-cells has been observed, we do not consider explicitly proliferation in our study as we focus on their ability to infiltrate the tumor. Rather, we consider that T-cells proliferate outside the domain boundaries, so that this proliferation is included in the boundary source contributions. Therefore, their only source is their attraction to cancer cells, which occurs at a recruitment rate of $\alpha_{TC}C$, while the crowding limits this recruitment:
 
-Thus, the dynamics of the CAFs is purely determined by the transformation of the NAFs and by the pressure through δA, which leads to:(4)dFAdt=KAFNAC−δAFAS.
+$$
+\frac{dT}{dt}=\alpha_{TC}C−\delta_{T}TS.
+$$
+
+Fibroblasts are the key regulators of tumor immunity and progression. Their dynamics involve a recruitment of non-activated fibroblasts $\alpha_{NA}$ whose role is to maintain an adequate supply given by $\alpha_{NA}/\delta_{NA}$ in healthy tissue, i.e., in the absence of cancer cells, and a death rate due to the pressure exerted by the cells and controlled by $\delta_{NA}$. NAFs are attracted to the tumor nest at a rate $\alpha_{NA,C}C$ by the cancer cells that activate them to become CAFs. This process is accounted by introducing a specific transformation rate controlled by the plasticity coefficient $K_{A}$, so that the dynamic equation for NAFs reads:
+
+$$
+\frac{dF_{NA}}{dt}=\alpha_{NA}+\alpha_{NA,C}C−K_{A}F_{NA}C−\delta_{NA}F_{NA}S.
+$$
+
+Thus, the dynamics of the CAFs is purely determined by the transformation of the NAFs and by the pressure through $\delta_{A}$, which leads to:
+
+$$
+\frac{dF_{A}}{dt}=K_{A}F_{NA}C−\delta_{A}F_{A}S.
+$$
 
 Therefore, the role of fibroblasts in human lung carcinoma can be investigated by studying the interplay between cancer cells and the TME. The interactions discussed above are described by 10 parameters and lead to a system of four coupled nonlinear differential equations concerning four unknowns. Within this framework, we proceed to the estimation of the parameters and the steady states of the system.
 
-## Model parameters and fixed point analysis
+#### Model parameters and fixed point analysis
 
-When all the parameters vary, the steady states or the equilibrium points of the dynamics can be quite impractical, so we start by assuming that all the coefficients at the origin of a pressure are equivalent: δ=δC=δT=δA=δNA>0. This reduces the number of independent parameters to 7. Fixed points are obtained by setting the time derivatives in Equations 1–4 to 0 which gives the long-term behavior when the system reaches equilibrium.
+When all the parameters vary, the steady states or the equilibrium points of the dynamics can be quite impractical, so we start by assuming that all the coefficients at the origin of a pressure are equivalent: $\delta=\delta_{C}=\delta_{T}=\delta_{A}=\delta_{NA}>0$. This reduces the number of independent parameters to 7. Fixed points are obtained by setting the time derivatives in Equations 1–4 to 0 which gives the long-term behavior when the system reaches equilibrium.
 
-In order to evaluate the values of the parameters in Equations 1–4, we study different simplified situations that can be reproduced in experiments in vitro or in controlled experiments in vivo. We also use the conclusions obtained in Section Lung TME Composition for the cell densities. We will start by analyzing the case of cancer cells alone and we will successively add all the other cell types with fractions C,T,FNA,FA. More details on the calculations can be found in Appendix 1, Section A, Dynamical system.
+In order to evaluate the values of the parameters in Equations 1–4, we study different simplified situations that can be reproduced in experiments in vitro or in controlled experiments in vivo. We also use the conclusions obtained in Section Lung TME Composition for the cell densities. We will start by analyzing the case of cancer cells alone and we will successively add all the other cell types with fractions $C,T,F_{NA},F_{A}$. More details on the calculations can be found in Appendix 1, Section A, Dynamical system.
 
-## Cancer cells and T-cells
+##### Cancer cells and T-cells
 
-The dynamic evolution of cancer cells alone is limited to: dC/dt=C−δC2. This equation leads to two equilibrium fixed points: C=0 and C=δ−1 and only the second one C=δ−1 is stable. When cancer cells are isolated from other active cellular components, they are expected to invade the system or to be its major component, leading to a cancer death rate of δ∼1.
+The dynamic evolution of cancer cells alone is limited to: $dC/dt=C−\deltaC^{2}$. This equation leads to two equilibrium fixed points: $C=0$ and $C=\delta^{−1}$ and only the second one $C=\delta^{−1}$ is stable. When cancer cells are isolated from other active cellular components, they are expected to invade the system or to be its major component, leading to a cancer death rate of $\delta∼1$.
 
-We now examine the interaction between T-cells and cancer cells in the nest in the absence of fibroblasts (so FNA=FA=0) and the relevant parameters scaled by δ are δCT and αTC. Then, we study the equilibrium regime:(5){dCdt=0=C−δCTCT−δC(C+T),dTdt=0=αTCC−δT(C+T).
+We now examine the interaction between T-cells and cancer cells in the nest in the absence of fibroblasts (so $F_{NA}=F_{A}=0$) and the relevant parameters scaled by $\delta$ are $\delta_{CT}$ and $\alpha_{TC}$. Then, we study the equilibrium regime:
 
-There are three equilibrium solution pairs C,T, including the trivial one: {0, 0}. To analyze whether the solutions found are physically relevant (0≤C,T≤1) and dynamically stable, we estimate possible scaling for the two parameters, focusing on an effective immune response against cancer. For efficient elimination of cancer cells by T-cells, the killing rate δCT must be much larger than the natural death rate δ, so we introduce a small parameter 0<ϵ≪1, so that δCT=δϵ−1. We also assume that the T-cell recruitment is slow compared to cancer cells, which means that αTC=a0ϵ, where a0 being of order one. So the only stable solution is {C+,T+}=ϵδ{1a0−1,1} where a0>1 (see SI, Interaction between T-cells and cancer cells). Thus, even if the inflammation level is low, resulting in a small number of T-cells, the immune action on the cancer cells remains efficient.
+$$
+{\frac{dC}{dt}=0=C−\delta_{CT}CT−\deltaC(C+T),\frac{dT}{dt}=0=\alpha_{TC}C−\deltaT(C+T).
+$$
 
-## Role of activated fibroblasts on T-cells
+There are three equilibrium solution pairs $C,T$, including the trivial one: {0, 0}. To analyze whether the solutions found are physically relevant ($0\leqC,T\leq1$) and dynamically stable, we estimate possible scaling for the two parameters, focusing on an effective immune response against cancer. For efficient elimination of cancer cells by T-cells, the killing rate $\delta_{CT}$ must be much larger than the natural death rate δ, so we introduce a small parameter $0<ϵ≪1$, so that $\delta_{CT}=\deltaϵ^{−1}$. We also assume that the T-cell recruitment is slow compared to cancer cells, which means that $\alpha_{TC}=a_{0}ϵ$, where $a_{0}$ being of order one. So the only stable solution is ${C_{+},T_{+}}=\frac{ϵ}{\delta}{\frac{1}{a_{0}−1},1}$ where $a_{0}>1$ (see SI, Interaction between T-cells and cancer cells). Thus, even if the inflammation level is low, resulting in a small number of T-cells, the immune action on the cancer cells remains efficient.
 
-Fibroblasts play an active role in the exclusion of the T-cells from the tumor nest. We isolate a subsystem composed of cancer cells, T-cells, and active fibroblasts to determine the inhibition rate δTF, responsible for the marginalization of the T-cells and subsequently for the increase of cancer cells at a fixed volume fraction of fibroblasts. We consider the fixed points corresponding to an ensemble {C,T,0,FA}. For simplicity, we first assume that FA is constant, which leads to the dynamical system:{dCdt=0=f0C−ΔCTCT−δC(C+T),dTdt=0=αTCC−ΔFT−δT(C+T),
+##### Role of activated fibroblasts on T-cells
 
-where f0=1−δFA, ΔCT=δCT(1+δTFFA)−1 and ΔF=δFA. There are four solution pairs (see SI, Role of activated fibroblasts on T-cells).
+Fibroblasts play an active role in the exclusion of the T-cells from the tumor nest. We isolate a subsystem composed of cancer cells, T-cells, and active fibroblasts to determine the inhibition rate $\delta_{TF}$, responsible for the marginalization of the T-cells and subsequently for the increase of cancer cells at a fixed volume fraction of fibroblasts. We consider the fixed points corresponding to an ensemble ${C,T,0,F_{A}}$. For simplicity, we first assume that $F_{A}$ is constant, which leads to the dynamical system:
 
-We use the scaling of both parameters already established in the previous paragraph: δCT=δϵ−1,αTC=a0ϵ. We also assume that the inhibition of the T-cells may counteract their cytotoxic effect on cancer cells, i.e., (1+δTFFA)−1∼ϵ, when activated fibroblasts are abundant FA=δ−1fa. This results in δTF=d0δϵ−1.
+$$
+{\frac{dC}{dt}=0=f_{0}C−Δ_{CT}CT−\deltaC(C+T),\frac{dT}{dt}=0=\alpha_{TC}C−Δ_{F}T−\deltaT(C+T),
+$$
 
-The only stable equilibrium solution is (C+,T+)=(f0δ−1+O(ϵ),O(ϵ)), where the notation O(ϵ) denotes a quantity whose order of magnitude is ϵ. Thus, when fibroblasts inactivate T-cells, they promote the cancer cell proliferation.
+where $f_{0}=1−\deltaF_{A}$, $Δ_{CT}=\delta_{CT}(1+\delta_{TF}F_{A})^{−1}$ and $Δ_{F}=\deltaF_{A}$. There are four solution pairs (see SI, Role of activated fibroblasts on T-cells).
 
-## Residual fibroblasts in healthy tissue
+We use the scaling of both parameters already established in the previous paragraph: $\delta_{CT}=\deltaϵ^{−1},\alpha_{TC}=a_{0}ϵ$. We also assume that the inhibition of the T-cells may counteract their cytotoxic effect on cancer cells, i.e., $(1+\delta_{TF}F_{A})^{−1}∼ϵ$, when activated fibroblasts are abundant $F_{A}=\delta^{−1}f_{a}$. This results in $\delta_{TF}=d_{0}\deltaϵ^{−1}$.
 
-In healthy tissue, most of the fibroblasts are in a quiescent state and are not activated in the absence of pathologies such as wounds, allergic reactions, or cancer cells. Therefore, in such tissues, for a quiescent fibroblast population, the density of FNA is the equilibrium solution of the equation dFNA/dt=0=αNA−δFNA2. The parameter αNA represents the net influx of fibroblasts into the tissue. Assuming the fraction of non-activated fibroblasts to be residual ∼ϵ2, we deduce αNA∼δϵ4.
+The only stable equilibrium solution is $(C_{+},T_{+})=(f_{0}\delta^{−1}+O(ϵ),O(ϵ))$, where the notation $O(ϵ)$ denotes a quantity whose order of magnitude is $ϵ$. Thus, when fibroblasts inactivate T-cells, they promote the cancer cell proliferation.
 
-## Fibroblast plasticity
+##### Residual fibroblasts in healthy tissue
 
-Fibroblast plasticity is the phenotypic change responsible for T-cell inhibition and for more active fiber production. Cancer cells drive this transformation of the current population FNA into FA. This process is quantified by the constant KA. We first estimate that the fibroblast population is comparable to the cancer cell population when they are alone, which leads to: FNA=fnδ−1 where fn∼1 is a constant.
+In healthy tissue, most of the fibroblasts are in a quiescent state and are not activated in the absence of pathologies such as wounds, allergic reactions, or cancer cells. Therefore, in such tissues, for a quiescent fibroblast population, the density of $F_{NA}$ is the equilibrium solution of the equation $dF_{NA}/dt=0=\alpha_{NA}−\deltaF_{NA}^{2}$. The parameter $\alpha_{NA}$ represents the net influx of fibroblasts into the tissue. Assuming the fraction of non-activated fibroblasts to be residual $∼ϵ^{2}$, we deduce $\alpha_{NA}∼\deltaϵ^{4}$.
 
-Replacing δCT=δϵ−1,αTC=a0ϵ, δTF=d0δϵ−1, leads to:(6){dCdt=0=C−δϵ−1CT1+d0δϵ−1FA−δCS,dTdt=0=a0ϵC−δTS,dFAdt=0=KAfnC/δ−δFAS.
+##### Fibroblast plasticity
 
-Because of the effect of the fibroblasts on them, the T-cells have little effect on the cancer cells, so cancer cell proliferation is weakly affected. At equilibrium, this leads to C∼δ−1, T∼ϵδ−1. The equation for T gives FA∼a0δ−1/d0. This means that the activated fibroblasts must be relatively abundant to fully inhibit the activity of the T-cells. It follows that the plasticity parameter is of low order in ϵ, since the non-activated fibroblasts are maintained at a high density: KA∼δ (see SI, Fibroblast plasticity).
+Fibroblast plasticity is the phenotypic change responsible for T-cell inhibition and for more active fiber production. Cancer cells drive this transformation of the current population $F_{NA}$ into $F_{A}$. This process is quantified by the constant $K_{A}$. We first estimate that the fibroblast population is comparable to the cancer cell population when they are alone, which leads to: $F_{NA}=f_{n}\delta^{−1}$ where $f_{n}∼1$ is a constant.
 
-## Tumor fibroblast attraction
+Replacing $\delta_{CT}=\deltaϵ^{−1},\alpha_{TC}=a_{0}ϵ$, $\delta_{TF}=d_{0}\deltaϵ^{−1}$, leads to:
 
-In this last step, we want to determine the parameter that controls the attraction of the fibroblasts to the tumor. To do this, we write KA=kδ in the system of equations Equations 1–4, which we rewrite according to the previous findings:(7){dCdt=0=C−δϵ−1CT1+d0δϵ−1FA−δCS,dTdt=0=a0ϵC−δTS,dFNAdt=0=a1δϵ4+αNA,CC−kδFNAC−δFNAS,dFAdt=0=kδFNAC−δFAS.
+$$
+{\frac{dC}{dt}=0=C−\frac{\deltaϵ^{−1}CT}{1+d_{0}\deltaϵ^{−1}F_{A}}−\deltaCS,\frac{dT}{dt}=0=a_{0}ϵC−\deltaTS,\frac{dF_{A}}{dt}=0=K_{A}f_{n}C/\delta−\deltaF_{A}S.
+$$
 
-Then, we look for solutions of the type: {C,T,FNA,FA}=δ−1{c0,T0ϵ,fNA,fA}. The order of magnitude of the attraction parameter is then αNA,C∼1 (see SI, Non active fibroblasts attraction to tumor).
+Because of the effect of the fibroblasts on them, the T-cells have little effect on the cancer cells, so cancer cell proliferation is weakly affected. At equilibrium, this leads to $C∼\delta^{−1}$, $T∼ϵ\delta^{−1}$. The equation for $T$ gives $F_{A}∼a_{0}\delta^{−1}/d_{0}$. This means that the activated fibroblasts must be relatively abundant to fully inhibit the activity of the T-cells. It follows that the plasticity parameter is of low order in $ϵ$, since the non-activated fibroblasts are maintained at a high density: $K_{A}∼\delta$ (see SI, Fibroblast plasticity).
+
+##### Tumor fibroblast attraction
+
+In this last step, we want to determine the parameter that controls the attraction of the fibroblasts to the tumor. To do this, we write $K_{A}=k\delta$ in the system of equations Equations 1–4, which we rewrite according to the previous findings:
+
+$$
+{\frac{dC}{dt}=0=C−\frac{\deltaϵ^{−1}CT}{1+d_{0}\deltaϵ^{−1}F_{A}}−\deltaCS,\frac{dT}{dt}=0=a_{0}ϵC−\deltaTS,\frac{dF_{NA}}{dt}=0=a_{1}\deltaϵ^{4}+\alpha_{NA,C}C−k\deltaF_{NA}C−\deltaF_{NA}S,\frac{dF_{A}}{dt}=0=k\deltaF_{NA}C−\deltaF_{A}S.
+$$
+
+Then, we look for solutions of the type: ${C,T,F_{NA},F_{A}}=\delta^{−1}{c_{0},T_{0}ϵ,f_{NA},f_{A}}$. The order of magnitude of the attraction parameter is then $\alpha_{NA,C}∼1$ (see SI, Non active fibroblasts attraction to tumor).
 
 In the next section, we summarize all scaling laws possible, according to the obtained results and present the different scenarios related to the state of the tumor, shown in Figure 2.
 
-## Numerical study of cell population dynamics
+##### Numerical study of cell population dynamics
 
-The dynamics of each cellular component of the mixture can be systematically studied according to the full set of parameters summarized in Table 2, with the corresponding orders of magnitude. Some of them can be considered as fixed in the system, i.e., they do not vary significantly between the different tumors. This category includes δ−1, the inverse of the free tumor cell density, and αNA, the NAF attraction parameter to healthy tissue. The other parameters can be studied as control parameters.
+The dynamics of each cellular component of the mixture can be systematically studied according to the full set of parameters summarized in Table 2, with the corresponding orders of magnitude. Some of them can be considered as fixed in the system, i.e., they do not vary significantly between the different tumors. This category includes $\delta^{−1}$, the inverse of the free tumor cell density, and $\alpha_{NA}$, the NAF attraction parameter to healthy tissue. The other parameters can be studied as control parameters.
+
+**Table 2.**
+ Scaling variation and estimation of the coefficients according to different scenarios.The scenarios are described in Section Model Parameters and Fixed Point Analysis and shown in Figure 4. The coefficients above are those introduced in Equations 1–4. The left column summarizes the different roles that T-cells can play in a cell mixture and the values of the coefficients of the mixture are listed in the following horizontal lines of the table. The scaling of $\delta$ is always: 1 , and $\alpha_{NA}∼\deltaϵ^{4}$.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>δCT</th>
+      <th>αTC</th>
+      <th>δTF</th>
+      <th>αNA,C</th>
+      <th>KA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control of:</td>
+      <td>Killing C-c by T-c</td>
+      <td>Attraction of T-c by C-c</td>
+      <td>Inhibition of T-c by F-c</td>
+      <td>Attraction of F-c to C-c</td>
+      <td>Activation of F-c</td>
+    </tr>
+    <tr>
+      <td>Efficient T-cells (T-c) but no attraction by (C-c)</td>
+      <td>δϵ−1∼10</td>
+      <td>ϵ2∼0.01</td>
+      <td>No role</td>
+      <td>No role</td>
+      <td>No role</td>
+    </tr>
+    <tr>
+      <td>Efficient T-cells but inhibited by (F-c)</td>
+      <td>δϵ−1∼10</td>
+      <td>ϵ∼0.1</td>
+      <td>δϵ−1∼10</td>
+      <td>1∼1</td>
+      <td>δ∼1</td>
+    </tr>
+    <tr>
+      <td>Inefficient T-cellsno need of fibroblasts</td>
+      <td>δ≤1</td>
+      <td>ϵ∼0.1</td>
+      <td>No role</td>
+      <td>No role</td>
+      <td>No role</td>
+    </tr>
+    <tr>
+      <td>Efficient T-cells not inhibited by fibroblasts</td>
+      <td>δϵ−1∼10</td>
+      <td>ϵ∼0.1</td>
+      <td>δ∼1</td>
+      <td>1∼1</td>
+      <td>δ∼1</td>
+    </tr>
+    <tr>
+      <td>Efficient T-cells and fibroblasts not attracted</td>
+      <td>δϵ−1∼10</td>
+      <td>ϵ∼0.1</td>
+      <td>δϵ−1∼10</td>
+      <td>ϵ∼0.1</td>
+      <td>δ∼1</td>
+    </tr>
+    <tr>
+      <td>Efficient T-cells fibroblasts not activated</td>
+      <td>δϵ−1∼10</td>
+      <td>ϵ∼0.1</td>
+      <td>δϵ−1∼10</td>
+      <td>ϵ∼1</td>
+      <td>δϵ∼0.1</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101885/elife-101885-fig4-v1.jpg)
 
-**Figure 4.:** Different profiles are obtained from Equations 1–4 according to the set of parameters reported in Table 2 and consistent with the scenarios shown in Figure 2. In all the plots,  and δ=1. (αNA=10−4a, b, c, d) Immune-desert tumor. Cancer cells proliferate when the immune response is inefficient or when T-cells are not attracted to the tumor. e: Immune-excluded tumor. The cancer-associated fibroblast (CAF) barrier inhibits T-cell infiltration, and promotes tumor growth. (f, g, h) Immune-inflamed tumor. T-cell infiltration limits cancer cell growth. (i) Density plot of the equilibrium cancer cell fraction at fixed  and, δ in function of the two parameters that control the growth: αNA reflects the ability of T-cells to kill the tumor, and αTCδCT/(αNA,CKδTF) reflects the competition between species for space and resources.αNA,C+αTC
+**Figure 4.:** Different profiles are obtained from Equations 1–4 according to the set of parameters reported in Table 2 and consistent with the scenarios shown in Figure 2. In all the plots, $\delta=1$ and $\alpha_{NA}=10^{−4}$. (a, b, c, d) Immune-desert tumor. Cancer cells proliferate when the immune response is inefficient or when T-cells are not attracted to the tumor. e: Immune-excluded tumor. The cancer-associated fibroblast (CAF) barrier inhibits T-cell infiltration, and promotes tumor growth. (f, g, h) Immune-inflamed tumor. T-cell infiltration limits cancer cell growth. (i) Density plot of the equilibrium cancer cell fraction at fixed $\delta$ and, $\alpha_{NA}$ in function of the two parameters that control the growth: $\alpha_{TC}\delta_{CT}/(\alpha_{NA,C}K\delta_{TF})$ reflects the ability of T-cells to kill the tumor, and $\alpha_{NA,C}+\alpha_{TC}$ reflects the competition between species for space and resources.
 
-The simulated time-dependent densities of each cell type are displayed in Figure 4 for different sets of parameters in the system of equations in Equations 1–4. At time t=0, we assume small mass fractions of cancer cells, T-cells, activated and quiescent fibroblasts. Over time, the particular choice of a quadratic model allows the dynamics to reach a plateau for each cell type, confirming the stability of the fixed points found in Section Model Parameters and Fixed Point Analysis.
+The simulated time-dependent densities of each cell type are displayed in Figure 4 for different sets of parameters in the system of equations in Equations 1–4. At time $t=0$, we assume small mass fractions of cancer cells, T-cells, activated and quiescent fibroblasts. Over time, the particular choice of a quadratic model allows the dynamics to reach a plateau for each cell type, confirming the stability of the fixed points found in Section Model Parameters and Fixed Point Analysis.
 
-In the case of an immune-desert tumor, i.e., when T-cells are not attracted to the tumor nest or are unable to penetrate it (Figure 4a–d), cancer cell growth is not limited by the immune response. However, this growth saturates when it reaches a steady state due to the competition for space and resources between the different species and controlled by δ and αNA,C+αTC.
+In the case of an immune-desert tumor, i.e., when T-cells are not attracted to the tumor nest or are unable to penetrate it (Figure 4a–d), cancer cell growth is not limited by the immune response. However, this growth saturates when it reaches a steady state due to the competition for space and resources between the different species and controlled by $\delta$ and $\alpha_{NA,C}+\alpha_{TC}$.
 
-T-cells efficiency can be quantified through the parameter αTCδCT/(αNA,CKδTF) (Figure 4i). If the T-cells are efficient, the tumor is said to be immune-inflamed and several scenarios can be discussed. Their response is triggered by the proliferation of cancer cells. Thus, in the absence of CAF inhibition, T-cells inhibit cancer growth (Figure 4f–h). In contrast, in the immune-excluded tumor, CAFs impede the T-cell response and thus indirectly promote cancer cell growth, as observed in Figure 4e.
+T-cells efficiency can be quantified through the parameter $\alpha_{TC}\delta_{CT}/(\alpha_{NA,C}K\delta_{TF})$ (Figure 4i). If the T-cells are efficient, the tumor is said to be immune-inflamed and several scenarios can be discussed. Their response is triggered by the proliferation of cancer cells. Thus, in the absence of CAF inhibition, T-cells inhibit cancer growth (Figure 4f–h). In contrast, in the immune-excluded tumor, CAFs impede the T-cell response and thus indirectly promote cancer cell growth, as observed in Figure 4e.
 
 In conclusion, our dynamical system, limited to four cell types, recapitulates the different possible scenarios that could evolve according to the interaction between cancer cell, T-cells, and fibroblasts in lung adenocarcinoma. With respect to cancer cells, three main outcomes can be identified: the tumor can invade the tissue (Figure 4a), the cancer cell population can be limited without disappearing (Figure 4b–e), or it can be eradicated (Figure 4f–h). Each outcome can have multiple origins, that are all related to either competition for space and resources or T-cell efficiency, see Figure 4i. Each origin has a particular signature with respect to the different species densities, so that the TME properties can be inferred from the measured densities. However, the dynamical system does not provide information about the morphology of the tumor, and its local composition. Indeed, this analysis poorly represents the structure of the tumor, which is divided into a nest, a cancer-associated stroma, and a healthy stroma.
 
 For these reasons, in what follows we extend our model by incorporating the effects of cell species diffusion in order to obtain a more faithful spatio-dynamical description of the system, thus re-analyzing the cases above mentioned in this more general framework.
 
-## Spatio-temporal behavior of tumor growth
+### Spatio-temporal behavior of tumor growth
 
 Spatial study is an important tool in cancer diagnosis since the tumor shape reveals the aggressiveness of cancer cells and the role of their microenvironment (Bearer et al., 2009; Cristini et al., 2005; Cristini et al., 2009; Huang et al., 2020; Balois and Ben Amar, 2014; Koay et al., 2018; Fraldi and Carotenuto, 2018; David and Perthame, 2021; Carotenuto et al., 2018; Perthame and Villa, 2024). Similarly, the localization of immune cells in the tumor environment (Mukherjee et al., 2023), as well as proliferating and pre-metastatic cells often found in niches, are active areas of research in oncology and a valuable support for clinical prognosis (Li and Neaves, 2006; Psaila and Lyden, 2009; Liu and Cao, 2016).
 
 In the previous section, we described our cell mixing through the global time evolution given by a dynamical system. Here, we aim to complete the modeling by considering the spatial heterogeneity of the interplay between fibroblasts, T-cells, and cancer cells and its consequences for tumor cell localization and proliferation. We first present the mixture model (Balois and Ben Amar, 2014; Ackermann et al., 2021), which is able to incorporate the spatial distribution and evolution of active cells leading to a set of partial differential equations that we solve with the finite element (FEM) software COMSOL Multiphysics (Comsol Inc, 2024). Last, we propose different mechanisms as sources of anisotropy in the tumor nest, including the introduction of a nematic tensor for the orientation of fibroblasts.
 
-As in the previous section, we consider four different cell types namely cancer cells, T-cells, activated and non-activated fibroblasts, with different attraction properties. A component that does not play an active role in the mixture is also added via an inactive N fraction. It concerns the intercellular fluid, the healthy cells, and the dead cells. This last component is also a source of material, for the proliferation of cancer cells. Each component is described by a local mass fraction ϕi, a velocity vi, and a proliferation/death term Γi, with ϕ and Γ denoting generic quantities that are now space and time-dependent. More specifically, ϕi corresponds to the local value of C,T,FA,FNA introduced in the previous sections and ϕ0=1−∑i≠0ϕi represents N is the growth rate of each component, which is now space and time-dependent (see Equations 1–4) and may be positive only for cancer cells, since we consider that fibroblasts and T-cells are recruited from the surrounding environment. CAFs produce a significant amount of fibers, resulting in a higher friction between different species, chosen to be proportional to the local amount of CAFs. This friction, which is also a space-time-dependent quantity, will impact the dynamics of the mixture.
+As in the previous section, we consider four different cell types namely cancer cells, T-cells, activated and non-activated fibroblasts, with different attraction properties. A component that does not play an active role in the mixture is also added via an inactive $N$ fraction. It concerns the intercellular fluid, the healthy cells, and the dead cells. This last component is also a source of material, for the proliferation of cancer cells. Each component is described by a local mass fraction $ϕ_{i}$, a velocity $v_{i}$, and a proliferation/death term $Γ_{i}$, with $ϕ$ and $Γ$ denoting generic quantities that are now space and time-dependent. More specifically, $ϕ_{i}$ corresponds to the local value of $C,T,F_{A},F_{NA}$ introduced in the previous sections and $ϕ_{0}=1−\sumi\neq0ϕ_{i}$ represents $N$ is the growth rate of each component, which is now space and time-dependent (see Equations 1–4) and may be positive only for cancer cells, since we consider that fibroblasts and T-cells are recruited from the surrounding environment. CAFs produce a significant amount of fibers, resulting in a higher friction between different species, chosen to be proportional to the local amount of CAFs. This friction, which is also a space-time-dependent quantity, will impact the dynamics of the mixture.
 
-The sample also contains diffusive signaling molecules that are at the origin of the immune activity. In the previous section, chemicals were not introduced, although they were associated with some coefficients of the dynamical system. Here, the chemicals that determine the cell behavior, are represented by a concentration cj(Olmeda and Ben Amar, 2019; Mori and Ben Amar, 2023). Note that these chemicals have no mass and diffuse through the mixture with the diffusion coefficient Dc. For simplicity, we restrict ourselves to a single chemical of concentration c, that mediates both chemotaxis and activation of fibroblasts. The balance between its production and degradation rate writes (τcC−1ϕC−δc)c, since it is produced by cancer cells and naturally degraded. With these considerations, we study the case where the tumor is well supplied with nutrients, which are, therefore, not explicitly mentioned, and we write a set of conservation equations for each component of the mixture:(8){∂tϕi+∇.(ϕivi)=ΣjΓijϕj,∂tc=Dc∇2c+τcC−1ϕC−δcc.
+The sample also contains diffusive signaling molecules that are at the origin of the immune activity. In the previous section, chemicals were not introduced, although they were associated with some coefficients of the dynamical system. Here, the chemicals that determine the cell behavior, are represented by a concentration $c_{j}$(Olmeda and Ben Amar, 2019; Mori and Ben Amar, 2023). Note that these chemicals have no mass and diffuse through the mixture with the diffusion coefficient $D_{c}$. For simplicity, we restrict ourselves to a single chemical of concentration $c$, that mediates both chemotaxis and activation of fibroblasts. The balance between its production and degradation rate writes $(\tau_{cC}^{−1}ϕ_{C}−\delta_{c})c$, since it is produced by cancer cells and naturally degraded. With these considerations, we study the case where the tumor is well supplied with nutrients, which are, therefore, not explicitly mentioned, and we write a set of conservation equations for each component of the mixture:
 
-When integrated over the whole space and when the only boundary conditions for the velocity are considered, the first equation in Equation 8 recovers the dynamical system. Besides, we consider that chemicals equilibrate much faster than the tissue dynamics, so that: λc∇2c+αcCϕC−c=0, with λc=Dc/δc the penetration length and αcC=(δcτcC)−1. We now present a derivation for the average local velocity vi of each species by evaluating its momentum equation and the expressions for the various source terms.
+$$
+{∂_{t}ϕ_{i}+∇.(ϕ_{i}v_{i})=Σ_{j}Γ_{ij}ϕ_{j},∂_{t}c=D_{c}∇^{2}c+\tau_{cC}^{−1}ϕ_{C}−\delta_{c}c.
+$$
 
-## Momentum and free energy density derivation
+When integrated over the whole space and when the only boundary conditions for the velocity are considered, the first equation in Equation 8 recovers the dynamical system. Besides, we consider that chemicals equilibrate much faster than the tissue dynamics, so that: $\lambda_{c}∇^{2}c+\alpha_{cC}ϕ_{C}−c=0$, with $\lambda_{c}=\sqrt{D_{c}/\delta_{c}}$ the penetration length and $\alpha_{cC}=(\delta_{c}\tau_{cC})^{−1}.$ We now present a derivation for the average local velocity $v_{i}$ of each species by evaluating its momentum equation and the expressions for the various source terms.
 
-Since the dynamics are very slow and completely controlled by dissipation, the Onsager variational principle of least dissipation (Ackermann and Ben Amar, 2023) yields the set of partial differential equations coupling the densities to the velocities in the mixture (Ackermann et al., 2021). This principle, introduced by Lord Rayleigh and further developed by Onsager (Strutt, 1871; Onsager, 1931b; Onsager, 1931a; Onsager and Machlup, 1953), is widely used in soft matter (Doi, 2011), in the biophysical context (Ackermann et al., 2021; Balois and Ben Amar, 2014; Wang et al., 2021; Borja da Rocha et al., 2022; Ackermann and Ben Amar, 2023) as well as other areas of physics (Minguzzi, 2015). First we define a free energy functional F from a free energy density F integrated over the volume V, the associated chemical potentials μi, and a dissipation function W:{F=∫dVF({ϕi},c);μi=δFδϕi,W=∫∑i≠jξijϕiϕj2(vi−vj)2dV,
+#### Momentum and free energy density derivation
 
-where the ξij are the relative friction coefficients between components i and j, and vi and vj are the velocities of the different cell types. The Rayleighian is then defined as the sum of the dissipation function W and the rate of change of the free energy function F. Within this framework, the final equations for the local velocities are obtained by minimizing the Rayleighian with respect to each velocity vi:R=dFdt+W,δRδvi=0⇒∑jAijvj=−∇μi,
+Since the dynamics are very slow and completely controlled by dissipation, the Onsager variational principle of least dissipation (Ackermann and Ben Amar, 2023) yields the set of partial differential equations coupling the densities to the velocities in the mixture (Ackermann et al., 2021). This principle, introduced by Lord Rayleigh and further developed by Onsager (Strutt, 1871; Onsager, 1931b; Onsager, 1931a; Onsager and Machlup, 1953), is widely used in soft matter (Doi, 2011), in the biophysical context (Ackermann et al., 2021; Balois and Ben Amar, 2014; Wang et al., 2021; Borja da Rocha et al., 2022; Ackermann and Ben Amar, 2023) as well as other areas of physics (Minguzzi, 2015). First we define a free energy functional $F$ from a free energy density $F$ integrated over the volume $V$, the associated chemical potentials $\mu_{i}$, and a dissipation function $W$:
 
-where Aij is the friction matrix and μi are the chemical potentials. Defining: ϕ~i=ϕiϕ0−1,the friction matrix reads:{Aii=∑j≠i,0(ξij+ξj0ϕ~i)ϕj+ξi0(1+ϕ~i)2,Aij=ϕj(−ξij+ξi0(1+ϕ~i)+ξj0(1+ϕ~j)+∑k≠i,j,0ξk0ϕ~k).
+$$
+{F=\intdVF({ϕ_{i}},c);\mu_{i}=\frac{\deltaF}{\deltaϕ_{i}},W=\int\sumi\neqj\frac{ξ_{ij}ϕ_{i}ϕ_{j}}{2}(v_{i}−v_{j})^{2}dV,
+$$
 
-Importantly, in our model, we assume that all frictions ξij are equal, except for the friction with the CAFs. In fact, the mass fraction of CAFs is assumed to reflect the amount of matrix produced by the fibroblasts, resulting in a very high friction in the medium. Therefore, we write: ξij=ξ0,ξiCAF=ξ0+ξ1ϕCAF.
+where the $ξ_{ij}$ are the relative friction coefficients between components $i$ and $j$, and $v_{i}$ and $v_{j}$ are the velocities of the different cell types. The Rayleighian is then defined as the sum of the dissipation function $W$ and the rate of change of the free energy function $F$. Within this framework, the final equations for the local velocities are obtained by minimizing the Rayleighian with respect to each velocity $v_{i}$:
 
-After deriving the momentum equations, we construct the free energy density. Building a free-energy density for a biological material is justified, because, although biological materials are out of equilibrium, their behavior often resembles that dictated by thermodynamics. It is, therefore, useful to write a free energy in terms of state variables. Following (Ackermann et al., 2021) and inspired by the Cahn-Hilliard approach, we define a free energy density F as a sum of the interaction potential f and of the cost induced by the mass fraction gradients κ(∇ϕi)2/2. We also assume for f, the Flory-Huggins free energy density of mixing that depends on the local mass fractions (or equivalently the volume fractions) of each component ϕi (Flory, 1942; Huggins, 1941):(9){F=f+∑i,jκ2(∇ϕi)2;μi=∂f/∂ϕi−κ∇2ϕi,f=∑iDiϕilog⁡(ϕi)−∑i,jαijϕiϕj.
+$$
+R=\frac{dF}{dt}+W,\frac{\deltaR}{\deltav_{i}}=0⇒\sumjA_{ij}v_{j}=−∇\mu_{i},
+$$
 
-The terms Diϕilog⁡(ϕi) control both the diffusion and volume exclusion, and the quadratic expansion −αijϕiϕj controls the attraction or repulsion between species.
+where $A_{ij}$ is the friction matrix and $\mu_{i}$ are the chemical potentials. Defining: $ϕ~_{i}=ϕ_{i}ϕ_{0}^{−1}$,the friction matrix reads:
+
+$$
+{A_{ii}=\sumj\neqi,0(ξ_{ij}+ξ_{j0}ϕ~_{i})ϕ_{j}+ξ_{i0}(1+ϕ~_{i})^{2},A_{ij}=ϕ_{j}(−ξ_{ij}+ξ_{i0}(1+ϕ~_{i})+ξ_{j0}(1+ϕ~_{j})+\sumk\neqi,j,0ξ_{k0}ϕ~_{k}).
+$$
+
+Importantly, in our model, we assume that all frictions $ξ_{ij}$ are equal, except for the friction with the CAFs. In fact, the mass fraction of CAFs is assumed to reflect the amount of matrix produced by the fibroblasts, resulting in a very high friction in the medium. Therefore, we write: $ξ_{ij}=ξ_{0},ξ_{iCAF}=ξ_{0}+ξ_{1}ϕ_{CAF}$.
+
+After deriving the momentum equations, we construct the free energy density. Building a free-energy density for a biological material is justified, because, although biological materials are out of equilibrium, their behavior often resembles that dictated by thermodynamics. It is, therefore, useful to write a free energy in terms of state variables. Following (Ackermann et al., 2021) and inspired by the Cahn-Hilliard approach, we define a free energy density $F$ as a sum of the interaction potential $f$ and of the cost induced by the mass fraction gradients $κ(∇ϕ_{i})^{2}/2$. We also assume for $f$, the Flory-Huggins free energy density of mixing that depends on the local mass fractions (or equivalently the volume fractions) of each component $ϕ_{i}$ (Flory, 1942; Huggins, 1941):
+
+$$
+{F=f+\sumi,j\frac{κ}{2}(∇ϕ_{i})^{2};\mu_{i}=∂f/∂ϕ_{i}−κ∇^{2}ϕ_{i},f=\sumiD_{i}ϕ_{i}log⁡(ϕ_{i})−\sumi,j\alpha_{ij}ϕ_{i}ϕ_{j}.
+$$
+
+The terms $D_{i}ϕ_{i}log⁡(ϕ_{i})$ control both the diffusion and volume exclusion, and the quadratic expansion $−\alpha_{ij}ϕ_{i}ϕ_{j}$ controls the attraction or repulsion between species.
 
 In the following, we explain in more detail the effective free energy density of our system, as well as the expression of the different proliferation rates, and the values of the parameters, focusing on the attraction/repulsion and the chemotactic terms.
 
-## Effective free energy density and source terms
+#### Effective free energy density and source terms
 
-We now apply the general formalism presented in the previous section to the cancer cell mixture using the same notation as Section Dynamic Modeling in the Lung Cancer TME for C,T,FNA,FA. However, while in the first section, these quantities represented averaged mass fractions over the whole tumor, here they are local mass fractions averaged over a small volume of the tumor but large compared to the cell size. We now detail the effective free energy, focusing first on the interaction potential f defined in Equation 9.
+We now apply the general formalism presented in the previous section to the cancer cell mixture using the same notation as Section Dynamic Modeling in the Lung Cancer TME for $C,T,F_{NA},F_{A}$. However, while in the first section, these quantities represented averaged mass fractions over the whole tumor, here they are local mass fractions averaged over a small volume of the tumor but large compared to the cell size. We now detail the effective free energy, focusing first on the interaction potential $f$ defined in Equation 9.
 
-The attraction between cancer cells is represented by −λCCC2, between cancer cells and T-cells by −λCTCT, and between all types of fibroblasts and cancer cells by −λCFC(FNA+FA), where the λ coefficients are positive. These interactions are accounted for the free energy density that reads:(10)f=DCClog⁡(C)+DTTlog⁡(T)+DCAFFAlog⁡(FA)+DNAFNAlog⁡(FNAF)+D0ϕ0log⁡(ϕ0)−λCCC2−λCTCT−λCFC(FNA+FA).
+The attraction between cancer cells is represented by $−\lambda_{CC}C^{2}$, between cancer cells and T-cells by $−\lambda_{CT}CT$, and between all types of fibroblasts and cancer cells by $−\lambda_{CF}C(F_{NA}+F_{A})$, where the $\lambda$ coefficients are positive. These interactions are accounted for the free energy density that reads:
 
-Finally, we focus on the proliferation rates to complete the system Equation 8. Note that we must distinguish the cells produced in situ, such as the cancer cells C and the activated fibroblasts FA, from the cells attracted to the tumor nest (T and FNA) by the chemical c. We keep the growth rate of cancer cells ΓC given by Eq. 1 with δTF=0 because the inhibition of T-cells by fibroblasts is now treated by increasing the friction created by the fiber barrier. T-cells and NAFs do not proliferate and are not derived from precursors at the tumor site, but are instead generated far away from the tumor and are attracted to it by chemotaxis. Thus, at the boundaries S, their source rate is driven by an incoming flux due to the chemical c. For the NAFs, the volume term ΓNA|V does not include the source term αNA,C (see Equation 3) which is provided by the boundaries, and αNA is neglected:(11){ΓT|S=c(1−S)τTandΓT|V=−δTS,ΓNA|S=c(1−S)τFandΓNA|V=−KAFNAc−δFNAS.
+$$
+f=D_{C}Clog⁡(C)+D_{T}Tlog⁡(T)+D_{CAF}F_{A}log⁡(F_{A})+D_{NA}F_{NA}log⁡(F_{NAF})+D_{0}ϕ_{0}log⁡(ϕ_{0})−\lambda_{CC}C^{2}−\lambda_{CT}CT−\lambda_{CF}C(F_{NA}+F_{A}).
+$$
 
-On the other hand, the production of CAFs is not changed and ΓA defined in Equation 4 is still relevant, provided that the plasticity contribution is now proportional to the chemical concentration c and not the cancer cells fraction.
+Finally, we focus on the proliferation rates to complete the system Equation 8. Note that we must distinguish the cells produced in situ, such as the cancer cells $C$ and the activated fibroblasts $F_{A}$, from the cells attracted to the tumor nest ($T$ and $F_{NA}$) by the chemical $c$. We keep the growth rate of cancer cells $Γ_{C}$ given by Eq. 1 with $\delta_{TF}=0$ because the inhibition of T-cells by fibroblasts is now treated by increasing the friction created by the fiber barrier. T-cells and NAFs do not proliferate and are not derived from precursors at the tumor site, but are instead generated far away from the tumor and are attracted to it by chemotaxis. Thus, at the boundaries $S$, their source rate is driven by an incoming flux due to the chemical $c$. For the NAFs, the volume term $Γ_{NA}|_{V}$ does not include the source term $\alpha_{NA,C}$ (see Equation 3) which is provided by the boundaries, and $\alpha_{NA}$ is neglected:
 
-We scale the various physical parameters in Table 3. Their values are derived from the literature and from the spatial structure of the TME, as well as the expected outcomes for the different scenarios, while the growth parameters are related to those in the first part of the article. For example, the tumor nest is a dense phase of cancer cells with mass fraction C=0.8 that an interface of size d∼10μm separates from the dilute phase C∼0. This choice, together with the typical value for the energy-density of 106kg.μm−1.d−2 found in literature imposes the values of DC,D0,λCC,κ (Ackermann et al., 2021). Similarly, we assume a weak infiltration of T-cells and fibroblasts into the nest, resulting in low values for the attraction parameters λCT,λCF when compared to λCC. Since DNAF,DCAF,DT control the diffusion of the fibroblasts and T-cells, whose source is located at the boundaries, their values are determined by the density gradients between the boundaries and the tumor nest. At the same time, the times required for T-cells to kill the tumor nest is given by δCT, and the times for the arrival of the T-cells and NAFs into the domain, as well as their average mass fractions, are governed by τT and τF, respectively. The NAFs transform into CAFs in a time controlled by K. We use the letter T0 as the time unit which corresponds to the typical division time for tumor development. For experiments in vitro in perfect conditions of nutrient access, the relevant time is the largest one, corresponding to the slowest process, so the typical division time of cancer cells. It is about 1 d and the same time is needed for the eradication of tumor cells (Cellosaurus, 2023; Xie et al., 2010; Kloss et al., 2013). But in vivo, it is obviously a very different time. It is more related to the time scale necessary for the tumor to grow in its natural environment and is of the order of months (Winer-Muram et al., 2002). The plasticity of fibroblasts is controlled by the chemical penetration length. Since we assume that only the fibroblasts lining the tumor nest are activated, we choose a low penetration length of 30μm. At the same time, the ratio α between the chemical production and degradation parameters is set to αcC=3.
+$$
+{Γ_{T}|_{S}=\frac{c(1−S)}{\tau_{T}}andΓ_{T}|_{V}=−\deltaTS,Γ_{NA}|_{S}=\frac{c(1−S)}{\tau_{F}}andΓ_{NA}|_{V}=−K_{A}F_{NA}c−\deltaF_{NA}S.
+$$
+
+On the other hand, the production of CAFs is not changed and $Γ_{A}$ defined in Equation 4 is still relevant, provided that the plasticity contribution is now proportional to the chemical concentration $c$ and not the cancer cells fraction.
+
+We scale the various physical parameters in Table 3. Their values are derived from the literature and from the spatial structure of the TME, as well as the expected outcomes for the different scenarios, while the growth parameters are related to those in the first part of the article. For example, the tumor nest is a dense phase of cancer cells with mass fraction $C=0.8$ that an interface of size $d∼10\mum$ separates from the dilute phase $C∼0$. This choice, together with the typical value for the energy-density of $10^{6}kg.\mum^{−1}.d^{−2}$ found in literature imposes the values of $D_{C},D_{0},\lambda_{CC},κ$ (Ackermann et al., 2021). Similarly, we assume a weak infiltration of T-cells and fibroblasts into the nest, resulting in low values for the attraction parameters $\lambda_{CT},\lambda_{CF}$ when compared to $\lambda_{CC}$. Since $D_{NAF},D_{CAF},D_{T}$ control the diffusion of the fibroblasts and T-cells, whose source is located at the boundaries, their values are determined by the density gradients between the boundaries and the tumor nest. At the same time, the times required for T-cells to kill the tumor nest is given by $\delta_{CT}$, and the times for the arrival of the T-cells and NAFs into the domain, as well as their average mass fractions, are governed by $\tau_{T}$ and $\tau_{F}$, respectively. The NAFs transform into CAFs in a time controlled by $K$. We use the letter $T_{0}$ as the time unit which corresponds to the typical division time for tumor development. For experiments in vitro in perfect conditions of nutrient access, the relevant time is the largest one, corresponding to the slowest process, so the typical division time of cancer cells. It is about 1 d and the same time is needed for the eradication of tumor cells (Cellosaurus, 2023; Xie et al., 2010; Kloss et al., 2013). But in vivo, it is obviously a very different time. It is more related to the time scale necessary for the tumor to grow in its natural environment and is of the order of months (Winer-Muram et al., 2002). The plasticity of fibroblasts is controlled by the chemical penetration length. Since we assume that only the fibroblasts lining the tumor nest are activated, we choose a low penetration length of $30\mum$. At the same time, the ratio $\alpha$ between the chemical production and degradation parameters is set to $\alpha_{cC}=3$.
+
+**Table 3.**
+ Values of the parameters in the spatial model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D0</td>
+      <td>106kg.μm−1.T0−2</td>
+      <td>δ</td>
+      <td>1.18T0−1</td>
+    </tr>
+    <tr>
+      <td>DC</td>
+      <td>105kg.μm−1.T0−2</td>
+      <td>τT,τNA</td>
+      <td>2.5×10−3μm.T0−1</td>
+    </tr>
+    <tr>
+      <td>DT,DNAF,DCAF</td>
+      <td>2.5×105kg.μm−1.T0−2</td>
+      <td>δCT</td>
+      <td>5T0−1</td>
+    </tr>
+    <tr>
+      <td>λCC</td>
+      <td>2.5×105kg.μm−1.T0−2</td>
+      <td>ξ0</td>
+      <td>3×102kg.μm−3.T0−1</td>
+    </tr>
+    <tr>
+      <td>λCT</td>
+      <td>7.5×105kg.μm−1.T0−2</td>
+      <td>ξ1</td>
+      <td>3×105kg.μm−3.T0−1</td>
+    </tr>
+    <tr>
+      <td>λCF</td>
+      <td>0kg.μm−1.T0−2</td>
+      <td>K</td>
+      <td>10T0−1.μm2</td>
+    </tr>
+    <tr>
+      <td>κ</td>
+      <td>3.6×107kg.μm.T0−2</td>
+      <td>λcC</td>
+      <td>30μm</td>
+    </tr>
+  </tbody>
+</table>
 
 In the following, we will show that, once activated by tumor cells, fibroblasts can inhibit tumor growth through a confinement effect but also limit the cytotoxic role of T-cells or simply prevent their infiltration into the tumor.
 
-## Ambiguous role of fibroblasts in tumorigenesis
+#### Ambiguous role of fibroblasts in tumorigenesis
 
-To illustrate the ambiguous role of fibroblasts in tumor progression, we explore different scenarios through a two-dimensional numerical study. This allows us to compare a fibrotic and a non-fibrotic tumor in the presence or absence of an immune response. Thus, the different growth cases we present are: a tumor without CAFs and T-cells, a tumor with both CAFs and T-cells, a tumor with T-cells but with a low level of CAFs, and a case with CAFs but no efficient T-cells. In the appendix, we present other scenarios of free growth: a TME in the presence of only NAFs and inefficient T-cells (Figure 5—figure supplement 1B), in presence of NAFs (Figure 5—figure supplement 1C), and a TME in which only cancer cells are present (Figure 5—figure supplement 1D). We first consider a single tumor nest before analyzing the case of two adjacent nests. Therefore, there is only one tumor nest at time t=0 (Figure 5A).
+To illustrate the ambiguous role of fibroblasts in tumor progression, we explore different scenarios through a two-dimensional numerical study. This allows us to compare a fibrotic and a non-fibrotic tumor in the presence or absence of an immune response. Thus, the different growth cases we present are: a tumor without CAFs and T-cells, a tumor with both CAFs and T-cells, a tumor with T-cells but with a low level of CAFs, and a case with CAFs but no efficient T-cells. In the appendix, we present other scenarios of free growth: a TME in the presence of only NAFs and inefficient T-cells (Figure 5—figure supplement 1B), in presence of NAFs (Figure 5—figure supplement 1C), and a TME in which only cancer cells are present (Figure 5—figure supplement 1D). We first consider a single tumor nest before analyzing the case of two adjacent nests. Therefore, there is only one tumor nest at time $t=0$ (Figure 5A).
 
-As shown in Figure 5E and H (blue curve), in the case of a free-growing tumor, i.e., in the presence of NAFs and inactive T-cells, cancer cell growth is not hindered by any obstacles, so this is the most severe situation. However, the tumor provokes the formation of a stroma composed of the NAFs and inefficient T-cells. The presence of a stroma plays a role in the cancer cell growth described in Equation 1 and leads to a growth that would be less important than in a case without stroma or composed only of NAFs (Figure 5—figure supplement 1A and G). In fact, the pressure exerted by the stroma increases the mass fraction of cancer cells in the core of the nest, as well as the total mass fraction N at the stroma-nest interface. This phenomenon corresponds to the competition for space and resources between the different species already described in the previous section. In the case of a free cancer growth without stroma, the tumor nest rapidly invades the environment and its surface fraction in the simulation window is almost 40% after reaching t=35T0, with a trend that is not yet saturated and an average mass fraction of cancer cells of 25%.
+![Figure 5.](https://cdn.elifesciences.org/articles/101885/elife-101885-fig5-v1.jpg)
 
-When fibroblasts are activated, they make the environment around the tumor nest fibrotic (Figure 5B and C), with a mass fraction around the nest reaching 20-30%. As explained earlier (in Section Momentum and Free Energy Density Derivation), the fibers are introduced in our model by an increase of the friction coefficient between the different species and the activated fibroblasts, which is directly related to the fiber concentration. The tumor cells are then trapped behind a barrier with a very high friction which prevents the nest from expanding, and the surface area of the tumor nest decreases to 25% after 35T0, with a fibrotic area reaching 70%, while the average cancer cell decreases to 17% (Figure 5E, F and G cyan curve). The fibroblast population is composed of 30% NAFs and 70% CAFs, as the average fibroblast mass fraction is 26% (Figure 5I and K cyan curve).
+**Figure 5.:** We refer here to the different tumor phenotypes described in Figure 2. (A) Mass fraction of cancer cells at time $t=0$ and profile of different mass fractions on a section of the tumor. (B-C-D) Mass fraction of cancer cells at time $t=35T_{0}$ and profile of mass fraction in immunodeficient tumor (B), when immune infiltration is inhibited by cancer-associated fibroblasts (CAFs) (C) and in immune-inflamed tumor (D) In D, the scale of the colorbar is 10−3 the values of (A), (B), (C), since this panel represents the case of efficient T-cells. (E-F-G) Development of different zones. (E) Surface fraction profile of the tumor nest for different scenarios, calculated as.$S/S_{total}=\intdV\delta(C>0.1)/S_{total}$ (F) Fibrotic surface fraction profile for different scenarios, calculated as.$S/S_{total}=\intdV\delta(CAF>0.1)/S_{total}$ (G) T-cell rich area fraction profile for different scenarios, calculated as $S=\intdV\delta(T>0.1)/S_{total}$. (H) Cancer cell average mass fractions. (I) CAF average mass fractions. (J) T-cell average mass fractions. (K) Non-activated fibroblast (NAF) average mass fractions.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101885/elife-101885-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A-G) Cancer population density plots for different scenarios: Cancer cells (C-c) + non-activated fibroblasts (NAFs) + Inefficient T-cells, Cancer cells + NAFs,Cancer cells alone. (A) Mass fraction of cancer cells at time $t=0$ and profile of different mass fractions on a section of the tumor. (B) Mass fraction of cancer cells at time $t=35T_{0}$ and mass fraction profile for a case of a stroma composed by C-c, NAFs, and inefficient T-cells. (C) Mass fraction of cancer cells at time $t=35T_{0}$ and profile of the different mass fractions on a cut of the tumor for a case of a stroma composed by C-c and NAFs. (D) Mass fraction of cancer cells at time $t=35T_{0}$ and mass fraction profile for a case with no stroma in the tumor microenvironment. (E) Surface fraction of the tumor nest in the different scenarios. (F) Average mass fraction of the cancer cells in the different scenarios. (G) Average mass fraction of the NAFs in the different scenarios. (H) Time evolution of the mass fraction profile of the cut of the simulation window in the case of a tumor in the presence of efficient T-cells and NAFs only, without T-cells.
+
+As shown in Figure 5E and H (blue curve), in the case of a free-growing tumor, i.e., in the presence of NAFs and inactive T-cells, cancer cell growth is not hindered by any obstacles, so this is the most severe situation. However, the tumor provokes the formation of a stroma composed of the NAFs and inefficient T-cells. The presence of a stroma plays a role in the cancer cell growth described in Equation 1 and leads to a growth that would be less important than in a case without stroma or composed only of NAFs (Figure 5—figure supplement 1A and G). In fact, the pressure exerted by the stroma increases the mass fraction of cancer cells in the core of the nest, as well as the total mass fraction $N$ at the stroma-nest interface. This phenomenon corresponds to the competition for space and resources between the different species already described in the previous section. In the case of a free cancer growth without stroma, the tumor nest rapidly invades the environment and its surface fraction in the simulation window is almost 40% after reaching $t=35T_{0}$, with a trend that is not yet saturated and an average mass fraction of cancer cells of 25%.
+
+When fibroblasts are activated, they make the environment around the tumor nest fibrotic (Figure 5B and C), with a mass fraction around the nest reaching 20-30%. As explained earlier (in Section Momentum and Free Energy Density Derivation), the fibers are introduced in our model by an increase of the friction coefficient between the different species and the activated fibroblasts, which is directly related to the fiber concentration. The tumor cells are then trapped behind a barrier with a very high friction which prevents the nest from expanding, and the surface area of the tumor nest decreases to 25% after $35T_{0}$, with a fibrotic area reaching 70%, while the average cancer cell decreases to 17% (Figure 5E, F and G cyan curve). The fibroblast population is composed of 30% NAFs and 70% CAFs, as the average fibroblast mass fraction is 26% (Figure 5I and K cyan curve).
 
 At the same time, even in a situation where T-cells are efficient, the barrier precludes T-cells from the tumor (Figure 5C). In the latter case, tumor integrity is maintained and CAFs play a tumor-promoting role, inhibiting the immune response and stabilizing the tumor nest at 7.5% of the domain, with a fibrotic zone of 50% (Figure 5E, F and H, green curve). In this scenario, the average mass fractions are 5% for cancer cells, 10% for CAFs, 10% for NAFs (so 20% for the fibroblast population), and 20% for T-cells. It is interesting to note that this scenario quickly leads to a stable steady state. In contrast, the other simulations take longer times to reach a steady state. This could be due to the fact that the stroma builds up quickly compared to cell death when the cell population is not renewed, and that the steady state corresponds to a small nest that is reached after a short period of growth.
 
-When T-cells are introduced without transformation from NAFs to CAFs (Figure 5I-red curve), the tumor dies as cancer cells are eliminated and the compact nest disappears (Figure 5E- red curve). As the stroma initially builds up due to the presence of a tumor, the fibroblast and T-cell populations slowly relax. However, the tumor stroma takes a long time to retract. This suggests that even if the cancer is cured, the effects on the tissue can be long-lasting. In this case of non-activation of NAFs, T-cells infiltrate the core of the nest thanks to the attraction of cancer cells (through the parameter λCT) and allows tumor reduction (Figure 5D). Therefore, their invasion is efficient only in the absence of fibers. (Figure 5G-red curve).
+When T-cells are introduced without transformation from NAFs to CAFs (Figure 5I-red curve), the tumor dies as cancer cells are eliminated and the compact nest disappears (Figure 5E- red curve). As the stroma initially builds up due to the presence of a tumor, the fibroblast and T-cell populations slowly relax. However, the tumor stroma takes a long time to retract. This suggests that even if the cancer is cured, the effects on the tissue can be long-lasting. In this case of non-activation of NAFs, T-cells infiltrate the core of the nest thanks to the attraction of cancer cells (through the parameter $\lambda_{CT}$) and allows tumor reduction (Figure 5D). Therefore, their invasion is efficient only in the absence of fibers. (Figure 5G-red curve).
 
 There are many mechanisms able to inhibit the immune system. In addition to the exclusion of T-cells from the tumor and the absence of active feedback, low attractiveness can also reduce the immune response. Indeed, when T-cells are less attracted, for example, because chemotaxis is not efficient enough, the tumor is free to expand. In Figure 5B, the cytotoxicity of T-cells is impaired, but their chemotaxis from the boundaries of the domains is not. This leads to an accumulation of inefficient T-cells around the tumor nest.
 
@@ -203,9 +542,17 @@ Next, we analyze the case where two tumor nests are nucleated and interact. We a
 
 **Figure 6.:** Density plots showing cancer cell population. We start with two tumor nests placed at the same distance from the center of the domain (30 μm), sharing the same mass fraction of cancer cells and we present different scenarios. (A) Nests coalesce in immune-desert tumor, i.e., in the presence of inefficient T-cells. (B) Nests interacting in immune-excluded tumor, with chemotactic T-cells and cancer-associated fibroblasts (CAFs). (C) Nests coalesce in immune-inflamed tumor.
 
-## Toward anisotropy
+#### Toward anisotropy
 
-To gain insight into the mechanisms leading to anisotropy, we numerically study different cases where the blood vessels are not spatially homogeneously distributed in the vicinity of the tumor nest. Thus, we introduce in our systems localized sources of T-cells and NAF, in the sense of Figure 3, where blood vessels are disk-like patterns in the tissue slice (Figure 7A), or sources corresponding to only a part of the boundaries, as it would be the case for a blood vessel located in the plane of the tissue slice (Figure 7—figure supplement 1). We note that the anisotropy in the sources can lead to non-trivial shapes of the tumor tissue that are not due to instability but rather to the geometry of the system. These vessels are considered static, as dynamic vessels would require a more accurate modeling of angiogenesis. In the case of localized blood vessels modeled as disks, since the interface between the vessel and the system is smaller than in the case of boundary sources, the parameters driving T-cell population growth and T-cell efficiency in killing cancer cells must be increased in order to eradicate the tumor in the absence of cancer-associated fibroblasts. This highlights a peculiar phenomenon: increasing the density of blood vessels has ambiguous consequences. On the one hand, it allows a more efficient immune response and activate the arrival of T-cells. However, on the other hand, it also provides more nutrients to cancer cells and could ultimately favors metastasis. Therefore, critical processes such as the presence of a fibrous barrier around the tumor may have dual effects on and during tumor evolution. Furthermore, we introduce a more complete description of the fibrous stroma by adding a nematic order to the matrix and an anisotropic friction with respect to this matrix. A tensor order parameter Q is introduced which characterizes the average orientation of the fibroblasts and fibers and their degree of order (see Appendix 1 Section B, Model for an anisotropic friction with the matrix). Indeed, it has been shown that the density of the extracellular matrix is not always sufficient to induce T-cell exclusion (Carstens et al., 2017). We, therefore, provide the CAFs with an orientation, that is the result of there coupling with the matrix they deposit (Li et al., 2017; Bell et al., 2025). This long range order has been shown to induce an anisotropic friction (Jacques et al., 2023) that may be related to immune cell exclusion (Sun et al., 2021). At the same time, matrix orientation strongly influences metastasis and tumor growth by providing directional cues. Thus, there is a strong difference in the outcome of a tumor with fibers normal to the tumor surface and one with fibers along the tumor, both at the level of immune response and cancer escape. In Figure 7B and C we show the nematic order of the matrix and the flux field of the cancer cells in the case of orthonormal and normal orientation with respect to the tumor nest boundary, and due to the influx of fibroblasts from the right side of the system. The flux of cancer cells is much higher in the case of normal orientation of the fibers than in the case of parallel orientation. In conclusion, the description of T-cell exclusion by the sole density would be adapted to a case with fibers orientation aligned with the cancer nest surface, but not in the case with different orientations. Further investigations may, therefore, introduce these two elements to our model: a nematic order in the CAF layer, whose orientation is determined by coupling with the orientation of the interfaces, and an anisotropic friction, which is higher in the direction normal to the nematic matrix order than in the orientation of the matrix. Note that active stresses (σ=−ζQ with ζ the activity) and couplings with the proliferation can develop in interaction with this nematic order, as explained and modeled in a previous article by some of us (Ackermann and Ben Amar, 2023), and a precise description of the nematic order may require to describe separately the fibroblasts and the matrix (Li et al., 2017; Bell et al., 2025; Jacques et al., 2023).
+To gain insight into the mechanisms leading to anisotropy, we numerically study different cases where the blood vessels are not spatially homogeneously distributed in the vicinity of the tumor nest. Thus, we introduce in our systems localized sources of T-cells and NAF, in the sense of Figure 3, where blood vessels are disk-like patterns in the tissue slice (Figure 7A), or sources corresponding to only a part of the boundaries, as it would be the case for a blood vessel located in the plane of the tissue slice (Figure 7—figure supplement 1). We note that the anisotropy in the sources can lead to non-trivial shapes of the tumor tissue that are not due to instability but rather to the geometry of the system. These vessels are considered static, as dynamic vessels would require a more accurate modeling of angiogenesis. In the case of localized blood vessels modeled as disks, since the interface between the vessel and the system is smaller than in the case of boundary sources, the parameters driving T-cell population growth and T-cell efficiency in killing cancer cells must be increased in order to eradicate the tumor in the absence of cancer-associated fibroblasts. This highlights a peculiar phenomenon: increasing the density of blood vessels has ambiguous consequences. On the one hand, it allows a more efficient immune response and activate the arrival of T-cells. However, on the other hand, it also provides more nutrients to cancer cells and could ultimately favors metastasis. Therefore, critical processes such as the presence of a fibrous barrier around the tumor may have dual effects on and during tumor evolution. Furthermore, we introduce a more complete description of the fibrous stroma by adding a nematic order to the matrix and an anisotropic friction with respect to this matrix. A tensor order parameter $Q$ is introduced which characterizes the average orientation of the fibroblasts and fibers and their degree of order (see Appendix 1 Section B, Model for an anisotropic friction with the matrix). Indeed, it has been shown that the density of the extracellular matrix is not always sufficient to induce T-cell exclusion (Carstens et al., 2017). We, therefore, provide the CAFs with an orientation, that is the result of there coupling with the matrix they deposit (Li et al., 2017; Bell et al., 2025). This long range order has been shown to induce an anisotropic friction (Jacques et al., 2023) that may be related to immune cell exclusion (Sun et al., 2021). At the same time, matrix orientation strongly influences metastasis and tumor growth by providing directional cues. Thus, there is a strong difference in the outcome of a tumor with fibers normal to the tumor surface and one with fibers along the tumor, both at the level of immune response and cancer escape. In Figure 7B and C we show the nematic order of the matrix and the flux field of the cancer cells in the case of orthonormal and normal orientation with respect to the tumor nest boundary, and due to the influx of fibroblasts from the right side of the system. The flux of cancer cells is much higher in the case of normal orientation of the fibers than in the case of parallel orientation. In conclusion, the description of T-cell exclusion by the sole density would be adapted to a case with fibers orientation aligned with the cancer nest surface, but not in the case with different orientations. Further investigations may, therefore, introduce these two elements to our model: a nematic order in the CAF layer, whose orientation is determined by coupling with the orientation of the interfaces, and an anisotropic friction, which is higher in the direction normal to the nematic matrix order than in the orientation of the matrix. Note that active stresses ($\sigma=−ζQ$ with $ζ$ the activity) and couplings with the proliferation can develop in interaction with this nematic order, as explained and modeled in a previous article by some of us (Ackermann and Ben Amar, 2023), and a precise description of the nematic order may require to describe separately the fibroblasts and the matrix (Li et al., 2017; Bell et al., 2025; Jacques et al., 2023).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/101885/elife-101885-fig7-v1.jpg)
+
+**Figure 7.:** Following biological observation reported in Figure 3, we here show different cases for describing anisotropy. (A) Example of the tumor microenvironment in the presence of two blood vessels (in white). The tumor nest is in cyan ($C>F_{A}+F_{NA}+T$), the cancerous stroma in red ($F_{A}>F_{NA}+T$) and the healthy stroma in green ($F_{NA}+T>F_{A}$). The tumor shape is dictated by the localization of the blood vessels from which T-cells and non-activated fibroblasts (NAFs) are issued. (B-C) Tumor behavior in the presence of normal (B) or orthonormal (C) fibers. The tumor fraction is indicated in colors from black to gray which we limit for $C>0.25$ to better visualize of the contour of the nest. The flux $Cv_{C}$ is indicated with blue arrows whose thickness is proportional to the magnitude of the flux. The nematic order is shown with red lines whose thickness is proportional to the determinant of the matrix $Q$ (see SI, Nematic order) and the fibroblast fraction is indicated with a pink color gradient.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/101885/elife-101885-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Deformed shapes result in anisotropic configurations by forcing non-activated fibroblasts (NAFs) and T-cells to enter the domain from only one side of the boundary. Different colors indicate separated regions where the nest (in light blue) is confined by the boundary of cancer-associated fibroblasts (CAFs) (in red) within a healthy stroma (in green). (A) Immune-inflamed case leads to disappearance cancer cells at $t=5T_{0}$. (B) Elliptical area leads to slower dynamics.
 
 ## Discussion
 

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.49248.001 Cystic Fibrosis (CF) is a monogenic disease caused by mutations in the cystic fibrosis transmembrane conductance regulator (CFTR) gene, resulting in defective CFTR-mediated chloride and bicarbonate transport, with dysregulation of epithelial sodium channels (ENaC). These changes alter fluid and electrolyte homeostasis and result in an exaggerated proinflammatory response driven, in part, by infection. We tested the hypothesis that NLRP3 inflammasome activation and ENaC upregulation drives exaggerated innate-immune responses in this multisystem disease. We identify an enhanced proinflammatory signature, as evidenced by increased levels of IL-18, IL-1β, caspase-1 activity and ASC-speck release in monocytes, epithelia and serum with CF-associated mutations; these differences were reversed by pretreatment with NLRP3 inflammasome inhibitors and notably, inhibition of amiloride-sensitive sodium (Na + ) channels. Overexpression of β-ENaC, in the absence of CFTR dysfunction, increased NLRP3-mediated inflammation, indicating that dysregulated, ENaC-dependent signalling may drive exaggerated inflammatory responses in CF. These data support a role for sodium in modulating NLRP3 inflammasome activation.
+Cystic Fibrosis (CF) is a monogenic disease caused by mutations in the cystic fibrosis transmembrane conductance regulator (CFTR) gene, resulting in defective CFTR-mediated chloride and bicarbonate transport, with dysregulation of epithelial sodium channels (ENaC). These changes alter fluid and electrolyte homeostasis and result in an exaggerated proinflammatory response driven, in part, by infection. We tested the hypothesis that NLRP3 inflammasome activation and ENaC upregulation drives exaggerated innate-immune responses in this multisystem disease. We identify an enhanced proinflammatory signature, as evidenced by increased levels of IL-18, IL-1β, caspase-1 activity and ASC-speck release in monocytes, epithelia and serum with CF-associated mutations; these differences were reversed by pretreatment with NLRP3 inflammasome inhibitors and notably, inhibition of amiloride-sensitive sodium (Na+) channels. Overexpression of β-ENaC, in the absence of CFTR dysfunction, increased NLRP3-mediated inflammation, indicating that dysregulated, ENaC-dependent signalling may drive exaggerated inflammatory responses in CF. These data support a role for sodium in modulating NLRP3 inflammasome activation.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ The SAID patient cohort is composed of an array of systemic autoinflammatory dis
 
 ## Results
 
-## Increased NLRP3-dependent IL-18 secretion in human bronchial epithelial cells with CF-associated mutations
+### Increased NLRP3-dependent IL-18 secretion in human bronchial epithelial cells with CF-associated mutations
 
 In CF, airway epithelial cells have been shown to produce exaggerated levels of proinflammatory cytokines (IL-8 and TNF) characteristic of a hyper-inflammatory phenotype (Venkatakrishnan et al., 2000). However, IL-1β secretion is barely detectable in bronchial/airway epithelial cells and does not greatly increase following stimulus with NLRP3-inflammasome activators, despite being highly responsive to the effects of the IL-1β cytokine itself (Tang et al., 2012; Peeters et al., 2013; Gillette et al., 2013). We explored the effects of the constitutively expressed IL-18 cytokine in HBECs (BEAS-2B (WT) control, IB3-1 (ΔF508/W1282X), CuFi-1 (ΔF508/ΔF508) and CuFi-4 (ΔF508/G551D)) following treatment with activators for the four main caspase-1 driven inflammasomes, NLRC4, pyrin, AIM2 and NLRP3 (Figure 1).
 
@@ -56,33 +56,69 @@ Under basal conditions, IL-18 levels in the HBECs were undetectable in the absen
 
 It is well established that NLRP3 inflammasome triggers sterile inflammatory responses and pyroptosis, which is a proinflammatory form of programmed cell death initiated by the activation of inflammatory caspases (Bergsbaken et al., 2009). To examine this, we monitored cell death whereby pyroptosis was distinguished from necrosis by pretreating cells with a caspase inhibitor and using lactose dehydrogenase (LDH) as a measure of necrosis. Elevated pyroptosis was present after LPS and ATP stimulation in the HBEC line IB3-1 (Figure 1D), consistent with an NLRP3-mediated hyper-inflammatory phenotype.
 
-## Increased NLRP3-dependent IL-1β/IL-18 secretion in human monocytes with CF-associated mutations
+### Increased NLRP3-dependent IL-1β/IL-18 secretion in human monocytes with CF-associated mutations
 
 We next explored NLRP3 inflammasome activation in primary monocytes (main producers of IL-18 and IL-1β, along with neutrophils) derived from HC, CF, SAID, and NCFB (Figure 2). Under basal conditions primary monocytes, isolated from HC and CF, showed no significant difference in the secretion of IL-18 and IL-1β cytokines (Figure 2A,B) or when monocytes were stimulated with LPS alone across all patient groups (Figure 2—figure supplement 1A,B). As with the HBECs, there was also no statistical difference between HC and CF in LPS mediated activation of inflammasomes, NLRC4, pyrin and AIM-2.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig2-v2.jpg)
+
+**Figure 2.:** Primary monocytes from HC and CF (HC, n = 10; CF, n = 10) were unstimulated or stimulated with LPS which specifically targets TLR4 (10 ng/mL) for 4 hr before being stimulated for 4 hr with Flagellin (10 ng/mL with Lipofectamine 2000) for NLRC4 inflammasome, or TcdB (10 ng/mL) for Pyrin inflammasome or poly(dA:dT) dsDNA (1 μg/mL with Lipofectamine 2000) for AIM2 inflammasome. ELISA assays were used to detect (A) IL-18 and (B) IL-1β cytokine secretion in supernatants. To monitor NLRP3 inflammasome activation, primary monocytes from HC, CF, SAID and NCFB (HC, n = 10; CF, n = 10; SAID, n = 4; NCFB, n = 4) were pre-incubated with MCC950 (15 μM), OxPAPC (30 μg/mL) and YVAD (2 μg/mL) for 1 hr before a stimulation with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for the final 30 min. ELISA assays were used to detect (C) IL-18 and (D) IL-1β cytokine secretion in supernatants and (E) a colourimetric assay was used to detect caspase-1 activity in protein lysates (HC, n = 10; CF, n = 10; SAID, n = 4; NCFB, n = 4). (F) Flow cytometry was used to detect ASC specks in supernatants of primary monocytes from HC, CF, SAID and NCFB (HC, n = 10; CF, n = 10; SAID, n = 6; NCFB, n = 4) for ±LPS/ATP and (HC, n = 5; CF, n = 5) for MCC950 with LPS/ATP. (G) Necrosis and pyroptosis are represented as superimposed bar charts. Total necrosis was measured using LDH release assay. For pyroptotic cell death, each sample/condition was repeated in parallel with a caspase-1 inhibitor (YVAD (2 mg/mL, 1 hr)) pre-treatment. The total necrosis level was taken away from the caspase-1 inhibited sample, or ‘caspase-1 independent’ necrosis, with the remaining LDH level termed ‘caspase-1 dependent necrosis’ or pyroptosis. Cells were then stimulated with LPS (10 ng/mL, 4 hr), and ATP (5 mM) for final 30 min. The assay was performed with primary monocytes from HC, CF, SAID and NCFB (HC, n = 10; CF, n = 10; SAID, n = 4; NCFB, n = 4). (◦) Significance for Total Necrosis (●) Significance for pyroptosis. A 2-way ANOVA statistical test was performed, with Tukey post-hoc correction (p values * =< 0.05, ** =< 0.01, *** =< 0.001 and **** =< 0.0001; error bars ± SEM). Inhibitor treatments in panels a-c were found to significantly reduce cytokine secretion and caspase-1 activity to **p =< 0.01 or less, for CF and SAID groups respectively. Significance values not displayed on the graph.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** ELISAs were used to detect (A) IL-18, and (B) IL-1β cytokine secretion in supernatants. (C) PBMCs were unstimulated or stimulated with LPS (10 ng/ml, 4 hr) or LPS (10 ng/ml, 4 hr) and ATP (5 mM) for the final 30 min. Taqman RT-qPCR was used to measure IFNγ gene expression and (D) Luminex was used to measure IFNγ secretion from peripheral blood mononuclear cells (PBMC) populations from HCs and patients with CF-associated mutations (n = 10).
 
 In primary monocytes stimulated with LPS, followed by ATP to activate the NLRP3 inflammasome, we observed hyper-responsiveness in IL-18 (p<0.0001) and IL-1β (p=0.0009) secretion in CF monocytes relative to HC. When these cells were pretreated with NLRP3 inflammasome pathway inhibitors (MCC950; NLRP3, OxPAPC;TLR4, YVAD;caspase-1), their secretions were significantly abrogated across all patient groups (HC, CF, SAID and NCFB) (Figure 2C,D). Downstream, IL-18 acts on NK and T-cells to express and secrete IFN-γ (Kim et al., 2015); we monitored IFN-γ gene expression and secretion and found they were increased, post-NLRP3-inflammasome activation, in PBMCs from patients with CF compared to HC (Figure 2—figure supplement 1C,D).
 
 We next examined cell death in HC, CF, SAID and NCFB monocytes (Figure 2G). Elevated pyroptosis was present after LPS and ATP stimulation in monocytes from patients with CF, and also in those diagnosed with SAID. Notably, caspase-1-independent necrosis was also elevated in CF and SAID monocytes (Figure 2E). To understand the relationship between elevated pyroptosis and downstream inflammation, the presence of ASC protein aggregates (specks), key inflammasome components, were measured in the cell supernatants, post-NLRP3 inflammasome activation. ASC-specks were elevated in stimulated monocytes from patients with CF-associated mutations, and also in those diagnosed with SAID (Figure 2F), and were reduced with MCC950 treatment. Similar to HBECs, caspase-1 activation was also elevated in CF and SAID monocytes, post-LPS and ATP stimulation in vitro, and were depleted by MCC950 pretreatment in the monocytes (Figure 2E).
 
-## Proinflammatory cytokines and ASC specks are elevated in CF Sera, and are comparable to patients diagnosed with systemic autoinflammatory disease (SAID)
+### Proinflammatory cytokines and ASC specks are elevated in CF Sera, and are comparable to patients diagnosed with systemic autoinflammatory disease (SAID)
 
 To understand the extent of systemic inflammation in CF, serum cytokine levels were measured in patients with CF, SAID, NCFB and HC. Serum IL-18 (p=0.0064), IL-1β (p<0.0001) and IL-1Ra (p<0.0001) levels were all significantly elevated in CF samples, with levels comparable to SAIDs (Figure 3A–C). However, in contrast to IL-1-type cytokines, the inflammasome-independent cytokines, TNF and IL-6, were not significantly elevated in patients with CF whereas the levels of these two cytokines were significantly elevated in samples from patients with SAID (Figure 3—figure supplement 1). All SAID patients were on active recombinant IL-1Ra (anakinra) therapy, which will have reduced serum cytokine levels. However, levels of IL-18 and endogenous IL-1Ra were raised in patients with SAID, and are comparable to the proinflammatory IL-1 cytokines found in CF-serum.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig3-v2.jpg)
+
+**Figure 3.:** (A) ELISA assays were used to detect IL-18 (HC, n = 10, CF, n = 30, SAID, n = 10, NCFB, n = 4), (B) IL-1β (HC, n = 10, CF, n = 30, SAID, n = 10, NCFB, n = 4), (C) IL-1Ra (HC, n = 10, CF, n = 30, SAID, n = 7, NCFB, n = 4) in patient sera. Outliers in SAID group for IL-1β and IL-1Ra correspond to HIDS one and A20 deficiency (D) Flow cytometry was used to detect ASC specks (HC, n = 10, CF, n = 15, SAID, n = 10, NCFB, n = 4) in patient sera. (E) A colorimetric assay to detect caspase-1 activity in sera of patients with CF, SAID and NCFB as a percentage of HC (HC, n = 10, CF, n = 15, SAID, n = 4, NCFB, n = 4). Of note, an undetermined amount of detected IL-1Ra is attributed to circulating Anakinra (recombinant IL-1Ra) specifically in the SAID cohort. The Kruskal-Wallis non-parametric test, with Dunn’s multiple comparison test, was performed (p values * =< 0.05, ** =< 0.01, *** =< 0.001 and **** =< 0.0001; error bars ± S.E.M).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** ELISA assays were used to detect (A) TNF and (B) IL-6 (HC n = 10, CF n = 30, SAID n = 7, NCFB = 4) in patient serum. The Kruskal-Wallis non-parametric test, with Dunn’s multiple comparison test, was performed (p values * = 0.05, ** = 0.01, *** = 0.001 and **** = 0.0001; error bars ± S.E.M).
 
 We next sought to confirm that serum IL-1-type cytokines were associated with NLRP3 inflammasome activation by detecting the presence of ASC specks, in sera. ASC-specks were significantly elevated in CF (p=0.0007) and SAID sera compared to HC (Figure 3D), reflecting inflammasome-mediated inflammation and pyroptosis (Franklin et al., 2014). The activity of caspase-1, the rate-limiting factor in the activation of all inflammasomes (Mariathasan et al., 2006), was significantly elevated in CF and SAID serum samples compared to NCFB and HC (Figure 3E).
 
 These data suggest that systemic serum cytokine levels from patients with CF are comparable to patients diagnosed with SAID and can be characterised by release of proinflammatory IL-1-type cytokine family members (IL-1β and IL-18), associated with NLRP3 inflammasome activation.
 
-## Dysregulated na+ and K+ in cells with CF-associated mutations can be modulated with ENaC inhibitors
+### Dysregulated na+ and K+ in cells with CF-associated mutations can be modulated with ENaC inhibitors
 
 As K+ efflux and Na+ influx are thought to occur upstream of NLRP3 inflammasome activation and ENaC overactivation is a recognised event in cells with CF-associated mutations, we monitored intracellular concentrations of K+ and Na+ to determine if they were dysregulated in CF. The concentration gradient of Na+ and K+ is essential for cellular homeostasis, including resting potential, nutrient transport, cell volume and signal transduction. Here we tested the hypothesis that dysregulated ENaC-mediated Na+ transport alters the Na+/K+ gradient, enhancing K+ efflux and downstream NLRP3 inflammasome activation. We found that intracellular Na+ levels were significantly higher in CF cells [monocytes (p<0.0001), HBEC (p<0.0001)], at the peak of Na+ influx, which was recorded immediately following stimulus with ATP. This corresponded with a superior reduction in intracellular K+ [monocytes (p<0.0001), HBEC (p<0.0001)], suggestive of greater K+ efflux in these cells, upon ATP stimulation (Figure 4A,B,E,F, Figure 4—figure supplement 1). The magnitude of the observed Na+ and K+ fluxes was significantly reduced by ENaC inhibition (using both amiloride and the SPLUNC1-derived peptide, S18, a highly stable and specific small molecule inhibitor of ENaC channels). Pretreatment with 5-(N-ethyl-N-isopropyl)-amiloride, EIPA, a broad-spectrum Na+ channel inhibitor with lower potency for ENaC, also reduced intracellular Na+ and increased intracellular K+ in CF monocytes and HBEC lines, but not to the same extent as amiloride or S18 (Figure 4A,B,E,F, Figure 4—figure supplement 1). To corroborate our findings, we used ouabain, a Na+/K+-ATPase inhibitor, which was associated with a higher intracellular Na+ in CF cells compared to HC. Collectively, these data suggest that higher intracellular Na+ levels in CF, mainly driven by ENaC, predispose cells to a greater K+ efflux upon stimulation with ATP. Na+ influx has been described as a modulator of NLRP3 activation, dependent on K+ efflux (Schorn et al., 2011; Muñoz-Planillo et al., 2013; Katsnelson and George, 2013).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig4-v2.jpg)
+
+**Figure 4.:** Intracellular Na+ was detected using an AM ester of sodium indictor SBFI (S-1263) and (B, D) intracellular K+ was detected using an AM ester of potassium indictor PBFI (P-1266); changes in fluorescence were measured by fluorimeter post-stimulation with 5 mM ATP in (A, B) monocytes (HC = 7, CF = 7) (E, F) HBECs (n = 3 independent experiments). Cells were pre-treated with the following: amiloride (100 μM), S18 derived peptide (25 μM, 4 hr) with LPS (10 ng/mL, 4 hr) and ATP (5 mM) for the final 30 min. A 2-way ANOVA with Tukey’s multiple comparison test was performed (p values * =< 0.05, ** =< 0.01, *** =< 0.001 and **** =< 0.0001) (*) indicate significance when comparing HC with CF-associated mutants. (•) indicate significance between treatments within the same cell line. (C) Endogenous β-ENaC protein expression was detected using western blot in BEAS-2B HBEC, HC and CF monocytes (C) and densitometry analysis of total β-ENaC (bands A, B, C indicated on blot) was quantified in (D) for CF relative to HC (n = 3 independent experiments). (G) BEAS-2B, IB3-1, CuFi-1 and CuFi-4 HBEC lines and densitometry analysis of total β−ENaC (bands A, B, C indicated on blot) was quantified in (H) (n = 3 independent experiments). Band A represents complex N-Glycosylation, 110 kDa β-ENaC (found when associated as ENaC complex); Band B represents Endo-H sensitive N-Glycosylation, 96 kDa β-ENaC; Band C represents immature non-glycosylated, 66 kDa β−ENaC. The Mann-Whitney non-parametric test was performed (p values * =≤ 0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, C) Intracellular Na+ was detected using an AM ester of sodium indictor SBFI (S-1263) and (B, D) intracellular K+ was detected using an AM ester of potassium indictor PBFI (P-1266); changes in fluorescence were measured by fluorimeter post-stimulation in (A, B) monocytes (HC = 7, CF = 7) (C, D) HBECs (n = 3 independent experiments). Cells were pre-treated with the following: EIPA (10 mM, 1 hr) and ouabain (100 nM, 24 hr) before a stimulation with LPS (10 ng/mL, 4 hr) and ATP (5 mM) for the final 30 min. A 2-way ANOVA with Tukey’s multiple comparison test was performed (p values * = 0.05, ** = 0.01, *** = 0.001 and **** = 0.0001) (*) indicate significance when comparing HC with CF-associated mutatns. (•) indicate significance between treatments within the same cell line. (E) Gene expression of b-ENaC in HC vs CF (n = 1), represented as DCT. The Mann-Whitney non-parametric test was performed (p values * = 0.05).
+
 As inhibition of ENaC activity (by amiloride and S18) modulated elevated intracellular Na+ levels in cells with CF-associated mutations, we measured β-ENaC protein expression in HBEC lines and found significantly increased expression, in CuFi-1 and CuFi-4 cells relative to BEAS-2B control (p=<0.05) (Figure 4G,H). Furthermore, the β-ENaC gene was expressed in monocytes with a significant increase in β-ENaC protein levels noted in CF monocytes compared to HC (p=<0.05) (Figure 4—figure supplement 1, Figure 4C,D).
 
-## Inhibition of amiloride-sensitive sodium channels modulates inflammation in CF
+### Inhibition of amiloride-sensitive sodium channels modulates inflammation in CF
 
 We next sought to determine the extent to which dysregulated Na+ levels contribute to the observed NLRP3 inflammasome activation in cells with CF-associated mutations. We utilised small molecule inhibitors, for potent inhibition of ENaC, for in vitro NLRP3 inflammasome activation assays. Notably, amiloride alleviated the augmented cytokine secretion, as well as caspase-1 activity in both primary CF monocytes (IL-18 p=0.0001; IL-1β p=0.0272) and HBEC lines (Figure 5A,B,E) (Montgomery et al., 2017; Fritzsching et al., 2015; Mall et al., 2004). S18 potently inhibited cytokine secretion (IL-18 p=0.0052; IL-1β p=0.0100) and caspase-1 activity exclusively in cells with CF-associated mutations (Figure 5C, Figure 5—figure supplement 1), whereas EIPA had no effect (Figure 5—figure supplement 1A,C,D,E). These data were replicated by nigericin activation of NLRP3, used as a control for ATP, due to ATP’s ability to modulate other ionic channels (Figure 5—figure supplement 2). To corroborate these findings, both amiloride (p<0.0001) and S18 (p=0003) inhibited ASC-speck formation in CF monocytes (Figure 5D), and finally, inhibition of amiloride-sensitive channels did not modulate TNF levels (Figure 5—figure supplement 1F), suggestive of a specific ENaC-NLRP3 axis.
 
-## β-ENaC overexpression in BEAS-2B cells increases proinflammatory cytokine secretion
+![Figure 5.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig5-v2.jpg)
+
+**Figure 5.:** ELISA assays were used to detect IL-18 (A) and (B) IL-1β in monocytes from HC (n = 9 amiloride, n = 10 S18), patients with CF (n = 10), SAID (n = 4) and NCFB (n = 4) and IL-18 (E) HBEC (n = 3, amiloride independent experiments) (F) HBEC (n = 3, S18 independent experiments). (C) Colourimetric assay was used to detect caspase-1 activity in protein lysates (HC n = 11, CF n = 11) and (D) flow cytometry was used to detect ASC specks in supernatant of primary monocytes (HC n = 5, CF n = 5). Cell stimulation was as follows: Amiloride (100 μM or 10 μM, 1 hr) or S18 derived peptide (25 μM, 4 hr) were used as a pre-treatment before a stimulation with LPS (10 ng/mL, 4 hr) and ATP (5 mM) for the final 30 min. (E, F) SCNN1B over-expression in BEAS-2B cells increases pro-inflammatory cytokine secretion. (E) BEAS-2B cells were transiently transfected with 10µg SCNN1B cDNA (+) or a pcDNA3.1 vector only control (-) for 48 hr then stimulated with LPS (10 ng/mL, 4 hr) and ATP (5 mM) for the final 30 min (n = 3 independent experiments). Cells were lysed and immunoblotted for β-ENaC and β-actin. (F) ELISA assays were used to detect IL-18 in the supernatant fraction. A 2-way ANOVA with Tukey’s multiple comparison test was performed (p values * =≤ 0.05, ** =≤ 0.01, *** =≤ 0.001 and **** =≤ 0.0001) (*) indicate significance, when comparing HC with CF. (•) indicate significance between treatments within the same cell line.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) ELISA assays were used to detect IL-18 in HBECs (n = 3 independent experiments) and (C) IL-18 and (D) IL-1β and (F) TNF in monocytes from HC (n = 10), patients with CF (n = 10), SAID (n = 4) and NCFB (n = 4). Cell stimulation was as follows: (F) Amiloride (100 mM or 10 mM, 1 hr) (A, C, D, E), EIPA (10 mM, 1 hr), were used as a pre-treatment before a stimulation with LPS (10 ng/mL, 4 hr) and ATP (5 mM) for the final 30 min. (H) All the above stimulations were used to detect caspase-1 activity using a colorimetric assay in HBECs and for EIPA in monocytes (G). A 2-way ANOVA with Tukey’s multiple comparison test was performed (p values * = 0.05, ** = 0.01, *** = 0.001 and **** = 0.0001) (*) indicate significance when comparing HC with CF-associated mutants. (•) indicate significance between treatments within the same cell line.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49248/elife-49248-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A, D, G) ELISA assays were used to detect IL-18 and (B, E, H) IL-1β in monocytes from HC (n = 10), patients with CF (n = 10), SAID (n = 4) and NCFB (n = 4) and (C, F) IL-18 in HBECs (n = 3 independent experiments). Cell stimulation was as follows: (A–C) Amiloride (100 mM or 10 mM, 1 hr), (D–F) EIPA (10 mM, 1 hr), (G–I) S18 derived peptide (25 mM, 4 hr) were used as a pre-treatment before a stimulation with LPS (10 ng/mL, 4 hr) and Nigericin (1µM) for the final 30 min. A 2-way ANOVA with Tukey’s multiple comparison test was performed (p values * = 0.05, ** = 0.01, *** = 0.001 and **** = 0.0001) (*) indicate significance when comparing HC with CF-associated mutants. (•) indicate significance between treatments within the same cell line.
+
+### β-ENaC overexpression in BEAS-2B cells increases proinflammatory cytokine secretion
 
 In order to recapitulate the ENaC-NLRP3 axis, as revealed in this study, we overexpressed the β-ENaC chain in the WT BEAS-2B line. This approach has been used previously in a β-ENaC Tg-mouse model of CF, which recreated a CF-like lung disease state, with mucous plugging and excessive inflammation (Mall et al., 2004; Zhou et al., 2011). Overexpression of β-ENaC induced elevated IL-18 secretion at baseline and after LPS and ATP stimulation (p=0.0003) (Figure 6B). These data support the hypothesis that excessive ENaC-mediated Na+ influx intrinsically drives NLRP3 inflammasome activation in CF.
 
@@ -116,37 +152,348 @@ In conclusion, we have shown that hypersensitive NLRP3 inflammasome activation i
 
 ## Materials and methods
 
-## Clinical characteristics of patients
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-SCNN1B</td>
+      <td>Avia Systems Biology, San Diego</td>
+      <td>Cat# ARP72375_P050; RRID: AB_2811256</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Rabbit IgG (H+L) Poly-HRP Secondary Antibody</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 32260; RRID: AB_1965959</td>
+      <td>WB 1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-actin-β</td>
+      <td>GeneTex</td>
+      <td>Cat# GTX109639, RRID: AB_1949572</td>
+      <td>WB 1:20:000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Phycoerythrin anti-ASC (TMS-1)</td>
+      <td>Biolegend</td>
+      <td>Cat# 653903, RRID: AB_2564507</td>
+      <td>5 µL/ ml</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>BEAS-2B cell line</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-9609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>IB3-1</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-2777</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>CuFi-1 cell line</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-4013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>CuFi-4 cell line</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-4015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlertTM</td>
+      <td>Lonza</td>
+      <td>Cat# LT07-118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological samples (Homo-sapiens)</td>
+      <td>Human Blood Samples</td>
+      <td>St James's University Hospital</td>
+      <td>Health Research Authority REC reference 17/YH/0084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lymphoprep</td>
+      <td>Axis Shield</td>
+      <td>Cat# 1114544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pan Monocyte Isolation Kit, human</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-096-537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysacchride Ultrapure EK</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-eklps</td>
+      <td>10ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MCC950</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# CAY17510-1</td>
+      <td>15 nM, 1 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>YVAD</td>
+      <td>InvivoGen</td>
+      <td>Cat# inh-yvad</td>
+      <td>2 μg/ mL, 1 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OxPAPC</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-oxp1</td>
+      <td>30 μg/ mL, 1 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amiloride (hydrochloride)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 26295</td>
+      <td>10 μM, 100 μM, 1 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SPLUNC1-derived peptide, S18</td>
+      <td>Gift from Spyryx Biosciences, Inc</td>
+      <td></td>
+      <td>25 μM, 4 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-(N-ethyl-N-isopropyl)-Amiloride (EIPA)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 1154-25-2</td>
+      <td>10 μM, 1 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ouabain</td>
+      <td>Torcis Bioscience</td>
+      <td>Cat# 630-60-4</td>
+      <td>100 nM, 24 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-atpl</td>
+      <td>5 mM, 30 min</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>poly(dA:dT) dsDNA</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-patn</td>
+      <td>1 μg/ mL, 1 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TcdB</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# CAY19665-50</td>
+      <td>10 ng/mL, 1 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flagellin</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-pbsfla</td>
+      <td>10 ng/mL, 1 hr</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhosSTOP</td>
+      <td>Merck</td>
+      <td>Cat# 4906845001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce Protease Inhibitor Mini Tablets</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A32955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Immobilon Western Chemiluminescent HRP Substrate</td>
+      <td>Merck</td>
+      <td>Cat# WBKLS0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-1 beta Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# CHC1213</td>
+      <td>Assay sensitivity &lt; 31.2 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-18 Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# BMS267/2MST</td>
+      <td>Assay sensitivity 78 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-6 Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# CHC1263</td>
+      <td>Assay sensitivity 15.6 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TNF alpha Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# CHC1753</td>
+      <td>Assay sensitivity &lt; 15.6 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL1RA Human Matched Antibody Pair</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# CHC1183</td>
+      <td>Assay sensitivity &lt; 31.2 pg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(TMB) substrate solution</td>
+      <td>Sigma</td>
+      <td>Cat# T0440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Caspase-1 Colorimetrix Assay</td>
+      <td>R and D Systems</td>
+      <td>Cat# BF15100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SCNN1B cDNA plasmid</td>
+      <td>Addgene</td>
+      <td>Cat# 83429</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 cDNA plasmid</td>
+      <td>Gift from N.M Hooper, Manchester</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sodium-sensitive molecule SBFI</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# S-1263</td>
+      <td>10 mM, 100 min</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>potassium-sensitive molecule PBFI</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# P-1266</td>
+      <td>10 mM, 100 min</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pluronic F-127</td>
+      <td>Sigma</td>
+      <td>Cat# P2443</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism7</td>
+      <td>Graphpad software</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Clinical characteristics of patients
 
 Patients with CF, systemic autoinflammatory diseases (SAID), non-CF bronchiectasis (NCFB) and healthy controls (HC) were recruited from the Department of Respiratory Medicine and Research laboratories at the Wellcome Trust Benner Building at St James’s Hospital. All SAID patients were on Anakinra treatment, when blood samples were obtained. The study was approved by Yorkshire and The Humber Research Ethics Committee (17/YH/0084). Informed written consent was obtained from all participants at the time of the sample collection. Demographics are shown in Supplementary file 1. All CF donors were F508del/F508del homozygous (n = 30) with no sign of infection. Three of the patients with NCFB had primary ciliary dyskinesia (PCD) and one patient with NCFB had an unknown genotype. All patients with a SAID had characterised mutations in a known disease-causing gene (Tumor Necrosis Factor Receptor Associated Periodic Syndrome (TRAPS) n = 2, Muckle-Wells n = 2, A20 haploinsufficiency n = 1, Pyrin-Associated Autoinflammation with Neutrophilic Dermatosis (PAAND) n = 1, Familial Mediterranean Fever (FMF) n = 2, Hyper IgD Syndrome (HIDS) n = 2 and Schnitzler syndrome n = 1).
 
-## PBMC and monocyte isolation
+### PBMC and monocyte isolation
 
 Peripheral blood mononuclear cells (PBMCs) were isolated from whole blood using the density gradient centrifugation. Whole blood were mixed with equal volume of PBS, carefully layered onto of Lymphoprep (Axis-Shield, Dundee, UK) and centrifuged at 1100xg for 20 min without brakes. The white buffy layer was removed and washed twice in PBS by centrifuging at 1100xg for 10 min. PBMC pellet was resuspended in complete RPMI medium (RPMI medium containing 10% heat inactivated foetal bovine serum, 50 U/ml penicillin, 50 μg/ml streptomycin).
 
 Monocytes were isolated by negative selection from PBMCs using the monocyte isolation kit II (Miltenyi Biotec GmbH, Bergisch Gladbach, Germany). Pelleted PBMCs were resuspended in 30 μl of buffer per 107 cells (autoMACS Rinsing Solution containing 0.5% BSA). This was mixed with 10 μl FcR Blocking Reagent followed by 10 μl of biotin-conjugated antibodies and incubated at 4°C for 10 min. Next 30 μl of buffer were added together with 20 μl of anti-biotin microbeads and incubated for an additional 15 min at 4°C. This whole mixture was washed with 2 ml of buffer and centrifuged at 300 xg for 10 min. The cell pellet was resuspended in 500 μl of buffer and past down a MS column (Miltenyi Biotec GmbH, Bergisch Gladbach, Germany) on a magnetic stand. PBMCs (2 × 106/ ml) and monocytes (1 × 106/ ml) were allowed to adhere overnight prior to experimentation.
 
-## Cell line culture
+### Cell line culture
 
 Human cell lines BEAS-2B (ATCC CRL-9609), CuFi-1 (ATCC CRL-4013), CuFi-4 (ATCC CRL-4015) and IB3-1 (ATCC CRL-2777) were purchase from ATCC (UK) which ensures STR profiling of the cell lines used. BEAS-2B and IB3-1 were cultured in LHC basal medium (Thermo Fisher Scientific, Loughborough, UK) supplemented with 10% FBS, 50 U/ml penicillin and 50 μg/ml streptomycin). CuFi-1 and CuFi-4 were grown on Cell+ surface plates or flasks (Sarstedt, Leicester, UK) with LHC-9 medium (Thermo Fisher Scientific, Loughborough, UK). All cells were cultured in a humidified incubator at 37°C, 5% CO2. Cells were used at 1 × 106/ ml. Cell lines were routinely tested for mycoplasma using MycoAlertTM Mycoplasma Detection Kit Lonza catalog#: LT07-118, and were all negative.
 
-## Cell stimulations
+### Cell stimulations
 
 Cells were pre-treated with the following compounds where indicated prior to NLRP3 stimulation; MCC950 (15 nM, Cayman Chemical, Cambridge, UK) for 1 hr, YVAD (2 μg/ mL, Invivogen, San Diego, California) for 1 hr, OxPAPC (30 μg/ mL, Invivogen) for 1 hr, Amiloride (10 μM, 100 μM, Cayman Chemical, Cambridge, UK) for 1 hr, EIPA (10 μM, Cayman Chemical) for 1 hr, SPLUNC1-derived peptide, S18 (25 μM, gift from Spyryx Biosciences, Inc) for 4 hr or ouabain (100 nM, Cayman Chemical, Cambridge, UK) for 24 hr. Inflammasome stimulation was achieved using either LPS (10 ng/mL, Ultrapure EK, Invivogen) for 4 hr with the addition of ATP (5 mM, Invivogen, San Diego, California) for the final 30 min of stimulation, poly(dA:dT) dsDNA (1 μg/mL with Lipofectamine 2000, Invivogen, San Diego, California) for 1 hr, TcdB (10 ng/mL, Cayman Chemical, Cambridge, UK) for 1 hr or flagellin (10 ng/mL with Lipofectamine 2000, Invivogen, San Diego, California) for 1 hr for the final 1 hr of the LPS stimulation. ATP was dissolved in pre-warmed at 37°C medium (100 mM stock) and immediately (~2 min) added to the cells. All incubations were done in a humidified incubator at 37°C, 5% CO2. Supernatant, RNA and protein were collected and stored immediately following stimulation.
 
-## Cytokine quantification using ELISA
+### Cytokine quantification using ELISA
 
 Cytokines from patient sera and cell cultured media were detected by ELISAs (IL-1 beta Human Matched Antibody Pair, human IL-18 Matched Antibody Pair, IL1RA Human Matched Antibody Pair, TNF alpha Human Matched Antibody Pair and IL-6 Human Matched Antibody Pair) (ThermoFisher Scientific, Loughborough, UK), as per the manufactures recommendations. In general, ELISA plates were coated with 100 μl cytokine capture antibody in PBS overnight at 4°C. The plates were washed three times with PBST (PBS containing 0.5% Tween 20) and the wells blocked in 300 μl assay buffer (0.5% BSA, 0.1% Tween 20 in PBS) by incubating for 1 hr. The plates were washed twice with PBST and 100 μl of sera/culture supernatants, together with appropriate standards, were added to wells in duplicates. Immediately 50 μl of detection antibody were added to all wells and incubated for 2 hr. After the incubation the plates were washed five times with PBST and 100 μl of tetramethybenzidine (TMB) substrate solution (Sigma, Poole, UK) were added to all wells and incubated for 30 min. Colour development was stopped by adding 100 μl of 1.8N H2SO4. And absorbance measured at 450 nm and reference at 620 nm. Note all incubation steps were done at room temperature with continual shaking at 700 rpm. All data points are an average of duplicate technical replicates for each independent experiment.
 
-## ASC protein aggregates (specks)
+### ASC protein aggregates (specks)
 
 Methodology as previously published (Rowczenio et al., 2018). Briefly, patients’ sera or culture media were incubated with 5 µL of phycoerythrin anti-ASC (TMS-1) antibody (Biolegend, London, UK) for 1 hr, and analysed on the LSRII flow cytometer instrument (BD Biosciences, California).
 
-## Caspase-1 activity
+### Caspase-1 activity
 
 A colorimetric assay (Caspase-1 Colorimetrix Assay, R and D Systems, Abingdon, UK) measured caspase-1 activity, via cleavage of a caspase-specific peptide conjugated to a colour reporter molecule, p-nitroalinine (pNA), performed on protein lysates and serum. All data points are an average of duplicate technical replicates for each independent experiment. Protein concentrations in the lysate were determined by BCA assay.
 
-## Detection of mRNA by RT-qPCR
+### Detection of mRNA by RT-qPCR
 
 Cells were washed in PBS, pelleted and immediately lysed in 1 ml TRIzol Reagent (Ambion Life technologies, Paisley, UK) and RNA extracted using the PureLink RNA mini kit (Ambion, Life technologies, Paisley, UK). Chloroform (200 μl) were added to each sample and mixed vigorously for 15 s and left to stand for 2 min at room temperature. These were centrifuged at 12000 xg for 15 min at 4°C. The top clear phase was transferred to a fresh tube and mixed with equal volume of 70% ethanol. This mixture was transferred to a spin cartridge, with a collection tube, and centrifuged at 12000 xg for 15 s at room temperature. The waste was disposed of and the spin cartridge was centrifuged one more time. The spin cartridge was washed 700 μl of wash buffer I and centrifuged at 12000 xg for 15 s. A second wash with 500 μl wash buffer II (containing ethanol) were added to the spin cartridge and centrifuged at 12000 xg for 15 s followed by further spin for 1 min. RNA was recovered by adding 30 μl of RNase free water to the spin cartridge, incubated for 1 min and centrifuged for 2 min.
 
@@ -154,20 +501,45 @@ The High Capacity cDNA Reverse Transcription kit (Applied Biosystems, California
 
 The Taqman primers used in this study are detailed below:
 
-GeneAssay IDDyeSCNN1BHs01548617_m1FAMIFNGHs00989291_m1FAMHPRT1Hs02800695_m1FAM
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Assay ID</th>
+      <th>Dye</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SCNN1B</td>
+      <td>Hs01548617_m1</td>
+      <td>FAM</td>
+    </tr>
+    <tr>
+      <td>IFNG</td>
+      <td>Hs00989291_m1</td>
+      <td>FAM</td>
+    </tr>
+    <tr>
+      <td>HPRT1</td>
+      <td>Hs02800695_m1</td>
+      <td>FAM</td>
+    </tr>
+  </tbody>
+</table>
 
-## Transient transfection
+### Transient transfection
 
 BEAS-2B cells were transiently transfected with 10 μg of sodium channel epithelial one beta subunit (SCNN1B) cDNA (Addgene, Teddington, UK) or pcDNA3.1 vector only control (gift from Professor NM Hooper, Manchester University) using Lipofectamine 2000 (Thermo Fisher Scientific, Loughborough, UK) for 48 hr, as per manufacturers’ instructions. Cells were harvested, lysed in RIPA buffer and protein concentrations were determined using the Pierce bicinchoninic acid (BCA) assay (Thermo Fisher Scientific, Loughborough, UK).
 
-## Western blotting
+### Western blotting
 
 Samples were made up in dissociation buffer [1x dissociation buffer (100 mM Tris-HCl, 2% (w/v) sodium dodecyl sulfate, 10% (v/v) glycerol, 100 mM dithiothreitol, 0.02% (w/v) bromophenol blue, pH 6.8] and heated at 95°C for 5 min, and equal protein concentration was loaded and resolved by 10% SDS-PAGE on Tris-glycine gels and then transferred to Hybond PVDF membranes (GE Healthcare, Buckinghamshire, UK). Following electrotransfer in Towbin buffer (25 mM Tris, 192 mM glycine, and pH 8.3, 20% methanol) at 100 V for 1 hr, the membranes were blocked for 1 hr in blocking solution (PBS containing 0.1% Tween 20% and 5% (w/v) non-fat milk). After three washes in PBST (PBS with 0.5% Tween 20), primary antibodies were incubated with PVDF membrane overnight at 4°C. The membrane was washed three times with PBST and secondary antibody-HRP conjugate were added and incubated for 2 hr with constant rocking at room temperature. The membrane was washed five times with PBST and 3 ml of ECL detection system (Immobilon chemiluminescent HRP substrate, Millipore, UK) was added onto the membrane for 5 min, before being imaged with the ChemiDoc Imaging system (Bio-Rad, Hertfordshire, UK). Primary antibodies used: rabbit anti-SCNN1B (Avia Systems Biology, San Diego; 1/500 dilution), rabbit anti-actin-β (GeneTex, Nottingham, UK) at 1/20000 dilution. Secondary antibodies used: anti-rabbit IgG horseradish peroxidase-conjugated (Cell Signalling Technology, Hertfordshire, UK) were diluted at 1/4000. All antibodies were diluted in PBS containing 0.1% Tween 20% and 2% BSA.
 
-## Fluorometric determination of na+ and K+ concentration
+### Fluorometric determination of na+ and K+ concentration
 
 Na+ and K+ sensitive dyes, SBFI (S-1263) and PBFI (P-1266) (Molecular Probes, Paisley, UK), respectively, were used as cell permeant selective ion indicators for the fluorometric determination of Na+ and K+ concentrations. Monocytes and HBECs were allowed to adhere in black 96-well cell culture plates overnight. Cells were then incubated with various stimulants, as indicated in figure legends, before being washed and incubated in the appropriate low serum media (see above) (1%) for 1 hr. The dyes (10 mM final concentration) were loaded with Pluronic F-127 (Sigma) and incubated for 100 min. All wells were washed with NaCl solution. ATP (5 mM) was then added to the wells prior to measuring fluorescence. Excitation at 344 nm and 400 nm with emission at 500 nm was measured immediately to calculate the percentage change in fluorescence compared to an untreated control. All data points are an average of duplicate technical replicates for each independent experiment.
 
-## Statistics
+### Statistics
 
 All analyses were performed using GraphPad Prism v 7. Bar graphs were expressed as mean standard error of the mean (S.E.M). The Kruskal-Wallis test with Dunn’s multiple comparison or the Mann Whitney test was performed when comparing non-parametric populations. A two-way ANOVA statistical test with Tukey’s multiple comparison post-hoc analysis was performed when calculating variance between samples (p values * =≤ 0.05, ** =≤ 0.01, *** =≤ 0.001 and ****=≤0.0001). A p<0.05 was considered significant. Statistical tests used are indicated in the figure legends. p-values are measured using a 2-sided hypothesis.

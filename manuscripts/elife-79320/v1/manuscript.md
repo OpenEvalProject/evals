@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03wmf1y16 Department of Environmental and Occupational Health, Colorado School of Public Health, University of Colorado Anschutz Aurora United States
-2. https://ror.org/03wmf1y16 Department of Biochemistry & Molecular Genetics, University of Colorado School of Medicine Aurora United States
-3. https://ror.org/019kgqr73 Department of Biology, University of Texas at Arlington Arlington United States
-4. https://ror.org/05nda1d55 Sichuan Centers for Disease Control and Prevention Chengdu China
+1. Department of Environmental and Occupational Health, Colorado School of Public Health, University of Colorado Anschutz Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+2. Department of Biochemistry & Molecular Genetics, University of Colorado School of Medicine Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+3. Department of Biology, University of Texas at Arlington Arlington United States ([ROR:019kgqr73](https://ror.org/019kgqr73))
+4. Sichuan Centers for Disease Control and Prevention Chengdu China ([ROR:05nda1d55](https://ror.org/05nda1d55))
 
 † Corresponding author
 
@@ -51,25 +51,209 @@ In this review, we outline how whole-genome sequence data can be embedded into r
 
 To catalog how genetic data have been used to inform our understanding of human schistosomiasis to date, we critically reviewed a representative, non-exhaustive set of 47 studies that have used molecular methods to study human schistosomiasis since 2005 (search terms are provided in Appendix 1). These studies are compared in terms of the research questions investigated, spatial scale, and data generation methods (Table 1, summary of full list of studies provided in Supplementary file 1). In doing so, we update a 12-year-old foundational review on the topic (Steinauer et al., 2010) and build on recent work highlighting how population genetics can shed light on schistosome evolution and adaptation (Rey et al., 2021b). Below, we review the early challenges in generating genetic data, the widespread adoption of microsatellite (MSAT) loci for genetic studies, and the more recent application of newer sequencing technologies. We provide a primer describing the approaches that have been used over the past two decades, along with their strengths and weaknesses, in Box 1.
 
-## The challenge of DNA quantity
+**Table 1.**
+ Number of studies of schistosomiasis epidemiology employing molecular methods by data generation method, study question, and study scale.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="12">Data generation method</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th colspan="4">Microsatellite</th>
+      <th colspan="4">mtDNA/rDNA</th>
+      <th colspan="4">RAD/Exome/WGS</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Study question</td>
+      <td>LAB</td>
+      <td>LOC</td>
+      <td>REG</td>
+      <td>CON</td>
+      <td>LAB</td>
+      <td>LOC</td>
+      <td>REG</td>
+      <td>CON</td>
+      <td>LAB</td>
+      <td>LOC</td>
+      <td>REG</td>
+      <td>CON</td>
+      <td>Total</td>
+    </tr>
+    <tr>
+      <td>Population structure</td>
+      <td>0</td>
+      <td>6</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Hybridization</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Drug resistance</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Host species identification</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Lineage origins/diversification</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Morbidity/phenotype</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Transmission persistence</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Worm natural history</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>0</td>
+      <td>21</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>10</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>47*</td>
+    </tr>
+  </tbody>
+</table>
+
+_Study scale abbreviations: LAB = laboratory study; LOC = local scale (tens of km; neighboring villages); REG = regional scale (hundreds of km; neighboring countries); CON = continental scale (thousands of km; non-neighboring countries). Categories informed by those used by Rey et al., 2021a; *Adding totals across question types and generation methods exceeds 47 because some studies employed multiple data generation methods (e.g., they use both microsatellites and mtDNA markers) and/or addressed multiple types of questions (e.g., population structure and host species identification). Search terms used to identify these studies are provided in Appendix 1. A list of all studies included in this table is provided in Supplementary file 1 and another version of this table that lists which studies are counted in which cells is provided in Supplementary file 2._
+
+### The challenge of DNA quantity
 
 A key historical challenge in generating population genomic data from schistosomes is the limited DNA quantity from readily available life stages. Infected humans and other definitive hosts shed eggs, which hatch into miracidia, while infected snails shed cercariae. Both miracidia and cercariae can be archived on FTA cards (cotton-based, cellulose paper cards containing chemicals that lyse cells, denature proteins, and preserve DNA) under basic laboratory conditions, allowing sample collection from both definitive and intermediate hosts in field settings. However, miracidia and cercaria contain only a few nanograms of DNA. In contrast, adult schistosomes contain larger quantities of DNA but live inside definitive hosts and can only be obtained through autopsy, thereby limiting their utility for population-level studies. A notable exception is opportunistic worm collection from domestic animals at the time of slaughter (Jiz et al., 2021). Early efforts to generate genetic data from field-collected schistosome samples required laboratory passage of these parasites to extract DNA from adult worms harvested from laboratory animals (Steinauer et al., 2010). Laboratory passage added weeks to the process and was prone to population bottlenecks (Shrivastava et al., 2005; Gower et al., 2007).
 
 Early studies of schistosome larvae confronted the issue of limited DNA quantity by sampling a small number of loci using single and then multi-plex PCR assays (Steinauer et al., 2010). These early studies relied on a limited number of microstatellite loci (5–20 among the studies reviewed in Supplementary file 1 ). A breakthrough for large-scale genomic data generation came when whole-genome amplification (WGA) methods were applied to larval schistosomes, with early examples analyzing over 50 MSATs at high fidelity (Valentim et al., 2009) or a somewhat more limited panel (Xiao et al., 2013). Over the past 5 years, WGA has been used to generate genome-scale data from individual schistosomes representing all three major human schistosome species (Nikolakis et al., 2021; Le Clec’h et al., 2018; Shortt et al., 2017; Shortt et al., 2021). WGA of larval schistosomes and other species yields low error rates with minimal genome-wide amplification biases (Nikolakis et al., 2021; Shortt et al., 2017; Valentim et al., 2009; Blair et al., 2015), making WGA a suitable method for generating genomic data from larval schistosomes, including miracidia samples preserved on FTA cards and stored for up to a decade or more prior to sequencing (Le Clec’h et al., 2018; Shortt et al., 2017).
 
-## MSAT markers
+### MSAT markers
 
 As mentioned above, MSATs provided some of the first inferences of fine-scale patterns of relatedness among schistosomes (Shrivastava et al., 2005; Wang et al., 2006). They were widely adopted: most studies we reviewed (27/47) employed MSATs. These studies addressed a diversity of questions related to parasite population structure (10/27), host species identification (5/27), and drug resistance (5/27) primarily at local scales (where data collection occurred in neighboring villages tens of kilometers apart, 20/27 studies) (Table 1). Applications include inferences of approximate relatedness among miracidia [e.g., Gower et al., 2017], population structure across landscapes (Gower et al., 2013; Rudge et al., 2009; Barbosa et al., 2013; Prugnolle et al., 2005), and the impacts of drug treatment on parasite genetic diversity (Blanton et al., 2011; Norton et al., 2010). MSATs can be used to infer approximate patterns of relatedness between parasites and among parasite populations (Box 1). However, because MSATs involve relatively few idiosyncratic and unmapped loci, they are unable to shed light on genetic variants that may be implicated in driving adaptive change and limited numbers of MSAT loci provide less precision for inferring levels and patterns of kinship than tens of thousands of genomic loci. Moreover, allele scoring can be difficult to replicate across laboratories, raising questions about the suitability of this approach for widespread surveillance. It should be noted that MSATs may remain cost effective, or the only option, when laboratories are already heavily invested in MSATs, or when labor costs are low compared to the costs of accessing sequencing technology.
 
-## mtDNA and nuclear rDNA sequencing
+### mtDNA and nuclear rDNA sequencing
 
 About one-third of studies we reviewed (15/47) used mitochondrial DNA (mtDNA)/ribosomal DNA (rDNA) markers, primarily at local (10/15) and in some cases continental (4/15) scales (where samples are derived from sites in non-neighboring countries located thousands of kilometers apart; Table 1). These studies most frequently addressed questions of hybridization between schistosome species (5/15) and have also been used to identify host species (3/15). The abundance of mtDNA and rDNA copies per cell makes these markers easy to amplify and sequence, but relatively low levels of variation and the maternal inheritance for mtDNA limit the ability to use these markers to infer fine-scale relatedness (Box 1). Due to the highly conserved nature of these regions, these methods can be used to examine broad-scale patterns of relatedness, and for initial inferences that hybridization may be occurring. However, due to the reliance on a single locus, they provide limited power and resolution to detect hybridization, yielding a high false-negative rate and a non-zero false-positive rate. They are not well suited to studies focused on the genomic impacts of control efforts, host compatibility, and population differentiation, and for inferring fine-scale patterns of relatedness (Box 1).
 
-## Genome-scale approaches
+### Genome-scale approaches
 
 Genome-scale approaches (i.e., reduced representation [RR], exome capture or full-scale WGS; described in detail in Box 1) have only recently become feasible; all studies in our review that used these approaches were published in 2014 or later. Such studies are becoming increasingly common due to their increasing cost efficiency in obtaining data and we anticipate that the number of studies using these approaches will grow in the years ahead. Only 10 of 47 studies we reviewed used genome-scale approaches. These studies have been applied to a broad range of questions including about the origins, divergence, and differentiation of lineages (4/10) and drug resistance (3/10) and were carried out at both local (4/10) and continental (4/10) scales (Table 1). The diverse nature of studies reflects the relatively recent emergence of these technologies, their broad potential applications and the reductions, even over the past decade, in the costs associated with these approaches. For example, an early study used WGS approaches to examine 10 schistosomes on a continental scale to evaluate the divergence of two schistosome species (Crellen et al., 2016). More recently, genome-scale approaches have been used to examine hundreds of miracidia to infer patterns of infection at fine spatial scales (e.g., Shortt et al., 2021; Berger et al., 2021; Vianney et al., 2021). WGS, in particular, has become an increasingly compelling option for population-based studies, the reasons for which we outline in the next section.
 
-## The new frontier: WGS in schistosome populations
+### The new frontier: WGS in schistosome populations
 
 Advances in reference genomes, together with WGA, have facilitated the use of sequencing for population-level studies of schistosomes. Over the past decade, reference genomes became available for the three species of Schistosoma that cause most cases of human schistosomiasis: S. mansoni, S. haematobium, and S. japonicum (Han et al., 2009; Berriman et al., 2009; Zhou et al., 2009; Young et al., 2012). By providing a basis for understanding schistosome genes and genetic variation, these annotated reference genomes contributed to the identification of the genomic basis of key host-parasite interactions, including genes tied to utilization of host nutrients for parasite growth and development (Zhou et al., 2009), and have extended our understanding of molecular pathways involved in schistosome life histories (Berriman et al., 2009). These genome resources also provided the foundations for further studies that identified schistosome genes and genetic variants linked to drug resistance and susceptibility (Le Clec’h et al., 2021) and host preference (Luo et al., 2022), and provided insights into the genomic impacts of control measures (Berger et al., 2021). Schistosome reference genomes have been improved and updated, and all three are now high-quality chromosome-level reference genome assemblies (Wit and Gilleard, 2017; Xu et al., 2014).
 
@@ -83,7 +267,7 @@ Until recently, concern about which mammalian species may contribute to the tran
 
 As we highlighted in Figure 1, when non-human reservoirs serve as sources of human schistosome infections, schistosomiasis control strategies should address that route of infection. Below, we review a diverse evidence base, including epidemiological and ecological studies, mathematical modeling simulations, and studies using genetic and genomic approaches, to evaluate the role of non-human definitive hosts in the transmission of the three major human schistosomes. The evidence indicates that the contributions of non-human mammalian hosts are context specific, and the extent of the involvement of various potential hosts and their relevance to control may shift over time. We demonstrate how high-resolution genomic approaches, when paired with epidemiological and ecological assessments, can be used to discern the extent to which zoonotic hosts contribute to human schistosomiasis in areas of persistent, reemerging, or newly emerged schistosomiasis and to resolve current gaps in the scientific knowledge.
 
-## Zoonotic contributions to S. japonicum infections vary regionally
+### Zoonotic contributions to S. japonicum infections vary regionally
 
 There is robust evidence that bovines (cattle and water buffalo) are key contributors to human schistosomiasis in the lake and marshland regions of China, one of the most well-studied regions in the world regarding the role that non-human hosts play in schistosome transmission. Interventions targeting treatment to bovines (Gray et al., 2009) and policies to replace bovines with agricultural machinery (Liu et al., 2017) led to declines in human schistosomiasis in this region, strong evidence that bovines contribute to human infection risk, and justification of interventions to treat bovine populations (Figure 1). In addition to these experimental studies, mathematical modeling (Rudge et al., 2013; Williams et al., 2002) and early genetic studies using MSAT loci (Rudge et al., 2009; Lu et al., 2010a) similarly pointed to a central role of bovines in human schistosomiasis. There is strong biological plausibility for these conclusions: in this region, the use of bovines in farming leads to the overlap of human and bovine activity with snail habitat. Moreover, bovines are estimated to deposit up to 90% of the S. japonicum eggs in this area due to their high densities, voluminous fecal output, and high infection intensity (Guo et al., 2001).
 
@@ -95,13 +279,13 @@ It is also plausible that the importance of non-human hosts shifts over time. Fo
 
 We note that a key first step in assessing definitive host involvement is testing non-human hosts for S. japonicum infection and collecting schistosomes from infected hosts. Assessing infection prevalence or intensity in different species can approximate potential host involvement (e.g., no infections in a species is strong evidence that the species is not contributing to transmission) (Lu et al., 2010b). However, accurate assessment of infections by species can be challenging, particularly in low-prevalence settings where infrequent infections and poor diagnostic performance can fail to detect parasite populations (Liang et al., 2022) and, thus, bias assessments of species involvement in human schistosomiasis (Wu et al., 2010). Guidance on best practices for surveillance of schistosome infections in non-human hosts is an important priority that will improve the rigor of studies of non-human host involvement.
 
-## Using genomic epidemiology to detect shifts in S. mansoni host specificity
+### Using genomic epidemiology to detect shifts in S. mansoni host specificity
 
 The availability of non-human hosts in different contexts may influence the host specificity for S. mansoni in similar ways as for S. japonicum. Rodents are competent hosts of S. mansoni, though schistosomiasis mansoni is considered a predominately human disease. Prior to the availability of genetic approaches, the involvement of rodent hosts in human cases of S. mansoni was assessed by studying the chronobiology of the parasites’ cercarial emergence from snails, which is adapted to the timing of water contact behavior in the primary definitive host for each species in a given habitat (Combes et al., 1994). For example, S. mansoni on the island of Guadeloupe occurred as three chronotypes that reflected the availability of hosts in different habitats: (1) in urbanized areas where humans were the primary host, cercariae emerged early in the day, (2) in sylvatic areas with primarily rodent hosts, cercariae emerged late in the day, and (3) in mixed foci of infection where both humans and rodents were available, the peak in cercarial emergence was bimodal (Theron and Pointier, 1995). Cercarial shedding patterns of S. japonicum have also been found to vary with the water contact patterns of the dominant hosts in an area (late afternoon in rodent-dominant areas and morning in bovine-dominant areas; Lu et al., 2009), indicating that variation in chronobiological traits is likely a common phenomenon across schistosome species.
 
 More recent genomic approaches have been incorporated into epidemiological and ecological studies of the S. mansoni host range, and these studies have demonstrated the potential importance of non-human hosts in human S. mansoni. One recent study detected S. mansoni infections in small mammals in West Africa using mtDNA/rDNA markers (Catalano et al., 2020) and another using MSATs found little genetic differentiation among S. mansoni infecting humans and non-human primates in Ethiopia (Kebede et al., 2020). These studies suggest that, at least in some contexts, the S. mansoni transmission cycle includes both humans and other definitive hosts. Two high-resolution genomic approaches can further resolve the participation of other mammals in human S. mansoni infections. As in the case of S. japonicum, using WGS to estimate fine-scale relatedness of parasites collected from humans and other mammalian hosts can provide robust evidence whether non-human mammalian hosts participate in a shared transmission cycle with human hosts in a given region. Second, identifying and monitoring genetic variation in parasite populations associated with chronotype variation and shifts in host use are also possible with WGS. The current evidence suggests that these chronobiological patterns are adaptive and genetically determined (Théron, 2015). If the host specificity of S. mansoni can shift in response to selective pressure, control efforts that target human hosts without surveillance in other competent definitive host species may fail to achieve elimination targets. Genomic surveillance in animal populations and surveillance for genetic signatures of chronobiological shifts may provide early warning signs of shifts away from host-specific transmission and the need to target animal populations in control programs (Figure 1).
 
-## Hybridization adds genetic diversity to S. haematobium and can complicate control efforts
+### Hybridization adds genetic diversity to S. haematobium and can complicate control efforts
 
 Hybridization between schistosome species, particularly those within the S. haematobium complex, complicates schistosome host specificity and may vary across geographic contexts (Leger and Webster, 2017). A more precise understanding of such processes has the potential to inform control efforts. Hybrids occur when parasites from different species pair within the same definitive host and produce eggs that may be viable, thereby resulting in hybrid individuals that contain mixtures of genetic variants from multiple species. Hybridization can introduce new genetic variation into parasite populations and may, in turn, affect epidemiologically relevant traits, such as chronobiology, host range, and drug efficacy (Leger and Webster, 2017). Indeed, the detection of hybrids, particularly between S. haematobium and S. bovis, complicates the assumption that urogenital schistosomiasis caused by S. haematobium remains an exclusively human disease. Monitoring of parasite populations for evidence of hybridization can identify the presence and scope of this phenomenon, and identify potential non-human sources of infection that may otherwise undermine treatment-based programs.
 
@@ -139,7 +323,7 @@ In the long term, standardized genomic sampling approaches (e.g., WGS) and centr
 
 In the near term, the incorporation of genomic data into outbreak investigations can help identify key sources of infection in residual transmission hotspots, including non-human hosts and imported infections, and help expand the geographic coverage of genomic resources. For example, China’s strategy for investigating schistosomiasis outbreaks includes surveys of human, domestic animal, and snail populations (Chen et al., 2022). Adding the collection of schistosomes to such protocols to generate genomic data can help us better identify what processes drive such outbreaks and contribute to the development of genomic data resources. An important practical challenge to such investigations is the collection of schistosomes, particularly from non-human mammalian hosts and snails (Liang et al., 2022; Kamel et al., 2021). Sensitive and efficient methods to identify and sample snail infections, which are uncommon even in high-prevalence settings, or cercariae in water would enable studies of genomic diversity of schistosomes in intermediate hosts in low-prevalence areas approaching elimination. Similarly, development of guidelines for surveying non-human mammalian hosts for schistosomiasis and collecting schistosomes will enhance the probability that infection reservoirs are identified and samples from all relevant definitive hosts are included in genomic studies.
 
-## Conclusions
+### Conclusions
 
 In this review, we identified two priority questions concerning why schistosomiasis reemerges and persists in different contexts: (1) how often do non-human hosts species contribute to human infection? and (2) what is the importance of locally acquired versus imported infections in driving transmission at different stages of elimination? These questions address ecological processes in schistosome transmission dynamics that can undermine ongoing treatment-based control programs. We argue that the integration of genomic data into epidemiological and ecological studies is key to answering these questions, and central to achieving and sustaining control of schistosomiasis. Genomic methods can be used to identify sources of infection, and thus help resolve social and ecological processes in ways that support decision-making about environmental interventions and targeting of non-human mammalian hosts as complements to MDA programs focused on treating people for schistosomiasis. Until recently, these questions were difficult to answer well enough to inform public health decision-making. We argue that with recent advances in genomic approaches and the development of standardized WGS datasets for comparative contexts, schistosomiasis control programs can be better tailored to local contexts with MDA programs complemented by interventions that address salient geographic and taxonomic sources of new infections.
 

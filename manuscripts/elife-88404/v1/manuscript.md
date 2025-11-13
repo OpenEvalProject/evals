@@ -15,10 +15,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Montreal Neurological Institute and Hospital, McGill University Montreal Canada
-2. https://ror.org/02nv7yv05 Institute of Neuroscience and Medicine INM-1, Research Centre Jülich Jülich Germany
-3. https://ror.org/006k2kk72 C. & O. Vogt Institute for Brain Research, University Hospital Düsseldorf, Heinrich-Heine-University Düsseldorf Germany
-4. https://ror.org/02grkyz14 Robarts Research Institute, University of Western Ontario London Canada
+1. Montreal Neurological Institute and Hospital, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Institute of Neuroscience and Medicine INM-1, Research Centre Jülich Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+3. C. & O. Vogt Institute for Brain Research, University Hospital Düsseldorf, Heinrich-Heine-University Düsseldorf Germany ([ROR:006k2kk72](https://ror.org/006k2kk72))
+4. Robarts Research Institute, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 
@@ -36,13 +36,13 @@ Here, we present such a surface-based registration method specifically for hippo
 
 ## Materials and methods
 
-## Data
+### Data
 
 Seven 3D reconstructed hippocampal histology samples were examined in this study from three different datasets, including four donor brains:
 
 Details of these dataset acquisitions and processing can be found in their respective references. The 3D-PLI sample was examined here only in terms of transmittance rather than directional data. The transmittance has already been demonstrated in a few brain sections to provide valuable information to segment hippocampal subregions (Zeineh et al., 2017).
 
-## Manual segmentation
+### Manual segmentation
 
 HippUnfold (DeKraker et al., 2022) achieves automatic segmentation and unfolding of in vivo hippocampal MRI data, typically T1w or T2w images, which do not resemble the contrasts seen in the present histology datasets and thus manual segmentation had to be used. This unfolding method requires a detailed hippocampal gray matter mask, as well as labeling of termini at the anterior, posterior, and medial hippocampal edges, dentate gyrus (DG), and laminar strata radiatum and lacunosum-moleculare (SRLM). Here, we consider SRLM to be a ‘mixed’ label since it can include components of the subicular complex, CA fields, DG, as well as blood vessels and CSF within the hippocampal sulcus. Thus, it is used to differentiate the upper and lower surfaces of the remaining hippocampal cortex, contiguous with the ‘pial’ and ‘white’ surfaces of the neocortex, respectively, and SRLM volume is excluded from further analyses.
 
@@ -54,7 +54,7 @@ In BigBrain, these labels were available from previous work (DeKraker et al., 20
 
 For all datasets, hippocampal gray matter was subsequently manually parcellated by rater J.D. into subfield labels: subicular complex (Sub) and cornu ammonis (CA) fields 1–4 based on the available histological features and according to the criteria outlined by Ding and Van Hoesen, 2015; Duvernoy et al., 2013; Palomero-Gallagher et al., 2020. Since these sources differ slightly in their boundary criteria, and no prior reference perfectly matches the present samples, subjective judgment was used to draw boundaries after considering all three prior works. The ‘prosubiculum’ label used by Ding and Van Hoesen and Palomero-Gallagher et al. was included as part of the subicular complex. See Appendix 2 ‘Ground-truth segmentation’ for more details. The DG was also labeled but was grouped together with CA4 since HippUnfold’s current method for unfolding of the DG relies on heuristics in MRI that would not be appropriate in this work (i.e., it uses a template prior to estimate DG topology at the cost of smoothing labels). These manual labels were defined based upon cytoarchitectonic features at the highest level of resolution available and were deemed ‘ground-truth’ subfield definitions. It is important to note that BigBrain is stained for cell bodies, while 3D-PLI transmittance contrast is driven by cell bodies and nerve fibers (both introducing light extinction effects; Menzel et al., 2020) and thus contains very different microstructural information. Thus, both cell body and fiber distribution patterns were consulted during subfield definition. In the AHEAD dataset, multiple imaging modalities were available, albeit with imperfect registration to the blockface images, larger interslice gaps, some missing data, and limited resolution. These additional contrasts were overlaid over blockface images (where available and appropriate due to the above limitations) to better inform subfield segmentation.
 
-## Unfolded registration
+### Unfolded registration
 
 HippUnfold (DeKraker et al., 2022) was used to map each dataset to a standardized unfolded space (see Figure 1B). This unfolded space consists of a triangulated mesh with uneven face sizes, so as to preserve a constant spacing between points in the folded hippocampus. The current work, however, defined this tessellation as a regular mesh grid in unfolded space consisting of 256 × 128 points across the anterior-posterior (A-P) and proximal-distal (P-D) (relative to the neocortex) axes of the unfolded hippocampus, respectively. This regular grid in unfolded space means that surface points (henceforth, vertices) can effectively be treated as pixels of a flat 2D image without the need to interpolate missing pixel values. However, it should also be noted that, as a consequence, native or ‘folded’ images are sampled more densely in some areas than others, particularly in the anterior and posterior extremes, which can lead to noisier unfolded data in these regions.
 
@@ -62,7 +62,7 @@ HippUnfold also calculates morphological features, namely thickness, gyrificatio
 
 The 2D registration was performed using all three of the above morphological features with equal weighting, using ANTs multicontrast SyN deformable registration (Avants et al., 2011; Figure 1D). Rather than registering all samples’ feature maps to one sample, we instead used an iterative template building method (Avants et al., 2010), which first averages images, registers each image to the average, and then repeats the registration to the newly generated average. This process is repeated four times, with each iteration sharpening the averaged template and improving registration precision. We concatenated the transforms from each sample to the template with the inverse transform from the template to sample1 (BigBrain left hemisphere) and applied it to subfield labels to evaluate their overlap with that sample’s ground-truth subfield definitions (Figure 1E). Sample1 was chosen because it had the highest resolution and, therefore, provided the greatest cytoarchitectonic detail for identification of subfield boundaries, while also being the more common hemisphere in this study (i.e., four left; three right). In principle, any sample could have been chosen, and one had to be chosen to test overlap in any one native (or folded) space.
 
-## Control condition: Volumetric registration
+### Control condition: Volumetric registration
 
 The proposed pipeline was compared to a conventional 3D volumetric registration approach: ANTs template generation (Avants et al., 2011) under ideal tissue contrast conditions (i.e., based on binarized gray matter labels). This is outlined in Figure 2 and detailed below. First, all hippocampal gray matter labels were binarized, right hippocampi were flipped, and binary masks were rigidly registered to sample1 using Greedy’s moment-based initialization (Yushkevich et al., 2016) (two moments), which can handle images initially in different spaces relative to the origin (which was the case in some samples here) (Figure 2B). Images were then resampled to 100 μm isovoxel resolution to reduce compute time and memory requirements, which were prohibitively high at native resolution. ANTs template generation was then used as before (Figure 2C), with the following differences: registrations were all 3D and unimodal.
 
@@ -74,7 +74,7 @@ Using binarized images likely overestimates a fully automated registration metho
 
 Registrations from each sample to the template and the inverse transform from the template to sample1 were concatenated and applied to subfield labels (Figure 2D). For easier comparison with Figure 1, each sample’s subfields were sampled along sample1 mid-thickness surface and projected to unfolded space (Figure 2E). In some cases, the mid-thickness surface fell outside of the propagated subfield labels and returned a background value of 0. The missing values were imputed by nearest-neighbor interpolation in unfolded space, providing additional correction for misregistration.
 
-## Evaluation metrics
+### Evaluation metrics
 
 The Dice overlap metric (Dice, 1945), which can also be considered an overlap fraction ranging from 0 to 1, was calculated for all subjects’ subfields registered to sample1. This was repeated in 2D unfolded and in 3D native spaces since some parts of unfolded space expanded or contracted more than others when projected to native space, which can over- or under-emphasize subfield differences. For example, sample3 was unfolded and then registered to the unfolded average, making up two transformations. These were then concatenated with the inverse transformation of unfolded sample1 to the same unfolded average, and the inverse transformation of native sample1 to unfolded space. This concatenated transformation was used to project labels from sample3 native space directly to sample1 native space, which should ideally lead to near-perfect subfield alignment in sample1 native space. Dice overlap between sample1 and sample3 registered to sample1 was then calculated in sample1 native space.
 
@@ -86,13 +86,13 @@ To evaluate the contribution of each morphometric feature or combination of feat
 
 ## Results
 
-## Qualitative alignment
+### Qualitative alignment
 
 Figure 1A shows equivalent sagittal slices from each sample after rigid alignment, in which considerable subfield variability can be seen between samples. This is due in part to the out-of-plane issue discussed elsewhere (DeKraker et al., 2021). Viewing a fully 3D model (Figure 1B) can help in identifying differences between samples due to true morphological variability rather than field-of-view differences. Projecting these labels to unfolded space (Figure 1B) preserved sample-specific differences in the size of each subfield but removed variability due to different folding and gyrification configurations between samples, which already brought subfields into close alignment and was the current basis for subfield segmentation in HippUnfold.
 
 Following registration in unfolded space (Figure 1E), subfields are even more closely aligned (e.g., samples 3 and 5 are no longer dominated by the Sub label). In addition, there are no topological breaks or reordering of subfields in Figure 1. In Figure 2E, following conventional volumetric alignment, there are cases where CA1 shows isolated islands (e.g., sample2), and where CA1 borders CA3 directly instead of first passing through CA2 (e.g., sample3). This does not match the original subfield segmentations from any sample or the literature which states that subfields should be contiguous and consistently ordered (Duvernoy et al., 2013). These issues arise in 3D registration due to breaks in topology: for example, hippocampal gray matter may become stretched across the SRLM and vestigial hippocampal sulcus, or across adjacent gyri. When subfield labels are propagated across a sulcus, they can become discontinuous with respect to the mid-thickness surface topology of a given sample. This type of 2D topology is conserved in a surface-based or unfolded hippocampal space registration.
 
-## Quantitative alignment
+### Quantitative alignment
 
 Better Dice overlap on average and for every individual subfield was observed using unfolded registration over unfolding and refolding into a different sample’s folded configuration alone (Figure 3B). Both methods also outperformed the control condition using conventional ANTs 3D volumetric registration. These results were tested using one-tailed, paired-samples t-tests, pairing subfields and subjects, which revealed significant differences between each method and in both unfolded and native spaces. The same pattern was also observed when evaluated according to nearest corresponding subfield border distances in native space (Figure 3C). One example of each of these registration methods (sample3 to sample1) is shown in Figure 1A.
 
@@ -100,7 +100,7 @@ Better Dice overlap on average and for every individual subfield was observed us
 
 **Figure 3.:** (A) Qualitative example of subfields from the third sample projected to the first sample’s native ‘folded’ space using conventional 3D volumetric alignment, unfolding to account for inter-individual differences in folding shape, and unfolding followed by registration in unfolded space. (B) Dice overlap achieved. Each measure was calculated in unfolded space (left) and again in the first sample’s (BigBrain left hemisphere) native folded space (right). Black lines indicate the mean across all subfields. (C) Distances between all aligned subfield borders using the three methods described above. Dashed lines indicate the median distance.
 
-## Contribution of unfolded morphological features
+### Contribution of unfolded morphological features
 
 By using different combinations of unfolded features, we could determine which is most informative about unfolded registration and subfield boundary alignment (Figure 4). In this regard, curvature was the most informative individual feature while thickness and curvature was the most informative combination of two features, despite the fact that thickness was the least informative individual feature (similar to no unfolded registration). Therefore, while each is informative, they may contain overlapping information and their combination is not as complementary as curvature and thickness together. Regardless, combining all three features still showed the best performance. Future work should explore the use of additional features, such as intracortical myelin or laminar distributions of neurons, to inform registration. This was not examined here since it was not available in all datasets owing to differing contrasts.
 

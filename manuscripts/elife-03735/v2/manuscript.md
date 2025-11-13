@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.03735.001 Most amino acids can be encoded by several synonymous codons, which are used at unequal frequencies. The significance of unequal codon usage remains unclear. One hypothesis is that frequent codons are translated relatively rapidly. However, there is little direct, in vivo, evidence regarding codon-specific translation rates. In this study, we generate high-coverage data using ribosome profiling in yeast, analyze using a novel algorithm, and deduce events at the A- and P-sites of the ribosome. Different codons are decoded at different rates in the A-site. In general, frequent codons are decoded more quickly than rare codons, and AT-rich codons are decoded more quickly than GC-rich codons. At the P-site, proline is slow in forming peptide bonds. We also apply our algorithm to short footprints from a different conformation of the ribosome and find strong amino acid-specific (not codon-specific) effects that may reflect interactions with the exit tunnel of the ribosome. DOI: http://dx.doi.org/10.7554/eLife.03735.001
+Most amino acids can be encoded by several synonymous codons, which are used at unequal frequencies. The significance of unequal codon usage remains unclear. One hypothesis is that frequent codons are translated relatively rapidly. However, there is little direct, in vivo, evidence regarding codon-specific translation rates. In this study, we generate high-coverage data using ribosome profiling in yeast, analyze using a novel algorithm, and deduce events at the A- and P-sites of the ribosome. Different codons are decoded at different rates in the A-site. In general, frequent codons are decoded more quickly than rare codons, and AT-rich codons are decoded more quickly than GC-rich codons. At the P-site, proline is slow in forming peptide bonds. We also apply our algorithm to short footprints from a different conformation of the ribosome and find strong amino acid-specific (not codon-specific) effects that may reflect interactions with the exit tunnel of the ribosome.
 
 ## Introduction
 
@@ -26,11 +26,11 @@ Different synonymous codons are used in genes at very different frequencies, and
 
 Ribosome profiling (Ingolia et al., 2009) allows the observation of positions of ribosomes on translating cellular mRNAs. The basis of the method is that a translating ribosome protects a region of mRNA from nuclease digestion, generating a 30 base ‘footprint’. The footprint is roughly centered on the A-site of the ribosome. If some particular codon in the A-site were translated slowly, then the ribosome would dwell at this position, and so footprints generated from ribosomes at this position would be relatively common. Thus, if one looked at the number of ribosome footprints generated along an mRNA, there should be more footprints centered at every codon that is translated slowly and fewer centered at every codon translated rapidly; in principle, this is a method for measuring rates of translation of individual codons.
 
-Experimentally, there is dramatic variation in the number of footprints generated at different positions along any particular mRNA (
+Experimentally, there is dramatic variation in the number of footprints generated at different positions along any particular mRNA (Ingolia et al., 2011) (Figure 1). However, these large peaks and valleys do not correlate with particular codons (Ingolia et al., 2011; Charneski and Hurst, 2013). It is still unclear what features of the mRNA cause the peaks and valleys, though there is evidence that prolines, or a poly-basic amino acid stretch, contribute to a slowing of the ribosome and a peak of ribosome footprints (Ingolia et al., 2011; Brandman et al., 2012; Charneski and Hurst, 2013).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03735/elife-03735-fig1-v2.jpg)
 
-**Figure 1.:** TDH1 gene.Top profile is from the data of Ingolia et al., 2009; bottom profile is from the SC-lys dataset (‘Materials and methods’). The first (leftmost) peak in the profiles is at the ATG start codon; it may differ in relative height because the SC-lys dataset was generated using flash-freezing.DOI: http://dx.doi.org/10.7554/eLife.03735.003
+**Figure 1.:** Top profile is from the data of Ingolia et al., 2009; bottom profile is from the SC-lys dataset (‘Materials and methods’). The first (leftmost) peak in the profiles is at the ATG start codon; it may differ in relative height because the SC-lys dataset was generated using flash-freezing.
 
 Still, the fact that prolines and poly-basic amino acid stretches affect translation speed does not tell us whether different synonymous codons may also cause smaller effects. This question was investigated by Qian et al. (2012) and Charneski and Hurst (2013) using the yeast ribosome profiling data of Ingolia et al. (2009). Neither group found any effect of different synonymous codons on translation rate—that is, perhaps surprisingly, each codon, rare or common, appeared to be translated at the same rate (Qian et al., 2012; Charneski and Hurst, 2013).
 
@@ -46,65 +46,721 @@ In the absence of any codon preference of the ribosome, there should be a unifor
 
 The relative frequency averaged over all windows is a number between 0 and 1, and we compare this to the baseline frequency (0.1) (total footprints over 10 positions) to compute a final statistic, which we call the Ribosome Residence Time, or RRT. For instance, if the average relative frequency for a codon at a particular position is 0.1, then the RRT is 1, and we interpret this to mean that the ribosome spends the average amount of time at the given codon at the given position. An RRT of two suggests that the ribosome spends twice as long as average at the given codon.
 
-## Validation of ribosome residence time analysis
+### Validation of ribosome residence time analysis
 
-We tested this method of analysis using simulated and real positive and negative control data. For a simulated negative control, we assigned real footprint data from our SC-lys dataset to random codons and did RRT analysis. As expected, all codons at all positions show an RRT of about 1, that is, no signal (
+We tested this method of analysis using simulated and real positive and negative control data. For a simulated negative control, we assigned real footprint data from our SC-lys dataset to random codons and did RRT analysis. As expected, all codons at all positions show an RRT of about 1, that is, no signal (Figure 2A). For a simulated positive control, we generated a simulated data set of 2 million 10-codon reads over coding genes, but we biased these simulated reads to give more reads for the codon AAA at position 6 of the footprint. As expected, RRT analysis shows a peak for AAA at position 6 (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03735/elife-03735-fig2-v2.jpg)
 
-**Figure 2.:** (A) Simulated data, negative control. Real footprint data from the SC-lys dataset were randomly assigned to codons, and RRT analysis was carried out. A flat line with an RRT value of 1 indicates no signal. (B) Simulated data, positive control. A dataset of 2 million simulated reads was generated but biased to give more reads over the codon AAA at position 6. (C) Real data, negative control. RNA-seq data from naked fragments of RNA 30 nucleotides long, processed as if for ribosome profiling, were analyzed. (D) Real data, positive control. Real ribosome footprinting data from Li et al. were analyzed (Li et al., 2012). In this experiment, E. coli were starved for serine. Note that the highest Ser peak is for TCA, which is the rarest Ser codon in E. coli, and the lowest Ser peak is for AGC, which is the most common Ser codon in E. coli. High values at position 9 as well as 8 may indicate that the A-site may be at position 8 in some fragments and position 9 in others.DOI: http://dx.doi.org/10.7554/eLife.03735.004
+**Figure 2.:** (A) Simulated data, negative control. Real footprint data from the SC-lys dataset were randomly assigned to codons, and RRT analysis was carried out. A flat line with an RRT value of 1 indicates no signal. (B) Simulated data, positive control. A dataset of 2 million simulated reads was generated but biased to give more reads over the codon AAA at position 6. (C) Real data, negative control. RNA-seq data from naked fragments of RNA 30 nucleotides long, processed as if for ribosome profiling, were analyzed. (D) Real data, positive control. Real ribosome footprinting data from Li et al. were analyzed (Li et al., 2012). In this experiment, E. coli were starved for serine. Note that the highest Ser peak is for TCA, which is the rarest Ser codon in E. coli, and the lowest Ser peak is for AGC, which is the most common Ser codon in E. coli. High values at position 9 as well as 8 may indicate that the A-site may be at position 8 in some fragments and position 9 in others.
 
 For a real-data negative control, we pooled the control mRNA-seq data for 30 bp fragments from our four experiments (‘Materials and methods’) and analyzed these mRNA fragments. Since this RNA came from a total naked RNA preparation, there were no ribosomes and no ribosome footprints, so there should not be any signal from translation, even though we are analyzing real 30 bp RNA fragments. Indeed, RRT analysis shows no peaks in positions 2 through 9 of these fragments (Figure 2C). However, there are modest deviations from 1 at the termini, positions 1 and 10. We attribute these to some base-specificity for the enzymatic reactions used to generate the fragment library (Lamm et al., 2011; Jackson et al., 2014; Raabe et al., 2014). Supporting this interpretation, the same peaks and valleys at positions 1 and 10 (i.e., the same base-specificity) were seen in real ribosome-footprint data (see below).
 
-For a real data positive control experiment, we used the Escherichia coli data generated by Li et al., who starved E. coli for serine, and did ribosome profiling (Li et al., 2012). Because of the starvation for serine, there is an expectation that all six serine codons should be decoded slowly and so should have high RRT values. This proved to be the case (Figure 2D). The six serine codons had 6 of the 7 highest RRT values at position 8 (Figure 2D, Table 1), which presumably represents the A-site in this experiment. Note that because these are E. coli ribosomes, the phase of the footprint (i.e., the position of the A-site in the footprint) is different from its phase with regard to yeast ribosomes (see below). The RRT analysis of E. coli footprints also showed interesting variation at positions 2, 3, and 4 (Figure 2D), which we will consider elsewhere.10.7554/eLife.03735.005Table 1.Top ten RRTs at position 8 in E. coli starved for serineDOI: http://dx.doi.org/10.7554/eLife.03735.005CodonAAUsageRRTTCASer8.11.98TCCSer9.01.90TCGSer8.81.73TCTSer8.71.71AGTSer9.41.57ATAIle5.51.42AGCSer16.01.25ATTIle29.71.18CCTPro7.21.15CCAPro8.41.13
+For a real data positive control experiment, we used the Escherichia coli data generated by Li et al., who starved E. coli for serine, and did ribosome profiling (Li et al., 2012). Because of the starvation for serine, there is an expectation that all six serine codons should be decoded slowly and so should have high RRT values. This proved to be the case (Figure 2D). The six serine codons had 6 of the 7 highest RRT values at position 8 (Figure 2D, Table 1), which presumably represents the A-site in this experiment. Note that because these are E. coli ribosomes, the phase of the footprint (i.e., the position of the A-site in the footprint) is different from its phase with regard to yeast ribosomes (see below). The RRT analysis of E. coli footprints also showed interesting variation at positions 2, 3, and 4 (Figure 2D), which we will consider elsewhere.
+
+**Table 1.**
+ Top ten RRTs at position 8 in E. coli starved for serine
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Codon</th>
+      <th>AA</th>
+      <th>Usage</th>
+      <th>RRT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TCA</td>
+      <td>Ser</td>
+      <td>8.1</td>
+      <td>1.98</td>
+    </tr>
+    <tr>
+      <td>TCC</td>
+      <td>Ser</td>
+      <td>9.0</td>
+      <td>1.90</td>
+    </tr>
+    <tr>
+      <td>TCG</td>
+      <td>Ser</td>
+      <td>8.8</td>
+      <td>1.73</td>
+    </tr>
+    <tr>
+      <td>TCT</td>
+      <td>Ser</td>
+      <td>8.7</td>
+      <td>1.71</td>
+    </tr>
+    <tr>
+      <td>AGT</td>
+      <td>Ser</td>
+      <td>9.4</td>
+      <td>1.57</td>
+    </tr>
+    <tr>
+      <td>ATA</td>
+      <td>Ile</td>
+      <td>5.5</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <td>AGC</td>
+      <td>Ser</td>
+      <td>16.0</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>ATT</td>
+      <td>Ile</td>
+      <td>29.7</td>
+      <td>1.18</td>
+    </tr>
+    <tr>
+      <td>CCT</td>
+      <td>Pro</td>
+      <td>7.2</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td>CCA</td>
+      <td>Pro</td>
+      <td>8.4</td>
+      <td>1.13</td>
+    </tr>
+  </tbody>
+</table>
 
 Lareau et al. (2014) starved Saccharomyces cerevisiae for histidine using the His3 inhibitor 3-aminotriazole. This was another potential positive control, where the two His codons should be decoded slowly. We analyzed these ribosome profiling data. However, of the 11 million reads obtained in that experiment, about 10.6 million mapped to ribosomal RNA. The remaining ∼0.4 million reads mapped to mRNA, but gave only 10 (ten) total windows passing our quality filters for RRT analysis, and this is too few. However, when we relaxed the filters to obtain more (albeit lower quality) windows, we observed obvious peaks (high RRT values) for both histidine codons at position 6 specifically in the 3-aminotriazole experiment (data not shown).
 
-## Ribosome residence time analysis of codons
+### Ribosome residence time analysis of codons
 
-Having found that RRT analysis gives the expected results in control experiments, we applied it to the analysis of four of our ribosome profiling experiments. Our experiments differ from those of Ingolia et al. and Lareau et al., in that in those studies, cycloheximide was added to the growing yeast culture before harvesting (
+Having found that RRT analysis gives the expected results in control experiments, we applied it to the analysis of four of our ribosome profiling experiments. Our experiments differ from those of Ingolia et al. and Lareau et al., in that in those studies, cycloheximide was added to the growing yeast culture before harvesting (Ingolia et al., 2009; Lareau et al., 2014), whereas we harvest by flash-freezing and later add cycloheximide to the frozen cells (‘Materials and methods’). The nature of our results is shown in Figure 3 using the rare Leu codon CTC as an example. In this example, 10 codon (30 nucleotide) footprints that have CTC as the first codon have about the average relative frequency—that is, they have about the same relative frequency as footprints with any other codon at the first position. Similarly when CTC is in the 2nd, 3rd, 4th, 7th, 8th, 9th, and 10th positions. However, there is a relative over abundance of footprints that have CTC at the 6th position. In fact, for CTC at the 6th position, averaged over 451 windows (in the case of this rare codon), there are 1.89-fold more footprints than at the baseline. This suggests that ribosomes move relatively slowly when CTC is at the 6th position, and, therefore, these ribosomes are more frequently captured as footprints. We say that CTC has a Ribosome Residence Time (RRT) of 1.89 at position 6.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03735/elife-03735-fig3-v2.jpg)
 
-**Figure 3.:** The ribosome protects a 30 nt ‘footprint’ of RNA centered around the A, P, and E sites (positions 6, 5, and 4). The rare Leu codon CTC has a high RRT at position 6, which is likely the A-site.DOI: http://dx.doi.org/10.7554/eLife.03735.006
+**Figure 3.:** The ribosome protects a 30 nt ‘footprint’ of RNA centered around the A, P, and E sites (positions 6, 5, and 4). The rare Leu codon CTC has a high RRT at position 6, which is likely the A-site.
+
+Figure 4 shows data for all 61 sense codons from one of four experiments, the ‘SC-lys’ experiment. In a large majority of cases, a codon has its highest or lowest footprint abundance when the codon is in position 6. We interpret this to mean that the codon affects the rate of ribosome movement when the codon is in position 6, which we believe to be the A-site of the ribosome (see below for further support for this assignment). The behavior of the six Leu codons and the four Thr codons is highlighted in Figure 4B,C. Footprint frequencies also differ from the average in a specific way at positions 5 (Figure 4D) (see below) and 1 and 10, the two ends of the footprint. We attribute variation at positions 1 and 10 to some base-specificity for the enzymatic reactions involved in generating and analyzing ribosome footprints (Lamm et al., 2011; Jackson et al., 2014; Raabe et al., 2014); the same variations are seen in reactions with naked RNA fragments.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03735/elife-03735-fig4-v2.jpg)
 
-**Figure 4.:** (A) The pattern of RRTs for all codons at all positions. Most peaks are at position 6, with some at position 5. (B) The RRTs for the six leucine codons. CTC has the highest RRT of any codon at position 6. (C) The RRTs for the four threonine codons. ACC has the lowest RRT of any codon at position 6. (D) The RRTs for the four proline codons. Proline has peaks at position 5, the P-site, as well as at position 6.DOI: http://dx.doi.org/10.7554/eLife.03735.007
+**Figure 4.:** (A) The pattern of RRTs for all codons at all positions. Most peaks are at position 6, with some at position 5. (B) The RRTs for the six leucine codons. CTC has the highest RRT of any codon at position 6. (C) The RRTs for the four threonine codons. ACC has the lowest RRT of any codon at position 6. (D) The RRTs for the four proline codons. Proline has peaks at position 5, the P-site, as well as at position 6.
+
+Figure 5A shows the deduced rate of ribosome movement for each codon, plotted against the frequency of codon usage. There is a good correlation (r = –0.52); that is, the ribosome moves faster over the more common codons.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03735/elife-03735-fig5-v2.jpg)
 
-**Figure 5.:** (A) Correlation of RRT with codon usage. RRT is plotted against the frequency of each codon per 1000 codons. (B) Correlation of RRT with the GC content of each codon. The codons were divided into quartiles by RRT (Fastest–Slowest), and the GC content of those ∼15 codons is shown in a violin plot.DOI: http://dx.doi.org/10.7554/eLife.03735.008
+**Figure 5.:** (A) Correlation of RRT with codon usage. RRT is plotted against the frequency of each codon per 1000 codons. (B) Correlation of RRT with the GC content of each codon. The codons were divided into quartiles by RRT (Fastest–Slowest), and the GC content of those ∼15 codons is shown in a violin plot.
 
 There is also a correlation, albeit weaker, with the AT-richness of the codon. AT-rich codons are decoded somewhat faster than average, while GC-rich codons are decoded more slowly (Figure 5B). The mean RRT of codons with 3 or 2 GC residues was 1.23, while the mean RRT of codons with 1 or 0 GC residues was 1.01, a statistically significant difference (p < 0.003 by a two-tailed t test).
 
-Table 2 shows the Ribosome Residence Time at position 6 for each of the 61 sense codons. The slowest codon is the rare Leu codon CTC. Relatively, the ribosome spends about 1.9 times as long with a CTC codon in the A site as it does at the average codon. If the yeast ribosome spends 50 milliseconds (Futcher et al., 1999) on an average codon in the A-site, then the RRT suggests it spends about 95 milliseconds on CTC codons. The fastest codon is the relatively abundant Thr codon ACC (Figure 4C, Table 2), where it spends 0.70 times as long as average (i.e., about 35 milliseconds).10.7554/eLife.03735.009Table 2.Ribosome residence time at position 6 (A) and 5 (B)DOI: http://dx.doi.org/10.7554/eLife.03735.009ACodonAAUsageRRTp valueCTCLeu5.41.89*0.0001CCCPro6.81.71*0.0001GGGGly61.61*0.0001AGGArg9.21.59*0.0001ATAIle17.81.57*0.0001GGAGly10.91.56*0.0001TGGTrp10.41.53*0.0001GTGVal10.81.52*0.0001CGCArg2.61.45*0.0001CGAArg31.45*0.0008CGGArg1.71.44*0.0010TCGSer8.61.43*0.0001CCAPro18.31.38*0.0001ACAThr17.81.35*0.0001CCGPro5.31.31*0.0001GTAVal11.81.31*0.0001GCAAla16.21.28*0.0001CCTPro13.51.27*0.0001TCASer18.71.26*0.0001TACTyr14.81.25*0.0001TATTyr18.81.25*0.0001GAGGlu19.21.25*0.0001CTALeu13.41.25*0.0001CTTLeu12.31.24*0.0001TGCCys4.81.23*0.0001GGCGly9.81.22*0.0001CAGGln12.11.15*0.0002ACGThr81.120.0069AGTSer14.21.100.0060AGCSer9.81.090.0213CACHis7.81.080.0098TTTPhe26.11.050.0529GAAGlu45.61.040.0538AGAArg21.31.010.3014TTCPhe18.41.000.4955GCGAla6.20.990.4650TCCSer14.20.990.3341TTALeu26.20.990.3166TCCSer23.50.980.2249CATHis13.60.930.0188GGTGly23.90.93*0.0003ATGMet20.90.920.0027ATTIle30.10.92*0.0005TTGLeu27.20.92*0.0001CTGLeu10.50.920.0139AATAsn35.70.88*0.0001AAALys41.90.88*0.0003CGTArg6.40.87*0.0002CAAGln27.30.87*0.0001GCCAla12.60.86*0.0001GACAsp20.20.85*0.0001TGTCys8.10.81*0.0001GCTAla21.20.81*0.0001ATCIle17.20.80*0.0001ACTThr20.30.78*0.0001GATAsp37.60.76*0.0001AACAsn24.80.76*0.0001GTTVal22.10.75*0.0001GTCVal11.80.75*0.0001AAGLys30.80.74*0.0001ACCThr12.70.70*0.0001BCodonAAUsageRRTp valueCCTPro13.51.80*0.0001CCCPro6.81.48*0.0001CCAPro18.31.48*0.0001AATAsn35.71.39*0.0001CGCArg1.71.340.0070CCGPro5.31.30*0.0001A. Usage of each codon per 1000 codons and the Ribosome Residence Time (RRT) at position 6 (the A-site of the ribosome). The p-value for a difference between the calculated RRT value and an RRT value of 1 is shown. p-values less than or equal to 0.001 are marked with an asterisk. B. As for A, but for the six highest values at position 5 (the P-site).
+Table 2 shows the Ribosome Residence Time at position 6 for each of the 61 sense codons. The slowest codon is the rare Leu codon CTC. Relatively, the ribosome spends about 1.9 times as long with a CTC codon in the A site as it does at the average codon. If the yeast ribosome spends 50 milliseconds (Futcher et al., 1999) on an average codon in the A-site, then the RRT suggests it spends about 95 milliseconds on CTC codons. The fastest codon is the relatively abundant Thr codon ACC (Figure 4C, Table 2), where it spends 0.70 times as long as average (i.e., about 35 milliseconds).
+
+**Table 2.**
+ Ribosome residence time at position 6 (A) and 5 (B)
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">A</th>
+    </tr>
+    <tr>
+      <th>Codon</th>
+      <th>AA</th>
+      <th>Usage</th>
+      <th>RRT</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CTC</td>
+      <td>Leu</td>
+      <td>5.4</td>
+      <td>1.89</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CCC</td>
+      <td>Pro</td>
+      <td>6.8</td>
+      <td>1.71</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GGG</td>
+      <td>Gly</td>
+      <td>6</td>
+      <td>1.61</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>AGG</td>
+      <td>Arg</td>
+      <td>9.2</td>
+      <td>1.59</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>ATA</td>
+      <td>Ile</td>
+      <td>17.8</td>
+      <td>1.57</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GGA</td>
+      <td>Gly</td>
+      <td>10.9</td>
+      <td>1.56</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>TGG</td>
+      <td>Trp</td>
+      <td>10.4</td>
+      <td>1.53</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GTG</td>
+      <td>Val</td>
+      <td>10.8</td>
+      <td>1.52</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CGC</td>
+      <td>Arg</td>
+      <td>2.6</td>
+      <td>1.45</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CGA</td>
+      <td>Arg</td>
+      <td>3</td>
+      <td>1.45</td>
+      <td>*0.0008</td>
+    </tr>
+    <tr>
+      <td>CGG</td>
+      <td>Arg</td>
+      <td>1.7</td>
+      <td>1.44</td>
+      <td>*0.0010</td>
+    </tr>
+    <tr>
+      <td>TCG</td>
+      <td>Ser</td>
+      <td>8.6</td>
+      <td>1.43</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CCA</td>
+      <td>Pro</td>
+      <td>18.3</td>
+      <td>1.38</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>ACA</td>
+      <td>Thr</td>
+      <td>17.8</td>
+      <td>1.35</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CCG</td>
+      <td>Pro</td>
+      <td>5.3</td>
+      <td>1.31</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GTA</td>
+      <td>Val</td>
+      <td>11.8</td>
+      <td>1.31</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GCA</td>
+      <td>Ala</td>
+      <td>16.2</td>
+      <td>1.28</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CCT</td>
+      <td>Pro</td>
+      <td>13.5</td>
+      <td>1.27</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>TCA</td>
+      <td>Ser</td>
+      <td>18.7</td>
+      <td>1.26</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>TAC</td>
+      <td>Tyr</td>
+      <td>14.8</td>
+      <td>1.25</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>TAT</td>
+      <td>Tyr</td>
+      <td>18.8</td>
+      <td>1.25</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GAG</td>
+      <td>Glu</td>
+      <td>19.2</td>
+      <td>1.25</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CTA</td>
+      <td>Leu</td>
+      <td>13.4</td>
+      <td>1.25</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CTT</td>
+      <td>Leu</td>
+      <td>12.3</td>
+      <td>1.24</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>TGC</td>
+      <td>Cys</td>
+      <td>4.8</td>
+      <td>1.23</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GGC</td>
+      <td>Gly</td>
+      <td>9.8</td>
+      <td>1.22</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CAG</td>
+      <td>Gln</td>
+      <td>12.1</td>
+      <td>1.15</td>
+      <td>*0.0002</td>
+    </tr>
+    <tr>
+      <td>ACG</td>
+      <td>Thr</td>
+      <td>8</td>
+      <td>1.12</td>
+      <td>0.0069</td>
+    </tr>
+    <tr>
+      <td>AGT</td>
+      <td>Ser</td>
+      <td>14.2</td>
+      <td>1.10</td>
+      <td>0.0060</td>
+    </tr>
+    <tr>
+      <td>AGC</td>
+      <td>Ser</td>
+      <td>9.8</td>
+      <td>1.09</td>
+      <td>0.0213</td>
+    </tr>
+    <tr>
+      <td>CAC</td>
+      <td>His</td>
+      <td>7.8</td>
+      <td>1.08</td>
+      <td>0.0098</td>
+    </tr>
+    <tr>
+      <td>TTT</td>
+      <td>Phe</td>
+      <td>26.1</td>
+      <td>1.05</td>
+      <td>0.0529</td>
+    </tr>
+    <tr>
+      <td>GAA</td>
+      <td>Glu</td>
+      <td>45.6</td>
+      <td>1.04</td>
+      <td>0.0538</td>
+    </tr>
+    <tr>
+      <td>AGA</td>
+      <td>Arg</td>
+      <td>21.3</td>
+      <td>1.01</td>
+      <td>0.3014</td>
+    </tr>
+    <tr>
+      <td>TTC</td>
+      <td>Phe</td>
+      <td>18.4</td>
+      <td>1.00</td>
+      <td>0.4955</td>
+    </tr>
+    <tr>
+      <td>GCG</td>
+      <td>Ala</td>
+      <td>6.2</td>
+      <td>0.99</td>
+      <td>0.4650</td>
+    </tr>
+    <tr>
+      <td>TCC</td>
+      <td>Ser</td>
+      <td>14.2</td>
+      <td>0.99</td>
+      <td>0.3341</td>
+    </tr>
+    <tr>
+      <td>TTA</td>
+      <td>Leu</td>
+      <td>26.2</td>
+      <td>0.99</td>
+      <td>0.3166</td>
+    </tr>
+    <tr>
+      <td>TCC</td>
+      <td>Ser</td>
+      <td>23.5</td>
+      <td>0.98</td>
+      <td>0.2249</td>
+    </tr>
+    <tr>
+      <td>CAT</td>
+      <td>His</td>
+      <td>13.6</td>
+      <td>0.93</td>
+      <td>0.0188</td>
+    </tr>
+    <tr>
+      <td>GGT</td>
+      <td>Gly</td>
+      <td>23.9</td>
+      <td>0.93</td>
+      <td>*0.0003</td>
+    </tr>
+    <tr>
+      <td>ATG</td>
+      <td>Met</td>
+      <td>20.9</td>
+      <td>0.92</td>
+      <td>0.0027</td>
+    </tr>
+    <tr>
+      <td>ATT</td>
+      <td>Ile</td>
+      <td>30.1</td>
+      <td>0.92</td>
+      <td>*0.0005</td>
+    </tr>
+    <tr>
+      <td>TTG</td>
+      <td>Leu</td>
+      <td>27.2</td>
+      <td>0.92</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>CTG</td>
+      <td>Leu</td>
+      <td>10.5</td>
+      <td>0.92</td>
+      <td>0.0139</td>
+    </tr>
+    <tr>
+      <td>AAT</td>
+      <td>Asn</td>
+      <td>35.7</td>
+      <td>0.88</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>AAA</td>
+      <td>Lys</td>
+      <td>41.9</td>
+      <td>0.88</td>
+      <td>*0.0003</td>
+    </tr>
+    <tr>
+      <td>CGT</td>
+      <td>Arg</td>
+      <td>6.4</td>
+      <td>0.87</td>
+      <td>*0.0002</td>
+    </tr>
+    <tr>
+      <td>CAA</td>
+      <td>Gln</td>
+      <td>27.3</td>
+      <td>0.87</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GCC</td>
+      <td>Ala</td>
+      <td>12.6</td>
+      <td>0.86</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GAC</td>
+      <td>Asp</td>
+      <td>20.2</td>
+      <td>0.85</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>TGT</td>
+      <td>Cys</td>
+      <td>8.1</td>
+      <td>0.81</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GCT</td>
+      <td>Ala</td>
+      <td>21.2</td>
+      <td>0.81</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>ATC</td>
+      <td>Ile</td>
+      <td>17.2</td>
+      <td>0.80</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>ACT</td>
+      <td>Thr</td>
+      <td>20.3</td>
+      <td>0.78</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GAT</td>
+      <td>Asp</td>
+      <td>37.6</td>
+      <td>0.76</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>AAC</td>
+      <td>Asn</td>
+      <td>24.8</td>
+      <td>0.76</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GTT</td>
+      <td>Val</td>
+      <td>22.1</td>
+      <td>0.75</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>GTC</td>
+      <td>Val</td>
+      <td>11.8</td>
+      <td>0.75</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>AAG</td>
+      <td>Lys</td>
+      <td>30.8</td>
+      <td>0.74</td>
+      <td>*0.0001</td>
+    </tr>
+    <tr>
+      <td>ACC</td>
+      <td>Thr</td>
+      <td>12.7</td>
+      <td>0.70</td>
+      <td>*0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+_A. Usage of each codon per 1000 codons and the Ribosome Residence Time (RRT) at position 6 (the A-site of the ribosome). The p-value for a difference between the calculated RRT value and an RRT value of 1 is shown. p-values less than or equal to 0.001 are marked with an asterisk. B. As for A, but for the six highest values at position 5 (the P-site)._
 
 There are also peaks at position 5 (Figure 4A,D), which we interpret as the ribosome's P-site, where the peptide bond is formed. All four Pro codons are high at position 5: CCT, CCA, and CCC are the three slowest codons at position 5, while CCG is 6th (Figure 4D, Table 2). Proline is a unique amino acid in having a secondary rather than a primary amino group, and so it is less reactive in peptide bond formation. Proline forms peptide bonds slowly (Muto and Ito, 2008; Wohlgemuth et al., 2008; Pavlov et al., 2009; Johansson et al., 2011), and proline has been associated with slow translation in footprinting experiments (Ingolia et al., 2011). Our result that the ribosome slows with proline at position 5 is consistent with this and tends to confirm our assignment of position 5 to the P-site and, therefore, position 6 to the A-site. A few other residues also seem slightly slow at position 5 (e.g., Asn, Gly, see Table 2 and Supplementary file 1), possibly due to low reactivity in peptide bond formation (Johansson et al., 2011).
 
-All four proline codons also have high RRTs at position 6, the A-site (
+All four proline codons also have high RRTs at position 6, the A-site (Figure 4D, Table 2). The dipeptide ProPro is translated very slowly (Doerfel et al., 2013; Gutierrez et al., 2013; Peil et al., 2013; Ude et al., 2013). We wondered whether the apparent slowness of proline at both positions 5 and 6 was an informatic artefact due to extreme slowness for ProPro dipeptides. We redid the original analysis after excluding all footprints encoding ProPro dipeptides. Results did not change significantly; Pro still appeared to be slow at both positions 5 and 6 (Figure 6A). On the other hand, when we looked specifically at footprints containing a ProPro dipeptide, there was a very large peak at position 5 (Figure 6B), consistent with the very slow peptide bond formation seen in studies cited above.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/03735/elife-03735-fig6-v2.jpg)
 
-**Figure 6.:** (A) RRT analysis of windows containing no ProPro dipeptides. (B) RRT analysis of windows containing ProPro dipeptides.DOI: http://dx.doi.org/10.7554/eLife.03735.010
+**Figure 6.:** (A) RRT analysis of windows containing no ProPro dipeptides. (B) RRT analysis of windows containing ProPro dipeptides.
 
-To establish repeatability, we generated and analyzed three other ribosome profiling datasets and also re-analyzed previously published data (Ingolia et al., 2009). All five data sets gave qualitatively similar results; pairwise correlations for RRTs at position 6 ranged from 0.22 to 0.96 between the datasets (Table 3). The poorest correlation (0.22) was a correlation with the previously published dataset, which was generated using significantly different methods than our datasets. In particular, that dataset was generated by adding cycloheximide to the growing culture, then harvesting (Ingolia et al., 2009), whereas our data were generated by flash-freezing first, then adding cycloheximide to the frozen cells. Complete results for all five experiments are given in Supplementary file 1. More recently, we also subjected the long footprint data of Lareau et al. (2014) to RRT analysis and obtained correlations at position 6 of 0.21, 0.47, 0.23, and 0.27, respectively, for their ‘untreated 1’, ‘untreated 2’, ‘untreated merge’, and ‘cycloheximide 1’ experiments to our SC-lys experiment. Again, these experiments were carried out in a significantly different way from ours and it is not surprising that the correlations are modest. It is reassuring that a positive correlation can be seen even for experiments where no cycloheximide was used.10.7554/eLife.03735.011Table 3.Correlations between experimentsDOI: http://dx.doi.org/10.7554/eLife.03735.011YPD1-HisYPD2Ingo.-Lys0.800.350.760.22YPD10.530.960.55-His0.580.37YPD20.53The pairwise Spearman correlations between the RRT values at position 6 are shown for five independent experiments, where the experiments are named YPD1, YPD2, SC-Lys, SC-His, and Ingolia. The SC-Lys and SC-His experiments were carried out by JG, and used flash-freezing as the initial method for stopping ribosome movement. The YPD1 and YPD2 experiments were carried out by YC (Cai and Futcher, 2013), and used addition of ice and cycloheximide to the culture as the initial method for stopping ribosome movement. The ‘Ingo’ experiment was that carried out by Ingolia et al. (2009). Further details are given in ‘Materials and methods’. Complete RRT values for each position in each experiment are provided in Supplementary file 1.
+To establish repeatability, we generated and analyzed three other ribosome profiling datasets and also re-analyzed previously published data (Ingolia et al., 2009). All five data sets gave qualitatively similar results; pairwise correlations for RRTs at position 6 ranged from 0.22 to 0.96 between the datasets (Table 3). The poorest correlation (0.22) was a correlation with the previously published dataset, which was generated using significantly different methods than our datasets. In particular, that dataset was generated by adding cycloheximide to the growing culture, then harvesting (Ingolia et al., 2009), whereas our data were generated by flash-freezing first, then adding cycloheximide to the frozen cells. Complete results for all five experiments are given in Supplementary file 1. More recently, we also subjected the long footprint data of Lareau et al. (2014) to RRT analysis and obtained correlations at position 6 of 0.21, 0.47, 0.23, and 0.27, respectively, for their ‘untreated 1’, ‘untreated 2’, ‘untreated merge’, and ‘cycloheximide 1’ experiments to our SC-lys experiment. Again, these experiments were carried out in a significantly different way from ours and it is not surprising that the correlations are modest. It is reassuring that a positive correlation can be seen even for experiments where no cycloheximide was used.
+
+**Table 3.**
+ Correlations between experiments
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>YPD1</th>
+      <th>-His</th>
+      <th>YPD2</th>
+      <th>Ingo.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-Lys</td>
+      <td>0.80</td>
+      <td>0.35</td>
+      <td>0.76</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>YPD1</td>
+      <td></td>
+      <td>0.53</td>
+      <td>0.96</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>-His</td>
+      <td></td>
+      <td></td>
+      <td>0.58</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>YPD2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.53</td>
+    </tr>
+  </tbody>
+</table>
+
+_The pairwise Spearman correlations between the RRT values at position 6 are shown for five independent experiments, where the experiments are named YPD1, YPD2, SC-Lys, SC-His, and Ingolia. The SC-Lys and SC-His experiments were carried out by JG, and used flash-freezing as the initial method for stopping ribosome movement. The YPD1 and YPD2 experiments were carried out by YC (Cai and Futcher, 2013), and used addition of ice and cycloheximide to the culture as the initial method for stopping ribosome movement. The ‘Ingo’ experiment was that carried out by Ingolia et al. (2009). Further details are given in ‘Materials and methods’. Complete RRT values for each position in each experiment are provided in Supplementary file 1._
 
 There are strong correlations between codon usage, the number of tRNA genes for the relevant tRNA, and tRNA abundance (Ikemura, 1981, 1982; Dong et al., 1996; Tuller et al., 2010; Novoa and Ribas de Pouplana, 2012). Although one cannot determine causation from this correlation (Plotkin and Kudla, 2011), nevertheless it is consistent with the idea that the rate of decoding in translation is at least partly limited by tRNA concentration. Most of our results are consistent with this. However, there are some interesting exceptions. In yeast, the 61 sense codons are decoded by only 42 tRNAs. There are 12 pairs of codons that share a single tRNA (e.g., Phe TTC and TTT; Tyr TAT and TAC; etc) (Roth, 2012). In many but not all cases, the RRT of the two codons is similar (Table 2), consistent with the ‘concentration’ hypothesis. However, there are also cases where the RRT appears to be significantly different for two codons sharing the same tRNA. For instance, the Cys codon TGC has an RRT of 1.23, while TGT has an RRT of 0.81 (Table 2). Both codons are recognized by the same tRNA, which in this case is complementary for TGC, and wobble for TGT. Similarly, the Gly codon GGC has an RRT of 1.22 (tRNA is complementary), while GGT has an RRT of 0.93 (tRNA is wobble). Both these relationships (RRT for TGC > TGT, and RRT for GGC > GGT) were true in all five datasets (Supplementary file 1). In both the cases, the perfect match is decoded more slowly than the wobble match and in both cases, the slower, complementary pairing has a G:C match at the third (i.e., wobble) position. These and other similar examples (not shown) suggest that the RRT depends on more than just the concentration of the relevant tRNA. Perhaps the long RRTs for these GC-rich codons are related to the time needed to eject incorrectly paired anti-codons of incorrect tRNAs, although this explanation is somewhat at odds with the literature (Daviter et al., 2006; Gromadski et al., 2006). Alternatively, it has been suggested that translocation can occur more quickly when the codon:anticodon interaction is weaker (Semenkov et al., 2000; Khade and Joseph, 2011).
 
-## RRT analysis of short footprints
+### RRT analysis of short footprints
 
 Recently, Lareau et al. made the exciting discovery that ribosome profiling on cells that have not been treated with any drug yields two classes of footprints, long (28–30 nucleotides) and short (20–22 nucleotides) (Lareau et al., 2014). It is the long class that is seen in cycloheximide experiments, and which we have characterized above. The short (20–22 nuc.) footprints seem to represent a different conformation of the ribosome, perhaps one that occurs when the ribosome translocates along the mRNA. Furthermore, Lareau et al. found that treatment of cells with the elongation inhibitor anisomycin efficiently generates short footprints. Lareau et al. suggest that the long and short footprints are reporting on two different states of translation (Lareau et al., 2014).
 
-We applied RRT analysis to the short footprints generated by Lareau et al., with special focus on the footprints after anisomycin treatment. All three of their anisomycin datasets were studied, and the pairwise correlations between the RRT results for these three datasets were very high, ranging from 0.89 to 0.998. Partial results are shown in
+We applied RRT analysis to the short footprints generated by Lareau et al., with special focus on the footprints after anisomycin treatment. All three of their anisomycin datasets were studied, and the pairwise correlations between the RRT results for these three datasets were very high, ranging from 0.89 to 0.998. Partial results are shown in Figure 7 and Table 4, and complete results are shown in Supplementary file 2. RRT analysis showed a series of peaks at different positions along the 7-codon footprint. The RRT values for the short footprints did not significantly correlate with RRT values for the long footprints, even when the phases of the footprints were shifted. This suggests, in agreement with Lareau et al., that the short and long footprints are indeed reporting on different translational processes. Furthermore, for the short footprints the RRT values are amino acid-specific, while for the long footprints at position 6, the RRT values are codon-specific (Table 2; Table 4; Figure 4, Figure 7, Figure 8). This again indicates that the two kinds of footprints are reporting on different translational processes. The amino acids in the peaks at positions 3, 5, and 6 are shown in Table 4: the peak at position 3 contains glycine; the peak at position 5 contains smallish hydrophobic amino acids (Leu, Val, Ile, and to some extent Phe), and the peak at position 6 is dominated by the two basic amino acids, Arg and Lys. It has previously been shown that basic amino acids can cause a pause in elongation by interacting with the ribosome exit tunnel (Lu et al., 2007; Lu and Deutsch, 2008; Brandman et al., 2012; Wu et al., 2012; Charneski and Hurst, 2013). The basis of the anisomycin arrest is partly but not fully understood (Hansen et al., 2003; Blaha et al., 2008), and so it is difficult to clearly interpret these results (but see ‘Discussion’). Nevertheless, the application of RRT analysis to the anisomycin-generated footprints gives strong specific signals that are unlikely to be explained by a random process. We note, however, that results from the short footprints from untreated (no anisomycin) cells are only modestly correlated (0.23) with results from short footprints from the anisomycin-treated cells (data not shown).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/03735/elife-03735-fig7-v2.jpg)
 
-**Figure 7.:** The short, seven-codon footprints from anisomycin treatment (dataset 1b) from Lareau et al. (2014) were analyzed for RRT. All 61 sense codons are shown; codons for selected amino acids are color-coded by amino acid. Position along the footprint is shown on the x-axis.DOI: http://dx.doi.org/10.7554/eLife.03735.012
+**Figure 7.:** The short, seven-codon footprints from anisomycin treatment (dataset 1b) from Lareau et al. (2014) were analyzed for RRT. All 61 sense codons are shown; codons for selected amino acids are color-coded by amino acid. Position along the footprint is shown on the x-axis.
+
+**Table 4.**
+ Top 10 RRTs at positions 3 through 6 of the anisomycin-generated short footprints
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pos 3</th>
+      <th>Pos 4</th>
+      <th>Pos 5</th>
+      <th>Pos 6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gly GGG 2.64</td>
+      <td>Pro CCC 2.36</td>
+      <td>Leu TTA 2.75</td>
+      <td>Arg CGA 3.72</td>
+    </tr>
+    <tr>
+      <td>Gly GGC 2.52</td>
+      <td>Pro CCA 2.34</td>
+      <td>Leu CTC 2.73</td>
+      <td>Arg CGG 3.50</td>
+    </tr>
+    <tr>
+      <td>Gly GGT 2.36</td>
+      <td>Met ATG 2.25</td>
+      <td>Val GTA 2.43</td>
+      <td>Pro CCG 2.74</td>
+    </tr>
+    <tr>
+      <td>Gly GGA 2.32</td>
+      <td>Pro CCT 2.17</td>
+      <td>Leu CTA 2.36</td>
+      <td>Lys AAA 2.59</td>
+    </tr>
+    <tr>
+      <td>Asp GAC 1.80</td>
+      <td>Ala GCC 2.13</td>
+      <td>Leu TTG 2.29</td>
+      <td>Lys AAG 2.49</td>
+    </tr>
+    <tr>
+      <td>Ala GCC 1.79</td>
+      <td>Phe TTC 2.03</td>
+      <td>Val GTG 2.21</td>
+      <td>Arg CGC 2.46</td>
+    </tr>
+    <tr>
+      <td>Ala GCA 1.70</td>
+      <td>Ala GCA 2.01</td>
+      <td>Leu CTT 2.16</td>
+      <td>Arg CGT 2.34</td>
+    </tr>
+    <tr>
+      <td>Ala GCT 1.65</td>
+      <td>Ala GCT 1.98</td>
+      <td>Val GTC 2.12</td>
+      <td>Arg AGG 2.32</td>
+    </tr>
+    <tr>
+      <td>Ala GCG 1.59</td>
+      <td>Tyr TAC 1.98</td>
+      <td>Val GTT 2.11</td>
+      <td>Arg AGA 2.21</td>
+    </tr>
+    <tr>
+      <td>Blu GAG 1.58</td>
+      <td>Ser TCC 1.97</td>
+      <td>Ile ATA 2.03</td>
+      <td>Asp GAT 2.12</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/03735/elife-03735-fig8-v2.jpg)
 
-**Figure 8.:** For the set of codons corresponding to each amino acid (x-axis), a test was done to see if all the codons behaved similarly or not. For the short footprints (left, panel A), p-values (y-axis) are generally small, showing that each codon for a particular amino acid behaves similarly (‘Materials and methods’). For the long footprints (right, panel B), p-values are generally large, showing that the codons for each particular amino acid behave differently (‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.03735.014
+**Figure 8.:** For the set of codons corresponding to each amino acid (x-axis), a test was done to see if all the codons behaved similarly or not. For the short footprints (left, panel A), p-values (y-axis) are generally small, showing that each codon for a particular amino acid behaves similarly (‘Materials and methods’). For the long footprints (right, panel B), p-values are generally large, showing that the codons for each particular amino acid behave differently (‘Materials and methods’).
 
 It appeared that the RRT values at position 6 for the long footprints were codon-specific (Figure 4, Table 2), while the RRT values for the short footprints were amino acid-specific (Figure 7, Table 4). To confirm this, we developed a statistical test for the coherence of the results for a particular amino acid (‘Materials and methods’). Briefly, this method tests whether every codon for a particular amino acid behaves similarly, and it yields a small p-value if it does. Indeed, this analysis confirms that the short footprints give results specific to the amino acid, while the long footprints generally do not (i.e., the long footprints are codon-specific) (Figure 8). This suggests that the long footprints are reporting on the process of decoding (which depends on specific codons), while the short footprints are reporting on events after decoding.
 
@@ -124,39 +780,39 @@ In summary, we believe that RRT analysis is a sensitive high-resolution method t
 
 Experiments were done with yeast strain background BY4741. Ribosome profiling was based on the method of Ingolia (Ingolia et al., 2009), but with modifications (see below). Programs for analysis of ribosome residence time were written by the authors, primarily RY and AY. The Perl code for ribosome residence time analysis is given in Source code 1 and 2.
 
-## Ribosome profiling
+### Ribosome profiling
 
 Informatic analysis was conducted on four ribosome profiling experiments (YPD1, YPD2, SC-lys, and SC-his) done for other reasons in the Futcher lab. The strains and methods used varied slightly from experiment to experiment; nevertheless similar results were obtained for the RRT analysis (Table 2). The ribosome profiling experiments YPD1 and YPD2 have been reported previously (Cai and Futcher, 2013) as the ‘WT’ and ‘whi3’ experiments, respectively.
 
 All experiments used S. cerevisiae strain background BY4741. Two biologically independent ribosome-profiling libraries and mRNA-seq libraries were obtained from YPD rich media (the YPD1 and YPD2 experiments), and two biologically independent ribosome-profiling libraries and mRNA-seq libraries were prepared in synthetic media (the SC-lys and SC-his experiments). Two methods for harvesting cells were used. After harvesting and footprint size selection, footprints from all four experiments were processed identically into sequencing libraries using the ARTseq Yeast Ribosome Profiling kit, following the manufacture's instructions beginning with step B3 in the protocol.
 
-## Harvesting method 1 (YPD1 and YPD2 experiments)
+#### Harvesting method 1 (YPD1 and YPD2 experiments)
 
 1 liter of cells in YPD were grown to a density of 2.0 × 107 cells/ml. Medium was cooled to 0°C by adding ice (stored at −20°C) and simultaneously cycloheximide was added to a concentration of 100 µg/ml to quickly halt translation and freeze translating ribosomes in place. Cells were centrifuged using a Sorvall Evolution RC centrifuge at 3000 rpm for 2 min at 4°C. The resulting cell pellet was washed with ice-cold RNase-free water containing 100 µg/ml cycloheximide by gentle vortexing and repelleted. Supernatant was aspirated, and cells were resuspended in polysome lysis buffer prepared according to the ARTseq ribosome profiling kit instructions. Cell lysis buffer slurry was slowly dripped into an RNase-free 50 ml conical tube containing liquid nitrogen. Resulting frozen pellets of cell slurry were lysed using a TissueLyser II and 50 ml grinding jars at liquid nitrogen temperature for six 3 min cycles at 15 hertz. Frozen cell lysate was scraped from the grinding jar into a new RNase-free 50 ml conical tube followed by reheating the slurry in a 30°C water bath with constant swirling. Immediately after complete thawing (∼3–5 min), cell lysate was centrifuged for 5 min at 3000×g. Supernatant was moved to a 1.5 ml RNase-free centrifuge tube and centrifuged for 10 min at 20,000×g. Clarified lysate total RNA content was estimated using a Nanodrop at A260 nm, and polysome complexes were digested using ARTseq ribonuclease mix according to the manufacture's instructions. Ribosome-protected mRNA footprints were purified using an Illustra Microspin S-400HR column prepared according to ARTseq manufacture's instructions. All following library generation steps were performed according to the ARTseq protocol starting at step 4 (PAGE purification). Following the end repair step in the protocol, a biotinylated oligonucleotide antisense to a specific rRNA fragment was used to reduce rRNA contamination using a protocol from the Jonathan Weissman lab (personal communication from Gloria Brar).
 
-## Harvesting method 2 (SC-lys and SC-his experiments)
+#### Harvesting method 2 (SC-lys and SC-his experiments)
 
 Synthetic media lacking lysine or lacking histidine was used to prepare 1 liter of cells at 2.0 × 107 cells/ml. The strains were prototropic for Lys or His (HIS3 gap1 frame1), respectively. Cells were harvested by vacuum filtration using Whatman 7184–009 membrane filters at 30°C. A liquid nitrogen cooled spatula was used to scrap cells from the membrane followed by immediate flash freezing in an RNase-free 50 ml conical tube containing liquid nitrogen. Special care was taken to ensure cells were exposed to air for as little time as possible, between vacuum filtration and flash freezing (2–3 s), to prevent the loss of ribosome footprints at the 5′ ends of mRNAs (personal communication, Gloria Brar). ARTseq polysome lysis buffer containing cycloheximide at 50 µg/ml was slowly dripped into the liquid nitrogen filled cell pellet conical tube. Cells were lysed using a TissueLyser II and 50 ml grinding jars at liquid nitrogen temperature for six 3 min cycles at 15 hertz. Frozen cell lysate was scraped from the grinding jar into a new RNase-free 50 ml conical tube followed by reheating the slurry in a 30°C water bath with constant swirling. Immediately after complete thawing (∼3–5 min), cell lysate was centrifuged for 5 min at 3000×g. Supernatant was moved to a 1.5 ml RNase-free centrifuge tube and centrifuged for 10 min at 20,000×g. Clarified lysate total RNA content was estimated using a Nanodrop at A260 nm, and polysome complexes were digested using ARTseq ribonuclease mix according to the manufacture's instructions.
 
-## SC-lys Dataset
+#### SC-lys Dataset
 
 Digested monosomes were purified using sucrose cushion ultracentrifugation for 3 hr at 35,000 rpm using a SW-41 rotor. The sucrose cushion contained 9 ml of 10% sucrose polysome lysis buffer lacking triton detergent layered over 3 ml of 60% sucrose polysome lysis buffer lacking triton detergent. Gradient fractionation was carried out using a BioRad EM-1 UV absorbance monitor and a peristaltic pump. Efficiency of RNase digestion was monitored in tandem using an undigested control lysate on an identically prepared 10–60% sucrose cushion and a digested control centrifuged on a 10–60% sucrose gradient. Following fractionation, the monosome containing fraction was mixed 1:1 with 4 M guanidine thiocyanate and was precipitated overnight using a 1:1 vol of 100% isopropanol chilled to −20°C. The RNA pellet was aspirated and resuspended in 400 μl RNase-free water, and protein was removed by two acid phenol–chloroform purifications followed by one chloroform purification. Recovered supernatant was brought to 0.3 M ammonium acetate and precipitated with 3 vol of 100% ethanol. All following library generation steps were performed according to the ARTseq protocol starting at step 4 (PAGE purification). Following the end repair step in the protocol, a biotinylated oligonucleotide antisense to a specific rRNA fragment was used to reduce rRNA contamination using a protocol from the Jonathan Weissman lab (personal communication Gloria Brar).
 
-## SC-his Dataset
+#### SC-his Dataset
 
 Digested monosomes were purified using an Illustra Microspin S-400HR column according to ARTseq manufacture's instruction. All following library generation steps were performed according to the ARTseq protocol starting at step 4 (PAGE purification). Following the end repair step in the protocol, a biotinylated oligonucleotide antisense to a specific rRNA fragment was used to reduce rRNA contamination using a protocol from the Jonathan Weissman lab (personal communication Gloria Brar).
 
-## Data analysis
+### Data analysis
 
 Unless indicated, data processing and analysis were performed using a collection of custom programs written in Perl.
 
-## Sequence processing and alignment
+### Sequence processing and alignment
 
 Primary data were generated using Illumina HiSeq2000. Data were processed using Fastq clipper from the FASTX Toolkit 0.0.13 to remove the adaptor sequence and all reads shorter than 25 nucleotides were discarded. Alignment to the reference was done using bowtie2 2.1.0 in local alignment mode.
 
 Before performing our analysis on the Ingolia et al. (2009) data, in order to adhere to the processing guidelines of that paper, we used bowtie 0.12.8, reporting all alignments with at most three mismatches, and a seed length of 21. We then processed the multiple alignments, removing the poly-A tails and picking the one with the greatest number of bases matching to the reference.
 
-## Ribosome residence time analysis
+### Ribosome residence time analysis
 
 This analysis uses the general idea that many different mRNA sequences should get an independent and equal vote on decoding speed. We opted to analyze select regions where the effects of codon usage become particularly easy to assay. First, we discounted all reads with more than two mismatches or quality less than 10. We identified the first in-frame codon of each read and discarded those less than 30 nucleotides long to exclude fragments that may have been over digested by RNAase I. We then examined the coding regions of the genome, ignoring those overlapping with other genes, rRNAs, and tRNAs, in order to maximize our confidence in unique mapping. Each of the footprint reads that fully fit into a coding region that it aligned to was considered for further analysis.
 
@@ -174,16 +830,16 @@ We performed our RRT analysis on the Ingolia et al. (2009) data, with small modi
 
 The statistical significances shown in Table 1 were obtained by constructing 10,000 simulated frequency distributions by randomly and independently permuting each region's frequency distribution prior to averaging. The rank of each observed positional peak among these simulated distributions established the p-value.
 
-## Codon coherence analysis
+### Codon coherence analysis
 
 We developed a p-value computation to assess whether the codons for a given amino acid behave similar to one another (i.e., are coherent) or not. Each codon's RRT values along the positions of a footprint may be considered as a k-dimensional vector, where k is the number of positions in the footprint (10 for long reads vs 7 for short reads). We consider the position in k-dimensional space of the end-point of this vector. For the set of synonymous codons for a particular amino acid, we consider the set of endpoints. For any given set of c such endpoints, we can compute the average pairwise distance d between them over all c(c-1)/2 pairs of points. If all codons for an amino acid behave similarly, then the endpoints are close together, and the distance d is relatively small, indicating codon coherence (amino-acid specific behavior), whereas if the various codons for a given amino acid behave differently (non-coherence, codon-specific behavior), then the distance d is relatively large.
 
 To judge the sizes of these distances for a particular set of points, S, containing c codons (c ranges from 2 to 6) for a particular amino acid, we use a p-value. We construct 10,000 random samples of c codons drawn from the 61 possible sense codons. For each sample, we compute the average pairwise distance and compare this to the average pair distance of S. The rank of S in this distribution provides a p-value, which is significant if the vast bulk of random samples have greater pairwise distance than S. Results are shown in Figure 8.
 
-## Estimates of ribosomes needed for differently-encoded transcriptomes
+### Estimates of ribosomes needed for differently-encoded transcriptomes
 
 An mRNA encoding a given protein could use only the fastest codon for each amino acid or only the slowest or it could use a mixture. In each case, the mRNA would occupy, or titrate out, a different number of ribosomes. A transcriptome of mRNAs using only the slowest codons would require more ribosomes to make a given amount of total protein in a given time than a transcriptome of mRNAs using only the fastest codons. We roughly estimated the size of this effect for the range of codon decoding speeds we observed. We generated in silico a yeast transcriptome using only the fastest codon for each amino acid at position 6 (from Table 1) or only the slowest codon or a random mixture of codons. Furthermore, we weighted the abundance of each mRNA according to its actual abundance as measured by Lipson et al. (2009). We then compared the relative time required to translate each of these in silico transcriptomes by a set number of ribosomes based on the RRT values for each codon at position 5 and 6, and also assuming that the relevant delay is the delay at position 5 plus the delay at position 6 (since these two reactions must occur sequentially and not simultaneously before the ribosome can shift along the mRNA). In doing this, we noted that the RRT values for position 5 are negatively correlated with those at position 6. Results are as follows: the random encoding requires 1.050 as long as WT; the slowest encoding requires 1.168 as long as WT; and the fastest encoding requires 0.930 as long as WT. Note that this estimate uses the simplification that each species of mRNA will initiate translation at the same rate. A more accurate calculation in which the more abundant mRNAs initiate more rapidly than average would increase the difference between the WT and the random encodings.
 
-## Note added in proof
+### Note added in proof
 
 When the accepted manuscript was published, RRT values from an earlier version of the algorithm were erroneously used for Figure 5 (but not for other figures), giving a correlation of –0.7 between RRT and codon usage. The current algorithm, used here, gives a corrected version of Figure 5, shown here, with a correlation of –0.52.

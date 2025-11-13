@@ -15,9 +15,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05xcmte05 ANID – Millennium Science Initiative Program - Millennium Institute for Integrative Biology (iBio) Santiago Chile
-2. https://ror.org/04teye511 Pontificia Universidad Católica de Chile, Biological Sciences Faculty, Molecular Genetics and Microbiology Department Santiago Chile
-3. https://ror.org/01qq57711 Centro de Biotecnología Vegetal, Facultad de Ciencias de la Vida, Universidad Andrés Santiago Chile
+1. ANID – Millennium Science Initiative Program - Millennium Institute for Integrative Biology (iBio) Santiago Chile ([ROR:05xcmte05](https://ror.org/05xcmte05))
+2. Pontificia Universidad Católica de Chile, Biological Sciences Faculty, Molecular Genetics and Microbiology Department Santiago Chile ([ROR:04teye511](https://ror.org/04teye511))
+3. Centro de Biotecnología Vegetal, Facultad de Ciencias de la Vida, Universidad Andrés Santiago Chile ([ROR:01qq57711](https://ror.org/01qq57711))
 4. Department of Biotechnology and Biochemistry, Cinvestav Unidad Irapuato Irapuato Mexico
 5. Laboratorio de expresión génica y desarrollo en hongos, Unidad de Genómica Avanzada-LANGEBIO Irapuato Mexico
 
@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Circadian clocks are important for an individual’s fitness, and recent studies have underlined their role in the outcome of biological interactions. However, the relevance of circadian clocks in fungal–fungal interactions remains largely unexplored. We sought to characterize a functional clock in the biocontrol agent Trichoderma atroviride to assess its importance in the mycoparasitic interaction against the phytopathogen Botrytis cinerea . Thus, we confirmed the existence of circadian rhythms in T. atroviride , which are temperature-compensated and modulated by environmental cues such as light and temperature. Nevertheless, the presence of such molecular rhythms appears to be highly dependent on the nutritional composition of the media. Complementation of a clock null ( Δfrq ) Neurospora crassa strain with the T. atroviride -negative clock component ( tafrq ) restored core clock function, with the same period observed in the latter fungus, confirming the role of tafrq as a bona fide core clock component. Confrontation assays between wild-type and clock mutant strains of T. atroviride and B. cinerea , in constant light or darkness, revealed an inhibitory effect of light on T. atroviride’s mycoparasitic capabilities. Interestingly, when confrontation assays were performed under light/dark cycles, T. atroviride’ s overgrowth capacity was enhanced when inoculations were at dawn compared to dusk. Deleting the core clock-negative element FRQ in B. cinerea , but not in T. atroviride , was vital for the daily differential phenotype, suggesting that the B. cinerea clock has a more significant influence on the result of this interaction. Additionally, we observed that T. atroviride clock components largely modulate development and secondary metabolism in this fungus, including the rhythmic production of distinct volatile organic compounds (VOCs). Thus, this study provides evidence on how clock components impact diverse aspects of T. atroviride lifestyle and how daily changes modulate fungal interactions and dynamics.
+Circadian clocks are important for an individual’s fitness, and recent studies have underlined their role in the outcome of biological interactions. However, the relevance of circadian clocks in fungal–fungal interactions remains largely unexplored. We sought to characterize a functional clock in the biocontrol agent Trichoderma atroviride to assess its importance in the mycoparasitic interaction against the phytopathogen Botrytis cinerea. Thus, we confirmed the existence of circadian rhythms in T. atroviride, which are temperature-compensated and modulated by environmental cues such as light and temperature. Nevertheless, the presence of such molecular rhythms appears to be highly dependent on the nutritional composition of the media. Complementation of a clock null (Δfrq) Neurospora crassa strain with the T. atroviride-negative clock component (tafrq) restored core clock function, with the same period observed in the latter fungus, confirming the role of tafrq as a bona fide core clock component. Confrontation assays between wild-type and clock mutant strains of T. atroviride and B. cinerea, in constant light or darkness, revealed an inhibitory effect of light on T. atroviride’s mycoparasitic capabilities. Interestingly, when confrontation assays were performed under light/dark cycles, T. atroviride’s overgrowth capacity was enhanced when inoculations were at dawn compared to dusk. Deleting the core clock-negative element FRQ in B. cinerea, but not in T. atroviride, was vital for the daily differential phenotype, suggesting that the B. cinerea clock has a more significant influence on the result of this interaction. Additionally, we observed that T. atroviride clock components largely modulate development and secondary metabolism in this fungus, including the rhythmic production of distinct volatile organic compounds (VOCs). Thus, this study provides evidence on how clock components impact diverse aspects of T. atroviride lifestyle and how daily changes modulate fungal interactions and dynamics.
 
 ## Introduction
 
@@ -43,49 +43,226 @@ To deepen the role of circadian regulation in organismal interactions, and simul
 
 ## Results
 
-## T. atroviride bears a functional circadian clock
+### T. atroviride bears a functional circadian clock
 
 We generated TaFRQLUC, a translational fusion reporter between luciferase and TaFRQ (Figure 1—figure supplement 1) to assess oscillations of this putative T. atroviride core clock-negative element and quantify bioluminescence levels under free-running conditions (DD). Monitoring LUC activity after 3 days of constant light (LL) or light-dark (LD) 12:12 hr entrainment cycles, at 25°C, failed to reveal oscillations in multiple tested growth media (Figure 1—figure supplement 2, Supplementary file 1) with only one exception: GYEC, where weak but distinguishable oscillations were observed (Figure 1A, Figure 1—figure supplement 3A). Under the rationale that culture media appeared to be critical for T. atroviride’s oscillations and considering that the fungus also interacts with plants, we decided to modify the GYEC media by adding plant-derived material, ground peas (GYEC+ peas), observing that the quality of the oscillations greatly improved (Figure 1B, Figure 1—figure supplement 3B). Notably, the results suggest that these rhythms are highly dependent on the nutritional composition of the media. The period estimation of those oscillations by fast Fourier transform nonlinear least squares (FFT-NLS) using BioDare (Zielinski et al., 2014) revealed an average period of 26.5 ± 0.36 hr. The phase of the first peak of TaFRQ expression occurs at DD 22, which corresponds to circadian time CT8, and is roughly similar (albeit slightly advanced) compared to the phase of FRQLUC expression (CT11) described in N. crassa (Larrondo et al., 2012). We could also observe oscillations (although weaker ones) by resetting the clock with 3 days in LL (Figure 1C) and also with a short 20 min LP after 48 hr in DD, which elevates TaFRQLUC levels, boosting sustained oscillations for at least 4 days (Figure 1D). Likewise, a low-temperature pulse of 4°C for 6 hr also served as a cue to reset the clock, shifting its phase almost 12 hr, similar to what can be seen in N. crassa when monitoring FRQLUC expression (Larrondo et al., 2012; Figure 1E). After both pulse protocols, the period also remained in the 26 hr range (26.30 hr and 26.49 hr, respectively), exhibiting even better oscillations after the perturbation, as previously observed for clock reporters under some conditions (Shi et al., 2007). These findings indicate that circadian oscillations of TaFRQ can be entrained by LD cycles or shifted by light and temperature pulses. Indeed, the analyses of these perturbations (Figure 1—figure supplement 4) revealed a mean phase delay of 4.29 hr between LD and LP entrainment and 10.85 hr between LL reset and 4°C pulses, further showing that these oscillations behave as one would expect from a circadian oscillator (Heintzen and Liu, 2007). To complement these results, we used a Western blot with anti-LUC antibodies to obtain evidence of TaFRQLUC oscillations in constant darkness over a 52 hr time course, further supporting the circadian variation of TaFRQ levels (Figure 1—figure supplement 5). Importantly, we also evaluated if the observed TaFRQLUC oscillations were temperature-compensated, meaning that they should maintain about the same period in a physiological range of temperatures. Thus, TaFRQLUC rhythms were assessed after 3 days in 12:12 LD entrainment regimes at 20, 22, 25, and 28°C and monitored in DD at the corresponding temperatures (Figure 1B and F–H, Figure 1—figure supplement 6). While low-amplitude oscillations were observed at 20°C, changes in TaFRQLUC levels exhibited higher amplitude at 22°C than at 25°C, whereas oscillations were lost at 28°C, indicating that of the tested temperatures the Trichoderma clock runs better at 22°C. To quantify the degree of temperature compensation, we calculated the Q10 between 20 and 25°C (Figure 1—figure supplement 7), obtaining a Q10 of 1.05 ± 0.07, which is in the range for temperature compensation described in other circadian systems (Anderson et al., 1985; Kusakina et al., 2014; Mattern et al., 1982). Thus, the results show that the T. atroviride’s TaFRQLUC circadian oscillations can compensate in a temperature range between 20 and 25°C, further supporting that a circadian clock is responsible for the observed rhythms.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Raw TaFRQLUC levels were quantified under DD in strains previously entrained for 3 days under LD (12:12 hr) cycles in GYEC (A) or GYEC+ peas (B) culture media. (C) Culture in LL (at 25°C) for 72 hr and then transferred to DD exhibit oscillations. (D) The effect of a 20 min. light pulse (blue arrow) was evaluated in DD on cultures that were also entrained in LD cycles as mentioned. (E) A 4°C temperature pulse efficiently resets rhythms, as shown in cultures grown for 48 hr in LL, cold pulsed in the dark for 6 hr, and then monitored in DD. (F–H) TaFRQLUC expression was monitored at 20 (F), 22 (G), and 28°C (H) to assess rhythmicity at different temperatures. GYEC+ peas media was used in all cases except in (A), and bioluminescence was recorded at 25°C except when indicated otherwise. In all cases, raw data’s mean values are presented from two biological and eight technical replicates each (SEM represented with the gray area). Source data can be found in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representation of the homologous recombination strategy used to integrate luc yielding TaFRQLUC at the endogenous locus. Black arrows show expected XhoI restriction sites used for Southern blot. (B) Southern blot analysis showing both correct and single-copy integration of the replacement cassette using hph as the probe. (C) Sequence chromatogram showing the correct fusion of tafrq (in green, without stop codon) and luc (in blue).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** TaFRQLUC reporter strains (clones 2 and 4) received two treatments: each strain was cultivated first under LL culture conditions for 3 days to reset the clock (A, C) or entrained during 3 days under LD conditions (B, D), both at 25°C. The schematic representation at the top of each panel denotes the lights-on period and the lights-off period (white and black boxes, respectively). LUC acquisition of the TaFRQLUC reporter strains started at the beginning of the free-running conditions (DD, indicated with a vertical black arrow) monitored for 5 days at 25°C. Eight different culture media were tested for each strain (marked with different colors), but no oscillations were determined. Raw data is presented. An average of two biological replicates and three technical replicates each is presented (SEM is represented with the gray area).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** TaFRQLUC reporter strains (TaFRQLUC 2 and 4) were entrained during 3 days under LD (12:12 hr) cycles at 25°C. (A) GYEC culture media. (B) GYEC supplemented with 0.5% peas (w/v). In all experiments, LUC activity was monitored under DD at 25°C for 5 days. Data were normalized to mean. An average of two biological replicates and eight technical replicates is presented (SEM is represented with the gray area).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) TaFRQLUC reporter strains (TaFRQLUC 2 and 4) were subjected to LD 12:12 hr 25°C entrainment (blue) or received a 20 min light pulse (yellow), which was given after 1 day in DD, before going into DD for LUC monitoring. A 4.29 hr phase shift is observed after an LP. (B) TaFRQLUC strains were kept 3 days in LL (yellow), before start monitoring, or received a 4°C temperature pulse in DD for 6 hr (blue) previous to transferring to LUC monitoring. A 10.85 hr phase shift is observed after the 4°C temperature pulse compared to the LL reset. Data were normalized to mean. An average of two biological replicates and 6–12 technical replicates is presented (SEM is represented with the gray area). Phase shifts were calculated using the BioDare platform using the first peak and circadian unit.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Reporter strains were inoculated in GYEC+ peas and received a strong light pulse, equivalent to an LL to DD transfer, to reset the clock and boost oscillations. Samples were taken every 4 hr in DD at 22°C.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A–D) TaFRQLUC reporter strains were entrained for 3 days under LD 12:12 hr cycles at 20, 22, 25, and 28°C, respectively, and transferred to DD to the indicated temperatures. TaFRQLUC strains display low-amplitude oscillations at 20°C, robust oscillations at 22 and 25°C, and no oscillations at 28°C. In all experiments, LUC activity was monitored under DD at the given temperature for 5 days. GYEC+ peas culture media was used in all experiments. Data were normalized to mean. The data correspond to an average of two biological replicates and eight technical replicates (SEM is represented with the gray area).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** The average period of the two TaFRQLUC strains for each experimental condition (n = 3 for each strain). The mean Q10 value obtained for 20–25°C is presented.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** (A) Selected promoters from T. atroviride do not lead to luc rhythmic expression in DD. Each transcriptional reporter strain was entrained for 3 days under LD (12:12 hr) conditions at 25°C in GYEC +peas culture media. After that, LUC activity was monitored under DD at 25°C for 5 days (SEM is represented with the gray area).
+
 To test rhythmic regulation of putative clock-controlled genes (ccgs), we subjected luc expression under the control of four distinct T. atroviride promoters of interest. These were selected from homologs to N. crassa genes encoding trehalose synthase, glyceraldehyde 3-phosphate dehydrogenase, superoxide dismutase, and CON-10, all of which have been reported as rhythmic in Neurospora and some even in other organisms (Lakin-Thomas et al., 2011; Lillo, 1993; Shinohara et al., 2002; Yoshida et al., 2008). Although in all cases we detected bioluminescence, no oscillations were identified in DD, at least under the tested culture conditions (Figure 1—figure supplement 8, Supplementary file 2). Despite the disappointing lack of oscillation of these putative ccgs reporters, this result reinforces the idea that the rhythms yielded by the TaFRQLUC reporter strains are of a circadian nature rather than spurious oscillations driven by external cues or rhythms in ATP levels.
 
-## Functional conservation of core clock elements between T. atroviride and N. crassa
+### Functional conservation of core clock elements between T. atroviride and N. crassa
 
 In N. crassa, transcriptional activation of frq under constant darkness requires recognition, by the WCC, of the clock box (c-box) in its promoter. This cis-element is necessary and sufficient to generate and maintain frq daily rhythms (Froehlich et al., 2003). To evaluate the conservation of the circadian system of T. atroviride, we transformed this fungus with luc under the control of the N. crassa c-box (Ncc-box-luc). Notably, this reporter revealed clear rhythms of luc levels under free-running conditions (DD), which responded to light and temperature cues, and whose presence was also conditioned by culture media composition (Figure 2, Figure 2—figure supplement 1). The bioluminescent traces were analyzed using BioDare (Zielinski et al., 2014), revealing an average of 25.67 ± 1.01 hr period for two independent Ncc-box-luc strains, in close agreement with the TaFRQLUC data. This provides additional proof of a functional circadian clock in T. atroviride and demonstrates that a pivotal Neurospora cis-element (Ncc-box) can be recognized in T. atroviride. Albeit the measured period with this reporter is slighter shorter compared to the one obtained with TaFRQLUC, this also recapitulates what has been seen when comparing both types of reporters (translational and transcriptional) in N. crassa, which could occur due to discrete changes in FRQ structure/dynamics when analyzing this protein as a translational fusion (Larrondo et al., 2012). Notably, in response to an LP, a clear and acute augment in luc expression was seen, as observed for light-responsive elements in Neurospora, arguing that this Ncc-box could integrate light and clock information in T. atroviride. This hypothesis will be challenged in future experiments.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Ncc-box-luc reporter strains were entrained for 3 days under LD (12:12 hr) cycles at 25°C and then transferred to DD where they were monitored unperturbed (A), or examined after a discrete light pulse (blue arrow), which produces a perceivable phase shift (B). (C) Strains were grown for 48 hr in LL and then transferred to DD, where a 4°C temperature treatment for 6 hr was applied. Then bioluminescence was monitored under constant darkness and 25°C. GYEC+ peas culture media was used in all cases. Raw data is presented with mean values of two biological replicates with three technical replicates each (SEM is represented with the gray area). (D, E) The expression of tafrq in N. crassa is able to restore circadian oscillation of a strain lacking its endogenous frq. The use of the transcriptional reporter frqc-box-luc reveals the presence of circadian rhythms in luciferase in the Δfrq::tafrq strain where Trichoderma FRQ was expressed. These oscillations have a longer period than WT N. crassa. Period determination was performed using BioDare 2.0, Linear Det, FFT-NLLS algorithm. A significant difference in period was found between WT N. crassa strain and the strain carrying T. atroviride FRQ (Mann–Whitney test, p-value=0.0055). Period ± SD. frqc-box-luc: WT: 20.6 ± 0,2; ΔNcfrq::tafrq: 25.9 ± 0.5. Source data can be found in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Oscillations of Ncc-box-luc in T. atroviride in GYEC culture media after 3 days at LD 12:12 hr cycle entrainment. Raw data and mean values of two biological replicates with three technical replicates each are presented. Each transcriptional reporter strain was entrained for 3 days under LD (12:12 hr) conditions at 25°C in GYEC+ peas culture media. After that, LUC activity was monitored under DD at 25°C for 5 days (SEM is represented with the gray area).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representation of the homologous recombination strategy employed to generate the Δncfrq::tafrq strain through complementation of a Δncfrq strain with tafrq, including a V5 tag at its C-terminus. (B) Agarose gel electrophoresis images demonstrating the correct integration of the Δncfrq::tafrq cassette and absence of ncfrq after homokaryonization. (C) Western blot analysis of the time course performed for TaFRQ-V5 in N. crassa (upper panel). The lower Δncfrq::tafrq shows the Coomassie blue-stained blot for total protein levels. The right panel demonstrates the relative protein levels of TaFRQ-V5 over time (C+ = control N. crassa FRQV5).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** EMBOSS needle pairwise sequence alignment (Needleman–Wunsch algorithm). Translation start sites and phosphorylation sites, the latter identified and evaluated by Baker et al., 2009, are highlighted in Ncfrq, permitting comparison with corresponding sites in Tafrq.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The four unique Δfrq::tafrq strains were grown alongside rhythmic (C+) and arrhythmic (C-) Neurospora strains (two race tubes each), as positive and negative controls, respectively. All strains were grown in race tubes containing minimal media for 8 days in (A) in constant darkness. (B) LD (12:12) conditions for 5 days followed by DD conditions for the remainder. The blue lines were marked every 24 hr after 5 days to enable calculation of period, not observed as conidiation output in our T. atroviride mutant strains.
+
 In order to provide additional and compelling evidence that the T. atroviride FRQ is a bona fide core clock component, we adopted a classic genetic approach, based on its ability to complement the lack of the endogenous FRQ protein in N. crassa. Thus, we complemented a Neurospora Δfrq strain, containing a circadian luciferase reporter (his-3::frqc-box-luc reporter), with the tafrq gene in which its expression was under the control of the native promoter and terminator of Neurospora (Figure 2—figure supplement 2A and B). The presence of TaFRQ in this Δfrq::tafrq strain yielded clear rhythmic levels of bioluminescence, in contrast to full arrhythmic and high levels of LUC in the recipient Δfrq strain (Figure 2D). Most notably, the analyses of the rhythms revealed a period of ~26 hr after 3 days of 12:12 hr LD entrainment (Figure 2E), further confirming that the long free-running period described in Trichoderma is a property encoded in the FRQ sequence, providing clear evidence of interspecies conservation of a phospho-code commanding period (Figure 2—figure supplement 3). However, no overt rhythmic conidiation was observed in these strains (Figure 2—figure supplement 4), with or without LD entrainment, suggesting that whilst the core clock may function, the normal outputs of the clock in N. crassa may no longer be responding. Finally, to get a first glimpse of TaFRQ expression in Neurospora, we conducted a short 12 hr time course, confirming that after an LL to DD transfer this heterologous clock component is degraded as expected (Figure 2—figure supplement 2C).
 
-## TaFRQ is required for proper conidiation in T. atroviride after light exposure and mechanical injury
+### TaFRQ is required for proper conidiation in T. atroviride after light exposure and mechanical injury
 
 While in Neurospora FRQ appears to solely act as a clock component, in B. cinerea BcFRQ1 exhibits extra-circadian roles, impacting developmental phenotypes. Indeed, enhanced microconidiation and sclerotia formation are observed in Δbcfrq1 (but not in Δbcwcl1) even in conditions where a fungal circadian clock does not run such as constant light (Hevia et al., 2015). This phenotype, which contrasts WT B. cinerea and Δbcwcl1 copious production of macroconidia in LL and LD, prompted us to ask whether tafrq might also serve a role in fungal development in T. atroviride. Therefore, we constructed tafrq deletions (Δtafrq) (Figure 3—figure supplement 1) and tafrq-overexpressing strains (OE::tafrq) (Figure 3—figure supplement 2) and evaluated light-induced conidiation for 7 days in LL. After 72 hr of cultivation in LL, T. atroviride displayed the characteristic green coloration as a result of regular conidia formation. In contrast, the Δtafrq strain exhibited a dark-green color not observed also in the OE::tafrq strains (Figure 3A). Notably, at 3 days post-inoculation (dpi), Δtafrq had produced fewer conidia, albeit this difference was no longer significant by day 7, indicating that conidiation in Δtafrq is delayed but not fully compromised. Furthermore, conidia formation in response to a discrete LP was significantly decreased in Δtafrq, regardless of the pulse duration (Figure 3C). In contrast, no significant differences were observed between TaWT and OE::tafrq in both types of analyses (Figure 3B and C). Importantly, although in the latter strain tafrq mRNA levels were not boosted dramatically, they were statistically higher compared to WT (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig3-v2.jpg)
+
+**Figure 3.:** TaWT, Δblr1, Δtafrq, and OE::tafrq strains were grown in potato dextrose agar (PDA) at 25°C. (A) Sporulation was observed at 72 hr in LL, or after injury (mechanical damage) in DD conditions, as specified in ‘Materials and methods.’ (B) Conidia produced after 3 and 7 days of growth in LL. (C) Conidia production of Trichoderma’s strains after receiving a 1 and 60 min light pulse (LP). LP was applied to cultures previously grown for 36 hr in DD. (D) Conidia produced after mechanical damage. Strains were grown for 36 hr in DD, and injury was performed with a scalpel using a grid as reference. Later, damaged strains were kept in DD for 48 hr to allow conidia collection. Errors bars represent the mean ± SD of three biologicals for (B) and four for (C) replicates for each experiment. Different letters indicate significant differences based on Tukey’s test (p<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic representation of the tafrq locus and the replacement with the hph cassette by homologous recombination. Horizontal arrows show primers used for diagnostic PCRs, indicating their relative position and orientation. XhoI restriction sites used for Southern blot (shown in C) are indicated. (B) Diagnostic PCR showing correct in locus integration of the hph replacement cassette. The table shows the expected PCR amplicon size of each depicted lane. (C) Southern blot analysis showing single-copy integration of the replacement cassette (shown in A). The hph amplicon was used as a probe. A 3378 bp signal was expected in Δtafrq as indicated in (A).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Higher levels of frq RNA in OE::tafrq compared to WT strain are observed in LL culture conditions (A) and DD (B) for 48 hr. Mean and SD are plotted. Mann–Whitney test was performed between WT and OE::tafrq. Significant differences are indicated with asterisks (**p<0.05). Cytrate lyase and DNApolB genes were used as normalization factor (NF).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representation of the Δtafrq locus and the complementation with tafrq using the bleoR cassette by homologous recombination. Arrows (horizontal) show primers used for diagnostic PCRs, indicating their relative position and orientation. (B–E) Diagnostic PCR showing tafrq (B), hph (C), and bleoR (D) absence/presence in the different strains used (WT, Δtafrq; and two independent ΔtafrqC1 and ΔtafrqC2 complemented strains) and the upstream integration of tafrq gene (E).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Conidia produced by TaWT, Δtafrq, ΔtafrqC1, and ΔtafrqC2 strains after mechanical damage. Errors bars represent the mean ± SEM of two biological replicates with five replicates each. Different letters indicate significant differences based on Tukey’s test (p<0.05).
+
 We also evaluated whether the injury-response mechanism that drives conidia formation in T. atroviride upon physical damage was affected in the mutant strains (Hernández-Oñate et al., 2012). We injured the WT and the aforementioned clock mutant strains in DD, including Δblr1, employing a sterile scalpel and quantified conidia formation 48 hr afterward. Interestingly, Δblr1 showed a 51% average reduction in conidia production compared to the TaWT strain, which had not been previously reported. In contrast, while the OE::tafrq showed no significant differences compared to TaWT, Δtafrq exhibited almost a 100-fold reduction in injure-triggered conidiation (Figure 3A and D). As expected, we were able to restore the injury-response conidiation when complementing Δtafrq with tafrq back at its endogenous locus (ΔtafrqC) (Figure 3—figure supplements 3 and 4). Importantly, the results obtained in LL suggest that TaFRQ has an underlying role in promoting conidiation, providing evidence of an additional role for TaFRQ in T. atroviride, besides its expected main function as a negative clock element. A similar conclusion can be drawn about response to an acute stress stimulus, such as mechanical damage, since even though this was done in DD conditions, sporulation per se does not appear to be under clock control in Trichoderma.
 
-## Light and core clock components regulate the interaction between T. atroviride and B. cinerea
+### Light and core clock components regulate the interaction between T. atroviride and B. cinerea
 
 To evaluate the role of T. atroviride core clock components in its mycoparasitic capabilities, we performed confrontations with B. cinerea, utilizing the corresponding clock mutant strains lacking wc-1 or frq homologs (Canessa et al., 2013; Hevia et al., 2015). Experiments were first conducted under LL and DD conditions, evaluating the mycoparasitic behavior of T. atroviride as its ability to overgrow B. cinerea, as shown in Figure 4A. Initially, we performed confrontations on GYEC and GYEC+ peas medium, but as both fungi grew as white mycelium we could not differentiate their respective growth front, making the observation of the overgrowth phenotype difficult. Therefore, we decided to perform the confrontations on PDA. Importantly, before performing the confrontation experiments, we first analyzed whether the growth of both fungi was altered under the tested culture conditions or whether, when growing on the same Petri dish before the physical encounter, there were growth delays that could affect data interpretation. Results showed that growth rates of each strain (alone or interacting) were not affected in any of these scenarios (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of the experimental design (left) and confrontation assay (right). (B) After 7 days of cultivation in LL and DD conditions in potato dextrose agar (PDA) culture media, T. atroviride overgrowth was evaluated. Cultures were kept at 20°C during 7 days under the corresponding light regimes. Red dotted lines indicate the edge of Trichoderma over B. cinerea. A representative image of three biological replicates is shown. (C) Percentage of B. cinerea colony area covered by Trichoderma (percentage of overgrowth). Error bars represent the means ± SD of three biological replicates. Different letters indicate significant differences based on Tukey’s test (p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** We evaluated if T. atroviride (‘T’) or B. cinerea’s (‘B’) growth was altered in the experimental conditions used in confrontation assays (PDA, 20°C in LL). The red line denotes the measured colony radio. TaWT and B05.10 strains were inoculated as indicated in panel (A). The radio of each colony was measured after 2 days of growth as depicted in (A). Data showed no statistical differences in growth radio at 2 days post-inoculation (dpi) (Kruska–Wallis, P<0.05.), as shown in (B).
 
 In the TaWT–B05.10 interaction, T. atroviride displayed higher overgrowth over B. cinerea in DD than in LL (50% vs. 20%, respectively). Increased overgrowth in DD (90%) versus LL was also seen for Δblr1 against B05.10, being the most aggressive of the tested T. atroviride strains. At the same time, Δtafrq displayed similar behavior to TaWT in LL and DD against B05.10 (Figure 4B and C, Supplementary file 3). The confrontation of T. atroviride strains with B. cinerea Δbcfrq1 was similar to what was observed for B05.10 in LL and DD, except for the Δtafrq–Δbcfrq1 interaction in LL, where no overgrowth was observed. Finally, under LL, Botrytis Δbcwcl1 was easily overgrown by TaWT but not by the Δblr1 or Δtafrq Trichoderma mutants. However, in the absence of light, Δbcwcl1 was easily overgrown by ~80% by all Trichoderma strains (Figure 4B and C, Supplementary file 3). Overall, these results suggest that constant light inhibits the overgrowth capacity of T. atroviride irrespective of the presence of blr1, or that mycoparasitism is enhanced in darkness. Nevertheless, whether other photoreceptors are involved in this response remains to be investigated. Core clock components also modulate the outcome of these mycoparasitic interactions, suggesting an inhibitory role of BLR1, as its absence enhances overgrowth in DD against all B. cinerea strains.
 
 In contrast, tafrq does not seem to have a relevant role in the outcome of the T. atroviride interaction with B05.10, albeit the mutant has a weaker mycoparasitic capacity when interacting in LL with Δbcwcl1 or Δbcfrq1. Similarly, the absence of B. cinerea bcfrq1 does not impact the interaction with TaWT. Still, the lack of bcwcl1 increases the susceptibility of B. cinerea to T. atroviride, suggesting a diminished capacity to respond to this biotic stress in the mutant.
 
-## Differential overgrowth capacity of T. atroviride against B. cinerea in light/dark cycles
+### Differential overgrowth capacity of T. atroviride against B. cinerea in light/dark cycles
 
 To fully understand the role of core clock components in the interaction between T. atroviride against B. cinerea, we performed confrontations under circadian paradigm assays in LD 12:12 hr cycles. For this, strains were inoculated at ‘dawn’ when lights are turned on in the LD cycle (AM) or inoculated at ‘dusk’ before lights are turned off in the DL (PM) regime (Figure 5A). Confrontations were kept in their respective photoperiod cycles for 7 days, after which the degree of Trichoderma overgrowth over B. cinerea was evaluated for different strain combinations.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig5-v2.jpg)
 
-**Figure 5.:** B. cinerea and T. atroviride have a role in the differential mycoparasitic interaction observed under LD cycles.(A) Schematic representation of the experimental design (left) and confrontation assays (right) in which fungal strains were inoculated in potato dextrose agar (PDA) at dawn, that is, at lights on in the light:dark (LD or AM) cycle or at lights off in the dark:light cycle (DL or PM regime). In both cases, cultures were kept at 20°C during 7 days under the corresponding light regimes. (B) After 7 days of cultivation, overgrowth by T. atroviride was evaluated: red dotted lines indicate the edge of the latter over B. cinerea. A representative image of three biological replicates is shown. (C) Percentage of B. cinerea’s colony area covered by Trichoderma (percentage of overgrowth). Error bars represent the means ± SD of three biological replicates. Different letters indicate significant differences based on Tukey’s test (p<0.05).
+**Figure 5.:** (A) Schematic representation of the experimental design (left) and confrontation assays (right) in which fungal strains were inoculated in potato dextrose agar (PDA) at dawn, that is, at lights on in the light:dark (LD or AM) cycle or at lights off in the dark:light cycle (DL or PM regime). In both cases, cultures were kept at 20°C during 7 days under the corresponding light regimes. (B) After 7 days of cultivation, overgrowth by T. atroviride was evaluated: red dotted lines indicate the edge of the latter over B. cinerea. A representative image of three biological replicates is shown. (C) Percentage of B. cinerea’s colony area covered by Trichoderma (percentage of overgrowth). Error bars represent the means ± SD of three biological replicates. Different letters indicate significant differences based on Tukey’s test (p<0.05).
 
 In TaWT–B05.10 interactions under LD cycles, Trichoderma’s overgrowth was enhanced in plates inoculated at dawn (AM) rather than at dusk (PM) (Figure 5B and C, Supplementary file 3). The Δtafrq–B05.10 interactions behaved similarly to TaWT-B05.10, suggesting that TaFRQ does not cause the differential mycoparasitic behavior seen in LD (enhanced capacity under the AM inoculation protocol). In contrast, Δblr1 was capable of overgrowing WT Botrytis to the same extent in both AM and PM inoculation protocols, suggesting that indeed, BRL1 has a role in the differential outcome of interactions performed in LD cycles (Figure 5B and C, Supplementary file 3).
 
 Centering the analysis on B. cinerea, Δbcfrq1 was overgrown by all Trichoderma strains to the same extent in both cycles (AM or PM), revealing the disappearance of the clock-related phenotypes observed for B05.10. Thus, frq mutants in Trichoderma and B. cinerea display major differences regarding their behavior. While the absence of TaFRQ does not alter the time-of-the-day difference in mycoparasitic interactions (against B05.10 and Δbcwcl1 strains), the lack of BcFRQ1 does, suggesting a major role for the latter in the outcome of the daily interactions. Regarding Δbcwcl1, it mimics the differences seen for B05.10 but is more aggressively overgrown by Trichoderma in the AM protocol. In total, these results show that both core clock components (WC-1 and FRQ) and the time of the day in which the interaction is staged affects the outcome of the fungal-fungal interactions, where the B. cinerea element (BcFRQ1), but not the T. atroviride TaFRQ element, appears as critical.
 
-## Secondary metabolism is affected in clock mutant strains of T. atroviride
+### Secondary metabolism is affected in clock mutant strains of T. atroviride
 
 Trichoderma species are prolific producers of SM that have been implicated in the effectiveness of mycoparasitism against pathogens (Reino et al., 2008). To identify whether the putative core clock components could affect SM production, we carried out a metabolic fingerprinting to obtain an overview of global SM produced by TaWT and core clock component mutant strains grown in PDA under LL, DD, and after a 4 hr LP.
 
 Extracts of diffusible compounds were analyzed by direct injection to mass spectrometry. The production of 230 compounds was statistically different among strains and conditions (ANOVA p<0.05). The overview of diffusible compounds produced by TaWT, Δblr1, Δtafrq, and OE::tafrq in DD, LL, and LP (Figure 6A) indicates that production of diffusible compounds is particularly enhanced in Δtafrq in all conditions compared to TaWT, Δblr1, and OE::tafrq. In TaWT, 103 and 15 molecules showed a twofold induction in LL and LP compared to DD, respectively, which suggests that light induces the production of diffusible compounds in T. atroviride. A comparison of diffusible compound levels between TaWT and Δblr1 showed that 129 molecules were at least twofold reduced in LL in the mutant strain. Many compounds were induced after an LP and a few others in DD (Table 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig6-v2.jpg)
+
+**Figure 6.:** A global overview of secondary metabolites produced by TaWT and clock mutant strains grown in LL, DD, and after a light pulse (LP) grown in potato dextrose agar (PDA) at 20°C. (A) Diffusible compounds are augmented in Δtafrq. (B) Normalized intensity values for two particular diffusible compounds are shown: 1679.08 m/z is light-induced in TaWT and light-repressed in Δblr1 and Δtafrq; 381.77 m/z showed enhanced production in Δtafrq and OE::tafrq in all culture conditions. (C) Volatile organic compounds (VOCs) are induced by light in Δblr1 and Δtafrq. (D) Normalized intensity values for two VOCs: 6-PP (167.07 m/z) and 371.03 m/z. (E) For circadian VOCs production, TaWT and Δtafrq strains were grown in GYEC+ peas at 20°C during 3 days in LD 12:12 hr cycles and transferred to DD for circadian metabolic profiles. Samples were taken every 4 hr during 48 hr after the transition to DD. Circadian levels of ions 148.97 m/z and 81.59 m/z in TaWT, but arrhythmic in Δtafrq. Compounds 255.99 m/z and 110.94 m/z oscillate in neither strain.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71358/elife-71358-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** VOCs were measured using low-temperature plasma ionization MS (LTP-MS). TaWT and Δtafrq strains were inoculated in GYEC+ peas media, entrained for 3 days in LD cycles, and then transferred to DD. Samples were taken every 4 hr for 48 hr (N = 6). Period and rhythmicity were calculated in the BioDare platform (see Supplementary file 4) described in the main text. A trend line is depicted in red.
+
+**Table 1.**
+ Induced and repressed diffusible and volatile organic compounds (VOCs) in each mutant strain compared to TaWT in constant darkness (DD), constant light (LL), and light pulse (LP).Table 1—source data 1.Fold changes of each comparison pair (Δblr1/TaWT, Δtafrq/TaWT and OE::tafrq/TaWT) can be found in a single individual sheet in the provided .xlsx file.The table shows m/z value, fold change, and p-value for both diffusible and volatile organic compounds (VOCs) compounds produced in the three lighting conditions (LL, DD, and LP).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th colspan="6">Diffusibles*</th>
+      <th colspan="6">VOCs†</th>
+    </tr>
+    <tr>
+      <th colspan="2">DD</th>
+      <th colspan="2">LL</th>
+      <th colspan="2">LP</th>
+      <th colspan="2">DD</th>
+      <th colspan="2">LL</th>
+      <th colspan="2">LP</th>
+    </tr>
+    <tr>
+      <th>I</th>
+      <th>R</th>
+      <th>I</th>
+      <th>R</th>
+      <th>I</th>
+      <th>R</th>
+      <th>I</th>
+      <th>R</th>
+      <th>I</th>
+      <th>R</th>
+      <th>I</th>
+      <th>R</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Δblr1/TaWT</td>
+      <td>26</td>
+      <td>3</td>
+      <td>-</td>
+      <td>129</td>
+      <td>66</td>
+      <td>-</td>
+      <td>-</td>
+      <td>5</td>
+      <td>17</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Δtafrq/TaWT</td>
+      <td>67</td>
+      <td>-</td>
+      <td>137</td>
+      <td>2</td>
+      <td>218</td>
+      <td>-</td>
+      <td>23</td>
+      <td>13</td>
+      <td>16</td>
+      <td>2</td>
+      <td>-</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>OE::tafrq/TaWT</td>
+      <td>34</td>
+      <td>-</td>
+      <td>38</td>
+      <td>-</td>
+      <td>128</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>10</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data can be found in Table 1—source data 1.*Diffusible compounds with at least 2.0-fold change.†Volatile organic compounds with at least 1.5-fold change.I=induced, R=repressed._
 
 Among the diffusible compounds, the molecule 1679.08 m/z had an interesting behavior between strains and light conditions. In TaWT, this molecule showed the greatest fold induction in LL and LP compared to DD. On the contrary, in Δblr1, its production was reduced in LL, but it was high in DD compared to TaWT (Figure 6B). This suggests that BLR1 is necessary for light induction of several diffusible compounds in TaWT, including 1679.08 m/z, as their production is severely dampened in the Δblr1 mutant in LL. However, it seems that the production of a subset of diffusible molecules is either repressed in DD by BLR1 and/or additional photoreceptors are involved in light induction of diffusible molecules after an LP in Δblr1.
 
@@ -139,27 +316,27 @@ On the other hand, under LD cycles, the loss of BcWCL1 does not considerably aff
 
 ## Materials and methods
 
-## Fungal strains and culture conditions
+### Fungal strains and culture conditions
 
 T. atroviride IMI 206040, initially isolated from a plum tree of the Czar variety in an orchard in Urshult near Växjö in southern Sweden (EFSA European Food Safety, 2015), was used as wild-type strain (TaWT) and, along with Δblr1, described by Casas-Flores et al., 2004, were kindly provided by Dr. Alfredo Herrera-Estrella. Strains were maintained in potato dextrose agar (PDA) in constant light at 25°C. B. cinerea B05.10 Pers. Fr. [Botryotinia fuckeliana (de Bary) Whetzel] was initially isolated from Vitis vinifera (Germany) and was provided by the Tudzinsky laboratory (WWU, Germany). B. cinerea clock mutant strains Δbcwcl1 and Δbcfrq1 used in this study were described earlier (Canessa et al., 2013; Hevia et al., 2015). B. cinerea strains were cultivated in PDA at 20°C in LD 12:12 hr cycles. All fungal strains were grown in Percival incubators, equipped with cold white-light fluorescent tubes (light intensity up to 100 μM/m2s; wavelength 400–720 nm). The incubators were housed inside a darkroom equipped with safety-red lights to allow proper circadian experiments.
 
-## Generation of Δtafrq, ΔtafrqC, and OE::tafrq mutant strains
+### Generation of Δtafrq, ΔtafrqC, and OE::tafrq mutant strains
 
 The tafrq ORF was replaced by the hygromycin resistance cassette (hph), as described (Canessa et al., 2013; Figure 3—figure supplement 1, Supplementary file 5). To generate the complemented Δtafrq strain (ΔtafrqC), we fused the tafrq ORF with a fleomycin resistance cassette (bleoR) and directed it back to its endogenous locus by homologous recombination (Figure 3—figure supplement 3, Supplementary file 5). To overexpress tafrq, we placed tafrq under control of the T. atroviride actin promoter (1210 bp) with hph as a selection marker. All constructions were assembled using yeast chromosomal recombination (Oldenburg et al., 1997). The OE::tafrq construct was integrated by homologous recombination into the intergenic blu17 region, previously demonstrated not to affect mycoparasitism behavior (Supplementary file 6; Balcazar-Lopez et al., 2016).
 
-## Generation of luciferase reporter strains
+### Generation of luciferase reporter strains
 
 The TaFRQLUC strains were designed and generated, as previously reported by Larrondo et al., 2012. Briefly, the tafrq gene was fused by homologous recombination at its endogenous locus to an N. crassa codon-optimized luciferase gene (luc), and hph used as a selection marker (Figure 1—figure supplement 1, Supplementary file 7). On the other hand, the transcriptional reporter strain, termed ncc-box-luc, was designed as reported by Larrondo et al., 2015. We cloned a 505 bp sequence containing the c-box sequence from the N. crassa frq promoter to control luc expression, and the construct was integrated into the intergenic region of blu17 (Supplementary file 8; Balcazar-Lopez et al., 2016). To develop transcriptional reporters of hypothetical clock-controlled genes (ccg) in T. atroviride, we used a promoter region of different genes as follows: 768 bp from TRIATDRAF_77441, homologous to ccg-9 (trehalose synthase in N. crassa), 1159 bp from TRIATDRAF_297741, homologous to glyceraldehyde 3-phosphate dehydrogenase of N. crassa, 485 bp from TRIATDRAF_298583 homologous to superoxide dismutase of N. crassa and 1000 bp from TRIATDRAFT_291013 homologous to con-10. The promoters were used to control luc expression, and the constructs were integrated into the intergenic blu17 region (Supplementary file 8; Balcazar-Lopez et al., 2016).
 
-## Heterologous expression of tafrq in N. crassa Δfrq strain
+### Heterologous expression of tafrq in N. crassa Δfrq strain
 
 A construct containing a 5′ recombination flank (1000 bp), the native 5′UTR from N. crassa frq, the tafrq ORF followed by a V5-His6 tag, the native 3′UTR from frq, the bar cassette for resistance selection (Larrondo et al., 2009), and a 3′ recombination flank (1000 bp) was constructed using yeast recombination cloning (Oldenburg et al., 1997). The resulting construct was used to transform a N. crassa Δfrq strain containing a his-3::frqcbox-luc reporter (Figure 2—figure supplement 2). To obtain homokaryotic isolates, strains complemented with tafrq were crossed to a WT strain containing Neurospora frq (not associated with any marker or tag) and lacking a reporter. Ignite-resistant, luc+ progeny was selected out of the cross, and the targeted integration of tafrq (and absence of Neurospora frq) was confirmed by PCR (Supplementary file 9). Δncfrq:tafrq strains were assessed for conidial banding using race tubes grown in two different conditions, DD conditions for 8 days and LD (12:12 hr) for 5 days followed by DD for 3 days, alongside positive and negative controls, as described in Baker et al., 2012.
 
-## Transformation of T. atroviride
+### Transformation of T. atroviride
 
 PEG-mediated protoplast transformation was performed as described by Casas-Flores et al., 2004 and Herrera-Estrella et al., 1990. All transformants were subjected to 3–5 rounds of single-spore isolation, and gene replacement and integration events were verified using Southern blot using the DIG Easy Hyb Hybridization solution (Roche) following the manufacturer’s instructions. The hph gene was used as a probe (Figure 1—figure supplement 1, Figure 3—figure supplement 1).
 
-## Assessment of luminescence in vivo
+### Assessment of luminescence in vivo
 
 For evaluating rhythmic levels of bioluminescence produced by the different luciferase reporter strains in T. atroviride, spores from 7-day-old colonies were resuspended in sterile water, filtrated using sterile glass wool, and kept for 48 hr at 4°C. Then, 30 µL of spore suspension were inoculated in individual wells of 96-well plates containing different culture media (Supplementary file 1). Luciferin was added to each media to a final concentration of 2.5 mM. The reporter strains received LD 12:12 entrainment at 20, 22, 25, and 28°C. Luminescence traces were captured using a PIXIS 1024B CCD camera (Princeton Instruments) under constant darkness (DD) conditions at the indicated temperatures. For LL (constant light) resetting, strains were grown 72 hr in continuous light at 25°C before transferring to DD for bioluminescence measurements. For the 4°C pulses, strains were incubated for 48 hr in LL at 25°C and then moved to 4°C for 6 hr in complete darkness before measurements. For the LP experiments, strains were incubated for 48 hr in LL, transferred to DD for 24 hr, and then received a 20 min LP at 25°C, and transferred back to DD. Bioluminescence was acquired using the WinView software (version 2.5.23.0) and subsequently analyzed using ImageJ employing a custom-made macro. As indicated therein, we present raw or normalized data (align to mean) in different graphs. Circadian parameters, such as period and phase, were calculated using FFT-NLLS, which fits a sine wave to the data to estimate period, phase, and amplitude using the BioDare online platform (Zielinski et al., 2014).
 
@@ -169,7 +346,7 @@ For the evaluation of N. crassa luciferase reporter strains, spores from 5-day-o
 
 Luciferase signals were acquired with a PIXIS 1024B camera (Princeton Instruments) and quantified with a customized macro developed for the ImageJ software; luminescent signals were recorded for 5 min, three times per hour for 5 days. Circadian parameters, such as period and phase, were calculated using fast Fourier transform nonlinear least squaresFFT-NLS, which fits a sine wave to the data to estimate period, phase, and amplitude using the BioDare 2.0 online platform (biodare2.ed.ac.uk; Zielinski et al., 2014). For N. crassa, linear detrending was performed before the period estimation.
 
-## RNA extraction and reverse transcription
+### RNA extraction and reverse transcription
 
 For overexpression analysis of tafrq in T. atroviride, strains were grown in PDA cellophane-covered plates for 48 hr in LL or DD at 25°C. Approximately 10 mg of tissue was collected from each plate and snap-frozen in liquid nitrogen. Frozen mycelia were ground to powder and total RNA was extracted using TRIzol. Total RNA quantity and quality were determined using a NanoDrop spectrophotometer. Three independent biological replicates for each condition were analyzed.
 
@@ -177,7 +354,7 @@ Prior to cDNA synthesis, 3 μg of total RNA was treated with RQ1 RNase-free DNas
 
 Assay efficiency was assessed using serial dilutions (1/10) of a qPCR product (one product for each set of primers). Each dilution was used as a DNA template, and a standard qPCR reaction was performed. Primer efficiency was determined using the qPCR Software CFX Maestro (Bio-Rad). Specificity was evaluated by both melt curve and agarose gel analyses. All qPCR reactions were run in the CFX Real-Time PCR – Bio-Rad utilizing SensiMix SYBR Hi-ROX kit and primers for tafrq as well as normalizing genes (Supplementary file 10).
 
-## Protein extracts and immunoblots
+### Protein extracts and immunoblots
 
 To detect TaFRQLUC oscillations at protein levels, TaFRQLUC reporter strains were subjected to a time-course experiment in GYEC+ peas culture media, for which samples were taken every 4 hr for 52 hr, following a time-course protocol similar to the ones in Neurospora (Larrondo et al., 2015), except that T. atroviride cultures were kept in DD, and reset by a strong LP to mimic an LL to DD transition. Proteins were extracted as described by Kilani et al., 2020. Protein concentration was determined by the Bradford method, using the Bio-Rad Protein Assay (Bio-Rad Laboratories, Inc, CA). For immunoblot analyses, total protein extracts (50 μg of protein per lane) were separated in 4–15% Mini-PROTEAN TGX Precast gels (Bio-Rad #456-1086) and transferred to PVDF membranes (Bio-Rad) using the Trans-Blot Turbo RTA Transfer Kit (Bio-Rad #170-4272). The membranes were blocked overnight in phosphate-buffered saline solution (PBS-T: 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4, and 0.1% Tween-20) with 5% non-fat dried milk at 4°C. To detect FRQLUC protein, a luciferase antibody C-12 (sc-74548, Santa Cruz Biotechnology Inc, TX) was used at a 1:250 dilution and as secondary antibody Goat Anti-Mouse IgG(H+L)-HRP conjugate at a 1:5000 dilution.
 
@@ -185,21 +362,21 @@ For a mini time course of TaFRQ expression in N. crassa, 30 μL of resuspended s
 
 For Western blot analysis, between 40 and 50 μg of total protein was loaded per lane after determination of concentration by Bradford assay (Bradford, 1976). Anti-V5 antibody (Invitrogen) was used at 1:5000 and a as secondary one we utilized Anti-Mouse IgG(H+L)-HRP (Thermo Fisher). SuperSignal West Pico ECL (Pierce Chemical, Rockford, IL) was used for signal development. For dephosphorylation reactions, lambda protein phosphatase (New England Biolabs, Cat# P0753L) was used according to the manufacturer’s instructions.
 
-## Confrontation assay between B. cinerea and T. atroviride
+### Confrontation assay between B. cinerea and T. atroviride
 
 To evaluate the role of circadian regulation on B. cinerea and T. atroviride interactions, confrontations assays were conducted as a modified version of Bell, 1982. Overgrowth was calculated as the percentage of the B. cinerea colony that was covered by Trichoderma. TaWT and clock mutant strains of both fungi were grown in PDA at 20°C for B. cinerea and PDA and GYEC at 25°C for T. atroviride, during 3 days either in constant light (LL), darkness (DD) (Figure 4A), or in opposite LD cycles (LD AM and LD PM) (Figure 5A). Mycelial plugs of each strain were inoculated on opposite sides of 90 mm × 15 mm Petri dishes, 1 cm from the edge, and kept at 20°C in LL, DD, and LD conditions (as indicated in each case). Digital images were acquired after 7 days of interaction. The analyses of the photos were performed using the ImageJ software, employing an external calibration scale.
 
-## Conidiation response assays
+### Conidiation response assays
 
 For light-induced conidiation, we cultivated Trichoderma strains in PDA at 25°C in LL for 7 days and collected and quantified conidia at 3 and 7 days of growth. For LP conidiation assays, strains were grown in PDA at 25°C in DD for 36 hr. White LPs of 1 or 60 min were given, and cultures were maintained in DD for an additional 48 hr, after which conidia were quantified. For injury-induced conidiation, strains were grown in PDA at 25°C in DD for 32–36 hr and damaged with a scalpel in DD using a red safety light and incubated for an additional 48 hr in the dark. Subsequently, as in previous cases, conidia were collected in sterile water and quantified by direct counting in a Neubauer chamber. For statistical analyses, ANOVA was used, and significance was determined using Tukey’s test with a threshold of p<0.05.
 
-## Secondary metabolic fingerprinting
+### Secondary metabolic fingerprinting
 
 The effect of core clock components and light in Trichoderma SM profiles was determined by growing strains for 48 hr in PDA at 25°C in LL or DD. A group of dark-growing strains received a 4 hr LP. TaWT and Δtafrq strains were grown in GYEC with 0.5% peas during 3 days in LD 12:12 hr cycles and transferred to DD for circadian metabolic profiles. Samples were taken every 4 hr during 48 hr after the transition to DD.
 
 Diffusible compounds analyses were carried out using direct liquid injection mass spectrometry (DLI-MS). Mycelia of the strains grown in PDA in LL, DD, and LP conditions, were harvested and extracted with 1 mL of a mix of high-performance liquid chromatography (HPLC)-grade ethyl acetate, methanol, and dichloromethane 3:2:1 with 1% formic acid. The samples were sonicated for 20 min at room temperature at 40 kHz and centrifuged at 15,000 rpm for 20 min. The supernatant was transferred to a clean Eppendorf tube, and the solvent was evaporated at room temperature. Extracts were weighed and resuspended in methanol to 0.05 mg/mL. A 1/10 dilution was injected in the DLI-MS in positive ESI mode using an LCQ Fleet ion trap mass spectrometer. The spectra were acquired in the positive mode in an m/z range of 500–2000. For VOC analysis, the LTP-MS device was used as described by Martínez-Jarquín et al., 2016 and Martínez-Jarquín and Winkler, 2013. The Petri dish was placed under the plasma. The spectra were acquired in the positive mode in an m/z range of 50–500. In both analyses (DLI and LTP MS), six biological replicates were used for each condition.
 
-## Data analysis
+### Data analysis
 
 The mass spectra raw data were converted to mzML open format with ProteoWizard (Kessner et al., 2008) and analyzed in the R statistical programming language using the MALDIquant package (Gibb and Strimmer, 2012). All spectra were aligned and corrected for compiling a data matrix. For LL, DD, and LP culture conditions, data were filtered using interquartile range (IQR) and scaled using autoscaling (mean-centered and divided by each variable’s standard deviation). Significant differences in mean abundance among metabolites in different samples were assessed with ANOVA, and significance was determined using Tukey’s test with a threshold of p<0.05. A heatmap correlation matrix was built to visualize metabolic variations in all analyzed strains and experimental conditions with statistically significant metabolites (ANOVA). The Euclidean distance and Ward algorithm were used for clustering in the MetaboAnalyst platform (Pang et al., 2020). Fold change and t-test were calculated in pairs using the mean value of raw data for each comparison. A 2-fold change cutoff was established for diffusible and 1.5-fold change for volatile compounds.
 

@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 University of California, Berkeley Berkeley United States
+1. University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 
 † Corresponding author
 
 ## Abstract
 
-Consumption of food and water is tightly regulated by the nervous system to maintain internal nutrient homeostasis. Although generally considered independently, interactions between hunger and thirst drives are important to coordinate competing needs. In Drosophila , four neurons called the interoceptive subesophageal zone neurons (ISNs) respond to intrinsic hunger and thirst signals to oppositely regulate sucrose and water ingestion. Here, we investigate the neural circuit downstream of the ISNs to examine how ingestion is regulated based on internal needs. Utilizing the recently available fly brain connectome, we find that the ISNs synapse with a novel cell-type bilateral T-shaped neuron (BiT) that projects to neuroendocrine centers. In vivo neural manipulations revealed that BiT oppositely regulates sugar and water ingestion. Neuroendocrine cells downstream of ISNs include several peptide-releasing and peptide-sensing neurons, including insulin producing cells (IPCs), crustacean cardioactive peptide (CCAP) neurons, and CCHamide-2 receptor isoform RA (CCHa2R-RA) neurons. These neurons contribute differentially to ingestion of sugar and water, with IPCs and CCAP neurons oppositely regulating sugar and water ingestion, and CCHa2R-RA neurons modulating only water ingestion. Thus, the decision to consume sugar or water occurs via regulation of a broad peptidergic network that integrates internal signals of nutritional state to generate nutrient-specific ingestion.
+Consumption of food and water is tightly regulated by the nervous system to maintain internal nutrient homeostasis. Although generally considered independently, interactions between hunger and thirst drives are important to coordinate competing needs. In Drosophila, four neurons called the interoceptive subesophageal zone neurons (ISNs) respond to intrinsic hunger and thirst signals to oppositely regulate sucrose and water ingestion. Here, we investigate the neural circuit downstream of the ISNs to examine how ingestion is regulated based on internal needs. Utilizing the recently available fly brain connectome, we find that the ISNs synapse with a novel cell-type bilateral T-shaped neuron (BiT) that projects to neuroendocrine centers. In vivo neural manipulations revealed that BiT oppositely regulates sugar and water ingestion. Neuroendocrine cells downstream of ISNs include several peptide-releasing and peptide-sensing neurons, including insulin producing cells (IPCs), crustacean cardioactive peptide (CCAP) neurons, and CCHamide-2 receptor isoform RA (CCHa2R-RA) neurons. These neurons contribute differentially to ingestion of sugar and water, with IPCs and CCAP neurons oppositely regulating sugar and water ingestion, and CCHa2R-RA neurons modulating only water ingestion. Thus, the decision to consume sugar or water occurs via regulation of a broad peptidergic network that integrates internal signals of nutritional state to generate nutrient-specific ingestion.
 
 ## Introduction
 
@@ -32,13 +32,21 @@ To investigate how the ISNs transform internal nutrient detection into changes i
 
 ## Results
 
-## The ISNs are peptidergic neurons that release dILP3
+### The ISNs are peptidergic neurons that release dILP3
 
 To examine how the ISNs reciprocally regulate sugar and water ingestion, we aimed to identify the neural circuit downstream of the ISNs. We first sought to identify which neurotransmitter the ISNs use to communicate with downstream neurons. We expressed RNAi against enzymes involved in neurotransmitter synthesis, vesicular transporters, and neuropeptides in the ISNs and monitored water ingestion in water-deprived flies (Figure 1A). As decreasing activity of the ISNs increases water ingestion (Jourjine et al., 2016), we anticipated that an RNAi against the ISN neurotransmitter would decrease neurotransmission and increase water ingestion. Interestingly, in an RNAi screen of 18 common neurotransmitters and neuropeptides, only suppression of Drosophila insulin-like peptide 3 (dILP3) in the ISNs altered water ingestion (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig1-v1.jpg)
+
+**Figure 1.:** (A) Temporal consumption assay screen for water ingestion using RNAi targeting different neurotransmitter pathways. UAS-RNAi+ or - ISN-Gal4. RNAi against: nSynaptobrevin (nSyb), tryptophan hydroxylase (TRH), choline acetyltransferase (ChAT), tyrosine beta-hydroxylase (TBH), histamine decarboxylase (HDC), vesicular monoamine transporter (VMAT), glutamic acid decarboxylase 1 (GAD1), dopa decarboxylase (DDC), Drosophila vesicular glutamate transporter (DVGlut), short neuropeptide F (sNPF), vesicular GABA transporter (VGAT), tyrosine decarboxylase 2 (TDC2), Drosophila insulin-like peptide 1 (dILP1), Drosophila insulin-like peptide 2 (dILP2), Drosophila insulin-like peptide 3 (dILP3), Drosophila insulin-like peptide 4 (dILP4), Drosophila insulin-like peptide 5 (dILP5), Drosophila insulin-like peptide 6 (dILP6), Drosophila insulin-like peptide 7 (dILP7). Represented are the mean, and the 10–90 percentile; data was analyzed using Kruskal-Wallis test, followed by multiple comparisons against the RNAi control; p-values were adjusted using false discovery rate. n=8–39 animals/genotype except nSyb positive control (70–72). (B) Temporal consumption assay for 1 M sucrose or water using RNAi targeting dILP3 or amontillado in ISNs. Sucrose assay: Kruskal-Wallis test followed by Dunn’s multiple comparison tests against ISN control and respective RNAi control. Water assay: ANOVA, Šídák’s multiple comparison test to ISN control and respective RNAi control. n=48–52 animals/genotype. (C) ISNs reconstruction from full adult fly brain (FAFB) volume. (D) Light microscopy image of ISN-Gal4 registered to JFRC2010. (E) ISN postsynaptic neurons based on synapse predictions using FAFB volume (Zheng et al., 2018) and connectome annotation versioning engine (CAVE, Buhmann et al., 2021; Ida et al., 2012). Left: 10 postsynaptic neurons, right: postsynaptic neurons bilateral T-shaped neuron (BiT), Cowboy, Handshake, and DSOG1. *p<0.05, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expression of trans-Tango ligand in the ISNs (green) and postsynaptic partners (PSPs) (magenta). nc82 staining in blue. (B) Distribution of synaptic output from the ISNs divided by cell class or brain region. Total of 4050 synapses from the ISNs and 104 postsynaptic partners. FLAa2 (46 neurons) receive 26.77% of all ISN output, Handshake (4 neurons) 17.9%, Cowboy (2 neurons) 11.4%, neurons located in the subesophageal zone (SEZ) (14 neurons) 9.04%, DSOG1 (4 neurons) 8.18%, neurons with neurites in the subesophageal zone and superior medial protocerebrum (SEZ and SMP) (11 neurons) 7.91%, bilateral T-shaped neuron (BiT) (1 neuron) 7.46%, ascending neurons (ANs) (10 neurons) 4.41%, descending neurons (DNs) (8 neurons) 3.07%, and ISNs (4 neurons) 0.5%. Only postsynaptic partners with five or more synapses were considered for this analysis. Reconstruction of FLAa2 neurons (C), Handshake neurons (D), Cowboy neurons (E), neurons innervating the SEZ (F), DSOG1 neurons (G), neurons innervating the SEZ and SMP (H), BiT (I), ascending neurons (J), descending neurons (K).
+
 To confirm that dILP3 functions in the ISNs and to test whether it is involved in the reciprocal regulation of water and sugar ingestion, we expressed RNAi against dILP3 in the ISNs and measured sugar or water ingestion in water sated or thirsty flies, respectively (Figure 1B). As an additional approach to reduce dILP3, we expressed an RNAi against a neuropeptide processing protease, amontillado (Siekhaus and Fuller, 1999), in the ISNs and tested sugar and water ingestion. We found that knockdown of either dILP3 or amontillado in the ISNs caused both a decrease in sugar ingestion and an increase in water ingestion (Figure 1B). This is the same phenotype that was previously reported in the ISNs upon loss of neurotransmission (Jourjine et al., 2016). These data argue that the ISNs are peptidergic neurons that release dILP3 and that one function of dILP3 is to promote sugar ingestion and inhibit water ingestion.
 
-## The ISNs synapse onto neurons that arborize in neuroendocrine and feeding centers
+### The ISNs synapse onto neurons that arborize in neuroendocrine and feeding centers
 
 Drosophila has one insulin-like receptor (dInR), a tyrosine kinase type receptor homologous to the human insulin receptor, which binds dILP3 and six of the additional Drosophila insulin-like peptides (Brogiolo et al., 2001; Claeys et al., 2002; Clancy et al., 2001; Fernandez et al., 1995; Grönke et al., 2010; Nässel and Vanden Broeck, 2016; Tatar et al., 2001). In adult flies, insulin signaling has been shown to regulate an array of physiological processes including metabolism, feeding, reproduction, and lifespan (Badisco et al., 2013; Biglou et al., 2021; Clancy et al., 2001; Nässel et al., 2013; Ohhara et al., 2018). Since dInR is ubiquitous and involved in many different processes (Chen et al., 1996; Garofalo, 2002; Veenstra et al., 2008), we could not leverage neurotransmitter receptor identity for postsynaptic neuron identification. We instead used the trans-Tango system (Talay et al., 2017), a genetic trans-synaptic tracer, to label neurons postsynaptic to the ISNs (Figure 1—figure supplement 1A). We expressed the trans-Tango ligand in the ISNs and its receptor panneurally. Binding of the ligand to its receptor induces GFP expression in the receptor-expressing cells and labels potential synaptic partners (Talay et al., 2017). trans-Tango labeling revealed numerous ISN postsynaptic arborizations in the subesophageal zone (SEZ), a brain region associated with taste processing and feeding circuits (Gordon and Scott, 2009; Scott et al., 2001; Wang et al., 2004), and along the median bundle to the superior medial protocerebrum (SMP), a neuroendocrine center (Hartenstein, 2006; Nässel and Zandawala, 2020; Figure 1—figure supplement 1A). However, as many ISN candidate postsynaptic neurons were labeled, the morphology of individual neurons was unclear.
 
@@ -46,9 +54,21 @@ To comprehensively examine the postsynaptic partners of the ISNs, we employed th
 
 Soon after we had reconstructed the four ISNs and several postsynaptic neurons in CATMAID, the FlyWire whole-brain connectome of more than 80,000 reconstructed EM neurons became available (Dorkenwald et al., 2022, flywire.ai). Since FlyWire uses the FAFB volume, we used the coordinates of the ISNs we traced in CATMAID to locate them in FlyWire. Additionally, we compared a pointcloud generated from a registered light microscopy image of ISN-Gal4 (Figure 1D) to the reconstructed ISNs in the FAFB volume (Figure 1C) to further confirm ISN identity. We identified neurons downstream of the ISNs (Figure 1E). We found that the ISNs have 104 predicted postsynaptic partners with five or more synapses, comprising nine morphological cell types (Supplementary file 1, Figure 1—figure supplement 1B–K). These include known cell types (Cowboy, DSOG1, FLAa2, FLAa3/Lgr3, and the ISNs; Lee et al., 2020; Pool et al., 2014; Sterne et al., 2021; Yu et al., 2013) as well as many uncharacterized cell types. The ISN predicted postsynaptic partners include projection neurons that project along the median bundle to the SMP (64 cells), local SEZ neurons (18 cells), ascending neurons with projections coming through the neck connective (10 cells), descending neurons with projections leaving through the neck connective (8 cells), and the ISNs themselves (4 cells). This connectivity is consistent with the connectivity determined by trans-Tango (Figure 1—figure supplement 1A). Overall, the ISN synaptic connectivity suggests that the hunger and thirst signals sensed by the ISNs are conveyed to a broad network, with the potential to coordinate feeding behaviors (SEZ neurons), nutrient status (SMP neuroendocrine centers), and movement or digestion (ascending and descending neurons). We note that as neuropeptides may diffuse over long distances (van den Pol, 2012), ISN dILP3 release may also influence activity of additional neurons that are not synaptically connected to the ISNs.
 
-## The ISN postsynaptic neuron BiT reciprocally regulates sugar and water ingestion
+### The ISN postsynaptic neuron BiT reciprocally regulates sugar and water ingestion
 
 As the majority of the ISN predicted postsynaptic partners project to the SMP, we examined whether ISN communication to this region regulates neuroendocrine cells and/or influences feeding behavior. As a first step, we focused on an uncharacterized neuron that receives the most synaptic input from the ISN per single cell. We named this neuron bilateral T-shaped neuron (BiT). BiT has its cell body in the SEZ and bilateral projections in the flange and SMP. It receives 7.4% of ISN synaptic output (301/4050 synapses) (Figure 1—figure supplement 1B and Supplementary file 1). In turn, the ISNs are the main synaptic input to BiT, comprising 17% of BiT’s synaptic input (301/1763 synapses). We generated a split-Gal4 line that labels BiT to study its function (Figure 2B). We screened over 20 AD-DBD combinations and found that VT002073-Gal4.AD and VT040568-Gal4.DBD specifically labeled BiT. We confirmed this by comparing a pointcloud generated from a registered light microscopy image of BiT split-Gal4 (Figure 2B) with the reconstructed BiT in the FAFB volume (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig2-v1.jpg)
+
+**Figure 2.:** (A) BiT neuron reconstruction from full adult fly brain (FAFB) dataset. (B) Light microscopy image of BiT split-Gal4. (C) Experimental setup for in vivo voltage imaging. We expressed the light-sensitive ion channel Chrimson in the ISNs and optogenetically stimulated them with 660 nm LED. We expressed the voltage sensor ArcLight in BiT and imaged it with a two-photon microscope. (D) ArcLight response of BiT soma to 2 s optogenetic stimulation of the ISNs or (E) 30 s optogenetic stimulation of the ISNs. Left: Scatter plot shows mean ± SEM of all flies imaged, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired Wilcoxon and paired t-test (Stim 2, p=0.07). n=7 flies. (F) Temporal consumption assay for 1 M sucrose or water during acute optogenetic activation of BiT with Chrimson. Ingestion time of females exposed to light normalized to dark controls of indicated genotype. Sucrose: Kruskal-Wallis test with Dunn’s multiple comparison test. Water: One-way ANOVA with Holm-Šídák multiple comparison test. n=44–54 animals/genotype. (G) Temporal consumption assay for 1 M sucrose or water using RNAi targeting nSyb in BiT. Kruskal-Wallis with Dunn’s multiple comparison test. n=45–57 animals/genotype. (H) Neural model for BiT coordination of sucrose and water intake. Dashed lines indicate inactive synapses. *p<0.05, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Genetic controls: we expressed the light-sensitive ion channel Chrimson without the interoceptive subesophageal zone neuron (ISN)-LexA driver and exposed the brains to 660 nm LED. We expressed the voltage sensor ArcLight in BiT and imaged it with a two-photon microscope. (A) ArcLight response of BiT soma to 2 s LED exposure or (B) 30 s LED exposure. Left: Scatter plot shows mean ± SEM of all flies imaged, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired Wilcoxon or paired t-test. n=7 flies.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Temporal consumption assay for 1 M sucrose or water during acute optogenetic activation of BiT with Chrimson. Represented are the mean, and the 10–90 percentile. Data was analyzed using Kruskal-Wallis test, followed by multiple comparisons against the no laser control. n=44–54 animals/genotype. ***p<0.001.
 
 To test whether the ISNs are functionally connected to BiT, we conducted in vivo functional imaging experiments in which we activated the ISNs while simultaneously monitoring BiT’s neural activity. We expressed the light activated cation channel Chrimson in the ISNs and the voltage sensor ArcLight in BiT (Figure 2C; Jin et al., 2012; Klapoetke et al., 2014). In one experiment, we applied two consecutive 2 s stimulations (Figure 2D) to test whether the response was reproducible. In another experiment, we applied a longer 30 s stimulation (Figure 2E) to ensure we captured the full response to ISN stimulation since dILPs can act over longer time scales (Sudhakar et al., 2020). In both experiments, we found that stimulating the ISNs increased ArcLight fluorescence in BiT, demonstrating that BiT became hyperpolarized (Figure 2D, E, Figure 2—figure supplement 1). Oscillation in BiT’s response during the 30 s stimulation (Figure 2E) is due to oscillations in the LED stimulation paradigm. Thus, increased activity in the ISNs inhibits BiT.
 
@@ -56,29 +76,65 @@ Next, we tested whether BiT modulates sugar or water ingestion. We measured tota
 
 These studies demonstrate that BiT activity reciprocally regulates sugar and water ingestion, similar to the ISNs. Hunger signals (i.e. AKH) activate the ISNs, causing the ISNs to inhibit BiT, which in turn increases sugar ingestion. On the other hand, thirst signals (i.e. high hemolymph osmolality) inhibit the ISNs, releasing ISN inhibition onto BiT, causing an increase in water ingestion (Figure 2H). Strikingly, although BiT is only one ISN downstream neuron, its activity increases and decreases are sufficient to coordinate both sugar and water ingestion, suggesting that it is a critical node in the ISN network.
 
-## BiT downstream partners include neuroendocrine cells that convey nutritional status
+### BiT downstream partners include neuroendocrine cells that convey nutritional status
 
 To examine how BiT coordinates sugar and water ingestion, we investigated the neural circuit downstream of BiT using the FlyWire connectome (Figure 3). The FAFB connectivity revealed that BiT has 93 predicted postsynaptic partners. Unlike the ISNs’ downstream partners, which only innervate the SMP and SEZ, BiT postsynaptic partners reach more brain regions including the superior lateral protocerebrum (SLP), fan shaped body (FB), lobula, SMP, and SEZ. This suggests that the hunger and thirst signals detected by the ISNs are conveyed by BiT to widely regulate brain activity.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig3-v1.jpg)
+
+**Figure 3.:** (A) Distribution of synaptic output from BiT divided by cell class or brain region. Total of 1742 synapses from BiT and 93 postsynaptic partners. Insulin producing cells (IPCs) (18 neurons) receive 25.37% of all BiT output, Lgr3/FLAa3 (12 neurons) 15.56%, superior medial protocerebrum (SMP) and superior lateral protocerebrum (SLP) (20 neurons) 15.5%, CCHamide-2 receptor isoform RA (CCHa2R-RA) (4 neurons) 13.09%, SMP and subesophageal zone (SEZ) (19 neurons) 11.65%, Antler (2 neurons) 5.97%, visual projections (4 neurons) 3.85%, fan shaped body (4 neurons) 3.33%, Gallinule (5 neurons) 3.21%, SEZ (5 neurons) 2.47%. Only postsynaptic partners with five or more synapses were considered for this analysis. Reconstruction of IPCs (B), Lgr3/FLAa3 neurons (C), neurons innervating the SMP and SLP (D), CCHa2R-RA neurons (E), neurons innervating the SMP and SEZ (F), Antler neurons (G), visual projection neurons (H), neurons innervating the fan shaped body (I), Gallinule neurons (J), and neurons innervating the SEZ (K).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B): We expressed the light-sensitive ion channel Chrimson in BiT and optogenetically stimulated it with 660nm LED. We expressed the calcium sensor GCaMP in the IPCs and imaged them with a two-photon microscope. (A) Calcium response of IPC somas to 2 s optogenetic activation of BiT or (B) 30 s optogenetic activation of BiT. Left: Scatter plot shows mean ± SEM of all flies imaged, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired Wilcoxon test or paired t-test. n=9 flies. (C and D) Genetic controls: we expressed the light-sensitive ion channel Chrimson without the BiT-split Gal4 driver and exposed the brains to 660 nm LED. We expressed the calcium sensor GCaMP in the IPCs and imaged them with a two-photon microscope. (C) Calcium response of IPC somas to 2 s LED exposure or (D) 30 s LED exposure. Left: Scatter plot shows mean ± SEM of all flies imaged, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired t-test. n=9–10 flies. (E) Temporal consumption assay for 1 M sucrose or water during acute optogenetic activation of IPCs with Chrimson. Ingestion time of females exposed to light normalized to dark controls of indicated genotype. One-way ANOVA with Holm-Šídák multiple comparison test. n=43–49 animals/genotype. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Temporal consumption assay for 1 M sucrose or water during acute optogenetic activation of IPCs with Chrimson.Represented are the mean, and the 10–90 percentile. Data was analyzed using one-way ANOVA, followed by multiple comparisons against the no laser control. n=43–49 animals/genotype. *p<0.05, ***p<0.001.
+
 Many of the BiT predicted postsynaptic partners arborize in both the SEZ and SMP, suggesting that they might coordinate nutritional status and feeding. Several BiT targets transmit or receive peptidergic signals of nutrient state. For example, BiT postsynaptic partners include insulin producing cells (IPCs), FLAa3/Lgr3 neurons, and neurons labeled by the CCHa2R-RA-Gal4 line (Deng et al., 2019; Figure 3, Supplementary file 2). IPCs are a well-studied cell type that release dILP2, dILP3, and dILP5, regulate glucose uptake, and influence many physiological processes including feeding (Nässel et al., 2013; Ohhara et al., 2018). FLAa3/Lgr3 neurons detect dILP8 and influence sugar ingestion (Meissner et al., 2016; Yeom et al., 2021; Yu et al., 2013). CCHa2 and its receptor CCHa2R have been shown to participate in feeding regulation and regulate insulin signaling, although the function of CCHa2R-RA neurons has not been examined (Deng et al., 2019; Ida et al., 2012; Ren et al., 2015; Sano et al., 2015; Shahid et al., 2021). Thus, BiT is predicted to synapse onto many neuroendocrine neurons, possibly enabling integration of the hunger and thirst signals sensed by ISNs with diverse nutrient state signals.
 
-## IPCs regulate sugar and water ingestion
+### IPCs regulate sugar and water ingestion
 
 The IPCs integrate multiple signals of nutrient status and regulate feeding and metabolism (Nässel and Zandawala, 2020). We found that the ISNs are connected to the IPCs via BiT. BiT is the main synaptic input into IPCs, making up 25% of the IPCs’ synaptic input (442/1735) and IPCs receive 25% of BiT’s synaptic output (442/1742) (Figure 3, Supplementary file 2). We tested whether BiT is functionally connected to the IPCs by optogenetically stimulating BiT and monitoring activity in IPCs using the calcium sensor GCaMP6s (Chen et al., 2013). We found that BiT inhibits IPCs (Figure 3—figure supplement 1A–D), consistent with neurotransmitter predictions that BiT uses glutamate (Eckstein et al., 2020), which can act as an inhibitory neurotransmitter in Drosophila (Liu and Wilson, 2013).
 
 To test whether IPCs modulate ingestion of sucrose or water under conditions that reveal ISN behavioral phenotypes, we measured ingestion time of sucrose or water while acutely activating the IPCs. We found that acute activation of IPCs increased sucrose ingestion and decreased water ingestion (Figure 3—figure supplement 1E, Figure 3—figure supplement 2). These results are consistent with one study (Sudhakar et al., 2020) but differ from other studies showing that acute IPC activation limits ingestion of sucrose or food (Nässel et al., 2015; Wang et al., 2020). IPCs integrate many signals and release multiple peptides (Sano et al., 2015; Söderberg et al., 2012; Ohhara et al., 2018; Wang et al., 2020), suggesting that differences in these behavioral results may, in part, stem from differences in the current nutritional state sensed by the IPCs. While further experiments are needed to elucidate how IPCs coordinate nutrient state and ingestion under different conditions, our results show that BiT regulates IPC activity and that IPC activity coordinates both sugar and water ingestion.
 
-## CCHa2R-RA neurons regulate water ingestion downstream of BiT
+### CCHa2R-RA neurons regulate water ingestion downstream of BiT
 
 A number of studies indicate that CCHa2 and its receptor CCHa2R promote food intake and appetite in various insects, including blowflies (Ida et al., 2012), aphids (Shahid et al., 2021), and Drosophila (Ren et al., 2015). BiT synapses with CCHa2R-RA neurons, four neurons with cell bodies in the SEZ, and arbors in the flange and pars intercerebralis (Figure 4A, B). BiT is the dominant input onto CCHa2R-RA neurons, comprising 94% of CCHa2R-RA presynaptic sites (171/181 synapses). CCHa2R-RA neurons receive the most output from BiT per single cell comprising 13% of BiT’s output (228/1742 synapses). To investigate whether BiT’s synaptic input to CCHa2R-RA neurons regulates ingestion, we examined the functional connectivity between BiT and CCHa2R-RA neurons and the behavioral phenotypes associated with CCHa2R-RA neurons.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig4-v1.jpg)
+
+**Figure 4.:** (A) CCHa2R-RA neurons reconstruction from full adult fly brain (FAFB) dataset. (B) Light microscopy image of CCHa2R-RA-Gal4. (C) Experimental setup for in vivo calcium imaging. We expressed the light-sensitive ion channel Chrimson in the interoceptive subesophageal zone neurons (ISNs) and optogenetically stimulated them with 660 nm LED. We expressed the calcium sensor GCaMP in the CCHa2R-RA neurons and imaged them with a two-photon microscope. (D) Calcium responses of CCHa2R-RA neurites in subesophageal zone (SEZ) to 2 s optogenetic stimulation of the ISNs or (E) 30 s optogenetic stimulation of the ISNs. Left: Scatter plot shows mean ± SEM of all flies imaged, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired t-test and paired Wilcoxon test. n=10 flies. (F) Temporal consumption assay for 1 M sucrose or water during acute optogenetic activation of CCHa2R-RA neurons with Chrimson. Ingestion time of females exposed to light normalized to dark controls of indicated genotype. Sucrose: Kruskal-Wallis with Dunn’s multiple comparison test. Water: One-way ANOVA with Holm-Šídák multiple comparison test. n=42–47 animals/genotype. (G) Temporal consumption assay for 1 M sucrose or water using RNAi targeting nSynaptobrevin (nSyb) in CCHa2R-RA neurons. Kruskal-Wallis with Dunn’s multiple comparison test. n=45–54 animals/genotype. (H) Neural model for CCHa2R-RA regulation of water intake. Dashed lines indicate inactive synapses. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B): Genetic controls: we expressed the light-sensitive ion channel Chrimson without the interoceptive subesophageal zone neuron (ISN)-LexA driver and exposed the brains to 660nm LED. We expressed the calcium sensor GCaMP in the CCHa2R-RA neurons and imaged them with a two-photon microscope. (A) Calcium response of CCHa2R-RA subesophageal zone (SEZ) neurites to 2 s LED exposure or (B) 30 s LED exposure. Left: Scatter plot shows mean ± SEM of all flies imaged, with individual traces in gray, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired Wilcoxon test and paired t-test. n=7 flies. (C and D) We expressed the light-sensitive ion channel Chrimson in BiT and optogenetically stimulated it with 660 nm LED. We expressed the calcium sensor GCaMP in the CCHa2R-RA neurons and imaged them with a two-photon microscope. (C) Calcium response of CCHa2R-RA somas to 2 s optogenetic stimulation of BiT or (D) 30 s optogenetic stimulation of BiT. Left: Scatter plot shows mean ± SEM of all flies imaged, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired t-test. n=5 flies.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Temporal consumption assay for 1 M sucrose or water during acute optogenetic activation of CCHa2R-RA neurons with Chrimson. Represented are the mean, and the 10–90 percentile. Data was analyzed using Kruskal-Wallis test, followed by multiple comparisons against the no laser control. n=42–47 animals/genotype. ***p<0.001.
 
 We monitored activity in CCHa2R-RA neurons with the calcium indicator GCaMP6s upon optogenetic stimulation of BiT; however, we did not observe a response in CCHa2R-RA neurons (Figure 4—figure supplement 1D–E). As BiT likely inhibits CCHa2R-RA neurons, it is possible that we were unable to detect an inhibitory response in CCHa2R-RA neurons using a calcium sensor. We therefore monitored activity of CCHa2R-RA neurons upon optogenetic stimulation of the ISNs, as the ISNs should activate CCHa2R-RA neurons given that the ISNs inhibit BiT (Figure 4C). Indeed, we found that CCHa2R-RA neurons showed robust calcium responses upon ISN stimulation relative to controls (Figure 4D–E, Figure 4—figure supplement 1A–C), demonstrating that these neurons are functionally connected to the ISNs, likely via BiT inhibition.
 
 To test if CCHa2R-RA neurons regulate sugar or water ingestion, we manipulated activity in these neurons and measured ingestion of sugar or water. We found that activation of CCHa2R-RA neurons decreased water ingestion but did not change sugar ingestion (Figure 4F, Figure 4—figure supplement 2). Moreover, inhibiting neurotransmission in CCHa2R-RA neurons increased water ingestion (Figure 4G, Figure 4—figure supplement 2), but did not change sucrose ingestion relative to CCHa2R-RA-Gal4 controls. These behavioral experiments demonstrate that peptide-sensing neurons downstream of the ISNs regulate water ingestion (Figure 4H). The finding that CCHa2-RA neurons recapitulate the water ingestion phenotypes of the ISNs but not sugar ingestion phenotypes suggests that the ISNs activate different arrays of peptidergic neurons that contribute differentially to ingestion of specific nutrients.
 
-## CCAP neurons are downstream of the ISNs and reciprocally regulate sugar and water ingestion
+### CCAP neurons are downstream of the ISNs and reciprocally regulate sugar and water ingestion
 
 In a separate effort to find neurons that are postsynaptic to the ISNs, we tested whether neurons that had previously been implicated in ingestion were functionally connected to the ISNs. We conducted pilot in vivo functional imaging experiments monitoring the activity of candidate neurons with GCaMP7b while optogenetically stimulating the ISNs. We found one set of peptidergic neurons, the crustacean cardioactive peptide (CCAP) neurons, that were activated upon ISN optogenetic stimulation (Figure 5A–E, Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig5-v1.jpg)
+
+**Figure 5.:** (A) CCAP neurons reconstruction from full adult fly brain (FAFB) dataset. (B) Light microscopy image of CCAP-Gal4. (C) Experimental setup for in vivo calcium imaging. We expressed the light-sensitive ion channel Chrimson in the ISNs and optogenetically stimulated them with 660 nm LED. We expressed the calcium sensor GCaMP in the CCAP neurons and imaged them with a two-photon microscope. (D) Calcium response of CCAP neurites to 2 s optogenetic stimulation of the ISNs or (E) 30 s optogenetic stimulation of the ISNs. Left: Scatter plot shows mean ± SEM of all flies imaged, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired t-test. n=10 flies. (F) Temporal consumption assay for 1 M sucrose or water during acute optogenetic activation of CCAP neurons with Chrimson. Ingestion time of females exposed to light normalized to dark controls of indicated genotype. Sucrose: Kruskal-Wallis with Dunn’s multiple comparison test, Water: One-way ANOVA with Holm-Šídák multiple comparison test. n=42–48 animals/genotype. (G) Temporal consumption assay for 1 M sucrose or water using RNAi targeting nSynaptobrevin (nSyb) in CCAP neurons. Kruskal-Wallis with Dunn’s multiple comparison test. n=45–54 animals/genotype. (H) Neural model for CCAP coordination of sugar and water intake. Dashed lines indicate inactive synapses. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** We expressed the light-sensitive ion channel Chrimson in the ISNs and optogenetically stimulated them with 660 nm LED. We expressed the calcium sensor GCaMP in the CCAP neurons and imaged them with a two-photon microscope. (A) Calcium response of CCAP neurites to 2 s optogenetic stimulation of the ISNs or (B) 30 s optogenetic stimulation of the ISNs. Left: Scatter plot shows mean ± SEM of all flies imaged, gray bars represent LED stimulation. Right: Quantification of mean fluorescence intensity before stim (off) and during stim (on), each dot represents one fly. Paired t-test. n=8 flies. **p<0.01, ***p<0.001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88143/elife-88143-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Temporal consumption assay for 1 M sucrose or water during acute optogenetic activation of CCAP neurons with Chrimson. Represented are the mean, and the 10–90 percentile. Data was analyzed using Kruskal-Wallis test, followed by multiple comparisons against the no laser control. n=42–48 animals/genotype. ***p<0.001.
 
 CCAP neurons have been shown to regulate feeding behavior in adult Drosophila as loss of CCAP in these neurons reduced sucrose ingestion (Williams et al., 2020). To directly test if CCAP neural activity modulates sugar or water ingestion, we acutely manipulated the activity of CCAP neurons and measured ingestion of sugar or water. We found that activation of CCAP decreased water ingestion and increased sugar ingestion (Figure 5F, Figure 5—figure supplement 2). To test whether CCAP neurons are necessary for sugar and water ingestion, we reduced CCAP neurotransmission with nSyb RNAi, and measured ingestion of sugar or water. We found that silencing CCAP neurons decreased sugar ingestion and increased water ingestion (Figure 5G, Figure 5—figure supplement 2), demonstrating that CCAP neurons reciprocally regulate sugar and water ingestion, similar to the ISNs.
 
@@ -92,7 +148,7 @@ In this study, we report that the ISNs communicate hunger and thirst states to a
 
 **Figure 6.:** Hunger signals activate the ISN while thirst signals inhibit the ISNs. ISNs use Drosophila insulin-like peptide 3 (dILP3) as a neurotransmitter and require amontillado (amon) for neuropeptide processing. ISN activity inhibits bilateral T-shaped neuron (BiT), which in turn inhibits CCHamide-2 receptor isoform RA (CCHa2R-RA) neurons. Crustacean cardioactive peptide (CCAP) neurons are downstream of the ISNs, connected via Cowboy, VESAa1, BiT2, and CCHa2R-RA neurons. BiT activity inhibits sugar ingestion and promotes water ingestion. CCAP activity promotes sugar ingestion and inhibits water ingestion. CCHa2R-RA activity inhibits water ingestion.
 
-## The ISNs influence activity of several brain regions involved in feeding and nutrient homeostasis to coordinate sugar and water ingestion
+### The ISNs influence activity of several brain regions involved in feeding and nutrient homeostasis to coordinate sugar and water ingestion
 
 Previous studies showed that the ISNs sense the hunger signal AKH and changes in hemolymph osmolality associated with thirst to correspondingly alter ISN neural activity. Increased ISN activity promotes sugar ingestion and decreases water ingestion, and decreased ISN activity decreases sugar ingestion and increases water ingestion (Jourjine et al., 2016). Here, we investigated how ISN activity reciprocally regulates sugar and water ingestion according to internal needs by examining the neural network modulated by the ISNs.
 
@@ -100,13 +156,13 @@ We found that the ISNs are predicted to synapse with 100 neurons, including proj
 
 We characterized the pathway from the second-order BiT projection neuron that oppositely regulates sugar and water consumption. We found that BiT has 93 predicted synaptic partners, including IPCs which are known to modulate food intake (Nässel and Zandawala, 2020), FLAa3/Lgr3 which have been implicated in regulating ingestion (Laturney et al., 2022; Meissner et al., 2016; Nässel et al., 2013; Yeom et al., 2021), and neurons labeled by the CCHa2R-RA-Gal4 (Deng et al., 2019) which we found to regulate water ingestion. BiT downstream neurons innervate several neuropils including the SEZ, SMP, SLP, FB, and lobula. Therefore, hunger and thirst signals sensed by the ISNs fan out to modulate multiple brain regions via BiT. We speculate that the broad reach of the ISNs serves to modulate different behaviors such as sleep, reproduction, and locomotion based on the hunger or thirst state of the fly.
 
-## Communication between peptidergic neurons coordinates ingestion
+### Communication between peptidergic neurons coordinates ingestion
 
 Our studies demonstrate that multiple peptidergic neurons participate in regulation of sugar and water ingestion. We find that dILP3 RNAi or amontillado RNAi expression in the ISNs recapitulates the ISN loss-of-function phenotype, arguing that the ISNs themselves are peptidergic and utilize dILP3 as the neurotransmitter that conveys hunger and thirst signals. The ISNs have increased activity upon AKH detection or low osmolality (hunger signals) (Jourjine et al., 2016), arguing that increased dILP3 release from the ISNs drives sucrose ingestion and limits water ingestion in hungry flies to maintain homeostasis. This conversion of an AKH signal to a dILP3 signal resembles findings in Drosophila larvae, where circulating AKH binds to the AKH receptor on IPCs to release dILP3 and promote sucrose consumption (Kim and Neufeld, 2015; Palovcik et al., 1984).
 
 The ISNs modulate activity in many neuroendocrine cells, potentially causing widespread changes in peptide release (Nässel and Zandawala, 2022; Schlegel et al., 2016). We find that ISN activation increases activity of CCAP neurons and CCHa2R-RA neurons, and BiT activation decreases the activity of IPCs. CCAP neurons are orexigenic and communicate to CCAP receptor cells, including IPCs (Zhang et al., 2022b) and a subpopulation of neuropeptide F (NPF) neurons (Williams et al., 2020). While this is the first study that characterizes the CCHa2R-RA neurons, the knockin Gal4 line that labels the CCHa2R-RA neurons was generated for the RA isoform of CCHa2 receptor, suggesting that these neurons respond to CCHa2, a peptide produced in the midgut and brain that increases appetite (Deng et al., 2019; Ida et al., 2012; Reiher et al., 2011; Ren et al., 2015). Therefore, CCHa2R-RA neurons potentially integrate the hunger and thirst signals from the ISNs with CCHa2 signals from the gut. IPCs are central regulators of appetite and metabolism, receive multiple direct and indirect signals of nutrient status, and release dILP2, dILP3, and dILP5 (Nässel and Zandawala, 2020). Our finding that the ISNs communicate with multiple peptidergic systems argues that hunger and thirst signals sensed by the ISNs are integrated with other nutritive state signals sensed by ISN downstream neurons for a global assessment of the current nutritional demands of the animal.
 
-## Sugar and water ingestion remains coordinated downstream of the ISNs
+### Sugar and water ingestion remains coordinated downstream of the ISNs
 
 Multiple neurons downstream of the ISNs bidirectionally regulate both sugar and water ingestion, arguing that they bias ingestion based on nutrient need. By studying the activation and silencing phenotypes associated with CCAP neurons, we show that acute activation promotes sugar ingestion and limits water ingestion, while silencing these neurons has the opposite effects. These findings are consistent with and expand upon previous studies showing that CCAP neurons promote feeding (Selcho et al., 2018; Williams et al., 2020). IPCs have a more complex role in regulating ingestion, with several studies showing that their acute activation limits ingestion of sucrose or food (Nässel et al., 2015; Semaniuk et al., 2018; Wang et al., 2020) and other studies suggesting the opposite (Sudhakar et al., 2020). We find that under the specific conditions of our assay, acute activation of IPCs promotes sucrose ingestion and limits water ingestion. We suspect that differing findings upon IPC manipulation may stem from differences in the deprivation state of the fly, the behavioral assay, the type and timing of neural manipulation, and the food source. As IPCs receive multiple internal state signals, it is possible that activation phenotypes depend on the current state of IPC modulation set by the internal state of the fly.
 
@@ -114,23 +170,432 @@ Overall, our work sheds light on neural circuit mechanisms that translate intern
 
 ## Materials and methods
 
-## Fly husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-nSynaptobrevin RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 31983</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-dcr2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 24650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-Trh RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 25842</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-ChAT RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 25856</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-Tbh RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 27667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-Hdc RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 26000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-VMAT RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 31257</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-GAD1 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 28079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-DDC RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 27030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-DVGlut RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 27538</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-sNPF RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 25867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-VGAT RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 41958</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-TDC2 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 25871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-dILP1 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 32861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-dILP2 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BSC 32475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-dILP3 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BSC 31492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-dILP4 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 33682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-dILP5 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 31378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-dILP6 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 33684</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-dILP7 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 32862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-amon RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 29009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>ISN-Gal4 (VT011155-Gal4)</td>
+      <td>FlyLight, Janelia Research Campus</td>
+      <td>Fly Light ID 54404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>ISN-LexA (GMR34G02-LexA)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 54138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-myrGFP.QUAS-mtdTomato-3xHA; trans-Tango</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 77124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>VT002073-Gal4.AD</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 71871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>VT040568-Gal4.DBD</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 72902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-csChrimson.mVenus</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 55134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>LexAop-ChrimsonR.mCherry</td>
+      <td>Gift from Jayaraman Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-ArcLight</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 51056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>Empty split</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 79603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>ppk28-Gal4</td>
+      <td>Cameron et al., 2010.</td>
+      <td>BDSC 93020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>Gr5a-Gal4</td>
+      <td>Chyb et al., 2003.</td>
+      <td>BDSC 57592, 57591</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>CCha2R-RA-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 84603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>LexAop-CsChrimson.tdTomato (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 82183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>UAS-GCaMP6s (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 42749</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>20XUAS-GCaMP7b</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 79029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>CCAP-Gal4 (II)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 25685</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>CCAP-Gal4 (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 25686</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>CCHa2R (RA)-LexA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 84363</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>dILP2-LexA</td>
+      <td>Li and Gong, 2015.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Brp (nc82)(Mouse monoclonal)</td>
+      <td>DSHB, University of Iowa, USA</td>
+      <td>DSHB Cat# nc82, RRID:AB_2314866</td>
+      <td>1:40</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(Chicken polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# A10262, RRID:AB_2534023</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dsRed(Rabbit polyclonal)</td>
+      <td>Takara, Living Colors</td>
+      <td>Takara Bio Cat# 632496, RRID:AB_10013483</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse AF647(Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# A-21236, RRID:AB_2535805</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken AF488(Goat polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>Thermo Fisher Scientific Cat# A-11039, RRID:AB_2534096</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit AF568(Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# A-11036, RRID:AB_10563566</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>All trans-Retinal</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# R2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://fiji.sc/</td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NAVis</td>
+      <td>Copyright 2018, Philipp Schlegel</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CATMAID</td>
+      <td>Saalfeld et al., 2009; https://catmaid.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flywire</td>
+      <td>Flywire; https://flywire.ai/</td>
+      <td>RRID:SCR_019205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software; https://www.graphpad.com/scientific-software/prism/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python Software Foundation; https://www.python.org/downloads/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe Software; https://www.adobe.com/products/illustrator.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CAVE (connectome annotation versioning engine)</td>
+      <td>https://github.com/seung-lab/CAVEclient/blob/master/FlyWireSynapseTutorial.ipynb; seung-lab, 2021; Buhmann et al., 2021; Eckstein et al., 2020; Heinrich et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>Dessau and Pipper, 2008</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly husbandry
 
 All experiments and screening were carried out with adult D. melanogaster females reared on standard cornmeal-agar-molasses medium, at 25°C, 65–70% humidity, on a 12 hr light:12 hr dark cycle. Flies used in optogenetic assays were reared on food containing 0.25 mM all-trans-retinal (Sigma-Aldrich) in darkness, before and after eclosion. See Supplementary file 4 for all fly genotypes.
 
-## Temporal consumption assay
+### Temporal consumption assay
 
 Flies were anesthetized using CO2 and then fixed to a glass slide with nail polish. Flies recovered for 2 hr in a humidified box if testing for sucrose ingestion, or in a desiccated box with Drierite if testing for water ingestion. Immediately before testing for sucrose ingestion, flies were given water until they no longer responded to three consecutive water presentations. In testing, flies were presented with the tastant (water or 1 M sucrose) 10 times and consumption time was manually recorded. All experiments were done in a dark, temperature- and humidity-controlled room. IR lights and IR cameras were used to conduct experiments in the dark. All water tests were done in the morning and all sugar tests were done in the afternoon. For optogenetic activation experiments, we expressed the light activated ion channel Chrimson in the neurons of interest and activated these neurons using a 635 nm laser (Laserglow). For silencing experiments, we expressed RNAi against nSyb in neurons of interest. All experiments were performed blind to the genotype being tested and across 3–4 days. Flies were excluded from analysis if during the experiment they were covered in sugar or water droplet.
 
-## In vivo calcium imaging
+### In vivo calcium imaging
 
 Calcium imaging studies were carried out as described in Shiu et al., 2022. Mated female flies were dissected for calcium imaging studies 5–14 days post-eclosion. Flies were briefly anesthetized with ice and placed in a custom plastic holder at the neck to isolate the head from the rest of the body. The head was then immobilized using UV glue, the proboscis was immobilized using wax, and the esophagus was cut to provide unobstructed imaging access to the SEZ. All flies imaged were sated. In vivo calcium imaging with optogenetic activation was performed in a two-photon microscope using a Scientifica Hyperscope with resonant scanning, a piezo drive, and a 20× water immersion objective (NA = 1.0) with 1.8–3× digital zoom, depending on the cell type imaged. Calcium responses were recorded with a 920 nm laser and optogenetic stimulation was achieved with a 660 nm LED. Two s LED stimulation paradigm: 20 s off, 2 s on, 30 s off, 2 s on, 30 s off. 30 s LED stimulation paradigm: 20 s off, (1 s on, 1 s off) × 15, 60 s off. For the 2 s LED stimulation, 80 stacks of 20 z slices of 4–5 μm were acquired at 0.667 Hz. For the 30 s stimulation, 125 stacks of 20 z slices of 4–5 μm were acquired at 0.667 Hz. Analysis was done on max-z projections of the 20 z slices. %ΔF/F=100*((Ft - F0)/F0), where Ft is the fluorescence of the neuron ROI - the background ROI at each timepoint and F0 is the mean Ft for the 23 timepoints prior to stimulus onset. Quantification was carried out in GraphPad Prism. A mean fluorescence intensity for LED off and LED on was calculated for each fly. For the 2 s LED stimulation, mean intensity for LED off was calculated for five timepoints immediately before LED exposure and mean intensity for LED on was calculated for five timepoints during LED exposure. For the 30 s stimulation, mean intensity for LED off was calculated for 28 timepoints immediately before LED exposure and mean intensity for LED on was calculated for 28 timepoints during LED exposure. Paired t-test or paired Wilcoxon test was performed. ROI for CCHa2R-RA imaging was CCHa2R-RA neurites in SEZ. ROI for CCAP imaging was CCAP neurites. ROI for IPC imaging was all IPC somas. All experiments per genotype were conducted across 2–4 days. Flies were excluded from analysis if excitotoxicity was detected.
 
-## In vivo voltage imaging
+### In vivo voltage imaging
 
 Voltage imaging studies were performed for neurons predicted to be silenced by presynaptic neurons based on behavioral or EM connectivity data. Voltage imaging studies were carried out exactly as calcium imaging studies described above. ROI for BiT imaging was BiT soma.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 All brain and CNS dissections and immunostaining (unless directly addressed) were carried out as described (https://www.janelia.org/project-team/flylight/protocols, ‘IHC-Anti-GFP’) substituting the below antibodies and eschewing the pre-embedding fixation steps. Ethanol dehydration and DPX mounting was carried out as described (https://www.janelia.org/project-team/flylight/protocols, ‘DPX Mounting’).
 
@@ -140,19 +605,19 @@ Secondary antibodies:
 
 See Key resources table for additional information on antibodies. Images were acquired with a Zeiss LSM 880 NLO AxioExaminer with Airyscan and Coherent Chameleon Vision or Zeiss LSM 780 Laser Scanning Confocal Microscope at the Berkeley Molecular Imaging Center with a Plan-Apochromat 20×/1.0 W, 40× W, 40×/1.4 oil, or 63×/1.4 oil objective. Images were prepared in Fiji.
 
-## Electron microscopy neural reconstructions and connectivity
+### Electron microscopy neural reconstructions and connectivity
 
 Neurons were reconstructed in a serial section transmission electron volume (full adult female brain, Zheng and Lauritzen et al., 2018) using the CATMAID software (Saalfeld et al., 2009). Fully manual reconstructions were generated by following the branches of the neuron and marking the center of each branch, thereby creating a ‘skeleton’ of each neuron. In addition to fully manual reconstructions, segments of an automated segmentation (Li et al., 2019) were proofread and expanded to generate complete reconstructions. In addition to the skeleton tracing, new chemical synapses were also annotated as previously described (Zheng et al., 2018). Downstream synaptic targets of the ISNs and BiT were then traced out from these additional locations using both manual and assisted tracing techniques as described above. Neurons traced in CATMAID, including ISNs and BiT, were all located in Flywire (flywire.ai), which uses the same EM dataset (Zheng et al., 2018). To identify synaptic partners, we used connectome annotation versioning engine (CAVE, Buhmann et al., 2021; Ida et al., 2012) using a cleft score cutoff of 50 to generate synapses of relatively high confidence (Ida et al., 2012; Baker et al., 2022). FAFB neural reconstructions were visualized using NAVis (Copyright 2018, Philipp Schlegel), which is based on natverse (Bates et al., 2020). See Key resources table for additional software information.
 
-## BiT split-Gal4 generation
+### BiT split-Gal4 generation
 
 We created a color depth max intensity projection (CDM) mask of BiT reconstructed EM skeleton and used CDM mask searching (Otsuna et al., 2018) to find enhancers whose expression patterns seemed to include the desired cell type using MCFO (Nern et al., 2015) screening of subsets of the Janelia Research Campus and Vienna Tile Gal4 collections. Construction of stable split-Gal4 lines was performed as previously described (Dionne et al., 2018; Sterne et al., 2021). Immunohistochemistry and confocal imaging was used to determine successful split-Gal4 combinations.
 
-## Identification of GAL4 lines from EM reconstructions
+### Identification of GAL4 lines from EM reconstructions
 
 Visual inspection of Gal4 collections was used to determine cell type. Images of potential Gal4 lines were skeletonized in FIJI, converted into .swc format using natverse (Bates et al., 2020), and uploaded to Flywire using the Flywire Gateway. This generated pointclouds that were used to identify the neurons of interest. As Flywire permits exhaustive searching of neurons in an area, we examined all neurons in the region of interest to conclusively identify our neuron of interest.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests were performed in GraphPad Prism. For all group comparisons, data was first tested for normality with the KS normality test (alpha = 0.05). If all groups passed then groups were compared with a parametric test, but if at least one group did not pass, groups were compared with a non-parametric version. All statistical tests, significance levels, and number of data points (N) are specified in the figure legend.
 

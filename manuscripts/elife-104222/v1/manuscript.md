@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05qwgg493 Department of Psychological & Brain Sciences, Boston University Boston United States
+1. Department of Psychological & Brain Sciences, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ In this study, we developed a paradigm that allowed us to dynamically characteri
 
 ## Results
 
-## Behavioral performance indicates effective deployment of covert spatial attention
+### Behavioral performance indicates effective deployment of covert spatial attention
 
 We set out to investigate the spatial distribution of attentional modulation within visual cortex. To do so, we first ensured that participants (n=8) could successfully allocate covert spatial attention to cued portions of the visual field. During the experiment, participants’ task was to fixate the center of the screen and report whether there were more numbers or letters in a cued peripheral region (Figure 1a). The cued region varied in location and width: it could be centered on any of 20 polar angles and could span any of four widths (18°, 54°, 90°, and 162° of polar angle). Task performance indicated that participants used the cue effectively, as the proportion of correct responses was significantly above chance for all width conditions (Figure 1b; t-test, all p<0.001). We verified, with eye tracking, that participants performed the task using peripheral vision while maintaining central fixation. The upper bound of the 95% CI for each participant’s average gaze eccentricity ranged from 0.29° (degrees of visual angle) to 0.64° (mean = 0.48°; Figure 1c), suggesting that gaze did not exceed the cue annulus at fixation and that participants used covert spatial attention to perform the task.
 
@@ -39,7 +39,7 @@ We set out to investigate the spatial distribution of attentional modulation wit
 
 **Figure 1.:** (a) Task schematic. Participants were instructed to maintain central fixation and use covert spatial attention to determine whether there were more numbers or letters present within a cued region of a white noise annulus. On each trial, the red cue was displayed alone for 1.35 s and remained present throughout the trial. Twenty digits and letters were then presented for 0.5 s, equally spaced and overlaid on the annulus. Participants had 1.25 s to indicate via button press whether more digits or letters were present in the cued region. The cue remained stable for five trials (10 TRs, 15.5 s), had a width of 1, 3, 5, or 9 segments (18°, 54°, 90°, or 162°), and was centered on any of the 20 digit/letter slots. (b) Behavioral task performance: group mean accuracy for each cue width. Error bars are SEM; gray circles show individual participants (n=8). (c) Group mean gaze eccentricity (in degrees of visual angle) for each cue width, conventions as in (b).
 
-## Attentional modulation of BOLD responses broadens with cue width
+### Attentional modulation of BOLD responses broadens with cue width
 
 We assessed the spatial distribution of attention by visualizing how the BOLD response was modulated by the location and width of the cue. To do so, we used each voxel’s population receptive field (pRF) to project BOLD responses for each attentional cue into the visual field. The resulting 2D visual field maps were averaged across trials for each cue width by rotating the maps, so the attentional cue aligned to 0° polar angle (right horizontal meridian). The reconstructed visual field maps revealed that increasing cue width led to a concomitant broadening of attentional modulation in cortex (Figure 2a). While this pattern was evident in all three early visual regions (V1–V3), the effect appeared to strengthen when ascending the visuocortical hierarchy.
 
@@ -51,13 +51,13 @@ Next, we computed the one-dimensional (1D) profile of attentional modulation at 
 
 For visualization purposes, the spatial response modulations were recentered to align all cues at 0° polar angle and averaged across trials for each cue width separately. Much like in the visual field reconstructions, there was a clear attentional modulation centered on 0°, which broadened and shifted downward with cue width – a pattern that was particularly evident in area V3 (Figure 2b).
 
-## Dynamic model-based recovery of the attentional field
+### Dynamic model-based recovery of the attentional field
 
 We next applied a modeling approach to estimate the location and width of attentional modulation, allowing us to further investigate the spread of attention in visual cortex. To do this, we averaged the spatial response profiles across TRs within each 10-TR block, in which the cue maintained a consistent location and width, yielding between 27 and 53 averaged spatial response profiles per participant for each width condition. We fit a generalized Gaussian function to each of these spatial profiles to estimate the location and width of attentional modulation per spatial profile (see Figure 3a). The width of attentional modulation was quantified in terms of the full width at half maximum (FWHM) of the best fitting model prediction (see Figure 3b).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/104222/elife-104222-fig3-v1.jpg)
 
-**Figure 3.:** (a) The generalized Gaussian model is characterized by parameters for location , scale (μ)\begin{document}$(\mu)$\end{document}, and shape (σ)\begin{document}$(\sigma)$\end{document}. ((β)\begin{document}$(\beta )$\end{document}b) Example model fits for two spatial profiles. Dots indicate BOLD response for two attentional cues differing in position and width. Solid lines indicate the best fitting model estimate. To quantify the attentional field, we extracted the location and gain (dashed arrows), as well as the width (full width at half maximum (FWHM); solid arrows).
+**Figure 3.:** (a) The generalized Gaussian model is characterized by parameters for location $(\mu)$, scale $(\sigma)$, and shape $(\beta)$. (b) Example model fits for two spatial profiles. Dots indicate BOLD response for two attentional cues differing in position and width. Solid lines indicate the best fitting model estimate. To quantify the attentional field, we extracted the location and gain (dashed arrows), as well as the width (full width at half maximum (FWHM); solid arrows).
 
 Can we dynamically recover the attentional field from activity within visual cortex? Model fits explained a substantial proportion of variance in the spatial profiles of BOLD activity (V1: for 18° cues, mean [standard deviation] of R2=0.42 [0.03]; for 54° cues, 0.43 [0.03]; for 90° cues, 0.44 [0.03]; for 162° cues, 0.42 [0.03]; V2: for 18° cues, 0.51 [0.05]; for 54° cues, 0.54 [0.05]; for 90° cues, 0.54 [0.04]; for 162° cues, 0.55 [0.04]; V3: for 18° cues, 0.50 [0.03]; for 54° cues, 0.56 [0.04]; for 90° cues, 0.55 [0.03]; for 162° cues, 0.51 [0.02]). To interpret the estimated model parameters, we excluded the bottom 20% of fits based on a pooled R2 across V1, V2, and V3, leaving roughly equal proportions of included blocks across cue width conditions (18°: mean [standard deviation]=0.78 [0.04], 54°: 0.83 [0.05], 90°: 0.83 [0.04], 162°: 0.77 [0.07]).
 
@@ -77,7 +77,7 @@ We also assessed the gain of the attentional modulation in the model (Figures 4 
 
 Finally, we examined the baseline offset (Figure 4 example participant, and Figure 5 group data). No significant relationship was observed between cue width and baseline offset in any of the three brain regions (V1, t(7)=–1.05, p=0.330; V2, t(7)=–2.00, p=0.086; V3, t(7)=–1.61, p=0.152).
 
-## Temporal interval analysis
+### Temporal interval analysis
 
 In the previous analyses, we leveraged the fact that the attentional cue remained constant for five-trial blocks (spatial profiles were computed by averaging BOLD measurements across a block of 10 TRs). We next examined the degree to which we were able to recover the attentional field on a moment-by-moment (TR-by-TR) basis. To do this, we systematically adjusted the number of TRs that contributed to the averaged spatial response profile. To maintain a constant number of observations across the temporal interval conditions, we randomly sampled a subset of TRs from each block. This allowed us to determine the amount of data needed to recover the attentional field, with a goal of examining the usability of our modeling approach in future paradigms involving more dynamic deployment of spatial attention.
 
@@ -95,7 +95,7 @@ The baseline offset tended to increase with number of TRs across all three brain
 
 Finally, the model’s goodness of fit improved with more data, with larger R2 associated with greater numbers of TRs included in the average profiles (all t(7)≥2.99, all p≤0.020), though all R2 were above 0.3 across all visual regions even for single-TR model fits. We did not observe a dependence of R2 on cue width (all t(7)≤1.26, all p≥0.249; Figure 6e).
 
-## Width of the attentional field mimics perceptual modulation
+### Width of the attentional field mimics perceptual modulation
 
 While the attentional field broadened as expected when participants were cued to attend to a larger portion of the white noise annulus, the size of the estimated attentional modulation was greater than the true size of the cued region. The cue width varied between 18° and 162°, whereas the width estimate derived from spatial profiles of BOLD modulation varied between 103° and 179° (Figure 5). We wondered what the underlying cause of this disparity might be. One possibility is that the BOLD-derived FWHM might tend to overestimate the retinotopic extent of the modulation, perhaps driven by binning and smoothing processing steps to create the 1D spatial profiles. If this were the case, we would expect to obtain similar FWHM estimates when modeling the perceptual modulations as well. Alternatively, the true subjective attentional field might be consistently broader than cued, despite the presence of nearby distractors. If this were the case, modulation driven by perceptual differences should not result in the same large FWHM estimates.
 
@@ -129,17 +129,17 @@ In summary, we found evidence that people could dynamically adapt the spread of 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Eight healthy adults (four female, four male, mean age = 30) participated in the main attention experiment, five of whom also participated in a second experiment featuring a contrast manipulation. All participants had normal or corrected-to-normal vision. All procedures were approved by the Boston University Institutional Review Board, and informed consent was obtained from all participants.
 
-## Apparatus and stimuli
+### Apparatus and stimuli
 
 Participants were presented with stimuli generated using PsychoPy (v1.85.1; Peirce, 2007) on a MacBook Pro. The visual stimuli were displayed on a rear-projection screen (subtending ~20°×16° visual angle) using a VPixx Technologies PROPixx DLP LED projector (maximum luminance 306 cd/m2). Participants viewed the screen through a front surface mirror. Participants were placed comfortably in the scanner with padding to minimize head motion.
 
-## Procedure
+### Procedure
 
-## Attentional width manipulation
+#### Attentional width manipulation
 
 Participants were instructed to fixate a central point (radius 0.08° visual angle) while dynamic pixelwise white noise (flickering at 10 Hz, 50% contrast) was presented in the periphery (annulus spanning 4.6° to 7.4° visual angle). The annulus was segmented into 20 bins (18° polar angle per bin) by white grid lines radiating from a white circle at the center of the screen (radius 0.25°), passing behind the annulus, and terminating at 8.5° eccentricity. In the middle of each bin, a number or letter (height: 2.1°) was superimposed on the white noise annulus (see Figure 1a). For a subset of the participants (three out of eight), the screen distance inside the scanner was changed; therefore, for those participants, the letter size was 1.86° visual angle, and the white noise annulus spanned 4.1° to 6.5° visual angle. The set of possible letters included all lowercase letters of the Latin alphabet except a, b, e, g, i, o, and u. The set of numbers included 2, 3, 4, 5, 7, and 8.
 
@@ -149,62 +149,74 @@ Participants completed 8–12 runs of the task (mean = 10.4), with each run last
 
 During each trial, the cue and white noise annulus were presented alone for 1.35 s. The numbers and letters were then displayed for 0.5 s. Thereafter, the cue and white noise remained visible while the participant had 1.25 s to indicate whether there had been more digits or letters within the cued region, resulting in a total trial duration of 3.1 s (2 TRs). No accuracy feedback was provided during the main experiment. However, all participants completed three training runs with trial-by-trial feedback prior to the scan session. During training runs, the response window was shortened to 1 s and the remaining 0.25 s presented feedback in the form of a change in color of the fixation point (blue for correct responses and orange for incorrect responses).
 
-## Physical contrast manipulation
+#### Physical contrast manipulation
 
 A subset of participants (n=5) also participated in an experiment that enhanced the physical contrast intensity of the dynamic visual noise in segments of the annulus. This additional experiment was carried out during the same scan session and allowed for benchmarking the detectability of stimulus-evoked modulation in visual cortex using our analyses. The stimuli and trial structure were similar to the attentional manipulation. The task differed in the following ways: (1) the contrast of the white noise annulus was increased to 100% for segments of the annulus corresponding to 1, 3, 5, 7, or 9 bins (18°, 54°, 90°, 126°, or 162° polar angle), with a Gaussian rolloff (σ=15°) that spanned 25% of the furthest included bins and 25% of the adjacent excluded bins; (2) the enhanced segments were always centered on the cardinal directions (0°, 90°, 180°, and 270° polar angle); (3) the contrast increase remained constant for 15.5 s (10 TRs); (4) participants performed a color change detection task at fixation. Each unique combination of four locations and five widths of the contrast enhancement was shown once per run, with the order randomized. To estimate a baseline response, each run started and ended with 15.5 s without contrast modulation. Participants completed two runs total, each lasting 341 s (220 TRs).
 
 Throughout the physical contrast runs, participants were instructed to fixate on a central point (radius 0.08° visual angle) and to press a button when the fixation point switched color (alternating white and red). The fixation point remained a color for at least 1 s and then had a 10% probability of switching every 100 ms. No cues were presented for the regions of increased contrast. Additionally, no letters or numbers were superimposed on the white noise annulus.
 
-## pRF mapping
+#### pRF mapping
 
 pRF estimates were obtained for each participant in a separate scan session. We used the experimental procedure as described in the Human Connectome Project 7T Retinotopy dataset (Benson et al., 2018). Stimuli were composed of a pink noise background with colorful objects and faces at various spatial scales, displayed on a mean luminance gray background. Stimuli were updated at a rate of 15 Hz while participants performed a color change detection task at fixation. Participants viewed two types of mapping stimuli: (1) contracting/expanding rings and rotating wedges; (2) moving bar stimuli (Dumoulin and Wandell, 2008; Kay et al., 2013). A total of four to six scans (300 TRs) were collected for each participant (two to three scans per stimulus type). In this session, the field of view was restricted to the occipital cortex to maximize signal-to-noise ratio (SNR), thereby limiting the brain regions for which we had pRF estimates to V1, V2, and V3.
 
-## MRI data acquisition
+### MRI data acquisition
 
 All MRI data were acquired at Boston University’s Cognitive Neuroimaging Center (Boston, MA, USA) on a research-dedicated Siemens Prisma 3T scanner using a 64-channel head coil. A scanning session lasted 2 hr.
 
 All functional neuroimaging data were acquired using a simultaneous multislice gradient-echo echo-planar acquisition protocol (Moeller et al., 2010; Setsompop et al., 2012): 2 mm isotropic voxels; FoV = 212 × 212 mm2; 72 axial slices; TR = 1.55 s; TE = 35.60 ms; flip angle = 72°; multiband acceleration factor 4. We computed distortion field maps by using a spin echo echoplanar protocol with opposite y-axis phase encoding directions (2 mm isotropic voxels; FOV = 212 × 212 mm2; TR = 8850 ms; TE = 70.80 ms; flip angle = 90°). During a separate scan session, we acquired a whole-brain anatomical scan using a T1-weighted multi-echo MPRAGE 3d sequence (1 mm isotropic; FoV = 256 × 256 mm2; 176 sagittal slices; TR = 2530 ms; TE = 1.69 ms; flip angle = 7°), and the pRF scans (occipital coverage only; right-left phase encoding; 2 mm isotropic voxels; FoV = 136 × 136 mm2; 36 slices; TR = 1 s; TE = 35.4 ms; flip angle = 64°; multiband acceleration factor 3).
 
-## MRI data analysis
+### MRI data analysis
 
-## Structural data preprocessing
+#### Structural data preprocessing
 
 Whole-brain T1-weighted anatomical data were analyzed using the standard ‘recon-all’ pipeline provided by FreeSurfer software (FreeSurfer version 5.3, Fischl, 2012), generating cortical surface models, whole-brain segmentation, and cortical parcellations.
 
-## Functional data preprocessing
+#### Functional data preprocessing
 
 All analyses were performed in the native space for each participant. First, EPI distortion correction was applied to all fMRI BOLD time-series data using a reverse phase-encode method (Andersson et al., 2003) implemented in FSL (Smith et al., 2004). All functional data were then preprocessed using FS-FAST (Fischl, 2012), including standard motion-correction procedures, Siemens slice timing correction, and boundary-based registration between anatomical and functional volumetric spaces (Greve and Fischl, 2009). To facilitate voxel-wise analysis, no volumetric smoothing was performed, and across-run within-modality robust rigid registration was applied (Reuter et al., 2010), with the middle time point of the first run serving as the target volume, and the middle time point of each subsequent run used as a movable volume for alignment. Lastly, data were detrended (0.005 Hz high-pass filter) and converted to percent signal change for each voxel independently using custom code written in MATLAB (version 2020b).
 
-## pRF mapping and voxel selection
+#### pRF mapping and voxel selection
 
 The time series were analyzed using the analyzePRF toolbox in MATLAB, implementing a compressive spatial summation pRF model (Kay et al., 2013). The results of the pRF analysis were used to manually draw boundaries between early visual regions (V1, V2, and V3), which served as our regions of interest (ROIs).
 
 Within each ROI, pRF modeling results were used to constrain voxel selection used in the main experiment. We excluded voxels with a preferred eccentricity outside the bounds of the pRF stimulus (<0.7° and >9.1°), with a pRF size smaller than 0.01°, or with poor spatial selectivity as indicated by the pRF model fit (R2<10%). Following our 2D visualizations (see below), we further constrained voxel selection by only including voxels whose pRF overlapped with the white noise annulus. We included all voxels with an estimated eccentricity within the annulus bounds, as well as voxels with an estimated pRF size that would overlap the annulus.
 
-## 2D visualizations of attentional modulation
+#### 2D visualizations of attentional modulation
 
 To visualize the topography of attentional modulation under different cue widths, we projected the average BOLD responses for a given block (10 TRs with a consistent cue location and width, shifted by 3 TRs [4.65 s] to compensate for the hemodynamic delay) into the visual field using each voxel’s pRF location. This method is similar to that described in Favila et al., 2022. First, we computed the Cartesian (x,y) coordinates from the pRF eccentricity and polar angle estimates for each voxel. Then, within a given ROI, we interpolated the BOLD responses over (x,y) space to produce a full-field representation. Each representation was then z-scored to allow for comparison across blocks, cue conditions, and participants. Finally, the representation was rotated so that the center of the cue was aligned to the right horizontal meridian (see Figure 2a).
 
-## 1D spatial profile of attentional modulation
+#### 1D spatial profile of attentional modulation
 
 We also examined the spatial profile of attentional modulation as a function of polar angle. Voxels with pRFs overlapping the white noise annulus were grouped into 60 bins according to their pRF polar angle estimate (6° polar angle bin width). We computed a median BOLD response within each bin. This facilitated the recentering of each profile to align all cue centers for subsequent combining across trials. To improve the SNR, the resulting profile was smoothed with a moving average filter (width 18° polar angle; see Figure 2b).
 
-## Model fitting
+#### Model fitting
 
-We quantified the spatial profile of attentional modulation with a generalized Gaussian model (Nadarajah, 2005). The generalized Gaussian function (G) combines Gaussian and Laplace distributions:(1)G=exp{−|x−μσ|β}\begin{document}$$\displaystyle G=exp\left \{- \left |\frac{x- \mu }{\sigma }\right |^{\beta }\right \}$$\end{document}
+We quantified the spatial profile of attentional modulation with a generalized Gaussian model (Nadarajah, 2005). The generalized Gaussian function (G) combines Gaussian and Laplace distributions:
 
-The function has free parameters for location (μ)\begin{document}$(\mu)$\end{document}, scale (σ)\begin{document}$(\sigma)$\end{document}, and shape (β)\begin{document}$(\beta)$\end{document}. The shape parameter enables the tails of the distribution to become heavier than Gaussian (when β<2\begin{document}$\beta \lt 2$\end{document}), or lighter than Gaussian (when β>2\begin{document}$\beta \gt2$\end{document}); as β→∞\begin{document}$\beta \rightarrow \infty $\end{document}, the model approaches a uniform distribution.
+$$
+G=exp{−|\frac{x−\mu}{\sigma}|^{\beta}}
+$$
 
-Next, G\begin{document}$G$\end{document} was normalized to range between 0 and 1, and vertically scaled and shifted by two additional free parameters for gain (a)\begin{document}$(a)$\end{document} and baseline offset (b)\begin{document}$(b)$\end{document}:(2)y^=a⋅G+b\begin{document}$$\displaystyle \hat{y} =a\cdot G+ b$$\end{document}
+The function has free parameters for location $(\mu)$, scale $(\sigma)$, and shape $(\beta)$. The shape parameter enables the tails of the distribution to become heavier than Gaussian (when $\beta<2$), or lighter than Gaussian (when $\beta>2$); as $\beta→∞$, the model approaches a uniform distribution.
 
-We fit the five free parameters (μ,σ,β,a,b)\begin{document}$(\mu ,\sigma ,\beta ,a,b)$\end{document} using the MATLAB optimization tool fmincon, minimizing the squared error between the model prediction and the 1D profile described above. To avoid local minima, we first ran a grid search to find the initialization values with the lowest SSE (six possible values for μ, equally spaced between 0° and 360°, crossed with six possible values for σ\begin{document}$\sigma $\end{document}, equally spaced between 9° and 162° polar angle; β\begin{document}$\beta $\end{document} = 4; a\begin{document}$a$\end{document} = 1; b\begin{document}$b$\end{document} = 0). We imposed the following parameter bounds on the search: σ\begin{document}$\sigma $\end{document}: [6°, 180° polar angle], β:\begin{document}$\beta \colon $\end{document} [1.8, 50], and a:\begin{document}$a\colon $\end{document} [0, 20]. μ was unbounded, but was wrapped to remain within [0°, 360°].
+Next, $G$ was normalized to range between 0 and 1, and vertically scaled and shifted by two additional free parameters for gain $(a)$ and baseline offset $(b)$:
 
-From the model fits, we computed the following summary metrics: (1) angular error, defined as the polar-angle distance between the true and estimated location; (2) the FWHM of the best-fitting generalized Gaussian function, which served as our measure of the width of attentional modulation. The FWHM was controlled mainly by the scale parameter (σ\begin{document}$\sigma $\end{document}) but also to a lesser degree by the shape parameter (β\begin{document}$\beta $\end{document}; see Figure 3a); (3) the gain modulation of the spatial profile (a)\begin{document}$\left (a\right)$\end{document}; (4) the baseline offset (b\begin{document}$b$\end{document}); (5) the model’s goodness of fit quantified as the percentage of explained variance (R2) in the spatial response profile:(3)R2=1−(y−y^)2(y−y¯)2\begin{document}$$\displaystyle R^{2}=1- \frac{(y-\hat{y} )^{2}}{(y-\bar{y} )^{2}} $$\end{document}
+$$
+y^=a⋅G+b
+$$
 
-## Statistical testing
+We fit the five free parameters $(\mu,\sigma,\beta,a,b)$ using the MATLAB optimization tool fmincon, minimizing the squared error between the model prediction and the 1D profile described above. To avoid local minima, we first ran a grid search to find the initialization values with the lowest SSE (six possible values for μ, equally spaced between 0° and 360°, crossed with six possible values for $\sigma$, equally spaced between 9° and 162° polar angle; $\beta$ = 4; $a$ = 1; $b$ = 0). We imposed the following parameter bounds on the search: $\sigma$: [6°, 180° polar angle], $\beta:$ [1.8, 50], and $a:$ [0, 20]. μ was unbounded, but was wrapped to remain within [0°, 360°].
+
+From the model fits, we computed the following summary metrics: (1) angular error, defined as the polar-angle distance between the true and estimated location; (2) the FWHM of the best-fitting generalized Gaussian function, which served as our measure of the width of attentional modulation. The FWHM was controlled mainly by the scale parameter ($\sigma$) but also to a lesser degree by the shape parameter ($\beta$; see Figure 3a); (3) the gain modulation of the spatial profile $(a)$; (4) the baseline offset ($b$); (5) the model’s goodness of fit quantified as the percentage of explained variance (R2) in the spatial response profile:
+
+$$
+R^{2}=1−\frac{(y−y^)^{2}}{(y−y¯)^{2}}
+$$
+
+### Statistical testing
 
 To assess how the attentional cue width manipulation influenced the 1D spatial profile of BOLD modulation, we tested whether the computed summary metrics (absolute angular error, FWHM, gain, and baseline) varied as a function of cue width. Specifically, we performed a linear regression for each metric within each subject and tested whether the slopes differed from zero at the group level using a t-test. This was done independently for each ROI. No multiple comparison correction was applied, as the different tests for each region are treated as separate questions. However, using a threshold of 0.017 for p-values would correct for comparisons across the three brain regions. When testing whether the number of TRs impacted our metrics, the linear regression used both cue width and number of TRs as explanatory variables.
 
-## Eye-position monitoring
+### Eye-position monitoring
 
 Gaze data were collected for all participants using an MR-compatible SR Research EyeLink 1000+ eye tracker sampling at 1 kHz. Data from blink periods were excluded from analysis. Participants maintained fixation throughout the task, with average gaze eccentricity below 0.5° for all participants. Gaze eccentricity did not significantly vary by cued width (pairwise comparison of width conditions using a paired t-test, all p≥0.205 with Bonferroni correction for multiple comparisons) nor location (pairwise comparison, all p≥0.522 with Bonferroni correction for multiple comparisons). Additionally, we examined the number of fixations to the white noise annulus itself. No participant had more than 16 fixations (out of 800–1200 trials) to the annulus during the task, further suggesting that participants successfully maintained fixation.

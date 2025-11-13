@@ -16,20 +16,20 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Periodontics & Oral Medicine, University of Michigan School of Dentistry Ann Arbor United States
-2. https://ror.org/05byvp690 Center for Organogenesis and Trauma, Department of Surgery, University of Texas Southwestern Dallas United States
-3. https://ror.org/0168r3w48 Division of Cardiovascular Medicine, University of California, San Diego San Diego United States
-4. https://ror.org/03gds6c39 Department of Diagnostic and Biomedical Sciences, University of Texas Health Science Center at Houston School of Dentistry Houston United States
-5. https://ror.org/02f81g417 Department of Prosthetic Dental Sciences, College of Dentistry, King Saud University Riyadh Saudi Arabia
-6. https://ror.org/00jmfr291 Department of Biologic & Materials Science, University of Michigan School of Dentistry Ann Arbor United States
-7. https://ror.org/00jmfr291 Department of Biological Chemistry, School of Medicine, University of Michigan Ann Arbor United States
-8. https://ror.org/00jmfr291 Department of Biomedical Engineering, University of Michigan Ann Arbor United States
+1. Department of Periodontics & Oral Medicine, University of Michigan School of Dentistry Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Center for Organogenesis and Trauma, Department of Surgery, University of Texas Southwestern Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+3. Division of Cardiovascular Medicine, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+4. Department of Diagnostic and Biomedical Sciences, University of Texas Health Science Center at Houston School of Dentistry Houston United States ([ROR:03gds6c39](https://ror.org/03gds6c39))
+5. Department of Prosthetic Dental Sciences, College of Dentistry, King Saud University Riyadh Saudi Arabia ([ROR:02f81g417](https://ror.org/02f81g417))
+6. Department of Biologic & Materials Science, University of Michigan School of Dentistry Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+7. Department of Biological Chemistry, School of Medicine, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+8. Department of Biomedical Engineering, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
 ## Abstract
 
-Development of the craniofacial skeleton requires interactions between progenitor cells and the collagen-rich extracellular matrix (ECM). The mediators of these interactions are not well-defined. Mutations in the discoidin domain receptor 2 gene ( DDR2 ), which encodes a non-integrin collagen receptor, are associated with human craniofacial abnormalities, such as midface hypoplasia and open fontanels. However, the exact role of this gene in craniofacial morphogenesis is not known. As will be shown, Ddr2 -deficient mice exhibit defects in craniofacial bones including impaired calvarial growth and frontal suture formation, cranial base hypoplasia due to aberrant chondrogenesis and delayed ossification at growth plate synchondroses. These defects were associated with abnormal collagen fibril organization, chondrocyte proliferation and polarization. As established by localization and lineage-tracing studies, Ddr2 is expressed in progenitor cell-enriched craniofacial regions including sutures and synchondrosis resting zone cartilage, overlapping with GLI1 + cells, and contributing to chondrogenic and osteogenic lineages during skull growth. Tissue-specific knockouts further established the requirement for Ddr2 in GLI +skeletal progenitors and chondrocytes. These studies establish a cellular basis for regulation of craniofacial morphogenesis by this understudied collagen receptor and suggest that DDR2 is necessary for proper collagen organization, chondrocyte proliferation, and orientation.
+Development of the craniofacial skeleton requires interactions between progenitor cells and the collagen-rich extracellular matrix (ECM). The mediators of these interactions are not well-defined. Mutations in the discoidin domain receptor 2 gene (DDR2), which encodes a non-integrin collagen receptor, are associated with human craniofacial abnormalities, such as midface hypoplasia and open fontanels. However, the exact role of this gene in craniofacial morphogenesis is not known. As will be shown, Ddr2-deficient mice exhibit defects in craniofacial bones including impaired calvarial growth and frontal suture formation, cranial base hypoplasia due to aberrant chondrogenesis and delayed ossification at growth plate synchondroses. These defects were associated with abnormal collagen fibril organization, chondrocyte proliferation and polarization. As established by localization and lineage-tracing studies, Ddr2 is expressed in progenitor cell-enriched craniofacial regions including sutures and synchondrosis resting zone cartilage, overlapping with GLI1 + cells, and contributing to chondrogenic and osteogenic lineages during skull growth. Tissue-specific knockouts further established the requirement for Ddr2 in GLI +skeletal progenitors and chondrocytes. These studies establish a cellular basis for regulation of craniofacial morphogenesis by this understudied collagen receptor and suggest that DDR2 is necessary for proper collagen organization, chondrocyte proliferation, and orientation.
 
 ## Introduction
 
@@ -43,39 +43,87 @@ We recently described cell autonomous functions of Ddr2 in growth of the appendi
 
 ## Results
 
-## Anterior-posterior skull growth and frontal suture/bone formation impairment in Ddr2-deficient mice
+### Anterior-posterior skull growth and frontal suture/bone formation impairment in Ddr2-deficient mice
 
 To begin understanding the function of Ddr2 in craniofacial development, we first defined which parts of skull are altered in global Ddr2 deficiency using Ddr2slie/slie mice. These animals contain a spontaneous 150 kb deletion in the Ddr2 locus to generate an effective null (Kano et al., 2008). We performed linear measurements on micro-CT scans of 3-month-old skulls (n=10) using previously described landmarks (Vora et al., 2015). Our analysis along the anterior-posterior (AP) axis revealed a significant reduction (12%) in skull length (SL) mainly due to shortening of the nasal bone (NB), cranial vault (CV), and anterior and posterior cranial base (ACB and PCB) in Ddr2-deficient mice compared with WT littermates (Figure 1a–c). In addition, we detected an increase in anterior skull width without any change in skull height (Figure 1d–e). We further selected orthogonal planes in MicroView to measure the thickness of calvarial bones (Figure 1f). Interestingly, frontal bone thickness was reduced by 55% with Ddr2 deficiency; however, no significant differences were observed in the thickness of parietal or occipital bones (Figure 1f–g). Further analysis using Alcian blue and Alizarin red whole mount and H&E staining of 2-week-old skulls showed defective formation of frontal sutures in Ddr2-deficient mice (defect in 3/3 mice examined). In contrast, coronal and lambdoid sutures had a normal morphology (Figure 1h–i). Ddr2-deficient calvaria also had a reduced calvarial bone marrow cavity that was most prominent in the anterior skull bones (Figure 1f and i). No major differences were observed in transverse cranial sutures, such as coronal and lambdoid. Consistent with results from 2-week-old mice, reduced mineralization in the posterior frontal suture region was also seen in most skulls from 3-month-old Ddr2slie/slie mice, although some phenotypic variability was observed at this age with 6/10 skulls affected (Figure 1b). In summary, skull deformities in Ddr2-deficient mice are associated with defects in AP skull growth, impaired frontal suture mineralization, and frontal bone thickness.
 
-## Reduced anterior-posterior skull growth in Ddr2 deficiency is explained by abnormal chondrogenesis and delayed synchondrosis ossification
+![Figure 1.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig1-v4.jpg)
+
+**Figure 1.:** WT and Ddr2slielsile mice were compared at 3 months (a–g) and 2 weeks (h,i). (a-c) Short snout, and reduced skull length in Ddr2slielsile mice. (a) Side (upper) and top (lower) head views of 3-month-old Ddr2slie/slie mice and WT littermates. Scale bar: 1 cm. (b) 3D rendering of μCT scans of 3-month-old skulls. Scale bar: 1 mm. (c) Linear measurements along anteroposterior axis of skulls, where SL: skull length; NB: nasal bone; CV: calvaria vault; ACB: anterior cranial base; PCB: posterior cranial base. (d) Quantification of anterior (ant.) and posterior (post.) skull width showed a selective increase only in the anterior skull of Ddr2slie/slie vs WT mice. (e) No changes were observed in skull height at any of the regions measured (anterior cranial height, ACH; middle cranial height, MCH; posterior cranial height, PCH). (f,g) μCT scans of calvarial bones and quantification showing a significant reduction of frontal bone (blue) in 3-month-old Ddr2slie/slie mice in the absence of changes in parietal (orange) or occipital (green) calvarial bones. Note frontal suture defect in Ddr2slie/slie mice (red asterisk). Data are presented as mean ± SD. (n=10). *p<0.01, **p<0.01, ***p<0.001, ****p<0.0001, ns, not significant, two-tailed unpaired t test. (h) Alcian blue and Alizarin red staining of 2-week-old mouse skull whole mounts shows delayed frontal suture formation (yellow arrow) and abnormal suture morphology (white dotted lines) in Ddr2slie/slie mice compared with WT. Boxed region is shown in higher magnification; right. Scale bar: 100 μm. (i) Hematoxylin and eosin (H&E) staining shows open frontal sutures in Ddr2slie/slie, but transverse sutures, such as coronal and lambdoid were not affected (highlighted by yellow lines). Ddr2slie/slie calvariae also had a smaller bone marrow cavity (Bm, white arrows) compared with WT. Frontal suture, coronal section; transverse sutures, sagittal section. Scale bar: 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** Max: Maxillary; Mand: Mandibular; M1: first molar; INC: Incisor; ISS: Intersphenoid synchondrosis; SOS: Spheno-occipital synchondrosis.
+
+### Reduced anterior-posterior skull growth in Ddr2 deficiency is explained by abnormal chondrogenesis and delayed synchondrosis ossification
 
 Skull elongation is mainly driven by endochondral ossification at the cranial base (Hallett et al., 2022). The impaired AP skull growth observed in Ddr2slie/slie mice prompt us to examine the cranial base synchondroses and associated bones. We focused on intersphenoid (ISS) and spheno-occipital synchondroses (SOS) that form the anterior and posterior borders of basisphenoid bone (BS), the most affected cranial base bone in Ddr2slie/slie mice (Figure 2c). The BS bone forms the mid-posterior cranial base providing a foundation to support the brain, along with presphenoid (PS) and basio-occipital (BO) bones (Figure 2a). Our analysis showed that the ISS and SOS were abnormally wide in Ddr2slie/slie mice compared with WT littermates (Figure 2a–d). At 2 months, the width of the ISS and SOS was increased by 187% and 23%; respectively, while a significant increase in the height was only observed in the SOS of knockout mice (12%) (Figure 2b). Accordingly, growth of basisphenoid bone was significantly inhibited in the knockout mice (reduced by 14%) (Figure 2c). The basio-occipital (BO) bone was also significantly affected but to lesser extent. No major difference was seen in the presphenoid (PS) bone (Figure 2c). H&E staining of 2-week-old skulls revealed that the Ddr2-deficient synchondroses, particularly ISS, showed severe defects in chondrocyte organization associated with loss of the columnar arrangement of proliferative chondrocytes (Figure 2d).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig2-v4.jpg)
+
+**Figure 2.:** (a) H&E staining (upper) and μCT scans (lower) of WT and Ddr2slie/slie skulls showing wide cranial base synchondroses. Scale bar: 500 μm. Boxed region (red) is shown in higher magnification. Br: Brain; t: Tongue. ISS: Intersphenoid synchondrosis; SOS: Spheno-occipital synchondrosis; PS: Presphenoid bone; BS: Basisphenoid bone; BO: Basis-occipital bone. In μCT scan of skulls (lower), arrowheads point to cranial base synchondroses; yellow and red lines highlight the width and height of synchondroses; respectively (Quantification is shown in b). Cyan lines highlight shortening of basisphenoid bone between ISS and SOS in Ddr2slie/slie vs WT mice (Quantification of cranial base bone lengths is shown in c); Data are presented as mean ± SD. (n=10). *p<0.01, ****p<0.0001, ns, not significant, two-tailed unpaired t test. (d), H&E staining of ISS and SOS sections showing loss of columnar organization of proliferative chondrocytes (red arrowheads) in Ddr2slie/slie mice at 2 weeks of age. Red arrows point to resting chondrocyte zone. Boxed region is shown in higher magnification. Scale bar: 100 μm. (e) EdU staining (green) of ISS and SOS sections showing reduction in EdU + cells (white arrowheads) in Ddr2slie/slie mice compared with WT littermates. Boxed region is shown in higher magnification. Scale bar: 100 μm. Br: Brain, Ms: Muscle; Bm: Bone marrow. White dotted lines define the ventral surface of brain. (f) Percentage of EdU + cells in ISS and SOS of WT and Ddr2slie/slie mice. (g) TUNEL staining (brown, black arrowheads) shows no changes in apoptotic levels between mice Ddr2slie/slie and WT. Cell nuclei were stained with methyl green (green). Scale bar: 50 μm. (h) Quantification of TUNEL-positive cells in cranial base synchondroses. Data in are presented as mean ± SD (panel f, n=5-7; h, n=5). ***p<0.001, ****p<0.0001, ns, not significant, two-tailed unpaired t test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Localization of cleaved caspase 3 in ISS and SOS in 2-week-old mice using immunofluorescence. (b), quantitation of IF staining. Scale bar, 100 um.
+
 To begin understanding the cellular basis for the observed changes in the size of cranial base bones and synchondrosis structure, we assessed cell proliferation and apoptosis. EdU staining (shown in green) indicated labeling mainly in the proliferative chondrocyte zone of ISS and SOS (Figure 2e, white arrowheads); however, EdU +chondrocytes were significantly reduced in Ddr2-deficient synchondroses: 55% in ISS and 26% in SOS, compared with WT controls (Figure 2f). We also performed TUNEL assay to measure apoptosis, but did not detect differences between Ddr2-deficient and control mice in either ISS or SOS regions (Figure 2g–h). Consistent with this result, staining for cleaved caspase 3 was also not affected by Ddr2 deficiency (Figure 2—figure supplement 1).
 
-## Ddr2 deficiency is associated with abnormal cranial base ECM organization
+### Ddr2 deficiency is associated with abnormal cranial base ECM organization
 
 While a reduction in chondrocyte proliferation may explain the smaller BS and BO bones seen in Ddr2-deficient mice, proliferation changes do not readily explain the observed synchondrosis widening. To gain further insight into the pathogenesis underlying this phenomenon, we examined the distribution of ECM proteins associated with resting and proliferative chondrocytes (type II collagen), hypertrophic chondrocytes (type X collagen) and osteoblasts (type I collagen and integrin-binding sialoprotein (IBSP)) (Robey, 2002).
 
 In wild-type mice, immunofluorescent staining of type II collagen was homogenously distributed in the cartilage matrix around chondrocytes. However, Col II was unevenly distributed in Ddr2-deficient synchondroses where more intense territorial matrix staining was observed around small clusters of chondrocytes with diminished staining in the interterritorial matrix (Figure 3a, arrows). These data suggest that DDR2 may regulate Col II fibril distribution and/or orientation. To explore this further, second harmonic generation (SHG) imaging was used to determine collagen fibril orientation in the central resting zone of ISS from WT and Ddr2slie/slie mice (Figure 3—figure supplement 1). In control synchondroses, collagen fibrils were evenly distributed and generally oriented along the A-P axis of the ISS. In contrast, fibrils in Ddr2-deficient synchondroses were more concentrated adjacent to cells and had a more randomized orientation as reflected by a dramatic decrease in anisotropy relative to WT controls.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig3-v4.jpg)
+
+**Figure 3.:** (a-d) Immunofluorescent staining of ISS and SOS sections from 2-week-old WT and Ddr2slie/slie synchondroses. (a) Representative images of COL2 immunostaining (red) in ISS and SOS showing homogenous distribution around chondrocytes in WT synchondroses, while Ddr2slie/slie mice showed uneven, ring-like immunostaining around chondrocytes (white arrowheads). Boxed region is shown in higher magnification (bottom). Scale bar: 200 μm. (b) Immunofluorescent images of COL10 immunostaining in the hypertrophic zone (HZ) of synchondroses showing no major changes in staining distribution between WT and Ddr2slie/slie mice. Scale bar: 50 μm. (c) Immunofluorescence images showing COL1 (red) staining in trabecular (arrowheads) and cortical (arrows) bones of the cranial base in WT and Ddr2slie/slie mice. Scale bar: 200 μm. (d) Immunofluorescent images showing IBSP (red) in trabecular (arrowheads) and cortical (arrows) bones of cranial base is decreased in Ddr2slie/slie synchondrosis compared with WT littermates. See Figure 3—figure supplement 2 for quantitation of IF staining. Scale bar: 200 μm. Cell nuclei were stained with DAPI (blue) in a–d. Bm: Bone marrow; Br: Brain; Tb: Trabecular bone; Ct: Cortical bone; Ms: Muscle.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Second harmonic generation imaging of fibrillar collagen in the ISS resting zone of 2-week-old WT versus Ddr2slie/slie mice. Scale bar, 100 µm (b) anisotropy was measured using ImageJ FibrilTool as described in Methods. For each sample, 3 or 4 ROIs were selected within the central ISS resting zone for analysis and averaged (n=3 or 4/group). Bars are mean +/-SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig3-figsupp2-v4.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Ibsp in hypertrophic chondrocyte layers. (b) Ibsp in primary spongiosa. Note: Ibsp is significantly lower only in the SOS. (c) No change in Col I in the primary spongiosa. Data are presented as mean ± SD. *p<0.05.
+
 Type X collagen immunostaining showed a specific signal in the hypertrophic zone although no consistent differences in staining intensity were observed between WT and Ddr2slie/slie mice (Figure 3b). Immunofluorescence using COL I and IBSP antibodies showed specific staining in trabecular (Tb, primary spongiosa) and cortical (Ct) bones (Figure 3cd, Figure 3—figure supplement 2 for quantification of staining intensity). For COL I, no differences in staining intensity were observed when WT and Ddr2slie/slie mice were compared. However, IBSP staining was reduced in hypertrophic chondrocytes and primary spongiosa in Ddr2-deficient SOS compared with WT, suggesting defective bone formation and mineralization, although these differences were not seen in the ISS. In summary, Ddr2 deficiency is associated with abnormal chondrogenesis in the cranial base, disorganized chondrocytes, reduced chondrocyte proliferation, abnormal COL2 ECM distribution, randomized fibril orientation and delayed endochondral ossification.
 
-## Distribution of Ddr2 expression in the craniofacial skeleton
+### Distribution of Ddr2 expression in the craniofacial skeleton
 
 To begin relating the cellular functions of DDR2 to the observed craniofacial phenotype of Ddr2-deficient mice, we first examined the temporal and spatial distribution of Ddr2-expressing cells using a Ddr2-lacZ knock-in mouse model. The expression pattern of Ddr2 was examined using a combination of whole mount and frozen sections from Ddr2+/LacZ mice. During fetal development, LacZ activity was first detected at E11.5 (not seen at E9.5 -not shown). The whole mount staining at this time revealed broad Ddr2 expression in the developing midface including the median and lateral nasal process (MNP and LNP), maxillary and mandibular processes, and around eyes (Figure 4a). A similar expression pattern was seen at E13.5 and E16.5 (Figure 4a). Using frozen sections of the E13.5 embryonic head, LacZ activity was detected in cartilage primordia of the cranial base, tongue mesenchyme, nasal septum, and Meckel’s cartilage in the developing mandible, and, as previously reported, developing tooth buds (Mohamed et al., 2020). However, no LacZ activity was detected in the developing brain (Figure 4—figure supplement 1a).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig4-v4.jpg)
+
+**Figure 4.:** (a) Whole-mount X-gal staining (green) of Ddr2Lacz/+ skulls showing of Ddr2 expression in midfacial region, cranial vault, and cranial sutures. Scale bar: 50 μm. (b) X-gal staining of cryostat sections of calvaria from newborn mice showing expression in suture mesenchyme, periosteum, and dura mater of flanking bones. Scale bar: 100 μm, left and 50 μm, right. (c) X-gal staining of cryostat section of ISS (top) and SOS (bottom) from newborn mice revealing Ddr2 expression in resting and proliferative chondrocyte zones, but low or undetected in terminal hypertrophic chondrocytes. Boxed regions are shown in higher magnification, right. Scale bar: 50 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** (a) In Ddr2+/LacZ embryos harvested at E13.5, intense X-gal staining can be seen in the maxilla (Mx), mandible (Mn), cartilage primordia of cranial base (Cb, black arrowhead), nasal septum and tooth buds. No staining was detected in the brain (Br) (top row, whole mount X-gal staining; middle and bottom row, X-gal staining on frozen embryos). (b) Whole mount and frozen sections of calvariae from 3-month-old mice show intense X-gal staining in cranial sutures, periosteum and lining of bone marrow inside cranial bones.
+
 Whole mounts of Ddr2+/LacZ skulls from newborn mice showed broad Ddr2 expression across the calvarial surface with preferential enrichment in cranial sutures. This distribution became more restricted to sutures in 3-month-old adult mice (Figure 4a). Frozen sections of neonatal Ddr2+/LacZ skulls revealed Ddr2 expression in the suture mesenchyme, periosteum of flanking bones, and dura mater on the ventral surface of calvaria (Figure 4b). Suture and periosteal expression were also seen in adult calvaria as well as in cells lining the bone marrow (Figure 4—figure supplement 1b). However, LacZ activity was not seen in osteocytes, the terminally differentiated cells inside calvarial bones. This indicates that Ddr2 expression is highest during early stages of osteoblast differentiation. Ddr2 expression was also detected in synchondroses, primarily located in the resting (RZ) and proliferative chondrocyte (PZ) zone but low or undetected in terminal hypertrophic chondrocytes (HZ), and in the associated bone marrow and periosteum (Figure 4c). Overall, Ddr2 expression was highest in regions enriched in skeletal progenitor cells including cranial sutures, periosteum and dura mater and resting chondrocytes. This suggests that Ddr2 has functions in skeletal progenitor cells which contribute to development of the craniofacial skeleton.
 
-## DDR2-expressing cells colocalize with GLI1 in cranial sutures and synchondroses, contributing to osteogenic and chondrogenic lineages
+### DDR2-expressing cells colocalize with GLI1 in cranial sutures and synchondroses, contributing to osteogenic and chondrogenic lineages
 
 Cranial sutures contain stem cells that contribute to craniofacial bone formation (Zhao et al., 2015). Since Ddr2 is also expressed in sutures, we determined whether DDR2 is in skeletal progenitor cells whose progeny can form the major cranial bone cell types. To answer this question, we used a lineage-tracing approach by breeding heterozygous Ddr2Mer-icre-Mer female mice with male homozygous Rosa26LSL-tdTomato reporter mice. Cre-mediated recombination in Ddr2Mer-icre-Mer;Rosa26LSL-tdTomato mice was induced with intragastric tamoxifen injections given for 4 days after birth and then skulls were harvested and analyzed at day 5, 14, and 2 months of age (Figure 5a). Whole mounts of calvaria showed labeling that persisted for at least 2 months in all cranial sutures; frontal, sagittal, coronal and occipital sutures (Figure 5—figure supplement 1a). At day 5, frozen sections revealed tdTomato labeling in a few cells in the cranial suture mesenchyme and in developing periosteum and dura mater of flanking calvarial bones (Figure 5b). At this age, the calvarial bone is very thin and devoid of a marrow cavity. Two weeks later, labeling was evident in cranial sutures, periosteum, and dura mater. Over a 2-month chase period, labeling became intense in cranial suture mesenchyme, where undifferentiated cells reside, in the lining cells in the bone marrow of flanking calvarial bones, and in osteocytes (Figure 5b, Figure 5—figure supplement 1a). Therefore, the osteoblasts, osteocytes, and bone marrow-lining cells responsible for calvarial bone formation are derived from Ddr2-expressing cells.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig5-v4.jpg)
+
+**Figure 5.:** (a) Protocol used for induction of Cre-recombination and expression of tdTomato fluorescent protein (red) upon tamoxifen injection. (b) Fluorescent tdTomato on cryostat sections of calvaria (upper panel) at the postnatal P5, P14, and P60 showing labeling (white arrowheads) in suture mesenchyme, periosteum (Ps) and dura mater (Du), subsequently contributing to osteocytes (Ocy) (inset box) and bone marrow (Bm) of calvarial bones over time. Scale bar: 100 μm. Lower panel, cranial base synchondrosis (ISS) showing labeling at P5 in resting (RZ) and proliferative (PZ) chondrocyte zones, but not in the hypertrophic zone (HZ) (cyan dotted lines), consistent with X-gal staining. Lineage trace at P14 shows an increase in tdTomato + cells in all synchondrosis regions and associated bone marrow (Bm). At P60, tdTomato labeling is persistent in the middle zone and shows a clone of tdTomato labeling in proliferative and hypertrophic chondrocytes (yellow asterisk) and appears in the lining of bone marrow (Bm) and osteocytes (Ocy) of cortical bone (Ct). Scale bar: 100 μm (P14 and P60) and 50 μm (P5). Gray: cell nuclei. (c) Protocol used for induction of Cre-recombination and expression of tdTomato fluorescent protein (red) in Gli1CreERT; Rosa26LSL-tdTomato mice. (d) Fluorescent tdTomato (red) on cryostat sections of calvaria (right) and cranial base synchondroses (ISS and SOS, left) from 2-week-old Gli1CreERT; Rosa26LSL-tdTomato mice showing labeling in a similar cell population to that seen with Ddr2mer-iCre-mer. Scale bar: 200 μm (Suture; left) and 100 μm (ISS and SOS; right). Boxed region is shown in higher magnification (bottom). RZ: resting zone; PZ: proliferative zone; HZ: hypertrophic zone. (e) Representative immunofluorescence images showing Gli1 (green) and Ddr2 (red) immunostaining of coronal sutures, SOS and ISS from 2-week-old mice. Scale bar: 100 μm. Boxed region is shown in higher magnification (bottom). White arrowheads indicate co-localization. Cell nuclei were stained with DAPI (blue). Bm: Bone marrow; Tb; trabecular bone.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig5-figsupp1-v4.jpg)
+
+**Figure 5—figure supplement 1.:** Neonatal Ddr2Mer-icre-Mer;Rosa26LSL-tdTomato mice were treated with tamoxifen as described in Figure 5. (a) Whole mounts (left) at P14 and P60 show Ddr2 tdTomato labeling in all cranial sutures: frontal, sagittal, coronal, and lambdoid sutures (left). Cryosections (right) show distribution of tdTomato-labeled cells at P60 in the suture mesenchyme, bone marrow lining cells and osteocytes. Scale bar: 50 μm. (b) Cryostat sections of the cranial base spheno-occipital synchondrosis (SOS) shows tdTomato labeling initially in resting and proliferative chondrocyte zones (P5). At later times (P14, P60), progeny of Ddr2-positive cells form single or two column clones along the axis of cranial base growth extending into the hypertrophic zone and osteocytes. Scale bar: 50 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig5-figsupp2-v4.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Coronal suture. (b) SOS. (c) ISS. Colocalization is expressed as the percentage of GLI1 + cells that are also DDR2+.
 
 The cranial base synchondroses are a second major site of Ddr2 expression. TdTomato labeling was examined in both ISS (Figure 5b) and SOS (Figure 5—figure supplement 1b). At day 5, TdTomato labeling was detected in some cells in resting and proliferative zones, where Ddr2-labeled cells were either single cells dominant in the resting zone or pairs of daughter cells dominant in proliferative zone. However, Ddr2 showed no labeling in hypertrophic chondrocytes. These results are in agreement with Ddr2-LacZ expression, indicating that tdTomato-labeled cells include Ddr2-expressing cells. By two weeks, progeny of Ddr2-labeled cells were seen in all chondrocyte lineages and associated bone marrow. By 2 months, labeled cells persisted in the resting chondrocyte zone and formed columns of cells extending through proliferative and hypertrophic zones. Progeny of Ddr2-expressing cells were also seen on the surface of trabecular bone, in the bone marrow and in osteocytes within the cortical bone of the cranial base (Figure 5b, Figure 5—figure supplement 1b). Together, our results indicate that Ddr2 is expressed in cell populations within cranial sutures and synchondroses having features of skeletal progenitor cells, but the identity of these cells still needs to be determined.
 
 GLI1, a mediator of hedgehog signaling, is associated with stem/progenitor cells in cranial sutures (Zhao et al., 2015). We asked if there is overlap between Ddr2- and Gli1-expressing cells. To address this question, we verified the activity of inducible Gli1-CreERT under our experimental conditions by breeding with Rosa26LSL-tdTomato reporter mice. Newborn mice heterozygous for inducible Gli1CreERT and the Rosa26LSL-tdTomato allele were given four intragastric tamoxifen injections and analyzed after 2 weeks (Figure 5c). As previously reported (Zhao et al., 2015), Gli1CreERT labeling was detected in cranial sutures in a pattern like that seen for Ddr2 (Figure 5d). Gli1CreERT also showed labeling in all chondrocyte lineages of cranial base synchondroses, with high concentration in resting and proliferative chondrocytes (Figure 5d). This suggests that Gli1 expression is not restricted to cells in cranial sutures or subchondral metaphyseal bone as previously reported, but it is also in growth plate chondrocytes of synchondroses. The similarity between Ddr2Mer-icre-Mer and Gli1CreERT labeling in cranial sutures and synchondroses suggests there may be a functional overlap between Ddr2- and Gli1- expressing cells. In support of this concept, we confirmed co-expression in the calvaria and synchondroses using co-immunostaining with DDR2 and GLI1 antibodies (Figure 5e, Figure 5—figure supplement 2 for quantification of colocalization). A high degree of colocalization was observed in select suture cells and adjacent periosteum and in the central resting zone and hypertrophic regions of the SOS and ISS with a subfraction of GLI1 + cells (68–78 percent) also being DDR2+. The DDR2-GLI1 colocalization in synchondroses is reminiscent of what we previously observed in long bone growth plates where colocalization was preferentially seen in resting, proliferative and hypertrophic chondrocytes (Mohamed et al., 2022).
 
-## Ddr2 functions in Gli1+ skeletal progenitors to control craniofacial morphogenesis
+### Ddr2 functions in Gli1+ skeletal progenitors to control craniofacial morphogenesis
 
 Based on the aforementioned results, we conclude that global Ddr2 deficiency alters craniofacial morphology by affecting both calvarial bone thickness and frontal suture mineralization as well as endochondral bone growth in the cranial base. Furthermore, our localization and lineage tracing studies suggest preferential expression of Ddr2 in suture-associated skeletal progenitors and resting/proliferating zone chondrocytes in cranial base synchondroses. Substantial overlap was noted between DDR2 and cells expressing the skeletal progenitor marker, GLI1. Ddr2 expression was also detected in resting and proliferating chondrocytes where type 2 collagen is present. To determine if Ddr2 has cell-autonomous functions in specific cell populations, a conditional deletion strategy was employed.
 
@@ -83,13 +131,25 @@ Our initial focus was on Gli1-expressing cells since this marker is associated w
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig6-v4.jpg)
 
-**Figure 6.:** Ddr2 in Gli1-expressing cells resulted in a craniofacial phenotype similar to Ddr2 mice.slie/slie(a) Protocol used for induction of Cre-recombination upon tamoxifen injection. (b) Genotyping PCR showing WT (lower band) and Ddr2 floxed alleles (upper band) near 1650 bp and recombined knockout allele below the 650 bp marker (KO). (c) Top head view showing Gli1 mice have short snout compared with CreERT; Ddr2fl/flDdr2 mice. Scale bar: 1 cm. (fl/fld) μCT scans of Ddr2 and fl/flGli1 skulls show reduced anterior-posterior skull length and increased anterior skull width (quantification in CreERT; Ddr2fl/fle–g). Note thinning and suture defect in the frontal bone in Gli1 skulls (CreERT; Ddr2fl/fld, bottom). Scale bar: 1 mm. (h) Quantification of frontal, parietal, and occipital bone thickness. (i) Alcian blue and Alizarin red whole mount staining shows Gli1-Cre; Ddr2 skulls have wide cranial base synchondroses compared with fl/flGli1. Scale bar: 500 μm. (CreERT and Ddr2fl/flj) H&E staining of ISS shows widening of resting zone and chondrocyte disorganization in Gli1 mice. Scale bar: 50 μm. RZ: Resting zone; PZ: Proliferative zone; HZ: Hypertrophic zone. Red bar compares RZ width. (CreERT; Ddr2fl/flk) Immunofluorescence images show reduced pDDR2 (red) immunostaining indicative of reduced DDR2 signaling in Gli1 synchondrosis. Dotted lines denote chondro-osseous junction. Boxed region is shown in higher magnification, lower panel. Cell nuclei were stained with DAPI (blue). Arrows, resting zone; arrowheads, proliferative zone. Scale bar: 50 μm. (CreERT; Ddr2fl/fll), quantification of immunostaining in k. (m-p) μCT images and quantification show enlarged synchondroses associated with shortening in cranial base bone lengths in 3-month-old Gli1 skulls compared with controls. Scale bar: 500 μm. c-h, (CreERT; Ddr2fl/flm-p) 3-month-old mice. (i–l) 2-week-old mice. Data are presented as mean ± SD. (n=10). *p<0.01, **p<0.01, ***p<0.001, ****p<0.0001, ns, not significant, two-tailed unpaired t test.Figure 6—source data 1.Ddr2 versus fl/flGli1 ;CreERTDdr2  mice.fl/fl
+**Figure 6.:** (a) Protocol used for induction of Cre-recombination upon tamoxifen injection. (b) Genotyping PCR showing WT (lower band) and Ddr2 floxed alleles (upper band) near 1650 bp and recombined knockout allele below the 650 bp marker (KO). (c) Top head view showing Gli1CreERT; Ddr2fl/fl mice have short snout compared with Ddr2fl/fl mice. Scale bar: 1 cm. (d) μCT scans of Ddr2fl/fl and Gli1CreERT; Ddr2fl/fl skulls show reduced anterior-posterior skull length and increased anterior skull width (quantification in e–g). Note thinning and suture defect in the frontal bone in Gli1CreERT; Ddr2fl/fl skulls (d, bottom). Scale bar: 1 mm. (h) Quantification of frontal, parietal, and occipital bone thickness. (i) Alcian blue and Alizarin red whole mount staining shows Gli1-Cre; Ddr2fl/fl skulls have wide cranial base synchondroses compared with Gli1CreERT and Ddr2fl/fl. Scale bar: 500 μm. (j) H&E staining of ISS shows widening of resting zone and chondrocyte disorganization in Gli1CreERT; Ddr2fl/fl mice. Scale bar: 50 μm. RZ: Resting zone; PZ: Proliferative zone; HZ: Hypertrophic zone. Red bar compares RZ width. (k) Immunofluorescence images show reduced pDDR2 (red) immunostaining indicative of reduced DDR2 signaling in Gli1CreERT; Ddr2fl/fl synchondrosis. Dotted lines denote chondro-osseous junction. Boxed region is shown in higher magnification, lower panel. Cell nuclei were stained with DAPI (blue). Arrows, resting zone; arrowheads, proliferative zone. Scale bar: 50 μm. (l), quantification of immunostaining in k. (m-p) μCT images and quantification show enlarged synchondroses associated with shortening in cranial base bone lengths in 3-month-old Gli1CreERT; Ddr2fl/fl skulls compared with controls. Scale bar: 500 μm. c-h, (m-p) 3-month-old mice. (i–l) 2-week-old mice. Data are presented as mean ± SD. (n=10). *p<0.01, **p<0.01, ***p<0.001, ****p<0.0001, ns, not significant, two-tailed unpaired t test.
 
 Together, these results are consistent with the GLI1 distribution we observed in cranial sutures and synchondroses and suggest that DDR2 functions in GLI1-positive cells to both control suture formation/calvarial bone mineralization as well as endochondral growth in the cranial base. However, it is also possible that changes in suture formation/cranial vault growth could be secondary to reduced growth of the cranial base as has been previously proposed (Kreiborg et al., 1993). If this were true, the cranial vault defects seen in Ddr2slie/slie and Gli1CreERT; Ddr2fl/fl mice could be secondary to deficient growth at the cranial base rather than reflecting separate functions of Ddr2 in sutures and calvarial bone. To discriminate between these possibilities, Col2a1-Cre; Ddr2f/f mice were developed to selectively deleted Ddr2 in chondrocytes (Ovchinnikov et al., 2000). At birth, mutant mice were viable and indistinguishable from their control littermates, but as they matured, Col2a1-Cre; Ddr2fl/fl mice exhibited growth defects compared with littermate controls (Ddr2fl/fl). The Col2a1-Cre transgene by itself did not cause any change in the cranial base synchondroses as demonstrated by whole mount staining (Figure 7i). Inhibition of Ddr2 signaling in cranial base cartilage was confirmed by pDDR2 immunofluorescence (Figure 7j) as well as PCR analysis of DNA extracted from ear cartilage (not shown). Linear measurements on micro-CT scans of 3-month-old skulls (n=10) showed significantly reduced AP skull growth and increased anterior and posterior skull width and reduced posterior cranial height in Col2a1-Cre; Ddr2fl/fl mice (Figure 7a–d). However, the reduction in AP skull length (7%) did not reach levels seen in Ddr2slie/slie (12%) or Gli1CreERT; Ddr2fl/fl skulls (11%) (Figure 1 versus 6). Col2a1Cre; Ddr2fl/fl mice also exhibited growth defects in endochondral bones, mainly BS and BO contributing to cranial base hypoplasia (Figure 7h). In addition, the ISS was significantly wider (270%) and higher (32%) (Figure 7g and f). The width and height of the SOS in Gli1CreERT;Ddr2fl/fl was also increased, but to a lesser extent than for the ISS (Figure 7g). This phenotype is like that seen in Ddr2slie/slie and Gli1CreERT;Ddr2fl/fl mice. In contrast, conditional deletion of Ddr2 in chondrocytes minimally affected the AP growth of cranial vault (decreased by 2.5%) (Figure 7b). Col2a1Cre; Ddr2fl/fl mice exhibited significant thinning in the frontal bone (56%) as compared with controls (Figure 7a and e). Unlike Ddr2slie/slie or Gli1CreERT;Ddr2fl/fl mice, the parietal bone (11.4%,) and occipital bone (12%) also showed a moderate decrease in thickness-11.4 and 12%, respectively (Figure 7e). Significantly, conditional knockout in Col2a1-Cre lineages did not affect cranial sutures which were indistinguishable from Ddr2f/f controls (n=10 mice/genotype, Figure 7a). This clearly resolves functions of Ddr2 in cranial base that were disrupted in Ddr2slie/slie, Gli1CreERT;Ddr2fl/fl and Col2a1Cre; Ddr2fl/fl mice from functions in sutures that were only disrupted in Ddr2slie/slie and Gli1CreERT;Ddr2fl/fl animals and establishes separate functions for Ddr2 in both suture mesenchyme and cranial base chondrocytes.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig7-v4.jpg)
+
+**Figure 7.:** (a-d) μCT scans of Ddr2fl/fl and Col2a1Cre;Ddr2fl/fl skulls (3-month-old) showing reduced anterior-posterior skull length, length of individual bones and increased anterior and, to a lesser extent, posterior skull width in conditional knockout mice. Note thinning of frontal bone in Col2a1Cre;Ddr2fl/fl skulls, but no effect on cranial sutures. Scale bars: 1 mm. (e) Quantification of frontal, parietal, and occipital bone thickness. (f–h) Quantification of μCT scans showing enlarged synchondroses associated with shortening in cranial base bone lengths in Col2a1Cre;Ddr2fl/fl skulls. Data are presented as mean ± SD. (n=10). *p<0.01, **p<0.01, ***p<0.001, ****p<0.0001, ns, not significant, two-tailed unpaired t test. (i) Alcian blue and alizarin red whole mount staining showing 2-week Col2a1Cre;Ddr2fl/fl skulls had wide cranial base synchondroses compared with Col2a1Cre and Ddr2fl/fl. Scale bar: 500 μm. (j) Immunofluorescence images showing reduced pDDR2 (red) immunostaining indicating loss of DDR2 signaling in Col2a1Cre;Ddr2fl/fl mice (Quantification in k). Scale bar: 50 μm. Boxed region is shown at higher magnification, lower panel. Cell nuclei were stained with DAPI (blue). (l-n) Analysis showing Col2a1Cre;Ddr2fl/fl mice exhibited time-dependent widening in resting zone, altered polarization and ectopic hypertrophy. (l) Time-course analysis using H&E staining shows no difference in histological structures of the ISS between Col2a1Cre;Ddr2fl/fl mice and their control littermates at P1, but during the first 2 weeks, the resting zone became abnormally wide (red lines) and exhibited ectopic hypertrophy on the ventral side of cranial base synchondrosis (red box). Scale bar: 50 μm. (m) Immunofluorescent images of GM130 staining (green) shows well-defined Golgi staining adjacent to the nucleus of cells in RZ of wild type synchondroses, but in mutant synchondroses, GM130 immunostaining is diffuse and ill-defined indicating disturbed cell organization. Boxed region is shown in higher magnification, lower panel. Cell nuclei were stained with DAPI (blue). Scale bar: 20 μm. (n) Linear measurements shows increased spacing between chondrocytes in resting zone of wildtype and mutant synchondroses. Spacing between chondrocytes was measured by drawing lines between chondrocytes in resting zone using ImageJ. (a–h) 3-month-old mice, (i–n) 2-week-old mice. Data are presented as mean ± SD. (n=3). ****p<0.0001, two-tailed unpaired t test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig7-figsupp1-v4.jpg)
+
+**Figure 7—figure supplement 1.:** (a-d) Quantification using μCT scans shows no difference between Ddr2fl/fl and BglapCre; Ddr2fl/fl skull length, width and height at age of 3 months. Scale bar: 1 mm in a. (e–g) quantification showing no difference in frontal, parietal, and occipital bone thickness. (h–k) Quantification using μCT scans showing no changes in cranial base synchondroses or associated bones. Data are presented as mean ± SD. (n=10). ns, not significant, two-tailed unpaired t test.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/77257/elife-77257-fig7-figsupp2-v4.jpg)
+
+**Figure 7—figure supplement 2.:** (a) EdU staining (green) showed a significant reduction of chondrocyte proliferation in Col2a1Cre; Ddr2fl/fl synchondrosis. (b) Bar graph shows quantification of EdU-positive cells in ISS and SOS. (c) COL2 immunostaining shows altered type II collagen matrix in Col2a1Cre; Ddr2fl/fl mice. n=3 mice, **p<0.01, ****p<0.0001. Scale bar: 50 μm in (a), 20 μm in (c).
+
 In contrast to results with Gli1CreERT;Ddr2fl/fl and Col2a1Cre;Ddr2fl/fl mice, conditional deletion of Ddr2 in mature osteoblasts using BglapCre did not affect skull length, cranial sutures, or the cranial base in 3-month-old mice (Figure 7—figure supplement 1). This Cre line induces efficient recombination in mature osteoblasts/osteocytes (Zhang et al., 2002) and we detected efficient excision of the floxed Ddr2 allele in DNA from vertebrae-containing tail biopsies from BglapCre;Ddr2fl/fl mice (result not shown). These results are consistent with craniofacial functions of Ddr2 being restricted to skeletal progenitors and chondrocytes rather than mature bone forming cells.
 
-## Loss of Ddr2 in chondrocytes causes ectopic hypertrophy and disrupted cell polarization
+### Loss of Ddr2 in chondrocytes causes ectopic hypertrophy and disrupted cell polarization
 
 The presence of abnormal synchondroses and associated cranial base hypoplasia was a consistent finding after global or conditional Ddr2 inactivation. In all cases, reduced growth of BS and BO bones was observed and chondrocyte organization into resting, proliferative and hypertrophic zones was disrupted. To further define the onset and evolution of synchondrosis changes in Ddr2 deficiency, we conducted a time-course histological analysis focusing on ISS morphology of Col2a1Cre;Ddr2fl/fl mice (Figure 7I). At birth, no significant differences in synchondroses were seen between mutant and control littermates. However, as endochondral ossification progressed, the resting zone (highlighted with red lines) became progressively narrower in controls while expanding at the expense of the proliferative and hypertrophic zones in Col2a1Cre;Ddr2fl/fl mice (Figure 7l). As was the case in Ddr2slie/slie mice (Figure 2), synchondrosis widening could not be explained by increased cell proliferation which was reduced in ISS and SOS (Figure 7—figure supplement 2a). The question became why mutant synchondroses were enlarged and exhibited an increase in the cell number, particularly in the central resting zone (Figure 7l). It is possible that chondrocytes proliferating at a lower rate were retained in the resting zone rather than transitioning to the proliferative zone. Also, as was seen in Ddr2slie/slie mice, type II collagen distribution was abnormal in Col2a1Cre;Ddr2fl/fl mice with a selective loss of staining in the inter-territorial matrix. In Col2a1Cre;Ddr2fl/fl mice, we also observed an increase in average spacing between cells (Figure 7—figure supplement 2c, Figure 7n). Together, these changes likely contributed to the observed widening in the synchondrosis resting zone.
 
@@ -121,7 +181,248 @@ In summary, this study establishes a critical function of Ddr2 in skeletal proge
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Discoidin Domain Receptor2 (Ddr2)</td>
+      <td>Genbank</td>
+      <td>Gene ID: 18214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Ddr2slie/slie</td>
+      <td>Jackson lab</td>
+      <td>JAX:008172</td>
+      <td>Breeding with C57BL/6 J mice at least 8 generations.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Ddr2LacZ mice</td>
+      <td>Generated from ‘knockout-first’ Ddr2tm1a(EUCOMM)Wtsi -ES cells(European Mutant Mouse Repository)</td>
+      <td>EPD0607__B01 PMID:35140200</td>
+      <td>‘knockout-first’ mice crossed with Sox2Cre mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Ddr2fl/f</td>
+      <td>Generated from ‘knockout-first’ Ddr2tm1a(EUCOMM)Wtsi -ES cells(European Mutant Mouse Repository)</td>
+      <td>EPD0607__B01 PMID:35140200</td>
+      <td>‘knockout-first’ mice crossed with FlpO mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Ddr2mer-iCre-mer</td>
+      <td>Generated in UCSD Transgenic Animal Model Core and Embryonic Stem Cell shared resource</td>
+      <td>PMID:35140200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Rosa26LSL-tdTomato</td>
+      <td>Jackson lab</td>
+      <td>JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Gli1CreERT</td>
+      <td>Jackson lab</td>
+      <td>JAX:007913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Col2a1Cre</td>
+      <td>Generated at Richard R. Behringer lab</td>
+      <td>PMID:10686612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>BglapCre</td>
+      <td>Generated at Thomas L. Clemens lab</td>
+      <td>PMID:12215457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ddr2fl/f _F</td>
+      <td>Renny T. Franceschi lab</td>
+      <td>PMID:35140200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ddr2fl/f _R</td>
+      <td>Renny T. Franceschi lab</td>
+      <td>PMID:35140200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ddr2-LacZ-F</td>
+      <td>Renny T. Franceschi lab</td>
+      <td>PMID:35140200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ddr2-LacZ-R</td>
+      <td>Renny T. Franceschi lab</td>
+      <td>PMID:35140200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ddr2mer-iCre-mer -F</td>
+      <td>Renny T. Franceschi lab</td>
+      <td>PMID:35140200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ddr2mer-iCre-mer -R</td>
+      <td>Renny T. Franceschi lab</td>
+      <td>PMID:35140200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human/mouse DDR2(Rabbit polyclonal)</td>
+      <td>LS Bio</td>
+      <td>LS-B15752</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human/mouse Y740P-DDR2(Rabbit monoclonal)</td>
+      <td>R&amp;D systems</td>
+      <td>MAB25382</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human/mousecleaved caspase 3(Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9661</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human/mouse COL2(Rabbit polyclonal)</td>
+      <td>ABCam</td>
+      <td>Ab34712</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human/mouse GLI1(Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-78259</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IBSP(Rabbit polyclonal)</td>
+      <td>Renny T Franceschi lab</td>
+      <td></td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human/mouse COL10(Rabbit polyclonal)</td>
+      <td>ABCam</td>
+      <td>Ab58632</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse COL1(Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>AB765P</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse GM130(Mouse polyclonal)</td>
+      <td>BD Biosciences</td>
+      <td>610822</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Alexa Fluor 488 Imaging Kit</td>
+      <td>Invitrogen</td>
+      <td>C10337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FragEL DNA Fragmentation Detection Kit</td>
+      <td>CalBiochem</td>
+      <td>QIA33-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Renny T Franceschi lab</td>
+      <td>PMID:35140200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aqua-Poly/Mount</td>
+      <td>Polysciences Inc</td>
+      <td>18606</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Gold Antifade Mountant with DAPI</td>
+      <td>Life technologies</td>
+      <td>P36931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td>GraphPad Software, San Diego, CA</td>
+      <td>https://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJFibrilTool-Plugin</td>
+      <td>PMID:24481272</td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Scano μCT 100</td>
+      <td>MicroView software version 2.5.0</td>
+      <td>PMID:35140200</td>
+      <td>Methods-Skull morphometric analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Smallie mice (Ddr2slie/slie) (Kano et al., 2008) were obtained from Jackson laboratory (stock no. 008172). Ddr2fl/fl mice with loxP sites flanking coding exon 8 of Ddr2 gene, Ddr2-LacZ mice and Ddr2mer-iCre-mer mice harboring a MerCreMer cassette knocked in-frame into exon 2 of the Ddr2 locus were previously described (Mohamed et al., 2020; Mohamed et al., 2022). For lineage analysis, Rosa26LSL-tdTomato mice (Madisen et al., 2010) were crossed with Ddr2mer-iCre-mer heterozygous mice to generate Ddr2mer-iCre-mer; Rosa26LSL-tdTomato mice. Tamoxifen was administered as previously described (Mohamed et al., 2022).
 
@@ -129,26 +430,26 @@ To investigate the role of Ddr2 in craniofacial development, we generated condit
 
 All mice were housed under a 12 hr light cycle in compliance with the Guidelines for the Care and Use of Animals for Scientific Research. All protocols for mouse experiments were approved by the Institutional Animal Care and Use Committee of the University of Michigan. Genotyping of Ddr2mer-iCre-me, Col2a1Cre, Gli1CreERT, BglapCre, and Rosa26LSL-tdTomato mice mice was performed using PCR primers, as previously described (Ovchinnikov et al., 2000; Zhang et al., 2002; Madisen et al., 2010; Ahn and Joyner, 2004). The genotyping of Ddr2slie/slie mice was performed using qRT-PCR with TaqMan probes on an ABI 7500 thermocycler (Applied BioSystems; Ge et al., 2016).
 
-## Morphometric analysis of skulls
+### Morphometric analysis of skulls
 
 The craniofacial skeleton was examined by whole-mount skeletal staining as described previously (McLeod, 1980). For microcomputed tomography analysis, 10 skulls from 3-month-old male and female mice were harvested and fixed in 10% formalin overnight at 4 °C. Using microCT Scanco Model 100 (Scanco Medical), mouse skulls were scanned and reconstructed with voxel size of 12 μm, 70 kVp, 114 μA, 0.5 mm aluminum filter, and integration time of 500ms. For craniofacial characterization, skull scans in VFF files were reoriented and cropped in MicroView software version 2.5.0 (see orientation in Figure 1—figure supplement 1) and linear craniofacial measurements were made on 2D reoriented CT images using ImageJ software (version 1.51). We conducted skull linear measurements using previously published craniofacial landmarks (Vora et al., 2015). Thickness of cranial bones was measured on 2D reoriented CT images using a defined position on orthogonal views of MicroView software. Mid-bone regions (highlighted in blue and orange colors in Figure 1b) were selected to measure the thickness the frontal and parietal bones on the coronal (frontal) plane, where right and left measurements were taken around frontal and sagittal sutures for frontal and parietal bone, respectively, and the average of two measurements were reported. Thickness measurements of the occipital bone were made on the sagittal plane as shown in Figure 1b and f. Measurements for cranial base synchondroses were made on the mid sagittal plane, where synchondrosis width was determined by drawing a straight line in between chondro-osseous junctions with flanking bones and synchondrosis height determined by measuring the distance between two parallel lines tangential to the ventral and dorsal surfaces of synchondroses (Figure 2a). The length of cranial base bones was quantified by measuring the distance between two lines defining anterior and posterior borders of individual cranial base bones. All linear measurements were made on reoriented 2D µCT images using straight-line function in ImageJ.
 
-## Histology and immunostaining
+### Histology and immunostaining
 
 The whole skulls were fixed in 4% paraformaldehyde (PFA) for 48 hr at 4 °C. Specimens were decalcified in 10% ethylenediaminetetracetic acid (EDTA) (pH 7.2) and were then processed for paraffin embedding. Specimens were sectioned at 5  μm, deparaffinized and hydrated in ethanol series (100%, 95%, 70%) and in distilled water. For histological analysis, the sections were stained with hematoxylin and eosin according to the standard procedures. For immunofluorescence, sections were subjected to heat-induced antigen retrieval using 1 X Diva Decloaker (Biocare medical) following the manufacturer’ instructions, washed with 1 X PBS and then incubated with blocking buffer containing 5–10% normal donkey serum, 1% bovine serum albumin (BSA), 0.01% tween in 1 X BSP for 1 hr at room temperature in a humid box. After blocking, the sections were incubated at 4 °C overnight, with the following primary antibodies: anti-DDR2 (LS B15752, 1:200), anti-Y740-P-DDR2 (R&D Systems MAB25382, 1:200), anti-cleaved caspase 3 (Cell Signaling 9661, 1:200), anti-COL2 (Abcam ab34712, 1:100); anti-COL10 (Abcam ab58632, 1:100); Anti-COL1(Millipore Sigma AB765P, 1:100); Anti-GM130 (BD Biosciences 610822,1:100); anti-IBSP (1:100). Anti-IBSP antibody was generated from a GST fusion protein containing amino acids 8–324 generated in the project laboratory. This was used as antigen for antibody production in rabbits (Harlan Laboratories). For Anti-GLI1 (Novus biological NBP1-78259, 1:100), sections were retrieved using citrate buffer (target retrieval solution, Dako) heated to 60 °C for 1 hr. The slides were rinsed three times with 1 X PBS, and the coverslip was mounted using ProLong Gold Antifade Mountant with DAPI (Life technologies) for cell nuclei staining. The sections were then imaged with a Nikon Eclipse 50i microscope and an Olympus DP72 camera.
 
-## X-Gal (β-galactosidase) staining
+### X-Gal (β-galactosidase) staining
 
 X-Gal staining of heterozygous Ddr2-LacZ (Ddr2+/LacZ) skulls was performed according to standard protocols (Nagy et al., 2007). Samples were fixed in 2% paraformaldehyde and 0.2% glutaraldehyde in 0.1 M phosphate buffer pH 7.3 plus 5 mM EGTA and 2 mM MgCl2 at 4 °C. For the whole-mount staining, samples were rinsed after fixation three times in 1 X PBS plus MgCl2, and then incubated at 37 °C overnight in a freshly prepared X-gal solution containing an X-gal substrate (UltraPure X-Gal, Invitrogen), 2 mM MgCl2, 5 mM potassium ferricyanide (III) (702587, Sigma), 5 mM potassium hexacyanoferrate (II) (P3289, Sigma), 0.01% sodium deoxycholate, 0.02% NP-40. The samples were then visualized using a dissection microscope (Nikon SMZ 745T), and images were captured using a Nikon DS-fi1 camera. The wild-type littermates were used as controls. For frozen sections, samples were decalcified with 20% EDTA (pH 7.2) for up to 2 weeks according to the mouse age, rinsed in 1 X PBS, then placed in 30% sucrose in 0.1 M phosphate buffer with 2 mM MgCl2 at 4 °C for overnight. Samples were then embedded in optimal cutting temperature compound (Tissue-Tek) and cryosectioned at 12 μm thickness at –20 °C, mounted on glass histological slides (Fisherbrand ColorFrost Plus). For LacZ staining of frozen sections, sections were post-fixed in 0.2% PFA in 0.1 phosphate buffer pH 7.2 for 10 min on ice, washed 3 times in MgCl2-containing PBS, and stained with an X-gal substrate (UltraPure X-Gal, Invitrogen), 2 mM MgCl2, 5 mM potassium ferricyanide (III) (702587, Sigma) and 5 mM potassium hexacyanoferrate (II) (P3289, Sigma) overnight at 37 °C. The sections were washed 3 times in 1 X PBS followed by distilled water, counterstained with Vector Nuclear Fast Red staining, and dehydrated through ethanol series and xylene and mounted with an Acrytol mounting medium (Leica).
 
-## Proliferation and apoptosis assay
+### Proliferation and apoptosis assay
 
 To assay cell proliferation, mice were injected intraperitoneally with 5-ethynyl-2’-deoxyuridine and sacrificed 4 hr after injection. EdU-labeled cells were detected using Click-iT EdU Alexa Fluor 488 Imaging Kit (Invitrogen, # C10337). Briefly, after deparaffinization and hydration, the tissue sections were incubated with Click-it reaction mixture for 30 min in a dark humidified chamber. The sections were washed three times with 1 X PBS for 2 min each, mounted with ProLong Gold Antifade Mountant with DAPI (Life technologies) and imaged with a Nikon Eclipse 50i microscope and an Olympus DP72 camera. To assay cell apoptosis, we performed terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) assay according to the manufacturer’s instructions (FragEL DNA Fragmentation Detection Kit, Colorimetric-Klenow Enzyme, Calbiochem). Briefly, after deparaffinization and rehydration, the tissue sections were rinsed in 1 X tris-buffered saline (TBS), permeabilized with Proteinase K and the endogenous peroxidase activity was blocked with 3% hydrogen peroxide for 5 min at room temperature. The sections were then incubated with Klenow Labeling reaction mixture in a humidified chamber at 37 °C for 1.5 hr. For labeling detection, the sections were incubated with peroxidase streptavidin conjugate and subsequently with DAB solution. The sections were counterstained with methyl green solution and imaged with a Nikon Eclipse 50i microscope and an Olympus DP72 camera.
 
-## Second harmonic generation imaging and analysis
+### Second harmonic generation imaging and analysis
 
 Frozen sections were dried at room temperature, washed with 1 X phosphate-buffered saline, and mounted using Aqua-Poly/Mount (Polysciences Inc, cat. 18606) and #1 slip cover (Richard-Allan Scientific, cat. 12460). Using the 40 X oil-objective on a Zeiss LSM 880-Inverted microscope, 40 micron z-stacks were captured from areas centered within the inter-sphenoid synchondrosis region of each sample (n=3–4). In ImageJ, each z-stack was used to create a maximum projection image for anisotropy analysis. Using the polygon tool, 2–4 regions of interest (ROI) were created on each maximum projection image to include areas with positive signal that were not oversaturated. FibrilTool, a plug-in for ImageJ, was used to quantify the anisotropy of collagen in each ROI (Boudaoud et al., 2014). For analysis, ROIs were averaged for each sample.
 
-## Statistical analysis
+### Statistical analysis
 
 The graphs and statistical analysis were performed in the GraphPad Prism software (version 6.0e, La Jolla California USA). Mouse studies used an N=10 based on power analysis of data from our previous study with Ddr2-deficient mice (Ge et al., 2016) where we estimate a minimum of 8 animals/group will be required to detect a power of.80 (95% CI, estimated effect size of η2>0.40). All values were presented as mean ± S.D. Unpaired, two-tailed Student’s t test was used to analyze the difference between the two experimental groups. * p<0.05; ** p<0.01, *** p<0.001, **** p<0.0001; n.s. not significant.

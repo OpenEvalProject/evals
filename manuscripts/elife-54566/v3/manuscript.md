@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Calcium ions (Ca 2+ ) are essential for many cellular signaling mechanisms and enter the cytosol mostly through voltage-gated calcium channels. Here, using high-speed Ca 2+ imaging up to 20 kHz in the rat layer five pyramidal neuron axon we found that activity-dependent intracellular calcium concentration ([Ca 2+ ] i ) in the axonal initial segment was only partially dependent on voltage-gated calcium channels. Instead, [Ca 2+ ] i changes were sensitive to the specific voltage-gated sodium (Na V ) channel blocker tetrodotoxin. Consistent with the conjecture that Ca 2+ enters through the Na V channel pore, the optically resolved I Ca in the axon initial segment overlapped with the activation kinetics of Na V channels and heterologous expression of Na V 1.2 in HEK-293 cells revealed a tetrodotoxin-sensitive [Ca 2+ ] i rise. Finally, computational simulations predicted that axonal [Ca 2+ ] i transients reflect a 0.4% Ca 2+ conductivity of Na V channels. The findings indicate that Ca 2+ permeation through Na V channels provides a submillisecond rapid entry route in Na V -enriched domains of mammalian axons.
+Calcium ions (Ca2+) are essential for many cellular signaling mechanisms and enter the cytosol mostly through voltage-gated calcium channels. Here, using high-speed Ca2+ imaging up to 20 kHz in the rat layer five pyramidal neuron axon we found that activity-dependent intracellular calcium concentration ([Ca2+]i) in the axonal initial segment was only partially dependent on voltage-gated calcium channels. Instead, [Ca2+]i changes were sensitive to the specific voltage-gated sodium (NaV) channel blocker tetrodotoxin. Consistent with the conjecture that Ca2+ enters through the NaV channel pore, the optically resolved ICa in the axon initial segment overlapped with the activation kinetics of NaV channels and heterologous expression of NaV1.2 in HEK-293 cells revealed a tetrodotoxin-sensitive [Ca2+]i rise. Finally, computational simulations predicted that axonal [Ca2+]i transients reflect a 0.4% Ca2+ conductivity of NaV channels. The findings indicate that Ca2+ permeation through NaV channels provides a submillisecond rapid entry route in NaV-enriched domains of mammalian axons.
 
 ## Introduction
 
@@ -30,25 +30,33 @@ Here, using wide-field Ca2+ imaging with a high-speed CCD camera enabling detect
 
 ## Results
 
-## Activity-dependent compartmentalized Ca2+ entry in layer five axons
+### Activity-dependent compartmentalized Ca2+ entry in layer five axons
 
 Thick-tufted L5 pyramidal neurons, also called L5B or pyramidal tract neurons, are the largest pyramidal neurons in the cortex and integrate synaptic inputs from all cortical layers, playing a central role in cognitive tasks including perception (Groh et al., 2010; Ramaswamy and Markram, 2015; Takahashi et al., 2016). Their large axons (~1.5 µm in diameter) send long-range output projections to the thalamus, striatum and spinal cord, but within the cortex branch sparsely and have a trajectory perpendicular to the pia providing an excellent anatomical arrangement to image and record from. To optically record the spatial profile of axonal [Ca2+]i we made somatic whole-cell patch-clamp recordings from neurons filled with the high-affinity Ca2+ indicator Oregon Green BAPTA 1 (OGB-1, 100 µM) and imaged epifluorescence signals along the proximal region of the main axon (Figure 1). We first used subthreshold depolarizations evoked by artificial excitatory postsynaptic potentials (a-EPSPs, 100 Hz, peak depolarization 17.0 ± 0.6 mV, n = 15; Figure 1a). Examination of the spatial profile revealed that Ca2+ signals were observed in the AIS and hot spots separated with regular distances along the axon (locations 2, 4 and 6; Figure 1a). In order to examine whether the [Ca2+]i hot spots corresponded to nodes of Ranvier, we post-hoc stained for βIV-spectrin and biocytin, and found indeed overlap between subthreshold [Ca2+]i rise and spectrin-enriched sites (Figure 1b). In the same cells we examined the spatial profile of Δ[Ca2+]i in response to a single AP evoked with a brief square current injection (Figure 1c). As expected from back- and forward-propagating APs with much higher depolarizations (~100 mV), large [Ca2+]i transients were observed widespread throughout all axonal and somatodendritic domains. Population analysis showed that AP-induced [Ca2+]i transients were similar between AIS and nodes (one-way ANOVA followed by Tukey’s multiple comparison test, p<0.0001, differences between all groups were significant (p<0.05) except between AIS and node (p=0.13) and between internode (IN) and dendrites (p=0.85); Figure 1c,d). Interestingly, also during a-EPSPs the [Ca2+]i transients in the AIS and the first nodes were highly comparable, while [Ca2+]i signals in the internodal and dendritic domains were an order of magnitude smaller (one-way ANOVA with Tukey’s multiple comparison test, p<0.0001, differences between all groups were significant (p<0.0001), except between AIS and node (p=0.38) and IN and Dend (p=0.97); Figure 1a,d). Similar experiments in L5 neocortical pyramidal neurons in slices from human temporal cortex also revealed a-EPSP evoked Δ[Ca2+]i in the AIS, but not in the dendrite, suggesting that subthreshold sensitive [Ca2+]i transients are conserved across mammalian species (Figure 1—figure supplement 1). Together, these results show that activity-dependent [Ca2+]i transients are spatiotemporally compartmentalized and Ca2+ entry dynamics are similar in the axoplasm of the AIS and nodes.
 
-## Giant saccular organelle amplifies activity-dependent [Ca2+]i transients in the AIS
+![Figure 1.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig1-v3.jpg)
+
+**Figure 1.:** (a) Left, Color-coded maximal ∆F/F of OGB-1 imaged in a L5 pyramidal neuron axon in response to an a-EPSP (five subthreshold current injections at 100 Hz) overlaid with a z-projection of biocytin-streptavidin (grey) of the same neuron. White arrowheads indicate regions of interest from which example traces are shown right. Scale bar, 20 µm. Right, ∆F/F traces from locations specified left. For illustrative purposes, ∆F/F traces represent averages of ~400 trials. Top to bottom scale bars, 10 mV, 1 nA, 5% ∆F/F, 100 ms. (b) Left, higher magnification of the regions of interest shown in a. Right, maximal z-projection of biocytin-streptavidin (blue) and ßIV spectrin (red). White arrows indicate nodes or Ranvier. Sites with a-EPSP-evoked [Ca2+]i transients were all positive to ßIV spectrin (n = 15 AISs and 23 nodes from n = 15 axons). Scale bar, 5 µm. (c) Same axon and locations as in a with color-coded maximal ∆F/F in response to an AP. Scale bars, 20 mV, 0.5 nA, 10% ∆F/F, 100 ms and 20 µm. (d) Top, Population data for peak ∆F/F in response to a-EPSPs in the AIS (n = 13), first internode (IN, n = 9), the first Node (n = 9) and basal dendrite (Dend, n = 4), one-way ANOVA with Tukey’s multiple comparisons test, p<0.0001, Bottom, peak ∆F/F in response to a single AP in the AIS (n = 10), first internode (IN, n = 6), the first Node (n = 6) and basal dendrite (Dend, n = 4), one-way ANOVA with Tukey’s multiple comparisons test, p<0.0001. Open circles represent individual cells and bars show the population mean ± s.e.m. Data available in Figure 1—source data 1. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Left, z-projection of a human temporal lobe L5 pyramidal neuron stained with biocytin/streptavidin (blue) and βIV-spectrin (red). Middle and right, peak ∆F/F (OGB-1, 100 μM) in response to an a-EPSP and AP overlaid with a z-projection of biocytin-streptavidin (white) . Note that not all regions visible in the confocal scan (left) are from the same focal plane and thus visible in the ∆F/F plot. The AIS (white line) and a part of a basal dendrite (white arrow) were in focus. Scale bar, 10 μm. (b) Example traces from AIS (blue) and dendrite (green) in response to an a-EPSP (top) and AP (bottom) from locations indicated in a. Note the absence of a-EPSP evoked Ca2+ influx in the dendrite. From top to bottom scale bars, 1% ΔF/F, 10% ΔF/F, 10 mV, 1 nA and 50 ms. (c) Example ∆F/F traces from another neuron AIS (blue) in response to an a-EPSP (top) and AP (bottom). From top to bottom scale bars, 1% ΔF/F, 10% ΔF/F, 10 mV, 1 nA and 50 ms.
+
+### Giant saccular organelle amplifies activity-dependent [Ca2+]i transients in the AIS
 
 The thick-tufted L5 pyramidal neuron AIS contains a unique variant of cisternal organelle characterized by a continuous tubular organization of smooth ER, called the giant saccular organelle (Antón-Fernández et al., 2015). Cisternal organelles with smooth ER express synaptopodin (synpo), RyR, the IP3 receptor 1, and SERCA that are thought to contribute to Ca2+ release, buffering and storage (Bas Orth et al., 2007; King et al., 2014). We hypothesized that these organelles could generate Ca2+-induced Ca2+-release, thereby contributing to domain-selective activity-dependent [Ca2+]i transients (Figure 1). Triple immunostaining for synpo, Ankyrin G and biocytin confirmed that the cisternal organelle was present along the entire axis of the AIS and spatially overlapped with the subthreshold-evoked [Ca2+]i transients (n = 19; Figure 2a,b). However, while subthreshold depolarization-induced Ca2+ transients were present in the nodes, synaptopodin expression was not detected (n = 10 nodes; Figures 1 and 2a). To experimentally test whether AIS Ca2+-store release contributes to activity-dependent [Ca2+]i transients we performed experiments with standard intracellular solution and subsequently re-patched the same cell with a solution containing ryanodine (200 µM, blocking RyR-mediated Ca2+ release) and heparin (5 mg/ml, competitively inhibiting IP3-evoked Ca2+ release; Figure 2c). Blocking Ca2+ release significantly lowered ΔF/F Ca2+ peak transients in the AIS, both for the subthreshold- and AP-evoked [Ca2+]i changes (a-EPSP, 53.2% reduction, p=0.006; AP, 34.3% reduction, p=0.02, one-tailed ratio paired t-tests, n = 5; Figure 2d). Consistent with the AIS-specific location of the giant saccular organelle, store blockers had no effect on AP-evoked Δ[Ca2+]i in the basal dendrite (p=0.48, n = 3; Figure 2d). Furthermore, since the stores contribute significantly to AIS Ca2+ levels, blocking store release could act as a low-pass filter for Ca2+ level kinetics, reducing rise and decay times. However, blocking Ca2+-store release did not alter the rise- or decay time kinetics in the AIS (τact, p=0.52; τde-act, p=0.18, two-tailed paired t-tests, n = 5; Figure 2e). These data suggest that the giant saccular organelle amplifies activity-dependent [Ca2+]i changes selectively in the AIS.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig2-v3.jpg)
 
-**Figure 2.:** 2+]i in the AIS.(a) Example color-coded maximal ∆F/F profile (100 μM OGB-1) in response to a-EPSPs in the AIS (top) and Node (bottom) compared to z-projections for synaptopodin (Synpo, yellow), Ankyrin-G (AnkG, red) and biocytin/streptavidin (blue) of the same axon. White arrows indicate the locations of nodes, in the imaged axon (blue) and a neighboring one, both without synaptopodin. The many small Synpo positive puncta are likely co-localized with subclasses of spines (Benedeczky et al., 1994; Bas Orth et al., 2007). Scale bars, 10 µm and 1 µm. (b) The length of synaptopodin fluorescence linearly scales with Ankyrin G length. Red trace, linear regression fit with y = 1.005 x – 0.95, r2 = 0.966, ****p<0.0001, n = 19. (c) Schematic of Ca2+-induced Ca2+ release by internal ER stores. (d) Top, example ∆F/F (OGB-1) transients from AIS (left) and dendrite (right) in response to an AP (Vm, black) in control conditions (blue) and re-patched with blockers (green). Scale bars, 10% ∆F/F, 50 mV and 50 ms. Bottom, population data of the peak ∆F/F in the AIS in response to a-EPSP (white bars) and AP (black bars) before and after store release block, one-tailed ratio paired t-tests, **p=0.0060, *p=0.021, n = 5. Open circles and connecting lines represent paired recordings from individual cells and bars show the population mean ± s.e.m. (e) Top, Ca2+ transients fitted with a single exponential function (red) to the rise (left) and decay time (right) in response to an AP, red number indicates the τ. Bottom, comparison of the rise and decay time (two-tailed paired t-tests, τact, p=0.52, τde-act, p=0.18, n = 5). Open circles and connecting lines represent paired recordings from individual cells and bars show the population mean ± s.e.m. Data available in Figure 2—source data 1.Figure 2—source data 1.2+]i in the AIS.
+**Figure 2.:** (a) Example color-coded maximal ∆F/F profile (100 μM OGB-1) in response to a-EPSPs in the AIS (top) and Node (bottom) compared to z-projections for synaptopodin (Synpo, yellow), Ankyrin-G (AnkG, red) and biocytin/streptavidin (blue) of the same axon. White arrows indicate the locations of nodes, in the imaged axon (blue) and a neighboring one, both without synaptopodin. The many small Synpo positive puncta are likely co-localized with subclasses of spines (Benedeczky et al., 1994; Bas Orth et al., 2007). Scale bars, 10 µm and 1 µm. (b) The length of synaptopodin fluorescence linearly scales with Ankyrin G length. Red trace, linear regression fit with y = 1.005 x – 0.95, r2 = 0.966, ****p<0.0001, n = 19. (c) Schematic of Ca2+-induced Ca2+ release by internal ER stores. (d) Top, example ∆F/F (OGB-1) transients from AIS (left) and dendrite (right) in response to an AP (Vm, black) in control conditions (blue) and re-patched with blockers (green). Scale bars, 10% ∆F/F, 50 mV and 50 ms. Bottom, population data of the peak ∆F/F in the AIS in response to a-EPSP (white bars) and AP (black bars) before and after store release block, one-tailed ratio paired t-tests, **p=0.0060, *p=0.021, n = 5. Open circles and connecting lines represent paired recordings from individual cells and bars show the population mean ± s.e.m. (e) Top, Ca2+ transients fitted with a single exponential function (red) to the rise (left) and decay time (right) in response to an AP, red number indicates the τ. Bottom, comparison of the rise and decay time (two-tailed paired t-tests, τact, p=0.52, τde-act, p=0.18, n = 5). Open circles and connecting lines represent paired recordings from individual cells and bars show the population mean ± s.e.m. Data available in Figure 2—source data 1.
 
-## CaV channels and NCX have a limited role in activity-dependent Ca2+ entry at the AIS
+### CaV channels and NCX have a limited role in activity-dependent Ca2+ entry at the AIS
 
 Ca2+ release from internal stores is likely triggered by Ca2+ entry via neuronal voltage-dependent plasmalemmal routes. To test whether AIS [Ca2+]i changes require Ca2+ from the extracellular space, we bath applied 2.5 mM of the Ca2+ chelator EGTA which effectively lowered the extracellular Ca2+ concentration ([Ca2+]o) from 2 mM to ~437 nM, thereby reducing the driving force for Ca2+ (see Materials and methods). Ca2+ imaging at the AIS (OGB-1, 100 µM) showed that EGTA almost fully abolished the subthreshold-evoked Δ[Ca2+]i (90.7% reduction, one-tailed ratio paired t-test, p=0.0031, n = 4; Figure 3a,b). Similarly, the AP-generated Δ[Ca2+]i was almost extinguished after bath application of EGTA (92.8% reduction, p=0.0011, n = 4; Figure 3a,b).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig3-v3.jpg)
 
-**Figure 3.:** V channels play a partial role in activity-dependent Ca2+ entry at the AIS.(a) Top, example traces of ∆F/F (100 μM OGB-1) in the AIS evoked by an a-EPSP (left) and AP (right), before (blue) and after (red) bath application of EGTA (2.5 mM). Bottom, somatic Vm and current-clamp protocols. Scale bars bottom right, 20 mV, 100 ms. (b) Left, population data for the effect of an extracellular Ca2+ buffer, CaV channel blockers and NCX on the peak ∆[Ca2+]i signal in the AIS in response to an a-EPSP (open bars) and AP stimulation (closed bars). Data are shown as ratio to the pre-drug peak Ca2+ responses measured in the same neuron. One-tailed ratio paired t-tests, *p<0.05 and **p<0.01. Open circles represent individual cells and the bars show the mean ± s.e.m. Right, schematics of Ca2+ entry in the axoplasm via CaV channels (top) or NCX (bottom). (c) Top, example traces of ∆F/F in the AIS evoked by an a-EPSP (left) and AP (right), before (blue) and after (red) bath application of TTA-P2 (1 µM). Bottom, somatic Vm and current-clamp protocols. Scale bar, 20 mV, 100 ms. (d) Top, example traces of ∆F/F evoked by an AP in the AIS (left) and presynaptic bouton of the same neuron (right), before (blue) and after (red) puff application of ω-conotoxin MVIIC (2 µM). Bottom, somatic Vm and current-clamp protocols. Scale bar, 20 mV, 100 ms. Data available in Figure 3—source data 1.Figure 3—source data 1.V channels play a partial role in activity-dependent Ca2+ entry at the AIS.
+**Figure 3.:** (a) Top, example traces of ∆F/F (100 μM OGB-1) in the AIS evoked by an a-EPSP (left) and AP (right), before (blue) and after (red) bath application of EGTA (2.5 mM). Bottom, somatic Vm and current-clamp protocols. Scale bars bottom right, 20 mV, 100 ms. (b) Left, population data for the effect of an extracellular Ca2+ buffer, CaV channel blockers and NCX on the peak ∆[Ca2+]i signal in the AIS in response to an a-EPSP (open bars) and AP stimulation (closed bars). Data are shown as ratio to the pre-drug peak Ca2+ responses measured in the same neuron. One-tailed ratio paired t-tests, *p<0.05 and **p<0.01. Open circles represent individual cells and the bars show the mean ± s.e.m. Right, schematics of Ca2+ entry in the axoplasm via CaV channels (top) or NCX (bottom). (c) Top, example traces of ∆F/F in the AIS evoked by an a-EPSP (left) and AP (right), before (blue) and after (red) bath application of TTA-P2 (1 µM). Bottom, somatic Vm and current-clamp protocols. Scale bar, 20 mV, 100 ms. (d) Top, example traces of ∆F/F evoked by an AP in the AIS (left) and presynaptic bouton of the same neuron (right), before (blue) and after (red) puff application of ω-conotoxin MVIIC (2 µM). Bottom, somatic Vm and current-clamp protocols. Scale bar, 20 mV, 100 ms. Data available in Figure 3—source data 1.
 
 Next, we hypothesized that the transmembrane pathway for Ca2+ entry in the AIS during subthreshold stimuli could be explained by the low-voltage gated CaV channels (T- and R-type). However, bath application of the highly selective T-type (CaV3.1–3) blocker TTA-P2 (1 µM, Choe et al., 2011) or nickel (Ni2+, 100 µM) did not significantly reduce Ca2+ signals (one-tailed ratio paired t-tests; TTA-P2, p=0.17, n = 4; Ni2+, p=0.063, n = 5; Figure 3b,c). We next blocked R-type CaV channels, by puffing SNX-482 (500 nM) locally to the AIS, but this did not lead to a reduction in subthreshold [Ca2+]i rise either (SNX-482, p=0.11, n = 3). Furthermore, consistent with their more depolarized voltage range of activation, the L-type channels did not affect subthreshold Δ[Ca2+]i (20 µM isradipine, p=0.14; 10 µM nimodipine, p=0.41, both n = 4; Figure 3b) and the block of N-type and P/Q-type channels, by local application of ω-conotoxin MVIIC (2 µM) to the AIS, also failed to reduce Ca2+ signals (p=0.42, n = 5; Figure 3b). Furthermore, a combined block of T- and L-type channels did not affect the peak ΔF/F in the AIS (TTA-P2 and isradipine, p=0.12, n = 3; Figure 3b).
 
@@ -56,45 +64,149 @@ Although application of the T-type blockers TTA-P2 and Ni2+ was ineffective to b
 
 In summary, these data show that while transmembrane Ca2+ influx from the extracellular space is required for activity-evoked Δ[Ca2+]i, none of the CaV channels played a role in the subthreshold depolarization, whereas T- and L-type CaV channels partially contributed to the AP-evoked influx.
 
-## Subthreshold- and AP-evoked Ca2+ entry at the AIS requires TTX-sensitive channels
+### Subthreshold- and AP-evoked Ca2+ entry at the AIS requires TTX-sensitive channels
 
 What could be the source of the remaining component of Ca2+ influx at the AIS? Both in hippocampal neurons and heart muscle cells, Ca2+ currents have been described which are not blocked by Ni2+ nor by other known CaV channel antagonists, but instead are sensitive to the highly selective NaV channel blocker (TTX), and therefore called ICa(TTX) (Akaike and Takahashi, 1992; Aggarwal et al., 1997). In Na+-free extracellular solution ICa(TTX) resembles the Na+ current and activates at potentials as negative as –70 mV while peaking at –30 mV (Akaike and Takahashi, 1992). To examine the presence of ICa(TTX) in L5 axons we took advantage of the low-affinity indicator Oregon Green BAPTA 5N (OGB-5N, 1 mM; Figure 4a), which gives smaller fluorescent signals but is linear over a wider range of [Ca2+]i compared to OGB-1 (Kd 20 µM vs. 170 nM, respectively). We used the voltage-clamp configuration and injected depolarizing ramps of 50 ms with increasing slopes (from 0.0 to 0.55 mV ms–1) with a maximum peak at ~95% of the AP threshold (Figure 4b), thereby studying the same depolarization range and duration as the a-EPSPs used in Figures 1–3. The results showed that Ca2+ influx was strongly compartmentalized to the AIS and nodal axolemma (Figure 4a) consistent with the a-EPSP evoked OGB-1 transients (Figure 1). Remarkably, bath application of TTX almost completely abolished [Ca2+]i elevations, even at depolarizations above the AP threshold (at –54.5 mV, 92.8% block, Cohen’s d: 1.88, two-way ANOVA, p<0.0001, n = 4; Figure 4b,c). As an alternative to TTX we used the quaternary amine NaV channel inhibitor QX-314, which plugs the open state of the NaV channel from the internal side. Similar to TTX, with 6 mM QX-314 added to the pipette solution voltage ramps did not evoke Ca2+ transients (at –54.5 mV, 94.8% block, Cohen’s d: 1.92, control vs. QX-314, p<0.0001, n = 4, TTX vs. QX-314, p=0.97, n = 4; Figure 4c). Although QX-314 at this concentration has been reported to also block voltage-gated Ca2+ currents (Talbot and Sayer, 1996), subthreshold-evoked [Ca2+]i was not mediated by CaV channels (Figure 3b). The near complete block by two distinct NaV channel blockers therefore indicates an important role of NaV channels in mediating subthreshold axonal Ca2+ influx.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig4-v3.jpg)
 
-**Figure 4.:** 2+]i changes are TTX sensitive.(a) Example image of color-coded maximal ∆F/F (1 mM OGB-5N) along the proximal axon in response to a voltage ramp from –78.5 mV to maximally –54.5 mV. Acquisition rate was 125 Hz. The color-coded image is overlaid with a maximal z-projection of a confocal scan of biocytin/streptavidin staining (grey) of the same axon. Note the compartmentalized Ca2+ influx at the AIS and node (indicated by a white arrow). Scale bar, 20 µm. (b) Example traces of OGB-5N ΔF/F reveal increasing Ca2+ responses to voltage ramps with increasing incline in control (left) but not in TTX (1 µM, right). Traces filtered with one-pass binomial (three point). Scale bars, 1% ∆F/F, 10 mV and 50 ms. (c) Population data for maximal OGB-5N ΔF/F versus voltage ramp peaks in control (closed circles, n = 4), in TTX (open circles, n = 4) or QX-314 (open triangles, 6 mM, n = 4). Two-way ANOVA with Tukey’s multiple comparisons test, **p<0.01, ****p<0.0001. AP threshold is indicated with a gray line. Data are shown as mean ± s.e.m. Data available in Figure 4—source data 1.Figure 4—source data 1.2+]i changes are TTX sensitive.
+**Figure 4.:** (a) Example image of color-coded maximal ∆F/F (1 mM OGB-5N) along the proximal axon in response to a voltage ramp from –78.5 mV to maximally –54.5 mV. Acquisition rate was 125 Hz. The color-coded image is overlaid with a maximal z-projection of a confocal scan of biocytin/streptavidin staining (grey) of the same axon. Note the compartmentalized Ca2+ influx at the AIS and node (indicated by a white arrow). Scale bar, 20 µm. (b) Example traces of OGB-5N ΔF/F reveal increasing Ca2+ responses to voltage ramps with increasing incline in control (left) but not in TTX (1 µM, right). Traces filtered with one-pass binomial (three point). Scale bars, 1% ∆F/F, 10 mV and 50 ms. (c) Population data for maximal OGB-5N ΔF/F versus voltage ramp peaks in control (closed circles, n = 4), in TTX (open circles, n = 4) or QX-314 (open triangles, 6 mM, n = 4). Two-way ANOVA with Tukey’s multiple comparisons test, **p<0.01, ****p<0.0001. AP threshold is indicated with a gray line. Data are shown as mean ± s.e.m. Data available in Figure 4—source data 1.
 
 We next investigated whether NaV channels also contribute to AP-evoked Δ[Ca2+]i (Figure 5a). To dissociate a putative role of NaV channels to pass Ca2+ ions from generating the AP depolarization of ~100 mV we first imaged Ca2+ at the AIS in current-clamp, subsequently applied 1 µM TTX and imaged Ca2+ transients evoked by the recorded AP waveform injected as a voltage command (‘AP-clamp’). The results showed a near complete abolishment of Δ[Ca2+]i in the presence of TTX (one-way ANOVA with Tukey’s multiple comparisons test, CC vs. VC, 89.5% reduction, p<0.0001, n = 7; Figure 5a,b). However, this [Ca2+]i peak amplitude reduction could also be due to an incomplete voltage- and space-clamp of the AIS for fast voltage transients. The small diameter of the axon has a high axial resistance, acting as a low-pass filter for the antidromic AIS action potentials (Hamada et al., 2016) which also may attenuate the orthodromic voltage spread into the axon. To examine the possibility that axonal APs are attenuated in the somatic AP clamp configuration, we optically recorded JPW3028, a fast fluorescent voltage indicator that remains stable over long recording periods and is highly linear over a large voltage range (~250 mV, Figure 5—figure supplement 1). Consistent with the voltage loss, when we injected the AP-clamp in the soma in the presence of TTX and optically recorded Vm in the AIS, we observed a significant ~2 fold reduction in the AP peak amplitude (one-way ANOVA with Tukey’s multiple comparisons test, VC vs. CC, p=0.014; Figure 5a,c). To restore peak depolarization in the presence of TTX and reliably compare the Ca2+ transients evoked by equal depolarization, we doubled the amplitude of the somatic AP-clamp (VC ×2). With this protocol both the peak depolarization and AP half-width in the AIS were indistinguishable from the control APs (peak JPW, VC ×2 vs. CC, one-way ANOVA with Tukey’s multiple comparisons test, p=0.75, n = 4, Figure 5c, half-width in JPW, VC ×2 vs. CC, one-way ANOVA with Tukey’s multiple comparisons test, p=0.36, n = 4, not shown). TTX blocked 65.5% of the AP-evoked Δ[Ca2+]i (peak OGB-5N, Cohen’s d: 5.49, VC ×2 vs. CC, p<0.0001, n = 8; Figure 5b). Taken together, these data suggest that a large fraction of both subthreshold-depolarization and AP-evoked Ca2+ ions enter the axoplasm through TTX-sensitive channels at the AIS.
 
-## Axonal [Ca2+]i follows gating kinetics of NaV channels
+![Figure 5.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig5-v3.jpg)
+
+**Figure 5.:** (a) Left, schematic of the experimental setup; electrophysiological recording from the soma and fluorescence recording from AIS. Right, example traces from electrophysiology (recorded traces in black, applied commands in green), ∆F/F JPW3028 (red) for voltage imaging and ∆F/F OGB-5N (blue) for Ca2+ imaging. Left panel shows example traces from a current clamp recording, middle panel was performed in AP-clamp in the presence of TTX (1 µM) and right panel was performed in AP-clamp scaled two-fold (VC ×2) in the presence of TTX. The JPW3028 and OGB-5N experiments were performed in separate cells. Scale bars from top to bottom, 100 mV, 5 nA, 5 ms, 2% ∆F/F and 5% ∆F/F. (b) Peak OGB-5N ΔF/F in response to an AP (n = 8), AP clamp + TTX (VC, n = 7) and double AP clamp + TTX (VC ×2, n = 8). One-way ANOVA with Tukey’s multiple comparisons test, ***p=0.0005, ****p<0.0001, n = 8. Circles and connecting lines represent paired recordings in individual cells and bars show the population mean ± s.e.m. (c) Peak JPW3028 ΔF/F in response to an AP (n = 9), AP clamp + TTX (VC, n = 7) and double AP clamp + TTX (VC ×2, n = 4). One-way ANOVA with Tukey’s multiple comparisons test, *p=0.014. Circles and connecting lines represent paired recordings in individual cells and bars show the population mean ± s.e.m. Data available in Figure 5—source data 1. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Schematic of the experiment; whole-cell voltage clamp of HEK-293 cells filled with 0.8 mM JPW3028. (b) Top, example ∆F/F JPW3028 trace (red), middle, voltage command potentials, bottom, recorded current. Slow outward rectification was visible with depolarizing steps > 150 mV. Scale bars, from top to bottom: 1% ∆F/F, 100 mV, 2 nA, 200 ms. (c) Mean ∆F/F of the first 20 frames of each voltage step normalized to ∆F/F of the 100 mV step plotted versus the applied voltage revealed a highly linear relationship between Vm and ∆F/F, with r indicating Pearson’s correlation coefficient, ****p<0.0001, n = 3. Grey dotted line is a linear fit between voltage –75 and +25 (approximate Vm range of an AP), data plotted as mean (red line and open circles)± s.e.m. (d) The baseline fluorescence of JPW presented in Figure 5 remained stable throughout the recording. One-way ANOVA, p=0.45, Tukey’s multiple comparisons test, CC (n = 9) vs. VC (n = 7), p=0.44, CC vs. VC × 2 (n = 4), p=0.74, VC vs. VC × 2, p=0.95. Data available in Figure 5—source data 1.
+
+### Axonal [Ca2+]i follows gating kinetics of NaV channels
 
 Whether ICa(TTX) is carried by a specific TTX-sensitive CaV channel or reflects Ca2+ permeating directly through the NaV channel remains debated (Santana et al., 1998; Cruz et al., 1999; Heubach et al., 2000; Chen-Izu et al., 2001; Guatimosim et al., 2001). We hypothesized that if Ca2+ ions enter the AIS cytoplasm by flowing through NaV channels, ICa(TTX) should reflect the time course of INa. To measure submillisecond rapid events with fluorescence in the small axon (diameter ~1.5 µm), we optimized multiple imaging parameters enabling the acquisition of fluorescence at 20 kHz (see Materials and methods). Using a Na+-sensitive indicator (sodium-binding benzofuran isophthalate, SBFI, 1 mM) in combination with OGB-5N (1 mM) showed that the two indicators were indistinguishable in their rising phase during an AP, suggesting that Ca2+ entry at the AIS may be as rapid as Na+ entry (Figure 6—figure supplement 1).
 
 In order to quantify the kinetics of INa and ICa more directly, we next used a voltage-clamp approach. Near ~20°C and –40 mV, NaV channels open at least one order of magnitude faster compared to the T-type CaV channels (~200 µs [Schmidt-Hieber and Bischofberger, 2010] vs. ~5 ms [Perez-Reyes et al., 1998], respectively) which may be sufficiently different to compare against the kinetics of optically recorded [Ca2+]i at the AIS. To determine the specific activation kinetics of INa and T-type ICa (ICaT) in L5 pyramidal neurons we measured total inward current (INa + ICa,) by depolarizing the soma with a step to –35 mV and pharmacologically isolated Na+ and Ca2+ current components by bath application of 1 µM TTX or 100 µM Ni2+, respectively (Figure 6a). The activation time constant of the total inward current was identical to INa (single exponential fit τtotal = 438.2 µs vs. τNa = 440.3 µs, one-way ANOVA with Tukey’s multiple comparison test, p>0.999, n = 6), whereas the total current was substantially faster in comparison to ICaT (τtotal = 438.2 µs vs. τCaT = 4.8 ms, p<0.0001, n = 5; Figure 6a). The initial fraction of the inward current was thus primarily generated by INa. The large difference in gating could provide a temporal window to distinguish Ca2+ entry via NaV channels or T-type CaV channels. Theoretical and experimental work show that low-affinity Ca2+ indicators, like OGB-5N, are capable of tracking rapidly activating Ca2+ currents when imaged at high speed: the first time derivative of ΔF/F (dΔF/F dt–1) overlaps with electrically recorded ICa, providing a mean to optically resolve the time course of ICa (Sabatini and Regehr, 1998; Jaafari et al., 2014; Ait Ouares et al., 2016).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig6-v3.jpg)
+
+**Figure 6.:** (a) Top to bottom, total inward current in response to a voltage-clamp step to –35 mV (blue) and after application of 1 μM TTX (black), INa; the difference between the total current and the TTX-sensitive current, ICaT, obtained after application of 100 μM Ni2+, voltage clamp protocol (green). Scale bars, 10 nA and 50 ms. (b) Top to bottom: ΔF/F OGB-5N of an AIS imaged at 20 kHz before and after application of 1 μM TTX, the electrically recorded somatic INa of the same neuron overlaid with the first temporal derivative of ΔF/F (–d(ΔF/F) dt-1) representing ICa_opt, voltage clamp protocol. Optically and electrically recorded traces filtered with a 3-point binomial filter for 100 iterations. Red arrows indicate the rapid component visible in the ΔF/F and in the overlaid INa and ICa_opt. Scale bars, 20% ΔF/F, 10%–1/6.3 nA and 50 ms. (c) Top to bottom: ICa_opt, INa and ICaT fit with a Boltzmann sigmoid function (red). Slope values are indicated. Scale bar, 5 ms. (d) Population data for the slope values for INa (n = 17), ICa_opt (n = 10) and ICaT (n = 5). One-way ANOVA with Tukey’s multiple comparisons test, ****p<0.0001. Open circles represent individual cells, bars indicate the population mean ± s.e.m. Data available in Figure 6—source data 1. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Neurons were co-loaded with OGB-5N (1 mM) and SBFI (1 mM) indicators to acquire Ca2+ (blue) and Na+ (grey) signals from the same AIS region at a rate of 20 kHz. The current-clamp step protocol (green) consisted of a 50 ms subthreshold square pulse followed by a brief 5 ms pulse at the end triggering an AP. Both subthreshold and AP evoked signals are visible for [Ca2+]i and [Na+]i. Scale bar, 500 pA. (b) The example traces from a. fitted with a sigmoidal function (red) with slopes values indicated (red). The percentages indicate the subthreshold-activated fraction of ion flux (ΔF/F prior to the AP normalized peak ΔF/F). Scale bar, 10 ms. (c) Population data of the rise times and subthreshold/peak ratio difference of Ca2+ and Na+ indicators. Slope, Wilcoxon matched-pairs signed rank test, n = 4, p>0.999, ratio subthreshold to peak, two-tailed paired t-test, n = 4, p=0.83. Open circles and connecting lines represent individual cells and bars show the mean ± s.e.m. Data available in Figure 6—source data 1.
+
 Imaging OGB-5N (1 mM) at 20 kHz in the AIS we observed that ΔF/F comprised of two separate time courses, a fast initial rise followed by a slower rising phase (Figure 6b). Both components were almost completely abolished by TTX, leaving only a small transient reflecting putatively ICaT (n = 6). We quantitatively compared the activation time constants of INa, ICa_opt (dΔF/F dt–1) and ICaT by resampling the electrically recorded INa and ICaT to 20 kHz and filtering both electrical and optical traces identically (see Materials and methods). Multiple hallmarks of INa matched with ICa_opt: both traces showed a rapid inward component, followed by inactivation and a persistent component (Figure 6b,c). In comparison, ICaT lacked both the rapid activation and inactivation time constants (Figure 6a,c). Given the lower signal-to-noise ratio in the optical traces we fitted Boltzmann sigmoid functions to the rising phase to compare the slopes of the optically and electrically recorded currents (Figure 6c). The average slope of ICa_opt was significantly faster compared to the activation of ICaT (~500 µs vs. ~2.5 ms, respectively, one-way ANOVA with Tukey’s multiple comparison test, p<0.0001) and slower compared to INa (~500 µs vs. ~200 µs, ICa_opt vs. INap<0.0001; Figure 6c,d). The small difference between INa and ICa_opt may be explained by the equilibration time of OGB-5N (~200 µs) (Ait Ouares et al., 2016), local differences between NaV channels in the soma and AIS or the presence of Ca2+-store release in the AIS. Together, the findings indicate that the current mediating [Ca2+]i at the AIS resembles NaV channel kinetics.
 
-## Calcium influx through NaV1.2 channels
+### Calcium influx through NaV1.2 channels
 
 The results suggest that Ca2+ ions could enter the cytoplasm by permeation through the NaV channel pore. Previous studies showed Ca2+ influx through the cardiac NaV1.5 channel (Cruz et al., 1999; Guatimosim et al., 2001). To examine whether NaV channel isoforms of the axon initial segment also enable Ca2+ influx we performed experiments in HEK-293 cells which were transfected with the human gene SCN2A encoding NaV1.2 channel with auxiliary β1 and β2 subunits and EGFP tag (Materials and methods; Figure 7a). Whole-cell recording revealed Na+ currents in EGFP+ cells but not in non-transfected cells (average peak current density –115.7 ± 28.4 pA/pF, n = 10 vs. –3.7 ± 1.9 pA/pF at –20 mV, n = 5, respectively; Figure 7b). The inward currents were completely abolished by 1 µM TTX (96.1 ± 1.3%, n = 7, one-tailed Wilcoxon matched-pairs signed rank test, p=0.0078, Figure 7c) and the voltage-dependence of activation and inactivation revealed midpoints at –25.4 ± 2.1 mV and –74.1 ± 3.9 mV, respectively (n = 10, Figure 7d,e), consistent with previous work (Ben-Shalom et al., 2017), indicating a highly selective expression of NaV1.2 channels. Next, we filled the transfected cells with 100 µM OGB-1 and imaged the fluorescence changes in response to a train of depolarizing pulses (200 Hz for 1 s, –120 to –30 mV steps; Figure 7f). We observed an increase in ΔF/F in every EGFP+ cell, indicating an influx of Ca2+ (average peak 0.46 ± 0.18% ΔF/F, range: 0.06–1.4% ΔF/F, n = 7; Figure 7f–h). To test whether the [Ca2+]i increase required NaV channel opening we bath applied TTX (1 µM), revealing a significant decrease in the peak ΔF/F (92.1 ± 3.8% reduction, one-tailed Mann Whitney test, p=0.012, n = 4; Figure 7h). The results indicate that molecular expression and opening of NaV1.2 channels suffices to mediate transmembrane Ca2+ influx.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig7-v3.jpg)
 
-**Figure 7.:** V1.2 channels mediate a Ca2+ influx.(a) Combined brightfield and fluorescence image of a whole-cell recording from a SCN2A-EGFP+ HEK-293 cell (green). Scalebar, 10 μm. (b) Example traces of INa recorded in response to depolarizing voltage command potentials (bottom) for a non-transfected (top) and SCN2A-EGFP+ cell (middle), scale bars indicate 0.5 nA and 5 ms. (c) Peak INa traces before (black) and after TTX application (red) in response to a depolarizing voltage step (bottom), scale bars indicate 100 pA and 10 ms. (d) Example current traces of steady-state inactivation (left) and activation protocols (right), scale bars indicated 100 pA and 5 ms. (e) Population data for steady-state activation and inactivation curves, circles and error bars indicate mean ± s.e.m. Lines represent Boltzmann fits to the mean data. (f) Schematic of the experiment: a SCN2A-EGFP+ HEK-293 cell was recorded in voltage-clamp and filled with OGB-1 (0.1 mM) after which a train of depolarizing pules (–120 to –30 mV, 200 Hz, 1 s) was applied, top to bottom, ΔF/F before and after bath application of 1 μM TTX (blue), the recorded currents and voltage command potentials, right, magnification of the first three action currents, scale bars from top to bottom represent 1% ΔF/F, 0.5 nA, 100 mV, 500 ms and 10 ms. (g) Color-coded average ΔF/F of 100 frames before onset (left) and at the end (right) of the voltage command, scale bar indicates 10 μm. (h) OGB-1 ΔF/F is significantly higher in control (n = 7) than after application of TTX (n = 4), one-tailed Mann Whitney test, p=0.0121. Data available in Figure 7—source data 1.Figure 7—source data 1.V1.2 channels mediate a Ca2+ influx.
+**Figure 7.:** (a) Combined brightfield and fluorescence image of a whole-cell recording from a SCN2A-EGFP+ HEK-293 cell (green). Scalebar, 10 μm. (b) Example traces of INa recorded in response to depolarizing voltage command potentials (bottom) for a non-transfected (top) and SCN2A-EGFP+ cell (middle), scale bars indicate 0.5 nA and 5 ms. (c) Peak INa traces before (black) and after TTX application (red) in response to a depolarizing voltage step (bottom), scale bars indicate 100 pA and 10 ms. (d) Example current traces of steady-state inactivation (left) and activation protocols (right), scale bars indicated 100 pA and 5 ms. (e) Population data for steady-state activation and inactivation curves, circles and error bars indicate mean ± s.e.m. Lines represent Boltzmann fits to the mean data. (f) Schematic of the experiment: a SCN2A-EGFP+ HEK-293 cell was recorded in voltage-clamp and filled with OGB-1 (0.1 mM) after which a train of depolarizing pules (–120 to –30 mV, 200 Hz, 1 s) was applied, top to bottom, ΔF/F before and after bath application of 1 μM TTX (blue), the recorded currents and voltage command potentials, right, magnification of the first three action currents, scale bars from top to bottom represent 1% ΔF/F, 0.5 nA, 100 mV, 500 ms and 10 ms. (g) Color-coded average ΔF/F of 100 frames before onset (left) and at the end (right) of the voltage command, scale bar indicates 10 μm. (h) OGB-1 ΔF/F is significantly higher in control (n = 7) than after application of TTX (n = 4), one-tailed Mann Whitney test, p=0.0121. Data available in Figure 7—source data 1.
 
-## Estimating Ca2+ conductivity of NaV channels with computational modeling
+### Estimating Ca2+ conductivity of NaV channels with computational modeling
 
 Our findings are in agreement with the depolarization-induced Ca2+ entry in the squid axon which is tetrodotoxin (TTX)-sensitive and reflected a 1% conductivity of NaV channels for Ca2+ ions (Baker et al., 1971). To estimate the conductivity ratios (gCa/gNa) in L5 axons we performed computational simulations. Ca2+ entry through NaV channels was implemented by adding an ohmic Ca2+ ion mechanism into a mathematical 8-state NaV channel model that calculated the current carried by Ca2+ (ICa(Na)) and Na+ (INa) (see Materials and methods). A single compartment containing INa and ICa(Na) together with high voltage-gated and T type-gated CaV channel models (ICaH and ICaT, respectively) showed that with an axonal AP waveform ICa(Na) is activated during the first microseconds of AP onset, rapidly inactivates and is temporally separated from ICaH and ICaT (Figure 8—figure supplement 1). Next, to estimate the gCa/gNa we made a multicompartmental model of a L5 pyramidal neuron (Figure 8a, including detailed reconstructions of the AIS and nodal domains (see Figure 2a within Hamada et al., 2016). Based on multiple experimentally recorded parameters we constrained the model AP and found that a peak conductance density of NaV channels of 16,000 and 850 pS µm–2 in the AIS and soma, respectively, reproduced the recorded AP and matched with AP-evoked Δ[Na+]i imaged in the AIS (see Materials and methods and Figure 8a). Subsequently, [Ca2+]i was simulated based on mathematical equations representing Ca2+ diffusion and extrusion, endogenous stationary Ca2+ buffers (taken together as κs) and was supplemented with the buffering capacities of the specific Ca2+ indicators (Fink et al., 2000) (see Materials and methods). The Ca2+ extrusion threshold and rates were adjusted to approximate the experimentally imaged peak and decay time course of measured OGB-5N ΔF/F in the AIS (Figure 8—figure supplement 2). To determine the absolute rise in [Ca2+]i produced exclusively by NaV channels, we performed additional experiments in which we imaged [Ca2+]i while blocking CaV channels that contributed to AP-evoked Δ[Ca2+]i: T- and L-type calcium channels (TTA-P2 and isradipine, respectively, see Figure 3b). Using calibrated ratiometric bis-Fura-2 (200 μM) imaging, we found that during 1 AP, Ca2+ entry though NaV channels induces a peak Δ[Ca2+]i of 55.6 nM (n = 4; Figure 8b, Figure 8—figure supplement 2). Since ~35% of AP-evoked Δ[Ca2+]i is caused by internal store amplification (Figure 2d) ~36 nM is mediated by transmembrane Ca2+ entry via NaV channels (Figure 8b). We subsequently simulated these experiments in the multicompartmental model by removing CaV channels and including the buffering properties of 200 µM bis-Fura-2. Varying endogenous buffering (κs) between 1 and 100 we updated gCa/gNa to obtain a 36 nM rise of free [Ca2+]i at the AIS. A κs of ~100 corresponds to dendritic buffering capacities (Cornelisse et al., 2007), while axonal buffering capacities are reported to be lower (10–40, Klingauf and Neher, 1997; Jackson and Redman, 2003; Delvendahl et al., 2015). When changing κs between 10–40 the gCa/gNa ratio was 0.38% (κs = 10: 0.37%, κs = 40: 0.39%; Figure 8c).
 
-## Spatiotemporal distribution of Ca2+ entry routes under physiological conditions
+![Figure 8.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig8-v3.jpg)
+
+**Figure 8.:** (a) Left, morphology of the conductance-based multi-compartmental model. Right, NaV channel density in the AIS was estimated by optimizing to Δ[Na+]i, Vm (top) and phase-plane plot (bottom) in simulation (black) to the experimental data (gray). Scale bars, 200 µm, 20 mV and 0.5 ms. (b) Example trace of calibrated ratiometric imaging of bis-Fura2 to measure absolute changes in Δ[Ca2+]i in response to a single AP (bottom), the experiment was performed in the presence of T- and L-type CaV blockers, so Δ[Ca2+]i is mediated by Nav channels (red) and amplified by internal store release (35%, green), scale bars indicate 10 nM, 100 mV and 10 ms. (c) Dependence of NaV-mediated peak AP Δ[Ca2+]i on conductance ratio (gCa/gNa) for varying endogenous buffer capacities (κs = 1–100). Δ[Ca2+]i was measured and modeled in a cell with 200 μM bis-Fura-2 present and T- and L-type CaV channels blocked. See also Figure 8—figure supplement 1 and Figure 8—figure supplement 2.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (a) From top to bottom, schematic of a NaV channel mediating Na+ and Ca2+ current (INa and ICa(Na)) and a CaV channel mediating ICaT and ICaH, peak normalized simulated currents (INa, ICa(Na), ICaH and ICaT) in a single compartment activated by an AIS AP waveform. Currents are normalized to peak amplitude. Note that ICa(Na) is ~10 fold more rapid compared to ICaH and ICaT. The difference in shape of ICa(Na) and INa reflects the different driving forces. Since the equilibrium potential for Ca2+ (+140 mV) is higher than for Na+ (+55 mV), the driving force for ICa(Na) is less affected during the voltage trajectory of the AP. (b) Absolute current amplitudes comparing ICa(Na) to ICaH and ICaT as well as the total ICa for typical channel densities (as noted above) and 0.5% conductivity ratio. INa is clipped to visually compare the Ca2+ currents. Note that ICa(Na) dominates the Ca2+ charge for rapid action potentials. Scale bars, 50 mV and 0.5 ms.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** (a) ∆F/F OGB-5N (1 mM, 20 kHz) traces from a representative cell AIS used to optimize Ca2+ extrusion in the model. Imaged ∆F/F (blue) overlaid with the simulated ∆F/F (grey) with varying Ca2+ extrusion thresholds ([Ca2+]c) and flux densities (γ) in the membrane. The optimal fit is indicated in red. (b) Calibration of ratiometric bis-Fura-2 (bF2) signals to solutions with known [Ca2+] to determine KD, Rmin and Rmax used in equation 1, which was subsequently used to convert ratiometric signals into absolute Δ[Ca2+]i. Data shown as mean ± s.e.m (three repetitions). (c) The relationship between changes in fluorescence ratio ΔR/R normalized to the ratio in Ca2+-free or Na+-free solutions, used in equation 2. Data shown as mean ± s.e.m (three repetitions), red dashed line is a linear fit through the mean ΔR/RbF2(0–193 nM, six concentrations) and ΔR/RSBFI(0–48 mM, eight concentrations). Scale bars, 40% and 100%. (d) Example traces of a ratiometric bF2 recording. Top to bottom: fluorescence transients from the AIS upon excitation with 340 and 385 nm (average of 38 trials), TTL pulses triggering the LEDs, fluorescence ratio R340/385, somatic AP and current injection. Scale bars, 40 mV, 4 nA and 10 ms. (e) Absolute increase in [Ca2+]i and [Na+]i in the AIS after 1 AP in the presence of 200 µM bF2 and 1.5 mM SBFI, respectively, separate for the 2 Ca2+ calibration methods from b and c. Bar and error bars represent the mean ± s.e.m., open circles are individual cells. (f) Simulation of distinct Ca2+ dyes on the [Ca2+]i, adjusting the KD and concentration of the simulated exogenous buffer, shown for the AIS (blue), soma (red) and dendrites (green) (locations as specified in Figure 9a) in response to an AP (bottom). Note that OGB-5N, due to its low-affinity, buffers [Ca2+]i more linear in comparison to bis-Fura-2 and OGB-1. Scale bars from top to bottom, 500 nM, 50 mV and 5 ms.
+
+### Spatiotemporal distribution of Ca2+ entry routes under physiological conditions
 
 Using the 0.38% conductivity ratio we next evaluated how Ca2+ currents through NaV and CaV channels spatiotemporally varied across the neuronal compartments without the buffering capacities of externally applied Ca2+ dyes (Figure 9a,b and Figure 8—figure supplement 2). The simulations showed that the Δ[Ca2+]i from one AP reached a peak concentration of ~800 nM in the AIS (Figure 9a,b). Due to the high density of NaV channels in the AIS they contribute to the majority of Δ[Ca2+]i and cause a rise of [Ca2+]i within submillisecond from the start of the AP (450 nM within <150 µs from AP threshold, red arrow in Figure 9b). These results are likely to provide an underestimate of the total Δ[Ca2+]i since in the model Ca2+ release from giant saccular organelle was not simulated, which would result in a total AP-evoked Δ[Ca2+]i of ~1.2 µM. In the basal dendritic branches the AP has a slower rise time and broader half-width, causing dendritic [Ca2+]i to accumulate slower and to higher concentrations, consistent with our experimental findings (Figure 1). Because the dendritic NaV channel density is substantially lower, their contribution to the total [Ca2+]i is negligible. The distinct contribution of NaV and CaV channels to [Ca2+]i is clearly visible when comparing the different Ca2+ currents in the AIS, showing that the majority of the total ICa during an AP is carried by ICa(Na) (Figure 9c). Simulations predict that the ICa(Na) rapidly inactivates during the AP while ICa activates more slowly and has an incomplete inactivation during the AP repolarization, likely becoming the dominant contribution to [Ca2+]i during the afterdepolarization and high-frequency spike generation (Figure 9c and Figure 8—figure supplement 1).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/54566/elife-54566-fig9-v3.jpg)
 
-**Figure 9.:** V channels produce submillisecond near-micromolar [Ca2+]i at the AIS.(a) Color coded shape plot of simulated [Ca2+]i in the axon, dendrites and soma activated by an AP in current clamp without Ca2+ indicator. (b) The modeled [Ca2+]i in the AIS, Soma and Dendrite (locations specified in a). The total [Ca2+]i (black) is divided in a NaV (red) and CaV (green) channel mediated fraction. Bottom, Vm in the same compartments. Scale bars, 400 nM for all [Ca2+]i plots, 50 mV and 1 ms. (c) Top, ICa in response to an AP (bottom) in the AIS. Middle, ICa on expanded scale. Ca2+ extrusion contributes to ICa total, but is not shown. Scale bars bottom, 50 mV and 1 ms. (d) Top, example traces of somatic APs in control (black) and after bath application of TTA-P2 and Isradipine (green, left) and EGTA (red, right). Resting membrane potential and AP voltage threshold are indicated by the dotted grey lines. Red arrows indicate the significant changes in ADP (with TTA-P2 + Isradipine) and AP width and AHP (with EGTA). Capacitance transients are removed for clarity. Scale bars indicate 50 mV, 2.5 nA, 1 ms. Bottom, population data of AP half-width before and after blocking T– and L–type CaV channels (left, p=0.61, two-tailed paired t-test, n = 5) and before and after preventing Ca2+ influx by bath application of EGTA (right, *p=0.035, two-tailed paired t-test, n = 4), see also Table 1. (e) Schematic of Ca2+ permeation through a NaV channel activating a Ca2+–dependent BK channel.
+**Figure 9.:** (a) Color coded shape plot of simulated [Ca2+]i in the axon, dendrites and soma activated by an AP in current clamp without Ca2+ indicator. (b) The modeled [Ca2+]i in the AIS, Soma and Dendrite (locations specified in a). The total [Ca2+]i (black) is divided in a NaV (red) and CaV (green) channel mediated fraction. Bottom, Vm in the same compartments. Scale bars, 400 nM for all [Ca2+]i plots, 50 mV and 1 ms. (c) Top, ICa in response to an AP (bottom) in the AIS. Middle, ICa on expanded scale. Ca2+ extrusion contributes to ICa total, but is not shown. Scale bars bottom, 50 mV and 1 ms. (d) Top, example traces of somatic APs in control (black) and after bath application of TTA-P2 and Isradipine (green, left) and EGTA (red, right). Resting membrane potential and AP voltage threshold are indicated by the dotted grey lines. Red arrows indicate the significant changes in ADP (with TTA-P2 + Isradipine) and AP width and AHP (with EGTA). Capacitance transients are removed for clarity. Scale bars indicate 50 mV, 2.5 nA, 1 ms. Bottom, population data of AP half-width before and after blocking T– and L–type CaV channels (left, p=0.61, two-tailed paired t-test, n = 5) and before and after preventing Ca2+ influx by bath application of EGTA (right, *p=0.035, two-tailed paired t-test, n = 4), see also Table 1. (e) Schematic of Ca2+ permeation through a NaV channel activating a Ca2+–dependent BK channel.
 
 Our experiments and computational simulations show that [Ca2+]i changes mediated by CaV or NaV channels act at distinct spatiotemporal scales. To experimentally test the differential impact of Ca2+ influx on the AP waveform, we analyzed the somatically recorded APs when using distinct blockers most effective in modulating [Ca2+]i in the AIS (Figure 3). Blocking both T- and L-type CaV channels, contributing to ~27% to AP-evoked Ca2+ at the AIS (Figure 3), significantly reduced the afterdepolarization and showed a trend to reduce the afterhyperpolarization (ADP, p=0.039 and AHP, p=0.055, respectively, two-tailed paired t-tests, n = 5), without affecting other AP properties (p>0.30; Figure 9d and Table 1). In contrast, when lowering [Ca2+]o with EGTA, which abolished all AIS Ca2+ influx (Figure 3), the AP half-width significantly increased and the AHP was reduced (AP half-width, p=0.035 and AHP, p=0.043, two-tailed paired t-tests, n = 4; Figure 9d, Table 1). These results are consistent with the temporal differences in AP-evoked AIS [Ca2+]i and suggest that NaV-mediated Ca2+ entry may act to open BKCa channels (Figure 9e), thereby driving K+ efflux and facilitating axonal AP repolarization.
+
+**Table 1.**
+ Effect of Ca2+ entry on AP waveform.Table 1—source data 1.Effect of Ca2+ entry on AP waveform.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RMP (mV)</th>
+      <th>AP threshold (mV)</th>
+      <th>AP amplitude (mV)</th>
+      <th>AP half-width (μs)</th>
+      <th>AHP (mV)</th>
+      <th>ADP (mV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>–77.4 ± 2.5</td>
+      <td>–67.1 ± 3.0</td>
+      <td>110.9 ± 12.5</td>
+      <td>612.7 ± 24.7</td>
+      <td>5.6 ± 2.1</td>
+      <td>7.6 ± 2.5</td>
+    </tr>
+    <tr>
+      <td>TTA-P2 + isradipine</td>
+      <td>–76.0 ± 2.9</td>
+      <td>–65.0 ± 4.1</td>
+      <td>109.3 ± 3.3</td>
+      <td>634.5 ± 49.6</td>
+      <td>3.2 ± 2.9</td>
+      <td>4.6 ± 3.3</td>
+    </tr>
+    <tr>
+      <td>Paired t-tests (n = 5)</td>
+      <td>p=0.32</td>
+      <td>p=0.30</td>
+      <td>p=0.33</td>
+      <td>p=0.61</td>
+      <td>p=0.055</td>
+      <td>p=0.039*</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>–70.4 ± 1.6</td>
+      <td>–59.3 ± 3.9</td>
+      <td>102.4 ± 1.8</td>
+      <td>753.8 ± 45.9</td>
+      <td>3.7 ± 3.8</td>
+      <td>6.5 ± 3.4</td>
+    </tr>
+    <tr>
+      <td>EGTA</td>
+      <td>–71.8 ± 3.6</td>
+      <td>–65.4 ± 1.8</td>
+      <td>103.5 ± 2.4</td>
+      <td>1031.5 ± 39.6</td>
+      <td>25.5 ± 4.3</td>
+      <td>11.7 ± 1.5</td>
+    </tr>
+    <tr>
+      <td>Paired t-tests (n = 4)</td>
+      <td>p=0.69</td>
+      <td>p=0.19</td>
+      <td>p=0.27</td>
+      <td>p=0.035*</td>
+      <td>p=0.043*</td>
+      <td>p=0.17</td>
+    </tr>
+  </tbody>
+</table>
+
+_Overview of mean and s.e.m. of AP properties compared between control and toxin experiments recorded at the soma. RMP, resting membrane potential, AHP, fast afterhyperpolarization, ADP, afterdepolarization. The APs were elicited by large and brief current injections (~6 nA for 0.5 ms) to obtain temporally aligned APs between trials and image OGB-1 fluorescence (Figure 3). AP amplitude, AHP and ADP were measured relative to the AP threshold. If the AHP or ADP was not detectable as a local peak, the membrane potential at the time point as in control was used (see EGTA example Figure 9d). P values are results of two-tailed paired t-tests before and after toxin application. Data available in Table 1—source data 1._
 
 ## Discussion
 
@@ -112,33 +224,323 @@ What could be the functional role of NaV-mediated Ca2+ entry in axon initial seg
 
 ## Materials and methods
 
-## Ethical approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (human)</td>
+      <td>SCN2A</td>
+      <td>Genscript, USA (Ben-Shalom et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>SCN1B/SCN2B</td>
+      <td>Genscript, USA (Ben-Shalom et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK-293T/17</td>
+      <td>ATCC</td>
+      <td>Cat#: CRL-11268, RRID:CVCL_1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneJET Plasmid Maxiprep kit</td>
+      <td>ThermoFisher, USA</td>
+      <td>Cat#: K0491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ryanodine</td>
+      <td>Tocris</td>
+      <td>Cat#: 1329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin</td>
+      <td>Tocris</td>
+      <td>Cat#: 2812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTA-P2</td>
+      <td>Alomone</td>
+      <td>Cat#: T-155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isradipine</td>
+      <td>Tocris</td>
+      <td>Cat#: 2004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nickel</td>
+      <td>Sigma</td>
+      <td>Cat#: N6136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nimodipine</td>
+      <td>Tocris</td>
+      <td>Cat#: 0600/100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNX-482</td>
+      <td>Tocris</td>
+      <td>Cat#: 2945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ω-conotoxin MVIIC</td>
+      <td>Tocris</td>
+      <td>Cat#: 1084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KB-R7943</td>
+      <td>Tocris</td>
+      <td>Cat#: 1244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SN-6</td>
+      <td>Tocris</td>
+      <td>Cat#: 2184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTX</td>
+      <td>Tocris</td>
+      <td>Cat#: 1069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QX-314</td>
+      <td>Alomone</td>
+      <td>Cat#: Q-150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EGTA</td>
+      <td>Sigma</td>
+      <td>Cat#: E0396 (low extracellular Ca2+), Cat#: 3777 (HEK-cell experiments)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>HelloBio</td>
+      <td>Cat#: HB0205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>HelloBio</td>
+      <td>Cat#: 0225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZD-7288</td>
+      <td>Tocris</td>
+      <td>Cat#: 1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XE991</td>
+      <td>Tocris</td>
+      <td>Cat#: 2000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gabazine</td>
+      <td>Sigma</td>
+      <td>Cat#: S106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OGB-5N</td>
+      <td>Invitrogen</td>
+      <td>Cat#: O6812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OGB-1</td>
+      <td>Invitrogen</td>
+      <td>Cat#: O6806</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bis-Fura2</td>
+      <td>Biotium</td>
+      <td>Cat#: 50045</td>
+      <td>Discontinued</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SBFI</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 10033152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JPW3028</td>
+      <td>Potentiometric Probes</td>
+      <td>JPW3028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-synaptopodin (Rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#: S9442, RRID:AB261570</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ankyrinG (mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Cat#: 75–146, RRID:AB_10673030)</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-βIV spectrin (mouse monoclonal)</td>
+      <td>Neuromab</td>
+      <td>Cat#: 75–377, RRID:AB_2315818)</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>streptavidin Alexa-488 conjugate</td>
+      <td>Invitrogen</td>
+      <td>Cat#: S32354, RRID:AB_2315383</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neuroplex</td>
+      <td>RedShirt Imaging</td>
+      <td>RRID:SCR_016193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Axograph</td>
+      <td>Axograph</td>
+      <td>RRID:SCR_014284</td>
+      <td>Version 1.7.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 8.4.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>μManager</td>
+      <td>Edelstein et al., 2014</td>
+      <td>RRID:SCR_016865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEURON</td>
+      <td>Hines and Carnevale, 2001</td>
+      <td>RRID:SCR_005393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Maxchelator</td>
+      <td>Bers et al., 2010</td>
+      <td>RRID:SCR_000459</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FrameSplitter</td>
+      <td>Battefeld et al., 2018</td>
+      <td>https://github.com/Kolelab/Image-analysis</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethical approval
 
 All animal experiments were performed in compliance with the European Communities Council Directive 2010/63/EU effective from 1 January 2013. They were evaluated and approved by the national CCD authority (license AVD8010020172426) and by the KNAW animal welfare and ethical guidelines and protocols (DEC NIN 14.49, DEC NIN 12.13, IvD NIN 17.21.01 and 17.21.03). Written informed consent was obtained from patients and all procedures on human tissue were performed with the approval of the Medical Ethical Committee of the Amsterdam UMC, location VuMC and in accordance with Dutch license procedures and the Declaration of Helsinki. All data were anonymized.
 
-## Tissue collection
+### Tissue collection
 
 Young-adult male Wistar rats (RjHan:WI) were used at an age between P21 and P35 (Charles River Laboratories and Janvier labs). Animals were deeply anaesthetized by 3% isoflurane inhalation, decapitated and 300 µm parasagittal slices containing the primary somatosensory cortex were cut with a Vibratome (1200S, Leica Microsystems B.V.) within ice-cold artificial cerebrospinal fluid (ACSF) of the following composition (in mM): 125 NaCl, 3 KCl, 25 glucose, 25 NaHCO3, 1.25 Na2H2PO4, 1 CaCl2, 6 MgCl2, saturated with 95% O2 and 5% CO2 (pH 7.4). Following a recovery period at 35°C for 35–45 min slices were stored at room temperature in the ACSF. Human slices were obtained from non-pathological cortex removed for the surgical treatment of deeper brain structures for mesial temporal lobe epilepsy. After resection, a block of the temporal lobe was placed within 30 s in ice-cold artificial cerebrospinal fluid (ACSF) slicing solution which contained in (mM): 110 choline chloride, 26 NaHCO3, 10 D-glucose, 11.6 sodium ascorbate, 7 MgCl2, 3.1 sodium pyruvate, 2.5 KCl, 1.25 NaH2PO4, and 0.5 CaCl2 (300 mOsm) and transported to the laboratory, as described in detail previously (Testa-Silva et al., 2014). Transition time between resection of the tissue and preparation of the slices was <15 min. Neocortical slices (~350 µm thickness) were cut in an ice-cold slicing solution, stored for 30 min at 34°C, and afterwards switched to room temperature in standard ACSF. Slices were subsequently transported (<15 min) towards the NIN (KNAW) in continuously carbogenated ACSF.
 
-## Cell lines
+### Cell lines
 
 Human embryonic kidney 293 cells (HEK 293T/17 cell line, CRL-11268 obtained from ATCC) were cultured in growth medium consisting of equal parts of Dulbecco’s modified Eagle’s medium (DMEM) (DMEM Glutamax, Gibco, Thermo Fisher Scientific) and Ham’s F10 nutrient mix (Gibco, Thermo Fisher Scientific), supplemented with 10% fetal calf serum (FCS) and 1% penicillin–streptomycin. Cells were split twice a week by trypsinization and grown at 37°C with a humidified atmosphere containing 5% CO2. STR profiling confirmed a 100% match with the HEK 293T cellline (ATCC). Human SCN2A (D-splice variant), encoding for the alpha subunit of the NaV1.2 channel was cloned in pcDNA3.1-IRES-GFP, and SCN1B/SCN2B, encoding for beta subunits 1 and 2, was cloned into pcDNA3.1. These vectors were described previously (Ben-Shalom et al., 2017) and obtained from Genscript (Genscript, USA). The constructs were amplified in Stbl3 bacteria (Genscript, USA) and were purified using the GeneJET Plasmid Maxiprep kit (ThermoFisher, USA) according to the manufacturer’s protocols. The plasmids were transiently transfected into 70% confluent HEK-293 cells plated in 12-well plates. Per well, the transfection cocktail contained 500 ng pcDNA3.1-SCN2A-IRES-GFP, 290 ng pcDNA3.1-SCN1B- IRES-SCN2B and 5 μL of polyethylenimine (PEI) diluted in 100 μL 1% saline, incubated for 20 min at room temperature before addition to the culture medium. Cells were incubated with 100 μL of transfection cocktail in 1 mL of culture medium for 24 hr at 37°C in a humidified atmosphere containing 5% CO2. Cells were trypsinised and used for electrophysiological recording typically 48 hr after transfection.
 
-## Electrophysiological recording from neurons
+### Electrophysiological recording from neurons
 
 For patch-clamp recording, slices were transferred to a customized upright microscope (BX51WI, Olympus Nederland BV, or LNscope, Luigs and Neumann, Ratingen, Germany). The transmitted light path consisted of a custom made 850 nm Light Emitting Diode (LED) light source (LZ1-10R602, LED Engin, CA), collimated using an aspheric condenser lens (ACL50832U-B, Thorlabs, Germany) and adapted to the microscope lamp port using a custom 3D printed adapter and passed through an oblique or Dodt illumination condenser (WI-OBCD, Olympus). The top 50 µm of the slice surface was visualized using an optical pathway consisting of a 60× water immersion objective (N.A. 1.0, LUMPLFLN60XW, Olympus or N.A. 1.1, LUMPLFLN60XW, Olympus), 2× intermediate zoom attachment (U-ECA, Olympus), camera splitter (U-TRU, Olympus) with inbuilt 180 mm tube lens on the back port and a 0.63× demagnifier (U-TV0.63XC, Olympus) projected the final image onto a high resolution CCD camera (CoolSNAP-EZ, Photometrics), which was operated using μManager (Edelstein et al., 2014). Based on the bright-field image large L5 neurons with an intact axon parallel and close to the surface were targeted for recording. Current-clamp recordings were made with Dagan BVC-700A amplifiers (Dagan Corporation, MN, USA) or AxoClamp 900A (Molecular Devices Limited, UK). An Axopatch 200B (Molecular Devices) was used for voltage-clamp and AP-clamp experiments. The microscope bath was perfused with oxygenated (95% O2, 5% CO2) ACSF consisting of (in mM): 125 NaCl, 3 KCl, 25 glucose, 25 NaHCO3, 1.25 Na2H2PO4, 2 CaCl2, and 1 MgCl2. Patch pipettes were pulled from borosilicate glass (Harvard Apparatus, Edenbridge, Kent, UK) pulled to an open tip of 3–6 MΩ resistance. For all current-clamp, subthreshold voltage-clamp ramp and AP-clamp recordings the intracellular solution contained (in mM): 130 K-Gluconate, 10 KCl, 4 Mg-ATP, 0.3 Na2-GTP, 10 HEPES and 10 Na2-phosphocreatine (pH 7.25 adjusted with KOH, 280 mOsmol kg−1). The liquid junction potential difference of –13.5 mV was corrected in all recordings. For morphological reconstruction, 5 mg ml−1 biocytin was routinely added. Voltage recordings were analogue low-pass filtered at 10 kHz (Bessel) and digitally sampled at 100 kHz using A-D converter (ITC-18, HEKA Elektronik Dr. Schulze GmbH, Germany) and data acquisition software Axograph X (v.1.5.4, Axograph Scientific, NSW, Australia). Bridge-balance and capacitances were fully compensated based on small current injections leading to minimal voltage errors. The recording temperature was 33 ± 1°C. Only cells with a stable bridge-balance (<25 MΩ), resting membrane potential and AP shape throughout the recording session were included in the analysis.
 
 For voltage-clamp recordings of INa and ICa (Figure 5) the bath was perfused with oxygenated (95% O2, 5% CO2) extracellular recording solution consisting of (in mM): 100 NaCl, 3 KCl, 25 glucose, 25 NaHCO3, 1.25 Na2H2PO4, 2 CaCl2, 1 MgCl2, 5 4-AP, 20 TEA-Cl, 0.02 CNQX, 0.05 D-AP5, 0.02 ZD-7288, 0.01 XE991 and 0.003 Gabazine (SR-95531). The intracellular solution contained (in mM): 130 CsCl, 10 TEA-Cl, 10 HEPES, 4 Mg-ATP, 5 Na2-phosphocreatine and 0.3 Na2-GTP (pH 7.25 adjusted with CsOH, 280 mOsmol kg−1). A liquid junction potential of –5.6 mV was applied to the recordings. Series resistance was routinely compensated to >75% and the linear leak and capacitance off-line subtracted using a P/9 protocol with 10-fold scaled pulses. Current recordings were analogue low-pass filtered at 10 kHz (Bessel) and digitally sampled at 100 kHz using A-D converter (ITC-18, HEKA Elektronik Dr. Schulze GmbH, Germany) and data acquisition software Axograph X (v.1.5.4, Axograph Scientific, NSW, Australia). To improve voltage-clamp of the large and rapid Na+ currents the recordings were made at room temperature (~20°C).
 
-## Electrophysiological recordings from HEK-293 cells
+### Electrophysiological recordings from HEK-293 cells
 
 For recordings from HEK-293 cells they were transferred to a recording chamber which was continuously perfused with extracellular solution, containing (in mM): 135 NaCl, 4.5 KCl, 2 CaCl2, 1 MgCl, 10 HEPES and 11 Glucose. The intracellular solution contained (in mM): 110 CsF, 10 NaCl, 20 EGTA and 10 HEPES. In the OGB-1 experiments, we added 100 µM OGB-1, EGTA was omitted and CsF raised to 120 mM instead of 110 mM. The liquid junction potential difference of –10 mV was corrected for. Whole-cell patch-clamp recordings were made ~48 hr after transfection. Cells were recorded at room temperature (~20°C) and continuously perfused with extracellular solution at a flow rate of 1.5 mL∙min–1. Patch pipettes were pulled to a resistance of 2–3 MΩ. Round, isolated cells with a diameter >10 μm, a smooth cell surface and a moderate EGFP fluorescent signal were selected for recordings (Figure 7a). HEK-293 cells had an average capacitance of 9.19 ± 0.70 pF (n = 16). The holding potential was –70 mV and voltage dependence of activation of NaV1.2 was determined by an activating protocol consisting of a hyperpolarizing pulse to –130 mV (20 ms) followed by step pulses from –80 mV to +50 mV with increments of 10 mV for 20 ms. Voltage dependence of inactivation was assessed with voltage pulses from –130 mV to –30 mV with increments of 10 mV for 100 ms duration, followed by a depolarizing pulse to –20 mV for 20 ms. A P/5 leak subtraction protocol (10-fold scaling) was used to subtract remaining capacitive and leak currents. Series resistance was not compensated.
 
-## Blockers and toxins
+### Blockers and toxins
 
 EGTA and blockers were added to the appropriate concentration to the ACSF and perfused. The extracellular Ca2+ ([Ca2+]o) was lowered by bath application of 2.5 mM EGTA and using the online maxchelator tool (https://somapp.ucdmc.ucdavis.edu/pharmacology/bers/maxchelator/CaMgATPEGTA-TS.htm; Bers et al., 2010) we calculated the remaining [Ca2+]o to be 437 nM, based on a recording temperature of 35°C, a pH of 7.4 and an ionic strength of 0.15 M of the free ions in our solution. To limit hyperexcitability in the presence of EGTA, we added synaptic blockers to the ACSF (20 µM CNXQ and 50 µM D-AP5) and kept the a-EPSP voltage peak amplitude constant by reducing the amplitude of the current injections in both control and EGTA measurements (Figure 2). To prevent precipitation of Ni2+ we used phosphate-free extracellular solutions containing (in mM): 126.25 NaCl, 3 KCl, 25 glucose, 25 NaHCO3, 2 CaCl2, 1 MgCl2 and 0.1 Ni2+. A > 10% increase in fluorescence baseline was observed in some experiments (3 out of 8 recordings), which were subsequently excluded. Two blockers (SNX-478 and ω-conotoxin MVIIC) were not perfused but were locally puffed using a Picospritzer III (Intracel) for 3 s ending 0.5 s before imaging to avoid vibration artifacts. Bovine serum albumin (0.1 mg/ml) was added to the rACSF before ω-conotoxin MVIIC was introduced to minimize non-specific binding of the drug.
 
-## Ca2+ and Na+ imaging
+### Ca2+ and Na+ imaging
 
 To optically record [Ca2+]i and [Na+]i in axons, membrane impermeable Ca2+ and/or Na+ indicators were added to intracellular solutions. For Ca2+ we used OGB-1 (100 µM), OGB-5N (1 mM) or bis-Fura-2 (200 µM) and for Na+ imaging we used sodium-binding benzofuran isophthalate (SBFI, 1–1.5 mM). Patch pipettes were first filled with dye-free solution for half of the tapered part of the pipette tip, then backfilled with the dye-containing solution. Fluorescence intensity at the AIS was monitored during dye loading and imaging started only when the indicators were fully equilibrated (typically after 0.5–1 hr). Optical recordings of Ca2+ or Na+ dye fluorescence changes were obtained with wide-field epifluorescence microscopy. Fluorescence was collected by the same 60× water immersion objective, passed through the microscope tube lens (U-TR30IR, Olympus) and projected onto a rapid data-acquisition camera with relatively low spatial resolution (80 × 80 pixels) but high dynamic range (14 bits) and low read noise (NeuroCCD-SM, RedShirtImaging LLC, Decatur, GA) via a 0.1× or 0.35× demagnifier. The CCD frame corresponded to an area of approximately 320 or 91 µm2 in the object plane with each individual pixel receiving light from an area of ∼4 × 4 or 1.1 × 1.1 µm2, respectively. High-speed recordings (20 kHz) were always performed with the 0.35× demagnifier and with 3 × 3 binning of pixels on the chip, the ultimate pixel sizes in these recordings were ∼3.4 × 3.4 µm2. The two recordings from human cells were performed under a 100× NA 1.1 Nikon objective (MRL07920) in combination with a 0.1× demagnifier, resulting in a pixel size of ∼2.4 × 2.4 µm2 (see Figure 1—figure supplement 1).
 
@@ -146,25 +548,29 @@ The epifluorescence light path consisted of an excitation LED light source, whic
 
 The critical benefit of epifluorescence measurements over two-photon imaging is increased light collection (~90% quantum efficiency, low-read noise of the CCD camera) enabling a high sensitivity and temporal fidelity. We optimized all imaging parameters to obtain maximal signal to noise ratio, which allowed us to image at the maximum acquisition rate of 20 kHz. In addition to the light collection optimization and selective targeting of superficial neurons, multiple trials were averaged to improve signal-to-noise ratio (typically 20–40). Fluorescence signals were temporally aligned to the electrophysiological voltage or current signals. For optical recording of ICa, which requires the transformation of ΔF/F into the first time derivative, Ca2+ binding to the indicator must be proportional to [Ca2+]i and the endogenous buffering capacity to be low. Based on the submillisecond equilibration time of OGB-5N and imaging at the maximally possible frame rate of 20 kHz it was recently shown that in CA1 hippocampal neurons these conditions are met and optically recorded ICa tracks electrically recorded ICa, enabling the identification of CaV channel subtypes in dendrites (Jaafari et al., 2014). Considering the low buffering capacities of endogenous buffers in the axon (κs ≈ 20) (Jackson and Redman, 2003; Delvendahl et al., 2015), we employed this technique in the AIS. Ca2+ imaging in HEK-293 cells was performed with 0.1 mM OGB1 added to the HEK-293 cell intracellular solution (from which EGTA was omitted). The fluorescence was recorded during a 200 Hz 1 s train of depolarizing pulses from –120 to –30 or –20 mV (corrected for liquid junction potential).
 
-## Voltage imaging
+### Voltage imaging
 
 Voltage imaging in neurons was performed as reported previously (Hamada et al., 2017). Neurons were filled with intracellular solution containing JPW3028 (0.8 mM) for typically 1 hr at room temperature, after which the patch pipette was retracted and the dye was left to diffuse into the lipid membranes for 1–4 hr. Subsequently the bath temperature was increased to 35°C and the cell was re-patched with normal intracellular solution. A 530 nm LED (SP-05-G4, Luxeon Star LEDs, Canada) was used for excitation of the dye. The excitation light was filtered with a 530/20 nm filter (BP510-550, Olympus), reflected to the sample by a dicroic mirror with a center wavelength of 570 nm (DM570, Olympus) and the emission light filtered by a 590 longpass filter (BA590, Olumpys). Data were collected at 20 kHz and low-pass filtered by a binomial filter (one pass) and averaged over 20–30 trials. Voltage imaging in HEK-293 cells was performed identically, with the only exception being that the experiments were performed at 20°C and the dye diffused equally in the small round cells, so imaging experiments were initiated 20 min after obtaining whole-cell configuration. The cells were maintained at –75 mV holding potential and the fluorescence of JPW3028 recorded at 1 kHz. The voltage command consisted of 100 ms steps of 50 mV increasing steps with a maximal step of +250 mV relative to holding potential. The average ΔF/F per voltage step was defined as the first 20 frames of each bleach corrected and normalized voltage step.
 
-## Imaging data analysis
+### Imaging data analysis
 
 Imaging data analysis was performed using Neuroplex (Redshirt imaging), Axograph and Excel. Fluorescence signals were always background-subtracted. To correct for bleach effects, every 5th trial was recorded without current injection. A first order exponential was fitted to the average of the bleach trials and normalized to the peak. The average of the signal trials was divided by this trace to correct for bleach decay. Values for each ROI were defined as a fractional fluorescence change (ΔF/Fbaseline), where Fbaseline is the raw intensity average of 10 frames before the signal (subthreshold or AP) was initiated. Pixels were color coded with ‘physics’ color scheme from FIJI image processing software (NIH, USA) (Schindelin et al., 2012). For both OGB-1 and OGB-5N, we recorded the fluorescence in response to subthreshold stimuli, single APs and multiple APs. The ΔF/F response to subthreshold stimuli and a single AP was always below dye saturation. For OGB-1, we recorded trains of APs and observed that a single AP was 25 ± 2.7% of dye saturation (n = 8) and for OGN-5N, we observed a linear increase from 1 to 3 APs (n = 3), indicating that the fluorescence of a single AP was far from dye saturation.
 
-## Optical current measurements
+### Optical current measurements
 
-To compare kinetics between electrically and optically recorded currents, electrical currents were first downsampled to 20 kHz (optical acquisition rate). The optical trace was differentiated and then inverted (to mimic INa, which is conventionally depicted as a negative, inward current). All current traces were then filtered with a 3-window binomial filter of 50–150 iterations (generally 100). The traces were baselined to the current before the onset of the fast current and normalized to the peak of the current. Because the ICa_opt traces were too noisy to be fitted with a single exponential fit, conventionally used to obtain activation rise time, we used a Boltzmann sigmoid function to obtain the slopes of the traces.y= bottom+ top-bottom1+ex-x0k
+To compare kinetics between electrically and optically recorded currents, electrical currents were first downsampled to 20 kHz (optical acquisition rate). The optical trace was differentiated and then inverted (to mimic INa, which is conventionally depicted as a negative, inward current). All current traces were then filtered with a 3-window binomial filter of 50–150 iterations (generally 100). The traces were baselined to the current before the onset of the fast current and normalized to the peak of the current. Because the ICa_opt traces were too noisy to be fitted with a single exponential fit, conventionally used to obtain activation rise time, we used a Boltzmann sigmoid function to obtain the slopes of the traces.
+
+$$
+y=bottom+\frac{top-bottom}{1+e^{\frac{x-x_{0}}{k}}}
+$$
 
 We fitted all traces using Axograph and the slope values (k) were used to compare activation kinetics. Although the INa peak amplitude recorded at the soma highly varied between neurons (–36.61 ± 6.53 nA), the slope was nearly constant (207 ± 0.007 µs, n = 17).
 
-## Ratiometric imaging
+### Ratiometric imaging
 
 To estimate the absolute [Na+]i and [Ca2+]i in response to a single AP, we used a ratiometric imaging approach. Patch pipettes were front filled with clear intracellular solution and back-filled with intracellular solution containing 1.5 mM SBFI (Invitrogen) or 200 µM bis-Fura-2 hexapotassium salt (bF2, Biotium). Fluorescent emission of ratiometric indicators depends on the ionic concentration and the excitation wavelength where an increase in [Ca2+]i produces an increase in bF2 fluorescence with the wavelength of 340 nm but a decrease with 385 nm. On the other hand, with SBFI an increase in [Na+]i decreases SBFI fluorescence at 340 nm but does not alter at 385 nm excitation wavelength. Using the ratio (R) corrects for differences in cytosolic volume or dye concentration differences along imaged compartments (Langer and Rose, 2009). The sources of excitation light were two LEDs (Thorlabs) with peaks at 340 nm and 385 nm, fitted with band pass excitation filters at 340/22 and 387/11 nm (FF01-340/22-25 and FF01-387/11-25, Semrock) and combined by a dichroic mirror with a central wavelength of 376 nm (FF376-Di01−25 × 36, Semrock). The excitation light was reflected to the sample by a dichroic mirror with a central wavelength at 405 nm (Di01-R405−25 × 36, Semrock) and passed through the objective to the sample. The fluorescent emission signals were passed through a 420 long pass filter (Thorlabs). Ratiometric imaging was performed by alternatingly triggering each LED at the frame rate of the camera, as described previously (Miyazaki and Ross, 2015). This was achieved by combining custom designed Arduino/Parallax machines with Cyclops LED drivers. These hardware solutions allowed us to digitally control the voltage driving the LED, thus having maximum control over excitation light intensity. Fluorescence emission signals originating from each LED were separated with custom written software (FrameSplitter.txt, Battefeld et al., 2018). The camera operated at 0.5–1.0 kHz, resulting in a ratiometric frame rate of 0.25–0.5 kHz. Per experiment the fluorescent signals were averaged for 40 to 120 trials. The ratio R was defined as F1/F2, where F1 and F2 are the background-subtracted fluorescence intensities at excitation with 340 nm and 385 nm, respectively.
 
-## Calibration of ratiometric imaging
+### Calibration of ratiometric imaging
 
 In order to scale ratiometric bF2 signals to absolute changes in Ca2+ concentration, we used the standard equation for ratiometric measurements (equation 1 in Figure 8—figure supplement 2; Grynkiewicz et al., 1985), which depends on KD, the dissociation constant, Rmin and Rmax, the ratio in zero and dye-saturating Ca2+, respectively and the scaling factor (Sf2/Sb2), defined as the fluorescence intensity at excitation with 385 nm of zero Ca2+ divided by saturating Ca2+. These values were determined in an ex situ calibration, by measuring the ratiometric signal of solutions containing 0 Ca2+ and a high [Ca2+] (Figure 8—figure supplement 2). The solutions closely mimicked intracellular solutions and contained (in mM): 110 K-gluconate, 4.4 or 21 KCl, 0 or 10 CaCl2, 3.8 or 5.36 MgCl2, 10 HEPES, 4 Mg-ATP, 0.3 Na2-GTP, 10 Na2-phosphocreatine, 10 EGTA, and 0.2 bF2. The final free [Ca2+] depends on interaction between Ca2+, Mg2+ and EGTA and was calculated using the maxchelator tool (Bers et al., 2010).
 
@@ -172,23 +578,27 @@ In order to scale ratiometric bF2 signals to absolute changes in Ca2+ concentrat
 
 Because Rmin and Rmax were not measured in situ we verified the Δ[Ca2+]free with an alternative analysis that is independent of the exact values for KD, Rmin and Rmax (equation 2 in Figure 8—figure supplement 2; Langer and Rose, 2009). In this approach, changes in fluorescence ratio ΔR/R0 (%) are plotted versus [Ca2+]free, showing a nearly linear increase in ΔR/R0 (%) for low [Ca2+]free (see Figure 8—figure supplement 2). A linear fit to the region of [Ca2+]i between 0 and 193 nM indicated that a 1% increase in ΔR/RbF2 corresponded to a Δ[Ca2+]i of ~10.4 nM (R2 = 0.99, six concentrations, n = 3 repetitions). We measured an AP-evoked Δ[Ca2+]free of 52.5 ± 12.2 nM (Figure 8—figure supplement 2), in good support of the standard Ca2+ measurement approach. We analyzed the ratiometric SBFI data only using this second approach, which is standard for SBFI measurements (Langer and Rose, 2009). The two base calibration solutions contained (in mM): 130 K-Gluconate or Na-Gluconate, 10 KCl of NaCl, 0.3 Tris2-GTP or Na2-GTP, 10 HEPES, 4 Mg2+ATP, 10 Tris2-phospocreatine or Na2-phospocreatine, and 1.5 SBFI, pH 7.25 adjusted with Tris base. These two base solutions provided a range of 0–160.6 mM [Na+]. When normalized to the ratio obtained in Na+-free solution (R0), a 1% increase in ΔR/RSBFI corresponded to a Δ[Na+]i of 0.35 mM for Δ[Na+]i between 0 and 48 mM (R2 = 0.98; eight concentrations, n = 3 repetitions, Figure 8—figure supplement 2). An AP evoked a Δ[Na+]i of 1.49 ± 0.2 mM (Figure 8—figure supplement 2).
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Following imaging experiments, the slices were fixed using 4% PFA in 0.1 M phosphate-buffered saline (PBS), pH 7.4 for 20 min and stored in 0.1 M PBS, pH 7.4 at 4°C. For triple immunohistological labeling the slices were washed three times in PBS and then incubated in a blocking solution (10% normal goat serum, 0.5% Triton X-100 in PBS) at room temperature for two hours, followed by 24 hr incubation at room temperature in the blocking solution containing primary antibodies: streptavidin Alexa-488 conjugate (1:500; Invitrogen), primary antibody for giant saccular organelle Synaptopodin (rabbit; 1:500; Sigma-Aldrich Chemie) and antibody for AIS marker: Ankyrin G (mouse; 1:100; Neuromab) or ßIV-spectrin (mouse; 1:250; Neuromab, see also Key Resources Table). The slices were 3x washed in 0.1 M PBS and then incubated with secondary antibodies: Alexa-555 goat anti rabbit IgG (1:500; Invitrogen) and Alexa 633 goat anti mouse IgG (1:500; Invitrogen). Subsequently, the slices were 3x washed in 0.1 M PBS and mounted with Vectashield mounting medium with 4,6-diamidino-2-phenylindole (DAPI; Vector Laboratories). Images (bit depth, 8) were collected as described previously (Hamada et al., 2016). To align confocal images and the Ca2+ fluorescence images of the RedShirt CCD camera (Figures 1, 2 and 4) we used the original calibrated images of the two systems. The maximum Ca2+ fluorescence image was calibrated within the original optical path. We overlaid the maximum Ca2+ fluorescence image of the RedShirt camera and the maximum projection of the streptavidin image of the neuron morphology from confocal microscopy within ImageJ and applied only a rotation translation to visually match the two images based on the AP-evoked Ca2+ signals spreading into dendrites and axons.
 
-## Model simulations with single compartment
+### Model simulations with single compartment
 
 All model simulations were performed with NEURON (v.7.5) (Hines and Carnevale, 2001). A single compartment was created with length and diameter dimensions of 10 µm and nseg = 10, with specific membrane capacitance of 1.0 µF cm–2, specific membrane resistance of 25 kΩ cm2 and specific axial resistivity of 150 Ω cm. The resting membrane potential set to –77 mV using e_pass. Conductance models for Ca2+ were based on the high-voltage activated (CaH) and a T-type CaV channel model (CaT) obtained from ModelDB (https://senselab.med.yale.edu/ModelDB/) (Mainen and Sejnowski, 1996). Ca2+ conductivity of NaV channels was modeled by including a standard ohmic Ca2+ ion mechanism with a reversal potential (eca) of +140 mV into a mathematical 8-state Na+ conductance model, computing simultaneously voltage- and time-dependence of the Ca2+ current ICa(Na) and INa based on experimentally constrained rate constants of somatodendritic and axonal INa (Schmidt-Hieber and Bischofberger, 2010). The kinetics of the voltage-gated conductance models was examined by fitting the current rise times with an exponential function for a –35 mV command potential, resampling the simulated traces to 20 kHz. The results showed that the INa in the model activated with 240 µs and ICa(Na) (0.5% conductivity ratio) with 280 µs. In comparison, ICaT activated with 4.88 ms and ICaH with 6.51 ms. These time constants are well in range of the experimentally determined values for the TTX- and Ni2+-sensitive components recorded at the soma (Figure 5). For Figure 8—figure supplement 1 we used an AP recorded from the L5 pyramidal neuron AIS at 100 kHz (threshold-to-peak, 94 mV; half-width duration of 285 µs [Hallermann et al., 2012] as the command potential in VectorPlay linked to the SEClamp function in NEURON (with Rs being infinitely small). Single compartmental models were run at dt of 10 µs at a nominal temperature of 33°C.
 
-## Model simulations with a multicompartmental model
+### Model simulations with a multicompartmental model
 
-Conductance-based multi-compartmental simulations were performed with an anatomically realistic reconstructed rat L5 pyramidal neuron (NeuroMorpho.Org ID: NMO_75667, Neuron Name 2014-04-01_1). The morphology was acquired with a confocal microscope at 2048 × 2048 pixels (1.0 µm z-steps, Leica SP8) using a 40× oil immersion objective (NA 1.3) scanning both the biocytin-streptavidin fluorescence and the ßIV-spectrin fluorescence. Uncompressed image stacks (~20 GB) were imported and reconstructed into Neurolucida (v.10, MBF Bioscience Inc, Germany), compartmentalized for the AIS and nodes as described previously (Hamada et al., 2016) and imported with the 3D import tool in NEURON (Carnevale and Hines, 2006). Multicompartmental simulations were performed to estimate the detailed ionic accumulation, concentration and diffusion in the proximal sites of the axon and match our experimental recordings as close as possible. Ca2+ diffusion, buffering and pump (cdp) mechanisms were implemented based on the algorithms described in the NEURON book (Chapter 9, example 9.8 in Carnevale and Hines, 2006) and on a previously published Ca2+ model (Fink et al., 2000) (available at ModelDB, accession number 125745, https://senselab.med.yale.edu/ModelDB/). We implemented cdp.mod (Fink et al., 2000) with the following alterations: we removed all SERCA related parameters, updated some starting values to our experimental conditions and extended the models to report not only [Ca2+]i, but also to simulate the Ca2+ indicator response ΔF/F, using the equation:F = [dye]free+ c*[Ca2++ buffer][dye]total
+Conductance-based multi-compartmental simulations were performed with an anatomically realistic reconstructed rat L5 pyramidal neuron (NeuroMorpho.Org ID: NMO_75667, Neuron Name 2014-04-01_1). The morphology was acquired with a confocal microscope at 2048 × 2048 pixels (1.0 µm z-steps, Leica SP8) using a 40× oil immersion objective (NA 1.3) scanning both the biocytin-streptavidin fluorescence and the ßIV-spectrin fluorescence. Uncompressed image stacks (~20 GB) were imported and reconstructed into Neurolucida (v.10, MBF Bioscience Inc, Germany), compartmentalized for the AIS and nodes as described previously (Hamada et al., 2016) and imported with the 3D import tool in NEURON (Carnevale and Hines, 2006). Multicompartmental simulations were performed to estimate the detailed ionic accumulation, concentration and diffusion in the proximal sites of the axon and match our experimental recordings as close as possible. Ca2+ diffusion, buffering and pump (cdp) mechanisms were implemented based on the algorithms described in the NEURON book (Chapter 9, example 9.8 in Carnevale and Hines, 2006) and on a previously published Ca2+ model (Fink et al., 2000) (available at ModelDB, accession number 125745, https://senselab.med.yale.edu/ModelDB/). We implemented cdp.mod (Fink et al., 2000) with the following alterations: we removed all SERCA related parameters, updated some starting values to our experimental conditions and extended the models to report not only [Ca2+]i, but also to simulate the Ca2+ indicator response ΔF/F, using the equation:
+
+$$
+F=\frac{[dye]_{free}+c*[Ca^{2+}+buffer]}{[dye]_{total}}
+$$
 
 With c being a constant to scale simulated ΔF/F. Because the equation was used to match the simulation to experimental data with regard to the temporal dynamics of Ca2+ extrusion, the absolute amplitude of ΔF/F was not used and c was set to a nominal value of 6. The different Ca2+ indicators used experimentally were implemented by adjusting the concentration of the exogenous buffer, and its known or measured KD. Static Ca2+ buffering properties of endogenous organelles (κs) were simulated with a TBufs of 100–400 µM and KDs of 10 µM, to mimic a κs of 10–40 (Jackson and Redman, 2003; Delvendahl et al., 2015).
 
-To constrain the peak Na+ conductance densities (g-Na) we injected a 3 ms square current pulse in the somatic compartment and iteratively adjusted g-Na and g-K. We varied both their peak conductance densities as well as the voltage-dependence of activation of NaV and KV channels by constraining the model AP to the experimentally recorded AP of the same neuron, with the aim to match the AP both in the V-t as well as the phase-plane dimensions recorded and simulated at 100 kHz (Figure 7c). To further constrain g-Na we compared the AP-evoked [Na+] with the experimental recordings using the ratiometric indicator SBFI, yielding a Δ[Na+]i of on average ~1.5 ± 0.2 mM (n = 5, imaged at 0.5 kHz; Figure 8—figure supplement 2). CaV channels were incorporated based on previously published models (Mainen and Sejnowski, 1996) and CaV channel conductance was separated in high- and low-voltage (T-type) activated channels and was varied between 2 and 4 pS µm–2 in the AIS, 8 and 4 pS µm–2 in the soma and ranged between 0.5 and 4 pS µm–2 in the dendrites.
+To constrain the peak Na+ conductance densities ($g-$Na) we injected a 3 ms square current pulse in the somatic compartment and iteratively adjusted $g-$Na and $g-$K. We varied both their peak conductance densities as well as the voltage-dependence of activation of NaV and KV channels by constraining the model AP to the experimentally recorded AP of the same neuron, with the aim to match the AP both in the V-t as well as the phase-plane dimensions recorded and simulated at 100 kHz (Figure 7c). To further constrain $g-$Na we compared the AP-evoked [Na+] with the experimental recordings using the ratiometric indicator SBFI, yielding a Δ[Na+]i of on average ~1.5 ± 0.2 mM (n = 5, imaged at 0.5 kHz; Figure 8—figure supplement 2). CaV channels were incorporated based on previously published models (Mainen and Sejnowski, 1996) and CaV channel conductance was separated in high- and low-voltage (T-type) activated channels and was varied between 2 and 4 pS µm–2 in the AIS, 8 and 4 pS µm–2 in the soma and ranged between 0.5 and 4 pS µm–2 in the dendrites.
 
-## Statistics and data availability
+### Statistics and data availability
 
 All statistical tests were done in GraphPad Prism 8 (version 8.1.2, GraphPad Software, Inc). Sample sizes for the pharmacological experiments were estimated based on the following assumptions: to observe a 50% block (based on Bender and Trussell, 2009) with 25% standard deviation (relative to mean) with a power of 0.8 and a type I error probability of 0.05, we would need a minimum of 4 paired recordings per treatment (PS Software version 3.1.6).
 

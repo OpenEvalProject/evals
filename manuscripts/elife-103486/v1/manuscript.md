@@ -8,18 +8,101 @@
 
 ### Affiliations
 
-1. https://ror.org/0420db125 Laboratory of Chromosome and Cell Biology, The Rockefeller University New York United States
-2. https://ror.org/007ps6h72 Basic Sciences Division, Fred Hutchinson Cancer Center Seattle United States
+1. Laboratory of Chromosome and Cell Biology, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
+2. Basic Sciences Division, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
 
 † Corresponding author
 
 ## Abstract
 
-Cryo-EM single-particle analyses typically require target macromolecule concentration at 0.05~5.0 mg/ml, which is often difficult to achieve. Here, we devise Ma g netic I solation and C oncentration (MagIC)-cryo-EM, a technique enabling direct structural analysis of targets captured on magnetic beads, thereby reducing the targets’ concentration requirement to <0.0005 mg/mL. Adapting MagIC-cryo-EM to a Chromatin Immunoprecipitation protocol, we characterized structural variations of the linker histone H1.8-associated nucleosomes that were isolated from interphase and metaphase chromosomes in Xenopus egg extract. Combining Du plicated S election T o E xclude R ubbish particles (DuSTER), a particle curation method that excludes low signal-to-noise ratio particles, we also resolved the 3D cryo-EM structures of nucleoplasmin NPM2 co-isolated with the linker histone H1.8 and revealed distinct open and closed structural variants. Our study demonstrates the utility of MagIC-cryo-EM for structural analysis of scarce macromolecules in heterogeneous samples and provides structural insights into the cell cycle-regulation of H1.8 association to nucleosomes.
+Cryo-EM single-particle analyses typically require target macromolecule concentration at 0.05~5.0 mg/ml, which is often difficult to achieve. Here, we devise Magnetic Isolation and Concentration (MagIC)-cryo-EM, a technique enabling direct structural analysis of targets captured on magnetic beads, thereby reducing the targets’ concentration requirement to <0.0005 mg/mL. Adapting MagIC-cryo-EM to a Chromatin Immunoprecipitation protocol, we characterized structural variations of the linker histone H1.8-associated nucleosomes that were isolated from interphase and metaphase chromosomes in Xenopus egg extract. Combining Duplicated Selection To Exclude Rubbish particles (DuSTER), a particle curation method that excludes low signal-to-noise ratio particles, we also resolved the 3D cryo-EM structures of nucleoplasmin NPM2 co-isolated with the linker histone H1.8 and revealed distinct open and closed structural variants. Our study demonstrates the utility of MagIC-cryo-EM for structural analysis of scarce macromolecules in heterogeneous samples and provides structural insights into the cell cycle-regulation of H1.8 association to nucleosomes.
 
 ## Introduction
 
 Recent advances in cryogenic electron microscopy (cryo-EM) technology have enabled the structural characterization of biomolecules isolated from their native conditions (Azinas and Carroni, 2023). However, the necessity for high sample concentration restricts its applicability to abundant targets (Natchiar et al., 2017; Arimura et al., 2021; Arimura and Funabiki, 2022; Leesch et al., 2023). The vitrification step of cryo-EM is a major contributor to this bottleneck. In a conventional plunge vitrification method, 3 µL of aqueous samples greater than 1 mg/mL are typically required to acquire sufficient numbers of particle images on cryo-EM micrographs for 3D structure reconstruction (Table 1 Bhella, 2019). This is because most of the target complexes in the sample solution applied on a cryo-EM grid must be removed by a blotting paper to make a thin ice layer suitable for analysis. Several methods are currently available to lower sample volume/concentration needed (Table 1). Jet vitrification (Ravelli et al., 2020) and Spotiton (Dandey et al., 2018) require sub-nanoliters of the sample volume, but they still require high-concentration samples. Affinity grids, such as Ni-NTA lipid monolayer grids (Kelly et al., 2008), chemically functionalized grids (Llaguno et al., 2014), antibody-attached grids (Yu et al., 2016), and streptavidin monolayer grids (Wang et al., 2008), are amenable for lower concentration samples (~0.05 mg/mL), but concentrating natively isolated targets to such a level and reproducibly generating the affinity grids remains challenging.
+
+**Table 1.**
+ The required sample amount for analyzing chromatin samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Methods</th>
+      <th>Purity</th>
+      <th>Concentration</th>
+      <th>Volume</th>
+      <th>Amount</th>
+      <th>Advantage</th>
+      <th>Disadvantage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cryo-EM (conventional)</td>
+      <td>Purified</td>
+      <td>0.5~5.0 mg/mL</td>
+      <td>3~4 µL/grid</td>
+      <td>&gt;10 µg/sample</td>
+      <td>simple</td>
+      <td>High concentration of sample is required</td>
+    </tr>
+    <tr>
+      <td>Cryo-EM (Jet vitrification)</td>
+      <td>Purified</td>
+      <td>4 mg/mL</td>
+      <td>0.001 µL/grid</td>
+      <td>&gt;4 ng/sample</td>
+      <td>Very low volume of sample is required</td>
+      <td>High concentration of sample is required</td>
+    </tr>
+    <tr>
+      <td>Cryo-EM (Affinity grid)</td>
+      <td>Crude</td>
+      <td>0.05 mg/mL</td>
+      <td>3~4 µL/grid</td>
+      <td>&gt;1 µg/sample</td>
+      <td>Sample can be isolated and concentrated on grid</td>
+      <td>The maximum sample volume is limited</td>
+    </tr>
+    <tr>
+      <td>ChIP-seq</td>
+      <td>Crude</td>
+      <td>-</td>
+      <td>-</td>
+      <td>10~50 ng DNA</td>
+      <td>Sample can be isolated and concentrated by beads</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SDS-PAGE (CBB stain)</td>
+      <td>Crude</td>
+      <td>0.005~0.100 mg/mL</td>
+      <td>1~20 µL/lane</td>
+      <td>&gt;30 ng/band</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MagIC-cryo-EM</td>
+      <td>Crude</td>
+      <td>&lt;0.0005 mg/mL</td>
+      <td>1~2000 µL</td>
+      <td>&gt;5 ng (2 ng DNA) /grid</td>
+      <td>Sample can be isolated and concentrated by beads</td>
+      <td>cryo-EM data collection points are selected manually.</td>
+    </tr>
+    <tr>
+      <td>SDS-PAGE (Silver stain)</td>
+      <td>Crude</td>
+      <td>0.0001~0.001 mg/mL</td>
+      <td>1~20 µL/lane</td>
+      <td>&gt;1 ng/band</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Structural characterization of native chromatin-associated protein complexes is particularly challenging due to their heterogeneity and scarcity: more than 300 proteins directly bind to the histone core surface (Skrajna et al., 2020), while each of these proteins is targeted to only a fraction of nucleosomes in chromatin. For their structural analysis, it is a common practice to assemble nucleoprotein complexes using purified recombinant proteins and a specific short (10–1000 bp) linear DNA. However, this reconstitution approach has a limitation since the structure and function of chromatin proteins can be altered by several variances under native conditions, such as DNA sequence, DNA and protein modifications, and short- and long-scale DNA folding. Although isolation of the endogenous chromatin-associated complexes can be achieved through chromatin immunoprecipitation (ChIP; Hebbes et al., 1988; Solomon et al., 1988; Gilmour and Lis, 1986) to determine the associated DNA sequences and proteins (Zou et al., 2022; Wang et al., 2013), the amount obtained by this method is too little to apply for conventional structural analysis.
 
@@ -29,7 +112,7 @@ Aiming to reduce sample requirements for single particle cryo-EM analyses to lev
 
 ## Results
 
-## Development and optimization of MagIC-cryo-EM using nucleosomes
+### Development and optimization of MagIC-cryo-EM using nucleosomes
 
 Inspired by a report using 200–300 nm superparamagnetic beads directly loaded onto a cryo-EM grid to image viral particles (Bonnafous et al., 2010), we examined the feasibility of 50 nm streptavidin nanobeads for cryo-EM single-particle analysis using poly-nucleosome arrays as pilot targets (Figure 1A). Nanobeads were easily identified on the grid as black dots in the intermediate-magnification montage map (Figure 1B), facilitating target identification for subsequent high-magnification data collection. In the high-magnification micrographs, poly-nucleosome fibers were observed around the nanobeads as expected (Figure 1C). Using nucleosome-like particles selected from 550 micrographs by the machine-learning-based software Topaz (Bepler et al., 2019a), we successfully determined the 3D structure of the nucleosome at sub-nanometer resolution (Figure 1D). This result, however, revealed a notable issue; an intense halo-like scattering covered an ~30 nm radius around the nanobeads (Figure 1D, blue areas), interfering with the signal from particles that were proximal to the beads.
 
@@ -39,21 +122,516 @@ Inspired by a report using 200–300 nm superparamagnetic beads directly loaded 
 
 To reduce the effect of the halo-like scattering surrounding the nanobeads, a protein spacer module was attached to the beads so that the target biomolecules are placed outside the reach of the halo (Figure 2A and B). After several rounds of optimization using the in vitro reconstituted H1.8-bound nucleosome as a model target, we chose a spacer module comprising an 11 nm triple helical bundle (3HB) protein (Huang et al., 2014) and four copies of a 60 nm single alpha helix (SAH) protein (Sivaramakrishnan and Spudich, 2011) for its effectiveness and reasonable production yield (Figure 2, Figure 2—figure supplement 1). The distal end of the spacer module was engineered to allow for exchangeable target-capturing modules by SPYcatcher-SPYtag conjugation (Figure 2B; Zakeri et al., 2012). We hereon refer to these magnetic nanoparticles coated with the spacer and target-capturing modules as MagIC-cryo-EM beads.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic depicting the principle steps of MagIC-cryo-EM. (B) Graphical representation of the MagIC-cryo-EM beads with 3HB and SAH spacers and GFP nanobody target capture module. (C) Schematic of MagIC-cryo-EM for in vitro reconstituted H1.8-GFP-bound nucleosomes isolated from an excess of H1.8-free nucleosomes. (D) Native PAGE analysis of H1.8-GFP-bound nucleosomes and unbound nucleosomes in the input. DNA staining by SYTO-60 is shown. (E) A handmade humidity chamber used for the 5 min incubation of the cryo-EM grids on the magnet. The humidity chamber was assembled using a plastic drawer. Wet tissues are attached to the side walls of the chamber, which is sealed with a plastic cover to maintain high humidity. Two pieces of neodymium magnets are stacked. A graphene grid is held by a non-magnetic vitrobot tweezer and placed on the magnets. 4 µL of sample is applied on the grid and incubated for 5 min. (F) Micrograph montage of the grids without using magnetic concentration. The GFP-nanobody-MagIC-cryo-EM beads (4 µL of 12.5 pM beads) were applied on the graphene-coated Quantifoil R 1.2/1.3 grid and vitrified without incubation on a magnet. (G) Micrograph montage of the grids without using magnetic concentration. The GFP-nanobody-MagIC-cryo-EM beads (4 µL of 12.5 pM beads) were applied on the graphene-coated Quantifoil R 1.2/1.3 grid and vitrified with 5 min incubation on two pieces of 40x20 mm N52 neodymium disc magnets. (H) Quantitative analysis of the percentage of holes containing MagIC-cryo-EM beads. Each data point represents the percentage of holes containing MagIC-cryo-EM beads on each square mesh. (I) Quantitative analysis of the average number of MagIC-cryo-EM beads per hole. Each data point represents the average number of MagIC-cryo-EM beads per hole on each square mesh. The edges of the boxes and the midline indicates the 25th, 50th, and 75th percentiles. Whiskers indicate the maximum and lowest values in the dataset, excluding outliers. For the quantification, 11 square meshes with 470 holes without magnetic concentration and 11 square meshes with 508 holes with 5 min incubation on magnets were used. (J) Representative motion corrected micrographs of in vitro reconstituted H1.8-GFP nucleosomes captured by MagIC-cryo-EM beads. The micrographs were low-pass filtered to 10 Å resolution. Green circles indicate the nucleosome-like particles picked by Topaz. (K) 3D structure of the in vitro reconstituted H1.8-GFP-bound nucleosome determined through MagIC-cryo-EM. The pipeline for structural analysis is shown in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Spacer modules attached to the 50 nm magnetic beads were optimized to cover intense halo-like noises formed by the beads. The in vitro reconstituted H1.8-GFP-bound nucleosomes were used for MagIC-cryo-EM optimization with various versions of the spacer modules. The cartoons depict the beads and spacer length of each experiment. The critical parameters are colored with red. The bottom 3D maps are the cryo-EM structures determined in each experiment. For the sub-5 Å resolution structure determinations using the 300 kV microscope, layers of the of 11 nm 3HB spacer and 60 nm SAH spacer are required on the paramagnetic nanobeads (Test 1, 3, and 5). For the sub-5 Å resolution structure determinations using the 200 kV microscope, the inner layers with the 11 nm 3HB spacer and mono-SPYtag avidin tetramer can be omitted because the noise signals are weaker in the 200 kV microscope then that in 300 kV microscope (Test 2 and 3). (B) Purified proteins for assembling the MagIC-cryo-EM beads. SDS-PAGE analysis was done by applying samples to 4–20% Criterion TGX Precast Midi Protein Gel (Bio-Rad 5671095) and ran at 200 V for 40 min. GelCode Blue stained gel is shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The single particle analysis pipeline for the MagIC-cryo-EM of the in vitro reconstituted H1.8-GFP-bound nucleosomes. Non-nucleosome or noisy particles were removed by heterogeneous refinement with decoy 3D classes (decoy classification). Using the particles assigned to the nucleosome class, another round of heterogeneous refinement was performed to isolate the classes with apparent H1.8 densities. The particles assigned to the classes A and B were mixed, and the 3D structure of the H1.8-GFP-bound nucleosome was determined at 3.63 Å resolution. (B) Comparison between manually picked particles used to train Topaz (middle panel) and the particles picked by Topaz (right panel). Green circles indicate the picked particles. (C) Particle orientation of cryo-EM structure of the H1.8-GFP-bound nucleosome. (D) Gold-standard Fourier Shell Correlation (FSC) curve of the H1.8-GFP nucleosome. The final resolutions of the cryo-EM maps were determined by the gold-standard with a threshold of 0.143. (E) 3D FSC curve of the H1.8-GFP nucleosome.
+
 To assess the feasibility of the MagIC-cryo-EM beads for structural analysis of a low-concentration target in heterogeneous samples, we isolated H1.8-GFP-bound nucleosomes by anti-GFP nanobody coupled to the MagIC-cryo-EM beads from a mixture of H1.8-GFP nucleosomes (1.7 nM, or 0.00047 mg/mL) and a large excess of unbound mono-nucleosomes (53 nM, or 0.012 mg/mL; Figure 2C and D). This target concentration was approximately 100–1000 times lower than the concentration required for conventional cryo-EM methods, including affinity grid approaches (Kelly et al., 2008; Llaguno et al., 2014; Yu et al., 2016). The magnetic beads were captured on a cryo-EM grid by neodymium magnets for 5 min in a humidified chamber (Figure 2E). This magnetic capture step significantly increased the number of beads that were found in the sample holes of the grid (Figure 2F–I), thereby mitigating the sample loss caused by filter paper blotting to generate a thin ice layer .
 
 High-magnification micrographs of MagIC-cryo-EM beads show that the spacer module successfully placed nucleosome-like particles outside the halo-like scattering surrounding the nanobeads (Figure 2J). The local enrichment of target molecules around MagIC-cryo-EM beads offers a substantial advantage in data collection efficiency over available cryo-EM methods (Kelly et al., 2008; Llaguno et al., 2014; Yu et al., 2016), in which target molecules are disseminated across the grids and are difficult to identify. In contrast, the magnetic beads are easily identified in the Medium-Magnification Montage (MMM) map (Figure 2G), enabling the selection of target-rich areas prior to high-magnification data collection. Indeed, approximately 100 H1.8-GFP nucleosome particle images per bead were efficiently collected even with a sample concentration as low as 0.00047 mg/mL of H1.8-GFP nucleosomes in the heterogeneous sample (Figure 2J right panel).
 
 After removing junk particles using decoy classification (Arimura et al., 2021; Gong et al., 2016; Nguyen et al., 2019; Lilic et al., 2020; Figure 2—figure supplement 2), an H1.8 density-containing nucleosome class was isolated via ab initio reconstruction and heterogeneous refinement using cryoSPARC (Punjani et al., 2017). Among the nucleosome-containing particles, 55.7% of them were classified as a nucleosome with H1.8 at the on-dyad position (Figure 2—figure supplement 2), yielding a final 3D structure at 3.6 Å resolution (Figure 2K). This high fraction of H1.8-bound nucleosome particles indicated that the MagIC-cryo-EM beads efficiently isolated the target molecules. Notably, this method only required 5 ng of H1.8-GFP-bound nucleosomes (including 2 ng of DNA) per cryo-EM grid, which is comparable to or even lower than the requirements of widely used ChIP-seq (Zou et al., 2022).
 
-## MagIC-cryo-EM application for ChIP to assess structural features of H1.8 in chromosomes
+### MagIC-cryo-EM application for ChIP to assess structural features of H1.8 in chromosomes
 
 We next adapted MagIC cryo-EM to ChIP protocols to elucidate the cell-cycle-specific mechanism that controls H1.8 stability on interphase and metaphase nucleosomes. We previously reported the cryo-EM structure of Xenopus H1.8 bound to the metaphase nucleosome at the on-dyad position, whereas no H1.8-containing structures were reconstructed from interphase chromosomes (Arimura et al., 2021; Figure 3A, left). Despite the high accumulation of H1.8 in the nucleus (Maresca et al., 2005; Figure 3B), the amount of nucleosome-associated H1.8 in interphase is reduced to approximately 30% of that in metaphase (Arimura et al., 2021). Given the high mobility of the linker histone H1 on chromatin (Choppakatla et al., 2021; Willcockson et al., 2021; Yusufova et al., 2021), we hypothesized that H1.8 on nucleosome is destabilized by an interphase-specific mechanism. By enriching H1.8-bound nucleosomes from interphase and metaphase chromosomes using MagIC-cryo-EM, we intended to examine if H1.8 in interphase preferentially associates with nucleosomes at more unstable binding positions, such as at off-dyad positions (Zhou et al., 2013; Song et al., 2014; Figure 3A, positioning model), or if there is an interphase-specific mechanism (by chaperones, for example) that dissociates H1.8 from nucleosomes (Figure 3A, chaperone model), although the amount H1.8-bound NAP1, the known histone H1.8 chaperone Miller and Heald, 2015, did not differ between metaphase and interphase egg extracts (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig3-v1.jpg)
+
+**Figure 3.:** (A) Models of potential cell cycle-dependent H1.8 dynamic binding mechanisms (B) Experimental flow of MagIC-cryo-EM analysis for GFP-H1.8 containing complexes isolated from chromosomes assembled in interphase and metaphase Xenopus egg extract. Fluorescence microscopy images indicate localization of GFP-H1.8 to interphase and metaphase chromosomes. DNA and GFP-H1.8 were detected either by staining with Hoechst 33342 or GFP fluorescence, respectively. (C) Native PAGE of fragmented interphase and metaphase chromosome sucrose gradient fractions. GFP-H1.8 and DNA were detected with either GFP fluorescence or SYTO-60 staining, respectively. (D) Western blot of GFP-H1.8 in interphase and metaphase chromosome sucrose gradient fractions. GFP-H1.8 was detected using anti-GFP antibodies. (E) SDS-PAGE of the sucrose gradient fractions 4 and 5 shown in (C), demonstrating heterogeneity of the samples. Proteins were stained by gel code blue. Red arrows indicate the H1.8-GFP bands. The full gel image is shown in Figure 3—figure supplement 2A. (F) In silico 3D classification of interphase and metaphase H1.8-bound nucleosomes isolated from chromosomes in Xenopus egg extract. To assess the structural variations and their population of H1.8-bound nucleosomes, ab initio reconstruction and heterogenous reconstruction were employed twice for the nucleosome-like particles isolated by the decoy classification. The initial round of ab initio reconstruction and heterogenous reconstruction classified the particles into three nucleosome-containing 3D models (A, B, C). Subsequent ab initio reconstruction and heterogenous reconstruction on the class A, which has weak H1.8 density, yielded three new nucleosome-containing structures, A1, A2, and A3. 3D maps represent the structural variants of GFP-H1.8-bound nucleosomes. Red arrows indicate extra densities that may represent H1.8. Green densities indicate on-dyad H1.8. The bar graphs indicate the population of the particles assigned to each 3D class in both interphase and metaphase particles (gray), interphase particles (blue), and metaphase particles (red). The pipeline for structural analysis is shown in Figure 3—figure supplement 3A. (G) Structures of H1.8-bound nucleosomes isolated from interphase and metaphase chromosomes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cell-cycle-independent H1.8 binding to NAP1 and NPM2 in the Xenopus egg cytoplasm. H1.8 was immunoprecipitated from Xenopus CSF (metaphase) extracts or interphase extracts and analyzed by western blotting. Antibodies against phosphorylated histone H3 Thr3 H3T3ph were used as a marker for M phase. Amounts of NAP1 and NPM2 co-immunoprecipitated with anti-H1.8 antibodies did not change between metaphase and interphase. An example of two reproducible results is shown. (B) Western blots to show the depletion efficiency of the endogenous H1.8 and complementation of recombinant non-tag H1.8 and H1.8-GFP in Xenopus egg extract. The asterisk indicates a non-specific cross-reacting band. (C) Representative fluorescence images of metaphase chromosomes with spindles in Mock- (∆Mock), endogenous H1.8-depleted Xenopus egg extract (∆H1.8), and recombinant H1.8 or recombinant H1.8-GFP supplemented endogenous H1.8-depleted Xenopus egg extracts (∆H1.8+H1.8 or ∆H1.8+H1.8 GFP, respectively). Misaligned metaphase chromosome phenotype caused by H1.8 depletion was rescued in H1.8 or H1.8-GFP supplemented Xenopus egg extracts. (D) Left; representative fluorescence images of individualized metaphase chromosomes. Elongated chromosome morphology caused by H1.8 depletion was rescued in H1.8 or H1.8-GFP supplemented Xenopus egg extracts. Scale bar, 5 µm. Right; quantification of chromosome length visualized by SuperPlots. Data distribution of the length of each individual chromosome from two biological replicates (purple and green) is shown as jitter plot with half violin plot. Each mark (purple open circle and green open inverted triangle) represents the average length of chromosomes from a single replicate. Bar represents median (red) and SD (black) of two biological replicates. Given the result that dataset is not normal distribution, confirmed by Shapiro-Wilk normality test, each p-value was calculated using Welch’s t-test. ***, p<0.001. The number of individualized chromosomes analyzed in each condition for each replicate is indicated at the bottom of the figure.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Sucrose density gradient centrifugation fractionations of MNase-treated interphase and metaphase chromosomes formed in Xenopus egg extract. SDS-PAGE analysis was done by applying 15 µL samples to 4–20% Criterion TGX Precast Midi Protein Gel (Bio-Rad 5671095) and ran at 200 V for 40 min. GelCode Blue stained gel is shown. (B) Native PAGE analysis of DNA lengths of the sucrose gradient fractions shown in A. 15 µL samples were treated with protease K and RNaseA and applied to 6% native PAGE gel with x0.5 TBE and ran at 150 V for 80 min. (C) Western blot of the sucrose gradient fractions used for the MagIC-cryo-EM. H1.8-GFP and endogenous H1.8 were detected by antibody for H1.8. ‘Input’ lanes indicate the sucrose gradient fractions before isolating H1.8-GFP-containing complexes with MagIC-cryo-beads. ‘Sup’ lanes indicate the unbound fractions after the isolation by MagIC-cryo-beads. ‘Beads’ lanes indicate the MagIC-cryo-beads isolating H1.8-GFP-containing complexes. ‘Recombinant H1.8-GFP’ lanes indicate purified H1.8-GFP with known concentrations. The samples for ‘Sup’ and ‘Recombinant H1.8-GFP’ lanes contained 0.01% Tween20, which increased the western blot signals presumably by reducing the sample absorption to the tubes and tips side wall. (D) Comparison of the H1-GFP and NPM2 containing bands in native PAGE of the sucrose density gradient centrifugation fractionation of MNase-treated interphase and metaphase chromosomes formed in Xenopus egg extract. H1-GFP was detected by GFP fluorescence (identical image with Figure 3C). NPM2 was detected by an anti-NPM2 antibody through western blotting, following protein transfer from the native PAGE gel to the membrane.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Related to Figure 3. (A) Single-particle analysis and in silico mixing 3D classification pipeline for the MagIC-cryo-EM. (B) Gold-standard FSC curves of the interphase and metaphase H1.8-GFP-bound nucleosomes. The final resolutions of the cryo-EM maps were determined by the gold-standard with a threshold of 0.143 (C) Particle orientation of cryo-EM structure of the interphase and metaphase H1.8-GFP-bound nucleosomes. (D) 3D FSC of the interphase and metaphase H1.8-GFP-bound nucleosomes.
+
 To distinguish between these models, we applied MagIC-cryo-EM to enrich H1.8-bound nucleosomes from chromosomes assembled in interphase and metaphase Xenopus egg extracts. Sperm nuclei were incubated in egg extracts supplemented with H1.8-GFP to obtain replicated interphase chromosomes and metaphase chromosomes, which were crosslinked and fragmented to generate soluble nucleoprotein complexes (Figure 3B). We confirmed that H1.8-GFP is functional as it rescued the chromosome elongation phenotype caused by H1.8 immunodepletion (Choppakatla et al., 2021; Maresca et al., 2005; Figure 3—figure supplement 1). Sucrose density gradient centrifugation was conducted to separate different H1.8-containing complexes, including mono-nucleosome fractions and oligo-nucleosome fractions, as previously described Arimura et al., 2021 (Figure 3C, Figure 3—figure supplement 2, and Table 2). As we had predicted that more H1.8 proteins would associate with nucleosomes in metaphase than in interphase Arimura et al., 2021, we increased the quantities of egg extract and sperm nuclei by 2.5-fold to prepare comparable amounts of H1.8-bound interphase nucleosomes as compared to metaphase (Figure 3C, fractions 4–11). To prevent the dissociation of H1.8 from nucleosomes during DNA fragmentation, the MNase concentration and the reaction time were optimized to generate DNA fragment lengths with 180–200 bp (Figure 3—figure supplement 2B), which is adequate for linker histone association Zhou et al., 2015. To ensure that most nucleosomes isolated through MagIC-cryo-EM were bound by H1.8, we selected the fractions enriched with H1.8-bound mono-nucleosomes (fraction 5 in Figure 3C and D), as oligo-nucleosomes (abundant in fractions 6–11) might include H1.8-free nucleosomes. These fractions contain highly heterogeneous protein mixtures (Figure 3E), in which H1.8-GFP is a minor constituent with an estimated concentration at 1–2 nM (corresponding to 0.00025–0.0005 mg/mL of H1.8-bound mono-nucleosomes; Figure 3—figure supplement 2C). Mass spectrometry (MS) analysis of these fractions also showed heterogeneity as they included several DNA-binding proteins, such as PCNA (Table 2 and Supplementary file 2).
+
+**Table 2.**
+ The list of the chromatin proteins detected by mass spectrometry (MS) before and after enrichment on the MagIC-cryo-EM-beads.The MS analysis was conducted to the sucrose gradient fractions 5, before (Figure 3C) and after (Figure 3E) enrichment with the GPF nanobody-MagIC-cryo-EM beads. Detectable MS signals for known chromatin proteins and the recombinant proteins used for assembling the MagIC-cryo-EM beads were manually selected and are listed here. See Supplementary file 2 of the full MS data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Full name or functions</th>
+      <th>Input interphase, fraction 5</th>
+      <th>Input metaphase, fraction 5</th>
+      <th>MagIC-cryo-EM, interphase, fraction 5</th>
+      <th>MagIC-cryo-EM, metaphase, fraction 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XBmRNA11963| h2ac17.L</td>
+      <td>histone H2A</td>
+      <td>1.37x1010</td>
+      <td>4.12x109</td>
+      <td>2.08x108</td>
+      <td>1.49x108</td>
+    </tr>
+    <tr>
+      <td>XBmRNA31731| LOC121402261</td>
+      <td>histone H2B</td>
+      <td>7.87x109</td>
+      <td>2.26x109</td>
+      <td>1.10x108</td>
+      <td>2.25x108</td>
+    </tr>
+    <tr>
+      <td>XBmRNA31368| LOC121402047</td>
+      <td>histone H4</td>
+      <td>7.34x109</td>
+      <td>2.00x109</td>
+      <td>1.11x108</td>
+      <td>1.63x108</td>
+    </tr>
+    <tr>
+      <td>XBmRNA36987| h2aj.L</td>
+      <td>histone H2A.J</td>
+      <td>6.74x109</td>
+      <td>3.64x109</td>
+      <td>2.44x108</td>
+      <td>1.29x108</td>
+    </tr>
+    <tr>
+      <td>XBmRNA58735| h2ax.2.L</td>
+      <td>histone H2A.X</td>
+      <td>6.56x109</td>
+      <td>1.73x109</td>
+      <td>2.44x108</td>
+      <td>1.75x108</td>
+    </tr>
+    <tr>
+      <td>XBmRNA1949| h2az1.L</td>
+      <td>histone H2A.Z</td>
+      <td>4.50x109</td>
+      <td>3.64x109</td>
+      <td>2.44x108</td>
+      <td>1.52x108</td>
+    </tr>
+    <tr>
+      <td>XBmRNA75391| h3-3b.L</td>
+      <td>histone H3.3</td>
+      <td>3.33x109</td>
+      <td>1.19x109</td>
+      <td>3.84x107</td>
+      <td>5.29x107</td>
+    </tr>
+    <tr>
+      <td>XBmRNA25971| npm2.L</td>
+      <td>Nucleoplasmin</td>
+      <td>1.77x109</td>
+      <td>n.d.</td>
+      <td>1.89x108</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA28658| npm2.S</td>
+      <td>Nucleoplasmin</td>
+      <td>1.76x109</td>
+      <td>n.d.</td>
+      <td>1.31x108</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA25690| pcna.L</td>
+      <td>PCNA</td>
+      <td>1.29x109</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA28883| pcna.S</td>
+      <td>PCNA</td>
+      <td>1.29x109</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA41314| h1-8.S</td>
+      <td>Linker histone H1.8</td>
+      <td>7.12x108</td>
+      <td>1.93x108</td>
+      <td>5.67x107</td>
+      <td>6.87x107</td>
+    </tr>
+    <tr>
+      <td>XBmRNA9392| supt16h.S</td>
+      <td>supt16h (histone chaperone FACT complex component)</td>
+      <td>3.14x108</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA4198| supt16h.L</td>
+      <td>supt16h (histone chaperone FACT complex component)</td>
+      <td>3.04x108</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA62381| ssrp1.S</td>
+      <td>ssrp1 (histone chaperone FACT complex component)</td>
+      <td>2.96x108</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>sfGFP</td>
+      <td>sfGFP (Tagged with H1.8)</td>
+      <td>2.84x108</td>
+      <td>8.15x107</td>
+      <td>6.02x107</td>
+      <td>4.58x107</td>
+    </tr>
+    <tr>
+      <td>XBmRNA26658| dnmt1.L</td>
+      <td>DNA methyltransferase 1</td>
+      <td>1.41x108</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA31618| dnmt1.S</td>
+      <td>DNA methyltransferase 1</td>
+      <td>1.35x108</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA5952| sub1.L</td>
+      <td>Activated RNA polymerase II transcriptional coactivator p15</td>
+      <td>8.60x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA24726| pclaf.L</td>
+      <td>PCNA-associated factor</td>
+      <td>8.38x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA4881| ran.L</td>
+      <td>GTP-binding nuclear protein Ran</td>
+      <td>7.38x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA42021| msh2.L</td>
+      <td>DNA repair protein MutS</td>
+      <td>7.08x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA52420| mcm4.L</td>
+      <td>DNA replication licensing factor MCM4</td>
+      <td>6.61x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA51197| mcm6.L</td>
+      <td>DNA replication licensing factor MCM6</td>
+      <td>6.54x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA60815| rcc2.L</td>
+      <td>Regulator of chromosome condensation 2</td>
+      <td>6.29x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA29645| pclaf.S</td>
+      <td>PCNA-associated factor</td>
+      <td>5.26x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA12919| rcc1.L</td>
+      <td>Regulator of chromosome condensation 1</td>
+      <td>5.24x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA27060| mcm7.L</td>
+      <td>DNA replication licensing factor MCM7</td>
+      <td>5.08x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA73621| LOC108700788</td>
+      <td>Importin subunit beta-like isoform X2</td>
+      <td>5.03x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA42017| msh6.L</td>
+      <td>DNA repair protein MutS</td>
+      <td>4.96x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA39469| top1.2.S</td>
+      <td>DNA topoisomerase I</td>
+      <td>4.92x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA82329| kpna7.S</td>
+      <td>Importin subunit beta</td>
+      <td>4.80x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA74418| csnk2a1.L</td>
+      <td>Casein kinase II subunit alpha</td>
+      <td>4.65x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA25938| XB5867546.L</td>
+      <td>Nucleoplasmin isoform (lacking C-ter tail)</td>
+      <td>4.31x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA7871| uhrf1.S</td>
+      <td>E3 ubiquitin-protein ligase UHRF1</td>
+      <td>4.27x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA12245| rpa1.L</td>
+      <td>Replication protein A</td>
+      <td>4.10x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA41384| LOC100192369</td>
+      <td>Sperm-specific nuclear basic protein 1</td>
+      <td>4.08x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA52377| mcm3.L</td>
+      <td>DNA replication licensing factor MCM3</td>
+      <td>4.04x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA36255| mcm5.L</td>
+      <td>DNA replication licensing factor MCM5</td>
+      <td>3.86x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA36962| mcm2.L</td>
+      <td>DNA replication licensing factor MCM2</td>
+      <td>3.73x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA60207| pold1.L</td>
+      <td>DNA polymerase</td>
+      <td>3.63x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA33152| fen1.L</td>
+      <td>Flap endonuclease 1 A</td>
+      <td>3.59x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA25831| pold2.L</td>
+      <td>DNA polymerase delta subunit 2</td>
+      <td>3.37x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA38234| ddb1.S</td>
+      <td>DNA damage-binding protein 1</td>
+      <td>2.98x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA78857| dppa2.L</td>
+      <td>Developmental pluripotency associated 2</td>
+      <td>2.96x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA34892| gins3.L</td>
+      <td>DNA replication complex GINS protein PSF3</td>
+      <td>2.93x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA83211| hirip3.S</td>
+      <td>HIRA-interacting protein 3</td>
+      <td>2.69x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA35380| nasp.L</td>
+      <td>histone chaperone NASP</td>
+      <td>1.84x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA23497| hmga2.L</td>
+      <td>High mobility group AT-hook 2</td>
+      <td>1.45x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA30566| hmga2.S</td>
+      <td>High mobility group AT-hook 2</td>
+      <td>1.43x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>XBmRNA33324| pola2.L</td>
+      <td>DNA polymerase alpha subunit B</td>
+      <td>1.10x107</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>Streptavidin</td>
+      <td>MagIC-cryo-EM beads proteins</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>1.22x109</td>
+      <td>2.19x109</td>
+    </tr>
+    <tr>
+      <td>SPY-tagGFPnanobody</td>
+      <td>MagIC-cryo-EM beads proteins</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>7.69x108</td>
+      <td>1.41x109</td>
+    </tr>
+    <tr>
+      <td>Spycatcher3</td>
+      <td>MagIC-cryo-EM beads proteins</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>5.99x108</td>
+      <td>7.82x108</td>
+    </tr>
+    <tr>
+      <td>11 nm_3HB</td>
+      <td>MagIC-cryo-EM beads proteins</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>4.32x107</td>
+      <td>5.90x107</td>
+    </tr>
+    <tr>
+      <td>60 nm_SAH</td>
+      <td>MagIC-cryo-EM beads proteins</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>1.21x107</td>
+      <td>7.73x106</td>
+    </tr>
+  </tbody>
+</table>
 
 H1.8-GFP-bound mono-nucleosomes in fraction 5 (from metaphase and interphase chromosomes) were captured by GFP nanobody-MagIC-cryo-EM beads and applied to grids for cryo-EM analysis. MS analysis of the captured MagIC-cryo-EM beads confirmed selective enrichment of H1.8 over other nonhistone proteins found in fraction 5 (Table 2). To quantitatively assess the population of the H1-bound structural modes of interphase and metaphase nucleosomes, we employed in silico mixing 3D classification (Arimura et al., 2021; Hite and MacKinnon, 2017). Micrographs of interphase and metaphase MagIC-cryo-EM were mixed and used for particle picking and decoy classification to isolate the nucleosome-containing classes (Figure 3—figure supplement 3). Subsequently, particles were classified into three nucleosome-containing 3D models (A, B, C), which were generated by ab initio reconstruction (Figure 3F, Figure 3—figure supplement 3A). Further 3D classification on the class A, which has weak H1.8 density, yielded three new nucleosome-containing structures, A1, A2, and A3 (Figure 3F, Figure 3—figure supplement 3A). Then, the populations of interphase and metaphase particles in each class were assessed (Figure 3F). Only class A1 had an apparent H1.8 density at the on-dyad position of the nucleosome, with 27% and 23% of the nucleosome particles assigned to this class coming from interphase and metaphase conditions, respectively. Although class A2 had linker DNA densities on both sides of the entry/exit sites of the nucleosome in a closed conformation, it did not have a clear H1.8 density. This suggested that the structures of H1.8 in the particles assigned to this class were not uniform, and that the H1.8 density was averaged out during the cryo-EM processing. Class A3, to which 3–4% of the nucleosome particles were assigned, had ambiguous extra densities outside of the on-dyad position (Figure 3F, red arrows), possibly representing H1.8 bound to non-dyad positions. Overall, the relative distributions of these five classes were largely similar between interphase and metaphase (Figure 3F), and the structures of H1.8-bound nucleosomes in interphase and metaphase were indistinguishable (Figure 3G). The structures of GFP-tagged H1.8-bound nucleosomes isolated from Xenopus egg extract chromosomes are essentially identical to the endogenous H1.8-bound nucleosome structure we previously determined Arimura et al., 2021. Therefore, although the usage of GFP-tagged H1.8 and MagIC-cryo-EM potentially affect the structure of the H1.8-bound nucleosome, we consider these influences to be minimal. Altogether, the results suggest that differential positional preferences of H1.8 on the nucleosome (Figure 3A, positioning model) are unlikely to drive the reduced H1.8 association to interphase nucleosomes.
 
-## MagIC-cryo-EM and DuSTER reconstructed cryo-EM structure of interphase-specific H1.8-containing complex, NPM2
+### MagIC-cryo-EM and DuSTER reconstructed cryo-EM structure of interphase-specific H1.8-containing complex, NPM2
 
 Although we could not discern structural differences of H1.8-bound mono-nucleosomes from metaphase and interphase samples, we noticed that substantial portions of H1.8 were enriched in sucrose fractions 3 and 4 isolated from interphase chromosomes but not from metaphase chromosomes (Figure 3C). As these interphase-specific H1.8 fractions were lighter than mono-nucleosome-containing fractions, we thought that they may contain regulatory proteins that preferentially dissociate H1.8 from nucleosomes in interphase, in line with the chaperone model (Figure 3A).
 
@@ -61,21 +639,116 @@ To characterize these interphase-specific fractions, we sought to determine thei
 
 To solve this issue, we devised the particle curation method DuSTER that does not requires the successful 2D classifications (Figure 4A). The principle of DuSTER is based on our realization that low S/N ratio particles were not reproducibly recentered during 2D classification (Figure 4—figure supplement 2). On the particles that were successfully recognized during 2D classification, picked points were shifted to the center of the particles (Figure 4A, black arrows). However, on the low S/N ratio particles that could not be recognized during 2D classification, picked points were shifted outside the center of the particles (Figure 4A, green arrows). To assess the reproducibility of the particle recentering during 2D classification, two independent particle pickings were conducted by Topaz so that each particle on the grid has up to two picked points (Figure 4A, second left panel). Some particles that only have one picked point will be removed in a later step. These picked points were independently subjected to 2D classification. After recentering the picked points by 2D classification, distances (D) between recentered points from the first picking process and other recentered points from the second picking process were measured. DuSTER keeps recentered points whose D are shorter than a threshold distance (DTH). By setting DTH = 20 Å, 2D classification results were dramatically improved in this sample; a five-petal flower-shaped 2D class was reconstructed (Figure 4B). This step also removes the particles that only have one picked point. Although approaches to utilize the reproducibility of 2D class assignments have been proposed (Yang et al., 2012), the advantage of DuSTER is that it can be applied to small particles that cannot even be properly classified in 2D classification.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of DuSTER workflow. (B) 2D classes before and after particle curation with DuSTER. More 2D classes are shown in Figure 4—figure supplement 5B–E. (C) 3D cryo-EM structure of interphase-specific H1.8-containing complex. C5 symmetry was applied during structural reconstruction. The complete pipeline is shown in Figure 4—figure supplement 3, Figure 4—figure supplement 5, and Figure 4—figure supplement 6. (D) MS identification of proteins that cofractionated with H1.8 in sucrose gradient fraction 4 from interphase chromosomes shown in Figure 3C. Portions of MagIC-cryo-EM beads prepared for cryo-EM were subjected to MS. Proteins shown in red are the proteins that comprise the GPF nanobody-MagIC-cryo-EM beads. Proteins shown in blue represent signals from H1.8-GFP. (E) Western blot of NPM2 in the sucrose gradient fractions of interphase and metaphase chromosome fragments. (F) The structural comparison of the crystal structure of the pentameric NPM2 core (PDB ID: 1K5J), and AF2 predicted structure of the pentameric NPM2 core, and MagIC-cryo-EM structures of NPM2-H1.8. The MagIC-cryo-EM structures indicate NPM2 in the NPM2-H1.8 complex forms pentamer.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The sucrose gradient fraction enriched with interphase-specific GFP-H1.8 containing complex (fraction 4 in Figure 3C) was subjected for MagIC-cryo-EM analysis. Initial 2D classification based on particles picked by Topaz generated only noise 2D classes (outlined with blue in the top panel) beside obvious nucleosome classes (outlined with orange in the top). Although 2D classes seem noisy, many of the original pick points marked apparent protein particles on the original motion-corrected micrograph (bottom). This suggests that these particle images were not properly aligned during 2D classification due to the low S/N of these particles. Uneven background noises were likely generated by uneven ice thickness, graphene and the SAH spacer proteins on MagIC-cryo-EM beads. (B) Graphical presentation of how noise 2D classes were generated. Although Topaz picked target protein particles on micrographs, many small target particles do not have strong enough S/N to be properly aligned during 2D classification.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The sucrose gradient fraction enriched with interphase-specific GFP-H1.8 containing complex (fraction 4 in Figure 3C) was isolated and analyzed by MagIC-cryo-EM. The initial particle locations assigned by particle picking software are updated during 2D to align the multiple images on a 2D map and place the reconstituted 2D map at the center of the reconstituted 2D space. To assess the reproducibility of particle centering during 2D classification, particle picking was repeated and subjected to the 2D classification individually. Particle images were sorted based on the distance D between a recentered picked point from the first picking set and another re-centered picked point from the second picking set. The sorted particle images were again applied to 2D classification. Particle images with D>20 Å, which were not reproducibly recentered, generated noise 2D classes. In contrast, particle images with D≤20 Å, which were reproducibly recentered, generated 2D classes with less background noises.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Please refer to the Materials and methods section for a detailed description.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) The particles accepted and rejected by DuSTER. Particles are mapped on motion-corrected micrographs. (B) DuSTER accepted particles across all defocus ranges. Numbers of accepted (cyan) and rejected (black) particles on each micrograph and their defocus length are plotted.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Pipeline for 3D DuSTER. Please refer to the materials and methods section for a detailed description. (B) A 2D classification result of the particles picked by Topaz without particle curation with DuSTER. Beside obvious nucleosome classes, no reasonable 2D classes were observed before the DuSTER curation. (C) 2D classification of the particle after the single round of 2D DuSTER. Fivefold symmetry flower-shaped 2D classes (outlined with cyan) are observed. (D) 2D classification of the particles after seven rounds of 2D DuSTER and manual curation of non-target complex classes. (E) 2D classification of the particles after the completion of 2D DuSTER and 3D DuSTER.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** Please refer to the Materials and methods section for a detailed description.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** (A–C) The NPM2 cryo-EM maps before and after the map sharpening. (D–F) 3D FSC of the NPM2 cryo-EM maps (G–I) Local resolution of NPM2 cryo-EM maps. (J–K) The structural comparison of the open and closed form NPM2 cryo-EM maps.
+
 Repetitive rounds of particle curation using the picked point locations recentered by 2D classification (referred to as 2D DuSTER) successfully reconstituted 2D classes of 60~80 Å complexes (Figure 4B, Figure 4—figure supplement 3). As expected, the particles rejected by DuSTER have a generally weak contrast (Figure 4—figure supplement 4A). Although higher contrast images can be generated by increasing the defocus (the distance between the target particles and the lens focus), the selected particles were evenly distributed in all defocus ranges between 1.5 and .5 µm (Figure 4—figure supplement 4B), demonstrating that DuSTER did not merely select any random high-contrast particles. By selecting these 2D classes, an initial 3D model was built (Figure 4—figure supplement 3 and Figure 4—figure supplement 5). Using this 3D model, particle curation was revised with 3D DuSTER. In the 3D DuSTER, three 3D maps were used as the initial models for the cryoSPARC heterogenous refinement to centering the particles accurately (DTH = 15 Å; Figure 4—figure supplement 5A). 3D DuSTER enabled the reconstruction of 3D structure of the interphase-specific H1.8-containing complex, a pentameric macromolecule with a diameter of approximately 60 Å (Figure 4C, Figure 4—figure supplement 7).
 
 To determine the identity of this complex, MagIC-cryo-EM beads used for isolating the complex were analyzed by MS (Figure 4D). Among the proteins detected by MS, NPM2 aligned well with the MagIC-cryo-EM result. Western blotting confirmed that NPM2 was preferentially enriched in interphase chromatin fractions compared to metaphase (Figure 4E), while NPM2 interacts with H1.8 in chromosome-free egg extracts both in interphase and metaphase (Figure 3—figure supplement 1). The native PAGE of the chromatin fractions indicated that NPM2 forms various complexes, including NPM2-H1.8, on the interphase chromatin fractions (Figure 3—figure supplement 2D). In addition, the crystal structure and AlphaFold2 (AF2)-predicted models of Xenopus NPM2 matched the MagIC-cryo-EM structure of the interphase-specific H1.8-bound complex (Figure 4F) Dutta et al., 2001.
 
-## Structural variations of NPM2 bound to H1.8
+### Structural variations of NPM2 bound to H1.8
 
 In Xenopus eggs, NPM2 replaces sperm protamines with core histones upon fertilization, thereby promoting nucleosome assembly on sperm DNA Laskey et al., 1978; Philpott et al., 1991; Ohsumi and Katagiri, 1991. NPM2 can also extract out somatic linker histones from chromatin Dimitrov and Wolffe, 1996; Ramos et al., 2005; Bañuelos et al., 2007. X-ray crystallography suggested that recombinant Xenopus NPM2 forms a pentamer and a decamer (a dimer of pentamers; Dutta et al., 2001). The acidic tracts in the C-terminal tail of NPM2 binds H2A-H2B, histone octamers, and the linker histone H5 Platonova et al., 2011; Ramos et al., 2010; Taneva et al., 2009, while poly-glutamylation and hyperphosphorylation of NPM2 promote its substrate sequestration ; Lorton et al., 2023. In addition, NPM1 (nucleophosmin), a paralog of NPM2, interacts with H1 Bañuelos et al., 2007; Gadad et al., 2011. However, no subnanometer-resolution structure of NPM2 or NPM1 with post-translational modifications or with substrates is currently available.
 
 By further analyzing our cryo-EM structure representing the H1.8-bound state of NPM2, we identified two structural variants, classified as open and closed forms (Figure 5, Figure 4—figure supplement 6, and Figure 4—figure supplement 7J–K). Due to its structural similarity to a flower, we call the highly acidic putative substrate-binding surface the petal side, whereas the other more charge neutral surface the sepal side (Figure 5, Figure 5—figure supplement 1). The major structural differences between the two forms are found at C-terminal and N-terminal segments of NPM2 core and at the A1 loop (Figures 5 and 6, Figure 5—figure supplement 1). In the closed form, β8 runs straight from the sepal to the petal sides of each pentamer and has an extended C-terminal segment that protrudes past the petal side of the pentamer. In the open form, however, the C-terminal portion of β8 is bent outward to the rim (Figure 5A). Along with this β8 bending, C-terminal segment, N-terminal segment, and A1 loop are also positioned outward in the open form. The configuration of β1, β8, and A1 loop in the crystal structure of Xenopus NPM2 Dutta et al., 2001, the AF2-predicted structure of Xenopus NPM2 Mirdita et al., 2022; Jumper et al., 2021; Steinegger and Söding, 2017, and the cryo-EM structure of the bacterially expressed human NPM1 Saluri et al., 2023, which were all determined in the absence of their target proteins, is similar to the closed form (Figure 5—figure supplement 1B–D). Notably, extra cryo-EM densities, which may represent H1.8, are clearly observed in the open form but much less in the closed form near the acidic surface regions proximal to the N terminus of β1 and the C terminus of β8 (Figure 5A and B). Supporting this idea, the acidic tract A1 (aa 36–40) and A2 (aa 120–140), which are both implicated in the recognition of basic substrates such as core histones Dutta et al., 2001; Platonova et al., 2011, respectively interact with and are adjacent to the putative H1.8 density (Figure 5B). In addition, the NPM2 surface that is in direct contact with the putative H1.8 density is accessible in the open form while it is internalized in the closed form (Figure 5C). This structural change of NPM2 may support more rigid binding of H1.8 to the open NPM2, whereas H1.8 binding to the closed form is less stable and likely occurs through interactions with the C-terminal A2 and A3 tracts, which are not visible in our cryo-EM structures.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig5-v1.jpg)
+
+**Figure 5.:** (A) Structural differences between the opened and closed forms of NPM2. Left panels show cryo-EM maps of the opened and closed forms of NPM2 with H1.8. Middle panels show the atomic models. The right panel shows the zoomed-in view of the open form (green) and closed form (gray) of the NPM2 protomer. In the closed form, β8 runs straight from the sepal side to the petal side. In the open form, the C-terminal portion of β8 is bent outward to the rim. (B) Putative H1.8 density (red arrow) in the averaged NPM2-H1.8 structure. (C) The NPM2 surface that contacts the putative H1.8 density (corresponding to aa 42–44) is shown in orange. The surface structures were generated from atomic models. The H1.8-binding sites are accessible in the open form while they are internalized in the closed form. Note that C-terminal acidic tracts A2 and A3 (Figure 5—figure supplement 1A) are not visible in the cryo-EM structure but are likely to contribute to H1.8 binding as well in both open and closed forms. (D) Model of the mechanism that regulates the amount of the H1.8 in interphase and metaphase nucleosome.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The secondary structures of the atomic models of open and closed NPM2. (B-D) The structural comparison of the crystal structure of the pentameric NPM2 core (PDB ID: 1K5J) (B), and AF2 predicted structure of the pentameric NPM2 core (C), and MagIC-cryo-EM structures of NPM2-H1.8 (D). The MagIC-cryo-EM structures indicate NPM2 in the NPM2-H1.8 complex forms pentamer. (E) The surface electropotential of open and closed NPM2 atomic models.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Pipeline to reconstitute C1 symmetry NPM2-H1.8 structures. (B–D) Structural features of the open (B), half open (C), and closed (D) NPM2-H1.8 structures without applying C5 symmetry. Blue lines indicate the angles of the sepal and petal domains used for measuring the bend angles of each protomer. The bending is critical in forming the open-form NPM2 structures and increases the accessibility of the H1-binding sites. The bend angles and the bindings of the H1 densities are not consistent in each protomer, suggesting that NPM2 protomers with various openness co-exist in a single NPM2-H1.8 complex.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/103486/elife-103486-fig6-v1.jpg)
 
 **Figure 6.:** (A) The on-bead-cryo-EM approach reduces preparation steps (e.g. target isolation, enrichment, and buffer exchange), which can lead to sample loss. (B) Sample loss during the grid-freezing process is reduced by magnet-based enrichment of the targets on cryo-EM grids. (C) The magnetic beads are easily identified in medium -magnification montage maps, enabling the selection of areas where targets exist prior to high-magnification data collection. (D) Targets are highly concentrated around the beads, ensuring that each micrograph contains more than 100 usable particles for 3D structure determination.
 
 In the aforementioned NPM2-H1.8 structures, for which we applied C5 symmetry during the 3D structure reconstruction, only a partial H1.8 density could be seen (Figure 5B). One possibility is that the H1.8 structure in NPM2-H1.8 does not follow C5 symmetry. As the size of the NPM2-H1.8 complex estimated from sucrose gradient elution volume is consistent with pentameric NPM2 binding to a single H1.8 (Figure 3C and Table 3), applying C5 symmetry during structural reconstruction likely blurred the density of the monomeric H1.8 that binds to the NPM2 pentamer. The structural determination of NPM2-H1.8 without applying C5 symmetry lowered the overall resolution but visualized multiple structural variants of the NPM2 protomer with different degrees of openness co-existing within an NPM2-H1.8 complex (Figure 5—figure supplement 2), raising a possibility that opening of a portion of the NPM2 pentamer may affect modes of H1.8 binding. Although more detailed structural analyses of the NPM2-substrate complex are the subject of future studies, MagIC-cryo-EM and DuSTER revealed structural changes of NPM2 that was co-isolated H1.8 on interphase chromosomes.
+
+**Table 3.**
+ Expected mass of the NPM2-H1.8-GFP complex.Sucrose gradient elution volume indicates that the NPM2-H1.8-GFP complex is smaller than mono-nucleosome (around 230 kDa). Only the NMP2 pentamer complexed H1.8-GFP monomer (166 kDa) reasonably explains the sucrose gradient result.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Molecular wight (Da)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NPM2 monomer</td>
+      <td>21,917</td>
+    </tr>
+    <tr>
+      <td>NPM2 pentamer</td>
+      <td>109,587</td>
+    </tr>
+    <tr>
+      <td>NPM2 decamer</td>
+      <td>219,175</td>
+    </tr>
+    <tr>
+      <td>H1.8-GFP</td>
+      <td>56,704</td>
+    </tr>
+    <tr>
+      <td>NPM2 pentamer +H1.8 GFP monomer</td>
+      <td>166,291</td>
+    </tr>
+    <tr>
+      <td>NPM2 pentamer +H1.8 GFP pentamer</td>
+      <td>393,107</td>
+    </tr>
+    <tr>
+      <td>NPM2 decamer +H1.8 GFP monomer</td>
+      <td>275,878</td>
+    </tr>
+    <tr>
+      <td>NPM2 decamer +H1.8 GFP pentamer</td>
+      <td>502,694</td>
+    </tr>
+    <tr>
+      <td>Nucleosome (193 bp DNA)</td>
+      <td>228,111</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -89,7 +762,7 @@ Combining MS, MagIC-cryo-EM and DuSTER, we found that the majority of chromatin-
 
 Structural studies based on in vitro reconstitution previously suggested that NPM2 binds to its substrate as a homo-decamer Dutta et al., 2001; Platonova et al., 2011, or a homo-pentamer Ramos et al., 2010; Taneva et al., 2009. Our cryo-EM structure strongly suggests that the NPM2 binds to H1.8 as a homo-pentamer. Structure variation analyses suggest that NPM2 subunits can exhibit two structural configurations, open and closed forms, of which H1.8 is stably associated with only the open form. Since the closed form is more similar to the reported crystal structure and AF2-predicted structures (Figure 5—figure supplement 1B–D), both of which are determined in the absence of the substrates, our analysis points toward a possibility that substrate binding induces the structural transition of NPM2 to the open form. The conformational changes of the NPM family have been proposed in other studies, such as NMR and negative stain-EM Lorton et al., 2023; Anson et al., 2015; González-Arzola et al., 2022. Our cryo-EM structures of NPM2 indicate the potential mechanisms of NPM2 conformational changes and potential substrate binding sites. Among NPM2 acidic tracts A1, A2, and A3, which are important for substrate recognition, our atomic models visualize A1 and the edge of A2 at the petal side of the structure, where the density corresponding to the predicted H1.8 can be found (Figure 5B). As the A2 and A3 belong to the disordered C-terminal tail that extends from the petal side of the NPM2 complex, our data suggest that the open form provides a stable association platform by exposing the acidic surface at the petal side for the substrate recognition, while the C-terminal A2 and A3 at the flexible tail may facilitate recruitment and possibly also entrapment of the substrate. Since our structural analysis further suggests that each NPM2 subunit may independently adapt open and closed form within a pentamer, this flexibility in the core domain may enable the association of substrates with diverse sizes and structures to support its molecular chaperone functionality.
 
-## Limitations of the study
+### Limitations of the study
 
 While MagIC-cryo-EM is envisioned as a versatile approach suitable for various biomolecules from diverse sources, including cultured cells and tissues, it has thus far been tested only with H1.8-bound nucleosome and H1.8-bound NPM2, both using anti-GFP nanobodies to isolate GFP-tagged H1.8 from chromosomes assembled in Xenopus egg extracts after pre-fractionation of chromatin. To apply MagIC-cryo-EM for the other targets, the following factors must be considered: (1) Pre-fractionation. This step (e.g. density gradient or gel filtration) may be necessary to enrich the target protein in a specific complex from other diverse forms (such as monomeric forms, subcomplexes, and protein aggregates). (2) Avoiding bead aggregation. Beads may be clustered by targets (if the target complex contains multiple affinity tags or is aggregated), nonspecific binders, and target capture modules. To directly apply antibodies that recognize the native targets and specific modifications, optimization to avoid bead aggregation will be important. (3) Stabilizing complexes. The target complexes must be stable during the sample preparation. Crosslink was necessary for the H1.8-GFP-bound nucleosome. (4) Loading the optimum number of targets on the bead. The optimal number of particles per bead differs depending on target sizes, as larger targets are more likely to overlap. For H1.8-GFP-bound nucleosomes, 500–2000 particles per bead were optimal. We expect that fewer particles should be coated for larger targets.
 
@@ -101,49 +774,49 @@ While DuSTER enables the structural analysis of NPM2 co-isolated with H1.8-GFP, 
 
 ## Methods
 
-## Xenopus laevis
+### Xenopus laevis
 
 Xenopus laevis was purchased from Xenopus 1 (female, 4270; male, 4235). Vertebrate animal protocols (20031 and 23020) approved by the Rockefeller University Institutional Animal Care and Use Committee were followed.
 
-## Purification of Biotin-3HB-SPYcatcher003
+### Purification of Biotin-3HB-SPYcatcher003
 
 Biotin-3HB-SPYcatcher003 was bacterially expressed and purified using pQE80-His14-bdSUMO-Cys-3HB-SPYcatcher003. To build the plasmid, a pQE80 derivative vector encoding an N-terminal His-tag was amplified by PCR from pSF1389 [Addgene plasmid # 104962] Frey and Görlich, 2014. gBlock DNAs encoding Brachypodium distachyon SUMO (bdSUMO) (Frey and Görlich, 2014) and a computationally designed monomeric three-helix bundle Huang et al., 2014 were synthesized by IDT and used as a PCR template. DNA encoding SPYcatcher003 was amplified using pSpyCatcher003 [Addgene plasmid # 133447] Keeble et al., 2019 as a PCR template. DNA fragments were assembled by the Gibson assembly method (Gibson et al., 2009). E. coli Rosetta (DE3) cells expressing His14-bdSUMO-Cys-3HB-SPYcatcher003 were induced with 1 mM isopropyl-β-D-thiogalactopyranoside (IPTG) at 25 °C and then resuspended in 100 mL buffer A (8 mM Na2HPO4, 2 mM KH2PO4, 537 mM NaCl, 2.7 mM KCl, 10% glycerol, 2 mM β-mercaptoethanol, 1 mM PMSF, 20 mM imidazole with 1 x cOmplete Protease Inhibitor Cocktail EDTA-free [Roche]). The cells were disrupted by sonication, and the soluble fraction was collected by centrifugation at 20,000 rpm (46,502 rcf) at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter). This fraction was then mixed with Ni-NTA agarose beads (QIAGEN). Protein-bound Ni-NTA agarose beads were packed into an Econo-column (Bio-Rad) and washed with 170 column volumes (CV) of buffer B (8 mM Na2HPO4, 2 mM KH2PO4, 937 mM NaCl, 2.7 mM KCl, 10% glycerol, 2 mM β-mercaptoethanol, 1 mM PMSF, 40 mM imidazole with 1 x cOmplete EDTA-free Protease Inhibitor Cocktail [Roche], pH 7.4). The beads were further washed with 33 CV of Phosphate-Buffered Saline (PBS: 8 mM Na2HPO4, 2 mM KH2PO4, 137 mM NaCl, 2.7 mM KCl, pH 7.4) containing additional 5% glycerol to remove β-mercaptoethanol. The His14-SUMO-tag was cleaved by incubating overnight at 4 °C with N-terminal His-tagged SENP1 protease, which was expressed and purified using the previously described method with pSF1389 [Addgene plasmid # 104962] Frey and Görlich, 2014. Ni-NTA agarose beads that bound the cleaved His14-bdSUMO-tag and His14-SENP1 were filtered out using an Econo-column (Bio-Rad). The cleaved 3HB-SPYcatcher003 with a cysteine residue at the N-terminal was concentrated using Amicon 30 K (Millipore), mixed with EZ-link Maleimide-PEG2-Biotin (Thermo A39261), and left at 4 °C overnight. Biotinylated 3HB-SPYcatcher003 was dialyzed overnight against PBS at 4 °C. The dialyzed Biotin-3HB-SPYcatcher003 was further purified through a Hi-load Superdex75 16/600 column (Cytiva) and stored at –20 °C in PBS containing 47.5% glycerol.
 
-## Purification of Biotin-60 nm-SAH-SPYcatcher003 and Biotin-90 nm-SAH-SPYcatcher003
+### Purification of Biotin-60 nm-SAH-SPYcatcher003 and Biotin-90 nm-SAH-SPYcatcher003
 
 Biotin-30 nm-SAH-SPYcatcher003 and Biotin-60 nm-SAH-SPYcatcher003 were bacterially expressed and purified using pQE80-His14-bdSUMO-Cys-30nm-SAH-SPYcatcher003 and pQE80-His14-bdSUMO-Cys-60 nm-SAH-SPYcatcher003. DNA encoding 30 nm SAH from Trichomonas vaginalis was amplified using pCDNA-FRT-FAK30 [Addgene plasmid # 59121] Sivaramakrishnan and Spudich, 2011 as a PCR template. To extend the repeat to the desired length, MluI and AscI sites were inserted at the top and bottom of the DNA segment encoding 30 nm SAH, respectively. Although the target sequences for AscI (GG/CGCGCC) and MluI (A/CGCGT) are distinct, the DNA overhangs formed after the DNA digestion are identical. In addition, the DNA sequence formed by ligating these DNA overhangs translated into Lys-Ala-Arg, which does not disrupt an SAH. To generate pQE80-His14-bdSUMO-Cys-60 nm-SAH-SPYcatcher3, two DNA fragments were prepared. The longer fragment was prepared by digesting pQE80-His14-bdSUMO-Cys-30 nm-SAH-SPYcatcher003 with XhoI and MluI. The shorter fragment was prepared by digesting pQE80-His14-bdSUMO-Cys-30 nm-SAH-SPYcatcher003 with XhoI and AscI. Target fragments were isolated by agarose gel extraction and ligated to form pQE80-His14-bdSUMO-Cys-60nm-SAH-SPYcatcher003. Repeating these steps, pQE80-His14-bdSUMO-Cys-90 nm-SAH-SPYcatcher003 was also generated.
 
 E. coli Rosetta (DE3) cells expressing His14-bdSUMO-Cys-SAH-SPYcatcher003 were induced with 1 mM IPTG at 18 °C and then resuspended in 100 mL of buffer A before being disrupted by sonication. The soluble fraction was collected by centrifugation at 20,000 rpm (46,502 rcf) at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter) and applied to a HisTrap HP column (Cytiva). The column was washed with 4 column volumes (CV) of buffer B. His14-bdSUMO-Cys-SAH-SPYcatcher003 was eluted from the HisTrap column with buffer D (8 mM Na2HPO4, 2 mM KH2PO4, 137 mM NaCl, 2.7 mM KCl, 5% glycerol, 200 mM imidazole [pH 7.4]). The eluted His14-bdSUMO-Cys-SAH-SPYcatcher003 was mixed with His14-SENP1 and dialyzed against PBS containing 5% glycerol at 4 °C overnight. The dialyzed protein was applied to the HisTrap HP column (Cytiva) to remove the cleaved His14-bdSUMO-tag and His14-SENP1. The cleaved SAH-SPYcatcher003 was further purified through a MonoQ 5/50 column (Cytiva). The purified SAH-SPYcatcher003 with a cysteine residue at the N-terminus was concentrated with Amicon 10 K (Millipore), mixed with EZ-link Maleimide-PEG2-Biotin (Thermo A39261), and placed overnight at 4 °C. The biotinylated SAH-SPYcatcher003 was dialyzed against PBS at 4 °C overnight. The dialyzed Biotin-SAH-SPYcatcher003 was purified through a Hi-load Superdex200 16/600 column (Cytiva) and stored at –20 °C in PBS containing 47.5% glycerol.
 
-## Purification of mono-SPYtag-avidin tetramer
+### Purification of mono-SPYtag-avidin tetramer
 
 Mono-SPYtag-avidin tetramer was purified using a modified version of the method described by Howarth et al., 2006. pET21-SPY-His6-tag streptavidin and pET21-streptavidin were generated by using pET21a-Streptavidin-Alive [Addgene plasmid # 20860] Howarth et al., 2006 as a PCR template. SPY-His6-tag streptavidin and untagged avidin were expressed individually in E. coli BL21(DE3) as inclusion bodies by inducing with 1 mM IPTG at 37 °C. The cells expressing the proteins were resuspended in 100 mL of buffer E (50 mM Tris-HCl, 1 mM EDTA) and disrupted by sonication. Insoluble fractions were collected by centrifugation at 20,000 rpm at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter). The insoluble pellets were washed by resuspending them in 50 ml of buffer E and re-collecting them through centrifugation at 20,000 rpm at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter). The washed insoluble pellets were resuspended in 8 mL of 6 M guanidine HCl (pH 1.5) and dialyzed against 200 mL of 6 M guanidine HCl (pH 1.5) overnight at 4 °C. The denatured proteins were collected by centrifugation at 20,000 rpm at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter). Protein concentrations in soluble fractions were estimated based on the absorbance at 260 nm. Denatured SPY-His6-tag streptavidin and untagged streptavidin were mixed at a 1:2.9 molar ratio and rapidly refolded by diluting them with 250 mL of PBS at 4 °C. After 6 hr of stirring at 4 °C, aggregated proteins were removed by centrifugation at 20,000 rpm at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter). The supernatant was mixed with 62.7 g of solid ammonium sulfate and stirred overnight at 4 °C. Insolubilized proteins were removed with centrifugation at 20,000 rpm at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter). The supernatant was loaded into the HisTrap HP column (Cytiva). Refolded avidin tetramers were eluted from the column by a linear gradient of imidazole (10 mM to 500 mM) in PBS. The peak corresponding to mono-SPY-His-tagged streptavidin tetramer was collected and concentrated using Amicon 10 K (Millipore). The concentrated mono-SPY-His6-tagged streptavidin tetramer was further purified through Hiload superdex75 (Cytiva) and stored at –20 °C in PBS containing 47.5% glycerol.
 
-## Purification of SPYtag-GFP nanobody
+### Purification of SPYtag-GFP nanobody
 
 MagIC-cryo-EM beads were optimized by testing three different GFP nanobodies: tandem GFP nanobody, GFP enhancer nanobody, and LaG (llama antibody against GFP)–10 (Figure 2—figure supplement 1). To express SPYtag-GFP nanobodies, plasmids pSPY-GFP nanobody were built. The plasmid has a pQE80 backbone, and the DNA sequences that encode His14-bdSUMO-SPYtag-GFP nanobody were inserted into the multiple cloning sites of the backbone. DNA encoding tandem GFP nanobody was amplified from pN8his-GFPenhancer-GGGGS4-LaG16 [Addgene plasmid # 140442] Zhang et al., 2020. DNA encoding GFP enhancer nanobody Kirchhofer et al., 2010 was amplified from pN8his-GFPenhancer-GGGGS4-LaG16. DNA encoding the LaG10 nanobody was amplified from a plasmid provided by Dr. Michael Rout (Fridy et al., 2014). GFP nanobodies were expressed at 16 °C in E. coli Rosetta (DE3) by IPTG induction. The cells expressing His14-bdSUMO-SPYtag-GFP nanobody were resuspended with 100 mL buffer A and disrupted by sonication. The soluble fraction was collected with centrifugation at 20,000 rpm (46,502 rcf) at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter) and applied to the HisTrap HP column (Cytiva). The protein was eluted from the column with a step gradient of imidazole (50, 200, 400 mM) in buffer F (50 mM Tris-HCl (pH 8), 100 mM NaCl, 800 mM Imidazole, 5% Glycerol). The eluted His14-bdSUMO-SPYtag-GFP nanobody was mixed with His14-SENP1 and dialyzed against PBS containing 5% glycerol at 4 °C overnight. The dialyzed protein was applied to the HisTrap HP column (Cytiva) to remove the cleaved His14-bdSUMO-tag and His14-SENP1. The cleaved SPYtag-GFP-nanobody was concentrated with Amicon 10 K (Millipore). The concentrated SPYtag-singular GFP nanobody was further purified through Hiload superdex75 (Cytiva) and stored at –20 °C in PBS containing 47.5% glycerol.
 
-## Purification of H1.8-GFP
+### Purification of H1.8-GFP
 
 To purify Xenopus laevis H1.8-superfolder GFP (sfGFP, hereafter GFP), pQE80-His14-bdSUMO-H1.8-GFP was generated by replacing bdSENP1 in pSF1389 vector to H1.8-GFP. Using this plasmid, His14-bdSUMO-H1.8-GFP was expressed in E. coli Rosetta (DE3) at 18 °C with 1 mM IPTG induction. The soluble fraction was collected through centrifugation at 20,000 rpm (46,502 rcf) at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter) and applied to the HisTrap HP column (Cytiva). His14-bdSUMO-H1.8-GFP was eluted from the column with a linear gradient of imidazole (100 mM to 800 mM) in PBS. The fractions containing His14-bdSUMO-H1.8-GFP were collected, mixed with SENP1 protease, and dialyzed overnight against PBS containing 5% glycerol at 4 °C. The SENP1-treated sample was then applied to a Heparin HP column (Cytiva) and eluted with a linear gradient of NaCl (137 mM to 937 mM) in PBS containing 5% glycerol. The fractions containing H1.8-GFP were collected and concentrated using Amicon 30 K (Millipore) before being applied to a Hiload Superdex200 16/600 column (Cytiva) in PBS containing 5% glycerol. The fractions containing H1.8-GFP were collected, concentrated using Amicon 30 K (Millipore), flash-frozen, and stored at –80 °C.
 
-## Purification of MNase
+### Purification of MNase
 
 To purify MNase, pK19-His-bdSUMO-MNase was generated. Using this plasmid, His14-bdSUMO-MNase was expressed in E. coli JM101 at 18 °C with 2 mM IPTG induction. The soluble fraction was collected through centrifugation at 20,000 rpm (46,502 rcf) at 4 °C for 30 min using a 45Ti rotor in Optima L80 (Beckman Coulter) and applied to the HisTrap HP column (Cytiva). His14-bdSUMO-MNase was eluted from the column with a linear gradient of imidazole (100 mM to 500 mM) in PBS. The fractions containing His14-bdSUMO-MNase were collected, mixed with SENP1 protease, and dialyzed overnight against PBS containing 5% glycerol at 4 °C. The dialyzed protein was applied to the HisTrap HP column (Cytiva) to remove the cleaved His14-bdSUMO-tag and His14-SENP1. The cleaved MNase was concentrated with Amicon 3 K (Millipore). The concentrated MNase was further purified through Hiload superdex75 (Cytiva) and stored at –80 °C in PBS containing 60% glycerol.
 
-## Purification of X. laevis histones
+### Purification of X. laevis histones
 
 All histones were purified using the method described previously (Zierhut et al., 2014). Bacterially expressed X. laevis H2A, H2B, H3.2, and H4 were purified from inclusion bodies. His-tagged histones (H2A, H3.2, and H4) or untagged H2B expressed in bacteria were resolubilized from the inclusion bodies by incubation with 6 M guanidine HCl. For His-tagged histones, the solubilized His-tagged histones were purified using Ni-NTA beads (QIAGEN). For untagged H2B, the resolubilized histones were purified using a MonoS column (Cytiva) under denaturing conditions before H2A-H2B dimer formation. To reconstitute the H3–H4 tetramer and H2A–H2B dimer, the denatured histones were mixed at an equal molar ratio and dialyzed to refold the histones by removing the guanidine. His-tags were removed by TEV protease treatment, and the H3–H4 tetramer and H2A–H2B dimer were isolated through a HiLoad 16/600 Superdex 75 column (Cytiva). The fractions containing the H3–H4 tetramer and H2A–H2B dimer were concentrated using Amicon 10 K, flash-frozen, and stored at −80 °C.
 
-## Preparation of in vitro reconstituted poly-nucleosome
+### Preparation of in vitro reconstituted poly-nucleosome
 
 pAS696 containing the 19-mer of the 200 bp 601 nucleosome positioning sequence was digested using HaeII, DraI, EcoRI, and XbaI. Both ends of the 19-mer of the 200 bp 601 DNA were labeled with biotin by Klenow fragment (NEB) with biotin-14-dATP (Guse et al., 2012). The nucleosomes were assembled with the salt dialysis method (Guse et al., 2012). Purified DNAs were mixed with H3-H4 and H2A-H2B, transferred into a dialysis cassette, and placed into a high-salt buffer (10 mM Tris-HCl [pH 7.5], 1 mM EDTA, 2 M NaCl, 5 mM β-mercaptoethanol, and 0.01% Triton X-100). Using a peristaltic pump, the high-salt buffer was gradually exchanged with a low-salt buffer (10 mM Tris-HCl [pH 7.5], 1 mM EDTA, 50 mM NaCl, 5 mM β-mercaptoethanol, 0.01% Triton X-100) at roughly 2 mL/min overnight at 4 °C. In preparation for cryo-EM image collection, the dialysis cassette containing the sample was then placed in a buffer containing 10 mM HEPES-HCl (pH 7.4) and 30 mM KCl and dialyzed for 48 hr at 4 °C.
 
-## Native PAGE and SDS-PAGE
+### Native PAGE and SDS-PAGE
 
 For the native PAGE for nucleosome (Figure 3C), 15 µL of nucleosome fractions were loaded onto a 0.5 x TBE 6% native PAGE gel. For the native PAGE for nucleosomal DNA (Figure 3—figure supplement 2B), 15 µL of nucleosome fractions were mixed with 1 μL of 10 mg/mL RNaseA (Thermo Fisher Scientific) and incubated at 55 °C for 30 min. To deproteinize and reverse-crosslink DNA, RNaseA-treated samples were then mixed with 1 μL of 19 mg/mL Proteinase K solution (Roche) and incubated at 55 °C for overnight. Samples were loaded to 0.5 x TBE 6% native PAGE. Native PAGE gels were stained by SYTO-60 to detect DNA. SYTO-60 and GFP signals were scanned on a LI-COR Odyssey. For SDS-PAGE analysis (Figure 3—figure supplement 2B), 20 µL of nucleosome fractions were mixed with 5 µL of 4 x SDS-PAGE sample buffer (200 mM Tris- HCl pH 6.8, 8% SDS, 40% glycerol, 10% β-mercaptoethanol) and boiled for 10 min at 96 °C. Samples were loaded to a 4–20% gradient gel (Bio-Rad, # 5671095).
 
-## Western blot
+### Western blot
 
 For the western blot of nucleosome fractions (Figure 3D), 20 µL of nucleosome fractions were mixed with 5 µL of 4 x SDS-PAGE sample buffer and boiled for 10 min at 96 °C. Samples were loaded to a 4–20% gradient gel (Bio-Rad, # 5671095).
 
@@ -151,31 +824,31 @@ For the H1.8-GFP complementation assay (Figure 3—figure supplement 1), 2 µL e
 
 The SDS-PAGE gels were transferred into the western blot cassette and transferred to a nitrocellulose membrane (Cytiva, # 10600000) with 15 V at 4 °C overnight. The transferred membranes were blocked with Intercept TBS Blocking Buffer (LI-COR Biosciences, # 927–60001). Primary and secondary antibodies were diluted in Intercept TBS Antibody Diluent (LI-COR Biosciences, #927–65001). For Figure 3—figure supplement 1A, as primary antibodies, mouse monoclonal antibody against GFP (Santa Cruz Biotechnology, # sc-9996, 1:1000 dilution) and rabbit polyclonal antibody against X. laevis H1.8 (Jenness et al., 2018; final: 1 µg/mL) were used. For Figure 3—figure supplement 1, as primary antibodies, rabbit polyclonal antibody against X. laevis H1.8 (Jenness et al., 2018), rabbit polyclonal antisera against X. laevis NAP1 1:500 dilution (Lorton et al., 2023), NPM2 (1:500 dilution; Anson et al., 2015), and rabbit polyclonal antibody against phosphorylated histone H3 Thr3 (MilliporeSigma, # 07–424, 1:5000 dilution) were used. NAP1 and NPM2 antibody are kind gifts of David Shechter. As secondary antibodies, IRDye 800CW goat anti-rabbit IgG (LI-COR, # 926–32211; 1:10,000) and IRDye 680RD goat anti-mouse IgG (LI-COR, # 926–68070; 1:15,000) were used. The images were taken with Odyssey M Infrared Imaging System (LI-COR Biosciences).
 
-## Immunoprecipitation (IP) assay in Xenopus egg extract
+### Immunoprecipitation (IP) assay in Xenopus egg extract
 
 For the IP assay (Figure 3—figure supplement 1), antibody against rabbit IgG, in-house purified from pre-immune rabbit serum by HiTrap Protein A HP (# 17040301), and antibody against X. laevis H1.8 (# RU2130) were conjugated to Protein-A coupled Dynabeads (Thermo Fisher Scientific, # 10001D) at 20 μg/mL beads at 4 °C for overnight on a rotator. rIgG and H1.8 antibody beads were crosslinked using 5 mM BS3 (Thermo Fisher Scientific, # A39266) resuspended in PBS (pH 7.4) at room temperature for 30 min and quenched by 50 mM Tris-HCl (pH 7.4) resuspended in PBS (pH 7.4) at room temperature for 20–30 min on a rotator. All antibody beads were washed extensi vely using wash/coupling buffer (10 mM K-HEPES (pH 8.0) and 150 mM KCl), followed by sperm dilution buffer (10 mM K-HEPES (pH 8.0), 1 mM MgCl2, 100 mM KCl, 150 mM sucrose). The beads were left on ice until use.
 
 Interphase egg extract (30 µL) was prepared by incubating at 20 °C for 60 min after adding CaCl2 (final: 0.4 mM) and cycloheximide (final: 100 µg/mL) to fresh CSF egg extract. Mitotic egg extract (CSF egg extract, 30 µL) was also incubated at 20 °C for 60 min without any additives. After 60 min incubation, each mitotic and interphase egg extract was transferred to antibody-conjugated beads (10 µL) after removing sperm dilution buffer on a magnet stand (Sergi Lab Supplies, Cat# 1005). Beads-extract mixtures were mixed and incubated on ice for 45 min with flicking tubes every 15 min. After 45 min, beads were collected using a magnet stand at 4 °C and washed three times with beads wash buffer (sperm dilution buffer supplemented 1 x cOmplete EDTA-free protease inhibitor cocktail (Roche, # 4693132001), 1 x PhosSTOP (Roche, # 4906845001), and 0.1% (v/v) Triton-X (Bio-Rad, # 1610407)). Beads are resuspended in 20 µL of 1 x SDS sample buffer and loaded 10 µL out of 20 µL to a SDS-PAGE gel. Methods for SDS-PAGE and western blot are described above.
 
-## Trial MagIC-cryo-EM with poly-nucleosome (used in Figure 1)
+### Trial MagIC-cryo-EM with poly-nucleosome (used in Figure 1)
 
 A total of 60 fmol of Absolute Mag streptavidin nano-magnetic beads (CD bioparticles: WHM-X047, 50 nM size) were mixed with 100 µL of EM buffer A (10 mM HEPES-KOH [pH 7.4], 30 mM KCl, 1 mM EGTA, 0.3 ng/µL leupeptin, 0.3 ng/µL pepstatin, 0.3 ng/µL chymostatin, 1 mM Sodium Butyrate, 1 mM beta-glycerophosphate, 1 mM MgCl2, 2% trehalose, 0.2% 1,6-hexanediol). The beads were collected by incubation on two pieces of 40x20 mm N52 neodymium disc magnets (DIYMAG: D40x20–2P-NEW) at 4 °C for 30 min and then resuspended in 120 µL of EM buffer A. The two pieces of strong neodymium magnets have to be handled carefully as magnets can leap and slam together from several feet apart. Next, 60 µL of 34 nM nucleosome arrays formed on the biotinylated 19-mer 200 bp 601 DNA were mixed with the beads and rotated at 20 °C for 2 hr. To remove unbound nucleosomes, the biotin-poly-nucleosome-bound nano-magnetic beads were collected after 40 min of incubation on the N52 neodymium disc magnets and then resuspended in 300 µL EM buffer containing 10 µM biotin. A 100 µL portion of the biotin-poly-nucleosome-bound nano-magnetic beads solution was incubated on the N52 neodymium disc magnets for 30 min and then resuspended in 20 µL EM buffer A. Finally, 3 µL of biotin-poly-nucleosome-bound nano-magnetic beads solution was added onto a glow-discharged Quantifoil Gold R 1.2/1.3 300 mesh grid (Quantifoil). The samples were vitrified under 100% humidity, with a 20 s incubation and 5 s blotting time using the Vitrobot Mark IV (FEI).
 
 The grid was imaged on a Talos Arctica (Thermo Fisher) equipped with a 200 kV field emission gun and K2 camera. A total of 657 movies were collected at a magnification of ×72,000 (1.5 Å/pixel) using super-resolution mode, as managed by SerialEM (Mastronarde, 2003). Movie frames are motion-corrected and dose-weighted patch motion correction in CryoSPARC v3 with output Fourier cropping fac½ 1/2 (Punjani et al., 2017). Particles were picked by Topaz v0.2.3 with around 2000 manually picked nucleosome-like particles as training models (Bepler et al., 2019a). Picked particles were extracted using CryoSPARC v3 (extraction box size = 200 pixel). 2D classification of extracted particles was done using 100 classes in CryoSPARC v3. Using 2D classification results, particles were split into the nucleosome-like groups and the non-nucleosome-like groups. Four 3D initial models were generated for both groups with ab initio reconstruction in CryoSPARC v3 (Class similarity = 0). One nucleosome-like model was selected and used as a given model of heterogeneous reconstruction with all four of the ‘decoy’ classes generated from the non-nucleosome-like group. After the first round of 3D classification, the particles assigned to the ‘decoy’ classes were removed, and the remaining particles used for a second round of 3D classification using the same settings as the first round. These steps were repeated until more than 90% of particles wer classified as a nucleosome-like class. To isolate the nucleosome class that has visible H1.8 density, four to six 3D references were generated with ab initio reconstruction of CryoSPARC v3 using purified nucleosome-like particles (Class similarity = 0.9). Refined particles were further purified with the heterogeneous refinement using an H1.8-visible class and an H1.8-invisible class as decoys. The classes with reasonable extra density were selected and refined with homogeneous refinement. The final resolution was determined with the gold stand FSC threshold (FSC = 0.143).
 
-## Preparation of in vitro reconstituted mono-nucleosome and H1.8-GFP-bound mono-nucleosome
+### Preparation of in vitro reconstituted mono-nucleosome and H1.8-GFP-bound mono-nucleosome
 
 The 193 bp 601 DNA fragment was amplified by a PCR reaction (Arimura et al., 2012; Lowary and Widom, 1998). The nucleosomes were assembled with the salt dialysis method described above. The reconstituted nucleosome was dialyzed into buffer XL (80 mM PIPES-KOH [pH 6.8], 15 mM NaCl, 60 mM KCl, 30% glycerol, 1 mM EGTA, 1 mM MgCl2, 10 mM β-glycerophosphate, 10 mM sodium butyrate). H1.8-GFP was mixed with nucleosome with a 1.25 molar ratio in the presence of 0.001% poly L-glutamic acid (wt 3000–15,000; Sigma-Aldrich) and incubated at 37 °C for 30 min. As a control nucleosome sample without H1.8-GFP, the sample without H1.8-GFP was also prepared. The samples were then crosslinked adding a 0.5-time volume of buffer XL containing 3% formaldehyde and incubating for 90 min on ice. The crosslink reaction was quenched by adding 1.7 volume of quench buffer (30 mM HEPES-KOH (pH 7.4), 150 mM KCl, 1 mM EGTA, 10 ng/µL leupeptin, 10 ng/µL pepstatin, 10 ng/µL chymostatin, 10 mM sodium butyrate, 10 mM β-glycerophosphate, 400 mM glycine, 1 mM MgCl2, 5 mM DTT). The quenched sample was layered onto the 10–25% linear sucrose gradient solution with buffer SG (15 mM HEPES-KOH [pH 7.4], 50 mM KCl, 10–22% sucrose, 10 µg/mL leupeptin, 10 µg/mL pepstatin, 10 µg/mL chymostatin, 10 mM sodium butyrate, 10 mM β-glycerophosphate, 1 mM EGTA, 20 mM glycine) and spun at 32,000 rpm (max 124,436 rcf) and 4 °C for 13 hr using SW55Ti rotor in Optima L80 (Beckman Coulter). The centrifuged samples were fractionated from the top of the sucrose gradient. The concertation of H1.8-GFP-bound nucleosome in each fraction is calculated based on the 260 nm light absorbance detected by Nanodrop 2000 (Thermo Fisher Scientific).
 
-## Preparation of GFP nanobody attached MagIC-cryo-EM beads
+### Preparation of GFP nanobody attached MagIC-cryo-EM beads
 
 A total of 25 fmol of Absolute Mag streptavidin nanomagnetic beads (CD Bioparticles: WHM-X047) were transferred to a 0.5 mL protein LoBind tube (Eppendorf) and mixed with 200 pmol of inner spacer module protein (biotin-3HB-SPYcatcher003 or biotin-60nm-SAH-SPYcatcher003) in 200 µL of EM buffer A (10 mM HEPES-KOH [pH 7.4], 30 mM KCl, 1 mM EGTA, 10 ng/µL leupeptin, 10 ng/µL pepstatin, 10 ng/µL chymostatin, 1 mM Sodium Butyrate, and 1 mM beta-glycerophosphate) and the mixture was incubated at 4 °C for 10 hr. To wash the beads, the mixture was spun at 13,894 rpm (16,000 rcf) at 4 °C for 10 min using the SX241.5 rotor in an Allegron X-30R centrifuge (Beckman Coulter). The beads that accumulated at the bottom of the tube were resuspended in 200 µL of EM buffer A. Subsequently, 200 pmol of mono-SPYtag-avidin tetramer was added to the beads in 200 µL of EM buffer A, and the mixture was incubated at 4 °C for 10 hr. Again, the beads were washed by collecting them via centrifugation and resuspending them in 200 µL of EM buffer A. This washing step was repeated once more, and 800 pmol of outer spacer module protein (biotin-30 nm-SAH-SPYcatcher003, biotin-60 nm-SAH-SPYcatcher003 or biotin-90 nm-SAH-SPYcatcher003) were added and incubated at 4 °C for 10 hr. The beads were washed twice and resuspended with 25 µL of EM buffer A. 20 µL of this mixture was transferred to a 0.5 ml protein LoBind tube and mixed with 640 pmol of SPYtag-GFP nanobody and incubated at 4 °C for 10 hr. The beads were washed twice and resuspended with 25 µL of EM buffer A. The assembled GFP nanobody attached MagIC-cryo-EM beads can be stored in EM buffer A containing 50% glycerol at –20 °C for several weeks.
 
-## Graphene grids preparation
+### Graphene grids preparation
 
 Graphene grids were prepared using the method established by Han et al., 2020 with minor modifications. Briefly, monolayer graphene grown on the copper foil (Grolltex) was coated by polymethyl methacrylate (Micro chem, EL6) with the spin coat method. The copper foil was removed by 1 M of ammonium persulfate. The graphene monolayer coated by polymethyl methacrylate was attached to gold or copper grids with carbon support film (Quantifoil) and baked for 30 min at 130 °C. The polymethyl methacrylate was removed by washing with 2-butanone, water, and 2-propanol on a hotplate.
 
-## Optimization of the spacer module length by the MagIC-cryo-EM of in vitro reconstituted H1.8-GFP bound nucleosome
+### Optimization of the spacer module length by the MagIC-cryo-EM of in vitro reconstituted H1.8-GFP bound nucleosome
 
 To prepare the MagIC-cryo-EM beads capturing H1.8-GFP bound mono-nucleosome, 4 fmol of GFP nanobody-attached MagIC-cryo-EM beads with different spacer lengths were mixed with 100 nM (28 ng/µL) of in vitro reconstituted crosslinked H1.8-GFP-bound mono-nucleosome in 100 µL of PBS containing 15~30% glycerol and incubated at 4 °C for 12 hr. To wash the beads, the beads were collected with centrifugation at 13,894 rpm (16,000 rcf) at 4 °C for 20 min using SX241.5 rotor in Allegron X-30R (Beckman Coulter) and resuspended with 200 µL of PBS containing 15~30% glycerol. This washing step was repeated once again, and the beads were resuspended with 100 µL of EM buffer C (10 mM HEPES-KOH [pH 7.4], 30 mM KCl, 1 mM EGTA, 10 ng/µL leupeptin, 10 ng/µL pepstatin, 10 ng/µL chymostatin, 1 mM sodium butyrate, 1 mM β-glycerophosphate, 1.2% trehalose, and 0.12% 1,6-hexanediol). This washing step was repeated once again, and the beads were resuspended with 100~200 µL of EM buffer C (theoretical beads concentration: 20~40 pM).
 
@@ -187,7 +860,7 @@ The vitrified grids were loaded onto the Titan Krios (Thermo Fisher), equipped w
 
 Movie frames were corrected for motion using MotionCor2 (Zheng et al., 2017) installed in Relion v4 (Scheres, 2012) or patch motion correction implemented in CryoSPARC v4. Particles were picked with Topaz v0.2 (Bepler et al., 2019a), using approximately 2000 manually picked nucleosome-like particles as training models. The picked particles were then extracted using CryoSPARC v4 (extraction box size = 256 pixels) (Punjani et al., 2017). Nucleosome-containing particles were isolated through decoy classification using heterogeneous reconstruction with one nucleosome-like model and four decoy classes generated through ab initio reconstruction in CryoSPARC v4. CTF refinement and Bayesian polishing were applied to the nucleosome-containing particles in the Relion v4 (Scheres, 2012; Zivanov et al., 2019). To isolate the nucleosome class with visible H1.8 density, four 3D references were generated through ab initio reconstruction in CryoSPARC v4 using purified nucleosome-like particles (Class similarity = 0.9). These four 3D references were used for heterogeneous reconstruction. Two of the classes had strong H1.8 density. Using the particles assigned in these classes, non-uniform refinement was performed in CryoSPARC v4. The final resolution was determined using the gold standard FSC threshold (FSC = 0.143).
 
-## MagIC-cryo-EM of in vitro reconstituted H1.8-GFP-bound nucleosome using the mixture of the H1.8-GFP-bound and unbound nucleosomes (shown in Figure 2)
+### MagIC-cryo-EM of in vitro reconstituted H1.8-GFP-bound nucleosome using the mixture of the H1.8-GFP-bound and unbound nucleosomes (shown in Figure 2)
 
 A total of 0.5 fmol of GFP-singular nanobodies conjugated to 3HB-60nm-SAH magnetic beads were mixed with 1.7 nM (0.5 ng/µL) of H1.8-GFP-bound nucleosome and 53 nM (12 ng/µL) of H1.8-free nucleosome in 100 µL of buffer SG (15 mM HEPES-KOH [pH 7.4], 50 mM KCl, 12% sucrose, 1 x LPC, 10 mM Sodium Butyrate, 10 mM β-glycerophosphate, 1 mM EGTA) containing approximately 17% sucrose. The mixture was then incubated at 4 °C for 10 hr. To wash the beads, they were collected by centrifugation at 13,894 rpm (16,000 rcf) at 4 °C for 20 min using the SX241.5 rotor in an Allegron X-30R centrifuge (Beckman Coulter). Subsequently, the beads were resuspended in 200 µL of EM buffer C. This washing step was repeated twice, and the beads were finally resuspended in approximately 80 µL of EM buffer C, resulting in a theoretical bead concentration of 6.25 pM.
 
@@ -195,11 +868,11 @@ To vitrify the grids, 4 µL of the samples were applied to plasma-cleaned graphe
 
 The analysis pipeline is described in Figure 2—figure supplement 2. Movie frames were corrected for motion using MotionCor2 (Zheng et al., 2017), which was installed in Relion v4 (Scheres, 2012). Particles were picked with Topaz v0.2.3 (Bepler et al., 2019a), using approximately 2000 manually picked nucleosome-like particles as training models. The picked particles were then extracted using CryoSPARC v4 (extraction box size = 256 pixels; Punjani et al., 2017). Nucleosome-containing particles were isolated through decoy classification using heterogeneous reconstruction with one nucleosome-like model and four decoy classes generated through ab initio reconstruction in CryoSPARC v3.3. CTF refinement and Bayesian polishing were applied to the nucleosome-containing particles in Relion v4 (Scheres, 2012; Zivanov et al., 2019). To isolate the nucleosome class with visible H1.8 density, four 3D references were generated through ab initio reconstruction in CryoSPARC v3.3 using purified nucleosome-like particles (Class similarity = 0.9). These four 3D references were used for heterogeneous reconstruction. Two of the classes had strong H1.8 density. Using the particles assigned in these classes, non-uniform refinement was performed in CryoSPARC v3.3. The final resolution was determined using the gold standard FSC threshold (FSC = 0.143).
 
-## Assessment of the efficiency of the magnetic concentration of the MagIC-cryo-EM on cryo-EM grid (shown in Figure 2)
+### Assessment of the efficiency of the magnetic concentration of the MagIC-cryo-EM on cryo-EM grid (shown in Figure 2)
 
 A plasma-cleaned graphene-coated Quantifoil copper R1.2/1.3 400 mesh grid (Quantifoil) was held using non-magnetic Vitrobot tweezers (SubAngstrom). Subsequently, 4 µL of 12.5 pM GFP-nanobody attached MagIC-cryo-EM beads were applied to the grid. The grid was then incubated on the 40x20 mm N52 neodymium disc magnets for 5 min within a high-humidity chamber. As a control experiment, several grids were frozen by omitting the magnetic incubation steps. Once the capture was complete, the tweezers anchoring the grid were attached to the Vitrobot Mark IV (FEI), and the grid was vitrified by employing a 2 s blotting time at room temperature under conditions of 100% humidity. The vitrified grids were subjected to cryo-EM to collect 8×8 or 9×9 montage maps at ×2600 magnification on Talos Arctica to capture the whole area of each square mesh. The efficiency of the magnetic concentration of the MagIC-cryo-EM beads was quantitatively assessed by counting the percentage of holes containing MagIC-cryo-EM beads and counting the average number of MagIC-cryo-EM beads per hole. For the quantification, 11 square meshes with 470 holes were used for the condition without magnetic concentration. For the condition with 5 min incubation on magnets, 11 square meshes with 508 holes were used. The boxplots and the scatter plots were calculated by the seaborn.boxplot and seaborn.stripplot tools in the Seaborn package (Waskom, 2021) and visualized by Matplotlib (Hunter, 2007). Outlier data points that are not in 1.5 times of the interquartile range, the range between the 25th and 75th percentile, were excluded.
 
-## Functional assessment of H1.8-GFP in Xenopus egg extract
+### Functional assessment of H1.8-GFP in Xenopus egg extract
 
 The functional replaceability of H1.8-GFP in Xenopus egg extracts was assessed through whether H1.8-GFP could rescue the chromosome morphological defect caused by depletion of endogenous H1.8. Mitotic chromosome morphology and length were assessed through the previously described method (23) with some modifications.
 
@@ -217,11 +890,11 @@ The immunofluorescence imaging was performed on a DeltaVision Image Restoration 
 
 For chromosome length measurements, the length of individualized mitotic chromosomes were manually traced on a single maximum intensity slice using segmented line tool in Fiji software (ver. 2.9.0). Data was summarized using R (ver. 4.2.2) and visualized as SuperPlots Lord et al., 2020 using ggplot2 package in R and RStudio (ver. RSTUDIO-2023.09.1–494). For the representative images in Figure 3—figure supplement 1, max projection images were prepared in Fiji using z-stuck function. For the visibility, the brightness and contrast of representative images were adjusted using GIMP software (ver. 4.2.2). Adjustment was done using a same setting among all images.
 
-## Fractionation of chromosomes isolated from Xenopus egg extracts Figure 3
+### Fractionation of chromosomes isolated from Xenopus egg extracts Figure 3
 
 Nucleosomes were isolated from Xenopus egg extract chromosomes using the previously described method (Arimura et al., 2021). To prevent the spontaneous cycling of egg extracts, 0.1 mg/mL cycloheximide was added to the CSF extract. H1.8-GFP was added to the CSF extract at a final concentration of 650 nM, equivalent to the concentration of endogenous H1.8 (Wühr et al., 2014). For interphase chromosome preparation, Xenopus laevis sperm nuclei (final concentration 2000 /µL) were added to 5 mL of CSF extracts, which were then incubated for 90 min at 20 °C after adding 0.3 mM CaCl2 to release the CSF extracts into interphase. For metaphase sperm chromosome preparation, cyclin B ∆90 (final concentration 24 µg/mL) and 1 mL of fresh CSF extract were added to 2 mL of the extract containing interphase sperm nuclei prepared using the method described above. To make up for the reduced H1.8-nucleosome formation in interphase, we used 5 mL of egg extracts for preparing interphase chromosomes and 2 mL of extracts for metaphase chromosomes. The extracts were incubated for 60 min at 20 °C, with gentle mixing every 10 min. To crosslink the Xenopus egg extracts chromosomes, nine times the volume of ice-cold buffer XL (80 mM PIPES-KOH [pH 6.8], 15 mM NaCl, 60 mM KCl, 30% glycerol, 1 mM EGTA, 1 mM MgCl2, 10 mM β-glycerophosphate, 10 mM sodium butyrate, 2.67% formaldehyde, 0.001% digitonin) was added to the interphase or metaphase extract containing chromosomes, which was further incubated for 60 min on ice. These fixed chromosomes were then layered on 3 mL of fresh buffer SC (80 mM HEPES-KOH [pH 7.4], 15 mM NaCl, 60 mM KCl, 1.17 M sucrose, 50 mM glycine, 0.15 mM spermidine, 0.5 mM spermine, 1.25 x cOmplete EDTA-free Protease Inhibitor Cocktail (Roche), 10 mM beta-glycerophosphate, 10 mM sodium butyrate, 1 mM EGTA, 1 mM MgCl2) in 50 mL centrifuge tubes (Falcon, #352070). The tubes were spun at 3300 (2,647 rcf) rpm at 4 °C for 40 min using a JS 5.3 rotor in an Avanti J-26S centrifuge (Beckman Coulter). Pellets containing fixed chromosomes were resuspended with 10 mL of buffer SC, layered on 3 mL of fresh buffer SC in 14 mL centrifuge tubes (Falcon, #352059), and spun at 3300 (2647 rcf) rpm at 4 °C for 40 min using a JS 5.3 rotor in an Avanti J-26S centrifuge (Beckman Coulter). The chromosomes were collected from the bottom of the centrifuge tube and resuspended with buffer SC. Chromosomes were pelleted by centrifugation at 5492 rpm (2500 rcf) using an SX241.5 rotor in an Allegron X-30R centrifuge (Beckman Coulter). The chromosome pellets were resuspended with 200 µL of buffer SC. To digest chromatin, MNase concentration and reaction time were tested on a small scale and optimized to the condition that produce 180–200 bp DNA fragments. After the optimization, 0.6 and 0.3 U/µL of MNase were added to interphase and metaphase chromosomes, respectively. Then, CaCl2 was added to a final concentration of 7.4 mM, and the mixture was incubated at 4 °C for 4 hr. The MNase reaction was stopped by adding 100 µL MNase stop buffer B (80 mM PIPES-KOH (pH 6.8), 15 mM NaCl, 60 mM KCl, 30% glycerol, 20 mM EGTA, 1 mM MgCl2, 10 mM β-glycerophosphate, 10 mM sodium butyrate, 3.00% formaldehyde). The mixtures were incubated on ice for 1 hr and then diluted with 700 µL of quench buffer (30 mM HEPES-KOH (pH 7.4), 150 mM KCl, 1 mM EGTA 1 x LPC, 10 mM sodium butyrate, 10 mM β-glycerophosphate, 400 mM glycine, 1 mM MgCl2, 5 mM DTT). The soluble fractions released by MNase were isolated by taking supernatants after centrifugation at 13,894 rpm (16,000 rcf) at 4 °C for 30 min using an SX241.5 rotor in an Allegron X-30R centrifuge (Beckman Coulter). The supernatants were collected and layered onto a 10–22% linear sucrose gradient solution with buffer SG (15 mM HEPES-KOH [pH 7.4], 50 mM KCl, 10–22% sucrose, 10 µg/mL leupeptin, 10 µg/mL pepstatin, 10 µg/mL chymostatin, 10 mM sodium butyrate, 10 mM β-glycerophosphate, 1 mM EGTA, 20 mM glycine) and spun at 32,000 rpm (max 124,436 rcf) and 4 °C for 13 hr using an SW55Ti rotor in an Optima L80 centrifuge (Beckman Coulter). The samples were fractionated from the top of the sucrose gradient. The concentration of H1.8 in each fraction was determined by western blot. 15 µL of each sucrose gradient fraction was incubated at 95 °C with 1% sodium dodecyl sulfate (SDS) and applied for SDS-PAGE with a 4–20% gradient SDS-PAGE gel (Bio-Rad). The proteins were transferred to a nitrocellulose membrane (Cytiva) from the SDS-PAGE gel using TE42 Tank Blotting Units (Hoefer) at 15 V, 4 °C for 4 hr. As primary antibodies, 1 µg/mL of mouse monoclonal Anti-GFP Antibody sc-9996 (Santa Cruz Biotechnology) and as secondary antibodies, IR Dye 800CW goat anti-mouse IgG (Li-Cor 926–32210; 1:15,000) were used. The images were taken with an Odyssey Infrared Imaging System (Li-Cor). The existence of the H1.8-GFP-bound nucleosomes was confirmed by native PAGE. 15 µL of each sucrose gradient fraction was applied for a 6 % x0.5 TEB native PAGE gel. The DNA was stained with SYTO-60 (Invitrogen S11342: 1:10,000). The images of SYTO-60 signal and GFP signal were taken with an Odyssey Infrared Imaging System (Li-Cor).
 
-## MagIC-cryo-EM of H1.8-GFP-bound nucleosomes isolated from chromosomes assembled in Xenopus egg extract (used in Figure 3)
+### MagIC-cryo-EM of H1.8-GFP-bound nucleosomes isolated from chromosomes assembled in Xenopus egg extract (used in Figure 3)
 
 Tween 20 was added to a final concentration of 0.01% to the 350 µL of fraction 5 from the interphase or metaphase sucrose gradient fractions shown in Figure 3, Figure 3—figure supplement 2. These samples were then mixed with 1 fmol of GFP nanobody-conjugated MagIC-cryo-EM beads. The mixture was incubated at 4 °C for 10 hr. The beads were washed four times with EM buffer C containing 0.01% Tween 20, as described above. Finally, the beads were resuspended in approximately 80 µL of EM buffer C containing 0.001% Tween 20.
 
@@ -229,19 +902,19 @@ To vitrify the grids, 4 µL of the samples were applied to plasma-cleaned graphe
 
 The analysis pipeline is described in Figure 3—figure supplement 3. Movie frames were corrected for motion using MotionCor2 (Zheng et al., 2017), which was installed in Relion v4 (Scheres, 2012). The micrographs for interphase and metaphase MagIC-cryo-EM were combined and subjected to particle picking. Particles were picked with Topaz v0.2.3 (Bepler et al., 2019a), using approximately 2000 manually picked nucleosome-like particles as training models. The picked particles were then extracted using CryoSPARC v4 (extraction box size = 256 pixels; Punjani et al., 2017). Nucleosome-containing particles were isolated through decoy classification using heterogeneous reconstruction with one nucleosome-like model and four decoy classes generated through ab initio reconstruction in CryoSPARC v4. CTF refinement and Bayesian polishing were applied to the nucleosome-containing particles in Relion v4 (Scheres, 2012; Zivanov et al., 2019). To isolate the nucleosome class with visible H1.8 density, three 3D references were generated through ab initio reconstruction in CryoSPARC v4 using purified nucleosome-like particles (Class similarity = 0.9). This step was repeated for the class with weak H1.8 density (Class A). Non-uniform refinement was performed in CryoSPARC v4 for each class. Subsequently, to isolate the H1.8-bound nucleosome structures in interphase and metaphase, the particles were separated based on their original movies. Using these particle sets, the 3D maps of the interphase and metaphase H1.8-bound nucleosomes were refined individually through non-uniform refinement in CryoSPARC v4. The final resolution was determined using the gold standard FSC threshold (FSC = 0.143).
 
-## Isolation of interphase-specific H1.8-GFP containing complex by MagIC-cryo-EM (used in Figure 4)
+### Isolation of interphase-specific H1.8-GFP containing complex by MagIC-cryo-EM (used in Figure 4)
 
 Tween20 was added to a final concentration of 0.01%–350 µL of fraction 4 from the interphase sucrose gradient fractions shown in Figure 3C. The sample was then mixed with 1 fmol of GFP nanobody-conjugated MagIC-cryo-EM beads. The mixture was incubated at 4 °C for 10 hr. The beads were washed four times with EM buffer C containing 0.01% Tween 20, as described above. Finally, the beads were resuspended in approximately 80 µL of EM buffer C containing 0.001% Tween 20. The resuspended MagIC-cryo-EM beads solution was subjected to the MS and cryo-EM.
 
-## Mass spectrometry
+### Mass spectrometry
 
 For the MS analysis, 20 µL of the resuspended solution containing the MagIC-cryo-EM beads isolating interphase-specific H1.8-GFP containing complex was incubated at 95 °C for 10 min to reverse the crosslink. The 20 µL each of the sucrose gradient fractions 4 and 5 (interphase and metaphase) was also incubated at 95 °C. The samples were then applied to an SDS-PAGE (4–20% gradient gel, Bio-Rad). The gel was stained with Coomassie Brilliant Blue G-250 (Thermo Fisher). The corresponding lane was cut into pieces approximately 2 mm × 2 mm in size. The subsequent destaining, in-gel digestion, and extraction steps were carried out as described (Shevchenko et al., 2006). In brief, the cut gel was destained using a solution of 30% acetonitrile and 100 mM ammonium bicarbonate in water. Gel pieces were then dehydrated using 100% acetonitrile. Disulfide bonds were reduced with dithiothreitol, and cysteines were alkylated using iodoacetamide. Proteins were digested by hydrating the gel pieces in a solution containing sequencing-grade trypsin and endopeptidase LysC in 50 mM ammonium bicarbonate. Digestion proceeded overnight at 37 °C. The resulting peptides were extracted three times with a solution of 70% acetonitrile and 0.1% formic acid. These extracted peptides were then purified using in-house constructed micropurification C18 tips. The purified peptides were subsequently analyzed by LC-MS/MS using a Dionex 3000 HPLC system equipped with an NCS3500RS nano- and microflow pump, coupled to an Orbitrap ASCEND mass spectrometer from Thermo Fisher Scientific. Peptides were separated by reversed-phase chromatography using solvent A (0.1% formic acid in water) and solvent B (80% acetonitrile, 0.1% formic acid in water) across a 70 min gradient. Spectra were recorded in positive ion data-dependent acquisition mode, with fragmentation of the 20 most abundant ions within each duty cycle. MS1 spectra were recorded with a resolution of 120,000 and an AGC target of 2e5. MS2 spectra were recorded with a resolution of 30,000 and an AGC target of 2e5. The spectra were then queried against a Xenopus laevis database (Wühr et al., 2014; Peshkin et al., 2019), concatenated with common contaminants, using MASCOT through Proteome Discoverer v.1.4 from Thermo Fisher Scientific. The abundance value for each protein is calculated as the average of the three most abundant peptides belonging to each protein (Silva et al., 2006). All detected proteins are listed in Supplementary file 2. The keratin-related proteins that were considered to be contaminated during sample preparation steps and the proteins with less than 5% coverage that were considered to be misannotation were not shown in Figure 4D and Table 3.
 
-## Cryo-EM data collection of interphase-specific H1.8-GFP containing complex isolated by MagIC-cryo-EM beads (used in Figure 4)
+### Cryo-EM data collection of interphase-specific H1.8-GFP containing complex isolated by MagIC-cryo-EM beads (used in Figure 4)
 
 To vitrify the grids, 4 µL of the resuspended solution containing the MagIC-cryo-EM beads isolated interphase-specific H1.8-GFP containing complex were applied to plasma-cleaned in-house graphene attached Quantifoil gold R1.2/1.3 300-mesh grids (Quantifoil). The grid was then incubated on the 40×20 mm N52 neodymium disc magnets for 5 min and vitrified using the Vitrobot Mark IV (FEI) with a 2 s blotting time at room temperature under 100% humidity. The vitrified grids were loaded onto the Titan Krios (ThermoFisher), equipped with a 300 kV field emission gun and a K3 direct electron detector (Gatan). At a magnification of ×105,000 (0.86 Å/pixel), 4543 movies were collected. At a magnification of ×105,000 (1.08 Å/pixel), 1807 movies were collected.
 
-## Application of DuSTER for Cryo-EM analysis of interphase-specific H1.8-GFP containing complex isolated by MagIC-cryo-EM beads (used in Figure 4)
+### Application of DuSTER for Cryo-EM analysis of interphase-specific H1.8-GFP containing complex isolated by MagIC-cryo-EM beads (used in Figure 4)
 
 The pipeline to generate the initial 3D model is described in Figure 4—figure supplement 3. Movie frames are motion-corrected and dose-weighted patch motion correction in CryoSPARC v4 with output Fourier cropping factor 1/2 (Punjani et al., 2017). To remove low S/N ratio particles that are not reproducibly recentered during 2D classification, through DuSTER, particles picking with Topaz v0.2 Bepler et al., 2019a were repeated twice to assign two picked points for each protein particle on micrographs. Training of Topaz was performed individually for each picked particle set using the same approximately 2000 manually picked particles as training models. The particles in these two picked particle sets were then extracted using CryoSPARC v4 (extraction box size = 185.8 Å; Punjani et al., 2017). These two extracted particle sets were individually applied to 2D classification in CryoSPARC v4 (600 classes). These 2D classifications did not generate any reasonable 2D classes of interphase-specific H1.8-GFP containing complex that was expected from the particle images on the original motion-corrected micrographs. The reproducibility of the particles recentering can be assessed by the D. Smaller value of D indicates that two pick points on each particle are reproducibly recentered during 2D classification. To remove duplicate particles at closed distances, we used this tool to keep the recentered points whose D are shorter than DTH. The DuSTER curation can be achieved by using the ‘Remove Duplicate Particles’ tool in CryoSPARC. Although the tool was originally designed to remove duplicate particles at closed distances, we used this tool to keep the recentered points whose D are shorter than DTH. All particles from two individual particle sets after the 2D classification were applied to the ‘Remove Duplicate Particles’ tool in CryoSPARC v4 using the ‘Remove Duplicates Entirely’ option (Minimum separation distance: 20 Å). Although the tool was originally designed to remove duplicate particles at closed distances, we used this tool to keep the recentered points whose D are shorter than DTH. The particles whose recentered points whose D are shorter than DTH and were the particles used in further downstream processing, were sorted as ‘rejected particles’. These particles were applied to the Particle Sets Tool in CryoSPARC v4 to split them into two individual particle sets. 2D DuSTER, including particle re-centering, particle extraction, and particle splitting steps, was repeated seven times. After seven rounds of 2D DuSTER, the particles were manually curated by removing the 2D classes with unreasonable sizes or shapes for the interphase-specific H1.8-GFP containing complex. The 2D images of removed classes are shown in Figure 4—figure supplement 3. After manual curation, the particles were further cleaned by an additional four rounds of 2D DuSTER. The particles were further cleaned by the Class Probability Filtering Tool in CryoSPARC v4. 2D classification was performed twice for one of the cleaned particle sets. The particles whose 2D class probability scores were lower than 0.3 in both replicates of 2D classification were removed. The redundant 2D classifications were necessary to prevent unintentional loss of high S/N particles. The duplicated class probability filtering was repeated six times. Using the filtered particles, 2D classification was performed twice. The high-resolution classes with reasonable protein-like features were manually selected from both 2D classification results. To prevent unintentional contamination of low S/N particles, the 92,382 particles that were selected in both 2D classification runs were used for ab initio 3D reconstruction (C5 symmetry applied). The 3D structure was highly similar to NPM2, and we were convinced that the interphase-specific H1.8-GFP containing complex is NPM2-H1.8-GFP complex.
 
@@ -255,10 +928,10 @@ For reconstituting the 3D maps without applying symmetry, the particles used for
 
 3D FSC was plotted by the Orientation Diagnostics tool integrated in the cryoSPARC v4.4.
 
-## AlphaFold2 prediction of the NPM2-H1.8 complex structure
+### AlphaFold2 prediction of the NPM2-H1.8 complex structure
 
 The AF2 models of the Xenopus laevis NPM2-H1.8 complex were built by ColabFold v1.5.5, by submitting five NPM2 and one H1.8 amino acid sequence as input (Mirdita et al., 2022; Jumper et al., 2021; Steinegger and Söding, 2017).
 
-## 3D structure visualization
+### 3D structure visualization
 
 Local resolution was estimated by cryoSPARC v4.4. All 3D structures, including cryo-EM density maps, cartoon depictions, and surface depictions with electrostatic potential, were visualized by the UCSF ChimeraX software (Goddard et al., 2018).

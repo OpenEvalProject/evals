@@ -39,15 +39,380 @@ To test whether patterns of diversity in natural communities conform to EC or DB
 
 ## Results
 
-## Quantifying the DBD-EC continuum in prokaryote communities compared to neutral null models
+### Quantifying the DBD-EC continuum in prokaryote communities compared to neutral null models
 
 We used generalized linear mixed models (GLMMs) to estimate the diversity slope at each taxonomic level in the EMP data, which revealed a tendency towards positive slopes with significant variation explained by the random effects of lineage, environment, and their interaction (Table 1, Figure 2, Figure 2—figure supplement 1–16, Supplementary file 1 Section 1). All models reported here provide significantly better fits compared to models without the fixed effect of community diversity, and coefficients of determination (R2) are higher with the inclusion of random effects, showing their importance (Supplementary file 2). Examples of how the diversity slope varies across lineages and environments are shown in Figure 2 and Figure 2—figure supplement 2–16. To assess the significance of these slope estimates in light of potential sampling bias and data structure (Gotelli and Colwell, 2001; Jarvinen, 1982), we considered null models, all of which randomize the associations between ASVs within a sample, thus randomizing any true biotic interactions. Models 1 and 2 are based on draws from the zero-sum multinomial (ZSM) distribution, which arises from the standard Neutral Theory of Biodiversity (Materials and methods). Model 1, in which each microbiome sample is drawn from the same ZSM distribution, produces a significantly negative diversity slope (Figure 2—figure supplement 17; Table 2). Model 2, in which each environment draws from a separate distribution, is effectively a composite of Model 1 in which different environments, each with a negative slope, are 'stacked' to yield an overall positive slope (Figure 2—figure supplement 17). However, the Model 2 slope is not significant in a GLMM accounting for variation across environments (Table 2, Supplementary file 3 Section 1.2). In the real EMP data, most individual environments tend towards a positive slope (Figure 2—figure supplement 18). The tendency towards positive diversity slopes in the EMP is therefore not straightforwardly explained by neutral processes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-v3.jpg)
+
+**Figure 2.:** As in Figure 1, the x-axes show community diversity in units of the number of non-focal taxa (e.g. the number of non-Proteobacteria phyla for the left-most column), and the y-axes show the taxonomic ratio within the focal taxon (e.g. the number of classes within Proteobacteria). Significant positive diversity slopes are shown in red, negative in blue (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey. Note that linear models are distinct from GLMMs, and are for illustrative purposes only. Four representative environments are shown (see Figure 2—figure supplement 2–16 for plots in all 17 environments).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Class:Phylum, (B) Order:Class, (C) Family:Order, (D) Genus:Family, and (E) ASV:Genus. Estimation of random effect coefficients from the GLMMs (Table S1), shows that the effect of diversity on focal lineage diversity (slope estimates) are generally positive but could be negative in some lineages or combinations of environment, lineage (Environment*Lineage), and the laboratory that submitted the dataset (Environment*Lab).Linear models are shown for the number of classes per phylum (y-axis) as a function of community diversity (number of non-focal phyla, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. P-values are Bonferroni corrected for 17 tests. Significant (p<0.05) models are shown with red trend lines.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Linear models are shown for the number of classes per phylum (y-axis) as a function of community diversity (number of non-focal phyla, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. P-values are Bonferroni corrected for 17 tests. Significant (p<0.05) models are shown with red trend lines.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Linear models are shown for the number of classes per phylum (y-axis) as a function of community diversity (number of non-focal phyla, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. P-values are Bonferroni corrected for 17 tests. Significant (p<0.05) models are shown with red trend lines.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Linear models are shown for the number of classes per phylum (y-axis) as a function of community diversity (number of non-focal phyla, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. P-values are Bonferroni corrected for 17 tests. Significant (p<0.05) models are shown with red trend lines.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** Linear models are shown for the number of orders per class (y-axis) as a function of community diversity (non-focal classes, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp6-v3.jpg)
+
+**Figure 2—figure supplement 6.:** Linear models are shown for the number of orders per class (y-axis) as a function of community diversity (non-focal classes, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red, negative in blue (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp7-v3.jpg)
+
+**Figure 2—figure supplement 7.:** Linear models are shown for the number of orders per class (y-axis) as a function of community diversity (non-focal classes, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp8-v3.jpg)
+
+**Figure 2—figure supplement 8.:** Linear models are shown for the number of families per order (y-axis) as a function of community diversity (non-focal orders, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp9-v3.jpg)
+
+**Figure 2—figure supplement 9.:** Linear models are shown for the number of families per order (y-axis) as a function of community diversity (non-focal orders, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red, negative in blue (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp10-v3.jpg)
+
+**Figure 2—figure supplement 10.:** Linear models are shown for the number of families per order (y-axis) as a function of community diversity (non-focal orders, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red, negative in blue (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp11-v3.jpg)
+
+**Figure 2—figure supplement 11.:** Linear models are shown for genera per family (y-axis) as a function of community diversity (non-focal families, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red, negative in blue (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp12-v3.jpg)
+
+**Figure 2—figure supplement 12.:** Linear models are shown for genera per family (y-axis) as a function of community diversity (non-focal families, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 13.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp13-v3.jpg)
+
+**Figure 2—figure supplement 13.:** Linear models are shown for genera per family (y-axis) as a function of community diversity (non-focal families, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 14.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp14-v3.jpg)
+
+**Figure 2—figure supplement 14.:** Linear models are shown for ASVs per genus (y-axis) as a function of community diversity (non-focal genera, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 15.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp15-v3.jpg)
+
+**Figure 2—figure supplement 15.:** Linear models are shown for ASVs per genus (y-axis) as a function of community diversity (non-focal genera, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red, negative in blue (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 16.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp16-v3.jpg)
+
+**Figure 2—figure supplement 16.:** Linear models are shown for ASVs per genus (y-axis) as a function of community diversity (non-focal genera, x-axis) in each of the 17 environments (EMPO3 biomes). Only environments containing the focal lineage are shown. Significant positive diversity slopes are shown in red, negative in blue (linear models, p<0.05, Bonferroni corrected for 17 tests), and non-significant in grey.
+
+![Figure 2—figure supplement 17.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp17-v3.jpg)
+
+**Figure 2—figure supplement 17.:** Results are shown from data simulated under (A) neutral Model 1, (B) neutral Model 2, or (C) neutral Model 3. Model 1 is sampled from the zero-sum multinomial distribution with a single distribution for the whole dataset, while Model 2 includes a separate distribution for each of the 17 different environments (EMPO 3 biomes). In Model 3 (C), the effect of DBD (top rows) or EC (bottom rows) are ‘spiked in’ at different levels, ranging from 0 to 100% of ASVs in a sample. Blue lines show a linear fit, with slopes (m) estimated by GLMM in selected panels. See Methods for model details, and Table 2 and Supplementary file 3, Section 1.2 for full GLMM results.
+
+![Figure 2—figure supplement 18.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp18-v3.jpg)
+
+**Figure 2—figure supplement 18.:** Samples from different environments (EMPO level 3) are shown in different colours, each with their corresponding linear model fit.
+
+![Figure 2—figure supplement 19.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp19-v3.jpg)
+
+**Figure 2—figure supplement 19.:** Each panel simulates a set of microbiome samples that differ in their diversity (number of genera in left panels A and B, number of phyla in right panels C and D) while maintaining a set true taxonomic ratio (horizontal black line). (A) True ratio set to 2 ASVs/genus, close to the per-sample mean and median in the real EMP data, in a range of samples between 1 and 1128 named genera, as observed in the real EMP data. (B) True ratio set to 20 ASVs/genus, equal to the overall mean of 22,014 named ASVs in 1128 named genera, and close to the maximum ratios observed in individual samples (Figure 2—figure supplement 5). Insets show the ranges of 1–50 and 51–150 genera, approximating observations from lower- or higher-diversity samples such as gut and soil, respectively (Figure 2—figure supplement 5). The insets only show the rarefaction to 5000 sequences, as used in the real EMP dataset. (C) True ratio set to three classes/phylum, close to the per-sample mean and median in the real EMP data, in a range of samples between 1 and 84 named phyla, as observed in the real EMP data. (D) True ratio set to 10 classes/phylum, close to the maximum ratios observed in individual samples (Figure 2—figure supplements 2–4). Different rarefaction levels are shown as different coloured lines.
+
+![Figure 2—figure supplement 20.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp20-v3.jpg)
+
+**Figure 2—figure supplement 20.:** Community diversity was estimated as the number of clusters at a focal level (di) and focal-lineage diversity as the mean of the clusters at the rank above (di 1/di). All P-values are <0.001. Linear fit (grey); quadratic fit (blue), cubic fit (red); same colours for the associated adjusted R2. The x-axis (diversity) shows the number of clusters at the focal percent-identity level (di), and the y-axis (diversification) is the mean of the clusters at the rank above (di 1/di).
+
+![Figure 2—figure supplement 21.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp21-v3.jpg)
+
+**Figure 2—figure supplement 21.:** Community diversity was estimated as the number of clusters at a focal level (di) and focal lineage diversity as the mean of the clusters at the rank above (di 1/di). Linear (grey), quadratic (blue) and cubic (red), with corresponding adjusted R-squared values in the same colour. P-values are Bonferroni corrected for 17 tests. Significant, p<0.05 (solid lines), non-significant (dashed lines). The x-axis shows the number of clusters at the focal percent-identity level (di), and the y-axis is the mean of the clusters at the rank above (di 1/di).
+
+![Figure 2—figure supplement 22.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp22-v3.jpg)
+
+**Figure 2—figure supplement 22.:** Community diversity was estimated as the number of clusters at a focal level (di) and focal lineage diversity as the mean of the clusters at the rank above (di 1/di). Linear (grey), quadratic (blue) and cubic (red), with corresponding adjusted R-squared values in the same colour. P-values are Bonferroni corrected for 17 tests. Significant, p<0.05 (solid lines), non-significant (dashed lines). The x-axis shows the number of clusters at the focal percent-identity level (di), and the y-axis is the mean of the clusters at the rank above (di 1/di).
+
+![Figure 2—figure supplement 23.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp23-v3.jpg)
+
+**Figure 2—figure supplement 23.:** Community diversity was estimated as the number of clusters at a focal level (di) and focal lineage diversity as the mean of the clusters at the rank above (di 1/di). Linear (grey), quadratic (blue) and cubic (red), with corresponding adjusted R-squared values in the same colour. P-values are Bonferroni corrected for 17 tests. Significant, p<0.05 (solid lines), non-significant (dashed lines). The x-axis shows the number of clusters at the focal percent-identity level (di), and the y-axis is the mean of the clusters at the rank above (di 1/di).
+
+![Figure 2—figure supplement 24.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp24-v3.jpg)
+
+**Figure 2—figure supplement 24.:** Community diversity was estimated as the number of clusters at a focal level (di) and focal lineage diversity as the mean of the clusters at the rank above (di 1/di). Linear (grey), quadratic (blue) and cubic (red), with corresponding adjusted R-squared values in the same colour. P-values are Bonferroni corrected for 17 tests. Significant, p<0.05 (solid lines), non-significant (dashed lines). The x-axis shows the number of clusters at the focal percent-identity level (di), and the y-axis is the mean of the clusters at the rank above (di 1/di).
+
+![Figure 2—figure supplement 25.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp25-v3.jpg)
+
+**Figure 2—figure supplement 25.:** Community diversity was estimated as the number of clusters at a focal level (di) and focal lineage diversity as the mean of the clusters at the rank above (di 1/di). Linear (grey), quadratic (blue) and cubic (red), with corresponding adjusted R-squared values in the same colour. P-values are Bonferroni corrected for 17 tests. Significant, p<0.05 (solid lines), non-significant (dashed lines). The x-axis shows the number of clusters at the focal percent-identity level (di), and the y-axis is the mean of the clusters at the rank above (di 1/di).
+
+![Figure 2—figure supplement 26.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig2-figsupp26-v3.jpg)
+
+**Figure 2—figure supplement 26.:** Community diversity was estimated as the number of clusters at a focal level (di) and focal lineage diversity as the mean of the clusters at the rank above (di 1/di). Linear (grey), quadratic (blue) and cubic (red), with corresponding adjusted R-squared values in the same colour. P-values are Bonferroni corrected for 17 tests. Significant, p<0.05 (solid lines), non-significant (dashed lines). The x-axis shows the number of clusters at the focal percent-identity level (di), and the y-axis is the mean of the clusters at the rank above (di 1/di).
+
+**Table 1.**
+ Effects of community diversity on focal lineage diversity across taxonomic ratios.The GLMMs show a statistically significant positive effect of community diversity on focal lineage diversity. Each row reports the effect of community diversity (Div) on focal lineage diversity, as well as its standard error, Wald z-statistic for its effect size and the corresponding P-value (left section), or standard deviation on the slope for the significant random effects (right section). SE = standard error, Env = environment type, Lin = lineage type, Lab = Principal Investigator ID, Sample = EMP Sample ID. Interactions are denoted as ‘*’. n.s. = not significant (likelihood-ratio test). All models provide a significantly better fit than null models without fixed effects (∆AIC > 10 and p<0.05; Supplementary file 2).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Slope (fixed effects)</th>
+      <th colspan="5">Standard deviation on the slope (random effects)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Div</th>
+      <th>SE</th>
+      <th>z</th>
+      <th>P</th>
+      <th>Env</th>
+      <th>Lin</th>
+      <th>Lin*Env</th>
+      <th>Env*Lab</th>
+      <th>Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASV:Genus</td>
+      <td>0.091</td>
+      <td>0.016</td>
+      <td>5.792</td>
+      <td>6.95e-09</td>
+      <td>n.s.</td>
+      <td>0.074</td>
+      <td>0.142</td>
+      <td>0.114</td>
+      <td>0.067</td>
+    </tr>
+    <tr>
+      <td>Genus:Family</td>
+      <td>0.047</td>
+      <td>0.008</td>
+      <td>5.911</td>
+      <td>3.41e-09</td>
+      <td>n.s.</td>
+      <td>0.071</td>
+      <td>0.07</td>
+      <td>0.039</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Family:Order</td>
+      <td>0.119</td>
+      <td>0.017</td>
+      <td>7.001</td>
+      <td>2.54e-12</td>
+      <td>0.023</td>
+      <td>0.094</td>
+      <td>0.092</td>
+      <td>0.106</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Order:Class</td>
+      <td>0.109</td>
+      <td>0.020</td>
+      <td>5.447</td>
+      <td>5.13e-08</td>
+      <td>0.05</td>
+      <td>0.141</td>
+      <td>0.078</td>
+      <td>0.051</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Class:Phylum</td>
+      <td>0.272</td>
+      <td>0.043</td>
+      <td>6.341</td>
+      <td>2.29e-10</td>
+      <td>0.119</td>
+      <td>0.174</td>
+      <td>0.119</td>
+      <td>0.114</td>
+      <td>n.s.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ GLMMs applied to data simulated under null models.Null models 1 and 2 were generated under the ZSM distribution, with a single distribution for the whole dataset (Model 1) or one distribution per environment (Model 2). Model 3 is similar to Model 1, except with a single Poisson distribution for the whole dataset, and +DBD or +EC refer to adding these effects to all ASVs in each sample (see Materials and methods and Figure 2—figure supplement 17). Each row reports the effect of community diversity (Div) on focal lineage diversity, as well as its standard error, Wald z-statistic for its effect size and the corresponding P-value (Wald test) (left section), or standard deviation on the slope for the significant random effects (right section). SE = standard error, Env = environment type, Lin = lineage type, Sample = EMP Sample ID. n.s. = not significant (likelihood-ratio test), n.t. = not tested, because separate environments were not included in Models 1 or 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Slope (fixed effects)</th>
+      <th colspan="4">Stand dev on the slope (random effects)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Div</th>
+      <th>SE</th>
+      <th>z</th>
+      <th>P</th>
+      <th>Env</th>
+      <th>Lin</th>
+      <th>Lin*Env</th>
+      <th>Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model 1</td>
+      <td>−0.005</td>
+      <td>0.000</td>
+      <td>−9.807</td>
+      <td>&lt;2 e −16</td>
+      <td>n.t.</td>
+      <td>0.639</td>
+      <td>n.t.</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Model 2</td>
+      <td>n.s.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model 3</td>
+      <td>−0.012</td>
+      <td>0.002</td>
+      <td>−6.552</td>
+      <td>5.69e-11</td>
+      <td>n.t.</td>
+      <td>0.021</td>
+      <td>n.t.</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Model 3 + DBD</td>
+      <td>0.016</td>
+      <td>0.001</td>
+      <td>11.48</td>
+      <td>&lt;2e-16</td>
+      <td>n.t.</td>
+      <td>0.008</td>
+      <td>n.t.</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Model 3 + EC</td>
+      <td>−0.011</td>
+      <td>0.002</td>
+      <td>−6.14</td>
+      <td>8.26e-10</td>
+      <td>n.t.</td>
+      <td>ns</td>
+      <td>n.t.</td>
+      <td>n.s.</td>
+    </tr>
+  </tbody>
+</table>
 
 To estimate the power to detect either DBD or EC, we specifically added each of these effects to data simulated under a null model. As expected, adding DBD reversed the negative slope and rendered it positive (Table 2; Figure 2—figure supplement 17, Supplementary file 3 Section 2.1), suggesting reasonable power to detect DBD when truly present. In contrast, the addition of EC had little effect on the slope, suggesting low power to detect EC under some null models. Taken together, these modelling results suggest that positive diversity slopes observed in the EMP are more readily explained by DBD than by Neutral Theory, whereas negative slopes could be explained by EC, Neutral Theory, or some combination of the two.
 
 Because taxonomic labels can be unavailable or inconsistent with phylogenetic relationships (Parks et al., 2018; Vos, 2011) we repeated the analyses using nucleotide sequence identity in the 16S rRNA gene instead of taxonomy, and again recovered generally positive diversity slopes (Materials and methods). As a final sensitivity analysis, we repeated the GLMMs using unrarefied community Shannon diversity instead of richness (Materials and methods) and obtained similar results, with generally positive diversity slopes that could in some cases be reversed depending on the lineage or environment (Table 3, Supplementary file 1 Section 2). The Shannon diversity metric is robust to sampling effort, suggesting that the results are not biased by undersampling in diverse biomes. Even if undersampling could bias the diversity slope downward in more diverse samples, the effect is unlikely to be large at a rarefaction to 5000 sequences, and only to occur at the extremes of diversity (e.g. very many genera and high ASV:genus ratios) and not at higher taxonomic levels (e.g. Class:Phylum) (Figure 2—figure supplement 19).
 
-## DBD reaches a plateau at high diversity
+**Table 3.**
+ GLMMs with community diversity measured using Shannon diversity.Results are shown from GLMMs with Shannon diversity of non-focal taxa (Div) as a predictor of ASVs richness of focal taxa. Each row reports the estimate (Div), as well as its standard error, Wald z-statistic for its effect size and the corresponding P-value (Wald test) (left section), or standard deviation on the slope for the significant random effects (right section). SE = standard error, Env = environment type, Lin = lineage type, Lab = Principal Investigator ID, Sample = EMP Sample ID. n.s. = not significant (likelihood-ratio test).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Fixed effects</th>
+      <th colspan="5">Random effects</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Div</th>
+      <th>SE</th>
+      <th>z</th>
+      <th>p</th>
+      <th>Env</th>
+      <th>Lin</th>
+      <th>Env*Lin</th>
+      <th>Env*Lab</th>
+      <th>Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genus</td>
+      <td>0.055</td>
+      <td>0.013</td>
+      <td>4.33</td>
+      <td>1.49e-05</td>
+      <td>n.s.</td>
+      <td>0.08</td>
+      <td>0.15</td>
+      <td>0.085</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>Family</td>
+      <td>0.148</td>
+      <td>0227</td>
+      <td>6.491</td>
+      <td>8.51e-11</td>
+      <td>n.s.</td>
+      <td>0.184</td>
+      <td>0.268</td>
+      <td>0.16</td>
+      <td>0.134</td>
+    </tr>
+    <tr>
+      <td>Order</td>
+      <td>0.378</td>
+      <td>0.038</td>
+      <td>9.864</td>
+      <td>&lt;2e-16</td>
+      <td>n.s.</td>
+      <td>0.34</td>
+      <td>0.417</td>
+      <td>0.258</td>
+      <td>0.202</td>
+    </tr>
+    <tr>
+      <td>Class</td>
+      <td>0.398</td>
+      <td>0.05</td>
+      <td>7.973</td>
+      <td>1.54e-15</td>
+      <td>n.s.</td>
+      <td>0.369</td>
+      <td>0.46</td>
+      <td>0.326</td>
+      <td>0.262</td>
+    </tr>
+    <tr>
+      <td>Phylum</td>
+      <td>0.319</td>
+      <td>0.088</td>
+      <td>3.614</td>
+      <td>0.0003</td>
+      <td>0.169</td>
+      <td>0.316</td>
+      <td>0.5</td>
+      <td>0.495</td>
+      <td>0.378</td>
+    </tr>
+  </tbody>
+</table>
+
+### DBD reaches a plateau at high diversity
 
 It is expected from theory and experimental studies that a positive DBD relationship should eventually reach a plateau, giving way to EC as niches become saturated (Brockhurst et al., 2007; Gómez and Buckling, 2013). This expectation is borne out in our dataset, particularly in the nucleotide sequence-based analyses which support quadratic or cubic relationships over linear diversity slopes (Figure 2—figure supplement 20). For example, in the animal distal gut, a relatively low-diversity biome, we observed a strong linear DBD relationship at most phylogenetic depths; in contrast, the much more diverse soil biome clearly reaches a plateau (Figure 2—figure supplements 21–26).
 
@@ -55,21 +420,424 @@ To comprehensively test the hypothesis that more diverse microbiomes experience 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig3-v3.jpg)
 
-**Figure 3.:** The x-axis shows the mean number of non-focal taxa: (A) phyla, (B) classes, and (C) orders in each biome. On the y-axis, the diversity slope was estimated by a GLMM predicting focal lineage diversity as a function of the interaction between community diversity and environment type at the level of (A) Class:Phylum, (B) Order:Class, and (C) Family:Order ratios (Supplementary file 1 Section 3). The line represents a linear regression; the shaded area depicts 95% confidence limits of the fitted values. Adjusted R and 2P-values from the linear fits are shown at the top right of each panel. See Supplementary file 2 for model goodness of fit. Slopes not significantly different from zero are shown as empty circles. Estimates of bacterial cell density from the literature are indicated in grey text, in units of bacteria/mm3. For animal (skin) and plant surface, units of bacteria/mm2 were converted to mm3 assuming layers of bacteria one micron thick. For rhizosphere samples we assume a density of 1–2 g/cm3 (Kennedy and de Luna, 2005).
+**Figure 3.:** The x-axis shows the mean number of non-focal taxa: (A) phyla, (B) classes, and (C) orders in each biome. On the y-axis, the diversity slope was estimated by a GLMM predicting focal lineage diversity as a function of the interaction between community diversity and environment type at the level of (A) Class:Phylum, (B) Order:Class, and (C) Family:Order ratios (Supplementary file 1 Section 3). The line represents a linear regression; the shaded area depicts 95% confidence limits of the fitted values. Adjusted R2 and P-values from the linear fits are shown at the top right of each panel. See Supplementary file 2 for model goodness of fit. Slopes not significantly different from zero are shown as empty circles. Estimates of bacterial cell density from the literature are indicated in grey text, in units of bacteria/mm3. For animal (skin) and plant surface, units of bacteria/mm2 were converted to mm3 assuming layers of bacteria one micron thick. For rhizosphere samples we assume a density of 1–2 g/cm3 (Kennedy and de Luna, 2005).
 
-## Abiotic drivers of diversity
+### Abiotic drivers of diversity
 
 Our results thus far suggest that community diversity is a major determinant of the EC-DBD continuum, and by extension that biotic interactions may override abiotic factors in determining where a community lies on the continuum. To formally test for the additional role abiotic drivers might play in generating the observed EC-DBD continuum, we analysed two data sets in more detail.
 
 First, we analysed a subset of 192 EMP samples with measurements of four key abiotic factors shown to affect microbial diversity (pH, temperature, latitude, and elevation; Delgado-Baquerizo et al., 2018; Lauber et al., 2009; Power et al., 2018; Schluter and Pennell, 2017). We fitted a GLMM with focal lineage-specific diversity as the dependent variable, and with the number of non-focal lineages, the four abiotic factors and their interactions as predictors (fixed effects). As in the full EMP dataset (Table 1), focal lineage diversity was positively associated with community diversity at all taxonomic ratios in the EMP subset (Table 4). As expected, certain abiotic factors, alone or in combination with diversity, had significant effects on focal lineage diversity (Table 4). However, the effects of abiotic factors were always weaker than the effect of community diversity (Table 4; Supplementary file 1 Section 4).
 
+**Table 4.**
+ Community diversity has a stronger effect than abiotic factors on focal lineage diversity (EMP dataset).Results are shown from GLMMs with community diversity (Div), four abiotic factors (temperature, elevation, pH, and latitude), and their interactions with community diversity, as predictors of focal lineage diversity. Random effects on the intercept included environment, lineage, lab ID and sample ID. Each row reports the taxonomic ratio, the predictors used in the GLMM (fixed effects only), their slope estimate (Est), standard error (SE) and P-value (P) (Wald test). Interactions are denoted as ‘*’. Random effects are not shown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Predictor</th>
+      <th>Est</th>
+      <th>SE</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASV:Genus</td>
+      <td>Div</td>
+      <td>0.128</td>
+      <td>0.013</td>
+      <td>&lt;2e-16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Temperature</td>
+      <td>0.04</td>
+      <td>0.014</td>
+      <td>0.00479</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Div*Temperature</td>
+      <td>0.043</td>
+      <td>0.014</td>
+      <td>0.00175</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Div*Latitude</td>
+      <td>0.031</td>
+      <td>0.013</td>
+      <td>0.02119</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Div*Elevation</td>
+      <td>−0.031</td>
+      <td>0.014</td>
+      <td>0.02829</td>
+    </tr>
+    <tr>
+      <td>Genus:Family</td>
+      <td>Div</td>
+      <td>0.094</td>
+      <td>0.009</td>
+      <td>&lt;2e-16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Temperature</td>
+      <td>0.026</td>
+      <td>0.009</td>
+      <td>0.00268</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pH</td>
+      <td>−0.042</td>
+      <td>0.009</td>
+      <td>5.88e-06</td>
+    </tr>
+    <tr>
+      <td>Family:Order</td>
+      <td>Div</td>
+      <td>0.131</td>
+      <td>0.01</td>
+      <td>&lt;2e-16</td>
+    </tr>
+    <tr>
+      <td>Order:Class</td>
+      <td>Div</td>
+      <td>0.184</td>
+      <td>0.01</td>
+      <td>&lt;2e-16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Div*Temperature</td>
+      <td>0.032</td>
+      <td>0.009</td>
+      <td>0.000827</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Div*Latitude</td>
+      <td>0.023</td>
+      <td>0.008</td>
+      <td>0.005403</td>
+    </tr>
+    <tr>
+      <td>Class:Phylum</td>
+      <td>Div</td>
+      <td>0.236</td>
+      <td>0.011</td>
+      <td>&lt;2e-16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Div*Temperature</td>
+      <td>0.059</td>
+      <td>0.014</td>
+      <td>2.15e-05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Div*Latitude</td>
+      <td>0.03</td>
+      <td>0.011</td>
+      <td>0.00884</td>
+    </tr>
+  </tbody>
+</table>
+
 Second, we used a global 16S sequencing dataset of 237 soil samples associated with more detailed environmental metadata (Delgado-Baquerizo et al., 2018) which we reprocessed to yield ASVs comparable to those in the EMP (Materials and methods). This dataset revealed weaker evidence for DBD and stronger effects of abiotic variables on diversity. Community diversity generally had significant positive effects on focal-lineage diversity, but the effect was weak and not detectable at all taxonomic ratios (Table 5). Known abiotic drivers of soil bacterial diversity such as pH (Lauber et al., 2009) and latitude (Delgado-Baquerizo et al., 2018) had effects of similar or stronger magnitude compared to the effect of community diversity (Table 5, Supplementary file 4). The relatively weak effect of DBD and strong effect of abiotic drivers on diversity in this soil dataset can be explained by the fact that soils generally are highly diverse and have relatively low-diversity slopes (Figure 3).
+
+**Table 5.**
+ GLMMs applied to a soil dataset.Each row reports the taxonomic ratio, the predictors used in the GLMM (fixed effects only), their estimate (Est), standard error (SE) and P-value (P) (Wald test). Left columns: GLMM with community diversity (Div) and all abiotic variables considered separately, as predictors of focal lineage diversity. Right columns: GLMM with community diversity (Div) and the three first principle components (PCs) representing abiotic variables, as predictors of focal lineage diversity. n.s., non-significant (LRT test). All models provide a significantly better fit than null models without fixed effects (∆AIC >10 and p<0.05; Supplementary file 2), except for the GLMM with abiotic factors at the Family:Order level, where latitude has a significant effect on focal lineage diversity but its effect is nearly null, with a ∆AIC between full and null model of 4 and a null marginal R2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">GLMMs with abiotic variables</th>
+      <th colspan="4">GLMMs with the 3 first PCs</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Predictor</th>
+      <th>Est</th>
+      <th>SE</th>
+      <th>P</th>
+      <th>Predictor</th>
+      <th>Est</th>
+      <th>SE</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASV:Genus</td>
+      <td>Div</td>
+      <td>n.s.</td>
+      <td></td>
+      <td></td>
+      <td>Div</td>
+      <td>0.064</td>
+      <td>0.016</td>
+      <td>9.47e-05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Latitude</td>
+      <td>0.294</td>
+      <td>0.025</td>
+      <td>&lt;2e-16</td>
+      <td>PC1</td>
+      <td>−0.065</td>
+      <td>0.007</td>
+      <td>&lt;2e-16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UV_light</td>
+      <td>−0.177</td>
+      <td>0.016</td>
+      <td>&lt;2e-16</td>
+      <td>PC2</td>
+      <td>−0.03</td>
+      <td>0.006</td>
+      <td>1.98e-05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MDR</td>
+      <td>0.028</td>
+      <td>0.006</td>
+      <td>7.12e-06</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NPP2003_2015</td>
+      <td>−0.066</td>
+      <td>0.005</td>
+      <td>&lt;2e-16</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Latitude^2</td>
+      <td>−0.3</td>
+      <td>0.029</td>
+      <td>&lt;2e-16</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Clay_silt^2</td>
+      <td>−0.012</td>
+      <td>0.004</td>
+      <td>0.003</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Soil_N^2</td>
+      <td>−0.007</td>
+      <td>0.001</td>
+      <td>1.66e-06</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Soil_C_N_ratio^2</td>
+      <td>0.003</td>
+      <td>0.001</td>
+      <td>0.004</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PSEA^2</td>
+      <td>0.01</td>
+      <td>0.002</td>
+      <td>4.84e-06</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MDR^2</td>
+      <td>0.017</td>
+      <td>0.003</td>
+      <td>2.40e-08</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>NPP2003_2015^2</td>
+      <td>−0.016</td>
+      <td>0.004</td>
+      <td>0.0001</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genus:Family</td>
+      <td>Div</td>
+      <td>0.032</td>
+      <td>0.01</td>
+      <td>0.0011</td>
+      <td>Div</td>
+      <td>0.033</td>
+      <td>0.01</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Latitude</td>
+      <td>−0.035</td>
+      <td>0.006</td>
+      <td>2.04e-09</td>
+      <td>PC1</td>
+      <td>−0.016</td>
+      <td>0.006</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PC2</td>
+      <td>0.02</td>
+      <td>0.006</td>
+      <td>0.00089</td>
+    </tr>
+    <tr>
+      <td>Family:Order</td>
+      <td>Div</td>
+      <td>n.s.</td>
+      <td></td>
+      <td></td>
+      <td>Div</td>
+      <td>n.s.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Latitude</td>
+      <td>−0.0005</td>
+      <td>0.0002</td>
+      <td>0.0105</td>
+      <td>PC1</td>
+      <td>−0.026</td>
+      <td>0.007</td>
+      <td>0.00032</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Div*PC1</td>
+      <td>0.04</td>
+      <td>0.006</td>
+      <td>2.14e-12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Div*PC3</td>
+      <td>0.023</td>
+      <td>0.005</td>
+      <td>1.68e-06</td>
+    </tr>
+    <tr>
+      <td>Order:Class</td>
+      <td colspan="8">Null model with no predictor was significant</td>
+    </tr>
+    <tr>
+      <td>Class:Phylum</td>
+      <td>Div</td>
+      <td>0.032</td>
+      <td>0.01</td>
+      <td>0.00174</td>
+      <td>Div</td>
+      <td>0.032</td>
+      <td>0.01</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td>pH</td>
+      <td>0.074</td>
+      <td>0.01</td>
+      <td>4.37e-13</td>
+      <td>PC1</td>
+      <td>−0.051</td>
+      <td>0.01</td>
+      <td>3.54e-07</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PC2</td>
+      <td>−0.028</td>
+      <td>0.01</td>
+      <td>0.006</td>
+    </tr>
+  </tbody>
+</table>
 
 We note that it remains possible that unmeasured abiotic effects could explain some of the DBD effects observed in the EMP. Although only a small subset of abiotic factors was considered, the generally positive diversity slopes in the EMP are not likely to be driven by these factors in the abiotic environment (Table 4). Specifically, we consider it unlikely that unmeasured abiotic factors would always act similarly, and in the same direction across multiple different environments, to drive DBD. However, as demonstrated in soil (Table 5), abiotic factors may become increasingly important in highly diverse biomes with weak DBD.
 
-## DBD is more pronounced in resident taxa than in migrants or generalists
+### DBD is more pronounced in resident taxa than in migrants or generalists
 
 A recent meta-analysis of 16S sequence data from a variety of biomes suggests there is an important distinction between generalist lineages found in many environments, compared to specialists with a more restricted distribution (Sriswasdi et al., 2017). Generalists were inferred to have higher speciation rates, suggesting that the DBD-EC balance might differ between generalists and specialists (Sriswasdi et al., 2017). To further investigate this difference, we defined ‘resident’, taxa with a strong preference for a specific biome, in addition to generalists without a strong biome preference in the EMP dataset. We first clustered environmental samples by their genus-level community composition using fuzzy k-means clustering (Figure 4a), which identified three major clusters: ‘animal-associated’, ‘saline’, and ‘non-saline’. The clustering included some outliers (e.g. plant corpus grouping with animals), but was generally consistent with known distinctions between host-associated vs. free-living (Thompson et al., 2017), and saline vs. non-saline communities (Auguet et al., 2010; Lozupone and Knight, 2007). Resident genera were defined as those with a strong preference for a particular environment cluster (whether due to dispersal limitation or narrow niche breadth) using indicator species analysis (permutation test, p<0.05; Figure 4a; Figure 4—figure supplement 1; Supplementary file 5), and genera without a strong preference were considered generalists. When residents of one environmental cluster were (relatively infrequently) observed in a different cluster, we defined them as ‘migrants’ in that sample. For each environment cluster, we ran a GLMM with resident genus-level diversity (the number of non-focal genera) as a predictor of focal-lineage diversity (the ASV:Genus ratio) for residents, generalists, or migrants to that sample (Supplementary file 1 Section 5).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig4-v3.jpg)
+
+**Figure 4.:** (A) Ordination showing genera clustering into their preferred environment clusters. The matrix of 17 environments (rows) by 1128 genera (columns) by, with the matrix entries indicating the percentage of samples from a given environment in which each genus is present, was subjected to principal components analysis (PCA). Circles indicate genera and triangles indicate environments (EMPO 3 biomes). coloured circles are genera inferred by indicator species analysis to be residents of a certain environmental cluster, and grey circles are generalist genera. The three environment clusters identified by fuzzy k-means clustering are: Non-saline (NS, blue), saline (S, green) and animal-associated (purple). Triangles of the same colour indicate EMPO 3 biomes clustered into the same environmental cluster. (B) DBD in resident versus non-resident genera across environment clusters. Results of GLMMs modelling focal lineage diversity as a function of the interaction between community diversity and resident/migrant/generalist status. The x-axis shows the standardized number of non-focal resident genera (community diversity); the y-axis shows the number of ASVs per focal genus. Resident focal genera are shown in orange, migrant focal genera in red, and generalist focal genera in black. Red stars indicate a significantly positive or negative slope (Wald test, p<0.005). See Supplementary file 2 for model goodness of fit.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58999/elife-58999-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Results from indicator species analysis illustrated as a heatmap. Only the 25 resident genera with the highest indval indices and p<0.05 (permutation test) are shown for every environment cluster (animal-associated, non-saline and saline free). For the full results see Supplementary file 5.
 
 Resident community diversity had no significant effect on the diversity of generalists in animal-associated, saline and non-saline clusters (GLMM, Wald test, p>0.05), but was positively correlated with lineage-specific resident diversity (GLMM, Wald test, z = 7.1, p=1.25e-12; z = 3.316, p=0.0009; z = 7.109, p=1.17e-12, respectively). Resident community diversity significantly decreased migrant diversity in saline (GLMM, z = −3.194, p=0.0014) and non-saline environment clusters (GLMM, z = −2.840, p=0.0045), but had no significant effect in the animal-associated cluster (GLMM, p>0.05) (Figure 4b). These results suggest that, although generalist lineages may have higher speciation rates and colonize more habitats than specialists (Sriswasdi et al., 2017), they have lower diversity slopes. Migrants to the ‘wrong’ environment experience even less DBD, and are even subject to EC in two out of three environment types (Figure 4b). The accumulation of diversity via successful establishment of migrants may thus be limited, presumably because most niches are already occupied by residents.
 
@@ -89,13 +857,13 @@ The positive correlation between genome size and DBD observed here could be driv
 
 Alongside theory and experimental data, the EMP survey data provide a window into the biotic drivers of microbial diversity in nature. In particular, our correlational results support previous experiments and theory showing that DBD is strong when community diversity is low (Calcagno et al., 2017; Jousset et al., 2016), driving the accumulation of diversity in a positive feedback loop until niches are filled and EC starts to predominate (Bailey et al., 2013; Brockhurst et al., 2007; Gómez and Buckling, 2013; Meyer and Kassen, 2007). However, due to the correlational nature of the EMP data, it is not possible to test whether DBD is primarily due to the creation of novel niches via biotic interactions and niche construction (Laland et al., 1999), or due to increased competition leading to specialization on underexploited resources (Hibbing et al., 2010; Jousset et al., 2016). We hope future higher resolution genomic studies, and complementary experiments, will be able to elucidate the types of biotic interactions that promote microbiome diversity. Regardless of the underlying mechanisms, our results demonstrate a general scaling between different levels of community diversity, which has important implications for modelling and predicting community function and stability in response to perturbations (Coyte et al., 2015; Pennekamp et al., 2018). The answer to the question ‘why are microbiomes so diverse?’ might in a large part be because microbiomes are so diverse (Emerson and Kolm, 2005).
 
-## Data and materials availability
+### Data and materials availability
 
 All data is available from the Earth Microbiome Project (ftp://ftp.microbio.me/), as detailed in the Methods. All computer code used for analysis are available at (https://github.com/Naima16/dbd.git; Madi, 2020; copy archived at swh:1:rev:ecb4f844264b72eaa8cbd708244ecd32d414c7dd).
 
 ## Materials and methods
 
-## Earth Microbiome Project dataset
+### Earth Microbiome Project dataset
 
 We used the EMP ‘2000 subset’ of 16S rRNA gene sequences, rarefied to 5000 sequences per sample. This subset contains 155,002 ASVs from 2000 samples with an even distribution across 17 natural environments (EMP Ontology level 3). Data were downloaded from the EMP FTP server (ftp://ftp.microbio.me/), on February 9, 2018.
 
@@ -105,7 +873,7 @@ The list of the associated 97 studies and 61 corresponding principal investigato
 
 Based on the ASV annotations across samples, we estimated the taxonomic ratio for each focal lineage (ASV:Genus, Genus:Family, Family:Order, Order:Class and Class:Phylum), along with the number of non-focal lineages (dbd_analys_input.py, glmm_analys_input.py, Python Version 2.7). Unclassified ASVs were removed from the analyses.
 
-## Generalized linear mixed model (GLMM) analyses
+### Generalized linear mixed model (GLMM) analyses
 
 We used GLMMs to determine how focal lineage diversity (e.g. its ASV:Genus ratio) is affected by community diversity (e.g. non-focal genera). The effects of environment (as defined by the EMP Ontology ‘level 3 biomes’) and the focal lineage identity were included as random effects on the slope and intercept. We also controlled for the submitting laboratory (identified by the principal investigator) and the EMP unique sample identifier (i.e. if two taxa were part of the same sample).
 
@@ -117,25 +885,25 @@ Diagnostic plots (plot and qqnorm R functions in base and stats packages) were c
 
 We tested for overdispersion using the overdisp_fun R function available at https://bbolker.github.io/mixedmodels-misc/glmmFAQ.html, and found that all the models were not overdispersed, but rather were underdispersed: the ratio of the sum of squared Pearson residuals to residual degrees of freedom was <1 and non-significant when tested with a chi-squared test. The only exception was Shannon diversity-based GLMMs. In case of underdispersion and given that underdispersion leads to more conservative results, we retained the GLMMs with Poisson error distribution, despite the underdispersion. (GLMM FAQ; Ben Bolker and others; 25 September 2018; https://bbolker.github.io/mixedmodels-misc/glmmFAQ.html#underdispersion). For Shannon diversity-based GLMMs, we accounted for overdispersion by adding an observation-level random effect to the GLMMs (Elston et al., 2001).
 
-## Taxonomy-based GLMMs
+### Taxonomy-based GLMMs
 
 To test how focal lineage diversity (e.g. its ASV:Genus ratio) is affected by community diversity (e.g. non-focal genera richness), for different environment types and lineages across all taxonomic ratios, we used generalized linear mixed models (GLMMs) fitted on the EMP dataset. As the dependent variable (focal lineage diversity, defined as taxonomic ratios, ASV:Genus, Genus:Family, Family:Order, Order:Class, and Class:Phylum) was a count response, we used a Poisson error distribution with a log link function. Community diversity (number of non-focal lineages: non-focal Genera, Families, Orders, Classes, and Phyla), standardized to a mean of zero and a standard deviation of one, was specified as the predictor (fixed effect). We included the following random effects on the slope and intercept: lineage (Lin), environment (Env), environment nested within lineage (a lineage may be present in different environments) and lab (the principal investigator who conducted the EMP study) nested within environment (different labs sampled and sequenced a given environment) (as suggested in http://bbolker.github.io/mixedmodels-misc/glmmFAQ.html). Defining random effects on the slope enabled us to test slope variation across groups of each categorical variable (e.g. slope variation between different environments or different lineages). We included the EMP unique sample ID as a random effect to control for dependencies between observations (if two taxa were part of the same sample) (Table 1, Supplementary file 1 section 1).
 
-## Shannon diversity-based GLMMs
+### Shannon diversity-based GLMMs
 
 We also tested whether ASV diversity in a focal taxon is dependent on the diversity of all other ASVs in that sample (rather than the diversity at only the focal taxonomic level, as in the taxonomy-based GLMMs above). We used the Shannon diversity index, which is robust to differences in sampling effort, and generally reaches a plateau at 5000 sequences or fewer. To do so, we fitted a GLMM with the number of ASVs per focal taxon as the response variable, and the Shannon diversity based on ASVs across all non-focal taxa (z-standardized) as the predictor (fixed effect) The random effects were kept as in the taxonomy-based GLMMs, but we added an observation-level random effect to account for overdispersion (Table 3, Supplementary file 1 section 2). To avoid dependence between the response and predictor variables, we used the rarefied ASV dataset (5,000 ASVs/sample as above) as the response variable, and the Shannon diversity calculated on unrarefied data from the same samples as the predictor.
 
-## Null models
+### Null models
 
-We considered three null models, all of which randomize the associations between ASVs within a sample, thus breaking any true biotic interactions. These null models were randomly generated matrices of the same size as the real EMP dataset, but based on a distribution that arises from the Neutral Theory of Biodiversity. Neutral Theory postulates that the biodiversity of a metacommunity is governed by independent random population dynamics across species. The aggregate behaviour is quantified by the fundamental biodiversity number θ, such that θ=2 JM υ, where JM is the size of the metacommunity and ν is the speciation rate. Parametrized by θ, the metacommunity zero-sum multinomial distribution (mZSM) was developed to obtain random samples of size J (Alonso and McKane, 2004). We used this mZSM distribution (implemented with the sads package in R; http://search.r-project.org/library/sads/html/dmzsm.html) to generate the counts of the ASVs for each dataset in models 1 and 2. Model 1 assumes that the whole dataset follows the same species abundance distribution (SAD), characterized by a mZSM with θ = 50. Model 2 assumes that each environment has its own SAD and thus all the samples of a single environment are assigned the same θ but are distinct across environments (θ was chosen uniformly between 1 and 100). The number of samples per environment were the same as the EMP dataset. To obtain similar mean counts as the real dataset, we set J = 1000 for both models 1 and 2, in order to vary θ from 1 to 100. These values are reasonable based on previous studies that estimated these parameters from microbiome data (Li and Ma, 2016). We included a down-sampling step to replicate the zero-inflated nature of the real dataset (on average there were only 96 ASVs per sample while there was a total of 22,014 ASVs in the entire EMP dataset). To replicate the sampling effect due to rarefaction, we first created a vector of all individuals from a single sample. We then selected 5000 individuals at random whose identities determined which ASVs were found in that sample. These neutrally-derived random matrices, null models 1 and 2, were plotted using the same plots (ASV:Genus vs number of genera) as the real EMP dataset and were then analysed using GLMMs with community diversity as a predictor of focal lineage diversity (fixed effect), with lineage identity and EMP sample ID as random effects. For Model 1, the slope was significantly negative (GLMM, Wald test, z=-9.807, P<2e-16). For Model 2, the null GLMM (including the intercept only) was significant, meaning that the community diversity has no significant effect on focal lineages diversity (Likelihood-ratio test between the model with the predictor and the intercept-only model, P=0.9399).
+We considered three null models, all of which randomize the associations between ASVs within a sample, thus breaking any true biotic interactions. These null models were randomly generated matrices of the same size as the real EMP dataset, but based on a distribution that arises from the Neutral Theory of Biodiversity. Neutral Theory postulates that the biodiversity of a metacommunity is governed by independent random population dynamics across species. The aggregate behaviour is quantified by the fundamental biodiversity number θ, such that $\theta=2J_{M}υ$, where JM is the size of the metacommunity and ν is the speciation rate. Parametrized by θ, the metacommunity zero-sum multinomial distribution (mZSM) was developed to obtain random samples of size J (Alonso and McKane, 2004). We used this mZSM distribution (implemented with the sads package in R; http://search.r-project.org/library/sads/html/dmzsm.html) to generate the counts of the ASVs for each dataset in models 1 and 2. Model 1 assumes that the whole dataset follows the same species abundance distribution (SAD), characterized by a mZSM with θ = 50. Model 2 assumes that each environment has its own SAD and thus all the samples of a single environment are assigned the same θ but are distinct across environments (θ was chosen uniformly between 1 and 100). The number of samples per environment were the same as the EMP dataset. To obtain similar mean counts as the real dataset, we set J = 1000 for both models 1 and 2, in order to vary θ from 1 to 100. These values are reasonable based on previous studies that estimated these parameters from microbiome data (Li and Ma, 2016). We included a down-sampling step to replicate the zero-inflated nature of the real dataset (on average there were only 96 ASVs per sample while there was a total of 22,014 ASVs in the entire EMP dataset). To replicate the sampling effect due to rarefaction, we first created a vector of all individuals from a single sample. We then selected 5000 individuals at random whose identities determined which ASVs were found in that sample. These neutrally-derived random matrices, null models 1 and 2, were plotted using the same plots (ASV:Genus vs number of genera) as the real EMP dataset and were then analysed using GLMMs with community diversity as a predictor of focal lineage diversity (fixed effect), with lineage identity and EMP sample ID as random effects. For Model 1, the slope was significantly negative (GLMM, Wald test, z=-9.807, P<2e-16). For Model 2, the null GLMM (including the intercept only) was significant, meaning that the community diversity has no significant effect on focal lineages diversity (Likelihood-ratio test between the model with the predictor and the intercept-only model, P=0.9399).
 
 To generate a null model for a metacommunity assembled by niche processes, null model 3 was made by sampling from a single Poisson distribution (λ = 0.01) for each element of the data matrix. We used the Poisson distribution as a sensitivity analysis compared to the ZSM, and found the two behave quite similarly (i.e. Model 1 and 3 produce qualitatively similar results). The probability of size zero was sufficiently large that the down-sampling step was not needed for this model. Next, DBD and EC effects were added to null model 3 according to the following procedure. An element was chosen at random in a sample and tested if it is empty or full (i.e. check the presence/absence of a particular ASV). If the element is full then the DBD algorithm fills an empty element chosen at random in the same sample, while the EC algorithm empties a filled element in the same sample. This is to mimic the effect of DBD creating a niche for a new ASV, or EC removing a niche based on the existing diversity. The strength of DBD or EC effects were determined by the percent of elements tested. These data were analysed with GLMMs to test the power of our models to detect DBD or EC (Table 2, Supplementary file 3 Section 2.1).
 
-## Rarefaction simulation
+### Rarefaction simulation
 
 We constructed a simple simulation in which each microbiome sample may differ in total diversity (e.g. in the observed range of genera) while maintaining a constant taxonomic ratio (e.g. ASV:genus ratio = 2). To mimic rarefaction, we then sampled a set number of sequencing reads from each synthetic community, assuming ASVs are sampled with equal probability and plotted the observed taxonomic ratio (Figure 2—figure supplement 19). This simple simulation is implemented in permute_ASVs_synthetic.pl.
 
-## Nucleotide sequence-based analysis
+### Nucleotide sequence-based analysis
 
 We clustered ASVs at decreasing levels of nucleotide identity, from 100% identical ASVs down to 75% identity (roughly equivalent to phyla [Konstantinidis and Tiedje, 2005]). We estimated focal cluster diversity as the mean number of descendants per cluster (e.g. number of 100% clusters per 97% cluster) and plotted this against the total number of clusters (97% identity in this example). This approach has the advantage of including sequences even if they come from unnamed taxa. For each of the six nucleotide divergence ratios tested, the relationship between total number of clusters and focal cluster diversity was positive (Figure 2—figure supplement 20), consistent with DBD and suggesting that the taxonomic analyses were qualitatively unbiased.
 
@@ -145,15 +913,15 @@ We note that diversity at level i (di) and at level i+1 (di+1/di) are not indepe
 
 The effect of community diversity on focal cluster diversity was also tested across different environments analysed separately. We modelled this relationship with linear, quadratic and cubic fits, and compared those models based on the adjusted R2 (Figure 2—figure supplements 21–26).
 
-## DBD variation across environments
+### DBD variation across environments
 
 We tested the variation of focal lineage diversity slopes across different environments by including EMPO 3 biome type as a fixed effect. We fitted a GLMM with the interaction between community diversity and environment type as a predictor of focal lineage diversity. All other random effects on intercept and slope were kept as in the previous GLMMs (Figure 3, Supplementary file 1 Section 3). DBD variation across environments was tested for Family:Order, Order:Class and Class:Phylum taxonomic ratios, as diversity slope variation by environment was statistically significant (likelihood-ratio test, p<0.05) for these ratios in the taxonomy-based models (Table 1).
 
-## Abiotic effects
+### Abiotic effects
 
 To test for the relative effect of biotic and abiotic environmental variables on focal lineage diversity across different taxonomic ratios, we used a separate GLMM, with Poisson error distribution and a log link function, for every ratio. We fitted the GLMM on a subset (~10%) of the whole dataset, 192 samples (from water: saline (19) and non-saline (44), surface: saline (42) and non-saline (19), sediment: saline (22) and non-saline (31), soil (8) and plant rhizosphere (7)), for which measurements of four key abiotic variables (temperature, pH, latitude and elevation) were available. As predictors of focal lineage diversity (fixed effects), we included non-focal community diversity and abiotic variables, as well as their interactions. All predictors were standardized to a mean of zero and a standard deviation of one to obtain comparable estimates. The GLMM had the same random effects as in the previous analysis, but only on the intercept for simplicity (Table 4, Supplementary file 1 section 4).
 
-## Soil dataset analysis
+### Soil dataset analysis
 
 We used the Delgado-Baquerizo et al., 2018 soil microbiome survey (237 samples from 18 countries) to further test the relative impacts of biotic versus abiotic drivers of diversity. Raw data and abiotic measurements were downloaded from Figshare (https://figshare.com/s/82a2d3f5d38ace925492; DOI: 10.6084/m9.figshare.5611321). 16S bioinformatic processing was performed using QIIME2 and Deblur with the same protocol as in Thompson et al., 2017. Raw data 16S rRNA gene (V3-V4 region), were processed by trimming the primers (341F/805R primer set) with qiime cutadapt trim-paired, then merged using qiime vsearch join-pairs. Sequences were quality filtered and denoised using Deblur with a trimming length of 400 bp. The resulting 400 bp Deblur BIOM table was filtered to keep only ASVs with at least 25 reads total over all samples and rarefied to a depth of 5000. Taxonomy was assigned with a Naive Bayes classifier trained on the V4-V3 region of 99% OTU Greengenes 13.8 sequences with qiime feature-classifier. We obtained a final dataset of 186 samples and 24,252 ASVs which was used as input for all statistical analysis as in the EMP dataset analysis. This data set included 14 environmental factors: aridity index (Aridity_Index), minimum and maximum temperature (MINT and MAXT), precipitation seasonality (PSEA), mean diurnal temperature range (MDR), ultra-violet (UV) radiation (UV_Light), net primary productivity (NPP2003_2015), soil texture (Clay_silt), pH; total C (Soil_C), N (Soil_N) and P (Soil_P) concentrations, C:N ratio (Soil_C_N_ratio) and Latitude.
 
@@ -163,10 +931,10 @@ We also fitted the same model but with the first three principal components (PCs
 
 Because of possible non-linear relationships between abiotic variables and diversity, GLMMs were fitted with a linear and a quadratic term for every abiotic variable. The quadratic terms were not significant, except for the ASV:genus ratio (Table 5; likelihood-ratio test, p<2.2e-16). The interaction terms were not significant except the interaction between diversity and PCs at Family:Order ratio (likelihood-ratio test, p=2.182e-05; Table 5, Supplementary file 4).
 
-## Defining residents, generalists, and migrants
+### Defining residents, generalists, and migrants
 
 We defined a genus-level community composition matrix as a matrix of 17 environments (rows) by 1128 genera (columns), with the matrix entries indicating the percentage of samples from a given environment in which each genus is present. We clustered the environmental samples based on their genus-level community composition using fuzzy k-means clustering. The clustering (cmeans function, package e1071 in R) was done on the ‘hellinger’ transformed data (decostand function, vegan R package). To identify resident genera to each cluster, we used indicator species analysis (Dufrene and Legendre, 1997) as implemented in the indval function (labdsv R package). We defined residents as genera with indval indices between 0.4 and 0.9, with permutation test p<0.05. Genera not associated with any cluster were considered generalists. We used principal component analysis (PCA) on the community composition matrix to visualize the clustering and the indicator genera (rda function, vegan R package) (Figure 4). We then ran a separate GLMM for each environmental cluster, with resident genus-level diversity (number of non-focal genera) as a predictor of focal genus diversity (ASV:Genus ratio) for resident, migrant (residents of one cluster found in a different cluster) and generalist genera. The fixed effect was specified as the interaction between diversity and a factor defining the genus-cluster association (with three levels: resident, migrant and generalist). Random effects on intercept and slope were kept as in the GLMMs described above.
 
-## Genome size analysis
+### Genome size analysis
 
 We chose a subset of genera represented by one or more sequenced genomes in the NCBI microbial genomes database (https://www.ncbi.nlm.nih.gov/genome/browse#!/prokaryotes/). For these genera, a representative genome size was assigned by selecting the genome with the lowest number of scaffolds (if no closed genomes were available) (Supplementary file 6). If multiple genomes were available with the same level of completion, the largest genome size was used, as smaller genomes could be artefacts of incomplete assembly which would bias the mean and median downward. Moreover, given the deletional bias in bacterial genomes (Kuo and Ochman, 2009a), the largest genome is likely more reflective of the ancestral genome size of the genus. Only genera with two or more ASVs in at least one sample were included in the analysis. Intracellular symbionts were excluded. We fitted a GLMM on the subset of data with known genome size (576 genera, ranging from ~1 to 15 Mbp) with the interaction between community diversity and genome size as a predictor of focal lineage diversity at the ASV:Genus level. All the other random effects on intercept and slope were kept as in the previous GLMMs (Supplementary file 1 section 6).

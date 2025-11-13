@@ -18,21 +18,21 @@
 
 ### Affiliations
 
-1. https://ror.org/03gds6c39 Center for Membrane Biology, Department of Biochemistry and Molecular Biology, The University of Texas Health Science Center at Houston McGovern Medical School Houston United States
-2. https://ror.org/05cz92x43 The Cain Foundation Laboratories, Jan and Dan Duncan Neurological Research Institute at Texas Children’s Hospital Houston United States
-3. https://ror.org/02pttbw34 Department of Neuroscience, Baylor College of Medicine Houston United States
-4. https://ror.org/008zs3103 Department of Chemical and Biomolecular Engineering, Rice University Houston United States
-5. https://ror.org/01r7awg59 Department of Physics and Biophysics Interdepartmental Group, University of Guelph Guelph Canada
-6. https://ror.org/02pttbw34 Department of Biochemistry and Molecular Biology, Baylor College of Medicine Houston United States
-7. https://ror.org/008zs3103 Systems, Synthetic, and Physical Biology Program, Rice University Houston United States
-8. https://ror.org/008zs3103 Department of Electrical and Computer Engineering, Rice University Houston United States
-9. https://ror.org/02pttbw34 Department of Molecular and Human Genetics, Baylor College of Medicine Houston United States
+1. Center for Membrane Biology, Department of Biochemistry and Molecular Biology, The University of Texas Health Science Center at Houston McGovern Medical School Houston United States ([ROR:03gds6c39](https://ror.org/03gds6c39))
+2. The Cain Foundation Laboratories, Jan and Dan Duncan Neurological Research Institute at Texas Children’s Hospital Houston United States ([ROR:05cz92x43](https://ror.org/05cz92x43))
+3. Department of Neuroscience, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+4. Department of Chemical and Biomolecular Engineering, Rice University Houston United States ([ROR:008zs3103](https://ror.org/008zs3103))
+5. Department of Physics and Biophysics Interdepartmental Group, University of Guelph Guelph Canada ([ROR:01r7awg59](https://ror.org/01r7awg59))
+6. Department of Biochemistry and Molecular Biology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+7. Systems, Synthetic, and Physical Biology Program, Rice University Houston United States ([ROR:008zs3103](https://ror.org/008zs3103))
+8. Department of Electrical and Computer Engineering, Rice University Houston United States ([ROR:008zs3103](https://ror.org/008zs3103))
+9. Department of Molecular and Human Genetics, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
 
 † Corresponding author
 
 ## Abstract
 
-Light-gated ion channels from protists (channelrhodopsins or ChRs) are optogenetic tools widely used for controlling neurons and cardiomyocytes. Multiplex optogenetic applications require spectrally separated molecules, which are difficult to engineer without disrupting channel function. Scanning numerous sequence databases, we identified three naturally blue-shifted ChRs from ancyromonads. They form a separate branch on the phylogenetic tree and contain residue motifs characteristic of anion ChRs (ACRs). However, only two conduct chloride, whereas the closely related Nutomonas longa homolog generates inward cation currents in mammalian cells under physiological conditions, significantly exceeding those by previously known tools with similar spectral maxima (peak absorption at ~440 nm). Measurements of transient absorption changes and pH titration of purified proteins combined with mutant analysis revealed the roles of the residues in the photoactive site. Ancyromonad ChRs could be activated by near-infrared two-photon illumination, a technique that enables the deeper-tissue optogenetic activation of specific neurons in three dimensions. Both ancyromonad ACRs allowed optogenetic silencing of mouse cortical neurons in brain slices. Ancyromonas sigmoides ACR ( Ans ACR) expression in cholinergic neurons enabled photoinhibition of pharyngeal muscle contraction in live worms. Overall, our results deepen the mechanistic understanding of light-gated channel function and expand the optogenetic toolkit with potent, blue-shifted ChRs.
+Light-gated ion channels from protists (channelrhodopsins or ChRs) are optogenetic tools widely used for controlling neurons and cardiomyocytes. Multiplex optogenetic applications require spectrally separated molecules, which are difficult to engineer without disrupting channel function. Scanning numerous sequence databases, we identified three naturally blue-shifted ChRs from ancyromonads. They form a separate branch on the phylogenetic tree and contain residue motifs characteristic of anion ChRs (ACRs). However, only two conduct chloride, whereas the closely related Nutomonas longa homolog generates inward cation currents in mammalian cells under physiological conditions, significantly exceeding those by previously known tools with similar spectral maxima (peak absorption at ~440 nm). Measurements of transient absorption changes and pH titration of purified proteins combined with mutant analysis revealed the roles of the residues in the photoactive site. Ancyromonad ChRs could be activated by near-infrared two-photon illumination, a technique that enables the deeper-tissue optogenetic activation of specific neurons in three dimensions. Both ancyromonad ACRs allowed optogenetic silencing of mouse cortical neurons in brain slices. Ancyromonas sigmoides ACR (AnsACR) expression in cholinergic neurons enabled photoinhibition of pharyngeal muscle contraction in live worms. Overall, our results deepen the mechanistic understanding of light-gated channel function and expand the optogenetic toolkit with potent, blue-shifted ChRs.
 
 ## Introduction
 
@@ -44,25 +44,85 @@ Here, we identified and characterized three ChR variants from bacterivorous ancy
 
 ## Results
 
-## Phylogeny, spectral sensitivity, and photon flux dependence
+### Phylogeny, spectral sensitivity, and photon flux dependence
 
 Our bioinformatic search identified ChR homologs in the ancyromonads Ancyromonas sigmoides, Fabomonas tropica, and Nutomonas longa; Ancoracysta twista, a predatory flagellate placed in the newly established supergroup Provora (Tikhonenkov et al., 2022); the diatom Odontella aurita; and Paraphysoderma sedebokerense, a chytrid-like fungus from the phylum Blastocladiomycota. Phylogenetic analysis placed the ancyromonad ChRs on a separate branch of the ACR tree together with their metagenomic homologs from the TARA Oceans database (Figure 1A). The A. twista and O. aurita homologs clustered with known stramenopile ACRs. The P. sedebokerense sequence showed only a distant homology to previously known ACRs. Figure 1—figure supplement 1 shows a protein alignment of their 7TM domains compared with GtACR1, the best-characterized ACR from the cryptophyte Guillardia theta (Govorunova et al., 2015; Li et al., 2019). All these sequences exhibit a non-carboxylate residue at the primary counterion position, corresponding to Asp85 in TM3 of Halobacterium salinarum bacteriorhodopsin (BR), marked by the red arrow in Figure 1—figure supplement 1, as found in all known ACRs. The second carboxylate in the photoactive site, contributed by TM7 and corresponding to Asp212 of BR, is replaced with Glu in the N. longa sequence, and with Gln in the P. sedebokerense sequence (the blue arrow in Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig1-v2.jpg)
+
+**Figure 1.:** (A) A maximum-likelihood phylogenetic tree of selected ChRs. The circles show bootstrap support from 40 to 100. (B) The photocurrent action spectra. The data points are the mean ± SEM values (n=14 cells for AnsACR, and 9 cells each for FtACR and NlCCR). (C) The absorption spectra of detergent-purified proteins. (D) The action spectra of photocurrents at –60 mV upon co-expression of AnsACR and Chrimson, compared to each gene expressed alone. The data points are the mean ± SEM values (n=14 cells each for the co-expression and AnsACR, and 4 cells for Chrimson). (E, F) The dependence of the peak current amplitude (E) and reciprocal time to the peak (F) on the photon flux density for the indicated ChRs activated at their respective λmax. The data points are the mean ± SEM values (n=8 cells for each variant).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The amino acid residues are colored according to their chemical properties. The residue ruler is according to the GtACR1 sequence. The lines show the transmembrane helices TM1-TM7 of GtACR1. The arrows point to the positions corresponding to Asp68 (black), Ser97 (red), and Asp234 (blue) of GtACR1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** In the left panels, the action spectra. The data points are the mean ± SEM values; n=6 cells for each variant. In the middle and right panels, the photocurrents recorded by manual patch clamping in the Cl- bath (middle) and Asp- bath (right) at the holding voltages increased in 20 mV increments from –60 mV. The dark cyan bars show the duration of illumination (500, 520, and 510 nm, respectively, for AtACR, OaACR1, and OaACR2).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Overlays of the absorption and action spectra from the main text Figure 1B and C.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A–E) Normalized photocurrent traces recorded from the indicated ChRs at –60 mV. The colored rectangles show the duration of illumination. The numbers are photon flux densities multiplied by 1016. (F) The dependence of desensitization, calculated as the peak minus end current divided by the peak current and multiplied by 100%, on the photon flux density. The data points are mean ± SEM (n=8 cells for each variant).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A–E) Normalized photocurrent traces recorded from the indicated ChRs at +20 mV. The colored rectangles show the duration of illumination. (F) Desensitization at the end of illumination. The symbols are data from individual cells, the lines are mean ± SEM, n = 6 cells for each variant.
 
 We expressed cDNAs encoding the 7TM domains of seven homologs fused to a C-terminal mCherry tag in human embryonic kidney (HEK293) cells and recorded photocurrents using manual patch clamping. All three ancyromonad ChRs generated robust photocurrents and showed maximal sensitivity in the blue spectral range (Figure 1B). Based on their ionic selectivities (see the next section), we named the A. sigmoides, F. tropica, and N. longa homologs AnsACR, FtACR, and NlCCR, respectively. The spectral sensitivity of the A. twista and O. aurita homologs was in the blue-green range (Figure 1—figure supplement 2, left). Partial replacement of Cl- in the bath with non-permeable aspartate shifted reversal potential (Vr) to more positive values, confirming their anion selectivity (Figure 1—figure supplement 2, middle and right). We named them AtACR, OaACR1, and OaACR2. However, their photocurrents were smaller than those of the ancyromonad homologs or exhibited strong desensitization (reduction of photocurrents during illumination), so we did not characterize them in more detail. No photocurrents were detected in cells transfected with the P. sedebokerense homolog, although its expression and membrane targeting were evident from the tag fluorescence. Therefore, we named this protein ParsR, where R means ‘rhodopsin’.
 
 Next, we expressed the constructs encoding ancyromonad ChRs in Pichia pastoris. We purified the proteins using a mild detergent, yielding 0.25, 0.35, and 0.15 mg purified protein per L culture for AnsACR, FtACR, and NlCCR, respectively. The absorption spectra of the purified proteins (Figure 1C) were slightly blue-shifted from the respective photocurrent action spectra (Figure 1—figure supplement 3), likely due to the presence of non-electrogenic cis-retinal-bound forms. The presence of such forms, explaining the discrepancy between the absorption and the action spectra, was verified by HPLC in KCRs (Tajima et al., 2023; Morizumi et al., 2023). To test the possibility of using AnsACR in multiplex optogenetics, we co-expressed it with the red-shifted CCR Chrimson (Hochbaum et al., 2014) fused to an EYFP tag in HEK293 cells. We measured the action spectrum of the net photocurrents with 4 mM Cl- in the pipette, matching the conditions in the neuronal cytoplasm (Doyon et al., 2016). Figure 1D, black shows that the direction of photocurrents was hyperpolarizing upon illumination with λ<500 nm and depolarizing at longer wavelengths. A shoulder near 520 nm revealed a FRET contribution from EYFP (Govorunova et al., 2020), which was also observed upon expression of the Chrimson construct alone (Figure 1D, red). Figure 1E and F show the dependence of the peak photocurrent amplitude and reciprocal peak time, respectively, on the photon flux density for ancyromonad ChRs and GtACRs. The current amplitude saturated earlier than the time-to-peak for all tested ChRs. Figure 1—figure supplement 4A–E shows normalized photocurrent traces recorded at different photon densities. Quantitation of desensitization at the end of 1-s illumination revealed a complex light dependence (Figure 1—figure supplement 4F). Figure 1—figure supplement 5 shows normalized photocurrent traces recorded in response to a 5-s light pulse of the maximal available intensity and the magnitude of desensitization at its end.
 
-## Characterization of ancyromonad ChRs by automated patch clamping
+### Characterization of ancyromonad ChRs by automated patch clamping
 
 We used the fully automated planar patch clamp platform SyncroPatch 384 to characterize ancyromonad ChRs’ photocurrents. This instrument uses KF-based internal and NaCl-based external solutions to promote gigaseal formation (Supplementary file 1). Figure 2A–C shows photocurrent traces evoked by 200 ms light pulses. The SyncroPatch enables unbiased estimation of the photocurrent amplitude because the cells are drawn into the wells without considering their tag fluorescence, unlike manual patch clamp studies in which the experimenter selects the fluorescent cells. Figure 2—figure supplement 1A, B shows that the mean AnsACR photocurrent measured by the SyncroPatch was significantly larger than the mean FtACR photocurrent, and the mean NlCCR photocurrent was significantly larger than that of Platymonas subcordiformis channelrhodopsin 2 (PsChR2), a previously known excitatory optogenetic tool with a similar blue-shifted spectrum (Govorunova et al., 2013; Chen et al., 2022).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Photocurrent traces recorded in response to 200 ms light pulses (470 nm) at voltages varied in 20 mV steps from –80 mV using the KF-based internal and NaCl-based external solutions. The dashed lines show the zero-current level. (D–F) The IV curves of the peak photocurrent (filled circles) and the current at the end of illumination (empty circles). The numbers in the parentheses are the numbers of cells sampled. (G) Comparison of the Vr at the photocurrent peak time (filled circles) and the end of illumination (empty circles). The p-values were determined by the two-tailed Wilcoxon signed-rank test; the number of cells sampled for each variant was the same as in panels D–F. (H–J) The Vr values in the indicated external solutions. The circles are the data from individual cells; the lines are the mean and SEM values.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Unbiased estimation of peak photocurrent amplitudes. The photocurrents were recorded at 20 mV for AnsACR and FtACR, and at –60 mV for NlCCR and PsChR2. *, p=0.0047; **, p=9.9E10-6 by the two-tailed, two-sample Kolmogorov-Smirnov test. (C, D) The Vr shifts measured upon replacing Na+ with NMDG+ in the external solution (C), and upon its acidification from pH 7.4–5.4 (D). In all panels, the symbols are the data from individual cells; the lines are the mean and SEM values; the numbers in brackets are the numbers of cells sampled.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The photocurrents were recorded by manual patch clamping in the Cl- bath (left), Asp- bath (middle), and NMDG+ bath (right) at the holding voltages increased in 20 mV increments from –60 mV. The blue bars show the duration of 470 nm illumination.
+
 The voltage dependencies of photocurrents (IV curves) are shown in Figure 2D–F. AnsACR and FtACR showed similarly negative Vr values, suggesting higher relative permeability to Cl- than F-, as earlier found in GtACRs by manual patch clamping (Govorunova et al., 2015). The Vr values of the peak current and that at the end of illumination were not significantly different by the two-tailed Wilcoxon signed-rank test (Figure 2G), indicating no change in the relative permeability during illumination. Unexpectedly, the NlCCR photocurrents reversed near 0 mV (Figure 2F and G). One reason for this behavior could be equal permeabilities of this ChR to Cl- and F-. However, when Cl- in the external solution was partially replaced with bulky, non-permeable aspartate, only AnsACR and FtACR showed substantial Vr shifts to more positive values, which confirmed their permeability to Cl-, but no such shift was detected in NlCCR (Figure 2H–J, red symbols). Control experiments conducted by manual patch clamping with the Cl--based pipette solution confirmed these observations (Figure 2—figure supplement 2). Upon replacing Cl- with NO3-, AnsACR and FtACR, but not NlCCR, showed Vr shifts to more negative values (Figure 2H–J, green), as did GtACRs examined by manual patch clamping (Govorunova et al., 2015), which indicated higher relative permeability to NO3- than to Cl-. FtACR exhibited a larger Vr shift in NO3- than AnsACR (P=2.6E10-5 by the two-tailed Mann-Whitney test). Replacing Na+ with N-methyl-D-gluconate (NMDG+) resulted in a negative Vr shift in NlCCR but not the other tested variants (Figure 2H–J, blue), suggesting that NlCCR is permeable to Na+. Figure 2—figure supplement 1C, D compares NlCCR with the typical cation-selective C. reinhardtii channelrhodopsin 2 (CrChR2), assessed using the same assay. Acidifying the external solution to pH 5.4 or replacing Na+ with K+ did not affect the Vr of any ancyromonad ChR (Figure 2, gray and violet). We conclude that only AnsACR and FtACR are anion-selective, but NlCCR conducts monovalent metal cations despite its sequence homology to the other two variants.
 
-## Channel gating and photochemical transitions under single-turnover conditions
+### Channel gating and photochemical transitions under single-turnover conditions
 
 Photocurrents evoked by continuous light pulses do not accurately reflect channel kinetics because different ChR molecules absorb photons at different times. Further complications result from photon absorption by photocycle intermediates. We conducted manual patch clamp recordings upon 6-ns laser flash excitation to analyze channel gating. AnsACR and FtACR photocurrents exhibited biphasic rise and decay (Figure 3A and D), as the earlier characterized GtACR1 (Sineshchekov et al., 2015). The IV curves of all kinetic components revealed the same Vr values (Figure 3—figure supplement 1A, B), meaning no ion selectivity changes occur during the single-turnover photocycle. Next, we analyzed transient absorption changes in detergent-purified AnsACR and FtACR. In contrast to GtACR1, we could not find a clear indication of the accumulation of a blue-shifted L intermediate. After an initial (unresolved) decay of a K-like intermediate, red-shifted absorbance temporally increased in both ancyromonad ACRs, reaching a maximum at 100–200 μs (Figure 3B and E, red), that is in the time domain of fast channel opening. This red-shifted intermediate could be a long-lived K or an unusual red-shifted L. In FtACR, an additional slower increase in the red-shifted absorbance likely reflected the formation of an O-like intermediate (Figure 3E, red). Accumulation of the M intermediate absorbing in the UV range was only 10 (AnsACR) or 2 times (FtACR) slower than channel opening (Figure 3C and F), although in GtACR1, it was 50 times slower (Sineshchekov et al., 2015). Also, in contrast to prior observations in GtACR1, no temporal correlation was found between M formation and fast channel closing and between M decay and slow channel closing in ancyromonad ACRs. NlCCR, the most blue-shifted among the ancyromonad ChRs we identified, has negligible absorption at 532 nm, the excitation laser’s wavelength; therefore, its photochemical conversions could not be probed with our flash photolysis setup. In contrast to AnsACR and FtACR, NlCCR’s laser-flash-induced photocurrent kinetics showed single exponential opening and closing in Cl- and did not change upon its substitution with Asp- in the bath solution (Figure 3—figure supplement 1C and D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig3-v2.jpg)
+
+**Figure 3.:** (A, D) Photocurrent traces of AnsACR (A) and FtACR (D) evoked by 6-ns laser flashes recorded by manual patch clamping at the holding voltages increased in 30-mV steps from -60 mV. (B, E) Transient absorption changes recorded at the indicated wavelengths from detergent-purified proteins. (C, F) Comparison of the photocurrent kinetics (red, left axis) and the M intermediate kinetics (black, left axis). In all panels, the thin, solid lines are experimental recordings, and the thick, dashed lines are multiexponential approximations. The numbers are the τ values of the individual kinetic components.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B, and D). The voltage dependence of the amplitudes of the channel closing and opening components estimated by multi-componential approximation of the laser-flash-evoked photocurrents recorded from the indicated ancyromonad ChRs. (C) Laser-flash evoked photocurrent traces of NlCCR recorded at the holding voltages increased in 30 mV steps from –60 mV in the Cl--based bath (black) and at –60 mV in the Asp--based bath (red). The thin lines are experimental recordings, and the thick dashed lines are multiexponential approximations. The numbers are the τ values of the individual kinetic components.
+
 While all ACRs have a non-carboxylate residue homologous to Asp85 in BR, the second counterion homologous to Asp212 in BR remains protonatable (Figure 1—figure supplement 1, red arrow). To estimate the pKa of this counterion, we performed pH-titration of the absorption spectra (Figure 4A–C). The titration curves revealed two transitions in all ancyromonad ChRs. Acidification caused a transition to longer peak absorption wavelengths, as expected upon protonation of the counterion, with pKa1s~3.9, 2, and 3.4 for AnsACR, FtACR, and NlCCR, respectively. The maximum amplitude of this transition in AnsACR (~8 nm) exactly corresponded to the 8 nm red shift of the photocurrent action spectrum in the AnsACR_D226N mutant (Figure 4D). The D226N mutation did not suppress photocurrent but simplified its kinetics (Figure 4E). Instead of the biphasic opening and closing observed in the WT, only two exponentials were sufficient to fit the D226N mutant’s current, one for opening and one for closing. This observation suggested the role of Asp226 in channel gating, which was confirmed by analysis of the voltage dependence of the closing τ (Figure 4F). Upon shifting to positive voltages, both components of channel closing accelerated in the WT, but the single-exponential closing slowed in the mutant, which suggests that oppositely directed charge movements control channel closing in the WT and the mutant.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig4-v2.jpg)
+
+**Figure 4.:** (A) pH titration of λmax (black filled circles, left axis) and maximal absorption changes (black empty circles, right axis) in wild-type AnsACR. (B, C) pH titration of λmax in FtACR (B) and NlCCR (C). (D) The photocurrent action spectrum of the AnsACR_D226N mutant (red) compared to the WT (black). The data points are the mean ± SEM values (n=8 cells). (E) Photocurrent traces of AnsACR_D226N mutant evoked by 6-ns laser flashes recorded by manual patch clamping at the holding voltages increased in 30 mV steps from –60 mV. The wild-type photocurrent trace recorded at –60 mV is shown in black for comparison. The thin lines are experimental recordings, and the thick dashed lines are multiexponential approximations. The numbers are the τ values of the individual kinetic components. (F) The voltage dependence of the decay components τ in the AnsACR_D226N mutant (red) and the WT (black). (G) pH titration of λmax in AnsACR_G86E mutant. (H) Transient absorption changes monitored at the wavelength of the M intermediate absorption in the AnsACR_G86E mutant (red) compared to the WT (black). (I) Laser-flash-induced photocurrents of the AnsACR_G86E mutant recorded at the external pH 7.4 (black) and 5.4 (red). The arrow shows the increase in the channel current upon acidification.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The lines are the absorption spectra of detergent-purified AnsACR at the indicated Cl- concentrations.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The voltage dependence of the fast current at pH 7.4 (black) and 5.4 (red). (B) The voltage dependence of the channel current at pH 5.4 in the Cl--based bath (black) and the Asp--based bath (blue). (C) The difference spectra obtained upon alkalization on the purified mutant (red) and WT (black). (D) pH titration of the absorbance difference at 297 nm in the purified mutant (red) and WT (black).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Laser-flash evoked photocurrent traces of the mutant recorded at the holding voltages increased in 30 mV steps from -60 mV (red). A trace from the WT at -60 mV (black) is shown for comparison. The thin lines are experimental recordings, and the thick dashed lines are multiexponential approximations. The numbers are the τ values of the individual kinetic components. (B) The voltage dependence of the amplitudes of the kinetic components obtained by multiexponential approximation of the laser-flash-evoked photocurrents.
 
 Further acidification caused a transition to shorter wavelengths with similar pKa2s in both purified ancyromonad ACRs and only a slightly lower pKa2 in NlCCR (Figure 4A–C). It most probably reflects binding Cl- in the photoactive site, as in archaeal rhodopsins (Shimono et al., 2000b). On the other hand, in contrast to Natronomonas pharaonis halorhodopsin (Váró et al., 1996), no blue spectral shift was detected in detergent-purified AnsACR at neutral pH upon an increase in the Cl- concentration (Figure 4—figure supplement 1), which argued against Cl- binding in the RSB region under these conditions.
 
@@ -72,31 +132,55 @@ Strong alkalization caused simultaneous depletion of absorption in the visible r
 
 The glutamate in the middle of TM2 corresponding to Glu68 of GtACR1 is conserved in most ACRs, including FtACR, but is replaced with Gln in AnsACR (Figure 1—figure supplement 1, black arrow). Introducing the Q48E mutation in AnsACR accelerated channel closing and slowed channel opening, making the photocurrent rise and decay monophasic (Figure 4—figure supplement 3A and B).
 
-## The retinal-binding pocket and color tuning
+### The retinal-binding pocket and color tuning
 
 The λmax of rhodopsins is regulated by the retinal chromophore geometry and steric and electrostatic interactions of the chromophore with amino acid residues of the retinal-binding pocket (Hoffmann et al., 2006; Karasuyama et al., 2018). Surprisingly, NlCCR, the most blue-shifted among ancyromonad ChRs, features three residues typical of red-shifted microbial rhodopsins (Figure 5A). The first is Phe at the primary counterion position (Asp85 in BR), also found in RubyACRs from Labyrinthulea, the most red-shifted ChRs so far identified (Govorunova et al., 2020). The residues homologous to BR’s Met118 near the β-ionone ring and Ala215 preceding the RSB lysine in the polypeptide chain are responsible for red-shifted absorption in many microbial rhodopsins (Shimono et al., 2000a; Engqvist et al., 2015; Oda et al., 2018; Oppermann et al., 2024) but are conserved in all three blue-absorbing ancyromonad ChRs. In GtACR1 (λmax 515 nm; Govorunova et al., 2015; Sineshchekov et al., 2016), the only ACR with published atomic structures (Kim et al., 2018; Li et al., 2019), the corresponding residues are Ser97, Cys133, and Cys237 (Figure 5B). As expected, the S97F, C133M, and C237A mutations red-shifted the GtACR1 spectrum (Figure 5C). The opposite F104S, M143C, and A242C mutations at the corresponding sites in the RubyACR from Hondaea fermentalgiana (HfACR1) caused large blue spectral shifts (Figure 5D). However, the corresponding mutations F85S, M141C, and A236C red-shifted the NlCCR spectrum (Figure 5E). The same paradoxical behavior was observed upon mutation of the Met118 homolog to Val, which blue-shifted the HfACR1 spectrum but red-shifted the ancyromonad ChR spectra (Figure 5F–H). Replacement of the Ala215 homolog with Cys or Ser did not change the AnsACR and FtACR spectra (Figure 5—figure supplement 1A, B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig5-v2.jpg)
+
+**Figure 5.:** (A) Amino acid residues of the retinal-binding pocket tested by mutagenesis in this study. (B) The corresponding residues in the GtACR1 structure (6edq). (C–K) The photocurrent action spectra of the indicated mutants compared to the respective WTs. The data points are the mean ± SEM values (the n values are provided in Figure 5—source data 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The photocurrent action spectra of the indicated mutants compared to the respective WTs. The data points are the mean ± SEM values.
 
 In blue-shifted ChRs such as PsChR2 (Govorunova et al., 2013) and Klebsormidium nitens channelrhodopsin (KnChR) (Tashiro et al., 2021), the position of BR’s Met118 is occupied by Gly or Ala (Figure 5A), which, together with the Ala four residues downstream (BR’s Gly122), rotates the β-ionone ring out of the plane of the polyene chain, shrinking the p-conjugation and blue-shifting the spectrum (Wang et al., 2025). The Ala corresponding to BR’s Gly122 is also found in AnsACR and NlCCR (Figure 5A), but the AnsACR_M134A/G and NlCCR_M141A/G mutations did not change the spectra, nor did the FtACR_M140G_V144A mutation (Figure 5—figure supplement 1A–C). These observations suggest that the residue geometry and/or interactions in the retinal-binding pocket in ancyromonad ChRs differ from the earlier studied microbial rhodopsins.
 
 The residue position corresponding to BR’s Leu93 is the color switch between blue- and green-absorbing proteorhodopsins (BPRs and GPRs; Man et al., 2003). AnsACR exhibits a Gln residue in this position, as do BPRs, but FtACR has Leu, as do GPRs, and NlCCR has Met (Figure 5A). The FtACR_L96Q and NlCCR_M93Q mutations blue-shifted the spectra 20 and 7 nm, respectively (Figure 5I and J), indicating that this residue position contributes to color tuning in ancyromonad ACRs. NlCCR, the most blue-shifted among ancyromonad ChRs, differs from AnsACR and FtACR at the positions corresponding to Ser89 and Glu233 (NlCCR numbering), and from FtACR, also at the position of Pro235 (the corresponding residues in GtACR1 are Thr101, Asp234, and Leu236, Figure 5A). The S89T, E233D, and P235I mutations red-shifted the NlCCR spectrum (Figure 5K), indicating that these three positions contribute to the blue shift of wild-type NlCCR compared with AnsACR and FtACR. However, the T90S mutation did not change the AnsACR spectrum, and the D226E mutation and a combination of the two mutations caused red spectral shifts in AnsACR (Figure 5—figure supplement 1D). Supplementary file 2 contains the λ values of the half-maximal amplitude of the long-wavelength slope of the spectrum, which can be estimated more accurately from the action spectra than the λ of the maximum.
 
-## Two-photon excitation
+### Two-photon excitation
 
 Optical manipulation of neuronal activity in dense tissue commonly relies on two-photon (2P) excitation, which is based on the nearly simultaneous absorption of two infrared photons, equivalent to the absorption of one photon in the visible range (Emiliani et al., 2022). To determine the 2P activation range of AnsACR, FtACR, and NlCCR, we conducted raster scanning using a conventional 2P laser, varying the excitation wavelength between 800 and 1080 nm (Figure 6—figure supplement 1). All three ChRs generated detectable photocurrents with action spectra showing maximal responses at ~925 nm for AnsACR, 945 nm for FtACR, and 890 nm for NlCCR (Figure 6A). These wavelengths fall within the excitation range of common Ti:Sapphire lasers, which are widely used in neuroscience laboratories and can be tuned between ~700 nm and 1020–1300 nm. To assess desensitization, cells expressing AnsACR, FtACR, or NlCCR were illuminated at the respective peak wavelength of each ChR at 15 mW for 5 s. GtACR1 and GtACR2, previously used in 2P experiments (Forli et al., 2018; Mardinly et al., 2018), were included for comparison. The normalized photocurrent traces recorded under these conditions are shown in Figure 6B–F. The absolute amplitudes of 2P photocurrents at the peak time and at the end of illumination are shown in Figure 6G and H, respectively. All five tested variants exhibited comparable levels of desensitization at the end of illumination (Figure 6I).
 
-## Optogenetic inhibition of cortical neurons in mouse brain slices
+![Figure 6.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig6-v2.jpg)
+
+**Figure 6.:** (A) The 2P photocurrent action spectra. The data points are the mean ± SEM values (n=5 cells for each variant). (B–F) The mean normalized photocurrent traces recorded upon 2P excitation from the indicated ChR variants (GtACR1 and GtACR2 are included for comparison) at +20 mV in the Cl--based external solution (n=6 cells for each variant). The illumination (the duration of which is shown as the bars on top) was 15  mW at the λmax for each variant. (G, H) The amplitude of photocurrent measured at the peak time (G) and at the end of 5 s illumination (H). (I) Desensitization at the end of illumination. In G–I, the symbols are the data from individual cells, the lines are mean ± SEM values (n=6 cells for each variant). For more detail, see Materials and methods.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) The dependence of the photocurrent rise on the quadratic light power. The data points are the mean ± SEM (n=5 cells for each variant). A second-order polynomial function was fit to the data. The dashed lines show a linear approximation of the initial portion of the curve.
+
+### Optogenetic inhibition of cortical neurons in mouse brain slices
 
 To test the silencing efficiencies of AnsACR and FtACR in mouse brain slices, we selectively expressed their 7TM domains fused with EYFP in the layer 2/3 pyramidal neurons of the somatosensory cortex by in utero electroporation at embryonic day 15. We prepared acute brain slices from 4- to 6-week-old mice, and EYFP fluorescence was observed in the layer 1, layer 2/3, and layer 5, indicating clear AnsACR-EYFP and FtACR-EYFP expression in dendrites, somata, and axons, respectively (Figure 7—figure supplement 1A). We performed whole-cell current clamp recordings from AnsACR- or FtACR-expressing neurons (for solution compositions, see Materials and methods). AnsACR- and FtACR-expressing neurons showed the resting membrane potential, input resistance, and capacitance (Figure 7—figure supplement 1B) similar to the typical values of untransfected cortical neurons (Xue et al., 2014; Chen et al., 2020). When positive currents were injected into the somata to excite neurons, photoactivation of AnsACR and FtACR suppressed the current-evoked action potentials, demonstrating the potency of these proteins as optogenetic silencers of mouse cortical neurons (Figure 7). We also observed that at rest or when a small negative current (e.g. –0.1 nA) was injected, the neurons could generate a single action potential at the beginning of photostimulation (Figure 7A and B), possibly caused by axonal depolarization, as reported in GtACR-expressing neurons (Mahn et al., 2018; Messier et al., 2018).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig7-v2.jpg)
+
+**Figure 7.:** (A, B) Representative membrane voltage traces of neurons expressing AnsACR (A) and FtACR (B) in response to –0.1 nA (left), 0 nA (middle), and 0.5 nA (right) injections without (top) and with (bottom) 470 nm light pulses (power density of 38.7 mW mm–2). (C, D) The frequencies of action potentials evoked by different current injections with (blue) and without (black) photoactivation of AnsACR (C) and FtACR (D). For all panels, data points from male mice are indicated by squares and female mice by circles. One male and one female mouse were used for each of the AnsACR and FtACR experiments. Data are mean ± SEM. **, p≤0.01 for comparison between dark and light stimulation at 0.2–0.5 nA current injection by the multiple Wilcoxon matched-pairs signed rank test with Benjamini, Krieger, and Yekutieli’s corrections.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative fluorescence images of 300-µm-thick brain slices expressing tdTomato and EYFP fused to the C termini of AnsACR (left) and FtACR (right) in cortical layer 2/3 pyramidal neurons. The axons of ACR+ layer 2/3 pyramidal neurons ramify in layer 5. L, layer. (B) Resting membrane potentials (left), input resistances (middle), and capacitances (right) of AnsACR+ and FtACR+ neurons. (C) Representative traces of light-evoked excitatory post-synaptic currents (EPSCs) recorded from ACR- pyramidal neurons in layer 2/3 in response to 10 ms 470 nm light pulses (power density of 38.7 mW mm–2). (D) Summary data of experiments in (C). The peak currents of light-evoked EPSCs were measured from the averaged current traces of three trials. In all panels, the data points from male mice are indicated by squares and female mice by circles. One male and one female mouse were used for each of the AnsACR and FtACR experiments. The data points are the mean ± SEM values.
+
 Earlier studies have shown that photoactivation of GtACRs induces axonal depolarization and synaptic transmission in some ACR+ neurons owing to the high intracellular Cl- concentration at the axons (Mahn et al., 2018; Messier et al., 2018). Indeed, when we recorded from ACR- neurons in the electroporated cortical region, we found that photoactivation of either AnsACR- or FtACR-induced excitatory post-synaptic currents (Figure 7—figure supplement 1C, D), similar to other tested light-gated Cl- channels.
 
-## Optogenetic inhibition of pharyngeal function in live C. elegans
+### Optogenetic inhibition of pharyngeal function in live C. elegans
 
 To test AnsACR as an optogenetic inhibitory tool in the context of an intact behaving animal, we expressed the encoding construct fused to a C-terminal EYFP tag in the C. elegans cholinergic neurons using the unc-17 promoter (a scheme of the expression construct is shown in Figure 8A). C. elegans feeds on bacteria by rhythmic contractions and relaxations (pumping) of its pharynx. The cholinergic pharyngeal neurons, primarily MC neurons, entrain the pharyngeal muscle rhythm (Trojanowski et al., 2016). Neuronal and muscular electrical activity leading to pharyngeal contractions can be monitored non-invasively by electropharyngeogram (EPG) recording (Raizen and Avery, 1994). An EPG contains transients reflecting pharyngeal muscle action potentials (Figure 8B), the frequency of which can be easily quantified. In the presence of 10 mM serotonin required to maintain regular pharyngeal pumping, its frequency in the dark was not significantly different in the transgene and wild-type worms (4.07 ± 0.05 and 4.19 ± 0.08 Hz, respectively, mean ± SEM, n=26 transgenic and 11 wild-type worms, respectively; the p-value by the two-tailed Mann-Whitney test is 0.21), indicating that AnsACR expression did not affect the pharyngeal function in the darkness. Figure 8C shows representative EPG recordings from a transgenic worm fed on bacteria supplemented with all-trans-retinal. The onset of 470 nm illumination caused an immediate inhibition of pumping in such transgene worms but not in the WT worms fed on the same bacteria or transgene worms in the absence of retinal (Figure 8D). The C. elegans genome encodes LITE-1 and GUR-3 UV/blue light receptors (unrelated to ChRs) responsible for photoinhibition of pharyngeal pumping at high light levels (Bhatla et al., 2015). However, no photoinhibition was detected in the absence of retinal in either wild-type or transgenic worms. This indicates that the irradiance used in our experiments was insufficient to stimulate these endogenous photoreceptors. The magnitude of the AnsACR-mediated photoinhibition depended on the irradiance (Figure 8E). The maximal irradiance (2.1 mW mm–2) completely abolished the pumping for 15 s in all tested worms (n=13). In five of 13 worms, individual action potentials were observed during the second half of the 30 s illumination period, an indication of adaptation. Two independently created transgenic lines showed the same degree of photoinhibition (Figure 8E, filled and empty symbols). The photoinhibition was fully reversible: after switching off the maximal-irradiance light, the pumping frequency returned to the pre-illumination level with τ~9 s.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/106508/elife-106508-fig8-v2.jpg)
 
-**Figure 8.:** C. elegans expressing AnsACR in the cholinergic neurons.(A) A scheme of the genetic construct for AnsACR expression in the cholinergic neurons. HA, homology arms. (B) A zoomed-in section of an EPG recording. AP, action potential; TB, terminal bulb. The double-headed arrow shows the interval between two successive R1 spikes used to calculate pharyngeal pumping frequency. (C) Electropharyngeogram recordings from an AnsACR-expressing worm illuminated with 470 nm light at the indicated irradiances. The blue bar shows the duration of illumination. (D) The frequency of the pharyngeal pumping calculated from recordings as shown in A. The symbols are the mean values, and the error bars are the SEM values (n=11 worms for the WT and 13 worms per condition for the transgenic worms). The numbers are the irradiance values in mW mm–2; ret is retinal. (E) The dependence of the pharyngeal pumping frequency on the irradiance calculated from the 30–60 s segment of the data shown in B. The symbols are the data from individual worms; the lines are the mean and SEM values. The empty and filled symbols for the transgenic worms show the data from two independently created transgenic lines.Figure 8—source data 1.
+**Figure 8.:** (A) A scheme of the genetic construct for AnsACR expression in the cholinergic neurons. HA, homology arms. (B) A zoomed-in section of an EPG recording. AP, action potential; TB, terminal bulb. The double-headed arrow shows the interval between two successive R1 spikes used to calculate pharyngeal pumping frequency. (C) Electropharyngeogram recordings from an AnsACR-expressing worm illuminated with 470 nm light at the indicated irradiances. The blue bar shows the duration of illumination. (D) The frequency of the pharyngeal pumping calculated from recordings as shown in A. The symbols are the mean values, and the error bars are the SEM values (n=11 worms for the WT and 13 worms per condition for the transgenic worms). The numbers are the irradiance values in mW mm–2; ret is retinal. (E) The dependence of the pharyngeal pumping frequency on the irradiance calculated from the 30–60 s segment of the data shown in B. The symbols are the data from individual worms; the lines are the mean and SEM values. The empty and filled symbols for the transgenic worms show the data from two independently created transgenic lines.
 
 ## Discussion
 
@@ -114,7 +198,234 @@ In summary, our characterization of ancyromonad channelrhodopsins (ChRs) reveals
 
 ## Materials and methods
 
-## Bioinformatics and molecular biology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Ancyromonas sigmoides)</td>
+      <td>AnsACR</td>
+      <td>GenBank</td>
+      <td>PQ657777</td>
+      <td>Encodes anion-selective ChR</td>
+    </tr>
+    <tr>
+      <td>Gene (Fabomonas tropica)</td>
+      <td>FtACR</td>
+      <td>GenBank</td>
+      <td>PQ657778</td>
+      <td>Encodes anion-selective ChR</td>
+    </tr>
+    <tr>
+      <td>Gene (Nutomonas longa)</td>
+      <td>NlCCR</td>
+      <td>GenBank</td>
+      <td>PQ657779</td>
+      <td>Encodes cation-selective ChR</td>
+    </tr>
+    <tr>
+      <td>Gene (Guillardia theta)</td>
+      <td>GtACR1</td>
+      <td>GenBank</td>
+      <td>KP171708</td>
+      <td>Encodes anion-selective ChR</td>
+    </tr>
+    <tr>
+      <td>Gene (Guillardia theta)</td>
+      <td>GtACR2</td>
+      <td>GenBank</td>
+      <td>KP171709</td>
+      <td>Encodes anion-selective ChR</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AnsACR_pcDNA3.1 (plasmid)</td>
+      <td>This study</td>
+      <td>Addgene #232598</td>
+      <td>PcDNA3.1 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FtACR_pcDNA3.1 (plasmid)</td>
+      <td>This study</td>
+      <td>Addgene #232599</td>
+      <td>PcDNA3.1 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NlCCR_pcDNA3.1 (plasmid)</td>
+      <td>This study</td>
+      <td>Addgene #232600</td>
+      <td>PcDNA3.1 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-AnsACR-EYFP (plasmid)</td>
+      <td>This study</td>
+      <td>Addgene #238347</td>
+      <td>pAAV-CAG backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG- FtACR-EYFP (plasmid)</td>
+      <td>This study</td>
+      <td>Addgene #238348</td>
+      <td>pAAV-CAG backbone</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>CMC0016</td>
+      <td>Competent cells for gene cloning</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pichia pastoris)</td>
+      <td>SMD1168</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C17500</td>
+      <td>Used for production of recombinant ChRs</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td>Used for 1P excitation patch clamp experiments</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293A</td>
+      <td>Invitrogen</td>
+      <td>R70507</td>
+      <td>Used for 2P excitation patch clamp experiments</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus), female</td>
+      <td>ICR (CD-1)</td>
+      <td>BCM Center for Comparative Medicine</td>
+      <td>ICR (CD-1)</td>
+      <td>Used for brain slice recordings</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus), male</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #000664</td>
+      <td>Used for brain slice recordings</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Caenorhabditis elegans)</td>
+      <td>COP2831</td>
+      <td>This study</td>
+      <td>[pNU3704 ([uncp-17::AnsACR::EYFP::tbb-2u, unc-119(+))] II; unc-119(ed3) III</td>
+      <td>Transgenic line expressing AnsACR in cholinergic neurons</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Caenorhabditis elegans)</td>
+      <td>COP2832</td>
+      <td>This study</td>
+      <td>[pNU3704 ([uncp-17::AnsACR::EYFP::tbb-2u, unc-119(+))] II; unc-119(ed3) III</td>
+      <td>Transgenic line expressing AnsACR in cholinergic neurons</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange XL</td>
+      <td>Agilent Technologies</td>
+      <td>#200516</td>
+      <td>Site-directed mutagenesis kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine LTX with Plus Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#15338100</td>
+      <td>Used for HEK293 cell transfection</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FuGENE HD transfection reagent</td>
+      <td>Promega</td>
+      <td>#E2311</td>
+      <td>Used for HEK293A cell transfection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>All-trans-retinal</td>
+      <td>Millipore-Sigma</td>
+      <td>#116-31-4</td>
+      <td>Chromophore for ChRs, added after transfection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zeocin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#R25001</td>
+      <td>Used for selection of transformant P. pastoris clones</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MegAlign Pro</td>
+      <td>DNASTAR Lasergene</td>
+      <td>17.1.1</td>
+      <td>Used for sequence alignment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQ-TREE</td>
+      <td>Los Alamos National Laboratory</td>
+      <td>2.1.2</td>
+      <td>Used for phylogeny analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iTOL</td>
+      <td>EMBL</td>
+      <td>7</td>
+      <td>Used for phylogenetic tree visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger</td>
+      <td>2.4.1</td>
+      <td>Molecular visualization software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp</td>
+      <td>Molecular Devices</td>
+      <td>10.7</td>
+      <td>Used for data acquisition and analysis in patch clamp experiments</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin Pro</td>
+      <td>OriginLab Corporation</td>
+      <td>2016</td>
+      <td>Used for analysis and visualization of patch clamp data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Logpro</td>
+      <td>Zenodo</td>
+      <td>Logpro</td>
+      <td>Used for logarithmic noise reduction in photocurrent traces</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bioinformatics and molecular biology
 
 The ChR homologs from Ancyromonas sigmoides strain B-70 (CCAP1958/3), Fabomonas tropica strain NYK3C, Nutomonas longa strain CCAP 1958/5 (Torruella et al., 2015; Brown et al., 2018), and Ancoracysta twista strain TD-1 (Janouškovec et al., 2017) were identified in the EukProt V3 database (Richter et al., 2022) using Sequnceserver BLASTP (Priyam et al., 2019). The A. sigmoides, F. tropica, and A. twista ChR sequences are also available from Dr. Andrey Rozenberg’s ChR database (Rozenberg, 2024). The metagenomic homolog 1 was found by Sequenceserver BLASTP in the TARAeuCatV2 database (Sunagawa et al., 2015) accessed at the KAUST Metagenomic Analysis Platform (KMAP; Alam et al., 2021). The metagenomic homolog 2 was found using the search mode of BLASTP in the MATOU database (Marine Atlas of Tara Oceans Unigene plus metaG eukaryotes) (Villar et al., 2018) with the query sequence of NlCCR. The Odontella aurita strain CCMP816 homologs GHBW01284417 and GHBW01118808 were identified by TBLASTN in the National Center of Biological Information (NCBI) transcriptome shotgun assembly (TSA) project GHBW00000000. The Paraphysoderma homolog (ParsR) was found in the P. sedebokerense strain JEL821 v. 1.0 genome assembly (Amses et al., 2022) by the annotation text search using bacteriorhodopsin as a keyword at the Mycocosm portal (Ahrendt et al., 2023).
 
@@ -122,21 +433,21 @@ The protein alignment was created using the MUSCLE algorithm with default parame
 
 For expression in human embryonic kidney (HEK293) cells, mammalian codon-optimized polynucleotides encoding amino acid residues 1–265 of the A. sigmoides homolog, 1–268 of the F. tropica homolog, 1–272 of the N. longa coding homolog, 1–243 of the A. twista homolog, 1–241 of the GHBW01284417 O. aurita homolog, 1–242 of the GHBW01118808 O. aurita homolog, and 1–336 of the P. sedebokerense homolog were synthesized, fused to a C-terminal mCherry tag, and cloned into the pcDNA3.1(+) vector (Invitrogen, Cat. #V19520) at GenScript. Mammalian codon-optimized polynucleotides encoding amino acid residues 1–295 of GtACR1 (Genbank Acc. #KP171708), 1–291 of GtACR2 (Genbank Acc. #KP171709), and 1–350 of Chlamydomonas noctigama ChR1 known as Chrimson (Genbank Acc. #KF992060) were fused to a C-terminal EYFP (enhanced yellow fluorescent protein) tag and cloned into the same vector backbone. For expression in Pichia, the constructs were fused with the C-terminal 8His-tag and cloned in the pPICZalpha-A vector (Invitrogen, Cat. #V19520). A QuikChange XL site-directed mutagenesis kit (Agilent Technologies, Cat. #200516) was used to introduce point mutations. For expression in the mouse cortical neurons, AnsACR and FtACR were tagged with EYFP at the C-terminus and cloned into the pAAV-CAG vector.
 
-## HEK293 cell culture and transfection
+### HEK293 cell culture and transfection
 
 No cell lines from the list of known misidentified cell lines maintained by the International Cell Line Authentication Committee or non-human cell lines were used in this study. HEK293 cells used in one-photon (1 P) excitation experiments were obtained from the American Type Culture Collection (ATCC, Cat. #CRL-1573), authenticated by short tandem repeats (STR) profiling at ATCC, and tested negative for mycoplasma contamination by PCR analysis. The cells were plated on 2 cm diameter plastic dishes 48–72 hrs before experiments, grown for 24 hr, and transfected with 10 μl of Lipofectamine LTX with Plus Reagent (Thermo Fisher, Cat. #15338100) using 3 μg DNA per dish for manual patch clamping, and 6 μg DNA per dish for automated patch clamping. All-trans-retinal (Millipore-Sigma, Cat. #116-31-4) was added immediately after transfection at the final concentration of 5 µM.
 
 For 2P excitation experiments, HEK293A cells (Invitrogen, Cat. # R70507) were authenticated by STR profiling at the M.D. Anderson Cancer Center Cytogenetics and Cell Authentication Core (CCAC) tested negative for mycoplasma contamination by PCR analysis and plated on 30–70  kDa poly-d-lysine-coated 12 mm circular coverslips (Carolina cover glass #0, Cat. #633009) in 24-well plates (P24-1.5H-N, Cellvis) at 30% confluence, transfected with 1.2  µL FuGENE HD transfection reagent (Promega, Cat. #E2311) using 200  ng DNA per well 48–72  hr before measurements and supplemented with all-trans-retinal as described above.
 
-## Automated whole-cell patch clamp recording from HEK293 cells
+### Automated whole-cell patch clamp recording from HEK293 cells
 
 Automated patch clamp recording was conducted at room temperature (21°C) with a SyncroPatch 384 (Nanion Technologies) based on a Biomek i5 automated liquid handler (Beckman Coulter), using NPC-384T S-type chips (Nanion, Cat. #222101) with one hole per well, as described earlier (Govorunova et al., 2022b). Transfected cells (48–72 hr after transfection) were dissociated using TrypLE Express, diluted with CHO-S-SFM-II medium (both from Thermo Fisher, Cat.# 12604013 and 31033020, respectively), and resuspended in External Physiological solution (Nation, Cat.# 08 3001). The compositions of this and other solutions used in automated patch clamp recordings and the corresponding liquid junction potential (LJP) values calculated using the ClampEx LJP calculator are listed in Supplementary file 1. The voltages in all IV curves for HEK293 cells studied under 1 P excitation in this manuscript were corrected for LJPs; the holding voltage values in the figures showing traces correspond to the amplifier output before the LJP subtraction. Illumination was provided with LUXEON Z Color Line light-emitting diodes (LEDs) Cat.# LXZ1-PB01 (470±10 nm) arranged in a 6×16 matrix. The forward LED current was 900 mA (which corresponded to the irradiance of ~2 mW mm–2), the illumination duration was 200ms (limited by the LED duty cycle), and the interval between successive light pulses was 60 s. The LEDs were driven by a derivative of CardioExcyte 96 SOL (Nanion, Cat. #191003) and controlled by Biomek commands. PatchControl384 v. 2.3.0 (Nanion Technologies) software was used for data acquisition at a 5 kHz sampling rate (200 μs per point). The photocurrent amplitudes at the peak and the end of illumination were calculated using DataControl384 software v. 2.3.0 (Nanion Technologies). Further analysis was performed using the Origin Pro 2016 software (OriginLab Corporation).
 
-## Manual patch clamp recording using 1P excitation in HEK293 cells
+### Manual patch clamp recording using 1P excitation in HEK293 cells
 
 Manual patch clamp recordings were performed with an Axopatch 200B amplifier (Molecular Devices). The pipette solution contained (in mM) KCl 130, MgCl2 2, HEPES 10 pH 7.4, and the bath solution contained (in mM) NaCl 130, CaCl2 2, MgCl2 2, glucose 10, HEPES 10 pH 7.4. In experiments to test the relative permeability of ChRs for Cl-, NaCl in the bath was replaced with Na aspartate, and in experiments in cells co-transfected with AnsACR and Chrimson, KCl in the pipette solution was replaced with K gluconate. The low-pass filter of the amplifier output was set to 2 kHz. The signals were digitized with a Digidata 1440 A (Molecular Devices) at a 250 kHz sampling rate (4 μs per point) in experiments with laser flashes, and at a 5 kHz sampling rate (200 μs per point) in experiments with continuous light pulses using pClamp 10.7. Patch pipettes with 2–3 MΩ resistances were fabricated from borosilicate glass. Laser excitation was provided by a Minilite Nd:YAG laser (532 nm, pulse width 6 ns, energy 5 mJ; Continuum). The current traces were logarithmically filtered using Logpro software (Spudich, 2022). Curve fitting was performed using Origin Pro software. Continuous light pulses were provided by a Polychrome V light source (T.I.L.L. Photonics GMBH) in combination with a mechanical shutter (Uniblitz Model LS6, Vincent Associates; half-opening time 0.5ms). The action spectra of photocurrents were constructed by calculating the initial slope of photocurrent recorded in response to 15 ms light pulses at the intensity <25 µW mm–2, corrected for the quantum density measured at each wavelength, and normalized to the maximal value. To analyze the dependence of photocurrents on the photon flux density, 1 s light pulses were applied with 60 s dark intervals starting from the lowest density. Calibrated neutral density filters (Newport, Cat. #FSQ-OD50, #FSQ-OD100, #FSQ-OD150, and #FSQ-OD200) were used to adjust the density.
 
-## Manual patch clamp recording using 2P excitation in HEK293A cells
+### Manual patch clamp recording using 2P excitation in HEK293A cells
 
 2P excitation of AnsACR, FtACR, NlCCR, GtACR1, and GtACR2 expressed in HEK293A cells was conducted using an inverted microscope with multiphoton capability (A1R-MP, Nikon Instruments) at room temperature (23°C). A coverslip seeded with the transfected cells was placed in a custom glass-bottom chamber based on Chamlide EC (Live Cell Instrument) with a glass bottom made with a 24×24  mm cover glass #1 (Erie Scientific, Cat. #89082–270). Cells were perfused continuously with the external solution as described in the 1 P excitation section. Whole-cell voltage-clamp recordings were performed using a MultiClamp 700B amplifier (Molecular Devices). Cells were held at −20  mV for power dependency and spectral measurements, and at +20 mV for desensitization measurements. The holding voltages were compensated for the 4.4  mV LJP calculated using the ClampEx v.11.1 (Molecular Devices) built-in calculator. The signals were digitized with an Axon Digidata 1550B1 Low Noise system with a HumSilencer (Molecular Devices), and the current was recorded at 10  kHz using pClamp. The near-IR excitation was generated by a titanium:sapphire femtosecond laser (Chameleon Ultra II, Coherent) with a repetition rate of 80 MHz and a tuning range between 680 and 1,080  nm. Laser pulses were not pre-compensated for dispersion in the microscope optical path. Laser power was tuned using an acousto-optic modulator and delivered to the sample plane through a 40×0.95-numerical aperture (NA) objective (CFI Plan Apochromat Lambda, Nikon Instruments). Scanning across 40.96×40.96 μm regions-of-interest was achieved using resonant scanning at 33.3 Hz.
 
@@ -144,23 +455,23 @@ To determine the 2P action spectra of AnsACR, FtACR, and NlCCR, the excitation w
 
 For desensitization experiments, cells expressing AnsACR, FtACR, NlCCR, GtACR1, and GtACR2 were illuminated near their respective peak wavelengths: AnsACR (920  nm), FtACR (960  nm), NlCCR (920  nm), GtACR1 (1040  nm), and GtACR2 (940  nm) at 15  mW for 5  s. Current traces were low-pass filtered at 100  Hz and, for presentation purposes, downsampled by substituting an average value for each 100 data points. The FtACR trace was additionally smoothed by the 5-point Savitzky-Golay algorithm in Origin. Peak currents were quantified as the maximal currents over the 5 s traces. End currents were calculated as the mean current over the final 0.1 s of the 5 s photoactivation pulse.
 
-## Expression and purification of ancyromonad ACRs from Pichia pastoris
+### Expression and purification of ancyromonad ACRs from Pichia pastoris
 
 The plasmids carrying the expression constructs were linearized with Sac I and delivered into the P. pastoris strain SMD1168 (Thermo Fisher, Cat. # C17500) by electroporation. A single colony resistant to 0.25  mg/ml zeocin (Thermo Fisher, Cat. #R25001) was picked and inoculated into buffered complex glycerol medium, after which the cells were transferred to buffered complex methanol (0.5%) medium supplemented with 5  μM all-trans-retinal (Millipore-Sigma, Cat. #116-31-4) and grown at 30°C with shaking at 230  rpm. After 24  hr, the yellow-colored cells were harvested by centrifugation at 5000 × g for 10  min, and the cell pellets were resuspended in 100  ml ice-cold buffer A (20  mM HEPES, pH 7.4, 150  mM NaCl, 1  mM EDTA, 5% glycerol) and lysed by either French press or bead beater. After centrifugation at low speed (5000 × g for 10  min) to remove cell debris, membrane fractions were pelleted at 190,000 × g for 1  hr using a Ti45 Beckman rotor. The membranes were suspended in Buffer B (350  mM NaCl, 5% glycerol, 20  mM HEPES, pH 7.5) with 1  mM phenylmethylsulfonyl fluoride and solubilized with 1% n-dodecyl-β-D-maltoside (DDM; Anatrace, Cat. # D310) for 1  hr at 4°C with shaking. Undissolved content was removed after ultracentrifugation using a Ti45 rotor at 110,000 × g for 1  hr. The supernatant supplemented with 15  mM imidazole was incubated with nickel-nitrilotriacetic acid resin (Qiagen, Cat. # 30210) for 1  hr with shaking at 4°C. The resin was washed step-wise using 15  mM and 40  mM imidazole in Buffer B supplemented with 0.03% DDM. The protein was eluted with 400  mM imidazole and 0.03% DDM in buffer B. Protein fractions were pooled and concentrated using a 50 kDa MWCO Amicon Ultra Centrifugal Filter (Millipore-Sigma, Cat. # UFC9050), flash-frozen in liquid nitrogen and stored at −80°C until use.
 
-## Absorption spectroscopy and flash photolysis
+### Absorption spectroscopy and flash photolysis
 
 Absorption spectra of detergent-purified protein samples were recorded using a Cary 4000 spectrophotometer (Varian). Photoinduced absorption changes were measured with a laboratory-constructed crossbeam apparatus. Excitation flashes were provided by a Minilite II Nd:YAG laser (532 nm, pulse width 6 ns, energy 5 mJ; Continuum). Measuring light was from a 250 W incandescent tungsten lamp and a McPherson monochromator (model 272, Acton). Absorption changes were detected with a Hamamatsu Photonics photomultiplier tube (model R928) combined with a second monochromator of the same type. Signals were amplified by a low noise current amplifier (model SR445A; Stanford Research Systems) and digitized with a GaGe Octopus digitizer board (model CS8327, DynamicSignals LLC), with a maximal sampling rate of 50 MHz. Logarithmic data filtration was performed using the GageCon program (Sineshchekov et al., 2023).
 
-## Mice
+### Mice
 
 All procedures to maintain and use mice were approved by the Institutional Animal Care and Use Committee at Baylor College of Medicine (protocol AN-6544). Mice were maintained on a 14 hr:10 hr light:dark cycle with regular mouse chow and water ad libitum. The temperature was maintained at 21–25°C and humidity at 40–60%. Experiments were performed during the light cycle. Female ICR (CD-1) mice were purchased from Baylor College of Medicine Center for Comparative Medicine, and male C57BL/6 J (JAX #000664) mice were obtained from Jackson Laboratory. Both male and female mice were used in the experiments.
 
-## In utero electroporation
+### In utero electroporation
 
 Female ICR mice were crossed with male C57BL/6 J mice to obtain timed pregnancies. In utero electroporation was used to deliver the transgenes (Xue et al., 2014). To express AnsACR or FtACR in the layer 2/3 pyramidal neurons of the somatosensory cortex, pAAV-CAG-AnsACR-EYFP or pAAV-CAG-FtACR-EYFP (2.5 μg μl–1 final concentration) was mixed with pCAG-tdTomato (0.1 μg μl–1 final concentration) and Fast Green (Sigma-Aldrich, 0.01% final concentration) for injection. On embryonic day 15, pregnant mice were anesthetized, and a beveled glass micropipette (tip size 100 μm outer diameter, 50 μm inner diameter) was used to penetrate the uterus and the embryo skull to inject ~1.5 μl DNA solution into one lateral ventricle. Five pulses of current (voltage 39 V, duration 50ms) were delivered at 1 Hz with a Tweezertrode (5 mm diameter) and a square-wave pulse generator (Gemini X2, BTX Harvard Bioscience). The electrode paddles were positioned in parallel with the brain’s sagittal plane. The cathode contacted the side of the brain ipsilateral to the injected ventricle to target the somatosensory cortex. Transfected pups were identified by the transcranial fluorescence of tdTomato with an MZ10F stereomicroscope (Leica) 1 day after birth.
 
-## Brain slice electrophysiology and imaging
+### Brain slice electrophysiology and imaging
 
 Mice were used at the age of 4–6 weeks for acute brain slice electrophysiology experiments. Mice were anesthetized by an intraperitoneal injection of a ketamine and xylazine mix (80 mg kg–1 and 16 mg kg–1, respectively) and perfused transcardially with cold (0–4°C) slice cutting solution containing 80 mM NaCl, 2.5 mM KCl, 1.3 mM NaH2PO4, 26 mM NaHCO3, 4 mM MgCl2, 0.5 mM CaCl2, 20 mM d-glucose, 75 mM sucrose and 0.5 mM sodium ascorbate (315 mOsm l–1, pH 7.4, saturated with 95% O2/5% CO2). Brains were removed and sectioned in the cutting solution with a VT1200S vibratome (Leica) to obtain 300 μm coronal slices. Slices were incubated in a custom-made interface holding chamber containing slice cutting solution saturated with 95% O2/5% CO2 at 34°C for 30 min and then at room temperature for 20 min to 10 hr until they were transferred to the recording chamber. We performed recordings on submerged slices in artificial cerebrospinal fluid (ACSF) containing 119 mM NaCl, 2.5 mM KCl, 1.3 mM NaH2PO4, 26 mM NaHCO3, 1.3 mM MgCl2, 2.5 mM CaCl2, 20 mM d-glucose and 0.5 mM sodium ascorbate (305 mOsm l–1, pH 7.4, saturated with 95% O2/5% CO2, perfused at 3 ml min–1) at 30–32°C. For whole-cell recordings, a K+-based pipette solution containing 142 mM K+ gluconate, 10 mM HEPES, 1 mM EGTA, 2.5 mM MgCl2, 4 mM ATP-Mg, 0.3 mM GTP-Na, 10 mM Na2-phosphocreatine (295 mOsm l–1, pH 7.35) was used. Membrane potentials reported in Figure 7, Figure 7—figure supplement 1 were not corrected for LJP, which was 12.5 mV as measured experimentally. Neurons were visualized with video-assisted IR differential interference contrast imaging, and fluorescent neurons were identified by epifluorescence imaging under a water immersion objective (×40, 0.8 NA) on an upright SliceScope Pro 1000 microscope (Scientifica) with an IR-1000 CCD camera (DAGE-MTI). Data were acquired at 10 kHz and low-pass filtered at 4 kHz with an Axon Multiclamp 700B amplifier and an Axon Digidata 1440 A Data Acquisition System under the control of Clampex 10.7 (Molecular Devices). Data were analyzed offline using Clampfit (Molecular Devices). For photostimulation, blue light was emitted from a collimated 470 nm light-emitting diode (LED; M470L3, Thorlabs) to stimulate AnsACR- or FtACR-expressing neurons. The LEDs were driven by a LED driver (Thorlabs LEDD1B) under the control of an Axon Digidata 1440 A Data Acquisition System and Clampex 10.7. The light was delivered through the reflected light fluorescence illuminator port and the ×40 objective.
 
@@ -168,13 +479,13 @@ To evaluate the inhibition efficiency, action potentials of AnsACR- or FtACR-exp
 
 After electrophysiology recordings, fluorescent images of the brain slices were acquired on an Axio Zoom.V16 Fluorescence Stereo Zoom Microscope (Zeiss) and processed using MATLAB2024b (MathWorks). Images were taken from 20 brain slices of two male and two female mice.
 
-## Generation of transgenic C. elegans strains and EPG recording
+### Generation of transgenic C. elegans strains and EPG recording
 
 The transgenic C. elegans strains COP2831 and [pNU3704 ([uncp-17::AnsACR::EYFP::tbb-2u, unc-119(+))] II; unc-119(ed3) III expressing AnsACR in cholinergic neurons were created by InVivo Biosystems using the Mos1-mediated Single Copy Insertion (MosSCI) method, which enables integrating the transgene as a single-copy insertion at a designated locus in the C. elegans genome (Frøkjær-Jensen, 2015). Unc-119 rescue cassette insertion was used to bring the transgene into a Mos1 target locus on chromosome II and create rescue of the function of the unc-119(ed3) III mutant allele. The Mos1 locus was selected for position-neutral effects and to avoid the gene coding regions, introns, and transcription factor binding sites. The integration of the transgene was confirmed by PCR.
 
 The transgenic and Bristol N2 wild-type worms were grown at 20°C on E. coli strain OP50 lawns in the absence or presence of 10 μM (final concentration) all-trans-retinal (Millipore-Sigma, Cat. # 116-31-4), which was mixed with the bacteria before seeding Nematode Growth Medium (NGM) plates. EPG recordings were performed from intact worms sucked into a pipette (Raizen and Avery, 1994). The pipettes (200 kΩ resistance) were pulled from borosilicate glass and filled with the External Physiological solution, the composition of which is specified in the above section. The worms were transferred to the same solution supplemented with 10 mM serotonin before the measurements. The data were acquired in the voltage clamp mode of the same Axopatch 200B amplifier used for manual patch clamp recording from HEK293 cells and the same software. The data obtained in two independently created strains were pooled together. The photoexcitation was provided by the Polychrome V light source described above. The frequency of the R1-spikes was calculated using the Event Detection by the Threshold Search function of ClampFit after applying a 2 Hz high-pass digital filter. Further analysis was performed using the Origin Pro 2016 software.
 
-## Reproducibility and statistics
+### Reproducibility and statistics
 
 Plasmids encoding different ChR variants were randomly assigned to transfect identical cell batches. Three independent transfections were performed on different experimental days; the data obtained were pooled together. In automated patch clamp studies, cells were blindly selected by the machine and randomly drawn into the wells. For an unbiased estimation of the photocurrent amplitude, the data from wells that formed seals with a resistance <500 MΩ were excluded. For a more accurate estimation of the Vr values by plotting the IV curves, wells with a seal resistance <500 MΩ and photocurrents of the absolute magnitude <50 pA at –80 mV were excluded. In manual patch clamp experiments, the cells were selected for patching by inspecting their tag fluorescence; non-fluorescent cells and cells in which no GΩ seal was established or lost during recording were excluded from the analysis. Recordings with the access resistance (Ra) >20 MΩ were excluded from the analysis. In automated and manual patch clamp experiments, the photocurrent traces recorded from different cells transfected with the same construct were considered biological replicates (reported as n values). These values indicate how often the experiments were performed independently. In experiments using continuous light pulses, only one photocurrent trace was recorded from one cell for each condition. To increase the signal-to-noise ratio for computer approximations of the photocurrent traces under single-turnover conditions, six replicates recorded from the same cells were considered technical replicates and averaged for further analysis.
 

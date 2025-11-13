@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Structural Bioinformatics and Computational Biochemistry, Department of Biochemistry, University of Oxford Oxford United Kingdom
-2. https://ror.org/052gg0110 The Kavli Institute for Nanoscience Discovery, University of Oxford Oxford United Kingdom
+1. Structural Bioinformatics and Computational Biochemistry, Department of Biochemistry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. The Kavli Institute for Nanoscience Discovery, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -24,6 +24,22 @@ Cells require an external lipid membrane to separate their internal cytoplasm fr
 
 POT family transporters belong to the major facilitator superfamily (MFS) and share a conserved topology of two six-helix bundles that form the functional transport domain, their N-and C-termini facing the cytoplasm. (Newstead et al., 2011). They operate via an alternating access mechanism encoded in four inverted topology repeats, progressively reorienting the N-and C-terminal bundles to cycle through outwards-facing (OF), occluded (OCC), and inwards-facing (IF) states (Radestock and Forrest, 2011). Since the first structure of a POT family member was published (Newstead et al., 2011), many procaryotic (Solcan et al., 2012; Guettou et al., 2013; Doki et al., 2013; Lyons et al., 2014; Guettou et al., 2014; Zhao et al., 2014; Fowler et al., 2015; Boggavarapu et al., 2015; Beale et al., 2015; Parker et al., 2017; Martinez Molledo et al., 2018; Ural-Blimke et al., 2019; Minhas and Newstead, 2019; Stauffer et al., 2022; Kotov et al., 2023) and plant (Parker and Newstead, 2014; Sun et al., 2014) homologues have been structurally and biochemically characterised, all in IF states with varying degrees of occlusion (see Figure 1a for an overview of available POT structures and their conformational states). Several residues have been suggested to be involved in proton transfer, including a partially conserved histidine on TM2 (H87; residue numbers refer to PepT2, if not specified otherwise) (Terada et al., 1996; Fei et al., 1997; Chen et al., 2000; Omori et al., 2021; Parker et al., 2021) and two conserved glutamates on TM1 (E53 and E56) (Jensen et al., 2012; Doki et al., 2013; Aduri et al., 2015), while simulations have helped our understanding of proton-transfer processes and conformational changes (Parker et al., 2017; Selvam et al., 2018; Batista et al., 2019; Li et al., 2022). However, the details of the molecular mechanism of alternating access in POTs, particularly regarding the coupling of conformational changes, substrate binding, and proton movement to each other, remain unclear.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic overview of the conformational diversity of available mammalian POT structures. Intermediate positions between states indicate partial gate opening. (b) Alphafold-predicted inwards-facing (IF) HsPepT2 structure (top view), highlighting potential inter-bundle extracellular gate interactions. (c) Outwards-facing (OF) Cryo-EM structure of apo RnPepT2 (7NQK, bottom view) (Parker et al., 2021), highlighting potential inter-bundle intracellular gate interactions. (d) Ala-Phe substrate binding pose, representative cluster frame of 1 µs molecular dynamics (MD) simulation from 7NQK structure with added ligand, for setup details see Materials and methods. Purple dotted lines represent salt-bridge contacts, orange dotted lines other polar contacts. (e) ExxER motif salt-bridge cluster, representative cluster frame of 1 µs MD simulation from 7NQK structure.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The inwards-facing (IF), partially occluded (OCC) cryo-EM structure (7PMY) moves towards an occluded state via closure of the intracellular gate. However the extracellular gate partially opens in the process. Rep 1 also displays a partial helical unfolding near the intracellular gate (see provided coordinate files in the supplementary data). (b) Alphafold-based IF embeddings 1 and 3 explore a range of IF conformations while maintaining a stable extracellular gate, whereas rep 2 partially opens the extracellular gate. (c) The outwards-facing (OF) cryo-EM structure (7NQK) remains stable with a tight intracellular gate.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Five replicates of multiple-walker metadynamics along the Base-CV, starting from the Alphafold inwards-facing (IF) equilibration rep 1. Black crosses indicate potential occluded (OCC) states picked around a Base-CV value of 2 nm and at a timestep of around 20 ns. (b) Equilibrations (three per metadynamics replicate) of the candidate OCC states in 100 ns unbiased molecular dynamics (MD). Histograms of trajectory projections onto the Base-CV are shown as violin plots, arrows link the first and final frames. The grey shaded area corresponds to the range of Base-CV values sampled in our outwards-facing (OF) simulation. Rep 1 is a stable OCC state, whereas the other replicates display partial intracellular-gate opening.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Histograms from pooled triplicates of 1 µs molecular dynamics (MD) as violin plots in the top row, starting from alphafold-derived inwards-facing (IF) and Cryo-EM derived outwards-facing (OF) conformations. H87↔S321 and R206↔D342 are always formed in the IF state but not in the OF state, while K64↔D317 and D170↔K462 show a preference for the IF and OF states, respectively but are not formed in all trajectory frames. (b) Triplicate time series of the H87↔S321 and K64↔D317 interactions in the IF state, showing how the former is a tight interaction, while the latter is unstable and only transiently formed.
+
 Cryo-EM and Alphafold 2 have recently provided views of mammalian POTs in conformations spanning from OF via inward-facing-partially occluded to fully-open IF (Parker et al., 2021; Killer et al., 2021; Shen et al., 2022; Jumper et al., 2021). From these structures emerges a picture where the intracellular gate is constituted by broad close-packing of hydrophobic residues on TM 4, 5, 10, and 11, with possible stabilisation from the conserved D170–K642 salt-bridge. The extracellular gate appears to be spread along the cleft between the N-and C-terminal bundles, with contributions from the H87 (TM 2) – S321 (TM 7) polar interaction network as well as the R206 (TM 5) – D342 (TM 8) and K64 (TM 1) – D317 (TM 7) salt bridges (Figure 1b). This is intriguing, because the mammalian H87 residue is only conserved in some prokaryotic homologues, and R206–D342 just among mammalian POTs. We speculate based on this feature that the extracellular gating mechanism could be less conserved than POT alternating access in general. As for the intracellular gating mechanism, an involvement of the D170–K642 salt bridge has been suggested, and the OF structure shows close-packing of several hydrophobic residues (F184, Y183, F187, L630, and Y634) that constrict access to the binding site from the intracellular side (Figure 1c; Parker et al., 2021). It is not known thus far how the opening of the intracellular gate (i.e. the OCC→IF transition) is triggered, and how it is coupled to proton movement and the presence of substrate.
 
 POTs accommodate their substrates in a highly conserved binding pocket, interfacing between an acidic patch on the C-terminal bundle and a basic patch on the N-terminal bundle (Figure 1c). For di-peptides, the N-terminus is coordinated by E622 (TM 10) together with N192 (TM 5) and N348 (TM 8), while the C-terminus engages R57 (TM 1, or the equivalent arginine (R27) residue in PepT1) as well as Y94 (TM 2). Another conserved tyrosine, Y61 (TM 1), hydrogen-bonds to features of the peptide backbone.(Lyons et al., 2014; Martinez Molledo et al., 2018; Killer et al., 2021). Tri-peptides may adopt a similar orientation as di-peptides (Guettou et al., 2014), or sit vertically in the transporter binding pocket (Lyons et al., 2014), although it has been suggested that this vertical electron density could alternatively be explained by a bound HEPES molecule (Martinez Molledo et al., 2018). Considering the consensus structural interaction pattern, we decided to investigate primarily the role of E622 and R57 in holding the substrate, and also note that R57 is part of the highly conserved E53xxER motif (Figure 1d; Newstead, 2017). The second glutamate in this motif (E56) in particular has been linked to proton coupling experimentally (Jensen et al., 2012). Since R57 interacts with both the ExxER glutamates and the substrate C-terminus, we hypothesise that it may play an important role in substrate–proton coupling.
@@ -32,9 +48,69 @@ In this study, we use extensive unbiased and enhanced-sampling MD simulations (t
 
 ## Results
 
-## Unbiased MD identifies extra and intracellular gate opening triggers
+### Unbiased MD identifies extra and intracellular gate opening triggers
 
 We began our computational investigation by embedding PepT2 structures (using the sequence of the rat homologue) in the OF (Parker et al., 2021), IF (alphafold prediction, Jumper et al., 2021), and inwards-facing partially occluded (Killer et al., 2021) conformations in 3:1 POPE:POPG membranes (Figure 1—figure supplement 1, details in Materials and methods). While we were able to obtain stable wide-open OF and IF simulation boxes, the OCC state required further attention as the MD simulations from the inwards-facing, partially-occluded structure showed embedding artifacts, including extracellular-gate instability and intracellular gate hydrophobic collapse (Figure 1—figure supplement 1a). We, therefore, opted to derive an OCC state using metadynamics simulations in 5 replicates (Figure 1—figure supplement 2, further details in Materials and methods), using stability in unbiased MD to select the best among the obtained candidates. The OCC state thus developed is validated by the further work in this paper, showing it to be a stable conformational basin that is functionally occluded in that it can open both towards OF and IF in different protonation state conditions (Figures 2—4).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig2-v1.jpg)
+
+**Figure 2.:** (a) Illustration of the collective variables (CVs) used to quantify extra-and intracellular gate opening, consisting of inter-bundle centre-of-mass distances between the helical tips (top 11 residues) and bases (bottom 11 residues). (b) + (c) Triplicate 1 μs-molecular dynamics (MD) simulations starting from occluded (OCC), showing the effects of different protonation and substrate binding states, projected onto the (b) Tip-CV and (c) Base-CV, respectively. Violin plots are trajectory histograms, arrows link the CV values of the first and last frames.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Triplicate 1 μs-molecular dynamics (MD) simulations starting from occluded (OCC), showing the effects of different protonation and substrate binding states, projected onto the (a) Base-collective variables (CV) and (c) Tip-CV, respectively. Violin plots are trajectory histograms, arrows link the CV values of the first and last frames. Intracellular gate ﬂexibility is suppressed by conditions that favour extracellular gate opening and vice versa.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Violin plots are trajectory histograms, arrows link the CV values of the first and last frames. Trajectories which displayed significant extracellular gate opening are highlighted in purple. Spontaneous extracellular gate opening requires H87 protonation, and the disruption of the R206↔D342 salt bridge also makes a significant contribution, either by mutation or protonation.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Free energy profiles from metadynamics simulations (eight walkers) along the Tip-collective variables (CV), starting simulations from the occluded (OCC) (total sampling 1.7 μs) or outwards-facing (OF) state (total sampling 860 ns). Solid lines are the free energy estimates using the second half of the data only, shaded area is the standard deviation of free energy estimates with respect to sequential data chunks. The disparity between the curves indicates a significant hysteresis problem, favouring the initial state of the respective metadynamics run. (b) Steered MD (SMD) runs between OF and OCC states, biasing the heavy-atom replica-exchange umbrella sampling (RMSD) to the respective target state, shown as projections along the tip-CV. Metastable OCC and OF states are formed that remain stable in 50 ns unbiased molecular dynamics (MD). (c) REUS along the tip-CV with starting conformations picked to be equidistant in the CV from two SMD runs. Sampling was using 48 windows for a total of 4.4 μs (OCC→OF path) and 6.1 μs (OF→OCC path). Solid lines are PMFs calculated using all sampling, the shaded areas are error ranges obtained by omitting either the first 40% or the last 40% of sampling. The disparity between the curves indicates a significant hysteresis problem, favouring the initial state of the respective SMD path-generation run.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The central line is calculated using all sampling, whereas the shaded areas are enclosed by curves derived from omitting the first 40% or the last 40% of sampling, giving a sense of apparent convergence (while substantial inter-replicate differences remain). (a) OCC↔OF transition, standard protonation states. Distinct occluded (OCC) and outwards-facing (OF) basins with separating barrier. (b) OCC↔OF transition, H87 and D342 protonated. The OCC basin and the separating barrier largely disappear. (c) OCC↔IF transition, standard protonation states. Distinct OCC basin and raised inwards-facing (IF) plateau. (d) OCC↔IF transition, E53 protontaed. The IF plateau and the barrier are lowered with respect to OCC.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** TM-helix CA-atoms are shown as spheres, coloured blue for the N-terminal bundle and orange for the C-terminal bundle, while arrows show magnitude and direction. For the OCC↔OF transition, PC 1 corresponds to the gating motion, while PC 2 is a cleft-sliding movement. For OCC↔IF, PC 1 corresponds to the gating motion, while PC 2 is a twisting movement. See Videos 1–4 for animated versions of the same representations.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig3-v1.jpg)
+
+**Figure 3.:** (a) 2D-PMFs from replica-exchange umbrella sampling (REUS) starting with Morphing Endstates by Modelling Ensembles with iNdependent TOpologies (MEMENTO) paths, in different protonation states of candidate extracellular gating residues. (b) Projection of the 2D-PMFs in part a onto PC 1 using Boltzmann reweighting. Shaded areas indicate convergence errors as the range of PMF values for a given CV value obtained with the first 40%, the last 40%, and 100% of sampling included (after alignment to the 100% curve). H87 and D342 form an additive extracellular gate, where H87 protonation changes the relative occluded (OCC)–outwards-facing (OF) state energies as well as the transition barrier, while D342 protonation only contributes in the transition region. Note that the individual PMFs are only determined by our REUS approach up to additive constants, and are shown aligned here at the OF state for convenience of comparison.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Solid lines are apo PMFs, dashed lines are ala-phe substrate-bound and color-matched to the respective apo PMF. Note that the individual PMFs are only determined by our replica-exchange umbrella sampling (REUS) approach up to additive constants, and are shown aligned here at the outwards-facing (OF) state for convenience of comparison.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) H87 interactions with D317, S321, and N657. Protonation of H87 replaces the S321 interaction by an interaction with D317. (b) D342 interactions with R206 and Q340. The tight salt bridge D342–R206 is disrupted by D342 protonation, but the residues still interact in the occluded (OCC) state via hydrogen bonds.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The PMF using all data is shown in black.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Black crosses indicate the Morphing Endstates by Modelling Ensembles with iNdependent TOpologies (MEMENTO)-derived REUS starting frames. Using the lower force constant (see Materials and methods) gives good overlap in the basin regions while the transition region is undersampled. Using the higher force constant gives good overlap in the transition region while the basins are not sampled widely enough. Combining all windows results in good overlap across the 2D-collective variable (CV) space.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig4-v1.jpg)
+
+**Figure 4.:** (a) 2D-PMFs from replica-exchange umbrella sampling (REUS) starting with Morphing Endstates by Modelling Ensembles with iNdependent TOpologies (MEMENTO) paths, in different protonation states of candidate intracellular gate-controlling residues. (b) Projection of the 2D-PMFs in part a onto PC 1 using Boltzmann reweighting. Shaded areas indicate convergence errors as the range of PMF values for a given collective variable (CV) value obtained with the first 40%, the last 40%, and 100% of sampling included (after alignment to the 100% curve). E53 and E622 protonation have additive and approximately equal effects on driving the OCC→IF transition. Note that the individual PMFs are only determined by our REUS approach up to additive constants, and are shown aligned here at the IF state for convenience of comparison.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Solid lines are apo PMFs, dashed lines are ala-phe substrate-bound and color-matched to the respective apo PMF. Note that the individual PMFs are only determined by our replica-exchange umbrella sampling (REUS) approach up to additive constants, and are shown aligned here at the inwards-facing (IF) state for convenience of comparison.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The PMF using all data is shown in black.
 
 Equipped with models of the protein conformations required for PepT2 alternating access (OF, OCC, and IF), we ran triplicate sets of 1 µs-long MD simulations in a range of conditions. To decide which conditions to probe apart from the apo, standard protonation states as obtained above, we investigated the extent to which the H87–S321, R206–D342, K64–D317, and D170–K642 interactions (see Figure 1b, c) are formed in the OF (closed intracellular gate) and IF (closed extracellular gate) conformational states (Figure 1—figure supplement 3). In the IF state, we found that H87–S321 and D342–R206 are consistently interacting, whereas the K64–D317 interaction, while formed in ≈72% of MD frames, is unstable and of a transient nature and, therefore, unlikely to contribute much to extracellular gate stability. The D170–K642 salt bridge, in turn, is only formed in ≈22% of OF-state frames, thus likely not substantially adding to the stability of the intracellular gate. We, therefore, decided to mainly focus on probing the H87–S321 and D342–R206 interactions with respect to control of the extracellular gate. Since no salt bridges or other specific interactions involving protonatable residues seem to demarcate the intracellular gate, we decided to focus on ExxER motif glutamates (E53 and E56) and E622 for their effects on intracellular gate opening.
 
@@ -42,13 +118,21 @@ Guided thus in our choice of which residues to investigate, we probed whether th
 
 Although these unbiased simulations show a large amount of stochasticity and drawing clean conclusions from the data are diﬃcult, we can already appreciate a possible mechanism where protons move down the transporter pore, first engaging H87 and D342 to favour the OF state and then moving to the ExxER motif (E53 and/or E56) and E622 to favour the IF orientation, driving successive conformational changes along the way. The initial unbiased approach taken in this section, therefore, serves to generate hypotheses for testing by a more rigorous investigation of the protonation state-dependent conformational changes. To this end, we set out to employ enhanced sampling simulations for obtaining conformational free energy landscapes in dependence on a range of protonation state and substrate binding conditions.
 
-## 2D-PMFs show proton-dependent driving forces of PepT2 alternating access
+### 2D-PMFs show proton-dependent driving forces of PepT2 alternating access
 
 To overcome the time-scale limitations of MD simulations and sample important slow degrees of freedom, many enhanced sampling approaches have been developed (Hénin et al., 2022) and employed in the computational study of membrane proteins (Harpole and Delemotte, 2018). An important class of methods that includes (among others) the popular techniques of steered MD (SMD) (Izrailev et al., 1999), umbrella sampling (Torrie and Valleau, 1977), metadynamics (Barducci et al., 2008), adaptive biasing force (ABF) (Darve et al., 2008), and the accelerated weight histogram method (AWH) (Lindahl et al., 2014) uses a small number of collective variables (CVs) along which to bias the simulation, thus improving exploration of important regions of phase space if the CV includes the relevant slow degrees of freedom (DOFs). If the CV is not optimal, problems can manifest in the form of hysteresis (starting-state dependence) when moving between known end-states (Lichtinger and Biggin, 2023). This is the case for the PepT2 OCC↔OF transition with the simple tip-CV illustrated in Figure 2a. Using either metadynamics or SMD with replica-exchange umbrella sampling (REUS), the end-state from which the simulations were started is always favoured in the resulting potential of mean force (PMF), with the hysteresis effect totalling ≈40 kcal mol−1 for each method (Figure 2—figure supplement 3).
 
 We have recently developed a strategy to overcome such hysteresis issues in conformational sampling which we call MEMENTO (Morphing Endstates by Modelling Ensembles with iNdependent TOpologies), (Lichtinger and Biggin, 2023), and have implemented it as the freely available and documented PyMEMENTO package. MEMENTO generates paths between known end-states by coordinate morphing followed by fixing the geometries of un-physical morphed intermediates. Since these paths by definition connect the correct end-states (unlike biased MD methods like SMD, where not reaching the target state in slow orthogonal DOFs is a common source of hysteresis), they can drastically reduce hysteresis in enhanced sampling compared to SMD as a path generation method. We have shown this for several validation cases, including a large-scale conformational change in the bacterial membrane transporter LeuT. After running the initial 1D-REUS from MEMENTO replicates along a simple CV guess, we can use the generated MD data to iteratively improve CVs using principal component analysis (PCA), thereby capturing slow motions from long end-state sampling that propagates through MEMENTO as differences between replicates.
 
 Here, we ran triplicates of MEMENTO for the OCC↔OF (standard protonation states and H87&D342 protonated) and OCC↔IF (standard protonation states and E53 protonated) conformational changes, followed initially by 1D-REUS along the tip-CV (Figure 2—figure supplement 4). The results are much more consistent than SMD or metadynamics along the same CV, and the shapes of the PMFs fit well with the trends we previously observed in unbiased MD from the OCC state. Since, however, significant differences between replicates remained, we used principal component analysis (PCA, see Materials and methods for details) on the sampling collected of the standard protonation state transitions to derive sets of 2-dimensional CVs (Figure 2—figure supplement 5 and Videos 1–4) that capture the main gate-opening motions in the first PC, and the direction along which the differing replicates can be best separated out as the second PC (these correspond to cleft sliding and twisting motions).
+
+![Video 1.](https://cdn.elifesciences.org/articles/96507/elife-96507-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/96507/elife-96507-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/96507/elife-96507-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/96507/elife-96507-video4.mp4.jpg)
 
 Equipped with these CVs, we first studied the protonation-state dependence of the OCC↔OF transition. As Figure 3 shows (2D-PMFs in part a, projections onto PC 1 in part b), the OCC state in standard protonation states form a basin that is metastable with respect to OF (lying ≈3 kcal mol−1 higher than OF, separated by a barrier of ≈3 kcal mol−1). Protonation of H87 still leads to a metastable OCC basin, although it is raised by ≈4 kcal mol−1 and the barrier is decreased to ≈1.5 kcal mol−1. Protonating D342, in turn, does not affect the relative free energies of the OCC and OF states, but does lower the transition barrier by ≈1 kcal mol−1. These effects are additive, so that protonation of both H87 and D342 abolishes the metastable OCC state-an observation which agrees with the ability of the OCC state thus protonated to spontaneously transition to OF in unbiased MD (see the Discussion for a comparison with the results obtained by Parker et al., 2017 on PepTSo on this point).
 
@@ -58,9 +142,36 @@ An equivalent investigation of the D342A mutation results in a PMF that shows bo
 
 We next employed an equivalent approach to investigate the OCC↔IF transition. As can be seen from Figure 4, in standard protonation states, the OCC state forms a well-defined basin, connecting to a broader and shallower IF basin raised ≈2 kcal mol−1 over OCC via a barrier of just over ≈3 kcal mol−1. When either E53 or E622 are protonated, IF drops to a similar free energy level as OCC and the transition barrier lowers by ≈1 kcal mol−1. These effects are additive, so that when both E53 and E622 are protonated, the IF state is favoured by ≈3.5 kcal mol−1, and is accessible from OCC via a barrier of only ≈1 kcal mol−1. As for the OCC↔OF transitions, these results explain the behaviour we had previously observed in the unbiased MD of Figure 2c. The stochastic partial intracellular gate opening seen with those runs can be rationalised through the lower transition barrier from OCC to IF compared to the transition to OF in our PMFs, together with the broad and ﬂat shape of the IF-state basin. Additionally, we have also computed all the equivalents of these PMFs in the presence of Ala-Phe substrate (Figure 4—figure supplement 1), which we will discuss in the section below. All projections onto PC 1 are shown in Figure 4—figure supplement 2, and convergence analysis is provided in Figure 4—figure supplement 3. Taken together, the PepT2 apo 2D-PMFs provide a detailed view of the way the alternating access cycle is driven by proton movement from the extracellular to the intracellular side of the transporter that ﬁts well with its biological function of using two protons from the extracellular medium to energise cycling from OF to IF, and back spontaneously once the protons have left (see the Discussion below).
 
-## Substrate coupling of alternating access includes several distinct mechanisms
+### Substrate coupling of alternating access includes several distinct mechanisms
 
 Given the evidence presented so far, which provides a plausible model for how protons drive alternating access based just on an investigation of the apo states, it remains unclear how coupling of proton transport to the substrate is achieved-that is, why the transporter cannot be driven by protons without the presence of substrate (and would thus just leak protons across the membrane). To investigate the mechanism underpinning peptide–proton coupling, we constructed simulation boxes that included a bound Ala-Phe substrate molecule (see Materials and methods for details). We then calculated the Ala-Phe aﬃnity using ABFE simulations in different protein states (Table 1). First, we observed that the aﬃnity is similar in the OF and IF states, indicating that the binding of substrate alone does not thermodynamically drive the transporter from OF to IF. We did find, however, that protonation of E622 (i.e. the salt bridge parter of the substate N-terminus) significantly decreases substrate aﬃnity. Given that protonation of E622 also favours the OCC→IF transition, we suggest a dual function of E622 protonation that includes both stabilising the IF state with respect to OCC and facilitating substrate release from holo IF.
+
+**Table 1.**
+ Results of absolute binding free energy (ABFE) calculations, showing that the aﬃnity of Ala-Phe substrate does not depend much on the conformational state (outwards-facing, OF vs inwards-facing, IF), but is significantly decreased on E622 protonation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein state</th>
+      <th>AF dipeptide aﬃnity/kcal mol−1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OF</td>
+      <td>8.0 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td>7.0 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>IF &amp; E622 prot</td>
+      <td>2.9 ± 0.2</td>
+    </tr>
+  </tbody>
+</table>
 
 To explore what effect the substrate has on the PepT2 conformational landscape, we repeated a set of our 2D-PMFs in the presence of substrate (Figure 5). For both the OCC↔OF and OCC↔IF transitions, the 2D-PMFs have similar shapes in the apo and holo states. For OCC↔OF, however, we found an increased width of the OCC state basin in the direction of PC 2, which-as is evident after projection onto PC 1-stabilises OCC with respect to OF by ≈1 kcal mol−1 as an effect of increased OCC ﬂexibility in the orthogonal DOF. We find a similar stabilisation when E53 or E56 are protonated, but not when both H87 and D342 are protonated (Figure 3—figure supplement 1 and 2). This indicates that the presence of substrate in conformations approaching the OCC state from OF may trigger proton movement further down into the transporter-driven by entropic gains from increased ﬂexibility in orthogonal DOFs.
 
@@ -72,15 +183,39 @@ The OCC↔IF PMF also presents a broader OCC basin in the presence of substrate,
 
 As noted above, another possibility for the substrate to engage with the transport cycle is found in R57 interacting both with the substrate C-terminus and with the ExxER glutamates, protonation of which drives the transporter towards the IF state, as our PMFs demonstrate. A natural hypothesis then is that substrate binding-which engages R57-loosens the R57 interaction with E53 thus enabling the protonation of those residues and progress along the alternating access cycle. To test this hypothesis, we conducted triplicate constant-pH simulations (CpHMD) (Swails et al., 2014) to probe the E53 and E56 pKa values in all combinations of OCC/OF and apo/holo conditions (Figure 6a). Concerning the E53 pKa value, we see a potential response to substrate binding in the OF state (though the error bars calculated from the triplicate standard deviations overlap) but not in OCC. On the other hand, we do see a raising of the E56 pKa beyond error in holo OF or OCC states compared to apo, amounting to ≈0.6 log units in both cases. As shown in Figure 6—figure supplement 1 and 2, the pKa values estimated for successive data chunks across the CpHMD trajectories vary significantly with simulation time in a complex superposition of timescales, and with a dynamic range larger than the replicate error bars. As an alternative to the replicate-based representation in Figure 6, we have, therefore, also analysed the pooled data for each condition as histograms of pKa values estimated from short chunks of our simulations (Figure 6—figure supplement 3). From this, we recover the same effect of substrate binding on the E56 pKa in the OF and OCC states, as well as a potential effect on the E53 pKa in the OF state only. Since the shift in E56 pKa was more robust across conformational states, we focus on this residue in the following validation and discussion, although we note that if there was in fact a significant raising of the E53 pKa as well, this would further strengthen our conclusions about substrate coupling to E53 and/or E56 protonation.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig6-v1.jpg)
+
+**Figure 6.:** (a) E53 and E56 pKa values from constant-pH molecular dynamics (MD) simulations, in the apo and holo as well as the outwards-facing (OF) and occluded (OCC) states, estimated as mean ± standard deviation from triplicate runs (using the full simulation data for fitting the titration curves). The presence of substrate raises the E56 pKa in either conformational state, while some effect on the E53 pKa may also exist in the OF state. (b) Illustration of a themodynamic cycle of E56 protonation and Ala-Phe binding, with edges filled in via constant pH simulations (CpHMD) (converted into kcal mol–1 at pH 7) for the top and bottom transitions, and absolute binding free energy (ABFE) for the left and right edges. Notably, ABFE displays a response of Ala-Phe aﬃnity to E56 is consistent with the CpHMD results, and the cycle closes very well. The error in the cycle closure residual is estimated as a square root of the sum of squared standard deviations of the individual edges.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Grey lines indicate the pKa resulting from fitting the total simulation data. The pKa values appear highly dynamic and superimpose several relaxation timescales. Convergence seems to be achieved in most replicates but is not straightforward to assess.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Grey lines indicate the pKa resulting from fitting the total simulation data. The pKa values appear highly dynamic and superimpose several relaxation timescales. Convergence seems to be achieved in most replicates but is not straightforward to assess.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Apo conditions are shown in blue, holo (ala-phe bound) are shown in orange. Gaussian fits are indicated by dashed lines and the resulting fit parameters are given in the respective color for each histogram.
+
 It is important to recognise here that the hybrid-solvent CpHMD method as implemented in AMBER is not rigorous for membrane proteins, since the membrane is not taken into account while evaluating proposed protonation state changes in implicit solvent. On the other hand, we were not able in initial trials to obtain suﬃcient transition counts to converge an alternative explicit-solvent CpHMD method as implemented in GROMACS (Aho et al., 2022). To validate our results, we, therefore, also constructed a thermodynamic cycle of substrate binding and E56 protonation in the OF state by including data from separate ABFE calculations as connecting thermodynamic legs (Figure 6b). The ABFE results show a complementary effect of the E56 protonation state on substrate aﬃnity, closing the thermodynamic cycle, and validating our CpHMD simulations using an orthogonal MD technique. We conclude that substrate binding does indeed facilitate protonation of E56 (whence, we stipulate, the proton moves to E53, which is situated in close proximity). If the neglected membrane environment in the hybrid-solvent CpHMD did produce significant artifacts in the pKa values, then it would appear that there is error cancellation when assessing the impact of substrate binding as a difference of pKa values in the apo and holo conditions.
 
 It should be noted that-as throughout this study, see the discussion below-in studying the coupling between substrate binding and protonation-state changes at the E53 and E56 we have not made the substrate C-terminus protonatable. Since, in order to induce E56 protonation, the substrate C-terminus needs to engage R57 in a salt bridge, its pKa is likely to be low, rendering the assumption reasonable for those substrate conformations. However, it is possible that the system could also adopt states in which the ExxER motif salt-bridge network is stable in a way similar to the apo condition while the substrate gets protonated when oriented away from R57. If such conformations contribute significantly to this semi-grand canonical ensemble, the E53 and E56 (of the ExxER motif) pKa values estimated without taking them into account may exhibit some bias. By undersampling more apo-like conformations in the holo state in this way, it is possible that the calculations presented here overestimate the substrate-induced pKa shift of E56, although the direction of change would be expected to be the same, because the substrate can still engage R57 when it is deprotonated (we speculate that the histograms in Figure 6—figure supplement 3 for the holo state may become bi-modal in this case). While the possibility would need to be taken into account for a more rigorous quantitative estimate of the E53 and E56pKa value shifts, the pKa calculations would become much harder to converge since the slow degree of freedom of substrate re-orientation would need to equilibrate to the protonation-state changes (which happen fast since they are treated as Monte-Carlo moves in an implicit solvent at regular intervals). Here, we content ourselves with the more qualitative observation that an appropriately positioned substrate in the canonical, structurally observed binding pose facilitates protonation of the ExxER glutamates.
 
-## Validation in cell-based transport assays
+### Validation in cell-based transport assays
 
 To experimentally validate the results of an MD investigation, the first step is to probe the importance of the key implicated residues for protein function. We note that the literature already contains ample data to show that E53 (Solcan et al., 2012; Doki et al., 2013; Sun et al., 2014; Jørgensen et al., 2015; Parker et al., 2017), E56 (Solcan et al., 2012; Jørgensen et al., 2015; Sun et al., 2014; Zhao et al., 2014; Parker et al., 2017), R57 (or the equivalent arginine) (Solcan et al., 2012; Guettou et al., 2013; Doki et al., 2013; Jørgensen et al., 2015; Lyons et al., 2014; Parker and Newstead, 2014; Sun et al., 2014; Parker et al., 2017; Martinez Molledo et al., 2018), H87 (for those homologues which conserve it) (Fei et al., 1997; Chen et al., 2000; Newstead et al., 2011; Uchiyama et al., 2003; Parker et al., 2017), D317 (or the equivalent glutamate) (Solcan et al., 2012; Doki et al., 2013; Lyons et al., 2014; Parker et al., 2017; Martinez Molledo et al., 2018; Shen et al., 2022), and E622 (Solcan et al., 2012; Guettou et al., 2013; Doki et al., 2013; Lyons et al., 2014; Zhao et al., 2014; Parker et al., 2017; Minhas and Newstead, 2019; Shen et al., 2022) are important for transport through POTs. Of the residues implicated by our simulations, therefore, only S321 and D342 have not been studied before, and thus serve as predictive validation test cases here.
 
-Using cell-based transport assays (see Materials and methods), we tested the transport activity of rat PepT2 WT and several mutants: H87A (as a positive control known from the literature), I135L (as a negative control, without any expected eﬀect), as well as the mutants of interest D342A and S321A (Figure 7, and Figure 7—figure supplement 1 for loading control and membrane localisation micrographs). We note that all our mutants expressed slightly less compared to the WT at the same amount of transfected DNA (0.8 μg), but more than WT at a reduced transfection DNA level (0.5 μg) (Figure 7b). To control for this difference in expression levels, we took WT (0.5 μg), which transports ≈20% less than WT (0.8 μg), as a lower bound for the WT transport activity and as the point of comparison for statistical tests. We found that all mutants of residues predicted to be involved in transport displayed significantly reduced transport activity (p-values: 2.2×10−5 for H87A, 1.6×10−4 for D342A, 6.9×10−5 for S321A, while I135L is indistinguishable from WT at P=0.79). We also note that D342A, although its activity is significantly reduced, still transports more than H87A (p = 3.9×10−7). This fits well with our 2D-PMF results, where H87 protonation does more than D342 protonation to stabilise OF with respect to OCC.
+Using cell-based transport assays (see Materials and methods), we tested the transport activity of rat PepT2 WT and several mutants: H87A (as a positive control known from the literature), I135L (as a negative control, without any expected eﬀect), as well as the mutants of interest D342A and S321A (Figure 7, and Figure 7—figure supplement 1 for loading control and membrane localisation micrographs). We note that all our mutants expressed slightly less compared to the WT at the same amount of transfected DNA (0.8 μg), but more than WT at a reduced transfection DNA level (0.5 μg) (Figure 7b). To control for this difference in expression levels, we took WT (0.5 μg), which transports ≈20% less than WT (0.8 μg), as a lower bound for the WT transport activity and as the point of comparison for statistical tests. We found that all mutants of residues predicted to be involved in transport displayed significantly reduced transport activity (p-values: $2.2\times10^{−5}$ for H87A, $1.6\times10^{−4}$ for D342A, $6.9\times10^{−5}$ for S321A, while I135L is indistinguishable from WT at P=0.79). We also note that D342A, although its activity is significantly reduced, still transports more than H87A (p = $3.9\times10^{−7}$). This fits well with our 2D-PMF results, where H87 protonation does more than D342 protonation to stabilise OF with respect to OCC.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig7-v1.jpg)
+
+**Figure 7.:** (a) Cell-based transport assays for PepT2 wild-type (WT) (transfected with 0.5 μg, n=12, and 0.8 μg, n=46, of DNA per well), empty plasmid vector (n=12) and PepT2 H87A, D342A, S321A (n=24 each) and I135L (n=12) mutants, all transfected with 0.8 μg of DNA. Diagram shows transport as ﬂuorescence in post-assay lysate divided by total protein concentration, normalised to the WT (0.8 μg) mean. Bars are mean values plus minus standard deviation, and swarm plots samples corresponding to individual wells. Single asterisk indicates $p<10^{−3}$, double asterisks $p<10^{−4}$ significance levels for difference compared to (weaker transporting, 0.5 μg-transfected) WT, as evaluated using a two-tailed t-test. (b) Western-blot showing expression levels of WT and mutant GFP-labelled PepT2, with an anti-GFP primary antibody. All mutants express at levels between the WT transfected with 0.5 μg and 0.8 μg plasmid DNA. Cleaved GFP is also visible at low molecular weight, at levels comparable for WT and mutants.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/96507/elife-96507-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Loading control of the Western blot shown in Figure 7b, using an antibody against β-actin, showing even loading of the gel. (b) Fluorescence microscopy images, overlaying GFP-labelled PepT2 (green) with DAPI-labelled DNA (blue). Membrane expression is qualitatively shown for wild-type (WT) and all mutants by the thin cell outline of GFP.
 
 ## Discussion
 
@@ -104,11 +239,42 @@ In conclusion, this study utilises the recent wealth of bacterial and mammalian 
 
 ## Materials and methods
 
-## Definition of tip and base bundle CVs
+### Definition of tip and base bundle CVs
 
 For the analysis and interpretation of our unbiased MD runs, as well as for the use as a CV for initial metadynamics and umbrella sampling trials, we constructed the tip-CV and base-CV as centre-of-mass distances between the Cα atoms of the top and bottom 11 residues of the N-terminal and C-terminus bundles respectively, as illustrated in Figure 2a. These residues were picked as the consensus of the DSSP analysis (Kabsch and Sander, 1983) of the PepT2 conformational states derived below, listed in Table 2.
 
-## MD setup and equilibration
+**Table 2.**
+ Residue numbers used in the definition of the tip-collective variable (CV) and base-CV.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Bundle</th>
+      <th>Residue numbers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N-terminal bundle tips</td>
+      <td>63–74, 79–90, 120–131, 143–154, 194–205, 217–228</td>
+    </tr>
+    <tr>
+      <td>N-terminal bundle bases</td>
+      <td>46–57, 93–104, 110–121, 161–172, 177–188, 227–238</td>
+    </tr>
+    <tr>
+      <td>C-terminal bundle tips</td>
+      <td>320–331, 341–352, 392–403, 609–620, 655–666, 671–682</td>
+    </tr>
+    <tr>
+      <td>C-terminal bundle bases</td>
+      <td>290–301, 359–370, 376–387, 626–637, 642–653, 686–697</td>
+    </tr>
+  </tbody>
+</table>
+
+### MD setup and equilibration
 
 We obtained protein coordinates from cryo-EM for the OF (7NQK) (Parker et al., 2021) and IF-partially-occluded (7PMY) (Killer et al., 2021) PepT2 conformations, as well as from alphafold 2 (Jumper et al., 2021) for the fully-open IF state. We used MODELLER (Sali and Blundell, 1993) to fit the rat PepT2 sequence (as used by Parker et al., 2021) to the human PepT2 7PMY and alphafold models, using residues 43–409 (TM 1–9) linked as a continuous chain to residues 604–700 (TM 10–12), thereby truncating the extracellular domain as done by Parker et al., 2021 in their MD simulations. We scored 200 models with QMEANDisCo (Studer et al., 2020) and selected the highest-scoring protein model for embedding into a 3:1 POPE:POPG bilayer of target size 10 * 10 nm (210/72 lipid molecules for IF and OCC, 218/72 for OF) with the CHARMM-GUI membrane builder Wu et al., 2014. We added ACE/NME capping residues using pymol and solvated the membrane system using GROMACS (Abraham et al., 2015) with approximately 21,000 solvent molecules (precise number varies between replicates) at a NaCl concentration of 0.15 M in an orthorhombic box of around 9.9 * 9.9 * 10.8 nm side lengths. Topologies were generated using the AMBER ff14.SB (Maier et al., 2015) and slipids (Jämbeck and Lyubartsev, 2012) forcefields.
 
@@ -116,25 +282,25 @@ Using the GROMACS MD engine (Abraham et al., 2015) in versions 2021.3/2021.4 (th
 
 We obtained Ala-Phe dipeptide-bound boxes by aligning the holo PepT1 cryo-EM structure (7PMW) onto our equilibrated PepT2 MD boxes, copying the ligand coordinates, and repeating the same equilibration protocol as before (where the peptide substrate Cα atoms were also restrained). The peptide ligand was parametrised using AMBER ff14.SB (Maier et al., 2015).
 
-## Derivation of OF, OCC, and IF conformational states
+### Derivation of OF, OCC, and IF conformational states
 
 As shown in Figure 1—figure supplement 2a, the IF-partially-occluded structure (7PMY) does not behave well in MD (1 μs production runs from triplicate embeddings), since it either partially opens its extracellular gate (replicates 2–3) or partial helical unfolding in the intracellular gate occurs due to hydrophobic collapse (rep 1). This may be due to a variety of factors; one possibility is instability in the protein following the removal of the bound substrate in our simulations. In contrast (Figure 1—figure supplement 2b), embedding replicates 1 and 3 of the alphafold IF state behave well. We picked the end-coordinates of replicate 3 as our IF state, due to the wider opening of its intracellular gate. We then sought to derive an OCC state via MD from replicate 1, see the paragraph below. We also note that embeddings from the OF cryo-EM structure (7NQK) remain stable in the OF conformation, we picked replicate 1 for our work.
 
 To derive an OCC state from an IF box, we conducted five replicates of well-tempered metadynamics (Barducci et al., 2008) as implemented in PLUMED 2.7 (Tribello et al., 2014) along the base-bundle CV (see Figure 2a), using eight walkers, hill height 1 kJ mol−1 with sigma 0.022 nm deposited every 500 steps, and a bias factor of 100. From the resulting set of trajectories, we picked frames around the mark of 20 ns simulation time and a base-CV value of around 2.0 nm (we chose these values based on visual inspection of the trajectories, where we noticed that base-CV values significantly below 2.0 nm lead to artefacts such as partial unfolding of the ends of helices, as did continuing the metadynamics simulations for longer than necessary to obtain the desired states). We ran triplicate 100 ns-long unbiased MD from the obtained states for each of the five replicates, and found the OCC state obtained from the first replicate to be stably situated within the range of base-CV values observed in the OF-state trajectories. The micro-second-long unbiased MD runs as well as our 2D-PMFs confirm that this protein conformation is a stable basin, and that different protonation states of key residues can drive its opening to either the IF or OF states. While this does not rule out the existence of different OCC states, it confirms the properties of the conformation we found as a functional OCC state.
 
-## Unbiased MD of the OCC state
+### Unbiased MD of the OCC state
 
 Unbiased MD runs of the OCC state in different conditions were conducted in triplicates using the same simulation parameters as for the long Cα-restrained equilibrations described in the section on equilibration, but removing all restraints. The starting coordinates were-for the first replicate-the OCC state derived as described in the foregoing section, and the second and third replicates were initialised from the 500 ns and the final frame of the first replicate trajectory. Protonation states changes and mutations were carried out using PyMOL and GROMACS pdb2gmx independently for each replicate, followed by re-running the full equilibration protocol for all new boxes. Taken together, we conducted unbiased MD for 24 conditions, giving 72 μs of production sampling.
 
-## Metadynamics and steered MD
+### Metadynamics and steered MD
 
 For our initial trials of enhanced sampling on PepT2 conformational changes-which showed hysteretic behaviour (see Figure 2—figure supplement 3), we attempted steered MD (SMD) and metadynamics for the OCC↔OF transition in the WT, unprotonated state.
 
-Two instances of eight-walker well-tempered metadynamics were run, starting from the OF and OCC states, biased along the tip-CV with hills of height 1 kJ mol−1 and sigma 0.0455 nm deposited every 500 steps, using a bias factor of 100. A harmonic ﬂat-bottom restraint with boundaries of 2.0–3.0 nm and force constant 5×104 kJ mol−1 nm−2 was applied on the CV value. Sampling was run for 108 ns per walker for the simulations starting from OF, and 213 ns per walker starting from OCC.
+Two instances of eight-walker well-tempered metadynamics were run, starting from the OF and OCC states, biased along the tip-CV with hills of height 1 kJ mol−1 and sigma 0.0455 nm deposited every 500 steps, using a bias factor of 100. A harmonic ﬂat-bottom restraint with boundaries of 2.0–3.0 nm and force constant $5\times10^{4}$ kJ mol−1 nm−2 was applied on the CV value. Sampling was run for 108 ns per walker for the simulations starting from OF, and 213 ns per walker starting from OCC.
 
-To generate paths for umbrella sampling, SMD was run starting at OF towards OCC and vice versa with the heavy-atom RMSD to the target conformation as CV, using a harmonic potential centered to zero RMSD with a force constant sliding from 0 up to 2.5×105 kJ mol−1 nm−2 over 200 ns. The harmonic potential was then switched off over 2 ns, followed by 48 ns of unbiased MD. We then projected the SMD trajectories onto the tip-CV, picked 48 frames spaced equally along the CV and performed 1D replica-exchange umbrella sampling (REUS) using a force constant of 3×104 kJ mol−1 nm−2, for 92 ns per window for the OCC→OF derived boxes and 127 ns per window in the reverse direction. A total of 13.6 μs of MD time was thus expended on these trials.
+To generate paths for umbrella sampling, SMD was run starting at OF towards OCC and vice versa with the heavy-atom RMSD to the target conformation as CV, using a harmonic potential centered to zero RMSD with a force constant sliding from 0 up to $2.5\times10^{5}$ kJ mol−1 nm−2 over 200 ns. The harmonic potential was then switched off over 2 ns, followed by 48 ns of unbiased MD. We then projected the SMD trajectories onto the tip-CV, picked 48 frames spaced equally along the CV and performed 1D replica-exchange umbrella sampling (REUS) using a force constant of $3\times10^{4}$ kJ mol−1 nm−2, for 92 ns per window for the OCC→OF derived boxes and 127 ns per window in the reverse direction. A total of 13.6 μs of MD time was thus expended on these trials.
 
-## MEMENTO path generation
+### MEMENTO path generation
 
 We have recently proposed the MEMENTO method for history-independent path generation between given end-states Lichtinger and Biggin, 2023.
 
@@ -142,42 +308,184 @@ In short, protein coordinates are morphed, followed by reconstructing an ensembl
 
 In this study, we ran MEMENTO with 24 windows in triplicates for both the OCC↔OF and OCC↔IF transitions in different protein protonation and mutation states, and in the presence or absence of ligands. The apo and holo MEMENTO replicates were initialised from the 0 ns, 500 ns, and 1000 ns frames of the first replicate of the 1 μs unbiased MD run for each conformational state (using always the unprotonated, WT condition, but apo/holo trajectories, respectively). Protonation state changes and mutations were then carried out using the built-in functionality of PyMEMENTO, and equilibrated at each intermediate state for 90 ns. The total MD simulation time spent on equilibrations as part of the MEMENTO method across the 22 sampled conditions was 47 μs.
 
-## 1D-PMF calculations
+### 1D-PMF calculations
 
-Starting with the triplicate equilibrated MEMENTO boxes for the (all apo) OCC↔OF standard protonation and H87 & D342 protonated states, as well as OCC↔IF standard protonation and E53 protonated states, we ran 1D-replica exchange umbrella sampling (REUS, exchange every 1000 steps; using PLUMED 2, Tribello et al., 2014) along the tip-and base-CVs, respectively, using a force constant of 4×103 kJ mol−1 nm−2. The amount of sampling collected in each case is summarised in Table 3.
+Starting with the triplicate equilibrated MEMENTO boxes for the (all apo) OCC↔OF standard protonation and H87 & D342 protonated states, as well as OCC↔IF standard protonation and E53 protonated states, we ran 1D-replica exchange umbrella sampling (REUS, exchange every 1000 steps; using PLUMED 2, Tribello et al., 2014) along the tip-and base-CVs, respectively, using a force constant of $4\times10^{3}$ kJ mol−1 nm−2. The amount of sampling collected in each case is summarised in Table 3.
 
-## 2D-CV derivation
+**Table 3.**
+ Overview of all 1D-PMF sampling.
 
-Using the trajectory data from our 1D-PMFs, we derived 2D CVs via a PCA-based approach we have previously described for LEUT (Lichtinger and Biggin, 2023). We pooled all sampling collected in 1D-REUS runs along the tip-CV for apo OCC↔OF (and equivalently for OCC↔IF. The same procedure was taken for these trajectories, and we will only explicitly write about OCC↔OF in the following paragraph). Using GROMACS tools, we ran PCA of the Cα positions of residues contained in the transmembrane region (see Table 2 above). The first principal component (PC) accounts for 50% of the variance; adding an extra 15 PCs increases coverage to 78% of the variance (comparable to our results on LEUT). The first PC (see Figure 2—figure supplement 5) describes the gating motions of the respective conformational changes, behaving similarly to the tip CV (or base CV)-expectedly so, given it was the CV used in our 1D-REUS. To explain differences between replicates (see Figure 2—figure supplement 4a and c), we used differential evolution (Storn and Price, 1997) as implemented in scipy (Virtanen et al., 2020) to maximise an entropy-like metric of distances between MEMENTO path frames for linear combinations of the PCs 2–16:(1)2Nrep∗(Nrep−1)∑i=1Nrep∑j=i+1Nrep∑nNwindowslog(∑PC(X(n,i)−X(n,j))2),
 
-where Nrep is the number of replicates and by X(n,i)−X(n,j) we denote the distance between two conformational frames in different replicates i and j, evaluated in a projection along a given combination of principal components. The result was termed PC 2 henceforth for simplicity and used as the second CV in 2D-REUS (Figure 2—figure supplement 5).
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Simulation time/ns</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OCC↔OF, standard prot</td>
+      <td>24 * (266+244+244)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, H87 &amp; D342 prot</td>
+      <td>24 * (327+244+244)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, standard prot</td>
+      <td>24 * (242+248+246)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, E53 prot</td>
+      <td>24 * (158+155+154)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>67 μs</td>
+    </tr>
+  </tbody>
+</table>
 
-## 2D-PMF calculations
+### 2D-CV derivation
 
-Using the same equilibrated MEMENTO paths as above and the 2D-CVs we derived, we calculated 2D-PMFs of the OCC↔OF and OCC↔IF transitions in several protonation/mutation states, with and without Ala-Phe substrate-bound, using 2D-REUS. As shown in Figure 3—figure supplement 5, we found that a lower force constant of 2×106 kJ mol−1 nm−2 leads to good histogram overlap in the lower-lying regions of the PMF, but has poor overlap near the transition region. In turn, a higher force constant of 1×107 kJ mol−1 nm−2 gives good window overlap in the transition region while not sampling broadly enough in large basins. Therefore, for each condition and MEMENTO replicate, we ran windows at both force constants and included them all in the WHAM analysis, thus ensuring suﬃcient sampling through the CV space. Replica-exchange was run within the 24 windows corresponding to each MEMENTO replicate–force constant combination, and a total of 144 windows contribute to each 2D-PMF.
+Using the trajectory data from our 1D-PMFs, we derived 2D CVs via a PCA-based approach we have previously described for LEUT (Lichtinger and Biggin, 2023). We pooled all sampling collected in 1D-REUS runs along the tip-CV for apo OCC↔OF (and equivalently for OCC↔IF. The same procedure was taken for these trajectories, and we will only explicitly write about OCC↔OF in the following paragraph). Using GROMACS tools, we ran PCA of the Cα positions of residues contained in the transmembrane region (see Table 2 above). The first principal component (PC) accounts for 50% of the variance; adding an extra 15 PCs increases coverage to 78% of the variance (comparable to our results on LEUT). The first PC (see Figure 2—figure supplement 5) describes the gating motions of the respective conformational changes, behaving similarly to the tip CV (or base CV)-expectedly so, given it was the CV used in our 1D-REUS. To explain differences between replicates (see Figure 2—figure supplement 4a and c), we used differential evolution (Storn and Price, 1997) as implemented in scipy (Virtanen et al., 2020) to maximise an entropy-like metric of distances between MEMENTO path frames for linear combinations of the PCs 2–16:
+
+$$
+\frac{2}{N_{rep}∗(N_{rep}−1)}\sumi=1N_{rep}\sumj=i+1N_{rep}\sumnN_{windows}log(\sqrt{\sumPC(X(n,i)−X(n,j))^{2}}),
+$$
+
+where $N_{rep}$ is the number of replicates and by $X(n,i)−X(n,j)$ we denote the distance between two conformational frames in different replicates $i$ and $j$, evaluated in a projection along a given combination of principal components. The result was termed PC 2 henceforth for simplicity and used as the second CV in 2D-REUS (Figure 2—figure supplement 5).
+
+### 2D-PMF calculations
+
+Using the same equilibrated MEMENTO paths as above and the 2D-CVs we derived, we calculated 2D-PMFs of the OCC↔OF and OCC↔IF transitions in several protonation/mutation states, with and without Ala-Phe substrate-bound, using 2D-REUS. As shown in Figure 3—figure supplement 5, we found that a lower force constant of $2\times10^{6}$ kJ mol−1 nm−2 leads to good histogram overlap in the lower-lying regions of the PMF, but has poor overlap near the transition region. In turn, a higher force constant of $1\times10^{7}$ kJ mol−1 nm−2 gives good window overlap in the transition region while not sampling broadly enough in large basins. Therefore, for each condition and MEMENTO replicate, we ran windows at both force constants and included them all in the WHAM analysis, thus ensuring suﬃcient sampling through the CV space. Replica-exchange was run within the 24 windows corresponding to each MEMENTO replicate–force constant combination, and a total of 144 windows contribute to each 2D-PMF.
 
 The sampling collected in all conditions is detailed in Table 4, aiming for between 180 and 210 ns per window though exact amounts differ with heterogeneous hardware and slightly different box sizes.
 
-## Absolute binding free energies
+**Table 4.**
+ Overview of all 2D-PMF sampling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Simulation time/ns</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OCC↔OF, standard prot</td>
+      <td>24 * (233+195+195+208+208+207)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, H87 prot</td>
+      <td>24 * (230+200+188+201+228+229)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, D342 prot</td>
+      <td>24 * (204+232+204+224+229+207)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, H87&amp;D342 prot</td>
+      <td>24 * (196+196+195+194+194+201)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, D342A</td>
+      <td>24 * (182+183+206+181+183+183)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, H87A</td>
+      <td>24 * (176+182+183+184+182+177)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, E53 prot</td>
+      <td>24 * (185+180+209+179+218+213)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, E56 prot</td>
+      <td>24 * (194+194+194+192+193+193)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, R206D&amp;D342R</td>
+      <td>24 * (227+213+183+222+211+180)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, holo, standard prot</td>
+      <td>24 * (200+196+195+200+194+201)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, holo, E53 prot</td>
+      <td>24 * (185+180+210+179+218+213)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, holo, E56 prot</td>
+      <td>24 * (194+194+194+192+193+193)</td>
+    </tr>
+    <tr>
+      <td>OCC↔OF, holo, H87&amp;D342 prot</td>
+      <td>24 * (198+191+198+190+182+201)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, standard prot</td>
+      <td>24 * (197+216+203+192+197+199)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, E53 prot</td>
+      <td>24 * (197+208+199+192+193+195)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, E622 prot</td>
+      <td>24 * (199+201+200+196+217+197)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, E53&amp;E622 prot</td>
+      <td>24 * (193+237+240+187+250+200)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, holo, standard prot</td>
+      <td>24 * (190+195+191+196+192+197)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, holo, E53 prot</td>
+      <td>24 * (189+196+197+199+189+198)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, holo, E622 prot</td>
+      <td>24 * (194+191 + 206+197 + 198+199)</td>
+    </tr>
+    <tr>
+      <td>OCC↔IF, holo, E53&amp;E622 prot</td>
+      <td>24 * (197+198 + 180+195 + 190+204)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>598 μs</td>
+    </tr>
+  </tbody>
+</table>
+
+### Absolute binding free energies
 
 To probe the aﬃnity of the Ala-Phe substrate to the PepT2 OF and IF conformations in different protonation states, we conducted ABFE simulations (Aldeghi et al., 2016; Aldeghi et al., 2018) in gromacs, using an equilibrium approach. For this, we changed our mdp files to use the stochastic dynamics integrator (doubling as a thermostat) and set the relevant free-energy ﬂags, including soft-core van-der-Waals interactions (alpha = 0.5, power = 1, sigma = 0.3) and the couple-intramol=yes ﬂag for consistency with larger ligands in other work. Our lambda-protocol was to first add Boresch restraints (Boresch et al., 2003) (for the complex thermodynamic leg only, ligand side was calculated using the analytic formula; through values 0, 0.01, 0.025, 0.05, 0.075, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1.0), then annihilate coulomb interactions (even 0.1 spacings) followed by vdw interactions (even 0.05 spacings). We equilibrated for 200 ps of NVT and 1 ns of NPT at each lambda window, and ran production simulations with replica-exchange attempts every 1000 steps for 30 ns per window on the complex thermodynamic leg and 100 ns on the ligand-only leg.
 
 The Boresch restraints for ABFE simulations were obtained MDRestraintsGenerator (Alibay et al., 2022) by running the restraint finding algorithm over the ≈200 ns 2D-REUS trajectory at the relevant conformation and protonation state, and we used the trajectory frame closest to the restraint centre as input for subsequent ABFE. This was done for each of the triplicate MEMENTO runs, giving three candidate ligand binding poses. For the pose that was found to have the highest single-replicate aﬃnity, four replicates of unbiased, restraint-free 200 ns-long equilibrations were also started from the frames, processed with MDRestraintsGenerator and used to make replicates for ABFE runs to give an error estimate as mean plus-minus standard deviation. By following this protocol for the OF, OF E56 prot, IF, and IF E622 prot conditions, we sampled for a total of 4 conditions * 7 boxes per condition * 44 windows * 31.2 ns = 38 μs.
 
-## Constant-pH MD
+### Constant-pH MD
 
 To probe the substrate-dependence of the E53 and E56 pKa values, we ran constant pH simulations (CpHMD) using the hybrid solvent approach with discrete protonation states (Swails et al., 2014) as implemented in the AMBER software (Case and Aktulga, 2022). We took the MEMENTO starting frames from above as triplicate initial coordinates of OF and OCC states in the presence and absence of Ala-Phe. We then used tleap and in-house scripts to convert our boxes to the AMBER constant pH forcefield fork for protein, substrate, and solutes and to the lipid21 force field (Dickson et al., 2022) for the membrane. We prepared constant pH simulations as in the tutorial by , and ran them for 1 μs at 8 pH replica windows (pH 0–7), in the NVT ensemble with a langevin thermostat (at 310 K as before), attempting protonation state changes every 100 steps, running 100 steps of relaxation dynamics for every exchange, and attempting replica exchange every 1000 steps. Analysis was performed using the cphstats programme and in-house scripts for fitting titration curves. In Figure 6, analysis is performed per replicate, reporting mean ± standard deviation for each condition and residue. In Figure 6—figure supplement 1 and 2, we show pKa values estimated over simulation time from 10 ns chunks of all CpHMD runs. We also analyse this data in terms of histograms of the chunk-estimated pKa values, pooling all data for each condition and residue.
 
 A total of 4 conditions * 3 replicates * 8 windows * 1 µs=96 μs of sampling were thus collected.
 
-## Cell-based transport assays
+### Cell-based transport assays
 
-Transport assays were carried out using a modified version of the protocol by Parker et al., 2021. Human cervical adenocarcinoma HeLa cells were purchased from Merck 93021013 and confirmed by STR profiling. The cell line was mycoplasma negative, as conﬁrmed using the EZ-PCR Mycoplasma Test Kit (K1-0210, Geneﬂow). H. Hela cells were cultured in DMEM + GlutaMAX medium, supplemented with 10% FBS. 12-well plates were prepared by seeding 9×104 cells per well in 1 mL of medium, and transfected after 24 hr with 0.8 μg of PepT2-constructs in pEF5-FRT-eGFP vector (or 0.5 μg of insert vector + 0.3 μg of empty vector, where specified), with 1.6 μg of fugene transfection reagent. The medium was exchanged 24 hr post-transfection, and assays were carried out 40 hr post transfection. Cells were washed two times with ≈0.6 mL of assay buffer (20 mM HEPES pH 7.5, 120 mM NaCl, 2 mM MgSO4, and 25 mM glucose), then incubated with 0.3 mL assay buffer containing 20 mM β-ala-lys-AMCA substrate for 15 min. The cells were then washed three times with ≈0.6 mL of assay buffer, and incubated with 0.25 mL of lysis buffer (20 mM Trist pH 7.5+0.2% Triton x-100) for 5 min. The ﬂuorescence (340 nm excitation, 460 nm read-out) of 0.15 mL of the lysate was normalised by the protein amount in each well (as determined from BCA assay of 20 μL lysate). We removed two outliers from the WT (0.8 μg) transport assay dataset, giving n=46. The data was then scaled to the mean WT (0.8 μg) transport level as 100%.
+Transport assays were carried out using a modified version of the protocol by Parker et al., 2021. Human cervical adenocarcinoma HeLa cells were purchased from Merck 93021013 and confirmed by STR profiling. The cell line was mycoplasma negative, as conﬁrmed using the EZ-PCR Mycoplasma Test Kit (K1-0210, Geneﬂow). H. Hela cells were cultured in DMEM + GlutaMAX medium, supplemented with 10% FBS. 12-well plates were prepared by seeding $9\times10^{4}$ cells per well in 1 mL of medium, and transfected after 24 hr with 0.8 μg of PepT2-constructs in pEF5-FRT-eGFP vector (or 0.5 μg of insert vector + 0.3 μg of empty vector, where specified), with 1.6 μg of fugene transfection reagent. The medium was exchanged 24 hr post-transfection, and assays were carried out 40 hr post transfection. Cells were washed two times with ≈0.6 mL of assay buffer (20 mM HEPES pH 7.5, 120 mM NaCl, 2 mM MgSO4, and 25 mM glucose), then incubated with 0.3 mL assay buffer containing 20 mM β-ala-lys-AMCA substrate for 15 min. The cells were then washed three times with ≈0.6 mL of assay buffer, and incubated with 0.25 mL of lysis buffer (20 mM Trist pH 7.5+0.2% Triton x-100) for 5 min. The ﬂuorescence (340 nm excitation, 460 nm read-out) of 0.15 mL of the lysate was normalised by the protein amount in each well (as determined from BCA assay of 20 μL lysate). We removed two outliers from the WT (0.8 μg) transport assay dataset, giving n=46. The data was then scaled to the mean WT (0.8 μg) transport level as 100%.
 
-## Protein expression controls
+### Protein expression controls
 
-For comparing PepT2 WT and mutant expression levels, Hela cells were seeded in six-well plates at 1.8×105 cells per well in 2 mL of medium. Transfection was after 24 hr with 1.6 μg of PepT2-constructs in pEF5-FRT-eGFP vector (or 1.0 μg of insert vector +0.6 μg of empty vector, where specified) and 3.2 μg of fugene; the medium was exchanged 24 hr post-transfection. The cells were washed three times with ≈0.6 mL of PBS, harvested using 0.1% trypsin, pelleted, re-suspended in 100 μL PBS with protease inhibitor and lysed through 3 x freeze-thawing. The lysates from three wells were pooled for each mutant to increase between-sample consistency. 4.5 μL of each sample were loaded onto a 10% SDS-PAGE gel, and western blot was performed using an anti-GFP antibody. The membrane was then stripped and developed again with an anti-β-actin antibody to control for gel loading.
+For comparing PepT2 WT and mutant expression levels, Hela cells were seeded in six-well plates at $1.8\times10^{5}$ cells per well in 2 mL of medium. Transfection was after 24 hr with 1.6 μg of PepT2-constructs in pEF5-FRT-eGFP vector (or 1.0 μg of insert vector +0.6 μg of empty vector, where specified) and 3.2 μg of fugene; the medium was exchanged 24 hr post-transfection. The cells were washed three times with ≈0.6 mL of PBS, harvested using 0.1% trypsin, pelleted, re-suspended in 100 μL PBS with protease inhibitor and lysed through 3 x freeze-thawing. The lysates from three wells were pooled for each mutant to increase between-sample consistency. 4.5 μL of each sample were loaded onto a 10% SDS-PAGE gel, and western blot was performed using an anti-GFP antibody. The membrane was then stripped and developed again with an anti-β-actin antibody to control for gel loading.
 
-## Protein localisation controls
+### Protein localisation controls
 
-To confirm the plasma membrane localisation of PepT2 WT and mutants, we seeded 1.8×105 Hela cells per well in 2 mL of medium in a six-well plate with added coverslips. Transfection was as for the expression controls 24 hr after seeding. 20 hr post-transfection, the cells were washed three times with ≈0.6 mL of PBS, fixed with PFA for 10 min at room temperature, washed three times, incubated with PBS + 50 mM NH4Cl for 10 min, washed three times, incubated with PBS + 0.1% Triton x-100 for 5 min, washed three times, stained with DAPI, washed five times, and mounted on slides with ImmuMount. Images were recorded in the GFP and DAPI channels.
+To confirm the plasma membrane localisation of PepT2 WT and mutants, we seeded $1.8\times10^{5}$ Hela cells per well in 2 mL of medium in a six-well plate with added coverslips. Transfection was as for the expression controls 24 hr after seeding. 20 hr post-transfection, the cells were washed three times with ≈0.6 mL of PBS, fixed with PFA for 10 min at room temperature, washed three times, incubated with PBS + 50 mM NH4Cl for 10 min, washed three times, incubated with PBS + 0.1% Triton x-100 for 5 min, washed three times, stained with DAPI, washed five times, and mounted on slides with ImmuMount. Images were recorded in the GFP and DAPI channels.

@@ -31,13 +31,25 @@ To examine whether there are sex differences in exploration, we trained male and
 
 Age-matched male and female wild-type mice (n = 32, 16 per sex, strain B6129SF1/J, powered to detect differences in decision making Chen et al., 2021b) were trained to perform a restless two-armed spatial bandit task in touch-screen operant chambers (Figure 1A). Animals were presented with two physically identical targets (squares) on the left and right of the screen each trial and indicated their choices by nose poking at one of two target locations. Each location offered some probability of reward, which changed slowly and randomly across trials, and independently across targets. The dynamic reward contingencies encouraged the animals to constantly balance exploration and exploitation. The animals had to exploit a good option when it was found, but also occasionally explore the other option, whose drifting values meant that it could become better at any time. Mice performed two repetitions of four consecutive sessions of the restless bandit task, measuring eight sessions in total. Each session consisted of 300 trials.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69748/elife-69748-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic of the mouse touchscreen chamber with the restless two-armed bandit task and trial structure. (B) Average probability of obtaining reward compared to the chance probability of reward across individuals (dots). (C) Average probability of obtaining reward compared to the chance probability of reward across sexes. (D) Average response time across sexes. Females responded significantly faster than did males. (E) (left) A hidden Markov model that labeled exploration and exploitation as latent goal states underlying observed choices. This model includes an exploitation state for each arm and an exploration state where the subject chooses one of the arms randomly. (right) Reward probabilities (lines) and choices (dots) for 300 example trials for a given mouse. Shaded areas highlight explore-labeled choices. (F, G) Average (F) and distribution (G) of the percentage of Hidden Markov Model (HMM)-labeled exploratory trials in females and males. (H) Dynamic landscape of the fitted HMMs for males and females. The model fit to males had deeper exploratory states, with higher activation energy between the states. * indicates p < 0.05. Graphs depict mean ± SEM across animals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69748/elife-69748-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** There is no change in reward acquisition, response time, and reward retrieval time across days. (A) Average probability of obtaining reward compared to the chance probability of reward across days in male and female mice. (B) Average response time across days in male and female mice. (C) Average reward retrieval time across days in male and female mice.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69748/elife-69748-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Related to Figure 1D. (A) The tetrachoric correlation (r) between RL model-inferred explore-exploit states and HMM-inferred states. (B) The standardized regression coefficient (beta coefficients) of RL model-inferred states and HMM-inferred states in predicting response time. (C) The distribution of times between switch decisions (inter-switch intervals). A single probability of switching would produce exponentially distributed inter-switch intervals. Orange line, the maximum likelihood fit for a single discrete exponential distribution. Solid blue line, a mixture of two exponential distributions, with each component distribution in dotted blue. The two components reflect one fast-switching time constant (average interval, 1.7 trials) and one persistent time constant (6.8 trials). The right plot is the same as the left, but with a log scale. Inset is the log likelihood of mixtures of different numbers of exponential distributions. (D) Probability of choice as a function of value differences between choices for exploratory and exploitative states. (E) Difference in choice response time between explore and exploit choices. (F) The probability of animals switching targets on the next trial, given the current trial’s outcome and latent state. (G) Difference in choice response time between explore and exploit choices. There is no significant difference in retrieval time between two latent states, suggesting that exploration was not merely disengagement from the task. * indicates p < 0.05. Graphs depict mean ± SEM across animals.
+
 It is worth noting that unlike other versions of bandit tasks such as the reversal learning task, in the restless bandit task, animals were encouraged to learn about the most rewarding choice(s). There is no asymptotic performance during the task because the reward probability of each choice constantly changes. The performance is best measured by the amount of obtained reward. Prior to data collection, both male and female mice had learned to perform this task in the touchscreen operant chamber. To examine whether mice had learned the task, we first calculated the average probability of reward acquisition across sessions in males and females (Figure 1—figure supplement 1A). There was no significant change in the reward acquisition performance across sessions in both sexes, demonstrating that both males and females have learned to perform the task and had reached an asymptotic level of performance (two-way repeated measure ANOVA, main effect of session, p = 0.71). Then we examine two other primary behavioral metrics across sessions that are associated with learning: response time and reward retrieval time (Figure 1—figure supplement 1A,C). Response time was calculated as the time elapsed between the display onset and the time when the nose poke response was completed. Reward retrieval time was measured as the time elapsed between nose-poke response and magazine entry for reward collection. There was no significant change in response time (two-way repeated measure ANOVA, main effect of session, p = 0.39) and reward retrieval time (main effect of session, p = 0.71) across sessions in both sexes, which again demonstrated that both sexes have learned how to perform the task. Since both sexes have learned to perform the task prior to data collection, variabilities in task performance are results of how animals learned and adapted their choices in response to the changing reward contingencies.
 
 To examine task performance, we first calculated the average probability of reward obtained in males and females. Because reward schedules were stochastic, sessions could differ slightly in the amount of reward that was available. We therefore compared performance against the average probability of reward if chosen randomly within each session. Regardless of sex, mice were able to earn reward more frequently than chance (Figure 1B, two-way ANOVA, F(1, 60) = 228.9, p < 0.0001). There was no significant sex difference in the probability of rewards acquired above chance (Figure 1C, main effect of sex, F(1, 30) = 0.05, p = 0.83). While the mean of percent reward obtained did not differ across sexes, we consider the possibility that the distribution of reward acquisition in males and females might be different. We conducted the Kolmogorov-Smirnov (KS) test, which takes into account not only the means of the distributions but also the shapes of the distributions. The KS test suggested that males and females are not just not significantly different in their reward acquisition performance (Kolmogorov-Smirnov D = 0.1875, p = 0.94), but that males and females have the same distributions for reward acquisition. This result demonstrates equivalently strong understanding and identical performance of the task in males and females.
 
 Similar levels of accuracy do not require or imply a similar approach to the task. Our previous study suggested that males and females could achieve similar learning performance via divergent decision making strategies (Chen et al., 2021b). However, different strategies might take different amounts of time to execute (Chen et al., 2021b; Filipowicz et al., 2019; Kool et al., 2010; Kurdi et al., 2019). Therefore, we examined the response time, which was calculated as time elapsed between choice display onset and nose poke response as recorded by the touchscreen chamber, in both males and females. If males and females had adopted different strategies here, then we might expect response time to systematically differ between males and females, despite the similarities in learning performance. Indeed, females responded significantly faster than did males (Figure 1C, main effect of sex, t (30) = 3.52, p = 0.0014), suggesting that decision making computations may differ across sexes and, if so, that the strategies that tended to be used by females resulted in faster choice response time than those used by males.
 
-## A hidden Markov Model (HMM) identifies distinct features of exploratory and exploitative choices in mice
+### A hidden Markov Model (HMM) identifies distinct features of exploratory and exploitative choices in mice
 
 Despite similar performance, response time differences suggested that males and females employed different strategies in this task. One possible difference was sex differences in the level of exploration. Prior research has shown that exploratory choices take longer than exploitative choices (Ebitz et al., 2019; Ebitz et al., 2018). Therefore, perhaps males took longer to make a choice because a greater proportion of their choices were exploratory. To test this hypothesis, we first need a method to label each choice as an exploratory choice or an exploitative choice. In some previous studies, reinforcement learning (RL) models were used to quantify exploration (Cinotti et al., 2019; Daw et al., 2006; Ishii et al., 2002; Pearson et al., 2009) via labeling choices that deviate from model values as exploratory. This approach is based on the rationale that exploration is a non-reward maximizing goal. However, a non-reward maximizing goal would produce choices that are orthogonal to reward value, not errors of reward maximization (Averbeck et al., 2017; Ebitz et al., 2018). Therefore, recent studies have turned to an approach, which models exploration as a latent state underlying behavior via a Hidden Markov model (HMM), rather than inferring it from assumptions about values and learning (Ebitz et al., 2019; Ebitz et al., 2018; Muller et al., 2019).
 
@@ -55,13 +67,13 @@ Explore-labeled choices were non-reward-maximizing: they were orthogonal to rewa
 
 Differences in response time across HMM-inferred states suggested that these labels produced meaningful differences in primary behavioral metrics. To eliminate the possibility that exploration was merely disengagement from the task, we examined average reward retrieval time during exploratory and exploitative states. There was no significant difference in reward retrieval time between two states (Figure 1—figure supplement 1G, t-test, t(31) = 0.05, p = 0.95), suggesting that animals were not more disengaged from the task during exploration than exploitation. They were only slower in making a decision. Together, these results demonstrated that HMM-labeled exploration was meaningful, non-reward-maximizing, and accompanied by enhanced reward learning, matching the normative definition of exploration.
 
-## Males made more exploratory choices than females because they explored for longer periods of time once they started
+### Males made more exploratory choices than females because they explored for longer periods of time once they started
 
 With more confidence in the validity of HMM-inferred states, we found that males, on average, were more likely to be in the exploratory regime than the exploitative one, with 72.9% ± 11.5% STD of trials labeled as exploratory (Figure 1E). Females explored much less with only 55.4% ± 20.4% STD of trials being exploratory (Figure 1F, t-test, t(30) = 2.98, p = 0.0056; 95% CI for the difference between the sexes = [5.5%, 29.3%]). As groups, males and females were reasonably, but not perfectly discriminable in terms of the proportion of exploratory choices (Figure 1G, receiver operating characteristic analysis, AUC = 0.76 ± 0.09, 95% CI for the difference = [0.59, 0.93], p = 0.013). These differences were largely driven by the greater male tendency to keep exploring once they started. Males repeated exploration 92.1 % ( ± 3.4 % STD) of the time, while females stopped exploring and committed to a choice more quickly, repeating exploration only 83.1 % ( ± 16.8 % STD) of the time (t-test, t(30) = 2.09, P = 0.045, 95% CI for the difference = [0.2%, 17.8%]). There were no significant differences in the other parameter of the HMM (probability of repeating exploitation: males = 83.5% ± 3.7%; females = 79.7 ± 22.1 %; t(30) = 0.69, p = 0.5). Since males had more exploratory trials, which took longer, we tested the possibility that the sex difference in response time was due to prolonged exploration in male by calculating a two-way ANOVA between explore-exploit state and sex in predicting response time. There was a significant main effect of state (main effect of state: F (1,30) = 13.07, p = 0.0011), but males were slower during females during both exploitation and exploration (main effect of sex, F(1,30) = 14.15, p = 0.0007) and there was no significant interaction (F (1,30) = 0.279, p = 0.60). We also examine whether the probability of exploration changed over trials or across sessions by calculating the probability of exploration early, mid, and late within one session and across sessions. However, we failed to see changes in the amount of exploration within sessions and across sessions in both males and females.
 
 Although sex differences in model parameters were modest, analyzing the full dynamics of the fitted HMMs again supported a robust sex difference in the tendency to explore (see Materials and methods). In models fit to males, exploration was a deeper, more ‘sticky’ behavioral state (Figure 1H, stationary probability of exploration = 68.0% ± 8.5% STD), compared to models fit to females, where exploration and exploitation were more closely matched (54.4% ± 18.4% STD; different from males: t(30) = 2.68, p = 0.012, 95% CI for the difference = [3.2%, 23.9%]). This suggests that males were more likely to get ‘stuck’ in an extended exploratory period, requiring more energy to escape from exploring and start exploiting a good choice.
 
-## Multiple variables in reinforcement learning models may be the cause of increased exploration
+### Multiple variables in reinforcement learning models may be the cause of increased exploration
 
 The results from the HMM analyses suggest that males were, on average, more exploratory than females, and not because they were more likely to initiate exploration, but because they were more likely to become ‘stuck’ in exploration. This suggests that there were sex differences in the animals’ approach to this task. However, a crucial question remained unanswered: what computational differences made the males more exploratory? To address this question, we turned to reinforcement learning (RL) modeling to look for individual variability in latent cognitive parameters that could influence exploration and exploitation (Daw et al., 2006; Ishii et al., 2002; Jepma and Nieuwenhuis, 2011; Pearson et al., 2009).
 
@@ -71,11 +83,19 @@ RL models include multiple parameters that could influence exploration. Consider
 
 **Figure 2.:** (A) Exploration occurs most often when option values are close together, illustrated by the gray shaded boxes in the value-choice functions. Both decreasing inverse temperature (β) and decreasing learning rate increases exploration because each manipulation changes the amount of time spent in the high exploration zone, although the mechanisms are different. Decreasing inverse temperature (β) widens the zone by flattening the value-choice function and increasing decision noise. Decreasing learning rates (α) keeps learners in the zone for longer. (B) Probability of exploration from 10,000 different reinforcement learning agents performing this task, initialized at different random combinations of inverse temperatures (β) and learning rates (α). Marginal relationships between decision noise (top) and learning rate (bottom) are shown here. (C) Heatmap of all pairwise combinations of learning rate and inverse temperature.
 
-## Sex differences in exploration was due to changes in the learning rate - females had higher learning rates than males
+### Sex differences in exploration was due to changes in the learning rate - females had higher learning rates than males
 
 The HMM suggested that males and females had different levels of exploration, but it did not provide insight into the latent, cognitive processes behind these differences. Fortunately, RL models allow us to identify differences in a variety of latent cognitive variables that could influence exploration, either alone or in combination. However, our ability to make inferences about changes in model parameters is highly sensitive to the correct specification of the model, so we first had to identify the best-fitting RL model for these animals.
 
 There are many ways to parameterize RL models (Katahira, 2018), the majority of which can be put in three categories: value-dependent learning terms, value-independent bias terms, and decision noise/randomness terms. Previous studies have shown the effect of various RL parameters on decision making, including learning terms such as asymmetrical learning rate (Frank et al., 2007; Gershman, 2016), bias terms such as choice bias (Katahira, 2018; Wilson and Collins, 2019), noise terms such as inverse temperature and lapse rate (Economides et al., 2015; Wilson and Collins, 2019). Here, we compared seven reinforcement learning models that made different assumptions about the latent processes mice might be employing via different combinations of learning, bias, and noise terms. These models included: (1) a ‘random’ model with some overall bias for one choice over the other, (2) a ‘noisy win stay lose shift’ model that assumes a win stay lose shift policy with some level of randomness, (3) a two-parameter ‘RL’ model with a consistent learning rate and some inverse temperature that captures decision noise, (4) a three-parameter ‘RLε’ model with a consistent learning rate, and inverse temperature that captures value-based decision noise, and a value-independent noise, (5) a four-parameter ‘RLCK’ model that captures both value-based and value-independent decision with separate parameters for learning rate, decision noise, choice bias, and choice stickiness, (6) a five-parameter ‘RLCKγ’ model that incorporates differential learning rate for rewarded and unrewarded outcomes on top of the ‘RLCK’ model, (7) a five-parameter ‘RLCKη’ model that adds a parameter that tunes the weight between value-based and choice-based decision to the ‘RLCK’ model (see Materials and methods, Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69748/elife-69748-fig3-v3.jpg)
+
+**Figure 3.:** (A) A diagram of latent parameters that capture learning (α), bias (αc), inverse temperature (β) in reinforcement learning models. The models tested used a combination of these parameters (see Materials and methods). (B) Model comparison across seven reinforcement learning models with various parameter combinations for males and females. The four-parameter reinforcement learning-choice kernel (RLCK) model has the highest relative likelihood in both sexes. (C) Model agreement across seven reinforcement learning models, which measures how well a model predicts the actual choices of animals. (D) All four parameters in the best fit RLCK model across sexes. Learning rate (α) was significantly higher in females than males. (E) Distribution of learning rate across sexes. (F) (left) Simulation of reward acquisition of RL agent with different combinations of learning rate (α) and decision noise (β-1). Different combinations of learning rate and decision noise can result in the same level of reward performance. Average learning rate and decision noise is overlaid on the heatmap for males and females. (right) relationship between reward acquisition and learning rate or decision noise separately. High learning rate is not equivalent to better learning performance. (G) Learning rate in females increased across days, suggestive of meta learning. * indicates p < 0.05. Graphs depict mean ± SEM across animals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69748/elife-69748-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Actual choices (gray) and simulated choices (green) from the best fit model (RLCK) of two example animals. Predictions from the matching law are illustrated as a contrast to the best-fitting RL model.
 
 Although model fitting was slightly different across sexes, in both males and females, the “RLCK” model, four-parameter model with value and choice kernel updating policies, best characterized animals’ choice behaviors in this task among all seven models (Figure 3B). The fact that the ‘RLCK’ model was the best-fit model in both males and females does not mean both sexes had the same strategy or that RL modeling cannot capture those strategies. Instead, this may suggest that strategic differences between sexes may be more a matter of degree (i.e.: differences in the specific values of model parameters), rather than a matter of categorically distinct computation. This interpretation also makes the most sense in light of the biology of sex differences, which produce few (if any) truly categorically distinct changes in neural function, but rather serve to bias neural systems across sexes in multiple complex ways.
 
@@ -87,11 +107,19 @@ While females had significantly higher learning rate (α) than males, they did n
 
 One interesting finding is that, when compared learning rate across sessions within sex, females, but not males, showed increased learning rate over experience with task (Figure 3G, repeated measures ANOVA, female: main effect of time, F (2.26,33.97) = 5.27, p = 0.008; male: main effect of time, F(2.5,37.52) = 0.23, p = 0.84). This points to potential sex differences in meta-learning that could contribute to the differential strategies across sexes.
 
-## Females learned more during exploratory choices than males
+### Females learned more during exploratory choices than males
 
 The results of HMM model and RL models revealed significant sex differences in exploration, paralleled by sex differences in rate of learning. What remains unclear is how sex, explore-exploit states, and reward outcomes all interact together to influence the animals’ choices. Therefore, we conducted a four-way repeated measures ANOVA to examine how (1) positive and negative outcomes, (2) explore-exploit states, (3) sex, and (4) subject identity (nested in sex) all came together to influence choice: whether animals would repeat their last choice (stay) or try a different option (switch; Supplementary file 1). This four-way repeated measure ANOVA allowed us to understand the main effect of sex, state, and outcome, as well as all pair and triplet-wise interaction effects, on how animals learned from previous rewards. Note that in previous analyses, we used subject averaged data but since subject average (16 subjects each sex) is underpowered to detect a three-way interaction effect, we used session averaged data to increase the power to detect any effects across sex, state, and outcome.
 
 The results revealed an expected significant main effect of outcome on stay-switch decisions (main effect of outcome, p < 0.00001). This effect was driven by the tendency of animals to repeat the previous choice (i.e.: not switching) after obtaining a reward (post hoc t-test compared to chance at 0.50, mean = 0.75, 95% CI = [0.74, 0.77], t(255)=34.33, p < 0.0001) and a much smaller tendency to switch more often than chance after reward omission (mean = 0.52, 95% CI = [0.50, 0.55], post hoc t-test, t(255) = 2.05, p = 0.04). The tendency to switch or stay also differed by sex, with females more likely to repeat a previous choice and males more likely to switch (main effect of sex, p < 0.00001; post-hoc t-test on p(switch): t(254) = 4.12, p < 0.0001). There was also a significant interaction effect between sex and outcome (sex X reward interaction, p < 0.00001). To understand how reward and reward omission differentially affect choice across sexes, we conducted post-hoc win-stay lose-shift analyses. We found that female mice displayed more win-stay behaviors, indicating that they were more likely than the males to repeat behaviors that produced reward on the previous trial (Figure 4A, sex X reward interaction, p < 0.000001, Supplementary file 1; post hoc t-test: t(254) = 5.53, p < 0.0001). As groups, males and females were reasonably, but not perfectly discriminable in terms of the proportion of win stay choices (Figure 4B, receiver operating characteristic analysis, AUC = 0.74 ± 0.09, 95% CI for the difference = [0.56, 0.92], p = 0.0195). In contrast, male mice tended to shift even when the previous choice was rewarded.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69748/elife-69748-fig4-v3.jpg)
+
+**Figure 4.:** (A, B) Percent win stay behavior (A: average; B: distribution) reveals that females were more likely to stay with the same choice after a reward. (C) Average percentage of lose shift behavior across sexes. (D) Probability of shifting after a loss during explore or exploit trials. (E) Probability of staying after a win during explore or exploit trials. (F) The probability of males and females switching targets on the next trial, given the current trial’s outcome and latent state. Females learned more only during exploratory trials. (G, H) Average (G) and distribution (H) of percentage of mutual information across all trials in females and males reveals that females use more information about past trials (choice and outcome) in making future decisions. * indicates p < 0.05. Graphs depict mean ± SEM across animals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69748/elife-69748-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** The probability of males and females switching targets on the next trial, given the current trial’s outcome and latent state. Females showed increased reward learning only during exploratory state (Supplementary file 1, sex X reward X state interaction, p = 0.0438).
 
 There was no significant sex difference in learning from losses (Figure 4C and t(25) = 1.40, p = 0.16), but this did not mean that sex differences in learning were solely due to sex differences in learning from wins. There were at least two ways that we could observe an equivalent tendency to lose-shift across sexes in this task. One possibility is that females only learn more from positive outcomes, but not negative ones. However, the other possibility is that this lack of a difference in lose-shift behaviors between males and females was an artifact of the tendency of males to explore more frequently. Since males spend more time exploring (Figure 1E) and learning from both wins and losses is enhanced during exploration (Figure 1—figure supplement 2F), males could lose-shift less frequently than females during both exploration and exploitation, yet still lose-shift exactly as much as females because a greater proportion of their choices were exploratory.
 
@@ -115,39 +143,93 @@ Rodent operant testing is frequently used to assess cognitive functions. This is
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>B6129SF1/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX: 101,043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3</td>
+      <td>Python</td>
+      <td>SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2013a</td>
+      <td>MathWorks</td>
+      <td>SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Thirty-two BL6129SF1/J mice (16 males and 16 females) were obtained from Jackson Laboratories (stock #101043). Mice arrived at the lab at 7 weeks of age, and they were housed in groups of four with ad libitum access to water while being mildly food restricted (85–95% of free feeding weight) for the experiment. Animals engaging in operant testing were housed in a 0900–2100 hours reversed light cycle to permit testing during the dark period. Before operant chamber training, animals were food restricted to 85–90% of free feeding body weight. Operant testing occurred five days per week (Monday-Friday). All animals were cared for according to the guidelines of the National Institution of Health and the University of Minnesota.
 
-## Apparatus
+### Apparatus
 
 Sixteen identical triangular touchscreen operant chambers (Lafayette Instrument Co., Lafayette, IN) were used for training and testing. Two walls were black acrylic plastic. The third wall housed the touchscreen and was positioned directly opposite the magazine. The magazine provided liquid reinforcer (Ensure) delivered by a peristaltic pump, typically 7 µl (280 ms pump duration). ABET-II software (Lafayette Instrument Co., Lafayette, IN) was used to program operant schedules and to analyze all data from training and testing.
 
-## Behavioral task
+### Behavioral task
 
-## Two-armed spatial restless bandit task
+#### Two-armed spatial restless bandit task
 
 Animals were trained to perform a two-armed spatial restless bandit task in the touchscreen operant chamber. Each trial, animals were presented with two identical squares on the left and right side of the screen. Nose poke to one of the target locations on the touchscreen was required to register a response. Each location is associated with some probability of reward, which changes independently over time. For every trial, there is a 10 % chance that the reward probability of a given arm will increase or decrease by 10 %. All the walks were generated randomly with a few criteria: (1) the overall reward probabilities of two arms are within 2 % of each other, preventing one arm being overly better than the other, (2) the reward probability cannot go down to 0 % or go up to 100%, (3) there are no 30 consecutive trials where the reward probabilities of both arms are lower than 20 % to ensure motivation. Animals ran a simple deterministic schedule on Monday to re-adapt to operant chamber after weekends off and ran a different restless bandit task each day from Tuesday to Friday. Animals ran for two rounds of four consecutive days and within each day, animals completed either 300 trials or spent a maximum of two hours in the operant chamber. On average across all sessions, animals performed 276.5 trials with a standard deviation of 8.6 trials (male average: 253.7 trials, sd = 15.4; female average 299.3 trials, sd = 0.74). Data was recorded by the ABET II system and was exported for further analysis. All computational modeling was conducted using python. All behavioral data have been deposited in generic database (Dyrad) with accession link https://doi.org/10.5061/dryad.z612jm6c0. Codes used can be found at https://github.com/CathySChen/restlessBandit2021 (Chen, 2021a copy archived at swh:1:rev:a0a377707627f93f3637e1520f9d1304121dcf1a).
 
-## Data analysis
+### Data analysis
 
-## General analysis techniques
+#### General analysis techniques
 
 Data was analyzed with custom PYTHON, MATLAB, and Prism eight scripts. Generalized linear models, ANOVA, and t-test were used to determine sex differences over time, unless otherwise specified. p Values were compared against the standard ɑ = 0.05 threshold. The sample size is n = 16 for both males and females for all statistical tests. No animal was excluded from the experiment. One outlier was removed in one analysis using ROUT method (with Q set to 1%). This outlier was from the animal that ran the lowest number of total trials. Statistics for both no outlier removal and outlier removal were reported in the result. All statistical tests used and statistical details were reported in the results. All figures depict mean ± SEM.
 
-## Mixture model
+#### Mixture model
 
 We first asked whether there were different behavioral dynamics that might correspond to exploration and exploitation. Exploration and exploitation take place on different time scales. In RL agents, for example, exploration is typically implemented via adding noise or indeterminacy to a decision-rule. The identity of choices that are caused by this noise—the exploratory choices—will thus switch more frequently than the identity of choices that depend on option value. We should see short runs of exploratory choices and long runs of exploitative ones (Ebitz et al., 2018). To the extent that choice runs end probabilistically (an assumption of the HMM framework), choice run durations (inter-switch intervals) will be exponentially distributed (Berg, 1993). Since there exist multiple causal regimes (such as exploration and exploitation), inter-switch intervals will be distributed as a mixture of multiple exponential distributions (Figure 1—figure supplement 2A). Because trials are discrete, rather than continuous, we fit mixtures of the discrete equivalent to the exponential distribution, the geometric distribution. We examined the distribution of 24,836 interswitch intervals. Adding a second mixing distribution significantly improved model fit (one-component, one-parameter mixture log-likelihood: –44555, two-component, three-parameter: –41656; likelihood ratio test, p < 10–32). Adding additional mixing distributions continued to improve model fit, a common observation in mixture modeling. However, the continued improvement was substantially less than the leap from one to two components (Figure 1—figure supplement 2A; three-component: –41431, four-component: –41412) and additional mixtures beyond two had weights below 3 %. This suggests that a mixture of one fast-switching regime and one slow-switching regime was the most parsimonious explanation for the data (McLachlan and Peel, 2004).
 
-## Hidden Markov model (HMM)
+#### Hidden Markov model (HMM)
 
-In order to identify when animals were exploring or exploiting, we fit an HMM. In an HMM framework, choices (y) are ‘emissions’ that are generated by an unobserved decision process that is in some latent, hidden state (z). Latent states are defined by both the probability of making each choice (k, out of Nk possible options), and by the probability of transitioning from each state to every other state. Our model consisted of two types of states, the explore state and the exploit state. The emissions model for the explore state was uniform across the options. The emissions model for the explore state was uniform across the options:p(yt=k|zt=explore)=1Nk
+In order to identify when animals were exploring or exploiting, we fit an HMM. In an HMM framework, choices (y) are ‘emissions’ that are generated by an unobserved decision process that is in some latent, hidden state (z). Latent states are defined by both the probability of making each choice (k, out of Nk possible options), and by the probability of transitioning from each state to every other state. Our model consisted of two types of states, the explore state and the exploit state. The emissions model for the explore state was uniform across the options. The emissions model for the explore state was uniform across the options:
 
-This is simply the maximum entropy distribution for a categorical variable - the distribution that makes the fewest number of assumptions about the true distribution and thus does not bias the model towards or away from any particular type of high-entropy choice period. This does not require, imply, impose, or exclude that decision-making happening under exploration is random. Ebitz et al., 2019 have shown that exploration was highly structured and information-maximizing, despite being modeled as a uniform distribution over choices (Ebitz et al., 2020; Ebitz et al., 2019). Because exploitation involves repeated sampling of each option, exploit states only permitted choice emissions that matched one option. That is:{p(yt=k|zt=exploiti,k∈exploiti)=1p(yt=k|zt=exploiti,k∉exploiti)=0
+$$
+p(y_{t}=k|z_{t}=explore)=\frac{1}{N_{k}}
+$$
 
-The latent states in this model are Markovian, meaning that they are time-independent. They depend only on the most recent state (zt):p(zt|zt−1,yt−1,…,z1,y1)=p(zt∨zt−1)
+This is simply the maximum entropy distribution for a categorical variable - the distribution that makes the fewest number of assumptions about the true distribution and thus does not bias the model towards or away from any particular type of high-entropy choice period. This does not require, imply, impose, or exclude that decision-making happening under exploration is random. Ebitz et al., 2019 have shown that exploration was highly structured and information-maximizing, despite being modeled as a uniform distribution over choices (Ebitz et al., 2020; Ebitz et al., 2019). Because exploitation involves repeated sampling of each option, exploit states only permitted choice emissions that matched one option. That is:
 
-This means that we can describe the entire pattern of dynamics in terms of a single transition matrix. This matrix is a system of stochastic equations describing the one-time-step probability of transitioning between every combination of past and future states (i, j).p(zt=i∨zt−1=j)
+$$
+{p(y_{t}=k|z_{t}=exploit_{i},k\inexploit_{i})=1p(y_{t}=k|z_{t}=exploit_{i},k∉exploit_{i})=0
+$$
+
+The latent states in this model are Markovian, meaning that they are time-independent. They depend only on the most recent state (zt):
+
+$$
+p(z_{t}|z_{t−1},y_{t−1},…,z_{1},y_{1})=p(z_{t}∨z_{t−1})
+$$
+
+This means that we can describe the entire pattern of dynamics in terms of a single transition matrix. This matrix is a system of stochastic equations describing the one-time-step probability of transitioning between every combination of past and future states (i, j).
+
+$$
+p(z_{t}=i∨z_{t−1}=j)
+$$
 
 Here, there were three possible states (two exploit states and one explore state) but parameters were tied across exploit states such that each exploit state had the same probability of beginning (from exploring) and of sustaining itself. Transitions out of the exploration, into exploitative states, were similarly tied. The model also assumed that the mice had to pass through exploration in order to start exploiting a new option, even if only for a single trial. This is because the utility of exploration is to maximize information about the environment, as defined in both animal foraging literature and reinforcement learning models (Mehlhorn et al., 2015). If an animal switches from a bout of exploiting one option to another option, that very first trial after switching should be exploratory because the outcome or reward contingency of that new option is unknown and that behavior of switching aims to gain information. Through fixing the emissions model, constraining the structure of the transmission matrix, and tying the parameters, the final HMM had only two free parameters: one corresponding to the probability of exploring, given exploration on the last trial, and one corresponding to the probability of exploiting, given exploitation on the last trial.
 
@@ -157,60 +239,124 @@ To account for the effect of reward on choice dynamics, we extended the two-para
 
 To account for the effect of biased exploitation on the probability of transitioning between states, we also considered an unrestricted HMM model with no parameter tying (four parameter ntHMM), where we treat exploiting the left side and exploiting the right side as two separate exploit states and allow differential transition probability to each exploit state. However, the ntHMM did not improve model fit with almost identical log-likelihood (two-parameter original HMM: log-likelihood = –1424.0; four-parameter ntHMM: log-likelihood = –1423.8). Then we compared two models by calculating the AIC/BIC values for both models, which penalized extra parameters in the no parameter-tying HMM. The AIC test favored the original two-parameter model (AIC: two-parameter original HMM: AIC = 2976.1; four-parameter ntHMM: AIC = 3103.5; relative likelihood (AIC weight) of the four-parameter ntHMM <10^–28). The BIC test also favored the simpler two-parameter model (BIC: two-parameter original HMM: BIC = 3562.8; four-parameter ntHMM: BIC = 4276.9; relative likelihood (BIC weight) of the four-parameter ioHMM <10^–155). In the light of the model comparison results, we decided to fit the simpler two-parameter HMM model.
 
-## Analyzing model dynamics
+#### Analyzing model dynamics
 
 In order to understand how exploration and exploitation changed across males and females, we analyzed the HMMs. The term ‘dynamics’ means the rules or laws that govern how a system evolves over time. Here, the system of interest was decision making behavior, specifically at the level of the hidden explore and exploit goals. In fitting our HMMs, we were fitting a set of equations that describe the dynamics of these goals: the probability of transitions between exploration and exploitation and vice versa. Of course, having a set of fitted equations is a far cry from understanding them. To develop an intuition for how sex altered the dynamics of exploration, we therefore turned to analytical tools that allowed us to directly characterize the energetic landscape of behavior (Figure 1H).
 
-In statistical mechanics, processes within a system (like a decision-maker at some moment in time) occupy states (like exploration or exploitation). States have energy associated with them, related to the long-time scale probability of observing a process in those states. A low-energy state is one that is very stable and deep, much like a valley between two high peaks. Low-energy states will be over-represented in the system. A high energy state, like a ledge on the side of a mountain, is considerably less stable. High-energy states will be under-represented in the long-term behavior of the system. The probability of observing a process in a given state i will is related to the energy of that state (Ei) via the Boltzman distribution:pi=1Ze−EikBT
+In statistical mechanics, processes within a system (like a decision-maker at some moment in time) occupy states (like exploration or exploitation). States have energy associated with them, related to the long-time scale probability of observing a process in those states. A low-energy state is one that is very stable and deep, much like a valley between two high peaks. Low-energy states will be over-represented in the system. A high energy state, like a ledge on the side of a mountain, is considerably less stable. High-energy states will be under-represented in the long-term behavior of the system. The probability of observing a process in a given state i will is related to the energy of that state (Ei) via the Boltzman distribution:
 
-where Z is the partition function of the system, kB is the Boltzman constant, and T is the temperature of the system. If we focus on the ratio between two state probabilities, the partition functions cancel out and the relative occupancy of the two states is now a simple function of the difference in energy between them:pipj=e−(Ei−Ej)kBt
+$$
+p_{i}=\frac{1}{Z}e^{\frac{−E_{i}}{k_{B}T}}
+$$
 
-Rearranging, we can now express the difference in energy between two states as a function of the difference in the long-term probability of those states being occupied:ln(pipj)kBT=Ej−Ei
+where Z is the partition function of the system, kB is the Boltzman constant, and T is the temperature of the system. If we focus on the ratio between two state probabilities, the partition functions cancel out and the relative occupancy of the two states is now a simple function of the difference in energy between them:
 
-Meaning that the difference in the energetic depth of the states is proportional to the natural log of the probability of each state, up to some multiplicative factor kBT. To calculate the probability of exploration and exploitation (pi and pj), we calculated the stationary distribution of the fitted HMMs. The stationary distribution is the equilibrium probability distribution over states. This means that this distribution is the relative frequency of each state that we would observe if the model’s dynamics were run for an infinite period of time. Each entry of the model’s transition matrix reflects the probability that the mice would move from one state (e.g. exploring) to another (e.g. exploiting one of the options) at each moment in time. Because the parameters for all the exploitation states were tied, each transition matrix effectively had two states—an explore state and a generic exploit that described the dynamics of all exploit states. Each of the k animals had its own transition matrix (Ak), which describes how the entire system—an entire probability distribution over states—would evolve from time point to time point. We observe how the dynamics evolve any probability distribution over states (;;) by applying the dynamics to this distribution:πt+1=πtAk
+$$
+\frac{p_{i}}{p_{j}}=e^{\frac{−(E_{i}−E_{j})}{k_{B}t}}
+$$
 
-Over many time steps, ergodic systems will reach a point where the state distributions are unchanged by continued application of the transition matrix as the distribution of states reaches its equilibrium. That is, in stationary systems, there exists a stationary distribution, ;;*, such that:π=πAk
+Rearranging, we can now express the difference in energy between two states as a function of the difference in the long-term probability of those states being occupied:
+
+$$
+ln(\frac{p_{i}}{p_{j}})k_{B}T=E_{j}−E_{i}
+$$
+
+Meaning that the difference in the energetic depth of the states is proportional to the natural log of the probability of each state, up to some multiplicative factor kBT. To calculate the probability of exploration and exploitation (pi and pj), we calculated the stationary distribution of the fitted HMMs. The stationary distribution is the equilibrium probability distribution over states. This means that this distribution is the relative frequency of each state that we would observe if the model’s dynamics were run for an infinite period of time. Each entry of the model’s transition matrix reflects the probability that the mice would move from one state (e.g. exploring) to another (e.g. exploiting one of the options) at each moment in time. Because the parameters for all the exploitation states were tied, each transition matrix effectively had two states—an explore state and a generic exploit that described the dynamics of all exploit states. Each of the k animals had its own transition matrix (Ak), which describes how the entire system—an entire probability distribution over states—would evolve from time point to time point. We observe how the dynamics evolve any probability distribution over states (;;) by applying the dynamics to this distribution:
+
+$$
+\pi_{t+1}=\pi_{t}A_{k}
+$$
+
+Over many time steps, ergodic systems will reach a point where the state distributions are unchanged by continued application of the transition matrix as the distribution of states reaches its equilibrium. That is, in stationary systems, there exists a stationary distribution, ;;*, such that:
+
+$$
+\pi^{}=\pi^{}A_{k}
+$$
 
 If it exists, this distribution is a (normalized) left eigenvector of the transition matrix Ak with an eigenvalue of 1, so we solved for this eigenvector to determine the stationary distribution of each Ak. We then took an average of these stationary distributions within each sex, plugged them back into the Boltzman equations to calculate the relative energy (depth) of exploration and exploitation as illustrated in Figure 1H.
 
-In order to understand the dynamics of our coarse-grained system, we need to not only understand the depth of the two states, but also the height of the energetic barrier between them: the activation energy required to transition from exploration to exploitation and back again. Here, we build on an approach from chemical kinetics that relates the rate of transition between different conformational states to the energy required to affect these transitions. The Arrhenius equation relates the rate of transitions away from a state (k) to the activation energy required to escape that state (Ea):k=AeEakBT
+In order to understand the dynamics of our coarse-grained system, we need to not only understand the depth of the two states, but also the height of the energetic barrier between them: the activation energy required to transition from exploration to exploitation and back again. Here, we build on an approach from chemical kinetics that relates the rate of transition between different conformational states to the energy required to affect these transitions. The Arrhenius equation relates the rate of transitions away from a state (k) to the activation energy required to escape that state (Ea):
 
-where A is a constant pre-exponential factor related to the readiness of reactants to undergo the transformation. We will set this to one for convenience. Again, kBT is the product of temperature and the Boltzman constant. Note the similarities between this equation and the Boltzman distribution illustrated earlier. Rearranging this equation to solve for activation energy yields:Ea=−ln(kA)kBT
+$$
+k=Ae^{\frac{E_{a}}{k_{B}T}}
+$$
+
+where A is a constant pre-exponential factor related to the readiness of reactants to undergo the transformation. We will set this to one for convenience. Again, kBT is the product of temperature and the Boltzman constant. Note the similarities between this equation and the Boltzman distribution illustrated earlier. Rearranging this equation to solve for activation energy yields:
+
+$$
+E_{a}=−ln(\frac{k}{A})k_{B}T
+$$
 
 Thus, much like the relative depth of each state, activation energy is also proportional to some measurable function of behavior, up to some multiplicative factor kBT. Note that our approach has only identified the energy of three discrete states (an explore state, an exploit state, and the peak of the barrier between them). These are illustrated by tracing a continuous potential through these three points only to provide a physical intuition for these effects.
 
-## Reinforcement learning models
+#### Reinforcement learning models
 
 We fitted seven reinforcement learning (RL) models that could potentially characterize animals’ choice behaviors, with details of each RL model as below. To identify the model that best captured the computations used by the animals, we compared model fits across six reinforcement learning models with different combinations of latent parameters. AIC weights were calculated from AIC values of each model for each sex and compared across models to determine the best model with the highest relative likelihood.
 
-The first model assumes that animals choose between two arms randomly with some overall bias for one side over the other. This choice bias for choosing left side over right side is captured with a parameter b. The probability of choosing left side on trial t is:[1] “random”ptL=b
+The first model assumes that animals choose between two arms randomly with some overall bias for one side over the other. This choice bias for choosing left side over right side is captured with a parameter b. The probability of choosing left side on trial t is:
+
+$$
+p_{t}^{L}=b
+$$
 
 The second model is a noisy win-stay lose-shift (WSLS) model that adapts choices with regards to outcomes. This model assumes a win-stay lose-shift policy that is to repeat a rewarded choice and to switch to the other choice if not rewarded. Furthermore, this model includes a parameter ϵ that captures the level of randomness, allowing a stochastic application of the win-stay lose-shift policy. The probability of choosing arm k on trial t is:
 
-ptk={1−ϵ2,if(ct−1=k∧rt−1=1∨ct−1≠k∧rt−1=0)ϵ2,if(ct−1≠k∧rt−1=1∨ct−1=k∧rt−1=0)[2] “noisy WSLS”
+$p_{t}^{k}={1−\frac{ϵ}{2},if(c_{t−1}=k∧r_{t−1}=1∨c_{t−1}\neqk∧r_{t−1}=0)\frac{ϵ}{2},if(c_{t−1}\neqk∧r_{t−1}=1∨c_{t−1}=k∧r_{t−1}=0)$[2] “noisy WSLS”
 
 ct indicates the choice on trial t and rt is a binary variable that indicates whether or not trial t was rewarded.
 
-The third model is a basic delta-rule reinforcement learning (RL) model. This two-parameter model assumes that animals learn by consistently updating Q values, which are values defined for options (left and right side). These Q values, in turn, dictate what choice to make next. For example, in a multi-armed bandit task, Qtk is the value estimation of how good arm k at trial t, and is updated based on the reward outcome of each trial:[3] ”RL”Qt+1k=Qtk+α(rt−Qtk)
+The third model is a basic delta-rule reinforcement learning (RL) model. This two-parameter model assumes that animals learn by consistently updating Q values, which are values defined for options (left and right side). These Q values, in turn, dictate what choice to make next. For example, in a multi-armed bandit task, Qtk is the value estimation of how good arm k at trial t, and is updated based on the reward outcome of each trial:
 
-In each trial, rt – Qtk captures the reward prediction error (RPE), which is the difference between expected outcome and the actual outcome. The parameter a is the learning rate, which determines the rate of updating RPE. With Q values defined for each arm, choice selection on each trial was performed based on a Softmax probability distribution:p(at+1=k)=eβQtk∑jeβQtj
+$$
+Q_{t+1}^{k}=Q_{t}^{k}+\alpha(r_{t}−Q_{t}^{k})
+$$
+
+In each trial, rt – Qtk captures the reward prediction error (RPE), which is the difference between expected outcome and the actual outcome. The parameter a is the learning rate, which determines the rate of updating RPE. With Q values defined for each arm, choice selection on each trial was performed based on a Softmax probability distribution:
+
+$$
+p(a_{t+1}=k)=\frac{e^{\betaQ_{t}^{k}}}{\sumje^{\betaQ_{t}^{j}}}
+$$
 
 , where inverse temperature β determines the level of random decision noise.
 
-The fourth model incorporates a lapse rate parameter (ε), which reduces the influence of value-independent choices on the estimation of the remaining parameters, capturing any noises outside the softmax value function.[4] “RLε”p(at+1=k)=ε+(1−2ε)eβQtk∑jeβQtj
+The fourth model incorporates a lapse rate parameter (ε), which reduces the influence of value-independent choices on the estimation of the remaining parameters, capturing any noises outside the softmax value function.
 
-The fifth model incorporates a choice updating rules in addition to the value updating rule in model 3. The model assumes that choice kernel, which captures the outcome-independent tendency to repeat a previous choice, also influences decision making. The choice kernel updating rule is similar to the value-updating rule:[5] “RLCK”CKt+1k=CKtk+αc(atk−CKtk)
+$$
+p(a_{t+1}=k)=\epsilon+(1−2\epsilon)\frac{e^{\betaQ_{t}^{k}}}{\sumje^{\betaQ_{t}^{j}}}
+$$
 
-, where atk is a binary variable that indicates whether or not arm k was chosen on trial t and at is choice kernel updating rate, characterizing choice persistence. The value and choice kernel term were combined to compute the probability of choosing arm k on trial t:ptk=e(βQtk+βcCKtk)∑je(βQtj+βcCKtj)
+The fifth model incorporates a choice updating rules in addition to the value updating rule in model 3. The model assumes that choice kernel, which captures the outcome-independent tendency to repeat a previous choice, also influences decision making. The choice kernel updating rule is similar to the value-updating rule:
+
+$$
+CK_{t+1}^{k}=CK_{t}^{k}+\alpha_{c}(a_{t}^{k}−CK_{t}^{k})
+$$
+
+, where atk is a binary variable that indicates whether or not arm k was chosen on trial t and at is choice kernel updating rate, characterizing choice persistence. The value and choice kernel term were combined to compute the probability of choosing arm k on trial t:
+
+$$
+p_{t}^{k}=\frac{e^{(\betaQ_{t}^{k}+\beta_{c}CK_{t}^{k})}}{\sumje^{(\betaQ_{t}^{j}+\beta_{c}CK_{t}^{j})}}
+$$
 
 , where βc is the inverse temperature associated with the choice kernel, capturing the stickiness of choice.
 
-The sixth model is the same as the fourth model, except that this model includes another parameter γ that modulates learning rate when the choice is not rewarded. This model assumes asymmetrical learning that the learning rate is different for rewarded and unrewarded trials.[6] “RLCKγ”Qt+1k={Qtk+α(rt−Qtk),rt=1Qtk+γ×α(rt−Qtk),rt=0
+The sixth model is the same as the fourth model, except that this model includes another parameter γ that modulates learning rate when the choice is not rewarded. This model assumes asymmetrical learning that the learning rate is different for rewarded and unrewarded trials.
 
-The seventh model is also similar to model 4, except that this model includes another parameter η that tunes the balance between the value updating rule and the choice kernel updating rule. This model assumes that animals could be using two policies (value and choice kernel) to different extent, that is some animals could depend their choices more heavily on values and some animals could be more dependent on choice preference. In this model, the probability of choosing arm k on trial t:[7] “RLCKη”ptk=e(ηβQtk+(1−η)βcCKtk)∑je(ηβQtj+(1−η)βcCKtj)
+$$
+Q_{t+1}^{k}={Q_{t}^{k}+\alpha(r_{t}−Q_{t}^{k}),r_{t}=1Q_{t}^{k}+\gamma\times\alpha(r_{t}−Q_{t}^{k}),r_{t}=0
+$$
 
-## Conditional mutual information
+The seventh model is also similar to model 4, except that this model includes another parameter η that tunes the balance between the value updating rule and the choice kernel updating rule. This model assumes that animals could be using two policies (value and choice kernel) to different extent, that is some animals could depend their choices more heavily on values and some animals could be more dependent on choice preference. In this model, the probability of choosing arm k on trial t:
 
-We quantified the extent to which choice history was informative about current choices as the conditional mutual information between the current choice (Ct) and the last choice (Ct-1), conditioned on the reward outcome of the last trial (R):I(Ct;Ct−1|R)=∑r∈R∑ct−1∈C∑Ct∈CpCt,Ct−1,R(ct,ct−1,r)logpR(r)pCt,Ct−1,R(ct,ct−1,r)pCt,R(ct,r)pCt−1,R(ct−1,r)
+$$
+p_{t}^{k}=\frac{e^{(η\betaQ_{t}^{k}+(1−η)\beta_{c}CK_{t}^{k})}}{\sumje^{(η\betaQ_{t}^{j}+(1−η)\beta_{c}CK_{t}^{j})}}
+$$
+
+#### Conditional mutual information
+
+We quantified the extent to which choice history was informative about current choices as the conditional mutual information between the current choice (Ct) and the last choice (Ct-1), conditioned on the reward outcome of the last trial (R):
+
+$$
+I(C_{t};C_{t−1}|R)=\sumr\inR\sumc_{t−1}\inC\sumC_{t}\inCp_{C_{t},C_{t−1},R}(c_{t},c_{t−1},r)log\frac{p_{R}(r)p_{C_{t},C_{t−1},R}(c_{t},c_{t−1},r)}{p_{C_{t},R}(c_{t},r)p_{C_{t−1},R}(c_{t−1},r)}
+$$
 
 where the set of choice options (C) represented the two options (left/right).

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.43271.001 The origins and functions of kidney macrophages in the adult have been explored, but their roles during development remain largely unknown. Here we characterise macrophage arrival, localisation, heterogeneity, and functions during kidney organogenesis. Using genetic approaches to ablate macrophages, we identify a role for macrophages in nephron progenitor cell clearance as mouse kidney development begins. Throughout renal organogenesis, most kidney macrophages are perivascular and express F4/80 and CD206. These macrophages are enriched for mRNAs linked to developmental processes, such as blood vessel morphogenesis. Using antibody-mediated macrophage-depletion, we show macrophages support vascular anastomoses in cultured kidney explants. We also characterise a subpopulation of galectin-3 + (Gal3 + ) myeloid cells within the developing kidney. Our findings may stimulate research into macrophage-based therapies for renal developmental abnormalities and have implications for the generation of bioengineered kidney tissues.
+The origins and functions of kidney macrophages in the adult have been explored, but their roles during development remain largely unknown. Here we characterise macrophage arrival, localisation, heterogeneity, and functions during kidney organogenesis. Using genetic approaches to ablate macrophages, we identify a role for macrophages in nephron progenitor cell clearance as mouse kidney development begins. Throughout renal organogenesis, most kidney macrophages are perivascular and express F4/80 and CD206. These macrophages are enriched for mRNAs linked to developmental processes, such as blood vessel morphogenesis. Using antibody-mediated macrophage-depletion, we show macrophages support vascular anastomoses in cultured kidney explants. We also characterise a subpopulation of galectin-3+ (Gal3+) myeloid cells within the developing kidney. Our findings may stimulate research into macrophage-based therapies for renal developmental abnormalities and have implications for the generation of bioengineered kidney tissues.
 
 ## Introduction
 
@@ -40,11 +40,37 @@ In the adult, macrophages and endothelial cells form anatomical and functional u
 
 ## Results
 
-## Macrophages clear rostral nephron progenitors as kidney development initiates
+### Macrophages clear rostral nephron progenitors as kidney development initiates
 
 To characterise macrophage distribution as the metanephric kidney’s component parts emerge, we immunostained and optically cleared whole-mount E9.5–10.5 mouse embryos. At these stages, all macrophages in the embryo-proper are derived from the yolk sac and express colony-stimulating factor one receptor (Csf1r), fractalkine receptor (Cx3cr1), and EGF-like module receptor 1 (F4/80) (Mass et al., 2016; Schulz et al., 2012). Csf1r and Cx3cr1 mark both mature macrophages and their precursors, whereas F4/80 marks only mature macrophages (Frame et al., 2016; Mass et al., 2016).
 
 At E9.5, bilateral nephrogenic cell populations, which expressed sine oculis-related homeobox 2 (Six2), were arranged as cords that lay medial to Wolffian ducts and lateral to the dorsal aorta in the caudal part of the mouse embryo (Figure 1a–c; Video 1). No F4/80+ macrophages were near to the Six2+ nephrogenic cords at this stage (Figure 1c; Video 2). This finding is consistent with previous studies using Cx3cr1GFP embryos that showed GFP-expressing cells arrived in the embryo-proper only from E9.5 onwards (Mass et al., 2016; Gomez Perdiguero et al., 2013; Schulz et al., 2012; Stremmel et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig1-v1.jpg)
+
+**Figure 1.:** (a) Nephrogenic cord location in the E9.5 embryo. (b) E9.5 nephrogenic cord and Wolffian duct arrangement. (c) Z-projection of E9.5 caudal part of mouse embryo and nephrogenic cords. White arrowhead shows an F4/80+ macrophage. (d) 3D rendering of E10.5 Wolffian ducts (Gata3) and nephrogenic progenitors (Six2). White arrowheads show isolated clusters of rostral nephrogenic cells. (e) F4/80+ macrophage localisation relative to metanephric mesenchyme at E10.5. (f) Macrophage density at E9.5 and E10.5 (n = 20 fields of view from two cleared E9.5 embryos and 20 fields from two cleared E10.5 embryos). MM, metanephric mesenchyme. (g–h) Macrophage density along the rostro-caudal axis of the E10.5 metanephric mesenchyme and within isolated groups of rostral nephrogenic cells (n = 4 kidneys from two embryos). Image in (h) shows a representative image of an E10.5 kidney. (i) Representative control and macrophage (MΦ)-depleted E11.5 metanephric mesenchyme populations (n for controls = 10 kidneys from six embryos; n for MΦ-depleted = 6 kidneys from three embryos). (j) Rostral nephrogenic progenitor cells (NPCs) in control and MΦ-depleted embryos. White arrowheads in left panel show Six2+ nuclei within cell bodies of F4/80+ macrophages. (k) Six2+ populations are extended in MΦ-depleted embryos compared to controls (two-tailed t-test; p=0.0031). (l) Rostral Six2+ clusters are larger in area in MΦ-depleted embryos compared to controls (two-tailed Mann-Whitney test; p=0.0042). Scale bars = 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) E10.5 nephron progenitor cell arrangement. (b) CD31 marks intra-aortic hematopoietic cluster (IAHC) cells and primitive germ cells (PGCs) in the caudal part of the E10.5 mouse embryo. Scale bars: a = 100 µm; b = 50 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Outline of breeding strategy used to deplete macrophages. (b) Flow cytometry data showing CD45+ cell numbers in control and macrophage depleted embryos. (c) Immunostaining data showing F4/80+ cells in caudal regions of control and macrophage depleted embryos (identical microscope settings were used). Scale bars = 50 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Overview of a region containing rostral Six2+ nephron progenitors and macrophages at E10.5. The Six2+ cells rendered in green were in contact with the two macrophages. (b) Shows a zoomed in image of the region covered by the white box in (a). (c–d) Shows Six2+ nuclei of rostral nephron progenitor cells partially surrounded by macrophage membranes (white arrowheads). Scale bars = 10 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Ureteric bud development in ~E11.5 macrophage-depleted kidneys relative to littermate control embryos (somite pairs of macrophage depleted embryos = 42–49 [n = 7 kidneys, four embryos]; somite pairs of control embryos = 41–48 [n = 13 kidneys, seven embryos]). UB, ureteric bud; WD, Wolffian Duct. (b) Ureteric bud development in an E12.5 macrophage-depleted embryo and littermate control embryo. White dashed lines in ‘Merge’ panels indicate position of the ureteric bud. Identical microscope settings were used for images in (b). Images in (b) are representative of n = 2 E12.5 macrophage-depleted embryos from two litters; n = 7 E12.5 control embryos from two litters. Scale bars = 100 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/43271/elife-43271-video1.mp4.jpg)
+
+**Video 1.:** Few F4/80+ macrophages are present in the embryo-proper at this stage.
+
+![Video 2.](https://cdn.elifesciences.org/articles/43271/elife-43271-video2.mp4.jpg)
 
 By E10.5, as ureteric bud outgrowth started, Six2+ metanephric cells had accumulated at the caudal end of the Wolffian duct (Figure 1d; Figure 1—figure supplement 1) (as previously described by Wainwright et al., 2015). Immunostaining for a pan-endothelial marker (CD31) demonstrated that the metanephric cell populations were avascular at this stage (Figure 1e; Video 2). CD31 also marked primitive germ cells and intra-aortic hematopoietic clusters containing HSCs in the caudal part of the E10.5 mouse embryo (Figure 1—figure supplement 1; Gomperts et al., 1994; Wakayama et al., 2003; Yokomizo and Dzierzak, 2010). F4/80+ macrophages were now present in high numbers in the caudal part of the embryo (Figure 1e–f). These macrophages largely avoided the metanephric mesenchyme (Figure 1e–f; Video 2) but localised in high numbers alongside rostral clusters of Six2+ cells (Figure 1g–h).
 
@@ -54,19 +80,59 @@ As Six2+ nephrogenic progenitors secrete signals that stimulate ureteric bud out
 
 Collectively, these data show that macrophages arrive near to the metanephric mesenchyme as it condenses at the caudal aspect of the Wolffian duct at E9.5-E10.5. These early macrophages arrange alongside rostral nephrogenic cells but avoid caudal ones. In the absence of macrophages, rostral nephrogenic cell clearance and ureteric bud development are delayed.
 
-## Kidneys are simultaneously colonised by macrophages and vascularised
+### Kidneys are simultaneously colonised by macrophages and vascularised
 
 We next sought to characterise macrophage arrival and localisation in the early kidney after ureteric bud outgrowth. The ureteric bud had invaded the metanephric mesenchyme by E11 and bifurcated by E11.5 (Figure 2a–b). At E11-E11.5, numerous F4/80+ macrophages and blood vessels were present in the peri-Wolffian mesenchyme (situated between the metanephric mesenchyme and Wolffian duct), but relatively few were present within the metanephric mesenchyme (Figure 2a–c). The few F4/80+ macrophages within the metanephric mesenchyme were most often at its border nearest the peri-Wolffian mesenchyme (Figure 2b), in agreement with macrophage localisation in Csf1rEGFP kidneys (Figure 2—figure supplement 1) (Rae et al., 2007).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig2-v1.jpg)
+
+**Figure 2.:** (a–b) E11 and E11.5 kidneys: Macrophages localise in high numbers within the vascularised peri-Wolffian mesenchyme (PWM) but not within the metanephric mesenchyme (MM). Staining shows macrophages (F4/80), ureteric bud (UB; Gata3), erythrocytes (heme autofluorescence), and vasculature (CD31) (stitched confocal z-stacks; a = 2×1 tiles, b = 2×2 tiles). (c) Macrophage density is higher in the peri-Wolffian mesenchyme than the metanephric mesenchyme (macrophage density in peri-Wolffian mesenchyme (PWM) = 260.20 ± 20.08 per mm2 [mean ±SEM]; macrophage density in metanephric mesenchyme (MM) = 95.86 ± 12.29 per mm2 [mean ±SEM]; two-tailed paired t-test [testing whether densities were the same]; p<0.0001; n = 10 kidneys from five embryos). (d) At E11.5, nephron progenitors (Six2) gather as a single population, which is predominantly devoid of macrophages (F4/80) and red blood cells (RBCs; heme autofluorescence). (e) By E12.5, nephron progenitor cell populations have split, creating fissures in the mesenchyme that are occupied by macrophages and erythrocytes. The dashed white lines represent the boundaries of Six2+ nephron progenitor populations. Images are 3D z-projections; as a result, macrophages and RBCs appearing within Six2+ populations may in fact localise outside (in 3D). (f) At E12.5, many kidney macrophages are perivascular. (g) Working model for macrophage arrival in the kidney (based on our results and data from Stremmel et al., 2018). Scale bars = 100 µm (except e), which = 70 µm).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) White dashed line indicates boundary of metanephric mesenchyme (MM). The location of the ureteric bud (UB) and Wolffian duct have been added in grey. PWM, peri-Wolffian mesenchyme.
+
 Yolk sac-derived macrophage progenitors are trafficked into the embryo-proper via the bloodstream (Stremmel et al., 2018). Upon reaching the embryo-proper, these primitive macrophages exit the vascular system and can invade newly forming organs, such as the brain, via extravascular tissue migration (Cuadros et al., 1993; Fantin et al., 2010; Herbomel et al., 2001). Up until E12.5, kidney macrophages are yolk sac-derived (Hoeffel et al., 2015). Whole-mount immunostaining demonstrated that F4/80+ macrophages within the E11-E11.5 peri-Wolffian mesenchyme were always extravascular (Figure 2a–b), which led us to hypothesise that these macrophages travel via trans-tissue migration. Indeed, time-lapse imaging of cultured E11.5 Csf1rEGFP kidneys indicated that these macrophages migrate via extravascular routes and regularly interact with other macrophages as well as the abluminal surfaces of isolectin B4-labelled blood vessels (Video 3).
+
+![Video 3.](https://cdn.elifesciences.org/articles/43271/elife-43271-video3.mp4.jpg)
+
+**Video 3.:** Isolectin-B4 also labels macrophages. White arrows present in the video between 18–40 s show examples of perivascular macrophages.
 
 Blood vessels begin entering the kidney from the peri-Wolffian mesenchyme between E11.5-E12 when interstitial tissue regions first form (Munro et al., 2017b). We hypothesised that macrophages follow similar routes (in time and space) to colonise the kidney. To examine this, we immunostained and imaged whole-mount kidneys at relevant time points. At E11.5, Six2+ nephron progenitor cells were present throughout the metanephric mesenchyme as a single population, which contained very few macrophages (Figure 2d). By E12.5, the Six2+ population had split (Figure 2e), resulting in the ‘capping’ of each ureteric bud tip (Herring, 1900; Short et al., 2014). As Six2+ nephron progenitor populations split, interstitium forms in the fissures and becomes vascularised (Airik et al., 2006; Daniel et al., 2018; Munro et al., 2017b). Whole-mount imaging of E12.5 kidneys demonstrated that F4/80+ macrophages had occupied these interstitial fissures and commonly wrapped around the interstitial blood vessels (Figure 2e–f).
 
 Collectively, these data suggest that macrophages and blood vessels regularly interact as they enter the early kidney at the same time. Static images of whole-mount kidneys indicate that this occupation occurs between E11.5 and E12.5 as the nephron progenitor population splits (Figure 2g). At this stage, blood vessels and most macrophages reside within the renal interstitium, rather than the ‘cap mesenchyme’ regions, which are rich in Six2+ nephron progenitor cells.
 
-## Most kidney macrophages in the nephrogenic zone are perivascular throughout foetal development
+### Most kidney macrophages in the nephrogenic zone are perivascular throughout foetal development
 
 We next investigated whether the close association between macrophages and endothelial cells continued throughout later kidney development. First, we confirmed that F4/80 specifically marked myeloid cells in the developing kidney by co-staining Csf1rEGFP kidneys with anti-GFP and anti-F4/80. At E14.5, all detectable F4/80+ cells co-expressed Csf1r (100 ± 0%, mean ±SEM) (Figure 3a; Video 4). We then immunostained and optically cleared E13.5, E15.5, and E18.5 kidneys to explore organ-wide macrophage localisation. F4/80, CD31, and Gata3 co-staining demonstrated that macrophages were present throughout the medullary and cortical portions of developing kidneys and were often localised around the renal vasculature (Figure 3—figure supplement 1; Video 5). The type of association of macrophages with blood vessels depended on whether those vessels were anatomically large- or small-calibre. Macrophages often arranged parallel to major renal blood vessels, such as segmental arteries, but did not typically interact with their endothelial cells (Figure 3b; Figure 3—figure supplement 1). In contrast, macrophages directly interacted with endothelium of small calibre vessels, such as the newly forming cortical nephrogenic zone blood vessels (Figure 3c–d).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig3-v1.jpg)
+
+**Figure 3.:** (a) All F4/80+ cells co-express Csf1r (anti-GFP+) in the developing kidney (n = 730 cells from 8 z-slices of a cleared E14.5 ‘MacGreen’ kidney). Inset boxes show example Csf1r+F4/80+ cells. (b) Macrophages arrange parallel to major vessels in the E15.5 kidney, but rarely contact their endothelia. (c–d) Macrophages interact with newly forming vessels in the cortical nephrogenic zone (c = E15.5 and d = E18.5). (e) Most kidney macrophages in the E17.5 nephrogenic zone are interstitial perivascular cells (n = 10 z-stacks from four kidneys). The red bar shows the percentage of interstitial macrophages that are perivascular. CM, cap mesenchyme. (f) Macrophages align with their underlying blood vessels (p for correlation <0.0001; n = 40 macrophage/blood vessel pairs from n = 8 kidneys at E17.5). (g–g’) Example of a perivascular macrophage in the nephrogenic zone, with intra-, peri-, and extra-vascular regions (g’ is a 3D rendered version of g). (h) Macrophages do not express the renal interstitial cell markers, Meis1/2. (i) Percentage of cells singly or doubly positive for CD206 and F4/80 in the E11.5 kidney and the cortical nephrogenic zone of E14.5 and E17.5 kidneys. Discernible co-staining at E11.5, 98.8 ± 0.71 [mean ±SEM], n = 5 kidneys; E14.5, 94.1 ± 1.0% of cells, n = 10; at E17.5, 96.5 ± 1.0% of cells, n = 10. (j) Representative image of CD206+F4/80+ cells (3D rendered) in nephrogenic zone. (k–k’) High-resolution 3D image of an F4/80+CD206+ macrophage. (k’) shows cellular intensity of F4/80 using colourmap developed by Nuñez et al. (2018). Scale bars: b-c = 100 µm; (d) j = 50 µm; g = 5 µm; g’) =, h, k-k’=10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a–c) Macrophages arrange parallel to segmental arteries in (a–a’) E15.5, (b) E13.5, and (c) E18.5 kidneys. Scale bars = 100 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Macrophage localisation around nephron progenitor populations in the E17.5 nephrogenic zone (Six2+ populations are computer rendered). (b) A small percentage of macrophages localise inside the nephron progenitor population (intra-cap mesenchymal MΦs). (c) Most interstitial macrophages in the nephrogenic zone are perivascular. Scale bars: a = 100 µm; b), c = 20 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a–d) Macrophages interact with vascular plexuses in the nephrogenic zone of (a) E13.5, (b) E14.5, (c) E15.5, and (d) E18.5 kidneys. (e) Schematic depicting macrophage localisation within the nephrogenic zone (ureteric tips are not shown for illustrative purposes). Scale bars = 100 µm (except d), where the scale bar represents 200 µm).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (a–b) Most CD206+ macrophages are perivascular in the nephrogenic zone of (a) E14.5 and (b) E17.5 kidneys. Scale bars = 100 µm.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (a) Cartoon representing the different regions of the nephrogenic zone and the different processes that occur in the deep and peripheral regions. D, distal; M, medial; P, proximal. (b) Macrophages (F4/80) interact with the epithelial tubules of developing nephrons (Jagged1). (c) Macrophages interact with the blood vessels (CD31) adjacent to developing nephrons (laminin, showing basement membrane). N, nephron; UB, ureteric bud. Scale bars = 10 µm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/43271/elife-43271-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/43271/elife-43271-video5.mp4.jpg)
 
 Important organogenetic processes occur in cycles within the cortical nephrogenic zone of the developing kidney: ureteric bud tips branch, nephron progenitor populations split, nephrogenesis initiates, and interstitial vascular plexuses form (Herring, 1900; Lindström et al., 2018b; Munro et al., 2017b; Short et al., 2014). Due to the significance of this zone in renal organogenesis, we next focused on macrophages within this region. Using the E17.5 peripheral nephrogenic zone as a representative example, we determined that 89.6 ± 1.45% (mean ±SEM) of macrophages localised within the interstitium, the remainder being within the cap mesenchyme (nephron progenitor populations; Figure 3e; Figure 3—figure supplement 2). Of the interstitial macrophages, 78.5 ± 2.1% (mean ±SEM) were in contact with the abluminal surface of blood vessels, and we defined these cells as perivascular macrophages (Figure 3e; Figure 3—figure supplement 2). The alignment of perivascular macrophages, which we defined based on their longest axis, strongly correlated with the alignment of their associated blood vessel (Figure 3f). This tendency of macrophages to localise around the nephrogenic zone vasculature was qualitatively consistent from E13.5 and throughout prenatal kidney development (Figure 3—figure supplement 3).
 
@@ -76,11 +142,29 @@ Within the cortical nephrogenic zone, F4/80high macrophages typically co-stained
 
 A previous study demonstrated a tight relationship between macrophages and nephrons (Rae et al., 2007), the latter of which develop and mature deep within the nephrogenic zone (Figure 3—figure supplement 5). In accordance with this finding, we observed macrophages in contact with the basement membrane of developing nephrons (Figure 3—figure supplement 5; Video 6). Macrophages also frequently interacted with blood vessels that wrapped around the developing nephron tubules (Figure 3—figure supplement 5; Video 6).
 
+![Video 6.](https://cdn.elifesciences.org/articles/43271/elife-43271-video6.mp4.jpg)
+
 These data show that F4/80+CD206+ macrophages in the cortical nephrogenic zone are mainly perivascular throughout the embryonic period of renal organogenesis. These macrophages align with and wrap around newly forming cortical interstitial blood vessels.
 
-## Pro-defence Gal3+ myeloid cells intermingle with pro-development F4/80+CD206+ macrophages in the embryonic kidney
+### Pro-defence Gal3+ myeloid cells intermingle with pro-development F4/80+CD206+ macrophages in the embryonic kidney
 
 In the developing lung, a subpopulation of galectin3+ (Gal3+) myeloid cells are dispersed alongside yolk sac-derived F4/80high macrophages (Tan and Krasnow, 2016). Gal3+ cells colonise the lung from E12.5 onwards and are speculated to be foetal liver-/monocyte-derived macrophages (Tan and Krasnow, 2016). We stained Csf1rEGFP embryos with anti-Gal3 and demonstrated that the developing kidney also contained a subpopulation of Gal3+Csf1rEGFPEGFP+ myeloid cells (Figure 4a). Gal3+ cells were largely distinct from CD206+ macrophages, although a small percentage of cells co-expressed both proteins (Figure 4b–d). The proportion of myeloid cells that were Gal3+ increased substantially later in development, while the relative proportion of CD206+ cells decreased (Figure 4d; Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig4-v1.jpg)
+
+**Figure 4.:** (a–a’) Gal3 is expressed by a subset of Csf1rEGFP+ cells. (a’) shows an example Gal3+Csf1r+ cell. (b) Gal3+ and CD206+ cells in the E14.5 kidney. (c) Examples of Gal3+CD206-, Gal3-CD206+, and Gal3+CD206+ cells in the E14.5 kidney. (d) The proportion of Gal3+ myeloid cells increases over developmental time, while the relative proportion of CD206+ cells decreases. (e) Quantification of Gal3+ and F4/80+ macrophage localisation in E17.5 nephrogenic zone (n = 14 fields of view for F4/80 localisation and n = 15 fields of view for Gal3 localisation). The only intravascular cells were Gal3+. (f–f’) Example of an intravascular Gal3+ cell at E17.5. 3D rendering of the intravascular Gal3+ cell from f). (g) Gal3+ cells are more spherical than CD206+ cells (p<0.0001; two-tailed t-test; n = 290 CD206+ cells; n = 51 Gal3+ cells from E14.5 nephrogenic zone). (h) Expression of mature macrophage signature genes by individual F4/80highCD206high cells, Gal3high cells, and a nephron progenitor cell (negative control). (i) Average mRNA transcript levels for genes associated with mature macrophage status (n = 6 F4/80highCD206high cells; n = 3 Gal3high cells; n = 1 Six2high nephron progenitor cell [NPC]). Each data point represents the average expression of a single relevant gene. (j) Top 10 over-represented biological processes in Gal3high cells. (k) Top 10 over-represented biological processes in F4/80highCD206high cells. Scale bars: a = 10 µm; a’ and f = 5 µm; b = 100 µm; c = 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a–b) Representative overview images of Gal3+ and CD206+ cells in the (a) E11.5 and (b) E17.5 kidney. White arrowheads in a) show Gal3+CD206+ cells. (c) Gal3+ and CD206+ cells in a region of the nephrogenic zone of the E17.5 kidney. (d) Gal3+ is also expressed in tubular lumens in E17.5 kidneys. Scale bars = 100 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Individual channels for the image shown in Figure 4f–f’. (b) Other examples of Gal3 +cells being carried within the renal vasculature in the nephrogenic zone. Scale bars = 10 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a–d) F4/80+CD206+ cells separate distinctly from Gal3+ cells. PC, principle component. Each dot represents a single-cell. The green group in d) shows F4/80+CD206+ cells and the pink group shows Gal3+ cells.
 
 At E17.5, 14.4% ± 2.2% (mean ±SEM) of Gal3+ myeloid cells in the cortical nephrogenic zone were being carried within blood vessels at the point of fixation (Figure 4e–f’; Figure 4—figure supplement 2). Gal3+ cells were morphologically spherical in comparison to the irregular morphology of the CD206+ macrophages (Figure 4g). In later kidney development, tubular lumens also strongly stained for Gal3 (Figure 4—figure supplement 1), in agreement with its expression pattern in the developing human kidney (Winyard et al., 1997).
 
@@ -98,15 +182,25 @@ We next explored whether distinct populations of CD206+ and Gal3+ immune cells w
 
 Collectively, these results show that the developing kidneys of the mouse and human contain heterogeneous populations of immune cells. In the developing mouse kidney, Gal3high myeloid cells often travel via the renal vasculature and intermingle with mature F4/80highCD206high macrophages. Both Gal3high and F4/80highCD206high cells were enriched for mRNAs associated with professional phagocytes, but only F4/80highCD206high cells were enriched for mRNAs associated with vascular development.
 
-## Macrophages phagocytose components of the renal vascular system and promote endothelial cross-connections
+### Macrophages phagocytose components of the renal vascular system and promote endothelial cross-connections
 
 Given that many macrophages in the kidney interact with the interstitial vasculature, we hypothesised that macrophage localisation in the interstitium depended on the presence of blood vessels. To test this, we pharmacologically inhibited vascular development in cultured E12.5 kidneys (using three different pan-VEGF inhibitors: sunitinib, vatalanib, and semaxanib) and compared macrophage localisation. Vascular density was markedly reduced in the treated kidneys (Figure 6a–c), but macrophage localisation (in/out of the interstitium) did not differ between groups (one-way ANOVA; p=0.7142; n = 4–9 kidneys per group) (Figure 6d). Notably, macrophage density was reduced in vascular-depleted kidneys (Figure 6e) and was positively correlated with vascular density when assessing all groups (r = 0.71; p<0.0001) (Figure 6f) and even when assessing only control groups (r = 0.74; p=0.004) (Figure 6g). Vascular-depletion did not alter other aspects of kidney development (Figure 6—figure supplement 1) and an assistant counting blind-coded samples verified the macrophage density count differences between groups (Figure 6—figure supplement 1). These data suggest that endothelial-derived signals are not required for macrophage navigation in the renal interstitium.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig6-v1.jpg)
+
+**Figure 6.:** (a) Representative images of macrophages (F4/80) and nephron progenitor populations (Six2) in control and treated kidneys. (b–c) Endothelial cells are robustly depleted in sunitinib, vatalinib, and semaxanib treated kidneys (representative images; stitched confocal z-stacks, 3 × 3 tiles; p for overall ANOVA < 0.0001; n = 5–8 per group). (d) Macrophage localisation is unaltered between groups (p for overall ANOVA = 0.71; n = 4–9 kidneys per group). (e) Macrophage density is decreased in vascular-depleted kidneys (p for overall ANOVA < 0.0001; n = 10–15 kidneys per group). (f–g) Macrophage density positively correlated with vascular density in all groups (f): r = 0.71, 0.48–0.85 95% CI; p<0.0001; n = 32 kidneys) and in control groups only (g): r = 0.74, 0.33–0.92 95% CI; p=0.0035; n = 13 kidneys). In f–g), the data point colour represents its group (e.g. green dots represent sunitinib-treated kidneys). Data are from two identical experiments (different antibodies were used for post-fixation sample staining). Macrophage localisation data in d) were determined from the first experimental run. Vascular density data used in c), (f), and g) were obtained from the second experimental run. Macrophage density data in e) includes data from both experimental runs. Scale bar = 100 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Representative images of collecting duct trees in different groups. (b) Kidney area in control and treatment groups (n = 10–15 per group; one-way ANOVA; p=0.0003). (c) Ureteric bud branching generations did not differ between groups (n = 5–8 per group; one-way ANOVA; p=0.205). (d) Accuracy of macrophage density counts was confirmed by a second blinded counter (n = 3 per group; two-way ANOVA; p for counter differences = 0.842). Scale bar = 100 µm.
 
 Renal macrophages engulf cells in the developing mouse and human kidney (Camp and Martin, 1996; Erdosova et al., 2002); however, the identities of the phagocytosed cells are unknown. We observed F4/80+ macrophages engulfing erythrocytes and dying endothelial cells in the kidney (Figure 7a–b; Video 7), demonstrating that, as well as spatially associating with the vasculature, kidney macrophages directly interact with blood and vascular components during development.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/43271/elife-43271-fig7-v1.jpg)
 
 **Figure 7.:** (a) Apoptotic endothelial cell (cleaved caspase 3+CD31+) in the cortical nephrogenic zone being phagocytosed by an F4/80+ kidney macrophage. Yellow arrowheads show CD31+ cell debris within the macrophage cell body. (b) F4/80+ kidney macrophage phagocytosing an erythrocyte (RBC; heme autofluorescence) in the E13.5 kidney. (c–d) Genes associated with vascular development are significantly over-represented in the top 1% of expressed genes in F4/80highCD206high macrophages, but not in the top 1% of the Gal3high myeloid cells. Biological processes highlighted in green in a) are all related to vascular development. (e–f) Representative (e) overview images and (f) fields of view of anti-rat IgG (control) and anti-Csf1r (blocking antibody) treated kidney explants. (g–k) Anti-Csf1r treated kidneys had (g) fewer macrophages (p<0.0001), (h) reduced kidney area (p=0.0046), (j) more isolated endothelial structures (p=0.011), and (k) smaller endothelial structures (p=0.046) relative to control treated kidneys (n = 5 biological replicates; 1 field of view per kidney). (i) Vascular density (CD31+ area per field) did not significantly differ between groups (p=0.077). Data that were normally distributed (Kolmogorov-Smirnov normality testing) were compared using two-tailed t-tests. Only data from j) were not normally distributed and were compared using a non-parametric Mann-Whitney test. Scale bars: a) and b = 10 µm; e) and f = 100 µm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/43271/elife-43271-video7.mp4.jpg)
 
 Based on kidney macrophage localisation and gene expression (Figures 1–2; Video 5; Figure 7c–d), as well as their known abilities in regulating vascular formation (Picelli et al., 2013; Fantin et al., 2010; Rymo et al., 2011), we hypothesised that macrophages promote renal vascularisation. To test whether macrophages are required for the renal vasculature to develop normally, we depleted macrophages in cultured kidney explants using an anti-Csf1r mAb blocking antibody (M279). Csf1r is essential for macrophage proliferation, migration, and survival (Dai et al., 2002; Mouchemore and Pixley, 2012). E12.5 kidneys were treated for 72 hr with either 20 µg/ml of anti-Csf1r or anti-rat IgG as a control, and macrophages were robustly depleted (Figure 7e–g). Consistent with previous studies, anti-Csf1r treated kidneys were smaller than controls (p=0.0046; Figure 7h; Alikhan et al., 2011; Rae et al., 2007; Sauter et al., 2014). The area covered by CD31+ endothelium per field of view did not significantly differ between groups (p=0.077; Figure 7i); however, macrophage-depleted kidneys had higher numbers of isolated, unconnected endothelial structures (p=0.011; Figure 7j) and the average size of CD31+ structures were reduced relative to controls (p=0.046; Figure 7k). These data demonstrate that macrophages support production and/or maintenance of endothelial cross-connections in the developing kidney.
 
@@ -126,25 +220,25 @@ In conclusion, we show that foetal kidney macrophages are a multifunctional cell
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Wild-type embryonic tissues that were used for descriptive studies and kidney explant culture experiments were obtained from outbred CD-1 mice killed by qualified staff of a UK Home Office–licensed animal house following guidelines set under Schedule 1 of the UK Animals (Scientific Procedures) Act 1986. Experiments were performed in accordance with the institutional guidelines and regulations as set by the University of Edinburgh. The morning of vaginal plug discovery was considered as embryonic day (E) 0.5 and staging was confirmed based on kidney and limb bud morphology.
 
 Transgenic mice used in this study: MacGreen (Csf1rEGFP) reporter mice have previously been described (Sasmono et al., 2003). Transgenic Csf1rEGFPEGFP+ embryos were identified based on limb bud GFP fluorescence using a Zeiss Axioscope A1 microscope. Csf1ricre and RosaDTA mice were bred onto the C57BL/6JOlaHsd genetic background and maintained as heterozygotes. Staging of ~E11.5 Csf1ricreicre+RosaDTA embryos was based on somite pair (sp) counting and 44–49 sp embryos were used for analyses in Figure 1. At E11.5, Csf1ricreicre+RosaDTA embryos were identified using flow cytometry to identify CD45+ cells and immunofluorescence to identify F4/80+ cells. Csf1rEGFP, Csf1ricre, and RosaDTA transgenic mice were maintained at the University of Edinburgh according to locally approved procedures. E18.5 Six2EGFP/Cre mouse embryos were used for mouse single-cell RNA sequencing experiments (for details of this mouse line, see Kobayashi et al. (2008)). These mice were maintained at Bar-Ilan University according to locally approved procedures.
 
-## Dissection and organ culture
+### Dissection and organ culture
 
 Kidneys were isolated using previously described methods (Davies, 2010). Kidney explants were cultured on sterile 24 mm polyester membrane inserts with 0.4 µm pores (Transwells; Corning 3450) in 1.5 ml of kidney culture medium (KCM; Minimum Essential Medium Eagle [Sigma, M5650] supplemented with 1% penicillin/streptomycin [Sigma, P4333] and 10% foetal calf serum [Invitrogen, 10108165]) per well in 6-well plates. Kidneys were grown at 37°C in a 5% CO2 environment. Kidneys were cultured for indicated times and the medium was changed every 48 hr, unless otherwise stated.
 
-## Whole-mount immunofluorescence
+### Whole-mount immunofluorescence
 
 Whole-mount samples were fixed with 4% paraformaldehyde (PFA) for 10–60 mins (depending on sample size). After PFA fixation, samples were washed in 1x phosphate buffered saline (PBS; 1 × 30 mins) and then dehydrated in a methanol: dH2O serial dilution (20%, 40%, 60%, 80%, and then 100%–15 mins per step). After dehydration, samples were either stored at −20°C or directly processed. Samples were rehydrated in a methanol: dH2O serial dilution (80%, 60%, 40%, 20%, and then 0%–15 mins per step). Kidneys were rinsed in PBS (3 × 30 mins) and blocked with 1 x PBS with 5% bovine serum albumin (BSA; Sigma, A9647) and 10% donkey serum (Sigma, D9663) for 1 hr at room temperature or overnight at 4°C. Kidneys were then incubated with primary antibodies, which were diluted in 50% blocking buffer with 50% 1x PBS, overnight at 4°C. Kidneys were rinsed in 1x PBS (3 × 1 hr or overnight at 4°C) and were then incubated with secondary antibodies (in 50% blocking buffer with 50% 1x PBS) overnight at 4°C. For details regarding the antibodies used, see Supplementary file 6. Following incubation with secondary antibodies, kidneys were washed in 1x PBS (4 × 1 hr) and mounted onto glass slides in mounting medium (Vectashield; Vectorlabs, H1000). Samples were covered by cover-slips, which were stuck in place on the slide using nail varnish.
 
-## BABB clearing whole-mount immunofluorescence
+### BABB clearing whole-mount immunofluorescence
 
 Samples were optically cleared when deep imaging through thick samples was required. Samples were first fixed in 4% PFA for 1–2 hr. They were washed in 1x PBS (2 × 1 hr) and then dehydrated in a methanol: dH2O serial dilution (20%, 40%, 60%, 80%, and then 100%–15 mins per step). After a 100% methanol wash for 1 hr, samples were incubated with Dent’s bleach (methanol: dimethyl sulfoxide [DMSO]: 30% hydrogen peroxide; 4:1:1) for 2 hr, then stored in 100% methanol at −20°C. To continue the protocol, samples were rehydrated in a methanol: dH2O serial dilution (80%, 60%, 40%, 20%, 0%–15 mins per step). They were washed with 1x PBS with 0.2% Triton X-100 (2 × 30 mins). They were then permeabilised for 4 hr using 1x PBS with 0.2% Triton X-100, 300 mM glycine, and 20% DMSO at room temperature. Samples were then blocked with 1x PBS with 0.2% Triton X-100, 3% donkey serum, and 10% DMSO overnight at 4°C. They were then incubated with primary antibodies, which were diluted in 50% blocking buffer with 50% 1x PBS at 4°C for 1–5 days on a rocker. They were then washed in 1x PBS-Tween for 3 × 2 hr. Samples were incubated in secondary antibodies for 24 hr at 4°C diluted in 50% blocking buffer with 50% 1x PBS. Subsequently, samples were washed with 1x PBS-0.2% Tween for 3 × 2 hr and then left in 1x PBS overnight at 4°C. They were dehydrated using a methanol: dH2O serial dilution (15-mins per step; 20%, 50%, 75%, and 100% methanol). They were placed in a glass vial containing 50% benzyl alcohol/benzyl benzoate (BABB) with 50% methanol until they sank to the bottom of the vial and were then cleared in 100% BABB until transparent. After clearing, samples were placed on a slide in a drop of BABB and covered with a glass cover-slip prior to imaging. Erythrocytes were observed in BABB cleared tissue as this clearing method does not remove heme from haemoglobin and because heme acts as a major chromophore under visible light (Horecker, 1943; Munro et al., 2017b; Yokomizo et al., 2012).
 
-## E9.5-E11.5 macrophage density quantifications
+### E9.5-E11.5 macrophage density quantifications
 
 At E9.5 and E10.5, numbers of F4/80+ macrophages were manually counted in individual z-planes through cleared caudal regions of mouse embryos using plugin → analyse → cell counter in ImageJ. To calculate macrophage density in the caudal region of embryos, regions devoid of tissue and regions that included nephrogenic cells were traced using the Freehand selections tool on ImageJ and were subtracted from the overall area per field of view. Macrophage density (F4/80 cells per mm2) was calculated by dividing macrophage number by the area of the caudal tissue region in each field of view. Macrophage density within the Six2+ nephrogenic populations were scored in the same way, with the area covered by Six2+ cells on each field of view being calculated using the Freehand selections tool.
 
@@ -152,64 +246,64 @@ To calculate macrophage density along the rostro-caudal axis of the metanephric 
 
 Macrophage density was calculated in the E11.5 peri-Wolffian mesenchyme and metanephric mesenchyme using ImageJ. The metanephric mesenchyme was defined and drawn using the freehand selection tool by a kidney development researcher blinded to the experimental purpose. To eliminate potential bias based on macrophage or vasculature localisation, only the Gata3 channel (showing ureteric bud) was shown to the blinded researcher. Peri-Wolffian mesenchyme and metanephric mesenchyme areas were calculated and macrophage numbers counted (using plugin → analyse → cell counter in ImageJ) to calculate relevant macrophage densities (F4/80 cells per mm2).
 
-## Characterisation of Six2+ cell populations in E11.5 Csf1ricreRosaDTA embryos
+### Characterisation of Six2+ cell populations in E11.5 Csf1ricreRosaDTA embryos
 
 To characterise the total rostro-caudal length of Six2+ populations in macrophage-depleted and control embryos we analysed confocal z-planes of caudal part embryos stained with anti-Six2. The segmented line tool in ImageJ was used to calculate the total length of the Six2+ population from the most caudal to the most rostral Six2+ cell (using analyse → measure in ImageJ). To characterise the area of rostral Six2+ clusters, we used the Freehand selections tool in ImageJ to draw around these cell clusters and used analyse → measure to define the area of these populations.
 
-## Quantifications of co-immunostained cells
+### Quantifications of co-immunostained cells
 
 Csf1r and F4/80 co-staining: Csf1rEGFPEGFP+ kidneys were fixed, immunostained, and cleared. An anti-GFP antibody was used to label Csf1rEGFPEGFP+ cells. Co-localisation of GFP+ and F4/80+ cells was quantified using plugin → analyse → cell counter in ImageJ. Quantification was based on assessments of 8 z-planes from an E14.5 Csf1rEGFPEGFP+ kidney. F4/80 and CD206 co-staining: Quantification was performed as described above using antibodies against F4/80 and CD206. Quantifications were made at E11.5, E14.5, and E17.5; at E14.5 and E17.5 quantifications were based on macrophages within the cortical nephrogenic zone. Gal3 and CD206 co-staining: Quantification was performed as described above using antibodies against Gal3 and CD206. Quantifications were made at E11.5, E14.5, and E17.5; at E14.5 and E17.5 quantifications were based on cells within the cortical nephrogenic zone.
 
-## Microscopy
+### Microscopy
 
 All images were generated using the Zeiss LSM800 confocal microscope, except from the time-lapse images, which were generated using the Nikon A1R confocal microscope. Objectives of 5-63x were used. Objective lenses were oil-immersed from 40x upwards. Images were analysed and processed using ImageJ (FIJI) and IMARIS (version 8.3.1).
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 E11.5 Csf1rEGFPEGFP+ kidneys were explanted and cultured in Transwells as described above. A 6-well plate containing the Transwells was placed in an imaging chamber and the kidneys were grown at a temperature of 37°C in a 5% CO2 environment. Isolectin-B4 (I32450; ThermoFisher) was added to the culture medium at a concentration of 1:1000. For the video showing the entire kidney, images were taken every 15 mins. For the video showing a small region of the kidney, images were taken every five mins.
 
-## Quantification of F4/80+ macrophage localisation in the nephrogenic zone
+### Quantification of F4/80+ macrophage localisation in the nephrogenic zone
 
 Macrophage localisation was quantified in the E17.5 nephrogenic zone by co-staining for F4/80, collagen IV, and Six2. Collagen IV marks blood vessel basement membranes in the developing kidney (Munro et al., 2017b). To quantify macrophage localisation, we analysed macrophage location in 3D by scrolling through z-planes. Quantifying macrophage localisation in individual z-planes was necessary because macrophages sitting above the cap mesenchyme in 3D may have appeared within the cap mesenchyme in flattened 2D images - the same was true for macrophage localisation around blood vessels.
 
-## Perivascular macrophage orientation
+### Perivascular macrophage orientation
 
 The alignment of perivascular macrophages was measured by drawing a line along the longest axis of the macrophage using the straight-line tool in ImageJ. The angle of this line was the measured using analyse → measure in ImageJ. The same measurement was performed for the underlying blood vessel, with the straight line being drawn along the blood vessel up to the site of its splitting.
 
-## Macrophage sphericity measurements
+### Macrophage sphericity measurements
 
 The sphericity of Gal3+ and CD206+ cells in the E14.5 kidney was measured using IMARIS (version 8.3.1). Cells were surface-rendered and non-cellular rendered objects manually removed. IMARIS automatically calculated the sphericity of each rendered cell.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
-## Mouse
+#### Mouse
 
 Single-cell RNA sequencing experiments were performed following the smart-seq2 protocol (Picelli et al., 2013). MATLAB and GraphPad were used to prepare single-cell heatmap clustering graphs (using the Bioinformatics Toolbox in MATLAB) and principle component analyses (PCA) graphs (using the Statistics and Machine Learning Toolbox in MATLAB). PCA graphs were prepared based on the expression of 48 genes chosen based on relevant literature. To standardise the expression values for each gene, values were first log-transformed after adding 1. Next, the log gene expression value for each cell was subtracted from the mean log gene expression value of all cells analysed. This value was then divided by the standard deviation, and truncated into the range of −1,1 to eliminate outliers.
 
-## Gene signature analyses
+#### Gene signature analyses
 
 The gene signatures for mature macrophages were based on signatures generated by Mass et al. (2016) (available at www.sciencemag.org/content/353/6304/aaf4238/suppl/DC1). Values used for gene signature analyses were based on averaged gene expression values of the different identified cell subtypes.
 
 Gene set enrichment analyses - The Panther Gene Overrepresentation Test was used to assess whether the top 1% of expressed genes (234 genes) by Gal3+ and by F4/80+CD206+ cells were enriched for certain biological processes or cellular components (Mi et al., 2013; http://pantherdb.org/tools/compareToRefList.jsp). The reference dataset used for this analysis was the entire gene list used in the single-cell analyses. False discovery rate corrected p-values were calculated using Fisher's Exact with FDR multiple test correction.
 
-## Human
+#### Human
 
 Single-cell RNA sequencing data from human foetal kidney cells were accessed from GUDMAP (Harding et al., 2011) using the ‘Q-Y4GR: Cellular Diversity in Human Nephrogenesis’ dataset (Lindström et al., 2018a). These data were analysed using Seurat, an R package for single cell genomics (https://satijalab.org/seurat/; Butler et al., 2018).
 
-## Macrophage depletion using an anti-Csf1r antibody
+### Macrophage depletion using an anti-Csf1r antibody
 
 E12.5 kidneys were cultured on Transwell filters in 1.5 ml KCM for 3 days with either 20 µg/ml anti-Csf1r mAb blocking antibody (M279) or 20 µg/ml anti-rat IgG (as a control). To retain anti-Csf1r and anti-rat IgG (control) within the medium, KCM was not refreshed during the 3 day culture period. After 3 days, cultured kidneys were directly fixed in methanol and processed for immunofluorescence (as described in the ‘Whole-mount immunofluorescence’ section, after the fixation step).
 
 Macrophage numbers were quantified using the add spots tool on the F4/80 channel in IMARIS (version 8.3.1). Spot number per kidney was defined as the total macrophage number per kidney. To calculate kidney area, kidneys were drawn using the Freehand selections tool in ImageJ and the area covered by each kidney was measured. To calculate the CD31+ area per field (%), the CD31 channel was prepared for thresholding using process → filters → median [radius = 2 pixels] then image brightness/contrast was adjusted in ImageJ. Images were thresholded using image → adjust → threshold (default thresholding). After thresholding, the percentage of the thresholded area per field of view was measured and defined as the vascular density (% CD31+ area per field). The numbers of isolated CD31+ structures per field were then quantified by a blinded counter that was given code samples using plugin → analyse → cell counter in ImageJ. The number of CD31+ structures per field was divided by the total CD31+ area per field to give the average % of the field covered by each CD31+ structure.
 
-## Vascular growth inhibition
+### Vascular growth inhibition
 
 E12.5 kidneys were cultured on Transwell filters for 3 days in either 1.5 ml of KCM-only (control), KCM with vascular development inhibitors, or KCM with DMSO (AppliChem, A3672-0100; vehicle control). Inhibitor concentrations were calculated based on half-maximal inhibitory concentration (IC50) values against Vegfr2 (using values from the IUPHAR/BPS Guide to Pharmacology; http://www.guidetopharmacology.org/). Vatalinib had previously been used at a concentration of 1 µM to inhibit vascular development in cultured kidneys (Halt et al., 2016); therefore, we used 1 µM of vatalinib in our experiments. 1 µM of vatalinib is at a concentration that is 47.62 times greater than its IC50 against Vegfr2. To calculate concentrations to use for the other inhibitors, we multiplied sunitinib’s and semaxanib’s IC50s against Vegfr2 by 47.62 (for consistency). Based on these calculations, the inhibitor concentrations used in the KCM were 1 µM of vatalinib, 1.076 µM of sunitinib, and 9.524 µM of semaxanib. As a vehicle control, DMSO was added at the same volume as the highest volume used for the inhibitors. After 3 days of culture, cultures were stopped, and kidneys were directly fixed in methanol and processed for immunofluorescence.
 
-## Macrophage density quantification
+#### Macrophage density quantification
 
 Kidney areas were first measured using the Freehand selections tool in ImageJ. Macrophages and blood vessels were only counted if they fell within the boundary of the kidney (using plugin → analyse → cell counter in ImageJ). To validate the counting method, a second, blinded counter was given coded samples to count macrophage numbers using the same method (n = 3 per group). Vascular density quantification: The CD31 channel was separated from other channels in ImageJ. For each sample, the Despeckle and Subtract Background (rolling ball radius = 50) tools were used and the image contrast was enhanced; these steps were performed to increase the accuracy of thresholding based on CD31 signal. Images were thresholded using the Huang method. The kidney area was drawn using the Freehand selections tool in ImageJ, and the percentage area covered by CD31+ structures was taken as the vascular density (% CD31+ area per field). Macrophage localisation quantification: To count whether macrophages localised within the interstitium or cap mesenchyme, we stained kidneys with a cap mesenchyme marker, Six2. Macrophages that did not localise within the Six2+ cap mesenchyme were classed as interstitial and the percentages of macrophages in/out of the caps were plotted. Ureteric bud branching generations quantification: For each kidney, we counted the number of ureteric bud bifurcations from the primary bifurcation site (at the upper ureter) to the final bifurcation site (at the kidney’s periphery).
 
-## Statistics and data presentation
+### Statistics and data presentation
 
 Data are mean ± standard error of the mean. Data that passed normality testing were analysed using parametric tests. Data that did not pass normality tests were analysed using non-parametric tests (specific tests used are indicated in relevant text). When two experimental groups were being compared, t-tests or the non-parametric equivalent were used. When more than two groups (which were normally distributed) were compared, one-way ANOVAs were performed with post-hoc testing then being used to compare differences between individual groups. All p-values were based on two-tailed comparisons. GraphPad (version 5) was used for statistical testing and graph preparation. IMARIS (version 8.3.1) and Adobe Premiere Pro CC (2015) were used to prepare videos and Adobe Illustrator CC (2015) was used to prepare figures.

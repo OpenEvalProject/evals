@@ -35,7 +35,7 @@
 
 ## Abstract
 
-10.7554/eLife.49501.001 Immune cells are vital constituents of the adipose microenvironment that influence both local and systemic lipid metabolism. Mice lacking IL10 have enhanced thermogenesis, but the roles of specific cell types in the metabolic response to IL10 remain to be defined. We demonstrate here that selective loss of IL10 receptor α in adipocytes recapitulates the beneficial effects of global IL10 deletion, and that local crosstalk between IL10-producing immune cells and adipocytes is a determinant of thermogenesis and systemic energy balance. S ingle N uclei A di p ocyte RNA -seq uencing (SNAP-seq) of subcutaneous adipose tissue defined a metabolically-active mature adipocyte subtype characterized by robust expression of genes involved in thermogenesis whose transcriptome was selectively responsive to IL10Rα deletion. Furthermore, single-cell transcriptomic analysis of adipose stromal populations identified lymphocytes as a key source of IL10 production in response to thermogenic stimuli. These findings implicate adaptive immune cell-adipocyte communication in the maintenance of adipose subtype identity and function.
+Immune cells are vital constituents of the adipose microenvironment that influence both local and systemic lipid metabolism. Mice lacking IL10 have enhanced thermogenesis, but the roles of specific cell types in the metabolic response to IL10 remain to be defined. We demonstrate here that selective loss of IL10 receptor α in adipocytes recapitulates the beneficial effects of global IL10 deletion, and that local crosstalk between IL10-producing immune cells and adipocytes is a determinant of thermogenesis and systemic energy balance. Single Nuclei Adipocyte RNA-sequencing (SNAP-seq) of subcutaneous adipose tissue defined a metabolically-active mature adipocyte subtype characterized by robust expression of genes involved in thermogenesis whose transcriptome was selectively responsive to IL10Rα deletion. Furthermore, single-cell transcriptomic analysis of adipose stromal populations identified lymphocytes as a key source of IL10 production in response to thermogenic stimuli. These findings implicate adaptive immune cell-adipocyte communication in the maintenance of adipose subtype identity and function.
 
 ## Introduction
 
@@ -47,11 +47,19 @@ Clearance of catecholamine is critical in terminating β-adrenergic signals, and
 
 ## Results
 
-## Loss of AdIL10Rα in adipocytes promotes thermogenesis and confers obesity resistance
+### Loss of AdIL10Rα in adipocytes promotes thermogenesis and confers obesity resistance
 
 We previously reported that global IL10-deficient mice have increased energy expenditure and browning of white adipose tissue (Rajbhandari et al., 2018). To definitively determine whether mature adipocytes are the major cellular targets for these metabolic effects of IL10 we generated adipocyte-specific IL10 receptor α-deficient mice (AdIL10Rα KO) by crossing Il10raFL/FL mice to Adiponectin-Cre transgenics. Prior published studies have reported that Adiponectin-Cre transgenic mice do not present an obvious metabolic phenotype and therefore we chose to use Cre-negative floxed mice as the controls for our studies (Kong et al., 2014; Villanueva et al., 2013).
 
 We confirmed loss of IL10Rα in adipocytes from AdIL10Rα KO mice by western blotting (Figure 1A). There was no difference in body weight or food intake between 10 week-old chow-fed AdIL10Rα KO mice and floxed littermate controls (Figure 1—figure supplement 1A and B). However, metabolic cage analysis revealed increased oxygen consumption and energy expenditure in AdIL10Rα KO mice, without changes in locomotion and body mass (Figure 1B and Figure 1—figure supplement 1C). To determine if this difference in energy expenditure was associated with protection against diet-induced obesity, we challenged AdIL10Rα KO with high-fat diet (60% calories from fat). After 8–9 weeks of HFD feeding, both male and female AdIL10Rα KO mice were protected against weight gain compared to floxed littermate controls (Figure 1C,D and Figure 1—figure supplement 1D). MRI analysis of body composition showed that the difference in body weight was entirely due to a change in fat mass (Figure 1E). Consistent with these findings, the inguinal WAT (iWAT) of AdIL10Rα KO mice was visibly redder than that of controls, suggesting increased tissue ‘browning’ (Figure 1F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immunoblot analysis of IL10Rα expression in SVF and adipocyte fractions of iWAT from chow-fed 10 week-old mice. (B) Oxygen consumption (VO2, ml/hr), energy expenditure (EE, kCal/hr), and carbon dioxide production (VCO2, ml/hr) of chow-fed 10-week-old IL10RαF/F and AdIL10Rα KO mice were analyzed in Columbus Oxymax metabolic chambers (12 hr light/dark cycles, 72 hr total duration, each light/dark bar represents 12 hr duration). N = 9,7. Statistical analysis was performed using ANCOVA. (C) External appearance of representative 9 week HFD-fed mice. (D) Body weight of mice fed chow diet for 10 weeks and then 60% high-fat diet (HFD) for 9 weeks. N = 13, 7. (E) Fat and lean mass of mice in D fed HFD for 6 weeks. (F) Internal and gross appearance of iWAT from representative IL10RαF/F and AdIL10RαKO mice. *, p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Body mass and composition of 10 week-old chow-fed mice. (B) Food intake of chow-fed mice. (C) RER, locomotion and ambulatory activity of chow-fed 10-week-old IL10Rα F/F and AdIL10Rα KO mice analyzed by Columbus Oxymax metabolic chambers (12 hr light/dark cycles, 72 hr total duration, each light/dark bar represents 12 hr duration; N = 9,7). (D) Body weight of mice fed chow diet for 10 weeks and then 60% high-fat diet (HFD) for 9 weeks. N = 7,5.
 
 To test the influence of the IL10-IL10R axis on adipose adrenergic responses, we exposed AdIL10RαKO and floxed control mice to cold stress (4°C) for 24 hr. Analysis of iWAT gene expression by real-time PCR showed increased expression of Ucp1, Elovl3, Ppargc1 and other thermogenic genes, but no change in general adipose markers such as Fabp4 and Pparg in AdIL10Rα KO mice (Figure 2A). Similar results were observed in AdIL10Rα KO mice treated with β3-adrenergic agonist (CL 316,243; CL, 1 mg/kg/day for 4 days; Figure 2B). To gain insight into the global adipose gene expression changes in AdIL10Rα KO mice, we performed RNA-seq on iWAT. We identified 214 genes that were enriched more than 1.5-fold in AdIL10Rα KO mice compared to control mice (presented as a heatmap as a function of percentile expression in Figure 2C). The data revealed a selective increase in the thermogenic gene program in AdIL10Rα KO mice compared to controls. The gene expression differences between AdIL10Rα KO mice and controls were highly consistent with those observed in global IL10-deficient mice compared to WT controls (Rajbhandari et al., 2018), strongly suggesting that the effects of IL10 on adipose tissue gene expression are mediated predominantly through direct action of IL10 on adipose IL10Rα. These data also supporting a specific inhibitory effect of IL10Rα signaling on adrenergic-responsive pathways. We also noted that several genes that were more highly expressed in control mice compared to AdIL10Rα KOs have been linked to negative regulation of thermogenesis. For example, Cnotl1 and Brd2 have been reported to negatively regulate the mRNA stability and transcription of UCP1, respectively (Figure 2C) (Takahashi et al., 2015). In support of the calorimetric findings, we found increased mitochondrial respiration in the iWAT of AdIL10Rα KO mice compared to controls by Seahorse assays (Figure 2D).
 
@@ -59,17 +67,37 @@ To test the influence of the IL10-IL10R axis on adipose adrenergic responses, we
 
 **Figure 2.:** (A and B) Real-time PCR analysis of gene expression in iWAT from 10 week 24 hr cold-exposed (A) or CL 1 mg/kg/day for 4 days; B) IL10RαF/F and AdIL10RαKO mice. N = 5,5. *, p<0.05; **, p<0.01; ***, p<0.0001. (C) Heatmap representation of genes that changed >1.5 fold (p-value<0.01) as a function of percentile expression by RNA-Seq of iWAT from 10 week-old 24 hr cold-exposed IL10Rα and AdIL10Rα KO mice. Genes are grouped as upregulated (Red) or downregulated (Blue). (D) Average oxygen consumption rate (OCR) in coupling (left) and electron flow (right) assays of mitochondria isolated from iWAT of mice in (A).
 
-## Identification of thermogenic adipocytes by SNAP-Seq
+### Identification of thermogenic adipocytes by SNAP-Seq
 
 The data above show that IL10 acts directly on adipocyte AdIL10Rα to regulate the thermogenic gene program in adipocytes. To further dissect the role of the IL10-IL10R axis in regulating the identity and physiology of mature adipocytes, we performed single-cell analyses. As there were no prior reports of single primary adipocyte transcriptomics, we optimized a Single Nuclei Adipocyte RNA sequencing approach (SNAP-seq) for assessing gene expression in mature adipocytes derived from mouse iWAT (Figure 3A and see Materials and methods). The critical step in this procedure is the isolation and purification of adipocyte nuclei which overcomes technical obstacles related to the handling of lipid-laden adipocytes. The single nuclei suspension (n ~ 10,000) was subjected to snRNA-Seq using the 10XGenomics platform, and libraries were sequenced with dedicated 400 million reads per sample (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig3-v2.jpg)
+
+**Figure 3.:** (A) Workflow showing DAPI-stained nuclei pre- and post-FACS/filtration that underwent microfluidic partitioning and library preparation in the 10X genomics platform followed by sequencing using an Illumina HiSeq 4000. (B) tSNE-plot showing 14 clusters from ~6000 adipocytes derived from iWAT of mice exposed to cold for 24 hr. Each colored dot is an adipocyte assigned to a cluster based on transcriptomic signature. (C) Normalized expression values of the top two adipocyte subtype-specific cluster genes from (B) plotted as violin plots with clusters as rows and genes as columns. (D) tSNE-plot showing cluster-specific expression of selected marker genes from (C). (E) Normalized expression values of indicated genes in subtype-specific clusters plotted as violin plots with clusters as rows and genes as columns. Black arrow is pointing toward metabolically active Type nine adipocyte cluster and enriched gene.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Hierarchical plot showing correlation of single cell/nuclei gene expression between SVF and adipocyte clusters. Cell types from both mature adipocyte nuclei and SVF single cells were used in this analysis. They were grouped using hierarchical clustering with tiles colored by unadjusted (top) -Log10 Bonferroni adjusted p-values (bottom). Unadjusted (top) and adjusted (bottom) p-values were thresholded to aid in visualization with values less than 10−5 set to 10−5.
 
 We chose to analyze mice exposed to a 24 hr cold challenge in these initial studies in order to increase our chance of identifying thermogenic adipocyte populations. We used the 10X genomics data processing and analysis platform to generate cell clusters and identities (see Materials and methods). To classify the adipocyte populations based on gene expression, we performed cluster analysis as represented by t-distributed stochastic neighbor embedding (t-SNE) plots. Remarkably, this analysis revealed that the adipocytes from iWAT of chow-fed C57BL/6 mice were highly heterogeneous. We were able to distinguish 14 distinct clusters (Figure 3B). The violin plots in Figure 3C further revealed that each cluster also uniquely express marker genes that were preferentially expressed in individual cluster. The tSNE-plot in Figure 3D further show localized expression of genes in particular cluster. Among all the clusters, we noticed a high enrichment of genes involved in fatty acid metabolism such as Adrb3 and Acsl1 in cluster 9. Furthermore, genes encoding β3-AR, HSL, and ATGL were highly overrepresented in this cluster, as were a variety of beige/brown adipocyte markers (Figure 3E). The gene expression profile of Type nine adipocytes was indicative of a highly metabolically active population whose characteristics were potentially consistent with thermogenic ‘beige’ adipocytes.
 
 To address the possibility that contaminating stromalvascular cells might have given rise to one or more of these clusters we performed a Fisher’s exact test between pairwise sets of cell type marker genes (determined by unadjusted and adjusted p-value<0.05) to find cell types that had substantial overlaps in their marker genes (denoting transcriptional similarity). Cell types from both mature adipocyte nuclei and stromal vascular fraction (SVF) single cells were used in this analysis and they were grouped using hierarchical clustering with tiles colored by -Log10 Bonferroni adjusted p-values. Adjusted p-values were thresholded to aid in visualization with values less than 10−5 set to 10−5. As shown in the diagonal correlation in Figure 3—figure supplement 1, we did not find high degree of transcriptional similarity between SVF and adipocyte clusters (top). However, under stringent p-value adjustment, the transcriptomic state of adipocyte clusters 12 and 14 correlated with markers of adaptative immune cells (bottom). Thus, we cannot exclude the possibility that clusters 12 and 14 may be contaminated with immune cells.
 
-## Identification of a cold-responsive thermogenic ‘beige’ adipocyte population by SNAP-seq
+### Identification of a cold-responsive thermogenic ‘beige’ adipocyte population by SNAP-seq
 
 To further test the hypothesis that Type nine adipocytes were the thermogenic beige population, we subjected mice to different thermogenic conditions, including cold stress (4°C) for 24 hr, 48 hr, and 4 days, or treated them with CL for 4 days (1 mg/kg/day). We then performed SNAP-seq on adipocytes derived from iWAT as described above. We performed unbiased aggregated clustering of the processed data for all the conditions as a tSNE-plot (Figure 4A). The aggregated cluster represents ~54,000 cell and allows us to confidently assign biological function to each cluster. Hence, to infer the biological properties of the cells in each cluster, we performed cell-type pathway enrichment analysis (Gene ontology (GO), KEGG, Reactome, and BIOCARTA) (Supplementary file 1) using enriched genes in each cluster based on false discovery rate (FDR) set at <0.05. This analysis revealed that different adipocyte subtypes express distinct genes with important roles in adipose tissue development, insulin signaling, hypoxia signal, inflammation, lipid synthesis and transport, angiogenesis, myogenesis, hormone responses, mitochondrial respiration, and fatty acid metabolic process (shown in Supplementary file 1). Type one adipocytes appeared to represent classical adipocytes and they expressed genes associated with adipose development, lipid responses, the insulin pathway, and response to corticosteroids (e.g. Fto, Vldlr, Insr, Apod, Klf9, Sh3pxs2b); Type three adipocytes were enriched for genes involved in blood vessel morphogenesis and angiogenesis; both Type 3 and 14 adipocytes were enriched for genes involved glycolysis. Type 6 and 7 adipocytes were enriched for genes involved in muscle metabolic process and myogenesis; Type 10 adipocytes were enriched for genes involved in the immune response; Type 11 adipocytes were enriched for cell cycle genes; Type 14 adipocytes were enriched for genes involved in mitochondrial ATP synthesis and respiration. Some adipocyte clusters displayed more commonality in gene expression with others and shared similar biological process, such as the abundant Type 1, 2, 3 and 7, 6 and 17 adipocytes (Supplementary file 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig4-v2.jpg)
+
+**Figure 4.:** (A) Aggregated tSNE-plot showing 17 clusters from ~54,000 adipocytes derived from iWAT of mice at RT, cold-exposed (24 hr, 48 hr, and 4 days), or treated with CL for 4 days at 1 mg/kg/day. Each colored dot is an adipocyte that falls into a cluster based on transcriptomic signature. (B) tSNE-plot showing indicated treatment-dependent sub-clustering of aggregated clusters shown in (A). Black arrow indicates the Type nine adipocyte cluster. (C) Normalized expression values of the top two adipocyte subtype-specific cluster genes from (A and B) plotted as violin plots with clusters as rows and genes as columns. (D) tSNE-plot showing distribution of indicated genes from adipocytes from (A). (E) Normalized expression values of indicated genes in the Type nine adipocyte cluster under different treatment condition plotted as violin plots with treatment conditions as rows and genes as columns. (F) RNAScope FISH (see Materials and methods) of indicated probes from iWAT of mice treated with saline or CL for 4 days at 1 mg/kg/day.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Gene set pathways obtained from GO Biological Processes and KEGG were used to find the functions of the different cell types. The top five enriched pathways determined by FDR from each cell type cluster were selected (from Supplementary file 1) and only unique pathways were kept (some top enriched pathways were shared across cell type clusters). Enriched pathways (rows) were clustered with hierarchical clustering. The size of each dot represents the -log10 FDR of the pathway enrichment and the color of each dot corresponds to the fold enrichment of each pathway (red- higher enrichment, gray- lower enrichment). Dotted blue squares highlight pathways enriched in cluster 9.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Normalized expression values of top adipocyte subtype-specific major clusters (1, 4, and 9) genes from Figure 4A plotted as violin plots with clusters as rows and expression levels of genes as columns. (B) tSNE-plot showing cluster-specific expression of selected marker genes from aggregated tSNE-plot in Figure 4A. Black arrow indicates Type nine cluster. (C) Normalized expression values of indicated genes plotted as violin plots with clusters as rows and expression levels of genes as columns.
 
 The top five enriched pathways determined by FDR from each cell type cluster were selected (from Supplementary file 1) and only unique pathways were kept (some top enriched pathways were shared across cell type clusters). Enriched pathways (rows) were clustered with hierarchical clustering. The size of each dot represents the -log10 FDR of the pathway enrichment and the color of each dot corresponds to the fold enrichment of each pathway (red- higher enrichment, gray- lower enrichment). In Figure 4—figure supplement 1, we report the top five scoring pathways for each cell type cluster across all pathway sources (Figure 4—figure supplement 1A) or from KEGG pathways (Figure 4—figure supplement 1B). Overall, the most striking cluster was the Type nine adipocytes. Pathways enriched for triglyceride and neutral lipid catabolism, hormone-sensitive lipase (HSL)-mediated triglyceride hydrolysis and PPARα signaling were particularly enriched in type nine cluster.
 
@@ -77,13 +105,21 @@ Among all clusters (1-17), we noticed a very distinct sub-clustering of Type nin
 
 We further confirmed the presence of Type nine adipocytes and validated co-expression of thermogenic genes by using RNAscope fluorescence in situ hybridization (FISH) in iWAT of mice treated with saline or CL (see Materials and method section). As shown in Figure 4F, CL treatment caused a robust increase in the expression of Ucp1, Pppargc1b, and Adrb3 compared to control. Moreover, these transcripts showed a striking co-localization in only a set of adipocytes. We speculate that this population corresponds to Type nine adipocytes.
 
-## Increased abundance of metabolically active type nine adipocytes in AdIL10Rα KO mice
+### Increased abundance of metabolically active type nine adipocytes in AdIL10Rα KO mice
 
 To probe if IL10 signaling influenced the percentage of thermogenic adipocytes, we exposed both floxed-control and AdIL10Rα KO mice to either cold stress (4°C) for 24 hr, 48 hr, or 4 days, or treated them with CL (1 mg/kg/day) for 4 days, and performed SNAP-seq on iWAT of these mice. Cluster nine from the aggregated data showed a progressive increase in the percentage of cells upon exposure to cold for increasing lengths of time (3.4% to 5.7% to 12.1% from 24 hr to 48 hr to 4 days at 4°C, respectively) as shown both by tSNE- and dot-plots and treatment of mice with CL even more dramatically increased the abundance of Type 9 cells to 23.5% (Figure 5A-top and bottom). Dot-plotting further showed that among all clusters, type 1, 4, and nine showed the most changes under the different conditions, and among them only type nine adipocytes showed an adrenergic-dependent positive increase in cell fractions (Figure 5A-bottom). We next compared data from control and AdIL10Rα KO mice, and in agreement with the whole tissue RNA-seq data presented above, adipocytes from AdIL10Rα KO mice showed a specific increase in the population of thermogenic adipocytes (cluster 9) under both basal conditions (RT) and in response to thermogenic stimuli (cold exposure or CL treatment) (Figure 5B). The dot-plot in Figure 5C shows that the overall pattern of adipocyte cluster enrichment was similar to that in Figure 5A-bottom, and only type nine adipocytes showed a positive shift in cell fraction upon IL10R depletion, except for 48 hr cold exposure where we observed unexpected 4% decrease in cell fraction.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig5-v2.jpg)
+
+**Figure 5.:** (A) Top: tSNE-plot showing percentage of clusters from aggregated (All) or from indicated treatments. Bottom: Colored dot plot showing percentage of fractions plotted in y-axis and cell types in x-axis under indicated conditions. (B) tSNE-plot showing differences in percentage of clusters between adipocytes from iWAT from control and AdIL10Rα KO mice under RT, 24 hr, 48 hr or 4 days cold exposure, or CL treated conditions. (C) Colored dot plot showing percentage of fractions plotted in y-axis and cell types in x-axis under indicated conditions and genotype. N deonotes Adipoq-Cre-Negative IL10RαF/F (IL10RαF/F) and P denotes Adipoq-Cre-Positive (AdIL10Rα KO) mice. (D) Volcano plot showing adipocyte gene expression differences between indicated mice from cluster 9. The Log2Fold Change (FC) ratio of floxed control vs. AdIL10Rα KO was plotted as a function of log10 p-value, with select genes indicated with text. Black arrow indicates the Type nine adipocyte cluster.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49501/elife-49501-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap showing fold enrichment of pathways abundant in the adipocytes of AdIL10Rα KO mice compared to controls. DEG analysis of N represent Adipq-CRE Negative IL10RαF/F (IL10RαF/F) and P represent Adipoq-Cre Positive (AdIL10Rα KO) mice was performed and fold-change was calculated as Log2FC(N/P) and gene ontology analysis was performed for genes enriched in P over N and plotted as a heatmap as fold-enrichment (0 to >10) and p<0.001. Shades of blue indicate highly enriched pathway in P with fold-enrichment >10. (B) Violin plot showing expression levels of indicated genes in iWAT adipocytes of AdIL10Rα KO mice and controls from SNAP-seq data (Figure 4).
+
 Type nine adipocytes from AdIL10RαKO mice were more metabolically active and showed increased expression of genes linked to mitochondrial activity, energy derivation from FFA, and positive regulation of cold-induced thermogenesis (Figure 5—figure supplement 1A). A Volcano plot of the data revealed that genes involved in lipid mobilization and adipose thermogenesis (such as Lipe, Nr1d1, Oplah, Nfkbia, Pck1, Cebpb, Vegfa, Angptl4) were increased, and genes correlated with obesity and adiposity such as (Nrip1, Lpl, Zbtb20, Acss2) were decreased in iWAT adipocytes from AdIL10RαKO mice compared to controls (Figure 5D). However, not all adipogenic and thermogenic genes were different between AdIL10Rα KO and control adipocytes. For example, pan-adipocyte genes such as Cd36, Fabp4, and Aqp1 were similarly expressed between cells of both genotypes (Figure 5—figure supplement 1B). Overall, our SNAP-seq data reveal previously unappreciated heterogeneity of mature adipocytes in subcutaneous adipose tissue and point to the existence of distinct cell populations with potentially specialized biological functions. These data further show that IL10 signaling in fat tissue targets a distinct, highly metabolically active and thermogenic adipocyte population.
 
-## scRNA-Seq of iWAT stromal vascular fraction reveals a role for IL10-expressing adaptive immune cells in regulation of adipose thermogenesis
+### scRNA-Seq of iWAT stromal vascular fraction reveals a role for IL10-expressing adaptive immune cells in regulation of adipose thermogenesis
 
 Prior bone marrow transplantation experiments had shown that IL10 produced by one or more hematopoietic cell types could rescue the thermogenic phenotype of global IL10-deficient mice (Rajbhandari et al., 2018). Therefore, we examined changes in non-adipocyte cells types within iWAT in the setting of thermogenic stimuli to evaluate their potential contribution to IL10/IL10R signaling. We treated WT mice with saline or β3-adrenergic agonist (CL; 1 mg/kg/day) for 4 days, separated iWAT stromal cells from adipocytes, and performed scRNA-Seq on ~10,000 isolated stromal vascular cells (SVF) per mouse as described in Materials and methods. t-SNE plotting of the data revealed 12 major cell clusters (Figure 6A). Further subclustering analysis based on known cell marker genes identified four clusters of adipocyte precursor cells (APCs), four clusters of B cells, three clusters of macrophages, and four clusters of T cells (Figure 6A).
 
@@ -117,90 +153,366 @@ In conclusion, these data provide insight into crosstalk between IL-10-secreting
 
 ## Materials and methods
 
-## Animal studies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent sample (M. musculus)</td>
+      <td>Il10raflox</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 028146 RRID:MGI:189797</td>
+      <td>PMID: 22711892</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent sample (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent sample (M. musculus)</td>
+      <td>C57BL/6J SCID</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 001913 RRID:MGI:14443</td>
+      <td>PMID: 8339285</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent sample (M. musculus)</td>
+      <td>Adipoq-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 010803 RRID:MGI:168971</td>
+      <td>PMID: 21356515</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>β3-adrenergic receptor agonist (CL 316, 243; CL)</td>
+      <td>Sigma</td>
+      <td>C5976</td>
+      <td>1 mg/kg/day</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Collagenase II</td>
+      <td>Worthington Biochemical</td>
+      <td>LS004176</td>
+      <td>3 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Collagenase D</td>
+      <td>Sigma</td>
+      <td>11088882001</td>
+      <td>9.8 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>EvaGreen droplet generation oil</td>
+      <td>BIO-RAD</td>
+      <td>1864005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>ChemGenes barcoded microparticles</td>
+      <td>ChemGenes</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>FlowJEM aquapel-treated microfluidic device</td>
+      <td>FlowJEM</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Nextera DNA Library Preparation kit</td>
+      <td>Illumina</td>
+      <td>2001874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Minute nuclei and cytosol isolation kit for Adipose</td>
+      <td>Invent Biotech</td>
+      <td>AN-029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>40 μm cell strainer</td>
+      <td>Bel-Art FlowMI</td>
+      <td>H13680-0040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Single Cell 3’ Chip</td>
+      <td>10X Genomics</td>
+      <td>1000127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Chromium Single Cell 3’ library and Cell Bead kit</td>
+      <td>10X Genomics</td>
+      <td>1000128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>TruSeq Stranded Total RNA Library Prep Kit</td>
+      <td>Illumina</td>
+      <td>RS-122–2102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>RNAscope Multiplex Flurorescent Reagent kit v2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>323316</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Opal 520</td>
+      <td>Akoya Biosciences</td>
+      <td>FP1487001KT</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Opal 570</td>
+      <td>Akoya Biosciences</td>
+      <td>FP1488001KT</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Opal 620</td>
+      <td>Akoya Biosciences</td>
+      <td>FP1495001KT</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>mm-Adrb3</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>495521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>mm-UCP1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>455411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>mm-Ppargc1b</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>402131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>TRIzol</td>
+      <td>Thermo Fischer</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>Bio-Rad</td>
+      <td>1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>SYBER Green Master mix</td>
+      <td>Diagenode</td>
+      <td>DMSG-2X-A300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>RIPA Lysis buffer</td>
+      <td>Boston Bioproducts</td>
+      <td>BP-115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IL10Rα</td>
+      <td>R and D System</td>
+      <td>AF-474-SP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Tubulin</td>
+      <td>Calbiochem</td>
+      <td>CP06 RRID:AB_2617116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin</td>
+      <td>Sigma</td>
+      <td>A2066 RRID:AB_476693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Drop-seq tools version 1.13</td>
+      <td>https://github.com/broadinstitute/Drop-seq</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>dropSeqPipe</td>
+      <td>https://github.com/darneson/dropSeqPipeDropEST</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Mouse Genome Allignment mm10</td>
+      <td>STAR-2.5.0c</td>
+      <td></td>
+      <td>https://github.com/ alexdobin/STAR</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Seurat R package version 3.0.0.9000</td>
+      <td>https://github.com/satijalab/seurat</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Cell Ranger V3.0.2</td>
+      <td>10X Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prolong Diamond Antifade Mountant with DAPI</td>
+      <td>Thermo Fischer</td>
+      <td>P36966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HFD; 60% kcal fat</td>
+      <td>Research Diets</td>
+      <td>D12492</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal studies
 
 Breeding pairs of Il10RaF/Fmice (#028146), Adiponectin CRE (#010803), C57BL/6 SCID (#001913) and C57BL/6 WT controls (#000664) were acquired from Jackson Laboratory and maintained in a pathogen-free barrier-protected environment (12:12 hr light/dark cycle, 22–24°C) at the UCLA animal facility. Experimental mice were sacrificed at ages mentioned in figure legends for gene expression analysis. For the time course cold exposure experiment, WT mice at 8–10 weeks of age were singly housed at 4°C room in a non-bedded cage without food and water for first 6 hr; thereafter food, water, and one cotton square were added. For the 24 hr harvest, 3 hr before harvest, food, water, and cotton square were removed and then mice were harvested. For the 48 hr and 4 day cold exposure, cages were changed daily with new cotton squares and 3 hr before the time of harvest, the food, water, and cotton square were removed. For β-adrenergic stimulation experiments, mice were intraperitoneally injected with β3-adrenergic agonist (CL 316,243; CL, at 1 mg/kg/day for 4 days) or saline. For the diet study, 10-week-old Il10raF/F and AdIL10RαKO mice were fed a 60% high-fat diet (Research Diets) for the indicated times. Mouse weights were measured every week and food was replaced weekly. At the end of the experiment, iWATs were resected for gene expression analysis. Indirect calorimetry was performed using a Columbus Instruments Comprehensive Lab Animal Monitoring System (CLAMS, Columbus Instruments). Animals were placed individually in chambers for three consecutive days at ambient temperature (26.5°C) with 12 hr light/dark cycles. Animals had free access to food and water. Respiratory measurements were made in 20 min intervals after initial 7–9 hr acclimation period. Energy expenditure was calculated from VO2 and RER using the Lusk equation, EE in Kcal/hr = (3.815 + 1.232 X RER) X VO2 in ml/min. CLAMS data were analyzed by CALR web-based software (Mina et al., 2018). Animal experiments were conducted in accordance with the UCLA Institutional Animal Care and Research Advisory Committee.
 
-## RNA-Seq
+### RNA-Seq
 
 Total RNA was prepared as described (Tong et al., 2016). Strand-specific libraries were generated from 500 ng total RNA using the TruSeq Stranded Total RNA Library Prep Kit (Illumina). cDNA libraries were single-end sequenced (50 bp) on an Illumina HiSeq 2000 or 4000. Reads were aligned to the mouse genome (NCBI37/mm9) with TopHat v1.3.3 and allowed one alignment with up to two mismatches per read. mRNA RPKM values were calculated using Seqmonk’s mRNA quantitation pipeline. A gene was included in the analysis if it met all the following criteria: the maximum RPKM reached four at any time point, the gene length was >200 bp, and for in-vitro studies was induced at least 3-fold from Day 0 samples, and the expression was significantly different from the basal (p<0.01) as determined by the DESeq2 package in R Bioconductor. P-values were adjusted using the Benjamini-Hochberg procedure of multiple hypothesis testing (Benjamini and Hochberg, 1995).
 
-## scRNA-Seq of adipose stromal vascular fraction (SVF) population
+### scRNA-Seq of adipose stromal vascular fraction (SVF) population
 
-## Single cell isolation from SVF
+#### Single cell isolation from SVF
 
 Inguinal white adipose tissue (iWAT) from mice treated with saline or CL were dissected and placed on sterile 6-well tissue culture plate with ice-cold 1X DPBS. Fat pads were blotted on a napkin to removed excess liquid. Tissues were cut and minced with scissors and placed in 15 ml conical tubes containing digestion buffer (2 ml DPBS and Collagenase II at 3 mg/ml; Worthington Biochemical, Lakewood, NJ, USA) and incubated at 37°C for 40 min with gentle shaking at 100 rpm. Following tissue digestion 8 ml of resuspension media (DMEM/F12 with glutamax supplemented with 15%FBS and 1% pen/strep; Thermo Scientific, CA) was added to stop enzyme activity. The digestion mixture was passed through 100 μm cell strainer and centrifuged at 150 x g for 8 min at room temperature. The pellet was resuspended and incubated in RBC lysis buffer (Thermo Scientific, CA) for 3 min at room temperature to remove red blood cells followed by centrifugation at 150 x g for 8 min. The pellet was resuspened in resuspension media and spun down again at 150 x g for 8 min. Finally, the cell pellet was resuspended in 1 ml of 0.01% BSA (in DPBS). This final cell suspension solution was passed through a 40 μm cell strainer (Fisher Scientific, Hampton, NH, USA) to discard debris and cell number was counted for Drop-Seq application.
 
-## Drop-seq single cell barcoding and library preparation
+### Drop-seq single cell barcoding and library preparation
 
 The Drop-seq protocol from Macosko et al. and version 3.1 of the online Drop-seq protocol [http://mccarrolllab.com/download/905/] was followed with minor modifications to generate STAMPs (single-cell transcriptomes attached to microparticles) and cDNA libraries (Macosko et al., 2015). Briefly, to create oil droplets with barcoded cells, single cell suspensions (100 cells/μl), EvaGreen droplet generation oil (BIO-RAD, Hercules, CA, USA), and ChemGenes barcoded microparticles (ChemGenes, Wilmington, MA, USA) were co-flowed through a FlowJEM aquapel-treated microfluidic device (FlowJEM, Toronto, Canada) at the recommended flow speeds (oil: 15,000 μl/hr, cells: 4000 μl/hr, and beads 4000 μl/hr). After STAMP generation, oil droplets were broken, and cDNA synthesis was performed. To obtain enough cDNA for library preparations the Drop-seq protocol was followed with the following modifications. For the PCR step, 4000 beads were used per tube, the number of cycles was changed to 4 + 11 and multiple PCR tubes were pooled. cDNA library concentration and quality were assessed using the Agilent TapeStation system (Agilent, Santa Clara, CA, USA). The samples were then tagmented using the Nextera DNA Library Preparation kit (Illumina, San Diego, CA, USA) and multiplex indices were added. After another round of PCR, the samples were assessed on a Tapestation high sensitivity DNA screentape (Agilent, Santa Clara, CA, USA) for library quality before sequencing.
 
-## Illumina high-throughput sequencing of Drop-seq libraries
+### Illumina high-throughput sequencing of Drop-seq libraries
 
 Molar concentrations of the Drop-seq libraries were quantified using the Qubit Fluorometric Quantitation system (ThermoFisher, Canoga Park, CA, USA) and library fragment lengths were estimated using a Tapestation high sensitivity DNA screentape (Agilent, Santa Clara, CA, USA). Samples were normalized by concentration and then pooled appropriately. Pooled libraries were then sequenced on an Illumina HiSeq 4000 (Illumina, San Diego, CA, USA) instrument using the Drop-seq custom read 1B primer (GCCTGTCCGCGGAAGCAGTGGTATCAACGCAGAGTAC) (IDT, Coralville, IA, USA) and PE100 reads were generated. Read 1 consists of the 12 bp cell barcode, followed by the 8 bp UMI, and the last 80 bp on the read are not used. Read two contains the single cell transcripts.
 
-## Drop-seq data pre-processing and quality control
+### Drop-seq data pre-processing and quality control
 
 Demultiplexed fastq files generated from Drop-seq were processed to digital expression gene matrices (DGEs) using Drop-seq tools version 1.13 (https://github.com/broadinstitute/Drop-seq) and dropEst (Petukhov et al., 2018). The workflow is available as modified version of the snakemake-based dropSeqPipe (https://github.com/Hoohm/dropSeqPipe) workflow and is available on github (Arneson, 2019; copy archived at https://github.com/elifesciences-publications/dropSeqPipeDropEST). Briefly, fastq files were converted to BAM format and cell and molecular barcodes were tagged. Reads corresponding to low quality barcodes were removed and any occurrence of the SMART adapter sequence or polyA tails found in the reads was trimmed. These cleaned reads were converted back to fastq format to be aligned to the mouse reference genome mm10 using STAR-2.5.0c. After the reads were aligned, the reads which overlapped with exons, introns, and intergenic regions were tagged using a RefFlat annotation file of mm10. To make use of reads aligning to intronic regions, which are not considered in Drop-seq tools v1.13, we used dropEst to construct digital gene expression matrices from the tagged, aligned reads where each row in the matrix is the read count of a gene and each column is a unique single cell. The count values for each cell were normalized by the total number of UMIs in that cell and then multiplied by 10,000 and log transformed. Single cells were identified from background ambient mRNA using thresholds of at least 700 transcripts and a maximum mitochondrial fraction of 10%.
 
-## Identification of cell clusters
+### Identification of cell clusters
 
 The Seurat R package version 3.0.0.9000 (https://github.com/satijalab/seurat) was used to project all sequenced cells onto two dimensions using t-SNE and Louvain (Blondel et al., 2008; van der Maaten and Hinton, 2008) clustering was used to assign clusters. The optimal number of PCs used for t-SNE/UMAP dimensionality reduction and Louvain clustering was determined using the Jackstraw permutation approach and a grid-search of the parameters. Similarly, the density used to assign clusters was identified using a parameter grid search.
 
-## Identification of marker genes of individual cell clusters
+### Identification of marker genes of individual cell clusters
 
 We defined cell cluster specific marker genes from our Drop-seq dataset using the FindConservedMarkers function in Seurat across all the samples. Briefly, a Wilcoxon Rank Sum Test is run within each sample and a meta p-value across all samples is computed to assess the significance of each gene as a marker for a cluster. Within each sample, the cells are split into two groups: single cells from the cell type of interest and all other single cells. To be considered in the analysis, the gene had to be expressed in at least 10% of the single cells form one of the groups and there had to be at least a 0.25 log fold change in gene expression between the groups. This process was conducted within each sample separately, and then a meta p-value was assessed from the p-values across all samples. Multiple testing was corrected using the Benjamini-Hochberg method on the meta p-values and genes with an FDR < 0.05 were defined as cell type specific marker genes.
 
-## Resolving cell identities of the cell clusters
+### Resolving cell identities of the cell clusters
 
 We used two methods to resolve the identities of the cell clusters. First, we used known cell-type specific markers curated from literature, single cell atlases, previous studies in the SVF and PBMCs, and from Immgen (immgen.org) to find distinct expression patterns in the cell clusters (Burl et al., 2018; Chen et al., 2018; Han et al., 2018; Hepler et al., 2018; Tabula Muris Consortium et al., 2018; Stoeckius et al., 2017; Zhang et al., 2019). A cluster showing unique expression of a known marker gene can be used to identify that cell type. To consider more than a single gene, we evaluated the overlap between known cell type marker genes with the marker genes identified in our cell clusters using FindConservedMarkers. Significant overlap was assessed using a Fisher’s exact test with Bonferroni correction for multiple testing. The two methods showed consistency in cell identity determination. The GEO accession number for the sequencing data is GSE133486.
 
-## Single nuclei adipocyte RNA-Sequencing (SNAP-Seq)
+### Single nuclei adipocyte RNA-Sequencing (SNAP-Seq)
 
-## Adipocyte nuclei isolation from iWAT
+#### Adipocyte nuclei isolation from iWAT
 
 200–400 mg of inguinal white adipose tissues (iWAT) from mice exposed to conditions mentioned in the text were placed on sterile 6-well tissue culture plate with ice-cold 1XPBS. Fat pads were blotted on a napkin to removed excess liquid. Tissues were cut and minced with scissors and were placed in 15 ml conical tubes containing digestion buffer (DPBS and Collagenase D at 9.8 mg/ml; Sigma, MO) at incubated at 37°C for 45 mins with gentle shaking at 100 rpm. 10 ml of resuspension media (DMEM/F12 with glutamax supplemented with 15% FBS and 1% pen/strep; Thermo Scientific, CA) was added to digested solution and slowly inverted five times. The digestion mixture was centrifuged at 200 x g for 5 mins at RT. Floating adipocytes were collected using P1000 pipet with half cut P1000 tip. Adipocytes were transferred to a new 15 ml tube and kept on ice for five mins. Excess liquid was aspirated using 1 ml syringe and adipocytes were then washed with 1 ml DPBS and the suspension was spun down at 200 g for 5 mins at RT. Spun down liquid was aspirated using 1 ml syringe and adipocyte nuclei were isolated using Minute nuclei and cytosol isolation kit for adipose tissue using manufacture’s instruction (Invent Biotechnologies, MN) with modifications. Briefly, adipocytes were slowly resuspended in 600 μl nuclei lysis buffer (N/C Buffer) and lysate was transferred to a filter cartridge with collection tube and incubated at −20°C freezer for 20 min with cap open. After incubation, the tube was centrifuged at 2000 rpm for 2 min at 4°C. The filter cartridge was discarded without agitation and the collection tube was immediately centrifuged at 4000 rpm for 4 min at 4°C. Supernatant was gently removed using P200 pipet without touching the side walls. Nuclei were resuspended in 30 ul of nuclei resuspension buffer (DPBS+0.1%BSA) per 200–400 mg of iWAT (i.e. one 8–10 week chow fed mouse). For SNAP-seq, 2–3 mice were combined and 60 μl of nuclei suspension was transferred to a new 2 ml tube and resuspended with 500–700 μl of nuclei resuspension buffer and filtered using 40 μm cell strainer (Flowmi Cell Strainer, Belart, NJ) twice to get clean single nuclei suspension. As shown in Figure 3A, for quality control, nuclei were first DAPI stained and then filtered or FACS sorted to get single nuclei suspension. After microfluidic partitioning in 10xGenomics platform (see below), nuclei lysis was checked by observing oil emulsion under fluorescent microscope for DAPI diffusion.
 
-## Adipocyte single nuclei barcoding and library preparation
+#### Adipocyte single nuclei barcoding and library preparation
 
 Approximately 10,000 nuclei were loaded onto Single Cell 3’ Chip (10xGenomics, CA) per channel with an expected recovery to 4000–7000 nuclei. The Chip was placed on a 10XGenomics Instrument to generate single nuclei gel beads in emulsion (GEMs). For optimal nuclei lysis, GEMs were incubated on ice for 50 mins. After incubation, single nuclei RNA-Seq libraries were prepared using Chromium Single Cell 3’ Library and Cell Bead Kit) according to manufacturer’s instruction.
 
-## Illumina high-throughput sequencing libraries
+#### Illumina high-throughput sequencing libraries
 
 The 10X genomics library molar concentration was quantified by Qubit Fluorometric Quantitation (ThermoFisher, Canoga Park, CA, USA) and library fragment length was estimated using a TapeStation (Aligent, Santa Clara, CA, USA). Sequencing was performed on an Illumina HiSeq 4000 (Illumina, San Diego, CA, USA) instrument with PE100 reads and an 8 bp index read to multiplexing. With the version three chemistry, the first 26 bp of Read 1 consist of the cell barcode and the UMI, and the last 74 bp on the read are not used. Read two contains the single cell transcripts.
 
-## SNAP-Seq data pre-processing and quality control-
+#### SNAP-Seq data pre-processing and quality control-
 
 Digital gene expression matrices (DGEs) in sparse matrix representation we obtained using 10x Genomics’ Cell Ranger v3.0.2 software suite. Briefly,. bcl files obtained from the UCLA Broad Stem Cell Research Center sequencing core were demultiplexed and converted to fastq files using the mkfastq function in Cell Ranger which wraps Illumina’s bcl2fastq v2.19.1.403. The counts function in Cell Ranger was used to generate DGEs from the fastq files. Briefly, the resulting fastq files are aligned to a 10x supplied mm10 reference genome (mm10-3.0.0) using STAR and reads are identified as either exonic, intronic, or intergenic using the supplied 10x Genomics GTF file. To determine cell barcodes, the counts function in Cell Ranger implements an algorithm based on EmptyDrops (Lun et al., 2019). Only reads which align to exonic regions were used in the resulting DGE. The count values for each cell were normalized by the total number of UMIs in that cell and then multiplied by 10,000 and log transformed. Single cells were identified from background ambient mRNA using thresholds of at least 200 genes and a maximum mitochondrial fraction of 10%.
 
-## Identification of adipocyte clusters
+#### Identification of adipocyte clusters
 
 The Seurat R package version 3.0.0.9000 (https://github.com/satijalab/seurat) was used to project all sequenced cells onto two dimensions using t-SNE/UMAP and Louvain clustering was used to assign clusters. The optimal number of PCs used for t-SNE dimensionality reduction and Louvain clustering were determined using the Jackstraw permutation approach and a grid-search of the parameters. Similarly, the density used to assign clusters was identified using a parameter grid search.
 
-## Identification of marker genes of individual adipocyte clusters
+#### Identification of marker genes of individual adipocyte clusters
 
 We defined cell cluster specific marker genes from our 10x Genomics dataset using the FindConservedMarkers function in Seurat across all the samples. Briefly, a Wilcoxon Rank Sum Test is run within each sample and a meta p-value across all samples is computed to assess the significance of each gene as a marker for a particular cluster. Within each sample, the cells are split into two groups: single cells from the cell type of interest and all other single cells. To be considered in the analysis, the gene had to be expressed in at least 10% of the single cells form one of the groups and there had to be at least a 0.25 log fold change in gene expression between the groups. This process was conducted within each sample separately, and then a meta p-value was assessed from the p-values across all samples. Multiple testing was corrected using the Benjamini-Hochberg method on the meta p-values and genes with an FDR < 0.05 were defined as cell type specific marker genes.
 
-## Resolving cell identities of the cell clusters
+#### Resolving cell identities of the cell clusters
 
 Two methods were used to aid in resolving the identities of the cell type clusters. First, KEGG, Reactome, BIOCARTA, GO Biological Processes, and Hallmark gene sets were obtained from MSigDB. To identify pathways which had significant enrichment of our cell type marker genes, we used a hypergeometric test, followed by multiple testing correction with the Benjamini–Hochberg method. We also adapted the method proposed by Zywitza et al. (2018) to get a single cell level score for each pathway. Briefly, the expression of each gene was linearly transformed to (0,1) and the average gene expression of all genes for each gene set was computed to represent the score for that gene set. We then identified the top scoring gene sets which were representative of each cell type. The GEO accession number for the sequencing data is GSE133486.
 
-## RNAScope fluorescence in situ hybridization (FISH)
+### RNAScope fluorescence in situ hybridization (FISH)
 
 Inguinal white adipose tissue (iWAT) from CL-treated WT mice (Jackson Laboratory, #000664) was fixed in 10% formalin overnight, embedded with paraffin, and sectioned into unstained, 5-μm-thick sections. Sections were baked at 60°C for 1 hr, deparaffinized, and baked again at 60°C for another hour prior to pre-treatment. The standard pre-treatment protocol was followed for all sectioned tissues. In situ hybridization was performed according to manufacturers’ instructions using the RNAscope Multiplex Fluorescent Reagent Kit v2 (#323136, Advanced Cell Diagnostics [ACD], Newark, CA). Opal fluorophore reagent packs (Akoya Biosciences, Menlo Park, CA) for Opal 520 (FP1487001KT), Opal 570 (FP1488001KT), and Opal 620 (FP1495001KT) were used at a 1:1000 dilution in TSA buffer provided in the RNAscope Multiplex Fluorescent Reagent Kit v2. Probes targeting mm-Adrb3 (#495521, ACD) in channel 1, mm-Ucp1 (#455411-C2, ACD) in channel 2, and mm-Ppargc1b (#402131-C4, ACD) in channel four were used. Slides were mounted with ProLong Diamond Antifade Mountant with DAPI (P36966, Life Technologies). Fluorescent signals were captured with the 40x objective lens on a laser scanning confocal microscope (LSM880; Zeiss).
 
-## Real time qPCR
+### Real time qPCR
 
 Total RNA was isolated using TRIzol reagent (Invitrogen) and reverse transcribed with the iScript cDNA synthesis kit (Biorad). cDNA was quantified by real-time PCR using SYBR Green Master Mix (Diagenode) on a QuantStudio six instrument (Themo Scientific, CA). Gene expression levels were determined by using a standard curve. Each gene was normalized to the housekeeping gene 36B4 and was analyzed in duplicate. Primers used for real-time PCR are in Supplementary file 2.
 
-## Western blotting
+### Western blotting
 
 Whole cell lysate or tissue lysate was extracted using RIPA lysis buffer (Boston Bioproducts) supplemented with complete protease inhibitor cocktail (Roche). Proteins were diluted in Nupage loading dye (Invitrogen), heated at 95°C for 5 min, and run on 4–12% NuPAGE Bis-Tris Gel (Invitrogen). Proteins were transferred to hybond ECL membrane (GE Healthcare) and blotted with IL10Rα (AF-474-SP, R and D Systems), αTubulin (CP06, Calbiochem), Actin (A2066, Sigma-Aldrich).
 
-## Cellular and mitochondrial respiration
+### Cellular and mitochondrial respiration
 
 Mitochondria were isolated from fresh tissues and immediately used in a XF24 analyzer as previously described (Rogers et al., 2011). Briefly, mitochondria were isolated in MSHE+BSA buffer using a 800 g/8000 g dual centrifugation method and resuspended in MAS buffer. Protein concentration was determined using a Bradford Assay reagent (Bio-Rad) and 20 µg of protein were seeded per well by centrifugation. Coupling and electron flow assays were performed as described (Rogers et al., 2011). For the coupling assay, basal oxygen consumption rate (OCR) was measured in the presence of 10 mM succinate and 2 µM rotenone, and after sequential addition of 4 mM ADP (Complex V substrate), 2.5 µg/ml oligomycin (Complex V inhibitor), 4 µM FCCP (mitochondrial uncoupler) and 4 µM antimycin A (Complex III inhibitor). For electron flow assays, basal OCR was measured in presence of 10 mM pyruvate (Complex I substrate), 2 mM malate and 4 µM FCCP, and after sequential addition of 2 µM rotenone (Complex I inhibitor), 10 mM succinate (Complex II substrate), 4 µM antimycin A (Complex III inhibitor) and 1 mM TMPD containing 10 mM ascorbate (Complex IV substrate).
 
-## Statistics
+### Statistics
 
 All data are presented as mean ± SEM and analyzed using Microsoft Excel and Prism (Graphpad). Student’s t test with Welch’s correction was used for single variable comparison between two groups. One-way ANOVA followed by Dunnett post hoc test was used for multiple comparisons versus the control group. Two-way ANOVA followed by Bonferroni posttests was used to examine interactions between multiple variables. Statistical significance for CLAMS study was determined by multiple regression analysis (ANCOVA). p<0.05 was considered to be statistically significant and is presented as *p<0.05, **p<0.01, ***p<0.001, or ****p<0.0001.

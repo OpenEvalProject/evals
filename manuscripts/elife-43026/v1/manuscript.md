@@ -35,7 +35,7 @@
 
 ## Abstract
 
-10.7554/eLife.43026.001 Propranolol is an approved non-selective β-adrenergic blocker that is first line therapy for infantile hemangioma. Despite the clinical benefit of propranolol therapy in hemangioma, the mechanistic understanding of what drives this outcome is limited. Here, we report successful treatment of pericardial edema with propranolol in a patient with Hypotrichosis-Lymphedema-Telangiectasia and Renal (HLTRS) syndrome, caused by a mutation in SOX18 . Using a mouse pre-clinical model of HLTRS, we show that propranolol treatment rescues its corneal neo-vascularisation phenotype. Dissection of the molecular mechanism identified the R(+)-propranolol enantiomer as a small molecule inhibitor of the SOX18 transcription factor, independent of any anti-adrenergic effect. Lastly, in a patient-derived in vitro model of infantile hemangioma and pre-clinical model of HLTRS we demonstrate the therapeutic potential of the R(+) enantiomer. Our work emphasizes the importance of SOX18 etiological role in vascular neoplasms, and suggests R(+)-propranolol repurposing to numerous indications ranging from vascular diseases to metastatic cancer.
+Propranolol is an approved non-selective β-adrenergic blocker that is first line therapy for infantile hemangioma. Despite the clinical benefit of propranolol therapy in hemangioma, the mechanistic understanding of what drives this outcome is limited. Here, we report successful treatment of pericardial edema with propranolol in a patient with Hypotrichosis-Lymphedema-Telangiectasia and Renal (HLTRS) syndrome, caused by a mutation in SOX18. Using a mouse pre-clinical model of HLTRS, we show that propranolol treatment rescues its corneal neo-vascularisation phenotype. Dissection of the molecular mechanism identified the R(+)-propranolol enantiomer as a small molecule inhibitor of the SOX18 transcription factor, independent of any anti-adrenergic effect. Lastly, in a patient-derived in vitro model of infantile hemangioma and pre-clinical model of HLTRS we demonstrate the therapeutic potential of the R(+) enantiomer. Our work emphasizes the importance of SOX18 etiological role in vascular neoplasms, and suggests R(+)-propranolol repurposing to numerous indications ranging from vascular diseases to metastatic cancer.
 
 ## Introduction
 
@@ -51,6 +51,14 @@ In this study, we report an additional case of HLTRS successfully treated with p
 
 Based on the observation that a previous case of HLTRS may have benefited from a long-term exposure to propranolol (Wünnemann et al., 2016), we considered propranolol therapy for another HLTRS patient (Bastaki et al., 2016) in an attempt to mitigate the severity of his symptoms. The patient was diagnosed with HLTRS at 11 months of age, after presenting with alopecia, edema and telangiectasia (Bastaki et al., 2016). Exome sequencing revealed that this patient had a truncation mutation in SOX18 (SOX18 c.492_505dup). In September 2015, at 17 months of age, he developed progressive pericardial effusion over 3 weeks, which required pericardiocentesis. Fluid analysis showed transudate. Two weeks after the procedure, pericardial effusion re-accumulated progressively over 6 weeks, despite strong anti-inflammatory regimens including 3 weeks of oral ibuprofen and 10 days of oral prednisone. Past clinical experience in HLTRS suggested the progression of this pericardial effusion was intractable. The effusion was large enough to cause hemodynamic compromise and to necessitate another pericardiocentesis. After obtaining parental consent, oral propranolol was introduced and increased gradually every 2–3 weeks from 0.8 mg/kg/day in three divided doses to reach a maximum of 4.1 mg/kg/day, as tolerated clinically (pulmonary wheezing). We observed spontaneous and rapid resolution of the pericardial effusion after reaching a dose threshold of 3 mg/kg/day. Bronchial side effects limited the maximal dosing in this patient to 4 mg/kg/day (Figure 1A and B). The positive outcome in this second HLTRS patient harboring SOX18 mutation suggested propranolol might act via an alternative pathway than the well characterized β-adrenergic receptor blockade.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig1-v1.jpg)
+
+**Figure 1.:** (A) A 17 months old HLTRS patient was treated with propranolol, starting at 0.8 mg/kg/day in three divided doses and increasing gradually every 2–3 weeks to maximum of 4.1 mg/kg/day (red curve). In parallel the volume of ventricular peri-cardial effusion was measured at the end of the diastole (blue curve). (B) Echocardiography revealed that pericardiocentesis was not required anymore after propranolol treatment due to significant reduction in pericardial effusion (pink arrow) which did not recur as of June 2018 (time of the study). (C) Fetal endothelial colony forming cells (ECFC) were isolated from term placenta from healthy donors, expanded for three passages, and subjected to propranolol treatment followed by analysis of survival (percentage) as compared to vehicle control (DMSO). Propranolol affected the survival of ECFC at equivalent doses whereas Atenolol (specific β1 blocker) and ICI118,551 (specific β2) did not. (D) Cell survival assay performed on ISO-HAS angiosarcoma cells after transfection with three different siRNA sequences targeting ADRB2 and following 72 hr incubation with propranolol (racemic mixture). Alamar Blue assay ; Points, mean of at least four independent experiments ; Error bars, standard error. (E) Combination indexes of propranolol and vinblastine in ISO-HAS angiosarcoma cells after transfection with three different siRNA sequences targeting ADRB2 and following 72 hr drug incubation (50uM). Alamar Blue assay ; Bars, mean of at least four independent experiments ; Error bars, standard error. Statistical analysis for C was performed using Mann-Whitney non parametric t-test and for D-E using an unpaired two-tailed t test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) β-adrenergic receptor gene expression following 72 hr transfection with siRNA in ISO-HAS angiosarcoma cells (A) and SHEP neuroblastoma cells (B), as determined by qRT-PCR using specific primers for ADRB1 and ADRB2, and compared with YWHAZ as housekeeping gene. (C) Cell viability assay performed by Alamar Blue on SHEP neuroblastoma cells following siRNA transfection and 72 hr drug incubation; Data points, mean of at least four independent experiments; Error bars, standard error. (D) Change in vincristine EC50 (i.e. concentration causing a 50% reduction in cell viability after 72 hr drug incubation) in the presence of 10 or 50 µM propranolol as compared with vincristine alone following transfection of SHEP neuroblastoma cells with either ADRB1, ADRB2 or both siRNA. Bars, mean of at least four independent experiments ; Error bars, standard error. Classic unpaired Student's t test with the following legend: *p<0.05; **p<0,01; ***p<0001.
+
 We next investigated the potential of propranolol to exert β-adrenergic independent effects in cancer cell lines and in human endothelial cells (Figure 1C–D). Survival of primary placentally-derived endothelial colony forming cells (ECFC) was measured in presence of increasing concentrations (5–500 μM) of propranolol and specific β1 (Atenolol) and β2 (ICI 118,551) adrenergic-receptor blockers. Results showed that pharmacological inhibition of specific β-adrenergic receptors did not replicate the marked effect propranolol had in the ECFC survival assay (Figure 1C).
 
 To further explore β-adrenergic independent effects of propranolol we knocked down ADRB2 in a propranolol-sensitive angiosarcoma cell line (ISO-HAS, Figure 1—figure supplement 1A). The cytotoxic activity of propranolol (Figure 1D) and its enhancement of vinblastine cytotoxicity (Figure 1E) were unaltered when ADRB2 was silenced. These results show that the anti-survival and sensitization to chemotherapy activities of propranolol are independent of β-adrenergic receptor expression. Of note, ADRB1 is expressed at low levels in the angiosarcoma cell line (not shown) but is expressed at higher levels in the SHEP neuroblastoma cell line, where its expression can be reduced by siRNA (Figure 1—figure supplement 1B). Similar results were obtained when using a non-endothelial cell type (SHEP neuroblastoma cell line) whereby knock-down of ADRB1 and ADRB2 alone or in combination did not affect the ability of propranolol to block the proliferative response and its ability to enhance response to chemo-therapies (Figure 1—figure supplement 1C and 1D).
@@ -63,6 +71,18 @@ Treatment with propranolol (21 days) did not affect the gross morphological appe
 
 Propranolol treatment of RaOp mice, however, led to an almost complete rescue of the CNV phenotype (Figure 2A). The corneas from propranolol-treated mutant animals were devoid of blood vessels (Figure 2A, Endomucin- and ERG-positive cells) in five out of five mice, and one mutant pup only had a mild penetration of blood vessels into the cornea (Figure 2A). These pre-clinical data indicate that propranolol treatment is an effective therapeutic strategy to block aberrant vessel growth in a mouse model of HLTRS and is indicative of on-target engagement on SOX18 protein in vivo.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig2-v1.jpg)
+
+**Figure 2.:** (A) Fluorescent images of corneal flat mounts, showing blood vessel penetration into the cornea at P28 stage using endothelial cell markers ERG and endomucin (EMCN). Sox18 WT and RaOp mice were treated from P8 to P28 with either vehicle PBS or propranolol. Propranolol has no obvious effect on WT cornea, but prevents CNV in RaOp pups. Number of predominant phenotype shown in bottom right. Scale bar left 500 µm, right 100 µm. (B) COS-7 cells were transfected with SOX18 responsive Vcam1:luciferase construct and a combination of Sox18 wild type plasmid DNA and RaOp plasmid DNA. RaOp behaves in a dominant negative fashion and is capable to inhibit SOX18 WT function even at low 30:1 (w/w DNA) allelic ratios. Addition of propranolol to the media rescues SOX18 dependent activity of the Vcam1 promoter in presence of RaOp. Effect is concentration dependent and normal SOX18 activity on this construct is achieved at 15 µM propranolol. Sox18. *** p-value≤0.001, Kruskal-Wallis multiple comparison test. Data shown is mean ± SD of n ≥ 8. (C) The bar graph shows ALPHAScreen signal as a measure of the level of protein-protein interaction between SOX18 and its mutant counterpart RaOp (red square) and SOX18 homodimer formation (blue dot) in absence or presence of propranolol treatment. Propranolol is a small compound with the ability to disrupt SOX18 self-recruitment. Statistical analysis in 2B one-way ANOVA with Bonferroni post-hoc test and in 2C ANOVA Sidak’s multiple comparison test. Analysis of the protein pair by ALPHAScreen assay was performed in three different biological experiment with three technical replicates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Corneal flat mount from adults (8 weeks old mice) wild type control and RaOp ±animals showing blood vessel invasion. (B) Immunofluorescence further confirms blood (Endomucin, EMCN, blue, ERG, red) and lymphatic (Neuropillin-2, NRP2, green) vessels outgrowth in corneal tissues (8 weeks old mice). (C) Corneal tissues were harvested from mice at different stages, ranging from postnatal day 8 to 16 weeks of age. Penetrance of corneal vessels was analysed by immunofluorescence for vascular endothelial cells markers EMCN, NRP2 and ERG. At early stages (P8–P22), wild type pups have NRP2-positive, EMCN-negative vessels projecting from the sclera into the cornea. This is not observed at later stages. Onset of corneal neo-vessel formation in RaOp mice appears between P22 and 12 weeks. Scale bar whole corneas: 0.5 mm, detail: 0.2 mm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) DBA/2JArc wild type females were crossed with a heterozygous RaOp male (B6D2-RaOp/J) to generate Sox18 mutant pups heterozygous for the RaOp allele. RaOp mice have a distinct sparse coat, and are smaller than wild type littermates. Pups were treated daily through oral gavage with vehicle PBS or 25 mg/kg/day propranolol, from P8 until P28. No obvious gross morphological defects were observed in propranolol treated mice compared to vehicle PBS. Scale bar 1 cm. (B) Weight of the mice was recorded daily throughout the time course of the treatment. RaOp weighted less than wild type littermates. Propranolol increased the mean weight of the wild type mice, but not of RaOp mice. (C) The bar graph represents ALPHAScreen signals as a measure of the protein-protein interaction between SOX18 and RBPJ (NOTCH signaling effector) transcription factors. Control conditions (ctrl and DMSO ctrl) show the reference signal for SOX18/RBPJ interaction, results are shown as a fold response compared to control. Upon addition of SOX18 small molecule inhibitor Sm4, PPI is disrupted at 50 μM, whereas propranolol showed efficacy from 5 μM. Experiments were performed in three independent replicates. **** padj ≤1e-4, 2way ANOVA Tukey multiple comparisons. Data shown is mean ± SEM, n-number is indicated in graph.
+
 These in vivo data prompted us to assess the transcriptional activity of Sox18 in presence of propranolol. Sox18 was overexpressed in COS-7 cells, along with a synthetic construct containing a luciferase reporter gene fused to the Vcam1 promoter fragment, a direct target of Sox18 (Hosking et al., 2004). In this assay, we interfere with wild type Sox18 function using the RaOp dominant-negative protein. We found that RaOp completely abolished the activity of the wild type protein at ratios as low as 1:30 RaOp:Sox18 WT (Figure 2B). We next tested whether propranolol could rescue the dominant-negative inhibitory effect of RaOp reproduced in this cell-based system. Propranolol restored SOX18 wild type functionality in a dose-dependent manner; it significantly increased Vcam1 reporter promoter activity to base line levels at 15 µM (p-value≤0.001) (Figure 2B).
 
 Lastly, to demonstrate the molecular mode of action of propranolol on SOX18 protein partner recruitment, we used an ALPHAScreen assay to measure pairwise protein-protein interaction (PPI). SOX18 homodimer and SOX18/RaOp (Q161*) heterodimer formation was measured in absence or presence of propranolol (Figure 2C). Propranolol showed a mild efficacy at disrupting SOX18 homodimer and was able to interfere more effectively with the assembly of the non functional SOX18/RaOp protein complex. An effector of the NOTCH signaling pathway (RBPJ) was recently shown to act as a SOX18 protein partner (Overman et al., 2017; Fontaine et al., 2017). In addition to disrupting SOX18 homodimer assembly (Figure 2C), we found that propranolol inhibits the association of SOX18 with RBPJ at low micro-molar range (5 μM) (Figure 2—figure supplement 2C). Taken together these in vivo pre-clinical data and in vitro results strongly suggest that one mechanism by which propranolol mediates its anti-angiogenic effects is via direct interference with a SOX18-dependent transcriptional activation.
@@ -70,6 +90,26 @@ Lastly, to demonstrate the molecular mode of action of propranolol on SOX18 prot
 We have previously identified, developed and validated a small compound, Sm4, that disrupts SOX18 homodimer formation in turn affecting SOX18 ability to recruit RBPJ. Further, we have shown potential therapeutic applications in managing vascular over-growth in pre-clinical model of breast cancer metastasis (Overman et al., 2017). When using Sm4 as a reference, propranolol was equally effective at disrupting SOX18/RBPJ PPI however not as effective at blocking SOX18 homodimer formation (Figure 2—figure supplement 2C). Altogether, these results suggest that the same molecular mode of action of propranolol accounts for both the rescue of dominant-negative SOX18 loss of function by disruption of the non-functional SOX18/RaOp (Q161*) complex, and the disruption of functional SOX18 wild type PPIs, namely SOX18/RBPJ and SOX18/SOX18 dimers. In the context of the Ragged heterozygous mutation dominant negative mutation, the rescue process corresponds to the inhibition by propranolol of an inhibitor (RaOp) which in turn results to the partial restoration of the SOX18 wild type active form.
 
 This novel mode of action of propranolol, independent of its anti-adrenergic effects, prompted us to examine its mechanism of action in infantile hemangiomas, the most common vascular tumor in infancy. Although the molecular mode of action of propranolol in infantile hemangioma therapy is largely unknown, it is the mainstay of treatment for infantile hemangioma. (Léauté-Labrèze et al., 2008; Léauté-Labrèze et al., 2015a; Léauté-Labrèze et al., 2015b) A variety of propranolol-induced cellular effects have been observed in infantile hemangioma-derived stem cells (HemSCs), hemangioma endothelial cells (HemECs) and hemangioma pericytes (Lamy et al., 2010; Lee et al., 2014; Tu et al., 2013; Wong et al., 2012). To learn if SOX18 is involved, we first explored the expression of SOX18 in vivo in hemangioma tissue sections from three patients and in vitro in different cell populations derived from infantile hemangiomas: SOX18 protein was observed in a sup-population of CD31-positive endothelial cells (Figure 3A, arrows) and SOX18 mRNA was expressed in ECFC (positive control) and in HemEC, whereas HemSC showed low expression and hemangioma pericytes were completely devoid of SOX18 transcripts (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig3-v1.jpg)
+
+**Figure 3.:** (A) Infantile) hemangioma tissue section stained for SOX18 (red), Ki67 (green), CD31 (orange), D2-40 (pink) and DAPI (blue) reveals the presence of SOX18 expression in a large subset of hemangioma endothelial cells (arrows). (B) Schematic representation of infantile hemangioma stem cell (HemSC) endothelial differentiation assay. VEGF-B stimulates HemSC to differentiate into hemangioma endothelial cells (HemEC). This differentiation process is inhibited by propranolol, the R(+) enantiomer of propranolol, and by SOX18 small molecule inhibitor Sm4 (all at 5 uM). (C) VEGF-B treatment of HemSC from four different infantile hemangiomas resulted in increased CDH5 (an endothelial cell marker), SOX18 and ADBR2 (β2 adrenergic receptor) mRNA. Means and standard deviations are shown. (D) The effects of SOX18 inhibitor Sm4, its scaffold aspirin as a negative control, propranolol and its purified R(+) and S(-) enantiomers on HemSC-to-HemEC differentiation from two infantile hemangioma patients. Endothelial differentiation markers, CD31 and CDH5 and hemangioma endothelial markers NOTCH1, PLXND1 and VEGFR1 under each treatment condition in four biological replicates, determined by qPCR, were standardized as described (Willems et al., 2008). Means and standard deviations are shown. Statistical analysis in 3C and 3D was done using one-way ANOVA, Fisher Tests, and two-tailed two independent sample T-Tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Human ECFC served as a positive control for SOX18. Hemangioma-derived GLUT1-negative ECs, HemSC, GLUT1-positively selected ECs, and pericytes were analysed for SOX18 mRNA expression by qPCR analysis.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) VEGF-B treatment of HemSC from four different infantile hemangiomas resulted in increased CD31 and CDH5 (endothelial cell markers), and hemangioma endothelial markers NOTCH1, PLXND1 and VEGFR1, determined by qPCR. Inclusion of SOX18 inhibitor (Sm4) or propranolol blocked the VEGF-B induced increases in these markers. Results from eight biological replicates were standardized as described (Willems et al., 2008). Means and standard deviations are shown. All P values were < 0.001 for Control versus DMSO (VEGF-B treated); DMSO versus Sm4 and DMSO versus propranolol. (B–D) VEGFR2 protein and phosphorylation were not affected by pre-treatment with propranolol, R + enantiomer or S(-) enantiomer (each tested at 5 uM). (B) Human endothelial colony forming cells (ECFC) were pre-treated for one hour with drug as indicated, stimulated with 25 ng/ml VEGF-A for 5 min, lysed and analysed by Western blotting. (C) HemSC were induced to differentiate for 5 days with VEGF-B; control indicates cells in differentiation media without VEGF-B. Differentiated cells were pre-treated for one hour with drugs as indicated, stimulated with 25 ng/ml VEGF-A for 5 min, and lysed for VEGFR2 Western blotting. (D) HemSCs were treated as in B, cell lysates were immunoprecipitated with anti-VEGFR2, followed by Western blotting for phosphorylated VEGFR2 and total VEGFR2. B-D, M indicates lane with molecular weight standards.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Fluorescent images of corneal flat mounts, showing blood vessel penetration into the cornea at P28 stage using endothelial cell markers endomucin (EMCN). Sox18 WT and RaOp mice were treated from P8 to P28 with either vehicle PBS or propranolol or R-enantiomer or the S-enantiomer at 25 mg/Kg/day. Propranolol has no obvious effect on WT cornea, but prevents CNV in RaOp pups. Number of predominant phenotype shown in bottom right.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/43026/elife-43026-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Ear whole mount immunofluorescence for Podoplanin (white), ERG (red) and CD31 (green) was performed after wild type and RaOp mutant animals were treated by propranolol, S(-) and R (+)enantiomer (P1-P28 at 25 mg/kg/day). Quantification of the number of valves in pre-collector and collector vessels, LEC vessel density and LEC cell number showed that none of the drug treatment was efficient to mitigate the RaOp phenotype. n = 3–6 animal per genotypes and drug treatment.
 
 To interrogate whether propranolol inhibits SOX18 in this setting (Figure 3B), we induced patient derived HemSCs to differentiate into HemECs using VEGF-B and low serum media (Khan et al., 2008). CDH5 (a pan-endothelial marker), SOX18, and ADBR2 mRNAs were increased in VEGF-B-treated HemSC (Figure 3C) further showing a process by which differentiation of stem cells results in endothelial cells expressing SOX18. This was extended to other genes such as CD31, NOTCH1, PLXND1 and VEGFR1 (Table 1 and Figure 3—source data 1), each of which are expressed in infantile hemangioma endothelium in vivo (Boscolo et al., 2011; Nakayama et al., 2015; Wu et al., 2010), further confirming the successful differentiation of HemSCs into HemECs (Figure 3D and Figure 3—figure supplement 2A). Using this differentiation assay as a read-out, we next evaluated the capacity of propranolol to inhibit the differentiation of HemSCs isolated from four infantile hemangioma patients. The pharmacologic treatments of HemSC included: propranolol, Sm4 (SOX18 small molecule inhibitor), aspirin (a negative control [Overman et al., 2017; Fontaine et al., 2017]) compared to vehicle control. Of note, SOX18 has been shown to directly up-regulate Notch1 transcription via an intronic enhancer during arterial specification in vertebrates (Chiang et al., 2017), hence transcriptional output of this target gene indirectly reflects SOX18 activity. Propranolol significantly decreased VEGF-B induced expression of all five endothelial markers in HemSC to levels also achieved by Sm4 as compared to controls (see p-values in Figure 3—source data 1).
 
@@ -97,7 +137,7 @@ The strong monogenic effect of human SOX18 mutations and their rescue with propr
 
 ## Materials and methods
 
-## Hemangioma cell isolation and culture
+### Hemangioma cell isolation and culture
 
 Specimens of infantile hemangioma were obtained under an IRB-protocol approved by the Committee on Clinical Investigation, Boston Children’s Hospital. The clinical diagnosis was confirmed in the Department of Pathology. Informed consent was obtained for the specimens, according to the Declaration of Helsinki. Single cell suspensions were prepared from the proliferating phase hemangioma specimens and HemSCs were selected and expanded as described (Khan et al., 2008; JCI).
 
@@ -107,25 +147,81 @@ To induce HemSC to undergo endothelial differentiation, HemSCs were seeded on fi
 
 Total cellular RNA was extracted from HemSCs with an RNeasy Micro extraction kit (Qiagen, Valencia, CA, #74004). Reverse transcriptase reactions were performed using an iScript cDNA Synthesis Kit (Bio-Rad, CA, USA #170–8890). qPCR was performed using Kapa Sybr Fast ABI Prism 2x qPCR Master Mix (KAPA BioSystems, MA, USA # KK4604). Amplification was carried out in an ABI 7500 (Applied Biosystems, Foster City, CA). A standard curve for each gene was generated to determine amplification efficiency. ATP5B was used as housekeeping gene expression reference. Fold increases in gene expression were calculated according to two delta CT method, with each amplification reaction performed in triplicate.
 
-## Angiosarcoma cell culture
+### Angiosarcoma cell culture
 
 ISO-HAS angiosarcoma cells were kindly provided by Prof Masuzawa [Masuzawa, Int J Cancer 1999] and SHEP neuroblastoma cells were obtained from the Children’s Cancer Institute Australia (Sydney, Australia). Both cell lines were grown in DMEM supplemented with 10% FCS, 2 mM L-glutamine and 1% penicillin streptomycin, and kept in culture at 37°C in a humidified atmosphere containing 5% CO2. Cell lines were regularly screened and are free from mycoplasma contamination.
 
-## Gene silencing
+### Gene silencing
 
 ISO-HAS and SHEP cells were transfected with Lipofectamine RNAiMax (Life Technologies) and 5 nM Silencer Select siRNA sequences targeting ADRB1 and/or ADRB2 (Ambion, Life Technologies). A non-silencing control siRNA, which has no sequence homology to any known human gene sequence, was used as a negative control.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 The expression of adrenergic receptor genes ADRB1 and ADRB2 was examined in angiosarcoma and neuroblastoma cell lines following siRNA transfection using real-time quantitative RT-PCR. Total RNA was extracted using the Qiagen Mini RNeasy kit (Qiagen, Courtaboeuf, France) and RNA concentration was determined from the absorbance at 260 nm. cDNA synthesis was performed using the Quantitect Reverse Transcription kit (Qiagen). Real time PCR was run on a LightCycler 480 (Roche, Boulogne-Billancourt, France) for ADRB1 and ADRB2 using DNA primer sequences previously described (Cao et al., 2010) and endogenous control gene YWHAZ. Gene expression levels were determined using the ΔΔCt method, normalized to the YWHAZ control gene.
 
-## Cell viability assay
+**Table 1.**
+ qPCR primer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD31</td>
+      <td>CACCTGGCCCAGGAGTTTC</td>
+      <td>AGTACACAGCCTTGTTGCCATGT</td>
+    </tr>
+    <tr>
+      <td>CDH5</td>
+      <td>CCTTGGGTCCTGAAGTGACCT</td>
+      <td>AGGGCCTTGCCTTCTGCAA</td>
+    </tr>
+    <tr>
+      <td>PLXND1</td>
+      <td>CAAGTTTGAGCAGGTGGTGGCTTT</td>
+      <td>ATTTCCCAGTCTGAGTCACAGGCA</td>
+    </tr>
+    <tr>
+      <td>NOTCH1</td>
+      <td>CGGTGAGACCTGCCTGAATG</td>
+      <td>GCATTGTCCAGGGGTGTCAG</td>
+    </tr>
+    <tr>
+      <td>VEGFR1</td>
+      <td>CTCAAGCAAACCACACTGGC</td>
+      <td>CGAGCTCCCTTCCTTCAGTC</td>
+    </tr>
+    <tr>
+      <td>SOX18_2</td>
+      <td>GTGTGGGCAAAGGACGAG</td>
+      <td>AGCTCCTTCCACGCTTTG</td>
+    </tr>
+    <tr>
+      <td>ADBR2</td>
+      <td>CACCAACTACTTCATCACTTCAC</td>
+      <td>GACACAATCCACACCATCAG</td>
+    </tr>
+    <tr>
+      <td>ATP5B</td>
+      <td>CCACTACCAAGAAGGGATCTATCA</td>
+      <td>GGGCAGGGTCAGTCAAGTC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell viability assay
 
 Cell viability assays on angiosarcoma and neuroblastoma cell lines were performed as previously described (Pasquier et al., 2013). After 72 hr drug incubation, metabolic activity was detected by addition of Alamar blue and spectrophotometric analysis. Cell viability was determined and expressed as a percentage of untreated control cells. The determination of EC50 values was performed using GraphPad Prism software (GraphPad Sofware Inc, La Jolla, CA, USA). Combination indexes (CI) were calculated for all tested drug concentrations according to the Chou and Talalay method (Chou and Talalay, 1984).
 
 Statistics qPCR data from different HemSC-to EC differentiation were standardized as described Willems (51). Data were analyzed by one-way ANOVA, Fisher Tests, and two-tailed two independent sample T-Tests. Statistical programs were from Excel and XLStat Pro.
 
-## CNV model
+### CNV model
 
 All procedures involving mice were approved by the University of Queensland Animal Ethics Committee. Heterozygous RaOp pups were produced by crossing DBA/2JArc wild type females (purchased from the Animal Resource Centre) with a B6D2-RaOp/J heterozygous male (purchased from the Jackson Laboratory).
 
@@ -133,32 +229,32 @@ For the treatment of with propranolol, entire litters were exposed to identical 
 
 Eyes were harvested, corneas were dissected and tissues were fixed in 4% PFA O/N at 4°C for morphological analysis. Fixed tissues were washed in PBTX and further dissected for gross morphological analysis and processed for immunofluorescent staining. Antibodies used were anti-mouse Endomucin (Santa Cruz Biotechnology, cat# sc-53941) anti-mouse ERG (Abcam, cat# ab92513), anti-mouse NRP2 (R and D systems, cat# AF567). Whole corneas were flatmounted on glass slides in 70% glycerol and high-resolution images were captured using a 10x (whole cornea) and 20x (detail image) objective on a Zeiss LSM 710 confocal microscope.
 
-## Luciferase reporter assays
+### Luciferase reporter assays
 
 COS-7 cells were cultured at 37°C, 5% CO2 in DMEM (Life technologies, 11995) with added FBS, sodium pyruvate, L-glutamine, penicillin, streptomycin, non-essential amino acids and HEPES (N-2-hydroxyethylpiperazine-N'−2-ethanesulfonic acid). COS-7 cells were grown in 96-well plates to 80–90% confluency, and transfected using X-tremegene 9 DNA transfection reagent (Roche, 06365787001) according to the manufacturer’s instructions. Constructs used were mouse pSG5 Sox18 (30 ng), mouse pSG5 myc-RaOp (30 ng) and pGL2 Vcam1:luc (40 ng). For titration of RaOp dominant negative allelic ratios, pSG5 Sox18 was kept at 30 ng, while the amount of pSG5 myc-RaOp plasmid was reduced accordingly (supplemented to 30 ng plasmid DNA with pSG5 empty vector). Propranolol hydrochloride was added to low serum COS-7 media to obtain concentrations of 1, 3, 6, and 15 μM. Propranolol treatment extended 24 hr after the end of transfection until cells were harvested for luciferase detection.
 
-## Plasmid preparation and cell free-expression
+### Plasmid preparation and cell free-expression
 
 Proteins were genetically encoded with enhanced GFP (GFP), mCherry and cMyc (myc) tags, and cloned into the following cell free expression Gateway destination vectors: N-terminal GFP tagged (pCellFree_G03), N-terminal Cherry-cMyc (pCellFree_G07) and C-terminal Cherry-cMyc tagged (pCellFree_G08) (Gagoski et al., 2015). Human SOX18 (BC020780), SOX18.Q161* (Modified as describe below from BC020780), Open Reading Frames (ORFs) were sourced from the Human ORFeome collection, version 5.1, and the Human Orfeome collaboration OCAA collection (Open Biosystems), as previously described (Sierecki et al., 2013) and cloned at UNSW. The entry clones pDONOR223 vectors were exchanged with the ccdB gene in the expression plasmid by LR recombination (Life Technologies, Australia). The full-length human SOX18 gene was synthesized (IDT DNA, USA) and transferred to pCellFree vectors using Gateway PCR cloning. Translation competent Leishmania tarentolae extract (LTE) was prepared as previously described (Kovtun et al., 2011; Mureev et al., 2009). Protein pairs were co-expressed by adding 30 nM of GFP template plasmid and 60 nM of Cherry template plasmid to LTE and incubating for 3 hr at 27°C.
 
-## Construction of the SOX18.Q161* construct
+### Construction of the SOX18.Q161* construct
 
 The SOX18.Q161* construct was made by adding a codon stop (UAA) at the original Glutamine acid in position 161 of the Human SOX18 (BC020780).
 
 The SOX18.Q161 was obtained as a gBlock (IDT), and was exchanged with the ccdB gene in the donor plasmid (pDONOR223) by BP recombination (Life Technologies, Australia), then with the ccdB gene in the expression plasmid (pCellFree_G03 and pCellFree_G08) by LR recombination (Life Technologies, Australia) as described previously.
 
-## ALPHAScreen assay
+### ALPHAScreen assay
 
-The assay was performed as previously described (Sierecki et al., 2013; Sierecki et al., 2014), using the cMyc detection kit and Proxiplate-384 Plus plates (PerkinElmer). The LTE lysate co-expressing the proteins of interest was diluted in buffer A (25 mM HEPES, 50 mM NaCl). For the assay, 12.5 μL (0.4 μg) of Anti-cMyc coated Acceptor Beads in buffer B (25 mM HEPES, 50 mM NaCl, 0.001% NP40, 0.001% casein) were aliquoted into each well. This was followed by the addition of 2 μL of diluted sample, at different concentration, and 2 μL of biotin labeled GFP-Nanotrap in buffer A. The plates were incubated for 45 min at room temperature, then 2 μL (0.4 μg) of Streptavidin coated Donor Beads diluted in buffer A was added, and the plate was incubated in the dark for 45 min at room temperature. The ALPHAScreen signal was measured on an Envision Plate Reader (PerkinElmer), using manufacturer’s recommended settings (λexc = 680/30 nm for 0.18 s, λem = 570/100 nm after 37 ms). The resulting bell-shaped curve is an indication of a positive interaction, while a flat line reflects a lack of interaction between the proteins. Measurements of each protein pair were performed in triplicate. A binding index was calculated as:BI=I-InegIref-Ineg×100, where I is the highest signal level (top of the hook effect curve) and Ineg is the lowest (background) signal level. The signals were normalized to the Iref signal obtained for the strongest interaction.
+The assay was performed as previously described (Sierecki et al., 2013; Sierecki et al., 2014), using the cMyc detection kit and Proxiplate-384 Plus plates (PerkinElmer). The LTE lysate co-expressing the proteins of interest was diluted in buffer A (25 mM HEPES, 50 mM NaCl). For the assay, 12.5 μL (0.4 μg) of Anti-cMyc coated Acceptor Beads in buffer B (25 mM HEPES, 50 mM NaCl, 0.001% NP40, 0.001% casein) were aliquoted into each well. This was followed by the addition of 2 μL of diluted sample, at different concentration, and 2 μL of biotin labeled GFP-Nanotrap in buffer A. The plates were incubated for 45 min at room temperature, then 2 μL (0.4 μg) of Streptavidin coated Donor Beads diluted in buffer A was added, and the plate was incubated in the dark for 45 min at room temperature. The ALPHAScreen signal was measured on an Envision Plate Reader (PerkinElmer), using manufacturer’s recommended settings (λexc = 680/30 nm for 0.18 s, λem = 570/100 nm after 37 ms). The resulting bell-shaped curve is an indication of a positive interaction, while a flat line reflects a lack of interaction between the proteins. Measurements of each protein pair were performed in triplicate. A binding index was calculated as:$BI=\frac{I-I_{neg}}{I_{ref}-I_{neg}}\times100$, where I is the highest signal level (top of the hook effect curve) and Ineg is the lowest (background) signal level. The signals were normalized to the Iref signal obtained for the strongest interaction.
 
-## Whole mount ear skin staining and cornea staining
+### Whole mount ear skin staining and cornea staining
 
 Ear skin samples and corneal tissues were fixed in 4% paraformaldehyde (PFA) at 4°C overnight, and immunofluorescence was performed as follows: 1) Blocking solution incubated for 16 hr (10% sheep serum in PBSTx and 1% DMSO); 2) Primary and secondary antibodies were applied overnight at 4°C on a rocker. Wash solution (PBSTx and 1% DMSO) was applied for a few hours at room temperature after each antibody incubation. Ear sample are flat mounted onto a glass slide.
 
-## Quantitation of lymphatic vasculature
+### Quantitation of lymphatic vasculature
 
 After immunofluorescence using anti-Podoplanin (Angiobio anti-mouse 11033), anti-CD31 (Beckton Dickinson anti-rat 550274), ERG (AbCam EPR3864, ab92513) and Endomucin (Santa Cruz Biotechnology sc53941 V.5C7 anti-mouse) antibodies, apical photographs of mouse ears were taken at 20x magnification with a confocal microscope. The averaged field counts for each parameter were collated for all sections before graphical comparisons between phenotypes were generated, and their statistical significance determined by student’s paired T-test.
 
-## Immunostaining infantile hemangioma sections
+### Immunostaining infantile hemangioma sections
 
 Histological sections from paraffin embedded proliferating infantile hemangiomas were stained with anti-SOX18, anti-CD31, anti-Ki67, anti-D2-40 antibody and nuclei stained with DAPI. Images were captured using a Vectra three multi-spectral imager (Vectra 3.0 Automated Quantitative Pathology Imaging System, Perkin Elmer) taking advantage of the auto-expose feature of the microscope. Image magnification is 20X objective.

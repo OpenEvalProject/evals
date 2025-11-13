@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.26726.001 The ability to computationally predict whether a compound treats a disease would improve the economy and success rate of drug approval. This study describes Project Rephetio to systematically model drug efficacy based on 755 existing treatments. First, we constructed Hetionet ( neo4j.het.io ), an integrative network encoding knowledge from millions of biomedical studies. Hetionet v1.0 consists of 47,031 nodes of 11 types and 2,250,197 relationships of 24 types. Data were integrated from 29 public resources to connect compounds, diseases, genes, anatomies, pathways, biological processes, molecular functions, cellular components, pharmacologic classes, side effects, and symptoms. Next, we identified network patterns that distinguish treatments from non-treatments. Then, we predicted the probability of treatment for 209,168 compound–disease pairs ( het.io/repurpose ). Our predictions validated on two external sets of treatment and provided pharmacological insights on epilepsy, suggesting they will help prioritize drug repurposing candidates. This study was entirely open and received realtime feedback from 40 community members.
+The ability to computationally predict whether a compound treats a disease would improve the economy and success rate of drug approval. This study describes Project Rephetio to systematically model drug efficacy based on 755 existing treatments. First, we constructed Hetionet (neo4j.het.io), an integrative network encoding knowledge from millions of biomedical studies. Hetionet v1.0 consists of 47,031 nodes of 11 types and 2,250,197 relationships of 24 types. Data were integrated from 29 public resources to connect compounds, diseases, genes, anatomies, pathways, biological processes, molecular functions, cellular components, pharmacologic classes, side effects, and symptoms. Next, we identified network patterns that distinguish treatments from non-treatments. Then, we predicted the probability of treatment for 209,168 compound–disease pairs (het.io/repurpose). Our predictions validated on two external sets of treatment and provided pharmacological insights on epilepsy, suggesting they will help prioritize drug repurposing candidates. This study was entirely open and received realtime feedback from 40 community members.
 
 ## Introduction
 
@@ -48,13 +48,294 @@ We refer to this study as Project Rephetio (pronounced as rep-het-ee-oh). Both R
 
 ## Results
 
-## Hetionet v1.0
+### Hetionet v1.0
 
 We obtained and integrated data from 29 publicly available resources to create Hetionet v1.0 (Figure 1). The hetnet contains 47,031 nodes of 11 types (Table 1) and 2,250,197 relationships of 24 types (Table 2). The nodes consist of 1552 small molecule compounds and 137 complex diseases, as well as genes, anatomies, pathways, biological processes, molecular functions, cellular components, perturbations, pharmacologic classes, drug side effects, and disease symptoms. The edges represent relationships between these nodes and encompass the collective knowledge produced by millions of studies over the last half century.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/26726/elife-26726-fig1-v2.jpg)
 
 **Figure 1.:** (A) The metagraph, a schema of the network types. (B) The hetnet visualized. Nodes are drawn as dots and laid out orbitally, thus forming circles. Edges are colored by type. (C) Metapath counts by path length. The number of different types of paths of a given length that connect two node types is shown. For example, the top-left tile in the Length 1 panel denotes that Anatomy nodes are not connected to themselves (i.e. no edges connect nodes of this type between themselves). However, the bottom-left tile of the Length 4 panel denotes that 88 types of length-four paths connect Symptom to Anatomy nodes.
+
+**Table 1.**
+ Metanodes.Hetionet v1.0 includes 11 node types (metanodes). For each metanode, this table shows the abbreviation, number of nodes, number of nodes without any edges, and the number of metaedges connecting the metanode.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metanode</th>
+      <th>Abbr</th>
+      <th>Nodes</th>
+      <th>Disconnected</th>
+      <th>Metaedges</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anatomy</td>
+      <td>A</td>
+      <td>402</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Biological process</td>
+      <td>BP</td>
+      <td>11,381</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Cellular component</td>
+      <td>CC</td>
+      <td>1391</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>C</td>
+      <td>1552</td>
+      <td>14</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Disease</td>
+      <td>D</td>
+      <td>137</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Gene</td>
+      <td>G</td>
+      <td>20,945</td>
+      <td>1800</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Molecular function</td>
+      <td>MF</td>
+      <td>2884</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Pathway</td>
+      <td>PW</td>
+      <td>1822</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Pharmacologic class</td>
+      <td>PC</td>
+      <td>345</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Side effect</td>
+      <td>SE</td>
+      <td>5734</td>
+      <td>33</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Symptom</td>
+      <td>S</td>
+      <td>438</td>
+      <td>23</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Metaedges.Hetionet v1.0 contains 24 edge types (metaedges). For each metaedge, the table reports the abbreviation, the number of edges, the number of source nodes connected by the edges, and the number of target nodes connected by the edges. Note that all metaedges besides Gene→regulates→Gene are undirected.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metaedge</th>
+      <th>Abbr</th>
+      <th>Edges</th>
+      <th>Sources</th>
+      <th>Targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anatomy–downregulates–Gene</td>
+      <td>AdG</td>
+      <td>102,240</td>
+      <td>36</td>
+      <td>15,097</td>
+    </tr>
+    <tr>
+      <td>Anatomy–expresses–Gene</td>
+      <td>AeG</td>
+      <td>526,407</td>
+      <td>241</td>
+      <td>18,094</td>
+    </tr>
+    <tr>
+      <td>Anatomy–upregulates–Gene</td>
+      <td>AuG</td>
+      <td>97,848</td>
+      <td>36</td>
+      <td>15,929</td>
+    </tr>
+    <tr>
+      <td>Compound–binds–Gene</td>
+      <td>CbG</td>
+      <td>11,571</td>
+      <td>1389</td>
+      <td>1689</td>
+    </tr>
+    <tr>
+      <td>Compound–causes–Side Effect</td>
+      <td>CcSE</td>
+      <td>138,944</td>
+      <td>1071</td>
+      <td>5701</td>
+    </tr>
+    <tr>
+      <td>Compound–downregulates–Gene</td>
+      <td>CdG</td>
+      <td>21,102</td>
+      <td>734</td>
+      <td>2880</td>
+    </tr>
+    <tr>
+      <td>Compound–palliates–Disease</td>
+      <td>CpD</td>
+      <td>390</td>
+      <td>221</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Compound–resembles–Compound</td>
+      <td>CrC</td>
+      <td>6486</td>
+      <td>1042</td>
+      <td>1054</td>
+    </tr>
+    <tr>
+      <td>Compound–treats–Disease</td>
+      <td>CtD</td>
+      <td>755</td>
+      <td>387</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>Compound–upregulates–Gene</td>
+      <td>CuG</td>
+      <td>18,756</td>
+      <td>703</td>
+      <td>3247</td>
+    </tr>
+    <tr>
+      <td>Disease–associates–Gene</td>
+      <td>DaG</td>
+      <td>12,623</td>
+      <td>134</td>
+      <td>5392</td>
+    </tr>
+    <tr>
+      <td>Disease–downregulates–Gene</td>
+      <td>DdG</td>
+      <td>7623</td>
+      <td>44</td>
+      <td>5745</td>
+    </tr>
+    <tr>
+      <td>Disease–localizes–Anatomy</td>
+      <td>DlA</td>
+      <td>3602</td>
+      <td>133</td>
+      <td>398</td>
+    </tr>
+    <tr>
+      <td>Disease–presents–Symptom</td>
+      <td>DpS</td>
+      <td>3357</td>
+      <td>133</td>
+      <td>415</td>
+    </tr>
+    <tr>
+      <td>Disease–resembles–Disease</td>
+      <td>DrD</td>
+      <td>543</td>
+      <td>112</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>Disease–upregulates–Gene</td>
+      <td>DuG</td>
+      <td>7731</td>
+      <td>44</td>
+      <td>5630</td>
+    </tr>
+    <tr>
+      <td>Gene–covaries–Gene</td>
+      <td>GcG</td>
+      <td>61,690</td>
+      <td>9043</td>
+      <td>9532</td>
+    </tr>
+    <tr>
+      <td>Gene–interacts–Gene</td>
+      <td>GiG</td>
+      <td>147,164</td>
+      <td>9526</td>
+      <td>14,084</td>
+    </tr>
+    <tr>
+      <td>Gene–participates–Biological Process</td>
+      <td>GpBP</td>
+      <td>559,504</td>
+      <td>14,772</td>
+      <td>11,381</td>
+    </tr>
+    <tr>
+      <td>Gene–participates–Cellular Component</td>
+      <td>GpCC</td>
+      <td>73,566</td>
+      <td>10,580</td>
+      <td>1391</td>
+    </tr>
+    <tr>
+      <td>Gene–participates–Molecular Function</td>
+      <td>GpMF</td>
+      <td>97,222</td>
+      <td>13,063</td>
+      <td>2884</td>
+    </tr>
+    <tr>
+      <td>Gene–participates–Pathway</td>
+      <td>GpPW</td>
+      <td>84,372</td>
+      <td>8979</td>
+      <td>1822</td>
+    </tr>
+    <tr>
+      <td>Gene→regulates→Gene</td>
+      <td>Gr &gt; G</td>
+      <td>265,672</td>
+      <td>4634</td>
+      <td>7048</td>
+    </tr>
+    <tr>
+      <td>Pharmacologic Class–includes–Compound</td>
+      <td>PCiC</td>
+      <td>1029</td>
+      <td>345</td>
+      <td>724</td>
+    </tr>
+  </tbody>
+</table>
 
 For example, Compound–binds–Gene edges represent when a compound binds to a protein encoded by a gene. This information has been extracted from the literature by human curators and compiled into databases such as DrugBank, ChEMBL, DrugCentral, and BindingDB. We combined these databases to create 11,571 binding edges between 1389 compounds and 1689 genes. These edges were compiled from 10,646 distinct publications, which Hetionet binding edges reference as an attribute. Binding edges represent a comprehensive catalog constructed from low-throughput experimentation. However, we also integrated findings from high-throughput technologies — many of which have only recently become available. For example, we generated consensus transcriptional signatures for compounds in LINCS L1000 and diseases in STARGEO.
 
@@ -78,7 +359,7 @@ The integrative potential of Hetionet v1.0 is reflected by its connectivity. Amo
 
 Hetionet v1.0 is accessible via a Neo4j Browser at https://neo4j.het.io. This public Neo4j instance provides users an installation-free method to query and visualize the network. The Browser contains a tutorial guide as well as guides with the details of each Project Rephetio prediction. Hetionet v1.0 is also available for download in JSON, Neo4j, and TSV formats (Himmelstein, 2017a). The JSON and Neo4j database formats include node and edge properties — such as URLs, source and license information, and confidence scores — and are thus recommended.
 
-## Systematic mechanisms of efficacy
+### Systematic mechanisms of efficacy
 
 One aim of Project Rephetio was to systematically evaluate how drugs exert their therapeutic potential. To address this question, we compiled a gold standard of 755 disease-modifying indications, which form the Compound–treats–Disease edges in Hetionet v1.0. Next, we identified types of paths (metapaths) that occurred more frequently between treatments than non-treatments (any compound–disease pair that is not a treatment). The advantage of this approach is that metapaths naturally correspond to mechanisms of pharmacological efficacy. For example, the Compound–binds–Gene–associates–Disease (CbGaD) metapath identifies when a drug binds to a protein corresponding to a gene involved in the disease.
 
@@ -90,7 +371,234 @@ We evaluated all 1206 metapaths that traverse from compound to disease and have 
 
 Overall, 709 of the 1206 metapaths exhibited a statistically significant Δ AUROC at a false discovery rate cutoff of 5%. These 709 metapaths included all 24 metaedges, suggesting that each type of relationship we integrated provided at least some therapeutic utility. However, not all metaedges were equally present in significant metapaths: 259 significant metapaths included a Compound–binds–Gene metaedge, whereas only four included a Gene–participates–Cellular Component metaedge. Table 3 lists the predictiveness of several metapaths of interest. Refer to the Discussion for our interpretation of these findings.
 
-## Predictions of drug efficacy
+**Table 3.**
+ The predictiveness of select metapaths.A small selection of interesting or influential metapaths is provided (complete table online). Len. refers to number of metaedges composing the metapath. Δ AUROC and −log10(p) assess the performance of a metapath’s DWPC in discriminating treatments from non-treatments (in the all-features stage as described in Materials and methods). p assesses whether permutation affected AUROC. For reference, p=0.05 corresponds to −log10(p) = 1.30. Note that several metapaths shown here provided little evidence that Δ AUROC ≠ 0 underscoring their poor ability to predict whether a compound treated a disease. Coef. reports a metapath’s logistic regression coefficient as seen in Figure 2B. Metapaths removed in feature selection have missing coefficients, whereas metapaths given zero-weight by the elastic net have coef. = 0.0.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Abbrev.</th>
+      <th>Len.</th>
+      <th>Δ auroc</th>
+      <th>−log₁₀(P)</th>
+      <th>Coef.</th>
+      <th>Metapath</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CbGaD</td>
+      <td>2</td>
+      <td>14.5%</td>
+      <td>6.2</td>
+      <td>0.20</td>
+      <td>Compound–binds–Gene–associates–Disease</td>
+    </tr>
+    <tr>
+      <td>CdGuD</td>
+      <td>2</td>
+      <td>1.7%</td>
+      <td>4.5</td>
+      <td></td>
+      <td>Compound–downregulates–Gene–upregulates–Disease</td>
+    </tr>
+    <tr>
+      <td>CrCtD</td>
+      <td>2</td>
+      <td>22.8%</td>
+      <td>6.9</td>
+      <td>0.15</td>
+      <td>Compound–resembles–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CtDrD</td>
+      <td>2</td>
+      <td>17.2%</td>
+      <td>5.8</td>
+      <td>0.13</td>
+      <td>Compound–treats–Disease–resembles–Disease</td>
+    </tr>
+    <tr>
+      <td>CuGdD</td>
+      <td>2</td>
+      <td>1.1%</td>
+      <td>2.6</td>
+      <td></td>
+      <td>Compound–upregulates–Gene–downregulates–Disease</td>
+    </tr>
+    <tr>
+      <td>CbGbCtD</td>
+      <td>3</td>
+      <td>21.7%</td>
+      <td>6.5</td>
+      <td>0.22</td>
+      <td>Compound–binds–Gene–binds–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CbGeAlD</td>
+      <td>3</td>
+      <td>8.4%</td>
+      <td>5.2</td>
+      <td>0.04</td>
+      <td>Compound–binds–Gene–expresses–Anatomy–localizes–Disease</td>
+    </tr>
+    <tr>
+      <td>CbGiGaD</td>
+      <td>3</td>
+      <td>9.0%</td>
+      <td>4.4</td>
+      <td>0.00</td>
+      <td>Compound–binds–Gene–interacts–Gene–associates–Disease</td>
+    </tr>
+    <tr>
+      <td>CcSEcCtD</td>
+      <td>3</td>
+      <td>14.0%</td>
+      <td>6.8</td>
+      <td>0.08</td>
+      <td>Compound–causes–Side Effect–causes–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CdGdCtD</td>
+      <td>3</td>
+      <td>3.8%</td>
+      <td>4.6</td>
+      <td>0.00</td>
+      <td>Compound–downregulates–Gene–downregulates–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CdGuCtD</td>
+      <td>3</td>
+      <td>−2.1%</td>
+      <td>2.4</td>
+      <td></td>
+      <td>Compound–downregulates–Gene–upregulates–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CiPCiCtD</td>
+      <td>3</td>
+      <td>23.3%</td>
+      <td>7.5</td>
+      <td>0.16</td>
+      <td>Compound–includes–Pharmacologic Class–includes–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CpDpCtD</td>
+      <td>3</td>
+      <td>4.3%</td>
+      <td>3.9</td>
+      <td>0.06</td>
+      <td>Compound–palliates–Disease–palliates–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CrCrCtD</td>
+      <td>3</td>
+      <td>17.0%</td>
+      <td>5.0</td>
+      <td>0.12</td>
+      <td>Compound–resembles–Compound–resembles–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CrCbGaD</td>
+      <td>3</td>
+      <td>8.2%</td>
+      <td>6.1</td>
+      <td>0.002</td>
+      <td>Compound–resembles–Compound–binds–Gene–associates–Disease</td>
+    </tr>
+    <tr>
+      <td>CtDdGdD</td>
+      <td>3</td>
+      <td>4.2%</td>
+      <td>3.9</td>
+      <td></td>
+      <td>Compound–treats–Disease–downregulates–Gene–downregulates–Disease</td>
+    </tr>
+    <tr>
+      <td>CtDdGuD</td>
+      <td>3</td>
+      <td>0.5%</td>
+      <td>1.0</td>
+      <td></td>
+      <td>Compound–treats–Disease–downregulates–Gene–upregulates–Disease</td>
+    </tr>
+    <tr>
+      <td>CtDlAlD</td>
+      <td>3</td>
+      <td>12.4%</td>
+      <td>6.0</td>
+      <td></td>
+      <td>Compound–treats–Disease–localizes–Anatomy–localizes–Disease</td>
+    </tr>
+    <tr>
+      <td>CtDpSpD</td>
+      <td>3</td>
+      <td>13.9%</td>
+      <td>6.1</td>
+      <td></td>
+      <td>Compound–treats–Disease–presents–Symptom–presents–Disease</td>
+    </tr>
+    <tr>
+      <td>CtDuGdD</td>
+      <td>3</td>
+      <td>0.7%</td>
+      <td>1.3</td>
+      <td></td>
+      <td>Compound–treats–Disease–upregulates–Gene–downregulates–Disease</td>
+    </tr>
+    <tr>
+      <td>CtDuGuD</td>
+      <td>3</td>
+      <td>1.1%</td>
+      <td>1.4</td>
+      <td></td>
+      <td>Compound–treats–Disease–upregulates–Gene–upregulates–Disease</td>
+    </tr>
+    <tr>
+      <td>CuGdCtD</td>
+      <td>3</td>
+      <td>−1.6%</td>
+      <td>2.9</td>
+      <td></td>
+      <td>Compound–upregulates–Gene–downregulates–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CuGuCtD</td>
+      <td>3</td>
+      <td>4.4%</td>
+      <td>3.5</td>
+      <td>0.00</td>
+      <td>Compound–upregulates–Gene–upregulates–Compound–treats–Disease</td>
+    </tr>
+    <tr>
+      <td>CbGiGiGaD</td>
+      <td>4</td>
+      <td>7.0%</td>
+      <td>5.1</td>
+      <td>0.00</td>
+      <td>Compound–binds–Gene–interacts–Gene–interacts–Gene–associates–Disease</td>
+    </tr>
+    <tr>
+      <td>CbGpBPpGaD</td>
+      <td>4</td>
+      <td>4.9%</td>
+      <td>3.8</td>
+      <td>0.00</td>
+      <td>Compound–binds–Gene–participates–Biological Process–participates–Gene–associates–Disease</td>
+    </tr>
+    <tr>
+      <td>CbGpPWpGaD</td>
+      <td>4</td>
+      <td>7.6%</td>
+      <td>7.9</td>
+      <td>0.05</td>
+      <td>Compound–binds–Gene–participates–Pathway–participates–Gene–associates–Disease</td>
+    </tr>
+  </tbody>
+</table>
+
+### Predictions of drug efficacy
 
 We implemented a machine learning approach to translate the network connectivity between a compound and a disease into a probability of treatment (Himmelstein, 2016k; Himmelstein, 2017b). The approach relies on the 755 known treatments as positives and 29,044 non-treatments as negatives to train a logistic regression model. Note that 179,369 non-treatments were omitted as negative training observations because they had a prior probability of treatment equal to zero (see Materials and methods). The features consisted of a prior probability of treatment, node degrees for 14 metaedges, and DWPCs for 123 metapaths that were well suited for modeling. A cross-validated elastic net was used to minimize overfitting, yielding a model with 31 features (Figure 2B). The DWPC features with negative coefficients appear to be included as node-degree-capturing covariates, i.e. they reflect the general connectivity of the compound and disease rather than specific paths between them. However, the 11 DWPC features with non-negligible positive coefficients represent the most salient types of connectivity for systematically modeling drug efficacy. See the metapaths with positive coefficients in Table 3 for unabbreviated names. As an example, the CcSEcCtD feature assesses whether the compound causes the same side effects as compounds that treat the disease. Alternatively, the CbGeAlD feature assesses whether the compound binds to genes that are expressed in the anatomies affected by the disease.
 
@@ -102,7 +610,7 @@ We applied this model to predict the probability of treatment between each of 15
 
 Predictions were scaled to the overall prevalence of treatments (0.36%). Hence a compound–disease pair that received a prediction of 1% represents a twofold enrichment over the null probability. Of the 3980 predictions with a probability exceeding 1%, 586 corresponded to known disease-modifying indications, leaving 3394 repurposing candidates. For a given compound or disease, we provide the percentile rank of each prediction. Therefore, users can assess whether a given prediction is a top prediction for the compound or disease. In addition, our table-based prediction browser links to a custom guide for each prediction, which displays in the Neo4j Hetionet Browser. Each guide includes a query to display the top paths supporting the prediction and lists clinical trials investigating the indication.
 
-## Nicotine dependence case study
+### Nicotine dependence case study
 
 There are currently two FDA-approved medications for smoking cessation (varenicline and bupropion) that are not nicotine replacement therapies. PharmacotherapyDB v1.0 lists varenicline as a disease-modifying indication and nicotine itself as a symptomatic indication for nicotine dependence, but is missing bupropion. Bupropion was first approved for depression in 1985. Owing to the serendipitous observation that it decreased smoking in depressed patients taking this drug, Bupropion was approved for smoking cessation in 1997 (Harmey et al., 2012). Therefore, we looked whether Project Rephetio could have predicted this repurposing. Bupropion was the ninth best prediction for nicotine dependence (99.5th percentile) with a probability 2.50-fold greater than the null. Figure 4 shows the top paths supporting the repurposing of bupropion.
 
@@ -112,7 +620,7 @@ There are currently two FDA-approved medications for smoking cessation (varenicl
 
 Atop the nicotine dependence predictions were nicotine (10.97-fold over null), cytisine (10.58-fold), and galantamine (9.50-fold). Cytisine is widely used in Eastern Europe for smoking cessation due to its availability at a fraction of the cost of other pharmaceutical options (Cahill et al., 2016). In the last half decade, large-scale clinical trials have confirmed cytisine’s efficacy (West et al., 2011; Walker et al., 2014). Galantamine, an approved Alzheimer’s treatment, is currently in Phase 2 trial for smoking cessation and is showing promising results (Ashare et al., 2016). In summary, nicotine dependence illustrates Project Rephetio’s ability to predict efficacious treatments and prioritize historic and contemporary repurposing opportunities.
 
-## Epilepsy case study
+### Epilepsy case study
 
 Several factors make epilepsy an interesting disease for evaluating repurposing predictions (Khankhanian and Himmelstein, 2016). Antiepileptic drugs work by increasing the seizure threshold — the amount of electric stimulation that is required to induce seizure. The effect of a drug on the seizure threshold can be cheaply and reliably tested in rodent models. As a result, the viability of most approved drugs in treating epilepsy is known.
 
@@ -166,7 +674,7 @@ Hetionet was built entirely from publicly available resources with the goal of i
 
 Our method for relationship prediction creates a strong incentive to avoid redundancy, which increases the computational burden without improving performance. In a previous study to predict disease–gene associations using a hetnet of pathophysiology (Himmelstein and Baranzini, 2015a), we found that different types of gene sets contributed highly redundant information. Therefore, in Hetionet v1.0, we reduced the number of gene set node types from 14 to 3 by omitting several gene set collections and aggregating all pathway nodes.
 
-## Nodes
+### Nodes
 
 Nodes encode entities. We extracted nodes from standard terminologies, which provide curated vocabularies to enable data integration and prevent concept duplication. The ease of mapping external vocabularies, adoption, and comprehensiveness were primary selection criteria. Hetionet v1.0 includes nodes from five ontologies — which provide hierarchy of entities for a specific domain — selected for their conformity to current best practices (Malone et al., 2016).
 
@@ -180,7 +688,7 @@ Protein-coding human genes were extracted from Entrez Gene (Maglott et al., 2011
 
 Pathways were extracted by combining human pathways from WikiPathways (Kutmon et al., 2016; Pico et al., 2008), Reactome (Fabregat et al., 2016), and the Pathway Interaction Database (Schaefer et al., 2009). The latter two resources were retrieved from Pathway Commons (RRID:SCR_002103) (Cerami et al., 2011), which compiles pathways from several providers. Duplicate pathways and pathways without multiple participating genes were removed (Pico and Himmelstein, 2015; Himmelstein and Pico, 2016a). Biological processes, cellular components, and molecular functions were extracted from the Gene Ontology (Ashburner et al., 2000). Only terms with 2–1000 annotated genes were included.
 
-## Mappings
+### Mappings
 
 Before adding relationships, all identifiers needed to be converted into the vocabularies matching that of our nodes. Oftentimes, our node vocabularies included external mappings. For example, the Disease Ontology includes mappings to MeSH, UMLS, and the ICD, several of which we submitted during the course of this study (Himmelstein, 2015e). In a few cases, the only option was to map using gene symbols, a disfavored method given that it can lead to ambiguities.
 
@@ -188,7 +696,7 @@ When mapping external disease concepts onto DO Slim, we used transitive closure.
 
 Chemical vocabularies presented the greatest mapping challenge (Himmelstein, 2015b), since these are poorly standardized (Hersey et al., 2015). UniChem’s (Chambers et al., 2013) Connectivity Search (Chambers et al., 2014) was used to map compounds, which maps by atomic connectivity (based on First InChIKey Hash Blocks (Heller et al., 2013)) and ignores small molecular differences.
 
-## Edges
+### Edges
 
 Anatomy–downregulates–Gene and Anatomy–upregulates–Gene edges (Himmelstein et al., 2016f; Himmelstein and Bastian, 2015e; Himmelstein and Bastian, 2015f) were extracted from Bgee (Bastian et al., 2008), which computes differentially expressed genes by anatomy in post-juvenile adult humans. Anatomy–expresses–Gene edges were extracted from Bgee and TISSUES (Santos et al., 2015; Himmelstein and Jensen, 2015g; Himmelstein and Jensen, 2015h).
 
@@ -202,15 +710,15 @@ Disease–localizes–Anatomy, Disease–presents–Symptom, and Disease–resem
 
 Gene→regulates→Gene directed edges were generated from the LINCS L1000 genetic interference screens (see Intermediate resources) and indicate that knockdown or overexpression of the source gene significantly dysregulated the target gene (Himmelstein and Chung, 2015q; Himmelstein et al., 2016k). Gene–covaries–Gene edges represent evolutionary rate covariation ≥0.75 (Priedigkeit et al., 2015; Himmelstein and Partha, 2015r; Himmelstein, 2016w). Gene–interacts–Gene edges (Himmelstein et al., 2015z; Himmelstein and Baranzini, 2016e) represent when two genes produce physically interacting proteins. We compiled these interactions from the Human Interactome Database (Rual et al., 2005; Venkatesan et al., 2009; Yu et al., 2011; Rolland et al., 2014), the Incomplete Interactome (Menche et al., 2015), and our previous study (Himmelstein and Baranzini, 2015a). Gene–participates–Biological Process, Gene–participates–Cellular Component, and Gene–participates–Molecular Function edges are from Gene Ontology annotations (Huntley et al., 2015). As described in Intermediate resources, annotations were propagated (Himmelstein et al., 2015g; Himmelstein et al., 2015f). Gene–participates–Pathway edges were included from the human pathway resources described in the Nodes section (Pico and Himmelstein, 2015; Himmelstein and Pico, 2016a).
 
-## Directionality
+### Directionality
 
 Whether a certain type of relationship has directionality is defined at the metaedge level. Directed metaedges are only necessary when they connect a metanode to itself and correspond to an asymmetric relationship. In the case of Hetionet v1.0, the sole directed metaedge was Gene→regulates→Gene. To demonstrate the implications of directionality, Hetionet v1.0 contains two relationships between the genes HADH and STAT1: HADH–interacts–STAT1 and HADH→regulates→STAT1. Both edges can be represented in the inverse orientation: STAT1–interacts–HADH and STAT1←regulates←HADH. However due to directed nature of the regulates relationship, STAT1→regulates→HADH is a distinct edge, which does not exist in the network. Similarly, HADH–associates–obesity and obesity–associates–HADH are inverse orientations of the same underlying undirected relationship. Accordingly, the following path exists in the network: obesity–associates–HADH→regulates→STAT1, which can also be inverted to STAT1←regulates←HADH–associates–obesity.
 
-## Intermediate resources
+### Intermediate resources
 
 In the process of creating Hetionet, we produced several datasets with broad applicability that extended beyond Project Rephetio. These resources are referred to as intermediate resources and described below.
 
-## Transcriptional signatures of disease using STARGEO
+### Transcriptional signatures of disease using STARGEO
 
 STARGEO is a nascent platform for annotating and meta-analyzing differential gene expression experiments (Hadley et al., 2017). The STAR acronym stands for Search-Tag-Analyze Resources, while GEO refers to the Gene Expression Omnibus (Edgar et al., 2002; Barrett et al., 20122013). STARGEO is a layer on top of GEO that crowdsources sample annotation and automates meta-analysis.
 
@@ -218,7 +726,7 @@ Using STARGEO, we computed differentially expressed genes between healthy and di
 
 Differentially expressed genes (false discovery rate ≤0.05) were identified for each disease. The median number of upregulated genes per disease was 351 and the median number of downregulated genes was 340. Endogenous depression was the only of the 49 diseases without any significantly dysregulated genes.
 
-## Transcriptional signatures of perturbation from LINCS L1000
+### Transcriptional signatures of perturbation from LINCS L1000
 
 LINCS L1000 profiled the transcriptional response to small molecule and genetic interference perturbations. To increase throughput, expression was only measured for 978 genes, which were selected for their ability to impute expression of the remaining genes. A single perturbation was often assayed under a variety of conditions including cell types, dosages, timepoints, and concentrations. Each condition generates a single signature of dysregulation z-scores. We further processed these signatures to fit into our approach (Himmelstein et al., 2016m; Himmelstein et al., 2016n).
 
@@ -228,7 +736,7 @@ The consensus signatures for genetic perturbations allowed us to assess various 
 
 Based on these findings, we performed additional filtering of signifcantly dysregulated genes when building Hetionet v1.0. Compound–down/up-regulates–Gene relationships were restricted to the 125 most significant per compound-direction-status combination (status refers to measured versus imputed). For genetic interference perturbations, we restricted to the 50 most significant genes per gene-direction-status combination and merged the remaining edges into a single Gene→regulates→Gene relationship type containing both knockdown and overexpression perturbations.
 
-## PharmacotherapyDB: physician curated indications
+### PharmacotherapyDB: physician curated indications
 
 We created PharmacotherapyDB, an open catalog of drug therapies for disease (Himmelstein, 2016a; Himmelstein et al., 2016p; Himmelstein et al., 2016q). Version 1.0 contains 755 disease-modifying therapies and 390 symptomatic therapies between 97 diseases and 601 compounds.
 
@@ -238,11 +746,11 @@ However, we noticed that many indications were palliative and hence problematic 
 
 The two curators disagreed on 444 calls (Cohen’s κ = 49.9%). We then recruited a third practicing physician, who reviewed all 1388 calls and created a detailed explanation of his methodology (Himmelstein et al., 2015j). We proceeded with the third curator’s calls as the consensus curation. The first two curators did have reservations with classifying steroids as disease modifying for autoimmune diseases. We ultimately considered that these indications met our definition of disease modifying, which is based on a pathophysiological rather than clinical standard. Accordingly, therapies we consider disease modifying may not be used to alter long-term disease course in the modern clinic due to a poor risk–benefit ratio.
 
-## User-friendly gene ontology annotations
+### User-friendly gene ontology annotations
 
 We created a browser (http://git.dhimmel.com/gene-ontology/) to provide straightforward access to Gene Ontology annotations (Himmelstein et al., 2015g; Himmelstein et al., 2015f). Our service provides annotations between Gene Ontology terms and Entrez Genes. The user chooses propagated/direct annotation and all/experimental evidence. Annotations are currently available for 37 species and downloadable as user-friendly TSV files.
 
-## Data copyright and licensing
+### Data copyright and licensing
 
 We committed to openly releasing our data and analyses from the origin of the project (Spaulding et al., 2015). Our goals were to contribute to the advancement of science (Hrynaszkiewicz, 2011; Molloy, 2011), maximize our impact (McKiernan et al., 2016; Piwowar and Vision, 2013), and enable reproducibility (Stodden et al., 2016; Stodden and Miguez, 2014; Baggerly, 2010). These objectives required publicly distributing and openly licensing Hetionet and Project Rephetio data and analyses (Hrynaszkiewicz and Cockerill, 2012; Hagedorn et al., 2011).
 
@@ -250,35 +758,256 @@ Since we integrated only public resources, which were overwhelmingly funded by a
 
 Hetionet v1.0 integrates 29 resources (Table 4), but two resources were removed prior to the v1.0 release. Of the total 31 resources (Himmelstein et al., 2015i), 5 were United States government works not subject to copyright, and 12 had licenses that met the Open Definition of knowledge version 2.1. Four resources allowed only non-commercial reuse. Most problematic were the remaining nine resources that had no license — which equates to all rights reserved by default and forbids reuse (Oxenham, 2016) — and one resource that explicitly forbid redistribution.
 
+**Table 4.**
+ The 29 public data resources integrated to construct Hetionet v1.0.Components notes which types of nodes and edges in Hetionet v1.0 derived from the resource (as per the abbreviations in Table 1 and 2). Cat. notes the general category of license (Himmelstein et al., 2015i). Category 1 refers to United States government works that we deemed were not subject to copyright. Category 2 refers to resources with licenses that allow use, redistribution, and modification (although some restrictions may still exist). The subset of category 2 licenses that we deemed to meet the the Open Definition are denoted with OD. Category 4 refers to resources without a license, hence with all rights reserved. References provides Research Resource Identifiers as well as citations to resource publications and related Project Rephetio materials. For information on license provenance, institutional affiliations, and funding for each resource, see the online table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Components</th>
+      <th>License</th>
+      <th>Cat.</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Entrez Gene</td>
+      <td>G</td>
+      <td>custom</td>
+      <td>1</td>
+      <td>RRID:SCR_002473 (Maglott et al., 2011; Himmelstein et al., 2015h; Himmelstein, 2016l)</td>
+    </tr>
+    <tr>
+      <td>LabeledIn</td>
+      <td>CtD, CpD</td>
+      <td>custom</td>
+      <td>1</td>
+      <td>RRID:SCR_015667 (Khare et al., 2014; Khare et al., 2015; Himmelstein and Khare, 2015s)</td>
+    </tr>
+    <tr>
+      <td>MEDLINE</td>
+      <td>DlA, DpS, DrD</td>
+      <td>custom</td>
+      <td>1</td>
+      <td>RRID:SCR_002185 (Himmelstein and Pankov, 2015a; Himmelstein, 2016u)</td>
+    </tr>
+    <tr>
+      <td>MeSH</td>
+      <td>S</td>
+      <td>custom</td>
+      <td>1</td>
+      <td>RRID:SCR_004750 (Himmelstein and Pankov, 2015a; Himmelstein, 2016h)</td>
+    </tr>
+    <tr>
+      <td>Pathway Interaction Database</td>
+      <td>PW, GpPW</td>
+      <td></td>
+      <td>1</td>
+      <td>RRID:SCR_006866 (Schaefer et al., 2009; Pico and Himmelstein, 2015; Himmelstein and Pico, 2016a)</td>
+    </tr>
+    <tr>
+      <td>Disease Ontology</td>
+      <td>D</td>
+      <td>CC BY 3.0</td>
+      <td>2OD</td>
+      <td>RRID:SCR_000476 (Schriml et al., 2012; Kibbe et al., 2015; Himmelstein and Li, 2015d; Himmelstein, 2016g)</td>
+    </tr>
+    <tr>
+      <td>DISEASES</td>
+      <td>DaG</td>
+      <td>CC BY 4.0</td>
+      <td>2OD</td>
+      <td>RRID:SCR_015664 (Himmelstein and Jensen, 2015l; Himmelstein and Jensen, 2016c; Pletscher-Frankild et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>DrugCentral</td>
+      <td>PC, CbG, PCiC</td>
+      <td>CC BY 4.0</td>
+      <td>2OD</td>
+      <td>RRID:SCR_015663 (Ursu et al., 2017; Himmelstein et al., 2016d)</td>
+    </tr>
+    <tr>
+      <td>Gene Ontology</td>
+      <td>BP, CC, MF, GpBP, GpCC, GpMF</td>
+      <td>CC BY 4.0</td>
+      <td>2OD</td>
+      <td>RRID:SCR_002811 (Ashburner et al., 2000; Huntley et al., 2015; Himmelstein et al., 2015g; Himmelstein et al., 2015f)</td>
+    </tr>
+    <tr>
+      <td>GWAS Catalog</td>
+      <td>DaG</td>
+      <td>custom</td>
+      <td>2OD</td>
+      <td>RRID:SCR_012745 (Himmelstein and Baranzini, 2016b; MacArthur et al., 2017; Himmelstein, 2015h; Himmelstein et al., 2015v)</td>
+    </tr>
+    <tr>
+      <td>Reactome</td>
+      <td>PW, GpPW</td>
+      <td>custom</td>
+      <td>2OD</td>
+      <td>RRID:SCR_003485 (Fabregat et al., 2016; Cerami et al., 2011; Pico and Himmelstein, 2015; Himmelstein and Pico, 2016a)</td>
+    </tr>
+    <tr>
+      <td>LINCS L1000</td>
+      <td>CdG, CuG, Gr &gt; G</td>
+      <td>custom</td>
+      <td>2OD</td>
+      <td>(Himmelstein and Chung, 2015q; Himmelstein et al., 2016k; Himmelstein, 2015k)</td>
+    </tr>
+    <tr>
+      <td>TISSUES</td>
+      <td>AeG</td>
+      <td>CC BY 4.0</td>
+      <td>2OD</td>
+      <td>RRID:SCR_015665 (Santos et al., 2015; Himmelstein and Jensen, 2015g; Himmelstein and Jensen, 2015h)</td>
+    </tr>
+    <tr>
+      <td>Uberon</td>
+      <td>A</td>
+      <td>CC BY 3.0</td>
+      <td>2OD</td>
+      <td>RRID:SCR_010668 (Mungall et al., 2012; Malladi et al., 2015; Himmelstein, 2016m)</td>
+    </tr>
+    <tr>
+      <td>WikiPathways</td>
+      <td>PW, GpPW</td>
+      <td>CC BY 3.0/custom</td>
+      <td>2OD</td>
+      <td>RRID:SCR_002134 (Kutmon et al., 2016; Pico et al., 2008; Pico and Himmelstein, 2015; Himmelstein and Pico, 2016a)</td>
+    </tr>
+    <tr>
+      <td>BindingDB</td>
+      <td>CbG</td>
+      <td>mixed CC BY 3.0 and CC BY-SA 3.0</td>
+      <td>2OD</td>
+      <td>RRID:SCR_000390 (Chen et al., 2001; Gilson et al., 2016; Himmelstein and Gilson, 2015i; Himmelstein et al., 2015d)</td>
+    </tr>
+    <tr>
+      <td>DisGeNET</td>
+      <td>DaG</td>
+      <td>ODbL</td>
+      <td>2OD</td>
+      <td>RRID:SCR_006178 (Himmelstein, 2015f; Himmelstein and Piñero, 2016d; Piñero et al., 2015; Piñero et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>DrugBank</td>
+      <td>C, CbG, CrC</td>
+      <td>custom</td>
+      <td>2</td>
+      <td>RRID:SCR_002700 (Law et al., 2014; Himmelstein, 2015b; Himmelstein, 2016i; Himmelstein et al., 2016r)</td>
+    </tr>
+    <tr>
+      <td>MEDI</td>
+      <td>CtD, CpD</td>
+      <td>CC BY-NC-SA 3.0</td>
+      <td>2</td>
+      <td>RRID:SCR_015668 (Himmelstein et al., 2015e; Wei et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>PREDICT</td>
+      <td>CtD, CpD</td>
+      <td>CC BY-NC-SA 3.0</td>
+      <td>2</td>
+      <td>(Gottlieb et al., 2011; Himmelstein et al., 2015e)</td>
+    </tr>
+    <tr>
+      <td>SIDER</td>
+      <td>SE, CcSE</td>
+      <td>CC BY-NC-SA 4.0</td>
+      <td>2</td>
+      <td>RRID:SCR_004321 (Kuhn et al., 2016; Himmelstein, 2015c; Himmelstein, 2016j)</td>
+    </tr>
+    <tr>
+      <td>Bgee</td>
+      <td>AeG, AdG, AuG</td>
+      <td></td>
+      <td>4</td>
+      <td>RRID:SCR_002028 (Himmelstein et al., 2016f; Himmelstein and Bastian, 2015e; Himmelstein and Bastian, 2015f; Bastian et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>DOAF</td>
+      <td>DaG</td>
+      <td></td>
+      <td>4</td>
+      <td>RRID:SCR_015666 (Himmelstein, 2015g; Himmelstein, 2016s; Xu et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>ehrlink</td>
+      <td>CtD, CpD</td>
+      <td></td>
+      <td>4</td>
+      <td>(McCoy et al., 2012; Himmelstein, 2015j)</td>
+    </tr>
+    <tr>
+      <td>Evolutionary Rate Covariation</td>
+      <td>GcG</td>
+      <td></td>
+      <td>4</td>
+      <td>RRID:SCR_015669 (Priedigkeit et al., 2015; Himmelstein and Partha, 2015r; Himmelstein, 2016w)</td>
+    </tr>
+    <tr>
+      <td>hetio-dag</td>
+      <td>GiG</td>
+      <td></td>
+      <td>4</td>
+      <td>(Himmelstein and Baranzini, 2015a; Himmelstein et al., 2015z; Himmelstein and Baranzini, 2016e)</td>
+    </tr>
+    <tr>
+      <td>Incomplete Interactome</td>
+      <td>GiG</td>
+      <td></td>
+      <td>4</td>
+      <td>(Himmelstein et al., 2015z; Himmelstein and Baranzini, 2016e; Menche et al., 2015; Himmelstein, 2015a)</td>
+    </tr>
+    <tr>
+      <td>Human Interactome Database</td>
+      <td>GiG</td>
+      <td></td>
+      <td>4</td>
+      <td>RRID:SCR_015670 (Himmelstein et al., 2015z; Himmelstein and Baranzini, 2016e; Rual et al., 2005; Venkatesan et al., 2009; Yu et al., 2011; Rolland et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>STARGEO</td>
+      <td>DdG, DuG</td>
+      <td></td>
+      <td>4</td>
+      <td>(Himmelstein et al., 2015a; Himmelstein et al., 2016j; Hadley et al., 2017)</td>
+    </tr>
+  </tbody>
+</table>
+
 Additional difficulty resulted from license incompatibles across resources, which was caused primarily by non-commercial and share-alike stipulations. Furthermore, it was often unclear who owned the data (Elliott, 2005). Therefore, we sought input from legal experts and chronicled our progress (Himmelstein et al., 2015i; Himmelstein, 2015k; Himmelstein et al., 2016r; Himmelstein, 2015a; Himmelstein, 2015d).
 
 Ultimately, we did not find an ideal solution. We had to choose between absolute compliance and Hetionet: strictly adhering to copyright and licensing arrangements would have decimated the network. On the other hand, in the United States, mere facts are not subject to copyright, and fair use doctrine helps protect reuse that is transformative and educational. Hence, we choose a path forward which balanced legal, normative, ethical, and scientific considerations.
 
 If a resource was in the public domain, we licensed any derivatives as CC0 1.0. For resources licensed to allow reuse, redistribution, and modification, we transmitted their licenses as properties on the specific nodes and relationships in Hetionet v1.0. For all other resources — for example, resources without licenses or with licenses that forbid redistribution — we sent permission requests to their creators. The median time till first response to our permission requests was 16 days, with only two resources affirmatively granting us permission. We did not receive any responses asking us to remove a resource. However, we did voluntarily remove MSigDB (Liberzon et al., 2011), since its license was highly problematic (Himmelstein, 2015d). As a result of our experience, we recommend that publicly funded data should be explicitly dedicated to the public domain whenever possible.
 
-## Permuted hetnets
+### Permuted hetnets
 
 From Hetionet, we derived five permuted hetnets (Himmelstein, 2016b). The permutations preserve node degree but eliminate edge specificity by employing an algorithm called XSwap to randomly swap edges (Hanhijärvi et al., 2009). To extend XSwap to hetnets (Himmelstein and Baranzini, 2015a), we permuted each metaedge separately, so that edges were only swapped with other edges of the same type. We adopted a Markov chain approach, whereby the first permuted hetnet was generated from Hetionet v1.0, the second permuted hetnet was generated from the first, and so on. For each metaedge, we assessed the percent of edges unchanged as the algorithm progressed to ensure that a sufficient number of swaps had been performed to randomize the network (Himmelstein, 2016b). Permuted hetnets are useful for computing the baseline performance of meaningless edges while preserving node degree (Himmelstein, 2015l). Since, our use of permutation focused on assessing Δ AUROC, a small number of permuted hetnets was sufficient, as the variability in a metapath’s AUROC across the permuted hetnets was low.
 
-## Graph databases and Neo4j
+### Graph databases and Neo4j
 
 Traditional relational databases — such as SQLite, MySQL, and PostgreSQL — excel at storing highly structured data in tables. Connectivity between tables is accomplished using foreign-key references between columns. However, for many biomedical applications the connectivity between entities is of foremost importance. Furthermore, enforcing a rigid structure of what attributes an entity may possess is less important and often unnecessarily prohibitive. Graph databases focus instead on capturing connectivity (relationships) between entities (nodes). Accordingly, graph databases such as Neo4j offer greater ease when modeling biomedical relationships and superior performance when traversing many levels of connectivity (Yoon et al., 2017; Jaiswal, 2013). Until recently, graph database adoption in bioinformatics was limited (Have and Jensen, 2013). However lately, the demand to model and capture biological connectivity at scale has led to increasing adoption (Lysenko et al., 2016; Balaur et al., 2016; Summer et al., 2016; Mungall et al., 2017).
 
 We used the Neo4j graph database for storing and operating on Hetionet and noticed major benefits from tapping into this large open source ecosystem (Himmelstein, 2015m). Persistent storage with immediate access and the Cypher query language — a sort of SQL for hetnets — were two of the biggest benefits. To facilitate our migration to Neo4j, we updated hetio — our existing Python package for hetnets (Himmelstein, 2016g) — to export networks into Neo4j and DWPC queries to Cypher. In addition, we created an interactive GraphGist for Project Rephetio, which introduces our approach and showcases its Cypher queries. Finally, we created a public Neo4j instance (Himmelstein, 2016i), which leverages several modern technologies such Neo4j Browser guides, cloud hosting with HTTPS, and Docker deployment (Belmann et al., 2015; Beaulieu-Jones and Greene, 2017).
 
-## Machine learning approach
+### Machine learning approach
 
 Project Rephetio relied on the previously published DWPC metric to generate features for compound–disease pairs. The DWPC measures the prevalence of a given metapath between a given source and target node (Himmelstein and Baranzini, 2015a). It is calculated by first extracting all paths from the source to target node that follow the specified metapath. Next, each path is weighted by taking the product of the node degrees along the path raised to a negative exponent. This damping exponent — the sole parameter — thereby determines the extent that paths through high-degree nodes are downweighted: we chose w = 0.4 based on our past optimizations (Himmelstein and Baranzini, 2015a). The DWPC equals the sum of the path weights (referred to as path-degree products). Traversing the hetnet to extract all paths between a source and target node, which we performed in Neo4j, is the most computationally intensive step in computing DWPCs (Himmelstein and Lizee, 2016t). For future work, we are exploring matrix multiplication approaches, which could improve runtime several orders of magnitude.
 
 Project Rephetio made several refinements to metapath-based hetnet edge prediction compared to previous studies (Himmelstein and Baranzini, 2015a; Sun et al., 2011). First, we transformed DWPCs by mean scaling and then taking the inverse hyperbolic sine (Burbidge et al., 1988) to make them more amenable to modeling (Himmelstein et al., 2016s). Second, we bifurcated the workflow into an all-features stage and an all-observations stage (Himmelstein, 2016k). The all-features stage assesses feature performance and does not require computing features for all negatives. Here, we selected a random subset of 3020 (4 × 755) negatives. Little error was introduced by this optimization, since the predominant limitation to performance assessment was the small number of positives (755) rather than negatives. Based on the all-features performance assessment (Himmelstein, 2015n), we selected 142 DWPCs to compute on all observations (all 209,168 compound–disease pairs). The feature selection was designed to remove uninformative features (according to permutation) and guard against edge-dropout contamination (Himmelstein, 2016h). Third, we included 14 degree features, which assess the degree of a specific metaedge for either the source compound or target disease.
 
-## Network support of predictions
+### Network support of predictions
 
 To improve the interpretability of the predictions, we developed a method for decomposing a prediction into its network support (Himmelstein, 2016e). This information is deployed to our Neo4j Browser guides, allowing users to assess the biomedical evidence contributing to a given prediction. First, we used logistic regression terms to quantify the contribution of metapaths that positively support a prediction. Second, we decomposed a metapath’s contribution, according to its DWPC, into specific paths contributions. Finally, we aggregated paths based on their source (first) or target (last) edge to quantify the contribution of specific edges of the source compound or target disease (Himmelstein, 2016f).
 
 Using the acamprosate–epilepsy prediction as an example, we first quantified metapath contributions: 40% of the prediction was supported by CbGbCtD paths, 36% by CbGaD paths, 11% by CcSEcCtD paths, 8% by CbGpPWpGaD paths, and 5% by CbGeAlD paths. Second, we calculated path contributions: Acamprosate–binds–GRM5–associates–epilepsy syndrome was the most supportive path, contributing 11% of the prediction. Finally, we aggregated path contributions to calculate that the source edge of Acamprosate—binds—GRM5 contributed 23% of the prediction, while the target edge of epilepsy syndrome–treats–Felbamate contributed 12%.
 
-## Prior probability of treatment
+### Prior probability of treatment
 
 The 755 treatments in Hetionet v1.0 are not evenly distributed between all compounds and diseases. For example, methotrexate treats 19 diseases and hypertension is treated by 68 compounds. We estimated a prior probability of treatment — based only on the treatment degree of the source compound and target disease — on 744,975 permutations of the bipartite treatment network (Lizee and Himmelstein, 2016a). Methotrexate received a 79.6% prior probability of treating hypertension, whereas a compound and disease that both had only one treatment received a prior of 0.12%.
 
@@ -286,13 +1015,13 @@ Across the 209,168 compound–disease pairs, the prior predicted the known treat
 
 This method succeeded at accommodating the treatment degrees. The prior probabilities performed poorly on the validation sets with AUROC = 54.1% on DrugCentral indications and AUROC = 62.5% on clinical trials. This performance dropoff compared to training shows the danger of encoding treatment degree into predictions. The benefits of our solution are highlighted by the superior validation performance of our predictions compared to the prior (Figure 3).
 
-## Indication sets
+### Indication sets
 
 We evaluated our predictions on four sets of indications as shown in Figure 3.
 
 Only the Clinical Trial and DrugCentral indication sets were used for external validation, since the Disease Modifying and Symptomatic indications were included in the hetnet. As an aside, several additional indication catalogs have recently been published, which future studies may want to also consider (Himmelstein et al., 2015e; Brown and Patel, 2017; Shameer et al., 2017; Sharp, 2017).
 
-## Realtime open science and thinklab
+### Realtime open science and thinklab
 
 We conducted our study using Thinklab — a platform for real-time open collaborative science — on which this study was the first project (Himmelstein et al., 2015c). We began the study by publicly proposing the idea and inviting discussion (Himmelstein et al., 2015k). We continued by chronicling our progress via discussions. We used Thinklab as the frontend to coordinate and report our analyses and GitHub as the backend to host our code, data, and notebooks. On top of our Thinklab team consisting of core contributors, we welcomed community contribution and review. In areas where our expertise was lacking or advice would be helpful, we sought input from domain experts and encouraged them to respond on Thinklab where their comments would be CC BY licensed and their contribution rated and rewarded.
 
@@ -306,6 +1035,6 @@ Thinklab began winding down operations in July 2017 and has switched to a static
 
 The preprint for this study is available at doi.org/bs4f (Himmelstein et al., 2016u). The manuscript was written in markdown, originally on Thinklab at doi.org/bszr (Himmelstein et al., 2016v). In August 2017, we switched to using the Manubot system to generate the manuscript. With Manubot, a GitHub repository (dhimmel/rephetio-manuscript) tracks the manuscript’s source code, while continuous integration automatically rebuilds the manuscript upon changes. As a result, the latest version of the manuscript is always available at dhimmel.github.io/rephetio-manuscript. Additionally, readers can leave feedback or questions for the Project Rephetio team via GitHub Issues.
 
-## Software and data availability
+### Software and data availability
 
 All software and datasets from Project Rephetio are publicly available on GitHub, Zenodo, or Figshare (Himmelstein et al., 2017b). Additional documentation for these materials is available in the corresponding Thinklab discussions. For reader convenience, software, datasets, and Thinklab discussions have been cited throughout the manuscript as relevant. Copies of the most relevant Github repositories are archived at: https://github.com/elifesciences-publications/hetionet; https://github.com/elifesciences-publications/integrate; https://github.com/elifesciences-publications/learn; https://github.com/elifesciences-publications/hetio and https://github.com/elifesciences-publications/rephetio-manuscript.

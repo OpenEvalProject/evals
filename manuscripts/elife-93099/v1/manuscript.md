@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0081fs513 Departamento de Química Inorgánica, Analítica y Química-Física (INQUIMAE-CONICET), Universidad de Buenos Aires Buenos Aires Argentina
-2. https://ror.org/05abbep66 Howard Hughes Medical Institute, Department of Biochemistry, Brandeis University Waltham United States
-3. https://ror.org/0081fs513 Departamento de Química Biológica (IQUIBICEN-CONICET), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires Buenos Aires Argentina
+1. Departamento de Química Inorgánica, Analítica y Química-Física (INQUIMAE-CONICET), Universidad de Buenos Aires Buenos Aires Argentina ([ROR:0081fs513](https://ror.org/0081fs513))
+2. Howard Hughes Medical Institute, Department of Biochemistry, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
+3. Departamento de Química Biológica (IQUIBICEN-CONICET), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires Buenos Aires Argentina ([ROR:0081fs513](https://ror.org/0081fs513))
 
 † Corresponding author
 
@@ -33,11 +33,88 @@ Motivated by this consideration, together with the marginal outcomes in current 
 
 Adk is an extensively studied phosphotransferase that catalyzes the reversible, roughly isoenergetic conversion of two ADP molecules into ATP and AMP (Figure 1A, B), thereby maintaining the cellular concentrations of these nucleotides (Dzeja and Terzic, 2009). It is an essential enzyme found in every cell and organism. Extensive structural, dynamic, and kinetic studies led to a comprehensive picture of the overall Adk reaction mechanism and its underlying energy landscape (Figure 1A; Beckstein et al., 2009; Berry et al., 1994; Berry et al., 2006; Henzler-Wildman et al., 2007; Kerns et al., 2015; Müller et al., 1996; Müller and Schulz, 1992; Wolf-Watz et al., 2004). The conformational change of the AMP- and ATP-lids closing and opening is crucial in the enzymatic cycle: Lid-closing positions the two substrates and the active-site residues for efficient chemistry (i.e., P-transfer) and prohibits the alternative, energetically favorable reaction of phosphoryl hydrolysis (Kerns et al., 2015). Lid-opening, essential for product release, and not P-transfer is the rate-limiting step in the catalytic cycle and Mg2+ accelerates both steps (Kerns et al., 2015). Here, we investigate the actual P-transfer step computationally, followed by experimental testing of our computational results. This chemical step would take about 7000 years without the enzyme (Stockbridge and Wolfenden, 2009) compared to >5000 s−1 with the enzyme (Kerns et al., 2015).
 
-## QM/MM calculations of the P-transfer step in Adk
+![Figure 1.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-v1.jpg)
+
+**Figure 1.:** (A) Complete reaction scheme with corresponding illustrative free-energy landscape highlighting the chemical phosphoryl-transfer step (modified from Kerns et al., 2015). Protein structures shown are apo Adk in the open conformation and Adk in the closed conformation with two bound ADP molecules and one Mg2+ atom (active-site arginine side chains are shown in stick representation). (B) Phosphoryl-transfer step is drawn with corresponding distances used to define the reaction coordinate as used in panels D, E. (C) Free-energy profiles for the Adk-catalyzed interconversion of ADP–ADP into ATP–AMP in the absence (blue) and presence of Mg2+ (orange) from QM/MM calculations. AD(T)P is fully charged for the reaction with Mg2+, and singly protonated on one ADP β-oxygen for reaction without Mg2+. The reaction coordinate is defined as the difference between the distance of the leaving oxygen to the transferring phosphorus d(Oleaving − P) and the distance of the attacking oxygen to the transferring phosphorus d(Oattacking − P). Distance between acceptor and leaving oxygens along the reaction coordinate in the presence (E) and in the absence (D) of Mg2+. The transition-state regions in C–E are highlighted in orange and gray, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The QM subsystem is shown in CPK representation and the MM subsystem is in lines representation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Comparison of ADPs, main amino acids and Mg2+ ion in the active site against the crystallographic model in green (starting structure for QM/MM as ball and stick), (B) zoom-in showing Mg2+ ion coordinated by water molecules and the phosphates, and (C) the Adk backbone of the starting model (cyan) and the crystallographic structure (green) with a backbone RMSD of 0.98 Å.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Free-energy profile (FEP) for the forward (solid gray line) and backward (solid blue line) reactions for the nonprotonated system in the presence of Mg2+.The dashed lines are the standard deviation for the forward and backward reactions in gray and blue, respectively. Works profiles obtained for the forward (B) and backward (C) reactions.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Free-energy profile for the forward (solid gray line) and backward (solid blue line) reactions for the monoprotonated system with Mg2+.The dashed lines are the standard deviation for the forward and backward reactions in gray and blue, respectively. Works profiles obtained for the forward (B) and backward (C) reactions.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Free-energy profile for the forward (solid gray line) and backward (solid blue line) reactions for the monoprotonated system without Mg2+.The dashed lines are the standard deviation for the forward and backward reactions in gray and blue, respectively. Works profiles obtained for the forward (B) and backward (C) reactions.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Reaction coordinate is the same as in Figure 1. (A) Superposition of the forward and backward free-energy profiles. (B) The free-energy profile as result of the combination of the forward and backward free-energy profiles. The transparent pink region shows the transition-state region. (C) Distance between acceptor and leaving oxygens along the reaction coordinate in the presence of Mg2+. The transition-state region is highlighted in pink. (D, E) Diagram of (Jencks, 1972; O’Ferrall, 1970) from the simulations, plotting the two P–O distances involved in the P-transfer for the reaction with Mg2+, using DFT level at the quantum-mechanics (QM) region (PT for transferring phosphate). The theoretical transition pathways for a tight, synchronous, and loose transition state are shown in E (as defined in Roston and Cui, 2016).
+
+### QM/MM calculations of the P-transfer step in Adk
 
 In order to shed light on the mechanism by which Adk from Aquifex aeolicus catalyzes the phosphoryl-transfer reaction by more than 12 orders of magnitude (Kerns et al., 2015), we performed QM/MM simulations starting with two ADP molecules and Mg2+ bound in the active site. The starting structures for the simulations were prepared using the X-ray structure of Adk in complex with Ap5A (P1,P5-Di(adenosine-5′) pentaphosphate) and coordinated to Zn2+ (2RGX; Henzler-Wildman et al., 2007). ADP–ADP coordinates were built using Ap5A as a template and Zn2+ was replaced by Mg2+. For the QM/MM simulations, the QM region was defined as the diphosphate moiety of both ADP molecules, the Mg2+ ion, plus the four coordinating water molecules. The rest of the system was described at molecular-mechanics level using the AMBER ff99sb force field (Hornak et al., 2006) and was solvated with TIP3P water molecules (Figure 1—figure supplement 1).
 
 The equilibrated starting structures agree well with the X-ray structures of the enzyme bound to Mg2+/ADP (4CF7; Kerns et al., 2015; Figure 1—figure supplement 2). Steered molecular dynamics simulations were run in both the forward (ADP/ADP to ATP/AMP) and reverse direction (ATP/AMP to ADP/ADP) with Mg2+ present in the active site (Figure 1—figure supplement 3). Since it is unknown whether the fully charged or monoprotonated nucleotide (on one β-ADP oxygen) state is the more reactive configuration, we performed QM/MM simulations for both cases. FEPs of the P-transfer were determined using Multiple Steered Molecular Dynamics and Jarzynski’s Relationship (Crespo et al., 2005; Jarzynski, 1997; Ramírez et al., 2014; Figure 1C, Figure 1—figure supplements 3–5). The results reveal a much smaller free energy of activation for the fully charged nucleotide state (ΔfG‡ of 13 ± 0.9 kcal/mol) relative to monoprotonated state (ΔfG‡ of 23 ± 0.9 kcal/mol) (Table 1); hence, we conclude that this is the most reactive enzyme configuration.
+
+**Table 1.**
+ Free-energy profile estimates of the free-energy parameters of the reaction, using self-consistent charge-density functional tight-binding (SCC-DFTB) (all values in kcal/mol).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>With Mg2+</th>
+      <th>Without Mg2+</th>
+      <th>With Mg2+, ADP monoprotonated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ΔG*</td>
+      <td>−6 (1.7)</td>
+      <td>+4 (2.5)</td>
+      <td>+6 (1.9)</td>
+    </tr>
+    <tr>
+      <td>ΔfG†</td>
+      <td>13 (0.9)</td>
+      <td>34 (1.6)</td>
+      <td>23 (0.9)</td>
+    </tr>
+    <tr>
+      <td>ΔbG†</td>
+      <td>20 (0.8)</td>
+      <td>30 (0.9)</td>
+      <td>18 (0.9)</td>
+    </tr>
+    <tr>
+      <td>ξ(TS)</td>
+      <td>−0.5 to 0.7 ‡0.0 to 0.2</td>
+      <td>−0.2 to 0 ‡−0.1</td>
+      <td>−0.3 to −0.1 ‡Not calculated</td>
+    </tr>
+    <tr>
+      <td>ζ(TS)</td>
+      <td>165 to 190</td>
+      <td>165 to 180</td>
+      <td>170 to 180</td>
+    </tr>
+  </tbody>
+</table>
+
+_ξ(TS) is the range of the reaction coordinate in the TSE (in Å); ζ(TS) is the improper dihedral angle of the transferring phosphate in the TS. The estimated errors of the free energies are in parenthesis and are computed as described in Materials and methods.*overall reaction free energy.†activation free energy of the forward reaction; activation free energy of the backward reaction.‡Values were analyzed by a visual analysis of the multiple steered molecular dynamics (MSMD) trajectories, no committor distribution were calculated._
 
 When the calculations were repeated in the absence of Mg2+ (with the nucleotide monoprotonated, since the fully charged nucleotide state prohibited the reaction), a large increase in the free-energy activation barrier was observed relative to the Mg2+-bound system (Figure 1C, Figure 1—figure supplement 5, ΔfG‡ of 34 ± 1.6 kcal/mol), in agreement with expectations from experiments (Kerns et al., 2015). We note that only a lower limit for the overall acceleration by Mg2+ (>105-fold) could be estimated from published results (Kerns et al., 2015), since the P-transfer was too fast to be measured experimentally in the presence of Mg2+.
 
@@ -47,11 +124,47 @@ During revision, we tested the accuracy and robustness of our results from our o
 
 **Figure 2.:** Diagram of (Jencks, 1972; O’Ferrall, 1970) from the quantum-mechanics/molecular-mechanics (QM/MM) simulations, plotting the two P–O distances involved in the P-transfer for the reaction (A, C) with Mg2+ and (B, D) without Mg2+ (PT for transferring phosphate). The theoretical transition pathways for a tight, synchronous, and loose transition state are shown in C, D (as defined in Roston and Cui, 2016).
 
-## The TSE – transferring phosphoryl group delocalized
+### The TSE – transferring phosphoryl group delocalized
 
 The nature of the TS of enzyme-catalyzed P-transfer reaction with respect to its associative and dissociative character has been of significant interest and heated debate (Kamerlin et al., 2013; Kamerlin and Wilkie, 2007; Lassila et al., 2011; Roston and Cui, 2016). The definition as well as theoretical and experimental approaches to distinguish between them are rooted in elegant and fundamental work on nonenzymatic P-transfer reactions (Duarte et al., 2015; Hengge, 2002; Hou et al., 2012; Hou and Cui, 2012; Kamerlin et al., 2013; Kerns et al., 2015; Kirby and Nome, 2015; Stockbridge and Wolfenden, 2009). For Adk, a concerted mechanism is observed with no intermediates (Figures 1 and 2). Instead of using the classification of associative versus dissociative character (Lassila et al., 2011), we rather apply the clear definition by Cui and coworkers of a tight versus loose TS for concerted P-transfer reactions as they are unambiguously related to the bond-order in the TS (Lai and Cui, 2020a; Lai and Cui, 2020b; Roston et al., 2018; Roston and Cui, 2016). For Adk, a contraction of the active site is observed while passing through the TSE, as captured by the decrease in the distance between acceptor and leaving group during the transition (Figure 1D, E). In the absence of Mg2+, the acceptor and donor need to be within 4 Å for the reaction to occur (Figure 1D) whereas in the presence of Mg2+ an acceptor–donor distance of 4.5 Å is sufficient (Figure 1E). The character of the TSE can best be seen from the widely used Moore-O’Ferrall–Jencks diagram (Jencks, 1972; O’Ferrall, 1970) that plots the distance from the transferring phosphate to the oxygen of the donor and acceptor, respectively (Figure 2). The TSE changes from tight/synchronous without Mg2+ (meaning high bond-order for both bonds between transferring phosphate to the leaving group and the attacking nucleophile) into loose with Mg2+ (lower bond-order for these two bonds; Figures 2 and 3; Lai and Cui, 2020a; Lai and Cui, 2020b; Roston et al., 2018; Roston and Cui, 2016).
 
 Importantly, from these two-dimensional (Figure 2) and the one-dimensional (Figure 1C) free-energy plots, we noticed a novel striking feature: a large ensemble of conformations in the TS region with vast differences in the position of the transferring phosphate but equal values in free energy for the enzyme with Mg2+ (light blue dots in Figure 2, yellow area in Figure 1C). In other words, the enzyme seems to operate with a wide TSE. In contrast, without Mg2+ fewer conformations seem to comprise the TSE. To dive more into this unexpected computational result and better visualize the TSE, we show zoom-ins of representative TSE snapshots and their superposition (Figure 3, Figure 3—figure supplement 1). Notably, the TSE conformations are distributed along the reaction coordinate. The difference in position of the transferring phosphate along the reaction coordinate within the TSE (about 1 Å with Mg2+; Figure 1c, Figure 2 and Figure 3b) implies that the TSE contains many highly asymmetric conformations, meaning that the transferring phosphate can be much closer to the leaving oxygen than the attacking oxygen and vice versa (Figure 3D). This asymmetry is logically tied with nonplanar configurations of the transferring phosphate (Figure 3D and Table 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative snapshots for structure of reactants, transition states, and products in the adenylate kinase (Adk) active site in the presence and absence of magnesium. d(Oattacking − P) and d(Oleaving − P) are shown. Labels in black indicate the length of the bonds involved in the phosphate transfer and in green, the dihedral angle of the phosphoryl group. Superposition of the TSEs reveals a wider TSE with Mg2+ (B) relative to the one without the cation (C) with mean rmsd (± SD) of distances of the central P atom from its ‘average’ position of 0.30 ± 0.11 Å (B) and 0.13 ± 0.06 Å (C). The TSEs are superimposed with the X-ray structure solved with a transition-state analog in green (AMP, AlF4−, and ADP) reported in Kerns et al., 2015 (PDB ID: 3SR0). (D) Superposition of two extreme structures out of the large TSE for the enzyme with Mg2+, one where the phosphoryl group is closest to the donor oxygen (blue) and the other closest to the acceptor oxygen (red) highlighting the asymmetric character of TSE members. (E, F) Superposition of most symmetric snapshot from TSE of quantum-mechanics/molecular-mechanics (QM/MM) calculations (ball and stick representation in cyan) with the X-ray structure of transition-state analog (green, PDB ID: 3SR0 Kerns et al., 2015 including coordinating water molecules in F). (G) Zoom into the active site to display the broad TSE in the presence of Mg2+ aided by flexible Arg and Lys side chains in the active site.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The labels in black describe the distances that are part of the phosphate transfer and the label in green shows the dihedral angle. Label of the phosphates in orange.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The superposition is showed for: the main active site’s residues the atoms taking part of the reaction and backbone of the adenylate kinase (Adk).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The change in geometrical parameters along the reaction coordinate is shown for (A) forward and (B) backward reactions. Parameters: distance Oleaving – Ptransferring (red), distance Oattacking – Ptransferring (black), transferring phosphate dihedral angle (light blue), distance Mg2+ – O from transferring phosphate (blue), and distance Mg2+ – O from beta-phosphate of ADPATP-lid (orange). The charge (mulliken charge) variation of different moieties involved in the reaction are shown for (C) forward and (D) backward reactions: Mg2+ (green), alpha-phosphate of ADPATP-lid (red), alpha-phosphate of ADPAMP-lid (orange), beta-phosphate of ADPATP-lid (black), and transferring phosphate (blue). Note that a proton is transiently transferred from one water molecule coordinating the Mg2+ to an oxygen of Pα in ADPAMP-lid (leaving group). In all plots, the free-energy profile (FEP) is shown in the background as light gray dashed line.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The change in different geometrical parameters along the reaction coordinate is shown for (A) forward and (B) backward reactions. Parameters shown: distance Oleaving – Ptransferring (red), distance Oattacking – Ptransferring (black), and transferring phosphate dihedral angle (light blue). The charge (mulliken charge) variation of different moieties involved in the reaction are shown for (C) forward and (D) backward reactions: alpha-phosphate of ADPATP-lid (red), alpha-phosphate of ADPAMP-lid (orange), beta-phosphate of ADPATP-lid (black), and transferring phosphate (blue). The distances involving the proton transfer are shown for (E) forward and (F) backward reactions: H – Oattacking (black), H – O of transferring phosphate (red), and H – O of alpha-phosphate of ADPAMP-lid (green). In all plots, the free-energy profile (FEP) is shown in the background as light gray dashed line.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** The change in different geometrical parameters along the reaction coordinate is shown for (A) forward and (B) backward reactions. Parameters shown: distance Oleaving – Ptransferring (red), distance Oattacking – Ptransferring (black), transferring phosphate dihedral angle (light blue), distance Mg2+ – O from transferring phosphate (blue), and distance Mg – O from beta-phosphate of ADPATP-lid (orange). The charge (mulliken charge) variation of different moieties involved in the reaction with Mg2+are shown for (C) forward and (D) backward reactions: Mg2+ (green), alpha-phosphate of ADPATP-lid (red), alpha-phosphate of ADPAMP-lid (orange), beta-phosphate of ADPATP-lid (black), and transferring phosphate (blue). The distances involving the proton transfer are shown for (E) forward and (F) backward reactions: H – Oattacking (black), H – O of transferring phosphate (red), and H – O of alpha-phosphate of ADPAMP-lid (green). In all plots, the free-energy profile (FEP) is shown in the background as light gray dashed line.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** The main interactions between the phosphate moieties of the nucleotides and the amino acid side chains in the active site are shown (in gray dashed lines).
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp7-v1.jpg)
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp8-v1.jpg)
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp9-v1.jpg)
+
+**Figure 3—figure supplement 9.:** RC equal to 0.0, 0.1, and 0.2 Å with Mg2+ have a transition state (TS)-like ensemble distribution, whereas only RC equal to −0.1 Å has a TS-like ensemble distribution without Mg2+.
 
 Comparison of the TSE snapshots for the fully active, Mg2+-bound enzyme obtained from QM/MM with an X-ray structure of the same enzyme in complex with the TSA (ADP–Mg2+–AlF4—AMP) (Kerns et al., 2015) serves as an initial experimental validation of our simulations (Figure 3C, F, Figure 3—figure supplement 2). At the same time, this comparison highlights the power of the QM/MM simulations to investigate the catalytic mechanism, as the TSA-bound X-ray structure seems to imply quite a unique TS conformation, in sharp contrast to the broad TSE discovered in our simulations.
 
@@ -59,19 +172,19 @@ A detailed analysis of the pathways with and without Mg2+ reveals well-known fea
 
 Besides the multifaceted role of Mg2+, our simulations provide insights into the function of the fully conserved arginine residues in the active site for lowering the activation barrier for this chemical reaction (Figure 3—figure supplements 6–8). R85 appears to arrange the beta-phosphates of the ADPs in the proper position for the reaction to be started. R150 and R161 are involved in anchoring ATP and AMP residues in the backward reaction. These last two residues and R85 interact with the Pα of AMP, stabilizing its negative charge. R36 is near to the alpha-phosphate of AD(M)P along the entire catalytic reaction, stabilizing both the TS and products. Overall, interactions between these arginine side chains and several backbone amides and the Mg2+ with the phosphates of the substrate make up a well-organized, asymmetric active site enabling efficient reversible P-transfer with a wide TSE (Figure 3G).
 
-## Umbrella sampling and committor analysis buttress wide TSE for Adk with Mg2+
+### Umbrella sampling and committor analysis buttress wide TSE for Adk with Mg2+
 
 To verify our computational finding of a wide TSE in the fully assembled enzyme with Mg2+ in contrast to a narrower TSE without a divalent metal, we performed QM/MM umbrella sampling and a committor analysis as described in methods. The umbrella sampling FEPs (Figure 4a–d) corroborate the key difference in the range of the TSE. Noteworthy, the activation free energies are smaller for the umbrella sampling when compared to the multiple steered molecular dynamics (MSMD). The largest difference being that for the reaction in the absence of Mg (Figure 1C). Higher barriers when comparing the results using Jarzynski’s to those obtained with umbrella sampling is not totally unexpected. It is well known that exponential averaging tends to overestimate free-energy barriers, and particularly when they are too high (Park et al., 2003).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig4-v1.jpg)
 
-**Figure 4.:** 2+ versus no divalent metal.(A) Free-energy profiles obtained by umbrella sampling for reactions with and without Mg2+. (B) Comparison of the TSE from multiple steered molecular dynamics (MSMD) and umbrella sampling for runs in the presence of Mg2+. The TSE structures were aligned by atoms of the Pα and O3α atoms from AD(M)P and Pβ and O3β atoms from AD(T)P. (C) First principal component (PC1) and second principal component (PC2) obtained from principal component analysis (PCA) for b. The PCA was calculated using the transferring phosphate atoms, Mg2+ ion, Pα and O3α atoms from AD(M)P and Pβ and O3β atoms from AD(T)P. The TSE structures aligned by atoms of the P–Oleaving and P–Oattacking (see method for details). (D) Commitment plot with the committor probability to products (ATP + AMP) for the reaction with and without Mg2+.
+**Figure 4.:** (A) Free-energy profiles obtained by umbrella sampling for reactions with and without Mg2+. (B) Comparison of the TSE from multiple steered molecular dynamics (MSMD) and umbrella sampling for runs in the presence of Mg2+. The TSE structures were aligned by atoms of the Pα and O3α atoms from AD(M)P and Pβ and O3β atoms from AD(T)P. (C) First principal component (PC1) and second principal component (PC2) obtained from principal component analysis (PCA) for b. The PCA was calculated using the transferring phosphate atoms, Mg2+ ion, Pα and O3α atoms from AD(M)P and Pβ and O3β atoms from AD(T)P. The TSE structures aligned by atoms of the P–Oleaving and P–Oattacking (see method for details). (D) Commitment plot with the committor probability to products (ATP + AMP) for the reaction with and without Mg2+.
 
 Notably, the calculated difference in activation barriers with and without Mg from these umbrella simulations of about 9.5 kcal/mol is in good agreement with the experimentally determined ones of ≥11 kcal/mol (P-transfer with Mg is >500 s−1 (Kerns et al., 2015) compared to 7.5 × 10−4 s−1 measured here).
 
 A consequent comparative commitment analysis that calculates the probability of reaching either reactants or products displays a very shallow change along the reaction coordinate in the presence of Mg2+, further corroborating a wide TSE for the P-transfer step in the fully active enzyme, in stark contrast to a narrow and steep change in the committors indicative of a narrower TSE without Mg2+ (Figure 4d). The TSE is defined in function of the committor distribution (Figure 3—figure supplement 9), showing the TSE is at −0.1 Å of the reaction coordinate for the reaction without Mg2+. In contrast, the TSE is wider for the reaction with Mg2+ (reaction coordinate values in the range from 0.0 to 0.2 Å; Figure 3—figure supplement 9 and Table 1).
 
-## Experimental characterization of the activation parameters of the P-transfer step
+### Experimental characterization of the activation parameters of the P-transfer step
 
 We felt the need to additionally experimentally test our major new finding from the QM/MM simulations: a delocalized TSE for the fully active enzyme. This feature would result in a lowering of the entropic barrier for the chemical step, thereby contributing to the enzyme-catalyzed rate enhancement. To avoid the issues of accuracy of QM/MM simulations that are well documented (Acevedo and Jorgensen, 2010; Elstner, 2007; Gaus et al., 2014; Roston et al., 2018), our system has the advantage of comparing the exact same reaction coordinate with the only difference being the presence/absence of a single atom, Mg2+, thereby studying differences rather than absolute values. Since the reaction with Mg2+ (fully active enzyme) revealed a more pronounced delocalization than the reaction in its absence, the divalent cation is predicted to lower the activation entropy. To test this prediction, we experimentally determined the enthalpic and entropic contributions to the chemical reaction barrier in Adk by measuring its temperature dependence in the presence and absence of Ca2+. The experimental trick of replacing Mg2+ with Ca2+ was used since the chemical step with Mg2+ is too fast to be experimentally measured, and previous studies showed that Ca2+ is an appropriate mimic to selectively probe the chemical step (Kerns et al., 2015).
 
@@ -84,6 +197,47 @@ The resulting Eyring plots for the two experiments (Figure 5A) deliver the entha
 We were able to further test our QM/MM simulations with a second designed set of experiments by measuring the pH dependence of the P-transfer step. We find that the reaction rate increases with higher pH in the presence of Ca2+, whereas without a metal the opposite trend is observed (Figure 5B). These experimental results match the simulation results: the fully charged nucleotides state was the most reactive in the presence of the metal, whereas the monoprotonated state had a much higher free-energy barrier. In contrast, without metal only the monoprotonated nucleotides were reactive. Notably, at low pH (pH 5), the P-transfer step becomes rate limiting even with Mg2+, allowing for an estimate of the rate enhancement of Mg2+ versus Ca2+ of 24-fold.
 
 Finally, we measured the forward and backward reaction rate constants of several arginine mutants that were identified as important for the P-transfer from the QM/MM simulations: R36K, R85K, R124K, R150K, and R161K (Table 2). The large decrease in the catalytic rate for each single Arg to Lys mutation further highlights the notion of a highly choreographed active site for a well-coordinated P-transfer (Figure 3G), in which arginine residues that are not even directly coordinated to the transferring phosphate play an equally important role.
+
+**Table 2.**
+ Experimentally determined observed rate constants of the forward and backward chemical reactions for mutant forms of adenylate kinase (Adk) in the presence of Mg2+.Note that the corresponding rate constants for the phosphoryl transfer in the wild-type protein are too fast to be directly measured and have been estimated to be more than three orders of magnitude faster than in the mutants (Kerns et al., 2015).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>AAdk mutant</th>
+      <th>Rate constant (s−1)2 ADP → ATP + AMP</th>
+      <th>Rate constant (s−1)ATP + AMP → 2 ADP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R124K</td>
+      <td>4.6 ± 0.5</td>
+      <td>1.6 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>R150K</td>
+      <td>1.3 ± 0.3</td>
+      <td>1.1 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>R161K</td>
+      <td>0.4 ± 0.1</td>
+      <td>0.5 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>R85K</td>
+      <td>0.3 ± 0.1</td>
+      <td>1.6 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>R36K</td>
+      <td>0.8 ± 0.2</td>
+      <td>14 ± 2</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -109,11 +263,11 @@ The importance of TSE including multiple transition pathways for protein folding
 
 ## Materials and methods
 
-## Computational setup of the system
+### Computational setup of the system
 
 The crystal structure of Adk from A. aeolicus in complex with Ap5A coordinated to Zn2+ (PDB ID 2RGX; Henzler-Wildman et al., 2007) was used as model. The Zn2+ ion was replaced by Mg2+ and the ADPs structures were built by modifying the structure of Ap5A, keeping the crystallographic coordination of the cation (2 oxygens from ADPs and 4 waters). For the simulation in low pH and without the magnesium ion, the nucleophilic oxygen of AD(T)P was protonated. Standard protonation states were assigned to all titratable residues (aspartate and glutamate residues are negatively charged, lysines and arginines residues are positively charged). Histidine protonation was assigned favoring formation of hydrogen bonds in the crystal structure. Each protein was immersed in a truncated octahedral box of TIP3P water (Jorgensen et al., 1983) and neutralized with Na+ ions (3–5 ions, depending on the system).
 
-## Classical simulation parameters
+### Classical simulation parameters
 
 The parameters used for all protein residues were those corresponding to AMBER force field ff99sb (Hornak et al., 2006). For the non-protein residues, such as ADP and Mg2+, parameters were taken from Meagher et al., 2003; Allnér et al., 2012. All simulations were performed with periodic boundary conditions. Pressure and temperature were kept constant with the Berendsen barostat and thermostat, respectively (Berendsen et al., 1984). The SHAKE algorithm (Ryckaert et al., 1977) was used to keep hydrogen atoms at their equilibrium bond distances, and a 2-fs time step was employed, except for the system without Mg2+ for which it was set to 1 fs. The ADP–ADP system was initially subjected to a classical equilibration protocol, followed by QM/MM equilibration and production simulations. Starting from the classically equilibrated ADP–ADP, the monoprotonated systems with ADPH–ADP was built, by adding the H+and removing a Na+ from the solvent, and subsequently the system without Mg2+ was built by removing the ion and adding two Na+ to the solvent. Each of these systems was again equilibrated classically and then used for forward QM/MM simulations. The backward simulations were equilibrated just using QM/MM simulations because the starting point was the product of the forward SMD simulation with the lowest work at product RC. Classical equilibration followed consisted of: first, 2000 steps of conjugate gradient optimization, followed by 100 ps MD simulation at NVT condition, where the system’s temperature was slowly raised to 300 K; the third step consisted of 100 ps MD simulation at NPT conditions to equilibrate the system’s density. During the temperature and density equilibration process, the protein α-carbon atoms were restrained by a 1 kcal/mol harmonic potential. Finally, non-restrained classical simulation was performed at least for 1 ns at NPT conditions to obtain an equilibrated structure to be used as the QM/MM input.
 
@@ -121,34 +275,38 @@ QM/MM simulations were performed using a 1-fs time step without SHAKE (Ryckaert 
 
 The QM region of the complete system consists of the diphosphate moiety of both ADP molecules, one Mg2+ ion, and the four water molecules that coordinate the metal ion in the crystal structure (Figure 1—figure supplement 1).
 
-## Free-energy determination strategy using MSMD and Jarzynski’s equation
+### Free-energy determination strategy using MSMD and Jarzynski’s equation
 
-The FEPs were constructed by performing constant velocity MSMD simulations (i.e., stiff string approximation), and using Jarzynski’s equality (Jarzynski, 1997), which relates equilibrium free-energy values with the irreversible work performed over the system along a user defined reaction coordinate that drives the system from reactants to products. In the present study, the reaction coordinate (ξ) was chosen as:(1)ξ=d(Oleaving−P)−d(Oattacking−P)
+The FEPs were constructed by performing constant velocity MSMD simulations (i.e., stiff string approximation), and using Jarzynski’s equality (Jarzynski, 1997), which relates equilibrium free-energy values with the irreversible work performed over the system along a user defined reaction coordinate that drives the system from reactants to products. In the present study, the reaction coordinate (ξ) was chosen as:
+
+$$
+ξ=d(O_{leaving}−P)−d(O_{attacking}−P)
+$$
 
 Calculations were performed using a force constant of 300 kcal/mol/Å and pulling velocities of 0.05 Å ps−1. To reconstruct the FEP of the phosphate transfer reaction, two sets of at least 10 SMD runs were performed starting from equilibrated QM/MM MD structures corresponding to either the system in (1) the Adk/ADP–ADP state (presently defined as forward reaction), and (2) the Adk/ATP–AMP state (backward reaction). Each set of work profiles was used to obtain the corresponding forward and backward FEPs with Jarzynski’s equality (Jarzynski, 1997), and finally the two profiles were combined to obtain the complete curve. Since when using MSMD in combination with Jarzynski’s inequality, the system starts from equilibrium conditions and is driven along the RC further from equilibrium as the reaction proceeds, and therefore the FEP estimate increasingly overestimates the real FEP. The best way to combine forward and backward reactions is performed by keeping the initial segment (and thus lower) FEP of each forward and backward reaction estimates. This strategy was successfully used to obtain enzymatic reaction FEPs in previous works (Crespo et al., 2005; Defelipe et al., 2015).
 
 Along the present work, the ADP in the ATP-lid will be called as AD(T)P and the other, in the AMP-lid, as AD(M)P. The reaction involves the two P–O bonds, one forming and the another breaking, the two bonds sharing the same phosphorus atom from the transferring phosphate (Figure 1B). In the former, an oxygen atom of the AD(T)P reacts and we will name it as Oattacking. The breaking bond is described by the oxygen atom for the AD(M)P and it will be called Oleaving.
 
-## Higher-level DFT(PBE) free-energy calculations
+### Higher-level DFT(PBE) free-energy calculations
 
 The FEP of the ADK with Mg2+ was also computed using a higher level of theory. Here, the QM system was described with PBE functional (Perdew et al., 1996) using a DZVP basis set as implemented in the GPU-based code LIO that works with amber (Nitsche et al., 2014). To take advantage of previous DFTB sampling, five lowest work versus RC profiles of the forward and backward reactions were selected, and segmented in 10 windows or stages. For each window, the FEP at the DFT(PBE) level was computed using SMD with a steering velocity of 0.05 Å/ps. Windows were combined to obtain both forward and backward FEP and the final profile was obtained by joining them. Details of the staged strategy can be found in references (Ozer et al., 2010; Ozer et al., 2012; Ganguly et al., 2020).
 
-## Commitment analysis
+### Commitment analysis
 
 To verify the true nature of the observed TS we performed a commitment analysis. We first selected 20 structures for each of 11 points along the RC in the TS region (every 0.1 Å from −0.6 to 0.6 Å on the RC). Structures were equilibrated at the corresponding RC position for 5 ps using a harmonic restrain potential of 300 kcal/mol/Å. From the final equilibrated structure, we used the modified Berendsen thermostat (Bussi et al., 2007) to assign random initial velocities, and performed 10 non-restrained simulations. Each simulation was followed and determined whether it reached the reactants or products. Finally, the resulting probability (estimated from the observed frequency) to reach product for each point along the RC was computed.
 
-## Umbrella sampling simulations
+### Umbrella sampling simulations
 
 Finally, to avoid possible bias due to the use of MSMD to obtain the FEP, we also computed the corresponding profile using umbrella sampling. The initial structures for each window were randomly selected from the lowest work MSMD trajectories along the RC. The force constant for the harmonic restraint was set to 300 kcal/mol/Å2, ensuring sufficient confinement without inducing artificial behavior. Windows were separated every 0.1 Å along the whole RC. Each window simulation started with a equilibration run of 60 ps at NPT condition, followed by sampling over a production run of 40 ps, with coordinates recorded at 1 ps intervals and the reaction coordinate values every 1 fs. Simulations were performed at the previously described SCC-DFTB level of theory. The weighted histogram analysis method was employed to reconstruct the free-energy landscape from the individual window simulations (Kumar et al., 1992; Grossfield, 2010).
 
-## Principal component analysis
+### Principal component analysis
 
 One single trajectory containing the TSE structures of MSMD and umbrella sampling was created by aligning the atoms of the P–Oleaving and P–Oattacking to a reference. The reference was the reactant structure (ADP/ADP). This was done in order to compare the TSEs using the same coordinate system. The principal component analysis was calculated over the transferring phosphate atoms, Mg2+ ion, Pα and O3α atoms from AD(M)P and Pβ and O3β atoms from AD(T)P. Those atoms were selected because they are directly involved in the chemical reaction.
 
-## Steady-state kinetics measurements
+### Steady-state kinetics measurements
 
 Steady-state kinetics measurements for A. aeolicus Adk (Adk) were performed at different pH values in the absence of divalent metals (using 50 mM of EDTA) and the presence of Mg2+ or Ca2+. In all cases, the reaction was started by the addition of 8 mM ADP and saturating metal concentrations were used if applicable (32 mM at pH 5 and 8 mM at pH 7 and 9, respectively). The enzyme concentration varied between 30 nM and 200 μM depending on the rate of interconversion; measurements were collected at 25°C. The amount of product was quantified with high-pressure liquid chromatography (HPLC). Protein precipitated by quench (30% Trichloroacetic acid,TCA, + 6 M HCl mixture) was separated with Spin-X centrifugal tube filters (Costar), filtered supernatant was diluted to avoid HPLC detector saturation, and the pH was brought to 6.0 to achieve optimal separation. The samples were analyzed on an HPLC system (Agilent Infinity 1260) with a high-precision autosampler (injection error <0.1 μl) and analytical HPLC column ACE (i.d. 2.4 mm, length 250 mm, C18-AR, 5 Å pore size) and separated with isocratic elution with potassium phosphate mobile phase (100 mM, pH 6.1). The observed rate constants were determined from 8 to 15 data points for each temperature and/or pH value using initial rate analysis. The values and uncertainties (SD) shown in Figure 5 and Table 2 were determined from least-squares linear regression. Similarly, values and uncertainties (SD) of ΔH‡ and ΔS‡ were extracted from linear regression of the data points presented in Figure 5A.
 
-## Temperature dependence of catalysis and mutant activity
+### Temperature dependence of catalysis and mutant activity
 
 Experiments were essentially performed as described previously (Kerns et al., 2015) and above. In short, the steady-state kinetics measurements were collected at temperatures between 20 and 60°C for the temperature dependency and at 25°C for the mutants. For the temperature dependence, the samples contained 4 mM ADP and equimolar (with nucleotide) concentrations of calcium or 50 mM EDTA. The enzyme concentration was varied between 50 nM to 1 μM (with Ca2+) and 100 to 200 μM (with EDTA); buffer was 100 mM HEPES, pH 7.0, and 80 mM KCl. The amount of product produced over time (10–16 min) was quantified with HPLC and observed rates were extracted as described above. A similar approach was used for the Arg-to-Lys Aadk mutants, where the reaction was measured in both directions starting with either 4 mM ADP or ATP/AMP and equimolar (with nucleotide) concentrations of Mg2+.

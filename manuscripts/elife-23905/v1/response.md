@@ -73,9 +73,7 @@ We agree with reviewer that the third figure might be misleading. We now exclude
 
 8) Methods section 8.2: Binding measurement using isothermal titration calorimetry (ITC). Why was a titration of buffer into RavZ used to measure background? Titration of buffer into LC3 or LIR2 peptide into buffer would be logical choices to control for background. Also, it would be good to show the thermograms and isotherms in Figure 4—figure supplement 1.
 
-It was a typo. It should be “LC3”. We have now corrected it. The experiments were done in triplicates (Author response image 1). We include one of the ITC data in Figure 4—figure supplementary 1D.10.7554/eLife.23905.023Author response image 1.Interaction analysis of LIR II with LC3 using ITC technique.DOI: http://dx.doi.org/10.7554/eLife.23905.023
-
-DOI: http://dx.doi.org/10.7554/eLife.23905.023
+It was a typo. It should be “LC3”. We have now corrected it. The experiments were done in triplicates (Author response image 1). We include one of the ITC data in Figure 4—figure supplementary 1D.10.7554/eLife.23905.023Author response image 1.Interaction analysis of LIR II with LC3 using ITC technique.
 
 9) In the section "RavZ extracts LC3-PE from membranes" the reader does not know that membranes are being tested unless they read the methods. Be more explicit in the explanation of your experiments.
 
@@ -85,11 +83,7 @@ We have now added some experimental details: “The membrane fraction of cells w
 
 We agree with the reviewers’ comment. We have now performed microscale thermophoresis (MST) measurements to compare the direct interaction of RavZ with LC3-PE and LC3. To make LC3-PE soluble in solution without detergent, MBP tag was left intact. The measurements showed that RavZC258A binds to MBP-LC3-PE and MBP-LC31-119 with dissociation constants (Kd) of 23 ± 4 nM and 69 ± 5 nM, respectively, which suggests that RavZ binds to lipidated LC3 in 3 times higher affinity than unlipidated LC3. Therefore, the thermodynamic driving force for RavZ extraction is modest but still favorable. We have now added the discussion in the text.
 
-It should be noted that the function of the LBS has been demonstrated by in vitro and in vivo cleavage and extraction assay (Figure 3—figure supplementary 1C, 1D, Figure 6).10.7554/eLife.23905.024Author response image 2.MST measurements of binding of RavZ(C258A) with MBP-LC31-119 (4 replicated experiments).DOI: http://dx.doi.org/10.7554/eLife.23905.02410.7554/eLife.23905.025Author response image 3.MST measurments of binding of RavZ(C258A) with MBP-LC3-PE (4 replicated experiments).DOI: http://dx.doi.org/10.7554/eLife.23905.025
-
-DOI: http://dx.doi.org/10.7554/eLife.23905.024
-
-DOI: http://dx.doi.org/10.7554/eLife.23905.025
+It should be noted that the function of the LBS has been demonstrated by in vitro and in vivo cleavage and extraction assay (Figure 3—figure supplementary 1C, 1D, Figure 6).10.7554/eLife.23905.024Author response image 2.MST measurements of binding of RavZ(C258A) with MBP-LC31-119 (4 replicated experiments).10.7554/eLife.23905.025Author response image 3.MST measurments of binding of RavZ(C258A) with MBP-LC3-PE (4 replicated experiments).
 
 Title:
 

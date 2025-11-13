@@ -15,9 +15,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00088z429 Laboratory of Medical Pharmaceutics, Kobe Pharmaceutical University Kobe Japan
-2. https://ror.org/03tgsfw79 Division of Cardiovascular Medicine, Department of Internal Medicine, Kobe University Graduate School of Medicine Kobe Japan
-3. https://ror.org/05kt9ap64 Division of Chemotherapy, Faculty of Pharmacy, Kindai University Higashi-osaka Japan
+1. Laboratory of Medical Pharmaceutics, Kobe Pharmaceutical University Kobe Japan ([ROR:00088z429](https://ror.org/00088z429))
+2. Division of Cardiovascular Medicine, Department of Internal Medicine, Kobe University Graduate School of Medicine Kobe Japan ([ROR:03tgsfw79](https://ror.org/03tgsfw79))
+3. Division of Chemotherapy, Faculty of Pharmacy, Kindai University Higashi-osaka Japan ([ROR:05kt9ap64](https://ror.org/05kt9ap64))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ Here, we investigated the role of CCR4 in the development of early atherosclerot
 
 ## Results
 
-## CCR4 is predominantly expressed on CD4+Foxp3+ Tregs, and the ligands CCL17 and CCL22 are expressed in peripheral LNs and atherosclerotic lesions
+### CCR4 is predominantly expressed on CD4+Foxp3+ Tregs, and the ligands CCL17 and CCL22 are expressed in peripheral LNs and atherosclerotic lesions
 
 To evaluate the expression levels of CCR4 on CD4+ T cells under normocholesterolemic or hypercholesterolemic conditions, we performed flow cytometric analysis of peripheral LNs, spleen, and para-aortic LNs from wild-type, Apoe-/-, and Ccr4-/-Apoe-/- mice. Notably, CCR4 expression was expressed on approximately 15–25% of CD4+Foxp3+ Tregs from wild-type or Apoe-/- mice (Appendix 1—figure 1A–C), while CD4+Foxp3- non-Tregs from these mice expressed CCR4 at markedly lower levels, suggesting that CCR4 is predominantly expressed on CD4+Foxp3+ Tregs and that hypercholesterolemia does not affect CCR4 expression. We also examined CCR4 expression on CD4+Foxp3+ Tregs in the atherosclerotic aorta of Apoe-/- mice and consistently found that CCR4 expression in CD4+Foxp3+ Tregs was much higher than that in CD4+Foxp3- non-Tregs (Appendix 1—figure 1D).
 
@@ -45,21 +45,77 @@ As CCL17 and CCL22, known as specific ligands for CCR4, are highly expressed by 
 
 Together, these findings suggest that Tregs may migrate to peripheral LNs and atherosclerotic lesions partly via the CCL17/CCL22–CCR4 axes under hypercholesterolemia.
 
-## CCR4 deficiency accelerates the development of early atherosclerotic lesions characterized by an inflammatory plaque phenotype
+### CCR4 deficiency accelerates the development of early atherosclerotic lesions characterized by an inflammatory plaque phenotype
 
 To investigate the effect of CCR4 deficiency on the development of early atherosclerosis, we analyzed the atherosclerotic lesions of 18-week-old Apoe-/- and Ccr4-/-Apoe-/- mice fed a standard chow diet. Ccr4-/-Apoe-/- mice developed normally without any spontaneous inflammatory disease. Notably, compared with Apoe-/- mice, Ccr4-/-Apoe-/- mice exhibited a significant increase in atherosclerotic lesion size in the aortic sinus (aortic sinus mean plaque area: control Apoe-/- mice: 1.46±0.50×105 μm2 versus Ccr4-/-Apoe-/-: 2.04±0.82 × 105 μm2, p<0.05; Figure 1A). In parallel with the cross-sectional studies, we performed en face analysis of thoracoabdominal aortas, revealing no significant difference in aortic plaque burden between the two groups (Figure 1B). There were no significant differences in body weight or plasma lipid profile between the two groups (Table 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig1-v1.jpg)
 
-**Figure 1.:** (A) Representative photomicrographs of Oil Red O staining and quantitative analysis of atherosclerotic lesion area at five different levels and the average area in the aortic sinus of 18-week-old apolipoprotein E-deficient (Apoe-/-) mice (n=24) or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-; n=23). (B) Representative photomicrographs of Oil Red O staining and quantitative analysis of atherosclerotic lesion area in the aorta of 18-week-old Apoe-/- (n=15) or Ccr4-/-Apoe-/- mice (n=15). (C–E) Representative sections and quantitative analyses of MOMA-2+ macrophages (C), CD4+ T cells (D), and collagen (E) in the aortic sinus. Arrowheads indicate the CD4+ T cells. n=10 per group. (F) mRNA expression of pro- or anti-inflammatory cytokines and helper T cell-associated transcription factors in aorta. The expression levels of the target genes were normalized so that the mean values in Apoe-/- mice were set to 1. n=8–10 per group. Eighteen-week-old Apoe-/- or Ccr4-/-Apoe-/- mice were used for all experiments. Black bars represent 50, 200, or 500 μm as described. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; Mann–Whitney U-test: (A) and (F) l1b; two-tailed Student’s t-test: (C–F) Il6, Tbx21, and Rorc.Figure 1—source data 1.Figure 1 plots.
+**Figure 1.:** (A) Representative photomicrographs of Oil Red O staining and quantitative analysis of atherosclerotic lesion area at five different levels and the average area in the aortic sinus of 18-week-old apolipoprotein E-deficient (Apoe-/-) mice (n=24) or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-; n=23). (B) Representative photomicrographs of Oil Red O staining and quantitative analysis of atherosclerotic lesion area in the aorta of 18-week-old Apoe-/- (n=15) or Ccr4-/-Apoe-/- mice (n=15). (C–E) Representative sections and quantitative analyses of MOMA-2+ macrophages (C), CD4+ T cells (D), and collagen (E) in the aortic sinus. Arrowheads indicate the CD4+ T cells. n=10 per group. (F) mRNA expression of pro- or anti-inflammatory cytokines and helper T cell-associated transcription factors in aorta. The expression levels of the target genes were normalized so that the mean values in Apoe-/- mice were set to 1. n=8–10 per group. Eighteen-week-old Apoe-/- or Ccr4-/-Apoe-/- mice were used for all experiments. Black bars represent 50, 200, or 500 μm as described. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; Mann–Whitney U-test: (A) and (F) l1b; two-tailed Student’s t-test: (C–F) Il6, Tbx21, and Rorc.
+
+**Table 1.**
+ Body weight and plasma lipid profile in 18-week-old mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Apoe-/-</th>
+      <th>Ccr4-/-Apoe-/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body weight (g)</td>
+      <td>31.76±1.94 (n=27)</td>
+      <td>31.69±2.24 (n=27)</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol (mg/dL)</td>
+      <td>526.5±146.3 (n=10)</td>
+      <td>520.4±150.6 (n=10)</td>
+    </tr>
+    <tr>
+      <td>High-density lipoprotein-cholesterol (mg/dL)</td>
+      <td>24.90±6.49 (n=10)</td>
+      <td>19.80±5.87 (n=10)</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>89.70±21.07 (n=10)</td>
+      <td>86.40±39.58 (n=10)</td>
+    </tr>
+  </tbody>
+</table>
 
 To determine the effect of CCR4 deficiency on plaque components, we performed immunohistochemical studies of atherosclerotic lesions in the aortic sinus. Notably, compared with those of Apoe-/- mice, the atherosclerotic lesions of Ccr4-/-Apoe-/- mice showed a 20% increase in macrophage accumulation (Figure 1C) and a marked 42% increase in CD4+ T cell infiltration (Figure 1D). In addition, we performed immunohistochemical analysis of Foxp3+ Tregs in atherosclerotic lesions using an anti-Foxp3 antibody. However, few Foxp3+ Tregs were found within the plaques of Apoe-/- or Ccr4-/-Apoe-/- mice (data not shown). The proportion of collagen in the aortic sinus plaques of Ccr4-/-Apoe-/- mice was significantly lower than that in the aortic sinus plaques of Apoe-/- mice (Figure 1E). These findings on atherosclerotic plaque size and components collectively suggest that CCR4 plays a role in preventing the development of early atherosclerotic lesions and inducing a less inflammatory plaque phenotype. To further evaluate aortic immunoinflammatory responses, we analyzed the mRNA expression of pro- and anti-inflammatory cytokines and transcription factors specific for Tregs or helper T cell subsets in atherosclerotic aorta by quantitative reverse transcription PCR. The mRNA expression of proinflammatory cytokines (Il1b and Il6), Th1-related Tbx21, and Th17-related Rorc was markedly upregulated in the aorta of Ccr4-/-Apoe-/- mice, indicating augmented proatherogenic immune responses in the atherosclerotic aorta (Figure 1F). The mRNA expression of the Treg-specific transcription factor Foxp3 was undetectable.
 
 Collectively, these data suggest that CCR4 deficiency promotes the accumulation of inflammatory cells and proinflammatory immune responses in the aorta, leading to augmented development of early atherosclerotic lesions in the aortic root.
 
-## CCR4 deficiency augments Teff immune responses in peripheral lymphoid tissues
+### CCR4 deficiency augments Teff immune responses in peripheral lymphoid tissues
 
 We examined the mechanisms by which CCR4 deficiency accelerates early atherosclerosis by focusing on changes in systemic T cell responses, including those involving CD4+Foxp3+ Tregs and CD4+Foxp3- non-Tregs, in peripheral lymphoid tissues. The frequencies of CD4+Foxp3+ Tregs and CD4+CD44highCD62Llow effector memory T cells were significantly higher in the spleen of 8- or 18-week-old Ccr4-/-Apoe-/- mice than in those of age-matched Apoe-/- mice (Figure 2A and B). A similar tendency was observed for the peripheral LNs of these mice, although there was no difference in the frequency of CD4+CD44highCD62Llow effector memory T cells between 8-week-old Apoe-/- and Ccr4-/-Apoe-/- mice (Figure 2A and B). The absolute numbers of CD4+Foxp3+ Tregs and CD4+CD44highCD62Llow effector memory T cells were significantly higher in the peripheral LNs of 8- or 18-week-old Ccr4-/-Apoe-/- mice than those of age-matched Apoe-/- mice (Figure 2A and B). The absolute number of CD4+CD44highCD62Llow effector memory T cells was also higher in the spleen of 18-week-old Ccr4-/-Apoe-/- mice than that of age-matched Apoe-/- mice (Figure 2B). Similar results were obtained for normocholesterolemic wild-type mice (Figure 2—figure supplement 1A and B), suggesting that the expansion of Tregs and effector memory T cells in Ccr4-/-Apoe-/- mice is independent of hypercholesterolemia. We evaluated the proliferative capacity of CD4+Foxp3+ Tregs and CD4+Foxp3- non-Tregs by analyzing Ki-67 expression using flow cytometry and found that the proportions of Ki-67-positive Tregs and non-Tregs were markedly higher in the peripheral LNs and spleen of Ccr4-/-Apoe-/- mice than in those of Apoe-/- mice (Figure 2C and D). To determine the effect of CCR4 deficiency on T cell development in the thymus, we performed flow cytometric analysis of thymocytes from 4-week-old Apoe-/- or Ccr4-/-Apoe-/- mice and found no difference in the development of thymic T cells between the two groups (Figure 2—figure supplement 2A). In line with a previous report in normocholesterolemic mice (Lee et al., 2005), there was no difference in the frequency of thymic CD4+Foxp3+ Tregs between the two groups (Figure 2—figure supplement 2B). These data indicate that the increased numbers of CD4+Foxp3+ Tregs and CD4+Foxp3- non-Tregs in peripheral LNs are due to their enhanced proliferative capacity but not to their promoted development in the thymus. We also analyzed other immune cells in the spleen of Apoe-/- and Ccr4-/-Apoe-/- mice by flow cytometry and found no major differences in the proportions or activation-associated molecule expression between the two groups, except for CD86 expression on DCs which was upregulated in Ccr4-/-Apoe-/- mice (Figure 2—figure supplement 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Representative flow cytometric analysis of CD4+ forkhead box P3 (Foxp3)+ regulatory T cells (Tregs) (A) and CD4+CD44highCD62Llow effector memory T cells (B) in the spleen of 8-week-old apolipoprotein E-deficient (Apoe-/-) mice or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-). The graphs represent the total numbers and proportions of CD4+Foxp3+ Tregs (A) and CD4+CD44highCD62Llow effector memory T cells (B) in the peripheral lymph nodes (LNs) and spleen of 8- or 18- week-old Apoe-/- or Ccr4-/-Apoe-/- mice. n=9–10 per group. (C, D) The graphs represent the proportions of Ki-67-positive cells among CD4+Foxp3+ Tregs (C) and CD4+Foxp3- non-Tregs (D) in the peripheral LNs and spleen of 8-week-old Apoe-/- or Ccr4-/-Apoe-/- mice, as assessed by flow cytometry. n=13 per group. (E) Expression levels of activation-associated molecules cytotoxic T lymphocyte-associated antigen-4 (CTLA-4) and CD103 were analyzed by gating on CD4+Foxp3+ Tregs in the peripheral LNs of 8- or 18-week-old Apoe-/- or Ccr4-/-Apoe-/- mice. n=9–10 per group. (F) mRNA expression of Treg-associated markers in splenic Tregs from 8-week-old Apoe-/- or Ccr4-/-Apoe-/- mice. n=8 per group. (G) Expression levels of activation-associated molecules CTLA-4 and CD103 were analyzed by gating on CD4+Foxp3- non-Tregs in the peripheral LNs of 8- or 18-week-old Apoe-/- or Ccr4-/-Apoe-/- mice. n=9–10 per group. (H) mRNA expression of activation-associated molecules in splenic non-Tregs from 8-week-old Apoe-/- or Ccr4-/-Apoe-/- mice. n=8 per group. The expression levels of the target genes were normalized so that the mean values in Apoe-/- mice were set to 1 (F, H). Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; Mann–Whitney U-test: (A) second (8w) from the left, (B) second (8w) and third (8w) from the left, (C, left, and H) Cd44 and Cd103; two-tailed Student’s t-test: (A) first, second (18w), and third from the left, (B) first, second (18w), third (18w), and fourth from the left, (C, right, D, E, G, and H) Ctla4. MFI, mean fluorescence intensity.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Representative flow cytometric analysis of CD4+Foxp3+ Tregs (A) and CD4+CD44highCD62Llow effector memory T cells (B) in the peripheral lymph nodes (LNs) and spleen of 8-week-old wild-type or Ccr4-/- mice. The graphs represent the total numbers and proportions of CD4+Foxp3+ Tregs (A) and CD4+CD44highCD62Llow effector memory T cells (B) in the peripheral LNs and spleen. n=5–6 per group. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; Mann–Whitney U-test: (B) second and third from the left; two-tailed Student’s t-test: (A, B) fourth from the left.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Lymphoid cells from the thymus of 4-week-old Apoe-/- or Ccr4-/-Apoe-/- mice were prepared. (A) Representative flow cytometric analysis of CD4 and CD8 expression in thymocytes. The graphs represent the numbers and proportions of CD4/CD8 double-positive (CD4+CD8+), CD4 single-positive (CD4+), and CD8 single-positive (CD8+) T cells among thymocytes. (B) Representative flow cytometric analysis of Foxp3 expression among the TCR-β+CD4+CD8- population. The graph represents the proportion of Foxp3+ Tregs among the TCR-β+CD4+CD8- population. n=6 per group. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Proportions of splenic CD8+ T cells, B220+ B cells, CD11b+Ly6G+ neutrophils, CD11b+Ly6Chigh monocytes, NK cells, NKT cells, and CD11c+MHC-II+ DCs, and the expression of CD80 and CD86 on CD11c+MHC-II+ DCs in 8-week-old Apoe-/- or Ccr4-/-Apoe-/- mice were determined by flow cytometry. n=5 per group. Data are representative of two independent experiments. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. **p<0.01; two-tailed Student’s t-test. MFI, mean fluorescence intensity.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** mRNA expression of chemokine receptors in splenic Tregs (A) and non-Tregs (B) from 8-week-old Apoe-/- or Ccr4-/-Apoe-/- mice. The expression levels of the target genes were normalized so that the mean values in Apoe-/- mice were set to 1. n=8 per group. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. **p<0.01; Mann–Whitney U-test: (B) top first and third from the left and bottom third from the left; two-tailed Student’s t-test: (B) bottom first and second from the left. ND, not detected.
 
 To determine the activation and function of CCR4-deficient CD4+Foxp3+ Tregs, we investigated the expression of their activation- and function-associated molecules in the peripheral LNs of 8- or 18-week-old Apoe-/- or Ccr4-/-Apoe-/- mice by flow cytometry. Notably, CCR4 deficiency had no major effect on the expression of cytotoxic T lymphocyte-associated antigen-4 (CTLA-4) or CD103 in CD4+Foxp3+ Tregs (Figure 2E). We also analyzed the mRNA expression of Ccr4, activation- or function-associated molecules (Foxp3, Ctla4, Cd103, Tnfrsf18, Il10, and Tgfb), and major chemokine receptors (Ccr5, Ccr6, Ccr7, and Ccr8) in splenic Tregs by quantitative reverse transcription PCR. The Ccr4 mRNA expression in Tregs from Ccr4-/-Apoe-/- mice was less than the detectable levels (Figure 2—figure supplement 4A). In line with the data on peripheral LNs, there were no significant differences in the mRNA expression of these molecules between the two groups (Figure 2F, Figure 2—figure supplement 4A).
 
@@ -67,19 +123,31 @@ In contrast to the results on CD4+Foxp3+ Tregs, the expression of the activation
 
 Considering the accelerated early atherosclerosis observed in Ccr4-/-Apoe-/- mice, these results indicate that augmented Teff immune responses may affect atherosclerosis more strongly than the increase in Tregs in peripheral lymphoid tissues.
 
-## CCR4 deficiency promotes proinflammatory CD4+ T cell immune responses in peripheral lymphoid tissues
+### CCR4 deficiency promotes proinflammatory CD4+ T cell immune responses in peripheral lymphoid tissues
 
 To determine whether CCR4 deficiency affects CD4+ T cell immune responses and polarization, we examined cytokine secretion from CD4+ T cells by intracellular cytokine staining. The fraction of IFN-γ-producing Th1 cells in the peripheral LNs was significantly higher in Ccr4-/-Apoe-/- mice than in Apoe-/- mice, while there were no differences in the fractions of other CD4+ T cell subsets including interleukin (IL)-4-producing Th2 cells, IL-10-producing CD4+ T cells, and IL-17-producing Th17 cells between the two groups (Figure 3A). In line with this, the fraction of splenic Th1 cells was higher in Ccr4-/-Apoe-/- mice than in Apoe-/- mice, although the proportion of IL-17-producing Th17 cells was also higher in Ccr4-/-Apoe-/- mice than in Apoe-/- mice (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig3-v1.jpg)
 
-**Figure 3.:** + T cell immune responses in peripheral lymphoid tissues.(A, B) The graphs represent the frequencies of interferon (IFN)-γ+, interleukin (IL)–4+, IL-10+, and IL-17+ CD4+ T cells in the peripheral lymph nodes (LNs) (A) and spleen (B) of 8-week-old apolipoprotein E-deficient (Apoe-/-) mice or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-). n=10–11 per group. (C, D) Purified splenic CD4+ T cells from 8-week-old Apoe-/- or Ccr4-/-Apoe-/- mice were stimulated with plate-bound anti-CD3 and soluble anti-CD28 antibodies in vitro. The levels of various cytokines and chemokines in pooled cell supernatants from eight mice in each group were determined semiquantitatively by a cytokine array kit (C). Data are representative of two independent experiments. Cytokine concentrations in the cell supernatants were measured by ELISA (D). n=8 per group. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; Mann–Whitney U-test: (A, B) first from the left, and (D) second from the left; two-tailed Student’s t-test: (B) fourth from the left and (D) first, third, and fourth from the left.Figure 3—source data 1.Figure 3 plots.
+**Figure 3.:** (A, B) The graphs represent the frequencies of interferon (IFN)-γ+, interleukin (IL)–4+, IL-10+, and IL-17+ CD4+ T cells in the peripheral lymph nodes (LNs) (A) and spleen (B) of 8-week-old apolipoprotein E-deficient (Apoe-/-) mice or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-). n=10–11 per group. (C, D) Purified splenic CD4+ T cells from 8-week-old Apoe-/- or Ccr4-/-Apoe-/- mice were stimulated with plate-bound anti-CD3 and soluble anti-CD28 antibodies in vitro. The levels of various cytokines and chemokines in pooled cell supernatants from eight mice in each group were determined semiquantitatively by a cytokine array kit (C). Data are representative of two independent experiments. Cytokine concentrations in the cell supernatants were measured by ELISA (D). n=8 per group. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; Mann–Whitney U-test: (A, B) first from the left, and (D) second from the left; two-tailed Student’s t-test: (B) fourth from the left and (D) first, third, and fourth from the left.
 
 We semiquantitatively analyzed the production of various cytokines or chemokines by splenic CD4+ T cells stimulated with plate-bound anti-CD3 and anti-CD28 antibodies using a cytokine array kit. Compared with those from Apoe-/- mice, splenic CD4+ T cells from Ccr4-/-Apoe-/- mice secreted more Th1-related cytokine IFN-γ, Th2-related cytokine IL-13, Th17-related cytokine IL-17, and various inflammation-related cytokines and chemokines (Figure 3C). ELISA analysis confirmed that the IFN-γ and IL-17 levels in the cell supernatants of Ccr4-/-Apoe-/- mice were much higher than those in the cell supernatants of Apoe-/- mice (Figure 3D). Although the cytokine levels of Th2-related cytokine IL-4 and Treg-related anti-inflammatory cytokine IL-10 were below the detectable levels by cytokine array analysis, ELISA analysis revealed higher IL-4 and IL-10 production in splenic CD4+ T cells from Ccr4-/-Apoe-/- mice than in those from Apoe-/- mice (Figure 3D), which may be compensatory immune responses to the proinflammatory T cell responses caused by CCR4 deficiency.
 
-## CCR4 deficiency promotes Th1 cell responses in para-aortic LNs and atherosclerotic aorta
+### CCR4 deficiency promotes Th1 cell responses in para-aortic LNs and atherosclerotic aorta
 
 Next, we investigated the mechanisms by which CCR4 deficiency accelerates early atherosclerosis by focusing on local immune responses in para-aortic LNs and atherosclerotic aorta. Consistent with the peripheral LN data, the frequency and number of CD4+Foxp3+ Tregs were significantly higher in the para-aortic LNs of Ccr4-/-Apoe-/- mice than in those of Apoe-/- mice (Figure 4A). The number of CD4+CD44highCD62Llow effector memory T cells was significantly higher in the para-aortic LNs of Ccr4-/-Apoe-/- mice than in those of Apoe-/- mice, while their frequency did not differ between the two groups (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Representative flow cytometric analysis of CD4+ forkhead box P3 (Foxp3)+ regulatory T cells (Tregs) (A) and CD4+CD44highCD62Llow effector memory T cells (B) in para-aortic LNs. The graphs represent the total numbers and proportions of CD4+Foxp3+ Tregs (A) and CD4+CD44highCD62Llow effector memory T cells (B) in para-aortic LNs. n=9–10 per group. (C, D) mRNA expression of Treg-associated markers in Tregs (C) and mRNA expression of activation or helper T cell-associated molecules in non-Tregs (D) in para-aortic LNs. The expression levels of the target genes were normalized so that the mean values in apolipoprotein E-deficient (Apoe-/-) mice were set to 1. Tregs or non-Tregs purified from pooled para-aortic LNs of 9–10 mice were analyzed as a sample. n=4 per group. (E) The graphs represent the frequencies of interferon (IFN)-γ+, interleukin (IL)–4+, IL-10+, and IL-17+ CD4+ T cells in para-aortic LNs. n=12 per group. (F–H) Representative flow cytometric analysis of T-box expressed in T cells (T-bet) (F), GATA3 (G), and retinoic acid-related orphan receptor gamma t (RORγt) (H) expression in aortic CD3+CD4+CD45+ T cells. The graphs represent the frequencies of T-bet+ (F), GATA3+ (G), and RORγt+ (H) cells among aortic CD3+CD4+CD45+ T cells. n=9 per group. (I) Representative flow cytometric analysis of Foxp3 expression in aortic CD3+CD4+CD45+ T cells. The graph represents the frequency of Foxp3+ Tregs among aortic CD3+CD4+CD45+ T cells. n=9 per group. (J) The graph represents the ratio of CD4+T-bet+ Th1 cells to CD4+Foxp3+ Tregs (Th1 cell/Treg ratio). n=9 per group. Pooled aortic lymphoid cells from two mice were analyzed as a sample. Eighteen-week-old Apoe-/- or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-) were used for all experiments. Data points represent individual animals (A, B, and E) or individual pooled samples (C, D, F–J). Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; Mann–Whitney U-test: (D) Cd103 and (J); two-tailed Student’s t-test: (A, B, D) Tbx21, (E, F).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Expression levels of CTLA-4, CD103, and PD-1 were analyzed by gating on CD4+Foxp3+ Tregs in the para-aortic LNs of 18-week-old Apoe-/- or Ccr4-/-Apoe-/- mice. n=9–10 per group. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. MFI, mean fluorescence intensity.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** mRNA expression of chemokine receptors in Tregs (A) and non-Tregs (B) in the para-aortic LNs of 18-week-old Apoe-/- or Ccr4-/-Apoe-/- mice. The expression levels of the target genes were normalized so that the mean values in Apoe-/- mice were set to 1. Tregs or non-Tregs purified from pooled para-aortic LNs of 9–10 mice were analyzed as a sample. n=4 per group. Data points represent individual pooled samples. Horizontal bars represent means. Error bars indicate s.d.
 
 In line with the data on peripheral lymphoid tissues, there were no significant differences in the expression of activation- or function-associated molecules or chemokine receptors in para-aortic LN Tregs between the two groups (Figure 4C, Figure 4—figure supplements 1 and 2A). Notably, the expression of Cd103 and Th1-related Tbx21 was upregulated in para-aortic LN non-Tregs from Ccr4-/-Apoe-/- mice, while the expression of other activation- or helper T cell-associated molecules or chemokine receptors was unaltered (Figure 4D, Figure 4—figure supplement 2B). Flow cytometric analysis of helper T cell subsets in para-aortic LNs revealed that the fractions of IFN-γ-producing Th1 cells, IL-4-producing Th2 cells, and IL-17-producing Th17 cells were significantly higher in Ccr4-/-Apoe-/- mice than in Apoe-/- mice, suggesting augmented proinflammatory CD4+ T cell immune responses by CCR4 deficiency (Figure 4E).
 
@@ -87,13 +155,13 @@ We explored the infiltration of T-box expressed in T cells (T-bet)-expressing Th
 
 Collectively, these results suggest that CCR4 deficiency promotes the selective accumulation of proatherogenic Th1 cells in atherosclerotic aorta and the accumulation of various helper T cell subsets including Th1 cells in para-aortic LNs and shifts the Th1 cell/Treg balance toward Th1 cell responses in atherosclerotic aorta, leading to exacerbated aortic inflammation and early atherosclerosis.
 
-## CCR4 expression on Tregs regulates Th1 cell responses and may mediate Treg migration to the atherosclerotic aorta
+### CCR4 expression on Tregs regulates Th1 cell responses and may mediate Treg migration to the atherosclerotic aorta
 
 Given that CCR4 plays a crucial role in attenuating immunoinflammatory responses in autoimmune or allergic disease via the modulation of Treg function (Yuan et al., 2007; Faustino et al., 2013), we speculated that despite the expansion and unaltered expression of activation- or function-associated molecules in Tregs, these cells might be dysfunctional. To determine whether CCR4 deficiency affects the suppressive function of Tregs in hypercholesterolemia, we performed an in vitro suppression assay. Interestingly, CCR4 deficiency significantly impaired the suppressive function of Tregs isolated from hypercholesterolemic mice (Figure 5A), indicating that CCR4 expression on Tregs may be important for the regulation of proinflammatory immune responses and the development of early atherosclerosis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig5-v1.jpg)
 
-**Figure 5.:** (A) The suppressive function of Tregs was assessed by evaluating the proliferation of carboxyfluorescein diacetate succinimidyl ester (CFSE)-labeled conventional T cells (Tconv) cocultured with Tregs from apolipoprotein E-deficient (Apoe-/-) mice or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-). Data are presented as the results of triplicate wells and are representative of two independent experiments. Data are expressed as the mean ± s.d. (B, C) CD80 and CD86 expression in live splenic dendritic cells (DCs) after 2 days of coculture with Tconv from Apoe-/- mice, or a mixture of Tregs from Apoe-/- or Ccr4-/-Apoe-/- mice and Tconv from Apoe-/- mice in the presence of an anti-CD3 antibody. Data points represent the results of quintuplicate wells. Data are representative of two independent experiments. (B, D) Tconv from Apoe-/- mice and DCs were cocultured with or without Tregs from Apoe-/- or Ccr4-/-Apoe-/- mice in the presence of an anti-CD3 antibody. Interferon (IFN)-γ concentrations in cell supernatants were measured by ELISA. Data points represent the results of sextuplicate wells. (E) Eighteen-week-old Apoe-/- mice fed a high-cholesterol diet for 10 weeks received transfer of Tregs from Apoe-/-Kaede-Tg or Ccr4-/-Apoe-/-Kaede-Tg mice, and the accumulation of Kaede+ Tregs in the peripheral lymphoid tissues and aorta was analyzed by flow cytometry 20 hours later. (F–I) Representative flow cytometric analysis and the proportions of Kaede+ Tregs among CD4+ T cells in the peripheral lymph nodes (LNs) (F), spleen (G), para-aortic LNs (H), and aorta (I) of Apoe-/- mice that received Apoe-/-Kaede+ Tregs or Ccr4-/-Apoe-/-Kaede+ Tregs. n=9–10 per group (F–H). Pooled aortic lymphoid cells from five mice in each group were used for analysis. The results are presented as the mean ±s.d. of three independent experiments (I). Data points represent individual animals (F–H) or individual pooled samples (I). Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; one-way ANOVA followed by Tukey’s multiple-comparisons test: (C, D); two-way ANOVA followed by Tukey’s multiple-comparisons test: (A). p=0.09; one-sample t-test: (I). MFI, mean fluorescence intensity.Figure 5—source data 1.Figure 5 plots.
+**Figure 5.:** (A) The suppressive function of Tregs was assessed by evaluating the proliferation of carboxyfluorescein diacetate succinimidyl ester (CFSE)-labeled conventional T cells (Tconv) cocultured with Tregs from apolipoprotein E-deficient (Apoe-/-) mice or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-). Data are presented as the results of triplicate wells and are representative of two independent experiments. Data are expressed as the mean ± s.d. (B, C) CD80 and CD86 expression in live splenic dendritic cells (DCs) after 2 days of coculture with Tconv from Apoe-/- mice, or a mixture of Tregs from Apoe-/- or Ccr4-/-Apoe-/- mice and Tconv from Apoe-/- mice in the presence of an anti-CD3 antibody. Data points represent the results of quintuplicate wells. Data are representative of two independent experiments. (B, D) Tconv from Apoe-/- mice and DCs were cocultured with or without Tregs from Apoe-/- or Ccr4-/-Apoe-/- mice in the presence of an anti-CD3 antibody. Interferon (IFN)-γ concentrations in cell supernatants were measured by ELISA. Data points represent the results of sextuplicate wells. (E) Eighteen-week-old Apoe-/- mice fed a high-cholesterol diet for 10 weeks received transfer of Tregs from Apoe-/-Kaede-Tg or Ccr4-/-Apoe-/-Kaede-Tg mice, and the accumulation of Kaede+ Tregs in the peripheral lymphoid tissues and aorta was analyzed by flow cytometry 20 hours later. (F–I) Representative flow cytometric analysis and the proportions of Kaede+ Tregs among CD4+ T cells in the peripheral lymph nodes (LNs) (F), spleen (G), para-aortic LNs (H), and aorta (I) of Apoe-/- mice that received Apoe-/-Kaede+ Tregs or Ccr4-/-Apoe-/-Kaede+ Tregs. n=9–10 per group (F–H). Pooled aortic lymphoid cells from five mice in each group were used for analysis. The results are presented as the mean ±s.d. of three independent experiments (I). Data points represent individual animals (F–H) or individual pooled samples (I). Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; one-way ANOVA followed by Tukey’s multiple-comparisons test: (C, D); two-way ANOVA followed by Tukey’s multiple-comparisons test: (A). p=0.09; one-sample t-test: (I). MFI, mean fluorescence intensity.
 
 Interaction with DCs is well-known as one of the core suppressive mechanisms by which Tregs control excessive immune responses. A previous report demonstrated that the cell–cell contacts between Tregs and CCL22-deficient DCs are impaired (Rapp et al., 2019). Tregs limit the CD80/CD86–CD28-dependent activation of T cells through CTLA-4-dependent downregulation of CD80 and CD86 expression on DCs (Sakaguchi et al., 2020), which may contribute to the reduction in atherosclerosis (Matsumoto et al., 2016). Therefore, we examined the interactions between CCR4-intact or CCR4-deficient Tregs and DCs by a coculture experiment (Figure 5B). As expected, the upregulation of CD80 and CD86 expression on DCs mediated by conventional T cells was markedly suppressed by coculture with Tregs from Apoe-/- or Ccr4-/-Apoe-/- mice (Figure 5C). Notably, the suppressive effect of CCR4-deficient Tregs was significantly attenuated compared with that of CCR4-intact Tregs (Figure 5C). To assess the involvement of CCR4 expression on Tregs in regulating the production of proatherogenic IFN-γ by conventional T cells, we stimulated conventional T cells with an anti-CD3 antibody and DCs in the presence or absence of CCR4-intact or CCR4-deficient Tregs and analyzed IFN-γ production by ELISA (Figure 5B). IFN-γ production by conventional T cells was markedly suppressed by coculture with CCR4-intact Tregs, while it was not significantly affected by coculture with CCR4-deficient Tregs (Figure 5D). Importantly, there was a marked difference in the ability to suppress the production of IFN-γ from conventional T cells between CCR4-intact Tregs and CCR4-deficient Tregs (Figure 5D). These results suggest that the augmented Th1 cell responses in the peripheral lymphoid tissues of Ccr4-/-Apoe-/- mice are partly due to impaired Treg-dependent regulation of DC function.
 
@@ -101,9 +169,104 @@ As described above, CD4+Foxp3+ Treg accumulation in the atherosclerotic aorta of
 
 Taken together, these data demonstrate that CCR4 expression on Tregs plays a critical role in regulating Th1 cell responses in lymphoid tissues and may mediate Treg migration to the atherosclerotic aorta under hypercholesterolemia, which may cooperatively contribute to the reduction in early atherosclerosis by efficiently mitigating aortic inflammatory immune responses.
 
-## CCR4 expression on Tregs is critical for limiting aortic inflammation and the development of atherosclerosis
+### CCR4 expression on Tregs is critical for limiting aortic inflammation and the development of atherosclerosis
 
 To provide direct evidence for the critical role of CCR4 expression in Tregs in reducing early atherosclerosis, we injected Apoe-/- mice with saline or Tregs from Apoe-/- or Ccr4-/-Apoe-/- mice and analyzed the aortic root atherosclerotic lesions of recipient Apoe-/- mice (Figure 6A). Although there were no significant differences in the aortic sinus mean plaque area among the three groups (Figure 6—figure supplement 1), detailed analysis of the aortic root plaques at five different levels revealed significantly greater lesions in Apoe-/- mice that were administered CCR4-deficient Tregs than in Apoe-/- mice that were administered CCR4-intact Tregs (Figure 6B), suggesting that the impaired CCR4-deficient Treg function is involved in the acceleration of atherosclerosis in Ccr4-/-Apoe-/- mice. There were no significant differences in body weight or plasma lipid profile among the three groups (Table 2). We further aimed to confirm these findings by performing an additional experiment in which recipient Ccr4-/-Apoe-/- mice were administered Tregs from Apoe-/- or Ccr4-/-Apoe-/- mice or PBS and atherosclerotic lesions were analyzed (Figure 6—figure supplement 2A). There were no major differences in body weight or plasma lipid profile among the three groups (Table 3). The anti-atherogenic effect of CCR4 expression in Tregs was not observed in these mice (Figure 6—figure supplement 2B). This could possibly be explained by the dysfunction of Tregs under the enhanced inflammatory conditions in Ccr4-/-Apoe-/- mice.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig6-v1.jpg)
+
+**Figure 6.:** (A) Tregs purified from the peripheral lymph nodes (LNs) and spleen of apolipoprotein E-deficient (Apoe-/-) mice or CCR4-deficient mice on an Apoe-/- background (Ccr4-/-Apoe-/-) were intravenously transferred into 12-week-old Apoe-/- mice fed a standard chow diet, and atherosclerotic lesions were analyzed at 16 weeks of age. As a control without cell transfer, 12-week-old Apoe-/- mice were intravenously injected with saline and atherosclerotic lesions were analyzed at 16 weeks of age. (B) Representative photomicrographs of Oil Red O staining and quantitative analysis of atherosclerotic lesion area at five different levels and maximal lesions in the aortic sinus of Apoe-/- mice injected with saline (n=19), Apoe-/- Tregs (n=17), or Ccr4-/-Apoe-/- Tregs (n=20). (C–E) Representative sections and quantitative analyses of MOMA-2+ macrophages (C), CD4+ T cells (D), and collagen (E) in the aortic sinus of Apoe-/- mice injected with saline, Apoe-/- Tregs, or Ccr4-/-Apoe-/- Tregs. Arrowheads indicate the CD4+ T cells. n=10 per group. Black bars represent 50, 200, or 500 μm as described. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d. *p<0.05, **p<0.01; one-way ANOVA followed by Tukey’s multiple-comparisons test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Quantitative analysis of the mean atherosclerotic lesion area in the aortic sinus of Apoe-/- mice injected with saline (n=19), Apoe-/- Tregs (n=17), or Ccr4-/-Apoe-/- Tregs (n=20). Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/101830/elife-101830-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Tregs purified from the peripheral lymph nodes (LNs) and spleen of Apoe-/- or Ccr4-/-Apoe-/- mice were intravenously transferred into 12-week-old Ccr4-/-Apoe-/- mice fed a standard chow diet, and atherosclerotic lesions were analyzed at 16 weeks of age. As a control without cell transfer, 12-week-old Ccr4-/-Apoe-/- mice were intravenously injected with saline and atherosclerotic lesions were analyzed at 16 weeks of age. (B) Representative photomicrographs of Oil Red O staining and quantitative analysis of atherosclerotic lesion area at five different levels and maximal lesions in the aortic sinus of Ccr4-/-Apoe-/- mice injected with saline (n=19), Apoe-/- Tregs (n=20), or Ccr4-/-Apoe-/- Tregs (n=20). Black bars represent 500 μm as described. Data points represent individual animals. Horizontal bars represent means. Error bars indicate s.d.
+
+**Table 2.**
+ Body weight and plasma lipid profile in Apoe-/- mice treated with saline, Apoe-/- Tregs, or Ccr4-/-Apoe-/- Tregs.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Saline</td>
+      <td>Apoe-/-Treg</td>
+      <td>Ccr4-/-Apoe-/-Treg</td>
+    </tr>
+    <tr>
+      <td>Body weight (g)</td>
+      <td>27.82±2.82 (n=18)</td>
+      <td>27.80±2.42 (n=20)</td>
+      <td>27.72±2.59 (n=19)</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol (mg/dL)</td>
+      <td>505.3±114.0 (n=10)</td>
+      <td>605.5±105.1 (n=10)</td>
+      <td>607.3±76.35 (n=10)</td>
+    </tr>
+    <tr>
+      <td>High-density lipoprotein-cholesterol (mg/dL)</td>
+      <td>15.00±2.87 (n=10)</td>
+      <td>15.20±3.26 (n=10)</td>
+      <td>13.80±4.83 (n=10)</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>87.40±36.69 (n=10)</td>
+      <td>92.70±27.15 (n=10)</td>
+      <td>96.60±33.94 (n=10)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Body weight and plasma lipid profile in Ccr4-/-Apoe-/- mice treated with saline, Apoe-/- Tregs, or Ccr4-/-Apoe-/- Tregs.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Saline</td>
+      <td>Apoe-/-Treg</td>
+      <td>Ccr4-/-Apoe-/-Treg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Body weight (g)</td>
+      <td>32.44±2.75 (n=12)</td>
+      <td>30.69±3.55 (n=12)</td>
+      <td>32.16±2.12 (n=12)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total cholesterol (mg/dL)</td>
+      <td>589.1±144.3 (n=10)</td>
+      <td>616.1±105.6 (n=10)</td>
+      <td>526.4±115.9 (n=10)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>High-density lipoprotein-cholesterol (mg/dL)</td>
+      <td>16.30±3.65 (n=10)</td>
+      <td>13.80±3.19 (n=10)</td>
+      <td>12.10±2.96* (n=10)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>83.0±57.56 (n=10)</td>
+      <td>91.60±55.52 (n=10)</td>
+      <td>72.70±13.99 (n=10)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 To determine the effect of Treg-specific CCR4 deficiency on plaque components, we performed immunohistochemical studies of atherosclerotic lesions in the aortic sinus. Compared with those of saline-injected Apoe-/- mice, the atherosclerotic lesions of Apoe-/- mice injected with CCR4-intact Tregs showed markedly reduced accumulation of macrophages (Figure 6C) and CD4+ T cells (Figure 6D), whereas there were no differences in intraplaque accumulation of these inflammatory cells between saline-injected Apoe-/- mice and Apoe-/- mice injected with CCR4-deficient Tregs (Figure 6C and D). Notably, macrophage accumulation in the aortic sinus atherosclerotic lesions was markedly higher in Apoe-/- mice injected with CCR4-deficient Tregs than in Apoe-/- mice injected with CCR4-intact Tregs (Figure 6C). Collagen content in atherosclerotic lesions was significantly higher in Apoe-/- mice injected with CCR4-intact Tregs than in saline-injected Apoe-/- mice, while no difference in collagen was observed between saline-injected Apoe-/- mice and Apoe-/- mice injected with CCR4-deficient Tregs (Figure 6E).
 
@@ -129,58 +292,708 @@ In conclusion, we demonstrated that CCR4 protects against early atherosclerosis 
 
 ## Methods
 
-## Animals
+### Animals
 
 All mice were male on a C57BL/6 background and fed a standard chow diet or a high-cholesterol diet containing 1.25% cholesterol (CLEA Japan, Tokyo, Japan) as indicated. Wild-type mice were obtained from CLEA Japan. Apoe-/-11 and Ccr4-/- mice (Matsuo et al., 2016) are previously described. We crossed Ccr4-/- mice with Apoe-/- mice to obtain Ccr4-/-Apoe-/- mice. Kaede-Tg mice (RBRC05737) (Tomura et al., 2008) were provided by the RIKEN BRC through the National BioResource Project of the MEXT/AMED, Japan. We housed mice in cages for each strain or treatment group in a specific pathogen-free animal facility at Kobe Pharmaceutical University. Randomization and allocation concealment were performed. Littermate mice of each genotype were randomly allocated to each experimental group. During the experiments, animal/cage location was not controlled. The investigators were not blinded to the mouse genotype or treatment allocation. The criterion for exclusion was defined as severe body weight loss and set before the study. However, during at least two observations per week, we did not find such symptoms, and no mice were excluded. The experimental procedures were performed in our laboratory rooms or animal facility. All animal experiments were approved by the Animal Care Committee of Kobe Pharmaceutical University (permit numbers: 2018-008, 2019-011, 2020-050, 2021-038, 2022-005, 2023-038, and 2024-014) and conformed to the National Institutes of Health Guide for the Care and Use of Laboratory Animals and the ARRIVE guidelines (Animal Research: Reporting of In Vivo Experiments).
 
-## Assessment of biochemical parameters
+### Assessment of biochemical parameters
 
 Under anesthesia by intraperitoneal injection of medetomidine hydrochloride (0.3 mg/kg), midazolam (4 mg/kg), and butorphanol tartrate (5 mg/kg) (all from WAKO, Osaka, Japan), blood was collected by the cardiac puncture after overnight fasting, and plasma lipid profile was analyzed as described previously (Tanaka et al., 2024). Concentrations of plasma total cholesterol, high-density lipoprotein-cholesterol, and triglycerides were determined enzymatically using an automated chemistry analyzer (Oriental Yeast Co., Ltd., Tokyo, Japan).
 
-## Assessment of atherosclerotic lesions
+### Assessment of atherosclerotic lesions
 
 The atherosclerotic lesions in the aortic root and thoracoabdominal aorta were analyzed as described previously (Tanaka et al., 2024). For analysis of atherosclerotic lesions in the aortic root, five consecutive sections (10 μm thickness), spanning 600 μm of the aortic sinus (150 μm interval), were collected from each mouse and stained with hematoxylin-eosin. The lesion area of the sections was quantified using ImageJ (National Institutes of Health). Some sections were stained with Oil Red O (Sigma) for representative photomicrographs of the aortic sinus atherosclerotic lesions. For en face analysis of thoracoabdominal aortas, the aorta was opened longitudinally and stained with Oil Red O. The proportion of the lesion area was determined using ImageJ.
 
-## Histological analysis of atherosclerotic lesions
+### Histological analysis of atherosclerotic lesions
 
 Immunofluorescence staining of CCL17 and CCL22 in lymphoid tissues and atherosclerotic lesions was performed on 4% paraformaldehyde-fixed cryosections of mouse aortic roots using rabbit anti-CCL17 (1:200; abcam) or goat anti-CCL22 (1:200; R&D Systems) antibodies, followed by detection with fluorescent secondary antibodies. For costaining of macrophages in the above cryosections, anti-MOMA-2 (1:400; BMA Biomedicals) and fluorescent secondary antibodies were also used. Stained sections were digitally captured using a fluorescence microscope (BZ-X810; KEYENCE, Osaka, Japan).
 
 For the detection of macrophages or CD4+ T cells, immunohistochemistry was performed on 4% paraformaldehyde-fixed cryosections of mouse aortic roots using anti-MOMA-2 or anti-CD4 (1:100; BD Biosciences) antibodies, followed by detection with biotinylated secondary antibodies and streptavidin-horseradish peroxidase. Staining with Masson’s trichrome (Muto Pure Chemicals, Tokyo, Japan) was used to delineate the fibrous area. Stained sections were digitally captured using a microscope (BZ-X810; KEYENCE), and the percentage of the stained area (the stained area per total atherosclerotic lesion area) was calculated as described previously (Sasaki et al., 2009). CD4+ T cells were quantified as described previously by counting the number of positively stained cells, which was divided by the total plaque area (Sasaki et al., 2009). The primary and secondary antibodies used are listed in Table 4.
 
-## Flow cytometry
+**Table 4.**
+ Antibodies for immunohistochemistry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Clone</th>
+      <th>Fluorescent dye</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-CCL17 Ab</td>
+      <td>-</td>
+      <td>-</td>
+      <td>abcam</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ab182793</td>
+    </tr>
+    <tr>
+      <td>Anti-MOMA-2 Ab</td>
+      <td>-</td>
+      <td>-</td>
+      <td>BMA Biomedical</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>T-2007</td>
+    </tr>
+    <tr>
+      <td>Anti-CCL22 Ab</td>
+      <td>-</td>
+      <td>-</td>
+      <td>R&amp;D</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>AF439</td>
+    </tr>
+    <tr>
+      <td>Anti-CD4 Ab</td>
+      <td>RM4-5</td>
+      <td>-</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>550280</td>
+    </tr>
+    <tr>
+      <td>Anti-rabbit IgG</td>
+      <td>-</td>
+      <td>Alexa Fluor 568</td>
+      <td>Thermo Fisher Scientific</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A11011</td>
+    </tr>
+    <tr>
+      <td>Anti-goat IgG</td>
+      <td>-</td>
+      <td>Alexa Fluor 568</td>
+      <td>Thermo Fisher Scientific</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A11057</td>
+    </tr>
+    <tr>
+      <td>Anti-rat IgG</td>
+      <td>-</td>
+      <td>Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A21208</td>
+    </tr>
+    <tr>
+      <td>Anti-rat IgG</td>
+      <td>-</td>
+      <td>Biotin</td>
+      <td>abcam</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ab102250</td>
+    </tr>
+  </tbody>
+</table>
+
+### Flow cytometry
 
 For flow cytometric analysis of lymphoid tissues, peripheral LN cells and splenocytes were isolated and stained in PBS containing 2% fetal calf serum. For analysis of immune cells within the aorta, mice were anesthetized, and the aorta was perfused with cold saline. The aorta was dissected and the adventitial tissue was carefully removed. The aorta was digested with Liberase (Roche Diagnostics) in plain RPMI medium at 37℃ for 45 min with vortexing. For the detection of CCR4 on aortic T cells, Collagenase D (Sigma-Aldrich) was used instead of Liberase. A cell suspension obtained by mashing the aorta through a 70 μm strainer was stained with antibodies specific for CD3, CD4, CD45, CCR4, Foxp3, T-bet, RORγt, and GATA3. The Foxp3 staining buffer set (Thermo Fisher Scientific) was used for intracellular staining of Foxp3. In all staining procedures, Fc receptors were blocked by anti-CD16/CD32 (BD Biosciences). Flow cytometric analysis was performed with FACSAria III (BD Biosciences) using FlowJo software version 10.8.1 (Tree Star). The antibodies used were listed in Table 5. Gating strategy of flow cytometric analysis of aortic T cells is shown in Appendix 4—figure 1.
 
-## Intracellular cytokine staining
+**Table 5.**
+ Antibodies for flow cytometry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Clone</th>
+      <th>Fluorescent dye</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-CD16/CD32 Ab</td>
+      <td>2.4G2</td>
+      <td>-</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553142</td>
+    </tr>
+    <tr>
+      <td>Anti-CD45 Ab</td>
+      <td>30-F11</td>
+      <td>PerCPCy5.5</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>550994</td>
+    </tr>
+    <tr>
+      <td>Anti-CD3 Ab</td>
+      <td>145-2C11</td>
+      <td></td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>APC</td>
+      <td>553066</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>FITC</td>
+      <td>553062</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>PECy7</td>
+      <td>552774</td>
+    </tr>
+    <tr>
+      <td>Anti-CD4 Ab</td>
+      <td>RM4-5</td>
+      <td>PECy7</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>552775</td>
+    </tr>
+    <tr>
+      <td>Anti-CCR4 Ab</td>
+      <td>2G12</td>
+      <td>PE</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>131204</td>
+    </tr>
+    <tr>
+      <td>Anti-Foxp3 Ab</td>
+      <td>FJK-16s</td>
+      <td>V450</td>
+      <td>eBioscience</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>48-5773-82</td>
+    </tr>
+    <tr>
+      <td>Anti-CD44 Ab</td>
+      <td>IM7</td>
+      <td>PE</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553134</td>
+    </tr>
+    <tr>
+      <td>Anti-CD62L Ab</td>
+      <td>MEL-14</td>
+      <td>FITC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553150</td>
+    </tr>
+    <tr>
+      <td>Anti-Ki67 Ab</td>
+      <td>SolA15</td>
+      <td>FITC</td>
+      <td>eBioscience</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>11-5698-82</td>
+    </tr>
+    <tr>
+      <td>Anti-CD152 Ab</td>
+      <td>UC10-4B9</td>
+      <td>APC</td>
+      <td>eBioscience</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>17-1522-82</td>
+    </tr>
+    <tr>
+      <td>Anti-CD103 Ab</td>
+      <td>M290</td>
+      <td>FITC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>557494</td>
+    </tr>
+    <tr>
+      <td>Anti-CD25 Ab</td>
+      <td>PC61</td>
+      <td>PE</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553866</td>
+    </tr>
+    <tr>
+      <td>Anti-CD28 Ab</td>
+      <td>37.51</td>
+      <td>-</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553294</td>
+    </tr>
+    <tr>
+      <td>Anti-IFNγ Ab</td>
+      <td>XMG1.2</td>
+      <td>PE</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>554412</td>
+    </tr>
+    <tr>
+      <td>Anti-IL-4 Ab</td>
+      <td>11B11</td>
+      <td>PE</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>554435</td>
+    </tr>
+    <tr>
+      <td>Anti-IL-10 Ab</td>
+      <td>JES5-16E3</td>
+      <td>APC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>554468</td>
+    </tr>
+    <tr>
+      <td>Anti-IL-17 Ab</td>
+      <td>TC11-18H10</td>
+      <td>APC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>560184</td>
+    </tr>
+    <tr>
+      <td>Anti-T-bet Ab</td>
+      <td>4B10</td>
+      <td>APC</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>644814</td>
+    </tr>
+    <tr>
+      <td>Anti-Gata3 Ab</td>
+      <td>L50-823</td>
+      <td>Alexa Fluor 488</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>560163</td>
+    </tr>
+    <tr>
+      <td>Anti-RORγt Ab</td>
+      <td>Q31-378</td>
+      <td>PE</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>562607</td>
+    </tr>
+    <tr>
+      <td>Anti-CD8 Ab</td>
+      <td>53-6.7</td>
+      <td>PerCPCy5.5</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553033</td>
+    </tr>
+    <tr>
+      <td>Anti-B220 Ab</td>
+      <td>RA3-6B2</td>
+      <td>PE</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553090</td>
+    </tr>
+    <tr>
+      <td>Anti-CD11b Ab</td>
+      <td>M1/70</td>
+      <td>V450</td>
+      <td>BD Horizon</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>560455</td>
+    </tr>
+    <tr>
+      <td>Anti-Ly6G Ab</td>
+      <td>1A8</td>
+      <td>FITC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>551460</td>
+    </tr>
+    <tr>
+      <td>Anti-Ly6C Ab</td>
+      <td>AL-21</td>
+      <td>AOC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>560595</td>
+    </tr>
+    <tr>
+      <td>Anti-NK1.1 Ab</td>
+      <td>PK136</td>
+      <td>APC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>550627</td>
+    </tr>
+    <tr>
+      <td>Anti-CD11c Ab</td>
+      <td>HL3</td>
+      <td>V450</td>
+      <td>BD Horizon</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>560521</td>
+    </tr>
+    <tr>
+      <td>Anti-I-Ab Ab</td>
+      <td>AF6-120.1</td>
+      <td>FITC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553551</td>
+    </tr>
+    <tr>
+      <td>Anti-CD80 Ab</td>
+      <td>16-10A1</td>
+      <td>PE</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>553769</td>
+    </tr>
+    <tr>
+      <td>Anti-CD86 Ab</td>
+      <td>GL1</td>
+      <td>APC</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>558703</td>
+    </tr>
+    <tr>
+      <td>Anti-CD279 Ab</td>
+      <td>29F.1A12</td>
+      <td>FITC</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>135213</td>
+    </tr>
+  </tbody>
+</table>
+
+### Intracellular cytokine staining
 
 Immune cells from lymphoid tissues were stimulated with 20 ng/mL phorbol 12-myristate 13-acetate (Sigma) and 1 mmol/L ionomycin (Sigma) for 5 hours in the presence of Brefeldin A (Thermo Fisher Scientific). Intracellular cytokine staining was performed as described previously (Tanaka et al., 2024).
 
-## Cytokine assay
+### Cytokine assay
 
 In cell culture experiments, RPMI 1640 medium (Sigma) supplemented with 10% fetal calf serum, 50 μmol/L 2β-mercaptoethanol, and antibiotics was used. The production of several major cytokines from CD4+ T cells was examined as described previously (Matsumoto et al., 2016). Splenic CD4+ T cells (1×105 cells) isolated using MACS (Miltenyi Biotec) were stimulated with plate-bound anti-CD3 (10 µg/mL, clone 145-2C11; BD Biosciences) and soluble anti-CD28 antibodies (2 µg/mL, clone 37.51; BD Biosciences) in 96-well round-bottomed plates for 48 hours. The concentrations of IL-4, IL-10, IL-17, and IFN-γ in culture supernatants were determined by ELISA using paired antibodies specific for corresponding cytokines (R&D Systems). The levels of multiple inflammation-associated cytokines and chemokines in culture supernatants were determined using a Mouse Cytokine Array Kit according to the manufacturer’s instructions (R&D Systems).
 
 In some experiments, CD4+CD25+ Tregs and CD4+CD25- T cells were purified from the peripheral LNs and spleen of Apoe-/- or Ccr4-/-Apoe-/- mice using a CD4+CD25+ Regulatory T Cell Isolation Kit (Miltenyi Biotec) and anti-CD4 beads (Miltenyi Biotec) according to the manufacturer’s instructions. The purity of each population was >95% and most of the CD4+CD25+ T cells expressed Foxp3, as determined by flow cytometric analysis. The viability of each cell population was analyzed using 7-amino-actinomycin D (BD Biosciences) and Alexa Fluor 488 Annexin V/Dead Cell Apoptosis Kit (Thermo Fisher Scientific). The detailed data are shown in Appendix 5—figure 1A–D. CD11c+ DCs were isolated from spleen of Apoe-/- mice treated with Liberase using MACS (Miltenyi Biotec). The purity of the CD11c+ population was approximately 93%, as determined by flow cytometric analysis. CD4+CD25- T cells (1×105 cells) from Apoe-/- mice and splenic CD11c+ DC (2×104 cells) were cocultured with or without CD4+CD25+ Tregs (1.25×104 cells) from Apoe-/- or Ccr4-/-Apoe-/- mice in the presence of soluble anti-CD3 antibody (0.5 μg/mL) in 96-well round-bottomed plates. Culture supernatants were collected at 48 hours and analyzed by ELISA for IFN-γ as described above.
 
-## Treg suppression assay
+### Treg suppression assay
 
 For analysis of the in vitro suppressive function of Tregs, CD4+CD25+ Tregs and CD4+CD25- T cells were purified from pooled peripheral LNs and spleen of Apoe-/- or Ccr4-/-Apoe-/- mice as described above. Purified CD4+CD25+ Tregs from Apoe-/- or Ccr4-/-Apoe-/- mice were cocultured with carboxyfluorescein diacetate succinimidyl ester (Thermo Fisher Scientific)-labeled CD4+CD25- conventional T cells (2.5×104 cells) from Apoe-/- mice at the indicated ratios in the presence of mitomycin C (WAKO)-treated antigen-presenting cells (5×104 cells) and soluble anti-CD3 antibody (0.5 μg/mL) in 96-well round-bottomed plates. Splenocytes were used as antigen-presenting cells. The cocultured cells were maintained at 37°C with 5% CO2 for 3 days. The proliferation of carboxyfluorescein diacetate succinimidyl ester-labeled CD4+CD25- conventional T cells was analyzed by flow cytometry.
 
-## Flow cytometric analysis of DC phenotypic changes
+### Flow cytometric analysis of DC phenotypic changes
 
 CD4+CD25+ Tregs and CD4+CD25- T cells were purified from peripheral LNs and spleen of Apoe-/- or Ccr4-/-Apoe-/- mice, and CD11c+ DCs were isolated from the spleen of Apoe-/- mice as described above. CD4+CD25- T cells (5×104 cell) from Apoe-/- mice or a mixture of CD4+CD25+ Tregs (5×104 cells) from Apoe-/- or Ccr4-/-Apoe-/- mice and CD4+CD25- T cells (5×104 cells) from Apoe-/- mice were cocultured with splenic CD11c+ DCs (4×104 cells) in the presence of soluble anti-CD3 antibody (0.1 μg/mL) in 96-well round-bottomed plates. After 48 hours of coculture, the cells were collected, stained with antibodies specific for IAb, CD11c, CD80, CD86, and 7-amino-actinomycin D, and analyzed using FACSAria III (BD Biosciences).
 
-## Quantitative reverse transcription PCR analysis
+### Quantitative reverse transcription PCR analysis
 
 Using TRIzol reagent (Thermo Fisher Scientific), we extracted total RNA from aorta which was perfused with cold saline and subsequently soaked in RNA later (Thermo Fisher Scientific). After the isolation of CD4+CD25+ Tregs and CD4+CD25- T cells as described above, we extracted total RNA from the cells using an RNeasy Mini Kit (QIAGEN). A PrimeScript RT reagent Kit (Takara, Shiga, Japan) was used for reverse transcription. Quantitative PCR analysis was conducted using a TB Green Ex Taq (Takara) and a StepOnePlus Real-Time PCR System (Thermo Fisher Scientific) according to the manufacturer’s instructions. The primers used are listed in Table 6. Amplification reactions were performed in duplicate, and fluorescence curves were analyzed with the included software. GAPDH was used as an endogenous control reference.
 
-## In vivo Treg homing assay
+**Table 6.**
+ Primer sequences for quantitative reverse transcription PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer sequence (5'→3')</th>
+      <th>Reverse primer sequence (5'→3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gapdh</td>
+      <td>TGTGTCCGTCGTGGATCTGA</td>
+      <td>TTGCTGTTGAAGTCGCAGGAG</td>
+    </tr>
+    <tr>
+      <td>Il1b</td>
+      <td>TCCAGGATGAGGACATGAGCAC</td>
+      <td>GAACGTCACACACCAGCAGGTTA</td>
+    </tr>
+    <tr>
+      <td>Il6</td>
+      <td>CCACTTCACAAGTCGGAGGCTTA</td>
+      <td>GCAAGTGCATCATCGTTGTTCATAC</td>
+    </tr>
+    <tr>
+      <td>Il10</td>
+      <td>GACCAGCTGGACAACATACTGCTAA</td>
+      <td>GATAAGGCTTGGCAACCCAAGTAA</td>
+    </tr>
+    <tr>
+      <td>Tnf</td>
+      <td>CCACCACGCTCTTCTGTCTAC</td>
+      <td>AGGGTCTGGGCCATAGAACT</td>
+    </tr>
+    <tr>
+      <td>Ifng</td>
+      <td>CGGCACAGTCATTGAAAGCCTA</td>
+      <td>GTTGCTGATGGCCTGATTGTC</td>
+    </tr>
+    <tr>
+      <td>Tbx21</td>
+      <td>CTGCCTACCAGAACGCAGA</td>
+      <td>AAACGGCTGGGAACAGGA</td>
+    </tr>
+    <tr>
+      <td>Gata3</td>
+      <td>GGATGTAAGTCGAGGCCCAAG</td>
+      <td>ATTGCAAAGGTAGTGCCCGGTA</td>
+    </tr>
+    <tr>
+      <td>Rorc</td>
+      <td>CACAGAGACACCACCGGACAT</td>
+      <td>CGTGCAGGAGTAGGCCACATT</td>
+    </tr>
+    <tr>
+      <td>Foxp3</td>
+      <td>CTCATGATAGTGCCTGTGTCCTCAA</td>
+      <td>AGGGCCAGCATAGGTGCAAG</td>
+    </tr>
+    <tr>
+      <td>Ctla4</td>
+      <td>CCTCTGCAAGGTGGAACTCATGTA</td>
+      <td>AGCTAACTGCGACAAGGATCCAA</td>
+    </tr>
+    <tr>
+      <td>Cd103</td>
+      <td>ATGGCATTCAGTGGTCTGTGCTA</td>
+      <td>CACCAAGGATCGGCAGTTCA</td>
+    </tr>
+    <tr>
+      <td>Tnfrsf18</td>
+      <td>GTTCAGAACGGAAGTGGCAACA</td>
+      <td>GCTTGCAGATCTTGCACTGAGG</td>
+    </tr>
+    <tr>
+      <td>Tgfb</td>
+      <td>GTGTGGAGCAACATGTGGAACTCTA</td>
+      <td>TTGGTTCAGCCACTGCCGTA</td>
+    </tr>
+    <tr>
+      <td>Cd44</td>
+      <td>CTGGCACTGGCTCTGATTCTTG</td>
+      <td>TCCCATTGCCACCGTTGA</td>
+    </tr>
+    <tr>
+      <td>Cd69</td>
+      <td>TGGCCCAACGCTCTTGTTC</td>
+      <td>GCCCAATCCAATGTTCCAGTTC</td>
+    </tr>
+    <tr>
+      <td>Ccr4</td>
+      <td>TCTACAGCGGCATCTTCTTCAT</td>
+      <td>CAGTACGTGTGGTTGTGCTCTG</td>
+    </tr>
+    <tr>
+      <td>Ccr5</td>
+      <td>CCTAGCCAGAGGAGGTGAGACATC</td>
+      <td>AGCTATAGGTCGGAACTGACCCTTG</td>
+    </tr>
+    <tr>
+      <td>Ccr6</td>
+      <td>GGCAGTTACTCATGCCACCAA</td>
+      <td>GGAGCAGCATCCCACAGTTAAAG</td>
+    </tr>
+    <tr>
+      <td>Ccr7</td>
+      <td>GGTGGTGGCTCTCCTTGTCATT</td>
+      <td>ACACCGACTCGTACAGGGTGTAGTC</td>
+    </tr>
+    <tr>
+      <td>Ccr8</td>
+      <td>CAGACCCACAACCTGCTGGA</td>
+      <td>GACAGCGTGGACAATAGCCAGA</td>
+    </tr>
+    <tr>
+      <td>Ccr1</td>
+      <td>GGTTGGGACCTTGAACCTTG</td>
+      <td>GGGTAGGCTTCTGTGAAATCTG</td>
+    </tr>
+    <tr>
+      <td>Cxcr3</td>
+      <td>ATCACCTGGTGGTGCTAGTGGA</td>
+      <td>AAAGGCATAGAGCAGCGGATTG</td>
+    </tr>
+    <tr>
+      <td>Cx3cr1</td>
+      <td>AAGCACTTGCCTCTGGTGGA</td>
+      <td>AGGCCTCAGCAGAATCGTCATA</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vivo Treg homing assay
 
 CD4+CD25+ Tregs were purified from the peripheral LNs and spleen of Apoe-/-Kaede-Tg or Ccr4-/-Apoe-/-Kaede-Tg mice as described above and were intravenously injected into recipient 18-week-old Apoe-/- mice (1×106 cells per mouse) on a high-cholesterol diet containing 1.25% cholesterol via the tail vein. At 20 hours after transfer, the Kaede+ Treg proportions in the peripheral LNs, spleen, para-aortic LNs, and aorta of Apoe-/- mice were analyzed by flow cytometry. Gating strategy of flow cytometric analysis of Kaede-expressing Tregs in peripheral lymphoid tissues and aortas was shown in Appendix 6—figure 1.
 
-## Analysis of atherosclerotic lesions in Treg-transferred mice
+### Analysis of atherosclerotic lesions in Treg-transferred mice
 
 To clarify the role of CCR4 expression in Tregs in regulating atherosclerosis, CD4+CD25+ Tregs were purified from the peripheral LNs and spleen of Apoe-/- or Ccr4-/-Apoe-/- mice as described above and were intravenously injected into 12-week-old recipient Apoe-/- or Ccr4-/-Apoe-/- mice (1×106 cells per mouse) on a standard chow diet via the tail vein. The atherosclerotic lesions were analyzed 4 weeks after transfer as described above.
 
-## Statistical analysis
+### Statistical analysis
 
 Normality was assessed using the Shapiro–Wilk normality test. Two-tailed Student’s t-test, Mann–Whitney U-test, or one-sample t-test was used to detect significant differences between the two groups when appropriate. One-way ANOVA followed by Tukey’s multiple-comparisons test or two-way ANOVA followed by Tukey’s multiple-comparisons test was performed for multiple groups where appropriate. A value of p<0.05 was considered statistically significant. No data were excluded from the analysis. The investigators were not blinded to the data analysis. For statistical analysis, GraphPad Prism version 9.0 (GraphPad Software Inc) was used.

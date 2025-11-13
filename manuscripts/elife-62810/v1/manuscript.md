@@ -37,9 +37,25 @@ Taken together, our data characterise the cellular landscape and intercellular i
 
 ## Results
 
-## Generation of the gingival transcriptional landscape in health and periodontitis
+### Generation of the gingival transcriptional landscape in health and periodontitis
 
 Similar to other tissues in the gastrointestinal tract, the oral mucosa is a good model for studying a rapidly renewing tissue. To provide an in-depth analysis of cellular architecture, cell heterogeneity, and understand gingival cell dynamics when transitioning from health to disease, we transcriptionally profiled single cells derived from patients. We obtained freshly resected human gingival tissue and isolated live cells (Figure 1—figure supplement 1) to be sequenced on the 10x Genomics Chromium platform for single-cell RNA-seq (scRNA-seq) (Figure 1A). A total of 12,411 cells were captured across four patient biopsies, allowing us to perform an in-depth analysis of single-cell transcriptomics. In order to ascertain the extent of likely human variation between datasets we first compared data from two healthy patients. Cells from these healthy patients were remarkably similar (Figure 1—figure supplement 2) and we observed a strong linear relationship in gene signatures between the two patient samples (Figure 1—figure supplement 2). Having established a high concordance of datasets obtained from two biopsies of healthy gingiva and to amplify the power of the study, these were merged and handled together for the subsequent analysis.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the experimental workflow. All samples were processed immediately after clinical surgery. (B) scRNA-seq data obtained from healthy and periodontitis cells (n = 12,411) from four donors illustrated by UMAP coloured by cell-type annotation (nHealthy = 4639, nMild = 4401, nSevere = 3367). (C) Heatmap of the mean expression of the most differentially expressed marker genes for each cluster identified. (D) Haematoxylin and eosin staining of gingival sections from healthy, mild, and severe patient samples showing increasing changes in tissue architecture with loss of epithelial rete ridges definition and infiltration of leukocytes. (E) Changes in tissue composition in periodontitis showing UMAP of progressive diseased states from healthy, mild, and severely diseased donors.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Cells were gated based on size using standard SSC-A and FSC-A parameters. Doublets were excluded using SSC-A and SSC-W parameters. Live cells were selected as cells dimly fluorescing in DAPI. Samples were analysed on BD FACS Aria III Fusion machine.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) UMAP visualisation of human gingiva clusters from healthy human donors. (B) Scatter plots showing differential expressed genes across the two healthy samples. Panels A-B, n = 2 individuals.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) UMAP illustration of scRNA-seq data obtained from healthy and periodontitis cells (n = 12,411) from four donors coloured by condition. (B) Cell subset distributions across conditions. Shown are percentage of cells (y axis) in each cell subset (bars) that are derived from each healthy (orange), mild (green), and severe (blue) samples. X axis represents cluster ID. (C) Feature Plot showing the expression of lineage marker genes used for cell-type classification.
 
 Carrying out a comparative bioinformatic analysis of samples obtained from healthy and periodontitis patients revealed a diversity in epithelial, stromal, endothelial, and immune cells. A total of 16 distinct transcriptomic signatures were detected that corresponded to cell types or sub-populations of identifiable cell states. These were visualised using UMAP (Figure 1B).
 
@@ -51,7 +67,7 @@ We identified immune clusters of the myeloid (macrophages and dendritic cells) a
 
 Together, these data provide the first detailed molecular insight into gingival cell populations supported by known and novel markers.
 
-## Transcriptional comparison of healthy and periodontitis reveals progressive diseased states
+### Transcriptional comparison of healthy and periodontitis reveals progressive diseased states
 
 During disease progression there is a distinct signature of clinical phenotypes including redness, swelling, bleeding, destruction of periodontal ligament and bone and gingival recession (Kinane, 2001). These clinical manifestations are due to the dysregulation of a number of cell types which include epithelial, stromal, immune, and the associate cross-talk between them (Pihlstrom et al., 2005).
 
@@ -67,11 +83,19 @@ In addition to infiltrating immune cells driving the inflammatory process, mesen
 
 Together these results provide with the first comprehensive platform to compare dynamic changes of gingival cell populations during disease development.
 
-## Cellular and molecular map of the stromal gingival compartment in health and disease identifies subpopulations with potential roles in disease progression
+### Cellular and molecular map of the stromal gingival compartment in health and disease identifies subpopulations with potential roles in disease progression
 
 Tissue mesenchymal cells play essential roles in epithelial homeostasis, matrix remodelling, immunity, and inflammation (Kinchen et al., 2018; Nowarski et al., 2017). Their function in the regulation of acute and chronic inflammation in peripheral organs is now well established (Fiocchi et al., 2006; Kinchen et al., 2018; Croft et al., 2019). Despite the growing recognition that the mesenchyme acts as a critical regulator in disease persistence by producing cytokines, chemokines, proteolytic enzymes, and prostaglandins (Yucel-Lindberg and Båge, 2013), the identity of gingiva-specific mesenchymal subtypes and the molecular attributes that regulate niche maintenance in disease have not been described. To better visualise the difference in cellular heterogeneity of gingival stromal cells in health and disease, we performed re-clustering analysis of collagen expressing cells to identify any possible sub-clusters with a distinct transcriptional signature.
 
 These data revealed five fibroblast-like populations, one pericyte and one myofibroblast (Figure 2A; Figure 2—figure supplement 1). Myofibroblasts were identified by expression of ACTA2 and by gene ontology (GO) terms such as ‘muscle contraction’ and ‘smooth muscle contraction’. Pericytes were identified by PDGFRB and MCAM expression and GO terms such as ‘regulation of angiogenesis’ (Figure 2C,D). S0, S2, and S4 fibroblast-like subpopulations showed enrichment for genes annotated with ‘extracellular matrix’-related GO terms. Interestingly, one of the fibroblast-like populations (S0) GO enrichment included ‘upregulation of fibroblast proliferation’ with marked expression of PDGFRA, WNT5A, and IGF1. It also shows upregulation of POSTN which is essential for tissue repair (Kühn et al., 2007). Another fibroblast-like population (S2) showed enrichment for genes involved in the negative regulation of Wnt signalling (GREM1, SFRP1, APCDD1, and DKK3); S4 showed expression of OSR2, FGFR1, SOX4, and TBX3 known to be involved in skeletal development. Additionally, S4 also differed in the expression of a specific form of collagen, collagen IV, which is known to be a key component of the epithelial basement membrane and might suggest a role in epithelial barrier membrane as previously described (Kinchen et al., 2018). Finally, S5 and S6 show a potential role in immune regulation with enrichment for ‘cytokine-mediated signalling pathway’, ‘IFN-γ signalling’ and ‘T-cell activation’ (Figure 2—figure supplement 1; Source data 2). Highly ranked S5 markers included ILR1, IFNγR1, and a member of the TNF-receptor superfamily – TNFRS11B (osteoprotegerin) which is a negative regulator of bone resorption and thus a key regulator of osteoclast activity (Zaidi, 2007).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig2-v1.jpg)
+
+**Figure 2.:** (A) UMAP plot of gingival stromal cells. Single cells coloured by cluster annotation. (B) UMAP plot of stromal cells during disease progression. (C) Heatmap showing subset-specific markers. (D) GO enrichment terms for S1 (myofibroblast) and S3 (pericyte). -log adjusted p-value shown (dotted line corresponds to FDR = 0.05). (E) Immunofluorescence staining showing COLVI, ACTA2 expression throughout disease progression. Scale bars, 100 μm. n = 3 patient samples/condition. Feature plots showing COLVI and ACTA2 expression across clusters and conditions. (F) UMAP annotated with CytoTRACE analysis to predict stromal stem populations. Transcriptional diversity is used here to predict maturation states. (G) Immunohistochemistry staining showing AEBP1+ cells tissue distribution. Scale bar, 100 μm. n = 6 patient samples.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Feature Plots showing the expression of individual genes used for cell-type assignment of different stromal subsets. (B) GO enrichment terms for the different stromal subsets. -log adjusted p-value shown (dotted line corresponds to FDR = 0.05).
 
 To uncover the role of the newly identified mesenchymal subsets in periodontitis, we investigated changes in their contribution across diseased states. Most significantly, we identified a marked decreased in the myofibroblast (S1) and pericyte (S3) subpopulations in the mild stage, while the other fibroblast-like cells appeared unchanged with the exception of S6 (Figure 2B). This suggests loss of S1 and S3 cells was the most pronounced change from healthy tissue to mild disease. We further explored the nature of the pro-inflammatory cluster S6, and it included the expression of the major histocompatibility complex (MHC) class II invariant chain (CD74) and AREG (amphiregulin). Amphiregulin is a reparative cytokine previously described with a role in gingival immune homeostasis (Krishnan et al., 2018). These results identified the potential expansion of a novel stromal population enriched for pro-inflammatory genes in periodontitis.
 
@@ -79,9 +103,17 @@ Next, we investigated whether we could detect these changes using immunofluoresc
 
 Understanding the pathways underlying stromal differentiation will be essential to understand tissue homeostasis in chronic diseases. Given the lack of markers to reconstruct a cellular trajectory and the knowledge that the number of expressed genes per cells is a hallmark of developmental potential (Teschendorff and Enver, 2017; Han et al., 2020), we used transcriptional diversity to predict candidate stromal precursors (Gulati et al., 2020; Figure 2F). This analysis placed sub-clusters S5 and S0 as the less differentiated subpopulations, and S1 and S3 (myofibroblasts and pericytes) as fully differentiated states (Figure 3F). Using this pipeline, we identified genes such as IGHBP4 and AEBP1 in the less differentiated states. We next defined the tissue distribution of AEBP1+ cells using immunohistochemistry. We observed that the majority of these cells were concentrated near the subepithelial region (Figure 2G).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig3-v1.jpg)
+
+**Figure 3.:** (A) UMAP plot of human gingival epithelial cells. Single cells coloured by cluster annotation. (B) UMAP plot of epithelial cells during disease progression. (C) Heatmap showing subset-specific markers. (D) GO enrichment terms for E0, E6, and E8 with -log adjusted p-value shown (dotted line corresponds to FDR = 0.05). (E) Dot plot showing top predicted ligands expressed by epithelial cells that modulate the E0 (stem) compartment. (F) Expression of KI67 and SOX2 in human healthy tissue. KI67 marks proliferative cells (cluster E5), and SOX2 marks an epithelial stem cell compartment (cluster E0). Scale bars = 100 μm (A, B). Scale bars, 50 μm (A’, B’). n = 4 patient samples/condition.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Feature Plots showing the expression of individual genes used for cell-type assignment of different epithelial subsets. (B) GO enrichment terms for the different epithelial subsets. -log adjusted p-value shown (dotted line corresponds to FDR = 0.05).
+
 Overall, we demonstrate that stromal remodelling in periodontitis is heterogenous with a disruption in cell populations known to be involved in tissue repair, and a higher proportion in a pro-inflammatory cell population that could prevent disease resolution. Collectively, these observations suggest that stromal cells shape a permissive inflammatory niche.
 
-## Cellular and molecular map of the epithelial gingival compartment in health and disease
+### Cellular and molecular map of the epithelial gingival compartment in health and disease
 
 The oral epithelium is one of the fastest renewing tissues in the human body and shows a remarkable regenerative potential. Cell division in epithelial cells takes place in the basal layer which contains the stem cell compartment. After dividing, the committed cells undergo differentiation that leads to expression of structural keratins as cells move superficially (Blanpain and Fuchs, 2009). Recent work has started to elucidate epithelial heterogeneity in the basal layer using mouse models (Jones et al., 2019; Byrd et al., 2019). However, little is known about human gingival epithelial cell heterogeneity and its role in disease. Thus, we further explored the single-cell transcriptomes of epithelial clusters (1, 8, and 12).
 
@@ -89,7 +121,7 @@ By re-clustering the epithelial cells, we identified ten populations (Figure 3A;
 
 Next, we investigated changes in epithelial cell composition and gene expression through the different disease states (Figure 3B). In the mild stage, we observed a depletion in E6 and E7 populations which show enrichment in genes involved in cell cycle regulation; and in E9 which is involved in ECM organisation. Cycling cells (E5) show a decrease in mild, and a subsequent increase in severe (Figure 3B). We detected an increase in E8 defined in GO terms by ‘cytokine- mediated signalling’ (Figure 3B,D). Next, we asked which epithelial signals are predicted to modulate the identified stem cell signature found in E0 in disease. Using NicheNet (Browaeys et al., 2020) we identified sub-cluster E8 as the main signalling source predicted to modulate E0 through the expression of several ligands including MMP9, SPN, and HLA-DRA (Figure 3E). While more work is necessary to understand the functional role of the E8 subpopulation, targeting this subpopulation in future immune-modulatory experiments may lead to important findings.
 
-## Identifying ligand–receptor interactions and transcriptional regulation contributing to disease progression
+### Identifying ligand–receptor interactions and transcriptional regulation contributing to disease progression
 
 Periodontitis is characterised by tissue remodelling, which depends on complex interactions between stromal, epithelial, and immune cells. However, how these cells interact to contribute to tissue homeostasis and how these interactions are dysregulated during disease remains poorly defined. To understand this cross-talk, we used NicheNet (Browaeys et al., 2020) to model which cellular signals induce a stromal and perivascular response in periodontitis (Figure 4A).
 
@@ -103,11 +135,19 @@ We next focused on epithelial–mesenchymal interactions in the mild stage by in
 
 Together, these results identify IL1B, EDN1, TNF, and BMP2 as the main epithelial modulators driving an inflammatory response in stromal and perivascular cells. Based on their expression, we identified novel epithelial-mesenchymal interactions in periodontitis: the interactions between epithelial IL1B and TNF and stromal target genes. It is unclear if the interactions described above are causative or consequential of disease progression; however, this analysis provides a wealth of novel targets that can be pharmacologically targeted in studies aiming to ameliorate the disease phenotype.
 
-## Single-cell transcriptomics of human B cells reveals activation signature in periodontitis
+### Single-cell transcriptomics of human B cells reveals activation signature in periodontitis
 
 B cells are essential in the generation of protective immunity. However, tissue-based B-cell subsets are not well characterised in human oral tissues. Following our observations that there is a consistent increase of B cells in line with disease severity, and their established role in disease immunopathogenesis, we next focused on the humoral response by performing a more in-depth transcriptomic analysis. Previous studies have established that B cells constitute the majority of cells in periodontitis lesions (Thorbert-Mros et al., 2015), and it has been suggested a dual protective and detrimental role (Oliver-Bell et al., 2015; Abe et al., 2015).
 
 We compared their transcriptional profiles across disease states (Figure 5A). We found a profound prevalence of IgG plasma B cells in disease which is supported by another study (Kinane et al., 1999) in periodontitis patients. Similarly, it has been reported an increase in local IgG within the gastrointestinal tract during intestinal inflammation (Castro-Dopico et al., 2019). Here, we found IgG plasma cells almost absent in health and distinctively expanded with disease progression (Figure 5A). Upregulation of an IGH signature has been previously linked to disease severity and renders activation of the mononuclear phagocyte response in the intestinal mucosa (Castro-Dopico et al., 2019). In humans, mucosal IgG responses are pro-inflammatory when they involve complement activation. This cluster showed enrichment of genes involved in the complement system such as CFB and C2 (Figure 5D). This system plays a critical role in signalling B-cell activation (Carroll and Isenman, 2012; Chen et al., 2020), and previous research has established a role in periodontitis. There was no inherent transcriptional heterogeneity to allow further re-clustering of these B-cell into more bioinformatically refined subtypes (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig5-v1.jpg)
+
+**Figure 5.:** (A) UMAP analysis of human B cells identifying follicular and IgG plasma B cells split by condition. (B) UMAP expression plots of human B-cell subset markers. Cells coloured by normalised expression of indicated genes. (C) CD79A in human gingival tissue across health and disease. Scale bars, 100 μm. n = 3 patient samples/condition. (D) Gene enrichment analysis of IgG plasma B cells. -log adjusted p-value shown (dotted line corresponds to FDR = 0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62810/elife-62810-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) UMAP plot of B cells in health and disease. (B) Heatmap showing subset-specific markers. (C) UMAP plot of B cells during disease progression. (D) Feature Plots showing the expression of individual genes used for assignment of different B-cell subsets. (E) GO enrichment terms for IgG plasma B cells with -log adjusted p-value shown (dotted line corresponds to FDR = 0.05). (F) UMAP plot of T cells in health and disease. (G) UMAP plot of T cells during disease progression. (H) Feature Plots showing the expression of CD4 and CD8 T-cell subsets. (I) UMAP showing number of detected genes.
 
 ## Discussion
 
@@ -129,7 +169,164 @@ In summary, we have established the first human gingiva cell atlas, revealing he
 
 ## Materials and methods
 
-## Patient recruitment and ethical approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Human)</td>
+      <td>Human gingival biopsies</td>
+      <td>Periodontology department, King’s College London</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-COLVI (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #ab182744, RRID:AB_2847919</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ACTA2 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #ab7817, RRID:AB_262054</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-MCAM (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #ab75769, RRID:AB_2143375</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KI67 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #ab15580, RRID:AB_443209</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX2 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab92494, RRID:AB_10585428</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD79A (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab79414, RRID:AB_2260147</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AEBP1 (Rabbit polyclonal)</td>
+      <td>Atlas Antibodies</td>
+      <td>Cat# HPA064970, RRID:AB_2685394</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ImmPRESS Excel Staining Kit, Anti-Rabbit Ig</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# MP-7601, RRID:AB_2336533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UltraPure BSA (50 mg/mL)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# AM2618</td>
+      <td>0.04%</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3’ Library and Gel Bead Kit v3</td>
+      <td>10X Genomics</td>
+      <td>Cat# PN-1000092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell B Chip Kit</td>
+      <td>10X Genomics</td>
+      <td>Cat# PN-1000074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Whole Skin Dissociation Kit, human</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-101-540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellRanger Version 4</td>
+      <td>10X Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat Version 3.0</td>
+      <td>R Bioconductor</td>
+      <td>RRID:SCR_007322 https://satijalab.org/seurat/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Enrichr</td>
+      <td>Chen et al., 2013</td>
+      <td>RRID:SCR_001575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CytoTRACE</td>
+      <td>R Bioconductor</td>
+      <td>https://cytotrace.stanford.edu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NicheNet</td>
+      <td>GitHub</td>
+      <td>https://github.com/saeyslab/nichenetr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GRCh38</td>
+      <td>CellRanger, 10X Genomics</td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306, RRID:AB_2629482</td>
+      <td>(1 ug/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Patient recruitment and ethical approval
 
 Human gingival samples were obtained from consenting patients undergoing routine periodontal surgical procedures (Department of Periodontology, Guy’s Hospital, King’s College London). All samples were collected and processed in compliance with the UK Human Tissue Act (Human Tissue Authority #203019), ethically approved by the UK National Research Ethics Service (Research Ethics Committee 17/LO/1188). Written informed consent was received from participants prior to inclusion in the study. Cohort inclusion criteria for all subjects were: absent history of relevant medical conditions, no use of medication, no use of nicotine or nicotine-replacement medications, no pregnancy, and breast feeding.
 
@@ -143,60 +340,60 @@ Patient 37. Gender: male. Age band: 41–65. Chronic periodontitis with previous
 
 Patient 38. Gender: male. Age band: 41–65. No history of periodontal disease. Site: buccal gingival margin.
 
-## Histology and microscopy
+### Histology and microscopy
 
 Human gingival tissue was freshly collected and fixed overnight in 4% neutral buffered formalin. Then, tissue underwent three 5 min washes in PBS at room temperature followed by dehydration washes in increasing ethanol concentrations. After dehydration, tissue was processed using a Leica ASP300 Tissue Processing for one hour. Tissues were then embedded in paraffin. Serial sections (12 µm thick) were cut for haematoxylin and eosin (H and E) and immunohistochemistry (IHC) staining.
 
 H and E was carried out for each patient sample using an Automated Slide Stainer. Slides were dewaxed by immersion in Neo-Clear (Merck Millipore), twice for 10 min. Tissue was then rehydrated by decreasing volumes of ethanol in deionised H20 (100, 90, 70, 50%) for two minutes in each step and rinsed in deionised H20 for 2 min. Samples were then stained in Ehrlich’s Haematoxylin (Solmedia) for 10 min followed by a 10 min rinse under running water and then a two-minute rinse in deionised H20. Tissue was then stained in 0.5% Eosin Y (Sigma-Aldrich) for 5 min and washed twice in deionised H20. Samples were dehydrated in increasing IMS in deionised H20 concentration steps (70, 90, 100, 100%) for two minutes each. Slides were immersed in Neo-Clear three times for 5 min and then mounted using Neo-mount mounting medium (Merck Millipore), coverslipped and left to dry overnight in at 42°C.
 
-## Immunohistochemical staining
+### Immunohistochemical staining
 
 Immunofluorescence staining was performed on 12 µm sections as described above. In short, slides were dewaxed in Neo-Clear twice for 10 min and rehydrated in a series of decreasing ethanol volumes as described above. Heat induced epitope retrieval was performed with sodium citrate buffer (pH 6) in a Decloaking chamber NXGEN (Menarini Diagnostics) for 3 min at 110°C. Slides were cooled to room temperature before blocking for 1 hr at room temperature in Blocking Buffer (0.2% BSA, 0.15% glycine, 0.1% TritonX in PBS) with 10% goat or donkey serum depending on the secondary antibody used. Primary antibodies were diluted in blocking buffer with 1% of the respective blocking buffer and incubated overnight at 4°C. The following day, slides were washed three times in PBST and incubated with the respective secondary antibodies diluted 1:500 in 1% blocking buffer for one hour at room temperature. Slides were mounted with Citifluor AF1 mountant media (Citifluor Ltd., AF1-100) and cover slipped for microscopy. Slides were put to dry in a dry chamber that omitted all light, and kept at 4°C. For AEBP1 staining, slides were incubated following primary antibody step with ImmPRESS Excel Staining Kit Anti-Rabbit IgG (Peroxidase) Polymer Detection Kit (Vector Laboratories, Peterborough, U.K.) for 30 min at room temperature. Peroxidase activity was visualised using ImmPACT DAB Peroxidase (HRP) Substrate (Vector Laboratories). Finally, sections were counter-stained with Mayer’s hematoxylin, dehydrated, and mounted. Primary antibody was excluded from negative controls.
 
 The following antibodies were used: COLVI raised in rabbit (ab182744, 1:500, Alexa Fluor-488 secondary), ACTA2 raised in mouse (ab7817, 1:200, Alexa Fluor-633), MCAM raised in rabbit (ab75769, 1:100, Alexa Fluor-594), KI-67 raised in rabbit (ab15580, 1:100, Alexa Fluor-594), SOX2 raised in rabbit (ab92494, 1:100, biotinylated secondary), CD79A raised in rabbit (ab79414, 1:100, Alexa Fluor −488 secondary), AEBP1 raised in rabbit (HPA064970, 1:200).
 
-## Imaging
+### Imaging
 
 For bright field images, stained slides were scanned with Nanozoomer-XR Digital slide scanner (Hamamatsu) and images processed using Nanozoomer Digital Pathology View. Fluorescent staining was imaged with a TCS SP5 confocal microscope (Leica Microsystems) and Leica Application Suite Advanced Fluorescence (LAS-AF) software. Images were collected and labelled using Adobe Photoshop 21.1.2 software and processed using Fiji (Schindelin et al., 2012).
 
-## Tissue processing for single-cell isolation
+### Tissue processing for single-cell isolation
 
 Fresh tissues were processed immediately after clinical surgery using the same protocol. Tissue was transferred to a sterile petri dish and cut into <1 mm3 segments before being transferred to a 15 mL conical tube. Tissue was digested for 30 min at 37°C with intermittent shaking using an enzymes dissociation kit (Miltenyi, Bergisch-Gladbach, Germany). The resulting cell suspension was filtered through a 70 µm cell strainer to ensure a single-cell preparation and cells collected by centrifugation (1,200 rpm for 5 min at 4°C). Cells were resuspended in 0.04% non-acetylated BSA (UltraPure BSA, ThermoFisher Scientific) and stained with 1.5 μg DAPI (D1306, Invitrogen) used as dead cell exclusion marker. Samples were analysed on BD FACS Aria III fusion machine. Cells were gated based on size using standard SSC-A and FSC-A parameters so that debris is excluded. Doublets were excluded using SSC-A and SSC-W parameters. Live cells were selected as cells identified to be dimly fluorescing in DAPI and were then sorted into chilled FACS tubes prefilled with 0.04% 300 μL BSA. Single-cell suspensions were captured using the 10X Genomics Chromium Single Cell 3’ Solution (v3) according to the manufacturers protocol. Cells were resuspended separately in PBS with 0.04% BSA at a density of 50–100 cells per μL. While neutrophils were not specifically targeted for exclusion, due to their small size they heavily co-localised with cellular debris in FACS plots, and therefore not included. Isolation of neutrophils for single-cell RNA sequencing on Chromium platforms has been thoroughly documented and reported (Smillie et al., 2019).
 
-## Chromium 10x genomics library and sequencing
+### Chromium 10x genomics library and sequencing
 
 Single-cell suspensions were manually counted using a haemocytometer and concentration adjusted to a minimum of 300 cells μL−1. Cells were loaded according to standard protocol of the Chromium single-cell 3’ kit to capture around 5,000 cells per chip position. Briefly, a single-cell suspension in PBS 0.04% BSA was mixed with RT-PCR master mix and loaded together with Single Cell 3’ Gel Beads and Partitioning Oil into a Single Cell 3’ Chip (10x Genomics) according to the manufacturer’s instructions. RNA transcripts from single cells were uniquely barcoded and reverse transcribed. Samples were run on individual lanes of the Illumina HiSeq 2500.
 
-## Computational analysis of sc-RNAseq datasets
+### Computational analysis of sc-RNAseq datasets
 
 The cell ranger pipeline was used for processing of the single-cell RNAseq data files prior to analysis according to the instructions provided by 10x Genomics. Briefly, base call files obtained from each of the HiSeq2500 flow cells used were demultiplexed by calling the ‘cellranger mkfastq’. Resulting FASTQ files were aligned to the human reference genome GRCh38/hg19 and subsequently filtered and had barcodes and unique molecular identifiers counted and count files generated for each sample. These were used for subsequent processing and data analysis using R.
 
-## Integrative analysis
+### Integrative analysis
 
 Integrated analysis was performed according to the authors of the Seurat package (Butler et al., 2018; Stuart et al., 2019). Briefly, count files for each condition were read into RStudio and cells corresponding to each condition were labelled accordingly as ‘Healthy’, ‘Mild’ and ‘Severe’. Only cells found to be expressing more than 500 transcripts were considered as to limit contamination from dead or dying cells. Each dataset was normalised for sequencing depth by calling the ‘NormalizeData’ function and the 2000 most variable features of each dataset were detected using the ‘vst’ method by calling the ‘FindVariableFeatures’ function. Subsequently the ‘FindIntegrationAnchors’ function was called to identify anchors across the datasets and the ‘IntegrateData’ function to integrate them so an integrated analysis could be run on all cells simultaneously. The data was then scaled to account for sequencing depth using ‘ScaleData’ and PCA components were used for an initial clustering of the cells (using ‘RunPCA’). 20 dimensions were used to capture the majority of the variability across the datasets. ‘FindNeighbors’ was then used, utilising the above dimensionality parameters to construct a K-nearest neighbour graph based on Euclidian distances in PCA space. The clusters are then refined by applying a Louvain algorithm that optimises the modularity of the dataset and groups the cells together based on global and local characteristics. This is done by calling the ‘FindClusters’ function. We then run non-linear dimensionality reduction using UMAP to be able to visualise and explore the datasets. The same principle components were used as above. The Stromal, Epithelial, and B-cell clusters were then extracted using the ‘Subset’ function.
 
-## Stromal cell re-clustering analysis
+### Stromal cell re-clustering analysis
 
 Stromal clusters were identified as being ‘collagen producing’. These two clusters were reanalysed separately from the integrated dataset. Stromal cells were filtered to only utilise live cells using percentage of mitochondrial gene expression as an exclusion metric (<15%). Datasets were then re-normalised by calling the ‘NormalizeData’ function to account for the reduction in cell numbers subsequent to subsetting the data. According to the author instructions, the top 2000 most variable features across the dataset were then identified using the ‘FindVariableFeatures’. These variable features were subsequently used to inform clustering by passing them into the ‘RunPCA’ command. Using ‘Elbowplot’ we identified that the first eight principle components should be used for downstream clustering when invoking the ‘FindNeighbors’ and ‘RunUMAP’, as detailed above.
 
-## Epithelial cell re-clustering
+### Epithelial cell re-clustering
 
 Epithelial cells were identified from the epithelial clusters in the integrated UMAP and re-clustered as explained above with some minor exceptions. Epithelial cells were isolated as being the clusters 1, 8, 12. The first five principal components were used as these were identified as being significant by the ‘Elbowplot’ function.
 
-## Gene Ontology (GO) analysis
+### Gene Ontology (GO) analysis
 
 Gene ontology (GO) analysis was performed using Enrichr (Chen et al., 2013) on the top 200 differentially expressed genes (adjusted p-value < 0.05 by Wilcoxon Rank Sum test). GO terms shown are enriched at FDR < 0.05.
 
-## CytoTRACE
+### CytoTRACE
 
 An expression matrix consisting of only the specified sub-set of cellular populations was used as a starting point. CytoTRACE analysis was performed according to the developer’s instructions (Gulati et al., 2020). The resulting embeddings were then projected onto the UMAP projections.
 
-## NicheNet analysis
+### NicheNet analysis
 
 This analysis predicts which ligands produced by a sender cell regulate the expression of receptors/target genes in another (receiver) cell. We followed the open-source R implementation available at GitHub (https://github.com/saeyslab/nichenetr). For differential expression we used FindMarkers function in Seurat to generate average logFC values per cell type. For Figure 3E, we assigned all epithelial populations as ‘sender cells’ and E0 as ‘receiver’ to derive a set of predicted epithelial ligands modulating the mild response seen in this specific subpopulation. For Figure 4B, we assigned all cell types as ‘sender cells’ and the stromal populations as ‘receiver’ and extracted all cell type signatures by taking the 100 differentially expressed genes isolated in health/mild and in mild/severe.
 
 For Figure 4D–G, we defined all epithelial populations as ‘sender’ and all stromal as ‘receiver’ in health vs mild responses.
 
-## Study approval
+### Study approval
 
 Informed consent in writing before their participation in this study was obtained from each subject in compliance with the UK Human Tissue Act (Human Tissue Authority #203019), and ethically approved by the UK National Research Ethics Service (Research Ethics Committee 17/LO/1188).

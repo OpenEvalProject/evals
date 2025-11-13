@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.31362.001 Connection of the heart to the systemic circulation is a critical developmental event that requires selective preservation of embryonic vessels (aortic arches). However, why some aortic arches regress while others are incorporated into the mature aortic tree remains unclear. By microdissection and deep sequencing in mouse, we find that neural crest (NC) only differentiates into vascular smooth muscle cells (SMCs) around those aortic arches destined for survival and reorganization, and identify the transcription factor Gata6 as a crucial regulator of this process. Gata6 is expressed in SMCs and its target genes activation control SMC differentiation. Furthermore, Gata6 is sufficient to promote SMCs differentiation in vivo, and drive preservation of aortic arches that ought to regress. These findings identify Gata6-directed differentiation of NC to SMCs as an essential mechanism that specifies the aortic tree, and provide a new framework for how mutations in GATA6 lead to congenital heart disorders in humans.
+Connection of the heart to the systemic circulation is a critical developmental event that requires selective preservation of embryonic vessels (aortic arches). However, why some aortic arches regress while others are incorporated into the mature aortic tree remains unclear. By microdissection and deep sequencing in mouse, we find that neural crest (NC) only differentiates into vascular smooth muscle cells (SMCs) around those aortic arches destined for survival and reorganization, and identify the transcription factor Gata6 as a crucial regulator of this process. Gata6 is expressed in SMCs and its target genes activation control SMC differentiation. Furthermore, Gata6 is sufficient to promote SMCs differentiation in vivo, and drive preservation of aortic arches that ought to regress. These findings identify Gata6-directed differentiation of NC to SMCs as an essential mechanism that specifies the aortic tree, and provide a new framework for how mutations in GATA6 lead to congenital heart disorders in humans.
 
 ## Introduction
 
@@ -37,11 +37,19 @@ By combining microdissection and global transcriptomes analysis, we identify the
 
 ## Results
 
-## Identification of an active SMC differentiation program in the posterior branchial arches and OFT
+### Identification of an active SMC differentiation program in the posterior branchial arches and OFT
 
 To identify the molecular pathways underlying development of the adult great vessels, we examined gene expression in posterior branchial arches (PBA) and OFT at two defined developmental stages, E10.5 (Theiler stage, TS17) and E11.5 (TS19), by RNA-seq analysis (Figure 1A and Figure 1—figure supplement 1A). The last of the AAs to be formed (sixth) becomes evident at E10.5, and the organization of the branchial AAs is still highly symmetrical at both stages (Hiruma et al., 2002). To identify transcripts specifically enriched in this embryonic area, we compared these datasets with the transcriptome of the second branchial arch (BA2, Figure 1A), which is similarly colonized by NC, but does not contribute to any of the mature great vessels. Expression profiles display the highest variation across tissues already at the earliest time point examined, shortly after cardiac NC populates the PBA/OFT (Figure 1B; Figure 1—figure supplement 1B). After data normalization, we extracted differentially expressed (DE) genes between BA tissues (Supplementary file 1). DE genes largely consist of transcripts enriched in the PBA/OFT, and a large fraction of those is shared between early and late stages (Figure 1C). Consistent with the contribution of PBA/OFT to the heart circulation, PBA/OFT-enriched transcripts were associated with ‘heart development’, ‘OFT morphogenesis’ and ‘vasculogenesis’ (Figure 1D). On closer inspection, we found that a considerable proportion of genes contained in the gene ontology (GO) ‘heart development’ is associated with AAs and/or OFT phenotypes (36%; 12 out of 33). PBA/OFT-enriched genes also included transcripts highly expressed in the myocardium, owing to the OFT component (Figure 1—figure supplement 1C). Among the transcripts displaying the most significant changes, we found Acta2, Tagln, Cnn1 and Myocd, which are highly expressed in SMCs (Figure 1E; Figure 1—figure supplement 1C). Myocd encodes for a TF that is sufficient to activate the program of SMC differentiation (Li et al., 2003; Wang et al., 2003) and functions in complex with the MADS box TF serum response factor (SRF). Intriguingly, a highly significant fraction of transcripts enriched in PBA/OFT at both developmental stages corresponds to SRF-responsive genes (Figure 1F). In sum, our comparative analysis indicates that a transcriptional program controlling the generation of SMCs is specifically activated in the PBA/OFT.
 
-## Differentiation of SMCs in vivo is restricted to PBA/OFT
+![Figure 1.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig1-v2.jpg)
+
+**Figure 1.:** (A) In mammals, BA2 (red) hosts aortic arch (AA)2, which regresses, while posterior BAs (PBA, green) host AA3-6, which contribute to the main thoracic arteries. (B) Correlation plot of global expression profiling separates BA2 and PBA at E10.5 and E11.5. Heatmap shows the Spearman correlation coefficients for each pair of samples based on the normalized expression values (FPKM). (C) Count of DE genes between PBA and BA2 (fold change ≥±2; q-value <0.05) at E10.5–11.5. The bar plot shows PBA/OFT-enriched genes as the largest fraction of DE genes (color-coded as in A). (D) Hierarchical clustering of DE genes in any of the three pair-wise comparisons. DAVID analysis (Huang et al., 2009) of the clusters generated detects significant association with PBA/OFT-specific Biological Process GO terms (arrows). (E) Volcano plot. Top significant PBA/OFT-enriched genes are highly expressed in SMCs. (F) Ingenuity Pathway Analysis (IPA) identifies the TF SRF as the most likely upstream regulator of PBA/OFT-enriched genes (p-value<1e-20). SRF targets include Myocd and known Myocd targets (e.g. Acta2, Tagln).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Embryonic circulation, front view (adapted from High and Epstein, 2008). The broken line encloses the PBA/OFT, the embryonic area used as a source of RNA. The AA3, 4 and 6 are housed by BA3-6 (PBA in green in Figure 1A) (B) PCA shows reproducibility of the biological replicates and separates BA2 and PBA/OFT at both developmental stages. (C–D) Heatmaps of top significant DE genes (Volcano plot in Figure 1, upper right and left quadrants) in PBA/OFT (C) and BA2 (D).
+
+### Differentiation of SMCs in vivo is restricted to PBA/OFT
 
 Transcriptomic analyses revealed a high enrichment in transcripts related to the process of SMCs differentiation in the PBA/OFT relative to BA2. Therefore, we analyzed the presence of SMCs in the BA region of mouse embryos. BAs are traversed by five embryonic AAs, which connect the heart with the paired dorsal aortae and allow blood circulation throughout the embryo. AAs develop in a rostro-caudal sequence, beginning around E8.5 with formation of the AA1, which traverses BA1 (Hiruma et al., 2002; Waldo and Kirby, 1998). Within the next two days, AAs 2, 3, 4 and 6 (none of the arteries is named as 5) appear sequentially. Using confocal immunofluorescence analysis, we observed AA2 and AA3 at E9.5 (Figure 2A). We never observed AA1 at this stage, presumably because this vessel, which is the first to form, had already regressed (Hiruma et al., 2002). One day later (E10.5), we detected well-formed AA3 and AA4, both connected to the aortic sac/OFT and the dorsal aorta (Figure 2D). Consistent with the regression process of AA1-2, PECAM staining revealed capillary beds in the BA1-2 instead of the arteries observed in younger embryos. At later stages (E11.0-E11.5), three vessels were present in the BA region, AAs 3, 4 and 6, and regression of the two rostral-most AAs was complete (Figure 2G,J).
 
@@ -51,17 +59,45 @@ Transcriptomic analyses revealed a high enrichment in transcripts related to the
 
 We next examined the distribution of vascular SMCs in these vessels. At E9.5, none of the AAs was associated with vascular SMCs, but we detected vascular SMCs in the dorsal aorta and the OFT (Figure 2B,C). At E10.5, we observed the presence of vascular SMCs in AA3 (Figure 2E,F), but not in the developing AA4. At E11.0, AA3 and AA4 were fully covered by vascular SMCs (Figure 2H,I) and half a day later, all posterior AAs were associated with vascular SMCs (Figure 2K,L). These results indicate that the three most posterior AAs (3-6), which will contribute to the mature aortic tree, recruit vascular SMCs to their walls shortly after their initial formation, in a rostro-caudal progression. In contrast, the two most anterior AAs (1-2) never become associated with vascular SMCs. Thus, the distribution of SMCs correlates with vessels selected for preservation. In sum, the process of SMC differentiation specifically takes place in PBA/OFT, consistent with our transcriptomic analyses.
 
-## Identification of the main regulators of the PBA/OFT transcriptional network
+### Identification of the main regulators of the PBA/OFT transcriptional network
 
 We devised an unbiased approach to identify main transcription factors (TF) driving gene expression in PBA/OFT. Binding of multiple TFs, or collaborative DNA binding, can counteract nucleosome repositioning, facilitates access of each TF to DNA and leads to increased binding levels (Biggin, 2011; Spitz and Furlong, 2012). We reasoned that changes in the binding levels of ‘ubiquitous’ TFs, combined with sequence analysis of the underlying DNA, could be used to detect tissue-specific, combinatorial TFs occupancy in the PBA/OFT. We analyzed binding of Meis TFs, which regulate development of many diverse organs, including eye, heart and limb (Capdevila et al., 1999; Mercader et al., 2000; Stankunas et al., 2008; Zhang et al., 2002). Meis1 (Figure 3A) and Meis2 (not shown) are expressed in both BA2 and PBA and bind broadly and to largely overlapping regions in the BAs (Amin et al., 2015). Further supporting a widespread role for Meis TFs, Meis occupy up to 60% accessible chromatin in the BA2 (Minoux et al., 2017) (Figure 3—figure supplement 1A). Moreover, Meis recognition motifs are overrepresented in cardiac enhancers and TBX5 and NKX2–5oc cupied regions in cardiomyocytes (Luna-Zurita et al., 2016; Wamstad et al., 2012). As expected (Amin et al., 2015), we found that Meis binding sites in the PBA/OFT are largely shared with BA2 (Figure 3B,C). Using DiffRep (Shen et al., 2013), we identified 1379 regions at which Meis binding level was highly increased (LogFC ≥3) in the PBA/OFT vs BA2 (Figure 3B,C; Supplementary file 2). Functional annotation of Meis highly occupied regions in the PBA/OFT revealed association with PBA-specific biological processes, such as ‘regulation of SMC differentiation’, and ‘regulation of vasculature development’ (Figure 3D), supporting the validity of this approach. We hypothesized that interrogation of DNA sequence at sites with increased Meis binding signal would reveal the identity of major TFs driving PBA/OFT gene expression. The most highly overrepresented motifs identified by de novo motifs analysis, matched recognition sequences for GATA, Forkhead, HAND and TEAD, together with motifs recognized by Meis and Meis partners Hox/Pbx (Figure 3E). The subset of Meis-bound regions containing GATA motifs were associated with ‘blood vessel morphogenesis’, while regions containing Ebox and Forkhead motifs were mainly associated with striated and cardiac muscle development (Figure 3—figure supplement 1B,C). Strikingly, Gata6 conditional inactivation in the cranial NC and in SMC results in abnormal development of the great vessels and OFT (Kodo et al., 2009; Lepore et al., 2006). Consistent with changes in combinatorial occupancy reflecting changes in protein concentration, Gata6, together with Gata4 and Gata5, was among the most significantly enriched transcripts in PBA/OFT (Figure 1—figure supplement 1C). Next, we analyzed Gata6 expression in the BA region. In agreement with our RNA-seq analyses, we found a striking dichotomic distribution of Gata6, with high enrichment in the PBA and OFT, relative to BA1-2 (Figure 3F,G). Consistent with a role in initiating SMC differentiation in the BAs, Gata6 was detected in vascular SMCs associated with AA3 (Figure 3F–I), and in BA4 (Figure 3H), just before SMC differentiation around AA4 Figure 3F–H).
 
-## Gata6 binding is associated with transcription of genes involved in vascular development
+![Figure 3.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig3-v2.jpg)
+
+**Figure 3.:** (A) Whole mount in situ hybridizations on E10.5 mouse embryo. Meis1 is expressed in the BA2 (arrow) and in the PBA (BA3 and BA4, arrows). (B) Diffrep analysis of Meis binding in PBA and BA2. Venn diagram shows ‘shared’ Meis binding sites (FE ≥ 10) with logFC < 3 signal (n = 6875) and with higher (logFC ≥ 3) signal in PBA (green) and BA2 (red). (C) UCSC browser tracks upstream of Nrp1 illustrate the largely overlapping binding of Meis in PBA and BA2, with instances of increased Meis binding signal (gray regions) in PBA relative to BA2. (D) Top over-represented biological processes associated to Meis peaks (FE ≥ 10) with higher signal in PBA (logFC ≥ 3) include ‘smooth muscle cell differentiation’ and ‘vasculature development’. (E) De novo motif discovery on Meis peaks (FE ≥ 10) with higher signal in PBA identifies high enrichment of the recognition sequence for GATA TFs, together with motifs recognized by Meis and Meis partners Hox/Pbx. (F–I) Confocal analysis of E10.5 embryos (36–37 s) whole mount (F–H) and sagittal sections (I) stained with Gata6 (F) and Gata6/SMA antibodies (G–I). Gata6 is detected in the BA3, BA4 (F–H) and the heart region (F–G). Individual z-stack (H) shows Gata6 co-localization with SMA-positive cells in the BA3 and the appearance of SMCs in Gata6-positive area in the BA4 (arrow). Gata6/SMA-positive cells surround AA3 (I). Numbers indicate corresponding BAs; asterisks label the OFT.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Comparison of Meis ChIP-seq (FE ≥ 10 peaks) in E11.5 BA2 and ATAC-seq in E10.5 BA2. Half of Meis peaks overlap with accessible chromatin in the BA2. (B) Experimentally identified motifs (known motifs), which correspond to Homer identified motifs, were used to count the instances of highly enriched (logFC <3)Meis binding (200nt summit regions, FE ≥ 10) containing at least one motif. (C) Functional enrichment of motifs regions (-log10 p-value) and their intersections. Venn diagram shows the intersection of Meis-bound regions containing each motif and their corresponding top three GO biological processes. In Meis regions containing GATA motifs, the term ‘muscle development’ did not appear in the full list. ‘Blood vessel morphogenesis’ was also associated to Forkhead-containing regions. TEAD- containing regions did not return any significant term. 1. (Donaldson et al., 2012); 2. (Han et al., 2016); 3. (Nakagawa et al., 2013); 4. (Hollenberg et al., 1995); 5. (Diepenbruck et al., 2014).
+
+### Gata6 binding is associated with transcription of genes involved in vascular development
 
 To explore the role of Gata6, we examined its genomic localization in the PBA/OFT tissue at E11.5. Using chromatin immunoprecipitation followed by next-generation sequencing (ChIP-seq), we identified 5122 bound regions with fold enrichment (FE) ≥ 10 (Supplementary file 3). Gata6 peaks are mostly distributed in intergenic and intronic regions, and a significant percentage overlaps promoters (Figure 4A and Figure 4—figure supplement 1A). We observed high Gata6 peaks at Gata6 and Gata4 loci, which suggest that GATA TFs regulate their own genes in the PBA/OFT (Figure 4B). Accordingly, in E12.5 heart ventricles, Gata4 binds at the same locations in the Gata6 gene (He et al., 2014). To characterize Gata6 binding, we performed de novo motif discovery on Gata6 peak summits (200nt). The most significantly enriched motif matched motifs characterized previously for members of the GATA family (DeVilbiss et al., 2016) (Figure 4C), with >90% of bound regions containing at least one GATAR consensus binding sequence. The second top motif was the previously identified recognition sequence for the TEAD family of TFs (Figure 4—figure supplement 1B and Figure 3E). Functional annotation of Gata6 peaks using GREAT (McLean et al., 2010) identified almost exclusively cardiovascular-related GO terms, such as ‘heart and OFT morphogenesis’ and ‘artery morphogenesis’ (Figure 4—figure supplement 1C). Strikingly, and supporting a regulatory activity for Gata6 binding, Gata6 peaks clustered around genes whose mutations cause defects that mirror Gata6 loss of function phenotypes in the PBA/OFT, such as ‘abnormal outflow tract development’ and ‘heart and great artery attachment’ (Figure 4D). Next, we asked whether Gata6 binding functions to control gene expression. We first generated independent genome-wide maps of H3K27ac in E11.5 PBA/OFT and BA2 to delineate active enhancers and promoters (Creyghton et al., 2010). Tissue-specific H3K27ac signatures at promoters and distal sites correlated with gene expression differences between PBA/OFT and BA2 (Figure 4E), confirming that H3K27Ac decorates regions actively engaged in promoting gene expression. Regions marked by H3K27ac in the PBA/OFT overlapped with a large fraction of Gata6 sites (42%) (Figure 4F and Supplementary file 3). Gata6 sites had the highest degree of overlap with PBA-specific enhancers (820 PBA-specific and 98 BA2-specific regions) (Figure 4G), which were also significantly associated with DE genes enriched in the PBA/OFT (24.5% of Gata6-bound enhancers were associated with PBA/OFT-enriched genes compared to 11.1% for the entire set of acetylated regions in the PBA; p-value=2.2e-16). These observations suggest that Gata6 binds to distal enhancers and activates gene expression. Notably, active enhancers bound by Gata6 were significantly associated with PBA-enriched genes, involved in ‘vasculature’ and ‘blood vessel development’ (Figure 4—figure supplement 1D); these include components of the Notch signaling pathway (Notch1, Hes1 and Jag1), which is essential for cardiac NC differentiation to SMCs (High et al., 2007; Manderfield et al., 2012), and the master regulator of SMC differentiation Myocd (Wang et al., 2003). Promoters associated with active enhancers bound by Gata6 were also significantly enriched in GATA and TEAD recognition motifs, further suggesting that the GATA/TEAD module is a regulatory feature of the PBA/OFT transcriptional network (Figure 4—figure supplement 1E). We detected prominent Gata6 peaks at Jag1 and Myocd loci (Figure 4H,I), contained in regions highly acetylated in PBAs but not acetylated in BA2, as expected for active, tissue-specific enhancers (henceforth referred to as Jag1 Cis Regulatory Element (CRE) one and Myocd CRE 1–2; VISTA was reported to drive heart-specific activity (Visel et al., 2007). When tested in zebrafish, Jag1 CRE1 and Myocd CRE1 and CRE2 displayed high activity in the heart region (Figure 4H,I and Figure 4—figure supplement 2A,C). Each CRE contains at least two GATA recognition motifs (Figure 4—figure supplement 2B). By introducing mutations in the GATA consensus motifs (Figure 4—figure supplement 2B,C), we detected a highly significant reduction in the activity of the mutant Jag1 CRE1 and Myocd CRE2 GFP reporters in developing zebrafish embryos, demonstrating that direct binding of GATA TFs to these elements instructs their tissue-specific activity (Figure 4H,I and Figure 4—figure supplement 2C–E). In sum, Gata6 binding is associated with the active, tissue-specific regulation of known target genes involved in vasculature development. Gata6 binds to Jag1 and Myocd enhancers, whose activity requires intact GATA motifs, suggesting that Gata6 directly controls Jag1 and Myocd transcription. Regulation of these transcripts in combination would be expected to promote development of the AAs into mature blood vessels, equipped with a tunica media of SMCs.
 
-## Forced expression of GATA6 in the neural crest generates SMCs
+![Figure 4.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig4-v2.jpg)
+
+**Figure 4.:** (A) CEAS analysis of the distribution of Gata6 peaks relative to Reference Sequence (RefSeq) gene structures. The pie chart and corresponding percentage values indicate the proportion of reads. (B) UCSC browser tracks shows Gata6 binding (gray regions) at Gata4 and Gata6 loci. Red lines indicate Gata4 binding in E12.5 ventricles. (C) Sequence logo of the most significant motifs identified using de novo motif discovery. (D) Top over-represented mouse phenotypes associated to Gata6 peaks. The x axes values correspond to the binomial raw (uncorrected) p-values. (E) Scatterplot of the Log2(ratio of FPKM) values for DE genes between PBA and BA2 versus the Log2(ratio of RPKM) values of their H3K27ac signals at promoters and distal regions (Correlation: 0.694; p<2.2e-16). (F) Venn diagram (not proportional) of Gata6 peaks (200nt summits) and H3K27Ac-positive regions in the PBA/OFT. Almost half of Gata6 peaks overlap regions acetylated in the PBA/OFT. (G) Heatmap of Gata6 peaks and corresponding H3K27ac peaks (within 5000 nt of the summit) shows most Gata6 peaks overlap PBA/OFT-specific enhancers (n = 820), and only a minority of BA2-specific enhancers (n = 98). Regions detected as H3K27Ac-positive in both PBA/OFT and BA2 were excluded from this analysis. (H, I) UCSC browser tracks. RNA-seq and ChIP-seq profiles for Gata6 binding and H3K27Ac in the PBA/OFT and H3K27Ac in the BA2 at Jag1 (H) and Myocd (I) loci. Gata6 binds regions highly acetylated in PBA/OFT, but not BA2 (boxed; VISTA highlights a heart-positive enhancer). Numbers correspond to the % of embryos injected with wild-type (upper row, in black) and mutant (lower row, in red) enhancers, displaying reporter activity in the heart in addition to the midbrain (positive control); asterisks denote p-value<0.05 (Fisher's Exact Test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) CEAS analysis of the distribution of Gata6 peaks relative to Reference Sequence (RefSeq) gene structures. Numbers correspond to percentage values; the proportion of reads is shown in the pie chart In Figure 4A. (B) Sequence logo of motifs identified by Homer. (C) Top over-represented biological processes associated to Gata6 peaks. The x axes values correspond to the binomial raw (uncorrected) p-values. (D) Top over-represented biological processes associated to PBA/OFT-specific enhancers bound by Gata6 (n = 820). (E) Predicted motifs in promoters associated to PBA/OFT-specific enhancers bound by Gata6 (n = 820).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) GFP reporter activity in Myocd CRE1 lines. Lines were derived from embryos injected with Myocd CRE1. Myocd CRE1 drives GFP in the heart and in vessels-like structures. The construct also contains a control enhancer, which drives GFP activity in the midbrain. (B) Genomic coordinates (mm9) and nucleotide sequence of the regions injected in zebrafish. The overall mammal conservation is shown, together with the sequence conservation and position of the GATA motifs. In mutant enhancers, each GATA was replaced by GCCA. (C) Activity of the wild-type (blue) and corresponding mutant (red) enhancers expressed as percentage of midbrain GFP-positive embryos (positive control) also showing GFP expression in the heart. For each wild-type and mutant enhancer, numbers on the x axis correspond to the total number of midbrain-positive embryos; asterisks denote p-value<0.05 (Fisher's Exact Test: Myocd CRE1 p-value=0.07686; Myocd CRE2 p-value=1.838e-13; Jag1 CRE: p-value=3.978e-05). (D, E) GFP reporter activity in embryos injected with wild-type (H) and mutant (I) Jag1 CRE1. M, midbrain; me, melanocytes; h, heart.
+
+### Forced expression of GATA6 in the neural crest generates SMCs
 
 Gata6 is specifically expressed in the PBA/OFT, as vascular SMCs are recruited to the AAs, and Gata6 binding is associated with tissue-specific transcription of genes controlling SM and vascular development. Next, we asked if GATA6 is sufficient to promote vascular SMC differentiation in the BAs. To force Gata6 expression in NC cells migrating into anterior BAs, we created transgenic embryos expressing Gata6 under the control of the Hoxa2 enhancer, which drives expression in the cranial NC directed to BA2 (Nonchev et al., 1996). We imaged a subset of a2::Gata6 embryos (7 out of 11) to monitor SMC differentiation, and observed ectopic SMCs in the BA2 of all embryos expressing Gata6 in this BA at E10.5 (5/5) (5D and Figure 5—figure supplement 1D,E). Small clusters of ectopic SMCs were also visible along the NC migration route, before ingression into BA2 (Figure 5—figure supplement 1E, asterisk). While dissecting, we observed blood in the BA2 in the majority of transgenic embryos, a sign of a patent artery. Indeed, we observed persistent AA2 in the majority of a2::Gata6 embryos with ectopic Gata6 and SMCs in the BA2 at E10.5 (3/5; Figure 5E; Figure 5—videos 1–4). Conversely, we did not detect any SMCs in BA2 of control littermates (n = 11; Figure 5A and Figure 5—figure supplement 1B) or unrelated wild-type embryos analyzed (n > 30), and in all these cases the AA2 had completely regressed at this stage (Figure 5B; see also Figure 2). We extracted RNA from four additional, independent transgenic embryos to measure changes in gene expression. Consistent with Gata6 functional binding at Myocd and Jag1 enhancers, we observed a significant increase in Myocd and Jag1 levels in the BA2 of all transgenic embryos overexpressing Gata6 (Figure 5G). Concomitantly, we detected a marked upregulation of SMC-specific markers in the BA2 of all a2::Gata6 embryos, which displayed a visible ectopic artery in the BA2 (3 out of 4; Figure 5G). These results show that forced Gata6 expression in the NC is sufficient to initiate SMC differentiation and causes the persistence of AAs that regress under normal conditions. The presence of SMCs in all the transgenic embryos with persistent AA2 suggests that the primary effect of GATA6 is to generate SMCs and that the presence of these cells can, in most cases, stabilize the AA2 and promote its preservation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig5-v2.jpg)
+
+**Figure 5.:** Confocal analysis of whole mount wild type (A–C) and a2::Gata6 transgenic mouse embryos (D–F) at E10.5 (s ≥ 32) to visualize vascular SMCs (a-SMA, red) (A, D), the endothelial network (PECAM, green) (B, E) and SMA/PECAM overlay (C, F); see also Figure 5—videos 1–4. (A-C) In wild-type embryos, SMA-positive cells are visible in the AA3, the dorsal aorta and the heart, but are not detected in BA2, where AA2 has regressed to a capillary bed (see also Figure 2). D-F, In a2::Gata6 embryos, vascular SMCs are detected in the BA2 (arrows in D). In the majority of transgenic embryos analyzed, the BA2 hosts a persistent artery connected to the heart (arrow in E). For best visualization of the ectopic AA2, an individual z-stack is shown in (D–F); the complete z-stack series is shown in Figure 5—videos 3–4. (G) Quantitative RT-PCR analysis of changes in gene expression in a::Gata6 embryos (s ≥ 37) and littermate controls. The wild-type values are presented as a mean ± SEM of two technical replicates of four independent embryos. For each transgenic embryo, the average of two technical replicates ± SEM is shown. Transgenic embryos 2–4 showed evidence of a functional AA2. Conversely, transgenic embryo one did not show significant upregulation of SMC-markers relative to wild-type; this embryo had no evidence of ectopic AA2. Asterisks (***) correspond to pvalues < 0.005; NS = not significant. All the results of transgenic embryos analyses are summarized in Figure 5—source data 1. Ao, dorsal aorta; numbers indicate BAs and corresponding AAs. Asterisks label the OFT.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31362/elife-31362-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Confocal analysis of whole mount wild type (A–C) and a2::Gata6 embryos (D–F) at E10.5 to visualize Gata6 (A, D, green) and VSMCs (C, E a-SMA, red) and Gata6/SMA overlay (C, F). (A–C) High levels of Gata6 are detected in the PBAs (see also Figure 3G). SMA-positive cells are visible in the AA3, the dorsal aorta and the heart, but are not detected in BA2. (D–F) Expression of Gata6 in the NC migrating to the BAs (arrow), in BA2 (2, arrow) and in PBAs in a2::Gata6 transgenic embryos. Ectopic SMCs were exclusively detected in transgenic embryos displaying Gata6 overexpression. Gata6 expression largely overlaps with SMA staining in the aortic arches of transgenic embryos. A cluster of Gata6-positive, SMA-positive cells is observed along NC migration route (asterisk).
 
 ## Discussion
 
@@ -71,7 +107,7 @@ The mature arterial tree emerges from the selective regression, survival and reo
 
 **Figure 6.:** Gata6 activates Myocd and Jag1 to initiate SMC differentiation in the cardiac NC, migrating to BA3-6. Generation of SMCs in BA3-6, and their recruitment by AA3-6, results in the stabilization of these vessels and their subsequent incorporation into the mature aortic tree. Conversely, because Gata6 is not expressed in BA1-2, AA1-2 do not ‘see’ any SMC and eventually regress. Auto-regulatory loops involving GATA TFs are likely features of Gata6 network. Arrows and double arrow indicate regulation and interaction, respectively; broken arrows indicate links that are not experimentally validated.
 
-## GATA TFs and control of vascular SMCs development
+### GATA TFs and control of vascular SMCs development
 
 A likely possibility, based on our results, is that the distribution of SMCs within the BA area is a direct effect of Gata6 dichotomic expression, and its restriction to the cardiac NC (migrating into BAs 3–6). Positive auto-regulatory loops are a common feature of gene regulatory network. Gata6 occupancy at Gata6 and Gata4 loci, together with the high levels of Gata4, Gata5 and Gata6 transcripts in the PBA/OFT, suggest that GATA TFs regulate their own genes. However the mechanism that initiates and restricts expression of GATA TFs to the cardiac NC is not clear. The BA2 appears to be a non-permissive environment for cardiac fate (Shenje et al., 2014). Secondary heart field (Kelly et al., 2001) progenitor cells only differentiate into cardiac cells when they migrate out of the BA2, or when epithelial-free BA2 cells are grown in vitro, suggesting that signals within the BA2 support the proliferation of cardiac precursor and prevent their differentiation. An intriguing possibility is that the same signals inhibit expression of GATA TFs, which are essential for cardiac development (Pikkarainen et al., 2004), in the NC cells that populate the anterior BA2, and block SMC fate.
 
@@ -83,7 +119,7 @@ Gata6 is highly expressed in vascular SMC in mouse embryonic and postnatal devel
 
 Mutations in GATA6 cause PTA (Kodo et al., 2009) and haploinsufficiency of JAG1 (a Gata6 target detected in this study) causes Alagille syndrome, a congenital disorder associated with OFT and great vessels defects (Li et al., 1997; Oda et al., 1997). This set of newly identified Gata6 enhancers represent an important resource to map functional non-coding regions of the genome, whose genetic variants may lead to congenital heart disorders.
 
-## NC differentiation to SMCs and the remodeling of the great vessels
+### NC differentiation to SMCs and the remodeling of the great vessels
 
 We have identified Gata6 as a key factor promoting initial survival of AAs during the early stages of reorganization of the embryonic aortic arch tree. How does Gata6 support survival of these vessels? A large body of evidence indicates a striking correlation between the presence of SMCs and the fate of the AAs. During normal embryonic development vessels that will be retained, and later incorporated into the mature circulation (AA3-6), become associated with SMCs, while vessels that regress (AA1-2) do not. This correlation extends to a number of experimental conditions affecting normal remodeling of the AAs. For instance, in Edn1 and Ednra mutant embryos, AA2s form correctly, but fail to regress and are wrapped by SMCs (Kim et al., 2013b). Similarly, we have shown here that forced Gata6 expression in BA2 NC cells promote AA2 survival and that this active vessel is also associated with SMCs. Conversely, in Hoxa3 null mutant embryos AA3 fail to recruit SMCs and exhibit bilateral degeneration by E11.5 (Kameda, 2009). Likewise, in NC- ablated chick embryos AA3 formed normally, but became progressively more misshapen (Waldo et al., 1996). In embryos with right-sided aortic arch (in which right, rather than left, AA4-6 are selected for reorganization into the arch of the aorta and the ductus arteriosus), the distribution of SMCs changed to follow the mature fate of each artery (Jiang et al., 2000). Thus, SMCs specifically associate with vessels selected for preservation and subsequent incorporation into the mature heart circulation. In this study, we show that preservation of AA2 is associated with ectopic SMCs in BA2. We cannot entirely exclude that development of SMCs is secondary to the stabilization of AA2 induced by Gata6. However, we observed ectopic SMCs in all embryos expressing Gata6, including the ones where the AA2 regressed as in wild-type embryos, suggesting that the primary effect of Gata6 ectopic expression consists in SMCs development, and that SMCs subsequently promote maturation and stabilization of the vessels. Recruitment of mural cells is an essential step in the maturation of blood vessels. Mural cells form a muscular wall, which protect endothelium-lined vessels against rupture or regression. They also stabilize nascent vessels by suppressing endothelial proliferation and migration and stimulating the production of extracellular matrix (Jain, 2003). Indeed, blocking the interaction of mural cells with endothelial cells results in loss of vessels integrity and excessive regression of the retina vasculature (Benjamin et al., 1998). Together, these observations support a model in which association of vascular SMCs with the wall of the AAs is a major determinant of the physiological preservation of the posterior AAs (and its absence of the regression of anterior AAs). SMCs form the tunica media, which acts to support vessel integrity under hemodynamic load and is especially critical for the major arteries (the vessels that derive from the AAs). Consistently, the availability of SMCs and their association with the AAs could act as a major determinant in selecting those vessels that will be reorganized into the mature aortic tree.
 
@@ -91,9 +127,366 @@ Changes in blood flow lead to asymmetric remodelling of the embryonic circulatio
 
 ## Materials and methods
 
-## Key resources table
+### Key resources table
 
-## Animals
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Mus musculus)</td>
+      <td>mouse CD1</td>
+      <td>Other</td>
+      <td>Other</td>
+      <td>University of Manchester Mouse Facility</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Danio rerio)</td>
+      <td>zebrafish</td>
+      <td>Other</td>
+      <td>Other</td>
+      <td>University of Massachusetts Medical Center zebrafish Facility</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PECAM-1 (rat monoclonal)</td>
+      <td>BD Pharmigen</td>
+      <td>BD Pharmigen:550274</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-actin, α-SMA, Cy3 conjugated (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: C6198</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rat IgG Alexa 488-conjugated (goat polyclonal)</td>
+      <td>Molecular probes</td>
+      <td>Molecular probes: A-11006</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Gata6 (rabbit monoclonal)</td>
+      <td>Cell signalling</td>
+      <td>Cel signalling: 5851</td>
+      <td>IF: (1:1000); ChIP: (5 μg)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Meis1/2 (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz: sc-10599X</td>
+      <td>ChIP: (5 μg)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-H3K27ac (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam: ab4729</td>
+      <td>ChIP: (5 μg)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Minitol2-GwB-zgata2-GFP-48</td>
+      <td></td>
+      <td></td>
+      <td>Provided by JL Skarmeta</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Myocd-CRE2</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Myocd-CRE1</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Jag1-CRE1</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Myocd-CRE2mut</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Myocd-CRE1mut</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Jag1-CRE1mut</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Gata6 cDNA</td>
+      <td>Origene</td>
+      <td>MC219384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>a2::Gata6</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Meis ISH probe</td>
+      <td>Other</td>
+      <td>Other</td>
+      <td>Provided by D. Schulte</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Actb</td>
+      <td>Primerbank</td>
+      <td>6671509a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Gata6</td>
+      <td>Primerbank</td>
+      <td>33859556a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Acta2</td>
+      <td>Primerbank</td>
+      <td>6671507a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Tagln</td>
+      <td>Primerbank</td>
+      <td>6755714a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Cnn1</td>
+      <td>Primerbank</td>
+      <td>1069993a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Jag1</td>
+      <td>Primerbank</td>
+      <td>7305197a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Myocd</td>
+      <td>Primerbank</td>
+      <td>21553083a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Jag1-CRE1 forward</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td>AAATCACTGTCATAATTGTCCCAAA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Jag1-CRE1 reverse</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td>TCAGGGCTTCCCACTGCTA</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Myocd-CRE1 forward</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td>TGCATGCTGCCCCCATCAAT</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Myocd-CRE1 reverse</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td>GAGGCGCAACCCAATGT GC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Myocd-CRE2 forward</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td>TCTGGACAGCTGACACCCTTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Myocd-CRE2 reverse</td>
+      <td>This paper</td>
+      <td>Other</td>
+      <td>TGAGCAATAAGGGACAGGAGC</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Gateway BP Clonase II Enzyme mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>pCR8/GW/TOPO TA Cloning Kit with One Shot TOP10 E. coli</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>450642</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>TruSeq ChIP Sample Preparation kit</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA Sample Preparation Kits</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>QIAquick Gel Extraction Kit</td>
+      <td>Qiagen</td>
+      <td>28704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>RNeasy Plus Micro Kit</td>
+      <td>Qiagen</td>
+      <td>74034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Methyl Salicylate</td>
+      <td>Sigma-Aldrich</td>
+      <td>M2047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15596–018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Amira software</td>
+      <td>FEI</td>
+      <td>Version 6.4.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MACS</td>
+      <td>Zhang et al., 2008</td>
+      <td>MACS2.0.10.20131216</td>
+      <td>https://pypi.python.org/pypi/MACS2/2.0.10.20131216</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Trimmomatic</td>
+      <td>Bolger et al., 2014</td>
+      <td>v0.32</td>
+      <td>http://www.usadellab.org/cms/?page=trimmomatic</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Bowtie</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>Bowtie(v1.1.1)/Bowtie(v2.2.3)</td>
+      <td>https://sourceforge.net/projects/bowtie-bio/files/bowtie2</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GREAT</td>
+      <td>McLean et al., 2010</td>
+      <td>Other</td>
+      <td>http://bejerano.stanford.edu/great/public/html/</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>TopHat</td>
+      <td>Kim et al., 2013a</td>
+      <td>TopHat (v2.1.0)</td>
+      <td>https://github.com/infphilo/tophat</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Cufflinks</td>
+      <td>Trapnell et al., 2010</td>
+      <td>Cufflinks(v2.2.2)</td>
+      <td>https://github.com/cole-trapnell-lab/cufflinks</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>edgeR</td>
+      <td>Robinson et al., 2010</td>
+      <td>edgeR (v3.12.1)</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/edgeR.html</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Homer</td>
+      <td>Heinz et al., 2010</td>
+      <td>Other</td>
+      <td>http://homer.salk.edu/homer/</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>DiffReps</td>
+      <td>Shen et al., 2013</td>
+      <td>Other</td>
+      <td>https://code.google.com/p/diffreps/under</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Wild-type (CD1) mice were time-mated to obtain embryos for microdissections. For experiments, embryos were not selected for gender and were used between E10.5 and E11.5.
 
@@ -101,28 +494,28 @@ Wild-type zebrafish were raised in the Animal Facility at the University of Manc
 
 Experiments on animals followed the local (ASPA 1986, UK; Portaria 1005/92 and Directive 2010/63/EU, P) legislations concerning housing, husbandry, and welfare.
 
-## Generation of mouse transgenic embryos
+### Generation of mouse transgenic embryos
 
 The a2::Gata6 transgenic construct contained the BA2 enhancer of the Hoxa2 gene (Nonchev et al., 1996) linked to a minimal promoter (Kanzler et al., 1998), cloned upstream of the Gata6 cDNA (Origene) and a SV40 polyadenylation signal. The construct was gel purified using the QIAquick gel extraction kit (Qiagen, UK) and used to produce transgenic embryos by pronuclear injection (Hogan et al., 1994). Embryos were genotyped by PCR on yolk sac genomic DNA, using oligonucleotides designed on the Hoxa2 promoter and Gata6 cDNA. We obtained a total of 11 transgenic embryos, seven were processed for confocal imaging and four for RNA extraction. Embryos were recovered at E10.5, fixed in 4% paraformaldehyde overnight at 4°C and taken to methanol through a graded methanol PBT (PBS containing 0.1% Tween 20) series and stored at −20°C until further processed for imaging. For gene expression analysis, embryos were isolated at E10.5 and BA2 were dissected from individual embryos and snap frozen in dry ice. RNA was extracted from individual BA2 pairs using RNeasy Plus Micro Kit (Qiagen), transcribed into cDNA and analysed using StepOnePlus Real_Time PCR Systems (Life Technologies) and PrimerBank primers (Spandidos et al., 2010). To compute the statistical significance of the qPCR data we used Zscore transformation. Zscores were calculated by subtracting the average of 2-ΔΔCt values of each gene in the WT from the 2-ΔΔCt value of the corresponding gene in the transgenic, and then dividing the result by the standard deviation of all 2-ΔΔCt values for the gene in WT. The Zscores thus obtained were converted into pvalues using the Rpackage pnorm.
 
-## Generation of zebrafish transgenic embryos
+### Generation of zebrafish transgenic embryos
 
 Embryos and adults zebrafish were maintained under standard laboratory conditions. Enhancers were amplified from mouse genomic DNA using the primers (listed in Key resources table), cloned into pCR8/GW/TOPO vector (Life Technologies) and recombined using the Gateway system (Life Technologies) to an enhancer test vector that includes a strong midbrain enhancer (Minitol2-GwB-zgata2-GFP-48, a kind gift from JL Skarmeta) as an internal control. The mutant enhancers were generated by Genscript in a pUC57 vector, PCR amplified and cloned into Minitol2-GwB-zgata2-GFP-48 as described above. Zebrafish embryos were collected from natural spawning. The plasmid DNA was injected into the cytoplasm of embryos at the one-cell stage. Injected embryos were visualized at 48 hr post fertilization using a Leica fluorescent stereomicroscope. Fisher Exact test was performed to test the changes in activity of the wildtype and mutant enhancers.
 
-## ChIP-seq and downstream analyses
+### ChIP-seq and downstream analyses
 
 CD1 mice were time-mated to obtain branchial arches and OFT from E115 embryos. ChIP-seq has been described in detail (Donaldson et al., 2012). The antibodies used were: Gata6 (Cell Signaling, RRID:AB_10705521), Meis (Santa Cruz Biotechnology, RRID:AB_2143020) and H3K27ac (Abcam, RRID:AB_2143020). Following Chromatin-immunoprecipitation (ChIP), DNA libraries were constructed using the TruSeq ChIP Sample Preparation Kit (Illumina, Inc.). The final purified product was sequenced on an Illumina HiSeq2500 instrument. For histone ChIP-seq, single-end reads were trimmed to 50 base pairs (bp) and mapped to mouse reference sequence (mm9/NCBI37) using Bowtie v1.0.0 (RRID:SCR_005476). Peak calling was done using MACS2.0 (Zhang et al., 2008) (RRID:SCR_013291). For Gata6 and Meis ChIP-seq, read pairs (R1 and R2) were filtered using Trimmomatic v0.32 (Bolger et al., 2014) (RRID:SCR_011848) using paired-end mode, to remove adapters, and truncated reads (3') with a base sequence quality of <Q20. Filtered reads <50 bp were removed. Filtered paired reads were mapped to mouse reference sequence (mm9/NCBI37) using Bowtie2 v2.2.3 with default parameters. Mapped paired-reads were filtered with 'samtools' v0.1.19, to remove reads with mapping quality <Q30 and discordant pairs (i.e. incorrect orientation and/or > 500 bp apart). Peak calling was done using MACS 2 v2.1.0. Binding regions were reported with a minimum q-value of 0.05. For all ChIP-seq only paired reads belonging to chromosomes 1–19, X and Y were used in downstream analyses. Narrow peaks (TF ChIP-seq) were filtered using FE ≥ 10. Each experiment was performed in duplicate; for H3K27Ac and Meis ChIP-seq, two replicates were intersected and peaks present in both replicates were used in downstream analyses. For Gata6 replicate 1 was used for downstream analysis; replicate 2 resulted in fewer binding regions with FE ≥ 10 (=693), which were almost entirely contained in replicate 1 (97%). Details of all ChIP-seq experiments (e.g. number of reads, etc) are provided in Supplementary file 4. ChIP-seq peaks were associated to genes using GREAT (version 2.0.2; RRID:SCR_005807) (McLean et al., 2010) (http://great.stanford.edu/) and the ‘basal plus extension’ association rule. The comparison of genome coordinates used GALAXY (Goecks et al., 2010). De novo motif discovery was done using the ‘findMotifGenome’ module of the HOMER package (Heinz et al., 2010) (RRID:SCR_010881) on Gata6 peaks with FE ≥ 10, extended 100 bp from the summit position in each direction. DiffReps (Shen et al., 2013) (RRID:SCR_010873) was used to detect differential binding of Meis across PBA/OFT and BA2. Meis ChIP-seq experiments in PBA/OFT and BA2 (binding locations) were compared using a 200 nt sliding window. Regions with logFC ≥3 binding in PBA versus BA2 were selected and intersected with Meis ChIP-seq 200nt summits in PBA, FE ≥ 10, for de novo motif discovery using HOMER. The workflow is summarized in Supplementary file 5.
 
 Heatmaps for Gata6 and H3K27ac peaks in PBA/OFT and BA2 were generated using the histogram matrix produced by ‘annotatePeaks’ module of HOMER package and an R script. For each dataset, peaks were extended to 5 kb from the summit in each direction. The analysis of gene annotation enrichment was performed using GREAT and the ‘basal plus extension’ association rules. The ratio of the H3K27ac signal for up and down regulated gene in PBA/OFT and BA2 was computed and plotted against the ratio of their corresponding gene expression values (FPKM) using the RNA-seq data. H3K27ac signals for all DE genes were represented by the average RPM (reads per million mapped reads) values of all peaks annotated to the respective gene. For all upregulated (or downregulated) genes, average RPM of their associated regions in PBA (or BA2) were divided by the average RPM values of the corresponding regions in BA2 (or PBA).
 
-## RNA-seq and downstream analyses
+### RNA-seq and downstream analyses
 
 Branchial arches and OFT were dissected and snap frozen in dry ice. RNA was extracted using Trizol (Life Technologies), pooling 3–5 pairs of BAs for each sample. Embryos with 38–39 (TS17) and 48–50 somites (TS19) were used for E10.5 and E11.5 time points, respectively. RNA-seq was performed in duplicate and the quality of duplicates assessed using PCA. Library preparation of samples was performed using the Illumina TruSeq Stranded mRNA Sample Preparation Kit (Illumina). Fastq files for each tissue were mapped against the mouse genome (mm9) using the spliced aligner Tophat (v2.1.0, RRID:SCR_013035) (Kim et al., 2013a) with default parameter settings. rRNA transcripts were removed from the mapped bam files. Details of all RNA-seq experiments (e.g. number of reads, etc) are provided in Supplementary file 4. Expression levels for each tissue were quantified using Cuffdiff program in the Cufflinks package (v2.2.2; RRID:SCR_014597; RRID:SCR_001647) (Trapnell et al., 2013), which estimates the raw counts and FPKM values for each gene. FPKM values were used for the correlation plot to assess the global expression profile. The raw counts from the cuffdiff were subsequently used to quantify the differential expression levels for genes using the package edgeR (v3.12.1; RRID:SCR_012802) (Robinson et al., 2010). Multiple testing correction was done using the R package qvalue (Storey et al., 2015). LogFC of the genes was plotted against their log10 (qvalues) as a volcano plot to give an overview of significant DE genes. Hierarchical clustering of different tissues at the two time points was performed using log2 transformed CPM values and heatmaps plotted using the R package hclust and heatmap2. Clustering was performed employing Euclidean distance as the similarity metric and average linkage as the clustering method.
 
-## Immunofluorescence and in situ hybridization
+### Immunofluorescence and in situ hybridization
 
 Immunofluorescence on whole mount embryos was adapted from previously described protocols (Foo et al., 2006). Embryos were incubated overnight at 4°C with the primary antibody, rat anti-mouse PECAM-1 (BD Pharmingen, RRID:AB_393571, 1:100) or Gata6, washed and incubated overnight at 4°C with α-SMA, Cy3-conjugated (Sigma-Aldrich, RRID:AB_476856) and goat anti-rat IgG Alexa 488-conjugated (Invitrogen, RRID:AB_141373, 1:100). After washing, embryos were dehydrated and mounted in Methyl Salicylate (Sigma-Aldrich, M2047) for clearing. Images were collected on a Leica TCS SP5 AOBS inverted confocal microscope and processed using ImageJ (v1.48). Amira software (Version 6.4; FEI, RRID:SCR_014305) was used to create the reconstructions of complete z-stacks of wild-type and transgenic embryos. Sagittal sections of paraffin embedded E10.5 embryos were labeled using the antibodies described above. In situ hybridization was carried out as described previously (Kanzler et al., 1998), using Meis1 probe (a gift from Dorothea Schulte).
 
-## Data availability
+### Data availability
 
 The ChIP-seq and RNA-seq experiments have been submitted to ArrayExpress. (accession numbers: E-MTAB-5407, E-MTAB-5536 and E-MTAB5394).

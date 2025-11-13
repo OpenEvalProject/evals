@@ -25,7 +25,7 @@
 
 ## Abstract
 
-The basolateral amygdala (BLA) plays a vital role in associating sensory stimuli with salient valence information. Excitatory principal neurons (PNs) undergo plastic changes to encode this association; however, local BLA inhibitory interneurons (INs) gate PN plasticity via feedforward inhibition (FFI). Despite literature implicating parvalbumin expressing (PV + ) INs in FFI in cortex and hippocampus, prior anatomical experiments in BLA implicate somatostatin expressing (Sst + ) INs. The lateral entorhinal cortex (LEC) projects to BLA where it drives FFI. In the present study, we explored the role of interneurons in this circuit. Using mice, we combined patch clamp electrophysiology, chemogenetics, unsupervised cluster analysis, and predictive modeling and found that a previously unreported subpopulation of fast-spiking Sst + INs mediate LEC→BLA FFI.
+The basolateral amygdala (BLA) plays a vital role in associating sensory stimuli with salient valence information. Excitatory principal neurons (PNs) undergo plastic changes to encode this association; however, local BLA inhibitory interneurons (INs) gate PN plasticity via feedforward inhibition (FFI). Despite literature implicating parvalbumin expressing (PV+) INs in FFI in cortex and hippocampus, prior anatomical experiments in BLA implicate somatostatin expressing (Sst+) INs. The lateral entorhinal cortex (LEC) projects to BLA where it drives FFI. In the present study, we explored the role of interneurons in this circuit. Using mice, we combined patch clamp electrophysiology, chemogenetics, unsupervised cluster analysis, and predictive modeling and found that a previously unreported subpopulation of fast-spiking Sst+ INs mediate LEC→BLA FFI.
 
 ## Introduction
 
@@ -39,21 +39,37 @@ Due to the relative scarcity of cortical afferent synapses onto BLA PV+ INs (Smi
 
 ## Results
 
-## LEC afferents preferentially drive disynaptic FFI in BLA
+### LEC afferents preferentially drive disynaptic FFI in BLA
 
 To examine how LEC afferents, a major cortical source of polysynaptic inhibition to BLA (Lang and Paré, 1997), engaged BLA neuronal circuitry, we prepared acute horizontal slices of mouse brain containing both BLA and LEC and recorded synaptic responses of BLA PNs (Figure 1A, B). A single stimulation of LEC elicited evoked EPSCs (EPSCs) and IPSCs (IPSCs) in PNs (Figure 1B). EPSCs were blocked by glutamate receptor antagonists DNQX (20 μM) and D-APV (50 μM) but not by the GABAA receptor antagonist gabazine (gbz; 5 μM) (Figure 1C, D; p = 6.72 × 10−4, Kruskal-Wallis test). In contrast, IPSCs were blocked by either gbz or DNQX/APV (Figure 1C, D; p = 6.45 × 10-4, Kruskal-Wallis test), consistent with a monosynaptic glutamatergic nature of the EPSCs and a polysynaptic GABAergic nature of the IPSCs. Additionally, IPSC onset was delayed relative to EPSC onset by ~3 ms (Figure 1E; p = 0.023, paired t-test) consistent with prior reports of polysynaptic inhibitory circuits in BLA (Arruda-Carvalho and Clem, 2014; Hübner et al., 2014; Lucas et al., 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig1-v2.jpg)
 
-**Figure 1.:** (A) Experimental schematic. (B) Representative image of experimental preparation. LEC and BLA as well as neighboring hippocampus and piriform cortex are labeled. The external capsule can be seen running laterally of BLA and forming its border with piriform cortex. Note the stimulation electrode positioned in LEC and recording pipette in BLA. (C) Representative traces of EPSCs and IPSCs in a BLA PN in response to LEC stimulation (top: control; middle: gbz, 5 μM; bottom: DNQX, 20 μM, D-APV, 50 μM). Arrowheads: stimulation (artifacts truncated). Scale bars: 100 pA, 10 ms. (D) EPSCs blocked by DNQX/APV (Kruskal-Wallis test: p = 6.72 × 10−4; ncontrol = 8, 4, ngbz = 7, 4, nDNQX/APV = 7, 4). IPSCs blocked by gbz and DNQX/APV (Kruskal-Wallis test: p = 6.45 × 10−4; ncontrol = 8, 4, ngbz = 7, 4, nDNQX/APV = 7, 4). (E) Onset latency of IPSC is delayed relative to the EPSC (paired t-test: p=0.023, n = 8, 4). (F) 20 voltage traces from a representative BLA PN (top: control; bottom: gbz) in response to 5 × stimulation of LEC at 20 Hz. Arrowheads: stimulation. Scale bars: 40 mV, 20 ms. (G) GABAA receptor blockade increases AP firing in BLA PNs in response to LEC stimulation (Wilcoxon signed-rank test: p=0.031, n = 8, 3). (H) Baseline Vm did not differ between control and gbz (Wilcoxon signed-rank test: p=0.38, n = 8, 3). Summary statistics in E presented as mean ± standard error of the mean (s.e.m.). Summary statistics in D, G, H presented as median with interquartile range (IQR). Individual data points presented adjacent to the summary statistics. *p < 0.05, ***p < 0.001. See Figure 1—source data 1 for a table with full details on all statistical tests used in this figure. See Figure 1—source data 2 for a table of all individual data points displayed in Figure 1.Figure 1—source data 1.Figure 1.Normal data data presented as mean ± s.e.m. Non-normal data presented as median and [1st quartile/3rd quartile].Figure 1—source data 2.Figure 1.
+**Figure 1.:** (A) Experimental schematic. (B) Representative image of experimental preparation. LEC and BLA as well as neighboring hippocampus and piriform cortex are labeled. The external capsule can be seen running laterally of BLA and forming its border with piriform cortex. Note the stimulation electrode positioned in LEC and recording pipette in BLA. (C) Representative traces of EPSCs and IPSCs in a BLA PN in response to LEC stimulation (top: control; middle: gbz, 5 μM; bottom: DNQX, 20 μM, D-APV, 50 μM). Arrowheads: stimulation (artifacts truncated). Scale bars: 100 pA, 10 ms. (D) EPSCs blocked by DNQX/APV (Kruskal-Wallis test: p = 6.72 × 10−4; ncontrol = 8, 4, ngbz = 7, 4, nDNQX/APV = 7, 4). IPSCs blocked by gbz and DNQX/APV (Kruskal-Wallis test: p = 6.45 × 10−4; ncontrol = 8, 4, ngbz = 7, 4, nDNQX/APV = 7, 4). (E) Onset latency of IPSC is delayed relative to the EPSC (paired t-test: p=0.023, n = 8, 4). (F) 20 voltage traces from a representative BLA PN (top: control; bottom: gbz) in response to 5 × stimulation of LEC at 20 Hz. Arrowheads: stimulation. Scale bars: 40 mV, 20 ms. (G) GABAA receptor blockade increases AP firing in BLA PNs in response to LEC stimulation (Wilcoxon signed-rank test: p=0.031, n = 8, 3). (H) Baseline Vm did not differ between control and gbz (Wilcoxon signed-rank test: p=0.38, n = 8, 3). Summary statistics in E presented as mean ± standard error of the mean (s.e.m.). Summary statistics in D, G, H presented as median with interquartile range (IQR). Individual data points presented adjacent to the summary statistics. *p < 0.05, ***p < 0.001. See Figure 1—source data 1 for a table with full details on all statistical tests used in this figure. See Figure 1—source data 2 for a table of all individual data points displayed in Figure 1.
 
 The two main archetypal circuit motifs that mediate polysynaptic inhibition are feedforward and feedback inhibition (Tremblay et al., 2016). In order to distinguish these motifs, we recorded from BLA PNs in response to a stimulus train of five pulses to the LEC at 20 Hz. If eIPSCs were the result of FFI alone, we would expect to see little to no AP activity in BLA PNs in response to stimulation. However, if the eIPSCs were a result of combined feedforward and feedback inhibition, we would expect to see the PNs fire in response to LEC stimulation. Recording from BLA PNs in current clamp (−60 mV), we found they rarely fired in response to stimulation (Figure 1F,G). These data suggest LEC stimulation preferentially drives FFI in BLA PNs.
 
 To determine whether our experimental setup recapitulates LEC suppression of BLA PNs, as found in vivo (Lang and Paré, 1997), we tested the effect of gbz on the firing of BLA PNs in response to LEC stimulation (Figure 1F–H). However, GABAA receptor antagonism might increase the firing of BLA PNs by bringing them closer to AP threshold via membrane depolarization. To control for GABAA receptor blockade induced depolarization of the recorded PNs, we maintained the membrane voltage (Vm) of the PNs at −60 mV throughout these experiments (Figure 1H; p=0.38, Wilcoxon signed rank test). gbz mediated blockade of FFI led to a significant increase in PN firing in response to LEC stimulation (Figure 1F,G; p=0.031, Wilcoxon signed rank test). These findings confirm that the horizontal slice preparation contained a functionally complete LEC→BLA circuit supporting its use for the study of FFI.
 
-## Cell type specificity of the LEC→BLA circuit
+### Cell type specificity of the LEC→BLA circuit
 
 We performed minimal stimulation experiments in the LEC→BLA circuit using whole cell patch clamp electrophysiology to examine putative unitary synaptic events between neurons (Gabernet et al., 2005; Kumar and Huguenard, 2001). Briefly, stimulation intensity was tuned to a threshold intensity where LEC stimulation elicits eEPSCs in BLA neurons with a ~ 50% success rate and an all-or-none amplitude (Figure 2—figure supplement 1); at lower stimulation intensities EPSCs do not occur. As these EPSCs likely represent the response of the neuron to the activation of a single LEC neuron, this method provides a reliable measure of the unitary EPSC (uEPSC) between the stimulated and recorded neurons (Gabernet et al., 2005; Kumar and Huguenard, 2001). To identify dendritic-targeting Sst+ and perisomatic-targeting PV+ INs in acute brain slices, we generated Sst-tdTomato and PV-tdTomato mouse lines by crossing Sst-ires-Cre and PV-ires-Cre mice to Ai9 tdTomato reporter line. Sst-tdTomato mice showed reliable labeling of Sst+ cells and low overlap with PV+ cells and PV-tdTomato mice showed reliable labeling of PV+ cells and low overlap with Sst+ cells (Figure 2—figure supplement 2). When minimally stimulating LEC we found that, whereas only a subset of BLA PNs (12/24 cells) and Sst+ INs (16/35 cells) responded with EPSCs, nearly every PV+ IN (15/16 cells) responded to the stimulation with an EPSC (Figure 2A,B). DNQX and D-APV abolished eEPSCs in all cell types, confirming the glutamatergic nature of the response (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental schematic. (B) Proportion of neurons with detectable uEPSCs following LEC stimulation. (C) Mean traces of uEPSC successes from representative neurons. Left to right: PN (gray), Sst+ IN with a detectable uEPSC (purple), PV+ IN (green). Lower middle: mean trace of lack of response in a representative Sst+ IN without a detectable uEPSC (pink). Arrowhead: truncated stimulus artifact. Scale bars: 5 pA, 5 ms. Insets: maximal firing to a current injection; scale bars: 20 mV, 200 ms. (D) uEPSC amplitude is larger in Sst+/PV+ INs compared to PNs (Kruskal-Wallis test: p = 5.55 × 10−4). (E) Left: uEPSC 20%-80% risetime is faster in Sst+/PV+ INs compared to PNs (Kruskal-Wallis test: p = 1.66 × 10−5). Right: uEPSC τDecay is faster in Sst+/PV+ INs compared to PNs (Kruskal-Wallis test: p = 2.18 × 10−5). (F) uEPSC threshold intensity is lower for Sst+ INs (Kruskal-Wallis test: p = 3.33 × 10−4). Summary statistics in D, E, and F presented as median with IQR. **p<0.01, ***p<0.001. For all statistical tests: nSst = 16, 8, nPV = 15, 5, nPN = 12, 8. See Figure 2—figure supplement 1 for example minimal stimulation experiments and data showing the glutamatergic nature of the LEC→BLA synapse. See Figure 2—figure supplement 2 for validation of the IN reporter mouse lines. See Figure 2—figure supplement 3 for additional characterization of the LEC→BLA circuit. See Figure 2—source data 1 for a table with full details on all statistical tests used in this figure. See Figure 2—source data 2 for a table of all individual data points displayed in Figure 2 and corresponding figure supplements.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Minimal stimulation experiment in a representative PN. Left: 20 overlaid sweeps in control conditions. Middle: 20 overlaid sweeps in the presence of 20 μM DNQX and 50 μM D-APV. Right: Trial by trial summary of peak amplitudes. Arrowheads denote stimulation artifacts. Scale bars: 25 pA, 10 ms. (B) Glutamate receptor blockade abolishes postsynaptic response in PNs (success rateCtrl = 62.50 [50.00/82.50] %, success rateDNQX/APV = 0.00 [0.00/0.00] %, p = 1.50 x 10−4, Mann-Whitney U test; nCtrl = 12 cells, 8 mice, nDNQX/APV = 8 cells, 7 mice; median [1st quartile/3rd quartile]). (C) As (A), but for a representative Sst+ IN. (D) As (B), but for Sst+ INs (success rateSCtrl = 67.5 [55.00/77.50] %, success rateDNQX/APV = 0.00 [0.00/0.00] %, p = 1.62 × 10−4, Mann-Whitney U test; nCtrl = 16 cells, 8 mice; nDNQX/APV = 7 cells, 6 mice). (E) As (A), but for a representative PV+ IN. (F) As (B), but for PV+ INs (success rateCtrl: 65 [56.25/73.75] %, success rateDNQX/APV = 0.00 [0.00/7.50] %, p = 5.33 × 10−6, Mann-Whitney U test, nCtrl = 15 cells, 5 mice, nDNQX/APV = 13 cells, 5 mice. In panels B, D, and F, data shown as median with IQR. ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Left: Representative confocal image of tdTomato fluorescence in a coronal section from a Sst-tdTomato mouse containing BLA. Scale bar: 100 μm. Middle: Representative confocal images of colocalization experiment in a Sst-tdTomato mouse. Left panel, tdTomato fluorescence. Middle panel, αSst or αPV immunofluorescence. Right panel, merge. Scale bar: 50 μm. (B) Percent colocalization of αSst or αPV immunofluorescence with tdTomato fluorescence in Sst-tdTomato mice (88.09 ± 3.67% colocalization of αSst/tdTomato, 13.28 ± 1.11% colocalization of αPV/tdTomato, n = 3 mice; mean ± s.e.m.). (C) Left: Representative confocal image of tdTomato fluorescence in a coronal section from a PV-tdTomato mouse containing BLA. Scale bar: 100 μm. Middle: Representative confocal images of colocalization experiment in a PV-tdTomato mouse. Left panel, tdTomato fluorescence. Middle panel, αSst or αPV immunofluorescence. Right panel, merge. Scale bar: 50 μm. (D) Percent colocalization of αSst or αPV immunofluorescence with tdTomato fluorescence in PV-tdTomato mice (18.34 ± 2.24% colocalization of αSst/tdTomato, 90.82 ± 1.34% colocalization of αPV/tdTomato, n = 3 mice)..
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Left: uEPSC latency does not differ across cell types (Sst+=8.66 ± 0.56 ms, PV+=7.72 ± 0.45 ms, PN = 8.67 ± 0.48 ms, one-way ANOVA: p=0.32). Right: uEPSC jitter does not differ across cell types (Sst+=1.14 ± 0.17 ms, PV+=1.35 ± 0.17 ms, PN = 1.40 ± 0.26 ms, one-way ANOVA: p=0.60). (B) No significant correlations between uEPSC amplitude and threshold stimulation intensity across cell types (rPN = 0.19, pPN = 0.56; rSst = 0.17, pSst = 0.52; rPV = 0.11, pPV = 0.71). Summary statistics in A presented as mean ± s.e.m. For all statistical tests: nSst = 16, 8, nPV = 15, 5, nPN = 12, 8..
 
 Next, we compared putative uEPSCs across cell types (Figure 2C-F). We found that the uEPSC amplitude was larger in Sst+ and PV+ INs compared to PNs (Figure 2D; p = 5.55 × 10−4, Kruskal Wallis test). Additionally, we found the uEPSC kinetics were faster in the INs compared to PNs (Figure 2E; 20%-80% risetime: p = 1.66 × 10−5, Kruskal Wallis test; τDecay: p = 2.18 × 10−5, Kruskal Wallis test). Finally, we found no differences between cell types in uEPSC latency or jitter (Figure 2—figure supplement 3). Together with our data demonstrating that BLA PNs rarely fire in response to LEC stimulation (Figure 1E, F), the statistically indistinguishable low jitters are consistent with a monosynaptic connection between LEC projection neurons and BLA Sst+ INs, PV+ INs, and PNs (Doyle and Andresen, 2001 ).
 
@@ -61,9 +77,21 @@ Since minimal stimulation likely reports the response of a BLA neuron to a singl
 
 Taken together, these data demonstrate that LEC stimulation leads to large and fast unitary currents in BLA Sst+ and PV+ INs and small and slow unitary currents in BLA PNs. Finally, although Sst+ and PV+ INs display equivalent uEPSCs, the finding that Sst+ INs have a lower threshold stimulation intensity compared to PV+ INs and PNs suggest that LEC afferents may have a greater functional convergence onto BLA Sst+ compared to PV+ INs.
 
-## A fast spiking phenotype distinguishes BLA Sst+ INs targeted by LEC afferents
+### A fast spiking phenotype distinguishes BLA Sst+ INs targeted by LEC afferents
 
 Though little is known about BLA Sst+ INs, they appear to have diverse electrophysiological properties ex vivo (Krabbe et al., 2018; Sosulina et al., 2010) and responses to stimuli in vivo (Krabbe et al., 2018; Wolff et al., 2014), suggesting Sst may be expressed by a broad range of GABAergic IN subtypes, similar to cerebral cortex (Tremblay et al., 2016). Only a subset of Sst+ INs responded to cortical stimulation raising the question whether these cells represented a distinct cell type. To address this hypothesis, we ran an unsupervised cluster analysis using Ward’s method (Ward, 1963) based on 15 membrane properties from 105 Sst+ INs. Applying Thorndike’s procedure (Thorndike, 1953) suggested two distinct clusters (Groups I and II). A large majority of Sst+ INs that responded to cortical stimulation clustered into Group I (14/16 cells) whereas a large majority of non-responsive Sst+ INs clustered into Group II (17/19 cells) (Figure 3A). To better understand what membrane properties best distinguished Group I and II Sst+ INs, we used decision tree analysis (Breiman et al., 1984; Therneau and Atkinson, 1984) which returned maximum firing rate, hyperpolarization induced sag, and AHP latency as the most salient parameters for cluster separation (Figure 3—figure supplement 1). To reduce potential model overfitting with the decision tree analysis, we used an additional predictive modeling technique, the random forest method (Liaw and Wiener, 2002). Like decision tree analysis, the random forest method returned maximum firing rate and hyperpolarization induced sag in addition to AP halfwidth as the most salient parameters for defining BLA Sst+ INs (Figure 3B,C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig3-v2.jpg)
+
+**Figure 3.:** (A) Unsupervised clustering analysis revealed two clusters of Sst+ INs. Majority of Sst+ INs with a uEPSC present following LEC stimulation cluster in Group I (14/16, Sst+ INs with uEPSC; 60/105, all Sst+ INs). Majority of Sst+ INs with no response to LEC stimulation cluster in Group II (17/19, Sst+ INs without uEPSC; 45/105, all Sst+ INs). (B) Results of Random Forest model. Plot shows mean decrease in Gini impurity for each of the 15 parameters included in the model (nSst = 105, 23). Gini impurity measures how often a random Sst+ IN would be clustered incorrectly if labeled randomly according to the distribution of labels in the set. (C) First two dimensions of the principal components analysis (PCA) of the random forest proximity matrix (nSst = 105, 23). (D) Left: maximum AP firing from representative PV+ (top, green), Group I (middle, purple) and II (bottom, pink) Sst+ INs. Scale bars, main traces: 5 mV, 50 ms; inset: 20 mV, 400 ms. Right: voltage responses of the same neurons. Darker traces show responses to −200 pA and rheobase current injections. Lighter traces show responses to intermediate current injections were used to determine membrane resistance (−100 pA to sweep immediately before rheobase, Δ10 pA each sweep, +100 pA maximum current injection). Note lack of sag, rebound AP in Group I Sst+ IN (sag: closed arrowheads; rebound AP: open arrowheads). Scale bars: 10 mV, 200 ms; 50 pA, 200 ms. (E) APs of the same representative PV+ (green), Group I (purple), and II (pink) Sst+ INs at rheobase. Halfwidth: bar through width of AP. Scale bars: 20 mV, 1 ms. (F) Phase plots of PV+, Group I, and Group II Sst+ INs shows rate of voltage change for Group I and II APs at rheobase. Data presented as mean ± s.e.m. nPV = 52, 19, nSstI = 60, 23, nSstII = 45, 18. (G) Left: reconstructed soma and dendrites of a representative PV+ and Group I Sst+ INs (scale bar: 200 μm). Sholl rings shown beneath reconstruction. Right: confocal images of the biocytin filled PV+ and Group I Sst+ INs (scale bar: 200 μm). (H) No significant differences between PV+ and Group I Sst+ INs for soma perimeter (left; unpaired t-test: p=0.26) or area (right; Mann-Whitney U test: p=0.28). (I) No significant differences between PV+ and Group I Sst+ INs for (left to right) dendrite branchpoints (unpaired t-test: p=0.40), endpoints (unpaired t-test: p=0.30), length (unpaired t-test: p=0.97), or surface area (Mann-Whitney U test: p=0.95). (J) Results of Sholl analysis showing dendrite length (left) and surface area (right) as a function of distance from the soma in PV+ and Group I Sst+ INs. Data presented as mean ± s.e.m. nPV = 6, 4, nSstI = 8, 6. Summary statistics in H (perimeter) and I (branchpoints, endpoints, and length) presented as mean ± s.e.m. Summary statistics in H (area) and I (area) presented as median and IQR. For all statistical tests in (H) and (I): nPV = 6, 4, nSstI = 8, 6. See Figure 3—figure supplement 1 for decision tree data. See Figure 3—figure supplement 2 for data on Group II Sst+ IN morphology. See Figure 3—source data 1 for a table of summary data and statistical comparisons on all membrane properties studied for Group I and Group II Sst+ INs and PV+ INs. See Figure 3—source data 2 for a table with full details on all statistical tests used in this figure. See Figure 3—source data 3 for a table of the results of the hierarchical cluster analysis and used by the Decision Tree and Random Forest models to determine which membrane properties best distinguished the clusters (related to Figure 3A-C and Figure 3—figure supplement 1). See Figure 3—source data 4 for all individual data points of BLA IN membrane properties (related to Figure 3—source data 1). See Figure 3—source data 5 for all individual data points for phase plot in Figure 3F. See Figure 3—source data 6 for all individual data points on BLA IN morphology (related to Figure 3H-J).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Results of the decision tree model. The model returned maximum firing rate, hyperpolarization-induced sag, and AHP latency as the most salient parameters for separating Group I and Group II Sst+ INs. The tree shows the cut offs used to split the Sst+ INs. The histograms show the counts of the two Sst+ clusters at each branch of the decision tree (Group I: purple; Group II: pink). (B) Scatter plot showing Group I (purple) and Group II (pink) Sst+ IN maximum firing rates, hyperpolarization-induced sag, and AHP latency.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Top: reconstructed soma and dendrites of all recovered Group II Sst+ INs (scale bar: 200 μm). Sholl rings shown beneath reconstruction. Bottom: confocal images of the corresponding biocytin filled neurons (scale bar: 200 μm). (B) Soma morphology data for all recovered Group II Sst+ INs. (C) Dendrite morphology data for all recovered Group II Sst+ INs. (D) Sholl analysis of dendrite length (left) and surface area (right) as a function of distance from the soma in all recovered Group II Sst INs. n = 3, 2.
 
 Having observed two subpopulations of Sst+ INs, we compared membrane properties across Group I and II Sst+ INs and PV+ INs (Figure 3D–F, Figure 3—source data 1). These data show that Group I Sst+ and PV+ INs differed from Group II Sst+ INs in a subset of membrane properties such as maximum firing rate and hyperpolarization induced sag. Further, all three IN subtypes differed in AP halfwidth with PV+ INs firing the fastest APs and Group I Sst+ INs firing faster APs than Group II Sst+ INs (see Figure 3—source data 1 for detailed statistics on membrane properties). The membrane properties of Group I Sst+ and PV+ INs are consistent with a FS phenotype typically seen in cortical, hippocampal, and BLA PV+ INs that is characterized by the ability to fire high frequency trains of brief APs (Tremblay et al., 2016; Woodruff and Sah, 2007a; however, see Large et al. (2016); Ma et al. (2006); Nigro et al. (2018) for examples of FS Sst+ INs in cerebral cortex).
 
@@ -71,9 +99,17 @@ In order to compare the morphology of the IN populations, we included biocytin i
 
 Taken together, the membrane properties of BLA Sst+ and PV+ INs reveal two distinct subpopulations of Sst+ INs that are readily distinguished at the biophysical level by their FS phenotype and at the functional circuit level by synaptic responses to cortical stimulation. However, the IN subtypes do not appear to have any readily observable differences in their somatic and dendritic morphology. For clarity, we refer to the Group I and II Sst+ INs as FS and non-fast spiking (nFS) Sst+ INs, respectively.
 
-## Probing the LEC→BLA circuitry suggests distinct functional feedforward/feedback roles for IN subtypes
+### Probing the LEC→BLA circuitry suggests distinct functional feedforward/feedback roles for IN subtypes
 
 BLA Sst+ INs have lower threshold stimulation intensity compared to PV+ INs and PNs (Figure 2F). Since these data suggest a higher rate of convergence of LEC afferents onto Sst+ compared to PV+ INs, we wanted to test the hypothesis that LEC input to BLA may preferentially recruit Sst+ over PV+ INs. To do this, we recorded from BLA Sst+ and PV+ INs in current clamp at rest and stimulated LEC with five pulses at 20 Hz. The stimulation intensity was set to the empirically derived threshold stimulation for BLA PNs (defined as the median PN threshold stimulation; 273.00 nC; Figure 2F) allowing us to determine how BLA INs respond when LEC activity is sufficient to ensure that PNs receive input. We found that stimulation led to robust spiking in BLA Sst+ INs whereas PV+ INs rarely fired (Figure 4A–C; p=0.016, Mann-Whitney U test).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig4-v2.jpg)
+
+**Figure 4.:** (A) Experimental schematic for B-E. (B) Representative Sst+ (top, purple) and PV+ (bottom, green) responses to LEC stimulation at 20 Hz (arrowhead: stimulation artifacts; scale bars: 25 mV, 100 ms). Insets show maximal firing frequency for the representative IN in response to a square current pulse (scale bars: 5 mV, 200 ms). (C) Sst+ INs fire more APs per stimulus compared to PV+ INs (Mann-Whitney U test: p=0.016; nSst = 8, 3; nPV = 9, 3). (D) Sst+ INs have a more depolarized Vrest compared to PV+ INs (unpaired t-test: p=0.034; nSst = 8, 3; nPV = 9, 3). (E) Cumulative probability distribution of all subthreshold EPSPs. Inset, middle: mean subthreshold EPSP from representative neurons in (A; Sst+: purple, PV+: green; scale bars: 1 mV, 5 ms; Kolmogorov-Smirnov test: p = 2.19 x 10−21, nSst = 161 events, nPV = 779 events; Mann-Whitney U test: p = 0.030, nSst = 5, 3, nPV = 8, 3). (F) Experimental schematic for G and H. (G) Representative paired recording experiments between BLA and INs (left to right: nFS Sst+, FS Sst+, PV+). Bottom: AP in BLA PN (scale bar: 40 mV). Top: overlaid current responses of BLA INs to PN AP (50 pA, 2 ms); successful trials shown in color. Insets show maximal firing frequency and response to a −200 pA current injection in the representative neurons (scale bars: 20 mV, 200 ms). (H) uEPSC amplitude is larger in PV+ compared to FS and nFS Sst+ INs (Kruskal-Wallis test test: p=0.025, nnFS-Sst = 5, 5, nFS-Sst = 8, 6, nPV = 8, 8) (I) Experimental schematic for J-L. (J) Representative sEPSC traces from BLA INs (top to bottom: nFS Sst+, FS Sst+, PV+; scale bars: 20 pA, 100 ms). Insets show maximal firing frequency and response to a −200 pA current injection in the representative neurons (scale bars: 20 mV, 300 ms). (K) Scatter plot of sEPSC frequency and amplitude. Right: nFS Sst+ INs have smaller amplitude sEPSCs compared to FS Sst+ and PV+ INs (one-way ANOVA: p=0.022). Bottom: PV+ INs have more frequent sEPSCs compared to nFS Sst+ INs (one-way ANOVA: p=0.022). (L) nFS Sst+ IN sEPSCs have slower decay kinetics compared to FS Sst+ and PV+ IN sEPSCs (Kruskal-Wallis test: p=0.0033). Summary statistics in D and K presented in color as mean ± s.e.m. and in C, E (inset), H, and L in color as median with IQR. *p < 0.05 or False Discovery Rate corrected significance threshold where applicable, ***p < 0.001. See Figure 4—figure supplement 1 for additional characterization of the BLA inhibitory microcircuitry. See Figure 4—source data 1 for a table with full details on all statistical tests used in this figure. See Figure 4—source data 2 for a table of all individual data points displayed in Figure 4 and corresponding figure supplements.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) No significant differences in uEPSC latency or jitter across IN subtypes (latency: nFS Sst+ = 1.28 ±0.18 ms, FS Sst+ = 1.10 ± 0.092 ms, PV+ = 1.29 ±0.22 ms, one-way ANOVA: p = 0.65, nnFS-Sst = 5, 5, nFS-Sst = 8, 6, nPV = 8, 8; jitter: nFS Sst+ = 0.31 [0.17/0.69] ms, FS Sst+ = 0.31 [0.17/0.68] ms, PV+ = 0.26 [0.21/0.81] ms, Kruskal-Wallis test: p = 0.97, nnFS-Sst = 5, 5, nFS-Sst = 8, 6, nPV = 8, 8). (B) No significant differences in sEPSC 20–80% risetime (nFS Sst+=0.40 [0.38/0.40] ms, FS Sst+=0.40 [0.40/0.40] ms, PV+=0.40 [0.35/0.40] ms, Kruskal-Wallis test: p=0.75). Summary statistics in A (left) presented in color as mean ± s.e.m. and in A (right) and B as in color as median with IQR.
 
 To probe the underlying mechanisms of the preferential spiking of Sst+ INs, we used two additional measures: resting Vm (Vrest) and subthreshold EPSP amplitude. We found that Vrest was more depolarized in Sst+ compared to PV+ INs (Figure 4D; p = 0.034, unpaired t-test). Because individual INs displayed variability in the number of APs/stimulus, each IN would have a different number of subthreshold EPSPs. Therefore, we compared both the distribution of all subthreshold EPSP amplitudes and the mean cellular amplitudes across Sst+ and PV+ INs. Regardless of the analysis method, we found that evoked subthreshold EPSPs were larger in Sst+ compared to PV+ INs (Figure 4E; all subthreshold EPSP events: p = 2.19 x 10−21, Kolmogorov-Smirnov test; cellular subthreshold EPSP: p = 0.030, Mann-Whitney U test). Thus, the data show that two distinct mechanisms underlie the recruitment of BLA Sst+ INs by LEC afferents: Sst+ INs were more depolarized at rest compared to PV+ INs, and, despite the concomitant decrease in the driving force through glutamate receptors, the magnitude of evoked subthreshold EPSPs was greater in Sst+ compared to PV+ INs. Finally, when we classified the Sst+ INs from this experiment (Figure 3A), we found that all but one (7/8 cells) were FS Sst+ INs, consistent with our finding that LEC afferents appear to selectively target FS cells among the Sst+ INs.
 
@@ -83,9 +119,17 @@ In neocortical circuits, PV+ INs mediate FFI whereas Sst+ typically mediate feed
 
 Finally, we wanted to look at the level of spontaneous excitation onto the different IN subtypes as different levels of spontaneous glutamatergic activity could lead to different levels of basal excitability for the INs in the LEC→BLA circuit (Figure 4I,J). We recorded spontaneous EPSCs (sEPSCs) across BLA IN subtypes. We found that PV+ INs had larger amplitude sEPSCs than either Sst+ IN subtype and that PV+ and FS Sst+ INs had more frequent sEPSCs than nFS Sst+ INs (Figure 4K; amplitude: p=0.022, one-way ANOVA; frequency: p=0.022, one-way ANOVA). Additionally, sEPSCs in nFS Sst+ INs had slower decay kinetics compared to the other BLA IN subtypes (Figure 4L, Figure 4—figure supplement 1; τDecay: p=0.0033, Kruskal-Wallis test). These data suggest that although FS Sst+ and PV+ INs may have divergent functional roles with regards to feedforward and feedback inhibition, they both receive greater levels of spontaneous excitatory input compared to nFS Sst+ INs.
 
-## Sst+ INs mediate LEC→BLA FFI
+### Sst+ INs mediate LEC→BLA FFI
 
 To test whether Sst+ or PV+ INs provide cortically evoked FFI onto BLA PNs, we generated Sst-hM4Di and PV-hM4Di mice by crossing the Sst-ires-Cre or PV-ires-Cre mice to the ROSA-hM4Di-mCitrine mice. These mice selectively express hM4Di in Sst+ (Sst-hM4Di) or PV+ (PV-hM4Di) INs. hM4Di is an inhibitory chemogenetic receptor that, when bound to its ligand clozapine-N-oxide (CNO), activates the Gi/o signaling cascade to hyperpolarize and block neurotransmitter release from neurons (Armbruster et al., 2007; Stachniak et al., 2014). To validate the efficacy of the Sst-hM4Di and PV-hM4Di mouse lines, we patched onto BLA mCitrine+ neurons and recorded Vm in current clamp (Ihold = 0 pA). Application of 10 μM CNO reduced Vm of mCitrine+ neurons in both lines (Figure 5A; pSst = 0.017, pPV = 0.031, one-sample t-test). Thus, we used the Sst-hM4Di and PV-hM4Di mice to selectively hyperpolarize Sst+ or PV+ INs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig5-v2.jpg)
+
+**Figure 5.:** (A) Left: Effect of CNO on Vm. Scale bars: 5 mV, 3 min. Right: CNO hyperpolarizes mCitrine+ cells in both mouse lines (pSst = 0.017, pPV = 0.031, one-sample t-test, nSst = 7, 4, nPV = 6, 3). (B) IPSC is delayed relative to EPSC (paired t-tests: pSst-Ctrl = 0.0018, pSst-CNO = 8.80 x 10−4, pPV-CNO = 0.0042, pWT-CNO = 0.0012; Wilcoxon signed-rank tests: pPV-Ctrl = 2.44 x 10−4, pWT-Ctrl = 0.0024; nSst = 13, 6, nPV = 13, 7, nWT = 12, 6). (C) CNO- mediated Sst+ IN inactivation reduces FFI (Sst-hM4Di mouse line; Wilcoxon signed-rank tests: pIPSC = 0.040, pIE = 0.013, n = 13, 6). Top: Experimental schema, IPSC traces with and without CNO. Arrowheads: stimulation artifacts (truncated). Scale bars: 100 pA, 50 ms. (D) PV+ IN inactivation has no effect on FFI (paired t-tests: pIPSC = 0.35, pIE = 0.85, n = 13, 7). Display as for (C), but in PV-hM4Di mouse line. Scale bars: 25 pA, 50 ms. (E) CNO has no effect on FFI in wildtype littermates (Wilcoxon signed-rank tests: pIPSC = 0.73, pIE = 0.68, n = 12, 6). Display as for (C), but in hM4Di-/- littermates of Sst- and PV-hM4Di mice. Scale bars: 50 pA, 50 ms. Summary statistics in A, B (Sst-hM4Di both conditions, PV-hM4Di CNO condition, WT littermates CNO condition), and D in color as mean ± s.e.m. Summary statistics in B (PV-hM4Di and WT littermates control conditions), C, and E in color as median with IQR. *p < 0.05, **p < 0.01, ***p < 0.001. See Figure 5—figure supplement 1 for lack of effect of IN inactivation on EPSCs. See Figure 5—source data 1 for a table with full details on all statistical tests used in this figure. See Figure 5—source data 2 for a table of all individual data points displayed in Figure 5 and corresponding figure supplements.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50601/elife-50601-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Top: Mean EPSCs from a representative PN from a Sst-hM4Di mouse before and after bath application of CNO. Schematic of experiment below traces. Arrowheads denote stimulus artifacts (truncated). Scalebars: 100 pA, 50 ms. Bottom: Sst+ IN inactivation has no effect on EPSC amplitude (EPSCCtrl = −90.14 [-54.95 /- 129.09] pA, EPSCCNO = −76.80 [−51.94 /- 131.96] pA, p=0.79, Wilcoxon signed-rank test, n = 13 cells, six mice). (B) As for (A), but in the PV-hM4Di mouse line. Scalebars: 20 pA, 50 ms. PV+ IN inactivation has no effect on EPSC amplitude (EPSCCtrl = −81.14 [-60.18 /- 88.34] pA, EPSCCNO = −56.77 [−47.07 /- 81.82] pA, p=0.54 Wilcoxon signed-rank test, n = 13 cells, seven mice). (C) As for (A), but in wildtype littermates of the Sst- and PV-hM4Di mice. Scalebars: 50 pA, 50 ms. 10 μM CNO has no effect on EPSC amplitude in hM4Di-/- mice (EPSCCtrl = −93.18 [-48.19 /- 136.58] pA, EPSCCNO = −78.85 [−53.80 /- 102.11] pA, p=0.42, Wilcoxon signed-rank test, n = 12 cells, six mice). Summary statistics presented in color as median with IQR.
 
 To assess the role of Sst+ and PV INs in BLA FFI, we stimulated LEC and recorded evoked EPSCs and IPSCs in BLA PNs using Sst-hM4Di and PV-hM4Di mice before and after bath application of CNO (10 μM). To determine the effect of IN inactivation on FFI we quantified two measures: evoked IPSC amplitude and inhibition-excitation balance (I/E balance). We defined I/E balance as the evoked IPSC amplitude for each cell normalized to its evoked EPSC amplitude. We examined this measure in addition to evoked IPSC amplitude to control for potential differences across cells with regards to the number of excitatory inputs to BLA activated by LEC stimulation. Consistent with the disynaptic nature of LEC-driven FFI in BLA (Figure 1), LEC stimulation elicited an IPSC that was significantly delayed relative to the EPSC in BLA PNs in both Sst-hM4Di and PV-hM4Di mice in control conditions and in the presence of CNO (Figure 5B, see Figure 5—source data 1 for detailed statistical analysis). Importantly, these data indicate that hM4Di expression or CNO application does not alter the ability of LEC stimulation to drive FFI. When we perfused CNO to inactivate the different IN subtypes, CNO reduced IPSC amplitude and I/E balance in PNs from Sst-hM4Di mice by 30.2% and 40.2% respectively but had no effect on either measure in PNs from PV-hM4Di mice (Figure 5C,D; pSst-IPSC = 0.040, pSst-IE = 0.013, Wilcoxon signed rank tests; pPV-IPSC = 0.35, pPV-IE = 0.85, paired t-tests). Finally, demonstrating the effects of Sst+ and PV+ IN inactivation were specific to FFI, bath application of CNO had no effect on eEPSCs in either mouse line (Figure 5—figure supplement 1).
 
@@ -115,220 +159,587 @@ Taken together, the data presented in this study demonstrate the existence of a 
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Reagent or resource</th>
+      <th>Source</th>
+      <th>Identifier</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Sst</td>
+      <td>Millipore</td>
+      <td>Cat#MAB354; RRID: AB_2255365</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-PV</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#195004; RRID:AB_2156476</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-rat Alexa Fluor 488</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#712-545-150</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-guinea pig Alexa Fluor 488</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#706-545-148</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin Conjugated Alexa Fluor 488</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#S11223</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>iFX-enhancer</td>
+      <td>Invitrogen</td>
+      <td>Cat#I36933</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picric acid</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#I9556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde</td>
+      <td>Sigma</td>
+      <td>Cat#G-7651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S7903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#G8270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S9888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P9333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium phosphate monobasic dihydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#71505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium bicarbonate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#S6297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#21115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#68475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cesium methanesulfonate</td>
+      <td>Acros Organics</td>
+      <td>CAS: 2550-61-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#H3375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EGTA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#E3889</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium phosphocreatine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P7936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QX-314 (Lidocaine N-ethyl bromide)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#L5783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium-ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A9187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium-GTP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#G8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium gluconate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#G4500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNQX</td>
+      <td>Tocris</td>
+      <td>Cat#0189; CAS: 2379-57-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-APV</td>
+      <td>Tocris</td>
+      <td>Cat#0106; CAS: 79055-68-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gabazine (SR 95531 hydrobromide)</td>
+      <td>Tocris</td>
+      <td>Cat#1262; CAS: 104104-50-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine-N-oxide</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#BML-NS105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate Buffered Saline (PBS) Tablets, 100 mL</td>
+      <td>VWR</td>
+      <td>Cat#E404-200TABS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>VWR</td>
+      <td>Cat#0694–1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal Donkey Serum</td>
+      <td>Jackson Immuno-research Labs Inc</td>
+      <td>Cat#017-000 -121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A9647-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Prolong Gold antifade reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat#P36934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nail Polish</td>
+      <td>Electron Microscope Sciences</td>
+      <td>Cat#72180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocytin</td>
+      <td>ThermoFisher</td>
+      <td>Cat#28022</td>
+      <td>0.2–0.5%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Raw and analyzed data</td>
+      <td>This paper</td>
+      <td>Available on github and by request</td>
+      <td>https://github.com/emguthman/Manuscript-Codes (copy archived at https://github.com/elifesciences-publications/Manuscript-Codes)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: C57BL/6J</td>
+      <td>Jackson Lab</td>
+      <td>RRID: IMSR_JAX:000664</td>
+      <td>All sexes used</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: Ssttm2.1(cre)Zjh/J</td>
+      <td>Jackson Lab</td>
+      <td>RRID: IMSR_JAX:013044</td>
+      <td>All sexes used</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: B6;129P2-Pvalbtm1(cre)Arbr/J</td>
+      <td>Jackson Lab</td>
+      <td>RRID: IMSR_JAX:008069</td>
+      <td>All sexes used</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: B6;129S6-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J</td>
+      <td>Jackson Lab</td>
+      <td>RRID: IMSR_JAX:007905</td>
+      <td>All sexes used</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: B6N.129-Gt(ROSA)26Sortm1(CAG-CHRM4*,-mCitrine)Ute/J</td>
+      <td>Jackson Lab</td>
+      <td>RRID: IMSR_JAX:026219</td>
+      <td>All sexes used</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10.6</td>
+      <td>Molecular Devices</td>
+      <td>RRID: SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB_R2018a</td>
+      <td>Mathworks</td>
+      <td>RRID: SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>http://www.r-project.org/</td>
+      <td>RRID: SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID: SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID: SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SlideBook 6.0</td>
+      <td>Intelligent Imaging Innovations (3i)</td>
+      <td>RRID: SCR_014300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Fiji</td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Grid/Collection Stitching</td>
+      <td>Fiji</td>
+      <td>RRID: SCR_016568</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida</td>
+      <td>MBF Biosciences</td>
+      <td>RRID: SCR_001775</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Molly M Huntsman (molly.huntsman@ucdenver.edu).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 All experiments were conducted in accordance with protocols approved by the Institutional Animal Care and Use Committee at the University of Colorado Anschutz Medical Campus. Slice electrophysiology experiments were conducted on mice aged postnatal days 35–70. Immunohistochemistry experiments were conducted on mice aged postnatal days 60–120. Experiments were conducted regardless of the observed external genitalia of the mice at weaning. To track estrous, vaginal swabs were collected from mice with vaginas that were used in experiments. The following mouse lines were used in the experiments: C57Bl/6J (Jackson Lab #000664), Sst-tdTomato, PV-tdTomato, Sst-hM4Di, PV-hM4Di, and wildtype littermates of the Sst-hM4Di and PV-hM4Di mice. Sst-tdTomato, PV-tdTomato, Sst-hM4Di, and PV-hM4Di mouse lines were generated by crosses of Sst-ires-Cre (Jackson Lab #013044) and PV-ires-Cre (Jackson Lab #008069) lines with either the Rosa-CAG-LSL-tdTomato-WPRE (Ai9; Jackson Lab #007905) or the R26-hM4Di/mCitrine (Jackson Lab #026219) lines. Please see Key Resources Table for more details on strain information.
 
-## Method details
+### Method details
 
-## Acute slice preparation for electrophysiology
+#### Acute slice preparation for electrophysiology
 
 Animals were first anesthetized with CO2 and decapitated. Brains were quickly dissected and placed in an ice-cold, oxygenated (95% O2-5% CO2) sucrose-based slicing solution (in mM: sucrose, 45; glucose, 25; NaCl, 85; KCl, 2.5; NaH2PO4, 1.25; NaHCO3, 25; CaCl2, 0.5; MgCl2, 7; osmolality, 290–300 mOsm/kg). 300–400 µm horizontal slices were obtained using a vibratome (Leica Biosystems, Buffalo Grove, IL, USA). Slices were incubated in oxygenated (95% O2-5% CO2) artificial cerebral spinal fluid (ACSF; in mM: glucose, 10; NaCl, 124; KCl, 2.5; NaH2PO4, 1.25; NaHCO3, 25; CaCl2, 2; MgCl2, 2; osmolality 290–300 mOsm/kg) at 36 °C for at least 30 min. All reagents were purchased from Sigma-Aldrich (St. Louis, MO, USA).
 
-## Electrophysiology
+#### Electrophysiology
 
 Slices were placed in a submerged slice chamber and perfused with ACSF heated to 32-37°C. Slices were visualized using a moving stage microscope (Scientifica: Uckfield, UK; Olympus: Tokyo, Japan) equipped with 4× (0.10 NA) and 40× (0.80 NA) objectives, differential interference contrast (DIC) optics, infrared illumination, LED illumination (CoolLED, Andover, UK), a CoolSNAP EZ camera (Photometrics, Tuscon, AZ, USA), and Micro-Manager 1.4 (Open Imaging, San Francisco, CA, USA). Whole cell patch clamp recordings were made using borosilicate glass pipettes (2.5-5.0 MΩ; King Precision Glass, Claremont, CA, USA) filled with intracellular recording solution. For voltage clamp experiments on FFI a cesium methanesulfonate (CsMe) based intracellular solution was used (in mM: CsMe, 120; HEPES, 10; EGTA, 0.5; NaCl, 8; Na-phosphocreatine, 10; QX-314, 1; MgATP, 4; Na2GTP, 0.4; pH to 7.3 with CsOH; osmolality adjusted to approximately 290 mOsm/kg). For all remaining voltage clamp experiments and for all current clamp experiments, a potassium gluconate based intracellular solution was used (in mM: potassium gluconate, 135; HEPES, 10; KCl, 20; EGTA, 0.1; MgATP, 2; Na2GTP, 0.3; pH to 7.3 with KOH; osmolality adjusted to approximately 295 mOsm/kg). A subset of the potassium gluconate recordings were supplemented with 0.2-0.5 % biocytin to allow for post-hoc morphological analysis. Access resistance was monitored throughout the experiments and data were discarded if access resistance exceeded 25 MΩ or varied by more than ± 20%. No junction potential compensation was performed. Data were acquired with a Multiclamp 700B amplifier and were converted to a digital signal with the Digidata 1440 digitizer using pCLAMP 10.6 software (Molecular Devices, Sunnyvale, CA). Data were sampled at 10 kHz and lowpass filtered at 4 kHz. Offline, current data were filtered using a 3rd order Savistky-Golay filter with a ± 0.5 ms window after access resistance was assessed. Mean traces were created by first aligning all events by their point of maximal rise (postsynaptic currents) or by threshold (APs) and then obtaining the mean of all events; mean subthreshold EPSPs were not aligned prior to averaging.
 
-## Cell-type identification
+#### Cell-type identification
 
-## Principal Neurons (PNs)
+##### Principal Neurons (PNs)
 
 PNs were targeted based on their large, pyramidal-like soma. Recordings were terminated if the physiology of the neuron was inconsistent with BLA PNs (e.g. high membrane resistance, narrow AP halfwidth, large and fast spontaneous EPSCs).
 
-## Interneurons (INs)
+##### Interneurons (INs)
 
 INs were targeted based on fluorescence in the Sst-tdTomato, PV-tdTomato, SST-hM4Di, and PV-hM4Di mouse lines. A 470 nm LED was used to identify mCitrine+ INs in SST-hM4Di and PV-hM4Di mouse lines, and a 535 nm LED was used to identify tdTomato+ INs in the SST-tdTomato and PV-tdTomato mouse lines (CoolLED, Andover, UK).
 
-## Pharmacology
+#### Pharmacology
 
 DNQX, D-APV, and gbz were purchased from Tocris Biosciences (Bristol, UK) and CNO was purchased from Enzo Life Sciences (Farmingdale, NY). DNQX stock was made at 40 mM and diluted to a final concentration of 20 μM in ACSF; D-APV stock was made at 50 mM and diluted to a final concentration of 50 μM in ACSF; GBZ stock was made at 25 mM and diluted to a final concentration of 5 μM in ACSF; and, CNO stock was made at 10 mM and diluted to a final concentration of 10 μM in ACSF. All stocks were stored at −20°C and CNO was used within one month of making the stock solution.
 
-## Electrophysiology experimental design
+#### Electrophysiology experimental design
 
-## FFI, voltage clamp
+##### FFI, voltage clamp
 
 The LEC was stimulated using a bipolar stimulating electrode (FHC, Inc, Bowdoin, ME, USA). Evoked EPSCs (Vhold = −70 mV) and IPSCs (Vhold = 0 mV) were recorded from BLA PNs in response to LEC stimulation. To assess the effects of different drugs on the EPSCs and IPSCs, ACSF containing DNQX, D-APV, gbz, and/or CNO was perfused onto the slice for five minutes prior to and continuously during the experiment. Effects of DNQX/APV and gbz on EPSCs and IPSCs were recorded using in an unpaired design where some PNs were recorded under control conditions and in the presence of DNQX/APV and gbz (given sequentially with time for washout) whereas others were recorded under control conditions in the presence of DNQX/APV or gbz. Effects of CNO on EPSCs and IPSCs were examined with a paired design where all PNs were recorded in both control conditions and in the presence of CNO.
 
-## FFI, current clamp
+##### FFI, current clamp
 
 Membrane voltage of BLA PNs was recorded in response to 5 stimulations of the LEC at 20 Hz. Ihold was adjusted such that Vrest of the PNs was approximately −60 mV. To assess the role of GABAA receptor mediated inhibition on PN AP firing, gbz was perfused onto the slice for five minutes prior to and continuously during the experiment.
 
-## Current injections
+##### Current injections
 
 Membrane voltage of BLA neurons was recorded in current clamp in response to a series of square hyperpolarizing and depolarizing current injections. Prior to initiation of the series of current injections, Vm of the BLA neurons was adjusted to approximately −60 mV. Each cell was subjected to two series of 600 ms square current injections: −100 pA to +100 pA at 10 pA intervals and −200 pA to +400 pA at 25 pA intervals. The data collected in these experiments were used to determine active and passive membrane properties of the neurons.
 
-## Minimal stimulation
+##### Minimal stimulation
 
 EPSCs (Vhold = −70 mV) were recorded in voltage clamp in BLA PNs, Sst+ INs, and PV+ INs in response to LEC stimulation. Stimulation intensity was adjusted such that LEC stimulation resulted in recorded EPSCs having a success rate of approximately 50% and an all-or-none amplitude response.
 
-## Recruitment of BLA INs by LEC afferents
+##### Recruitment of BLA INs by LEC afferents
 
 The median stimulation intensity necessary to observe putative uEPSCs in BLA PNs (273 μA × ms) was used as the empirically derived PN threshold stimulation intensity. Membrane voltage responses of BLA Sst+ and PV+ INs were recorded in current clamp in response to 5 stimulations of the LEC at 20 Hz at the empirically derived PN threshold stimulation intensity.
 
-## Paired PN-IN recordings
+##### Paired PN-IN recordings
 
 Paired recordings were made between BLA PNs and nearby Sst+ or PV+ INs. We used a 2.5 nA, 2 ms current injection to drive a single AP in the PN (Ihold adjusted such that Vm≈ -60 mV. BLA PN APs were repeated at 0.25 Hz and the response of the IN (Vhold = -70 mV) was recorded.
 
-## Spontaneous EPSC recordings
+##### Spontaneous EPSC recordings
 
 sEPSCs were recorded for 5 min in INs (Vhold = −70 mV) with no drugs in the bath.
 
-## Pharmacological effects of CNO on membrane potential
+##### Pharmacological effects of CNO on membrane potential
 
 Membrane voltage of mCitrine+ neurons in BLA was recorded in the presence of 20 μM DNQX, 50 μM D-APV, and 5 μM GBZ. To assess the effects of CNO on membrane potential, baseline Vm was allowed to stabilize and was recorded for 3 min in the absence of CNO. Following recording of baseline Vm, ACSF containing 10 μM CNO was perfused onto the slice and Vm was recorded for an additional 10 min. Vm was separated into 30 s bins. ΔVm was defined as the difference in Vm between the mean Vm during the 3 min of baseline recordings and the mean Vm during the last 3 min of CNO application.
 
-## Definitions of electrophysiological parameters
+### Definitions of electrophysiological parameters
 
-## Evoked EPSC/IPSC detection and amplitude
+#### Evoked EPSC/IPSC detection and amplitude
 
 EPSCs (Vhold = -70 mV) were defined as negatively deflecting postsynaptic events that exceeded the mean baseline current (500 ms before stimulation) by 6 × the median absolute deviation of the baseline current and that occurred within 20 ms of the end of the electrical stimulus artifact. IPSCs (Vhold = 0 mV) were defined as positively deflecting postsynaptic events that exceeded the mean baseline current by 6 × the median absolute deviation of the baseline current and that occurred within 20 ms of the end of the electrical stimulus artifact. To ensure that the detected EPSCs/IPSCs were related to the stimulus, we subsampled 25% of the sweeps in the experiment (or 5 sweeps if the experiment consisted of <20 sweeps) and found the maximal peak negative (EPSC detection) or positive (IPSC detection) deflection from baseline in the 20 ms after the stimulus artifact in those sweeps. Then, we found the median peak time for those sweeps and repeated the analysis over all sweeps in the experiment with a detection threshold of 6 × the median absolute deviation of the baseline current and with a window set to ± 5 ms (EPSC detection) or ± 7.5 ms (IPSC detection) around the median peak time. The amplitude of each EPSC and IPSC was defined as the difference between the peak amplitude of the detected EPSC or IPSC and the mean baseline current for that sweep. The EPSC or IPSC amplitude for each cell in an experiment was defined as the mean of the amplitudes recorded from that cell (EPSC/IPSC successes only; failures were not included in EPSC/IPSC amplitude calculation). Where EPSC failure amplitude is reported on a per sweep basis, it was defined as the maximal negative deflection from the current trace within ± 5 ms of the mean current peak time for that cell. If all sweeps in an experiment were EPSC/IPSC failures, the mean EPSC/IPSC amplitude was defined as the maximal negative (EPSC) or positive (IPSC) deflection in the mean current trace that occurred within 20 ms of the end of the electrical stimulus artifact.
 
-## Success rate
+#### Success rate
 
-Success rate was defined as 100% × nsuccessfulsweepsntotalsweeps where successful sweeps were defined as sweeps where an EPSC was detected.
+Success rate was defined as $100% \times \frac{n_{successfulsweeps}}{n_{totalsweeps}}$ where successful sweeps were defined as sweeps where an EPSC was detected.
 
-## I/E balance
+#### I/E balance
 
 I/E balance was defined as the ratio of IPSC to EPSC amplitude recorded in the same neuron.
 
-## EPSC/IPSC 20–80% risetime
+#### EPSC/IPSC 20–80% risetime
 
 20–80% risetime was defined as the time it took an EPSC or IPSC to reach 80% of its peak amplitude from 20% of its peak amplitude. 20–80% risetime was calculated for each sweep unless obscured by a spontaneous event. The risetime for each cell was defined as the mean of all risetimes recorded from that cell.
 
-## EPSC/IPSC latency and jitter
+#### EPSC/IPSC latency and jitter
 
 Latency of EPSCs and IPSCs was defined as the time between the end of the electrical stimulation or the peak of the PN action potential (in paired recordings) and the point of 20% rise for an EPSC or IPSC as calculated for the 20–80% risetime. The EPSC or IPSC latency for each cell was defined as the mean of the latencies recorded from that cell. The EPSC or IPSC jitter for each cell was defined as the standard deviation of the latencies recorded from that cell.
 
-## EPSC/IPSC τDecay
+#### EPSC/IPSC τDecay
 
-EPSC τDecay was determined using a single exponential fit, f(t)= Ae−t/τ. IPSC τDecay was defined as the weighted time-constant of IPSC decay. Briefly, a double exponential fit, f(t)= A1e−t/τ1+A2e−t/τ2, was used to obtain the parameters to determine the weighted time-constant where τweighted= (τ1A1+τ2A2)/(A1+A2). τDecay was calculated using the mean EPSC or IPSC trace for a cell.
+EPSC τDecay was determined using a single exponential fit, $f(t)= Ae^{−t/\tau}$. IPSC τDecay was defined as the weighted time-constant of IPSC decay. Briefly, a double exponential fit, $f(t)= A_{1}e^{−t/\tau_{1}}+A_{2}e^{−t/\tau_{2}}$, was used to obtain the parameters to determine the weighted time-constant where $\tau_{weighted}= (\tau_{1}A_{1}+\tau_{2}A_{2})/(A_{1}+A_{2})$. τDecay was calculated using the mean EPSC or IPSC trace for a cell.
 
-## uEPSC detection and amplitude
+#### uEPSC detection and amplitude
 
 uEPSCs were defined as negative current deflections recorded in the IN that exceeded a detection threshold of 6x the median absolute deviation of the baseline current and occurred within 3ms of the PN AP peak during paired recordings. The amplitude of each uEPSC was defined as the difference between the peak amplitude of the detected uEPSC and the mean baseline current for that sweep. The uEPSC amplitude for each cell in an experiment was defined as the mean of the amplitudes recorded from that cell (successes only).
 
-## sEPSC detection and amplitude
+#### sEPSC detection and amplitude
 
 sEPSCs were detected by a combined template and threshold method. Briefly, a template was made by subsampling 10% of local negative peaks exceeding at least 5 × the median absolute deviation of a rolling baseline current (50ms prior to the peak). The template current was then truncated from its 20% rise point through the end of the decay time constant for the template current. Next, all local negative peaks exceeding 5 × the median absolute deviation of a rolling baseline current (50ms prior to the peak) were collected. The template current was then scaled to each individual putative sEPSC peak and each sEPSC peak was assigned a normalized charge integral relative to the template. Finally, a normalized charge integral cutoff was chosen to exclude obvious noise/non-physiological events below a certain normalized charge integral. sEPSC amplitude was defined as the difference between the peak amplitude of each detected current and its corresponding baseline current. sEPSC for each cell was defined as the median peak amplitude for that cell.
 
-## sEPSC frequency
+#### sEPSC frequency
 
 sEPSC frequency for each sESPC was defined as the inverse of the interevent intervals of the sEPSCs. The frequency measure for each neuron was defined as the median of the sEPSC frequencies for that cell.
 
-## Membrane resistance
+#### Membrane resistance
 
 Membrane resistance was defined as the slope of the best fit line of the I-V plot using the −100 pA to +100 pA (10 pA steps) series of current injections. Mean voltage response to each current injection step was defined as the difference between baseline mean membrane voltage (100 ms prior to current injection) and the mean membrane voltage during the 100 ms period from 50 ms after the start of the injection to 150 ms after the start of the current injection. This 100 ms window was chosen to allow for measurement of the change in Vm after the membrane had charged and prior to any potential HCN channel activation. The I-V plot was constructed using all current steps below rheobase.
 
-## Maximum firing rate
+#### Maximum firing rate
 
 Maximum firing rate was defined as the inverse of the inter-spike interval (ISI) during the first 200 ms of the most depolarizing current injection step before attenuation of AP firing was observed. Max FR was calculated using the −200 pA to +400 pA (25 pA steps) series of current injections.
 
-## AP threshold
+#### AP threshold
 
-AP threshold was defined as the voltage at which dVdt exceeded 20 V/s. AP threshold was calculated at the rheobase sweep of the -200 pA to +400 pA (25 pA steps) series of current injections.
+AP threshold was defined as the voltage at which $\frac{dV}{dt}$ exceeded 20 V/s. AP threshold was calculated at the rheobase sweep of the -200 pA to +400 pA (25 pA steps) series of current injections.
 
-## AP amplitude
+#### AP amplitude
 
 Amplitude of the AP was defined as the voltage difference between the peak of the AP and its threshold potential. AP amplitude was calculated at the rheobase sweep of the −200 pA to +400 pA (25 pA steps) series of current injections.
 
-## AP halfwidth
+#### AP halfwidth
 
 AP halfwidth was defined as the time between the half-amplitude point on the upslope of the AP waveform to the half-amplitude point on the downslope of the AP waveform. AP halfwidth was calculated at the rheobase sweep of the −200 pA to +400 pA (25 pA steps) series of current injections.
 
-## After-hyperpolarization potential (AHP) magnitude
+#### After-hyperpolarization potential (AHP) magnitude
 
 AHP magnitude was defined as the difference between the most hyperpolarized membrane voltage of the AHP (occurring within 100 ms after AP threshold) and AP threshold. AHP magnitude and latency data were calculated at the rheobase sweep of the −200 pA to +400 pA (25 pA steps) series of current injections. ΔAHP data were calculated at the rheobase + 50 pA sweep of the −200 pA to +400 pA (25 pA steps) series of current injections.
 
-## AHP latency
+#### AHP latency
 
 AHP latency was defined as the time from AP threshold and the peak of the AHP.
 
-## ΔAHP
+#### ΔAHP
 
-ΔAHP was defined as the difference between the first and last AHP (ΔAHP=AHPlast−AHPfirst).
+ΔAHP was defined as the difference between the first and last AHP ($ΔAHP=AHP_{last}−AHP_{first}$).
 
-## AP phase plot
+#### AP phase plot
 
 The AP phase plot was obtained by plotting the rate of change of the mean AP for each cell from the rheobase sweep of the −200 pA to +400 pA (25 pA steps) series of current injections as a function of the corresponding membrane voltage.
 
-## Latency to first AP
+#### Latency to first AP
 
 AP latency was defined as the time from the initiation of the current injection to the peak of the first AP. AP latency was calculated at the rheobase sweep of the −200 pA to +400 pA (25 pA steps) series of current injections.
 
-## Firing rate adaptation ratio (FR adaptation)
+#### Firing rate adaptation ratio (FR adaptation)
 
-Firing rate adaptation was defined as the ratio of the first and the average of the last two ISIs, such that Firingrateadaptation=ISIfirstmeanISIlast 2ISI. Firing rate adaptation was calculated at the rheobase +50 pA sweep of the -200 pA to +400 pA (25 pA steps) series of current injections.
+Firing rate adaptation was defined as the ratio of the first and the average of the last two ISIs, such that $Firingrateadaptation=\frac{ISI_{first}}{meanISI_{last 2ISI}}$. Firing rate adaptation was calculated at the rheobase +50 pA sweep of the -200 pA to +400 pA (25 pA steps) series of current injections.
 
-## AP broadening
+#### AP broadening
 
-AP broadening was defined as the ratio of the AP halfwidths of the first two APs (Broadening=halfwidthsecondhalfwidthfirst). AP broadening was calculated at the rheobase +50 pA sweep of the -200 pA to +400 pA (25 pA steps) series of current injections.
+AP broadening was defined as the ratio of the AP halfwidths of the first two APs ($Broadening=\frac{halfwidth_{second}}{halfwidth_{first}}$). AP broadening was calculated at the rheobase +50 pA sweep of the -200 pA to +400 pA (25 pA steps) series of current injections.
 
-## AP amplitude adaptation
+#### AP amplitude adaptation
 
-AP amplitude adaptation was defined as the ratio of the AP amplitude of the average of the last three APs and the first AP, such that APamplitudeadaptation=meanAmplitudelast 3APsAmplitudefirst. AP amplitude adaptation was calculated at the rheobase +50 pA sweep of the -200 pA to +400 pA (25 pA steps) series of current injections.
+AP amplitude adaptation was defined as the ratio of the AP amplitude of the average of the last three APs and the first AP, such that $APamplitudeadaptation=\frac{meanAmplitude_{last 3APs}}{Amplitude_{first}}$. AP amplitude adaptation was calculated at the rheobase +50 pA sweep of the -200 pA to +400 pA (25 pA steps) series of current injections.
 
-## Membrane decay τ
+#### Membrane decay τ
 
-Membrane decay τ was determined by using a single exponential fit, f(t)= Ae−t/τ, to fit the change in Vm induced by a −100 pA sweep in the −100 pA to +100 pA (25 pA steps) series of current injections.
+Membrane decay τ was determined by using a single exponential fit, $f(t)= Ae^{−t/\tau}$, to fit the change in Vm induced by a −100 pA sweep in the −100 pA to +100 pA (25 pA steps) series of current injections.
 
-## Hyperpolarization-induced sag
+#### Hyperpolarization-induced sag
 
-Hyperpolarization-induced sag was calculated using the equation, Vmin-VssVmin-Vbl×100%, where Vmin was defined as the most hyperpolarized membrane voltage during the current injection, Vss was defined as the mean steady-state membrane voltage (last 200 ms of the current injection), and Vbl was defined as the mean baseline membrane voltage (100 ms prior to current injection). Hyperpolarization-induced sag was measured from the -200 pA current injection.
+Hyperpolarization-induced sag was calculated using the equation, $\frac{V_{min}-V_{ss}}{V_{min}-V_{bl}}\times100%$, where Vmin was defined as the most hyperpolarized membrane voltage during the current injection, Vss was defined as the mean steady-state membrane voltage (last 200 ms of the current injection), and Vbl was defined as the mean baseline membrane voltage (100 ms prior to current injection). Hyperpolarization-induced sag was measured from the -200 pA current injection.
 
-## Rebound spikes
+#### Rebound spikes
 
 Rebound spikes were defined as the number of APs in the 500 ms following the −200 pA current injection.
 
-## APs per stimulus
+#### APs per stimulus
 
 The number of APs per stimulus was defined as the number of APs occurring within 50 ms of the stimulus.
 
-## Vrest
+#### Vrest
 
 Vrest was defined as Vm (Ihold = 0 pA) during a 500 ms baseline prior to LEC stimulation during the experiments testing the recruitment of BLA INs by LEC afferents.
 
-## Subthreshold EPSP amplitude
+#### Subthreshold EPSP amplitude
 
 Subthreshold EPSP amplitude was defined as the maximal, non-stimulus artifact, voltage deflection within 40 ms after LEC stimulation.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
-## Biocytin filled neurons
+#### Biocytin filled neurons
 
 To perform immunostaining of biocytin filled neurons, slices containing biocytin filled neurons were fixed in 4% PFA overnight at 4°C. After fixation, slices were transferred to PBS. Biocytin filled INs (n = 8 Sst+ Group 1; 3 Sst+ Group 2; 6 PV+) were blocked (1X PBS, 0.3% triton, 5% BSA, 5% Normal Donkey Serum) for 4 hours before 24-hour incubation with streptavidin conjugated Alexa Fluor 488 (1:500, ThermoFisher Scientific, Waltham, MA, USA) at 4°C. Slices were mounted with Prolong Gold and sealed for long-term storage. Slices were imaged using an Axio Observer microscope (Carl Zeiss, Okerkochen, Germany); equipped with a CSU-X1 spinning disc unit (Yokogawa, Musashino, Tokyo, Japan); 488 nm/40 mW laser; Plan-NeoFluar 40X (0.75 NA) air objective lens; and Evolve 512 EM-CCD camera (Photometrics, Tucson, AZ, USA). SlideBook 6.0 software (3i, Denver, CO, USA) enabled instrument control and data acquisition. Images were acquired in sections by following branched points from the cell soma. Images were stitched in Fiji software using Grid/Collection stitching (Preibisch et al., 2009) with an unknown position type.
 
-## Histological validation of PV+ and Sst+ IN identity
+#### Histological validation of PV+ and Sst+ IN identity
 
 To perform the PV and Sst immunostaining, mice (n = 3 Sst-tdTomato mice, 3 PV-tdTomato mice) were sacrificed and transcardially perfused with ice cold 4% PFA (with 1.5% picric acid and 0.05% glutaraldehyde) followed by 30% sucrose protection. After the brain sank, coronal BLA slices of 30 μm thickness were obtained. Before application of blocking solution, slices were incubated for 30 minutes at room temperature with iFX-enhancer (Invitrogen, ThermoFisher Scientific, Waltham, MA, USA). After blocking, the slices were incubated with either rat anti-Sst antibody (1:100, MAB354, Millipore, Burlington, MA, USA) or guinea pig anti-PV antibody (1:500, 195004, Synaptic Systems, Göttingen, Germany) for at least 48 hours at 4°C. Then, a secondary antibody of either donkey anti-rat or donkey anti-guinea pig Alexa Fluor 488 (1:500, Jackson ImmunoResearch) was applied overnight at 4°C. The slices were imaged using a confocal laser scanning microscope (TCS SP5II, Leica Application Suite, Leica Biosystems, Buffalo Grove, IL, USA) with 10 × 0.40 NA and 20 × 0.70 NA dry objectives to determine the neuron identity.
 
-## Morphological analysis
+### Morphological analysis
 
-## Analysis of somatic and dendritic morphology
+#### Analysis of somatic and dendritic morphology
 
 To determine morphological characteristics of biocytin filled neurons, stitched images were imported to Neurolucida (MBF Bioscience, Williston, VT, USA) to perform tracing. All analysis including sholl analysis (50 μM rings), dendrite branching, etc. was performed from traces using Neurolucida Explorer (MBF Bioscience).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Statistical analyses
+#### Statistical analyses
 
 All data analysis (except decision tree and random forest analyses) were performed offline using custom written MATLAB code. Normality of the data was assessed using the Anderson-Darling test. For assessment of whether a single group differed from a normal distribution centered around zero, a one-sample t-test was used. For a test between two groups, a paired or unpaired t-test was used where appropriate. For tests between two groups of non-normal data, a Mann-Whitney U or Wilcoxon signed-rank test was used where appropriate. For tests between three or more groups of normal data with one independent variable, a one-way ANOVA was used with Tukey’s post-hoc test to examine differences between groups. A Kruskal-Wallis test was used to examine differences between three or more groups of non-normal data with one independent variable. A Mann-Whitney U test was used as a post-hoc test following a significant result in a Kruskal-Wallis test and was corrected for multiple comparisons using the FDR method (Curran-Everett, 2000). The critical significance value was set to α = 0.05 or was set to a FDR-corrected value (αFDR) for multiple comparisons. All statistical tests were two-tailed. Unless otherwise stated, experimental numbers are reported as n = x, y where x is the number of neurons and y is the number of mice. Statistical parameters are reported in the Results section and figure legends display p values and sample sizes.
 
-## Unsupervised cluster analysis
+#### Unsupervised cluster analysis
 
 Unsupervised cluster analysis using Ward’s method (Ward, 1963) was used to classify Sst+ INs. Briefly, this method involves plotting each neuron in multidimensional space where each dimension corresponds to a given parameter. For our data, we plotted each Sst+ IN in 15-dimensional space (where each dimension corresponds to a z-score transformation of one of the 15 membrane properties obtained from the current injection experiments; values were z-score transformed so that parameters with large values, for example membrane resistance, would not influence the cluster analysis more than those with small values, for example halfwidth). From here, the analysis proceeded along n – one stages where n is the number of Sst+ INs. At stage n = 1, the two closest cells in the 15-dimensional space are grouped together. At subsequent stages, the closest cells are grouped together until only one group of all objects remains. We determined the final number of clusters by using the Thorndike procedure (Thorndike, 1953) where large distances between group centroids at one cluster stage relative to other stages are indicative of significant differences between groups (see Figure 3A, inset).
 
-## Decision tree analysis
+#### Decision tree analysis
 
 Recursive partitioning analyses (Breiman et al., 1984) were conducted in R (1.01.136). The R package rpart (Therneau and Atkinson, 1984) was used for recursive partitioning for classification. Decision trees were plotted using rpart.plot package, and random seeds were set using the rattle package. Predicted classes were determined from the unsupervised cluster analysis and were used to determine important discriminating parameters. The model was internally cross validated with a nested set of subtrees and the final model was selected as the subtree with the least misclassification error. Individual decision trees can suffer from overfitting. Therefore, the input parameters of the model were independently cross validated by bootstrapping 500 subsamples (without replacement and using random seeds). Each tree was pruned by choosing the complexity parameter with the lowest cross validated error. The mean correct prediction of the test set classifications (n = 20% of sample) by the pruned tree generated by modeling the training sets (n = 80% of sample) was 82.9%.
 
-## Random forest analysis
+#### Random forest analysis
 
 Supervised classification random forest was employed to reduce potential model overfitting. Random forest classification was conducted using the randomForest package in R (Liaw and Wiener, 2002). Random forest classification employs random subsampling of both parameters and bootstrapped subsamples of the dataset (with replacement). 10,000 decision trees were generated, and the modal tree was used as the final classification model. The out of bag estimate of the error rate of the model was 11.43%. An additional cross validation step was conducted by bootstrapping 80% of the initial sample to create the random forest model and tested against a subsample (n = 20% of sample; bootstrapped without replacement). The mean accuracy after 20 random forest runs was 90.7%. Gini impurity was calculated to determine parameter importance. Visualization of the frequency of individual samples falling within the same node across one run of the classification algorithm was obtained by calculating a proximity matrix for the samples and plotting it against the first two principle components.
 
-## Data display
+#### Data display
 
 Data visualizations were created in MATLAB and Adobe Illustrator. After analysis was completed, Neurolucida traces of soma and dendrites were thickened by 7 pixels (Figure 3) or 3-7 pixels (Figure 3—figure supplement 2) in Adobe Photoshop to improve visibility in figures. Normal data are presented as the mean ± s.e.m. Non-normal data are presented as the median with error bars extending along the interquartile range.

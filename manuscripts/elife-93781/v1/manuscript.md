@@ -15,10 +15,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01pnej532 HUN-REN-SZTE Research Group for Cortical Microcircuits, Department of Physiology, Anatomy and Neuroscience, University of Szeged Szeged Hungary
-2. https://ror.org/03qxff017 Edmond and Lily Safra center for Brain Sciences, The Hebrew University of Jerusalem Jerusalem Israel
-3. https://ror.org/01jsq2704 Department of Physiology and Neurobiology, Institute of Biology, Eötvös Loránd University Budapest Hungary
-4. https://ror.org/01pnej532 Department of Neurosurgery, University of Szeged Szeged Hungary
+1. HUN-REN-SZTE Research Group for Cortical Microcircuits, Department of Physiology, Anatomy and Neuroscience, University of Szeged Szeged Hungary ([ROR:01pnej532](https://ror.org/01pnej532))
+2. Edmond and Lily Safra center for Brain Sciences, The Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
+3. Department of Physiology and Neurobiology, Institute of Biology, Eötvös Loránd University Budapest Hungary ([ROR:01jsq2704](https://ror.org/01jsq2704))
+4. Department of Neurosurgery, University of Szeged Szeged Hungary ([ROR:01pnej532](https://ror.org/01pnej532))
 
 † Corresponding author
 
@@ -36,29 +36,53 @@ We set out in this study to directly measure the speed of signal propagation in 
 
 ## Results
 
-## Signal propagation paths and delays in human and rat pyramid to pyramid connections
+### Signal propagation paths and delays in human and rat pyramid to pyramid connections
 
 We followed recent results indicating differences in the density and size of human and mouse supragranular pyramidal cells (PCs) (Berg et al., 2021) in a human-rat setting. As expected, measurements on 3D reconstructions based on randomly selected, electrophysiologically recorded, and biocytin-filled human (n=30) and rat (n=30) L2/3 cortical pyramidal cells (Figure 1—figure supplement 1A) show significant differences in the horizontal (463.17±119.48 vs 324.79±80.58 µm, t-test: p=1.687 × 10–6) and vertical extensions (542.58±146.89 vs 409.99±102.69 µm, t-test: p=0.00013), and in the total dendritic (9054.94±3699.71 vs 5162.68±1237.71 µm, t-test: p=7.203 × 10–7) and apical dendritic length (4349.76±1638.39 vs 2592.15±818.26 µm, t-test: p=1.638 × 10–6, Figure 1—figure supplement 1B and C).
 
 To examine the temporal aspects of information propagation in excitatory microcircuits, we performed simultaneous whole-cell patch clamp recordings in synaptically connected L2/3 PCs from acute neocortical slices from rat and human tissues (Figure 1). EPSPs were measured in response to single AP in presynaptic cells (Figure 1B). Synaptic latency was calculated as the time difference between the peak of the presynaptic AP and the onset point of the postsynaptic EPSP (see Figure 1B and Methods). We did not find significant differences in synaptic latencies between human and rat PC-to-PC connections (rat: 1.126±0.378 ms, rat: n=19, human: 1.111±0.306 ms, n=17, Mann-Whitney test: p=0.949). Both pre- and postsynaptic PCs were filled with biocytin during recordings allowing for post hoc identification of close appositions between presynaptic axons and postsynaptic dendrites (Frick et al., 2008; Figure 1A). We measured the shortest axonal path lengths linking the presynaptic soma to close appositions on the postsynaptic dendrite (rat: 168.267±49.59 µm, human: 272.22±73.14 µm) and the shortest dendritic path lengths from close appositions found exclusively on dendritic spine heads to the postsynaptic soma (rat: 84.9±18.301 µm, human: 129.48±40.005 µm) in a subset of recordings (rat: n=6, human: n=5). Consequently, we found that the minimal intersomatic distance (the sum of the shortest axonal and dendritic paths) in each synaptically connected PC-to-PC pair was significantly smaller in rats compared to humans (rat: 259.7±58.8 µm, human: 402.12±74.757 µm, Mann-Whitney test: p=0.009, Figure 1D). We did not find a significant difference in these paired recordings in synaptic latency (rat: 1.09±0.375ms, n=6 from n=6 rats; human: 1.102±0.408ms, n=5 from n=5 patients; Mann-Whitney test: p=0.931, Figure 1C, darker dots). Given that similar synaptic latencies accompany different lengths for signal propagation in the two species, membrane potentials (APs and/or EPSPs) are likely to propagate faster in human PC-to-PC connections.
 
-## Direct measurements of signal propagation in PC dendrites and axons
+![Figure 1.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative reconstructions of electrophysiologically recorded and biocytin-filled rat (left, gray soma and dendrites) and human (right, blue soma and dendrites) synaptically connected pyramidal cell pairs. The presynaptic soma and the axon are in red; the postsynaptic dendritic path from the synapse to the soma is highlighted in green. Minimal intersomatic distance was calculated as the sum of the shortest presynaptic axonal (red) and postsynaptic dendritic (green) paths. Boxed region is magnified on the bottom. Scale bars for insets are 20 µm. (B) Synaptic latency was determined as the time difference between the peak of the presynaptic AP (pink dot) and the onset of the postsynaptic excitatory postsynaptic potential (red dot). Straight lines indicate baseline and rise phase fitting. (C) Summary of synaptic latencies in rat (red) and human (blue) cell pair recordings. Each dot represents the average latency in a cell measured from the action potential (AP) peak to excitatory postsynaptic potentials (EPSP) onset as illustrated in panel B. The darker colors represent the paired recordings with full reconstruction. For these data points there was no significant difference between the two species (Mann-Whitney test: p=0.931). The extended dataset with cell pairs without reconstruction shows no significant difference between the two species (Mann-Whitney test: p=0.949). (D) Minimal intersomatic distance of the recorded cell pairs. Intersomatic distance was calculated through every putative synapse and the shortest was taken into account. The minimal intersomatic distance was significantly longer in the human dataset compared to rats (Mann-Whitney test: p=0.009). **p<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sample reconstructions of fully recovered rat and human cortical pyramidal cells. The left horizontal line indicates the location of pia mater. (B) Comparison of dendritic length, number of nodes, maximum vertical and horizontal extension, and the number of primary dendrites (n=30 in both groups) respectively of all reconstructed dendritic arborization. (C) Comparison of length, number of nodes, maximum vertical and horizontal extension, and the number of maximum branch order (n=30 in both groups) respectively of the apical dendrites. Boxes represent median and IQR, whiskers represent outlier range (±1.5 IQR); mean is indicated by open square, crosses denote minimum and maximum values. ** denotes significant difference p<0.01.
+
+### Direct measurements of signal propagation in PC dendrites and axons
 
 Compensation of longer axonal and dendritic paths must be explained by the higher velocity of signal propagation along axons and/or dendrites. We, therefore, asked whether interspecies differences can be found in axonal and/or dendritic signal propagation in L2/3 PCs.
 
 First, we investigated whether we could find dissimilarities between the two species in the speed of signal propagation along axons of PCs. We whole-cell recorded the soma and a distal axon simultaneously, positioning the axonal recording electrode on one of the blebs formed at the cut ends of axons during slice preparation. Somatic current injections were used to trigger APs and the time between somatic and the axonal AP was measured (Figure 2A, Figure 2—figure supplement 1C). We captured two-photon images during electrophysiological recording and measured the length of the axonal path from the somatic to the axonal electrode on image z-stacks. The dataset was restricted to recordings that matched the distances from the soma to axodendritic close appositions determined above along the axon of synaptically coupled PC-to-PC connections (rat: n=8, 268.203±76.149 µm vs. human: n=9, 281.507±125.681 µm, two-sample t-test: p=0.799, Figure 2F). The latency between the soma and the axon bleb of the propagating AP peaks was not significantly different between the species (rat: n=8, 0.333±0.211 ms vs. human: n=9, 0.327±0.123 ms, two-sample t-test: p=0.945). The axonal speed of AP propagation was calculated for each cell from the time required from soma to recording site. We found no significant difference in the propagation speed of APs in the axons of rats and humans (rat: n=8, 0.848±0.291 m/s vs. human: n=9, 0.851±0.387 m/s, two-sample t-test: p=0.282, Figure 2F). Our axonal recordings suggest that there is no significant difference between the two species over the range of distances we investigated, so the lower latencies in the paired recordings may be due to dendritic differences.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig2-v1.jpg)
+
+**Figure 2.:** (A) Left, Human pyramidal cell simultaneously recorded with a somatic (red pipette) and axonal (green pipette) electrode. Right, Somatic depolarizing current (Isoma) evoked action potentials (Vsoma) and their propagation to the axonal recording site (Vaxon). (B) Path distances and AP latencies measured between the soma and axon bleb. AP propagation speed measured along the axon showed no significant difference (two-sample t-test: p=0.986). All recordings were made at resting membrane potential. (C) Left, Two-photon image of a rat pyramidal cell recorded simultaneously with a somatic (red pipette) and dendritic (green pipette) electrode. Top, Dendritic stimulation (Idend) with simulated excitatory postsynaptic potentials (EPSP) waveform (Vdend) and somatic response (Vsoma). Bottom, Somatic stimulation (Isoma) triggers an AP (Vsoma) detected in the dendrite as bAP (Vdend). (D) Left, simulated EPSP propagation speed in rat and human cells (rat: 0.074±0.018 m/s vs. human: 0.093±0.025 m/s, two-sample t-test: p=0.004). Top right, simulated EPSP dendritic propagation speed was lower than bAP propagation speed (sEPSP: 0.084±0.023 m/s vs. bAP: 0.337±0.128 m/s, Wilcoxon signed ranks test: p=1.631 × 10–9). Bottom right: there was a significant correlation in the forward propagating sEPSP speed and the speed of bAPs. Darker dot is the data for the cell shown on panel C. (E) Left, Two-photon image and reconstruction of a human pyramidal cell recorded simultaneously with a somatic (red pipette) and dendritic (green pipette) electrode. Right, Somatic current (Isoma) evoked APs (Vsoma) and their backpropagation into the dendritic recording site (Vdend). (F) Top left, recording distance. Lower left, bAP latency was shorter in human cells (Mann-Whitney test: p=0.005). Right, bAP propagation speed was significantly higher in human dendrites (Mann-Whitney test: p=6.369 × 10–6). Darker dot indicate the data for the cell shown on panel E. Scale bars A and C: 10 µm, E: 20 µm. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The presynaptic action potential (AP) peak and excitatory postsynaptic potentials (EPSP) latency were measured at different points. Left: latency at onset, middle: latency at half amplitude, right: latency at EPSP peak. (B) Same as A but for bAP speed values. (C) Same as A but for AP axonal speed values. (D) Upper: Same as A but for sEPSP speed values. Lower: comparison of sEPSP and bAP speed. (E) Pharmacological experiments with ZD7288. (F) Same as E but for a cocktail of TTX, CdCl2, and AP5.
+
 We next sought to test rat and human dendritic signal propagation velocity using simultaneous whole cell patch clamp recordings with electrodes placed on the somata and dendritic shafts of PCs. Distances of somatic and dendritic recording locations (rat: 143.078±72.422 µm, n=46; vs. human: 153.446±57.698 µm, n=62, Mann-Whitney test: p=0.175, Figure 2B) were chosen to be similar in the two species and in range of soma-to-dendrite distances of axo-dendritic close appositions determined above for synaptically coupled PC-to-PC connections. In the first set of experiments, we injected suprathreshold current through the somatic electrode and measured the time difference between the evoked AP peak at the soma and the respective backpropagating AP peak in the dendritic electrode (Figure 2E and F). We found significant difference in the signal propagation time between rat and human PCs (rat: 0.672±0.334 ms, n=46; vs. human: 0.495±0.229 ms, n=62, Mann-Whitney test: p=0.005, Figure 2F). The AP propagation speed was calculated for each cell from the time difference between the somatic and dendritic APs divided by the distance between the two points. We found that the propagation speed was, on average, ~1.47 fold faster in human (rat: 0.233±0.095 m/s vs. human: 0.344±0.139 m/s, Mann-Whitney test: p=6.369 × 10–6, Figure 2F, Figure 2—figure supplement 1B). In a second set of experiments, using the same dual recording configuration, we tested orthodromic or forward propagating signal propagation velocity by injecting short-duration current ramps to simulate EPSP (sEPSP) signals in the dendrites and recorded the resultant subthreshold voltage response in the soma (Figure 2C). These experiments were performed in the same PCs where backpropagating AP velocities were also measured (rat: n=24, human: n=24). We found that sEPSP propagation speed was, on average, ~1.26 fold faster in human (rat: 0.074±0.018 m/s vs. human: 0.093±0.025 m/s, two-sample t-test: p=0.004; Figure 2D, Figure 2—figure supplement 1D). In addition, we found correlation between forward propagating sEPSP speed and back propagating AP speed (Pearson correlation coefficient, r=0.396, p=0.0053, Figure 2D).
 
-## Contribution of ion channels of the dendritic membrane to signal propagation velocity
+### Contribution of ion channels of the dendritic membrane to signal propagation velocity
 
 Hyperpolarization-activated cyclic nucleotide-modulated (HCN) channel densities were shown to be higher in human compared to rat layer 2/3 PCs and were shown to be instrumental in more depolarized resting membrane potentials and in larger sag potentials in response to hyperpolarization in the human (Kalmbach et al., 2018). In addition, modeling predicted that signal delay in dendrites reduces with increased h-conductance (Kalmbach et al., 2018). In line with previous studies, human PCs in our dataset had more depolarized resting membrane potential (rat: –70.49±5.78 mV, human: –64.30±7.28 mV, Mann-Whitney U test: p=7.37 × 10–6, Figure 3—figure supplement 1A) but the average somatic input resistance were not significantly different in the two species (rat: 59.56±21.86 MΩ, n=46, human: 71.375±65.485 MΩ, n=62, Mann-Whitney test: p=0.347, Figure 3—figure supplement 1A).
 
 Based on the correlation found between forward-propagating sEPSP speed and back-propagating AP speed, we performed pharmacological experiments on bAPs (since it is technically less challenging to evoke) to uncover potential contributors to increased dendritic speeds in humans. To test the contribution of h-channels to the elevated signal propagation speed in human dendrites, we performed pharmacological experiments with 20 µM ZD7288, a specific blocker of h-channels. Significant hyperpolarization of the resting membrane potential was observed in the human cells but not in the rat neurons (Figure 3—figure supplement 1B) and significantly increased input resistance accompanied drug application in both human and rat neurons (Figure 3—figure supplement 1C). Drug administration did not significantly decrease bAP propagation speed in rat PCs (control: 0.163±0.054 m/s, ZD7288: 0.149±0.057 m/s, n=9, two-way ANOVA with repeated measures and Tukey HSD (Honestly Significant Difference) post-hoc comparison: p=0.9, Figure 3A, Figure 2—figure supplement 1E) and in human PCs (control: 0.322±0.073 m/s, ZD7288: 0.268±0.066 m/s, n=8, two-way ANOVA with repeated measures and Tukey HSD post-hoc comparison: p=0.329, Figure 3B, Figure 2—figure supplement 1E). The human dendrites maintained a higher bAP propagation speed in response to h-channel blockage (two-way ANOVA with repeated measures and Tukey HSD post-hoc comparison: p=0.003). We could not find significant interaction of species and ZD7288 treatment (two-way ANOVA with repeated measures: interaction p=0.358). These results suggest that the species-dependent density difference of HCN channels of pyramidal apical dendrites do not by themselves explain the propagation speed differences between the two species.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative recording from layer 2/3 pyramidal cell of a rat. Two-photon maximum intensity projection image of Alexa 594 and biocytin-filled neuron on the left, representative somatic action potential (AP) (red) and dendritic bAP (green) on the upper right in the control condition (left) and after 20 µM ZD7288 application (right). The light green represents the dendritic signal scaled to the amplitude of the somatic signal for better visibility. Effect of ZD7288 on bAP propagation speed. Darker color represents the example cell. (B) Same as in panel A but for human cells. (C and D) Same as A and B but the ACSF contained 1 µM TTX, 200 µM CdCl2, and 20 µM AP5 in the drug application condition. Black scale bars 20 mV and 0.3 ms. Green scale bars 5 mV on A and B, 2.5 mV on C and D. Scale bars on microphotographs 20 µm. All recordings were done on resting membrane potential. *p<0.05, **p<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Resting membrane potential of the recorded cells (rat: –70.49±5.78 mV, human: –64.30±7.28 mV, Mann-Whitney U test: p=7.37 × 10–6) were different in human and in rat pyramidal cells. Input resistance of recorded cells (rat: 59.56±21.86 MΩ, human: 71.37±65.48 MΩ, Mann-Whitney U test: p=0.3466). (B) Resting membrane potential of recorded cells after ZD7288 application (red, rat control: –70.98±5.04 mV vs rat ZD7288: –72.88±9.75 mV, Wilcoxon signed ranks test: p=0.40694; blue, human control: –70.43±6.28 mV vs human ZD7288: –75.47±6.991 mV, paired sample t-test: p=0.02682). (C) The input resistance changed significantly in rat (red, rat control: 86.95±26.34 MΩ vs rat ZD7288: 98.18±28.53 MΩ, paired sample t-test: p=0.00488) and human (blue, human control: 54.38±28.8 MΩ vs human ZD7288: 70.21±26.09 MΩ, paired sample t-test: p=0.02434) after the application of 20 µM ZD7288. (D) Effect of voltage-gated ion channel blockage on bAP amplitude. The amplitudes of the bAPs were significantly decreased upon the application of voltage-gated ion channel blockers (rat control: 46.32±25.78 mV vs rat TTX, CdCl2, AP5: 6.26±3.47 mV, paired sample t-test: p=0.00188, human control: 51.95±22.81 mV vs. human TTX, CdCl2, AP5: 7.52±2.84 mV, Wilcoxon signed ranks test: p=0.0156).
+
 Back-propagation of APs is an active process supported by voltage-gated ion channels that can initiate regenerative events in the dendrites (Stuart and Sakmann, 1994). To further investigate the influence of voltage-gated ion channels we pharmacologically blocked voltage-gated Na+ channels with tetrodotoxin (TTX, 1 µM), voltage-gated Ca2+ channels with cadmium chloride (CdCl2, 200 µM), and NMDA receptors with (2 R)-amino-5-phosphonovaleric acid (AP5, 20 µM) simultaneously. Since the blockage of voltage-gated Na+ channels prevent the initiation of APs, we kept the soma of the recorded cells in voltage clamp mode and used a prerecorded template as voltage command through a somatically placed electrode (the so called ‘simulated spike’) and measured the back propagation of the response to the somatic voltage command at a dendritic recording site in current clamp mode. As expected, the amplitude of the bAPs at the dendritic recording site dropped significantly in human and rat cells, respectively (Figure 3—figure supplement 1D). The speed of back propagation of membrane potential signals in dendrites with blocked regenerative events by the pharmacological cocktail was significantly reduced in rat samples compared to the drug-free control (rat control: 0.199±0.053 m/s, rat TTX/CdCl2/AP5: 0.076±0.03 m/s, two-way ANOVA and Tukey HSD post-hoc comparison: p=0.024, Figure 3—figure supplement 1D, Figure 2—figure supplement 1F), and was significantly lower in human samples as well (human control: 0.395±0.14 m/s, human TTX/CdCl2/AP5: 0.184±0.061 m/s, two-way ANOVA and Tukey HSD post-hoc comparison: p=0.001, Figure 3E, Figure 2—figure supplement 1F). The human dendrites with blocked action potential generation on average had a higher bAP propagation speed, however, it was not statistically significant (rat: 0.076±0.03 m/s n=8, human: 0.184±0.061 m/s n=8, two-way ANOVA with repeated measures and Tukey HSD post-hoc comparison: p=0.066). We could not find significant interaction of species and drug treatment (two-way ANOVA with repeated measures, interaction: p=0.142). In summary, in the search for factors contributing to higher signal propagation speeds in human pyramidal dendrites compared to rat pyramidal dendrites, ion channels such as voltage-gated Na+, Ca2+, and NMDA channels and the HCN seem to play a minor role in distinguishing the two species.
 
-## Specific membrane capacitance
+### Specific membrane capacitance
 
 The specific membrane capacitance (Cm) can influence the time constant of the biological membrane, and it is a key determinant of the propagation of electrical signals. Recent experiments indicated that the Cm of human L2/3 PCs might be significantly lower compared to rodents (Eyal et al., 2016) and modeling studies suggested that the decrease in Cm could lead to increased conduction speed and fewer synapses being able to evoke suprathreshold events in human PCs (Eyal et al., 2016). However, a separate line of experiments could not detect differences in the Cm of L5 PCs between humans and rodents (Beaulieu-Laroche et al., 2018), or L2/3 PCs (Gooch et al., 2022) thus, to test whether Cm is a component in producing elevated signal propagation velocity in human dendrites, we directly measured the Cm values of human and rat PCs by pulling nucleated patches (Eyal et al., 2016; Figure 4A and B). We found no significant difference in the Cm between the human and rat L2/3 PCs (rat: 1.092±0.14 µF/cm2 n=20; human: 0.987±0.196 µF/cm2 n=19, two-sample t-test: p=0.0615, Figure 4C). The specific membrane capacitance is determined by the dielectric constant of the membrane, and it is inversely proportional with the membrane thickness. We measured the membrane thickness of dendritic structures with transmission electron microscopy both in human and rat samples (Figure 4D and E) and detected no significant differences between the two species (human: 4.271±0.873 nm, n=213 from n=3 patient; rat: 4.122±0.779 nm n=151 from n=3 rat, Mann-Whitney test: p=0.212, Figure 4E). Based on these experiments it seems that not the specific membrane capacitance is the key determinant of the higher signal propagation speed in human cells.
 
@@ -66,7 +90,7 @@ The specific membrane capacitance (Cm) can influence the time constant of the bi
 
 **Figure 4.:** (A) Representative capacitive transient of a nucleated patch pulled from layer 2/3 neocortical pyramidal cell (black). A single exponential function was fitted on the measured signal (red) for the calculation of the time constant of the membrane. Scale bar: 100 pA, 20 µs. (B) Differential interference contrast microscope image of a neuronal nucleus. The shortest (a) and longest (b) diameter values were used to calculate the membrane surface. Scale bar 5 µm. (C) Specific membrane capacitance of rat (red) and human (blue) neocortical pyramidal cells. (D) Electron micrographs of dendritic membranes used for membrane thickness measurements. Yellow lines indicate measuring profiles. Scale bar 40 nm. Boxed region magnified on the right. The two red dots on the green line show the edges of the membrane (see methods). Inset scale bar 10 nm. (E) Membrane thickness of rat (red, n=151 from n=3 rat) and human (blue, n=213 from n=3 patient) neocortical cell dendrites (Mann-Whitney test: p=0.212).
 
-## Effect of dendritic thickness
+### Effect of dendritic thickness
 
 The relationship between conduction velocity and axon diameter is well known for small myelinated and unmyelinated axons (Waxman and Bennett, 1972). Anatomical features of neuronal dendrites also have a major influence on signal propagation properties (Deitcher et al., 2017; Rall and Rinzel, 1973; Rinzel and Rall, 1974; Vetter et al., 2001), thus, in addition to the soma-dendritic path measurements shown above, we also measured the thickness of dendrites at every 0.5 µm along the path linking the somatic and dendritic electrodes on two-photon image stacks captured during electrophysiological measurements (Figure 5A–C). We found that the mean diameter of dendrites was thicker in human (2.272±0.584 µm, n=62) compared to the rat (2.032±0.413 µm, n=46, two-sample t-test: p=0.019, Figure 5D). Moreover, in samples where we acquired both dendrite thickness and bAP signal propagation velocity, we found that the mean dendritic diameter between the recording sites was correlated with the speed of backpropagating APs (Figure 5E).
 
@@ -74,13 +98,33 @@ The relationship between conduction velocity and axon diameter is well known for
 
 **Figure 5.:** (A) Left, Maximum intensity projection of Alexa594 and biocytin-filled human pyramidal cell imaged in two-photon microscope. Right, model of 3D reconstructed apical dendrite. Middle, overlay of the two-photon image and the model. (B) Apical dendrite thickness measurements on the sample shown in A. Left, The center of the dendrite is tracked by a thick green line while the perpendicular thin lines show measured profiles. Right, Stacked thickness measurements with micrometer scale. (C) Same as in B with a rat sample. Scale bars 20 µm. (D) Comparison of rat and human apical dendrite averaged thickness. The mean dendritic diameter of human dendrites was significantly thicker than rat ones (two-sample t-test: p=0.019). Darker dots indicate data measured on image stacks shown in panel B and C. (E) bAP propagation speed correlates significantly with dendrite thickness. Pearson correlation coefficient (r) values for fitted lines are shown on the upper left corner of the plot. The shaded area around the regression line shows the 0–100% confidence interval for the bootstrapped data. ***p<0.001.
 
-## Modeling EPSP propagation in dendrites
+### Modeling EPSP propagation in dendrites
 
 Detailed compartmental models were utilized to disassemble the effect of various morphological and cable parameters on the latency and velocity of synaptic potential in human and rat L2/3 dendrites. Based on the 3D morphological reconstructions of five human and four rat PCs (Figure 6—figure supplement 1), we first asked, how dendritic morphological differences per se affect signal propagation, assuming that the cable parameters are identical in all cells (Cm=1 µF/cm2, Rm=15,000 Ωcm2, Ra=150 Ωcm, Figure 6). Figure 6A and B shows EPSPs latency and velocity as a function of distance from its dendritic initiation site to the soma. Latency was calculated as the time difference between the peak-times of the local dendritic EPSP and of the resulting somatic EPSP. The dendritic-to-soma latency ranged between 0.1–13 ms in rats (red circles) and 0.01–25 ms in human (blue circles). The larger maximal latency in human is expected due to the ~twofolds longer apical dendrite in humans L2/3 neurons (Figure 6A). The respective EPSPs velocity was calculated by dividing the path distance to the soma from the dendritic origin of the EPSP by its latency (Figure 6B). EPSP velocity ranged between 0.02–0.09 m/s in rat and 0.01–0.48 m/s in human (Figure 6B). The exceptionally large differences in the maximal velocity between human and rat is taken in the Discussion.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig6-v1.jpg)
+
+**Figure 6.:** (A) Latency and (B) velocity of EPSP in models of 5 human (blue) and 4 rat (red) reconstructed L2/3 PCs. Insets show the respective averages for the zoom-in region (box), which brackets the experimental range of dendritic recordings. Note the smaller latency and larger velocity in human PCs. (C) Dendritic radius as a function of distance from the soma. Note the larger radius of human dendrites in the outlined region. (D and E) As A and B, but now distance is normalized in cable units (thus incorporating the diameters differences between cells) and time is normalized in units of membrane time constant. (F) Sum of radii of basal dendrites as a function of distance from the soma (blue – human, red – rat), in 20 µm bins. Dashed lines are the respective averages. (G and H) As D and E but for ‘hybrid cells’, computed for the five modeled human neurons, all having the basal tree of ‘Rat4’ (blue) and for the four modeled rat cells, all with the basal tree of ‘Rat4’ (red). Note that the differences in latency and velocity between human and rat diminished (insets). (I) Two examples of a color-coded ‘latency-gram,’ visualizing the effect of replacing the basal tree of human L2/3 PC with the basal tree of rat L2/3 PC and vice versa. Top left: ‘Human1’ apical tree with basal tree (in black) of ‘Rat4’ PC. Lower left: ‘Rat4’ apical tree with basal tree of ‘Human1.’ Color-coded difference in latency was calculated by subtracting the respective values of the original cells from those calculated for the ‘hybrid cells.’ The blueish apical tree of the human apical tree indicates deceleration whereas the reddish apical tree of the rat PC indicates acceleration of the EPSPs. Inset shows examples of a somatic EPSP’s in these two cases. Shown are the original EPSPs (black lines) and the EPSPs computed for the respective hybrid cases (dashed line in blue – deceleration; dashed red line – acceleration) both for synaptic inputs at 288 μm from soma. Specific cable properties in all cells were: Cm=1 µF/cm2, Rm=15,000 Ωcm2, Ra=150 Ωcm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Each dendritic branch is marked by a different color.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Values as in Table 2 and Supplementary file 2, Supplementary file 3, Supplementary file 4. Note that the differences in latency and velocity between human and rat are significant in fitted and uniform parameters and diminished in ‘Hybrid’ case. * denotes significant difference p<0.05. Mann-Whitney test, with Bonferroni correction.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Significant difference between human and rat’s basal load, despite no significant difference in real and cable distance of basal tree.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** Average latency as a result of using each of the nine modeled cells basal trees as the basal tree of all other cells (e.g. a ‘hybrid cell’), compared with original models latencies (e.g. ‘Uniform’). Average latency was calculated similar to Supplementary file 2, Supplementary file 3, Supplementary file 4 Note the acceleration due to most of the human basal trees versus the deceleration due to rat basal trees. Mann-Whitney U test. * denotes significant difference p<0.05.
+
 We next compared signal propagation in rat and human dendrites, focusing on identical range of dendrite-to-soma distances in which the experiments were performed (27 µm – 289 µm, insets in Figure 6A and B). Towards this end, we computed the mean EPSP latency and velocity as a function of distance from the soma, averaged across different branches at a given distance from the soma (Figure 6A and B, lower right and upper right insets). For this experimental range of recordings, EPSP velocity ranged between 0.04–0.08 m/s in humans versus 0.03–0.05 m/s in rats. EPSP latency ranged between 0.1–4.7 ms in humans versus 0.4–6.5 ms in rats. These findings demonstrate significantly faster EPSP propagation in humans compared to rats (average latency in humans: 2.45±0.2 ms, n=5; in rats: 3.3±0.3 ms, n=4; Mann-Whitney U test: p=0.03. Average velocity in humans: 0.08±0.005 m/s, n=5; in rats: 0.05±0.006 m/s, n=4; Mann-Whitney U-test: p=0.02. See Figure 6—figure supplement 2 and Supplementary file 2).
 
-A possible reason for the smaller latency and larger velocity of EPSPs in human apical dendrites is that they have larger diameter (Figures 5D and 6C see also Agmon-Snir and Segev, 1993; Jack et al., 1975). Theory shows that, for an infinitely long passive cylindrical cable, the velocity of passive signals is not constant. It is fast near their site of origin, converging to a value of 2λ/τ away from their initiation site (Agmon-Snir and Segev, 1993; Jack et al., 1975) (λ is the cables’ space constant and τ is its membrane time constant). This means that the latency and velocity of passive signals, when normalized in units of λ/τ, are identical for cylindrical cables with different diameters. This is due to the fact that differences in cable diameter are taken into account when normalizing the physical distance, x, by λ (which is ∝d, where d is the cable diameter). Hence, if the larger diameter in human dendrites is a key contributor to the enhanced signal velocity in these cells, we expect that the EPSP latency and velocity will converge on similar curves for all cells (rat and human alike) after normalizing the distance in units of λ, and time in units of τ. However, albeit such normalization, the velocity is still larger and the latency is shorter in human (compare insets in Figure 6D and E to Figure 6A and B, respectively. In this case, the average latency in humans: 0.16±0.01 τ, n=5; in rats: 0.22±0.02 τ, n=4; Mann-Whitney U test: p=0.02. The average velocity in humans: 2.55±0.11 λ/τ, n=5; in rats: 1.73±0.29 λ/τ, n=4; Mann-Whitney U test: p=0.02).
+A possible reason for the smaller latency and larger velocity of EPSPs in human apical dendrites is that they have larger diameter (Figures 5D and 6C see also Agmon-Snir and Segev, 1993; Jack et al., 1975). Theory shows that, for an infinitely long passive cylindrical cable, the velocity of passive signals is not constant. It is fast near their site of origin, converging to a value of 2λ/τ away from their initiation site (Agmon-Snir and Segev, 1993; Jack et al., 1975) (λ is the cables’ space constant and τ is its membrane time constant). This means that the latency and velocity of passive signals, when normalized in units of λ/τ, are identical for cylindrical cables with different diameters. This is due to the fact that differences in cable diameter are taken into account when normalizing the physical distance, x, by λ (which is $∝\sqrt{d}$, where d is the cable diameter). Hence, if the larger diameter in human dendrites is a key contributor to the enhanced signal velocity in these cells, we expect that the EPSP latency and velocity will converge on similar curves for all cells (rat and human alike) after normalizing the distance in units of λ, and time in units of τ. However, albeit such normalization, the velocity is still larger and the latency is shorter in human (compare insets in Figure 6D and E to Figure 6A and B, respectively. In this case, the average latency in humans: 0.16±0.01 τ, n=5; in rats: 0.22±0.02 τ, n=4; Mann-Whitney U test: p=0.02. The average velocity in humans: 2.55±0.11 λ/τ, n=5; in rats: 1.73±0.29 λ/τ, n=4; Mann-Whitney U test: p=0.02).
 
 To summarize: Scaling dendritic distance in units of λ and time in units of τ did not eliminate the statistically significant differences in EPSP latency and velocity between humans and rats. This raises the question: what factor enhances EPSP propagation speed in human dendrites?
 
@@ -91,6 +135,240 @@ To examine the impact of impedance load, we computationally substituted the basa
 To further demonstrate the effect of switching the basal tree between human and rat neurons (‘hybrid cells’) on the EPSPs’ velocity and latency, we depict in Figure 6I the case where the basal tree of ‘Human1’ PC was replaced with the basal tree of ‘Rat4’ (top left) and vice versa (lower right). The result (the ‘latency-gram’ of the EPSPs) is depicted in color-code, showing deceleration in the apical tree of the human cell (top left) and acceleration in the rat’s apical tree (lower right) due to these manipulations. Exemplar somatic EPSPs originated at ~282 µm from the soma in the original cells (black line) and in the respective ‘hybrid case’ (dashed lines) are shown at top right. The deceleration in the case of a human cell with a rat basal tree is shown on the left and the acceleration in the case of a rat cell with a human basal tree is shown on the right. The explanation for the surprising large impact of the impedance load of the basal tree on signal propagation in the apical tree is elaborated in the Discussion.
 
 In addition to morphological features influencing EPSP latency and velocity (Figure 7, Figure 7—figure supplement 1), the three key passive parameters - specific membrane resistivity (Rm), capacitance (Cm) and axial resistivity (Ra) - affect signal propagation properties in dendrites by altering the cables’ space constant (λ) and membrane time constant (τ). These changes can either enhance or compensate for the increased velocity of signal propagation of human cells, depending on the specific values of these parameters. Thus, we next examined to what extent the cable parameters of the individual PCs studied here influence signal propagation in their respective dendrites. To address this, we fitted the cable parameters for each of the 9 reconstructed PCs individually, based on double-electrodes recordings (soma and dendrite) for each cell. Figure 7A shows an exemplar reconstructed human L2/3 PC (Human5) with the locations of the two recording/stimulating electrodes used for this cell. Figure 7B top (D-S: dendrite-to-soma direction) shows the case where the step current was injected at the dendrite (cyan). The resultant voltage response is depicted in cyan in the trace below; the model fit is superimposed in dark blue. The opposite (S-to-D) direction is depicted by the next three traces below. This fit enabled a direct estimate of the cable parameters per cell (Table 1). We found that Rm is larger in humans and Cm is smaller in humans (Table 1). Yet the membrane time constant (τ=Rm*Cm) is statistically similar in the two species (Table 2 and see Figure 7—figure supplement 2).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig7-v1.jpg)
+
+**Figure 7.:** (A) Exemplar modeled (‘Human5’) L2/3 PC, also showing the locations of the two recording/stimulating electrodes. (B) Top (D→S): step hyperpolarizing current (–100 pA) injected to the dendrite of the modeled cell (cyan). Lower trace: Model fit (dark purple line) to the voltage response at the soma (noisy light purple line). The resultant fit to the local dendritic voltage response is also shown (in cyan). Bottom (S→D): as is the case at top, but with current step injected to the soma (purple step current). This fitting procedure resulted with the following passive parameters: Cm=0.63 µF/cm2, Rm=15,570 Ωcm2, Ra=109 Ωcm. (C) Latency and (D) velocity of EPSPs for the 9 model cells as in Figure 6A and B, but now with specific cable parameters fitted to the individual modeled neurons (see Table 1). (E and F) As in C and D, with distance normalized in cable units and time normalized by the membrane time constant (see Table 2). Note the smaller latency and larger velocity for the human PCs, which is now more significant as compared to the case where the cable parameters were uniform for all modeled cells (compare to Figure 6D and E).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Cable with a single branch, with symmetrical (top left) or asymmetrical (top right) branches. Thick branches diameter is 4 µm, while thin branches’ diameter is 1 µm. Latency and velocity were calculated as explained in the text and in Figures 7 and 8; synaptic inputs were activated at different sites along the structure. The recording site (‘soma’) is at left (dark blue rectangle), with diameter of 13 µm. (B) As in A, with normalized space and time constants. For symmetrical branches, both latency and velocity overlap for the two branches (left column in both A and B), while in asymmetrical case, the latency from the thick branch is smaller as it is electrotonically closer to the soma and, therefore, for the same physical distance the initial velocity of the EPSP at its site of origin is larger (right column in B), red branch compared with green. However, there is a small increase in latency (decrease in velocity at these daughter branches) due to local impedance mismatch. (C) Cable with diameters replicating the apical main-branch of ‘Human2’ (left column) and ‘Rat1’ (right column) PCs. Note the local irregularities shifts the velocity above (left column) or below (right column) 2λ/$\tau$ despite having identical lengths across all sections. Moreover, velocity pattern changes due to the proximity of the synapse to the soma, as a function of the cable diameters. Cable parameters are identical for all morphologies (Cm=1.5 µF/cm2, Rm=10,000 Ωcm2, Ra=150 Ωcm).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Cm and Rm are the specific membrane capacitance and resistivity, respectively; Ra is the specific axial resistance. Note the similar time-constant between human and rat.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A and B) Same as Figure 7E and F but for ‘hybrid cells’, computed for the five human neurons, all having the basal tree of ‘Rat4’ (in blue) and for the four rat cells, all with the basal tree of ‘Rat1’ (in red). Note that the differences in latency and velocity between human and rat were diminished (insets).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig8-v1.jpg)
+
+**Figure 8.:** (A) Equivalent cable for the apical tree (in blue) and the basal tree (in red) for the 9 L2/3 cells modeled in this study. Note the relatively large conductance load (sink) imposed by the large basal tree in human cells. (B) EPSP velocity and (C) latency as a function of distance of the (apical) synapse from the soma. The synapse was located along the ‘apical’ cable (blue cylinder, inset). The respective five cases are shown in the inset. Velocity and latency were computed as in Figures 6 and 7. Note the enhanced velocity and reduced latency for larger basal dendrites. Cable parameters were: Cm=1 µF/cm2, Rm=15,000 Ωcm2, Ra=150 Ωcm. The apical cylinder is of infinite length with diameter of 3 μm; the basal tree (color cables) have linearly increasing diameter (d) and length (L), approximating the increment from rat to human basal trees (Figure 6F): red (l=800 μm, d=20 μm), yellow (l=700 μm, d=18 μm); green (l=600 μm, d=16 μm); light blue (l=500 μm, d=14 μm); dark blue (l=400 μm, d=12 μm). Soma diameter was 20 μm in all cases.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Cumulative SHAP values (main and interaction effects) for the top five variables influencing signal propagation latency. The model used for this analysis is the Gradient Tree Boosting model.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Dendritic branching point counts between the putative synapse and the soma of the postsynaptic cells of the fully reconstructed cell pairs. We could not find significant correlation between synaptic latency and branching point counts (Red: rat, Blue: human). (B) Branching point counts between the dendritic recording site and the soma during sEPSP recordings. We could not find significant correlation between branching point count and sEPSP propagation speed. (C) Branching point counts between the dendritic recording site and the soma during bAP recordings. We found a significant correlation between branching point count and bAP propagation speed in the rat dataset (red) but not in the human dataset (blue). (D) Simulation of the effect of a branching point on the signal propagation velocity. Adding a branch point (yellow versus red, marked with a circle) to the dendrite did not affect the velocity and the latency of the simulated signal. (E) Same as D but for cable units.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/93781/elife-93781-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Top: simulated EPSPs in Human 1 neuron as recorded at the injected point in the apical dendrite, located 150 µm from the soma. Simulated synaptic current is shown by the dashed line. Bottom: the resultant EPSP at the soma. Simulation was performed for a range of series resistance (Rs) values (shown at right). (B) As in A but for Rat 3 neuron. (C) EPSPs latency as a function of Rs for the 9 modeled neurons. Electrode capacitance was 6pF with variable series resistance, Rs.
+
+**Table 1.**
+ Passive cable parameters fitted to experimental data.Cm and Rm are the specific membrane capacitance and resistivity, respectively; Ra is the specific axial resistance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell name</th>
+      <th>Cm (µF/cm2)</th>
+      <th>Rm (Ωcm2)</th>
+      <th>Ra (Ωcm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human1</td>
+      <td>0.65</td>
+      <td>19,875</td>
+      <td>298</td>
+    </tr>
+    <tr>
+      <td>Human2</td>
+      <td>0.60</td>
+      <td>15,672</td>
+      <td>263</td>
+    </tr>
+    <tr>
+      <td>Human3</td>
+      <td>0.85</td>
+      <td>12,872</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>Human4</td>
+      <td>0.77</td>
+      <td>21,523</td>
+      <td>209</td>
+    </tr>
+    <tr>
+      <td>Human5</td>
+      <td>0.63</td>
+      <td>15,570</td>
+      <td>109</td>
+    </tr>
+    <tr>
+      <td>Rat1</td>
+      <td>0.84</td>
+      <td>13,110</td>
+      <td>267</td>
+    </tr>
+    <tr>
+      <td>Rat2</td>
+      <td>1.16</td>
+      <td>9084</td>
+      <td>249</td>
+    </tr>
+    <tr>
+      <td>Rat3</td>
+      <td>1.02</td>
+      <td>14,497</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <td>Rat4</td>
+      <td>1.41</td>
+      <td>8527</td>
+      <td>109</td>
+    </tr>
+    <tr>
+      <td>Mean human</td>
+      <td>0.70</td>
+      <td>17,120</td>
+      <td>196</td>
+    </tr>
+    <tr>
+      <td>Mean rat</td>
+      <td>1.11</td>
+      <td>11,304</td>
+      <td>185</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Morphological and cable parameters, and model prediction, of the average excitatory postsynaptic potentials (EPSPs) latency and velocity within experimental range of dendritic recordings per modeled cell.Cable parameters were fitted per cell as in Table 1. $l_{avg}$ , and $d_{avg}$- the average physical distance and diameter, respectively from which the respective experiments (per cell) were performed (zoom-in region in Figure 7C and D).$L_{avg}$ is the respective distances in cable units ($L=\frac{l}{\lambda}$); τ is the membrane time constant (Cm*Rm). Latency and velocity are the average values from dendrite to soma, computed for the experimental range of dendritic recordings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell name</th>
+      <th>davg (µm)</th>
+      <th>lavg (µm)</th>
+      <th>Lavg(λ)</th>
+      <th>τ(ms)</th>
+      <th>Latency (ms)</th>
+      <th>Velocity (m/s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human1</td>
+      <td>0.4</td>
+      <td>192</td>
+      <td>0.6</td>
+      <td>12.92</td>
+      <td>2.8</td>
+      <td>0.074</td>
+    </tr>
+    <tr>
+      <td>Human2</td>
+      <td>0.5</td>
+      <td>180</td>
+      <td>0.54</td>
+      <td>9.46</td>
+      <td>2.18</td>
+      <td>0.089</td>
+    </tr>
+    <tr>
+      <td>Human3</td>
+      <td>0.4</td>
+      <td>172.7</td>
+      <td>0.42</td>
+      <td>10.90</td>
+      <td>2.13</td>
+      <td>0.086</td>
+    </tr>
+    <tr>
+      <td>Human4</td>
+      <td>0.6</td>
+      <td>178</td>
+      <td>0.41</td>
+      <td>16.60</td>
+      <td>2.5</td>
+      <td>0.074</td>
+    </tr>
+    <tr>
+      <td>Human5</td>
+      <td>0.44</td>
+      <td>162.6</td>
+      <td>0.35</td>
+      <td>9.80</td>
+      <td>1.69</td>
+      <td>0.098</td>
+    </tr>
+    <tr>
+      <td>Rat1</td>
+      <td>0.35</td>
+      <td>163.9</td>
+      <td>0.64</td>
+      <td>11.00</td>
+      <td>3.17</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>Rat2</td>
+      <td>0.43</td>
+      <td>144.3</td>
+      <td>0.52</td>
+      <td>10.50</td>
+      <td>3.52</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>Rat3</td>
+      <td>0.5</td>
+      <td>170.4</td>
+      <td>0.32</td>
+      <td>14.5</td>
+      <td>3.44</td>
+      <td>0.051</td>
+    </tr>
+    <tr>
+      <td>Rat4</td>
+      <td>0.53</td>
+      <td>164.6</td>
+      <td>0.37</td>
+      <td>11.9</td>
+      <td>2.72</td>
+      <td>0.063</td>
+    </tr>
+    <tr>
+      <td>Mean human</td>
+      <td>0.47</td>
+      <td>177.1</td>
+      <td>0.46</td>
+      <td>11.9</td>
+      <td>2.26</td>
+      <td>0.085</td>
+    </tr>
+    <tr>
+      <td>Mean rat</td>
+      <td>0.45</td>
+      <td>160.8</td>
+      <td>0.46</td>
+      <td>12</td>
+      <td>3.21</td>
+      <td>0.053</td>
+    </tr>
+  </tbody>
+</table>
 
 Figure 7C and F extends the simulations using the fitted (rather than uniform) cable parameters for each cell (Figure 6). Compared to the uniform case, the differences in EPSP latency and propagation velocity between and within the two species are slightly enhanced (compare Figure 7C and D) to Figure 6A and B. For the per-cell fit, the latency ranges between 0.1–11 ms for rats (red) and 0.1–28 ms for humans (Figure 7C); the velocity ranges between 0.02–0.085 m/s for rats (red) and 0.02–0.75 m/s for humans (Figure 7D). After normalizing the distance by the space and time constants calculated per cell, the differences in both latency (Figure 7E) and velocity (Figure 7F) among individual cells is larger compared with the uniform case (Figure 6D and E). Importantly, despite this increased variance within species, the differences between humans and rats remain statistically significant, both with and without normalization (average latency in humans: 2.3±0.4 ms, or 0.19±0.03 τ, n=5; in rats: 3.2±0.6 ms or 0.27±0.05 τ, n=4; Mann-Whitney U test: p=0.03 for both ms and τ units. Average velocity in humans: 0.085±0.009 m/s or 2.5±0.4 λ/τ, n=5; in rats: 0.05±0.0085 m/s or 1.7±0.3 λ/τ, n=4; Mann-Whitney U test: p=0.03 for m/s and p=0.02 for λ/τ units. See Figure 6—figure supplement 2 and Table 2).
 
@@ -118,39 +396,47 @@ In addition to associative plasticity, precision of synaptic delays is crucial i
 
 ## Materials and methods
 
-## Experimental design
+### Experimental design
 
-## Slice preparation
+#### Slice preparation
 
 Experiments were conducted according to the guidelines of the University of Szeged Animal Care and Use Committee (ref. no. XX/897/2018) and of the University of Szeged Ethical Committee and Regional Human Investigation Review Board (ref. 75/2014). For all human tissue material written consent was given by the patients prior to surgery. Human neocortical slices were sectioned from material that had to be removed to gain access for the surgical treatment of deep-brain target (n = 33 female and n = 29 male, aged 49± 19.2 y, from the frontal (n=21), temporal (n=20), parietal (n=20) and occipital (n=1) cortices). Anesthesia was induced with intravenous midazolam and fentanyl (0.03 mg/kg, 1–2 µg/kg, respectively). A bolus dose of propofol (1–2 mg/kg) was administered intravenously. The patients received 0.5 mg/kg rocuronium to facilitate endotracheal intubation. The trachea was intubated, and the patient was ventilated with O2/N2O mixture at a ratio of 1:2. Anesthesia was maintained with sevoflurane at care volume of 1.2–1.5. Following surgical removal, the resected tissue blocks were immediately immersed into a glass container filled with ice-cold solution in the operating theater and transported to the electrophysiology lab. For animal experiments, we used the somatosensory cortex of young adults (19–46 d of age, (P) 23.9±4.9) male Wistar rats. Before decapitation animals were anesthetized by inhalation of halothane. 320 µm thick coronal slices were prepared with a vibration blade microtome (Microm HM 650 V; Microm International GmbH, Walldorf, Germany). Slices were cut in ice-cold (4 °C) cutting solution (in mM) 75 sucrose, 84 NaCl, 2.5 KCl, 1 NaH2PO4, 25 NaHCO3, 0.5 CaCl2, 4 MgSO4, 25 D(+)-glucose, saturated with 95% O2 and 5% CO2. The slices were incubated in 36 °C for 30 min, subsequently the solution was changed to (in mM) 130 NaCl, 3.5 KCl, 1 NaH2PO4, 24 NaHCO3, 1 CaCl2, 3 MgSO4, 10 D(+)-glucose, saturated with 95% O2 and 5% CO2, and the slices were kept in it until experimental use. The solution used for recordings had the same composition except that the concentrations of CaCl2 and MgSO4 were 3 and 1.5 mM unless it is indicated otherwise. The micropipettes (3–5 MΩ) were filled (in mM) 126 K-gluconate, 4 KCl, 4 ATP-Mg, 0.3 GTP-Na2, 10 HEPES, 10 phosphocreatine, and 8 biocytin (pH 7.25; 300 mOsm).
 
-## In vitro electrophysiology
+### In vitro electrophysiology
 
 Somatic whole-cell recordings were obtained at ~37 °C from simultaneously recorded PC-PC cell pairs visualized by infrared differential interference contrast (DIC) video microscopy at depths 60–160 µm from the surface of the slice (Zeiss Axio Examiner LSM7; Carl Zeiss AG, Oberkochen, Germany), 40x water-immersion objective (1.0 NA; Carl Zeiss AG, Oberkochen, Germany) equipped with Luigs and Neumann Junior micromanipulator system (Luigs and Neumann, Ratingen, Germany) and HEKA EPC 10 patch clamp amplifier (HEKA Elektronik GmbH, Lambrecht, Germany). Signals were digitalized at 15 kHz and analyzed with custom-written scripts in Python. Presynaptic cells were stimulated with a brief suprathreshold current paired-pulse (800 pA, 2–3 ms, 50–60 ms separation of the two pulses), derived in 10 s interval. The postsynaptic cells were recorded in current-clamp recording, holding current was set to keep the cell’s membrane potential around −50 mV. The experiments were stopped if the series resistance (Rs) exceeded 25 MΩ or changed more than 20%. For the dendritic recordings 20 μM Alexa 594 was added to the internal solution of the somatic pipette and 20 μM Alexa 488 to the internal solution of the dendritic pipette. The PCs were kept in whole-cell configuration for at least 10 min before the axon bleb or dendritic targeted recording started. Then the microscope switched to 2 p mode. The fluorescent dyes of the pipette solution were excited at 850 nm wavelength with a femtosecond pulsing Ti:sapphire laser (Mai Tai DeepSee, Spectra-Physics, Santa Clara, CA). The axon blebs and the dendrites were targeted in 2 p mode. After the successful seal formation, the imaging was switched off to reduce the phototoxicity in the sample. All the recordings were carried out in current clamp mode. 800ms long square pulses with elevating amplitude (from –110–300 pA) were used to evoke APs. In some experiments, the same long square injection protocol was repeated at the dendritic/axonal recording site. For measuring the forward propagation of electrical signals in dendrites, we applied either short artificial EPSC-shaped currents (Connelly et al., 2016) or mostly ramp currents (Markram and Sakmann, 1994) through the dendritic pipette. Ten minutes of recording we applied different drugs or finished the recordings. At the end of the recording, we acquired a 2 p Z series from the recorded dendrite. Then the pipettes were carefully withdrawn from the cells. The slices went under chemical fixation for further anatomical investigation. Due to the small diameter of the dendrites of L2/3 neurons, the dendritic pipette access resistance was 92.43±34.29 MΩ with 24.8–196.2 MΩ range (Gidon et al., 2020). We ran a set of computer simulations on our reconstructed neurons (both human and rat), adding a simulated electrode with variable serial resistance values. We found that, for series resistances ranging from 40 to 200 MΩ, the effect of the presence of the electrode on the EPSP latencies is negligible (Figure 8—figure supplement 3).
 
-The specific membrane capacitance recordings were carried out as described previously (Gentet et al., 2000). Briefly, the L2/3 PCs were whole cell patch clamped, and a gentle suction made during slow withdrawal of the pipette. The nucleus of the cells were pulled out and the voltage clamped at –70 mV. –5 mV voltage steps (repeated 100 times) were applied and the capacitive transients were measured. A DIC image of the nucleus were made for calculation of the membrane surface with the following equation:(1)A=(a+b)2∗πA
+The specific membrane capacitance recordings were carried out as described previously (Gentet et al., 2000). Briefly, the L2/3 PCs were whole cell patch clamped, and a gentle suction made during slow withdrawal of the pipette. The nucleus of the cells were pulled out and the voltage clamped at –70 mV. –5 mV voltage steps (repeated 100 times) were applied and the capacitive transients were measured. A DIC image of the nucleus were made for calculation of the membrane surface with the following equation:
+
+$$
+A=\frac{(a+b)^{2}∗\pi}{A}
+$$
 
 Where a is the shorter diameter of the ellipse and b is the longer one. After the recording the nucleus was blown away and the pipette tip was pushed into a sylgard ball until the GΩ seal formed. The –5 mV voltage steps were applied again to record the residual capacitance of the system. Before the analysis, we subtracted the residual capacitance from the transients.
 
 Pharmacological experiments were carried out on PCs during simultaneous somatic and dendritic recordings after 10 min of control recording using ACSF with the following drugs: 20 µM 4-(N-ethyl-N-phenylamino)–1,2 dimethyl-6-(methylamino)pyrimidinium chloride (ZD7288) (Sigma-Aldrich), or 1 µM TTX, 200 µM CdCl2, and 20 µM AP5.
 
-## Post hoc anatomical analysis of recorded cell pairs
+### Post hoc anatomical analysis of recorded cell pairs
 
 After electrophysiological recordings, slices were fixed in a fixative containing 4% paraformaldehyde, 15% picric acid, and 1.25% glutaraldehyde in 0.1 M phosphate buffer (PB; pH = 7.4) at 4 °C for at least 12 hr. After several washes in 0.1 M PB, slices were cryoprotected in 10% then 20% sucrose solution in 0.1 M PB. Slices were frozen in liquid nitrogen then thawed in PB, embedded in 10% gelatin, and further sectioned into slices of 60 µm in thickness. Sections were incubated in a solution of conjugated avidin-biotin horseradish peroxidase (ABC; 1:100; Vector Labs) in Tris-buffered saline (TBS, pH = 7.4) at 4 °C overnight. The enzyme reaction was revealed by 3’3-diaminobenzidine tetrahydrochloride (0.05%) as chromogen and 0.01% H2O2 as an oxidant. Sections were post-fixed with 1% OsO4 in 0.1 M PB. After several washes in distilled water, sections were stained in 1% uranyl acetate, dehydrated in an ascending series of ethanol. Sections were infiltrated with epoxy resin (Durcupan, Sigma-Aldrich) overnight and embedded on glass slices. 3D light microscopic reconstructions were carried out using the Neurolucida system with a 100× objective. The number of putative synaptic contacts were determined by searching for close appositions of presynaptic axon terminals and postsynaptic dendrites under light microscopy. The distance of the contact sites alongside the branches were measured with Neurolucida. The intersomatic distance was calculated from the branch length from the presynaptic soma to the putative synaptic contact alongside the axon, and the length of the dendrite from the contact site to the postsynaptic soma. If there were more than one putative synapse between the cells, we took the shortest intersomatic path distance for that given cell pair.
 
-## Electron microscopy
+### Electron microscopy
 
 Sample preparations for the electron microscopy were performed as described previously (Boldog et al., 2018; Molnár et al., 2016). Briefly, digital images of serial EM sections (20 nm thickness) were taken at 64,000 x magnification with a FEI/Philips CM10 electron microscope equipped with a MegaView G2 camera. The membrane thickness measurements were carried out on digital images with a custom software. Briefly, postsynaptic dendritic structures were identified with the presence of postsynaptic densities (PSD) faced in front of axon terminals filled with vesicles. At least 20 nm away from the PSD, perpendicular lines were used as region interests (ROI). The intensity line profile of each ROI was calculated, and edge detection was carried out on them. The thickness was determined as the distance between the first and last point along the line profile where the gradient magnitude was larger than 50.
 
-## Data analysis
+### Data analysis
 
 The electrophysiological recordings were analyzed by custom-written python scripts. First, the recorded sweeps were exported with HEKA FitMaster to ascii files. The mean synaptic delay in the paired recordings was determined by the averages of the delays between the peak of single presynaptic action potentials and the onsets of the corresponding EPSPs. The onset was determined by the projection of the intersection of two linear fits on the postsynaptic signal (Fedchyshyn and Wang, 2007). The first line was fitted to the baseline 1ms window from –0.5 to +0.5 ms of the presynaptic AP peak. The second line was fitted on the rising phase of the EPSP (5–30% of the amplitude). The time point of the crossing lines was projected back to the signal and it was used as the onset (Figure 1B). For the forward propagation dendritic experiments the latency was calculated on an average signal. The onset of the EPSP-like waveform was determined as the onset of EPSPs in the paired recordings.
 
-The bAP latency was measured at the peak of the average signal for each cell (Stuart and Sakmann, 1994). Only the first APs of the sweeps were averaged to avoid activity dependent Na+ channel inactivation that can cause a putative modulatory effect on the signal propagation speed. For the axon bleb recordings we assumed that the axon initial segment (AIS) of the cells are 35 µm from the axon hillock (Palmer and Stuart, 2006), and the APs propagate forward (to the bleb) and backward (to the soma) at the same speed. For the correction of the AIS we used the following formula:(2)vcorr=lt+(ais/l∗t)
+The bAP latency was measured at the peak of the average signal for each cell (Stuart and Sakmann, 1994). Only the first APs of the sweeps were averaged to avoid activity dependent Na+ channel inactivation that can cause a putative modulatory effect on the signal propagation speed. For the axon bleb recordings we assumed that the axon initial segment (AIS) of the cells are 35 µm from the axon hillock (Palmer and Stuart, 2006), and the APs propagate forward (to the bleb) and backward (to the soma) at the same speed. For the correction of the AIS we used the following formula:
+
+$$
+vcorr=\frac{l}{t+(ais/l∗t)}
+$$
 
 where vcorr is the corrected propagation speed for AIS position, l is the axonal distance between the soma and the axon bleb, t is the latency between the two measuring point, ais is the assumed position of the AIS alongside the axon (35 µm).
 
-## Estimating passive parameters of L2/3 pyramidal cells
+### Estimating passive parameters of L2/3 pyramidal cells
 
 We constructed detailed passive compartmental and cable models for five L2/3 human neurons and the four rat L2/3 neurons that were both 3D morphologically reconstructed and biophysically characterized. For each modeled neuron, we optimized the values of three key passive parameters: the specific membrane resistivity and capacitance (Rm, Cm) and the specific axial resistivity, Ra, using Neuron 8.0 (Hines et al., 2009) principal axis optimization algorithm (Brent, 1976; Segev et al., 1989). Optimization was achieved by minimizing the difference between experimental voltage response following hyperpolarizing current steps either to the soma or to the apical dendrite (Figure 7A and B) and the model response. When possible, experimental data was averaged over repetitions of the same stimulus.
 
@@ -158,25 +444,37 @@ To account for the surface area of spines, we used the spine correction factor (
 
 As our experimental data contains simultaneous soma-dendritic pair recordings/stimulation, we decided to fit the voltage response in one location (e.g. the soma) for the current injection in the other location (e.g. dendrites). This is a cleaner way compared to the typical case when only one recording/stimulating electrode is available, as the problem of bridge balance at the current input site does not exist in this case. As we have two recording and simulation sites, we also examined how well the model predicts the local voltage response at the injection site (Figure 7B). Analysis and simulation were conducted using Python 3.8 and visualization using matplotlib 3.15 (Hunter, 2007) and seaborn 0.11 (Waskom, 2021).
 
-## Modeling EPSP propagation delay and velocity
+### Modeling EPSP propagation delay and velocity
 
-We used the NEURON simulator (Hines et al., 2009) to model the nine 3D reconstructed neurons (Figure 6—figure supplement 1). To compute EPSP’s propagation latency and velocity, we simulated EPSPs by injecting a brief transient alpha-shaped current, Iα, delivered either to the soma or in various dendritic loci along the modeled apical tree.(3)Iα=A1-e-tτ0-1-e-tτ1
+We used the NEURON simulator (Hines et al., 2009) to model the nine 3D reconstructed neurons (Figure 6—figure supplement 1). To compute EPSP’s propagation latency and velocity, we simulated EPSPs by injecting a brief transient alpha-shaped current, $I_{\alpha}$, delivered either to the soma or in various dendritic loci along the modeled apical tree.
 
-where A=1.5, τ0=0.25 and τ1=1ms, resulting in EPSP peak time, tpeak=0.5ms and peak current of Ipeak=1.4nA.
+$$
+I_{\alpha}=A1-e^{\frac{-t}{\tau_{0}}}-1-e^{\frac{-t}{\tau_{1}}}
+$$
 
-Latency of the resultant EPSP was calculated as the difference between the EPSP peak at all dendritic branches and its resulting EPSP at the soma; using a sampling time bin of 0.01ms. Velocity was calculated as the distance of the input site from soma divided by latency between these two points. Each dot in Figures 6 and 7 is the respective value for a specific dendritic segment in a specific branch of a neuron’s apical tree. For each measured feature (radius, and velocity), an inset (zoom-in) matching the experimental distance range was added. It shows the average value across dendritic branches with a given distance from the soma, as a function of distance from soma, smoothed with a rolling 10 μm window. For normalizing the path distance of a given dendritic site to the soma in cable units, we calculated the space constant(4)λ=dRm4Ra
+where $A=1.5$, $\tau_{0}=0.25$ and $\tau_{1}=1ms$, resulting in EPSP peak time, $t_{peak}=0.5ms$ and peak current of $I_{peak}=1.4nA$.
+
+Latency of the resultant EPSP was calculated as the difference between the EPSP peak at all dendritic branches and its resulting EPSP at the soma; using a sampling time bin of 0.01ms. Velocity was calculated as the distance of the input site from soma divided by latency between these two points. Each dot in Figures 6 and 7 is the respective value for a specific dendritic segment in a specific branch of a neuron’s apical tree. For each measured feature (radius, and velocity), an inset (zoom-in) matching the experimental distance range was added. It shows the average value across dendritic branches with a given distance from the soma, as a function of distance from soma, smoothed with a rolling 10 μm window. For normalizing the path distance of a given dendritic site to the soma in cable units, we calculated the space constant
+
+$$
+\lambda=\sqrt{d\frac{R_{m}}{4}R_{a}}
+$$
 
 for each dendritic segment (where d is the segment’s diameter). We then summed up the cable lengths of all segments along the path from the dendritic location to the soma. Time was normalized by the membrane time constant τ=Rm*Cm. Note that, for segments far enough from cable boundary conditions and stimulus location, velocity approximately equals the theoretical value of 2λ/τ, (Agmon-Snir and Segev, 1993) see Figure 7—figure supplement 1. Hence, in the uniform case where all specific parameters are equal for all cell modeled (Figure 6), normalizing the distance in cable should equalize latency/velocity differences resulting from diameter differences.
 
 To account for brain tissue shrinkage due to fixation, for every segment, diameter and length were scaled based on an estimation of specific neuron shrinkage (see Supplementary file 1). To account for unequal dye spread, for a few manually picked segments, diameter value was fixed to be equal to its nearby segment (to avoid sudden diameter jump).
 
-## Equivalent cables for human and rat L2/3 PCs
+### Equivalent cables for human and rat L2/3 PCs
 
-‘Equivalent cables’ for the respective 9 modeled human and rat cells was based on Rall’s cable theory (Rall, 1959). The variable diameter, deq(X), of this cable, as seen from the soma is,(5)deq(X)=(∑jdj(X)32)23
+‘Equivalent cables’ for the respective 9 modeled human and rat cells was based on Rall’s cable theory (Rall, 1959). The variable diameter, $d_{eq}(X)$, of this cable, as seen from the soma is,
 
-where X is the cable (electrotonic) distance from the soma and dj(X) is the diameter of the jth dendrite at the distance X from that point of interest. Figure 8A shows such equivalent cables as seen from the soma. The equivalent cable for the basal tree is depicted in red and for the apical tree in blue. This enables one to graphically appreciate the large difference in the conductance load (current sink) imposed by basal tree between human and rat L2/3.
+$$
+d_{eq}(X)=(\sumjd_{j}(X)^{\frac{3}{2}})^{\frac{2}{3}}
+$$
 
-## Statistical analysis
+where X is the cable (electrotonic) distance from the soma and $d_{j}(X)$ is the diameter of the jth dendrite at the distance X from that point of interest. Figure 8A shows such equivalent cables as seen from the soma. The equivalent cable for the basal tree is depicted in red and for the apical tree in blue. This enables one to graphically appreciate the large difference in the conductance load (current sink) imposed by basal tree between human and rat L2/3.
+
+### Statistical analysis
 
 Statistical analyses were performed in Python v.3.6, using the Python packages DABEST (Ho et al., 2019), scipy, numpy, matplotlib (Hunter, 2007), seaborn (Waskom, 2021), pandas, pinguin (Vallat, 2018), bioinfokit and scikit-learn. SHAP (Lundberg and Lee, 2017) and GLM (Kiebel and Holmes, 2007) models were done with shap python package with scikit-learn Gradient Boosting Regressor (Friedman, 2002) and with statsmodels.glm with gamma family. Interaction formula: latency ~species + distance + radius + (species × sfitted × distance) + (species × hybrid × distance) + (species ×radius). No interaction: latency ∼ species +distance + hybrid +radius + fitted.
 

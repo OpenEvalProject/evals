@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Parasitic helminths use two benzoquinones as electron carriers in the electron transport chain. In normoxia, they use ubiquinone (UQ), but in anaerobic conditions inside the host, they require rhodoquinone (RQ) and greatly increase RQ levels. We previously showed the switch from UQ to RQ synthesis is driven by a change of substrates by the polyprenyltransferase COQ-2 (Del Borrello et al., 2019; Roberts Buceta et al., 2019); however, the mechanism of substrate selection is not known. Here, we show helminths synthesize two coq-2 splice forms, coq-2a and coq-2e , and the coq-2e- specific exon is only found in species that synthesize RQ. We show that in Caenorhabditis elegans COQ-2e is required for efficient RQ synthesis and survival in cyanide. Importantly, parasites switch from COQ-2a to COQ-2e as they transit into anaerobic environments. We conclude helminths switch from UQ to RQ synthesis principally via changes in the alternative splicing of coq-2.
+Parasitic helminths use two benzoquinones as electron carriers in the electron transport chain. In normoxia, they use ubiquinone (UQ), but in anaerobic conditions inside the host, they require rhodoquinone (RQ) and greatly increase RQ levels. We previously showed the switch from UQ to RQ synthesis is driven by a change of substrates by the polyprenyltransferase COQ-2 (Del Borrello et al., 2019; Roberts Buceta et al., 2019); however, the mechanism of substrate selection is not known. Here, we show helminths synthesize two coq-2 splice forms, coq-2a and coq-2e, and the coq-2e-specific exon is only found in species that synthesize RQ. We show that in Caenorhabditis elegans COQ-2e is required for efficient RQ synthesis and survival in cyanide. Importantly, parasites switch from COQ-2a to COQ-2e as they transit into anaerobic environments. We conclude helminths switch from UQ to RQ synthesis principally via changes in the alternative splicing of coq-2.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ In this study, we reveal that two variants of COQ-2, derived from alternative sp
 
 ## Results
 
-## The C. elegans COQ-2 polyprenyl transferase required for quinone biosynthesis has two major alternative splice forms
+### The C. elegans COQ-2 polyprenyl transferase required for quinone biosynthesis has two major alternative splice forms
 
 Our research groups previously showed that if COQ-2 uses 4HB as a substrate, it would lead to the synthesis of UQ; however, if COQ-2 uses 3HA, it would ultimately yield RQ. As parasites move from aerobic environments to the anaerobic niches in their host, they change their quinone composition from high UQ to high RQ. For this to occur, COQ-2 must switch its substrate from 4HB to 3HA, but the mechanism for this switch is unknown.
 
@@ -51,17 +51,17 @@ We identified two distinct splice forms of C. elegans coq-2: coq-2a and coq-2e. 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig2-v2.jpg)
 
-**Figure 2.:** C. elegans coq-2 gene model.(A) The coq-2 gene contains two mutually exclusive exons, 6e (blue box) and 6a (red box), that are alternatively spliced (blue and red lines, respectively) generating two COQ-2 isoforms. Light gray boxes represent coding sequences of exons 1–5 and 7–8, black lines represent introns, and dark gray boxes denote 5´and 3´ untranslated regions of exons 1 and 8. (B) Alternative splicing of COQ-2 changes the enzyme core. The sequences of C. elegans coq-2a and coq-2e were threaded onto the crystal structure of the apo-form of the Aeropyrum pernix COQ-2 homolog (PDB: 4OD5) in Chimera using Modeller. The region switched by mutually exclusive alternative splicing is shown magenta color. (C) The alternative exons found in all RQ-synthesizing species have two residues that are invariant (L204 and S243 show in cyan; C. elegans numbering) that are near the binding site of the two substrates. Substrates are the polyprenyl tail (dark green; geranyl S-thiolodiphosphate in the crystal structure), and the aromatic ring (light green; p-hydroxybenzoic acid [4HB] in the crystal structure). Note that COQ-2 is rotated from panel B to panel C for clarity.
+**Figure 2.:** (A) The coq-2 gene contains two mutually exclusive exons, 6e (blue box) and 6a (red box), that are alternatively spliced (blue and red lines, respectively) generating two COQ-2 isoforms. Light gray boxes represent coding sequences of exons 1–5 and 7–8, black lines represent introns, and dark gray boxes denote 5´and 3´ untranslated regions of exons 1 and 8. (B) Alternative splicing of COQ-2 changes the enzyme core. The sequences of C. elegans coq-2a and coq-2e were threaded onto the crystal structure of the apo-form of the Aeropyrum pernix COQ-2 homolog (PDB: 4OD5) in Chimera using Modeller. The region switched by mutually exclusive alternative splicing is shown magenta color. (C) The alternative exons found in all RQ-synthesizing species have two residues that are invariant (L204 and S243 show in cyan; C. elegans numbering) that are near the binding site of the two substrates. Substrates are the polyprenyl tail (dark green; geranyl S-thiolodiphosphate in the crystal structure), and the aromatic ring (light green; p-hydroxybenzoic acid [4HB] in the crystal structure). Note that COQ-2 is rotated from panel B to panel C for clarity.
 
 To examine how the alternative splicing of COQ-2 might affect its function, we threaded the predicted COQ-2a and COQ-2e protein sequences onto the solved crystal structure of the archaean A. pernix COQ-2 ortholog (PDB:4OD5). We found that the splicing change causes a switch in two α-helices at the core of the COQ-2 structure (Figure 2B). This is a region of the protein that is believed to form a hydrophobic tunnel along which aromatic substrates must pass to the active site for the key polyprenylation reaction (Desbats et al., 2016), suggesting that the change in splicing could affect COQ-2 substrate selection and thus could explain a shift from UQ to RQ synthesis. We, therefore, examined whether similar COQ-2 alternative splicing is seen in parasitic helminths and how the different splice forms compare to COQ-2 sequences in parasite hosts which do not synthesize RQ.
 
-## Parasitic helminths have a distinct splice form of coq-2 that is not present in any of the parasitic hosts
+### Parasitic helminths have a distinct splice form of coq-2 that is not present in any of the parasitic hosts
 
 C. elegans has two major isoforms of coq-2 which resulted from mutually exclusive alternative splicing of two internal exons and affects the core of the enzyme. If this alternative splicing affects the choice of COQ-2 substrate and thus the switch from UQ to RQ synthesis, we reasoned that parasitic helminths that synthesize RQ should have a similar gene structure and that the hosts that do not synthesize RQ should not. We used both gene predictions and available RNA-seq data to examine the coq-2 gene structure and splicing in parasitic helminths and their hosts (human, sheep, cow, and rat, respectively; Figure 3). Since many of the parasite gene structures were not correctly annotated, all the relevant exon junctions in Figure 3 were manually annotated and confirmed with RNA-seq data (see Materials and methods). We note that while the alternative splicing of coq-2 in C. elegans we observe using RNA-seq has been validated by nanopore-based direct transcript sequencing, microarray analysis, and RT-PCR, the data on the other helminths only derives from RNA-seq and genome analysis. Although the same robust RNA-seq analysis pipeline has been used, it would be ideal to validate these changes in the future. Remarkably, we find a similar gene structure with the same mutually exclusive exons in all parasites known to synthesize RQ (Figure 3). Furthermore, annelids and mollusks are the only other phyla known to synthesize RQ and their coq-2 orthologs also show similar mutually exclusive alternative splicing of homologous exons and we only find evidence for alternative splicing between a coq-2a form and a coq-2e like form in animals that synthesize RQ. Crucially, no mammalian hosts show any evidence for this kind of alternative splicing of their coq-2 orthologs, nor do they have an e-like exon either in their gene predictions or genome sequences or in any available RNA-seq or direct transcriptome sequence data (human and mouse are shown as representatives in Figure 3). Note that the RNA-seq datasets are much deeper and more extensive in humans and mouse than in helminths, mollusks, or annelids, so this lack of evidence for such alternative splicing is unlikely to be due to a failure to detect such events due to low coverage transcriptome data. We conclude that the e-exon and the mutually exclusive alternative splicing of coq-2 is unique to animals that synthesize RQ and is not found in any other species. This suggests that this coq-2 alternative splicing could indeed be linked to the ability to synthesize RQ.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig3-v2.jpg)
 
-**Figure 3.:** coq-2 orthologs in various species.Parasitic helminths, as well as annelids and mollusks, have two internal exons that are spliced in a mutually exclusive manner. By contrast, humans and other hosts only have one exon that is homologous to exon 6a of C. elegans coq-2. The a-form exon (red) shares greater similarity to the exon present in species that do not synthesize RQ, while the e-form (blue) is present only in RQ-producing species. The genes used for each species are listed in Supplementary file 3. The gene structures shown are based on genome annotations but in many cases include manual reannotations — in all such cases, the manual annotations are confirmed with RNA-seq data.
+**Figure 3.:** Parasitic helminths, as well as annelids and mollusks, have two internal exons that are spliced in a mutually exclusive manner. By contrast, humans and other hosts only have one exon that is homologous to exon 6a of C. elegans coq-2. The a-form exon (red) shares greater similarity to the exon present in species that do not synthesize RQ, while the e-form (blue) is present only in RQ-producing species. The genes used for each species are listed in Supplementary file 3. The gene structures shown are based on genome annotations but in many cases include manual reannotations — in all such cases, the manual annotations are confirmed with RNA-seq data.
 
 We aligned the two mutually exclusive exons across helminth species and compared them to the similar regions of their host COQ-2 sequences, and of other eukaryotes that cannot synthesize RQ (S. cerevisiae and S. pombe) (Figure 4). We find that all the coq-2a-specific exons are similar to the pan-eukaryotic COQ-2 sequence, whereas all the coq-2e-specific exons have a distinct sequence to this. We examined the alignments of the a- and e-specific exons and identified two residues that are strictly conserved in pan-eukaryotic COQ-2 sequences, Phe204 and Ala243 (C. elegans numbering), that are switched to a Leu and a Ser residue in all COQ2-e-specific exons that we examined (Figure 4). These residues sit very close to the substrates in the active site of the enzyme (Figure 2C) and we note that mutation of the equivalent Ala243 residue dramatically affects the ability of human COQ-2 to synthesize UQ (Desbats et al., 2016). Altogether these results suggest that animals that synthesize both UQ and RQ synthesize two forms of COQ-2 — one looks similar to that in all other eukaryotic species, whereas the other has a single exon that appears to be specific for species that synthesize RQ. To test whether these two COQ-2 isoforms have distinct roles in UQ and RQ synthesis, we turned to C. elegans.
 
@@ -69,13 +69,21 @@ We aligned the two mutually exclusive exons across helminth species and compared
 
 **Figure 4.:** Amino acid sequences of COQ-2 orthologs were aligned using Clustal Omega (Madeira et al., 2019). The sequences of exons homologous to exon 6a/e in C. elegans, as well as the flanking five amino acid sequences, were used to generate the alignment. Sequences of the mutually exclusive exons are shaded in red (a-form) or blue (e-form). Two residue changes between the a- and e- forms are highlighted (Phe to Leu, Ala to Ser) and are invariant across diverse species that synthesize RQ. The COQ-2 orthologs and exons used for each species are listed in Supplementary file 3.
 
-## Efficient RQ synthesis requires the coq-2e isoform
+### Efficient RQ synthesis requires the coq-2e isoform
 
 We found that helminths synthesize two major isoforms of coq-2, whereas their hosts only synthesize a single isoform. To test the requirement for each of the two major helminth isoforms of coq-2 for RQ synthesis, we used CRISPR engineering to generate C. elegans mutant strains that either lack coq-2 exon 6a (coq-2(syb1715)) or coq-2 exon 6e (coq-2(syb1721)) — we refer to these as coq-2∆6a and coq-2∆6e, respectively, from here on (see Figure 5A and Supplementary file 1 for details of engineering). We find that the coq-2∆6e strain synthesizes essentially no detectable RQ but has higher levels of UQ, whereas coq-2∆6a has greatly reduced UQ levels but higher RQ levels (Figure 5B, Supplementary file 2). We conclude that the coq-2e isoform, which includes the helminth/annelid/mollusc-specific exon 6e, is required for efficient RQ synthesis. While these engineered changes could potentially affect RQ levels via some indirect mechanisms such as alterations in the levels of 4HB and 3HA, it is unclear what mechanism would drive those metabolic rewirings. We thus suggest that the more parsimonious explanation is the one we propose here that COQ-2a and COQ-2e have different substrate preferences due to the large change to the core of the enzyme.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig5-v2.jpg)
+
+**Figure 5.:** (A) Mutant strains were generated in C. elegans by deletion of exon 6a (coq-2∆6a) or exon 6e (coq-2∆6e). (B) Deletion of exon 6a from the coq-2 gene significantly increased the level of RQ9 (p=0.013) and significantly decreased UQ9 (p<0.001) compared to the N2 control. By contrast, the deletion of exon 6e decreased RQ9 to a negligible level (p<0.001) and slightly increased the level of UQ9 (p=0.130) compared to N2. Statistically significant increases and decreases with respect to N2 levels are denoted with ★ and ◊, respectively; error bars reflect standard deviation where N = 4. (C) Deletion of coq-2 exon 6e affects the ability of worms to survive extended KCN treatment. Wild-type (N2) and coq-2 mutant L1 worms were exposed to 200 µM KCN for 15 hr. KCN was then diluted 6-fold and worm movement was measured over 3 hr to track recovery from KCN exposure (see Materials and methods). Worms without exon 6e could not survive extended treatment with KCN while deletion of exon 6a had little effect on KCN survival. Cyanide titration is shown in Figure 5—figure supplement 1. Curves show the mean of four biological replicates and error bars are standard errors of the mean.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Wild-type (N2), coq-2 and kynu-1(e1003) mutant L1 worms were exposed to 150–500 µM KCN for 15 hr. KCN was then diluted 6-fold and worm movement was measured over 3 hr to track recovery from KCN exposure (see Materials and methods). Worms without exon 6e could not survive extended treatment at KCN concentrations greater than 150 µM, and resembled kynu-1(e1003), a mutant devoid of RQ. Deletion of exon 6a had little effect on KCN survival and showed recovery patterns similar to wild-type worms. Curves show the mean of four biological replicates and error bars are standard errors of the mean.
+
 To further examine whether COQ-2e is required for RQ synthesis and thus for RQ-dependent metabolism, we tested whether the coq-2∆6a and coq-2∆6e strains could survive long-term exposure to potassium cyanide (KCN) (Figure 5C and Figure 5—figure supplement 1). We previously showed that when C. elegans is exposed to KCN, it switches to RQ-dependent metabolism and that while wild-type worms can survive a 15 hr exposure to KCN, C. elegans strains that do not synthesize RQ cannot survive. We found that while the coq-2∆6a strain (that can synthesize RQ) survives 15 hr of KCN exposure, as well as wild-type animals, the coq-2∆6e strain that synthesizes no RQ does not survive, confirming the functional relevance of the coq-2e isoform as being critical for RQ synthesis.
 
-## Regulation of the alternative splicing of coq-2 in helminths
+### Regulation of the alternative splicing of coq-2 in helminths
 
 Helminths synthesize two isoforms of COQ-2 — COQ-2a resembles the pan-eukaryotic consensus and cannot synthesize RQ, whereas COQ-2e includes an exon that is only found in species that synthesize RQ and COQ-2e is required for RQ synthesis. Changing the levels of coq-2a and coq-2e splice forms could thus regulate the switch from UQ synthesis in the aerobic environment outside the host to RQ synthesis in the host gut. We thus examined RNA-seq data to see whether parasites switch between these isoforms as they switch between these environments.
 
@@ -99,7 +107,7 @@ We previously showed that the key decision on whether to synthesize UQ to power 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56376/elife-56376-fig7-v2.jpg)
 
-**Figure 7.:** C.elegans. There are two variants of exon 6 in the C. elegans coq-2 gene (6a and 6e) which undergo mutually exclusive alternative splicing leading to COQ-2a and COQ-2e isoforms, respectively. Synthesis of UQ originates from 4-hydroxybenzoic acid (4HB) and prenylation is catalyzed by COQ-2a (and marginally by COQ-2e) to form 4-hydroxy-3-nonaprenylbenzoic acid (NHB). By contrast, RQ is most likely synthesized from 3HA, and prenylation is facilitated by COQ-2e to form NHA. Several additional steps are required to convert NHB to UQ and NHA to RQ, respectively. Supplementary Documentation.
+**Figure 7.:** elegans. There are two variants of exon 6 in the C. elegans coq-2 gene (6a and 6e) which undergo mutually exclusive alternative splicing leading to COQ-2a and COQ-2e isoforms, respectively. Synthesis of UQ originates from 4-hydroxybenzoic acid (4HB) and prenylation is catalyzed by COQ-2a (and marginally by COQ-2e) to form 4-hydroxy-3-nonaprenylbenzoic acid (NHB). By contrast, RQ is most likely synthesized from 3HA, and prenylation is facilitated by COQ-2e to form NHA. Several additional steps are required to convert NHB to UQ and NHA to RQ, respectively. Supplementary Documentation.
 
 The alternative splicing of COQ-2 in all animal lineages that synthesize RQ draws focus to COQ-2 as a potential anthelmintic target. COQ-2e is required for RQ generation and has a distinct sequence to the pan-eukaryotic COQ-2a. The switch between COQ-2a to COQ-2e causes a change in the core of the COQ-2 active site and all species that synthesize RQ have a pair of conserved residues in COQ-2e. We suggest that small molecule inhibitors that selectively target COQ-2e and not the host COQ-2 enzyme could be potent anthelmintics and our research groups are initiating these screens at this point. We also note that it is rare to see such a clear and profound change in enzyme specificity due to a single splice event affecting the core of an enzyme catalytic site. There are other examples, most notably a switch in the substrate specificity of the cytochrome P450 CYP4F3 from LTB4 to arachidonic acid (Christmas et al., 1999; Christmas et al., 2001). This switch is tissue specific rather than environmentally induced, however, and there are few other examples to our knowledge. The regulation of COQ-2 specificity by alternative splicing is thus a beautiful and rare example of this type of enzyme regulation by alternative splicing. We note that while alternative splicing of COQ-2 appears to be the key regulated step in determining RQ or UQ biosynthesis, we see no such splicing regulation for other enzymes that are required for both RQ and UQ synthesis downstream of COQ-2 (Roberts Buceta et al., 2019), for example, there are no known splice variants of COQ-3 and COQ-5, which are quinone methylases downstream of COQ-2. This suggests that while COQ-2 can clearly discriminate between substrates that have/lack a 2-amino group, COQ-3 and COQ-5 would be more promiscuous than COQ-2 and act on both RQ and UQ precursors.
 
@@ -107,28 +115,199 @@ Finally, the mechanism of alternative splicing to regulate the synthesis of UQ o
 
 ## Materials and methods
 
-## Sequence identification and analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>coq-2</td>
+      <td>WormBase</td>
+      <td>WBGene00000762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>N2</td>
+      <td>Wild-type</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>coq-2 (syb1715)</td>
+      <td>This paper</td>
+      <td>PHX1715</td>
+      <td>coq-2∆6a Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>coq-2 (syb1721)</td>
+      <td>This paper</td>
+      <td>PHX1721</td>
+      <td>coq-2∆6e Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNAs used in this study</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers used in this study</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium cyanide (KCN)</td>
+      <td>Sigma-Aldrich</td>
+      <td>60178–25G</td>
+      <td>Stock solution: 50 mM in PBS buffer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hexane, HPLC grade</td>
+      <td>Sigma-Aldrich</td>
+      <td>650552–1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acetonitrile, LC-MS grade</td>
+      <td>Fisher Scientific</td>
+      <td>A955-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ubiquinone-3 standard</td>
+      <td>Campbell et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ubiquinone-9 standard</td>
+      <td>Sigma-Aldrich</td>
+      <td>27597–1 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rhodoquinone-9 standard</td>
+      <td>Roberts Buceta et al., 2019</td>
+      <td></td>
+      <td>Isolated from Ascaris suum</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Whippet</td>
+      <td>Sterne-Weiler et al., 2018</td>
+      <td>RRID:SCR_018349</td>
+      <td>https://github.com/timbitz/Whippet.jl</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2</td>
+      <td>Kim et al., 2019</td>
+      <td>RRID:SCR_015530</td>
+      <td>https://daehwankimlab.github.io/hisat2/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Resource for Biocomputing Visualization and Informatics Pettersen et al., 2004</td>
+      <td>RRID:SCR_004097</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MODELLER</td>
+      <td>University of California at San Francisco Webb and Sali, 2016</td>
+      <td>RRID:SCR_008395</td>
+      <td>https://salilab.org/modeller/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image analysis pipeline</td>
+      <td>Spensley et al., 2018</td>
+      <td></td>
+      <td>https://github.com/fraser-lab-UofT/acute_assay</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python</td>
+      <td>RRID:SCR_008394</td>
+      <td>https://www.python.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements</td>
+      <td>Nikon</td>
+      <td>RRID:SCR_014329</td>
+      <td>https://www.microscope.healthcare.nikon.com/products/software/nis-elements</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageMagick</td>
+      <td>ImageMagick</td>
+      <td>RRID:SCR_014491</td>
+      <td>https://imagemagick.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioFormats</td>
+      <td>OME - Open Microscopy Environment</td>
+      <td>RRID:SCR_000450</td>
+      <td>https://docs.openmicroscopy.org/bio-formats/5.7.1/users/comlinetools/index.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sequence identification and analysis
 
 To identify COQ-2 sequences from lineages known to synthesize RQ, we searched and analyzed from genomes and transcriptomes of platyhelminths (Schistosoma mansoni, Fasciola hepatica, and Schmidtea mediterranea), nematodes (Ascaris suum, Brugia malayi, Haemonchus contortus, Trichuris muris, Strongyloides stercoralis, Strongyloides ratti, Ancylostoma ceylanicum, and C. elegans), mollusks (Crassostrea virginica, and Biomphalaria glabrata), and annelids (Capitella teleta). Sequences were retrieved from https://parasite.wormbase.org (WBPS14), S. mediterranea database (http://smedgd.neuro.utah.edu), NCBI protein and nucleotide databases and UniProt (https://www.uniprot.org). Human, mice, and Saccharomyces cerevisiae COQ-2, eukaryotic lineages are known to be unable to synthesize RQ, were also identified for comparison. Searches were performed initially with BLASTP (protein databases) using human and C. elegans COQ-2 sequences as queries. Additionally, TBLASTN searches were performed using genomic sequences and cDNAs databases. This served to confirm the annotated protein sequences and to identify the non-annotated ones. Identified sequences were confirmed by best reciprocal hits in BLAST. Multiple sequence alignments were made with MUSCLE 3.8 (Chojnacki et al., 2017). Gaps were manually refined after alignment inspection.
 
-## RNA-seq analysis of mutually exclusive exons
+### RNA-seq analysis of mutually exclusive exons
 
 To confirm if coq-2 exons are spliced in a mutually exclusive manner in other helminths, mollusks and annelids, we analyzed the existing RNA-seq data for evidence of alternative splicing (listed in Supplementary file 3). Whippet (v0.11) (Sterne-Weiler et al., 2018) was used to analyze RNA-seq data for quantification of AS events. To create a splicing index of exon-exon junctions in Whippet, genome annotations were taken from WormBase Parasite (WBPS14) and Ensembl Metazoa (Release 45). To identify novel exons and splice sites, reads were first aligned to the genome using HISAT2 (Kim et al., 2015). The BAM file generated was then used to supplement the existing genome annotations to create a splicing index of known and predicted exon-exon junctions in Whippet (using the --bam --bam-both-novel settings). Where required, TBLASTN data was also used to guide manual re-annotation of the coq-2 gene. Quantification of AS events was then performed by running whippet quant at default settings. This analysis was repeated for all species listed in Figure 5 using publicly available RNA-seq datasets (details on datasets used can be found in Supplementary file 3). A summary of coq-2 exons with reads that mapped to alternative exon-exon junctions are listed in Supplementary file 3. We also identified cases where both coq-2 exons were either included or skipped. However, since these are likely to be non-productive transcripts due to a pre-mature termination codon, we expressed exon usage as the proportion of events where either only the ‘a’ or the ‘e’ form is included.
 
-## Structural analysis
+### Structural analysis
 
 Multiple sequence alignment was performed using Clustal Omega (Madeira et al., 2019). The substrate-bound structure of a UbiA homolog from A. pernix (PDB: 4OD5) was displayed on Chimera (Pettersen et al., 2004) and the C. elegans sequence was threaded by homology using Modeller (Sali and Blundell, 1993; Webb and Sali, 2016).
 
-## Caenorhabditis elegans strains and culture conditions
+### Caenorhabditis elegans strains and culture conditions
 
 The C. elegans wild-type Bristol strain (N2) was obtained from the Caenorhabditis Genetics Center (CGC, University of Minnesota, USA), which is supported by the National Institutes of Health-Office of Research Infrastructure Programs. The C. elegans mutant strains in coq-2 exon 6A (PHX1715, coq-2(syb1715)) and coq-2 exon 6E (PHX1721, coq-2(syb1721)) were generated by Suny Biotech Co., Ltd (Fuzhou City, China) using CRISPR/Cas9 system. The precise deletion of both mutant strains (134 bp) was verified by DNA sequencing the flanking region of exons 6a and 6e. The wild-type sequence, the deleted sequence in each strain, the sgRNAs, and primers used are listed in Supplementary file 1.
 
 The general methods used for culturing and maintenance of C. elegans are described in Brenner, 1974. All chemical reagents were purchased from Sigma-Aldrich (St. Louis, MO). The E. coli OP50 strain, used as C. elegans food, was also received from CGC.
 
-## Lipid extraction and LC-MS quantitation
+### Lipid extraction and LC-MS quantitation
 
 Lipid extractions of C. elegans N2 and mutant strains were performed on ~100 mg worm pellets after adding 1000 pmol UQ3 internal standard (Roberts Buceta et al., 2019). LC-MS samples were prepared from lipid extracts and diluted 1:100 (Bernert et al., 2019). Standards were extracted using the same method as for worm samples at the following concentrations: UQ3 (10 pmol/10 µL injection), RQ9 (0.75, 1.5, 3.0, 4.5, or 6.0 pmol/10 µL injection), and UQ9 (3.75, 7.5, 15.0, 22.5, or 30.0 pmol/10 µL injection). The UQ3 standard was synthesized at Gonzaga University (Campbell et al., 2019), the RQ9 standard was isolated by preparative chromatography from A. suum lipid extracts (Roberts Buceta et al., 2019) and the UQ9 standard was purchased (Sigma-Aldrich, St. Louis, MO). The general LC-MS conditions and parameters were previously reported (Bernert et al., 2019; Campbell et al., 2019). Samples were analyzed in quadruplicate and the pmol quinone was determined from the standard curve and corrected for recovery of internal standard. Samples were normalized by mg pellet mass.
 
-## Image-based KCN recovery assay
+### Image-based KCN recovery assay
 
 The KCN recovery assay was performed as previously described (Del Borrello et al., 2019; Spensley et al., 2018). Briefly, L1 worms were isolated by filtration through an 11 µm nylon mesh filter (Millipore: S5EJ008M04). Approximately, 100 L1 worms in M9 were dispensed to each well of a 96-well plate and an equal volume of potassium cyanide (KCN) (Sigma-Aldrich, St. Louis, MO) solution was then added to a final concentration of 200 µM KCN. Upon KCN addition, the plates were immediately sealed and incubated at room temperature for 15 hr on a rocking platform. After 15 hr, KCN was diluted 6-fold by addition of M9 buffer. Plates were immediately imaged on a Nikon Ti Eclipse microscope every 10 min for 3 hr. Fractional mobility scores (FMS) were then calculated using a custom image analysis pipeline (Spensley et al., 2018). For each strain, FMSfor the KCN-treated wells were normalized to the M9-only control wells at the first timepoint. Three technical replicates were carried out in each experiment and the final FMS taken from the mean of four biological replicates.

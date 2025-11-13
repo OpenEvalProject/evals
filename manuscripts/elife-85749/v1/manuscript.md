@@ -12,12 +12,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03zbnzt98 Biology Department, Woods Hole Oceanographic Institution Woods Hole United States
+1. Biology Department, Woods Hole Oceanographic Institution Woods Hole United States ([ROR:03zbnzt98](https://ror.org/03zbnzt98))
 2. Luit Consulting Revere United States
-3. https://ror.org/03zbnzt98 Marine Geology and Geophysics Department, Woods Hole Oceanographic Institution Woods Hole United States
-4. https://ror.org/03m2x1q45 R. Ken Coit College of Pharmacy, University of Arizona Tucson United States
-5. https://ror.org/05h992307 Computational Sciences Division, Pacific Northwest National Laboratory Richland United States
-6. https://ror.org/009avj582 Department of Molecular Microbiology and Immunology, Oregon Health & Science University Portland United States
+3. Marine Geology and Geophysics Department, Woods Hole Oceanographic Institution Woods Hole United States ([ROR:03zbnzt98](https://ror.org/03zbnzt98))
+4. R. Ken Coit College of Pharmacy, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+5. Computational Sciences Division, Pacific Northwest National Laboratory Richland United States ([ROR:05h992307](https://ror.org/05h992307))
+6. Department of Molecular Microbiology and Immunology, Oregon Health & Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))
 
 † Corresponding author
 
@@ -55,29 +55,29 @@ MetaPathPredict’s exhibited superior performance to other recently developed m
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig2-v1.jpg)
 
-**Figure 2.:** Down-sampled gene annotations of high-quality genomes used in held-out test sets are from NCBI RefSeq and GTDB. Each boxplot displays the distribution of model performance metrics for predictions on randomly sampled versions of the gene annotation test sets in downsampling increments of 10% (90% down to 10%, from right to left). The binary classifier performances are based on the classification of the presence or absence of KEGG modules in the complete versions of the gene annotations that were down-sampled for model testing.Figure 2—source data 1.
+**Figure 2.:** Down-sampled gene annotations of high-quality genomes used in held-out test sets are from NCBI RefSeq and GTDB. Each boxplot displays the distribution of model performance metrics for predictions on randomly sampled versions of the gene annotation test sets in downsampling increments of 10% (90% down to 10%, from right to left). The binary classifier performances are based on the classification of the presence or absence of KEGG modules in the complete versions of the gene annotations that were down-sampled for model testing.
 
-## Benchmarking MetaPathPredict on down-sampled NCBI RefSeq and GTDB data
+### Benchmarking MetaPathPredict on down-sampled NCBI RefSeq and GTDB data
 
 We compared the performance of MetaPathPredict’s deep learning models to two classes of competitor classifiers: naive rule-based classifiers and various other machine learning model architectures. The evaluation was performed on test datasets comprised of isolate and metagenome-assembled genomes from GTDB and NCBI (30,596 total genomes; see Methods). When evaluating with the same sets of randomly down-sampled gene annotations, we found that each competing method showed poorer performance than MetaPathPredict (Figure 2). We assessed two naïve classification methods. First, we devised a classification rule based on the completeness of a KEGG module relative to the number of genes retained after downsampling: if, in a down-sampled genome, the number of genes involved in a KEGG module are present in at least the same proportion of all genes retained, the KEGG module is classified as ‘present,’ otherwise it is labeled ‘absent’. For example, if 50% of gene annotations were removed from a genome during downsampling, then any KEGG module for which 50% of its associated genes are retained would be reported as ‘present’. The results of this naive approach (Figure 2) show that the relative completeness of a KEGG module alone is not a robust classification strategy. The second classification rule that we tested was: for all gene annotation sets in the dataset, if any genes were present in an annotation set that were unique to a KEGG module (relative to other modules) then the module was classified as ‘present’, otherwise it was labelled ‘absent’. The results of this naive approach (Figure 2) suggest that the presence of rare protein annotations or genes unique to a certain KEGG module is not always a strong indicator of the presence of a module in a genome. Ultimately, the performance of these naive classifiers indicate that MetaPathPredict’s models have the advantage of incorporating information from genes outside of KEGG modules. We additionally compared the performance of various machine learning model architectures. Of these, the XGBoost, neural network (single hidden layer) and XGBoost/neural network (single hidden layer) stacked ensemble architectures were the next-best performing models and are included in Figure 2.
 
 MetaPathPredict’s deep learning strategy produced the best observed performance. Mean F1 score (a summary metric of the predictive performance) of the models was 0.96 when predicting on test datasets in which 30–90% of gene annotations had been retained. MetaPathPredict rarely made false positive predictions based on data from highly incomplete gene annotation sets; the average precision of the models was consistently above 0.94 for all held-out test sets. MetaPathPredict also did not misclassify most negative class observations. The recall of MetaPathPredict’s models was greater than 0.96 on average for test datasets containing at least 30% of the complete gene annotation data. The mean recall decreased to 0.89 and the mean precision decreased to 0.86 on genomes containing only 20% or less of the complete gene annotation data. The models’ ability to achieve notably high recall even with significantly reduced sampling rates implies that it compensates for limited sequence availability by becoming more assertive in labeling a module as ‘present’ at the cost of decreased precision.
 
-## Benchmarking MetaPathPredict against Genomes from arth’s Microbiomes repository MAGs
+### Benchmarking MetaPathPredict against Genomes from arth’s Microbiomes repository MAGs
 
 MetaPathPredict was further tested on gene annotations from a set of 40 high-quality metagenome-assembled genomes from the Genomes from Earth’s Microbiomes (GEM; Nayfach et al., 2021) genome repository. This repository contains a set of MAGs recovered from a diverse array of environments that make it ideal for benchmarking MetaPathPredict’s performance (Figure 3). The MAGs selected from the repository had an estimated completeness of 100 and estimated contamination of 0, MIMAG quality score of ‘High Quality’. The genomes belonged to 7 taxonomic phyla and were recovered from 9 different environments, primarily from human-associated and built environment metagenomes (see Appendix 1—figure 1 for GEM genome taxonomic distributions and environmental sources). We created a set of 9 GEM datasets by randomly downsampling the data to retain 10% to 90% of gene annotations (in 10% increments) as in the previous section. MetaPathPredict classified the presence/absence of KEGG modules in each MAG. Overall, results were comparable to MetaPathPredict’s performance on the GTDB/NCBI benchmark. The models excelled at predicting the presence or absence of KEGG modules in genomes when at least 40% of gene annotations were randomly retained. Predictions were less reliable though still accurate when 30% or less gene annotation data was retained.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig3-v1.jpg)
 
-**Figure 3.:** Model performance metrics are for predictions on down-sampled versions of GEM genome gene annotations in decreasing increments of 10% (retaining 10–90% of the annotations in each test set). MetaPathPredict’s deep learning models were benchmarked against XGBoost and neural network model architectures.Figure 3—source data 1.
+**Figure 3.:** Model performance metrics are for predictions on down-sampled versions of GEM genome gene annotations in decreasing increments of 10% (retaining 10–90% of the annotations in each test set). MetaPathPredict’s deep learning models were benchmarked against XGBoost and neural network model architectures.
 
-## Benchmarking MetaPathPredict against existing tools on a dataset with down-sampled reads
+### Benchmarking MetaPathPredict against existing tools on a dataset with down-sampled reads
 
 In addition to model assessments made through down-sampling protein annotations, we evaluated a second set of held-out test set genomes from the GTDB/NCBI dataset (n=50). In this analysis, the sequence reads for each genome were randomly down-sampled to simulate genomes incompletely recovered from an environmental sample. This analysis replicates situations with lower sequencing coverage, which can cause proteins to be unobserved due to incomplete or error-filled assemblies. As an example, using only 3% of reads (equivalent to an average of 1.5 x coverage of the genomes), roughly 86% of the genomes’ proteins were assembled; meanwhile a reduction to 1% of reads caused assembly to recover ~40% of proteins. MetaPathPredict’s performance on this test set resembled protein annotation random sampling results (Figure 4a, Figure 4b), although with greater loss in precision for down-sampling <3%.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig4-v1.jpg)
 
-**Figure 4.:** Down-sampled sequence reads of high-quality genomes used as a second held-out test set are from NCBI RefSeq and GTDB databases. (Panel a) Boxplots display the distribution of model performance metrics for predictions of KEGG module presence/absence on simulated incomplete genomes down-sampled at the sequence read level by MetaPathPredict models, various next-best performing machine learning architectures, and METABOLIC. Downsampling increments were chosen based on average estimated completeness of the test set genomes at each increment to reflect a range of estimated completeness thresholds. (Panel b) Average estimated genome completeness distributions of test set genomes that were down-sampled at the sequence read level using SeqTK and then assembled with SPAdes.Figure 4—source data 1.
+**Figure 4.:** Down-sampled sequence reads of high-quality genomes used as a second held-out test set are from NCBI RefSeq and GTDB databases. (Panel a) Boxplots display the distribution of model performance metrics for predictions of KEGG module presence/absence on simulated incomplete genomes down-sampled at the sequence read level by MetaPathPredict models, various next-best performing machine learning architectures, and METABOLIC. Downsampling increments were chosen based on average estimated completeness of the test set genomes at each increment to reflect a range of estimated completeness thresholds. (Panel b) Average estimated genome completeness distributions of test set genomes that were down-sampled at the sequence read level using SeqTK and then assembled with SPAdes.
 
 MetaPathPredict had an average F1 score for all 190 modules of 0.96 on the second held-out test set observations that had an average estimated genome completeness of at least 30%. The similarity of these results to the gene annotation downsampling approach validates the latter approach that was used more broadly to assess MetaPathPredict.
 
@@ -87,15 +87,15 @@ MetaPathPredict was also compared to another gap filling tool, Gapseq (Figure 5a
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85749/elife-85749-fig5-v1.jpg)
 
-**Figure 5.:** For MetaPathPredict predictions, the whole KEGG pathway was considered present if the aforementioned KEGG modules were all present. Down-sampled sequence reads of high-quality genomes used as a second held-out test set are from NCBI RefSeq and GTDB databases. Line segments display model performance metrics for MetaPathPredict and Gapseq predictions of KEGG pathway map00290 presence/absence on simulated incomplete genomes down-sampled at the sequence read level. Downsampling increments were chosen based on average estimated completeness of the test set genomes at each increment to reflect a range of estimated completeness thresholds.Figure 5—source data 1.
+**Figure 5.:** For MetaPathPredict predictions, the whole KEGG pathway was considered present if the aforementioned KEGG modules were all present. Down-sampled sequence reads of high-quality genomes used as a second held-out test set are from NCBI RefSeq and GTDB databases. Line segments display model performance metrics for MetaPathPredict and Gapseq predictions of KEGG pathway map00290 presence/absence on simulated incomplete genomes down-sampled at the sequence read level. Downsampling increments were chosen based on average estimated completeness of the test set genomes at each increment to reflect a range of estimated completeness thresholds.
 
-## Analysis of model feature importance using SHAP
+### Analysis of model feature importance using SHAP
 
 Though the neural networks of MetaPathPredict produce accurate predictions of module presence/absence, it is not immediately clear what input features contribute to its decision-making process. To gain some insight into this, we calculated the importance of the various features of MetaPathPredict’s models using the SHAP method (Lundberg and Lee, 2017), a mathematical method to explain the predictions of machine learning models. Features with large absolute SHAP values play an important role in calculating a model’s predictions. SHAP values in the first model (trained to classify modules present in ≥10% and≤90% of training genomes) indicated that 30 of the top 100 most important features (genes) influencing predictions were direct components of KEGG modules predicted by this model (Supplementary file 1b). In the second model (classifies modules present in <10% or>90% of training genomes), 37 of the 100 most influential features were part of KEGG modules this model was trained to predict.
 
 The two models share 14 most important features out of the top 50 that are not part of KEGG modules. We examined these top features and found that there were a number of proteins annotated as sensors or transcriptional regulators (Supplementary file 1b). Also, we noted a number of transporters annotated as top features in both models and, interestingly, factors related to pathogenesis like toxins and mobile elements. Given the multi-label architecture of our models, it is difficult to draw direct conclusions from SHAP analysis. However, it is clear that MetaPathPredict’s predictions are in part influenced by select genes present in KEGG modules, and also to a larger extent by genes not directly participating in KEGG module reactions.
 
-## Conclusion
+### Conclusion
 
 MetaPathPredict is an open-source tool that can be used to characterize the functional potential of one or more sample genomes by detecting complete KEGG modules and predicting the presence or absence of those that are incomplete or missing. The tool accepts sets of gene annotations of individual genomes in KO gene identifier format as input. This type of annotation format can be acquired by annotating a genome of interest using KEGG-based annotation tools such as KofamScan (Aramaki et al., 2020), DRAM, blastKOALA (Kanehisa et al., 2016), or ghostKOALA (Kanehisa et al., 2016). MetaPathPredict also provides gene gap-filling options by listing putative KO gene annotations that could fill in missing gaps in predicted modules.
 
@@ -109,13 +109,13 @@ MetaPathPredict facilitates more complete and accurate reconstruction of the met
 
 ## Materials and methods
 
-## Filtering genome database metadata, downloading high-quality genomes, and gene annotations
+### Filtering genome database metadata, downloading high-quality genomes, and gene annotations
 
 The NCBI RefSeq (Release 205) database metadata file was downloaded and filtered to retain only the information for all bacterial genomes classified as ‘Complete genome’. These are defined on the NCBI assembly help webpage: ‘all chromosomes are gapless and have no runs of 10 or more ambiguous bases (Ns), there are no unplaced or unlocalized scaffolds, and all the expected chromosomes are present (i.e. the assembly is not noted as having partial genome representation). Plasmids and organelles may or may not be included in the assembly but if present, then the sequences are gapless’. This resulted in 17,491 complete NCBI genomes.
 
 The GTDB bacterial metadata file for release 95 was downloaded and filtered to keep the information for all genomes with an estimated completeness greater than 99, an estimated contamination of 0, and a MIMAG (Bowers et al., 2017) quality score of “High Quality”. A total of 30,760 non-redundant bacterial genomes from the two database metadata files were downloaded using the ncbi-genome-download command line tool (Blin, 2023). The RefSeq genomes (17,491 total) were downloaded from the RefSeq FTP server, and the GTDB genomes (13,105 total) were downloaded from the GenBank FTP server (Appendix 1—figure 2). Genes were called using Prodigal (Hyatt et al., 2010), and the KofamScan command line tool (Aramaki et al., 2020) was used to generate gene annotations (in KO gene identifier format) for all of the genomes using the KOfam set of HMMs available for download from the KEGG database (Kanehisa, 2002). KofamScan-derived annotations had to surpass their HMM’s adaptive scoring threshold to be included in the training dataset. This approach provides resilience to using specific e-value cutoffs by preventing inflation of our training and assessment datasets with less-confident gene annotations.
 
-## Formatting gene annotation data, fitting KEGG module classification models
+### Formatting gene annotation data, fitting KEGG module classification models
 
 The full dataset of simulated incomplete genomes (n=305,960) was split so that 75% of genomes were used for training and the remaining 25% as a test dataset. The training dataset was further split into 80% training/20% validation test sets. Each observation in the train/test/validation datasets contained a vector of length 8,853 that consisted of KO gene identifier (protein family) presence/absence indicated by ones and zeroes, respectively.
 
@@ -131,18 +131,66 @@ The binary cross entropy loss function was used in tandem with the Adaptive Mome
 
 We assessed and benchmarked MetaPathPredict’s models against two naive classification methods. First, we devised a simple model that predicted the presence of a KEGG module if, after downsampling test sets of gene annotations, the proportion of module genes present in the dataset was greater than or equal to the percentage of annotations retained in the dataset. If the proportion of genes involved in a KEGG module were present in a dataset observation at least equivalently to the proportion of gene annotations retained after downsampling, the module was classified as ‘present’, otherwise it was classified as ‘absent’. The second naïve classification rule was: for all gene annotation sets in the dataset, if any genes were present in an annotation set that were unique to a KEGG module (relative to all other KEGG modules) then the module was classified as ‘present’, otherwise it was labeled ‘absent’. We additionally benchmarked MetaPathPredict’s deep learning models against several other machine learning model types including single-layer neural network, XGBoost, and neural network/XGBoost stacked ensemble models, each trained on the same input data.
 
-## Evaluating models on test data, including test data randomly down-sampled to simulate varying degrees of genome incompleteness
+### Evaluating models on test data, including test data randomly down-sampled to simulate varying degrees of genome incompleteness
 
 Each of MetaPathPredict’s models was validated on a held-out test set consisting of a combination of 76,490 complete and simulated incomplete genomes, and the performance metrics were extracted using the Scikit-learn (Pedregosa, 2011) Python module. The genome annotations in each test set were created by randomly downsampling complete genomes to simulate recovered gene annotations from incomplete genomes. 10% to 90% of genes from each annotation set were randomly retained (in increments of 10%) and used as input for MetaPathPredict predictions of KEGG module presence/absence. The performance metrics used in evaluating the models were precision, recall, F1 score, positive predictive value, and negative predictive value (Table 1).
 
-## Testing models with a set of high-quality metagenome-assembled genomes from the Genomes from Earth’s Microbiomes online repository
+**Table 1.**
+ Definitions of machine learning model performance metrics used to assess MetaPathPredict models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Precision</td>
+      <td>true positive/(true positive +false positive)</td>
+    </tr>
+    <tr>
+      <td>Recall</td>
+      <td>true positive/(true positive +false negative)</td>
+    </tr>
+    <tr>
+      <td>Specificity*</td>
+      <td>true negative/(true negative +false positive)</td>
+    </tr>
+    <tr>
+      <td>F1 score</td>
+      <td>2 × ((precision ×recall)/(precision +recall))</td>
+    </tr>
+    <tr>
+      <td>Positive predictive value</td>
+      <td>recall ×prevalence / (recall ×prevalence) + (1 – specificity) × (1 – prevalence)</td>
+    </tr>
+    <tr>
+      <td>Negative predictive value</td>
+      <td>specificity × (1 – prevalence) / ((1 – recall)×prevalence) + (specificity × (1 – prevalence))</td>
+    </tr>
+    <tr>
+      <td>Prevalence*</td>
+      <td>(true positive +false negative) / (true positive +false positive +true negative +false negative)</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Specificity and prevalence are defined due to their use in the definitions of negative and positive predictive value._
+
+### Testing models with a set of high-quality metagenome-assembled genomes from the Genomes from Earth’s Microbiomes online repository
 
 MetaPathPredict was further validated on another test set of genome annotations extracted from the GEM repository of MAGs. The GEM metadata file was downloaded from the repository and filtered to retain a random sample of 40 MAGs with a CheckM2 (Chklovski et al., 2023) estimated completeness of 100, an estimated contamination of 0, and a MIMAG quality score of ‘High Quality’. The method for this assessment was the same as was described above for testing MetaPathPredict model performances on the held-out test data.
 
-## Evaluating models on test data down-sampled at the read level
+### Evaluating models on test data down-sampled at the read level
 
 A second held-out set of complete genomes (n=50), independent of the training dataset, was downloaded from NCBI/GTDB databases using the SRA, 1988 and SRA explorer (Phil Ewels, 2024). The raw sequencing reads were filtered using fastp (Chen et al., 2018), and the quality-filtered reads were randomly down-sampled using seqtk (Li, 2023). Down-sampled reads were assembled into genomes using the SPAdes assembler (Bankevich et al., 2012), genes were called with Prodigal and then annotated using KofamScan. MetaPathPredict’s deep learning models were then used to predict the presence or absence of all 190 KEGG modules in each genome and predictions were then cross-referenced with their known presence/absence based on the unmodified test dataset. In addition to simple approaches described above, the METABOLIC (Zhou et al., 2022) and Gapseq (Zimmermann et al., 2021) tools were evaluated on the same benchmark dataset. Both tools were used with default settings. Gapseq makes predictions of the presence or absence of entire KEGG pathways, and therefore it was benchmarked against MetaPathPredict by evaluating predictions for the presence or absence of the KEGG pathway map00290 (Valine, leucine, and isoleucine biosynthesis). This pathway consists of KEGG modules M00019, M00432, M00535, and M00570. In order to facilitate a direct comparison to Gapseq’s predictions, the whole KEGG pathway was considered present if the aforementioned KEGG modules were all predicted as present by MetaPathPredict, otherwise it was classified as absent.
 
-## Gapfilling for incomplete modules predicted as present
+### Gapfilling for incomplete modules predicted as present
 
 MetaPathPredict provides enzyme gap-filling options for KEGG modules predicted as present by suggesting putative KO gene annotations missing from an input genome’s gene annotations that could fill in missing gaps in predicted modules.

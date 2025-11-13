@@ -42,9 +42,29 @@ In the remainder of this article, we showcase the numerous capabilities of Spike
 
 In this section, we perform a meta-analysis of six modern spike sorters on real and simulated datasets. This meta-analysis includes quantifying agreement among the sorters, benchmarking each sorter on ground truth, and investigating whether it is possible to combine outputs from multiple spike sorters to improve overall performance and to reduce the burden of manual curation. All analyses are done with spikeinterface version 0.10.0 which is available on PyPI (https://pypi.org/project/spikeinterface/). The code to perform this analysis and produce all figures can be found at https://spikeinterface.github.io/ which also showcases other experiments performed using SpikeInterface. The datasets are publicly available in NWB format on the DANDI archive (https://gui.dandiarchive.org/#/dandiset/000034/draft).
 
-## Spike sorters show low agreement for the same high-density dataset
+### Spike sorters show low agreement for the same high-density dataset
 
 The dataset we use in this analysis is a Neuropixels recording from a head-fixed mouse acquired at the Allen Institute for Brain Science (Siegle et al., 2019a; Allen Institute for Brain Science, 2019 dataset ID: 766640955; probe ID: 77359232). The recording has 246 active recording channels (the remaining of the 384 Neuropixels channels were either not inserted in the brain tissue or had a firing rate below 0.1 Hz), and a sampling frequency of 30 kHz. The recording’s duration was trimmed to 15 min. The probe records from part of the cortex (V1), the hippocampus (CA1), the dentate gyrus, and the thalamus (LP). During the experiment, the mouse was presented with a variety of visual stimuli while freely running on a rotating disk (for more details see Siegle et al., 2019a). An activity map of the probe and a 1 s snippet of the traces on 10 channels are shown in Figure 1A. The notebook for reproducing the results for this section and the last section of the Results can be viewed at https://spikeinterface.github.io/blog/ensemble-sorting-of-a-neuropixels-recording.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig1-v2.jpg)
+
+**Figure 1.:** (A) A visualization of the activity on the Neuropixels array (top, color indicates spike rate estimated on each channel evaluated with threshold detection) and of traces from the Neuropixels recording (below). (B) The number of detected units for each of the six spike sorters (HS = HerdingSpikes2, KS = Kilosort2, IC = IronClust, TDC = Tridesclous, SC = SpyKING Circus, HDS = HDSort). (C) The total number of units for which k sorters agree (unit agreement is defined as 50% spike match). (D) The number of units (per sorter) for which k sorters agree; most sorters find many units that other sorters do not.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The illustration shows units from six spike sorters that were matched by spike train comparison. Panel (A) shows a unit with high agreement score (0.97), and panel (B) a lower agreement score (0.69). In both panels, the top plot shows the spike trains (the first 20 s of the recording) found by each sorter, and below unit templates (estimated from waveforms of 100 spikes randomly sampled from each unit) are shown.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** This analysis was performed with the six chosen sorters and highlights how over 80% of the matched units had an agreement score greater than 0.8.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** This dataset contains spontaneous neural activity from the rat cortex (motor and somatosensory areas) by Marques-Smith et al., 2018a; Marques-Smith et al., 2018b (dataset spe-c1). The dataset is also available at https://gui.dandiarchive.org/#/dandiset/000034/draft. (A) A visualization of the activity on the Neuropixels array (top, color indicates spike rate estimated on each channel evaluated with threshold detection) and of traces from the Neuropixels recording (below). (B) The number of detected units for each of the six spike sorters (HS = HerdingSpikes2, KS = Kilosort2, IC = IronClust, TDC = Tridesclous, SC = SpyKING Circus, HDS = HDSort). (C) The total number of units for which k sorters agree (unit agreement is defined as 50% spike match). (D) The number of units (per sorter) for which k sorters agree; Most sorters find many units that other sorters do not. The analysis notebook for this analysis can be found at https://spikeinterface.github.io/blog/ensemble-sorting-of-a-neuropixels-recording-2/.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** This retina recording (Hilgen et al., 2017) has 1’024 channels in a square configuration, and a sampling frequency of 23199 Hz. The dataset can be found at https://gui.dandiarchive.org/#/dandiset/000034/draft. Only four spike sorters were capable of processing this data set (HS = HerdingSpikes2, KS = Kilosort2, IC = IronClust, HDS = HDSort). (A) A visualization of the activity on the Biocam array (top, color indicates spike rate estimated on each channel evaluated with threshold detection) and of traces from the recording (below). (B) The number of detected units for each of the four spike sorters. (C) The total number of units for which k sorters agree (unit agreement is defined as 50% spike match). (D) The number of units (per sorter) for which k sorters agree; most sorters find many units that other sorters do not. The analysis notebook for this analysis can be found at https://spikeinterface.github.io/blog/ensemble-sorting-of-a-3brain-biocam-recording-from-a-retina/.
 
 For this analysis, we select six different spike sorters: HerdingSpikes2 (Hilgen et al., 2017), Kilosort2 (Pachitariu et al., 2018), IronClust (Jun et al., 2017b), SpyKING Circus (Yger et al., 2018), Tridesclous (Garcia and Pouzat, 2015), and HDSort (Diggelmann et al., 2018) (the versions for each spike sorter are as follows: SpyKING Circus==0.9.7, Tridesclous==1.6.0, HerdingSpikes2==0.3.7, IronClust==5.9.8, Kilosort2==GitHub commit 48bf2b81d8ad, HDSort==1.0.1). As most of these algorithms have been tuned rigorously on multiple ground-truth datasets (including the recent large-scale evaluation from Magland et al., 2020), we fix their parameters to default values to allow for straightforward comparison. We do not include Klusta (Rossant et al., 2016), WaveClus (Chaure et al., 2018), Kilosort (Pachitariu et al., 2016), or MountainSort4 (Chung et al., 2017) in this analysis as Klusta can only handle up to 64 channels, WaveClus is designed for low channel count probes, Kilosort is superseded by Kilosort2, and MountainSort4’s latest verion is currently not optimized for high channel counts, scaling quadratically with the number of channels.
 
@@ -56,9 +76,17 @@ The analysis performed on this dataset suggests that agreement among spike sorte
 
 This low agreement raises the following question: how many of the total outputted units actually correspond to real neurons? To explore this question, we turn to simulation where the ground-truth spiking activity is known a priori.
 
-## Evaluating spike sorters on a simulated dataset
+### Evaluating spike sorters on a simulated dataset
 
 In this analysis, we simulate a 10 min Neuropixels recording using the MEArec Python package (Buccino and Einevoll, 2020). The recording contains the spiking activity of 250 biophysically detailed neurons (200 excitatory and 50 inhibitory cells from the Neocortical Micro Circuit Portal; Ramaswamy et al., 2015; Markram et al., 2015) that exhibit independent Poisson firing patterns. The recording also has an additive Gaussian noise with 10 μV standard deviation. A visualization of the simulated activity map and extracellular traces from the Neuropixels probe is shown in Figure 2A. A histogram of the signal-to-noise ratios (SNR) for the ground-truth units is shown in Figure 2B. The notebook for reproducing the results for this and the next section can be viewed at https://spikeinterface.github.io/blog/ground-truth-comparison-and-ensemble-sorting-of-a-synthetic-neuropixels-recording/.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig2-v2.jpg)
+
+**Figure 2.:** (A) A visualization of the activity on and traces from the simulated Neuropixels recording. (B) The signal-to-noise ratios (SNR) for the ground-truth units. (C) The number of detected units for each of the six spike sorters (HS = HerdingSpikes2, KS = Kilosort2, IC = IronClust, TDC = Tridesclous, SC = SpyKING Circus, HDS = HDSort). (D) The accuracy, precision, and recall of each sorter on the ground-truth units. (E) A breakdown of the detected units for each sorter (precise definitions of each unit type can be found in the SpikeComparison Section of the Methods). The horizontal dashed line indicates the number of ground-truth units (250).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Precision versus recall for the ground-truth comparison the simulated dataset. Some sorters seem to favor precision (HerdingSpikes, SpyKING Circus, HDSort), others instead have higher recall (Ironclust) or score well on both measures (Kilosort2). Tridesclous does not show a bias towards precision or recall. (B) Accuracy versus SNR. All the spike sorters (except Kilosort2) show a strong dependence of performance with respect to the SNR of the ground-truth units. Kilosort2, remarkably, is capable of achieving a high accuracy also for low-SNR units.
 
 We run the same six spike sorters on the simulated dataset, keeping the parameters the same as those used on the real Neuropixels dataset. We then utilize SpikeInterface to evaluate each spike sorter on the ground-truth dataset. Afterwards, we repeat the agreement analysis from the previous section to diagnose the low agreement among sorters.
 
@@ -68,13 +96,25 @@ In Figure 2D, the accuracy, precision, and recall of all the ground-truth units 
 
 Figure 2E shows the breakdown of detected units for each spike sorter. Each unit is classified as well-detected, false positive, redundant, and/or overmerged by SpikeInterface (the definitions of each unit type can be found in the SpikeComparison Section of the Materials and methods). This plot, interestingly, may shed some light on the remarkable accuracy of Kilosort2. While Kilosort2 has the most well-detected units (245), this comes at the cost of a high percentage of false positive (147) and redundant (21) units (The high-rate of false positive/redundant units persists, but is alleviated, even when using Kilosort2’s automated curation step which removes units that have >20% estimated contamination rate [computed from the refractory period violations﻿]. In that case the number of well-detected units is 241, false positives are 93, and redundant units are 18. In both cases two overmerged units are found). Notably, Tridesclous detects very few false positive/redundant units while still finding many well-detected units. HDSort, on the flip side, finds many more false positive units than any other spike sorter. For a comprehensive comparison of spike sorter performance on both real and simulated datasets, we refer the reader to the related SpikeForest project (https://spikeforest.flatironinstitute.org/) (Magland et al., 2020).
 
-## Low-agreement units are mainly false positives
+### Low-agreement units are mainly false positives
 
 Similarly to the real Neuropixels dataset, we compare the agreement among the different spike sorters on the simulated dataset. Again, we observe a large disagreement among the spike sorting outputs with only 139 units of the 1921 total units (7.24%) being in agreement among all sorters (Figure 3A). We can break down the overall agreement by sorter (Figure 3B), highlighting that some sorters are more prone to finding low agreement units (HDSort, SpyKING Circus, Kilosort2) than other sorters (HerdingSpikes2, Ironclust, Tridesclous).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig3-v2.jpg)
+
+**Figure 3.:** (A) The total number of units for which k sorters agree (unit agreement is defined as 50% spike match). (B) The number of units (per sorter) for which k sorters agree; Most sorters find many units that other sorters do not. (HS = HerdingSpikes2, KS = Kilosort2, IC = IronClust, TDC = Tridesclous, SC = SpyKING Circus, HDS = HDSort) (C) Number of matched ground-truth units (blue) and false positive units (red) found by each sorter on which k sorters agree upon. Most of the false positive units are only found by a single sorter. Number of false positive units found by $k\geq2$ sorters: HS = 4, KS = 4, IC = 4, SC = 2, TDC = 1, HDS = 2. (D) Signal-to-noise ratio (SNR) of ground-truth unit with respect to the number of k sorters agreement. Results are split by sorter.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** All possible subsets of two to five of the six sorters were tested by removing corresponding units from the full sorting comparison. Each dot corresponds to one unique combination of sorters. This analysis shows that false positive units are well-identified using pairs of sorters (almost all false positive units are only found by one sorter), indicating that the sorters are biased in different ways. However, the fraction of true positives in the ensemble (at least two sorters agree) can be significantly lower when only pairs of sorters are used. This is explained by the fact that, for this dataset, a fraction of true positive units are only found by one sorter (as expected since the quality of detection and isolation of the units varies among sorters). In contrast, using four or more sorters reliably identifies most true positive units. For two sorters, the most reliable identification of true positives was achieved by combining two of Kilosort2, Ironclust, and HDSort.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Many detected false positive units have an SNR above the mode of the ground-truth SNR, indicating that SNR is not a good measure to separate false and true positives in this case.
+
 Given that we know the ground-truth spiking activity of the simulated recording, we can now investigate whether low-agreement units actually correspond to ground-truth units or if they are falsely detected (false positive) units. In Figure 3C, bar plots for each sorter show the number of matched ground-truth units (blue) and false positive units (red) in relation to the ensemble agreement (1 - no agreement, 6 - full agreement). The plots show that (almost) all false positive units are ones that are found by only a single sorter (not matched with any other sorters), while most real units are matched by more than one sorter. We also assessed how well false positive units can be identified using fewer sorters (Figure 3—figure supplement 1). This analysis showed that using a pair of sorters is sufficient to isolate almost all false positive units in each sorter, yet when fewer than four sorter outputs are compared, a significant fraction of true positive units found by only one sorter can be wrongly classified as false positives with this approach. For two sorters, the most reliable identification of true positives for this dataset was achieved by combining Kilosort2 and Ironclust (96% and 95% false positive and true positive detection rate, respectively). In Figure 3D, we display the signal-to-noise ratio (SNR) as a function of the ensemble agreement. This shows, as expected, that higher SNR units have higher agreement among sorters. In other words, units with a large amplitude (high SNR) are easier to detect and more consistently found by many sorters. Additionally, we tested if SNR can be used to distinguish between false and true positive units, as noise may be wrongly detected as events with low SNR. We found that for Kilosort2’s output, which is best matched with ground-truth spike trains, SNR is not a good predictor of false positives (Figure 3—figure supplement 2) - many false positives had a high estimated SNR. Taken together, these results suggest that the ensemble agreement among multiple sorters can be used to remove false positive units from each of the sorter outputs or to inform their subsequent manual curation.
 
-## Consensus units highly overlap with manually curated ones
+### Consensus units highly overlap with manually curated ones
 
 We next investigate the ensemble agreement among the sorters on the real Neuropixels recording presented in Figure 1. As there is no ground-truth information in this setting to identify false positives, we turn to manually curated sorting outputs. Two experts (which we will refer to as C1 and C2) manually curate the spike sorting output of Kilosort2 using the Phy software. During this curation step, the two experts label the sorted units as false positives or real units by rejecting, splitting, merging, or accepting units according to spike features (Rossant and Harris, 2013).
 
@@ -82,17 +122,17 @@ Figure 4A shows the agreement between expert 1 (C1) and expert 2 (C2). While the
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig4-v2.jpg)
 
-**Figure 4.:** (A) Venn diagram showing the agreement between Curator 1 and 2. 174 units are discarded by both curators from the Kilsort2 output. (B) Percent of matched units between the output of each sorter and C1 (red) and C2 (blue). Ironclust has the highest match with both curated datasets. (C) Similar to C, but using the consensus units (units agreed upon by at least two sorters - ). The percent of matching with curated datasets is now above 70% for all sorters, with Kilosort2 having the highest match (KSk≥2 ∩C1 = 84.55%, KSc∩C2 = 89.55%), slightly higher than Ironclust (ICc ∩ C1 = 82.63%, ICc ∩ C2 = 83.83%). (cD) Percent of non-consensus units () matched to curated datasets. The only significant overlap is between Curator one and Kilosort2, with a percent around 18% (KSk=1nc ∩ C1 = 18.58%, KSnc ∩ C2 = 24.34%).
+**Figure 4.:** (A) Venn diagram showing the agreement between Curator 1 and 2. 174 units are discarded by both curators from the Kilsort2 output. (B) Percent of matched units between the output of each sorter and C1 (red) and C2 (blue). Ironclust has the highest match with both curated datasets. (C) Similar to C, but using the consensus units (units agreed upon by at least two sorters - $k\geq2$). The percent of matching with curated datasets is now above 70% for all sorters, with Kilosort2 having the highest match (KSc ∩C1 = 84.55%, KSc∩C2 = 89.55%), slightly higher than Ironclust (ICc ∩ C1 = 82.63%, ICc ∩ C2 = 83.83%). (D) Percent of non-consensus units ($k=1$) matched to curated datasets. The only significant overlap is between Curator one and Kilosort2, with a percent around 18% (KSnc ∩ C1 = 18.58%, KSnc ∩ C2 = 24.34%).
 
 We then compare the output of each of the spike sorters to C1 and C2 and find that, in general, only a small percentage of units outputted by any single sorter is matched to the curated results (Figure 4). The highest percentage match is actually IronClust which is surprising given that the initial sorting output was curated from Kilosort2’s output (IC ∩ C1 = 59.83%, IC ∩ C2 = 61.1%, KS ∩ C1 = 50.67%, KS ∩ C2 = 56.25%).
 
-Next, for each sorter, we take all the units that are matched by at least one other sorter (consensus units, k≥2) and all units that are found by only that sorter (non-consensus units, k=1). We refer to the consensus units of a sorter as Sorterc and the non-consensus units of a sorter as Sorternc. In Figure 4C, we show the match percentage between consensus units and curated units. The average match percentage is above 70% for all sorters showing that there is a large agreement between the manually curated outputs and the consensus-based output. Kilosort2 has the highest match (KSc ∩ C1 = 84.55%, KSc ∩ C2 = 89.55%), slightly higher than Ironclust (ICc ∩ C1 = 82.63%, ICc ∩ C2 = 83.83%). Conversely, the percentage of non-consensus units matched to curated units is very small (Figure 4D) for all sorters.
+Next, for each sorter, we take all the units that are matched by at least one other sorter (consensus units, $k\geq2$) and all units that are found by only that sorter (non-consensus units, $k=1$). We refer to the consensus units of a sorter as Sorterc and the non-consensus units of a sorter as Sorternc. In Figure 4C, we show the match percentage between consensus units and curated units. The average match percentage is above 70% for all sorters showing that there is a large agreement between the manually curated outputs and the consensus-based output. Kilosort2 has the highest match (KSc ∩ C1 = 84.55%, KSc ∩ C2 = 89.55%), slightly higher than Ironclust (ICc ∩ C1 = 82.63%, ICc ∩ C2 = 83.83%). Conversely, the percentage of non-consensus units matched to curated units is very small (Figure 4D) for all sorters.
 
 Overall, this analysis suggests that a consensus-based approach to curation could allow for identification of real neurons from spike sorted data. Despite differences among the sorters with respect to the number of detected neurons and the quality of their isolation (as demonstrated by the ground-truth analysis), the consensus-based approach has good agreement with hand-curated data and appears to be less variable as illustrated by the small but significant disagreement between the two curators.
 
 ## Materials and methods
 
-## Overview of SpikeInterface
+### Overview of SpikeInterface
 
 SpikeInterface consists of five main Python packages designed to handle different steps in the spike sorting pipeline: (i) spikeextractors, for extracellular recording, sorting output, and probe file I/O; (ii) spiketoolkit for low level processing such as pre-processing, post-processing, validation, curation; (iii) spiketoolkit for spike sorting algorithms and job launching functionality; (iv) spikecomparison for sorter comparison, ground-truth comparison, and ground-truth studies; and (v) spikewidgets, for data visualization.
 
@@ -100,7 +140,7 @@ These five packages can be installed and used through the spikeinterface metapac
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61834/elife-61834-fig5-v2.jpg)
 
-## SpikeExtractors
+#### SpikeExtractors
 
 The spikeextractors package (https://github.com/SpikeInterface/spikeextractors; Buccino et al., 2020a) is designed to alleviate issues of any file format incompatibility within spike sorting without creating additional file formats. To this end, spikeextractors contains two core Python objects that can directly and uniformly access all spike sorting related files: the RecordingExtractor and the SortingExtractor.
 
@@ -120,11 +160,198 @@ Along with using Extractors for single files, it is possible to access data from
 
 As of this moment, SpikeInterface supports 19 extracellular recording formats and 18 sorting output formats. The available file formats can be found in Table 1. Although this covers many popular formats in extracellular analysis (including Neurodata Without Borders, Teeters et al., 2015, and NIX, 2015), we expect the number of formats to grow with future versions as adding a new format is as simple as making a new Extractor subclass for it. We also have started to integrate NEO’s (Garcia et al., 2014) I/O system into spikeextractors which allow SpikeInterface to support many more open-source and proprietary file formats without changing any functionality. Already, two recording formats have been added through our NEO integration (Neuralynx, 2020 and Plexon, 2020).
 
-## SpikeToolkit
+**Table 1.**
+ Currently available file formats in SpikeInterface and if they are writable.*The Phy writing method is implemented in spiketoolkit as the export_to_phy function (all other writing methods are implemented in spikeextractors).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Raw formats</th>
+      <th>Writable</th>
+      <th>Reference</th>
+      <th>Sorted formats</th>
+      <th>Writable</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Klusta</td>
+      <td>Yes</td>
+      <td>Rossant et al., 2016</td>
+      <td>Klusta</td>
+      <td>Yes</td>
+      <td>Rossant et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Mountainsort</td>
+      <td>Yes</td>
+      <td>Jun et al., 2017a</td>
+      <td>Mountainsort</td>
+      <td>Yes</td>
+      <td>Jun et al., 2017a</td>
+    </tr>
+    <tr>
+      <td>Phy*</td>
+      <td>Yes</td>
+      <td>Rossant and Harris, 2013</td>
+      <td>Phy*</td>
+      <td>Yes</td>
+      <td>Rossant and Harris, 2013</td>
+    </tr>
+    <tr>
+      <td>Kilosort/Kilosort2</td>
+      <td>No</td>
+      <td>Pachitariu et al., 2016; Rossant et al., 2014</td>
+      <td>Kilosort/Kilosort2</td>
+      <td>No</td>
+      <td>Pachitariu et al., 2016; Rossant et al., 2014</td>
+    </tr>
+    <tr>
+      <td>SpyKING Circus</td>
+      <td>No</td>
+      <td>Yger et al., 2018</td>
+      <td>SpyKING Circus</td>
+      <td>Yes</td>
+      <td>Yger et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Exdir</td>
+      <td>Yes</td>
+      <td>Dragly et al., 2018</td>
+      <td>Exdir</td>
+      <td>Yes</td>
+      <td>Dragly et al., 2018</td>
+    </tr>
+    <tr>
+      <td>MEArec</td>
+      <td>Yes</td>
+      <td>Buccino and Einevoll, 2020</td>
+      <td>MEArec</td>
+      <td>Yes</td>
+      <td>Buccino and Einevoll, 2020</td>
+    </tr>
+    <tr>
+      <td>Open Ephys</td>
+      <td>No</td>
+      <td>Siegle et al., 2017</td>
+      <td>Open Ephys</td>
+      <td>No</td>
+      <td>Siegle et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Neurodata Without Borders</td>
+      <td>Yes</td>
+      <td>Teeters et al., 2015</td>
+      <td>Neurodata Without Borders</td>
+      <td>Yes</td>
+      <td>Teeters et al., 2015</td>
+    </tr>
+    <tr>
+      <td>NIX</td>
+      <td>Yes</td>
+      <td>NIX, 2015</td>
+      <td>NIX</td>
+      <td>Yes</td>
+      <td>NIX, 2015</td>
+    </tr>
+    <tr>
+      <td>Plexon</td>
+      <td>No</td>
+      <td>Plexon, 2020</td>
+      <td>Plexon</td>
+      <td>No</td>
+      <td>Plexon, 2020</td>
+    </tr>
+    <tr>
+      <td>Neuralynx</td>
+      <td>No</td>
+      <td>Neuralynx, 2020</td>
+      <td>Neuralynx</td>
+      <td>No</td>
+      <td>Neuralynx, 2020</td>
+    </tr>
+    <tr>
+      <td>SHYBRID</td>
+      <td>Yes</td>
+      <td>Wouters et al., 2020</td>
+      <td>SHYBRID</td>
+      <td>Yes</td>
+      <td>Wouters et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Neuroscope</td>
+      <td>Yes</td>
+      <td>Hazan et al., 2006</td>
+      <td>Neuroscope</td>
+      <td>Yes</td>
+      <td>Hazan et al., 2006</td>
+    </tr>
+    <tr>
+      <td>SpikeGLX</td>
+      <td>No</td>
+      <td>Karsh, 2016</td>
+      <td>HerdingSpikes2</td>
+      <td>Yes</td>
+      <td>Hilgen et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Intan</td>
+      <td>No</td>
+      <td>Intan, 2010</td>
+      <td>JRCLUST</td>
+      <td>No</td>
+      <td>Jun et al., 2017b</td>
+    </tr>
+    <tr>
+      <td>MCS H5</td>
+      <td>No</td>
+      <td>MCS, 2020</td>
+      <td>Wave clus</td>
+      <td>No</td>
+      <td>Chaure et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Biocam HDF5</td>
+      <td>Yes</td>
+      <td>Biocam, 2018</td>
+      <td>Tridesclous</td>
+      <td>No</td>
+      <td>Garcia and Pouzat, 2015</td>
+    </tr>
+    <tr>
+      <td>MEA1k</td>
+      <td>Yes</td>
+      <td>MEA1k, 2020</td>
+      <td>NPZ (numpy zip)</td>
+      <td>Yes</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>MaxOne</td>
+      <td>No</td>
+      <td>MaxWell, 2020</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Binary</td>
+      <td>Yes</td>
+      <td>N/A</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### SpikeToolkit
 
 The spiketoolkit package (https://github.com/SpikeInterface/spiketoolkit; Buccino et al., 2020b) is designed for efficient pre-processing, post-processing, validation, and curation of extracellular datasets and sorting outputs. It contains four modules that encapsulate each of these functionalities: preprocessing, postprocessing, validation, and curation.
 
-## Pre-processing
+##### Pre-processing
 
 The preprocessing module provides functions to process raw extracellular recordings before spike sorting. To pre-process an extracellular recording, the user passes a RecordingExtractor to a pre-processing function which returns a new 'preprocessed' RecordingExtractor. This new RecordingExtractor, which can be used in exactly the same way as the original extractor, implements the preprocessing in a lazy fashion so that the actual computation is performed only when data is requested. As all pre-processing functions take in and return a RecordingExtractor, they can be naturally chained together to perform multiple pre-processing steps on the same recording.
 
@@ -133,7 +360,7 @@ recording = st.preprocessing.bandpass_filter(recording, freq_min=300, freq_max=6
 recording_1 = st.preprocessing.remove_bad_channels(recording, bad_channels=[5])
 recording_2 = st.preprocessing.common_reference(recording_1, reference=’median’)
 
-## Post-processing
+##### Post-processing
 
 The postprocessing module provides functions to compute and store information about an extracellular recording given an associated sorting output. As such, post-processing functions are designed to take in both a RecordingExtractor and a SortingExtractor, using them in conjunction to compute the desired information. These functions include, but are not limited to: extracting unit waveforms and templates, computing principle component analysis projections, as well as calculating features from templates (e.g. peak to valley duration, full-width half maximum).
 
@@ -142,15 +369,91 @@ waveforms = st.postprocessing.get_unit_waveforms(recording, sorting)
 pca_scores = st.postprocessing.compute_unit_pca_scores(recording, sorting, n_comp=3)
 st.postprocessing.export_to_phy(recording, sorting, output_folder=’phy_folder’)
 
-## Validation
+##### Validation
 
 The validation module allows users to automatically evaluate spike sorting results in the absence of ground truth with a variety of quality metrics. The quality metrics currently available are a compilation of historical and modern approaches that were re-implemented by researchers at Allen Institute for Brain Science (https://github.com/AllenInstitute/ecephys_spike_sorting; Siegle et al., 2019b) and by the SpikeInterface team (see Table 2).
+
+**Table 2.**
+ Currently available quality metrics in Spikeinterface.Re-implemented by researchers at Allen Institute for Brain and by the SpikeInterface team.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Description</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Signal-to-noise ratio</td>
+      <td>The signal-to-noise ratio computed on unit templates.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Firing rate</td>
+      <td>The average firing rate over a time period.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Presence ratio</td>
+      <td>The fraction of a time period in which spikes are present.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Amplitude Cutoff</td>
+      <td>An estimate of the miss rate based on an amplitude histogram.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Maximum drift</td>
+      <td>The maximum change in spike position (computed as the center of mass of the energy of the first principal component score) throughout a recording.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Cumulative drift</td>
+      <td>The cumulative change in spike position throughout a recording.</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>ISI violations</td>
+      <td>The rate of inter-spike-interval (ISI) refractory period violations.</td>
+      <td>Hill et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Isolation Distance</td>
+      <td>Radius of the smallest ellipsoid that contains all the spikes from a cluster and an equal number of spikes from other clusters (centered on the specified cluster).</td>
+      <td>Harris et al., 2001</td>
+    </tr>
+    <tr>
+      <td>L-ratio</td>
+      <td>Assuming that the distribution of spike distances from a cluster center is multivariate normal, L-ratio is the average value of the tail distribution for non-member spikes of that cluster.</td>
+      <td>Schmitzer-Torbert and Redish, 2004</td>
+    </tr>
+    <tr>
+      <td>D-Prime</td>
+      <td>The classification accuracy between two units based on linear discriminant analysis (LDA)</td>
+      <td>Hill et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Nearest-neighbors</td>
+      <td>A non-parametric estimate of unit contamination using nearest-neighbor classification.</td>
+      <td>Chung et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Silhouette score</td>
+      <td>The ratio between cohesiveness of a cluster (distance between member spikes) and its separation from other clusters (distance to non-member spikes).</td>
+      <td>Rousseeuw, 1987</td>
+    </tr>
+  </tbody>
+</table>
 
 Each of SpikeInterface’s quality metric functions internally utilize the postprocessing module to generate all data needed to compute the specified metric (amplitudes, principal components, etc.). The following code snippet demonstrates how to compute both a single quality metric (isolation distance) and also all the quality metrics with just two function calls:import spikeinterface.toolkit as st
 iso_metric = st.validation.compute_isolation_distances(sorting, recording)
 all_metrics = st.validation.compute_quality_metrics(sorting, recording)
 
-## Curation
+##### Curation
 
 The curation module allows users to quickly remove units from a SortingExtractor based on computed quality metrics. To curate a sorted dataset, the user passes a SortingExtractor to a curation function which returns a new 'curated’ SortingExtractor (similar to how pre-processing works). This new SortingExtractor can be used in exactly the same way as the original extractor. As all curation functions take in and return a SortingExtractor, they can be naturally chained together to perform multiple curation steps on the same sorting output.
 
@@ -158,7 +461,7 @@ Currently, all implemented curation functions are based on excluding units with 
 sorting_1 = st.curation.threshold_firing_rates(sorting, threshold=2.3, threshold_sign=’less’)
 sorting_2 = st.curation.threshold_snrs(sorting_1, recording, threshold=10, threshold_sign=’less’)
 
-## SpikeSorters
+#### SpikeSorters
 
 The spikesorters (https://github.com/SpikeInterface/spikesorters; Buccino et al., 2020c) package provides a straightforward interface for running spike sorting algorithms supported by SpikeInterface. Modern spike sorting algorithms are built and deployed in a variety of programming languages including C, C++, MATLAB, and Python. Along with variability in the underlying program languages, each sorting algorithm may depend on external technologies like CUDA or command line interfaces (CLIs), complicating standardization. To unify these disparate algorithms into a single codebase, spikesorters provides Python-wrappers for each supported spike sorting algorithm. These spike sorting wrappers use a standard API for running the corresponding algorithms, internally handling intrinsic complexities such as automatic code generation for MATLAB- and CLI-based algorithms. Each spike sorting wrapper is implemented as a subclass of a BaseSorter class that contains all shared code for running the spike sorters.
 
@@ -172,13 +475,96 @@ Our spike sorting functions also allow for users to sort specific 'groups’ of 
 
 Currently, SpikeInterface supports 10 semi-automated spike sorters which are listed in Table 3. We encourage developers to contribute to this expanding list in future versions and we provide comprehensive documentation on how to do so (https://spikeinterface.readthedocs.io/en/latest/contribute.html).
 
-## SpikeComparison
+**Table 3.**
+ Currently available spike sorters in Spikeinterface.TM = Template Matching; SL = Spike Localization; DB = Density-based clustering.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Method</th>
+      <th>Notes</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Klusta</td>
+      <td>DB</td>
+      <td>Python-based, semi-automatic, designed for low channel count, dense probes.</td>
+      <td>Rossant et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Mountainsort4</td>
+      <td>DB</td>
+      <td>Python-based, fully automatic, unique clustering method (isosplit), designed for low channel count, dense probes and tetrodes.</td>
+      <td>Chung et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Kilosort</td>
+      <td>TM</td>
+      <td>MATLAB-based, GPU support, semi-automated final curation.</td>
+      <td>Pachitariu et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Kilosort2</td>
+      <td>TM</td>
+      <td>MATLAB-based, GPU support, semi-automated final curation, designed to correct for drift.</td>
+      <td>Pachitariu et al., 2018</td>
+    </tr>
+    <tr>
+      <td>SpyKING Circus</td>
+      <td>TM</td>
+      <td>Python-based, fast and scalable with CPUs, designed to correct for drift.</td>
+      <td>Yger et al., 2018</td>
+    </tr>
+    <tr>
+      <td>HerdingSpikes2</td>
+      <td>DB + SL</td>
+      <td>Python-based, fast and scalable with CPUs, scales up to thousands of channels.</td>
+      <td>Hilgen et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Tridesclous</td>
+      <td>TM</td>
+      <td>Python-based, graphical user interface, GPU support, multi-platform</td>
+      <td>Garcia and Pouzat, 2015</td>
+    </tr>
+    <tr>
+      <td>IronClust</td>
+      <td>DB + SL</td>
+      <td>MATLAB-based, GPU support, designed to correct for drift.</td>
+      <td>Jun et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Wave clus</td>
+      <td>TM</td>
+      <td>Matlab-based, fully automatic, designed for single electrodes and tetrodes, multi-platform.</td>
+      <td>Chaure et al., 2018</td>
+    </tr>
+    <tr>
+      <td>HDsort</td>
+      <td>TM</td>
+      <td>Matlab-based, fast and scalable, designed for large-scale, dense arrays.</td>
+      <td>Diggelmann et al., 2018</td>
+    </tr>
+  </tbody>
+</table>
+
+#### SpikeComparison
 
 The spikecomparison package (https://github.com/SpikeInterface/spikecomparison; Buccino et al., 2020d) provides a variety of tools that allow users to compare and benchmark sorting outputs. Along with these comparison tools, spikecomparison also provides the functionality to run systematic performance comparisons of multiple spike sorters on multiple ground-truth recordings.
 
 Within spikecomparison, there exist three core comparison functions:
 
-Each of these comparison functions takes in multiple SortingExtractor objects and uses them to compute agreement scores among the underlying spike trains. The agreement score between two spike trains is defined as:(1)score=#nmatches#n1+#n2−#nmatcheswhere #⁢nm⁢a⁢t⁢c⁢h⁢e⁢s is the number of 'matched' spikes between the two spike trains and #⁢n1 and #⁢n2 are the number of spikes in the first and second spike train, respectively. Two spikes from two different spike trains are 'matched' when they occur within a certain time window of each other (this window length can be adjusted by the user and is 0.4 ms by default).
+Each of these comparison functions takes in multiple SortingExtractor objects and uses them to compute agreement scores among the underlying spike trains. The agreement score between two spike trains is defined as:
+
+$$
+score=\frac{#n_{matches}}{#n_{1}+#n_{2}−#n_{matches}}
+$$
+
+where $#⁢n_{m⁢a⁢t⁢c⁢h⁢e⁢s}$ is the number of 'matched' spikes between the two spike trains and $#⁢n_{1}$ and $#⁢n_{2}$ are the number of spikes in the first and second spike train, respectively. Two spikes from two different spike trains are 'matched' when they occur within a certain time window of each other (this window length can be adjusted by the user and is 0.4 ms by default).
 
 When comparing two sorting outputs (compare_two_sorters), a linear assignment based on the Hungarian method (Kuhn, 1955) is used. With this assignment method, each unit from the first sorting output can be matched to at most one other unit in the second sorting output. The final result of this comparison is then the list of matching units (given by the Hungarian method) and the agreement scores of the spike trains.
 
@@ -199,7 +585,7 @@ comp_type_3 = sc.compare_sorter_with_ground_truth(gt_sorting, tested_sorting)
 
 Along with the three comparison functions, spikecomparison also includes a GroundTruthStudy class that allows for the systematic comparison of multiple spike sorters on multiple ground-truth datasets. With this class, users can set up a study folder (in which the recordings to be tested are saved), run several spike sorters and store their results in a compact way, perform systematic ground-truth comparisons, and aggregate the results in pandas dataframes (McKinney, 2010).
 
-## SpikeWidgets
+#### SpikeWidgets
 
 The spikewidgets package (https://github.com/SpikeInterface/spikewidgets; Buccino et al., 2020e) implements a variety of widgets that allow for efficient visualization of different elements in a spike sorting pipeline.
 
@@ -209,7 +595,7 @@ The following code snippet demonstrates how SpikeInterface can be used to visual
 sw.plot_timeseries(recording, channel_ids=[0,1,2,3], trange=[0,10])
 sw.plot_rasters(sorting, unit_ids=[0,1,3], trange=[0,10]).
 
-## Building a spike sorting pipeline
+### Building a spike sorting pipeline
 
 So far, we have given an overview of each of the main packages in isolation. In this section, we illustrate how these packages can be combined, using both the Python API and the Spikely GUI, to build a robust spike sorting pipeline. The spike sorting pipeline that we construct using SpikeInterface is depicted in Figure 6A and consists of the following analysis steps:
 
@@ -219,11 +605,11 @@ So far, we have given an overview of each of the main packages in isolation. In 
 
 Traditionally, implementing this pipeline is challenging as the user has to load data from multiple file formats, interface with a probe file, memory-map all the processing functions, prepare the correct inputs for Mountainsort4, and understand how to export the results into Phy. Even if the user manages to implement all of the analysis steps on their own, it is difficult to verify their correctness or reuse them without proper unit testing and code reviewing.
 
-## Using the Python API
+#### Using the Python API
 
 Using SpikeInterface’s Python API to build the pipeline shown in Figure 6A is straightforward. Each of the seven steps is implemented with a single line of code (as shown in Figure 6B). Additionally, data visualizations can be added for each step of the pipeline using the appropriate widgets (as described in the SpikeWidgets Section). Unlike handmade scripts, SpikeInterface has a wide range of unit tests, employs continuous integration, and has been carefully developed by a team of researchers. Users, therefore, can have increased confidence that the pipelines they create are correct and reusable. Additionally, SpikeInterface tracks the entire provenance of the performed analysis, allowing other users (or the same user) to reproduce the analysis at a later date.
 
-## Using the spikely GUI
+#### Using the spikely GUI
 
 Along with our Python API, we also developed spikely (https://github.com/SpikeInterface/spikely; Hurwitz et al., 2020), a PyQt-based GUI that allows for simple construction of complex spike sorting pipelines. With spikely, users can build workflows that include: (i) loading a recording and a probe file; (ii) performing pre-processing on the underlying recording with multiple processing steps; (iii) running any spike sorter supported by SpikeInterface on the processed recording; (iv) automatically curating the sorter’s output; and (v) exporting the final result to a variety of file formats, including Phy. At its core, spikely utilizes SpikeInterface’s Python API to run any constructed spike sorting workflow. This ensures that the functionality of spikely grows organically with that of SpikeInterface.
 
@@ -233,7 +619,7 @@ Figure 6C shows a screenshot from spikely where the pipeline in Figure 6A is con
 
 In this paper, we introduced SpikeInterface, a Python framework designed to enhance the accessibility, reliability, efficiency, and reproducibility of spike sorting. To illustrate the use-cases and advantages of SpikeInterface, we performed a detailed meta-analysis that included: quantifying the agreement among six modern sorters on a real dataset, benchmarking each sorter on a simulated ground-truth recording, and investigating the performance of a consensus-based spike sorting and how it compares with manually curated results. To highlight the modular design of SpikeInterface, we then provided descriptions and code samples for each of the five main packages and showed how they could be chained together to construct flexible spike sorting workflows.
 
-## Ensemble spike sorting
+### Ensemble spike sorting
 
 Our analysis demonstrated that spike sorters not only differ in unit isolation quality, but can also return a significant number of false positive units. To identify true neurons and remove poorly sorted and noisy units, we combined the output of several spike sorters and found that although agreement between sorters is generally poor, units that are found by more than one sorter are likely true positives. This strategy, which we term consensus-based or ensemble spike sorting (a terminology borrowed from machine learning; Dietterich, 2000) appears to be a viable alternative to manual curation which suffers from high-variability among different operators (Wood et al., 2004; Rossant et al., 2016). Alternatives to manual curation are especially enticing as the density and number of simultaneously recording channels continue to increase rapidly.
 
@@ -241,7 +627,7 @@ We propose that consensus-based spike sorting (or curation) can be utilized in a
 
 Although ensemble spike sorting is an exciting new direction to explore, there are other methods for curation that must be considered. One popular curation method is to accept or reject sorted units based on a variety of quality metrics (this is supported by SpikeInterface). Another method that is gaining more popularity is to use the large amount of available curated datasets to train classifiers that can automatically flag a unit as ‘good’ or ‘noise’ depending on some features, such as waveform shape. Finally, while manual curation is subjective and time consuming, it is the only method that allows for merging and splitting of units and, through powerful software tools such as Phy (Rossant et al., 2014; Rossant et al., 2016), it allows for full control over the curation process. Future research into these different curation methods is required to determine which are appropriate for the new influx of high-density extracellular recording devices.
 
-## Comparison to other frameworks
+### Comparison to other frameworks
 
 As mentioned in the introduction, many software tools have attempted to improve the accessibility and reproducibility of spike sorting. Here, we review the four most recent tools that are in use (to our knowledge) and compare them to SpikeInterface.
 
@@ -253,7 +639,7 @@ Regalia et al., 2016 developed a spike sorting framework with an intuitive MATLA
 
 Most recently, Nasiotis et al., 2019a implemented IN-Brainstorm, a MATLAB-based GUI designed for the analysis of invasive neurophysiology data. IN-Brainstorm allows users to run three spike sorting packages (Wave clus [Chaure et al., 2018], UltraMegaSort2000 [Hill et al., 2011], and Kilosort [Pachitariu et al., 2016]). Recordings can be loaded and analyzed from six different file formats: Blackrock, Ripple, Plexon, Intan, NWB, and Tucker Davis Technologies. IN-Brainstorm is available on GitHub (https://github.com/brainstorm-tools/brainstorm3; Nasiotis et al., 2019b) and its functionality is documented (https://neuroimage.usc.edu/brainstorm/e-phys/Introduction). IN-Brainstorm does not include the latest spike sorting software (Rossant et al., 2016; Yger et al., 2018; Chung et al., 2017; Jun et al., 2017b; Pachitariu et al., 2018; Hilgen et al., 2017) (IN-Brainstorm does include instructions on how to import data that has been spike sorted by a non-supported spike sorter), and it does not support any post-sorting analysis such as quality metric calculation, automated curation, or sorting output comparison.
 
-## Outlook
+### Outlook
 
 As it stands, spike sorting is still an open problem. No step in the spike sorting pipeline is completely solved and no spike sorter can be used for all applications. With SpikeInterface, researchers can quickly build, run, and evaluate many different spike sorting workflows on their specific datasets and applications, allowing them to determine which will work best for them. Once a researcher determines an ideal workflow for their specific problem, it is straightforward to share and re-use that workflow in other laboratories as the full provenance is automatically stored by SpikeInterface. We envision that many laboratories will use SpikeInterface to satisfy their spike sorting needs.
 

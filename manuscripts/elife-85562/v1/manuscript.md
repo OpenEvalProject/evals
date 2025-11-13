@@ -20,9 +20,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01k40cz91 Univ Rouen Normandie, Inserm, Normandie Univ, NorDiC UMR 1239, Adrenal and Gonadal Pathophysiology team, F-76000 Rouen France
-2. https://ror.org/03nhjew95 Department of General Biochemistry, Rouen University Hospital Rouen France
-3. https://ror.org/051kpcy16 Normandie Univ, UNICAEN, OeReCa Caen France
+1. Univ Rouen Normandie, Inserm, Normandie Univ, NorDiC UMR 1239, Adrenal and Gonadal Pathophysiology team, F-76000 Rouen France ([ROR:01k40cz91](https://ror.org/01k40cz91))
+2. Department of General Biochemistry, Rouen University Hospital Rouen France ([ROR:03nhjew95](https://ror.org/03nhjew95))
+3. Normandie Univ, UNICAEN, OeReCa Caen France ([ROR:051kpcy16](https://ror.org/051kpcy16))
 
 † Corresponding author
 
@@ -46,17 +46,25 @@ Since steroid hormones play an essential role in the progression of spermatogene
 
 ## Results
 
-## Leydig cells are partially mature after 30 days of organotypic culture
+### Leydig cells are partially mature after 30 days of organotypic culture
 
 We first wondered whether Leydig cell number, survival, proliferation, and differentiation could be altered under in vitro conditions. 3β-HSD immunofluorescence staining was performed to detect and quantify Leydig cells during mouse postnatal development and in in vitro cultured fresh testicular tissues (FT). The percentage of Leydig cells in apoptosis or in proliferation was measured after cleaved caspase 3 or Ki67 immunofluorescence staining respectively, and the percentage of Leydig cells expressing AR, which is required for their proliferation and maturation (O’Shaughnessy et al., 2019), was also determined. The transcript levels of genes necessary for Leydig cell differentiation (Igf1, Dhh) and markers of fetal Leydig cells (Mc2r), progenitor/immature Leydig cells (Srd5a1), or adult Leydig cells (Sult1e1, Insl3) were then assessed by RT-qPCR. Finally, the concentration of INSL3, a marker of Leydig cell maturity, was measured by RIA in organotypic culture media and in testicular homogenates.
 
 After 16 days of culture, the number of Leydig cells per cm² of testicular tissue was not significantly different from 22 dpp, the age-matched in vivo control (Figure 1A–B). However, at this time point, the percentage of apoptotic Leydig cells was increased compared to the in vivo control while the percentage of proliferating Leydig cells was unchanged (Figure 1C–D). In addition, the percentage of Leydig cells expressing AR was similar at D16 and 22 dpp (Figure 1E). Whereas no difference was observed in the mRNA levels of Dhh, Srd5a1 and Sult1e1 between D16 and 22 dpp, Igf1 and Insl3 transcripts levels were respectively higher and lower in 16 day organotypic cultures than in vivo (Figure 1F–J). Mc2r transcripts were barely detected at D16 and 22 dpp as well as at later time points, thereby reflecting the low amount of fetal Leydig cells in prepubertal testicular tissues (data not shown).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative images of 3β-hydroxysteroid dehydrogenase (3β-HSD) expression by Leydig cells during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured tissues after 16 days of culture (D16) or 30 days (D30). A representative image of a negative control, carried out by omitting the primary antibody, is also shown. Testicular tissue sections were counterstained with Hoechst (blue). Dotted lines delineate seminiferous tubules. Scale: 15 µm. (B) Number of 3β-HSD + Leydig cells per cm² of testicular tissue during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured tissues (D16 and D30). (C–D) Percentage of Leydig cells (C) in apoptosis (3β-HSD and cleaved caspase 3 positive) or (D) in proliferation (3β-HSD and Ki67 positive) in in vivo and in vitro matured tissues. (E) Percentage of 3β-HSD positive Leydig cells expressing AR in in vivo and in vitro matured tissues. (F–J) Relative mRNA levels of Leydig cell differentiation factors (Igf1, Dhh), progenitor/immature Leydig cell (Srd5a1), and adult Leydig cell markers (Sult1e1, Insl3) (normalized to Gapdh and Actb or to Hsd3b1). (K–L) Intratesticular concentration of INSL3 (pg/mg of tissue, K) or in the culture medium (pg/mL, L). Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant. n.d.: not determined (under the detection limit) FT: Fresh Tissue; CSF: Controlled Slow Freezing.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images of 3β-hydroxysteroid dehydrogenase (3β-HSD) expression in Leydig cells at 6 dpp and in in vitro cultured frozen/thawed (CSF) testicular tissues (D16 and D30). Testicular tissue sections were counterstained with Hoechst (blue). Dotted lines delineate seminiferous tubules. Scale: 15 µm. (B) Number of 3β-HSD positive Leydig cells per cm² of FT or CSF testicular tissue. (C–D) Percentage of Leydig cells (C) in apoptosis (3β-HSD and cleaved caspase 3 positive) or (D) in proliferation (3β-HSD and Ki67 positive) in in vivo and in vitro matured FT or CSF tissues. (E) Percentage of 3β-HSD positive Leydig cells expressing AR in in vivo and in vitro matured FT or CSF tissues. (F–J) Relative mRNA levels of Leydig cell differentiation factors (Igf1, Dhh), progenitor/immature Leydig cell (Srd5a1) and of adult Leydig cell markers (Sult1e1, Insl3) (normalized to Gapdh and Actb or to Hsd3b1). Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant. FT: Fresh Tissue, CSF: Controlled Slow Freezing.
+
 After 30 days of culture, no significant difference in the number of Leydig cells per cm² of testicular tissue and in the percentages of apoptotic and proliferating Leydig cells was observed compared to 36 dpp, the corresponding in vivo time point (Figure 1A–D). Furthermore, the percentage of Leydig cells expressing AR was comparable after in vitro or in vivo maturation (Figure 1E). The transcript levels of Dhh were also similar in in vitro and in vivo matured tissues at the end of the first spermatogenic wave (Figure 1G). However, a reduction in the mRNA levels of Igf1, Srd5a1, and the two adult Leydig cell markers (Sult1e1, Insl3) was found at D30 in comparison to 36 dpp in vivo controls (Figure 1F and H–J). Moreover, intratesticular INSL3 was below the detection limit (<10 pg/mL) in in vitro matured tissues (Figure 1K), and a significant elevation in the concentration of INSL3 was observed in culture medium from D22 to D30 for FT tissues (Figure 1L).
 
 In summary, while the number and proliferation of Leydig cells are not affected by organotypic culture conditions, their differentiation into mature adult Leydig cells is impaired in vitro.
 
-## Controlled slow freezing has no impact on Leydig cell density or state of differentiation before or after organotypic culture
+### Controlled slow freezing has no impact on Leydig cell density or state of differentiation before or after organotypic culture
 
 In the clinics, testicular biopsies from prepubertal boys are frozen and stored in liquid nitrogen for later use. In order to assess the impact of freezing/thawing procedures (CSF) on Leydig cell number, survival, proliferation, and differentiation in organotypic cultures, we conducted the same analyses as above on 6 dpp CSF mouse testicular tissues and on in vitro matured 6 dpp CSF tissues (Figure 1—figure supplement 1).
 
@@ -64,13 +72,13 @@ CSF had no impact on the number of Leydig cells per cm² of tissue at 6 dpp as w
 
 Since the number and the state of differentiation of Leydig cells are rather similar in FT and CSF tissues, it can be concluded that the freezing/thawing procedures are not harmful to these cells.
 
-## The expression of several actors of steroidogenesis is affected in organotypic cultures
+### The expression of several actors of steroidogenesis is affected in organotypic cultures
 
 As the differentiation of Leydig cells is not fully completed in organotypic cultures, we next wanted to know if actors of the steroidogenic pathway show deregulated expression in vitro in comparison to physiological conditions, and thus which steps of the steroid hormone biosynthesis pathway may be impaired. The transcript levels of several genes involved in steroidogenesis were measured by RT-qPCR to highlight a potential deregulation of their expression in cultured tissues (Figure 2A–D, F H–I). The protein levels of two steroidogenic enzymes, 3β-HSD, and CYP17A1, were also quantified by western blot (Figure 2E and G).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig2-v1.jpg)
 
-**Figure 2.:** (A–I) Relative mRNA levels of Lhcgr, Star, Cyp11a1, Hsd3b1, Cyp17a1, Hsd17b3, and Hsd17b2 (normalized to Gapdh and Actb or to Hsd3b1) and relative protein levels of 3β-hydroxysteroid dehydrogenase (3β-HSD) (normalized to ACTB) and CYP17A1 (normalized to 3β-HSD) during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured fresh testicular tissues (FT) or controlled slow freezing (CSF) tissues (D16 and D30). (J) Representative images of CYP17A1 expression during mouse postnatal development (22 dpp and 36 dpp) and in in vitro cultured tissues (D16 and D30). A representative image of a negative control, carried out by omitting the primary antibody, is also shown. Testicular tissue sections were counterstained with Hoechst (blue). Dotted lines delineate seminiferous tubules. Scale: 15 µm. Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 and **p<0.01 were considered statistically significant.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A–I) Relative mRNA levels of Lhcgr, Star, Cyp11a1, Hsd3b1, Cyp17a1, Hsd17b3, and Hsd17b2 (normalized to Gapdh and Actb or to Hsd3b1) and relative protein levels of 3β-hydroxysteroid dehydrogenase (3β-HSD) (normalized to ACTB) and CYP17A1 (normalized to 3β-HSD) during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured fresh testicular tissues (FT) or controlled slow freezing (CSF) tissues (D16 and D30). (J) Representative images of CYP17A1 expression during mouse postnatal development (22 dpp and 36 dpp) and in in vitro cultured tissues (D16 and D30). A representative image of a negative control, carried out by omitting the primary antibody, is also shown. Testicular tissue sections were counterstained with Hoechst (blue). Dotted lines delineate seminiferous tubules. Scale: 15 µm. Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 and **p<0.01 were considered statistically significant.
 
 Controlled slow freezing had no impact on the mRNA levels of all the genes examined at 6 dpp, i.e., before culture (Figure 2A–I). At D16, the mRNA levels of Star, Cyp17a1, and Hsd17b3 were decreased in FT and CSF testicular tissues compared to 22 dpp testes (Figure 2B, F and H). Cyp11a1 transcript levels were also lower in FT tissues at D16 than at 22 dpp (Figure 2C). In contrast, Lhcgr, Hsd3b1, and Hsd17b2 transcript levels remained unchanged at this time point (Figure 2A, D, I). 3β-HSD and CYP17A1 protein levels were not different between D16 and 22 dpp (Figure 2E and G).
 
@@ -78,9 +86,17 @@ The mRNA levels of Cyp11a1, Hsd3b1, Cyp17a1, and Hsd17b2 were lower at D30 in bo
 
 Thus, the expression of several genes encoding steroidogenic enzymes is decreased in vitro, notably that of Cyp17a1, necessary for the conversion of progesterone to androstenedione.
 
-## Increased intratesticular concentrations of progesterone and estradiol combined with decreased intratesticular concentration of androstenedione in organotypic cultures
+### Increased intratesticular concentrations of progesterone and estradiol combined with decreased intratesticular concentration of androstenedione in organotypic cultures
 
 We then analyzed the steroid hormone content in in vitro cultured testicular tissues. The concentrations of androstenedione, DHEA, and testosterone were measured by LC-MS/MS, and the concentrations of progesterone and estradiol were assessed by ELISA in both testicular samples and the culture media (Figure 3). DHEA was below the detection limit (<1 ng/mL) in all the samples examined (data not shown). The intratesticular concentrations of progesterone were significantly increased at D16 and D30 in both FT and CSF tissues compared to their respective in vivo controls (Figure 3A). In contrast, the intratesticular concentrations of androstenedione were significantly decreased at D16 in both FT and CSF tissues and at D30 in FT tissues compared to in vivo controls (Figure 3B). The intratesticular concentrations of testosterone were however not different in in vitro and in vivo matured tissues at both time points (Figure 3C). In addition, the intratesticular concentrations of estradiol were significantly higher at D16 and D30 in FT and CSF tissues than in their respective in vivo controls (Figure 3D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig3-v1.jpg)
+
+**Figure 3.:** Intratesticular concentrations of (A) progesterone, (B) androstenedione, (C) testosterone, and (D) estradiol during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured fresh (FT) or frozen/thawed (CSF) tissues (D16 and D30). Steroid concentrations were normalized to protein levels. (E–F) Concentrations of (E) progesterone, androstenedione, testosterone, and (F) estradiol in the culture medium of FT tissues. (G) Intratesticular concentrations of total, free, and esterified cholesterol normalized to tissue mass. Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Concentrations of androgens (androstenedione and testosterone) in the culture medium of fresh (FT) or frozen/thawed (CSF) testicular tissues. Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 and ***p<0.001 were considered statistically significant.
 
 In the organotypic culture medium, a significant increase in the concentrations of progesterone was observed at D26 only (Figure 3E). Furthermore, a significant elevation in the concentrations of androstenedione was observed from D16 to D30 (Figure 3E). Regarding testosterone, following a decrease in the levels of this androgen in the culture media between D2 and D14, an augmentation was then detected between D26 and D30 (Figure 3E). At D30, the concentrations of both androstenedione and testosterone were higher in the culture media of FT tissues than of CSF tissues (Figure 3—figure supplement 1). Regarding estradiol, no significant change in its concentrations was observed in the media between D6 and D30 (Figure 3F).
 
@@ -88,17 +104,17 @@ Since steroids are derived from cholesterol, intratesticular levels of total, fr
 
 Overall, our data show that the steroid content is altered in cultured testicular tissues, with an excess of free cholesterol, progesterone, and estradiol and a deficiency of androstenedione.
 
-## Androgen and estrogen signaling are altered in 30-day organotypic cultures
+### Androgen and estrogen signaling are altered in 30-day organotypic cultures
 
 The impact of imbalanced steroid hormone levels on downstream target gene expression was then investigated. The mRNA levels of actors of androgen and estrogen signaling were measured by RT-qPCR (Figures 4 and 5). The protein expression of the AR, aromatase (CYP19A1), and fatty acid amide hydrolase (FAAH whose expression is regulated by estrogen) was also assessed by western blot (Figures 4 and 5).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig4-v1.jpg)
 
-**Figure 4.:** (A) Relative mRNA levels of Ar (normalized to Gapdh and Actb) and (B) relative protein levels of androgen receptor (AR) (normalized to ACTB) during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured fresh testicular tissues (FT) or controlled slow freezing (CSF) tissues (D16 and D30). (C) Representative images of AR expression at 22 dpp and 36 dpp and at corresponding in vitro time points (D16 and D30). A representative image of a negative control is shown in Figure 2J (same secondary antibody as for CYP17A1). Testicular tissue sections were counterstained with Hoechst (blue). Solid arrowheads: peritubular myoid cells. Open arrowheads: Sertoli cells. Arrows: Leydig cells. Dotted lines delineate seminiferous tubules (ST). Scale: 15 µm. (D–G) Relative mRNA levels of Rhox5, Septin12, Eppin, and Abp (normalized to Gapdh and Actb). Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Relative mRNA levels of Ar (normalized to Gapdh and Actb) and (B) relative protein levels of androgen receptor (AR) (normalized to ACTB) during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured fresh testicular tissues (FT) or controlled slow freezing (CSF) tissues (D16 and D30). (C) Representative images of AR expression at 22 dpp and 36 dpp and at corresponding in vitro time points (D16 and D30). A representative image of a negative control is shown in Figure 2J (same secondary antibody as for CYP17A1). Testicular tissue sections were counterstained with Hoechst (blue). Solid arrowheads: peritubular myoid cells. Open arrowheads: Sertoli cells. Arrows: Leydig cells. Dotted lines delineate seminiferous tubules (ST). Scale: 15 µm. (D–G) Relative mRNA levels of Rhox5, Septin12, Eppin, and Abp (normalized to Gapdh and Actb). Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig5-v1.jpg)
 
-**Figure 5.:** (A) Relative mRNA levels of Cyp19a1 (normalized to Gapdh and Actb) and (B) relative protein levels of CYP19A1 (normalized to ACTB) during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured fresh testicular tissues (FT) or controlled slow freezing (CSF) tissues (D16 and D30). The bands on the western blot correspond to different isoforms of CYP19. (C) Representative images of CYP19A1 expression at 6 dpp, 22 dpp, and 36 dpp and at corresponding in vitro time points (D16 and D30). A representative image of a negative control, carried out by omitting the primary antibody, is also shown. Testicular tissue sections were counterstained with Hematoxylin. Scale: 15 µm. Arrow: Leydig cells. Arrowheads: elongated spermatids. (D) Aromatase activity (normalized to tissue weight). (E–G) Relative mRNA levels of Esr1, Esr2, and Gper1 (normalized to Gapdh and Actb). (H) Relative mRNA levels of Faah (normalized to Gapdh and Actb) and (I) relative protein levels of fatty acid amide hydrolase (FAAH) (normalized to ACTB). The second band at 80 kDa is an isoform of FAAH (Q8BRM1, UniProtKB). Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Relative mRNA levels of Cyp19a1 (normalized to Gapdh and Actb) and (B) relative protein levels of CYP19A1 (normalized to ACTB) during mouse postnatal development (6 dpp, 22 dpp, and 36 dpp) and in in vitro cultured fresh testicular tissues (FT) or controlled slow freezing (CSF) tissues (D16 and D30). The bands on the western blot correspond to different isoforms of CYP19. (C) Representative images of CYP19A1 expression at 6 dpp, 22 dpp, and 36 dpp and at corresponding in vitro time points (D16 and D30). A representative image of a negative control, carried out by omitting the primary antibody, is also shown. Testicular tissue sections were counterstained with Hematoxylin. Scale: 15 µm. Arrow: Leydig cells. Arrowheads: elongated spermatids. (D) Aromatase activity (normalized to tissue weight). (E–G) Relative mRNA levels of Esr1, Esr2, and Gper1 (normalized to Gapdh and Actb). (H) Relative mRNA levels of Faah (normalized to Gapdh and Actb) and (I) relative protein levels of fatty acid amide hydrolase (FAAH) (normalized to ACTB). The second band at 80 kDa is an isoform of FAAH (Q8BRM1, UniProtKB). Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant.
 
 The transcript levels of Ar, encoding the androgen receptor, were higher at D16 in FT tissues than at 22 dpp but were not significantly different between D30 and 36 dpp (Figure 4A). Conversely, AR protein levels were comparable at D16 in FT tissues and 22 dpp but were more elevated at D30 in both FT and CSF tissues than at 36 dpp (Figure 4B). Our immunofluorescence data showed that AR was expressed in Sertoli cells, peritubular myoid cells, and Leydig cells in 16 day and 30 day cultured tissues as well as in the corresponding in vivo controls (Figure 4C). The transcript levels of two AR-regulated genes (Rhox5, Eppin) and the AR/Erα-regulated gene Septin12 were decreased in FT and CSF tissues cultured for 16 days compared to 22 dpp (Figure 4D–F). At D30, Rhox5 and Septin12 mRNA levels were still lower than in vivo while Eppin mRNA levels were higher than at 36 dpp (Figure 4D–F). In addition, a significant increase in Abp mRNA levels was found at D16 and D30 in CSF but not in FT tissues (Figure 4G).
 
@@ -106,11 +122,23 @@ Intriguingly, the expression of Cyp19a1, encoding aromatase, was drastically dim
 
 Thus, the expression of many genes in the androgen and estrogen signaling pathways are deregulated under organotypic culture conditions.
 
-## hCG is insufficient to stimulate Leydig cell differentiation and to restore steroidogenesis and steroid hormone signaling
+### hCG is insufficient to stimulate Leydig cell differentiation and to restore steroidogenesis and steroid hormone signaling
 
 As LH is known to stimulate the differentiation of the adult Leydig cell lineage and steroidogenesis, we wondered whether supplementation of organotypic culture media with hCG (LH analog) could restore steroidogenesis to control levels. In order to determine the dose to be used, we examined the impact of different hCG concentrations (5 pM, 50 pM, 1 nM, 5 nM, or 50 nM) on the intratesticular concentrations of testosterone and the secretion of this hormone in the organotypic culture medium. Since the concentration of hCG leading to the best response (i.e. plateau of the dose-response curves for intratesticular and secreted testosterone) was 1 nM, we used this dose for the rest of the analyses (Figure 6—figure supplement 1).
 
 Upon supplementation with 1 nM hCG, intratesticular androstenedione levels were significantly increased at D30 in FT but not CSF tissues (Figure 6A). The intratesticular testosterone levels were higher at D30 in both FT and CSF tissues following hCG supplementation (Figure 6B). Moreover, a significant increase in androstenedione and testosterone concentrations was observed in the culture media of both FT and CSF tissues following hCG supplementation (Figure 6C–D). The amounts of androgens released into the culture media were, however, lower for CSF tissues than for FT tissues (Figure 6C–D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Levels of androgens (androstenedione and testosterone) (A–B) in testicular tissues and (C–D) in culture medium with 1 nM hCG or without supplementation. (E–S) Relative mRNA levels of genes involved in steroidogenesis and androgen/estrogen signaling pathways (normalized to Gapdh and Actb or to Hsd3b1) with or without hCG supplementation. (T) Proportion of seminiferous tubules containing the most advanced type of germ cells after in vitro culture with or without hCG. p<0.05: * vs 36 dpp and # vs D30 FT. (U) Sertoli cell number in seminiferous tubules after in vitro culture with or without hCG. Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05, **p<0.01 and ****p<0.0001 were considered statistically significant. FT: Fresh Tissue; CSF: Controlled Slow Freezing.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Concentrations of testosterone in the culture medium after supplementation with different hCG concentrations (5 pM, 50 pM, 1 nM, 5 nM, 50 nM) from D16 to D30. (B) Concentrations of testosterone in FT testicular tissues (D30) normalized to in vivo control (36 dpp) and in culture medium at D30 normalized to in vitro control without hCG, after supplementation with different hCG concentrations (5 pM, 50 pM, 1 nM, 5 nM, 50 nM). Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Relative mRNA levels of Leydig cell markers, actors of steroidogenesis, and androgen signaling (normalized to Gapdh and Actb or to Hsd3b1) after supplementation with 1 nM hCG. Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 and **p<0.01 were considered statistically significant.
 
 The addition of 1 nM hCG had no impact on the transcript levels of Star, Hsd17b3, Hsd3b1, Ar, and Esr1 in both FT and CSF cultures (Figure 6F, I, J, L and P). Hsd17b3 and Esr1 mRNA levels still remained lower upon hCG supplementation than in vivo (Figure 6I and P). No effect of hCG was also observed in FT cultures for Cyp17a1, Faah, Srd5a1, Sult1e1, Insl3, Igf1, Dhh, Abp, and Hsd17b2 mRNA levels (Figure 6I, J and S, Figure 6—figure supplement 2). Lhcgr, Cyp11a1, Cyp19a1, Esr2, and Gper1 mRNA levels were increased after hCG supplementation in FT cultures (Figure 6E, G–H, K, Q and R). Whereas Cyp11a1 and Cyp19a1 mRNA levels were still lower after hCG supplementation than in vivo (Figure 6G and K), Esr2 and Gper1 transcripts were restored to their physiological levels (Figure 6Q–R). In contrast, mRNA levels of Rhox5, Eppin, Septin12, and Igf1 were decreased after hCG supplementation in FT cultures, with Rhox5 and Septin12 transcript levels lower than those observed in vivo (Figure 6M–O).
 
@@ -128,7 +156,7 @@ Leydig cell functionality was also altered in organotypic cultures. Indeed, the 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig7-v1.jpg)
 
-**Figure 7.:** in vitro matured testicular tissues of prepubertal mice.A similar density of Leydig cells is found after 30 days of organotypic culture (D30) and at 36 days postpartum, the corresponding in vivo time point. However, Leydig cells are partially mature in vitro with a decrease in Sult1e1 and Insl3 mRNA levels (adult Leydig cell markers). The mRNA levels of Cyp11a1, Cyp17a1, and Hsd17b3 encoding steroidogenic enzymes and the protein levels of CYP17A1 are decreased in vitro. Increased amounts of cholesterol, progesterone and estradiol, and decreased androstenedione intratesticular levels are observed at D30. Furthermore, despite testosterone levels similar to in vivo, the expression of the androgen receptor (AR) and of the androgen binding protein (Abp), androgen signaling is altered at D30, with decreased transcript levels of the androgen target gene Rhox5 and of Septin12. Moreover, with decreased expression and activity of aromatase and decreased estrogen receptor expression, estrogen signaling is impaired at D30, leading to decreased transcript and protein levels of the estrogen target gene Faah.
+**Figure 7.:** A similar density of Leydig cells is found after 30 days of organotypic culture (D30) and at 36 days postpartum, the corresponding in vivo time point. However, Leydig cells are partially mature in vitro with a decrease in Sult1e1 and Insl3 mRNA levels (adult Leydig cell markers). The mRNA levels of Cyp11a1, Cyp17a1, and Hsd17b3 encoding steroidogenic enzymes and the protein levels of CYP17A1 are decreased in vitro. Increased amounts of cholesterol, progesterone and estradiol, and decreased androstenedione intratesticular levels are observed at D30. Furthermore, despite testosterone levels similar to in vivo, the expression of the androgen receptor (AR) and of the androgen binding protein (Abp), androgen signaling is altered at D30, with decreased transcript levels of the androgen target gene Rhox5 and of Septin12. Moreover, with decreased expression and activity of aromatase and decreased estrogen receptor expression, estrogen signaling is impaired at D30, leading to decreased transcript and protein levels of the estrogen target gene Faah.
 
 Our work also revealed an elevation in progesterone and a reduction in androstenedione in in vitro matured tissues (Figure 7), which could arise from the reduced expression of Cyp17a1. A greater sperm production has been highlighted in PRKO mice (lacking the progesterone receptor), thereby showing the inhibitory action of progesterone on spermatogenesis (Lue et al., 2013). The cumulative excess of progesterone and estradiol in cultured testicular tissues may, therefore, slow the progression of in vitro spermatogenesis and lead to a poor sperm yield.
 
@@ -142,100 +170,307 @@ In conclusion, the present study shows the partial maturation and the disturbed 
 
 ## Materials and methods
 
-## Mice and testis collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus, male)</td>
+      <td>Testis</td>
+      <td>CD-1 Mice from Charles River</td>
+      <td></td>
+      <td>Freshly isolated from male Mus musculus (CD-1)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-3β-HSD (mouse monoclonal)</td>
+      <td>Santa Cruz Biot.</td>
+      <td>sc-515120 (AF488)</td>
+      <td>IF (1:100), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Actin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab8226</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AR (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab133273</td>
+      <td>IF (1:100), WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CC3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab49822</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CYP17A1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab231794</td>
+      <td>IF (1:200), WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CYP19A1 (mouse monoclonal)</td>
+      <td>BioRad</td>
+      <td>MCA2077S</td>
+      <td>IHC (1:50), WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FAAH (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17909–1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab16667</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa 488 (goat)</td>
+      <td>Abcam</td>
+      <td>ab150113</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 488 (goat)</td>
+      <td>Abcam</td>
+      <td>ab150077</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 594 (goat)</td>
+      <td>Abcam</td>
+      <td>ab150080</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse HRP (goat)</td>
+      <td>Invitrogen</td>
+      <td>31430</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit HRP (goat)</td>
+      <td>Invitrogen</td>
+      <td>A16110</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro kit</td>
+      <td>Qiagen</td>
+      <td>74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qScript cDNA SuperMix</td>
+      <td>QuantaBio</td>
+      <td>95048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipid Extraction kit</td>
+      <td>Abcam</td>
+      <td>ab211044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cholesterol/Cholesteryl Ester assay kit</td>
+      <td>Abcam</td>
+      <td>ab65359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Progesterone ELISA kit</td>
+      <td>Cayman Chemical Company</td>
+      <td>582601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Estradiol ELISA kit</td>
+      <td>Cayman Chemical Company</td>
+      <td>501890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Aromatase (CYP19A) Activity assay kit</td>
+      <td>Abcam</td>
+      <td>ab273306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>INSL3 RIA kit</td>
+      <td>Phoenix Pharmaceuticals</td>
+      <td>RK-035–27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KSR</td>
+      <td>Gibco by Life Technologies</td>
+      <td>10828010</td>
+      <td>(10%)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retinol</td>
+      <td>Sigma-Aldrich</td>
+      <td>R7632</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>hCG</td>
+      <td>MSD France</td>
+      <td>Ovitrelle</td>
+      <td>1 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYBR Green</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>4385616</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and testis collection
 
 CD-1 mice (Charles River Laboratories, L’Arbresle, France) were housed in a temperature-controlled room (22–23°C) under a 12 hr light/dark cycle. Prepubertal 6 day postpartum (dpp) male mice were euthanized by decapitation and underwent a bilateral orchiectomy. Testes were transferred to Petri dishes containing α-MEM without phenol red (Gibco by Life Technologies, Saint-Aubin, France) and the complete removal of the tunica albuginea was performed with two needles under a binocular magnifier (S8AP0, Leica Microsystems GmbH, Wetzlar, Germany). Testes were then either cultured immediately (culture from fresh tissues), or after a freezing/thawing cycle (Figure 8). Moreover, mice aged 22 and 36 dpp were euthanized by CO2 asphyxiation and their testes were used as in vivo controls for 16 and 30 days of culture, respectively (Figure 8).
 
-## Controlled slow freezing (CSF) and thawing of testicular tissues
+![Figure 8.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig8-v1.jpg)
 
-## Freezing procedure
+**Figure 8.:** At 6 dpp (D0), the testis contains only spermatogonia and the initiation of meiosis occurs between 7 and 9 dpp. At 22 dpp (D16), meiosis ends and the first round of spermatids appear. At 36 dpp (D30), the first spermatozoa appear and this is the end of the first spermatogenic wave. Arrows represent times at which the medium was collected (D0, D2, D6, D10, D14, D18, D22, D26, and D30). BM: Basal Medium; CSF: Controlled Slow Freezing; dpp: days postpartum; hCG: human Chorionic Gonadotropin; KSR: KnockOut Serum replacement; PR-: without phenol red; Rol: retinol.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/85562/elife-85562-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Testicular tissue area (in mm²) measured on tissue sections from mice of different ages (6 dpp, 22 dpp, and 36 dpp) and after 16 days (D16) or 30 days (D30) of organotypic cultures. (B) Necrotic region (percentage of the tissue section area) at D16 and D30. (C–D) Representative images of cleaved caspase 3 (CC3) immunostaining, mostly detected in the central necrotic region (dotted lines). Testicular tissue sections were counterstained with Hoechst (blue). Scale: 100 µm. (E–F) Representative images of periodic acid schiff (PAS) staining, with the necrotic area delineated by dotted lines. Testicular tissue sections were counterstained with hematoxylin. Scale: 200 µm. Data are presented as means ± SEM with n=4 biological replicates for each group. A value of *p<0.05 was considered statistically significant. FT: Fresh Tissue; CSF: Controlled Slow Freezing.
+
+### Controlled slow freezing (CSF) and thawing of testicular tissues
+
+#### Freezing procedure
 
 Testes were placed into cryovials (Dominique Deutscher, Brumath, France) containing 1.5 mL of the following cryoprotective medium: Leibovitz L15 medium (Eurobio, Courtabœuf, France) supplemented with 1.5 M dimethylsulfoxide (DMSO, Sigma-Aldrich, Saint-Quentin Fallavier, France), 0.05 M sucrose (Sigma-Aldrich), 10% (v/v) fetal calf serum (FCS, Life Technologies) and 3.4 mM vitamin E (Sigma-Aldrich) (Milazzo et al., 2008). After a 30 min equilibration at 4 °C, samples were frozen in a programmable freezer (Nano Digitcool, CryoBioSystem, L’Aigle, France) with a CSF protocol: start at 5 °C, then –2 °C/min until reaching –9 °C, stabilization at –9 °C for 7 min, then –0.3 °C/min until –40 °C and –10 °C/min down to –140 °C. Testicular tissues were then plunged and stored in liquid nitrogen.
 
-## Thawing procedure
+#### Thawing procedure
 
 Cryotubes were warmed for 1 min at room temperature (RT) and then for 3 min in a water bath at 30 °C. They were then successively incubated at 4 °C in solutions containing decreasing concentrations of cryoprotectants for 5 min each [solution 1: 1 M DMSO, 0.05 M sucrose, 10% FCS, 3.4 mM vitamin E, Leibovitz L15; solution 2: 0.5 M DMSO, 0.05 M sucrose, 10% FCS, 3.4 mM vitamin E, Leibovitz L15; solution 3: 0.05 M sucrose, 10% FCS, 3.4 mM vitamin E, Leibovitz L15; solution 4: 10% FCS, 3.4 mM vitamin E, Leibovitz L15].
 
-## Organotypic cultures at a gas-liquid interphase
+#### Organotypic cultures at a gas-liquid interphase
 
 In vitro tissue cultures were performed as previously described (Sato et al., 2011; Arkoun et al., 2015). Briefly, prepubertal 6 day old mouse testes, which contain spermatogonia as the most advanced type of germ cells, were first cut into four fragments (approximately 0.75 mm3 each, which was previously determined to be the most appropriate size for mouse in vitro spermatogenesis) (Dumont et al., 2016). They were placed on top of two 1.5% (w/v) agarose Type I gels (Sigma-Aldrich) half-soaked in a medium. Testicular tissues were then cultured under 5% CO2 at 34 °C for 16 days (D16), which corresponds to the end of meiosis and the appearance of the first round of spermatids, or 30 days (D30) to explore the end of the first spermatogenic wave. No growth of the fragments was observed during the organotypic culture period (Figure 8—figure supplement 1A). The basal medium (BM) contained α-MEM without phenol red, 10% KSR (KnockOut Serum Replacement, Gibco by Life Technologies), 0.1 mg/mL streptomycin, and 100 UI/mL penicillin (Sigma-Aldrich). The medium was chosen without phenol red because of its estrogen activity (Berthois et al., 1986). Retinol (10–6 M, Sigma-Aldrich) was added in all organotypic cultures from D2 and then every 8 days in order to respect the meiosis entry cycle of spermatogonia (Arkoun et al., 2015). Furthermore, the basal medium was supplemented or not with 1 nM hCG (human Chorionic Gonadotropin, MSD France, Courbevoie, France) from D16 in order to stimulate Leydig cell differentiation and assess Leydig cell functionality. Media were prepared just before use and were replaced twice a week.
 
-## Histological analyses
+### Histological analyses
 
-## Tissue fixation, processing, and sectioning
+#### Tissue fixation, processing, and sectioning
 
 Testicular tissues were fixed with Bouin’s solution (Sigma-Aldrich) or 4% paraformaldehyde (PFA, Sigma-Aldrich) for 2 hr at room temperature. They were then dehydrated in ethanol in the Citadel 2000 tissue processor (Shandon, Cheshire, UK) and embedded in paraffin. Tissue sections (3 μm thick) were prepared with the RM2125 RTS microtome (Leica) and were mounted on Polysine slides (Thermo Fisher Scientific, Waltham, MA, USA).
 
-## Periodic acid schiff (PAS) reaction
+#### Periodic acid schiff (PAS) reaction
 
 A PAS reaction was then performed on in vitro matured tissues. Tissue sections were deparaffinized in xylene and rehydrated in decreasing concentrations of ethanol. Slides were then immersed in 0.5% periodic acid (Thermo Fisher Scientific) for 10 min, rinsed for 5 min in water, and then placed for 30 min in the Schiff reagent (Merck, Darmstadt, Germany). After three 2 min washes in water, sections were counterstained with Mayer’s hematoxylin and mounted with Eukitt (CML, Nemours, France). Images were acquired on a DM4000B microscope (Leica) at a 400x magnification. The most advanced type of germ cells present in the testicular fragments was analyzed in at least 30 cross-sectioned seminiferous tubules (located at the periphery of the cultured fragments, i.e., outside of the necrotic region) (Figure 8—figure supplement 1E–F) from two sections with the Application Suite Core v2.4 software (Leica).
 
-## Immunofluorescence staining
+#### Immunofluorescence staining
 
 After deparaffinization, rehydration and a 3 min wash in phosphate-buffered saline (PBS, Sigma-Aldrich), tissue sections were boiled in 10 mM citrate buffer pH 6.0 (Diapath, Martinengo, Italy) for 40 min at 96 °C. They were cooled for 20 min at RT and rinsed in distilled water for 5 min. A permeabilization step with 0.1% (v/v) Triton X-100 (Sigma-Aldrich) was performed at RT for 15 min for Ki67/3β-HSD immunostaining. Non-specific sites were blocked with 5% (w/v) bovine serum albumin (BSA, Sigma-Aldrich) and 5% (v/v) horse serum (Sigma-Aldrich). Slides were then incubated in a humidified environment with primary antibodies (Supplementary file 1a), rinsed three times in PBST (PBS with 0.05% Tween-20), and incubated with appropriate secondary antibodies (Supplementary file 1a). For Ki67/3β-HSD, a sequential protocol was performed as follows: incubation with anti-Ki67 antibodies overnight at 4 °C, incubation with secondary antibodies coupled to Alexa 594 for 60 min at RT, fixation with 4% PFA for 15 min at RT, and incubation with anti-3β-HSD antibodies directly coupled to Alexa 488 for 90 min at RT. Negative controls were carried out by omitting the primary antibodies. Sections were washed, dehydrated with ethanol, and mounted in Vectashield with Hoechst. Images were acquired on a THUNDER Imager 3D Tissue microscope (Leica) at a 400x magnification. Leydig cell number (3β-HSD+) was normalized to tissue area (cm²).
 
-## Immunohistochemical staining
+#### Immunohistochemical staining
 
 After deparaffinization and rehydration, endogenous peroxidases were blocked with HP Block (Dako, Les Ulis, France) for 30 min, and non-specific binding sites were blocked with Ultra-V Block solution (Thermo Fisher Scientific) for 10 min at RT. Tissue sections were then incubated overnight at 4 °C with anti-CYP19A1 antibodies (Supplementary file 1a). After three 5 min washes in PBS, they were incubated for 10 min at RT with biotinylated polyvalent secondary antibodies (UltraVision Detection System HRP kit, Thermo Fisher Scientific). After three 5 min washes in PBS, a 10 min incubation at RT with streptavidin associated with peroxidase (UltraVision Detection System HRP kit, Thermo Fisher Scientific) was performed. The labeling was revealed after the application of a chromogenic substrate (EnVision FLEX HRP Magenta Chromogen, Dako) for 10 min at RT. A negative control was carried out by omitting the primary antibody.
 
-## RNA extraction and RT-qPCR
+### RNA extraction and RT-qPCR
 
-## RNA extraction
+#### RNA extraction
 
 Total RNA was extracted from testicular samples using the RNeasy Micro kit (Qiagen, Courtabœuf, France) according to the manufacturer’s instructions. For in vitro cultured tissues, the central necrotic area (16–27% of the explants, Figure 8—figure supplement 1B–F) was carefully removed before RNA extraction, so that transcript levels in the healthy part of the samples (i.e. where in vitro spermatogenesis occurs) could be measured and compared with in vivo controls. To avoid contamination with genomic DNA, extracted RNA was incubated with two units of TURBO DNase (Life Technologies) for 45 min at 37 °C. The amount of the RNA samples was measured with a NanoDrop Spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA) and purity was determined by calculating the ratio of optical densities at 260 nm and 280 nm.
 
-## Reverse transcription
+#### Reverse transcription
 
 The reverse transcription reaction was performed in a 96-well plate from 1 μg total RNA with 4 μL of qScript cDNA SuperMix 5 X (QuantaBio, Gaithersburg, MD, USA) and ribonuclease-free water to adjust the volume to 20 μL. Reverse transcription was performed according to the following program: 5 min at 25 °C, 30 min at 42 °C, and 5 min at 85 °C. The complementary DNA (cDNA) obtained was diluted 1:10.
 
-## Polymerase chain reaction
+#### Polymerase chain reaction
 
 cDNA amplifications were carried out in a total volume of 13 μL containing 6 ng of cDNA templates, 6.5 μL of SYBR Green (Thermo Fisher Scientific), and 300 nM of each primer. Specific primers are listed in Supplementary file 1b. Samples were dispensed using the Bravo pipetting robot (Agilent Technologies, Santa Clara, CA, USA). Reactions were performed in 384-well plates (Life Technologies) in a Quant Studio 12 K Flex system. The amplification condition was 20 s at 95 °C followed by 40 cycles (1 s at 95 °C, 20 s at 60 °C) and a final step of denaturation of 15 s at 95 °C, 1 min at 60 °C and 15 s at 95 °C. Melting curves were obtained to ensure the specificity of PCR amplifications. The size of the amplicons was verified by agarose gel electrophoresis (E-gel 4%, Life Technologies). The relative expression level of each gene was normalized to two housekeeping genes as recommended by the MIQE guidelines (Bustin et al., 2009): Gapdh and Actb, which were identified and validated as the most stable and suitable genes for RT-qPCR analysis in mouse testis development (Gong et al., 2014). 3β-hydroxysteroid dehydrogenase (Hsd3b1), a selective Leydig cell marker, has been used as a normalization factor for the analysis of genes expressed in Leydig cells (Cacciola et al., 2013). Data were analyzed using the 2−ΔΔCt method (Livak and Schmittgen, 2001).
 
-## Western blot
+### Western blot
 
-## Protein extraction
+#### Protein extraction
 
 Testes were homogenized in ice-cold RIPA buffer (50 mM Tris HCl, 0.5% cholic acid, 0.1% SDS, 150 mM NaCl) containing a protease inhibitor cocktail (Sigma-Aldrich). For in vitro cultured tissues, the central necrotic area was carefully removed before protein extraction.
 
-## Determination of protein concentration by the Bradford method
+#### Determination of protein concentration by the Bradford method
 
 Total protein concentration was measured in the homogenates. The assay was performed in a 96-well plate in a final volume of 200 µL containing the sample and Bradford’s solution (BioRad, Marnes-la-Coquette, France). After a 5 min incubation at RT, the optical density at 595 nm was measured using a Spark spectrophotometer (Tecan, Lyon, France).
 
-## Western blot
+#### Western blot
 
 Protein extracts (20 μg) were separated on 12% resolving polyacrylamide gels (BioRad) and transferred onto nitrocellulose membranes (BioRad). The membranes were blocked with 5% milk or 5% BSA in TBST (0.2% Tween-20 in Tris Buffered Saline) for 30 min at 37 °C before incubation overnight at 4 °C with the appropriate primary antibody (Supplementary file 1a). After washes, membranes were incubated with the appropriate HRP-conjugated secondary antibodies (Supplementary file 1a). ECL reagents (BioRad) were used to detect the immunoreactivity. Images were captured with the ChemiDoc XRS + Imaging System (BioRad). Densitometric analyses were performed using Image Lab v5.0 software (BioRad) and protein levels were normalized to β-actin or to the Leydig cell-specific marker 3β-HSD.
 
-## Intratesticular cholesterol levels
+#### Intratesticular cholesterol levels
 
 Total testicular lipids were extracted from ~10 mg tissue with a Lipid Extraction kit (ab211044; Abcam, Paris, France) according to the manufacturer’s instructions. Dried lipid extracts were reconstituted in 200 µL of assay buffer. Intratesticular levels of total, free, and esterified cholesterol were measured with a colorimetric Cholesterol/Cholesteryl Ester assay kit (ab65359; Abcam) according to the manufacturer’s instructions.
 
-## Hormonal assays
+### Hormonal assays
 
-## Sample preparation for liquid chromatography coupled to mass spectrometry (LC-MS/MS)
+#### Sample preparation for liquid chromatography coupled to mass spectrometry (LC-MS/MS)
 
 Testicular fragments were homogenized in 200 µL (6 dpp tissues and in vitro matured tissues) or 400 µL (22 dpp and 36 dpp tissues) of 0.1 M phosphate buffer pH 7.4 with a cocktail of protease inhibitors (Sigma-Aldrich). Total protein concentration was measured as described above.
 
-## LC-MS/MS
+### LC-MS/MS
 
 The standards for androstenedione, testosterone, dehydroepiandrosterone (DHEA), and their stable labeled isotopes were obtained from Merck. Working solutions were prepared in methanol. Serial dilutions from working solutions were used to prepare seven-point calibration curves and three quality control levels for all analytes. For the final calibration and quality control solutions, PBS was used for testicular fragments and α-MEM for the medium. The linearity ranges were from 0.05 to 10 ng/mL for androstenedione and testosterone, and from 1 to 200 ng/mL for DHEA. A simple deproteinization was carried out by an automated sample preparation system, the CLAM-2030 (Shimadzu Corporation, Marne-la-Vallée, France) coupled with a 2D-UHPLC-MS/MS system. Once the sample was on board, 30 µL was automatically pipetted in a pre-conditioned tube containing a filter, in which reagents were added, then mixed and filtered. Briefly, the polytetrafluoroethylene (PTFE) filter vial (0.45 μm pore size) was previously conditioned with 20 μL of methanol (Carlo Erba, Val-de-Reuil, France). Successively, 30 μL of sample and 60 μL of a mixture of isotopically labeled internal standards in acetonitrile were added. The mixture was agitated for 120 s (1900 rpm), then filtered by application of vacuum pressure (−60 to –65 kPa) for 120 s into a collection vial. Finally, 30 µL of the extract was injected into the 2D-UHPLC-MS/MS system.
 
 Analysis was performed on a two dimensions ultra-performance liquid chromatograph-tandem mass spectrometer (2D-UHPLC-MS/MS) consisting of the following Shimadzu modules (Shimadzu Corporation): an isocratic pump LC20AD SP, for pre-treatment mode, a binary pump consisting of coupling two isocratic pumps Nexera LC30AD for the analytical mode, an automated sampler SIL-30AC, a column oven CTO-20AC and a triple-quadrupole mass spectrometer LCMS-8060. The assay was broken down into two stages. The first was the pre-treatment where the sample was loaded on the perfusion column. The second step was the elution of the compounds of interest to the analytical column. The deproteinized extract performed by the CLAM-2030 was automatically transferred to the automated sampler, where 30 µL was directly analyzed into the chromatographic system. The LC-integrated online sample clean-up was performed using a perfusion column Shimadzu MAYI-ODS (5 mm L × 2 mm I.D.). The first step consisted of loading the extract on the perfusion column with a mobile phase composed of 10 mM ammonium formate in water (Carlo Erba) at a flow rate of 0.5 mL/min for 2 min. Then the system switched to the analytical step to elute the analytes from the perfusion column to the analytical column to achieve chromatographic separation. During this step, the loading line was washed with propan-2-ol (Carlo Erba) for 3 min. Chromatographic separation was achieved on a Restek Raptor Biphenyl (50 mm L × 3 mm I.D., 2.7 μm) maintained at 40 °C and a gradient of (A) 1 mM ammonium fluoride buffer in water (Carlo Erba) and (B) methanol (Carlo Erba) at a flow rate of 0.675 mL/min as follows: 0.0–2.10 min, 5% (B); 2.1–3.0 min, 5–65% (B); 3.0–4.75 min, 65% (B); 4.75–5.0 min, 65–70% (B); 5.0–6.6 min, 70% (B); 6.6–8.0, 70–75% (B); 8.0–8.5 min, 75–100% (B); 8.50–9.5 min, 100% (B); 9.5–9.6 min, 100–5% (B); 9.6–12.0 min, 5% (B). Detection and quantification were performed by scheduled- Multiple Reaction Monitoring (MRM) using 1ms pause time and 50ms dwell times to achieve sufficient points per peak. The interface parameters and common settings were as follows: interface voltage: 1 kV; nebulizing gas flow: 3 L/min; heating gas flow: 10 L/min; drying gas flow: 10 L/min; interface temperature: 400 °C; desolvation line (DL) temperature: 150 °C; heat block temperature: 500 °C; collision gas pressure 300 kPa. Compound-specific MRM parameters are shown in Supplementary file 1c.
 
-## Enzyme-linked immunosorbent assay (ELISA)
+### Enzyme-linked immunosorbent assay (ELISA)
 
 Steroids were extracted from testicular homogenates and from organotypic culture media with five volumes of diethyl ether (Carlo Erba). The organic phase was then recovered and evaporated in a water bath at 37 °C. The tubes were stored at –20 °C until use.
 
 Progesterone and estradiol levels were measured in 50 µL of testicular homogenates and in 50 µL of culture media using Cayman ELISA kit (582601 for progesterone and 501890 for estradiol, Cayman Chemical Company, Ann Arbor, MI, USA), according to the supplier’s recommendations. The sensitivity limit for the progesterone assay was 10 pg/mL with average intra- and inter-trial variations of 13.9% and 9.6%, respectively. The sensitivity limit for the estradiol assay was 20 pg/mL and the lower limit of detection was 6 pg/mL with average intra- and inter-trial variations of 20.25% and 14.975%, respectively.
 
-## Aromatase activity
+### Aromatase activity
 
 After homogenization of ~10–50 mg of tissues in 500 μL of Aromatase Assay Buffer, the aromatase activity was measured with the fluorometric Aromatase (CYP19A) Activity assay kit (ab273306; Abcam) according to the manufacturer’s instructions.
 
-## Radioimmunoassay (RIA)
+### Radioimmunoassay (RIA)
 
 INSL3 was assayed by using RIA kit with 125I as a tracer (RK-035–27, Phoenix Pharmaceuticals, Strasbourg, France). According to the manufacturer’s instructions, analyses were performed on 100 μL of culture media or tissue homogenates. Assay validation was assessed by determining the recovery of expected amounts of INSL3 in samples to which exogenous INSL3 was added. The sensitivity of the INSL3 RIA kit was 60.4 pg/mL and the range of the assay was 10–1280 pg/mL.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were carried out with GraphPad Prism 8 software (GraphPad Software Inc, La Jolla, CA, USA). Data are presented as means ± SEM. The non-parametric Mann-Whitney test was used to compare in vitro cultures and in vivo controls (D16 FT vs 22 dpp, D16 CSF vs 22 dpp, D30 FT vs 36 dpp, D30 CSF vs 36 dpp, D30 FT + hCG vs 36 dpp, D30 CSF + hCG vs 36 dpp); cultures of fresh and CSF tissues (6 dpp vs 6 dpp CSF, D16 FT vs D16 CSF, D30 FT vs D30 CSF, D30 FT + hCG vs D30 CSF + hCG); cultures with or without hCG (D30 FT + hCG vs D30 FT, D30 CSF + hCG vs D30 CSF). A value of p<0.05 was considered statistically significant.

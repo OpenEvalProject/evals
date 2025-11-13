@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05qwgg493 Department of Biomedical Engineering, Boston University Boston United States
-2. https://ror.org/05qwgg493 Biological Design Center, Boston University Boston United States
+1. Department of Biomedical Engineering, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
+2. Biological Design Center, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
 
 † Corresponding author
 
@@ -32,11 +32,51 @@ Here, we develop LOVdeg, a modular protein tag based on the AsLOV2 protein that 
 
 ## Results
 
-## Design and characterization of the AsLOV2-based degradation tag
+### Design and characterization of the AsLOV2-based degradation tag
 
 The E. coli proteasome consists of five AAA+ proteases and is continuously active, either degrading misfolded proteins for quality control or balancing regulatory protein levels (Mahmoud and Chien, 2018). We set out to exploit the endogenous proteasome activity in order to design a light-responsive protein tag. To do this, we took insight from studies related to native protein quality control. In bacteria, peptides from stalled ribosomes are targeted for degradation through interaction with a tmRNA that appends a short amino acid sequence, known as an SsrA tag, to the C-terminal end of the incomplete protein (Keiler, 2015). The E. coli SsrA tag has been studied extensively and is known to interact with the unfoldases ClpX and ClpA (Flynn et al., 2001; Gottesman et al., 1998). Addition of the SsrA peptide sequence to exogenous proteins targets them for degradation by the host proteasome. SsrA-mediated degradation has proven useful in synthetic gene circuit function and biochemical production (Elowitz, 2000; Gurbatri et al., 2020; Stricker et al., 2008; Torella et al., 2013; Ye et al., 2021). A recent structural study of ClpX interacting with the SsrA tag from Fei et al., 2020 demonstrated that in order for ClpX to unfold a tagged protein, the C-terminal tail needs to be unstructured and sufficiently long to fit into the ClpX pore. We reasoned that the mechanism of AsLOV2, in which the C-terminal Jα helix becomes unstructured upon blue light absorption, could be utilized to provide light-inducible protein degradation.
 
 Biochemical studies have probed the amino acid sequence of the SsrA tag and its role in degradation targeting. Flynn et al., 2001 demonstrated that ClpA and ClpX unfoldases interact with overlapping residues within the SsrA sequence and that the last three amino acids (L-A-A) are particularly important for successful degradation. Importantly, they also showed that mutation of the leucine in the C-terminal ‘L-A-A’ lowers unfoldase affinity but does not hinder degradation completely. We noticed that the C-terminal amino acid sequence of the AsLOV2 domain, comprised of residues 404–546 of Avena sativa phototropin 1, are ‘E-A-A’ at positions 541–543 (Figure 1a). The dark state structure of the native AsLOV2 domain (PDB: 2V1A) shows that these three amino acids and K544 complete the folded Jα helix (Figure 1b). A truncation of residues 544–546 leaves the Jα helix largely intact and the resulting C-terminal ‘E-A-A’ remains caged as part of the folded helix as seen upon examination of the dark state structure (Figure 1b). We hypothesized that this truncation would be stable in the dark state as a consequence of ‘E-A-A’ caging and unstable in the light state due to Jα helix unfolding and exposure of an unstructured degradation tag.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-v1.jpg)
+
+**Figure 1.:** (a) Primary sequence of AsLOV2(546) C-terminal sequence. A three amino acid truncation exposes E-A-A. (b) Structure of AsLOV2 (aa404-546, PDB: 2V1A). Amino acids 541–543 (E-A-A) are red and 544–546 (K-E-L) are gray at the C-terminal of the Jα helix. (c) Construct used to characterize optogenetic control using AsLOV2 variants. Each variant is translationally fused to mCherry expressed from an IPTG-inducible promoter. Variants include wild-type AsLOV2 (light blue) and a dark state-stabilized version, AsLOV2* (dark blue), with and without the three amino acid truncation. (d) mCherry protein levels in response to 465 nm blue light for wild-type AsLOV2, and mutated AsLOV2* fusions with and without truncation. AsLOV2*(543) is the variant we denote the ‘LOVdeg’ tag. (***p<0.0001; **p<0.001; *p<0.01; n.s., not significant; two-tailed unpaired t-test; n = 3 biological replicates). (e) mCherry-LOVdeg in response to variable light intensities. (f) mCherry fluorescence levels and optical density of mCherry-LOVdeg with 4 hr of 465 nm blue light exposure applied at different points in the growth cycle. Light exposure programs are plotted above each subplot and are staggered 2 hr apart (starting at 2, 4, 6, or 8 hr), all lasting 4 hr. Expression levels are normalized to the dark state control (Figure 1—figure supplement 8). Error bars show standard deviation around the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Unfoldases and proteases of the E. coli proteasome. (b) Light-dependent stability of constitutively expressed mCherry fusions with truncated (AsLOV2*(543), LOVdeg) and non-truncated (AsLOV2*(546)) tags in strains lacking endogenous unfoldases or proteases. (c) Fold change degradation of mCherry-LOVdeg (i.e., mCherry-AsLOV2*(543)) in strains lacking endogenous unfoldases. Fold change compares ratio of dark to light states. (d) Expression of mCherry-LOVdeg over time under light exposure in wild-type cells or cells overexpressing ClpA. Fluorescence signal is normalized to expression of cells kept in the dark (***p<0.0001, comparison between data at the same time point, two-tailed unpaired t-test). Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Fluorescence signal is normalized to expression of cells kept in the dark. Error bars show standard deviation around the mean (n = 3 biological replicates). ClpA expression data is the same as that shown in Figure 1—figure supplement 3 and included for comparison.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (a) mCherry protein levels in response to dark or 465 nm blue light. (b) Culture densities (OD600) of strains from (a). Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** This curve is used to normalize data in Figure 1f at each time point so that it is possible to see relative decreases in protein levels. Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** (a) Alignment of iLID modified to contain a full-length SsrA tag and the LOVdeg tag. (b) Protein-level comparison between mCherry-LOVdeg and an analog with a constitutively active SsrA tag. Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig1-figsupp10-v1.jpg)
 
 Optogenetic systems have used the AsLOV2 domain in E. coli; however, it is often appended N-terminally or internally to another protein (Li et al., 2022; Strickland et al., 2008). To the best of our knowledge, wild-type or truncated AsLOV2, with its C-terminal end exposed, have not been used for proteolytic degradation in bacterial cells. To test the stability of C-terminal AsLOV2 in E. coli in response to light, we constructed a plasmid where we used an IPTG-inducible promoter to control the expression of mCherry translationally fused to AsLOV2 (Figure 1c). In this construct, the full C-terminal sequence is intact so unfoldases are not expected to have good access for protein degradation. Consistent with this, induction of mCherry-AsLOV2(546) with IPTG increased expression of the fusion construct, and 465 nm blue light induction resulted in only a modest decrease in expression (Figure 1d). Next, we tested a version of the construct where three amino acids were truncated to expose the C-terminal ‘E-A-A’, AsLOV2(543). This construct destabilized the protein fusion as predicted, resulting in significantly lower protein expression compared to the non-truncated version (Figure 1d). However, counter to our expectations, we observed only a modest decrease in protein levels upon blue light induction.
 
@@ -50,11 +90,23 @@ To benchmark the degradation capacity of the LOVdeg tag, we compared it to prote
 
 A potential concern is that light-induced disorder of the Jα helix could result in a decrease in solubility and aggregation of the LOVdeg tag. To rule this out as the cause of the fluorescence decrease, we captured microscopy images of cells in dark and light conditions. The imaging confirmed a light-dependent decrease in mCherry expression without the formation of visible protein aggregates (Figure 1—figure supplement 10). Thus, the LOVdeg tag variant provides blue light-dependent protein degradation.
 
-## Modularity of the LOVdeg tag
+### Modularity of the LOVdeg tag
 
 Post-translational control of protein function can require significant protein engineering for each use case (Sheets et al., 2020; Tague et al., 2023; Zhu et al., 2023). Degradation tags, by contrast, offer post-translational control that theoretically requires little to no protein engineering and is protein agnostic. To test the modularity of the LOVdeg tag, we incorporated optogenetic control into three systems with highly diverse functions and relevance to synthetic biology and biotechnology applications: the LacI repressor, CRISPRa activation, and the AcrB efflux pump.
 
 First, we sought to test whether the LOVdeg tag could be fused to transcription factors to enable light-dependent regulation. The LacI repressor is a widely used chemically inducible system in synthetic biology. We translationally fused the LOVdeg tag to LacI and paired it with a reporter where the LacUV5 promoter controls expression of mCherry (Figure 2a). Our results show that light exposure successfully increased mCherry expression (Figure 2b). Light-induced mCherry expression did not achieve the full levels provided with saturating IPTG induction; however, we still observed a notable increase. We tested an alternative strategy for further improving de-repression, which suggested that the discrepancy between IPTG versus light-dependent induction likely stems from the delay in LacI degradation compared to the rapid allosteric action of IPTG (Supplementary text, Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig2-v1.jpg)
+
+**Figure 2.:** (a) Control of mCherry repression using a LacI-LOVdeg fusion. (b) mCherry expression in response to light exposure for strains with LacI-LOVdeg compared to IPTG induction (**p<0.001, two-tailed unpaired t-test). (c) Schematic of SoxS-based CRISPRa activation with a LOVdeg tag appended to the MCP-SoxS activator. (d) CRISPRa control of mRFP1 expression in response to light (***p<0.0001, two-tailed unpaired t-test). (e) Schematic of the LOVdeg tag appended to AcrB of the AcrAB-TolC efflux pump. IM, inner membrane; OM, outer membrane. (f) Chloramphenicol sensitivity tests. Wild-type cells (BW25113) are compared to a ΔacrB (BW25113 ΔacrB) strain, ΔacrB complemented with AcrB-LOVdeg (ΔacrB + AcrB-LOVdeg) exposed to light or kept in the dark, and ΔacrB strain complemented with an IPTG-inducible AcrB (ΔacrB + AcrB). No IPTG was added to ΔacrB + AcrB or ΔacrB + AcrB-LOVdeg. (g) OD600 of strains shown in (f) at 2.5 μg/mL chloramphenicol (**p<0.001; *p<0.05; ns, not significant; two-tailed unpaired t-test). Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Error bars show standard deviation around the mean (n = 3 biological replicates).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87303/elife-87303-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Genetic constructs of the original SoxS-CRISPRa from Dong et al., where the activator is anhydrotetracycline (aTc) inducible. However, aTc is light sensitive, thus we replaced the TetR/Ptet portion with the IPTG-inducible LacI/Ptrc. (b) Comparison of the CRISPRa activity of the original construct and the new Ptrc promoter construct with and without a gRNA targeting the promoter of mRFP1. Error bars show standard deviation around the mean (n = 3 biological replicates).
 
 Next, we incorporated the LOVdeg tag into the SoxS-based bacterial CRISPRa activation system (Dong et al., 2018). In this system, a scaffold RNA, which is a modified gRNA containing an MS2 stem loop, is used to localize dCas9 and the transcriptional activator SoxS, which is fused to an MS2 coat protein (MCP). We translationally fused the LOVdeg tag to the MCP-SoxS protein, such that in the dark CRISPRa will be active and light exposure relieves activation (Figure 2c). In the original system, MCP-SoxS expression is anhydrotetracycline (aTc) inducible. This induction system in not amenable to blue light stimulation because aTc is photosensitive (Baumschlager et al., 2020). Thus, we changed the MCP-SoxS construct to an IPTG-inducible promoter prior to blue light experiments (Figure 2—figure supplement 2a, Supplementary files 1 and 2). We confirmed that the promoter switch maintained CRISPRa activity (Figure 2—figure supplement 2b). Fusing the LOVdeg tag to the activator component indeed relieved CRISPRa activity, resulting in a decrease in expression under blue light stimulation (Figure 2d). However, reversal of activator activity was not complete and expression during light stimulation remained above the baseline levels from the reporter-only control, which could be due to the presence of low levels of the MCP-SoxS activator.
 
@@ -62,7 +114,7 @@ We also added the LOVdeg tag to the endogenous membrane protein AcrB. This repre
 
 Previous work from Chai et al., 2016 demonstrated that AcrB can be targeted for proteolysis by fusing an SsrA tag to the C-terminus. Degradation is possible because the C-terminal end of AcrB is on the cytoplasmic side of the inner membrane and can interact with cytoplasmic unfoldases (Du et al., 2014). Therefore, we reasoned that fusing the LOVdeg tag to AcrB would result in light-inducible degradation that disrupts activity of the AcrAB-TolC complex (Figure 2e). To determine whether activity of the AcrAB-TolC complex was successfully disrupted by light, we performed an antibiotic sensitivity test using chloramphenicol, which is a known substrate of the AcrAB-TolC pump (Okusu et al., 1996). We transformed a construct containing AcrB-LOVdeg into cells lacking the endogenous acrB gene (ΔacrB). When kept in the dark, ΔacrB cells with AcrB-LOVdeg showed comparable chloramphenicol tolerance to wild-type cells (Figure 2f and g). Blue light stimulation, in contrast, sensitized the ΔacrB + AcrB-LOVdeg strain to chloramphenicol compared to both wild-type and ΔacrB + AcrB-LOVdeg kept in the dark. This suggests that the LOVdeg tag successfully targets AcrB for degradation in a light-dependent fashion. The blue light-exposed cells still retain modest levels of chloramphenicol sensitivity when compared to ΔacrB cells without any AcrB complementation, likely due to basal levels of efflux pump expression from AcrB-LOVdeg relative to the knockout. As a point of comparison, we also tested chloramphenicol sensitivity of ΔacrB cells with IPTG-inducible AcrB expression (ΔacrB + AcrB) without IPTG. With no induction, this represents the lowest expression levels that can be achieved with a traditional IPTG-inducible system. The uninduced ΔacrB + AcrB cells displayed significantly higher tolerance to chloramphenicol when compared to wild-type and other experimental groups. This underscores the challenge of controlling potent complexes like AcrAB-TolC through the use of chemical inducers alone and demonstrates how post-translational control, such as that provided by LOVdeg, is a viable and necessary strategy to decrease expression to levels approaching those in the ΔacrB knockout strain.
 
-## Tuning frequency response of the LOVdeg tag
+### Tuning frequency response of the LOVdeg tag
 
 Light-inducible systems have the potential to respond to the frequency of light exposure. Frequency-dependent tools can allow optogenetic circuits to be multiplexed beyond limited wavelength options or to add a layer of logic to optogenetic circuits (Benzinger et al., 2022). With added logic operations, optogenetic circuits could perform complex signal processing, analogous to those demonstrated with multiplexed chemically inducible circuits (Shin et al., 2020), while allowing dynamic light inputs. Additionally, higher sensitivity LOVdeg tags would also be useful in bioreactor settings, where poor light penetration into dense cultures is a feasibility concern. With these use cases in mind, we sought to characterize and alter the LOVdeg frequency response.
 
@@ -74,7 +126,7 @@ LOV domains utilize a flavin cofactor to absorb light. In the case of AsLOV2, th
 
 To test the effect of LOVdeg tag refolding dynamics, we illuminated cells with 5 s pulses of blue light followed by variable length dark periods to allow Jα helix refolding (Figure 3b). While holding the blue light duration fixed, we tested dark periods ranging from 475 s (5:475 s on:off, frequency of 0.002 s–1 since there is one pulse every 480 s) to 5 s (5:5 s on:off, frequency of 0.1 s–1) (Figure 3b). We used 5 s for the pulse length because it is markedly shorter than the overall degradation dynamics for the LOVdeg tag, which ensures that a single pulse is not long enough to induce significant degradation. We first tested the frequency response of the original LOVdeg tag (Figure 3c). The response is in line with known refolding dynamics of AsLOV2 (Li et al., 2020), where over 50% degradation is only achieved at high frequencies (0.1 s–1). Next, we tested a LOVdeg tag variant that contains a slow-photocycle mutation, V416I (Zoltowski et al., 2009). This amino acid substitution has been shown to increase the dark state reversion time from 8 s to 84 s in situ (Li et al., 2020). Indeed, for LOVdeg tag (V416I) over 50% degradation was achieved at medium frequencies (0.008 s–1, which corresponds to 5:120 s on:off) (Figure 3c). This variant offers the potential for better performance in settings where increased light sensitivity is preferred, such as within bioreactors.
 
-## Integrating LOVdeg with EL222 for multilayer control
+### Integrating LOVdeg with EL222 for multilayer control
 
 Another attractive aspect of post-translational optogenetic control is that it can integrate with existing systems that act at the transcriptional or translational level. Adding control at multiple layers has been shown to enhance the performance and robustness of natural and synthetic systems (Alon, 2007; Hasenjäger et al., 2019; Szydlo et al., 2022). One commonly used system for optogenetic transcriptional control is EL222. EL222 is a blue light-responsive LOV protein that dimerizes and binds DNA upon light exposure (Zoltowski et al., 2013). In bacteria, EL222 can be used as a transcriptional repressor or activator depending on the placement of its binding site in the promoter (Ding et al., 2020; Jayaraman et al., 2016). We chose to combine the transcriptional repression of EL222 with the LOVdeg tag. In this arrangement, the systems work synergistically to decrease gene expression in response to blue light using simultaneous transcriptional repression and protein degradation (Figure 4a).
 
@@ -84,7 +136,7 @@ Another attractive aspect of post-translational optogenetic control is that it c
 
 To test the performance of this combined optogenetic circuit, we created a construct in which the mCherry-LOVdeg fusion protein is driven by a promoter containing an EL222 binding site (PEL222). We tested the light response of mCherry-LOVdeg expression with and without EL222 present, as well as including EL222 control of mCherry without the LOVdeg tag fused (Figure 4b). As expected, mCherry-LOVdeg expression decreased in response to light even without EL222 present, representing the sole action of the degradation tag. Similarly, EL222-only mCherry decreased in response to light due to repression by EL222. However, multilayer control resulted in a faster decrease in expression in response to light and reached lower levels compared to either LOVdeg or EL222 alone. The fold change decrease in expression was improved from 7× and 6× for just the LOVdeg or EL222, respectively, to 23× when both systems were combined.
 
-## Optogenetic control of octanoic acid production
+### Optogenetic control of octanoic acid production
 
 We next sought to apply the LOVdeg tag to a metabolic engineering task as we envision that post-translational control will be especially advantageous in these biotechnology applications. Transcriptional control alone is particularly problematic in a metabolic engineering setting because chemical production is typically carried out at stationary phase with slow growth rates, meaning that proteins expressed at basal levels will accumulate in production settings. Therefore, dynamic control using transcriptional optogenetic systems alone will only allow protein levels to increase or plateau. However, a prerequisite for dynamic control of metabolic pathways is that enzyme levels can be modulated to turn off production.
 
@@ -112,7 +164,7 @@ In summary, the LOVdeg tag offers a straightforward route for introducing optoge
 
 ## Materials and methods
 
-## Strains and plasmids
+### Strains and plasmids
 
 We used E. coli BW25113 as the wild-type strain. All knockout strains are from the Keio collection (Baba et al., 2006), which were derived from BW25113. We used Golden Gate cloning to create all plasmid constructs (Engler et al., 2008; Supplementary file 1). The IPTG-inducible constructs were derived from pBbS5c-mRFP1 from the BglBrick plasmid library (Lee et al., 2011). In the constitutive version of the mCherry-AsLOV2 variants, we swapped the IPTG-inducible promoter with a constitutive promoter, PW7 (5′-ttatcaaaaagagtattgaaataaagtctaacctataggaagattacagccatcgagagggacacggcgaa-3′). We used this constitutive version for microscopy and the protease knockout studies; all other experiments used the IPTG-inducible promoter PlacUV5.
 
@@ -128,23 +180,23 @@ Plasmids expressing ClpA, ClpX, and HslU were constructed by amplifying the unfo
 
 Constructs from this work are available on AddGene: https://www.addgene.org/Mary_Dunlop/.
 
-## Blue light stimulation
+### Blue light stimulation
 
 Unless otherwise noted, bacteria were cultured in Luria broth (LB) with appropriate antibiotics for plasmid maintenance at 37°C with 200 rpm shaking. Antibiotic concentrations used for plasmid maintenance were 30 μg/mL for kanamycin, 100 μg/mL for carbenicillin, and 25 μg/mL for chloramphenicol. All light exposure experiments were carried out with a light plate apparatus (LPA) (Gerhardt et al., 2016) using 465 nm blue light. Overnight cultures of light-sensitive strains were diluted 1:50 and precultured in the dark for 2 hr. For IPTG-inducible constructs, 1 mM IPTG was added when the cells were diluted. After 2 hr in the dark, cells were exposed to blue light in the LPA at a setpoint of 100 μW/cm2. Red fluorescence (excitation 560 nm, emission 600 nm) and optical density (OD) readings were taken using a BioTek Synergy H1m plate reader (BioTek, Winooski, VT) after 5 hr of incubation unless otherwise noted. For experiments testing degradation at various growth phases, a 4 hr light window was introduced at variable times, as shown in Figure 1. For CRISPRa experiments, light stimulation was continued for 8 hr prior to RFP and OD readings. For frequency response experiments, the LPA was programmed using its Iris software (https://taborlab.github.io/Iris/; Gerhardt, 2016) to pulse blue light at varying frequencies. A 5 s light pulse was kept constant for each experiment while the time between pulses was varied (5 s, 55 s, 85 s, 115 s, 235 s, and 480 s).
 
-## Chloramphenicol sensitivity testing
+### Chloramphenicol sensitivity testing
 
 Chloramphenicol sensitivity experiments were performed in M9 minimal media (M9 salts, 2 mM MgSO4, 100 μM CaCl2) with 1% glucose at 37°C with 200 rpm shaking. Overnight cultures in LB were initially diluted 1:50 into M9 media for 4 hr. The M9 conditioned cultures were then diluted again 1:20 into 24-well plates containing M9 media with varying levels of chloramphenicol (0, 0.3125, 0.625, 1.25, 2.5, 5, and 10 μg/mL) and grown for 20 hr before measuring OD using a BioTek Synergy H1m plate reader (BioTek). We also conducted experiments with the E. coli BW25113 ΔacrB strain (referred to as ΔacrB). For these, ΔacrB was transformed with pBbA5k-AcrAB-LOVdeg (Supplementary file 2) and chloramphenicol sensitivity experiments were carried out either in the LPA with constant light illumination or kept in the dark for the duration of growth. No IPTG was added to the ΔacrB + AcrAB-LOVdeg cultures because basal expression was enough to recover wild-type resistance. The same chloramphenicol sensitivity protocol was performed in the dark using wild-type BW25113, ΔacrB + AcrB without induction, and ΔacrB as controls.
 
-## Microscopy
+### Microscopy
 
 Strains were grown overnight in LB medium. Cultures were refreshed 1:100 in M9 minimal media for microscopy (M9 salts supplemented with 2 mM MgSO4, 0.1 mM CaCl2) with 0.4% glucose for 2 hr. Samples were then placed on 1.5% low melting agarose pads made with M9 minimal media for microscopy with 0.4% glucose. Samples were grown at 30°C. Cells were imaged at 100× using a Nikon Ti-E microscope. Blue light exposure was provided by a LED ring (Adafruit NeoPixel 1586), which was fixed above the microscope stage and controlled by an Arduino using a custom MATLAB script. Blue light was kept constant except during image acquisitions.
 
-## Octanoic acid production experiment
+### Octanoic acid production experiment
 
 For octanoic acid production experiments, strains expressing CpFatB1* under various modes of control (Supplementary file 2) were cultured in LB overnight with light illumination to maintain low CpFatB1* expression. Overnight cultures were diluted 1:20 into M9 minimal media with 2% glucose and kept in the light until they reached early stationary phase (OD600 of 0.6) unless otherwise noted. The LPA was then programmed to either maintain light for low octanoic acid production or turn off light exposure to induce octanoic acid production for 24 hr prior to fatty acid extraction and quantification.
 
-## Fatty acid quantification
+### Fatty acid quantification
 
 Samples for GC-MS quantification were taken at 24 hr. Also, 400 μL of vortexed culture was used for fatty acid extraction and derivatization into fatty acid methyl esters as described by Sarria et al., 2018 with the following minor modifications: an internal standard of nonanoic acid (C9) was added to the 400 μL sample at a final concentration of 88.8 mg/L and vortexed for 5 s. The following was then added to the sample for fatty acid extraction and vortexed for 30 s: 50 μL 10% NaCl, 50 μL glacial acetic acid, and 200 μL ethyl acetate. The sample was then centrifuged at 12,000 × g for 10 min. After centrifugation, 100 μL of the ethyl acetate layer was mixed with 900 μL of a 30:1 mixture of methanol:HCl (12 N) in a 2 mL microcentrifuge tube. The solution was vortexed for 30 s followed by an incubation at 50°C for 60 min for methyl ester derivatization. Once cooled to room temperature, 500 μL hexanes and 500 μL water were added to the 2 mL microcentrifuge tube, vortexed for 10 s, and allowed to settle. Then, 250 μL of the hexane layer was mixed with 250 μL ethyl acetate in a GC-MS vial for quantification.
 

@@ -18,10 +18,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04td37d32 Centre Armand-Frappier Santé Biotechnologie, Institut National de la Recherche Scientifique Laval Canada
-2. https://ror.org/02r2q1d96 Leibniz Institute of Virology Hamburg Germany
-3. https://ror.org/02gars961 Department of Microbiology and Immunology, Emory University School of Medicine Atlanta United States
-4. https://ror.org/044j76961 Department of Chemistry and Biochemistry, Alberta RNA Research and Training Institute, University of Lethbridge Lethbridge Canada
+1. Centre Armand-Frappier Santé Biotechnologie, Institut National de la Recherche Scientifique Laval Canada ([ROR:04td37d32](https://ror.org/04td37d32))
+2. Leibniz Institute of Virology Hamburg Germany ([ROR:02r2q1d96](https://ror.org/02r2q1d96))
+3. Department of Microbiology and Immunology, Emory University School of Medicine Atlanta United States ([ROR:02gars961](https://ror.org/02gars961))
+4. Department of Chemistry and Biochemistry, Alberta RNA Research and Training Institute, University of Lethbridge Lethbridge Canada ([ROR:044j76961](https://ror.org/044j76961))
 5. Center of Excellence in Research on Orphan Diseases-Fondation Courtois Quebec Canada
 6. Regroupement Intersectoriel de Recherche en Santé de l’Université du Québec Quebec Canada
 7. Swine and Poultry Infectious Diseases Research Centre Quebec Canada
@@ -44,69 +44,117 @@ To determine whether the co-opting of these RNA-binding proteins was conserved i
 
 ## Results
 
-## IGF2BP2 regulates ZIKV replication cycle
+### IGF2BP2 regulates ZIKV replication cycle
 
 To identify new cellular proteins regulating ZIKV and DENV vRNA functions during viral replication, we hypothesized that these orthoflaviviruses have evolved to share conserved host co-opting mechanisms with HCV which belongs to the Hepacivirus genus within the Flaviviridae family like the Orthoflavivirus genus. Based on our previous work with host RBPs regulating HCV life cycle (Chatel-Chaix et al., 2013; Chatel-Chaix et al., 2011), we performed a targeted small-scale RNA interference (RNAi) screening assessing the requirement of 10 host RBPs for ZIKV and DENV replication. Protein knockdown (KD) in human hepatocarcinoma Huh7.5 cells was achieved through the transduction of short-hairpin RNA (shRNA)-expressing lentiviruses, whose respective efficiencies in this cell line were previously validated (Chatel-Chaix et al., 2013; Chatel-Chaix et al., 2011). None of these shRNA had any impact on cell viability as measured by 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide (MTT) assays (Figure 1A). Two days post-transduction, cells were infected with pathogenic contemporary ZIKV H/PF/2013 strain (Asian lineage), ancestral ZIKV MR766 strain (African lineage), or serotype 2 DENV2 16681s strain. Two days post-infection (dpi), infectious viral particle production was measured by plaque assays (Figure 1B–D). The KD of DEAD-box helicases RHA (RNA helicase A, also named DHX9), DDX6, DDX21, or DDX5 had no significant impact in virus production when compared to the non-target control shRNA (shNT). In contrast, the KD of IGF2BP2 and LARP1 resulted in significant decrease and increase in the titers of both ZIKV strains, respectively. The observed phenotypes were specific to ZIKV since no significant impact was observed for DENV (Figure 1B–D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig1-v1.jpg)
 
-**Figure 1.:** Huh7.5 were transduced with short-hairpin RNA (shRNA)-expressing lentiviruses at an MOI of 5–10. (A) Four days post-transduction, 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide (MTT) assays were performed to evaluate cytotoxicity effect of the knockdown (KD). Two days post-transduction cells were infected with either (B) ZIKV H/PF/2013, (C) ZIKV MR766, or (D) DENV2 16681s at an MOI of 0.01. 48 hr post-infection, the production of infectious viral particles was evaluated by plaque assays. (E) Schematic of the Renilla luciferase (Rluc)-expressing ZIKV reporter virus (ZIKV-R2A) based on the FSS13025 isolate (Asian lineage). (F) Cells were prepared, exactly as in B–D but infected with ZIKV-R2A at an MOI of 0.001. 48 hr post-infection, cells were lysed and bioluminescence was measured and normalized to the control cells expressing a non-target shRNA (shNT). Means ± SEM are shown based on three to five independent experiments for each shRNA. p<0.0001; ***: p<0.001; **: p<0.01; *p<0.05 (one-way ANOVA test).Figure 1—source data 1.Figure 1.
+**Figure 1.:** Huh7.5 were transduced with short-hairpin RNA (shRNA)-expressing lentiviruses at an MOI of 5–10. (A) Four days post-transduction, 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide (MTT) assays were performed to evaluate cytotoxicity effect of the knockdown (KD). Two days post-transduction cells were infected with either (B) ZIKV H/PF/2013, (C) ZIKV MR766, or (D) DENV2 16681s at an MOI of 0.01. 48 hr post-infection, the production of infectious viral particles was evaluated by plaque assays. (E) Schematic of the Renilla luciferase (Rluc)-expressing ZIKV reporter virus (ZIKV-R2A) based on the FSS13025 isolate (Asian lineage). (F) Cells were prepared, exactly as in B–D but infected with ZIKV-R2A at an MOI of 0.001. 48 hr post-infection, cells were lysed and bioluminescence was measured and normalized to the control cells expressing a non-target shRNA (shNT). Means ± SEM are shown based on three to five independent experiments for each shRNA. p<0.0001; ***: p<0.001; **: p<0.01; *p<0.05 (one-way ANOVA test).
 
 To validate these phenotypes, we took advantage of ZIKV FSS13025 strain-based reporter viruses expressing Renilla luciferase (Rluc), whose activity in infected cells can be used as a read-out of overall vRNA replication (Figure 1E, Fischl and Bartenschlager, 2013; Shan et al., 2016). IGF2BP2 KD resulted in a significant 60% decrease in viral replication. In contrast, LARP1 KD had no stimulatory effect on viral replication, suggesting a role of this host factor in virus assembly and/or release. Of note YBX1, YBX2, and DDX3 KD all resulted in a decrease in ZIKV replication although this did not translate into impacts in virus titers (Figure 1B–F). We decided to focus further investigation on IGF2BP2 since it was our best candidate in terms of ZIKV replication impairment upon KD (Figure 1B and C). First, western blotting and RT-qPCR with transduced Huh7.5 cell lysates validated that IGF2BP2 was efficiently knocked down upon transduction at both protein and mRNA levels (Figure 2A and B), which correlated with a 74% decrease in ZIKV production (Figure 2C) and reductions in the expression of viral proteins NS3, NS4A, and NS5 (Figure 2A). Comparable impairment of ZIKV titers upon IGF2BP2 KD was observed in other cell lines relevant for ZIKV pathogenesis, namely human immortalized astrocytes (NHA-hTERT; Figure 2D) and cancer-derived trophoblasts (JEG-3; Figure 2E) as well as for a third wild-type ZIKV strain in Huh7.5 cells (Figure 3A), i.e., ZIKV FSS13025 (Asian lineage, isolated in Cambodia in 2010).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig2-v1.jpg)
 
-**Figure 2.:** Liver Huh7.5 (A–C), astrocytic NHA-hTERT (D), and placental JEG-3 (E) cells were transduced with non-target shRNA (shNT) or shIGF2BP2 lentiviruses at an MOI of 10. Two days post-transduction, cells were infected with ZIKV H/PF/2013 at an MOI between 0.01 and 1 depending on the cell line. Two days post-infection, supernatant and cells were collected. IGF2BP2 expression at the protein level (A, D, E; all cell lines) and mRNA level (B; Huh7.5 cells) were evaluated by western blotting (WB) and RT-qPCR, respectively. Cell supernatants were used for plaque assays (C–E). For NHA-hTERT and JEG-3, the supernatant and cells are collected for titration and WB, respectively (E–F). 3-(4,5-Dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide (MTT) assays were performed to assess the cell viability in transduced NHA-hTERT and JEG-3 cells (D–E). Means ± SEM are shown based on five (D), three (C), and four (D–E) independent experiments. ****: p<0.0001; ***: p<0.001; **: p<0.01 (unpaired t-test).Figure 2—source data 1.Figure 2B–E.Figure 2—source data 2.Figure 2A and D–E, indicating the relevant bands and conditions.Figure 2—source data 3.Figure 2A and D–E.
+**Figure 2.:** Liver Huh7.5 (A–C), astrocytic NHA-hTERT (D), and placental JEG-3 (E) cells were transduced with non-target shRNA (shNT) or shIGF2BP2 lentiviruses at an MOI of 10. Two days post-transduction, cells were infected with ZIKV H/PF/2013 at an MOI between 0.01 and 1 depending on the cell line. Two days post-infection, supernatant and cells were collected. IGF2BP2 expression at the protein level (A, D, E; all cell lines) and mRNA level (B; Huh7.5 cells) were evaluated by western blotting (WB) and RT-qPCR, respectively. Cell supernatants were used for plaque assays (C–E). For NHA-hTERT and JEG-3, the supernatant and cells are collected for titration and WB, respectively (E–F). 3-(4,5-Dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide (MTT) assays were performed to assess the cell viability in transduced NHA-hTERT and JEG-3 cells (D–E). Means ± SEM are shown based on five (D), three (C), and four (D–E) independent experiments. ****: p<0.0001; ***: p<0.001; **: p<0.01 (unpaired t-test).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig3-v1.jpg)
 
-**Figure 3.:** Huh7.5 cells were transduced with non-target shRNA (shNT) or shIGF2BP2 lentiviruses at an MOI of 10. Two days post-transduction cells were infected with (A) ZIKV FSS13025, (B) dengue virus (DENV)1 HAWAII, (C) DENV2 NGC, (D) DENV3 H87, (E) DENV4 H241, (F) West Nile virus (WNV) NY99, (G) SARS-CoV-2 at an MOI of 0.1. Virus-containing cell supernatants were collected and titrated 2 days post-infection by plaque assays. Treatment with RNA-dependent RNA polymerase (RdRp) inhibitors NITD008 and Remdesivir were used as positive controls of replication inhibition of orthoflaviviruses and SARS-CoV-2, respectively. Means ± SEM are shown based on three independent experiments. ****: p<0.0001; *: p<0.05; NS: not significant (unpaired t-test).Figure 3—source data 1.Figure 3.
+**Figure 3.:** Huh7.5 cells were transduced with non-target shRNA (shNT) or shIGF2BP2 lentiviruses at an MOI of 10. Two days post-transduction cells were infected with (A) ZIKV FSS13025, (B) dengue virus (DENV)1 HAWAII, (C) DENV2 NGC, (D) DENV3 H87, (E) DENV4 H241, (F) West Nile virus (WNV) NY99, (G) SARS-CoV-2 at an MOI of 0.1. Virus-containing cell supernatants were collected and titrated 2 days post-infection by plaque assays. Treatment with RNA-dependent RNA polymerase (RdRp) inhibitors NITD008 and Remdesivir were used as positive controls of replication inhibition of orthoflaviviruses and SARS-CoV-2, respectively. Means ± SEM are shown based on three independent experiments. ****: p<0.0001; *: p<0.05; NS: not significant (unpaired t-test).
 
 Our initial screen showed that IGF2BP2 KD had minimal impact on DENV2 replication, suggesting a ZIKV-specific phenotype (Figure 1D). To confirm this, we have included in our workflow four additional strains of DENV representing the four known serotypes. IGF2BP2 KD did not change the production of DENV1, DENV2, or DENV4, while DENV3 replication was only slightly decreased (Figure 3B–E). As control, treatment with NITD008, an inhibitor of flaviviral NS5 polymerase (Deng et al., 2016; Lo et al., 2016; Nelson et al., 2015; Yin et al., 2009), completely abrogated viral particle production for all orthoflaviviruses tested. Finally, IGF2BP2 KD had no impact on the replication of either WNV, another orthoflavivirus (Figure 3F), or of SARS-CoV-2, another positive-strand RNA virus from the Coronaviridae family (Figure 3G). Overall, these data clearly show that the IGF2BP2 is a specific host dependency factor for ZIKV replication.
 
-## IGF2BP2 redistributes to ZIKV replication complexes in infected cells
+### IGF2BP2 redistributes to ZIKV replication complexes in infected cells
 
 Following the observations that IGF2BP2 is a ZIKV host dependency factor, we investigated the impact of ZIKV infection on IGF2BP2 expression and subcellular distribution. We performed western blotting on extracts of either uninfected or ZIKV-infected Huh7.5 cells. IGF2BP2 expression remained unchanged at 2 and 3 dpi in contrast to DDX3 and DDX5 whose levels were decreased over the course of infection (Figure 4A). Then, we investigated the localization of IGF2BP2 in infected cells using confocal microscopy. In uninfected cell, IGF2BP2 exhibited a homogenous distribution throughout the cytoplasm. In ZIKV-infected cells, an accumulation of IGF2BP2 in areas enriched for NS3 and viral dsRNA was observed at 2 dpi (Figure 4B), correlating with a partial colocalization with NS3 and dsRNA (Manders’ coefficients of 0.45±0.04 and 0.46±0.04, respectively). dsRNA is an intermediate of vRNA replication and hence, anti-dsRNA antibodies detect replication complexes, which along with VPs, typically accumulate in a cage-like region in the perinuclear area with viral proteins required for vRNA replication step, such as NS3 and NS5 (Cortese et al., 2017). This compartment is typically surrounded by NS3-positive CMs which are devoid of dsRNA (Anton et al., 2021; Chatel-Chaix et al., 2016; Cortese et al., 2017). A similar, yet less pronounced, phenotype was observed at an earlier time point (1 dpi, Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig4-v1.jpg)
+
+**Figure 4.:** (A) Huh 7.5 cells were infected with ZIKV H/PF/2013 at an MOI of 5. Cells were collected at 48 and 72 hr post-infection (hpi). Cell extracts were prepared and analyzed by western blotting using the indicated antibodies. Actin-normalized protein signals are shown. (B) Huh7.5 cells were infected with ZIKV H/PF/2013 with an MOI of 10 or left uninfected. Two days post-infection, cells were fixed, immunolabeled for the indicated factors, and imaged by confocal microscopy. Scale bar = 10 µm. The Manders’ coefficient (mean ± SEM) representing the fraction of dsRNA (cyan) and NS3 (red) signals overlapping with IGF2BP2 signal is shown (n=number of cells). (C) Co-immunoprecipitation assays using HA antibodies were performed with extracts from Huh7.5 cells stably expressing IGF2BP2-HA (+) or control-transduced cells (-) which were infected with ZIKV at an MOI of 10 for 2 days. Purified complexes were analyzed for their protein content by western blotting. (D) Means of quantified NS5 signals from (C) (normalized to actin [extracts] or IGF2BP2 [IP]) ± SEM are shown based on nine independent experiments. ****: p<0.0001; ns: not significant (unpaired t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Huh7.5 cells were infected with ZIKV H/PF/2013 with an MOI of 10 or left uninfected. At 1 day post-infection, cells were fixed, immunolabeled for the indicated factors, and imaged by confocal microscopy. Scale bar = 10 µm. The white squares indicate the magnified areas in the insets.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Huh7.5 cells stably overexpressing IGF2BP2-HA or control-transduced cells (pWPI) were infected with ZIKV H/PF/2013 with an MOI of 10 or left uninfected. Two days post-infection, cells were fixed, immunolabeled for the indicated factors, and imaged by confocal microscopy. Scale bar = 10 µm. The white squares indicate the magnified areas in the insets.
+
 The relocalization of IGF2BP2 into the replication compartment raised the hypothesis that this protein interacts with viral proteins involved in vRNA replication. To test this, we generated Huh7.5 cells stably expressing HA-tagged IGF2BP2 to subsequently perform co-immunoprecipitation assays (Figure 4C). As control, we first confirmed that this tagged recombinant protein, similarly to endogenous IGF2BP2, also redistributed to the dsRNA-positive area in ZIKV-infected cells (Figure 4—figure supplement 2). We next performed anti-HA immunoprecipitations with extracts from uninfected and ZIKV-infected cells. Western blot analysis of immunopurified complexes showed that IGF2BP2-HA specifically associates with ZIKV NS5 polymerase but not with NS3 protease/helicase (Figure 4C and D). Overall, these data show that ZIKV infection induces the physical recruitment of IGF2BP2 to the replication compartment, and further suggest that IGF2BP2 might contribute to vRNA synthesis through interactions with NS5 polymerase.
 
-## IGF2BP2 associates with ZIKV RNA
+### IGF2BP2 associates with ZIKV RNA
 
 Considering that IGF2BP2 associates with NS5 in the replication compartment and that it possesses RNA-binding activities, we evaluated whether IGF2BP2 interacts with ZIKV vRNA. IGF2BP2 along with IGF2BP1 and IGF2BP3 paralogues are highly conserved oncofetal RBPs belonging to the insulin-like growth factor 2 mRNA-binding protein family, which typically regulate the post-transcriptional regulation of cellular RNAs. With their roles in the splicing, transport, translation, and stabilization of a wide variety of RNAs (Bell et al., 2013; Degrauwe et al., 2016), IGF2BP1, 2, and 3 are involved in numerous cellular function, such as differentiation, migration, metabolism, and proliferation (Bell et al., 2013; Degrauwe et al., 2016). IGF2BP2 is composed of six canonical RNA-binding domains, namely two N-terminal RNA recognition motifs (RRM) and four C-terminal human heterogeneous nuclear ribonucleoprotein-K homology (KH) domains (Nielsen et al., 1999; Nielsen et al., 2004; Wächter et al., 2013).
 
 To assess a potential association between IGF2BP2 and ZIKV vRNA, we first performed protein immunostaining coupled to single RNA molecule fluorescence in situ hybridization (FISH) using signal-amplified DNA branched probes to detect IGF2BP2 and ZIKV RNA, respectively. ZIKV RNA was specifically visualized since no FISH signal was detected in uninfected cells while in ZIKV-infected cells, vRNA exhibited a punctate distribution (Figure 5A, Figure 5—figure supplement 1). Co-staining of vRNA and IGF2BP2 revealed their partial colocalization (Figure 5A, white arrows, mean Manders’ coefficient = 0.28 ± 0.02 [n=31]), which strongly suggests that IGF2BP2 associates with the ZIKV RNA genome.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig5-v1.jpg)
+
+**Figure 5.:** (A) Fluorescence in situ hybridization (FISH) and IGF2BP2 immunostaining were performed using Huh 7.5 cells which were infected for 2 days with ZIKV (MOI = 10) or left uninfected. The Manders’ coefficient (mean ± SEM) representing the fraction of vRNA signal overlapping with IGF2BP2 signal is shown (n=number of cells). Scale bar = 10 µm. (B) Huh7.5 cells expressing IGF2BP2-HA and control cells were infected with ZIKV H/PF/2013 at an MOI of 10, or left uninfected. Two days later, cell extracts were prepared and subjected to anti-HA immunoprecipitations. Extracted vRNA levels were measured by RT-qPCR. Means ± SEM are shown based on three independent experiments. ****: p<0.0001; NS: not significant (unpaired t-test). (C) IGF2BP2 recombinant proteins containing either the two RNA recognition motifs (RRM) or KH3 and KH4 domains were produced in bacteria and purified. In parallel ZIKV 5’ nontranslated region (NTR) and 3’ NTR were synthesized by in vitro transcription. (D) Combination of truncated IGF2BP2 proteins and either ZIKV 5’ NTR (blue squares) or ZIKV 3’ NTR (green circles) were used for in vitro binding assays using microscale thermophoresis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Fluorescence in situ hybridization (FISH) with IGF2BP2 and NS3 co-immunostaining was performed in Huh7.5 cells after 2 days post-infection with ZIKV at an MOI of 10. White arrows show the triple colocalization. Scale bar = 10 µm. The white squares indicate the magnified areas in the insets.
+
 To test this, we performed anti-HA co-immunoprecipitation assays using extracts of Huh7.5 cells as in Figure 4C. Immune complexes were subjected to RNA purification and subsequently to RT-qPCR to detect viral genome (Figure 5B). While the overexpression of IGF2BP2 had no impact on total vRNA levels, we detected a highly significant enrichment of vRNA in purified IGF2BP2-HA complexes compared to the negative specificity control (no IGF2BP2-HA expression). This demonstrates that vRNA and IGF2BP2 are part of the same RNP complex. To further investigate if IGF2BP2 can interact with ZIKV vRNA in a direct manner, we have performed in vitro binding assays using microscale thermophoresis (MST) with different regions of ZIKV vRNA and IGF2BP2 protein. We have focused our analysis on vRNA 5’ NTR and 3’ NTR, which are highly structured and are absolutely required for vRNA synthesis and translation, notably through interactions with viral and host factors (for a review, see Mazeaud et al., 2018). Moreover, it has been shown that IGF2BP2 preferentially binds to 3′ and 5′ untranslated regions of mRNAs (Zhao et al., 2022). ZIKV RNA 3’ NTR and 5’ NTR were synthesized by in vitro transcription. In parallel, recombinant IGF2BP2 N-terminal and C-terminal moieties containing either the two RRM (IGF2BP2RRM) or both KH3 and KH4 domains (IGF2BP2KH34), respectively, were produced in bacteria and subsequently purified (Figure 5C). MST revealed that IGF2BP2KH34 binds both ZIKV 5’ NTR and 3’ NTR with high affinity with respective Kd of 203 nM ± 51 and 418 nM ± 49, respectively (Figure 5D). In stark contrast, IGF2BP2RRM specifically associated with ZIKV 3’ NTR with a lower affinity (Kd = 1598 nM± 257) but this interaction was highly specific since no binding was detected between this recombinant protein and ZIKV 5’ NTR. It is noteworthy to mention that we could not assess higher IGF2BP2RRM concentrations than 10 μM to reach binding saturation because of protein aggregation. Overall, these data demonstrate that IGF2BP2 directly and specifically interacts with vRNA in infected cells.
 
-## ZIKV regulates vRNA replication
+### ZIKV regulates vRNA replication
 
 The fact that IGF2BP2 associates with both ZIKV NS5 RdRp and vRNA led us to hypothesize that IGF2BP2 is involved in the vRNA replication step of ZIKV life cycle. To test this, we took advantage of reporter ZIKV sub-genomic replicons based on the H/PF/2013 genome (ZIKV sgR2A; Figure 6A, Münster et al., 2018). This engineered genome has been deleted for the coding sequence of structural proteins and expresses Rluc in frame with the NS1-NS5 polyprotein. When in vitro-transcribed genomes are introduced in cells by electroporation, they autonomously replicate but neither virus assembly nor entry occur because of the lack of structural proteins. Hence, the luciferase activity in transduced Huh7.5 cells was used as a read-out of vRNA replication 2 days post-electroporation. Strikingly, ZIKV sgR2A replication was attenuated in IGF2BP2 KD, with a significant 40% decrease (Figure 6B). To rule out that this phenotype was due to a potential defect in vRNA translation, we used mutated Rluc-expressing ZIKV sub-genomes which express a defective NS5 RdRp and do no replicate (ZIKV sgR2A GAA; Figure 6A and B). Hence, the Rluc activity detected at 4 hr post-electroporation entirely relies on vRNA translation. IGF2BP2 KD did not have any significant impact on Rluc activity in Huh7.5 cells transfected with either sgR2A or sgR2A GAA (Figure 6C). These data show that IGF2BP2 positively regulates ZIKV genome replication (but not its translation), which is most likely mediated through its interactions with NS5 and vRNA.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig6-v1.jpg)
 
-**Figure 6.:** (A) Schematic representation of reporter ZIKV H/PF/2013 sub-genomic replicons (sgR2A) and replication-deficient genomes because of mutations in NS5 RNA-dependent RNA polymerase (RdRp) sequence (sgR2A GAA). (B–C) Huh7.5 were transduced with short-hairpin RNA (shRNA)-expressing lentiviruses and subjected to electroporation with in vitro-transcribed sgR2A or sgR2A GAA RNAs 2 days later. In-cell bioluminescence was measured (B) 48 or (C) 4 hr post-electroporation and normalized to the non-target shRNA (shNT) control condition. In (C), the luciferase activity was normalized to the transfection efficiency, i.e., the Renilla luciferase (Rluc) activity at 4 hr post-electroporation. Means ± SEM are shown based on four independent experiments. ***: p<0.001; NS: not significant (unpaired t-test).Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Schematic representation of reporter ZIKV H/PF/2013 sub-genomic replicons (sgR2A) and replication-deficient genomes because of mutations in NS5 RNA-dependent RNA polymerase (RdRp) sequence (sgR2A GAA). (B–C) Huh7.5 were transduced with short-hairpin RNA (shRNA)-expressing lentiviruses and subjected to electroporation with in vitro-transcribed sgR2A or sgR2A GAA RNAs 2 days later. In-cell bioluminescence was measured (B) 48 or (C) 4 hr post-electroporation and normalized to the non-target shRNA (shNT) control condition. In (C), the luciferase activity was normalized to the transfection efficiency, i.e., the Renilla luciferase (Rluc) activity at 4 hr post-electroporation. Means ± SEM are shown based on four independent experiments. ***: p<0.001; NS: not significant (unpaired t-test).
 
-## ZIKV infection modulates the interactions between IGF2BP2 and its endogenous mRNA ligands
+### ZIKV infection modulates the interactions between IGF2BP2 and its endogenous mRNA ligands
 
 Since IGF2BP2 associates with NS5 and vRNA and accumulates in the viral replication compartment, we hypothesized that ZIKV infection induces a remodeling of IGF2BP2 RNP, notably regarding its content in endogenous mRNA partners. To test this, we performed immunopurifications of IGF2BP2 complexes followed by RT-qPCR as in Figures 4C and 5B in order to determine the relative abundance of three known IGF2BP2 mRNA ligands (namely TNRC6A, PUM2, and CIRBP) (Huang et al., 2018) in both control and ZIKV-infected cells. TRNC6A, PUM2, and CIRBP mRNAs were selected because ZIKV is known to alter their N6-adenosine methylation status (Gokhale et al., 2020), an epitranscriptomic RNA modification that increases the affinity for IGF2BP2, a known ‘m6A reader’ (Huang et al., 2018). As expected, we could specifically detect these mRNA in purified IGF2BP2 complexes in uninfected cells (Mock+IGF2BP2-HA condition; Figure 7A–C). Interestingly, the levels of co-immunoprecipitated TNRC6A and PUM2 mRNAs cell were significantly decreased when Huh7.5 were infected with ZIKV while total mRNA levels remained unchanged (Figure 7A and B), suggesting that ZIKV induced a loss of binding between IGF2BP2 and these endogenous mRNAs. In contrast, no significant changes in IGF2BP2 association were observed for CIRBP mRNA in either condition although it is noteworthy that total levels were increased in total extracts when IGF2BP2 was overexpressed (Figure 7C). These results show that ZIKV infection modifies the interaction between IGF2BP2 and specific endogenous mRNAs and is consistent with the notion of a virus-induced remodeling of IGF2BP2 RNP.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig7-v1.jpg)
 
-**Figure 7.:** Huh7.5 cells stably expressing IGF2BP2-HA (+) and control cells (-) were infected with ZIKV H/PF/2013 at an MOI of 10, or left uninfected. Two days later, cell extracts were prepared and subjected to anti-HA immunoprecipitations. Extracted (A) TNRC6A, (B) PUM2, and (C) CIRBP mRNA levels were measured by RT-qPCR. Means ± SEM are shown based on three independent experiments. ****: p<0.0001; ***: p<0.001; NS: not significant (unpaired t-test).Figure 7—source data 1.Figure 7.
+**Figure 7.:** Huh7.5 cells stably expressing IGF2BP2-HA (+) and control cells (-) were infected with ZIKV H/PF/2013 at an MOI of 10, or left uninfected. Two days later, cell extracts were prepared and subjected to anti-HA immunoprecipitations. Extracted (A) TNRC6A, (B) PUM2, and (C) CIRBP mRNA levels were measured by RT-qPCR. Means ± SEM are shown based on three independent experiments. ****: p<0.0001; ***: p<0.001; NS: not significant (unpaired t-test).
 
-## ZIKV alters IGF2BP2 proteo-interactome in infected cells
+### ZIKV alters IGF2BP2 proteo-interactome in infected cells
 
 Next, to assess our hypothesis of a ZIKV-remodeled IGF2BP2 RNP, we investigated whether ZIKV infection changes the protein interaction profile of IGF2BP2. We first performed western blotting on purified IGF2BP2-HA samples (prepared as in Figures 4C and 5B) to detect IGF2BP1, IGF2BP3, and YBX1 which are known IGF2BP2 partners (Chatel-Chaix et al., 2013; Jønson et al., 2007; Nielsen et al., 2004). Comparable amounts of either partner were specifically co-purified with IGF2BP2-HA (Figure 8A–D), indicating that ZIKV infection does not significantly change their association. As expected from results shown in Figure 4C, the viral RdRp NS5 was readily detected in this complex. Interestingly, confocal microscopy showed that ZIKV infection induced an accumulation of IGF2BP1, IGF2BP3, and YBX1 in the replication compartment as for IGF2BP2 with partial colocalization with dsRNA and NS3 (Figure 8—figure supplements 1 and 2C, D), which supports that ZIKV physically co-opts an RNP containing these fours RBPs. This phenotype was specific to these host factors as it was not observed for the RBPs DDX5 and LARP1 (Figure 8—figure supplement 2A–D). Consistent with the fact that these proteins (including NS5) belong to a ribonucleoprotein complex containing IGF2BP2, their interaction with IGF2BP2 was RNA-dependent since they were barely detectable in the immunoprecipitates when the cell extracts were treated with RNase A prior to anti-HA pull-down (Figure 8—figure supplement 3). To globally evaluate changes in the IGF2BP2 interactome upon infection, we analyzed the protein composition of IGF2BP2-HA complexes immunopurified from uninfected cells or infected with ZIKV or DENV by mass spectrometry (MS). We identified 527 proteins which specifically interacted with IGF2BP2 (Figure 9—figure supplement 1A and B; Supplementary file 1). The abundance of over 86% of the proteins in IGF2BP2-HA complexes (455 proteins), including IGF2BP1, IGF2BP3, and YBX1, remained unchanged upon either infection (as expected from Figure 8A–D). In contrast, in ZIKV-infected cells, the interactions of IGF2BP2 with 40 and 22 proteins were either decreased or increased, respectively, with 52 of these changes being specifically observed only in ZIKV-infected cells (Figure 9A; Figure 9—figure supplement 1A). Gene ontology analysis of the 62 partners whose interaction with IGF2BP2 was altered during ZIKV infection revealed a high enrichment of biological processes related to mRNA splicing (Figure 9B). The interactome tree of these 62 IGF2BP2 protein partners generated with STRING database highlighted two major clusters regulated by ZIKV (Figure 9C). In line with our gene ontology analysis, one of these clusters comprised proteins involved in mRNA splicing for most of which interaction with IGF2BP2 was significantly decreased during ZIKV infection (red circles). The second identified cluster was related to ribosome biogenesis.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig8-v1.jpg)
+
+**Figure 8.:** Huh7.5 cells stably expressing IGF2BP2-HA (+) and control cells (-) were infected with ZIKV H/PF/2013 at an MOI of 10, or left uninfected. Two days later, cell extracts were prepared and subjected to anti-HA immunoprecipitations. (A) Purified complexes were analyzed by western blotting for their content in the indicated proteins. IGF2BP1 (B), IGF2BP3 (C), and YBX1 (D) levels were quantified and means of protein signals (normalized to actin [extracts] and IGF2BP2 [IP]) ± SEM are shown based on six to eight independent experiments. ns: not significant (unpaired t-test).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Huh7.5 cells were infected with ZIKV H/PF/2013 with an MOI of 10 or left uninfected. Two days post-infection, cells were fixed, immunolabeled for the indicated factors, and imaged by confocal microscopy. Scale bar = 10 µm. The Manders’ coefficients (mean ± SEM) representing the fraction of dsRNA (cyan) and NS3 (red) signals overlapping with IGF2BP3 (A), IGF2BP1 (B), or YBX1 (C) signals are shown (n=number of cells). The white squares indicate the magnified areas in the insets.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A–B) Huh7.5 cells were infected with ZIKV H/PF/2013 with an MOI of 10 or left uninfected. Two days post-infection, cells were fixed, immunolabeled for the indicated factors, and imaged by confocal microscopy. Scale bar = 10 µm. The Manders’ coefficients (mean ± SEM) representing the fraction of double-stranded RNA (dsRNA) (cyan) and NS3 (red) signals overlapping with LARP1 (A) or DDX5 (B) signals are shown (n=number of cells). The white squares indicate the magnified areas in the insets. (C–D) The Manders’ coefficients per cell determined from Figure 4B, Figure 8—figure supplements 1A–C and 2A, B are plotted. Means ± SEM are shown in black.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Huh7.5 cells stably expressing IGF2BP2-HA (+) and control cells (-) were infected with ZIKV H/PF/2013 at an MOI of 10 or left uninfected. Two days later, cell extracts were prepared and subjected to RNase A treatment (+) or not (-) before anti-HA immunoprecipitations. The resulting complexes were analyzed by western blotting for their abundance in the indicated proteins. (B) The RNA content in cell extracts was analyzed on an agarose gel for controlling the efficiency of the RNase A treatment. (C) ZIKV NS5 levels in the IP samples were quantified and means of protein signals (normalized to IGF2BP2) ± SEM based on three independent experiments are shown. ***: p<0.001 (unpaired t-test).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig9-v1.jpg)
+
+**Figure 9.:** Huh7.5 cells expressing IGF2BP2-HA and control cells were infected with ZIKV H/PF/2013, dengue virus serotype 2 (DENV2) 16681s, or left uninfected. Two days later, cell extracts were prepared and subjected to anti-HA immunoprecipitations. Resulting complexes were analyzed by quantitative mass spectrometry. (A) Venn diagram depicting the overlap between IGF2BP2 partners modulated by ZIKV and/or DENV infections. (B) Gene ontology (GO) biological process analyses of the IGF2BP2 interactions which were impacted upon ZIKV infection. (C) Interaction tree of the 62 IGF2BP2 interactions modulated by ZIKV infection (generated with STRING online resource). The red and green circles identify the partners of the STRING network whose association with IGF2BP2 is decreased and increased during infection, respectively. The biological process analysis generated by STRING is also shown.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Heatmap of z-scored protein intensities of all significantly regulated interacting proteins (ANOVA, false discovery rate [FDR] < 0.05) across stimuli (mock, dengue virus [DENV]-infected, Zika virus [ZIKV]-infected) and baits (nontarget [NT], IGFBP2). (B) Intensity-based absolute quantification (iBAQs) of protein abundance of differential interacting proteins of IGF2BP2 upon DENV or ZIKV infection (N.I.=not identified).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A) Huh7.5 cells expressing IGF2BP2-HA and control cells were infected with ZIKV H/PF/2013 at an MOI of 10 or left uninfected. Two days later, cell extracts were prepared and subjected to anti-HA immunoprecipitations. The resulting complexes were analyzed by western blotting for their abundance in the indicated proteins. (B) ATL2 levels were quantified and means of protein signals (normalized to actin [extracts] and IGF2BP2 [IP]) ± SEM are shown. *: p<0.05; ns: not significant (unpaired t-test).
+
 One of the best partners specifically modulated by ZIKV and/or DENV was Atlastin 2 (ATL2) whose interaction with IGF2BP2 was most significantly increased upon ZIKV infection (p-value=10-5.7; Supplementary file 1; highlighted with * in Figure 9C and Figure 9—figure supplement 1B). ATL2 is an ER-shaping protein (Wang et al., 2016) which was reported to be involved in the formation of orthoflavivirus VPs (Neufeldt et al., 2019). We validated this ZIKV-specific phenotype by co-immunoprecipitation assays (Figure 9—figure supplement 2A and B, Figure 8—figure supplement 3A) in which we could detect a 14-fold increase in IGF2BP2-HA/ATL2 interaction when cells were infected with ZIKV compared to uninfected or DENV-infected samples. As an additional specificity control, we did not detect any interaction between ATL2 and HA-tagged VCP (Figure 9—figure supplement 2), an ER quality control protein which was shown to be physically recruited into DENV and ZIKV replication compartments (Anton et al., 2021; Mazeaud et al., 2021), ruling out that ATL2/IGF2BP2 interaction is simply due to the presence of ATL2 within remodeled ER or because of non-specific binding to the HA-tag. Altogether, these data show that ZIKV infection specifically alter the composition of IGF2BP2 RNP complex.
 
-## IGF2BP2 is involved in the biogenesis of ZIKV replication organelles
+### IGF2BP2 is involved in the biogenesis of ZIKV replication organelles
 
 The fact that ZIKV infection promotes IGF2BP2 association with ATL2 led us to hypothesize that IGF2BP2 regulates vRNA replication by contributing to ZIKV replication organelle biogenesis. Since IGF2BP2 KD decreases vRNA replication and thus, indirectly reduces the overall synthesis of viral proteins that drive vRO formation, evaluating this hypothesis in infected cells was not possible. To tackle this challenge, we took advantage of a recently described plasmid-based system (named pIRO-Z) (Cerikan et al., 2020; Goellner et al., 2020) which induces vROs de novo in transfected cells in a replication-independent manner (Figure 10A). This plasmid allows the cytoplasmic transcription of NS1-NS5 polyprotein-encoding mRNA under the control of T7 RNA polymerase which is stably overexpressed in Huh7-derived Lunet-T7 cells.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/94347/elife-94347-fig10-v1.jpg)
 
-**Figure 10.:** (A) Schematic representation of the pIRO system. Upon transfection in cells expressing the T7 RNA polymerase, this plasmid allows the cytoplasmic transcription of NS1-NS5 polyprotein under the control of T7 promoter, in a ZIKV replication-independent manner. NS1-5 polyprotein synthesis is under the control of ECMV IRES. The presence of both ZIKV 3’ NTR and 5’ cyclization sequence (5’ CS) is required for efficient vesicle packet (VP) induction. Finally, the activity of HDV ribozyme ensures that the 3’ terminus of the RNA is similar to that of viral RNA (vRNA) genome. Huh7-Lunet-T7 were transduced with short-hairpin RNA (shRNA)-expressing lentiviruses at an MOI of 5–10. Two days later, transduced cells were transfected with pIRO-Z plasmid. Sixteen hours later, cells were analyzed for (B) IGF2BP2 mRNA levels by RT-qPCR to measure knockdown efficiency, (C–D) transfection efficiency by confocal imaging of NS3-labeled cells, and (E) for VP content by transmission electron microscopy. Electron micrographs were used to measure (F) the percentage of cells with VPs and (G) the diameter of VPs in each condition. ***: p<0.001; NS: not significant (unpaired t-test).Figure 10—source data 1.Figure 10.
+**Figure 10.:** (A) Schematic representation of the pIRO system. Upon transfection in cells expressing the T7 RNA polymerase, this plasmid allows the cytoplasmic transcription of NS1-NS5 polyprotein under the control of T7 promoter, in a ZIKV replication-independent manner. NS1-5 polyprotein synthesis is under the control of ECMV IRES. The presence of both ZIKV 3’ NTR and 5’ cyclization sequence (5’ CS) is required for efficient vesicle packet (VP) induction. Finally, the activity of HDV ribozyme ensures that the 3’ terminus of the RNA is similar to that of viral RNA (vRNA) genome. Huh7-Lunet-T7 were transduced with short-hairpin RNA (shRNA)-expressing lentiviruses at an MOI of 5–10. Two days later, transduced cells were transfected with pIRO-Z plasmid. Sixteen hours later, cells were analyzed for (B) IGF2BP2 mRNA levels by RT-qPCR to measure knockdown efficiency, (C–D) transfection efficiency by confocal imaging of NS3-labeled cells, and (E) for VP content by transmission electron microscopy. Electron micrographs were used to measure (F) the percentage of cells with VPs and (G) the diameter of VPs in each condition. ***: p<0.001; NS: not significant (unpaired t-test).
 
 Lunet-T7 cells were transduced with shNT/shIGF2BP2-expressing lentiviruses and subsequently transfected with pIRO-Z. The efficiency of IGF2BP2 KD was controlled by RT-qPCR (Figure 10B). Confocal microscopy of NS3-immunolabeled cells confirmed that the transfection efficiencies were comparable between all conditions (Figure 10C and D). When imaged by electron microscopy (EM), VPs were detected in 70% of the shNT-transduced cells. In contrast, IGF2BP2 KD resulted in a decrease in the proportion of cells containing vROs (Figure 10E and F) while the diameter of VPs remained unchanged (Figure 10G). These results demonstrate that IGF2BP2 plays a role in the biogenesis of ZIKV VPs independently from vRNA synthesis.
 
@@ -130,7 +178,654 @@ Overall, this study highlights the physical and functional interplay between ZIK
 
 ## Materials and methods
 
-## Cells, viruses, and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>IGF2BP2</td>
+      <td>UniProt</td>
+      <td>Q9Y6M1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (Rosetta DE3)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat#: 70954</td>
+      <td>Competent cells to produce proteins</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: C2988J</td>
+      <td>Competent cells for plasmid amplification</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (orthoflavivirus)</td>
+      <td>ZIKVH/PF/2013</td>
+      <td>European Virus Archive Global</td>
+      <td>001v-EVA1545</td>
+      <td>Accession:KJ776791.2Asian lineage</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (orthoflavivirus)</td>
+      <td>ZIKV MR766</td>
+      <td>European Virus Archive Global</td>
+      <td>001v-EVA143</td>
+      <td>African lineage Accession:DQ859059.1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (orthoflavivirus)</td>
+      <td>DENV1 HAWAII</td>
+      <td>Provided by Tom Hobman (University of Alberta, Canada)</td>
+      <td></td>
+      <td>Serotype 1 Accession:KM204119.1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (orthoflavivirus)</td>
+      <td>DENV2 NGC</td>
+      <td>Provided by Tom Hobman (University of Alberta, Canada)</td>
+      <td></td>
+      <td>Serotype 2Taxonomy ID11065</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (orthoflavivirus)</td>
+      <td>DENV3 H87</td>
+      <td>Provided by Tom Hobman (University of Alberta, Canada)</td>
+      <td></td>
+      <td>Serotype 3Taxonomy ID408870</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (orthoflavivirus)</td>
+      <td>DENV4 H241</td>
+      <td>Provided by Tom Hobman (University of Alberta, Canada)</td>
+      <td></td>
+      <td>Serotype 4 Taxonomy ID408686</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (orthoflavivirus)</td>
+      <td>WNV NY99</td>
+      <td>European Virus Archive Global</td>
+      <td>003V-02107</td>
+      <td>Taxonomy ID1968826</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (betacoronavirus)</td>
+      <td>SARS-CoV-2 (Canada/QC-LSPQ-L00214517/2020)</td>
+      <td>Provided by the Public Health Laboratory of Quebec (INSPQ-LSPQ, Canada)</td>
+      <td></td>
+      <td>GISAID: EPI_ISL_535728</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>pcDNA3-GFP-IMP2-2</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_42175</td>
+      <td>DNA used for IGF2BP2-HA cloning</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>VCP (wt)-EGFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_23971</td>
+      <td>DNA used for VCP-HA cloning</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Huh7.5</td>
+      <td>Provided by Patrick Labonté (INRS, Canada)</td>
+      <td>RRID:CVCL_7927</td>
+      <td>Human hepatocarcinoma cells line, derived from Huh7</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NHA-hTERT</td>
+      <td>DOI:10.1038/ncomms12700</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>JEG-3</td>
+      <td>ATCC</td>
+      <td>HTB-36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Huh7-Lunet-T7</td>
+      <td>DOI: 10.1016/j.celrep.2020.107859</td>
+      <td></td>
+      <td>Derived from Huh7-Lunet cells (CVCL_U459); maintained in zeocin-containing medium</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293T</td>
+      <td>Provided by Frederick-Antoine Mallette (University of Montreal, Canada)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>Vero E6</td>
+      <td>ATCC</td>
+      <td>CRL-1586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>Provided by Frederick-Antoine Mallette (University of Montreal, Canada)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Huh7.5 IGF2BP2-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in puromycin containing medium</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Huh7.5 VCP-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line maintained in puromycin containing medium</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pLKO.1-puro-shNT (plasmid)</td>
+      <td>Sigma-Aldrich</td>
+      <td>SHC002</td>
+      <td>Lentiviral construct to produce control non-target shRNA (shNT)-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shRHA/DHX9 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000001212</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shYBX1 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000007952</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shDDX6 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000074696</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shDDX21 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000051200</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shC1QPB (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000057106</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shDDX5 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000001130</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shYBX2 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000107507</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shDDX3 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000000003</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shLARP1 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000152624</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLKO.1-puro-shIGF2BP2 (plasmid)</td>
+      <td>MilliporeSigma</td>
+      <td>TRCN0000148565</td>
+      <td>Lentiviral construct to produce shRNA-expressing viruses</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VCP (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab11433 RRID:AB_298039</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IGF2BP3 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab177477 RRID:AB_2916041</td>
+      <td>WB (1:2000)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-YBX1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab12148 RRID:AB_2219278</td>
+      <td>WB (1:5000)IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DENV NS4B (Rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat#: GTX124250 RRID:AB_11176998</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZIKV NS4B (Rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat#: GTX133311 RRID:AB_2728825</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZIKV NS3 (Rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat#: GTX133309 RRID:AB_2756864</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZIKV NS5 (Rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat#: GTX133312 RRID:AB_2750559</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZIKV NS4A (Rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat#: GTX133704 RRID:AB_2887067</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DENV NS5 (Rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat#: GTX124253 RRID:AB_11169932</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DENV NS3 (Mouse monoclonal)</td>
+      <td>Genetex</td>
+      <td>Cat#: GTX629477 RRID:AB_2801283</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DENV2 16681 NS3 (Rat polyclonal)</td>
+      <td>MedimabsDOI:10.1111/cmi.13302</td>
+      <td>Custom made. Previously described.</td>
+      <td>WB (1:2000)IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dsRNA (Mouse monoclonal)</td>
+      <td>Cedarlane</td>
+      <td>Cat#: 10010200 RRID:AB_2651015</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LARP1 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A302-087A RRID:AB_1604274</td>
+      <td>WB (1:2000)IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATL2 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A303-332A RRID:AB_10971492</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Actin (Mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat#: A5441 RRID:AB_476744</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat#: H3663 RRID:AB_262051</td>
+      <td>WB (1:5000)IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IGF2BP2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 14672S RRID:AB_2798563</td>
+      <td>WB (1:1000)IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IGF2BP1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 8482S RRID:AB_11179079</td>
+      <td>WB (1:2000)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse, rabbit or rat Alexa Fluor (488, 568, or 647)-conjugated secondary antibodies</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A21208Cat#: A11029Cat#: A-11034Cat#: A-11031Cat#: A-21209Cat#: A-21247Cat#: A-31573Cat#: A11036Cat#: A-21236</td>
+      <td>Secondary antibodies used for immunofluorescence staining. Dilution: 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Life Technologies</td>
+      <td>D1306</td>
+      <td>Dilution: 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPI</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12254</td>
+      <td>Lentiviral construct to transfect and express IGF2BP2-HA and VCP-HA(cloned into AscI/SpeI cassette)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VCP (wt)-EGFP (plasmid)</td>
+      <td>Addgene</td>
+      <td>Plasmid# 23971RRID:Addgene_23971</td>
+      <td>For VCP-HA cloning into pWPI via PCR</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-GFP-IMP2-2 (plasmid)</td>
+      <td>Addgene</td>
+      <td>Plasmid# 42175RRID:Addgene_42175</td>
+      <td>For IGF2BP2-HA cloning into pWPI via PCR</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pIRO-Z (plasmid)</td>
+      <td>DOI:10.1016/j.celrep.2020.107859</td>
+      <td></td>
+      <td>Transfected in Lunet-T7 cells</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pFL-ZIKV-R2A (plasmid)</td>
+      <td>DOI:10.1016/j.chom.2016.05.004</td>
+      <td></td>
+      <td>Molecular clone to produce ZIKV-R2A (FSS13025 strain)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFK-sgZIKV-R2A</td>
+      <td>DOI:10.3390/v10070368</td>
+      <td></td>
+      <td>Molecular clone to produce ZIKV sub-genomes</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFK-sgZIKV-R2A GAA</td>
+      <td>DOI:10.3390/v10070368</td>
+      <td></td>
+      <td>Molecular clone to produce ZIKV sub-genomes</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC57 (plasmid)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: SD0171</td>
+      <td>Used to in vitro transcribe ZIKV UTR RNA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNRC6A_F</td>
+      <td>DOI:10.1016/j.molcel.2019.11.007</td>
+      <td>qRT-PCR primers</td>
+      <td>ACTAACTGTGGAGACCTTCACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNRC6A _R</td>
+      <td>DOI:10.1016/j.molcel.2019.11.007</td>
+      <td>qRT-PCR primers</td>
+      <td>GTTAATGGGAGATGGGCTGCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PUM2_F</td>
+      <td>DOI:10.1016/j.molcel.2019.11.007</td>
+      <td>qRT-PCR primers</td>
+      <td>TTTGCGCAAATACACATACGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PUM2 _R</td>
+      <td>DOI:10.1016/j.molcel.2019.11.007</td>
+      <td>qRT-PCR primers</td>
+      <td>GGTCCTCCAATAGGTCCTAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CIRBP_F</td>
+      <td>DOI:10.1016/j.molcel.2019.11.007</td>
+      <td>qRT-PCR primers</td>
+      <td>GACCACGAGCCATGAGTTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CIRBP _R</td>
+      <td>DOI:10.1016/j.molcel.2019.11.007</td>
+      <td>qRT-PCR primers</td>
+      <td>CTCAGAGAAGTGAGTGGGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IGF2BP2_F</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CGGGGAAGAGACGGATGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IGF2BP2_R</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CGCAGCGGGAAATCAATCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZIKV_F</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>AGA TGA ACT GAT TGG CCG GGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZIKV_R</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>AGG TCC CTT CTG TGG AAA TA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_F</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>GAA GGT GAA GGT CGG AGT C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_R</td>
+      <td></td>
+      <td>qRT-PCR primers</td>
+      <td>GAA GAT GGT GAT GGG ATT TC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AscI-ATG-VCP_F</td>
+      <td>This paper</td>
+      <td>VCP cloning primers</td>
+      <td>CTGCAGGCGCGCCGCCACCATG GCTTCTGGAGCCGATTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VCP-HA-STOP-SpeI_ R</td>
+      <td>This paper</td>
+      <td>VCP cloning primers</td>
+      <td>ACAAACTAGTTTAGTAATCAGGCACGTCATAGGGGTAACCGCCATACAGGTCATCATCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AscI-ATG-IGF2BP2_F</td>
+      <td>This paper</td>
+      <td>IGF2BP2 cloning primers</td>
+      <td>CTGCAGGCGCGCCGCCACCATGATGAACAAGCTTTACAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IGF2BP2-HA-STOP-SpeI_R</td>
+      <td>This paper</td>
+      <td>IGF2BP2 cloning primers</td>
+      <td>ACAAACTAGTTTAGTAATCAGGCACGTCATAGGGGTAACCCTTGCTGCGCTGTGAGGCGA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T7 transcription Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: AM1344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Invitrogen SuperScript IV VILO Master Mix RT kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 11756050</td>
+      <td>RT-qPCR assays</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Applied Biosystems SyBr Green Master mix</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: A25918</td>
+      <td>RT-qPCR assays</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ViewRNA ISH Cell Assay kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: QVC0001Cat#: QVC0508Cat#: QVC0509Cat#: QG0507Cat#: QVC0700Cat#: VF4-20142</td>
+      <td>Detection of ZIKV H/PF/2013 RNA in FISH experiments</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monoclonal Anti-HA-Agarose antibody</td>
+      <td>MilliporeSigma</td>
+      <td>Cat#: A2095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trizol-LS</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 10296010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NITD-008</td>
+      <td>Tocris Small Molecules</td>
+      <td>Cat#: 6045/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 10</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant software v.1.6.17</td>
+      <td>MaxQuant</td>
+      <td>RRID: SCR_014485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus software v.1.6.15</td>
+      <td>MaxQuant</td>
+      <td>RRID: SCR_015753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MO.Affinity Analysis software v.2.1.3</td>
+      <td>NanoTemper Technologies GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageLab software</td>
+      <td>Bio-Rad</td>
+      <td>RRID:SCR_014210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>https://imagej.net/software/fiji/ DOI:10.1038/nmeth.2019</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells, viruses, and reagents
 
 Human hepatocarcinoma Huh7.5 cells, Huh7-derived cells stably expressing the T7 RNA polymerase (Lunet-T7; obtained from Ralf Bartenschlager, University of Heidelberg, Germany), Vero E6 cells (CRL-1586; ATCC, Manassas, VA, USA), HEK293T cells, HeLa cells, NHA-htert (obtained from Dr. Frédérick-Antoine Mallette, University of Montréal, Canada) were all cultured in DMEM (Thermo Fisher, Burlington, Canada) supplemented with 10% fetal bovine serum (FBS; Wisent), 1% non-essential amino acids (Thermo Fisher), and 1% penicillin-streptomycin (Thermo Fisher). The identity of HEK293T and HeLa cells has been confirmed by the short tandem repeats profiling authentication method at Génome Québec (Montréal, Canada). The JEG-3 cell line (HTB-36, ATCC) was cultured in MEM with 10% FBS, 1% HEPES (Thermo Fisher), 1% sodium pyruvate (Thermo Fisher), 1% sodium bicarbonate (Thermo Fisher), and 1% penicillin-streptomycin. Huh7.5-pWPI, Huh7.5-IGF2BP2-HA, and Huh7.5-VCP-HA stable cell lines were generated by transduction of Huh7.5 with lentiviruses expressing these tagged proteins and were cultured in the presence of 1 µg/mL puromycin (Thermo Fisher). All cell lines were systematically and regularly tested for the absence of mycoplasma contamination with the PCR Mycoplasma Detection Kit (#G238 (AG); Applied Biological Mat. Inc, Richmond, Canada).
 
@@ -138,7 +833,7 @@ ZIKV H/PF/2013, ZIKV MR766, and WNV NY99 were provided by the European Virus Arc
 
 Mouse monoclonal anti-VCP (ab11433), rabbit monoclonal anti-IGF2BP3 (ab177477), and anti-YBX1 (ab12148) were purchased from Abcam (Toronto, Canada). Rabbit anti-DENV NS4B (GTX124250; cross-reactive for ZIKV), rabbit anti-ZIKV NS4B (GTX133311), rabbit anti-ZIKV NS3 (GTX133309), rabbit anti-ZIKV NS5 (GTX133312), rabbit anti-ZIKV NS4A (GTX133704), rabbit anti-DENV NS5 (GTX124253), and mouse monoclonal anti-DENV-NS3 (GTX629477; cross-reactive for ZIKV) were obtained from Genetex (Irvine, CA, USA). Rat polyclonal antibodies targeting DENV2 16681 NS3 which are cross-reactive with ZIKV NS3 were generated at Medimabs, Montréal, Canada and already reported (Anton et al., 2021). Mouse monoclonal anti-dsRNA (10010200) was obtained from Cedarlan. Rabbit polyclonal anti-LARP1 (A302-087A) and anti-ATL2 (A303-332A) come from Thermo Fisher Scientific. Mouse monoclonal anti-Actin (A5441) and mouse anti-HA (H3663) were purchased from MilliporeSigma (Oakville, Canada). Rabbit monoclonal anti-IGF2BP2 (14672S) and anti-IGF2BP1 (8482S) were purchased from Cell Signaling (Danvers, MA, USA).
 
-## Plasmid design and DNA cloning
+### Plasmid design and DNA cloning
 
 To generate tagged HA proteins IGF2BP2 and VCP expressing lentiviral constructs, PCR was performed using a plasmid VCP (wt)-EGFP gifted from Nico Dantuma (Addgene, Watertown, MA, USA; plasmid # 23971, http://n2t.net/addgene:23971; RRID:Addgene_23971) (Tresse et al., 2010). Forward primers expressing HA-tag fused to VCP at the C-terminus was used for this PCR. For IGF2BP2, we used pcDNA3-GFP-IMP2-2 (Addgene plasmid # 42175, https://www.addgene.org/42175/; RRID:Addgene_42175) as template and the HA-coding sequence was included in one of the primers to generate a C-terminally HA-tagged IGF2BP2. PCR products were cloned into the AscI/SpeI cassette of pWPI lentiviral plasmid.
 
@@ -146,73 +841,73 @@ Plasmids for the recombinant expression of IGF2BP2RRM and IGF2BP2KH34 were comme
 
 Newly created DNA constructs are available freely upon request to the corresponding author.
 
-## Lentivirus production, titration, and transduction
+### Lentivirus production, titration, and transduction
 
 Sub-confluent HEK293T cells were cotransfected with pCMV-Gag-Pol and pMD2-VSV-G packaging plasmids and shRNA-encoding pLKO.1-puro plasmids or pWPI expressing HA-tagged proteins, using 25 kD linear polyethylenimine (Polysciences Inc, Warrington, PA, USA). Two- and three days post-transfection, HEK293T supernatants were collected and filtered at 0.25 μm and stored at –80°C. Lentiviruses were titrated in HeLa cells as previously described (Chatel-Chaix et al., 2013). Briefly, 1 day after transduction with serially diluted lentiviruses, cells are incubated with 1 μg/mL puromycin. Five days later, cell colonies were washed twice and fixed/stained with 1% crystal violet/10% ethanol for 15–30 min. Cells were rinsed with tap water. Colonies were counted, and titers calculated considering inoculum dilution. Huh7.5 transductions were performed using an MOI of 10 in the presence of 8 µg/mL polybrene.
 
-## Cell viability assays
+### Cell viability assays
 
 MTT assays were performed to evaluate cell viability after lentiviral transduction. Huh7.5 were plated in 96-well plates (7500 cells/well) with 8 µg/mL polybrene and with the different lentiviruses at an MOI of 10. One day post-transduction, the medium was changed and after 4 days post-transduction, 20 µL of MTT at 5 mg/mL was added in the medium and incubated 1–4 hr at 37°C. Medium was removed and the MTT precipitates were dissolved with 150 µL of 2% (vol/vol) of 0.1 M glycin in DMSO (pH 11) per well. Absorbance at 570 nm was read with Spark multimode microplate reader (Tecan, Männedorf, Switzerland) with the reference at 650 nm.
 
-## Plaque assays
+### Plaque assays
 
 2·105 Vero E6 cells were seeded in 24-well plates. One day after plating, virus samples were serially diluting to 10–1 at 10–6 fold in complete DMEM. 400 μL of serial dilutions were used to infect Vero E6 cells in duplicates (200 μL of dilution/well). 2 hr post-infection, the inoculum was removed and replaced for serum-free MEM (Thermo Fisher) containing 1.5% carboxymethylcellulose (MilliporeSigma) for ZIKV, DENV, and WNV. For SARS-CoV-2 infected cells were incubated in MEM-0.8% carboxymethylcellulose. After 7 days for DENV2 16681s, 6 days for DENV1 HAWAII, 5 days DENV2 NGC and DENV3 H87, 4 days for ZIKV H/PF/2013, ZIKV MR766, ZIKV FSS13025, and DENV4 H241, and 3 days for WNV NY99 and SARS-CoV-2, titration are fixed during 2 hr in 2.5% formaldehyde. After thoroughly rinsing with tap water, cells were stained with 1% crystal violet/10% ethanol for 15–30 min. Stained cells were washed with tap water, plaques were counted, and titers of infectious viruses were calculated in PFU/mL.
 
-## Rluc assay
+### Rluc assay
 
 105 Huh7.5 cells were transduced and seeded in 12-well plates. One day post-transduction, we changed the medium, and the day after, we infected them with ZIKV-R2A reporter viruses at an MOI of approximately 0.0001. 2 dpi, cells were lysed in 200 µL of luciferase lysis buffer (1% Triton X-100; 25 mM glycyl-Glycine, pH 7.8; 15 mM MgSO4; 4 mM EGTA; 1 mM DTT added directly prior to use). 30 µL of lysates were plated in a 96-well white plate and luminescence was read with a Spark multimode microplate reader (Tecan) after injection of 150 µL of luciferase buffer (25 mM glycyl-glycine pH7.8; 15 mM KPO4 buffer pH 7.8; 15 mM MgSO4; 4 mM EGTA; 1 mM coelenterazine added directly prior to use). All values were background-subtracted and normalized to the control shNT-transduced cells.
 
-## Immunofluorescence assays
+### Immunofluorescence assays
 
 Huh 7.5 cells were grown in 24-well plates containing sterile coverslips. 1 day post-seeding, cells were infected with H/PF/2013 with an MOI of 5–10. Two days post-infection, cells were washed three times with PBS before fixation, with 4% PFA for 20 min. Then, cells were washed three times with PBS before storing at 4°C. Cells were permeabilized with PBS 1X-0.2% Triton X-100 for 15 min at room temperature, and subsequently blocked for 1 hr with PBS supplemented with 5% bovine serum albumin and 10% goat serum. Cells were incubated with primary antibodies for 2 hr protected from light at room temperature. Coverslips were washed three times with PBS before incubating for 1 hr with Alexa Fluor (488, 568, or 647)-conjugated secondary antibodies, in the dark at room temperature. Coverslips were then washed three times for 10 min with PBS and incubated for 15 min with 4’,6’-diamidino-2-phenylindole (DAPI; Thermo Fisher, Burlington) diluted 1:10,000 in PBS. Finally, coverslips were washed three times with PBS and once with distilled water before mounting on slides with FluoromountG (SouthernBiotech, Birmingham, AL, USA). Imaging was carried out with an LSM780 confocal microscope (Carl Zeiss, Toronto, Canada) at the Confocal Microscopy Core Facility of the INRS-Centre Armand-Frappier Santé Biotechnologie and subsequently processed with the Fiji software (available at this web site: https://imagej.net/software/fiji/downloads). For the colocalization analysis, the Manders’ coefficients were measured using the JacoP plugin in Fiji. In this study, the Manders’ coefficient represents the fraction of NS3 or dsRNA signals overlapping with the signals of the indicated cellular RBPs.
 
-## Co-immunoprecipitation assays
+### Co-immunoprecipitation assays
 
 For anti-HA immunoprecipitation, cells stably expressing IGF2BP2-HA protein, or VCP-HA protein, or transduced with the control lentiviruses (pWPI) were infected with ZIKV H/PF/2013 at an MOI of 10. Two dpi, cells were washed twice with PBS, collected and lysed for 20 min on ice in a buffer containing 0.5% NP-40, 150 mM NaCl, 50 mM Tris-Cl pH 8.0, and EDTA-free protease inhibitors (Roche, Laval, Canada). The cell lysates were centrifuged at 13,000 rpm for 15 min at 4°C and supernatants were collected and stored at –80°C. Bradford assays were carried out to quantify protein concentration, before performing immunoprecipitation with the equal quantities of protein for each condition (350–800 μg of proteins) in 1–1.5 mL total volume. For Figure 8—figure supplement 3B-C, prior to the immunoprecipitation step, cell extracts were treated with 20 µg/mL RNase A for 20 min at room temperature. The HA immunoprecipitation was performed by incubating the lysate with 50 μL of a 50/50 slurry of mouse monoclonal anti-HA coupled to agarose beads (MilliporeSigma) for 3 hr at 4°C on a rotating wheel. The resin was washed four times with lysis buffer. The last wash was performed in new low-binding microtubes. For immunoblotting, complexes were eluted from the resin with standard SDS-PAGE loading buffer. For RNA extraction, beads were resuspended in 250 μL lysis buffer and 1 mL Trizol-LS (Thermo Fisher) was added. The samples were stored at –80°C before western blotting. The imaging of western blot membranes was done using a ChemiDoc MP System (Bio-Rad). Quantification of western blots signals was performed with the ImageLab software (Bio-Rad).
 
 For the MS experiment, the immunoprecipitated samples were produced with the same protocol, but the final wash steps are different. After lysate incubation with the antibodies, the first three washes were done with 1 mL of lysis buffer (10 min each) at 4°C on a rotating wheel and spun down for 1 min at 10,000 rpm. The last quick wash was done with detergent-free washing buffer (150 mM NaCl, 50 mM Tris-Cl pH 8.0) and spun down for 1 min at 10,000 rpm. After the removal of buffer excess, and using a cut 200 μL tips, beads were transferred into new low-binding tubes. We performed three quick washes with 1 mL of washing buffer. After removal of the buffer, the samples were snap-frozen in ice dry and stored at –80°C until use.
 
-## RT-qPCR
+### RT-qPCR
 
 Total RNA was extracted from cells using the RNeasy Mini kit (QIAGEN, Toronto, Canada). Co-immunoprecipitated RNA was extracted from immunoprecipitated samples using Trizol-LS according to the manufacturer’s instructions. RNAs were subjected to reverse transcription using the Invitrogen SuperScript IV VILO Master Mix RT kit (Thermo Fisher). Real-time PCR was performed using the Applied Biosystems SYBR green Master mix (Thermo Fisher) and a LightCycler 96 (Roche) for the detection. The following primer pairs were used: ZIKV H/PF/2013 vRNA: 5′-AGATGAACTGATGGCCGGGC-3′ and 5′-AGGTCCCTTCTGTGGAAATA-3′; GAPDH 5′-GAAGGTGAAGGTCGGAGTC-3′ and 5′-GAAGATGGTGATGGGATTTC-3′; IGF2BP2 5'-CGGGGAAGAGACGGATGATG-3' and 5'-CGCAGCGGGAAATCAATCTG-3'; PUM2 5’-TTTGCGCAAATACACATACGGG-3’ and 5’-GGTCCTCCAATAGGTCCTAGGT-3’; CIRBP 5’-GACCACGAGCCATGAGTTTTC-3’ and 5’- CTCAGAGAAGTGAGTGGGGC-3’; TNRC6A 5’- ACTAACTGTGGAGACCTTCACG-3’ and 5’- GTTAATGGGAGATGGGCTGCTA-3’. Relative abundance of RNAs was calculated with the ΔΔCt method using GAPDH mRNA as a reference RNA.
 
-## RNA FISH
+### RNA FISH
 
 Coverslip were coated with collagen I (Corning, Tewksbury, MA, USA) for 30 min and washed three times with PBS. 7×104 Huh 7.5 cells/well were seeded in on 24-well plates and infected 1 day later with ZIKV H/PF/2013 with an MOI of 10. Two dpi, cells were washed three times with PBS before fixation with 4% PFA for 20 min. Then, cells were washed three times with PBS before storing at 4°C. FISH was performed using ViewRNA ISH Cell Assay kit (Thermo Fisher) according to the manufacturer’s instructions. Briefly, cells were permeabilized with the kit QS detergent for 5 min, followed by three PBS washes and kit protease QS treatment. The protease QS was diluted to 1:10,000 and incubated for 10 min at room temperature. The probes for ZIKV RNA recognition (VF4-20142; Thermo Fisher) were diluted 1:100 with the kit dilution buffer. Probe hybridization was performed at 40°C for 3 hr. Subsequently, the pre-amplifying, amplifying, and fluorophore labeling steps were performed, each at 40°C for 30 min. We wash the cells like it is mentioned in the protocol. Coverslips were then immunostained with anti-IGF2BP2 antibodies and Alexa Fluor488 secondary antibodies followed by DAPI staining using a standard immunofluorescence protocol. For the colocalization analysis, the Manders’ coefficient representing the fraction of vRNA signal overlapping with IGF2BP2 signal was measured using the JacoP plugin in Fiji.
 
-## IGF2BP2 protein production for in vitro assays
+### IGF2BP2 protein production for in vitro assays
 
 For the expression of IGF2BP2RRM, plasmid was transformed into Rosetta DE3 competent cells (MilliporeSigma) by heat shock. A single colony was selected and grown in 50 mL of LB media for 16–18 hr at 37°C and 220 rpm, and then transferred to a secondary culture of 500 mL of LB. Secondary cultures were incubated at 37°C and 220 rpm before induction with 1 mM IPTG when the cultures reached OD600 reached 3.0. Following induction, cultures were incubated at 20°C and 220 rpm for 16–18 hr. Cells were centrifuged and resuspended in lysis buffer (50 mM phosphate pH 7.0, 500 mM NaCl, 10 mM imidazole). Next, we incubated the cells for 20 min at 4°C following the addition of 70 μM lysozyme, 1 μM PMSF, 80 mU/mL DNase, and 3 μM sodium deoxycholate. The cells were then lysed via sonication. Lysate was then centrifuged and passed over a HisTrap HP (Global Life Science Solutions, New York, USA) column. The column was washed with lysis buffer containing 30 mM imidazole, then eluted with a gradient elution by mixing lysis and elution buffers (50 mM phosphate pH 7.0, 500 mM NaCl, and 250 mM imidazole). The purity and homogeneity of selected samples were assessed by SDS-PAGE immediately after purification. Selected fractions were concentrated in Vivaspin 20 10 kDa MWCO centrifugal concentrators and applied to a Mono Q 10/100 GL column (Global Life Science Solutions) equilibrated with storage buffer (50 mM phosphate pH 7.0, 150 mM NaCl) to remove any residual nucleic acid. Eluted fractions were loaded in SDS-PAGE and homogenous samples were again pooled and concentrated, then passed through a Superdex 75 Increase 10/300 GL column (Global Life Science Solutions, USA) equilibrated with storage buffer as a final purification step. Samples were once again checked with SDS-PAGE, and homogenous samples were stored at 4°C until needed.
 
 Expression and purification of IGF2BP2KH3-4 was performed as described previously (Biswas et al., 2019). Briefly, vectors were transformed and grown to an OD of 0.6, then induced with 1 mM IPTG. Cells were centrifuged and resuspended in lysis buffer (50 mM phosphate pH 7.0, 1.5 M NaCl, 10 mM imidazole) and then lysed through sonication. Purification was performed using nickel affinity chromatography, with eluted fractions being checked using SDS-PAGE for homogeneity. Samples were concentrated and passed over a Superdex 75 Increase 10/300 GL column as a final purification step.
 
-## In vitro transcription and RNA labeling
+### In vitro transcription and RNA labeling
 
 Plasmids containing cDNA for ZIKV 5’ and 3’ NTRs were transformed and cultured in E. coli NEBα (New England Biolabs, Whitby, Canada) competent cells and further recovered using GeneJET Plasmid Maxiprep Kit (Thermo Fisher Scientific, Canada) as per the manufacturer’s protocol, followed by a 4 hr linearization with XbaI endonuclease (New England Biolabs) at 37°C. ZIKV NTRs RNAs were synthesized by in vitro transcription using an in-house purified T7 polymerase, as previously described (D’Souza et al., 2022; Mrozowich et al., 2023). Subsequently, RNAs were purified on a Superdex 200 10/300 GL column (Global Life Science Solutions, USA) equilibrated with RNA buffer (10 mM Bis-Tris pH 6.0, 100 mM NaCl, 15 mM KCl, 5 mM MgCl2, 5% glycerol).
 
 Pure and homogeneous RNAs were concentrated to ~100 μM through ethanol precipitation and then fluorescently labeled at the 5’ end. The labeling reaction was then prepared from 30 μL of concentrated RNA, 1.25 mg of 1-ethyl-3-(3-dimethylamino) propyl carbodiimide hydrochloride (EDC), and 5 mg/mL of Alexa Fluor 488 dye (Thermo Fisher Scientific) dissolved in DMSO. Samples were thoroughly mixed until contents were entirely dissolved before adding 20 μL of 0.1 M imidazole, pH 6. Afterward, we incubated the samples at room temperature for 3 hr before being further purified on a Superdex 200 10/300 GL column. RNA was checked for degradation using agarose gel electrophoresis and for labeling efficiency using MST.
 
-## MST-based in vitro RNA-binding assays
+### MST-based in vitro RNA-binding assays
 
 MST experiments were conducted at room temperature using Nanotemper Technologies Monolith NT.115 instrument to measure binding affinity. Pure fluorescently labeled RNAs were used as targets with a fixed concentration of 250 nM for both ZIKV 5’ and 3’ NTRs. The proteins were set as the ligand and diluted in a twofold serial dilution with concentrations ranging from 65.00 to 1.98 × 104 μM for IGF2BP2KH34 and 10.00–6.10 × 105 μM for IGF2BP2RRM. Reactions were prepared using MST buffer (50 mM phosphate pH 7.0, 150 mM NaCl, and 0.05% Tween 20), incubated at room temperature for 20 min and subsequently loaded into standard capillaries. The binding affinity experiments were performed using medium MST-Power, 80% excitation-power, with data collection on the cold region at 0 s and the hot region at 5 s. Three independent replicates were collected and analyzed using MO.Affinity Analysis software v.2.1.3, in which Kd fitting models were obtained and plotted using GraphPad Prism 9 software.
 
-## Affinity purification and quantitative LC-MS/MS proteomics
+### Affinity purification and quantitative LC-MS/MS proteomics
 
 For the determination of IGFBP2 interactome, five independent affinity purifications using an anti-HA-conjugated agarose beads (MilliporeSigma) were performed for each experimental condition. Confluent monolayers of Huh7.5 cells constitutively expressing empty ctrls (nontarget [NT]) or HA-tagged IGFBP2 were mock-infected or infected with DENV or ZIKV at an MOI of 5 and 10, respectively. Cells were lysed in Lysis Buffer (50 mM Tris pH 7.6, 150 mM NaCl, 0.5% NP-40) containing protease and phosphatase inhibitors (cOmplete and PhosStop, Roche), and processed as previously described (Scaturro et al., 2018). Bound proteins (IP) or 50 µg of normalized whole cell lysates (Input) were denatured by incubation in 40 µL U/T buffer (8 M urea, 6 M thiourea, 100 mM Tris-HCl pH 8.5), and reduction and alkylation carried out with 10 mM DTT and 55 mM iodoacetamide in 50 mM ABC buffer (50 mM NH4HCO3 in water pH 8.0), respectively. After digestion with 1 µg LysC (Wako Chemicals, Richmond, VA, USA) at room temperature for 3 hr, the suspension was diluted in ABC buffer, and the protein solution was digested with trypsin (Promega, Madison, WI, USA) overnight at room temperature. Peptides were purified on stage tips with three C18 Empore filter discs (3M, London, Canada) and analyzed by liquid chromatography coupled to MS as previously described (Scaturro et al., 2018).
 
 Samples were analyzed on a nanoElute (plugin v.1.1.0.27; Bruker, Billerica, MA, USA) coupled to a trapped ion mobility spectrometry quadrupole time of flight (timsTOF Pro) (Bruker) equipped with a CaptiveSpray source. Peptides were injected into a Trap cartridge (5 mm × 300 μm, 5 μm C18; Thermo Fisher Scientific) and next separated on a 25 cm × 75 μm analytical column, 1.6 μm C18 beads with a packed emitter tip (IonOpticks, Fitzroy, Australia). The column temperature was maintained at 50°C using an integrated column oven (Sonation GmbH, Biberach an der Riss, Germany). The column was equilibrated using four column volumes before loading samples in 100% buffer A (99.9% Milli-Q water, 0.1% formic acid [FA]). Samples were separated at 400 nL/min using a linear gradient from 2% to 17% buffer B (99.9% ACN, 0.1% FA) over 60 min before ramping up to 25% (30 min), 37% (10 min), and 95% of buffer B (10 min) and sustained for 10 min (total separation method time, 120 min). The timsTOF Pro was operated in parallel accumulation-serial fragmentation (PASEF) mode using Compass Hystar v.5.0.36.0. Settings were as follows: mass range 100–1700 m/z, 1/K0 start 0.6 V⋅s/cm2; end 1.6 V⋅s/cm2; ramp time 110.1 ms; lock duty cycle to 100%; capillary voltage 1600 V; dry gas 3 L/min; dry temperature 180°C. The PASEF settings were: 10 tandem MS scans (total cycle time, 1.27 s); charge range 0–5; active exclusion for 0.4 min; scheduling target intensity 10,000; intensity threshold 2500; collision-induced dissociation energy 42 eV.
 
-## Raw data processing and analysis
+### Raw data processing and analysis
 
 Raw MS data were processed with the MaxQuant software v.1.6.17 using the built-in Andromeda search engine to search against the human proteome (UniProtKB, release 2019_10) containing forward and reverse sequences concatenated with the DENV-2 16681 strain (UniProtKB #P29990) and ZIKV H/PF/2013 strain (UniProtKB #KU955593) with the individual viral open reading frames manually annotated, and the label-free quantitation algorithm (Tyanova et al., 2016a). Additionally, the intensity-based absolute quantification (iBAQ) algorithm and match between runs option were used. In MaxQuant, carbamidomethylation was set as fixed and methionine oxidation and N-acetylation as variable modifications. Search peptide tolerance was set at 70 p.p.m. and the main search was set at 30 p.p.m. (other settings left as default). Experiment type was set as TIMS-DDA with no modification to the default settings. Search results were filtered with a false discovery rate (FDR) of 0.01 for peptide and protein identification. The Perseus software v.1.6.15 was used to process the data further. Protein tables were filtered to eliminate the identifications from the reverse database and common contaminants. When analyzing the MS data, only proteins identified on the basis of at least one peptide and a minimum of three quantitation events in at least one experimental group were considered. The iBAQ protein intensity values were normalized against the median intensity of each sample (using only peptides with recorded intensity values across all samples and biological replicates) and log-transformed; missing values were filled by imputation with random numbers drawn from a normal distribution calculated for each sample. PCA was used for quality control variance across biological replicates, and remove outliers (replicates 1 and 5 of IGFBP2 pull-downs were removed from all the matrix).
 
 Significant interactors were determined by multiple ANOVA t-tests with permutation-based FDR statistics. We performed 250 permutations, and the FDR threshold was set at 0.05. The parameter S0 was set at 1 to separate background from specifically enriched interactors. Unsupervised hierarchical clustering of proteins was performed on logarithmized and z-scored intensities of ANOVA significant interactors. Five unique clusters of proteins differentially regulated upon viral infection were identified (Figure 9—figure supplement 1). Results were plotted as scatter plot and heatmap using Perseus (Tyanova et al., 2016b) or Adobe Illustrator.
 
-## Accession numbers and data availability
+### Accession numbers and data availability
 
 UniProtKB accession codes of all protein groups and proteins identified by MS are provided in Supplementary file 1 and were extracted from UniProtKB (Human; release 2019_10). The MS proteomics data have been deposited to the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository with the dataset identifier PXD052835.
 
-## Viral replication organelle induction and imaging
+### Viral replication organelle induction and imaging
 
 Lunet-T7 cells expressing a cytosolic T7 polymerase were seeded into six-well plates and transduced with lentivirus (MOI 5) containing shRNA sequences targeting either IGF2BP2 or NT. After 2 days, transduced cells were then seeded into 24-well plates (30,000 cells/well). One day later, cells were transfected with the pIRO-Z system as described in Goellner et al., 2020; Cerikan et al., 2020, using Mirus TransIT transfection reagent. After 18 hr, cells were fixed with 1.25% glutaraldehyde in 0.2 M HEPES buffer (for electron microscopy [EM] imaging) or processed for immunofluorescence, western blot, or RT-qPCR as described above.
 
@@ -220,10 +915,10 @@ To prepare cells for EM imaging, glutaraldehyde fixed samples were washed three 
 
 Sections were then mounted on EM grids for imaging. EM images were obtained on a JEOL JEM-1400 120 kV LaB6 transmission electron microscope (Jeol, Peabody, MA, USA) with a Gatan US1000 CCD camera at ×8000 magnification (Gatan, Pleasanton, CA, USA). Quantification was performed by systematically surveying cells and evaluating the presence of VPs. Only cells with >2 VPs were considered as positive. For each condition, >50 cells were surveyed over four biological replicates. All observed VPs were imaged, and VP diameters were determined using ImageJ by measuring the distance across two axes and averaging.
 
-## Bioinformatic analyses
+### Bioinformatic analyses
 
 The gene ontology analysis was performed with ShinyGO 0.77 software (http://bioinformatics.sdstate.edu/go/). The IGF2BP2 interactomic tree was generated with STRING database using the online resource at https://string-db.org/.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed with GraphPad Prism 9 software. In Figures 1 and 9 and Figure 8—figure supplement 3, the statistical significance was evaluated by a one-way ANOVA test (more than two test conditions compared). For Figures 2—9 and 11, and Figure 9—figure supplement 2, the statistical significance was determined using unpaired t-tests (two test conditions compared). p-Values below 0.05 were considered significant: ****: p<0.0001; ***: p<0.001; **: p<0.01; *p<0.05.

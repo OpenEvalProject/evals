@@ -37,7 +37,7 @@
 
 ## Abstract
 
-10.7554/eLife.01104.001 Establishing the time since death is critical in every death investigation, yet existing techniques are susceptible to a range of errors and biases. For example, forensic entomology is widely used to assess the postmortem interval (PMI), but errors can range from days to months. Microbes may provide a novel method for estimating PMI that avoids many of these limitations. Here we show that postmortem microbial community changes are dramatic, measurable, and repeatable in a mouse model system, allowing PMI to be estimated within approximately 3 days over 48 days. Our results provide a detailed understanding of bacterial and microbial eukaryotic ecology within a decomposing corpse system and suggest that microbial community data can be developed into a forensic tool for estimating PMI. DOI: http://dx.doi.org/10.7554/eLife.01104.001
+Establishing the time since death is critical in every death investigation, yet existing techniques are susceptible to a range of errors and biases. For example, forensic entomology is widely used to assess the postmortem interval (PMI), but errors can range from days to months. Microbes may provide a novel method for estimating PMI that avoids many of these limitations. Here we show that postmortem microbial community changes are dramatic, measurable, and repeatable in a mouse model system, allowing PMI to be estimated within approximately 3 days over 48 days. Our results provide a detailed understanding of bacterial and microbial eukaryotic ecology within a decomposing corpse system and suggest that microbial community data can be developed into a forensic tool for estimating PMI.
 
 ## Introduction
 
@@ -51,57 +51,353 @@ We conducted a laboratory experiment to characterize temporal changes in microbi
 
 ## Results and discussion
 
-## Study design and data generation
+### Study design and data generation
 
-We sampled the microbial communities from the mouse corpse abdominal cavity and skin (head and torso), as well as from the associated gravesoil from five replicate corpses over eight time points that spanned 48 days (Table 1, Supplementary file 1A). By using a mouse model, we were able to perform a highly replicated experiment with destructive sampling that enabled us to sample both the surface and interior of each corpse at each sampling time point. Importantly, this approach facilitated access to the abdominal cavity prior to natural corpse rupture, and thus our data addresses forensic hypotheses that the abdominal microbes play a key role in corpse decomposition (Evans, 1963). This approach contrasts with typical forensic studies of decomposition where one to three donated corpses of human or swine (used as a human model) are used for experiments where only externally accessible body sites are sampled (e.g., Pechal et al., 2013). A further advantage of using a mouse model system is that the large number of samples allowed us to assess to what extent the intra-individual variation of microbiota that we know is present in living humans and other mammals (Costello et al., 2009) extends to microbial community change during decomposition.10.7554/eLife.01104.003Table 1.Total number of samples collected for each site and abdominal, skin (head and body), soil (with and without corpses)DOI: http://dx.doi.org/10.7554/eLife.01104.003Sample typeSamples collectedSamples sequenced (16S HiSeq)Samples sequenced (18S Hiseq)Samples sequenced (PacBio)Abdominal65432312Skin of body5333310Skin of head4036296Soil with corpse5346608Soil no corpse12980Sum22316715226We show the number of successfully sequenced samples for each data type, including Illumina Hiseq and Pacific Biosciences. For Illumina data, we only included samples used in statistical analyses, which required>2500 sequences/sample. Details about each of the individual samples can be found in Supplementary file 1A.
+We sampled the microbial communities from the mouse corpse abdominal cavity and skin (head and torso), as well as from the associated gravesoil from five replicate corpses over eight time points that spanned 48 days (Table 1, Supplementary file 1A). By using a mouse model, we were able to perform a highly replicated experiment with destructive sampling that enabled us to sample both the surface and interior of each corpse at each sampling time point. Importantly, this approach facilitated access to the abdominal cavity prior to natural corpse rupture, and thus our data addresses forensic hypotheses that the abdominal microbes play a key role in corpse decomposition (Evans, 1963). This approach contrasts with typical forensic studies of decomposition where one to three donated corpses of human or swine (used as a human model) are used for experiments where only externally accessible body sites are sampled (e.g., Pechal et al., 2013). A further advantage of using a mouse model system is that the large number of samples allowed us to assess to what extent the intra-individual variation of microbiota that we know is present in living humans and other mammals (Costello et al., 2009) extends to microbial community change during decomposition.
 
-Over the duration of our 48-day experiment, mice progressed through all major stages of decomposition (
+**Table 1.**
+ Total number of samples collected for each site and abdominal, skin (head and body), soil (with and without corpses)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample type</th>
+      <th>Samples collected</th>
+      <th>Samples sequenced (16S HiSeq)</th>
+      <th>Samples sequenced (18S Hiseq)</th>
+      <th>Samples sequenced (PacBio)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abdominal</td>
+      <td>65</td>
+      <td>43</td>
+      <td>23</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Skin of body</td>
+      <td>53</td>
+      <td>33</td>
+      <td>31</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Skin of head</td>
+      <td>40</td>
+      <td>36</td>
+      <td>29</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Soil with corpse</td>
+      <td>53</td>
+      <td>46</td>
+      <td>60</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Soil no corpse</td>
+      <td>12</td>
+      <td>9</td>
+      <td>8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sum</td>
+      <td>223</td>
+      <td>167</td>
+      <td>152</td>
+      <td>26</td>
+    </tr>
+  </tbody>
+</table>
+
+_We show the number of successfully sequenced samples for each data type, including Illumina Hiseq and Pacific Biosciences. For Illumina data, we only included samples used in statistical analyses, which required>2500 sequences/sample. Details about each of the individual samples can be found in Supplementary file 1A._
+
+Over the duration of our 48-day experiment, mice progressed through all major stages of decomposition (Figure 1). We assessed the progression of decomposition in two ways. First, we recorded a visual body score estimate for the head and torso according to Megyesi et al. (2005) at the time samples were collected. Visual body score estimates suggested that day 0 and 3 primarily included mice considered in the Fresh stage. Days 6, 9, and 13 included mouse corpses that were primarily scored as Active Decay, including the Bloat stage on ∼days 6–9. Finally, mice on days 20, 34, and 48 were primarily categorized as Advanced Decay (Figure 1A). Second, after the conclusion of the experiment, we measured the pH of soil samples to estimate the timeframe during which the purging of fluids or Rupture had likely occurred. It is well established that decomposition fluids are released from a body during decomposition (Carter et al., 2007). These fluids are a pulse of nutrients that increase the pH of the surrounding soil. Measurements of soil pH indicated that Rupture (Active Decay) occurred between days 6 and 9 of the experiment (Figure 1B). Overall, we concluded that the mice were in the Fresh stage on approximately days 0–3, the Active Decay stage on days 6–20 (with Bloat primarily occurring after day 3 until day 9 and Rupture occurring after day 6 and before day 9) and the Advanced Decay on days 20–48. These stage classifications were used in subsequent analyses.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01104/elife-01104-fig1-v1.jpg)
 
-**Figure 1.:** Megyesi et al., 2005) and (B) the pH of soil to determine when rupture had occurred.(A) visual key estimates for the head (orange circle): Fresh–no discoloration (1 point); Active Decay–Discoloration (2 points), Purging of decomposition fluids out of eyes, nose, or mouth (3 points), Bloating of neck and/or face (4 points); Advanced Decay–Sagging of flesh (5 points), Sinking of flesh (6 points), Caving in of flesh (7 points), Mummification (8 points). The key for the torso (blue triangle) is the same as above except that Bloating of abdominal cavity (3 points) precedes Rupture and/or purging of fluids (4 points). Gray boxes around points indicate generally with which stage of decay each time point is associated–Fresh (∼days 0, 3), Active Decay (∼days 6, 9, 13), and Advanced Decay (∼days 20, 34, 48). (B) Average pH of soil over time with standard error. A dramatic increase in pH occurred between day 6 and day 9, which is when rupture of body fluids and subsequent leakage into the soil likely occurred.DOI: http://dx.doi.org/10.7554/eLife.01104.004
+**Figure 1.:** (A) visual key estimates for the head (orange circle): Fresh–no discoloration (1 point); Active Decay–Discoloration (2 points), Purging of decomposition fluids out of eyes, nose, or mouth (3 points), Bloating of neck and/or face (4 points); Advanced Decay–Sagging of flesh (5 points), Sinking of flesh (6 points), Caving in of flesh (7 points), Mummification (8 points). The key for the torso (blue triangle) is the same as above except that Bloating of abdominal cavity (3 points) precedes Rupture and/or purging of fluids (4 points). Gray boxes around points indicate generally with which stage of decay each time point is associated–Fresh (∼days 0, 3), Active Decay (∼days 6, 9, 13), and Advanced Decay (∼days 20, 34, 48). (B) Average pH of soil over time with standard error. A dramatic increase in pH occurred between day 6 and day 9, which is when rupture of body fluids and subsequent leakage into the soil likely occurred.
 
 In total, we collected 223 abdominal cavity, skin, corpse-associated soils samples (gravesoil), and no-corpse soil controls. After sequence quality filtering and removal of failed samples and samples with low numbers of sequences, the HiSeq Illumina sequence dataset included 167 samples and 2,931,901 16S rRNA sequences that represented 4505 OTUs (Table 1, Supplementary file 1A). After sequence and sample filtering, the 18S dataset included 142 samples and 21,254,848 18S rRNA sequences that represented 421 OTUs (Table 1, Supplementary file 1A). Most samples with too few sequences to be included in the final datasets (i.e., failures) were collected at early time points (e.g., days 0 and 3) when microbial biomass was likely low. This was especially true for eukaryotic skin samples and abdominal cavity swab or liquid samples (although fecal and cecum day 0 samples worked well as expected for these rich microbial habitats). The 16S and 18S Illumina HiSeq datasets were used for downstream statistical analyses (e.g., Mantel tests, PERMANOVA tests, and PMI estimates). Finally, for better taxonomic resolution via longer sequence reads, we also sequenced 26 samples using Pacific Biosciences sequencing platform resulting in a total of 16,250 sequences for 18S and 16S. These data were used separately from the Illumina data to identify highly abundant taxa present during early and late stage decomposition at the genus and species levels (e.g., the nematode species Oscheius tipulae).
 
-## The ecology of bacterial community change during decomposition
+### The ecology of bacterial community change during decomposition
 
-It has long been assumed that endogenous gut-associated bacteria dominate cadaver decomposition prior to rupture, following which non-enteric and aerobic (soil-borne, dermal) microbes bloom and dominate the community (
+It has long been assumed that endogenous gut-associated bacteria dominate cadaver decomposition prior to rupture, following which non-enteric and aerobic (soil-borne, dermal) microbes bloom and dominate the community (Evans, 1963). Rupture is a crucial stage during decomposition, in which bloating due to putrefaction breaks open the abdominal cavity, and is expected to result in shifts of the microbial community because the cavity becomes aerobic. Early culture-based investigations conducted without soil lent support to this assumption by showing that many bacteria exploiting a carcass are members of the gut microbiota (Ingram and Dainty, 1971; Corry, 1978). Our results also lend support to these long-held hypotheses. During the Bloating Stage (approximately days 6–9), endogenous anaerobes and facultative anaerobes that are known to be common members of the gut community such as Firmicutes in the families Lactobacillaceae (e.g., Lactobacillus) and Bacteroidetes in the family Bacteroidaceae (e.g., Bacteroides) (Supplementary file 1B) increase in the abdominal cavity. However, after rupture occurs (∼9 days after the start of the experiment), these taxa decrease dramatically, and exposure of the abdominal cavity to oxygen allows aerobes such as members of the Rhizobiales (Alphaproteobacteria) in the families Phyllobacteriaceae, Hyphomicrobiaceae, and Brucellaceae (e.g. Pseudochrobactrum and Ochrobactrum) to dominate (Figure 2A,B, Supplementary file 1B). Additionally, facultative anaerobes in the Gammaproteobacteria family Enterobacteriaceae such as Serratia, Escherichia, Klebsiella, and Proteus (Supplementary file 1B), which are widely recognized as opportunistic pathogens and are associated with sewage and animal matter (Leclerc et al., 2001), become abundant after rupture.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01104/elife-01104-fig2-v1.jpg)
 
-**Figure 2.:** (A) Relative abundance of phyla of bacteria over time for all body sites. For the abdominal site, Day 0 includes cecum, fecal, and abdominal swab and liquid samples. For the soil site, control soils collected on days 0, 6, and 20 are shown on the left of the plot. (B) The three bacterial families that show the greatest change in abundance over time are plotted for each site. (C) PCoA plot based on unweighted UniFrac distances displaying bacterial community change at all sites during decomposition. Results from Mantel tests (Rho and p values) show that bacterial community change correlated significantly with time. The point of rupture is marked with a thick vertical black line on each plot.DOI: http://dx.doi.org/10.7554/eLife.01104.005
+**Figure 2.:** (A) Relative abundance of phyla of bacteria over time for all body sites. For the abdominal site, Day 0 includes cecum, fecal, and abdominal swab and liquid samples. For the soil site, control soils collected on days 0, 6, and 20 are shown on the left of the plot. (B) The three bacterial families that show the greatest change in abundance over time are plotted for each site. (C) PCoA plot based on unweighted UniFrac distances displaying bacterial community change at all sites during decomposition. Results from Mantel tests (Rho and p values) show that bacterial community change correlated significantly with time. The point of rupture is marked with a thick vertical black line on each plot.
 
-When corpses rupture they release an ammonia-rich, high nutrient fluid that alters both the pH and nutrient content of the soil (Meyer et al., 2013). Accordingly we saw a predictable spike in gravesoil pH from ∼6.0 to ∼8.5 (Figure 1B) and declines in Acidobacteria (Figure 2A), the abundance of which is known to be inversely related to soil pH (Lauber et al., 2009). Acidobacteria prefer oligotrophic conditions (Fierer et al., 2007) and grow much more slowly than most other taxa (Ward et al., 2009; Castro et al., 2010), thus the decline of Acidobacteria may be related to the huge pulse of nutrients into the soil rather than shifts in soil pH. In this study, Alphaproteobacteria abundance (mainly the Rhizobiales) increased across the sampling period and became most abundant post-Rupture stage soil samples (Table 2), suggesting this group prefers a relatively nutrient rich environment and is able to outcompete the Acidobacteria (Marilley and Aragno, 1999; Klappenbach et al., 2000; Smit et al., 2001) for the corpse derived resources. Such shifts in taxa composition were typical in these Advanced Decay associated soil communities (after ∼20 days), which were significantly different from the time-zero soil communities as well as the no-corpse soil controls (Figure 2A, Table 3, PERMANOVA p value 0.007). No-corpse control soils, which were collected throughout the experiment, did not change significantly over time (Mantel Rho 0.05, p value 0.35), linking soil community change to the presence of a corpse. Though preliminary, our work suggests that it may be possible to identify gravesoil by an increase in the abundance of copiotrophic taxa relative to oligotrophic taxa.10.7554/eLife.01104.006Table 2.The five most changing bacterial taxa groups resolved to the family level for each site over the timeline of the experiment based on HiSeq Illumina resultsDOI: http://dx.doi.org/10.7554/eLife.01104.006Rank changeSoilAbdominalSkin1Gammaproteobacteria Xanthomonadales XanthomonadaceaeClostridia Clostridiales ClostridiaceaeEpsilonproteobacteria Campylobacterales Campylobacteraceae2Alphaproteobacteria Caulobacterales CaulobacteraceaeBacilli Lactobacillales LactobacillaceaeGammaproteobacteria Pseudomonadales Pseudomonadaceae3Sphingobacteria Sphingobacteriales SphingobacteriaceaeBacteroidia Bacteroidales BacteroidaceaeBetaproteobacteria Burkholderiales Alcaligenaceae4Alphaproteobacteria Rhizobiales AurantimonadaceaeClostridia Clostridiales LachnospiraceaeSphingobacteria Sphingobacteriales Sphingobacteriaceae5Alphaproteobacteria Sphingomonadales SphingomonadaceaeBacilli Lactobacillales EnterococcaceaeGammaproteobacteria Xanthomonadales XanthomonadaceaeGroups that increase in abundance are listed in bold text and groups that decreased in abundance are shown in normal text.10.7554/eLife.01104.007Table 3.For each sample site and each marker type, PERMANOVA results of UniFrac distance (unweighted) for Fresh (day 0–3 days) vs Advanced Decay (days 20–48) decomposition microbial communitiesDOI: http://dx.doi.org/10.7554/eLife.01104.007PERMANOVA pseudo Fp value (999 permutations)16S soil with corpse2.380.00716S ctrl soil vs Advanced Decay soil2.540.00116S abdominal6.310.00116S skin on head8.190.00116S skin on body5.810.00118S soil with corpse10.170.00118S ctrl soil vs Advanced Decay soil5.230.00118S abdominal5.340.00118S skin on head––18S skin on body5.960.001For soil sites, we also include comparisons of control soils vs Advanced Decay gravesoils. For the 18S skin of head, there were not sufficient samples for statistical analysis.
+When corpses rupture they release an ammonia-rich, high nutrient fluid that alters both the pH and nutrient content of the soil (Meyer et al., 2013). Accordingly we saw a predictable spike in gravesoil pH from ∼6.0 to ∼8.5 (Figure 1B) and declines in Acidobacteria (Figure 2A), the abundance of which is known to be inversely related to soil pH (Lauber et al., 2009). Acidobacteria prefer oligotrophic conditions (Fierer et al., 2007) and grow much more slowly than most other taxa (Ward et al., 2009; Castro et al., 2010), thus the decline of Acidobacteria may be related to the huge pulse of nutrients into the soil rather than shifts in soil pH. In this study, Alphaproteobacteria abundance (mainly the Rhizobiales) increased across the sampling period and became most abundant post-Rupture stage soil samples (Table 2), suggesting this group prefers a relatively nutrient rich environment and is able to outcompete the Acidobacteria (Marilley and Aragno, 1999; Klappenbach et al., 2000; Smit et al., 2001) for the corpse derived resources. Such shifts in taxa composition were typical in these Advanced Decay associated soil communities (after ∼20 days), which were significantly different from the time-zero soil communities as well as the no-corpse soil controls (Figure 2A, Table 3, PERMANOVA p value 0.007). No-corpse control soils, which were collected throughout the experiment, did not change significantly over time (Mantel Rho 0.05, p value 0.35), linking soil community change to the presence of a corpse. Though preliminary, our work suggests that it may be possible to identify gravesoil by an increase in the abundance of copiotrophic taxa relative to oligotrophic taxa.
 
-Bacterial communities associated with the decomposing corpses became increasingly differentiated from starting communities over time in the abdominal cavity, gravesoil, and skin sites (Figure 2, Table 4, Mantel test Rho values 0.36–0.55, p<0.001 for all sites). Although they did not converge completely, similar taxa became abundant at each sample site in the later stages of decomposition (Supplementary file 1C—weighted UniFrac distances between sample sites during Advanced Decay were significantly lower than between sites during the Fresh stage, two sample t test <0.000001 for each of five comparisons). For example, in both soil and skin, several bacterial families within the Bacteroidetes (Sphingobacteriaceae), Alphaproteobacteria (Brucellaceae, Phyllobacteriaceae, and Hyphomicrobiaceae), and Betaproteobacteria (Alcaligenaceae) increase in abundance during the Advanced Decay stage of decomposition (Figure 2A,B, Table 2). This trend is consistent with previous findings that bacterial skin communities are often a reflection of the surrounding environment with which they are in contact (Costello et al., 2009; Song et al., 2013), and this convergence may also arise because the low biomass initially found on the skin is easily overwhelmed by soil taxa.10.7554/eLife.01104.008Table 4.For each sample site and each marker type, Mantel test results using Spearman’s rank correlation coefficient to assess the correlation between microbial community UniFrac distance (unweighted) and timeDOI: http://dx.doi.org/10.7554/eLife.01104.008Spearman RhoSpearman p value16S soil0.5480.00116S ctrl soil0.0510.35216S abdominal0.3640.00116S skin of head0.3680.00116S skin of body0.4370.00118S soil0.7720.00118S ctrl soil0.1270.15418S abdominal0.2090.02918S skin of head0.2790.00418S skin of body0.0790.143Importantly, control soil microbial communities did not change significantly over time.
+**Table 2.**
+ The five most changing bacterial taxa groups resolved to the family level for each site over the timeline of the experiment based on HiSeq Illumina results
 
-## The ecology of microbial eukaryotic community change during decomposition
 
-The community of microbial eukaryotes also changed significantly and consistently over the time course of decomposition at all sampled sites except the skin of the torso (
+<table>
+  <thead>
+    <tr>
+      <th>Rank change</th>
+      <th>Soil</th>
+      <th>Abdominal</th>
+      <th>Skin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Gammaproteobacteria Xanthomonadales Xanthomonadaceae</td>
+      <td>Clostridia Clostridiales Clostridiaceae</td>
+      <td>Epsilonproteobacteria Campylobacterales Campylobacteraceae</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Alphaproteobacteria Caulobacterales Caulobacteraceae</td>
+      <td>Bacilli Lactobacillales Lactobacillaceae</td>
+      <td>Gammaproteobacteria Pseudomonadales Pseudomonadaceae</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sphingobacteria Sphingobacteriales Sphingobacteriaceae</td>
+      <td>Bacteroidia Bacteroidales Bacteroidaceae</td>
+      <td>Betaproteobacteria Burkholderiales Alcaligenaceae</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Alphaproteobacteria Rhizobiales Aurantimonadaceae</td>
+      <td>Clostridia Clostridiales Lachnospiraceae</td>
+      <td>Sphingobacteria Sphingobacteriales Sphingobacteriaceae</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Alphaproteobacteria Sphingomonadales Sphingomonadaceae</td>
+      <td>Bacilli Lactobacillales Enterococcaceae</td>
+      <td>Gammaproteobacteria Xanthomonadales Xanthomonadaceae</td>
+    </tr>
+  </tbody>
+</table>
+
+_Groups that increase in abundance are listed in bold text and groups that decreased in abundance are shown in normal text._
+
+**Table 3.**
+ For each sample site and each marker type, PERMANOVA results of UniFrac distance (unweighted) for Fresh (day 0–3 days) vs Advanced Decay (days 20–48) decomposition microbial communities
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PERMANOVA pseudo F</th>
+      <th>p value (999 permutations)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16S soil with corpse</td>
+      <td>2.38</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>16S ctrl soil vs Advanced Decay soil</td>
+      <td>2.54</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>16S abdominal</td>
+      <td>6.31</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>16S skin on head</td>
+      <td>8.19</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>16S skin on body</td>
+      <td>5.81</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>18S soil with corpse</td>
+      <td>10.17</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>18S ctrl soil vs Advanced Decay soil</td>
+      <td>5.23</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>18S abdominal</td>
+      <td>5.34</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>18S skin on head</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>18S skin on body</td>
+      <td>5.96</td>
+      <td>0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_For soil sites, we also include comparisons of control soils vs Advanced Decay gravesoils. For the 18S skin of head, there were not sufficient samples for statistical analysis._
+
+Bacterial communities associated with the decomposing corpses became increasingly differentiated from starting communities over time in the abdominal cavity, gravesoil, and skin sites (Figure 2, Table 4, Mantel test Rho values 0.36–0.55, p<0.001 for all sites). Although they did not converge completely, similar taxa became abundant at each sample site in the later stages of decomposition (Supplementary file 1C—weighted UniFrac distances between sample sites during Advanced Decay were significantly lower than between sites during the Fresh stage, two sample t test <0.000001 for each of five comparisons). For example, in both soil and skin, several bacterial families within the Bacteroidetes (Sphingobacteriaceae), Alphaproteobacteria (Brucellaceae, Phyllobacteriaceae, and Hyphomicrobiaceae), and Betaproteobacteria (Alcaligenaceae) increase in abundance during the Advanced Decay stage of decomposition (Figure 2A,B, Table 2). This trend is consistent with previous findings that bacterial skin communities are often a reflection of the surrounding environment with which they are in contact (Costello et al., 2009; Song et al., 2013), and this convergence may also arise because the low biomass initially found on the skin is easily overwhelmed by soil taxa.
+
+**Table 4.**
+ For each sample site and each marker type, Mantel test results using Spearman’s rank correlation coefficient to assess the correlation between microbial community UniFrac distance (unweighted) and time
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Spearman Rho</th>
+      <th>Spearman p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16S soil</td>
+      <td>0.548</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>16S ctrl soil</td>
+      <td>0.051</td>
+      <td>0.352</td>
+    </tr>
+    <tr>
+      <td>16S abdominal</td>
+      <td>0.364</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>16S skin of head</td>
+      <td>0.368</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>16S skin of body</td>
+      <td>0.437</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>18S soil</td>
+      <td>0.772</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>18S ctrl soil</td>
+      <td>0.127</td>
+      <td>0.154</td>
+    </tr>
+    <tr>
+      <td>18S abdominal</td>
+      <td>0.209</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>18S skin of head</td>
+      <td>0.279</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>18S skin of body</td>
+      <td>0.079</td>
+      <td>0.143</td>
+    </tr>
+  </tbody>
+</table>
+
+_Importantly, control soil microbial communities did not change significantly over time._
+
+### The ecology of microbial eukaryotic community change during decomposition
+
+The community of microbial eukaryotes also changed significantly and consistently over the time course of decomposition at all sampled sites except the skin of the torso (Figure 3A, Table 4). Beginning at approximately 20 days, the microbial eukaryotic community at all sites became dominated by a nematode, O. tipulae, in the family Rhabditidae (Figure 3B, Tables 2 and 5). Microbial eukaryotic community composition in the no-corpse control soils did not change significantly over time (correlation with time: Mantel Rho 0.15, p=0.13), though diversity did decline in the controls (Figure 4). Control soils were significantly different from soils associated with corpses in Advanced Decay (PERMANOVA pseudo-F 5.23, p value 0.001). Furthermore, the nematode O. tipulae was not detected at a level of >1% in any control soil sample.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01104/elife-01104-fig3-v1.jpg)
 
-**Figure 3.:** Oscheius tipulae.(A) PCoA plot based on unweighted UniFrac distances displaying microbial eukaryotic community change during decomposition. Results from Mantel tests (Rho and p values) show that microbial eukaryotic community change correlated significantly with time except for the skin of the belly. (B) Relative abundance of microbial eukaryote taxa at the class level over time. Microbial eukaryotic community composition changes significantly and predictably over the course of decomposition. (C) The eukaryotic nematode O. tipulae became highly abundant at each sample site at late stages of decomposition. The point of rupture is marked with a thick vertical black line on each plot.DOI: http://dx.doi.org/10.7554/eLife.01104.009
+**Figure 3.:** (A) PCoA plot based on unweighted UniFrac distances displaying microbial eukaryotic community change during decomposition. Results from Mantel tests (Rho and p values) show that microbial eukaryotic community change correlated significantly with time except for the skin of the belly. (B) Relative abundance of microbial eukaryote taxa at the class level over time. Microbial eukaryotic community composition changes significantly and predictably over the course of decomposition. (C) The eukaryotic nematode O. tipulae became highly abundant at each sample site at late stages of decomposition. The point of rupture is marked with a thick vertical black line on each plot.
+
+**Table 5.**
+ The five most changing microbial eukaryotes for each site over the timeline of the experiment based on HiSeq Illumina results
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank change</th>
+      <th>Soil</th>
+      <th>Abdominal</th>
+      <th>Skin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Rhabditinae Oscheius</td>
+      <td>Rhabditinae Oscheius</td>
+      <td>Rhabditinae Oscheius</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pythiaceae Pythium</td>
+      <td>Tritrichomonas</td>
+      <td>Rhizaria</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Rhizaria</td>
+      <td>Zygosaccharomyces</td>
+      <td>Mucoraceae Rhizomucor</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Alveolata</td>
+      <td>Ascomycota Graphium</td>
+      <td>Chromulinaceae Uroglena</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Zygomycetes</td>
+      <td>Nucleariidae Fonticula</td>
+      <td>Pythiaceae Pythium</td>
+    </tr>
+  </tbody>
+</table>
+
+_Groups that increase in abundance are listed in bold text and groups that decreased in abundance are shown in normal text._
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01104/elife-01104-fig4-v1.jpg)
 
-**Figure 4.:** t test results are indicated by a single star for significant (p=0.01), two stars for highly significance (p<0.001), ‘MS’ for marginal significance (p∼0.05), and ‘NS’ for not significant. For soils, the Bonferoni corrected p value for a t test with three comparisons was 0.017. For bacterial communities, PD alpha diversity decreased at each sample site between the Fresh and Advanced Decay stages. For microbial eukaryotic communities, changes in PD alpha diversity were variable across sample sites—decreasing for soil, no significant change for the abdominal cavity, and increasing for skin. However, for Shannon diversity (evenness), microbial eukaryotic communities significantly decreased between the Fresh and Advanced Decay stages at every site (data not shown, soil p<0.001, abdominal p=0.002, skin p=0.03).DOI: http://dx.doi.org/10.7554/eLife.01104.011
+**Figure 4.:** t test results are indicated by a single star for significant (p=0.01), two stars for highly significance (p<0.001), ‘MS’ for marginal significance (p∼0.05), and ‘NS’ for not significant. For soils, the Bonferoni corrected p value for a t test with three comparisons was 0.017. For bacterial communities, PD alpha diversity decreased at each sample site between the Fresh and Advanced Decay stages. For microbial eukaryotic communities, changes in PD alpha diversity were variable across sample sites—decreasing for soil, no significant change for the abdominal cavity, and increasing for skin. However, for Shannon diversity (evenness), microbial eukaryotic communities significantly decreased between the Fresh and Advanced Decay stages at every site (data not shown, soil p<0.001, abdominal p=0.002, skin p=0.03).
 
 O. tipulae, a bacterivorous representative of the family Rhabditidae, is considered a common nematode species of terrestrial habitats such as soil, leaf litter, and compost all over the world (Baille et al., 2008). As a consequence of the nematode bloom, Shannon diversity (community evenness) declines at all sample sites for eukaryotic communities (t test Fresh Stage vs Advanced Decay stage decomposition: soil p<0.001, abdominal p=0.002, skin p=0.03). Phylogenetic distance diversity estimates were variable across sample sites with a significant decrease only detected in soil (Figure 4). The nematode bloom is decoupled from rupture, and it appears that this generalist consumer of bacteria responds to the increase in bacterial biomass that is associated with decomposition (Benninger et al., 2008; Carter et al., 2008, 2010; Parkinson et al., 2009; Damann et al., 2012) and outcompetes other community members. One potential contributing factor to the nematode bloom may have been the fact that the mouse graves were relatively closed systems that would have prevented entry of organisms preying on nematodes. Future experiments with open systems will be necessary to determine the impact of higher trophic levels on community dynamics.
 
-## A microbial clock provides an accurate estimate of PMI
+### A microbial clock provides an accurate estimate of PMI
 
-Because consistent shifts in the presence and abundance of specific bacterial and eukaryotic taxa occurred during known stages of decomposition, these data suggested that succession of bacterial and microbial eukaryotic communities may be used to estimate PMI. By regressing known postmortem interval directly on the taxon relative abundances using a Random Forests model. Random Forests is a machine learning technique that creates random decision trees based on subsets of the features (e.g., taxa) in the data, then chooses the subsets of features that are best able to classify samples into predefined groups using only part of the data. This technique has been useful in other microbial ecology studies, providing high classifier accuracy (
+Because consistent shifts in the presence and abundance of specific bacterial and eukaryotic taxa occurred during known stages of decomposition, these data suggested that succession of bacterial and microbial eukaryotic communities may be used to estimate PMI. By regressing known postmortem interval directly on the taxon relative abundances using a Random Forests model. Random Forests is a machine learning technique that creates random decision trees based on subsets of the features (e.g., taxa) in the data, then chooses the subsets of features that are best able to classify samples into predefined groups using only part of the data. This technique has been useful in other microbial ecology studies, providing high classifier accuracy (Knights et al., 2011). We discovered that the temporal change in microbial communities of the skin of the head allowed us to estimate PMI within as little as 3.30 +/− 2.52 days (mean absolute error +/− standard deviation) (Figure 5). Regressions performed for the timeframe of 0–34 days resulted in the smallest mean absolute error (Supplementary file 1D), which suggests that microbes may be more highly informative for estimating PMI during the earlier stages of decomposition, at least for the sites we sampled. However, this trend may also be due to less frequent sampling events between days 13–48. It may be possible to further improve error estimates with more frequent sampling.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01104/elife-01104-fig5-v1.jpg)
 
-**Figure 5.:** Results are show for the timeframe of 0–34 days, which produced smallest errors. Results are displayed with the smallest MAE shown at the top (skin of head with combined 16S and 18S data) and largest error at the bottom (18S abdominal data).DOI: http://dx.doi.org/10.7554/eLife.01104.012
+**Figure 5.:** Results are show for the timeframe of 0–34 days, which produced smallest errors. Results are displayed with the smallest MAE shown at the top (skin of head with combined 16S and 18S data) and largest error at the bottom (18S abdominal data).
 
-For both 16S and 18S datasets, skin and soil sites were more informative for estimating PMI than data from the abdominal cavity (
+For both 16S and 18S datasets, skin and soil sites were more informative for estimating PMI than data from the abdominal cavity (Figure 5, Supplementary file 1D). This observation was initially surprising because the marked shifts from anaerobic to aerobic communities that occurred in the abdomen would appear to be a good marker of timing. However, these major microbial changes, which correspond to the time of Rupture, occurred at different times for the replicate corpses in the experiment (Figures 2, 3 and 6A), and this variability likely reduced the usefulness of the abdominal data for estimating PMI.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/01104/elife-01104-fig6-v1.jpg)
 
-**Figure 6.:** (A) A regression of PMI predictions vs true PMI using 16S data. The line represents a perfect prediction of PMI. The abdominal cavity shows the greatest scatter of points deviating from the line. (B) Estimates of the mean absolute error (MAE) for PMI predictions using subsets of highly predictive bacterial taxa. Results suggest that 5–10 highly predictive taxa are required to recover MAEs similar to those generated using the entire microbial community. Similar results were discovered for 18S data, but results are not shown.DOI: http://dx.doi.org/10.7554/eLife.01104.013
+**Figure 6.:** (A) A regression of PMI predictions vs true PMI using 16S data. The line represents a perfect prediction of PMI. The abdominal cavity shows the greatest scatter of points deviating from the line. (B) Estimates of the mean absolute error (MAE) for PMI predictions using subsets of highly predictive bacterial taxa. Results suggest that 5–10 highly predictive taxa are required to recover MAEs similar to those generated using the entire microbial community. Similar results were discovered for 18S data, but results are not shown.
 
 Overall, bacteria did not perform significantly better in our PMI estimates than microbial eukaryotes (Supplementary file 1D; two tailed, Wilcoxon signed rank test) and combining both 16S and 18S datasets resulted in the best estimates of PMI (Figure 5, Supplementary file 1D), although the improvement was not significant (Supplementary file 1D). For each sample site, we estimated the ‘importance’ of each taxon, a measure of its contribution to the PMI estimate, by removing each taxon from the predictive model and calculating the mean percent increase in mean squared error (Supplementary file 1E). For bacteria, taxa in the Order Rhizobiales were among the most important predictive taxa at each sample site. For microbial eukaryotes, Oscheius was the most important taxon for skin and abdominal sites and the second most important for gravesoil. Fungal taxa of the family Boletales were the most important contributors to PMI regressions for gravesoil. An analysis of models built using small numbers of highly predictive taxa indicates that 5–10 taxa provide approximately the same prediction accuracy as models built with all taxa, as assessed by leave-one-out analyses (Figure 6B). This holds across domains and sample sites, and identifying diagnostic taxa may be a fruitful avenue for forensic investigation. Future studies involving varied habitat conditions, soil types, etc are needed to identify the most general subset of predictive taxa.
 
@@ -111,7 +407,7 @@ We have provided a proof-of-principle demonstration that microbial community eco
 
 ## Materials and methods
 
-## Experimental set-up and sample collection
+### Experimental set-up and sample collection
 
 We performed a laboratory experiment in which 40 mice were allowed to decompose on soil graves in the University of Colorado Transgenic Facility, which provides a clean, well-controlled environment. Mice (strain B6C3F1) ranged in age from 36–109 days old and were co-housed by date of birth. To avoid biases by age or relatedness, mice were randomly assigned to one of the eight destructive sampling events. Mice were humanely sacrificed using CO2 gas followed by cervical dislocation and placed on their right side on top of approximately 200–300 × g of soil in a clean 500 ml plastic (Tupperware-type) container with a small hole drilled into each side above soil level to prevent anaerobic conditions. Soil (pH ∼6) was collected from the organic layer of a dry creek bed in Eldorado Creek near Boulder, Colorado and brought to ∼55–60% water holding capacity.
 
@@ -119,7 +415,7 @@ We destructively sampled five mice across eight time points over 48 days with sa
 
 At each time point, microbial communities of corpses were sampled at one internal and two external body sites while still in an aboveground position on the gravesoil. Sterile swabs (BD BBL, CultureSwab, Becton Dickinson, USA) were used to sample the skin of the head near the mouth and the skin of the belly. Swabs were vigorously rubbed across each skin site. To sample the internal abdominal cavity, we utilized two techniques depending on whether the abdominal cavity could hold liquid or not. In early time points (abdominal cavity integrity, day 0–20), we used a 26 G 1 ml syringe with 0.5 ml of saline to flush and extract microbes from the abdominal cavity. For later time points (day 34 and 48), we made an incision into the cavity and used a swab to sample the site. For day 34, we utilized both sampling techniques. We also sampled soil from underneath each mouse corpse during the experiment. Immediately after sampling and removing the corpse, surface soil was sampled from under the mouse for a total of four samples associated with each decomposing mouse corpse (or five samples total for mice for which two abdominal samples were taken). Additionally, we collected soil samples at days 0, 6, 20, and 48 from a set of no-corpse control soils that were set up the same as the mice graves (∼200–300 × g of soil in a clean 500 ml plastic container). For each soil sample, we suspended 1 × g of each soil sample in 5 ml of deionized water and measured pH using an Orion 3 Star benchtop pH meter (Thermo Scientific, USA). For each sample, triplicate pH measurements were averaged for a final pH estimate for each sample. The mouse corpse and associated samples were frozen immediately after collection and remained at −20°C until further processing.
 
-## DNA extraction, PCR amplification, and next-generation sequencing
+### DNA extraction, PCR amplification, and next-generation sequencing
 
 DNA extraction, amplicon generation, and amplicon preparation for sequencing followed the protocols recorded in Caporaso et al. (2011) and can be found on the Earth Microbiome Project (EMP) webpage (http://www.earthmicrobiome.org/emp-standard-protocols/). Soil samples (∼0.30 × g), abdominal liquid, and abdominal and skin swabs were extracted using the PowerSoil DNA isolation kit (Mo Bio Laboratories, Carlsbad, CA, USA) at the University of Colorado, Boulder.
 
@@ -129,21 +425,21 @@ For both 16S and 18S, each set of triplicate PCR reactions were subsequently poo
 
 For sequencing of longer amplicons, we amplified genomic DNA with two primer sets to better determine the taxonomic identity of abundant bacteria and eukaryotes. 16S was targeted with the universal primer set 515f/1391r and 18S was targeted by the primer set 515f/EukBr. PCR amplification and pooling were similar to that described for Illumina sequencing, and detailed primer information and protocols are available on the resources page of qiime.org under long read amplicons (https://s3.amazonaws.com/s3-qiime_tutorial_files/454_FLXplus_protocols_13_4.tgz). Pooled amplicons were sequenced by Pacific Biosciences (Menlo Park, CA, USA). Pooled amplicons were made into SMRTbell libraries followed by the PacBio SMRTbell template preparation protocol and be available at (https://s3.amazonaws.com/files.pacb.com/pdf/Procedure_Checklist_2kb_Template_Preparation_and_Sequencing.pdf). Briefly, after repaired the ends of pooled amplicons, the amplicons then ligate to PacBio SMRTbell adapters to form SMRTbell templates. The templates were then cleaned and purified by Exonuclease treatment and Ampure Bead purification (Agencourt, Beckman Coulter Life Sciences, Indianapolis, IN, USA). The final SMRTbell libraries were bound to PacBioC2 polymerase and sequenced on PacBio RS using C2 sequencing chemistry and 2 × 45 min acquisition time.
 
-## Data analysis
+### Data analysis
 
-## 16S rRNA sequence processing
+#### 16S rRNA sequence processing
 
 Using the default settings in QIIME suite of software tools (Caporaso et al., 2010), barcoded Illumina 16S rRNA sequences were quality filtered and demultiplexed using error-correcting Golay codes that reduce the possibility of sample mis-assignment. These reads were 100 bp in length. We classified sequence reads into Operational Taxonomic Units (OTUs) on the basis of sequence similarity. Because our sample set included soil and highly decomposed material, we suspected that a substantial number of sequences would not be represented in the reference Greengenes alignment. Therefore, we utilized the QIIME software open-reference OTU picking protocol. Briefly, sequence reads were initially clustered against the February 2011 release of the Greengenes 97% reference dataset (http://greengenes.secondgenome.com) (DeSantis et al., 2006; McDonald et al., 2012). Sequences that did not hit the Greengenes dataset were subsequently clustered into de novo OTUs at 97% similarity with UCLUST. Taxonomy was assigned using the RDP classifier (Cole et al., 2009) within QIIME retrained on the Greengenes 2011 reference dataset. The representative sequences of all OTUs were then aligned to the Greengenes reference alignment using PyNAST (Caporaso et al., 2010) and this alignment was used to construct a phylogenetic tree using FastTree (Price et al., 2010) within QIIME. Sequences that did not align to Greengenes with a 70% similarity threshold were assumed to be non-16S and thus artifactual and removed from further analysis. The resulting tree topology with associated branch lengths was used for subsequent diversity analyses. We removed low abundance OTU’s making up <0.0005% of reads in the total dataset as recommended for Illumina generated data (Bokulich et al., 2013) and removed samples with less than 2500 sequences (for many downstream analyses, samples were rarified at 2500 sequences per sample).
 
-## 18S rRNA sequence processing
+#### 18S rRNA sequence processing
 
 Raw 18S rRNA sequence data was subjected to similar processing and demultiplexing protocols within QIIME as described above, except that a curated version of the Silva 108 database was used as the reference database (original: http://www.arb-silva.de/documentation/release-108/; Pruesse et al. (2007), curated version available at qiime.org/home_static/dataFiles.html). Sequences not corresponding to eukaryotic 18S were removed from the dataset prior to analysis by excluding reads that failed to align to the eukaryotic portion of Silva 108 at a low similarity threshold (70% sequence similarity) with PyNAST (Caporaso et al., 2010) within QIIME. The dataset was further filtered to exclude all sequences assigned to vertebrate animals, as these likely correspond to the mouse host. Similar to 16S data, we removed low abundance OTU’s making up <0.0005% of reads in the total dataset as recommended for Illumina generated data (Bokulich et al., 2013) and samples were rarified at 2500 sequences per sample. A phylogenetic tree was constructed for subsequent diversity analyses by placing representative sequences into a tree of the Silva 108 eukaryotic representative set using the maximum likelihood EPA algorithm within RAxML (Berger et al., 2011). Taxonomy was assigned to de novo reads using RDP (Cole et al., 2009) retrained on the Silva 108 eukaryotic reference database at the genus level within QIIME.
 
-## Pacific Biosciences data analysis
+#### Pacific Biosciences data analysis
 
 We took advantages of the long reads provided by the Pacific Biosciences (PacBio) sequencing platform to gain more detailed taxonomic resolution of the abundant bacteria and eukaryotes found in the early and late stage decomposition communities. In both cases high quality circular consensus sequences (CCS) were used. The 16S PacBio data consists of sequences of 800–900 bp in length. The taxonomic identity of the sequences was assessed by assigning sequences to OTUs using the Greengenes February 2011 release of the Greengenes (DeSantis et al., 2006; McDonald et al., 2012) 97% reference dataset. Taxonomy assignments of the long PacBio reads agreed with the short Illumina reads at the family level and the long reads made is possible to determine the taxonomic identity of the reads to the genus and in most cases species level. Taxonomy of the PacBio sequences was also verified by placing sequences within a phylogenetic tree using RAxML EPA algorithm (Berger et al., 2011). The 18S PacBio sequences were roughly 1200 base pairs in length. The 18S data was clustered into OTUs at 97% similarity using the open-reference protocol described above and the curated Silva 108 database. Initial taxonomy assignment was done by BLAST (Altschul et al., 1990) with an e-value threshold of e-10. Taxonomy assignment was refined by placing the sequences within the Silva 108 reference tree using maximum likelihood with RAxML EPA. These resulting taxonomy assignments were used to resolve the taxonomy of highly abundant community members. Bacterial and microbial eukaryotic taxa found were sorted by abundance at each site are reported in Supplementary File 1B. Genus and species level taxonomy was reported in relevant text of the manuscript. Because PacBio data were generated from only a small subset of samples we did not use these data for comparative analyses, and all statistical analyses were conducted using the Illumina HiSeq data.
 
-## 16S and 18S rRNA HiSeq data analyses
+#### 16S and 18S rRNA HiSeq data analyses
 
 We explored beta diversity patterns by performing principle coordinate analyses (PCoA) with phylogeny-based (UniFrac) unweighted distances. We explored taxon abundance patterns by tracking changes in the abundance of taxa over time using custom python scripts. We determined the most changing taxa by assessing abundance at final time point minus abundance at initial time point (using both percentage, count, and combined measures). We tested whether sample sites during Advanced Decay had similar taxa become abundant by comparing weighted UniFrac distances between sites in each the Fresh stage and the Advanced Decay stage. Alpha diversity was estimated using the phylogenetic diversity metric as well as Shannon diversity. These analyses were performed using the QIIME software. To assess the correlation between microbial community change and time, we performed Mantel tests (with recommended option for single factor tests: unrestricted permutation of raw data) using the software package PRIMER v6 (Clarke and Gorley, 2006). Additionally, we tested for significant changes in microbial communities between the Fresh and Advanced Decay stages for each site and data type with a PERMANOVA test in PRIMER v6 (Clarke and Gorley, 2006). For statistical analysis, duplicates of samples (e.g., abdominal swab and abdominal liquid/syringe) were removed.
 

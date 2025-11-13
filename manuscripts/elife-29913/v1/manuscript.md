@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.29913.001 Coordinated rhythmic movements are ubiquitous in animal behavior. In many organisms, chains of neural oscillators underlie the generation of these rhythms. In C. elegans , locomotor wave generation has been poorly understood; in particular, it is unclear where in the circuit rhythms are generated, and whether there exists more than one such generator. We used optogenetic and ablation experiments to probe the nature of rhythm generation in the locomotor circuit. We found that multiple sections of forward locomotor circuitry are capable of independently generating rhythms. By perturbing different components of the motor circuit, we localize the source of secondary rhythms to cholinergic motor neurons in the midbody. Using rhythmic optogenetic perturbation, we demonstrate bidirectional entrainment of oscillations between different body regions. These results show that, as in many other vertebrates and invertebrates, the C. elegans motor circuit contains multiple oscillators that coordinate activity to generate behavior.
+Coordinated rhythmic movements are ubiquitous in animal behavior. In many organisms, chains of neural oscillators underlie the generation of these rhythms. In C. elegans, locomotor wave generation has been poorly understood; in particular, it is unclear where in the circuit rhythms are generated, and whether there exists more than one such generator. We used optogenetic and ablation experiments to probe the nature of rhythm generation in the locomotor circuit. We found that multiple sections of forward locomotor circuitry are capable of independently generating rhythms. By perturbing different components of the motor circuit, we localize the source of secondary rhythms to cholinergic motor neurons in the midbody. Using rhythmic optogenetic perturbation, we demonstrate bidirectional entrainment of oscillations between different body regions. These results show that, as in many other vertebrates and invertebrates, the C. elegans motor circuit contains multiple oscillators that coordinate activity to generate behavior.
 
 ## Introduction
 
@@ -58,7 +58,7 @@ In this work, we used spatiotemporally targeted optogenetic illumination (Leifer
 
 ## Results
 
-## Rhythmic posterior undulation persists despite anterior paralysis
+### Rhythmic posterior undulation persists despite anterior paralysis
 
 We first sought to test a model in which there is a single oscillator in the head and proprioceptive feedback is the dominant organizer of bending waves along most of the body (Figure 1C). This model, supported by experiments showing that immobilization of the mid-body of worms induced the posterior to adopt the same direction of curvature as the immobilized region (Wen et al., 2012), predicts that paralysis of any region will eliminate undulations posterior to the paralyzed region (Figure 1E). In particular, we asked whether paralysis of the head and ‘neck’ (a region immediately posterior to the head) would halt body bending posterior to these regions.
 
@@ -67,6 +67,16 @@ To manipulate neural and muscular activity in freely moving worms, we constructe
 To examine the effect of inhibiting anterior muscles, we first used this system to project 532 nm illumination onto worms expressing the inhibitory opsin halorhodopsin (NpHR/Halo) in all body wall muscles under the control of the myo-3 promoter (Zhang et al., 2007; Leifer et al., 2011). We quantified the movement of worms before and during optogenetic manipulation by measuring the curvature of the worm over time (Figure 1A,B) (Pierce-Shimomura et al., 2008; Fang-Yen et al., 2010; Leifer et al., 2011; Wen et al., 2012). We specify longitudinal positions via a body coordinate ranging from 0 at the tip of the head to 100 at the end of the tail.
 
 Illuminating body coordinates 50–65 in Pmyo-3::NpHR worms caused substantial paralysis in the tail (not shown), consistent with previous findings (Leifer et al., 2011; Wen et al., 2012). When we paralyzed the anterior 33% or 45% of the worm, however, we observed robust oscillations in posterior regions of the body. In addition, we found to our surprise that illumination of the anterior 33% of the body caused the tail’s undulation frequency to increase (Figure 2A,D; Video 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig2-v1.jpg)
+
+**Figure 2.:** (A) Inhibition of anterior BWMs (via Pmyo-3::NpHR) increases tail frequency. Body coordinates 0–45 were illuminated with green light (532 nm wavelength) to trigger relaxation of the anterior muscles. The spatiotemporal extent of green laser illumination is indicated by the white dotted box. (B) Inhibition of anterior cholinergic neurons (via Punc-17::NpHR; Punc-17::ChR2) does not prevent tail undulation. Body coordinates 0–33 were illuminated with green light to optogenetically inhibit anterior motor activity. (C) Tail undulations persist despite paralysis of the anterior BWMs due to miniSOG-mediated lesion of muscle cells. Animals were subjected to mechanical stimulation to induce locomotion (see Materials and methods). A total of nine animals were illuminated with blue light (472 nm wavelength) in approximately their anterior halves. Of these, five displayed partial-body forward swimming as depicted here, three were immobile, and one was not sufficiently paralyzed in the head. Six control worms, which were mounted identically but not illuminated, all displayed waves propagating normally from head to tail (not shown). (D) Inhibition of some anterior muscles (body coordinate 0–33, N = 10 worms) significantly increases tail frequency. Inhibition of most anterior muscles (0–45, N = 10 worms), or inhibition of anterior cholinergic neurons (N = 14 worms) produces mixed results; some animals generate high frequency tail oscillations while others slow down. Each colored circle represents one trial; worms may have multiple trials. Tail frequency is measured at body coordinate 85. Error boxes represent the mean and SEM. (E) Amplitude of undulation in the head and tail before and during muscle or neuron inhibition. Head frequency is measured at body coordinate 15. Note sharp decreases in head amplitude during all three manipulations. Amplitude here and henceforth is measured as the root mean square of the time derivative of the curvature times worm length $rmsL∙\frac{dκ}{dt}$ and has units of s−1. (*) p<0.05; (**) p<0.01; (***) p<0.001; paired t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The approximate location of hot wire lesioning is indicated with a red arrow. Each panel presents data from a different worm. Scale bars: 200 μm. (A) Slow rhythmic undulations are evident posterior to the head. (B) Rhythmic undulations in the mid-body arise after substantial damage is applied to the head. (C) Rhythmic undulations in the neck and mid-body arise after substantial damage is applied to the head.
+
+![Video 1.](https://cdn.elifesciences.org/articles/29913/elife-29913-video1.mp4.jpg)
 
 Next, we asked whether oscillations in the posterior would persist under optogenetic inhibition of excitatory motor neurons instead of inhibition of muscles. We illuminated worms expressing NpHR in all cholinergic neurons (Punc-17::NpHR), including the A-type and B-type motor neurons, head motor neurons, and several other neuronal cell types (Duerr et al., 2008). We found that while optogenetic inhibition of cholinergic neurons in the head and neck caused anterior paralysis, tail undulation often persisted (Figure 2B,D, Video 1).
 
@@ -78,11 +88,21 @@ We also conducted thermal lesioning experiments in which touched the anterior ha
 
 Our finding that posterior undulation can persist despite anterior paralysis is consistent with a multi-oscillator model (Figure 1D) and not with a single oscillator model that relies on reflex-like signaling for wave propagation (Figure 1C).
 
-## The head and tail are capable of simultaneous oscillations at different frequencies
+### The head and tail are capable of simultaneous oscillations at different frequencies
 
 The finding that optogenetic inhibition of anterior muscles induces higher frequency oscillations in the tail suggests that an interruption of propagating activity in the motor circuit enables independent activity in a posterior oscillator. To test this idea further, we applied several optogenetic manipulations to inhibit motor coupling in the neck only, leaving the head and tail free to oscillate.
 
 First, we optogenetically inhibited neck muscles in Pmyo-3::NpHR worms. In most trials, optogenetically inhibiting neck muscles prevented waves generated in the head from propagating through the neck. During the interruption of these waves, the tail exhibited bending undulations at a higher frequency than that of the head, resulting in the animal simultaneously undulating at two distinct frequencies (Figure 3A, Video 2). We henceforth refer to this behavior, whether or not induced by any manipulation, as two-frequency undulation (2FU).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig3-v1.jpg)
+
+**Figure 3.:** (A) Inhibition of neck BWMs (via Pmyo-3::NpHR) increases tail frequency and decreases head frequency. We refer to this effect as two frequency undulation (2FU). Body coordinates 25–45 were illuminated with green light to induce relaxation of neck muscles. The spatiotemporal extent of green laser illumination is indicated by the white dotted box. (B,C) Inhibition of neck cholinergic neurons (Punc-17::NpHR) or neck B-type motor neurons (Pacr-5::Arch) also induces 2FU behavior. (D) Two frequency undulation after miniSOG-induced paralysis of the mid-body BWMs. Animal was subjected to mechanical stimulation to induce locomotion, but also displayed this behavior prior to stimulation. A total of 10 individuals were illuminated with blue light on approximately one-fifth of their body length, centered near the vulva. Of these, seven displayed 2FU as depicted here, one was immobile, and two were not sufficiently paralyzed in the mid-body to disrupt bending waves. Color map data are scaled down by 50% because bends in this animal had higher amplitudes than those shown in A-C. (E) Several optogenetic manipulations produced decoupled head and tail oscillation. 2FU is assayed by dividing tail frequency by head frequency in each worm. Before illumination, the head (body coordinate 15) and tail (body coordinate 85) usually oscillate at the same frequency. During illumination, tail frequency often exceeds head frequency. Each colored circle pair represents one trial; worms may have multiple trials. N = 11, 10, 12, and 10 worms per condition, respectively. Error boxes represent the mean and SEM. (F) Amplitude of undulation in the neck and tail before and during neck muscle or neuron inhibition. Neck amplitude is measured at body coordinate 35. (*) p<0.05; (**) p<0.01; (***) p<0.001; paired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Two examples of worms in which all cholinergic neurons are inhibited (Punc-17::NpHR; global yellow illumination) except for those within a small tail region (Punc-17::ChR2; blue illumination in a small tail region). The A-type motor neurons were killed at the L2 larval stage (Punc-4::MiniSOG). Green triangle: worm head; blue band: blue illumination region. The curvature map (lower pane) indicates the spatiotemporal windows of yellow illumination (yellow dotted box) and blue laser illumination (white dotted box). Scale bars: 200 μm. (B) 2FU induced by an inhomogeneous mechanical environment. Red dotted line indicates the boundary between low-viscosity buffer (NGM) and high-viscosity HPMC. Around t = 11 s, the tail continues oscillating at high frequency even as the head rapidly slows to a crawl inside the HPMC.
+
+![Video 2.](https://cdn.elifesciences.org/articles/29913/elife-29913-video2.mp4.jpg)
 
 We observed 2FU upon inhibiting all neck cholinergic neurons (Figure 3B, Video 2) and also upon inhibiting neck B-type motor neurons (Pacr-5::Arch; Figure 3C, Video 2). These manipulations led to a large decrease in wave amplitude in the neck and a smaller decrease in wave amplitude in the tail (Figure 3F). Nevertheless, multiple animals in each experiment showed 2FU, with the highest ratios of tail frequency to head frequency seen in worms in which the neck muscles were inhibited (Figure 3E).
 
@@ -94,23 +114,49 @@ If the posterior motor circuit of B and AS type neurons contains additional osci
 
 We first illuminated these animals with 590 nm wavelength (yellow) light throughout the body to inhibit all cholinergic neurons. While maintaining this yellow illumination, we targeted small portions of the tail with 473 nm wavelength (blue) light, activating ChR2 and stimulating a few posterior B and AS neurons. Under these conditions, several animals generated high-frequency localized undulations in the tail (Figure 3—figure supplement 1A, Video 3). These findings further support the presence of additional oscillator(s) in this region.
 
+![Video 3.](https://cdn.elifesciences.org/articles/29913/elife-29913-video3.mp4.jpg)
+
 If multiple independent oscillators underlie a worm’s forward movement under physiological conditions, we reasoned that independent head and tail oscillations might also be observable in animals without induced lesions or optogenetic perturbations.
 
 Wave frequency depends strongly on the degree of mechanical loading from the environment, for example decreasing with viscosity of the fluid medium (Berri et al., 2009; Fang-Yen et al., 2010). We hypothesized that head and tail oscillations might be decoupled by placing the anterior and posterior of a worm in fluids of different viscosities. When we studied worms transitioning between regions of a low-viscosity buffer into highly viscoelastic hydroxypropylmethylcellulose (HPMC) islands (see Methods), we observed 2FU in 6 of 41 worms (15%). In these animals, the tail continued oscillating at a high frequency for at least two full cycles even as the head frequency was sharply reduced (Figure 3—figure supplement 1B, Video 3). Although these events were uncommon, they demonstrated that 2FU can occur in C. elegans with no internal perturbations.
 
 Taken together, these results strongly suggest that the C. elegans forward motor circuit contains at least two units capable of independent rhythm generation and that a partial breakdown in anterior proprioceptive coupling (for example by inhibiting neck BWMs) is sufficient to reveal the presence of the posterior oscillating unit(s).
 
-## Most premotor interneurons are not essential for rudimentary forward movement or 2FU
+### Most premotor interneurons are not essential for rudimentary forward movement or 2FU
 
 To better understand the source of tail oscillations during 2FU, we used genetic analysis and lesion studies to ask which components of the motor circuit are required for this behavior. Almost all chemical or electrical synaptic connections to the VNC motor neurons are made by the premotor interneuron (IN) classes AVB, PVC, AVA, AVD, and AVE (White et al., 1986). Laser ablation studies have indicated that AVB, and to a lesser degree PVC, are essential for normal forward locomotion (Chalfie et al., 1985), although rudimentary forward crawling is possible in their absence if the reverse-driving A motor neurons are also removed (Gao et al., 2017). Therefore, we asked whether 2FU is possible in the absence of AVB, PVC, and all other premotor INs.
 
 To determine if the premotor interneurons are required for 2FU, we first asked whether optogenetic muscle inhibition in the neck in worms lacking premotor interneurons would induce 2FU (c. f. Figure 3A,E). We used transgenic strains in which expression of the apoptosis-promoting interleukin-converting enzyme (ICE) was used to ablate premotor INs and some other neurons (Zheng et al., 1999). When ICE is expressed under the control of the nmr-1 or glr-1 promoters, the PVC, AVA, AVD, and AVE interneurons are removed. AVB, however, are present in both Pnmr-1::ICE (Kawano et al., 2011), and Pglr-1::ICE worms (Kawano, Po, and Zhen, personal communication). We generated the strains Pmyo-3::NpHR; Pglr-1::ICE and Pmyo-3::NpHR; Pnmr-1::ICE. We found that both strains were capable of 2FU during optogenetic inhibition of neck muscles (Figure 4A,E, Figure 4—figure supplement 1A,E). This result demonstrates that 2FU does not require most premotor interneurons, including the forward locomotory interneurons neurons PVC.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig4-v1.jpg)
+
+**Figure 4.:** (A) 2FU occurs despite ablation of premotor interneurons (Pglr-1::ICE; Pmyo-3::NpHR). The spatiotemporal extent of green laser illumination is indicated by the white dotted box. (B) 2FU occurs despite disruption of AVB:B gap junctions and BWM:BWM gap junctions (unc-9; Pmyo-3::NpHR). (C) 2FU occurs despite ablation of a small subset of the B-type motor neurons (Pmyo-3::NpHR; Pacr-2::wCherry). VB8, VB9, and DB6 were ablated using our pulsed infrared laser system. (D) 2FU occurs despite elimination of GABAergic signaling (unc-49; Pmyo-3::NpHR). (E) When subjected to neck paralysis (Pmyo-3::NpHR; Pacr-2::wCherry), 2FU occurs reliably in Pglr-1::ICE animals and occasionally in unc-9 and unc-49 animals. Each colored circle pair represents one trial; worms may have multiple trials. N = 12, 8, and 10 worms per condition, respectively. Head frequencies are measured at body coordinate 15. Mid-body are frequencies are measured at body coordinate 60. Error boxes represent the mean and SEM. (*) p<0.05; (**) p<0.01; (***) p<0.001; paired t-test. (F) When subjected to neck paralysis (Pmyo-3::NpHR), 2FU occurs at least occasionally despite ablation of subsets of the B-type motor neurons by our pulsed infrared laser system. For each condition, data are only considered from worms that have all specified neurons missing; some worms in each group may have additional B-type or other neurons missing. N = 40, 30, 32, 27, 18, 18, and 16 trials from 10, 10, 10, 8, 7, 7, and 7 worms per condition, respectively. Mean mid-body/head frequency ratios during illumination are significantly lower than mock controls for all ablation conditions except DB6, VB10 and VB11, DB7 (p<0.05 by one-way ANOVA with Bonferroni post-hoc comparisons).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 2FU occurs despite ablation of the premotor interneurons AVA, AVD, AVE, PVC, and other neurons (Pnmr-1::ICE; Pmyo-3::NpHR). The spatiotemporal extent of green laser illumination is indicated by the white dotted box. (B) 2FU rarely occurs upon laser ablation of both AVB interneurons (See Figure 4—figure supplement 2). (C) Robust 2FU occurs despite ablation of the A- and C-type motor neurons (Punc-4::MiniSOG; Pmyo-3::NpHR). (D) C. elegans vab-7 mutants, in which DB motor neurons are broadly disrupted, have paralyzed tails and appear incapable of 2FU. (E) When subjected to neck paralysis (Pmyo-3::NpHR), 2FU occurs reliably in Pnmr-1::ICE and Punc-4::MiniSOG animals, occasionally in unc-7 animals, and rarely in animals in which AVB has been ablated. Each colored circle pair represents one trial; worms may have multiple trials (see methods). N = 11, 8, 14, 16, and 19 worms per condition, respectively. Error boxes represent mean and SEM. Head and mid-body data were measured at body coordinates 15 and 60, respectively. (F) Neck paralysis leads to modest decreases in tail bending amplitude in most conditions.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Mock control with both AVB neurons visible (Psra-11::D3cpv). Yellow outline, worm pharynx. Red arrows, AVB L/R in separate focal planes of the same worm. Yellow arrows, a pharyngeal neuron, possibly I4. AVB cell bodies were identified by their placement at the medial anterior edge of the terminal bulb of the pharynx, with processes directed ventrally. Scale bars: 50 μm. (B) Worm in which both AVB interneurons were ablated at the L4 stage. Neither cell bodies nor processes are visible. Behavioral recording of this worm is shown in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Groups of 2–3 B-type motor neurons at a time were ablated using a pulsed infrared laser in worms expressing Pmyo-3::NpHR; Pacr-2::wCherry. See also Figure 4F. (A) Curvature maps of worms that exhibited 2FU despite ablation of the indicated B-type motor neurons and potentially some other neurons. (B) wCherry fluorescence images of each worm to confirm cell death. Blue labels indicate some or all B-type motor neurons. Red labels indicate missing B-type neurons. White arrows indicate the vulva. Scale bars: 100 μm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** We attempted to ablate all B-type motor neurons posterior to the vulva in worms expressing Pmyo-3::NpHR; Pacr-2::wCherry. (A) Curvature maps of worms that exhibited 2FU despite ablation of the indicated B-type motor neurons and potentially other neurons. (B) wCherry fluorescence images of each worm to confirm cell death. Blue labels indicate some or all B-type motor neurons. Red labels indicate missing B-type neurons. White arrows indicate the vulva. Scale bars: 100 μm.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** In some disruptions to the motor circuit, 2FU was observed occurring without inhibition of neck muscles. Examples are shown here from an unc-9 mutant (A), an unc-7 mutant (B), an AVB-ablated worm (C), and an unc-49 mutant (D).
+
 The interneuron AVB is coupled to the B-type motor neurons by an extensive network of gap junctions. Formation of these connections, as well as electrical coupling between the premotor interneurons and the motor neurons of the circuit for reverse locomotion, requires UNC-7 expression in AVB and UNC-9 expression in the B-type motor neurons (Starich et al., 2009; Kawano et al., 2011; Liu et al., 2017). UNC-9 also participates in electrical coupling between BWM cells (Liu et al., 2006). We asked whether animals lacking UNC-7 or UNC-9 could exhibit 2FU. We crossed unc-7 and unc-9 mutations into our Pmyo-3::NpHR strain and performed optogenetic experiments as before. The unc-7 and unc-9 worms are uncoordinated and exhibit significantly reduced spontaneous forward locomotion (Starich et al., 2009; Kawano et al., 2011). To initiate a short bout of forward locomotion, we used a cell phone motor to apply a mechanical stimulus in the form of a 3–5 s, ≈200 Hz vibration of the slide just before illumination. We found that both strains were capable of 2FU, although it appeared to occur less often than in PVC-ablated animals, and sometimes occurred prior to neck muscle inhibition (Figure 4B,E; Figure 4—figure supplement 1E; Figure 4—figure supplement 5A,B). This finding shows that the UNC-7/UNC-9 gap junctions, including those between AVB and the B-type motor neurons, are not required for 2FU.
 
 Finally, we ablated AVB, labeled by Psra-11::D3cpv (Kawano et al., 2011), using a pulsed infrared laser ablation system (Churgin et al., 2013) that we modified to intentionally lesion tissue (see Materials and methods). This procedure generally removed both AVB cell bodies and their associated processes, and possibly other head neurons, but not PVC. When subjected to the same experiment as described above, 2FU events were nearly diminished. Very rarely we observed uncoupled undulation events that were not correlated with neck muscle inhibition (Figure 4—figure supplements 1B, E, 2 and 5C). Taken together, these results suggest that most individual classes of premotor interneurons, including AVA, AVD, AVE, and PVC, are not essential for 2FU. However, AVB may play a key role in activating the rhythm generator(s) to allow oscillation.
 
-## Several classes of motor neurons are not required for forward locomotion or 2FU
+### Several classes of motor neurons are not required for forward locomotion or 2FU
 
 The premotor interneurons comprise the primary circuit connection between the VNC motor neurons and the worm’s other sensory and interneuronal circuits (White et al., 1986). The finding that most premotor interneurons are not necessary for forward locomotion and 2FU suggests that high-frequency tail undulations during 2FU may originate from the motor neurons themselves. We asked, in the presence of all premotor interneurons, whether any classes of motor neurons are required for 2FU.
 
@@ -122,7 +168,7 @@ The B-type motor neurons are required for forward locomotion (Chalfie et al., 19
 
 Taken together, these results suggest that in the presence of premotor interneurons, the B class motor neurons contribute to neck-paralysis induced 2FU, but no single member is essential for generating high-frequency tail rhythms during 2FU. The A, VC and D motor neurons are not required for 2FU. The AS motor neurons were not investigated. Our results are consistent with a model in which posterior rhythm generation can arise from multiple subsets of B or AS motor neurons.
 
-## B-type motor neurons, as a class, are essential for 2FU
+### B-type motor neurons, as a class, are essential for 2FU
 
 We next asked whether the B motor neurons as a class are required for 2FU. We first considered vab-7 mutants, in which the DB motor neurons have aberrantly reversed processes. These worms have disrupted wave propagation in the tail, which coils towards the ventral side (Wen et al., 2012). We found that vab-7 mutants had mildly or strongly paralyzed tails and were incapable of 2FU when neck muscles were inhibited, suggesting that vab-7 is essential for 2FU (Figure 4—figure supplement 1D,E).
 
@@ -130,25 +176,51 @@ The inability of vab-7 worms to generate the high-frequency tail oscillation is 
 
 To ascertain whether the B motor neurons are required for 2FU, we performed broad ablations of the B motor neurons. We studied worms expressing Punc-17β::PH::miniSOG (Xu and Chisholm, 2016). In our integrated lines, we found that illumination of Punc-17β::PH::miniSOG worms preferentially eliminated the DA and DB over the VA and VB motor neurons (see Materials and methods). Worms in which most DB motor neurons were eliminated were dramatically less likely to show 2FU than mock controls, but were not incapable of doing so (Figure 5, Video 4; N = 9 out of 104 trials from 25 worms by blinded, randomized scoring). We performed the converse experiment – elimination of most VB motor neurons using our infrared laser system – and found the incidence of 2FU was again sharply reduced but not eliminated (Figure 5, Video 4, Figure 5—figure supplement 1). When we combined miniSOG and laser ablation to remove all DB and most VB motor neurons, animals were incapable of 2FU (Figure 5; 0 out of 102 trials from 27 worms by blinded, randomized scoring).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig5-v1.jpg)
+
+**Figure 5.:** (A) Top panels: assessment of ablations using a Pacr-2::mCherry label. After removal of dorsal B motor neurons (Punc-17β::PH::miniSOG), pairs of motor neurons – each corresponding to one VA and one VB type neuron – are visible along the VNC (blue arrows). Neither the DNC (red arrows) nor the DB or DA commissures (red arrowheads in mock) are visible. Scale bars: 100 μm. Bottom panels: Corresponding examples of worm locomotion after removal of DB (via miniSOG) and VB (via IR laser) motor neurons. Removal of DB always resulted in tail paralysis in a coiled position, but a minority of worms were able to generate a rhythmic midbody wave. Additional removal of VB motor neurons by laser ablation completely prevented 2FU and resulted in severe tail paralysis. (B,C) 2FU, as assayed by frequency measurements (B) or blinded, randomized scoring (C), is sharply reduced or eliminated by removal of DB, VB, or both. Head and mid-body frequencies were measured at body coordinates 15 and 60, respectively. Error boxes in (B) are the mean and 95% confidence interval of the mean. Error bars in (C) are standard error of the sample proportion. Numbers above each bar in (C) indicate the number of trials scored 2FU over the total number of trials for the condition; each individual worm contributed between one and five trials (3.6 on average). (***) p<0.001; paired t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Example curvature maps from trials in which 2FU was (A) and was not (B) observed after IR laser ablation of VB motor neurons. VB3-VB11 were removed in both worms.
+
+![Video 4.](https://cdn.elifesciences.org/articles/29913/elife-29913-video4.mp4.jpg)
+
 Taken together, these results suggest that the B motor neurons as a class are essential for independent tail undulation during forward movement. Our results are consistent with the hypothesis that the B motor neurons have a role in generating the high-frequency locomotory rhythm observed in 2FU.
 
-## Multiple lesion-separated VNC segments are capable of independent rhythm generation
+### Multiple lesion-separated VNC segments are capable of independent rhythm generation
 
 The observation that 2FU could persist despite disruptions to many components of the mid-body motor circuitry could also be explained by the hypothesis that additional rhythm generators located in the head are responsible for the observed high-frequency tail undulations. This possibility is supported by the findings that premotor INs account for the majority of synaptic inputs to the VNC motor neurons (White et al., 1986), and removal of the AVB premotor interneurons nearly abolished 2FU (Figure 4—figure supplement 1E).
 
 To ascertain whether the mid-body motor circuit is capable of independent rhythm generation, we developed a method for eliminating synaptic connections between the mid-body motor neurons and the head circuits. We used our infrared laser system to sever both the VNC and the dorsal nerve cord (DNC) just posterior to the pharynx. In many cases, this procedure also severed other fasciculated process bundles that run parallel to the VNC and DNC (Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig6-v1.jpg)
+
+**Figure 6.:** (A) The VNC (blue arrow) and DNC (red arrow) were severed in a Punc-17::GFP worm using a pulsed infrared laser. Several other dorso-ventral processes also appear cut. Nonetheless, robust bending waves are generated in the mid-body (lower pane). All scale bars: 50 μm. (B) The VNC and DNC are severed, and additional damage has been applied to the nerve ring to suppress head movements. Robust bending waves are generated in both the neck and tail (lower pane). (C) The VNC and DNC are severed posterior to the head and vulva (Pacr-2::wCherry), and the nerve ring is lesioned to suppress head movements. Robust bending waves are generated in both the neck and tail (lower pane). (D) The VNC and DNC are severed posterior to the head and vulva, but the nerve ring was not targeted. Low-frequency head undulation and high-frequency tail undulation were observed separately in this animal. (E) Frequency of undulation in the mid-body and tail for all ablation conditions and mock controls. Each colored circle pair represents one bout of forward locomotion lasting at least 2 s. For each condition, data are only considered for worms in which the VNC and DNC are clearly severed in the indicated locations. Mid-body and tail frequencies were measured at body coordinates 45 and 85, respectively. Error boxes represent the mean and SEM. N = 3, 7, 3, 4, 5, and seven worms per condition, respectively. (*) p<0.05; (**) p<0.01; (***) p<0.001; paired t-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative images of the VNC motor neurons in adult worms without (i) and with (ii) illumination with blue light at the L2 larval stage. After illumination, only B and AS neurons were visible along most of the body. In all worms tested, however (N = 20), at least one A motor neuron was visible at the posterior end of the VNC, corresponding to either VA12, DA8, or DA9. The behavior of the worm in (ii) is shown in C(i). Scale bars: 100 μm. (B) Rhythmic waves visible posterior to the head after removal of the A motor neurons, severing the VNC and DNC in the neck, and damaging the head. (C) Rhythmic waves visible in the mid-body (i) and tail (ii) after removal of the A motor neurons, severing the VNC and DNC in the neck, severing the VNC and DNC posterior to the vulva, and damaging the head.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Fluorescence image of the worm in (D), for which DB have been removed by MiniSOG and VB have been removed by laser ablation. The remaining VA neurons and processes allow visualization of the VNC, including the cut posterior to the pharynx (blue arrow). DA and DB commissures are not visible. Scale bar: 100 μm. (B–D) behavior during periods of mechanical vibration in worms for which the VNC and DNC were severed posterior to the pharynx. Control worms exhibit robust undulation. Worms lacking DB nearly always coiled in response to the stimulus, but in a minority of cases, very faint movements, potentially oscillations, could be seen in the tip of the tail. Worms lacking DB and VB also reacted to the stimulus by at least partially coiling, but rhythmic body undulations were not observed. (E) Recorded frequency during bouts of well-segmented non-reversal lasting at least two seconds during periods of mechanical stimulation. Control worms routinely exhibited oscillations in the mid-body and tail. DB ablated worms had no mid-body oscillations, but in one case produced very faint high-frequency tail oscillations (see C). DB and VB ablated worms lacked any rhythmic oscillations. N = 58, 7, and 16 bouts from 15, 4, and 9 worms, respectively Mid-body and tail frequency are measured at body coordinates 45 and 85, respectively. (F) Subjective scoring of worm behavior in each condition. Fractions indicate the number of trials blindly scored as oscillating during 20 s periods of mechanical stimulus (anywhere along the body) over the total number of trials. Oscillation was also not observed in DB or DB and VB ablated worms outside periods of stimulus (not shown). Each animal was subjected to 1–2 such stimulus trials. Error bars represent standard error of the sample proportion.
+
 Several hours after disruption of the nerve cords, most animals were inactive (data not shown), but active forward locomotion was induced by application of a mechanical stimulus. Most of these worms could generate robust oscillations posterior to the cut location (Figure 6A,E, Video 5). Moreover, the tail often undulated at a higher frequency than the mid-body (Figure 6E). In these worms, oscillations in the head were highly disrupted. In some cases, low-amplitude waves propagating in the posterior-to-anterior direction occurred simultaneously with robust mid-body and tail waves propagating in the anterior-to-posterior direction (Figure 6A, Video 5), suggesting a deficit in coordination between circuits on either side of the lesion. These results suggest that synaptic connections from the head circuits to the motor neurons may not be essential for wave generation posterior to the head.
+
+![Video 5.](https://cdn.elifesciences.org/articles/29913/elife-29913-video5.mp4.jpg)
 
 We considered the possibility that under these conditions, mid-body undulations were being caused by small movements in the head rather than generated by a second oscillator. To minimize the small movements of the head, we introduced an additional manipulation to reduce head movement. Using our infrared laser, we applied thermal damage to the worm’s nerve ring (located in the head) in addition to cutting both nerve cords. Animals treated with these three lesions are henceforth referred to as ‘VNC-lesioned’ worms. These worms exhibited very little movement in the head. However, they continued to generate robust oscillations in the mid-body and even higher frequency oscillations in the tail (Figure 6B,E, Video 5). The pattern of locomotion in VNC-lesioned animals strongly resembled the 2FU induced by optogenetic perturbation, with the important difference that in our lesioned preparation, both frequencies were likely generated outside the head.
 
 The emergence of multiple frequencies of undulation outside the head suggests that the VNC motor circuit itself may contain multiple units capable of independent oscillation. These units may exist in addition to any oscillating unit(s) in the head. To test this possibility directly, we cut the VNC and DNC in two locations: in the neck (anterior to VB3) and in the tail (posterior to VB8). We again thermally lesioned the head neurons to suppress head movement. Under these conditions, the VNC motor neurons between VB3 and VB8 are isolated from circuitry in both the head and tail, and the VNC motor neurons posterior to VB8 are isolated from both the head circuits and the anterior VNC motor neurons. As before, these animals could generate robust body oscillations posterior to the first cut and higher frequency oscillations posterior to the second cut (Figure 6C,E, Video 5), suggesting that rhythms can arise independently from each of these portions of the VNC motor neurons. It should be noted that in all our VNC lesion studies, the severed processes of all premotor interneurons likely remained present in the VNC.
 
-## B class motor neurons are necessary for rhythmic wave generation in VNC-lesioned worms
+### B class motor neurons are necessary for rhythmic wave generation in VNC-lesioned worms
 
 We next asked which motor neuron groups contributed to rhythm generation in worms in which the VNC and DNC were severed. The A motor neurons are not necessary for 2FU induced by neck paralysis (Figure 4—figure supplement 1C). We hypothesized that they are similarly not required for body oscillation in VNC-lesioned worms. We severed the VNC and DNC in either one or two locations after ablating the A motor neurons with Punc-4::miniSOG. Animals in which the VNC and DNC had been severed near the head were capable of robust wave generation and propagation posterior to the head (Figure 6—figure supplement 1B). Animals in which the VNC and DNC were severed in two locations were capable of rhythmic activity in the mid-body or tail, although we did not observe any cases of simultaneous oscillation in each segment (N = 20 worms, Figure 6—figure supplement 1C). These results support the idea that the A motor neurons are not required for generation of rhythmic forward waves in surgically isolated segments of the VNC motor circuit.
 
 The B motor neurons were required for neck-paralysis-induced 2FU (Figure 5). We hypothesized that they are also required for forward undulatory rhythms in VNC-lesioned worms. To test this idea, we used VNC-lesioned worms in which the DA and DB motor neurons were ablated by miniSOG and the VB motor neurons were ablated by an infrared laser as before. After nerve cord surgery, worms in either B-ablation condition, like mock controls, were highly inactive. Application of a mechanical stimulus caused tight coiling, especially but not exclusively in the DB-only ablation condition (Figure 6—figure supplement 2C, Video 6). Despite this coiling, we observed at least one case of a VNC-lesioned, DB-ablated worm appearing to move the very tip of its tail, possibly in a rhythmic fashion, suggesting that DB neurons may not be required for rudimentary oscillation in at least the most posterior portion of the tail. However, in VNC-isolated worms for which most DB and VB neurons were ablated, we never observed rhythmic movements (Figure 6—figure supplement 2D–F; N = 19 mechanical stimulus trials from nine worms). These results suggest that, as was the case for optogenetic 2FU, the B motor neurons are required for rhythm generation in VNC-lesioned worms.
+
+![Video 6.](https://cdn.elifesciences.org/articles/29913/elife-29913-video6.mp4.jpg)
 
 The observation that anterior VNC/DNC cuts disrupt normal head undulation (Figure 6A) suggests that rhythm generation by the head circuit may require inputs from the VNC. To address this possibility, we studied additional worms in which the VNC/DNC were cut in two locations slightly more posterior to the head to reduce the likelihood of damage to the head motor neurons, but which were not subject to thermal damage to the head. As in our earlier experiment (Figure 6A), head movement was severely disrupted (not shown). However, we occasionally observed very slow head undulation in these animals, indicating that head undulation is still possible under these conditions (Figure 6D, Video 5).
 
@@ -156,7 +228,7 @@ One explanation for the low frequency of head undulations is that damage to the 
 
 These results suggest that the C. elegans forward locomotor circuitry possesses at least three units capable of independent oscillation, with two units located outside the head. Although we did not observe simultaneous three-frequency forward undulation in any animal tested, we have shown that oscillations are possible in each segment when isolated from the others.
 
-## Undulations can arise in arbitrary portions of the VNC motor circuit
+### Undulations can arise in arbitrary portions of the VNC motor circuit
 
 We next sought to identify the smallest portion of the VNC motor circuit that is capable of generating rhythmic behaviors, and whether any differences exist between the rhythmic properties of segments of various sizes. To address these questions, we again damaged the head (as in Figure 6B), then systematically varied the location of VNC/DNC lesions relative to the B motor neurons.
 
@@ -166,11 +238,21 @@ When we severed the VNC and DNC at any one of a number of different locations (a
 
 **Figure 7.:** (A) Schematic indicating all regions at which we severed the VNC and DNC in relation to the B motor neurons. Each animal’s nerve cords were severed at only one of these locations. The nerve ring of each worm was also damaged to restrict head movements as in Figure 5B. (B–E) Representative curvature maps for worms subject to four of the tested conditions. Note that anterior-to-posterior waves begin progressively more posterior for each cut location. In some cases, the head and tail exhibited waves propagating in opposite directions (D). (F) Amplitude of bending as a function of body coordinate after severing the VNC and DNC anterior to the indicated motor neuron. Only the portion of the curve posterior to the amplitude minima (the cut location) is shown. No bouts of locomotion with anterior-to-posterior waves were discernible posterior to the cut at VB11 either subjectively or by our analysis software. For cut locations at VB3, VB5, VB6, VB7, VB9, VB10, and VB11 we studied N = 15, 9, 6, 10, 14, 9, and 6 worms and observed 25, 16, 7, 12, 30, 19, and 14 bouts of forward locomotion (lasting at least 3 s), respectively. Shaded outline represents ±SEM. (G) Frequency of undulation at body coordinate 75 for four cut conditions. Boxes represent mean and SEM. Each colored circle indicates the frequency during one bout of forward locomotion. *p<0.05, one-way ANOVA with Bonferroni post-hoc comparisons.
 
-## Rhythmic motor entrainment is possible in both the anteriorward and posteriorward directions
+### Rhythmic motor entrainment is possible in both the anteriorward and posteriorward directions
 
 Although we have shown that the C. elegans forward motor circuitry contains multiple rhythm generating units, it remains unclear exactly how these oscillators are coupled together, or even if they are all active during normal locomotion. Previous work demonstrated proprioceptive coupling in the posterior direction (Wen et al., 2012), and we showed that a disruption to proprioceptive coupling, via optogenetic inhibition of neck muscles, could decouple body undulations from head movements (Figures 3A and 4). One surprising feature of our results was that paralyzing the neck muscles appeared to decrease the head frequency. We found that during 2FU, head frequency decreases relative to the unperturbed swimming frequency (Figure 8A). Slowing was often even more dramatic when decoupling was stronger (Figures 3D and 6D). These observations suggest that anteriorward coupling, in addition to posteriorward coupling, may be present in the forward locomotor circuitry.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig8-v1.jpg)
+
+**Figure 8.:** (A) Neck muscle hyperpolarization (Figure 3A) causes a significant decrease in head bending frequency. This decrease is not predicted by either model discussed in Figure 1. (B) A multi-oscillator model of forward locomotion allowing for motor coupling in both the anterior and posterior directions. To test this model, we sought to impose a new frequency on the mid-body of a freely moving worm, and test whether head bending also adopts the new frequency. (C) Head bending frequency can be entrained by rhythmically inhibiting the mid-body BWMs. (i) A curvature map showing a representative trial. Green light was pulsed on coordinates 33–66 at a frequency of 2 Hz onto a Pmyo-3::NpHR worm. Note that the head frequency slows to half of the imposed frequency, although some instances of a 1:1 correlation between a laser pulse and a head bend are also evident (e.g. around t = 13 s). (ii) Mean head frequency power spectra of Pmyo-3::NpHR worms before manipulation (left bar, worms from all conditions are pooled) and while subject to rhythmic mid-body paralysis. Frequencies tested were 0 (with laser on), 0.5, 0.85, 1.1, 1.25, 1.4, 1.55, 1.7, 1.9, and 2.0 Hz. Frequency data are interpolated between these points. N ≥ 11 trials per condition, with each worm supplying at most two trials. For high-frequency inhibition (f > 1.1 Hz), the head is entrained to half of the inhibition frequency (bright peaks lie along y = x/2). For lower frequencies of inhibition (f ~ 0.85 Hz), the head is entrained to the inhibition frequency (bright peaks lie along y = x). (D) Head bending frequency can be entrained by rhythmically inhibiting the head, mid-body, or tail cholinergic neurons. (i) A curvature map showing a representative trial. Green light was pulsed on coordinates 33–66 at a frequency of 2 Hz onto a Punc-17::NpHR worm. (ii) Mean head frequency spectra before manipulation (black, all conditions pooled), and after rhythmically inhibiting the head (blue, body coordinates 0–33), mid-body (orange, 33–66), or tail (yellow, 66–99) neurons at 2 Hz. Rhythmic inhibition of the mid-body or tail increases the frequency power at 1 Hz and decreases the power at the original undulation frequency, mirroring (C). N ≥ 16 trials per condition, with each worm supplying at most two trials. Shaded outlines are the SEM. Vertical red lines indicate the imposed frequency (solid) or one-half of the imposed frequency (dashed).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative kymogram from a Pacr-5::Arch worm that was subject to rhythmic (1.7 Hz) hyperpolarization of the mid-body B motor neurons (top), and average frequency spectra of the head before and during rhythmic inhibition (bottom). Note an increase in amplitude at 0.85 Hz, one-half of the imposed frequency. N = 22 trials were analyzed from 11 worms. Vertical red lines indicate the imposed mid-body frequency (solid) or one-half of the imposed frequency (dashed). (B) Equivalent analysis for worms in which the mid-body muscles were rhythmically inhibited and muscle-to-muscle gap junctions are disrupted. Expression of UNC-9 in neurons, but not muscles, was transgenically restored in an unc-9 worm (Wen et al., 2012). Note an increase in amplitude at 0.85 Hz, one half of the imposed frequency. N = 22 trials were analyzed from 11 worms.
+
 To test for anteriorward coupling between motor circuit elements, we asked whether an oscillating optogenetic perturbation in the mid-body can entrain the head to a new frequency. We used our optogenetic targeting system to rhythmically inhibit the mid-body BWMs (Figure 8B). Worms subjected to this procedure exhibited a head bending frequency approximately one half that of the imposed frequency. The factor of one half is likely due to the presence of two phases during the rhythmic locomotory cycle of any single part of the body during which the curvature is close to zero (i.e. muscles are relaxed). In some cases, small head bends corresponding to individual mid-body pulses were evident as well (Figure 8C(i), Video 7).
+
+![Video 7.](https://cdn.elifesciences.org/articles/29913/elife-29913-video7.mp4.jpg)
 
 We found the head frequency could be entrained to a range of imposed mid-body frequencies. Subjecting body coordinates 33–66 to pulsed illumination at frequencies from approximately 1 to 2 Hz caused an increase in the power spectrum of the worm’s oscillations at frequencies corresponding to half of the imposed frequency, and a decrease at other frequencies. Pulsing at frequencies below 1 Hz generally led to head oscillations near the imposed frequency (Figure 8C(ii)). These results show that a mid-body rhythmic signal can entrain head bending, and point to the presence of an anteriorward coupling mechanism within the motor circuit.
 
@@ -200,25 +282,256 @@ Taken together, our results point to a new working model of C. elegans forward l
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/29913/elife-29913-fig9-v1.jpg)
 
-**Figure 9.:** C. elegans forward locomotion.Two units of the VNC motor neurons (and potentially more subsections) are capable of independent rhythm generation. However, all oscillating units are coupled by proprioceptive coupling (Wen et al., 2012) and another unknown, likely non-proprioceptive coupling mechanism that allows signaling in the anteriorward direction, and potentially also in the posteriorward direction. Pre-motor interneurons activate or suppress this circuit. AVB may have an additional, unexplained role in rhythm generation.
+**Figure 9.:** Two units of the VNC motor neurons (and potentially more subsections) are capable of independent rhythm generation. However, all oscillating units are coupled by proprioceptive coupling (Wen et al., 2012) and another unknown, likely non-proprioceptive coupling mechanism that allows signaling in the anteriorward direction, and potentially also in the posteriorward direction. Pre-motor interneurons activate or suppress this circuit. AVB may have an additional, unexplained role in rhythm generation.
 
 Dissecting the relative contributions of cellular pacemakers, network oscillators, and reflex loops to rhythmic motor generation and coordination has been a longstanding challenge in vertebrates and invertebrates (Kristan et al., 2005; Kiehn, 2006). Our finding that the architecture for rhythm generation in C. elegans locomotion shares key properties with other vertebrate and invertebrate models sets the stage for molecular, cellular, and network-level investigations of motor coordination in a uniquely tractable model organism.
 
 ## Materials and methods
 
-## Strains
+### Strains
 
 We maintained C. elegans on 6 cm NGM plates seeded with E. coli OP50 at 20˚C using standard methods (Sulston and Hodgkin, 1988). For all optogenetic experiments, we added 100 mM all-trans retinal (ATR) in ethanol at 0.8% by volume to the bacteria suspension before seeding the plates, and kept plates in darkness. All strains were synchronized by hypochlorite bleaching and allowed to hatch on an NGM plate without food. L1 arrested larvae were transferred to OP50 or OP50 +ATR plates and allowed to grow to the appropriate stage. Unless otherwise specified, all experiments were performed using day 1 adult hermaphrodites.
 
 All strains used in this study are listed in Tables 1 and 2. All transgenic strains were outcrossed a minimum of three times against N2.
 
-## Construction and validation of the optogenetic targeting system
+**Table 1.**
+ Transgenic arrays acquired or generated for this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transgene</th>
+      <th>Plasmid or reference</th>
+      <th>Description</th>
+      <th>Purpose</th>
+      <th>Strain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vsIs48</td>
+      <td>(Chase et al., 2004)</td>
+      <td>Punc-17::GFP</td>
+      <td>Identification of VNC and DNC</td>
+      <td>LX929</td>
+    </tr>
+    <tr>
+      <td>akIs11</td>
+      <td>(Zheng et al., 1999)</td>
+      <td>Pnmr-1::ICE; lin-15(+)</td>
+      <td>Ablation of INs</td>
+      <td>VM4770</td>
+    </tr>
+    <tr>
+      <td>kyIs36</td>
+      <td>(Zheng et al., 1999)</td>
+      <td>Pglr-1::ICE; lin-15(+)</td>
+      <td>Ablation of INs</td>
+      <td>VM4771</td>
+    </tr>
+    <tr>
+      <td>wenIs001</td>
+      <td>pJH2918</td>
+      <td>Pacr-5::ArchT::RFP; lin-15(+)</td>
+      <td>Inhibition of B motor neurons</td>
+      <td>WEN001</td>
+    </tr>
+    <tr>
+      <td>qhIs1</td>
+      <td rowspan="2">(Leifer et al., 2011; Husson et al., 2012)</td>
+      <td rowspan="2">Pmyo-3::NpHR::ECFP; lin-15(+)</td>
+      <td rowspan="2">Inhibition of muscles</td>
+      <td>YX9</td>
+    </tr>
+    <tr>
+      <td>qhIs2</td>
+      <td>YX10</td>
+    </tr>
+    <tr>
+      <td>qhIs4</td>
+      <td>pJH1841</td>
+      <td>Pacr-2::wCherry; dpy-20(+)</td>
+      <td>Identification of B</td>
+      <td>YX146</td>
+    </tr>
+    <tr>
+      <td>qhIs5</td>
+      <td>(Xu and Chisholm, 2016)</td>
+      <td>Pmyo-3::PH::miniSOG(Q103L)+Pmyo-3::mCherry + Pttx-3::RFP</td>
+      <td>Ablation of BWM</td>
+      <td>YX203</td>
+    </tr>
+    <tr>
+      <td>qhIs9</td>
+      <td>(Xu and Chisholm, 2016)</td>
+      <td>Punc-17β::PH::miniSOG (Q103L)+Pacr-2::mCherry+ Pttx-3::RFP</td>
+      <td>Ablation of B</td>
+      <td>YX234</td>
+    </tr>
+    <tr>
+      <td>hpEx803</td>
+      <td>(Wen et al., 2012)</td>
+      <td>unc-9(fc16); hpIs3; Prgef-1-unc-9cDN)+odr-1</td>
+      <td>Neuronal unc-9 rescue</td>
+      <td>ZM2509</td>
+    </tr>
+    <tr>
+      <td>zxIs6</td>
+      <td>(Liewald et al., 2008)</td>
+      <td>Punc-17::ChR2(H134R)::YFP;lin-15(+)</td>
+      <td>Stimulation of cholinergic neurons</td>
+      <td>ZX460/ ZM3265</td>
+    </tr>
+    <tr>
+      <td>hpIs166</td>
+      <td>(Gao et al., 2015)</td>
+      <td>Pglr-1::chop-2(H134R)::YFP; lin-15(+)</td>
+      <td>Identification of INs</td>
+      <td>ZM4624</td>
+    </tr>
+    <tr>
+      <td>hpIs178</td>
+      <td>(Leifer et al., 2011)</td>
+      <td>Punc-17::NpHR::ECFP; lin-15(+)</td>
+      <td>Inhibition of cholinergic neurons</td>
+      <td>ZM5016</td>
+    </tr>
+    <tr>
+      <td>hpIs179</td>
+      <td>(Kawano et al., 2011)</td>
+      <td>Psra-11::D3cpv</td>
+      <td>Identification of AVB</td>
+      <td>ZM5132</td>
+    </tr>
+    <tr>
+      <td>hpIs366</td>
+      <td rowspan="2">pJH2843</td>
+      <td rowspan="2">Punc-4::tomm-20::miniSOG:: urSL::wCherry; lin-15(+)</td>
+      <td rowspan="2">Ablation of A and VC</td>
+      <td>ZM7690</td>
+    </tr>
+    <tr>
+      <td>hpIs371</td>
+      <td>ZM7691</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Additional strains generated by combining transgenes in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Transgenes</th>
+      <th>Description</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>YX119</td>
+      <td>qhIs1; unc-49(e407)</td>
+      <td>Muscle::NpHR, unc-49</td>
+      <td>2FU with D function impaired</td>
+    </tr>
+    <tr>
+      <td>YX126</td>
+      <td>qhIs1; hpIs371</td>
+      <td>Muscle::NpHR, A/VC::miniSOG</td>
+      <td>2FU with A and VC removed</td>
+    </tr>
+    <tr>
+      <td>YX127</td>
+      <td>hpIs178; hpIs371; zxIs6</td>
+      <td>Cholinergic Neurons::NpHR&amp;ChR2, A/VC::miniSOG</td>
+      <td>Inhibition or excitation of Cholinergic neurons with A removed</td>
+    </tr>
+    <tr>
+      <td>YX135</td>
+      <td>qhIs1; vab-7(e1562) III.</td>
+      <td>Muscle::NpHR, DB disrupted</td>
+      <td>2FU (fails) with DB disrupted</td>
+    </tr>
+    <tr>
+      <td>YX137</td>
+      <td>qhIs1; unc-7(e5)</td>
+      <td>Muscle::NpHR, unc-7</td>
+      <td>2FU with AVB::B gap junctions disrupted</td>
+    </tr>
+    <tr>
+      <td>YX139</td>
+      <td>qhIs1; unc-9(fc16); hpEx803</td>
+      <td>Muscle::NpHR, UNC-9 disruption in muscles only</td>
+      <td>Entrainment with BWM::BWM gap junctions disrupted</td>
+    </tr>
+    <tr>
+      <td>YX140</td>
+      <td>qhIs1; unc-9(fc16)</td>
+      <td>Muscle::NpHR, unc-9</td>
+      <td>2FU with AVB::B gap junctions disrupted</td>
+    </tr>
+    <tr>
+      <td>YX148</td>
+      <td>qhIs1; qhIs4</td>
+      <td>Muscle::NpHR, AB::RFP</td>
+      <td>2FU with some B removed OR undulation with nerve cords severed</td>
+    </tr>
+    <tr>
+      <td>YX152</td>
+      <td>hpIs166; akIs11</td>
+      <td>IN::ICE&amp;YFP</td>
+      <td>Assessment of ICE ablations</td>
+    </tr>
+    <tr>
+      <td>YX153</td>
+      <td>hpIs166; kyIs36</td>
+      <td>IN::ICE&amp;YFP</td>
+      <td>Assessment of ICE ablations</td>
+    </tr>
+    <tr>
+      <td>YX159</td>
+      <td>qhIs2; akIs11</td>
+      <td>Muscle::NpHR, IN::ICE</td>
+      <td>2FU with PVC removed</td>
+    </tr>
+    <tr>
+      <td>YX160</td>
+      <td>qhIs2; kyIs36</td>
+      <td>Muscle::NpHR, IN::ICE</td>
+      <td>2FU with PVC removed</td>
+    </tr>
+    <tr>
+      <td>YX177</td>
+      <td>hpIs366; vsIs48</td>
+      <td>A/VC::miniSOG, Cholinergic Neurons::GFP</td>
+      <td>Undulation with nerve cords severed and A removed.</td>
+    </tr>
+    <tr>
+      <td>YX223</td>
+      <td>qhIs1; qhIs9</td>
+      <td>Muscle::NpHR, DB ablated</td>
+      <td>2FU with B removed OR undulation with nerve cords severed and B removed.</td>
+    </tr>
+    <tr>
+      <td>YX230</td>
+      <td>qhIs1; hpIs179</td>
+      <td>Muscle::NpHR, AVB labeled for ablation</td>
+      <td>2FU with AVB removed</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction and validation of the optogenetic targeting system
 
 We constructed an optogenetic targeting system similar to that described in Leifer et al., 2011 based around a Leica DMI4000B microscope. Dark-field illumination was provided by red LEDs and worms were imaged with a sCMOS camera (QImaging optiMOS). Custom written C++ software (Fouad et al., 2017) performs image segmentation of the worm and allows the user to select a region of the worm to illuminate. The illumination region is sent to a digital micromirror device (DMD), which then projects the laser onto only the desired portion of the worm through a 10X objective. The entire cycle runs at 40 Hz. A green laser (Shanghai Laser and Optics Century GL532T3-300, 532 nm wavelength, irradiance 10 mW/mm2 at focal plane) was used for all activations of NpHR or Arch, and a blue laser (Shanghai Laser and Optics Century BL473T3-150, 473 nm wavelength, irradiance 4 mW/mm2 at focal plane) was used for activation of ChR2. Worms were placed in a solution of 17% dextran in NGMB (Fang-Yen et al., 2010) in an 80-µm-thick chamber between a microscope slide and cover glass, separated by glass beads. NGMB is identical to NGM (Stiernagle, 2006) but without agar, peptone, or cholesterol.
 
 To determine the accuracy of our illumination system, we studied worms expressing the excitatory opsin ChR2 under the control of the aptf-1 promoter. These worms were reported to quickly become quiescent when the RIS head neuron is illuminated with blue light (Turek et al., 2013). We targeted a thin band of blue light to various locations along the centerline of each worm, and measured the amplitude of head bending waves as an output (data not shown). The distance between the region where most slowing occurred (body coordinate 14) and the nearest region with no slowing (body coordinate 20) suggests that our optogenetic targeting system has a resolution of about 6% of an adult worm’s body length, similar to that reported for a previous system (Leifer et al., 2011).
 
-## Optogenetic inhibition and stimulation
+### Optogenetic inhibition and stimulation
 
 For head and neck optogenetic inhibition experiments, YX9 (Muscle::NpHR), ZM5016 (Cholinergic Neurons::NpHR), WEN001 (B::Arch), YX127 (Cholinergic Neurons::NpHR&ChR2, A/VC::miniSOG), YX119 (Muscle::NpHR, unc-49(e407)), YX135 (Muscle::NpHR, vab-7(e1562), YX137 (Muscle::NpHR, unc-7(e5)), or YX140 (Muscle::NpHR, unc-9(fc16)) larvae were transferred to ATR plates and allow to grow to first day of adulthood. Up to 20 adult worms were mounted at a time on our optogenetic targeting system. Worms were sampled with replacement from the dextran chamber, and illuminated with a green (532 nm wavelength) laser a total of one to three times in the indicated region, with at least 10 s between successive illuminations of the same animal.
 
@@ -226,7 +539,7 @@ For activation of posterior B and AS motor neurons, YX127 (Cholinergic neurons::
 
 For rhythmic inhibition of muscles or cholinergic neurons, synchronized YX148 (Muscle::NpHR, AB::RFP) L4 larvae, YX139 (Muscle::NpHR, BWM gap junctions disrupted) L4 larvae, YX127 day 1 adults, or WEN001, day 1 adults grown on ATR plates were mounted on the optogenetic targeting system and illuminated periodically at the indicated frequency and location through our custom software. For this experiment, L4 qhIs1 larvae were used because expression of myo-3::NpHR::ECFP in the BWMs appeared to be weaker in adults. YX127 animals were not exposed to blue light prior to this experiment.
 
-## Neuron and muscle photoablation using miniSOG
+### Neuron and muscle photoablation using miniSOG
 
 For optogenetic 2FU experiments, YX126 (Muscle::NpHR, A/VC::miniSOG) larvae were allowed to grow for 2 days on OP50 plates until the L4 stage, at which RFP was visible in the both the A- and VC-type motor neurons. Worms were bulk illuminated with blue light (wavelength 470 ± 17 nm) at 3.5 mW/mm2 for 20 min of total illumination time using 0.5 s on/1.5 s off pulse train (Qi et al., 2012) from a Leica EL6000 light source. After illumination, the larvae were transferred to OP50+ ATR plates and incubated for two additional days, but did not appear to grow past the L4 stage. During the optogenetic experiments, worms were observed swimming forward and stopping, but never in reverse. In addition, worms were handled individually and recovered from the dextran chamber for fluorescence imaging. We mounted each worm on a separate 4% agar pad and acquired RFP images on a compound fluorescence microscope (Leica DMI6000B). In control worms, which grew into adults, RFP was visible in the VC-type motor neurons, some A-type motor neurons (RFP was visible in all A-type motor neurons at the L2-L4 stages), and the posterior intestine. The normal RFP expression pattern in A- and VC-type motor neuron was absent in all illuminated worms. However, neurons in the tail corresponding to VA12, DA8, or DA9 were usually visible (see also Figure 6—figure supplement 1A).
 
@@ -236,7 +549,7 @@ For body wall muscle ablation experiments, YX203 (BWM::miniSOG) adults were immo
 
 For B ablation experiments using Punc-17β::PH::miniSOG (YX223), we found that illumination at any larval stage preferentially killed the DA and DB motor neurons, but left most VA and VB alive, as determined by the loss of all dorsal commissures and DNC labeling by Pacr-2::wCherry (not shown). Hence, we illuminated all YX223 animals at the L1 stage for 20 min with 0.25 s on/0.25 s off pulsing (Xu and Chisholm, 2016) to kill DB. Worms were recovered to ATR (for optogenetic 2FU) or regular seeded (for VNC surgery) plates. Additional laser ablation of VB neurons was performed at the L4 stage, and lesioning of the VNC and DNC was performed at the day 2 adult stage (both described below).
 
-## Ablation of premotor interneurons by ICE
+### Ablation of premotor interneurons by ICE
 
 Prior to conducting optogenetic experiments, we generated strains YX152 (Pnmr-1::ICE; Pglr-1::ChR2::YFP) and YX153 (Pglr-1::ICE; Pglr-1::ChR2::YFP) to test whether the interneurons were appropriately ablated. Control ZM4624 (Pglr-1::ChR2::YFP) L1 larvae and adults showed bright YFP labeling of many neurons, including many head neurons and PVC, the only pair of labeled neurons in the tail.
 
@@ -244,7 +557,7 @@ In L1 arrested YX152 and YX153 worms, many neurons were also easily visualized b
 
 For optogenetic experiments, we generated strains YX159 (Muscle::NpHR, IN::ICE) and YX160 (Muscle::NpHR, IN::ICE) and performed optogenetic illuminations as in our original optogenetic 2FU experiments.
 
-## Pulsed infrared laser cauterization of neurons and nerve cords
+### Pulsed infrared laser cauterization of neurons and nerve cords
 
 For ablation of B motor neurons or AVB interneurons, YX148 (Muscle::NpHR, AB::RFP), YX223 (Muscle::NpHR, DB killed by miniSOG, see above), or YX230 (Muscle::NpHR, AVB labeled) worms were raised on ATR plates until most animals were at the L3 to L4 stage, and then immobilized on 4–10% agar pads using 50 nm polystyrene beads (Kim et al., 2013). Each pad was mounted on a pulsed infrared laser system (Churgin et al., 2013) that had been modified with increased power to deliberately kill cells. Each neuron, visualized by RFP or GFP fluorescence optics, was irradiated with a single 0.8 to 1.6 ms pulse of the 400 mW laser through a 63X oil immersion objective. We determined that a single 0.8 ms pulse reliably kills a targeted VNC motor neuron, has a 50% chance of killing a VNC neighbor within 2.5 μm, and has a 10% chance of killing a VNC neighbor within 5 μm from the target (A. D. F. and C. F.-Y., unpublished data). After ablation, worms were recovered and transferred to a fresh ATR plate to resume development for one additional day. During optogenetic experiments, worms were handled individually and recovered to agar pads after illumination.
 
@@ -252,19 +565,19 @@ To sever the VNC and DNC, day 2 adult YX148 or LX929 (Cholinergic neuron::GFP) w
 
 In many other systems, mechanical, electrical, or chemical stimuli can be applied to induce swimming or fictive swimming in an otherwise quiescent preparation (Kristan et al., 2005). To agitate C. elegans, we mechanically vibrated each worm using a 200 Hz cell phone motor for periods of 10–20 s to induce locomotion at least twice during each recording. After behavioral imaging, each worm was transferred to a pad and imaged for red or green fluorescence imaging.
 
-## Fluorescence imaging and identification of neurons and nerve cord lesions
+### Fluorescence imaging and identification of neurons and nerve cord lesions
 
 For all neuron ablation or nerve cord lesioning experiments, we acquired RFP or GFP fluorescence images of each animal through a 40X objective on a compound fluorescence microscope (Leica DMI 6000B). Through examination of images, A and B type motor neurons or AVB interneurons were labeled as present or missing based on the location, stereotypic ordering, commissural orientation, and the presence or absence of commissures from dorsal A- or B-type motor neurons. In ablation conditions labeled ‘most VB’ in Figure 5 and Figure 6—figure supplement 2, we only used data from animals in which at most three out of the nine VB neurons between VB3 and VB11 inclusive were visible. In DB ablation conditions in the same two figures, all DB motor neurons appeared to be missing, and occasionally some VA/VB were missing as well. However, we generally could not identify B motor neurons anterior to VB3 because of clustering and the presence of very bright AIY::RFP in qhIs9 worms. In each category in Figure 4F, we included only worms for which all indicated B motor neurons were missing. Some individuals in each category had additional missing neurons. In Figure 4—figure supplements 3 and 4, all ablated B motor neurons are indicated for each individual worm example. In AVB ablation conditions, we only analyzed data from worms in which both AVB cell bodies and their associated processes were removed. Because cell killing occurs over a ~ 3 μm radius volume in our system, it is highly likely that other head neurons were also damaged or killed by this procedure. For nerve cord lesioning experiments, we only analyzed data from animals in which all indicated VNC/DNC targets were clearly severed.
 
-## Head lesions using a heated wire
+### Head lesions using a heated wire
 
 To broadly lesion the head and inhibit anterior bending, four freely crawling adult N2 worms were gently touched on or near the head with a platinum wire attached to a soldering iron. The worms appeared to crawl backwards after the initial touch, so we applied a second touch to the agar near the tail to induce forward locomotion. We recorded behavior immediately after lesioning.
 
-## Heterogenous mechanical environment experiments
+### Heterogenous mechanical environment experiments
 
 Day 1 adult N2 worms were transferred to a slide containing 3 to 5 µL islands of solutions of high viscosity 3% hydroxypropylmethylcellulose (HPMC, Ashland Benecel K200M) in NGMB, surrounded by NGMB without HPMC. A second slide, spaced by 125 µm thick plastic spacers, was placed on top to form a two-dimensional chamber similar to those used for optogenetics experiments, but with an inhomogeneous mechanical environment. We imaged each slide under dark field illumination on a Nikon TE2000-S microscope and recorded worms transitioning from low-viscosity to high-viscosity regions.
 
-## Curvature segmentation, analysis, and statistics
+### Curvature segmentation, analysis, and statistics
 
 For experiments with our optogenetic targeting system, the real-time segmentation for body targeting was recorded to disk along with each video frame. We wrote custom MATLAB codes (Fouad et al., 2017) to compute the curvature of the worm in each frame using the recorded centerline coordinates. All analysis codes, codes for the optogenetic targeting system, and source data for figures are freely available (Fouad et al., 2017). Frequencies and amplitudes in optogenetic experiments were measured over either a 3 s non-illuminated interval ending at the start of illumination, or a 3 s illuminated interval beginning at the start of illumination. Trials were excluded if, during the period of analysis, (1) the worm showed reverse locomotion at any time, or (2) the segmentation algorithm was disrupted, for example if the worm touched a bubble, another worm, or the edge of the chamber.
 

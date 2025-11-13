@@ -22,7 +22,7 @@
 
 ## Abstract
 
-The E2F transcription factors play a critical role in controlling cell fate. In Drosophila , the inactivation of E2F in either muscle or fat body results in lethality, suggesting an essential function for E2F in these tissues. However, the cellular and organismal consequences of inactivating E2F in these tissues are not fully understood. Here, we show that the E2F loss exerts both tissue-intrinsic and systemic effects. The proteomic profiling of E2F-deficient muscle and fat body revealed that E2F regulates carbohydrate metabolism, a conclusion further supported by metabolomic profiling. Intriguingly, animals with E2F-deficient fat body had a lower level of circulating trehalose and reduced storage of fat. Strikingly, a sugar supplement was sufficient to restore both trehalose and fat levels, and subsequently rescued animal lethality. Collectively, our data highlight the unexpected complexity of E2F mutant phenotype, which is a result of combining both tissue-specific and systemic changes that contribute to animal development.
+The E2F transcription factors play a critical role in controlling cell fate. In Drosophila, the inactivation of E2F in either muscle or fat body results in lethality, suggesting an essential function for E2F in these tissues. However, the cellular and organismal consequences of inactivating E2F in these tissues are not fully understood. Here, we show that the E2F loss exerts both tissue-intrinsic and systemic effects. The proteomic profiling of E2F-deficient muscle and fat body revealed that E2F regulates carbohydrate metabolism, a conclusion further supported by metabolomic profiling. Intriguingly, animals with E2F-deficient fat body had a lower level of circulating trehalose and reduced storage of fat. Strikingly, a sugar supplement was sufficient to restore both trehalose and fat levels, and subsequently rescued animal lethality. Collectively, our data highlight the unexpected complexity of E2F mutant phenotype, which is a result of combining both tissue-specific and systemic changes that contribute to animal development.
 
 ## Introduction
 
@@ -40,15 +40,31 @@ To address these questions, and to ask whether the roles of E2F in muscle and fa
 
 ## Results
 
-## The loss of E2F/DP in the fat body does not impact muscle development
+### The loss of E2F/DP in the fat body does not impact muscle development
 
 The expression of UAS-Dp RNAi transgene driven by the muscle (Mef2-GAL4) or fat body (cg-GAL4) GAL4 drivers specifically depletes Dp protein in the corresponding tissue, which results in two readily observed phenotypes. First, the inactivation of Dp in muscle is accompanied by severely reduced muscle growth in both larval and thoracic muscles (Zappia and Frolov, 2016). Second, fat body-specific Dp depletion triggers a reduction in fat storage and an increase in DNA damage response that promotes uncontrolled DNA replication and, ultimately, leads to the occurrence of binucleated cells (Guarner et al., 2017). Given that the inactivation of Dp in either tissue had a similar impact on viability and caused pupal lethality (Guarner et al., 2017; Zappia and Frolov, 2016; Figure 1—figure supplement 1), we asked whether Dp depletion in muscle may also affect fat body development and, conversely, if Dp deficiency in fat body may cause muscle abnormalities.
 
 We began by comparing muscle structure between Mef2>Dp-RNAi and cg>Dp-RNAi animals. The ventral longitudinal 3 (VL3) muscles in wandering third instar larva were visualized by staining the body walls with phalloidin and 4,6-diamidino-2-phenylindole (DAPI). As previously reported, the area of the VL3 muscles in Mef2>Dp-RNAi animals were significantly smaller than control (Zappia and Frolov, 2016). In contrast, no differences were detected in the VL3 muscle area between cg>RFP and cg>Dp-RNAi larval muscles (Figure 1A–B). To confirm efficiency of Dp depletion in Mef2>Dp-RNAi, the expression of Dp was monitored with the transgene DpGFP, which expresses the fusion protein Dp::GFP (Figure 1A; Zappia and Frolov, 2016). Thus, we concluded that the loss of E2F/DP in fat body does not cause the phenotype observed in Dp-depleted muscles.
 
-## Dp-depleted muscles affect fat body development
+![Figure 1.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig1-v2.jpg)
+
+**Figure 1.:** (A) Confocal Z-stack-projected images of third instar larval body wall muscles ventral longitudinal 3 (VL3) (marked with white arrowhead) and ventral longitudinal 4 (VL4) from the segment A4 stained with Phalloidin, Dp::GFP, and DAPI. Anterior is to the left. Scale: 100 μm. (B) Box plot showing quantification of VL3 muscle area. Whiskers are min to max values, Kruskal-Wallis test followed by Dunn’s multiple comparisons test, **p<0.0001. n=9–12 animals per genotype. Three independent experiments were done. Full genotypes are (A–B) cg-GAL4/UAS-RFP,Dp[GFP], cg-GAL4/Dp[GFP],UAS-Dp[GD4444]-RNAi, UAS-RFP,Dp[GFP];Mef2-GAL4, and Dp[GFP],UAS-Dp[GD4444]-RNAi,Mef2-GAL4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Animal viability assessed by quantifying the percentage of animals at each developmental stage (adult, pharate, and early pupa). Data are presented as stacked bar plot, mean ± SEM, n=2 replicates per genotype, repeated as N=5–6 independent experiments. Full genotypes are cg-GAL4,UAS-mCherry-RNAi, cg-GAL4/UAS-Dp[GD4444]-RNAi, UAS-GC3Ai; Lpp-GAL4/UAS-mCherry-RNAi, UAS-GC3Ai/UAS-Dp[GD4444]-RNAi; Lpp-GAL4, Mef2-GAL4/UAS-mCherry-RNAi, and UAS-Dp[GD4444]-RNAi,Mef2-GAL4.
+
+### Dp-depleted muscles affect fat body development
 
 One of the hallmarks of the loss of Dp in fat body is an increase in the DNA damage response that leads to the appearance of binucleated cells (Guarner et al., 2017). We confirmed that the depletion of Dp driven by the fat body-specific GAL4 driver cg-GAL4 resulted in the formation of binucleated cells (~4.2% in cg>Dp-RNAi, Figure 2A–B) while none were found in fat bodies from wild-type animals. This phenotype was also observed in E2f2; E2f1 double mutant animals (Figure 2—figure supplement 1A) and in Dp null mutants (Guarner et al., 2017). Given that the cg-GAL4 driver expresses GAL4 in both fat body and hemocytes (Pastor-Pareja and Xu, 2011), an additional independent fat body driver, Lpp-GAL4, was used to drive Dp depletion in fat body. The occurrence of binucleated cells in fat body were also observed in Lpp>DpRNAi larva (Figure 2—figure supplement 1B), which died at pupa stage (Figure 1—figure supplement 1), thus confirming the cell-autonomous effect of Dp loss in fat body, in concordance with previous work (Guarner et al., 2017).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig2-v2.jpg)
+
+**Figure 2.:** (A) Confocal single plane images of third instar larval fat bodies stained with phalloidin, 4,6-diamidino-2-phenylindole (DAPI), and mouse anti-Dp antibody (Yun). White arrowheads point to newly formed binucleate cells. (B) Quantification of the percentage of binucleated cells in fat body. Date are presented as mean ± SD, n=415 cells for Mef2>Dp-RNAi, n=405 cells for cg>Dp-RNAi, and n=300 cells for each Mef2>Luc-RNAi and cg>Luc-RNAi, which did not show binucleates. Kruskal-Wallis test followed by Dunn’s multiple comparisons test, p<0.0001. Experiment was repeated two times. One representative experiment is shown. (C) Confocal single plane images of third instar larval fat bodies stained with Rad50, phalloidin, and DAPI. Scale: 100 μm. Full genotypes are (A) cg-GAL4;UAS-mCherry-RNAi, cg-GAL4/UAS-Dp[GD4444]-RNAi, Mef2-GAL4/ UAS-luciferase[JF01355]-RNAi, and UAS-Dp[GD4444]-RNAi; Mef2-GAL4, (B) cg-GAL4/UAS-RFP,Dp[GFP], cg-GAL4/Dp[GFP],UAS-Dp[GD4444]-RNAi, UAS-RFP,Dp[GFP];Mef2-GAL4, and Dp[GFP],UAS-Dp[GD4444]-RNAi,Mef2-GAL4, and (C) cg-GAL4,UAS-mRFP;UAS-luciferase[JF01355]-RNAi, cg-GAL4,UAS-mRFP/UAS-Dp[GD4444]-RNAi, Mef2-GAL4/UAS-luciferase[JF01355]-RNAi, and UAS-Dp[GD4444]-RNAi;Mef2-GAL4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Confocal single plane images of third instar larval fat bodies stained with 4,6-diamidino-2-phenylindole (DAPI). Genotypes are E2f2 76Q1/c03344; E2f1 91/m729 compared to control w1118. (B) Confocal single plane images of third instar larval fat bodies stained with DAPI and phalloidin. Genotypes are UAS-GC3Ai/UAS-Dp[GD4444]-RNAi;Lpp-GAL4 compared to control UAS-GC3Ai; Lpp-GAL4/UAS-mCherry-RNAi. (C) Confocal single plane images of third instar larval fat bodies from Mef2>Luc-RNAi, Mef2>Dp-RNAi, and cg>DpRNAi larvae stained with anti-Mre11 antibodies, phalloidin, and DAPI. Scale: 100 μm. White arrowheads point to binucleated cells.
 
 Next, we examined the fat body in Mef2>Dp-RNAi larva following muscle-specific Dp depletion by staining the tissue with phalloidin and DAPI. Surprisingly, ablation of Dp in muscles led to the appearance of binucleated cells (7.7% in Mef2>Dp-RNAi, Figure 2A–B). We confirmed that Dp was depleted in a tissue-specific manner, as only cg>Dp-RNAi fat bodies showed reduced levels of Dp protein as revealed by immunofluorescence using anti-Dp antibodies (Figure 2A, bottom panel).
 
@@ -56,7 +72,7 @@ One of the functions of E2F in the fat body is to limit the response to DNA dam
 
 We conclude that the loss of Dp in muscles elicits defects in fat body that might be similar to the phenotype seen in Dp-deficient fat body albeit not accompanied by the upregulation of MRN proteins. Thus, Dp-deficient muscle seems to exert a systemic effect on normal tissues, such as fat body.
 
-## The loss of Dp in muscles does not alter Dp expression in the fat body
+### The loss of Dp in muscles does not alter Dp expression in the fat body
 
 Leaky expression of GAL4 drivers in other tissues during earlier developmental stages might provide a trivial explanation for the results described above. To exclude this possibility, we used three approaches to confirm the tissue specificity of cg-GAL4 and Mef2-GAL4 drivers used to knock down Dp. First, we examined the real-time and lineage tracing expression of the drivers. We used the system G-TRACE, which combines the FLP recombinase-FRT and the expression of GFP to trace earlier GAL4 expression, and the presence of RFP to identify real-time expression of GAL4 (Evans et al., 2009). G-TRACE showed that the cg-GAL4 driver is expressed in the fat body in agreement with previous report (Pastor-Pareja and Xu, 2011; Figure 3A, left panel). No GFP or RFP signal was detected in larval muscles (Figure 3A, right panel) suggesting that at no point during development cg-GAL4 was expressed in muscles. Similarly, Mef2-GAL4 expression was detected in larval skeletal and smooth muscles (Figure 3B, left panels), and in the adult muscle precursors (wing disc myoblasts), but not in the fat body (Figure 3B, right panels).
 
@@ -68,21 +84,29 @@ Second, the levels of Dp expression in fat body and muscles of Mef2>Dp-RNAi and 
 
 Thus, the occurrence of binucleated cells in Mef2>Dp-RNAi fat body is not due to altered expression of Dp in fat body of these animals and, therefore, reflects a systemic effect induced by muscle-specific Dp depletion.
 
-## The muscle-specific expression of Dp in Dp mutants rescues the fat body phenotype
+### The muscle-specific expression of Dp in Dp mutants rescues the fat body phenotype
 
 The expression of UAS-Dp transgene with either the fat body- or muscle-specific drivers, cg-GAL4 or Mef2-GAL4, can significantly extend viability of Dp mutants (Guarner et al., 2017; Zappia and Frolov, 2016). Given the systemic effect of Dp described above, we asked whether the muscle-specific Dp expression suppresses the defects in fat body of Dp mutants. The UAS-Dp transgene was expressed in the trans-heterozygous ﻿Dpa3/Df(2R)Exel7124 (Dp-/-) mutant animals under the control of cg-GAL4 or Mef2-GALl4. Larval fat bodies were stained with phalloidin and DAPI to visualize the occurrence of binucleated cells. In agreement with previously published data (Guarner et al., 2017), 7.1% of cells in fat body of Dp mutants were binucleated and this phenotype was fully rescued in the Dp-/-; cg>Dp animals (Figure 4A, quantified in Figure 4B). Strikingly, the binucleated phenotype was also largely rescued by re-expression of Dp in muscles of Dp mutants, in Dp-/-; Mef2>Dp animals (Figure 4A–B). We note, however, that fat bodies of Dp-/-; Mef2>Dp animals still contained fragmented and decondensed/large nuclei indicating that the rescue was incomplete. Staining with anti-Dp antibody confirmed the lack of Dp expression in Dp-/-; Mef2>Dp fat bodies (Figure 4A, bottom panel), thus excluding the possibility of a leaky expression of Mef2-GAL4 driver in the fat body.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig4-v2.jpg)
 
-**Figure 4.:** Dp-deficient fat body.(A) Confocal single plane images of third instar larval fat bodies immunostained with anti-Dp antibody (212), phalloidin, and 4,6-diamidino-2-phenylindole (DAPI). Note that Dp rescued animals do not show binucleated cells, but many nuclei are fragmented and decondensed. Scale: 50 μm. (-/-;Mef2>DpB) Quantification of percentage of binucleated cells as in A. Data presented as bar plot showing mean ± SD, Kruskal-Wallis test followed by Dunn’s multiple comparisons test, ***p<0.0001, n=16 animals per genotype, two independent experiments were done. At least 606 cells were scored. (C) Confocal Z-stack-projected images of third instar larval body wall muscles ventral longitudinal 3 (VL3) (marked with white arrowhead) and ventral longitudinal 4 (VL4) from the segment A4 immunostained with rabbit anti-Dp antibody (212), phalloidin, and DAPI. Anterior is to the left. Scale: 100 μm. (D) Quantification of VL3 muscle area as in C. Data presented as box plot, whiskers min to max values, Kruskal-Wallis test followed by Dunn’s multiple comparisons test, ***p<0.0001, n=15 animals per genotype, except n=11 for Dp-/-, two independent experiments were done. Full genotypes are Dp, +/Dpa3,cg-GAL4;UAS-Dp, DpExel7124/Dpa3,cg-GAL4Dp, Exel7124/Dpa3,cg-GAL4;UAS-DpDp.Exel7124/Dpa3; Mef2-GAL4/UAS-DpFigure 4—source data 1.
+**Figure 4.:** (A) Confocal single plane images of third instar larval fat bodies immunostained with anti-Dp antibody (212), phalloidin, and 4,6-diamidino-2-phenylindole (DAPI). Note that Dp-/-;Mef2>Dp rescued animals do not show binucleated cells, but many nuclei are fragmented and decondensed. Scale: 50 μm. (B) Quantification of percentage of binucleated cells as in A. Data presented as bar plot showing mean ± SD, Kruskal-Wallis test followed by Dunn’s multiple comparisons test, ***p<0.0001, n=16 animals per genotype, two independent experiments were done. At least 606 cells were scored. (C) Confocal Z-stack-projected images of third instar larval body wall muscles ventral longitudinal 3 (VL3) (marked with white arrowhead) and ventral longitudinal 4 (VL4) from the segment A4 immunostained with rabbit anti-Dp antibody (212), phalloidin, and DAPI. Anterior is to the left. Scale: 100 μm. (D) Quantification of VL3 muscle area as in C. Data presented as box plot, whiskers min to max values, Kruskal-Wallis test followed by Dunn’s multiple comparisons test, ***p<0.0001, n=15 animals per genotype, except n=11 for Dp-/-, two independent experiments were done. Full genotypes are Dp+/Dpa3,cg-GAL4;UAS-Dp, DpExel7124/Dpa3,cg-GAL4, DpExel7124/Dpa3,cg-GAL4;UAS-Dp, DpExel7124/Dpa3; Mef2-GAL4/UAS-Dp.
 
 Next, we asked whether re-expression of Dp in the fat body suppresses muscle defects of Dp mutants. The body walls of third instar larvae were dissected and VL3 muscles of the A4 segment were visualized by staining the tissue with DAPI and phalloidin. As previously reported, VL3 muscle area was smaller in Dp-/- mutant larvae and fully rescued in Dp-/-; Mef2>Dp (Figure 4C, quantified in Figure 4D; Zappia and Frolov, 2016). In contrast, the expression of Dp in the fat body was insufficient to suppress the small size of VL3 muscles in Dp-/- mutant larvae (Figure 4C, quantified in Figure 4D).
 
 Thus, muscle-specific expression of Dp can rescue the binucleated phenotype of Dp mutant fat body, which is consistent with the idea that E2F/Dp in muscle exerts a systemic effect in larva that impacts the fat body. In contrast, re-expressing Dp in the fat body is insufficient to suppress the muscle defects in Dp mutants. This suggests that E2F/Dp modifies the inter-tissue communication between muscle and fat body.
 
-## Integrating proteomic and metabolomic profiling of E2F-depleted tissues uncovers alterations in carbohydrate metabolism
+### Integrating proteomic and metabolomic profiling of E2F-depleted tissues uncovers alterations in carbohydrate metabolism
 
 A significant limitation of transcriptional profiles is that it is difficult to know whether a change in mRNA levels leads to a measurable difference in protein level or causes a change in pathway activity. To avoid these issues, we generated proteomic profiles of fat body and skeletal muscles and used these to compare how the loss of E2F affects protein levels in each tissue. Third instar larval fat bodies were collected from both wild type (w1118) and Dp-/- mutant (Figure 5A, left panel) and subjected to multiplexed quantitative mass spectrometry-based proteomics using tandem-mass tag (TMT) technology (Edwards and Haas, 2016; McAlister et al., 2014). Collecting larval muscles in sufficient quantities for such proteomic profiling was not feasible due to technical challenge of separating larval muscle from adjacent tissue. Therefore, we turned to dissecting thoracic muscles from pharate pupa. We used Mef2>Dp-RNAi pharates since Dp-/- mutants die as early pupa (Figure 5A, right panel). Western blot analysis confirmed that the levels of Dp protein were low in lysates from Dp-/- fat bodies and from Dp-depleted muscles compared to controls (Figure 5—figure supplement 1A). Note that two distinct developmental stages are being compared in our study, and it could potentially introduce additional variations when comparing data between fat body and muscles.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig5-v2.jpg)
+
+**Figure 5.:** (A) Overview of tandem-mass tag-mass spectrometry (TMT-MS) profiles generated from third instar larval fat body in Dp-/- mutant and wild-type (WT) animals and from thoracic muscles in Mef2>Dp-RNAi and control animals staged at pharate; 6578 identified proteins in fat bodies and 5730 identified proteins in muscles. (B) TMT-MS intensities showing protein levels of Dp (Uniprot Q24318), E2F2/DP target protein Arp53 (Uniprot Q9VF26), SpnE (Uniprot P455891), and dATM (Uniprot Q5EAK6) in fat bodies and muscles. Data are represented as individual intensity value for each replicate, n = 3 per genotype in fat body and n=4 per genotype in muscles. (C) Volcano plots indicating proteins that are differentially expressed between larval WT and Dp-/- mutant fat bodies (left panel), and Mef2>mCherry-RNAi and Mef2>Dp-RNAi pharate muscles (right panel). Significant changes are shown in red (false discovery rate [FDR] < 0.05 and abs [fold change]>1.5). ﻿The x-axis is the log2 of the fold change and the y-axis is the negative log10 of the adjusted p-value. (D) DAVID functional annotation clustering analysis of proteomic changes in Dp-depleted tissue compared to WT that are in common between fat body and muscles. Upregulated (top panel, 190 proteins) and downregulated (bottom panel, 88 proteins) were analyzed separately. Dashed line indicates FDR=0.05. Only significant terms (FDR<0.05) are displayed. The categories GO term biological processes, KEGG pathway, and Up keywords are shown. (E) Overview of targeted liquid chromatography tandem mass spectrometry (LC-MS/MS) metabolomic profiles generated from whole third instar larvae. Dp-/- mutant animals were compared to two different WT animals (Canton-S and w1118). (F) KEGG pathway enrichment was done on metabolites that were significantly reduced in Dp-/- mutant compared to both controls. Only significant terms are shown (FDR<0.05). (G) Schematic of the flow of glycolysis toward pyruvate. Metabolites that are significantly reduced in Dp-/- mutant compared to controls are shown in blue. (H) Normalized levels of the metabolites D-glyceraldehyde 3-phosphate, 2,3-diphosphoglycerate, 3-phosphoglycerate, and phosphoenolpyruvate in Dp-/- mutant compared to controls w1118 and Canton-S. Data are represented as box plot, which extends from ﻿25 to 75 percentiles; line marks median; whiskers extend to 25/75% plus 1.5 times the interquartile range. Values outside the whiskers are outliers. Welch’s ANOVA test, *p<0.05, *** p<0.001. n=6 per genotype. Full genotypes are (A–D) Dpa2/Dpa3, w1118, UAS-Dp[GD4444]-RNAi,Mef2-GAL4 and Mef2-GAL4/UAS-mCherry-RNAi (E–H) DpExel7124/Dpa3, w1118 and Canton-S.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot analysis of fat body (left panel) and muscle (right panel) protein lysates using the antibodies anti-Dp and anti-beta-actin as a loading control. n = 3 replicates per genotype for fat body and n=4 replicates per genotype for muscles. (B) Correlation score heatmap plots of log two median protein intensities across replicates from fat body (left panel) and muscle (right panel). (C) Correlation of log2FC between Dp-depleted tissue and wild type in fat body compared to muscles. Pearson correlation test, R=0.172, N=5024 pairs of proteins shared in both tissues. (D) Venn diagrams: 5024 identified proteins are shared across fat body and muscle proteomes; 556 and 844 proteins are up in Dp-depleted compared to control in fat body and muscles, respectively, and 456 and 1208 proteins are down in Dp-depleted compared to control in fat body and muscles, respectively. (E) Heatmap representation for ﻿hierarchically clustering of differentially expressed proteins (rows) between Dp-depleted tissue and control samples (column) in fat body (left panel) and muscle (right panel). n = 3 replicates per genotype for fat body and n=4 replicates per genotype for muscles. Normalized protein levels were clustered in upregulated as FC≥1.5 (red) and downregulated as FC ≤ −1.5 (blue), moderated t-test, false discovery rate (FDR)<0.05. (F) Enrichment of KEGG pathway among proteomic changes that are significantly increased (upregulated, FDR<0.05 and FC≥1.5, top panel) and reduced (downregulated, FDR<0.05 and FC ≤ −1.5, bottom panel) in Dp-depleted tissues compared with control tissue. Fat body is on the left and muscle on the right. (G) Heatmap representation showing hierarchically clustering of normalized metabolites (row) between Dp-/- mutant and both control samples (Canton-S and w1118, column) in third instar larva. Only significant changes to both controls are displayed, ANOVA test, FDR<0.05. n=6 replicates per genotype. Full genotypes are (A–F) Dpa2/Dpa3,w1118, UAS-Dp[GD4444]-RNAi,Mef2-GAL4 and Mef2-GAL4/UAS-mCherry-RNAi (G–H) DpExel7124/Dpa3, w1118 and Canton-S.
 
 The changes in the proteomic profiles of fat bodies between the control, w1118, and Dp mutant larva, and in muscles between the control, Mef2>mCherry-RNAi, and Mef2>Dp-RNAi pharates were examined (Supplementary file 1). The pairwise correlation between replicate samples was found to be significant (Figure 5—figure supplement 1B). The mean of correlation values for fat body replicates was r=0.55 for w1118 and r=0.42 for Dp-/-, while muscle replicates showed r=0.8 for Mef2>mCherry-RNAi and r=0.63 for Mef2>Dp-RNAi.
 
@@ -98,11 +122,19 @@ To explore the metabolic defects triggered by the loss of Dp, we used targeted l
 
 We conclude that the tissue-specific depletion of Dp results in extensive metabolic changes in both fat body and muscle. These changes were evident in proteomic profiles and confirmed by metabolomic profiling. The alterations indicate that E2F-depleted tissues undergo significant changes in carbohydrate metabolism affecting, in particular, glycolytic metabolites.
 
-## Increasing carbohydrates in fly diet rescues the lethality caused by the loss of Dp in fat body
+### Increasing carbohydrates in fly diet rescues the lethality caused by the loss of Dp in fat body
 
 The changes in the proteomic and metabolomic profiles are very interesting but they raised the question of whether the metabolic changes observed contribute to the lethality of Mef2>Dp-RNAi or cg>Dp-RNAi animals. Since diet is known to impact metabolic phenotypes, we asked whether varying the levels of carbohydrates, protein, and fat in fly food could alter the lethal stage of these animals.
 
 To properly control the food composition and the effect of nutrients, we switched to a semi-defined food, made of sucrose, lecithin, and yeast, as major sources of carbohydrates, fat, and protein, respectively (Lee and Micchelli, 2013). Control diet contained 7.9% carbohydrates, 0.08% fat, and 1.9% protein (Supplementary file 8). As expected, Mef2>Dp-RNAi or cg>Dp-RNAi did not survive on control diet and died at pupal and pharate stage (Figure 6A–B). Nutrient composition was then altered by varying the amount of a single component of the control diet and the viability of cg>Dp-RNAi and Mef2>Dp-RNAi animals relative to the control genotype was scored. Interestingly, while the survival of Mef2>Dp-RNAi animals was unaffected by different nutrient composition (Figure 6B, and Figure 6—figure supplement 1B), cg>Dp-RNAi were highly sensitive to dietary changes. The increase in protein content had a negative impact on the survival of cg>Dp-RNAi and resulted in significant developmental delay (Figure 6—figure supplement 1A, left panel). About 83% of animals showed melanotic masses at larval stages when reared on high protein diet, and only 35% of third instar larva progressed onto pupa stages and eventually died (Figure 6—figure supplement 1C, quantified in Figure 6—figure supplement 1D). The melanotic masses, which were also observed in the E2f1 mutant larvae (Royzman et al., 1997), are related to the immune system response (Watson et al., 1991). However, reducing the content of protein suppressed the occurrence of melanotic masses (Figure 6—figure supplement 1C–D) and consequently increased their survival rate (Figure 6—figure supplement 1A). In contrast, increasing lipid content up to 1% in diet was beneficial for survival as about 22% of cg>Dp-RNAi pupa reached adulthood (Figure 6—figure supplement 1A, right panel). However, no further rescue in viability was detected beyond 1% lipid. Strikingly, while no cg>Dp-RNAi animals survived on control diet (7.9% carbohydrates), almost half of them eclosed when reared in the presence of 12% carbohydrates and the lethality was fully rescued when food contained even higher amount of carbohydrates (16% or 24%) (Figure 6A, left panel). This result was confirmed using a second fat body-specific driver r4-GAL4 (Figure 6A, right panel).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Number of viable adults (relative to pupa) fed on control diet (7.9% carbohydrate, 0.08% fat, and 1.9% protein) and increasing levels of sugar in food (12, 16% and 24% carbohydrate). Data are represented as mean ± SD, n = 6 repeats per condition. (A) Left panel: cg>mCherry RNAi and cg>DpRNAi, right panel: r4>mCherryRNAi and r4>DpRNAi. (B) Mef2>mCherry-RNAi and Mef2>Dp-RNAi. (C) Diagram of trehalose synthesis pathway. The enzymes that are significantly downregulated in Dp-deficient fat body are indicated in blue, and upregulated in magenta, based on proteome data. (D–E) Circulating trehalose levels measured in third instar larval hemolymph. (D) cg>mCherry-RNAi and cg>Dp-RNAi, and (E) Mef2>mCherry-RNAi and Mef2>Dp-RNAi larvae fed on control diet (7.9% carbohydrate) and high sugar diet (16% carbohydrate). Data are represented as mean ± SD, two-way ANOVA followed by Tukey’s multiple comparisons test, three independent experiments were done, one representative experiment is shown. (D) n = 6 per group and **p = 0.0005. (E) n = 3–6 per group and p = 0.5. (F) Top panel: Confocal single plane images of third instar larval fat bodies stained with 4,6-diamidino-2-phenylindole (DAPI) and BODIPY red. The cg>mCherry-RNAi and cg>Dp-RNAi animals were fed on control diet (7.9% carbohydrate) and supplemented with sugar (16% carbohydrate, high sugar diet). Scale: 40 μm. Bottom panel: Measurement of lipid droplet size in fat body. Data are represented as box and whiskers, min to max showing all points, n = 10–17 fat bodies per genotype, two-way ANOVA followed by Tukey’s multiple comparisons test, *p = 0.02, ***p < 0.0001, three independent experiments, one representative experiment is shown. (G–H) Triglycerides content measured in third instar larva and normalized to total protein content. (G) cg>mCherry-RNAi and cg>DpRNAi, and (H) Mef2>mCherry RNAi and Mef2>DpRNAi larvae fed on control diet (7.9% carbohydrate) and high sugar diet (16% carbohydrate). Data are represented as mean ± SEM, two-way ANOVA followed by Tukey’s multiple comparisons test, one representative experiment is shown, (G) n = 5–6 per group and *p = 0.004. Three independent experiments were done. (H) n = 5–6 per group and p = 0.2, two independent experiments were done. Full genotypes are (A) cg-GAL4,UAS-mCherry-RNAi, cg-GAL4/UAS-Dp[GD4444]-RNAi, r4-GAL4/UAS-mCherry-RNAi, UAS-Dp[GD4444]-RNAi/r4-GAL4 (B, E, H) Mef2-GAL4/UAS-mCherry-RNAi, and UAS-Dp[GD4444]-RNAi,Mef2-GAL4 (D, F, G) cg-GAL4,UAS-mCherry-RNAi and cg-GAL4/UAS-Dp[GD4444]-RNAi.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67753/elife-67753-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Number of viable adults (relative to pupa) fed on different food conditions. Left panel: Increasing levels of protein in food (0.9, 1.96% and 6.3% protein). Right panel: Increasing levels of fat in food (0.04, 0.08, 1.04, 2.5 and 5% lecithin). Data are represented as mean ± SEM, n = 2–4 samples per condition. Experiment was repeated at least three times. (A) cg>mCherry-RNAi and cg>Dp-RNAi, (B) Mef2>mCherry-RNAi and Mef2>Dp-RNAi. (C) ﻿Representative images of cg>mCherry-RNAi and cg>Dp-RNAi larvae fed on increasing levels of protein in food (0.9, 1.96% and 6.3% protein). Black arrowheads point to melanotic masses. Scale: 5 mm. (D) Quantification of number of larvae fed showing melanotic masses relative to total number of larvae harvested as in C. ﻿Data are represented as mean ± SEM, n=2–5. Three independent experiments were done. (E) Top panel: Confocal single plane images of third instar larval fat bodies stained with 4,6-diamidino-2-phenylindole (DAPI) and BODIPY. The Mef2>mCherry-RNAi and Mef2>Dp-RNAi animals were fed on control diet (7.9% carbohydrate) and supplemented with sugar (16% carbohydrate, high sugar diet). Scale: 40 μm. Bottom panel: Measurement of lipid droplet size in fat body. Data are represented as box and whiskers, min to max showing all points, n = 55–60 images per group in three independent experiments, two-way ANOVA (main effects only) followed by Tukey’s multiple comparisons test, p = 0.08 for variation between genotypes. (F–G) Total whole-body glycogen content normalized to protein content. Third instar larvae (F) cg>mCherry-RNAi and cg>Dp-RNAi (G) Mef2>mCherry-RNAi and Mef2>Dp-RNAi fed on control diet (7.9% carbohydrate, left panel) and high sugar diet (16% carbohydrate, right panel). Data are represented as mean ± SEM, n = 6 per genotype, three independent experiments were done, two-way ANOVA followed by Tukey’s multiple comparisons test, (F) p = 0.5 and (G) p = 0.9 for variation between genotypes. One representative experiment is shown. (H–I) Quantification of the percentage of binucleated cells in third instar larval fat bodies. (H) cg>mCherry-RNAi and cg>Dp-RNAi (I) Mef2>mCherry-RNAi and Mef2>Dp-RNAi were fed on control diet (7.9% carbohydrate) and high sugar diet (16% carbohydrate). Data are represented as mean ± SD, n>200 cells for Mef2>Dp-RNAi, and cg>Dp-RNAi, and n=200 cells for Mef2>RFP and cg>RFP, which did not show binucleated cells. Full genotypes are (A, C–D, F) cg-GAL4,UAS-mCherry-RNAi, cg-GAL4/UAS-Dp[GD4444]-RNAi (B, E) Mef2-GAL4/UAS-mCherry-RNAi, and UAS-Dp[GD4444]-RNAi,Mef2-GAL4 (H) cg-GAL4/UAS-RFP,Dp[GFP], cg-GAL4/Dp[GFP],UAS-Dp[GD4444]-RNAi, and (I) UAS-RFP,Dp[GFP];Mef2-GAL4, and Dp[GFP],UAS-Dp[GD4444]-RNAi,Mef2-GAL4.
 
 One of the functions of fat body is to maintain homeostasis of trehalose, a main circulating sugar in hemolymph (Becker et al., 1996), allowing animals to adapt to a high sugar diet. The synthesis of trehalose occurs in fat body from glucose-6P and is regulated by trehalose-6-phosphate synthase (Tps1) (Figure 6C; Elbein et al., 2003). We noted that the levels of Tps1 proteins were significantly reduced in Dp mutant fat body, along with other enzymes that generate glucose-6P including phosphoglucomutase, glucose-6-phosphate isomerase, and hexokinase_A in the proteomic datasets (Figure 6C and Supplementary file 2). Additionally, trehalase, an enzyme that converts trehalose back to glucose, was significantly increased in Dp-deficient fat body. This suggested that animals lacking Dp in the fat body may be defective in the regulation of trehalose synthesis.
 
@@ -134,37 +166,313 @@ Since E2F/DP proteins are master regulators of cell proliferation, the finding t
 
 ## Materials and methods
 
-## Fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>DP transcription factor; Dp</td>
+      <td>NA</td>
+      <td>Flybase:FBgn0011763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Dp-RNAi</td>
+      <td>﻿Vienna Drosophila Resource Center</td>
+      <td>﻿Flybase:FBst0450633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>﻿Dp[a3]</td>
+      <td>PMID:15798191, 9271122</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>﻿Dp[a4]</td>
+      <td>PMID:15798191, 9271122</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>﻿ Df(2R)Exel7124</td>
+      <td>PMID:15798191, 9271122</td>
+      <td>﻿Flybase:FBab0038034; RRID:BDSC_7872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>﻿UAS-Dp</td>
+      <td>PMID:8670872; 9657151; 26823289</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Dp[GFP]; P{PTT-GA}DpCA06954</td>
+      <td>PMID:17194782</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>﻿P{Cg-GAL4.A}2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Flybase:FBti0027802; RRID:BDSC_7011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>﻿ P{GAL4-Mef2.R}3</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>﻿Flybase:FBst0027390; RRID:BDSC_27390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>﻿P{VALIUM20-mCherry}attP2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Flybase:FBti0143385; RRID:BDSC_35785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>﻿UAS-Luc-RNAi ; P{y[+t7.7] v[+t1.8]=TRiP.JF01355}attP2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>﻿Flybase:FBti0130444; RRID:BDSC_31603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>r4-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Flybase:FBti0132496; RRID:BDSC_33832</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>P{Lpp-GAL4.B}3</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Flybase:FBti0185670; RRID:BDSC_84317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>G-TRACE</td>
+      <td>Evans et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Canton-S</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Flybase:FBst0064349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>w1118</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FLYB:FBst0003605; RRID:BDSC_3605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-dDP (Yun6)</td>
+      <td>PMID:8670872</td>
+      <td>RRID:AB_2889822</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Dp antibodies (#212)</td>
+      <td>PMID:12975318</td>
+      <td>NA</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC Goat polyclonal anti-GFP (ab6662)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_305635</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-Rad50</td>
+      <td>PMID:19520832</td>
+      <td>NA</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-Mre11</td>
+      <td>PMID:19520832</td>
+      <td>NA</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Porcine trehalase</td>
+      <td>Sigma</td>
+      <td>T8778-1UN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Amyloglucosidase</td>
+      <td>Sigma</td>
+      <td>A1602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Triglyceride reagent</td>
+      <td>Sigma</td>
+      <td>T2449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucose (HK) assay reagent</td>
+      <td>Sigma</td>
+      <td>G3293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triglyceride reagent</td>
+      <td>Sigma</td>
+      <td>T2449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trehalose</td>
+      <td>Sigma</td>
+      <td>90208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose standard solutions</td>
+      <td>Sigma</td>
+      <td>G3285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Free glycerol reagent</td>
+      <td>Sigma</td>
+      <td>F6428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BODIPY 493/503</td>
+      <td>Invitrogen</td>
+      <td>D3922</td>
+      <td>0.5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bradford standard assay</td>
+      <td>Bio-Rad</td>
+      <td>﻿500–0006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ 1.52k5</td>
+      <td>National Institutes of Health, Bethesda, MD https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CC 2019</td>
+      <td>Adobe Systems</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Functional Annotation Clustering – DAVID platform</td>
+      <td>https://david.ncifcrf.gov/summary.jsp</td>
+      <td>RRID:SCR_001881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metaboanalyst</td>
+      <td>http://www.metaboanalyst.ca</td>
+      <td>RRID:SCR_015539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 9.0.1</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks
 
 Flies were raised in vials containing standard cornmeal agar medium at 25° C. The w1118 flies were used as wild-type control flies. Either the Dpa3 and Dpa4 alleles or ﻿Dpa3 and ﻿deficiency Df(2R)Exel7124, which deletes the entire Dp gene, were used in this work to obtain the trans-heterozygous Dp mutant larvae for proteome and metabolome experiments, respectively (Frolov et al., 2005; Royzman et al., 1997). The trans-heterozygous E2f2 76Q1 /c03344; E2f1 91 / m729 mutant animals were used as double E2f1 and E2f2 mutants. ﻿The GAL4 drivers, P{Cg-GAL4.A}2, P{w[+mC]=Lpp-GAL4.B}3 and P{GAL4-Mef2.R}3, and the following control UAS-RNAi lines from the TRIP collection: Luciferase (P{y[+t7.7] v[+t1.8]=TRiP.JF01355}attP2) and mCherry (P{VALIUM20-mCherry}attP2) obtained from Bloomington Drosophila Stock Center (Bloomington, IN). ﻿The line UAS-Dp-RNAi was obtained from the library RNAi-GD (ID 12722) at the Vienna Drosophila Resource Center (Vienna, Austria). The stock UAS-G-TRACE (Evans et al., 2009) was used to trace the expression of the drivers. The P{PTT-GA}DpCA06954 line from the Carnegie collection (Buszczak et al., 2007), here annotated as DpGFP, contains a GFP-expressing protein trap insertion (Zappia and Frolov, 2016). The P{UAS-Dp.D} was used to overexpress Dp in the Dp mutant background (Du et al., 1996; Neufeld et al., 1998; Zappia and Frolov, 2016).
 
-## Fly viability assay
+### Fly viability assay
 
 The total number of pupae, pharate pupae, and adult flies able to eclose out of the pupal case were scored. The pupal developmental stages were assessed by following markers of metamorphosis (Ashburner et al., 2005). At least 58 flies per group were scored in a minimum of three independent experiments.
 
-## Fly food recipes
+### Fly food recipes
 
 ﻿All flies were raised on Bloomington standard cornmeal food. After eclosion, adults were transferred to different fly food composition, which was made based on the semi-defined control diet (Lee and Micchelli, 2013) with adjustments. Control diet was made of 1% agar (Lab Scientific, Fly 8020), 4.35% brewers yeast (MP Biomedicals, 2903312), 0.04% lecithin (soybean, MP Biomedicals, 102147), propionic acid (0.5% v/v), and 7.9% sucrose (FCC Food grade, MP Biomedicals, 904713). The adjustments for each food type are detailed in Supplementary file 8.
 
-## Hemolymph extraction
+### Hemolymph extraction
 
 ﻿Hemolymph was collected from ~10 or 15 third instar larvae per sample. Protocol was adapted from Tennessen et al., 2014. Each animal was rinsed with ddH2O, wipped to remove excess of water, carefully punctured in the mouth hook using a tungsten needle and placed in a 0.5 ml tube with a hole at the bottom of the tube. This tube was then placed in a 1.5 ml tube and centrifuged to maximum speed for 10 s. Approximately 1 µl of hemolymph was collected for each sample. Hemolymph was diluted 1:50 ﻿in trehalase buffer (TB) ﻿(5 mM Tris pH 7.6, 137 mM NaCl, 2.7 mM KCl). Samples were heat-treated for 5 min at 70°C and centrifuge for 3 min at maximum speed at 4°C. Supernatant was quickly snap-frozen and stored at −80°C until all samples were harvested.
 
-## Trehalose measurement
+### Trehalose measurement
 
 Hemolymph samples were further diluted to final dilution 1:150 with buffer TB. Circulating trehalose was measured in hemolymph as previously described (Tennessen et al., 2014). Briefly, an aliquot of each sample was treated with porcine trehalase (Sigma, T8778-1UN) overnight at 37°C in a G1000 Thermal cycler (Bio-Rad) to digest trehalose and produce free glucose. In parallel, another aliquot was incubated with buffer TB to determine the levels of glucose. The total amount of glucose was determined using the glucose (HK) assay reagent (Sigma, G3293) following a 15 min incubation at room temperature. Trehalose (Sigma, 90208) and glucose standard solutions (Sigma, G3285) were used as standards. Plate reader BioTek Epoch was used to read absorbance at 340 mm. The trehalose concentrations for each sample were determined by subtracting the values of free glucose in the untreated samples. Each sample was measured twice, a total of six independent biological samples were collected by group, and three independent experiments were done.
 
-## Quantification of glycogen and protein content
+### Quantification of glycogen and protein content
 
 Third instar larvae were harvested to measure glycogen as previously described (Tennessen et al., 2014). Briefly, seven animals were collected per sample, rinsed with ddH2O, and homogenized in 100 µl PBS 1×. Samples were heat-treated at 70°C for 10 min and centrifuged at maximum speed for 3 min at 4°C. Supernatant was stored at −80°C until all samples were collected. Samples were diluted 1:6 in PBS 1× for the assay and transferred to two wells. One well was treated with amyloglucosidase (Sigma A1602) and the second well with PBS 1×. The plate was incubated at 37°C for 1 hr. Then, the total amount of glucose was determined using 100 µl of glucose (HK) assay reagent (Sigma, G3293) following a 15 min incubation at room temperature. Glycogen and glucose standard solutions were used as standards. Plate reader BioTek Epoch was used to read absorbance at 340 mm. The glycogen concentrations for each sample were determined by subtracting the values of free glucose in the untreated samples. Each sample was measured twice, a total of six independent biological samples were collected by group, and three independent experiments were done.
 
 Total glycogen was normalized to soluble protein amount. Aliquots of larval homogenate were removed prior heat treatment to measure soluble protein using a Bradford assay (Bio-Rad ﻿500–0006) with BSA standard curves.
 
-## ﻿Triglycerides quantification
+### ﻿Triglycerides quantification
 
 A coupled colorimetric assay was used to quantify triglycerides by measuring free glycerol as previously described (Tennessen et al., 2014). Briefly, seven animals were collected per sample, rinsed with ddH2O and homogenized in cold 100 µl PBS-T (PBS 0.05% Tween-20). Samples were heat-treated at 70°C for 10 min and stored at −80°C until all samples were collected. Samples were diluted 1:6 in PBS-T for the assay and transferred to two wells. One well was treated with triglyceride reagent (Sigma, T2449) and the second well with PBS-T. The plate was incubated at 37°C for 30 min in a G1000 Thermal cycler (Bio-Rad). Then, the total amount of free glycerol was determined using 100 µl free glycerol reagent (Sigma, F6428) following a 5 min incubation at 37°C. Glycerol (triolein, Sigma, G7793) standard solution was used as standard. Plate reader BioTek Epoch was used to read absorbance at 540 mm. The triglyceride concentrations for each sample were determined by subtracting the values of free glycerol in the untreated samples. Each sample was measured twice, a total of six independent biological samples were collected by group, and three independent experiments were done. Total triglyceride was normalized to soluble protein amount as described above.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Tissues were dissected and fixed in 4% formaldehyde in PBS for 30 min. Then, tissues were permeabilized during 10 or 15 min in 0.1% Triton X-100 in PBS or in 0.3% Triton X-100 in PBS for muscles tissues. Tissues were washed and blocked in 1% or 2% BSA PBS. Primary antibodies were incubated overnight at 4°C in 2% BSA and 0.1% Triton X-100 in PBS. After washing three or four times for 10 min each in 0.1% Triton X-100 (in PBS), secondary antibodies (Alexa Fluor, Cy3- or Cy5-conjugated anti-mouse and anti-rabbit secondary antibodies, Life Technologies and Jackson Immunoresearch Laboratories) were incubated for 60 or 90 min in 10% normal goat serum 0.1% Triton X-100 in PBS. After washing three times with 0.1% Triton X-100 (in PBS), tissues were mounted on glass slides in glycerol with antifade or in Vectashield with DAPI (Vector Laboratories). All steps were performed at room temperature, unless otherwise stated.
 
@@ -172,51 +480,51 @@ In the case of fat bodies, the fixation was done for 60 min and PBS 1× was used
 
 ﻿The primary antibodies were mouse monoclonal anti-Dp antibody (Yun6, dil 1:10, Du et al., 1996) used in fat bodies and ﻿rabbit polyclonal anti-Dp antibodies (#212, dil 1:300 Dimova et al., 2003) used in muscles, anti-GFP (FITC, 1:500, Abcam ab6662), Guinea pig anti-Rad50 (1:100, Gao et al., 2009), Guinea pig anti-Mre11 (1:100, Gao et al., 2009). Rhodamine–phalloidin or fluorescein isothiocyanate–phalloidin were used to counterstain, and DAPI for nucleus staining.
 
-## Lipid droplet detection
+### Lipid droplet detection
 
 To visualize lipid droplets, dissected third instar larval fat bodies were fixed in 4% formaldehyde in PBS for 1 hr at room temperature and washed three times in PBS 1×. Fat bodies were incubated in solution containing both 0.5 µg/ml BODIPY 493/503 (Invitrogen, D3922) and DAPI diluted in PBS 1×, for 10 min at room temperature, then washed three times in PBS 1×.
 
-## Confocal microscopy/image acquisition
+### Confocal microscopy/image acquisition
 
 Fluorescent images were acquired with the laser scanning confocal microscope (Zeiss LSM 700) using × 20/0.8, and × 40/1.2 objectives at University of Illinois at Chicago and 710 Zeiss Confocal microscope at MGH Cancer Center. Images were processed using ImageJ (1.52k5, National Institutes of Health, Bethesda, MD) and Photoshop CC 2019 (Adobe Systems). All images are confocal single plane images, except otherwise stated. Only representative images are shown.
 
-## Quantitative proteomics
+### Quantitative proteomics
 
-## Sample preparation
+#### Sample preparation
 
 Fat bodies and thoracic muscles were dissected in cold PBS 1×. To pellet the dissected tissues, vials were centrifuged at 4°C at maximum speed, and PBS was removed prior to snap-freezing. Collected tissues were thaw and resuspended in modified protein lysis buffer (50 mM HEPES pH 8, 100 mM KCl, 2 mM EDTA, 10 mM NaF, 10% glycerol, 0.1% NP-40, 1 mM dithiothreitol, 1 mM PMSF, and Roche protease inhibitors) and homogenized on ice. The amount of total protein was measured with Lowry colorimetric assay (DC, Bio-Rad) for fat bodies and Bradford standard assay (Bio-Rad ﻿500–0006) for muscles. Western blotting was carried out using standard procedures. The mouse anti-DP Yun (#6, 1:5 Du et al., 1996) and the mouse beta-actin (1:1000, Abcam, Cat# ab8224) antibody were used as loading control in western blot assays.
 
-## Multiplexed quantitative mass spectrometry-based proteome
+#### Multiplexed quantitative mass spectrometry-based proteome
 
 The TMT-10 plex reagents and the simultaneous precursor selection (SPS)-MS3 method on an Orbitrap Fusion mass spectrometer (Thermo Scientific) (Edwards and Haas, 2016; Guarner et al., 2017; Lapek et al., 2017; McAlister et al., 2014) were used to profile w1118 and Dp-/- whole larval lysates, and Mef2>mCherry-RNAi and Mef2>Dp-RNAi thoracic muscle lysates in triplicate and quadruplet, respectively. Disulfide bonds were reduced, free thiols were alkylated with iodoacetamide, proteins were purified by MeOH/CHCl3 precipitation and digested with Lys-C and trypsin, and peptides were labeled with TMT-10plex reagents (Thermo Scientific) (Edwards and Haas, 2016; McAlister et al., 2014). Labeled peptide mixtures were pooled and fractionated by basic reversed-phase HPLC. Four fractions were analyzed by multiplexed quantitative proteomics performed on an Orbitrap Fusion mass spectrometer (Thermo Scientifc) using an SPS-based MS3 method (McAlister et al., 2014). MS2 spectra were assigned using a SEQUEST-based proteomics analysis platform (Huttlin et al., 2010). The protein sequence database for matching the MS2 spectra was based on v5.57 of the Drosophila melanogaster proteome retrieved from Flybase (Attrill et al., 2016). Peptide and protein assignments were filtered to an FDR of <1% employing the target-decoy database search strategy (Elias and Gygi, 2007) and using linear discriminant analysis and posterior error histogram sorting (Huttlin et al., 2010). Peptides with sequences contained in more than one protein sequence from the UniProt database were assigned to the protein with most matching peptides (Huttlin et al., 2010). We extracted TMT reporter ion intensities as those of the most intense ions within a 0.03 Th window around the predicted reporter ion intensities in the collected MS3 spectra. Only MS3 with an average signal-to-noise value of larger than 20 per reporter ion as well as with an isolation specificity (Ting et al., 2011) of larger than 0.75 were considered for quantification. A two-step normalization of the protein TMT intensities was performed by first normalizing the protein intensities over all acquired TMT channels for each protein based on the median average protein intensity calculated for all proteins. To correct for slight mixing errors of the peptide mixture from each sample, a median of the normalized intensities was calculated from all protein intensities in each TMT channel and the protein intensities were normalized to the median value of these median intensities.
 
-## Proteomics analysis
+#### Proteomics analysis
 
 A total of 6578 and 5730 proteins in fat body and muscles, respectively, were quantified across all experimental conditions. Only shared proteins between fat bodies and muscles were selected for an integrative analysis, all downstream analysis were done on combined 5024 proteins. Differential protein expressions between w1118 and Dp-/- fat bodies and between Mef2>mCherry-RNAi and Mef2>Dp-RNAi proteomes were calculated using a moderated t-test. The Benjamini-Hochberg multiple hypothesis correction was applied to calculate corrected p-values (FDR). Differential expression of proteins was considered significant with an FDR < 5% and an absolute fold change greater than 1.5.
 
-## Functional enrichment analysis
+#### Functional enrichment analysis
 
 Functional annotation clustering of the differentially expressed proteins were analyzed using DAVID platform (https://david.ncifcrf.gov/summary.jsp Huang et al., 2009a; Huang et al., 2009b). Functional terms related to biological process, KEGG, and UP_Keyword were identified using FDR < 0.05 in the selected top cluster. Furthermore, gene ontology enrichment was analyzed by selecting KEGG pathways and using FDR < 5%.
 
-## Metabolomics profiles
+### Metabolomics profiles
 
-## Pre-extraction of metabolites from whole larvae and 13C labeling of whole larvae
+#### Pre-extraction of metabolites from whole larvae and 13C labeling of whole larvae
 
 Six biological samples per genotype were processed exactly as previously published (Nicolay et al., 2013). From each of the vials that contained ~30 larvae, animals were isolated and washed twice in ddH2O to remove any excess foodstuff, outside unlabeled metabolites, or excess 13C labeled glutamine. Then animals were collected in 1.5 ml tubes and the total weight of each collection of starting material was ~10 mg to achieve detection of unstable metabolites. Approximately 3 mg of starting material was sufficient for most metabolites. For each condition tested, metabolites were extracted from six to eight biological replicates of pooled animals from each genotype. Samples were then snap-frozen in liquid nitrogen and either stored at −80°C for further processing or processed immediately.
 
 Snap-frozen samples were kept on dry ice during extraction; 500 µl of −80°C MeOH:H2O (80:20) was added to each pellet. Pellets were homogenized by hand with a pestle using three to five strokes. Samples were vortexed at 4°C for 1 min and left at −80°C for 4 hr. After 4 hr, samples were vortexed at 4°C for 30 s. Samples were clarified at 20 K × g, for 0.25 hr at 4°C. Clarified supernatant was transferred to a new 1.5 ml tube and stored at −80°C. Each pellet was re-extracted with −80°C MeOH:H2O (80:20), vortexed for 30 s at 4°C, and stored at −80°C for 0.5 hr. Re-extracted material was vortexed for 30 s at 4°C and then clarified at 20 K × g, for 0.25 hr at 4°C. Clarified supernatants were combined and clarified one more time. Combined supernatants were then evaporated by SpeedVac, snap-frozen in liquid nitrogen, and stored at −80°C. Prior to mass spectrometry analysis, samples were resuspended using 20 µl HPLC grade water.
 
-## LC-MS/MS
+#### LC-MS/MS
 
 LC-MS methodology was performed as described in Nicolay et al., 2015. In brief, nanospray HPLC-MS was carried out with an Agilent 1260 Infinity pump coupled to a FAMOS+ autosampler and an Exactive Orbitrap mass spectrometer. The mass spectrometer was equipped with an electrospray ionization source operated in negative mode. The mass spectrometer was calibrated using a negative ion calibration solution (Pierce 88324) and the optimized conditions were spray voltage 1.8 kV, spray current 2.1 µA, capillary temperature 301°C, capillary voltage −52.5, tube lens voltage −150, skimmer voltage −42. The mass spectrometer was run in full scan mode (80–1000 m/z range) with an R = 100,000 at 1 Hz (1 scan/s) with the use of the ion pairing reagent, Tributylamine (Sigma 471313). The stationary phase was a C18 medium (3 µm, 200 A) from Maccel. The LC method used was as follows: 0 min, 0% B; 11 min, 5% B; 24 min, 100% B; 30 min, 100% B; 31 min, 0% B, 40 min, 0% B. Injection volume was 1 µl. Flow rate at column bed was 400 nl/min. Buffer A: 5% methanol, 10 mM TBA, 10 mM acetic acid. Buffer B: Methanol. Raw data files were transformed and analyzed in MAVEN (Clasquin et al., 2012; Melamud et al., 2010).
 
-## Metabolomics analysis
+#### Metabolomics analysis
 
 For analyses of metabolite pools, the free portal Metaboanalyst (http://www.metaboanalyst.ca) was used. Raw metabolite measurement data were converted to achieve a normal distribution of the data. For each metabolite, data were median-centered, then log2-transformed across the genotypes followed by autoscaling. Among the 258 metabolites, only 210 had at least three strong peaks (out of the 6–8 per group) in each of the genotypes. Analysis was done using data from the 210 metabolites that gave reproducible peaks above noise. Standard compound names were used and the compound pathway library was Drosophila melanogaster. Following normalization, altered metabolite levels were functionally compared across all three genotypes. Only metabolites that were significantly altered in the Dp-/- mutant when compared to both the Canton S and w1118 control genotypes were considered in the analysis to account for the variation on genetic background. KEGG enrichment analysis was done using metabolites changed up and down in Dp-/- mutant to determine what metabolic pathways were altered. Direct comparisons between normalized values of specific metabolites were done using Excel and significance was tested using one-way ANOVA followed by Tukey’s post hoc analysis.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## ﻿Image analysis
+#### ﻿Image analysis
 
 Muscle area in body wall muscles VL3 was measured for each animal using ImageJ. Raw data values, ANOVA results, multiple comparisons tests, and summary statistics are included in the associated Source File files.
 
@@ -230,6 +538,6 @@ Scripts used in ImageJ for automatic and unbiased quantification of lipid drople
 
 Raw data values, ANOVA results, multiple comparisons tests, and summary statistics are included in the associated Source File files for Figures 1, 4, and 6.
 
-## Proteomics and metabolomics analysis
+#### Proteomics and metabolomics analysis
 
 All plots for proteomic and metabolomic were generated using R. Further details on the analysis can be found in the proteome and metabolome sections in Materials and methods.

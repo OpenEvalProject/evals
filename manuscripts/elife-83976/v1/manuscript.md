@@ -16,12 +16,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02xf66n48 Department of Biophysics and Cell Biology, Faculty of Medicine, University of Debrecen Debrecen Hungary
-2. https://ror.org/02xf66n48 Doctoral School of Molecular Cell and Immune Biology, University of Debrecen Debrecen Hungary
-3. https://ror.org/05n3x4p02 Institute of Pharmacology, Center for Physiology and Pharmacology, Medical University of Vienna Vienna Austria
-4. https://ror.org/03zwxja46 Institute of Enzymology, Research Centre for Natural Sciences Budapest Hungary
-5. https://ror.org/02xf66n48 Institute of Food Technology, Faculty of Agricultural and Food Sciences and Environmental Management, University of Debrecen Debrecen Hungary
-6. https://ror.org/03prydq77 Institute of Cancer Research, Medical University of Vienna Vienna Austria
+1. Department of Biophysics and Cell Biology, Faculty of Medicine, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
+2. Doctoral School of Molecular Cell and Immune Biology, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
+3. Institute of Pharmacology, Center for Physiology and Pharmacology, Medical University of Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
+4. Institute of Enzymology, Research Centre for Natural Sciences Budapest Hungary ([ROR:03zwxja46](https://ror.org/03zwxja46))
+5. Institute of Food Technology, Faculty of Agricultural and Food Sciences and Environmental Management, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
+6. Institute of Cancer Research, Medical University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 
 † Corresponding author
 
@@ -45,15 +45,15 @@ Since ABC transporters are very sensitive to the composition of their plasma mem
 
 ## Results
 
-## MDCK II cells express fully functional ABCG2 and ABCG2-GFP
+### MDCK II cells express fully functional ABCG2 and ABCG2-GFP
 
 ABCG2 and its N-terminally GFP-tagged variant (ABCG2-GFP) were expressed at comparable levels in MDCK II cells (Figure 2A). In accordance with literature data (Orbán et al., 2008; Haider et al., 2011), the transport activity of ABCG2 was not influenced by the GFP-tag (Figure 2B–D). Previous observations showed that ABCG2 inhibitors, such as Ko143, can enhance 5D3 mAb binding by shifting the equilibrium to the IF state (Ozvegy-Laczka et al., 2005; Telbisz et al., 2012). Accordingly, in the plasma membrane of untreated live cells, ABCG2-GFP and ABCG2 exhibited comparably low 5D3-reactivity, which was increased in a similar extent by Ko143 treatment (Figure 2E–G), supporting the notion that the GFP-tag does not modify the conformational response of ABCG2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83976/elife-83976-fig2-v1.jpg)
 
-**Figure 2.:** Western blot showing comparable expression of ABCG2 and ABCG2-GFP in MDCK II cells using the BXP-21 anti-ABCG2 mAb (A). ABCG2 and ABCG2-GFP expressing cells show decreased mitoxantrone (MX) accumulation, which is reversed to the level of the ABCG2-negative cells by 2 µM Ko143 (B–D). 2 µM Ko143 pre-treatment causes an increase in the 5D3-reactivity of ABCG2 (F) and ABCG2-GFP (G) expressing cells. ABCG2-negative cells show only a negligible 5D3 binding that is not affected by Ko143 (E).Figure 2—source data 1.Figure 2A.
+**Figure 2.:** Western blot showing comparable expression of ABCG2 and ABCG2-GFP in MDCK II cells using the BXP-21 anti-ABCG2 mAb (A). ABCG2 and ABCG2-GFP expressing cells show decreased mitoxantrone (MX) accumulation, which is reversed to the level of the ABCG2-negative cells by 2 µM Ko143 (B–D). 2 µM Ko143 pre-treatment causes an increase in the 5D3-reactivity of ABCG2 (F) and ABCG2-GFP (G) expressing cells. ABCG2-negative cells show only a negligible 5D3 binding that is not affected by Ko143 (E).
 
-## Nucleotide binding is sufficient to trigger the switch from the 5D3-reactive IF conformation to a 5D3-dim OF conformation
+### Nucleotide binding is sufficient to trigger the switch from the 5D3-reactive IF conformation to a 5D3-dim OF conformation
 
 To study the nucleotide-dependent conformation changes of ABCG2, we systematically changed the intracellular nucleotide concentrations in semi-permeabilized cells. In accordance with an ATP-regulated switch of the TMD conformation, increasing ATP/Mg2+ concentrations gradually decreased the 5D3-A647-reactivity of ABCG2-positive cells, with practically zero staining at high ATP/Mg2+ concentrations (Figure 3A and B). To prevent nucleotide hydrolysis, ATP was either added in the absence of Mg2+ (ATP+EDTA; Figure 3C and D), on ice (Figure 3E and F), or ATP was replaced with the non-hydrolyzable ATP analog AMP-PNP (Figure 3G and H). Interestingly, the conformational change driving ABCG2 into a 5D3-dim (i.e., 5D3 non-reactive) state also occurred in the absence of ATP hydrolysis and showed similar nucleotide concentration dependence (see Table 1). These results indicate that the 5D3-dim and 5D3-reactive conformations correspond to the OF and IF conformations as observed in ATP-bound and nucleotide-free crystal structures, respectively (Figure 1).
 
@@ -61,53 +61,211 @@ To study the nucleotide-dependent conformation changes of ABCG2, we systematical
 
 **Figure 3.:** MDCK-ABCG2 cells were permeabilized to allow the titration of intracellular nucleotide concentrations. Dose-response curves of 5D3 binding with increasing concentrations of ATP/Mg2+ (panels (A), and (B)), ATP in the presence of EDTA (panels (C) and (D)), AMP-PNP/Mg2+ (panels (G) and (H)), or ADP/Mg2+ (panels (I) and (J)) were obtained in the presence or absence of Vi (left panels) or BeFx (right panels). Samples were pre-treated with nucleotides at 37°C for 10 min, then further incubated with 5 µg/ml 5D3-A647 at 37°C for 20 min except for (panels (E) and (F)), where all the treatments were carried out on ice. In case of nucleotide trapping, permeabilized cells were co-treated with nucleotides and BeFx or Vi at 37°C for 30 min, then un-trapped nucleotides were washed out and 5D3 labeling was carried out on ice for 45 min. Representative curves are shown from three to five independent experiments. The small inserts in panel (A) depict the IF and OF conformations of ABCG2. IF, inward-facing; OF, outward-facing.
 
+**Table 1.**
+ Apparent nucleotide affinities (KA) determined in 5D3-reactivity experiments.Table 1—source data 1.Source Data to Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Treatment</th>
+      <th colspan="2">Conditions</th>
+      <th rowspan="2">KA (mM ± SD)</th>
+      <th rowspan="2">n</th>
+      <th rowspan="2">Statistical comparisons to ATP/Mg2+ (1st row)</th>
+      <th rowspan="2">Figure</th>
+    </tr>
+    <tr>
+      <th>Temp.</th>
+      <th>Mg2+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATP</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>4.15 ± 1.08</td>
+      <td>11</td>
+      <td>–</td>
+      <td>Figure 3A</td>
+    </tr>
+    <tr>
+      <td>ATP+Vi</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>0.34 ± 0.25</td>
+      <td>11</td>
+      <td>p &lt; 0.001</td>
+      <td>Figure 3A</td>
+    </tr>
+    <tr>
+      <td>ATP+BeFx</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>0.40 ± 0.06</td>
+      <td>3</td>
+      <td>p &lt; 0.001</td>
+      <td>Figure 3B</td>
+    </tr>
+    <tr>
+      <td>ATP</td>
+      <td>37°C</td>
+      <td>−</td>
+      <td>3.69 ± 0.49</td>
+      <td>7</td>
+      <td>ns</td>
+      <td>Figure 3C</td>
+    </tr>
+    <tr>
+      <td>ATP+Vi</td>
+      <td>37°C</td>
+      <td>−</td>
+      <td>3.77 ± 0.38</td>
+      <td>4</td>
+      <td>ns</td>
+      <td>Figure 3C</td>
+    </tr>
+    <tr>
+      <td>ATP+BeFx</td>
+      <td>37°C</td>
+      <td>−</td>
+      <td>3.20 ± 0.15</td>
+      <td>3</td>
+      <td>ns</td>
+      <td>Figure 3D</td>
+    </tr>
+    <tr>
+      <td>ATP</td>
+      <td>4°C</td>
+      <td>+</td>
+      <td>4.38 ± 0.24</td>
+      <td>6</td>
+      <td>ns</td>
+      <td>Figure 3E</td>
+    </tr>
+    <tr>
+      <td>ATP+Vi</td>
+      <td>4°C</td>
+      <td>+</td>
+      <td>4.01 ± 0.23</td>
+      <td>3</td>
+      <td>ns</td>
+      <td>Figure 3E</td>
+    </tr>
+    <tr>
+      <td>ATP+BeFx</td>
+      <td>4°C</td>
+      <td>+</td>
+      <td>4.06 ± 0.46</td>
+      <td>3</td>
+      <td>ns</td>
+      <td>Figure 3F</td>
+    </tr>
+    <tr>
+      <td>AMP-PNP</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>5.29 ± 0.22</td>
+      <td>2</td>
+      <td>ns</td>
+      <td>Figure 3G</td>
+    </tr>
+    <tr>
+      <td>AMP-PNP+Vi</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>4.91</td>
+      <td>1</td>
+      <td>nd</td>
+      <td>Figure 3G</td>
+    </tr>
+    <tr>
+      <td>AMP-PNP+BeFx</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>5.88</td>
+      <td>1</td>
+      <td>nd</td>
+      <td>Figure 3H</td>
+    </tr>
+    <tr>
+      <td>ADP</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>7.37 ± 2.31</td>
+      <td>6</td>
+      <td>p &lt; 0.001</td>
+      <td>Figure 3I</td>
+    </tr>
+    <tr>
+      <td>ADP+Vi</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>0.44 ± 0.10</td>
+      <td>3</td>
+      <td>p &lt; 0.001</td>
+      <td>Figure 3I</td>
+    </tr>
+    <tr>
+      <td>ADP+BeFx</td>
+      <td>37°C</td>
+      <td>+</td>
+      <td>0.57 ± 0.32</td>
+      <td>3</td>
+      <td>p &lt; 0.001</td>
+      <td>Figure 3J</td>
+    </tr>
+  </tbody>
+</table>
+
 By replacing the cleaved gamma phosphate following ATP hydrolysis, phosphate analogs, such as vanadate (Vi) or beryllium fluoride (BeFx), trap ABC transporters in a stable ternary complex (ABCG2-ADP-Vi/BeFx). Based on different geometries of myosin structures obtained with transition state analogs, the BeFx- or Vi-trapped post-hydrolytic complexes are believed to represent pre- and post-hydrolytic conformations, respectively (Smith and Rayment, 1996, Fisher et al., 1995; Szakács et al., 2000). Co-treatment with Vi or BeFx increased the apparent nucleotide affinity of ABCG2 about 10-fold (Table 1) in conditions permitting ATP hydrolysis (Figure 3A and B), confirming that both phosphate analogs can form stable ADP-trapped complexes with ABCG2. When ATP hydrolysis was prevented, the phosphate analogs did not have any effect on the KA values (Figure 3C–H and Table 1).
 
 Similar to the bacterial ABC transporter MsbA (Moeller et al., 2015), ADP/Mg2+ could also induce the IF to OF switch, albeit at slightly higher concentrations (KA = 7.38 ± 2.31 mM) compared to ATP/Mg2+ (see also Table 1). Moreover, nucleotide trapping occurred in the presence of phosphate analogs and ADP/Mg2+ (Figure 3I–J). The KA values obtained with ADP/Mg2+ and Vi (KA = 0.44 ± 0.1 mM) or BeFx (KA = 0.57 ± 0.32 mM) did not differ from the KA values of trapping reactions starting from ATP/Mg2+. However, in the trapping reactions with ADP/Mg2+, about 30% of ABCG2 molecules remained in a 5D3-reactive state even in the presence of very high nucleotide concentrations. This observation may suggest that the ternary complex resulting from ADP/Mg2+ is different (i.e., less stable, possessing a shorter lifetime compared to the complex produced from ATP/Mg2+ in the hydrolytic cycle) and therefore the trapping reaction occurs with lower efficiency. Since in energized cells the cytosolic ATP concentration is more than 10-fold higher compared to ADP concentrations (Williams et al., 1993), these results indicate that in live cells, (i) the switch from the 5D3-reactive IF to a 5D3-dim OF conformation is induced by ATP binding; and (ii) resetting to the 5D3-reactive IF conformation can only occur after the release of the hydrolysis products.
 
-## Substrates increase the rate of formation of the Vi- or BeFx-trapped species
+### Substrates increase the rate of formation of the Vi- or BeFx-trapped species
 
 Transported substrates increase the turnover rate of ATP hydrolysis in many ABC transporters including ABCB1 and ABCG2 (Sarkadi et al., 1992; Telbisz et al., 2012). Progressive accumulation of the transporter molecules in the stable Vi- or BeFx-trapped post-hydrolytic states represents a partial reaction of the catalytic cycle in ABC transporters (Szabó et al., 1998). Accordingly, the accumulation of ABCG2 in the Vi- or BeFx-trapped post-hydrolytic complex was accelerated by substrates (Figure 4). E3S and quercetin induced an about a fivefold increase in the rate of the trapping reaction (for t1/2 values, see Figure 4B), which is consistent with the extent of stimulations achieved by these compounds in the ATPase assay (Telbisz et al., 2012).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83976/elife-83976-fig4-v1.jpg)
 
-**Figure 4.:** Permeabilized MDCK-ABCG2 cells were pre-treated or not with 10 µM quercetin or E3S for 10 min at 37°C and then further incubated with 0.5 mM ATP/Mg2+ or ADP/Mg2+ in the presence of Vi or BeFx. Samples taken at different time points were stained with 5 µg/ml 5D3-A647 on ice for 45 min. Panel (A) shows a representative Vi-trapping experiment in the absence or presence of E3S, while panel (B) summarizes the t1/2 values calculated from the exponential fit of the kinetic curves (see Materials and methods). Mean ± SD of 3–5 independent experiments is shown. Significant differences compared to substrate untreated samples are shown by ***: p < 0.001.Figure 4—source data 1.Figure 4B.
+**Figure 4.:** Permeabilized MDCK-ABCG2 cells were pre-treated or not with 10 µM quercetin or E3S for 10 min at 37°C and then further incubated with 0.5 mM ATP/Mg2+ or ADP/Mg2+ in the presence of Vi or BeFx. Samples taken at different time points were stained with 5 µg/ml 5D3-A647 on ice for 45 min. Panel (A) shows a representative Vi-trapping experiment in the absence or presence of E3S, while panel (B) summarizes the t1/2 values calculated from the exponential fit of the kinetic curves (see Materials and methods). Mean ± SD of 3–5 independent experiments is shown. Significant differences compared to substrate untreated samples are shown by ***: p < 0.001.
 
 The relatively long t1/2 values compared to the total cycle time, which is in the order of 100 ms (as inferred from ATPase data Yu et al., 2021), suggest that formation of a stable post-hydrolysis complex by phosphate mimicking anions is a low-probability event. The increased rate of the trapping reaction in the presence of substrates may be explained by a higher turnover of the ATPase cycle, or a longer duration of the Vi- or BeFx-“sensitive” state, that is between the dissociation of the cleaved phosphate and the disassembly of the NBD dimer. Consistently, trapping reactions starting from ADP/Mg2+ were not accelerated by quercetin or E3S (Figure 4B), suggesting that substrates do not affect the overall stability or lifespan of the ADP-bound, phosphate analog-sensitive ABCG2 conformer. This can happen, if substrates similarly accelerate the formation and the dissociation of the ADP-bound conformer, or alternatively, they do not have any effect on these processes.
 
-## Substrates accelerate the IF to OF transition of ABCG2
+### Substrates accelerate the IF to OF transition of ABCG2
 
 With the aim to pinpoint the transition that is accelerated by transported substrates, in the following experiments, we studied how nucleotides and substrates affect the kinetics of the IF to OF transition detected by a shift in 5D3 binding. To align ABCG2 molecules in an IF state, semi-permeabilized (nucleotide-free) MDCK cells expressing ABCG2 were pre-labeled with 5D3-A647 antibody. Unbound 5D3-A647 molecules were removed, and cells were incubated at 37°C in a sufficiently large volume to prevent rebinding of the antibody. Under these conditions, we observed a gradual decrease of the 5D3-A647 fluorescence of cells, which was completely prevented by Ko143 treatment, supporting the notion that the ABCG2 molecules are intrinsically dynamic, while Ko143 stabilizes them in the IF 5D3-reactive conformation (Figure 5A). The dissociation rate of the antibody was significantly enhanced in the presence of transported substrates or ATP/Mg2+ (Figure 5A and B). However, the largest (about fivefold) decrease of the t1/2 values corresponding to the half-life of the 5D3-bound ABCG2 conformer was observed when substrates were co-administered with ATP/Mg2+ (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83976/elife-83976-fig5-v1.jpg)
 
-**Figure 5.:** A, B), or prior to nucleotides (C).Permeabilized MDCK-ABCG2 cells were pre-labeled with 5D3-A647 in the absence (panels (A) and (B)) or presence (panel (C)) of substrates (10 µM quercetin or 10 µM E3S) for 20 min at 37°C. After removal of the unbound antibody, cells were further incubated with 3 mM ATP/Mg2+ or AMP-PNP/Mg2+ in the absence or presence of substrates. Panel (A) shows representative 5D3 dissociation curves in the indicated conditions, while panels (B) and (C) summarizes the t1/2 values calculated from the exponential fit of the dissociation curves (see Materials and methods). Means ± SD of 3–5 independent experiments are shown. Significant differences compared to untreated samples (first column) are shown by ###: p < 0.001 or ##: p < 0.01. Significant differences compared to only nucleotide-treated samples are indicated by ***: p < 0.001.Figure 5—source data 1.Figure 5B and C.
+**Figure 5.:** Permeabilized MDCK-ABCG2 cells were pre-labeled with 5D3-A647 in the absence (panels (A) and (B)) or presence (panel (C)) of substrates (10 µM quercetin or 10 µM E3S) for 20 min at 37°C. After removal of the unbound antibody, cells were further incubated with 3 mM ATP/Mg2+ or AMP-PNP/Mg2+ in the absence or presence of substrates. Panel (A) shows representative 5D3 dissociation curves in the indicated conditions, while panels (B) and (C) summarizes the t1/2 values calculated from the exponential fit of the dissociation curves (see Materials and methods). Means ± SD of 3–5 independent experiments are shown. Significant differences compared to untreated samples (first column) are shown by ###: p < 0.001 or ##: p < 0.01. Significant differences compared to only nucleotide-treated samples are indicated by ***: p < 0.001.
 
 In further experiments, intracellular nucleotide pools were replenished with a non-hydrolyzable ATP analog AMP-PNP/Mg2+ (Figure 5B). In the absence of ATP hydrolysis, ABCG2 molecules undergo IF to OF transition (Figure 3G and H), and the backward transition to the IF state has an extremely low probability. The time dependence of the AMP-PNP/Mg2+-induced 5D3 dissociation was comparable to that obtained with ATP/Mg2+ supporting that the antibody dissociation kinetics observed either in the presence of ATP/Mg2+ or AMP-PNP/Mg2+ may reflect the first nucleotide-induced IF to OF transition of ABCG2 (Figure 5B). Strikingly, when co-administered with AMP-PNP/Mg2+, the same substrates did not increase further the dissociation rate of 5D3, suggesting that the NBD dimer formation induced by AMP-PNP/Mg2+ binding switches ABCG2 into the low drug binding affinity state (Figure 5B). However, a similar decrease of the t1/2 values was observed when substrates were added before AMP-PNP/Mg2+ treatment (compare Figure 5B and C), indicating that transition to the OF state can also be accelerated by substrates with AMP-PNP/Mg2+ treatment. Collectively, the above data imply that substrate binding at the TMDs induces a structural change in the transporter that can facilitate the nucleotide-dependent NBD dimer formation and the concomitant IF to OF transition, probably by reducing the energy barrier of the above conformational changes (Orelle et al., 2022).
 
-## The nucleotide-free IF conformation of ABCG2 has higher substrate affinity compared to the Vi-trapped post-hydrolytic conformation
+### The nucleotide-free IF conformation of ABCG2 has higher substrate affinity compared to the Vi-trapped post-hydrolytic conformation
 
 In the following experiments, we visualized the subcellular localization of ABCG2-GFP and the fluorescent ABCG2 substrate mitoxantrone (MX) by using confocal microscopy. In accordance with previous observations (Homolya et al., 2011), at low concentrations, MX only stained poorly the MDCK ABCG2-GFP cells, while ATP depletion, Ko143 or Vi treatments increased the intracellular accumulation of MX (Figure 6A and B). Interestingly, ATP-depleted cells exhibited strong plasma membrane staining by MX (Figure 6A). Plasma membrane staining by MX in both native and ATP-depleted cells was abolished by treatment with the competitive inhibitor Ko143, suggesting that red fluorescence in the plasma membrane of ATP-depleted cells reflects MX binding to ABCG2 molecules. To quantify the fraction of MX-bound ABCG2 molecules, we calculated the Pearson’s correlation coefficients (PCC) between the MX and ABCG2-GFP signals in pixels representing the plasma membrane. Since the ABCG2-GFP signal was unchanged during the course of the different treatments (Figure 6C), the correlation coefficients depend mostly on MX binding to the transporter. In ATP-depleted cells, the high correlation values indicate that the majority of ABCG2 molecules reside in an MX-bound conformation (PCC = 0.72 ± 0.12) (Figure 6D). The correlation between the two signals strongly decreased in the presence of Ko143 (PCC = –0.1 ± 0.18), suggesting displacement of MX from the substrate binding site of the transporter by the competitive inhibitor. Similar results were obtained when ATP depletion was combined with Ko143 treatment (PCC = –0.04 ± 0.17). Binding of MX to ABCG2 was also suppressed by Vi (PCC = 0.18 ± 0.13), which is consistent with the notion that the post-hydrolytic ABCG2 conformer possesses low substrate affinity. Interestingly, in untreated cells, we measured significantly higher co-localization between the MX and ABCG2-GFP signals (PCC = 0.3 ± 0.12) than in Ko143-treated cells, suggesting that in the plasma membrane of live cells, a significant subset of ABCG2 molecules resides in an MX-bound IF state.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/83976/elife-83976-fig6-v1.jpg)
 
-**Figure 6.:** A).All treatments increased the intracellular MX fluorescence intensity (B), while the ABCG2-GFP fluorescence intensity in the plasma membrane remained unchanged (C). Pearson’s correlation coefficients between the intensity distributions of MX and ABCG2-GFP in the plasma membrane pixels reveal the stabilization of a high-affinity substrate binding ABCG2 conformation in energy-deprived cells (D). ATP depletion was induced by 15  min pre-treatment of cells with 10  mM sodium azide and 8  mM 2-deoxy-D-glucose. Ko143, a non-fluorescent, competitive ABCG2 inhibitor, was added 10  min before MX staining. In panels (B) and (C), bars represent mean ± SD values, while panel (D) shows box and whisker plots. For each treatment group, 150–200 cells were analyzed from three to five independent experiments. Significant differences compared to the untreated control are shown by ***: p < 0.001.Figure 6—source data 1.Figure 6B–D.
+**Figure 6.:** All treatments increased the intracellular MX fluorescence intensity (B), while the ABCG2-GFP fluorescence intensity in the plasma membrane remained unchanged (C). Pearson’s correlation coefficients between the intensity distributions of MX and ABCG2-GFP in the plasma membrane pixels reveal the stabilization of a high-affinity substrate binding ABCG2 conformation in energy-deprived cells (D). ATP depletion was induced by 15  min pre-treatment of cells with 10  mM sodium azide and 8  mM 2-deoxy-D-glucose. Ko143, a non-fluorescent, competitive ABCG2 inhibitor, was added 10  min before MX staining. In panels (B) and (C), bars represent mean ± SD values, while panel (D) shows box and whisker plots. For each treatment group, 150–200 cells were analyzed from three to five independent experiments. Significant differences compared to the untreated control are shown by ***: p < 0.001.
 
-## MX binding to ABCG2 is confirmed by its reduced mobility using FCS measurements
+### MX binding to ABCG2 is confirmed by its reduced mobility using FCS measurements
 
 As an independent approach to follow MX binding to ABCG2, we measured the mobility of MX in the plasma membrane by FCS. MX molecules bound to ABCG2 are expected to show decreased diffusion compared to free MX (Horsey et al., 2020). We analyzed the fluorescence autocorrelation functions (ACFs) of MX (orange) and ABCG2-GFP (green) in the plasma membrane using a two-component model (Figure 7A). Upon ATP depletion, the diffusion coefficient of MX decreased to the level obtained for ABCG2-GFP (Figure 7B), indicating that MX molecules readily bind to the nucleotide-free IF conformer of ABCG2. In accordance with the data obtained from cellular distributions (Figure 6A and D), the competitive inhibitor Ko143 prevented MX binding to ABCG2, resulting in the dominance of a high plasma membrane mobility MX population similar to the only MX-treated cells (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/83976/elife-83976-fig7-v1.jpg)
 
-**Figure 7.:** A) and diffusion constants (B) of ABCG2-GFP (green) and MX (orange) in the plasma membrane of intact MDCK cells.ABCG2-GFP expressing cells without pre-treatments or following ATP depletion or Ko143 pre-treatment were stained with 100 nM MX for 15 min at 37°C. Each bar shows the mean ± SD for n = 50–100 cells from at least three independent measurements. Significant differences compared to the diffusion constant of ABCG2-GFP (green bar) in the plasma membrane of untreated cells are shown by ***: p < 0.001.Figure 7—source data 1.Figure 7B.
+**Figure 7.:** ABCG2-GFP expressing cells without pre-treatments or following ATP depletion or Ko143 pre-treatment were stained with 100 nM MX for 15 min at 37°C. Each bar shows the mean ± SD for n = 50–100 cells from at least three independent measurements. Significant differences compared to the diffusion constant of ABCG2-GFP (green bar) in the plasma membrane of untreated cells are shown by ***: p < 0.001.
 
-## AMP-PNP binding switches ABCG2 to a conformation that is unable to bind MX
+### AMP-PNP binding switches ABCG2 to a conformation that is unable to bind MX
 
 As shown in Figure 3, permeabilization of cells with streptolysin-O (SLO) synchronizes ABCG2 molecules in a nucleotide-free, 5D3-reactive IF conformation also observed in cryo-EM structures (Taylor et al., 2017). When permeabilized cells were treated with MX alone, we measured a strong co-localization between ABCG2-GFP and MX in the plasma membrane (PCC = 0.85 ± 0.05), confirming the high substrate affinity of the IF conformation of ABCG2. Strikingly, pre-incubation of permeabilized cells with 5 mM AMP-PNP/Mg2+ strongly reduced the co-localization between MX and ABCG2-GFP in the plasma membrane (PCC = –0.1181 ± 0.2019), indicating that the conformational changes induced by AMP-PNP binding prevented MX binding to ABCG2 (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/83976/elife-83976-fig8-v1.jpg)
 
-**Figure 8.:** SLO-permeabilized ABCG2-GFP expressing cells were pre-treated or not with 5 mM AMP-PNP/Mg2+ for 15 min and then stained with 500 nM MX for 15 min at 37°C. Permeabilized cells were identified by PI staining. Box and whisker plots show Pearson’s correlation coefficients of n > 150 cells from three independent experiments. ***p < 0.001 by Kolmogorov-Smirnov test. MX, mitoxantrone; PI, propidium iodide; SLO, streptolysin-O.Figure 8—source data 1.Figure 8B.
+**Figure 8.:** SLO-permeabilized ABCG2-GFP expressing cells were pre-treated or not with 5 mM AMP-PNP/Mg2+ for 15 min and then stained with 500 nM MX for 15 min at 37°C. Permeabilized cells were identified by PI staining. Box and whisker plots show Pearson’s correlation coefficients of n > 150 cells from three independent experiments. ***p < 0.001 by Kolmogorov-Smirnov test. MX, mitoxantrone; PI, propidium iodide; SLO, streptolysin-O.
 
 ## Discussion
 
@@ -129,69 +287,277 @@ In conclusion, our results indicate that nucleotide binding is the major regulat
 
 ## Materials and methods
 
-## Chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>5D3 (mouse monoclonal)</td>
+      <td>Hybridoma was donated by Brian P. Sorrentino</td>
+      <td></td>
+      <td>Prepared from hybridoma supernatant by affinity chromatography</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BXP-21 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-58222</td>
+      <td>(1:2500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>C-2 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-8432</td>
+      <td>(1:2500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG-HRP (polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-2005</td>
+      <td>(1:2500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Canis familiaris, dog)</td>
+      <td>MDCK II, (epithelial-like cells from kidney distal tubule)</td>
+      <td>Obtained from Prof. Gerrit van Meer</td>
+      <td>ECACC 00062107</td>
+      <td>Mycoplasma-free</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus, mouse)</td>
+      <td>5D3 hybridoma</td>
+      <td>Donated by Brian P. Sorrentino</td>
+      <td></td>
+      <td>Mycoplasma-free</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mitoxantrone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M6545</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ko143</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# K2145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Quercetin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# Q4951</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Estrone-3-sulfate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# E9145</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ADP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2754</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMP-PNP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium-orthovanadate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# S6508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P2714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-Dithiothreitol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D0632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowing software</td>
+      <td>Turku Centre for Biotechnology</td>
+      <td></td>
+      <td>https://bioscience.fi/services/cell-imaging/flowing-software/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks Inc.</td>
+      <td></td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuickFit 3.0</td>
+      <td></td>
+      <td></td>
+      <td>https://biii.eu/quickfit-3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot</td>
+      <td>Systat Software Inc.</td>
+      <td></td>
+      <td>https://systatsoftware.com/sigmaplot/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Eight-well chambered coverslip plate</td>
+      <td>ibidi GmbH</td>
+      <td>Cat# 80826-90</td>
+      <td>Imaging chamber for microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptolysin-O (SLO) from Streptococcus pyogenes</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# S5265</td>
+      <td>(250 U/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa 647 succinimidyl ester</td>
+      <td>Life Technologies Inc.</td>
+      <td>Cat# A20006</td>
+      <td>Fluorescent dye</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium iodide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P4170</td>
+      <td>Fluorescent dye</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SuperSignal West Pico PLUS Chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 34579</td>
+      <td>Reagent for protein detection in western blot analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals
 
 Cell culture media, supplements, and chemicals were purchased from Sigma-Aldrich (Budapest, Hungary). Alexa 647 succinimidyl ester (A647) was purchased from Life Technologies, Inc (Carlsbad, CA). The 5D3 anti-ABCG2 mAb was prepared from hybridoma supernatants by affinity chromatography. Purity (>97%) was verified by SDS/PAGE. The 5D3 hybridoma cell line was a kind gift from Brian P. Sorrentino (Division of Experimental Hematology, Department of Hematology/Oncology, St. Jude Children’s Research Hospital, Memphis, TN). 5D3 antibody was labeled with A647 (5D3-A647) and was separated from the unconjugated dye by gel filtration using a Sephadex G-50 column. The dye-to-protein ratio was approximately 3 for each antibody preparation. Stock solutions of nucleotides were prepared in distilled water at pH 7 (by Tris-Base).
 
-## Cell lines
+### Cell lines
 
 The MDCK II Madin-Darby canine kidney cell line was a kind gift from Gerrit van Meer (Department of Membrane Enzymology, Centre for Biomembranes and Lipid Enzymology Utrecht, The Netherlands). The MDCK II cell lines stably expressing ABCG2 or its N-terminally green fluorescent protein (GFP) tagged variant (Orbán et al., 2008) were established using the Sleeping Beauty transposon-based gene delivery system (Erdei et al., 2018). Cells expressing the transgene at high level were selected based on their 5D3-A647 or GFP fluorescence by repeated flow cytometry sorting using a Becton Dickinson FACSAria III Cell Sorter (Becton Dickinson, Mountain View, CA). Cells were grown as monolayer cultures in Dulbecco’s modified Eagle’s medium supplemented with 0.1 mg/ml penicillin-streptomycin cocktail, 10% heat-inactivated fetal calf serum and 2 mM L-glutamine. Cells were maintained at 37°C in a 5% CO2 atmosphere and were grown to approximately 80% confluency. Cells were regularly checked for Mycoplasma infection and were found to be negative.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells (2 × 105) were lysed in 100 µl reducing Laemmli sample buffer (6×) for 10 min at 95 °C. Afterward, the lysates were subjected to SDS-polyacrylamide gel electrophoresis using an 8% polyacrylamide gel and then electroblotted onto a nitrocellulose membrane with a pore size of 0.45  μm (GE Healthcare Life Sciences, Little Chalfont, Buckinghamshire, UK). ABCG2 expression was detected by the BXP-21 mouse mAb, while actin was labeled with the C-2 mouse mAb (both from Santa Cruz Biotechnology Inc, Santa Cruz Biotechnology, CA). As a secondary antibody, a goat anti-mouse HRP-conjugated IgG (Santa Cruz Biotechnology Inc, Santa Cruz, CA) was applied. All antibodies were used at 1:2500 dilution. Bands were visualized with SuperSignal West Pico PLUS Chemiluminescent Substrate (Thermo Fisher Scientific, Waltham, MA) using the FluorChem Q gel documentation system (Alpha Innotech Corp, San Leandro, CA).
 
-## MX accumulation test
+### MX accumulation test
 
 The transport activity of ABCG2 and ABCG2-GFP was studied using an MX accumulation assay (Tarapcsák et al., 2017). Cells (0.5 × 106  ml-1 in PBS containing 7 mM glucose [gl-PBS]) were pre-incubated in the presence or absence of 2 μM Ko143 for 15 min at 37°C and then stained with 5 μM MX for 30 min. Samples were washed three times with ice-cold gl-PBS containing 0.5% fetal bovine serum (FBS) and stored on ice until flow cytometry measurement. To exclude dead cells from the analysis, samples were stained with propidium iodide (PI).
 
-## 5D3-reactivity assay
+### 5D3-reactivity assay
 
 Cells (0.5 × 106 ml−1 in gl-PBS) were pre-incubated with or without 2 µM Ko143 for 10 min and then further incubated with 5 µg/ml 5D3-A647 monoclonal anti-ABCG2 antibody at 37°C. After 30 min of incubation, samples were washed two times with ice-cold gl-PBS and centrifuged for 5 min at 435×g at 4°C. The 5D3-A647 fluorescence intensity of the cells was measured by flow cytometry.
 
-## Permeabilization of cells with SLO toxin
+### Permeabilization of cells with SLO toxin
 
 SLO (Sigma-Aldrich, Budapest, Hungary) is a pore-forming exotoxin from Streptococcus pyogenes. The SLO pores formed in the membrane are permeable to small water-soluble molecules including nucleotides (Yang et al., 2006). SLO is an oxygen-labile toxin that is reversibly activated by dithiothreitol (DTT). Cell suspensions (1 × 107 cells/ml) were treated with 250 U/ml SLO in the presence of 1 mM DTT, Protease Inhibitor Cocktail (2 mM AEBSF, 0.3 µM aprotinin, 116 µM bestatin, 14 µM E-64, and 1 µM leupeptin), 0.5 mM PMSF, and 1% FBS in gl-PBS at 37 °C for 30 min, which allowed permeabilization of approximately 50% of cells, as it was verified by PI staining. The reaction was stopped with 20 ml PBS containing 1% FBS and the cells were centrifuged at 635×g for 5 min at room temperature. Unbound toxin was removed by washing the cells three times with PBS and the cell pellet was resuspended in PBS (Goda et al., 2020). The applied 1 mM DTT concentration did not affect the 5D3-reactivity of ABCG2.
 
 Cells grown in eight-well chambered coverslip plates (ibidi GmbH, Gräfelfing, Germany) for confocal microscopy experiments were permeabilized using 62.5 U/ml SLO in the presence of 1 mM DTT and Protease Inhibitor Cocktail at 37°C for 15 min, in HEPES solution (20 mM HEPES, 123 mM NaCl, 5 mM KCl, 1.5 mM MgCl2, and 1 mM CaCl2) containing 1% FBS.
 
-## Determination of apparent affinity of nucleotide binding
+### Determination of apparent affinity of nucleotide binding
 
-Apparent affinity of nucleotide binding (KA) was determined as described previously (Bársony et al., 2016; Goda et al., 2020). Permeabilized cells (1 × 106ml−1) were pre-treated with nucleotides added at different concentrations in the presence of equimolar concentrations of Mg2+ at 37°C for 10 min and then further incubated with 5 μg/ml 5D3-A647 at 37°C for 20 min. To prevent ATP hydrolysis, ATP was added without Mg2+ in the presence of 5 mM EDTA or the whole experiment was carried out on ice. In nucleotide trapping experiments, nucleotide treatments were applied together with 0.5 mM sodium orthovanadate (Vi) or BeFx (200 μM BeSO4 and 1 mM NaF) at 37°C for 30 min. Subsequently, the cells were labeled with 5 μg/ml 5D3-A647 on ice for 45 min after removal of the un-trapped nucleotides by washing them two times with ice-cold PBS. After antibody labeling samples were washed again three times with ice-cold PBS and centrifuged for 5 min at 635×g at 4°C. The mean 5D3-A647 fluorescence intensity of the cells was determined by flow cytometry and plotted as a function of the nucleotide concentration. To determine the apparent affinity of ABCG2 for nucleotides (KA), data points were fitted with the four-parameter Hill function, where the Fmin and Fmax values represent the minimum and maximum fluorescence intensities, respectively:(1)F=Fmin×KAn+Fmax×xnKAn+xn
+Apparent affinity of nucleotide binding (KA) was determined as described previously (Bársony et al., 2016; Goda et al., 2020). Permeabilized cells (1 × 106ml−1) were pre-treated with nucleotides added at different concentrations in the presence of equimolar concentrations of Mg2+ at 37°C for 10 min and then further incubated with 5 μg/ml 5D3-A647 at 37°C for 20 min. To prevent ATP hydrolysis, ATP was added without Mg2+ in the presence of 5 mM EDTA or the whole experiment was carried out on ice. In nucleotide trapping experiments, nucleotide treatments were applied together with 0.5 mM sodium orthovanadate (Vi) or BeFx (200 μM BeSO4 and 1 mM NaF) at 37°C for 30 min. Subsequently, the cells were labeled with 5 μg/ml 5D3-A647 on ice for 45 min after removal of the un-trapped nucleotides by washing them two times with ice-cold PBS. After antibody labeling samples were washed again three times with ice-cold PBS and centrifuged for 5 min at 635×g at 4°C. The mean 5D3-A647 fluorescence intensity of the cells was determined by flow cytometry and plotted as a function of the nucleotide concentration. To determine the apparent affinity of ABCG2 for nucleotides (KA), data points were fitted with the four-parameter Hill function, where the Fmin and Fmax values represent the minimum and maximum fluorescence intensities, respectively:
 
-## Studying the kinetics of nucleotide trapping by Vi or BeFx
+$$
+F=\frac{F_{min}\timesK_{A}^{n}+F_{max}\timesx^{n}}{K_{A}^{n}+x^{n}}
+$$
 
-Permeabilized cells (1 × 106 ml−1) were incubated with 0.5 mM ATP/Mg2+ or ADP/Mg2+ and 0.5 mM Vi or BeFx (200 μM BeSO4 and 1 mM NaF) in the presence or absence of ABCG2 substrates (10 µM quercetin or 10 µM E3S) in PBS at 37°C. To follow the kinetics of the trapping reaction, 500 μl aliquots was taken at different time points and washed two times with 5 ml ice-cold PBS. After washing, the samples were resuspended in 500 μl ice-cold PBS and labeled with 5 μg/ml 5D3-A647 at 4°C for 45 min. The 5D3-A647 fluorescence intensity of the samples (F) was plotted as a function of time (t). The t1/2 values, representing the half-life of the 5D3-reactive ABCG2 conformation, were calculated from an exponential fit of the data points according to the following equation:(2)F=F0×e−t×ln2t12+c
+### Studying the kinetics of nucleotide trapping by Vi or BeFx
+
+Permeabilized cells (1 × 106 ml−1) were incubated with 0.5 mM ATP/Mg2+ or ADP/Mg2+ and 0.5 mM Vi or BeFx (200 μM BeSO4 and 1 mM NaF) in the presence or absence of ABCG2 substrates (10 µM quercetin or 10 µM E3S) in PBS at 37°C. To follow the kinetics of the trapping reaction, 500 μl aliquots was taken at different time points and washed two times with 5 ml ice-cold PBS. After washing, the samples were resuspended in 500 μl ice-cold PBS and labeled with 5 μg/ml 5D3-A647 at 4°C for 45 min. The 5D3-A647 fluorescence intensity of the samples (F) was plotted as a function of time (t). The t1/2 values, representing the half-life of the 5D3-reactive ABCG2 conformation, were calculated from an exponential fit of the data points according to the following equation:
+
+$$
+F=F_{0}\timese^{−t\times\frac{ln2}{t_{\frac{1}{2}}}}+c
+$$
 
 Wherein F0 is the difference between the zero and infinite time points of the curve and c is the background fluorescence intensity of cells.
 
-## 5D3 dissociation
+### 5D3 dissociation
 
 Permeabilized MDCK-ABCG2 cells (1 × 106 ml−1) were pre-labeled with 5D3-A647 in the presence or absence of 10 µM quercetin or 10 µM E3S for 20 min at 37°C. After removing the unbound 5D3-A647, cells (1 × 105 ml−1) were further incubated with 3 mM ATP/Mg2+ or AMP-PNP/Mg2+ in the absence or presence of the above substrates at 37°C. To study the kinetics of 5D3 dissociation, 500 μl aliquots were taken at regular intervals and washed two times with ice-cold PBS. The 5D3-A647 fluorescence intensity of the cells was measured by flow cytometry and plotted as a function of time (t). The t1/2 values, representing the half-life of the 5D3-reactive ABCG2 conformation, were calculated from an exponential fit of the data points using Equation 2.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry analysis was carried out using a Becton Dickinson FACS Array flow cytometer (Becton Dickinson, Mountain View, CA). A 635  nm laser was used for the excitation of MX and A647 and their fluorescence was detected in the red channel through a 661/16  nm bandpass filter, while a 532  nm laser was used for the excitation of PI and the emitted light was detected using a 585/42  nm bandpass filter. Cell debris was excluded from analysis on the basis of FSC and SSC signals. Fluorescence signals of 2 × 105 cells/sample were collected in logarithmic mode, and the cytofluorimetric data were analyzed using the Flowing software (Cell Imaging Core, Turku Centre for Biotechnology, Turku, Finland).
 
-## Confocal laser scanning microscopy and fluorescence co-localization analysis
+### Confocal laser scanning microscopy and fluorescence co-localization analysis
 
 To assess the co-localization of ABCG2-GFP and the fluorescent ABCG2 substrate MX in the plasma membrane of MDCK cells, we carried out confocal laser scanning microscopy (CLSM) experiments. Measurements were performed in eight-well chambered coverslip plates (ibidi GmbH, Gräfelfing, Germany). ATP depletion of intact cells was induced by a 15 min pre-treatment with 8 mM 2-deoxy-D-glucose and 10 mM sodium azide in glucose-free medium. ATP-depleted or non-ATP-depleted cells were pre-treated with 2 µM Ko143 or 0.5 mM Vi for 15 min, stained with 500 nM MX for 15 min at 37°C and then washed three times with HEPES solution. SLO-permeabilized cells were pre-stained with 6 µg/ml PI, then further incubated with 500 nM MX for 15 min at 37°C in the presence or absence of 5 mM AMP-PNP and subsequently washed three times with HEPES solution.
 
 Fluorescence images were acquired with a Nikon A1 Eclipse Ti2 Confocal Laser-Scanning Microscope (Nikon, Tokyo, Japan) using a Plan Apo 60× water objective (NA = 1.27). Laser lines of 488 and 647 nm were used for the excitation of ABCG2-GFP and MX, while fluorescence emissions were detected through band pass filters of 500–550 and 660–740 nm, respectively. All the images were recorded with the same settings of the equipment, such as same high voltages, laser powers and pinhole. Images were acquired in sequential mode to minimize the crosstalk between channels. Images of approximately 1-μm-thick optical sections, each with 512 × 512 pixels, and a pixel size of approximately 200 nm, were acquired. A spatial averaging filter with a 3 × 3 mask was used to denoise the images. Co-localization analysis was carried out by calculating the PCCs between the pixel intensities of the two detection channels in pixels representing the plasma membrane (Vámosi et al., 2004). Only pixels where at least one of the intensities was above the threshold (2× the average autofluorescence intensity) were included in the analysis. Image analysis methods and routines were implemented in MATLAB scripts (Mathworks Inc, Natick, MA) (Volkó et al., 2019).
 
-## Fluorescence correlation spectroscopy
+### Fluorescence correlation spectroscopy
 
 To distinguish-free and ABCG2-bound MX molecules based on their different diffusion properties, FCS measurements were performed. FCS measurements were carried out using a Nikon A1 Eclipse Ti2 Confocal Laser-Scanning Microscope (Nikon, Tokyo, Japan), equipped with a Plan Apo 60×water objective (NA = 1.27) and a PicoQuant time-correlated single photon counting FCS (TCSPC-FCS) upgrade kit (PicoQuant, Berlin, Germany).
 
 FCS measurements were carried out on live MDCK cells expressing ABCG2-GFP in eight-well chambered coverslip plates (ibidi GmbH, Gräfelfing, Germany). Cells were stained with 100 nM MX for 15 min at 37°C in the presence or absence of 2 µM Ko143 or after ATP depletion. Fluorescence of ABCG2-GFP and MX was excited with a 488 and a 647 nm laser, respectively. The fluorescence signals emitted by ABCG2-GFP and MX were detected in the spectral ranges of 500–550 and 660–740 nm using single photon counting detectors (PicoQuant, Berlin, Germany). Measurements of 10 × 10 s runs were taken at three selected points in the cross-section of the plasma membrane of each selected cell. Fluorescence autocorrelation curves were calculated using SymPhoTime64 software (PicoQuant, Berlin, Germany) at 200 time points from 300 ns to 1 s with a quasi-logarithmic time scale.
 
-Autocorrelation curves of the doubly labeled cells were fitted to a triplet state model with two diffusion components to describe the 3D-diffusion of free MX (fast component) and the 2D diffusion of ABCG2-bound MX in the x-z plane of the plasma membrane (slow component). The laser beam was positioned in a region of the cell membrane parallel to the long axis of the ellipsoidal laser volume.(3)Gτ=1-T+Te-ττtripN1-Tρ11+ττD111+τS2τD1+1-ρ11+ττD211+τS2τD2
+Autocorrelation curves of the doubly labeled cells were fitted to a triplet state model with two diffusion components to describe the 3D-diffusion of free MX (fast component) and the 2D diffusion of ABCG2-bound MX in the x-z plane of the plasma membrane (slow component). The laser beam was positioned in a region of the cell membrane parallel to the long axis of the ellipsoidal laser volume.
 
-In Equation 3, N is the average number of fluorescent molecules in the detection volume, T is the fraction of molecules in the triplet state, τtrip is the triplet correlation time. The diffusion rate is characterized by the diffusion time τD, which is the average time spent by a molecule in the illuminated volume. τD1 and τD2 are the diffusion times of the fast and slow components, ρ is the fraction of the first component, and 1−ρ is the fraction of the second component. The diffusion coefficients (D) of the fast and slow components were determined from the following equation:(4)D=ωxy24τd
+$$
+G\tau=\frac{1-T+Te^{\frac{-\tau}{\tau_{trip}}}}{N1-T}ρ\frac{1}{1+\frac{\tau}{\tau_{D1}}}\frac{1}{\sqrt{1+\frac{\tau}{S^{2}\tau_{D1}}}}+1-ρ\frac{1}{\sqrt{1+\frac{\tau}{\tau_{D2}}}}\frac{1}{\sqrt{1+\frac{\tau}{S^{2}\tau_{D2}}}}
+$$
+
+In Equation 3, N is the average number of fluorescent molecules in the detection volume, T is the fraction of molecules in the triplet state, τtrip is the triplet correlation time. The diffusion rate is characterized by the diffusion time τD, which is the average time spent by a molecule in the illuminated volume. τD1 and τD2 are the diffusion times of the fast and slow components, ρ is the fraction of the first component, and 1−ρ is the fraction of the second component. The diffusion coefficients (D) of the fast and slow components were determined from the following equation:
+
+$$
+D=\frac{\omega_{xy}^{2}}{4\tau_{d}}
+$$
 
 Wherein, ωxy is the lateral e–2 radius of the detection volume. ωxy was measured by determining the diffusion time of 100 nM A647 dye (dissolved in 10 mM Tris, 0.1 mM EDTA-containing buffer, and pH 7.4) with known diffusion coefficient (DA647 = 330 µm2/s, at T = 22.5°C) (Weidemann and Schwille, 2013) and substituting it into Equation 4 that corresponds to the aspect ratio of the ellipsoidal confocal volume, defined as the ratio of its axial and radial dimensions. This parameter was estimated by fitting the autocorrelation curves of a 100 nM A647 dye solution.
 
-## Statistical analysis and curve fitting
+### Statistical analysis and curve fitting
 
 For the statistical analysis of data, SigmaPlot (version 14, SSI, San Jose, CA) was used. For the comparison of two samples from normally distributed populations with equal variances, Student’s t-test was performed, while in case of unequal variances a Kolmogorov-Smirnov test was applied. Multiple comparisons were performed with analysis of variance applying the Holm-Sidak test for post hoc pair-wise comparison of the data. In the case of unequal variances, the Dunnett T3 post hoc pair-wise comparison method was used. Differences were considered significant at p < 0.05.
 

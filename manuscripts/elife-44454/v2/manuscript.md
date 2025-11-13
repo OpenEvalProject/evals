@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.44454.001 Some oscine songbird species modify their songs throughout their lives (‘adult song plasticity’ or ‘open-ended learning’), while others crystallize their songs around sexual maturity. It remains unknown whether the strength of sexual selection on song characteristics, such as repertoire size, affects adult song plasticity, or whether adult song plasticity affects song evolution. Here, we compiled data about song plasticity, song characteristics, and mating system and then examined evolutionary interactions between these traits. Across 67 species, we found that lineages with adult song plasticity show directional evolution toward increased syllable and song repertoires, while several other song characteristics evolved faster, but in a non-directional manner. Song plasticity appears to drive bi-directional transitions between monogamous and polygynous social mating systems. Notably, our analysis of correlated evolution suggests that extreme syllable and song repertoire sizes drive the evolution of adult song plasticity or stability, providing novel evidence that sexual selection may indirectly influence open- versus closed-ended learning.
+Some oscine songbird species modify their songs throughout their lives (‘adult song plasticity’ or ‘open-ended learning’), while others crystallize their songs around sexual maturity. It remains unknown whether the strength of sexual selection on song characteristics, such as repertoire size, affects adult song plasticity, or whether adult song plasticity affects song evolution. Here, we compiled data about song plasticity, song characteristics, and mating system and then examined evolutionary interactions between these traits. Across 67 species, we found that lineages with adult song plasticity show directional evolution toward increased syllable and song repertoires, while several other song characteristics evolved faster, but in a non-directional manner. Song plasticity appears to drive bi-directional transitions between monogamous and polygynous social mating systems. Notably, our analysis of correlated evolution suggests that extreme syllable and song repertoire sizes drive the evolution of adult song plasticity or stability, providing novel evidence that sexual selection may indirectly influence open- versus closed-ended learning.
 
 ## Introduction
 
@@ -30,17 +30,130 @@ Here, we take a comparative, computational approach to the evolutionary history 
 
 In this study, we analyzed the length of the song-learning window using three classification schemes. First, we classified 67 species as having either adult song plasticity (i.e. those that change their syllable repertoire after their first breeding season ends) or adult song stability. Second, when possible, we reclassified the species into three categories: 1) those that stop changing their song before their first breeding season, 2) those that modify their songs during their first breeding season but not after, and 3) those that modify their songs after their first breeding season has ended. This three-state classification was possible for 59 out of the 67 species. Third, for the same 59 species, we used reported estimates of the ages at which song stabilizes to create a continuous measure of the song-learning window. There were exceedingly few studies that examined song changes after the second breeding season, so our continuous metric ranges from 0 to 2 years. We then examined the evolutionary patterns of adult song stability and plasticity, as well as their interactions with species-level song characteristics and mating behaviors.
 
-## How has adult song plasticity evolved across clades?
+### How has adult song plasticity evolved across clades?
 
 We were first interested in examining the rate of evolution of adult song stability versus adult song plasticity, as well as when and where evolutionary transitions in these traits occurred on a phylogenetic tree (Jetz et al., 2012) using ancestral state reconstruction. As with any reconstruction of evolutionary history, these simulations cannot exactly predict the ancestral states but aim to approximate them. Furthermore, we note that only a subset of oscine families were represented in our analysis, and most of the early branching lineages that would be required to assess the ancestral state for all oscine species were not included in our dataset. Ultimately, we could not make a conclusion about whether the last common ancestor for the species included in this study had adult song plasticity, but our results hint that there might have been several early transitions in this trait, leading to clades that predominantly have adult song stability or plasticity, coupled with a number of more recent transitions (see pie charts in Figure 1A for the predicted likelihood of each state at each node). We found that a model allowing the transition rate from song stability to plasticity to be different from the transition rate from plasticity to stability (all-rates-different model [ARD]) did not fit the data significantly better than a simpler model allowing for only one rate of transition back and forth between song stability and plasticity (equal rates model [ER]) (LogLikelihoodER = −38.22, LogLikelihoodARD = −38.21, p=0.87). At least 14 transitions were required to explain the current binary song-stability states of our subset of bird species. Explaining the distribution of song plasticity in our subset of species most parsimoniously requires at least nine transitions to adult song plasticity if the last common ancestor was song-stable and seven transitions to song stability if the common ancestor was song-plastic (Figure 1—figure supplement 1).
 
-## Which song traits differ between species with stable versus plastic songs?
+![Figure 1.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-v2.jpg)
+
+**Figure 1.:** These phylogenies show the calculated evolution of natural-log transformed syllable repertoire size and either (A) stable and plastic song stability states or (B) early song-stable, delayed song-stable, and song-plastic states. Dots at the tips of branches represent the current song-stability state. Pie charts represent the likelihood that the common ancestor at that node was in each song-stability state. Dark purple colors represent small syllable repertoires while white represents large repertoires. For the sake of visualization, the color range was truncated based on the distribution of the data, such that the lowest value was the 25th percentile minus the range of the 25th to 50th percentile and the highest value was the 75th percentile plus the range of the 50th to 75th percentile. See Table 1 for PhylANOVA results.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** White dots at the tips show song-plastic species, while black dots show song-stable species. Inset shows an equally parsimonious set of transitions for the labeled species. At least seven transitions to the song-stable state are required to generate the current distribution of adult song plasticity from a song-plastic last common ancestor. At least nine transitions to the song-plastic state are required if the last common ancestor was a song-stable species. Fourteen transitions between adult song stability and adult song plasticity are required, regardless of whether we assume a song-plastic or song-stable ancestral state.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The estimated ancestral character states are mapped on the tree for both adult song stability versus plasticity and for log-transformed song repertoire size. Black and white dots represent a species that is currently in a stable or plastic state respectively. Black and white in the pie charts at each node represent the likelihood that the common ancestor was in the stable or plastic state. Dark purple colors represent small repertoires while white represents large repertoires. For the sake of visualization, the color range was truncated based on the distribution of the data, such that the lowest value was the 25th percentile minus the range of the 25th to 50th percentile and the highest value was the 75th percentile plus the range of the 50th to 75th percentile. PhylANOVA results for Figure 1—figure supplements 2–7 are available in Table 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The estimated ancestral character states are mapped on the tree for both adult song stability versus plasticity (black versus white) and for log-transformed syllables per song (purple). Labeling is the same as in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The estimated ancestral character states are mapped on the tree for both adult song stability versus plasticity (black versus white) and for log-transformed song duration (purple). Labeling is the same as in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** The estimated ancestral character states are mapped on the tree for both adult song stability versus plasticity (black versus white) and for log-transformed intersong interval (purple). Labeling is the same as in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** The estimated ancestral character states are mapped on the tree for both adult song stability versus plasticity (black versus white) and for log-transformed song rate (purple). Labeling is the same as in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** The estimated ancestral character states are mapped on the tree for both adult song stability versus plasticity (black versus white) and for log-transformed song continuity (purple). Labeling is the same as in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** The 20 species pairs that form monophyletic groups in our 67-species tree are included. Each point represents one species pair. A linear model yields a best-fit line of y = 0.0228 x + 0.131. Thus, the rate of syllable repertoire size evolution was not dependent upon the ancestral values of syllable repertoire size.
+
+### Which song traits differ between species with stable versus plastic songs?
 
 We next tested whether song characteristics were affected by the length of the song-learning window on an evolutionary scale. Intuitively, it makes sense that a species that has a longer time-window to learn might be able to accumulate a larger repertoire. Indeed, this relationship is consistent with the pattern of song stability and repertoire size in several clades, such as the Phylloscopus species (Figure 2). However, many individual species do not follow this prediction: for example, Acrocephalus palustris appears to learn a large repertoire in a single year (Dowsett-Lemaire, 1979), and Philesturnus rufusater modifies its song for multiple years but maintains a small repertoire (Jenkins, 1978). Further, numerous species with adult song plasticity do not significantly increase their repertoire sizes over time (Eriksen et al., 2011; Galeotti et al., 2001; Garamszegi et al., 2005; Nicholson et al., 2007). Thus, an evolutionary link between adult song plasticity and larger repertoire sizes cannot be assumed. Using a phylogenetically controlled ANOVA (Garland et al., 1993; Revell, 2012), we found that species with adult song plasticity did possess significantly larger syllable repertoires than species with adult song stability (Figures 1A and 3A, Table 1). This concurs with a previous analysis using a smaller dataset (Creanza et al., 2016). Similarly, we found that song-plastic species had significantly larger song repertoires than song-stable species (Figure 3B, Figure 1—figure supplement 2, and Table 1).
 
+**Table 1.**
+ PhylANOVA results for all song traits when birds are divided into species with adult song stability or adult song plasticity.Song traits are sorted from most to least significant. Song-stable and song-plastic columns show mean values of each log-transformed song trait. Corrected α indicates the threshold for significance with the Holm-Bonferroni correction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>Song-stable</th>
+      <th>Song-plastic</th>
+      <th>F-Value</th>
+      <th>Corrected α</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>1.8807</td>
+      <td>3.946</td>
+      <td>41.5064</td>
+      <td>0.0071</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>1.1055</td>
+      <td>3.8688</td>
+      <td>33.8334</td>
+      <td>0.0083</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Syllables/song</td>
+      <td>1.2556</td>
+      <td>2.2962</td>
+      <td>9.2658</td>
+      <td>0.01</td>
+      <td>0.094</td>
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td>0.7736</td>
+      <td>1.2927</td>
+      <td>2.0783</td>
+      <td>0.0125</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Continuity</td>
+      <td>-1.3453</td>
+      <td>-1.0286</td>
+      <td>2.1537</td>
+      <td>0.0167</td>
+      <td>0.474</td>
+    </tr>
+    <tr>
+      <td>Interval</td>
+      <td>1.6075</td>
+      <td>1.218</td>
+      <td>1.3879</td>
+      <td>0.025</td>
+      <td>0.567</td>
+    </tr>
+    <tr>
+      <td>Song rate</td>
+      <td>1.8969</td>
+      <td>2.0971</td>
+      <td>0.6079</td>
+      <td>0.05</td>
+      <td>0.713</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes traits with significantly different groups._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig2-v2.jpg)
 
-**Figure 2.:** Phylloscopus species.P. collybita, a species with adult song stability, has a smaller syllable repertoire size than P. trochilus and P. fuscastus, two species with adult song plasticity. Colors of branches and nodes correspond with Figure 1. Sonograms were generated from recordings obtained from xeno-canto.org: XC340281 recorded by Tom Wulf (P. fuscatus), XC414221 recorded by Frank Lambert (P. collybita), and XC402265 recorded by Hans Matheve (P. trochilus). Sonograms are used only to demonstrate comparative repertoire size from one individual for each species and were stretched horizontally to fit the allotted space.
+**Figure 2.:** P. collybita, a species with adult song stability, has a smaller syllable repertoire size than P. trochilus and P. fuscastus, two species with adult song plasticity. Colors of branches and nodes correspond with Figure 1. Sonograms were generated from recordings obtained from xeno-canto.org: XC340281 recorded by Tom Wulf (P. fuscatus), XC414221 recorded by Frank Lambert (P. collybita), and XC402265 recorded by Hans Matheve (P. trochilus). Sonograms are used only to demonstrate comparative repertoire size from one individual for each species and were stretched horizontally to fit the allotted space.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig3-v2.jpg)
 
@@ -48,9 +161,266 @@ We next tested whether song characteristics were affected by the length of the s
 
 There were no significant differences between song-plastic and song-stable species for the other song characteristics that we tested: syllables per song, inter-song interval, song duration, song rate (calculated as 60/(interval + duration)), or song continuity (calculated as duration/(duration + interval)) (Table 1, Figure 1—figure supplements 3–7). When we used the classification scheme with three states, we could only test for differences in syllable repertoire, song repertoire, and syllables per song between groups, as there were very few early song-stable species for which we had data on the other song traits. We found no significant differences between early song-stable and delayed song-stable species for any tested traits, but both of these groups had significantly smaller syllable and song repertoires compared to song-plastic species (Figures 1B and 3C, Tables 2 and 3). When performing a phylogenetic generalized least squares (PGLS) analysis using continuous estimates of the duration of song plasticity, we found similar results; both syllable repertoire and song repertoire were correlated with duration of song plasticity, such that repertoire size increased with the song-plasticity duration (Figure 3D, Table 4).
 
-## Do song characteristics evolve at different rates in song-stable or song-plastic species?
+**Table 2.**
+ PhylANOVA results for all song traits when birds are divided into early song stability, delayed song stability, and song plasticity.Song traits are sorted from most to least significant. Early, delayed, and plastic columns show mean values of each log-transformed song trait. Corrected α indicates the threshold for significance with the Holm-Bonferroni correction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>Early</th>
+      <th>Delayed</th>
+      <th>Plastic</th>
+      <th>F-Value</th>
+      <th>Corrected α</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>1.6436</td>
+      <td>2.0062</td>
+      <td>3.946</td>
+      <td>17.1099</td>
+      <td>0.0071</td>
+      <td>0.003*</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>0.6788</td>
+      <td>1.4819</td>
+      <td>3.8688</td>
+      <td>12.88</td>
+      <td>0.0083</td>
+      <td>0.011*</td>
+    </tr>
+    <tr>
+      <td>Syllables/song</td>
+      <td>1.2852</td>
+      <td>1.2467</td>
+      <td>2.2962</td>
+      <td>3.6877</td>
+      <td>0.01</td>
+      <td>0.252</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes traits with significantly different groups._
+
+**Table 3.**
+ Post-hoc pairwise phylANOVA tests for significant song traits when birds are divided into early song stability, delayed song stability, and song plasticity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>State 1</th>
+      <th>State 2</th>
+      <th>T-Value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>Plastic</td>
+      <td>Delayed</td>
+      <td>4.8995</td>
+      <td>0.012*</td>
+    </tr>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>Early</td>
+      <td>Plastic</td>
+      <td>4.6091</td>
+      <td>0.003*</td>
+    </tr>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>Early</td>
+      <td>Delayed</td>
+      <td>0.6872</td>
+      <td>0.659</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>Plastic</td>
+      <td>Delayed</td>
+      <td>4.0268</td>
+      <td>0.044*</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>Early</td>
+      <td>Plastic</td>
+      <td>4.3074</td>
+      <td>0.015*</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>Early</td>
+      <td>Delayed</td>
+      <td>1.0444</td>
+      <td>0.55</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes traits with significantly different groups._
+
+**Table 4.**
+ Results of PGLS analysis between song characteristics and continuous song stability.Test performed on the natural-log scaled values of song characteristics. λ is the value by which off-diagonal elements in the Brownian motion model are multiplied to make the correlation structure. Corrected α indicates the threshold for significance with the Holm-Bonferroni correction. Song traits are sorted from most to least significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>Slope</th>
+      <th>Std error</th>
+      <th>λ</th>
+      <th>T-Value</th>
+      <th>Corrected α</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>0.9067</td>
+      <td>0.2449</td>
+      <td>0.8913</td>
+      <td>3.7021</td>
+      <td>0.0071</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>1.1013</td>
+      <td>0.3123</td>
+      <td>0.8316</td>
+      <td>3.5263</td>
+      <td>0.0083</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Syllables/song</td>
+      <td>0.3701</td>
+      <td>0.2224</td>
+      <td>0.4699</td>
+      <td>1.6642</td>
+      <td>0.01</td>
+      <td>0.1029</td>
+    </tr>
+    <tr>
+      <td>Interval</td>
+      <td>0.4221</td>
+      <td>0.2646</td>
+      <td>0.8823</td>
+      <td>1.5953</td>
+      <td>0.0125</td>
+      <td>0.1215</td>
+    </tr>
+    <tr>
+      <td>Continuity</td>
+      <td>-0.2135</td>
+      <td>0.1439</td>
+      <td>0.8832</td>
+      <td>-1.4838</td>
+      <td>0.0167</td>
+      <td>0.1486</td>
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td>0.3702</td>
+      <td>0.2569</td>
+      <td>1.0163</td>
+      <td>1.441</td>
+      <td>0.025</td>
+      <td>0.1578</td>
+    </tr>
+    <tr>
+      <td>Song rate</td>
+      <td>-0.2113</td>
+      <td>0.25</td>
+      <td>0.7307</td>
+      <td>-0.8453</td>
+      <td>0.05</td>
+      <td>0.4048</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes significant slopes._
+
+### Do song characteristics evolve at different rates in song-stable or song-plastic species?
 
 Our result that species with adult song plasticity had significantly larger syllable and song repertoires raised the question of whether song stability versus plasticity also affected the rate of evolution for any of the song characteristics. To examine this possibility, we used the Brownie algorithm (O'Meara et al., 2006), which tests whether a model with two rates of evolution for each song characteristic—one rate for ancestral periods of song stability and another rate for song plasticity—fits the data significantly better than a model that allows for only a single rate of evolution of each song characteristic regardless of the ancestral states of song stability. Each calculation of the two-rate model is based on one stochastic projection of the ancestral traits across the phylogenetic tree, so we generated 1300 different stochastic simulation maps to use with Brownie. We plotted the distribution of potential rates (Figures 4–5) and compared the average log likelihood of the two-rate models to the log likelihood of the one-rate model (Table 5).
+
+**Table 5.**
+ Brownie results for song traits when birds are divided into species with adult song stability or adult song plasticity.Rate columns show mean log likelihood. Song traits are sorted from most to least significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>One rate</th>
+      <th>Two rates</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Syllables/song</td>
+      <td>-110.6482</td>
+      <td>-100.7673</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Song rate</td>
+      <td>-43.4397</td>
+      <td>-38.4938</td>
+      <td>0.002*</td>
+    </tr>
+    <tr>
+      <td>Interval</td>
+      <td>-45.2842</td>
+      <td>-40.5004</td>
+      <td>0.002*</td>
+    </tr>
+    <tr>
+      <td>Duration</td>
+      <td>-71.2042</td>
+      <td>-66.3122</td>
+      <td>0.002*</td>
+    </tr>
+    <tr>
+      <td>Continuity</td>
+      <td>-25.6471</td>
+      <td>-24.7285</td>
+      <td>0.175</td>
+    </tr>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>-120.2983</td>
+      <td>-120.0695</td>
+      <td>0.499</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>-113.5829</td>
+      <td>-113.3706</td>
+      <td>0.515</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes traits where the more complex model fit the data significantly better than the simpler model._
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig4-v2.jpg)
 
@@ -64,21 +434,185 @@ We found that allowing for two different rates of song trait evolution depending
 
 We repeated this analysis with the three-state categorization for syllable repertoire, song repertoire, and syllables per song; for other song characteristics, we did not have enough species in the early song stability group. We found that the three-rate model was significantly better than the one-rate model for syllables per song and song repertoire, but not for syllable repertoire (Figure 4D–F and Table 6). However, the three-rate model was only significantly better than the two-rate model for song repertoire (Table 7). Thus, the two-rate model sufficiently approximated the evolution of syllables per song. We noticed that for both song repertoire and syllable repertoire, the rate of evolution in delayed song-stable lineages (purple traces in Figure 4D,E) was very similar to the rate in song-plastic lineages (corresponding red traces). We tested one more set of models where we combined delayed song-stable species with song-plastic species to create a ‘longer learning’ group, while early song-stable species were assigned to a ‘shorter learning’ group. For this comparison of shorter versus longer learning, the two-rate model was significantly better than the one-rate model for song repertoire and trending in that direction for syllable repertoire (Figure 4G,H and Table 8). The three-rate model was not significantly better than the longer/shorter-learning two-rate model for either syllable or song repertoire (Table 9). Taken together with our phylANOVA results, this pattern suggests that species with early song stability evolve their song repertoires and potentially their syllable repertoires at a slower rate than delayed song-stable and song-plastic species; however, only song-plastic species directionally evolve towards larger song and syllable repertoires.
 
-## Is song stability or plasticity influenced by the evolution of song traits and mating strategies, or vice versa?
+**Table 6.**
+ Brownie results for song traits when birds are divided into early song stability, delayed song stability, and song plasticity.Rate columns show mean log likelihood. Song traits are sorted from most to least significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>One rate</th>
+      <th>Three rates</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Syllables/song</td>
+      <td>-97.8349</td>
+      <td>-86.3206</td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>-100.812</td>
+      <td>-97.7647</td>
+      <td>0.014*</td>
+    </tr>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>-107.3206</td>
+      <td>-105.5895</td>
+      <td>0.063</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes traits where the more complex model fit the data significantly better than the simpler model._
+
+**Table 7.**
+ Brownie results for song traits when birds are divided into either song stability (early plus delayed) and song plasticity (Two Rates) or early song stability, delayed song stability, and song plasticity (Three Rates).Rate columns show mean log likelihood. Song traits are sorted from most to least significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>Two rates</th>
+      <th>Three rates</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Song repertoire</td>
+      <td>-100.691</td>
+      <td>-97.7148</td>
+      <td>0.015*</td>
+    </tr>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>-107.1332</td>
+      <td>-105.5532</td>
+      <td>0.075</td>
+    </tr>
+    <tr>
+      <td>Syllables/song</td>
+      <td>-86.3125</td>
+      <td>-86.3447</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes traits where the more complex model fit the data significantly better than the simpler model._
+
+**Table 8.**
+ Brownie results for song traits when birds are divided into shorter learning (early song stability) and longer learning (delayed song stability plus song plasticity).Rate columns show mean log likelihood. Song traits are sorted from most to least significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>One rate</th>
+      <th>Two rates</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Song repertoire</td>
+      <td>-100.812</td>
+      <td>-97.9918</td>
+      <td>0.018*</td>
+    </tr>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>-107.3206</td>
+      <td>-105.8488</td>
+      <td>0.086</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes traits where the more complex model fit the data significantly better than the simpler model._
+
+**Table 9.**
+ Brownie results for song traits when birds are divided into either shorter learning (early song stability) and longer learning (delayed song stability plus song plasticity) (Two Rates) or early song stability, delayed song stability, and song plasticity (Three Rates).Rate columns show mean log likelihood. Song traits are sorted from most to least significant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Song trait</th>
+      <th>Two rates</th>
+      <th>Three rates</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Syllable repertoire</td>
+      <td>-105.8156</td>
+      <td>-105.5532</td>
+      <td>0.469</td>
+    </tr>
+    <tr>
+      <td>Song repertoire</td>
+      <td>-97.9372</td>
+      <td>-97.7148</td>
+      <td>0.505</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes traits where the more complex model fit the data significantly better than the simpler model._
+
+### Is song stability or plasticity influenced by the evolution of song traits and mating strategies, or vice versa?
 
 While the Brownie algorithm tested whether adult song plasticity affected the rate of evolution for song characteristics, it did not address whether the opposite might be true. We used BayesTraits (Pagel, 1994; Pagel and Meade, 2006) to test whether the rate and order of evolutionary transitions in one trait is dependent on the state of another trait. Because the song features were continuous variables, we binarized them by setting a series of threshold values to delineate ‘low’ and ‘high’ categories, using each observed song feature value as a threshold in turn. We then tested whether there was correlated evolution between the binary classifications of adult song plasticity versus stability and each of the seven song characteristics.
 
 In the lowest third of syllable repertoire thresholds, adult song plasticity with small syllable repertoires was an evolutionarily unstable state, with rapid transitions primarily toward a song-stable state and secondarily toward larger repertoires (82% of runs significant in this range, Figure 6). In the middle third of syllable repertoire thresholds, song stability with smaller syllable repertoires is an evolutionarily stable attractor state, with high rates of transition observed from large to small syllable repertoires in song-stable species and from plasticity to stability with a small syllable repertoire. These rate differences are highly significant (100% of runs significant in this range). In the highest third of syllable repertoire thresholds, adult song stability with a large syllable repertoire is an evolutionarily unstable state, transitioning primarily toward adult song plasticity (86% of runs significant in this range, Figure 6). We found similar trends when using two, four, and five bins for the song characteristic threshold values, with subtle differences. When using four or five bins, we still observe that song stability with larger syllable repertoires is an unstable combination. However, for the highest bin of threshold values, the transition rates are faster when changing to song plasticity, whereas for the second-highest bin, we observe faster transition rates toward repertoire size increases (Figure 6—source data 1). To rule out the possibility that syllable repertoire size evolution is faster in species with larger repertoire sizes regardless of learning program, we tested the rates of evolution of syllable repertoire size across monophyletic species pairs in our dataset. We found that lineages with larger syllable repertoire sizes do not systematically undergo faster or slower syllable repertoire size evolution (Figure 1—figure supplement 8).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig6-v2.jpg)
+
+**Figure 6.:** We repeated the BayesTraits analysis using each value of the continuous song trait as the threshold delineating the larger and smaller syllable repertoire groups. We performed a total of 100 runs per threshold. We pooled the results of all the runs into three groups based on whether the threshold was in the lowest, middle, or highest third of the unique trait values. Within these groups, we computed the mean percentage of runs that were significant at p<0.05 at each threshold. (A-C) Rate of transition plots when the lowest (red), middle (yellow), and highest (blue) thirds of the unique syllable repertoire values in the dataset were used as the threshold. Rates are the average across all runs when the threshold denoting small/large repertoire sizes was defined as each value within each segment. Arrows are labeled with the mean rate and the 95% confidence interval. Arrow weights are scaled to the mean rate values. (D) p-values from the 100 runs per threshold, plotted against threshold. Colored bars denote low, middle, and high threshold segments. Blue line denotes p=0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** We repeated the BayesTraits analysis using each value of the continuous song trait, here, syllables per song, as the threshold delineating the ‘high’ and ‘low’ syllables per song groups. We performed a total of 100 runs per threshold. We pooled the results of all of the runs into three groups based on whether the threshold was in the lowest, middle, or highest third of the unique trait values. Within these groups, we computed the mean number of runs that were significant at p<0.05 at each threshold. (A-C) Rate of transition plots of the lowest (red), middle (yellow), and highest (blue) thirds of the unique syllables per song values in the dataset. Rates are the average across all runs when the threshold denoting low/high syllables per song was defined as each value within each segment. Arrows are labeled with the mean rate and the 95% confidence interval. Arrow weights are scaled to the mean rate values. (D) p-values from the 100 runs per threshold, plotted against threshold. Colored bars denote low, middle, and high threshold segments. Blue line denotes p=0.05.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Labeling the same as in Figure 6 and Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Labeling the same as in Figure 6 and Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Labeling the same as in Figure 6 and Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Labeling the same as in Figure 6 and Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** Transition arrows are labeled with the mean rate over all 1000 runs. (A) Mating system (polygyny vs. monogamy): 1000 of 1000 runs were significant at p<0.05. (B) Extra-pair paternity (Low EPP vs. High EPP): No runs were significant at p<0.05.
+
 At low song repertoire threshold values, song plasticity with a small repertoire is an evolutionarily unstable state; there is rapid transition away from this combination, predominantly trending toward song stability but also transitioning secondarily to a larger song repertoire, with very high significance (100% of runs significant in this range). At moderate song repertoire thresholds, the highest rate is observed for species with small repertoires transitioning from song plasticity to song stability, also with very high significance (100% of runs significant in this range). At high song repertoire thresholds, the primary shift is from song stability to song plasticity in species with large song repertoires (89% of runs significant in this range) (Figure 7). When analyzing the results using five bins, transitions in the upper range of song repertoire values becomes more nuanced; in the highest bin, song stability with a larger song repertoire is very unstable, but is relatively stable in the second-highest bin. In the lower four bins, the dominant transition is from plastic to stable song with smaller song repertoires (Figure 6—source data 1). The results for syllables per song show some general trends that are complicated by the strong effect of the mimid species (see results of jackknife analysis below). We did not find evidence for correlated evolution between adult song stability or plasticity and any of the other song characteristics (Figure 6—figure supplements 1–5).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/44454/elife-44454-fig7-v2.jpg)
 
-**Figure 7.:** Labeling is the same as in Figure 6.10.7554/eLife.44454.037Figure 7—source data 1.Labeling the same as in Figure 6 and Figure 6—figure supplement 2.
+**Figure 7.:** Labeling is the same as in Figure 6.
 
 In addition, it has been proposed that polygyny and extra-pair paternity (EPP) may increase sexual selection pressures on sexually selected traits, including song (Emlen and Oring, 1977; Payne, 1984), and increased selection pressure due to polygyny was theorized to accelerate the evolution of song learning in a mathematical model (Aoki, 1989). We tested for correlated evolution between adult song plasticity versus stability and both social mating system (polygyny vs. monogamy) and extra-pair paternity (low vs. high EPP), with the caveat that many species in our dataset lacked mating behavior classifications (57 species with social mating system data, 41 with EPP data). We did not find evidence for correlated evolution between song stability and EPP. There was, however, evidence for correlated evolution between polygynous/monogamous mating systems and song plasticity (100% of runs significant), with elevated rates of transition between polygyny and monogamy in the song-plastic state (Figure 6—figure supplement 6).
 
-## Do our results depend on the particular values or families included in analyses?
+### Do our results depend on the particular values or families included in analyses?
 
 In many cases, there were multiple studies that gave different estimates for a given song trait in one species, so we used the median values across studies for our main analysis. To test whether our results depended on the particular values we used, we repeated the PhylANOVA and Brownie analysis using the either the maximum or minimum values reported in the literature. This did not significantly alter our PhylANOVA results for any song feature when species were split into song-stable and song-plastic groups (Supplementary file 1 Table S1), though when the early song-stable, delayed song-stable, and song-plastic dataset was used, using the maximum values for song repertoire led to non-significant results (Supplementary file 1 Table S2-3). When species were split into those with adult song plasticity and adult song stability, the Brownie analysis suggested that syllables per song was evolving significantly faster in song-plastic lineages when we used the median value, but using the minimum values led to non-significant results (Supplementary file 1 Table S4). When species were split into three states (early song stability, delayed song stability, and song plasticity), we found that the three-rate model was not better than the one-rate model when the minimum values for song repertoire were used, while the three-rate models for syllable repertoire became significant when either the maximum or the minimum values were used (Supplementary file 1 Table S5).
 
@@ -108,7 +642,7 @@ Our findings shed new light on the broader subject of song evolution, specifical
 
 ## Materials and methods
 
-## Data collection
+### Data collection
 
 It is difficult to precisely measure the length of the song-learning window in both field and lab studies. In field studies, if a bird is recorded singing a new song element in its second year, researchers often cannot rule out the possibility that it learned that element during its first year but did not incorporate it into its song until later (Marler and Peters, 1981; Vargas-Castro et al., 2015). Likewise, if a bird learns a new element in its second year but elects not to produce it, a recordist would be unlikely to capture it. In contrast, raising birds in the laboratory with known song exposure enables researchers to assess when a bird learned a particular song element (Chaiken et al., 1994; Marler and Peters, 1988; Nelson (1998); Nottebohm, 1969) but also raises questions about whether the lab-reared birds are exhibiting their normal behaviors (Baptista and Petrinovich, 1984; Kroodsma and Pickert, 1984). In addition, these lab-rearing procedures have only been performed in a handful of species. In this paper, we examined studies that include longitudinal measures of adult song stability versus plasticity (e.g. Nordby et al., 2002) to determine whether song is modified across time as a proxy for the length of the song learning window.
 
@@ -124,11 +658,11 @@ When the song repertoire for a species equalled one, we assumed that its syllabl
 
 We also cataloged data on mating behavior at the species level. In particular, we assembled binary classifications of social mating system (monogamy vs polygyny) and extra-pair paternity (low EPP vs high EPP). We considered a species to be monogamous or polygynous when a source unambiguously categorized that species’ social mating system; that is, we did not assign a social mating system to species labeled ‘probably,’ ‘usually,’ ‘mostly,’ ‘normally,’ ‘typically,’ and ‘generally monogamous/polygynous,’ etc. unless quantitative measurements were also provided. When quantitative data were available, species were defined as polygynous when at least 5% of males had more than one social mate, as in Snyder and Creanza (2019). A review of extra-pair paternity studies estimated an average of ~11% of offspring per nest were attributable to extra-pair mates across species (Griffith et al., 2002). In accordance with this estimate and with previous studies that used a binary classification of EPP (Snyder and Creanza, 2019; Soma and Garamszegi, 2011), we used a 10% threshold for either extra-pair young or nests containing at least one extra-pair chick to estimate the frequency of extra-pair paternity in that species (<10% = low EPP; ≥10% = high EPP, Source data 2).
 
-## Assessing the evolutionary history of adult song plasticity
+### Assessing the evolutionary history of adult song plasticity
 
 To predict the rate of transition between adult song stability and adult song plasticity, we used the ace function from the R package Phytools and a phylogeny from Jetz et al. (2012). We note that this phylogeny has broad coverage of oscine songbirds but is based on limited genetic data (often mitochondrial), so the topology could change as more avian genomes are sequenced (Jarvis et al., 2014; Lamichhaney et al., 2015). With this tree, we tested whether an all rates different (ARD) model fit the data significantly better than the equal rates (ER) model using an ANOVA. We then used the better-fit equal rates model to generate 10,000 trees with make.simmap (Phytools). This function uses the rate from ace and a phylogenetic tree with annotated tips to create stochastic simulation maps for the potential evolutionary transitions between the song-stable and song-plastic states. We found the predicted ancestral state for each of these 10,000 simulations and used countSimmap (Phytools) to count the total number of transitions that occurred in each map. The minimum number of predicted evolutionary transitions across these 10,000 simulations was considered to be the most parsimonious; we also compared this to a manual count of evolutionary transitions starting from either ancestral state.
 
-## Detecting differences in song characteristic evolution in song-stable vs. song-plastic species
+### Detecting differences in song characteristic evolution in song-stable vs. song-plastic species
 
 To test whether there were significant differences between song-stable species and song-plastic species for the song traits, we performed a phylogenetically controlled ANOVA (phylANOVA, Phytools) for each song characteristic. We repeated this analysis with the subset of species we classified into early song-stable, delayed song-stable, and song-plastic. Because there were relatively few early song-stable species in this dataset, we only performed this re-analysis for song traits that had data for at least nine early song-stable species (syllable repertoire size: nine species with early song stability, song repertoire size: nine species, and syllables per song: ten species). In this paper, we visualize the predicted ancestral traits on the phylogenetic tree with color and pie graphs, however, the raw values are available in Figure 1—source data 1. To test for correlations between song characteristics and the continuous values for the duration of song plasticity, we performed a phylogenetic generalized least squares (PGLS) analysis. We used the function gls (R package: nlme), with the ‘correlation’ parameter lambda computed using the function corPagel (R package: ape).
 
@@ -136,10 +670,10 @@ To test whether adult song stability or plasticity affected the rate of evolutio
 
 We used BayesTraits to test for correlated evolution between song stability and song characteristics, or, in other words, whether the rate and direction of evolutionary transitions of one trait are dependent on the state of another trait, and whether an order of transition events can be inferred. Specifically, we tested the hypothesis that an evolutionary change in song stability increases the likelihood of an evolutionary change in certain song variables or mating behaviors, or vice versa. BayesTraits compares two models of discrete trait evolution for a pair of binary traits and a given phylogenetic tree: 1) an independent model (i.e. the evolution of one trait does not depend on the other trait) and 2) a dependent model (i.e. the evolutionary transitions of each trait depend on the state of the other trait, suggesting correlated evolution). Using the maximum likelihood method, BayesTraits reports marginal likelihoods for the computed dependent and independent models (function Discrete in package btw [BayesTraitsWrapper]), allowing us to determine whether the dependent model describes the data significantly better than the independent model. We used function LRtest (package: lmtest) to perform the likelihood ratio test. Since this model required both input traits to be binary, we classified the continuous song characteristics as binary groups (‘low’ or ‘high’) based on a delineating threshold. Instead of choosing the threshold arbitrarily, we used each unique value of the song characteristic data as the threshold and repeated the analysis 100 times at each threshold. This method of using a spectrum of thresholds to delineate the ‘low’ and ‘high’ value categories resulted in transition rates that varied dramatically depending on where the threshold was placed. In essence, when the threshold was set as a value in the bottom third of the unique trait values present in the data, the analysis evaluated the rate of transition from low-to-moderate and larger values for a song trait and vice versa. When the threshold was set as a value in the upper range of the unique trait values present in the data, the analysis calculated the rates of transition from higher song trait values to medium-to-low values. To account for this nuance, we binned the threshold data into two to five bins, with three bins as the default: low (bottom third of unique trait values), medium (middle third) and high (top third). We then calculated the mean of each state transition rate in each bin. In addition to the song characteristics, we also analyzed song stability versus social mating system (i.e. social monogamy or polygyny) and rate of EPP. These analyses were performed for 1000 runs each.
 
-## Jackknife analysis
+### Jackknife analysis
 
 Some families of birds were well represented in our sample, while others were only represented by one or two species. To test whether any well-represented family significantly skewed our results, we removed each family that was represented by four or more species in the full dataset in turn, and repeated the phylANOVA, brownie.lite, and BayesTraits analyses. Jackknife analyses were only performed when significant results were obtained in the main analysis. Thus, all song traits except continuity were tested in the phylANOVA and brownie.lite jackknife analysis, while only syllable repertoire, song repertoire, and syllables per song were tested in the BayesTraits jackknife analysis. Each Brownie analysis was run on 1300 unique stochastic character maps, and each BayesTraits analysis was repeated 20 times. We determined the family of each species based on its classification in the 2017 version of the eBird Clements Integrated Checklist (Clements, 2007). The family Locustella was combined with Acrocephalidae, as Acrocephalidae was paraphyletic when Locustella was considered to be a separate family. The Mimidae family alone had a large effect on the syllables per song metric, so we performed another jackknife analysis with phylANOVA and brownie.lite by removing each mimid species in turn.
 
-## Correction for multiple testing
+### Correction for multiple testing
 
 We used a Holm-Bonferroni correction to control for testing multiple hypotheses with the same data (Holm, 1979). This correction is appropriate for data wherein the outcome of one test is likely to be related to the outcome of another test, as would be the case for song characteristics.

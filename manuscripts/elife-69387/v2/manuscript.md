@@ -41,9 +41,29 @@ Here, we utilize single-molecule tracking (SMT) to directly observe and characte
 
 ## Results
 
-## Chromatin remodelers exist in chromatin bound and free populations
+### Chromatin remodelers exist in chromatin bound and free populations
 
 We tagged the catalytic subunits of six major chromatin remodeling complexes, RSC, SWI/SNF, CHD1, ISW1 (ISW1a, and ISW1b), ISW2, and INO80 at the C-terminus with the self-labeling HaloTag by engineering the endogenous loci and expressed the fusion proteins as the sole source under natural promoter control. The fusion proteins were localized in the nucleus and did not display detectable cleavage of the tag by SDS-PAGE (Figure 1—figure supplement 1A,B). Furthermore, no phenotypes were observed for all strains containing tagged constructs (Figure 1—figure supplement 1C). We then investigated their endogenous, real-time dynamics as representative subunits of chromatin remodeling complexes in asynchronous, log-phase cells (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental scheme. (B) Fast-tracking imaging regime uses short exposures (10 ms) at high laser power to distinguish slow (chromatin-bound) and fast (chromatin-free) diffusing populations. (C) Slow-tracking regime directly observes the dwell times of chromatin-bound molecules using 250 ms exposures at low laser power. (D–G) (Top) Raw displacement histograms over the first 5 time frames (Δt: 10, 20, 30, 40, 50 ms). A two-state kinetic model was used for fitting the CDF [black lines] in Spot-On. (Bottom) Spot-On kinetic modeling results based on displacement distribution histograms for Sth1-Halo (D), Snf2-Halo (E), Ino80-Halo (F), and Isw2-Halo (G). Solid colored bar with indicated value represents % chromatin-bound molecules; open bar represents % chromatin-free. Error bars are standard deviations from 2 [or 3 for ISW2] biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SDS-PAGE gel scanned for JF646 dye fluorescence (top) and imaged after Coomassie staining (bottom). Cell lysates are prepared by NaOH protein extraction method (Amberg et al., 2006) after treatment with JF646 at a saturating dye concentration (20 nM) for 2 hr at 30°C. (B) JF646 dye fluorescence in the soluble supernatant (as shown in A) and insoluble pellet for Sth1-Halo strain. Substantial Sth1-Halo protein is retained the insoluble pellet. (C) Overlay of Phase Contrast image and initial nuclear fluorescence captured by JF552 dye excitation of yeast stained with JF552. (D) Fivefold dilutions of HaloTag fusion and wildtype strains are plated on YPAD plates at the indicated temperatures for 2–3 days. (E) Relationship between Dfree values determined by Spot-On analysis and the calculated molecular weights of chromatin remodeling complexes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Kinetic parameters (Fbound, Dbound, Dfree) determined by Spot-On analysis. Errors represent standard deviation between 2 [or three for ISW2] biological replicates.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Spot-On analyses were performed on movies acquired either in the ‘first half’ or ‘second half’ of an imaging session to compare the Fbound values between the two groups. (B) Spot-On analyses were performed on the ‘first half’ [1–2500 frames] and ‘second half’ [2501–5000 frames] of each movie ‘substack’ to compare the Fbound values between the two groups. Circles represent individual biological replicates with red lines indicating before-after changes for each replicate. Errors represent standard deviation between biological replicates. Comparison between ‘first half’ and ‘second half’ groups for each remodeler by ordinary one-way ANOVA test (ns: not significant).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A–H) Normalized histograms of log10 diffusion coefficients of single-molecule trajectories fitted to two Gaussian distribution functions (solid gray line: sum of two Gaussians; dashed lines: individual Gaussian curves representing chromatin-bound and chromatin-free populations) for Sth1-Halo (A), Snf2-Halo (B), Ino80-Halo (C), and Isw2-Halo (D), Chd1-Halo (E), and Isw1-Halo (F), Ioc3-Halo (G), and Ioc4-Halo (H). The two components are not well-resolved.
 
 In order to quantify a broad range of kinetic behaviors displayed by remodelers, two imaging regimes were applied. ‘Fast-tracking’ acquires 10 ms frame-rate movies to directly measure a range of single-molecule diffusivities from ‘slow’ (chromatin-bound) to ‘fast’ (chromatin-free) and determine fractional representation (Figure 1B, Figure 1—video 1). However, high laser power and extensive photobleaching precludes measurement of chromatin residence times. ‘Slow-tracking’ with a longer 250 ms frame-rate and lower laser power motion-blurs fast diffusing molecules to selectively visualize the chromatin-bound state and report dwell times (Figure 1C). Combining the two imaging regimes provides a holistic and quantitative view of a range of diffusive behaviors and kinetic subpopulations.
 
@@ -59,37 +79,77 @@ CHD1 and ISW1 act primarily on nucleosomes located in the gene body (Kubik et al
 
 **Figure 2.:** (A–B) Spot-On analysis as described in Figure 1 for the catalytic subunits Chd1-Halo (A) and Isw1-Halo (B). (C–D) Spot-On analysis of the accessory subunits of ISW1a and ISW1b complexes: Ioc3-Halo (C) and Ioc4-Halo (D).
 
-## Chromatin remodelers frequently transition between bound and free states
+### Chromatin remodelers frequently transition between bound and free states
 
 Unlike the two well-separated Gaussian distributions for H2B histones and HaloTag protein (Figure 3A), the Log(D) histograms of all imaged chromatin remodelers display less distinct bound and free populations, with a noticeable fraction showing an intermediate range of diffusion coefficients (Figure 1—figure supplement 4). This population could either represent remodeler complexes transitioning between chromatin-bound and chromatin-free states, or chromatin-free molecules of intermediate diffusivity due to association with additional factors or confined inside a subnuclear compartment (Hansen et al., 2020; Izeddin et al., 2014; McSwiggen et al., 2018; Strom et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig3-v2.jpg)
+
+**Figure 3.:** (A) Halo-H2B (brown) and Halo-NLS (pink) molecules display well-separated peaks in their diffusion coefficient histograms. (B) An overview of displacement-based HMM classification (vbSPT) to identify transitioning trajectories. After classifying each displacement as either in bound or free state, each trajectory is sub-classified as ‘bound only’, ‘free only’, or ‘transitioning’. (C–I) Left: Overlay of raw histograms of log10 diffusion coefficients for ‘Bsound only’ (turquoise), ‘Free only’ (yellow), ‘Transitioning’ (purple), and total trajectories (thin black). Right: Quantification (%) of transitioning trajectories in the diffusion coefficient histogram, where errors represent standard deviation between two [or three for ISW2] biological replicates. (C) Transitioning trajectories for Halo-H2B (top) and Halo-NLS (bottom). (D–I) Transitioning trajectories for remodelers: Sth1-Halo (D), Snf2-Halo (E), Ino80-Halo (F), and Isw2-Halo (G), Chd1-Halo (H), and Isw1-Halo (I).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Pipeline for classification and sub-classification of trajectories using vbSPT. Individual displacement lengths were determined for ‘bound only’, ‘free only’, and ‘transitioning’-subclassified trajectories to validate the two states and state transitions. (B–C) Violin plot (B) and median value (C) of individual displacement lengths for the Bound and Free states in non-transitioning and transitioning trajectories. For violin plots, thick red and dotted gray lines represent the median and two quartiles, respectively. (D–E) Transitioning trajectories for Ioc3-Halo (D) and Ioc4-Halo (E). Left: Overlay of raw histograms of log10 diffusion coefficients for ‘Bound only’ (turquoise), ‘Free only’ (yellow), ‘Transitioning’ (purple), and total trajectories (thin black). Right: Quantification (%) of transitioning trajectories in the diffusion coefficient histogram. (F) For all classified transitioning trajectories, ‘FREE’ to ‘BOUND’ and ‘BOUND’ to ‘FREE’ transition frequencies are indicated. For D–F, errors represent standard deviation between two [or three for ISW2] biological replicates.
 
 To distinguish between these possibilities, we analyzed single-particle trajectories using vbSPT, a variational Bayesian Hidden Markov Model (HMM) algorithm, which models state kinetics and assigns diffusive states to each displacement (Persson et al., 2013). We classified every displacement as either State 1 (‘bound’) or State 2 (‘free’) (Figure 3—source data 1), and sub-classified all trajectories as bound, free, or transitioning (Figure 3B). The median bound and free displacement lengths between transitioning and non-transitioning trajectories are highly similar or identical for each remodeler, validating the vbSPT state assignments and essentially excluding a dominant intermediate diffusive state (Figure 3—figure supplement 1A–C). Notably, the log D histograms of transitioning populations show enrichment for intermediate D values.
 
 It is striking that the population of transitioning trajectories is more prominent for remodelers (from 20.9 ± 2.5% to 30.2 ± 1.5%) compared to free HaloTag (10.4 ± 0.7%) and H2B histone (7.1 ± 2.1%), (Figure 3C–I, Figure 3—figure supplement 1D–E). We observed comparable frequencies for remodeler dissociation (bound to free transition: 45.3 ± 1.3 to 50.24 ± 0.01%) and association (free to bound: 49.76 ± 0.01 to 54.7 ± 1.3%), indicating that there is little bias in the direction of state transitions (Figure 3—figure supplement 1F). Furthermore, the frequent detection of state transitions over short trajectory lifetimes suggests that the duration of each state is short-lived. We concluded that transient but frequent chromatin interactions are characteristic of the six remodeling complexes.
 
-## All remodelers have remarkably short in vivo residence times of 4–7 s
+### All remodelers have remarkably short in vivo residence times of 4–7 s
 
 The chromatin-bound remodeler population measured by fast tracking consists of both transiently and stably bound molecules. We acquired long-exposure movies [250 ms/frame] under slow tracking (Chen et al., 2014) to generate survival curves revealing the apparent dissociation of chromatin-bound molecules as a function of time (Figure 1C). Particle dissociation can be due to molecules truly disengaging from chromatin, or to fluorophore photobleaching and chromatin movements out of focus, which can corrected using the survival curve of H2B histone as a standard (Hansen et al., 2017). The remodeler survival plots fit well to a double exponential decay model (Figure 4—figure supplement 1A–F,H), from which the average lifetimes (τsb, τtb) and fractions (fsb, ftb) of stable-binding and transient-binding species were extracted (Figure 4). All τ values presented in the text and figures are corrected based on H2B decay kinetics.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig4-v2.jpg)
+
+**Figure 4.:** (A–F) Fitted double exponential decay curves from 1-CDF plots of observed dwell times from individual binding events (n) imaged by slow-tracking, for Sth1-Halo (A) Snf2-Halo (B), Ino80-Halo (C), and Isw2-Halo (D), Chd1-Halo (E), and Isw1-Halo (F). Solid colored and dashed black fitted curves for indicated remodelers and H2B, respectively. Pie charts show the percentage (fsb) and average residence time (τsb) of the stable binding population after photobleaching correction. Errors represent bootstrap resampling errors after resampling 100 times (sb: stable-binding; tb: transient-binding).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–F) 1- and 2-component exponential decay fits to survival plots of dwell times for Sth1-Halo (A), Snf2-Halo (B), Ino80-Halo (C), and Isw2-Halo (D), Chd1-Halo (E), and Isw1-Halo (F). (G) 1-CDF plot, pie chart as in Figure 4, and residence times of Ioc3-Halo (Left) and Ioc4-Halo (Right). (H) One- and two-component exponential decay fits to survival plots of dwell times for Ioc3-Halo (Left) and Ioc4-Halo (Right).
 
 The stable-binding subpopulations (fsb) of RSC (27 ± 2%) and SWI/SNF (24 ± 6%) display strikingly short lifetimes (RSC: 5.0 ± 0.7 s; SWI/SNF 4.4 ± 1.2 s) (Figure 4A,B), consistent with a previous measurement for the Rsc2 subunit of RSC (Mehta et al., 2018). Similarly, INO80 and ISW2 exhibit stable-binding fractions (fsb 20 ± 3% and 13 ± 3%, respectively) and similarly short residence times (τsb 3.7 ± 0.8 s and 4.9 ± 2.2 s, respectively) (Figure 4C,D). Hence, all NDR-acting remodelers bind stably for less than 5 s in live yeast, whereas transient-binding populations are more short-lived by almost an order of magnitude (Figure 4—source data 1).
 
 For gene body-acting remodelers, CHD1 and ISW1 complexes exhibit stable-binding fractions (fsb 15 ± 3% and 19 ± 2%, respectively) and short dwell times (τsb 7.2 ± 3.3 s and 5.6 ± 1.3 s, respectively) (Figure 4E,F). Interestingly, ISW1b shows 2.5-fold higher residence times compared to ISW1a (τsb 5.9 ± 2.5 s and 2.2 ± 1.0 s, respectively) with comparable stable-binding fractions (Figure 4—figure supplement 1G). These remodelers also exhibit very short transient-binding residence times (τtb< 0.65 s). Hence, the majority of chromatin binding events by remodelers is transient, and stable binding, on the order of several seconds, is notably short-lived.
 
-## ATPase activity is coupled to fast dissociation rates
+### ATPase activity is coupled to fast dissociation rates
 
 To examine whether the measured dissociation kinetics are intrinsic to chromatin remodeling complexes or functionally related to their ATP-dependent remodeling activities, we made strains harboring a point mutation in the ATPase domains of Isw2, Isw1, and Chd1; these mutations have previously been shown to abolish their ATPase activities (Isw2K215R, Isw1K227R, Chd1K407R, and Chd1D513N) (Figure 5A; Fitzgerald et al., 2004; Gelbart et al., 2001; Hauk et al., 2010; Tsukiyama et al., 1999). We then acquired slow-tracking movies to compare the dwell times of mutant to those of wild-type remodeling enzymes (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig5-v2.jpg)
+
+**Figure 5.:** (A) Bar diagram and cartoons for remodelers mutated in the ‘Walker A’ and ‘Walker B’ motifs, respectively. (B) Representative 3D plots of trajectories imaged by slow-tracking for wildtype (Chd1-Halo, black) and ATPase-dead mutant (Chd1K407R-Halo, red). Each plot shows all trajectories (≥ three frames) from single nucleus where lines represent apparent durations of chromatin-binding events. (C–F) 1-CDF plot, pie chart, and residence times of wild-type (top) and ATPase-dead mutants (bottom) for Isw2 (C), Isw1 (D), and Chd1 (E,F).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) SDS-PAGE analysis; gel scanned for JF646 dye fluorescence (top) and imaged after Coomassie staining (bottom). Cell lysates of ATPase mutants (Isw1K227R-Halo, Isw2K215R-Halo and Chd1D513N-Halo) and their wild-type strains were prepared after treatment with JF646 at a saturating dye concentration (20 nM) for 2 hr at 30°C. (B–E) 1-CDF plot in log-log scale for Isw2K215R (B), Isw1K227R (C), Chd1K407R (D), and Chd1D513N (E) compared to wildtype. Colored dashed lines represent 95% confidence interval.
+
 We found that the stable-binding average residence time increased by ~2-fold (from 4.9 ± 2.2 to 9.7 ± 3.1 s) for the Isw2K215R mutant (Figure 5C). Similarly, we observed increased residence time (from 5.6 ± 1.3 to 9.1 ± 3.6 s) for the Isw1K227R (Figure 5D). The two ATPase-dead Chd1 mutants both showed increased stable-binding residence times (Chd1K407R from 7.2 ± 3.3 to ~52 s; Chd1D513N from 7.2 ± 3.3 to 16.1 ± 7.3 s) (Figure 5E,F). Interestingly, the tail of the Chd1K407R survival curve approaches that of H2B, which indicates its longevity, but precludes precise determination of dwell time (Figure 5—figure supplement 1B). All four mutants (Figure 5—source data 1) exhibit little to no changes in the transient-binding residence times compared to wildtype. In all, our results indicate that after chromatin association, the mutant ATPases exhibit slower dissociation rate (the reciprocal of residence time), consistent with previous genome-wide ChIP and biochemical studies (Fitzgerald et al., 2004; Gelbart et al., 2001).
 
-## ATP binding enhances chromatin-bound mobility of remodelers
+### ATP binding enhances chromatin-bound mobility of remodelers
 
 Chromatin imaged by several distinct methods in living cells displays heterogeneous mobility, which is dependent on its compaction state, subnuclear localization, and ATP-dependent processes (Gasser, 2002; Gu et al., 2018; Marshall et al., 1997; Soutoglou and Misteli, 2007). Remodelers may undergo 1D translocation on DNA (Sirinakis et al., 2011), and alter either local chromatin movement (Basu et al., 2020; Neumann et al., 2012) or higher order chromatin structure (Lusser et al., 2005; Maier et al., 2008) in an ATP-dependent fashion. We assessed the diffusive behavior of the chromatin-bound fraction of remodelers relative to the average dynamics of incorporated Halo-H2B histone. H2B not only reflects the motions of bulk chromatin but also provides an internal reference standard for nuclear movements and instrumental drift. From each trajectory classified as bound by vbSPT, the apparent D value and the Rc [radius of confinement] were calculated to characterize its diffusivity and the confined domain encompassing the observed trajectory, respectively (Lerner et al., 2020). Importantly, chromatin-bound remodelers exhibit ~2-fold higher mobility than H2B histone, as revealed by the average MSD plot and the distribution of individual D values of each trajectory under fast-tracking (Figure 6A,B). The mean Rc values are also substantially higher for remodelers compared to the global mean measured for H2B (Figure 6—figure supplement 1A). This is further supported by the higher apparent D values to varying degrees [two- to fourfold] of stably-bound remodelers measured by slow-tracking (Figure 6C). Such greater mobility of chromatin-bound remodelers may be due to the combined effects of remodeler diffusion on chromatin and movement of the chromatin fiber caused by remodeling activity, or alternatively, may reflect the intrinsic dynamics of genomic loci being targeted.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Average MSD plot (A) and violin plot (B), of individual D values for ‘bound only’ trajectories imaged by fast-tracking, shown for six remodelers and H2B histone. (C) Violin plot showing distribution of individual D values imaged by slow-tracking for six remodelers and H2B histone. For (A–C) each wildtype remodeler is compared to H2B by the ordinary one-way ANOVA test (****p<0.0001, ***p<0.001, **p<0.01, *p<0.05). (D–H) MSD plot (D–F) and violin plot (G,H) of individual D values for ‘trajectories imaged by slow-tracking for wildtype, ATPase-dead mutant, and H2B. For violin plots, thick red and dotted gray lines represent the median and two quartiles, respectively. For D–H, mutants are compared to wildtype by the unpaired t test (****p<0.0001, ***p<0.001, ns: not significant). (I) Representative trajectories imaged by slow-tracking for H2B and remodelers. H2B displays low mobility, whereas remodelers display higher chromatin-associated diffusivity that is enhanced by ATP utilization.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Radius of confinement values of bound trajectories in 10 ms exposure movies for histone H2B and chromatin remodelers. Violin plot showing distribution of Rc values, and comparison between histone H2B and each of wildtype remodelers by ordinary one-way ANOVA test. (B) Violin plot of individual D values by slow-tracking for Isw1-Halo after 30 min pre-treatment with 3 or 5 µg/mL thiolutin, and comparison between wildtype and thiolutin-treated samples by unpaired t test (ns: not significant). Thick red and dotted gray lines represent the median and two quartiles, respectively.
+
 To distinguish between these two alternatives, we measured the chromatin-associated mobility of the four aforementioned ATPase-dead mutants. Three mutants Isw2K215R, Isw1K227R, Chd1K407R harboring substitutions in the catalytic ATPase Walker A motif responsible for ATP binding display strikingly lower diffusivity as revealed by the average MSD plot of stably bound molecules, which approaches or substantially overlaps the global H2B curve (Figure 6D–F). This is supported by the violin plots of individual D values for stably bound trajectories (Figure 6G). Surprisingly, Chd1D513N bearing a substitution in the Walker B motif of Chd1 shows no substantial changes in the average MSD curve and apparent D values for stably bound trajectories compared to wildtype as measured by slow-tracking (Figure 6F,H). To rule out Chd1-specific effects, we also made a strain harboring the corresponding D-to-N substitution in ISW2 (Isw2D312N), and found no substantial changes in the average MSD curve and apparent D values compared to wildtype (Figure 6D,H). As expected for a mutation in the catalytic ATPase, the Isw2D312N mutant exhibits an approximately two-fold increase in its residence time compared to wildtype (Figure 5—figure supplement 1C). Because the Walker B motif is important for ATP hydrolysis (via coordinating Mg2+ ion and a water molecule), but not for ATP binding (Singleton et al., 2007; Walker et al., 1982; Figure 5A), this result suggests that the ATP-bound state may be adequate to induce enhanced diffusion on chromatin as part of the mechanism of target search by remodeling enzymes.
 
-## Promoter-enriched remodelers have robust chromatin occupancies
+### Promoter-enriched remodelers have robust chromatin occupancies
 
 Chromatin remodelers are key regulators of the +1 nucleosome position genome-wide, whose accurate location is crucial for the PIC (pre-initiation complex) formation and TSS fidelity (Lai and Pugh, 2017; Zhang et al., 2011). RSC and SWI/SNF mobilize the +1 nucleosome away from the NDR, opposed by INO80 and ISW2 activities, which slide the +1 nucleosome towards the NDR. As a quantitative indicator of nucleosome engagement, we determined the occupancies of the four remodelers, that is the percent average occupancy at a chromatin target by each remodeler over a given time period. To calculate temporal occupancy, we utilized the measured overall chromatin-binding fraction [Fsb] and the temporal parameters for stable [τsb, fsb] and transient [τtb, ftb] chromatin-binding (Figure 7A). Here, we assume that stable binding, which is almost an order of magnitude longer than transient binding, represents binding at ‘specific’ target sites within promoter regions including −1, +one [+1] nucleosomes and the intervening NDR, while transient binding represents non-specific chromatin interactions (Ball et al., 2016).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig7-v2.jpg)
+
+**Figure 7.:** (A) Key parameters measured in this study and acquired from the literature (Ho et al., 2018; Kubik et al., 2019) are used to calculate occupancy levels for gene promoter-acting remodelers. (B) Time trace simulations of temporal occupancy for individual remodelers at a target promoter region based on average τsb and sampling interval. Top and bottom bars represent occupied (on) and vacant (off) states, respectively, and vertical lines depict transitions between the two states. (C) Time trace simulations of occupancy at a RSC- and INO80-bound promoter region based on average τsb and sampling interval. Individual time trace simulations are shown above, and the cumulative simulated occupancy plot (black) shows either one or both remodelers bound in the time course of 500 s.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69387/elife-69387-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–B) Time trace simulations of occupancy as in Figure 6, at a promoter region bound by RSC, INO80, and ISW2 remodelers (A) or by RSC, SWI/SNF, INO80, and ISW2 remodelers (B). Individual time trace simulations are shown above, and the cumulative simulated occupancy time trace (black) shows any one or multiple remodelers bound in the time course of 500 s. (C–D) Fast-tracking and slow-tracking results for CHD1 DNA-binding domain mutant (Chd1R1016A/K1020A/R1255A-Halo). (wildtype: dashed gray lines; DBD mutant: solid green lines). (C) Normalized histogram log10 diffusion coefficients (Left) and Spot-On kinetic modeling results (Right). (D) 1-CDF plot, pie chart, and residence times.
 
 The fraction of stable-binding depends on both the number of molecules per nucleus (Nmolecules) and number of the target sites in the genome (Ntargets) (Chen et al., 2014). We rely on published values for Nmolecules compiled from a meta-analysis of 21 proteomic studies for the best available quantitative estimate of remodeler abundance in S. cerevisiae (Ho et al., 2018), with the assumption that our sole source HaloTag fusions under natural promoter control are similar in abundance to the untagged proteins. As regards the number of chromatin targets (Ntargets), many studies have investigated the genome-wide specificities of chromatin remodelers using multiple approaches including ChIP-Seq (Cutler et al., 2018; Floer et al., 2010; Shimada et al., 2008; Spain et al., 2014), MNase-ChIP (Yen et al., 2012), ChIP-exo (Rossi et al., 2021), Native-ChIP-Seq (Ramachandran et al., 2015; Zentner et al., 2013), CUT and RUN (Brahma and Henikoff, 2019), and ChEC-seq (Kubik et al., 2019). For this paper, we utilized the Ntargets values reported by Kubik et al., who investigated the binding sites for four yeast remodelers of interest in this study, and explicitly quantified the number of mRNA gene promoters enriched for each remodeler. Assuming that the +1 or −1 nucleosomes and the NDR together represent the main interaction substrates at promoter regions, this value of Ntargets can be considered as a lower bound estimate. Accordingly, RSC binding is the most widespread (Ntargets = 3702), SWI/SNF binds only a small subset (Ntargets = 466), and INO80 (Ntargets = 1646) and ISW2 (Ntargets = 1802) each bind to approximately a third of all yeast promoters (Kubik et al., 2019). Because INO80 and ISW2 are also targeted to sites of DNA replication, as well as tDNA and ribosomal DNA loci (Cutler et al., 2018; Gelbart, 2005; Shimada et al., 2008), the total Ntargets for each remodeler is likely to be larger than the values we utilized.
 
@@ -107,7 +167,7 @@ Under our imaging conditions, the chromatin-bound populations of the six remodel
 
 Yeast promoter regions can be classified into different groups enriched either for no remodeler or a combination of RSC, SWI/SNF, INO80, and ISW2, with about half of promoters genome-wide harboring at least two distinct remodelers that harbor nucleosome pushing and pulling activities relative to the NDR (Kubik et al., 2019). At promoter regions where opposing remodelers bind, we expect a consecutive ‘tug-of-war’ between the pushing and pulling activities, in which successive engagements would ultimately result in fine-tuning the steady-state nucleosome position, with the final outcome dependent on remodeler occupancy and nucleosome remodeling activity. Based on occupancy estimates, two remodelers may be found to simultaneously engage promoter chromatin (Figure 7C, Figure 7—figure supplement 1A,B), but steric considerations likely preclude two remodelers binding to the same nucleosome or the same face of a nucleosome. Alternatively, at promoter regions where none or only one remodeler binds, other mechanisms are likely to have more substantial roles in nucleosome positioning. These include the sequence-dependent bendability of promoter DNA as well as the binding of general regulatory factors (GRFs), such as Reb1, Abf1, and Rap1, acting as barriers to nucleosome mobility (Struhl and Segal, 2013).
 
-## A temporal model for nucleosome remodeling at NDRs
+### A temporal model for nucleosome remodeling at NDRs
 
 By integrating our live-cell SMT measurements with available genome-wide localization and protein expression data, we estimate temporal occupancies ranging from 11 ± 7.2 to 94 ± 41% for RSC, SWI/SNF, INO80, and ISW2 at target promoter regions including the NDR and flanking nucleosomes. Our findings of highly dynamic and frequent remodeler-nucleosome interactions are consistent with recent genomics studies showing substantial changes in nucleosome positions upon rapid, conditional inactivation of remodelers in yeast and mammalian systems (Iurlaro et al., 2021; Klein-Brill et al., 2019; Kubik et al., 2019; Schick et al., 2021). Accordingly, we envision a nucleosome remodeling cycle at promoters in which remodeler combinations undergo frequent association, ATP-dependent mobilization and dissociation from chromatin to dynamically fine-tune −1 and +1 nucleosome positions (Figure 8).
 
@@ -125,49 +185,175 @@ Taken together, our SMT study elucidates the dynamic behaviors of this family of
 
 ## Materials and methods
 
-## Yeast strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>Full list of yeast strains is presented in Supplementary file 1.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBS-SK-Halo-NatMX (plasmid)</td>
+      <td>Ranjan et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUG72 (plasmid)</td>
+      <td>Euroscarf, Germany</td>
+      <td>pUG72 (P30117)-Euroscarf</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Full list of oligonucleotides is presented in Supplementary file 2.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JF552-HaloTag ligand</td>
+      <td>Zheng et al., 2019</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JF646-HaloTag ligand</td>
+      <td>Grimm et al., 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>#1.5 Micro Coverglass – 25 mm Diameter</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>72225–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (1.52 p)</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070 https://imagej.net/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Diatrack 3.05</td>
+      <td>Vallotton and Olivier, 2013</td>
+      <td>http://www.diatrack.org/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 8.4.2</td>
+      <td>GraphPad Software, Inc.</td>
+      <td>RRID:SCR_002798 http://www.graphpad.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sojourner package</td>
+      <td>Carl Wu lab</td>
+      <td>https://rdrr.io/github/sheng-liu/sojourner/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spot-On</td>
+      <td>Hansen et al., 2018</td>
+      <td>https://spoton.berkeley.edu/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>vbSPT</td>
+      <td>Persson et al., 2013</td>
+      <td>http://vbspt.sourceforge.net/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Radius of confinement calculation</td>
+      <td>Lerner et al., 2020</td>
+      <td>https://data.mendeley.com/datasets/wctzwpp9h2/2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom Matlab script</td>
+      <td>This paper, Mendeley Data</td>
+      <td>http://dx.doi.org/10.17632/ydwcx9yhpp.2</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains
 
 All Saccharomyces cerevisiae strains used in this study are isogenic derivatives of W303 strain carrying pdr5△ for efficient JF ligand labeling, and are listed in Supplementary file 1. HaloTag was fused to the C-terminus of the protein of interest using standard methods for yeast transformation, using pBS-SK-Halo-NatMX plasmid (Ranjan et al., 2020). Point mutations were introduced by either the traditional ‘pop-in pop-out’ (Rothstein, 1991) or the ‘50:50’ method (Horecka and Davis, 2014), using pUG72 plasmid (P30117, Euroscarf, Germany), and list of primers are provided in Supplementary file 2.
 
-## Yeast growth assays
+### Yeast growth assays
 
 The cell growth of strains carrying HaloTag fusion constructs were compared to their derived parental genotype. The strains grown to saturation in YPAD (Yeast Extract-Peptone-Dextrose + 40 mg/L Ade-SO4) were serially diluted (5-fold dilutions) on YPAD plates. Plates were imaged after 48 or 72 hr growing at three different temperatures (25°C, 30°C, and 38°C).
 
-## Cell lysate preparation to check integrity of HaloTag fusion proteins
+### Cell lysate preparation to check integrity of HaloTag fusion proteins
 
 Yeast cultures growing at early log phase (OD600 0.2) were treated with JF646 dye at a saturating dye concentration of 20 nM JF646 (Grimm et al., 2015) was used instead of JF552 for better dye labeling (Ranjan et al., 2020). Yeast protein extract was prepared using the NaOH method (Amberg et al., 2006). Total protein concentration was measured using the Bradford Assay, and 45 ng of total protein was loaded per well in SDS-PAGE. Gels were imaged on Tecan five scanner, with Cy5 excitation. After imaging, gels were stained with Coomassie dye for loading control.
 
-## Yeast culture preparation for single molecule imaging
+### Yeast culture preparation for single molecule imaging
 
 Yeast cultures growing in Synthetic Complete Medium (0.79 g/L Complete Supplement Mixture [CSM] Powder, Sunrise Science Products, Cat. No. 1001–010; 6.7 g/L Yeast nitrogen base without amino acids, BD Difco, Cat. No. DF0919-15-3; 2% (w/v) dextrose; 40 mg/L Adenine hemisulfate) were treated with dyes at early log phase (D600 0.2–0.3) for 2 hr. For fast-tracking, saturating dye concentrations ranging from 10 to 20 nM JF552 (Zheng et al., 2019) were used depending on factor abundance. For slow-tracking, we used 5–7.5 nM JF552. In some instances, we also added JF646 (~5 nM) to visualize nuclear fluorescence without JF552 excitation and to partially reduce JF552 labelling. Cells were harvested around mid-log phase by brief centrifugation (3500 rpm for 2 min), washed at least three times, and finally resuspended in CSM medium. Resuspended cells were loaded on Concanavalin A-treated coverslip (#1.5 Micro Coverglass −25 mm Diameter, Electron Microscopy Sciences, Cat. No. 72225–01) assembled on imaging cell chamber (Invitrogen, Cat. No. A7816), where coverslips were flamed prior to the treatment in order to reduce single-to-noise background. After immobilization and additional washing, ~1.5 mL of fresh medium was added to the chamber in which the cells are bathed continually for the duration of the imaging session (~2 hr). Comparison of results from the first and second halves of an imaging session shows no substantial differences (Figure 1—figure supplement 3A).
 
-## Live cell, single molecule imaging using wide-field microscopy
+### Live cell, single molecule imaging using wide-field microscopy
 
-## Microscope setup
+#### Microscope setup
 
 All yeast imagings were performed using a custom-built Zeiss widefield microscope (Axio Observer Z1) with a 150X glycerin immersion objective (NA 1.35) as previously described (Ranjan et al., 2020). Data was acquired with EM-CCD (Hamamatsu C9100-13) camera with FF01-750/SP and NF03-405/488/561/635E quad-notch filters for a final x-y pixel size of 107 nm. All imagings were performed with a single excitation channel. For JF552 dye excitation, 555 nm laser (Crystalaser) at (TTL pulsed) with 561 beam-splitter and 612/69 nm filter was used. For JF646 dye excitation, a 639 nm laser with 648 beamsplitter and 676/29 nm filter was used. Microscope manipulations (i.e. Z-focus, X/Y translation, filter cube switch) was performed by Zen software (Zeiss, Germany) and camera and data acquisition was controlled by HCImage software (Hamamatsu Photonics, Japan).
 
-## Data acquisition
+### Data acquisition
 
 After yeast immobilization, the asynchronous cells representing all phases of the cell cycle were imaged for around 2 hr at room temperature.
 
-## Fast tracking
+#### Fast tracking
 
 Movies with 10 ms exposure/frame were recorded with continuous 555 nm laser irradiation at ~1 kW/cm2. A field of view of 128 x 128 pixels was used to capture 4–6 yeast nuclei. Single-molecule imaging was performed using dSTORM (direct stochastic optical reconstruction microscopy) (Heilemann et al., 2008; Rust et al., 2006). Each movie begins with global nuclear fluorescence on laser excitation of essentially all JF552-labelled molecules before photoconversion to a dark, non-fluorescent state. The duration of the initial excitation pulse which pushes fluorescent JF552 to the dark state is ~10 s, depending on the density of labeled Halo-proteins, which is a function of protein expression and dye labeling concentration adjusted for the specific protein. Once in the dark state, JF552 spontaneously and stochastically converts back to the fluorescent state (Grimm et al., 2015; Zheng et al., 2019).This conversion is sufficiently slow such that mostly one JF552 molecule per yeast nucleus is fluorescent at any given time during data acquisition, allowing for an unambiguous spatio-temporal record of single JF552-labeled proteins. To ensure that we can harvest a ‘substack’ of at least 5000 frames (10 ms/frame) (See Single molecule image analysis), we routinely record movies of ~1.5 min. About 40 movies were acquired per imaging session, and two [or three for ISW2] biological replicates were obtained for each sample.
 
 Under fast-tracking conditions, cells displayed no detectable cellular damage and underwent normal bud growth and cell division when examined every 30 min up to 3 hr (Nguyen et al., 2021). Furthermore, we did not observe any substantial difference between the first and second half of each movie (Figure 1—figure supplement 3B).
 
-## Slow tracking
+#### Slow tracking
 
 Movies with 250 ms exposure/frame were acquired using continuous 555 nm laser irradiation at 0.05 kW/cm2 (5% of fast-tracking power) for sufficient signal-to-noise while minimizing photobleaching. A focal plane of 256 x 256 pixels was used to capture 15–20 yeast nuclei. In the beginning of each movie, the 639 nm excitation channel was briefly used to fine-tune the focus, and then immediately switched to 555 nm excitation to start data acquisition. Upon 555 nm laser illumination, we record ~5 min movies starting with fluorescent JF552 pushed to the dark state for > 30 s, followed by single-molecule imaging of at least 750 frames at 250 ms/frame. Fifteen to twenty movies were taken per imaging session, with two or three biological replicates for wildtype and two to four biological replicates for mutant strains.
 
-## Single molecule image analysis
+### Single molecule image analysis
 
 For each raw movie, we first manually selected a ‘substack’ where ~one single molecule per nucleus per frame was observed in order to minimize tracking errors resulting from connecting different molecules as one trajectory. Substack lengths of 5000 frames (50 s) and 750 frames (3.125 min) were selected for fast and slow tracking movies, respectively, using ImageJ (1.52 p) custom-written script. The substacks were then applied to the Diatrack software (ver. 3.05, http://www.diatrack.org/index.html) to localize the centroid of PSF (point spread function) by Gaussian fitting over the fluorescence intensity to sub-pixel resolution (Thompson et al., 2002; Yildiz et al., 2003) and track single particles (Vallotton and Olivier, 2013). For localization, the following parameters were applied: Remove dim: 75–85, Remove blurred: 0.1, Activate High Precision mode: ON (HWHM=one pixel). For tracking, we used max jump of ‘6’ (642 nm) and ‘3’ pixels (321 nm) for fast and slow tracking datasets, respectively. Furthermore, we masked the nuclear regions based on the maximum intensity Z-projection of the selected substacks to filter out trajectories found outside of the nucleus in the subsequent analysis steps. The Diatrack output file containing information about the x, y coordinate and frame number were then applied for further downstream analysis.
 
-## Fast tracking
+#### Fast tracking
 
-MSD-based diffusion coefficient histograms: All ‘masked’ trajectories with at least five displacements were analyzed, using the lab custom-written R package, Sojourner (https://rdrr.io/github/sheng-liu/sojourner/; Liu et al., 2020). Briefly, for each trajectory, MSD plot for time lags from 2 to 5 △t (△t = 10 ms) were generated, then fit to linear regression (filtering out R2 < 0.8 plots). From the slope, the diffusion coefficient was calculated as (where d is the number of dimensions, or 2):D=12d×MSD(dt)dt
+MSD-based diffusion coefficient histograms: All ‘masked’ trajectories with at least five displacements were analyzed, using the lab custom-written R package, Sojourner (https://rdrr.io/github/sheng-liu/sojourner/; Liu et al., 2020). Briefly, for each trajectory, MSD plot for time lags from 2 to 5 △t (△t = 10 ms) were generated, then fit to linear regression (filtering out R2 < 0.8 plots). From the slope, the diffusion coefficient was calculated as (where d is the number of dimensions, or 2):
+
+$$
+D=\frac{1}{2d}\times\frac{MSD(dt)}{dt}
+$$
 
 Spot-On (Hansen et al., 2018): All ‘masked’ trajectories with at least two displacements were analyzed. The following parameters were applied for Jump Length Distribution: Bin width (µm): 0.01, Number of time-points: 6, Jumps to consider: 4, Use entire trajectories No, Max jump (µm): 2. Additionally, the following parameters were applied for 2-state Model Fitting: Dbound (µm2/s): 0.0005–0.1, Dfree (µm2/s): 0.15–25, Fbound: 0–1, Localization error (µm): Fit from data (0.01–0.1), dZ (µm): 0.6, Use Z correction, Model Fit: CDF, Iterations: 3.
 
@@ -175,46 +361,116 @@ vbSPT (variational Bayesian) HMM (Persson et al., 2013): All ‘masked’ trajec
 
 Then each trajectory was sub-classified as ‘Bound only’ if all displacements are classified as bound state; ‘Free only’ if all displacements are classified as free state; and ‘Transitioning’ if the trajectory contains both bound and free displacements with at least two consecutive displacements in each state. To validate that the transitioning trajectories consist of bound and free states, we calculated and compared the displacement length between ‘bound only’ and bound segments of transitioning trajectories, and between ‘free only’ and free segments of transitioning trajectories. Finally, the sub-classified trajectories were used to regenerate the diffusion coefficient histograms.
 
-Radius of confinement: All ‘masked’ trajectories with at least four displacements were analyzed, as described previously (Lerner et al., 2020). To determine the radius of confinement exhibited by chromatin-bound molecules, we analyzed trajectories classified as ‘bound only’ by vbSPT (as described above). Since many confined trajectories with low D do not pass the R2 ≥ 0.8 filter, we used all trajectories whose MSD plots passed the more lenient R2 ≥ 0.1 filtering. The MSD plot was then fit to the circular confined diffusion model:MSDcircle=R2∙1-e-4∙D∙tlagR2where R is the radius of confinement, D is the short-term diffusion coefficient. Specifically, the first 10 time points of the MSD plot were used to fit to the model, and trajectories with squared norm of residual (RSS) higher than 10−5 and Rc higher than 300 nm were discarded.
+Radius of confinement: All ‘masked’ trajectories with at least four displacements were analyzed, as described previously (Lerner et al., 2020). To determine the radius of confinement exhibited by chromatin-bound molecules, we analyzed trajectories classified as ‘bound only’ by vbSPT (as described above). Since many confined trajectories with low D do not pass the R2 ≥ 0.8 filter, we used all trajectories whose MSD plots passed the more lenient R2 ≥ 0.1 filtering. The MSD plot was then fit to the circular confined diffusion model:
 
-## Slow tracking
+$$
+MSD_{circle}=R^{2}∙1-e^{\frac{-4∙D∙t_{lag}}{R^{2}}}
+$$
 
-Residence times: Using Sojourner package, the apparent lifetimes (temporal length of trajectories) were determined for all ‘masked’ trajectories lasting at least three frames. To account for blinking or mislocalizations, we allowed for gaps up to two frames between two localizations and linked them as one trajectory if they were less than three pixels apart. 1-CDF curves were generated and fit to a double exponential decay model:P(t)=fsbe-ksbt+ftbe-ktbtwhere ksb and ktb correspond to dissociation rates for stable- and transient-binding events, respectively, and 1=fsb+ftb for the two components.
+where R is the radius of confinement, D is the short-term diffusion coefficient. Specifically, the first 10 time points of the MSD plot were used to fit to the model, and trajectories with squared norm of residual (RSS) higher than 10−5 and Rc higher than 300 nm were discarded.
 
-The apparent ksb and ktb values are affected by technical and imaging limitations such as photobleaching and chromatin movements. To correct for this bias, we used apparent dissociation rates of H2B imaged under same conditions as described previously (Hansen et al., 2017). The corrected residence times for stable- (τsb) and transient binding (τtb) were calculated as follows:τsb=1ksb-ksb,H2Bτtb=1ktb-ksb,H2B
+#### Slow tracking
 
-Apparent diffusion coefficient values for stably bound trajectories: All ‘masked’ trajectories lasting at least five frames (not allowing for gaps) were analyzed, using Sojourner package. For each trajectory, MSD plot for time lags from 2 to 5 △t (△t = 10 ms) were generated, then fit to linear regression (filtering out R2 < 0.8 plots). From the slope, the diffusion coefficient was calculated as (where d is the number of dimensions, or 2):D=12d×MSD(dt)dt
+Residence times: Using Sojourner package, the apparent lifetimes (temporal length of trajectories) were determined for all ‘masked’ trajectories lasting at least three frames. To account for blinking or mislocalizations, we allowed for gaps up to two frames between two localizations and linked them as one trajectory if they were less than three pixels apart. 1-CDF curves were generated and fit to a double exponential decay model:
 
-## Occupancy calculation
+$$
+P(t)=f_{sb}e^{-k_{sb}t}+f_{tb}e^{-k_{tb}t}
+$$
+
+where ksb and ktb correspond to dissociation rates for stable- and transient-binding events, respectively, and $1=f_{sb}+f_{tb}$ for the two components.
+
+The apparent ksb and ktb values are affected by technical and imaging limitations such as photobleaching and chromatin movements. To correct for this bias, we used apparent dissociation rates of H2B imaged under same conditions as described previously (Hansen et al., 2017). The corrected residence times for stable- (τsb) and transient binding (τtb) were calculated as follows:
+
+$$
+\tau_{sb}=\frac{1}{k_{sb}-k_{sb,H2B}}
+$$
+
+
+
+$$
+\tau_{tb}=\frac{1}{k_{tb}-k_{sb,H2B}}
+$$
+
+Apparent diffusion coefficient values for stably bound trajectories: All ‘masked’ trajectories lasting at least five frames (not allowing for gaps) were analyzed, using Sojourner package. For each trajectory, MSD plot for time lags from 2 to 5 △t (△t = 10 ms) were generated, then fit to linear regression (filtering out R2 < 0.8 plots). From the slope, the diffusion coefficient was calculated as (where d is the number of dimensions, or 2):
+
+$$
+D=\frac{1}{2d}\times\frac{MSD(dt)}{dt}
+$$
+
+### Occupancy calculation
 
 To calculate temporal occupancy, we integrated approaches from previous studies (Chen et al., 2014; Loffreda et al., 2017; Tatavosian et al., 2018).
 
-Search time (τsearch) is the average time it takes for a molecule to go from one specific site to its next specific site. The two specific binding events (lasting for τsb) are interspersed by a number of trials (Ntrials) binding to non-specific sites (lasting for τtb). τfree is the average free time between two binding events. Assuming equal probability of binding to all specific and non-specific sites, the search time is calculated as follows:τsearch=Ntrials×τtb+(Ntrials+1)×τfree
+Search time (τsearch) is the average time it takes for a molecule to go from one specific site to its next specific site. The two specific binding events (lasting for τsb) are interspersed by a number of trials (Ntrials) binding to non-specific sites (lasting for τtb). τfree is the average free time between two binding events. Assuming equal probability of binding to all specific and non-specific sites, the search time is calculated as follows:
 
-Ntrials depends on the ratio of number of non-specific (Nns) to specific sites (Ns), or rs:Ntrials=Ns+NnsNs=1+rs
+$$
+\tau_{search}=N_{trials}\times\tau_{tb}+(N_{trials}+1)\times\tau_{free}
+$$
 
-Here, rs can be determined based on two assumed scenarios for bound molecules observed during slow tracking (as described in Nguyen et al., 2021). First, fsb determined by slow tracking depends on the time a molecule spends bound to specific sites compared to nonspecific sites:fsb=Ns×τsbNs×τsb+Nns×τtb=τsbτsb+rs,1×τtb
+Ntrials depends on the ratio of number of non-specific (Nns) to specific sites (Ns), or rs:
 
-Thus rs is equal to:rs,1=τsbτtb×(1fsb-1)
+$$
+N_{trials}=\frac{N_{s}+N_{ns}}{N_{s}}=1+r_{s}
+$$
 
-In the second scenario, fsb depends on the probability that a free molecule binds to a specific site over all sites:fsb=NsNs+Nns=11+rs,2
+Here, rs can be determined based on two assumed scenarios for bound molecules observed during slow tracking (as described in Nguyen et al., 2021). First, fsb determined by slow tracking depends on the time a molecule spends bound to specific sites compared to nonspecific sites:
 
-In this case rs is:rs,2=1fsb-1
+$$
+f_{sb}=\frac{N_{s}\times\tau_{sb}}{N_{s}\times\tau_{sb}+N_{ns}\times\tau_{tb}}=\frac{\tau_{sb}}{\tau_{sb}+r_{s,1}\times\tau_{tb}}
+$$
 
-We take the average value calculated from the 2 proposed scenarios to finally determine rs:rs=12(1fsb-1)(τsbτtb+1)
+Thus rs is equal to:
 
-In fast tracking, Fbound is percentage or fraction of the time a molecule spends bound to chromatin either specifically or non-specifically:Fbound=Ntrials×τtb+τsbNtrials×τtb+τsb+(Ntrials+1)×τfree
+$$
+r_{s,1}=\frac{\tau_{sb}}{\tau_{tb}}\times(\frac{1}{f_{sb}}-1)
+$$
 
-Thus τfree is (in terms of rs):τfree=1+rs×τtb+τsbFbound-1+rs×τtb-τsb2+rs
+In the second scenario, fsb depends on the probability that a free molecule binds to a specific site over all sites:
 
-Using the values derived for rs and τfree, we then calculated the search time as shown above.
+$$
+f_{sb}=\frac{N_{s}}{N_{s}+N_{ns}}=\frac{1}{1+r_{s,2}}
+$$
 
-Sampling interval (SI) is the time interval between two specific binding events at a given site as described previously (Chen et al., 2014):SamplingInterval(SI)=(τsearch+τsb)×NtargetsNmolecules
+In this case rs is:
+
+$$
+r_{s,2}=\frac{1}{f_{sb}}-1
+$$
+
+We take the average value calculated from the 2 proposed scenarios to finally determine $r_{s}$:
+
+$$
+r_{s}=\frac{1}{2}(\frac{1}{f_{sb}}-1)(\frac{\tau_{sb}}{\tau_{tb}}+1)
+$$
+
+In fast tracking, Fbound is percentage or fraction of the time a molecule spends bound to chromatin either specifically or non-specifically:
+
+$$
+F_{bound}=\frac{N_{trials}\times\tau_{tb}+\tau_{sb}}{N_{trials}\times\tau_{tb}+\tau_{sb}+(N_{trials}+1)\times\tau_{free}}
+$$
+
+Thus $\tau_{free}$ is (in terms of $r_{s}$):
+
+$$
+\tau_{free}=\frac{\frac{1+r_{s}\times\tau_{tb}+\tau_{sb}}{F_{bound}}-1+r_{s}\times\tau_{tb}-\tau_{sb}}{2+r_{s}}
+$$
+
+Using the values derived for $r_{s}$ and $\tau_{free}$, we then calculated the search time as shown above.
+
+Sampling interval (SI) is the time interval between two specific binding events at a given site as described previously (Chen et al., 2014):
+
+$$
+SamplingInterval(SI)=\frac{(\tau_{search}+\tau_{sb})\timesN_{targets}}{N_{molecules}}
+$$
 
 We used Ntargets values presented by Kubik et al., 2019. Nmolecules was determined as the median and standard error values (Ho et al., 2018), and their standard error was used for error propagation.
 
-Finally, occupancy is the temporal probability that a given specific site is occupied by the protein of interest:Occupancy=τsbSI
+Finally, occupancy is the temporal probability that a given specific site is occupied by the protein of interest:
 
-## Target occupancy simulation
+$$
+Occupancy=\frac{\tau_{sb}}{SI}
+$$
+
+### Target occupancy simulation
 
 Remodeler occupancy at a target promoter region was simulated as described previously (Nguyen et al., 2021). Briefly, experimentally determined τsb and estimated sampling interval (SI) values were used to simulate sequential promoter-occupied and vacant states over the time trace (500 s). The duration for each occupied and vacant state was randomly chosen from exponential distributions of the average τsb and (SI- τsb) values, respectively. For promoter regions targeted by multiple remodelers, each remodeler was independently subject to the occupancy simulation, and the number of any single or multiple remodeler(s) co-occupying each timepoint was calculated throughout the time trace.

@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Department of Neurosciences, University of California, San Diego San Diego United States
-2. https://ror.org/05n3x4p02 Institute of Pharmacology, Center for Physiology and Pharmacology, Medical University of Vienna Vienna Austria
-3. https://ror.org/00znqwq11 Research Service VA San Diego Healthcare System San Diego United States
+1. Department of Neurosciences, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+2. Institute of Pharmacology, Center for Physiology and Pharmacology, Medical University of Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
+3. Research Service VA San Diego Healthcare System San Diego United States ([ROR:00znqwq11](https://ror.org/00znqwq11))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ In this study, we first sought to test whether several genes that are expressed 
 
 ## Results
 
-## PV, SST, MOR, and NTS are not selective interneuron markers in VTA
+### PV, SST, MOR, and NTS are not selective interneuron markers in VTA
 
 We selected four genes with well-validated Cre lines to test as putative genetic markers that might selectively label VTA interneurons: PV-Cre with Cre targeted to the parvalbumin gene, SST-Cre with Cre targeted to the somatostatin gene, NTS-Cre with Cre targeted to the neurotensin gene, or MOR-Cre with Cre targeted to the Oprm1 gene encoding the MOR. We injected adeno-associated virus (AAV) into the VTA for Cre-dependent expression of Channelrhodopsin-2 (ChR2) fused to mCherry that labels distal axons (Figure 1A). To test whether the labeled VTA neurons project distally we assessed expression in known VTA projection sites including NAc, VP, PFC, and LHb.
 
@@ -54,7 +54,7 @@ Neurotensin (NTS) is expressed in a subpopulation of VTA GABA neurons (Phillips 
 
 We also stained VTA sections for tyrosine hydroxylase (TH) to estimate the proportion of ChR2:mCherry neurons colocalizing with DA neurons. In all cases only a minority of mCherry-labeled neurons expressed TH, ranging from 2% for PV to 12% for NTS (Figure 1F). In total, our data suggest that these four markers label primarily non-DA neurons in VTA, but that none are selective for interneurons, and instead are inclusive of VTA projection neurons.
 
-## Anatomical evidence that VTA projection neurons make local synapses
+### Anatomical evidence that VTA projection neurons make local synapses
 
 Each of the markers tested are also expressed in neurons proximal to VTA and our injections led to variable spread to neighboring regions, including interpeduncular nucleus (IPN) and red nucleus. While these regions are not known to project to PFC, NAc, VP, or LHb, we nonetheless aimed to validate the above findings with a secondary approach involving a combination of retrograde labeling and intersectional genetics to target VTA projection neurons. We injected AAV-fDIO-mGFP-Synaptophysin:mRuby into VTA of each Cre line, plus retroAAV-DIO-Flp into a projection target receiving dense innervation. This approach allowed for Cre- plus Flp-dependent expression of both membrane-localized GFP and the synaptic vesicle marker Syn:Ruby (Lammel et al., 2015). The intersectionality of this approach allows for precise targeting of VTA projection neurons, and Syn:Ruby highlights putative release sites, either local to or distal from VTA.
 
@@ -66,21 +66,45 @@ Using this approach to label PV-Cre projectors to LHb (Figure 2A), or SST-Cre pr
 
 The same approach was used to label VTA projectors to VP in MOR-Cre or NTS-Cre mice (Figure 3A). VP-projecting GFP-positive cell bodies in MOR-Cre mice were contained within and throughout VTA (Figure 3B). We also observed axonal fibers densely filling VP, delineated by Substance P immunolabel (Figure 3F–H and Figure 3—figure supplement 1). Using high magnification, we observed Syn:Ruby puncta proximal to TH-positive VTA neurons, again suggestive of synapses made within VTA by labeled projection neurons (Figure 3C–E). Using the same approach to target VP-projecting neurons in NTS-Cre mice we found similar results, with GFP-positive soma in VTA and Syn:Ruby-positive puncta in both VTA (Figure 3I, J) and VP (Figure 3K, L), though signals were notably less dense. These results corroborate the findings in Figure 1 and suggest that multiple markers that had been suggested to label putative interneurons instead label VTA projection neurons that may make local synapses through axon collaterals.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/100085/elife-100085-fig3-v1.jpg)
+
+**Figure 3.:** (A) Dual adeno-associated virus (AAV) approach for Cre-dependent expression of Flp injected in ventral pallidum (VP) plus Flp-dependent expression of GFP and Syn:Ruby in VTA of MOR-Cre and NTS-Cre mice. (B) VP-projecting MOR-Cre neurons in VTA with (C–E) high magnification insets showing putative release sites proximal to TH+ DA neurons. (F) VTA axons in VP with (G, H) high magnification insets. (I) VP-projecting NTS-Cre neurons in VTA with (J) high magnification insets showing putative release sites. (K) VTA axons in VP with (L) high magnification insets. Scale bars: 100 or 10 µm for high magnification insets.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100085/elife-100085-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Sagittal image, genotypes, and schematics of dual adeno-associated virus (AAV) approach and approximate location and sectioning angle of the cut. ZsGreen (green) labels all cells that have expressed MOR-Cre, Chrimson:tdTomato (red) labels cells/fibers from MOR-Cre VTA neurons projecting to VP, DAPI (blue) labels nuclei.
+
 There is evidence indicating that PV, SST, MOR, and NTS neurons in VTA express GABA markers or release GABA (Nagaeva et al., 2020; Olson and Nestler, 2007; Phillips et al., 2022). However, some neurons positive for those markers may express VGLUT2 and release glutamate (Miranda-Barrientos et al., 2021). We therefore used VGAT-Cre and VGLUT2-Cre mice to selectively express GFP and Syn:Ruby, here targeting NAc-projecting VTA neurons. In VGAT-Cre mice (Figure 4A) we identified GFP-positive cell bodies that were restricted to VTA (Figure 4B) and GFP-positive fibers in NAc (Figure 4E, F). At higher magnification, we observed a pattern of GFP fibers and Syn:Ruby puncta surrounding TH-positive cell bodies (Figure 4C, D), suggesting that NAc-projectors make collaterals on to VTA DA neurons. We observed similar results when using VGLUT2-Cre mice, suggesting that NAc-projecting VTA glutamate neurons can also make local collaterals within VTA (Figure 4G–L). As expected VTA glutamate cell bodies were concentrated in medial VTA, where they are most dense (Conrad et al., 2024; Kawano et al., 2006; Yamaguchi et al., 2011).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/100085/elife-100085-fig4-v1.jpg)
 
 **Figure 4.:** (A) Dual adeno-associated virus (AAV) approach for Cre-dependent expression of Flp injected in nucleus accumbens (NAc) plus Flp-dependent expression of GFP and Syn:Ruby in VTA of VGAT-Cre mice. (B) NAc-projecting VGAT-Cre neurons in VTA with (C, D) high magnification insets showing putative release sites proximal to TH+ DA neurons. (E) VTA axons in NAc of VGAT-Cre mice, with (F) high magnification insets. (G) Dual AAV approach for Cre-dependent expression of Flp injected in NAc plus Flp-dependent expression of GFP and Syn:Ruby in VTA of VGLUT2-Cre mice. (H) NAc-projecting VGLUT2-Cre neurons in VTA with (I, J) high magnification insets showing putative release sites proximal to TH+ DA neurons. (K) VTA axons in NAc of VGLUT2-Cre mice with (L) high magnification insets. Scale bars: 100 or 10 µm for high magnification insets.
 
-## Physiological evidence that VTA projection neurons make local synapses
+### Physiological evidence that VTA projection neurons make local synapses
 
 Our anatomical results suggest that multiple types of VTA projection neurons collateralize locally within VTA. Next, to functionally assess whether VTA projection neurons make local synapses in VTA, we used a combination of optogenetics and electrophysiology. We selectively expressed ChR2 in NAc-projecting VTA neurons by injecting retroAAV-Cre into NAc and AAV-DIO-ChR2:mCherry into VTA of wild-type mice (Figure 5A). We then made acute brain slices to record from VTA neurons negative for ChR2:mcherry to test if they received synaptic inputs from NAc-projecting VTA neurons (Figure 5B). Using wild-type mice allowed us to express opsin in both GABA and glutamate projection neurons, and assess for optogenetic-evoked postsynaptic currents (oPSCs) that were either inhibitory (oIPSC) or excitatory (oEPSC) from the same cell.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100085/elife-100085-fig5-v1.jpg)
+
+**Figure 5.:** (A) Dual adeno-associated virus (AAV) approach to express ChR2:mCherry in NAc-projecting VTA neurons in wild-type mice. (B) Patch-clamp recordings from ChR2:mCherry-negative neurons of VTA to test for collateralizing synapses made by NAc-projectors. (C) Coronal images showing ChR2:mCherry expression in NAc and (D) VTA; scale bars: 100 µm. (E) ChR2:mCherry-negative VTA neuron responses to optogenetic stimulation of NAc-projectors. (F) Peak amplitude of connected cells that displayed an oEPSC and/or oIPSC (excluding long-latency), with example traces. (G) Percent reduction in oEPSC or oIPSC by DNQX or picrotoxin (PTX), respectively. (H) Peak amplitude of oIPSCs before and after bath application of PTX, or of oEPSCs before and after bath application of DNQX, with example traces. (I) Latency to optogenetic-evoked postsynaptic current (oPSC) onset (excluding long latency). (J) Peak oIPSC amplitude before and after bath application of tetrodotoxin (TTX) and recovery with 4-aminopyridine (4AP) (Friedman’s test Chi-square = 10.9, p = 0.0029) and (K) example traces. (L) Peak oEPSC amplitude before and after bath application of TTX and recovery with 4AP (Friedman’s test Chi-square = 11.6, p = 0.0013) and (M) example traces. (N) Scatter plot showing relationship between initial (pre-treatment) latency to oPSC onset and 4AP recovery. Green dots represent oEPSCs and red squares oIPSCs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100085/elife-100085-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Dual adeno-associated virus (AAV) approach to express ChR2:mCherry in nucleus accumbens (NAc)-projecting ventral tegmental area (VTA) neurons in wild-type mice. (B) Example opsin-mediated photocurrent from ChR2:mCherry-positive neuron of VTA. (C) Example images under DIC IR light and mCherry expression around patch-clamp pipettes. (D) Additional cases of histology.
 
 As expected, the medial shell of NAc showed dense mCherry-positive fibers (Figure 5C), and mCherry-positive cell bodies were restricted to VTA (Figure 5D). We patched ChR2:mCherry-negative VTA neurons (Figure 5—figure supplement 1), flashed 2 ms blue light pulses, and observed oPSCs in 59% of neurons; 44% displayed short-latency oIPSCs (mean 84 ± 17 pA), 6% had short-latency oEPSCs (mean –28 ± 6 pA), 41% had no response (responses less than 5 pA were considered unconnected), and 11% had oPSCs with long latency to onset (>5 ms) (Figure 5E, F). Note that unconnected and long-latency cells are not included in Figure 5F, I. The GABAA receptor antagonist picrotoxin (PTX) blocked oIPSCs while oEPSCs were blocked by the AMPA receptor antagonist DNQX (Figure 5G, H), confirming that these responses are mediated by evoked GABA or glutamate release, respectively.
 
 Most responses displayed onset latencies more than 2 ms and less than 5 ms, consistent with monosynaptic connectivity (3.2 ± 0.1 and 3.8 ± 0.2 ms for oIPSCs and oEPSCs, respectively) (Figure 5I). To confirm connections are monosynaptic we performed additional pharmacology. We found that the amplitude of oPSCs was diminished following the application of the voltage-gated sodium channel blocker tetrodotoxin (TTX, voltage-gated sodium channel are necessary for the propagation of action potentials), and that oPSCs recovered with bath application of the inhibitor of voltage-sensitive potassium channels 4-aminopyridine (4AP). When this strategy was applied to oIPSCs (Figure 5J), eight out of nine TTX-diminished currents were restored by the application of 4AP (Figure 5J, K). Similarly, four of seven oEPSCs were recovered by 4AP (Figure 5L, M). We plotted the latency of oPSC onset against the percent oPSC recovery mediated by 4AP and found that 3 of 4 neurons that failed to recover had a latency >5 ms, whereas only 1 of 13 neurons that had a latency <5 ms failed to recover (Figure 5N). Therefore, we used 5 ms as a ‘short-latency’ cutoff to consider an oPSC as monosynaptic. In total we recorded ten cells with oPSC latency >5 ms (identified as long latency in Figure 5E). Out of these 10 long-latency oPSCs, 8 were oEPSCs and 2 oIPSCs. This proportion (8:2) of neurons with oEPSCs versus oIPSCs was strikingly greater than that for short-latency responses (6:41), suggesting that in some cells/slices optogenetic stimulation of projection neurons recruited a more extensive intra-VTA excitatory network.
 
 We used a similar approach to assess whether VTA neurons projecting to VP or PFC also made local collaterals in VTA. We used the same combination of viruses but here injected retroAAV-Cre into VP of wild-type mice (Figure 6A), again recording from mCherry-negative VTA neurons (Figure 6B). As expected, we observed dense mCherry-positive fibers in VP and mCherry-positive cell bodies restricted to VTA (Figure 6C, D and Figure 6—figure supplement 1). We found that 52% of mCherry-negative neurons were connected (13 of 25), 32% displayed short-latency oIPSCs, 4% had short-latency oEPSCs, and 20% were connected but with long latency (>5 ms) (Figure 6E–G). We also patched from postsynaptic neurons in VP and found 89% displayed oPSCs, all with short latency, and as in VTA most currents were inhibitory (Figure 6H–K).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100085/elife-100085-fig6-v1.jpg)
+
+**Figure 6.:** (A) Dual adeno-associated virus (AAV) approach to express ChR2:mCherry in VP-projecting VTA neurons in wild-type mice. (B) Patch-clamp recordings from ChR2:mCherry-negative neurons of VTA to test for collateralizing synapses made by VP-projectors. (C) Coronal images showing ChR2:mCherry expression in VP and (D) VTA; scale bars: 100 µm. (E) ChR2:mCherry-negative VTA neuron responses to optogenetic stimulation of VP-projectors. (F) Peak amplitude and (G) onset latency of connected cells that displayed an oEPSC and/or oIPSC (excluding long latency), with example traces. (H) Recordings of optogenetic-evoked postsynaptic currents (oPSCs) from neurons in VP and (I) VP responses to optogenetic stimulation of VP-projecting VTA neurons from approach described in panel A. (J) Peak amplitude and (K) onset latency of connected VP neurons that displayed an oEPSC and/or oIPSC, with example traces. (L) Dual AAV approach to express ChR2:mCherry in PFC-projecting VTA neurons in wild-type mice. (M) Patch-clamp recordings from ChR2:mCherry-negative neurons of VTA to test for collateralizing synapses made by PFC-projectors. (N) Coronal images showing ChR2:mCherry expression in PFC and (O) VTA; scale bars: 100 µm. (P) ChR2:mCherry-negative VTA neuron responses to optogenetic stimulation of PFC-projectors. (Q) Peak amplitude and (R) onset latency of connected cells that displayed an oEPSC and/or oIPSC, with example trace.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100085/elife-100085-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Additional cases of histology with expression of ChR2:mCherry in ventral pallidum (VP)-projecting ventral tegmental area (VTA) neurons in wild-type mice. (B) Additional cases of histology with expression of ChR2:mCherry in prefrontal cortex (PFC)-projecting VTA neurons in wild-type mice.
 
 Next, we repeated the same approach but for PFC-projecting VTA neurons (Figure 6L, M). We observed mCherry-positive fibers in PFC (Figure 6N) arising from sparse cell bodies found within the bounds of VTA (Figure 6O and Figure 6—figure supplement 1). In VTA, we found that 36% of ChR2:mCherry-negative neurons were connected, all of which displayed short-latency oIPSCs (Figure 6P–R). Altogether our data indicate that VTA GABAergic projection neurons, and to a lesser extent glutamatergic projection neurons, make functional synapses within VTA.
 
@@ -114,30 +138,445 @@ In sum, we provide multiple lines of evidence that VTA GABA (and glutamate) neur
 
 ## Methods
 
-## Animals
+### Animals
 
 Mice were group-housed (up to 5 mice/cage), bred at the University of California, San Diego (UCSD), kept on a 12-hr light–dark cycle, and had access to food and water ad libitum. Initial breeders were acquired from The Jackson Laboratory (Table 1), except for the MOR-Cre (Bailly et al., 2020) obtained from the lab of Brigitte Kieffer (University of Strasbourg). All mice were bred with a C57Bl/6 background and used as a mix of heterozygotes and homozygotes. Male and female mice were used in all experiments. All experiments were performed in accordance with protocols approved by the UCSD Institutional Animal Care and Use Committee.
 
-## Stereotaxic surgery
+**Table 1.**
+ Mouse lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Abbreviation</th>
+      <th>Mouse line</th>
+      <th>Jackson Labs #</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slc32a1</td>
+      <td>VGAT-Cre</td>
+      <td>B6J.129S6(FVB)-Slc32a1tm2(cre)Lowl/MwarJ</td>
+      <td>028862</td>
+    </tr>
+    <tr>
+      <td>Slc17a6</td>
+      <td>VGLUT2-Cre</td>
+      <td>STOCK Slc17a6tm2(cre)Lowl/J</td>
+      <td>016963</td>
+    </tr>
+    <tr>
+      <td>Pvalb</td>
+      <td>PV-Cre</td>
+      <td>B6.129P2-Pvalbtm1(cre)Arbr/J</td>
+      <td>017320</td>
+    </tr>
+    <tr>
+      <td>Nts</td>
+      <td>NTS-Cre</td>
+      <td>B6;129-Ntstm1(cre)Mgmj/J</td>
+      <td>017525</td>
+    </tr>
+    <tr>
+      <td>Sst</td>
+      <td>SST-Cre</td>
+      <td>B6N.Cg-Ssttm2.1(cre)Zjh/J</td>
+      <td>018973</td>
+    </tr>
+    <tr>
+      <td>Gt(Rosa)26Sor</td>
+      <td>R26-ZsGreen</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm6(CAG-ZsGreen1)Hze/J</td>
+      <td>007906</td>
+    </tr>
+  </tbody>
+</table>
+
+### Stereotaxic surgery
 
 Mice >5 weeks (and up to 6 months old) were deeply anesthetized with Isoflurane (502017, Primal Critical Care) and placed on a stereotaxic frame (Kopf 1900) for microinjection into discrete brain areas (Table 2). After ensuring the skull is flat small holes were drilled (1911-C Kopf) and AAVs (Table 3) infused with Nanoject (3-000-207, Drummond) using glass injectors (3-000-203-G/X, Drummond) pulled on a horizontal pipette puller (P-1000 Sutter Instrument). After infusion the injector was left for 3–5 min then withdrawn. Analgesia was provided via injections with 5 mg/kg S.C. Carprofen (510510 Vet One). Electrophysiology was performed >3 weeks after surgery, histology >5 weeks.
 
-## Histology
+**Table 2.**
+ Stereotaxic coordinates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Injection site</th>
+      <th>ML</th>
+      <th>AP</th>
+      <th>DV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VTA</td>
+      <td>–0.35</td>
+      <td>–3.35</td>
+      <td>–4.3</td>
+    </tr>
+    <tr>
+      <td>NAc</td>
+      <td>–0.8</td>
+      <td>1.34</td>
+      <td>–4.5</td>
+    </tr>
+    <tr>
+      <td>PFC</td>
+      <td>–0.4</td>
+      <td>+1.9</td>
+      <td>–1.7</td>
+    </tr>
+    <tr>
+      <td>VP</td>
+      <td>–1.45</td>
+      <td>+0.55</td>
+      <td>–5.35</td>
+    </tr>
+    <tr>
+      <td>VTA (MOR-Cre)</td>
+      <td>–0.6</td>
+      <td>–3.4</td>
+      <td>–4.4</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ AAV vectors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>AAV</th>
+      <th>Titer</th>
+      <th>Packaged by</th>
+      <th>Volume</th>
+      <th>Addgene #</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAVretro-EF1a-Cre</td>
+      <td>3 × 1013</td>
+      <td>Salk GT3</td>
+      <td>150 nl</td>
+      <td>55636</td>
+    </tr>
+    <tr>
+      <td>AAV5-EF1α-DIO-hChR2(H134R)-mCherry</td>
+      <td>2 × 1013</td>
+      <td>Addgene</td>
+      <td>150 nl for ephys100 nl for histology</td>
+      <td>20297</td>
+    </tr>
+    <tr>
+      <td>AAVDJ-hSyn1-FLExFRT mGFP-2A-Synaptophysin:mRuby</td>
+      <td>2 × 1013</td>
+      <td>Addgene</td>
+      <td>150 nl</td>
+      <td>71761</td>
+    </tr>
+    <tr>
+      <td>AAVretro-hSyn1-DIO-Flpo</td>
+      <td>2 × 1012</td>
+      <td>Salk GT3</td>
+      <td>150 nl</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Histology
 
 Mice were deeply anesthetized with pentobarbital (200 mg.kg-1, i.p., 200-071, Virbac) and transcardially perfused with 30 ml of PBS (BP399, Fisher bioreagents) followed by 50 ml of 4% PFA (18210, Electron Microscopy Sciences) in PBS. Brains were removed, post-fixed in 4% PFA overnight, and dehydrated in 30% sucrose (S0389, Sigma-Aldrich) in PBS for 48 hr then flash-frozen in isopentane. Brains were cut in 30 µm coronal sections on a cryostat (CM3050S, Leica). Sections were selected to encompass the VTA and efferents to PFC, NAc, VP, and LHb. Sections were blocked in 5% normal donkey serum/0.4% Triton X-100 in PBS for 1 hr at room temperature and incubated with primary antibodies (Table 4) overnight at 4°C in the blocking buffer. Next day, slides were washed three times in 0.4% Triton X-100 in PBS for 5 min and incubated with secondary antibodies for 2 hr at room temperature shielded from the light. Finally, sections were washed three times in 0.4% Triton X-100 in PBS for 5 min and coverslipped with Fluoromount-G (Southern Biotech) containing 0.5 µg/ml of DAPI (Roche). Images were taken using a Zeiss Axio Observer Epifluorescence microscope. For Figure 3—figure supplement 1, the same procedure was used but the brains were cut sagittaly at a 15° angle.
 
-## Colocalization with TH and counting
+**Table 4.**
+ Antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primary antibody</th>
+      <th>Species</th>
+      <th>Catalog #</th>
+      <th>Company</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TH</td>
+      <td>Sheep</td>
+      <td>P60101</td>
+      <td>Pel-Freez</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>DsRed</td>
+      <td>Rabbit</td>
+      <td>632496</td>
+      <td>Clontech</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>Chicken</td>
+      <td>A10262</td>
+      <td>Invitrogen</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Substance P</td>
+      <td>Rat</td>
+      <td>MAB356</td>
+      <td>Millipore</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Chat</td>
+      <td>Goat</td>
+      <td>AB144P</td>
+      <td>Millipore</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Donkey secondary antibody</td>
+      <td>Alexa Fluor conjugate</td>
+      <td>Catalog #</td>
+      <td>Company</td>
+      <td>Concentration</td>
+    </tr>
+    <tr>
+      <td>anti-Sheep</td>
+      <td>488</td>
+      <td>713-545-003</td>
+      <td rowspan="7">Jackson ImmunoResearch</td>
+      <td rowspan="7">3 µg/ml</td>
+    </tr>
+    <tr>
+      <td>anti-Sheep</td>
+      <td>594</td>
+      <td>713-585-147</td>
+    </tr>
+    <tr>
+      <td>anti-Sheep</td>
+      <td>647</td>
+      <td>713-605-147</td>
+    </tr>
+    <tr>
+      <td>anti-Rabbit</td>
+      <td>594</td>
+      <td>711-585-152</td>
+    </tr>
+    <tr>
+      <td>anti-Chicken</td>
+      <td>488</td>
+      <td>703-546-155</td>
+    </tr>
+    <tr>
+      <td>anti-Rat</td>
+      <td>647</td>
+      <td>712-605-153</td>
+    </tr>
+    <tr>
+      <td>anti-Goat</td>
+      <td>647</td>
+      <td>705-605-147</td>
+    </tr>
+  </tbody>
+</table>
+
+### Colocalization with TH and counting
 
 For each genetic marker, three to four mice and four sections through VTA per mouse were stained with antibodies against TH and DsRed. All sections were imaged at 10× with the same exposure parameters, using a Zeiss AxioObserver equipped with Apotome2 for structured illumination. The same display settings were applied to all images within condition. TH signal was used to define the boundaries of VTA and align to Bregma point. Cells expressing mCherry were identified first, then scored for presence or absence of TH expression. The counts were done independently by two experimenters and a high correlation was observed between the experimenters (R2 = 0.77, p < 0.001, 60 total sections). Each cell that was only identified by one observer was reassessed for inclusion in final dataset.
 
-## Single injection tracing
+### Single injection tracing
 
 For evaluation of projection targets following a single AAV injection into VTA, we excluded subjects that had <30% of labeled cell bodies outside the VTA (Table 5). We also excluded subjects that had mCherry-labeled cell bodies in supramammillary nucleus. But we did not exclude mice with spread to red nucleus or IPN because these regions are not known to project to NAc, PFC, VP, or LHb (Liang et al., 2011; McLaughlin et al., 2017).
 
-## Electrophysiology
+**Table 5.**
+ Cases included/excluded for Figure 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Surgeries (n)</th>
+      <th>Tracing cases (M/F)</th>
+      <th>Excluded: spread</th>
+      <th>Excluded: technical failure</th>
+      <th>TH counting cases (M/F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PV</td>
+      <td>9</td>
+      <td>2/1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>3/1</td>
+    </tr>
+    <tr>
+      <td>SST</td>
+      <td>5</td>
+      <td>0/3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0/3</td>
+    </tr>
+    <tr>
+      <td>MOR</td>
+      <td>13</td>
+      <td>3/0</td>
+      <td>8</td>
+      <td>2</td>
+      <td>3/1</td>
+    </tr>
+    <tr>
+      <td>NTS</td>
+      <td>5</td>
+      <td>0/4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0/4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Electrophysiology
 
 Mice were deeply anesthetized using pentobarbital (200 mg/kg, i.p., Virbac) and transcardially perfused with 30 ml cold N-methyl-D-glucamine (NMDG)-artificial Cerebro-Spinal Fluid (aCSF, containing in mM: 92 NMDG, 2.5 KCl, 1.25 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 D-glucose, 5 sodium ascorbate, 2 thiourea, 3 sodium pyruvate, 10 MgSO4, 0.5 CaCl2, pH 7.3) saturated with carbogen (95% O2–5% CO2). Sections (coronal, 200 µm) were cut through VTA while immersed in cold NMDG-aCSF using a vibratome (VT1200S, Leica). Slices were incubated at 33°C for 25–30 min in a holding chamber containing NMDG-aCSF saturated with carbogen. During the incubation NaCl concentration was slowly increased in 5 min increments by spiking the holding-aCSF with a 2 M NaCl solution diluted with the NMDG-aCSF (Ting-A-Kee and van der Kooy, 2012). Slices were incubated at 25°C for 30–45 min in a holding chamber containing holding-aCSF (containing in mM: 115 NaCl, 2.5 KCl, 1.23 NaH2PO4, 26 NaHCO3, 10 D-glucose, 5 sodium ascorbate, 2 thiourea, 3 sodium pyruvate, 2 MgSO4, 2 CaCl2, pH7.3) saturated with carbogen. While recording, slices were superfused with 31°C recording-aCSF (containing in mM: 125 NaCl, 2.5 KCl, 1.20 NaH2PO4, 26 NaHCO3, 12.5 D-glucose, 2 MgSO4, 2 CaCl2) using an in-line heater (TC-324B, Warner) at 1.5 ml/min. Whole-cell patch-clamp recordings from mCherry-negative VTA neurons were performed under visual guidance with infrared illumination and differential interference contrast using a Zeiss Axiocam MRm, Examiner.A1 equipped with a ×40 objective. 6–7 MΩ patch pipettes were pulled from borosilicate glass (Sutter Instruments) and filled with internal solution (containing in mM: 133.4 cesium-methanesulfonate, 22.7 HEPES, 0.45 EGTA, 3.2 NaCl, 5.7 tetraethylammonium-chloride, 0.48 NA-GTP, 4.5 Na2-ATP, pH to 7.3 with Cesium-OH). Postsynaptic currents were recorded in whole-cell voltage clamp (Multiclamp 700B amplifier, Axon Instruments), filtered at 2 kHz, digitized at 20 kHz (Axon Digidata 1550, Axon Instruments), and collected using pClamp 10 software (Molecular Device). Neurons were first held at –65 mV to record excitatory currents and then at 0 mV to record inhibitory currents. oPSCs were induced by flashing blue light (two 10 Hz 2 ms pulses, every 15 s) through the light path of the microscope using a light-emitting diode (UHP-LED460, Prizmatix, 50 mW) under computer control. We discarded likely ChR2+ cells, displaying photocurrent (Figure 5—figure supplement 1), identified as starting within 1 ms of the light pulse, as well as cells where the series resistance varied by more than 20%. After breaking-in we waited 2–3 min before beginning optogenetic stimulation. For each cell we first recorded a baseline period (4–6 min) and for some cells baseline was followed by 4–6 min bath application of drug: 1 µM TTX, 50–100 µM 4AP, 10 µM DNQX, 100 µM PTX (Table 6). For each condition we averaged the last 10 sweeps; amplitude represented the peak current, and latency calculated as the duration from light onset to current onset.
 
-## Statistics
+**Table 6.**
+ Drugs and physiology reagents.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Catalog #</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4AP</td>
+      <td>0940</td>
+      <td>Tocris</td>
+    </tr>
+    <tr>
+      <td>CaCl2·2H2O</td>
+      <td>BP510</td>
+      <td>Fisher Bioreagents</td>
+    </tr>
+    <tr>
+      <td>Ces met</td>
+      <td>2550-61-0</td>
+      <td>Sigma-Aldrich</td>
+    </tr>
+    <tr>
+      <td>D-Glucose</td>
+      <td>G8270</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>DNQX</td>
+      <td>D0540</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>EGTA</td>
+      <td>E3889</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>HEPES</td>
+      <td>H3375</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>KCl</td>
+      <td>BP366</td>
+      <td>Fisher Bioreagents</td>
+    </tr>
+    <tr>
+      <td>MgSO4·7H2O</td>
+      <td>M80</td>
+      <td>Fisher Bioreagents</td>
+    </tr>
+    <tr>
+      <td>Na-GTP</td>
+      <td>G8877</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>Na2-ATP</td>
+      <td>A2383</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>NaCl</td>
+      <td>BP358</td>
+      <td>Fisher Bioreagents</td>
+    </tr>
+    <tr>
+      <td>NaH2PO4</td>
+      <td>BP329</td>
+      <td>Fisher Bioreagents</td>
+    </tr>
+    <tr>
+      <td>NaHCO3</td>
+      <td>BP328</td>
+      <td>Fisher Bioreagents</td>
+    </tr>
+    <tr>
+      <td>NMDG</td>
+      <td>M2004</td>
+      <td>Sigma-Aldrich</td>
+    </tr>
+    <tr>
+      <td>PTX</td>
+      <td>P1675</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>Sodium ascorbate</td>
+      <td>A7631</td>
+      <td>Sigma</td>
+    </tr>
+    <tr>
+      <td>Sodium pyruvate</td>
+      <td>P2256</td>
+      <td>Sigma-Aldrich</td>
+    </tr>
+    <tr>
+      <td>TEA chloride</td>
+      <td>86616</td>
+      <td>Fluka</td>
+    </tr>
+    <tr>
+      <td>Thiourea</td>
+      <td>T8656</td>
+      <td>Sigma-Aldrich</td>
+    </tr>
+    <tr>
+      <td>TTX</td>
+      <td>1069</td>
+      <td>Tocris</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics
 
 Data values are presented as means ± SEM. Effects of drug application were subjected to Friedman’s test (nonparametric ANOVA) followed by a Dunn’s post hoc test. Statistical significance was set at p < 0.05.

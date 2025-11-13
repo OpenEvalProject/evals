@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Computer Science, University of Oxford Oxford United Kingdom
-2. https://ror.org/052gg0110 Department of Physiology, Anatomy and Genetics, University of Oxford Oxford United Kingdom
-3. https://ror.org/05sd8tv96 Department of Computer Applications in Science and Engineering, Barcelona Supercomputing Centre (BSC) Barcelona Spain
+1. Department of Computer Science, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Department of Physiology, Anatomy and Genetics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Department of Computer Applications in Science and Engineering, Barcelona Supercomputing Centre (BSC) Barcelona Spain ([ROR:05sd8tv96](https://ror.org/05sd8tv96))
 4. ELEM Biotech Barcelona Spain
-5. https://ror.org/046rm7j60 UCLA Cardiac Arrhythmia Center, University of California, Los Angeles Los Angeles United States
-6. https://ror.org/046rm7j60 Neurocardiology Research Center of Excellence, University of California, Los Angeles Los Angeles United States
+5. UCLA Cardiac Arrhythmia Center, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+6. Neurocardiology Research Center of Excellence, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 
@@ -43,7 +43,7 @@ The main goal of this study is, therefore, to quantify the contribution of varyi
 
 ## Results
 
-## Human modelling and simulation for ECG phenotypes in acute and chronic post-MI
+### Human modelling and simulation for ECG phenotypes in acute and chronic post-MI
 
 Figure 1 demonstrates the ability of human electromechanical simulations to reproduce a variety of clinically reported phenotypes in patients with acute and chronic infarction, in agreement with clinical measurements of ECG and pressure-volume biomarkers, as quantified in further detail in (Appendix 1—table 7, details of clinical database in Appendix 1.5). When imposing acute post-MI remodelling, simulated ECGs reproduced fractionated QRS complexes, T-wave inversion, Brugada phenocopy ST-segment elevation and QT interval prolongation in the anterior leads (Figure 1A), which are common ECG phenotypes observed in acute post-MI patients. Simulations also recapitulated ECG morphology similar to healthy subjects with upright T-waves (Figure 1A, right), which can also be present in acute post-MI.
 
@@ -55,7 +55,7 @@ In chronic post-MI, simulated ECG displayed upright T-waves, and global prolonga
 
 Simulations using the ventricular population of models showed that the described ECG features of acute and chronic post-MI were mostly preserved across variations in ionic current conductances (Figure 1C). Sensitivity analysis showed first that large changes in apex-to-base and transmural heterogeneities only altered T-wave amplitude but not its polarity and did not affect the ST-segment (Appendix 1—figures 3 and 4), and second that changes in mechanical parameters did not affect the ECG morphology (Appendix 1—figures 5 and 6). This result supports the specificity of post-MI signatures to underlying ionic current remodelling.
 
-## In acute MI, T-wave inversion and Brugada phenocopy can indicate reversed transmural repolarisation gradient and activation failure
+### In acute MI, T-wave inversion and Brugada phenocopy can indicate reversed transmural repolarisation gradient and activation failure
 
 Analysis of simulation results enabled the uncovering of specific contributions of different degrees of ionic current remodelling to ECG phenotypes identified in acute versus chronic MI (Figure 2 vs Figure 3). In acute MI, T-wave inversion phenotype was associated with a reversed transmural repolarisation gradient (Figure 2A, repolarisation time map insets), due to a delayed activation time and a 57ms APD prolongation at the epicardial BZ compared with control (Figure 2B, membrane potential). APD prolongation originated due to inhibition of multiple potassium currents caused by BZ1 ionic remodellling (Figure 2C, the first column of IKr, and Appendix 1—table 4 Acute BZ1).
 
@@ -71,11 +71,11 @@ Brugada phenocopy ECG phenotype was also observed in acute MI with BZ2 remodelli
 
 Acute MI with upright T-waves corresponded to a comparable transmural repolarisation gradient as in control with BZ3 ionic current remodelling (Figure 2A, the repolarisation time map). In this case, the slight shortening of APD in the epicardial BZ partially compensated for the activation delay in the BZ and therefore resulted in negligible changes in the T-wave of the ECG (Figure 2C, the third column of IKr, and Appendix 1—table 4 Acute BZ3).
 
-## In chronic post-MI, variable T-wave width can be explained by the extent of repolarisation dispersion between border zone and remote zone
+### In chronic post-MI, variable T-wave width can be explained by the extent of repolarisation dispersion between border zone and remote zone
 
 In chronic MI, global QT prolongation was due to APD prolongation in the remote myocardium (Figure 3, repolarisation time maps and membrane potentials). Recovery of the upright T-wave in the anterior leads (compared to acute MI) was due to a recovery of the transmural repolarisation gradient (Figure 3A, repolarisation time maps, and Appendix 1—figure 10), given the milder IKr inhibition in the border zone (Figure 3B, the first column of IKr, and Appendix 1—table 4 Chronic BZ). Furthermore, T-wave duration in this stage was mainly determined by the gradient between remote and border zone repolarisation times (Figure 3C, repolarisation time maps), where more severe APD prolongation in the RZ led to larger repolarisation gradients and, consequently, larger T-wave duration and amplitude (Figure 1B). Specifically, there was an APD difference of 157ms between remote and border zone cell models for the large T-wave case versus only 12ms for the slight QT-prolongation case, which accounts for the differences in T-wave peak-to-end duration (162ms vs 72ms) and QT intervals (565ms vs 380ms) between these two cases.
 
-## LVEF failed to indicate the extent of post-MI repolarisation dispersions
+### LVEF failed to indicate the extent of post-MI repolarisation dispersions
 
 In our simulations, acute MI ionic current remodelling yielded mildly reduced LVEF in the baseline ventricular models (43%–47%) compared with control (53%) (Figure 4A). LVEF reductions were caused by contractile dysfunction (Figure 4A, active tension) due to lowered calcium amplitude in BZ (Figure 2B, intracellular calcium transient), which was directly caused by inhibitions of ICaL in all acute phenotypes (Figure 2C, ICaL, and Appendix 1—table 4). A complete loss of contractile function in the BZ resulted in a more severe reduction in LVEF in acute post-MI (to 40% for all acute phenotypes in Appendix 1—figure 9). Stroke volumes of the left and right ventricles were well-matched in control conditions (1 mL difference, see Appendix 1—table 9), and introducing myocardial infarction caused a decrease of stroke volume in the left ventricles in both acute and chronic MI (see Appendix 1—table 9).
 
@@ -89,13 +89,13 @@ Chronic post-MI simulations showed mild reduction in peak systolic pressure (by 
 
 For both acute and chronic post-MI, simulations done using the population of ventricular models showed similar changes to the PV loop as the baseline model across variabilities in ionic current conductances.
 
-## T-wave alternans and abnormal wave propagation are caused at fast pacing by cellular alternans and EADs, without reduced LVEF at resting heart rate
+### T-wave alternans and abnormal wave propagation are caused at fast pacing by cellular alternans and EADs, without reduced LVEF at resting heart rate
 
 Increased incidence of T-wave alternans is commonly observed in post-MI patients, and abnormally propagating waves generated from post-MI electrophysiological heterogeneity can trigger lethal arrhythmic events. T-wave alternans were reproduced in the ventricular chronic MI simulations at fast pacing (Figure 5A), with RZ2 remodelling, and their mechanisms were revealed through analysis of the high spatio-temporal resolution of simulation data. Figure 5A shows upright T-wave morphology and preserved LVEF of 49% at resting rate of 75 bpm (CL = 800ms). However, at fast rates (120 bpm, CL = 500ms), significant beat-to-beat ST and T-wave morphology alterations were observed. This was due to large alternans seen in mid-myocardial single cell simulations of the remote zone at CL of 500ms (Figure 5C, green trace), with EAD-driven alternans. These results support the importance of stress tests, since alternans in APD and T-wave can occur at fast heart rates with no sign of LVEF abnormalities at resting heart rate. This is consistent with reports that T-wave alternans under supine bicycle exercise testing was found to be predictive of arrhythmic event after acute post-MI (Ikeda et al., 2000).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/93002/elife-93002-fig5-v1.jpg)
 
-**Figure 5.:** A).(B) Simulated APD and calcium traces in midmyocardial population of models with remote zone 2 (RZ2) remodelling. (C) Large action potential and calcium transient alternans were caused by EADs in simulations at 120 bpm with midmyocardial cells affected by RZ2 ionic current remodelling (green traces, representative example at 75 vs 120 bpm). A single cell model (in green) was selected from the population of models (in grey) for embedding into the remote region for ventricular simulations.
+**Figure 5.:** (B) Simulated APD and calcium traces in midmyocardial population of models with remote zone 2 (RZ2) remodelling. (C) Large action potential and calcium transient alternans were caused by EADs in simulations at 120 bpm with midmyocardial cells affected by RZ2 ionic current remodelling (green traces, representative example at 75 vs 120 bpm). A single cell model (in green) was selected from the population of models (in grey) for embedding into the remote region for ventricular simulations.
 
 Simulations with the population of virtual cardiomyocytes models revealed that in addition to the EAD-driven alternans (Appendix 1—figure 14), classical calcium-driven alternans were also observed in the population of cell models (Appendix 1—figures 12 and 13). The key ionic current remodelling underlying calcium-driven alternans include enhanced CaMKII activity and slower calcium release, as well as suppressed SERCA pump activity in the chronic MI, which are consistent with previous studies (Livshitz and Rudy, 2007; Zhou et al., 2016; Tomek et al., 2018; Appendix 1—figure 15). IKCa enhancement in the chronic MI suppressed alternans generation (detailed analysis provided in Appendix 1—figures 16 and 17). The median of calcium amplitude was larger in the alternans models than in the non-alternating post-MI models (Appendix 1—figure 19), in agreement with the preserved LVEF in the simulations. We did not simulate the effect of this classical calcium-driven alternans on the ECG because the higher pacing rate at which this phenomenon occurs requires the model to include beta-adrenergic inotropic effects to preserve realistic systolic mechanical function.
 
@@ -115,43 +115,89 @@ Spontaneous EADs were frequently observed in the chronic MI cellular population 
 
 In this study, human electromechanical modelling and simulation enables quantification of the contribution of electrophysiological abnormalities to clinical phenotypes in post-MI patients, from ionic to whole-organ dynamics (summarised in Table 1). The credibility of the human electromechanical models and simulation results is supported by their consistency with experimental and clinical data from ionic dynamics to ECG and LVEF biomarkers in healthy, acute and chronic post-MI conditions. Diverse clinical ECG phenotypes are reproduced in the simulations with different degrees of experimentally reported ionic current remodelling for acute and chronic MI; their signature on the LVEF is however weak, with only a small reduction observed. The simulated clinical ECG and LVEF phenotypes were found to be consistent across physiological variabilities in ionic current conductances in the baseline electrophysiological model. Key findings include:
 
+**Table 1.**
+ Linking clinical ECG and left ventricular ejection fraction (LVEF) phenotypes to tissue heterogeneities and subcellular ionic current remodelling in acute and chronic post-myocardial infarction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical Phenotypes</th>
+      <th>Tissue or Cell Level phenomena</th>
+      <th>Corresponding Post Infarction Ionic Current Remodelling</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acute MI T-wave inversion in ECG</td>
+      <td>Reversed transmural repolarisation gradient due to delayed activation and repolarisation in the epicardial border zone</td>
+      <td>Inhibition of potassium currents in the border zone as well as the slower transmural conduction velocity</td>
+    </tr>
+    <tr>
+      <td>Acute MI Brugada phenocopy in ECG</td>
+      <td>Delayed repolarisation, as well as a small region of activation failure in the epicardial border zone</td>
+      <td>Strong inhibitions of sodium, calcium and potassium ionic currents in the border zone</td>
+    </tr>
+    <tr>
+      <td>Chronic MI upright tall T-waves in ECG</td>
+      <td>Large repolarisation time gradient between remote and border zones caused by more severe delay of repolarisation in the remote zone</td>
+      <td>More severe potassium channel suppression in the remote zone</td>
+    </tr>
+    <tr>
+      <td>Chronic MI T-wave alternans</td>
+      <td>Cellular repolarisation alternans or early afterdepolarisation</td>
+      <td>Suppressed SERCA and augmented CaMKII activity for alternans; Enhanced late sodium current and suppressed hERG current for early afterdepolarisation</td>
+    </tr>
+    <tr>
+      <td>Acute MI reduction in LVEF</td>
+      <td>Reduced calcium amplitude and/or regional conduction block</td>
+      <td>Inhibitions of calcium and sodium currents</td>
+    </tr>
+    <tr>
+      <td>Chronic MI reduction in LVEF</td>
+      <td>Reduced calcium amplitude</td>
+      <td>Decreased SERCA activity</td>
+    </tr>
+  </tbody>
+</table>
+
 Collectively, our results show the proarrhythmic post-MI electrophysiological dispersions caused by cellular remodelling of ionic currents are reflected in QT and T wave morphology biomarkers rather than in LVEF, which questions the use of LVEF as the dominant biomarker in clinical risk stratifications.
 
-## Acute MI T-wave inversion and Brugada phenocopy are caused by reversed transmural repolarisation gradient and regional conduction abnormality
+### Acute MI T-wave inversion and Brugada phenocopy are caused by reversed transmural repolarisation gradient and regional conduction abnormality
 
 Three distinct types of T-wave morphology were generated by our acute MI biventricular simulations: T-wave inversion, Brugada-phenocopy and normal upright T-wave. We obtained them by applying three types of acute BZs in ventricular simulations, considering both APD prolongation and shortening, as a reflection of the variable experimental results (Mendonca Costa et al., 2018). Collectively, our results highlighted the importance of investigating the implications of the various degrees of experimentally-reported ionic current remodelling to explain phenotypic variability of patients with MI. T-wave inversion is a commonly observed feature in the acute MI patients, and is commonly associated with arrhythmic risk (Tikkanen et al., 2015). Here, we showed the reversed transmural repolarisation gradient caused by delayed activation and APD prolongation in the epicardial BZ accounted for this phenotype. The link between transmural repolarisation gradient and T-wave polarity has been reported previously (Okada et al., 2011) and is consistent with our results. Brugada-phenocopy was also observed in some acute MI patients (Anselm et al., 2014), and our simulation results showed it could be a reflection of regional conduction abnormality combined with APD prolongation. Although some animal experiments showed acute MI BZ APD shortening (Mendonca Costa et al., 2018), we showed the prolongation of BZ APD was underlying the QT prolongation, T-wave inversion and Brugada phenocopy in the leads facing the infarct (Appendix 1—figure 7 showing lead dispersions), which is consistent with the QTc prolongation observed in the anterior leads of acute anterior infarction patients (Guaricci et al., 2018). Apart from the above, normal T-waves and QT intervals were also commonly observed in patients post percutaneous coronary intervention, which can be reproduced when the post-MI repolarisation dispersion was small between BZ and NZ (BZ3). It is worth noting that, in addition to having a mild border zone remodelling as shown in BZ3, a silent ECG signature can also be due to a reduced transmural extent of the infarct, as has been shown in previous computational studies (Loewe et al., 2018; Wang et al., 2021). Therefore, T-wave inversion, Brugada phenocopy and QT prolongation occur in the leads facing the infarct can be useful biomarkers indicating bigger repolarisation dispersions and/or larger transmural extent in the acute MI.
 
-## Wide and tall T-wave is explained by large repolarisation dispersions between BZ and RZ in healed post-MI hearts
+### Wide and tall T-wave is explained by large repolarisation dispersions between BZ and RZ in healed post-MI hearts
 
 Our simulated chronic ECGs recapitulated the recovery of T-wave polarity observed in patients after a period of healing. This was achieved through the recovery of the transmural repolarisation gradient caused by the milder IKr inhibition in the chronic BZ (Hegyi et al., 2018). Experimental studies in different species showed inconsistent results regarding the chronic BZ APD (Mendonca Costa et al., 2018). Our chronic BZ remodelling produced slightly longer APD than the NZ, which is consistent with observations in healed human BZ (Dangman et al., 1982). However, in minipigs, these remodelling caused shorter BZ APD than in NZ (Hegyi et al., 2018). This interesting discrepancy between minipigs and human may be due to the different balance of ionic currents across species, which showed the benefits of human electrophysiology models in overcoming the inter-species differences.
 
 The two types of T-wave morphologies in the simulated chronic ECGs corresponded to different extents of RZ APD prolongations, which were commonly observed in healed RZ of post-MI animals (Hegyi et al., 2018), and in failing human myocytes (Li et al., 2004). The substantial RZ APD prolongation was reflected as global QT prolongation in all leads, and the large APD dispersion between chronic BZ and RZ generated wide and tall T-waves in the precordial leads facing the infarct (Appendix 1—figure 8 for global and dispersed ECG characteristics). Previous simulation studies also found the T-wave amplitude and area were proportional to the dispersion of repolarisation (Arteyeva and Azarov, 2017). Therefore, these results demonstrated that in patients with global QT prolongation, leads with bigger T-wave amplitudes could reflect increased local heterogeneity in repolarisation.
 
-## T wave alternans and severely abnormal ECGs at fast pacing are caused by alternans and EADs in chronic infarction
+### T wave alternans and severely abnormal ECGs at fast pacing are caused by alternans and EADs in chronic infarction
 
 Post-MI ionic current remodelling promoted alternans generation, which resulted in T-wave alternans in simulated ECGs, consistent with the higher incidence of T-wave alternans reported in post-MI patients (Martin et al., 2009). Two types of repolarisation abnormalities were observed in our post-MI models: EADs and alternans. One crucial mechanism promoting alternans behaviour at the cellular level is the increased activity of CaMKII, observed in the acute MI BZ (Hund et al., 2008), as well as in the hypertrophied and failing myocardium (Anderson et al., 2011). Enhanced CaMKII phosphorylation may preserve the contractility of the heart through the phosphorylation of phospholamban and the L-type calcium channels, but increased RyR phosphorylation by CaMKII resulted in prolonged RyR opening as well as the enhancement of spontaneous calcium sparks, which can contribute to alternans and triggered arrhythmias (Maier and Bers, 2007).
 
 Generation of EADs due to chronic post-MI ionic current remodelling, such as IKr inhibition and INaL enhancement, was consistent with previous studies (Coppini et al., 2013). We also found that both repolarisation reserve remodelling (INaL and IKr) and calcium system remodelling (Jup and CaMKII) are important for the EAD-driven alternans (details provided in Appendix 1—figures 23 and 24). EADs in the RZ can create large repolarisation dispersion in the ventricle, facilitating abnormal electrotonic wave propagations. Similar re-entrant waves caused by electrotonic gradients were also observed in previous studies of acute ischaemia (Ridley et al., 1992; Dutta et al., 2016; Boukens et al., 2021).
 
-## LVEF should be combined with QT and T-wave characteristics for arrhythmic risk stratification
+### LVEF should be combined with QT and T-wave characteristics for arrhythmic risk stratification
 
 In this study, we observe non-structurally induced reductions of LVEF in the both the acute and the chronic post-MI stages. At both stages, ventricles with different extents of repolarisation dispersion may have similar LVEF because they have similar degrees of calcium reduction (acute MI T-wave inversion vs normal ST-T, and chronic MI two cases). Models with inducibility of T-wave alternans and arrhythmia at fast pacing rates may present with a preserved LVEF at resting heart rates (Figures 5 and 6). Our cellular level results also showed models with inducibility of repolarisation abnormalities, such as alternans and EADs, tended to have more preserved CaT magnitudes at rest rates. Therefore, these phenomena all support the fact that preserved LVEF measured at rest does not guarantee low arrhythmic risk.
 
 A recent clinical study of post-MI patients with preserved LVEF showed defibrillators are needed in those patients with electrophysiological risk factors, such as prolonged QTc, increased T-wave alternans, to prevent sudden cardiac death (Gatzoulis et al., 2019). Consistently, we also found post-MI alternans and EADs can present as alternans of T-wave morphology and prolonged QT intervals. In addition to the global ECG changes, our simulation results also showed increased local repolarisation dispersion can be reflected in the leads facing the infarct: inverted T-wave and prolonged QT in the acute MI, and wide and tall T-wave in the chronic MI. Therefore, we suggest the consideration of these signs as markers of high arrhythmic risk.
 
-## Limitations
+### Limitations
 
 The main goal of this study is to investigate phenotypic variability in ECG and LVEF biomarkers arising from post-MI ionic current remodelling. We have shown that the relationship between phenotypic variabilities and ionic current remodelling remains consistent across physiological ranges of variation of the ionic current conductances in the baseline cell model. Other sources of variability were not considered in this study including: heart anatomy, location and timing of the early activates sites, calcium sensitivity, conduction velocity. These could all modulate quantitatively the findings but we do not anticipate strong implications in the findings. The effect of variability in location and size of the scar on the ECG has been explored elsewhere (Li et al., 2024). LVEF reduction in clinical cases are more significant than in our simulations due to factors other than ionic current remodelling: RZ structural remodelling and elevated myocardium stiffness, and abnormalities in anatomy. However, these effects have been well-documented elsewhere and this study serves to elucidate the non-structural mechanisms that underpin LVEF reduction that is linked to electrophysiological remodelling and arrhythmic risk. The basal plane in our simulation was fixed in space, which was necessary due to the segmented geometry from clinical MRI and to prevent unphysiological motion at the truncated basal plane. Despite this limitation, our conclusions regarding the relative comparisons of mechanical dysfunction are likely to still hold.
 
 In addition, post-MI ionic current remodelling can be modulated by other acute and chronic factors such as autonomic modulation (beta-adrenergic effects), inflammation, cell death, and metabolic remodelling, which can be explored in future work. The limitations in this study call for a need for personalised digital twins to be generated in the future to facilitate a better understanding of the interaction between structural remodelling and electrophysiological alterations.
 
-## Conclusions
+### Conclusions
 
 Human-based electromechanical simulations reveal ionic mechanisms underlying T-wave inversion, Brugada phenocopy, and upright T-wave in acute post-MI, as well as the upright T-wave, QT prolongation and T-wave alternans in the healed chronic MI. In acute MI, while the potassium current reduction in the border zone was implicated for all ECG abnormalities, the more severe ECG abnormalities in the Brugada phenocopy implicates additional remodelling for the sodium and calcium currents, which were also key factors in reduced mechanical function. In chronic MI, the degree of QT prolongation and the generation of pro-arrhythmic injury currents were directly related to the severity of potassium current remodelling in the remote region. In addition, late sodium current remodelling could be an important factor underpinning T-wave alternans in chronic MI through the promotion of EAD-driven alternans. Our results show that T-wave inversion, wide and tall T-wave, and QT prolongation in the leads facing the infarct are indicative of local dispersion of repolarisation, which is independent from the reduction of LVEF. Our simulation results suggest the utilisation of T-wave morphology, T-wave alternans and QT prolongation to improve risk stratification biomarkers even when the resting LVEF is preserved.
 
 ## Materials and methods
 
-## Human multi-scale ventricular electromechanical modelling and simulation: from ionic current remodelling to ECG and LVEF
+### Human multi-scale ventricular electromechanical modelling and simulation: from ionic current remodelling to ECG and LVEF
 
 A human ventricular electromechanical modelling and simulation framework is constructed using a population of models approach and evaluated using experimental and clinical data to enable the investigations of variable post-MI patient phenotypes, from ionic current remodelling to body surface ECGs and pressure-volume (PV) loops (Figure 7A). A cardiac magnetic resonance (CMR)-based biventricular anatomical mesh (Figure 7B) with corresponding torso geometry was used for all simulations in this study, with an anterior scar that is 75% transmural (Wang et al., 2021). Electrical propagation was simulated using the monodomain equation with orthotropic diffusion based on rule-based fields for fibre directions (Streeter et al., 1970) with sheet directions normal to the endocardial/epicardial surface (Levrero-Florencio et al., 2020; Figure 7B). Transmural and apex-to-base heterogeneities (Mincholé et al., 2019) were introduced and a sensitivity analysis was performed to investigate their implications in ECG biomarkers and LVEF (Figure 7B). Electrical stimulus via Purkinje-myocardial junctions was simulated by an endocardial fast-activation layer with root node locations to achieve realistic QRS complex morphologies simulated at clinically standard lead locations (Figure 7C; Mincholé et al., 2019). In healthy tissue (normal zone [NZ]), monodomain diffusivities were calibrated to achieve experimentally measured orthotropic conduction velocities of 67 cm/s, 30 cm/s, and 17 cm/s (Caldwell et al., 2009).
 
@@ -171,7 +217,7 @@ The passive stiffness parameters were calibrated based on a previous sensitivity
 
 The active tension was set to zero in the scar to represent the myocyte damage, and the chronic passive stiffness parameters of the infarct region were increased 10-fold to mimic fibrotic scar formation (Sun et al., 2009). For each acute post-MI phenotype, a case of complete loss of contractile function (zero active tension) in the BZ was also simulated to evaluate the contribution of other non-ionic current remodelling-related abnormalities on ejection fraction.
 
-## Experimentally-informed single cell and ventricular populations of human post-MI electromechanical models
+### Experimentally-informed single cell and ventricular populations of human post-MI electromechanical models
 
 To account for the inter-subject electrophysiological variability widely observed in clinical data, the baseline human cellular electromechanical ToR-Land model was extended to populations of healthy cellular models. Then, post-MI ionic current remodelling was applied to generate populations of post-MI virtual cardiomyocytes (Figure 7D). In addition to the baseline ToR-ORd model, several representative cellular models were selected from the population and implemented into the biventricular electromechanical simulations.
 
@@ -179,7 +225,7 @@ An initial population of human ventricular cell models was constructed based on 
 
 Several degrees of post-MI ionic current remodelling were collated from a combination of human and animal experimental data with variability in severity of disease to explore whether such variabilities can explain variability in established clinical ECG phenotypes. These remodellings have been applied to the healthy celllular model population (n=245) to generate BZ and RZ populations for both acute and chronic post-MI. For acute post-MI (within a week post-occlusion), three types of BZ remodelling (Acute BZ1-3) were considered based on previous modelling work and experimental canine data collected within 5 days post-MI. The three models of acute border zone remodelling had in common strong inhibition of INa (60~62%). The BZ2 model had more severe inhibition of ICaL and IKr than the BZ1 model, alongside other minor differences. The BZ3 model, while having less severe potassium currents inhibition than BZ1, had additional remodellings in CaMKII dynamics, RyR time constants, and ICab. For chronic post-MI, ionic current remodelling measured from minipigs 5 mo post-MI with heart failure were used to generate Chronic BZ (affecting only the BZ) and Chronic RZ1 (also affecting the remote myocardium). Another type of remodelling, Chronic RZ2, was established based on multiple experimental data from failing human cardiomyocytes. The RZ covers the entire myocardium apart from the infarct and BZ in chronic MI simulations. Furthermore, reduction of sodium current and SERCA, with enhanced CaMKII activity and slower calcium release induced by CaMKII activation were also implemented in Chronic BZ, RZ1 and RZ2, as observed in human failing cardiomyocytes (details in Appendix 1—table 4). Compared with RZ1, the RZ2 model had a significantly stronger inhibition of potassium currents and a lower repolarisation reserve, alongside other more minor differences. Both human recordings and animal data were used for model evaluation, given the scarcity of human tissue, summarised in Appendix 1—table 4; Appendix 1—table 5. Action potential, calcium transient, and active tension characteristics of the post-MI models are summarised in Appendix 1—table 6. These post-MI ionic current remodellings were then applied to the ventricular population of models (n=17) to explain ECG and PV phenotypes while considering physiological population variability in baseline ionic conductances. These remodelled cell models are embedded uniformly within each region according to a prescribed transmural heterogeneity of 30% endo, 40% mid-myocardial, and 30% epicardial cell types.
 
-## Simulation protocols and biomarker calculation
+### Simulation protocols and biomarker calculation
 
 Human virtual ventricular myocytes were paced at 1 Hz for 500 beats to detect EAD generation. For alternans generation, single cells were paced at cycle lengths (CLs) of 500ms, 400ms, and 300ms for 500 beats, and a ΔAPD greater than 3ms between the last two beats at steady state was defined as alternans.
 
@@ -189,10 +235,10 @@ For chronic post-MI, an additional fast pacing protocol was applied with 500 ms 
 
 Clinical biomarkers were quantified from the simulated ECG (including the QT interval, QRS duration, T-wave duration, T peak to T end duration, T onset to T peak duration, and QT dispersion, see definition and method of evaluation in Appendix 1.3 and biomarker results in Appendix 1—table 8), and from the simulated PV loop (including end diastolic and end systolic volumes, peak systolic pressures and LV and RV ejection fractions), as well as wall thickening strain (see Appendix 1—table 8; Appendix 1—table 9 for ECG and PV biomarkers for all simulated beats).
 
-## Simulation software and computational framework
+### Simulation software and computational framework
 
 Cellular electrophysiological simulations and Latin Hypercube Sampling were performed using bespoke MATLAB codes. Coupled cellular electromechanics, as well as biventricular electromechanics simulations, were performed using the high-performance numerical software, Alya, for complex coupled multi-physics and multi-scale problems (Santiago et al., 2018) on the CSCS (Swiss National Supercomputing Centre) Piz Daint supercomputer multi-core clusters, granted through the PRACE (Partnership for Advanced Computing in Europe) project. The simulation input files and Alya executable required to replicate the simulated results are available upon request for scientific investigations.
 
-## Preprint
+### Preprint
 
 This manuscript was first published as a preprint: Xin Zhou, Zhinuo Jenny Wang, Julia Camps, Jakub Tomek, Alfonso Santiago, Adria Quintanas, Mariano Vazquez, Marmar Vaseghi, Blanca Rodriguez (2022). [Clinical phenotypes in acute and chronic infarction explained through human ventricular electromechanical modelling and simulations]. bioRxiv. https://www.biorxiv.org/content/10.1101/2022.02.15.480392v3.

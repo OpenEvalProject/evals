@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/008x57b05 Laboratory of Cell Biology and Histology, University of Antwerp Antwerp Belgium
-2. https://ror.org/008x57b05 Laboratory of Experimental Haematology, Vaccine and Infectious Disease Institute (Vaxinfectio), University of Antwerp Antwerp Belgium
-3. https://ror.org/008x57b05 Antwerp Centre for Advanced Microscopy, University of Antwerp Antwerp Belgium
-4. https://ror.org/008x57b05 µNeuro Research Centre of Excellence, University of Antwerp Antwerp Belgium
+1. Laboratory of Cell Biology and Histology, University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))
+2. Laboratory of Experimental Haematology, Vaccine and Infectious Disease Institute (Vaxinfectio), University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))
+3. Antwerp Centre for Advanced Microscopy, University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))
+4. µNeuro Research Centre of Excellence, University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))
 
 † Corresponding author
 
@@ -27,27 +27,223 @@ Modelling the complexity of the human brain and its (dys)function has proven to 
 
 ## Results
 
-## Neural cell lines have a unique morphotextural fingerprint
+### Neural cell lines have a unique morphotextural fingerprint
 
 Several groups have demonstrated that morphological cell profiling can be used to discriminate pharmacogenomic perturbations based on phenotypic similarity (Cimini et al., 2023; Way et al., 2021; Schiff et al., 2022). We asked whether a similar approach could be leveraged to unequivocally distinguish individual cell types as well. To this end, we implemented a version of CP based on 4-channel confocal imaging (Figure 1A) and first applied it to monocultures of two neural cell lines from a different lineage, namely astrocyte-derived 1321N1 astrocytoma cells and neural crest-derived SH-SY5Y neuroblastoma cells. First, we explored whether traditional morphotextural feature extraction provided sufficient distinctive power. The features were calculated for each channel in three regions of interest, namely the nucleus, cytoplasm, and whole cell. They describe the shape, intensity, and texture features of each ROI (Table 1). Representation of the resulting standardized feature set in UMAP space revealed a clear separation of both cell types along the first UMAP dimension. Clustering of instances was less pronounced after principal component analysis (Figure 1—figure supplement 1), but UMAP better preserves local and global data structure (McInnes et al., 2018). Despite some separation of replicates across the second UMAP dimension, the absence of clear replicate clusters showed that the morphological differences between cell types were consistent across biological replicates (Figure 1B). When projecting individual features onto the UMAP space, we found that both texture (e.g. Nucleus Channel 3 Energy) and shape (e.g. Cellular Area) metrics contributed to the cell type separation (Figure 1C). The contribution of intensity-related features (e.g. Channel 3 Intensity) to cell type separation was less pronounced as they were more correlated with the biological replicate. Thus, we conclude that cell types can be separated across replicates based on a morphotextural fingerprint.
 
-## Convolutional neural network outperforms random forest in cell type classification
+![Figure 1.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig1-v2.jpg)
+
+**Figure 1.:** (A) Image overview of 1321N1 (top) and SH-SY5Y (bottom) cells after cell painting (CP) staining acquired at higher magnification (Plan Apo VC 60xA WI DIC N2, NA = 1.20). Scale bar is 30 µm. The channel, wavelength, and dye combination used is listed in the table below the figure. This color code and channel numbering is used consistently across all figures. (B) UMAP dimensionality reduction using handcrafted features. Each dot represents a single cell. The colour reflects either cell type condition (left) or replicate (right). This shows that UMAP clustering is a result of cell type differences and not variability between replicates. (C) Feature importance deducted from the UMAP (feature maps). Each dot represents a single cell. Three exemplary feature maps are highlighted alongside the quantification per cell type. These feature representations help understand the morphological features that underlie the cluster separation in UMAP. (D) Random Forest classification performance on the manually defined feature data frame with and without exclusion of redundant features. Average confusion matrix (with redundant features) and Mean Decrease in Impurity (reflecting how often this feature is used in decision tree splits across all random forest trees). All features used in the UMAP are used for random forest (RF) building. Each dot in the violinplot represents the F-score of one classifier (model initialisation, N=30). Classifiers were trained 10 x with three different random seeds.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each point represents an individual cell.
+
+**Table 1.**
+ Definition of handcrafted features (according to the scikit-image documentation).All of these features were extracted for each fluorescent channel (1-4) and region (nucleus, cytoplasm, and whole-cell) in the cell painting images.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature name</th>
+      <th>Description</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intensity max</td>
+      <td>Maximal pixel intensity inside the ROI</td>
+      <td>Intensity</td>
+    </tr>
+    <tr>
+      <td>Intensity mean</td>
+      <td>Mean pixel intensity inside the ROI</td>
+      <td>Intensity</td>
+    </tr>
+    <tr>
+      <td>Intensity min</td>
+      <td>Minimal pixel intensity inside the ROI</td>
+      <td>Intensity</td>
+    </tr>
+    <tr>
+      <td>Intensity Std</td>
+      <td>Standard deviation of the pixel intensities inside the ROI</td>
+      <td>Intensity</td>
+    </tr>
+    <tr>
+      <td>Area</td>
+      <td>Area of the ROI</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Area convex</td>
+      <td>The area of the convex polygon that encloses the ROI</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Area filled</td>
+      <td>Area of the ROI including all holes inside the ROI</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Axis major length</td>
+      <td>The length of the major axis of the ellipse that has the same normalized second central moments as the region.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Axis minor length</td>
+      <td>The length of the minor axis of the ellipse that has the same normalized second central moments as the region.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Centroid</td>
+      <td>Coordinates of the center of the ROI</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Eccentricity</td>
+      <td>Eccentricity of the ellipse that has the same second-moments as the ROI.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Equivalent diameter area</td>
+      <td>The diameter of a circle with the same area as the ROI.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Extent</td>
+      <td>The ratio of the Area of the ROI to the Area of the bounding box around the ROI.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Feret diameter max</td>
+      <td>The longest distance between points around a ROIs’ convex polygon.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Orientation</td>
+      <td>The angle between the X-axis and the major axis.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Perimeter</td>
+      <td>Length of the contour of the ROI</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Perimeter crofton</td>
+      <td>Perimeter of the ROI approximated by the Crofton formula in four directions.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Solidity</td>
+      <td>The ratio of the number of pixels inside the ROI to the number of pixels of the convex polygon.</td>
+      <td>Shape</td>
+    </tr>
+    <tr>
+      <td>Contrast</td>
+      <td>The difference between the maximum intensity and minimum intensity pixel inside the ROI.</td>
+      <td>Texture</td>
+    </tr>
+    <tr>
+      <td>Dissimilarity</td>
+      <td>The average difference in pixel intensity between neighbouring pixels.</td>
+      <td>Texture</td>
+    </tr>
+    <tr>
+      <td>Homogeneity</td>
+      <td>Value for similarity of pixels in the ROI.</td>
+      <td>Texture</td>
+    </tr>
+    <tr>
+      <td>Energy</td>
+      <td>Value for the local change of pixel intensities in the ROI.</td>
+      <td>Texture</td>
+    </tr>
+    <tr>
+      <td>Correlation</td>
+      <td>Value for the linear dependency of pixels in the ROI.</td>
+      <td>Texture</td>
+    </tr>
+    <tr>
+      <td>ASM (angular second moment)</td>
+      <td>Value for the uniformity of pixel values in a ROI.</td>
+      <td>Texture</td>
+    </tr>
+  </tbody>
+</table>
+
+### Convolutional neural network outperforms random forest in cell type classification
 
 To evaluate whether the morphotextural fingerprint could be used to predict cell type, we performed Random Forest (RF) classification using the full feature dataset, using different seeds for splitting up the data into training and validation sets. This resulted in a rather poor accuracy (F-score: 0.75±0.01), mainly caused by the significant (46%) misclassification of 1321N1 cells (Figure 1D). The imbalance in recall and precision was surprising given the clear separation of cell populations in UMAP space using the same feature matrix. When inspecting the main contributions to the RF classifier using the mean decrease in impurity, we found very similar features as highlighted in UMAP space to add to the discrimination (Figure 1C). Where the most important features (e.g. Cellular Area, Channel 1 Contrast) showed the expected gradient along the first UMAP direction, lower ranked parameters (e.g. Cellular Channel 3 Mean Intensity) had no contribution to UMAP separation (Figure 1C). Reducing noise by removing redundant features (correlation >0.95) could not ameliorate RF classification performance, which may be due to the documented bias in feature selection for node splitting in high-dimensional data (Nguyen et al., 2015). This result drove us to evaluate a different classification approach based on a ResNet (He et al., 2015) convolutional neuronal network (CNN). Here, we no longer relied on the extraction of ‘hand-crafted’ features from segmented cell objects for training the shallow RF classifier. Instead, we used isotropic image crops of 60 µm centred on individual cell centroids and blanked for their surroundings as input for the CNN (Figure 2A). Using this approach, we found a significantly higher prediction performance (F-score of 0.96±0.01), with a much more balanced recall and precision (Figure 2B). The UMAP space built from the CNN feature embeddings showed a clear cell type separation (Figure 2—figure supplement 1A). Even with only 100 training instances per class, the CNN outperformed RF, but optimal performance was attained with 5000 training instances (Figure 2C). Both RF and CNN models trained on a combination of three biological replicates (‘Mixed reps.’) performed similarly as models that were trained on only a single replicate (‘Single reps.’) (Figure 2D). However, a model trained on a dataset containing multiple replicates (‘Mixed reps.’) outperformed CNN models that were only trained on a dataset with less variability (‘Single rep.’) when predicting instances of an independent unseen replicate (Figure 2E). This emphasises the need for including sufficient variation in the training set. Although much more performant, CNN classification does not allow direct retrieval of intuitive features, which complicates model interpretation. To gain a visual understanding of image information contributing most to the classification we resorted to Gradient-weighted Class Activation Mapping (Grad-CAM)(Selvaraju et al., 2020). This revealed that the attention of the CNN was mainly focused on cell borders (edge information), and nuclear and nucleolar signals (Figure 2F). When scrutinizing CNN misclassifications, we found that these are mainly caused by faulty cell detection (e.g. oversegmentation of cell ramifications), unhealthy/dead cells, debris or visibly aberrant cell shapes (Figure 2—figure supplement 1B) - errors not necessarily attributed to the CNN.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of image pre-processing for convolutional neuronal network (CNN) classification. (B) CNN accuracy and confusion matrix on cell type classification in monocultures. Each dot in the violinplot represents the F-score of one classifier (model initialisations, N=9). (C) Shallow vs. deep learning accuracy for a varying number of input instances (region of interests, ROIs). Each dot in the violinplot represents the F-score of one classifier (model initialisation, N). The ribbon represents the standard deviation on the classifiers. (D) The impact of experimental variability in the training dataset on model performance for shallow vs. deep learning. Classifiers were trained on either 1 (single rep.) or multiple (mixed reps.) replicates (where each replicate consists of a new biological experiment). Mann-Whitney-U-test, p-values resp. 0.7304 and 0.000197. Each violinplot represents the F-score of N classifiers (model initialisations). (E) The performance of deep learning classifiers trained in panel D on single replicates (low variability) or mixed replicates (high variability) on unseen images from either the training replicate (cross-validation) or an independent replicate (independent testing) (where each replicate consists of a new biological experiment). Kruskal-Wallis test on single training condition, p-value of 0.026 with post-hoc Tukey test. Mann-Whitney-U-test on mixed training, p-value of 7.47e-6. Each violinplot represents the F-score of one classifier (model initialisation, N=3). (F) Images of example inputs given to the CNN. The composite image contains an overlay of all cell painting (CP) channels (left). The GradCAM image overlays the GradCAM heatmap on top of the composite image, highlighting the most important regions according to the CNN (right). One example is given per cell type.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) UMAP of feature embeddings of the convolutional neuronal network (CNN) trained to classify 1321N1 and SH-SY5Y monocultures. Each point represents an individual cell. (B) Examples of misclassified region of interests (ROIs).
+
 To shed light on the contribution of individual markers to the classification, we eroded the input to single-channel images. For all cases (each individual channel), the prediction performance was below or equal to 85,0% indicating that no single channel contains all relevant information (Figure 3A). Combinations of two or three channels could not match the prediction accuracy of the full four-channel image either. Thus, we concluded that all channels contribute to the successful classification. As the CNN directly uses image crops as input, the image quality will determine the classification performance. Therefore, we assessed the impact of resolution and signal-to-noise ratio (SNR). We simulated the effect of decreasing spatial resolution through progressive pixel binning from 192 pixels (original, pixel size 0.3 µm) to 9 pixels (pixel size 6 µm). For each iteration, three CNN models were trained and evaluated. A reduction in pixel size from 0.3 µm to 0.6 µm did not result in a significantly lower prediction performance, but decreasing the spatial resolution further caused a progressive decrease in F-score (Figure 3B). In a similar manner, we tested the impact of decreasing SNR (by increasing the level of Gaussian noise) on classification accuracy. Starting from an original SNR value of 20.05 dB, we found that the F-score started to decrease when lowering the SNR below 14.27 dB (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig3-v2.jpg)
+
+**Figure 3.:** (A) Performance of the convolutional neuronal network (CNN) when only a selection of image channels is given as training input. Each boxplot represents the F-score of one classifier (model initialisation, N=3). Channel numbering is in accordance with Figure 1A. (1=DAPI; 2=FITC; 3=Cy3; 4=Cy5) (B) Simulation of the effect of increased pixel size (reduced spatial resolution) on the classification performance. Each point is the average of three CNN model initializations (N), with bars indicating the standard deviation between models. Red line indicates the average F-score of the original crops. (C) Simulation of the effect of added Gaussian noise (reduced signal-to-noise ratio) on the classification performance. Each point is the average of three CNN model initialisations, with bars indicating the standard deviation between models. Red line indicates the average F-score of the original images. Statistics were performed using a Kruskal-Wallis test with post-hoc Tukey test. (D) CNN performance on 1321N1, RPE1, and ARPE cells. Dots represent different model initialisations (N=3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of average nuclear/cellular size per cell type. (B) GradCAM images for 10 random seeds for crops and CNN models trained with background either set to zero or ‘random speckle.’ (C) CNN prediction results for models trained on crops with background either set to zero or ‘random speckle.’ Each dot in the violinplots represents the F-score of one classifier (model initialisation, N=3). (D) Feature map (see UMAP in Figure 1B and C) of 1321N1 and SH-SY5Y cells showing the contribution of nuclear/cellular area to the cell type cluster separation. Each point represents an individual cell.
 
 We observed that even with low input image quality, the CNN performance retained approximately 80% accuracy. We attribute this to the predictive power of the nuclear size, which is a dominant discriminating feature between the cells (Figure 3—figure supplement 1). Given the relatively overt phenotypic difference between 1321N1 and SH-SY5Y cells, we asked whether the CNN could also discriminate more subtle phenotypes. To this end, we used 1321N1 cells and two related retinal pigment epithelial cell lines, hTERT-immortalized RPE1 and the spontaneously immortalized variant ARPE (Figure 3D). The CNN discriminated all three cell lines with a high accuracy of 95,06±2,51%. Unsupervised UMAP dimensionality reduction using the CNN feature embeddings revealed three clusters of ROIs, with the two RPE lines located closer together - but still well separated - in comparison to the morphologically more distinct 1321N1 cell type (Figure 3D). Together, this work illustrates that a CNN approach can be used to distinguish diverse cell types within a given image quality window.
 
-## Nucleocentric predictions remain accurate regardless of culture density
+### Nucleocentric predictions remain accurate regardless of culture density
 
 Morphological profiling relies on accurate cell detection. This may become difficult in dense cultures such as iPSC-cultures, clustered cells, tissues, and tissue-mimics. Having established a method to distinguish cell types with high accuracy, we next asked how robust the classification was to increasing cell density. To this end, we acquired images of 1321N1 and SH-SY5Y monocultures, grown at densities ranging from 0 to 100% confluency (Figure 4A). Based on the nuclear count, we binned individual fields into 6 density classes (0–20%, 20–40%, 40–60%, 60–80%, 80–95%, 95–100%) and trained a CNN with equal sampling of cell numbers per density class to avoid bias. No decrease in accuracy was observed until the culture density reached 80% confluency. At very high densities (95–100%), we found a significant decrease in the prediction accuracy (F-score: 0.92±0.05) (Figure 4B). We reasoned that under these conditions cell shape would be predominantly determined by neighbouring cells and cell segmentation performance would decrease (Figure 4—figure supplement 1). Nuclei are less malleable and even in dense cultures remain largely separated, allowing their robust segmentation and avoiding CNN misclassifications resulting from segmentation errors. Hence, we asked whether using the nuclear ROI as input would improve classification performance at high densities. However, despite the relatively high average F-score of 0.91±0.05 (Figure 4C), the performance was consistently lower than whole cell ROI across the density range and the performance still decreased with full confluency. To understand these results, we inspected the GradCAM output for these predictions and found that an important part of the attention of the CNN was diverted to the background (Figure 4D, Figure 4—figure supplements 2–7). We interpret this result as the CNN using the background as a proxy for nuclear size. To rule out bias by setting the background to zero in nuclear crops, the CNN was also trained on the same crops with randomly speckled backgrounds, but despite a shift in attention to the nucleus, similar prediction performance was attained (Figure 3—figure supplement 1). The classification performance was not biased by segmentation errors (Figure 4—figure supplement 8A) but may be influenced by the fact that the nuclear area is affected by culture density (Figure 4—figure supplement 8B). In highly dense cultures, the dynamic range of the nuclear size reduces as all nuclei become more compact and the nuclear size range decreases (Figure 4—figure supplement 8B). Thence, we tested an intermediate condition which exploits the more robust nuclear segmentation but also includes part of the (sub-)cellular local surrounding information as input (Figure 4—figure supplement 8C). To identify the optimal patch size, we varied the size of a square box centred around the nuclear centroid from 0.6 to 150 µm (Figure 4E). Within a range of 12–18 µm, we found a maximal F-score of 0.96±0.02 (Figure 4E). Further increasing the nucleocentric patch size did not majorly affect the F-score but significantly decreased the precision and variability of recall for CNN predictions (Figure 4E). Hence, for further experiments, a nucleocentric patch size of 18 µm was used. GradCAM images revealed that this latter approach led the CNN to focus on perinuclear structures (Figure 4D and Figure 4—figure supplements 2–7). Interestingly, when using this nucleocentric approach, the prediction performance was maintained at almost confluent cell densities in contrast with whole cell approaches (Figure 4B). Thus, we conclude that using a nucleocentric region as input for the CNN is a valuable strategy for accurate cell type identification in dense cultures and that this method is not very sensitive to the patch size.
 
-## Cell prediction remains accurate in mixed cell culture conditions
+![Figure 4.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-v2.jpg)
+
+**Figure 4.:** (A) Selected images and insets for increasing culture density with the density categories used for CNN training. (B) Results of three CNN models trained using different regional inputs (the full cell, only nucleus, or nucleocentric area) and evaluated on data subsets with increasing density. Each dot represents the F-score of one classifier (model initialisation, N=3) tested on a density subset. Classifiers were trained with the same random seed. Ribbon represents the standard deviation. (C) CNN performance (F-score) of CNN models using different regional inputs (full cell, only nucleus, or nucleocentric area). Each boxplot represents three model initialisations for three different random seeds (N=9). (D) Images of example inputs for both the nuclear and nucleocentric regions. The composite image contains an overlay of all cell painting (CP) channels (top). The GradCAM image overlays the GradCAM heatmap on top of the composite image, highlighting the most important regions according to the CNN (bottom). One example is given per cell type. (E) Systematic in- and decrease (default of 18 µm used in previous panels) of the patch size surrounding the nuclear centroid used to determine the nucleocentric area. Each dot represents the results of one classifier (model initialisation, N=3). Ribbon represents the standard deviation. The analysis was performed using a mixed culture dataset of 1321N1 and SH-SY5Y cells (Figure 5).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Left: Representative images of 1321N1 cells with increasing density alongside their cell and nuclear mask produced using resp. Cellpose and Stardist. Images are numbered from 1 to 5 with increasing density. Upper right: The number of region of interests (ROIs) detected in comparison to the ground truth (manual segmentation). A ROI was considered undetected when the intersection over union (IoU) was below 0.15. Each bar refers to the image number on the left. The IoU quantifies the overlap between ground truth (manually segmented ROI) and the ROI detected by the segmentation algorithm. It is defined as the area of the overlapping region over the total area. IoU for increasing cell density for cell and nuclear masks is given in the bottom right. Each point represents an individual ROI. Each bar refers to the image number on the left.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-figsupp5-v2.jpg)
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-figsupp6-v2.jpg)
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-figsupp7-v2.jpg)
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** (A) Examples of segmentation mistakes made by the Stardist segmentation algorithm for nuclear segmentation for different culture densities. (B) Nuclear area in function of density. (C) Definition of cell regions given as training input for nuclear and nucleocentric model training.
+
+### Cell prediction remains accurate in mixed cell culture conditions
 
 Although a very high classification accuracy was obtained with nucleocentric CNN predictions, both training and testing were performed with input images drawn from monocultures. As our goal was to allow cell type prediction in complex, heterogeneous cultures, we next switched to a more faithful situation in which we co-cultured both cell types. Ground-truth for these predictions was generated by either performing post-hoc immunofluorescence (IF) staining with cell-type specific antibodies (CD44 for 1321N1 and TUBB3 for SH-SY5Y cells), or by differential replication labelling (i.e. by incubating the two cell types with EdU and BrdU, respectively, prior to mixing them), after dye quenching (Radtke et al., 2022; Figure 5A). Replication labelling proved significantly more successful for binary ground truth classification (through intensity thresholding) than IF staining for the cell lines we used (Figure 5B). When training a CNN to recognize the cell types using these markers as ground truth, we found that the prediction accuracy on the left-out dataset of the co-culture (Co2Co) was almost as high as when a model was trained and tested on monocultures (Mono2Mono) (Figure 5C). We then tested whether it was possible to train a classifier based on monocultures only, for cell type prediction of cells in co-culture (Mono2Co). This resulted in an F-score of 0.86±0.01%. This drop in performance may be caused by the effect on cell phenotype exerted by the presence of other cell types in mixed cultures which is not captured in monocultures. As the images from monocultures and co-cultures were obtained from different plates, we suspected inter-replicate variability in culture and staining procedures to contribute in part to the lesser performance. Therefore, we tested whether we could improve the performance of the CNN by including monocultures from the same plate as the co-cultures. This finetuning indeed improved the average performance to 0.88±0.01%, and more importantly, it significantly reduced the variability (coefficient of variation) of the predictions making it more reproducible (Figure 5C). Thus, while not yet reaching the same accuracy, it proves that it is possible to establish a model that recognises cell types in co-cultures while only having seen monoculture training data.
 
-## Cell-type profiling can be applied to stage iPSC-derived neuronal cultures
+![Figure 5.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic overview of virtual vs. physically mixed cultures and the subsequent convolutional neuronal network (CNN) models. For virtual mixing, individual cell types arise from distinct cultures, the cell type label was assigned based on the culture condition. For physical mixing, the true phenotype of each crop was determined by intensity thresholding after post-hoc staining. Three model types are defined: Mono2Mono (culture-based label), Co2Co (cell-based label), and Mono2Co (trained with culture-based label and tested on cell-based label). (B) Determining ground-truth phenotype by intensity thresholding on immunofluorescence staining (IF) (top) or pre-label (bottom). The threshold was determined on the intensity of monocultures. Only the pre-labelled ground-truth resulted in good cell type separation by thresholding for 1321N1 vs. SH-SY5Y cells. (C) Mono2Mono (culture-based ground truth) vs. Co2Co (cell-based ground truth) models for cell type classification. Analysis performed with full cell segmentation. Mann-Whitney-U-test p-value 0.0027. Monoculture-trained models were tested on mixed cultures. Pretrained models were trained on independent biological replicates. These could be finetuned by additional training on monoculture images from the same replicate as the coculture. This was shown to reduce the variation between model iterations (Median performance: Mann-Whitney-U-test, p-value 0.0015; Coefficient of variation: Mann-Whitney-U-test, p-value 3.48e-4). Each dot in the violinplots represents the F-score of one classifier (model initialisation, N=9). Classifiers were trained 3 x with three different random seeds.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Images before and after quenching for all four fluorescence channels. (B) Time curve of normalized image-level fluorescence intensity during incubation with 1 mg/ml LiBH4.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95273/elife-95273-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Pipeline used for morphological profiling in mixed cultures. (B) Overview of the steps within the image analysis pipeline. (C) Evaluation of accuracy, true negative, and true positive rate during convolutional neuronal network (CNN) training (1321N1 vs. SH-SY5Y in monocultures) across all 50 epochs.
+
+### Cell-type profiling can be applied to stage iPSC-derived neuronal cultures
 
 iPSC-derived neuronal cell cultures suffer from significant inter- and intra-batch variability and could benefit from an efficient quality control (Hernández et al., 2022; Volpato and Webber, 2020). Thence, we applied our nucleocentric phenotyping pipeline to stage the maturity of a neuronal cell culture based on its cell type composition. Using a guided protocol (Bell et al., 2019), two differentiation stages were simulated: a primed stage, where most cells are assumed to be cycling neural progenitors (NPCs), and a differentiated stage where most cells are post-mitotic neurons (Figure 6A). The two cell types were discriminated by post-hoc IF staining for the cell cycle marker Ki67 (NPC) and the microtubule marker ß-III-tubulin (TUBB3, neurons) (Figure 6B). Not all cells in the CP image could be assigned with a ground truth label due to cell detachment upon re-staining or sheer absence of the tested marker. Since no single monoculture consists of 100% of either cell type, we applied gates to retain only those cells that showed unequivocal staining for either one of both markers. Based on these gates, ROIs were either classified as neuron (Ki67-/TUBB3+), NPC (Ki67+/TUBB3-), or undefined (outside of gating boundaries). We assume the latter category to represent transitioning cells in intermediate stages of neural development, un- or dedifferentiated iPSCs. This gating strategy resulted in a fractional abundance of neurons vs. total (neurons+NPC) of 36.4% in the primed condition and 80.0% in the differentiated condition (Figure 6C). In a first attempt to classify cells within the guided culture, we trained a CNN on individual cell inputs using the culture condition (primed or differentiated) as ground truth, which given the heterogeneity, can be considered as a weak label. This resulted in an F-score of 0.86±.,01%. When we used the cell-level IF ground truth labels instead, we obtained a classification performance of 0.96±0.00%. For comparison, a shallow learner (RF), showed a significantly lower F-score of 0.87±0.02 (Figure 6D). Applying this cell-based (as opposed to condition-based) CNN to the two culture conditions resulted in a predicted fractional abundance of neurons to NPC of 40,5% in images of the primed condition and 74.2% in images of the differentiated condition – aligning well with the manually defined ratios (Figure 6E). Both supervised and unsupervised UMAP dimensionality reduction on the feature embeddings of the cell-based classifier revealed a clear clustering of both phenotypes suggesting that the CNN captures the differences in morphotextural fingerprint between neurons and NPCs well (Figure 6F). We then went on to evaluate the established cell-based classifier to a primed neuronal cell culture undergoing gradual spontaneous differentiation after dual SMAD inhibition Shi et al., 2012. We examined cell cultures at 13, 30, 60, and 90 days in vitro (DIV) after the start of the differentiation process and visually confirmed a gradual change in neural maturity by the progressive increase of cells with smaller somas and long, thin ramifications (Figure 6G). The slower shift in the neuron-to-NPC fractional abundance with increasing time in this spontaneous differentiation setting was confirmed by the cell-based CNN model trained on the guided differentiation dataset Figure 6H. This illustrates the generalizability and transferability of cell type profiling for iPSC-derived neuronal culture staging.
 
@@ -55,7 +251,7 @@ iPSC-derived neuronal cell cultures suffer from significant inter- and intra-bat
 
 **Figure 6.:** (A) Schematic overview of guided vs. spontaneous neural differentiation. DIV = days in vitro. Selected timepoints for analysis of the spontaneously differentiation culture were 13, 30, 60, and 90 d from the start of differentiation of iPSCs. (B) Representative images of morphological staining (colour code as defined in Figure 1A) and post-hoc immunofluorescence staining (IF) of primed and differentiated iPSC-derived cultures (guided differentiation). Ground-truth determination is performed using TUBB3 (for mature neurons) and Ki67 (mitotic progenitors). (C) Fraction of neurons vs. neural progenitor (NPC) cells in the primed vs. differentiated condition as determined by IF staining. Upon guided differentiation, the fraction of neurons increased. (D) Left: CNN performance when classifying neurons (Ki67-/TUBB3+) vs. NPC (Ki67+/TUBB3-) cells using either a condition-based or cell-type-based ground truth. Each dot in the violinplots represents the F-score of one classifier (model initialisation). Classifiers were trained with different random seeds. Mann-Whitney-U-test, p-value 4.04e-4. Right: comparison of CNN vs. RF performance. Mann-Whitney-U-test, p-value 2.78e-4. (E) Fractional abundance of predicted cell phenotypes (NPC vs. neurons) in primed vs. differentiated culture conditions using the cell-based CNN. (F) Unsupervised and supervised UMAP of the cell-based CNN feature embeddings. Plot colour-coded by cell type. Points represent individual cells. (G) Representative images of spontaneously differentiating neural cultures. Colour code as defined in Figure 1A. (H) Prediction of differentiation status using the cell-based CNN model trained on guided differentiated culture.
 
-## Cell type identification can be applied to mixed iPSC-derived neuronal cultures regardless of the activation state
+### Cell type identification can be applied to mixed iPSC-derived neuronal cultures regardless of the activation state
 
 Next to NPCs and neurons, iPSC-derived neuronal cultures are often studied in conjunction with other relevant cell types that influence neuronal connectivity and homeostasis such as astrocytes and microglia (Kuijlaars et al., 2016). Therefore, we tested whether the cell-based approach could be extended to these cell types as well. We generated monocultures of iPSC-derived astrocytes, neurons, and microglia from the same parental iPSC line (Figure 7A) and trained a nucleocentric CNN to identify each cell type. This led to a prediction accuracy of 96.81±0.95% (Figure 7A). Recognizing that these cell types are visibly morphologically distinct, we tested the robustness of the model to experimental perturbations in cell state (Figure 7B). To this end, we induced reactivity in the iPSC-derived microglial culture by LPS treatment. A CNN trained on monocultures of neurons, unchallenged or LPS-treated microglia showed high accuracy in differentiating neurons from microglia (98% accurate), although the difference between reactive and resting-state microglia in this tripartite model proved more challenging (71% and 90% accuracy, resp.). Repeating those experiments in mixed cultures of neurons and microglia (using Tubb3, resp. Iba1 as ground-truth IF markers), yielded an F-score of 0.98±0.01 for the classification of neurons vs. microglia (for comparison, a classical RF approach only returned an F-score of 0.86±0.03) (Figure 7C). In the presence of LPS, the CNN model yielded a high F-score of 0.97±0.01 (Figure 7C). This implies that the shift in cell state does not significantly affect the CNN’s ability to distinguish neurons from microglia. When implementing a tiered approach, in which after neuron-microglia recognition a second model was tasked with the classification of reactive vs. resting state microglia without the presence of neurons, this phenotype proved more challenging for the CNN to predict, as evidenced by an F-score of 0.80±0.01 (Figure 7C). Based on these results, we conclude that nucleocentric phenotyping can be used to gauge the cell type composition of iPSC-derived cultures. Different states of individual cell types can also be recognized albeit with lower performance.
 
@@ -79,7 +275,7 @@ In conclusion, we have developed a novel application for unbiased morphological 
 
 ## Methods
 
-## Cell culture
+### Cell culture
 
 Cells were cultured at 37 °C and 5% CO2. 1321N1 (RRID:CVCL_0110; cat. nr.: 86030402) and SH-SY5Y (RRID:CVCL_0019; cat.nr.: 94030304) cell lines were maintained in DMEM-F12 +Glutamax (Gibco, 10565018) supplemented with 10% Fetal Bovine Serum (Gibco, 10500064). Their identity has been authenticated by the supplier (ATCC) and regular mycoplasma checks were performed. Cell seeding prior to imaging was done in 96-well black multiwell plates with #1.5 glass-like polymer coverslip bottom (Cellvis, P96-1.5P). Only the inner 60 wells were used, while the outer wells were filled with PBS-/- to avoid plate effects. Plates were coated with Matrigel (Corning, 734–1440) After seeding, the imaging plate was centrifuged at 100 g for 3 min.
 
@@ -91,80 +287,431 @@ Guided iPSC differentiation to neurons was performed according to Bell et al., 2
 
 Differentiation of iPSC to microglia (Haenseler et al., 2017) was performed by the formation of embroid bodies (EBs) with 10e3 iPSCs/well in a 96-well U-bottom plate (Corning, 351177) coated with Anti-Adherence Rinsing Solution (Stemcell technologies, 07010) in mTeSR medium supplemented with Rock inhibitor, 50 ng/mL BMP4 (Peprotech, 120–05), 50 ng/mL VEGF (Peprotech, 100–20), 20 ng/mL SCF (Peprotech, 250–03). 75% medium is changed for four consecutive days. After mesoderm induction, EBs are transferred to a six-well plate with 20 EBs/well and placed in macrophage precursor medium (X-vivo15 (Lonza, BE02-060Q), 100 ng/mL M-CSF (Peprotech, 300–25), 25 ng/mL IL-3 (Peprotech, 213–13), 1 x Glutamax, 50 U/ml Penicillin-Streptomycin, 50 μM 2-Mercaptoethanol). 14 d after macrophage differentiation, macrophage precursors were harvested using a cell strainer (Stemcell technologies, 27250). Macrophage precursors were added to the NPC culture in 1:1 neural maintenance medium:microglia medium (DMEM-F12 + Glutamax, 100 ng/mL M-CSF (Peprotech, 300–25), 100 ng/mL IL-34 (Peprotech, 200–34), 1 x Glutamax, 50 U/ml Penicillin-Streptomycin, 50 μM 2-Mercaptoethanol).
 
-## Replication labelling
+### Replication labelling
 
 Prior to co-seeding of 1321N1 and SH-SY5Y mixed cultures, individual cultures were incubated with either 10 µM EdU (Click-iT EdU Imaging Kit, Life Technologies, C10340) or 10 µM BrdU (Sigma-Aldrich, B5002) for 24 h. This incubation time exceeded the doubling time, allowing incorporation of the nucleotide analog in all cells. This labelling period was followed by a 24 hr washout period in a regular cell culture medium. After washout, the cells were subcultured and plated in coculture. In half of the replicate, SH-SY5Y cells received BrdU while 1321N1 cells received EdU. For the remainder of the wells, the pre-label switched cell types.
 
-## Morphological staining
+### Morphological staining
 
 Morphological staining (cell painting) was adapted from Bray et al., 2016. After careful titration, all dye concentrations were adjusted and evaluated for compatibility with the 4-channel laser and filter combinations available on the confocal microscope (see further). Staining was performed on cell cultures fixed in 4% PFA (roti-histofix 4% paraformaldehyde, Roth, 3105.2) for 15 min. Cells were rinsed once with PBS-/- (Life Technologies, 10010015) prior to fixation and 3×5 min post-fixation. Staining solutions were prepared fresh before staining in PBS-/- with 0.3% Triton-X-100 (Sigma-Aldrich, X100) (Table 2). Each staining solution was incubated for 30 min on a shaker at RT in the dark. After staining, the cells were washed 1 x with PBS -/- and sealed for imaging.
 
-## Cyclic staining and immunocytochemistry
+**Table 2.**
+ Specifications of morphological staining composition.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">Staining solution 1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dye</td>
+      <td>Target</td>
+      <td>Excitation (nm)</td>
+      <td>Emission (nm)</td>
+      <td>Stock concentration</td>
+      <td>End dilution</td>
+      <td>Supplier</td>
+      <td>Catalog #</td>
+    </tr>
+    <tr>
+      <td>DAPI</td>
+      <td>Nucleus</td>
+      <td>350</td>
+      <td>470</td>
+      <td>2.5 mg/ml</td>
+      <td>1/500</td>
+      <td>Sigma Aldrich</td>
+      <td>D9542</td>
+    </tr>
+    <tr>
+      <td>Concanavalin</td>
+      <td>ER</td>
+      <td>480</td>
+      <td>490–540</td>
+      <td>5 mg/ml</td>
+      <td>1/300</td>
+      <td>Life Technologies</td>
+      <td>C11252</td>
+    </tr>
+    <tr>
+      <td>WGA</td>
+      <td>Golgi</td>
+      <td>550</td>
+      <td>560–570</td>
+      <td>1 mg/ml</td>
+      <td>1/600</td>
+      <td>Life Technologies</td>
+      <td>W32464</td>
+    </tr>
+    <tr>
+      <td>Phalloidin</td>
+      <td>Actin</td>
+      <td>570</td>
+      <td>580–610</td>
+      <td>66 µM</td>
+      <td>1/1000</td>
+      <td>Life Technologies</td>
+      <td>A12380</td>
+    </tr>
+    <tr>
+      <td>Mitotracker</td>
+      <td>Mitochondria</td>
+      <td>640</td>
+      <td>650–660</td>
+      <td>1 mM</td>
+      <td>1/1000</td>
+      <td>Life Technologies</td>
+      <td>M22426</td>
+    </tr>
+    <tr>
+      <td colspan="8">Staining solution 2</td>
+    </tr>
+    <tr>
+      <td>Syto14</td>
+      <td>Nucleoli/RNA</td>
+      <td>525</td>
+      <td>540–580</td>
+      <td>5 mM</td>
+      <td>1/1000</td>
+      <td>Life Technologies</td>
+      <td>S7576</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cyclic staining and immunocytochemistry
 
 Cyclic staining is executed by fluorescence quenching after each sequential imaging round. 1 mg/ml in ddH2O LiBH4 solution (Radtke et al., 2022) (Acros Organics, 206810050) was prepared fresh before use. 1.5 hr incubation of quenching solution was performed before each successive staining series. After incubation, the quenching solution was removed by washing 3×5 min in PBS-/-. Successful fluorescence quenching was microscopically verified before proceeding with immunofluorescence staining (IF) (Table 3, Figure 5—figure supplement 1).
+
+**Table 3.**
+ Used antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Antibody</th>
+      <th>Host</th>
+      <th>Supplier</th>
+      <th>Catalog #</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Primary antibodies</td>
+      <td>Anti-BrdU</td>
+      <td>Sheep</td>
+      <td>Abcam</td>
+      <td>ab1893</td>
+      <td>AB_302659</td>
+    </tr>
+    <tr>
+      <td>Anti-MAP2</td>
+      <td>Chicken</td>
+      <td>Synaptic systems</td>
+      <td>188006</td>
+      <td>AB_2619881</td>
+    </tr>
+    <tr>
+      <td>Anti-TUBB3</td>
+      <td>Mouse</td>
+      <td>BioLegend</td>
+      <td>801202</td>
+      <td>AB_2313773</td>
+    </tr>
+    <tr>
+      <td>Anti-CD44</td>
+      <td>Mouse</td>
+      <td>Millipore</td>
+      <td>MAB4065</td>
+      <td>AB_95019</td>
+    </tr>
+    <tr>
+      <td>Anti-GFAP</td>
+      <td>Goat</td>
+      <td>Abcam</td>
+      <td>ab53554</td>
+      <td>AB_880202</td>
+    </tr>
+    <tr>
+      <td>Anti-Iba1</td>
+      <td>Rabbit</td>
+      <td>Wako</td>
+      <td>019–19741</td>
+      <td>AB_839504</td>
+    </tr>
+    <tr>
+      <td>Anti-Ki67</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>ab15580</td>
+      <td>AB_443209</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Secondary antibodies</td>
+      <td>Anti-mouse-Cy3</td>
+      <td>Donkey</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>715-165-150</td>
+      <td>AB_2340813</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse-Cy5</td>
+      <td>Donkey</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>715-175-150</td>
+      <td>AB_2340819</td>
+    </tr>
+    <tr>
+      <td>Anti-sheep-Cy3</td>
+      <td>Donkey</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>713-165-147</td>
+      <td>AB_2315778</td>
+    </tr>
+    <tr>
+      <td>Anti-sheep-Cy5</td>
+      <td>Donkey</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>713-175-147</td>
+      <td>AB_2340730</td>
+    </tr>
+    <tr>
+      <td>Anti-chicken-Cy5</td>
+      <td>Donkey</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>703-175-155</td>
+      <td>AB_2340365</td>
+    </tr>
+    <tr>
+      <td>Anti-goat-Cy3</td>
+      <td>Donkey</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>705-165-147</td>
+      <td>AB_2307351</td>
+    </tr>
+    <tr>
+      <td>Anti-Guinea pig-Cy3</td>
+      <td>Donkey</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>706-165-148</td>
+      <td>AB_2340460</td>
+    </tr>
+    <tr>
+      <td>Anti-Rabbit-Cy5</td>
+      <td>Donkey</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>711-175-152</td>
+      <td>AB_2340607</td>
+    </tr>
+  </tbody>
+</table>
 
 Cells are treated with PAV blocking buffer (Thimerosal 0.5% (Fluka, 71230), NaN3 0.1% (Merck, k 6688), Bovine serum albumin (Sigma-Aldrich, A7284), Normal horse serum, PBS-/-) for 8 min. The desired primary antibodies (pAB) are diluted in PAV blocking buffer. pAB incubation was performed 12 hr (overnight) at 4 °C after which the cells were washed 1×5 min in PBS-/- followed by incubation in secondary antibody solution (sAB) in PAV + DAPI for nuclear counterstain. sAB staining was performed for 3 hr at RT while shaking. Prior to imaging, the cells were washed 2 x with PBS-/- and stored in PBS-/- +0,1% NaN3.
 
 BrdU staining was performed using IF, requiring DNA denaturation before pAB incubation. This was performed by 10 min incubation with 2 N HCl at 37 °C. HCl was neutralized with 0.1 M sodium borate buffer pH 8.5 for 30 min at RT. Cells were washed 3×5 min in PBS-/- before continuing with the general IF protocol. EdU click-it labelling was performed according to the manufacturer’s instructions (Click-iT EdU Imaging Kit, Life Technologies, C10340) (Figure 5—figure supplement 2A).
 
-## Image acquisition
+### Image acquisition
 
 Images were acquired using a spinning disk confocal microscope (Nikon CSU-W1 SoRa) with a 20×0.75 NA objective (Plan APO VC 20 x DIC N2) and Kinetix sCMOS camera (pinhole 50 µm; disk speed 4000 rpm; pinhole aperture 10; bit depth 12-bit, pixel size 0.325 µm²). We opted for confocal microscopy instead of widefield to overcome image quality limitations resulting from highly dense cell clusters. 96-well plates were scanned, capturing a minimum of 16 images per well spread in a regular pattern (0,8 mm spacing in x and y) across the surface of the well. If multiple z-slices were acquired (to correct for surface inclinations in the field of view), a maximum projection was performed before further analysis. Morphological images were acquired in all four channels. (Table 4).
 
-## Software
+**Table 4.**
+ Specifications of the used laser lines, excitation, and emission filters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Channel dimension</th>
+      <th>Laser line (nm)</th>
+      <th>Excitation filter (nm)</th>
+      <th>Emission filter (nm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Channel 1</td>
+      <td>405</td>
+      <td rowspan="4">Di01-T405/488/568/647−13x15 × 0.5</td>
+      <td>B447/60</td>
+    </tr>
+    <tr>
+      <td>Channel 2</td>
+      <td>488</td>
+      <td>B520/35</td>
+    </tr>
+    <tr>
+      <td>Channel 3</td>
+      <td>561</td>
+      <td>B617/73</td>
+    </tr>
+    <tr>
+      <td>Channel 4</td>
+      <td>640</td>
+      <td>B685/40</td>
+    </tr>
+  </tbody>
+</table>
+
+### Software
 
 Images were captured by the Nikon CSU-W1 confocal system in combination with the NIS elements software (RRID:SCR_014329). Image visualisation was later performed using Fiji freeware (Rueden et al., 2017; Schindelin et al., 2015). In-depth image analysis, pre-processing and machine learning for cell classification were performed using Python programming language (Rossum and Drake, 2009) in combination with Anaconda (Anaconda Software Distribution, 2024) (distribution and package managing software) and Visual Studio Code (code editor). The packages and versions used for data analysis are shown in Table 5.
 
-## Image pre-processing (Figure 5—figure supplement 2B)
+**Table 5.**
+ Python packages used for image and data analysis alongside the software version.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Package</th>
+      <th>Version</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pathlib</td>
+      <td>1.0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>numpy</td>
+      <td>1.21.2</td>
+      <td>Harris et al., 2020</td>
+    </tr>
+    <tr>
+      <td>tifffile</td>
+      <td>2021.7.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pytorch</td>
+      <td>1.13.0</td>
+      <td>Paszke et al., 2019</td>
+    </tr>
+    <tr>
+      <td>torchvision</td>
+      <td>0.14.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>nd2reader</td>
+      <td>3.3.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>matplotlib</td>
+      <td>3.5.2</td>
+      <td>Hunter, 2007</td>
+    </tr>
+    <tr>
+      <td>scikit-image</td>
+      <td>0.19.3</td>
+      <td>Van der Walt et al., 2014</td>
+    </tr>
+    <tr>
+      <td>scikit-learn</td>
+      <td>1.1.3</td>
+      <td>Pedregosa et al., 2011</td>
+    </tr>
+    <tr>
+      <td>argparse</td>
+      <td>1.4.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cellpose</td>
+      <td>2.1.1</td>
+      <td>Stringer et al., 2021</td>
+    </tr>
+    <tr>
+      <td>tqdm</td>
+      <td>4.64.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>scipy</td>
+      <td>1.9.3</td>
+      <td>Virtanen et al., 2020</td>
+    </tr>
+    <tr>
+      <td>pandas</td>
+      <td>1.5.1</td>
+      <td>McKinney, 2010</td>
+    </tr>
+    <tr>
+      <td>seaborn</td>
+      <td>0.12.1</td>
+      <td>Waskom et al., 2022</td>
+    </tr>
+    <tr>
+      <td>imbalanced-learn</td>
+      <td>0.10.0</td>
+      <td>Lemaître et al., 2017</td>
+    </tr>
+    <tr>
+      <td>StarDist</td>
+      <td>0.8.5</td>
+      <td>Weigert et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
+
+### Image pre-processing (Figure 5—figure supplement 2B)
 
 Note: All image and data analysis scripts are available on GitHub. See further the data availability statement.
 
-## Cell/nuclear segmentation
+#### Cell/nuclear segmentation
 
 Using a tailor-made script implementing the Cellpose (Stringer et al., 2021) (cell segmentation) or StarDist (Weigert et al., 2020) (nuclear segmentation) package, images were pre-processed by normalizing the intensity values of each channel between the first and 99th quantile. Individual channels or channel combinations for segmentation can be selected depending on the desired outcome mask. Resulting outputs included the segmentation mask alongside the quality control images. For Stardist implementation, hyperparameter probability was set at 0.6 and overlap at 0.3. For Cellpose segmentation, four models (cyto2) were averaged to obtain the final mask. Segmentation was performed on the composite of all CP channels. An estimation of the cell’s diameter could be included to optimize cell detection. Cell segmentation was performed using Cellpose and used in all cases where the whole-cell crop was given as input to the CNN or data from the whole cell was used for feature extraction for RF (Figures 1—4). Nuclear segmentation was performed using Stardist and used for nuclear and nucleocentric crops (Figures 4—7).
 
-## Ground truth alignment
+#### Ground truth alignment
 
 Following sequential staining and imaging rounds, multiple images were captured representing the same cell with different markers. Lifting the plate of the microscope stage and imaging in sequential rounds after several days results in small linear translations in the exact location of each image. These linear translations need to be corrected to align morphological with ground truth image data within the same ROI. All images were aligned using Fourier-based image cross correlation on the intensity-normalized multichannel images. The alignment shift between image1 and image2 was determined using scikit-image phase cross correlation. Image2 was then moved according to the predetermined shift to align morphological with ground truth images.
 
-## Ground truth phenotyping
+#### Ground truth phenotyping
 
 The true cell phenotype was determined by the fluorescence intensity of the post-hoc immunostaining with class-specific markers or pre-labelling with Edu/Brdu. In this latter case, the base analogues were incorporated into each cell line prior to mixing them, i.e., when they were still growing in monoculture so they could be labelled and identified after co-seeding and morphological profiling. Each ground truth image was imported alongside the corresponding cell mask for that image. For each cell label, the fluorescence intensity was determined and tabulated. The threshold was set manually based on the fluorescence intensity of the monoculture controls. Ground truth labels were assigned to each region of interest (ROI).
 
-## Feature extraction
+#### Feature extraction
 
 Handcrafted features were extracted using the scikit-image package (regionprops and GLCM functions). The definition of each feature extracted from the image is listed in Table 1. All features were extracted for each channel in the cell painting image and for every region (cell, cytoplasm, and nucleus) within the ROI.
 
-## Data filtering
+#### Data filtering
 
 Over the entire pipeline, ROIs could be discarded based on 3 conditions: (1) Cell detachment. Due to the harsh sample preparation and repeated washing steps, cells could detach from the imaging substrate thus resulting in lack of ground truth information for those cells. As a result, all ROIs for which there was no DAPI signal detected in the ground truth image, were removed from the dataset as incomplete. (2) Cells for which the ground truth fluorescence intensity was ambiguous. Ground truth labels were determined based on the presence of specific IF staining in either of the phenotype classes. If no class-specific IF staining was detected by thresholding, no true label could be assigned. These ROIs were, therefore, discarded due to uncertainty. (3) Likelihood of faulty ROI detection. The DAPI signal was used to discard ROIs that do not represent (complete) cells by thresholding on minimal DAPI intensity (mean nuclear DAPI intensity >500) and minimal nuclear size (nuclear area >160).
 
-## ROI classification
+### ROI classification
 
-## Train-validation-test split
+#### Train-validation-test split
 
 Model training requires splitting the available data in three subsets: training (60%), validation (10%), and testing (30%). The training dataset was used to train the machine learning models (either RF or CNN). The validation dataset, composing of 10% of the total data, was used to determine the hyperparameters and intermediate testing. The remaining 30% of the dataset was kept apart and used to test the final model when training is completed. For both RF and CNN, the testing dataset was never shown to the model during the training phase, but only used after training to determine the accuracy of predictions to the ground truth. The number of instances for each class was equalized by sampling equal number of instances from each predicted class. To account for variation between technical replicates, the train-validation-test split was stratified per well. As a result, no datapoints arising from the same well could appear simultaneously in the training, validation and testing subset. This data stratification was repeated 3 times with different random seeds (see Methods – Reproducibility).
 
-## Random forest
+#### Random forest
 
 For each ROI, a set of manually defined parameters was extracted corresponding to cell shape (area, convex area, filled area, length minor axis, length major axis, centroid, eccentricity, equivalent diameter area, ferret diameter max, orientation, perimeter, solidity), texture (GLCM: contrast, dissimilarity, homogeneity, energy, correlation, ASM) and intensity (maximal intensity, minimal intensity, mean intensity, standard deviation intensity). This was done for three regions (nucleus, cytoplasm and complete cell), and for all channel dimensions. Redundant parameters could be removed if above a 0.95 correlation threshold. All parameters were standardized per ROI, grouped per replicate. The number of trees within the forest was varied between 10 and 150, reaching maximum accuracy at around 30 trees.
 
-## Uniform manifold approximation and projection
+#### Uniform manifold approximation and projection
 
 Dimensionality reduction using UMAP was performed using either the same feature matrix as used for RF prediction or the feature embeddings from the trained CNN classification network. Hyperparameters were set at the default settings.
 
-## Convolutional neural network
+#### Convolutional neural network
 
 A ResNet50 model was trained for image classification. In contrast to classical machine learning techniques, no handcrafted features were extracted. Crops were defined based on the segmentation mask for each ROI. The bounding box was cropped out of the original image with a fixed patch size (60 µm for whole cells, 18 µm for nucleus and nucleocentric crops) surrounding the centroid of the segmentation mask. For the whole cell and nuclear crops, all pixels outside of the segmentation mask were set to zero. This was not the case for the nucleocentric crops. Each ROI was cropped out of the original morphological image and associated with metadata corresponding to its ground truth label. Images alongside their labels were fed to the network. Tensors were normalized per channel. Models are trained on a minimum of 5000 training inputs of each class for 50 epochs (training iterations). Each batch consisted of 100 samples. The training input was augmented by linear transformations (horizontal and vertical flip, random rotation). Each epoch, the current model was tested against a validation dataset (Figure 5—figure supplement 2C). The performance of the model on this validation subset determined whether the model was stored as new best (if the new accuracy exceeded the accuracy of the previous best model) or discarded. The learning rate at the start was set at 0,0001 and automatically reduced with a factor of 0,1 during training when no improvement was seen after 10 epochs. After 50 epochs, the best resulting model was tested on a separate test dataset to determine the accuracy on previously unseen data.
 
-## GradCAM
+### GradCAM
 
 GradCAM analysis was used to visualize the regions used by the CNN for classification. This map is specific to each cell. Images are selected randomly out the full dataset for visualisation. To avoid cherry-picking, a set of GradCam maps is reported alongside the random seed used for image selection.
 
-## Reproducibility
+### Reproducibility
 
 Each model training was performed three independent times (model initialisations, repetitions are indicated with ‘N’ on the figures). This was repeated for three different random seeds. Each model received input data arising from a minimum of 16 images per well, at least 15 technical replicates (wells). The optimisation experiments (Figures 1—4) were performed with cell lines with limited variability. These models were trained on 3 independent experiments where ground truth pre-labelling (Edu/BrdU) was performed at least once on either of the cell lines in coculture. For iPSC-derived cultures, as variability is inherent to these differentiations, three biological replicates (independent differentiations) were pooled for model training.
 
-## Statistics
+### Statistics
 
 All statistical comparisons were made nonparametric using Mann-Whitney U (for two independent sample comparison) or Kruskal-Wallis (for multiple sample comparison) with pairwise tests using Tukey’s honestly significant difference test. We opted for nonparametric testing because the number of models in each group to be compared was <15. Significance levels are indicated on the figures using ns. (no statistical significance, p-value above 0.05), *(p-value between 0.05 and 5e-4), **(p-value between 5e-4 and 5e-6), and ***(p-value smaller than 5e-6). Error bars in the figures show standard deviation.

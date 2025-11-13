@@ -14,8 +14,8 @@
 ### Affiliations
 
 1. Cancer Research UK Scotland Institute, Garscube Estate, Switchback Road Glasgow United Kingdom
-2. https://ror.org/00vtgdb53 School of Cancer Sciences, University of Glasgow Glasgow United Kingdom
-3. https://ror.org/00vtgdb53 School of Molecular Biosciences, University of Glasgow Glasgow United Kingdom
+2. School of Cancer Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+3. School of Molecular Biosciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
 
 † Corresponding author
 
@@ -33,9 +33,274 @@ DTX3L has a unique N-terminus lacking the WWE domains and proline-rich regions f
 
 ## Results
 
-## DTX3L binds and ubiquitinates ssRNA and ssDNA
+### DTX3L binds and ubiquitinates ssRNA and ssDNA
 
 To gain insight into the function of DTX3L, we took the AlphaFold-predicted structural domains of DTX3L (Figure 1A) and conducted a search on the DALI server to compare the proposed 3D domains of DTX3L to structures in the Protein Data Bank (PDB). Several of these domains share structural similarities to KH domains (Figure 1B and C) with the N-terminal domain resembling an RRM. KH domains, which bind both ssRNA (Baber et al., 1999) and ssDNA (Baber et al., 2000), comprise a three-stranded anti-parallel β-sheet packed alongside three α-helices whereas RRMs are composed of two α-helices and four anti-parallel strands packed together in a β-α-β-β-α-β fold (Cléry et al., 2008). To determine if DTX3L binds ssRNA or ssDNA, we used ssDNA and ssRNA oligonucleotides labelled with 6-FAM on the 5’-end (D1-D9 and R1-R9, respectively; Table 1; Figure 1—figure supplement 1A) and either full-length (FL) DTX3L or a truncated 232-C construct containing the two tandem KH-like (KHL) domains and C-terminal RING-DTC that is competent in binding PARP9 (Ashok et al., 2022). Both DTX3L constructs bound to all tested sequences of ssRNA and ssDNA, inducing at least a twofold change in polarisation (Figure 1D and E; Figure 1—figure supplement 1B, C). Likewise, at least a twofold change in polarisation was observed when DTX3L-PARP9 complex binding was tested with these nucleic acids, demonstrating that PARP9 does not occlude ssDNA or ssRNA binding by DTX3L (Figure 1—figure supplement 1D, E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/98070/elife-98070-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon representation of the AlphaFold model of DTX3L. Domains are coloured according to model confidence. Domain architecture of DTX3L constructs is shown above the model. (B) DTX3L KHL2 (232-304) prediction shown in green overlaid with the third K Homology (KH) domain of KSRP in complex with AGGGU RNA sequence (PDB 4B8T) shown in brown. (C) DTX3L KHL5 (448-511) prediction shown in green overlaid with the MEX-3C KH1 domain in complex with GUUUAG RNA sequence (PDB 5WWW) shown in purple. (D) Fold change of fluorescence polarisation of 6-FAM-labelled ssDNA D1-9 upon titrating with full-length DTX3L. (E) As in (D) but with 6-FAM-labelled ssRNA R1-9. Data points for (D) and (E) are shown in Figure 1—source data 1 and 2, respectively. (F) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D1-9 oligonucleotides by FL DTX3L in the presence of E1, UBE2D2, Ub, Mg2+-ATP. (G) As in (F) but with 6-FAM-labelled ssRNA R1-9 oligonucleotides. (H) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by DTX3L variants (FL, full length; RD, RING-DTC domains; R, RING domain; D, DTC domain) in the presence of E1, UBE2D2, Ub, Mg2+-ATP. (I) As in (H) but with 6-FAM-labelled ssRNA R4. (J) Coomassie-stained SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by DTX3L-RD in the presence of E1, UBE2D2, Ub, and Mg2+-ATP. (K) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 5’ IRDye 800 ssDNA D10 by DTX3L-RD in the presence of E1, UBE2D2, Ub, Mg2+-ATP. (L) Coomassie-stained SDS-PAGE gel of in vitro ubiquitination of ssDNA D11 by DTX3L-RD in the presence of E1, UBE2D2, Ub, and Mg2+-ATP. Asterisks in (F) and (H) indicate contaminant bands from single-stranded DNA (ssDNA) or single-stranded RNA (ssRNA). Raw unedited and uncropped gel images for (F–L) are shown in Figure 1—source data 3 and 4, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98070/elife-98070-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the 5’ 6-FAM modification. (B) Fold change of fluorescence polarisation of 6-FAM-labelled single-stranded DNA (ssDNA) D1-9 oligonucleotides upon titrating with DTX3L 232-C. (C) As in (B) but with 6-FAM-labelled ssRNA R1-9 oligonucleotides. (D) As in (B) but with DTX3L 232-C/PARP9 509-C. (E) As in (D) but with 6-FAM-labelled single-stranded RNA (ssRNA) R1-9. Data points for (B–E) are shown in Figure 1—figure supplement 1—source data 1–4, respectively. (F) Schematic of RNA, DNA, and ADPr. (G) Fluorescently detected SDS-PAGE gel of in vitro autoubiquitination of DTX3L FL and 232-C in the presence of E1, UBE2D2, fluorescent-labelled Ub and Mg2+-ATP. (H) Coomassie-stained SDS-PAGE gel of lysine discharge reactions showing the disappearance of UBE2D2~Ub over time in the presence of FL, 232-C or absence of E3. (I) Coomassie-stained SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by DTX3L variants in the presence of E1, UBE2D2, Ub, Mg2+-ATP (from Figure 1H). Arrows indicate potential ~15 kDa Ub-DNA band. (J) Schematic of IRDye 800 modification. (K) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D1-9 in the presence of E1, UBE2D2, Ub, Mg2+-ATP by DTX3L-RD. (L) Schematic of the 3’ 6-FAM modification. Asterisks in (K) indicate contaminant band from ssDNA. Raw unedited and uncropped gel images of (G–I), (K) are shown in Figure 1—figure supplement 1—source data 5 and 6, respectively.
+
+**Table 1.**
+ List of nucleotide sequences used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Sequence</th>
+      <th>Modifications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D1</td>
+      <td>ssDNA</td>
+      <td>5’ TGTTTGTTTGTTTGTTTGTT 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>ssDNA</td>
+      <td>5’ GCGCGCGCGCGCGCGCGCGC 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D3</td>
+      <td>ssDNA</td>
+      <td>5’ AGTGAGTGAGTGAGTGAGTG 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D4</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D5</td>
+      <td>ssDNA</td>
+      <td>5’ AGAGAGAGAGAGAGAGAGAG 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D6</td>
+      <td>ssDNA</td>
+      <td>5’ TCTCTCTCTCTCTCTCTCTC 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D7</td>
+      <td>ssDNA</td>
+      <td>5’ TTTTTTTTTTTTTTTTTTTT 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D8</td>
+      <td>ssDNA</td>
+      <td>5’ GTGCTGCGCTGCGCTGTGCT 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D9</td>
+      <td>ssDNA</td>
+      <td>5’ AAAAAAAAAAAAAAAAAAAA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D10</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’</td>
+      <td>5’ IRDye 800</td>
+    </tr>
+    <tr>
+      <td>D11</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>D12</td>
+      <td>dsDNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’ +3’ TGTTGTTGTTGTTGTTGTTG 5’</td>
+      <td>5’ FAMNone</td>
+    </tr>
+    <tr>
+      <td>D13</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’</td>
+      <td>3’ FAM</td>
+    </tr>
+    <tr>
+      <td>D14</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’</td>
+      <td>5’ IRD800 3’ 2FA</td>
+    </tr>
+    <tr>
+      <td>D15</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’</td>
+      <td>5’ IRDye 800 3’ Phos</td>
+    </tr>
+    <tr>
+      <td>D16</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACT 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D17</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACG 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D18</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACC 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D19</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAAAA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D20</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAATA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D21</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAAGA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D22</td>
+      <td>ssDNA</td>
+      <td>5’ CAACA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D23</td>
+      <td>ssDNA</td>
+      <td>5’ AACAACAACA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D24</td>
+      <td>ssDNA</td>
+      <td>5’ AACAACAACAACAACAACAACAACAACAACAACAACAACA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D25</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACAACA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D26</td>
+      <td>ssDNA</td>
+      <td>CGGCACATCACTCTTCAACA</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>D27</td>
+      <td>dsDNA</td>
+      <td>5’ CGGCACATCACTCTTCAACA 3’ +5’ GTTGAAGAGTGATGTGCCG 3’</td>
+      <td>5’ FAMNone</td>
+    </tr>
+    <tr>
+      <td>D28</td>
+      <td>dsDNA</td>
+      <td>5’ CGGCACATCACTCTTCAACA 3’ +5’ TTGAAGAGTGATGTGCCG 3’</td>
+      <td>5’ FAMNone</td>
+    </tr>
+    <tr>
+      <td>D29</td>
+      <td>dsDNA</td>
+      <td>5’ CGGCACATCACTCTTCAACA 3’ +5’ TGAAGAGTGATGTGCCG 3’</td>
+      <td>5’ FAMNone</td>
+    </tr>
+    <tr>
+      <td>D30</td>
+      <td>ssDNA</td>
+      <td>CAACA</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>D31</td>
+      <td>ssDNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’</td>
+      <td>3’ Phos</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>ssRNA</td>
+      <td>5’ UGUUUGUUUGUUUGUUUGUU 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td>ssRNA</td>
+      <td>5’ GCGCGCGCGCGCGCGCGCGC 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>R3</td>
+      <td>ssRNA</td>
+      <td>5’ AGUGAGUGAGUGAGUGAGUG 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>R4</td>
+      <td>ssRNA</td>
+      <td>5’ CAACAACAACAACAACAACA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>R5</td>
+      <td>ssRNA</td>
+      <td>5’ AGAGAGAGAGAGAGAGAGAG 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>R6</td>
+      <td>ssRNA</td>
+      <td>5’ UCUCUCUCUCUCUCUCUCUC 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>R7</td>
+      <td>ssRNA</td>
+      <td>5’ UUUUUUUUUUUUUUUUUUUU 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>R8</td>
+      <td>ssRNA</td>
+      <td>5’ GUGCUGCGCUGCGCUGUGCU 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+    <tr>
+      <td>R9</td>
+      <td>ssRNA</td>
+      <td>5’ AAAAAAAAAAAAAAAAAAAA 3’</td>
+      <td>5’ FAM</td>
+    </tr>
+  </tbody>
+</table>
 
 Based on the structural similarity between ADPr and nucleic acids (Figure 1—figure supplement 1F), we hypothesised that RNA and DNA could also be ubiquitinated by DTX3L. To investigate, we performed in vitro ubiquitination assays of FAM-labelled ssDNA or ssRNA by DTX3L with the following components: E1, UBE2D2, Ub, and Mg2+-ATP. Ubiquitination of FAM-labelled ssDNA and ssRNA was detected by SDS-PAGE using a fluorescent scanner (Typhoon FLA7000). The appearance of an ~15 kDa band closely matched the combined molecular weights of Ub (8564 Da) and 20 nt FAM-labelled single-stranded nucleic acid (~6900–7300 Da), suggesting that both ssDNA (Figure 1F) and ssRNA (Figure 1G) were ubiquitinated by DTX3L. Due to the high signal-to-noise ratio observed with D4 compared to other oligonucleotides, this sequence was used for subsequent experiments. Because R4 is the corresponding sequence of ssRNA this was also taken forward.
 
@@ -43,35 +308,51 @@ The minimal fragment of DTX3L required for Ub-ADPr formation is the conserved C-
 
 We took advantage of the Coomassie staining method of detection for Ub-DNA, along with an increased concentration of D4, to confirm this and demonstrate that the formation of Ub-DNA is time-dependent (Figure 1J). To validate that Ub modification did not occur on the FAM label, we tested ssDNA labelled with IRDye 800 (D10, Table 1; Figure 1—figure supplement 1J) and unlabelled ssDNA (D11, Table 1) in a ubiquitination assay. An ~15 kDa band corresponding to the predicted molecular weight of Ub-DNA was also observed using ssDNA with the alternative label (Figure 1K) and unlabelled ssDNA (Figure 1L). Together, our data demonstrate that DTX3L binds and ubiquitinates ssNAs and that DTX3L-RD is the minimal fragment required to catalyse this reaction.
 
-## The 3’-end of ssDNA is modified on its 3’ hydroxyl
+### The 3’-end of ssDNA is modified on its 3’ hydroxyl
 
 Based on the finding that the RD was sufficient to catalyse the ubiquitination of ssDNA D4, we confirmed that this fragment was able to ubiquitinate the same ssDNAs as FL DTX3L (Figure 1—figure supplement 1K). Hence, this fragment was used to probe the additional requirements of the reaction. Initially, to confirm that product formation was dependent on the ubiquitination process, we removed each reactant individually. Formation of Ub-DNA or Ub-RNA by DTX3L-RD was only detected when all components of the ubiquitination cascade (E1, UBE2D2, Ub, Mg2+-ATP) were present (Figure 2A and B). To validate that ssDNA and ssRNA were modified with Ub and not another component in the reaction, we treated the resulting product with USP2, a promiscuous deubiquitinating enzyme. The ~15 kDa band disappeared upon treatment with USP2, which is consistent with the removal of Ub from ssDNA (Figure 2C) and ssRNA (Figure 2D) and shows that this modification is reversible. Treatment of Ub-DNA and Ub-RNA with Benzonase, an endonuclease which degrades DNA and RNA, caused the disappearance of both the Ub-DNA and DNA bands (Figure 2C) and Ub-RNA and RNA bands (Figure 2D). Poly(ADP-ribose) glycohydrolase (PARG), an ADPr hydrolase that cleaves ADPr-linked to substrate, was recently shown to cleave Ub-ADPr attached to a nucleic acid substrates (Zhu et al., 2024). Treatment with PARG had no effect on the Ub-DNA band (Figure 2C) or Ub-RNA band (Figure 2D), thereby demonstrating that this reaction is distinct from the attachment of Ub to the ADPr moiety on ADP-ribosylated nucleic acids (Zhu et al., 2024). These findings showed that the 15 kDa product was ubiquitinated ssNAs.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/98070/elife-98070-fig2-v1.jpg)
 
-**Figure 2.:** (A) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of ssDNA D4 in which E1, UBE2D2, DTX3L-RD, Ub, or Mg2+-ATP have been omitted. (B) As in (A) but with 6-FAM-labelled single-stranded RNA (ssRNA) R4. (C) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by DTX3L-RD in the presence of E1, UBE2D2, Ub, Mg2+-ATP subsequently treated with USP2, Benzonase, Poly(ADP-ribose) glycohydrolase (PARG) or not treated (None). (D) As in (C) but with 6-FAM-labelled ssRNA R4. (E) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 and dsDNA D12 oligonucleotides by DTX3L-RD (left panel) and at increased exposure (right panel) in the presence of E1, UBE2D2, Ub, Mg2+-ATP. (F) As in (E) but with 6-FAM-labelled ssDNA D4 (5’ label) and D13 (3’ label) oligonucleotides. (G) Fluorescently detected SDS-PAGE gel of in vitro ubiquitinated 6-FAM-labelled ssDNA D4 subsequently treated with pH 9.5 buffer for the times indicated. (H) Fluorescently detected SDS-PAGE gel of in vitro ubiquitinated 6-FAM-labelled ssDNA D4 subsequently treated with 1.5 M NH2OH at pH 9 for the times indicated. (I) As in (E) but with 5’ IRDye 800 ssDNA D10, D14 and D15 oligonucleotides. Asterisks in (A–C) and (E–H) indicate contaminant bands from ssDNA or ssRNA. Raw unedited and uncropped gel images are shown in Figure 2—source data 1 and 2, respectively.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2.
+**Figure 2.:** (A) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of ssDNA D4 in which E1, UBE2D2, DTX3L-RD, Ub, or Mg2+-ATP have been omitted. (B) As in (A) but with 6-FAM-labelled single-stranded RNA (ssRNA) R4. (C) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by DTX3L-RD in the presence of E1, UBE2D2, Ub, Mg2+-ATP subsequently treated with USP2, Benzonase, Poly(ADP-ribose) glycohydrolase (PARG) or not treated (None). (D) As in (C) but with 6-FAM-labelled ssRNA R4. (E) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 and dsDNA D12 oligonucleotides by DTX3L-RD (left panel) and at increased exposure (right panel) in the presence of E1, UBE2D2, Ub, Mg2+-ATP. (F) As in (E) but with 6-FAM-labelled ssDNA D4 (5’ label) and D13 (3’ label) oligonucleotides. (G) Fluorescently detected SDS-PAGE gel of in vitro ubiquitinated 6-FAM-labelled ssDNA D4 subsequently treated with pH 9.5 buffer for the times indicated. (H) Fluorescently detected SDS-PAGE gel of in vitro ubiquitinated 6-FAM-labelled ssDNA D4 subsequently treated with 1.5 M NH2OH at pH 9 for the times indicated. (I) As in (E) but with 5’ IRDye 800 ssDNA D10, D14 and D15 oligonucleotides. Asterisks in (A–C) and (E–H) indicate contaminant bands from ssDNA or ssRNA. Raw unedited and uncropped gel images are shown in Figure 2—source data 1 and 2, respectively.
 
 Our experiments suggested a common mechanism of modification between ssRNA and ssDNA; therefore, we focused our subsequent experiments on the most readily detectable substrate, ssDNA D4. To ascertain whether this reaction was specific to ssDNA, we followed the formation of Ub-DNA with 6-FAM-labelled dsDNA and DTX3L-RD. Based on the finding that the RD fragment was sufficient to catalyse the ubiquitination of ssDNA, this fragment was used to probe the additional requirements of the reaction. DTX3L-RD did not ubiquitinate dsDNA (D12, Table 1; Figure 2E) suggesting that the protein is specific for ssDNA. We then compared ubiquitination of ssDNA labelled with 6-FAM on the 5’-end or 3’-end (D13, Table 1; Figure 1—figure supplement 1A, L) and found that the 6-FAM label on the 3’-end blocked ubiquitination of ssDNA (Figure 2F). Based on this finding we hypothesised that the 3’-end of the oligonucleotide is (1) the site of modification or (2) important for oligonucleotide binding. We next investigated the chemical nature of the covalent bond between Ub and ssDNA. To see if the bond was hydrolysed under basic conditions, we treated our reaction with pH 9.5 buffer which led to the disappearance of the Ub-DNA band over time (Figure 2G). Additionally, treatment with NH2OH resulted in the rapid disappearance of the Ub-DNA band (Figure 2H). Together, this suggested that the linkage is likely to be an ester, and that the modification occurs on a ribose moiety, leaving only the 3’ ribose as a viable modification site. To validate this hypothesis, we designed an array of 5’-FAM labelled ssDNAs in which various positions on the ribose ring of the 3’-end nucleotide were modified and tested their ability to act as a substrate for ubiquitination by DTX3L-RD. Whilst ssDNA with a fluorine atom attached at the 2’ position of the ribose ring (D14) was ubiquitinated, the addition of a phosphate moiety to the 3’ hydroxyl of the ribose ring (D15) ablated the formation of Ub-DNA, thereby confirming this is the site of modification (D10, D14-D15, Table 1; Figure 2I). This is consistent with the site of Ub modification of ADPr where Ub is also attached to the 3’ hydroxyl of the adenine-proximal ribose (Zhu et al., 2022). These data support that Ub modification of ssDNA occurs at the 3’ hydroxyl of the 3’ nucleotide.
 
-## Nucleotide sequence requirements for Ub-DNA formation
+### Nucleotide sequence requirements for Ub-DNA formation
 
 How the sequence and length of ssDNA affect Ub-DNA formation is unclear. To investigate, we first probed the base preference at the last or penultimate position by varying the nucleic acid to A, T, C, or G of oligonucleotide D4. Whilst only the sequences ending with A and to some extent with G could be ubiquitinated by DTX3L-RD, the requirement for the penultimate nucleotide was less strict, with sequences ending CA, TA, and AA all being ubiquitinated (D16-D21, Table 1; Figure 3A and B). Thus far we had only tested sequences of 20 nucleotides in length; therefore, we next took the D4 sequence and generated four ssDNA nucleotides with this same CAA repeat unit and ranging in length from five to 80 nucleotides (D22-D25, Table 1). When tested in our assays, all four of these nucleotide substrates were ubiquitinated (Figure 3C and D). Despite dsDNA being unable to act as a substrate for ubiquitination, our discovery that ubiquitination occurs on the 3’ nucleotide of ssDNA prompted us to test the hypothesis that dsDNA with a 3’ overhang could be ubiquitinated. Whilst dsDNA with a single 3’ nucleotide overhang could not be ubiquitinated, dsDNA with a two or three 3’ nucleotide overhang could be modified with Ub (D26-D29, Table 1; Figure 3E). Our data show that DTX3L modification of DNA requires that the two nucleotides at the 3’ end be single-stranded. Overall, these data demonstrate the ability of DTX3L-RD to ubiquitinate ssDNA of varying lengths and specific 3’ dinucleotides.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/98070/elife-98070-fig3-v1.jpg)
 
-**Figure 3.:** Fluorescently detected SDS-PAGE gel of in vitro ubiquitination (in the presence of E1, UBE2D2, Ub, and Mg2+-ATP) of (A) 6-FAM-labelled single-stranded DNA (ssDNA) D4, D16, D17 and D18 by DTX3L-RD. (B) 6-FAM-labelled ssDNA D4, D19, D20, and D21 by DTX3L-RD. (C) 6-FAM-labelled ssDNA D4, D22, and D23 by DTX3L-RD. (D) 6-FAM-labelled ssDNA D4, D24 and D25 by DTX3L-RD. (E) 6-FAM-labelled ssDNA D26, dsDNA D27, D28 and D29 by DTX3L-RD. Asterisks indicate contaminant bands from ssDNA. Raw unedited and uncropped gel images are shown in Figure 3—source data 1 and 2, respectively.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.
+**Figure 3.:** Fluorescently detected SDS-PAGE gel of in vitro ubiquitination (in the presence of E1, UBE2D2, Ub, and Mg2+-ATP) of (A) 6-FAM-labelled single-stranded DNA (ssDNA) D4, D16, D17 and D18 by DTX3L-RD. (B) 6-FAM-labelled ssDNA D4, D19, D20, and D21 by DTX3L-RD. (C) 6-FAM-labelled ssDNA D4, D22, and D23 by DTX3L-RD. (D) 6-FAM-labelled ssDNA D4, D24 and D25 by DTX3L-RD. (E) 6-FAM-labelled ssDNA D26, dsDNA D27, D28 and D29 by DTX3L-RD. Asterisks indicate contaminant bands from ssDNA. Raw unedited and uncropped gel images are shown in Figure 3—source data 1 and 2, respectively.
 
-## ssNA and ADPr share a binding site on DTX3L’s DTC domain
+### ssNA and ADPr share a binding site on DTX3L’s DTC domain
 
 Because the modification of ssDNA and ADPr occurs at the same position on the nucleoside, we next explored the possibility that they share the same binding site on DTX3L-RD. ADPr binds the DTC domain of DTX2 (Ahmed et al., 2020), a region which is conserved in the DTX family. Therefore, we purified 15N-DTX3L-RD and acquired 1H-15N heteronuclear single-quantum coherence (HSQC) spectra of 15N-DTX3L-RD alone and in the presence of ADPr or unlabelled ssDNA. We utilised the unlabelled version of the 5-mer oligonucleotide ssDNA (D30, Table 1) for NMR analysis, which was sufficient to produce the Ub-DNA product (Figure 3C). Upon titration of ADPr or 5-nucleotide ssDNA, chemical shift perturbations (CSPs) occurred, indicating DTX3L-RD binds both ADPr and ssDNA (Figure 4A; Figure 4—figure supplement 1A, B). The similarity in the CSPs indicates that there is some overlap in the binding sites of ADPr and ssDNA (Figure 4A–C). To further verify that there is conservation between the binding sites of these two substrates, excess ADPr was added to the ubiquitination reaction components along with DTX3L-RD and ssDNA D4. The presence of ADPr inhibited the formation of Ub-DNA and Ub-RNA (Figure 4D and Figure 4—figure supplement 1C), suggesting they share the same binding site. We next added excess ssDNA D31, a ssDNA with the same sequence as D4 but with a phosphate moiety attached to the 3’ hydroxyl, to the ubiquitination reaction components along with DTX3L-RD and biotin-NAD+. As labelled ADPr is not readily available, we used biotin-NAD+ to monitor Ub-biotin-NAD+ formation. The addition of D31 inhibited the formation of Ub-NAD+ (Figure 4E). Because D31 has a phosphate moiety blocking the 3’ hydroxyl ubiquitination site, it cannot be ubiquitinated; therefore, it must be directly competing for binding.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98070/elife-98070-fig4-v1.jpg)
+
+**Figure 4.:** (A) 1H-15N heteronuclear single-quantum coherence (HSQC) spectra of 15N-DTX3L-RD (black), ADPr-15N-DTX3L-RD (orange), and single-stranded DNA (ssDNA) D30-15N-DTX3L-RD (blue). Red arrows indicate cross peaks that shift upon titrating with adenosine 5′-diphosphate (ADP)–ribose (ADPr) or ssDNA. (B) Close-up view of the cross peak indicated by the black box in (A) upon titration of specified molar ratios of ADPr with 15N-DTX3L-RD. (C) Close-up view of the cross peak indicated by the black arrow in (A) upon titration of specified molar ratios of ssDNA D30 with 15N-DTX3L-RD. (D) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by DTX3L-RD in the presence of E1, UBE2D2, Ub, Mg2+-ATP and treated with excess ADPr. (E) Western blot of in vitro ubiquitination of biotin-NAD+ by DTX3L-RD in the presence of E1, UBE2D2, Ub, Mg2+-ATP and treated with excess ssDNA D31. (F) Kinetics of Ub-D4 and Ub-F-NAD+ formation catalysed by DTX3L-RD. Data from two independent experiments (n=2) were fitted with the Michaelis–Menten equation and kcat/Km value for D4 (5457  M–1 min–1) was calculated. kcat/Km value for F-NAD+ (1190  M–1 min–1) was estimated from the slope of the linear portion of the curve. (G) Structure of DTX2-DTC domain (green) bound to ADPr (yellow) (PDB: 6Y3J). The sidechains of H582, H594, and E608 are shown in sticks. Hydrogen bonds are indicated by dotted lines. (H) Structure of DTX3L-DTC domain (cyan; PDB: 3PG6). The sidechains of H707, Y719, and E733 are shown in sticks. (I) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by full length DTX3L WT, H707A, Y719A, and E733A in the presence of E1, UBE2D2, Ub, Mg2+-ATP. Asterisks in (D) and (I) indicate contaminant band from ssDNA. Raw unedited and uncropped gel images of (D), (E) and (I) are shown in Figure 4—source data 1 and 2, respectively. Data points for (F) are shown in Figure 4—source data 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98070/elife-98070-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 1H-15N heteronuclear single-quantum coherence (HSQC) spectra of 15N-DTX3L-RD (black) and after the addition of ADPr (orange) (related to Figure 4A). (B) 1H-15N HSQC spectra of 15N-DTX3L-RD (black) and after the addition of single-stranded DNA (ssDNA) D30 (blue) (related to Figure 4A). (C) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssRNA R4 by DTX3L-RD in the presence of E1, UBE2D2, Ub, Mg2+-ATP and treated with excess ADPr. (D) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of increasing concentrations of 6-FAM-labelled ssDNA D4 by DTX3L-RD in the presence of E1, UBE2D2, Ub, and Mg2+-ATP. (E) Replicate of (D). (F) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of increasing concentrations of F-NAD+ by DTX3L-RD in the presence of E1, UBE2D2, Ub, Mg2+-ATP. A known volume of 100 µM F-NAD+ was pipetted onto Whatman filter paper and scanned alongside the gel for quantification. (G) Replicate of (F). (H) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssRNA R4 by FL DTX3L WT, H707A, Y719A, and E733A in the presence of E1, UBE2D2, Ub, and Mg2+-ATP. Asterisks in (D) and (E) indicate contaminant bands from ssDNA. Raw unedited and uncropped gel images are shown in Figure 4—figure supplement 1—source data 1 and 2, respectively.
 
 To assess DTX3L-RD preference for nucleic acid or ADPr, we performed a kinetic analysis of Ub-D4 and Ub-F-NAD+ formation by DTX3L-RD using D4 and 6-Fluo-10-NAD+ (F-NAD+), respectively, as substrates. DTX3L-RD displayed a kcat value of 0.0358±0.0034 min–1 and a Km value of 6.56±1.80 μM for Ub-D4 formation, whereas the Michaelis-Menten curve did not reach saturation for Ub-F-NAD+ formation (Figure 4F and Figure 4—figure supplement 1D–G). Comparison of the estimated catalytic efficiency (kcat/Km = 5457 M–1 min–1 for D4 and estimated kcat/Km = 1190 M–1 min–1 for F-NAD+; Figure 4F) suggested that DTX3L-RD exhibited 4.5-fold higher catalytic efficiency for D4 than F-NAD+. This difference primarily results from a better Km value for D4 compared to F-NAD+. Although DTX3L-RD showed weak Km for F-NAD+, it displays a higher rate for converting F-NAD+ to Ub-F-NAD+ at higher substrate concentrations (Figure 4F). Thus, substrate concentration will play a role in determining the preference.
 
 Previously, we demonstrated the importance of DTX2 His594 located in the DTC pocket for the interaction with ADPr (Figure 4G; Ahmed et al., 2020). We examined the effect of mutating the corresponding residue (Tyr719) in DTX3L (Figure 4H) and found that the Y719A mutant was defective in the ubiquitination of ssDNA (Figure 4I). Two catalytic residues in the DTC domain of DTX2 (Zhu et al., 2022), His582 and Glu608, have been previously identified as important for the ubiquitination of ADPr, and are conserved across the DTX family members (Figure 4G and H and Figure 5—figure supplement 1A). Based on the similarities in mechanism and conservation of the binding site between ADPr and ssDNA, we next investigated if these catalytic residues were involved in the ubiquitination of ssDNA. Substitution of His707 by alanine in FL DTX3L completely abolished the formation of Ub-DNA, whilst substitution of Glu733 by alanine considerably impaired product formation (Figure 4I). To test whether this mechanism was conserved across ssNAs, we repeated the mutant DTX3L ubiquitination assay with ssRNA R4 and found similar results (Figure 4—figure supplement 1H). Overall, the data support the idea that DTX3L utilises the ADPr-binding pocket and the same catalytic residues in the DTC domain to bind and catalyse the ubiquitination of ssNAs.
 
-## Ubiquitination of ssDNA is unique to DTX3 and DTX3L
+### Ubiquitination of ssDNA is unique to DTX3 and DTX3L
 
 Since the DTC domains are conserved between DTX family members and share the ability to ubiquitinate ADPr (Chatrin et al., 2020), we tested whether the ubiquitination of ssDNA was a universal feature of the DTX family. Unexpectedly, only DTX3L and to a lesser extent DTX3 were able to ubiquitinate ssDNA under our assay conditions (Figure 5A–D). Several potential explanations were considered for this preference: (1) other DTX DTCs might not bind ssDNA; (2) other DTXs might favour different sequences of ssDNA; (3) or the arrangement of the RING and DTC domains in relation to each other might play a crucial role in catalysis. To probe this further, we titrated DTX3L-RING with excess DTX3L-DTC and tracked the formation of Ub-DNA, comparing the ability of the separate domains to ubiquitinate DNA in trans with that of DTX3L-RD. No ubiquitination of ssDNA was observed even at a 10:1 molar ratio of DTC to RING domain (Figure 5E), indicating that the ubiquitination of ssDNA only occurs at an appreciable rate in cis. Next, we examined whether DTX2 could catalyse the ubiquitination of ssDNA using 9 different ssDNA sequences and found that DTX2 was unable to ubiquitinate them (Figure 5F). Lastly, we produced domain-swapped variants of DTX2 and DTX3L in which their respective RING and DTC domains were swapped (DTX2R-DTX3LD and DTX3LR-DTX2D) and examined the ability of these chimeras to ubiquitinate biotin-NAD+ or ssDNA D4. We hypothesised that the DTX3L DTC domain of DTX2R-DTX3LD would be sufficient to enable the binding and ubiquitination of ssDNA. Both chimeras were competent in performing ubiquitination of biotin-NAD+ (Figure 5G) but were unable to produce Ub-DNA (Figure 5H). These results suggest that the specific arrangement of the RING and DTC domains in DTX3L is crucial in specifying Ub modification of ssDNA. Taken together, we propose a mechanism for the ubiquitination of ssNAs by the DTX3L-RD domains (Figure 5I): the DTC domain binds ssNAs, the RING domain recruits E2~Ub, and the RD domains bring the thioester linked Ub into proximity with the 3’ end of ssNA. This allows the catalytic residues in the DTC domain to enable the covalent attachment of Ub to the 3’ hydroxyl group on the 3’-end of ssNA. Subsequently, the complex dissociates, releasing ssNA-Ub. The substrates for the DTC domain also include ADPr, NAD+, and ADPr-modified nucleic acids and proteins.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/98070/elife-98070-fig5-v1.jpg)
+
+**Figure 5.:** (A) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by DTX3L-RD or DTX1-RD in the presence of E1, UBE2D2, Ub, Mg2+-ATP. (B) As in (A) but with DTX2-RD. (C) As in (A) but with DTX3-RD. (D) As in (A) but with DTX4-RD. (E) As in (A) but with DTX3L-RD or DTX3L RING with increasing concentrations of DTX3L DTC. (F) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D1-9 by DTX2-RD. A reaction with DTX3L-RD and 6-FAM-labelled ssDNA D4 was included as a positive control. (G) Western blot of in vitro ubiquitination of biotin-NAD+ in the presence of E1, UBE2D2, Ub, Mg2+-ATP, NAD+, biotin-NAD+ with either DTX3L-RD, DTX3LR-DTX2D, or DTX2R-DTX3LD and separated by SDS-PAGE. (H) Fluorescently detected SDS-PAGE gel of in vitro ubiquitination of 6-FAM-labelled ssDNA D4 by DTX3L-RD, DTX3LR-DTX2D, or DTX2R-DTX3LD in the presence of E1, UBE2D2, Ub, Mg2+-ATP. (I) Schematic diagrams showing the proposed mechanism of ubiquitination of substrates by DTX3L-RD. Asterisks in (A–F) and (H) indicate contaminant bands from ssDNA. Raw unedited and uncropped gel images of (A–H) are shown in Figure 5—source data 1 and 2, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98070/elife-98070-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Sequence alignment of human DTX family RING-DTC domains. Starting and ending residues of RING-DTC domains are indicated. Conserved residues are highlighted in yellow. A black arrow indicates residue that stacks with adenosine 5′-diphosphate (ADP)–ribose (ADPr), red arrows indicate conserved catalytic residues, and green arrows indicate AR motif present in DTX1, 2, and 4. Insertions are indicated. (B) Structure of DTX2 RING domain (from PDB: 6Y3J). The insertions and N-terminal helix are colored in red and the conserved RING domain region is colored yellow. (C) Alphafold2 model of DTX3L RING domain (light blue) displayed in the same orientation as in B. (D) Top: cartoon representation of the structure of DTX2 DTC domain (green; PDB: 6Y3J). Sidechains of the AR motif are shown as sticks. The DTC pocket that binds ADPr and the bulged AR motif are indicated by arrows. Bottom: as in the top panel but with surface representation. (E) Top: cartoon representation of the structure of DTX3L DTC domain (light blue; PDB: 3PG6). Bottom: as in the top panel but with surface representation. The absence of an AR motif in DTX3L causes a slight structural change near the ADPr-binding pocket, leading to the loss of the bulged loop, which results in a slightly extended groove.
 
 ## Discussion
 
@@ -87,11 +368,224 @@ Our study reports the first example of direct ubiquitination of ssNAs by DTX3L a
 
 ## Materials and methods
 
-## Construct generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>pGEX4T-3 TEV DTX3L FL</td>
+      <td>This paper</td>
+      <td>Uniprot: Q8TDB6-1</td>
+      <td>Codon-optimised synthetic gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>pGEX4T-3 TEV DTX3L FL mutants</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Codon-optimised synthetic geneH707AY719AE733A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>pGEX4T-3 TEV DTX3L 232-C</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Codon-optimised synthetic gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>pGEX4T-3 TEV DTX3L 607-C</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Codon-optimised synthetic gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>pGEX4T-3 TEV DTX3L 544–606</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Codon-optimised synthetic gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>DTX1 388-C</td>
+      <td>Chatrin et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>DTX2 390-C</td>
+      <td>Chatrin et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>DTX3 148-C</td>
+      <td>Chatrin et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>DTX4 387-C</td>
+      <td>Chatrin et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>DTX3L 544-C</td>
+      <td>Chatrin et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>UBA1</td>
+      <td>Nakasone et al., 2022</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>UBE2D2</td>
+      <td>Dou et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>Ub</td>
+      <td>Gabrielsen et al., 2017; Volk et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>Fluorescent Ub</td>
+      <td>Magnussen et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>DTX3L(232-C)/PARP9(509-C)</td>
+      <td>This paper</td>
+      <td>Uniprot PARP9: Q8IXQ6-1</td>
+      <td>Codon-optimised synthetic gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>pRSFDuet 12 X His TEV PARG 448-C</td>
+      <td>Tucker et al., 2012</td>
+      <td></td>
+      <td>Codon-optimised synthetic gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>USP2 260-C</td>
+      <td>Chatrin et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3) Gold</td>
+      <td>Agilent</td>
+      <td>Cat# 230132</td>
+      <td>Chemically competent</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta 2(DE3)pLysS</td>
+      <td>Merck Millipore Novagen</td>
+      <td>Cat# 71403</td>
+      <td>Chemically competent</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Neutravidin Protein, DyLight 800</td>
+      <td>Invitrogen</td>
+      <td>Cat# 22853</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Assorted oligos</td>
+      <td>Integrated DNA Technologies</td>
+      <td></td>
+      <td>Refer to Table 1 for sequences</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Benzonase Nuclease</td>
+      <td>Merck</td>
+      <td>Cat# E1014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NH2OH</td>
+      <td>Merck Millipore</td>
+      <td>Cat# 467804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ADPr</td>
+      <td>Merck</td>
+      <td>Cat# A0752</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin -NAD+</td>
+      <td>Biolog</td>
+      <td>Cat# N 012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>F-NAD+</td>
+      <td>Biolog</td>
+      <td>Cat# N 023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/features</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Quantity One 1-D analysis software</td>
+      <td>Bio-Rad</td>
+      <td>RRID:SCR_014280</td>
+      <td>https://www.bio-rad.com/en-uk/product/quantity-one-1-d-analysis-software?ID=1de9eb3a-1eb5-4edb-82d2-68b91bf360fb</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construct generation
 
 Constructs were generated by standard polymerase chain reaction–ligation techniques and verified by automated sequencing. GST-tagged constructs were cloned into a modified form of pGEX4T-3 (GE Healthcare) with a TEV cleavage site and a second ribosomal binding and multiple cloning site (pABLO TEV) and His-tagged constructs were cloned into a modified form of pRSF_Duet-1 (Novagen) with a TEV cleavage site following the hexahistidine tag. All proteins are from human sequences. RD domains are comprised of residues 388-C of DTX1, residues 390-C of DTX2, residues 148-C of DTX3, residues 387-C of DTX4, and residues 544-C of DTX3L. DTC of DTX3L comprises residues 607-C. PARG comprises residues 448-C. USP2 comprises residues 260-C. The complex, DTX3L(232-C)/PARP9(509-C), was cloned into a bicistronic vector in which PARP9(509-C) was cloned into the first MCS of pRSF_Duet-1 with an N-terminal His-MBP tag followed by a TEV cleavage site, and DTX3L(232-C) was cloned into the second MCS untagged. DTX3L 232-C and PARP9 509-C were sufficient to form complex (Zhang et al., 2015). DTX3L FL and DTX3L 232-C were cloned into the pABLO vector.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Expression of recombinant proteins was conducted in Escherichia coli BL21(DE3) Gold or Rosetta2(DE3) pLysS cells. Cultures were grown in LB broth (Miller) at 37 °C until an OD600 of 0.6–0.8 was reached at which point expression was induced with 0.2 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) at 20 °C for 12–16 hr. 15N-labelled DTX3L-RD was obtained using M9 minimal medium. Briefly, 20 mL starter cultures were grown in LB medium overnight before cells were pelleted and washed in M9 medium. Each pellet was added to 1 L of M9 medium supplemented with: 1 g of 15NH4Cl, 5 g glucose, 50 mg kanamycin, 1 X Vitamin Stock (Gibco), 1 mg D-Biotin and trace metals. Cells were grown until an OD600 of 0.6–0.8 was reached at which point expression was induced with IPTG at 20 °C for 20 hr.
 
@@ -103,38 +597,38 @@ DTX3L (232-C)/PARP9 (509-C) complex was obtained by expressing the bicistronic c
 
 Additional proteins: Homo sapiens Uba1 (Nakasone et al., 2022), UBE2D2 (Dou et al., 2012), Ub (Gabrielsen et al., 2017; Volk et al., 2005), PARG (Tucker et al., 2012), and USP2 (Renatus et al., 2006) were purified as in previously described protocols.
 
-## Oligonucleotides
+### Oligonucleotides
 
 Oligonucleotides were obtained from Integrated DNA Technologies and are listed in Table 1.
 
-## Fluorescence polarisation assay
+### Fluorescence polarisation assay
 
 50 nM 6-FAM-labelled nucleic acids (Integrated DNA Technologies) were incubated with 0–5 µM proteins in reaction buffer (20 mM Hepes pH 7.0, 1 mM MgCl2, 50 mM NaCl, filter sterilised). Fluorescence polarisation measurements were taken using Tecan Spark (λex = 485 nm, λem = 535 nm). Fold change was calculated based on the change in polarisation compared to the fluorescent ligand in the absence of protein. Data were plotted in Prism (GraphPad).
 
-## DNA and RNA ubiquitination assays
+### DNA and RNA ubiquitination assays
 
 UBA1 (0.2 µM), UBE2D2 (5 µM), and Ub (50 µM) were incubated in 50 mM Tris-HCl, 5 mM MgCl2, 50 mM NaCl, and 5 mM ATP at room temperature for 15 min to allow for generation of E2~Ub. DTX (1 µM) and nucleic acid (3 µM) were incubated together at room temperature for 10 min prior to mixing with other components. After the components were combined, reactions were incubated at 37 °C. Aliquots were taken immediately (indicated by 0.2 min time point) and at specified subsequent time points. The reactions were halted by the addition of 2 X Loading Dye containing 250 mM DTT and resolved by SDS-PAGE (NuPAGE 4–12% Bis-Tris, Invitrogen). For FAM-labelled nucleic acids, gels were visualised using Typhoon FLA 700 with λex = 473 nm and Y520 emission filter (Cytiva Life Sciences). For IRDye 800 labelled nucleic acids, gels were scanned with an Odyssey CLx Imaging System (LI-COR Biosciences). For Figures 1J and 5A–C and D, 25 µM D4 was used. For Figure 1L, 25 µM D11 was used. For assays with USP2, Benzonase and PARG, reactions were conducted as above and after UBA1 (0.2 µM), UBE2D2 (5 µM), Ub (50 µM), DTX3L-RD (2 µM), and D4 or R4 (2 µM) were incubated together for 30 min, reactions were quenched with 250 mM DTT and buffer exchanged into 25 mM Tris-HCl (pH 7.6), 150 mM NaCl, 5 mM MgCl2, and 1 mM DTT using a 7 kDa Zeba Spin column. USP2 (1.35 µM), Benzonase (1 µM), or PARG (1 µM) was added and incubated for a further 30 min at 37 °C. Subsequently, an aliquot was mixed with 2 X Loading Dye and resolved by SDS-PAGE. For assays conducted at pH 9.5, reactions were conducted as above and after UBA1 (0.2 µM), UBE2D2 (5 µM), Ub (50 µM), DTX3L-RD (1 µM), and D4 (3 µM) were incubated together for 30 min, reactions were quenched with 250 mM DTT and buffer exchanged into 25 mM Tris-HCl (pH 9.5), 150 mM NaCl and 1 mM DTT using a 7 kDa Zeba Spin column. Then 2 mM EDTA was added, and the reaction was incubated at 37 °C. Aliquots were taken at indicated time points, mixed with 2 X Loading Dye, and resolved by SDS-PAGE. For assays conducted with NH2OH treatment, reactions were conducted as above. After UBA1 (0.2 µM), UBE2D2 (5 µM), Ub (50 µM), DTX3L-RD (1 µM), and D4 (3 µM) were incubated together for 30 min, reactions were quenched with 250 mM DTT and buffer was exchanged into 25 mM Tris-HCl (pH 9), 150 mM NaCl, and 1 mM DTT using a 7 kDa Zeba Spin column. Then 1.5 M NH2OH was added, and the reaction was incubated at 37 °C. Aliquots were taken at indicated time points, mixed with 2 X Loading Dye, and resolved by SDS-PAGE.
 
-## Autoubiquitination assay
+### Autoubiquitination assay
 
 UBA1 (0.2 µM), UBE2D2 (5 µM), and fluorescently-labelled Ub (Magnussen et al., 2020) (25 µM) were incubated in 50 mM Tris-HCl, 5 mM MgCl2, 50 mM NaCl, and 5 mM ATP at room temperature for 15 min to allow for the generation of E2~Ub. DTX3L (1 µM) was added and reactions were incubated at 20 °C. Aliquots were taken at indicated time points, and reactions were halted by the addition of 2 X Loading Dye and resolved by SDS-PAGE. Gels were scanned with an Odyssey CLx Imaging System.
 
-## Lysine discharge assay
+### Lysine discharge assay
 
 UBA1 (0.5 µM), UBE2D2 (25 µM), and Ub (25 µM) were incubated in 50 mM Tris-HCl, 5 mM MgCl2, 50 mM NaCl, and 5 mM ATP at room temperature for 15 min to allow for generation of E2~Ub. Charged reactions were stopped with 30 mM EDTA and T0 samples taken. DTX3L (1 µM) and lysine (300 mM) were added, and reactions were incubated at room temperature. Aliquots were taken at indicated time points, and reactions were halted by the addition of 2 X Loading Dye and resolved by SDS-PAGE. Gels were scanned with a ChemiDoc (Bio-Rad).
 
-## Competition ubiquitination assays
+### Competition ubiquitination assays
 
 UBA1 (0.2 µM), UBE2D2 (5 µM), and Ub (50 µM) were incubated in 50 mM Tris-HCl, 5 mM MgCl2, 50 mM NaCl, and 5 mM ATP at room temperature for 15 min to allow for generation of E2~Ub. DTX3L-RD (1 µM) and D4 (3 µM) were incubated together at room temperature for 10 min prior to mixing with other components. After the components were combined, 1 mM ADPr was added and reactions were incubated at 37 °C. Aliquots were taken at indicated time points, reactions were halted by the addition of 2 X Loading Dye containing 250 mM DTT and resolved by SDS-PAGE. Gels were visualised using Typhoon FLA 700 with λex = 473 nm and a Y520 emission filter. For Figure 4E, DTX3L-RD (1 µM) and biotin-NAD+ (5 µM) were incubated together at room temperature for 10 min prior to mixing with other components. After components were combined, 2 mM D31 was added and reactions were incubated at 30 °C. Aliquots were taken at indicated time points, reactions were halted by the addition of 2 X Loading Dye containing 250 mM DTT and resolved by SDS-PAGE. The samples were transferred to a nitrocellulose membrane and blocked in 5% BSA. Membranes were incubated with DyLight 800 conjugated NeutrAvidin (Thermo Fisher Scientific, cat. no. 22853; 1:10,000) and visualised using an Odyssey CLx Imaging System.
 
-## Kinetic analysis of Ub-D4 and Ub-F-NAD+ formation
+### Kinetic analysis of Ub-D4 and Ub-F-NAD+ formation
 
 UBA1 (0.2 µM), UBE2D2 (5 µM), and Ub (50 µM) were incubated in 50 mM Tris-HCl, 5 mM MgCl2, 50 mM NaCl, and 5 mM ATP at room temperature for 15 min to allow for generation of E2~Ub. DTX (1 µM) and D4 or F-NAD+ (Biolog Life Science Institute, cat. no. N 023) at varying concentrations (0–37.5 µM) were incubated together at room temperature for 10 min prior to mixing with other components. Aliquots were taken after 15 min, reactions were halted by the addition of 2 X Loading Dye containing 250 mM DTT and resolved by SDS-PAGE. Gels were visualised using Typhoon FLA 700 with λex = 473 nm and a Y520 emission filter. A known amount of D4 was visualised on the gel alongside D4 ubiquitination reactions. A known amount of F-NAD+ was pipetted onto Whatman filter paper and scanned alongside the gel of F-NAD+ ubiquitination reactions. Ub-D4 and Ub-F-NAD+ were quantified and initial rates were expressed as nmoles of product formed per minute per mole of DTX3L-RD. Data from two independent experiments were fitted to the Michaelis-Menten equation using Prism. The Michaelis-Menten curve for Ub-F-NAD+ was not saturated, therefore, kcat/Km was estimated from the slope of the linear portion of the curve.
 
-## Biotin-NAD+ ubiquitination assay
+### Biotin-NAD+ ubiquitination assay
 
 UBA1 (0.2 µM), UBE2D2 (5 µM), and Ub (50 µM) were incubated in 50 mM HEPES-NaOH, pH 7.5, 5 mM MgCl2, 50 mM NaCl, and 5 mM ATP at room temperature for 10 min to allow for generation of E2~Ub. DTX (1 µM), NAD+ (200 µM) and biotin-NAD+ (10 µM) were added and reactions were incubated at 20 °C for 1 hr. Reactions were halted by the addition of 3 X Loading Dye containing 250 mM DTT and resolved by SDS-PAGE. The samples were transferred to a nitrocellulose membrane and blocked in 5% BSA. Membranes were incubated with DyLight 800 conjugated NeutrAvidin (Thermo Fisher Scientific, cat. no. 22853; 1:10,000) and visualised using an Odyssey CLx Imaging System.
 
-## Solution NMR experiments
+### Solution NMR experiments
 
 All NMR data were acquired using a Bruker Avance III 600-MHz spectrometer equipped with a cryogenic triple resonance inverse probe. DTX3L-RD samples were prepared at ~100 μM in 20 mM sodium phosphate, (pH 7.0), 100 mM NaCl, 0.02% NaN3, 1 mM TCEP, and 5% D2O with 0.00025% TSP. Experiments were carried out at 298 K, and 1H-15N HSQC spectra were recorded with 16 scans using 200 complex points with a sweep width of 36 parts per million (ppm) in the 15N dimension. All spectra were processed with 256 points in the indirect dimension using Bruker TopSpin 3.5 and analysed using CcpNmr AnalysisAssign (Skinner et al., 2016).

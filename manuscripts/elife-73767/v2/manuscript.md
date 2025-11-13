@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03hz8wd80 Lundbeck GeoGenetics Centre, GLOBE Institute, Faculty of Health Copenhagen Denmark
-2. https://ror.org/029brtt94 UMR5558 Biométrie et Biologie Evolutive, CNRS - Université Lyon 1 Villeurbanne France
-3. https://ror.org/024mw5h28 Department of Human Genetics, University of Chicago Chicago United States
+1. Lundbeck GeoGenetics Centre, GLOBE Institute, Faculty of Health Copenhagen Denmark ([ROR:03hz8wd80](https://ror.org/03hz8wd80))
+2. UMR5558 Biométrie et Biologie Evolutive, CNRS - Université Lyon 1 Villeurbanne France ([ROR:029brtt94](https://ror.org/029brtt94))
+3. Department of Human Genetics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -37,35 +37,123 @@ Here, we develop a method to model the spread of a recently selected allele acro
 
 ## Results
 
-## Summary of model
+### Summary of model
 
 We based our statistical inference framework on a model proposed by Novembre et al., 2005 to fit allele frequencies in two dimensions to present-day genotype data spread over a densely sampled map. We extend this model in several ways:
 
-We explored the performance of two different spread models, which are extensions of the original model by Novembre et al., 2005, hereby called model A. This is a diffusion model containing a selection coefficient s (determining the rate of local allele frequency growth) and a single diffusion term (σ). A more general diffusion model—hereby model B—allows for two distinct diffusion parameters for latitudinal (σy) and longitudinal (σx) spread. Finally, model C is even more general and includes two advection terms (vx and vy), allowing the center of mass of the allele’s frequency to diverge from its origin over time. The incorporation of advection is meant to account for the fact that population displacements and expansions could have led to allele frequency dynamics that are poorly explained by diffusion alone.
+We explored the performance of two different spread models, which are extensions of the original model by Novembre et al., 2005, hereby called model A. This is a diffusion model containing a selection coefficient $s$ (determining the rate of local allele frequency growth) and a single diffusion term ($\sigma$). A more general diffusion model—hereby model B—allows for two distinct diffusion parameters for latitudinal ($\sigma_{y}$) and longitudinal ($\sigma_{x}$) spread. Finally, model C is even more general and includes two advection terms (vx and vy), allowing the center of mass of the allele’s frequency to diverge from its origin over time. The incorporation of advection is meant to account for the fact that population displacements and expansions could have led to allele frequency dynamics that are poorly explained by diffusion alone.
 
 In order to establish a starting time point for our diffusion process, we used previously published allele age estimates obtained from a nonparametric approach leveraging the patterns of haplotype concordance and discordance around the mutation of interest (Albers and McVean, 2020). In the case of the allele in the LCT/MCM6 region, we also used age estimates based on an approximate Bayesian computation approach (Itan et al., 2009).
 
-## Performance on deterministic simulations
+### Performance on deterministic simulations
 
 To characterize the accuracy of our inference method under different parameter choices, we first generated deterministic simulations from several types of diffusion models. First, we produced an allele frequency surface map with a specified set of parameters from which we drew 1040 samples matching the ages, locations, and genotype calling format (diploid vs. pseudohaploid) of the 1040 genomes that we analyze below when studying the rs1042602(A) allele.
 
 We generated six different simulations with different diffusion coefficients and afterward ran our method assuming model B. The results (simulations B1−B6) are summarized in Figure 1, Figure 1—figure supplements 1–5, and Appendix 2—table 1. Overall, the model is more accurate at correctly inferring the parameters for the time period before 5000 years BP (Figure 1b), with decreased performance when longitudinal diffusion is high (Figure 1—figure supplement 5).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-v2.jpg)
+
+**Figure 1.:** (a) Comparison of true and inferred allele frequency dynamics for a simulation with diffusion and no advection (B5). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B1. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B2. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B3. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B4. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Comparison of true and inferred allele frequency dynamics for simulation B6. The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 1. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) Comparison of true allele frequency dynamics for simulation B1 and those inferred by the model C. The green dot shows the origin of the derived allele and the cross represents the location of the first individual that carried it. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (a) Comparison of true allele frequency dynamics for simulation B4 and those inferred by the model C. The green dot corresponds to the origin of the allele, and the cross represents the first sample having the derived variant. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
 Next, we investigated the performance of model C, which includes advection coefficients. We generated four different simulations including advection (simulations C1−C4: Figure 2, Figure 1—figure supplements 1–3, and Appendix 2—table 2). We found that our method is generally able to estimate the selection coefficient accurately. However, in some of the simulations, we found discrepancies between the estimated and true diffusion and advection coefficients, often occurring because of a misestimated origin forcing the other parameters to adjust in order to better fit the allele frequency distribution in later stages of the allele’s spread (Figure 2). Despite the disparities between the true and inferred parameter values, the resulting surface plots become very similar as we approach the present, suggesting that different combinations of parameters can produce similar present-day allele frequency distributions.
 
-## Advection model applied to non-advection simulations
+![Figure 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig2-v2.jpg)
+
+**Figure 2.:** (a) Comparison of true and inferred allele frequency dynamics for one of the simulations including advection (C4). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 2. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Comparison of true and inferred allele frequency dynamics for one of the simulations including advection (C1). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 2. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Comparison of true and inferred allele frequency dynamics for one of the simulations including advection (C2). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 2. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Comparison of true and inferred allele frequency dynamics for one of the simulations including advection (C3). The green dot corresponds to the origin of the allele. The parameter values used to generate the frequency surface maps are summarized in Appendix 2—table 2. (b) Comparison of true parameter values and model estimates. Whiskers represent 95% confidence intervals.
+
+### Advection model applied to non-advection simulations
 
 We assessed model performance when we apply model C, which includes advection coefficient estimates, to simulations generated without advection (see Figure 1—figure supplements 6 and 7). We can observe that the advection coefficients are inferred to be non-zero (Figure 1—figure supplements 6b and 7b); however, the inferred allele frequency dynamic plots closely resemble the ones obtained with true parameter values (Figure 1—figure supplements 6a and 7a). This shows that complex interactions between the diffusion and advection coefficients can result in similar outcomes even when only diffusion is considered in the model.
 
 The inference of the origin of the allele also differs when we compare results when using models B and C. In order to understand better how the model estimates the allele origin, we highlighted the first individual in simulations B1 and B4 that contains the derived allele. We can see that in the case of simulation B1 the inferred origin of the allele is close to the first observance of the derived allele in the model that includes advection. In contrast when the advection is not included, the origin of the allele is inferred to be closer to where it is initially rising in frequency (Figure 1—figure supplements 1a and 4a). However, this is not always the case. For instance, if we look at the results from the advection model on simulation B4, we can see that the origin of the allele is inferred relatively far from the sample known to have carried the first instance of the derived allele. Therefore, if there is a relatively large interval between the time when the allele originated and when the first ancient genomes are available, the beneficial allele can spread widely, but as this spread is not captured by any of the data points, inference of the precise origin of the selected allele is nearly impossible.
 
-## Impact of sample clustering on parameter estimates
+### Impact of sample clustering on parameter estimates
 
 We evaluated the impact of different sampling and clustering schemes on our inferences that could potentially arise by aggregating aDNA data from studies with different sampling schemes. We used a deterministic simulation to create three different degrees of clustering, which we will refer to as ‘homogeneous,’ ‘intermediate,’ or ‘extreme’ by varying the area from which we sample individuals to be used in our inferences (Figure 3—figure supplement 1). Additionally, we also tested the impact of biased temporal sampling in the periods before and after 5000 years BP by oversampling in the ancient period (75%/25%), equally sampling in the two periods (50%/50%), and oversampling in the recent period (25%/75%). Because we evaluated this temporal bias for each of the three spatial clustering sampling scenarios, this resulted in a total of nine different sampling scenarios. We note that the third ‘extreme’ spatial clustering scenario is completely unrealistic and one would not expect inferences of any degree of accuracy from it, but we believe it gives a good idea of the behavior of our method in the limiting case of extremely restricted spatial sampling.
 
 A comparison of allele frequency maps generated using true parameter values and using parameter estimates from the different sampling schemes is shown in Figure 3—figure supplements 2–9. In Figure 3 we show the allele frequency map generated using the ‘intermediate 75%/25%’ clustering scheme. Parameter estimates used to generate all these figures are summarized in Appendix 2—table 3. Overall we can see that the allele frequency maps inferred from these scenarios closely resemble the maps generated using the true parameter values, despite the challenges in finding accurate values for the individual point estimates of some of the parameters, highlighting that various combinations of diffusion and advection coefficients can produce similar underlying frequency maps (as discussed in the section ‘Performance on deterministic simulations’). This suggests that the joint spatiotemporal information encoded in the inferred maps (not just the individual parameters estimates) should be used in interpreting model outputs, particularly when it comes to the advection and diffusion parameters. The selection coefficient estimates are inferred highly accurately, regardless of the sampling scheme chosen, and lie close to the true value, with only a slight underestimation in the time period after 5000 years BP (with the exception of the ‘extreme 25%/75%’).
 
-## Spatially explicit forward simulations
+![Figure 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-v2.jpg)
+
+**Figure 3.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘intermediate 75%/25%’ clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2—table 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** We chose five locations and increasingly restricted the area where we allowed the individuals to be sampled. (a) Map showing homogeneous sampling scheme in which we did not impose any spatial restrictions of individuals sampled. (b) Intermediate sampling scheme with the region restricted to 7° in each cardinal direction from each of the chosen locations. (c) Extreme sampling scheme with the sampling region restricted to 2° in each cardinal direction from the chosen locations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘homogeneous 75%/25%’ clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2—table 3.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘homogeneous 50%/50%’ clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2—table 3.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘homogeneous 25%/75%’ clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2—table 3.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘intermediate 50%/50%’ clustering scheme. Parameter values used to generate the maps are summarzsed in Appendix 2—table 3.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘intermediate 25%/75%’ clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2—table 3.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘extreme 75%/25%’ clustering scheme. Parameter values used to generate the maps are summarzsed in Appendix 2—table 3.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘extreme 50%/50%’ clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2—table 3.
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig3-figsupp9-v2.jpg)
+
+**Figure 3—figure supplement 9.:** Left: allele frequency map generated using true parameter values. Right: allele frequency map generated using parameter estimates for ‘extreme 25%/75%’ clustering scheme. Parameter values used to generate the maps are summarized in Appendix 2—table 3.
+
+### Spatially explicit forward simulations
 
 In addition to drawing simulated samples from a diffusion model, we used SLiM (Haller and Messer, 2019) to perform spatially explicit individual-based forward-in-time simulations of selection acting on a beneficial allele by leveraging an R interface for spatial population genetics now implemented in the R package slendr (Petr, 2021).
 
@@ -73,7 +161,13 @@ We introduced a single beneficial additive mutation in a single individual and l
 
 We can see that the origin of the allele inferred by the model closely corresponds to the first observation of the derived allele in the simulation (Figure 4). The inferred selection coefficient is only slightly higher than the true value from the simulation (0.0366 vs. 0.030). In general, the model accurately captures the spread of the allele centered in Central Europe, though we observe some discrepancies due to differences between the model assumed in the simulation (which, e.g., accounts for local clustering of individuals, Figure 4—figure supplement 1), and that assumed by our diffusion-based inference.
 
-## Dynamics of the rs4988235(T) allele
+![Figure 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig4-v2.jpg)
+
+**Figure 4.:** (A) Individual-based simulation of an allele that arose in Central Europe 15,000 years ago with a selection coefficient of 0.03. Each dot represents a genotype from a simulated genome. To avoid overplotting, only 1000 out of the total 20,000 individuals in the simulation in each time point are shown for each genotype category. (B) Allele frequency dynamics inferred by the diffusion model on the individual-based simulation to the left, after randomly sampling 1040 individuals from the simulation and performing pseudohaploid genotype sampling on them. The ages of sampled individuals were log-uniformly distributed. The estimated parameter values of the fitted model are shown in Appendix 2—table 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig4-figsupp1-v2.jpg)
+
+### Dynamics of the rs4988235(T) allele
 
 Having tested the performance of our method on simulated data, we set out to infer the allele frequency dynamics of the rs4988235(T) allele (associated with adult lactase persistence) in ancient Western Eurasia. For our analysis, we used a genotype dataset compiled by Segurel et al., 2020, which amounts to 1434 genotypes from ancient Eurasian genomes individuals, and a set of 36,659 genotypes from present-day Western and Central Eurasian genomes (Ségurel and Bon, 2017; Heyer et al., 2011; Marchi et al., 2018; Liebert et al., 2017; Gallego Romero et al., 2012; Itan et al., 2010; Charati et al., 2019). After filtering out individuals falling outside of the range of the geographic boundaries considered in this study, we retained 1332 ancient individuals. The locations of ancient and present-day individuals used in the analysis to trace the spread of rs4988235(T) are shown in Figure 5.
 
@@ -83,11 +177,33 @@ Having tested the performance of our method on simulated data, we set out to inf
 
 We used a two-period scheme by allowing the model to have two sets of estimates for the selection coefficient and the diffusion and advection coefficients in two different periods of time: before and after 5000 years ago, reflecting the change in population dynamics and mobility before and after the Bronze Age transition (Loog et al., 2017; Racimo et al., 2020a). We used two allele age estimates as input: a relatively young one (7441 years ago) obtained by using the estimated start of selection onset from Itan et al., 2009 (though we note this is necessarily a lower bound of the age of mutation origin), and a relatively old one (20,106 years ago) obtained from the age estimate from Albers and McVean, 2020. The results obtained for fitting the model on rs4988235(T) are summarized in Appendix 2—table 5 and Appendix 2—table 6, and in Figure 6b (younger age) and Figure 6—figure supplement 1 (older age).
 
-Assuming the mutation age estimate is equivalent to the start of selection onset from Itan et al., 2009, the origin of the allele is estimated to be north of the Caucasus, around what is now southwestern Russia and eastern Ukraine (Figure 6b). Given that this age is relatively young, our method fits a very strong selection coefficient (≈0.1) during the first period in order to accommodate the early presence of the allele in various points throughout Eastern Europe, and a weaker (but still strong) selection coefficient (≈0.03) in the second period. We also estimate stronger diffusion in the second period than in the first, to accommodate the rapid expansion of the allele throughout Western Europe, and a net westward advection parameter, indicating movement of the allele frequency’s center of mass to the west as we approach the present.
+![Figure 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-v2.jpg)
+
+**Figure 6.:** (a) Top: pseudohaploid genotypes of ancient samples at the rs4988235 SNP in different periods. Yellow corresponds to the rs4988235(T) allele. Bottom: allele frequencies of present-day samples represented as pie charts. The size of the pie charts corresponds to the number of available sequences in each region. (b) Inferred allele frequency dynamics of rs4988235(T). The green dot indicates the inferred geographic origin of the allele.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp2-v2.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp3-v2.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp4-v2.jpg)
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp5-v2.jpg)
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp6-v2.jpg)
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp7-v2.jpg)
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp8-v2.jpg)
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig6-figsupp9-v2.jpg)
+
+Assuming the mutation age estimate is equivalent to the start of selection onset from Itan et al., 2009, the origin of the allele is estimated to be north of the Caucasus, around what is now southwestern Russia and eastern Ukraine (Figure 6b). Given that this age is relatively young, our method fits a very strong selection coefficient ($≈0.1$) during the first period in order to accommodate the early presence of the allele in various points throughout Eastern Europe, and a weaker (but still strong) selection coefficient ($≈0.03$) in the second period. We also estimate stronger diffusion in the second period than in the first, to accommodate the rapid expansion of the allele throughout Western Europe, and a net westward advection parameter, indicating movement of the allele frequency’s center of mass to the west as we approach the present.
 
 Assuming the older age estimate from Albers and McVean, 2020, the origin of the allele is estimated to be in the northeast of Europe (Figure 6—figure supplement 1), which is at a much higher latitude than the first occurrence of the allele, in Ukraine. Due to the deterministic nature of the model, the frequency is implicitly imposed to expand in a region where there are no actual observed instances of the allele. The model compensates for this by placing the origin in an area with a lower density of available aDNA data and thus avoiding an overlap of the increasing allele frequencies with individuals who do not carry the derived rs4988235(T) allele (see Figure 6a). As the model expands rapidly in the southern direction (Appendix 2—table 6) it eventually reaches the sample carrying the derived variant in Ukraine.
 
-## Dynamics of the rs1042602(A) allele
+### Dynamics of the rs1042602(A) allele
 
 Next, we investigated the spatiotemporal dynamics of the spread of an allele at a pigmentation-associated SNP in the TYR locus (rs1042602(A)), which has been reported to be under recent selection in Western Eurasian history (Stern et al., 2019). For this purpose, we applied our method to the Allen Ancient DNA Resource data (Reich and Mallick, 2019), which contains randomly sampled pseudohaploid genotypes from 1513 published ancient Eurasian genomes (listed in Supplementary file 1), from which we extracted those that had genotype information at this locus in Western Eurasia. We merged this dataset with diploid genotype information from high-coverage present-day West Eurasian genomes from the Human Genome Diversity Panel (HGDP) (Bergström et al., 2020), which resulted in a total of 1040 individuals with genotype information at rs1042602, which were used as input to our analysis. Geographic locations of individuals in the final dataset are shown in Figure 7.
 
@@ -97,13 +213,29 @@ Next, we investigated the spatiotemporal dynamics of the spread of an allele at 
 
 Similarly to our analysis of the spread of the allele in rs4988235(T), we inferred the dynamics of the rs1042602(A) allele separately for the time periods before and after 5000 years BP and assuming the age of the allele to be 26,361 years (Albers and McVean, 2020). The inferred parameters for both time periods are summarized in Appendix 2—table 7, and the allele frequency surface maps generated using these parameters are shown in Figure 8b. The origin of the rs1042602(A) corresponds closely to the region where the allele initially starts to segregate in the time period between 7500 and 10,000 years BP as seen in Figure 8a. Estimates of the selection coefficient for both time periods (0.0221 and 0.0102 for the period before and after 5000 years BP, respectively) suggest that selection acting on the allele has decreased after 5000 years BP.
 
-## Robustness of parameters to the inferred geographic origin of allele
+![Figure 8.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-v2.jpg)
+
+**Figure 8.:** (a) Top: pseudohaploid genotypes of ancient samples of the rs1042602 in different periods. Yellow corresponds to the A allele. Bottom: diploid genotypes of present-day samples. (b) Inferred allele frequency dynamics of rs1042602(A). The green dot corresponds to the inferred geographic origin of the allele.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp2-v2.jpg)
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp3-v2.jpg)
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp4-v2.jpg)
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp5-v2.jpg)
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/73767/elife-73767-fig8-figsupp6-v2.jpg)
+
+### Robustness of parameters to the inferred geographic origin of allele
 
 We carried out an analysis to characterize how sensitive the selection, diffusion, and advection parameters are to changes in the assumed geographic origin of the allele. For the rs4988235(T) allele, we forced the origin of the allele to be 10° away from our inferred origin in each cardinal direction, while assuming the allele age is equal to the inferred start of selection onset from Itan et al., 2009 (Appendix 2—table 8). In Figure 6—figure supplements 2–5, we can see the allele frequency dynamics of these four scenarios, respectively. We also forced the allele origin to be at the geographic origin estimated in Itan et al., 2009 (Figure 6—figure supplement 6, Appendix 2—table 9), which is westward of our estimate. In all five cases during the period prior 5000 years BP, the allele is inferred to expand in the direction of the first sample that is observed to carry the rs4988235(T) allele and is located in Ukraine. During the time period after 5000 years BP, the patterns produced by the model are rather similar, although the parameters associated with diffusion and advection differ, in order to account for the different starting conditions.
 
 We also investigated how the results are affected when the estimated geographic origin of the rs1042602(A) allele is moved with respect to the initial estimate. We set the allele to be 10° east, 10° north, and 10° south of the original estimate as shown in Figure 8—figure supplements 1–3, respectively (for parameter estimates see Appendix 2—table 10). We did not look at a scenario in which the origin of the allele is moved to the west since it would either end up in the Black Sea or more westward than 10°. The selection coefficient remains similar to the original estimate throughout all three scenarios. The way the allele spreads across the landscape is also similar in all cases and, as in the case of rs4988235(T), the model accounts for the different origins of the allele by adjusting the diffusion and advection coefficients in the time period after 5000 years BP.
 
-## Robustness of parameters to the assumed age of the allele
+### Robustness of parameters to the assumed age of the allele
 
 In order to investigate how sensitive our inferences are to the point estimates of allele ages we obtained from the literature (Albers and McVean, 2020; Itan et al., 2009), we also fitted our model using the upper and lower ends of the 95% confidence intervals or credible intervals for each age estimate (depending on whether the inference procedure in the literature was via a maximum likelihood or a Bayesian approach). For the rs4988235(T) allele, the reported credible intervals for the (Itan et al., 2009) age are 8683 and 6256 years BP. For the rs1042602(A) allele, the reported confidence intervals for the age are 27,315 and 25,424 years BP (Albers and McVean, 2020).
 
@@ -139,37 +271,65 @@ Population genetic models that explicitly account for space and time are an impo
 
 ## Methods
 
-## The model
+### The model
 
-To describe the allele frequency dynamics in time and space, we first begin by using a deterministic model based on a two-dimensional PDE (Fisher, 1937; Kolmogorov et al., 1937; Novembre et al., 2005). This PDE represents the distribution p⁢(x,y,t) of the allele frequency across a two-dimensional (x,y) landscape at time t:(1)∂p∂t=12σ2∂2p∂x2+12σ2∂2p∂y2+γ(p,s,d)
+To describe the allele frequency dynamics in time and space, we first begin by using a deterministic model based on a two-dimensional PDE (Fisher, 1937; Kolmogorov et al., 1937; Novembre et al., 2005). This PDE represents the distribution $p⁢(x,y,t)$ of the allele frequency across a two-dimensional ($x,y$) landscape at time $t$:
 
-where(2)γ⁢(p,s,d)=p⁢(1-p)⁢(p⁢d+s⁢(1-2⁢p)).
+$$
+\frac{∂p}{∂t}=\frac{1}{2}\sigma^{2}\frac{∂^{2}p}{∂x^{2}}+\frac{1}{2}\sigma^{2}\frac{∂^{2}p}{∂y^{2}}+\gamma(p,s,d)
+$$
 
-Here, σ is the diffusion coefficient, s is the selection coefficient, and d is the dominance coefficient (Novembre et al., 2005). We assumed an additive model and fixed d=2⁢s in all analyses below. We call this ‘model A,’ but we also evaluated the fit of our data under more complex models that are more flexible, and are described below.
+where
 
-Model B is a more general diffusion-reaction model, which incorporates distinct diffusion terms in the longitudinal and latitudinal directions (σx and σy, respectively):(3)∂⁡p∂⁡t=12⁢σx2⁢∂2⁡p∂⁡x2+12⁢σy2⁢∂2⁡p∂⁡y2+γ⁢(p,s,d)
+$$
+\gamma⁢(p,s,d)=p⁢(1-p)⁢(p⁢d+s⁢(1-2⁢p)).
+$$
 
-Model C is a generalization of model B that incorporates advection terms in the longitudinal and latitudinal directions (see, e.g. Cantrell and Cosner, 2004 for a motivation of this type of model in the context of spatial ecology):(4)∂⁡p∂⁡t=12⁢σx2⁢∂2⁡p∂⁡x2+12⁢σy2⁢∂2⁡p∂⁡y2+vx⁢∂⁡p∂⁡x+vy⁢∂⁡p∂⁡y+γ⁢(p,s,d)
+Here, $\sigma$ is the diffusion coefficient, $s$ is the selection coefficient, and $d$ is the dominance coefficient (Novembre et al., 2005). We assumed an additive model and fixed $d=2⁢s$ in all analyses below. We call this ‘model A,’ but we also evaluated the fit of our data under more complex models that are more flexible, and are described below.
+
+Model B is a more general diffusion-reaction model, which incorporates distinct diffusion terms in the longitudinal and latitudinal directions ($\sigma_{x}$ and $\sigma_{y}$, respectively):
+
+$$
+\frac{\partial⁡p}{\partial⁡t}=\frac{1}{2}⁢\sigma_{x}^{2}⁢\frac{\partial^{2}⁡p}{\partial⁡x^{2}}+\frac{1}{2}⁢\sigma_{y}^{2}⁢\frac{\partial^{2}⁡p}{\partial⁡y^{2}}+\gamma⁢(p,s,d)
+$$
+
+Model C is a generalization of model B that incorporates advection terms in the longitudinal and latitudinal directions (see, e.g. Cantrell and Cosner, 2004 for a motivation of this type of model in the context of spatial ecology):
+
+$$
+\frac{\partial⁡p}{\partial⁡t}=\frac{1}{2}⁢\sigma_{x}^{2}⁢\frac{\partial^{2}⁡p}{\partial⁡x^{2}}+\frac{1}{2}⁢\sigma_{y}^{2}⁢\frac{\partial^{2}⁡p}{\partial⁡y^{2}}+v_{x}⁢\frac{\partial⁡p}{\partial⁡x}+v_{y}⁢\frac{\partial⁡p}{\partial⁡y}+\gamma⁢(p,s,d)
+$$
 
 Here, vx and vy represent the coefficients for advective velocity along the longitude and latitude respectively.
 
 In Appendix 1, we motivate the construction of these equations using model C as an example and show that Equation 4 can be obtained by taking an infinitesimal limit of a random walk on a two-dimensional lattice, after including a reaction term due to selection. Models A and B are then shown to be special cases of model C.
 
-For evaluating the likelihood of the observed data, we use a binomial genotype sampling model. Let gi∈0,1,2 be the genotype of individual i at the locus of interest, let ai be the number of reads carrying ancestral alleles, and let di be the number of reads carry derived reads. Let (xi,yi) be the coordinates of the location from which individual i was sampled, and ti its estimated age (e.g., from radiocarbon dating). Then, the likelihood for individual i can be computed as follows:(5)L⁢(di,ai)=∑h=02P⁢[di,ai|gi=h]⁢P⁢[gi=h|p⁢(xi,yi,ti)]
+For evaluating the likelihood of the observed data, we use a binomial genotype sampling model. Let $g_{i}\in0,1,2$ be the genotype of individual $i$ at the locus of interest, let ai be the number of reads carrying ancestral alleles, and let di be the number of reads carry derived reads. Let $(x_{i},y_{i})$ be the coordinates of the location from which individual $i$ was sampled, and ti its estimated age (e.g., from radiocarbon dating). Then, the likelihood for individual $i$ can be computed as follows:
 
-Here, p⁢(xi,yi,ti) is the solution to one of the partial differential equations described above (Equation 1, Equation 2, or Equation 4, depending on the process model chosen), evaluated at location (xi,yi) and time ti. In turn, P⁢[di,ai|gi=h] is the likelihood for genotype i. Furthermore, P⁢[gi=h|p⁢(xi,yi,ti)] is a binomial distribution, where n represents the ploidy level, which in this case is 2:(6)P⁢[gi=h|p⁢(xi,yi,ti)]=(nh)⁢p⁢(xi,yi,ti)h⁢(1-p⁢(xi,yi,ti))n-h
+$$
+L⁢(d_{i},a_{i})=\sumh=02P⁢[d_{i},a_{i}|g_{i}=h]⁢P⁢[g_{i}=h|p⁢(x_{i},y_{i},t_{i})]
+$$
 
-Then, the likelihood of the entire data can be computed as(7)L(d,a)=∏i=1ML(xi,yi,ti)
+Here, $p⁢(x_{i},y_{i},t_{i})$ is the solution to one of the partial differential equations described above (Equation 1, Equation 2, or Equation 4, depending on the process model chosen), evaluated at location $(x_{i},y_{i})$ and time ti. In turn, $P⁢[d_{i},a_{i}|g_{i}=h]$ is the likelihood for genotype $i$. Furthermore, $P⁢[g_{i}=h|p⁢(x_{i},y_{i},t_{i})]$ is a binomial distribution, where $n$ represents the ploidy level, which in this case is 2:
+
+$$
+P⁢[g_{i}=h|p⁢(x_{i},y_{i},t_{i})]=(\frac{n}{h})⁢p⁢(x_{i},y_{i},t_{i})^{h}⁢(1-p⁢(x_{i},y_{i},t_{i}))^{n-h}
+$$
+
+Then, the likelihood of the entire data can be computed as
+
+$$
+L(d,a)=\prodi=1ML(x_{i},y_{i},t_{i})
+$$
 
 where M is the total number of individuals for which we have data, d is the vector containing the derived read count for each individual, and a is the vector containing the ancestral read count for each individual. We computed genotype likelihoods directly on the BAM file read data using the SAMtools genotype model (Li, 2011) implemented in the software ANGSD (Korneliussen et al., 2014).
 
-When only randomly sampled pseudohaploid allele counts are available, we used a Bernoulli sampling likelihood (conditional on the genotype gi) on the right-hand side of Equation 6 instead. Briefly, assuming that the probability of an individual having genotype g at a particular locus given the underlying allele frequency p follows a binomial distribution and that the probability of sampling a read given the genotype of an individual follows a Bernoulli distribution with probability of success 12⁢g, then the probability of sampling a read given the genotype follows a Bernoulli distribution with probability of success p.
+When only randomly sampled pseudohaploid allele counts are available, we used a Bernoulli sampling likelihood (conditional on the genotype gi) on the right-hand side of Equation 6 instead. Briefly, assuming that the probability of an individual having genotype $g$ at a particular locus given the underlying allele frequency $p$ follows a binomial distribution and that the probability of sampling a read given the genotype of an individual follows a Bernoulli distribution with probability of success $\frac{1}{2}⁢g$, then the probability of sampling a read given the genotype follows a Bernoulli distribution with probability of success $p$.
 
-## Map
+### Map
 
 We restricted the geographic area explored by our model fit to be between 30°N to 75°N, and between 10°W and 80°E. For numerical calculations, we used a grid constructed using a resolution of approximately one grid cell per latitude and longitude. We used Harvesine functions in order to transform the distance from degrees to kilometers between two geographic points. The diffusion of the allele frequency was disallowed in the map regions where the topology is negative (i.e., regions under water), based on ETOPO5 data (NOAA, National Geophysical Data Center, B. C, 1988). For this reason, we added land bridges between the European mainland and Sardinia, and between the mainland and Great Britain, in order to allow the allele to diffuse in these regions (see Appendix 2—figure 1).
 
-## Parameter search
+### Parameter search
 
 Parameter optimization was done via maximum likelihood estimation with a two-layer optimization set-up. The first layer consists of a simulated annealing approach (Bélisle, 1992) starting from 50 random points in the parameter space. The initial 50 points are sampled using Latin hypercube sampling to ensure an even spread across the parameter space. The output of this fit was then fed to the L-BFGS-B algorithm to refine the parameter estimates around the obtained maximum and obtain confidence intervals for the selection, diffusion and advection parameters (Byrd et al., 1995).
 
@@ -177,17 +337,21 @@ The parameters optimized were:
 
 We chose to construct our method in a way that uses the age of the allele as an input parameter rather than estimating it. We do this since there are multiple equally possible solutions with various combinations of allele age and selection coefficient values as shown in Appendix 2—figure 3. The latitude and longitude are discretized in our model in order to solve the differential equations numerically, thus the origin of a mutation is measured in terms of discrete units. For this reason, when using the L-BFGS-B algorithm, we fixed the previously estimated origin of the allele and did not explore it during this second optimization layer. For numerical calculations, we used the Livermore Solver for Ordinary Differential Equations (Hindmarsh, 1983) implemented in R package ‘deSolve’ (Soetaert et al., 2010), which is a general-purpose solver that can handle both stiff and nonstiff systems. In case of stiff problems, the solver uses a Jacobian matrix. Absorbing boundary conditions were used at the boundaries of the map. For visualization purposes, we masked the allele frequencies from areas with negative topology (i.e., areas covered by large bodies of water). Time was measured in generations, assuming 29 years per generation. During the optimization, we scaled the time and the parameters by a factor of 10, which allowed us to decrease the execution time of the model.
 
-We initialized the grid by setting the initial allele frequency to be p0 in a grid cell where the allele originates and 0 elsewhere. p0 was calculated as 1/(2*D*A), where D is the population density and is equal to 2.5 inhabitants per square kilometer, which is the estimated population density in Europe in 1000 BC (Colin McEvedy, 1978; Novembre et al., 2005). In the equation, D is multiplied by 2 because we assume that the allele originated in a single chromosome in a diploid individual. A is the area in square kilometers of the grid cell where the allele emerged.
+We initialized the grid by setting the initial allele frequency to be p0 in a grid cell where the allele originates and 0 elsewhere. p0 was calculated as $1/(2*D*A)$, where $D$ is the population density and is equal to 2.5 inhabitants per square kilometer, which is the estimated population density in Europe in 1000 BC (Colin McEvedy, 1978; Novembre et al., 2005). In the equation, $D$ is multiplied by 2 because we assume that the allele originated in a single chromosome in a diploid individual. $A$ is the area in square kilometers of the grid cell where the allele emerged.
 
-Asymptotic 95% confidence intervals for a given parameter θj were calculated using equationθj^±1.96(F(θ)−1)jj
+Asymptotic 95% confidence intervals for a given parameter $\theta_{j}$ were calculated using equation
 
-where F(θ) is an estimate of the observed Fisher information matrix (Fisher, 1922; Efron and Hastie, 2016; Casella and Berger, 2001).
+$$
+\theta_{j}^\pm1.96\sqrt{(F(\theta)^{−1})_{jj}}
+$$
 
-## Implementation
+where $F(\theta)$ is an estimate of the observed Fisher information matrix (Fisher, 1922; Efron and Hastie, 2016; Casella and Berger, 2001).
+
+### Implementation
 
 The above-described model was implemented in R version 3.6. To numerically solve the differential equations and obtain maximum likelihood estimates, we used the libraries deSolve (Soetaert et al., 2010), ReacTran (Soetaert and Meysman, 2012), and bbmle (Bolker, 2020). Scripts containing the code used in this article are available on GitHub: https://github.com/RasaMukti/stepadna, (copy archived at swh:1:rev:d024767648d873f329a8e17fcaf6034c99157120; Muktupavela, 2021).
 
-## Individual-based simulations
+### Individual-based simulations
 
 For the individual-based spatiotemporal forward simulations, we first defined a spatial boundary for a population spread across a broad geographic region of Europe. In order to ensure a reasonably uniform distribution of individuals across this spatial range throughout the course of the simulation, we set the maximum distance for spatial competition and mating choice between individuals to 250 km (translated, on a SLiM level, to the interaction parameter maxDistance), and the standard deviation of the normal distribution governing the spread of offspring from their parents at 25 km (leveraged in SLiM’s modifyChild() callback function) (Haller and Messer, 2019). We note that we have chosen the values of these parameters merely to ensure a uniform spread of individuals across a simulated landscape. They are not intended to represent realistic estimates for these parameters at any time in human history.
 

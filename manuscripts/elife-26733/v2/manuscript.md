@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.26733.001 Tumor-initiating cells (TIC) are dynamic cancer cell subsets that display enhanced tumor functions and resilience to treatment but the mechanism of TIC induction or maintenance in lung cancer is not fully understood. In this study, we show the calcium pathway transcription factor NFATc2 is a novel regulator of lung TIC phenotypes, including tumorspheres, cell motility, tumorigenesis, as well as in vitro and in vivo responses to chemotherapy and targeted therapy. In human lung cancers, high NFATc2 expression predicted poor tumor differentiation, adverse recurrence-free and cancer-specific overall survivals. Mechanistic investigations identified NFATc2 response elements in the 3’ enhancer region of SOX2 , and NFATc2/SOX2 coupling upregulates ALDH1A1 by binding to its 5’ enhancer. Through this axis, oxidative stress induced by cancer drug treatment is attenuated, leading to increased resistance in a mutation-independent manner. Targeting this axis provides a novel approach for the long-term treatment of lung cancer through TIC elimination. DOI: http://dx.doi.org/10.7554/eLife.26733.001
+Tumor-initiating cells (TIC) are dynamic cancer cell subsets that display enhanced tumor functions and resilience to treatment but the mechanism of TIC induction or maintenance in lung cancer is not fully understood. In this study, we show the calcium pathway transcription factor NFATc2 is a novel regulator of lung TIC phenotypes, including tumorspheres, cell motility, tumorigenesis, as well as in vitro and in vivo responses to chemotherapy and targeted therapy. In human lung cancers, high NFATc2 expression predicted poor tumor differentiation, adverse recurrence-free and cancer-specific overall survivals. Mechanistic investigations identified NFATc2 response elements in the 3’ enhancer region of SOX2, and NFATc2/SOX2 coupling upregulates ALDH1A1 by binding to its 5’ enhancer. Through this axis, oxidative stress induced by cancer drug treatment is attenuated, leading to increased resistance in a mutation-independent manner. Targeting this axis provides a novel approach for the long-term treatment of lung cancer through TIC elimination.
 
 ## Introduction
 
@@ -33,91 +33,322 @@ Intracellular free calcium is at the hub of multiple interacting pathways activa
 
 ## Results
 
-## NFATc2 expression correlated with adverse survivals of human NSCLC
+### NFATc2 expression correlated with adverse survivals of human NSCLC
 
-By analyzing transcripts expression, we observed
+By analyzing transcripts expression, we observed NFATc2 was significantly overexpressed in human primary NSCLC compared to normal lung (Figure 1A). Using IHC, high level activated NFATc2 expression with intense and widespread nuclear staining were detected in 41 of 102 (40.2%) excised primary NSCLC, while 61 (59.8%) showed low expression with weak nuclear and/or cytoplasmic staining in isolated or small clusters of tumor cells (Figure 1B,C). In normal lung epithelium, NFATc2 was expressed in the bronchiolar stem cell compartment of basal reserve cells while differentiated bronchiolar cells or alveolar pneumocytes were negative (Figure 1D). Using log rank test and Kaplan-Meier survival analysis, we showed tumors with high level NFATc2 expression had significantly shorter recurrence-free survival (RFS) and cancer-specific overall survival (OS) (Figure 1E,F). High NFATc2 expression significantly predicted poor tumor differentiation, advanced tumor stage and TNM stage (Table 1A). Multivariate Cox regression analysis further showed high NFATc2, late pathological stage, age and smoking history were independent prognostic indicators for shorter OS, while high NFATc2 and advanced pathological stage were predictive for shorter RFS (Table 1B, C). The results indicated NFATc2 expression was associated with repressed tumor differentiation and adverse patient survivals.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig1-v2.jpg)
 
-**Figure 1.:** (A) NFATc2 expression analyzed by qPCR in human NSCLC and corresponding normal lung. P: Wilcoxon test. p=0.0003. (B–C) NFATc2 expression analyzed by IHC, showing representative areas of high NFATc2 scores with strong nuclear staining in the majority of cancer cells (B), or low NFATc2 scores with weak nuclear and cytoplasmic staining (C), respectively. (D) NFATc2 expression in normal bronchial epithelium by IHC, showing nuclear NFATc2 staining in scattered bronchiolar reserve/stem cells of the basal layer (arrows). For B-D: Scale bars, 50 µm. (E–F) Kaplan Meier survival curves by log-rank tests on 102 resected primary NSCLC stratified by NFATc2 expression levels for recurrence-free survival (RFS) (E), and overall survival (OS) (F).DOI: http://dx.doi.org/10.7554/eLife.26733.00310.7554/eLife.26733.004Figure 1—source data 1.Figure 1A.DOI: http://dx.doi.org/10.7554/eLife.26733.004
+**Figure 1.:** (A) NFATc2 expression analyzed by qPCR in human NSCLC and corresponding normal lung. P: Wilcoxon test. p=0.0003. (B–C) NFATc2 expression analyzed by IHC, showing representative areas of high NFATc2 scores with strong nuclear staining in the majority of cancer cells (B), or low NFATc2 scores with weak nuclear and cytoplasmic staining (C), respectively. (D) NFATc2 expression in normal bronchial epithelium by IHC, showing nuclear NFATc2 staining in scattered bronchiolar reserve/stem cells of the basal layer (arrows). For B-D: Scale bars, 50 µm. (E–F) Kaplan Meier survival curves by log-rank tests on 102 resected primary NSCLC stratified by NFATc2 expression levels for recurrence-free survival (RFS) (E), and overall survival (OS) (F).
 
-## NFATc2 was overexpressed in lung TIC and mediated TIC properties
+**Table 1.**
+ Clinico-pathological correlation of NFATc2 in NSCLC patients.
 
-If NFATc2 supports tumor-initiating phenotypes, it is expected to be expressed at a higher level in TIC compared to non-TIC. To address this notion, marker-independent TIC surrogates comprising tumorspheres raised from 4 lung AD cell lines cultured in non-adherent, stem cell conditions (
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">A. Clinico-pathological correlation of NFATc2 in NSCLC patients</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">NFATc2</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Clinico-pathological variables</th>
+      <th>Low</th>
+      <th>High</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>22</td>
+      <td>11</td>
+      <td>0.328</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>39</td>
+      <td>30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (Years)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≤65</td>
+      <td>36</td>
+      <td>24</td>
+      <td>0.961</td>
+    </tr>
+    <tr>
+      <td>&gt;65</td>
+      <td>25</td>
+      <td>17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smoking history</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-smoker</td>
+      <td>32</td>
+      <td>24</td>
+      <td>0.545</td>
+    </tr>
+    <tr>
+      <td>Smoker</td>
+      <td>29</td>
+      <td>17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Differentiation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Well to moderate</td>
+      <td>45</td>
+      <td>21</td>
+      <td>0.019*</td>
+    </tr>
+    <tr>
+      <td>Poor</td>
+      <td>16</td>
+      <td>20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Histologic type</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Adenocarcinoma</td>
+      <td>42</td>
+      <td>24</td>
+      <td>0.357</td>
+    </tr>
+    <tr>
+      <td>Squamous cell carcinoma</td>
+      <td>11</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>8</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tumor Stage</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T1-T2</td>
+      <td>53</td>
+      <td>24</td>
+      <td>0.001*</td>
+    </tr>
+    <tr>
+      <td>T3-T4</td>
+      <td>8</td>
+      <td>17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lymph node metastasis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>43</td>
+      <td>25</td>
+      <td>0.318</td>
+    </tr>
+    <tr>
+      <td>Present</td>
+      <td>18</td>
+      <td>16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pathological (TNM) stage</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stage I</td>
+      <td>36</td>
+      <td>14</td>
+      <td>0.014*</td>
+    </tr>
+    <tr>
+      <td>Stage II-IV</td>
+      <td>25</td>
+      <td>27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">B. Multivariate COX regression analysis for RFS</td>
+    </tr>
+    <tr>
+      <td>Variables</td>
+      <td>P value</td>
+      <td>Hazard Ratio (HR)</td>
+      <td>95.0% CI† of HR</td>
+    </tr>
+    <tr>
+      <td>NFATc2</td>
+      <td>0.037</td>
+      <td>1.905</td>
+      <td>1.039–3.494</td>
+    </tr>
+    <tr>
+      <td>TNM stage</td>
+      <td>0.001</td>
+      <td>2.035</td>
+      <td>1.347–3.075</td>
+    </tr>
+    <tr>
+      <td colspan="4">C. Multivariate COX regression analysis for OS</td>
+    </tr>
+    <tr>
+      <td>Variables</td>
+      <td>P value</td>
+      <td>Hazard ratio (HR)</td>
+      <td>95.0% CI† of HR</td>
+    </tr>
+    <tr>
+      <td>NFATc2</td>
+      <td>0.002</td>
+      <td>2.824</td>
+      <td>1.462–5.457</td>
+    </tr>
+    <tr>
+      <td>TNM stage</td>
+      <td>0.012</td>
+      <td>1.827</td>
+      <td>1.140–2.927</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.01</td>
+      <td>2.33</td>
+      <td>1.224–4.432</td>
+    </tr>
+    <tr>
+      <td>Smoking history</td>
+      <td>0.009</td>
+      <td>2.416</td>
+      <td>1.251–4.665</td>
+    </tr>
+  </tbody>
+</table>
+
+_Statistical tests: c2; *: P<0.05†: Confidence Interval.Statistics: COX regression analysis._
+
+### NFATc2 was overexpressed in lung TIC and mediated TIC properties
+
+If NFATc2 supports tumor-initiating phenotypes, it is expected to be expressed at a higher level in TIC compared to non-TIC. To address this notion, marker-independent TIC surrogates comprising tumorspheres raised from 4 lung AD cell lines cultured in non-adherent, stem cell conditions (Liu et al., 2007; Shi et al., 2015; Sun et al., 2015) were compared with non-TIC growing in monolayers. TIC showed higher NFATc2 expression by Western blot (Figure 2A), while transcripts of NFATc2 and its target FASL were also significantly upregulated (Figure 2—figure supplement 1A). Luciferase reporter assays also showed significantly higher NFAT activities in spheres isolated from H1299 and A549 cells (Figure 2—figure supplement 1B). Furthermore, TIC selected by the lung TIC markers ALDH+/CD44+ from HCC827 and the patient-derived lung cancer cell lines, HKUCL2 and HKUCL4, showed higher NFATc2 expression than the ALDH-/CD44- non-TIC counterpart (Figure 2B)(Liu et al., 2013a). Using another lung TIC marker, CD166high, for TIC isolation from HCC827, NFATc2 was also shown to be upregulated (Figure 2C) (Zhang et al., 2012).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig2-v2.jpg)
 
-**Figure 2.:** (A–C) Expression of NFATc2 analyzed by Western blot, in TIC isolated as tumorspheres compared with non-TIC from cells in monolayers (A); TIC isolated as ALDH+/CD44+ subset compared with ALDH-/CD44- subset (B); TIC isolated as CD166high subset compared with the CD166low subset (C). (D) NFATc2 expression by Western blot in cells with stable NFATc2 knockdown, overexpression, or knockout, respectively. (E) BrdU proliferation assay of HCC827 cells with NFATc2 knockdown. (F) Cell cycle analysis of HCC827 cells with NFATc2 knockdown. (G–I) Tumorsphere formation and serial passage assays, in HCC827 cells after stable NFATc2 knockdown (G) or knockout (H), or in PDCL#24 cells with NFATc2 knockdown (I). (J–K) Tumorsphere formation and serial passage assays in cells with stable NFATc2 over-expression, including A549 cells (J) and H1299 cells (K). (L) Tumorsphere formation assay in HCC827 cells with or without treatment with 1 µM of CSA or 5 µM of FK506. (M–P) Cell migration and invasion assays in cells with stable NFATc2 knock down (M and N) or over-expression (O and P). For G-P: *p<0.05 **p<0.01, comparison with control by t-test. Error bar indicates the mean ±SD for at least three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.006
+**Figure 2.:** (A–C) Expression of NFATc2 analyzed by Western blot, in TIC isolated as tumorspheres compared with non-TIC from cells in monolayers (A); TIC isolated as ALDH+/CD44+ subset compared with ALDH-/CD44- subset (B); TIC isolated as CD166high subset compared with the CD166low subset (C). (D) NFATc2 expression by Western blot in cells with stable NFATc2 knockdown, overexpression, or knockout, respectively. (E) BrdU proliferation assay of HCC827 cells with NFATc2 knockdown. (F) Cell cycle analysis of HCC827 cells with NFATc2 knockdown. (G–I) Tumorsphere formation and serial passage assays, in HCC827 cells after stable NFATc2 knockdown (G) or knockout (H), or in PDCL#24 cells with NFATc2 knockdown (I). (J–K) Tumorsphere formation and serial passage assays in cells with stable NFATc2 over-expression, including A549 cells (J) and H1299 cells (K). (L) Tumorsphere formation assay in HCC827 cells with or without treatment with 1 µM of CSA or 5 µM of FK506. (M–P) Cell migration and invasion assays in cells with stable NFATc2 knock down (M and N) or over-expression (O and P). For G-P: *p<0.05 **p<0.01, comparison with control by t-test. Error bar indicates the mean ±SD for at least three independent replicates.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Expression of NFATc2 and its target FASL analyzed by qPCR in TIC isolated as tumorspheres compared to the monolayers of non-TIC. (B) NFAT luciferase reporter activity in TIC isolated as tumorspheres compared to non-TIC monolayer controls. *p<0.05 **p<0.01, comparison with control by t-test. Error bar indicates the mean ±SD for three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.007
+**Figure 2—figure supplement 1.:** (A) Expression of NFATc2 and its target FASL analyzed by qPCR in TIC isolated as tumorspheres compared to the monolayers of non-TIC. (B) NFAT luciferase reporter activity in TIC isolated as tumorspheres compared to non-TIC monolayer controls. *p<0.05 **p<0.01, comparison with control by t-test. Error bar indicates the mean ±SD for three independent replicates.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Representative views of cell cycle distribution of HCC827 cells with or without stable NFATc2 knockdown analyzed by flow cytometry.DOI: http://dx.doi.org/10.7554/eLife.26733.008
+**Figure 2—figure supplement 2.:** Representative views of cell cycle distribution of HCC827 cells with or without stable NFATc2 knockdown analyzed by flow cytometry.
 
 For functional studies, NFATc2 was silenced by 2 shRNA sequences (shNFATc2-A and -B) in 2 lung cancer cell lines with high basal expression (HCC827, PDCL#24), and ectopically expressed in 2 cell lines with relatively low de novo expression (A549, H1299) (Figure 2D). Knockout using CRISPR/CAS9 and gRNA targeting NFATc2 (gNFATc2) was also performed on HCC827 (Figure 2D). As shown by BrdU proliferation assay and cell cycle assay, NFATc2 knockdown did not significantly affect the proliferation and cell cycle distribution of HCC827 cells (Figure 2E and F, Figure 2—figure supplement 2). However, abrogation of NFATc2 significantly reduced 60–70% of tumorspheres in all the cell models and inhibited tumorspheres renewability for 2 consecutive generations (Figure 2G–I), while overexpression significantly augmented tumorspheres in both A549 and H1299 (Figure 2J–K). To demonstrate the actions of NFAT on TIC-related phenotypes are mediated through calcium signaling, we blocked calcium-mediated NFAT activation by disrupting the upstream calcineurin/NFAT dephosphorylation complex using the potent and specific inhibitors cyclosporin A (CSA) and FK506, respectively. Treatment with both CSA and FK506 significantly inhibited sphere formation of HCC827 cells (Figure 2L). Transwell assays for cell motility showed silencing NFATc2 significantly reduced the migration and invasion ability of both HCC827 and PDCL#24 cells (Figure 2M–N), while the opposite effects were rendered by NFATc2 overexpression in A549 and H1299 cells (Figure 2O–P).
 
-## NFATc2- mediated tumorigenesis in vivo
+### NFATc2- mediated tumorigenesis in vivo
 
-Subcutaneous xenograft models showed NFATc2 knockdown significantly reduced tumor sizes and retarded growth rates of HCC827 and PDCL#24, respectively (
+Subcutaneous xenograft models showed NFATc2 knockdown significantly reduced tumor sizes and retarded growth rates of HCC827 and PDCL#24, respectively (Figure 3A–B). Using IHC, NFATc2 expression was detected in xenografts established from HCC827 and PDCL#24 knockdown cells (Figure 3C), indicating successful tumorigenesis preferentially involved cells that had selected away from NFATc2 knockdown. In contrast, NFATc2 overexpression in A549 significantly augmented tumor growth (Figure 3D). To evaluate TIC frequencies in vivo, limiting dilution assays were performed by subcutaneous transplantation of serially decreasing numbers of tumor cells in nude mice. NFATc2 knockdown led to significantly reduced xenograft incidence and TIC frequency of HCC827 (Figure 3E, Figure 3—figure supplement 1A). Reciprocal effects were observed with NFATc2-overexpression, (Figure 3F, Figure 3—figure supplement 1B). Together, the data supported NFATc2-mediated in vivo tumorigenesis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig3-v2.jpg)
 
-**Figure 3.:** (A–B) 1 × 104 of HCC827 cells (A), and PDCL#24 cells (B), respectively, were subcutaneously inoculated into the flanks of SCID mice, and tumor volumes were monitored. Representative tumor images and tumor growth curves are shown. **p<0.0001, comparison with respective control by two-way ANOVA. Error bar indicates the mean ±SD of tumor volumes of mice as indicated. (C) NFATc2 expression by IHC in xenografts generated from HCC827 or PDCL#24 cells, respectively, with or without NFATc2 knockdown. Tumor cells at the tumor/stroma interface (arrows) showed stronger NFATc2 expression, possibly due to micro-environmental induction. Scale bars, 50 µm. (D) 1 × 104 of A549 cells with or without NFATc2 overexpression were subcutaneously injected into SCID mice, and tumor volumes were monitored. Representative tumor images and tumor growth curves are shown. **p<0.0001, comparison with control by two-way ANOVA. Error bar indicates the mean ±SD of tumor volumes of mice as indicated. (E–F) Limiting dilution assay in vivo. Indicated numbers of HCC827 cells (E), and A549 cells (F) were subcutaneously inoculated into SCID mice, and the tumor incidence and latency were monitored for 3 months. The TIC frequency and P values were calculated using the L-Calc software (Stemcell Tech, Vancouver, Canada, http://www.stemcell.com).DOI: http://dx.doi.org/10.7554/eLife.26733.00910.7554/eLife.26733.010Figure 3—source data 1.Figure 3A,B and D.DOI: http://dx.doi.org/10.7554/eLife.26733.010
+**Figure 3.:** (A–B) 1 × 104 of HCC827 cells (A), and PDCL#24 cells (B), respectively, were subcutaneously inoculated into the flanks of SCID mice, and tumor volumes were monitored. Representative tumor images and tumor growth curves are shown. **p<0.0001, comparison with respective control by two-way ANOVA. Error bar indicates the mean ±SD of tumor volumes of mice as indicated. (C) NFATc2 expression by IHC in xenografts generated from HCC827 or PDCL#24 cells, respectively, with or without NFATc2 knockdown. Tumor cells at the tumor/stroma interface (arrows) showed stronger NFATc2 expression, possibly due to micro-environmental induction. Scale bars, 50 µm. (D) 1 × 104 of A549 cells with or without NFATc2 overexpression were subcutaneously injected into SCID mice, and tumor volumes were monitored. Representative tumor images and tumor growth curves are shown. **p<0.0001, comparison with control by two-way ANOVA. Error bar indicates the mean ±SD of tumor volumes of mice as indicated. (E–F) Limiting dilution assay in vivo. Indicated numbers of HCC827 cells (E), and A549 cells (F) were subcutaneously inoculated into SCID mice, and the tumor incidence and latency were monitored for 3 months. The TIC frequency and P values were calculated using the L-Calc software (Stemcell Tech, Vancouver, Canada, http://www.stemcell.com).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** in vivo tumorigenesis.(A–B) Xenografts of HCC827 cells with stable NFATc2 knockdown (A), and of A549 cells with NFATc2 over-expression (B) used for limiting dilution assays.DOI: http://dx.doi.org/10.7554/eLife.26733.011
+**Figure 3—figure supplement 1.:** (A–B) Xenografts of HCC827 cells with stable NFATc2 knockdown (A), and of A549 cells with NFATc2 over-expression (B) used for limiting dilution assays.
 
-## NFATc2 promoted cancer resistance to cytotoxic and targeted therapy
+### NFATc2 promoted cancer resistance to cytotoxic and targeted therapy
 
-The effect of NFATc2 on chemotherapy response was first investigated using cisplatin chemotherapy on PDCL#24, a
+The effect of NFATc2 on chemotherapy response was first investigated using cisplatin chemotherapy on PDCL#24, a KRAS V12D mutant lung AD cell line raised from a local male chronic smoker. Upon NFATc2 inhibition, sensitization to cisplatin with statistically significant reduction of IC50 was observed compared to control cells (Figure 4A). Similarly, NFATc2 knockout as well as CSA and FK506 treatment also sensitized HCC827 to cisplatin with reduction of IC50 (p<0.01) (Figure 4—figure supplement 1A, Figure 4B). In contrast, overexpressing NFATc2 in A549 increased cisplatin resistance with significantly elevated IC50 (p<0.01) (Figure 4C). In vivo, mice bearing PDCL#24 xenografts treated with cisplatin alone showed 1.68 fold tumor shrinkage compared with vehicle control. With additional stable NFATc2 knockdown, tumor shrinkage was enhanced to 3.15 and 2.2 fold relative to respective vehicle controls (p<0.01) (Figure 4D), while tumor growth rate was also retarded (Figure 4—figure supplement 1B). Besides cisplatin, NFATc2 knockdown significantly increased paclitaxel sensitivity of HCC827 cells (Figure 4—figure supplement 2A). A549 cells induced for cisplatin resistance by chronic progressive drug exposure (A549 CR) showed elevated IC50 with NFATc2 upregulation compared to parental A549 cells (Figure 4E–F). With NFATc2 suppression, A549 CR was re-sensitized with return of IC50 to around the pre-induction level (p<0.01) (Figure 4F). In line with this observation, induction of H1299 for paclitaxel resistance also caused NFATc2 upregulation (Figure 4—figure supplement 2B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig4-v2.jpg)
 
-**Figure 4.:** (A) Effect of NFATc2 knockdown on cisplatin response of PDCL#24 cells by MTT assay. (B) Effect of CSA or FK506 treatment on cisplatin response of HCC827 cells by MTT assay. (C) Effect of NFATc2 overexpression on cisplatin response of A549 cells by MTT assay. *p<0.05, **p<0.01 versus control by t-test. (D) In vivo effect of NFATc2 knockdown on cisplatin response of PDCL#24 xenografts. 1 × 106 of PDCL#24 cells were subcutaneously inoculated into the flanks of Nude mice. Nude mice bearing subcutaneous xenografts were randomly separated into two groups and treated with intraperitoneal injections of cisplatin (4 mg/kg every three days) or saline control, respectively. Xenografts were photographed and histograms of tumor volumes were compared to vector and no-treatment controls. *p<0.05, **p<0. 01 by t-test. Error bar indicates the mean ±SD of tumor volumes of five mice. (E) NFATc2 expression by Western blot in A549 and corresponding cells with induced cisplatin-resistance (A549 CR) with or without NFATc2 knockdown. (F) Effects of NFATc2 knockdown on cisplatin sensitivity by MTT assays in A549 and A549 CR cells. ##p<0.01, versus vector control of parental cells, **p<0.01 versus CR Sh-Ctrl by t-test. (G–H) Dose response curves of gefitinib treatment by MTT assays of HCC827 cells with NFATc2 knockdown (G), or knockout (H). (I) Dose response curves of gefitinib treatment by MTT assays of HCC827 cells in the presence of CSA or FK506 for 72 hr. For G-I: **p<0.01 versus control by t-test. (J) Effects of NFATc2 stable knockdown on response of HC827 xenografts to gefitinib. 1 × 106 of HCC827 cells were subcutaneously inoculated into the flanks of Nude mice. Nude mice bearing subcutaneous xenografts were randomly separated into two groups and treated with gefitinib (25 mg/kg/day by oral gavage) or 1% Tween 80 as control. *p<0.05, **p<0. 01 by t-test. Error bar indicates the mean ±SD of tumor volumes of six mice. (K and L) NFATc2 expression with or without NFATc2 knockdown by Western blot (K), and NFAT activity by luciferase reporter assay (L), in HCC827 parental and gefitinib-resistant (GR) cells. (M) Gefitinib sensitivity of HCC827GR cells treated with CSA or with NFATc2 knockdown analyzed by MTT assays. **p<0.01 versus control by Student’s t-test. For all MTT assays, error bar indicates mean ±SD for at least three replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.01210.7554/eLife.26733.013Figure 4—source data 1.Figure 4D and J, Figure 4—figure supplement 1B and 3A.DOI: http://dx.doi.org/10.7554/eLife.26733.013
+**Figure 4.:** (A) Effect of NFATc2 knockdown on cisplatin response of PDCL#24 cells by MTT assay. (B) Effect of CSA or FK506 treatment on cisplatin response of HCC827 cells by MTT assay. (C) Effect of NFATc2 overexpression on cisplatin response of A549 cells by MTT assay. *p<0.05, **p<0.01 versus control by t-test. (D) In vivo effect of NFATc2 knockdown on cisplatin response of PDCL#24 xenografts. 1 × 106 of PDCL#24 cells were subcutaneously inoculated into the flanks of Nude mice. Nude mice bearing subcutaneous xenografts were randomly separated into two groups and treated with intraperitoneal injections of cisplatin (4 mg/kg every three days) or saline control, respectively. Xenografts were photographed and histograms of tumor volumes were compared to vector and no-treatment controls. *p<0.05, **p<0. 01 by t-test. Error bar indicates the mean ±SD of tumor volumes of five mice. (E) NFATc2 expression by Western blot in A549 and corresponding cells with induced cisplatin-resistance (A549 CR) with or without NFATc2 knockdown. (F) Effects of NFATc2 knockdown on cisplatin sensitivity by MTT assays in A549 and A549 CR cells. ##p<0.01, versus vector control of parental cells, **p<0.01 versus CR Sh-Ctrl by t-test. (G–H) Dose response curves of gefitinib treatment by MTT assays of HCC827 cells with NFATc2 knockdown (G), or knockout (H). (I) Dose response curves of gefitinib treatment by MTT assays of HCC827 cells in the presence of CSA or FK506 for 72 hr. For G-I: **p<0.01 versus control by t-test. (J) Effects of NFATc2 stable knockdown on response of HC827 xenografts to gefitinib. 1 × 106 of HCC827 cells were subcutaneously inoculated into the flanks of Nude mice. Nude mice bearing subcutaneous xenografts were randomly separated into two groups and treated with gefitinib (25 mg/kg/day by oral gavage) or 1% Tween 80 as control. *p<0.05, **p<0. 01 by t-test. Error bar indicates the mean ±SD of tumor volumes of six mice. (K and L) NFATc2 expression with or without NFATc2 knockdown by Western blot (K), and NFAT activity by luciferase reporter assay (L), in HCC827 parental and gefitinib-resistant (GR) cells. (M) Gefitinib sensitivity of HCC827GR cells treated with CSA or with NFATc2 knockdown analyzed by MTT assays. **p<0.01 versus control by Student’s t-test. For all MTT assays, error bar indicates mean ±SD for at least three replicates.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Cisplatin sensitivity of HCC827 cells with NFATc2 knockout analyzed by MTT assay. **p<0.01, comparison with control by t-test. Error bar indicates the mean ±SD for three independent replicates. (B) Growth curve showing in vivo cisplatin response of PDCL#24 xenografts with or without NFATc2 knockdown. ***p<0.0001 versus respective vehicle groups, ###p<0.0001 versus cisplatin treated Sh-Ctrl group by two-way ANOVA. Error bar indicates the mean ±SD of tumor volumes of five mice.DOI: http://dx.doi.org/10.7554/eLife.26733.014
+**Figure 4—figure supplement 1.:** (A) Cisplatin sensitivity of HCC827 cells with NFATc2 knockout analyzed by MTT assay. **p<0.01, comparison with control by t-test. Error bar indicates the mean ±SD for three independent replicates. (B) Growth curve showing in vivo cisplatin response of PDCL#24 xenografts with or without NFATc2 knockdown. ***p<0.0001 versus respective vehicle groups, ###p<0.0001 versus cisplatin treated Sh-Ctrl group by two-way ANOVA. Error bar indicates the mean ±SD of tumor volumes of five mice.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Paclitaxel sensitivity analyzed by MTT assay in HCC827 cells with NFATc2 knockdown. **p<0.01, comparison with control by t-test. Error bar indicates the mean ±SD for three independent replicates. (B) NFATc2 expression analyzed by Western blot in H1299 parental and paclitaxel resistant (TR) cells.DOI: http://dx.doi.org/10.7554/eLife.26733.015
+**Figure 4—figure supplement 2.:** (A) Paclitaxel sensitivity analyzed by MTT assay in HCC827 cells with NFATc2 knockdown. **p<0.01, comparison with control by t-test. Error bar indicates the mean ±SD for three independent replicates. (B) NFATc2 expression analyzed by Western blot in H1299 parental and paclitaxel resistant (TR) cells.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** (A) Growth curve showing in vivo gefitinib response of HCC827 xenografts with or without NFATc2 knockdown. Nude mice bearing subcutaneous xenografts derived from 1 × 106 cells were randomly assigned to two groups and treated with gefitinib or 1% Tween 80 as control. Gefitinib (25 mg/kg/day by oral gavage) was administered for 2 cycles of 5 treatment days followed by 2 rest days per week. (B) Effects of NFATc2 stable knockdown on response of HC827 xenografts to short term gefitinib treatment. Nude mice bearing subcutaneous xenografts derived from 2.5 × 106 cells were randomly assigned to 2 groups and treated with gefitinib (25 mg/kg/day by oral gavage) or 1% Tween 80 as control for 5 consecutive days. Tumors were then allowed to grow for three weeks without treatment. ***p<0.0001 versus respective vehicle control, #p<0.05, ##p<0.01 versus cisplatin treated Sh-Ctrl group by two-way ANOVA. (C) Images of xenografts in (B) and histograms of tumor volumes compared to vector and no-treatment controls. **p<0.01 by t-test. Error bar indicates the mean ±SD of tumor volumes of the mice cohorts.DOI: http://dx.doi.org/10.7554/eLife.26733.016
+**Figure 4—figure supplement 3.:** (A) Growth curve showing in vivo gefitinib response of HCC827 xenografts with or without NFATc2 knockdown. Nude mice bearing subcutaneous xenografts derived from 1 × 106 cells were randomly assigned to two groups and treated with gefitinib or 1% Tween 80 as control. Gefitinib (25 mg/kg/day by oral gavage) was administered for 2 cycles of 5 treatment days followed by 2 rest days per week. (B) Effects of NFATc2 stable knockdown on response of HC827 xenografts to short term gefitinib treatment. Nude mice bearing subcutaneous xenografts derived from 2.5 × 106 cells were randomly assigned to 2 groups and treated with gefitinib (25 mg/kg/day by oral gavage) or 1% Tween 80 as control for 5 consecutive days. Tumors were then allowed to grow for three weeks without treatment. ***p<0.0001 versus respective vehicle control, #p<0.05, ##p<0.01 versus cisplatin treated Sh-Ctrl group by two-way ANOVA. (C) Images of xenografts in (B) and histograms of tumor volumes compared to vector and no-treatment controls. **p<0.01 by t-test. Error bar indicates the mean ±SD of tumor volumes of the mice cohorts.
 
 HCC827 is a lung AD cell line known to harbor an activating EGFR exon19 deletion which sensitizes it to tyrosine kinase inhibitor (TKI) therapy. To investigate whether NFATc2 contributes to targeted therapy resistance, NFATc2 was stably inhibited by shRNA knockdown or CRISPR knockout. This led to significantly reduced IC50 for the TKI gefitinib (Figure 4G,H). Similarly, co-treatment with either CSA or FK506, respectively, significantly sensitized HCC827 cells to gefitinib (Figure 4I). In vivo, although both groups of NFATc2 knockdown mice showed higher folds of tumor shrinkage (3.57 fold, 4.73 fold, respectively) after 2 weeks of gefitinib treatment compared to scramble control (3.38 fold) (Figure 4J), the added effects of NFATc2 inhibition were very modest and the effects on the growth curve was not clear-cut (Figure 4—figure supplement 3A). Using an alternative model, we investigated the effects of NFATc2 inhibition on response to short term gefitinib treatment for 5 days which allowed tumor recovery from the pronounced effect of gefitinib. In mice with NFATc2 knockdown, tumor regrowth was observed in only 3 and 2 mice of the sh-NFATc2-A and sh-NFATc2-B groups, respectively. In contrast, all mice in the control group showed tumor regrowth. The NFATc2-inhibited xenografts showed more effective tumor inhibition (5.44 fold, 39.73 fold, respectively) compared to the control group (3.54 fold) (p<0.01) and differences in tumor volumes on the growth curve were statistically significant (Figure 4—figure supplement 3B–C).
 
 In HCC827 induced for gefitinib resistance (HCC827 GR), NFATc2 was upregulated and NFAT promoter activities were increased compared to parental cells (Figure 4K–L). Upon CSA inhibition or sh-NFATc2 knockdown, respectively, re-sensitization to gefitinib with significantly reduced IC50 resulted (Figure 4M). Integrating the in vitro and in vivo data of various combinations of multiple cell lines and cancer drug treatments, the enhancing effect of NFATc2 on drug resistance to cytotoxic and targeted therapy was demonstrated.
 
-## NFATc2 upregulated SOX2 expression through its 3’ enhancer
+### NFATc2 upregulated SOX2 expression through its 3’ enhancer
 
-To understand the molecular mechanism through which NFATc2 mediates cancer cell stemness and drug resistance, we hypothesize NFATc2 might be linked to the pluripotency machinery through its regulatory action. Indeed, analysis of 4 lung AD cell lines showed transcripts of the major stemness factors
+To understand the molecular mechanism through which NFATc2 mediates cancer cell stemness and drug resistance, we hypothesize NFATc2 might be linked to the pluripotency machinery through its regulatory action. Indeed, analysis of 4 lung AD cell lines showed transcripts of the major stemness factors SOX2, OCT4 and NANOG were significantly elevated in tumorspheres compared to monolayers (Figure 5—figure supplement 1). Genetic inhibition of NFATc2 in HCC827 and PDCL#24 led to consistent SOX2 repression with the highest magnitude of change compared to the other 2 factors (p<0.01) (Figure 5A–B), while all 3 were significantly upregulated on NFATc2 ectopic expression (Figure 5C–D). Corresponding changes were shown at the protein level (Figure 5E). Further, inhibition of calcineurin activity either by inhibitors (Figure 5F–G), or by siRNA transient knockdown of one of its subunits PPP3R1 (Figure 5H–I) consistently down-regulated SOX2 expression in both HCC827 and PDCL#24 cells. On the other hand, NFATc1 has been reported to be a transcriptional regulator of SOX2 in pancreatic cancer (Singh et al., 2015). To study whether it is also involved in regulating SOX2, expression in lung AD, NFATc1 was transiently knocked down by siRNA in HCC827 and PDCL#24 cells, which did not result in consistently reduced SOX2 expression (Figure 5J–K), indicating NFATc2, rather than NFATc1, was involved in the regulation of SOX2 expression in lung AD. Together, the data suggested SOX2 is a major stemness target of the calcineurin/NFATc2 axis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig5-v2.jpg)
 
-**Figure 5.:** (A–D) Pluripotency genes expressions analyzed by qPCR in HCC827 (A), PDCL#24 (B), A549 (C), and H1299 cells (D) with NFATc2 knockdown or overexpression. (E) Effects of stable NFATc2 knock-down, knockout or overexpression on SOX2 expression in respective lung cancer cells by Western blot analysis. (F–G) Pluripotency genes expression analyzed by qPCR in HCC827 (F), and PDCL#24 cells (G) treated with CSA or FK506, respectively, for 24 hr. (H–I) Effects of transient knockdown of PPP3R1 on pluripotency gene expressions analyzed by qPCR in HCC827 (H) and PDCL#24 cells (I). (J–K) Effects of transient knockdown of NFATc1 on pluripotency gene expressions analyzed by qPCR in HCC827 (J) and PDCL#24 cells (K). *p<0.05, **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.017
+**Figure 5.:** (A–D) Pluripotency genes expressions analyzed by qPCR in HCC827 (A), PDCL#24 (B), A549 (C), and H1299 cells (D) with NFATc2 knockdown or overexpression. (E) Effects of stable NFATc2 knock-down, knockout or overexpression on SOX2 expression in respective lung cancer cells by Western blot analysis. (F–G) Pluripotency genes expression analyzed by qPCR in HCC827 (F), and PDCL#24 cells (G) treated with CSA or FK506, respectively, for 24 hr. (H–I) Effects of transient knockdown of PPP3R1 on pluripotency gene expressions analyzed by qPCR in HCC827 (H) and PDCL#24 cells (I). (J–K) Effects of transient knockdown of NFATc1 on pluripotency gene expressions analyzed by qPCR in HCC827 (J) and PDCL#24 cells (K). *p<0.05, **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Expression of pluripotency factors in tumorspheres was analyzed by qPCR and normalized to monolayer non-TIC of indicated cell lines. *p<0.05, **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for three replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.018
+**Figure 5—figure supplement 1.:** Expression of pluripotency factors in tumorspheres was analyzed by qPCR and normalized to monolayer non-TIC of indicated cell lines. *p<0.05, **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for three replicates.
 
-To further delineate the molecular mechanism of SOX2 regulation by NFATc2, we screened, in silico, the genomic sequences spanning 5 kb up- and downstream of the
+To further delineate the molecular mechanism of SOX2 regulation by NFATc2, we screened, in silico, the genomic sequences spanning 5 kb up- and downstream of the SOX2 transcription start site (TSS), which identified 4 regions encompassing multiple conserved NFAT binding sequences (Figure 6—figure supplement 1A). Alignment with ChIP-seq data of A549 cells retrieved from public databases showed significant overlap at loci of H3K27Ac occupancy with regions 2 and 3, respectively (Figure 6A). Luciferase assays confirmed these regions are active transcriptional regulatory regions (Figure 6—figure supplement 1B). Further evaluation with respective SOX2 luciferase reporter revealed transcriptional activities were mediated by sites 1, 2, 4, and 5 (Figure 6B). Using H441 lung cancer cell line with NFATc2 transient overexpression, we observed only sites 1, 4 and 5 showed statistically significant increased reporter activities while those of sites 4 and 5 were reciprocally abolished by CSA treatment (Figure 6C). Finally, site directed mutagenesis of NFAT motifs (GGAAA to GACTA) prevented reporter activities of sites 4 and 5 only (Figure 6D), and the findings were supported by data from A549 and H1299 cells ectopically expressing NFATc2, respectively (Figure 6—figure supplement 1C,D). Notably, sequence homology analysis showed SOX2 sites 4 and 5 are highly conserved across different mammalian species (Figure 6E). Thus, the data suggested NFATc2 was highly likely to regulate SOX2 expression through binding to 3’ enhancers at sites 4 and 5. For validation, NFATc2 ChIP-qPCR assays were performed using A549 with NFATc2 upregulation, which showed statistically significant enrichment of sites 4 and 5 sequences compared to vector control (Figure 6F). In HCC827 cells, sites 4 and 5 sequences were significantly enriched by anti-NFATc2 antibody compared to IgG control. Conversely, these sequences were significantly reduced upon NFATc2 knockout in HCC827, compared to their endogenous levels in control cells, indicating de novo physical binding of NFATc2 to SOX2 at sites 4 and 5 (Figure 6G). Together, the data showed NFATc2 upregulates SOX2 by binding to its 3’ enhancer region at around 3.2 kb (site 4) and 3.6 kb (site 5) from the TSS, respectively.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig6-v2.jpg)
 
-**Figure 6.:** (A) Genome browser view of NFAT binding sites and H3K27Ac marks (lowest panel) on SOX2 regulatory regions (regions 2 and 3 indicated in Figure 6—figure supplement 1) analyzed in A549 cells. (B) Transcriptional activities of sites 1–5 by dual luciferase reporter assays in H441 cells. (C) Transcriptional activities of the indicated putative NFAT binding sites by respective luciferase reporters in H441 cells with transient NFATc2 over-expression, with or without CSA treatment. (D) Effects of site-directed mutagenesis of the indicated putative NFAT binding sequences by respective luciferase reporter assays in H441 cells with transient NFATc2 overexpression. For B-D, *p<0.05, **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates. (E) Alignment of sites 4 and 5 genomic sequences showing highly homologous regions (gray) in different mammalian species, with putative NFAT binding sites highlighted in red. (F–G) ChIP–qPCR assays of NFATc2 binding to the indicated SOX2 sites in A549 cells with or without stable NFATc2 overexpression (F), or HCC827 cells with or without NFATc2 knockout (G). #p<0.05, ##p<0.01 versus IgG control,m **p<0.01 versus vector control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates. (H) Correlation of immunohistochemical expressions of NFATc2 and SOX2 in 92 moderately to poorly differentiated human lung adenocarcinoma by χ2-test. Pearson R, Pearson correlation coefficient. (I) Correlation of mRNA levels of SOX2 and NFATc2 in a panel of lung AD cell lines analyzed by q-PCR and Pearson correlation test. (J) Expression of NFATc2 and SOX2 in A549 cells with or without NFATc2 overexpression and SOX2 stable knockdown by Western blot. (K–L) Effect of SOX2 knockdown on tumorsphere formation (K), cell migration and invasion ability (L), of A549 cells with NFATc2 overexpression. *p<0.05, **p<0.01 versus control by t-test. Error bars indicate the mean ±SD for at least three independent replicates. (M) In vivo tumorigenicity of A549 cells with NFATc2 overexpression and SOX2 knockdown by subcutaneous inoculation of 1 × 104 cells in SCID mice. **p<0. 0001 versus control by two-way ANOVA. Error bar indicates the mean ±SD of tumor volumes of six mice. (N) Effect of NFATc2 knockdown on SOX2 expression in A549 CR cells analyzed by immunoblot. (L) Effect of SOX2 knockdown on cisplatin sensitivity by MTT assay of A549 cells with NFATc2 overexpression. ##p<0.01, versus vector control, **p<0.01 versus RFP-NFATc2_Sh-Ctrl by t-test. Error bar indicates the mean ±SD for at least three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.01910.7554/eLife.26733.020Figure 6—source data 1.Figure 6F and I.DOI: http://dx.doi.org/10.7554/eLife.26733.020
+**Figure 6.:** (A) Genome browser view of NFAT binding sites and H3K27Ac marks (lowest panel) on SOX2 regulatory regions (regions 2 and 3 indicated in Figure 6—figure supplement 1) analyzed in A549 cells. (B) Transcriptional activities of sites 1–5 by dual luciferase reporter assays in H441 cells. (C) Transcriptional activities of the indicated putative NFAT binding sites by respective luciferase reporters in H441 cells with transient NFATc2 over-expression, with or without CSA treatment. (D) Effects of site-directed mutagenesis of the indicated putative NFAT binding sequences by respective luciferase reporter assays in H441 cells with transient NFATc2 overexpression. For B-D, *p<0.05, **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates. (E) Alignment of sites 4 and 5 genomic sequences showing highly homologous regions (gray) in different mammalian species, with putative NFAT binding sites highlighted in red. (F–G) ChIP–qPCR assays of NFATc2 binding to the indicated SOX2 sites in A549 cells with or without stable NFATc2 overexpression (F), or HCC827 cells with or without NFATc2 knockout (G). #p<0.05, ##p<0.01 versus IgG control,m **p<0.01 versus vector control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates. (H) Correlation of immunohistochemical expressions of NFATc2 and SOX2 in 92 moderately to poorly differentiated human lung adenocarcinoma by χ2-test. Pearson R, Pearson correlation coefficient. (I) Correlation of mRNA levels of SOX2 and NFATc2 in a panel of lung AD cell lines analyzed by q-PCR and Pearson correlation test. (J) Expression of NFATc2 and SOX2 in A549 cells with or without NFATc2 overexpression and SOX2 stable knockdown by Western blot. (K–L) Effect of SOX2 knockdown on tumorsphere formation (K), cell migration and invasion ability (L), of A549 cells with NFATc2 overexpression. *p<0.05, **p<0.01 versus control by t-test. Error bars indicate the mean ±SD for at least three independent replicates. (M) In vivo tumorigenicity of A549 cells with NFATc2 overexpression and SOX2 knockdown by subcutaneous inoculation of 1 × 104 cells in SCID mice. **p<0. 0001 versus control by two-way ANOVA. Error bar indicates the mean ±SD of tumor volumes of six mice. (N) Effect of NFATc2 knockdown on SOX2 expression in A549 CR cells analyzed by immunoblot. (L) Effect of SOX2 knockdown on cisplatin sensitivity by MTT assay of A549 cells with NFATc2 overexpression. ##p<0.01, versus vector control, **p<0.01 versus RFP-NFATc2_Sh-Ctrl by t-test. Error bar indicates the mean ±SD for at least three independent replicates.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Computational prediction of NFAT binding sites (marked in red) on 5’ and 3’ SOX2 regulatory regions (Region 1 to 4). TSS: transcription start site. (B) Transcriptional activities of the respective SOX2 regions 1–4 of H441 cells analyzed by luciferase reporter assays. *p<0.05, **p<0.01 versus control by Student’s t-test. Error bars indicate the mean ±SD for at least three independent replicates. (C–D) Luciferase reporter activities of mutant or wild-type SOX2 reporters of A549 (C), or H1299 cells (D), with or without NFATc2 stable overexpression. *p<0.05, **p<0.01, comparison with RFP;  p<0.05, ###p<0.01, wild type versus mutant in RFP-NFATc2 cells by t-test. Error bars indicate the mean ±SD for at least three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.021
+**Figure 6—figure supplement 1.:** (A) Computational prediction of NFAT binding sites (marked in red) on 5’ and 3’ SOX2 regulatory regions (Region 1 to 4). TSS: transcription start site. (B) Transcriptional activities of the respective SOX2 regions 1–4 of H441 cells analyzed by luciferase reporter assays. *p<0.05, **p<0.01 versus control by Student’s t-test. Error bars indicate the mean ±SD for at least three independent replicates. (C–D) Luciferase reporter activities of mutant or wild-type SOX2 reporters of A549 (C), or H1299 cells (D), with or without NFATc2 stable overexpression. *p<0.05, **p<0.01, comparison with RFP; # p<0.05, ##p<0.01, wild type versus mutant in RFP-NFATc2 cells by t-test. Error bars indicate the mean ±SD for at least three independent replicates.
 
-## NFATc2 and SOX2 expressions were significantly correlated in human lung AD and NFATc2/SOX2 coupling augmented tumor functions
+### NFATc2 and SOX2 expressions were significantly correlated in human lung AD and NFATc2/SOX2 coupling augmented tumor functions
 
 The clinical significance of NFATc2/SOX2 coupling was further assessed in human lung cancers. To avoid the confounding effect of SOX2 gene amplification in squamous cell carcinoma (SCC), and to focus on tumors with demonstrated involvement of NFATc2, we performed IHC analysis on 92 moderately to poorly differentiated AD. A significant correlation between SOX2 and NFATc2 expressions was observed (Figure 6H). In lung AD cell lines, NFATc2 and SOX2 transcript expressions were also positively correlated (Figure 6I). Together, the data supported NFATc2 upregulates SOX2 in clinical and cultured lung AD.
 
@@ -125,29 +356,29 @@ Next, we evaluated whether NFATc2-induced SOX2 upregulation was functionally rel
 
 Similar to NFATc2, SOX2 was also upregulated in A549 induced for cisplatin resistance (A549 CR) but on NFATc2 knockdown, SOX2 levels were repressed (Figure 6N), suggesting NFATc2/SOX2 coupling was functionally active in resistant cancer cells. Moreover, while NFATc2 overexpression induced cisplatin resistance of A549 cells, SOX2 silencing restored sensitivity to a level comparable to that of the control cells (Figure 6L). Overall, the data indicated NFATc2 induces TIC, cancer initiating phenotypes and drug resistance through upregulating SOX2 expression.
 
-## ALDH1A1 was a target of NFATc2/SOX2 regulation
+### ALDH1A1 was a target of NFATc2/SOX2 regulation
 
-We have shown NFATc2 was upregulated in ALDH
+We have shown NFATc2 was upregulated in ALDH+/CD44+-TIC, suggesting NFATc2 might regulate this TIC population (Figure 2B). With NFATc2 knockdown or knockout in HCC827, ALDH+/CD44+-TIC were significantly reduced (Figure 7A,B). Consistent changes were observed for PDCL#24 with NFATc2 knockdown (Figure 7—figure supplement 1A). Further, inhibition of calcineurin by CSA and FK506, respectively, also significantly reduced ALDH+/CD44+-TIC (Figure 7C). Conversely, in both A549 with NFATc2 overexpression and in A549 CR cells, ALDH+/CD44+-TIC proportions were increased (Figure 7D and Figure 7—figure supplement 1B). Breakdown analysis showed the trend of changes that were more consistent with those of the ALDH+ but not CD44+ population, suggesting ALDH might be the main target of NFATc2.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig7-v2.jpg)
 
-**Figure 7.:** (A–D) Effects on ALDH+, CD44+ and ALDH+/CD44+ cell populations by flow cytometry analysis of HCC827 with NFATc2 knockdown (A), NFATc2 knockout (B), or NFATc2 inhibition by CSA or FK506 (C), and of A549 cells with NFATc2 overexpression (D). (E–H) Effects on ALDH1A1 mRNA expression by qPCR analysis of cancer cells with NFATc2 knockdown (E), NFATc2 inhibition by CSA or FK506 (F), NFATc2 up-regulation (G), or of A549 with induced cisplatin resistance (H). (I) Effects of SOX2 knockdown on ALDH+, CD44+ and ALDH+/CD44+ cell populations by flow cytometry in A549 with NFATc2-overexpression. (J) Expression of SOX2 and ALDH1A1 transcripts in A549 cells with NFATc2 overexpression and SOX2 knockdown. (K) Representative images of A549 xenografts with or without NFATc2 overexpression immunohistochemically stained for NFATc2, SOX2 and ALDH1A1, respectively. Scale bars, 50 µm. (L) Conserved SOX2 binding sequences (ATTCA) at ALDH1A1 enhancer region by ChIP-seq of PDCL#24 cells, aligned with homologous mammalian sequences and H3K27Ac peaks of A549 cells from published databases. (M) Detection of endogenous SOX2 binding to ALDH1A1 sites by ChIP–qPCR analysis in PDCL#24 cells. (N) Luciferase reporter activities at sites 1 and 2 of ALDH1A enhancer region by dual luciferase reporter assay in A549 cells with SOX2 overexpression. (O–P) Effects of transient ALDH1A1 suppression on A549 with upregulated NFATc2 with respect to invasion and migration (O), and cisplatin sensitivity. ##p<0.01, versus RFP_Scramble by t-test. (P). (Q) Correlation between ALDH1A1 and SOX2 expressions by IHC in human lung adenocarcinomas by χ2-test. *p<0.05, **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.02210.7554/eLife.26733.023Figure 7—source data 1.Figure 7A,B,I and M.DOI: http://dx.doi.org/10.7554/eLife.26733.023
+**Figure 7.:** (A–D) Effects on ALDH+, CD44+ and ALDH+/CD44+ cell populations by flow cytometry analysis of HCC827 with NFATc2 knockdown (A), NFATc2 knockout (B), or NFATc2 inhibition by CSA or FK506 (C), and of A549 cells with NFATc2 overexpression (D). (E–H) Effects on ALDH1A1 mRNA expression by qPCR analysis of cancer cells with NFATc2 knockdown (E), NFATc2 inhibition by CSA or FK506 (F), NFATc2 up-regulation (G), or of A549 with induced cisplatin resistance (H). (I) Effects of SOX2 knockdown on ALDH+, CD44+ and ALDH+/CD44+ cell populations by flow cytometry in A549 with NFATc2-overexpression. (J) Expression of SOX2 and ALDH1A1 transcripts in A549 cells with NFATc2 overexpression and SOX2 knockdown. (K) Representative images of A549 xenografts with or without NFATc2 overexpression immunohistochemically stained for NFATc2, SOX2 and ALDH1A1, respectively. Scale bars, 50 µm. (L) Conserved SOX2 binding sequences (ATTCA) at ALDH1A1 enhancer region by ChIP-seq of PDCL#24 cells, aligned with homologous mammalian sequences and H3K27Ac peaks of A549 cells from published databases. (M) Detection of endogenous SOX2 binding to ALDH1A1 sites by ChIP–qPCR analysis in PDCL#24 cells. (N) Luciferase reporter activities at sites 1 and 2 of ALDH1A enhancer region by dual luciferase reporter assay in A549 cells with SOX2 overexpression. (O–P) Effects of transient ALDH1A1 suppression on A549 with upregulated NFATc2 with respect to invasion and migration (O), and cisplatin sensitivity. ##p<0.01, versus RFP_Scramble by t-test. (P). (Q) Correlation between ALDH1A1 and SOX2 expressions by IHC in human lung adenocarcinomas by χ2-test. *p<0.05, **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** (A–C) Flow cytometry analysis of ALDH/CD44 distribution in PDCL#24 cells with stable NFATc2 knockdown (A), A549 cells with NFATc2 overexpression (B), or A549CR compared to parental cells (C). *p<0.05, **p<0.01 versus control by t-test. Error bars indicate the mean ±SD for at least three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.024
+**Figure 7—figure supplement 1.:** (A–C) Flow cytometry analysis of ALDH/CD44 distribution in PDCL#24 cells with stable NFATc2 knockdown (A), A549 cells with NFATc2 overexpression (B), or A549CR compared to parental cells (C). *p<0.05, **p<0.01 versus control by t-test. Error bars indicate the mean ±SD for at least three independent replicates.
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig7-figsupp2-v2.jpg)
 
-**Figure 7—figure supplement 2.:** ALDH1A1.(A) ALDH+ proportions analyzed by flow cytometry in A549 cells with NFATc2 overexpression and transient ALDH1A1 knockdown. (B) mRNA level of ALDH1A1 analyzed by qPCR in HCC827 cells with NFATc2 knockout. (C) Luciferase reporter activities for site1 and 2 of A549 cells with or without NFATc2 overexpression. **p<0.01 versus control by t-test. Error bars indicate the mean ±SD for at least three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.025
+**Figure 7—figure supplement 2.:** (A) ALDH+ proportions analyzed by flow cytometry in A549 cells with NFATc2 overexpression and transient ALDH1A1 knockdown. (B) mRNA level of ALDH1A1 analyzed by qPCR in HCC827 cells with NFATc2 knockout. (C) Luciferase reporter activities for site1 and 2 of A549 cells with or without NFATc2 overexpression. **p<0.01 versus control by t-test. Error bars indicate the mean ±SD for at least three independent replicates.
 
 ![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig7-figsupp3-v2.jpg)
 
-**Figure 7—figure supplement 3.:** Analysis of ALDH1A1 expression by qPCR in A549 cells with ectopic NFATc2 expression and ALDH1A1 knockdown. **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for 3 replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.026
+**Figure 7—figure supplement 3.:** Analysis of ALDH1A1 expression by qPCR in A549 cells with ectopic NFATc2 expression and ALDH1A1 knockdown. **p<0.01 versus control by t-test. Error bar indicates the mean ±S.D. for 3 replicates.
 
 ![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig7-figsupp4-v2.jpg)
 
-**Figure 7—figure supplement 4.:** Expressions of total β-catenin, active β-catenin (non-phosphorylated), and phosphorylated β-catenin (p-β-catenin) analyzed by immunoblot in A549 with or without NFATc2 overexpression and SOX2 knockdown.DOI: http://dx.doi.org/10.7554/eLife.26733.027
+**Figure 7—figure supplement 4.:** Expressions of total β-catenin, active β-catenin (non-phosphorylated), and phosphorylated β-catenin (p-β-catenin) analyzed by immunoblot in A549 with or without NFATc2 overexpression and SOX2 knockdown.
 
 ALDH1A1 is the most frequent and important ALDH isozyme reported in lung cancer TIC (Ucar et al., 2009; Tomita et al., 2016). Although ALDH1 is marketed as the major subtype contributing to ALDH activities detected by the ALDEFLUORTM assay, cross-reactivity with other isoforms cannot be excluded. Hence, to explore the part contributed by ALDH1A1, we abrogated ALDH1A1 in A549 engineered to overexpress NFATc2, which led to significantly suppressed aldefluor activities (Figure 7—figure supplement 2A). ALDH1A1 expression was suppressed in NFATc2 knockdown or knockout cells, as well as in cells treated with CSA or FK506, respectively (Figure 7E–F, Figure 7—figure supplement 2B). Conversely, ALDH1A1 was up-regulated in NFATc2 overexpressing cells and A549 CR cells (Figure 7G–H), indicating NFATc2 regulates ALDH1A1 expression which contributes to the majority of ALDH positivity in ALDH+/CD44+-TIC.
 
@@ -157,13 +388,13 @@ To examine the mechanism of SOX2 in ALDH1A1 regulation, ChIP-seq analysis was pe
 
 To evaluate whether ALDH1A1 is a functionally relevant target, ALDH1A1 was knocked-down by siRNA in NFATc2-overexpressing A549 cells (Figure 7—figure supplement 3). This led to significant suppression of cell motility (Figure 7O) and cisplatin sensitization (Figure 5N). Furthermore, moderately to poorly differentiated human lung AD showed statistically significant positive correlation between SOX2 and ALDH1A1 expressions by IHC staining (Figure 5O). Collectively, the data supported ALDH1A1 is a functional target of regulation through NFATc2/SOX2 coupling.
 
-## NFATc2/SOX2/ALDH1A1 coupling enhanced drug resistance and tumor properties through ROS attenuation
+### NFATc2/SOX2/ALDH1A1 coupling enhanced drug resistance and tumor properties through ROS attenuation
 
-Alleviation of oxidative stress induced by chemotoxicity promotes cancer cell survival and mediates drug tolerance. Thus, in A549 CR cells, intracellular ROS levels were significantly lower compared to parental A549 cells (
+Alleviation of oxidative stress induced by chemotoxicity promotes cancer cell survival and mediates drug tolerance. Thus, in A549 CR cells, intracellular ROS levels were significantly lower compared to parental A549 cells (Figure 8A). To investigate for possible relation between NFATc2 and ROS modulation, NFATc2 was silenced by knockdown or knockout which led to increased ROS levels (Figure 8B–D). As shown in Figure 8E, NFATc2 depletion sensitized PDCL#24 cells to cisplatin treatment, but the addition of the reducing agent NAC reversed cisplatin IC50 to above the control level dose-dependently. Reciprocally, the enhanced resistance of A549 by NFATc2 overexpression was reversed by oxidative stress induced by the glutathione inhibitor BSO (Figure 8F), consistent with the suggestion that drug resistance by NFATc2 is effected through ROS attenuation. Similarly, ROS regulation also supported other tumor phenotypes mediated by NFATc2. For example, tumorspheres suppression by NFATc2 knockdown was restored by NAC dose-dependently but in control cells, no significant changes were induced even in the presence of additional NAC (Figure 8G–H). Likewise, cell migration and invasion efficiencies inhibited by NFATc2 depletion were reversed by NAC (Figure 6I). To further address the involvement of SOX2 coupling and ALDH1A1, we showed suppression of ROS by NFATc2-overexpression in A549 cells were reversed by silencing SOX2 or ALDH1A1, respectively (Figure 8J–K). Together, the data suggested NFATc2/SOX2/ALDH1A1 form a functional axis in the homeostatic regulation of an optimal level of ROS for in vitro tumorigenicity, cell motility, and mediation of drug resistance.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/26733/elife-26733-fig8-v2.jpg)
 
-**Figure 8.:** (A) ROS levels detected by flow cytometry in A549 and A549 CR cells. (B–C) ROS levels in HCC827 cells (B) and PDCL#24 cells (C) with or without NFATc2 stable knockdown. (D) ROS levels in HCC827 cells with or without NFATc2 knockout. (E–F) Cisplatin sensitivity expressed as IC50 by MTT assays of NFATc2-silenced PDCL#24 cells treated with increasing doses of NAC (E), or NFATc2-overexpressing A549 cells treated with the oxidizing agent BSO (F), respectively. *p<0.05, **p<0.01 versus vector control without REDOX reagents; ##p<0.01 versus the corresponding treatment control by t-tests. Error bar indicates the mean ±S.D. for three independent replicates. (G–H) Effects of increasing doses of NAC on tumorsphere formation ability of HCC827 (G) cells and PDCL#24 cells (H). *p<0.05, **p<0.01 versus corresponding treatment controls, ##p<0.01 versus vector control by t-test. Error bar indicates the mean ±S.D. for three independent replicates. (I) Effects of increasing doses of NAC on cell migration and invasion of HCC827 cells with NFATc2 down-regulation by 2 sh-RNA knockdown sequences. (J–K) ROS levels in NFATc2-overexpressing A549 cells with stable SOX2 (J) or transient ALDH1A1 (K) knockdown. *p<0.05, **p<0.01 versus respective control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates.DOI: http://dx.doi.org/10.7554/eLife.26733.02810.7554/eLife.26733.029Figure 8—source data 1.Figure 8A–D,J and K.DOI: http://dx.doi.org/10.7554/eLife.26733.029
+**Figure 8.:** (A) ROS levels detected by flow cytometry in A549 and A549 CR cells. (B–C) ROS levels in HCC827 cells (B) and PDCL#24 cells (C) with or without NFATc2 stable knockdown. (D) ROS levels in HCC827 cells with or without NFATc2 knockout. (E–F) Cisplatin sensitivity expressed as IC50 by MTT assays of NFATc2-silenced PDCL#24 cells treated with increasing doses of NAC (E), or NFATc2-overexpressing A549 cells treated with the oxidizing agent BSO (F), respectively. *p<0.05, **p<0.01 versus vector control without REDOX reagents; ##p<0.01 versus the corresponding treatment control by t-tests. Error bar indicates the mean ±S.D. for three independent replicates. (G–H) Effects of increasing doses of NAC on tumorsphere formation ability of HCC827 (G) cells and PDCL#24 cells (H). *p<0.05, **p<0.01 versus corresponding treatment controls, ##p<0.01 versus vector control by t-test. Error bar indicates the mean ±S.D. for three independent replicates. (I) Effects of increasing doses of NAC on cell migration and invasion of HCC827 cells with NFATc2 down-regulation by 2 sh-RNA knockdown sequences. (J–K) ROS levels in NFATc2-overexpressing A549 cells with stable SOX2 (J) or transient ALDH1A1 (K) knockdown. *p<0.05, **p<0.01 versus respective control by t-test. Error bar indicates the mean ±S.D. for at least three independent replicates.
 
 ## Discussion
 
@@ -183,92 +414,92 @@ In summary, this study demonstrates the calcium signaling molecule NFATc2 enhanc
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 Established cell lines (H1993, HCC1833, H358, H1650, H2228, H1299, H1437, H1975, H23, H2122, HCC827, HCC78, A549, H441, and BEAS-2B) were obtained from ATCC. HCC366 and HCC78 were kindly provided by Dr. J. Minna (University of Texas Southwestern Medical Center. Dallas). All cell lines were kept as frozen aliquots upon receipt and only the first 20 passages were used in experiments. Patient-derived cell lines (HKULC1, HKULC2, HKULC3, HKULC4, PDCL#24, and FA31) were raised from resected primary lung cancers or malignant pleural effusions and only the 1st to 10th passages were used for study (Lam et al., 2006; Liu et al., 2013a). Cancer cells were maintained in RPMI-1640 (Invitrogen, Carlsbad, CA) with 10% FBS (Invitrogen, Carlsbad, CA). BEAS-2B were cultured in Keratinocyte-SFM (Invitrogen, Carlsbad, CA). Gefitinib, paclitaxel or cisplatin-resistant (-GR, TR or –CR, respectively) cells were generated by chronic exposure of cancer cells to stepwise increased doses of the respective drugs. All procured cell lines used in this study were free of mycoplasma contamination and were authenticated using the AmpFlSTR Identifiler PCR Amplification Kit for short tandem repeat profiling according to the manufacturer’s instruction (Thermo Fisher Scientific, Waltham, MA). None of the cell lines used in this study were included in the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
-## SiRNA and plasmids
+### SiRNA and plasmids
 
 Small interfering RNA (siRNA) with pre-designed sequences targeting human NFATc1, PPP3R1, ALDH1A1 and scramble siRNA were from Sigma-Aldrich (St Louis, MO). pGL3-NFAT luciferase (17870), two shRNA sequences targeting SOX2, pLKO.1 Sox2 3HM a (26353) and pLKO.1 Sox2 3 hr b (26352), the negative control vector pLKO.1-puro (1864), the envelope vector pMD2.G (12259) and packaging vector psPAX2 (12260) were purchased from Addgene (Cambrige, MA; http://www.addgene.org). The pLKO.1-lentiviral shRNA with different inserts specifically targeting NFATc2 were purchased from Sigma-Aldrich (TRCN0000016144, TRCN0000230218). Human full length NFATc2 were amplified by PCR, and the RFP-NFTAc2 plasmids were generated by cloning the sequences into PCDH-CMV-MCS-EF1-COPRFP vector (SBI, Mountain View, CA). For luciferase reporter construction, SOX2 regulatory regions were amplified by PCR from human genomic DNA and cloned into pGL3 (Promega) to generate the SOX2-luc constructs. Primers used for genomic DNA amplification were listed in Supplementary file 1A. Site directed mutagenesis of the consensus NFAT binding site (GGAAA to GACTA) were performed using QuikChange (Stratagene).
 
-## Lentiviral knockdown of NFATc2 and SOX2
+### Lentiviral knockdown of NFATc2 and SOX2
 
 Lentiviral shRNA was produced by transfecting the shRNA, envelope and packaging vectors into 293 T cells using lipofectamine 2000 (Invitrogen, Carlsbad, CA). Viruses were harvested after 48 hr of transfection followed by infection of target cells for 72 hr. Cells stably expressing shRNA were selected using puromycin (Sigma-Aldrich) for 14 days after 72 hr of viral infection.
 
-## Lentiviral over-expression of NFATc2
+### Lentiviral over-expression of NFATc2
 
 RFP-NFATc2 lentiviral particles were produced and transduced into target cells using Lenti Starter kit (SBI, Mountain View, CA) according to manufacturer’s instructions. RFP-positive cells stably over-expressing NFATc2 and SOX2 were selected by FACS using BD Aria (BD Biosciences).
 
-## Lentiviral knock out of NFATc2 by CRISPR/Cas9
+### Lentiviral knock out of NFATc2 by CRISPR/Cas9
 
 LentiCas9-Blast and lentiGuide-Puro were purchased from Addgene (Cambrige, MA; http://www.addgene.org). The gRNA targeting NFATc2 was designed using Zifit (http://zifit.partners.org/ZiFiT/) and listed in Supplementary file 1A. The annealed gNFATc2 oligonucleotides were cloned into lentiGuide-Puro. Lenti-viral cas9 and lenti-viral gNFATc2 were generated by transfecting lentiCas9-Blast or lenti-viral gNFATc2 together with pMD2.G and psPAX2, respectively, into 293FT cells by lipofectamine 2000 according to published protocols (Sanjana et al., 2014). After infection of lenti-viral cas9, cells stably expressing Cas9 were selected using Blasticidin (Sigma-Aldrich) for 10 days. HCC827-Cas9 cells were further infected with lenti-gNFATc2 virus for 72 hr, and cells stably expressing gNFATc2 were selected using puromycin (Sigma-Aldrich) for 14 days.
 
-## Flow cytometry and fluorescence activated cell sorting (FACS)
+### Flow cytometry and fluorescence activated cell sorting (FACS)
 
 ALDH activity was analyzed by the Aldefluor kit (Stem Cell Technologies) according to manufacturer’s instructions. CD44 expression was stained by anti-CD44-APC (BD Pharmingen) as previously described (Liu et al., 2013a). Flow cytometry was performed using FACS Canto II (BD Biosciences) and data were analyzed using FlowJo (Tree star). RFP positive cells with NFATc2 over-expression were isolated by FACS using BD Aria (BD Biosciences). Sorted cells were re-analyzed after collection to ensure a purity of >95%. Non-viable cells were identified by propidium iodide inclusion.
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 Cells were harvested, washed once in PBS and fixed in 1 ml cold 70% ethanol for 1 hr at 4°C. The fixed cells were washed twice with PBS. Then 50 µl of RNase A solution (100 µg/ml) and 200 µl of propidium iodide (50 µg/ml) were added to the cell pellet. Cells were incubated at room temperature for 10 min. Fluorescence was measured by flow cytometry (FACS Canto II Analyzer, BD Biosciences) and data were analyzed using FlowJo (Tree star).
 
-## BrdU cell proliferation assay
+### BrdU cell proliferation assay
 
 BrdU assay was performed using BrdU cell proliferation assay kit (Cell Signaling, Beverly, MA) according to manufacturer’s instructions. Briefly, 5000 cells were seeded in a 96-well plate and incubated overnight followed by adding 10 µM BrdU and incubation for 12 hr. After the medium was removed, cells were fixed by 100 µl/well of fixing solution for 30 min at room temperature. BrdU was detected by 100 µl/well of 1X detection antibody solution followed by 1X HRP-conjugated secondary antibody solution. Then, 100 µl TMB substrate was added to each well and incubated at room temperature for 30 min followed by 100 µl of stop buffer. The absorbance was read at 450 nm using a plate spectrophotometer.
 
-## Sphere formation and serial passage
+### Sphere formation and serial passage
 
 Five hundred cells were seeded in an ultra-low plate (Costar) and cultured in cancer stem cell medium (RPMI-1640 medium supplemented with 20 ng/mL FGF, 20 ng/mL EGF, 40 ng/mL IGF and 1X B27 (Invitrogen, Carlsbad, CA) for 14 days. Tumorspheres were harvested, dissociated with trypsin, re-suspended in RPMI-1640, and 500 cells were seeded again for second passage using the same stem cell culture conditions.
 
-## Cell motility assessment by migration and invasion assay
+### Cell motility assessment by migration and invasion assay
 
 The migration and invasion assays were performed using Corning Transwell. Both chambers were filled with RMPI-1640 medium, and the lower chamber was supplemented with 10% FBS. For the migration assay, 5 × 104 cells were seeded into the upper chamber and allowed to migrate for 24 hr. For the invasion assay, the upper chamber was first coated with Matrigel (BD Pharmingen); 1 × 105 cells were seeded and allowed to invade for 24 to 36 hr. Cells that migrated or invaded to the lower surface of the transwells were fixed with methanol and stained with crystal violet. Cell densities were photographically captured in three random fields. The dye on the transwell membrane was dissolved by 10% acetic acid, transferred to a 96 well plate, and the dye intensity was measured by a plate spectrophotometer at 570 nm.
 
-## Drug sensitivity assays
+### Drug sensitivity assays
 
 Drug sensitivity was tested by MTT assays. 6000 cells per well were seeded into 96-well plates and incubated for 24 hr at 37°C, followed by exposure to gefitinib (Selleckchem Houston, TX), paclitaxel (Sigma-Aldrich, St Louis, MO), or cisplatin (Sigma-Aldrich, St Louis, MO) at various concentrations for 72 hr with or without CSA (Selleckchem, Houston, TX), NAC or BSO (Sigma-Aldrich, St Louis, MO). Subsequently, Thiazolyl Blue Tetrazolium Bromide (MTT) (Sigma-Aldrich, St Louis, MO) was added and the mixture was incubated at 37°C for 4 hr. The absorbance was read at 570 nm using a plate spectrophotometer. The drug response curve was plotted and IC50 was calculated using nonlinear regression model by GraphPad Prism 7.0.
 
-## Quantitative PCR (qPCR) analysis
+### Quantitative PCR (qPCR) analysis
 
 Total RNA was isolated using RNAiso Plus reagent (Takara, Mountain View, CA) and complementary DNA (cDNA) was generated using PrimeScript RT Reagent Kit (Takara, Mountain View, CA) according to the manufacturer’s instructions. Gene mRNA levels were analyzed by quantitative RT-PCR (qPCR) (7900HT, Applied Biosystems, Carlsbad, CA) and SYBR green (Qiagen, Hilden, Germany) detection. Average expression levels of RPL13A and beta-2-microglobulin (B2M) were used as internal controls. Primers were listed in Supplementary file 1B.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were harvested and lysed on ice by lysis buffer [50 mM Tris HCl pH 7.4, 1% Triton X-100, 1 mM EDTA, 150 mM NaCl, 0.1% SDS, with freshly added 1:50 Phosphatase Inhibitor Cocktail 2 (Sigma), 1:50 Protease Inhibitor Cocktail (Sigma)] for 30 min. The cell lysate was then centrifuged at 13 k rpm for 20 min at 4°C to remove cell debris. The protein amount was quantified by the Dc Protein Assay (Bio-Rad). Cell lysates were resolved by 6–10% SDS-PAGE and then transferred onto PVDF membranes (Millipore). Primary antibodies including SOX2 (1:1000), NFATc2 (1:1000), β-catenin (1:1000), non p-β-catenin (1:1000), p- βcatenin (1:1000) or ACTIN (1:1000) (Cell Signaling, Beverly, MA), respectively, where appropriate, were added. After overnight incubation, the membrane was washed with PBS and then incubated with the anti-rabbit secondary antibody. Target proteins on the membrane were visualized on X-ray films using ECL Plus Western Blotting Detection Reagents (Amersham, Buckinghamshire, UK).
 
-## Chromatin immunoprecipitation (ChIP)-qPCR assay
+### Chromatin immunoprecipitation (ChIP)-qPCR assay
 
 ChIP assay was performed using the Magna ChIPTM A kit (Millipore, Billerica, MA) according to manufacturer’s instructions. Briefly, cells were sonicated and lysed after protein/DNA cross-linking by 1% formaldehyde for 10 min. The crosslinked complex was immuno-precipitated by anti-NFATc2 antibody or control rabbit IgG (Cell Signaling, Beverly, MA) bound to protein A magnetic beads. After overnight incubation at 4°C, the complex was eluted and DNA was purified. The immune-precipitated DNA was quantified by qPCR using primer sequences designed to detect specific regulatory regions listed in Supplementary file 1B.
 
-## ChIP-seq assay
+### ChIP-seq assay
 
 ChIP assay was performed using the EZ-Magna ChIP A/G Chromatin Immunoprecipitation Kit (Millipore, 17–10086) according to manufacturer’s instructions. Cells were cultivated and treated with 1% formaldehyde to crosslink protein and DNA. Cell lysate was sonicated to reduce the DNA length to 100 to 500 bp. The DNA-protein fragments were then incubated with 10 ug SOX2 antibodies (Abcam) and magnetic beads coated with protein A/G to form DNA-protein-antibody complex. The DNA was isolated and purified by Spin column and sent for commercial (BGI) library construction and sequencing using Illumina Hi-Seq platforms. Sequence reads were aligned to Human Reference Genome (hg19) using Bowtie (Langmead et al., 2009). Model-based analysis of ChIP-Seq (MACS) was used for peaks identification by comparing ChIP sample over input sample with default parameters (Zhang et al., 2008).
 
-## NFATc2-binding sites predication
+### NFATc2-binding sites predication
 
 The 5’- and 3’- flanking regions (−5000 to +5000 bp) of SOX2 were scanned for NFAT binding sequences using PWMSCAN (Levy and Hannenhalli, 2002). The significance of the predicted sites was evaluated statistically using a permutation-based method and comparison with occurrence of the motif in background genomic sequences of intergenic regions. Phylogenetically non-conserved binding sites were filtered (Li et al., 2010).
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 Cells were transfected with luciferase reporters, expression plasmids and pRL-TK vector using lipofectamine 2000 (Invitrogen, Carlsbad, CA). Luciferase activities were measured by using the Dual-Luciferase Reporter Assay System (Promega).
 
-## In vivo tumorigenicity
+### In vivo tumorigenicity
 
 All animal experiments were performed after approval by the Animal Ethics Committee, the University of Hong Kong according to issued guidelines. Briefly, different numbers of cells mixed with an equal volume of matrigel (BD Pharmingen) were injected subcutaneously at the back of 6 week old severe combined immunodeficiency (SCID) mice or Ncr-nu/nu-nude mice. Tumor sizes were monitored every 3 days using digital vernier calipers, and tumor volumes were calculated using the formula [sagittal dimension (mm) ×cross dimension (mm)2]/2 and expressed in mm3.
 
-## Reactive oxygen species (ROS) measurement
+### Reactive oxygen species (ROS) measurement
 
 Cells with or without respective treatments were washed with PBS and stained with 1 µM of the ROS probe CellROXTM Deep Red (Lift Technologies) for 30 mins according to manufacturer’s instructions. Fluorescence was measured by flow cytometry (FACSCanto II Analyzer, BD Biosciences) and data were analyzed using FlowJo (Tree star).
 
-## Human lung cancers
+### Human lung cancers
 
 Surgically resected primary human NSCLC and corresponding normal lung tissues were collected prospectively in the Queen Mary Hospital, University of Hong Kong. Tissue collection protocols were approved by the Joint Hospital and University Institutional Review Board and written informed consents from patients were obtained. Fresh tissues were snap-frozen within 45–60 min after vascular clamping and kept in −70°C until use. Adjacent tumor tissues were fixed in 4% neural buffered formalin for 24 hr and processed into formalin fixed, paraffin embedded (FFPE) tissue blocks. Tumor classification and differentiation grading was according to the WHO classification of lung tumors, 2004. Tumor typing and pathological staging was performed by a qualified anatomical pathologist (MPW). Clinical parameters and outcomes were charted from hospital records in consultation with relevant clinicians.
 
-## Immunohistochemistry (IHC)
+### Immunohistochemistry (IHC)
 
 Tissue microarrays were constructed using at least 5 cores of tissue from different representative tumor areas and 1 core of corresponding normal lung from each case. Tumor cores were randomly arranged in the microarray to prevent positional bias during recording of IHC results. De-paraffinized tissue microarray sections (5 µm) were subjected to antigen retrieval using microwave heating at 95°C in 1 mM EDTA buffer, pH 8.0. Endogenous peroxidase was quenched with 3% hydrogen peroxide for 10 min. Blocked sections were labeled with primary antibodies against NFATc2 (1:50 dilution, Cell Signaling), SOX2 (1:200 dilution, Cell Signaling) and ALDH1A1 (1:1000 dilution, Abcam) overnight at 4°C. Anti-rabbit HRP-labeled polymer (DAKO) was used as a secondary antibody. Color detection was performed by liquid DAB +substrate chromogen system (DAKO). Protein expression levels were semi-quantitatively analyzed using an automated image capturing and analysis system (Aperio).
 
 NFATc2 expression level was scored according to the extent and intensity of nuclear staining in the tumor cells only and expression in the cytoplasm, stromal or inflammatory cells was excluded from evaluation. The intensity was graded as 1, 2, or 3 according to whether nuclear staining was absent or weak, moderate, or strong, respectively. The staining extent was graded as 1, 2, or 3 according to whether expression was observed in scattered individual cells, aggregates of 5 or more but <19 cells, or sheets of 20 or more cells. The products of the 2 grades were then computed, and cases with scores of 4 and above were counted as high level expression.
 
-## Statistics
+### Statistics
 
 Data were analyzed by SPSS (version 16.0; SPSS Inc., Chicago, IL, USA), GraphPad Prism 7.0 or Excel (Microsoft, Redmond, WA, USA) software packages and shown as mean ±standard deviations (s.d.). Differential expression between paired tumor/normal tissues were analyzed by Wilcoxon text. Differences between groups were analyzed by t test for continuous variables. Differences between growth curves of xenograft model were analyzed by two-way ANOVA. Correlation between NFATc2 and SOX2 mRNA level were analyzed by Pearson correlation test. Correlation between NFATc2, SOX2, ALDH1A1 expressions and clinicopathological variables in lung cancers were analyzed by the χ2-test. Association between NFATc2 expression and overall survival and recurrence-free survival were analyzed by the Kaplan–Meier method with log-rank test. Multivariate survival analyses were performed by Cox regression model. Two-sided p values < 0.05 were considered as being statistically signiﬁcant.

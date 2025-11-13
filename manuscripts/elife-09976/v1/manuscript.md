@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.09976.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores ( Errington et al., 2014 ). This Registered Report describes the proposed replication plan of key experiments from 'RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth' by Hatzivassiliou and colleagues, published in Nature in 2010 ( Hatzivassiliou et al., 2010 ). Hatzivassiliou and colleagues examined the paradoxical response of RAF-WT tumors to treatment with RAF inhibitors. The key experiments being replicated include Figure 1A, in which the original authors demonstrated that treatment of a subset of BRAF WT tumor cell lines with RAF small molecule inhibitors resulted in an increase in cell viability, Figure 2B, which reported that RAF inhibitor activation of the MAPK pathway was dependent on CRAF but not BRAF, and Figure 4A, where the dimerization of BRAF and CRAF was modulated by the RAF inhibitor PLX4720, but not GDC-0879. The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange , and the results of the replications will be published by eLife . DOI: http://dx.doi.org/10.7554/eLife.09976.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from 'RAF inhibitors prime wild-type RAF to activate the MAPK pathway and enhance growth' by Hatzivassiliou and colleagues, published in Nature in 2010 (Hatzivassiliou et al., 2010). Hatzivassiliou and colleagues examined the paradoxical response of RAF-WT tumors to treatment with RAF inhibitors. The key experiments being replicated include Figure 1A, in which the original authors demonstrated that treatment of a subset of BRAFWT tumor cell lines with RAF small molecule inhibitors resulted in an increase in cell viability, Figure 2B, which reported that RAF inhibitor activation of the MAPK pathway was dependent on CRAF but not BRAF, and Figure 4A, where the dimerization of BRAF and CRAF was modulated by the RAF inhibitor PLX4720, but not GDC-0879. The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.
 
 ## Introduction
 
@@ -39,73 +39,505 @@ Hatzivassiliou’s work was published along with two companion papers; Heidorn a
 
 Unless otherwise noted, all protocol information were derived from the original paper, references from the original paper, or information obtained directly from the authors. An asterisk (*) indicates data or information provided by the Reproducibility Project: Cancer Biology core team. A hashtag (#) indicates information provided by the replicating lab. All references to Figures refer to the original study.
 
-## Protocol 1: Assessing cell viability of a panel of cancer cell lines treated with RAF and MEK inhibitors
+### Protocol 1: Assessing cell viability of a panel of cancer cell lines treated with RAF and MEK inhibitors
 
 This protocol describes the treatment of a panel of human cancer cell lines with or without mutations in BRAF or RAS with drugs targeting RAF and MEK and assessing cell viability. This experiment is a replication of Figure 1A.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsA375CellsATCCCRL-1619DMEM + 10% FBSMeWoCellsATCCHTB-65EMEM + 10% FBSHCT116CellsATCCCCL-247McCoy's 5a Medium Modified + 10% FBSPLX4720InhibitorSymansisSY-PLX4720PD0325901InhibitorSymansisSY-PD0325901GDC-0879InhibitorSelleckchemS1104Replaces Genentech and Array BioPharma sourceFluorescent plate readerEquipmentBioTek FLx80015-cm cell culture platesEquipmentCorning430599Original unspecified96-well platesMaterialsCorning3903DMEMMediumATCC30–2002Original unspecifiedEMEMMediumATCC30–2003Original unspecifiedMcCoy's 5a medium modifiedMediumATCC30–2007Original unspecifiedFetal bovine serum (FBS)ReagentATCC30–2020Original unspecifiedDMSOReagentFisherD128–500Original unspecifiedCell Titer Glo kitReagentPromegaG7570
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A375</td>
+      <td>Cells</td>
+      <td>ATCC</td>
+      <td>CRL-1619</td>
+      <td>DMEM + 10% FBS</td>
+    </tr>
+    <tr>
+      <td>MeWo</td>
+      <td>Cells</td>
+      <td>ATCC</td>
+      <td>HTB-65</td>
+      <td>EMEM + 10% FBS</td>
+    </tr>
+    <tr>
+      <td>HCT116</td>
+      <td>Cells</td>
+      <td>ATCC</td>
+      <td>CCL-247</td>
+      <td>McCoy's 5a Medium Modified + 10% FBS</td>
+    </tr>
+    <tr>
+      <td>PLX4720</td>
+      <td>Inhibitor</td>
+      <td>Symansis</td>
+      <td>SY-PLX4720</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PD0325901</td>
+      <td>Inhibitor</td>
+      <td>Symansis</td>
+      <td>SY-PD0325901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDC-0879</td>
+      <td>Inhibitor</td>
+      <td>Selleckchem</td>
+      <td>S1104</td>
+      <td>Replaces Genentech and Array BioPharma source</td>
+    </tr>
+    <tr>
+      <td>Fluorescent plate reader</td>
+      <td>Equipment</td>
+      <td>BioTek FLx800</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15-cm cell culture plates</td>
+      <td>Equipment</td>
+      <td>Corning</td>
+      <td>430599</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>96-well plates</td>
+      <td>Materials</td>
+      <td>Corning</td>
+      <td>3903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DMEM</td>
+      <td>Medium</td>
+      <td>ATCC</td>
+      <td>30–2002</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>EMEM</td>
+      <td>Medium</td>
+      <td>ATCC</td>
+      <td>30–2003</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>McCoy's 5a medium modified</td>
+      <td>Medium</td>
+      <td>ATCC</td>
+      <td>30–2007</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Reagent</td>
+      <td>ATCC</td>
+      <td>30–2020</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>Reagent</td>
+      <td>Fisher</td>
+      <td>D128–500</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>Cell Titer Glo kit</td>
+      <td>Reagent</td>
+      <td>Promega</td>
+      <td>G7570</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data, and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/0hezb/).
 
-## Protocol 2: Assessing CRAF and BRAF roles in drug-dependent activation of MEK
+### Protocol 2: Assessing CRAF and BRAF roles in drug-dependent activation of MEK
 
 This protocol describes the treatment of HCT116 (KRAS-MT) cells expressing doxycycline-inducible shRNAs against BRAF and CRAF, and treatment with RAF inhibitors followed by Western blot examination of activation of MEK. This experiment is a replication of Figure 2B.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsHCT116 cells expressing doxycycline-inducible shRNA directed against BRAFCellsProvided by original authorsHCT116 cells expressing doxycycline-inducible shRNA directed against CRAFCellsProvided by original authorsDoxycyclineDrugAlfa AesarJ67043-AEOriginal unspecifiedPLX4720 RAF inhibitorDrugSymansisSY-PLX4720GDC-0879InhibitorSelleckchemS1104Replaces Genentech and Array BioPharma sourceDMSOReagentSigmaD2650-5X5MLOriginal unspecifiedMcCoy's 5a MediumMediumATCC30-2007Fetal bovine serumReagentSeradigm1400-500GOriginal unspecified15-cm cell culture platesMaterialsCorning430599Original unspecifiedProtease inhibitor mixture; Complete MiniReagentRoche Applied Science04693159001Phosphatase inhibitor mixReagentPierce78420SDS-PAGE (4–20%) Tris-GlycineMaterialsBioRad456–1094Original unspecifiedNitrocellulose membraneMaterialsBioRad170–4158Original unspecifiedECL detection reagentsReagentsAmershamRPN2232Rabbit phospho MEK (pMEK) 1/2 (Ser217/221) antibodyAntibodyCell Signaling Technology91211:1000Rabbit MEK 1/2 antibody (clone 47E6)AntibodyCell Signaling Technology91261:1000Mouse anti-BRAF antibodyAntibodySanta Cruz Biotechnologysc-52841:1000Goat Anti-Mouse IgG-HRPAntibodyPierce314321:5,000–1:200,000Goat Anti-Rabbit IgG-HRPAntibodyPierce314601:5,000–1:200,000Mouse anti-CRAF antibodyAntibodyBD6101511:1000Mouse anti-ß-actin (HRP conjugate) (clone 8H10D10)AntibodyCell Signaling Technology12262Not originally usedKaleidoscope prestained standards protein ladderReagentBioRad161–0324Original unspecified4–15% Mini-PROTEAN TGX Stain-Free SDS-PAGE gelMaterialsBioRad456–8085Original unspecifiedTrans-Blot Turbo Mini Nitrocellulose transfer packsEquipmentBioRad170–4158Original unspecified
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HCT116 cells expressing doxycycline-inducible shRNA directed against BRAF</td>
+      <td>Cells</td>
+      <td colspan="2">Provided by original authors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HCT116 cells expressing doxycycline-inducible shRNA directed against CRAF</td>
+      <td>Cells</td>
+      <td colspan="2">Provided by original authors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Doxycycline</td>
+      <td>Drug</td>
+      <td>Alfa Aesar</td>
+      <td>J67043-AE</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>PLX4720 RAF inhibitor</td>
+      <td>Drug</td>
+      <td>Symansis</td>
+      <td>SY-PLX4720</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDC-0879</td>
+      <td>Inhibitor</td>
+      <td>Selleckchem</td>
+      <td>S1104</td>
+      <td>Replaces Genentech and Array BioPharma source</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>Reagent</td>
+      <td>Sigma</td>
+      <td>D2650-5X5ML</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>McCoy's 5a Medium</td>
+      <td>Medium</td>
+      <td>ATCC</td>
+      <td>30-2007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum</td>
+      <td>Reagent</td>
+      <td>Seradigm</td>
+      <td>1400-500G</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>15-cm cell culture plates</td>
+      <td>Materials</td>
+      <td>Corning</td>
+      <td>430599</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>Protease inhibitor mixture; Complete Mini</td>
+      <td>Reagent</td>
+      <td>Roche Applied Science</td>
+      <td>04693159001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phosphatase inhibitor mix</td>
+      <td>Reagent</td>
+      <td>Pierce</td>
+      <td>78420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SDS-PAGE (4–20%) Tris-Glycine</td>
+      <td>Materials</td>
+      <td>BioRad</td>
+      <td>456–1094</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>Nitrocellulose membrane</td>
+      <td>Materials</td>
+      <td>BioRad</td>
+      <td>170–4158</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>ECL detection reagents</td>
+      <td>Reagents</td>
+      <td>Amersham</td>
+      <td>RPN2232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rabbit phospho MEK (pMEK) 1/2 (Ser217/221) antibody</td>
+      <td>Antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>9121</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Rabbit MEK 1/2 antibody (clone 47E6)</td>
+      <td>Antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>9126</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-BRAF antibody</td>
+      <td>Antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-5284</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Goat Anti-Mouse IgG-HRP</td>
+      <td>Antibody</td>
+      <td>Pierce</td>
+      <td>31432</td>
+      <td>1:5,000–1:200,000</td>
+    </tr>
+    <tr>
+      <td>Goat Anti-Rabbit IgG-HRP</td>
+      <td>Antibody</td>
+      <td>Pierce</td>
+      <td>31460</td>
+      <td>1:5,000–1:200,000</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-CRAF antibody</td>
+      <td>Antibody</td>
+      <td>BD</td>
+      <td>610151</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-ß-actin (HRP conjugate) (clone 8H10D10)</td>
+      <td>Antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>12262</td>
+      <td>Not originally used</td>
+    </tr>
+    <tr>
+      <td>Kaleidoscope prestained standards protein ladder</td>
+      <td>Reagent</td>
+      <td>BioRad</td>
+      <td>161–0324</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>4–15% Mini-PROTEAN TGX Stain-Free SDS-PAGE gel</td>
+      <td>Materials</td>
+      <td>BioRad</td>
+      <td>456–8085</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>Trans-Blot Turbo Mini Nitrocellulose transfer packs</td>
+      <td>Equipment</td>
+      <td>BioRad</td>
+      <td>170–4158</td>
+      <td>Original unspecified</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data, and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/0hezb/).
 
-## Protocol 3: Biochemical heterodimerization assay with recombinant RAF proteins in the presence or absence of RAF inhibitors
+### Protocol 3: Biochemical heterodimerization assay with recombinant RAF proteins in the presence or absence of RAF inhibitors
 
 This protocol describes how to perform immunoprecipitation and Western blot analysis with recombinant CRAF and BRAF kinase domains in the presence or absence of the RAF inhibitors PLX4720 or GDC-0879. Wild-type BRAF and BRAFV600E kinase domains will be tested in the presence of wild-type CRAF. This experiment is a replication of Figure 4A.
 
-## Sampling
+#### Sampling
 
-## Materials and ﻿reagents
+#### Materials and ﻿reagents
 
-ReagentTypeManufacturerCatalog #CommentspFBHTc delta N 1-416 BRAFPlasmidMRC-PPUDU586Made at Genentech and Array BioPharma. Communication with authors.pFBHTc delta N 1-416 BRAFV600EPlasmidMRC-PPUDU603Recombinant glutathione S-transferase (GST)-CRAF (Y340D/Y341D) kinase domainProteinInvitrogenPV3805Original catalog # not specifiedAssay bufferChemicalSpecific brand information will be left up to the discretion of the replicating lab and recorded laterDMSOChemicalPLX4720InhibitorSymansisSY-PLX4720GDC-0879InhibitorSelleckchemS1104Replaces Genentech and Array BioPharma sourceAdenylylmethylenediphosphonate (AMP-PCP)ChemicalSigmaM7510Original catalog # not specifiedRabbit anti-GSTAntibodyCell Signaling Technology2622Protein A agarose beadsChromatographyMilliporeIP02Original catalog # not specifiedSDS-PAGE gelWestern materialsPrepared in replicating labOriginal unspecifiedPrecision Plus Protein All Blue StandardsReagentBioRad161–0393Original unspecifiedPonceau stainReagentSigmaP7170Not originally includedNitrocellulose membraneMaterialPall CorporationPN 66485Original unspecifiedMouse anti-CRAF (clone 53)AntibodyBD Biosciences610151Mouse anti-BRAFAntibodySigmaWH0000673M1Goat anti-mouse IgG-HRPAntibodyInvitrogen Molecular ProbesA11029Replaces Alexa Fluor 488 goat anti-mouse IgG from Invitrogen, cat# A11029ECL Plus ReagentDetection assayLumigenPS-3Replaces TyphoonTM Scanner from Amersham BioscienceFluor-S Max ScannerInstrumentBioRad
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pFBHTc delta N 1-416 BRAF</td>
+      <td>Plasmid</td>
+      <td>MRC-PPU</td>
+      <td>DU586</td>
+      <td rowspan="2">Made at Genentech and Array BioPharma. Communication with authors.</td>
+    </tr>
+    <tr>
+      <td>pFBHTc delta N 1-416 BRAFV600E</td>
+      <td>Plasmid</td>
+      <td>MRC-PPU</td>
+      <td>DU603</td>
+    </tr>
+    <tr>
+      <td>Recombinant glutathione S-transferase (GST)-CRAF (Y340D/Y341D) kinase domain</td>
+      <td>Protein</td>
+      <td>Invitrogen</td>
+      <td>PV3805</td>
+      <td>Original catalog # not specified</td>
+    </tr>
+    <tr>
+      <td>Assay buffer</td>
+      <td>Chemical</td>
+      <td rowspan="2" colspan="3">Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>Chemical</td>
+    </tr>
+    <tr>
+      <td>PLX4720</td>
+      <td>Inhibitor</td>
+      <td>Symansis</td>
+      <td>SY-PLX4720</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GDC-0879</td>
+      <td>Inhibitor</td>
+      <td>Selleckchem</td>
+      <td>S1104</td>
+      <td>Replaces Genentech and Array BioPharma source</td>
+    </tr>
+    <tr>
+      <td>Adenylylmethylenediphosphonate (AMP-PCP)</td>
+      <td>Chemical</td>
+      <td>Sigma</td>
+      <td>M7510</td>
+      <td>Original catalog # not specified</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-GST</td>
+      <td>Antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>2622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein A agarose beads</td>
+      <td>Chromatography</td>
+      <td>Millipore</td>
+      <td>IP02</td>
+      <td>Original catalog # not specified</td>
+    </tr>
+    <tr>
+      <td>SDS-PAGE gel</td>
+      <td>Western materials</td>
+      <td colspan="2">Prepared in replicating lab</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>Precision Plus Protein All Blue Standards</td>
+      <td>Reagent</td>
+      <td>BioRad</td>
+      <td>161–0393</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>Ponceau stain</td>
+      <td>Reagent</td>
+      <td>Sigma</td>
+      <td>P7170</td>
+      <td>Not originally included</td>
+    </tr>
+    <tr>
+      <td>Nitrocellulose membrane</td>
+      <td>Material</td>
+      <td>Pall Corporation</td>
+      <td>PN 66485</td>
+      <td>Original unspecified</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-CRAF (clone 53)</td>
+      <td>Antibody</td>
+      <td>BD Biosciences</td>
+      <td>610151</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse anti-BRAF</td>
+      <td>Antibody</td>
+      <td>Sigma</td>
+      <td>WH0000673M1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Goat anti-mouse IgG-HRP</td>
+      <td>Antibody</td>
+      <td>Invitrogen Molecular Probes</td>
+      <td>A11029</td>
+      <td>Replaces Alexa Fluor 488 goat anti-mouse IgG from Invitrogen, cat# A11029</td>
+    </tr>
+    <tr>
+      <td>ECL Plus Reagent</td>
+      <td>Detection assay</td>
+      <td>Lumigen</td>
+      <td>PS-3</td>
+      <td rowspan="2">Replaces TyphoonTM Scanner from Amersham Bioscience</td>
+    </tr>
+    <tr>
+      <td>Fluor-S Max Scanner</td>
+      <td>Instrument</td>
+      <td>BioRad</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data, and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/0hezb/).
 
@@ -113,50 +545,812 @@ All data obtained from the experiment - raw data, data analysis, control data, a
 
 Note: for details on the full set of power calculations, see https://osf.io/a4e75/.
 
-## Protocol 1
+### Protocol 1
 
-## Summary of original data
+#### Summary of original data
 
-Figure 1A: RAF inhibitors and MEK inhibitorEC50 (µM)A375PLX47200.5GDC-08790.3PD0325901<0.0781MeWoPLX4720>20GDC-0879>20PD0325901<0.0781HCT116PLX4720>20GDC-0879>20PD03259010.18
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2">Figure 1A: RAF inhibitors and MEK inhibitor</td>
+      <td>EC50 (µM)</td>
+    </tr>
+    <tr>
+      <td>A375</td>
+      <td>PLX4720</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GDC-0879</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PD0325901</td>
+      <td>&lt;0.0781</td>
+    </tr>
+    <tr>
+      <td>MeWo</td>
+      <td>PLX4720</td>
+      <td>&gt;20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GDC-0879</td>
+      <td>&gt;20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PD0325901</td>
+      <td>&lt;0.0781</td>
+    </tr>
+    <tr>
+      <td>HCT116</td>
+      <td>PLX4720</td>
+      <td>&gt;20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GDC-0879</td>
+      <td>&gt;20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PD0325901</td>
+      <td>0.18</td>
+    </tr>
+  </tbody>
+</table>
 
-## Power calculations
+#### Power calculations
 
-## Protocol 2
+### Protocol 2
 
-## Summary of original data reported in Figure 2B
+#### Summary of original data reported in Figure 2B
 
-Figure 2B; assumed number of biological replicates = 3hairpinDoxDrugDoseNormalized pMEK band densityshBRAF-GDC-087900.1453shBRAF-GDC-08790.10.8004shBRAF-GDC-08791.00.1263shBRAF-GDC-087910.00.0245shBRAF+GDC-087900.0457shBRAF+GDC-08790.10.6477shBRAF+GDC-08791.00.1485shBRAF+GDC-087910.00.0115shBRAF-PLX472000.0795shBRAF-PLX4720.10.1615shBRAF-PLX4721.00.7760shBRAF-PLX47210.01.0721shBRAF+PLX47200.0861shBRAF+PLX4720.10.1388shBRAF+PLX4721.00.4522shBRAF+PLX47210.00.9831shCRAF-GDC-087900.2121shCRAF-GDC-08790.10.7038shCRAF-GDC-08791.00.1554shCRAF-GDC-087910.00.0239shCRAF+GDC-087900.1005shCRAF+GDC-08790.10.1896shCRAF+GDC-08791.00.0933shCRAF+GDC-087910.00.0315shCRAF-PLX472000.4166shCRAF-PLX4720.10.7469shCRAF-PLX4721.01.1387shCRAF-PLX47210.01.2976shCRAF+PLX47200.2945shCRAF+PLX4720.10.2449shCRAF+PLX4721.00.2983shCRAF+PLX47210.00.2729
+<table>
+  <tbody>
+    <tr>
+      <td colspan="5">Figure 2B; assumed number of biological replicates = 3</td>
+    </tr>
+    <tr>
+      <td>hairpin</td>
+      <td>Dox</td>
+      <td>Drug</td>
+      <td>Dose</td>
+      <td>Normalized pMEK band density</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>-</td>
+      <td>GDC-0879</td>
+      <td>0</td>
+      <td>0.1453</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>-</td>
+      <td>GDC-0879</td>
+      <td>0.1</td>
+      <td>0.8004</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>-</td>
+      <td>GDC-0879</td>
+      <td>1.0</td>
+      <td>0.1263</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>-</td>
+      <td>GDC-0879</td>
+      <td>10.0</td>
+      <td>0.0245</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>+</td>
+      <td>GDC-0879</td>
+      <td>0</td>
+      <td>0.0457</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>+</td>
+      <td>GDC-0879</td>
+      <td>0.1</td>
+      <td>0.6477</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>+</td>
+      <td>GDC-0879</td>
+      <td>1.0</td>
+      <td>0.1485</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>+</td>
+      <td>GDC-0879</td>
+      <td>10.0</td>
+      <td>0.0115</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>-</td>
+      <td>PLX4720</td>
+      <td>0</td>
+      <td>0.0795</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>-</td>
+      <td>PLX472</td>
+      <td>0.1</td>
+      <td>0.1615</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>-</td>
+      <td>PLX472</td>
+      <td>1.0</td>
+      <td>0.7760</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>-</td>
+      <td>PLX472</td>
+      <td>10.0</td>
+      <td>1.0721</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>+</td>
+      <td>PLX472</td>
+      <td>0</td>
+      <td>0.0861</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>+</td>
+      <td>PLX472</td>
+      <td>0.1</td>
+      <td>0.1388</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>+</td>
+      <td>PLX472</td>
+      <td>1.0</td>
+      <td>0.4522</td>
+    </tr>
+    <tr>
+      <td>shBRAF</td>
+      <td>+</td>
+      <td>PLX472</td>
+      <td>10.0</td>
+      <td>0.9831</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>-</td>
+      <td>GDC-0879</td>
+      <td>0</td>
+      <td>0.2121</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>-</td>
+      <td>GDC-0879</td>
+      <td>0.1</td>
+      <td>0.7038</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>-</td>
+      <td>GDC-0879</td>
+      <td>1.0</td>
+      <td>0.1554</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>-</td>
+      <td>GDC-0879</td>
+      <td>10.0</td>
+      <td>0.0239</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>+</td>
+      <td>GDC-0879</td>
+      <td>0</td>
+      <td>0.1005</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>+</td>
+      <td>GDC-0879</td>
+      <td>0.1</td>
+      <td>0.1896</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>+</td>
+      <td>GDC-0879</td>
+      <td>1.0</td>
+      <td>0.0933</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>+</td>
+      <td>GDC-0879</td>
+      <td>10.0</td>
+      <td>0.0315</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>-</td>
+      <td>PLX4720</td>
+      <td>0</td>
+      <td>0.4166</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>-</td>
+      <td>PLX472</td>
+      <td>0.1</td>
+      <td>0.7469</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>-</td>
+      <td>PLX472</td>
+      <td>1.0</td>
+      <td>1.1387</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>-</td>
+      <td>PLX472</td>
+      <td>10.0</td>
+      <td>1.2976</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>+</td>
+      <td>PLX472</td>
+      <td>0</td>
+      <td>0.2945</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>+</td>
+      <td>PLX472</td>
+      <td>0.1</td>
+      <td>0.2449</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>+</td>
+      <td>PLX472</td>
+      <td>1.0</td>
+      <td>0.2983</td>
+    </tr>
+    <tr>
+      <td>shCRAF</td>
+      <td>+</td>
+      <td>PLX472</td>
+      <td>10.0</td>
+      <td>0.2729</td>
+    </tr>
+  </tbody>
+</table>
 
 The original data does not indicate the error associated with multiple biological replicates. To identify a suitable sample size, power calculations were performed using different levels of relative variance using the values quantified from the reported image as the mean. At each level of variance the effect size was estimated and used to calculate the needed sample size to achieve at least 80% power with the indicated alpha error. The achieved power is reported.
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-GroupsVariance estimateF test statistic F(1,64) (shRNA, Dox, Drug interaction)Partial η2Effect size fA priori powerTotal sample size (32 groups)Normalized pMEK in shBRAF or shCRAF cells treated with or without Dox and varying doses of GDC-0879 or PLX47202%2513.610.972455.9406399.9%9615%45.61150.396160.8099999.9%9628%13.83180.167260.4481799.1%9640%7.32030.096500.3268188.4%96
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th>Variance estimate</th>
+      <th>F test statistic F(1,64) (shRNA, Dox, Drug interaction)</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size (32 groups)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Normalized pMEK in shBRAF or shCRAF cells treated with or without Dox and varying doses of GDC-0879 or PLX4720</td>
+      <td>2%</td>
+      <td>2513.61</td>
+      <td>0.97245</td>
+      <td>5.94063</td>
+      <td>99.9%</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>45.6115</td>
+      <td>0.39616</td>
+      <td>0.80999</td>
+      <td>99.9%</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>13.8318</td>
+      <td>0.16726</td>
+      <td>0.44817</td>
+      <td>99.1%</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>7.3203</td>
+      <td>0.09650</td>
+      <td>0.32681</td>
+      <td>88.4%</td>
+      <td>96</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-GroupsVariance estimateF test statistic F(1,64) (shRNA, Dox)Partial η2Effect size fA priori powerTotal sample size (32 groups)Normalized pMEK in shBRAF or shCRAF cells treated with or without Dox across varying doses of GDC-08792%327.180.836392.2610199.9%9615%5.816510.083310.3014782.9%9628%1.669280.025420.1615082.1%32040%0.817950.012620.1130581.5%640Normalized pMEK in shBRAF or shCRAF cells treated with or without Dox across varying doses of PLX47202%7267.40.9912710.656199.9%9615%129.1980.668731.4208299.9%9628%37.07860.366830.7611599.9%9640%18.16850.221110.5328199.9%96
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th>Variance estimate</th>
+      <th>F test statistic F(1,64) (shRNA, Dox)</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size (32 groups)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Normalized pMEK in shBRAF or shCRAF cells treated with or without Dox across varying doses of GDC-0879</td>
+      <td>2%</td>
+      <td>327.18</td>
+      <td>0.83639</td>
+      <td>2.26101</td>
+      <td>99.9%</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>5.81651</td>
+      <td>0.08331</td>
+      <td>0.30147</td>
+      <td>82.9%</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>1.66928</td>
+      <td>0.02542</td>
+      <td>0.16150</td>
+      <td>82.1%</td>
+      <td>320</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>0.81795</td>
+      <td>0.01262</td>
+      <td>0.11305</td>
+      <td>81.5%</td>
+      <td>640</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Normalized pMEK in shBRAF or shCRAF cells treated with or without Dox across varying doses of PLX4720</td>
+      <td>2%</td>
+      <td>7267.4</td>
+      <td>0.99127</td>
+      <td>10.6561</td>
+      <td>99.9%</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>129.198</td>
+      <td>0.66873</td>
+      <td>1.42082</td>
+      <td>99.9%</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>37.0786</td>
+      <td>0.36683</td>
+      <td>0.76115</td>
+      <td>99.9%</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>18.1685</td>
+      <td>0.22111</td>
+      <td>0.53281</td>
+      <td>99.9%</td>
+      <td>96</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-DrugGroup 1 across doseGroup 2 across doseVariance estimateEffect size fA priori powerSamples per groupGDC-0879shBRAF (+ Dox)shBRAF (- Dox)2%1.7787499.9%315%0.2371784.6%628%0.1270581.2%1940%0.0889480.4%38shCRAF (+ Dox)shCRAF (- Dox)2%4.9762999.9%315%0.6635199.9%328%0.3554588.0%340%0.2488180.9%5PLX4720shBRAF (+ Dox)shBRAF (- Dox)2%3.1381599.9%315%0.4184196.2%328%0.2241586.2%740%0.1569082.9%13shCRAF (+ Dox)shCRAF (- Dox)2%18.208199.9%315%2.4277599.9%328%1.3005899.9%340%0.9104099.9%3
+<table>
+  <thead>
+    <tr>
+      <th>Drug</th>
+      <th>Group 1 across dose</th>
+      <th>Group 2 across dose</th>
+      <th>Variance estimate</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Samples per group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">GDC-0879</td>
+      <td rowspan="4">shBRAF (+ Dox)</td>
+      <td rowspan="4">shBRAF (- Dox)</td>
+      <td>2%</td>
+      <td>1.77874</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>0.23717</td>
+      <td>84.6%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>0.12705</td>
+      <td>81.2%</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>0.08894</td>
+      <td>80.4%</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td rowspan="4">shCRAF (+ Dox)</td>
+      <td rowspan="4">shCRAF (- Dox)</td>
+      <td>2%</td>
+      <td>4.97629</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>0.66351</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>0.35545</td>
+      <td>88.0%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>0.24881</td>
+      <td>80.9%</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="8">PLX4720</td>
+      <td rowspan="4">shBRAF (+ Dox)</td>
+      <td rowspan="4">shBRAF (- Dox)</td>
+      <td>2%</td>
+      <td>3.13815</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>0.41841</td>
+      <td>96.2%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>0.22415</td>
+      <td>86.2%</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>0.15690</td>
+      <td>82.9%</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td rowspan="4">shCRAF (+ Dox)</td>
+      <td rowspan="4">shCRAF (- Dox)</td>
+      <td>2%</td>
+      <td>18.2081</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>2.42775</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>1.30058</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>0.91040</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
-## Protocol 3
+### Protocol 3
 
-## Summary of original data reported in Figure 4A
+#### Summary of original data reported in Figure 4A
 
-Figure 4A; assumed number of biological replicates = 3BRAF variantDrugNormalized BRAF band densityWTDMSO1WTAMP-PCP0.2WTGDC-08792.7WTPLX47200.2V600EDMSO1V600EAMP-PCP1.4V600EGDC-08791.3V600EPLX47201.3
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">Figure 4A; assumed number of biological replicates = 3</td>
+    </tr>
+    <tr>
+      <td>BRAF variant</td>
+      <td>Drug</td>
+      <td>Normalized BRAF band density</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>DMSO</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>AMP-PCP</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>GDC-0879</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>PLX4720</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>V600E</td>
+      <td>DMSO</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>V600E</td>
+      <td>AMP-PCP</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>V600E</td>
+      <td>GDC-0879</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>V600E</td>
+      <td>PLX4720</td>
+      <td>1.3</td>
+    </tr>
+  </tbody>
+</table>
 
 The original data does not indicate the error associated with multiple biological replicates. To identify a suitable sample size, power calculations were performed using different levels of relative variance using the values quantified from the reported image as the mean. At each level of variance, the effect size was estimated and used to calculate the needed sample size to achieve at least 80% power with the indicated alpha error. The achieved power is reported.
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-Group 1 (constant)Group 2Variance estimateEffect size dA priori powerSamples per groupWT BRAF (DMSO)WT BRAF (AMP-PCP)2%200.0099.9%315%26.66799.9%328%14.28699.4%340%10.00091.8%3WT BRAF (DMSO)WT BRAF (GDC-0879)2%31.48299.9%315%4.197584.2%428%2.248782.0%640%1.574184.7%9WT BRAF (DMSO)WT BRAF (PLX4720)2%200.0099.9%315%26.66799.9%328%14.28699.4%340%10.00091.8%3Sensitivity calculationsDetectable effect size dA prior powerSamples per groupBRAFV600E (DMSO)BRAFV600E (AMP-PCP)2%8.019480.0%315%3.958180.0%428%2.197380.0%640%1.491780.0%9BRAFV600E (DMSO)BRAFV600E (GDC-0879)2%8.019480.0%315%3.958180.0%428%2.197380.0%640%1.491780.0%9BRAFV600E (DMSO)BRAFV600E (PLX4720)2%8.019480.0%315%3.958180.0%428%2.197380.0%640%1.491780.0%9
+<table>
+  <thead>
+    <tr>
+      <th>Group 1 (constant)</th>
+      <th>Group 2</th>
+      <th>Variance estimate</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Samples per group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">WT BRAF (DMSO)</td>
+      <td rowspan="4">WT BRAF (AMP-PCP)</td>
+      <td>2%</td>
+      <td>200.00</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>26.667</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>14.286</td>
+      <td>99.4%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>10.000</td>
+      <td>91.8%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="4">WT BRAF (DMSO)</td>
+      <td rowspan="4">WT BRAF (GDC-0879)</td>
+      <td>2%</td>
+      <td>31.482</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>4.1975</td>
+      <td>84.2%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>2.2487</td>
+      <td>82.0%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>1.5741</td>
+      <td>84.7%</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">WT BRAF (DMSO)</td>
+      <td rowspan="4">WT BRAF (PLX4720)</td>
+      <td>2%</td>
+      <td>200.00</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>26.667</td>
+      <td>99.9%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>14.286</td>
+      <td>99.4%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>10.000</td>
+      <td>91.8%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td colspan="3">Sensitivity calculations</td>
+      <td>Detectable effect size d</td>
+      <td>A prior power</td>
+      <td>Samples per group</td>
+    </tr>
+    <tr>
+      <td rowspan="4">BRAFV600E (DMSO)</td>
+      <td rowspan="4">BRAFV600E (AMP-PCP)</td>
+      <td>2%</td>
+      <td>8.0194</td>
+      <td>80.0%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>3.9581</td>
+      <td>80.0%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>2.1973</td>
+      <td>80.0%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>1.4917</td>
+      <td>80.0%</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">BRAFV600E (DMSO)</td>
+      <td rowspan="4">BRAFV600E (GDC-0879)</td>
+      <td>2%</td>
+      <td>8.0194</td>
+      <td>80.0%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>3.9581</td>
+      <td>80.0%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>2.1973</td>
+      <td>80.0%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>1.4917</td>
+      <td>80.0%</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">BRAFV600E (DMSO)</td>
+      <td rowspan="4">BRAFV600E (PLX4720)</td>
+      <td>2%</td>
+      <td>8.0194</td>
+      <td>80.0%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15%</td>
+      <td>3.9581</td>
+      <td>80.0%</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>28%</td>
+      <td>2.1973</td>
+      <td>80.0%</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>40%</td>
+      <td>1.4917</td>
+      <td>80.0%</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>

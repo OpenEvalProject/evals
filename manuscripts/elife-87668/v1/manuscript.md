@@ -12,12 +12,12 @@
 
 ### Affiliations
 
-1. https://ror.org/026stee22 Department of Migration, Max Planck Institute of Animal Behavior Radolfzell Germany
-2. https://ror.org/05nywn832 Leibniz Institute for Zoo and Wildlife Research Berlin Germany
-3. https://ror.org/04bwf3e34 Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR) Wessling Germany
-4. https://ror.org/03msdt869 Institute of Plant and Animal Ecology Yekaterinburg Russian Federation
-5. https://ror.org/021scha67 Institute of the Biological Problems of the North Magadan Russian Federation
-6. https://ror.org/0546hnb39 Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany
+1. Department of Migration, Max Planck Institute of Animal Behavior Radolfzell Germany ([ROR:026stee22](https://ror.org/026stee22))
+2. Leibniz Institute for Zoo and Wildlife Research Berlin Germany ([ROR:05nywn832](https://ror.org/05nywn832))
+3. Deutsches Zentrum für Luft- und Raumfahrt e.V. (DLR) Wessling Germany ([ROR:04bwf3e34](https://ror.org/04bwf3e34))
+4. Institute of Plant and Animal Ecology Yekaterinburg Russian Federation ([ROR:03msdt869](https://ror.org/03msdt869))
+5. Institute of the Biological Problems of the North Magadan Russian Federation ([ROR:021scha67](https://ror.org/021scha67))
+6. Centre for the Advanced Study of Collective Behaviour, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
 
 † Corresponding author
 
@@ -39,17 +39,86 @@ In this study, we tracked GPS-tagged Rough-legged buzzards for 10 years and anal
 
 ## Results
 
-## Migration of Rough-legged buzzards: Always on the move
+### Migration of Rough-legged buzzards: Always on the move
 
 Except during the breeding season, Rough-legged buzzard migration continues throughout the year, even after the birds’ arrival at their traditionally recognized ‘wintering grounds’ (Figure 1a and b). Rough-legged buzzards started their fall migration on 28 September (hereafter mean ± sd for the day of the year: 271 ± 11, n = 31) and ended on 12 October (285 ± 11, n = 33). The mean latitude/longitude where the birds ended their fall migration was 55.57 ± 1.92°/49.35 ± 5.63° (Figure 1a). During the winter, birds continued to migrate at a slower pace down to 49.53 ± 2.01° latitude (on 5 February, 36 ± 40, n = 23) and 34.29 ± 5.11° longitude (on 24 January, 24 ± 47, n = 23). Afterward, during the second part of the winter, birds returned to 55.52 ± 2.63° latitude and 49.79 ± 8.24° longitude to start the spring migration (Figure 1a). Rough-legged buzzards started their spring migration to the Arctic on 27 April (117 ± 7, n = 27) and arrived at the breeding grounds on 15 May (135 ± 8, n = 18).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87668/elife-87668-fig1-v1.jpg)
+
+**Figure 1.:** Q, quick phase; Qf, quick fall phase (orange); Qs, quick spring phase (yellow); S1, slow phase, first part (light blue); S2, slow phase, second part (dark blue). (a) Change in the latitude of 43 Rough-legged buzzards during the year, red line indicates mean latitude of all birds, black vertical lines indicate mean dates of start and end of the migration phases, blue vertical line indicates mean date of the minimum latitude. Gray, sky blue, and piggy pink shaded areas indicate standard deviation of the means. (b) Migration map. (c) Difference in the migration parameters between the migration phases. Lines on the direction plot (down, right) represent the mean value for each bird; arrows represent the mean direction for each phase. Boxes on the boxplots show the interquartile range, the whiskers are maximum and minimum values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87668/elife-87668-fig1-figsupp1-v1.jpg)
+
 In the following, we will refer to the spring and fall migrations as the quick phase, the over-wintering movement to the lowest point of latitude as the first part of the slow phase, and the movement from the lowest point of latitude to the starting point of the spring migration as the second part of the slow phase (Figure 1a). For both quick and slow phases of the migration, linear mixed-effects models with the season as a fixed factor received higher support from the likelihood ratio test (p<0.001, Supplementary file 1a–c).
 
-## Quick-slow phase features comparison
+### Quick-slow phase features comparison
 
 During the quick phase, individual birds flew greater distances in a shorter time, that is, at a faster rate, than during the slow phase. After arriving at what is traditionally known as the wintering grounds, the direction of migration changed, so the direction of quick and slow phases also differed (Table 1, Figure 1c). The quick phase (one part) was 1415 ± 50 km long (hereafter mean ± sd), whereas the slow phase (one part) was 1026 ± 55 km, that is, 389 ± 60 km shorter (p<0.001, Supplementary file 1d, Figure 1c). During the quick phase, birds flew for 15 ± 3 days, and one part of the slow phase lasted 100 ± 4 days, that is, 85 ± 5 days longer (p<0.001, Supplementary file 1e, Figure 1c). At the same time, the second part of the slow phase was 54 ± 7 days shorter than the first (p<0.001, Supplementary file 1e, Figure 1c). The migration speed was 104 ± 6 km/day during the quick phase and 12 ± 7 km/day during the slow phase, that is, about eight times higher (p<0.001, Supplementary file 1f, Figure 1c). During the fall migration, birds moved in the SSW direction (198 ± 3°), then turned 50 ± 3° (p<0.001, Supplementary file 1g, Figure 1c) to the west and started their first slow phase until mid-winter. After that, they turned back to the NEE direction (57 ± 2°) and performed their second slow phase for several months until they turned 54 ± 3° (p<0.001, Supplementary file 1g, Figure 1c) to the north and started their spring migration. We found no significant difference between the migration distances of males and females (Supplementary file 1h).
 
-## Vegetation land cover during migration
+**Table 1.**
+ Parameters of the Rough-legged buzzards’ migration (mean ± sd).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phase of migration</th>
+      <th>Sub-phase of migration</th>
+      <th>Distance (km)</th>
+      <th>Duration (days)</th>
+      <th>Speed (km/day)</th>
+      <th>Direction (°)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Quick</td>
+      <td></td>
+      <td>1415 ± 50</td>
+      <td>15 ± 3</td>
+      <td>104 ± 6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Spring</td>
+      <td>1544 ± 72</td>
+      <td>18 ± 4</td>
+      <td>100 ± 8</td>
+      <td>7 ± 2</td>
+    </tr>
+    <tr>
+      <td>Fall</td>
+      <td>1334 ± 59</td>
+      <td>14 ± 4</td>
+      <td>107 ± 7</td>
+      <td>198 ± 3</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Slow</td>
+      <td></td>
+      <td>1026 ± 55</td>
+      <td>100 ± 4</td>
+      <td>12 ± 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>First phase</td>
+      <td>1016 ± 71</td>
+      <td>121 ± 4</td>
+      <td>8 ± 7</td>
+      <td>251 ± 3</td>
+    </tr>
+    <tr>
+      <td>Second phase</td>
+      <td>1042 ± 71</td>
+      <td>66 ± 6</td>
+      <td>17 ± 9</td>
+      <td>57 ± 2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Vegetation land cover during migration
 
 During quick phases, Rough-legged buzzards crossed the forest zone, while during the slow phase, they migrated within the grassland and cropland zones (Figure 2). Rough-legged buzzards migrated fast across the tundra zone on the north in the Arctic and then through the taiga zone. Therefore, during the quick phase, the three most common vegetation land cover types were forest (44.5 ± 2.9 %, hereafter, percentage of all mean daily positions annotated with the given vegetation type ± sd), shrublands (29.9 ± 3 %), and grasslands (24.7 ± 2.8 %, Figure 2a). During the slow phase, the three most common vegetation land cover types were grasslands (65.1 ± 6.2 %), croplands (26.9 ± 6.3 %), and forests (4.9 ± 1.4 %, Figure 2b). According to the linear mixed-effects models, the percentage of all vegetation land cover types differed between the slow and quick phases (p<0.001, Supplementary file 1i), except for the urban lands. Urban lands were more common during the slow than quick phase (Figure 2). However, this type has been annotated for too few birds to make an adequate comparison.
 
@@ -57,13 +126,19 @@ During quick phases, Rough-legged buzzards crossed the forest zone, while during
 
 **Figure 2.:** (a) Quick phase (spring and fall periods together). (b) Slow phase (first and second parts together). On both (a) and (b), the bars show the percentage of all mean daily positions annotated with the given vegetation type ± sd. (c) Migration map.
 
-## Dynamic winter range
+### Dynamic winter range
 
 During the slow phase of the migration, Rough-legged buzzards experienced snow cover ranging from 4.8 ± 1.0% in October (hereafter mean ± sd) to 85.2 ± 4.6% in February (Figure 3). If birds spent the winter in the place where they arrived after the fall migration, they would experience snow cover conditions ranging from 4.6 ± 0.6% in October to 99.5 ± 0.1% in February (Figure 3b, green line). If birds fly directly to the southwest and stay there for the whole winter, they would experience snow cover conditions ranging from 1.4 ± 0.2% in October to 81.1 ± 5.0% in January (Figure 3b, red line). Thus, if birds fly immediately to the southwest and stay there until the end of the winter, they will find conditions with less snow cover in spring (p<0.001, Supplementary file 1j). And if birds stay where they ended the fall migration, they will find themselves in situations with more snow cover (p<0.001, Supplementary file 1j). In the latter case, the difference between real and hypothetical situations is not as pronounced (85.2% vs. 99.5%), but it means that snow cover will be close to 100% for several months in this hypothetical situation (Figure 3b). The distance between two consecutive monthly minimum convex polygons (MCPs) during the over-wintering period did not depend on the snow cover extent (p=0.45) or the difference in snow cover (p=0.36, Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87668/elife-87668-fig3-v1.jpg)
+
+**Figure 3.:** (a) 95% minimum convex polygons (MCPs) of Rough-legged buzzards during winter. Arrows indicate the direction of the movement across months. OCT, October; NOV, November; DEC, December; JAN, January; FEB, February; MAR, March; APR, April. (b) Snow cover conditions for the real situation (black) and two hypothetical situations – if birds spend the winter in the place where they arrived after the fall migration (green) and if birds fly directly to the southwest and stay there all winter (red). Dots represent mean values, error lines indicate standard deviations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87668/elife-87668-fig3-figsupp1-v1.jpg)
+
 ## Materials and methods
 
-## Dataset
+### Dataset
 
 For this study, we tracked 43 adult Rough-legged buzzards (35 females and 8 males) with the solar GPS-GSM loggers (E-obs GmbH and UKn – University of Konstanz). Here, 28 birds were fitted with E-obs loggers, 13 birds were fitted with UKn loggers, and 2 birds were initially fitted with UKn loggers that were later replaced with E-obs loggers. E-obs loggers weighed 45 g, or 3.6% of the bird’s weight, while UKn loggers weighed 15 g, or 1.2% of the bird’s weight. E-obs loggers recorded GPS positions every hour in full battery mode and every 5 hr in normal battery mode. UKn loggers recorded GPS positions every hour with a full battery and every 12 hr with a normal battery. Both models operated continuously 24 hr a day. More detailed information about this dataset can be found in Curk et al., 2022.
 
@@ -71,7 +146,7 @@ The fieldwork was carried out in the Russian Arctic in 2013–2019 at four study
 
 During data pre-processing, we removed duplicated timestamps and calculated the mean daily positions of each individual. We partitioned the resulting dataset into several periods: (1) breeding, (2) fall migration, (3) first part of winter, (4) second part of winter, and (5) spring migration. We estimated the migration dates – the start and stop dates of the spring and fall migrations – using an iterative search procedure for piecewise regression described by Crawley, 2007. We created two models for each of the four dates: a simple model and a piecewise one. The simple model was linear, with latitude as the response variable and day of the year as a fixed effect. The piecewise model was also linear, with latitude as the response variable and day of the year as a fixed effect, and included two logical statements in its formula because we expected two linear segments in the fit. Specifically, it used ‘Day Of the Year < BREAK’ to define the left regression (before the estimated date) and ‘Day Of the Year ≥ BREAK’ for the right regression (after the estimated date). We explored different BREAK values to fit the piecewise model, looking for the value that minimized the residual standard error. The BREAK values examined included those associated with the start and end of the fall migration (September 5 to October 5 and October 5 to November 5, respectively), as well as those associated with the start and end of the spring migration (April 10 to May 10 and May 10 to June 10, respectively). We then validated (using the R function ‘anova’) that the piecewise model significantly improved the fit compared to the simple model (p<0.001). We estimated the date between winter’s first and second parts as the day when the mean daily latitude was the lowest.
 
-## Data analysis
+### Data analysis
 
 First, we used linear mixed-effects models (R function ‘lmer’ in the library ‘lme4’; Bates et al., 2015) to investigate whether or not Rough-legged buzzards migrated during winter. Latitude was the response variable, day of the year was a fixed effect, and individuals and year were included as random effects. Analyses were conducted separately for each migration period (fall, first phase of winter, second phase of winter, and spring). For both phases of the winter migration, we analyzed two additional models with longitude as the response variable instead of latitude. Likelihood ratio tests were used to compare candidate models. The year was not a calendar year but a year between two consecutive breeding seasons. Thus, fall migration, consecutive winter, and consecutive spring have the same value for the year. The day of the year was recalculated consecutively.
 
@@ -91,7 +166,7 @@ All calculations were performed using R version 4.2.2 ‘Innocent and Trusting�
 
 Our study identified and characterized a bird migration pattern consisting of an alternation of quick (fall and spring migrations) and slow (over-wintering movements) phases. This migration pattern causes the over-wintering range of birds to shift and become dynamic throughout the season. This has obvious implications for range delineation and assessment of bird population trends.
 
-## Over-wintering movements and migratory patterns
+### Over-wintering movements and migratory patterns
 
 Different bird species employ various wintering strategies, leading to diverse migration patterns. One strategy is ‘residency’, where birds arriving at over-wintering grounds remain there throughout the season, undertaking only minor foraging flights (Figure 4a). Their home ranges in over-wintering ranges are compatible with those in breeding ranges (Kjellen et al., 1997; Alerstam et al., 2006; Newton, 2008). Another strategy, initially identified by Moreau, 1972, is ‘itinerancy’, wherein birds fly between several sites separated by distances ranging from ten to several hundred kilometers throughout the over-wintering period, spending 1–2 months at each site (Figure 4b). Most Palearctic-African species adopt this itinerant behavior (Trierweiler et al., 2013; Thorup et al., 2017; Schlaich et al., 2023). The third strategy investigated here involves birds moving slowly and steadily throughout the over-wintering season, initially in one direction and then in the opposite direction. In 2009, Roine Strandberg and his colleagues used GPS transmitters to track Common buzzards (Buteo buteo). Despite some transmitters in their study ceasing to function mid-winter, the authors observed a phenomenon they termed ‘prolonged autumn migration’, wherein birds arriving at their wintering grounds did not halt migration but continued moving at a slower pace (Strandberg et al., 2009). In our study, we observed this phenomenon throughout the annual cycle. We demonstrated that, unlike itinerancy, movements in the over-wintering range are essentially a continuation of migration at a slower pace, influenced by external factors such as snow cover dynamics. Considering this behavior as an extension of migration and examining the complete life cycle of such species, it involves a quick phase during the transition between breeding and over-wintering ranges, followed by a slow phase of directed and seasonal movement within the over-wintering range, and finally, another quick phase toward the breeding range. Drawing an analogy to the alternating quick and slow movements of the foxtrot dance, we propose the term ‘foxtrot migration’ for this seasonal movement to offer a concise and easily understandable description (Figure 4c). Consequently, we suggest referring to the over-wintering range of species exhibiting itinerancy or foxtrot migration as the ‘dynamic range’ (Figure 4b and c).
 
@@ -101,7 +176,7 @@ Different bird species employ various wintering strategies, leading to diverse m
 
 Debates may arise regarding introducing a new term for this phenomenon and whether it should fall under the general term ‘nomadism’ or be categorized as a modified form of another migratory pattern, such as ‘slow directional itinerancy’. We assert that behavioral pattern names should aid in understanding movement strategies and avoid confusion. One might ask whether it is necessary to distinguish between migration and wintering at all, given that migration is essentially a matter of tracking spatial and temporal changes in favorable conditions. Authors studying Montagu’s harriers (Circus pygargus) argue that such generalization hampers understanding of wintering strategies (Schlaich et al., 2023). Instead, Schlaich et al., 2023 propose explicitly considering the functions of animal-used sites, particularly their contributions to ‘wintering’ and ‘refueling for migration’. For instance, cuckoos (Canorus sp.) utilize stopovers for both peak foraging conditions and refueling for long flights to subsequent sites (Thorup et al., 2017). Conversely, Montagu’s harriers exhibit negligible refueling between sites due to short distances and energy-efficient soaring flight (Trierweiler et al., 2013; Schlaich et al., 2023). In our case, Rough-legged buzzards do not make several long stopovers, unlike species experiencing itinerancy, but move gradually in one direction and then return during the whole season (Figure 1a). As Schlaich et al., 2023 suggested, examining the functions of animal-used sites reveals another difference between these strategies. The difference is that itinerant birds wait for better conditions at subsequent sites. In contrast, in our case, the southwestern areas that birds reach after several months are suitable and offer better conditions than the northeastern areas as they have less snow throughout the whole over-wintering season (Figure 3). All these differences highlight the discrepancy between the wintering strategies referred to as itinerancy and those described in this study. Therefore, using another term – foxtrot migration – for this phenomenon is more appropriate.
 
-## The dynamic of the foxtrot migration
+### The dynamic of the foxtrot migration
 
 Our study affirmed the presence of foxtrot migration and a dynamic over-wintering range in Rough-legged buzzards. The taiga zone proved to be an unfavorable habitat during the quick phase of foxtrot migration (Figure 2), given the difficulty of Rough-legged buzzards locating open areas for hunting in this habitat. Conversely, the grassland and cropland zones served as favorable habitats during the slow phase throughout the entire over-wintering period (Figure 2), offering numerous open areas for hunting. Within the grassland and cropland zones, the birds moved southwest and back over 1000 km throughout the winter (Figure 1). We did not observe a tendency for birds to leave over-wintering sites when snow cover reached a certain threshold (Figure 3—figure supplement 1a). Similarly, we found no evidence that birds stayed in areas with a certain amount of snow cover (Figure 3), nor did they leave sites when snow cover increased by a certain amount (Figure 3—figure supplement 1b).
 
@@ -113,7 +188,7 @@ African-Palearctic migrants do not strictly adhere to a binary division between 
 
 The foxtrot migration pattern is expected to be observed in many migratory species that exhibit distinct seasonal cycles in their over-wintering range. This migration pattern is expected to be prevalent for species living in regions where snow cover is a significant determinant of food availability, which is the case in large parts of the mid-latitudes. Therefore, understanding bird migration patterns is critical to accurately mapping ranges and assessing population trends in this region.
 
-## Mapping ranges and assessing population trends
+### Mapping ranges and assessing population trends
 
 The implementation of our study is twofold: (1) the use of mid-winter bird surveys to determine over-wintering range may yield inaccurate results for species with dynamic range (Figure 5a), and (2) declines in abundance within a particular segment of the over-wintering range may indicate changes in range dynamics rather than widespread declines in species abundance (Figure 5b).
 
@@ -129,6 +204,6 @@ Population counts for a species are often limited to a portion of its range. The
 
 A 2022 Dutch study found a decline in wintering Rough-legged buzzards over the last 40 years (Hornman and Boele, 2022). On the one hand, this may represent a conservation concern. On the other hand, applying the rationale of the dynamic range, the apparent local decline may be attributed to climate change, resulting in less comprehensive snow coverage in the northeastern wintering areas of Rough-legged buzzards relative to the Netherlands. Such a shift in snow coverage makes it less probable for the birds to migrate to the Netherlands for over-wintering. This proposition is further supported by a study of the winter population dynamics of Rough-legged buzzards in the Netherlands in 2011, showing that the main winter population peak occurred in late December, with many birds migrating (Vansteelant et al., 2011). Vansteelant et al., 2011 also found that the main migration occurred after heavy snowfall in northern Europe, supporting our foxtrot migration explanation for this decline. Therefore, investigating the dynamic range is critical to understanding a species' range and effectively assessing its conservation status.
 
-## Conclusion
+### Conclusion
 
 Our study sheds light on the over-wintering strategy of the Rough-legged buzzard, an Arctic breeder that migrates to mid-latitudes during the non-breeding season. We identified a distinct migration pattern where, following an initial 1500 km journey to mid-latitudes, the birds continue to move slowly southwestward and then back northeastward throughout the entire over-wintering season. This movement, covering 1000 km in one direction, makes their over-wintering range dynamic. We call this migration pattern ‘foxtrot migration’, drawing an analogy with the alternating quick and slow steps of the foxtrot dance. Our results highlight the importance of this migration pattern and the concept of ‘dynamic range’ in revealing potential inaccuracies in range mapping from single midwinter surveys and suggest that species distribution maps should represent temporal variations in range dynamics as separate zones. Understanding and accounting for this migratory behavior is critical for accurately assessing bird populations in over-wintering ranges. This is especially important for species such as Arctic nesting birds, where population assessments are primarily conducted in over-wintering ranges due to the logistical and political challenges of the Arctic.

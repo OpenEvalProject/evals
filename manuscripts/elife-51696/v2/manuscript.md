@@ -14,7 +14,7 @@
 
 ## Abstract
 
-The vertebral skeleton is a defining feature of vertebrate animals. However, the mode of vertebral segmentation varies considerably between major lineages. In tetrapods, adjacent somite halves recombine to form a single vertebra through the process of ‘resegmentation’. In teleost fishes, there is considerable mixing between cells of the anterior and posterior somite halves, without clear resegmentation. To determine whether resegmentation is a tetrapod novelty, or an ancestral feature of jawed vertebrates, we tested the relationship between somites and vertebrae in a cartilaginous fish, the skate ( Leucoraja erinacea ). Using cell lineage tracing, we show that skate trunk vertebrae arise through tetrapod-like resegmentation, with anterior and posterior halves of each vertebra deriving from adjacent somites. We further show that tail vertebrae also arise through resegmentation, though with a duplication of the number of vertebrae per body segment. These findings resolve axial resegmentation as an ancestral feature of the jawed vertebrate body plan.
+The vertebral skeleton is a defining feature of vertebrate animals. However, the mode of vertebral segmentation varies considerably between major lineages. In tetrapods, adjacent somite halves recombine to form a single vertebra through the process of ‘resegmentation’. In teleost fishes, there is considerable mixing between cells of the anterior and posterior somite halves, without clear resegmentation. To determine whether resegmentation is a tetrapod novelty, or an ancestral feature of jawed vertebrates, we tested the relationship between somites and vertebrae in a cartilaginous fish, the skate (Leucoraja erinacea). Using cell lineage tracing, we show that skate trunk vertebrae arise through tetrapod-like resegmentation, with anterior and posterior halves of each vertebra deriving from adjacent somites. We further show that tail vertebrae also arise through resegmentation, though with a duplication of the number of vertebrae per body segment. These findings resolve axial resegmentation as an ancestral feature of the jawed vertebrate body plan.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Here, we test whether tetrapod-like resegmentation is the ancestral mode of vert
 
 ## Results
 
-## Conservation of rostrocaudal somite polarity in tetrapods and skate
+### Conservation of rostrocaudal somite polarity in tetrapods and skate
 
 Tetrapod somites exhibit distinct rostrocaudal polarity, and correct rostral and caudal transcriptional identity within a somite is essential for proper resegmentation (Bussen et al., 2004; Hughes et al., 2009; Keynes, 2018; Leitges et al., 2000; Mansouri et al., 2000). To test for rostrocaudal polarity of somites in skate, we examined expression patterns of Tbx18 and Uncx4.1 – tetrapod markers of rostral and caudal somite identity, respectively (Haenig and Kispert, 2004; Kraus et al., 2001; Schrägle et al., 2004) – using wholemount mRNA in situ hybridization. We found that Tbx18 (Figure 2a) and Uncx4.1 (Figure 2b) are both expressed in skate somites at S22, with expression of the former localizing to the rostral somite, and expression of the latter localizing to the caudal somite. To further test polarity of these expression patterns within the somite, we characterized transcript distribution on paraffin sections of somites using multiplexed fluorescent mRNA in situ hybridization, and we found that Tbx18 and Uncx4.1 transcripts localize to the rostromedial and caudomedial cells of the somite, respectively (Figure 2c). These findings point to a shared molecular basis of somite rostrocaudal polarity between tetrapods and cartilaginous fishes.
 
@@ -40,7 +40,7 @@ Tetrapod somites exhibit distinct rostrocaudal polarity, and correct rostral and
 
 **Figure 2.:** Whole-mount mRNA in situ hybridization reveals (a) rostral expression of Tbx18 and (b) caudal expression of Uncx4.1 within skate somites at S22. (c) Hybridization chain reaction (HCR) in situ hybridization on paraffin sections reveals complimentary rostromedial and caudomedial expression of Tbx18 (magenta, c') and Uncx4.1 (green, c"), respectively, in skate somites at S22. Dashed lines indicate somite boundaries. Scale bars: (a) and (b) 100 µm; (c-c") 25 µm.
 
-## Skates exhibit tetrapod-like resegmentation
+### Skates exhibit tetrapod-like resegmentation
 
 To test the relationship between somites and vertebrae in skate, we performed a series of somite fate mapping experiments. We microinjected the ventral portions of two neighboring trunk somites in S24 little skate embryos with either CM-DiI (a red fluorescent analogue of DiI) or SpDiOC18 (a green fluorescent analogue of DiO) (Figure 3a), and then mapped the contributions of these labeled somites to the vertebral skeleton 8–12 weeks post-injection. We recovered dye in the vertebral cartilages of 27 embryos, with 21/27 embryos retaining both CM-DiI and SpDiOC18 labelling in adjacent vertebrae, and 6/27 retaining only CM-DiI. In 22/27 label-retaining embryos, we observed patterns of retention that were consistent with somite resegmentation. For example, in embryos in which both CM-DiI and SpDiOC18 were retained, two neighboring trunk somites contributed to a combined total of three vertebrae, with each somite contributing to two vertebral halves (the caudal half of one vertebra and the rostral half of the neighboring vertebra - Figure 3b–d). There was little overlap in CM-DiI and SpDiOC18 distributions, indicating that cells from adjacent somites undergo little mixing, and that somite boundaries are maintained through sclerotome migration, condensation and vertebral differentiation. The results of these labeling experiments are consistent with a tetrapod-like mechanism of resegmentation during the development of trunk vertebrae in the skate.
 
@@ -48,7 +48,7 @@ To test the relationship between somites and vertebrae in skate, we performed a 
 
 **Figure 3.:** (a) Adjacent CM-DiI- and SpDiOC18-labeled trunk somites in a S24 skate embryo. (b) Sagittal section of the trunk of an embryo 58 days post-injection, showing CM-DiI- and SpDiOC18-labeled cells in the posterior and anterior halves of adjacent vertebrae, consistent with resegmentation. (c, c') CM-DiI-labeled cells and (d, d') SpDiOC18-labeled cells span two vertebrae (each shown with and without DAPI counterstain). Dashed lines indicate somite boundaries in (a) and vertebral boundaries in (b-d). Scale bars for (a) and (b) 100 µm; scale bars for (c-d') 50 µm.
 
-## Skate tail somites give rise to twice as many vertebrae as trunk somites, and still undergo resegmentation
+### Skate tail somites give rise to twice as many vertebrae as trunk somites, and still undergo resegmentation
 
 Elasmobranch fishes show a diplospondylous condition in their caudal vertebrae, in which two vertebrae are present for each set of spinal nerve roots. As each tail vertebra is comparable in anatomical organization to trunk vertebrae (e.g. with neural and intercalary arches – Ridewood, 1899), it is speculated that this condition is a consequence of tail somites giving rise to twice as many vertebral units when compared with trunk somites. If somites give rise to double the number of vertebrae in the tail as in the trunk, we would expect approximately equal numbers of trunk somites and vertebrae, while the number of tail vertebrae should far exceed the number of tail somites. We counted trunk and tail somites in S25 skate embryos (at which point somitogenesis has ceased, but somites are still clearly discernable), and compared this with numbers of trunk and tail vertebrae in skate hatchlings. We found that S25 skate embryos possess a mean of 48 trunk somites and 88 tail somites (with the cloaca marking the transition from trunk to tail; n = 17 embryos counted; Supplementary file 1), while hatchling skates possess a mean of 48 trunk vertebrae (including the series of fused vertebrae that make up the synarcual, which was determined by counting sets of spinal nerve foramina) and 104 tail vertebrae (n = 8 hatchlings counted; Supplementary file 2). These counts are consistent with the hypothesis that tail somites give rise to more (though not consistently double the number of) vertebral units compared with trunk somites. It should be noted, however, that there is difficulty in accurately counting terminal vertebrae in skates: the tail tapers to a fine point, with terminal vertebrae becoming extremely small and difficult to differentiate in skeletal preparations, and it is also likely that additional non-mineralized vertebral elements are present in the tip of the tail that we were not able to distinguish by this method. We therefore speculate that a pattern of duplication of somite derivatives observed in the anterior tail may not persist along the full length of the tail, but rather breaks down near the tip.
 
@@ -80,23 +80,23 @@ Historically, resegmentation was hypothesized to have originated through a funct
 
 ## Materials and methods
 
-## Animal collection and husbandry
+### Animal collection and husbandry
 
 All skate embryos were obtained from captive brood stock at the Marine Biological Laboratory in Woods Hole, Massachusetts, USA and all experimental work was conducted in accordance with approved IACUC protocols. Embryos were reared in flow-through seawater tables at 10–12°C for approximately four weeks prior to experimentation at stage (S) 24. Early skate embryos were staged according to Ballard et al. (1993) and late-stage embryos were staged following Maxwell et al. (2008).
 
-## µCT scanning
+### µCT scanning
 
 Portions of the trunk and tail of a S34 skate embryo were stained with iodine potassium iodide (IKI) according to Metscher (2009), and scanned using a GE v|tome|x µCT scanner at the University of Chicago. The trunk was scanned at 80 kV and 70 uA, with an exposure time of four seconds and a voxel size of 3.763 µm. The tail was scanned at 100 kV and 100 uA with a two second exposure and a voxel size of 3.075 µm. CT slices were processed and segmented in Avizo (ThermoFisher Scientific - FEI). Tiff stacks for each scan are available on the Dryad digital repository, doi:10.5061/dryad.b2rbnzs8s.
 
-## Somite and vertebral counts
+### Somite and vertebral counts
 
 Vertebrae in hatchling skates were visualized by skeletal preparation, as described in Gillis et al. (2009) with an added overnight incubation in Alizarin red solution (1 mg/mL Alizarin red in 1% KOH) and overnight trypsin (1% w/v in water) digestion prior to KOH clearing. Somites in S25 skate embryos (n = 17) and vertebrae in cleared and stained skate hatchlings (n = 8) were imaged in numerous focal planes on a Leica M165 FC stereoscope. Image stacks were then merged in Helicon Focus Pro and tiled to form high resolution images. Somites and vertebrae were counted in Adobe Photoshop 2018 using a layered overlay and dots to mark individual elements.
 
-## Histology and mRNA in situ hybridization
+### Histology and mRNA in situ hybridization
 
 L. erinacea embryos were embedded in paraffin wax and sectioned at 8 µm thickness for mRNA in situ hybridization as described in O'Neill et al. (2007). Chromogenic mRNA in situ hybridization experiments for Uncx4.1 (GenBank accession number MN478366) and Tbx18 (GenBank accession number MN478367) were performed on sections as described in O'Neill et al. (2007), with modifications according to Gillis et al. (2012). Probes, buffers, and hairpins for third generation in situ hybridization chain reaction (HCR) experiments were purchased from Molecular Instruments (Los Angeles, California, USA). Experiments were performed on paraffin sections according to the protocol of Choi et al. (2018), with the following modifications: Following proteinase K treatment and rinsing, slides were pre-hybridized for 30 min at 37°C, and then hybridized overnight at 37°C with 0.8 µL of 1 µM probe stock/100 µL of hybridization solution. Following post-hybridization washes and pre-amplification steps, slides were incubated in amplification solution containing 4 µL of each hairpin stock/100 µL of amplification buffer.
 
-## Fate mapping experiments
+### Fate mapping experiments
 
 Two-color somite fate mapping experiments were performed as described in Criswell et al. (2017b) and Ward et al. (2017). S24 skate embryos were removed from their egg cases to a petri dish and anesthetized in tricaine (MS-222 1 mg/L in seawater). Adjacent somites were injected with the red-fluorescent lipophilic dye CM-DiI and the green-fluorescent lipophilic dye SpDiOC18 (ThermoFisher). Concentrated stocks of CM-DiI (5 µg/µL in absolute ethanol) and SpDiOC18 (2.23 µg/µL in dimethylformamide) were diluted 1:10 in 0.3 molar sucrose for injection. After injection embryos were returned to their egg cases and maintained in a flow-through seawater table at 15°C for 8–12 weeks post-injection.
 

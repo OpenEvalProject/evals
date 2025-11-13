@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02s376052 Laboratory of Biophysical Chemistry of Macromolecules, Institute of Chemical Sciences and Engineering (ISIC), School of Basic Sciences, École Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland
+1. Laboratory of Biophysical Chemistry of Macromolecules, Institute of Chemical Sciences and Engineering (ISIC), School of Basic Sciences, École Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
 
 † Corresponding author
 

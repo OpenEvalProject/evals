@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01rxfrp27 Department of Biochemistry and Genetics, La Trobe Institute for Molecular Science, La Trobe University Bundoora Australia
-2. https://ror.org/00892tw58 School of Agriculture, Food and Wine, Waite Research Institute, The University of Adelaide, Waite Campus Glen Osmond Australia
-3. https://ror.org/01rxfrp27 Department of Chemistry and Physics, La Trobe Institute for Molecular Science, La Trobe University Bundoora Australia
-4. https://ror.org/01rxfrp27 Australian Research Council Industrial Transformation Research Hub for Medicinal Agriculture, AgriBio, La Trobe University Bundoora Australia
-5. https://ror.org/01rxfrp27 Department of Animal, Plant and Soil Sciences, La Trobe University Bundoora Australia
+1. Department of Biochemistry and Genetics, La Trobe Institute for Molecular Science, La Trobe University Bundoora Australia ([ROR:01rxfrp27](https://ror.org/01rxfrp27))
+2. School of Agriculture, Food and Wine, Waite Research Institute, The University of Adelaide, Waite Campus Glen Osmond Australia ([ROR:00892tw58](https://ror.org/00892tw58))
+3. Department of Chemistry and Physics, La Trobe Institute for Molecular Science, La Trobe University Bundoora Australia ([ROR:01rxfrp27](https://ror.org/01rxfrp27))
+4. Australian Research Council Industrial Transformation Research Hub for Medicinal Agriculture, AgriBio, La Trobe University Bundoora Australia ([ROR:01rxfrp27](https://ror.org/01rxfrp27))
+5. Department of Animal, Plant and Soil Sciences, La Trobe University Bundoora Australia ([ROR:01rxfrp27](https://ror.org/01rxfrp27))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ Despite the success of targeting amino acid biosynthesis enzymes for the develop
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/78235/elife-78235-fig1-v1.jpg)
 
-**Figure 1.:** Z)-2-(5-(4-methoxybenzylidene)-2,4-dioxothiazolidin-3-yl)acetic acid (MBDTA-2).(A) Chemical structure of MBDTA-2. (B) The AtDHDPS1 quaternary structure with MBDTA-2 (green sticks) bound within a novel allosteric pocket (PDB ID: 7MDS) (Soares da Costa et al., 2021).
+**Figure 1.:** (A) Chemical structure of MBDTA-2. (B) The AtDHDPS1 quaternary structure with MBDTA-2 (green sticks) bound within a novel allosteric pocket (PDB ID: 7MDS) (Soares da Costa et al., 2021).
 
 In the previous study, we revealed that the in vitro potency of MBDTA-2 against recombinant Arabidopsis thaliana (At) DHDPS enzymes was similar to the activity against agar-grown A. thaliana (Soares da Costa et al., 2021). Usually, herbicides inhibit their enzyme targets with greater potency than they inhibit in vivo plant growth. This is because the amount of herbicide reaching the target site is less than the amount applied. We proposed that this unusual similarity between in vitro and in vivo activity may be due to MBDTA-2 acting as a proherbicide, which is modified in vivo to a form that is more active at the target site. Proherbicides have been reported in the literature such as diclofop-methyl, which is demethylated via ester hydrolysis in vivo to produce the more active compound diclofop . Whilst MBDTA-2 could not undergo the same process as it does not contain an ester, we postulated that a similar proherbicidal effect may be observed through the in vivo demethylation of the aryl methyl ether.
 
@@ -39,15 +39,15 @@ The present study sought to extend our understanding of the mode of action of ou
 
 ## Results
 
-## Inhibitory activity of a demethylated MBDTA analogue
+### Inhibitory activity of a demethylated MBDTA analogue
 
 Given that proherbicides are metabolised in vivo to produce compounds with greater potency at the target site, it can be assumed that the metabolised form will have greater activity than the proherbicidal form against the target in vitro. As such, to assess whether MBDTA-2 is a proherbicide that is demethylated in vivo, we measured the inhibitory activity of the demethylated analogue, (Z)-2-(5-(4-hydroxybenzylidene)-2,4-dioxothiazolidin-3-yl)acetic acid (HBDTA), against both recombinant A. thaliana DHDPS enzymes (Figure 2; Christoff et al., 2021). The dose–response curves yielded IC50 values for AtDHDPS1 and AtDHDPS2 of 100 ± 0.95 and 105 ± 1.04 µM, respectively (Figure 2). These values are slightly greater than those we reported for MBDTA-2 (IC50 (AtDHDPS1) = 63.3 ± 1.80 µM, IC50 (AtDHDPS2) = 64.0 ± 1.00 µM) (Soares da Costa et al., 2021). These data suggest, conversely to our hypothesis, that the activity of MBDTA-2 at the target site is not influenced by the retention or loss of the methyl group in vivo.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78235/elife-78235-fig2-v1.jpg)
 
-**Figure 2.:** in vitro potency of (Z)-2-(5-(4-hydroxybenzylidene)-2,4-dioxothiazolidin-3-yl)acetic acid (HBDTA).(A) Chemical structure of HBDTA. (B) Dose–response curves of HBDTA against recombinant AtDHDPS1 (⚬) and AtDHDPS2 (+) enzymes. Initial enzyme rate was normalised against the vehicle control to determine % activity remaining. Data were fitted to a nonlinear regression model (solid line), resulting in R2 values of 0.99.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Chemical structure of HBDTA. (B) Dose–response curves of HBDTA against recombinant AtDHDPS1 (⚬) and AtDHDPS2 (+) enzymes. Initial enzyme rate was normalised against the vehicle control to determine % activity remaining. Data were fitted to a nonlinear regression model (solid line), resulting in R2 values of 0.99.
 
-## Dual-target activity of MBDTA-2
+### Dual-target activity of MBDTA-2
 
 Given that the similarity in the in vitro and in vivo activity of MBDTA-2 could not be explained by enhanced target site activity of the demethylated compound, we sought to explore other mechanisms that may explain this observation.
 
@@ -55,23 +55,23 @@ We investigated whether additional modes of action beyond the inhibition of the 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78235/elife-78235-fig3-v1.jpg)
 
-**Figure 3.:** In vitro potency of (Z)-2-(5-(4-methoxybenzylidene)-2,4-dioxothiazolidin-3-yl)acetic acid (MBDTA-2) and (Z)-2-(5-(4-hydroxybenzylidene)-2,4-dioxothiazolidin-3-yl)acetic acid (HBDTA) against AtDHDPR.Dose–response curves of (A) MBDTA-2 and (B) HBDTA against recombinant AtDHDPR1 (⚬) and AtDHDPR2 (+) enzymes. Initial enzyme rate was normalised against the vehicle control to determine % activity remaining. Data were fitted to a nonlinear regression model (solid line), resulting in R2 values of (A) 0.99 and 0.95 and (B) 0.99 and 0.99 for AtDHDPR1 and AtDHDPR2, respectively.Figure 3—source data 1.Figure 3.
+**Figure 3.:** Dose–response curves of (A) MBDTA-2 and (B) HBDTA against recombinant AtDHDPR1 (⚬) and AtDHDPR2 (+) enzymes. Initial enzyme rate was normalised against the vehicle control to determine % activity remaining. Data were fitted to a nonlinear regression model (solid line), resulting in R2 values of (A) 0.99 and 0.95 and (B) 0.99 and 0.99 for AtDHDPR1 and AtDHDPR2, respectively.
 
-## Mode of AtDHDPR inhibition by MBDTA-2
+### Mode of AtDHDPR inhibition by MBDTA-2
 
 To investigate the molecular determinants of inhibition of AtDHDPR, we sought to co-crystallise the enzyme with MBDTA-2. Given that our attempts were unsuccessful, we employed a static docking approach using the published AtDHDPR2 crystal structure (Watkin et al., 2018). The resulting data suggested that MBDTA-2 binds in the active site with a binding affinity of −6.2 kcal mol−1 (Figure 4). The hydrophobic pocket occupied by MBDTA-2 overlaps with the probable NADPH cofactor-binding site, based on the crystal structure of cofactor-bound Escherichia coli DHDPR (Reddy et al., 1996; Scapin et al., 1997). The predicted MBDTA-2 orientation suggests its stabilisation by polar interactions between the heterocyclic ring and Thr122 and Gly120. Additionally, the MBDTA-2 acid is within hydrogen bonding proximity to Asp185. To validate the mechanism of inhibition of MBDTA-2 against AtDHDPR, further enzyme kinetic experiments were performed. The previous dose–response experiments were conducted according to standard practice in that substrate and cofactor were kept at limiting concentrations to ensure that inhibition may be measured regardless of the kinetic mechanism of inhibition. Subsequently, the activity of AtDHDPR was measured whilst titrating MBDTA-2, this time in the presence of excess amounts of substrate and nucleotide cofactor, that is at concentrations 10-fold above the respective KM values (Figure 4B). The IC50 values determined were 72.7 ± 1.07 and 69.5 ± 1.06 µM for AtDHDPR1 and AtDHDPR2, respectively, which are 10- and 8-fold greater than those determined for AtDHDPR1 and AtDHDPR2 when substrate and cofactor were limiting. This apparent reduction in potency indicates that MBDTA-2 is a competitive inhibitor, and therefore likely binds at the AtDHDPR active site as suggested by the docking results. Interestingly, this contrasts with the allosteric mode of inhibition of MBDTA-2 against AtDHDPS.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78235/elife-78235-fig4-v1.jpg)
 
-**Figure 4.:** Z)-2-(5-(4-methoxybenzylidene)-2,4-dioxothiazolidin-3-yl)acetic acid (MBDTA-2).(A) The predicted MBDTA-2 (green)-binding site resulting from static docking with AtDHDPR2 (PDB ID: 5UA0) overlaps with the probable NADPH cofactor-binding site (cyan, left panel). Hydrophobicity of the predicted binding pocket (right panel) is represented by white-red shading indicating hydrophilic–hydrophobic residues. (B) Dose–response curves of MBDTA-2 against AtDHDPR1 (⚬) and AtDHDPR2 (+) enzymes in the presence of saturating concentrations of substrate and cofactor. Data were fitted to a nonlinear regression model (solid line), resulting in R2 values of 0.97 and 0.98 for AtDHDPR1 and AtDHDPR2, respectively.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) The predicted MBDTA-2 (green)-binding site resulting from static docking with AtDHDPR2 (PDB ID: 5UA0) overlaps with the probable NADPH cofactor-binding site (cyan, left panel). Hydrophobicity of the predicted binding pocket (right panel) is represented by white-red shading indicating hydrophilic–hydrophobic residues. (B) Dose–response curves of MBDTA-2 against AtDHDPR1 (⚬) and AtDHDPR2 (+) enzymes in the presence of saturating concentrations of substrate and cofactor. Data were fitted to a nonlinear regression model (solid line), resulting in R2 values of 0.97 and 0.98 for AtDHDPR1 and AtDHDPR2, respectively.
 
-## Herbicidal activity of MBDTA-2 against weeds
+### Herbicidal activity of MBDTA-2 against weeds
 
 Previously, we showed that the MBDTA-2 compound has herbicidal activity against the model plant A. thaliana and is therefore the first example of a herbicidal lysine biosynthesis inhibitor. To further assess the potential of inhibiting plant lysine biosynthesis enzymes for the development of herbicides, the efficacy of MBDTA-2 against the economically significant invasive weed species rigid ryegrass L. rigidum was investigated. Treatment of L. rigidum with 1200 mg l−1 of MBDTA-2 resulted in inhibition of plant germination and growth, corresponding to a significant reduction in shoot fresh and dry weight and a significant reduction in root dry weight (Figure 5). Specifically, we observed ~4- and ~5-fold reductions in shoot fresh and dry weight, respectively, and a ~2-fold reduction in root dry weight (Figure 5). These results further exemplify the potential of lysine biosynthesis inhibitors for development as herbicide candidates.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78235/elife-78235-fig5-v1.jpg)
 
-**Figure 5.:** Lolium rigidum germination and growth by (Z)-2-(5-(4-methoxybenzylidene)-2,4-dioxothiazolidin-3-yl)acetic acid (MBDTA-2).(A) Day growth of L. rigidum treated with three pre-emergence treatments of vehicle control (2% (vol/vol) DMSO, 0.01% Agral), or 1200 mg l−1 of MBDTA-2, or 1200 mg l−1 of chlorsulfuron. Treatments were given by pipetting 2.0 ml per pot directly onto seeds. (B) Fresh weight of L. rigidum shoots and roots following treatment of plants with vehicle control (dots) or MBDTA-2 (lines). Shoots, p = 0.00002, roots, p = 0.05233, unpaired Student’s two-tailed t-test. (C) Dry weight of L. rigidum shoots and roots following treatment of plants with vehicle control (dots) or MBDTA-2 (lines). Shoots, p = 0.00088, roots, p = 0.00374, unpaired Student’s two-tailed t-test. Data were normalised against the vehicle control. Data represent mean ± standard error of the mean (SEM) (N = 3). **p < 0.01, ***p < 0.001, ****p < 0.0001.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Day growth of L. rigidum treated with three pre-emergence treatments of vehicle control (2% (vol/vol) DMSO, 0.01% Agral), or 1200 mg l−1 of MBDTA-2, or 1200 mg l−1 of chlorsulfuron. Treatments were given by pipetting 2.0 ml per pot directly onto seeds. (B) Fresh weight of L. rigidum shoots and roots following treatment of plants with vehicle control (dots) or MBDTA-2 (lines). Shoots, p = 0.00002, roots, p = 0.05233, unpaired Student’s two-tailed t-test. (C) Dry weight of L. rigidum shoots and roots following treatment of plants with vehicle control (dots) or MBDTA-2 (lines). Shoots, p = 0.00088, roots, p = 0.00374, unpaired Student’s two-tailed t-test. Data were normalised against the vehicle control. Data represent mean ± standard error of the mean (SEM) (N = 3). **p < 0.01, ***p < 0.001, ****p < 0.0001.
 
 ## Discussion
 
@@ -87,22 +87,74 @@ The development of new herbicides that are effective against L. rigidum, particu
 
 ## Materials and methods
 
-## Chemical synthesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>DHDPS1</td>
+      <td>TAIR</td>
+      <td>AtG60880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>DHDPS2</td>
+      <td>TAIR</td>
+      <td>AtG45440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>DHDPR1</td>
+      <td>TAIR</td>
+      <td>At2G44040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>DHDPR2</td>
+      <td>TAIR</td>
+      <td>At3G59890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyRX</td>
+      <td>Source Forge</td>
+      <td></td>
+      <td>Version 0.8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemical synthesis
 
 Compounds were synthesised as previously described (Christoff et al., 2021; Perugini et al., 2018).
 
-## Protein expression and purification
+### Protein expression and purification
 
 Recombinant AtDHDPS1, AtDHDPS2, AtDHDPR1, and AtDHDPR2 proteins were produced as previously described (Mackie et al., 2022; Soares da Costa et al., 2021).
 
-## Enzyme inhibition assays
+### Enzyme inhibition assays
 
 DHDPS enzyme activity was measured using methods previously described (Soares da Costa et al., 2021). DHDPR enzyme activity was measured using methods previously described (Mackie et al., 2022). Briefly, reaction mixtures were incubated at 30℃ for 12 min before a second 60-s incubation following the addition of excess E. coli DHDPS (51 µg ml−1) for generation of the DHDP substrate. The relevant DHDPR isoform (2.6 µg ml−1) was added to initiate the reaction, and substrate turnover measured spectrophotometrically at 340 nm via the associated oxidation of the cofactor NADPH. Experiments were performed in technical triplicates.
 
-## Docking
+### Docking
 
 The AtDHDPR2 crystal structure was retrieved from the Protein Data Bank and hydrogens added using AutoDock Tools. Three-dimensional MBDTA-2 was docked with AtDHDPR2 using an unlimited search space in the PyRX interface using AutoDock Vina with default parameters. The resulting ligand poses were visualised in PyMol.
 
-## Herbicidal activity analyses
+### Herbicidal activity analyses
 
 The herbicidal efficacy of MBDTA-2 against L. rigidum was assessed using methods similar to those reported previously (Mackie et al., 2022). Pre-wet seed-raising soil (pH 5.5) (Biogro, Dandenong South, VIC, Australia) supplemented with 0.22% (wt/wt) Nutricote N12 Micro 140 day-controlled release fertiliser (Yates, Sydney, NSW, Australia) was used. Ten seeds were sown at a depth of 0.5 cm into pots of pre-wet soil, following stratification at 4℃ for 21 days in the dark. Compounds dissolved in DMSO were diluted to working concentrations in H2O containing 0.01% (vol/vol) Agral (Syngenta, North Ryde, NSW, Australia) to a final DMSO concentration of 2% (vol/vol). Treatments were given by pipetting 2.0 ml of MBDTA-2, vehicle control or positive control (chlorosulfuron PESTANAL [Sigma-Aldrich, North Ryde, NSW, Australia]) directly onto seeds upon sowing and on each of the subsequent 2 days. Plants were grown in a chamber at 22℃ under a 16 hr light (100 µmol m−2 s−1)/8 hr dark schedule for 14 days before photos were taken. Roots and shoots were separated prior to drying at 70℃ for 72 hr. Experiments were performed in biological triplicates.

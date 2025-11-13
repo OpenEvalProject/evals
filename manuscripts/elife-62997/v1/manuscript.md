@@ -143,7 +143,7 @@
 
 ## Abstract
 
-National Malaria Control Programmes (NMCPs) currently make limited use of parasite genetic data. We have developed GenRe-Mekong, a platform for genetic surveillance of malaria in the Greater Mekong Subregion (GMS) that enables NMCPs to implement large-scale surveillance projects by integrating simple sample collection procedures in routine public health procedures. Samples from symptomatic patients are processed by SpotMalaria, a high-throughput system that produces a comprehensive set of genotypes comprising several drug resistance markers, species markers and a genomic barcode. GenRe-Mekong delivers Genetic Report Cards, a compendium of genotypes and phenotype predictions used to map prevalence of resistance to multiple drugs. GenRe-Mekong has worked with NMCPs and research projects in eight countries, processing 9623 samples from clinical cases. Monitoring resistance markers has been valuable for tracking the rapid spread of parasites resistant to the dihydroartemisinin-piperaquine combination therapy. In Vietnam and Laos, GenRe-Mekong data have provided novel knowledge about the spread of these resistant strains into previously unaffected provinces, informing decision-making by NMCPs. GenRe-Mekong provides detailed knowledge about drug resistance at a local level, and facilitates data sharing at a regional level, enabling cross-border resistance monitoring and providing the public health community with valuable insights. The project provides a rich open data resource to benefit the entire malaria community. The GenRe-Mekong project is funded by the Bill and Melinda Gates Foundation (OPP11188166, OPP1204268). Genotyping and sequencing were funded by the Wellcome Trust (098051, 206194, 203141, 090770, 204911, 106698/B/14/Z) and Medical Research Council (G0600718). A proportion of samples were collected with the support of the UK Department for International Development (201900, M006212), and Intramural Research Program of the National Institute of Allergy and Infectious Diseases.
+Background:National Malaria Control Programmes (NMCPs) currently make limited use of parasite genetic data. We have developed GenRe-Mekong, a platform for genetic surveillance of malaria in the Greater Mekong Subregion (GMS) that enables NMCPs to implement large-scale surveillance projects by integrating simple sample collection procedures in routine public health procedures.Methods:Samples from symptomatic patients are processed by SpotMalaria, a high-throughput system that produces a comprehensive set of genotypes comprising several drug resistance markers, species markers and a genomic barcode. GenRe-Mekong delivers Genetic Report Cards, a compendium of genotypes and phenotype predictions used to map prevalence of resistance to multiple drugs.Results:GenRe-Mekong has worked with NMCPs and research projects in eight countries, processing 9623 samples from clinical cases. Monitoring resistance markers has been valuable for tracking the rapid spread of parasites resistant to the dihydroartemisinin-piperaquine combination therapy. In Vietnam and Laos, GenRe-Mekong data have provided novel knowledge about the spread of these resistant strains into previously unaffected provinces, informing decision-making by NMCPs.Conclusions:GenRe-Mekong provides detailed knowledge about drug resistance at a local level, and facilitates data sharing at a regional level, enabling cross-border resistance monitoring and providing the public health community with valuable insights. The project provides a rich open data resource to benefit the entire malaria community.Funding:The GenRe-Mekong project is funded by the Bill and Melinda Gates Foundation (OPP11188166, OPP1204268). Genotyping and sequencing were funded by the Wellcome Trust (098051, 206194, 203141, 090770, 204911, 106698/B/14/Z) and Medical Research Council (G0600718). A proportion of samples were collected with the support of the UK Department for International Development (201900, M006212), and Intramural Research Program of the National Institute of Allergy and Infectious Diseases.
 
 ## Introduction
 
@@ -161,7 +161,7 @@ GenRe-Mekong protects individual patient privacy, while encouraging aggregation 
 
 Additional detailed documentation on the methods used in this study is available from the article’s Resource Page, at https://www.malariagen.net/resource/29.
 
-## Sample collection
+### Sample collection
 
 GenRe-Mekong samples were collected and contributed by independent studies with different goals, geographical coverage, and sampling strategies. Studies were managed by a local partner, such as a NMCP or a research organization, and often supported by a local technical partner. Most sampling sites were district or subdistrict health centres or provincial hospitals, selected by the local partner according to their public health or research needs. Each site was assigned a code, and its geographical coordinates recorded to support result mapping. GenRe-Mekong uses a common genetic surveillance study protocol covering the entire GMS, which can be locally adapted; this protocol was used for NMCP surveillance projects, after obtaining approval by a relevant local ethics review board and by the Oxford University Tropical Research Ethics Committee (OxTREC). Research studies included in their own protocol provisions for sample collection procedures, informed consent, patient privacy protection, and data sharing compatible with those in the GenRe-Mekong protocol, and obtained ethical approval from both a relevant local ethics review board, and their relevant institutional research ethics committee.
 
@@ -169,13 +169,13 @@ Samples were collected from patients of all ages diagnosed with P. falciparum ma
 
 A number of participating studies also collected an optional anonymous questionnaire, to capture location of abode and work, occupation and travel history of the previous 2 months. These data are intended for in-depth epidemiological studies, such as analyses of the contribution of travel to gene flow (Chang et al., 2019). Data from these questionnaires were stored in a separate system, and linked to genetic data by means of the tracking barcodes. They were not used in the present work.
 
-## Sample preparation and genotyping
+### Sample preparation and genotyping
 
 DBS samples were received and stored either at the Oxford University Clinical Research Unit, Ho Chi Minh City, Vietnam, or at the MORU/WWARN molecular laboratory, Bangkok, Thailand. Samples were registered and tracked in a secure bespoke online database, where location and date of collection were recorded. DNA was extracted from samples using high-throughput robotic equipment (Qiagen QIAsymphony) according to manufacturer’s instructions. Extracted DNA was plated and shipped to the MalariaGEN Laboratory at the Wellcome Sanger Institute (WSI), Hinxton, UK, for genotyping and whole genome sequencing. Parasite DNA was amplified by applying selective whole genome amplification (sWGA) as previously described (Oyola et al., 2016).
 
 Genotyping was performed by the SpotMalaria platform, described in the separate document ‘SpotMalaria platform - Technical Notes and Methods’ available from the Resource Page, which includes the complete list of genotyped variants and the details of the genotyping procedures for these variants. Briefly, the first version of SpotMalaria used multiplexed mass spectrometry arrays on the Agena MassArray system for typing most SNPs, and capillary sequencing for the artemisinin resistance domains of the kelch13 gene. This was eventually replaced by an amplicon sequencing method, using Illumina sequencing of specific genome segments amplified by PCR reaction. The two implementations genotype a common set of variants, each iteration extending or improving on previous versions. Amplicon sequencing also offers greater portability, since it can be deployed on smaller sequencers in country-based laboratories.
 
-## Genetic Report Cards generation
+### Genetic Report Cards generation
 
 For each sample, genotypes were called for each variant analysed by SpotMalaria, and further processed to determine commonly recognized haplotypes associated with drug resistance (e.g. in genes crt, dhfr, dhps). Genetic barcodes were constructed by concatenating 101 SNP alleles. The generated genotypes, combined with sample metadata, were returned in tabular form to those partners who had submitted the samples along with explanatory documentation for the interpretation of the reports.
 
@@ -183,29 +183,172 @@ The genotypes generated were used to classify samples by their predicted resista
 
 In order to minimize the impact of call missingness, we also applied a set of imputation rules that predict missing alleles in the crt, dhfr, and dhps genes, based on statistically significant association with alleles at other positions. Associations were tested (using the threshold p < 0.05 by Fisher's exact test) using over 7000 samples in the MalariaGEN Pf Community Project Version 6 (Pearson et al., 2019). The rules for imputations were applied before phenotype prediction rules. They are detailed in the separate document ‘Imputation of genotypes for markers of drug resistance’ available from the Resource Page.
 
-## Data aggregation and mapping of drug resistance
+### Data aggregation and mapping of drug resistance
 
 To estimate the frequency of resistant parasites for a given drug, we selected samples at the desired level of geographical aggregation (e.g. province/state or district), based on sampling location. After removing samples with missing and undetermined phenotype predictions for the desired drug, we counted the individuals predicted to be resistant (nr) and sensitive (ns), giving a total aggregation sample size N=nr+ns. Resistant parasite frequency was then computed as fr=nr/N. Maps of resistance frequency were produced using Tableau Desktop 2020.1.8 (RRID:SCR_013994, http://www.tableau.com/). To indicate levels of resistance, markers were colored with a custom green-orange-red palette. Pie chart markers, used to represent allele proportions, were also derived from the same set of N aggregated samples.
 
-## Population structure analysis
+### Population structure analysis
 
 Pairwise genetic distances between parasites were estimated by comparing genetic barcodes. To reduce error due to missingness, we first eliminated samples with more than 50% missing barcode genotypes; then we removed SNPs with missing calls in >20% of the remaining samples; and finally discarded samples with >25% missingness in the remaining SNPs. This produced a dataset of 87-SNP barcodes for 7490 samples from which genetic distances were estimated. For each sample s, we assigned a within-sample non-reference frequency gs at each position carrying a valid genotype, as follows: gs=0 if the sample carried the reference allele, gs=one if it carried the alternative allele, gs=0.5 if both alleles were present. The distance between two samples at that position was then estimated by: d = g1(1 g2) + g2(1 g1) where g1 and g2 are the gs values for the two samples. The pairwise distance was estimated as the mean of d across all positions where d could be computed (i.e. where neither of the two samples had a missing call). Neighbour-joining trees (NJTs) were then produced using the nj implementation in the R package ape (RRID:SCR_017343) on R v4.0.2 (RRID:SCR_001905, http://www.r-project.org/) from square distance matrices.
 
 ## Results
 
-## Collaborations, site selection, and sample collections
+### Collaborations, site selection, and sample collections
 
 As of August 2019, GenRe-Mekong has partnered with NMCPs in five countries to conduct large-scale genetic surveillance (Vietnam, Laos), smaller-scale pilot projects (Cambodia, Thailand), and epidemiological surveys (Bangladesh). GenRe-Mekong also worked with large-scale research projects investigating drug efficacy and malaria risk, or piloting elimination interventions. A total of 9623 samples from eight countries have been processed in this period (Figure 1—figure supplement 1). The majority of samples (n=6905, 72%) were collected in GMS countries (Vietnam, Laos, Cambodia, Thailand, Myanmar), but GenRe-Mekong also supported projects submitting samples from Bangladesh, India, and DR Congo (Supplementary file 2). The vast majority of processed samples were collected prospectively, under partnership agreements with GenRe-Mekong (n=9002, 93.5%); two research projects submitted retrospective samples collected in the period 2012–2015 (n=621, 6.5%, Figure 1—figure supplement 1). Approximately 59% of samples (n=5716) were submitted by NMCP partnerships, whose contribution increased over time as surveillance projects ramped up (43.4% in 2016, vs. 94.6% in 2018, Figure 1—figure supplement 2). Details of the partnerships, the nature of the studies conducted and the number of processed samples are given in Table 1.
 
+**Table 1.**
+ Participating studies in GenRe-Mekong.For each study, we list the NMCP and Research partners involved, the type of study, the geographical region covered and the number of collection sites. In the last two columns, we show the total number of samples submitted, and the number included in the final set of quality-filtered samples used in epidemiology analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NMCP partner</th>
+      <th>Research / technical partner</th>
+      <th>Study type</th>
+      <th>Regions surveyed</th>
+      <th>Sites</th>
+      <th>Submitted samples</th>
+      <th>Filtered samples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Center for Malaria Parasitology and Entomology of Lao PDR (CMPE)</td>
+      <td>Lao-Oxford-Mahosot Hospital-Wellcome Trust Research Unit (LOMWRU), Vientiane</td>
+      <td>Genetic Surveillance</td>
+      <td>South Laos (five provinces)</td>
+      <td>51</td>
+      <td>1555</td>
+      <td>1387</td>
+    </tr>
+    <tr>
+      <td>Institute of Malariology, Parasitology, and Entomology Quy Nhon (IMPE-QN), Vietnam</td>
+      <td>Oxford University Clinical Research Unit (OUCRU), Ho Chi Minh City</td>
+      <td>Genetic Surveillance</td>
+      <td>Central Vietnam (seven provinces)</td>
+      <td>51</td>
+      <td>1632</td>
+      <td>1492</td>
+    </tr>
+    <tr>
+      <td>National Institute of Malariology, Parasitology, and Entomology (NIMPE), Vietnam</td>
+      <td>Vysnova Partners, Mahidol-Oxford Research Unit (MORU)</td>
+      <td>Epidemiological Study</td>
+      <td>South Vietnam (three provinces)</td>
+      <td>19</td>
+      <td>292</td>
+      <td>265</td>
+    </tr>
+    <tr>
+      <td>National Center for Parasitology, Entomology, and Malaria Control (CNM), Cambodia</td>
+      <td></td>
+      <td>Genetic Surveillance</td>
+      <td>Northeast Cambodia (two provinces)</td>
+      <td>19</td>
+      <td>182</td>
+      <td>174</td>
+    </tr>
+    <tr>
+      <td>Bangladesh National Malaria Control Programme</td>
+      <td>Mahidol-Oxford Research Unit (MORU)</td>
+      <td>Epidemiological Study</td>
+      <td>Bangladesh (Chittagong Division)</td>
+      <td>55</td>
+      <td>2055</td>
+      <td>1575</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Mahidol-Oxford Research Unit (MORU)</td>
+      <td>Clinical Efficacy Study</td>
+      <td>Cambodia, Vietnam, Thailand, Lao PDR, Myanmar, Bangladesh, India, DR Congo</td>
+      <td>17</td>
+      <td>1875</td>
+      <td>1123</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>National Institutes of Health (NIH)</td>
+      <td>Clinical Efficacy Study</td>
+      <td>Cambodia</td>
+      <td>3</td>
+      <td>592</td>
+      <td>502</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Oxford University Clinical Research Unit (OUCRU)</td>
+      <td>Epidemiological Study</td>
+      <td>South Vietnam</td>
+      <td>4</td>
+      <td>184</td>
+      <td>175</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Mahidol-Oxford Research Unit (MORU)</td>
+      <td>Elimination Study</td>
+      <td>West Cambodia</td>
+      <td>1</td>
+      <td>69</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Mahidol-Oxford Research Unit (MORU)</td>
+      <td>Epidemiological Study</td>
+      <td>Northeast Thailand</td>
+      <td>7</td>
+      <td>87</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Shoklo Malaria Research Unit (SMRU)</td>
+      <td>Clinical Efficacy Study</td>
+      <td>Thailand (Tak province)</td>
+      <td>4</td>
+      <td>29</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Shoklo Malaria Research Unit (SMRU)</td>
+      <td>Elimination Study</td>
+      <td>Myanmar (Kayin State)</td>
+      <td>51</td>
+      <td>1071</td>
+      <td>813</td>
+    </tr>
+    <tr>
+      <td colspan="5">Total</td>
+      <td>9623</td>
+      <td>7626</td>
+    </tr>
+  </tbody>
+</table>
+
 Partnerships with NMCPs are often supported through collaborations with local malaria research groups, which provide support in implementing sample collections, and assist in the interpretation of results. To facilitate implementation in public health infrastructures, GenRe-Mekong provides template study protocols and associated documents; standardized kits of collection materials and documentation; and training for field and health centre staff. Study protocols are adapted to harmonize with local practices, and then approved by both a local ethical review board and the Oxford Tropical Research Ethics Committee (OxTREC). Informed consent forms and participant information sheets are translated to the local language(s), and public health facility staff are trained to execute sample collection procedures. Collection sites are mostly district-level or subdistrict-level health facilities, selected by NMCPs to cover the most informative endemic areas, often based on reported prevalence (Figure 1). Research studies and elimination projects included in their study protocol a sample collection procedure compatible with the standard GenRe-Mekong procedure, and sites were selected based on the study’s requirements.
 
-## Sample processing and genotyping
+![Figure 1.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig1-v1.jpg)
+
+**Figure 1.:** Sites markers are colored by country. One site in Kinshasa (DR Congo) not shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Numbers of samples collected prospectively each year by surveillance projects (blue) and research studies (orange) are compared. Sample counts submitted retrospectively by research projects (green) are also shown.
+
+### Sample processing and genotyping
 
 GenRe-Mekong samples consist of dried blood spots (DBSs) on filter paper. DNA extracted from the samples was selectively amplified (Oyola et al., 2016) to increase the proportion of parasite DNA and reduce human DNA contamination before genotyping (see Materials and methods). The production of genetic report cards involves genotyping different types of variants: single nucleotide polymorphisms (SNPs), copy number variations and sequences of gene domains. These operations were performed by SpotMalaria, the genotyping platform underpinning GenRe-Mekong, whose implementation evolved during the course of the project; details of the methods used in different versions are provided in the Supplementary Materials. In the initial phase, SpotMalaria used a mixture of technologies: capillary sequencing of the kelch13 gene to detect SNPs associated with artemisinin resistance (Ashley et al., 2014; Ariey et al., 2014); and high-throughput mass spectrometry to genotype SNP variants. This was later replaced with an amplicon sequencing process, based on short-read deep sequencing of specific portions of the parasite genome, supporting a high degree of multiplexing (see Materials and methods). A total of 3473 samples (36%) were processed by the amplicon sequencing platform, which delivered a higher genotyping success rate than the earlier process (94% vs 82% mean success rate for genetic barcode positions).
 
 The vast majority of samples were taken from malaria patients upon admission (92%, n=8866). The remainder were from recurrent clinical episodes, or collected as part of post-admission time series to study infection dynamics (n=757, 7.9%), and were excluded from epidemiological analyses in order to minimize biases and avoid duplicates. Genotypes at mitochondrial positions provided confirmation of the infecting parasite species: P. falciparum (Pf), P. vivax (Pv), P. knowlesi (Pk), P. malariae (Pm), and P. ovale (Po). All five species were detected in our dataset: non-Pf parasites were found in 8.8% of samples (n=745 out of 8486 samples for which species could be determined). A proportion of samples (n=414, 4.9%) only tested positive for non-Pf species, possibly due to misdiagnosis or extremely low Pf parasitaemia, and were excluded from epidemiological analyses. Pv was the most commonly detected non-Pf species (317 Pf/Pv mixed infections, and 405 Pv-only infections), followed by Pk (11 Pf/Pk and 6 Pk-only infections), while Pm and Po were detected in three and two samples, respectively.
 
-## Genetic barcodes
+### Genetic barcodes
 
 GenRe-Mekong produces a genetic barcode for each sample to enable analyses of relatedness, diversity, multiplicity of infection and population structure. Genetic barcodes are constructed by concatenating the alleles at 101 SNPs distributed across all nuclear chromosomes (see Materials and methods), chosen on the basis of their geographically widespread variability and their power to recapitulate genetic distance. Genetic barcodes can be used to detect loss of diversity due to demographic effects, (Daniels et al., 2015) or to compare parasites from the same patient to distinguish recrudescences from reinfections (Felger et al., 2020). They can also produce estimates of genetic distance, which may not be sufficiently accurate for detailed inferences, but are useful for visualizing macroscopic population-level features. For example, a neighbor-joining tree derived from these genetic distance estimates (Figure 2) clearly separates parasites from the Thai-Myanmar border region from those circulating along the Thai-Cambodian border, consistent with findings from WGS analyses (Miotto et al., 2015). Hence, while genetic barcodes produce lower resolution results than WGS data, they could be used for rapid low-cost detection of candidate imported parasites, to be further analysed using higher-definition approaches. We used genetic barcode results to discard 827 samples that failed to produce barcodes due to low Pf DNA content. This yielded a final set of 7626 Pf samples, corresponding to 90.2% of all Pf-containing samples taken upon admission, which provided the data used for epidemiological analyses.
 
@@ -213,27 +356,649 @@ GenRe-Mekong produces a genetic barcode for each sample to enable analyses of re
 
 **Figure 2.:** The tree was derived from a matrix distance matrix, computed by comparing the genetic barcodes of samples. The branch length separating each pair of parasites represents the amount of genetic differentiation between them: individuals separated by shorter branches are more similar to each other. Samples from provinces/states of Myanmar, Thailand, and Cambodia near to the borders were included. Each circular marker represents a sample, colored by the province/state of origin.
 
-## Survey of drug resistance mutations
+### Survey of drug resistance mutations
 
 GenRe-Mekong produces genotypes covering a broad range of known variants associated to drug resistance (Table 2) to support assessment of the spread and risk of drug resistance. The interpretation of these genetic markers in phenotypic terms requires extensive knowledge of relevant literature, which is often outside the domain of expertise of public health officers. To bridge this gap, we use genotypes to derive predicted phenotypes based on a set of rules derived from peer-reviewed publications (see Materials and methods and formal rules definitions available from the article’s Resource Page). These rules predict samples as resistant or sensitive to a particular drug or treatment, or undetermined. Since our procedures do not include the measurement of clinical or in vitro phenotypes, we are only able to predict a drug resistant phenotype based on known associations of certain markers with resistance to certain drugs. Although we report a large catalogue of variations which have been associated with resistance, we do not use all variations to predict resistance. Rather, our predictive rules are conservative and only use markers that have been strongly characterized and validated in published literature and shown to play a crucial role in clinical or in vitro resistance. These critical variants include single nucleotide polymorphisms (SNPs) in genes kelch13 (resistance to artemisinin), (Ariey et al., 2014) crt (chloroquine), dhfr (pyrimethamine), dhps (sulfadoxine), as well as an amplification breakpoint sequence in plasmepsin2/3 (marker of resistance to piperaquine) (Amato et al., 2017). In addition, we report several additional variants found in drug resistance backgrounds but not used to predict resistance, such as mutations in mdr1 (linked to resistance to multiple drugs), components of the predisposing ART-R background arps10, ferredoxin, mdr2 (Miotto et al., 2015), and the exo marker associated with resistance to piperaquine (Amato et al., 2017). Several samples had missing genotype calls which were required for phenotype prediction; therefore, we also devised a number of rules for imputation of missing genotypes based on information from linked alleles. These imputation rules (see Materials and methods) are based on an analysis of allele associations using data from over 7000 samples in the MalariaGEN Pf Community Project (Pearson et al., 2019) and are applied prior to phenotype prediction rules. Phenotypic predictions allow simple estimations of the proportions of resistant parasites at the population level, which can be readily tabulated and mapped for use in public health decision-making. By aggregating sample data at various geographic levels (site, district, province, region, country), GenRe-Mekong delivers to NMCPs maps that capture the current drug resistance landscape, and can be compared to detect changes over time. Most GenRe-Mekong maps use intuitive ‘traffic light’ color schemes, in which red signifies presence of resistance, and green its absence. Below, we illustrate some results at regional level for the GMS and nearby countries, which are also summarized in Table 3.
 
+**Table 2.**
+ Drug resistance-related SNPs genotyped by GenRe-Mekong (excludes kelch13).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chromosome</th>
+      <th>Position</th>
+      <th>Gene Id</th>
+      <th>Gene Description</th>
+      <th>Mutation</th>
+      <th>Reference</th>
+      <th>Alternate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pf3D7_04_v3</td>
+      <td>748239</td>
+      <td rowspan="5">PF3D7_0417200</td>
+      <td rowspan="5">dhfr (bifunctional dihydrofolate reductase-thymidylate synthase)</td>
+      <td>N51I</td>
+      <td>A</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_04_v3</td>
+      <td>748262</td>
+      <td>C59R/Y</td>
+      <td>T</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_04_v3</td>
+      <td>748263</td>
+      <td>C59R/Y</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_04_v3</td>
+      <td>748410</td>
+      <td>S108N/T</td>
+      <td>G</td>
+      <td>AC</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_04_v3</td>
+      <td>748577</td>
+      <td>I164L</td>
+      <td>A</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_05_v3</td>
+      <td>958145</td>
+      <td rowspan="3">PF3D7_052300</td>
+      <td rowspan="3">mdr1 (multidrug resistance protein 1)</td>
+      <td>N86Y</td>
+      <td>A</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_05_v3</td>
+      <td>958440</td>
+      <td>Y184F</td>
+      <td>A</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_05_v3</td>
+      <td>961625</td>
+      <td>D1246Y</td>
+      <td>G</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_07_v3</td>
+      <td>403623</td>
+      <td rowspan="4">PF3D7_0709000</td>
+      <td rowspan="4">crt (chloroquine resistance transporter)</td>
+      <td>N75D/E</td>
+      <td>T</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_07_v3</td>
+      <td>403625</td>
+      <td>K76T</td>
+      <td>A</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_07_v3</td>
+      <td>405362</td>
+      <td>N326S</td>
+      <td>A</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_07_v3</td>
+      <td>405600</td>
+      <td>I356T</td>
+      <td>T</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_08_v3</td>
+      <td>549681</td>
+      <td rowspan="7">PF3D7_0810800</td>
+      <td rowspan="7">dhps (dihydropteroate synthetase)</td>
+      <td>S436A/Y/F/G</td>
+      <td>T</td>
+      <td>GC</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_08_v3</td>
+      <td>549682</td>
+      <td>S436A/Y/F/G</td>
+      <td>C</td>
+      <td>TAG</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_08_v3</td>
+      <td>549685</td>
+      <td>A437G</td>
+      <td>G</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_08_v3</td>
+      <td>549993</td>
+      <td>K540E/N</td>
+      <td>A</td>
+      <td>GT</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_08_v3</td>
+      <td>549995</td>
+      <td>K540E/N</td>
+      <td>A</td>
+      <td>TG</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_08_v3</td>
+      <td>550117</td>
+      <td>A581G</td>
+      <td>C</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_08_v3</td>
+      <td>550212</td>
+      <td>A613S/T</td>
+      <td>G</td>
+      <td>TA</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_13_v3</td>
+      <td>748395</td>
+      <td>PF3D7_1318100</td>
+      <td>fd (ferredoxin)</td>
+      <td>D193Y</td>
+      <td>C</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_13_v3</td>
+      <td>2504560</td>
+      <td>PF3D7_1362500</td>
+      <td>exo (exonuclease)</td>
+      <td>E415G</td>
+      <td>A</td>
+      <td>G</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_14_v3</td>
+      <td>-</td>
+      <td>PF3D7_1408000 and PF3D7_1408100</td>
+      <td>pm23 (plasmepsin 2 and plasmepsin 3)</td>
+      <td>Breakpoint</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_14_v3</td>
+      <td>1956225</td>
+      <td>PF3D7_1447900</td>
+      <td>mdr2 (multidrug resistance protein 2)</td>
+      <td>T484I</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_14_v3</td>
+      <td>2481070</td>
+      <td rowspan="2">PF3D7_1460900</td>
+      <td rowspan="2">arps10 (apicoplast ribosomal protein S10)</td>
+      <td>V127M</td>
+      <td>G</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Pf3D7_14_v3</td>
+      <td>2481073</td>
+      <td>D128Y/H</td>
+      <td>G</td>
+      <td>TC</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Frequencies of resistant parasites in provinces/states/divisions surveyed, for different antimalarials.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Province, State, or Division</th>
+      <th>ART-R</th>
+      <th>PPQ-R</th>
+      <th>DHA-PPQ-R</th>
+      <th>CQ-R</th>
+      <th>PYR-R</th>
+      <th>SD-R</th>
+      <th>SP-R</th>
+      <th>SP-R (IPTp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">India</td>
+      <td>Odisha</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>18%</td>
+      <td>57%</td>
+      <td>6%</td>
+      <td>1%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>West Bengal</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>47%</td>
+      <td>71%</td>
+      <td>14%</td>
+      <td>5%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Tripura</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>85%</td>
+      <td>100%</td>
+      <td>99%</td>
+      <td>55%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Bangladesh</td>
+      <td>Chittagong</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>97%</td>
+      <td>100%</td>
+      <td>87%</td>
+      <td>46%</td>
+      <td>16%</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Myanmar</td>
+      <td>Rakhine</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>71%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>51%</td>
+      <td>26%</td>
+    </tr>
+    <tr>
+      <td>Bago</td>
+      <td>1%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>88%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>91%</td>
+      <td>74%</td>
+    </tr>
+    <tr>
+      <td>Mandalay</td>
+      <td>29%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>96%</td>
+      <td>98%</td>
+      <td>98%</td>
+      <td>29%</td>
+      <td>24%</td>
+    </tr>
+    <tr>
+      <td>Kayin</td>
+      <td>54%</td>
+      <td>2%</td>
+      <td>0%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>56%</td>
+      <td>73%</td>
+      <td>27%</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Thailand</td>
+      <td>Tak</td>
+      <td>61%</td>
+      <td>-</td>
+      <td>0%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>96%</td>
+      <td>100%</td>
+      <td>88%</td>
+    </tr>
+    <tr>
+      <td>Sisakhet</td>
+      <td>100%</td>
+      <td>90%</td>
+      <td>90%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Ubon Ratchathani</td>
+      <td>80%</td>
+      <td>75%</td>
+      <td>56%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>85%</td>
+      <td>100%</td>
+      <td>17%</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Cambodia</td>
+      <td>Pailin</td>
+      <td>93%</td>
+      <td>97%</td>
+      <td>90%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>56%</td>
+    </tr>
+    <tr>
+      <td>Battambang</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>88%</td>
+      <td>100%</td>
+      <td>29%</td>
+    </tr>
+    <tr>
+      <td>Pursat</td>
+      <td>88%</td>
+      <td>98%</td>
+      <td>67%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>92%</td>
+      <td>98%</td>
+      <td>44%</td>
+    </tr>
+    <tr>
+      <td>Preah Vihear</td>
+      <td>61%</td>
+      <td>100%</td>
+      <td>11%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>94%</td>
+      <td>98%</td>
+      <td>21%</td>
+    </tr>
+    <tr>
+      <td>Steung Treng</td>
+      <td>93%</td>
+      <td>75%</td>
+      <td>70%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>97%</td>
+      <td>100%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Ratanakiri</td>
+      <td>49%</td>
+      <td>79%</td>
+      <td>42%</td>
+      <td>99%</td>
+      <td>100%</td>
+      <td>76%</td>
+      <td>90%</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Laos</td>
+      <td>Champasak</td>
+      <td>66%</td>
+      <td>75%</td>
+      <td>56%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>88%</td>
+      <td>94%</td>
+      <td>12%</td>
+    </tr>
+    <tr>
+      <td>Attapeu</td>
+      <td>46%</td>
+      <td>43%</td>
+      <td>31%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>82%</td>
+      <td>100%</td>
+      <td>18%</td>
+    </tr>
+    <tr>
+      <td>Sekong</td>
+      <td>26%</td>
+      <td>6%</td>
+      <td>0%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>91%</td>
+      <td>74%</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Salavan</td>
+      <td>17%</td>
+      <td>2%</td>
+      <td>1%</td>
+      <td>89%</td>
+      <td>97%</td>
+      <td>28%</td>
+      <td>38%</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Savannakhet</td>
+      <td>10%</td>
+      <td>1%</td>
+      <td>0%</td>
+      <td>87%</td>
+      <td>96%</td>
+      <td>21%</td>
+      <td>41%</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Vietnam</td>
+      <td>Binh Phuoc</td>
+      <td>92%</td>
+      <td>93%</td>
+      <td>83%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>14%</td>
+    </tr>
+    <tr>
+      <td>Dak Nong</td>
+      <td>94%</td>
+      <td>92%</td>
+      <td>88%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>97%</td>
+      <td>96%</td>
+      <td>22%</td>
+    </tr>
+    <tr>
+      <td>Dak Lak</td>
+      <td>96%</td>
+      <td>90%</td>
+      <td>86%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>99%</td>
+      <td>15%</td>
+    </tr>
+    <tr>
+      <td>Gia Lai</td>
+      <td>84%</td>
+      <td>83%</td>
+      <td>76%</td>
+      <td>99%</td>
+      <td>100%</td>
+      <td>98%</td>
+      <td>95%</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Khanh Hoa</td>
+      <td>22%</td>
+      <td>5%</td>
+      <td>2%</td>
+      <td>95%</td>
+      <td>100%</td>
+      <td>97%</td>
+      <td>74%</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>Ninh Thuan</td>
+      <td>13%</td>
+      <td>18%</td>
+      <td>0%</td>
+      <td>28%</td>
+      <td>100%</td>
+      <td>98%</td>
+      <td>75%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Quang Tri</td>
+      <td>16%</td>
+      <td>9%</td>
+      <td>0%</td>
+      <td>75%</td>
+      <td>76%</td>
+      <td>59%</td>
+      <td>26%</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Congo PDR</td>
+      <td>Kinshasa</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>58%</td>
+      <td>98%</td>
+      <td>72%</td>
+      <td>88%</td>
+      <td>0%</td>
+    </tr>
+  </tbody>
+</table>
+
 The spread of artemisinin resistance (ART-R) is an urgent concern in the GMS. We estimated frequencies of predicted ART-R parasites based on the presence of nonsynonymous mutations in the kelch13 gene, as listed by the World Health Organization, 2018. The resulting map indicates that ART-R has reached very high levels in the lower Mekong region (Cambodia, northeastern Thailand, southern Laos, and Vietnam), nearing fixation in Cambodia and around its borders, with the exception of very few provinces of Laos and the Vietnam coast (Figure 3A). Predicted ART-R frequencies decline to the west of this region: no samples in this study were predicted to be ART-R in India and Bangladesh, thus showing no evidence of spread beyond the GMS, or of local emergence of resistant parasite populations. An analysis of the distribution of kelch13 ART-R alleles (Figure 3—figure supplement 1, Supplementary file 3) reveals a marked difference between the lower Mekong region, where the kelch13 C580Y mutation is the dominant allele, and the region comprising Myanmar and western Thailand, where a wide variety of non-synonymous kelch13 variants are found, and C580Y is not dominant. This reflects a recent increase of C580Y mutant prevalence in Cambodia and neighboring regions, resulting from the rapid spread of the KEL1/PLA1 strain of multidrug-resistant parasites (Hamilton et al., 2019; Amato et al., 2018). This hard selection sweep has replaced a variety of ART-R alleles previously present in that region, resulting from multiple soft sweeps (Miotto et al., 2015; Miotto et al., 2013); this process has not occurred along the Thai-Myanmar border, where allele diversity is still very pronounced. The spread of DHA-PPQ resistant (DHA-PPQ-R) strains in the lower Mekong region is confirmed when we map the frequency of plasmepsin2/3 amplifications conferring piperaquine resistance (PPQ-R, Figure 3—figure supplement 2), which occur where C580Y is most prevalent. Mapping the combined presence of C580Y and plasmepsin2/3 amplification shows that parasites carrying both markers are confined to a well-defined area of the lower Mekong region, and these resistant strains have not made their way into provinces of Laos and Vietnam where ART-R and PPQ-R alleles circulate separately (Figure 3B). Over time, GenRe-Mekong will continue to track across the region the spread of strains carrying drug resistance mutations.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig3-v1.jpg)
+
+**Figure 3.:** Marker text and color indicate the proportion of sample classified as resistant in each province/state/division surveyed. A total of 6762 samples were included in (A) and 3395 samples in (B), after excluding samples with undetermined phenotype prediction. The results are summarized in Table 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** We show a pie chart for each province/state/division surveyed, indicating the relative proportion of different nonsynonymous mutations found in the resistance domains of kelch13. A total of 6758 samples were included in this analysis, after excluding samples where the kelch13 genotype could not be called, and those with undetermined ART-R phenotype prediction. For display clarity, mutations that we only found in singleton samples are also excluded (n=18).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Marker text and color indicate the proportion of sample classified as resistant in each province/state/division surveyed. A total of 3552 samples were included in this analysis, after excluding samples where plasmepsin 2/3 copy number could not be determined. The results are summarized in Table 3.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Marker text and color indicate the proportion of sample classified as resistant in each province/state/division surveyed. A total of 6458 samples were included in this analysis, after excluding samples where the crt core haplotype could not predict a phenotype. The results are summarized in Table 3.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Marker text and color indicate the proportion of sample classified as resistant in each province/state/division surveyed. A total of 7208 samples were included in this analysis, after excluding samples where the dhfr core haplotype could not predict a phenotype. The results are summarized in Table 3.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Marker text and color indicate the proportion of sample classified as resistant in each province/state/division surveyed. A total of 7095 samples were included in this analysis, after excluding samples where the dhps core haplotype could not predict a phenotype.
 
 Resistant populations can revert to sensitive haplotypes after drugs are discontinued, as was the case for chloroquine-resistant parasites in East Africa (Laufer et al., 2006; Frosch et al., 2014). To help detect similar trends in the GMS, GenRe-Mekong reports on markers of resistance to previous frontline antimalarials that have been discontinued because of reduced efficacy. The resulting data show that, decades after the replacement of chloroquine as frontline therapy, the frequency of parasites predicted to be resistant (CQ-R) remains exceptionally high across the GMS (Figure 3—figure supplement 3). The reasons for such sustained levels of resistance are unclear; the continued use of chloroquine as frontline treatment for P. vivax malaria, and the low diversity associated with the extremely high prevalence of resistant haplotypes could be major contributing factors. Similarly, we found high levels of the dhfr and dhps markers associated with resistance to sulfadoxine-pyrimethamine (SP, Figure 3—figure supplements 4 and 5). It is unclear why resistance to SP is so widespread, several years after discontinuing this therapy in the GMS, although similar results have been seen in Malawi (Artimovich et al., 2015). Again, very low haplotype diversity may be an obstacle to reversion, and it is also possible that compensatory changes have minimized the fitness impact of resistant mutations over time, diminishing the pressure to revert. It is interesting that predicted resistance is lowest in India, where SP is still used with artesunate as the frontline ACT (Directorate of National Vector Borne Disease Control Programme DGoHS and Government of India, 2013).
 
-## Case study: Vietnam
+### Case study: Vietnam
 
 In Vietnam, sample collections were carried out by two NMCP institutes (IMPE-QN and NIMPE), covering approximately 70 sites in seven provinces. Genetic report cards were delivered to public health officials over two malaria seasons (Figure 4), communicating new findings for malaria control. Prior to this surveillance activity, evidence of artemisinin resistance had been found in the provinces of Binh Phuoc, Gia Lai, Dak Nong, Khanh Hoa, and Ninh Thuan province (World Health Organization, 2017). GenRe-Mekong data confirmed the presence of parasites carrying ART-R markers in these provinces, and showed that the province of Dak Lak also has extremely high levels of predicted ART-R (Figure 4—figure supplement 1). Furthermore, our data showed that nearly all ART-R parasites collected near the border with were also predicted to be PPQ-R, in that they carried both the kelch13 C580Y mutation (Figure 4—figure supplement 2) and plasmepsin2/3 amplification (Hamilton et al., 2019; Amato et al., 2018). C580Y parasites were also found in the coastal provinces of Ninh Thuan, Khanh Hoa and Quang Tri, but they did not carry the PPQ-R marker; it is therefore likely the kelch13 mutations were introduced by an earlier sweep of ART-R parasites. Several parasites in Khang Hoa carried the kelch13 P553L mutation, previously associated with an ART-R founder population in Binh Phuoc province (Miotto et al., 2015; Takala-Harrison et al., 2015), supporting the hypothesis they belong to an earlier sweep (Figure 4—figure supplement 2).
 
 Data from consecutive seasons offers a view of the dynamics of drug resistance spread. In the 2018/2019 season, there was a marked increase in the number of cases in the Krong Pa district of Gia Lai province (Figure 4). In 2017/2018, this district accounted for 15% of cases in the three central provinces that border with Cambodia (n=96 of 656); the following season, this increased to 64% (n=341 of 529, p<10−15). In the same timeframe, predicted DHA-PPQ-R parasites in Krong Pa rose from 65% (n=40 of 62) to 98% (n=298 of 305, p<10−14). These results suggest that an outbreak occurred in this district in 2018/2019, underpinned by strong selection of a genetic background able to survive the frontline ACT DHA-PPQ.
 
-## Case study: Laos
+![Figure 4.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig4-v1.jpg)
+
+**Figure 4.:** The same geographical area (Gia Lai, Dak Lak, and Dak Nong provinces) is shown for two malaria seasons: 2017/18 (12 months from May 2017, n=523) and 2018/2019 (the following 12 months, n=455). Districts are represented by markers whose size is proportional to the number of samples, and whose color indicates the frequency of samples carrying both the kelch13 C580Y mutation and the plasmepsin2/3 amplification, and thus predicted to be DHA-PPQ-R. Marker labels show district name, resistant parasite frequency, and sample count.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The three maps show frequencies of predicted resistance to artemisinin (A, n=1543), piperaquine (B, n=1380), and DHA-piperaquine (C, n=1372). Samples are aggregated by district, represented by a marker; estimates are shown only for districts with more than 10 collected samples. Marker text and color indicate the proportion of sample classified as resistant in each district. Labels show the names of the seven provinces where samples were collected.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Each pie chart shows the proportions of kelch13 alleles in samples collected in each province. Numbers by each pie slice indicate the actual number of samples carrying that allele. Samples with heterozygous kelch13 calls were disregarded. A total of 1567 samples with kelch13 genotypes were analyzed.
+
+### Case study: Laos
 
 The Lao NMCP implemented genetic surveillance in five provinces of southern Laos, at over 50 public health facilities. Artemisinin-resistant parasites were found in all five provinces, at frequencies higher in districts bordering Thailand and Cambodia (Figure 5A). The kelch13 C580Y mutation was found in four of the five provinces, and was the most common ART-R allele (Figure 5—figure supplement 1). However, parasites carrying both C580Y and the plasmepsin2–3 amplification were restricted to the two southernmost provinces (Champasak and Attapeu, referred to as ‘Lower Zone’, Figure 5B), and completely absent from Savannakhet and Salavan provinces (‘Upper Zone’) where C580Y parasites lack the PPQ-R amplification. In other words, it appears that DHA-PPQ-R parasites, possibly imported from Cambodia or Thailand, have migrated into the Lower Zone but not the Upper Zone, where a different population of ART-R parasites circulates.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig5-v1.jpg)
+
+**Figure 5.:** Districts in five provinces of southern Laos are represented by markers whose color and label indicates the frequency of samples classified as ART-R (A) and as DHA-PPQ-R, i.e. possessing markers of resistance to both artemisinin and piperaquine (B). Only districts with more than 10 samples with valid genotypes are shown. In panel (B), a dashed line denotes a hypothetical demarcation line between a Lower Zone, where DHA-PPQ-R strains have spread, and an Upper Zone, where they are absent and ART-R parasites belong to different strains.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Each pie chart shows the proportions of kelch13 alleles in samples collected in each province. Numbers by each pie slice indicate the actual number of samples carrying that allele. Samples with heterozygous kelch13 calls were disregarded. A total of 1303 samples with kelch13 genotypes were analyzed.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62997/elife-62997-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The tree was derived from a genetic distance matrix, computed by comparing the genetic barcodes of samples collected in the Lao PDR (n=1332). Each marker represents a parasite sample, coloured by province. The branch length separating each pair of parasites represents the amount of genetic differentiation between them: individuals separated by shorter branches are more similar to each other. Thicker marker borders indicate parasites carrying thekelch13C580Y mutation, while square markers indicate samples withplasmepsin2/3amplification. Orange circular callouts show notable features of this tree. (A) Shows a large cluster of parasites from the Lower Zone (Attapeu and Champasak provinces) carrying both C580Y andplasmepsin2/3amplification (DHA-PPQ-R). (B) Indicates that C580Y mutants from the Upper Zone (Savannakhet and Salavan provinces) are genetically distinct from the DHA-PPQ-R strains, but also from Upper Zone wild-type parasites.
+
 Given the very recent aggressive spread of DHA-PPQ-R strains, it is likely that ART-R parasites in the Upper Zone are remnants of an earlier sweep which may also have spread from the south, as suggested by the higher frequency in Salavan province than in Savannakhet. To confirm the presence of distinct ART-R populations, we used genetic barcodes to construct a tree that recapitulates population structure in Laos (Figure 5—figure supplement 2), which clearly separates Upper Zone and Lower Zone parasites. In this tree, DHA-PPQ-R parasites form a large, tight cluster clearly separated from the kelch13 wild-type samples from the Upper Zone. The Upper Zone C580Y mutants cluster separately from both these groups, and appear more similar to some C580Y mutants from the Lower Zone which do not carry the PPQ-R amplification, corroborating the hypothesis that Upper Zone mutants migrated from the South. It is likely that the northward spread of DHA-PPQ-R strains has been contained by the use of artemether-lumefantrine in Laos, which diminishes the survival advantage of resistance to piperaquine. However, the spread of DHA-PPQ-R parasites across the Lower Zone, probably displacing previous ART-R strains, suggests that they are well-adapted and highly competitive even in the absence of pressure from piperaquine.
 
-## Release of genetic report card data
+### Release of genetic report card data
 
 GenRe-Mekong’s primary data outputs are Genetic Report Cards, delivered as spreadsheets comprising sample metadata (time and place of collection), drug resistance genotypes and phenotype predictions, detected species and genetic barcodes. As soon as sample processing is complete, GRCs are returned to the stakeholders of the studies that contributed the samples, which typically include the NMCP and local scientific partners. Detailed analyses of GRC data may also be conducted by the GenRe-Mekong analysis team and local partners, and their results reported to the NMCP. On a regular basis, GRC data from all studies will be aggregated and released to public access, to benefit the research and public health community. The public releases are detailed by sample, and comprise all genetic data and their derivatives such as phenotype predictions. The first public release is currently available from the article’s Resource Page at https://www.malariagen.net/resource/29.
 

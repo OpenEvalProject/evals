@@ -22,9 +22,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02qyf5152 Department of Biosciences and Bioengineering, Indian Institute of Technology Bombay Mumbai India
-2. https://ror.org/03v0r5n49 Department of Biotechnology, Indian Institute of Technology Madras Chennai India
-3. https://ror.org/02r2k1c68 School of Biological Sciences, National Institute of Science Education and Research Bhubaneswar India
+1. Department of Biosciences and Bioengineering, Indian Institute of Technology Bombay Mumbai India ([ROR:02qyf5152](https://ror.org/02qyf5152))
+2. Department of Biotechnology, Indian Institute of Technology Madras Chennai India ([ROR:03v0r5n49](https://ror.org/03v0r5n49))
+3. School of Biological Sciences, National Institute of Science Education and Research Bhubaneswar India ([ROR:02r2k1c68](https://ror.org/02r2k1c68))
 
 † Corresponding author
 
@@ -42,13 +42,45 @@ PRL and GAL secretion is synergistic and promoted by common secretagogues (Koshi
 
 ## Results
 
-## PRL and GAL are co-stored as amyloids in SGs of the anterior pituitary of female rats
+### PRL and GAL are co-stored as amyloids in SGs of the anterior pituitary of female rats
 
 Previously, it was shown that PRL and GAL co-store in the anterior pituitary of female rats or estrogen-treated male rats (Hyde et al., 1991; Koshiyama et al., 1990a; Koshiyama et al., 1990b). PRL is a 23 kDa protein and consists of four-helix bundles comprising residues 14–42 (helix 1), 78–104 (helix 2), 110–138 (helix 3), and 160–194 (helix 4) (Teilum et al., 2005; Keeler et al., 2003). The helix bundles are spaced with three loop regions (Figure 1a). On the other hand, GAL is a small unstructured neuropeptide, which is 30 residues in length (Evans and Shine, 1991; Bersani et al., 1991; Figure 1a). PRL showed amyloid-prone sequences predicted by TANGO (Fernandez-Escamilla et al., 2004); GAL, however, did not contain any amyloid-prone sequences (Figure 1b–c). Since previously it was established that protein/peptide hormones (including PRL and GAL) can be stored as amyloids inside the SGs (Maji et al., 2009a), we tested whether PRL and GAL are colocalized in the cells of the anterior pituitary in the amyloid state or not. To examine this possibility, the immunofluorescence study of female rat pituitary was performed using anti-GAL and anti-PRL antibodies (see Materials and methods). Our results showed that PRL and GAL were substantially co-localized in the pituitary tissue (Figure 1d) indicating their co-storage inside the SGs. Further, to test whether both PRL and GAL remain in the amyloid state, we performed immunostaining of the pituitary tissue sections with amyloid-specific antibody OC along with Thioflavin-S (ThioS) (Bussière et al., 2004). Double immunofluorescence of PRL and GAL along with amyloid specific OC antibody showed strong colocalization suggesting both the hormones are in the amyloid state (Figure 1e), which was also observed in ThioS staining (Figure 1—figure supplement 1). In contrast to the female rats, when a similar study of double immunofluorescence was performed in the male rat pituitary tissues, we did not observe any co-localization of PRL and GAL (Figure 1—figure supplement 2), which is consistent with the earlier studies (Hyde et al., 1991; Steel et al., 1989). Altogether, our data confirmed that both PRL and GAL are co-stored as amyloid aggregates in the female rat pituitary.
 
-## In vitro amyloid aggregation kinetics and synergistic co-fibrils of PRL and GAL
+![Figure 1.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic showing amino acid sequence and secondary structures of PRL & GAL with different color codes. (Upper panel) PRL is 191 amino acids in length and contains a four-helix bundle (green). The short helix and loop regions are also represented between helix-1 and helix 2 (shown in green and blue colors, respectively). (Lower panel) GAL showing 30 residue peptide with no definite secondary structure (Evans and Shine, 1991; Bersani et al., 1991). (b) (Left panel) The three-dimensional structure (obtained in Pymol) (Teilum et al., 2005) of PRL showing its major helices and two tryptophan residues (shown in purple) (PDB ID: 1RW5). (Right panel) Natively unstructured conformation of GAL is also shown. (c) TANGO algorithm showing the aggregation-prone residues of PRL and GAL at pH 6.0 (SGs relevant pH). The residues 18–29 and 80–88 of PRL showing amyloid aggregation potential. However, TANGO analysis of GAL revealed no amyloid aggregation propensity. Immunofluorescence studies showing (d) colocalization of PRL (red) and GAL (green) in the female rat anterior pituitary. (e) (left panel) Colocalization of amyloid fibrils (OC, green) and PRL (red) and amyloid fibrils (OC, green) and GAL (red) (Right panel) in the anterior pituitary of female rat. The merged microscopic image showing colocalization (yellow). The experiments (d-e) are performed three times with similar observations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Representative fluorescence photomicrographs of female rat anterior pituitary tissue (after immunostaining) showing ThioS staining (green) in the GAL or PRL expressing cells (red). The data indicate that PRL and GAL are stored as amyloid in SGs. (a) PRL (red) and ThioS (green) shows co-localization (yellow). (b) GAL (red) and ThioS (green) shows co-localization (yellow). The experiment is performed three times with similar observations.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Double immunofluorescence showing PRL (red) and GAL (green) co-localization in the anterior pituitary of male rat. The merged microscopic image (Right) shows no colocalization between PRL and GAL. The data indicate that PRL and GAL are not co-stored in the male rat anterior pituitary. The experiments were performed three times with similar observations.
+
+### In vitro amyloid aggregation kinetics and synergistic co-fibrils of PRL and GAL
 
 The colocalization of both PRL and GAL in the amyloid state suggested that PRL and GAL might interact with each other and might co-aggregate inside the same SGs. We hypothesized that there could be four possibilities (case 1–4) when PRL and GAL are co-stored as amyloids (Figure 2a). The two proteins can form separate filaments and these filaments can be incorporated into heterogeneous fibrils (case 1). They can form completely separate, homogeneous fibrils either by PRL or GAL or by both hormones (case 2). It is also possible that the PRL and GAL together can form the fibril forming unit to form heterogeneous amyloid fibrils (case 3); and lastly, the PRL monomers can simply adhere to the GAL fibrils (case 4 a) or vice-versa (case 4b).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic showing different possibilities for the formation of PRL-GAL co-fibrils. (b) Normalized ThT fluorescence intensity over time showing faster aggregation kinetics for GAL-Hep followed by PRL-GAL and PRL-CSA. The experiment is performed three times with similar results. Values represent mean ± SEM. (c) TEM images showing amyloid fibrils for PRL-CSA, GAL-Hep, and PRL-GAL after 15 days of incubation. Representative images are shown. The dotted box marks are the representative area from which the fibril diameters are measured. (d) XRD of PRL-CSA, GAL-Hep, and PRL-GAL fibrils at day 15 showing ~4.7 Å meridional and ~10 Å equatorial reflections, as commonly seen for most amyloid fibrils (Sunde et al., 1997; Sunde and Blake, 1997). (e) (Left panel) Representative TEM images showing fibril diameter measured at random positions (marked with red arrows) on individual fibrils. (Right panel) The normalized frequency distribution of fibril diameters of PRL-CSA, GAL-Hep, and PRL-GAL fibrils is shown. 200 data points are collected for individual samples for n = 3 independent experiments. (f) (Left panel) Median values of different fibril diameters are shown with violin plots. (Right panel) Average values of different fibril diameters are shown. Values represent mean ± SD. The statistical significance (***p ≤ 0.001, **p ≤ 0.01) is calculated by one-way ANOVA followed by an SNK post hoc test with a 95% confidence interval. (g) Representative TEM images of PRL-CSA, GAL-Hep, and PRL-GAL fibrils (scale bar-200 nm). From a single fibril, 200 data points are collected along the length to calculate the diameter. (h) SDS-PAGE depicting two bands for isolated aggregates from the PRL-GAL mixture (lane 3). The two bands correspond to PRL and GAL, which suggests that the isolated aggregates are composed of both PRL and GAL. (i) Amyloid fibrils obtained from the PRL-GAL mixture showing 10 nm gold particles (against GAL primary) and 5 nm gold particles (against PRL primary), confirming synergistic co-fibril formation by PRL and GAL (Left and Right panel). The experiment is performed three times with similar observations. (j) Schematic representation of incubation of PRL and GAL at various concentrations showing optimum concentration is required to initiate PRL-GAL co-aggregation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Radar plot showing no significant sequence similarities between PRL and GAL. (b) CD spectra showing secondary structural changes during incubation. PRL-GAL and PRL-CSA show a decrease in helicity with time. GAL-Hep shows a structural transition from RC to the β-sheet structure during incubation. The experiment is performed three times with similar results. (c) (Top panel) The plot of molar ellipticity value (θ) at 222 nm (characteristic minima for α-helix) with time showing a faster decrease in molar ellipticity value in the case of PRL-GAL in comparison to PRL-CSA. This suggests PRL-GAL is undergoing structural changes at a faster rate compared to PRL-CSA. PRL alone showed no considerable change in molar ellipticity value suggesting it did not undergo amyloid aggregation. (Bottom panel) The plot of molar ellipticity value (θ) at 218 nm (characteristic minima for β-sheet) with time showing an increase in molar ellipticity value (negative θ) for GAL-Hep suggesting GAL-Hep is undergoing major structural changes with time. GAL alone showed no considerable change in molar ellipticity value. (d) ThT fluorescence at day 0 and day 15 for PRL, GAL, GAL-Hep, PRL-GAL, and PRL-CSA is shown. The data showed a significant increase in ThT fluorescence for GAL-Hep, PRL-GAL & PRL-CSA after 15 days of incubation. PRL and GAL alone do not show any significant ThT binding even after 15 days of incubation. Values represent mean ± SEM for n = 3 independent experiments. Statistical significance is calculated for each sample using paired Student’s t-test. (e) Lag time of aggregation derived from ThT aggregation kinetics of PRL-CSA, PRL-GAL, and GAL-Hep. Values represent mean ± SEM for n = 3 independent experiments. The statistical significance (***p ≤ 0.001, **p ≤ 0.01, *p ≤ 0.05) is calculated by one-way ANOVA followed by an SNK post hoc test with a 95% confidence interval (f) (Left panel) Median values of different fibril diameters are shown with violin plots. (Right panel) Average values of different fibril diameters are shown. Values represent mean ± SEM. The statistical significance (***p ≤ 0.001, **p ≤ 0.01, *p ≤ 0.05) is calculated by one-way ANOVA followed by an SNK post hoc test with a 95% confidence interval.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Bright-field and cross-polarized images of the PRL-CSA, PRL-GAL, and GAL-Hep samples after 15 days of incubation are shown. The greenish-yellow CR birefringence under crossed polarized light indicates the presence of amyloid in all three samples. (b) PRL-CSA, GAL-Hep, and PRL-GAL showed higher CR absorbance (at 540 nm) compared to PRL or GAL alone (400/800 μM) samples. Values represent mean ± SEM for n = 3 independent experiments. The statistical significance (***p ≤ 0.001) is calculated by one-way ANOVA followed by the SNK post hoc test with a 95% confidence interval.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) The morphology of the formation of the aggregates was monitored by TEM at different incubation times. The data shows the appearance of fibrillar structure for GAL-Hep in an earlier time point followed by PRL-GAL and PRL-CSA. Only PRL and/or GAL show amorphous morphology throughout the aggregation time-course. The experiment is performed three times with similar observations. The scale bar is 200 nm as shown. (b) FTIR spectra of PRL-GAL, PRL-CSA and GAL-Hep along with PRL and GAL alone samples at day 0 and day 15 are shown. On day 0, PRL, PRL-CSA, and PRL-GAL shows the major peak at 1651 cm–1, which is characteristic of the α-helical structure. GAL and GAL-Hep shows the major peak at 1648 cm–1, which is characteristic of random coil (RC) structure. At day 15, PRL-GAL shows two peaks at 1633 and 1621 cm–1, representing β-sheet conformation. PRL-CSA shows a peak at 1635 cm–1 and GAL-Hep shows peaks at 1621 and 1633 cm–1 representing the β-sheet structure. The experiment is performed three times with similar observations.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** TEM images and ThT fluorescence of PRL-GAL co-aggregation at a varying concentration of PRL and GAL are shown. Both the (Left panel) TEM images and ThT fluorescence intensity at 480 nm (Right panel) suggest that PRL-GAL co-aggregation initiates above 400 µM concentration of each of the PRL and GAL as evident by the fibrillar morphology or high ThT fluorescence intensity at 480 nm. Values represent mean ± SD for n = 2 independent experiments. The statistical significance (***p ≤ 0.001) is calculated by one-way ANOVA followed by the SNK post hoc test with a 95% confidence interval.
 
 To explore these possibilities, we asked whether two hormones with completely different sequences, length and without any sequence similarity/identity (Figure 2—figure supplement 1) can co-assemble to form hybrid fibrils. To do this, we mixed the 1:1 molar ratio of both the hormones, incubated at 37 °C, and probed the amyloid formation by Thioflavin T (ThT) binding and CD spectroscopy for 15 days (Figure 2b, Figure 2—figure supplement 1). As a control, both hormones were incubated alone. Since PRL and GAL are known to form amyloid in presence of specific glycosaminoglycans such as chondroitin sulfate A (CSA) and Heparin (Hep) (Maji et al., 2009a), we also incubated both the hormones in presence of their respective glycosaminoglycans as positive controls. As expected, both PRL and GAL showed fibril formation in the presence of CSA and Hep, respectively. No ThT binding was observed by either PRL or GAL in absence of glycosaminoglycans (Figure 2b, Figure 2—figure supplement 1).
 
@@ -62,11 +94,35 @@ To further analyze whether both PRL and GAL are part of the same insoluble fibri
 
 Since 400 µM (each) PRL-GAL could undergo aggregation even in the absence of any helper molecules, we wanted to understand the optimum concentration and stoichiometry for PRL-GAL co-aggregation. To do this, we chose increasing concentration of PRL and GAL in an orthogonal (X-Y axis) manner (from 100 to 600 µM, each) (Figure 2j, Figure 2—figure supplement 4). All combinations of this concentration regime of hormone mixture were incubated for 15 days. We observed that amyloid fibril formation only occurred (within a feasible experimental timeframe [15 days]) as determined by ThT binding and electron microscope study (Figure 2j, Figure 2—figure supplement 4) when the concentration of each hormone PRL and/or GAL was kept ≥400 µM. The equal molar ratio of PRL: GAL and above 400 µM concentration of each hormone showed fibril formation. However, if any of the components (PRL or GAL) was taken below 400 µM, we could not observe fibril formation. Therefore, the area of the fibril space would be at a 1:1 ratio with little deviation on either side provided that the minimum concentration of each of PRL and GAL is 400 µM.
 
-## Cross-seeding of PRL and GAL
+### Cross-seeding of PRL and GAL
 
 Amyloid aggregation is a nucleation-dependent polymerization process (Wood et al., 1999; Srivastava et al., 2019). It is well-known fact that the presence of preformed nuclei of amyloid (also called ‘seeds’) greatly affects the kinetics of aggregation of monomers (Daskalov et al., 2021; Ren et al., 2019; Morales et al., 2013). Since PRL and GAL co-aggregate into mixed amyloids, we asked whether both PRL and GAL could cross-seed (Daskalov et al., 2021; Ren et al., 2019; Morales et al., 2013; Ivanova et al., 2021; Hartman, 2013) to induce amyloid aggregation of each other and help their possible storage in SGs. To understand this in detail, we performed both homotypic (PRL monomer+ PRL seed; GAL monomer+ GAL seed) and heterotypic seeding (PRL monomer+ GAL seed and GAL monomer+ PRL seed).
 
 The preformed fibrils were sonicated to obtain PRL and GAL amyloid fibril seeds (see materials and methods). One percent, 2%, and 5% (v/v) of PRL and GAL seeds were mixed with freshly prepared 400 µM PRL and GAL, respectively, and incubated with slight agitation at 37 °C for homotypic seeding (Figure 3b, Figure 3—figure supplement 1). Our ThT fluorescence data showed accelerated aggregation by both PRL and GAL for homotypic seeding as lag time decreased significantly in the presence of 2% and 5% seeds (Figure 3b and e). However, 1% seed did not show any fibril formation for both PRL as well as GAL (Figure 3b, Figure 3—figure supplement 1) even after 10 days of incubation. Fibril formation via homotypic seeding mechanism was further supported by TEM imaging and time-dependent CD spectroscopic measurements (Figure 3b–c, Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig3-v2.jpg)
+
+**Figure 3.:** (a) Schematic showing possible homo and hetero seeding with fibril elongation and surface-mediated secondary nucleation mechanism for seed-mediated fibril growth. (b–c) Homo-seeding of PRL and GAL. (Left panel) PRL and GAL homo-seeding. Normalized ThT fluorescence intensity values with time indicating aggregation of PRL/GAL and in the presence of different concentrations of PRL seeds and GAL seeds respectively (2% and 5% v/v). Only seeds and only PRL/GAL was used as controls. (Right panel) The corresponding EM images of PRL/GAL seeds alone and PRL/GAL monomer in presence of 5% PRL/GAL seeds showing fibrils formation by PRL/GAL homo-seeding. (d) Cross-seeding of PRL and GAL. (Left panel) Normalized ThT fluorescence intensity values with time indicating aggregation of GAL in the presence of different concentrations of PRL seeds (1%, 2%, and 5% v/v). However, PRL in presence of different percentages of GAL seeds does not show any aggregation (Right panel). Only seed and only GAL/PRL were used as controls where no aggregation is observed. (e) The lag times of GAL aggregation in presence of 2% and 5% (v/v) PRL seeds and GAL seeds are compared. The values represent mean ± SEM. The significance (***p ≤ 0.001) is calculated using one-way ANOVA followed by an SNK post hoc test with a 95% confidence interval. (f) TEM images of GAL fibrils formed in presence of PRL seeds are shown. GAL fibrils formed in presence of 5% (v/v) PRL seeds are analyzed for frequency distribution (red arrows indicating the diameter of the fibrils measured for analysis). (g) (Left panel) Normalized frequency distribution of fibril diameter showing GAL fibrils formed in presence of PRL seeds have a similar diameter to GAL-Hep fibrils. A total of 200 random data points from different individual fibrils were collected from n = 3 independent experiments for the frequency distribution analysis. (Right panel) Average values of different fibril diameters are shown. Values represent mean ± SD. The statistical significance (***p ≤ 0.001, **p ≤ 0.01) is calculated by one-way ANOVA followed by an SNK post hoc test with a 95% confidence interval. (h) FTIR spectra showing fibrils of GAL +5% GAL seed and GAL +5% PRL seed are of similar secondary structure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) TEM images showing the presence of amyloid fibrils of GAL when seeded with 1% and 2% (v/v) PRL seeds, respectively, and presence of amyloid fibrils of PRL and GAL when seeded with 2% (v/v) PRL and GAL seeds, respectively. (b) Median values of different fibril diameters are shown with violin plots. (c) CD spectra show the change in molar ellipticity of α-helical secondary structure of PRL in the presence of 2% and 5% PRL seeds, whereas 1% PRL seeds show no change in secondary structure. 5% PRL seed and PRL alone retain their secondary structure after incubation. (d) CD spectra show the change in GAL secondary structure from RC to β-sheet in presence of 2% and 5% GAL seeds; whereas 1% GAL seeds show no change in secondary structure. Only 5% GAL seed and GAL alone sample retain their secondary structure after incubation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) CD spectra showing no change in the α-helical secondary structure of PRL in the presence of a different concentration of GAL seeds (1%, 2%, and 5%). (b) TEM images show no fibril formation by PRL in the presence of 1%, 2%, and 5% GAL seeds. The scale bar is 200 nm as shown. (c) CD spectra showing changes in the secondary structure of GAL from RC to β-sheet in presence of different PRL seed (1%, 2%, and 5%) concentrations.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) ThT fluorescence intensity values with time indicating no aggregation of PRL or GAL in presence of different concentrations of PRL-GAL co-fibrils seeds (1%, 2%, and 5% v/v). Only PRL-GAL seed and PRL/GAL monomer act as controls, which also showed no significant ThT binding. (b) CD spectra showing no change in the α-helical secondary structure of PRL or random-coil structure of GAL in presence of different concentrations of PRL-GAL co-fibril seeds (1%, 2%, and 5%) over time.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** TEM images show no fibril formation by either PRL or GAL in presence of 1%, 2%, and 5% PRL-GAL seeds. TEM images of 5% PRL-GAL seeds and GAL +5% GAL-Hep seeds (as positive control) were shown. The scale bar is 200 nm as shown.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Global fitting of the normalized aggregation kinetics data using Amylofit for PRL seeded (1%, 2%, and 5%) aggregation of GAL monomer. Data shown to be satisfactorily fitted using secondary nucleation model comprising elongation and surface catalyzed secondary nucleation (Left panel) but not to the nucleation elongation model (Right panel). This is further supported by the relatively lower mean residual error (M.R.E.) in the surface-mediated secondary nucleation model compared to the nucleation elongation model.
 
 Similar experiments were done where various concentrations of PRL seeds were mixed with GAL monomer and GAL seeds were mixed with PRL monomer (heterotypic seeding). We hypothesized two possibilities of secondary nucleation (Linse, 2017)—the heterotypic monomers can be recruited at the ends of the seeds and facilitate the growth of amyloid fibril (elongation) or the seed surface will help in the nucleation of the heterotypic monomer (Linse, 2017; Figure 3a). Our data showed that GAL aggregation was accelerated with PRL seeds in a concentration-dependent manner (Figure 3d, left panel). Surprisingly, we observed no ThT fluorescence for all seed concentrations even after 10 days of incubation when GAL seeds were incubated with PRL monomers, indicating that GAL fibrils are incapable of inducing amyloid fibril formation of PRL monomers (Figure 3d, right panel). This was also evident with CD spectroscopic measurements (Figure 3—figure supplement 2). Interestingly, no aggregation was observed when PRL/GAL monomer was incubated in presence of different percentages of PRL-GAL mixed fibril seeds (1%, 2%, and 5%) as confirmed by CD spectroscopy, ThT fluorescence, and TEM imaging (Figure 3—figure supplements 3–4). This suggests that seeding (both homo and hetero) event is very specific for the life cycle of PRL/GAL amyloid formation in SGs. Important to note that these homotypic and heterotypic seeding studies were done in the absence of any helper glycosaminoglycans molecules. When lag times were compared, the heterotypic seeding rate was significantly higher than homotypic seeding for GAL aggregation suggesting surface-mediated secondary nucleation might be triggering GAL aggregation in the presence of PRL seeds (Koloteva-Levine et al., 2020; Figure 3e).
 
@@ -74,9 +130,29 @@ To further understand whether PRL seeds engage the GAL monomer for secondary nuc
 
 We also performed the global fitting analysis of the PRL-GAL cross-seeding kinetics data at different PRL seed concentrations (1%, 2%, and 5%) using Amylofit (Meisl et al., 2016) (version 2.0), which has been extensively used to identify the underlying mechanism behind the kinetics of amyloid aggregation (Kumari et al., 2021; Andreasen et al., 2019; Rasmussen et al., 2019; Frankel et al., 2019). We observed the data poorly fit with the ‘nucleation-elongation model’, which exclusively considers primary nucleation and elongation steps. However, the kinetics data of GAL aggregation in presence of various PRL seeds (1%, 2%, and 5%) could be satisfactorily fit with the secondary nucleation model, which considers surface catalyzed secondary nucleation, along with classical elongation. Further, the mean residual error (M.R.E.) in fitting in the elongation mechanism was observed to be higher compared to the fitting using the model with surface catalyzed secondary nucleation. The fitting data, therefore, is in line with our hypothesis of surface-mediated amyloid assembly playing a dominant role in the aggregation mechanism of GAL in the presence of PRL seed (Figure 3—figure supplement 5).
 
-## Specific interactions of PRL and GAL leading to amyloid aggregation
+### Specific interactions of PRL and GAL leading to amyloid aggregation
 
 Next, we wanted to further investigate if interactions leading to co-aggregation and amyloid formation of PRL and GAL are specific to themselves. To do this, we co-incubated PRL with adrenocorticotropic hormone (ACTH) as this hormone is of similar length to GAL and does not form amyloid by itself (Maji et al., 2009a; Ranganathan et al., 2012). Similarly, GAL was also incubated with growth hormone (GH), a hormone structurally and functionally related to PRL (Schmidt et al., 1991; Nilsson et al., 2001; ). ThT aggregation kinetics and CD spectroscopy were performed at the beginning of the aggregation (day 0) and after 15 days of incubation for both PRL-ACTH and GAL-GH. Our data showed negligible ThT fluorescence for both PRL-ACTH and GAL-GH even after 15 days (Figure 4a) suggesting no co-aggregation. This observation was consistent with no structural conversion observed in CD and TEM, where the PRL-ACTH and GH-GAL mixtures were devoid of any fibrils (Figure 4b, Figure 4—figure supplement 1). Overall, our observations suggest that interaction and co-aggregation/amyloid formation by PRL and GAL are specific and are mutually beneficial for the storage of these hormones in SGs. This specific co-aggregation of PRL and GAL could be due to their favorable interaction when the monomeric hormone is mixed together. This is further evident from the surface plasmon resonance (SPR) study, where GAL monomers were immobilized on a CM-5 chip and a range of concentrations of PRL monomeric protein was passed over it. We observed a significant increase in the response unit (RU) indicating binding of PRL to GAL (Figure 4c, Figure 4—figure supplement 2). The relative dissociation constant (KD) was calculated to be 4.1 × 10–7 M, which indicates the binding of PRL with GAL (Figure 4c). In comparison, we observed no significant binding when ACTH was passed through immobilized PRL or when GH was passed through immobilized GAL, which could be due to low but non-specific transient interactions between GH-GAL and PRL-ACTH (Figure 4c). This suggests that PRL monomers can readily bind GAL monomers, possibly contributing to their initial interaction that eventually drives the synergistic aggregation and amyloid formation. To further experimentally verify the specificity of PRL-GAL interaction, which is responsible for their co-aggregation and co-storage, we chose another combination of hormones (GH and ACTH), which generally expressed in anterior pituitary for their possible co-localization in the SGs of the female rat. Using the double immunofluorescence study, we found that GH and ACTH do not co-localize with each other (Figure 4d). The data suggest that specific interaction between two hormones might dictate their co-aggregation and co-storage irrespective of several hormones, which are present inside the anterior pituitary of the female rat.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig4-v2.jpg)
+
+**Figure 4.:** (a) Comparative ThT fluorescence showing amyloid formation by different pairs of hormones at days 0 and 15. PRL-CSA, GAL-Hep, PRL-GAL showed the highest ThT fluorescence signals after 15 days of incubation. Values represent mean ± SEM for n = 3 independent experiments. The statistical significance is calculated between day 0 and day 15 for each sample using a t-test. (b) The morphology observed under TEM for various hormones and the mixture of hormone samples is shown (after 15 days of incubation). Amorphous structures are seen for PRL-ACTH and GAL-GH; whereas PRL-GAL, PRL-CSA, GAL-Hep showed fibrillar morphology similar to amyloids. The experiment is performed three times with similar observations. (c) (Left panel) Surface Plasmon Resonance (SPR) spectra showing strong binding of PRL on immobilized GAL compared to other pairs of hormones. (Right panel) The dissociation constant (KD) of PRL to GAL showing strong interaction between PRL and GAL for their co-aggregation and co-storage. The experiments are performed three times with similar results. (d) Double immunofluorescence microscopic images of the anterior pituitary of female rats showing ACTH (red) and GH (green) expressing cells. The merged microscopic image (right) shows no co-localization of ACTH (red) and GH (green). The data indicate that ACTH and GH are not co-stored in the female rat anterior pituitary. The experiments were performed three times with similar observations. (e) Snapshot from in silico analysis (MD simulation) of PRL-GAL complex 1 using GROMOS 53a6 force field (when GAL is docked near residues 18–28 of PRL). (f) Snapshot showing MD simulation of PRL-GAL complex 2 (when GAL is docked near residues 80–88 of PRL) using GROMOS 53a6 force field. Complex 1 induced the formation of an antiparallel β-sheet at the PRL-GAL interface (6–8 PRL and 24–26 GAL) and also an intra-molecular parallel β-sheet in PRL itself (59–61 PRL and 149–151 PRL). Complex 2 shows the formation of a parallel β-sheet constituted by the β-strand from PRL and GAL (145–147 PRL and 4–6 GAL). (g) Snapshot of MD simulation of complex 2 using Amber ff99SB force field showing the appearance of parallel β-sheet at 147–149 residue of PRL and 2–4 residue of GAL. The snap-shot of complex 1 is included in Figure 4—figure supplement 3. (h) A point mutation is introduced in the PRL of the complex 2 structure, which is Y147P to examine if there is a loss in the β-sheet formation. The initial structure of the complex had the β-sheet formed between residues 147–149 of PRL and residues 2–4 of GAL (Left panel), which went missing during the 400 ns MD simulation run of the mutated system (right panel).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** CD spectra show no significant secondary structural transformation of PRL-ACTH and GAL-GH indicating no synergistic aggregation of these hormone pairs. The experiment is performed three times with similar results.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The SPR plot shows a relatively strong interaction between PRL-GAL (higher response unit) in comparison to PRL-ACTH (lower response unit) and GH-GAL (lower response unit). The different color SPR spectrum indicated different concentrations of analytes, whereas other hormones in the pair were immobilized to the SPR chip. The thick line indicates the original spectrum and the corresponding thin line indicates the fitted spectra.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a–b) Structures of PRL-GAL docked complexes from protein-protein docking studies, which were subsequently used as the starting structures for MD simulations. The two lowest energy PRL-GAL complexes as obtained from docking studies are defined as follows – complex 1: GAL docked at PRL residues 18–28 (blue); complex 2: GAL docked at PRL residues 80–88 (orange). GAL is shown in green and PRL helices are shown in cyan and loops-coils are in magenta. (c) Snapshots from MD simulations of individual PRL. (d) Snapshots from MD simulations of individual GAL. (e) The structure of complex 1 shows no change in either of the PRL/GAL structures after simulation using amber ff99SB force field.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** MD simulation results are shown when - (a) GAL residues 2–5 (WTLN) are mutated to alanine (b) PRL residues 146–149 (IYPV) are mutated to alanine (c) N-terminal GAL residues 1–2 (GW) were deleted. The initial structure of the complex (complex 2 from AMBER) had the β-sheet formed between residues 147–149 of PRL and residues 2–4 of GAL (Left panel), which is missing in the mutated/deleted systems after 400/100 ns of simulations (Right panel).
 
 To understand the mechanism of PRL and GAL interactions at the atomic level, docking, and molecular dynamics (MD) simulation studies were performed. GAL was docked at two different regions of PRL that showed high TANGO score (Figure 1b and c). Thus, two sets of PRL-GAL complexes were generated (a) Set 1: GAL was docked near residues 18–28 of PRL and (b) Set 2: GAL was docked near residues 80–88 of PRL. The lowest energy docked complexes from each set, named complex 1 and complex 2 respectively, were obtained (Figure 4—figure supplement 3). Both these complexes were then subjected to independent 250 ns long MD simulations to examine their stability. Since the choice of force fields may play an important role in the MD simulation results (Cino et al., 2012), we performed MD simulations with two different force fields – GROMOS 53a6 force field (Oostenbrink et al., 2004) and Amber ff99SB force field (Tian et al., 2020). As controls, we have also simulated individual PRL and GAL proteins. We observed that the PRL and GAL alone did not show any noticeable structural changes (Figure 4—figure supplement 3) during simulation time.
 
@@ -88,13 +164,13 @@ In the other two cases, we introduced a point mutation in PRL as Y147P, since pr
 
 We further simulate the systems for 400 ns (150 ns for two residues deletion in GAL) after introducing these changes. Interestingly, in all the cases (Case 1 to Case 4), we observed loss of interactions (H-bonds) at the PRL-GAL interface, which eventually led to the loss of β-sheet structures (Figure 4h, Figure 4—figure supplement 4). It is worth mentioning here that a single mutation in PRL (Y147P; Case 3) was sufficient to disrupt the secondary structure formation, suggesting its key role in inducing the formation of β-sheet during co-aggregation of PRL and GAL (Figure 4h). Thus, the MD simulation results convincingly show that mutation or deletion at the PRL-GAL interface could result in the loss of β-sheet formation, which eventually affects the PRL-GAL co-aggregation.
 
-## Release of functional PRL and GAL from PRL-GAL amyloids
+### Release of functional PRL and GAL from PRL-GAL amyloids
 
 Protein/peptide misfolding and aggregation lead to irreversible amyloid formation, which is stable and does not readily disassemble to monomer. However, many studies recently showed the release of monomers and oligomers from disease-associated amyloids (Bemporad and Chiti, 2012; Cascella et al., 2021). In contrast, amyloid formation related to SGs biogenesis is reversible and should be able to release functional monomers in the extracellular space for their function (Maji et al., 2009a; Jacob et al., 2016; Anoop et al., 2014). To address whether any functional advantage of co-aggregation over homotypic aggregation by PRL and GAL, we determined the relative monomer release capability of PRL/GAL monomer, and PRL-GAL co-amyloids; along with preformed fibrils of PRL (in the presence of CSA) and GAL (in the presence of Hep) using dialysis method (Maji et al., 2009a; Jacob et al., 2016; Anoop et al., 2014). The concentration of released monomers (if any) in the dialysate was measured by UV-Vis spectroscopy at different time points. Intriguingly, we found that PRL-CSA, GAL-Hep, and PRL-GAL amyloids could indeed release monomers with time (Figure 5a). Interestingly, the amyloid fibrils of PRL and GAL formed in presence of glycosaminoglycans (CSA and Hep, respectively) released monomeric hormones in a slow and sustained manner upon dilution in 10 mM Tris-HCl, pH 7.4 (Figure 5a).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73835/elife-73835-fig5-v2.jpg)
 
-**Figure 5.:** (a) The kinetics of monomer release from various amyloids showing the continuous release of monomeric hormones. The experiment is performed three times with similar results. Values represent mean ± SEM for n = 3 independent experiments. (b) Saturation concentrations of different released monomers from fibrils along with the monomeric controls are shown. Values represent mean ± SEM for n = 3 independent experiments. (c) The secondary structure of released monomers showing their corresponding native secondary structures as confirmed by the CD. (d) Nb2 cell proliferation study showing biological activity of released PRL from either PRL-CSA or PRL-GAL fibrils. Freshly dissolved protein was used as a control. Values represent mean ± SEM for n = 3 independent experiments. (e) EC50 values showing the released PRL monomers have similar bioactivity compared to freshly dissolved monomeric PRL. Values represent mean ± SEM for n = 3 independent experiments.Figure 5—source data 1.
+**Figure 5.:** (a) The kinetics of monomer release from various amyloids showing the continuous release of monomeric hormones. The experiment is performed three times with similar results. Values represent mean ± SEM for n = 3 independent experiments. (b) Saturation concentrations of different released monomers from fibrils along with the monomeric controls are shown. Values represent mean ± SEM for n = 3 independent experiments. (c) The secondary structure of released monomers showing their corresponding native secondary structures as confirmed by the CD. (d) Nb2 cell proliferation study showing biological activity of released PRL from either PRL-CSA or PRL-GAL fibrils. Freshly dissolved protein was used as a control. Values represent mean ± SEM for n = 3 independent experiments. (e) EC50 values showing the released PRL monomers have similar bioactivity compared to freshly dissolved monomeric PRL. Values represent mean ± SEM for n = 3 independent experiments.
 
 However, the release of monomeric PRL and GAL hormones from the co-aggregated PRL-GAL fibril was faster compared to the PRL and GAL released from their glycosaminoglycans-mediated fibrils. This was confirmed by their release profile as well as saturation concentrations (Figure 5a–b). CD spectroscopy of the dialysate showed that the released PRL monomer retained its native conformation (Figure 5c).
 
@@ -102,7 +178,7 @@ Next, we performed the cell proliferation assay with the released PRL monomer to
 
 ## Discussion
 
-## PRL-GAL co-storage is facilitated by their co-aggregation
+### PRL-GAL co-storage is facilitated by their co-aggregation
 
 Amyloids are ordered protein aggregates comprised of cross-β-sheet motifs where β-sheets are parallel, and individual β-strands are perpendicular to the fibril axis (Sunde et al., 1997; Maji et al., 2009b). Despite their association with diseases, amyloids are also known to be involved in the native functions of host organisms including mammals (Chiti and Dobson, 2006; Fowler et al., 2007). Interestingly, the synergistic amyloid formation through co-aggregation and cross seeding by heterologous proteins/peptides is also evident in the disease-associated proteins such as α-Synuclein-Tau (Waxman and Giasson, 2011; Moussaud et al., 2014), α-Synuclein-amyloid β (Köppen et al., 2020; Bassil et al., 2020). However, these mechanisms are still elusive for functional amyloids despite their relevance in hormone co-storage and co-release from SGs. Here, we explored the synergistic aggregation and amyloid formation by two human hormones PRL and GAL, which are highly relevant in SGs biogenesis. Although 23 kDa PRL (Teilum et al., 2005; Keeler et al., 2003) (mostly helical) has no resemblance of sequence, length, and structure with unstructured 3.1 kDa GAL (Evans and Shine, 1991; Bersani et al., 1991), it was reported that both of these hormones are co-stored in the lactotrophs of the anterior pituitary in the female rats (Hyde et al., 1991; Steel et al., 1989). Moreover, their release is also modulated by the same secretagogues (Koshiyama et al., 1987; Murakami et al., 1993; Koshiyama et al., 1990b). Co-storage and co-release of PRL and GAL suggest that these hormones might aggregate together to form amyloids within the same SGs. Our immunofluorescence study with female rat anterior pituitary tissue probed that not only both PRL and GAL are colocalized together; they are indeed in the amyloid form as suggested by OC and ThioS staining (Figure 1 and Figure 1—figure supplement 1). Interestingly when PRL and GAL were co-incubated with a 1:1 or higher molar ratio in vitro, they co-aggregated synergistically to form amyloid fibrils in conditions similar to their storage in SGs without the requirement of any helper molecules (Reggio and Palade, 1978; Zanini et al., 1980).
 
@@ -112,7 +188,7 @@ Co-aggregation can happen in a scenario where PRL and GAL can promote the aggreg
 
 **Figure 6.:** PRL and GAL form the amyloid fibrils in the presence of specific glycosaminoglycans (CSA and Hep, respectively), which can be auto-catalytically amplified by their respective seeding with preformed fibrils. This seeding however does not require any glycosaminoglycans. PRL-GAL also synergistically co-aggregate to form hybrid amyloid fibrils, which are not capable of seeding either to PRL or GAL. These amyloid fibril species can together or individually reconstitute the SGs of PRL-GA storage, which can release functional PRL and GAL into the extracellular space.
 
-## Unidirectional cross seeding of GAL by PRL fibril seeds: The possible facilitator of GAL storage in SG
+### Unidirectional cross seeding of GAL by PRL fibril seeds: The possible facilitator of GAL storage in SG
 
 Homologous seeding of amyloid aggregation is relatively more abundant in nature due to quick and feasible templating mechanism involving a single protein, which decreases the lag time for aggregation (Eden et al., 2015; Arosio et al., 2015). Although heterogeneous seeds can also provide template/surface for a different protein/peptide to initiate their aggregation (cross-seeding), this phenomenon is less abundant because of high thermodynamic and conformational barrier between the two different protein/peptides (Daskalov et al., 2021; Ivanova et al., 2021; Hartman, 2013). It was shown that sequence similarity between two amyloidogenic proteins is crucial for their cross seeding capability (Krebs et al., 2004). However, the ability of cross seeding also depends on the conformation of the seed and its compatibility with the monomeric protein, which creates different cross seeding barrier (Daskalov et al., 2021; Ren et al., 2019; Walker et al., 2013) (also species barrier for prion diseases).
 
@@ -124,7 +200,7 @@ In contrast, GAL being a short neuropeptide has the conformational flexibility t
 
 We hypothesized that specific interaction between GAL and PRL synergistically facilitates their aggregation into amyloid. This is further evident from the SPR analysis showing strong interaction and direct binding between the monomeric forms of PRL and GAL in contrast to the other hormone pair, PRL-ACTH or GH-GAL (Figure 4). PRL-GAL interaction and conformational transition are further supported using in silico study, which showed interaction of the PRL N-terminal loop and GAL, where GAL promotes the conformational transition of the N-terminus of PRL into the β-sheet structure (Figure 4). The interaction of PRL and GAL is mandatory for their aggregation, as no amyloid fibril formation was observed when PRL and GAL were incubated alone.
 
-## Functional implications of PRL-GAL co-aggregation and unidirectional cross-seeding
+### Functional implications of PRL-GAL co-aggregation and unidirectional cross-seeding
 
 Our study probes that PRL-GAL co-aggregation is one of the key mechanisms for PRL and GAL storage inside the SGs and their subsequent release as functional hormones. PRL and GAL can also undergo homotypic aggregation in the presence of specific glycosaminoglycans like CSA or Hep, respectively. However, homotypic aggregation might not be sufficient for PRL/GAL protein homeostasis in the anterior pituitary especially during lactation in females, which could be achieved by PRL-GAL co-aggregation (Figure 2). It is known that PRL and GAL are co-stored in the lactotrophs of the female rat anterior pituitary (Hyde et al., 1991; Steel et al., 1989). Peptide hormone GAL is known to be highly expressed in the hypothalamus and performs various tropic activities including regulating the secretion of other neuropeptide hormones and neuronal differentiation (Lundström et al., 2005). Interestingly, GAL overexpression in the anterior pituitary during lactation is known to regulate PRL expression, storage, and release (Kaplan et al., 1988). Storing a high amount of PRL in the anterior pituitary during lactation is also important for the development of lactotrophs (Wynick et al., 1998). This is evident as the loss of function mutation in the endogenous GAL gene in mice has shown a drastic decrease in PRL level compared to the wild-type control mice (Wynick et al., 1998). This was accompanied by reduced PRL secretion, failure in mammary gland maturation, and loss of lactotroph proliferation upon estrogen treatment in the mutant mice (Wynick et al., 1998). On the other hand, estrogen treatment enhanced the GAL mRNA by several orders of magnitude (Wynick et al., 1993), which was subsequently shown to be highly effective for lactotroph proliferation and subsequent PRL production and release (Wynick et al., 1993). However, functional implications due to the loss of PRL-synthesis/function for GAL storage and its release are yet to be established.
 
@@ -140,67 +216,197 @@ Overall, the current study demonstrates that contrary to disease-associated co-a
 
 ## Materials and methods
 
-## Chemicals and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>Nb2 cells (rat lymphoma cells)</td>
+      <td>PMID:27277580Kind gift from Prof. Amulya K. Panda, National Institute of Immunology, New Delhi</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Rattus norvegicus)</td>
+      <td>Rat pituitary tissue sections (Adult Sprague-Dawley rats)</td>
+      <td>NISER BhubaneswarInstitutional Animal Ethical Committee (IAEC) at NISER, Bhubaneswar</td>
+      <td>Protocol Numbers: NISER/SBS/AH-210 and NISER/SBS/AH-212</td>
+      <td>Approved by the Committee for the Purpose of Control and Supervision of Experiments for Animals (CPCSEA), New Delhi, India</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PRL(guinea pig polyclonal)</td>
+      <td>A.F. Parlow,National Hormone and Pituitary Program (NHPP)</td>
+      <td>AFP7192490</td>
+      <td>1: 1500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAL(mouse polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab216399</td>
+      <td>1:1500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OC antibody(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab126468</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit FITC (polyclonal)</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>65–6111</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse FITC (polyclonal)</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>31,569</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-guinea pig Alexa Fluor 555 (polyclonal)</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>A21435</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACTH (rabbit polyclonal)</td>
+      <td>PMID:22403619Kind gift from A.F. Parlow,National Hormone and Pituitary Program (NHPP)</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GH(goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF1566</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor-594 anti-rabbit (polyclonal)</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>A-21207</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa fluor 555 (polyclonal)</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>A32727</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa fluor 488 anti goat (polyclonal)</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>A-11055</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Galanin</td>
+      <td>USV Limited (Mumbai, India)</td>
+      <td>Custom synthesis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KaleidaGraph</td>
+      <td></td>
+      <td>Version 4.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals and reagents
 
 The chemicals were obtained from Sigma Chemicals or other sources with the highest purity available.
 
-## Expression and Purification of human prolactin (PRL)
+### Expression and Purification of human prolactin (PRL)
 
 PRL was expressed as per the protocol reported (Sankoorikal et al., 2002) with little modification. The human PRL plasmid was obtained as a kind gift from Prof. Dannies and Prof. Hodsdon from Yale University. BL21 (DE3) E. coli cells were transformed with the human PRL gene encoded in the pT7L plasmid and were made to grow in terrific broth (TB) followed by IPTG induction for 4 hr. After harvesting the cells at 8000 rpm for 20 min, the pellet was dispersed in 20 mM Tris-HCl, pH 8.0 (with added protease inhibitor cocktail, Roche). After that, the cells were sonicated (2 s on, 1 s off at 50% amplitude) for 20 min to complete cell-lysis, which was then centrifuged at 15,000 rpm for half an hour to recover the inclusion bodies (IB). The cell pellet containing IBs was subsequently washed two times with 0.5% triton-X and then it was dissolved in urea (8 M) with 2% (v/v) β-mercaptoethanol. The solution was then dialyzed against 20 mM Tris-HCl, pH 8.0 so that the PRL protein refolds to its native state. After dialysis, the protein solution was again centrifuged at 15,000 rpm for 1 hr and was loaded in an anion exchange column (Resource Q, GE healthcare) through an AKTA purifier FPLC system (Cytiva). The protein was eluted through NaCl (1 M) gradient and subsequently lyophilized after snap-freezing in liquid nitrogen. Size exclusion profile (SEC) suggested the protein is monomeric in nature and the purity of the protein is further checked by SDS-PAGE and MALDI-TOF spectrometry. CD spectroscopy was also performed to confirm that the purified PRL has refolded to its native helical conformation.
 
-## Aggregation of PRL and GAL in the presence of glycosaminoglycans
+### Aggregation of PRL and GAL in the presence of glycosaminoglycans
 
 PRL was dissolved in Milli-Q water and buffer exchanged to 20 mM phosphate buffer with 100 mM NaCl, pH 6.0, 0.01% sodium azide using 10 kDa mini dialysis units (Thermo Scientific Slide-A-Lyzer). 5 mM solution of CSA (Sigma, USA) was prepared in the same buffer, and appropriately mixed with PRL to obtain an ultimate concentration of 400 μM for both PRL and CSA. Similarly, for GAL aggregation in the presence of Hep, GAL peptide was dissolved in 20 mM phosphate buffer containing 100 mM NaCl, pH 6.0, 0.01% sodium azide to obtain a concentration of 500 μM. Hep solution from a stock of 5 mM (made in the same buffer) was then mixed with GAL solution to obtain an ultimate concentration of 400 μM for both GAL and Hep. These tubes containing PRL and GAL of various mixtures were kept into an Echo Thermmodel RT11 rotating mixture with a speed of 50 rpm for 15 days inside a 37 °C incubator. As a control, 400 μM PRL and GAL alone in the same buffer, was also incubated in a similar condition. The secondary structural transition was monitored by CD spectroscopy and amyloid formation by ThT binding assay at various time points. Finally, Congo red (CR) binding studies and TEM imaging was used to confirm amyloid fibril formation.
 
-## Co-Aggregation study of PRL and GAL
+### Co-Aggregation study of PRL and GAL
 
 For the co-aggregation study, PRL was dissolved in Milli-Q water and buffer exchanged to 20 mM phosphate buffer with 100 mM NaCl, pH 6.0, 0.01% sodium azide using 10 kDa mini dialysis units (final concentration was 800 μM) (Thermo Scientific Slide-A-Lyzer). GAL was also dissolved in the same buffer to obtain an 800 µM solution. After that, each of the solutions was mixed to obtain 400 µM of PRL-GAL mix and was incubated with slight agitation at 37 °C for 2 weeks. 400 µM of each PRL and GAL was incubated alone as controls. For co-aggregation of PRL and GAL with other hormones, separate solutions of PRL, GAL, GH, and ACTH were freshly dissolved and prepared in identical solution condition as above. Each solution was mixed to obtain 400 µM each of PRL-ACTH and GAL-GH mixture and was incubated with slight agitation at 37 °C for 2 weeks. A total of 400 µM of each of PRL, GAL, GH, and ACTH were also incubated alone as controls. The secondary structural transition and amyloid formation of the incubated solutions were monitored by CD spectroscopy and ThT-binding assay during various time points. After 15 days of incubation, the morphology of the incubated samples was analyzed by TEM.
 
-## Circular dichroism spectroscopy (CD)
+### Circular dichroism spectroscopy (CD)
 
 For CD measurement, protein/peptide aliquots were diluted in 20 mM phosphate buffer with 100 mM NaCl, pH 6.0, 0.01% sodium azide to 200 μl and the final concentration protein/peptide was 10 μM. CD spectra were taken using a JASCO 810 instrument where the sample was loaded in a quartz cell of 0.1 cm path length (Hellma, Forest Hills, NY). Spectra were collected at 198–260 nm wavelength (far UV) at 25 °C. Raw data was processed by smoothening, as per the manufacturer’s instructions. Three independent experiments were performed with each sample.
 
-## Thioflavin T (ThT) binding assay
+### Thioflavin T (ThT) binding assay
 
 To measure ThT binding, PRL and GAL solutions were diluted in the same buffer into 200 μl such that final concentration of each sample was 10 μM. 4μl of 1 mM ThT prepared in 20 mM Tris-HCl buffer, pH 8.0 was added into each sample. ThT fluorescence was probed after the immediate addition of ThT. The fluorescence experiment was carried out in Shimadzu RF5301 PC (Japan), with excitation wavelength at 450 nm and emission wavelength from 460 to 500 nm. For measuring both excitation and emission, the slit width was kept at 5 nm. Three independent experiments were performed for each sample. The fluorescence value at 480 nm were plotted against incubation time, which produces the sigmoidal growth curve of amyloid formation. These curves were then used for lag time calculation.
 
-The lag time (tlag) was calculated as per the published protocol (Willander et al., 2012):(1)y=y0+(ymax−y0)/(1+e−k(t−t1/2))
+The lag time (tlag) was calculated as per the published protocol (Willander et al., 2012):
 
-here y is the ThT fluorescence at any particular time point, ymax is the maximum ThT fluorescence observed and y0 is the ThT fluorescence at t0 (initial time) and tlag was defined by as(2)tlag=t1/2−2/k
+$$
+y=y_{0}+(y_{max}−y_{0})/(1+e^{−k(t−t1/2)})
+$$
 
-## Congo red (CR) binding
+here y is the ThT fluorescence at any particular time point, ymax is the maximum ThT fluorescence observed and y0 is the ThT fluorescence at t0 (initial time) and tlag was defined by as
+
+$$
+t_{lag}=t^{1/2}−2/k
+$$
+
+### Congo red (CR) binding
 
 A 5 μl aliquot of protein/peptide sample was added into 80 μl of 5 mM potassium phosphate buffer containing 10% ethanol. A total of 100 μM CR solutions were prepared in 5 mM phosphate (containing 10% ethanol) and 15 μl of the solution was added to the sample. After incubating for 15 min in dark, absorption spectra were taken from 300 to 700 nm (JASCO V-650 spectrophotometer). For control, CR solution without protein was also measured. Three independent experiments were performed for each sample.
 
-## CR birefringence study
+### CR birefringence study
 
 Protein fibrils were obtained by ultracentrifuging the fibril solution at 95,000 rpm for 1 hour followed by washing with Milli-Q water. The fibrils were mixed in 100 μl of alkaline sodium chloride solution for 20 min with vortexing, to ensure uniform mixing of all fibrils in solution. The mixture was further centrifuged and pellet fractions were stained with alkaline CR solution for 20 min with vortexing. After that, mixtures were again centrifuged at 95,000 rpm for 1 hr, and pellets were washed two times by 500 μl of 20% ethanol. The pellets were then resuspended in PBS and spotted onto glass slides and subjected to air-drying at room temperature. The slides were observed using a microscope (Olympus SZ61 stereo zoom) attached with two polarizers and a camera.
 
-## Immunoelectron microscopy
+### Immunoelectron microscopy
 
 A total of 10 µl of PRL-GAL or PRL-CSA fibril was spotted onto the TEM grid. Ten µl of rabbit anti-PRL antibody (1:10) and/or mouse anti-GAL antibody (1:10) in PBS was added to the fibrils and was incubated for 1 hr. The excess antibody was removed using filter paper. The grid was subsequently washed thrice with autoclaved Milli-Q water. Anti-mouse secondary antibody conjugated with 10 nm gold particles (1:200) and/or anti-rabbit secondary antibody conjugated with 5 nm gold particles (1:200) was added to the grid and incubated for 30 min. The grid was then washed thrice with Milli-Q water, followed by staining with 1% uranyl formate for 5 min and it was imaged using TEM (CM 200, Netherland), and analyzed using KEEN view software.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 The protein/peptide sample was diluted in Milli-Q water to ~60 μM. Then, the samples were spotted on a carbon-coated, glow-discharged Formvar grid (Electron Microscopy Sciences, Fort Washington, PA) and were kept for incubation for 5 min. The grids were further washed with Milli-Q water and were stained with a 1% (w/v) uranyl formate solution. TEM imaging was done using FEITecnai G2 12 electron microscope at either 120 kV or 200 kV with nominal magnifications in the range of 26,000–60,000. Images were collected by using the SIS Megaview III imaging system. Independent experiments were carried out thrice for each sample.
 
-## X-ray fibril diffraction
+### X-ray fibril diffraction
 
 PRL/GAL fibrils were isolated by ultracentrifugation as mentioned earlier and were loaded into a clean 0.7 mm capillary. The samples in capillary were dried overnight under vacuum. The whole capillary with dried protein was placed in the path of X-ray beam. The dried film of protein was placed in an X-ray beam at 200 K for 120 s exposure. The resulting images were collected using a Rigaku R-Axis IV ++ detector (Rigaku, Japan) kept on a rotating anode. The distance between the sample to the detector was 200 mm and the image files were analyzed and processed using Adxv software.
 
-## FTIR spectroscopy
+### FTIR spectroscopy
 
 For FTIR spectroscopy, isolated fibrils or monomers were spotted onto a thin KBr pellet and were subjected to dry under an IR lamp. Then the spectrum was collected using a Bruker VERTEX 80 spectrometer attached with a DTGS detector at the frequency range of 1800–1500 cm–1, corresponding to amide I stretching frequency, with a resolution limit of 4 cm–1. The recorded spectrum was deconvoluted at the frequency range 1700–1600 cm–1, using Fourier Self Deconvolution (FSD) method and the deconvoluted spectrum was fitted using the Lorentzian curve fitting method using OPUS-65 software (Bruker, Germany) according to the manufacturer’s instructions. Independent sets were performed thrice for each sample.
 
-## Seeding and cross-seeding by different fibril-seeds
+### Seeding and cross-seeding by different fibril-seeds
 
 Amyloid formation by PRL/GAL was confirmed by ThT binding and TEM imaging. After that, various fibrils were collected separately via ultra-centrifugation, and each fibril sample was suspended in 20 mM phosphate buffer, pH 6.0, 100 mM NaCl, 0.01% sodium azide. These fibrils were then subjected to sonication (03 s ‘on’ and 01 s ‘off’ at 20% amplitude) for 10 min to obtain preformed fibril seeds, which were mixed (1%, 2%, and 5% (v/v)) in the respective monomeric protein for homo seeding or to the other protein for cross seeding. The time-dependent aggregation was probed by ThT binding and CD spectroscopy. The ThT fluorescence data for GAL aggregation by PRL seed was fitted using the web-based software interface Amylofit (Meisl et al., 2016). For each seed concentration, triplicate sets of data (from the initial time point to till the plateau of ThT fluorescence), was normalized using Amylofit. Fitting was done using Nucleation Elongation and Secondary Nucleation Dominated models, following guidelines stated by Meisl et al. (Meisl et al., 2016).
 
-## Surface plasmon resonance (SPR) spectroscopy analysis of PRL-GAL interaction
+### Surface plasmon resonance (SPR) spectroscopy analysis of PRL-GAL interaction
 
 GAL was immobilized on to Biacore CM5 sensor chip (GE Healthcare) via amine coupling. To do that, 300 µg/ml of GAL solution was made in 50 mM sodium acetate buffer, pH 5, and was injected at a rate of 10 µl/min for 720 s to achieve a response unit (RU) of 1252 RU. PRL protein was dissolved in 20 mM phosphate buffer containing 100 mM NaCl, pH 6.0 to obtain 1 mM stock solution and was used for preparing different dilutions (7.8, 15.6, 31.2, 62.4, 125, 250, and 500 µM). These solutions were then injected over the immobilized GAL at a flow rate of 45 µl/min for 60 s. The dissociation was initiated at a flow rate of 30 µl/min, and the signal was recorded for 300 s. The chip was further regenerated using a 10 mM NaOH solution. ACTH and GH protein were used to examine the binding with PRL and GAL, respectively using a CM5 chip. For immobilization, 500 µg/ml of ACTH solution was made in 50 mM sodium acetate buffer (pH 4.5). For PRL immobilization, 2 mg/ml of PRL protein in 50 mM sodium acetate buffer (pH 4) was used. A similar range of concentrations was used for ACTH and GH as mentioned before. All the binding experiments were performed at 37 °C. The data were subjected to reference subtraction to compensate for bulk refractive index differences. Further, the buffer system for all the proteins was constant to avoid bulk/viscosity changes. The kinetics data for all protein interactions were fitted using a 1:1 state kinetic model in the Biacore T200 Software. The kon, koff, and KD values were determined for better understanding of the protein-protein interactions. The fitted curves were plotted in the GraphPad Prism Software v8.4.2.
 
-## In silico study of PRL and GAL interaction and co-aggregation
+### In silico study of PRL and GAL interaction and co-aggregation
 
 Protein-protein docking and all-atom molecular dynamics (MD) simulations were used to probe the co-aggregation propensities (if any) and resulting secondary structural transitions in PRL and GAL molecules. For this, the initial structure of PRL was obtained from PDB ID: 1RW5 (Teilum et al., 2005). Since there was no entry for GAL structure in PDB, the GAL structure was built from its primary amino acid sequence and energy minimized. Subsequently, the minimized structure was equilibrated and simulated for 300ns. Initially, GAL was docked at two amyloidogenic regions of PRL (residues 18–28) (set-1) and (residues 80–88) (set-2), which were predicted by TANGO (Fernandez-Escamilla et al., 2004). The docking was performed by the protein-protein docking program, HADDOCK (van Zundert et al., 2016). The lowest energy complexes were extracted from each set, denoted as complex 1 from set-1 and complex 2 from set-2. These two complexes were used as starting structures for the MD simulations. The first sets of simulations were performed using the AMBER16 package with the Amberff99SB force field. The LEAP module of AMBER16 was used to add the hydrogen for the heavy atoms. The complexes were then energy minimized for 2000 steps using the steepest descent and conjugate gradient algorithms. Subsequently, the structures were hydrated in a cubic periodic box extending 9 Å outside the protein-protein complex on all sides with explicit water molecules. The three-site TIP3P model was chosen to describe the water molecules. The charge of each system was neutralized by placing Na+ ions randomly in the simulation boxes. The systems were again minimized to prevent any random contacts formed due to the solvation. All the systems were then equilibrated for 500 ps in NVT ensemble at 300 K followed by one ns in NPT ensemble at 1 atm of pressure. After the density and potential energy of the systems had converged, each complex was subjected to 300 ns of the production run. To further validate our simulations, we performed a new set of simulations using different force fields. Each complex was subjected to a 250 ns simulation using the GROMOS 53a6 force field. The new sets of simulations were performed using the GROMACS package following the above-mentioned protocol. VMD tool was used for visual analysis of the trajectories.
 
@@ -208,14 +414,14 @@ To further strengthen our results from MD simulations, we have performed computa
 
 MD simulations of all the systems were performed by following the protocol described in the previous section using the AMBER16 package with the Amberff99SB force field. While the mutated systems, systems 1–3 had to be simulated for ~400 ns to see the change, the deletion system showed the disappearance of the β-sheet rather quickly in 100–150 ns.
 
-## Monomer release assay
+### Monomer release assay
 
 Amyloid fibrils of PRL and GAL formed in the presence of glycosaminoglycans, and co-aggregated fibrils of PRL-GAL were harvested by ultracentrifugation at 90,000 rpm for 1 hr. The concentration of the soluble fraction (supernatant) was calculated using the absorbance at 280 nm (Jasco V-650) and was used to determine the concentration of the pelleted fibrils. A total of 100 μl re-dissolved pellet of 400 μM concentration was chosen to examine the monomer release study using the experimental setup, which has been reported previously (Jacob et al., 2016; Maji et al., 2008). 400 μM PRL and GAL solutions incubated for 15 days were used as a monomer control. Briefly, for PRL monomer release, the pellet solutions (PRL, PRL-CSA, and PRL-GAL) were transferred into a modified PCR tube with a pierced hole in its cap, which was attached and sealed with a 50 kDa molecular weight cutoff membrane (Pierce, USA). This whole setup was then placed inside a 1 ml cryotube (Nunc, Denmark) containing 500 μl of 10 mM Tris-HCl buffer (pH 7.4), 0.01% sodium azide. Meanwhile, to investigate the release of GAL monomers from the fibril of GAL-Hep, pellet solution was placed in a 10 kDa cutoff Slide-A-Lyzer mini dialysis unit system (Pierce, USA), which was positioned onto a 1 ml cryo-tube (Nunc, Denmark) containing 500 μl of Tris-HCl buffer (pH 7.4), 0.01% sodium azide. The tubes were then kept at 4 °C to prevent evaporation of solutions. To calculate the concentration of the protein outside of the membrane, an aliquot of 100 μl of the solution was taken from the buffer outside of the dialysis membrane at different times, and absorbance was measured at 280 nm. For measuring the monomer release of PRL and GAL from PRL-GAL co-aggregates, 100 μl releasing medium was taken out, and the same volume of fresh buffer was added back as volume correction (subsequent concentration correction has been done in the data). The separated 100 μl releasing medium was passed through a 10 kDa centrifugal filter unit (Amicon Ultra, Millipore). After which, the GAL monomer was obtained as filtrate, and the PRL was recovered from the retentate by washing the reversed filter unit with 100 μl of 10 mM Tris, pH 7.4 as per the manufacturer’s protocol. In an identical experimental setup, the absorbance was measured from the buffer both inside and outside of the membrane. This control is kept to check whether degradation of the materials of the dialysis membrane is interfering with the assay. Each time, the released solution was returned after the spectra recording. Three independent experiments were performed for each sample.
 
-## Cell proliferation assay using Nb2 cells
+### Cell proliferation assay using Nb2 cells
 
 Nb2 cell line was grown in plastic culture flasks in RPMI medium (HiMedia, India) supplemented with 10% heat-inactivated fetal bovine serum (Gibco, USA), 10% horse serum (HiMedia, India), and 1 X antibiotic solution and incubated at 37 °C in a humidified incubator containing 5% CO2 in the air. The Nb2 cell line was tested as mycoplasma negative. Since there is no publicly available database for rat-derived cell lines to be used as a reference, the STR profiling was not employed. However, the authentication of the Nb2 cell line was done by monitoring the morphology and the characteristic property of the cell line (comprising PRL receptors) to proliferate in presence of PRL as evident from our cell proliferation study. For proliferation assay, cells ( ~ 105/well) in a 96-well plate were seeded in RPMI medium in the presence of 1% fetal bovine serum and 10% horse serum and incubated for 24 hr to synchronize the cells at G0/G1 phase. After 24 hr, cells were treated with PRL monomer, monomer released from PRL-CSA and PRL-GAL at a dose range from 0.5 to 4 µM. The unrelated protein ovalbumin was used as the negative control. After incubation, cell proliferation was measured by MTT assay. To do so,10 µl of MTT solution (5 mg/ml in PBS) was added to the cells and incubated for 4 h. Subsequently, 100  μl of SDS-DMF solution (50% DMF and 20% SDS, pH 4.75) was added for overnight incubation. The absorption value of the product was measured at 560  nm and 690  nm as a background absorbance using a Spectramax M2e microplate reader (Molecular Devices, USA). The fold increases in cell proliferation compared to untreated cells were plotted against the concentration of the sample administered.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Adult, Sprague-Dawley rats (200–250 g) (both male and female) taken for this study were maintained under the standard environmental conditions (12 h: 12 h, light: darkness cycle, chow, and water ad libitum). The Institutional Animal Ethical Committee (IAEC) at NISER, Bhubaneswar (ethical approval protocol number: NISER/SBS/AH-210 and NISER/SBS/AH-212), under the Committee for the Purpose of Control and Supervision of Experiments for Animals (CPCSEA), New Delhi, India, approved the experimental protocol. First, the animals were anesthetized with a mixture of ketamine and xylazine and perfused transcardially with 50 ml of 10 mM phosphate buffer saline (PBS, pH 7.4), followed by 100 ml 4% paraformaldehyde (PFA) in 100 mM phosphate buffer (pH 7.4). The pituitary glands were dissected out and post-fixed in 4% PFA overnight at 4°C followed by immersion in 25% sucrose solution in PBS for 24 hr at 4°C. The pituitary glands were rapidly frozen in powdered dry ice, sectioned on the cryostat (Leica, CM3050 S), and sections were mounted on poly-L-lysine (Sigma) coated glass slides. The sections were processed for double immunofluorescence. The sections were rinsed twice in PBS/TBS followed by 0.5% Triton X-100 for 20  min. The sections were incubated in blocking solution for 30 min. The double immunofluorescence was performed in a humidified chamber by incubating the sections in a mixture of anti-PRL (Guinea pig polyclonal, from A. F. Parlow, National Hormone, and Pituitary Program, Harbor-ULCA Medical Center, Torrance, CA, 1:1500) and mouse polyclonal anti-GAL antibody (Abcam, dilution 1:1500) overnight at 4 °C. Further, co-staining of pituitary tissue amyloids of GAL or PRL was performed using amyloid-specific (OC) antibody (rabbit polyclonal, Abcam, 1:500) and with respective hormone antibodies. All the primary antibody-stained tissue slices were incubated overnight at 4 °C in a humidified chamber. The sections were rinsed in TBST and further incubated with the secondary antibody of goat anti-mouse FITC (1:500) or goat anti-rabbit FITC (1:500) or goat anti-mouse Alexa Fluor-555 (1:500) (Thermo Scientific, USA) or goat anti-Guinea pig Alexa Fluor 555 (1:500) for 2  h at room temperature in a humidified chamber. The sections were washed with TBST and mounted with a mounting medium. The sections were analyzed using a confocal microscope (Olympus IX81 combined with FV500) (Shinjuku, Tokyo, Japan) and images were recorded using a multi-channel image acquisition tool of Fluovision software (Zeiss, Oberkochen, Germany). Similarly, the GH and ACTH double immunofluorescence was performed using rabbit polyclonal anti-ACTH (kind gift of Dr. A. F. Parlow, NHPP, dilution 1:1000) and goat polyclonal anti-GH (R&D Systems, dilution 1:1000) overnight at 4°C. The sections were washed and further incubated in a mixture of secondary antibodies [Alexa Fluor 594 anti-rabbit IgG or Alexa Fluor 488 anti-goat IgG (1:500, Thermo Fisher Scientific, USA)] for 2 h at room temperature. The sections were rinsed and sealed with mounting medium, and the association between GH and ACTH analyzed under an AxioImager M2 fluorescence microscope attached with AxioCamMRm digital microscope camera (Carl Zeiss, Göttingen, Germany). The microscopic images of pituitary sections showing GH and ACTH were captured using the same microscope and camera. For Thioflavin S (ThioS) staining, GAL and PRL staining was done using goat anti-mouse Alexa Fluor-555-conjugated secondary antibody or goat anti-Guinea pig Alexa Fluor 555 (1:500 dilution) respectively. The sections were then stained with 0.6% ThioS (Sigma-Aldrich) for 5  min in dark. The sections were washed with 50% ethanol for 2 min followed by TBST washing for 3 min. The slides were then mounted in 90% glycerol and 10% PBS containing 1% DABCO (1, 4-diazabicyclo-[2.2.2] octane, Sigma-Aldrich). The images and the sections were analyzed by multi-channel image acquisition tool of Fluovision software (Zeiss, Oberkochen, Germany) and Olympus FV-500 IX 81 confocal microscope (Shinjuku, Tokyo, Japan), respectively.

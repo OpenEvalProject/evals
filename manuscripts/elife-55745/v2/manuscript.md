@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Lysosomes play important roles in cellular degradation to maintain cell homeostasis. In order to understand whether and how lysosomes alter with age and contribute to lifespan regulation, we characterized multiple properties of lysosomes during the aging process in C. elegans . We uncovered age-dependent alterations in lysosomal morphology, motility, acidity and degradation activity, all of which indicate a decline in lysosome function with age. The age-associated lysosomal changes are suppressed in the long-lived mutants daf-2 , eat-2 and isp-1 , which extend lifespan by inhibiting insulin/IGF-1 signaling, reducing food intake and impairing mitochondrial function, respectively. We found that 43 lysosome genes exhibit reduced expression with age, including genes encoding subunits of the proton pump V-ATPase and cathepsin proteases. The expression of lysosome genes is upregulated in the long-lived mutants, and this upregulation requires the functions of DAF-16/FOXO and SKN-1/NRF2 transcription factors. Impairing lysosome function affects clearance of aggregate-prone proteins and disrupts lifespan extension in daf-2 , eat-2 and isp-1 worms. Our data indicate that lysosome function is modulated by multiple longevity pathways and is important for lifespan extension.
+Lysosomes play important roles in cellular degradation to maintain cell homeostasis. In order to understand whether and how lysosomes alter with age and contribute to lifespan regulation, we characterized multiple properties of lysosomes during the aging process in C. elegans. We uncovered age-dependent alterations in lysosomal morphology, motility, acidity and degradation activity, all of which indicate a decline in lysosome function with age. The age-associated lysosomal changes are suppressed in the long-lived mutants daf-2, eat-2 and isp-1, which extend lifespan by inhibiting insulin/IGF-1 signaling, reducing food intake and impairing mitochondrial function, respectively. We found that 43 lysosome genes exhibit reduced expression with age, including genes encoding subunits of the proton pump V-ATPase and cathepsin proteases. The expression of lysosome genes is upregulated in the long-lived mutants, and this upregulation requires the functions of DAF-16/FOXO and SKN-1/NRF2 transcription factors. Impairing lysosome function affects clearance of aggregate-prone proteins and disrupts lifespan extension in daf-2, eat-2 and isp-1 worms. Our data indicate that lysosome function is modulated by multiple longevity pathways and is important for lifespan extension.
 
 ## Introduction
 
@@ -37,13 +37,29 @@ In this study, we employed cell biology assays to examine lysosomal changes with
 
 ## Results
 
-## Lysosomes undergo age-associated alternations in C. elegans
+### Lysosomes undergo age-associated alternations in C. elegans
 
 We examined lysosome morphology using the NUC-1::CHERRY reporter in C. elegans adults at different ages. Lysosomes appeared mainly as small puncta at day 1 of adulthood in hypodermis, while short tubules were observed at day 3 (Figure 1A,B). The tubular lysosomal structures were increased in both length and abundance at day 5, leading to formation of an extensive tubular network at day 9 (Figure 1C,D,I). The tubular lysosomal network was still observed in the hypodermis at day 15 of adulthood, indicating that it persisted during aging (Figure 1—figure supplement 1A). In aged adults, the number of vesicular lysosomes reduced gradually but the mean volume of each lysosome increased, while the total volume of lysosomes also increased significantly (Figure 1J–L). Similar changes in lysosome morphology, number and volume were also observed in body wall muscle cells and intestinal cells with age even though tubular lysosomal structures were less abundant in these two tissues compared to hypodermis (Figure 1—figure supplement 1C–H).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig1-v2.jpg)
+
+**Figure 1.:** (A–H) Confocal fluorescence images of the hypodermis in wild type (WT; A–D) and daf-2(e1370) (E–H) expressing NUC-1::CHERRY at different ages (adult days 1, 3, 5, 9). White arrowheads indicate vesicular lysosomes; white and yellow arrows indicate short and long lysosomal tubules, respectively. (I–L) Tubule length (I), number (J) and volume (K, L) of lysosomes were quantified in wild type (WT) and daf-2(e1370) at different ages. At least 20 (I, J) or 10 (K, L) animals were scored in each strain at each day. (M) Time-lapse images of lysosomes in the hypodermis in wild type (WT) and daf-2(e1370) expressing NUC-1::CHERRY at adult day 1, with time point 0 s in red and 60 s in green. The overlay (merge) shows lysosome movement over time. Pearson’s correlation coefficient and average velocity of lysosomes were determined at the indicated stages and are shown in (N, O). At least 10 animals were scored in each strain at each stage. In (I, J, K, L, N, O), data are shown as mean ± SD. One-way ANOVA with Tukey’s multiple comparison test (I) and two-way ANOVA with Fisher’s LSD test (J, K, L, N, O) was performed to compare all other datasets with wild type at day 1, or datasets that are linked by lines. *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance. Scale bars: 5 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Confocal fluorescence images of the hypodermis in wild type (WT; A) and daf-2(e1370) (B) expressing NUC-1::CHERRY at day 15. White arrowheads indicate vesicular lysosomes; white and yellow arrows designate short and longer tubular lysosomal structures, respectively. (C, D) Confocal fluorescence images of the body wall muscle cell (C) and the intestine (D) in wild type and daf-2(e1370) expressing LAAT-1::GFP at different ages (days 1, 3, 5, 9). White arrowheads indicate vesicular lysosomes; white and yellow arrows designate short and long tubular lysosomal structures, respectively. (E–H) The number (E, G) and average volume (F, H) of vesicular lysosomes labeled by LAAT-1::GFP in the body wall muscle cell (E, F) and the intestine (G, H) were quantified in wild type and daf-2(e1370) at the indicated stages. At least 10 animals were scored in each strain at each age. (I) Western blot analysis of NUC-1::CHERRY cleavage in wild type (WT) and daf-2(e1370) at day 1. Quantification is shown in (J). Three independent experiments were performed. In (E, F, G, H, J), data are shown as mean ± SD. Two-way ANOVA with Fisher’s LSD test (E–H) or paired t testing (J) was performed to compare all other datasets with wild type (J), or wild type at day 1 (E–H), or to compare datasets that are linked by lines (E–H). *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance. Scale bars: 5 μm.
+
 We next examined whether other lysosomal properties, including dynamics, acidification and degradation activity, are altered in worms with increased age. To examine lysosome dynamics, we measured Pearson’s correlation coefficient to compare the colocalization of lysosomes in two time-lapse image frames taken 60 s apart. We found a higher level of colocalization in adult hypodermis, resulting in a higher Pearson’s correlation coefficient than in larvae (Figure 1M,N). This suggests that lysosomes are less dynamic in adults. Consistent with this, the velocity of lysosomes was higher in larvae than in adults (Figure 1O). The Pearson’s correlation coefficient did not change obviously in adults from day 1 to day 9, but the velocity of lysosomes was significantly reduced at days 5 and 9, which suggests that lysosome motility declines with age (Figure 1N,O). We examined lysosome acidity by co-staining with LysoTracker Red (LTR) and LysoSensor Green DND-189 (LSG, pKa 5.2) (Baxi et al., 2017). LTR is less sensitive to increased acidity than LSG and is used as a control for normalizing the dye intake (Duvvuri et al., 2004). The fluorescence intensity ratio of LSG vs LTR (LSG/LTR) is quantified to indicate lysosome acidity. We found that the LSG/LTR ratio in the intestine was reduced in adults at days 3, 5 and 9 compared to day 1, which suggests that lysosome acidity declines in aging adults (Figure 2A–D’’, I). The tubular lysosomal structures enriched in the hypodermis of aged adults were weakly stained by LysoTracker Red but were not labeled by LysoSensor Green, which suggests that lysosomal tubules may be less acidic than the vesicular ones (Figure 2—figure supplement 1A–D). Cathepsin L (CPL-1) is synthesized as an inactive pro-enzyme, which is converted to the active mature form in lysosomes through proteolytic removal of the pro-domain (Stoka et al., 2016). The processing of endogenous CPL-1 can be examined by western blot and quantified to indicate the degradation activity of lysosomes. We found that CPL-1 processing reduced significantly in adults at days 5 and 9 compared to day 1, and pro-CPL-1 accumulated with age (Figure 2N,O). These results suggest that lysosomal degradation activity decreases with age. Altogether, these data suggest that lysosomes undergo a series of age-associated changes including reduced vesicular but increased tubular morphology, increased mean and total volume, and decreased acidity, motility and degradation activity.
 
-## Lysosome morphology and activity are well maintained in daf-2 mutants with age
+![Figure 2.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig2-v2.jpg)
+
+**Figure 2.:** (A–H”) Confocal fluorescence images of the intestine in wild type (WT; A–D”) and daf-2(e1370) (E–H”) adults at different ages stained by LSG DND-189 and LTR DND-99. (I) The relative intensity of LSG/LTR in wild type and daf-2(e1370) at different ages was quantified. At least 10 animals were scored in each strain at each day. (J–L) Confocal fluorescence images of the hypodermis at adult day 2 in wild type (WT; J), daf-2(e1370) (K) and cup-5(bp510) (L) expressing NUC-1::pHTomato controlled by the heat-shock (hs) promoter. The average intensity of pHTomato per lysosome is shown in (M). At least 20 animals were scored in each strain. (N) Western blot analysis of CPL-1 processing in wild type (WT) and daf-2(e1370) at different adult ages. The percentage of mature CPL-1 was quantified (O). Three independent experiments were performed. In (I, M, O), data are shown as mean ± SD. One-way ANOVA with Tukey's multiple comparisons test (I, M) or two-way ANOVA with Fisher’s LSD test (O) was performed to compare all other datasets with wild type (M) or wild type at day 1 (I, O), or to compare datasets that are linked by lines. *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance. Scale bars: 5 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B’’) Confocal fluorescence images of the hypodermis in wild type (WT) at day 1 (A–A’’) and day 5 (B–B’’) stained by LSG DND-189 and LTR DND-99. White arrowheads indicate vesicular lysosomes stained by both LSG and LTR; yellow arrowheads indicate an LTR-positive and LSG-negative vesicular lysosome. White arrows indicate lysosomal tubules stained by LTR but not LSG. (C, D) The relative intensity of LSG/LTR in the hypodermis (C) and the percentage of LTR-positive lysosomes stained by LSG (D) was quantified. At least 10 animals were quantified at each day. (E–G’’) Confocal fluorescence images of the hypodermis in wild type (WT, (E–E’’), daf-2(e1370) (F–F’’) and cup-5 (bp510) (G–G’’) expressing SCAV-3::GFP and NUC-1::pHTomato controlled by the heat-shock (hs) promoter. NUC-1::pHTomato is delivered to lysosomes labeled by SCAV-3::GFP at 24 hr post heat-shock treatment. (H–J) Confocal fluorescence images of the hypodermis in wild type (WT; H), daf-2(e1370) (I) and cup-5 (bp510) (J) expressing NUC-1::sfGFP::CHERRY controlled by the heat-shock (hs) promoter. (K) The average intensity of CHERRY in each lysosome was quantified. At least 20 animals were scored in each strain. In (C, D, K), data are shown as mean ± SD. Paired t testing (C, D) or one-way ANOVA with Tukey's multiple comparisons test (K) was performed to compare all other datasets with wild type at day 1 (C, D) or with wild type (K). **p<0.001. All other points had p>0.05. Scale bars: 5 μm.
+
+### Lysosome morphology and activity are well maintained in daf-2 mutants with age
 
 We investigated whether these age-associated lysosomal changes are altered by longevity regulatory factors. Insulin/IGF-1 signaling (IIS) is an evolutionarily conserved aging regulatory pathway. Mutations in the insulin/IGF-1 receptor DAF-2 double the lifespan of wild type (Kenyon et al., 1993). We found that lysosomes in the daf-2(e1370ts) mutant, which has reduced function of DAF-2, appeared as small puncta and short tubules, and they were not obviously changed with age in hypodermis (Figure 1E–H and Figure 1—figure supplement 1B). daf-2(e1370ts) worms contained significantly more vesicular lysosomes than wild type, and these vesicular lysosomes were smaller in size (Figure 1J,K). The tubular lysosomes were shorter in length and they did not form a tubular network in aged daf-2 adults (Figure 1I). The mean and total volume of lysosomes exhibited an age-dependent increase in wild type but remained unchanged in daf-2 adults from day 1 to day 9 (Figure 1K,L). Increased number and reduced mean volume of vesicular lysosomes were also observed in body wall muscle cells of daf-2 mutants at different ages (Figure 1—figure supplement 1C,E,F). In the intestine of daf-2 mutants, the number and mean volume of vesicular lysosomes was similar to that in wild type (Figure 1—figure supplement 1D,G,H).
 
@@ -53,19 +69,27 @@ The above results suggest that the properties of lysosomes – including morphol
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig3-v2.jpg)
 
-**Figure 3.:** daf-2.(A–J) Representative HVEM images of lysosomes in the hypodermis in wild type (WT; A–G) and daf-2 (e1370) (H–J). Yellow arrowheads indicate vesicular lysosomes or short lysosomal tubules. White arrows indicate the lysosomal tubular network formed in wild type at day 5. Scale bars: 500 nm. (K, L) The percentage of lysosomes within a certain morphology group revealed by HVEM was quantified in wild type (WT; K) and daf-2(e1370) (L) at different ages (day 1 and day 5). At least 70 lysosomes were quantified in each strain at each age. (M) The diameter of vesicular lysosomes in wild type (WT) and daf-2(e1370) at different ages was quantified. At least 50 vesicular lysosomes were counted in each strain at each age. One-way ANOVA with Tukey's multiple comparisons test was performed to compare all other datasets with wild type at day 1, or datasets that are linked by lines. *p<0.05; **p<0.001.Figure 3—source data 1.Figure 3K–M.
+**Figure 3.:** (A–J) Representative HVEM images of lysosomes in the hypodermis in wild type (WT; A–G) and daf-2 (e1370) (H–J). Yellow arrowheads indicate vesicular lysosomes or short lysosomal tubules. White arrows indicate the lysosomal tubular network formed in wild type at day 5. Scale bars: 500 nm. (K, L) The percentage of lysosomes within a certain morphology group revealed by HVEM was quantified in wild type (WT; K) and daf-2(e1370) (L) at different ages (day 1 and day 5). At least 70 lysosomes were quantified in each strain at each age. (M) The diameter of vesicular lysosomes in wild type (WT) and daf-2(e1370) at different ages was quantified. At least 50 vesicular lysosomes were counted in each strain at each age. One-way ANOVA with Tukey's multiple comparisons test was performed to compare all other datasets with wild type at day 1, or datasets that are linked by lines. *p<0.05; **p<0.001.
 
-## Lysosome activity is increased in eat-2 and isp-1 mutants
+### Lysosome activity is increased in eat-2 and isp-1 mutants
 
 Our data suggest that reducing IIS suppresses age-associated changes in lysosomal shape, size, dynamics, acidity and degradation activity. We next examined whether lysosome patterns and activity are altered in two other long-lived mutants, eat-2 and isp-1, which extend lifespan through restricted caloric intake and impaired mitochondrial respiration, respectively (Lakowski and Hekimi, 1998; Feng et al., 2001). We found that lysosome patterns in isp-1(qm150) and eat-2(ad1116) mutants at different ages resembled those in daf-2(e1370ts), except that tubular lysosomal structures were more abundant in eat-2(ad1116) than in daf-2 and isp-1 worms (Figure 4A–L). Like in daf-2 worms, the number of vesicular lysosomes increased, and the mean volume decreased in eat-2 and isp-1 mutants; tubular lysosomes at days 5 and 9 were shorter in length and did not form tubular networks (Figure 4M–O). The velocity of lysosomes was significantly higher in eat-2 worms than in wild type at different ages, while isp-1 lysosomes had a higher motility than wild type at day 1 and day 9 (Figure 4—figure supplement 1A). By examining the fluorescence intensity ratio of LSG/LTR, we found that lysosome acidity was significantly higher in eat-2(ad1116) worms than in wild type at all adult ages tested, while increased lysosome acidity was seen in isp-1(qm150) mutants at days 3 and 5 but not day 9 (Figure 4—figure supplement 1B–J). In agreement with this, the average intensity of NUC-1::pHTomato was significantly lower in eat-2 and isp-1 than in wild type, which suggests that lysosome acidity was increased (Figure 4P–S). We found that more mature CPL-1 was produced in eat-2(ad1116) and isp-1(qm150) mutants than in wild type at different ages except for isp-1 at day 9, where the percentage of mature CPL-1 was similar to wild type (Figure 4T–W). Collectively, these data suggest that like the IIS mutant daf-2, lysosome morphology, motility, acidity and degradation activity are well maintained with age in eat-2 mutants, whereas the appearance of age-related lysosomal changes is delayed in isp-1(qm150) worms.
 
-## Expression of lysosome-related genes increases in long-lived worms in a DAF-16- and SKN-1-dependent manner
+![Figure 4.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig4-v2.jpg)
+
+**Figure 4.:** (A–L) Confocal fluorescence images of the hypodermis in wild type (WT; A–D), eat-2(ad1116) (E–H) and isp-1(qm150) (I–L) expressing NUC-1::CHERRY at different adult ages. White arrowheads indicate vesicular lysosomes; white and yellow arrows designate short and long lysosomal tubules, respectively. (M–O) The length of tubular lysosomes (M), and the number (N) and mean volume (O) of vesicular lysosomes were quantified in wild type (WT), eat-2(ad1116) and isp-1 (qm150) at different ages. At least 10 animals were scored in each strain at each age. (P–R) Confocal fluorescence images of the hypodermis in wild type (WT; P), eat-2(ad1116) (Q) and isp-1(qm150) (R) expressing NUC-1::pHTomato controlled by the heat-shock (hs) promoter. The average intensity of pHTomato per lysosome was quantified (S). At least 20 animals were scored in each strain. (T, V) Western blot analysis of CPL-1 processing in eat-2(ad1116) (T) and isp-1(qm150) (V) at different ages. The percentage of mature CPL-1 was quantified (U, W). Three independent experiments were performed. In (M, N, O, S, U, W), data are shown as mean ± SD. One-way ANOVA with Tukey's multiple comparisons test (M, S) or two-way ANOVA with Fisher’s LSD test (N, O, U, W) was performed to compare all other datasets with wild type (S) or wild type at day 1 (M, N, O, U, W) or datasets that are linked by lines. *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance. Scale bars: 5 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Lysosomal velocity was quantified in wild type (WT), eat-2(ad1116) and isp-1(qm150) at different ages (days 1, 3, 5, 9). (B–I’’) Confocal fluorescence images of the intestine in eat-2(ad1116) (B–E”) and isp-1(qm150) (F–I”) at different ages (days 1, 3, 5, 9) stained by LSG DND-189 and LTR DND-99. The asterisks in (B–G’’) indicate accumulation of the dye in the intestinal lumen. Scale bars: 5 μm. Quantification of the relative intensity of LSG/LTR is shown in (J). In (A, J), at least 10 animals were scored in each strain at each age, and data are shown as mean ± SD. One-way ANOVA with Tukey's multiple comparisons test (J) or two-way ANOVA with Fisher’s LSD test (A) was performed to compare all other datasets with wild type at day 1, or datasets that are linked by lines. *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance.
+
+### Expression of lysosome-related genes increases in long-lived worms in a DAF-16- and SKN-1-dependent manner
 
 To investigate how lysosome activity is maintained in long-lived worms, we examined the expression of 85 lysosome-related genes by quantitative PCR (qRT-PCR). These genes encode lysosomal membrane proteins, hydrolases and components of the proton pump V-ATPase (Figure 5A and Supplementary file 1). We found that expression of 43 lysosomal genes was significantly reduced at day 5 compared to day 1. They included 15 vha genes encoding subunits of the V-ATPase and 17 cathepsin genes encoding lysosomal proteases, which is consistent with reduced lysosomal acidity and degradation activity with age (Figure 5A–C and Supplementary file 1, 2). In addition, 13 lysosomal genes exhibited increased expression with age and the expression of 29 lysosomal genes was unaltered at day 5 compared to day 1 (Figure 5A and Supplementary file 3, 4).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig5-v2.jpg)
 
-**Figure 5.:** daf-2, eat-2 and isp-1.(A) Expression of 85 lysosome-related genes in wild type at day 1 and day 5 was analyzed. 43 and 13 lysosomal genes were down- and up-regulated with age, respectively. Expression of 29 lysosomal genes was unaltered at day 5 compared with day 1. (B, C) Quantitative RT-PCR (qRT-PCR) analyses of the 43 downregulated lysosomal genes in wild type at day 1 and day 5. (D–F) Expression of the 43 downregulated lysosomal genes was analyzed by qRT-PCR at day 1 in daf-2 (D), isp-1 (E) and eat-2 (F) worms. In (B–F), three independent experiments were performed. The transcription level of lysosomal genes in wild type (WT) at day 1 was normalized to ‘1’ for comparison. Data are shown as mean ± SD. Multiple t testing was performed to compare mutant datasets with wild type. *p<0.05; **p<0.001.Figure 5—source data 1.Figure 5B–F.
+**Figure 5.:** (A) Expression of 85 lysosome-related genes in wild type at day 1 and day 5 was analyzed. 43 and 13 lysosomal genes were down- and up-regulated with age, respectively. Expression of 29 lysosomal genes was unaltered at day 5 compared with day 1. (B, C) Quantitative RT-PCR (qRT-PCR) analyses of the 43 downregulated lysosomal genes in wild type at day 1 and day 5. (D–F) Expression of the 43 downregulated lysosomal genes was analyzed by qRT-PCR at day 1 in daf-2 (D), isp-1 (E) and eat-2 (F) worms. In (B–F), three independent experiments were performed. The transcription level of lysosomal genes in wild type (WT) at day 1 was normalized to ‘1’ for comparison. Data are shown as mean ± SD. Multiple t testing was performed to compare mutant datasets with wild type. *p<0.05; **p<0.001.
 
 Among the 43 lysosome genes whose expression declined with age, 20 exhibited significantly increased expression in daf-2 mutants compared to wild type at adult day 1 (Figure 5D and Supplementary file 5). These 20 genes mainly encode lysosomal hydrolases, including eight cathepsin proteases and six hydrolases that digest carbohydrates and lipids (Figure 5D and Supplementary file 5). In isp-1(qm150) mutants, 10 out of the 43 lysosomal genes were upregulated (Figure 5E and Supplementary file 5). Nine of the upregulated genes encode hydrolases and expression of all of them, except for cpr-8, is increased in daf-2 mutants (Figure 5D,E, Figure 6—figure supplement 1A and Supplementary file 5). In eat-2(ad1116) mutants, 14 out of the 43 lysosome genes were upregulated and 8 of them encode V-ATPase subunits (Figure 5F and Supplementary file 5). By contrast, the expression of very few vha genes was increased in daf-2 and isp-1 mutants (Figure 5D,E and Figure 6—figure supplement 1A).
 
@@ -73,15 +97,39 @@ We next examined transcription factors that act downstream of the three longevit
 
 The transcription factors DAF-16/FOXO, SKN-1/NRF2 and HSF-1 all respond to reduced IIS. We found that loss of daf-16 and skn-1 led to reduced expression of 13 and 8 lysosomal genes, respectively, in daf-2 worms (Figure 6A,B). We examined the six lysosomal genes whose expression was reduced by both daf-16 and skn-1 mutations (Figure 6—figure supplement 1B). Expression of these lysosomal genes did not further reduce in daf-16;daf-2;skn-1 triple mutants, which suggests that DAF-16 and SKN-1 act in the same genetic pathway to regulate their expression (Figure 6—figure supplement 1B). Consistent with this, loss of daf-16 or skn-1 led to increased pHTomato intensity, reduced fluorescence intensity ratio of LSG/LTR and reduced CHERRY cleavage in daf-2 mutants, which indicates that DAF-16 and SKN-1 function is important for elevation of lysosome acidity and degradation activity in daf-2 mutants (Figures 6C–G,I,K–N and Figure 6—figure supplement 1C–H’’). The pHTomato intensity, LSG/LTR fluorescence intensity ratio and CHERRY cleavage were not further altered in daf-16;daf-2;skn-1 triple mutants, consistent with co-regulation of lysosomal gene expression by DAF-16 and SKN-1 when IIS is impaired (Figure 6H–N and Figure 6—figure supplement 1I–J’’). HLH-30 is the putative C. elegans homolog of human TFEB, a master transcription factor for autophagy and lysosome biogenesis (O'Rourke and Ruvkun, 2013, Settembre et al., 2011). It was reported recently that both HLH-30 and DAF-16 are required for the longevity of daf-2 mutants and they act as combinatorial transcription factors to fulfill this function (Lin et al., 2018). We found that loss of hlh-30 caused reduced expression of 6 hydrolase genes in daf-2 mutants, and 5 of them were also targeted by DAF-16 (Figure 6—figure supplement 1K,L). However, unlike daf-16(lf), loss of hlh-30 did not affect NUC-1::CHERRY cleavage in daf-2 worms, which suggests that lysosome degradation activity may be unaltered (Figure 6—figure supplement 1M). The CHERRY cleavage in daf-16;daf-2;hlh-30 was higher than in daf-16;daf-2, suggesting that loss of hlh-30 may have a beneficial effect on lysosomal degradation in daf-16;daf-2 (Figure 6—figure supplement 1M). Loss of hsf-1 had no effect on lysosomal gene expression or NUC-1::CHERRY cleavage in daf-2 worms, which suggests that HSF-1 is dispensable for lysosome regulation in daf-2 mutants (Figure 6—figure supplement 1N,O).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig6-v2.jpg)
+
+**Figure 6.:** (A, B) Expression of the 20 upregulated lysosomal genes in daf-2 mutants was analyzed by qRT-PCR in daf-16;daf-2 (A) and daf-2;skn-1 (B) worms at day 1. Three independent experiments were performed. The transcription level of lysosomal genes in daf-2(e1370) at day 1 was normalized to ‘1’ for comparison. (C–J) Confocal fluorescence images of the hypodermis in the indicated strains expressing NUC-1::pHTomato controlled by the heat-shock (hs) promoter. Scale bars: 5 μm. The average intensity of pHTomato per lysosome was quantified (K). At least 20 animals were scored in each strain. (L) The relative intensity of LSG/LTR in the intestine was quantified in the indicated strains at day 2. At least 10 animals were scored in each strain. (M) Western blot analysis of CHERRY cleavage from NUC-1::CHERRY in the indicated strains at day 1. Quantification is shown in (N). Three independent experiments were performed. In (A, B, K, L, N), data are shown as mean ± SD. Multiple t testing (A, B), or one-way ANOVA with Tukey's multiple comparisons test (K, L, N) was performed to compare datasets of double mutants with daf-2 (A, B) or to compare all other datasets with wild type (L, N) or with wild type treated with control RNAi (K), or datasets that are linked by lines (K, L, N). *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Venn diagram showing the genes that are upregulated in daf-2(e1370), eat-2(ad1116) and isp-1(qm150). Two genes (in red) are upregulated in all three long-lived mutants. (B) Left: Venn diagram showing the genes that are significantly downregulated by loss of daf-16 or skn-1 function in daf-2 mutants. Six genes (in red) depend on both daf-16 and skn-1. Right: Expression of the 6 DAF-16- and SKN-1-dependent lysosome genes in daf-2 was analyzed in the indicated double and triple mutants. (C–J’’) Confocal fluorescence images of the intestine stained by LSG DND-189 and LTR DND-99 in the indicated strains at day 2. The asterisks (C–C”, E–F”, H–I”) indicate accumulation of the dye in the intestinal lumen. Scale bars: 5 µm. (L, N) Expression levels of the 20 upregulated lysosomal genes in daf-2(e1370) were analyzed by qRT-PCR in daf-2;hlh-30 (L) and hsf-1;daf-2 (N) worms at day 1. Most HLH-30-responsive lysosomal genes in daf-2 are also targeted by DAF-16 (K). (M, O) Western blot analysis of NUC-1::CHERRY cleavage in the indicated strains at day 1. Quantification is shown in the right panels. In (B, L–O), three independent experiments were performed, and data are shown as mean ± SD. The transcription level of lysosomal genes in daf-2(e1370) at day 1 was normalized to ‘1’ for comparison (B, L, N). Multiple t testing (B, L, N) or one-way ANOVA with Tukey's multiple comparisons test (M, O) was performed to compare datasets of double mutants with daf-2 (L, N), or to compare datasets of daf-2;skn-1 and daf-16;daf-2;skn-1 with daf-16;daf-2 (B), or to compare all other datasets with wild type (M, O) or datasets that are linked by lines (B, M, O). *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance.
+
 In addition to responding to insulin signaling, DAF-16 also acts downstream of the mitochondrial pathway, while skn-1 RNAi reduces the lifespan of eat-2 (Senchuk et al., 2018; Park et al., 2010). We found that loss of daf-16 and skn-1 also affected lysosome gene expression in eat-2 and isp-1 mutants (Figures 7A,B and 8A,B). Loss of either daf-16 or skn-1 caused reduced expression of vha-12 and vha-15 in eat-2 mutants, which was further decreased in daf-16;eat-2;skn-1 triple mutants (Figure 7—figure supplement 1A). These results indicate that DAF-16 and SKN-1 have additive effects on the expression of vha-12 and vha-15. Consistent with this, the NUC-1::pHTomato intensity in lysosomes was higher and the LSG/LTR fluorescence intensity ratio was lower in daf-16;eat-2 and eat-2;skn-1 than in eat-2, and these parameters were further altered in daf-16;eat-2;skn-1 (Figure 7C–L). In addition, cleavage of CHERRY from NUC-1::CHERRY was reduced in daf-16;eat-2 and eat-2;skn-1 compared to eat-2 single mutants, which suggests that lysosomal degradation activity is also affected (Figure 7—figure supplement 1C,D). However, CHERRY cleavage was not further decreased in daf-16;eat-2;skn-1 (Figure 7—figure supplement 1C,D). In isp-1 mutants, expression of 4 hydrolase genes (asp-4, asp-8, asm-1 and Y105E8B.9) was affected by both daf-16 mutation and skn-1 RNAi, and their expression in triple mutants (daf-16;isp-1skn-1 RNAi) was similar to the double mutant (Figure 7—figure supplement 1B). These results suggest that DAF-16 and SKN-1 act together to regulate lysosomal gene expression in isp-1. In agreement with this, loss of skn-1 or daf-16 led to increased pHTomato intensity and reduced LSG/LTR fluorescence intensity ratio in isp-1 lysosomes, while these parameters remained unchanged in daf-16;isp-1skn-1 RNAi worms (Figure 8C–L). The daf-16 mutation caused reduced NUC-1::CHERRY cleavage in isp-1, while skn-1 RNAi did not obviously affect CHERRY cleavage in isp-1 or daf-16;isp-1 (Figure 7—figure supplement 1E,F). We found that loss of PHA-4/FOXA, the key downstream effector of the dietary restriction pathway, had no effect on lysosomal gene expression in eat-2 mutants, while loss of HIF-1, the transcription factor acting downstream of the mitochondrial pathway, did not reduce expression of lysosomal genes in isp-1 mutants, except for asp-8 (Figures 7M and 8M). Loss of pha-4 and hif-1 had no effect on the acidity and degradation activity of lysosomes in eat-2 and isp-1 mutants, respectively (Figures 7N–R and 8N–R and Figure 7—figure supplement 1G–J). Altogether, these data suggest that PHA-4 and HIF-1 are dispensable for lysosome regulation in eat-2 and isp-1 mutants.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig7-v2.jpg)
+
+**Figure 7.:** (A, B, M) Expression of the 14 upregulated lysosomal genes in eat-2(ad1116) was analyzed by qRT-PCR in daf-16;eat-2 (A), eat-2;skn-1 (B) and eat-2;pha-4 RNAi (M) worms at day 1. Three independent experiments were performed. The transcription level of lysosomal genes in eat-2(ad1116) (A, B) or eat-2(ad1116) control RNAi (M) at day 1 was normalized to ‘1’ for comparison. (C–J, N–Q) Confocal fluorescence images of the hypodermis in the indicated strains expressing NUC-1::pHTomato controlled by the heat-shock (hs) promoter. Scale bars: 5 μm. The average intensity of pHTomato per lysosome was quantified (K, R). At least 20 animals were scored in each strain. (L) The relative intensity of LSG/LTR in the intestine was quantified in the indicated strains at day 2. At least 10 animals were scored in each strain. In (A, B, K, L, M, R), data are shown as mean ± SD. Multiple t testing (A, B, M) or one-way ANOVA with Tukey's multiple comparisons test (K, L, R) was performed to compare datasets of double mutants with eat-2 (A, B), or eat-2 control RNAi (M), or to compare all other datasets with wild type treated with control RNAi (K, L, R), or datasets that are linked by lines (K, L, R). *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A, B) Left: Venn diagram showing the genes that were significantly downregulated by loss of daf-16 or skn-1 in eat-2 (A) and isp-1 (B) mutants. The genes that depend on both daf-16 and skn-1 are shown in red. Right: Expression of the DAF-16- and SKN-1-dependent lysosome genes was analyzed in the indicated double and triple mutants. The transcription level of lysosomal genes in eat-2(ad1116) (A) or isp-1(qm150) control RNAi (B) at day 1 was normalized to ‘1’ for comparison. (C–J) Western blot analysis of NUC-1::CHERRY cleavage in the indicated strains at day 1 (C, E, G, I). Quantification analyses are shown in (D, F, H, J). The asterisk in (G) indicates a non-specific band. In (A, B, D, F, H, J), three independent experiments were performed and data are shown as mean ± SD. Multiple t testing (A, B) was performed to compare datasets of eat-2;skn-1 and daf-16;eat-2;skn-1 with daf-16;eat-2 (A), or to compare datasets of isp-1 skn-1 RNAi and daf-16;isp-1 skn-1 RNAi with daf-16;isp-1 control RNAi (B). One-way ANOVA with Fisher’s LSD test (D, F, J) or paired t testing (H) was performed to compare all other datasets with wild type (D, J) or with wild type treated with control RNAi (F), or to compare eat-2;pha-4 RNAi with eat-2 control RNAi (H), or datasets that are linked by lines (A, B, D, F, J). *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig8-v2.jpg)
 
-**Figure 8.:** isp-1 mutants.(A, B, M) Expression of the 10 upregulated lysosomal genes in isp-1(qm150) was analyzed by qRT-PCR in daf-16;isp-1 (A), isp-1 skn-1 RNAi (B) and isp-1;hif-1 (M) worms at day 1. Three independent experiments were performed. The transcription level of lysosomal genes in isp-1(qm150) or isp-1(qm150) control RNAi at day 1 was normalized to ‘1’ for comparison. (C–J, N–Q) Confocal fluorescence images of the hypodermis in the indicated strains expressing NUC-1::pHTomato controlled by the heat-shock (hs) promoter. Scale bars: 5 μm. The average intensity of pHTomato per lysosome was quantified (K, R). At least 20 animals were scored in each strain. (L) The relative intensity of LSG/LTR in the intestine was quantified in the indicated strains at day 2. At least 10 animals were scored in each strain. In (A, B, K, L, M, R), data are shown as mean ± SD. Multiple t testing (A, B, M) or one-way ANOVA with Tukey's multiple comparisons test (K, L, R) was performed to compare datasets of double mutants with isp-1 (A, M), or isp-1 control RNAi (B), or to compare all other datasets with wild type (R) or with wild type treated with control RNAi (K, L), or to compare datasets that are linked by lines (K, L, R). *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance.Figure 8—source data 1.Figure 8A,B,K–M,R.
+**Figure 8.:** (A, B, M) Expression of the 10 upregulated lysosomal genes in isp-1(qm150) was analyzed by qRT-PCR in daf-16;isp-1 (A), isp-1 skn-1 RNAi (B) and isp-1;hif-1 (M) worms at day 1. Three independent experiments were performed. The transcription level of lysosomal genes in isp-1(qm150) or isp-1(qm150) control RNAi at day 1 was normalized to ‘1’ for comparison. (C–J, N–Q) Confocal fluorescence images of the hypodermis in the indicated strains expressing NUC-1::pHTomato controlled by the heat-shock (hs) promoter. Scale bars: 5 μm. The average intensity of pHTomato per lysosome was quantified (K, R). At least 20 animals were scored in each strain. (L) The relative intensity of LSG/LTR in the intestine was quantified in the indicated strains at day 2. At least 10 animals were scored in each strain. In (A, B, K, L, M, R), data are shown as mean ± SD. Multiple t testing (A, B, M) or one-way ANOVA with Tukey's multiple comparisons test (K, L, R) was performed to compare datasets of double mutants with isp-1 (A, M), or isp-1 control RNAi (B), or to compare all other datasets with wild type (R) or with wild type treated with control RNAi (K, L), or to compare datasets that are linked by lines (K, L, R). *p<0.05; **p<0.001. All other points had p>0.05. N.S., no significance.
 
-## Lysosome function is important for clearance of aggregate-prone proteins and for lifespan extension induced by multiple mechanisms
+### Lysosome function is important for clearance of aggregate-prone proteins and for lifespan extension induced by multiple mechanisms
 
 Protein insolubility or aggregation is an inherent part of normal aging due to reduced proteostasis with age. We tested whether the decline in lysosome function contributes to the accumulation of protein aggregates. NMY-2 was previously identified as an aggregation-prone protein which becomes more insoluble with age (David et al., 2010; Bohnert and Kenyon, 2017). Consistent with this, NMY-2::GFP fluorescence was almost invisible in wild-type oocytes at day 1 of adulthood, but was visible as GFP puncta at day 5 (Figure 9A,B and Figure 9—figure supplement 1A,B). Loss of CUP-5, the lysosomal Ca2+ channel homologous to human TRPML, caused increased pHTomato intensity in lysosomes and reduced fluorescence intensity ratio of LSG/LTR, which indicates that lysosomal acidity is affected (Figure 2L,M and Figure 9—figure supplement 1P–X). Moreover, CPL-1 processing was reduced significantly in cup-5 mutants at all adult ages tested, which is suggestive of defects in lysosomal degradation activity (Figure 9—figure supplement 1Y,Z). In cup-5, NMY-2::GFP fluorescence increased significantly in oocytes at days 1 and 5, but the number of NMY-2::GFP puncta was not obviously increased (Figure 9C,D,I–K and Figure 9—figure supplement 1C,D,M–O). The number of NMY-2::GFP puncta was reduced significantly in oocytes of daf-2, eat-2 and isp-1 mutants at day 5, consistent with decreased formation and/or accumulation of protein aggregates (Figure 9F,K and Figure 9—figure supplement 1F,J,O). We found that loss of cup-5 caused significantly increased NMY-2::GFP fluorescence in daf-2, eat-2 and isp-1 oocytes at both day 1 and day 5, and the number of NMY-2::GFP puncta also increased at day 5 (Figure 9G–K and Figure 9—figure supplement 1G–O). This suggests that lysosome function is important for clearance of aggregation-prone proteins and protein aggregates in long-lived worms. We observed that the cup-5 mutation was more potent at increasing the NMY-2::GFP fluorescence than the number of visible NMY-2::GFP aggregates (Figure 9A–K and Figure 9—figure supplement 1A–O). This suggests that more soluble or lower-molecular-weight forms of aggregate-prone proteins may be removed more efficiently by lysosomes.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig9-v2.jpg)
+
+**Figure 9.:** (A–H) Confocal fluorescence images of the oocytes in wild type (WT; A, B), cup-5(bp510) (C, D), daf-2(e1370) (E, F) and daf-2 cup-5 (G, H) expressing NMY-2::GFP at different ages. White arrows indicate NMY-2::GFP puncta. Scale bars: 10 μm. (I–K) The average intensity of NMY-2::GFP (I, J) and the number of NMY-2::GFP puncta (K) were quantified. 50 animals were scored in each strain. (L–Q) Lifespan analyses were performed in the indicated strains. More than 100 worms were examined in each strain and three independent experiments were performed. The mean lifespan in the indicated strains was quantified and is shown in (M, O, Q). In (I, J, M, O, Q), data are shown as mean ± SD. One-way ANOVA with Tukey's multiple comparisons test (I, J) or multiple t testing (M, O, Q) was performed to compare all other datasets with wild type, or datasets that are linked by lines. *p<0.05; **p<0.001. All other points had p>0.05.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/55745/elife-55745-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A–L) Confocal fluorescence images of the oocytes in wild type (WT; A, B), cup-5(bp510) (C, D), eat-2(ad1116) (E, F), eat-2;cup-5 (G, H), isp-1(qm150) (I, J) and cup-5;isp-1 (K, L) expressing NMY-2::GFP at day 1 and day 5. Scale bars: 10 μm. (M–O) The average intensity of NMY-2::GFP (M, N) and the number of NMY-2::GFP puncta (O) was quantified. 50 animals were counted in each strain at each day. (P–W’’) Confocal fluorescence images of the intestine in wild type (WT; P–S”) and cup-5(bp510) (T–W”) adults at different ages stained by LSG DND-189 and LTR DND-99. The asterisks in (Q–W”) indicate accumulation of the dye in the intestinal lumen. Scale bars: 5 µm. Quantification is shown in (X). (Y) Western blot analysis of CPL-1 processing in wild type (WT) and cup-5(bp510) at different adult ages. The percentage of mature CPL-1 was quantified and shown in (Z). Three independent experiments were performed. In (M, N, X, Z), data are shown as mean ± SD. One-way ANOVA with Tukey's multiple comparisons test (M, N, X) or two-way ANOVA with Fisher’s LSD test (Z) was performed to compare all other datasets with wild type (M, N), or with wild type at day 1 (X, Z) or datasets that are linked by lines. *p<0.05; **p<0.001. All other points had p>0.05. N. S., no significance.
 
 Finally, we examined whether lysosome function contributes to lifespan extension. The lysosome-defective mutants cup-5(bp510) and cpl-1(qx304) were slightly short-lived compared with wild type, and both of these mutations significantly reduced the lifespan in daf-2, eat-2 and isp-1 worms (Figure 9L–Q). These data indicate that lysosome function is important for lifespan extension induced by multiple mechanisms including reduced IIS, caloric restriction and impaired mitochondrial respiration.
 
@@ -89,13 +137,13 @@ Finally, we examined whether lysosome function contributes to lifespan extension
 
 In this study, we investigated how lysosomes change with age and contribute to lifespan regulation. Our data indicate that lysosomes undergo a series of age-associated alterations in C. elegans including shape, size, motility, acidity and degradation activity, which suggest a decline in lysosomal function with age. We found that lysosomes are modulated by multiple longevity regulatory pathways, and lysosome function is essential for lifespan extension.
 
-## Various lysosomal properties are altered with age
+### Various lysosomal properties are altered with age
 
 Age-related increases in the number and size of lysosomes have been observed previously in several species such as Paramecium, nematodes and human cell lines (Sundararaman and Cummings, 1976; Epstein, 1972; Lipetz and Cristofalo, 1972; Brandes et al., 1972). By employing cell biology assays, we found that lysosomes undergo a series of age-related changes including increased mean and total volume, and decreased motility, acidity and degradation activity. This indicates that the overall function of lysosomes declines with age, which explains in part the age-dependent decline in protein degradation described in various systems (Cuervo and Dice, 1998). We observed that lysosomal morphology changes dramatically with age, manifested as greatly increased tubular morphology and a concomitant decrease in vesicular lysosomes. Tubular structures have been observed in the lysosome reformation process when lysosomal contents are retrieved from phagolysosomes or autolysosomes (Yu et al., 2010; Gan et al., 2019). Moreover, stimulation of macrophages and dendritic cells (DCs) with agonists including LPS leads to reorganization of lysosomes into a tubular network (Hipolito et al., 2018). These lysosomal tubules may be induced to fulfil a variety of functions, such as expanding lysosomal volume, promoting phagosome maturation, cargo sorting and exchange, and helping delivery of peptide-loaded MHC-II molecules to the cell surface (Hipolito et al., 2018; Hipolito et al., 2019; Mantegazza et al., 2014; Boes et al., 2002; Boes et al., 2003; Chow et al., 2002; Vyas et al., 2007). In C. elegans, we found previously that catalytically active lysosomal tubules are formed during molting to promote cuticle replacement (Miao et al., 2020). In aged adults, however, lysosomal tubules are static and are not readily stained by LysoSensor Green (Figure 1N,O and Figure 2—figure supplement 1B–D). Lysosome degradation activity, indicated by CPL-1 processing, is obviously reduced in aged adults. Thus, the lysosomal tubules enriched in aged adults are probably catalytically inactive. The HVEM analyses revealed that young adult worms contain electron-lucent tubules emanating from electron-dense granules, consistent with retrieval and/or recycling of lysosomal contents through tubules. In aged worms, the vast majority of lysosomes are seen as electron-lucent tubules that form a tubular network, whereas very few dense vesicular lysosomes are present (Figure 3G,K). It is possible that the lysosomal retrieval, cargo sorting and/or catabolite recycling processes occur inefficiently in aged adults, which leads to accumulation of catalytically inactive tubular lysosomal structures. Future studies are needed to understand how lysosomal tubules are formed in aging adults and whether and how they alter degradation, retrieval or recycling of lysosomal contents.
 
 Consistent with changes in multiple lysosomal properties, we observed an age-related decline in the expression of 43 lysosome-related genes (Figure 5A–C and Supplementary file 2). This affects two main classes of lysosomal proteins, the cathepsin proteases (17 genes) and subunits of the proton pump V-ATPase (15 genes), which may account for the age-associated decline in lysosomal acidity and degradation. We observed that cpl-1 gene expression declines, but the total CPL-1 protein level appears to increase with age in wild type. The increase in the total CPL-1 protein level is probably caused by reduced CPL-1 processing (Figures 2N and 4T–W) and a decline in CPL-1 protein turnover, consistent with the decline in lysosome activity in aging worms. In addition to decreased expression of 43 lysosome genes, 13 lysosome genes exhibit increased expression with age (Figure 5A and Supplementary file 3). This may reflect a feed-back response caused by reduced lysosomal degradation with age as proposed previously in mammals (de Magalhães et al., 2009). Moreover, expression of 29 lysosome-related genes is unaltered in aging adults (Figure 5A and Supplementary file 4). Thus, the overall profile of lysosomal transcripts is obviously remodeled, but not all lysosomal gene expression patterns are altered during aging.
 
-## Lysosomes are modulated by multiple longevity pathways
+### Lysosomes are modulated by multiple longevity pathways
 
 We found that long-lived mutants representing three different longevity pathways all exhibited increased activity and better maintenance of lysosomes with age. Reducing IIS by the daf-2 mutation suppresses age-associated lysosomal changes. daf-2 lysosomes maintain their vesicular morphology, ultrastructure, high motility, acidity and degradation activity with age. The maintenance of lysosome activity with age is achieved at least in part through transcriptional regulation of lysosome genes. Loss of daf-16 and skn-1 reduces lysosome gene expression in daf-2 and causes decreased lysosomal acidity and degradation activity. In addition to modulating lysosome gene expression, reducing IIS increases stress resistance and reduces cellular damage (Shore and Ruvkun, 2013). This may reduce substrate loading into lysosomes and thus help to maintain lysosome activity with age. Consistent with this, we found previously that loss of daf-2 increases stress resistance in the lysosome-defective mutant scav-3 and suppresses the membrane integrity defects in scav-3 (Li et al., 2016). In addition to the IIS pathway, lysosomes are also modulated by caloric restriction and mitochondrial pathways. In the feeding-defective mutant eat-2 and the mitochondrial mutant isp-1, appearance of age-related lysosomal changes is suppressed or delayed, and lysosome gene expression is increased. Thus, lysosomes may serve as a common target of multiple longevity pathways. Notably, only 2 out of the 43 lysosomal genes that are downregulated with age are targeted by all three pathways (Figure 6—figure supplement 1A). The IIS and caloric restriction pathways seem to target different sets of lysosome genes, whereas genes upregulated in isp-1 mutants are mostly shared with the IIS pathway (Figure 6—figure supplement 1A). Future studies are needed to understand why and how lysosomal genes are selectively regulated by different pathways.
 
@@ -103,78 +151,340 @@ We identified DAF-16 and SKN-1 as key factors involved in modulating lysosome ge
 
 The TFEB ortholog HLH-30 influences lifespan extension by multiple pathways via its role in autophagy and lipophagy, but its functions are highly context-dependent (O'Rourke and Ruvkun, 2013, Lapierre et al., 2013; Dall and Færgeman, 2019). It was reported recently that DAF-16 and HLH-30 act as a complex to co-regulate longevity-promoting genes in IIS mutants (Lin et al., 2018). Consistent with this, we found that expression of 6 lysosomal hydrolase genes in daf-2 is reduced by loss of hlh-30 and 5 of them are also targeted by DAF-16. The other 8 DAF-16-regulated lysosome genes are not affected by hlh-30 mutation. The lysosome degradation activity in daf-2 worms, however, seems to be unaffected by hlh-30 mutation, and is higher in daf-16;daf-2;hlh-30 than in daf-16;daf-2. We suspect that loss of hlh-30 causes a decrease in the autophagy level, which may have a beneficial effect on lysosomal activity due to reduced cargo loading into lysosomes.
 
-## Lysosome function is essential for lifespan extension
+### Lysosome function is essential for lifespan extension
 
 Our data indicate that lysosome function is essential for lifespan extension induced by multiple mechanisms. Maintenance of lysosome activity and dynamics may promote degradation of lipids, misfolded proteins and damaged organelles, which all accumulate with age. Notably, autophagy capacity declines with age in several species, which may be attributed to impaired activation and progression of autophagy and/or a decline in degradation of autophagic cargo in lysosomes (Hansen et al., 2018). On the other hand, autophagy activity increases in multiple long-lived mutants and is important for lifespan extension (Meléndez et al., 2003; Hansen et al., 2008; Lapierre et al., 2013; Tóth et al., 2008). It is conceivable that longevity pathways upregulate the functionality of both autophagy and lysosomes to achieve efficient cellular clearance for lifespan extension. However, autophagy and lysosomes may be differentially regulated by longevity pathways. For example, DAF-16 is not required for the increased level of autophagy in daf-2 (Hansen et al., 2008), but is important for lysosome regulation. Moreover, PHA-4 is required for the elevated autophagy in eat-2 mutants (Hansen et al., 2008), but is dispensable for the upregulation of lysosomal activity. mTORC1 inhibits autophagy activity but is important for lysosomal tubulation in the reformation process and for LPS-induced tubulation of lysosomes in macrophages and DCs (Yu et al., 2010; Saric et al., 2016; Hipolito et al., 2019). Inhibition of TORC1 has no effect on either appearance or enrichment of tubular lysosomes in aged C. elegans (our unpublished results). Thus, TORC1 activity may not be required for age-associated lysosomal tubule formation in worms. Future investigations are needed to understand how lysosomes are reshaped during aging and how the regulation of lysosomes and autophagy is coordinated in different longevity-promoting pathways. It is worth noting that in our study, the age-associated alterations in lysosomal morphology, motility and acidity were mainly examined in hypodermal and intestinal cells, which are big and amenable to cell biology analysis. We have not been able to examine the age-related changes in lysosomal properties in small-sized cells such as neurons. Further studies are required to understand whether lysosomes make tissue-specific contributions to aging and lifespan extension.
 
 ## Materials and methods
 
-## C. elegans strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>N2</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:N2_(ancestral)</td>
+      <td>wild type (Bristol)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CF1038</td>
+      <td>DOI: 10.1126/science.1083701</td>
+      <td>RRID:WB-STRAIN:WBStrain00004840</td>
+      <td>daf-16(mu86)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PS3553</td>
+      <td>DOI: 10.1126/science.1083701</td>
+      <td>RRID:WB-STRAIN:WBStrain00030901</td>
+      <td>hsf-1(sy441)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>DA1116</td>
+      <td>DOI: 10.1073/pnas.95.22.13091</td>
+      <td>RRID:WB-STRAIN:WBStrain00005548</td>
+      <td>eat-2(ad1116)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CF1041</td>
+      <td>DOI: 10.1126/science.1139952</td>
+      <td>RRID:WB-STRAIN:WBStrain00006375</td>
+      <td>daf-2(e1370ts)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>HZ108</td>
+      <td>DOI: 10.4161/auto.7.11.17759</td>
+      <td></td>
+      <td>cup-5(bp510)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>QV225</td>
+      <td>DOI: 10.1534/g3.115.023010</td>
+      <td>RRID:WB-STRAIN:WBStrain00031273</td>
+      <td>skn-1(zj15)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>MQD887</td>
+      <td>DOI: 10.1016/s1534-5807 (01)00071–5</td>
+      <td>RRID:WB-STRAIN:WBStrain00026670</td>
+      <td>isp-1(qm150)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>FX01978</td>
+      <td>Shohei Mitani</td>
+      <td>RRID:WB-STRAIN:WBStrain00022468</td>
+      <td>hlh-30(tm1978)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>XW10101</td>
+      <td>DOI: 10.1091/mbc.E14-01-0015</td>
+      <td></td>
+      <td>cpl-1(qx304)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>ZG31</td>
+      <td>DOI: 10.1016/j.cub.2010.10.057</td>
+      <td>RRID:WB-STRAIN:WBStrain00040824</td>
+      <td>hif-1(ia4)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>XW5399</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>qxIs257 (Pced-1NUC-1::CHERRY)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>XW8056</td>
+      <td>DOI: 10.1083/jcb.201602090</td>
+      <td></td>
+      <td>qxIs430 (Pscav-3SCAV-3::GFP)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>XW10197</td>
+      <td>DOI: 10.1016/j.devcel.2019.10.020</td>
+      <td></td>
+      <td>qxIs468 (Pmyo-3LAAT-1::GFP)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>XW11282</td>
+      <td>DOI: 10.1016/j.devcel.2019.10.020</td>
+      <td></td>
+      <td>qxIs520 (Pvha-6LAAT-1::GFP)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>XW13734</td>
+      <td>DOI: 10.1016/j.devcel.2019.10.020</td>
+      <td></td>
+      <td>qxIs612 (PhsNUC-1::sfGFP::CHERRY)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>XW19180</td>
+      <td>this paper</td>
+      <td></td>
+      <td>qxIs750 (PhsNUC-1::pHTomato)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>JJ1473</td>
+      <td>DOI:10.1242/dev.00735</td>
+      <td>RRID:WB-STRAIN:WBStrain00022491</td>
+      <td>zuIs45 (Pnmy-2NMY-2::GFP)</td>
+    </tr>
+    <tr>
+      <td>Bacterial and virus strains</td>
+      <td>Vidal RNAi library</td>
+      <td>Open Biosystems</td>
+      <td>ORF RNAi collection V2</td>
+      <td>pha-4 and skn-1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CPL-1 (rat polyclonal)</td>
+      <td>DOI: 10.1126/science.1220281</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha-Tubulin(mouse monoclonal)</td>
+      <td>Sigma-Aldrich (Missouri, USA)</td>
+      <td>Cat #T5168; RRID:AB_477579</td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CHERRY(mouse monoclonal)</td>
+      <td>SUNGENE BIOTECH(Tianjin,China)</td>
+      <td>Cat#KM8017</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPD49.26-PhsNUC-1::pHTomato</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'Plasmid construction'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pHTomato S KpnI_MluI</td>
+      <td>This paper</td>
+      <td>PDFZ1322</td>
+      <td>cgcgGGTACCggaACGCGTATG ATCAAGGAGTTCATGCGCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pHTomato CAS SacI_NotI</td>
+      <td>This paper</td>
+      <td>PDFZ1323</td>
+      <td>cgcgGAGCTCGCGGCCGC TTACTGTGCCTCCGCTGGCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Other primers used in this paper, seeSupplementary file 6</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LysoTracker Red DND-99</td>
+      <td>Invitrogen (Oregon, USA)</td>
+      <td>Cat #L7528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LysoSensor Green DND-189</td>
+      <td>Invitrogen (Oregon, USA)</td>
+      <td>Cat #L7535</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Invitrogen (Oregon, USA)</td>
+      <td>15596–018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript RT Reagent Kit</td>
+      <td>TaKaRa</td>
+      <td>RR037A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FS Universal SYBR Green Master</td>
+      <td>Roche</td>
+      <td>4913850001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico PLUS. Chemiluminescent Substrate</td>
+      <td>ThermoFisher</td>
+      <td>34577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>PerkinElmer(Massachusetts, USA)</td>
+      <td>RRID:SCR_002668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen</td>
+      <td>Carl Zeiss(Oberkochen, Germany)</td>
+      <td>RRID:SCR_01367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>N/A</td>
+      <td>V1.42q, RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains
 
 Strains of C. elegans were cultured and maintained using standard protocols (Brenner, 1974) unless indicated otherwise. The N2 Bristol strain was used as the wild type (WT) strain Genome-integrated arrays (qxIs) were acquired by γ-irradiation to achieve stable expression from arrays with low copy numbers. The following strains were used in this work: linkage group (LG) I, daf-16(mu86), hsf-1(sy441); LG II, eat-2(ad1116); LG III, daf-2(e1370ts), cup-5(bp510); LG IV, skn-1(zj15), isp-1(qm150), hlh-30(tm1978); LG V, cpl-1(qx304), hif-1(ia4). The reporter strains used in this study include qxIs257 (Pced-1NUC-1::CHERRY), qxIs468 (Pmyo-3LAAT-1::GFP), qxIs520 (Pvha-6LAAT-1::GFP), qxIs750 (PhsNUC-1::pHTomato), qxIs612 (PhsNUC-1::sfGFP::CHERRY), zuIs45 (Pnmy-2NMY-2::GFP).
 
-## Microscopy and imaging analysis
+### Microscopy and imaging analysis
 
 Differential interference contrast (DIC) and fluorescence images were captured with an Axioimager A1 (Carl Zeiss) equipped with epi-fluorescence [Filter Set 13 for GFP (excitation BP 470/20, beam splitter FT 495, emission BP 503–530) and Filter Set 20 for Cherry (excitation BP 546/12, beam splitter FT 560, emission BP 575–640)] and an AxioCam monochrome digital camera (Carl Zeiss). Images were processed and viewed using Axio-vision Rel. 4.7 software (Carl Zeiss). A 63 × objective (Plan-Neofluar NA1.30) was used with Immersol 518F oil (Carl Zeiss). Confocal images were captured by a Zeiss 880 inverted laser scanning confocal microscope with 488 nm (emission filter BP 503–530) and 543 nm (emission filter BP 560–615) lasers, and images were processed and viewed using Zen software (Carl Zeiss). All images were taken at 20°C.
 
-## Time-lapse recording using spinning-disk microscopy
+### Time-lapse recording using spinning-disk microscopy
 
 C.C. elegans adults at different ages (days 1, 3, 5, 9) were mounted on agar pads in M9 buffer with 5 mM levamisole to prevent movement of the animals. Fluorescence images were captured using a 60 × objective (CFI Plan Apochromat Lambda; NA 1.45; Nikon) with immersion oil (type NF) on an inverted fluorescence microscope (Eclipse Ti-E; Nikon) with a spinning disk confocal scanner unit (UltraView; PerkinElmer) with 488 nm [emission filter 525 (W50)] and 561 nm [dual-band emission filter 445 (W60) and 615 (W70)] lasers. To follow lysosomal dynamics in worms expressing NUC-1::CHERRY, images were captured every 1 s for 1–2 min. The collected images were viewed and analyzed using Volocity software (PerkinElmer).
 
-## RNAi treatment
+### RNAi treatment
 
 RNAi was performed by using the standard feeding method and Vidal RNAi library (Open biosystem) (Rual et al., 2004). For most experiments, 3–5 L4 larvae (P0) were cultured on the RNAi plate and F1 progeny at late larval and young adult stages were examined. The pha-4 and skn-1 RNAi led to death of the F1 progeny. In this case, ~50 bleached L1 larvae were transferred to plates seeded with bacteria expressing either control double stranded RNA (dsRNA; L4440 empty vector; Control RNAi) or dsRNA corresponding to pha-4 and skn-1. The phenotype was examined at adult stages in the same generation.
 
-## Quantification of lysosomal tubule length
+### Quantification of lysosomal tubule length
 
 Fluorescence images of C. elegans adults at different ages (days 1, 3, 5, 9) expressing NUC-1::CHERRY were captured by laser scanning confocal microscopy (Carl Zeiss). The length of NUC-1::CHERRY-positive tubules in each worm was quantified by Image J software. Tubular lysosomes that crossed one another were counted as two individual tubules. 10 lysosomal tubules were measured in each animal and at least 20 animals were scored in each strain at each day.
 
-## Quantification of lysosome number and volume
+### Quantification of lysosome number and volume
 
 Fluorescence images of C. elegans adults at different ages (days 1, 3, 5, 9) expressing NUC-1::CHERRY in 10–15 z-series (0.5 µm/section) were captured by spinning-disk microscopy. Serial optical sections were analyzed, and the volume and number of NUC-1::CHERRY-positive vesicular lysosomes per unit area (31 × 43 µm2) was quantified by Volocity software (PerkinElmer). At least eight animals were quantified in each strain at each stage. The total volume of vesicular and tubular lysosomes was quantified by Volocity. At least 10 worms were quantified in each strain at each day.
 
-## Quantification of lysosome dynamics
+### Quantification of lysosome dynamics
 
 Time-lapse images of C. elegans L4-stage larvae and adults at different ages (days 1, 3, 5, 9) expressing NUC-1::CHERRY were captured by spinning-disk microscopy. To quantify Pearson’s correlation coefficient, the colocalization of two frames taken 60 s apart was analyzed by Volocity software (PerkinElmer). The average velocity (displacement rate) of tubular and vesicular lysosomes within 60 s was measured by Volocity software (PerkinElmer). At least 10 independent videos were recorded and quantified in each strain at each day.
 
-## LysoSensor green and LysoTracker staining
+### LysoSensor green and LysoTracker staining
 
 C.C. elegans adults at different age (~40 at each age) were soaked in 80 µl M9 buffer containing LysoSensor Green DND 189 and LysoTracker Red DND 99 at 10 µM for staining in the intestine and 60 µM for staining in the hypodermis (Invitrogen, Oregon, USA). Staining was carried out for 1 hr at 20°C in the dark. Worms were then transferred to NGM plates with fresh OP50 and allowed to recover at 20°C for 1 hr in the dark before examination. The relative intensity of LSG/LTR was quantified by Volocity (PerkinElmer).
 
-## Quantification of NUC-1::pHTomato intensity
+### Quantification of NUC-1::pHTomato intensity
 
 C. elegans adults (1 day post L4/adult molt) expressing PhsNUC-1::pHTomato were incubated at 33°C for 30 min and recovered at 20 °C for 24 hr before examination. The average intensity of pHTomato per lysosome in the hypodermis was measured by Volocity (PerkinElmer). At least 20 worms were quantified in each strain.
 
-## Lysosome degradation activity assay
+### Lysosome degradation activity assay
 
-## Examination and quantification of CPL-1 processing
+#### Examination and quantification of CPL-1 processing
 
 About 50 C. elegans adults at different ages (days 1, 5, 9) were picked and washed three times with M9. The worms were lysed by boiling followed by several rounds of freezing and thawing. The resulting worm lysate was resolved by SDS-PAGE and the CPL-1 processing was detected by anti-CPL antibodies (Antibody core, NIBS, 1:1000). α-tubulin antibody (Sigma) was used at 1:5000 as an internal control. The band intensities of the mature and pro- forms of CPL-1 were quantified by Image J software, then CPL-1 processing was quantified by dividing the mature CPL-1 by the total CPL-1 (both pro- and mature forms). three independent experiments were performed and quantified in each strain at each stage.
 
-## Quantification of NUC-1::CHERRY cleavage
+### Quantification of NUC-1::CHERRY cleavage
 
 Adult worms (~50, 1 day post L4/adult molt) expressing NUC-1::CHERRY were washed three times in M9. The worms were lysed by boiling followed by several rounds of freezing and thawing. The resulting worm lysate was analyzed by Western blot using anti-CHERRY antibodies (SUNGENE BIOTECH, China, 1:1000) and anti-tubulin antibodies (Sigma, 1:5000). The intensities of NUC-1::CHERRY and CHERRY bands were quantified by Image J software and the extent of cleavage was calculated by dividing the amount of CHERRY by the total amount of NUC-1::CHERRY and CHERRY. three independent experiments were performed and quantified in each strain.
 
-## HVEM analysis
+### HVEM analysis
 
 C. elegans adults at different ages (days 1, 5) were rapidly frozen using a high-pressure freezer (EM PACT2; Leica Biosystems). Freeze substitution was performed in anhydrous acetone containing 1% osmium tetroxide. The samples were kept sequentially at −90°C for 72 hr, −60°C for 8 hr, and −30°C for 8 hr and were finally brought to 20°C for 10 hr in a freeze-substitution unit (EM AFS2; Leica Biosystems). The samples were washed three times (1 hr each time) in fresh anhydrous acetone and were gradually infiltrated with Embed-812 resin in the following steps: resin/acetone 1:3 for 3 hr, 1:1 for 5 hr, 3:1 overnight, and 100% resin for 4 hr. Samples were then kept overnight and embedded at 60°C for 48 hr. The fixed samples were cut into 70 nm sections with a microtome EM UC7 (Leica Biosystems) and electron-stained with uranyl acetate and lead citrate. Sections were observed with a JEM-1400 (JEOL) operating at 80 kV. For quantitative analysis of lysosomes, three to five animals were analyzed in each strain at each stage, using eight 70 nm sections (non-consecutive sections, spaced at 5000 nm) in each animal. Images of each lysosome were taken at high magnification (60,000 × or 30,000×) and the numbers were counted manually. Lysosome diameter was measured by Image J software.
 
-## Quantitative real-time PCR (qRT-PCR)
+### Quantitative real-time PCR (qRT-PCR)
 
 Worms were synchronized and cultured at 20°C to different ages (adult day 1 and day 5). Total RNA was extracted from 20 µl worm pallets at each stage using Trizol (Invitrogen/Life Technologies, Carlsbad, CA) and reverse transcribed by a PrimeScript RT Reagent Kit (TaKaRa). The reverse transcription products (cDNA) were diluted to 10 ng/µl and used as the template for quantitative PCR. For quantitative RT-PCR, custom-designed primers were mixed with SYBR Green Mix (Roche) and samples were analyzed using a PCR biosystems QuantStudio 7 Flex (Applied Biosystems). The gene cdc-42 was used as the internal reference. At least three independent experiments were performed with three replications each time.
 
-## Quantification of NMY-2::GFP intensity and number of puncta
+### Quantification of NMY-2::GFP intensity and number of puncta
 
 Fluorescence images of C. elegans adults expressing NMY-2::GFP at different ages (days 1 and 5) were captured by laser scanning confocal microscopy (LSM 880, Carl Zeiss). Fluorescence intensity in oocytes (the second, third and fourth oocytes counted from the spermatheca) were measured by Volocity software. The number of NMY-2::GFP puncta in oocytes was counted manually. 50 animals were quantified in each strain at each day.
 
-## Lifespan assay
+### Lifespan assay
 
 Worms were synchronized and cultured at 20°C until they reached the L4 stage. About 150 L4-stage worms (day 0) were picked to NGM plates with fresh OP50, 15 worms per plate. Worms were considered dead when they failed to respond to gentle touches on the head and tail with a worm picker. The surviving worms were counted every 2 days and were transferred to new plates to avoid interference from the progeny. Animals that crawled off the plate, exploded, bagged, or became contaminated were discarded. At least 100 worms were quantified in each strain. At least three independent experiments were performed for each strain. Representative survival curves are shown in Figure 9L,N,P and the mean lifespan from three experiments is shown in Figure 9M,O,Q.
 
-## Plasmid construction
+### Plasmid construction
 
 To generate PhsNUC-1::pHTomato, pHTomato was amplified from plasmid PmitopHTomato (Chen Chang Lab, Institute of Biophysics, Chinese Academy of Science, China) using primers PDFZ1322/PDFZ1323 and was ligated to pPD49.26-Phyp-7NUC-1 through the Kpn I-Mlu I/Sac I sites, followed by replacement of the hyp-7 promoter with the heat-shock promoter (hs) through the BamH I site.
 
-## Statistical analysis
+### Statistical analysis
 
 The standard deviation (SD) was used as y-axis error bars for bar charts plotted from the mean value of the data. Data derived from different genetic backgrounds and/or different stages were compared by Multiple t testing, paired t testing, one-way ANOVA with Tukey's multiple comparisons test or two-way ANOVA with Fisher’s LSD test. Data were considered statistically different when p<0.05. p<0.05 is indicated with single asterisks, p<0.001 with double asterisks.

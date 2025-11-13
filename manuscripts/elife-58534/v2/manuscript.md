@@ -22,7 +22,7 @@
 
 ## Abstract
 
-The periosteum is the major source of cells involved in fracture healing. We sought to characterize progenitor cells and their contribution to bone fracture healing. The periosteum is highly enriched with progenitor cells, including Sca1 + cells, fibroblast colony-forming units, and label-retaining cells compared to the endosteum and bone marrow. Using lineage tracing, we demonstrate that alpha smooth muscle actin (αSMA) identifies long-term, slow-cycling, self-renewing osteochondroprogenitors in the adult periosteum that are functionally important for bone formation during fracture healing. In addition, Col2.3CreER-labeled osteoblast cells contribute around 10% of osteoblasts but no chondrocytes in fracture calluses. Most periosteal osteochondroprogenitors following fracture can be targeted by αSMACreER. Previously identified skeletal stem cell populations were common in periosteum but contained high proportions of mature osteoblasts. We have demonstrated that the periosteum is highly enriched with skeletal progenitor cells, and there is heterogeneity in the populations of cells that contribute to mature lineages during periosteal fracture healing.
+The periosteum is the major source of cells involved in fracture healing. We sought to characterize progenitor cells and their contribution to bone fracture healing. The periosteum is highly enriched with progenitor cells, including Sca1+ cells, fibroblast colony-forming units, and label-retaining cells compared to the endosteum and bone marrow. Using lineage tracing, we demonstrate that alpha smooth muscle actin (αSMA) identifies long-term, slow-cycling, self-renewing osteochondroprogenitors in the adult periosteum that are functionally important for bone formation during fracture healing. In addition, Col2.3CreER-labeled osteoblast cells contribute around 10% of osteoblasts but no chondrocytes in fracture calluses. Most periosteal osteochondroprogenitors following fracture can be targeted by αSMACreER. Previously identified skeletal stem cell populations were common in periosteum but contained high proportions of mature osteoblasts. We have demonstrated that the periosteum is highly enriched with skeletal progenitor cells, and there is heterogeneity in the populations of cells that contribute to mature lineages during periosteal fracture healing.
 
 ## Introduction
 
@@ -36,57 +36,109 @@ In the current study, we have used murine models to characterize the periosteal 
 
 ## Results
 
-## In vivo identification of long-term osteochondroprogenitors
+### In vivo identification of long-term osteochondroprogenitors
 
 In order to identify murine periosteal progenitor populations in vivo, we initially utilized a lineage tracing approach with a tamoxifen-inducible Cre combined with the Ai9 Tomato (Tom) reporter. We have demonstrated that αSMACreER identifies osteoprogenitors in both the periosteum and the bone marrow compartment (Matthews et al., 2014; Grcevic et al., 2012; Matthews et al., 2020). Previously, we delivered tamoxifen at the time of fracture, which potentially labels cells that activate αSMA expression at the time of or shortly after fracture (Mori et al., 2016). In this study, we delivered tamoxifen up to 90 days before fracture to evaluate whether the reporter was identifying long-term progenitor cells. First, we confirmed that αSMA-labeled cells were retained in the periosteum over the experimental time course by both histology (Figure 1A–B) and flow cytometry (Figure 1C). αSMA-labeled cells remained in the periosteum at a similar frequency over the timeframe evaluated and also remained in the endosteum (Figure 1D). In juvenile mice (4–5 weeks old), we see contribution of αSMA+ cells from the bone marrow compartment, particularly in the trabecular region, to osteoblasts and osteocytes after 17 days (Figure 1—figure supplement 1A–B; Grcevic et al., 2012). However, 70 days after tamoxifen delivery, osteoblasts are no longer labeled, but some Tom+ osteocytes remain (Figure 1—figure supplement 1C–F). In contrast, when tamoxifen is delivered to sexually mature mice, there is no contribution to osteoblasts in trabecular bone up to 100 days after tamoxifen (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig1-v2.jpg)
+
+**Figure 1.:** Representative images of tibia mid-shaft periosteum: (A) 14 days or (B) 56 days after tamoxifen with the periosteal surface near the top and endosteal surface near the bottom of the image. Percentage of αSMA-labeled (Tom+) cells within the CD45- population at different time points in (C) periosteum and (D) endosteum as measured by flow cytometry (n = 2–5). Fracture histology of representative day 7 tibial fracture calluses in different groups. Diagrams indicate the experimental design. (E) αSMA-labeled with tamoxifen (Tam) at day −1, 0; (F) αSMA-labeled with tamoxifen at day −91, –90. Quantification of Col2.3GFP+ osteoblasts derived from αSMA-labeled cells in the fracture callus based on image analysis (Tom+GFP+ cells/GFP+ cells) in (G) day 7 fracture callus and (H) day 14 fracture callus at different times after tamoxifen administration. (I) Quantification of Sox9+ chondrocytes derived from αSMA-labeled cells in day 7 fracture callus. All images show mineralized bone by dark field (gray) and DAPI+ nuclei in blue. Scale bars are 100 µm (A, B) or 250 µm (E–F). In F, the boxed area is magnified and αSMA-labeled osteoblasts as quantified in G-H are indicated with arrowheads. Approximate callus area used for analysis is indicated by the dashed lines in E-F, cortical bone surface defines the inner boundary. *p<0.05 compared to no tamoxifen control with ANOVA followed by Dunnett’s posttest. #p<0.05 compared to tamoxifen day 0 group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Lineage tracing in the distal femur of αSMACreER/Ai9 mice at different time points after tamoxifen treatment at 4–5 weeks of age. (A) and (B) are replicates of data shown in Grcevic et al., 2012. Both show background signal in bone marrow in green and (C–F) have DAPI staining in blue. After 17 days, many osteoblasts and osteocytes in trabeculae are labeled, but at day 70 magnified areas show that few labeled cells are present in the primary spongiosa (D), but labeled osteocytes are retained in more proximal trabeculae (E) and in some cortical regions (F). Muscle is labeled due to targeting of some satellite cells by αSMACreER (Matthews et al., 2016). Scale bars are 250 µm (A–C) and 100 µm (D–F). gp, growth plate.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Proximal tibia trabecular histology in αSMACreER/Ai9/Col2.3GFP mice 14 (A) and 100 days (B) after tamoxifen treatment during adulthood (at least 8 weeks of age). Note that there are few red cells and almost no contribution to osteoblasts or osteocytes. Scale bars are 250 µm. gp, growth plate.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Fracture histology of representative day 7 callus in an αSMACreER/Ai9/Col2.3GFP mouse never exposed to tamoxifen showing the red channel only and merged image. The magnified images show the boxed area. A small number of red cells are visible; however, very few colocalize with Col2.3GFP. Images show mineralized bone by dark field (gray) and DAPI+ nuclei in blue. Callus area is outlined by white dashed lines. Scale bar is 250 µm. (B) Contribution of αSMA-labeled cells to new Col2.3GFP+ osteoblasts in the bone marrow compartment (as indicated by pink box in A) in day 7 fractures and (C) in day 14 fractures. *p<0.05 compared to no tamoxifen control with ANOVA followed by Dunnett’s posttest. #p<0.05 compared to tamoxifen day 0 group. αSMA, alpha smooth muscle actin.
+
 Following tibial fracture, αSMA-labeled cells made substantial contributions to fracture callus osteoblasts and chondrocytes (Figure 1E–I). Very few Tom+ cells were present or contributed to mature cell types in the absence of tamoxifen (Figure 1G–I, Figure 1—figure supplement 3A). Most fracture callus osteoblasts are derived from cells that expressed αSMA at some point in their lineage, with 81.5% derived from αSMA+ cells labeled just after fracture. A smaller population of osteoblasts were derived from long-term αSMA-labeled progenitors (around 20%, Figure 1G–H). The contribution of αSMA-labeled cells was similar in both the initial intramembranous bone formation in the day 7 callus and the more fully mineralized day 14 callus. Contribution to chondrocytes showed a very similar trend based on the timing of tamoxifen; however, the proportion of Tom+ chondrocytes was always lower (Figure 1I). Following the pin insertion and fracture, bone formation also occurs inside the marrow compartment, particularly in the proximal diaphysis surrounding the pin over 1 mm from the fracture site (Figure 1—figure supplement 3). αSMA-labeled cells labeled at the time of fracture make a major contribution to newly formed osteoblasts in the marrow compartment; however, there was lower contribution at the later time points suggesting that αSMA identifies long-term injury-responsive osteochondroprogenitors in the periosteum but does not consistently label long-term injury-responsive cells in the bone marrow compartment.
 
-## Putative mesenchymal stem cell markers are enriched in periosteum
+### Putative mesenchymal stem cell markers are enriched in periosteum
 
 We performed further characterization of cell populations in the periosteum, first, to evaluate surface profile using putative mesenchymal stem cell or SSC markers and their corresponding growth potential and, second, to characterize αSMA-labeled cell marker expression. There are numerous markers for SSCs and progenitor cells reported in the literature; however, many have not been evaluated systematically in different tissue compartments. We evaluated the expression of several cell surface markers in periosteum, endosteum, and bone marrow of adult mice (Figure 2A, Figure 2—figure supplement 1). All stains included a CD45/CD31/Ter119 cocktail to exclude hematopoietic and endothelial cells and select for mesenchymal lineages (termed CD45- population). We confirmed that the freshly isolated CD45+ population was unable to form fibroblast colony-forming units (CFU-F) or any type of colonies in the CFU-F assay. The CD45- population in periosteum was highly enriched with most of the markers evaluated compared to both endosteum and bone marrow (Figure 2A). Sca1, PDGFRα, and PDGFRβ were abundant in periosteum, but expressed on <2% CD45- endosteal and bone marrow cells. The only marker that did not follow this trend was CD105, which was consistently present on the majority of endosteal and bone marrow CD45- cells. Various marker combinations that have previously been used to identify stem cells such as Sca1/PDGFRα or Sca1/CD51 were easily identifiable in periosteum but very rare in the endosteum or bone marrow (Figure 2—figure supplement 1). The CD45- periosteal population formed around 20× more CFU-F than the CD45- endosteal population, suggesting functional enrichment of stem and progenitor cells (Figure 2B). This is in agreement with Duchamp de Lageneste et al. (Duchamp de Lageneste et al., 2018) who used a different method to isolate periosteal cells. We went on to evaluate the expansion and differentiation potential of selected periosteal populations independently of αSMA expression using in vitro assays. CFU-F formation was restricted to CD51+ cells, and most enriched in Sca1+ CD51+ cells (Figure 2—figure supplement 2A). CD90+ cells also showed high CFU-F potential, whereas CD105+ cells, which are almost exclusively CD90-, formed few or no colonies. Sca1+ CD51+ cells showed the ability to differentiate toward osteogenic (ALP+) and adipogenic (Oil Red O+) lineages, in many cases within a single colony (Figure 2—figure supplement 2B-C). Similar results were obtained for the CD90+ population. Sca1- CD51+ cells and CD90- CD105- cells efficiently activated ALP but never differentiated into adipocytes. This suggests that in addition to including some mature osteoblasts, these populations contain committed osteoprogenitors that remain capable of density-independent growth. All these populations contained a small proportion of αSMA-labeled cells, with the highest frequency of αSMA-labeled cells in the CD90+ population (Figure 2—figure supplement 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig2-v2.jpg)
+
+**Figure 2.:** Flow cytometry and cell sorting was used to evaluate marker expression in tissue from adult long bones. (A) Expression of cell surface markers in periosteum, endosteum, and bone marrow samples as a percentage of the CD45/Ter119/CD31- fraction, n = 4–50. Expression in periosteum is significantly different from both bone marrow and endosteum for all markers (two-way ANOVA with posttest comparing cell types). (B) Colony-forming unit fibroblast (CFU-F) formation in the total CD45/Ter119/CD31- fraction. (C) Representative dot plot showing gating of alpha smooth muscle actin (αSMA)-labeled cells. (D) Proportion of αSMA-labeled cells within the CD45/Ter119/CD31- gate 2–3 days after tamoxifen in different tissue compartments (n = 17). Cell surface marker expression in the Tom+ population 2–3 days after tamoxifen in (E) periosteum and (F) endosteum (n = 4–17). (G) Cell surface profile of αSMA-labeled periosteum cells at different time points (n = 2–7). *p<0.05 compared to CD45- population.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Representative plots showing (A) the initial gating scheme to enable analysis of CD45/CD31/Ter119- mesenchymal cell populations in periosteum and expression of indicated markers in (B) periosteum, (C) endosteum, and (D) bone marrow of representative samples in relation to Sca1. Quadrant percentages are specific to the sample that is shown. The periosteum, endosteum, and bone marrow samples in each column come from the same sample (obtained from two animals). FSC, forward scatter; SSC, side scatter.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Colony-forming unit fibroblast (CFU-F) formation of different CD45- periosteal populations (n = 3–4). *p<0.05 compared to total CD45- based on one-way ANOVA with Dunnett’s posttest. (B) Differentiation potential of cell populations grown in mixed osteogenic adipogenic conditions. Pink is ALP stain, red is Oil Red O, colonies indicated show osteogenic only (blue arrowhead), adipogenic only (black arrowhead), and mixed (*) colonies. (C) Quantification of colony differentiation from different populations. (D) Dot plots indicating different populations sorted and analyzed and percentage of αSMA+ cells (Tom+ cells 2–3 days after tamoxifen injection) within each of the CD45- cell populations indicated (n = 10–16).
 
 We next performed further characterization of αSMA-labeled cells in the absence of injury. By flow cytometry, we confirmed that αSMA+ cells were much more prevalent in periosteum compared to endosteum and bone marrow in adult mice (Figure 2C–D), although they were rarer than the other markers we analyzed. We evaluated expression of various markers in the αSMA+ population. The majority of αSMA-labeled cells in the periosteum and endosteum express CD51 and CD90 (Figure 2E–F). The other markers tested were expressed in smaller subsets of αSMA-labeled cells, indicating there is heterogeneity within the labeled population. We next evaluated whether the prevalence of any of these markers in the αSMA-labeled population changed over time since labeling. We did not detect differences in the level of expression of any of the markers evaluated individually or in various combinations at different times after tamoxifen, suggesting that additional markers may be required to define the heterogeneity and phenotype of these cells (Figure 2G).
 
 To further evaluate heterogeneity, we performed plate-based single cell RNAseq analysis on αSMA-labeled periosteal cells isolated at different time points after tamoxifen administration (Figure 3). We obtained data from 185 cells from 2 days after tamoxifen, 197 cells from 6 weeks, and 147 cells from 13 weeks after tamoxifen. The median unique molecular identifier (UMI) number was 697, and the median number of expressed genes was 449 (Figure 3—figure supplement 1). Since expression levels for the majority of genes were low in this study, we restricted our analysis to basic clustering studies. Clustering using the Leiden community detection algorithm generated four clusters from the αSMA-labeled cells, confirming heterogeneity in this population (Figure 3A, Figure 3—figure supplement 2; Traag et al., 2019). Clusters 1–3 are similar and appear to represent mainly periosteal populations. Cluster 4 is quite separate from the rest and appears to be derived from muscle contamination, expressing markers such as skeletal muscle actin, Acta1, and myoglobin, Mb (Figure 3—figure supplement 2B). We have previously demonstrated that αSMA labels a subset of muscle satellite cells that go on to generate myofibers in both juvenile and adult animals (Matthews et al., 2016). Notably, of the 26 cells in this cluster, only one was from the day 2 chase group, consistent with the differentiation of αSMA+ satellite cells into mature muscle lineage cells over time.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig3-v2.jpg)
+
+**Figure 3.:** Plate-based RNAseq was performed on alpha smooth muscle actin (αSMA)-Tom+ cells at up to 13 weeks after tamoxifen delivery. (A) UMAP cluster plot indicating four clusters. (B) Violin plots of top markers for clusters 1–3. (C) Distribution of cells in clusters 1–3 at different time points following tamoxifen. (D) Heat map of expression of putative skeletal stem and periosteal progenitor markers.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Gating for cell sorting of the 6-week chase cells. (B) Violin plots showing summary data for unique molecular identifier (UMI) counts, number of genes detected, and proportion of mitochondrial transcripts within the dataset.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Heat map indicating expression of cluster markers with area under the receiver operating characteristics curve (AUROC) values >0.7 for (A) clusters 1–3 which appear to be periosteal populations and (B) cluster 4 which shows expression of skeletal muscle lineage genes.
+
 Cluster 3 is characterized by expression of a number of pericyte markers, including Rgs5, and frequent expression of PDGFRβ and αSMA. They also frequently express Cxcl12, which is a marker of bone marrow resident reticular cells, and Fabp4, which is known as an adipocyte lineage marker (Figure 3B, Figure 3—figure supplement 2A). Other adipocyte markers like Adipoq and Pparg were undetectable in most cells. The proportion of cluster 3 cells increased slightly over time, suggesting they might represent a population of mature perivascular cells (Figure 3C). Clusters 1 and 2 show some overlap, and cluster 1 had few selective markers, with only the matrix protein gelsolin, Gsn, passing our marker criteria. Interestingly, cluster 1 shows the most frequent expression of the genes for Sca1, PDGFRα, and CD90, suggesting it may contain multipotent stem/progenitor populations (Figure 3D). The proportion of cells in cluster 1 was reduced following longer chase periods, in line with the reduction in αSMA-lineage contribution to fracture healing at later time points. Markers of cluster 2 are primarily matrix genes that can be expressed by the osteoblast lineage, including Col1a2, Tnmd, Fmod, and Ogn. Unpublished studies we performed in parallel with differentiated osteoblasts show consistently high levels of Bglap in differentiated osteoblasts, but Bglap is absent or present at only low levels in the αSMA-labeled cells, indicating that cluster 2 does not represent mature osteoblast lineage cells. It is feasible that at least some of these cells are from the fibrotendonous lineage, as the periosteum contains fascia and fibrous tendon attachments, which appear to be targeted by αSMA histologically. Overall, our data indicate that αSMA+ cells are a fairly rare, but heterogeneous cell population within the periosteum that can be separated into at least three different cell types.
 
-## Label-retaining cells in the periosteum are enriched with progenitor markers
+### Label-retaining cells in the periosteum are enriched with progenitor markers
 
 One feature of long-term stem cells is a slow cycling rate, and this can be evaluated experimentally using label retention assays. We used a doxycycline (dox)-inducible GFP-tagged histone system, H2B-GFP, which is incorporated into the DNA during dox feeding, then diluted during subsequent cell division. This system has been used for enrichment of highly self-renewing populations of hematopoietic stem cells and muscle satellite cells (Foudi et al., 2009; Chakkalakal et al., 2014). The experimental design for generating label-retaining cells (LRCs) is shown in Figure 4A. H2B-GFP was incorporated into the majority of periosteal cells (Figure 4B, Figure 4—figure supplement 1A). Quiescent terminally differentiated cells such as osteocytes also effectively retain the label (Figure 4—figure supplement 1B). Flow cytometry was used to track GFP expression in the CD45- fraction of the periosteum (Figure 4B–C). Our periosteal isolation procedure excludes bone tissue and therefore osteocytes, and we have previously demonstrated that our endosteal preparations contain almost no osteocytes (Matic et al., 2016). After the chase phase, the periosteum contained a small population of true LRCs (GFPhi), as well as a slightly larger GFPint population which would be expected to contain some LRCs. Histologically, the LRCs were mostly in the inner cambium layer of the periosteum (Figure 4—figure supplement 1B). We confirmed that most cells capable of forming CFU-F initially incorporated a GFP label (Figure 4D). After the chase, both GFP+ populations showed enrichment of CFU-F compared to the GFP- fraction (Figure 4E). We also evaluated cell surface marker expression in LRCs and found strong enrichment of Sca1 and CD51, more frequent expression of CD90, and fewer CD105+ cells in periosteum (Figure 4F) and endosteum (Figure 4G) compared to GFP- cells. Since label retention alone was not very effective at enriching CFU-F, we combined this approach with αSMA-labeling. Initially, we labeled 73.4 ± 7.6% of αSMA+ cells, and after at least 13 weeks chase, 22.6 ± 7.7% were LRCs, indicating a large proportion of these cells are quiescent (Figure 4—figure supplement 2A). This is a substantially higher proportion of LRCs than we found in the overall CD45- population of the same samples (3.2 ± 1.5%, p<0.0001). Ex vivo, αSMA-labeled LRCs (GFP+Tom+) were enriched for CFU-F compared to the GFP-Tom+ population (Figure 4—figure supplement 2B). Interestingly, αSMA-labeled LRCs appeared to be lineage-restricted, with evidence of differentiation along the osteogenic lineage but absence of adipogenic differentiation (Figure 4—figure supplement 2C). αSMA-labeled LRCs were more frequently CD51+, but fewer were CD90+ that Tom+ non-LRCs (Figure 4—figure supplement 2D).
 
-## Evaluation of SSC populations in adult mice
+![Figure 4.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig4-v2.jpg)
+
+**Figure 4.:** (A) Experimental design for label-retaining cell experiments. (B) Representative gating of the CD45- population in different periosteum samples to define three populations based on GFP expression. (C) Quantification of different GFP populations in a representative experiment for periosteum and endosteum (n = 1, no doxycycline [dox]; n = 4, no chase; n = 6, 13-week chase). (D) Colony-forming unit fibroblast (CFU-F) frequency in different CD45- GFP populations in periosteal no chase samples (n = 3) and (E) following chase (n = 6). Cell surface marker expression is shown in different CD45- GFP subsets following chase (populations equivalent to right-hand label-retaining cell plot in B) in (F) periosteum cells and (G) endosteal cells. Data is pooled from three separate experiments involving 13–22 weeks chase (n = 19). *p<0.05, repeated measures ANOVA with Dunnett’s posttest compared to GFP- population.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) H2B-GFP expression in a distal femur following 5-week doxycycline (dox) and 2 days after tamoxifen. (B) H2B-GFP label-retaining cells after 13-week chase; tamoxifen was given at the time of dox withdrawal. Boxed areas are magnified. Dashed lines indicate the periosteum and arrowheads indicate GFP+ αSMA-Tom+ cells in the cambium layer of the periosteum. gp, growth plate. Scale bars are 250 or 100 µm (high magnification images).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative flow plots showing identification of αSMA-labeled label-retaining cells. Values represent an average of n = 3–10. (B) CFU-F formation and (C) differentiation of colonies under mixed osteogenic/adipogenic conditions of αSMA-labeled label-retaining cells and other subpopulations (n = 5 for CFU-F, n = 3 for differentiation). (D) Cell surface marker expression in αSMA-labeled subpopulations. *p<0.05 compared to negative population, #p<0.05 compared to Tom+GFP- population.
+
+### Evaluation of SSC populations in adult mice
 
 In order to systematically evaluate stem cell populations in adult animals, we evaluated the utility of the stain described by Chan et al. to identify SSC and BCSP (Chan et al., 2015). Stem/progenitor markers and gating strategies should, by definition, exclude mature cell types of the lineage. There are no validated methodologies available to identify osteoblasts using cell surface markers, although some authors report Sca1+CD51+ as stem cells and Sca1-CD51+ cells as committed osteoprogenitors or osteoblasts (Arthur et al., 2019; Lundberg et al., 2007). We utilized the Col2.3GFP transgene to identify mature osteoblasts (Kalajzic et al., 2002; Dacquin et al., 2002). Col2.3GFP+ cells were always present in endosteal samples (5.4 ± 5.0% of CD45-) and were detectable in numbers sufficient for analysis in some periosteum samples (1.3 ± 1.3% of CD45-). CD200 expression was present on over 90% of Col2.3GFP osteoblasts in both endosteum and periosteum, suggesting that CD200 may be useful for positive selection of osteoblasts. Around 35% of endosteal osteoblasts were CD51+ (Figure 5A; Matic et al., 2016). A subset of osteoblasts in both tissues were CD105+, while the other markers including Sca1, CD90, and Ly51 (also known as 6C3) were rare or absent in endosteal osteoblasts. The gating strategy to identify SSCs and BCSPs in both periosteum and endosteum is shown in Figure 5C–D. We found that Col2.3GFP+ osteoblasts constituted almost 40% of endosteal cells defined as SSC (CD45-CD51+CD90-Ly51-CD105-CD200+) and 20% defined as BCSP (CD45-CD51+CD90-Ly51-CD105+) (Figure 5D). The proportion of mature osteoblasts in these populations was lower in periosteal samples but still represented 7–8% of SSC and BCSP (Figure 5C). The pre-BCSP population (CD45-CD51+CD90-Ly51-CD105-CD200-) contains very few osteoblasts. In addition, when we evaluate the proportion of SSC and BCSP in different tissue compartments, we find that the GFP+ osteoblast populations, particularly in the endosteum, have the highest frequency of these ‘stem cells’ (Figure 5B). Therefore, these marker combinations used for SSC and BCSP do not exclude mature cells within the osteoblast lineage in adult mice, so do not specifically identify stem cells in this setting.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig5-v2.jpg)
 
-**Figure 5.:** (A) Marker expression on Col2.3GFP+ osteoblasts, n = 4–32. (B) Frequency of BCSP and SSC populations in different tissue compartments and populations (n = 8–12). (C–D) Gating to identify BCSPs, pre-BCSPs, SSCs, and presence of Col2.3GFP+ osteoblasts as a major component of these populations in periosteum (C) and endosteum (D). Mean ± standard deviation for % GFP+ cells are shown.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Marker expression on Col2.3GFP+ osteoblasts, n = 4–32. (B) Frequency of BCSP and SSC populations in different tissue compartments and populations (n = 8–12). (C–D) Gating to identify BCSPs, pre-BCSPs, SSCs, and presence of Col2.3GFP+ osteoblasts as a major component of these populations in periosteum (C) and endosteum (D). Mean ± standard deviation for % GFP+ cells are shown.
 
-## αSMA identifies transplantable, self-renewing osteoprogenitors
+### αSMA identifies transplantable, self-renewing osteoprogenitors
 
 In ex vivo assays, αSMA+ periosteal cells were capable of CFU-F formation (Figure 6A). Following transplantation into a critical-sized calvarial defect, αSMA+ cells were readily identified in all sections evaluated, indicating the ability to engraft and expand in the defect (Figure 6B). Some cells activated Col2.3GFP, indicating limited differentiation into osteoblasts, similar to a recent study (Ortinau et al., 2019). We did not see evidence of cartilage formation in these defects at the time point evaluated. We tested the in vivo self-renewal potential of αSMA-labeled cells by performing a fracture, allowing it to heal for 8 weeks, then refracturing the same bone in a similar location. When tamoxifen was given at the time of initial fracture, around 20% of both osteoblasts and chondrocytes in the secondary fracture callus are derived from the original αSMA-labeled population (Figure 6C–J). This is 35–50% of the contribution in the first fracture but indicates self-renewal of a proportion of αSMA-labeled progenitors. Contribution to the secondary fracture when tamoxifen was given 14 days prior to the first fracture was not statistically significantly different to the day 0 group, confirming identification of self-renewing osteochondroprogenitors.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig6-v2.jpg)
 
-**Figure 6.:** (A) Colony-forming unit fibroblast (CFU-F) frequency of periosteal αSMA-labeled cells sorted 2 days after tamoxifen. (B) Engraftment of transplanted αSMA-labeled cells in a calvarial defect 5 weeks after transplantation. Arrowheads indicate cells that are Col2.3GFP+. Quantification of αSMA-labeled cell contribution to (C) osteoblasts and (D) chondrocytes in day 7 secondary fracture calluses is shown. (E) Experimental design and fracture callus histology following a second tibia fracture in αSMACreER/Ai9/Col2.3GFP mice showing contribution of Tom+ cells to callus tissue, including osteoblasts (F) and Sox9+ chondrocytes (white) (G). (H–J) Histology of a similar secondary fracture where tamoxifen was given 14 days prior to the primary fracture. White arrowheads indicate αSMA-labeled Col2.3GFP+ osteoblasts, orange arrowheads indicate αSMA-labeled Sox9+ chondrocytes. DAPI stain is shown in blue. Approximate callus area used for analysis is indicated by the dashed lines in E and H. Scale bars indicate 250 µm (low magnification) and 100 µm (high magnification).Figure 6—source data 1.Figure 6C-D.
+**Figure 6.:** (A) Colony-forming unit fibroblast (CFU-F) frequency of periosteal αSMA-labeled cells sorted 2 days after tamoxifen. (B) Engraftment of transplanted αSMA-labeled cells in a calvarial defect 5 weeks after transplantation. Arrowheads indicate cells that are Col2.3GFP+. Quantification of αSMA-labeled cell contribution to (C) osteoblasts and (D) chondrocytes in day 7 secondary fracture calluses is shown. (E) Experimental design and fracture callus histology following a second tibia fracture in αSMACreER/Ai9/Col2.3GFP mice showing contribution of Tom+ cells to callus tissue, including osteoblasts (F) and Sox9+ chondrocytes (white) (G). (H–J) Histology of a similar secondary fracture where tamoxifen was given 14 days prior to the primary fracture. White arrowheads indicate αSMA-labeled Col2.3GFP+ osteoblasts, orange arrowheads indicate αSMA-labeled Sox9+ chondrocytes. DAPI stain is shown in blue. Approximate callus area used for analysis is indicated by the dashed lines in E and H. Scale bars indicate 250 µm (low magnification) and 100 µm (high magnification).
 
-## Functional contribution of αSMA+ cells to fracture healing
+### Functional contribution of αSMA+ cells to fracture healing
 
 We evaluated the functional importance of αSMA+ cells during fracture healing using the Rosa-DTA model of cellular ablation. Diphtheria toxin (DTA) expression, which causes death of the cells where it is expressed, was driven by αSMACreER and induced by tamoxifen delivery around the time of fracture. When ablation was performed at the time of fracture (days 0, 1), we saw a 50% reduction in αSMA-labeled cells in 4 days post-fracture (DPF) callus tissue by flow cytometry (Figure 7A). This is consistent with the 50% efficiency of recombination we demonstrated for αSMACreER in vitro (Sinder et al., 2020). Histologically, there is a clear reduction in fracture size and αSMA-labeled cells at 4 DPF (Figure 7B). Histological analysis at 14 DPF revealed a significant reduction in total callus size as well as mineralized area (Figure 7C–D). Micro-computed tomography (microCT) results at day 14 confirmed the histological observations (Figure 7E). At 21 DPF, microCT showed no change in total callus volume but a significant decrease in callus bone mass (Figure 7F). Similar impairments in healing were seen whether ablation was performed at the time of fracture or throughout the first 8 days of healing, suggesting that early loss of αSMA+ cells was most important for this phenotype. Overall, our data demonstrate that partial ablation of αSMA+ progenitors reduced callus formation and delayed mineralization. The less severe phenotype at 21 DPF suggests this may be a delay in healing rather than complete disruption of the process, although the fractures from mice with αSMA-ablation probably never reach the size of control calluses. Healing in the DTA mice may still progress due to compensation of αSMA+ progenitors that escaped ablation or larger contribution from αSMA-negative progenitors in this setting.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig7-v2.jpg)
 
-**Figure 7.:** (A) Flow cytometry of day 4 fracture callus from control αSMACreER/Ai9 mice and DTA animals (αSMACreER/Rosa-DTA/Ai9) indicating significantly fewer (p<0.01) αSMA-labeled cells in the ablation model (mean ± SD shown, n = 4). (B) Representative histological sections from day 4 fracture callus in controls or with DTA-mediated ablation. The outline of the callus is indicated. (C) Histological analysis of callus area and mineralized area at day 14, and (D) representative images of von-Kossa staining (n = 4–7). (E) Micro-computed tomography (MicroCT) analysis of day 14 fracture callus in DTA- and DTA+ mice that had undergone two different tamoxifen regimens to ablate αSMA+ cells, day 0, 1 of fracture or day 0, 2, 4, 6, 8. Callus tissue volume and bone mass were measured. Cre-: n = 14, 8 male (M), 6 female (F); DTA D0-1: n = 10, 4M 6F; DTA D0-8: n = 8, 4M 4F. (F) MicroCT analysis of day 21 fracture callus in mice treated with tamoxifen on day 0, 2, and 4 (n = 14–15).Figure 7—source data 1.Figure 7C,E and F.
+**Figure 7.:** (A) Flow cytometry of day 4 fracture callus from control αSMACreER/Ai9 mice and DTA animals (αSMACreER/Rosa-DTA/Ai9) indicating significantly fewer (p<0.01) αSMA-labeled cells in the ablation model (mean ± SD shown, n = 4). (B) Representative histological sections from day 4 fracture callus in controls or with DTA-mediated ablation. The outline of the callus is indicated. (C) Histological analysis of callus area and mineralized area at day 14, and (D) representative images of von-Kossa staining (n = 4–7). (E) Micro-computed tomography (MicroCT) analysis of day 14 fracture callus in DTA- and DTA+ mice that had undergone two different tamoxifen regimens to ablate αSMA+ cells, day 0, 1 of fracture or day 0, 2, 4, 6, 8. Callus tissue volume and bone mass were measured. Cre-: n = 14, 8 male (M), 6 female (F); DTA D0-1: n = 10, 4M 6F; DTA D0-8: n = 8, 4M 4F. (F) MicroCT analysis of day 21 fracture callus in mice treated with tamoxifen on day 0, 2, and 4 (n = 14–15).
 
-## Contribution of other periosteal populations to fracture healing
+### Contribution of other periosteal populations to fracture healing
 
 We have demonstrated that αSMA identifies some, but not all, of the cells contributing to osteoblasts and chondrocytes in the fracture callus. We therefore examined the potential contribution of other populations. We tested the previously unexplored hypothesis that mature osteoblast lineage cells may contribute to osteoblast formation in the fracture callus. Col2.3CreER-labeled cells made a small but significant contribution to osteoblast formation in the fracture callus, but only when tamoxifen was given close to the time of fracture (Figure 8.A-B). This is in line with previous studies that estimate a lifespan of around 2 weeks for osteoblasts (Matic et al., 2016; Jilka et al., 1998). We did not detect any contribution of Col2.3-labeled cells to chondrocytes. This suggests that committed osteoblast lineage cells present in the periosteum can contribute to fracture osteoblasts but do not have the plasticity to contribute to chondrocytes.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/58534/elife-58534-fig8-v2.jpg)
 
-**Figure 8.:** (A) Fracture histology of a representative day 7 tibial fracture callus from a Col2.3CreER/Ai9 mouse treated with tamoxifen at days −4 and −3. Mineralized bone is shown by dark field (gray) and DAPI+ nuclei in blue. Scale bar is 250 µm. (B) Quantification of Col2.3-labeled cell contribution to Osx+ osteoblasts. *p<0.05 based on ANOVA with Dunnett’s posttest compared to no tamoxifen group. (C) Tibia histology of PdgfraCreER/Ai9 mice given three daily doses of tamoxifen and euthanized 1 day later. Scale bar is 200 µm. Magnified areas of (D) trabecular and (E) cortical bone are shown. (F) Tibial histology of a PdgfraCreER/Ai9 mouse that had not been exposed to tamoxifen showing minimal leakiness of the CreER. Representative images of n = 3 aged 5–8 weeks of age are shown. (G) PDGFRα immunostaining of bone. Scale bar is 50 µm. bm, bone marrow; gp, growth plate; p, periosteum.Figure 8—source data 1.Figure 8B.
+**Figure 8.:** (A) Fracture histology of a representative day 7 tibial fracture callus from a Col2.3CreER/Ai9 mouse treated with tamoxifen at days −4 and −3. Mineralized bone is shown by dark field (gray) and DAPI+ nuclei in blue. Scale bar is 250 µm. (B) Quantification of Col2.3-labeled cell contribution to Osx+ osteoblasts. *p<0.05 based on ANOVA with Dunnett’s posttest compared to no tamoxifen group. (C) Tibia histology of PdgfraCreER/Ai9 mice given three daily doses of tamoxifen and euthanized 1 day later. Scale bar is 200 µm. Magnified areas of (D) trabecular and (E) cortical bone are shown. (F) Tibial histology of a PdgfraCreER/Ai9 mouse that had not been exposed to tamoxifen showing minimal leakiness of the CreER. Representative images of n = 3 aged 5–8 weeks of age are shown. (G) PDGFRα immunostaining of bone. Scale bar is 50 µm. bm, bone marrow; gp, growth plate; p, periosteum.
 
 Finally, we further evaluated PDGFRα as an alternate marker of periosteal progenitor cells as we hypothesized that it may target a broader periosteal progenitor population than αSMA. PDGFRaCreER targeted the majority of periosteal cells 1 day after completion of tamoxifen administration, as well as the majority of osteoblasts on trabecular and endocortical bone surfaces (Figure 8C–E). It also targeted a population of cells in the bone marrow. This labeling was tamoxifen-dependent (Figure 8F). These results were confirmed with immunostaining for PDGFRα that indicated expression in the periosteum and in endosteal osteoblasts (Figure 8G). There is some discrepancy between our flow data and this result (see Figure 2A and Figure 5A). PDGFRα staining by flow cytometry tends to be weak, and there is rarely a clear demarcation between positive and negative cells (Figure 2—figure supplement 1). In contrast, PDGFRα-driven Cre in combination with a strong reporter gene such as Ai9 amplifies even low transgene activity. It is therefore likely that we are only gating for cells highly expressing PDGFRα in flow cytometry, but this makes it difficult to use as a reliable marker. This discrepancy is consistent with the results of Ambrosi et al. who report much wider expression of PDGFRα using a GFP reporter mouse compared to previous results with antibody staining and flow cytometry (Morikawa et al., 2009; Ambrosi et al., 2017). Their data also suggests expression of this reporter in osteoblasts. Another recent study reported much higher PDGFRα expression in bone marrow compared to periosteum in contrast with our flow cytometry results (Tournaire et al., 2020). We conclude that PDGFRα is not an optimal marker of progenitor cells within the periosteum due to both technical variability depending on the method used and expression in mature osteoblasts.
 
@@ -110,46 +162,315 @@ In conclusion, we have demonstrated that the periosteum is highly enriched with 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>αSMACreER (Tg(Acta2-cre/ERT2)1Ikal)</td>
+      <td>PMID:22083974</td>
+      <td>MGI:5461154</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Col2.3CreER (B6.Cg-Tg(Col1a1-cre/ERT2)1Crm/J)</td>
+      <td>Jackson Labs</td>
+      <td>Jax: 016241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Col2.3GFP (B6.Cg-Tg(Col1a1*2.3-GFP)1Rowe/J)</td>
+      <td>PMID:11771662</td>
+      <td>Jax: 013134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ai9 (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J)</td>
+      <td>Jackson Labs</td>
+      <td>Jax: 007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa-DTA (B6.129P2-Gt(ROSA)26Sortm1(DTA)Lky/J)</td>
+      <td>Jackson Labs</td>
+      <td>Jax: 009669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>R26-M2rtTA; TetOP-H2B-GFP (B6;129S4-Gt(ROSA)26Sortm1(rtTA*M2)JaeCol1a1tm7(tetO-HIST1H2BJ/GFP)Jae/J)</td>
+      <td>Jackson Labs</td>
+      <td>Jax: 016836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>NSG (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ)</td>
+      <td>Jackson Labs</td>
+      <td>Jax: 005557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>PdgfraCreER (B6.129S-Pdgfratm1.1(cre/ERT2)Blh/J)</td>
+      <td>Jackson Labs</td>
+      <td>Jax: 032770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45 eFluor450 (rat monoclonal, clone 30-F11)</td>
+      <td>eBioscience</td>
+      <td>48–0451</td>
+      <td>Flow (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ter119 eFluor450 (rat monoclonal, clone TER-119)</td>
+      <td>eBioscience</td>
+      <td>48–5921</td>
+      <td>Flow (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD31 eFluor450 (rat monoclonal, clone 390)</td>
+      <td>eBioscience</td>
+      <td>48–0311</td>
+      <td>Flow (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45 APC (rat monoclonal, clone 30-F11)</td>
+      <td>eBioscience</td>
+      <td>17–0451</td>
+      <td>Flow (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ter119 APC (rat monoclonal, clone TER-119)</td>
+      <td>eBioscience</td>
+      <td>17–5921</td>
+      <td>Flow (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD31 APC (rat monoclonal, clone 30-F11)</td>
+      <td>eBioscience</td>
+      <td>17–0311</td>
+      <td>Flow (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD140a APC (rat monoclonal, clone APA5)</td>
+      <td>eBioscience</td>
+      <td>17–1401</td>
+      <td>Flow (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD140a PE-Cy7 (rat monoclonal, clone APA5)</td>
+      <td>eBioscience</td>
+      <td>25–1401</td>
+      <td>Flow (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD140b APC (rat monoclonal, clone APB5)</td>
+      <td>eBioscience</td>
+      <td>17–1402</td>
+      <td>Flow (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD105 APC (rat monoclonal, clone MJ7/18)</td>
+      <td>eBioscience</td>
+      <td>17–1051</td>
+      <td>Flow (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD90.2 APC eFluor 780 (rat monoclonal, clone 53–2.1)</td>
+      <td>eBioscience</td>
+      <td>47–0902</td>
+      <td>Flow (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD90.2 BV605 (rat monoclonal, clone 30-H12)</td>
+      <td>BD Bioscience</td>
+      <td>740334</td>
+      <td>Flow (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD51 Biotin (rat monoclonal, clone RMV-7)</td>
+      <td>eBioscience</td>
+      <td>13–0512</td>
+      <td>Flow (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sca1 AlexaFluor700 (rat monoclonal, clone D7)</td>
+      <td>eBioscience</td>
+      <td>56–5981</td>
+      <td>Flow (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly51 BV711 (rat monoclonal, clone 6C3)</td>
+      <td>BD Bioscience</td>
+      <td>740691</td>
+      <td>Flow (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD200 PE (rat monoclonal, clone OX-2)</td>
+      <td>Biolegend</td>
+      <td>123807</td>
+      <td>Flow (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sox9 (rabbit polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>ABE2868</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Osterix (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab209484</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PDGFRα (rabbit polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF1062</td>
+      <td>IHC (1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti rabbit AlexaFluor647 (polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A21244</td>
+      <td>IHC (1:300)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin APC eFluor 780</td>
+      <td>eBioscience</td>
+      <td>47–4317</td>
+      <td>Flow (1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin PE-Cy7</td>
+      <td>eBioscience</td>
+      <td>25–4317</td>
+      <td>Flow (1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin APC</td>
+      <td>eBioscience</td>
+      <td>17–4317</td>
+      <td>Flow (1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma Aldrich</td>
+      <td>T5648</td>
+      <td>75 mg/kg i.p.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Envigo</td>
+      <td>TD.01306</td>
+      <td>625 mg/kg in Teklad Custom Diet</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Barcode oligo primer</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5’-AAGCAGTGGTATCAACGC AGAGTACJJJJJJJJJJJJNNNNN NNNTTTTTTTTTTTTTTTTTTT TTTTTTTTTTTVN-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom primer sequence</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5'-AATGATACGGCGACCACC GAGATCTACACGCCTGTCCG CGGAAGCAGTGGTATCAACG CAGAGT*A*C-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom read one sequence</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5’-CGGAAGCAGTGGTATCAA CGCAGAGTAC-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal studies were approved by the institutional animal care and use committee at UConn Health or the University of Auckland. Mouse lines are listed in the Key Resources Table. αSMACreER and Col2.3GFP mice have been described (Grcevic et al., 2012; Kalajzic et al., 2002). R26-M2rtTA; TetOP-H2B-GFP dual homozygous mice (Foudi et al., 2009), Ai9 Tomato reporter mice (Madisen et al., 2010), Rosa-DTA (Voehringer et al., 2008), Col2.3CreER (Kim et al., 2004), and PdgfraCreER (Chung et al., 2018) were purchased from Jackson Labs. All these strains were maintained on a C57Bl/6J background. NSG immunodeficient mice (NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ, stock # 005557) were a gift from David Rowe. All transgenic mice for experiments were bred at UConn Health and were group housed in individually ventilated cages maintained at 22 ± 2°C, 55 ± 5% humidity, and a 12 hr light-dark cycle and allowed ad libitum access to food and water. Male C57Bl/6J mice were used for experiments at the University of Auckland and were bred at the onsite facility under similar conditions. CreER was activated by tamoxifen in corn oil (75 µg/g i.p.), and two doses of tamoxifen were administered 24 hr apart unless otherwise stated. Animals were assigned to experimental groups in blocks, and cage-mates were generally exposed to the same tamoxifen regimen to avoid inadvertent exposure of low-dose tamoxifen.
 
-## Tibia fracture
+### Tibia fracture
 
 Closed tibia fractures stabilized by an intramedullary pin were generated mid-shaft as previously described (Matthews et al., 2014). All mice undergoing fracture lineage tracing were female and were sexually mature young adults (8–16 weeks of age at tamoxifen administration, 8–24 weeks at fracture). The presence of fracture was confirmed by X-ray (Faxitron LX 60). Animals were euthanized and limbs collected for histology 7 or 14 DPF. For secondary fractures, tibia fractures were performed and allowed to heal for 8 weeks with the pin in place. Then a secondary fracture was performed in a similar location, confirmed by X-ray, and collected 7 DPF for histological analysis.
 
-## Histology
+### Histology
 
 Bones were fixed for 5–7 days in 4% paraformaldehyde, incubated in 30% sucrose overnight and embedded in cryomatrix (Fisher Scientific). Cryosections (7 µm) were obtained using a cryostat and tape transfer system (Section-lab, Hiroshima, Japan) as previously described (Dyment et al., 2016). Imaging settings were kept consistent for each dataset. Fluorescent images were obtained with an Axioscan slide scanner (Zeiss). Immunostaining antibodies are listed in the Key Resources Table. For Sox9 and PDGFRα staining, sections were permeabilized in 0.1% Triton X for 15 min, blocked in 2% bovine serum albumin (BSA)/phosphate buffered saline (PBS) for 1 hr, and stained with primary antibody overnight at 4°C. For osterix staining, sections were permeabilized in 0.1% Tween-20 for 15 min, blocked in 10% goat serum, 2% BSA/PBS for 1 hr, stained with anti-Osterix antibody overnight at 4°C. Both sets of slides were washed in 0.1% Tween-20/PBS and stained with secondary antibody for 1 hr at RT, then washed thoroughly. Slides were coverslipped in 50% glycerol/PBS containing 4′,6-diamidino-2-phenylindole (DAPI). Image analysis was performed as described previously using ImageJ (Matthews et al., 2020). Samples were excluded from all image analysis for the following reasons: fracture was not evident or callus was absent. For osteoblast analysis, sections were excluded if they did not contain a clear fracture site. Endosteal analysis was performed only in sections that had a clear central marrow cavity present, and new bone formation evident in this region. Chondrocyte analysis was performed at day 7 only, as most cartilage is gone by day 14, and some fractures were excluded due to lack of cartilage tissue for analysis. Briefly, to evaluate Tom+ contribution to osteoblasts, regions of interest (ROIs) were drawn encompassing the fracture callus. Adjacent ROIs encompassing the central area of the callus (1 mm either side of the fracture site) as well as more distal regions were drawn (up to 6 ROIs/section), then data were pooled to determine total callus values. The DAPI channel was thresholded and separated using the watershed algorithm, then fluorescent signal for each channel was measured in nuclear regions. Standardized thresholds were set manually for each channel. We calculated the number of cells that were GFP+ or Osx+ (osteoblasts), the number that were Tom+, and the percentage of osteoblasts that were Tom+ (dual positive cells/osteoblasts). In most cases, one section/bone was analyzed. Where multiple sections were analyzed, results from different sections were consistently very similar and were pooled. A minimum of 3000 nuclei (median 9262) were evaluated for each sample. Similar analysis was performed on the bone marrow compartment when sections were suitable. For chondrocyte analysis, since there was some non-specific staining with the Sox9 antibody, only regions that demonstrated chondrocytic morphology were incorporated in the ROI analysis.
 
-## Cell isolation
+### Cell isolation
 
 For studies comparing different tissue compartments, bone marrow, endosteum, and periosteum were isolated from hindlimbs of the same mice as previously described (Matic et al., 2016; Wang et al., 2019a). In most cases, two or three animals of the same sex were pooled to generate a sample. Briefly, after removal of muscle tissue, bone marrow was flushed and underwent red blood cell lysis (Matthews et al., 2017). Periosteum was scraped off the bone surface and digested in PBS containing 0.05% Collagenase P and 0.2% hyaluronidase (Sigma Aldrich, St Louis, MO, USA) for 1 hr at 37°C. To isolate endosteal cells, bones were then opened, crushed, loosely attached cells removed by washing, then digested in PBS containing 0.05% Collagenase P for 1 hr at 37°C. Cells were washed and resuspended in staining medium (SM, 2% fetal bovine serum (FBS), 1 mM ethylenediaminetetraacetic acid in PBS).
 
-## Flow cytometry and cell sorting
+### Flow cytometry and cell sorting
 
 Cells were stained using antibody cocktails in SM. Antibodies and secondary reagents are listed in the Key Resources Table. Analysis was performed on an LSRII or Aria II instrument (BD Biosciences), and sorting was performed on an Aria II. All experiments included unstained controls for establishing gates derived from non-fluorescent mice, and single color controls generated using periosteal or bone marrow cells. Some experiments included fluorescence minus one (FMO) controls to assist with gating. Dead cells were excluded in most experiments using DAPI staining (~50 ng/ml final concentration). Four-way sorting was performed on selected populations. Cells were sorted into 1.5 ml tubes containing 500 µl collection medium (αMEM 10% FBS). Acquisition and sorting was performed using FACSDiva software and analysis was performed in FlowJo (BD Biosciences). Experiments involved at least two biological replicates per group, and most were performed on more than one occasion to ensure consistent outcomes.
 
-## In vitro assays
+### In vitro assays
 
 CFU-F assays were performed using freshly sorted cells. Live cell numbers were assumed to be 50% of the cells sorted by the machine. Sorted cells were resuspended in αMEM 20% FBS and seeded in six-well plates, generally at 50 cells/cm2, although this varied depending on yield. In most cases, three wells were seeded per population, and at least three independent samples per population were evaluated. Cells were cultured in a 37°C humidified incubator, 5% O2, 5% CO2. Medium was changed on day 4, and cultures were terminated for staining on day 7–8. Cells were fixed in 10% formalin for 10 min, washed in water, then underwent crystal violet staining. For differentiation, after 7 days, medium was changed to an osteogenic/adipogenic combined cocktail containing αMEM 10% FBS, 50 µg/ml ascorbic acid, 4 mM β-glycerophosphate, 1 µM insulin, 0.5 µM rosiglitazone, and transferred to a normoxic incubator. Medium was changed after 3 days and cultures were terminated after 5 days of differentiation. Plates underwent concurrent ALP staining (86R or B5655, Sigma Aldrich) and Oil Red O staining, were imaged, then underwent crystal violet staining.
 
-## Single cell RNAseq analysis
+### Single cell RNAseq analysis
 
 Periosteum was prepared as described above but with a 30-min enzymatic digestion. We sorted Tom+ cells from periosteal isolations from two to three female αSMACreER/Ai9 mice. Cells were isolated from αSMACreER/Ai9/Col2.3GFP mice at 2 days and 6 weeks after tamoxifen and from H2B-GFP/αSMACreER/Ai9 mice 13 weeks after tamoxifen and withdrawal of dox. No staining was performed and dead cells were excluded by DAPI staining. Single Tom+ cells were sorted using the index sort function on the BD Aria II directly into individual wells of a Bio-Rad hard shell 384-well plate. The plate was immediately stored in a −80°C freezer. Approximately half a plate per sample was processed for sequencing (192 cells for 2 days and 13 weeks, 216 cells for 6 weeks). Custom designed Drop-Seq barcoded primers from Integrated DNA Technologies (IDT) were delivered into each well of the 384-well plate, with primers in one well sharing the same unique cell barcode and different UMIs. An Echo 525 liquid handler was used to dispense 1 µl of primers and reaction reagents into each well for cell lysis and cDNA synthesis. Following cDNA synthesis, the contents of each well were collected and pooled into one tube using a Caliper SciClone Liquid Handler. After treatment with exonuclease I to remove unextended primers, the cDNA was polymerase chain reaction (PCR) amplified for 13 cycles. The cDNA was fragmented and amplified for sequencing with the Nextera XT DNA sample prep kit (Illumina) using custom primers that enabled the specific amplification of only the 3′ ends (see Key Resources Table). The libraries were purified, quantified, and sequenced on an Illumina MiSeq. The data preprocessing was performed using Drop-seq tools (version 1.13), with picard (version 2.17.8) for fastq to bam conversion and STAR (version 2.5.4a) for alignment to the reference genome, mm10 (version 1.2.0). Gene expression matrices were generated, and analysis was done using scanpy (version 1.3.7) (Wolf et al., 2018). The data is deposited in GEO under accession GSE165846. The data was filtered to remove cells with fewer than 200 genes, normalized and log transformed. The top 900 highly variable genes as measured by dispersion were used for neighborhood graph generation (nearest neighbor = 20) and dimensionality reduction with uniform manifold approximation and projection (UMAP) (Satija et al., 2015; Becht et al., 2019). Leiden community detection algorithm was used for clustering (Traag et al., 2019). Data were visualized and plots and heat maps generated by CellView (Bolisetty et al., 2017).
 
-## Label retention studies
+### Label retention studies
 
 R26-M2rtTA; TetOP-H2B-GFP (H2B-GFP) males were crossed with αSMACreER/Ai9/Ai9 females to generate experimental mice. Mice received doxin their diet (625 mg/kg) from P10 for 5 weeks. Males were removed from breeding cages prior to birth of pups to ensure mothers did not ingest dox during subsequent pregnancies. Some animals received two doses of i.p. tamoxifen at the time of dox withdrawal. The chase period was a minimum of 13 weeks. Animals that were never exposed to dox were included in all experiments as controls.
 
-## Calvarial defect transplantation
+### Calvarial defect transplantation
 
 Mice were anesthetized with ketamine/xylazine (135 and 15 mg/kg) and bilateral critical-sized circular defects (3.5 mm diameter) created in the parietal bone as previously described (Gohil et al., 2014). About 2500–5000 sorted αSMA-labeled cells were mixed with 2 × 105 BMSCs, resuspended in 7 µl PBS, loaded on a healos scaffold, and placed into calvaria defects of immunodeficient NSG mice (n = 6). After 5 weeks, mice were euthanized for histological analysis.
 
-## Ablation studies
+### Ablation studies
 
 Animals were generated by crossing Rosa-DTA homozygous mice with αSMACreER, or where lineage tracing was required, crossing αSMACreER/Rosa-DTA with Ai9 and using only Cre+ animals. Fractures were performed in 7–10-week-old animals as previously described (Novak et al., 2020). Tamoxifen was given 0 and 1 DPF in most cases. Briefly, closed transverse diaphyseal femoral fractures were created using a blunt guillotine, after inserting a 24G needle into the intramedullary canal. To evaluate efficacy of the ablation, flow cytometry and histology were performed 4 DPF. For flow, the callus tissue was dissected and single cell suspension from individual male mice (n = 4) was generated, stained with CD45/CD31/Ter119 cocktail and DAPI. For microCT, fractured bones were collected 14 and 21 DPF, fixed in 10% formalin, and scanned (µCT40, Scanco Medical AG, Bassersdorf, Switzerland) with a voxel size of 12 µm, 55 kV, and intensity of 145 µA. We evaluated 150 slices above and below the fracture site to measure density and callus volume, and calculate bone mass. For histological analysis on day 14, frozen sections were stained using von Kossa and callus size and mineralized areas were quantified using ImageJ software as previously described (Novak et al., 2020). An additional group given tamoxifen 0, 2, 4, 6, and 8 DPF were included. The 21 DPF analysis group received tamoxifen 0, 2, 4 DPF. Controls with different tamoxifen regimens showed no difference between groups, so were pooled. Both male and female mice were included (day 14: Cre-: n = 14, 8M 6F; DTA D0,1: n = 10, 4M 6F; DTA D0-8: n = 8, 4M 4F).
 
-## Statistics
+### Statistics
 
 All experiments include at least three biological replicates. For lineage tracing fracture experiments, we planned to include at least n = 6 per group, although long-term tracing groups in particular had more animals included to account for possible exclusions. We planned to include n = 10 for DTA studies based on our previous experience with quantitative fracture studies, but numbers and sex distribution were limited by the genotypes of available animals. Exact n values are listed in figures or figure legends, or where ranges are stated, in the source data files. Values represent the number of biological replicates (biological replicates represent one mouse/one fracture for injury studies, and one pool of two to three mice for most flow cytometry studies; most of the flow and CFU-F data involves analysis or sorts performed over multiple days or experiments). Graphs show mean ± standard error of the mean. Flow cytometry data on dot plots and in the text show mean ± standard deviation. Statistical analysis was performed in GraphPad Prism, using t-tests or one-way or two-way ANOVAs with appropriate post-hoc tests. For many of the flow cytometry datasets where different populations or tissues from one sample are evaluated, paired tests are used. Details are included in figure legends, and analysis or p values are supplied in the source data files. p<0.05 was used as the threshold for statistical significance.

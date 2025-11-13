@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.04692.001 Plasmodium vivax relapse infections occur following activation of latent liver-stages parasites (hypnozoites) causing new blood-stage infections weeks to months after the initial infection. We develop a within-host mathematical model of liver-stage hypnozoites, and validate it against data from tropical strains of P. vivax . The within-host model is embedded in a P. vivax transmission model to demonstrate the build-up of the hypnozoite reservoir following new infections and its depletion through hypnozoite activation and death. The hypnozoite reservoir is predicted to be over-dispersed with many individuals having few or no hypnozoites, and some having intensely infected livers. Individuals with more hypnozoites are predicted to experience more relapses and contribute more to onwards P. vivax transmission. Incorporating hypnozoite killing drugs such as primaquine into first-line treatment regimens is predicted to cause substantial reductions in P. vivax transmission as individuals with the most hypnozoites are more likely to relapse and be targeted for treatment. DOI: http://dx.doi.org/10.7554/eLife.04692.001
+Plasmodium vivax relapse infections occur following activation of latent liver-stages parasites (hypnozoites) causing new blood-stage infections weeks to months after the initial infection. We develop a within-host mathematical model of liver-stage hypnozoites, and validate it against data from tropical strains of P. vivax. The within-host model is embedded in a P. vivax transmission model to demonstrate the build-up of the hypnozoite reservoir following new infections and its depletion through hypnozoite activation and death. The hypnozoite reservoir is predicted to be over-dispersed with many individuals having few or no hypnozoites, and some having intensely infected livers. Individuals with more hypnozoites are predicted to experience more relapses and contribute more to onwards P. vivax transmission. Incorporating hypnozoite killing drugs such as primaquine into first-line treatment regimens is predicted to cause substantial reductions in P. vivax transmission as individuals with the most hypnozoites are more likely to relapse and be targeted for treatment.
 
 ## Introduction
 
@@ -40,61 +40,67 @@ In this manuscript, a within-host model of hypnozoites in liver hepatocytes is d
 
 ## Results
 
-## Within-host relapse model
+### Within-host relapse model
+
+Figure 1 shows the best fit within-host relapse model to data on time to first relapse infection from three ecological zones with tropical strains of P. vivax: South America, South East Asia and Melanesia (Battle et al., 2014). In each ecological zone, the number of hypnozoites N and the hypnozoite activation rate α were correlated (see Figure 1—figure supplement 1). For example, a short time to relapse could be explained by a single fast activating hypnozoite or a large number of slow activating hypnozoites. Longitudinal data where multiple relapses are observed in individuals would allow better estimation of the number of hypnozoites in the liver and the duration of hypnozoite carriage.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig1-v2.jpg)
 
-**Figure 1.:** Time to first relapse infection from the within-host model fitted to data from three ecological zones with tropical strains of P. vivax (Battle et al., 2014). The red curves show the model fits with estimated posterior median parameters.DOI: http://dx.doi.org/10.7554/eLife.04692.003
+**Figure 1.:** Time to first relapse infection from the within-host model fitted to data from three ecological zones with tropical strains of P. vivax (Battle et al., 2014). The red curves show the model fits with estimated posterior median parameters.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** The likelihood in Equation 12 was sampled using a Metropolis–Hastings Markov Chain Monte Carlo (MCMC) algorithm and the posterior parameter distributions were estimated. 100,000 MCMC iterations were sampled and visually checked for convergence and mixing. The top row shows the MCMC chains. The middle row shows the correlation between pairs of parameters. The bottom row shows the sampled posterior distributions. Prior distributions are shown in blue. Note the high degree of correlation between N and α.DOI: http://dx.doi.org/10.7554/eLife.04692.004
+**Figure 1—figure supplement 1.:** The likelihood in Equation 12 was sampled using a Metropolis–Hastings Markov Chain Monte Carlo (MCMC) algorithm and the posterior parameter distributions were estimated. 100,000 MCMC iterations were sampled and visually checked for convergence and mixing. The top row shows the MCMC chains. The middle row shows the correlation between pairs of parameters. The bottom row shows the sampled posterior distributions. Prior distributions are shown in blue. Note the high degree of correlation between N and α.
 
-The within-host model can be used to simulate beyond the first relapse infection.
+The within-host model can be used to simulate beyond the first relapse infection. Figure 2 shows some sample relapse patterns from the within-host models for tropical and temperate strains of P. vivax. This model predicts notable dose-dependency with increased numbers of hypnozoites associated with a greater number of relapses and shorter time to first relapse. Following the long latency to first relapse in temperate strains, the interval between subsequent relapses is considerably shorter. The within-host model assumes that hypnozoites act independently of each other, and hence the time to next relapsing hypnozoite is exponentially distributed. In particular we do not predict periodicity between relapsing hypnozoites (in the absence of external triggers [White, 2011; Shanks and White, 2013]). If the simulated data are censored such that relapses occurring within 14 days of a previous relapse remain undetected (due to either prophylaxis by blood-stage anti-malarials or the presence of parasites from an existing infection) then there is an apparent periodicity in detected relapses. The observed periodicity of relapses will be determined by the duration of prophylactic protection and not via the biological mechanisms considered here. The periodicity in detected relapses is most evident for large numbers of hypnozoites with the period being determined by the assumed duration of prophylactic protection (Figure 2—figure supplement 1). However, as has been previously argued, periodicity in relapses could also be attributable to a cycle of fevers initiating hypnozoite activation which in turn cause new blood-stage infections and malaria-associated fevers (White, 2011).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig2-v2.jpg)
 
-**Figure 2.:** P. vivax.A relapse is assumed to be undetected if it occurs within 14 days of a detected relapse. Both tropical and temperate phenotypes exhibit dose dependency, with a larger number of hypnozoites giving rise to a greater number of relapses and shorter times to first relapse. For larger numbers of hypnozoites (N = 50), periodicity in detected relapses is observed. The appearance of this periodicity is due to the undetected relapses.DOI: http://dx.doi.org/10.7554/eLife.04692.005
+**Figure 2.:** A relapse is assumed to be undetected if it occurs within 14 days of a detected relapse. Both tropical and temperate phenotypes exhibit dose dependency, with a larger number of hypnozoites giving rise to a greater number of relapses and shorter times to first relapse. For larger numbers of hypnozoites (N = 50), periodicity in detected relapses is observed. The appearance of this periodicity is due to the undetected relapses.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** For the tropical phenotype the time between relapses was calculated as the mean duration between consecutive relapses over the first 6 months based on 10,000 stochastic simulations. For the temperate phenotype the time between relapses was calculated as the mean duration between consecutive relapses over the first 12 months based on 10,000 stochastic simulations. The red curves denote the time between detected relapses: it is assumed that within 14 days of a detected relapse some activating hypnozoites can go undetected due to anti-malarial prophylaxis or the presence of blood-stage parasites. The grey curve denotes the expected time between all consecutively activating hypnozoites. The dashed line denotes a 3 week duration which has been regularly been observed as a common period between consecutive relapses (White, 2011).DOI: http://dx.doi.org/10.7554/eLife.04692.006
+**Figure 2—figure supplement 1.:** For the tropical phenotype the time between relapses was calculated as the mean duration between consecutive relapses over the first 6 months based on 10,000 stochastic simulations. For the temperate phenotype the time between relapses was calculated as the mean duration between consecutive relapses over the first 12 months based on 10,000 stochastic simulations. The red curves denote the time between detected relapses: it is assumed that within 14 days of a detected relapse some activating hypnozoites can go undetected due to anti-malarial prophylaxis or the presence of blood-stage parasites. The grey curve denotes the expected time between all consecutively activating hypnozoites. The dashed line denotes a 3 week duration which has been regularly been observed as a common period between consecutive relapses (White, 2011).
+
+Figure 3 shows the predicted number of relapsing hypnozoites in a population exposed to P. vivax in the absence of new infections. For tropical strains the mean number of hypnozoites in the liver is expected to decrease exponentially, but the proportion of individuals carrying hypnozoites is expected to decrease at a slower rate as an individual can relapse even if they have just one hypnozoite (Figure 3A). For temperate strains the mean number of hypnozoites in the liver decreases slowly, as hypnozoites remain in the long-latency phase for approximately 6 months (Figure 3B). The model allows estimation of time to second, third and consecutive relapses in addition to estimates of time to first relapse obtainable via survival analysis of patient data (Lover and Coker, 2013; Battle et al., 2014) (Figure 3C,D). The expected number of relapsing hypnozoites per individual is expected to follow an approximately exponential distribution (Figure 3E,F) in agreement with empirical observations (Horing, 1947; White, 2011).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig3-v2.jpg)
 
-**Figure 3.:** P. vivax infection.(A and B) Duration of hypnozoite carriage (orange) and expected number of hypnozoites in the liver (dashed). For the temperate strain, the dashed blue line shows the number of hypnozoites in the relapsing phase. (C and D) Survival time until nth relapsing hypnozoite. The red curve is equivalent to the Kaplan–Meier curve for time to first blood-stage infection that would be observed in the absence of new infections from mosquito bites. Only the curves for the first five relapses are shown. (E and F) Proportion of individuals with at least n relapsing hypnozoites following primary infection.DOI: http://dx.doi.org/10.7554/eLife.04692.007
+**Figure 3.:** (A and B) Duration of hypnozoite carriage (orange) and expected number of hypnozoites in the liver (dashed). For the temperate strain, the dashed blue line shows the number of hypnozoites in the relapsing phase. (C and D) Survival time until nth relapsing hypnozoite. The red curve is equivalent to the Kaplan–Meier curve for time to first blood-stage infection that would be observed in the absence of new infections from mosquito bites. Only the curves for the first five relapses are shown. (E and F) Proportion of individuals with at least n relapsing hypnozoites following primary infection.
 
-## Dynamics and steady states of P. vivax transmission
+### Dynamics and steady states of P. vivax transmission
+
+Figure 4A shows the predicted steady states (the equilibrium blood-stage prevalence in the absence of seasonally varying transmission) as a function of entomological inoculation rate (EIR). EIR is a measurement of the number of infectious bites per person per year. The proportion of people infected with hypnozoites is predicted to be higher than the proportion infected with P. vivax blood-stage parasites. For a given EIR, P. vivax blood-stage prevalence is predicted to be higher than P. falciparum prevalence as a single mosquito bite can give rise to multiple blood-stage infections. However this does not account for the longer duration of P. falciparum infections as a consequence of antigenic switching (Molineaux et al., 2001), and the important role of heterogeneity in exposure (Smith et al., 2005). With the exception of the P. vivax hypnozoite rate, these quantities can be measured in epidemiological field studies (Smith et al., 2005; Kelly-Hope and McKenzie, 2009).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig4-v2.jpg)
 
-**Figure 4.:** P. vivax transmission model.(A) The statics (estimated equilibrium prevalence) of P. vivax and P. falciparum transmission for different values of the entomological inoculation rate (EIR). EIR was varied by changing the number of mosquitoes per person m. (B) The number of hypnozoites per person is expected to increase with transmission intensity. The black line denotes the median number of hypnozoites, and the shaded areas denote the 50% and 95% ranges. (C) The distribution of the hypnozoite reservoir when PvPR = 50%. The grey bar represents individuals with zero hypnozoites.DOI: http://dx.doi.org/10.7554/eLife.04692.008
+**Figure 4.:** (A) The statics (estimated equilibrium prevalence) of P. vivax and P. falciparum transmission for different values of the entomological inoculation rate (EIR). EIR was varied by changing the number of mosquitoes per person m. (B) The number of hypnozoites per person is expected to increase with transmission intensity. The black line denotes the median number of hypnozoites, and the shaded areas denote the 50% and 95% ranges. (C) The distribution of the hypnozoite reservoir when PvPR = 50%. The grey bar represents individuals with zero hypnozoites.
 
 Figure 4B shows how the median number of hypnozoites increases with increasing P. vivax transmission. Figure 4C shows the distribution in the number of hypnozoites when PvPR = 50%. The number of hypnozoites per individual is predicted to be over-dispersed following a negative binomial distribution. Thus some individuals will harbour a large number of hypnozoites while some will have none. This phenomenon will be further amplified if there is heterogeneity in exposure where some individuals receive a large number of mosquito bites.
 
-## Control of P. vivax
+### Control of P. vivax
 
-The impact of malaria control interventions will depend on how effectively the parasite is targeted in each of the reservoirs in the mosquito, the blood and the liver.
+The impact of malaria control interventions will depend on how effectively the parasite is targeted in each of the reservoirs in the mosquito, the blood and the liver. Figure 5 shows the qualitative effects of malaria control on the transmission dynamics of P. falciparum and P. vivax. Vector control with insecticide treated nets (ITNs) or indoor residual spraying (IRS) is assumed to increase mosquito mortality. The introduction of vector control is expected to cause a rapid decline in P. falciparum parasite rate (PfPR), and a smaller and slower decline in P. vivax (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig5-v2.jpg)
 
-**Figure 5.:** (A) The introduction of vector control with ITNs or IRS (assumed to increase mosquito mortality by 30%) is predicted to cause substantial reductions in both PvPR and PfPR. (B) Simulated effect of expanding first-line treatment with blood-stage anti-malarial drugs (e.g., chloroquine or ACTs) so that 20% and 40% of new blood-stage infections are treated. (C) Simulated effect of first-line treatment with a combined regimen of blood-stage anti-malarials and primaquine to remove liver-stage hypnozoites.DOI: http://dx.doi.org/10.7554/eLife.04692.009
+**Figure 5.:** (A) The introduction of vector control with ITNs or IRS (assumed to increase mosquito mortality by 30%) is predicted to cause substantial reductions in both PvPR and PfPR. (B) Simulated effect of expanding first-line treatment with blood-stage anti-malarial drugs (e.g., chloroquine or ACTs) so that 20% and 40% of new blood-stage infections are treated. (C) Simulated effect of first-line treatment with a combined regimen of blood-stage anti-malarials and primaquine to remove liver-stage hypnozoites.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Treatment coverage χ is assumed, that is, the proportion of new blood-stage infections that receive treatment with blood-stage anti-malarials. There will be a delay between the emergence of parasites into the blood-stream and the administration of treatment following symptoms. This stage is described by treatment compartment Ti and lasts 1/ν = 7 days. Importantly, transmission to mosquitoes is possible during this stage as P. vivax gametocytes (the sexual stage of the parasite that can be transmitted to mosquitoes) are present in the blood very early on in the infection. Following treatment, individuals progress to a period of prophylactic protection Pi, during which they are not susceptible to new blood-stage infections but may still acquire hypnozoites from new bites from infectious mosquitoes. It is assumed that individuals remain under prophylactic protection for 1/ξ = 14 days after which they return to being susceptible Si.DOI: http://dx.doi.org/10.7554/eLife.04692.010
+**Figure 5—figure supplement 1.:** Treatment coverage χ is assumed, that is, the proportion of new blood-stage infections that receive treatment with blood-stage anti-malarials. There will be a delay between the emergence of parasites into the blood-stream and the administration of treatment following symptoms. This stage is described by treatment compartment Ti and lasts 1/ν = 7 days. Importantly, transmission to mosquitoes is possible during this stage as P. vivax gametocytes (the sexual stage of the parasite that can be transmitted to mosquitoes) are present in the blood very early on in the infection. Following treatment, individuals progress to a period of prophylactic protection Pi, during which they are not susceptible to new blood-stage infections but may still acquire hypnozoites from new bites from infectious mosquitoes. It is assumed that individuals remain under prophylactic protection for 1/ξ = 14 days after which they return to being susceptible Si.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** The incorporation of primaquine into first-line treatment regimens is accounted for by assuming that treatment clears all hypnozoites from the liver as well as clearing blood-stage infections. A 14 day daily dosing regimen of primaquine which has proven efficacy at preventing relapses. In particular we assume treatment eliminates all hypnozoites, so that treated individuals move to compartment P0 (under prophylaxis from treatment and with all hypnozoites removed). The 14 day treatment regimen is assumed to provide a period of prophylactic protection against new hypnozoite infection, that is, new hypnozoites cannot be acquired while primaquine is being administered.DOI: http://dx.doi.org/10.7554/eLife.04692.011
+**Figure 5—figure supplement 2.:** The incorporation of primaquine into first-line treatment regimens is accounted for by assuming that treatment clears all hypnozoites from the liver as well as clearing blood-stage infections. A 14 day daily dosing regimen of primaquine which has proven efficacy at preventing relapses. In particular we assume treatment eliminates all hypnozoites, so that treated individuals move to compartment P0 (under prophylaxis from treatment and with all hypnozoites removed). The 14 day treatment regimen is assumed to provide a period of prophylactic protection against new hypnozoite infection, that is, new hypnozoites cannot be acquired while primaquine is being administered.
 
 Figure 5B shows the effect of targeting the parasite reservoir in the blood by providing first-line treatment for new blood-stage infections with anti-malarial drugs such as chloroquine or artemisinin combination therapies (ACTs). See details of how treatment was implemented in the model are provided in Figure 5—figure supplement 1,2. Increasing treatment coverage leads to reductions in blood-stage prevalence of both P. falciparum and P. vivax. Notably the reduction in the P. vivax hypnozoite rate is slow as the hypnozoite reservoir is not directly targeted.
 
-The hypnozoite reservoir can be directly targeted using a drug such as primaquine that can eliminate hypnozoites from the liver (
+The hypnozoite reservoir can be directly targeted using a drug such as primaquine that can eliminate hypnozoites from the liver (Wells et al., 2010). The inclusion of primaquine in first-line treatment regimens is predicted to cause substantial reductions in both the P. vivax parasite rate and hypnozoite rate (Figure 5C), as individuals being treated for blood-stage P. vivax infections will also have their hypnozoites removed. A consequence of this strategy is that the hypnozoite reservoir can be targeted efficiently, as individuals with the most hypnozoites are most likely to relapse and potentially be detected by health systems. Figure 6 shows how the inclusion of primaquine in first-line treatment regimens preferentially targets the most intense infections, with the greatest reductions observed in individuals with the most hypnozoites.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig6-v2.jpg)
 
-**Figure 6.:** Proportion of the population infected with 1–2, 3–9 or 10+ hypnozoites following the introduction of a first-line treatment regimen with blood-stage anti-malarial drugs and primaquine. Individuals with large numbers of hypnozoites are more likely to experience new blood-stage infections and hence become targeted for treatment and have their hypnozoites removed. This results in a selective targeting of the most intensely infected individuals.DOI: http://dx.doi.org/10.7554/eLife.04692.012
+**Figure 6.:** Proportion of the population infected with 1–2, 3–9 or 10+ hypnozoites following the introduction of a first-line treatment regimen with blood-stage anti-malarial drugs and primaquine. Individuals with large numbers of hypnozoites are more likely to experience new blood-stage infections and hence become targeted for treatment and have their hypnozoites removed. This results in a selective targeting of the most intensely infected individuals.
 
 ## Discussion
 
@@ -118,56 +124,238 @@ Mathematical models of malaria transmission that account for P. vivax relapses c
 
 ## Materials and methods
 
-## Within-host model for tropical relapses
+### Within-host model for tropical relapses
 
-Following infection with a tropical strain of
+Following infection with a tropical strain of P. vivax, the population dynamics of hypnozoites in the liver can be described by a within-host model where each hypnozoite is subject to two processes: (i) activation leading to relapse infection; and (ii) death, either of the hypnozoite itself or the host hepatocyte (Malato et al., 2011). Constant activation (α) and death (µ) rates are assumed implying hypnozoite residence time in the liver is exponentially distributed. The long latency of temperate strains before first relapse can be accounted for by assuming a period of dormancy during which hypnozoites must wait before they can activate. A schematic representation of the within-host model is presented in Figure 7.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig7-v2.jpg)
 
-**Figure 7.:** Hypnozoites from tropical strains of P. vivax will progress to the relapsing phase where they are subject to two processes: death and activation leading to relapse. Hypnozoites from temperate strains will begin in a temperate long-latency phase where they must wait before progressing to the relapsing phase.DOI: http://dx.doi.org/10.7554/eLife.04692.014
+**Figure 7.:** Hypnozoites from tropical strains of P. vivax will progress to the relapsing phase where they are subject to two processes: death and activation leading to relapse. Hypnozoites from temperate strains will begin in a temperate long-latency phase where they must wait before progressing to the relapsing phase.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** Orange compartments denote the temperate long-latency phase. Green compartments denote the relapsing phase. Superscript N denotes that the infection began with N hypnozoites. In the long-latency phase, sub-script i, j denotes i hypnozoites in the jth compartment for progressing through the long-latency phase. In the relapsing phase, subscript i denotes the number of hypnozoites. An individual infected with N hypnozoites of a tropical strain begins in the HNN compartment and progresses to HN0 as hypnozoites activate or die. An individual infected with N hypnozoites of a temperate strain begins in the LNN,1 compartment, and progresses down the flow diagram through the M steps during the period of long-latency. During this time they may also move to the right along the flow diagram as the number of hypnozoites reduces due to death. After passing through the M compartments for the long-latency phase, infections will enter the relapsing phase where relapse can occur.DOI: http://dx.doi.org/10.7554/eLife.04692.015
+**Figure 7—figure supplement 1.:** Orange compartments denote the temperate long-latency phase. Green compartments denote the relapsing phase. Superscript N denotes that the infection began with N hypnozoites. In the long-latency phase, sub-script i, j denotes i hypnozoites in the jth compartment for progressing through the long-latency phase. In the relapsing phase, subscript i denotes the number of hypnozoites. An individual infected with N hypnozoites of a tropical strain begins in the HNN compartment and progresses to HN0 as hypnozoites activate or die. An individual infected with N hypnozoites of a temperate strain begins in the LNN,1 compartment, and progresses down the flow diagram through the M steps during the period of long-latency. During this time they may also move to the right along the flow diagram as the number of hypnozoites reduces due to death. After passing through the M compartments for the long-latency phase, infections will enter the relapsing phase where relapse can occur.
 
-The tropical relapse model is assumed to begin with an initial population of N hypnozoites, each of which can either activate at rate α, or die at rate µ, independently of each other. The number of hypnozoites in the liver will decay exponentially with an expected Ne−(µ+α)t hypnozoites at time t. Let HiN(t) denote the probability that i of N hypnozoites remain in the liver after time t. The hypnozoite population dynamics can be described by the following set of equations:(1)dHNNdt=−(μ+α)NHNNdHiNdt=−(μ+α)iHiN+(μ+α)(i+1)Hi+1N,i=0…N−1
+The tropical relapse model is assumed to begin with an initial population of N hypnozoites, each of which can either activate at rate α, or die at rate µ, independently of each other. The number of hypnozoites in the liver will decay exponentially with an expected Ne−(µ+α)t hypnozoites at time t. Let $H_{i}^{N}(t)$ denote the probability that i of N hypnozoites remain in the liver after time t. The hypnozoite population dynamics can be described by the following set of equations:
 
-Equation 1 can be solved analytically to give:(2)HiN(t)=(Ni)e−N(μ+α)t(e(μ+α)t−1)N−i
+$$
+\frac{dH_{N}^{N}}{dt}=−(\mu+\alpha)NH_{N}^{N}\frac{dH_{i}^{N}}{dt}=−(\mu+\alpha)iH_{i}^{N}+(\mu+\alpha)(i+1)H_{i+1}^{N},i=0…N−1
+$$
 
-Define PjN(t) to be the probability that j relapses have occurred by time t. This can be calculated as follows: if i hypnozoites remain in the liver, then N − i have either activated or died. The probability of each hypnozoite activating is αμ+α. The probability that j of N − i hypnozoites have activated can thus be calculated from a binomial distribution. Summing over the allowable number of hypnozoites (at least j hypnozoites must have activated or died for j relapses to be observed) gives:(3)PjN(t)=∑i=0N−j(N−ij)(αμ+α)j(μμ+α)N−i−jHiN(t)=(Nj)αjμN−j(μ+α)N(1−e−(μ+α)t)N(1+μ+αμ1e(μ+α)t−1)N−j
+Equation 1 can be solved analytically to give:
 
-Equations 1–3 describe the population dynamics of hypnozoites in a single individual with N hypnozoites in the absence of exposure to new infections. In a population of individuals, we would expect substantial variation in the numbers of hypnozoites due to heterogeneity in exposure and the variation in sporozoite inoculum from each infectious mosquito bite (Beier et al., 1991; Medica and Sinnis, 2005; White et al., 2013). Based on evidence that the number of sporozoites injected with a mosquito bite approximately follows a geometric distribution (Beier et al., 1991), we assume that the number of hypnozoites following a primary infection is also geometrically distributed. If the mean number of hypnozoites is N, then the probability of k hypnozoites is (NN+1)k1N+1. Assuming a geometrically distributed number of hypnozoites, the three quantities describing the epidemiology of relapses can be estimated in terms of the within-host parameters. The expected number of relapsing hypnozoites is:(4)h=∑k=0∞(NN+1)k1N+1︸probability of k initial hypnozoites  k  αα+μ︸probability of each hypnozoite relapsing=Nαμ+α
+$$
+H_{i}^{N}(t)=(Ni)e^{−N(\mu+\alpha)t}(e^{(\mu+\alpha)t}−1)^{N−i}
+$$
 
-The mean duration of hypnozoite carriage is:(5)1γ=∑k=0∞(NN+1)k1N+1︸probability of k initial hypnozoites∑i=1k1i1μ+α︸duration of k hypnozoites=log(N+1)μ+α
+Define $P_{j}^{N}(t)$ to be the probability that j relapses have occurred by time t. This can be calculated as follows: if i hypnozoites remain in the liver, then N − i have either activated or died. The probability of each hypnozoite activating is $\frac{\alpha}{\mu+\alpha}$. The probability that j of N − i hypnozoites have activated can thus be calculated from a binomial distribution. Summing over the allowable number of hypnozoites (at least j hypnozoites must have activated or died for j relapses to be observed) gives:
 
-The expected time to first relapse is:(6)1f=∑k=1∞[(NN+1)k1N]︸probability of k initial hypnozoites∑i=1k[(μμ+α)k−iαμ+α/(1−(μμ+α)k)]︸probability of hypnozoite i being first to relapse∑j=0k−i1k−j1μ+α︸time to relapse
+$$
+P_{j}^{N}(t)=\sumi=0N−j(N−ij)(\frac{\alpha}{\mu+\alpha})^{j}(\frac{\mu}{\mu+\alpha})^{N−i−j}H_{i}^{N}(t)=(Nj)\frac{\alpha^{j}\mu^{N−j}}{(\mu+\alpha)^{N}}(1−e^{−(\mu+\alpha)t})^{N}(1+\frac{\mu+\alpha}{\mu}\frac{1}{e^{(\mu+\alpha)t}−1})^{N−j}
+$$
+
+Equations 1–3 describe the population dynamics of hypnozoites in a single individual with N hypnozoites in the absence of exposure to new infections. In a population of individuals, we would expect substantial variation in the numbers of hypnozoites due to heterogeneity in exposure and the variation in sporozoite inoculum from each infectious mosquito bite (Beier et al., 1991; Medica and Sinnis, 2005; White et al., 2013). Based on evidence that the number of sporozoites injected with a mosquito bite approximately follows a geometric distribution (Beier et al., 1991), we assume that the number of hypnozoites following a primary infection is also geometrically distributed. If the mean number of hypnozoites is N, then the probability of k hypnozoites is $(\frac{N}{N+1})^{k}\frac{1}{N+1}$. Assuming a geometrically distributed number of hypnozoites, the three quantities describing the epidemiology of relapses can be estimated in terms of the within-host parameters. The expected number of relapsing hypnozoites is:
+
+$$
+h=\sumk=0∞(\frac{N}{N+1})^{k}\frac{1}{N+1}︸probability of k initial hypnozoites  k  \frac{\alpha}{\alpha+\mu}︸probability of each hypnozoite relapsing=N\frac{\alpha}{\mu+\alpha}
+$$
+
+The mean duration of hypnozoite carriage is:
+
+$$
+\frac{1}{\gamma}=\sumk=0∞(\frac{N}{N+1})^{k}\frac{1}{N+1}︸probability of k initial hypnozoites\sumi=1k\frac{1}{i}\frac{1}{\mu+\alpha}︸duration of k hypnozoites=\frac{log(N+1)}{\mu+\alpha}
+$$
+
+The expected time to first relapse is:
+
+$$
+\frac{1}{f}=\sumk=1∞[(\frac{N}{N+1})^{k}\frac{1}{N}]︸probability of k initial hypnozoites\sumi=1k[(\frac{\mu}{\mu+\alpha})^{k−i}\frac{\alpha}{\mu+\alpha}/(1−(\frac{\mu}{\mu+\alpha})^{k})]︸probability of hypnozoite i being first to relapse\sumj=0k−i\frac{1}{k−j}\frac{1}{\mu+\alpha}︸time to relapse
+$$
 
 The within-host relapse model describes a baseline scenario in the absence of potential external triggers for relapse such as fever (Shanks and White, 2013). Underlying assumptions of this model are: (i) each hypnozoite acts independently of other hypnozoites, for example, hypnozoites will not activate in batches due to mechanisms such as quorum sensing; and, (ii) hypnozoite death occurs at a constant rate, due to either death of the hypnozoite within the hepatocyte or death of the hepatocyte itself (Malato et al., 2011). The activation of a hypnozoite may not directly correspond to a detected relapse. For example, an infection arising from two hypnozoites activating within a day of each other is likely to be classified as a single relapse.
 
-## Within-host model for temperate relapses
+### Within-host model for temperate relapses
 
-The within-host model can be extended to account for temperate strains of P. vivax. We assume that before a hypnozoite is capable of activating, it must undergo a long-latency phase of duration d. During this period hypnozoites are subject to death at rate µ. In particular, we assume that the time spent in the temperate long-latency phase can be described by a gamma distribution with mean d and variance d2/M. This gamma distribution can be simulated by M successive compartments with exponential waiting times 1/δ = d/M. Increasing the number of compartments M reduces the variance in the duration of the dormancy period (Wearing et al., 2005). Following a primary infection where N hypnozoites of a temperate phenotype develop in the liver, we define Li,jN as the probability that i of N hypnozoites are waiting in long-latency compartment number j, then the number of dormant and potentially active hypnozoites can be described by the following system of differential equations.(7)dLN,1Ndt=−δLN,1N−NμLN,1NdLi,1Ndt=−δLi,1N−iμLi,1N+(i+1)μLi+1,1Ni=1…N−1dLN,jNdt=−δLN,jN+δLN,j+1N−NμLN,jNj=2…MdLi,jNdt=−δLi,jN+δLi,j+1N−iμLi,jN+(i+1)μLi+1,jNi=1…N−1, j=2…MdHNNdt=δLN,MN−N(μ+α)HNNdHiNdt=δLi,MN−i(μ+α)HiN+(i+1)(μ+α)Hi+1Ni=1…N−1dH0Ndt=∑j=1MμL1,jN+(μ+α)H1N
+The within-host model can be extended to account for temperate strains of P. vivax. We assume that before a hypnozoite is capable of activating, it must undergo a long-latency phase of duration d. During this period hypnozoites are subject to death at rate µ. In particular, we assume that the time spent in the temperate long-latency phase can be described by a gamma distribution with mean d and variance d2/M. This gamma distribution can be simulated by M successive compartments with exponential waiting times 1/δ = d/M. Increasing the number of compartments M reduces the variance in the duration of the dormancy period (Wearing et al., 2005). Following a primary infection where N hypnozoites of a temperate phenotype develop in the liver, we define $L_{i,j}^{N}$ as the probability that i of N hypnozoites are waiting in long-latency compartment number j, then the number of dormant and potentially active hypnozoites can be described by the following system of differential equations.
 
-The equations are presented schematically in Figure 7—figure supplement 1. Equation 7 cannot be solved analytically and must be computed numerically to calculate HiN(t) and Li,jN(t). A greater deal of uncertainty surrounds the biological processes accounting for the initial long-latency phase observed in temperate strains of P. vivax. In the model implemented here, it is assumed that all hypnozoites in an infection must undergo some waiting period before any of them can activate, and that during the long-latency phase hypnozoites are at risk of death due to natural hepatocyte death.
+$$
+\frac{dL_{N,1}^{N}}{dt}=−\deltaL_{N,1}^{N}−N\muL_{N,1}^{N}\frac{dL_{i,1}^{N}}{dt}=−\deltaL_{i,1}^{N}−i\muL_{i,1}^{N}+(i+1)\muL_{i+1,1}^{N}i=1…N−1\frac{dL_{N,j}^{N}}{dt}=−\deltaL_{N,j}^{N}+\deltaL_{N,j+1}^{N}−N\muL_{N,j}^{N}j=2…M\frac{dL_{i,j}^{N}}{dt}=−\deltaL_{i,j}^{N}+\deltaL_{i,j+1}^{N}−i\muL_{i,j}^{N}+(i+1)\muL_{i+1,j}^{N}i=1…N−1, j=2…M\frac{dH_{N}^{N}}{dt}=\deltaL_{N,M}^{N}−N(\mu+\alpha)H_{N}^{N}\frac{dH_{i}^{N}}{dt}=\deltaL_{i,M}^{N}−i(\mu+\alpha)H_{i}^{N}+(i+1)(\mu+\alpha)H_{i+1}^{N}i=1…N−1\frac{dH_{0}^{N}}{dt}=\sumj=1M\muL_{1,j}^{N}+(\mu+\alpha)H_{1}^{N}
+$$
 
-## P. vivax transmission model
+The equations are presented schematically in Figure 7—figure supplement 1. Equation 7 cannot be solved analytically and must be computed numerically to calculate $H_{i}^{N}(t)$ and $L_{i,j}^{N}(t)$. A greater deal of uncertainty surrounds the biological processes accounting for the initial long-latency phase observed in temperate strains of P. vivax. In the model implemented here, it is assumed that all hypnozoites in an infection must undergo some waiting period before any of them can activate, and that during the long-latency phase hypnozoites are at risk of death due to natural hepatocyte death.
 
-We next embedded the within-host model for tropical relapses in a model for the transmission of
+### P. vivax transmission model
+
+We next embedded the within-host model for tropical relapses in a model for the transmission of P. vivax between humans and mosquitoes (Figure 8). The transmission dynamics are driven by two processes: (i) transmission of parasites through mosquito bites; and (ii) relapsing of liver-stage hypnozoites to cause new blood-stage infections. As per the standard Ross-Macdonald theory, the force of blood-stage infections in humans can be calculated as the product of the number of mosquitoes per human m, the rate at which each mosquito bites a human host a, the probability of transmission from mosquito to human following an infectious bite b, and the proportion of mosquitoes that are infectious IM, to give λ = mabIM. Parameter values are provided in Table 1. The force of infection on mosquitoes can be calculated in a similar manner. We assume that people can be susceptible (Si) or infected with blood-stage parasites (Ii), where i denotes the number of hypnozoites in the liver.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/04692/elife-04692-fig8-v2.jpg)
 
-**Figure 8.:** Within-host model for tropical relapses embedded in a transmission model. S denotes the proportion of humans susceptible to blood-stage infection with ii hypnozoites. I denotes the proportion of humans with blood-stage infections carrying ii hypnozoites. Individuals in all compartments are exposed to primary infections at rate λ, following which they will move down the flow diagram to a compartment representing blood-stage infection and carrying a greater number of hypnozoites.DOI: http://dx.doi.org/10.7554/eLife.04692.016
+**Figure 8.:** Within-host model for tropical relapses embedded in a transmission model. Si denotes the proportion of humans susceptible to blood-stage infection with i hypnozoites. Ii denotes the proportion of humans with blood-stage infections carrying i hypnozoites. Individuals in all compartments are exposed to primary infections at rate λ, following which they will move down the flow diagram to a compartment representing blood-stage infection and carrying a greater number of hypnozoites.
 
-The increase in hypnozoites in the liver is determined by the force of infection λ and the number of hypnozoites per infection N, and the decrease is due to hypnozoite activation α and death µ. The model depicted in Figure 8 can be described by the following set of equations:(8)dSidt=−λSi−i(μ+α)Si+(i+1)μSi+1+ρiIii=0…∞dIidt=−λIi+∑j=0iλj→i(Sj+Ij)−i(μ+α)Ii+(i+1)(μ+α)Ii+1+(i+1)αSi+1−ρiIii=0…∞dSMdt=g−ac(∑i=0∞Ii)(e−gn−IM)−gSMdIMdt=ac(∑i=0∞Ii)(e−gn−IM)−gIMwhere λj→i=λ(NN+1)i−j1N+1. In the absence of super-infection, the recovery from blood-stage infection is ρi=r. Accounting for super-infections (Dietz and Molineaux, 1973; Smith et al., 2012) gives ρi=λ+iαeλ+iαr−1.
+**Table 1.**
+ Description of model parameters
 
-## Model parameterisation
 
-The within-host model for tropical relapses was fitted in a Bayesian framework to data on time to first relapse infection from three ecological zones with tropical strains of P. vivax: South America, South East Asia and Melanesia (see Source data 1). The data are described in detail by Battle et al. (2014). Individual-level data on time to first recurrence was collated from individuals exposed to P. vivax infection (either via natural exposure or artificial challenge) and mostly followed up in the absence of exposure to new infections (Battle et al., 2014). The likelihood of the tropical relapse model can be evaluated by applying the model to the data on time to first relapse infection. The first detected relapse will occur after clearance of parasites from the primary infection and after the period of prophylactic protection from anti-malarial drugs. Define QN(t) to be the probability that at least 1 of N hypnozoites has relapsed by time t.(9)QN(t)=1−P0N(t)=1−(μ+αe−(μ+α)tμ+α)N
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Value</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Within-host</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>number of hypnozoites per infection</td>
+      <td>8.5</td>
+      <td>estimate*</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>rate of hypnozoite activation</td>
+      <td>1/332 day−1</td>
+      <td>estimate*</td>
+    </tr>
+    <tr>
+      <td>µ</td>
+      <td>rate of hypnozoite/hepatocyte death</td>
+      <td>1/425 day−1</td>
+      <td>estimate*</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>duration of temperate long-latency</td>
+      <td>180 days</td>
+      <td>(Battle et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>σd</td>
+      <td>standard deviation of temperate long-latency</td>
+      <td>30 days</td>
+      <td>(Battle et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>number of compartments for simulating long-latency: M = (d/σd)2</td>
+      <td>36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>δ</td>
+      <td>rate of progression through long-latency compartments: δ = M/d</td>
+      <td>0.2 day−1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Humans</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>transmission probability: mosquito to human</td>
+      <td>0.5</td>
+      <td>(Smith et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>rate of clearance of blood-stage infections</td>
+      <td>1/60 day−1</td>
+      <td>(Collins et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>relapse frequency (1/time to first relapse)</td>
+      <td>1/76 day−1</td>
+      <td>Equation 6</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>expected number of relapses</td>
+      <td>4.7</td>
+      <td>Equation 4</td>
+    </tr>
+    <tr>
+      <td>γ</td>
+      <td>rate of hypnozoite clearance</td>
+      <td>1/420 day−1</td>
+      <td>Equation 5</td>
+    </tr>
+    <tr>
+      <td colspan="4">Mosquitoes</td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>mosquito biting frequency</td>
+      <td>0.21 day−1</td>
+      <td>(Garrett-Jones, 1964)</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>mosquito death rate (1/mosquito life expectancy)</td>
+      <td>0.1 day−1</td>
+      <td>(Gething et al., 2011b)</td>
+    </tr>
+    <tr>
+      <td>m</td>
+      <td>number of mosquitoes per human</td>
+      <td>calculated</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>duration of sporogony in mosquito</td>
+      <td>12 days</td>
+      <td>(Gething et al., 2011b)</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>transmission probability: human to mosquito</td>
+      <td>0.23</td>
+      <td>(Bharti et al., 2006)</td>
+    </tr>
+  </tbody>
+</table>
 
-Accounting for a geometrically distributed number of hypnozoites gives:(10)QG(N)(t)=∑k=0∞1N+1(NN+1)kQk(t)where G(N) denotes a geometric distribution.
+_*Based on estimates from South East Asian tropical strains._
 
-An individual j followed up after a primary P. vivax infection will either relapse (Ij = 1) or avoid infection (Ij = 0). Denote τj to be the time of detection of infection, or if uninfected, the time until the end of follow up. The likelihood of the parameters θ = {N, α, µ} given the data Dj = {Ij, τj} is:(11)L(θ|Dj)=(dQG(N)dt|t=τj)Ij(1−QG(N)(τj))1−Ij
+The increase in hypnozoites in the liver is determined by the force of infection λ and the number of hypnozoites per infection N, and the decrease is due to hypnozoite activation α and death µ. The model depicted in Figure 8 can be described by the following set of equations:
 
-The log-likelihood (LL) for all j individuals is:(12)LL=∑j(Ijlog(dQG(N)dt|t=τj)+(1−Ij)log(1−QG(N)(τj)))
+$$
+\frac{dS_{i}}{dt}=−\lambdaS_{i}−i(\mu+\alpha)S_{i}+(i+1)\muS_{i+1}+ρ_{i}I_{i}i=0…∞\frac{dI_{i}}{dt}=−\lambdaI_{i}+\sumj=0i\lambda_{j→i}(S_{j}+I_{j})−i(\mu+\alpha)I_{i}+(i+1)(\mu+\alpha)I_{i+1}+(i+1)\alphaS_{i+1}−ρ_{i}I_{i}i=0…∞\frac{dS_{M}}{dt}=g−ac(\sumi=0∞I_{i})(e^{−gn}−I_{M})−gS_{M}\frac{dI_{M}}{dt}=ac(\sumi=0∞I_{i})(e^{−gn}−I_{M})−gI_{M}
+$$
+
+where $\lambda_{j→i}=\lambda(\frac{N}{N+1})^{i−j}\frac{1}{N+1}$. In the absence of super-infection, the recovery from blood-stage infection is $ρ_{i}=r$. Accounting for super-infections (Dietz and Molineaux, 1973; Smith et al., 2012) gives $ρ_{i}=\frac{\lambda+i\alpha}{e^{\frac{\lambda+i\alpha}{r}}−1}$.
+
+### Model parameterisation
+
+The within-host model for tropical relapses was fitted in a Bayesian framework to data on time to first relapse infection from three ecological zones with tropical strains of P. vivax: South America, South East Asia and Melanesia (see Source data 1). The data are described in detail by Battle et al. (2014). Individual-level data on time to first recurrence was collated from individuals exposed to P. vivax infection (either via natural exposure or artificial challenge) and mostly followed up in the absence of exposure to new infections (Battle et al., 2014). The likelihood of the tropical relapse model can be evaluated by applying the model to the data on time to first relapse infection. The first detected relapse will occur after clearance of parasites from the primary infection and after the period of prophylactic protection from anti-malarial drugs. Define QN(t) to be the probability that at least 1 of N hypnozoites has relapsed by time t.
+
+$$
+Q^{N}(t)=1−P_{0}^{N}(t)=1−(\frac{\mu+\alphae^{−(\mu+\alpha)t}}{\mu+\alpha})^{N}
+$$
+
+Accounting for a geometrically distributed number of hypnozoites gives:
+
+$$
+Q^{G(N)}(t)=\sumk=0∞\frac{1}{N+1}(\frac{N}{N+1})^{k}Q^{k}(t)
+$$
+
+where G(N) denotes a geometric distribution.
+
+An individual j followed up after a primary P. vivax infection will either relapse (Ij = 1) or avoid infection (Ij = 0). Denote τj to be the time of detection of infection, or if uninfected, the time until the end of follow up. The likelihood of the parameters θ = {N, α, µ} given the data Dj = {Ij, τj} is:
+
+$$
+L(\theta|D_{j})=(\frac{dQ^{G(N)}}{dt}|_{t=\tau_{j}})^{I_{j}}(1−Q^{G(N)}(\tau_{j}))^{1−I_{j}}
+$$
+
+The log-likelihood (LL) for all j individuals is:
+
+$$
+LL=\sumj(I_{j}log(\frac{dQ^{G(N)}}{dt}|_{t=\tau_{j}})+(1−I_{j})log(1−Q^{G(N)}(\tau_{j})))
+$$
 
 Data on time to first relapse were not sufficiently informative to estimate the three parameters simultaneously and hence prior distributions were assumed. N was assumed to have an informative gamma prior distribution with median 10 (95% credible interval (CrI): 1, 28) (Beier et al., 1991). µ was assumed to have an informative gamma prior distribution with median 1/200 (95% CrI: 1/309, 1/140) day−1 (Malato et al., 2011). α was assumed to have an uninformative uniform prior distribution U(0,1). The likelihood in equation (Ishikawa et al., 2003) was sampled using a Metropolis–Hastings Markov Chain Monte Carlo (MCMC) algorithm and the posterior parameter distributions estimated (Figure 1—figure supplement 1). The posterior median parameter estimates and 95% credible intervals are presented in Supplementary file 1.

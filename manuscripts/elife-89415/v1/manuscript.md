@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02v51f717 Center for Quantitative Biology, Peking University Beijing China
-2. https://ror.org/02v51f717 Center for Quantitative Biology and the Peking-Tsinghua Center for Life Sciences, Peking University Beijing China
+1. Center for Quantitative Biology, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+2. Center for Quantitative Biology and the Peking-Tsinghua Center for Life Sciences, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 

@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 Department of Psychology, University of California, Davis Davis United States
-2. https://ror.org/05rrcem69 Center for Neuroscience, University of California, Davis Davis United States
-3. https://ror.org/05rrcem69 Department of Biomedical Engineering, University of California, Davis Davis United States
-4. https://ror.org/05rrcem69 Department of Biochemistry and Molecular Medicine, University of California, Davis Davis United States
+1. Department of Psychology, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+2. Center for Neuroscience, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+3. Department of Biomedical Engineering, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+4. Department of Biochemistry and Molecular Medicine, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ To address these issues, we used a trace fear conditioning task in which animals
 
 ## Results
 
-## The locus coeruleus responds to neutral and aversive environmental stimuli
+### The locus coeruleus responds to neutral and aversive environmental stimuli
 
 Before examining LC activity during learning, we sought to determine whether the LC exhibits phasic responses to the basic types of stimuli used in trace fear conditioning. Because previous research indicates LC activity may be modulated by the salience, or intensity, of environmental stimuli (Aston-Jones and Bloom, 1981; Aston-Jones and Cohen, 2005; Vazey et al., 2018), we began by examining the responses of the locus coeruleus to neutral auditory stimuli of varying intensities (55 dB-95dB).
 
@@ -47,7 +47,7 @@ To observe LC responses to auditory stimuli, we expressed the genetically encode
 
 We next examined LC responses to aversive stimuli. To determine whether LC responses are modulated by the intensity of an aversive stimulus, we recorded calcium activity in the LC while mice received foot shocks of varying intensity (0–0.8mA). Consistent with the idea that LC activity is modulated by the salience of environmental stimuli, we found that LC responses to foot shock were much larger than the previously observed responses to neutral auditory stimuli (Figure 1C–F). Additionally, consistent with previous reports, the size of the LC response to footshock increased with foot shock intensity (Figure 1E and F; Chen and Sara, 2007; Hirata and Aston-Jones, 1994; Rasmussen and Jacobs, 1986; Uematsu et al., 2017). The results of these initial experiments demonstrate that the LC responds to both neutral and aversive stimuli and that LC response magnitude is positively correlated with the salience and/or valence of the stimulus.
 
-## Locus coeruleus activity is modulated by learning
+### Locus coeruleus activity is modulated by learning
 
 Having demonstrated that the locus coeruleus is responsive to salient environmental events, we next sought to determine whether its responses are modulated by learning. Again, we began by using fiber photometry to monitor LC responses to a neutral auditory stimulus. If the LC responds to novelty or salience, we would expect the responses to diminish over repeated experiences with a stimulus as the animal habituates to its presence (Thompson and Spencer, 1966). To test this idea, we recorded activity in the LC over the course of 3 days as animals were repeatedly exposed to the same tone (85 dB, 3 KHz; Figure 2A). As expected, LC responses to the tone were largest on the first day and gradually reduced in magnitude over the next 2 days (Figure 2B and C). The LC also responded to tone termination, and while this response also appeared to habituate across days, the effect did not reach significance (Main effect of day F(2,8) = 3.36, p=0.087). This finding is consistent with prior work showing that animals process the termination of an auditory CS as a distinct, salient event that itself can undergo conditioning (Sommer-Smith, 1967; Sommer-Smith et al., 1962).
 
@@ -57,7 +57,7 @@ Having demonstrated that the locus coeruleus is responsive to salient environmen
 
 Next, we examined the effect of associative fear learning on LC responses in a second group of mice that underwent the same procedures, except that on the first day they received ten trace fear conditioning trials instead of unpaired tone presentations (Figure 2D). On the second and third days, mice underwent extinction trials in which no shocks were administered. Trace conditioning trials consisted of a 20 s tone followed by a 20 s stimulus free trace interval ending in a 2 s 0.2mA footshock. The LC responses in these animals followed a similar pattern to that observed in the tone only group, with activity on Day 1 being the largest and gradually decreasing across days as the mice extinguished. However, the magnitude of the LC responses was much larger in mice that underwent trace fear conditioning on Day 1 compared to tone alone presentations (Figure 2E). We also found that the response to tone termination significantly decreased across the extinction sessions. These data suggest that LC responses can be modified by associative learning – LC responses to an inherently neutral stimulus are larger when the stimulus is paired with an aversive outcome than when the stimulus is experienced in isolation. Additionally, as this association is extinguished and the tone becomes less predictive of an aversive outcome, the LC response is reduced – there was no significant difference between fear conditioned and tone only mice on the second or third days of behavior when neither group was receiving footshocks. These results are consistent with previous recording studies that found individual LC neurons can acquire a learned response to the conditional stimulus during training that disappears during extinction (Rasmussen and Jacobs, 1986; Sara and Segal, 1991).
 
-## Locus coeruleus terminals in dorsal hippocampus exhibit phasic responses during trace fear conditioning
+### Locus coeruleus terminals in dorsal hippocampus exhibit phasic responses during trace fear conditioning
 
 Taken together, the above data show that the LC exhibits large bursts of activity during trace fear conditioning at the tone onset, tone termination, and during the shock. LC responses at these key task-related events are overtly evident in LC GCaMP traces averaged across trials and on each trial individually (Figure 3A, B and C). We next examined whether the specific projection from the LC to the dorsal hippocampus (dHPC) exhibits similar phasic responses during trace fear conditioning. To do this, we infused a cre-dependent AAV encoding an axon-enriched calcium sensor, axon-GCaMP6s, into the LC of TH-Cre mice and implanted an optical fiber just above dorsal CA1 (Figure 3D and F; Broussard et al., 2018).
 
@@ -67,7 +67,7 @@ Taken together, the above data show that the LC exhibits large bursts of activit
 
 When we recorded activity from LC-HPC projections during trace fear conditioning, we found that these projections responded to all relevant trace conditioning events: tone onset, tone termination, and shock (Figure 3E). These results confirm that the phasic responses observed in LC during trace conditioning are also present in the specific subset of LC axons that project directly to the dHPC and suggest that LC-dHPC projections may be important for memory formation.
 
-## Phasic locus coeruleus activation enhances trace fear conditioning
+### Phasic locus coeruleus activation enhances trace fear conditioning
 
 Our fiber photometry experiments provide strong correlational evidence that phasic LC responses are involved in trace fear learning via the release of catecholamines, but whether this response enhances learning, as is often proposed, remains unknown (Giustino and Maren, 2018; Likhtik and Johansen, 2019; McGaugh, 2004; Sears et al., 2013; Takeuchi et al., 2016). To determine whether phasic activation of LC enhances trace fear conditioning, we infused a cre-dependent version of the excitatory opsin ChR2 into the LC of TH-Cre mice or their wild-type littermates and optical fibers were implanted above the infusion site (Figure 4A and B). After recovery from surgery, the mice underwent trace fear conditioning using a protocol with low tone (65 dB) and shock intensity (0.2mA) to produce weak learning that would allow us to uncover an enhancement with LC stimulation, as indicated by the fact that these stimulus intensities produced relatively weak LC responses (Figure 1). During the training session, 20 Hz blue light was delivered to the locus coeruleus in three two-second periods beginning at each of the trial events when consistent LC responses were observed in fiber photometry experiments: tone onset, tone termination, and shock onset (Figure 4C).
 
@@ -77,7 +77,7 @@ Our fiber photometry experiments provide strong correlational evidence that phas
 
 The next day, animals underwent a memory test in a novel context in which they were repeatedly exposed to the training tone (Figure 4D). Freezing during the tone and the post-tone period was used as an index of fear memory retrieval. Phasic LC stimulation at the onset of all learning-related events significantly enhanced long-term memory formation. Cre-positive mice expressing ChR2 froze significantly more in the memory test during both the tones and the 20 s post-tone period corresponding to the trace-interval on the training day. These data indicate that increased phasic activation of the LC at specific learning-related time points during trace conditioning is sufficient to enhance long-term memory formation.
 
-## The locus coeruleus drives both dopamine and norepinephrine release in the dorsal hippocampus
+### The locus coeruleus drives both dopamine and norepinephrine release in the dorsal hippocampus
 
 Our data suggest that LC projections to the hippocampus are activated by salient learning-related events and that this LC activation can enhance long term memory formation. However, it remains unclear which neurotransmitter the LC releases into the dHPC during these responses. Canonically, the LC is known as the primary source of norepinephrine in the forebrain (Jones and Moore, 1977; Lindvall and Björklund, 1974; Pickel et al., 1974; Schwarz and Luo, 2015). However, recent evidence suggests that the LC can co-release norepinephrine and dopamine into the hippocampus and other cortical areas (Devoto and Flore, 2006; Kempadoo et al., 2016; Smith and Greene, 2012; Takeuchi et al., 2016; Wagatsuma et al., 2018).
 
@@ -89,7 +89,7 @@ To test this possibility, we expressed the genetically encoded dopamine and nore
 
 Interestingly, the results for the dopamine and norepinephrine sensors were similar. First, in all groups of animals, there was a small increase in fluorescence immediately after the injection likely produced by a LC response to the highly salient I.P. injection process (data not shown). However, after this increase subsided, fluorescence continued to decrease for the rest of the session in the vehicle and CNO +antagonist groups for both sensors. This continued decrease is likely the result of a reduction in the amount of dopamine and norepinephrine in the HPC (as the chamber becomes less novel and the animals explore less) in addition to any photobleaching that occurred over the session. In contrast, CNO-only injections in mice expressing either sensor produced prolonged increases in fluorescence relative to the vehicle groups beginning approximately 10 min after the injection (Figure 4C and D), indicating that stimulation of the LC increases both dopamine and norepinephrine concentrations in the dHPC. The time course of these increases is consistent with the latency of onset of hM3Dq effects on physiology and behavior in other studies (Alexander et al., 2009; Jendryka et al., 2019). These data confirm that the LC activation can drive the release of both dopamine and norepinephrine into the dHPC. LC activation likely triggers co-release of DA and NE directly from LC terminals in dHPC, but we cannot fully rule out the possibility that the increase in DA is driven indirectly by LC projections to midbrain dopaminergic regions (Schank et al., 2006; Schwarz and Luo, 2015).
 
-## Dopamine, not norepinephrine, is required for trace fear memory formation
+### Dopamine, not norepinephrine, is required for trace fear memory formation
 
 Given that LC activation drives the release of both NE and DA in the dHPC, we sought to determine which of these neurotransmitters contributes to trace fear memory formation. To test this, we trained animals in trace fear conditioning after administering either norepinephrine or dopamine receptor antagonists and tested their memory the next day (Figure 6A).
 
@@ -105,7 +105,7 @@ To test whether dopamine is required for trace fear memory formation, we adminis
 
 In some memory paradigms, dopamine release in the dHPC has been suggested to mediate the consolidation, rather than the encoding of memories (Broussard et al., 2016; O’Carroll et al., 2006; Rossato et al., 2009; Takeuchi et al., 2016). To determine whether the observed memory deficits resulted from impairments in encoding or consolidation, we administered systemic SCH23390 immediately after trace fear conditioning and tested memory the next day (Figure 6G). We found no differences in memory performance between SCH23390 and vehicle mice during the memory test (Figure 6H), suggesting that the memory impairment observed after pre-training D1 antagonist injections is caused by effects on memory encoding, not consolidation.
 
-## Dopamine release in the dorsal hippocampus during trace fear conditioning
+### Dopamine release in the dorsal hippocampus during trace fear conditioning
 
 Because we found that LC activation can drive dopamine increases in dHPC and that dopamine release in the dHPC is required for trace fear memory formation, we next examined phasic DA release in the dHPC. To determine whether dHPC DA release increases with stimulus intensity, as LC Ca2+ activity does, we infused GRAB-DA3h into dCA1 and measured dopamine transients in response to foot shocks of varying intensities. We found that dHPC dopamine increases in response to foot shocks and that the size of the dopamine transient increases with foot shock amplitude (Figure 7B and C), paralleling LC responses.
 
@@ -135,11 +135,11 @@ The LC may also assert its effect on memory formation indirectly via its influen
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Subjects in this study were 2- to 4-month-old male and female F1 hybrids generated by breeding TH-Cre mice maintained on a C57BL/6 J background (Jackson Labs, Cat #008601) with 129S6 mice (Taconic). Mice were maintained on a 12 hr light/12 hr dark cycle with ad libitum access to food and water. All experiments were performed during the light portion (7 a.m-7 p.m.) of the light/dark cycle. Mice were group housed throughout the experiments. All experiments were reviewed and approved by the UC Davis Institutional Animal Care and Use Committee (IACUC, Protocol #21450).
 
-## Surgery
+### Surgery
 
 Stereotaxic surgery was performed 2–3 weeks before behavioral experiments began for LC cell body experiments and 8–14 weeks before behavioral experiments for LC projection experiments. Mice were anesthetized with isoflurane (5% induction, 2% maintenance) and placed into a stereotaxic frame (Kopf Instruments). An incision was made in the scalp and the skull was adjusted to place bregma and lambda in the same horizontal plane. Small craniotomies were made above the desired injection site in each hemisphere. AAV was delivered at a rate of 2 nl/s to the locus coeruleus (AP – 5.5 mm and ML ± 0.9 mm from bregma; DV –3.6 mm from dura) or dorsal CA1 (AP –2.0 mm and ML ± 1.5 mm; DV – 1.25 mm from dura) through a glass pipette using a microsyringe pump (UMP3, World Precision Instruments).
 
@@ -147,56 +147,60 @@ For optogenetic stimulation experiments, the AAV used was AAV9-EF1A-DIO-hChR2(E1
 
 After AAV infusions, an optical fiber (200 μm diameter for optogenetics, Thorlabs; 400 μm diameter for photometry, Doric) was implanted above dorsal CA1 (dCA1) (AP –2.0 mm and ML ± 1.5 mm from bregma; DV –1.0 mm from dura for optogenetics, DV – 1.25 mm from dura for photometry) or locus coeruleus (AP –5.5 mm and ML –0.9 mm from bregma; DV –3.5 mm). The fiber implants were secured to the skull using dental adhesive (C&B Metabond, Parkell) and dental acrylic (Bosworth Company).
 
-## Apparatus
+### Apparatus
 
 The behavioral apparatus has been described previously (Wilmot et al., 2019). Briefly, fear conditioning occurred in a conditioning chamber (30.5 cm x 24.1 cm x 21.0 cm) within a sound-attenuating box (Med Associates). The chamber consisted of a front-mounted scanning charge-coupled device video camera, stainless steel grid floor, a stainless steel drop pan, and overhead LED lighting capable of providing broad spectrum and infrared light. For context A, the conditioning chamber was lit with both broad spectrum and infrared light and scented with 95% ethanol. For context B, a smooth white plastic insert was placed over the grid floor and a curved white wall was inserted into the chamber. Additionally, the room lights were changed to red light, only infrared lighting was present in the conditioning chamber, and the chamber was cleaned and scented with disinfectant wipes (PDI Sani-Cloth Plus). In both contexts, background noise (65 dB) was generated with a fan in the chamber and HEPA filter in the room.
 
-## Behavioral Procedures
+### Behavioral Procedures
 
-## Trace fear conditioning
+#### Trace fear conditioning
 
 All behavioral testing occurred during the light portion of the light/dark cycle. Mice were habituated to handling and optical fiber connection for 3–5 min/day for 5 days before the beginning of behavior. Next, the mice underwent trace fear conditioning in context A. During training, mice were allowed to explore the conditioning chamber for 3 min before conditioning trials began. For optogenetics and pharmacology experiments, the animals then receive 3 trace conditioning trials. For photometry experiments, animals received 10 conditioning trials. Each trial consisted of a 20 s pure tone (85 dB, 3000 Hz) and a 2 s shock (0.3mA for optogenetics and pharmacology, 0.2mA for photometry) separated by a 20 s stimulus-free trace interval. The intertrial interval (ITI) was 120 or 180 s. Mice were removed from the chamber 180 s after the last trial. Twenty-four hours later, the mice were placed in context B for a tone test consisting of a 2 or 3 min baseline period followed by 6 20 s tone presentations separated by a 180 s ITI for optogenetics and pharmacology experiments and 10 20 s tone presentations separated by a 140 s ITI for photometry experiments. In photometry extinction experiments, mice underwent an extinction test in which they received 20 tone presentations separated by 90 second ITI in context B. Freezing behavior was used to index fear and measured automatically using VideoFreeze software (Med Associates).
 
-## DREADDS stimulation behavior
+#### DREADDS stimulation behavior
 
 For DREADDS experiments, mice (GRAB-NE, n=5; GRAB-DA, n=6) were placed in the same apparatus used for trace fear conditioning experiments. Baseline fluorescence was acquired for 10 min, after which mice were briefly removed from the chamber to receive an injection of either CNO or vehicle. After injection, mice were immediately placed back inside the chamber and remained there for 50 more minutes. This procedure was repeated the next day, but animals that received CNO on the first day received saline on the second day and vice versa.
 
-## Shock response curve
+#### Shock response curve
 
 For the LC shock response curve experiment, mice (n=4) were placed in the conditioning chamber and allowed to explore freely for 180 s. Then 1 s shocks were presented in three blocks of seven trials. Each block consisted of seven trials of different shock intensities (0mA, 0.05ma, 0.1mA, 0.2mA, 0.4mA, 0.6mA, and 0.8mA) in pseudorandom order, such that the shocks did not occur in ascending or descending order or follow the same pattern in each block, separated by a 30 s ITI. Trial blocks were separated by 180 s and mice were removed from the chamber 180 s after the last trial. For the GRAB-DA shock response curve experiment, mice (n=10) underwent 10 trials with two exposures each to 0mA, 0.2mA, 0.4mA, 0.6mA, and 0.8mA with a 120 s ITI.
 
-## Tone response curve
+#### Tone response curve
 
 Mice (n=4) were placed in the conditioning chamber and allowed to explore freely for 180 s. Then 25 twenty second tones of varying intensity (55 dB, 65 dB, 75 dB, 85 dB, 95 dB) were presented in pseudorandom order with a 60 s ITI between tones. Mice were removed from the chamber 60 s after the last tone.
 
-## Signaled vs unsignaled fear conditioning
+#### Signaled vs unsignaled fear conditioning
 
 Animals were trained in TFC as described above. Then, they underwent another behavioral session in which the procedure was the same as the trace fear conditioning procedure, except that a pseudorandom half of the shocks were unsignaled in that they were not proceeded by a tone CS. These trials would consist of just a 160 s ITI followed by a foot shock. (n=5).
 
-## Optogenetics
+### Optogenetics
 
 Blue light (465 nm, 10 mW measured at fiber tip) was delivered (20 Hz, 5ms pulse width) to LC in 2 s epochs during the training session. Light onset was simultaneous with onset of the tone, termination of the tone, and onset of the shock. No light was delivered during the test. (n=7/group).
 
-## Fiber photometry
+### Fiber photometry
 
 The photometry system (Doric) consists of a fluorescence mini-cube that transmits light from a 465 nm LED sinusoidally modulated at ~209 Hz that passed through a 465 nm bandpass filter, and a 405 nm LED modulated at ~308 Hz that passed through a 405 nm bandpass filter. The fluorescence from neurons below the fiber tip was transmitted via this same cable back to the mini-cube, where it was passed through an emission filter, amplified, and focused onto a femtowatt photoreceiver (Newport). The signals generated by the two LEDs were demodulated and decimated to 120 Hz for recording to disk.
 
-All preprocessing and analysis was conducted using custom Python scripts. For preprocessing of GCaMP data, a least-squares linear fit was used to predict 465 nm signal from the 405 nm isosbestic signal. Data from trials was excluded if major artifacts (large, simultaneous deflections in both channels) were present. To calculate a ΔF/F, the predicted values were then subtracted from the true 465 nm signal and this value was divided by the predicted value. In short, the ΔF/F was calculated as below:ΔFF=465−465predicted465predicted×100
+All preprocessing and analysis was conducted using custom Python scripts. For preprocessing of GCaMP data, a least-squares linear fit was used to predict 465 nm signal from the 405 nm isosbestic signal. Data from trials was excluded if major artifacts (large, simultaneous deflections in both channels) were present. To calculate a ΔF/F, the predicted values were then subtracted from the true 465 nm signal and this value was divided by the predicted value. In short, the ΔF/F was calculated as below:
+
+$$
+\frac{ΔF}{F}=\frac{465−465_{predicted}}{465_{predicted}}\times100
+$$
 
 For event-based analyses, the ΔF/F was normalized to the baseline of the trial (the 20 s preceding delivery of the tone for fear conditioning, 2 s preceding the tone for tone and shock response experiments). Data was analyzed as the peak ΔF/F during the first 2 s of each stimulus period analyzed. For single group experiments, responses were analyzed for significance by comparing the peak ΔF/F in the two seconds before the event to the 2 s after the event.
 
 For GRAB-NE and GRAB-DA DREADDs experiments, ΔF/F calculation did not use the isosbestic channel due to differential bleaching between the isosbestic and signal channels over the long time scales used in those experiments. Instead, ΔF/F was calculated via baseline normalization (i.e. subtracting the mean 465 nm signal during a 5 min baseline period from the 465 nm signal and dividing the resulting value by the standard deviation of the 465 nm during the baseline period).
 
-## Drugs
+### Drugs
 
 For DREADDs experiments, animals received 5 mg/kg I.P. injections of clozapine-N-oxide (CNO, Tocris) dissolved in 2% DMSO in sterile 0.9% saline. Vehicle injections were 2% DMSO in sterile 0.9% saline. All other drugs were dissolved in 0.9% sterile saline. SCH23390 (Sigma) was administered at 0.1 mg/kg I.P. (pre-training: SCH n=8, vehicle n=8; post-training: SCH n=8, vehicle n=8) or intra-hippocampally (5 μg/μL, 0.5 μL/hemisphere) (SCH n=5, vehicle n=5) 30 min before behavioral experiments for pre-training experiments or immediately after animals were removed from the conditioning chamber for the consolidation experiment. Propranolol was administered at 20 mg/kg I.P. (propranolol n=8, vehicle n=8) or intra-hippocampally (10 μg/μL, 0.5 μL/hemisphere; propranolol n=8, vehicle n=9) 30 min before the behavioral session. Combined injections of propranolol and prazosin were administered at either 0.5 mg/kg prazosin and 5 mg/kg propranolol (n=6) or 1 mg/kg prazosin and 10 mg/kg propranolol (n=6) 30 min prior to the behavioral session (vehicle n=6). Yohimbine hydrochloride (Sigma) was administered at 2 mg/kg I.P. 10 min after the start of photometry recordings. Eticlopride hydrochloride (Sigma) was administered at 2 mg/kg I.P. 10 min after the start of photometry recordings.
 
-## Immunohistochemistry and image acquisition
+### Immunohistochemistry and image acquisition
 
 The basic immunohistochemistry procedures have been described previously (Krueger et al., 2020; Wilmot et al., 2019). Briefly, mice were transcardially perfused with 4% PFA. Following 24–48 hr of post-fixation, 40 μm coronal sections were cut. Slices were washed three times in 1 X phosphate buffered saline (PBS) at the beginning of the procedure and after all antibody and counterstaining steps. All antibodies and counterstains were diluted in a blocking solution containing.2% Triton-X and 2% normal donkey serum in 1 X PBS, unless otherwise indicated. First, sections were incubated for 15 min in the blocking solution. Then, slices were incubated for 24 hr at room temperature in primary antibody. Next, slices were placed in secondary antibody for 60 min at room temperature, followed by detection with a fluorophore for 45 min when required. Finally, sections were stained with DAPI (1:10,000 in PBS, Life Technologies) for 10 min, mounted on slides, and coverslipped with Vectashield anti-fade mounting media (Vector Labs). Images were acquired at ×10–20 magnification using a fluorescence slide scanner (BX61VS, Olympus).
 
 Primary antibodies used included anti-GFP chicken primary antibody (1:300, ab13970, Abcam, RRID:AB_300798), and anti-TH rabbit primary antibody (1:5000, AB152, Sigma). Secondary antibodies included biotinylated donkey-anti-rabbit (1:500, Jackson ImmunoResearch, RRID:AB_2340594), biotinylated donkey-anti-chicken (1:500, Jackson ImmunoResearch, RRID:AB_2313596), and donkey-anti-rabbit-Alexa555 (1:500, Fisher, RRID:AB_162543). Detection was performed with Streptavidin-Cy2 (1:500, Jackson ImmunoResearch, RRID:AB_2337246), Streptavidin-Cy3 (1:500, Jackson ImmunoResearch, RRID:AB_2337244), or Streptavidin-Cy5 (1:500, Jackson ImmunoResearch, RRID:AB_2337245).
 
-## Statistical analyses
+### Statistical analyses
 
 Sample sizes were based on previous studies using similar methods. In all experiments, animals were randomly assigned to groups prior to experimentation. For analysis of behavioral data from training and tone test sessions, freezing scores in each phase type (baseline, tone, trace) were averaged across trials for each animal. All data were analyzed using repeated-measures ANOVA, paired t-tests, or unpaired t-tests as appropriate. ANOVA was followed by Bonferroni-corrected post hoc comparisons when necessary. A threshold of p<0.05 was used to determine statistical significance. All data are shown as mean ± SEM. Data were analyzed with custom Python scripts and figures were generated using custom Python scripts and BioRender.

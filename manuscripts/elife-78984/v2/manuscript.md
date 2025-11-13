@@ -12,7 +12,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01sjwvz98 Chromosome Dynamics Laboratory, RIKEN Wako Japan
+1. Chromosome Dynamics Laboratory, RIKEN Wako Japan ([ROR:01sjwvz98](https://ror.org/01sjwvz98))
 
 † Corresponding author
 
@@ -34,31 +34,63 @@ In the current study, we have used Xenopus egg extracts as a functional assay to
 
 ## Results
 
-## Recombinant condensin II can functionally replace endogenous condensin II in Xenopus egg extracts
+### Recombinant condensin II can functionally replace endogenous condensin II in Xenopus egg extracts
 
 To dissect the functional contributions of the individual subunits of condensin II for mitotic chromosome assembly, we expressed mammalian subunits using a baculovirus expression system in insect cells. A recombinant condensin II holocomplex (holo[WT]) composed of five subunits (Figure 1A) was purified according to the procedures described previously (Kinoshita et al., 2015; Kinoshita et al., 2022) with some modifications (Figure 1—figure supplement 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig1-v2.jpg)
+
+**Figure 1.:** (A) A schematic diagram of the condensin II holocomplex that is composed of two structural maintenance of chromosomes (SMC) subunits (SMC2 and SMC4), two HEAT subunits (CAP-D3 and CAP-G2), and a kleisin subunit (CAP-H2). (B) Mouse sperm nuclei were incubated with Δmock, Δcond I, or Δcond I/II extracts that had been supplemented with a control buffer (buffer) or recombinant (rec) condensin II holocomplex, holo(WT), at a final concentration of 200 nM. After 150 min, reaction mixtures were fixed, split, and labeled with an antibody against either Xenopus CAP-H2 (XCAP-H2) or human CAP-H2 (hCAP-H2). DNA was counterstained with DAPI (4′,6-diamidino-2-phenylindole). Shown here is a representative image from over 15 chromosome clusters examined per condition. Scale bar, 10 µm. (C) A schematic representation of the chromosome structures observed in Δmock, Δcond I, or Δcond I/II extracts. Rod-shaped chromosomes and chenille-like chromosomes are assembled in Δmock extract and Δcond I extract, respectively. Δcond I/II extract produces an amorphous mass of chromatin (‘clouds’). The addition of recombinant condensin II (rec cond II) to the same extract restores its ability to assemble chenille-like chromosomes. (D) A single chromosome assembled in Δcond I extract with buffer and Δcond I/II extract with 200 nM holo(WT) from samples from experiment (B) in comparison to a chenille stem. Scale bars for chromosomes, 2 µm. (E) DAPI intensities from the experiment described in (B) were measured along lines drawn perpendicular to chromosome axes to create line scan profiles for the width of chromosomes assembled in the Δcond I extract with buffer and Δcond I/II extract with 200 nM holo(WT) (n=20 chromosomes). The mean and SD were normalized individually to the DAPI intensity (arbitrary unit [a.u.]) at the center of chromosome axes (distance = 0 μm) within each set. A dataset from a single representative experiment out of three repeats is shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Recombinant condensin II holocomplex (holo[WT]), ΔG2(WT), ΔD3(WT), and ΔD3ΔG2(WT) were purified and subjected to SDS-PAGE. The gel was stained with Coomassie Brilliant Blue (CBB). (B) Recombinant condensin II holocomplexes and ΔG2 subcomplexes containing either wild-type (WT) or transition state (TR) mutant version of the structural maintenance of chromosomes (SMC) subunits. (C) Recombinant condensin II holocomplexes and ΔG2 subcomplexes containing either WT or C-tail truncated version (D3–dC) of the CAP-D3 subunit. (D) Recombinant condensin II holocomplexes containing either WT, a single set of basic cluster mutations (H2-BC1D or H2-BC2D), or both sets of basic cluster mutations (H2-BC1/2D) of the CAP-H2 subunit. (E) Recombinant condensin II holo(WT) was incubated with or without λ protein phosphatase (PPase) for 60 min and subjected to immunoblotting. hCAP-H2 migrated as two bands without phosphatase treatment but migrated as a single band after protein phosphatase treatment, indicating that a fraction of hCAP-H2 is phosphorylated when expressed in insect cells.
+
 We then tested the ability of condensin II holo(WT) to assemble mitotic chromosomes in Xenopus egg extracts. Conventional assays of mitotic chromosome assembly using Xenopus egg extracts had used Xenopus sperm nuclei as a substrate (Hirano et al., 1997; Ono et al., 2003; Shintomi and Hirano, 2011). More recently, we modified these assays by introducing mouse sperm nuclei into the same extracts, which allowed us to gain additional insights into the mechanism of mitotic chromosome assembly (Kinoshita et al., 2022; Shintomi et al., 2017). It was noticed that the functional contribution of condensin II was observed more prominently when mouse sperm nuclei were used as a substrate than when Xenopus sperm nuclei were used (Shintomi et al., 2017). We suspected that the slow kinetics of nucleosome assembly on the mouse sperm substrate creates an environment in favor of condensin II’s action. For this reason, mouse sperm nuclei were used as a substrate in the current study. We prepared metaphase extracts depleted of condensin I only (Δcond I) and of condensins I and II together (Δcond I/II) (Figure 2—figure supplement 1A). As reported in a previous study (Shintomi et al., 2017), control extract (Δmock) produced a cluster of rod-shaped chromosomes whereas condensin I-depleted extract (Δcond I) produced a cluster of thick chromosomes with fuzzy surfaces in which condensin II localized to DAPI-dense axes (Figure 1B and C). Immunodepletion of both condensins I and II (Δcond I/II) resulted in the formation of an amorphous mass of chromatin (called ‘cloud’) in which twenty chromosomal DNAs are entangled with each other. We found that recombinant condensin II holocomplex, when added back into the Δcond I/II extract, effectively restored the ability to support condensin II-mediated chromosome assembly in a dose-dependent manner (Figure 1B and Figure 2—figure supplement 1B). The addition of holo(WT) at 200 nM caused the formation of chromosomal structures similar to those formed by endogenous condensin II (Figure 1D and E). We noticed that this concentration (200 nM) was higher than the concentration of endogenous condensin II (~25 nM) in Xenopus egg extracts that had been estimated by proteomic analysis (Wühr et al., 2014). Potential explanations for this apparent discrepancy could include the species difference in the primary structures of the subunits or the different states of post-translational modifications. Despite the caveat, these experiments demonstrate that the recombinant mammalian condensin II holocomplex can functionally replace endogenous condensin II in Xenopus egg extracts under the current condition. As described here, condensin II, without condensin I, forms a unique chromosome structure with a fuzzy surface and an internal axis. In the current study, we refer to the chromosome structure as a ‘chenille-like’ chromosome, due to its resemblance to a chenille stem (Figure 1D, bottom).
 
-## Chromosome association of condensin II Is decreased by CAP-D3 deletion but is increased by CAP-G2 deletion
+### Chromosome association of condensin II Is decreased by CAP-D3 deletion but is increased by CAP-G2 deletion
 
 Having established that the recombinant condensin II holocomplex works in Xenopus egg extracts, we then wished to understand the functional contributions of its HEAT subunits, CAP-D3, and CAP-G2, in the assembly of chenille-like chromosomes. To this end, condensin II subcomplexes lacking CAP-G2 (ΔG2[WT]), CAP-D3 (ΔD3[WT]), or both (ΔD3ΔG2[WT]) (Figure 1—figure supplement 1A) were individually added back into extracts depleted of both condensins I and II. Unlike holo(WT), ΔD3(WT) displayed a weak association with chromatin and failed to form DAPI-dense internal axes (Figure 2A and B). In contrast, ΔG2(WT) retained the ability to assemble structures reminiscent of chenille-like chromosomes formed by holo(WT) (Figure 2A and B). Strikingly, we noticed that an extremely high level of hCAP-H2 signals accumulated on DAPI-dense axes. A time-course of the formation of these chromosomes demonstrated that ΔG2(WT) became detectable on chromatin and initiated the formation of axes at much earlier time points than holo(WT) (Figure 2—figure supplement 1C). Unlike ΔG2(WT), ΔD3ΔG2(WT) displayed very little if any activity to associate with chromatin (Figure 2A and B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig2-v2.jpg)
+
+**Figure 2.:** (A) (Left) Mouse sperm nuclei were incubated with Δcond I/II extracts that had been supplemented with control buffer (buffer), recombinant condensin II holocomplex (holo[WT]) or its subcomplexes (ΔG2[WT], ΔD3[WT], and ΔD3ΔG2[WT]) at 200 nM. After 150 min, reaction mixtures were fixed, and labeled with anti-hCAP-H2 antibody. DNA was counterstained with DAPI. The images of the hCAP-H2 signal were captured at different relative exposure times (1 × and 1/4 ×) to show non-saturated signal intensities of chromosome structures produced by ΔG2(WT). Shown here is a representative image from over 15 chromosome clusters examined per condition. Scale bar, 10 µm. (Right) Schematic diagrams of the holocomplex and subcomplexes. (B) Signal intensities of hCAP-H2 from the experiment described in (A) were divided by DAPI signal intensities and the mean values were normalized relative to the value by holo(WT). The mean ± SD is shown (n=15 chromosome clusters). The p-values listed were assessed by two-tailed Welch’s t-test. (C) Mouse sperm nuclei were incubated with Δcond I/II extracts that had been supplemented with holo(WT) or ΔG2(WT) at concentrations indicated. After 150 min, reaction mixtures were fixed and processed for immunofluorescence as in (A). Shown here is a representative image from over 15 chromosome clusters examined per condition. The right panels show cropped images of the orange sections of the left panels. Scale bar, 10 µm (left) and 5 µm (right). (D) DAPI and hCAP-H2 intensities from the experiment described in (C) were measured along lines drawn perpendicular to the chromosome to create line scan profiles for the width of chromosomes assembled in Δcond I/II extract with 200 nM holo(WT) or either 25 nM or 200 nM ΔG2(WT) (n=20 chromosomes). The mean and standard deviation were normalized individually to the DAPI intensities (arbitrary unit [a.u.]) at the center of chromosome axes (distance = 0 μm) within each set. Intensities of hCAP-H2 were normalized relative to the central value by 200 nM holo(WT) addition. A dataset from a single representative experiment out of three repeats is shown. WT: wild-type.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Xenopus egg extracts were immunodepleted with control IgG (Δmock), antibodies against endogenous condensin I subunit (Δcond I extract), or antibodies against both endogenous condensin I and II subunits (Δcond I/II extract). An aliquot of each immunodepleted extract was analyzed by immunoblotting with antibodies to estimate the efficiency of immunodepletion with decreasing amounts of Δmock extract (100, 50, 20, and 5%). Xenopus topoisomerase IIα (Xtopo IIα) acts as a loading control. Asterisks (*) indicate non-specific bands. Immunodepletion of Xenopus CAP-H2 (XCAP-H2) was evaluated with two different affinity-purified antibodies (AfR201 and AfR202) raised against the same antigen to confirm that the band migrating slightly slower than XCAP-H2 is a non-specific band cross-reacted only with AfR201 but not with AfR202. (B) Mouse sperm nuclei were incubated in Δcond I/II extracts supplemented with control buffer (buffer) or holo(WT) at increasing concentrations from 50 nM to 300 nM. After 150 min, reaction mixtures were fixed, labeled with anti-hCAP-H2 antibody, and stained by DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. The change in chromosomal morphology from cloud to chenille-like chromosomes by recombinant mammalian condensin II holo(WT) is concentration-dependent. Scale bar, 10 µm. (C) Mouse sperm nuclei were incubated in Δcond I/II extracts supplemented with control buffer (buffer), holo(WT) at 200 nM or ΔG2(WT) at 200 nM. Reaction mixtures were fixed at 0, 15, 30, 60, 90, 120, and 150 min, and labeled with anti-hCAP-H2 antibody. DNA was counterstained by DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. ΔG2(WT) accumulates on chromatin and induces its structural changes at much earlier time points than holo(WT). Scale bar, 10 µm. WT: wild-type.
+
 Having observed progressive accumulation of ΔG2(WT) on chromosome axes over time, the concentration of ΔG2(WT) was titrated down. We found that the addition of as low as 25 nM ΔG2(WT) was sufficient to produce chenille-like chromosomes similar to those formed by the addition of 200 nM holo(WT) (Figure 2C). Comparable levels of hCAP-H2 signals were detectable on the axes between the two conditions (Figure 2D). Taken together, these results suggest that CAP-D3 and CAP-G2 have a positive and negative role, respectively, in chromosome association of condensin II that leads to chromosome axis formation. A minor concern is that an unidentified residual level of Xenopus CAP-G2 remaining in the depleted egg extract may incorporate into the recombinant ΔG2(WT) subcomplex and influence the resultant chromosomal phenotype. However, we consider that this is unlikely because clear functional differences between holo(WT) and ΔG2(WT) are also observed in an extract-free assay, as described below (Figure 6A and B).
 
-## The SMC ATPase cycle is essential for condensin II function
+### The SMC ATPase cycle is essential for condensin II function
 
 A previous study from our laboratory demonstrated that mutations impairing the SMC ATPase cycle cause very severe defects in condensin I-mediated chromosome assembly in Xenopus egg extracts (Kinoshita et al., 2015). To test whether the same is true in condensin II-mediated chromosome assembly, we introduced the transition state (TR) mutations, which are predicted to slow down the step of ATP hydrolysis, into the SMC subunits of condensin II (mSMC2 E1114Q and mSMC4 E1218Q), and prepared holo(SMC-TR) and ΔG2(SMC-TR) (Figure 1—figure supplement 1B). We found that holo(SMC-TR), when added at 200 nM, bound only weakly to chromatin, leaving an amorphous cloud-like structure (Figure 3A and B). At the same concentration, chromosome association of ΔG2(SMC-TR) was greatly reduced compared to that of ΔG2(WT), but was seen at a much higher level than that of holo(WT). Despite the high level of chromosome association, ΔG2(SMC-TR) failed to show any sign of chromosome assembly much like holo(SMC-TR). When ΔG2(WT) and ΔG2(SMC-TR) were reduced to 25 nM, the levels of chromosome association and the resulting chromosome morphology were comparable with those of holo(WT) and holo(SMC-TR), respectively, at 200 nM (Figure 3A), a result consistent with that shown in Figure 2. These results suggest that ATP hydrolysis facilitates the accumulation of condensin II at the chromosome axes in Xenopus egg extracts.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig3-v2.jpg)
 
-**Figure 3.:** (A) Mouse sperm nuclei were incubated with Δcond I/II extracts that had been supplemented with condensin II holo(WT) and holo(SMC-TR) at 200 nM, or ΔG2(WT) and ΔG2(SMC-TR) at either 200 nM or 25 nM. After 150 min, reaction mixtures were fixed and labeled with anti-hCAP-H2 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. The images of hCAP-H2 signal were first captured at a single exposure time (1/3 ×) and then increased digitally (1 ×) to visualize signals from chromosomes of complexes apart from ΔG2(WT) at 200 nM. Scale bar, 10 µm. (B) Signal intensities of hCAP-H2 from the experiment described in (A) were divided by DAPI intensities and the mean values were normalized relative to the value by holo(WT). The mean ± SD is shown (n=15 chromosome clusters). The p-values listed were assessed by two-tailed Welch’s t-test. A dataset from a single representative experiment out of two repeats is shown. (C) ATPase rates of recombinant condensin II holo(WT), ΔG2(WT), holo(SMC-TR), and ΔG2(SMC-TR) in the presence or absence of double-stranded DNA (dsDNA). The error bar represents the SD from three performed repeats. P values listed were assessed by two-tailed t-test. WT: wild-type.Figure 3—source data 1.Figure 3B.Figure 3—source data 2.Figure 3C and Figure 4—figure supplement 1C.
+**Figure 3.:** (A) Mouse sperm nuclei were incubated with Δcond I/II extracts that had been supplemented with condensin II holo(WT) and holo(SMC-TR) at 200 nM, or ΔG2(WT) and ΔG2(SMC-TR) at either 200 nM or 25 nM. After 150 min, reaction mixtures were fixed and labeled with anti-hCAP-H2 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. The images of hCAP-H2 signal were first captured at a single exposure time (1/3 ×) and then increased digitally (1 ×) to visualize signals from chromosomes of complexes apart from ΔG2(WT) at 200 nM. Scale bar, 10 µm. (B) Signal intensities of hCAP-H2 from the experiment described in (A) were divided by DAPI intensities and the mean values were normalized relative to the value by holo(WT). The mean ± SD is shown (n=15 chromosome clusters). The p-values listed were assessed by two-tailed Welch’s t-test. A dataset from a single representative experiment out of two repeats is shown. (C) ATPase rates of recombinant condensin II holo(WT), ΔG2(WT), holo(SMC-TR), and ΔG2(SMC-TR) in the presence or absence of double-stranded DNA (dsDNA). The error bar represents the SD from three performed repeats. P values listed were assessed by two-tailed t-test. WT: wild-type.
 
 To determine whether CAP-G2 regulates ATP hydrolysis by condensin II, we measured the ATPase activity of these wild-type and mutant complexes. Holo(WT) contained a modest level of ATPase activity in the absence of DNA but was stimulated more than twofold when dsDNA was added (Figure 3C). On the other hand, deletion of CAP-G2 resulted in more than threefold increase in ATP hydrolysis compared to holo(WT) in the absence of dsDNA. Intriguingly, the ATPase activity of ΔG2(WT) was barely stimulated by adding dsDNA. The introduction of SMC-TR mutations greatly reduced the ATPase activities of both the holocomplex and ΔG2 subcomplex. Taken together, these results demonstrated that CAP-G2 negatively regulates the ATPase activity of condensin II as well as its ability to associate with chromosomes.
 
-## The CAP-D3 C-tail negatively regulates condensin II-mediated chromosome assembly
+### The CAP-D3 C-tail negatively regulates condensin II-mediated chromosome assembly
 
 Human CAP-D3 is a polypeptide with 1498 amino acids, in which a HEAT-repeat-rich section is followed by a C-terminal intrinsically disordered region (IDR) of around 200 amino-acid long (Figure 4A; Ono et al., 2003; Yoshimura and Hirano, 2016). Notably, the C-terminal IDR domain, which we refer to as the C-tail in the current study, contains as many as 11 Cdk1 consensus (S/TP) sites (Figure 4—figure supplement 1A). Previous studies reported that mitosis-specific phosphorylation in the CAP-D3 C-tail regulates condensin II functions (Abe et al., 2011; Bakhrebah et al., 2015).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig4-v2.jpg)
+
+**Figure 4.:** (A) A schematic diagram of the full-length hCAP-D3 (D3–FL) and hCAP-D3 lacking the C-terminal tail (D3–dC). (B) Mouse sperm nuclei were incubated in Δcond I/II extracts that had been supplemented with condensin II holo(WT) or holo(D3-dC) at either 25, 50, or 200 nM. After 150 min, reaction mixtures were fixed and labeled with anti-hCAP-H2 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. Scale bar, 10 µm. (C) DAPI and hCAP-H2 intensities from the experiment described in (B) were measured along lines drawn perpendicular to chromosome axes to create line scan profiles for the width of chromosomes assembled in Δcond I/II extract with 200 nM holo(WT) or either 50 nM or 200 nM holo(D3-dC) (n=20 chromosomes). The mean and SD were normalized individually to the DAPI intensities (arbitrary unit [a.u.]) at the center of chromosome axes (distance = 0 μm) within each set. Intensities of hCAP-H2 were normalized relative to the central value by 200 nM holo(WT) addition. A dataset from a single representative experiment out of three repeats is shown. (D) Mouse sperm nuclei were incubated in Δcond I/II extracts that had been supplemented with condensin II ΔG2(WT) or ΔG2(D3-dC) at either 25, 50, or 200 nM in the same experiment as (B). After 150 min, reaction mixtures were fixed and labeled with anti-hCAP-H2 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. Scale bar, 10 µm. WT: wild-type.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sequence alignment of the C-tail of the CAP-D3 orthologs from Danio rerio (DrCAP-D3), Xenopus laevis (XCAP-D3), Gallus (GgCAP-D3), Mus musculus (mCAP-D3) and human (hCAP-D3). Note that hCAP-D3-dC lacks the C-tail containing multiple potential CDK1 phosphorylation consensus sites (red), which include T1415 and S1474 (blue). (B) Xenopus egg extracts were immunodepleted with antibodies against both endogenous condensin I and II subunits (Δcond I/II extract). The extracts were supplemented with control buffer (buffer), holo(WT), or holo(D3-dC) without sperm nuclei. Aliquots were taken at the indicated time points and subjected to immunoblotting with the indicated antibodies, including anti-phospho-specific antibodies against hCAP-D3 pT1415 and pS1474. Xenopus topoisomerase IIα (Xtopo IIα) was used as a loading control. Asterisks (*) indicate non-specific bands. Note that full-length hCAP-D3 (D3–FL) migrated slower as incubation time increased, which is accompanied by phosphorylation at T1415 and S1474. In contrast, CAP-D3 lacking the C-tail (D3–dC) did not change in its mobility upon incubation. (C) ATPase rate of holo(D3-dC) was compared with that of holo(WT) and other mutant complexes in the absence or presence of double-stranded DNA (dsDNA). The error bar represents the SD from three repeats. The p-values listed were assessed by two-tailed t-test. Note that part of the data derived from the same set of experiments was shown in Figure 3C.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Chromosomes assembled by holo(WT), holo(D3-dC), and holo(D3-dC) added at the concentrations indicated. Shown here are blowups of part of the images presented in Figure 4B. Scale bar, 5 µm. (B) to (D) Chromosomes were assembled in Δcond I/II extract that had been supplemented with holo(WT), holo(D3-dC), ΔG2(WT), or ΔG2(D3-dC) at three different concentrations as described in Figure 4B and D. DAPI and hCAP-H2 intensities were measured along lines drawn perpendicular to chromosome axes to create line scan profiles for the width of chromosomes. The dataset shown is from the same single representative experiment as Figure 4C out of three repeats (n=20 chromosomes). The mean and SD were normalized relative to the DAPI and hCAP-H2 intensities (arbitrary unit [a.u.]) at the center of chromosome axes (distance = 0 μm) formed by 200 nM holo(WT) addition. (B) Profiles of hCAP-H2 intensities for ΔG2(WT) and ΔG2(D3-dC) added at concentrations of 25 nM and 50 nM were compared. (C) Profiles of DAPI intensities for ΔG2(WT), ΔG2(D3-dC), and holo(D3-dC) added at different concentrations were compared to the profile for holo(WT) added at 200 nM. Note that DAPI intensities at the axial region decreased in a dose-dependent manner in the cases of ΔG2(WT) and ΔG2(D3-dC) addition, whereas they increase in the case of holo(D3-dC) addition. (D) Profiles of DAPI and hCAP-H2 intensities for holo(WT), holo(D3-dC), and ΔG2(WT) added at 200 nM were compared. WT: wild-type.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) A schematic diagram of the full-length hCAP-D2 (D2–FL) and hCAP-D2 lacking the C-terminal tail (D2–dC). (B) Recombinant condensin I holocomplexes containing either wild-type (WT) or C-tail truncated (D2–dC) version of hCAP-D2 were purified and subjected to SDS-PAGE. The gel was stained with Coomassie Brilliant Blue. (C) Mouse sperm nuclei were incubated in Δcond I/II extracts that had been supplemented with recombinant condensin I holo(WT) or holo(D2-dC) at 35 nM. After 150 min, reaction mixtures were fixed and labeled with anti-mSMC4 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. Scale bar, 10 µm. (D) DAPI and mSMC4 intensities from the experiment described in (C) were measured along lines drawn perpendicular to chromosome axes to create line scan profiles for the width of chromosomes assembled in Δcond I/II extract with either recombinant condensin I holo(WT) or holo(D2-dC) at 35 nM (n=20 chromosomes). The mean and SD were normalized individually to the DAPI intensities (arbitrary unit [a.u.]) at the center of chromosome axes (distance = 0 μm) within each set. Intensities of mSMC4 were normalized relative to the central value by 35 nM condensin I holo(WT) addition. Deletion of the CAP-D2 C-tail showed little effect on the accumulation of condensin I on the axis and on the rod-shaped chromosome morphology compared to those by holo(WT). SMC, structural maintenance of chromosomes; WT: wild-type.
 
 To address the role of the CAP-D3 C-tail in our functional assay, we prepared holo(D3-dC), a condensin II holocomplex lacking the C-tail (Figure 1—figure supplement 1C). When holo(WT) and holo(D3-dC) were incubated in metaphase extracts, the full-length CAP-D3 (D3-FL), but not the C-terminally truncated version of CAP-D3 (D3-dC), underwent progressive, electrophoretic mobility shifts (Figure 4—figure supplement 1B). A pair of phosphospecific antibodies against pT1415 and pS1474 recognized shifted D3-FL, but not D3-dC, suggesting that the deletion of the CAP-D3 C-tail removed most, if not all, of the mitosis-specific phosphorylation sites.
 
@@ -66,21 +98,37 @@ We examined the differences between holo(WT) and holo(D3-dC) in two functional a
 
 We also questioned what would happen when the deletions of CAP-G2 and the CAP-D3 C-tail were combined. To this end, ΔG2(D3-dC), a ΔG2 subcomplex harboring the deletion of the CAP-D3 C-tail, was prepared and subjected to the add-back assay (Figure 1—figure supplement 1C). We found that slightly higher levels of chromosome association were observed with ΔG2(D3-dC) than with ΔG2(WT) (Figure 4D and Figure 4—figure supplement 2A). Importantly, however, the chromosomes formed by ΔG2(D3-dC), unlike those formed by holo(D3-dC), were chenille-like rather than rod-like, even at the highest concentration of 200 nM (Figure 4—figure supplement 2B and C). These results showed that CAP-G2 has a rather cryptic role in chromosome shaping, which can only be uncovered when the holocomplex is overloaded on chromosomes by deleting the CAP-D3 C-tail.
 
-## The basic amino acid clusters of CAP-H2 synergistically contribute to condensin II functions
+### The basic amino acid clusters of CAP-H2 synergistically contribute to condensin II functions
 
 The kleisin subunits act as the hub of SMC protein complexes including condensin II (Figure 1A; Kong et al., 2020; Onn et al., 2007). A previous study using budding yeast condensin had reported that two basic amino acid clusters (BC1 and BC2) conserved in the central region of Brn1/CAP-H form part of a unique DNA-binding subdomain (‘safety belt’; Kschonsak et al., 2017). It had also been shown that BC1/2 mutations (substitutions of all basic residues with aspartic acids) in human CAP-H caused hypomorphic defects in condensin I-mediated chromosome assembly in Xenopus egg extract (Kinoshita et al., 2022).
 
 We wished to test how the corresponding mutations in human CAP-H2 have an impact on condensin II-mediated chromosome assembly in our add-back assay. To this end, we prepared mutant holocomplexes harboring charge-reversal mutations of BC1D, BC2D, or a combination of BC1D and BC2D (BC1/2D) (Figure 5A and Figure 1—figure supplement 1D). We found that the BC1D or BC2D mutations caused partial defects in chromosome association of condensin II, resulting in the formation of discontinuous axes (Figure 5B and C). In contrast, holo(H2-BC1/2D), a holocomplex harboring both BC1D and BC2D mutations, failed to associate with chromatin, leaving a cloud-like morphology. Thus, the two sets of mutations caused synergistic defects in condensin II-mediated chromosome assembly. Interestingly, deletion of CAP-G2 from these mutant complexes harboring BC1D, BC2D, or BC1/2D partially rescued their defects in chromosome association and axis formation (Figure 5—figure supplement 1), suggesting that the BC1/2D mutations do not cause complete loss of condensin II functions when the negative regulation by CAP-G2 is eliminated.
 
-## ATP-stimulated chromatin binding of condensin II can be recapitulated in an extract-free assay
+![Figure 5.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig5-v2.jpg)
+
+**Figure 5.:** (A) A schematic diagram of domain organization of hCAP-H2. CAP-H2 has five motifs that are well conserved among vertebrate species (motifs I to V). Shown here is a sequence alignment of the CAP-H2 orthologs from Danio rerio (DrCAP-H2), Xenopus laevis (XCAP-H2), Gallus gallus (GgCAP-H2), Mus musculus (mCAP-H2) and human (hCAP-H2). Conserved residues are labeled in dark blue (Y/F/W), light blue (P) and gray (I/M/L*). Within the central region, two basic amino acid clusters (BC1 and BC2 shown in red). The BC1D and BC2D mutations were created by substituting all basic residues (K/R) conserved in BC1 and BC2, respectively, with aspartic acid residues (D). The BC1/2D mutations are a combination of the BC1D and BC2D mutations. (B) Mouse sperm nuclei were incubated with Δcond I/II extracts that had been supplemented with holo(WT), holo(H2-BC1D), holo(H2-BC2D) and holo(H2-BC1/2D) at 200 nM. After 150 min, reaction mixtures were fixed and labeled with anti-hCAP-H2 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. Scale bar, 10 µm. (C) (Left) Signal intensities of hCAP-H2 from the experiment described in (B) were divided by DAPI intensities and the mean values were normalized relative to the values by holo(WT). (Right) Signal intensities of hCAP-H2 accumulated at the axes were divided by the overall hCAP-H2 intensities on the chromosomal DNA and the mean values were normalized to the value by holo(WT). The mean ± SD is shown (n=15 chromosome clusters). The p-values listed were assessed by two-tailed Welch’s t-test. A dataset from a single representative experiment out of two repeats is shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Recombinant mammalian condensin II holocomplex (holo) and ΔG2 subcomplex harboring either wild-type (WT) or mutations in the H2 basic amino acid cluster (H2-BC1D, H2-BC2D, and H2-BC1/2D) were purified and subjected to SDS-PAGE. The gel was stained with Coomassie Brilliant Blue. (B) Mouse sperm nuclei were incubated in Δcond I/II extracts that had been supplemented with condensin II holocomplex (WT, H2-BC1D, H2-BC2D, or H2-BC1/2D) at 200 nM or ΔG2 subcomplexes (WT, H2-BC1D, H2-BC2D, and H2-BC1/2D) at either 25 or 200 nM. After incubation for 150 min, reactions were fixed and labeled with anti-hCAP-H2 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 15 chromosome clusters examined per condition. Scale bar, 10 µm. In samples with 200 nM addition, ΔG2 subcomplexes were overloaded on chromosomal axes but only ΔG2(WT) made longer, continuous axes while ΔG2 with H2 basic cluster mutations.
+
+### ATP-stimulated chromatin binding of condensin II can be recapitulated in an extract-free assay
 
 The experiments utilizing Xenopus egg extracts described above allowed us to dissect the positive and negative roles of the individual subunits in condensin II-mediated chromosome axis assembly. However, the egg extracts contain a number of activities that modify or potentially supplement the activities of the recombinant condensin II complex. In an attempt to fill the gap between the extract-based assay and other biochemical/biophysical assays (Kong et al., 2020), we next wished to set up a simple chromatin-binding assay that does not utilize the extracts. A previous study from our laboratory had demonstrated that mitotic chromosome-like structures can be reconstituted by mixing Xenopus sperm nuclei with six purified proteins including condensin I and topoisomerase II (Shintomi and Hirano, 2021; Shintomi et al., 2015). In this reaction, a core domain of Xenopus laevis nucleoplasmin (Npm2) removes sperm-specific proteins from the sperm nuclei to make a ‘banana-shaped’ swollen chromatin mass.
 
 In the current study, we devised an extract-free assay in which the swollen chromatin mass was used as a simple substrate to test condensin II binding without the influence of factors present in the extracts such as mitosis-specific kinases and chromatin remodelers (Xenopus sperm nuclei were used as the substrate in this assay because no reproducible protocol for Npm2-mediated swelling of mouse sperm nuclei was available). In brief, Xenopus sperm nuclei were preincubated with Npm2 in the absence or presence of ATP, and the reaction mixtures were supplemented with buffer alone, holo(WT), ΔG2(WT), ΔD3(WT), ΔD3ΔG2(WT), or holo(SMC-TR). Because topoisomerase II was absent in this reaction, no drastic structural change including individualization was expected to occur. We found that condensin II holo(WT) displayed a weak ATP-stimulated binding and caused compaction of the banana-shaped chromatin in an ATP-dependent manner (Figure 6A and B). Neither ATP-stimulated binding nor ATP-dependent compaction was observed when the ATP-hydrolysis-deficient holo(SMC-TR) was added. ΔD3(WT) and ΔD3ΔG2(WT) were barely detectable on the chromatin in either the absence or presence of ATP. Strikingly, ΔG2(WT) displayed much greater activities of both ATP-stimulated binding and ATP-dependent compaction than holo(WT). The CAP-D3 C-tail lacking holo(D3-dC) was also tested and was found to display higher activities than holo(WT) (Figure 6—figure supplement 1). Thus, the swollen chromatin binding assay allows us to probe for ATP-stimulated chromatin binding and ATP-dependent chromatin compaction by condensin II under an extract-free condition. Importantly, this simple assay could recapitulate, at least in part, the differences in chromatin binding between the wild-type and the mutant complexes observed in Xenopus egg extracts.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig6-v2.jpg)
+
+**Figure 6.:** (A) Xenopus sperm nuclei were pre-incubated with a buffer containing recombinant nucleoplasmin (Npm2) in the absence or presence of ATP for 30 min, and then holo(WT), ΔG2(WT), ΔD3(WT), ΔD3ΔG2(WT), or holo(TR) was added at 50 nM. After 120 min, reaction mixtures were fixed and labeled with anti-mSMC4 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 20 nuclei examined per condition. Scale bar, 10 µm. (B) (Left) Signal intensities of hCAP-H2 were divided by DAPI intensities and the mean values were normalized relative to the values by holo(WT) without ATP addition (-ATP). (Right) Areas of DAPI signals were measured and the mean values were normalized to values by holo(WT) without ATP addition (-ATP). The mean ± SD is shown (n=20 sperm nuclei). The p-values listed were assessed by two-tailed Welch’s t-test. SMC, structural maintenance of chromosomes; WT: wild-type.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78984/elife-78984-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Xenopus sperm nuclei were pre-incubated with a buffer containing recombinant nucleoplasmin (Npm2) in the absence or presence of ATP for 30 min, and then holo(WT) or holo(D3-dC) was added at 50 nM. After 120 min, reaction mixtures were fixed and labeled with anti-mSMC4 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 20 nuclei examined per condition. Scale bar, 10 µm. (B) (Left) Signal intensities of hCAP-H2 from the experiment described in (A) were divided by DAPI intensities and the mean values were normalized to values by holo(WT) without ATP addition (-ATP). (Right) Areas of DAPI signals were measured and the mean values were normalized relative to the values by holo(WT) without ATP addition (-ATP). The mean ± SD is shown (n=20 sperm nuclei). P values listed were assessed by two-tailed Welch’s t-test. (C) Xenopus sperm nuclei were pre-incubated with a buffer containing recombinant nucleoplasmin (Npm2) in the absence or presence of ATP for 30 min, and then holo(WT) or a holocomplex harboring either H2-BC1D, H2-BC2D, or H2-BC1/2D mutations was added at 50 nM. After 120 min, reaction mixtures were fixed and labeled with anti-mSMC4 antibody. DNA was counterstained with DAPI. Shown here is a representative image from over 20 nuclei examined per condition. Scale bar, 10 µm. (D) (Left) Signal intensities of hCAP-H2 from the experiment described in (C) were divided by DAPI intensities and the mean values were normalized to the values by holo(WT) without ATP addition (-ATP). (Right) Areas of DAPI signals were measured and the mean values were normalized relative to the values by holo(WT) without ATP addition (-ATP). The mean ± SD is shown (n=20 sperm nuclei). P values listed were assessed by two-tailed Welch’s t-test. SMC, structural maintenance of chromosomes; WT: wild-type.
+
 ## Discussion
 
-## Negative regulation of condensin II by CAP-G2 and the CAP-D3 C-tail
+### Negative regulation of condensin II by CAP-G2 and the CAP-D3 C-tail
 
 In vertebrate cells, condensins I and II have both overlapping and non-overlapping functions and cooperate to assemble mitotic chromosomes for faithful segregation (Nishide and Hirano, 2014). One of the primary motivations behind the current study was to clarify the functional similarities and differences between condensin I and condensin II at a mechanistic level. To this end, we have used recombinant condensin II complexes to dissect the functions of its individual subunits in Xenopus egg extracts. A previous study from our laboratory had demonstrated that a pair of HEAT subunits of condensin I, CAP-D2, and CAP-G, have antagonistic functions in the dynamic assembly of chromosome axes (Kinoshita et al., 2015). Deletion of CAP-G decreased chromosome association of condensin I and caused the formation of a chromosome structure with fuzzy surfaces and abnormally thin axes. In striking contrast, deletion of CAP-G2 greatly increased, rather than decreased, chromosome association of condensin II (Figure 2). As a consequence, a much lower concentration of ΔG2(WT) (as low as 1/8 of condensin II holo[WT]) was sufficient to assemble chromosomes with chenille-like characteristics. On the other hand, deletion of CAP-D3 decreased chromosome association of condensin II and caused failure to assemble chromosomes with discrete axes. Although the essential requirement of CAP-D3 in condensin II-mediated axis formation was parallel to the requirements of CAP-D2 in condensin I-mediated axis formation (Kinoshita et al., 2015; Kinoshita et al., 2022), we were surprised to find that CAP-G2 has a very strong negative impact on condensin II functions. Importantly, the results from the ATPase assay (Figure 3C) and the extract-free swollen chromatin binding assay (Figure 6) also supported the negative role of CAP-G2. We suggest that the balancing acts of the two HEAT subunits, originally proposed for condensin I (Kinoshita et al., 2015), also operate in condensin II, but that such actions are fine-tuned differently in each complex (Figure 7A). In the case of condensin II, for example, CAP-D3-driven axis assembly is intrinsically dominant, which is counter-balanced by the strong suppressive action of CAP-G2.
 
@@ -92,7 +140,7 @@ Another surprise in the current study was that, like CAP-G2, the CAP-D3 C-tail a
 
 Despite the potential functional crosstalk between CAP-G2 and the CAP-D3 C-tail, it is important to note that the chromosome structure produced in Xenopus egg extract by holo(D3-dC) is qualitatively different from that produced by ΔG2(WT) and ΔG2(D3-dC). While ΔG2(WT) and ΔG2(D3-dC) accumulate at the axis of chromosomes in a dose-dependent manner, such accumulation does not cause enrichment of DNA at the axis (Figure 4—figure supplement 2B and C). Instead, ΔG2(WT) and ΔG2(D3-dC) shift the chromosomal DNA to elongate the overall axis while keeping their chenille-like morphology under high-dose conditions (Figure 7B). In contrast, holo(D3-dC) increases the DNA level at the axial region under a high-dose condition and produces rod-like chromosomes rather than chenille-like chromosomes. These observations suggest that CAP-G2 is not a mere inhibitor but has a rather cryptic function in the compaction of non-axial bulk chromatin (Figure 7A, right). However, this function of CAP-G2 is observed only when the holocomplex is overloaded on chromosomes by deleting the CAP-D3 C-tail. Intriguingly, we find that holo(D3-dC), but not ΔG2(WT), retains DNA-stimulated ATPase activity. Additional comparisons in the future may help further characterize the mechanistic differences between the two mutant complexes.
 
-## How might condensin II work?
+### How might condensin II work?
 
 Our previous work demonstrated that ATP binding and hydrolysis by the SMC subunits are essential for the functions of condensin I in Xenopus egg extracts (Kinoshita et al., 2015). When ATP hydrolysis-deficient mutations were introduced into the SMC ATPase subunits, the assembly of axes supported by the condensin II holocomplex or its subcomplex lacking CAP-G2 was completely inhibited (Figure 3). Thus, the SMC ATPase cycle is essential for the functions of condensin II, too, even in the absence of its inhibitory subunit CAP-G2.
 
@@ -100,7 +148,7 @@ Two basic patches (BC1 and BC2) present in the central region of budding yeast B
 
 It has been proposed that the formation of consecutive loops through a mechanism of loop extrusion underlies mitotic chromosome assembly (Goloborodko et al., 2016). A recent single-molecule assay has demonstrated that a human condensin II holocomplex exhibits a loop extrusion activity in vitro, whose properties are slightly different from those of condensin I-mediated loop extrusion (Kong et al., 2020). At present, we do not know to what extent the loop extrusion activities measured for the two condensin complexes might directly be coupled to their actions exhibited under physiological conditions. In fact, a recent study from our laboratory has provided evidence that condensin I is equipped with a loop extrusion-independent mechanism that contributes to mitotic chromosome assembly and shaping in Xenopus egg extracts (Kinoshita et al., 2022). The gap that currently exists between the nanoscale single-molecule assays and the mesoscale chromosome assembly assays needs to be filled (Birnie and Dekker, 2021). As an initial step, we have devised an extract-free assay in which an Npm2-mediated swollen chromatin mass is used as a binding substrate for recombinant condensin complexes. This simple assay allowed us to recapitulate ATP-stimulated chromatin binding of condensin II, which in turn results in compaction of the chromatin mass. In the future, multiple functional in vitro assays, such as loop extrusion and reconstitution assays (Kinoshita et al., 2022; Kong et al., 2020; Shintomi et al., 2015), should be set up and combined to assess how condensins work on physiological templates and how their activities are regulated by cell cycle-dependent modifications.
 
-## Evolutionary implications
+### Evolutionary implications
 
 The current study has important implications for the evolution of condensin complexes. In contrast to condensin I, which plays an essential role in mitotic chromosome assembly and segregation in most eukaryotes examined so far, the occurrence and use of condensin II are variable among different species (Hirano, 2012). For instance, condensin II subunits are not present in fungi including S. cerevisiae. The plant A. thaliana and the primitive alga Cyanidioschyzon merolae possess all three non-SMC subunits of condensin II, but they are non-essential for chromosome assembly and segregation in mitosis (Fujiwara et al., 2013; Sakamoto et al., 2011). Intriguingly, the cap-g2 gene is missing in the genome of the fruit fly D. melanogaster (Herzog et al., 2013), although the cap-d3 and cap-h2 genes have meiotic functions and participate in interphase chromosome territory formation (Hartl et al., 2008; Rosin et al., 2018). Moreover, a recent survey has revealed recurrent losses and rapid evolution of the condensin II complex in insect species (King et al., 2019): among the genes encoding the non-SMC subunits of condensin II, cap-g2 has been lost most frequently during insect evolution. Our current results show that the mutant complex lacking CAP-G2 is able to support chenille-like chromosome assembly even at a lower concentration than the holocomplex. Thus, condensin II can fulfill its functions largely, if not completely, even without the CAP-G2 subunit, providing a possible explanation of why the cap-g2 gene tends to be lost during evolution in some species.
 
@@ -108,11 +156,429 @@ A recent three-dimensional genomics approach, which applies comprehensive Hi-C a
 
 ## Materials and methods
 
-## Antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9 insect cells</td>
+      <td>ThermoFisher</td>
+      <td>11496015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>High five insect cells</td>
+      <td>ThermoFisher</td>
+      <td>B85502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Max efficiency DH10Bac competent cells</td>
+      <td>ThermoFisher</td>
+      <td>10361012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3) competent cells</td>
+      <td>with lab cultured cells</td>
+      <td>N/A</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevis)</td>
+      <td>Xenopus laevis egg</td>
+      <td>Hamamatsu Seibutsu-Kyozai</td>
+      <td>RRID: NXR 0.031</td>
+      <td>Female, adult frogs</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevis)</td>
+      <td>Xenopus laevis sperm nuclei</td>
+      <td>Hamamatsu Seibutsu-Kyozai</td>
+      <td>RRID: NXR 0.031</td>
+      <td>Male, adult frogs</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Mus musculus sperm nuclei</td>
+      <td>Shintomi et al., 2017; isolated from Mus musculus cauda epididymis (BALB/c×C57BL/6 J)F1</td>
+      <td>N/A</td>
+      <td>Male, adult mouse</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Xenopus topoisomerase IIα (rabbit polyclonal serum)</td>
+      <td>Hirano and Mitchison, 1994</td>
+      <td>in house: αC1-6</td>
+      <td>WB (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-XCAP-D2 (rabbit polyclonal)</td>
+      <td>Hirano et al., 1997</td>
+      <td>in house: AfR16L</td>
+      <td>WB (1.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-XCAP-G (rabbit polyclonal)</td>
+      <td>Hirano et al., 1997</td>
+      <td>in house: AfR11-3L</td>
+      <td>WB (1.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-XCAP-H (rabbit polyclonal)</td>
+      <td>Hirano et al., 1997</td>
+      <td>in house: AfR18</td>
+      <td>WB (0.7 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-XSMC2/XCAP-E (rabbit polyclonal)</td>
+      <td>Hirano et al., 1997</td>
+      <td>in house: AfR9-6</td>
+      <td>WB (1.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-XSMC4/XCAP-C (rabbit polyclonal)</td>
+      <td>Hirano et al., 1997</td>
+      <td>in house: AfR8L</td>
+      <td>WB (2.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mSMC4 (rabbit polyclonal)</td>
+      <td>Lee et al., 2011</td>
+      <td>in house: AfR326-3L</td>
+      <td>IF (1.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-hCAP-H2 (rabbit polyclonal)</td>
+      <td>Ono et al., 2003</td>
+      <td>in house: AfR205-4L</td>
+      <td>WB (0.8 μg/mL);IF (3.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-XCAP-D3 (rabbit polyclonal)</td>
+      <td>Ono et al., 2003</td>
+      <td>in house: AfR196-2L</td>
+      <td>WB (2.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-XCAP-H2 (rabbit polyclonal)</td>
+      <td>Ono et al., 2003</td>
+      <td>in house: AfR201-4</td>
+      <td>WB (2.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-XCAP-H2 (rabbit polyclonal)</td>
+      <td>Ono et al., 2003</td>
+      <td>in house: AfR202-2</td>
+      <td>From the same antigen for AfR201; WB (2.0 μg/mL);IF (3.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-hCAP-D3 (rabbit polyclonal)</td>
+      <td>ProteinTech Group</td>
+      <td>16828–1-AP; RRID: AB_2282528</td>
+      <td>WB (1.0 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568-conjugated anti-rabbit IgG (goat polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A11036; RRID: AB_10563566</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-hCAP-D3 pS1474(rabbit polyclonal)</td>
+      <td>This paper; custom ordered from SIGMA Genosys</td>
+      <td>in house: AfR358-3P2</td>
+      <td>WB (1.0 μg/mL); refer to “Antibodies” subsection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-hCAP-D3 pT1415(rabbit polyclonal)</td>
+      <td>This paper; custom ordered from SIGMA Genosys</td>
+      <td>in house: AfR364-3P2</td>
+      <td>WB (1.0 μg/mL); refer to “Antibodies” subsection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>horseradish peroxidase-conjugated anti-rabbit IgG (goat polyclonal)</td>
+      <td>Vector Laboratories</td>
+      <td>PI-1000; RRID: AB_2336198</td>
+      <td>WB (1/20000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>λ DNA</td>
+      <td>TaKara</td>
+      <td>3010</td>
+      <td>Used in ATPase assay</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hCAP-D3 STOP-to-Glycine forward primer</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>ggccgcgactagttccgttggcagtcttgag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hCAP-D3 STOP-to-Glycine reverse primer</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>ctcaagactgccaacggaactagtcgcggcc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>(3 C)-StrepII SpeI/NotI forward oligo</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>ctagtggactggaagttctgttccaggggcccggatcttggagccatccgcaatttgaaaaaggtggcggttccggcggaggtagcggcggaggttcttggtctcaccctcagttcgagaagtaagc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>(3 C)-StrepII SpeI/NotI reverse oligo</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>ggccgcttacttctcgaactgagggtgagaccaagaacctccgccgctacctccgccggaaccgccacctttttcaaattgcggatggctccaagatccgggcccctggaacagaacttccagtcca</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>StrepII-(3 C) BamHI/EcoRI forward oligo</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gatccatgtggagccatccgcaatttgaaaaaggtggaggctccggcggaggtagcggcggaggttcttggtctcaccctcagttcgagaagggaggcggatcactggaagttctgttccaggggcccgggg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>StrepII-(3 C) BamHI/EcoRI reverse oligo</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>aattccccgggcccctggaacagaacttccagtgatccgcctcccttctcgaactgagggtgagaccaagaacctccgccgctacctccgccggagcctccacctttttcaaattgcggatggctccacatg</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Precission Protease</td>
+      <td>Cytiva</td>
+      <td>27-0843-01</td>
+      <td>Used in purification of condensins</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>λ protein phosphatase</td>
+      <td>NEB</td>
+      <td>P0753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Benzonase</td>
+      <td>Novagen</td>
+      <td>71205-3CN</td>
+      <td>Used in purification of condensins</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BamHI restriction enzyme</td>
+      <td>TaKaRa</td>
+      <td>1010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>EcoRI restriction enzyme</td>
+      <td>TaKaRa</td>
+      <td>1040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NotI restriction enzyme</td>
+      <td>TaKaRa</td>
+      <td>1166</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SpeI restriction enzyme</td>
+      <td>TaKaRa</td>
+      <td>1086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 polynucleotide kinase</td>
+      <td>TaKaRa</td>
+      <td>2021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange II XL Site-Directed Mutagenesis Kit</td>
+      <td>Agilent Technologies</td>
+      <td>200522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA Ligation Kit</td>
+      <td>TaKaRa</td>
+      <td>6022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzChek Phosphate Assay Kit</td>
+      <td>ThermoFisher</td>
+      <td>E6646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UNICORN 7</td>
+      <td>Cytiva</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Olympus cellSens Dimensions</td>
+      <td>Olympus</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al., 2012</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SparkControl</td>
+      <td>Tecan Life Sciences</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Coomassie Brilliant Blue R-250 staining solution</td>
+      <td>Bio-Rad</td>
+      <td>1610436</td>
+      <td>For polyacrylamide gels</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amersham Protran Premium 0.45 nitrocellulose membrane</td>
+      <td>Cytiva</td>
+      <td>10600047</td>
+      <td>For Western blots</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutathione Sepharose 4B</td>
+      <td>Cytiva</td>
+      <td>17075601</td>
+      <td>Used for purification of condensin I</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiTrap Q HP 1 mL</td>
+      <td>Cytiva</td>
+      <td>17115301</td>
+      <td>Used for purification of condensins</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>StrepTactin Sepharose HP</td>
+      <td>Cytiva</td>
+      <td>28-9355-99</td>
+      <td>Used for purification of condensin II</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Roche</td>
+      <td>10236276001</td>
+      <td>(2 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2383</td>
+      <td>Used in ATPase assay and Npm2-treated chromatin binding assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein A</td>
+      <td>ThermoFisher</td>
+      <td>10002D</td>
+      <td>For immunodepletion with Xenopus egg extract</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Flour 488-conjugated streptavidin</td>
+      <td>ThermoFisher</td>
+      <td>S32354</td>
+      <td>IF (1/2000)</td>
+    </tr>
+  </tbody>
+</table>
+
+_SMC: structural maintenance of chromosomes._
+
+### Antibodies
 
 Primary antibodies used in the current study were as follows: anti-XSMC4/XCAP-C (in-house identifier: AfR8L, affinity-purified rabbit antibody), anti-XSMC2/XCAP-E (AfR9-6, affinity-purified rabbit antibody), anti-XCAP-D2 (AfR16L, affinity-purified rabbit antibody), anti-XCAP-G (AfR11-3L, affinity-purified rabbit antibody), anti-XCAP-H (AfR18-3L, affinity-purified rabbit antibody; Hirano et al., 1997; Hirano and Mitchison, 1994), anti-XCAP-D3 (AfR196-2L, affinity-purified rabbit antibody), anti-XCAP-H2 (AfR201-4 and AfR202-2, affinity-purified rabbit antibodies; Ono et al., 2003), anti-Xenopus topoisomerase IIα (in-house identifier: αC1-6, rabbit anti-serum; Hirano and Mitchison, 1994), anti-mSMC4 (AfR326-3L, affinity-purified rabbit antibody; Lee et al., 2011), anti-hCAP-H2 (AfR205-4L, affinity-purified rabbit antibody; Ono et al., 2003), and anti-hCAP-D3 (16828–1-AP [RRID:AB_2282528], polyclonal rabbit antibody, ProteinTech Group). Custom phospho-specific antibodies against cysteine-included hCAP-D3 pT1415 peptide (C-VTKRAISpTPEK; in-house identifier: AfR364-3P2) and hCAP-D3 pS1474 peptide (C-QQWNVRpSPARNK; in-house identifier: AfR358-3P2) were generated commercially (SIGMA Genosys). Secondary antibodies used in the current study were as follows: horseradish peroxidase-conjugated anti-rabbit IgG (PI-1000 [RRID: AB_2336198], Vector Laboratories, goat antibody), Alexa Fluor 568-conjugated anti-rabbit IgG (A11036 [RRID: AB_10563566], ThermoFisher, goat antibody), and Alexa Fluor 488-conjugated streptavidin (S32354, ThermoFisher).
 
-## Experimental models
+### Experimental models
 
 Female Xenopus laevis frogs (RRID: NXR 0.031, Hamamatsu Seibutsu-Kyozai) were used to lay eggs to harvest Xenopus egg extract (Hirano et al., 1997). Male X. laevis frogs (RRID: NXR 0.031, Hamamatsu Seibutsu-Kyozai) were dissected to prepare sperm nuclei from testes (Shintomi and Hirano, 2017). Frogs were used in compliance with the institutional regulations of the RIKEN Wako Campus. Mice (BALB/c×C57BL/6 J)F1) for sperm nuclei (Shintomi et al., 2017) were used in compliance with protocols approved by the Animal Care and Use Committee of the University of Tokyo (for M. Ohsugi who provided mouse sperm).
 
@@ -120,7 +586,7 @@ All recombinant condensin complexes were expressed using insect cell strains fro
 
 Recombinant X. laevis Npm2 was expressed in Escherichia coli BL21(DE3) cells as previously described (Shintomi et al., 2015).
 
-## Plasmid construction and mutagenesis
+### Plasmid construction and mutagenesis
 
 Constructs for expressing mSMC2, mSMC4 and their mutant forms were created as previously described (Kinoshita et al., 2015). Codon-optimized cDNAs encoding human non-SMC subunits (hCAP-D3, hCAP-G2, and hCAP-H2), based on the amino acid sequence information from Onn et al., 2007, were synthesized by ThermoFisher and subcloned into pFastBac1 between EcoRI and SpeI restriction sites. The following oligonucleotides were used to prepare StrepII-tagged hCAP-D3 and hCAP-H2 DNA constructs: hCAP-D3 STOP-to-Glycine forward primer: 5’-ggccgcgactagttccgttggcagtcttgag-3’ hCAP-D3 STOP-to-Glycine reverse primer: 5’-ctcaagactgccaacggaactagtcgcggcc-3’.
 
@@ -138,42 +604,42 @@ StrepII-(3 C) BamHI/EcoRI reverse oligo: 5’-aattccccgggcccctggaacagaacttccagtg
 
 To create the hCAP-D3 construct with a C-terminal StrepII-tag (pFastBac1-hCAP-D3-StrepII), the stop codon was first mutagenized to glycine using QuikChange II XL Site-Directed Mutagenesis Kit (Agilent Technologies) with the STOP-to-glycine primers. StrepII oligos with a 3C protease cleavage site within the N-terminal linker sequence were annealed by slow cooling from 95°C, phosphorylated by T4 polynucleotide kinase (TaKaRa) and inserted between SpeI and NotI restriction sites (pFastBac1-hCAP-D3-[3C]-StrepII) by using restriction enzymes and a DNA ligation kit (TaKaRa). To create the hCAP-H2 construct with an N-terminal StrepII-tag (pFastBac-StrepII-[3C]-hCAP-H2), StrepII oligos with a 3C protease cleavage site within the C-terminal linker sequence were annealed by slow cooling from 95°C, phosphorylated by T4 polynucleotide kinase (TaKaRa), and inserted between BamHI and EcoRI restriction sites by using restriction enzymes and a DNA ligation kit (TaKaRa). Constructs of hCAP-H2 harboring charge-reversal mutations in the BC1 and BC2 regions (H2-BC1D, BC2D, and BC1/2D) were synthesized by ThermoFisher and subcloned into pFastBac1. For the construction of hCAP-D3-dC, a cDNA was synthesized by ThermoFisher so that part of the core amino acid sequence of the 3C protease cleavage site (LFQG) was inserted between hCAP-D3 V1297 and P1298 within the hCAP-D3-StrepII construct. Constructs for recombinant condensin I complexes were prepared as previously described (Kinoshita et al., 2022). Human CAP-D2 was used for condensin I holo(WT) while a version that truncates 92 amino acids from the C-terminus (hCAP-D2-dC) was used for condensin I holo(D2-dC).
 
-## Purification of recombinant condensins
+### Purification of recombinant condensins
 
 For the expression of recombinant condensin complexes, the Bac-to-Bac Baculovirus Expression System (ThermoFisher) was used as described above in the Experimental models subsection. Some modifications were made to the procedure described previously (Kinoshita et al., 2022). For recombinant condensin II complexes, baculoviruses used were a combination of mSMC2, GST-mSMC4, hCAP-D3, hCAP-G2, and hCAP-H2. Condensin II wild-type or ATPase TR mutant holocomplexes and ΔG2 subcomplexes, untagged hCAP-D3 was replaced with hCAP-D3-StrepII. For ΔD3 subcomplex and ΔD3ΔG2 subcomplex, untagged hCAP-H2 was replaced with StrepII-hCAP-H2. For complexes that require hCAP-D3-dC, hCAP-D3-StrepII with 3C protease cleavage site insertion between V1297 and P1298 was expressed. Cells expressing condensin II subunits were harvested into pellets, snap-frozen, and stored at −80°C until purification. Cell pellets were resuspended in 20 mL of lysis buffer (10 mM K-HEPES [pH 7.7], 150 mM KCl, 2 mM MgCl2, 0.1 mM CaCl2, 5 mM EGTA, 50 mM sucrose, 0.1% Triton X-100, 1/2 tablet of complete inhibitor [Roche], and 2.5 U/mL Benzonase [Novagen]), lysed by sonication, and clarified by centrifugation. The KCl concentration of the supernatants was adjusted to 300 mM by adding extra KCl and incubated with 2 mL of StrepTactin Sepharose HP beads (Cytiva) at 4°C for 1–2 hr. The beads were then packed into a 12 mL disposable column (Gold Biotechnology), washed with ice-cold purification buffer (10 mM K-HEPES [pH 7.7], 300 mM KCl, 2 mM MgCl2, 0.1 mM CaCl2, 5 mM EGTA, 50 mM sucrose, and 1 mM DTT) four times, and incubated with 5 mL of purification buffer containing 2 mM ATP and 10 mM MgCl2 at room temperature for 15 min twice. After an additional wash with purification buffer, the beads were treated with PreScission Protease (Cytiva) in purification buffer at 4°C overnight to cleave GST and StrepII tags. In the case of holo(D3-dC), PreScission Protease removes the CAP-D3 C-tail by cleaving the 3C site inserted between V1297 and P1298. Cleaved complexes were collected from the column with purification buffer. The eluted fractions were diluted threefold with Buffer A (40 mM Tris [pH 7.5]) to 100 mM KCl and loaded onto a HiTrap Q HP 1 mL column (Cytiva) for ion-exchange chromatography using ÄKTA pure 25 with UNICORN 7 software (Cytiva). Proteins were eluted using a linear gradient from 100 to 1000 mM NaCl with Buffer A and Buffer B (40 mM Tris [pH 7.5] and 1 M NaCl). Fractions containing released condensin II complexes were pooled and dialyzed in condensin II protein buffer (20 mM HEPES [pH 7.7], 150 mM KCl, and 0.5 mM DTT) twice before being concentrated with Amicon Ultra 50 K centrifugal tubes (Merck Millipore). Alternatively, pooled fractions underwent buffer exchange (40 mM Tris [pH 7.5] and 300 mM NaCl) three times using Amicon Ultra tubes before being concentrated (used in Figure 2A and Figure 2—figure supplement 1C). The stoichiometry of condensin II subunits for each preparation was checked by 5% SDS-PAGE followed by Coomassie Brilliant Blue R-250 (Bio-Rad) staining. Gels were imaged with Amersham Imager 680 (Cytiva). Phosphatase treatment of a purified sample, as described in the Dephosphorylation Assay subsection, caused one of the two bands positive for anti-hCAP-H2 to migrate faster (Figure 1—figure supplement 1E), showing that a fraction of hCAP-H2 is phosphorylated in the host insect cells. Expression and purification of recombinant condensin I complexes were performed as previously described (Kinoshita et al., 2022). Condensin I holo(WT) was expressed with full-length hCAP-D2 while holo(D2-dC) was expressed with hCAP-D2 lacking 92 amino acids at the C-terminus (hCAP-D2-dC). Condensin I was bound to Glutathione Sepharose 4B beads (Cytiva) in a 5 mL polypropylene column (Qiagen) using GST-tagged mSMC4 and eluted by PreScission Protease (Cytiva) by cleaving the GST-tag. Eluates were collected for ion exchange chromatography as described above. Pooled fractions underwent buffer exchange (40 mM Tris [pH 7.5] and 300 mM NaCl) before being concentrated using Amicon Ultra tubes. The stoichiometry of condensin I subunits for each preparation was checked by 6% SDS-PAGE (Figure 4—figure supplement 3B). Concentrations of recombinant proteins were measured by NanoDrop OneC (ThermoFisher).
 
-## Dephosphorylation assay
+### Dephosphorylation assay
 
 Recombinant condensin II holo(WT) at 500 nM was mixed with or without λ protein phosphatase (NEB) at a final concentration of 400 U/µL in 1 x NEBuffer for Protein MetalloPhosphatases supplemented with 1 mM MnCl2 and incubated at 30°C for 60 min. Aliquot samples were taken at 0 and 60 min. Samples were analyzed by immunoblotting. The protein samples were subjected to 7.5% SDS-PAGE and transferred onto a nitrocellulose membrane (Cytiva). The membrane was blocked with 5% skim milk in TBS-T (25 mM Tris [pH 7.5], 0.15 M NaCl, and 0.05% Tween 20) before probing with appropriate affinity-purified rabbit hCAP-H2 antibody in 1% BSA in TBS (25 mM Tris [pH 7.5] and 0.15 M NaCl) followed by horseradish peroxidase-conjugated anti-rabbit IgG (Vector Laboratories) in TBS-T. After washing, the membrane was imaged with Amersham Imager 680 (Cytiva).
 
-## ATPase assay
+### ATPase assay
 
 ATPase assays were performed using the EnzChek Phosphate Assay Kit (Invitrogen). 50 μL reactions contained 200 nM recombinant condensin II in reaction buffer (40 mM Tris [pH 7.5] 15 mM NaCl, 10 mM KCl, 7.5 mM MgCl2, and 2.5 mM ATP), supplemented with 1 × MESG substrate and 1 × purine nucleoside phosphorylase, with or without 1.59 nM (50 μg/μL) bacteriophage λ DNA (48,502 bp; TaKaRa). The ratio between condensin II and λ DNA was 1 condensin II: 385 bp of DNA. Reactions were placed at 37°C on a 384-well microplate (Greiner Bio-One), and analyzed by spark multimode microplate reader with SparkControl software (Tecan). The initial ATPase rate from timepoint 2.5 min to 7.5 min was determined as ATP molecules hydrolyzed per condensin II complex per min.
 
-## Preparation of Xenopus egg extracts
+### Preparation of Xenopus egg extracts
 
 Metaphase high-speed supernatants (M-HSS) of Xenopus egg extracts were prepared as previously described (Hirano et al., 1997). In brief, X. laevis unfertilized eggs were crushed by low-speed centrifugation in XBE2 buffer (10 mM HEPES [pH 7.7], 100 mM KCl, 2 mM MgCl2, 0.1 mM CaCl2, 5 mM EGTA, and 50 mM sucrose). Low-speed supernatant was further fractionated by centrifugation at 200,000 × g for 90 min. The resulting high-speed supernatant was used as a Xenopus egg extract for experiments reported in the current study. Immunodepletion was performed using Dynabeads Protein A (ThermoFisher) and DynaMag-2 (Invitrogen) as previously described (Kinoshita et al., 2022) with some modifications. To prepare 100 µL of condensin I-depleted (Δcond I) extract, 25 µg of affinity-purified anti-XCAP-D2 were coupled to 100 µL of beads for the first round of depletion, and 25 µg of affinity-purified anti-XCAP-G was coupled to the same vol. of beads for the second round of depletion. To prepare 100 µL of condensins-depleted (Δcond I/II) extract, a mixture of antibodies containing 12.5 μg of affinity-purified anti-XCAP-D2, 6.25 μg affinity-purified anti-XSMC4, and 6.25 μg affinity-purified anti-XSMC2 was coupled to 100 μL of beads for the first round of depletion. Another mixture of antibodies containing 6.25 μg each of affinity-purified anti-XCAP-D3, anti-XSMC2, anti-XCAP-G, and anti-XCAP-H2 (AfR201) was coupled to another 100 μL of beads for the second round of depletion. An extract was incubated with the first beads on ice for 30 min followed by incubation with the second beads on ice for another 30 min. The resulting supernatant was separated from the beads and used as an immunodepleted extract (Δcond I or Δcond II). For mock depletion (Δmock), 25 µg of rabbit IgG (Sigma-Aldrich) was coupled to 100 μL of beads for both the first and second rounds of depletion. The efficiency of immunodepletion was checked by immunoblotting as described above in the Dephosphorylation assay subsection. The membrane was blocked with 5% skim milk in TBS-T before probing with appropriate affinity-purified rabbit antibodies or rabbit serum (anti-XSMC2, XSMC4, XCAP-D2, XCAP-G, XCAP-H, XCAP-D3, XCAP-H2 [AfR201 and AfR202], and XTopo IIα; Hirano et al., 1997; Hirano and Mitchison, 1994; Ono et al., 2003) in 1% BSA in TBS followed by horseradish peroxidase-conjugated anti-rabbit IgG (Vector Laboratories) in TBS-T. After washing, the membrane was imaged with Amersham Imager 680 (Cytiva).
 
-## Mitotic phosphorylation in egg extracts
+### Mitotic phosphorylation in egg extracts
 
 Mock-depleted (Δmock) or condensins-depleted (Δcond I/II) extracts were supplemented with purified recombinant condensin II complexes or a control condensin II protein buffer and incubated at 22°C for 60 min. Aliquots were taken at 0, 30, and 60 min and analyzed by immunoblotting as described above in the Dephosphorylation assay subsection. Membranes were probed with rabbit XTopo IIα serum and a rabbit polyclonal anti-hCAP-D3 antibody (ProteinTech Group) in 1% BSA in TBS. When using rabbit anti-phospho-hCAP-D3 antibodies, membranes were blocked with 1% BSA (instead of 5% skim milk) in TBS-T.
 
-## Chromosome assembly in egg extracts
+### Chromosome assembly in egg extracts
 
 For condensin II-mediated chromosome assembly assays, condensins-depleted (Δcond I/II) extracts were supplemented with purified recombinant condensin II complexes or a control protein buffer and pre-incubated at 22°C for 30 min. Demembranated mouse sperm nuclei were purified as previously described by Shintomi et al., 2017. Mouse sperm nuclei were added at a final concentration of about 500–1000 nuclei/μL with an energy-regenerating mixture (1 mM ATP, 10 mM phosphocreatine, and 50 μg/mL creatine kinase) and incubated for another 150 min. The reaction mixtures were fixed by adding 10 × vol. of a fixation solution (10 mM HEPES [pH 7.7], 100 mM KCl, 1 mM MgCl2, and 4% formaldehyde) and incubated at 22°C for 15 min. In the time-course experiments (Figure 2—figure supplement 1C), sperm nuclei were added at 0 min and aliquots were taken at time intervals and fixed as above. The fixed samples were loaded onto a 30% glycerol cushion made in 0.5 × XBE2 buffer with a coverslip set inside each tube, and spun down at 5000 rpm at 4°C for 15 min. For condensin I-mediated chromosome assembly assay (Figure 4—figure supplement 3), condensins-depleted (Δcond I/II) extracts were supplemented with recombinant condensin I (holo[WT] or holo[D2-dC]) at a final concentration of 35 nM and preincubated at 22°C for 15 min. Mouse sperm nuclei were added and incubated for another 150 min before being treated as described above and as previously described (Kinoshita et al., 2022). The coverslips were recovered from the tubes and processed for immunofluorescence labeling as described below in the immunofluorescence labeling subsection.
 
-## Npm2-treated chromatin binding assay
+### Npm2-treated chromatin binding assay
 
 A core domain of X. laevis nucleoplasmin (Npm2 [ΔC50]; 1–149 a.a.) was expressed and purified from BL21(DE3) cells as previously described (Shintomi et al., 2015). Xenopus sperm nuclei, prepared as previously described (Shintomi and Hirano, 2017), were incubated with 50 μM Npm2 and 2 mM ATP in KMH buffer (100 mM KCl, 2.5 mM MgCl2, and 20 mM HEPES [pH 7.7]) at 22°C for 30 min. Recombinant condensin II diluted in KMH buffer was added to the mixture at a 1:1 volume so that the final concentrations of condensin II and ATP were 50 nM and 1 mM, respectively, and incubated at 22°C for 120 min. The reaction mixtures were fixed by adding 10 volume of the fixation solution, incubated at 22°C for 15 min, and spun down onto coverslips as described above in the Chromosome assembly in egg extracts subsection. The samples on coverslips were processed for immunofluorescence labeling as described below in the immunofluorescence labeling subsection.
 
-## Immunofluorescence labeling
+### Immunofluorescence labeling
 
 Immunofluorescence labeling of chromosomes assembled in extracts was performed as described previously (Kinoshita et al., 2022) with some modifications. Fixed chromosome samples were spun down onto coverslips, washed with TBS-Tx (25 mM Tris [pH 7.5], 0.15 M NaCl, and 0.1% Triton X-100) three times, and blocked with 1% BSA in TBS-Tx at room temperature for 30–60 min. For immunolabeling, coverslips were incubated with 1% BSA in TBS-Tx containing 3 µg/mL anti-XCAP-H2 (AfR202), anti-hCAP-H2 (AfR205; Ono et al., 2003), or biotin-labeled anti-hCAP-H2 at room temperature for 60 min. The coverslips were then washed with TBS-Tx three times and incubated with 1% BSA in TBS-Tx containing a secondary antibody (Alex Fluor 568-conjugated anti-rabbit IgG [1:500; ThermoFisher] or Alexa Fluor 488-conjugated streptavidin [1:2000; ThermoFisher]) at room temperature for 60 min. Finally, the coverslips were incubated with 2 µg/mL DAPI in TBS-Tx for 5 min, washed with TBS-Tx three times, and mounted onto microscope slides with Vectashield H-1000 mounting medium (Vector Laboratories). Immunofluorescence labeling of recombinant condensin I complex was processed as above except with 1 µg/mL rabbit anti-mSMC4 antibody (Lee et al., 2011) and Alexa Fluor 568-conjugated anti-rabbit IgG (1:500; ThermoFisher) as previously described (Kinoshita et al., 2022).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Fluorescence microscopy was performed using an Olympus BX63 microscope equipped with a U Plan S-Apo 100 x/1.40 oil immersion lens (Olympus) and ORCA-Flash 4.0 digital CMOS camera C11440 (Hamamatsu Photonics). Olympus cellSens Dimension software (Olympus) was used for image acquisition, and brightness of some image sets in the current study was digitally increased using the exposure setting of Photoshop (Adobe) with the same value to treat each sample within each dataset in the same way. In the case of Figure 3A, hCAP-H2 images were first taken at a single time exposure (1/3 ×), and then signals were increased digitally threefolds (1 ×; exposure setting = +2). For colored images (Figure 1D), grayscale images were placed in RGB channels using Photoshop (Adobe). ImageJ software (Schneider et al., 2012; https://imagej.nih.gov/ij/) was used for quantitative analyses of chromosome and nuclei samples from unedited images. All images used for quantification measurements were captured with identical exposure times that did not cause saturated signals per independent experiment. For quantitative measurements of the signal intensity of DNA, hCAP-H2, and mSMC4 for profiles of chromosome axes, DAPI and immunofluorescence signals were measured on a scanned line perpendicular to the axis at a chromosomal DNA region without DAPI-enriched satellite DNA using the plot profile function as previously described (Kinoshita et al., 2022). The three independent experiments mentioned in the legend of Figure 2D are separate from the three independent experiments mentioned in legends of Figure 4 and Figure 4—figure supplement 2. For signal intensity quantifications, DAPI and immunofluorescence signals (hCAP-H2) were segmented from the image using the threshold function and the signals in the threshold-selected regions were measured first. The measured immunofluorescence signal (hCAP-H2) was divided by the measured DAPI signal to achieve the hCAP-H2/DAPI signal intensity on chromosomes or swollen chromatin. To calculate the percentage of hCAP-H2 on the axis (hCAP-H2 axis/total intensity) used in Figure 5C, the immunofluorescence signal of hCAP-H2 on the axis was segmented from the image using a threshold function with a higher value that only selects the accumulated signal on the chromosome axis and the signal in threshold-selected axis regions were measured. The hCAP-H2 signal at the axis was divided by the overall hCAP-H2 signal on the chromosome to achieve the percentage of hCAP-H2 signal on the axis (hCAP-H2 axis/total intensity). The sample size (cluster of chromatids or swollen chromatin) counted for each experiment is described in the appropriate figure legends. Mean values, SD (error bars), and statistical test values are represented in each figure and described in each figure legend whenever appropriate. All data sets were handled with the Microsoft Excel software (Microsoft) and graphs were created using the GraphPad Prism software (GraphPad).
 
-## Materials availability
+### Materials availability
 
 All unique/stable reagents generated in this study are available from the corresponding author.

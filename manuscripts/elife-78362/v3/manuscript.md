@@ -17,19 +17,19 @@
 
 ### Affiliations
 
-1. https://ror.org/02jbv0t02 Scientific Data Division, Lawrence Berkeley National Laboratory Berkeley United States
-2. https://ror.org/02jbv0t02 Applied Mathematics and Computational Research Division, Lawrence Berkeley National Laboratory Berkeley United States
-3. https://ror.org/01d74sk53 CatalystNeuro Benicia United States
-4. https://ror.org/042nb2s44 McGovern Institute for Brain Research, Massachusetts Institute of Technology Cambridge United States
-5. https://ror.org/03vek6s52 Department of Otolaryngology - Head and Neck Surgery, Harvard Medical School Boston United States
-6. https://ror.org/02zynam48 MBF Bioscience Ashburn United States
-7. https://ror.org/00dcv1019 Allen Institute for Brain Science Seattle United States
-8. https://ror.org/00f54p054 Department of Neurosurgery, Stanford University Stanford United States
-9. https://ror.org/013sk6x84 Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
-10. https://ror.org/032h4fk17 Kavli Institute for Fundamental Neuroscience San Francisco United States
-11. https://ror.org/043mz5j54 Departments of Physiology and Psychiatry University of California, San Francisco San Francisco United States
-12. https://ror.org/02jbv0t02 Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory Berkeley United States
-13. https://ror.org/01an7q238 Helen Wills Neuroscience Institute and Redwood Center for Theoretical Neuroscience, University of California, Berkeley Berkeley United States
+1. Scientific Data Division, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))
+2. Applied Mathematics and Computational Research Division, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))
+3. CatalystNeuro Benicia United States ([ROR:01d74sk53](https://ror.org/01d74sk53))
+4. McGovern Institute for Brain Research, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+5. Department of Otolaryngology - Head and Neck Surgery, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+6. MBF Bioscience Ashburn United States ([ROR:02zynam48](https://ror.org/02zynam48))
+7. Allen Institute for Brain Science Seattle United States ([ROR:00dcv1019](https://ror.org/00dcv1019))
+8. Department of Neurosurgery, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+9. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+10. Kavli Institute for Fundamental Neuroscience San Francisco United States ([ROR:032h4fk17](https://ror.org/032h4fk17))
+11. Departments of Physiology and Psychiatry University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+12. Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))
+13. Helen Wills Neuroscience Institute and Redwood Center for Theoretical Neuroscience, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 14. Weill Neurohub Berkeley United States
 
 † Corresponding author
@@ -56,7 +56,7 @@ We created the Neurodata Without Borders (NWB) data language (i.e. a standardize
 
 ## Results
 
-## NWB enables unified description and storage of multimodal data and derived products
+### NWB enables unified description and storage of multimodal data and derived products
 
 NWB files contain all of the measurements for a single experiment, along with all of the necessary metadata to understand that data. Neurophysiology experiments often contain multiple simultaneous streams of data, for example, via simultaneous recording of neural activity, sensory stimuli, behavioral tracking, and direct neural modulation. Furthermore, neuroscientists are increasingly leveraging multiple neurophysiology recording modalities simultaneously (e.g. ephys and ophys), which offer complementary information not achievable in a single modality. These distinct raw data input types often require processing, further expanding the multiplicity of data types that need to be described and stored.
 
@@ -70,7 +70,7 @@ Having pre-synchronized data in the same format enables faster and less error-pr
 
 Visualizations of multiple streams of data is a common need across different types of neurophysiology data. Another NWBWidgets dashboard is described in Peterson et al., 2021, which demonstrates a dashboard for viewing human body position tracking with simultaneously acquired ECoG data, as well as a panel for viewing the 3D position of electrodes on the participant’s brain. Dashboards for specific experiment types can be constructed using NWBWidgets, a library for interactive web-based visualizations of NWB data, that provides tools for navigating and combining data across modalities.
 
-## The NWB software architecture modularizes and integrates all components of a data language
+### The NWB software architecture modularizes and integrates all components of a data language
 
 Neuroscientists use NWB through a core software stack (Figure 3b) with four modularized components: the specification language, the data standard schema, data use APIs, and storage backends (Figure 3a) The identification and modularization of these components was a core conceptual advance of the NWB software. This software architecture provides flexible accommodation of the heterogenous use cases and needs of NWB users. Modularizing the software in this way allows extending the schema to handle new types of data, to implement APIs in new programming languages, and to store NWB using different backends, all while maintaining compliance with NWB and providing a stable interface for users to interact with.
 
@@ -90,7 +90,7 @@ Together, these four components (specification language, standard schema, APIs, 
 
 All NWB software is open source, managed and versioned using Git, and released using a permissive BSD license via GitHub. NWB uses automated continuous integration for testing on all major architectures (MacOS, Windows, and Linux) and all core software can be installed via common package managers (e.g. pip and conda). The suite of NWB core software tools (Figure 3b) enables users to easily read and write NWB files, extend NWB to integrate new data types, and builds the foundation for integration of NWB with community software. NWB data can also be easily accessed in other programming languages (e.g. IGOR or R) using the HDF5 APIs available across modern scientific programming languages.
 
-## NWB enables creation and sharing of extensions to incorporate new use cases
+### NWB enables creation and sharing of extensions to incorporate new use cases
 
 As with all of biology, neurophysiological discovery is driven in large part by new tools that can answer previously unconsidered questions. Thus, a language for neurophysiology data must be able to co-evolve with the experiments being performed and provide customization capability while maintaining stability. NWB enables the creation and sharing of user-defined extensions to the standard that support new and specialized data types (Figure 4a1). Neurodata Extensions (NDX) are defined using the same formal specification language used by the core NWB schema. Extensions can build off of data types defined in the core schema or other extensions through inheritance and composition. This enables the reuse of definitions and associated code, facilitates the integration with existing tools, and makes it easier to contextualize new data types.
 
@@ -102,7 +102,7 @@ NWB provides a comprehensive set of tools and services for developing and using 
 
 As particular extensions gain traction within the community, they may be integrated into the core NWB format for broader use and standardization (Figure 4a4). NWB has a formal, community-driven review process for refining the core format so that NWB can adapt to evolving data needs in neuroscience. The owners of the extension can submit a community proposal for the extension to the NWB Technical Advisory Board, which then evaluates the extension against a set of metrics and best practices published on the catalog website. The extension is then tested and reviewed by both a dedicated working group of potential stakeholders and the general public before it is approved and integrated into the core NWB format. Key advantages of the extension approach are to allow iterative development of extensions and complete implementation and vetting of new data types under several use cases before they become part of the core NWB format. The NWB extension mechanism thus enables NWB to provide a unified data language for all data related to an experiment, allows describing of data from novel experiments, and supports the process of evolving the core NWB standard to fit the needs of the neuroscientific community.
 
-## NWB is foundational for the DANDI data repository to enable collaborative data sharing
+### NWB is foundational for the DANDI data repository to enable collaborative data sharing
 
 Making neurophysiology data accessible supports published findings and allows secondary reuse. To date, many neurophysiology datasets have been deposited into a diverse set of repositories (e.g. CRCNS, Figshare, Open Science Framework, Gin). However, no single data archive provides the neuroscientific community the capacity and the domain specificity to store and access large neurophysiology datasets. Most current repositories have specific limits on data sizes and are often generic, and therefore lack the ability to search using domain specific metadata. Further, for most neuroscientists, these archives often serve as endpoints associated with publishing, while research is typically an ongoing and collaborative process. Few data archives support a collaborative research model that allows data submission prospectively, analysis of data directly in the archive, and opening the conversation to a broader community. Enabling reanalysis of published data was a key challenge identified by the BRAIN Initiative. Together, these issues impede access and reuse of data, ultimately decreasing the return on investment into data collection by both the experimentalist and the funding agencies.
 
@@ -114,7 +114,7 @@ To address these and other challenges associated with neurophysiology data stora
 
 DANDI provides neuroscientists and software developers with a Platform as a Service (PAAS) infrastructure based on the NWB data language and supports interaction via the web browser or through programmatic clients, software, and other services. In addition to serving as a data archive and providing persistence to data, it supports continued evolution of Dandisets. This allows scientists to use the archive to collect data toward common projects across sites, and engage collaborators actively, directly at the onset of data collection rather than at the end. DANDI also provides a computational interface to the archive to accelerate analytics on data and links these Dandisets to eventual publications when generated. The code repositories for the entire infrastructure are available on Github (DANDI, 2022) under an Apache 2.0 license.
 
-## NWB is integrated with state-of-the-art analysis tools throughout the data life cycle
+### NWB is integrated with state-of-the-art analysis tools throughout the data life cycle
 
 The goal of NWB is to accelerate the rate and improve the quality of scientific discovery through rigorous description and high-performance storage of neurophysiology data. Achieving this goal requires us to consider not just NWB, but the entire data life cycle, including planning, acquisition, processing, and analysis to publication and reuse (Figure 6). NWB provides a common language for neurophysiology data collected using existing and emerging neurophysiology technologies integrated into a vibrant neurophysiology data ecosystem. We describe the software relating to NWB as an ‘ecosystem’, because it is a marketplace of a diverse set of tools each playing a different role, from data acquisition, to visualization, analysis, and publication. NWB allows scientists to identify an unmet need and contribute new tools to address this need. This is critical to truly make neurophysiology data Findable, Accessible, Interoperable, and Reusable (i.e. FAIR) (Wilkinson et al., 2016).
 
@@ -134,7 +134,7 @@ Data archives also play a crucial role in discovery and reuse of data (Figure 6g
 
 NWB integrates with (not competes with) existing and emerging technologies across the data lifecycle, creating a flourishing NWB software ecosystem that enables users to access state-of-the-art analysis tools, share and reuse data, improve efficiency, reduce cost, and accelerate and enable the scientific discovery process. See also Appendix 4 for an overview of NWB-enabled tools organized by application area and environment. Thus, NWB provides a common language to describe neurophysiology experiments, data, and derived data products that enables users to maintain and exchange data throughout the data lifecycle and access state-of-the-art software tools.
 
-## NWB and DANDI build the foundation for a FAIR neurophysiology data ecosystem
+### NWB and DANDI build the foundation for a FAIR neurophysiology data ecosystem
 
 There have been previous efforts to standardize neurophysiology data, such as NWB(v1.0) and NIX (Teeters et al., 2015; Martone et al., 2020). While NWB(v1.0) drafted a standard for neurophysiology, it lacked generality which limited its scope, and did not have a reliable and rigorous software strategy and APIs, making it hard to use and unreliable in practice. In contrast, NIX defines a generic data model for storage of annotated scientific datasets, with APIs in C++ and Python and bindings for Java and MATLAB. As such, NIX provides important functionality towards building a FAIR data ecosystem. However, the NIX data model lacks specificity with regard to neurophysiology, leaving it up to the user to define appropriate schema to facilitate FAIR compliance. Due to this lack of specificity, NIX files can also be more varied in structure and naming conventions, which makes it difficult to aggregate across NIX datasets from different labs. In Figure 7, we assess and compare the compliance of different solutions for sharing neurophysiology data with FAIR data principles. The assessment for NIX is based on the INCF review for SPP endorsement (Martone et al., 2020). We also include a more in-depth breakdown of the assessment in Appendix 5. With increasing specificity of data models and standard schema—that is, as we move from general, self-describing formats (e.g. Zarr or HDF5) to generic data models (e.g. NIX) to application-specific standards (e.g. NWB)—compliance with FAIR principles and rigidness of the data specification increases. In practice, the various approaches often focus on different data challenges. As such, this is not an assessment of the quality of a product per-se, but an assessment of the out-of-the-box compliance with FAIR principles in the context of neurophysiology. For example, while self-describing data formats (like HDF5 or Zarr) lack specifics about (meta)data related to neurophysiology, they provide important technical solutions towards enabling high-performance data management and storage.
 
@@ -146,7 +146,7 @@ Complementary to standardization of data, software packages, e.g., Neo (Garcia e
 
 Data standards build the foundation for an overall data strategy to ensure compliance with FAIR data principles. Ultimately, however, ensuring FAIR data sharing and use depends on an ecosystem of data standards and data management, analysis, visualization, and archive tools as well as laws, regulations, and data governance structures—for example the NIH BRAIN Initiative Data Sharing Policy (NOT-MH-19-010, 2021) or the OMB Open Data Policy (Burwell et al., 2022)—all working together (Eke et al., 2022). As Figure 7 illustrates, it is ultimately the combination of NWB and DANDI working together that enable compliance with FAIR principles. Here, certain aspects, such as usage licenses (R.1.1), indexing and search (F.4), authenticated access (A1.2), and long-term availability of metadata (A2) are explicitly the role of the archive. As this table shows, together, NWB and DANDI make neurophysiology data FAIR.
 
-## Coordinated community engagement, governance, and development of NWB
+### Coordinated community engagement, governance, and development of NWB
 
 The neurophysiology community consists of a large diversity of stakeholders with vested interests and broad use cases. Inclusive engagement and outreach with the community are central to achieve acceptance and adoption of NWB and to ensure that NWB meets user needs. Thus, development of scientific data languages is as much a sociological challenge as it is a technological challenge. To address this challenge, NWB has adopted a modern open-source software strategy (Figure 8a) with community resources and governance, and a variety of engagement activities.
 
@@ -166,25 +166,25 @@ Investigating the myriad functions of the brain across species necessitates a ma
 
 We argue that there are several key challenges that, until NWB, have not been successfully addressed and which ultimately hindered wide-spread adoption of a common standard by the diverse neurophysiology community. Conceptually, the complexity of the problem necessitates an interdisciplinary approach of neuroscientists, data and computer scientists, and scientific software engineers to identify and disentangle the components of the solution. Technologically, the software infrastructure instantiating the standard must integrate the separable components of user-facing interfaces (i.e. Application Programming Interfaces, APIs), data modeling, standard specification, data translation, and storage format. This must be done while maintaining sustainability, reliability, stability, and ease of use for the neurophysiologist. Furthermore, because science is advanced by both development of new acquisition techniques and experimental designs, mechanisms for extending the standard to unforeseen data and metadata are essential. Sociologically, the neuroscientific community must accept and adopt the standard, requiring coordinated community engagement, software development, and governance. NWB directly addresses these challenges.
 
-## NWB as the lingua franca of neurophysiology data
+### NWB as the lingua franca of neurophysiology data
 
 Making neurophysiology data FAIR requires a paradigm shift in how we conceptualize the solution. Scientists need more than a rigid data format, but instead require a flexible data language. Such a language should enable scientists to communicate via data. Natural languages evolve with the concepts of the societies that use them, while still providing a stable basis that enables communication of common concepts. Similarly, a scientific data language should evolve with the scientific research community, and at the same time provide a standardized core that expresses common and established methods and data types. NWB is such a data language for neurophysiology experiments.
 
 There are many parallels between NWB and natural languages as used today. The NWB specification language provides the basic tools and rules for creating the core concepts required to describe neurophysiology data, much like an alphabet and phonetic rules in natural language describe the creation of words. Likewise, the format schema provides the words and phrases (neurodata_types) of the data language and rules for how to compose them to form data documents (NWB files), much like a dictionary and grammatical rules for sentence and document structure. Similarly, flexible data storage methods allow NWB to manage and share data in different forms depending on the application, much like we store natural languages in many different mediums (e.g. via printed books, electronic records, or handwritten notes). User APIs (here HDMF, PyNWB, and MatNWB) provide the community with tools to create, read, and modify data documents and interact with core aspects of the language, similarly to text editors for natural language. NWB Extensions provide a mechanism to create, publish, and eventually integrate new modules into NWB to ensure it co-evolves with the tools and needs of the neurophysiology community, just as communities create new words to communicate emerging concepts. Finally, DANDI provides a cloud-based platform for archiving, sharing, and collaborative analysis of NWB data, much like a bookstore or Wikipedia. Together, these interacting components provide the basis of a data language and exchange medium neuroscience community that enables reproduction, interchange, and reuse of diverse neurophysiology data.
 
-## NWB is community driven, professionally developed, and democratizes neurophysiology
+### NWB is community driven, professionally developed, and democratizes neurophysiology
 
 Today, there are many data formats and tools used by the neuroscience community that are not interoperable. Often, formats and tools are specific to the lab and even the researcher. This level of specificity is a major impediment to sharing data and reproducing results, even within the same lab. More broadly, the resulting fragmentation of the data space reinforces siloed research, and makes it difficult for datasets or software to be impactful on a community level. Our goal is for the NWB data language to be foundational in deepening collaborations between the community of neuroscientists. The current NWB software is the result of an intense, community-led, years-long collaboration between experimental and computational neuroscientists with data scientists and computer scientists. Core to the principles and success of NWB is to account for diverse perspectives and use cases in the development process, integration with community tools, and engage in community outreach and feedback collection. NWB is governed by a diverse group to ensure both the integrity of the software and that NWB continues to meet the needs of the neuroscience community.
 
 As with all sophisticated scientific instruments, there is some training required to get a lab’s data into NWB. Several training and outreach activities provide opportunities for the neuroscience community to learn how to most effectively utilize NWB. Tutorials, hackathons and user training events allow us to bring together neuroscientists who are passionate about open data and data management. These users bring their own data to convert or their own tools to integrate, which in turn makes the NWB community more diverse and representative of the overall neuroscience community. NWBs digital presence has accelerated during the COVID pandemic, and has allowed the community to grow internationally and at an exponential rate. Updates on Twitter and the website (https://www.nwb.org/), tutorials on YouTube, and free virtual hackathons, all are universally accessible and have helped achieve a global reach, interacting with scientists from countries that are too often left out. Together, these outreach activities combined with NWB and DANDI democratizes both neurophysiology data and analysis tools, as well as the extracted insights.
 
-## The future of NWB
+### The future of NWB
 
 To address the next frontier in grand challenges associated with understanding the brain, the neuroscience community must integrate information across experiments spanning several orders of magnitude in spatial and temporal scales (Bouchard et al., 2016; Bouchard et al., 2018; Bargmann, 2014). This issue is particularly relevant in the current age of massive neuroscientific data sets generated by emerging technologies from the US BRAIN Initiative, Human Brain Project, and other brain research initiatives worldwide. Advanced data processing, machine learning, and artificial intelligence algorithms are required to make discoveries based on such massive volumes of data (Sejnowski et al., 2014; Bouchard et al., 2016; Bouchard et al., 2018). Currently, different domains of neuroscience (e.g. genomic/transcriptomic, anatomy, neurophysiology, etc.,) are supported by standards that are not coordinated. Building bridges across neuroscience domains will necessitate interaction between the standards, and will require substantial future efforts. There are nascent activities for compatibility between NWB and the Brain Imaging Data Structure (BIDS), for example, as part of the BIDS human intracranial neurophysiology ECoG/iEEG extension (Holdgraf et al., 2019), but further efforts in this and other areas are needed.
 
 It is notoriously challenging to make neurophysiology data FAIR. Together, the NWB data language and the NWB-based DANDI data archive support a data science ecosystem for neurophysiology. NWB provides the underlying cohesion of this ecosystem through a common language for the description of data and experiments. However, like all languages, NWB must continue to adapt to accommodate advances in neuroscience technologies and the evolving community using that language. As adoption of NWB continues to grow, new needs and opportunities for further harmonization of metadata arise. A key ongoing focus area is on development and integration of ontologies with NWB to enhance specificity, accuracy, and interpretability of data fields. For example, there are NWB working groups on genotype and spatial coordinate representation, as well as the INCF Electrophysiology Stimulation Ontology working group (Electrophysiology Stimulation Ontology Working Group, 2022). Another key area is extending NWB to new areas, such as the ongoing working groups on integration of behavioral task descriptions with NWB (e.g. based on BEADL Generator, 2022) and enhanced integration of simulations with NWB. We strongly advocate for funding support of all aspects of the data-software life cycle (development, maintenance, integration, and distribution) to ensure the neuroscience community fully reaps the benefits of investment into neurophysiology tools and data acquisition.
 
-## Core design principles and technologies for biological data languages
+### Core design principles and technologies for biological data languages
 
 The problems addressed by NWB technologies are not unique to neurophysiology data. Indeed, as was recently discussed in Powell, 2021, lack of standards in genomics data is threatening the promise of that data. Many of the tools and concepts of the NWB data language can be applied to enhance standardization and exchange of data in biology more broadly. For example, the specification language, HDMF, the concept of extensions and the extension catalog are all general and broadly applicable technologies. Therefore, the impact of the methods and concepts we have described here has the potential to extend well beyond the boundaries of neurophysiology.
 
@@ -192,11 +192,11 @@ We developed design and implementation principles to create a robust, extensible
 
 ## Materials and methods
 
-## NWB GitHub organizations
+### NWB GitHub organizations
 
 All NWB software is available open source via the following three GitHub organizations. The Neurodata Without Borders (Neurodata Without Borders, 2022) GitHub organization is used to manage all software resources related to core NWB software developed by the NWB developer community, for example, the PyNWB and MatNWB reference APIs. The HDMF development (HDMF-c, 2022) Github organization is used to publish all software related to the Hierarchical Data Modeling Framework (HDMF), including, HDMF, HDMF DocUtils, HDMF Common Schema and others. Finally, the NWB Extensions (NDXCatalog-b, 2021) GitHub organization is used to manage all software related to the NDX Catalog, including all extension registrations. Note, the catalog itself only stores metadata about NDXs, the source code of NDXs are often managed by the creators in dedicated repositories in their own organizations.
 
-## HDMF software
+### HDMF software
 
 HDMF software is available on GitHub using an open BSD licence model.
 
@@ -208,7 +208,7 @@ HDMF Common Schema defines a collection of common reusable data structures that 
 
 HDMF Schema Language provides an easy-to-use language for defining hierarchical data standards. APIs for creating and interacting with HDMF schema are implemented in HDMF. [Documentation] (hdmf-schema-language, 2022).
 
-## NWB software
+### NWB software
 
 NWB software is available on GitHub using an open BSD licence model.
 
@@ -230,6 +230,6 @@ NWB Extensions Template (ndx-template) provides an easy-to-use template based on
 
 NWB Staged Extensions is a repository for submitting new extensions to the NDX catalog [Source] (staged extensions, 2021).
 
-## DANDI
+### DANDI
 
 The DANDI archive was created by developing and integrating several opensource projects and BRAIN Initiative data standards (NWB, BIDS, NIDM). The Web browser application is built using the VueJS framework and the DANDI command line interface is built using Python and PyNWB. The initial backend of the archive was built on top of the Girder data management system, and is transitioning to a Django-based framework. The DANDI analysis hub is built using Jupyterhub deployed over a Kubernetes cluster. The different components of the archive are hosted on Amazon Web Services and the Heroku platform. The code repositories for the entire infrastructure are available on Github (DANDI, 2022) under an Apache 2.0 license.

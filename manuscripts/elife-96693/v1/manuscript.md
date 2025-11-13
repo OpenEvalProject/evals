@@ -18,12 +18,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0220qvk04 Shanghai Institute of Immunology, Department of Immunology and Microbiology, Shanghai Jiao Tong University School of Medicine Shanghai China
-2. https://ror.org/00a2xv884 Department of Neurology, First Affiliated Hospital, School of Medicine, Zhejiang University Hangzhou China
-3. https://ror.org/03vmmgg57 Singapore Immunology Network, Agency for Science, Technology and Research Singapore Singapore
-4. https://ror.org/01tgyzw49 Department of Microbiology and Immunology, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore
-5. https://ror.org/0321g0743 INSERM U1015, Gustave Roussy Cancer Campus Villejuif France
-6. https://ror.org/00xcwps97 Translational Immunology Institute, SingHealth Duke-NUS Academic Medical Centre Singapore Singapore
+1. Shanghai Institute of Immunology, Department of Immunology and Microbiology, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+2. Department of Neurology, First Affiliated Hospital, School of Medicine, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+3. Singapore Immunology Network, Agency for Science, Technology and Research Singapore Singapore ([ROR:03vmmgg57](https://ror.org/03vmmgg57))
+4. Department of Microbiology and Immunology, Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+5. INSERM U1015, Gustave Roussy Cancer Campus Villejuif France ([ROR:0321g0743](https://ror.org/0321g0743))
+6. Translational Immunology Institute, SingHealth Duke-NUS Academic Medical Centre Singapore Singapore ([ROR:00xcwps97](https://ror.org/00xcwps97))
 
 † Corresponding author
 
@@ -41,11 +41,19 @@ Studies aiming to understand the pathophysiology of HDLS have used various appro
 
 ## Results
 
-## Generation and characterization of iPSC lines from patients with HDLS
+### Generation and characterization of iPSC lines from patients with HDLS
 
 We first isolated dermal fibroblasts from skin biopsies taken from two patients with HDLS and confirmed mutations in the TDK region of the CSF-1R gene (HD1, HD2; clinical characteristics shown in Supplementary file 1, table S1) then cultured them for approximately 4 weeks before reprogramming into induced pluripotent stem cells (iPSCs) (Figure 1A). Four to five weeks post-transfection, we observed iPSC-like colonies emerging (Figure 1—figure supplement 1B), and 7–10 days later, we selected those clones that were proliferating and displayed typical iPSC morphology (Figure 1C). We confirmed successful reprogramming by visualization of pluripotency markers including SOX2 and OCT4 (nuclear markers), and TRA-1-60 and SSEA-4 (intracellular marker), by immunofluorescence (Figure 1D). We also confirmed that these clones had normal karyotype (Figure 1E) and termed them Mut HD1 and Mut HD2. One clone per cell line was used for further analysis. We then generated isogenic from Mut HD1 and Mut HD2 iPSC cell lines which we termed IsoHD1 and IsoHD2, respectively, as controls (see Methods). Clones that were karyotypically normal were used for downstream experiments alongside their mutant counterparts (Figure 1B), with no off-target events identified (Figure 1—figure supplement 1C). Collectively, HDLS iPSC and their corresponding isogenic iPSC controls were successfully generated from two patients with HDLS (HD1 and HD2).
 
-## Generation and characterization of patient iPSC-derived macrophages
+![Figure 1.](https://cdn.elifesciences.org/articles/96693/elife-96693-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the generation of patient-derived induced pluripotent stem cells (iPSC) from dermal fibroblasts, and the subsequent generation of isogenic controls via gene editing with CRISPR/Cas9. (B) Sequencing of the genomic CSF-1R locus in donor-derived iPSC displaying mutant allele or genetically edited allele in isogenic control cell lines. (C) Phase-contrast microscopy of mature reprogrammed iPSC colonies displaying typical hESC morphology. Images were acquired with a standard microscope (Nikon) with a 10× objective. Scale bar represents 250 µM. (D) Immunofluorescence imaging of Mut HD1 iPSC colonies for the pluripotency markers SOX2, OCT4, TRA-1-60, and SSEA-4. Scale bar represents 150 and 100 µM for left and right panels, respectively. (E) Cytogenetic analysis of IsoHD1 (left) and IsoHD2 (right) iPSC clone showing a normal karyotype.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96693/elife-96693-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Human dermal fibroblast outgrowth from skin biopsies after 3 weeks of culture. Images were acquired with a standard microscope (Nikon) with 10× (left panel) and 20× (right panel) objective, respectively. Scale bar represents 200 µM. (B) Phase-contrast microscopy (20×) of emerging immature iPSC clones after reprogramming. Scale bar represents 200 µM. (C) Cytogenetic analysis of Mut HD1 (left) and Mut HD2 (right) iPSC clone showing a normal karyotype. (D) Sequencing of genomic CSF-1R locus displaying OTE analysis for IsoHD1 and IsoHD2 iPSC cell lines.
+
+### Generation and characterization of patient iPSC-derived macrophages
 
 We next sought to differentiate primitive microglia-like macrophages from patient-derived iPSC cell lines (iMacs) using our serum-free protocol that faithfully recapitulates the generation of in vivo microglial progenitor cells (Takata et al., 2017). Briefly, iPSCs were initially inducted toward the mesodermal lineage before being differentiated into hemangioblast-like cells with the potential to differentiate into both endothelial and hematopoietic progenitors – the latter emerging as free-floating cells as early as day 6 after seeding – which we collected and then terminally differentiated into iMacs by the addition of CSF-1 (Figure 2A). Although HDLS mutation downregulates the sensitivity of CSF-1R to its ligand (Pridans et al., 2013), we were able to successfully generate iMacs using this protocol: the yield of iMacs from iPSC varied between cultures (Figure 2B), but flow cytometry confirmed their consistent macrophage-like phenotype, with abundant expression of CD45 and CD14 (Figure 2C), and Giemsa staining showed that iMacs exhibited comparable morphology between donors (Figure 2D). Functionally, all iMac cultures were equally able to take up PE-labeled beads that were detectable within their cell bodies (Figure 2D); flow cytometry confirmed that the level of actin-dependent phagocytosis of pHrodo beads was comparable among CD45-expressing cells from all cultures (Figure 2E). Collectively, these data show that iMacs generated from HDLS donor-derived iPSC adopted the typical morphology, phenotype and functions associated with macrophages.
 
@@ -57,7 +65,7 @@ The mutations associated with HDLS downregulate the sensitivity of CSF-1R to its
 
 In summary, we generated iMacs from iPSC of patients with HDLS and their respective isogenic controls that exhibit typical macrophage morphology, phenotype, and phagocytic capabilities.
 
-## Mutant and isogenic control iMacs have distinct gene expression profiles
+### Mutant and isogenic control iMacs have distinct gene expression profiles
 
 Although iMacs derived from patients with HDLS exhibited core macrophage features, we wanted to more fully understand the impact of CSF-1R mutation on these cells. We first characterized their gene expression profile using bulk RNA-seq and compared it to that of their respective CSF-1R-restored isogenic iMac cultures.
 
@@ -67,7 +75,7 @@ Principal component analysis (PCA) showed that patterns of gene expression diffe
 
 **Figure 3.:** (A, D) Principal component analysis (PCA), (B, E) volcano plots, and (C, F) GO analysis, of mutant and isogenic iMacs derived from HD1 and HD2 differentially expressed genes (DEGs), respectively. Representative curve of extracellular acidification rate (ECAR) (G, O) and their respective quantified data (H–J, P–R) are shown. Representative curve of oxygen consumption rate (OCR) (K, S) and their respective quantified data (L–N, T–V) are shown. Real-time assessment of bioenergetic profile between mutant and isogenic HD1 iMacs, measured using extracellular flux assay and a mitochondrial stress test. The following glycolytic parameters were calculated based on ECAR: (B) glycolysis, (C) glycolytic capacity, and (D) glycolytic reserve. Data shown as means + SEM, n = 9. The following parameters were calculated based on OCR: (F) basal, (G) ATP production, and (H) maximal respiration. 2-DG = 2-deoxy-glucose, FCCP = carbonyl cyanide 4-trifluoromethoxy-phenylhydrazone (n = 3). Data are presented as mean ± SEM. Statistical significance was assigned as: p < 0.05 was considered significant: *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001.
 
-## Mutant and isogenic control iMacs have distinct metabolic profiles
+### Mutant and isogenic control iMacs have distinct metabolic profiles
 
 Studies have shown that activated macrophages often undergo metabolic reprogramming to fulfil the energetic needs of demanding biochemical processes (Kolliniati et al., 2022; Jha et al., 2015); alongside, we know that energy metabolism, as well as metabolic cell features, plays an important role in mediating macrophage function and plasticity (Xue et al., 2014). Therefore, we next compared the cellular metabolic profiles of patient-derived CSF-1R mutant and isogenic CSF-1R-restored iMacs.
 
@@ -77,19 +85,35 @@ Next, we determined the functional metabolic profile of mitochondrial respiratio
 
 Taken together, these results indicate that the absence of fully functional CSF-1R in cells from HD1 and HD2 is associated with an upregulated glycolytic metabolic profile, which is cells from HD2 is clearly accompanied by a higher mitochondrial oxidative phosphorylation rate. This suggests that macrophages from patients with HDLS have an altered metabolic profile that correlates with their higher activation status and could contribute to disease pathology.
 
-## HDLS iMacs upregulate IL-1β when exposed to apoptotic neuronal cells
+### HDLS iMacs upregulate IL-1β when exposed to apoptotic neuronal cells
 
 Our data suggest that mutant iMacs have dysregulated transcriptomic and metabolic profiles, suggestive of an active inflammatory state. To better understand how this would be expressed in the context of their functions in the brain, we mimicked a need for apoptotic cell clearance by incubating iMacs from patients with HDLS with UV-irradiated neuronal SH-SY5Y cells (Figure 4—figure supplement 1A). Both iMac lines (CSF-1R mutant and isogenic) from both patients effectively phagocytosed apoptotic but not control, non-UV-irradiated, SH-SY5Y cells, in an actin-dependent manner (Figure 4—figure supplement 1B).
 
 We then measured the expression of genes encoding pro- (IFN-g, TNF-α, IL-1β, IL-6, IL-18) and anti- (IL-10, IL-12, TGF-β) inflammatory cytokines following incubation of iMacs with UV-irradiated or non-irradiated SH-SY5Y cells, or without any SH-SY5Y cells, for 8 hr. We observed a significant and specific increase in IL-1β transcription in CSF-1R mutated iMacs from both HD1 and HD2 when exposed to apoptotic cells, compared with their isogenic counterparts. Among the anti-inflammatory cytokines, Mut HD2 cells exhibited significantly increased transcription of the gene encoding TGF-β when co-cultured with UV-treated cells, alongside high baseline levels of IL-12 and TGF-β in control cultures compared to isogenic HD2 iMacs. Interestingly, all CSF-1R mutant iMac groups had higher levels of transcription of most pro-inflammatory cytokines at baseline, consistent with their activated/reactive transcriptional profile, than did their CSF-1R-restored counterparts (Figure 4A, B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/96693/elife-96693-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Levels of transcription of pro- and anti-inflammatory cytokine genes (IFNg, TNFa, IL-1b, IL-6, IL-18, IL-10, IL-12, and TGFb) quantified by qPCR (+uv depicts UV-treated, −uv depicts non-UV treated). n = 3 per cell line. Data are presented as mean ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96693/elife-96693-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) CFSE-labeled SH-SY5Y cells were either UV-treated (red) or untreated (blue) then after 24 hr were incubated with Annexin V/PE to determine the induction of apoptosis. Annexin V labeling was measured by flow cytometry (top panel) and visualized by fluorescence microscopy (bottom panel). (B) Percentage of CD45+ cells in iMac cultures from HD1 (top row) and HD2 (bottom row) that took up apoptotic SH-SY5Y cells, with cytochalasin D used as a negative control. Data are presented as mean ± SEM. Scale bar represents 30 µM.
+
 Collectively, all iMacs exhibited the ability to specifically phagocytose apoptotic cells, but in the absence of a fully functional CSF-1R, this led to high levels of IL-1β transcription, which reflected a general propensity toward the transcription of pro-inflammatory cytokine genes, even in the absence of overt stimulation. Importantly, restoration of CSF-1R via gene editing was sufficient to reverse this inflammatory phenotype.
 
-## iMacs differentiate into microglia-like cells (iMicro) in a co-culture with forebrain organoid
+### iMacs differentiate into microglia-like cells (iMicro) in a co-culture with forebrain organoid
 
 During HDLS, patients typically exhibit degeneration of the frontal lobes of the brain, which contributes to the deficit and decline in cognitive ability, changes to personality and behavior, and dysfunctional motor, social, and language skills (Freeman et al., 2009; Sundal et al., 2012). Therefore, we next generated iPSC-derived forebrain organoids including autologous iMacs from patients with HDLS to better understand their potential role in the brain.
 
 To better understand how diseased or non-diseased macrophages affect the developing brain, we first generated forebrain organoids from the isogenic cell line variant of the respective donor’s iPSC (see Methods). After 31 days, organoids were harvested (Figure 5—figure supplement 1A) and co-cultured for 7 days with isogenic or mutant iMacs that had been generated in parallel (Figure 5A). At this point, each organoid was removed from its co-culture and cultured individually for 16 more days (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96693/elife-96693-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic diagram of co-culture between day 31 iMacs and forebrain organoid. (B) Forebrain organoids depicted before, during, and after co-culture with iMacs. Day 31 isogenic forebrain organoids derived from the respective donor iPSC cell line were co-cultured with the same isogenic- and mutant-cell-line-derived day 31 iMacs. 30,000 iMacs were co-cultured with each respective organoid derived from HD1 and HD2. Figure shows matured organoids before and after the addition of iMacs during co-culture. (C) Three-dimensional visualization of co-cultured brain organoids after 23 days. Neurons were labeled for NESTIN and NPCs for SOX2. Microglia-like cells (IBA-1+) were visualized on the surface of organoids. (D) Flow cytometry analysis of neurons, NPCs, and macrophage populations within forebrain organoids after 23 days of co-culture. (E, F) Donor-derived iMacs in forebrain co-cultures undergo distinct changes in gene expression as observed in principal component analysis (PCA) (E, H), volcano plots (F, I), and GO analysis (G, J) in both HD1 and HD2 variants. Scale bar represents 200 µM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96693/elife-96693-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Progression of forebrain organoid development across 31 days. Cells were initially seeded singly before the formation of embryoid bodies (EB) was observed after 2–3 days. Healthy EBs grew and matured, as seen by the formation of distinct neural epithelium in the organoids between days 12 and 31. Images were acquired with a standard microscope (Nikon) with a 10× objective. Scale bar represents 200 µM. (B) Immunofluorescence imaging of neuroepithelial rosette (red, SOX2+) in day 13 organoid. Developmental cues further supported the formation and expansion of the organoid to develop neuroepithelial tubes or rosettes, which contain predominantly neural stem cells (NPCs) that mimic the developing embryonic human cerebral cortex. (C) Immunocytochemical analysis of microglia-like cells (Iba1) after 23 days of co-culture with organoids. Scale bars represent 50 µM for low magnification and 10 µM for high magnification. (D) Three-dimensional visualization of non-co-cultured brain organoids (day 23). Neurons were labeled for NESTIN (green, cytoplasm) while the NPCs were labeled for SOX2 (red, cytoplasm). Microglia-like cells (IBA1+, white) were not identified, indicating the lack of formation of innately developing microglia. Scale bar represents 200 µM.
 
 We then applied 3D imaging of forebrain organoids to assess their morphology and the distribution/differentiation of the iMacs. This showed that iMacs expressing the microglial marker IBA-1, were mostly located on the surface of the organoids (Figure 5C). We also labeled organoids for NESTIN (a neuronal cell marker) and SOX2 expressed by neuronal progenitor cells (NPCs). In all of the organoids, neural epithelial rosettes were present, consisting mostly of SOX2+ NPCs (Figure 5—figure supplement 1B); these structures indicate favorable organoid growth as they demonstrate proper lineage progression leading to forebrain region identity (Lancaster et al., 2013) Importantly, organoids to which we did not add iMacs did not contain any IBA-1+ cells (Figure 5—figure supplement 1C); this was as expected from our previous work (Park et al., 2023), but was in contrast to previous studies that reported innately derived microglia in mesodermal-lineage-containing cerebral organoids (Lancaster et al., 2013; Ormel et al., 2018).
 
@@ -97,7 +121,7 @@ Next, we characterized the different cell populations within organoids after 23 
 
 Likewise, for HD2 iMacs, PCA also suggested that their patterns of gene expression were markedly different between co-cultured and non-co-cultured populations (Figure 5H), while GO analysis of the upregulated DEGs revealed an increase in various pathways linked with typical microglial functions in the brain such as glial cell differentiation and gliogenesis (CLU, MDK, CXCR4, RELN, TMEM98, TUBA1A), axonal development (UCHL1, MAP1B, CRABP2, TUBB2B, LGI1) as well as forebrain development (TUBB2B, MDK, CXCR4, RELN, LHX2) (Figure 5I, J). This shows that iMacs undergoing co-culture with forebrain organoids have differentiated to a certain extent, into microglia-like cells.
 
-## Co-culture results in impaired regulation of neurons within organoids
+### Co-culture results in impaired regulation of neurons within organoids
 
 Microglia not only act as sentinel cells, but are also important contributors to neuroplasticity and neurogenesis in the developing brain that ultimately help shape the brain circuitry (Wake et al., 2011). Part of this role requires microglia to regulate the population of NPCs and neurons during the unrestrained, highly proliferative phase of early brain development (Cunningham et al., 2013; Sierra et al., 2010); therefore, we next asked whether the microglia-like cells from our iMac-forebrain organoids were also capable of regulating neurogenesis in vitro.
 
@@ -129,59 +153,59 @@ While no model perfectly recapitulates the full complexity of a disease, the app
 
 ## Materials and methods
 
-## Preparation of human dermal fibroblasts from donor biopsies
+### Preparation of human dermal fibroblasts from donor biopsies
 
 Samples from patients with HDLS were collected via skin punch and placed in biopsy medium [Gibco, DMEM Glutamax supplemented with 1% 100× Antibiotics/Antimycotics (Gibco, AB/AM) and 10% fetal bovine serum (Gibco, FBS)] for transport to the laboratory. Immediately on arrival, biopsies were placed in 75% ethanol for 30 s then washed three times with DMEM Glutamax supplemented with 1% AB/AM; attached adipose tissue was removed using sterile scissors before biopsies were cut into small 1 mm2 cubes and placed dermis-side down onto a 6-well plate then left to dry slightly for 20 min to facilitate adhesion. Biopsy culture medium was then added and plates incubated overnight at 37°C, 5% carbon dioxide in air; 48 hr later, the medium was changed then biopsies cultured for a further 10–14 days during which fibroblast outgrowth was observed. At around 90% confluency, fibroblasts were detached from the plates using 0.05% Trypsin/EDTA and passaged. Biopsies were re-plated up to three times for further fibroblast propagation.
 
-## Reprogramming of human dermal fibroblasts into induced pluripotent stem cells
+### Reprogramming of human dermal fibroblasts into induced pluripotent stem cells
 
 Individual donor’s fibroblasts were reprogrammed into iPSCs using the Epi5 Episomal reprogramming kit (Invitrogen), and the Human dermal fibroblast nucleofector kit (Lonza) on a Lonza Nucleofector 2B device. Briefly, fibroblast cultures at approximately 90% confluency were detached from their plates using 0.025% Trypsin/EDTA then collected by centrifugation at 350 × g for 5 min at room temperature. Cell pellets were resuspended in 100 µl of nucleofector solution at room temperature then counted: 200,000 cells were used per transfection with 1 µl of each of the episomal vectors, using program U-023. Transfected cells were subsequently plated onto Matrigel-coated (Stemcell) 6-well plates with 2 ml of pre-warmed fibroblast medium (DMEM supplemented with 10% FBS and 1% AB/AM) and incubated for 2 days. The medium was then replaced with 2 ml of TeSR-E7 medium, which was changed every 2 days for 25–35 days until early iPSC clones emerged.
 
-## Isolating iPSC colonies
+### Isolating iPSC colonies
 
 Between days 25 and 35, colonies resembling human embryonic stem cell colonies emerged, were collected using a sterile needle under a stereomicroscope, mechanically fragmented, and added to 24-well plates pre-coated with Matrigel and containing 500 µl of mTeSR-1. The colonies were cultured for 24 hr then underwent medium change with fresh mTeSR-1 for 7–10 days until 80% confluent.
 
-## Culture and maintenance of iPSC cell lines
+### Culture and maintenance of iPSC cell lines
 
 To passage, 500 µl of ReleSR were added into each well and incubated in 37°C for 3 min before tapping the plate firmly on all sides to dislodge the iPSC colonies. Subsequently, the iPSC fragments were transferred into 12-well plates and again cultured until approximately 80% confluent, before passaging into 6-well plates, all while maintaining in mTeSR-1 with daily medium change. Mature iPSC colonies were identified by their characteristic phenotype: clear distinct borders, high nuclei-to-cytoplasm ratio, and raised, refractive, three-dimensional-like colonies.
 
-## Characterization of induced pluripotent stem cell colonies
+### Characterization of induced pluripotent stem cell colonies
 
 Characterization of iPSC colonies was achieved using the PSC 4-Marker Immunocytochemistry Kit (Gibco). Briefly, spent mTeSR-1 medium was aspirated from the cells before adding 200 µl of fixative solution per well and incubating for 15 min at room temperature, which was then replaced by 200 µl of permeabilization solution for 15 min, then by 200 µl of blocking solution for 30 min. Subsequently, 2 µl of antibodies recognizing SSEA4 and OCT4 were added directly to the blocking solution and incubated for 3 hr before washing three times with wash buffer (1× DPBS). Secondary antibodies were added at 0.8 µl per well and incubated for 1 hr at room temperature before washing three more times. During the last wash, one drop of NucBlue Fixed Cell Stain (DAPI) was added into the wash buffer and incubated for 5 min. Cells were either imaged immediately or stored at 4°C in the dark, for up to 1 month before analysis.
 
-## Karyotyping iPSC colonies
+### Karyotyping iPSC colonies
 
 Mature iPSC colonies (HD1, IsoHD1, HD2, IsoHD2) were pre-treated with 0.1 µg/ml of colcemid for 3 hr in the incubator before dissociation into single cells for imaging. Subsequently, cells were fixed with 4% paraformaldehyde and sent for karyotype analysis at Zhen He Biotech, Shanghai.
 
-## Microscopy
+### Microscopy
 
 Cell morphology observations were regularly performed using an Olympus CKX41 inverted microscope. Bright field and phase contrast images were taken using a Nikon Eclipse TS2 inverted microscope equipped with a Digital Sight camera. Images were processed using the proprietary software ImageView.
 
-## Mycoplasma analysis
+### Mycoplasma analysis
 
 The absence of mycoplasma infection was assessed by MycoStrip Mycoplasma Detection Kit (InvivoGen, rep-mys-10), according to the manufacturer’s instructions (data not shown, available on request).
 
-## Differentiation of iPSC into primitive-like macrophages (iMacs)
+### Differentiation of iPSC into primitive-like macrophages (iMacs)
 
 Patient-derived iMacs were generated as previously described (Takata et al., 2017). Briefly, iPSCs were cultured in Stempro34 medium, supplemented with L-glutamine (100×), ascorbic acid (5 mg/ml), 1-Thioglycerol (26 µl/2 ml), Transferrin (200×) and Pen/Strep (1%), with the addition of CHIR99021 (2 µM), VEGF (50 ng/ml), and BMP4 (5 ng/ml) from days 0 to 2 to induce mesodermal lineage commitment; hemangioblast-like cell formation was then induced by culture in the presence of BMP4 (5 ng/ml), VEGF (50 ng/ml), and bFGF (20 ng/ml) on day 2 and only VEGF (15 ng/ml) and bFGF (5 ng/ml) on day 4. From days 6 to 10, hemangioblasts were further committed to the generation of hematopoietic cells by the addition of DKK-1 (30 ng/ml), VEGF (10 ng/ml), bFGF (10 ng/ml), IL-6 (10 ng/ml), IL-3 (20 ng/ml), and SCF (50 ng/mL). To further promote the maturation of hematopoietic cells and CSF-1R expression, on days 12 and 14, medium was supplemented with SCF (50 ng/ml), bFGF (10 ng/ml), IL-6 (10 ng/ml), and IL-3 (20 ng/ml). From days 16 to 31, the medium was switched to SF-Diff consisting of IMDM (75%) and F12 (25%) with the addition of N2 (100×), B27 (50×), 0.05% BSA, 1% Pen/Strep, supplemented with 50 ng/ml of CSF-1 to terminally differentiate the primitive cells to iMacs. Full medium changes were carried out every 2 days from days 0 to 14 and every 3 days from days 16 to 31. Free-floating cells were observed from as early as day 6 of culture and were collected and re-seeded back into individual wells during medium changes. Additionally, iMacs were initially cultured in a hypoxia incubator (5% O2, 5% CO2) from days 0 to 8 before moving into a normoxic incubator until day 31, when the cells were used for experiments. iMac identity was confirmed by flow cytometry with labeling for the macrophage markers CD45 and CD14.
 
-## Generation of forebrain organoids
+### Generation of forebrain organoids
 
 Forebrain organoid generation was adapted from Qian et al., 2018, which described a guided differentiation method that requires various cytokines and growth factors to be added at different differentiation stages, as follows.
 
-## Stage 1 (days 0–4: embryoid body formation)
+### Stage 1 (days 0–4: embryoid body formation)
 
 iPSC on 6-well plate at approximately 80% confluency were dissociated into single cells using Accutase (Stemcell) before counting and seeding at 50,000 cells per well into an ultra-low attachment (ULA) 96-well plate with 150 µl of forebrain first medium (F1M: DMEM/F12, 20% KOSR, 1× GlutaMax, 1× MEM-NEAA, 1× 2-Mercaptoethanol, Pen/strep, Dorsomorphine 2 µM, A-83 2 µM) and 20 µM of ROCK Inhibitor (Stemcell). Plates were incubated at 37°C and 5% CO2 for 24 hr (day –1). On day 0, medium was refreshed with the addition of 2 µM Dorsomorphin (Sigma) and 2 µM A83-01 (Sigma). Half medium changes were then performed on days 2 and 4 with the exclusion of ROCK inhibitor: small embryoid bodies (EB) were observed at this point.
 
-## Stage 2 (days 5–13: neuro-ectodermal induction)
+### Stage 2 (days 5–13: neuro-ectodermal induction)
 
 On day 5, one EB was transferred into each well of a ULA 24-well plate with 500 µl of Forebrain second medium (F2M: DMEM/F12, 1× N2 supplement, 1× GlutaMax, 1× MEM-NEAA, Pen/Strep, CHIR-99021 1 µM, SB-431542 1 µM). On day 7, healthy EB displaying a smooth and round surface were embedded individually into 20 µl of Matrigel, according to the method of Lancaster et al., 2013. Once the Matrigel had fully polymerized, eight embedded EBs were transferred into a 10-cm Petri dish with 10 ml of F2M before incubating at 37°C with half medium changes every 2 days until day 13. At this point, cluster(s) of neuroepithelium buds were present in individual organoids, evident as neural tube-like structure without extending cell processes.
 
-## Stage 3 (days 14–31: maturation)
+### Stage 3 (days 14–31: maturation)
 
 On day 14, Matrigel-embedded organoids were collected and replated, with the attached Matrigel removed by repeated pipetting, before being transferred into a clean 10-cm Petri dish with 8 ml of Forebrain third medium (F3M: DMEM/F12, 1× N2 supplement, 1× B27 supplement, 1× GlutaMax, 1× MEM-NEAA, 1× 2-Mercaptoethanol, Pen/Strep, Insulin 2.5 µg/ml). Dishes were incubated at 37°C on an orbital shaker at 80 rpm, with half F3M changes every 3 days until organoids were used for analysis/experiments.
 
-## Generation of isogenic clones using CRISPR/CAS9
+### Generation of isogenic clones using CRISPR/CAS9
 
 sgRNAs were designed using the CRISPR design tool (http://crispor.tefor.net/) and selected based on highest efficiencies as well as off-target scores and synthesized by GENESCRIPT with scaffold. ssDNA template was designed with 40 bp of homologous nucleotides flanking both arms of the point of mutation, inclusive of silent mutations on, and adjacent to, the PAM region, and synthesized by Sangor Shanghai. Genome editing via homology-directed repair from the CRISPR/Cas9 system in combination with a ssDNA was used to guide the single nucleotide correction of the HDLS point mutation, according to donor’s Sanger sequencing reports on Exon 15 (Donor #2) and 18 (Donor #1) of CSF-1R by homologous recombination.
 
@@ -189,37 +213,75 @@ The ribonucleoprotein (RNP) complex consisting of Cas9 protein and sgRNA was ass
 
 Clones were screened for SNP editing using the ICE SYNTHEGO tool (https://ice.synthego.com) and off-target events screened for using CRISP-ID software (http://crispid.gbiomed.kuleuven.be).
 
-## Co-culture of forebrain organoids and iMacs to generate iMicroglia
+### Co-culture of forebrain organoids and iMacs to generate iMicroglia
 
 Co-culturing iMacs (primitive macrophages) with organoids enables the iMacs to be in a neurogenic niche environment where they would subsequently differentiate into iPSC-derived microglia (iMicro). Thirty thousand day 31 iMacs (mutant or Isogenic controls) were resuspended in F3M before adding onto their isogenic organoid in each well of an ULA 96-well plate. Co-cultures were incubated for 7 days with daily half F3M change supplemented with CSF-1 (100 ng/ml). On day 8, each organoid was transferred to an individual well of a ULA 24-well plate and supplemented with 1 ml of F3M and CSF-1 (100 ng/ml); half F3M change was performed every 3 days until analysis.
 
-## Clearing of forebrain organoids for 3D imaging
+### Clearing of forebrain organoids for 3D imaging
 
 Organoids were first fixed in 4% paraformaldehyde for 30 min at room temperature followed by washing twice in PBS then incubating in PBS overnight at 4°C. The next day, PBS was replaced with a permeabilization buffer (2% Triton X-100 in PBS solution) and organoids were incubated on an orbital shaker at room temperature for 72 hr. At the end of permeabilization, organoids were incubated in blocking buffer (5% normal donkey serum, 5% normal goat serum, 1% FBS, 1% Triton X-100 in PBS solution) at 4°C overnight. Organoids were then incubated with primary antibodies at 1:200 in antibody dilution buffer (1% bovine serum albumin, 0.2% Triton X-100 in PBS solution) at 4°C for 72 hr. Primary antibodies specific for the following markers were used: NESTIN (MERCK), SOX2 (Abcam), and IBA-1 (Abcam). Organoids were washed in washing buffer (1× PBS solution) on an orbital shaker at room temperature for 1 hr before being kept in 1× PBS solution at 4°C overnight. The organoids were subsequently incubated with the following secondary antibodies at 1:200 in antibody dilution buffer, at 4°C for 48 hr: goat anti-mouse Alexa Fluor 488 (Biolegend), goat anti-rabbit Alexa Fluor 594 (Abcam), and donkey anti-goat Alexa Fluor 647 (Abcam). The organoids were then washed with wash buffer for 1 hr on an orbital shaker at room temperature then kept in PBS at 4°C overnight before counterstaining with the nuclear marker DAPI on an orbital shaker at room temperature for 2 hr. Organoids were then washed twice in washing buffer on an orbital shaker at room temperature for 1 hr, then again kept overnight at 4°C in 1× PBS. The following day, organoids were transferred individually to confocal-imaging-compatible glass-bottomed containers and 20 µl of RapiClear (SUNJin Lab) solution was added onto each organoid and left until they were cleared (usually 24 hr depending on the size of the organoid). Whole organoids were imaged using a FV3000 confocal microscope with 20× objective lens (Olympus, Japan) and analyzed using iMaris software (BITPLANE).
 
-## Measurement of area of organoid
+### Measurement of area of organoid
 
 Area of organoids was measured using ImageJ software. Briefly, the ‘freehand selection’ tool was used to trace the circumference of each individual organoid. The average of three measurements was used as the final readout.
 
-## Dissociation of forebrain organoids
+### Dissociation of forebrain organoids
 
 Organoids were collected individually using 200 µl pipette with a cut pipette tip and incubated in 500 µl of Accutase at 37°C with gentle pipetting after 10 min, then allowed to fully dissociate for another 5–15 min at 37°C as needed. After again pipetting, cells were suspended in 1 ml of MACS buffer and collected by centrifugation at 1350 rpm 350 × g at RT for 5 min. Cells were then used in experiments.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells were prepared for labeling by first washing in FACS buffer, then resuspending cells in 70 µl of Fc-block (1:200) and incubating for 20 min at 4°C. Subsequently, the primary antibody cocktails were added into the cells at a 1:200 dilution before being vortexed and incubated for 30 min at 4°C. For samples that required secondary antibody labeling, after incubation with primary antibodies the cells were washed with FACS buffer before secondary antibodies (1:500) were added and incubated for 25 min at 4°C. After a further wash in FACS buffer, DAPI was added then cells were analyzed using the BD Symphony X-50.
 
-## Cell sorting of co-cultured organoids
+### Cell sorting of co-cultured organoids
 
 Cells were isolated into sorting solution (SMART-Seq HT kit, 10× lysis buffer, RNase inhibitor, 3′ SMART-Seq CDS Primer II A, nuclease-free water) using the BD Aria III cell sorter. After sorting, cell-containing tubes were briefly spun down and immediately placed in liquid nitrogen for snap freezing. Lysates were stored at –80°C.
 
-## RNA extraction of samples
+### RNA extraction of samples
 
 RNA extraction was performed using Trizol according to the manufacturer’s instructions. Briefly, 500 µl of Trizol was added to each sample before the addition of 100 µl of chlorofoam to each sample and mixed thrice (15 s per succession) before incubating at room temperature for 5 min. Samples were then centrifuged at 20,000 × g, 20 min, 4°C before the organic solvent was transferred into new eppendorf tubes. One µl of GlycoBlue co-precipitate (Invitrogen) was added to each sample and mixed well before the addition of 250 µl of isoproponol. Samples were mixed well before incubating at –80°C for at least 1 hr. Thawed samples were subsequently centrifuged at 12,000 × g, 4°C for 15 min before decanting supernatant, washing again with ice-cold 75% ethanol and centrifuging at 7500 × g, 4°C for 5 min. Samples were left to air dry for approximately 5 min after decanting of supernatant, before the RNA pellet was resuspended in 10 µl of DPEC water and stored at –80°C.
 
-## cDNA library construction for RNA-sequencing
+### cDNA library construction for RNA-sequencing
 
 RNA samples from the previous step were first converted to complementary DNA (cDNA) using the Takara HT kit according to the manufacturer’s instruction. Briefly, 5 µl of purified total RNA was added to 1 µl of 10× reaction buffer consisting of 10× lysis buffer and RNase inhibitor; 1 µl of 3′ SMART-seq primer II A was added and mixed well by vortexing before incubating the samples at 72°C for 3 min. Samples were then immediately placed on ice for 2 min. A one-step master mix consisting of 0.7 µl of nuclease-free water, 8 µl of one-step buffer, 1 µl of SMART-Seq HT oligonucletide, 0.5 µl RNase inhibitor, 0.3 µl SeqAmp DNA polymerase, and 2 µl of SMARTscribe reverse transcriptase was subsequently added to each sample and mixed well. The following program was used to run the PCR protocol:
+
+<table>
+  <tbody>
+    <tr>
+      <td>42°C</td>
+      <td></td>
+      <td>90 min</td>
+    </tr>
+    <tr>
+      <td>95°C</td>
+      <td></td>
+      <td>1 min</td>
+    </tr>
+    <tr>
+      <td rowspan="3">18 cycles</td>
+      <td>98°C</td>
+      <td>10 s</td>
+    </tr>
+    <tr>
+      <td>65°C</td>
+      <td>30 s</td>
+    </tr>
+    <tr>
+      <td>68°C</td>
+      <td>3 min</td>
+    </tr>
+    <tr>
+      <td>72°C</td>
+      <td></td>
+      <td>10 min</td>
+    </tr>
+    <tr>
+      <td>4°C</td>
+      <td></td>
+      <td>Forever</td>
+    </tr>
+  </tbody>
+</table>
 
 The resulting cDNA product was purified using the Vazyme VAHTS DNA Clean beads. Briefly, 20 µl of beads were added to each cDNA product, mixed well and incubated for 5 min at RT before placing samples on a magnectic stand for 2 min. The supernatant was discarded and cDNA was washed twice with cold 80% ethanol before being air-dried for 3 min. Purified cDNA was subsequently eluted from the magnetic beads with 15 µl of DPEC water. The concentration of cDNA was measured with the Qubit dsDNA HS Assay Kit (Invitrogen) using the Qubit 4 fluorometer.
 
@@ -227,44 +289,82 @@ cDNA library construction was performed using the Vazyme TruePrep DNA library pr
 
 TSS was immediately added to each sample and left to incubate at RT for 5 min before 7.5 µl of Mix B (2 µl DPEC water, 5 µl 5× TAB, 0.5 µl TAE) was added to each sample. 2.5 µl of N5 and N7 primer was added and mixed well before running on the Nextera-2 program:
 
+<table>
+  <tbody>
+    <tr>
+      <td>72°C</td>
+      <td></td>
+      <td>3 min</td>
+    </tr>
+    <tr>
+      <td>98°C</td>
+      <td></td>
+      <td>3 min</td>
+    </tr>
+    <tr>
+      <td rowspan="3">13 cycles</td>
+      <td>98°C</td>
+      <td>15 s</td>
+    </tr>
+    <tr>
+      <td>60°C</td>
+      <td>30 s</td>
+    </tr>
+    <tr>
+      <td>72°C</td>
+      <td>3 min</td>
+    </tr>
+    <tr>
+      <td>72°C</td>
+      <td></td>
+      <td>5 min</td>
+    </tr>
+    <tr>
+      <td>4°C</td>
+      <td></td>
+      <td>Forever</td>
+    </tr>
+  </tbody>
+</table>
+
 Subsequently, samples were purified using the vazyme beads and cDNA was eluted with 20 µl of DPEC water before measuring the concentration.
 
 For pooling of cDNA libraries, 40 ng of each sample was added to a final volume of 40 µl, adjusted with DPEC water, and incubated with 22.6 µl of Vazyme clean beads at RT for 5 min before magnectic separation. The entire volumn of supernatant was transferred to a fresh PCR tube to which was added 6.4 µl of Vazyme clean beads. The contents were mixed well and incubated at RT for 5 min before separation: subsequently, the supernatant was discarded and bead-bound-cDNA was washed twice with 80% ethanol before being air dried for 3 min. Purified pooled cDNA samples were eluted with 20 µl of DPEC water and tested for concentration.
 
-## Bulk RNA analysis
+### Bulk RNA analysis
 
 The clean paired-ends reads were aligned to the GRCh38.96 human genome reference using kallisto (version 0.46.1) with parameters ‘–bootstrap-samples=100’. The transcript-level estimated counts belonging to the same gene were then aggregated into the matrix of gene-level counts (TPM) implemented in the R package tximport (version 1.14.2).
 
 Pairwise comparison across RNA-seq data was performed to get differentially expressed genes between each two types of cells, using the linear model and the empirical Bayes method implemented in R limma package (version 3.42.2), with significance thresholds for p-value <0.05 and log2(fold change) ≥0.5 (Figure 3) or 1.5 (Figure 5). The differentially expressed genes identified with top log2(fold change) were selected to perform the PCA analysis in R using prcomp function. Additionally, the clusterProfiler package (version 4.10.0) was employed for pathway enrichment analysis via the compareCluster function and ‘enrichGO’ method, targeting ‘ALL’ GO ontologies.
 
-## Metabolic function using Seahorse analysis
+### Metabolic function using Seahorse analysis
 
 The bioenergetic profile of iMacs was assessed by determining the OCR and the ECAR using an XF-96 Flux Analyzer (Seahorse Bioscience). Sensor cartridges (Agilent Technologies) were hydrated in XF Calibrant (Agilent Technologies) at 37°C overnight, devoid of carbon dioxide, following the manufacturer’s instructions. Cells were resuspended in either OCR XF base medium supplemented with 10 mM glucose, 2 mM L-glutamine, and 1 mM sodium pyruvate, or ECR XF base medium supplemented with 2 mM L-glutamine, before being seeded at 40,000 cells/50 µl/well into XF96 culture plates. Cells were pelleted by centrifugation at 200 × g for 1 min then resuspended in either 125 µl of OCR or ECR medium per well and incubated at 37°C in a CO2-free incubator for 45 min before loading into the Seahorse analyzer. Cells were sequentially treated with 25 µl injections of specific bioenergtic modulators that were added to the wells prior to loading, to test for different paramters of mitochondrial and glycolytic functions. ECR analysis was probed with 10 mM glucose to stimulate glycolysis, followed by the addition of 2 μM oligomycin to block ATP synthase and 50 mM 2-deoxy-glucose to shut down the function of glycolysis. Conversely, OCR analysis was probed with 2 μM oligomycin, 1 μM FCCP (carbonyl cyanide-4-(trifluoromethoxy) phenylhydrazone) to stimulate maximal mitochondrial oxygen consumption and 0.5 μM rotenone plus antimycin A to asses OXPHOX parameters from the OCR levels. Mitochondrial and glycolytic parameters were calculated as recommended by the instrument manufacturer (Agilent Technologies).
 
-## MTT test
+### MTT test
 
 On the day before testing, 25,000 iMacs were seeded into each well of a 96-well flat-bottom plate. The next morning, 20 µl of MTT solvent (10% of total volume) was added to each well and incubated at 37°C for 3.5 hr before being decanted. Next, 200 µl of MTT formazan solvent was added to each well before being placed onto a shaker for 15 min in the dark, then incubated RT for an additional 30 min in the dark. Measurements were read by a spectrophotometer at OD570 and OD690.
 
-## Cytospin assay
+### Cytospin assay
 
 iMacs were first trypsinzed using TryPLE express before being counted using the Countess II. Approximately 50,000 cells were resuspended in 150 µl of PBS before being transferred to a cytocentrifuge cytofunnel paired with a glass slide, and centrifuged for 5 min at 800 rpm 200 × g, air dried for 30 min before sealing with mounting medium. Images were acquired with an Olympus BX53 light microscope equipped with a 100× oil immersion objective lens.
 
-## Giemsa staining
+### Giemsa staining
 
 Adequately air-dried slides were placed in a staining tray and flooded with 1 ml per slide of Solution A of the Wright-Giemsa staining kit (BASO) for 1 min. Subsequently, 500 µl of Solution B was added to each slide and agitated for 5 min. Slides were then rinsed in distilled water for 5 min before being air-dried for 30 min then sealed in synthesis resin. Images were acquired with the Olympus BX53 light microscope paired with a 100× oil immersion objective lens.
 
-## Neuronal cell line SH-5YSY apoptosis induction
+### Neuronal cell line SH-5YSY apoptosis induction
 
 SH-SY5Y (ATCC, CRL-2266) cells were kindly provided by the lab of Xu Tien le from the Shanghai Institute of Immunology. SH-SY5Y cell monolayers in sterile PBS were exposed to UV radiation for 30 min before collection of cells into serum-free medium (DMEM + 1% P/S) and incubation at 37°C overnight to induce apoptosis. The following day, cells were centrifuged at 350 × g, RT for 3 min before staining with Annexin V (BD Pharmingen PE Annexin V apoptosis detection kit) for 20 min at RT in the dark, before being analyzed by flow cytometry.
 
-## Phagocytic assay with conjugated E. coli beads
+### Phagocytic assay with conjugated E. coli beads
 
 First, pHrodo Red E. coli-conjugated bioparticles (Invitrogen) were reconstituted to a working concentration of 1 mg/ml with sterile water before adding to iMacs in complete medium at 1:10 final concentration. After incubation at 37°C for 45 min, cells were washed twice with PBS before collection for flow cytometry analysis.
 
-## RNA extraction and real-time quantitative PCR
+### RNA extraction and real-time quantitative PCR
 
 Total RNA was extracted from each group with TRIzol Reagent (Invitrogen). The cDNA was obtained by using the PrimeScript RT Reagent Perfect Real Time kit (Takara, Japan). Briefly, 500 ng of RNA for each sample was amplified as a template, in 10 µl of reaction mixture (2 µl 5× PrimeScript buffer, 0.5 µl PrimeScript RT Enzyme Mix I, 0.5 µl Oligo dT Primer, 0.5 µl random 6-mers, RNA product, RNase-free water). This mixture was then incubated at 37°C for 15 min and subsequently at 85°C for 5 sec to obtain cDNA. Quantitative PCR (qPCR) was performed in a ViiA 7 Real-time PCR system (Applied Biosystems) with ChamQ SYBR Color qPCR Master Mix Low ROX Premixed (Vazyme).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests were performed using GraphPad Prism 8.0.1 (GraphPad Software, La Jolla, CA, USA; https://www.graphpad.com/). All experiments were performed in triplicate and data analysis was performed using unpaired Student’s t-tests. All data represent the mean ± SEM. Statistical significance was assigned as: p < 0.05 was considered significant: *p < 0.05; **p < 0.01; ***p < 0.001. p > 0.05 was considered nonsignificant (n.s.).

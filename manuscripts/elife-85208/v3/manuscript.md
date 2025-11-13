@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Tetrad Graduate Program, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Bioengineering & Therapeutic Sciences, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Developmental & Stem Cell Biology Graduate Program, University of California, San Francisco San Francisco United States
-4. https://ror.org/043mz5j54 Biochemistry & Biophysics Deptartment, University of California, San Francisco San Francisco United States
-5. https://ror.org/00knt4f32 Chan Zuckerberg Biohub San Francisco United States
+1. Tetrad Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Bioengineering & Therapeutic Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Developmental & Stem Cell Biology Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Biochemistry & Biophysics Deptartment, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+5. Chan Zuckerberg Biohub San Francisco United States ([ROR:00knt4f32](https://ror.org/00knt4f32))
 
 † Corresponding author
 
@@ -35,11 +35,39 @@ Here, we ask which emergent properties of mammalian k-fibers require a focused s
 
 ## Results
 
-## Spindle poles coordinate but do not maintain kinetochore-fiber lengths
+### Spindle poles coordinate but do not maintain kinetochore-fiber lengths
 
 To test whether k-fiber length is set locally or globally, we generated metaphase spindles without focused poles, but with a steady-state length at metaphase. To do so, we overexpressed the dynactin subunit p50 (dynamitin) in PtK2 mammalian rat kangaroo cells, a system with few chromosomes and clearly resolved individual k-fibers. p50 overexpression dissociates the dynactin complex and inhibits the pole-focusing forces of its binding partner, dynein (Echeverri et al., 1996; Howell et al., 2001; Quintyne et al., 1999), unfocusing poles in species such as Xenopus and Drosophila (Gaetz and Kapoor, 2004; Sharp et al., 2000). Indeed, we found that unfocused spindles correlated with higher mean intensity levels of p50 expression (Figure 1—figure supplement 1), consistent with prior work showing mild pole disruption vs. severe unfocusing depending on the severity of dynein inhibition (Elting et al., 2017; Gaglio et al., 1997, p. 199; Hueschen et al., 2019; Hueschen et al., 2017; Sharp et al., 2000, p. 200; van Toorn et al., 2022). To probe the role of poles on global and local spindle architecture, here we selected unfocused spindles that maintained a steady-state structure on the minutes timescale, holding their shape over time (Figure 1—video 3).
 
 We first imaged unfocused spindle assembly in cells overexpressing p50 using long-term confocal fluorescence live imaging with a wide field of view to capture these rare events. While k-fibers seemed initially focused in these cells, these k-fibers eventually lost their connection to centrosomes and became unfocused, exhibiting a similar phenotype to spindle assembly in some NuMA-disrupted cells (Figure 1A, Figure 1—videos 1 and 2, Silk et al., 2009). We observed disconnected centrosomes seemingly move around freely in cells with unfocused spindles (Figure 1—videos 2 and 3). The resulting metaphase spindles were barrel-shaped with bi-oriented chromosomes, and they underwent anaphase after several hours instead of about 30 min in control, consistent with dynein inhibition at kinetochores causing an anaphase delay (Howell et al., 2001; Figure 1A, Figure 1—videos 1 and 2). While these spindles had no clear poles, we sometimes observed transient clustering of neighboring k-fibers, likely due to residual pole-focusing forces from other minus-end motors or incomplete dynein inhibition. Their interkinetochore distance was indistinguishable from control (Figure 1—figure supplement 2), suggesting that k-fibers are still under some tension from other forces (Elting et al., 2017; Kajtez et al., 2016; Maiato et al., 2004; Milas and Tolić, 2016), despite not being connected to poles. p50 overexpression in human RPE1 cells led to similar unfocusing phenotypes (Figure 1—figure supplement 3), but k-fibers were not individually resolvable. Thus, we chose to work with p50 overexpression in PtK2 spindles and hereafter refer to these spindles and k-fibers without distinct poles and with reduced pole-focusing forces as ‘unfocused’.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-v3.jpg)
+
+**Figure 1.:** See also Figure 1—videos 1–3. (A) Representative confocal timelapse images of spindle assembly showing max-intensity z-projections of HaloTag-β-tubulin PtK2 spindles labeled with JF 646, from nuclear envelope breakdown at t = 0 through cytokinesis. mCherry-p50 was infected into unfocused but not control cells. Arrowheads mark where both centrosomes were observed to be disconnected from the spindle. (B) Max-intensity z-projections of representative confocal images of PtK2 spindles with GFP-α-tubulin (control and unfocused) and mCherry-p50 (unfocused only). (C) Cartoon model of a mammalian spindle with chromosomes (gray) and microtubules (green), with predictions for k-fiber lengths after disrupting poles. Figures D–G are from the same dataset (Control: N = 16 cells; Unfocused: N = 16 cells). (D) Spindle major and minor axis lengths in control and unfocused spindles (major axis: Control = 20.24 ± 2.65 µm, Unfocused = 31.87 ± 7.85 µm, p = 6.3e−5; minor axis: Control = 8.96 ± 2.12 µm, Unfocused = 21.23 ± 7.61 µm; p = 2.5e−5; Control N = 16, Unfocused N = 15). (E) Lengths of control and unfocused k-fibers from z-stacks by live-cell imaging (Control: n = 144 k-fibers, 8.01 ± 1.76 µm; Unfocused: n = 222 k-fibers, 7.81 ± 2.52 µm; p = 0.38). (F) Mean lengths of control and unfocused k-fibers averaged by cell (Control: 7.97 ± 1.30 µm; Unfocused: 7.84 ± 1.31 µm; p = 0.79). (G) Length standard deviation of control and unfocused k-fibers per cell (Control: 1.12 ± 0.44 µm; Unfocused: 2.05 ± 0.58 µm; p = 2.9e−5). Figures H–N are from the same dataset (Control: N = 9 cells, n = 52 k-fibers; Unfocused: N = 9 cells, n = 46 k-fibers). (H) Lengths of k-fibers measured over time in control and unfocused spindles. Each trace represents one k-fiber; each color represents a cell. (I) K-fiber length averaged over time in control and unfocused spindles. Each point represents one k-fiber (Control: 7.64 ± 1.23 µm; Unfocused: 7.09 ± 2.19 µm; p = 0.14). (J) Coefficients of variation for k-fiber lengths over time in control and unfocused spindles. Each point represents one k-fiber (Control: 12.60 ± 5.62 a.u.; Unfocused: 17.23 ± 5.98 a.u.; p = 1.8e−4). Figures K–N were analyzed by sister k-fiber pairs (Control: N = 9 cells, n = 26 k-fiber pairs; Unfocused: N = 9 cells, n = 23 k-fiber pairs). (K) Lengths of sister k-fibers were measured over time in control and unfocused spindles. One representative k-fiber for each condition is shown in orange, its sister in blue, and their sum in black. (L) The sum of sister k-fiber lengths over time in control and unfocused spindles. Each trace is one sister k-fiber pair. (M) Summed sister k-fiber lengths averaged over time (from L). Each dot represents one sister k-fiber pair (Control: 15.27 ± 2.19 a.u.; Unfocused: 14.18 ± 3.54 a.u.; p = 0.22). (N) Coefficient of variation of summed sister k-fiber lengths over time (from L). Each dot represents one sister k-fiber pair (Control: 5.90 ± 2.14 µm; Unfocused: 11.77 ± 4.34 µm; p = 2.4e−6). Numbers are mean ± standard deviation. Significance values determined by Welch’s two-tailed t-test denoted by n.s. for p ≥ 0.05, * for p < 0.05, ** for p < 0.005, and *** for p < 0.0005.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Max-intensity z-projections of confocal images of PtK2 spindles transfected with GFP-α-tubulin and mCherry-p50 representing the two main phenotypes of p50 expression. p50 images show one central z-plane at equal brightness/contrast levels. (B) Mean p50 intensity per cell was compared between p50-expressing focused spindles and p50-expressing unfocused spindles across 1 day of imaging. Results were not pooled across multiple days due to laser instability (Focused p50: n = 18; Unfocused p50: n = 5).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Interkinetochore distance between sister k-fibers as measured in confocal live-cell imaging of PtK2 spindles expressing GFP-α-tubulin (control and unfocused) and mCherry-p50 (unfocused only) (Control: N = 13 cells, n = 40 kinetochore pairs, 2.22 ± 0.54 µm; Unfocused: N = 16 cells, n = 123 kinetochore pairs, 2.32 ± 0.86 µm; p = 0.38). Numbers are mean ± standard deviation. Significance values determined by Welch’s two-tailed t-test denoted by n.s. for p ≥ 0.05.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Representative confocal images showing max-intensity z-projections of RPE1 metaphase spindles labeled with SiR-tubulin. mCherry-p50 was expressed in unfocused but not control cells. Arrowheads mark centrosomes that appeared disconnected from spindles.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Spindle major and minor axis length measurement. Example maximum intensity projection images of control and unfocused spindles from Figure 1B (left). Images were rotated, cropped, thresholded using the Otsu filter, and fitted with ellipses with major and minor axes calculated using SciKit’s region property measurements (right). (B) Individual k-fiber length measurement. Example maximum intensity projections of control and unfocused spindles in A including only the subset of z-slices where the k-fiber of interest was in focus (left). An example region of interest (ROI) drawn in FIJI is shown to the right. (C) Cartoon depicting 3D length calculation. Lengths of ROIs as drawn in B were measured to calculate the XY length of k-fibers (blue). Z-height of k-fibers was calculated based on the number of z-slices the k-fiber spanned and the size of the z-step (orange). The Pythagorean theorem was used to approximate the 3D length of k-fibers in XYZ (black). In focused control k-fibers, centrosome radius was then subtracted (as calculated in Figure 1—figure supplement 5).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Example line ROI drawn on a representative centrosome in a max-intensity z-projection of a confocal image of a PtK2 spindle expressing GFP-α-tubulin. (B) Line profile of the example centrosome in A. Raw intensity values along the line ROI are plotted in black. These data were smoothed by applying a Gaussian fit and plotted in gray. (C) Normalized Gaussian-fitted line profiles of centrosomes. Each color refers to one Gaussian-fitted and normalized centrosome line profile. Traces were normalized by max intensity. (D) Centrosome radius was approximated by calculating the half width at half maximum from traces in C (N = 16 cells, n = 32 centrosomes, 0.97 ± 0.10 µm). Numbers are mean ± standard deviation.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Comparison of innermost and outermost k-fiber lengths in control and unfocused spindles. Inner k-fibers were defined to be within 2 µm of the long spindle axis; outer k-fibers were 3 or more µm away (Control: N = 16 cells, inner n k-fibers = 68, inner mean length = 7.67 ± 1.72 µm, outer n k-fibers = 41, outer mean length 8.64 ± 1.86 µm, p = 0.0070; Unfocused: N = 16 cells, inner n k-fibers = 61, inner mean length = 7.92 ± 2.46 µm, outer n k-fibers = 131, outer mean length 7.59 ± 2.57 µm, p = 0.40). (B) Correlation of k-fiber length and kinetochore alignment along the metaphase plate in control and unfocused spindles. Alignment was measured based on kinetochore distance to the approximated metaphase plate line and direction of misalignment. More negative values correspond to over-aligned kinetochores whose attached k-fibers are expected to be longer (yellow). More positive values correspond to under-aligned kinetochores (blue). Alignment scores around 1 µm correspond to kinetochore pairs aligned at the metaphase plate (green). Line of best fit is shown (Control: N = 16 cells, n = 139 k-fibers, correlation coefficient ρ = −0.33; Unfocused: N = 16 cells, n = 205 k-fibers, correlation coefficient ρ = −0.18). Numbers are mean ± standard deviation. Significance values determined by Welch’s two-tailed t-test denoted by n.s. for p ≥ 0.05 and * for p < 0.05. Pearson’s correlation coefficients are reported.
 
 To measure k-fiber lengths more accurately, we imaged control and unfocused spindles at metaphase using short-term confocal fluorescence live imaging at higher spatial resolution (Figure 1B). If poles do not contribute to k-fiber length, we expect no change in k-fiber length distributions in unfocused spindles (Figure 1Ci). If poles are required to set spindle length, we expect k-fibers with a different mean length in unfocused spindles (Figure 1Cii). If poles merely coordinate lengths, we expect k-fibers with a greater variability of lengths in p50 spindles, but the same mean length (Figure 1Ciii). We first observed that in unfocused spindles, k-fibers were more spread out in the cell, with spindles covering a larger area compared to control along both its major and minor axes (Figure 1D, Figure 1—figure supplement 4A). This is consistent with pole-focusing forces providing contractile forces to compact the spindle (Hueschen et al., 2019). Next, we measured k-fiber lengths in 3D (Figure 1—figure supplement 4B, C). For control spindles whose k-fibers end at centrosomes at this resolution, we subtracted the radius of the centrosome (0.97 ± 0.10 µm) from the region of measured tubulin intensity (Figure 1—figure supplement 5). Mean k-fiber length in an unfocused spindle (7.81 ± 2.52 µm) was not significantly different than control (8.01 ± 1.76 µm) (Figure 1E). Thus, k-fibers do not require a pole connection to keep their mean length. However, these unfocused spindles showed a greater standard deviation in lengths, so we compared average k-fiber lengths per cell to account for cell-to-cell variability: the mean k-fiber length within each cell was indistinguishable between control and unfocused cells (Figure 1F), but the standard deviation was significantly greater in unfocused cells (Figure 1G). This indicates that spindle poles act to synchronize lengths between neighbors within a spindle, rather than to set and keep length. K-fibers can maintain their average length without poles, but they do so with a greater length variability.
 
@@ -51,27 +79,51 @@ Finally, to test the role of poles in coordinating lengths within the spindle ac
 
 Together, our findings indicate that spindle poles are not required to globally maintain k-fiber length. Instead, individual k-fibers can locally maintain their length scale over time, and poles and global pole-focusing forces are needed to coordinate k-fiber lengths within the cell and across sister k-fibers, organizing the spindle’s structure in space and time.
 
-## Kinetochore-fibers recover their lengths without focused poles
+### Kinetochore-fibers recover their lengths without focused poles
 
 We have shown that k-fibers can establish and maintain their length independently of poles and pole-focusing forces, but cannot properly organize their lengths within the spindle across space and time. While unfocused k-fibers within a cell maintain their average length over time, we sought to determine whether they can recover their length without focused poles, that is, whether they actively adjust and recover their length if shortened below their steady-state length. First, we used laser ablation to acutely cut and shorten k-fibers and then imaged their regrowth compared to unablated k-fibers (Figure 2A–D, Figure 2—video 1). Mean k-fiber lengths in unfocused spindles before ablation appeared to be shorter (Figure 2D); however, this was due to not capturing the full length of k-fibers in a single z-plane while imaging ablated k-fibers. Indeed, length analysis of full z-stacks from unfocused spindles before ablation yielded an indistinguishable mean k-fiber length compared to control k-fibers in Figure 1E (Figure 2—figure supplement 1). Thus, ablated k-fibers were compared to their unablated neighbors as internal controls. Ablation generates new microtubule minus-ends on the shortened k-fiber stub, which recruit NuMA and dynein to reincorporate them back into the pole in control cells (Elting et al., 2014; Sikirzhytski et al., 2014). As expected, control ablated k-fibers were transported toward poles and did so while growing back rapidly following ablation, at 0.85 ± 0.09 µm/min on average in the first 5 min (Figure 2E). Unfocused k-fibers also grew back, though more slowly at 0.38 ± 0.42 µm/min on average (Figure 2E). They took longer to grow back to the mean length of unablated neighbor k-fibers neighbor k-fibers (Figure 2F). Thus, focused poles and pole-focusing forces are not required for k-fibers to recover their lengths, but are required for rapid length recovery. The latter is consistent with the idea that force on k-fiber ends favors k-fiber growth (Dumont and Mitchison, 2009b; Long et al., 2020; Nicklas and Staehly, 1967). Ultimately, k-fibers can adapt to length changes and maintain a steady-state length locally, without poles.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig2-v3.jpg)
+
+**Figure 2.:** See also Figure 2—videos 1 and 2. (A) Schematic of a k-fiber after ablation at position X. The k-fiber stub still attached to the chromosome persists with a new minus-end (dark green). The k-fiber segment closer to the pole with a new plus-end depolymerizes away (light green, *). (B) Representative confocal timelapse images of PtK2 k-fibers with GFP-α-tubulin and mCherry-p50 (in unfocused only). K-fibers were laser ablated at t = 0 (X) and followed over time. Empty arrowheads mark newly created minus-ends. (C) K-fiber lengths over time in a representative control and unfocused spindle. Gray traces represent unablated k-fibers. The ablated k-fiber is plotted in black. (D) Binned and averaged k-fiber lengths over time for ablated control and unfocused spindles. The average length of non-ablated k-fibers is plotted in gray, the average of ablated k-fibers in red for control and blue for unfocused. Shaded colors indicate ±1 standard deviation for their respective condition (Control: N = 7 cells, n = 8 ablated k-fibers, m = 26 non-ablated k-fibers; Unfocused: N = 6 cells, n = 8 ablated k-fibers, m = 31 non-ablated k-fibers). (E) Average growth rates of k-fibers immediately following ablation. Linear regression was performed on binned k-fiber lengths during the first 5 min following ablation (Control: 0.85 ± 0.09 µm/min, Unfocused: 0.38 ± 0.42 µm/min, p = 0.023). (F) Fraction of length recovered following ablation relative to the mean of unablated k-fibers in control and unfocused k-fibers. The average trace for unablated k-fibers in D was averaged over time and ablated lengths were normalized to this value. Times with statistically significant differences in length recovery are denoted by *. (G) Representative confocal timelapse images of PtK2 spindles with GFP-α-tubulin (in control and unfocused) and mCherry-p50 (in unfocused only), with 2 µM nocodazole added at −10 min and washed out at t = 0. (H) Lengths of k-fibers over time during nocodazole washout. All k-fibers are shown with the average trace plotted with ±1 standard deviation shaded in light gray (Control: N = 3 cells, n = 28 k-fibers; Unfocused: N = 4 cells, n = 23 k-fibers). (I) Mean k-fiber lengths before nocodazole and after washout in control and unfocused spindles (Control before: 6.58 ± 1.15 µm, n = 17; Control after: 5.76 ± 0.57 µm, n = 12, p = 0.02; Unfocused before: 6.03 ± 1.73 µm, n = 17; Unfocused after: 5.63 ± 1.80 µm, n = 14, p = 0.55). Numbers are mean ± standard deviation. Significance values determined by Welch’s two-tailed t-test denoted by * for p < 0.05, ** for p < 0.005, and *** for p < 0.0005.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Lengths of k-fibers in unfocused cells prior to ablation. Lengths were measured in 3D from z-stacks of PtK2 cells expressing GFP-α-tubulin and mCherry-p50 taken by confocal live-imaging, as in Figure 1E. The dotted line represents the mean control k-fiber length as calculated in Figure 1E (N = 4 cells, n = 79 k-fibers, 7.60 ± 2.07 µm).
+
 To test whether neighboring k-fibers or existing microtubule networks provide information for length maintenance, we treated spindles with nocodazole to depolymerize all microtubules, then washed it out and imaged spindle reassembly (Figure 2G, Figure 2—video 2). After 10 min, control spindle k-fibers had regrown to within 1 µm of their original length, albeit shorter on average, and unfocused spindle k-fibers fully recovered their average length and grew back into an unfocused state (Figure 2G–I, Figure 2—video 2). Both control and unfocused spindles could enter anaphase after nocodazole washout (Figure 2G, Figure 2—video 2). Thus, cells lacking pole-focusing forces in metaphase can self-assemble unfocused spindles with k-fibers of about the same length as control k-fibers. This supports a model of k-fibers regulating their own lengths without cues from pre-existing microtubule networks or neighboring k-fibers to build a bi-oriented spindle of the correct length scale.
 
-## Kinetochore-fibers exhibit reduced end dynamics in the absence of poles and pole-focusing forces
+### Kinetochore-fibers exhibit reduced end dynamics in the absence of poles and pole-focusing forces
 
 Given that k-fibers can maintain (Figure 1) and recover (Figure 2) their mean length without poles and pole focusing-forces—albeit regrowing more slowly—we asked whether unfocused k-fibers are dynamic and whether they have reduced dynamics. If dynamics are locally set for each individual k-fiber, dynamics should not change without poles or pole-focusing forces; if dynamics are set by global pole-focusing forces, we expect different dynamics without poles. In principle, dynamics can be probed using autocorrelation analysis, which reveals the timescale over which k-fibers ‘remember’ their length. If k-fibers were less dynamic and their lengths changed more slowly, this would result in stronger autocorrelation and autocorrelation for a longer period. Indeed, this is what we observed in unfocused k-fibers compared to control, consistent with unfocused k-fibers having reduced dynamics (Figure 3A). We thus sought to directly measure k-fiber end dynamics and flux.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig3-v3.jpg)
+
+**Figure 3.:** See also Figure 3—video 1. (A) Autocorrelation of k-fiber lengths over time from Figure 1H for control and unfocused k-fibers. Calculations and statistical analysis were performed using built-in Mathematica functions, where * indicates p < 0.05. (B) Schematic of a photomark (light green) on a k-fiber (dark green). The dotted arrow shows the direction the photomark moves with flux in control, where displacement of the mark toward the minus-end increases over time. Net end dynamics are shown by curved arrows (equal at steady state). (C) Representative confocal timelapse images of PtK2 k-fibers with GFP-α-tubulin (in control and unfocused) and mCherry-p50 (in unfocused only). A bleach mark was made at time = 0 and followed over time (filled arrowhead). Empty arrowheads indicate minus-ends. Below: Kymographs of the above images. Each row of pixels represents a max-intensity projection of a 5-pixel high stationary box drawn around the k-fiber at one time point (yellow box). (D) Minus-end dynamics, where photomark position over time describes how the mark approaches the k-fiber’s minus-end over time in control and unfocused k-fibers. Each trace represents one mark on one k-fiber. To measure flux as defined by minus-end depolymerization, the movement of the photomark toward the minus-end was plotted over time. Line with the average slope is drawn in black (Control: N = 8 cells, n = 12 k-fibers; Unfocused: N = 8 cells, n = 11 k-fibers). Numbers are mean ± standard deviation. Significance values determined by Welch’s two-tailed t-test denoted by n.s. for p ≥ 0.05, * for p < 0.05, ** for p < 0.005, and *** for p < 0.0005.
+
 At metaphase, k-fiber ends are dynamic, with poleward flux associating with net polymerization at plus-ends and apparent depolymerization at minus-ends (Mitchison, 1989). Spindle poles have been proposed to regulate minus-end dynamics (Dumont and Mitchison, 2009b; Gaetz and Kapoor, 2004; Ganem and Compton, 2004). To measure k-fiber dynamics, we introduced a bleach mark on a k-fiber and tracked its position over time relative to k-fiber minus-ends (Figure 3B–D, Figure 3—video 1). In control spindles, the mark approached minus-ends at a rate of 0.55 ± 0.29 µm/min, consistent with previous reports (Figures 3D and 4D, Cameron et al., 2006; Mitchison, 1989). In unfocused spindles, the mark approached minus-ends much slower at a rate of 0.13±0.15 µm/min (Figures 3D and 4D). These findings are in contrast to work in Xenopus showing that dynein inhibition through p50 overexpression does not impact the flux rate in the central spindle (Yang et al., 2008), but are supported by work in Xenopus and in mammals showing that dynein contributes to poleward transport (Burbank et al., 2007; Lecland and Lüders, 2014; Steblyanko et al., 2020). Thus, spindle poles or pole-focusing forces are required for fast k-fiber end dynamics, likely contributing to less efficient k-fiber length maintenance in unfocused spindles.
 
-## Kinetochore-fibers tune their end dynamics to recover length, without pole-focusing forces
+![Figure 4.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig4-v3.jpg)
+
+**Figure 4.:** See also Figure 4—video 1. (A) Models describing k-fiber length recovery mechanisms. K-fibers shortened by ablation (X) with a photomark (light green) can potentially grow back in different ways: suppression of minus-end depolymerization (top), increased plus-end polymerization induced by forces such as dynein (middle), or increased polymerization in a length-dependent manner (bottom). (B) Representative confocal timelapse images of PtK2 k-fibers with GFP-α-tubulin (in control and unfocused) and mCherry-p50 (in unfocused only). Filled arrowhead follows a bleach mark. At t = 0, k-fibers were cut with a pulsed laser at higher power (X). Empty arrowhead follows the new k-fiber minus-end. Below: Kymographs of the above images as prepared in Figure 3C. (C) Minus-end dynamics were probed by tracking movement of the mark toward the k-fiber’s minus-end over time in control and unfocused k-fibers after ablation at t = 0. Line with the average slope is drawn in black (Control: N = 5 cells, n = 6 k-fibers; Unfocused: N = 7 cells, n = 7 k-fibers). (D) Minus-end dynamics of k-fibers. Flux as measured by rate of photomark movement toward the minus-end with or without ablation in control and unfocused k-fibers. Each point represents the slope of one trace in Figure 3D or (C) measured by linear regression (Control: mean flux = 0.55 ± 0.29 µm/min, mean flux after ablation = −0.07 ± 0.20 µm/min; Unfocused: mean flux = 0.13 ± 0.15 µm/min, mean flux after ablation = −0.03 ± 0.23 µm/min; p non-ablated control vs. ablated control = 2.7e−4, p non-ablated control vs. non-ablated unfocused = 5.3e−4, p non-ablated unfocused vs. ablated unfocused = 0.19, p ablated control vs. ablated unfocused = 0.75). Numbers are mean ± standard deviation. Significance values determined by Welch’s two-tailed t-test denoted by n.s. for p ≥ 0.05, * for p < 0.05, ** for p < 0.005, and *** for p < 0.0005.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** See also Figure 4—video 2. (A) Representative confocal timelapse images of PtK2 k-fibers with GFP-α-tubulin. At t = 0, k-fibers were cut with a pulsed laser at a high power (X). Empty arrowhead follows the new k-fiber minus-end. Filled arrowhead follows a bleach mark made several minutes later with the laser at a lower power. Below: Kymographs of the above images as prepared in Figure 3C. (B) Minus-end dynamics were probed by tracking movement of the mark relative to the k-fiber’s minus-end over time in control k-fibers several minutes after ablation (t = 0) once k-fiber repair and length recovery were complete. (C) Minus-end dynamics of k-fibers. Flux as measured by rate of photomark movement toward the minus-end after ablation and length recovery in control k-fibers. Each point represents the slope of one trace in (B) measured by linear regression (n = 3 cells, mean = 0.46 ± 0.16 µm/min).
+
+### Kinetochore-fibers tune their end dynamics to recover length, without pole-focusing forces
 
 The fact that unfocused k-fibers grow back to a steady-state length after being acutely shortened (Figure 2) suggests that they can tune their dynamics after shortening. We thus sought to determine the physical mechanism for length recovery (Figure 4A). One model is that minus-end depolymerization stops or slows—for example, pole-based depolymerization dynamics are lost while k-fiber minus-ends appear separated from the pole (Dumont and Mitchison, 2009b; Long et al., 2020). Another model is that plus-end polymerization increases, which could occur in either a force-dependent manner (Akiyoshi et al., 2010; Dumont and Mitchison, 2009b; Long et al., 2020; Nicklas and Staehly, 1967) or a length-dependent manner (Dudka et al., 2019; Mayr et al., 2007; Stumpff et al., 2008; Varga et al., 2006). Notably, we find that k-fibers can grow back after ablation (Figure 2E) at a rate faster than poleward flux and associated minus-end dynamics in both control and unfocused spindles (0.85 ± 0.09 vs. 0.55 ± 0.29 µm/min in control, 0.38 ± 0.42 vs. 0.13 ± 0.15 µm/min in unfocused) (Figures 2E and 4D). Thus, even if minus-end dynamics were suppressed, this would not be sufficient to account for the k-fiber regrowth we observe after ablation, with or without pole-focusing forces.
 
 To directly test how changes in k-fiber length regulate end dynamics, and if this mechanism depends on pole-focusing forces, we ablated a k-fiber and introduced a photobleach mark on it in control and unfocused spindles (Figure 4A, B). In control spindles, the photomark did not detectably approach the minus-end of the k-fiber during its regrowth (Figure 4B, C), indicating that suppression of minus-end dynamics contributes to k-fiber regrowth, as in Drosophila cells (Maiato et al., 2004; Matos et al., 2009). Consistent with k-fiber minus-end dynamics being transiently suppressed during regrowth, rather than frozen due to ablation damage, k-fiber minus-ends resumed depolymerization in control spindles after ablation and length recovery (Figure 4—figure supplement 1, Figure 4—video 2). However, while Drosophila k-fibers regrow at the rate of poleward flux, these control mammalian k-fibers regrew faster than the rate of flux, indicating that mammalian k-fibers must additionally increase their plus-end dynamics when shortened to reestablish their steady-state length. In unfocused spindles, the photomark also did not detectably approach the minus-end of the k-fiber during its regrowth (Figure 4C), consistent with suppression of any minus-end dynamics, though it was not significantly different from the already slow dynamics and insufficient to account for growth (Figure 4D). Thus, k-fibers can tune their plus-end dynamics to recover their length in the absence of dynein-based pole-focusing forces. This supports a model where k-fiber length is not simply regulated by global pole-focusing forces, but by local length-based mechanisms.
 
-## Spindle poles coordinate chromosome segregation and cytokinesis
+### Spindle poles coordinate chromosome segregation and cytokinesis
 
 So far, we have shown that while a focused pole is not required for setting or maintaining k-fiber lengths (Figures 1 and 2), it is required for global spindle coordination (Figure 1) and robust k-fiber dynamics (Figures 3 and 4). To test the functional output of focused spindle poles in mammalian cells, we treated control and unfocused spindles with reversine, an MPS1 inhibitor that forces mitotic cells to enter anaphase, even in the absence of dynein activity required for spindle assembly checkpoint satisfaction (Santaguida et al., 2010). Control and unfocused spindles were imaged through anaphase after reversine addition using a single z-plane (Figure 5A, Figure 5—video 1) and also imaged with z-stacks encompassing the whole spindle once before adding reversine, and 20 min after anaphase onset (Figure 5B). In spindles without focused poles, chromatids separated—albeit at twofold reduced velocities compared to control—in the separating chromatid pairs that could be identified (Figure 5C). In the absence of poles or dynein activity, such chromatid separation likely comes from pushing from the spindle center rather than from pulling from the cell cortex (Vukušić et al., 2017; Yu et al., 2019).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85208/elife-85208-fig5-v3.jpg)
+
+**Figure 5.:** See also Figure 4—video 1. (A) Representative confocal timelapse images of PtK2 spindles with GFP-α-tubulin (in control and unfocused) and mCherry-p50 (in unfocused only) treated with 0.1 or 0.5 µM SiR-DNA with 1 µM reversine added at t = 0. Arrowheads depict an example of sister chromatids separating, later measured in C. (B) Max-intensity z-projections before adding reversine and 20 min after anaphase onset for the control and unfocused spindle in A. Figures C–E are from the same dataset (Control: N = 8 dividing cells; Unfocused: N = 10 dividing cells). (C) Sister chromatid separation velocity. For the chromatid pairs that were observed to separate, sister chromatid distance over time was measured for focused and unfocused spindles starting at anaphase onset. Control is plotted in gray, unfocused in blue. Light-colored traces represent one separating chromatid pair, with their average plotted as a dark line with shading representing ±1 standard deviation. The line of best fit for each condition averaged is shown as a dotted line, with their slopes shown (Control: N = 4 dividing cells, n = 5 chromosome pairs, separation velocity = 1.20 µm/min; Unfocused: N = 3 dividing cells, n = 9 chromatid pairs, separation velocity = 0.55 µm/min). (D) Number of ‘cells’ formed after cytokinesis in reversine-treated control and unfocused spindles (Control: 2 ± 0 cells; Unfocused: 2.20 ± 0.87 ‘cells’). (E) Fraction of chromosome mass per ‘cell’ after reversine treatment. Summed z-projections of chromosome masses were used to calculate the fraction of chromosome mass per cell (Control: 0.50 ± 0.08 a.u.; Unfocused: 0.45 ± 0.26 a.u.). Numbers are mean ± standard deviation.
 
 However, major segregation and cytokinetic defects were observed in these cells compared to control, consistent with segregation defects observed in k-fibers disconnected from poles (van Toorn et al., 2022; Sivaram et al., 2009). Cytokinetic defects and the presence of multiple cytokinetic furrows frequently resulted in the formation of more than two daughter cells in unfocused spindles (Figure 5D). Furthermore, chromosome masses were scattered and unequally distributed in these cells, whereby control daughter cells inherited approximately half of the chromosome mass as measured by DNA intensity, but not daughter cells of unfocused spindles (Figure 5E). Given that focused mammalian spindles lacking dynein pole-focusing forces and lacking Eg5 proceed through anaphase with much milder defects than we observe here (Neahring et al., 2021), we conclude that poles, rather than dynein-based pole-focusing forces, are primarily responsible for these defects. Thus, while many species lack spindle poles, and while unfocused mammalian spindles can still maintain k-fiber length and separate chromatids, spindle poles are essential to coordinate chromosome segregation and cytokinesis in mammalian cells.
 
@@ -95,74 +147,224 @@ Videos are displayed with optimal brightness and contrast for viewing.
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (P. tridactylus, male)</td>
+      <td>PtK2</td>
+      <td>Gift from T. Mitchison, Harvard University</td>
+      <td>PMID:1633624</td>
+      <td>Kidney epithelial</td>
+    </tr>
+    <tr>
+      <td>Cell line (P. tridactylus, male)</td>
+      <td>HaloTag-tubulin PtK2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Kidney epithelial</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens, female)</td>
+      <td>RPE1</td>
+      <td>ATCC</td>
+      <td>ATCC Cat#CRL-4000; RRID: CVCL_4388</td>
+      <td>Retina, epithelial</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Sigma</td>
+      <td>M1404</td>
+      <td>Final concentration 2 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Reversine</td>
+      <td>Sigma</td>
+      <td>R3904</td>
+      <td>Final concentration 1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Viafect</td>
+      <td>ProMega</td>
+      <td>E4981</td>
+      <td>1:6 ratio of Viafect:DNA used</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Janelia Fluor 646</td>
+      <td>Janelia</td>
+      <td>6148</td>
+      <td>Final concentration 100 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SiR-DNA</td>
+      <td>Spirochrome</td>
+      <td>SC007</td>
+      <td>Final concentration 0.1–0.5 µM with 1 µM verapamil</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SiR-tubulin</td>
+      <td>Spirochrome</td>
+      <td>SC002</td>
+      <td>Final concentration 0.1 µM with 1 µM verapamil</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-β-tubulin-HaloTag (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral plasmid. Progenitors: Addgene #114021 (Geert Kops) and Addgene #64691 (Yasushi Okada)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-mCherry-p50 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral plasmid. Progenitors: Addgene #114021 (Geert Kops) and mCherry-p50 (PMID:19196984)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>eGFP-α-tubulin (plasmid)</td>
+      <td>Michael Davidson collection given to UCSF; Rizzo et al., 2009</td>
+      <td>Addgene Plasmid #56450</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry-p50 (plasmid)</td>
+      <td>Gift from M. Meffert, Johns Hopkins University;</td>
+      <td>PMID:19196984</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>β-Tubulin HaloTag (plasmid)</td>
+      <td>Addgene; Uno et al., 2014</td>
+      <td>Addgene Plasmid #64691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>FIJI; Schindelin et al., 2012</td>
+      <td>ImageJ version 2.1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wolfram Mathematica</td>
+      <td>Wolfram Mathematica</td>
+      <td>Version 13.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph</td>
+      <td>MDS Analytical Technologies</td>
+      <td>Version 7.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Micro-Manager</td>
+      <td>Micro-Manager; Edelstein et al., 2010</td>
+      <td>Version 2.0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python</td>
+      <td>Version 3.8.1</td>
+      <td>Spyder IDE version 4.1.5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 All work herein was performed using wild-type PtK2 cells (P. tridactylus, male, PMID:1633624, kidney epithelial, gift from Tim Mitchison, Harvard University) unless otherwise stated. PtK2 cells were cultured in MEM (11095; Thermo Fisher, Waltham, MA) supplemented with sodium pyruvate (11360; Thermo Fisher), non-essential amino acids (11140; Thermo Fisher), penicillin/streptomycin, and 10% heat-inactivated fetal bovine serum (10438; Thermo Fisher). The cell line tested negative for mycoplasma, and while we did not authenticate it, its cell behavior and growth characteristics were similar to those reported for the parental PtK2 cell line, whose transcriptome we sequenced (Udy et al., 2015). Cells were maintained at 37°C and 5% CO2. hTERT-RPE1 cells (H. sapiens, female, ATCC Cat#CRL-4000, RRID: CVCL_4388, retinal epithelial) were cultured in Dulbecco's Modified Eagle Medium/Nutrient Mixture F-12 with GlutaMAX (11320; Thermo Fisher) supplemented with penicillin/streptomycin and 10% fetal bovine serum. This cell line was not authenticated by short tandem repeat (STR) profiling but tested negative for mycoplasma.
 
 To visualize microtubules, PtK2 cells were transfected with eGFP-α-tubulin (Clontech) using Viafect (Promega) unless otherwise noted. To inhibit dynein, PtK2 or RPE1 cells were additionally transfected or lentivirally infected with mCherry-p50 (a gift from Mollie Meffert, Johns Hopkins University; Shrum et al., 2009). Transient transfections were prepared in a 100-µl reaction mix per 35 mm dish, including a 1:6 ratio of DNA to Viafect, OptiMEM media up to 100 µl, and eGFP-α-tubulin (0.7 µg) or both eGFP-α-tubulin (0.4 µg) and mCherry-p50 (0.5 µg), and added 3–4 days prior to imaging.
 
-## Lentiviral plasmids and cell line construction
+### Lentiviral plasmids and cell line construction
 
 The coding sequences of β-tubulin-HaloTag (Addgene #64691) and mCherry-p50 were cloned into a puromycin-resistant lentiviral vector (Addgene #114021) using Gibson assembly. Lentivirus for each construct was produced in HEK293T cells. To generate the stable polyclonal β-tubulin-HaloTag PtK2 cell line (Figure 1A), wild-type PtK2 cells were infected with β-tubulin-HaloTag virus and selected using 5 µg/ml puromycin. Because p50 overexpression disrupts cell division, mCherry-p50 lentivirus was used to transiently infect each 35 mm dish 3–4 days prior to imaging (Figure 1A).
 
-## Imaging
+### Imaging
 
 PtK2 or RPE1 cells were plated on 35 mm #1.5 coverslip glass-bottom dishes coated with poly-D-lysine (MatTek, Ashland, MA) and imaged. The cells were maintained at 30–37°C in a stage top incubator (Tokai Hit, Fujinomiya-shi, Japan). Two similar inverted spinning-disk confocal (CSU-X1; Yokogawa Electric Corporation) microscopes (Eclipse TI-E; Nikon) with the following components were used for live-cell imaging: head dichroic Semrock Di01-T405/488/561/647, head dichroic Semrock Di01-T405/488/561, ×100 1.45 Ph3 oil objective, a ×60 1.4 Ph3 oil objective, 488 nm (100, 120, or 150 mW), 561 nm (100 or 150 mW), and 642 (100 mW) nm diode lasers, emission filters ET525/36M (Chroma Technology) for GFP fluorophore imaging, ET630/75 M for mCherry, and ET690/50M for JF 646 (Chroma Technology), a perfect focus system (Nikon, Tokyo, Japan), an iXon3 camera (Andor Technology, 105 nm/pixel using ×100 objective at bin = 1), and a Zyla 4.2 sCMOS camera (Andor Technology, 65.7 nm/pixel using ×100 objective at bin = 1). For imaging, 400 ms exposures were used for phase contrast and 50–100 ms exposures were used for fluorescence. Cells were imaged at 30°C (by default) or 37°C to speed up slower processes (Figures 1A, 2G, H,, 5), 5% CO2 in a closed, humidity-controlled Tokai Hit PLAM chamber. Cells were imaged via MetaMorph (7.8, MDS Analytical Technologies) or Micro-Manager (2.0.0).
 
 Spindle assembly videos (Figure 1A, Figure 1—videos 1 and 2) were captured using a ×60 objective for a wider field of view, selecting approximately 20 stage positions and imaging overnight at 37°C for 8–10 hr. To capture unfocused spindle assembly, positions containing cells expressing moderate-to-high levels of mCherry-p50 relative to other cells on the dish were selected. Spindles over time were imaged with 1 µm z-slices every minute to avoid photodamage (Figure 1A, H). Volumetric spindle images were taken using a ×100 objective, with z-slices 0.3 µm apart encompassing the whole spindle (Figures 1B and 5B, Figure 5B, Figure 2—figure supplement 1). To visualize DNA, 0.1–0.5 µM SiR-DNA (Spirochrome) with 1 µM verapamil were added at least 30 min prior to imaging (Figure 5). To visualize microtubules, 100 nM JF 646 was added to HaloTag-tub PtK2 cells at least 30 min prior to imaging (Figure 1A).
 
-## Photobleaching and laser ablation (Figures 2—4)
+### Photobleaching and laser ablation (Figures 2—4)
 
 Photobleaching and laser ablations were performed using 514 or 551 nm ns-pulsed laser light and a galvo-controlled MicroPoint Laser System (Andor, Oxford Instruments) operated through MetaMorph or Micro-Manager. Single z-planes were chosen to pick the clearest k-fiber visible from plus- to minus-end, parallel to the coverslip, that was long enough to ablate. Non-ablated unfocused k-fibers in the same imaging plane were not necessarily parallel to the coverslip, so their full length was not always captured in the single z-plane due to tilt. Photobleaching was performed by firing the laser at the lowest possible power to make a visible bleach mark (~20% of total power), whereas ablations were performed at the lowest possible power to fully cut a k-fiber (~60% of total power). K-fiber ablations were verified by observing complete depolymerization of newly created plus-ends, relaxation of interkinetochore distance, or poleward transport of k-fiber stubs (control only). When firing the laser, 1–3 areas around the region of interest were targeted and hit with 5–20 pulses each. Ablations were imaged using one z-plane every 12 s to assay short-term dynamics, then switching to every 1 min after approximately 10 min following ablation to avoid phototoxicity.
 
-## Nocodazole washout (Figure 2)
+### Nocodazole washout (Figure 2)
 
 Z-planes containing the highest number of clearly distinguishable k-fibers, that were parallel to the coverslip, were chosen for imaging. 2 µM nocodazole was swapped into dishes using a transfer pipet while imaging. After 10 min to depolymerize microtubules, dishes were washed 10× in prewarmed media to remove nocodazole and allow spindle reassembly. Spindles were imaged at one z-plane every min to avoid phototoxicity during spindle recovery. To measure k-fiber lengths before nocodazole addition, individual k-fiber traces were averaged over time before drug addition (≤−10 min). K-fiber lengths after drug washout were averaged over time after spindles reached a steady-state length (≥10 min), subtracting centrosome radius for control k-fibers during these times.
 
-## Reversine treatment (Figure 5)
+### Reversine treatment (Figure 5)
 
 Metaphase spindles were volumetrically imaged with a z-step of 0.3 µm across whole live spindles before reversine addition. The media was then swapped to similar media containing 1 µM reversine and imaged at a single z-plane. 20 min after anaphase onset, cells were again imaged volumetrically as previously described.
 
-## Image analysis
+### Image analysis
 
 Feature tracking, spindle architecture measurements, and statistical analyses were done in FIJI and Python unless otherwise stated. Videos and images are displayed with optimal brightness and contrast for viewing.
 
-## Spindle major and minor axes length (Figure 1D, Figure 1—figure supplement 4A)
+### Spindle major and minor axes length (Figure 1D, Figure 1—figure supplement 4A)
 
 Spindle minor and major axes lengths were determined by cropping, rotating, then thresholding spindle images with the Otsu filter using SciKit. Ellipses were fitted to thresholded spindles to approximate the length of their major and minor axes using SciKit’s region properties measurement (Figure 1—figure supplement 4A). In control spindles, the major axis corresponded to spindle length along the pole-to-pole axis, and the minor axis corresponded to spindle width along the metaphase plate axis. However, unfocused spindles were disorganized along both axes to the extent where the minor axis did not always correspond to the metaphase plate axis. Thus, Figure 1D reports ‘spindle minor axis length’ and ‘spindle major axis length’ rather than ‘spindle width’ and ‘spindle length’. Furthermore, it is worth noting that in unfocused spindles, spindle length is decoupled from k-fiber length because of k-fiber disorganization along both axes. Thus, spindle length was not measured in unfocused spindles, but individual k-fiber length was measured as described below.
 
-## K-fiber length (Figures 1 and 2, Figure 1—figure supplement 4B, C)
+### K-fiber length (Figures 1 and 2, Figure 1—figure supplement 4B, C)
 
 For k-fiber length measurements at a single time point, z-stacks of live spindles were taken with a step size of 0.3 µm across the entire spindle (Figure 1B). Individual k-fibers were measured using a maximum intensity z-projection of only the slices where that k-fiber was in focus ( Figure 1—figure supplement 4B). Line profiles were then measured by drawing ROIs in FIJI with a spline fit line of width 15 pixels, spanning from plus-ends at the start of tubulin intensity next to the chromosome toward minus-ends, using the minimum number of points to recapitulate the curve of the k-fiber (Figure 1—figure supplement 4B). The 3D length was then estimated with the Pythagorean theorem, using the length of the k-fiber’s ROI and the z-height of the slices it spanned (Figure 1E–G, Figure 1—figure supplement 4C). For control k-fibers, the end of the ROI spanning the k-fiber was defined as the center of the pole, and centrosome radius was subtracted to estimate true k-fiber length (Figures 1E–G, I–N–2C–F, H, I). Since minus-ends of focused k-fibers are not distinguishable in a pole and typically terminate within 2 µm of centrosomes (McDonald et al., 1992), centrosome radius was approximated by drawing line scans through focused poles and measuring the half width at half max intensity (Figure 1—figure supplement 5). This approximation was used for all subsequent length measurements. For unfocused and ablated k-fibers, minus-ends were defined as the farthest point of visible tubulin intensity corresponding to that k-fiber. Lengths of ROIs were calculated and plotted in Python. K-fiber lengths over time were measured as described above, but from videos with single imaging planes or from max-intensity projections based on a step size of 1 µm across the volume of the spindle. K-fiber lengths were then measured using ROIs of width 5 pixels for k-fibers whose plus- and minus-ends were visible across at least 5 frames (k-fiber lengths over time, Figure 1H–N and ablated k-fibers, Figure 2C–F). K-fiber lengths were binned by minute for aggregate analyses.
 
 In k-fibers following ablation, centrosome size was subtracted only when control k-fibers were reincorporated into the pole and the ablated minus-end was no longer visible. To calculate growth rates for k-fiber lengths over time, linear regression was performed using SciPy on binned k-fiber lengths for those with data at time points 0–6 min. One control k-fiber was excluded from growth rate analysis based on these criteria.
 
-## Spatial correlation analysis (Figure 1—figure supplement 6)
+### Spatial correlation analysis (Figure 1—figure supplement 6)
 
 K-fiber positions in spindles were quantified latitudinally and longitudinally, then correlated to length. To approximate the metaphase plate axis, a line of best fit was drawn through kinetochore positions in a cell as approximated by the positions of k-fiber plus-ends. Only the positions of k-fiber plus-ends whose sister k-fibers were also measured were used to calculate spindle axes. In control spindles, the metaphase plate axis corresponded to the spindle width axis. The long spindle axis was determined by drawing a line perpendicular to the metaphase plate axis through the average kinetochore position. In control spindles, this long spindle axis corresponded to the pole-to-pole axis. Distance from each k-fiber’s plus-end to the long axis was measured, and then binned into ‘inner’ k-fibers if ≤2 µm and ‘outer’ if ≥3 µm.
 
 Alignment scores were calculated based on the distance from each k-fiber’s plus-end to the metaphase plate axis, and then given either a negative or positive sign depending on whether the k-fiber was ‘over-aligned’ (see yellow control example in Figure 1—figure supplement 6B) with longer expected lengths or ‘under-aligned’ (see blue control example in Figure 1—figure supplement 6B). K-fibers were categorized as either over- or under-aligned based on the relative positions of their plus- and minus-ends. If both ends were on the same side of the metaphase plate, that is the k-fiber was under-aligned and fully on one side of the metaphase plate, the distance from the plus-end to the metaphase plate was recorded as positive. If the plus- and minus-ends were on opposite sides of the metaphase plate axis, that is the k-fiber was over-aligned and crossing the metaphase plate axis, the distance from the plus-end to the metaphase plate was recorded as negative. A perfectly aligned pair of kinetochores would each have an alignment score of approximately +1. This method of assigning alignment scores was sufficient to accurately categorize all control k-fibers as over- or under-aligned. However, there were rare extreme cases of disorganization in unfocused spindles that miscategorized them 3.77% of the time, for example where a k-fiber was ‘over-aligned’ but both of its ends were on the far side of the metaphase plate. Manually correcting these rare cases yielded correlation coefficients −0.33 for control (unchanged) and −0.17 for unfocused (compared to −0.18 reported in the figure).
 
-## Tracking photobleach marks along k-fibers (Figures 3 and 4)
+### Tracking photobleach marks along k-fibers (Figures 3 and 4)
 
 Spindles of k-fibers with photobleach marks were registered by the tub-GFP channel to account for global spindle translations and rotations. Videos of ablated k-fibers were not registered due to expected translocation of k-fibers stubs after ablation. All videos were trimmed to be isochronous, then flipped, rotated, and cropped so that individual k-fibers with photomarks were latitudinal, with chromosomes on the left and minus-ends on the right. A line with width 5 pixels was drawn along individual k-fibers, and the max-intensity projection along the height at each time point was plotted to generate kymographs. Segmented lines were drawn along the kymographs corresponding to the positions of the kinetochore, photomark, and minus-end or pole over time. The distance between the mark and the minus-end over time was calculated and plotted in Python.
 
-## Cell division analysis (Figure 5)
+### Cell division analysis (Figure 5)
 
 Quantifications of cell division were performed in FIJI. Chromatid separation was quantified by tracking distance between sister chromatids, specifically between the plus-ends of their attached k-fibers, starting the frame before chromatid separation was first observed and ending at the onset of cytokinesis marked by the appearance of a cleavage furrow. To quantify the fraction of chromosome mass per daughter ‘cell’, ‘cell’ outlines were drawn based on phase contrast images, and the overlap of each cell outline with the summed intensity z-projection of chromosome masses was measured.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed in Python using NumPy and SciPy unless otherwise stated. Linear regression and Pearson’s correlation coefficient calculations were performed using SciPy. In the text, whenever we state a significant change or difference, the p-value for those comparisons was less than 0.05. In figures, *p < 0.05, **p < 0.005, and ***p < 0.0005. In the figure legends, we display the exact p-value from every statistical test made. We used a two-tailed Welch’s t-test everywhere unless otherwise stated, since this compares two independent datasets with different standard deviations. Legends include n, the number of individual measurements made, and N, the number of unique cells assayed for each condition.
 
-## Autocorrelation (Figure 3A)
+### Autocorrelation (Figure 3A)
 
-Autocorrelation analysis was performed using Wolfram Mathematica 13.0. The autocorrelation is calculated by the built-in function ‘CorrelationFunction’. By this definition, the autocorrelation of a k-fiber at lag h is ∑i=1n−h(xi−x¯)(xi+h−x¯)/∑i=1n(xi−x¯)2 where xi is k-fiber length at time i and x¯ is the mean of xi . The standard deviation is calculated by the built-in function ‘StandardDeviation’. Statistical significance was performed using the built-in function ‘LocationTest’ at each h.
+Autocorrelation analysis was performed using Wolfram Mathematica 13.0. The autocorrelation is calculated by the built-in function ‘CorrelationFunction’. By this definition, the autocorrelation of a k-fiber at lag $h$ is $\sumi=1n−h(x_{i}−x¯)(x_{i+h}−x¯)/\sumi=1n(x_{i}−x¯)^{2}$ where $x_{i}$ is k-fiber length at time $i$ and $x¯$ is the mean of $x_{i}$ . The standard deviation is calculated by the built-in function ‘StandardDeviation’. Statistical significance was performed using the built-in function ‘LocationTest’ at each $h$.
 
-## Script packages
+### Script packages
 
 All scripts were written in Python using Spyder through Anaconda unless otherwise stated. Pandas was used for data organization, SciPy for statistical analyses, Matplotlib and seaborn for plotting and data visualization, SciKit for image analysis, and NumPy for general use. FIJI was used for video formatting, intensity quantification, kymograph generation, and tracking k-fibers.
 
-## Video preparation
+### Video preparation
 
 Videos show a single spinning disk confocal z-slice imaged over time (Figure 2—video 1, Figure 2—video 2, Figure 3—video 1, Figure 4—video 1, Figure 4—video 2, Figure 5—video 1) or a maximum intensity projection (Figure 1—video 1, Figure 1—video 2, Figure 1—video 3) and were formatted for publication using FIJI and set to play at 10 fps.

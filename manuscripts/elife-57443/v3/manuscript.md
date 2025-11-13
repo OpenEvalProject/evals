@@ -126,7 +126,7 @@
 
 ## Abstract
 
-The neural circuits responsible for animal behavior remain largely unknown. We summarize new methods and present the circuitry of a large fraction of the brain of the fruit fly Drosophila melanogaster . Improved methods include new procedures to prepare, image, align, segment, find synapses in, and proofread such large data sets. We define cell types, refine computational compartments, and provide an exhaustive atlas of cell examples and types, many of them novel. We provide detailed circuits consisting of neurons and their chemical synapses for most of the central brain. We make the data public and simplify access, reducing the effort needed to answer circuit questions, and provide procedures linking the neurons defined by our analysis with genetic reagents. Biologically, we examine distributions of connection strengths, neural motifs on different scales, electrical consequences of compartmentalization, and evidence that maximizing packing density is an important criterion in the evolution of the fly’s brain.
+The neural circuits responsible for animal behavior remain largely unknown. We summarize new methods and present the circuitry of a large fraction of the brain of the fruit fly Drosophila melanogaster. Improved methods include new procedures to prepare, image, align, segment, find synapses in, and proofread such large data sets. We define cell types, refine computational compartments, and provide an exhaustive atlas of cell examples and types, many of them novel. We provide detailed circuits consisting of neurons and their chemical synapses for most of the central brain. We make the data public and simplify access, reducing the effort needed to answer circuit questions, and provide procedures linking the neurons defined by our analysis with genetic reagents. Biologically, we examine distributions of connection strengths, neural motifs on different scales, electrical consequences of compartmentalization, and evidence that maximizing packing density is an important criterion in the evolution of the fly’s brain.
 
 ## Introduction
 
@@ -154,23 +154,642 @@ Previous reconstructions of compartmentalized brains have concentrated on partic
 
 So far lacking are systematic studies of the statistical properties of computational compartments and their connections. Neural circuit motifs have been studied (Song et al., 2005), but only those restricted to small motifs and at most a few cell types, usually in a single portion of the brain. Many of these results are in mammals, leading to questions of whether they also apply to invertebrates, and whether they extend to other regions of the brain. While there have been efforts to build reduced, but still accurate, electrical models of neurons (Marasco et al., 2012), none of these to our knowledge have used the compartment structure of the brain.
 
-## What is included
+### What is included
 
 Table 1 shows the hierarchy of the named brain regions that are included in the hemibrain. Table 2 shows the primary regions that are at least 50% included in the hemibrain sample, their approximate size, and their completion percentage. Our names for brain regions follow the conventions of Ito et al., 2014 with the addition of ‘(L)’ or ‘(R)’ to indicate whether the region (most of which occur on both sides of the fly) has its cell bodies in the left or right, respectively. The mushroom body (Tanaka et al., 2008; Aso et al., 2014) and central complex (Wolff et al., 2015; Wolff and Rubin, 2018) are further divided into finer compartments.
+
+**Table 1.**
+ Brain regions contained and defined in the hemibrain, following the naming conventions of Ito et al., 2014 with the addition of (R) and (L) to specify the side of the soma for that region.Italics indicate master regions not explicitly defined in the hemibrain. Region LA is not included in the volume. The regions are hierarchical, with the more indented regions forming subsets of the less indented. The only exceptions are dACA, lACA, and vACA which are considered part of the mushroom body but are not contained in the master region MB.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>OL(R)</td>
+      <td>Optic lobe</td>
+      <td>CX</td>
+      <td>Central complex</td>
+      <td>LH(R)</td>
+      <td>Lateral horn</td>
+    </tr>
+    <tr>
+      <td>LA</td>
+      <td>lamina</td>
+      <td>FB</td>
+      <td>Fan-shaped body</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ME(R)</td>
+      <td>Medula</td>
+      <td>FBl1</td>
+      <td>Fan-shaped body layer 1</td>
+      <td>SNP(R)/(L)</td>
+      <td>Superior neuropils</td>
+    </tr>
+    <tr>
+      <td>AME(R)</td>
+      <td>Accessory medulla</td>
+      <td>FBl2</td>
+      <td>Fan-shaped body layer 2</td>
+      <td>SLP(R)</td>
+      <td>Superior lateral protocerebrum</td>
+    </tr>
+    <tr>
+      <td>LO(R)</td>
+      <td>Lobula</td>
+      <td>FBl3</td>
+      <td>Fan-shaped body layer 4</td>
+      <td>SIP(R)/(L)</td>
+      <td>Superior intermediate protocerebrum</td>
+    </tr>
+    <tr>
+      <td>LOP(R)</td>
+      <td>Lobula plate</td>
+      <td>FBl4</td>
+      <td>Fan-shaped body layer 4</td>
+      <td>SMP(R)(L)</td>
+      <td>Superior medial protocerebrum</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>FBl5</td>
+      <td>Fan-shaped body layer 5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MB(R)/(L)</td>
+      <td>Mushroom body</td>
+      <td>FBl6</td>
+      <td>Fan-shaped body layer 6</td>
+      <td>INP</td>
+      <td>Inferior neuropils</td>
+    </tr>
+    <tr>
+      <td>CA(R)/(L)</td>
+      <td>Calyx</td>
+      <td>FBl7</td>
+      <td>Fan-shaped body layer 7</td>
+      <td>CRE(R)/(L)</td>
+      <td>Crepine</td>
+    </tr>
+    <tr>
+      <td>dACA(R)</td>
+      <td>Dorsal accessory calyx</td>
+      <td>FBl8</td>
+      <td>Fan-shaped body layer 8</td>
+      <td>RUB(R)/(L)</td>
+      <td>Rubu</td>
+    </tr>
+    <tr>
+      <td>lACA(R)</td>
+      <td>Lateral accessory calyx</td>
+      <td>FBl9</td>
+      <td>Fan-shaped body layer 9</td>
+      <td>ROB(R)</td>
+      <td>Round body</td>
+    </tr>
+    <tr>
+      <td>vACA(R)</td>
+      <td>Ventral accessory calyx</td>
+      <td>EB</td>
+      <td>Ellipsoid body</td>
+      <td>SCL(R)/(L)</td>
+      <td>Superior clamp</td>
+    </tr>
+    <tr>
+      <td>PED(R)</td>
+      <td>Pedunculus</td>
+      <td>EBr1</td>
+      <td>Ellipsoid body zone r1</td>
+      <td>ICL(R)/(L)</td>
+      <td>Inferior clamp</td>
+    </tr>
+    <tr>
+      <td>a’L(R)/(L)</td>
+      <td>Alpha prime lobe</td>
+      <td>EBr2r4</td>
+      <td>Ellipsoid body zone r2r4</td>
+      <td>IB</td>
+      <td>Inferior bridge</td>
+    </tr>
+    <tr>
+      <td>a’1(R)</td>
+      <td>Alpha prime lobe compartment 1</td>
+      <td>EBr3am</td>
+      <td>Ellipsoid body zone r3am</td>
+      <td>ATL(R)/(L)</td>
+      <td>Antler</td>
+    </tr>
+    <tr>
+      <td>a’2(R)</td>
+      <td>Alpha prime lobe compartment 2</td>
+      <td>EBr3d</td>
+      <td>Ellipsoid body zone r3d</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a’3(R)</td>
+      <td>Alpha prime lobe compartment 3</td>
+      <td>EBr3pw</td>
+      <td>Ellipsoid body zone r3pw</td>
+      <td>AL(R)/(L)</td>
+      <td>Antennal lobe</td>
+    </tr>
+    <tr>
+      <td>aL(R)/(L)</td>
+      <td>Alpha lobe</td>
+      <td>EBr5</td>
+      <td>Ellipsoid body zone r5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a1(R)</td>
+      <td>Alpha lobe compartment 1</td>
+      <td>EBr6</td>
+      <td>Ellipsoid body zone r6</td>
+      <td>VMNP</td>
+      <td>Ventromedial neuropils</td>
+    </tr>
+    <tr>
+      <td>a2(R)</td>
+      <td>Alpha lobe compartment 2</td>
+      <td>AB(R)/(L)</td>
+      <td>Asymmetrical body</td>
+      <td>VES(R)/(L)</td>
+      <td>Vest</td>
+    </tr>
+    <tr>
+      <td>a3(R)</td>
+      <td>Alpha lobe compartment 3</td>
+      <td>PB</td>
+      <td>Protocerebral bridge</td>
+      <td>EPA(R)/(L)</td>
+      <td>Epaulette</td>
+    </tr>
+    <tr>
+      <td>gL(R)/(L)</td>
+      <td>Gamma lobe</td>
+      <td>PB(R1)</td>
+      <td>PB glomerulus R1</td>
+      <td>GOR(R)/(L)</td>
+      <td>Gorget</td>
+    </tr>
+    <tr>
+      <td>g1(R)</td>
+      <td>Gamma lobe compartment 1</td>
+      <td>PB(R2)</td>
+      <td>PB glomerulus R2</td>
+      <td>SPS(R)/(L)</td>
+      <td>Superior posterior slope</td>
+    </tr>
+    <tr>
+      <td>g2(R)</td>
+      <td>Gamma lobe compartment 2</td>
+      <td>PB(R3)</td>
+      <td>PB glomerulus R3</td>
+      <td>IPS(R)/(L)</td>
+      <td>Inferior posterior slope</td>
+    </tr>
+    <tr>
+      <td>g3(R)</td>
+      <td>Gamma lobe compartment 3</td>
+      <td>PB(R4)</td>
+      <td>PB glomerulus R4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>g4(R)</td>
+      <td>Gamma lobe compartment 4</td>
+      <td>PB(R5)</td>
+      <td>PB glomerulus R5</td>
+      <td>PENP</td>
+      <td>Pariesophageal neuropils</td>
+    </tr>
+    <tr>
+      <td>g5(R)</td>
+      <td>Gamma lobe compartment 5</td>
+      <td>PB(R6)</td>
+      <td>PB glomerulus R6</td>
+      <td>SAD</td>
+      <td>Saddle</td>
+    </tr>
+    <tr>
+      <td>b’L(R)/(L)</td>
+      <td>Beta prime lobe</td>
+      <td>PB(R7)</td>
+      <td>PB glomerulus R7</td>
+      <td>AMMC</td>
+      <td>Antennal mechanosensory and motor center</td>
+    </tr>
+    <tr>
+      <td>b’1(R)</td>
+      <td>Beta prime lobe compartment 1</td>
+      <td>PB(R8)</td>
+      <td>PB glomerulus R8</td>
+      <td>FLA(R)</td>
+      <td>Flange</td>
+    </tr>
+    <tr>
+      <td>b’2(R)</td>
+      <td>Beta prime lobe compartment 2</td>
+      <td>PB(R9)</td>
+      <td>PB glomerulus R9</td>
+      <td>CAN(R)</td>
+      <td>Cantle</td>
+    </tr>
+    <tr>
+      <td>bL(R)/(L)</td>
+      <td>Beta lobe</td>
+      <td>PB(L1)</td>
+      <td>PB glomerulus L1</td>
+      <td>PRW</td>
+      <td>prow</td>
+    </tr>
+    <tr>
+      <td>b1(R)</td>
+      <td>Beta lobe compartment 1</td>
+      <td>PB(L2)</td>
+      <td>PB glomerulus L2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>b2(R)</td>
+      <td>Beta lobe compartment 2</td>
+      <td>PB(L3)</td>
+      <td>PB glomerulus L3</td>
+      <td>GNG</td>
+      <td>Gnathal ganglia</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>PB(L4)</td>
+      <td>PB glomerulus L4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LX(R)/(L)</td>
+      <td>Lateral complex</td>
+      <td>PB(L5)</td>
+      <td>PB glomerulus L5</td>
+      <td colspan="2">Major Fiber bundles</td>
+    </tr>
+    <tr>
+      <td>BU(R)/(L)</td>
+      <td>Bulb</td>
+      <td>PB(L6)</td>
+      <td>PB glomerulus L6</td>
+      <td>AOT(R)</td>
+      <td>Anterior optic tract</td>
+    </tr>
+    <tr>
+      <td>LAL(R)/(L)</td>
+      <td>Lateral accessory lobe</td>
+      <td>PB(L7)</td>
+      <td>PB glomerulus L7</td>
+      <td>GC</td>
+      <td>Great commissure</td>
+    </tr>
+    <tr>
+      <td>GA(R)</td>
+      <td>Gall</td>
+      <td>PB(L8)</td>
+      <td>PB glomerulus L8</td>
+      <td>GF(R)</td>
+      <td>Giant Fiber (single neuron)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>PB(L9)</td>
+      <td>PB glomerulus L9</td>
+      <td>mALT(R)/(L)</td>
+      <td>Medial antennal lobe tract</td>
+    </tr>
+    <tr>
+      <td>VLNP(R)</td>
+      <td>Ventrolateral neuropils</td>
+      <td>NO</td>
+      <td>Noduli</td>
+      <td>POC</td>
+      <td>Posterior optic commissure</td>
+    </tr>
+    <tr>
+      <td>AOTU(R)</td>
+      <td>Anterior optic tubercle</td>
+      <td>NO1(R)/(L)</td>
+      <td>Nodulus 1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AVLP(R)</td>
+      <td>Anterior ventrolateral protocerebrum</td>
+      <td>NO2(R)/(L)</td>
+      <td>Nodulus 2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PVLP(R)</td>
+      <td>Posterior ventrolateral protocerebrum</td>
+      <td>NO3(R)/(L)</td>
+      <td>Nodulus 3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PLP(R)</td>
+      <td>Posterior lateral cerebrum</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WED(R)</td>
+      <td>Wedge</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Regions with ≥50% included in the hemibrain, sorted by completion percentage.The approximate percentage of the region included in the hemibrain volume is shown as ‘%inV’. ‘T-bars’ gives a rough estimate of the size of the region. ‘comp%’ is the fraction of the post-synaptic densities (PSDs) contained in the brain region for which both the PSD and the corresponding T-bar are in neurons marked ‘Traced’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>%inV</th>
+      <th>T-bars</th>
+      <th>comp%</th>
+      <th>Name</th>
+      <th>%inV</th>
+      <th>T-bars</th>
+      <th>comp%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PED(R)</td>
+      <td>100%</td>
+      <td>54805</td>
+      <td>85%</td>
+      <td>aL(R)</td>
+      <td>100%</td>
+      <td>95375</td>
+      <td>84%</td>
+    </tr>
+    <tr>
+      <td>b’L(R)</td>
+      <td>100%</td>
+      <td>67695</td>
+      <td>83%</td>
+      <td>bL(R)</td>
+      <td>100%</td>
+      <td>71112</td>
+      <td>83%</td>
+    </tr>
+    <tr>
+      <td>gL(R)</td>
+      <td>100%</td>
+      <td>176785</td>
+      <td>83%</td>
+      <td>a’L(R)</td>
+      <td>100%</td>
+      <td>39091</td>
+      <td>82%</td>
+    </tr>
+    <tr>
+      <td>EB</td>
+      <td>100%</td>
+      <td>164286</td>
+      <td>81%</td>
+      <td>bL(L)</td>
+      <td>56%</td>
+      <td>58799</td>
+      <td>81%</td>
+    </tr>
+    <tr>
+      <td>NO</td>
+      <td>100%</td>
+      <td>36722</td>
+      <td>79%</td>
+      <td>b’L(L)</td>
+      <td>88%</td>
+      <td>57802</td>
+      <td>78%</td>
+    </tr>
+    <tr>
+      <td>gL(L)</td>
+      <td>55%</td>
+      <td>133256</td>
+      <td>76%</td>
+      <td>CA(R)</td>
+      <td>100%</td>
+      <td>69517</td>
+      <td>73%</td>
+    </tr>
+    <tr>
+      <td>AB(R)</td>
+      <td>100%</td>
+      <td>2734</td>
+      <td>65%</td>
+      <td>aL(L)</td>
+      <td>51%</td>
+      <td>44803</td>
+      <td>62%</td>
+    </tr>
+    <tr>
+      <td>FB</td>
+      <td>100%</td>
+      <td>451031</td>
+      <td>62%</td>
+      <td>AL(R)</td>
+      <td>83%</td>
+      <td>501004</td>
+      <td>59%</td>
+    </tr>
+    <tr>
+      <td>AB(L)</td>
+      <td>100%</td>
+      <td>572</td>
+      <td>57%</td>
+      <td>PB</td>
+      <td>100%</td>
+      <td>46557</td>
+      <td>55%</td>
+    </tr>
+    <tr>
+      <td>AME(R)</td>
+      <td>100%</td>
+      <td>6045</td>
+      <td>51%</td>
+      <td>BU(R)</td>
+      <td>100%</td>
+      <td>9385</td>
+      <td>46%</td>
+    </tr>
+    <tr>
+      <td>CRE(R)</td>
+      <td>100%</td>
+      <td>137946</td>
+      <td>40%</td>
+      <td>AOTU(R)</td>
+      <td>100%</td>
+      <td>92578</td>
+      <td>38%</td>
+    </tr>
+    <tr>
+      <td>LAL(R)</td>
+      <td>100%</td>
+      <td>234388</td>
+      <td>38%</td>
+      <td>SMP(R)</td>
+      <td>100%</td>
+      <td>510937</td>
+      <td>34%</td>
+    </tr>
+    <tr>
+      <td>PVLP(R)</td>
+      <td>100%</td>
+      <td>475219</td>
+      <td>30%</td>
+      <td>ATL(R)</td>
+      <td>100%</td>
+      <td>25472</td>
+      <td>29%</td>
+    </tr>
+    <tr>
+      <td>SPS(R)</td>
+      <td>100%</td>
+      <td>253818</td>
+      <td>29%</td>
+      <td>ATL(L)</td>
+      <td>100%</td>
+      <td>28153</td>
+      <td>29%</td>
+    </tr>
+    <tr>
+      <td>VES(R)</td>
+      <td>84%</td>
+      <td>157168</td>
+      <td>29%</td>
+      <td>IB</td>
+      <td>100%</td>
+      <td>200447</td>
+      <td>28%</td>
+    </tr>
+    <tr>
+      <td>CRE(L)</td>
+      <td>90%</td>
+      <td>132656</td>
+      <td>28%</td>
+      <td>SIP(R)</td>
+      <td>100%</td>
+      <td>187493</td>
+      <td>26%</td>
+    </tr>
+    <tr>
+      <td>BU(L)</td>
+      <td>52%</td>
+      <td>7014</td>
+      <td>26%</td>
+      <td>GOR(R)</td>
+      <td>100%</td>
+      <td>27140</td>
+      <td>26%</td>
+    </tr>
+    <tr>
+      <td>WED(R)</td>
+      <td>100%</td>
+      <td>232898</td>
+      <td>25%</td>
+      <td>SMP(L)</td>
+      <td>100%</td>
+      <td>460784</td>
+      <td>26%</td>
+    </tr>
+    <tr>
+      <td>EPA(R)</td>
+      <td>100%</td>
+      <td>31438</td>
+      <td>26%</td>
+      <td>PLP(R)</td>
+      <td>100%</td>
+      <td>429949</td>
+      <td>26%</td>
+    </tr>
+    <tr>
+      <td>AVLP(R)</td>
+      <td>100%</td>
+      <td>630538</td>
+      <td>23%</td>
+      <td>ICL(R)</td>
+      <td>100%</td>
+      <td>202549</td>
+      <td>23%</td>
+    </tr>
+    <tr>
+      <td>SLP(R)</td>
+      <td>100%</td>
+      <td>487795</td>
+      <td>23%</td>
+      <td>LO(R)</td>
+      <td>64%</td>
+      <td>855251</td>
+      <td>22%</td>
+    </tr>
+    <tr>
+      <td>SCL(R)</td>
+      <td>100%</td>
+      <td>189569</td>
+      <td>22%</td>
+      <td>GOR(L)</td>
+      <td>60%</td>
+      <td>19558</td>
+      <td>21%</td>
+    </tr>
+    <tr>
+      <td>LH(R)</td>
+      <td>100%</td>
+      <td>231662</td>
+      <td>19%</td>
+      <td>CAN(R)</td>
+      <td>68%</td>
+      <td>6512</td>
+      <td>16%</td>
+    </tr>
+  </tbody>
+</table>
 
 Appendix 1—table 6 provide the list of identified neuron types and their naming schemes. These include newly identified sensory inputs and motor outputs.
 
 The nature of the proofreading process allows us to improve the data even after their initial publication. Our initial data release was version v1.0 (Xu et al., 2020b). Version v1.1 is now available, including improvements such as better accuracy, more consistent cell naming and typing, and inclusion of anatomical names for central complex neurons. The old version(s) remain online and available, to allow reproducibility of older analyses, but we strongly recommend all new analyses use the latest version. The analyses in this article, and in the corresponding articles on the mushroom body and central complex, are based on version v1.1, unless otherwise noted.
 
-## What is not included
+### What is not included
 
 This research focused on the neurons of the brain and the chemical synapses between them. Every step in our process, from staining and sample preparation through segmentation and proofreading, has been optimized with this goal in mind. While neurons and their chemical synapses are critical to brain operation, they are far from the full story. Other contributors, known to be important, could not be included in our study, largely for technical reasons. Among these are gap junctions, glia, and structures internal to the cell such as mitochondria. Gap junctions, or electrical connections between neurons, are difficult to reliably detect by FIB-SEM under the best of circumstances and not detectable at the low (for EM) resolution needed to complete this study in a reasonable amount of time. Their contribution to the connectome will need to be established through other means - see the section on future research. Glial cells were difficult to segment, due to both staining differences and convoluted morphologies. We identified the volumes where they exist (a glia ’mask’, which allows these regions to be color-coded when viewed in NeuroGlancer) but did not separate them into cells. Structures internal to the neurons, except for synapses, are not considered here even though many are visible in our EM preparation. The most obvious example is mitochondria. Again, we have identified many of them so we could evaluate their effect on segmentation, but they are not included in our connectome. Finally, autapses (synapses from a neuron onto itself) are known to exist in Drosophila, but are sufficiently rare that they fall well below the rate of false positives in our automated synapse detection. Therefore most of the putative autapses are false positives, and we do not include them in our connectivity data.
 
-## Differences from connectomes of vertebrates
+### Differences from connectomes of vertebrates
 
 Most accounts of neurobiology define the operation of the mammalian nervous system with, at most, only passing reference to invertebrate brains. Fly (or other insect) nervous systems differ from those of vertebrates in several aspects (Meinertzhagen, 2016b). Some main differences include:
 
-## Connectome reconstruction
+### Connectome reconstruction
 
 Producing a connectome comprising reconstructed neurons and the chemical synapses between them required several steps. The first step, preparing a fly brain and imaging half of its center, produced a dataset consisting of 26 teravoxels of data, each with 8 bits of grayscale information. We applied numerous machine-learning algorithms and over 50 person-years of proofreading effort over ≈2 calendar years to extract a variety of more compact and useful representations, such as neuron skeletons, synapse locations, and connectivity graphs. These are both more useful and much smaller than the raw grayscale data. For example, the connectivity could be reasonably summarized by a graph with ≈25,000 nodes and ≈3 million edges. Even when the connections were assigned to different brain regions, such a graph took only 26 MB, still large but roughly a million fold reduction in data size.
 
@@ -178,7 +797,7 @@ Many of the supporting methods for this reconstruction have been recently publis
 
 Each of these is explained in more detail in the following sections and, where necessary, in the appendix. The companion papers are ‘The connectome of the Drosophila melanogaster mushroom body: implications for function’ (Li et al., 2020) and ‘A complete synaptic-resolution connectome of the Drosophila melanogaster central complex’ by Jayaraman, et al.
 
-## Image stack collection
+### Image stack collection
 
 The first steps, fixing and staining the specimen, have been accomplished taking advantage of three new developments. These improved methods allow us to fix and stain a full fly’s brain but nevertheless recover neurons as round profiles with darkly stained synapses, suitable for machine segmentation and automatic synapse detection. We started with a 5-day-old female of wild-type Canton S strain G1 x w1118, raised on a 12 hr day/night cycle. 1.5 hr after lights-on, we used a custom-made jig to microdissect the brain, which was then fixed and embedded in Epon, an epoxy resin. We then enhanced the electron contrast by staining with heavy metals, and progressively lowered the temperature during dehydration of the sample. Collectively, these methods optimize morphological preservation, allow full-brain preparation without distortion (unlike fast freezing methods), and provide increased staining intensity that speeds the rate of FIB-SEM imaging (Lu et al., 2019).
 
@@ -186,7 +805,7 @@ The hemibrain sample is roughly 250 × 250 × 250 μm, larger than we can FIB-SE
 
 Connectome studies come with clearly defined resolution requirements – the finest neurites must be traceable by humans and should be reliably segmented by automated algorithms (Januszewski et al., 2018). In Drosophila, the very finest neural processes are usually 50 nm but can be as little as 15 nm (Meinertzhagen, 2016a). This fundamental biological dimension determines the minimum isotropic resolution requirements for tracing neural circuits. To meet the demand for high isotropic resolution and large volume imaging, we chose the FIB-SEM imaging platform, which offers high isotropic resolution (<10 nm in x, y, and z), minimal artifacts, and robust image alignment. The high-resolution and isotropic dataset possible with FIB-SEM has substantially expedited the Drosophila connectome pipeline. Compared to serial-section imaging, with its sectioning artifacts and inferior Z-axis resolution, FIB-SEM offers high-quality image alignment, a smaller number of artifacts, and isotropic resolution. This allows higher quality automated segmentation and makes manual proofreading and correction easier and faster.
 
-At the beginning, deficiencies in imaging speed and system reliability of any commercial FIB-SEM system capped the maximum possible image volume to less than 0.01% of a full fly brain, problems that persist even now. To remedy them, we redesigned the entire control system, improved the imaging speed more than 10x, and created innovative solutions addressing all known failure modes, which thereby expanded the practical imaging volume of conventional FIB-SEM by more than four orders of magnitude from 103μm3 to 3⋅107 μm3, while maintaining an isotropic resolution of 8 × 8 × 8 nm voxels (Xu et al., 2017; Xu et al., 2019). In order to overcome the aberration of a large field of view (up to 300 μm wide), we developed a novel tiling approach without sample stage movement, in which the imaging parameters of each tile are individually optimized through an in-line auto focus routine without overhead (Xu et al., 2020a). After numerous improvements, we have transformed the conventional FIB-SEM from a laboratory tool that is unreliable for more than a few days of imaging to a robust volume EM platform with effective long-term reliability, able to perform years of continuous imaging without defects in the final image stack. Imaging time, rather than FIB-SEM reliability, is now the main impediment to obtaining even larger volumes.
+At the beginning, deficiencies in imaging speed and system reliability of any commercial FIB-SEM system capped the maximum possible image volume to less than 0.01% of a full fly brain, problems that persist even now. To remedy them, we redesigned the entire control system, improved the imaging speed more than 10x, and created innovative solutions addressing all known failure modes, which thereby expanded the practical imaging volume of conventional FIB-SEM by more than four orders of magnitude from $10^{3}\mum^{3}$ to $3⋅10^{7} \mum^{3}$, while maintaining an isotropic resolution of 8 × 8 × 8 nm voxels (Xu et al., 2017; Xu et al., 2019). In order to overcome the aberration of a large field of view (up to 300 μm wide), we developed a novel tiling approach without sample stage movement, in which the imaging parameters of each tile are individually optimized through an in-line auto focus routine without overhead (Xu et al., 2020a). After numerous improvements, we have transformed the conventional FIB-SEM from a laboratory tool that is unreliable for more than a few days of imaging to a robust volume EM platform with effective long-term reliability, able to perform years of continuous imaging without defects in the final image stack. Imaging time, rather than FIB-SEM reliability, is now the main impediment to obtaining even larger volumes.
 
 In our study here, the Drosophila 'hemibrain', 13 consecutive hot-knifed slabs were imaged using two customized enhanced FIB-SEM systems, in which an FEI Magnum FIB column was mounted at 90° upon a Zeiss Merlin SEM. After data collection, streaking artifacts generated by secondary electrons along the FIB milling direction were computationally removed using a mask in the frequency domain. The image stacks were then aligned using a customized version of the software platform developed for serial section transmission electron microscopy (Zheng et al., 2018; Khairy et al., 2018), followed by binning along the z-axis to form the final 8 × 8 × 8 nm3 voxel datasets. Milling thickness variations in the aligned series were compensated using a modified version of the method described by Hanslovsky et al., 2017, with the absolute scale calibrated by reference to the MicroCT images.
 
@@ -198,7 +817,7 @@ The series of flattened slabs was then stitched using a custom method for large-
 
 **Figure 2.:** A vertical section at the level of the fan-shaped body is shown. Colors are arbitrary and added to the monochrome data to show brain regions, as defined below. Scale bar 50 μm.
 
-## Automated segmentation
+### Automated segmentation
 
 Computational reconstruction of the image data was performed using flood-filling networks (FFNs) trained on roughly five billion voxels of volumetric ground truth contained in two tabs of the hemibrain dataset (Januszewski et al., 2018). Initially, the FFNs generalized poorly to other tabs of the hemibrain, whose image content had different appearances. Therefore, we adjusted the image content to be more uniform using cycle-consistent generative adversarial networks (CycleGANs) (Zhu et al., 2017). Specifically, ‘generator’ networks were trained to alter image content such that a second ‘discriminator’ network was unable to distinguish between image patches sampled from, for example, a tab that contained volumetric training data versus a tab that did not. A cycle-consistency constraint was used to ensure that the image transformations preserved ultrastructural detail. The improvement is illustrated in Figure 3. Overall, this allowed us to use the training data from just two slabs, as opposed to needing training data for each slab.
 
@@ -210,7 +829,7 @@ FFNs were applied to the CycleGAN-normalized data in a coarse-to-fine manner at 
 
 We evaluated the accuracy of the FFN segmentation of the hemibrain using metrics for expected run length (ERL) and false merge rate (Januszewski et al., 2018). The base segmentation (i.e. the automated reconstruction prior to agglomeration) achieved an ERL of 163 μm with a false merge rate of 0.25%. After (automated) agglomeration, run length increased to 585 μm but with a false merge rate of 27.6% (i.e. nearly 30% of the path length was contained in segments with at least one merge error). We also evaluated a subset of neurons in the volume, ∼500 olfactory PNs and mushroom body KCs chosen to roughly match the evaluation performed in Li et al., 2019 which yielded an ERL of 825 μm at a 15.9% false merge rate.
 
-## Synapse prediction
+### Synapse prediction
 
 Accurate synapse identification is central to our analysis, given that synapses form both a critical component of a connectome and are required for prioritizing and guiding the proofreading effort. Synapses in Drosophila are typically polyadic, with a single presynaptic site (a T-bar) contacted by multiple receiving dendrites (most with PSDs) as shown in Figure 4A. Initial synapse prediction revealed that there are over 9 million T-bars and 60 million PSDs in the hemibrain. Manually validating each one, assuming a rate of 1000 connections annotated per trained person, per day, would have taken more than 230 working years. Given this infeasibility, we developed machine learning approaches to predict synapses as detailed below. The results of our prediction are shown in Figure 4B, where the predicted synapse sites clearly delineate many of the fly brain regions.
 
@@ -228,9 +847,9 @@ As an independent check on synapse quality, we also trained a separate classifie
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig5-v3.jpg)
 
-**Figure 5.:** A) for T-bars, and panel (B) for synapses as a whole including the identification of PSDs.T-bar identification is better than PSD identification since this organelle is both more distinct and typically occurs in larger neurites. Each dot is one brain region. The size of the dot is proportional to the volume of the region. Humans proofreaders typically achieve 0.9 precision/recall on T-bars and 0.8 precision/recall on PSDs, indicated in purple. Data available in Figure 5—source datas 1–2.Figure 5—source data 1.Figure 5A.Column A: precision; column B: recall; column C: region size.Figure 5—source data 2.Figure 5B.Column A: precision; column B: recall; column C: region size.
+**Figure 5.:** T-bar identification is better than PSD identification since this organelle is both more distinct and typically occurs in larger neurites. Each dot is one brain region. The size of the dot is proportional to the volume of the region. Humans proofreaders typically achieve 0.9 precision/recall on T-bars and 0.8 precision/recall on PSDs, indicated in purple. Data available in Figure 5—source datas 1–2.
 
-## Proofreading
+### Proofreading
 
 Since machine segmentation is not perfect, we made a concerted effort to fix the errors remaining at this stage by several passes of human proofreading. Segmentation errors can be roughly grouped into two classes - ‘false merges’, in which two separate neurons are mistakenly merged together, and ‘false splits’, in which a single neuron is mistakenly broken into several segments. Enabled by advances in visualization and semi-automated proofreading using our Neu3 tool (Hubbard et al., 2020), we first addressed large false mergers. A human examined each putative neuron and determined if it had an unusual morphology suggesting that a merge might have occurred, a task still much easier for humans than machines. If judged to be a false merger, the operator identified discrete points that should be on separate neurons. The shape was then resegmented in real time allowing users to explore other potential corrections. Neurons with more complex problems were then scheduled to be re-checked, and the process repeated until few false mergers remained.
 
@@ -238,7 +857,7 @@ In the next phase, the largest remaining pieces were merged into neuron shapes u
 
 Finally, to achieve the highest reconstruction completeness possible in the time allotted, and to enable confidence in weaker neuronal pathways, proofreaders connected remaining isolated fragments (segments) to already constructed neurons, using NeuTu (Zhao et al., 2018) and Neu3 (Hubbard et al., 2020). The fragments that would result in largest connectivity changes were considered first, exploiting automatic guesses through focused proofreading where possible. Since proofreading every small segment is still prohibitive, we tried to ensure a basic level of completeness throughout the brain with special focus in regions of particular biological interest such as the central complex and mushroom body.
 
-## Defining brain regions
+### Defining brain regions
 
 In a parallel effort to proofreading, the sample was annotated with discrete brain regions. Our progression in mapping the cells and circuits of the fly’s brain bears formal parallels to the history of mapping the earth, with many territories that are named and with known circuits, and others that still lack all or most of these. For the hemibrain dataset, the regions are based on the brain atlas in Ito et al., 2014. The dataset covers most of the right hemisphere of the brain, except the optic lobe (OL), periesophageal neuropils (PENP) and gnathal ganglia (GNG), as well as part of the left hemisphere (Table 2). It covers about 36% of all synaptic neuropils by volume, and 54% of the central brain neuropils. We examined innervation patterns, synapse distribution, and connectivity of reconstructed neurons to define the neuropils as well as their boundaries on the dataset. We also made necessary, but relatively minor, revisions to some boundaries by considering anatomical features that had not been known during the creation of previous brain maps, while following the existing structural definitions (Ito et al., 2014). We also used information from synapse point clouds, a predicted glial mask, and a predicted fiber bundle mask to determine boundaries of the neuropils (Figure 6A). The brain regions of the fruit fly (Figure 6, B and C) include synaptic neuropils and non-synaptic fiber bundles. The non-synaptic cell body layer on the brain surface, which contains cell bodies of the neurons and some glia, surrounds these structures. The synaptic neuropils can be further categorized into two groups: delineated and diffuse neuropils. The delineated neuropils have distinct boundaries throughout their surfaces, often accompanied by glial processes, and have clear internal structures in many cases. They include the antennal lobe (AL), bulb (BU), as well as the neuropils in the optic lobe (OL), mushroom body (MB), and central complex (CX). Remaining are the diffuse neuropils, sometimes referred to as terra incognita, since most have been less investigated than the delineated neuropils.
 
@@ -246,7 +865,7 @@ In a parallel effort to proofreading, the sample was annotated with discrete bra
 
 **Figure 6.:** (A) A vertical section of the hemibrain dataset with synapse point clouds (white), predicted glial tissue (green), and predicted fiber bundles (magenta). (B) Grayscale image overlaid with segmented neuropils at the same level as (A). (C) A frontal view of the reconstructed neuropils. Scale bar: (A, B) 50 μm.
 
-## Diffuse (terra incognita) neuropils
+#### Diffuse (terra incognita) neuropils
 
 In the previous brain atlas of 2014, boundaries of some terra incognita neuropils were somewhat arbitrarily determined, due to a lack of precise information of the landmark neuronal structures used for the boundary definition. In the hemibrain data, we adjusted these boundaries to trace more faithfully the contours of the structures that are much better clarified by the EM-reconstructed data. Examples include the lateral horn (LH), ventrolateral neuropils (VLNP), and the boundary between the crepine (CRE) and lateral accessory lobe (LAL). The LH has been defined as the primary projection target of the olfactory projection neurons (PNs) from the antennal lobe (AL) via several antennal lobe tracts (ALTs) (Ito et al., 2014; Pereanu et al., 2010). The boundary between the LH and its surrounding neuropils is barely visible with synaptic immunolabeling such as nc82 or predicted synapse point clouds, as the synaptic contrast in these regions is minimal. The olfactory PNs can be grouped into several classes, and the projection sites of the uniglomerular PNs that project through the medial ALT (mALT), the thickest fiber bundle between the AL and LH, give the most conservative and concrete boundary of the ‘core’ LH (Figure 7A). Multiglomerular PNs, on the other hand, project to much broader regions, including the volumes around the core LH (Figure 7B). These regions include areas which are currently considered parts of the superior lateral protocerebrum (SLP) and posterior lateral protocerebrum (PLP). Since the ‘core’ LH roughly approximates the shape of the traditional LH, and the boundaries given by the multiglomerular PNs are rather diffused, in this study we assumed the core to be the LH itself. Of course, the multiglomerular PNs convey olfactory information as well, and therefore the neighboring parts of the SLP and PLP to some extent also receive inputs from the antennal lobe. These regions might be functionally distinct from the remaining parts of the SLP or PLP, but they are not explicitly separated from those neuropils in this study.
 
@@ -258,7 +877,7 @@ The VLNP is located in the lateral part of the central brain and receives extens
 
 In the previous paper (Ito et al., 2014), the boundary between the CRE and LAL was defined as the line roughly corresponding to the posterior-ventral surface of the MB lobes, since no other prominent anatomical landmarks were found around this region. In this dataset, we found several glomerular structures surrounding the boundary both in the CRE and LAL. These structures include the gall (GA), rubus (RUB), and round body (ROB). Most of them turned out to be projection targets of several classes of central complex neurons, implying the ventral CRE and dorsal LAL are closely related in their function. We re-determined the boundary so that each of the glomerular structures would not be divided into two, while keeping the overall architecture and definition of the CRE and LAL. The updated boundary passes between the dorsal surface of the GA and the ventral edge of the ROB. Other glomerular structures, including the RUB, are included in the CRE.
 
-## Delineated neuropils
+#### Delineated neuropils
 
 Substructures of the delineated neuropils have also been added to the brain region map in the hemibrain. The asymmetrical bodies (AB) were added as the fifth independent neuropil of the CX (Wolff and Rubin, 2018). The AB is a small synaptic volume adjacent to the ventral surface of the fan-shaped body (FB) that has historically been included in the FB (Ito et al., 2014). The AB has been described as a Fasciclin II (FasII)-positive structure that exhibits left-right structural asymmetry by Pascual et al., 2004, who reported that most flies have their AB only in the right hemisphere, while a small proportion (7.6%) of wild-type flies have their AB on both sides. In the hemibrain dataset, the pair of ABs is situated on both sides of the midline, but the left AB is notably smaller than the right AB (right: 1679 μm3, left: 526 μm3), still showing an obvious left-right asymmetry. The asymmetry is consistent with light microscopy data (Wolff and Rubin, 2018), though the absolute sizes differ, with the light data showing averages (n = 21) of 522 μm3 for the right and 126 μm3 on the left. The AB is especially strongly connected to the neighboring neuropil, the FB, by neurons including vDeltaA_a (anatomical name AF in Wolff and Rubin, 2018), while it also houses both pre- and postsynaptic terminals of the CX output neurons such as the subset of FS4A and FS4B neurons that project to AB. These anatomical observations imply that the AB is a ventralmost annexed part of the FB, although this possibility is neither developmentally nor phylogenetically proven.
 
@@ -272,23 +891,23 @@ The FB is subdivided into nine horizontal layers (FBl1-9) (Figure 7E and F) as a
 
 The EB is likewise subdivided into zones by the innervating patterns of the EB ring neurons, the most prominent class of neurons innervating the EB. The ring neurons have six subtypes, ER1-ER6, and each projects to specific zones of the EB. Among them, the regions innervated by ER2 and ER4 are mutually exclusive but highly intermingled, so these regions are grouped together into a single zone (EBr2r4). ER3 has the most neurons among the ring neuron subtypes and is further grouped into five subclasses (ER3a, d, m, p, and w). While each subclass projects to a distinct part of the EB, the innervation patterns of the subclasses ER3a and ER3m, and also ER3p and ER3w, are very similar to each other. The region innervated by ER3 is, therefore, subdivided into three zones, including EBr3am, EBr3pw, and EBr3d. Along with the other three zones, EBr1, EBr5, and EBr6 (innervated by ER1, ER5, and ER6), the entire EB is subdivided into seven non-overlapping zones (Figure 7G). Unlike other zones, EBr6 is innervated only sparsely by the ER6 cells, with the space filled primarily by synaptic terminals of other neuron types, including the extrinsic ring neurons (ExR). Omoto et al., 2017 segmented the EB into five domains (EBa, EBoc, EBop, EBic, EBip) by the immunolabeling pattern of DN-cadherin, and each type of the ring neurons may innervate more than one domain in the EB. Our results show that the innervation pattern of each ring neuron subtype is highly compartmentalized at the EM level and the entire neuropil can be sufficiently subdivided into zones based purely on the neuronal morphologies. The neuropil may be subdivided differently if other neuron types, such as the extrinsic ring neurons (ExR) (Omoto et al., 2018), are recruited as landmarks.
 
-## Quality of the brain region boundaries
+### Quality of the brain region boundaries
 
 Since many of the terra incognita neuropils are not clearly partitioned from each other by solid boundaries such as glial walls, it is important to evaluate if the current boundaries reflect anatomical and functional compartments of the brain. To check our definitions, which are mostly based on morphology, we compute metrics for each boundary between any two adjacent neuropil regions. The first is the area of each boundary, in square microns, as shown in Figure 8A. The map shows results for brain regions that are over 75% in the hemibrain region, restricted to right regions with exception to the asymmetric AB(L). By restricting our analysis to the right part of the hemibrain, we hopefully minimize the effect of smaller, traced-but-truncated neuron fragments on our metric.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig8-v3.jpg)
 
-**Figure 8.:** (A) Areas of the boundaries (in square microns) between adjacent neuropils, indicated on a log scale. (B) The number of excess crossings normalized by the area of neuropil boundary. Larger dots indicate a more uncertain boundary. Data available in Figure 8—source data 1.Figure 8—source data 1.Figure 8.Column A: index number; column B: first ROI name; column C: second ROI name; column D: boundary area in square microns; column E: number of neurons crossings; column F: number of distinct neurons that cross; column G: (crossings - number of neurons) per area.
+**Figure 8.:** (A) Areas of the boundaries (in square microns) between adjacent neuropils, indicated on a log scale. (B) The number of excess crossings normalized by the area of neuropil boundary. Larger dots indicate a more uncertain boundary. Data available in Figure 8—source data 1.
 
-Next, for each boundary, we compute the number of ‘excess’ neuron crossings by traced neurons, where excess crossings are defined as 0 for a neuron that does not cross the boundary, and n-1 for a neuron crosses the same boundary n times. There is no contribution to the metric from neurons that cross a boundary once, since most such crossings are inevitable no matter where the boundary is placed. Figure 8B shows the number of excess crossings normalized by the area of boundary. A bigger dot indicates a potentially less well-defined boundary.
+Next, for each boundary, we compute the number of ‘excess’ neuron crossings by traced neurons, where excess crossings are defined as 0 for a neuron that does not cross the boundary, and $n-1$ for a neuron crosses the same boundary n times. There is no contribution to the metric from neurons that cross a boundary once, since most such crossings are inevitable no matter where the boundary is placed. Figure 8B shows the number of excess crossings normalized by the area of boundary. A bigger dot indicates a potentially less well-defined boundary.
 
 We spot checked many of the instances and in general note that the brain regions with high excess crossings per area, such as those in SNP, INP and VLNP, tend to have less well-defined boundaries. In particular, the boundaries at SMP/CRE, CRE/LAL, SMP/SIP, and SIP/SLP have worse scores, indicating these boundaries may not reflect actual anatomical and functional segregation of the neuropils. These brain regions were defined based on the arborization patterns of characteristic neuron types, but because neurons in the terra incognita neuropils tend to be rather heterogeneous, there are many other neuron types that do not follow these boundaries. The boundary between the FB and the AB also has a high excess crossing score, suggesting the AB is tightly linked to the neighboring FB.
 
-## Insights for a whole-brain remapping
+#### Insights for a whole-brain remapping
 
 The current brain regions based on Ito et al., 2014 contain a number of arbitrary determinations of brain regions and their boundaries in the terra incognita neuropils. In this study, we tried to solidify the ambiguous boundaries as much as possible using the information from the reconstructed neurons. However, large parts of the left hemisphere and the subesophageal zone (SEZ) are missing from the hemibrain dataset, and neurons innervating these regions are not sufficiently reconstructed. This incompleteness of the dataset is the main reason that we did not alter the previous map drastically and kept all the existing brain regions even if their anatomical and functional significance is not obvious. Once a complete EM volume of the whole fly brain is imaged and most of its 100,000 neurons are reconstructed, the entire brain can be re-segmented from scratch with more comprehensive anatomical information. Arbitrary or artificial neuropil boundaries will thereby be minimized, if not avoided, in a new brain map. Anatomy-based neuron segmentation strategies such as NBLAST may be used as neutral methods to revise the neuropils and their boundaries. Any single method, however, is not likely to produce consistent boundaries throughout the brain, especially in the terra incognita regions. It may be necessary to use different methods and criteria to segment the entire brain into reasonable brain regions. Such a new map would need discussion in a working group, and approval from the community in advance (as did the previous map [Ito et al., 2014]), insofar as it would replace the current map and therefore require a major revision of the neuron mapping scheme.
 
-## Cell type classification
+### Cell type classification
 
 Defining cell types for groups of similar neurons is a time-honored means to help to understand the anatomical and functional properties of a circuit. Presumably, neurons of the same type have similar circuit roles. However, the definition of what is a distinct cell type and the exact delineation between one cell type and another remains inherently subjective and represents a classic taxonomic challenge, pitting ‘lumpers’ against ‘splitters’. Therefore, despite our best efforts, we recognize that our typing of cells may not be identical to that proposed by other experts. We expect future revisions to cell type classification, especially as additional dense connectome data become available.
 
@@ -304,7 +923,7 @@ Based on our previous definition of cell type, many neurons exhibit a unique mor
 
 It is possible to provide coarser groupings of neurons. For instance, most cell types are grouped by their cell body fiber representing a distinct clonal unit, which we discuss in more detail below. Furthermore, each neuron can be grouped with neurons that innervate similar brain regions. In this paper, we do not explicitly formalize this higher level grouping, but data on the innervating brain regions can be readily mined from the dataset.
 
-## Methodology for assigning cell types and nomenclature
+### Methodology for assigning cell types and nomenclature
 
 Assigning types and names to the more than 20,000 reconstructed cells was a difficult undertaking. Less than 20% of neuron types found in our data have been described in the literature, and half of our neurons have no previously annotated type. Adding to the complexity, prior work focused on morphological similarities and differences, but here we have, for the first time, connectivity information to assist in cell typing as well.
 
@@ -323,6 +942,281 @@ Among the 192 bundles, 155 matched the CBF bundles of 92 known and six newly ide
 We were able to identify another 6682 neurons that were not traced up to their cell bodies. For the neurons that arise from the contralateral side, we gave matching neuron names and associated CBF information, provided their specific arborization patterns gave us convincing identity information by comparison with cells that we identified in the right side of the brain. For the neurons arising from the ventralmost part of the brain outside of the hemibrain volume, we identified and gave them names if we could find convincingly specific arborization patterns, even if the CBF and cell body location data were missing. Sensory neurons that project to the specific primary sensory centers were also identified insofar as possible. In total, we typed and named 22,594 neurons.
 
 Different stem cells sometimes give rise to neurons with very similar morphologies. We classified these as different types because of their distinct developmental origin and slightly different locations of their cell bodies and CBFs. Thus, the next step in neuron typing was to cluster neurons within each CBF group. This process consisted of three further steps, as shown in Figure 10. First, we used NBLAST (Costa et al., 2016) to subject all the neurons of a particular CBF group to morphology-based clustering. Next, we used CBLAST, a new tool to cluster neurons based on synaptic connectivity (see the next section). This step is an iterative process, using neuron morphology as a template, regrouping neurons after more careful examination of neuron projection patterns and their connections. Neurons with similar connectivity characteristics but with distinguishable shapes were categorized into different morphology types. Those with practically indistinguishable shapes but with different connectivity characteristics were categorized into connectivity types within a morphology type. Finally, we validated the cell typing with extensive manual review and visual inspection. This review allowed us both to confirm cell type identity and help ensure neuron reconstruction accuracy. In total we identified 5229 morphology types and 5609 connectivity types in the hemibrain dataset. (See Table 3 for the detailed numbers and Appendix 1—table 6 for naming schemes for various neuron categories.)
+
+**Table 3.**
+ Summary of the numbers and types of the neurons in the hemibrain EM dataset.m-types is the number of morphology types; c-types the number of connectivity types; and c/t the average number of cells per connectivity type. Brain regions with repetitive array architecture tend to have higher average numbers of cells per type (see Figure 12). The cell number includes ≈4000 neurons on the contralateral side, and the percentage of contralateral cells varies between 0 and ≈50% depending on the category. For example, the central complex includes neurons on both sides of the brain, the mushroom body neurons are identified mostly on the right side, and many left-side antennal lobe sensory neurons are included as they tend to terminate bilaterally. Because of these differences, the figures shown above do not indicate the number of cells (or cell number per type) per brain side.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain regions (neuropils) or neuron types</th>
+      <th>Cells</th>
+      <th>m-types</th>
+      <th>c-types</th>
+      <th>C/t</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Central complex neuropil neurons</td>
+      <td>2826</td>
+      <td>224</td>
+      <td>262</td>
+      <td>10.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mushroom body neuropil neurons</td>
+      <td>2315</td>
+      <td>72</td>
+      <td>80</td>
+      <td>28.9</td>
+      <td>Including MB-associated DANs</td>
+    </tr>
+    <tr>
+      <td>Mushroom body neuropil neurons</td>
+      <td>2003</td>
+      <td>51</td>
+      <td>51</td>
+      <td>39.3</td>
+      <td>Excluding MB-associated DANs</td>
+    </tr>
+    <tr>
+      <td>Dopaminergic neurons (DANs)</td>
+      <td>335</td>
+      <td>35</td>
+      <td>43</td>
+      <td>7.8</td>
+      <td>Including MB-associated DANs</td>
+    </tr>
+    <tr>
+      <td>Dopaminergic neurons (DANs)</td>
+      <td>23</td>
+      <td>14</td>
+      <td>14</td>
+      <td>1.7</td>
+      <td>Excluding MB-associated DANs</td>
+    </tr>
+    <tr>
+      <td>Octopaminergic neurons</td>
+      <td>19</td>
+      <td>10</td>
+      <td>10</td>
+      <td>1.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Serotonergic (5HT) neurons</td>
+      <td>9</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptidergic and secretory neurons</td>
+      <td>51</td>
+      <td>12</td>
+      <td>14</td>
+      <td>3.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Circadian clock neurons</td>
+      <td>27</td>
+      <td>7</td>
+      <td>7</td>
+      <td>3.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fruitless gene expressing neurons</td>
+      <td>84</td>
+      <td>29</td>
+      <td>30</td>
+      <td>2.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Visual projection neurons and lobula intrinsic neurons</td>
+      <td>3723</td>
+      <td>160</td>
+      <td>160</td>
+      <td>23.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Descending neurons</td>
+      <td>103</td>
+      <td>51</td>
+      <td>51</td>
+      <td>2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sensory associated neurons</td>
+      <td>2768</td>
+      <td>67</td>
+      <td>67</td>
+      <td>41.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antennal lobe neuropil neurons</td>
+      <td>604</td>
+      <td>284</td>
+      <td>294</td>
+      <td>2.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lateral horn neuropil neurons</td>
+      <td>1496</td>
+      <td>517</td>
+      <td>683</td>
+      <td>2.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anterior optic tubercle neuropil neurons</td>
+      <td>243</td>
+      <td>77</td>
+      <td>80</td>
+      <td>3.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antler neuropil neurons</td>
+      <td>81</td>
+      <td>45</td>
+      <td>45</td>
+      <td>1.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anterior ventrolateral protocerebrum neuropil neurons</td>
+      <td>1276</td>
+      <td>596</td>
+      <td>629</td>
+      <td>2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clamp neuropil neurons</td>
+      <td>746</td>
+      <td>364</td>
+      <td>382</td>
+      <td>2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Crepine neuropil neurons</td>
+      <td>333</td>
+      <td>108</td>
+      <td>115</td>
+      <td>2.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Inferior bridge neuropil neurons</td>
+      <td>264</td>
+      <td>119</td>
+      <td>119</td>
+      <td>2.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lateral accessory lobe neuropil neurons</td>
+      <td>429</td>
+      <td>204</td>
+      <td>206</td>
+      <td>2.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Posterior lateral protocerebrum neuropil neurons</td>
+      <td>480</td>
+      <td>255</td>
+      <td>260</td>
+      <td>1.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Posterior slope neuropil neurons</td>
+      <td>621</td>
+      <td>303</td>
+      <td>311</td>
+      <td>2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Posterior ventrolateral protocerebrum neuropil neurons</td>
+      <td>348</td>
+      <td>151</td>
+      <td>156</td>
+      <td>2.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Saddle neuropil and antennal mechanosensory and motor center neurons</td>
+      <td>219</td>
+      <td>96</td>
+      <td>99</td>
+      <td>2.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Superior lateral protocerebrum neuropil neurons</td>
+      <td>1096</td>
+      <td>468</td>
+      <td>494</td>
+      <td>2.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Superior intermediate protocerebrum neuropil neurons</td>
+      <td>220</td>
+      <td>90</td>
+      <td>92</td>
+      <td>2.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Superior medial protocerebrum neuropil neurons</td>
+      <td>1494</td>
+      <td>605</td>
+      <td>629</td>
+      <td>2.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vest neuropil neurons</td>
+      <td>137</td>
+      <td>84</td>
+      <td>85</td>
+      <td>1.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wedge neuropil neurons</td>
+      <td>559</td>
+      <td>212</td>
+      <td>230</td>
+      <td>2.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>22,594</td>
+      <td>5229</td>
+      <td>5609</td>
+      <td>4.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig10-v3.jpg)
 
@@ -368,7 +1262,7 @@ There is one more factor we had to consider. Certain groups of neuron types tend
 
 Between 45 and 630 neuron types were assigned into each neuropil category and distinguished with three-digit ID numbers, for example SLP153 and WED048, using the standard nomenclature abbreviations of the neuropils (Ito et al., 2014). We gave sequential numbers to the neuron types that share the same CBF bundles and common core projection patterns so that neurons with similar appearance would be assigned similar names, as far as possible. Within each CBF group, neurons are sorted from the ones with broader and more extensive projections to the ones with restricted local arborizations. Because of this numbering scheme, broadly arborizing neurons have scattered numbers within the number range of each neuropil category, depending on the CBF groups they belong to.
 
-## Results of cell typing
+### Results of cell typing
 
 Using the workflow of Figure 10, we identified 22,594 neurons with 5229 morphological types and 5609 connectivity types (Table 3). Over 2000 of these are types with only a single instance, although presumably, for a whole brain reconstruction, most of these types would have partners on the opposite side of the brain.
 
@@ -376,17 +1270,17 @@ Figure 11 shows the number of distinct neuron types found in different brain reg
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig11-v3.jpg)
 
-**Figure 11.:** The total number of cell types shown in this graph is larger than the total number of cell types shown in Table 3, because types that arborize in multiple regions are counted in each region in which they occur. Data available in Figure 11—source data 1.Figure 11—source data 1.Figure 11.Column A: region name; column B: number of cell types.
+**Figure 11.:** The total number of cell types shown in this graph is larger than the total number of cell types shown in Table 3, because types that arborize in multiple regions are counted in each region in which they occur. Data available in Figure 11—source data 1.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig12-v3.jpg)
 
-**Figure 12.:** Data available in Figure 12—source data 1.Figure 12—source data 1.Figure 12.Column A: number of instances of a cell; column B: Number of cell types with that number of instances.
+**Figure 12.:** Data available in Figure 12—source data 1.
 
 In spite of our extensive efforts, the assignment of type names to neurons is still ongoing. Because we opted for splitting rather than lumping of hard to differentiate cell types, it is possible that some of the neuron types may be merged with others in the future. In such cases, the number that is unused after the merger should not be re-used for other later-discovered neuron types, in order to avoid confusion. There may also be cases where neuron types could be split, or that neuron types that are missing in the current brain sample might be identified in EM or LM images of other brain samples. In such cases the newly identified neurons are expected to be given numbers above the current number range.
 
 Although cell types and names may change, and indeed have already changed between versions v1.0 and v1.1 of our reconstruction, what will not change are the unique body ID numbers given in the database that refer to a particular (traced) cell in this particular image dataset. We strongly advise that such body IDs be included in any publications based on our data to avoid confusion as cell type names evolve.
 
-## CBLAST
+### CBLAST
 
 As part of our effort to assign cell types, we built a tool for cell type clustering based on neuron connectivity, called CBLAST (by analogy with the existing NBLAST [Costa et al., 2016], which forms clusters based on the shapes of neurons). The overall flow of the tool is described in Figure 13, and the code and instructions on how to install and run it can be found at https://github.com/connectome-neuprint/CBLAST (Plaza and Dreher, 2020; copy archived at https://github.com/elifesciences-publications/CBLAST).
 
@@ -404,7 +1298,7 @@ Our large, dense connectome is a key requirement for CBLAST. Unless a significan
 
 CBLAST usually generates clusters that are consistent with the morphological groupings of the neurons, with CBLAST often suggesting new sub-groupings as intended. This agreement serves as some validation of the concepts behind CBLAST. In some cases it can be preferable to NBLAST, since the algorithm is less sensitive to exact neuron location, and for many applications the connectivity is more important than the morphology. In Figure 14, we show the results of using CBLAST on a few neuron types extracted from the ellipsoid body. The clusters are consistent with the morphology, with exception to a new sub-grouping for R3p being suggested as a more distinct group than type ExR7/ExR6.
 
-## Assessing morphologies and cell types
+### Assessing morphologies and cell types
 
 Verifying correctness and completeness in these data is a challenging problem because no existing full brain connectome exists against which our data might be compared. We devised a number of tests to check the main features: Are the morphologies correct? Are the regions and cell types correctly defined? Are the synaptic connection counts representative?
 
@@ -414,7 +1308,7 @@ For checking morphologies, we searched for major missing or erroneous branches u
 
 For subregions in which previous dense proofreading was available (such as the alpha lobes of the mushroom body), we compared the two connectomes. We were also helped by research groups using both sparse tracing in the full fly brain TEM dataset (Zheng et al., 2018), and our hemibrain connectome. They were happy to inform us of any inconsistencies. There are limits to this comparison, as the two samples being compared were of different ages and raised under different conditions, then prepared and imaged by different techniques, but this comparison would nevertheless have revealed any gross errors. Finally, we generated a ‘probabilistic connectome’ based on a different segmentation, and systematically visited regions where the two versions differed.
 
-## Assessing synapse accuracy
+### Assessing synapse accuracy
 
 As discussed in the section on finding synapses, we evaluated both precision (the fraction of found synapses that are correct) and recall (fraction of true synapses that were correctly predicted) on sample cubes in each brain region. We also double checked by comparing our findings with a different, recently published, synapse detection algorithm (Buhmann et al., 2019).
 
@@ -424,13 +1318,13 @@ In total, we examined 1735 traced neurons spanning 1518 unique cell types (there
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig15-v3.jpg)
 
-**Figure 15.:** Data available in Figure 15—source data 1.Figure 15—source data 1.The histograms shown are computed from the columns 'final upstream perc' and 'final downstream perc'.
+**Figure 15.:** Data available in Figure 15—source data 1.
 
 We also evaluated single-connection pathways across each brain region. In the fly, functionally important connections are thought typically to have many synapses, with the possible exception of cases where many neurons of the same type synapse onto the same downstream partner. However, the presence of connections represented by few synapses is also well known, even if the biological importance of these is less clear. Regardless, we wanted to ensure that even single connection pathways were mostly correct. We sampled over 5500 single-connection pathways, distributed across 57 brain regions. Mean synapse precision per brain region was 76.1%, suggesting that single-connection accuracy is consistent with overall synapse prediction accuracy.
 
-We also undertook a preliminary evaluation of two-connection pathways (two synapses between a single pair of neurons). We sampled 100 such two-connection pathways within the FB. Overall synapse precision (over the 200 synapses) is 79%, consistent with the single-edge accuracy. Moreover, the results also suggest that synapse-level accuracy is largely uncorrelated with pathway/bodies, implying that the probability that both synapses in a two-connection pathway were incorrect is 4.4% (1-0.792), close to the observed empirical value of 3%. (Applying a χ2 goodness of fit test with a null hypothesis of independence gives a p value of 0.7.)
+We also undertook a preliminary evaluation of two-connection pathways (two synapses between a single pair of neurons). We sampled 100 such two-connection pathways within the FB. Overall synapse precision (over the 200 synapses) is 79%, consistent with the single-edge accuracy. Moreover, the results also suggest that synapse-level accuracy is largely uncorrelated with pathway/bodies, implying that the probability that both synapses in a two-connection pathway were incorrect is 4.4% ($1-0.79^{2}$), close to the observed empirical value of 3%. (Applying a $χ^{2}$ goodness of fit test with a null hypothesis of independence gives a p value of 0.7.)
 
-## Assessing connection completeness
+### Assessing connection completeness
 
 A synapse in the fly’s brain consists of a presynaptic density (with a characteristic T-bar) and typically several postsynaptic partners (PSDs). The T-bars are contained in larger neurites, and most (>90%) of the T-bars in our dataset were contained in identified neurons. The postsynaptic densities are typically in smaller neurites, and it is these that are difficult for both machine and human to connect with certainty.
 
@@ -442,9 +1336,9 @@ Figure 16 shows such an analysis. The results support our view that the circuits
 
 ![Figure 16.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig16-v3.jpg)
 
-**Figure 16.:** Roughly 40,000 connection strengths are shown. Almost all points fall above the line Y = X, showing that almost all connections increased in synapse count, with very few decreasing. In particular, no path decreased by more than five synapses. Only two new strong (count >10) paths were found that were not present in the original. As proofreading proceeds, this error becomes less and less common since neuron fragments (orphans) are added in order of decreasing size (see text). Data available in Figure 16—source data 1.Figure 16—source data 1.Figure 16.The first column is the synapse count before the additional proofreading, the second after. Each point includes a small random component so the points do not directly overlap.
+**Figure 16.:** Roughly 40,000 connection strengths are shown. Almost all points fall above the line Y = X, showing that almost all connections increased in synapse count, with very few decreasing. In particular, no path decreased by more than five synapses. Only two new strong (count >10) paths were found that were not present in the original. As proofreading proceeds, this error becomes less and less common since neuron fragments (orphans) are added in order of decreasing size (see text). Data available in Figure 16—source data 1.
 
-## Interpreting the connection counts
+### Interpreting the connection counts
 
 Given the complexity of the reconstruction process, and the many different errors that could occur, how confident should the user be that the returned synapse counts are valid? This section gives a quick guide in the absence of detailed investigation. The number of synapses we return is the number we found. The true number could range from slightly less, largely due to false synapse predictions, to considerably more, in the regions with low percentage reconstructed. For connections known to be in a specific brain region, the reciprocal of the completion percentage (as shown in Table 1) gives a reasonable estimate of the undercount.
 
@@ -456,7 +1350,7 @@ If we report a medium strength connection (3–9 synapses) then the connection i
 
 If we report a strong connection (10 or more synapses), the connection not only exists, but is strong. It may well be considerably stronger than we report.
 
-## Data representation
+### Data representation
 
 The representation of connectomics data is a significant problem for all connectomics efforts. The raw image data on which our connectome is based is larger than 20 TB, and takes 2 full days to download even at a rate of 1 gigabit/second. Looking forward, this problem will only get worse. Recent similar projects are generating petabytes worth of data (Yin et al., 2019), and a mouse brain of 500 mm3, at a typical FIB-SEM resolution of 8 nm isotropic, would require almost 1000 petabytes.
 
@@ -470,7 +1364,7 @@ Managing this wide range of data, from the raw gray-scale through the connectivi
 
 This organization offers several advantages. In most cases, instead of transferring files, the user submits queries for the portion of data desired. If the user needs only a subset of the data (as almost all users do) then they need not cope with the full size of the data set. Different versions of the data can be managed efficiently behind the scenes with a versioned database such as DVID (Katz and Plaza, 2019) that keeps track of changes and can deliver data corresponding to any previous version. The use of existing software infrastructure, such as Google buckets or the graph package neo4j, which are already optimized for large data, helps with both performance and ease of development. The advanced user is not limited to these interfaces - for those who may wish to validate or extend our results; we have provided procedures whereby the user can make personal copies of each representation, including the grayscale, the DVID data storage, and our editing and proofreading software. These allow other researchers to establish an entirely independent version of all we have done, completely under their control. Contact the authors for the details of how to copy all the underlying data and software.
 
-## What are the data types?
+### What are the data types?
 
 Grayscale data correspond to traditional electron microscope images. This is written only once, after alignment, but often read, because it is required for segmentation, synapse finding, and proofreading. We store the grayscale data, eight bits per voxel, in Google buckets, which facilitates access from geographically distributed sites.
 
@@ -488,7 +1382,7 @@ The connectivity graph is also derived from the data and is yet more abstract, d
 
 A final, even more abstract form is the adjacency matrix: This compresses the connectivity between each pair of neurons to a single number. Even this most economical form requires careful treatment in connectomics. As our brain sample contains more than 25K traced neurons as well as many unconnected fragments, the adjacency matrix has more than a billion entries (most of which are zero). Sparse matrix techniques, which report only the non-zero coefficients, are necessary for practical use of such matrices.
 
-## Accessing the data
+### Accessing the data
 
 For the hemibrain project, we provide access to the data through a combination of a software interface (Clements et al., 2020) and a server (https://neuprint.janelia.org, also accessible through https://doi.org/10.25378/janelia.12818645). Login is via any Google account; users who wish to remain anonymous can create a separate account for access purposes only. Data are available in the form of gray-scale, pixel-level segmentation, skeletons, and a graph representation. Two previous connectomics efforts are available as well (a seven-column optic lobe reconstruction [Takemura et al., 2015] and the alpha lobe of the mushroom body [Takemura et al., 2017]). These can be found at https://neuprint-examples.janelia.org .
 
@@ -508,7 +1402,7 @@ The raw greyscale images, with overlays of segmentation and feature masks (such 
 
 For more information on accessing data and other hemibrain updates, please see https://www.janelia.org/project-teams/flyem/hemibrain .
 
-## Matching EM and light microscopy data
+### Matching EM and light microscopy data
 
 No two flies are identical, and brain samples differ in size and orientation. Furthermore, different preparation methods cause tissues to swell and shrink by varying amounts. Therefore, the first step when comparing the features of different brains is registration to a common reference frame.
 
@@ -532,7 +1426,7 @@ The opposite direction, finding an EM neuron that corresponds to a light neuron,
 
 As another option, since hemibrain neurons are skeletonized, users can query GAL4 neuronal skeleton databases using NBLAST (Costa et al., 2016).
 
-## Longer term storage of data, and archival references
+### Longer term storage of data, and archival references
 
 Historically, archival data from biology data have been expressed as files that are included with supplementary data. However, for connectivity data this practice has two main problems. First, the data are large, and hard to store. Journals, for example, typically limit supplemental data to a few 10s of megabytes. The data here are about 6 orders of magnitude larger. Second, connectome data are not static, during proofreading and even after initial publication. As proofreading proceeds, the data improve in their completeness and quality. The question then is how to refer to the data as they existed at some point in time, required for reproducibility of scientific results. If represented as files, this would require many copies, checkpointed at various times - the ‘as submitted’ version, the ‘as published’ version, the ‘current best version’, and so on.
 
@@ -542,41 +1436,268 @@ The goal of multiple versions is that later versions should be of higher quality
 
 Archival storage is an issue since, unlike genetic data, there is not yet an institutional repository for connectomics data and the data are too large for journals to archive. We pledge to keep our data available for at least the next 10 years.
 
-## Analysis
+### Analysis
 
 Of necessity, most previous analyses have concentrated on particular circuits, cell types, or brain regions with relevance to specific functions or behaviors. For example, a classic paper about motifs (Song et al., 2005) sampled the connections between one cell type (layer five pyramidal neurons) in one brain region (rat visual cortex), and found a number of non-random features, such as over-represented reciprocal connections and a log-normal strength distribution. However, it has never been clear which of these observations generalize to other cell types, other brain regions, and the brain as a whole. We are now in a position to make much stronger statements, ranging over all brain regions and cell types.
 
 In addition, many analyses are best performed (or can only be performed) on dense connectomes. Type-wide observations depend on a complete census of that cell type, and depending on the observation, a complete census of upstream and downstream partners as well. Some analyses, such as null observations about motifs (where certain motifs do not occur in all or portions of the fly’s brain) can only be undertaken on dense connectomes.
 
-## Compartment statistics
+### Compartment statistics
 
 One analysis enabled by a dense whole-brain reconstruction involves the comparison between the circuit architectures of different brain areas within a single individual.
 
 The compartments vary considerably. Table 4 shows the connectivity statistics of compartments that are completely contained within the volume, have at least 100 neurons, and have the largest or smallest value of various statistics. Across regions, the number of neurons varies by a factor of 74, the average number of partners of each neuron by a factor of 36, the network diameter (defined as the maximum length of the shortest path between any two neurons) by a factor of 4, the average strength of connection between partner neurons by a factor of 5, and the fraction of reciprocal connections by a factor of 5. The average graph distance between neurons is more conserved, differing by a factor of only 2.
 
-## Paths in the fly brain are short
+**Table 4.**
+ Regions with minimum or maximum characteristics, picked from those regions lying wholly within the reconstructed volume and containing at least 100 neurons.Yellow indicates a minimum value; blue a maximal value. Volume is in cubic microns. N is the number of neurons in the region, L the number of connections between those neurons, $⟨k⟩$ the average number of partners (in the region), D the network diameter (the maximum length of the shortest path between neurons), $⟨str⟩$ the average connection strength, broken up into non-reciprocal and reciprocal. fracR is the fraction of connections that are reciprocal, and AvgDist the average number of hops (one hop corresponding to a direct synaptic connection) between any two neurons in the compartment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Volume</th>
+      <th>N</th>
+      <th>L</th>
+      <th>⟨k⟩</th>
+      <th>D</th>
+      <th>⟨str⟩</th>
+      <th>⟨non-r⟩</th>
+      <th>⟨r⟩</th>
+      <th>fracR</th>
+      <th>AvgDist</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MB(R)</td>
+      <td>309371</td>
+      <td>3514</td>
+      <td>574732</td>
+      <td>163.555</td>
+      <td>8</td>
+      <td>3.275</td>
+      <td>3.081</td>
+      <td>3.388</td>
+      <td>0.632</td>
+      <td>2.215</td>
+    </tr>
+    <tr>
+      <td>bL(R)</td>
+      <td>29695</td>
+      <td>1171</td>
+      <td>108250</td>
+      <td>92.442</td>
+      <td>8</td>
+      <td>2.019</td>
+      <td>1.856</td>
+      <td>2.122</td>
+      <td>0.613</td>
+      <td>2.090</td>
+    </tr>
+    <tr>
+      <td>EB</td>
+      <td>93932</td>
+      <td>555</td>
+      <td>58789</td>
+      <td>105.926</td>
+      <td>5</td>
+      <td>10.087</td>
+      <td>4.610</td>
+      <td>12.215</td>
+      <td>0.720</td>
+      <td>1.798</td>
+    </tr>
+    <tr>
+      <td>AB(L)</td>
+      <td>526</td>
+      <td>100</td>
+      <td>1250</td>
+      <td>12.500</td>
+      <td>4</td>
+      <td>2.182</td>
+      <td>1.765</td>
+      <td>2.687</td>
+      <td>0.453</td>
+      <td>1.938</td>
+    </tr>
+    <tr>
+      <td>PLP(R)</td>
+      <td>367711</td>
+      <td>6913</td>
+      <td>244182</td>
+      <td>35.322</td>
+      <td>15</td>
+      <td>2.791</td>
+      <td>2.479</td>
+      <td>3.866</td>
+      <td>0.225</td>
+      <td>3.148</td>
+    </tr>
+    <tr>
+      <td>SNP(R)</td>
+      <td>1076257</td>
+      <td>9130</td>
+      <td>811279</td>
+      <td>88.859</td>
+      <td>13</td>
+      <td>3.026</td>
+      <td>2.552</td>
+      <td>4.539</td>
+      <td>0.239</td>
+      <td>2.724</td>
+    </tr>
+    <tr>
+      <td>RUB(L)</td>
+      <td>834</td>
+      <td>128</td>
+      <td>623</td>
+      <td>4.867</td>
+      <td>6</td>
+      <td>7.313</td>
+      <td>2.766</td>
+      <td>20.253</td>
+      <td>0.260</td>
+      <td>2.727</td>
+    </tr>
+    <tr>
+      <td>EPA(R)</td>
+      <td>29947</td>
+      <td>1483</td>
+      <td>18848</td>
+      <td>12.709</td>
+      <td>13</td>
+      <td>2.224</td>
+      <td>2.152</td>
+      <td>2.700</td>
+      <td>0.131</td>
+      <td>3.471</td>
+    </tr>
+  </tbody>
+</table>
+
+### Paths in the fly brain are short
 
 Neurons in the fly brain are tightly interconnected, as shown in Figure 20, which plots what fraction of neuron pairs are connected as a function of the number of interneurons between them. Three quarters of all possible pairs are connected by a path with fewer than three interneurons, even when only connections with ≥5 synapses are included. If weaker connections are allowed, the paths become shorter yet. These short paths and tight coupling are very different from human designed systems, which have much longer path lengths connecting node pairs. As an example, a standard electrical engineering benchmark (S38584 from Brglez et al., 1989) is shown alongside the hemibrain data in Figure 20A–B. The connection graph for this example has roughly the same number of nodes as the graph of the fly brain, but pair-to-pair connections involve paths more than an order of magnitude longer – a typical node pair is separated by 60 intervening nodes. This is because a typical computational element in a human designed circuit (a gate) connects only to a few other elements, whereas a typical neuron receives input from, and sends outputs to, hundreds of other neurons.
 
 ![Figure 20.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig20-v3.jpg)
 
-**Figure 20.:** (a) It shows the data from the whole hemibrain, for up to eight interneurons. (b) It is a much wider view of the same data, shown on a log scale so the curve from a human designed system is visible. Data available in Figure 20—source datas 1–6.Figure 20—source data 1.The first column is the path length between two nodes, the second the number of pairs for which that is the length of the shortest path between them, and the third the cumulative fraction of all paths of that length or less.Figure 20—source data 2.The first column is the path length between two nodes, the second the number of pairs for which that is the length of the shortest path between them, and the third the cumulative fraction of all paths of that length or less.Figure 20—source data 3.The first column is the path length between two nodes, the second the number of pairs for which that is the length of the shortest path between them, and the third the cumulative fraction of all paths of that length or less.Figure 20—source data 4.The first column is the path length between two nodes, the second the number of pairs for which that is the length of the shortest path between them, and the third the cumulative fraction of all paths of that length or less.Figure 20—source data 5.The first column is the path length between two nodes, the second the number of pairs for which that is the length of the shortest path between them, and the third the cumulative fraction of all paths of that length or less.Figure 20—source data 6.The first column is the path length between two nodes, the second the number of pairs for which that is the length of the shortest path between them, and the third the cumulative fraction of all paths of that length or less.
+**Figure 20.:** (a) It shows the data from the whole hemibrain, for up to eight interneurons. (b) It is a much wider view of the same data, shown on a log scale so the curve from a human designed system is visible. Data available in Figure 20—source datas 1–6.
 
-## Distribution of connection strength
+### Distribution of connection strength
 
 The distribution of connection strengths has been studied in mammalian tissue, looking at specific cell types in specific brain areas. These findings, such as the log-normal distribution of connection strengths in rat cortex, do not appear to generalize to flies. Assuming the strength of a connection is proportional to the number of synapses in parallel, we can plot the distribution of connection strengths, summing over the whole central brain, as shown in Figure 21. We find a nearly pure power law with an exponential cutoff, very different from the log-normal distribution of strengths found by Song et al., 2005 in pyramidal cells in the rat cortex, or the bimodal distribution found for pyramidal cells in the mouse by Dorkenwald et al., 2019. However, we caution that these analyses are not strictly comparable. Even aside from the very different species examined, the three analyses differ. Both Song and Dorkenwald looked at only one cell type, with excitatory connections only, but one looked at electrical strength while the other looked at synapse area as a proxy for strength. In our analysis, we use synapse count as a proxy for connection strength, and look at all cell types, including both excitatory and inhibitory synapses.
 
 ![Figure 21.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig21-v3.jpg)
 
-**Figure 21.:** Up to a strength of 100, this is well described by a power law (exponent −1.67) with exponential cutoff (at N = 42). Data available in Figure 21—source data 1.Figure 21—source data 1.Figure 21.The first column is a synapse count of a connection. The second column tells how many connections of that strength exist.
+**Figure 21.:** Up to a strength of 100, this is well described by a power law (exponent −1.67) with exponential cutoff (at N = 42). Data available in Figure 21—source data 1.
 
-## Small motifs
+### Small motifs
 
 As mentioned earlier, there have been many studies of small motifs, usually involving limited circuits, cell types, and brain regions. We emphatically confirm some traditional findings, such as the over-representation of reciprocal connections. We observe this in all brain regions and among all cell types, confirming similar findings in the antennal lobe (Horne et al., 2018). This can now be assumed to be a general feature of the fly’s brain, and possibly all brains. In the fly, the incidence varies somewhat by compartment, however, as shown in Table 4.
 
-## Large motifs
+### Large motifs
 
-We define a large motif as a graph structure that involves every cell of an abundant type (N ≥ 20). The most tightly bound motif is a clique, in which every cell of a given type is connected to every other cell of that type, with synapses in both directions. Such connections, as illustrated in Figure 22(a), are extremely unlikely in a random wiring model. Consider, for example, the clique of ER4d cells found in the ellipsoid body, as shown in Table 5. In the ellipsoid body, two cells are connected with an average probability of 0.19. Therefore, the odds of finding all 600 possible connections between ER4d cells, assuming a random wiring model, is 0.19600≈10-432.
+We define a large motif as a graph structure that involves every cell of an abundant type (N ≥ 20). The most tightly bound motif is a clique, in which every cell of a given type is connected to every other cell of that type, with synapses in both directions. Such connections, as illustrated in Figure 22(a), are extremely unlikely in a random wiring model. Consider, for example, the clique of ER4d cells found in the ellipsoid body, as shown in Table 5. In the ellipsoid body, two cells are connected with an average probability of 0.19. Therefore, the odds of finding all 600 possible connections between ER4d cells, assuming a random wiring model, is $0.19^{600}≈10^{-432}$.
+
+**Table 5.**
+ Cell types that form cliques and near-cliques in the hemibrain data.To be included, a cell type must have at least 20 cell instances, 90% or more of which have bidirectional connections to at least 90% of cells of the same type. Coverage is the fraction of all possible edges in the clique that are present with any synapse count >0. Average strength is the average number of synapses in each connection. Synapses is the total number of synapses in the clique.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Region</th>
+      <th>Cells</th>
+      <th>Coverage</th>
+      <th>Avg. strength</th>
+      <th>Synapses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KCab-p</td>
+      <td>MB</td>
+      <td>59/60</td>
+      <td>3455/3540</td>
+      <td>5.13</td>
+      <td>17722</td>
+    </tr>
+    <tr>
+      <td>Delta7</td>
+      <td>PB, CX</td>
+      <td>42/42</td>
+      <td>1719/1722</td>
+      <td>14.21</td>
+      <td>24433</td>
+    </tr>
+    <tr>
+      <td>ER2_c</td>
+      <td>EB, CX</td>
+      <td>21/21</td>
+      <td>420/420</td>
+      <td>33.76</td>
+      <td>14180</td>
+    </tr>
+    <tr>
+      <td>ER3w</td>
+      <td>EB, CX</td>
+      <td>20/20</td>
+      <td>380/380</td>
+      <td>28.00</td>
+      <td>10639</td>
+    </tr>
+    <tr>
+      <td>ER4d</td>
+      <td>EB, CX</td>
+      <td>25/25</td>
+      <td>600/600</td>
+      <td>54.94</td>
+      <td>32961</td>
+    </tr>
+    <tr>
+      <td>ER5</td>
+      <td>EB, CX</td>
+      <td>20/20</td>
+      <td>380/380</td>
+      <td>26.61</td>
+      <td>10111</td>
+    </tr>
+    <tr>
+      <td>PFNa</td>
+      <td>NO(R)</td>
+      <td>29/29</td>
+      <td>811/812</td>
+      <td>6.74</td>
+      <td>5467</td>
+    </tr>
+    <tr>
+      <td>PFNa</td>
+      <td>NO(L)</td>
+      <td>29/29</td>
+      <td>811/812</td>
+      <td>7.22</td>
+      <td>5858</td>
+    </tr>
+    <tr>
+      <td>PFNd</td>
+      <td>NO(R)</td>
+      <td>20/20</td>
+      <td>377/380</td>
+      <td>7.69</td>
+      <td>2899</td>
+    </tr>
+    <tr>
+      <td>PFNd</td>
+      <td>NO(L)</td>
+      <td>20/20</td>
+      <td>378/380</td>
+      <td>7.60</td>
+      <td>2874</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 22.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig22-v3.jpg)
 
@@ -594,7 +1715,7 @@ We search for this motif by looking at cells with few instances (one or two) con
 
 The least tightly bound large motif is a cell that connects either to or from (but not both) all cells of a given type, as shown in Figure 22(c). Examples include the mushroom body output neurons (Takemura et al., 2017). This is a very common motif, found in many regions. We find more than 500 examples of this in the fly’s brain.
 
-## Brain regions and electrical response
+### Brain regions and electrical response
 
 How does the compartmentalization of the fly brain affect neural computation? In a few cases this has been established. For example, the CT1 neuron performs largely independent computations in each branch (Meier and Borst, 2019), whereas estimates show that within the medulla, the delays within each neuron are likely not significant for single column optic lobe neurons, and hence the neurons likely perform only a single computation (Takemura et al., 2013). Similarly, compartments of PEN2 neurons in the protocerebral bridge have been shown to respond entirely differently from their compartments in the ellipsoid body (Green et al., 2017; Turner-Evans et al., 2019).
 
@@ -608,27 +1729,116 @@ In general, we find the compartment structure of the neuron is clearly reflected
 
 ![Figure 25.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig25-v3.jpg)
 
-**Figure 25.:** (a) The linear response to inputs in the gall (GA) for an EPG neuron, which also has arbors in the ellipsoid body (EB) and the protocerebral bridge (PB). Each point in the modeled plot shows the time each response reached its peak amplitude (the delay), and the amplitude at that time, for an input injected at one of the PSDs in the gall. (b) Delays and amplitudes for gall to PB response, for all combinations of three values of cytoplasmic resistance  and three values of membrane resistance RA. Data available in RMFigure 25—source datas 1–4.Figure 25—source data 1.Figure 25A (ellipsoid body).The first column is the delay in milli-seconds, the second the amplitude in mv, the third the connection type.Figure 25—source data 2.Figure 25A (gall).The first column is the delay in milli-seconds, the second the amplitude in mv, the third the connection type.Figure 25—source data 3.Figure 25A (protocerebral bridge).The first column is the delay in milli-seconds, the second the amplitude in mv, the third the connection type.Figure 25—source data 4.Figure 25B.The first column is the delay in milli-seconds, the second the amplitude in mv, the third the connection type.
+**Figure 25.:** (a) The linear response to inputs in the gall (GA) for an EPG neuron, which also has arbors in the ellipsoid body (EB) and the protocerebral bridge (PB). Each point in the modeled plot shows the time each response reached its peak amplitude (the delay), and the amplitude at that time, for an input injected at one of the PSDs in the gall. (b) Delays and amplitudes for gall to PB response, for all combinations of three values of cytoplasmic resistance $R_{A}$ and three values of membrane resistance $R_{M}$. Data available in Figure 25—source datas 1–4.
 
-This simple pattern motivates a model that describes delays and amplitudes not as a single number, but as an N×N matrix, where N is the number of compartments. Each row contains the estimated amplitude and delay, measured in each compartment, for a synaptic input in the given compartment. This gives a much improved estimate of the linear response. For the example EPG neuron above, with nominal values for Ra, Rm, and Cm, if we represent all delays by a single number then the standard deviation of the error is 0.446 ms. If instead we represent the delays as a 3 × 3 matrix indexed by the compartment, the average error is 0.045 ms, for 10x greater accuracy. Similarly, the average error in amplitude drops from 0.168 mv to 0.021 mv, an eightfold improvement. While the improvement in error will depend on the neuron topology, in all cases it will be more accurate than a point model, for relatively little increase in complexity.
+This simple pattern motivates a model that describes delays and amplitudes not as a single number, but as an $N\timesN$ matrix, where N is the number of compartments. Each row contains the estimated amplitude and delay, measured in each compartment, for a synaptic input in the given compartment. This gives a much improved estimate of the linear response. For the example EPG neuron above, with nominal values for $R_{a}$, $R_{m}$, and $C_{m}$, if we represent all delays by a single number then the standard deviation of the error is 0.446 ms. If instead we represent the delays as a 3 × 3 matrix indexed by the compartment, the average error is 0.045 ms, for 10x greater accuracy. Similarly, the average error in amplitude drops from 0.168 mv to 0.021 mv, an eightfold improvement. While the improvement in error will depend on the neuron topology, in all cases it will be more accurate than a point model, for relatively little increase in complexity.
 
-The absolute values of delay and amplitude are strongly dependent on the electrical parameters of the cell, however. A wide range of electrical properties has been reported in the fly literature (see Table 6) and it is plausible that these vary on a cell-to-cell basis. In addition gap junctions, which are not included in our model, could affect the apparent value of Rm. In light of these uncertainties, we simulate with minimum, medium, and maximal values of Ra and Rm, for a total of 9 cases, as shown in Figure 25(b). All are needed since the resistance parameters interact non-linearly. We fix the value of Cm at 0.01 F/m2 since this value is determined by the membrane thickness and is not expected to vary from cell to cell (Kandel et al., 2000). The results over the parameter range are shown in Figure 25(b) for the case of the EPG neuron above for delay from the gall to the PB. The intra-compartment and between-compartment values are well separated for any value of the parameters (not shown).
+The absolute values of delay and amplitude are strongly dependent on the electrical parameters of the cell, however. A wide range of electrical properties has been reported in the fly literature (see Table 6) and it is plausible that these vary on a cell-to-cell basis. In addition gap junctions, which are not included in our model, could affect the apparent value of $R_{m}$. In light of these uncertainties, we simulate with minimum, medium, and maximal values of $R_{a}$ and $R_{m}$, for a total of 9 cases, as shown in Figure 25(b). All are needed since the resistance parameters interact non-linearly. We fix the value of $C_{m}$ at 0.01 F/m2 since this value is determined by the membrane thickness and is not expected to vary from cell to cell (Kandel et al., 2000). The results over the parameter range are shown in Figure 25(b) for the case of the EPG neuron above for delay from the gall to the PB. The intra-compartment and between-compartment values are well separated for any value of the parameters (not shown).
 
-Programs that deduce synaptic strength and sign by fitting a computed response to a connectome and measured electrical or calcium imaging data (Tschopp et al., 2018) may at some point require estimates of the delays within cells. If this is required, the above results suggest this could be accomplished with reasonable accuracy with a compartment-to-compartment delay table and two additional parameters per neuron, RA and RM. This is relatively few new parameters in addition to the many synaptic strengths already fitted.
+**Table 6.**
+ Values reported in the literature.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Ra,Ω⋅m</th>
+      <th>Rm,Ω/m2</th>
+      <th>Cm, F/m2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Borst (Borst and Haag, 1996), CH cells</td>
+      <td>0.60</td>
+      <td>0.25</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Borst (Borst and Haag, 1996), HS cells</td>
+      <td>0.40</td>
+      <td>0.20</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Borst (Borst and Haag, 1996), VS cells</td>
+      <td>0.40</td>
+      <td>0.20</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Gouwens (Gouwens and Wilson, 2009), DM1 cell 1</td>
+      <td>1.62</td>
+      <td>0.83</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Gouwens (Gouwens and Wilson, 2009), DM1 cell 2</td>
+      <td>1.02</td>
+      <td>2.04</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Gouwens (Gouwens and Wilson, 2009), DM1 cell 3</td>
+      <td>2.66</td>
+      <td>2.08</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Gouwens (Gouwens and Wilson, 2009), dendrite 1</td>
+      <td>2.44</td>
+      <td>1.92</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Gouwens (Gouwens and Wilson, 2009), dendrite 2</td>
+      <td>2.66</td>
+      <td>2.08</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Gouwens (Gouwens and Wilson, 2009), dendrite 3</td>
+      <td>3.11</td>
+      <td>2.64</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Cuntz (Cuntz et al., 2013), HS cells</td>
+      <td>4.00</td>
+      <td>0.82</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Meier (Meier and Borst, 2019), CT1 cells</td>
+      <td>4.00</td>
+      <td>0.80</td>
+      <td>0.006</td>
+    </tr>
+  </tbody>
+</table>
+
+Programs that deduce synaptic strength and sign by fitting a computed response to a connectome and measured electrical or calcium imaging data (Tschopp et al., 2018) may at some point require estimates of the delays within cells. If this is required, the above results suggest this could be accomplished with reasonable accuracy with a compartment-to-compartment delay table and two additional parameters per neuron, $R_{A}$ and $R_{M}$. This is relatively few new parameters in addition to the many synaptic strengths already fitted.
 
 A number of neurons have parallel connections in separate compartments (see Figure 24(b)). This motif is common in the fly’s brain – about 5% of all connections having a strength ≥6 are spread across two or more non-adjacent compartments. Given the increased delays and lower amplitudes of cross-compartment responses, this type of interaction differs electrically from those in which all connections are contained in a single compartment. A point neuron model cannot generate an accurate response for such connections – a synapse in region A will result in a fast response in A and a slower, smaller response in B, and vice versa, even though both of these events involve communication between the same two neurons. It is not known if this configuration has a significant influence on the neurons’ operation.
 
 From these models, we conclude (a) the compartment structure of the fly brain shows up directly in the electrical response of the neurons, and (b) the compartment structure, although defined anatomically, matches that of the electrical response. From the clear separation in Figure 25, it is likely that the same compartment definitions could be found starting with the electrical response, although we have not tried this. (c) These results suggest a low dimensional model for neural operation, at least in the linear region. A small region-to-region matrix can represent the delays and amplitudes well. (d) Absolute delays depend strongly (but in a very predictable manner) on the values of axial and membrane resistance, which can vary both from animal to animal and from cell to cell. (e) Neurons that have parallel connections in separate compartments have a different electrical response than they would have with the same total number of synapses in a single compartment.
 
-## Rent’s rule analysis
+### Rent’s rule analysis
 
 Rent’s rule (Lanzerotti et al., 2005) is an empirical observation that in human designed computing systems, when the system is packed as tightly as possible, at every level of the hierarchy the required communication (the number of pins) scales as a power law of the amount of contained computation, measured in gates. Rent’s rule is an observed relationship, not derived from underlying theory, and the relationship is not exact and still contains scatter. A biological equivalent might be the observation that brain size tends to vary as a power law of body size (Harvey and Krebs, 1990), across a wide range of species occupying very different ecological and behavioral niches. Rent’s rule is roughly true over many orders of magnitude in scale, and for almost every system in which it has been measured. Somewhat surprisingly, Rent’s rule applies almost independently of the function performed by the computation being performed, and at every level of a hierarchical system. It also applies whether the compactness criterion is minimization of communication (partitioning) or physical close packing.
 
-Rent’s rule is expressed asP⁢i⁢n⁢s=a*(c⁢o⁢m⁢p⁢u⁢t⁢a⁢t⁢i⁢o⁢n)bwhere a is a scale factor (typically in the range 1–4), and b is the ‘Rent exponent’ describing how the number of connections to the compartment varies as a function of the amount of computation performed in the compartment. The Rent exponent has a theoretical range of 0.0 to 1.0, where 0 represents a constant number of connections, with no dependence on the amount of computation performed, and 1.0 represents a circuit in which every computation is visible on a connection. Human designed computational systems occupy almost the full range, from spreadsheets in which every computation is visible, to largely serial systems in which minimizing communication (pins) is critical. This relationship is shown in Figure 26. However, when the overriding criterion is that the system must be packed as tightly as possible, Rent observed that the exponent of the power law falls in a close range of roughly 0.5–0.7.
+Rent’s rule is expressed as
+
+$$
+P⁢i⁢n⁢s=a*(c⁢o⁢m⁢p⁢u⁢t⁢a⁢t⁢i⁢o⁢n)^{b}
+$$
+
+where a is a scale factor (typically in the range 1–4), and b is the ‘Rent exponent’ describing how the number of connections to the compartment varies as a function of the amount of computation performed in the compartment. The Rent exponent has a theoretical range of 0.0 to 1.0, where 0 represents a constant number of connections, with no dependence on the amount of computation performed, and 1.0 represents a circuit in which every computation is visible on a connection. Human designed computational systems occupy almost the full range, from spreadsheets in which every computation is visible, to largely serial systems in which minimizing communication (pins) is critical. This relationship is shown in Figure 26. However, when the overriding criterion is that the system must be packed as tightly as possible, Rent observed that the exponent of the power law falls in a close range of roughly 0.5–0.7.
 
 ![Figure 26.](https://cdn.elifesciences.org/articles/57443/elife-57443-fig26-v3.jpg)
 
-**Figure 26.:** The yellow region encompasses the theoretical bounds for computation. Four varieties of human-designed systems are shown. Those designed for visibility into computation achieve the upper bound, while those designed for minimum communication approach the lower bounds (Microprocessors ST7LU55, LPC1102, and STM32). Human designed systems where efficient packing is the main criterion occupy the shaded area (in 2D and 3D). The characteristics of the primary compartments completely contained in the reconstructed volume are shown with alphanumeric labels. The hemibrain compartments fall very nearly in the same range as human designed systems designed for efficient packing. Data available in Figure 26—source data 1.Figure 26—source data 1.Figure 26.The first column is the compartment name, the second the number of TBars contained, and the fifth column the number of connections.
+**Figure 26.:** The yellow region encompasses the theoretical bounds for computation. Four varieties of human-designed systems are shown. Those designed for visibility into computation achieve the upper bound, while those designed for minimum communication approach the lower bounds (Microprocessors ST7LU55, LPC1102, and STM32). Human designed systems where efficient packing is the main criterion occupy the shaded area (in 2D and 3D). The characteristics of the primary compartments completely contained in the reconstructed volume are shown with alphanumeric labels. The hemibrain compartments fall very nearly in the same range as human designed systems designed for efficient packing. Data available in Figure 26—source data 1.
 
 For electrical circuits, the computation is measured in gates, and the connections are measured by pin count. These ranges are shown in Figure 26 for circuits that are roughly the size of the fly’s brain, packed in either two (Yang et al., 2001) or three (Das et al., 2004) dimensions.
 
@@ -636,7 +1846,7 @@ Also shown in this plot are the values for the fly’s brain computational regio
 
 Both human designed and biological systems have huge incentives to pack their computation as tightly as possible. A tighter packing of the same computation yields faster operation, lower energy consumption, less material cost, and lower mass. A natural speculation, therefore, is that both the human-designed and evolved systems are dominated by packing considerations, and that both have found similar solutions.
 
-## Conclusions and future work
+### Conclusions and future work
 
 In this work, we have achieved a dream of anatomists that is more than a century old. For at least the central brain of at least one animal with a complex brain and sophisticated behavior, we have a complete census of all the neurons and all the cell types that constitute the brain, a definitive atlas of the regions in which they reside, and a graph representing how they are connected.
 

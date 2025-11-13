@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.38519.001 Insulin gene mutations are a leading cause of neonatal diabetes. They can lead to proinsulin misfolding and its retention in endoplasmic reticulum (ER). This results in increased ER-stress suggested to trigger beta-cell apoptosis. In humans, the mechanisms underlying beta-cell failure remain unclear. Here we show that misfolded proinsulin impairs developing beta-cell proliferation without increasing apoptosis. We generated induced pluripotent stem cells (iPSCs) from people carrying insulin ( INS ) mutations, engineered isogenic CRISPR-Cas9 mutation-corrected lines and differentiated them to beta-like cells. Single-cell RNA-sequencing analysis showed increased ER-stress and reduced proliferation in INS-mutant beta-like cells compared with corrected controls. Upon transplantation into mice, INS-mutant grafts presented reduced insulin secretion and aggravated ER-stress. Cell size, mTORC1 signaling, and respiratory chain subunits expression were all reduced in INS -mutant beta-like cells, yet apoptosis was not increased at any stage. Our results demonstrate that neonatal diabetes-associated INS-mutations lead to defective beta-cell mass expansion, contributing to diabetes development.
+Insulin gene mutations are a leading cause of neonatal diabetes. They can lead to proinsulin misfolding and its retention in endoplasmic reticulum (ER). This results in increased ER-stress suggested to trigger beta-cell apoptosis. In humans, the mechanisms underlying beta-cell failure remain unclear. Here we show that misfolded proinsulin impairs developing beta-cell proliferation without increasing apoptosis. We generated induced pluripotent stem cells (iPSCs) from people carrying insulin (INS) mutations, engineered isogenic CRISPR-Cas9 mutation-corrected lines and differentiated them to beta-like cells. Single-cell RNA-sequencing analysis showed increased ER-stress and reduced proliferation in INS-mutant beta-like cells compared with corrected controls. Upon transplantation into mice, INS-mutant grafts presented reduced insulin secretion and aggravated ER-stress. Cell size, mTORC1 signaling, and respiratory chain subunits expression were all reduced in INS-mutant beta-like cells, yet apoptosis was not increased at any stage. Our results demonstrate that neonatal diabetes-associated INS-mutations lead to defective beta-cell mass expansion, contributing to diabetes development.
 
 ## Introduction
 
@@ -41,15 +41,31 @@ To study the role of proinsulin cysteine disrupting mutations in human beta-cell
 
 ## Results
 
-## Derivation of induced pluripotent stem cells from people with neonatal diabetes carrying mutations in the insulin gene
+### Derivation of induced pluripotent stem cells from people with neonatal diabetes carrying mutations in the insulin gene
 
 We studied two Finnish families with hereditary neonatal diabetes due to heterozygous insulin gene mutations (Figure 1—figure supplement 1A). Both missense mutations affect cysteine residues, resulting in the disruption of the proinsulin inter-chain disulphide bonds A7-B7 (mutation C96R) and A20-B19 (mutation C109Y) (Figure 1B) which are essential for the proper folding and biological activity of the insulin molecule (Chang et al., 2003).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig1-v2.jpg)
+
+**Figure 1.:** (A) 24 hr glucose sensor curves of a newborn carrying the INS C96R mutation showing deterioration of glycemic control during the first 3 months of life. (B) Proinsulin model depicting the mutated disulphide bridge-forming cysteines. (C) Mutation correction strategy mediated by CRISPR/Cas9 stimulated homology directed repair, resulting in four INS C96R mutation corrected iPSC clones. (D) Flow cytometry for definitive endoderm marker CXCR4 on day 3 of differentiation of INS mutant and corrected cells lines (n = 1–7 independent differentiation experiments per cell line). (E) Flow cytometry for PDX1, NKX6.1 and INS on Stage 7 of differentiation (n = 3–16 independent differentiation experiments). (F) Whole-mount immunostaining for the pancreatic transcription factors PDX1 and NKX6.1 and islet hormones glucagon (GCG) and INS of Stage 7 differentiated islet-like clusters. Scale bars = 100 μm. Data represent mean ± SEM. **p < 0.01, Student’s t test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Clinical characteristics and family pedigree of the people carrying insulin gene mutations C96R and C109Y. NeoDM = Neonatal Diabetes Mellitus. (B) Glucose sensor readings and averages of the newborn carrying the C109Y mutation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Table of cell lines generated from people carrying insulin gene mutations. (B) Sequencing of C109Y G to A heterozygous mutation in HEL107.2 cell line. (C) Normal 46XY and 46XX karyotypes of the derived iPSC lines. (D) Immunocytochemistry for pluripotency markers. Scale bars = 500 μm. (E) Immunocytochemistry for markers of different germ layers in embryoid-body differentiated iPSC lines. AFP, alphafetoprotein (endoderm); SMA, smooth muscle actin (mesoderm); TUBB3, tubulin beta-3 (ectoderm). Scale bars = 200 μm. (F) Schematic representation of gRNA targeting the INSC96R mutation and the 70 b donor template used for the CRISPR-SpCas9-stimulated homology directed repair (HDR) correction. (G) Cutting efficiency of gRNA Ins8 and recombination efficiency of ssODNs repair templates complementary and non complementary to gRNA Ins8 in HEK293 cells. (H) Screening of corrected clones. BsrGI restriction of PCR amplicons coming from different HEL71.4, CRISPR-treated, single cell-sorted clones. Recombinant clones A2, F2, F10 and G6 were verified as corrected by Sanger sequencing (Figure 1c). (I) Normal 46XY karyotypes of HEL71.4 corrected clones.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Outline of the iPSC to beta cell differentiation protocol. (B) Immunocytochemistry for pancreatic progenitor markers PDX1, NKX6.1, SOX9 and NGN3 and endocrine markers CHGA and INS at the end of Stage 4. (C) Cytometry for NKX6.1 and INS of INS mutant (HEL71.4 and HEL107.2) and INS corrected iPSC lines differentiated to Stage 7. (D) Quantification by cytometry of INS staining intensity in S7 INS+ cells for INS C96R and INS corrected cells. Data represent mean ± SEM, n = 7–9. (E) Quantification of INS staining intensity from S7 immunostainings for INS C96R and INS corrected cells. Data represent mean ± SEM, n = 7–9.
 
 Affected individuals of these families become hyperglycemic 3–4 months after birth. Prior knowledge about the insulin gene mutations in the families enabled the neonatal genetic diagnosis in newborn siblings. Two affected newborns were monitored for the development of the disease. They were born at normal gestational age, presenting normal birth weight and fasting plasma c-peptide levels (Figure 1—figure supplement 1A). Continuous subcutaneous glucose monitoring demonstrated the gradual deterioration of glycemia during the first months of life (Figure 1A, Figure 1—figure supplement 1B).
 
 We derived induced pluripotent stem cells (iPSC) from the affected parents using retroviral and Sendai virus-mediated delivery of reprogramming factors OCT4, SOX2, KLF4 and MYC to dermal fibroblasts obtained from skin biopsies (Figure 1—figure supplement 2A). Established iPSC were cultured for at least ten passages and then characterized. They expressed hallmark pluripotency markers, presented normal karyotypes and were able to spontaneously differentiate to the three germ layers in embryoid bodies (Figure 1—figure supplement 2C–E). Sequencing of the insulin locus confirmed the presence in heterozygosis of the T to C change causing C96R mutation (iPSC line HEL71.4) (Figure 1C) and G to A change causing C109Y mutation (iPSC line HEL107.2) (Figure 1—figure supplement 2B).
 
-## CRISPR/Cas9-mediated correction of INS C96R mutation in patient derived iPSCs
+### CRISPR/Cas9-mediated correction of INS C96R mutation in patient derived iPSCs
 
 Differentiation protocols devised to obtain beta-cells from human pluripotent stem cells (PSC) are not equally efficient across cell lines (Nostro et al., 2015; Sui et al., 2018). For disease modeling purposes, this variation in the differentiation from iPSC with different genetic backgrounds might obscure the phenotype caused by the mutation under study.
 
@@ -57,7 +73,7 @@ Thus, we generated mutation-free isogenic iPSC lines from the patient-derived HE
 
 For the differentiation and transplantation experiments in this study we have used the C96R mutant iPSC line HEL71.4 (INS C96R), its corrected clones (INS corrected) and the C109Y mutant iPSC line HEL107.2 (INS C109Y).
 
-## Differentiation of INS mutant and corrected iPSC lines to beta-like cells
+### Differentiation of INS mutant and corrected iPSC lines to beta-like cells
 
 We utilized a previously described protocol to differentiate beta-cells from iPSC (Saarimäki-Vire et al., 2017) (Figure 1—figure supplement 3A). All INS mutant and INS corrected iPSC lines differentiated efficiently into definitive endoderm on day 3 (Figure 1D) and progressed to the pancreatic progenitor stage on day 12, presenting abundant PDX1+, NKX6.1+ and SOX9+ cells, with few NEUROG3+ and endocrine CHGA+ cells (Figure 1—figure supplement 3B).
 
@@ -65,11 +81,31 @@ At the pancreatic progenitor stage (Stage 4, 12 days of differentiation) cells w
 
 Subsequent analyses focused particularly on the INS+ cells at the Stage 7 of in vitro differentiation or 1, 3 or 6 months after transplantation under the kidney capsule of immunodeficient NSG mice.
 
-## Single-cell RNA sequencing revealed increased ER-stress and impaired proliferation of INS mutant beta-like cells
+### Single-cell RNA sequencing revealed increased ER-stress and impaired proliferation of INS mutant beta-like cells
 
 Bulk RNA isolation has been traditionally used to study gene expression in cell samples using RT-qPCR or RNA-seq analysis. Using these methods, the identity of the cell source of a given RNA transcript is lost. Moreover, cell sample heterogeneity might introduce a lot of variation when studying a particular cell-specific transcript. Of note, independent iPSC to beta-like cell differentiation experiments vary in the yield of INS+ cells (Figure 1—figure supplement 3C). The use of bulk RNA analysis to study the effects of the INS mutation in the beta-like cells might therefore obscure subtle transcriptional differences between the INS mutant and corrected cells. To overcome this problem we performed InDrop droplet-based single-cell RNA sequencing (scRNAseq) on differentiated islet-like cells (Baron et al., 2016; Klein et al., 2015).
 
 A total of 2 287 single cells from INS C96R and INS corrected Stage 7 islet-like aggregates were sequenced with a mean depth of 38 329 aligned reads/cell. Out of these cells, 2 171 (94.9%) passed quality control. An average of 3 321 unique transcripts (UMI) and 1391 genes were detected per cell (Figure 2—figure supplement 1A, Supplementary file 1 – Table 9, Figure 2—source data 1). Clustering analysis of all cells from both genotypes distinguished four different cell populations, expressing markers of beta-cells (beta-like cells), endocrine progenitor cells (progenitor cells), alpha cells (alpha-like cells), and proliferating alpha cells (proliferating alpha-like cells) (Figure 2A–B, Figure 2—figure supplement 1, Figure 2—figure supplement 4A–B) (Supplementary file 1 – Table 2) (Segerstolpe et al., 2016). The highest levels of INS expression were observed in the beta-like cluster (Figure 2B–C). A resampling procedure confirmed the robustness of the clustering results (Figure 2—figure supplement 4C–D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig2-v2.jpg)
+
+**Figure 2.:** (A) Single cell RNAseq clustering analysis of Stage 7 islet-like aggregates cells derived from both INS C96R and INS corrected iPSC. A total of 1991 post-QC cells mapped to the Baron et al. (2016) dataset were used for clustering. Four distinct clusters were identified: beta-like cells (308 cells), endocrine progenitor cells (236 cells), alpha-like cells (1252 cells) and proliferating alpha-like cells (45 cells). (B) Violin plots showing log-normalized expression of selected marker genes for each cluster. See also Supplementary file 1 – Table 2. (C) Expression of INS in the different cell populations clusters. (D) Volcano plots illustrate the differentially expressed genes between INS C96R and INS corrected cells in beta-like and progenitor clusters. Violin plots show the relative expression of INS, unfolded protein response (UPR) gene HSPA5 (BIP), proliferation and oxidative phosphorylation related genes that are differentially expressed (fold change ≥ 1.3, adjusted p value < 0.05) between INS C96R and INS corrected cells in the beta-like and progenitor clusters. See also Supplementary file 1 – Table 3. (E) Differentiation trajectory inferred from pseudotime analysis of the beta-like and progenitor clusters. (F) Heatmaps show the normalized, smoothed expression of INS, proliferation (red) and ER-stress (yellow) genes that are differentially regulated across pseudotime between INS C96R and INS corrected cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Steps in the analysis of the scRNAseq data. (B) Clustering refinement by mapping the Stage 7 scRNAseq cell clusters to the published InDrop dataset of human adult islets by Baron et al. (2016). (C) Selected summary of gene sets that are up- and down-regulated between INS C96R and INS corrected cells in beta-like and progenitor clusters. See also Supplementary file 1 – Tables 3-6.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Pseudotime trajectory inferred from beta-like and progenitor clusters (non-reversed). (B) Heatmap clustering of selected marker genes differentially expressed genes between the two progenitor branches. (C) Violin plots representing the expression of selected markers genes in the two progenitor populations. Dot plots represent the percentage of cells in a given progenitor population expressing a particular marker, and the scaled mean relative expression of the gene. (D) Relative expression of the genes differentially regulated along pseudotime between INS C96R and INS corrected cells, presented as a heatmap in Figure 2F. Graphs represent individual single cell expression levels and the expression trend fitted over pseudotime.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Distributions of mitochondrial counts per cell in mutant and corrected samples. (B) Distributions of apoptosis gene counts per cell in mutant and corrected samples. Cells with values above the threshold (red vertical line) were filtered out.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) A tSNE plot showing the original clusters (before merging and refinement) identified by Seurat. (B) The same tSNE plot with cells colored by mutation status. (C) Bar graph showing the proportions of samples within the original clusters. (D) Robustness of clusters. The boxplots show the maximum proportions of co-clustered cells from a given original cluster in 1000 subsampling runs. The proportions are shown also for the null distribution of shuffled cell-cluster pairs.
 
 To confirm and to strengthen the identity of the sequenced cells, we compared our scRNA-seq data with a previous published human adult islet scRNAseq dataset generated with the InDrop single-cell platform (Baron et al., 2016). Mapping of the individual cells to the Baron et al. (2016) dataset confirmed the identity of the beta-cells and was utilized to further refine the clustering of the beta-like and progenitor clusters, filtering out cells that mapped to the alpha cell cluster (Figure 2—figure supplement 1B, Figure 2—figure supplement 4A–B).
 
@@ -85,15 +121,23 @@ We hypothesized that the endocrine progenitor population identified by the clust
 
 Analysis of differentially regulated genes along the pseudotime trajectory showed that the expression dynamics of INS and other proliferation (ID2, CDKN1C) and UPR-related genes (HSPA5, PDIA6, SDF2L1) were significantly different between INS C96R and INS corrected cells (Figure 2F, Figure 2—figure supplement 2D, Supplementary file 1 – Table 8). This illustrates the significantly higher upregulation of ER-stress markers, INS and CDKN1C cell cycle inhibitor earlier in the differentiation trajectory of INS C96R progenitors to beta-like cells, indicating the immediate negative effect of misfolded proinsulin in the recently committed beta-like cells upon INS expression.
 
-## Increased ER-stress and reduced proliferation of INS mutant beta-like cells in vitro
+### Increased ER-stress and reduced proliferation of INS mutant beta-like cells in vitro
 
 To determine the expression of different ER-stress markers at the protein level, we performed immunohistochemistry of stem cell-derived Stage 7 beta-like cells cultured in vitro. Immunoreactivity for ER-stress associated proteins BIP (HSPA5), GRP170 (HYOU1) and MANF was significantly increased in the INS C96R beta-like cells as compared with the corrected cells (Figure 3A–B, Figure 5—figure supplement 1C). Conversely, the number of KI67+ and PCNA+ proliferative insulin-positive cells was significantly reduced in the INS C96R cells (Figures 3A–B and 6E–F). We quantified single cell levels of INS immunostaining intensity using flow cytometry and from immunohistochemistry preparations (Figure 1—figure supplement 3D–E). We did not find significant differences in the signal intensity between INS mutant and INS corrected cells, indicating that impaired proliferation of INS mutant beta-like cells is likely the major contributor to the reduced percentage of INS+ cells observed by cytometry.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunohistochemistry for ER-stress markers (BIP, GRP170, MANF) and proliferation marker KI67 along with INS in Stage 7 cells. Scale bars = 100 μm. (B) Quantification of (A). Percentage of Stage 7 insulin positive cells that express BIP, GRP170, MANF and KI67 (n = 3–7 independent differentiation experiments per genotype). (C) qRT-PCR of beta-cell and ER-stress markers (n = 5–6 independent differentiation experiments per genotype). (D) Sensitivity to ER-stress-induced apoptosis of Stage 7 cells. Percentage of insulin positive cells that are labeled by TUNEL assay in control conditions and after treatment with ER-stress inducers brefeldin A (BFA), thapsigargin (TGA) and tunicamycin (TM). (E) Static sequentially stimulated insulin secretion of Stage 7 cells, presented as fractional secretion of total INS content. Low G = 3.3 mM glucose; Hi G = 20 mM glucose; TOL = tolbutamide 100 μM; KCl = 30 mM KCl; FSK = 1 μM forskolin. (n = 8–12 independent stimulations per genotype). (F) Human insulin content in Stage 7 cells. Cell mass normalized by DNA content (n = 8–12 independent stimulations per cell genotype). Data represent mean ± SEM. Student’s t test, *p < 0.05, **p < 0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Related to Figures 3, 4 and 5. (A) Ratio of human proinsulin to insulin content of Stage 7 islet-like aggregates. (B) Human proinsulin content of Stage 7 islet-like aggregates. (C) Ratio of human proinsulin to human insulin secretion in response to maximal stimulation with Low glucose + KCl of Stage 7 islet-like aggregates. (D) Overnight secretion of human MANF by Stage 7 islet-like aggregates. ***p < 0.001, Student’s t test for (B), Student’s t test with Welch’s correction for (C). Data represent mean ± SEM, n = 8–12 independent stimulations per cell genotype. (E) Immunohistochemistry for apoptosis markers TUNEL and CASP3 in INS+ cells. (F) Immunohistochemistry for ER-stress markers BIP, MANF, GRP170 and proinsulin (PROINS) in INS C109Y 3 month old grafts. Scale bars = 100 µm.
 
 qRT-PCR analysis confirmed the significantly increased expression of ER-stress markers BIP, sXBP1, MANF and GRP170, in line with the findings of immunostainings and scRNAseq results (Figure 3C). Other ER-stress associated genes, including CHOP (DDIT3), which has been reported to be upregulated in Akita mice (Oyadomari et al., 2002), were not differentially expressed at the mRNA level between INS C96R and corrected cells (Figure 3C). However, the expression of CHOP and ATF transcription factors might be also regulated post-transcriptionally (Cnop et al., 2017). To determine if the INS C96R beta-like cells under ER-stress are more sensitive to apoptosis, TUNEL assays were performed on S7 aggregates. The ratio of TUNEL+/INS+ cells was similar in INS C96R and INS corrected cells in the basal conditions (about 1%) (Figure 3D). Induction of additional ER-stress by treatment with brefeldin A (BFA), thapsigargin (TGA) or tunicamycin (TM) resulted in increased apoptosis for both genotypes. BFA, but not the other stressors, induced a significantly higher level of apoptosis in the INS C96R cells compared to mutation corrected cells (Figure 3D). Thus, INS C96R beta-like cells present higher sensitivity to apoptotic cell death induced by further increasing ER-stress with BFA treatment.
 
 The insulin secretory responses of S7 beta-like cells were assessed by sequential static incubations in the presence of 1 µM forskolin to increase cAMP levels. While the response to high glucose alone was minimal (1.15- and 1.05-fold for INS C96R and corrected cells, respectively), tolbutamide and KCl triggered robust insulin secretion (2.5- and 3.2-fold for both INS C96R and corrected cells). The fractional release of insulin (as % of content) was not significantly different between INS C96R and corrected cells (Figure 3E). However, the insulin content of the INS C96R S7 islet-like aggregates was significantly reduced (5.2-fold lower than in corrected) (Figure 3F). The ratio of human proinsulin content to human insulin content was not significantly different between INS C96R and corrected cells at this stage (Figure 3—figure supplement 1A), but the total proinsulin content was significantly reduced in INS C96R (Figure 3—figure supplement 1B) as well as the ratio of secreted proinsulin in maximal stimulation with KCl (Figure 3—figure supplement 1C). Taken together, these results show that a) Stage 7 beta-like cells are not functionally mature enough to respond to glucose stimulation alone, and b) the INS C96R beta-like cells maintain their responsiveness to pharmacological stimulation despite markedly decreased proinsulin and insulin content.
 
-## INS mutant beta-like cells presented reduced insulin secretion after in vivo transplantation
+### INS mutant beta-like cells presented reduced insulin secretion after in vivo transplantation
 
 Islet-like cell clusters from INS C96R, INS C109Y and corrected cell lines were transplanted under the kidney capsule of NSG mice to study the effect of the insulin mutation on beta-like cells in vivo (Figure 4A). Graft functionality was tracked from 1 to 6 months after transplantation by measuring circulating human C-peptide in plasma samples from randomly fed mice. Mice carrying INS C96R and INS C109Y grafts presented significantly lower levels of human C-peptide than mice carrying INS corrected grafts (Figure 4B). The levels of C-peptide increased from the 2 month time point onwards for the INS corrected grafts (p < 0.0001, One-way ANOVA), while no change was observed in the INS C96R and INS C109Y grafts (Figure 4B). The increase in circulating human C-peptide in INS corrected grafts can be attributed to further expansion and maturation of the transplanted beta-like cells. Additionally, differentiation of co-transplanted pancreatic progenitors to the beta-cell lineage is likely to contribute as well.
 
@@ -103,17 +147,29 @@ Islet-like cell clusters from INS C96R, INS C109Y and corrected cell lines were 
 
 Intraperitoneal glucose tolerance test performed at 3 or 6 months after grafting showed that INS corrected grafts presented higher insulin secretion levels than INS C96R and INS C109Y grafts, both upon fasting and after glucose injection (Figure 4C–D). Mice transplanted with INS C96R grafts presented a trend towards elevated ratio of circulating proinsulin to circulating C-peptide (Figure 4E), a phenomenon that has been previously described in humans with mutant insulin diabetes (Liu et al., 2010b; Liu et al., 2015; Rajan et al., 2010).
 
-## Elevated ER-stress levels in INS mutant beta-like cells after transplantation without increased apoptosis
+### Elevated ER-stress levels in INS mutant beta-like cells after transplantation without increased apoptosis
 
 Grafts were retrieved at 1, 3 and 6 months and examined by immunohistochemistry. Almost all INS C96R and INS C109Y INS+ cells in 3-month-old grafts presented higher levels of immunoreactivity for proinsulin in comparison to INS corrected grafts (Figure 4F–H). A similar pattern was observed in the S7 cells, as well as 1 month and 6 month grafts (Figure 5—figure supplement 1D). Proinsulin immunoreactivity occupied most of the cytoplasm in INS C96R cells, while it was punctate in INS corrected cells. This indicates defective proinsulin transport, resulting in its accumulation (Figure 4G).
 
 Immunohistochemistry for ER-stress markers revealed profound differences in the expression of BIP, MANF and GRP170 at 1, 3 and 6 months, with remarkably increased levels in the INS C96R and C109Y cells compared with INS corrected cells (Figure 5A–E and Figure 3—figure supplement 1E for 3 months grafts) (Figure 5—figure supplement 1 for 1 and 6 month grafts, Figure 5—figure supplement 1C shows the quantification of BIP intensity on a per cell basis). The percentage of INS C96R beta-like cells expressing high levels of BIP increased dramatically after transplantation (Figure 5F, Figure 5—figure supplement 1C), indicating a progressive aggravation of ER-stress in vivo. Mild UPR increase has been shown to induce beta-cell proliferation in hyperglycemic conditions (Sharma et al., 2015). We examined the relationship between the proliferation marker PCNA and the ER-stress marker BIP, but we did not find a consistent correlation (Figure 5—figure supplement 2A). We performed a similar analysis for proliferation marker KI67 and the intensity of INS and PROINS immunostaining, since decreased levels of INS expression have been associated with increased beta-cell proliferation (Szabat et al., 2016; Xin et al., 2018). KI67+ cells presented reduced INS immunostaining intensity across genotypes and time points, suggesting a possible correlation between reduced INS expression and increased proliferation (Figure 5—figure supplement 2B–C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) Immunohistochemistry for ER-stress markers BIP, GRP170 and MANF together with INS in 3 months old grafts. Scale bars = 100 μm. (D) Closer magnification of immunohistochemistry for MANF. Scale bars 20 μm. (E) Quantification of (A–C). Percentage of insulin positive cells expressing BIP, GRP170 or MANF in 3 months old grafts (n = 3–5 independent transplanted animals per genotype; Kruskal-Wallis test). (F) Dynamic changes in the percentage of insulin positive cells expressing BIP between Stage 7 and 6 months old grafts (n = 3–6; Student’s t test). Data represent mean ± SEM. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunohistochemistry for endocrine hormones GCG, INS and CHGA, ER-stress marker BIP and proliferation marker KI67 in 1 month old grafts, and its quantification (n = 4–5; n.s. = not significant using Mann-Whitney test; **p < 0.01 using Student’s t test with Welch’s correction). (B) Immunohistochemistry for endocrine hormones GCG, INS and CHGA, ER-stress marker BIP and proliferation marker KI67 in 6 months old grafts, and its quantification. Data represent mean ± SEM, n = 3–4 independent grafts per cell genotype. Scale bars = 100 µm. (C–D) Quantification of BIP and PROINS staining mean fluorescence intensity per individual INS+ cell across genotypes and timepoints. ***p < 0.001, Student’s t test. Data represent mean ± SEM, n = 44–268, a.u. = arbitrary units.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38519/elife-38519-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) Quantification of BIP, INS and PROINS staining mean fluorescence intensity per individual proliferating (PCNA+ or KI67+) and non-proliferating INS+ cell across genotypes and timepoints. *p < 0.05, **p < 0.01, ***p < 0.001, Student’s t test. Data represent mean ± SEM, n = 7–268, a.u. = fluorescence intensity arbitrary units.
+
 Similar to proinsulin, MANF immunoreactivity occupied most of the cytoplasm in INS C96R cells, indicating accumulation in a distended ER (Figure 5D)(Lindahl et al., 2014). To detect if MANF was released from the cells under ER-stress, we measured it in vitro and in transplanted animals. Overnight MANF secretion tended to be elevated in the INS C96R in vitro cells, but this difference was not significant (Figure 3—figure supplement 1D). Circulating human MANF levels were below detection limits in the blood of transplanted animals.
 
 Apoptotic INS+ cells assayed by TUNEL or CASP3 staining were very rare at all time points (<0.5% at 3 months, not significantly different) (Figure 3—figure supplement 1F), suggesting that aggravated ER-stress does not lead to increased apoptosis of the INS C96R or INS C109Y cells in vivo.
 
-## INS mutant grafts presented altered endocrine cell proportions and PDX1 expression
+### INS mutant grafts presented altered endocrine cell proportions and PDX1 expression
 
 The proportion of INS+ cells was significantly reduced in INS C96R grafts at 3 months. This finding was further confirmed by immunohistochemistry for C-peptide (CPEP) (Figure 6A–B). On the contrary, the glucagon (GCG) positive cell compartment was increased (Figure 6A–B). We examined other endocrine hormones and found that there were no significant differences in the ratios of somatostatin (SST) positive or pancreatic polypeptide (PP) positive cells. However, the percentage of ghrelin (GHRL) positive cells was significantly increased in INS C96R grafts (Figure 6A–B). Double hormone positive INS+GCG+, CPEP+GCG+, INS+SST+, INS+GHRL+ or CPEP+PP+ cells were very rare (<2%) and not significantly different between INS C96R and corrected grafts (Figure 6C).
 
@@ -123,7 +179,7 @@ The proportion of INS+ cells was significantly reduced in INS C96R grafts at 3 
 
 The proportion of cells co-expressing PDX1 and C-peptide was significantly reduced in 3-month-old grafted INS C96R beta-cells (Figure 6A,D). Proliferation of INS C96R beta-like cells was significantly impaired at S7 in vitro (Figures 3B and 6E–F). Following transplantation, this difference gradually disappeared as the proliferation of INS corrected cells decreased (Figure 6D–F). This may recapitulate human postnatal beta-cell development, with a postnatal peak of proliferation that declines rapidly during the first two years of life (Gregg et al., 2012; Meier et al., 2008).
 
-## mTORC1 signaling was dysregulated in INS+ mutant cells
+### mTORC1 signaling was dysregulated in INS+ mutant cells
 
 mTORC1 signaling is required for the proper postnatal growth and maturation of beta-cells (Ni et al., 2017; Sinagoga et al., 2017). Single-cell RNA-seq revealed downregulation of genes involved in proliferation, oxidative phosphorylation and mTORC1 regulation (LAMTOR5) in INS C96R beta-like cells. These processes are in part regulated by mTORC1 signaling, suggesting that it could be dysregulated in INS C96R cells. We found that immunoreactivity for phosphorylated S6, a central downstream signaling target of mTORC1, was significantly reduced in INS+ 3 month-old INS C96R grafts (Figure 7A–C). Consistent with reduced mTORC1 signaling, INS+ cell size was also significantly reduced in the INS C96R grafts (Figure 7B–C).
 
@@ -161,21 +217,514 @@ Our study extends the observations from the diabetic Akita model into human diab
 
 ## Materials and methods
 
-## hiPSC derivation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens) Male</td>
+      <td>HEL71.4</td>
+      <td>Biomedicum Stem Cell Center, University of Helsinki</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens) Male</td>
+      <td>HEL71.4 - corrected clones A2, F2, F10 and G6</td>
+      <td>Biomedicum Stem Cell Center, University of Helsinki</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens) Female</td>
+      <td>HEL107.2</td>
+      <td>Biomedicum Stem Cell Center, University of Helsinki</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG-Cas9-T2A-EGFP-ires-puro</td>
+      <td>DOI: 10.1016/j.celrep.2017.03.055</td>
+      <td>Addgene plasmid # 78311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-OCT4</td>
+      <td></td>
+      <td>Santa Cruz Biotechnology Cat# sc-9081; RRID:AB_2167703</td>
+      <td>ICC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-TRA1-60</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# MA1-023; RRID:AB_2536699</td>
+      <td>ICC; (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-SSEA3</td>
+      <td></td>
+      <td>Millipore Cat# MAB4303; RRID:AB_177628</td>
+      <td>ICC; (1:70)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-AFP</td>
+      <td></td>
+      <td>Dako Cat# A0008; RRID:AB_2650473</td>
+      <td>ICC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-SMA</td>
+      <td></td>
+      <td>Sigma-Aldrich Cat# A2547; RRID:AB_476701</td>
+      <td>ICC; (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-TUJ1</td>
+      <td></td>
+      <td>R and D Systems Cat# MAB1195; RRID:AB_357520</td>
+      <td>ICC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-PDX1</td>
+      <td></td>
+      <td>R and D Systems Cat# AF2419; RRID:AB_355257</td>
+      <td>ICC, IHC; (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-NKX6.1</td>
+      <td></td>
+      <td>DSHB Cat# F55A10; RRID:AB_532378</td>
+      <td>ICC, IHC; (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-SOX9</td>
+      <td></td>
+      <td>Millipore Cat# AB5535; RRID:AB_2239761</td>
+      <td>ICC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep anti-NEUROG3</td>
+      <td></td>
+      <td>R and D Systems Cat# AF3444; RRID:AB_2149527</td>
+      <td>ICC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-INS</td>
+      <td></td>
+      <td>Dako Cat# A0564; RRID:AB_10013624</td>
+      <td>ICC, IHC; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-C-peptide</td>
+      <td></td>
+      <td>Cell Signaling Technology Cat# 4593S; RRID:AB_10691857</td>
+      <td>IHC; (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-ProINS</td>
+      <td></td>
+      <td>DSHB Cat# GS-9A8; RRID:AB_532383</td>
+      <td>IHC; (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GCG</td>
+      <td></td>
+      <td>Sigma-Aldrich Cat# G2654; RRID:AB_259852</td>
+      <td>IHC; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-CHGA</td>
+      <td></td>
+      <td>Dako Cat# A0564</td>
+      <td>IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-SST</td>
+      <td></td>
+      <td>Dako Cat# A0566; RRID:AB_10013726</td>
+      <td>IHC; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-PPY</td>
+      <td></td>
+      <td>Sigma-Aldrich Cat# SAB2500747; RRID:AB_10611538</td>
+      <td>IHC; (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-GHRL</td>
+      <td></td>
+      <td>Santa Cruz Biotechnology Cat# sc-10368; RRID:AB_2232479</td>
+      <td>IHC; (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-KI67</td>
+      <td></td>
+      <td>Leica Microsystems Cat# NCL-Ki67p; RRID:AB_442102</td>
+      <td>IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PCNA</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# MA5-11358; RRID:AB_10982348</td>
+      <td>IHC; (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-BIP</td>
+      <td></td>
+      <td>Cell Signaling Technology Cat# 3177S; RRID:AB_2119845</td>
+      <td>IHC; (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GRP170</td>
+      <td></td>
+      <td>Abcam Cat# ab124884; RRID:AB_10973544</td>
+      <td>IHC; (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-MANF</td>
+      <td></td>
+      <td>Santa Cruz Biotechnology Cat# sc-34560; RRID:AB_670934</td>
+      <td>IHC; (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-CDH1 (E-Cadherin)</td>
+      <td></td>
+      <td>BD Biosciences Cat# 610181; RRID:AB_397580</td>
+      <td>IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-pS6</td>
+      <td></td>
+      <td>Cell Signaling Technology Cat# 4858; RRID:AB_916156</td>
+      <td>IHC; (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-MT-CO1</td>
+      <td></td>
+      <td>Abcam Cat# ab14705; RRID:AB_2084810</td>
+      <td>IHC; (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-MT-CO2</td>
+      <td></td>
+      <td>Abcam Cat# ab79393; RRID:AB_1603751</td>
+      <td>IHC; (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-TOM20</td>
+      <td></td>
+      <td>Santa Cruz Biotechnology Cat# sc-11415; RRID:AB_2207533</td>
+      <td>IHC; (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Caspase3</td>
+      <td></td>
+      <td>Cell Signaling Technology Cat# 9664; RRID:AB_2070042</td>
+      <td>IHC; (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-CD184 (CXCR4) Monoclonal Antibody, Phycoerythrin Conjugated, Clone 12G5</td>
+      <td></td>
+      <td>BD Biosciences Cat# 555974; RRID:AB_396267</td>
+      <td>FC; (1:1)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG2a, kappa Isotype Control, Phycoerythrin Conjugated, Clone G155-178 antibody</td>
+      <td></td>
+      <td>BD Biosciences Cat# 563023</td>
+      <td>FC; (1:1)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Insulin (C27C9) Rabbit Antibody (Alexa Fluor 647 Conjugate)</td>
+      <td></td>
+      <td>Cell Signaling Technology Cat# 9008; RRID:AB_2687822</td>
+      <td>FC; (1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG Isotype Control (Alexa Fluor 647 Conjugate) antibody</td>
+      <td></td>
+      <td>Cell Signaling Technology Cat# 3452S; RRID:AB_10695811</td>
+      <td>FC; (1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-NKX6.1 Phycoerythrin Conjugated</td>
+      <td></td>
+      <td>BD Biosciences Cat# 555574</td>
+      <td>FC; (1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG1, kappa Isotype Control, Phycoerythrin Conjugated, Clone MOPC-21 antibody</td>
+      <td></td>
+      <td>BD Biosciences Cat# 555749; RRID:AB_396091</td>
+      <td>FC; (1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-NKX6-1 Alexa Fluor 647 Conjugated</td>
+      <td></td>
+      <td>BD Biosciences Cat# 563338</td>
+      <td>FC; (1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG1 kappa isotype control Alexa 647 Conjugated</td>
+      <td></td>
+      <td>BD Biosciences Cat# 557714; RRID:AB_396823</td>
+      <td>FC; (1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-PDX1 Phycoerythrin Conjugated</td>
+      <td></td>
+      <td>BD Biosciences Cat# 562161; RRID:AB_10893589</td>
+      <td>FC; (1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 350</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A10039; RRID:AB_2534015</td>
+      <td>IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 350</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A10035; RRID:AB_2534011</td>
+      <td>IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-21206; RRID:AB_2535792</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-21202; RRID:AB_141607</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Guinea Pig IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 594</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-11076; RRID:AB_2534120</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Sheep IgG (H + L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 594</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-11016; RRID:AB_2534083</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat IgG (H + L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 594</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-11058; RRID:AB_2534105</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat IgG (H + L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-11055; RRID:AB_2534102</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 594</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-21203; RRID:AB_2535789</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 594</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-21207; RRID:AB_141637</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rat IgM Heavy Chain Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-21212; RRID:AB_2535798</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 594</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-21203; RRID:AB_2535789</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat IgG (H + L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 594</td>
+      <td></td>
+      <td>Thermo Fisher Scientific Cat# A-11058; RRID:AB_2534105</td>
+      <td>ICC, IHC; (1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CYCLOG qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_004792</td>
+      <td>Fw: TCTTGTCAATGGCCAACAGAG; Rv: GCCCATCTAAATGAGGAGTTG;84 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PDX1 qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_004792</td>
+      <td>Fw: TCTTGTCAATGGCCAACAGAG; Rv: GCCCATCTAAATGAGGAGTTG; 84 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NKX6.1 qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_000209.3</td>
+      <td>Fw: AAGTCTACCAAAGCTCACGCG; Rv: CGTAGGCGCCGCCTGC; 52 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CHGA qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_001275.3</td>
+      <td>Fw: AACCGCAGACCAGAGGACCA; Rv: GTCTCAGCCCCGCCGTAGT;102 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>INS qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_020999</td>
+      <td>Fw: GACGACGCGAAGCTCACCAA; Rv: TACAAGCTGTGGTCCGCTAT; 98 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BIP (HSPA5) qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_005347.4</td>
+      <td>Fw: TGGCTGGAAAGCCACCAAGATGCT; Rv: GGGGGAGGGCCTGCACTTCCAT; 116 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sXBP1 qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_001079539.1</td>
+      <td>Fw: CTGCTGAGTCCGCAGCAGGTGCA; Rv: GGTCCAAGTTGTCCAGAATGC; 129 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CHOP (DDIT3) qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_001195053.1</td>
+      <td>Fw: GCACCTCCCAGAGCCCTCACTC; Rv: CCCGGGCTGGGGAATGACCA;120 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ATF3 qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_001206488.2</td>
+      <td>Fw: AGAAAGAGTCGGAGAAGC; Rv: TGAAGGTTGAGCATGTATATC; 103 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ATF4 qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_001675.2</td>
+      <td>Fw: AAGGCGGGCTCCTCCGAATGG; Rv: CAATCTGTCCCGGAGAAGGCATCC;89 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ATF6 qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_001675.2</td>
+      <td>Fw: ACCTGCTGTTACCAGCTACCACCCA; Rv: GCATCATCACTTCGTAGTCCTGCCC;120 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MANF qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_006010.4</td>
+      <td>Fw: GGCGACTGCGAAGTTTGTAT; Rv: TTGCTTCCCGGCAGAACTTT; 121 bp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GRP170 (HYOU1) qRT-PCR primer pair</td>
+      <td></td>
+      <td>NM_001130991.2</td>
+      <td>Fw: GTCCAAGGGCATCAAGGCTC; Rv: TTCTGCGCTGTCCTCTACCA; 103 bp</td>
+    </tr>
+  </tbody>
+</table>
+
+### hiPSC derivation
 
 Dermal fibroblasts obtained from a skin biopsy were reprogrammed using retroviral delivery of the OCT4, SOX2, MYC and KLF4 transcription factors, as described elsewhere (Toivonen et al., 2013). hiPS cells were cultured on Matrigel (BD Biosciences)-coated plates with E8 medium (Life Technologies, A1517001) and passaged using 5 mM EDTA (Life Technologies, 15575–038) as a dissociation agent. For pluripotency characterization, cells were spontaneously differentiated using embryoid-body assay (Balboa et al., 2017). Karyotype analyses based on chromosomal G-banding were performed at Yhtyneet Medix Laboratories, Helsinki, Finland. All hiPSC lines were authenticated using Sanger sequencing for the insulin gene mutations and were negative for mycoplasma contamination test.
 
-## Genome editing
+### Genome editing
 
 Guide RNAs (gRNAs) targeting the insulin locus were designed using web-based tool http://crispr.mit.edu (Hsu et al., 2013), selecting for guide RNAs with high quality scores to avoid possible off-targets. Transcriptional units for gRNA expression were prepared by PCR (Balboa et al., 2015) and transfected to HEK293 cells together with WT SpCas9 expressing plasmid CAG-Cas9-T2A-EGFP-ires-puro (Addgene plasmid # 78311). Cutting efficiency was determined using T7 endonuclease I (New England Biolabs) assay (PCR primers: hIns_1229_Fw: GGGTGACCCTCCCTCTAACC, 3’Ins-Rv: TCAGCGGCCGCTCCACAGGGACTCCATCAGA). gRNA Ins8 (CTGGTAGAGGGAGCAGATGC-TGG) was found to cut with high efficiency 9 bp away from the INS C96R mutation. A correction strategy was devised, based on the recombination with a 70 bases single stranded DNA oligo (ssODN), complementary to the Ins8 gRNA. This ssODN corrects the C96R mutation and introduces a synonymous coding nucleotide change, disrupting the protospace adjacent motif (PAM) and creating a novel BsrGI restriction site that facilitates the screening of recombinant clones (Figure 1—figure supplement 2) (ssODN_Ins8_BsrGI:GCAGAAGCGTGGCATTGTGGAACAATGCTGTACAAGCATCTGCTCCCTCTACCAGCTCGAGAACTACTGC). For correction of the mutation in the patient-derived iPSC, two million HEL71.4 cells were electroporated with 6 μg of CAG-Cas9-T2A-EGFP-ires-puro endotoxin-free plasmid, 500 ng of gRNA-PCR Ins8 product and 6 μg ssODN (Neon Transfection System, 1100 V, 20 ms, two pulses, ThermoFisher). Cells were immediately plated onto Matrigel-coated plates containing E8-medium with 5 μM ROCK inhibitor (Y-27632 2HCl, Selleckchem). Cells positive for GFP fluorescence were pool-sorted 48 hr later and expanded. Single-cell sorting was performed as previously described (Saarimäki-Vire et al., 2017). Plasmids and detailed protocols have been deposited on Addgene (http://www.addgene.org/78311/).
 
-## Differentiation experiments
+### Differentiation experiments
 
 For differentiation of iPSC to beta-cells a modification of previously published protocols was used (Pagliuca et al., 2014; Rezania et al., 2014), as described previously (Saarimäki-Vire et al., 2017) (Figure 1—figure supplement 3A). Cells were dissociated with 5 mM EDTA treatment for 10 min and seeded at 1.5–2 million cells/3.5 cm well on Matrigel-coated plates with E8 medium containing 5 μM ROCK inhibitor (Y-27632 2HCl, Selleckchem). Differentiation was started 24 hr later and proceeded through seven stages differentiation protocol (Stages 1 to 4 in adherent culture and stages 5 to 7 in suspension culture):
 
 To improve reproducibility and standardize the differentiation, small molecule compounds were prepared in batches of stage-specific supplements, enabling rapid differentiation media preparation and consistency between experiments:
 
-## S3 supplement preparation, 2500X stock
+#### S3 supplement preparation, 2500X stock
 
 SANT1 (2.5 mM) 100 μL 200 μL
 
@@ -189,7 +738,7 @@ DMSO 20 μL 40 μL
 
 TOTAL 400 μL 800 μL
 
-## S4 supplement preparation, 2500X stock
+#### S4 supplement preparation, 2500X stock
 
 LDN (1 mM) 200 μL 400 μL
 
@@ -203,7 +752,7 @@ DMSO 50 μL 100 μL
 
 TOTAL 400 μL 800 μL
 
-## S5 supplement preparation, 1500X stock
+#### S5 supplement preparation, 1500X stock
 
 RA (10 mM) 5 μL 10 μL
 
@@ -221,7 +770,7 @@ DMSO 61.6 μL 123.2 μL
 
 TOTAL 666.6 μL 1333.2 μL
 
-## S6 supplement preparation, 2000X stock
+#### S6 supplement preparation, 2000X stock
 
 ALK5inhII (50 mM) 200 μL 400 μL
 
@@ -233,11 +782,11 @@ GSiXX (1 mM) 100 μL 200 μL
 
 TOTAL 500 μL 1000 μL
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Cytometry for definitive endoderm marker CXCR4+ was performed as previously described (Saarimäki-Vire et al., 2017). For intracellular antigen pancreatic marker cytometry of Stage 4 or Stage 7, cells were dissociated with TrypLE for 5–10 min at 37°C and resuspended in 5% FBS-containing PBS. Cells were fixed and permeabilized using Cytofix/Cytoperm (554714, BD Biosciences) as recommended by manufacturer. Primary or conjugated antibodies were incubated with the cells overnight at 4°C in Perm/Wash buffer (554714, BD Biosciences) containing 4% FBS. Cells were washed 2x with Perm/Wash buffer and analysed using FACSCalibur cytometer (BD Biosciences) and FlowJo software (Tree Star Inc.).
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA was isolated using NucleoSpin Plus RNA kit (Macherey-Nagel). SimpliNano (General Electric) spectrophotometer was used to measure RNA quality and concentration. A total of 1.5 μg RNA was denatured at 65° C for 1 min and reverse transcribed (RT) with 0.5 μL Moloney murine leukemia virus (MMLV) reverse transcriptase (M1701, Promega), 0.2 μL Random Primers (C1181, Promega), 1 μL Oligo(dT)18 Primer (SO131, ThermoFisher) and 0.5 μL Ribolock RNAse inhibitor (EO0382, ThermoFisher) for 90 min at 37° C. qRT-PCR reactions were prepared with 50 ng of retrotranscribed RNA were amplified with 5 μL of forward and reverse primer mix at 2 μM each using 5x HOT FIREPol EvaGreen qPCR Mix Plus (no ROX) in a final volume of 20 μL. QIAgility (Quiagen) liquid handling system was used for pipetting the reactions into 100 well disc that were subsequently sealed and run in Rotor-Gene Q (Qiagen) with a thermal cycle of 95° C for 15 min, followed by 40 cycles of 95° C, 25 s; 57° C, 25 s; 72° C, 25 s, followed by a melting step.
 
@@ -245,21 +794,21 @@ Relative quantification of gene expression was analysed using ΔΔCt method, wit
 
 Expression levels were normalized in each sample by the percentage of INS+ cells determined by cytometry and presented as relative to INS corrected cells. See Key Resource Table for primer list.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
-## Single-cell transcriptome barcoding in droplets and library preparation for Illumina sequencing
+#### Single-cell transcriptome barcoding in droplets and library preparation for Illumina sequencing
 
 For scRNAseq, InDrop (Klein et al., 2015) was implemented following the protocol as previously described (Zilionis et al., 2017). Briefly, stage 7 islet-like aggregates were dissociated into single cells by incubation with a 1:1 mixture of TrypLE Express and Trypsin-EDTA for 10 min at 37°C. Dissociated cells were passed through a 30 μm strainer to remove cell clumps. Single cells were co-encapsulated into 3–4 nL droplets together with barcoded hydrogel beads and a mixture of reverse-transcription (RT) and lysis reagents. Within every single droplet, a cell was lysed and cDNA tagged with a barcode during reverse transcription. The droplet emulsion was broken and the bulk material was taken through the following steps: i) second strand synthesis; ii) linear amplification by in vitro transcription (IVT); amplified RNA fragmentation; iv) reverse transcription; v) PCR. In total, four samples from independent experiments were processed. They were produced in two parallel differentiation runs from HEL71.4 mutant and HEL71.4-A2 corrected iPSC lines, that were encapsulated at two different timepoints. The resulting DNA libraries were multiplexed and sequenced together on NextSeq Illumina platform in paired-end mode using a high-yield 75 cycle kit. Read quality was assessed by running FASTQC (version 0.10.1).
 
-## Sequencing read processing
+#### Sequencing read processing
 
 To process the sequencing reads and to generate count matrices, a previously published set of Python scripts were used (Klein et al., 2015; Zilionis et al., 2017) (Supplementary materials). Briefly, raw transcript reads were trimmed with Trimmomatic 0.36, and barcode reads were filtered for expected structure (known cellular barcode, W1 sequence, poly-T tail). Modifications to the original scripts include a hamming distance of 5 for W1 sequence matching and minimum poly-T length of 3 for the barcode reads. Filtered reads were sorted based on barcodes, and barcodes having at least 20 000 reads were kept. The filtered reads were aligned with bowtie 1.1.1 (Langmead et al., 2009) to the Ensembl GRCh38 cDNA reference from which haplotypic transcripts were removed. A poly-A sequence of 125 bases was added to each transcript before building the bowtie index. Details on read alignment and UMI quantification arguments can be found in the supplementary materials. Percentages of unaligned reads per barcode were recorded from the script output and used in count matrix quality control. See also Supplementary file 1 – Table 9.
 
-## Count matrix quality control
+#### Count matrix quality control
 
 We examined the percentages of unmapped reads, total numbers of counts, detected genes per cell, and percentages of apoptotic and mitochondrial counts of cells, and removed the outliers based on these metrics. Cells with less than 50% unmapped reads were kept. Cells with total numbers of counts and detected genes three median-absolute-deviations above or below the median (log10 scale) in a given sample were removed. Cells with over 2% apoptosis gene counts (3 out of 1295 mutant and 2 out of 992 corrected cells) were filtered out. As apoptosis genes, the HALLMARK_APOPTOSIS gene set from Broad Institute’s Molecular Signatures Database (MSigDB) was used. The distributions of mitochondrial counts per cell were different between genotypes: the proportions were higher for corrected samples and the upper tail of their distribution extended further (Figure 2—figure supplement 3). The thresholds for filtering cells were adjusted accordingly: 20% for mutant cells, and 40% for corrected cells (corresponding to values 3.5 standard deviations above the mean, 22 out of 1295 mutant cells and 17 out of 992 corrected cells were removed based on their mitochondrial gene expression)(Figure 2—source data 2). The R package scater 1.4.0 was used for quality control of count data. See also Supplementary file 1 – Table 9.
 
-## Clustering
+#### Clustering
 
 Clustering was performed with Seurat 2.0.1 (Satija, R., Butler, A. and Hoffman, P., 2017. Seurat: Tools for Single Cell Genomics. R package version 2.0.1. https://CRAN.R-project.org/package=Seurat). The samples were divided into genotype groups and normalized regressing out the sample identity and total number of counts (nUMI). The genotype groups were combined using Seurat’s integration strategy in which datasets are aligned based on their shared gene correlation structure (Butler et al., 2018). Canonical correlation analysis (CCA) was performed on the data sets to identify their common sources of variation. For CCA, the union of the 1000 most highly variable genes in the two data sets was used. The first 8 CCA dimensions were used to align the mutant and corrected samples with Seurat’s AlignSubspaces function. The cells were clustered in aligned CCA space (eight dimensions) with Seurat’s FindClusters function using a resolution of 0.8 and the SLM algorithm. Sample identity and nUMI were passed as latent variables to the clustering function. Clusters that had less than 20 differentially expressed (DE) genes with a fold change of 1.5 (FDR = 5%) between them were merged. DE genes for all pairs of clusters were identified with Seurat’s function FindMarkers with the following arguments: min.pct = 0, test.use = ‘negbinom’, thresh.use = log(1.5), only.pos = F, latent.vars = c(‘sample’,‘nUMI’).
 
@@ -271,59 +820,59 @@ Cluster markers were identified using Seurat’s function FindAllMarkers with th
 
 Dimensionality reduction with t-SNE was performed using Seurat’s RunTSNE function with the following arguments: reduction.use = ‘cca.aligned’, dims.use = 1:8, do.fast = T, perplexity = 70.
 
-## Differential expression between mutant and corrected cells
+#### Differential expression between mutant and corrected cells
 
 For cells in the refined beta-like and progenitor clusters, differential expression between mutant and corrected cells was tested with MAST 1.4.0 (Finak et al., 2015). The expression data used were log-normalized values (Seurat default) with base changed to 2. Only genes expressed in at least 3 cells in both genotype groups were considered. A hurdle model was fitted with terms for genotype and encapsulation day, and the genotype effect was tested with a likelihood ratio test. P-values were adjusted for multiple testing using the Benjamini-Hochberg method. Genes with fold changes of at least 1.3 and adjusted p-values below 0.05 were considered differentially expressed.
 
-## Functional enrichment analysis
+#### Functional enrichment analysis
 
 The statistical overrepresentation test for GO terms was performed with PANTHER at www.pantherdb.org. The binomial test was run with default settings using lists of gene names, the biological process (BP) category, and all human genes in the database as reference. Bonferroni correction for multiple testing was used. GSEA was performed with CAMERA of the R package limma 3.32.6. The curated C2 gene sets were downloaded from MSigDB. The same gene expression values and linear model formula were used for GSEA and differential expression tests with MAST. Only genes expressed in at least 3 cells in both genotype groups were considered. An FDR of 5% was used as the threshold for statistical significance.
 
-## Pseudotime analysis
+#### Pseudotime analysis
 
 Pseudotime analysis was performed with the R package Monocle 2.4.0 (Qiu et al., 2017). The mutant and corrected samples were processed and ordered together. Highly variable genes used for ordering (with empirical dispersion at least two times greater than the dispersion fit) were selected from the corrected samples only, to avoid biasing the ordering by the mutant cells. Dimensionality of the data was reduced with the DDRTree algorithm.
 
 Sample identity was used in the residual model formula to reduce sample-specific effects on ordering. This was done to enable side-by-side comparison of mutant and corrected cells on the same trajectory. Branch dependent genes, for examining the differences between progenitor branches, were identified with Monocle 2’s BEAM function controlling for sample identity. Pseudotime was reversed by applying
 
-max(P)−p,
+$max(P)−p$,
 
 where P is the set of pseudotime values, to each pseudotime value p.
 
 Pseudotime-dependent genes were identified with Monocle 2’s differentialGeneTest function. The test was performed separately for mutant and corrected samples controlling for sample identity. The union of pseudotime-dependent genes (q-value < 0.05%) of the mutant and corrected samples were further used for testing e differentially expressed genes between genotypes along pseudotime. This test was performed with Monocle 2’s function differentialGeneTest using the combined data, controlling for encapsulation date and pseudotime. A q-value of 0.05 was set as the threshold of statistical significance. Scripts used for these analyses can be found in the Supplementary materials.
 
-## Induction of apoptosis by ER-stress inducers
+### Induction of apoptosis by ER-stress inducers
 
 One hundred manually picked Stage 7 islet-like aggregates were incubated in full Stage 7 media with the corresponding concentration ER-stress inducers. Brefeldin A (B5936, Sigma-Aldrich) was used at 1 μg/mL in DMSO for 24 hr. Thapsigargin (T9033, Sigma-Aldrich) and tunicamycin (T7765, Sigma-Aldrich) were used at 1 μM and 5 μg/mL respectively for 48 hr. DMSO was used as a vehicle control at 5 μL/mL. Aggregates were collected and PFA-fixed for immunohistochemistry after treatment.
 
-## Static glucose stimulated insulin secretion
+### Static glucose stimulated insulin secretion
 
 Stage 7 islet-like aggregates were sampled in groups of 100 to 1.5 mL tubes. They were washed twice with Krebs buffer containing no glucose and then transferred to 12-well plate placed in a rotating platform for incubation in 3.3 mM glucose-containing Krebs buffer for 1 hr (low glucose). This was performed twice. Then aggregates were incubated sequentially in 3.3 mM glucose, 20 mM glucose, 20 mM glucose + 100 μM tolbutamide and 3.3 mM + 30 mM KCl, for a period of 30 min, with two washes with 1 mL Krebs buffer containing no glucose between treatments. 500 μL of supernatant from each treatment incubation were collected, centrifuged to remove possible cells in suspension and stored at −80°C for ELISA-based determination of human insulin concentration. After the last treatment incubation, samples were retrieved and lysed in acid ethanol for determination of total insulin content and DNA content. Stimulated insulin secretion results are presented as fractional release of total human insulin content after cell mass normalization using total DNA content.
 
-## Transplantation of differentiated cells
+### Transplantation of differentiated cells
 
 NOD-SCID-gamma (NSG) (Jackson Laboratories; 005557) mice were housed at Biomedicum Helsinki animal facility, on a 12 hr light/dark cycle and food ad libitum. Transplantations were performed on 3- to 12-month- old mice as described previously (Saarimäki-Vire et al., 2017). Briefly, aggregates equivalent to approximately 5 million cells were loaded on a PE-50 tubing and transplanted under the kidney capsule. Mice were anesthetized with isoflurane. Carprofen (Rimadyl, 5 mg/kg, subcutaneously, Prizer, Helsinki, Finland) and Buprenorphine (Temgesic, 0,05–0,1 mg/kg, subcutaneously, RB pharmaceuticals Lmt, Berkshire, UK) were used as analgesics during the operation and in the following day. Mouse blood samples were collected monthly from the saphenous vein using heparinized capillary tubes. Blood plasma was separated by centrifugation (5000 rcf, 5 min, RT).
 
-## Intraperitoneal glucose tolerance test (IPGTT)
+### Intraperitoneal glucose tolerance test (IPGTT)
 
 IPGTT was performed after 6–8 hr fast. 2 g glucose/kg of body weight was injected intraperitoneally in the form of a 30% glucose solution in water. Blood glucose levels were measured with glucometer (OneTouch Ultra, Lifescan, Milpitas; USA) at 0, 20, 40 and 60 min after glucose injection. Blood samples for measuring human c-peptide levels were taken before, and 40 min after glucose injection.
 
-## ELISA
+### ELISA
 
 Human c-peptide and proinsulin levels were measured from plasma samples and cell supernatants with Ultrasensitive C-PEPTIDE ELISA (Mercodia, Sweden) and PRO-INSULIN (Mercodia, Sweden) according to manufacturer's instructions. Human MANF levels were measured using in-lab ELISA (Galli et al. 2016).
 
-## Immunocytochemistry and histology
+### Immunocytochemistry and histology
 
 Cells on adherent cultures were fixed in 4% PFA for 15–20 min, permeabilized with 0.5% triton-X100 in 1x PBS, blocked with UltraV block (ThermoFisher) for 10 min and incubated with primary antibodies diluted in 0.1% Tween in 1 x PBS at 4°C overnight. Cells were washed with 1 x PBS, incubated with secondary antibodies diluted in 0.1% Tween in PBS. Same procedure was used for whole-mount staining of Stage 7 cell aggregates. For paraffin embedding, Stage 7 cell aggregates were fixed with 4% PFA at RT overnight and briefly stained with Eosin. After this, they were embedded in low-melting Agarose (Sigma-Aldrich) and transferred to paraffin blocks. Grafts were retrieved after IPGTT, dissected and fixed with 4% PFA in RT overnight and placed into cassettes and processed for tissue transfer and paraffin embedding. Paraffin blocks were cut into 5 μm sections. For immunohistochemistry, slides were deparaffinised and antigen retrieval was performed by boiling slides either in 1 mM EDTA or 0.1 M citrate buffer. Blocking and incubation with primary and secondary antibodies were done as described for fixed cells above. For TUNEL analysis, paraffin sections were processed with In Situ Cell death Detection Fluorescein kit (Roche, #11684795910) according to manufacturer's instructions. See Key Resource Table for list of antibodies (ICC: immunocytochemistry on fixed cells; IHC: immunohistochemistry on paraffin sections; FC: flow cytometry)
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Immunofluorescence stainings of adherent cells were imaged with EVOS inverted microscope (LifeTechnologies). Paraffin sections and whole-mount stainings were imaged with Zeiss Axio Observer Z1 with Apotome two and processed with ZEN2 software blue edition. To ensure reliable quantification of the immunostainings, all paraffin sections were stained simultaneously and imaged on the same session with the same microscope parameters. Image quantifications were performed blindly using Fiji software (Schindelin et al., 2012). Quantification of individual cell immunostaining intensity was performed manually using Fiji ROI Manager and Multi Measure tools. Fiji pixel intensity and Cell counter tools were used to score percentages of cells positive, negative, low or high across the different immunostainings.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed with GraphPad Prism (version 7.0 c, GraphPad Software). Data were tested for normal distribution using Shapiro-Wilk normality test. Normally distributed data were analyzed to compare the means of two samples using unpaired two-tailed Student’s t test, with Welch’s correction in the case of samples with unequal variance as determined by F test. One-way ANOVA with multiple comparison Tukey test was used to compare the means of more than two samples. When the data groups were not normally distributed or the sample size was too small, the non-parametric Mann-Whitney U test and Kruskal-Wallis test with the Dunn multiple comparisons test were used to compare the sum of ranks. Details on the statistical analyses performed are described in the figure legends. Data are presented as individual value points and/or the mean as summary statistic with error bars representing the Standard Error of the Mean (SEM). P-values under 0.05 were considered statistically significant (*p < 0.05, **p < 0.01, ***p < 0.001).
 
-## Study approval
+### Study approval
 
 The Coordinating Ethics Committee of the Helsinki and Uusimaa Hospital District (no. 423/13/03/00/08) approved the patient informed consent for the derivation of the hiPSC lines used in this study: HEL71.4 and HEL107.2.
 

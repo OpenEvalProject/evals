@@ -35,25 +35,49 @@ In this study, we leverage the power of single-cell transcriptomics and curate t
 
 ## Results
 
-## Single-cell profiling of sox10:GFP+ cells along the posterior zebrafish during the embryonic and larval stage transition
+### Single-cell profiling of sox10:GFP+ cells along the posterior zebrafish during the embryonic and larval stage transition
 
 To identify sox10-expressing and sox10-derived cells along the posterior zebrafish during the embryonic to larval transition, we utilized the transgenic line sox10:GFP (Figure 1; Carney et al., 2006; Kwak et al., 2013). Tissue posterior to the otic vesicle, encompassing the vagal and trunk axial region (Figure 1B), was dissected from 100 embryonic zebrafish at 48–50 hpf and 100 larval zebrafishes at 68–70 hpf. Dissected tissues were dissociated and immediately subjected to fluorescence-activated cell sorting (FACS) to isolate sox10:GFP+ cells (Figure 1B; Figure 1—figure supplement 1A,B). Isolated cells were then input into 10X Genomics Chromium scRNA-seq assays and captured at a depth of 2300 cells from the 48–50 hpf time point and 2580 cells from the 68–70 hpf time point (Figure 1C; Figure 1—figure supplement 1C). We performed cell filtering and clustering (Figure 1—figure supplement 1D–I) of the scRNA-seq datasets using Seurat (Butler et al., 2018; Stuart et al., 2019) to computationally identify cell populations based on shared transcriptomes, yielding 1608 cells from the 48–50 hpf time point and 2410 cells from the 68–70 hpf time point, totaling 4018 cells for final analysis (Figure 1—figure supplement 1C). We detected cell population clusters with transcriptionally unique signatures, as shown in heatmap summaries that revealed the top enriched gene signatures per cluster, with 19 clusters (0–18) from the 48–50 hpf time point (Figure 1—figure supplement 2A) and 23 clusters (0–22) from the 68–70 hpf time point (Figure 1—figure supplement 2B), totaling 42 clusters across both time points. Datasets were visualized with the t-Distributed Stochastic Neighbor Embedding (tSNE) method, which spatially grouped cells in each cluster, for both time points examined (Figure 1D,E). The top significantly enriched markers for each cluster at 48–50 and 68–70 hpf are provided in a table in Figure 1—source data 1.
 
-## Major classification of sox10:GFP+ cell states
+![Figure 1.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig1-v1.jpg)
+
+**Figure 1.:** (A) Confocal image of a sox10:GFP+ embryo at 48 hpf; Hb: Hindbrain; Sc: Spinal cord. A: Anterior, P: Posterior, D: Dorsal, V: Ventral. Scale bar: 50 μM (B) Cartoon illustrations of a zebrafish embryo at 48–50 hpf and an early larval fish at 68–70 hpf depicted laterally to summarize the dissection workflow used to collect posterior sox10:GFP+ cells. (C) Schematic of the 10X Genomics Chromium and data analysis pipeline. (D) tSNE plots showing the arrangement of Clusters 0–18 and where the major cell types identified among sox10:GFP+ cells arrange in the 48–50 hpf dataset. (E) tSNE plots showing the arrangement of Clusters 0–22 and where the major cell types identified among sox10:GFP+ cells arrange in the 68–70 hpf dataset. (F,G) Dot plots of the identifying gene markers for each major cell type classification in the 48–50 hpf and 68–70 hpf datasets, respectively. Dot size depicts the cell percentage for each marker within the dataset and the color summarizes the average expression levels for each gene.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A,B) Fluorescence activated cell sorting plots highlighting the GFP+ cell population sorted at 48–50 hpf (A) and 68–70 hpf (B). (C) Table of general statistics pertaining to the sequencing and alignment of reads from the Cell Ranger pipeline. Additional metrics provided were derived from the Seurat R package as described in the Materials and Methods section. (D,E) Plots showing the feature selection for both the 48–50 hpf (D) and 68–70 hpf (E) datasets. Cells were selected such that they had fewer than 2500 features to reduce spuriously sorted cells. (F,G) Top 2000 most variably expressed genes were identified and used for further downstream identification of significant principal components, as described in the Materials and Methods section. (H,I) Most significant principal components (top 20 for both datasets) were selected to be used for subsequent cluster identification and cell embedding in tSNE and UMAP spaces.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A,B) Heatmap summarizing the top 10 genes significantly expressed in each cluster, for 48–50 and 68–70 hpf, respectively. Relative expression levels within each cluster is summarized within the color key, where yellow to magenta color indicates high to low gene expression levels. (C,D) Heatmaps summarizing the top 30 genes significantly expressed among the major cell types identified among sox10:GFP+ cells, for 48–50 and 68–70 hpf, respectively. Relative expression levels within each major cell type cluster is summarized within the color key, where yellow to magenta color indicates high to low gene expression levels. (E,F) tSNE plots depicting the major cell type classification representative gene marker for each major cell type category, for 48–50 and 68–70 hpf, respectively. Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A,B) tSNE plots summarizing the G1, S, and G2/M phase cell cycle phase occupancies of the cells in the 48–50 and 68–70 hpf time points, respectively. (C,E) A tSNE plot depicting the expression of aurkb, a G2/M phase marker, within the 48–50 and 68–70 hpf datasets, respectively. Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (D,F) A tSNE plot depicting the expression of mcm3, a S phase marker, within the 48–50 and 68–70 hpf datasets, respectively. Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (G) Bar graphs summarizing the cell cycle phase occupancies, as a fraction of cells within the total datasets for each time point. (H) Bar graphs summarizing the major cell type categories, as a fraction of cells within the total datasets for each time point. (I) Table summarizing the cell cycle genes used to demarcate cell cycle phase occupancy categories within the scRNA-seq datasets.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Panel of tSNE feature plots at 48–50 hpf that identify combinatorial expression of otic vesicle (otomp, cldna, cldn7b and epcam), muscle (ckmb, actc1b, tnnt3a and tpma), or CNS (slc32a1, gad1b, slc6a5, gata2a) markers. Cluster of interest denoted by black arrows. (B) Panel of tSNE feature plots at 68–70 hpf that identify combinatorial expression of otic vesicle markers (otomp, cldna, cldn7b, and epcam) or muscle (ckmb, actc1b, tnnt3a, and tpma). Cluster of interest denoted by black arrows.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Panel of tSNE feature plots of sensory neuronal progenitor markers at 48–50 hpf that show combinatorial expression of neurod4, neurod1, vim, and ngfrb, Cluster of interest denoted by black arrows. (B) Panel of tSNE feature plots of fin bud makers at 48–50 hpf (top) and 68–70 hpf (bottom) that show combinatorial expression of tbx5a, hand2, hoxd13a, and prrx1a. Cluster of interest denoted by black arrows.
+
+### Major classification of sox10:GFP+ cell states
 
 To assess the proliferative state of sox10:GFP+ cells, we determined their G1, S or G2/M phase occupancy, based on expression of proliferative cell cycle marker genes (Figure 1—figure supplement 3I). At 48–50 hpf, 52% of sox10:GFP+ cells were in G1 phase, 31% were in the S phase and 17% in G2/M phase (Figure 1—figure supplement 3G), collectively indicating that 48% of the cells in the 48–50 hpf time point were proliferative. At 68–70 hpf, 64% of cells were in G1 phase, 24% of cells were in the S phase and 12% in G2/M phase (Figure 1—figure supplement 3G), indicating that 36% of the cells were proliferative. The cell cycle occupancy distributions were visualized in tSNE plots, revealing congregations of proliferative and non-proliferative sox10:GFP+ cells (Figure 1—figure supplement 3A,B); aurkb and mcm3 confirmed general occupancy in the G2/M and S phase (Figure 1—figure supplement 3C–F). Together, these data of cell cycle state reflect a general decrease in proliferative cells among sox10:GFP+ populations between 48 and 70 hpf, in agreement with prior observations (Rajan et al., 2018).
 
 Using a combination of gene expression searches of literature and bioinformatics sources, examination of the scRNA-seq transcriptomes indicated that sox10:GFP+ cells exist in several major cell type categories based on the expression of signature marker genes (Figure 1F,G; Figure 1—figure supplement 2E,F). These major cell type categories included: neural, neuronal, glial, mesenchyme, pigment cell, NCC, otic, and muscle; their respective fraction of the datasets was also calculated (Figure 1D–G; Figure 1—figure supplement 2C,D; Figure 1—figure supplement 3H). Neuronal identity refers to cells predominantly expressing neuron markers, such as elavl3/4, while neural cells are defined by a multipotent state with potential towards fates of either glial or neuron identity, and marked by expression of factors such as sox10, dla, and/or ncam1a. Notably, mesenchyme identity represented the largest proportion of the datasets at 61% and 53% of the cells at 48–50 and 68–70 hpf, respectively (Figure 1—figure supplement 3H). Mesenchyme clusters were identified by a combination of mesenchymal gene markers including twist1a/b and prrx1a/b (Soldatov et al., 2019). In addition, cells with an otic vesicle and muscle identity were detected (Figure 1D–G; Figure 1—figure supplement 3H; Figure 1—figure supplement 4), as has previously been described in the sox10:GFP line (Carney et al., 2006; Rajan et al., 2018; Rodrigues et al., 2012; Kwak et al., 2013). Overall, major cell type cluster identities and their top signature marker genes are summarized in Figure 1—source data 2.
 
-## Annotation of cellular types among posterior sox10:GFP+ cells
+### Annotation of cellular types among posterior sox10:GFP+ cells
 
 Closer analysis of the 42 cluster gene signatures among the two time points allowed us to annotate cellular identities in more detail (Figure 1—source data 2). Indeed, we identified previously described NCC-derived cell types. For example, the sox10:GFP line has been shown to transiently label sensory dorsal root ganglion (DRG) progenitors between the first and second day of zebrafish development (McGraw et al., 2008; Rajan et al., 2018). We observed sensory neuronal/DRG gene expression in Cluster 17 at 48–50 hpf (Figure 1—source data 2; Figure 1—figure supplement 5) by the markers neurod1, neurod4, neurog1, six1a/b, elavl4 (Carney et al., 2006; Delfino-Machín et al., 2017). Additionally, we identified other NCC-derivatives, including mesenchymal cells (Le Lièvre and Le Douarin, 1975; Kague et al., 2012; Soldatov et al., 2019; Ling and Sauka-Spengler, 2019), pigment cells (Reedy et al., 1998; Higdon et al., 2013), and enteric neurons (Kelsh and Eisen, 2000; Kuo and Erickson, 2011; Lasrado et al., 2017), which we describe in further detail for both time points in Figures 2–5.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig2-v1.jpg)
 
-**Figure 2.:** sox10:GFP+ cells during embryonic to larval transition.(A) Cartoon schematic depicting the model for neural crest delineation into pigment cell lineages and the genes that were used to identify each pigment cell population. (B) Dot plot identifying melanophore markers within the 48–50 hpf dataset. Dot size depicts the cell percentage for each marker within the dataset and the color summarizes the average expression levels for each gene. (C) tSNE plots depicting melanophore signature in the 48–50 hpf dataset. Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (D) Dot plot showing distinct pigment chromatophore markers within the 68–70 hpf dataset. Dot size depicts the cell percentage for each marker within the dataset and the color summarizes the average expression levels for each gene. M: melanophore markers; X: xanthophore markers; I: iridophore markers. (E–G) tSNE plots revealing the location of melanophores (E), xanthophores (F), and iridophores (G) in the 68–70 hpf dataset. Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (H) HCR against mitfa and tfec at 48–50 hpf reveals mitfa+ melanophores (white arrowhead) and mitfa+/tfec+ pigment progenitors (red arrowhead). Cropped panels show individual fluorescent channels. (I) HCR against mitfa and tfec at 68–70 hpf presents mitfa+ melanophores (white arrowhead), tfec+ iridophores (blue arrowhead), and mitfa+/tfec+ pigment progenitors (red arrowhead). Cropped panels show individual fluorescent channels. (J) HCR against mitfa and xdh at 68–70 hpf shows mitfa+/xdh+ xanthophores (orange arrowhead). Cropped panels show individual fluorescent channels. Scale bar in H-J: 50 µm.Figure 2—source data 1.Table summarizing the genes (‘elements’) exclusively found in Cluster 4, exclusively found in Cluster 18, and genes found in both Clusters 4 and 18 at the 68–70 hpf time point scRNA-seq dataset.
+**Figure 2.:** (A) Cartoon schematic depicting the model for neural crest delineation into pigment cell lineages and the genes that were used to identify each pigment cell population. (B) Dot plot identifying melanophore markers within the 48–50 hpf dataset. Dot size depicts the cell percentage for each marker within the dataset and the color summarizes the average expression levels for each gene. (C) tSNE plots depicting melanophore signature in the 48–50 hpf dataset. Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (D) Dot plot showing distinct pigment chromatophore markers within the 68–70 hpf dataset. Dot size depicts the cell percentage for each marker within the dataset and the color summarizes the average expression levels for each gene. M: melanophore markers; X: xanthophore markers; I: iridophore markers. (E–G) tSNE plots revealing the location of melanophores (E), xanthophores (F), and iridophores (G) in the 68–70 hpf dataset. Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (H) HCR against mitfa and tfec at 48–50 hpf reveals mitfa+ melanophores (white arrowhead) and mitfa+/tfec+ pigment progenitors (red arrowhead). Cropped panels show individual fluorescent channels. (I) HCR against mitfa and tfec at 68–70 hpf presents mitfa+ melanophores (white arrowhead), tfec+ iridophores (blue arrowhead), and mitfa+/tfec+ pigment progenitors (red arrowhead). Cropped panels show individual fluorescent channels. (J) HCR against mitfa and xdh at 68–70 hpf shows mitfa+/xdh+ xanthophores (orange arrowhead). Cropped panels show individual fluorescent channels. Scale bar in H-J: 50 µm.
 
-## Identification of pigment cell types within sox10:GFP+ scRNA-seq datasets
+### Identification of pigment cell types within sox10:GFP+ scRNA-seq datasets
 
 With robust genetic lineage details published on pigment cell differentiation in zebrafish (Kelsh, 2004; Lister, 2002; Quigley and Parichy, 2002), we sought to validate the scRNA-seq datasets by assessing if we could resolve distinct pigment cell populations. Pigment cell development has been broadly studied in the developing zebrafish, where NCCs give rise to three distinct chromatophore populations: melanophores, xanthophores, and iridophores (Figure 2A). Our annotation analysis of sox10:GFP+ scRNA-seq clusters revealed expression of pigment cell lineage gene markers (Figure 2B–J; Figure 1—figure supplement 2). At 48–50 hpf, melanophores were detected in Cluster eight based on expression of mitfa, dct, tyrp1b, and pmela (Du et al., 2003; Lister et al., 1999; Ludwig et al., 2004; Quigley and Parichy, 2002; Figure 1F; Figure 2A), also reflected by the dot and tSNE plots (Figure 2B,C). At 68–70 hpf, we resolved discrete pigment cell populations that included xanthophore, iridophore, and two distinct melanophore clusters (Figure 2D–G, Figure 1—source data 2). The xanthophores mapped to Cluster 15 and were enriched with xdh, aox5, pax7b, mitfa, and gch2 (Nord et al., 2016; Parichy et al., 2000; Saunders et al., 2019; Minchin and Hughes, 2008; Lister et al., 1999; Figure 2A,D,F). Cluster 16 was identified as iridophores, which presented the well-characterized markers: tfec, pnp4a, gpnmb, and atic (Higdon et al., 2013; Lister et al., 2011; Petratou et al., 2018; Petratou et al., 2019; Figure 2A,D,G; Figure 1—source data 2). The use of cell cycle markers revealed that two different melanophore clusters at 68–70 hpf (Clusters 4 and 18) were present in different proliferative states (Figure 1—source data 2). While the majority of cells in Cluster four were in G1, Cluster 18 expressed S and G2/M markers, such as pcna and aurkb, suggesting this population to be proliferating melanophores (Figure 1—figure supplement 3B,E,F; Figure 2—source data 1).
 
@@ -63,9 +87,17 @@ We next performed whole mount HCR to assess the spatial co-expression of mitfa, 
 
 Taken together, the above-described results regarding pigment cell expression patterns validates that the sox10:GFP+scRNA-seq datasets captured discrete NCC-derived populations, and coupled with HCR analysis, shows we are able to validate these cell populations in vivo.
 
-## Mesenchyme in the posterior embryo and larvae exists in various transcriptionally-distinct populations
+### Mesenchyme in the posterior embryo and larvae exists in various transcriptionally-distinct populations
 
 Heatmap analysis of gene expression groups depicted that mesenchyme cells clustered together globally within the datasets (Figure 1—figure supplement 2C,D; Figure 3A,B), with twist1a expression broadly labeling all mesenchyme cells (Figure 1—figure supplement 2E,F). In addition to twist1a, mesenchyme cells also expressed prrx1a/b, twist1b, foxc1a/b, snai1a/b, cdh11, sparc, colec12, meox1, pdgfra (Figure 3A,B), and other known mesenchymal markers such as mmp2 (Figure 1—source data 2; Janssens et al., 2013; Theodore et al., 2017). In whole mount embryos at 48 hpf, we observed broad expression of foxc1a and mmp2 along the posterior pharyngeal arches and ventral regions of the embryo via in situ hybridization (Figure 3—figure supplement 1C,D; arrowheads), confirming their expression territories within posterior-ventral mesenchymal tissues.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig3-v1.jpg)
+
+**Figure 3.:** (A,B) A heatmap of signature mesenchyme identity genes within the major cell type classified cells at 48–50 and 68–70 hpf, respectively. Relative expression levels within each cluster is summarized within the color key, where red to blue color indicates high to low gene expression levels. (C) A cluster tree depicting the relationship between general and chondrogenic mesenchyme cellular subtypes. (D) Violin plots summarizing the expression levels for select mesenchyme identity markers within individual clusters at the 48–50 and 68–70 hpf time points, respectively. Data points depicted in each cluster represent single cells expressing each gene shown. (E,L) tSNE plots depicting the co-expression of twist1a (blue) and barx1 (red) or prrx1b (blue) and barx1 (red) in the 48–50 and 68–70 hpf datasets, respectively. Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (F–K) Whole mount HCR analysis reveals the spatiotemporal expression of prrx1b (F), barx1 (G), twist1a (H), sox10:GFP (J) in 48 hpf embryos. (I) A merge of barx1, prrx1b, and twist1a is shown. (K) A merge of barx1, prrx1b, twist1a, and sox10:GFP is shown. White arrowheads denote expression in posterior pharyngeal arch, while yellow arrowheads highlight fin bud expression. (M–R) Whole mount HCR analysis reveals the spatiotemporal expression of prrx1b (M), barx1 (N), twist1a (O), sox10:GFP (Q) in 68 hpf embryos. (P) A merge of barx1, prrx1b, and twist1a is shown. (R) A merge of barx1, prrx1b, twist1a, and sox10:GFP is shown. White arrowheads denote expression in posterior pharyngeal arch, while yellow arrowheads highlight fin bud expression. Ot: otic; Fb: Fin bud. Scale bar: 100 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A,A’) The marker sox10 is shown along the vagal region and within ENCC along the foregut in (A’; highlighted via arrowheads). Scale bar in (A): 60 μM, in (A’): 40 μM. (B, B’) Expression of phox2bb is shown within the hindbrain-axial level of the embryo, as well as within ENCC within the foregut (B’; highlighted via arrowheads). Scale bar in (A): 60 μM, in (A’): 40 μM. (C,D) The mesenchyme markers mmp2 (C; highlighted via arrowheads) and foxc1a (D; highlighted via arrowheads) are expressed within the posterior pharyngeal arches and the ventral mesenchyme. (E,F) The neural markers notch1a (E) and dla (F) are expressed within the hindbrain and spinal cord (arrowheads). (F) dla expression is seen in the ENCC (arrow). Scale bar in (C–F): 60 μM.
 
 Further analysis revealed various transcriptionally-distinct populations were present among the sox10:GFP+ cells with a mesenchymal identity. Among these, we detected nine clusters with chondrogenic signatures—identified by expression of mesenchymal signature genes, as well as the chondrogenic markers barx1 and/or dlx2a (Sperber et al., 2008; Sperber and Dawid, 2008; Ding et al., 2013; Barske et al., 2016; Figure 3C,D). Feature plot exports revealed distribution of the chondrogenic cells (barx1+) in relation to all other mesenchyme (prrx1b+, twist1a+) cells in the datasets (Figure 3E,L). Within the nine chondrogenic clusters, we discovered gene expression indicative of heterogeneous cell states, ranging from proliferative, progenitor/stem-like, and migratory to differentiating signatures (Figure 1—source data 2). All other mesenchyme clusters (seven in total) were also classified into various progenitor and differentiation categories. Among these categories, the clusters expressed either proliferative progenitor markers, differentiation signatures, or general migratory mesenchymal markers (Figure 1—source data 2). Cluster 14 at 48 hpf and Clusters 1 and 7 at 68–70 hpf exhibited a general mesenchymal signature, but also expressed fin bud marker genes (hand2, tbx5a, hoxd13a, prrx1a, Figure 1—figure supplement 5; Yelon et al., 2000; Lu et al., 2019; Nakamura et al., 2016; Feregrino et al., 2019). Additionally, visualization of clusters with general mesenchyme and chondrogenic identities using a cluster tree highlighted potential similar clusters between the time points (Figure 3C). For example, the cluster tree showed proximal location of Cluster 8 at 68–70 hpf and Cluster 2 at 48–50 hpf, which we noted contained clear proliferative chondrogenic gene signatures (Figure 3D; Figure 1—source data 2).
 
@@ -73,13 +105,13 @@ To confirm the spatial co-expression of prrx1b, twist1a, and barx1 within sox10:
 
 Overall, the above-described analyses indicate that sox10:GFP+ mesenchymal cells in the posterior zebrafish exhibit various transcriptional states between the embryonic to larval transition and suggest that posterior mesenchyme exists in various subpopulations during its differentiation.
 
-## sox10-derived cells during the embryonic to early larval transition reveal enteric progenitor to enteric neuron progression
+### sox10-derived cells during the embryonic to early larval transition reveal enteric progenitor to enteric neuron progression
 
 At 48–50 hpf, cells with NCC identity were notably detected in Cluster 5, defined by expression of the core NCC markers sox10, foxd3, crestin, and tfap2a (Figure 1F; Figure 4, Figure 1—source data 2; Dutton et al., 2001; Luo et al., 2001; Knight et al., 2003; Stewart et al., 2006). Moreover, Cluster five was found to contain various other genes previously shown to be expressed in zebrafish NCCs; including, vim, snai1b, sox9b, zeb2a, mych, and mmp17b (Figure 4D; Cerdà et al., 1998; Heffer et al., 2017; Hong et al., 2008; Leigh et al., 2013; Van Otterloo et al., 2012; Wang et al., 2011; Rocha et al., 2020). We reasoned that many of the NCCs had started their respective differentiation programs and were beginning to assume specified lineage profiles. Therefore, we sought to determine if the NCC cluster also contained gene expression profiles of known differentiating NCC types along the posterior body, such as enteric progenitors, also known as enteric neural crest cells (ENCCs).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig4-v1.jpg)
 
-**Figure 4.:** sox10:GFP+ cell populations.(A) tSNE feature plots reveal expression of core neural crest cell markers sox10, foxd3, crestin, and tfap2a mapping to the neural crest cell cluster (red arrowhead). (B) tSNE feature plots depict expression of the enteric neural crest cell markers phox2bb, ret, ngfrb and gfra1a within the neural crest cell cluster (red arrowhead). Relative expression levels are summarized within the color keys in (A) and (B), where color intensity is proportional to expression level of each gene depicted. (C) A heatmap reveals expression levels of enteric neural crest cell markers across the eight major cell populations captured in the 48–50 hpf data set (color key denotes cells types represented in color bar on top of heatmap). Neural crest cell cluster highlighted in black rectangle. Relative expression levels within each major cell type cluster is summarized within the color key, where yellow to magenta color indicates high to low gene expression levels. (D) Dot plot of expanded list of neural crest (green line) and enteric neural crest (purple line) cell markers across each major cell type within 48–50 hpf data set. Dot size depicts the cell percentage for each marker within the data set and the color summarizes the average expression levels for each gene. (E,F) Whole mount HCR analysis of 48 hpf embryos reveals co-expression of the enteric neural crest cell markers phox2bb, ngfrb, gfra1a, and crestin in (E), or foxd3, ngfrb, gfra1a and crestin in (F), within the developing gut (dashed outline). Top panels depict merged images of color channels for each HCR probe. Lower panels represent gray-scale images of each separated channel corresponding to the magnified region of foregut (gray rectangle). Arrowheads depict regions where all markers are found to be co-expressed. Hb: Hindbrain, Sc: Spinal cord, pLLg: posterior Lateral Line ganglia, LL: Lateral Line. A: Anterior, P: Posterior, D: Dorsal, V: Ventral. Scale bar: 50 μM. (G) tSNE feature plots reveal expression levels of enteric neuron markers elavl3, phox2bb, gfra1a, nos1, vipb, and ret, within a common region of a neuronal cluster (red arrowhead). Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (H) Dot plot depicts expression levels of pan-neuronal and enteric neuron specific markers across individual clusters generated within the original 68–70 hpf tSNE. Pan-neuronal markers found throughout Clusters 5 and 12, with enteric neuron markers most prominently expressed within Cluster 12. Dot size depicts the cell percentage for each marker within the data set and the color summarizes the average expression levels for each gene. (I) Whole mount HCR analysis depicts differentiating enteric neurons within the foregut region at 69 hpf co-expressing nos1, phox2bb, vipb, and elavl3 (yellow arrowheads). Anterior: Left, Posterior: Right. Scale bar: 50 μM.
+**Figure 4.:** (A) tSNE feature plots reveal expression of core neural crest cell markers sox10, foxd3, crestin, and tfap2a mapping to the neural crest cell cluster (red arrowhead). (B) tSNE feature plots depict expression of the enteric neural crest cell markers phox2bb, ret, ngfrb and gfra1a within the neural crest cell cluster (red arrowhead). Relative expression levels are summarized within the color keys in (A) and (B), where color intensity is proportional to expression level of each gene depicted. (C) A heatmap reveals expression levels of enteric neural crest cell markers across the eight major cell populations captured in the 48–50 hpf data set (color key denotes cells types represented in color bar on top of heatmap). Neural crest cell cluster highlighted in black rectangle. Relative expression levels within each major cell type cluster is summarized within the color key, where yellow to magenta color indicates high to low gene expression levels. (D) Dot plot of expanded list of neural crest (green line) and enteric neural crest (purple line) cell markers across each major cell type within 48–50 hpf data set. Dot size depicts the cell percentage for each marker within the data set and the color summarizes the average expression levels for each gene. (E,F) Whole mount HCR analysis of 48 hpf embryos reveals co-expression of the enteric neural crest cell markers phox2bb, ngfrb, gfra1a, and crestin in (E), or foxd3, ngfrb, gfra1a and crestin in (F), within the developing gut (dashed outline). Top panels depict merged images of color channels for each HCR probe. Lower panels represent gray-scale images of each separated channel corresponding to the magnified region of foregut (gray rectangle). Arrowheads depict regions where all markers are found to be co-expressed. Hb: Hindbrain, Sc: Spinal cord, pLLg: posterior Lateral Line ganglia, LL: Lateral Line. A: Anterior, P: Posterior, D: Dorsal, V: Ventral. Scale bar: 50 μM. (G) tSNE feature plots reveal expression levels of enteric neuron markers elavl3, phox2bb, gfra1a, nos1, vipb, and ret, within a common region of a neuronal cluster (red arrowhead). Relative expression levels are summarized within the color keys, where color intensity is proportional to expression level of each gene depicted. (H) Dot plot depicts expression levels of pan-neuronal and enteric neuron specific markers across individual clusters generated within the original 68–70 hpf tSNE. Pan-neuronal markers found throughout Clusters 5 and 12, with enteric neuron markers most prominently expressed within Cluster 12. Dot size depicts the cell percentage for each marker within the data set and the color summarizes the average expression levels for each gene. (I) Whole mount HCR analysis depicts differentiating enteric neurons within the foregut region at 69 hpf co-expressing nos1, phox2bb, vipb, and elavl3 (yellow arrowheads). Anterior: Left, Posterior: Right. Scale bar: 50 μM.
 
 ENCCs fated to give rise to the enteric nervous system (ENS), the intrinsic nervous system within the gut, express a combination of NCC and enteric progenitor marker genes over developmental time (reviewed in Nagy and Goldstein, 2017; Rao and Gershon, 2018), which occurs between 32 and 72 hpf in zebrafish (reviewed in Ganz, 2018). Enteric markers in zebrafish include sox10, phox2bb, ret, gfra1a, meis3, and zeb2a (Dutton et al., 2001; Shepherd et al., 2004; Elworthy et al., 2005; Delalande et al., 2008; Heanue and Pachnis, 2008; Uribe and Bronner, 2015). Therefore, we expected to capture a population of ENCCs within our 48–50 hpf dataset. Indeed, within Cluster 5 we observed expression of the enteric markers phox2bb, ret, gfra1a, meis3, sox10, and zeb2a (Figure 4B–D). Using whole mount in situ hybridization, we confirmed the expression of sox10 and phox2bb within ENCCs localized along the foregut at 48 hpf (Figure 3—figure supplement 1A,A’,B,B’; arrowheads). Furthermore, gene orthologs known to be expressed in ENCC in amniotes were detected within Cluster 5, such as ngfrb (orthologue to p75; Anderson et al., 2006; Wilson et al., 2004) and hoxb5b (orthologous to Hoxb5; Kam and Lui, 2015; Figure 4B–D).
 
@@ -91,15 +123,39 @@ We identified differentiating enteric neurons within the 68–70 hpf dataset bas
 
 In an effort to examine the enteric neuron populations with finer resolution, Clusters 5 and 12 were subset from the main dataset in Seurat, re-clustered and visualized using a tSNE plot, producing 5 Sub-clusters (Figure 5A). The gene markers from each new Sub-cluster are provided in Figure 5—source data 1. The previously mentioned enteric neuron markers, with the addition of etv1, a recently identified marker of an enteric sensory neuron type, intrinsic primary afferent neurons (IPANs) in mouse (Morarach et al., 2021), were queried and visualized using dot and feature plot allowing the identification of Sub-cluster 3 as a differentiated enteric neuron cluster (Figure 5A–C). nos1, vip, and vipb were enriched in Sub-cluster 3 (Figure 5B,C; Figure 5—figure supplement 1). Interestingly, while expressed at lower average levels than in Sub-cluster 3, the enteric combination markers were also present in Sub-cluster 1 (Figure 5B–C). Sub-cluster 1 formed a central point from which Sub-cluster 3 could be seen emanating as a distal population (Figure 5A). Sub-clusters 1 and 3 likely depict enteric neurons captured at different stages along their progressive differentiation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig5-v1.jpg)
+
+**Figure 5.:** (A) tSNE plot reveals five distinct sub-clusters following the subset analysis and re-clustering of Clusters 5 and 12 from the 68–70 hpf data set. (B) Dot plot depicts expression levels of enteric neuron markers across resulting Sub-clusters. Each marker was expressed at low levels in Sub-cluster 1 and were found to be expressed at higher levels within Sub-cluster 3. (C) tSNE feature plots further depict the expression of enteric neuron markers by illustrating the levels and localization of expression within the Sub-cluster architecture. Feature plots supplement dot plot and demonstrate the prominent expression of enteric neuron markers within Sub-cluster 3, which appears to emanate from Sub-cluster 1. (D,E) Violin and feature plots reveal expression levels of acetylcholine-associated and excitatory neuron markers reported to distinguish enteric IPANs. These markers were found in a discrete pocket of cells forming the distal-most region of Sub-cluster 3 (red arrowhead). Violin data points depicted in each Sub-cluster represent single cells expressing each gene shown. (F) Graphical model summarizes expression patterns observed in 68–70 hpf data set and HCR validation. Common enteric neuroblast capable of diverging into subsequent lineages, IPAN, inhibitory neuron, and interneuron through lineage restricted gene expression. pbx3b promotes assumption of IPAN role through loss of nos1 and vipb and begins expressing calb2a, ache, and slc18a3a. (G) Whole mount HCR analysis reveals co-expression of IPAN marker genes, pbx3b and calb2a, and inhibitory neurochemical marker genes, vipb and nos1 (white arrowheads), within the foregut (dashed white line) at 68 hpf. Vesicular acetylcholine transferase, slc18a3a, was not observed in tandem with pbx3b but was co-expressed with calb2a, vipb, and nos1 (yellow arrowheads). Scale bar: 50 μM. (H) Feature plots reveal expression of opioid receptor genes, oprl1 and oprd1b, within the differentiated enteric neuron Sub-cluster 3. (I–N) Whole mount HCR analysis validates expression of oprl1 in combination with vipb and phox2bb (yellow arrowheads) in enteric neurons localized to the foregut region of a 68 hpf embryo. Scale bar: 10 μM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Subtype diversification and IPAN emergence depicted via combinatorial gene expression (etv1, ntng1a, pbx3b, slc18a3a, calb2a, and ache) localized to the distal tip of Sub-cluster 3. Inhibitory neuron markers, nos1, vip, and galanin (galn) were present within the pocket of diverging enteric subtypes.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** UMAP analysis of Sub-clusters depicts enteric and sympathetic neurons delineating from a common pool of autonomic neurons. (A) UMAP plot generated following re-clustering of Clusters 5 and 12 from the 68–70 hpf data set. (B) Dot plot depicts expression levels of general autonomic neuron makers (ascl1a, hand2, phox2a, phox2bb), sympathetic neuron markers (th, dbh, lmo1, insm1a) and enteric neuron markers (vipb, etv1, nos1, gfra1a) within Sub-clusters 0–4. (C) Dendrogram denotes similarity of Sub-clusters based on average gene expression of each cell within the Sub-clusters, which reveals transcriptomic distinction of enteric neuron Sub-cluster 3. (D–F). Feature plots highlight the expression of autonomic, sympathetic, and enteric neuron gene markers within UMAP Sub-clusters.
+
 Given our hypothesis that the enteric neurons further along a differentiation program were localized to the distal tip of Sub-cluster 3, we asked whether this population of cells contained additional neurochemical or neuron subtype-specific differentiation genes. Within a small pocket of cells in Sub-cluster 3, we detected the expression of calb2a and pbx3b (Figure 5D,E; Figure 5—figure supplement 1), orthologous genes to Calb2 and Pbx3 that have previously been shown to denote adult myenteric IPANs in mammals (Furness et al., 2004; Memic et al., 2018), as well as the two acetylcholine associated genes, acetylcholine esterase (ache, Bertrand et al., 2001; Huang et al., 2019) and vesicular acetylcholine transferase (slc18a3a, Hong et al., 2013; Zoli and Berlin, 2000; Figure 5E; red arrowheads). Recently, a scRNA-seq study performed in E15.5 mouse demonstrated the co-expression of Calb2, Pbx3, and Slc18a during ENS development (Morarach et al., 2021). When examining IPAN gene markers in zebrafish larvae, HCR analysis revealed co-expression of pbx3b, calb2a, vipb, and nos1 (Figure 5G; white arrowheads), or co-expression of slc18a3a, calb2a, vipb, and nos1 (Figure 5G; yellow arrowheads), in discrete differentiating enteric neurons within the foregut region of the zebrafish gut at 68 hpf. These data indicate that zebrafish differentiating enteric neurons express IPAN gene signatures during their development. Collectively, our observations suggest that the sox10:GFP+68–70 hpf dataset captured an emerging IPAN population during its transition, where both excitatory and inhibitory neurochemical markers were co-expressed. Therefore, our single-cell analysis in zebrafish suggests that the transcriptional emergence of specific enteric neuron subtypes may be conserved between vertebrate species.
 
 In order to identify novel signaling pathways within the developing enteric neuron population, the significantly enriched gene list from Sub-cluster 3 was processed using gene ontology (GO) pathway enrichment analysis. We found that three opioid signaling pathways were among the top 10 highest fold enriched pathways (Figure 5—source data 2; Mi et al., 2019). These pathways contained the G-protein-coupled receptors, oprl1 and oprd1b, respectively representing nociception/orphan FQ (N/OFQ) peptide (NOP)-receptor and delta-opioid receptor (DOR) subtype members within the opioid receptor superfamily (Figure 5H; Donica et al., 2013; Sobczak et al., 2014). Specifically, feature plots showed that expression of the opioid receptors was tightly confined within the pocket of enteric neuron progenitors we identified as undergoing sensory lineage-specification, suggesting the expression of opioid receptor genes within both excitatory and inhibitory neurons at the early stages of enteric neuron differentiation within the zebrafish ENS (Figure 5E and H). Confirming this suggestion using HCR analysis, we observed the combinatorial expression of oprl1, vipb, and phox2bb within migrating enteric neuron progenitors at 68 hpf along the foregut (Figure 5I–N). The presence of opioid receptors within immature enteric neurons undergoing lineage-specification helps us to better understand the complexity of early ENS signaling and highlights an area that requires further investigation.
 
 Based on our observation that the enteric neuron population that comprised Sub-cluster 3 only made up one of five phox2bb+ Sub-clusters (Figure 5A–C), we suspected that the remaining Sub-clusters were made up of closely related autonomic neurons. In order to better visualize specific differences between the Sub-clusters, we viewed them using UMAP (Becht et al., 2019; Mcinnes et al., 2018; Figure 5—figure supplement 2). While the identity of the previous tSNE Sub-clusters were maintained, UMAP analysis allowed us to better visualize the separation between the Sub-clusters, which we were able to broadly classify as autonomic neurons based on their shared expression of ascl1a, hand2, phox2a, and phox2bb (Figure 5—figure supplement 2A,B,D). Within the population of autonomic neurons, we were able to distinguish a population of sympathetic neurons within Sub-cluster 2 based on their combinatorial expression of th, dbh, lmo1, and insm1a (Figure 5—figure supplement 2B,E), which could be clearly distinguished from the enteric neuron Sub-cluster 3 (Figure 5—figure supplement 2B,F). Using a cluster tree, we were able to confirm the distinction between enteric neuron Sub-Cluster three and sympathetic neuron Sub-cluster 2 (Figure 5—figure supplement 2C). Taking together the architecture of the UMAP clusters and their respective gene expression signatures, Sub-cluster 0 appears as a common sympatho-enteric neuron pool that lacks the expression of sympathetic and enteric specific neurochemical markers (Figure 5—figure supplement 2A,B). Sub-clusters 1 and 4 emanate as two distinct populations from Sub-cluster 0 and respectively exhibit lower expression levels of sympathetic and enteric markers comparative to the sympathetic and enteric neuron Sub-clusters 2 and 3 (Figure 5—figure supplement 2A,B,E,F). Overall, these results suggest that Sub-cluster 0 cells may represent a pool of immature sympatho-enteric neurons, and that Sub-clusters 1 and 4 both represent further differentiated, yet still immature, pools of enteric and sympathetic neurons captured during the process of lineage specification into their respective terminal enteric and sympathetic neuron populations represented in Sub-clusters 3 and 2.
 
-## Atlas of sox10:GFP+ cell types encompassing the embryonic to larval transition
+### Atlas of sox10:GFP+ cell types encompassing the embryonic to larval transition
 
 To describe the dynamic transcriptional relationship between sox10:GFP+ cells across both time points, we merged the 48–50 hpf and 68–70 hpf datasets using Seurat’s dataset and Integration and Label Transfer utility (Stuart et al., 2019). The merged datasets were visualized via UMAP, where we detected 27 clusters (Figure 6—figure supplement 1A). We observed that every cluster identified in the 48–50 hpf dataset mapped proximally to clusters at 68–70 hpf (Figure 6—figure supplement 2A). We labeled each cell in the UMAP using the previously described major cell type categories (Figure 1) forming a major cell type atlas (Figure 6—figure supplement 1B). Further refinement of the cell identities based on our previous annotations (Figure 1—source data 2) allowed us to form a higher resolution atlas for each cell type (Figure 6A). The top significantly enriched markers for each major cell type in the atlas are provided in a table in Figure 6—source data 1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig6-v1.jpg)
+
+**Figure 6.:** (A) Global UMAP embedding demonstrating the clustering of cell types across 48–50 hpf and 68–70 hpf. Cell labels were transferred from the original curation (Figure 1—source data 2) to the new atlas after its creation, allowing for assessment of cell type organization. (B) Previously identified mesenchyme clusters form a large discernible cluster marked by prrx1b, twist1a, foxc1a, and snai1a, which was separated into both chondrogenic and general mesenchyme, as denoted by its differential expression of barx1 and dlx2a. Importantly, nearly every 48–50 hpf cell type nests with a cluster at 68–70 hpf. (C) Pigment cells clusters reflect differentiation paths described in Figure 4A. Melanophores at 48–50 hpf group near to the 68–70 hpf melanophore cluster, bipotent pigment progenitors bridges both the iridophores and melanophores. Xanthophores cluster separately, reflecting their distinct lineage of origin at this developmental window. (D) Detailed analysis of the larger neural/neuronal cluster shows clear progression of cell fates from progenitor to differentiating glia or neuron. The expression of enteric neuronal markers is distinct from other subtypes at this dataset.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) UMAP labeling the 27 new clusters formed after merging the 48–50 and 68–70 hpf sox10:GFP+ datasets. (B) Following label transfer integration, major cell type classifications (Figure 1) group together into distinct clusters across the UMAP. (C) High-resolution visualization of both clustering of original cluster labels, as well as their position within the UMAP. Cell categories segregate in the dendrogram largely as expected from the UMAP visualization. (D) Additional markers, including foxd3, dla, phox2a, hoxb5b, etv1, and pbx3b, are shown by UMAP for validation of the neural/neuronal clusters.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** All 48–50 hpf cells (pink) approximately map to a major cluster found at 68–70 hpf (aqua). (B–D) Subset of the pigment clusters (B), the mesenchyme clusters (C), and the neural/neuronal clusters (D) highlighting several differentially expressed genes between the cells derived from each timepoint.
 
 The atlas revealed transcriptionally similar populations among posterior sox10:GFP+ cells across the embryonic to larval transition. Illustrating this point, 48h-Cluster 2 and 68h-Cluster 8 both showed a high degree of similarity, as well as consistent barx1, dlx2a, and twist1a expression (Figure 6B), consistent with our prior analysis (Figure 3C,D). Furthermore, the central node of the pigment region within the atlas was marked by 48h-Cluster 8, which resolved into respective pigment chromatophore clusters at 68–70 hpf (Figure 6C). Specifically, we observed the early specified melanophore population at 48h-Cluster 8 branched into later stage melanophore populations (68h-Clusters 4 and 18). Further, we observed that the common bi-potent pigment progenitor population (68h-Cluster 13) bridged both melanophore clusters and the iridophore 68h-Cluster 16.
 
@@ -107,11 +163,19 @@ Cells within the neural/neuronal clusters assembled such that progenitor cells b
 
 Closer inspection of the pigment, mesenchymal, and neural/neuronal clusters separated by time highlighted both predicted and novel changes in gene expression patterns (Figure 6—figure supplement 2). For example, while the xanthophore differentiation marker xdh demonstrated expected restriction in expression to 68–70 hpf, we identified genes with no known roles in pigment cell development differentially expressed between the two stages, such as rgs16 and SMIM18 (Figure 6—figure supplement 2B). Moreover, within the mesenchyme lineages, both barx1 and snai1b followed expected temporal expression trends, while abracl and id1 both demonstrated novel differential gene expression profiles within the mesenchyme (Figure 6—figure supplement 2C). Lastly, the neural/neuronal lineage showed expected differential gene expression of genes such as etv1 and vipb at 68–70 hpf, while revealing novel expression of nova2 and zgc:162730, which have previously uncharacterized roles in sox10-derived cells (Figure 6—figure supplement 2D). Together, these findings demonstrate dynamic gene expression changes across developmental stages occurring among sox10:GFP+ cells and highlights novel genes for further study.
 
-## A hox gene signature within sox10-derived cells in the posterior zebrafish
+### A hox gene signature within sox10-derived cells in the posterior zebrafish
 
 A common theme examined by many recent and insightful single-cell profile studies of the NCC (Dash and Trainor, 2020; Soldatov et al., 2019) is that the expression of hox genes, which encode for Homeobox transcription factors, display discrete expression patterns between various cell lineages, such as in the cranial NCC. We wondered whether specific hox signatures were expressed within posterior NCC and their recent derivatives. To analyze if we could detect hox gene patterns within the atlas, we queried all the known canonical hox genes within zebrafish as listed on zfin.org (Ruzicka et al., 2019). We detected broad expression of 45 of the 49 zebrafish hox genes across the atlas, with 85% of the cells in the atlas expressing at least one hox gene (Figure 7—figure supplement 1A,J). The four undetected hox genes (hoxc1a, hoxc12b, hoxa11a, and hoxa3a) were not examined further.
 
 A dot plot revealed that specific hox gene expression patterns demarcated distinct tissues, with specific robustness in the neural fated cells (Figure 7A). Common to the neural lineages, we observed a core hox profile which included hoxb1b, hoxc1a, hoxb2a, hoxb3a, hoxc3a, hoxd3a, hoxa4a, hoxd4a, hoxb5a, hoxb5b, hoxc5a, hoxb6a, hoxb6b, and hoxb8a (Figure 7A). One of the top expressed constituents of the core signature, hoxa4a, was also widely expressed in several other lineages (Figure 7A; Figure 7—figure supplement 1). The hox signature applied to the NCC, neural progenitor, enteric progenitor, enteric neuron, glial progenitor, autonomic neuronal progenitor, and CNS lineages described in the atlas. Clustering of all the atlas lineages relying only on hox gene expression highlighted the robustness of the core hox signature to distinguish the neural lineage fates, grouping the differentiating (autonomic neuronal progenitors, enteric neurons, enteric progenitors and CNS neurons) and progenitor lineages (neural progenitors and glial progenitors) into neighboring clades (Figure 7B). Building on the core neural signature unifying the neural fates, slight variations in hox expression between autonomic and enteric lineages distinguished them from one another, which are summarized in Figure 7E. Most notably, considering the lineages in increasing specificity of cell fate, there was a detectable shift in hox expression among the autonomic neural progenitors to the enteric neuronal lineage, demarcated by the increase in hoxb2a, hoxd4a, hoxa5a, hoxb5a, and hoxb5b, accompanied by diminished expression of hoxc3a, hoxc5a, hoxb6a and hoxb8a, which formed a distinctive enteric hox signature (Figure 7—figure supplement 1A,K–N).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig7-v1.jpg)
+
+**Figure 7.:** (A) Dot plot shows both the mean expression (color) as well as percent of cells (size) per lineage for zebrafish hox genes in the first eight paralogy groups (PG). The full list of hox gene expression profiles per lineage can be found in Figure 7—figure supplement 1. Discrete hox profiles discern specific cell types, which is particularly evident in the enteric neuronal cluster. (B) Clustering of atlas lineages based hox expression profiles groups highlights robust core neural signature, which distinguishes the neural lineages from the remainder of the clades. Neural and glial progenitors formed an intermediate clade between the low-hox expressing lineages and the main neural branch. Additionally, the fin bud mesenchyme, which also has a highly distinctive hox profile, also forms a distinct clade. Subtle variations in hox expression by remaining lineages are further reflected in the remaining portion of the dendrogram; however, these are far less distinct. (C–D) Pairwise comparison of the fraction of cells in either the autonomic neural progenitor lineage (C) or the enteric neurons (D) for the first eight parology groups. Intersection of the gene pairs reflect the fraction of cells with expression for both genes with a log2 Fold change values > 0, with the identical gene intersections along the primary diagonal representing the total number of cells which express that gene in the lineage. Enteric neural hox signature was not only specific to this cell population, but also was abundantly co-expressed. (E) Summary panel describing the specific autonomic and enteric hox signatures detected. A common hox expression profile, referred to as the core signature, was found that is then modified across the specific lineages. (F–M) In situ validation of the chief enteric neural hox signature via HCR. phox2bb (F–J) labels enterically fated neurons at the level of the midgut in larval stage embryos fixed at 70–72hpf. White arrows highlight specific cells of interest. Key hox signature constituents hoxb5a (G) and hoxb5b (H) or hoxd4a (K) and hoxa5a (L) were found to be co-expressed within phox2bb expressing cells (White Arrows). Scale bars in (I,M): 50 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60005/elife-60005-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Similar to Figure 7A,a comprehensive dot plot shows both the mean expression (color) as well as percent of cells per lineage (size) for zebrafish all hox genes. Discrete hox profiles discern specific cell types, which is particularly evident in the enteric neuronal cluster, as well as the fin bud mesenchyme. (B–I) Hindbrain expression patterns for enteric hox profiles. Autonomic neural marker phox2bb clearly marks the midbrain and hindbrain (hb) domains, as well as the pharyngeal arches (pa). Enterically fated cells can also clearly be seen along the tract of the gut (dash region), starting the foregut (fg). Anterior domains for hoxb5a (C), hoxb5b (D), hoxd4a (G), and hoxa5a (H) are represented by a vertical line. Overlapping regions can be approximated by the merged images (E, I). Scale in (B, F): 50 μm; dorsoventral-rostrocaudal axis defined in (F). (J) UMAP of the atlas demonstrating pervasive hox expression throughout the dataset. Expression was defined as having a log2 fold change >0. Approximately 85% of cells contained expression for at least one hox gene. (K–R) Feature plots representing the expression of selected hox genes within the atlas UMAP. hoxd4a (K), hoxa5a (L), hoxb5a (M), hoxb5b (N) all localize in varying degrees to the enteric neural signature, though hoxd4a also marks the mesenchymal clusters, as seen (A). hoxa4a (O) highlights its pervasive expression among the clusters. hoxa13b (P) and hoxa11b (Q) are key markers denoting the fin bud mesenchyme. Alternative neural populations are further identified by their hoxa9a (R) expression profile, contrasting with the enteric populations.
 
 In order to better understand the complexities of hox codes within specific lineages, we performed a pairwise comparison of each hox gene for autonomic and enteric lineages, counting the number of cells which co-expressed each hox pair. Examining the autonomic neuronal progenitors (Figure 7C) and the enteric neuron populations (Figure 7D), both lineages demonstrated pervasive fractions of co-positive cells for combinations of the core hox signature. For example, autonomic neuronal cells were enriched with a high fraction of pairwise combinations for hoxc1a, hoxa4a, hoxb3a, and/or hoxb5b(Figure 7C). The enteric signature was highly enriched in the unique expression of hoxa5a, with co-expression for hoxb5a (36%) and hoxb5b (36%), as well as strong co-expression of hoxd4a or hoxb5a with hoxb5b (Figure 7D).
 
@@ -135,19 +199,330 @@ In summary, our study greatly increases foundational understanding of NCC-derive
 
 ## Materials and methods
 
-## Animal husbandry, care, and synchronous embryo collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>phox2bb</td>
+      <td>Uribe and Bronner, 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>sox10</td>
+      <td>Dutton et al., 2001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mmp2</td>
+      <td>Mammalian Gene Collection Program Team et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>notch1a</td>
+      <td>Uribe Lab</td>
+      <td></td>
+      <td>Forward 5'-CAGTGGACTCAGCAGCATC-3' Reverse 5'-CCTTCCGACCAATCAGACAAG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dla</td>
+      <td>Uribe Lab</td>
+      <td></td>
+      <td>Forward 5'-CAGCCAAGTTGCTCAGAG-3' Reverse 5'-GTACAGAGAACCAGCTCATC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>foxc1a</td>
+      <td>Uribe Lab</td>
+      <td></td>
+      <td>Forward 5'-ATACGGTGGACTCTGTGG-3' Reverse 5'-CAGCGTCTGTCAGTATCG-3'</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>AB</td>
+      <td>ZIRC</td>
+      <td></td>
+      <td>Wild-type zebrafish</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(−4.9sox10:egfp)ba2Tg</td>
+      <td>Carney et al., 2006</td>
+      <td></td>
+      <td>GFP Labeled Neural Crest Cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>mitfa</td>
+      <td>Molecular Instruments</td>
+      <td>NM_130923.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>tfec</td>
+      <td>Molecular Instruments</td>
+      <td>NM_001030105.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>xdh</td>
+      <td>Molecular Instruments</td>
+      <td>XM_683891.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>phox2bb</td>
+      <td>Molecular Instruments</td>
+      <td>NM_001014818.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ngfrb</td>
+      <td>Molecular Instruments</td>
+      <td>NM_001198660.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>gfra1a</td>
+      <td>Molecular Instruments</td>
+      <td>NM_131730.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>crestin</td>
+      <td>Molecular Instruments</td>
+      <td>AF195881.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>foxd3</td>
+      <td>Molecular Instruments</td>
+      <td>NM_131290.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>vipb</td>
+      <td>Molecular Instruments</td>
+      <td>NM_001114555.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>elavl3</td>
+      <td>Molecular Instruments</td>
+      <td>NM_131449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>oprl1</td>
+      <td>Molecular Instruments</td>
+      <td>NM_205589.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>barx1</td>
+      <td>Molecular Instruments</td>
+      <td>NM_001024949.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>pbx3b</td>
+      <td>Molecular Instruments</td>
+      <td>BC131865.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>prrx1b</td>
+      <td>Molecular Instruments</td>
+      <td>NM_200050.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>slc18a3a</td>
+      <td>Molecular Instruments</td>
+      <td>NM_0010775550.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>hoxb5a</td>
+      <td>Molecular Instruments</td>
+      <td>NM_131101.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>hoxb5b</td>
+      <td>Molecular Instruments</td>
+      <td>bc078285.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>hoxd4a</td>
+      <td>Molecular Instruments</td>
+      <td>NM_001126445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>hoxa5a</td>
+      <td>Molecular Instruments</td>
+      <td>NM_131540.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>twist1a</td>
+      <td>Molecular Instruments</td>
+      <td>NM_130984.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Single Cell 3' v2 Chemistry Kit for 10,000 cells</td>
+      <td>10x Genomics</td>
+      <td>CG00052</td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/library-prep/doc/user-guide-chromium-single-cell-3-reagent-kits-user-guide-v2-chemistry</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NextSeq 500/550 Mid Output Kit v2.5 (150 Cycles)</td>
+      <td>illumina</td>
+      <td>20024904</td>
+      <td>https://www.illumina.com/products/by-type/sequencing-kits/cluster-gen-sequencing-reagents/nextseq-series-kits-v2-5.html</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-phenyl 2-thiourea (PTU)/E3 solution</td>
+      <td>Karlsson 741 et al., 2001</td>
+      <td>Sigma-Aldrich</td>
+      <td>P7629</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine</td>
+      <td>A5040</td>
+      <td>Sigma</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Accumax buffer</td>
+      <td>A7089</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hank’s Buffer</td>
+      <td>55021C</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phusion-HF</td>
+      <td>M0530S</td>
+      <td>New England Biolabs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zero Blunt TOPO PCR Cloning Kit</td>
+      <td>451245</td>
+      <td>Invitrogen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v3.6.3</td>
+      <td>R-project</td>
+      <td>RRID:SCR_001905</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat v3.1.1</td>
+      <td>Satija Lab</td>
+      <td>RRID:SCR_007322</td>
+      <td>https://github.com/satijalab/seurat</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://imagej.net/Fiji</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMARIS v9.2</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td>Bitplane.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PANTHER</td>
+      <td>GENEONTOLOGY Unifying Biology</td>
+      <td>RRID:SCR_004869</td>
+      <td>http://pantherdb.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger v2.1.0</td>
+      <td>10x Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td>Zheng et al., 2017, https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry, care, and synchronous embryo collection
 
 Groups of at least 15 adult Tg(−4.9sox10:GFP)ba2Tg (Carney et al., 2006) zebrafish (Danio rerio) males and 15 females from different tank stocks were bred to generate synchronously staged embryos across several clutches. All embryos were cultured in standard E3 media until 24 hr post fertilization (hpf), then transferred to 0.003% 1-phenyl 2-thiourea (PTU)/E3 solution (Karlsson et al., 2001), to arrest melanin formation and enable ease of GFP sorting. While it has been suggested that high concentration (.03%) PTU incubation prior to 22 hpf may cause organism-wide effects,. 003% PTU application after 22 hpf has been shown to have no major effects on NCC survival or pigment cell formation, as described (Bohnsack et al., 2011). Embryos were manually sorted for GFP expression and synchronously staged at 24 hpf. Care was taken such that embryos which exhibited developmental delay or other defects were removed prior to collection. All work was performed under protocols approved by, and in accordance with, the Rice University Institutional Animal Care and Use Committee (IACUC).
 
-## Isolation of tissue and preparation of single-cell suspension
+### Isolation of tissue and preparation of single-cell suspension
 
 100 embryos between 48- 50 hpf and 100 larvae between 68–70 hpf were dechorionated manually and then transferred to 1X sterile filtered PBS, supplemented with 0.4% Tricaine (Sigma, A5040) to anesthetize. Tissue anterior to the otic vesicle and tissue immediately posterior to the anal vent was manually removed using fine forceps in 48–50 hpf embryos, while tissue anterior to the otic vesicle was removed from 68 to 70 hpf larvae, as schematized in Figure 1. This was to capture as many posterior sox10:GFP+ cells in the later time point as possible. Remaining tissue segments were separated into nuclease-free tubes and kept on ice immediately following dissection. Dissections proceeded over the course of 1 hr. To serve as control for subsequent steps, similarly staged AB WT embryos were euthanized in tricaine and then transferred to sterile 1X PBS. All following steps were conducted rapidly in parallel to minimize damage to cells: Excess PBS was removed and tissue was digested in 30°C 1X Accumax buffer (Sigma-Aldrich, A7089) for 30–45 min to generate a single cell suspension for each sample. At 10 min intervals, tissue was gently manually disrupted with a sterile pipette tip. As soon as the tissue was fully suspended, the cell solutions were then transferred to a fresh chilled sterile conical tube and diluted 1:5 in ice cold Hank’s Buffer (1x HBSS; 2.5 mg/mL BSA; 10 μM pH8 HEPES) to arrest the digestion. Cells were concentrated by centrifugation at 200 rcf for 10 min at 4°C. Supernatant was discarded carefully and cell pellets were resuspended in Hank’s Buffer. Cell solution was passed through a 40 μm sterile cell strainer to remove any remaining undigested tissue and then centrifuged as above. Concentrated cells were resuspended in ice cold sterile 1X PBS and transferred to a tube suitable for FACS kept on ice. The 48–50 hpf and 68–70 hpf experiments were performed on completely separate dates and times using the above described procedures.
 
-## Fluorescent cell sorting and single-cell sequencing
+### Fluorescent cell sorting and single-cell sequencing
 
 Fluorescent Assisted Cell Sorting (FACS) was performed under the guidance of the Cytometry and Cell Sorting Core at Baylor College of Medicine (Houston, TX) using a BD FACSAria II (BD Biosciences). Zebrafish cells sorted via GFP fluorescence excited by a 488 nm laser, relying on an 85 μm nozzle for cell selection. Detection of GFP+ cells was calibrated against GFP- cells collected from AB wildtype embryos, as well as GFP+ cells collected from the anterior portions of the sox10:GFP embryos. Optimal conditions for dissociated tissue inputs (number of embryos needed, etc.) and FACS gating was determined via pilot experiments prior to collection for subsequent scRNA-seq experiments. Sample preparation for scRNA-seq was performed by Advanced Technology Genomics Core (ATGC) at MD Anderson (Houston, TX). 4905 and 4669 FACS-isolated cells for the 48–50 and 68–70 hpf datasets were prepared on a 10X Genomics Chromium platform using 10X Single Cell 3’ V2 chemistry kit for 10,000 cells. cDNA libraries were amplified and prepared according to the 10X Genomics recommended protocol, with details provided in Figure 1—figure supplement 1C. A 150 cycle Mid-Output flow cell was used for sequencing on an Illumina NextSeq500. Sequencing was aligned at MD Anderson ATGC to the DanioGRCz10 version of the zebrafish genome using the 10X Genomics Cell Ranger software (v2.1.0, Zheng et al., 2017). Gene reads per cell were stored in a matrix format for further analysis.
 
-## Data processing and analysis
+### Data processing and analysis
 
 The 10x genomics sequencing data was then analyzed using Seurat (Satija et al., 2015; Stuart et al., 2019; Butler et al., 2018) v3.1.1 software package for R, v3.6.3 (R Development Core Team, 2020). The standard recommended workflow was followed for data processing. Briefly, for both the 48–50 hpf and 68–70 hpf datasets, cells which contained low (<200) or high (>2500) genes were removed from analysis. Gene expression was normalized using the NormilizeData command, opting for the LogNormalize method (Scale factor set at 10,000) and further centered using the ScaleData command. Variable features of the dataset were calculated with respect to groups of 2000 genes at a time. Both datasets were evaluated considering the first 20 principal components (PC) as determined by the RunPCA command with a resolution of 1.2 for PCA, tSNE, and UMAP analyses. The resolution value was empirically determined for the FindClusters by iterative assessment of cluster patterns generated values ranging from 0.4 to 2.0. The resolution was set to 1.2 which balanced between over segmentation of cell identities and effective separation of tSNE-mapped clusters. The appropriate PCs were selected based on a Jack Straw analysis with a significance of p<0.01, as generated by the JackStraw command.
 
@@ -155,18 +530,18 @@ Clustering was performed using FindNeighbors and FindClusters in series. We iden
 
 Generation of the merged atlas was performed via the FindIntegrationAnchors workflow provided in the Standard Workflow found on the Seurat Integration and Label Transfer vignette. Clustering was performed for the atlas based on the first 20 PCs, consistent with the original datasets. Subsets of the atlas discounted any spuriously sorted cells for clarity. All features plots represent expression values derived from the RNA assay. Sub-clustering of the enteric clusters was performed by sub-setting Clusters 5 and 12 from the 68 to 70 hpf dataset and reinitializing the Seurat workflow, as described above. Clusters were identified based on the first 6 PCs. Detection of cell cycle phase was conducted following the Cell cycle and scoring vignette. Genes used for identification of cell cycle phases can be found in Figure 1—figure supplement 3. Pairwise hox analysis was conducted using tools from the Seurat package in R by assessing the number of cells which had expression for hox gene pairs queried with a log2 fold change greater than 0. Dendrogram Cluster trees were generated using Seurat’s BuildClusterTree function.
 
-## Whole mount in situ hybridization
+### Whole mount in situ hybridization
 
 cDNAs for foxc1a, notch1a, and dla were amplified via high fidelity Phusion-HF PCR (NEB) from 48 hpf AB WT cDNA libraries using primers in the Key resources table. PCR products were cloned using the Zero Blunt TOPO PCR Cloning Kit (Invitrogen), as per manufacturer protocols, and sequenced validated. Plasmids encoding phox2bb, sox10, mmp2 were generously sourced as listed in the key resources table. Antisense digoxigenin (DIG)-labeled riboprobes were produced from cDNA templates of each gene. AB wild type embryos were treated and stained to visualize expression as previously described in Jowett and Lettice, 1994. Following in situ reactions, embryos were post-fixed in 4% Paraformaldehyde (PFA) and mounted in 75% Glycerol for imaging. A Nikon Ni-Eclipse Motorized Fluorescent upright compound microscope with a 4X objective was used in combination with a DS-Fi3 color camera. Images were exported via Nikon Elements Image Analysis software.
 
-## Whole mount hybridization chain reaction
+### Whole mount hybridization chain reaction
 
 HCR probes were purchased commercially (Molecular Instruments Inc, CA) and were targeted to specific genes based on their RefSeq ID (Key resources table). Whole mount HCR was performed according to the manufacturer's instructions (v3.0, Choi et al., 2016; Choi et al., 2018) on sox10:GFP+ or AB embryos previously fixed at the appropriate stage in 4% PFA.
 
-## Confocal imaging and image processing
+### Confocal imaging and image processing
 
 Prior to imaging, embryos were embedded in 1% low melt agarose (Sigma) and were then imaged using an Olympus FV3000 Laser Scanning Confocal, with a UCPlanFLN 20×/0.70NA objective. Confocal images were acquired using lambda scanning to separate the Alexafluor 488/Alexafluor 514 or the Alexafluor 546/Alexafluor 594 channels. Final images were combined in the FlowView software and exported for analysis in either Fiji (Rueden et al., 2017; Schneider et al., 2012; Schindelin et al., 2012) or IMARIS image analysis software (Bitplane). Figures were prepared in Adobe Photoshop and Illustrator software programs, with some cartoons created via https://biorender.com/.
 
-## Data availability
+### Data availability
 
 The raw sequence read files and processed cellular barcode, gene, and matrix files produced by CellRanger are available in the National Center for Biotechnology Information’s (NCBI) Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/), accession number: GSE152906. The atlas/associated processed Seurat objects are available on the University of California, Santa Cruz (UCSC) Cell Browser (https://zebrafish-neural-crest-atlas.cells.ucsc.edu/). Code written for Seurat data analysis is available on GitHub (https://github.com/UribeLabRice/NeuralCrest_Atlas_2020; UribeLabRice, 2021; copy archived at swh:1:rev:195fe7dd0bf388ad4cd6f01db052f45d8b8fa67e).

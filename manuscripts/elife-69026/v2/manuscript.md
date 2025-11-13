@@ -47,7 +47,7 @@ As a list of mendelian disease genes to test, we curate human mendelian non-infe
 
 ## Results
 
-## Controlling for confounding factors with a bootstrap test
+### Controlling for confounding factors with a bootstrap test
 
 To compare mendelian disease and non-disease genes, we first ask which potential confounding factors differ between the two groups of genes. As expected, multiple measures of selective constraint are significantly higher in mendelian disease compared to non-disease genes. As a measure of long-term constraint, the density of conserved elements across mammals is slightly higher at disease genes compared to non-disease genes (Figure 1: conserved 50 kb, conserved 500 kb; Materials and methods).
 
@@ -63,29 +63,37 @@ These differences between disease and non-disease genes highlight the need to co
 
 In addition to constraint, mutation rate could represent an important confounder. The proportion of variable neutral synonymous sites pS can be used to compare mutation rates, since the number of variable synonymous sites is proportional to the mutation rate under neutrality. As mentioned already, pS is very similar at disease and non-disease genes (Figure 1), suggesting that mutation rates are similar at disease and non-disease genes. This is further supported by the fact that multiple factors that could affect the mutation rate such as GC content or recombination are also similar or very slightly different at disease and non-disease genes (Figure 1; Materials and methods). Aside from mutation rate and constraint, multiple other factors that could affect adaptation differ between disease and non-disease genes, notably including the proportion of genes that interact with viruses, the proportion of immune genes, or the number of protein-protein interactions (PPIs) in the human PPIs network. All these factors have been shown to, or could in principle affect adaptation (Materials and methods), further showing the necessity to control for confounding factors when comparing adaptation at disease and non-disease genes. The fact that previous studies comparing adaptation at disease versus non-disease genes did not control for confounding factors, makes it unclear if their conclusions reflect properties tied to genes being associated with disease or not, or tied to other confounding factors not accounted for.
 
-## Less sweeps at mendelian disease genes in Africa
+### Less sweeps at mendelian disease genes in Africa
 
-For our comparison of disease and non-disease genes, we measure recent adaptation around human protein coding genes (Materials and methods) using the integrated Haplotype Score iHS (Voight et al., 2006) and the number of Segregating sites by Length nSL (Ferrer-Admetlla et al., 2014) in 26 populations rom the 1,000 Genomes Project (Auton et al., 2015) (Materials and methods). The iHS and nSL statistics are both sensitive to recent incomplete sweeps, and have the advantage over other sweep statistics of being insensitive to the confounding effect of background selection (Enard et al., 2014; Schrider, 2020). To evaluate the prevalence of sweeps at disease genes relative to non-disease genes, we do not use the classic outlier approach, and instead use a previously described, more versatile approach based on block-randomized genomes to estimate unbiased false positive risks (FPR) for whole enrichment curves (Figure 3; Enard and Petrov, 2020). We first rank genes based on the average iHS or nSL in genomic windows centered on genes (Materials and methods), from the top-ranking genes with the strongest sweep signals to the genes with the weakest signals. We then slide a rank threshold from a high rank value to a low rank value (from top 5000 to top 10, x-axis on Figure 3). For each rank threshold, we estimate the sweep enrichment (or deficit) at disease relative to non-disease genes (Figure 3, y-axis). For example, for rank threshold 200, the relative enrichment (or deficit) is the number of disease genes in the top 200 ranking genes, divided by the number of control non-disease genes in the top 200. By sliding the rank threshold, we estimate a whole enrichment curve that is not only sensitive to the strongest sweeps but also to weaker sweeps signals (for example using the top 5000 threshold; Figure 3). Using block-randomized genomes (Materials and methods), we can then estimate an unbiased false positive risk (FPR) for the whole enrichment curve. In brief, we estimate FPRs by re-running the entire enrichment analysis pipeline many times, but each time on a block-randomized genome instead of the real genome. Block randomized genomes are genomes where gene coordinates have been randomly shuffled in a way that preserves the original genes/sweeps clustering structure. The FPR can then be calculated by comparing the whole sweep deficit/enrichment curve in the real genome with the many observed whole sweep deficit/enrichment curves observed with the block-randomized genomes (see Materials and methods for more details). This strategy makes less assumptions on the expected strength of selective sweeps. The approach also makes it possible to estimate a single false positive risk based on the cumulated enrichment (or deficit) over multiple whole enrichment curves (Materials and methods). Here, we estimate a single false positive risk for both iHS and nSL curves considered together, and also for multiple window sizes to measure average iHS and nSL (from 50kb to 1Mb, Materials and methods).
+For our comparison of disease and non-disease genes, we measure recent adaptation around human protein coding genes (Materials and methods) using the integrated Haplotype Score iHS (Voight et al., 2006) and the number of Segregating sites by Length nSL (Ferrer-Admetlla et al., 2014) in 26 populations rom the 1,000 Genomes Project (Auton et al., 2015) (Materials and methods). The iHS and $nS_{L}$ statistics are both sensitive to recent incomplete sweeps, and have the advantage over other sweep statistics of being insensitive to the confounding effect of background selection (Enard et al., 2014; Schrider, 2020). To evaluate the prevalence of sweeps at disease genes relative to non-disease genes, we do not use the classic outlier approach, and instead use a previously described, more versatile approach based on block-randomized genomes to estimate unbiased false positive risks (FPR) for whole enrichment curves (Figure 3; Enard and Petrov, 2020). We first rank genes based on the average iHS or $nS_{L}$ in genomic windows centered on genes (Materials and methods), from the top-ranking genes with the strongest sweep signals to the genes with the weakest signals. We then slide a rank threshold from a high rank value to a low rank value (from top 5000 to top 10, x-axis on Figure 3). For each rank threshold, we estimate the sweep enrichment (or deficit) at disease relative to non-disease genes (Figure 3, y-axis). For example, for rank threshold 200, the relative enrichment (or deficit) is the number of disease genes in the top 200 ranking genes, divided by the number of control non-disease genes in the top 200. By sliding the rank threshold, we estimate a whole enrichment curve that is not only sensitive to the strongest sweeps but also to weaker sweeps signals (for example using the top 5000 threshold; Figure 3). Using block-randomized genomes (Materials and methods), we can then estimate an unbiased false positive risk (FPR) for the whole enrichment curve. In brief, we estimate FPRs by re-running the entire enrichment analysis pipeline many times, but each time on a block-randomized genome instead of the real genome. Block randomized genomes are genomes where gene coordinates have been randomly shuffled in a way that preserves the original genes/sweeps clustering structure. The FPR can then be calculated by comparing the whole sweep deficit/enrichment curve in the real genome with the many observed whole sweep deficit/enrichment curves observed with the block-randomized genomes (see Materials and methods for more details). This strategy makes less assumptions on the expected strength of selective sweeps. The approach also makes it possible to estimate a single false positive risk based on the cumulated enrichment (or deficit) over multiple whole enrichment curves (Materials and methods). Here, we estimate a single false positive risk for both iHS and $nS_{L}$ curves considered together, and also for multiple window sizes to measure average iHS and $nS_{L}$ (from 50kb to 1Mb, Materials and methods).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69026/elife-69026-fig3-v2.jpg)
 
-**Figure 3.:** sweep signals at mendelian disease genes.nSLThe figure shows the averaged whole enrichment curves and their averaged confidence intervals from the bootstrap test, averaged over both iHS and  sweep ranks, and over all the populations from each continent (Materials and methods). The y-axis represents the relative sweep enrichment at disease genes, calculated as the number of disease genes in putative sweeps, divided by the number of control non-disease genes in putative sweeps. The gray areas are the 95% confidence interval for this ratio. The number of genes in putative sweeps is measured for varying sweep rank thresholds. For example, at the top 100 rank threshold, the relative enrichment is the number of disease genes within the top 100 genes with the strongest sweep signals (either according to iHS or nSL), divided by the number of control non-disease genes within the top 100 genes with the strongest sweep signals. We use genes ranked by iHS or nSL using 200 kb windows, since 200 kb is the intermediate size of all the window sizes we use (50 kb, for the smallest, 1000 kb for the largest; see Materials and methods). (nSLA) Africa, average over the ESN, GWD, LWK, MSL, and YRI populations from the 1000 Genomes Project. (B) East Asia, average over the CDX, CHB, CHS, JPT, and KHV populations. (C) Europe, average over the CEU, FIN, GBR, IBS, and TSI populations.
+**Figure 3.:** Deficit of iHS and $nS_{L}$ sweep signals at mendelian disease genes.The figure shows the averaged whole enrichment curves and their averaged confidence intervals from the bootstrap test, averaged over both iHS and $nS_{L}$ sweep ranks, and over all the populations from each continent (Materials and methods). The y-axis represents the relative sweep enrichment at disease genes, calculated as the number of disease genes in putative sweeps, divided by the number of control non-disease genes in putative sweeps. The gray areas are the 95% confidence interval for this ratio. The number of genes in putative sweeps is measured for varying sweep rank thresholds. For example, at the top 100 rank threshold, the relative enrichment is the number of disease genes within the top 100 genes with the strongest sweep signals (either according to iHS or $nS_{L}$), divided by the number of control non-disease genes within the top 100 genes with the strongest sweep signals. We use genes ranked by iHS or $nS_{L}$ using 200 kb windows, since 200 kb is the intermediate size of all the window sizes we use (50 kb, for the smallest, 1000 kb for the largest; see Materials and methods). (A) Africa, average over the ESN, GWD, LWK, MSL, and YRI populations from the 1000 Genomes Project. (B) East Asia, average over the CDX, CHB, CHS, JPT, and KHV populations. (C) Europe, average over the CEU, FIN, GBR, IBS, and TSI populations.
 
 To control for confounding factors (Figure 1), we compare sweep signals at disease genes with control sets of non-disease genes that were chosen by a bootstrap test (Enard and Petrov, 2020) because they match disease genes in terms of confounding factor values (Materials and methods). Furthermore, control non-disease genes are chosen far from disease genes (>300 kb; Materials and methods). We do this to avoid choosing as controls non-disease genes that are too close to disease genes and thus likely to have the same sweep profile (especially in the case of large sweeps potentially overlapping both neighboring disease and non-disease genes). This, together with the large number of confounding factors that we match, tends to limit the pool of possible control genes (Materials and methods). The statistical impact of a limited control pool is however fully taken into account by the estimation of a FPR with block-randomized genomes (Materials and methods).
 
 Because they have experienced different demographic histories, we test different human populations from distinct continents separately. Specifically, we test African populations, East Asian populations and European populations from the 1000 Genomes Project phase 3 (Auton et al., 2015). At this stage, we must consider the fact that most gene-disease associations in our dataset were likely discovered in European cohorts. Because disease genes in Europe may not always be disease genes in other populations, we cannot exclude the possibility that a sweep enrichment or a sweep deficit might be more pronounced in Europe, unless the evolutionary processes that make a gene more likely to be a disease gene predated the split of different human populations.
 
-Using both iHS and nSL sweep signals, we find a strong depletion in sweep signals at disease genes, especially in Africa (Figure 3A) compared to East Asia or Europe (Figure 3B, C, respectively). Figure 3A, B, C show the sweep deficit curves at disease genes compared to control non-disease genes in Africa, East Asia, and Europe, respectively. The corresponding false positive risks that quantify how unexpected the downward or upward skew of these curves are (Materials and methods), show that the sweep deficit is strongly significant in Africa, marginally so in Europe, and not significant at all in East Asia (FPR=3.10−4 in Africa vs. 0.18 in East Asia and 0.05 in Europe, Figure 4A, B C respectively; Materials and methods). Note that this FPR takes the clustering of multiple genes in the same sweeps into account (Enard and Petrov, 2020). A stronger depletion in Africa suggests that the evolutionary processes linking disease and adaptation at the gene level predate the split of African and European populations, given that most gene-disease associations studies involved European cohorts. As we show below, the stronger sweep depletion in Africa can be explained in the evolutionary context of genetic interference between advantageous and deleterious variants at mendelian disease genes.
+Using both iHS and $nS_{L}$ sweep signals, we find a strong depletion in sweep signals at disease genes, especially in Africa (Figure 3A) compared to East Asia or Europe (Figure 3B, C, respectively). Figure 3A, B, C show the sweep deficit curves at disease genes compared to control non-disease genes in Africa, East Asia, and Europe, respectively. The corresponding false positive risks that quantify how unexpected the downward or upward skew of these curves are (Materials and methods), show that the sweep deficit is strongly significant in Africa, marginally so in Europe, and not significant at all in East Asia (FPR=3.10−4 in Africa vs. 0.18 in East Asia and 0.05 in Europe, Figure 4A, B C respectively; Materials and methods). Note that this FPR takes the clustering of multiple genes in the same sweeps into account (Enard and Petrov, 2020). A stronger depletion in Africa suggests that the evolutionary processes linking disease and adaptation at the gene level predate the split of African and European populations, given that most gene-disease associations studies involved European cohorts. As we show below, the stronger sweep depletion in Africa can be explained in the evolutionary context of genetic interference between advantageous and deleterious variants at mendelian disease genes.
 
-Notably, the stronger depletion observed in Africa likely excludes the possibility that it could be mostly due to a technical artifact, where sweeps themselves might make it harder to identify disease genes in the first place. Sweeps increase linkage disequilibrium (LD) in a way that could make it more difficult to assign a disease to a single gene in regions of the genome with high LD and multiple genes genetically linked to a disease variant. This could result in a depletion of sweeps at monogenic disease genes, simply because disease genes are less well annotated in regions of high LD. However, if this was the case, because most disease gene were identified in Europe, we would expect such an artifact to deplete sweeps at disease genes primarily in Europe, not in Africa. This artifact is also very unlikely due to the fact that recombination rates are only very slightly different between disease and non-disease genes (Figure 3). Overall, these results support the third scenario where evolutionary processes decrease recent adaptation at mendelian disease genes. That said, it is important to note that we only detect a deficit of recent adaptation strong enough to leave hitchhiking signals. Our results do not imply that the same is true for adaptation that is too polygenic to leave signals detectable with iHS or nSL. Note that the sweep deficit at disease genes in Africa is robust to differences in gene functions between disease and non-disease genes according to a Gene Ontology analysis (Materials and methods) (Gene Ontology Consortium and Gene Ontology, 2021).
+![Figure 4.](https://cdn.elifesciences.org/articles/69026/elife-69026-fig4-v2.jpg)
 
-## Verification of purifying selection controls
+**Figure 4.:** The figure shows the observed sweep enrichment/deficit score used to measure the false positive risk (FPR) in the real genome (red line), compared to the expected null distribution of the score estimated with block-randomized genomes (5000 block-randomized genomes in Africa, 1000 in East Asia and Europe; Materials and methods). The FPR score is based on summing the difference between the number of genes in sweeps at disease genes and the number of genes in sweeps in control genes, over both iHS and $nS_{L}$, and different window sizes (Materials and methods). (A) FPR score in Africa, estimated summing over the ESN, GWD, LWK, MSL, and YRI populations from the 1000 Genomes Project. (B) FPR score in East Asia, estimated summing over the CDX, CHB, CHS, JPT, and KHV populations. (C) FPR score in Europe, summing over the CEU, FIN, GBR, IBS, and TSI populations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69026/elife-69026-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) All disease genes without controlling for GERP. (B) Disease genes in low recombination regions and with many disease variants, without controlling for GERP. (C) All disease genes, controlling for GERP. (D) Disease genes in low recombination regions and with many disease variants, controlling for GERP.
+
+Notably, the stronger depletion observed in Africa likely excludes the possibility that it could be mostly due to a technical artifact, where sweeps themselves might make it harder to identify disease genes in the first place. Sweeps increase linkage disequilibrium (LD) in a way that could make it more difficult to assign a disease to a single gene in regions of the genome with high LD and multiple genes genetically linked to a disease variant. This could result in a depletion of sweeps at monogenic disease genes, simply because disease genes are less well annotated in regions of high LD. However, if this was the case, because most disease gene were identified in Europe, we would expect such an artifact to deplete sweeps at disease genes primarily in Europe, not in Africa. This artifact is also very unlikely due to the fact that recombination rates are only very slightly different between disease and non-disease genes (Figure 3). Overall, these results support the third scenario where evolutionary processes decrease recent adaptation at mendelian disease genes. That said, it is important to note that we only detect a deficit of recent adaptation strong enough to leave hitchhiking signals. Our results do not imply that the same is true for adaptation that is too polygenic to leave signals detectable with iHS or $nS_{L}$. Note that the sweep deficit at disease genes in Africa is robust to differences in gene functions between disease and non-disease genes according to a Gene Ontology analysis (Materials and methods) (Gene Ontology Consortium and Gene Ontology, 2021).
+
+### Verification of purifying selection controls
 
 To further verify that constraint/purifying selection is properly controlled for when comparing mendelian disease and control non-disease genes, we also add the GERP score, as well as the density of both coding and non-coding conserved elements identified by GERP (Davydov et al., 2010) to the list of matched confounding factors (Materials and methods). The average GERP score in a genomic window estimates the amount of substitutions that never happened during long-term evolution because the said mutations were removed by purifying selection (both in coding and non-coding sequences). The sweep deficit in Africa at disease genes compared to controls is completely unchanged when using GERP or not (Figure 4—figure supplement 1). This shows that the measures of selective constraint already included (Materials and methods) are sufficient to control for selective constraint/purifying selection. For this reason, we do not use GERP further (as explained in the Materials and methods, the larger the number of confounding factors that we match, the lower the power of our approach to detect a sweep enrichment or deficit).
 
-## Disease genes do not experience constitutively less long-term adaptive mutations
+### Disease genes do not experience constitutively less long-term adaptive mutations
 
-A deficit of strong recent adaptation (strong enough to affect iHS or nSL) raises the question of what creates the sweep deficit at disease genes. As already discussed, purifying selection and other confounding factors are matched between disease genes and their controls, which excludes that these factors alone could possibly explain the sweep deficit. Purifying selection alone in particular cannot explain this result, since we find evidence that it is well matched between disease and control genes (Figure 4 and Figure 4—figure supplement 1). Furthermore, we find that the 1000 genes in the genome with the highest density of conserved elements do not exhibit any sweep deficit (bootstrap test + block-randomized genomes FPR=0.18; Materials and methods). Association with mendelian diseases, rather than a generally elevated level of selective constraint, is therefore what matters to observe a sweep deficit. What then might explain the sweep deficit at disease genes?
+A deficit of strong recent adaptation (strong enough to affect iHS or $nS_{L}$) raises the question of what creates the sweep deficit at disease genes. As already discussed, purifying selection and other confounding factors are matched between disease genes and their controls, which excludes that these factors alone could possibly explain the sweep deficit. Purifying selection alone in particular cannot explain this result, since we find evidence that it is well matched between disease and control genes (Figure 4 and Figure 4—figure supplement 1). Furthermore, we find that the 1000 genes in the genome with the highest density of conserved elements do not exhibit any sweep deficit (bootstrap test + block-randomized genomes FPR=0.18; Materials and methods). Association with mendelian diseases, rather than a generally elevated level of selective constraint, is therefore what matters to observe a sweep deficit. What then might explain the sweep deficit at disease genes?
 
 As mentioned in the introduction, it could be that mendelian disease genes experience constitutively less adaptive mutations. This could be the case for example because mendelian disease genes tend to be more pleiotropic (Otto, 2004), and/or because new mutations in mendelian are large effect mutations (Quintana-Murci, 2016) that tend to often overshoot the fitness optimum, and cannot be positively selected as a result. Regardless of the underlying processes, a constitutive tendency to experience less adaptive mutations predicts not only a deficit of recent adaptation, but also a deficit of more long-term adaptation during evolution. The iHS and nSL signals of recent adaptation we use to detect sweeps correspond to a time window of at most 50,000 years, since these statistics have very little statistical power to detect older adaptation (Sabeti et al., 2006). In contrast, approaches such as the McDonald-Kreitman test (MK test) (McDonald and Kreitman, 1991) capture the cumulative signals of adaptative events since humans and chimpanzee had a common ancestor, likely more than 6 million years ago.
 
@@ -95,7 +103,7 @@ To test whether mendelian disease genes have also experienced less long-term ada
 
 **Figure 5.:** Histograms represent the long-term coding adaptation values in 100 control sets. Red lines represent the long-term coding adaptation value in disease genes. Blue lines represent the long-term adaptation value across the whole coding genome. (A to E) All disease genes compared to controls. (F to J) Disease genes with many disease variants vs. controls, in low recombination regions of the genome. (A and F) Total alpha from ABC-MK. (B and G) Alpha for weak adaptation according to ABC-MK. (C and H) Alpha for strong adaptation according to ABC-MK. (D and I) Total alpha according to GRAPES. (E and J) Omega_a, the ratio of the rate of advantageous amino acid changes over the rate of synonymous changes, according to GRAPES.
 
-## A possible role of interference of deleterious mutations
+### A possible role of interference of deleterious mutations
 
 The underlying evolutionary process at mendelian disease genes must explain the sweep deficit, while simultaneously not implying a long-term deficit of adaptation. A possible explanation is that adaptation may be limited at disease genes due to currently segregating deleterious mutations interfering with, and slowing down advantageous variants. This process may in principle satisfy the condition of decreasing recent adaptation without decreasing long-term adaptation, since the number of deleterious segregating variants at a given locus is likely to vary significantly over evolutionary time due to genetic drift. This explanation, where the sweep deficit is specifically due to segregating deleterious variants, is particularly plausible given our results so far. Indeed, even though more selectively constrained genes, including disease genes, may be arguably more prone to harbor deleterious segregating variants because they are more constrained, we have already gathered evidence that purifying selection alone does not explain the sweep deficit at disease genes; it reflects the amount of deleterious variants that were removed, not the amount of currently segregating ones. Furthermore, we always compare disease and control non-disease genes with matched purifying selection. Lastly, we have shown that genes with a high level of purifying selection (high proportion of conserved elements) do not have any sweep deficit (see above).
 
@@ -105,7 +113,7 @@ For these comparisons, we focus solely on African populations for which we found
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69026/elife-69026-fig6-v2.jpg)
 
-**Figure 6.:** The sweep deficit is measured as the FPR score per gene (to make all tested groups comparable) over all window sizes, and  and iHS, as in nSLFigure 2 (Materials and methods). The different groups are separated according to recombination and numbers of disease variants so that they have approximately the same size (a half or a fourth of the disease genes). All deficits are measured using only African populations.Figure 6—source data 1.
+**Figure 6.:** The sweep deficit is measured as the FPR score per gene (to make all tested groups comparable) over all window sizes, and $nS_{L}$ and iHS, as in Figure 2 (Materials and methods). The different groups are separated according to recombination and numbers of disease variants so that they have approximately the same size (a half or a fourth of the disease genes). All deficits are measured using only African populations.
 
 These results further imply that the alternative explanation of constitutively less common adaptation at disease genes is less likely than interference. With constitutively less adaptation at disease genes, the stronger sweep deficit observed at disease genes in low, compared to high recombination regions, could only reflect the fact that there is more statistical power to detect sweeps in low recombination regions (Booker et al., 2020; O'Reilly et al., 2008), and therefore more statistical power to distinguish a sweep deficit. A higher statistical power to detect sweeps in low recombination regions however does not explain the very strong sweep deficit in low recombination regions with many disease variants, and the marginal sweep deficit in low recombination regions with few disease variants.
 
@@ -117,13 +125,199 @@ We further find that the difference in sweep deficits between high and low recom
 
 More importantly, the fact that constitutively less adaptation at disease genes combined to more power to detect sweeps in low recombination regions does not explain our results, is made even clearer by the fact that disease genes in low recombination regions and with many disease variants have in fact experienced more, not less long-term adaptation according to an MK analysis using both ABC-MK and GRAPES (Figure 5F,G,H,I,J). ABC-MK in particular finds that there is a significant excess of long-term strong adaptation (Figure 5H, P<0.01) in disease genes with low recombination and with many disease variants, compared to controls, but similar amounts of weak adaptation (Figure 5G, P=0.16). It might be that disease genes with many disease variants are genes with more mutations with stronger effects that can generate stronger positive selection. The potentially higher supply of strongly advantageous variants at these disease genes makes it all the more notable that they have a very strong sweep deficit in recent evolutionary times. This further strengthens the evidence in favor of interference during recent human adaptation: the limiting factor does not seem to be the supply of strongly advantageous variants, but instead the ability of these variants to have generated sweeps recently by rising fast enough in frequency.
 
-## Decreased interference of recessive deleterious mutations during a bottleneck may explain the weaker sweep deficit in East Asia and Europe
+### Decreased interference of recessive deleterious mutations during a bottleneck may explain the weaker sweep deficit in East Asia and Europe
 
 An important observation in our analysis, that any potential explanation needs to account for, is the much weaker sweep deficit at disease genes in Europe and especially in East Asia, compared to Africa. If interference of recessive deleterious variants explains the sweep deficit at disease genes then it should also account for the weaker sweep deficit out of Africa. Previous results suggest that it might be the case. (Balick et al., 2015) showed that during a bottleneck of the magnitude of the Out of Africa bottleneck, there should be a sharp decrease of the segregating recessive deleterious variants load, because of all the low-frequency recessive deleterious variants that are removed when the bottleneck occurs. This is especially true for strongly deleterious variants that tend to segregate at lower frequencies. The magnitude of the bottleneck investigated by Balick et al. (a 10-fold decrease in population size) has since been confirmed for the Out of Africa bottleneck by the most recent Ancestral Recombination Graph approaches (Speidel et al., 2019). Populations in East Asia in particular went from an ancestral effective population size of ~10,000 to a post-Out of Africa effective population size of ~1000 for extended amounts of time before the very recent explosive human population expansions (Speidel et al., 2019). Balick et al. also found (i) evidence of an overall increased burden of recessive deleterious variants at disease genes compared to other genes and (ii) also found that this recessive burden had decreased in Europe, following the bottleneck out of Africa.
 
 Here, we hypothesize that the bottleneck out of Africa decreased the recessive burden enough to cause a possible decrease of interference of recessive segregating variants at mendelian disease genes, and that this decrease of interference might explain the smaller sweep deficit observed at disease genes in Europe and especially in East Asia (Figure 4). We test this hypothesis using forward population simulations of loci with concentrations of deleterious variants meant to resemble a number of genic regions (Materials and methods). We find that, as expected given the results of Balick et al., there is much less interference of recessive deleterious variants after a bottleneck similar to the Out of Africa bottleneck (Table 1). In Table 1, we provide both the fixation probabilities and the time to fixations of advantageous mutations of different strengths, under different simulated demographies matching either past demography in or out of Africa, and including deleterious mutations or not for comparing fixation parameters with or without interference (Materials and methods). In the presence of recessive deleterious variants, the time to fixation of advantageous variants in particular is only slightly increased after an Out of Africa-like bottleneck, compared to the strong fixation time increase when no bottleneck has taken place (Table 1). This interference effect is specific to recessive deleterious mutations and not observed with dominant deleterious mutations, as expected (Assaf et al., 2015). The effect on fixation time alone is likely sufficient to explain the sharp difference in sweep deficit observed, especially when comparing Africa and East Asia, the latter being the most bottlenecked population investigated here. Indeed, a sharp increase in fixation time is expected to result in substantially weaker sweep signals. This is because a slower increase in frequency of an advantageous mutation will leave more time to a larger number of recombination events to occur, and thus narrow down the breadth of the sweep signature around that advantageous mutation (Assaf et al., 2015). A reduction of the segregating recessive burden as observed by Balick et al. at mendelian disease genes, and therefore interference, can thus explain the observed patterns in Africa versus East Asia and Europe. This reduction might be due to a number of concurrent processes: a reduction in the number of recessive segregating variants as observed by Balick et al., but hypothetically, might also be due to a decrease in the effective deleteriousness of the remaining segregating variants due to the lower effective population size. This further supports the idea that interference with recessive deleterious variants may explain our observation of a strong sweep deficit at disease genes in Africa, and of weaker sweep deficits out of Africa.
 
-## Similar levels of sweep depletion in mendelian disease genes across MeSH disease classes
+**Table 1.**
+ Decreased interference during a bottleneck.The table provides the proportion of advantageous mutations that go to fixation (% fixed), and the time to fixation under multiple conditions simulated with SLiM (Materials and methods). For example, s=0.005, 40% constrained, recessive means that we simulate advantageous mutations with s=0.005, surrounded by a genomic region where 40% of sites experience recessive deleterious mutations according to a specific distribution of fitness effets (Materials and methods). The fix. time increase column provides the relative increase in fixation time (ratio of times) in the presence compared to in the absence of deleterious mutations. The time to fixation is in number of generations. The Methods provide more details on the simulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="5">S=0.005, 10% constrained, recessive</th>
+      <th>Demography</th>
+      <th>Deleterious mutations?</th>
+      <th>Time to fixation</th>
+      <th>% fixed</th>
+      <th>Fix. time increase</th>
+      <th>Fix. prob decrease</th>
+    </tr>
+    <tr>
+      <th rowspan="2">East Asia: 10000-&gt;1000</th>
+      <th>No</th>
+      <th>2265</th>
+      <th>0.0050</th>
+      <th rowspan="2">1.12</th>
+      <th rowspan="2">0.66</th>
+    </tr>
+    <tr>
+      <th>Yes</th>
+      <th>2547</th>
+      <th>0.0033</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Africa: 10000-&gt;10000</th>
+      <th>No</th>
+      <th>4204</th>
+      <th>0.0051</th>
+      <th rowspan="2">1.55</th>
+      <th rowspan="2">0.74</th>
+    </tr>
+    <tr>
+      <th>Yes</th>
+      <th>6530</th>
+      <th>0.0038</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">s=0.005, 20% constrained, recessive</td>
+      <td>demography</td>
+      <td>deleterious mutations?</td>
+      <td>time to fixation</td>
+      <td>% fixed</td>
+      <td>fix. time increase</td>
+      <td>fix. prob decrease</td>
+    </tr>
+    <tr>
+      <td rowspan="2">East Asia: 10000-&gt;1000</td>
+      <td>no</td>
+      <td>2265</td>
+      <td>0.0050</td>
+      <td rowspan="2">1.16</td>
+      <td rowspan="2">0.66</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>2617</td>
+      <td>0.0033</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Africa: 10000-&gt;10000</td>
+      <td>no</td>
+      <td>4204</td>
+      <td>0.0051</td>
+      <td rowspan="2">1.69</td>
+      <td rowspan="2">0.62</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>7113</td>
+      <td>0.0032</td>
+    </tr>
+    <tr>
+      <td rowspan="5">s=0.005, 40% constrained, recessive</td>
+      <td>demography</td>
+      <td>deleterious mutations?</td>
+      <td>time to fixation</td>
+      <td>% fixed</td>
+      <td>fix. time increase</td>
+      <td>fix. prob decrease</td>
+    </tr>
+    <tr>
+      <td rowspan="2">East Asia: 10000-&gt;1000</td>
+      <td>no</td>
+      <td>2265</td>
+      <td>0.0050</td>
+      <td rowspan="2">1.17</td>
+      <td rowspan="2">0.65</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>2642</td>
+      <td>0.0033</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Africa: 10000-&gt;10000</td>
+      <td>no</td>
+      <td>4204</td>
+      <td>0.0051</td>
+      <td rowspan="2">2.10</td>
+      <td rowspan="2">0.56</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>8809</td>
+      <td>0.0028</td>
+    </tr>
+    <tr>
+      <td rowspan="5">s=0.01, 40% constrained, recessive</td>
+      <td>demography</td>
+      <td>deleterious mutations?</td>
+      <td>time to fixation</td>
+      <td>% fixed</td>
+      <td>fix. time increase</td>
+      <td>fix. prob decrease</td>
+    </tr>
+    <tr>
+      <td rowspan="2">East Asia: 10000-&gt;1000</td>
+      <td>no</td>
+      <td>1530</td>
+      <td>0.0092</td>
+      <td rowspan="2">1.37</td>
+      <td rowspan="2">0.78</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>2090</td>
+      <td>0.0072</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Africa: 10000-&gt;10000</td>
+      <td>no</td>
+      <td>2546</td>
+      <td>0.0098</td>
+      <td rowspan="2">2.05</td>
+      <td rowspan="2">0.82</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>5209</td>
+      <td>0.0080</td>
+    </tr>
+    <tr>
+      <td rowspan="5">s=0.005, 40% constrained, dominant</td>
+      <td>demography</td>
+      <td>deleterious mutations?</td>
+      <td>time to fixation</td>
+      <td>% fixed</td>
+      <td>fix. time increase</td>
+      <td>fix. prob decrease</td>
+    </tr>
+    <tr>
+      <td rowspan="2">East Asia: 10000-&gt;1000</td>
+      <td>no</td>
+      <td>2265</td>
+      <td>0.0050</td>
+      <td rowspan="2">0.96</td>
+      <td rowspan="2">0.93</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>2169</td>
+      <td>0.0046</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Africa: 10000-&gt;10000</td>
+      <td>no</td>
+      <td>4204</td>
+      <td>0.0051</td>
+      <td rowspan="2">0.99</td>
+      <td rowspan="2">0.92</td>
+    </tr>
+    <tr>
+      <td>yes</td>
+      <td>4169</td>
+      <td>0.0047</td>
+    </tr>
+  </tbody>
+</table>
+
+### Similar levels of sweep depletion in mendelian disease genes across MeSH disease classes
 
 Because we find an overall sweep depletion at mendelian disease genes, we further ask if genes associated with different diseases might show different patterns of depletion (always in African populations). We classify disease genes into different classes according to the Medical Subject Headings (MeSH) annotation for diseases in DisGeNet (Piñero et al., 2020). The MeSH annotations organize the disease genes into broad disease categories that overlap with distinct organs or large physiological systems (for example the endocrine system). We find significant (FPR<0.05) sweep depletions in Africa for all but one disease MeSH classes (FPR<0.05; Figure 8). The sweep deficit is comparable across MeSH disease classes (Figure 8), suggesting that the evolutionary process at the origin of the sweep deficit is not disease-specific. This is compatible with a non-disease specific explanation such as recessive deleterious variants interfering with adaptive variants, irrespective of the specific disease type. The only non-significant deficit is for the MeSH term immune system diseases. Interestingly, there is evidence that past adaptation at disease genes in response to diverse pathogens has resulted in increased prevalence of specific auto-immune diseases (Barreiro and Quintana-Murci, 2010), and we can speculate that this might be why we do not see a sweep deficit at those genes.
 
@@ -149,25 +343,56 @@ In conclusion, although our analysis reveals a strong deficit of selective sweep
 
 ## Materials and methods
 
-## Disease gene lists
+### Disease gene lists
 
 We consider genes that are known to be associated (mendelian type of association) with diseases as mendelian disease genes. We focus on protein-coding genes associated with human mendelian non-infectious diseases. By non-infectious, we mean that we excluded genes with known infectious disease-associated variants. This does not exclude most virus-interacting genes since most of them are not associated at the genetic variant level with infectious diseases. It is important to note that the effect of virus interactions is accounted for by matching the number of interacting viruses between mendelian disease genes and controls (see below). Complex diseases are associated with several loci and environmental factors. Patterns of positive selection at complex disease and mendelian disease genes may differ (Blekhman et al., 2008; Quintana-Murci, 2016; Torgerson et al., 2009), which is why we restrict our analysis to mendelian disease genes. We also restrict our analyses to non-infectious disease genes, since disease, genetic associations with pathogens are an entirely different problem. We nevertheless control for the proportion of genes that are immune genes or interact with viruses (see below), since it has been shown that immune genes and interactions with viruses drive a large proportion of genomic adaptation in humans (Enard and Petrov, 2020). Therefore, different proportions of immune and virus-interacting genes between disease and non-disease genes might confound their comparison. Moreover, although diseases can be associated with non-coding genes, we only use protein-coding genes. We curate disease genes defined as genes associated with diseases in a mendelian fashion according to both DisGeNet (Piñero et al., 2020) and OMIM (Amberger et al., 2019), to ensure that we focus on high-confidence mendelian disease genes. DisGeNet is a comprehensive database including gene-disease associations (GDAs) from many sources. In order to get disease genes with high confidence, we further only use GDAs curated by UniProt. These gene-disease associations are extracted and carefully curated from the scientific literature and the OMIM (Online Mendelian Inheritance in Man) database, which reports phenotypes either mendelian or possibly mendelian (Amberger et al., 2019). We also exclude all genes associated with infectious diseases according to MeSH annotation (disease class C01). In the end, we curate 4215 non-infectious mendelian disease genes from DisGeNet also curated by OMIM and Uniprot. Although we rely on GDAs from Uniprot to curate high-quality disease genes, we also include GDAs of DisGeNet from other sources when classifying disease genes into different MeSH classes and measuring pleiotropy, as long as a disease gene has at least one GDA curated by OMIM and Uniprot. We completely exclude GDAs that are only reported by CTD (Comparative Toxicogenomics Database) (Davis et al., 2021) in this study. This is because CTD includes a broad range of chemical-induced diseases that might only happen when people are exposed to these chemicals, especially some inorganic chemicals that may not be present in natural environments (Davis et al., 2021).
 
 In order to study different types of diseases, we also divide disease genes into different classes according to the annotated MeSH classes in DisGeNet (Piñero et al., 2020). Those diseases without MeSH class are annotated as ‘unclassfied’. Genes belonging to more than one MeSH class are counted in each MeSH class where they are present. MeSH classes including less than 50 genes are not considered in this study. We classify all the non-infectious disease genes into 17 MeSH classes including Neoplasms (C04), Musculoskeletal Diseases (C05), Digestive System Diseases (C06), Stomatognathic Diseases (C07), Respiratory Tract Diseases (C08), Otorhinolaryngologic Diseases (C09), Nervous System Diseases (C10), Eye Diseases (C11), Male Urogenital Disease (C12), Female Urogenital Diseases and Pregnancy Complications (C13), Cardiovascular Diseases (C14), Hemic and Lymphatic (C15), Congenital, Hereditary, and Neonatal Diseases and Abnormalities (C16), Skin and Connective Tissue Diseases (C17), Nutritional and Metabolic Diseases (C18), Endocrine System Diseases (C19), Immune System Diseases (C20), and ‘unclassified’.
 
-## Detecting recent selection signals at human genes
+### Detecting recent selection signals at human genes
 
 All the analyses were conducted human genome version hg19. We use two different methods to detect selective sweeps in human populations: iHS (Voight et al., 2006) and nSL (Ferrer-Admetlla et al., 2014). Both approaches are haplotype-based statistics calculated with polymorphism data. We use human genome data from the 1,000 Genomes Project phase 3, which includes 2504 individuals from 26 populations (Auton et al., 2015).
 
-We measure iHS and nSL in windows centered on human coding genes (i.e. windows whose center is located half-way between the most upstream transcript start site and most downstream transcript stop site of protein coding genes). We use windows of sizes ranging from 50 kb to 1000 kb (50kb, 100kb, 200kb, 500kb and 1000kb) since we do not want to presuppose of the size of sweeps, and since the size of the selective sweeps may vary between different genes. Moreover, to avoid any preconception related to the expected strength or number of sweep signals, we use a moving rank threshold strategy to measure the enrichment or deficit in sweeps at disease genes. For example, we select the top 500 genes with the stronger sweep signals according to a specific statistic (iHS or nSL). We then compare the number of diseases and non-disease genes within the top 500 genes with the strongest iHS or nSL signals. This was repeated for different top thresholds and the corresponding ranks from top 5,000 to top 10 (5000,4000,3000,2500,2000,1500,1000,900,800,700,600,500,450,400,350,300,250,200,150,100,90,80,70,60,50,40,30,25,20,15,10). Using a range of rank thresholds makes less assumptions and provides more flexibility than the classic outlier approach, even though we still have to arbitrarily determine a list of rank thresholds to include. This is because we can get a significant result not only due to an enrichment of only the top, absolutely strongest sweeps, but also due for example to a large excess of weak or moderate sweeps, that would for example increase the expected numbers in the top 5000 or top 2000, without increasing the number of sweeps in the top 100 or top 50. Therefore, our approach is sensitive to a more diverse range of sweeps than the classic outlier approach, that makes a very restrictive assumption that sweeps have to be necessarily be strong. Genes are ranked based on the average iHS or nSL in their gene centered windows. Both iHS and nSL measure, individually for each SNP in the genome, how much larger haplotypes linked to the derived SNP allele are compared to haplotypes linked to the ancestral allele. For each window, we measure the average of the absolute value of iHS or nSL over all the SNPs in that window with an iHS or nSL value. The average iHS or nSL values in a window provide high power to detect recent select sweeps (Enard and Petrov, 2020).
+We measure iHS and nSL in windows centered on human coding genes (i.e. windows whose center is located half-way between the most upstream transcript start site and most downstream transcript stop site of protein coding genes). We use windows of sizes ranging from 50 kb to 1000 kb (50kb, 100kb, 200kb, 500kb and 1000kb) since we do not want to presuppose of the size of sweeps, and since the size of the selective sweeps may vary between different genes. Moreover, to avoid any preconception related to the expected strength or number of sweep signals, we use a moving rank threshold strategy to measure the enrichment or deficit in sweeps at disease genes. For example, we select the top 500 genes with the stronger sweep signals according to a specific statistic (iHS or nSL). We then compare the number of diseases and non-disease genes within the top 500 genes with the strongest iHS or $nS_{L}$ signals. This was repeated for different top thresholds and the corresponding ranks from top 5,000 to top 10 (5000,4000,3000,2500,2000,1500,1000,900,800,700,600,500,450,400,350,300,250,200,150,100,90,80,70,60,50,40,30,25,20,15,10). Using a range of rank thresholds makes less assumptions and provides more flexibility than the classic outlier approach, even though we still have to arbitrarily determine a list of rank thresholds to include. This is because we can get a significant result not only due to an enrichment of only the top, absolutely strongest sweeps, but also due for example to a large excess of weak or moderate sweeps, that would for example increase the expected numbers in the top 5000 or top 2000, without increasing the number of sweeps in the top 100 or top 50. Therefore, our approach is sensitive to a more diverse range of sweeps than the classic outlier approach, that makes a very restrictive assumption that sweeps have to be necessarily be strong. Genes are ranked based on the average iHS or nSL in their gene centered windows. Both iHS and nSL measure, individually for each SNP in the genome, how much larger haplotypes linked to the derived SNP allele are compared to haplotypes linked to the ancestral allele. For each window, we measure the average of the absolute value of iHS or $nS_{L}$ over all the SNPs in that window with an iHS or $nS_{L}$ value. The average iHS or nSL values in a window provide high power to detect recent select sweeps (Enard and Petrov, 2020).
 
-## Comparing recent adaptation between disease and non-disease genes
+### Comparing recent adaptation between disease and non-disease genes
 
 We use a previously developed gene-set enrichment analysis pipeline to compare recent adaptation between disease and non-disease genes (Enard and Petrov, 2020) available at https://github.com/DavidPierreEnard/Gene_Set_Enrichment_Pipeline. This pipeline includes two parts. The first part is a bootstrap test that estimates the whole sweep enrichment or depletion curve at genes of interest (mendelian disease genes in our case) while controlling for confounding factors. The second part is a false positive risk (also known as false discovery rate in the context of multiple testing) that estimates the statistical significance of the whole sweep enrichment curve using block-randomized genomes (Enard and Petrov, 2020).
 
 To compare disease and non-disease genes, we first need to select control non-disease genes that are sufficiently far away from disease genes. In that way, we avoid using as controls non-disease genes that overlap the same sweeps as neighboring disease genes, thus resulting in an underpowered comparison. The question is then how far do we need to choose non-disease control genes? Ideally, we would choose non-disease control genes as far as possible from disease genes in the human genome, further than the size of the largest known sweeps (e.g. the lactase sweep), which would be on the order of a megabase. However, because there are many disease genes in our dataset (4215), there are very few non-disease genes in the human genome that are more than one megabase away from the closest disease gene. This is a problem, because the available number of potential control non-disease genes is an important parameter that can affect both the type I error, false positive rate, and type II error, false negative rate of the disease vs. non-disease genes comparison. Indeed, the smaller the control set, the more likely it is to deviate from being representative of the true null expectation at non-disease genes. The noise associated with a small sample could go either way. Either the small control sample happens by chance to have less sweeps, and the bootstrap test we use to compare disease and non-disease genes will become too liberal to detect sweep enrichments, and to conservative to detect sweep deficits. Or the small control sample happens by chance to have more sweeps than a larger control sample would, and the bootstrap test becomes too conservative to detect sweep enrichments, and too liberal to detect sweep deficits.
 
 After trying distances between disease genes and control disease genes of 100 kb, 200 kb, 300 kb, 400 kb, and 500 kb, we find that the sweep deficit observed at disease genes increases steadily from 100 kb to 300 kb (Table 2), showing that 100 kb or 200 kb are likely insufficient distances. Further than 300 kb at 400 kb, we do not observe much stronger sweep deficits than at 300 kb, while at the same time the risks of type I and type II errors keep increasing due to shrinking non-disease genes control sets. This would translate in a decreased power to possibly exclude the null hypothesis of no sweep enrichment or deficit in the second part of the pipeline, when estimating the actual pipeline FPR. Because of this, we set the required distance of potential control non-disease genes from disease genes at 300 kb. This is also the distance where there are still approximately as many control genes (3455) as there are disease genes that we can use for the comparison (3030; those genes out of the 4215 disease genes with sweep data and data for all the confounding factors).
+
+**Table 2.**
+ Sweep deficit as a function of the minimal distance of control non-disease genes.The sweep deficit is measured by the FPR score, that is the cumulative difference between the number of genes in sweeps at disease and control non-disease genes, across window sizes, sweep summary statistics, and African populations (see the rest of the Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Minimal distance</th>
+      <th>Sweep deficit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>100 kb</td>
+      <td>−20889</td>
+    </tr>
+    <tr>
+      <td>200 kb</td>
+      <td>−35009</td>
+    </tr>
+    <tr>
+      <td>300 kb</td>
+      <td>−68928</td>
+    </tr>
+    <tr>
+      <td>400 kb</td>
+      <td>−88546</td>
+    </tr>
+  </tbody>
+</table>
 
 Another important aspect of the bootstrap test (first part of the pipeline), aside from setting up the minimal distance of the control non-disease genes, is the matching of potential confounding factors likely to influence sweep occurrence. We choose non-disease control genes that have the same confounding factors characteristics as disease genes (for example, control non-disease genes that have the same gene expression level across tissues as disease genes). The precise matching algorithm is detailed in Enard and Petrov, 2020. In brief, the bootstrap test builds sets of control genes that have the same overall average values for confounding factors as disease genes. For example, the bootstrap test can build 100 control sets, with each set having the same overall average GC content as disease genes. Note that this means that disease genes are not individually matched one by one with one control gene that happens to have the same GC content. Matching genes individually, instead of matching the overall gene sets averages, would indeed limit the pool of potential control genes too drastically. For more details on this, please refer to Enard and Petrov, 2020.
 
@@ -179,31 +404,43 @@ To address the increased type I and type II error risks of the bootstrap test, a
 
 To measure the FPR for a curve, we need to define a metric to compare the real curve with the randomly generated ones. In Figure 3, we show relative enrichments at each sweep rank threshold, the number of disease genes in sweeps divided by the number of control non-disease genes in sweeps. As a summary metric for the curve, we could then use the sum of the relative enrichments over all thresholds. However, the issue with this approach is that a relative enrichment is the same whether we have two disease genes in sweeps and one control non-disease gene in sweeps, or we have 200 disease genes in sweeps and 100 control non-disease genes in sweeps. Thus, although relative enrichments are convenient for visualization on a figure, they are not adequate to measure the FPR. Instead of the relative enrichment, we use as a score for estimating the FPR (FPR score) the difference between disease and non-disease genes, that is, the number of disease genes in sweeps, minus the average number of control non-disease genes across control sets built by the bootstrap test. We then get this score for a whole curve the sum of differences over all the rank thresholds. We use this sum of differences to estimate the enrichment or deficit curve FPR, as the proportion of block-randomized genomes where the FPR score (the sum of differences) exceeds the observed sum of differences for an enrichment (one minus this proportion for a deficit).
 
-We can write this FPR score as follows. With t being the number t threshold belonging to T, the set of rank threshold numbers, Dt the number of disease genes in sweeps at threshold number t, and Ct the number of control genes in sweeps at threshold number t then:FPRscore=∑t∈T(Dt−Ct)
+We can write this FPR score as follows. With t being the number t threshold belonging to T, the set of rank threshold numbers, Dt the number of disease genes in sweeps at threshold number t, and Ct the number of control genes in sweeps at threshold number t then:
 
-Importantly, although so far we have described the case where we measure the FPR for one enrichment curve, nothing prevents us from calculating a single sum of differences over an entire group of enrichment or deficit curves. This way, we can measure a single FPR for any number of curves considered together. In our analysis, we measure a single FPR adding iHS and nSL curves together, and also adding together the curves for 50kb, 100kb, 200kb, 500kb, and 1000kb windows (10 curves in total, 2 statistics*5 window sizes). Then, with W the set of window sizes, M the set of summary statistics used for detecting sweeps, and P the set of populations, we haveFPRscore=∑m∈M∑w∈W∑p∈P∑t∈T(Dt,m,w,p−Ct,m,w,p)
+$$
+FPRscore=\sumt\inT(D_{t}−C_{t})
+$$
 
-In this FPR score, it is important to note that the strongest sweeps signals in the top ranks weight more than the weaker ranks. For example, if the top rank threshold used is 10 for the top 10 genes with the strongest sweep signals, then a disease gene in the top 10 is also in the top 20, or top 50, or top 100 or any other less restrictive defined rank threshold. Such a disease gene thus contributes to D1, D2, D3 (….) up to Dn, where n is the number of rank thresholds used. It follows that the genes in the top rank threshold are weighted by a factor of n, and that the genes in the second top rank threshold, but not in the top rank threshold, are weighted by a factor of n-1, and so on up to the genes in the last nth rank threshold being weighted by a factor of 1. We can thus define dt as the number of genes with ranks lower than rank threshold number t, but higher than rank threshold number t-1. Then, with ct being the equivalent of dt but for control genes:FPRscore=∑m∈M∑w∈W∑p∈P∑t∈T(dt,m,w,p−ct,m,w,p)∗(n+1−t)
+Importantly, although so far we have described the case where we measure the FPR for one enrichment curve, nothing prevents us from calculating a single sum of differences over an entire group of enrichment or deficit curves. This way, we can measure a single FPR for any number of curves considered together. In our analysis, we measure a single FPR adding iHS and $nS_{L}$ curves together, and also adding together the curves for 50kb, 100kb, 200kb, 500kb, and 1000kb windows (10 curves in total, 2 statistics*5 window sizes). Then, with W the set of window sizes, M the set of summary statistics used for detecting sweeps, and P the set of populations, we have
+
+$$
+FPRscore=\summ\inM\sumw\inW\sump\inP\sumt\inT(D_{t,m,w,p}−C_{t,m,w,p})
+$$
+
+In this FPR score, it is important to note that the strongest sweeps signals in the top ranks weight more than the weaker ranks. For example, if the top rank threshold used is 10 for the top 10 genes with the strongest sweep signals, then a disease gene in the top 10 is also in the top 20, or top 50, or top 100 or any other less restrictive defined rank threshold. Such a disease gene thus contributes to D1, D2, D3 (….) up to Dn, where n is the number of rank thresholds used. It follows that the genes in the top rank threshold are weighted by a factor of n, and that the genes in the second top rank threshold, but not in the top rank threshold, are weighted by a factor of n-1, and so on up to the genes in the last nth rank threshold being weighted by a factor of 1. We can thus define dt as the number of genes with ranks lower than rank threshold number t, but higher than rank threshold number t-1. Then, with ct being the equivalent of dt but for control genes:
+
+$$
+FPRscore=\summ\inM\sumw\inW\sump\inP\sumt\inT(d_{t,m,w,p}−c_{t,m,w,p})∗(n+1−t)
+$$
 
 This weighting scheme is justified, as it makes sense to give more weight to stronger, and therefore higher confidence sweep signals.
 
-## Additional GERP confounding factors
+### Additional GERP confounding factors
 
 To test if the confounding factors enumerated above properly account for purifying selection/selective constraint when comparing disease and control genes, we add several GERP-based metrics (Davydov et al., 2010) to the list of matched confounding factors, and check whether it makes a difference or not when estimating the sweep deficit in disease genes. Indeed, GERP provides a quantification of purifying selection in a given genomic window. So if adding GERP data to the confounding factors makes a difference for the sweep deficit, then it means that purifying selection was not already accounted for by the existing confounding factors. On the contrary, if adding GERP data to the confounding factors makes no difference for the sweep deficit, then it shows that the already included confounding factors, already meant to account for purifying selection such as the density of phastCons conserved elements or McVicker’s B statistic (among others), already control well for purifying selection. As additional confounding factors, we consider the average GERP score in 50 kb and 500 kb windows centered on genes, as well as the density of GERP conserved elements also in 50 kb and 500 kb windows (four additional confounding factors in total) downloaded from the Sidow lab website for human genome assembly hg19 (http://mendel.stanford.edu/SidowLab/downloads/gerp/).
 
-## McDonald-Kreitman analysis of long-term coding adaptation
+### McDonald-Kreitman analysis of long-term coding adaptation
 
 We use ABC-MK (https://github.com/jmurga/Analytical.jl, Moreno, 2021) and GRAPES (https://github.com/BioPP/grapes, Dutheil, 2021) to estimate the long-term rate of protein adaptation (both with the alpha and the omega_a estimates, see Figure 5). As divergence data to get DN (number of non-synonymous fixed substitutions) and DS (number of synonymous fixed substitutions), we count the number of human-specific fixed substitutions (Uricchio et al., 2019). As non-synonymous and synonymous genetic variation data, we use the variants from the 1000 Genomes phase 3 for the 661 African individuals included (Uricchio et al., 2019). We use GRAPES to estimate the average strength of deleterious non-synonymous variants with the DisplGamma distribution (Galtier, 2016).
 
-## Sweep deficit at high and low recombination disease genes, and at high and low disease variant number disease genes
+### Sweep deficit at high and low recombination disease genes, and at high and low disease variant number disease genes
 
 To generate Figure 6, we separate disease genes in groups of approximately the same size based on their recombination rate and numbers of disease variants annotated in OMIM/Uniprot. We separate the disease genes into two groups of equal size, those with recombination lower than 1.137 cM/Mb, and those with recombination higher than this value. To count the disease variants at each disease gene, we count not only the OMIM/Uniprot disease variants for that gene, but also all the other OMIM/Uniprot disease variants that occur in a 500 kb window centered on that gene. We do this because the recessive deleterious variants form other nearby disease genes may also interfere with adaptation. Half of disease genes have less than five OMIM/Uniprot disease variants, and half have five or more.
 
-## Selection of the 1000 genes with the highest density of conserved elements
+### Selection of the 1000 genes with the highest density of conserved elements
 
 To compare highly constrained genes with other genes in the genome to check if purifying selection alone can create a sweep deficit, we first identify the 1000 genes with both complete confounding factors and complete sweep data. We then ask if these 1000 genes have a sweep deficit compared to other genes in the genome far enough from them (>300kb as for the disease vs. control genes). For this comparison, we cannot match the following confounding factors because they are themselves measures of, or related to purifying selection: the density of conserved elements, coding and regulatory densities, pN, pS, the number of gene neighbors and genes’s genomic length. We still match all other confounding factors.
 
-## Population simulations of interference with and without a bottleneck
+### Population simulations of interference with and without a bottleneck
 
 To investigate if reduced interference of recessive deleterious variants could explain the waker sweep deficit observed, we use SLiM (Haller and Messer, 2019) to simulate advantageous mutations in the presence of recessive deleterious mutations. To estimate the average fixation times and probabilities included in Table 1, we get the average of these values over 1000 simulations each time. We simulate a one megabase genomic region. Across this entire region, we set the percentage of conserved sites that can experience deleterious mutations at 8%, believed to be the average proportions of sites that are conserved in the human genome (Davydov et al., 2010; Siepel et al., 2005). At the center of the one megabase region, we include a 100 kb region where the proportion of sites that can experience deleterious mutations is higher, from 10%, to 20%, to 40%. This is meant to simulate the fact that we center our analysis on genes. The 10% proportion of sites that can experience deleterious mutations represents approximately the median GERP density of conserved elements in 100 kb windows centered on genes (Figure 9). The 20% and 40% proportions represent moderately elevated, and very strongly elevated values, respectively (Figure 9). We simulate a distribution of deleterious fitness effects (DFE) with a relatively flat profile across orders of magnitude for s, as found by recent human DFE estimates (Kim et al., 2017), with four negative selection coefficients, from weakly to strongly deleterious (s=-0.002,–0.02,−0.1,–0.5). The population size is initially set to 10,000 individuals and stays that way to simulate African populations (Speidel et al., 2019). After a burn-in period of 20,000 generations or 2N (deleterious mutations reach equilibrium faster than neutral ones), we set the population size to 1000 to simulate the demography of non-African populations (Balick et al., 2015; Speidel et al., 2019). The advantageous mutation is then introduced 500 generations later (~15,000 years later in human evolution) Counting an Out of Africa bottleneck around 60,000 years ago, and if we count that in addition a sweep will take a few more tens of thousands of years to reach frequencies in the iHS or nSL sensitivity range, this brings us within the time window where iHS and nSL still have power (sweeps not older than 30,000 years). We rewind the simulation back to 20,500 generations as many times as necessary until one advantageous mutation goes to fixation. The average number of times we need to rewind the simulations gives us the probability of fixation. We simulate co-dominant advantageous mutations. Each simulation configuration is repeated 1000 times to get the estimates provided in Table 1.
 
@@ -213,6 +450,6 @@ To investigate if reduced interference of recessive deleterious variants could e
 
 The recombination rate is set for the entire one megabase simulated locus at a low value of 0.1 cM/Mb, or ~10% of the average human recombination rate, to maximize the interference effect even during the simulated bottleneck, to see how much a bottleneck can decrease even strong interference.
 
-## Impact of functional differences between disease and non-disease genes on the sweep deficit
+### Impact of functional differences between disease and non-disease genes on the sweep deficit
 
 The sweep deficit at disease genes could be due to a different representation of gene functions at disease genes compared to control non-disease genes. In this case, disease genes would have less adaptation not because they are disease genes, but because the gene functions that are enriched among disease genes compared to non-disease happen to experience less adaptation. We can test this possibility using Gene Ontology (GO) (Gene Ontology Consortium and Gene Ontology, 2021) functional annotations as follows. If GO gene functions that are enriched in disease genes experience less adaptation independently of the disease status of genes, then we can predict that non-disease genes with these functions should also experience less adaptation than non-disease genes that do not have these GO functions. In total, we find that 3,097 GO annotations are enriched in disease genes compared to confounding factors-matched controls (bootstrap test p≤0.01). In our dataset, half of non-disease genes have 20 or more of these GO annotations, and half have less than 20 (very few have none). We find no difference in the sweep prevalence between the two groups (20 or more annotations vs. less than 20 annotations at least 300 kb away; FPR=0.15). The sweep deficit at disease genes is therefore unlikely to be due to the gene functions that are more represented in disease genes compared to controls. In addition, such a scenario would not explain the lack of sweep deficit observed at disease genes with high recombination rates and low numbers of disease variants (Figure 6).

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.19071.001 The nuclear pore complex (NPC) mediates nucleocytoplasmic transport through the nuclear envelope. How the NPC assembles into this double membrane boundary has remained enigmatic. Here, we captured temporally staged assembly intermediates by correlating live cell imaging with high-resolution electron tomography and super-resolution microscopy. Intermediates were dome-shaped evaginations of the inner nuclear membrane (INM), that grew in diameter and depth until they fused with the flat outer nuclear membrane. Live and super-resolved fluorescence microscopy revealed the molecular maturation of the intermediates, which initially contained the nuclear and cytoplasmic ring component Nup107, and only later the cytoplasmic filament component Nup358. EM particle averaging showed that the evagination base was surrounded by an 8-fold rotationally symmetric ring structure from the beginning and that a growing mushroom-shaped density was continuously associated with the deforming membrane. Quantitative structural analysis revealed that interphase NPC assembly proceeds by an asymmetric inside-out extrusion of the INM. DOI: http://dx.doi.org/10.7554/eLife.19071.001
+The nuclear pore complex (NPC) mediates nucleocytoplasmic transport through the nuclear envelope. How the NPC assembles into this double membrane boundary has remained enigmatic. Here, we captured temporally staged assembly intermediates by correlating live cell imaging with high-resolution electron tomography and super-resolution microscopy. Intermediates were dome-shaped evaginations of the inner nuclear membrane (INM), that grew in diameter and depth until they fused with the flat outer nuclear membrane. Live and super-resolved fluorescence microscopy revealed the molecular maturation of the intermediates, which initially contained the nuclear and cytoplasmic ring component Nup107, and only later the cytoplasmic filament component Nup358. EM particle averaging showed that the evagination base was surrounded by an 8-fold rotationally symmetric ring structure from the beginning and that a growing mushroom-shaped density was continuously associated with the deforming membrane. Quantitative structural analysis revealed that interphase NPC assembly proceeds by an asymmetric inside-out extrusion of the INM.
 
 ## Introduction
 
@@ -34,196 +34,493 @@ Despite this significant amount of indirect evidence and several competing hypot
 
 ## Results and discussion
 
-## Correlative electron tomography captures intermediates of interphase NPC assembly
+### Correlative electron tomography captures intermediates of interphase NPC assembly
 
-Deformation and fusion of the nuclear membranes that must be present during interphase NPC assembly can only be reliably detected by high-resolution 3D electron microscopy (EM). To target such EM observations, we established an assay that allowed us to estimate the position of the core region in the NE of telophase and G1 nuclei at any time during nuclear expansion post anaphase. To this end, we used 3D live confocal time-lapse imaging of the core marker Lap-2α tagged with YFP (
+Deformation and fusion of the nuclear membranes that must be present during interphase NPC assembly can only be reliably detected by high-resolution 3D electron microscopy (EM). To target such EM observations, we established an assay that allowed us to estimate the position of the core region in the NE of telophase and G1 nuclei at any time during nuclear expansion post anaphase. To this end, we used 3D live confocal time-lapse imaging of the core marker Lap-2α tagged with YFP (Dechat et al., 2004) together with the chromatin marker histone 2B tagged with mCherry (Figure 1—figure supplement 1A). 3D reconstruction of the core region surface in late anaphase allowed us to calculate the core regions at later times in the cell-cycle by modeling it onto the overall growth of the nuclear surface measured using histone 2B (Figure 1—figure supplement 1B‒H). With this assay in hand, we then systematically imaged live cells after exiting mitosis on EM compatible sapphire disks with carbon coated landmarks (Figure 1A), and natively fixed them by rapid high pressure freezing at defined times during G1 nuclear expansion. After cryo-substitution, we acquired high-resolution electron tomograms from sections cut through the core regions. The single cell correlation with live imaging allowed us to precisely determine the stage of nuclear expansion of each cell sampled by electron tomography and therefore temporally register all our samples (Figure 1A, Figure 1—figure supplement 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig1-v2.jpg)
 
-**Figure 1.:** (A) Correlative live-cell imaging with electron microscopy (EM). Cell-cycle progression of HeLa cells was monitored by confocal microscopy and the same cell was subjected to electron tomography. Tomograms were collected from different regions of the nuclear envelope (NE). Inferred non-core, inner-core and outer-core regions are indicated in light blue, light green and dark green, respectively. C, cytoplasm; N, nucleoplasm. Scale bar, 1 µm. (B) An electron tomographic slice of the NE. An assembly intermediate and a mature pore are indicated by a red arrow and a blue arrowhead, respectively. Insets show enlarged images in which membranes are traced by white dotted lines. ONM, outer nuclear membrane; INM, inner nuclear membrane. Scale bars, 100 nm. (C,D) Immuno-EM with mAb414 antibody and 10 nm-gold particles. (C) The profile of the NE and the positions of gold particles are denoted in the bottom panel. A mature pore and an intermediate are indicated as in (B). Scale bar, 100 nm. (D) The number of gold particles per assembly intermediate (‘observed’) and the one calculated assuming a random distribution of the particles (‘if random’). 31 particles were found on 13 intermediates, whereas the random distribution estimated 1.6 particles to be on 13 intermediates. The p-value (probability that the distribution is due to chance alone) <10–100; a chi-square goodness of fit test. (E) Cryo-EM tomographic slices of isolated NEs of HeLa cells. A mature pore and an intermediate are indicated as in (B). Other examples of intermediates are also indicated. Scale bars, 100 nm.DOI: http://dx.doi.org/10.7554/eLife.19071.003
+**Figure 1.:** (A) Correlative live-cell imaging with electron microscopy (EM). Cell-cycle progression of HeLa cells was monitored by confocal microscopy and the same cell was subjected to electron tomography. Tomograms were collected from different regions of the nuclear envelope (NE). Inferred non-core, inner-core and outer-core regions are indicated in light blue, light green and dark green, respectively. C, cytoplasm; N, nucleoplasm. Scale bar, 1 µm. (B) An electron tomographic slice of the NE. An assembly intermediate and a mature pore are indicated by a red arrow and a blue arrowhead, respectively. Insets show enlarged images in which membranes are traced by white dotted lines. ONM, outer nuclear membrane; INM, inner nuclear membrane. Scale bars, 100 nm. (C,D) Immuno-EM with mAb414 antibody and 10 nm-gold particles. (C) The profile of the NE and the positions of gold particles are denoted in the bottom panel. A mature pore and an intermediate are indicated as in (B). Scale bar, 100 nm. (D) The number of gold particles per assembly intermediate (‘observed’) and the one calculated assuming a random distribution of the particles (‘if random’). 31 particles were found on 13 intermediates, whereas the random distribution estimated 1.6 particles to be on 13 intermediates. The p-value (probability that the distribution is due to chance alone) <10–100; a chi-square goodness of fit test. (E) Cryo-EM tomographic slices of isolated NEs of HeLa cells. A mature pore and an intermediate are indicated as in (B). Other examples of intermediates are also indicated. Scale bars, 100 nm.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A,B) Time-lapse three-dimensional (3D) imaging of dividing HeLa cells which express Lap-2α-YFP and histone-H2b-mCherry by confocal microscopy. Scale bars, 10 µm. (A) Maximum intensity projection images. Time after anaphase onset is indicated. Lap-2α localizes in core regions only at late anaphase. (B) A single confocal section of another dividing cell at late anaphase. (C–G) A pipeline for estimating core regions after late anaphase. (C) The entire surface of the chromosomes was segmented and the areas where Lap-2α localizes are marked in dark and light green. (D) The segmented chromosomes were rotated as indicated by arrows in (C). (E) The nuclei and core regions were approximated by the ellipsoid. (F) The area of core regions was measured in 20 different nuclei. The regions above the 95th, between the 5th and 95th, and below the 5th percentile of being core regions are inferred to be core (dark and light green), indistinct (gray), and non-core regions (light blue), respectively. (G) The nucleus and core regions were estimated to grow isometrically after late anaphase. (H) Assignment of core regions in the electron microscopy (EM) image. Serial sections of plastic-embedded HeLa cells were cut and the Z position was determined for each section. The major axis of the nucleus was estimated and core and non-core regions were assigned based on the criteria defined in (B–G). Scale bars, 5 µm.DOI: http://dx.doi.org/10.7554/eLife.19071.004
+**Figure 1—figure supplement 1.:** (A,B) Time-lapse three-dimensional (3D) imaging of dividing HeLa cells which express Lap-2α-YFP and histone-H2b-mCherry by confocal microscopy. Scale bars, 10 µm. (A) Maximum intensity projection images. Time after anaphase onset is indicated. Lap-2α localizes in core regions only at late anaphase. (B) A single confocal section of another dividing cell at late anaphase. (C–G) A pipeline for estimating core regions after late anaphase. (C) The entire surface of the chromosomes was segmented and the areas where Lap-2α localizes are marked in dark and light green. (D) The segmented chromosomes were rotated as indicated by arrows in (C). (E) The nuclei and core regions were approximated by the ellipsoid. (F) The area of core regions was measured in 20 different nuclei. The regions above the 95th, between the 5th and 95th, and below the 5th percentile of being core regions are inferred to be core (dark and light green), indistinct (gray), and non-core regions (light blue), respectively. (G) The nucleus and core regions were estimated to grow isometrically after late anaphase. (H) Assignment of core regions in the electron microscopy (EM) image. Serial sections of plastic-embedded HeLa cells were cut and the Z position was determined for each section. The major axis of the nucleus was estimated and core and non-core regions were assigned based on the criteria defined in (B–G). Scale bars, 5 µm.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Cells cultured on carbon-patterned sapphire disks were imaged by confocal microscopy (upper panels). After high-pressure freezing, plastic-embedding, and serial sectioning, the same cells were observed in EM. EM images of one of the sections are shown (lower panels). Time after anaphase onset is indicated. The contrast of some of the live-cell images are enhanced by average intensity projection of a series of several images for presentation purposes. The sizes of live-cell and EM images are 58 × 58 µm and 20 × 20 µm, respectively.DOI: http://dx.doi.org/10.7554/eLife.19071.005
+**Figure 1—figure supplement 2.:** Cells cultured on carbon-patterned sapphire disks were imaged by confocal microscopy (upper panels). After high-pressure freezing, plastic-embedding, and serial sectioning, the same cells were observed in EM. EM images of one of the sections are shown (lower panels). Time after anaphase onset is indicated. The contrast of some of the live-cell images are enhanced by average intensity projection of a series of several images for presentation purposes. The sizes of live-cell and EM images are 58 × 58 µm and 20 × 20 µm, respectively.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** (A) Other images of immuno-EM in Figure 1C. Assembly intermediates are indicated by white arrows. The profile of the nuclear envelope (NE) and the positions of gold particles in one EM image are denoted in a box. C, cytoplasm; N, nucleoplasm; ONM, outer nuclear membrane; INM, inner nuclear membrane. Scale bars, 100 nm. (B) Electron tomographic slices of mature pores and assembly intermediates of U2OS (upper panels) and NRK (lower panels) cells. Assembly intermediates are indicated by white arrows. The intermediates were found in both G1 staged and fully grown nuclei. Scale bars, 100 nm.DOI: http://dx.doi.org/10.7554/eLife.19071.006
+**Figure 1—figure supplement 3.:** (A) Other images of immuno-EM in Figure 1C. Assembly intermediates are indicated by white arrows. The profile of the nuclear envelope (NE) and the positions of gold particles in one EM image are denoted in a box. C, cytoplasm; N, nucleoplasm; ONM, outer nuclear membrane; INM, inner nuclear membrane. Scale bars, 100 nm. (B) Electron tomographic slices of mature pores and assembly intermediates of U2OS (upper panels) and NRK (lower panels) cells. Assembly intermediates are indicated by white arrows. The intermediates were found in both G1 staged and fully grown nuclei. Scale bars, 100 nm.
 
-In the resulting 158 tomograms, we consistently found approximately 50 nm evaginations of the INM (Figure 1B, Table 1, and Video 1) filled with electron dense material, that were clearly distinct from the ~200 nm nuclear egress structures transporting ribonucleoproteins and viruses reported recently (Mettenleiter et al., 2013; Speese et al., 2012). Immuno-EM showed that the evaginations were specifically enriched with at least one of the nucleoporins recognized by mAb414 (Nup62, Nup153, Nup214, and Nup358) (Figure 1C,D, and Figure 1—figure supplement 3A), suggesting that they are pore assembly intermediates. Similar INM evaginations filled with electron dense material were also found in cryo-electron tomograms of vitrified isolated NEs (Figure 1E), ruling out that they are artifacts of dehydration, heavy metal staining or resin-embedding during cryo-substitution, and demonstrating that they are stable membrane structures that persist even after in vitro isolation of the NE (Bui et al., 2013; Ori et al., 2013). Indistinguishable evaginations of the INM were also observed in U2OS (human bone osteosarcoma epithelial) and NRK (normal rat kidney) cells (Figure 1—figure supplement 3B), ruling out that their occurrence is cell type, cancer or species specific.10.7554/eLife.19071.007Table 1.Summary of EM tomography. A data table shows the surface area of the NE analyzed by EM tomography and the number of mature pores, assembly intermediates, and the outer and inner nuclear membrane (ONM and INM) fusion events found in each cell at a different time point after anaphase onset. The data obtained in non-core, inner- and outer-core regions are indicated separately. In total, 154 µm2 NE surface area was analyzed, and 279 intermediates and 1322 mature pores were found.DOI: http://dx.doi.org/10.7554/eLife.19071.007Time after anaphase onset (min)19.224.428.436.342.053.261.065.673.682.9100116>180>180Non-coreAnalyzed surface area (µm2)5.294.045.063.995.175.544.043.723.063.733.323.174.032.80Number of mature pores8245484262515333333933314531Number of intermediates24635833215541Number of ONM/INM fusionInner-coreAnalyzed surface area (µm2)5.775.064.164.746.754.333.614.574.073.534.613.46Number of mature pores24163183016342727395332Number of intermediates21131283512134323Number of ONM/INM fusion21Outer-coreAnalyzed surface area (µm2)4.224.153.832.554.784.413.593.682.712.672.772.68Number of mature pores294027174435382830342528Number of intermediates23101991311141351Number of ONM/INM fusion210.7554/eLife.19071.008Video 1.EM tomographic slices of the nuclear envelope of a cell at 53 min post anaphase.One of the mature pores and an assembly intermediate are indicated by blue and red arrows, respectively. Scale bar, 100 nm.DOI: http://dx.doi.org/10.7554/eLife.19071.008
+In the resulting 158 tomograms, we consistently found approximately 50 nm evaginations of the INM (Figure 1B, Table 1, and Video 1) filled with electron dense material, that were clearly distinct from the ~200 nm nuclear egress structures transporting ribonucleoproteins and viruses reported recently (Mettenleiter et al., 2013; Speese et al., 2012). Immuno-EM showed that the evaginations were specifically enriched with at least one of the nucleoporins recognized by mAb414 (Nup62, Nup153, Nup214, and Nup358) (Figure 1C,D, and Figure 1—figure supplement 3A), suggesting that they are pore assembly intermediates. Similar INM evaginations filled with electron dense material were also found in cryo-electron tomograms of vitrified isolated NEs (Figure 1E), ruling out that they are artifacts of dehydration, heavy metal staining or resin-embedding during cryo-substitution, and demonstrating that they are stable membrane structures that persist even after in vitro isolation of the NE (Bui et al., 2013; Ori et al., 2013). Indistinguishable evaginations of the INM were also observed in U2OS (human bone osteosarcoma epithelial) and NRK (normal rat kidney) cells (Figure 1—figure supplement 3B), ruling out that their occurrence is cell type, cancer or species specific.
 
-## Assembly intermediates grow inside-out
+**Table 1.**
+ Summary of EM tomography. A data table shows the surface area of the NE analyzed by EM tomography and the number of mature pores, assembly intermediates, and the outer and inner nuclear membrane (ONM and INM) fusion events found in each cell at a different time point after anaphase onset. The data obtained in non-core, inner- and outer-core regions are indicated separately. In total, 154 µm2 NE surface area was analyzed, and 279 intermediates and 1322 mature pores were found.
 
-To test if the evaginations displayed a progression of structural changes consistent with the formation of mature NPCs, we analyzed their membrane shape in cells captured at different time points after the completion of postmitotic nuclear assembly. Quantitative analysis of 135 INM evagination membrane profiles from a time course of cells captured at 19, 28, and 53 min post anaphase revealed that evaginations progressively grow inside-out (
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Time after anaphase onset (min)</th>
+      <th>19.2</th>
+      <th>24.4</th>
+      <th>28.4</th>
+      <th>36.3</th>
+      <th>42.0</th>
+      <th>53.2</th>
+      <th>61.0</th>
+      <th>65.6</th>
+      <th>73.6</th>
+      <th>82.9</th>
+      <th>100</th>
+      <th>116</th>
+      <th>&gt;180</th>
+      <th>&gt;180</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Non-core</td>
+      <td>Analyzed surface area (µm2)</td>
+      <td>5.29</td>
+      <td>4.04</td>
+      <td>5.06</td>
+      <td>3.99</td>
+      <td>5.17</td>
+      <td>5.54</td>
+      <td>4.04</td>
+      <td>3.72</td>
+      <td>3.06</td>
+      <td>3.73</td>
+      <td>3.32</td>
+      <td>3.17</td>
+      <td>4.03</td>
+      <td>2.80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of mature pores</td>
+      <td>82</td>
+      <td>45</td>
+      <td>48</td>
+      <td>42</td>
+      <td>62</td>
+      <td>51</td>
+      <td>53</td>
+      <td>33</td>
+      <td>33</td>
+      <td>39</td>
+      <td>33</td>
+      <td>31</td>
+      <td>45</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of intermediates</td>
+      <td>2</td>
+      <td>4</td>
+      <td>6</td>
+      <td>3</td>
+      <td>5</td>
+      <td>8</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of ONM/INM fusion</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Inner-core</td>
+      <td>Analyzed surface area (µm2)</td>
+      <td>5.77</td>
+      <td>5.06</td>
+      <td>4.16</td>
+      <td>4.74</td>
+      <td>6.75</td>
+      <td>4.33</td>
+      <td>3.61</td>
+      <td>4.57</td>
+      <td>4.07</td>
+      <td>3.53</td>
+      <td>4.61</td>
+      <td>3.46</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of mature pores</td>
+      <td>24</td>
+      <td>16</td>
+      <td>3</td>
+      <td>18</td>
+      <td>30</td>
+      <td>16</td>
+      <td>34</td>
+      <td>27</td>
+      <td>27</td>
+      <td>39</td>
+      <td>53</td>
+      <td>32</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of intermediates</td>
+      <td>21</td>
+      <td>13</td>
+      <td>12</td>
+      <td>8</td>
+      <td>35</td>
+      <td>12</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of ONM/INM fusion</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outer-core</td>
+      <td>Analyzed surface area (µm2)</td>
+      <td>4.22</td>
+      <td>4.15</td>
+      <td>3.83</td>
+      <td>2.55</td>
+      <td>4.78</td>
+      <td>4.41</td>
+      <td>3.59</td>
+      <td>3.68</td>
+      <td>2.71</td>
+      <td>2.67</td>
+      <td>2.77</td>
+      <td>2.68</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of mature pores</td>
+      <td>29</td>
+      <td>40</td>
+      <td>27</td>
+      <td>17</td>
+      <td>44</td>
+      <td>35</td>
+      <td>38</td>
+      <td>28</td>
+      <td>30</td>
+      <td>34</td>
+      <td>25</td>
+      <td>28</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of intermediates</td>
+      <td>23</td>
+      <td>10</td>
+      <td>19</td>
+      <td>9</td>
+      <td>13</td>
+      <td>11</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>5</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Number of ONM/INM fusion</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/19071/elife-19071-media1.webm.jpg)
+
+**Video 1.:** One of the mature pores and an assembly intermediate are indicated by blue and red arrows, respectively. Scale bar, 100 nm.
+
+### Assembly intermediates grow inside-out
+
+To test if the evaginations displayed a progression of structural changes consistent with the formation of mature NPCs, we analyzed their membrane shape in cells captured at different time points after the completion of postmitotic nuclear assembly. Quantitative analysis of 135 INM evagination membrane profiles from a time course of cells captured at 19, 28, and 53 min post anaphase revealed that evaginations progressively grow inside-out (Figure 2). Evagination depth increased significantly from 16 to 22 nm within 9 min (19 to 28 min post anaphase; Figure 2C) and evagination diameter continuously and significantly increased from 51 to 58 nm within 34 min (19 to 53 min post anaphase; Figure 2D). Among the 279 total evaginations we found in 154 µm2 NE surface area (Table 1), we capture only five ONM/INM fusion events (Figure 2), where the INM evagination had reached the flat ONM surface. These fusion intermediates had an average evagination depth of 28 nm, similar to the ONM/INM distance and an average diameter of 61 nm, intermediate between late evaginations and mature nuclear pores (Figure 2C,D), as expected for NPC assembly. The low number of fusion intermediates indicates that the fusion step must be very short-lived.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig2-v2.jpg)
 
-**Figure 2.:** (A) Electron tomographic slices of assembly intermediates in cells captured at 53, 28, and 19 min after anaphase onset (AO) and ONM/INM fusion events. Profiles of ONM (gray) and INM (blue) in black and white boxes on EM images are depicted in the right panels. For the fusion, ONM is also depicted in blue. The image marked with a white asterisk was acquired on a differently embedded sample for enhancing membrane contrast (see Materials and methods). Scale bar, 100 nm. (B) Membrane profiles of all the fusion events and intermediates at selected time points (53, 28, and 19 min). The bold lines indicate the averaged profiles. (C–F) Quantification of the evagination depth of INM (C,E) and the diameter of intermediates (D,F) as indicated by red bidirectional arrows in the left panels. (C,D) The plots are from 47, 44, and 39 intermediates at 19, 28, and 53 min, respectively, 5 ONM/INM fusions, and 45 mature pores. The ONM/INM distance was quantified near mature pores (C). The median is depicted as a horizontal line and the whiskers show the 25th and 75th percentiles. *p<0.02, **p<0.001; unpaired t-tests. (E,F) The depth and the diameter of intermediates in non-core, inner-core, and outer-core regions were indicated in light blue, light green and dark green, respectively. The median is depicted as a horizontal line. No statistical difference of the intermediate shape was observed between different regions of the NE at each time point (p>0.1; unpaired t-tests).DOI: http://dx.doi.org/10.7554/eLife.19071.00910.7554/eLife.19071.010Figure 2—source data 1.Figure 2C.–FDOI: http://dx.doi.org/10.7554/eLife.19071.010
+**Figure 2.:** (A) Electron tomographic slices of assembly intermediates in cells captured at 53, 28, and 19 min after anaphase onset (AO) and ONM/INM fusion events. Profiles of ONM (gray) and INM (blue) in black and white boxes on EM images are depicted in the right panels. For the fusion, ONM is also depicted in blue. The image marked with a white asterisk was acquired on a differently embedded sample for enhancing membrane contrast (see Materials and methods). Scale bar, 100 nm. (B) Membrane profiles of all the fusion events and intermediates at selected time points (53, 28, and 19 min). The bold lines indicate the averaged profiles. (C–F) Quantification of the evagination depth of INM (C,E) and the diameter of intermediates (D,F) as indicated by red bidirectional arrows in the left panels. (C,D) The plots are from 47, 44, and 39 intermediates at 19, 28, and 53 min, respectively, 5 ONM/INM fusions, and 45 mature pores. The ONM/INM distance was quantified near mature pores (C). The median is depicted as a horizontal line and the whiskers show the 25th and 75th percentiles. *p<0.02, **p<0.001; unpaired t-tests. (E,F) The depth and the diameter of intermediates in non-core, inner-core, and outer-core regions were indicated in light blue, light green and dark green, respectively. The median is depicted as a horizontal line. No statistical difference of the intermediate shape was observed between different regions of the NE at each time point (p>0.1; unpaired t-tests).
 
-## Abundance of intermediates matches increase in mature pores during nuclear growth
+### Abundance of intermediates matches increase in mature pores during nuclear growth
 
-If the assembly intermediates we observed mature into fully assembled NPCs, their abundance should quantitatively explain the increased number of mature pores observed after nuclear expansion. To address this, we quantified the changes in density of intermediates and mature pores over time in EM tomograms of a time course of 12 cells correlatively fixed from 19 to 120 min post anaphase (
+If the assembly intermediates we observed mature into fully assembled NPCs, their abundance should quantitatively explain the increased number of mature pores observed after nuclear expansion. To address this, we quantified the changes in density of intermediates and mature pores over time in EM tomograms of a time course of 12 cells correlatively fixed from 19 to 120 min post anaphase (Figure 3 and Figure 1—figure supplement 2, and Table 1). This data showed that assembly intermediates are most abundant in core regions during the first hour, when this sealed membrane area still has a low density of mature pores due to the lack of postmitotic assembly (Figure 3B). By contrast and as expected, non-core regions already exhibited a high density of mature pores that arose from postmitotic NPC assembly (Figure 3B). Later than one hour post anaphase, the ratio of assembly intermediates to mature pores in the core regions had equilibrated to a similar level as found in non-core regions or fully grown nuclei (Figure 3A,B), indicating that a period of frequent interphase pore assembly events during the first hour of G1 nuclear expansion populates the core regions of the NE with NPCs until the steady state interphase density is reached.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig3-v2.jpg)
 
-**Figure 3.:** (A) Measurement of nuclear pore density. Gray sheets are the NEs segmented from EM tomograms. Blue and red dots indicate the positions of mature pores and intermediates, respectively. Inner-core regions of cells at 19 and 100 min post anaphase are shown as examples. (B) Density of mature pores (dark blue) and intermediates (red) in non-core and core (inner- plus outer-core) regions of cells at different times. Error bars represent the s.d. from 6, 6, and 2 cells at <1, 1–2, and >3 hr post anaphase, respectively. **p<0.001; unpaired t-tests of the density difference of mature pores (blue) and intermediates (red) between core regions at <1 hr and the others. The modeled density of mature pores (light blue) and intermediates (light red) at >3 hr is also indicated (see Figure 3—figure supplement 1 and Materials and methods for details). (C,D) Density of mature pores and intermediates in inner- (C) and outer-core (D) regions of cells at different time points. 3–7 tomograms were obtained in each region at each time point (data are summarized in Table 1). Dashed lines indicate the modeled density of mature pores and intermediates.DOI: http://dx.doi.org/10.7554/eLife.19071.01110.7554/eLife.19071.012Figure 3—source data 1.Figure 3B–D.DOI: http://dx.doi.org/10.7554/eLife.19071.01210.7554/eLife.19071.013Figure 3—figure supplement 2—source data 1.Figure 3— figure supplement 2C.DOI: http://dx.doi.org/10.7554/eLife.19071.013
+**Figure 3.:** (A) Measurement of nuclear pore density. Gray sheets are the NEs segmented from EM tomograms. Blue and red dots indicate the positions of mature pores and intermediates, respectively. Inner-core regions of cells at 19 and 100 min post anaphase are shown as examples. (B) Density of mature pores (dark blue) and intermediates (red) in non-core and core (inner- plus outer-core) regions of cells at different times. Error bars represent the s.d. from 6, 6, and 2 cells at <1, 1–2, and >3 hr post anaphase, respectively. **p<0.001; unpaired t-tests of the density difference of mature pores (blue) and intermediates (red) between core regions at <1 hr and the others. The modeled density of mature pores (light blue) and intermediates (light red) at >3 hr is also indicated (see Figure 3—figure supplement 1 and Materials and methods for details). (C,D) Density of mature pores and intermediates in inner- (C) and outer-core (D) regions of cells at different time points. 3–7 tomograms were obtained in each region at each time point (data are summarized in Table 1). Dashed lines indicate the modeled density of mature pores and intermediates.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Reaction scheme of the delay equation model (Equations 1‒3). V, production rate; , maturation initiation rate constant; KM, maturation delay; τM, degradation rate constant. The details are described in Materials and methods. (KdB) Variants for NPC initiation (Equation 7). All mature NPCs coming from the interphase assembly process are assumed to be initiated 10 min after anaphase onset when the NE is sealed (Dultz et al., 2008; Otsuka et al., 2014). Variant 1: Pores are continuously initiated with a constant rate; Variant 2: NPCs are initiated with a time dependent rate that decreases with time to a basal rate; Variant 3: The majority of NPCs intermediates are initiated at 10 min after anaphase onset. (C) The discrepancy of simulations and intermediate/mature pore data which is given as the sum of squared residuals (upper panel, Equation 8). A log-likelihood ratio test indicates that models where the majority of NPC are initiated within 25 min after anaphase onset (Variant 2 with  = 0.0641/min or Variant 3) significantly (***p<0.001) better fit the data than the model with a constant intermediate production (Variant 1). Variant 3 showed the best quality of the fit. Lower panel gives the maturation time Kv(TM Equation 5) in the different variants. (D,E) Simulations (Variant 1‒3, dashed lines) and data for intermediate (D) and mature pore (E) densities in the inner core region. (F,G) Nuclear pore maturation modeled as a multi-step process (Equations 9‒11). (F) Reaction scheme of the multi-step model (upper panel). Simulated density for mature pores (blue lines) and assembly intermediates (red lines) in the inner-core region is shown (lower panel). Simulations are shown for  as no significant improvement in fits was observed for non-equal rate constant. (kMj=kMG) Sum of squared residuals (upper panel) and modeled maturation time as function of the number of steps (lower panel, computed from Equation 12). Although the quality of the fit increases with the number of steps, the maturation time is consistently around 40 min. (H, I) Modeling with various maturation time (Equations 13‒15). (H) Different distributions of maturation times were allowed in the modeling (upper panel). The modeled density for mature pores (blue lines) and assembly intermediates (red lines) in the inner-core region is shown in the lower panel. (I) Sum of squared residuals (upper panel) and average maturation time as function of the width w of the maturation time distribution (lower panel). The data were reproduced for rather narrow maturation time distributions (43 ± 5 min) as also indicated by the confidence interval for T and Variant 3 (see Materials and methods).MDOI: http://dx.doi.org/10.7554/eLife.19071.014
+**Figure 3—figure supplement 1.:** (A) Reaction scheme of the delay equation model (Equations 1‒3). V, production rate; $K_{M}$, maturation initiation rate constant; $\tau_{M}$, maturation delay; $K_{d}$, degradation rate constant. The details are described in Materials and methods. (B) Variants for NPC initiation (Equation 7). All mature NPCs coming from the interphase assembly process are assumed to be initiated 10 min after anaphase onset when the NE is sealed (Dultz et al., 2008; Otsuka et al., 2014). Variant 1: Pores are continuously initiated with a constant rate; Variant 2: NPCs are initiated with a time dependent rate that decreases with time to a basal rate; Variant 3: The majority of NPCs intermediates are initiated at 10 min after anaphase onset. (C) The discrepancy of simulations and intermediate/mature pore data which is given as the sum of squared residuals (upper panel, Equation 8). A log-likelihood ratio test indicates that models where the majority of NPC are initiated within 25 min after anaphase onset (Variant 2 with $K_{v}$ = 0.0641/min or Variant 3) significantly (***p<0.001) better fit the data than the model with a constant intermediate production (Variant 1). Variant 3 showed the best quality of the fit. Lower panel gives the maturation time $T_{M} $(Equation 5) in the different variants. (D,E) Simulations (Variant 1‒3, dashed lines) and data for intermediate (D) and mature pore (E) densities in the inner core region. (F,G) Nuclear pore maturation modeled as a multi-step process (Equations 9‒11). (F) Reaction scheme of the multi-step model (upper panel). Simulated density for mature pores (blue lines) and assembly intermediates (red lines) in the inner-core region is shown (lower panel). Simulations are shown for $k_{Mj}=k_{M}$ as no significant improvement in fits was observed for non-equal rate constant. (G) Sum of squared residuals (upper panel) and modeled maturation time as function of the number of steps (lower panel, computed from Equation 12). Although the quality of the fit increases with the number of steps, the maturation time is consistently around 40 min. (H, I) Modeling with various maturation time (Equations 13‒15). (H) Different distributions of maturation times were allowed in the modeling (upper panel). The modeled density for mature pores (blue lines) and assembly intermediates (red lines) in the inner-core region is shown in the lower panel. (I) Sum of squared residuals (upper panel) and average maturation time as function of the width w of the maturation time distribution (lower panel). The data were reproduced for rather narrow maturation time distributions (43 ± 5 min) as also indicated by the confidence interval for TM and Variant 3 (see Materials and methods).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Time-lapse 3D imaging of dividing HeLa cells which express histone-H2b-mCherry (indicated in red). Images show single confocal sections (upper) and the segmented nuclei (lower) at indicated time points. Scale bars, 10 µm. (B) Quantification of nuclear surface area. Black and gray lines represent the average and s.d. of measurements from 9 cells, respectively. All cells undergo a second mitosis after 17–22 hr post anaphase. The data were cut after 17 hr and fitted with Equation 6 in Materials and methods (red line). As indicated by an asterisk, G1 nuclear expansion during the first hour is non-linear.DOI: http://dx.doi.org/10.7554/eLife.19071.015
+**Figure 3—figure supplement 2.:** (A) Time-lapse 3D imaging of dividing HeLa cells which express histone-H2b-mCherry (indicated in red). Images show single confocal sections (upper) and the segmented nuclei (lower) at indicated time points. Scale bars, 10 µm. (B) Quantification of nuclear surface area. Black and gray lines represent the average and s.d. of measurements from 9 cells, respectively. All cells undergo a second mitosis after 17–22 hr post anaphase. The data were cut after 17 hr and fitted with Equation 6 in Materials and methods (red line). As indicated by an asterisk, G1 nuclear expansion during the first hour is non-linear.
 
 To test if the high abundance of assembly intermediates in core regions quantitatively explains the number of mature pores found in the same region at later times, we formulated a simple mathematical model for nuclear pore assembly. In this model, assembly intermediates are produced, enter a maturation phase, become mature pores after a typical maturation time, and are ultimately degraded (Figure 3—figure supplement 1A and Materials and methods). NPC production and degradation rates were estimated from the measured steady state density of 11 NPCs/µm2 (Figure 3B) and a reported NPC lifetime of ~40 hr in cells with a similar cell-cycle duration (Rabut et al., 2004; Schwanhausser et al., 2011) and are in line with the rare and rapid pore disassembly events that have been observed in mammalian cells (Dultz and Ellenberg, 2010). We modeled different scenarios for the appearance of intermediates (Figure 3—figure supplement 1B,C). Provided that intermediates start to be initiated shortly after anaphase onset the model fits the experimental data of the core regions from 19‒120 min post anaphase well (Figure 3C,D, and Figure 3—figure supplement 1D,E, Variant 2, 3), confirming that the abundance of assembly intermediates we observed at the beginning of nuclear growth quantitatively explains the number of mature NPCs observed one hour later. For the best model, where the majority of intermediates are initiated 10 starting minutes after anaphase onset (Figure 3—figure supplement 1B,C, Variant 3) we can estimate the typical maturation time for interphase assembly to be 44 min (95% confidence interval [41‒50]). Similar average maturation time was obtained for alternative models where maturation steps are explicitly included (Figure 3—figure supplement 1F,G) or where the maturation time has a broader distribution (Figure 3—figure supplement 1H,I), demonstrating the robustness of our results. The obtained maturation time is in good agreement with previous reports based on fluorescence microscopy (~25 min, D'Angelo et al., 2006; ~60 min, Dultz and Ellenberg, 2010).
 
-## Abundance of inside-out evaginations accounts for NPC formation throughout interphase
+### Abundance of inside-out evaginations accounts for NPC formation throughout interphase
 
 It is important to note that inside-out evaginations were present at lower density in non-core regions (Figure 3B 'Non-core') and that we found no significant difference in the increase in depth or diameter of evaginations between non-core and core regions during G1 expansion (Figure 2E,F). This rules out that inside-out assembly intermediates are specific to the core regions, or that core regions are delayed in their maturation. In addition, identical evaginating structures were also found at low density in fully grown nuclei sampled at later cell-cycle stages (Figure 3B 'Mature NE') indicating that the inside-out assembly mechanism is not specific to G1 but occurs throughout interphase.
 
 Assuming the maturation time of 44 min, our model shows that the steady state abundance of assembly intermediates we observed in non-core regions and interphase nuclei would be sufficient to maintain the constant NPC density during nuclear growth in interphase that we observed (Figure 3B “model”, and Figure 3—figure supplement 1, 2) consistent with previous reports (Dultz and Ellenberg, 2010; Maeshima et al., 2010). Taken together these results suggest that the assembly intermediates are present across the NE surface, and that the kinetics of NPC assembly are similar across the nuclear surface and throughout interphase. Most importantly, the abundance of intermediates can quantitatively explain both the increase in mature NPCs in the core regions during the rapid nuclear expansion in G1 as well as the homeostatic NPC assembly during nuclear growth later during interphase.
 
-## Live imaging of the core region reveals progressive maturation of intermediates
+### Live imaging of the core region reveals progressive maturation of intermediates
 
-The high abundance of intermediates in the core region during the first hour of G1 (
+The high abundance of intermediates in the core region during the first hour of G1 (Figure 3C,D) and their progressive increase in depth and diameter during this time (Figure 2) indicates that the assembly process is relatively synchronous while the NPC-poor core region is populated to the same density as the rest of the nuclear surface (Figure 3B). We should therefore be able to observe the maturation of assembly intermediates directly, by imaging nucleoporin accumulation in the NPC-poor core region in real time. To test this, we performed fast 3D live confocal time-lapse imaging and monitored the concentration of GFP-tagged nucleoporins in the core region during the first hour of G1, the same time window we observed by correlative EM (Figure 4A). Since the intermediates in inner- and outer-core regions grow in a similar manner (Figure 2E,F) and show similar abundance (Figure 3C,D), we measured only the inner-core region where the proportion of intermediates to mature pores is much higher than in the outer-core region.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig4-v2.jpg)
 
-**Figure 4.:** (A) Time-lapse three-dimensional (3D) imaging of GFP-Nup107 and GFP-Nup358 genome-edited cells. DNA was stained with silicon–rhodamine (SiR) Hoechst (Lukinavicius et al., 2015). Single confocal sections of SiR and GFP channels are shown in the top and bottom panels, respectively. Segmented chromosomes (light blue) and inferred inner-core regions (green) are shown in the middle panels. Time after anaphase onset is indicated. Scale bars, 20 µm. (B,C) Quantification of Nup107 (left) and Nup358 (right) assembly in inner-core (B) and non-core (C) regions. The population of postmitotic and interphase NPC assembly measured in Figure 3A‒C is indicated in the left panels. Total intensities of Nup107 (left) and Nup358 (right) were quantified, normalized, and fitted with a sequential model of NPC assembly that allows for different rate constants for postmitotic and interphase assembly, respectively (Equations 16‒18 in Materials and methods). Dots and shaded areas represent the average and s.d. of measurements from 30 cells for Nup107 and 25 cells for Nup358, respectively. Black dashed and solid lines indicate the postmitotic and interphase assembly kinetics and gray solid lines show the combined kinetics. (D) Normalized densities of interphase Nup107 (brown) and Nup358 (orange) assembly. The density was measured by dividing the intensity obtained in (B) by the nuclear surface area.DOI: http://dx.doi.org/10.7554/eLife.19071.01610.7554/eLife.19071.017Figure 4—source data 1.Figure 4B,C.DOI: http://dx.doi.org/10.7554/eLife.19071.017
+**Figure 4.:** (A) Time-lapse three-dimensional (3D) imaging of GFP-Nup107 and GFP-Nup358 genome-edited cells. DNA was stained with silicon–rhodamine (SiR) Hoechst (Lukinavicius et al., 2015). Single confocal sections of SiR and GFP channels are shown in the top and bottom panels, respectively. Segmented chromosomes (light blue) and inferred inner-core regions (green) are shown in the middle panels. Time after anaphase onset is indicated. Scale bars, 20 µm. (B,C) Quantification of Nup107 (left) and Nup358 (right) assembly in inner-core (B) and non-core (C) regions. The population of postmitotic and interphase NPC assembly measured in Figure 3A‒C is indicated in the left panels. Total intensities of Nup107 (left) and Nup358 (right) were quantified, normalized, and fitted with a sequential model of NPC assembly that allows for different rate constants for postmitotic and interphase assembly, respectively (Equations 16‒18 in Materials and methods). Dots and shaded areas represent the average and s.d. of measurements from 30 cells for Nup107 and 25 cells for Nup358, respectively. Black dashed and solid lines indicate the postmitotic and interphase assembly kinetics and gray solid lines show the combined kinetics. (D) Normalized densities of interphase Nup107 (brown) and Nup358 (orange) assembly. The density was measured by dividing the intensity obtained in (B) by the nuclear surface area.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Junction PCR of GFP-Nup107 (left) and GFP-Nup358 (right) cells with forward primers annealing the upstream of Nups and reverse primers annealing inside of Nups as indicated by black arrows in the bottom panels. Nup107 is homozygously tagged with GFP, whereas Nup358 is heterozygously tagged with GFP. (B) Immunoblot analysis of GFP-Nup107 (left) and GFP-Nup358 (right) cells using antibodies against Nup107, Nup358, GFP, and tubulin. An asterisk indicates unspecific bands.DOI: http://dx.doi.org/10.7554/eLife.19071.018
+**Figure 4—figure supplement 1.:** (A) Junction PCR of GFP-Nup107 (left) and GFP-Nup358 (right) cells with forward primers annealing the upstream of Nups and reverse primers annealing inside of Nups as indicated by black arrows in the bottom panels. Nup107 is homozygously tagged with GFP, whereas Nup358 is heterozygously tagged with GFP. (B) Immunoblot analysis of GFP-Nup107 (left) and GFP-Nup358 (right) cells using antibodies against Nup107, Nup358, GFP, and tubulin. An asterisk indicates unspecific bands.
 
 Since our EM analysis suggested an inside-out mechanism, we selected the nuclear and cytoplasmic ring component Nup107 (Belgareh et al., 2001) and the cytoplasmic filament component Nup358 (Wu et al., 1995; Yokoyama et al., 1995) as candidate nucleoporins for genomic GFP-tagging (Figure 4—figure supplement 1) and live imaging. As predicted, the accumulation kinetics differed substantially between core and non-core regions of the NE for both proteins (Figure 4B,C). Since the non-core regions and inner-core regions contained 8% and 50% assembly intermediates in early G1 respectively (Figure 3B,C), we used them to determine the postmitotic and interphase rates of accumulation that explain the different accumulation kinetics of the core region for both Nups resulting from the combined rates (Figure 4B,C, and Materials and methods). Kinetic comparison of interphase accumulation of both Nups in the core region clearly revealed that Nup107, a component of the nuclear and cytoplasmic ring, is recruited very early (t1/2 = 15 min, see Materials and methods for details), while Nup358, a component of the cytoplasmic filaments, is recruited only after a significant lag phase (t1/2 = 51 min) (Figure 4D). The kinetically distinct and continuously increasing accumulation of two components of the NPC in the core region strongly support a maturation process of assembly intermediates into full pores. In addition, the late recruitment of the cytoplasmic Nup358 is consistent with an inside-out assembly mechanism on the molecular level.
 
-## Single pore assembly intermediates contain Nup107 but not Nup358
+### Single pore assembly intermediates contain Nup107 but not Nup358
 
-The kinetic analysis of bulk Nup accumulation across the inner-core region predicts that single NPC intermediates in early G1 cells should contain Nup107 but not Nup358. To resolve single intermediates with bi-molecular labeling, we used live imaging to stage cells in G1 and then correlatively performed two-color super-resolution imaging using stimulated emission depletion (STED) microscopy with specific antibodies to detect Nup107 and Nup358 (Materials and methods). This analysis indeed revealed many pore-sized discrete localizations of Nup107 in optical sections of the inner-core region NE in early G1 cells, which did not have significant Nup358 labeling (
+The kinetic analysis of bulk Nup accumulation across the inner-core region predicts that single NPC intermediates in early G1 cells should contain Nup107 but not Nup358. To resolve single intermediates with bi-molecular labeling, we used live imaging to stage cells in G1 and then correlatively performed two-color super-resolution imaging using stimulated emission depletion (STED) microscopy with specific antibodies to detect Nup107 and Nup358 (Materials and methods). This analysis indeed revealed many pore-sized discrete localizations of Nup107 in optical sections of the inner-core region NE in early G1 cells, which did not have significant Nup358 labeling (Figure 5A,B '24 min, inner-core'), while non-core regions in the same nucleus contained only double labeled localizations with Nup358 appearing on top of the Nup107 labeling on the outside of the NE (Figure 5A,B '24 min, non-core'), indicative of mature pores. After G1 expansion, also the inner-core region had almost only double-labeled structures (Figure 5A,B '108 min'), consistent with the maturation of intermediates into mature pores. Quantification of the signal in segments along the NE profile allowed us to estimate the frequency of intermediates by the ratio of Nup107/Nup358 (Figure 5C), showing that they are specific to the core region and occur only transiently during the first hour of G1. These results are fully consistent with the EM observations that interphase NPC assembly intermediates populate the core region of NEs with an abundance that matches the number of mature pores found in this region an hour later after nuclear expansion (Figure 3A,B), and suggest that cytoplasmic nucleoporins such as Nup358 are only recruited at the end of the maturation process, presumably after the growing INM evagination has fused with the ONM.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig5-v2.jpg)
 
-**Figure 5.:** GFP-Nup107 genome-edited cells were stained with anti-GFP and anti-Nup358 antibodies. (A) STED images of cells at 24 and 108 min after anaphase onset. Scale bar, 10 µm. (B) Flattened and enlarged images of the inferred non-core and inner-core regions indicated by white lines and arrows in (A). The intensity ratios of Nup107 to Nup358 were quantified in every 300 nm segments along the NE and are shown in cyan-black-pink heat maps in the bottom panels. Scale bars, 1 µm. (C) The frequency of the segments with the Nup107/Nup358 ratio of >2.0 in non-core and inner-core regions at different times. The data are from 14 cells at <1 hr, 6 cells at 1–2 hr, and 4 cells at >3 hr after anaphase onset. Error bars represent the s.d.. **p<0.001; unpaired t-tests of the frequency difference between the inner-core region at < 1 hr and the others.DOI: http://dx.doi.org/10.7554/eLife.19071.01910.7554/eLife.19071.020Figure 5—source data 1.Figure 5C.DOI: http://dx.doi.org/10.7554/eLife.19071.020
+**Figure 5.:** GFP-Nup107 genome-edited cells were stained with anti-GFP and anti-Nup358 antibodies. (A) STED images of cells at 24 and 108 min after anaphase onset. Scale bar, 10 µm. (B) Flattened and enlarged images of the inferred non-core and inner-core regions indicated by white lines and arrows in (A). The intensity ratios of Nup107 to Nup358 were quantified in every 300 nm segments along the NE and are shown in cyan-black-pink heat maps in the bottom panels. Scale bars, 1 µm. (C) The frequency of the segments with the Nup107/Nup358 ratio of >2.0 in non-core and inner-core regions at different times. The data are from 14 cells at <1 hr, 6 cells at 1–2 hr, and 4 cells at >3 hr after anaphase onset. Error bars represent the s.d.. **p<0.001; unpaired t-tests of the frequency difference between the inner-core region at < 1 hr and the others.
 
-## INM evaginations are surrounded by an 8-fold rotationally symmetric nuclear ring and filled with a mushroom-shaped cap
+### INM evaginations are surrounded by an 8-fold rotationally symmetric nuclear ring and filled with a mushroom-shaped cap
 
-Nup107 is a component of the eight-fold rotationally symmetric cytoplasmic and nuclear rings of the NPC. Its early presence in assembly intermediates and their inside-out nature suggested that the nucleoplasmic ring might be one of the first structural elements to form during NPC assembly. To test this, we performed particle averaging of the electron densities of single INM evaginations isolated from tomograms, staged by time during G1 and picked by similarity of their membrane profile depth and diameter. Averaging of 11–36 intermediates revealed a ring structure composed of eight regularly spaced subunits underneath the INM (
+Nup107 is a component of the eight-fold rotationally symmetric cytoplasmic and nuclear rings of the NPC. Its early presence in assembly intermediates and their inside-out nature suggested that the nucleoplasmic ring might be one of the first structural elements to form during NPC assembly. To test this, we performed particle averaging of the electron densities of single INM evaginations isolated from tomograms, staged by time during G1 and picked by similarity of their membrane profile depth and diameter. Averaging of 11–36 intermediates revealed a ring structure composed of eight regularly spaced subunits underneath the INM (Figure 6B and Figure 6—figure supplement 1), which was strikingly similar to the nuclear ring of the mature NPC (compare top views (ii) of the mature pore and intermediates in Figure 6B) (Bui et al., 2013; Maimon et al., 2012). These eight-fold symmetric rings were already present in the shallowest evaginations we could detect during early G1 and could also be seen in individual tomograms (Figure 6A,B, and Figure 6—figure supplement 1). Interestingly, side views of the averaged particles revealed a progressive growth also of the mushroom-shaped protein density, whose cap closely matched the growing membrane evagination in depth and diameter and whose stalk was located centrally inside the nuclear ring and grew in length as the cap moved towards the outer membrane (Figure 6B). The structure revealed by particle averaging of assembly intermediates is thus consistent with the observation that Nup107 (a component of the nuclear ring) assembles at an early stage and reveals a very interesting mushroom shaped density that might be the driving force of the membrane evagination.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig6-v2.jpg)
 
-**Figure 6.:** (A,B) Electron tomographic slices of single (A) and averaged (B) mature pores and intermediates at selected time points (53, 28, and 19 min). The averaged images are from 36 mature pores and 14, 11, and 24 intermediates picked by similarity of their membrane profile depth and diameter at 53, 28, and 19 min, respectively. Red arrowheads i and ii on side-view images indicate the locations of the planes which are inclined at 90° in top views i and ii. The 8-fold symmetric rings observed in top views i and ii of the averaged mature pore are the spoke ring and the nuclear ring complexes, respectively (Bui et al., 2013; Maimon et al., 2012). Scale bars, 100 nm. (C) A schematic model of interphase nuclear pore assembly. The assembly intermediate is comprised of the nuclear ring and the central mushroom-shaped density. The assembly of the mushroom drives the INM deformation and it grows progressively inside-out. Once the ONM and INM fuse, it undergoes rapid and drastic structural rearrangements and finally becomes a mature pore.DOI: http://dx.doi.org/10.7554/eLife.19071.021
+**Figure 6.:** (A,B) Electron tomographic slices of single (A) and averaged (B) mature pores and intermediates at selected time points (53, 28, and 19 min). The averaged images are from 36 mature pores and 14, 11, and 24 intermediates picked by similarity of their membrane profile depth and diameter at 53, 28, and 19 min, respectively. Red arrowheads i and ii on side-view images indicate the locations of the planes which are inclined at 90° in top views i and ii. The 8-fold symmetric rings observed in top views i and ii of the averaged mature pore are the spoke ring and the nuclear ring complexes, respectively (Bui et al., 2013; Maimon et al., 2012). Scale bars, 100 nm. (C) A schematic model of interphase nuclear pore assembly. The assembly intermediate is comprised of the nuclear ring and the central mushroom-shaped density. The assembly of the mushroom drives the INM deformation and it grows progressively inside-out. Once the ONM and INM fuse, it undergoes rapid and drastic structural rearrangements and finally becomes a mature pore.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/19071/elife-19071-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Illustration of the intensity profile analysis. Images of the averaged assembly intermediate at 53 min post anaphase are shown as an example. Red arrowheads and a dotted line in the side view image indicate the location of the plane which is inclined at 90° in the top view. The intensity along the outer ring (light blue dashed line) in the top view image was measured and plotted. The peaks in the plot and the corresponding densities in the top view image are indicated by number. (B,C) Electron tomographic slices of single (B) and averaged (C) intermediates at selected time points (53, 28, and 19 min). Red arrowheads indicate the locations of the planes which are inclined at 90° in the top views. (B) Three examples of intermediates are shown at each time. (C) Different symmetry was imposed for the alignment of the particles for subtomogram averaging. The intensity along the outer ring was measured and plotted as described in (A). As shown in the plot, the alignment with 8-fold symmetry gives highest intensity difference at regular intervals. Although not all the structures showed the clear 8-fold symmetry due to the noise of the images, this systematic symmetry analysis showed that the structures contain 8-fold symmetry. Scale bars, 100 nm.DOI: http://dx.doi.org/10.7554/eLife.19071.022
+**Figure 6—figure supplement 1.:** (A) Illustration of the intensity profile analysis. Images of the averaged assembly intermediate at 53 min post anaphase are shown as an example. Red arrowheads and a dotted line in the side view image indicate the location of the plane which is inclined at 90° in the top view. The intensity along the outer ring (light blue dashed line) in the top view image was measured and plotted. The peaks in the plot and the corresponding densities in the top view image are indicated by number. (B,C) Electron tomographic slices of single (B) and averaged (C) intermediates at selected time points (53, 28, and 19 min). Red arrowheads indicate the locations of the planes which are inclined at 90° in the top views. (B) Three examples of intermediates are shown at each time. (C) Different symmetry was imposed for the alignment of the particles for subtomogram averaging. The intensity along the outer ring was measured and plotted as described in (A). As shown in the plot, the alignment with 8-fold symmetry gives highest intensity difference at regular intervals. Although not all the structures showed the clear 8-fold symmetry due to the noise of the images, this systematic symmetry analysis showed that the structures contain 8-fold symmetry. Scale bars, 100 nm.
 
 Taken together, we can conclude that the observed INM evaginations represent partially assembled NPCs, which contain minimally the nuclear ring with Nup107 and at least one of the central or nuclear O-glycosylated FG-repeat nucleoporins labeled by mAb414, Nup62 and/or Nup153, do not contain Nup358, and are unlikely to contain the cytoplasmic filament base protein Nup214 due to their inside out nature and the lack of Nup358.
 
-## Inside-out model of interphase NPC assembly
+### Inside-out model of interphase NPC assembly
 
 Our quantitative structural analysis of the membrane profiles and protein densities of a temporally ordered series of NPC assembly intermediates allowed us to reveal a novel mechanism for NPC biogenesis in intact nuclei of interphase cells by an inside-out extrusion of the NE (Figure 6C). The first clearly detectable NPC intermediate is a shallow INM evagination surrounded at its base by an 8-fold rotationally symmetric nuclear ring complex, in whose center a dome-shaped density with a short stalk is embedded into the INM evagination. Subsequently, this shallow dome matures into a curved mushroom cap, always in direct contact with the growing evagination of the INM and supported by an elongating stalk on the nucleoplasmic side located in the center of the nuclear ring. We speculate that the mushroom-shaped density may use the membrane-attached nuclear ring to determine the site of NPC formation. It is further tempting to speculate that the mushroom-shaped density, potentially through connections to the nuclear ring, might generate the mechanical force needed for INM deformation and eventual fusion with the ONM. Interestingly, the mushroom-shaped structure is clearly distinct from the scaffold architecture of the mature NPC, indicating that interphase assembly cannot be explained by a simple collection of NPC subcomplexes over time but likely involves major structural rearrangements. Given that it had so far been unclear how interphase NPC assembly occurs, this inside-out extrusion mechanism, demonstrated in situ in human cells, provides a new framework to interpret existing genetic (yeast) and biochemical (Xenopus) data and to investigate the detailed molecular mechanism regulating the assembly process in the future.
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Wildtype HeLa kyoto cell line was from Prof. Narumiya in Kyoto University (RRID: CVCL_1922), and the genome was sequenced previously (Landry et al., 2013). Wildtype NRK (RRID:CVCL_3758) and U2OS (RRID:CVCL_0042) cell lines were purchased from ATCC (Wesel, Germany). HeLa and NRK cells were grown in Dulbecco’s Modified Eagle’s Medium (DMEM) (Sigma Aldrich, St. Louis, MO) supplemented with 10% fetal calf serum (FCS), 2 mM glutamine, 1 mM sodium pyruvate, and 100 µg/ml penicillin and streptomycin. U2OS cells were grown in McCoy's 5A Medium (Sigma Aldrich) supplemented with 10% fetal calf serum (FCS), 1X non-essential amino acids solution (Gibco, Waltham, MA), 5 mM glutamine, 1 mM sodium pyruvate, and 100 µg/ml penicillin and streptomycin. A plasmid carrying Lap-2α fused with YFP (Dechat et al., 2004) was introduced into HeLa cells with the transfection reagent, Fugene6 (Promega, Madison, WI), according to the manufacturer’s protocol. A HeLa cell line stably expressing histone H2b-mCherry (Neumann et al., 2010) was maintained at 500 ng/ml puromycin (Invitrogen, Carlsbad, CA). The mycoplasma contamination was tested by PCR every 2 or 3 months and was always negative. Cells were cultured on 2-well Lab-Tek Chambered Coverglass (Thermo Fisher Scientific, Waltham, MA) for live-cell imaging. For correlative light–electron microscopy, cells were grown on sapphire disks (0.05 mm thick, 3 mm diameter; Wohlwend GmbH, Sennwald, Switzerland), which had been carbon-coated in order to relocate cells on electron microscopy (EM) grids, and synchronized by double thymidine arrest (Harper, 2005).
 
-## Live-cell imaging
+### Live-cell imaging
 
 At least 30 min before imaging, the medium was replaced by imaging medium (IM; CO2-independent medium without phenol red (Invitrogen) containing 20% FCS, 2 mM l-glutamine, and 100 µg/ml penicillin and streptomycin). Imaging was performed at 37°C in a microscope-body-enclosing incubator. Cells on carbon-coated sapphire disks were observed by confocal microscopy (LSM510Meta or LSM780; Carl Zeiss, Oberkochen, Germany) using 10 × 0.3 NA Plan-Neofluar or 20 × 0.8 NA Plan-Apochromat objective (Carl Zeiss). The cell division process was monitored every 24 s by time-lapse imaging. For three-dimensional (3D) time-lapse imaging, cells were observed by confocal microscopy (LSM780) using 63 × 1.4 NA Plan-Apochromat objective (Carl Zeiss). For Figure 1—figure supplement 1, fluorescent chromatin and Lap-2α were recorded under the following conditions: 25 optical sections, section thickness of 2.0 µm, z-stacks of every 1.0 µm, the xy resolution of 0.13 µm, and a time-lapse interval of 30 s. For Figure 3—figure supplement 2, fluorescent chromatin was monitored under the following conditions: 40 optical sections, section thickness of 1.4 µm, z-stacks of every 0.7 µm, the xy resolution of 0.13 µm, and a time-lapse interval of 10 min. For Figure 4, DNA was stained with 0.2 µM silicon–rhodamine Hoechst (Lukinavicius et al., 2015), and the nucleus and nucleoporins were monitored under the following conditions: 25 optical sections, section thickness of 2.5 µm, z-stacks of every 1.25 µm, the xy resolution of 0.25 µm, and a time-lapse interval of 1 min. Fluorescence images were filtered with a median filter (kernel size: 0.25 × 0.25 µm) for presentation purposes.
 
-## Segmentation of the nucleus and core regions
+### Segmentation of the nucleus and core regions
 
 A 3D computational pipeline was developed in MATLAB (The MathWorks Inc., Natick, MA) that segments chromosomes and core regions from H2B-mCherry and Lap-2α-YFP channels, respectively and extracts different parameters. Original stacks were interpolated along z axis to obtain isotropic resolution and facilitate true 3D image analysis. A 3D Gaussian filter was applied to reduce the effects of high frequency noise. To detect chromosome regions, H2B-mCherry and SiR-Hoechst channels were binarized first using a multi-level thresholding method as described in Heriche et al. (2014). Then, chromosome region of interest typically in metaphase in the first time point of the sequence was detected by analyzing the volume and location information of the connected components in the binary image. The detected chromosome was then tracked over the subsequent time points of the sequence and both of the daughter chromosomes were tracked after the division. The surface area of the chromosome was computed applying the method described in Legland et al. (2007). For Lap-2α-YFP channel, a reference threshold was estimated by analyzing the intensity over time. This reference threshold was then adapted with a second threshold obtained from individual time points in order to segment the protein. The portion of the nuclear surface where Lap-2α localizes was marked to estimate the surface area of the core regions. Inner- and outer-core regions within nuclei were determined by dividing each nucleus with a cutting plane. The cutting plane was constructed from two vectors where the first one was directed towards the maximum elongation of nucleus and the second one was orthogonal to the first vector and was directed towards the upward z direction. These axes were determined by Eigen vector analysis on the pixel coordinates of the detected nucleus. For the measurement of the Nup intensity on the NE, segmented nuclear volume was dilated and eroded in 3D to define a nuclear membrane rim with 0.75 µm width. The areas of inner- and non-core regions were adjusted in individual time points based on the total surface area of the nuclei. Visualization of the chromosome surface in 3D was done in the Amira software package (Pruggnaller et al., 2008).
 
-## Sample preparation for electron microscopy
+### Sample preparation for electron microscopy
 
 Cells at different cell-cycle stages were instantly frozen using a high-pressure freezing machine (HPM 010; ABRA Fluid AG, Widnau, Switzerland). Just before freezing, cells were immersed in IM containing 20% Ficoll (PM400; Sigma Aldrich) for protecting cells from freezing damage. Freeze substitution into Lowicryl HM20 resin (Polysciences Inc., Warrington, PA) was performed as described in a previous report (Kukulski et al., 2011), with the following modifications: Frozen cells were incubated with 0.1% uranyl acetate (UA) in acetone at -90°C for 20–24 hr and, after infiltration into Lowicryl resin and UV-polymerization, samples were further polymerized by sunlight for 3–4 days. The cells were also embedded in EPON resin (Serva, Heidelberg, Germany) for enhancing membrane contrast as follows: Frozen cells were incubated with 1.0% osmium tetroxide (OsO4), 0.1% UA, and 5% water in acetone at −90°C for 20–24 hr. The temperature was raised to −30°C (5°C/hour), kept at −30°C for 3 hr, and raised to 0°C (5°C/hr). Samples were then washed with acetone, infiltrated with increasing concentrations of EPON in acetone (25, 50 and 75%), embedded in 100% EPON and polymerized at 60°C for 2 days. Sections of 300 nm and 50 nm thickness were cut with a microtome (Ultracut UCT; Leica, Wetzlar, Germany) and collected on copper–palladium slot grids (Science Services, München, Germany) coated with 1% Formvar (Plano, Wetzlar, Germany).
 
-## Electron tomography
+### Electron tomography
 
 As fiducial markers, 15 nm of gold-conjugated Protein A (CMC university Medical Center Utrecht, Utrecht, Netherlands) was absorbed on both sides of 300 nm sections. Sections were post-stained with 2% UA and lead citrate. Single or dual axis tilt series were acquired with a TECNAI TF30 transmission EM (TEM; 300 kV; FEI, Hillsboro, OR) equipped with a 2k x 2k Eagle camera (FEI) by using the Serial EM software (Mastronarde, 2005). The samples were pre-irradiated by an electron beam to minimize sample shrinkage during tilt series acquisition. Images were recorded over a −60° to 60° tilt range with an angular increment 1° at a pixel size of typically 0.75 nm or 1.0 nm. Tomograms were reconstructed using R-weighted backprojection method implemented in the IMOD software package (version 4.5.6) (Kremer et al., 1996). Dual axis tilt series were aligned using gold fiducial markers while single axis tilt series were aligned by patch tracking. It should be noted that tomographic resolution permits great advantages over classical approaches in which the thickness of a section is in the range of the diameter of a nuclear pore and it is thus not clear which parts of it are within the section and into which exact direction they are projected into in the electron micrograph. In contrast, 3D data permit a much more accurate mapping of orientation, membrane topology and substructures for each individual NPC, which is essential to study rare intermediates.
 
-## Immuno-electron microscopy
+### Immuno-electron microscopy
 
 Grids carrying 50 nm sections were pretreated with 0.1% Trition X-100 (Sigma Aldrich) in phosphate-buffered saline (PBS) for 10 min and blocked with 1% BSA and 0.1% fish skin gelatin (Sigma Aldrich) in PBS for 1 hr. Sections were then incubated with a primary antibody mAb414 (Covance, Princeton, NJ; RRID:AB_10063490), which recognizes four nucleoporins (Nups 358, 214, 153, and 62), for 2 hr, a rabbit anti-mouse secondary antibody (Cat. No. Z0259; Dako, Hamburg, Germany; RRID:AB_2532147) for 1 hr, and 10 nm of gold-conjugated Protein A (CMC university Medical Center Utrecht) for 30 min. The antibodies and Protein A beads were diluted in PBS with 0.2% BSA and the sections were washed for five times with PBS containing 0.2% BSA between steps. After multiple washes with PBS, sections were fixed in 2.5% glutaraldehyde in PBS for 20 min in order to immobilize the antibodies and Protein A-gold beads on sections. After washing with water, sections were post-stained with 2% UA and lead citrate for contrast enhancement. All steps were carried out at room temperature. Images were taken on a TEM (CM 120 Biotwin; Phillips, Hillsboro, OR). For specificity analysis of immuno-EM labeling, the number of gold particles on assembly intermediates and ones nonspecifically attached within 50 nm under the inner nuclear membrane was counted.
 
-## Cryo-electron tomography of isolated nuclear envelope
+### Cryo-electron tomography of isolated nuclear envelope
 
 The nuclear envelope of HeLa cells was isolated and cryo-fixed as described previously (Bui et al., 2013; Ori et al., 2013). Tilt series of cryo-EM images were acquired using a Titan Krios TEM (FEI) at a pixel size of 0.34 or 0.43 nm and tomograms were reconstructed using the IMOD software package as described in (Bui et al., 2013).
 
-## Membrane profile analysis and measurement of nuclear pore diameter
+### Membrane profile analysis and measurement of nuclear pore diameter
 
 The outlines of outer and inner nuclear membrane (ONM and INM) were manually marked by clicking points within the tomographic volume in the IMOD software package. The sets of clicked points were aligned to share an x-axis corresponding to INM and interpolated using a spline fit, and the resulting coordinates were fitted locally using a second degree polynomial fit as described in Kukulski et al. (2012). The maximum depth of the INM evagination was determined from these two-dimensional profiles. For the ONM/INM distance, the median of the distance at 50 points between 45 and 90 nm away from mature pores was measured. The alignment, the interpolation, and the extraction of the parameter were done in MATLAB 7.4. The maximum diameter of assembly intermediates and mature pores was measured manually from the top view images as illustrated in Figure 2D. The mature pores used for the measurement were the ones found in cells at >3 hr post anaphase. Unpaired t-tests with the assumption of equal variances were performed to compare two groups.
 
-## Measurement of nuclear pore density
+### Measurement of nuclear pore density
 
 The number of mature pores and intermediates was counted manually in the tomograms. The nuclear surface area was measured in each tomogram by manually tracing the NE using the IMOD software package. The shrinkage of the specimen was corrected by comparing the diameter of mature pores in EM tomograms of plastic resin with the one in cryo-EM tomograms. The shrinkage was 22 ± 2.7% (the average and standard deviation, N = 13 sections) and 15 ± 2.8% (N = 11 sections) in Lowicryl and EPON resin, respectively. Since non-core and core regions are hard to distinguish in the matured NE after late G1, the pore density in cells >3 hr post anaphase was measured in any regions of the NE. Kinetic modeling of nuclear pore density is described in Materials and methods.
 
-## Kinetic modeling of nuclear pore densities
+### Kinetic modeling of nuclear pore densities
 
-We modeled pore maturation using delay equations (Figure 3—figure supplement 1A). Assembly intermediates are generated with a rate V(t) and enter maturation with a rate constant kM. After a time interval KM an intermediate becomes fully matured to a NPC. We denote by τS the time required post anaphase to seal the NE and end the postmitotic assembly of the NPC. The simulation time t is related to the time after anaphase onset tAO by t=tAO−τS. For the data shown in Figure 3C,D we took τS = 10 min by assuming a start of interphase assembly to be 10 min after anaphase onset when the NE is sealed (Dultz et al., 2008; Otsuka et al., 2014). We simulated the process for τS= 0‒15 min, and found that τS+τM differed by less than 1%. The number of intermediates I and mature pores M is given by(1)dI(t)dt=V(t)−kMI(t)(2)dM(t)dt=kMI(t−τM)−kdM(t),
+We modeled pore maturation using delay equations (Figure 3—figure supplement 1A). Assembly intermediates are generated with a rate V(t) and enter maturation with a rate constant $k_{M}$. After a time interval $K_{M}$ an intermediate becomes fully matured to a NPC. We denote by $\tau_{S}$ the time required post anaphase to seal the NE and end the postmitotic assembly of the NPC. The simulation time t is related to the time after anaphase onset $t_{AO}$ by $t=t_{AO}−\tau_{S}$. For the data shown in Figure 3C,D we took $\tau_{S}$ = 10 min by assuming a start of interphase assembly to be 10 min after anaphase onset when the NE is sealed (Dultz et al., 2008; Otsuka et al., 2014). We simulated the process for $\tau_{S}=$ 0‒15 min, and found that $\tau_{S}+\tau_{M}$ differed by less than 1%. The number of intermediates I and mature pores M is given by
 
-where kd is the degradation rate constant of mature pores. Consequently the number of intermediates in the process of maturation Im is given by(3)dIm(t)dt=kMI(t)−kMI(t−τM).
+$$
+(1)\frac{dI(t)}{dt}=V(t)−k_{M}I(t)(2)\frac{dM(t)}{dt}=k_{M}I(t−\tau_{M})−k_{d}M(t),
+$$
 
-The total number of intermediates IT is the quantity we can measure which is given by(4)IT(t)=I(t)+Im(t).
+where $k_{d}$ is the degradation rate constant of mature pores. Consequently the number of intermediates in the process of maturation $I_{m}$ is given by
 
-Surface densities are computed from iT=IT/A, m=M/A, where A is the nuclear surface area. The overall maturation time is defined as(5)TM=1kM+τM
+$$
+\frac{dI_{m}(t)}{dt}=k_{M}I(t)−k_{M}I(t−\tau_{M}).
+$$
 
-We assume isotropic expansion of the nucleus where the surface area can be described byA(tAO)=a0+a1(1−exp(−kg1tAO))+kg2tAO
+The total number of intermediates $I_{T}$ is the quantity we can measure which is given by
 
-We obtained a0= 424 µm2 (95% confidence interval (CI) [212‒448]), a1 = 161 µm2 (95% CI [81‒185]), kg1 = 0.0722/min (95% CI [0.036‒0.093]), kg2 = 0.397/min (95% CI [0.199‒0.405]) by fitting Equation 6 to the data in Figure 3—figure supplement 2. We tested different intermediate production variants (Figure 3—figure supplement 1B) as(7)V(t)={vA(t),Variant 1(v1exp(−kv(t−tS))+v0)A(t),Variant 2i(tS)A(tS)δ(t−ts)+v0A(t),Variant 3.
+$$
+I_{T}(t)=I(t)+I_{m}(t).
+$$
 
-Variant 1 assumes a constant production rate density; Variant 2 assumes a time dependent production that decreases with time to a basal rate v0; finally in Variant 3 the majority of pores are initiated at tS. For Variant 3 the initial densities i(tS) and m(tS), are estimated for the inner- and outer-core regions separately. The value of i(tS) is set to 0 for Variant 2. We take im(tS) = 0. The system of equations (Equations 1‒6) is solved analytically to obtain the densities of intermediates and mature pores. The production and degradation rates are estimated from this and previous studies. For the mature pore degradation rate constant we take kd = 0.00042/min, which yields a pore life time of ~40 hr (Rabut et al., 2004; Schwanhausser et al., 2011). For Variant 2 and Variant 3 we take v0 = 0.0015 intermediates/µm2/min. This yields an NPC density in mature NEs (3‒20 hr post anaphase) of 11.47 ± 1.33 NPCs/µm2 (0.65 ± 6e-4 intermediates/µm2) for Variant 3 and 12.1 ± 1.2 NPCs/µm2 (0.41 ± 1.36e-04 intermediates/µm2) for Variant 2. Here the mean and standard deviation were estimated from inner-core*0.68 + outer-core*0.32 since the ratio of the surface area between inner- and outer-core regions is 0.68:0.32. The other model parameters are estimated by minimizing the sum of squared residuals (MATLAB routine lsqnonlin)(8)F=1σ2∑j=1n/2(iT(tj)−Di(tj))2+(m(tj)−Dm(tj))2,
+Surface densities are computed from $i_{T}=I_{T}/A$, $m=M/A$, where $A$ is the nuclear surface area. The overall maturation time is defined as
 
-where Di and Dm are the measured densities of intermediate and mature pores (Figure 3C,D), n is the number of data points, and σ2 = 2.18 pores/µm2 is the mean standard deviation estimated from all measurements. For Variant 1 we obtained kM = 7.13/min (95% CI [0.0379‒7.5730]), τM = 18.23 min (95% CI [0.725*‒27.59]) and TM = 18.37 min (95% CI [16.12‒27.69]), for Variant 2 kM = 0.0996/min (95% CI [0.0274‒2.06]), τM = 17.75 min (95% CI [0.725*‒44.59]) and TM = 27.78 min (95% CI [18.26‒44.72]), for Variant 3 kM = 1.357/min (95% CI [0.0408‒20*]), τM = 43.03 min (95% CI [18.78‒49.86]) and TM = 43.76 (95% CI [41.32‒50]). For Variant 2 and 3 the model fit does not change for very low values τM or high values of kM, respectively. The asterisk indicates that the 95% boundary of the distribution has not yet been reached at the given value. The profile-likelihood method (Venzon and Moolgavkar, 1988) has been used to estimate the 95% confidence. In this method the log-increase φ(par)=n[log(F(par)n)−log(F(parmin)n)] of the mean squared distance F with respect to the best fit parmin was computed by varying the parameter of interest and optimizing the other parameters to the n data points. For |φ(par)|<χ1,0.952 = 3.84 the parameter is within its 95% CI. For TM (Equation 5) the confidence interval is computed from the values of kM and τM. The quality of the fits (lower sum of squared residuals, Figure 3—figure supplement 1C) was slightly better for Variant 3. Furthermore the obtained maturation time was more in agreement with previous reported values (Dultz and Ellenberg, 2010). We thus investigate alternatives to the maturation mechanism using Variant 3 only.
+$$
+T_{M}=\frac{1}{k_{M}}+\tau_{M}
+$$
 
-The model with a multi-step maturation process (Figure 3—figure supplement 1F) reads(9)dI1dt=V(t)−kM1I1(10)dIjdt=kM(j−1)Ij−1−kMjIj,for j = 2, ...,N−1(11)dMdt=kM(N−1)IN−1−kdM.
+We assume isotropic expansion of the nucleus where the surface area can be described by
 
-The sum of all intermediates ∑j=1N−1Ij/Aand M/A are fitted to the intermediate and mature pore densities, respectively. We modeled Variant 3 for the pore initiation. We found that there was no significant difference in the quality of the fits when assuming equal transition rate constants. Consequently the simulations shown are for kMj=kM. The maturation time defined as the characteristic time of mature pore appearance reads(12)TM=∑j=1N−11kMj=(N−1)kM.
+$$
+A(t_{AO})=a_{0}+a_{1}(1−exp(−k_{g1}t_{AO}))+k_{g2}t_{AO}
+$$
 
-We simulate different maturation times by allowing a maturation time distribution P(τ), with finite positive support as(13)dI(t)dt=V(t)−kMI(t)(14)dIm(t)dt=kMI(t)−kM∫0∞P(τ)I(t−τ)dτ(15)dM(t)dt=kM∫0∞P(τ)I(t−τ)dτ−kdM(t).
+We obtained $a_{0}$= 424 µm2 (95% confidence interval (CI) [212‒448]), $a_{1}$ = 161 µm2 (95% CI [81‒185]), $k_{g1}$ = 0.0722/min (95% CI [0.036‒0.093]), $k_{g2}$ = 0.397/min (95% CI [0.199‒0.405]) by fitting Equation 6 to the data in Figure 3—figure supplement 2. We tested different intermediate production variants (Figure 3—figure supplement 1B) as
 
-The example shown in Figure 3—figure supplement 1H is for an uniform distribution of τM±w, where w is the half-width of the distribution.
+$$
+V(t)={vA(t),Variant 1(v_{1}exp(−k_{v}(t−t_{S}))+v_{0})A(t),Variant 2i(t_{S})A(t_{S})\delta(t−t_{s})+v_{0}A(t),Variant 3.
+$$
 
-## Genome editing
+Variant 1 assumes a constant production rate density; Variant 2 assumes a time dependent production that decreases with time to a basal rate v0; finally in Variant 3 the majority of pores are initiated at tS. For Variant 3 the initial densities i(tS) and m(tS), are estimated for the inner- and outer-core regions separately. The value of i(tS) is set to 0 for Variant 2. We take im(tS) = 0. The system of equations (Equations 1‒6) is solved analytically to obtain the densities of intermediates and mature pores. The production and degradation rates are estimated from this and previous studies. For the mature pore degradation rate constant we take $k_{d}$ = 0.00042/min, which yields a pore life time of ~40 hr (Rabut et al., 2004; Schwanhausser et al., 2011). For Variant 2 and Variant 3 we take v0 = 0.0015 intermediates/µm2/min. This yields an NPC density in mature NEs (3‒20 hr post anaphase) of 11.47 ± 1.33 NPCs/µm2 (0.65 ± 6e-4 intermediates/µm2) for Variant 3 and 12.1 ± 1.2 NPCs/µm2 (0.41 ± 1.36e-04 intermediates/µm2) for Variant 2. Here the mean and standard deviation were estimated from inner-core*0.68 + outer-core*0.32 since the ratio of the surface area between inner- and outer-core regions is 0.68:0.32. The other model parameters are estimated by minimizing the sum of squared residuals (MATLAB routine lsqnonlin)
+
+$$
+F=\frac{1}{\sigma^{2}}\sumj=1n/2(i_{T}(t_{j})−D_{i}(t_{j}))^{2}+(m(t_{j})−D_{m}(t_{j}))^{2},
+$$
+
+where $D_{i}$ and $D_{m}$ are the measured densities of intermediate and mature pores (Figure 3C,D), n is the number of data points, and $\sigma^{2}$ = 2.18 pores/µm2 is the mean standard deviation estimated from all measurements. For Variant 1 we obtained kM = 7.13/min (95% CI [0.0379‒7.5730]), $\tau_{M}$ = 18.23 min (95% CI [0.725*‒27.59]) and TM = 18.37 min (95% CI [16.12‒27.69]), for Variant 2 kM = 0.0996/min (95% CI [0.0274‒2.06]), $\tau_{M}$ = 17.75 min (95% CI [0.725*‒44.59]) and TM = 27.78 min (95% CI [18.26‒44.72]), for Variant 3 kM = 1.357/min (95% CI [0.0408‒20*]), $\tau_{M}$ = 43.03 min (95% CI [18.78‒49.86]) and TM = 43.76 (95% CI [41.32‒50]). For Variant 2 and 3 the model fit does not change for very low values $\tau_{M}$ or high values of $k_{M}$, respectively. The asterisk indicates that the 95% boundary of the distribution has not yet been reached at the given value. The profile-likelihood method (Venzon and Moolgavkar, 1988) has been used to estimate the 95% confidence. In this method the log-increase $\phi(par)=n[log(\frac{F(par)}{n})−log(\frac{F(par_{min})}{n})]$ of the mean squared distance F with respect to the best fit parmin was computed by varying the parameter of interest and optimizing the other parameters to the n data points. For $|\phi(par)|<χ_{1,0.95}^{2}$ = 3.84 the parameter is within its 95% CI. For TM (Equation 5) the confidence interval is computed from the values of kM and $\tau_{M}$. The quality of the fits (lower sum of squared residuals, Figure 3—figure supplement 1C) was slightly better for Variant 3. Furthermore the obtained maturation time was more in agreement with previous reported values (Dultz and Ellenberg, 2010). We thus investigate alternatives to the maturation mechanism using Variant 3 only.
+
+The model with a multi-step maturation process (Figure 3—figure supplement 1F) reads
+
+$$
+(9)\frac{dI_{1}}{dt}=V(t)−k_{M1}I_{1}(10)\frac{dI_{j}}{dt}=k_{M(j−1)}I_{j−1}−k_{Mj}I_{j},for j = 2, ...,N−1(11)\frac{dM}{dt}=k_{M(N−1)}I_{N−1}−k_{d}M.
+$$
+
+The sum of all intermediates $\sumj=1N−1I_{j}/A$and M/A are fitted to the intermediate and mature pore densities, respectively. We modeled Variant 3 for the pore initiation. We found that there was no significant difference in the quality of the fits when assuming equal transition rate constants. Consequently the simulations shown are for $k_{Mj}=k_{M}$. The maturation time defined as the characteristic time of mature pore appearance reads
+
+$$
+T_{M}=\sumj=1N−1\frac{1}{k_{Mj}}=\frac{(N−1)}{k_{M}}.
+$$
+
+We simulate different maturation times by allowing a maturation time distribution $P(\tau)$, with finite positive support as
+
+$$
+(13)\frac{dI(t)}{dt}=V(t)−k_{M}I(t)(14)\frac{dI_{m}(t)}{dt}=k_{M}I(t)−k_{M}\int0∞P(\tau)I(t−\tau)d\tau(15)\frac{dM(t)}{dt}=k_{M}\int0∞P(\tau)I(t−\tau)d\tau−k_{d}M(t).
+$$
+
+The example shown in Figure 3—figure supplement 1H is for an uniform distribution of $\tau_{M}\pmw$, where w is the half-width of the distribution.
+
+### Genome editing
 
 For tagging Nup107 at the N-terminus with monomeric enhanced GFP (mEGFP), zinc finger nucleases (ZFN) containing DNA binding sequences in the 5’-3’ direction of TCAGTACTGATG and GCTGAGCCCGAAGTC were purchased from Sigma Aldrich. The donor plasmid consists of mEGFP cDNA sequence flanked by a left homology arm (ENSEMBL release 75, ENST00000229179, chromosome 12: 68686269–68687065) and a right homology arm (ENSEMBL release 75, ENST00000229179, chromosome 12: 68687065–68687892). ZFN and the donor plasmid were transfected into HeLa cells as described in Mahen et al. (2014). For tagging Nup358 at the N-terminus with mEGFP, CRISPR-Cas9 nickases were used. pX335-U6-Chimeric_BB-CBh-hSpCas9n(D10A) was a gift from Feng Zhang (Addgene plasmid # 42335, Cambridge, MA), and gRNAs were designed using the Feng Zhang Lab’s Target Finder (http://crispr.mit.edu/). The following gRNAs for Nup358 were cloned into pX335 (Cong et al., 2013): 5’CCTGAGCGCTGGTCTCACGCGCC3’ and 5’GAGGCGCAGCAAGGCTGACGTGG3’. CRISPR-Cas9 nickases and the donor plasmid were transfected using jetPRIME reagent (Polyplus, New York, NY), according to the manufacture’s protocol. 7–10 days after transfection, cells were sorted with a MoFlo Legacy cell sorter (Beckman Coulter, Brea, CA) as described in Mahen et al. (2014).
 
-## Junction PCR
+### Junction PCR
 
 Genomic DNA was prepared using ISOLATE II Genomic DNA Kit (Bioline, Taunton, MA) according to the supplier’s manual. Junction PCR was performed at endogenous loci to detect the insertion of mEGFP using separate sets of primers, one of which anneals inside mEGFP and the other one outside of the gene of interest. The primer sequences are as follows: Nup107 forward (5’ATTAATAAAAGGTATAAATGCCAGCAACAG3’), Nup107 reverse (5’CACCTGGTCAACAACTACTTACTCCT3’), NUP358 forward (5’GCATAAGACGGTGGTTCTGGAACCAATC3’), and NUP358 reverse (5’AGCAAACTGACTCAAGATTCTGCGCA3’). Touchdown PCR was performed using HotStar HiFidelity (Qiagen, Hilden, Germany) according to the supplier’s protocol.
 
-## Western blot
+### Western blot
 
 Cells were lysed for 20 min on ice in lysis buffer (10% glycerol, 1 mM DTT, 0.15 mM EDTA, 0.5% Triton X-100, complete protease inhibitor cocktail and PhosSTOP (Roche, Basel, Switzerland)). Protein concentration was quantitated using the Bio-Rad Protein Assay (Bio-Rad, Hercules, CA). 40 µg of total protein was run onto NuPAGE®4–12% Bis-Tris Gels (Novex Life Technologies, Waltham, MA) and transferred onto PVDF membrane using the Bio-Rad transfer system. After blocking with 5% milk solution (nonfat milk powder in PBS + 0.1% Tween 20), the following primary antibodies were used to label the proteins of interests: anti-Nup107 (ab178399, abcam, Cambridge, United Kingdom; RRID:AB_2620147), anti-RanBP2 (ab197044, abcam; RRID:AB_2620148), anti-tubulin (DM-1A, Sigma; RRID:AB_521686) and anti-GFP (Cat. No. 11814460001, Roche; RRID:AB_390913). Subsequently horseradish peroxidase (HRP)-conjugated secondary antibodies (ECL anti-rabbit IgG HRP-linked whole antibody NA934V; RRID:AB_772206, or ECL anti-mouse IgG HRP-linked whole antibody NA931V; RRID:AB_772210, GE Healthcare, Little Chalfont, United Kingdom) were used to detect the protein of interests with chemiluminescence reaction.
 
-## Kinetic analyses of Nup107 and Nup358 assembly
+### Kinetic analyses of Nup107 and Nup358 assembly
 
-Average intensities of Nup358 and Nup107 in the inferred inner-core and non-core regions were quantified. The total intensities were calculated by multiplying the average intensities by the nuclear surface area. Methods for the segmentation of core regions is described in ‘Segmentation of the nucleus and core regions’ section above. We formulated a sequential assembly model that describes the recruitment of Nup107 and Nup358. Nup107 accumulates first with a rate constant k, and Nup358 assembles later with a rate constant l. The number of NPC intermediates can be described as(16)dN0xdt=−kxN0x(17)dN1xdt=kxN0x−lxN1x,wherex=pm,ip(18)dN2xdt=lxN1x,
+Average intensities of Nup358 and Nup107 in the inferred inner-core and non-core regions were quantified. The total intensities were calculated by multiplying the average intensities by the nuclear surface area. Methods for the segmentation of core regions is described in ‘Segmentation of the nucleus and core regions’ section above. We formulated a sequential assembly model that describes the recruitment of Nup107 and Nup358. Nup107 accumulates first with a rate constant k, and Nup358 assembles later with a rate constant l. The number of NPC intermediates can be described as
 
-where N0,1,2pm,ip denote the number of NPCs that assemble through the interphase (ip) or postmitotic (pm) pathway without Nup107 nor Nup358 (N0pm and N0ip), with Nup107 only (N1pm and N1ip), or both Nup107 and Nup358 (N2pm and N2ip). The rate constants for postmitotic and interphase recruitment of Nup107 and Nup358 are given by kpm and kip, and lpm and lip, respectively. The degradation and interphase production rates are small (Rabut et al., 2004; Dultz and Ellenberg, 2010; Schwanhausser et al., 2011) and can be neglected in the time frame of 2 hr post anaphase (see also ‘kinetic modeling of nuclear pore densities’ above). The total number of NPCs containing Nup107 and Nup358 are then given by(19)TNup107=[(N1pm+N2pm)fpm+(N1ip+N2ip)(1−fpm)](20)TNup358=[N2pmfpm+N2ip(1−fpm)]
+$$
+(16)\frac{dN_{0}^{x}}{dt}=−k_{x}N_{0}^{x}(17)\frac{dN_{1}^{x}}{dt}=k_{x}N_{0}^{x}−l_{x}N_{1}^{x},wherex=pm,ip(18)\frac{dN_{2}^{x}}{dt}=l_{x}N_{1}^{x},
+$$
 
-where fpm is the fraction of postmitotic NPC. In the non-core region fpm = 0.92, whereas in the inner-core region fpm = 0.5 (Figure 3). Since the nuclear membrane is not yet sealed before 10 min post anaphase (Dultz et al., 2008; Otsuka et al., 2014), we take for initial condition N0ip(t = 10 min) = 1, and 0 for t < 10 min. For the postmitotic assembly we take N0pm(t = 4 min) = 1, and 0 for t < 4 min. The four kinetic rate constants kpm, kip, lpm and lip are estimated by simultaneously fitting the total Nup107 and Nup358 intensities in non-core and inner-core regions from 4 min up to 125 min post anaphase (Figure 4). To match the experimental data normalization we also normalize the simulations. The normalization coefficients range from 1‒1.1. The normalized pore densities are obtained by multiplying the normalized total number of pores by the nuclear surface area and subsequently dividing it by the maximal area. We obtained kpm = 0.355/min (95% CI [0.333‒0378]), lpm = 0.0437/min (95% CI [0.0425‒0.0449]), kip = 0.0374/min (95% CI [0.0335‒0.0417]), and lip = 0.0276/min (95% CI [0.0209‒0.0354]). Confidence intervals are obtained as explained in ‘kinetic modeling of nuclear pore densities’ above.
+where $N_{0,1,2}^{pm,ip}$ denote the number of NPCs that assemble through the interphase (ip) or postmitotic (pm) pathway without Nup107 nor Nup358 ($N_{0}^{pm}$ and $N_{0}^{ip}$), with Nup107 only ($N_{1}^{pm}$ and $N_{1}^{ip}$), or both Nup107 and Nup358 ($N_{2}^{pm}$ and $N_{2}^{ip}$). The rate constants for postmitotic and interphase recruitment of Nup107 and Nup358 are given by kpm and kip, and lpm and lip, respectively. The degradation and interphase production rates are small (Rabut et al., 2004; Dultz and Ellenberg, 2010; Schwanhausser et al., 2011) and can be neglected in the time frame of 2 hr post anaphase (see also ‘kinetic modeling of nuclear pore densities’ above). The total number of NPCs containing Nup107 and Nup358 are then given by
 
-## Stimulated emission depletion (STED) microscopy
+$$
+(19)T_{Nup107}=[(N_{1}^{pm}+N_{2}^{pm})f_{pm}+(N_{1}^{ip}+N_{2}^{ip})(1−f_{pm})](20)T_{Nup358}=[N_{2}^{pm}f_{pm}+N_{2}^{ip}(1−f_{pm})]
+$$
+
+where fpm is the fraction of postmitotic NPC. In the non-core region fpm = 0.92, whereas in the inner-core region fpm = 0.5 (Figure 3). Since the nuclear membrane is not yet sealed before 10 min post anaphase (Dultz et al., 2008; Otsuka et al., 2014), we take for initial condition $N_{0}^{ip}$(t = 10 min) = 1, and 0 for t < 10 min. For the postmitotic assembly we take $N_{0}^{pm}$(t = 4 min) = 1, and 0 for t < 4 min. The four kinetic rate constants kpm, kip, lpm and lip are estimated by simultaneously fitting the total Nup107 and Nup358 intensities in non-core and inner-core regions from 4 min up to 125 min post anaphase (Figure 4). To match the experimental data normalization we also normalize the simulations. The normalization coefficients range from 1‒1.1. The normalized pore densities are obtained by multiplying the normalized total number of pores by the nuclear surface area and subsequently dividing it by the maximal area. We obtained kpm = 0.355/min (95% CI [0.333‒0378]), lpm = 0.0437/min (95% CI [0.0425‒0.0449]), kip = 0.0374/min (95% CI [0.0335‒0.0417]), and lip = 0.0276/min (95% CI [0.0209‒0.0354]). Confidence intervals are obtained as explained in ‘kinetic modeling of nuclear pore densities’ above.
+
+### Stimulated emission depletion (STED) microscopy
 
 After release from thymidine block, the division process of GFP-Nup107 genome-edited cells were monitored every 30 s by confocal microscopy (LSM780; Carl Zeiss) using 10 × 0.3 NA Plan-Neofluar objective (Carl Zeiss). Cells were then fixed with paraformaldehyde and immunostained as described in the previous report (Szymborska et al., 2013), with rabbit anti-Nup358 (Cat. No. HPA018437, The Human Protein Atlas; RRID:AB_2620151) and mouse anti-GFP (Cat. No. 11814460001, Roche; RRID:AB_390913) antibodies, and Abberior STAR RED-conjugated anti-rabbit IgG (Cat. No. 2-0012-011-9, Abberior GmbH, Göttingen, Germany; RRID:AB_2620152) and Abberior STAR 580-conjugated anti-mouse IgG (Cat. No. 2-0002-005-1, Abberior GmbH; RRID:AB_2620153). Cells were mounted in Vectashield containing 4',6-diamidino-2-phenylindole (DAPI) (Cat. No. H-1500, Vector Laboratories Inc., Burlingame, CA). Super-resolution imaging was performed on a Leica SP8 3X STED microscope, equipped with 775 nm pulsed wave depletion and white light pulsed lasers, Leica HCX 100 × 1.4 NA Plan Apochromat objective, and time-gated hybrid detectors (Leica HyD). Excitation wavelength was adjusted to 580 and 633 nm, and bandpass filters were set to 585−630 and 650−702 nm, and the two channels were recorded pseudo-simultaneously by line switching. The fluorescent nuclei stained with DAPI were also recorded afterwards. The images were taken with a final optical pixel size of 20 nm, z-stacks of every 200 nm, and the optical section thickness of 550 nm. Images were filtered with a Gaussian filter (kernel size: 0.5 × 0.5 pixel) for presentation purposes.
 
-## Quantification of STED data
+### Quantification of STED data
 
 Lines with the width of 400 nm were drawn along the edge of the DAPI-stained nuclei. Non-core and core regions were inferred as described in Figure 1—figure supplement 1B‒G. The NEs on the lines were flattened and fluorescence intensity was quantified after binning of 15 pixels (correspond to 300 nm width) along the lines. The intensity difference between two channels was normalized using the images in non-core regions, and the intensity ratio of Nup107 to Nup358 was measured. All analyses were done in ImageJ (http://rsbweb.nih.gov/ij/).
 
-## Particle averaging of mature pores and pore intermediates
+### Particle averaging of mature pores and pore intermediates
 
 Assembly intermediates which have similar membrane profiles were selected at each time point and subjected to subtomogram averaging. The averaging was done on nuclear pores in freeze-substituted and plastic-embedded cells using the previously described averaging method (Beck et al., 2004). Briefly, the subtomograms, which contain mature pores and intermediates, were extracted from the tomograms. The extracted subtomograms were aligned using iterative missing wedge compensation alignment procedure. Afterwards, the aligned subtomograms were averaged and visualized. The mature pores used for the averaging are the ones found in cells at >3 hr post anaphase. The overall structural similarity of the averaged nuclear pores to the respective cryo structures (Figure 1E) indicates a good structure preservation in freeze-substituted and plastic-embedded cells.
 
-## Sample size determination and statistical analysis
+### Sample size determination and statistical analysis
 
 For correlative light and electron microscopy, we first obtained one tomogram in each non-, inner- and outer-core region in 4 different cells at 19, 28, 53, and 116 min after anaphase onset as pilot experiments. We then increased the number of dataset and eventually took 158 tomograms in 14 different cells. The exact value of the analyzed surface area and the number of nuclear pores found are listed in Table 1. We picked up all the NE evaginations which were visible in the EM tomograms and did not perform any selection. Statistical analyses of the pore structure and density were performed only after all the data were taken. For immuno-EM, time-lapse 3D imaging, and STED microscopy, the data were from two independent experiments and the statistical analysis was carried out after all the data were obtained. Statistical analysis methods, sample sizes (N) and P values (P) for each experiment are indicated in figure legends.

@@ -30,7 +30,7 @@ To solve these problems, we developed a method that detects whether a cell is re
 
 ## Results
 
-## ZETA: Zenith of event-based time-locked anomalies
+### ZETA: Zenith of event-based time-locked anomalies
 
 A common procedure in pre-processing neural data is removing cells that are not responsive to an experimental stimulus. Many experimenters determine the ‘stimulus responsiveness’ of a cell by comparing its average spiking rate during the presentation and absence of a stimulus (see Figure 1A–C for an example V1 cell). This procedure will therefore remove neurons that show no response, but has the risk of also removing neurons that show a strong, but complex time-locked response to stimuli. To remedy this shortcoming, we developed a binning-free method for determining whether a neuron shows any time-locked modulation. We call this statistical test ZETA for Zenith of Event-based Time-locked Anomalies (Figure 1D–F). It represents whether a neuron’s spike train could be observed by chance, if it were not responding to an experimenter’s event of interest: for example, the presentation of a visual stimulus, the onset of optogenetic stimulation, or a self-generated variable, such as an animal’s location on a track.
 
@@ -42,15 +42,43 @@ ZETA is calculated on a single cell by performing the following steps. First, we
 
 The ZETA-test bears similarities to a mean-subtracted Kolmogorov-Smirnov test applied to a renewal process model (see methods). In the method section ‘ZETA and renewal-process models’ we show how the ZETA-test gains robustness to violations of the assumptions underlying renewal processes and outperforms alternative approaches. In short, the ZETA-test’s main difference from other approaches used to infer a neuron’s stimulus responsiveness, is that our test makes no a priori assumptions about the underlying distribution of temporal modulations and is binning-free. It can therefore detect both long-timescale changes in mean firing rate, as well as short-timescale stimulus-locked bursts or lapses of activity at any point in time relative to stimulus onset.
 
-## Benchmarking the ZETA-test
+### Benchmarking the ZETA-test
 
 To investigate whether the ZETA-test includes more cells recorded in mouse visual cortex in response to a drifting grating, while still retaining a 5 % false-positive rate at a significance level of α = 0.05, we used a benchmarking test comparing onset-jittered and non-jittered data (Figure 2). In the non-jittered case, we compared the inclusion rate of the ZETA-test, as described above, to that of a mean-rate t-test. For the t-test, we calculated the average spiking rate of a cell during stimulation (0 s – 1 s after onset) and after stimulation (1 s – 1.5 s), and performed a paired t-test over trial repetitions (Figure 1C). This showed that cells included with a t-test were almost exclusively a subset of the cells detected with ZETA (see Figure 2B for all V1 cells recorded with Neuropixels). In other words, if a cell is detected as being visually responsive with a t-test, it is almost guaranteed to also be detected by the ZETA-test. In addition to these cells, the ZETA-test also includes cells that were not registered by a t-test. Although many varieties exist, Figure 2C shows an example cell that is detected by both t-tests and ZETA (top, sustained change in firing rate), and an example only detected by ZETA (bottom, balanced on/off peaks). In general, any cell lacking a sustained change but displaying a temporally non-uniform spiking distribution would be picked up by the ZETA-test but not a t-test: for example, cells with a sharp but narrow onset peak and variable baseline activity, cells with a balanced on/off response, or oscillatory cells that phase-reset on stimulus onset.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig2-v3.jpg)
+
+**Figure 2.:** (A) Spikes were recorded with neuropixels in mouse V1 and aligned with the onset of square-wave drifting gratings. (B) Applying the ZETA-test, we found that 93.3 % of all V1 neurons showed significant firing rate modulations that were time-locked to stimulus onset. Using a rate-based t-test between stimulation (0–1 s) and no stimulation (1–1.5 s) epochs across trials registered 77.3 % of neurons to be visually responsive. Neurons detected by only ZETA are green, by both methods are blue, by only a mean-rate t-test are red, and by neither are grey. Arrows indicate the neurons shown in C. (C) Two example neurons that are (1) detected by a rate-based t-test as well as ZETA (top) and (2) not detected by a rate-based t-test, but only by ZETA (bottom). (D) We investigated the false-positive rate of both approaches by jittering the onsets of visual stimuli; this preserved the temporal structure of the spiking response, but destroys the time-locked modulations in activity. (E–F) same cells and analyses as in B-C but for jittered onsets. Red indicates neurons included by ZETA, but not a t-test; green indicates neurons included by a t-test, but not ZETA. As expected, the percentage of false positives (i.e., neurons with ζc/z-statistic > 2.0) was around 5 % (α = 0.05) for both approaches. Note the change in axis magnitude from B to E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) We sampled 100,000 artificial neurons with exponentially-distributed inter-spike intervals, each spiking at 1 Hz during 100 trials that last 2 s. To compile data over neurons, we interpolated the spike position to [1 200], regardless of the real number of spikes. Blue shows the mean ± standard deviation of the mean of δi for each spike number i, while the theoretical prediction is shown in red. (B) Same as A, but for the variance of δi as a function of i. (C) Same as B, but after recentering δ to mean-zero, showing the variance of di as a function of i.
+
 Next, we ran the same tests again, but now on data where we randomly jittered the stimulus onset times between –τ and +τ, where τ is median onset-to-onset duration. This procedure preserves the properties of a neuron’s spike train, but removes locking of the responses to the stimulus (Figure 2D). If the ZETA-test simply always gave low p-values, then this would result in a high false-positive rate as many neurons would still be included. In contrast, the false-positive rate of the ZETA-test was generally low, and consistent with that expected for a significance level of α = 0.05 (Figure 2E–F).
 
-## Sensitivity of ZETA is superior to mean-rate T-tests
+### Sensitivity of ZETA is superior to mean-rate T-tests
 
 We performed this benchmark for single-cell activity obtained from n = 12 combinations of various visual regions (V1, AM, PM, LGN, SC, LP, NOT, APN, Retina) using multiple techniques (Neuropixels, n = 8; Neuronexus, n = 2; GCaMP6, n = 1; pMEA, n = 1), in response to light flashes (retina, n = 1) or drifting gratings (all others, n = 11). Under all conditions, the inclusion rate using ZETA-tests was higher than using t-tests: at a significance level of α = 0.05, the inclusion rate for the ZETA-tests was 79 % and for mean-rate t-tests was 64 %; t-test of ZETA vs mean-rate t-test inclusion rates: n = 12 data sets, p = 2.8 × 10–7 (Figures 1G and 3, Figure 3—figure supplement 1). This means that the ZETA-test includes 42 % of the cells that were not included by a t-test. A significance level of α = 0.05 is rather arbitrary, so we also performed a receiver operating characteristic (ROC) analysis, where we investigated the number of inclusions as a function of the number of false positives (Figure 3). The ROC’s summary statistic is the area under the curve (AUC); one being a perfect discriminator. Again, we found that the ZETA-test showed a higher statistical sensitivity (ZETA-test, mean AUC = 0.914) than a mean-rate t-test (t-test, mean AUC = 0.843), and that this difference was statistically significant (paired t-test, n = 12, p = 4.9 x 10–6).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig3-v3.jpg)
+
+**Figure 3.:** We recorded neuronal responses to drifting gratings (1 s with 500 ms blank ITIs) from various visual brain areas: V1, SC, AM, LP, NOT, APN, PM, and LGN. For each area, we show an example neuron’s raster plot (left) and binned responses (right). All cells depicted here were significant using ZETA. Area-level benchmark summaries show ROC analyses of the inclusion rate (y-axis) and false-positive (FP) rate (x-axis) for ZETA (Z, blue), bin-wise ANOVA (A, red), and rate-based t-tests (T, black). In all cases, the AUC of the ZETA-test exceeded both the ANOVA’s AUC and t-test’s AUC.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** From left to right the figure shows the following. First column: the recorded area. Second column: recording technique. Third column: stimulus. Fourth column: example data including raster plot or heat map (lhs), neural activity in spiking rate (Hz) or dF/F0 (middle) and activation deviation (rhs, ΔFrac). All cells depicted here were significant using ZETA. Fifth column: benchmark performance for neuronal inclusion percentage (‘Real’, green) and false alarm rate after jittering (‘Jitter’, red) for tests using mean-rate (black, µ) and ZETA (blue, Z). From top to bottom, we investigated several data sets: mouse V1 responses to drifting gratings recorded with a Neuronexus probe (top row) and GCaMP6f (second row), mouse superior colliculus responses to drifting gratings recorded with a Neuronexus probe (third row), and zebrafish retinal ganglion cell responses to on/off light flashes recorded with a perforated micro-electrode array (fourth row). Bar graphs show inclusion rate and 75th percentile confidence interval.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Raster plot of example (high firing rate) V1 cell. Because of the prohibitively long computation time of fitting a multiplicative inhomogeneous Markov interval (MIMI) model to the data we opted to use only the first 480 trials recorded for each cell (N = 119 neurons in V1 from two animals). (B) Spiking anomaly (blue) and shuffle controls (grey) for the same cell, showing a clear stimulus-locked response. (C) The instantaneous firing rate captures the neuron’s spiking response very well. (D) 1 ms binning provides a similar time resolution to both the IFR-method (panel C) and the MIMI-fit (panel E) but is much noisier at the level of single bins. (E) The MIMI-model fit also captures the neuron’s spiking response well (see F). Statistical significance with the MIMI-model fit was determined by calculating bin-wise d’ values from the confidence intervals at each 1 ms bin (see Materials and methods). (F) The MIMI-model fit explains a large proportion of the variance of the PSTH (R2 = 0.89 for this example cell), but still underperforms when used as the basis for a statistical test for stimulus-responsiveness (see panel G). (G) ROC analysis showing the performance of the ZETA-test, t-test, and two versions of the MIMI-model fit. While the MIMI-model fitting worked well for cells with high spiking rates, cells with low firing rates were prone to spurious low p values during shuffle controls (see panel I). While the base MIMI-model gave an AUC of 0.749 (versus 0.996 of ZETA), excluding cells with fewer than 1,000 spikes during this 480-trial epoch increased the MIMI-model’s performance to on-par with the t-test (t-test AUC = 0.900, MIMI-1k AUC = 0.898). The threshold of 1000 spikes corresponds to an average firing rate of 1.38 Hz. (H) In addition to performing worse than the ZETA-test, the MIMI-method was also much more computationally intensive: the median computation time was 557 times longer than for the ZETA-test. (I) Distribution of p-values for real data (top) and shuffled controls (bottom) for the four tests; note that excluding cells with low firing rates removes all of the MIMI’s false positives.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Various forms of statistical tests; most perform well when the test’s null distribution matches the real distribution of the unresponsive population (shuffled inter-spike intervals). (B) When the test’s assumed (shuffled ISIs) and real (jittered onsets) null distributions are different, the Kolmogorov-Smirnov based tests fail. Of the remaining tests, the ZETA-test and ISI-shuffle ZETA-test perform best. Note that the difference in performance with Figure 3—figure supplement 2 is due to different data selection. (C) Bin-based tests (SISI, Poisson) are slower than binless tests (ZETA, ZETA-ISI). (D) Although the ZETA-test and ISI-shuffle ZETA-test performed similarly for data sets with mostly regular spiking cells (panels A,B), the ISI-shuffle ZETA-test performs considerably worse in differentiating stimulus-modulated from unmodulated bursty cells; ZETA-test AUC = 0.941; Mean-rate t-test AUC = 0.902; ISI-shuffle ZETA-test AUC = 0.845.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Graphs show V1 inclusion percentage as a function of number of trials subsampled from the whole data set, using the ZETA-test (blue) and t-test (black), and false alarms after jittering using the ZETA-test (purple) and t-test (red). Left-hand panel shows results when trials of all orientations are pooled. Middle and right-hand panels show results when t-test p-values are calculated separately per orientation (24 groups) and Bonferroni-corrected (middle) or not corrected (right). (B) As panel A, but now using a 300 ms window preceding stimulus onset as baseline. There is little difference in t-test performance between using a 300 ms or 500 ms window. In all cases, the ZETA-test performs better than t-tests.
 
 We also benchmarked various versions of tests derived from the theoretical framework of renewal and Poisson process models. None of these models reached the statistical power and computational efficiency of the ZETA-test (Figure 3—figure supplements 2 and 3), but they do provide an attractive mathematical connection to a more widely studied class of models. We have therefore provided more information on the mathematical relationship between this class of models and the ZETA-test in the method section.
 
@@ -62,13 +90,13 @@ We hypothesized that the t-test’s worse performance might result from pooling 
 
 We noticed that the t-test’s false positive rate was rather low after Bonferroni corrections. To test whether we over-corrected the t-test, we removed the multiple-comparison correction (Figure 3—figure supplement 4A, right-hand panel). In this case, the t-test false positive rate increased to >50%, while its inclusion rate (89.9%) remained lower than that of the ZETA-test (95.0%). Finally, we investigated whether the t-test’s performance was hampered by including the immediate off-response after stimulus offset in the baseline period. We reran the above analyses, but now limited the baseline to the 300 ms preceding the stimulus onset. As can be seen in Figure 3—figure supplement 4B, this did not improve the t-test’s performance. In summary, the t-test is at its most sensitive when using the full 500 ms epoch in-between stimulus presentations as baseline period and when pooling data across all orientations.
 
-## The sensitivity of ZETA is superior to an ANOVA with an optimal bin width
+### The sensitivity of ZETA is superior to an ANOVA with an optimal bin width
 
 Mean-rate t-tests are common in neuroscientific analysis, but it could be argued that this is somewhat of a strawman to use as baseline performance. An alternative is to construct a peri-stimulus time histogram (PSTH) and run a one-way ANOVA across bins to test a neuron’s responsiveness to a particular stimulus. However, because this requires picking a bin width, this can lead to arbitrary choices based on the experimenter’s visual inspection of the data, which might increase false positive rates. A better solution is to use one of the various methods to estimate optimal widths for binning (Freedman and Diaconis, 1981; Scott, 2009; Shimazaki and Shinomoto, 2007). We therefore calculated the optimal bin width using the Shimazaki & Shinomoto method, which was specifically designed for building a PSTH, and repeated the benchmark described above, but now testing the responsiveness of neurons using an ANOVA (see Materials and methods). This ANOVA procedure performed markedly better than a mean-rate t-test (Figures 1G and 3). However, we found that it still showed an inclusion rate (at α = 0.05) that was lower than using the ZETA-test (ANOVA mean inclusion rate = 71 %; ZETA-test inclusion = 79%, paired t-test, n = 12, p = 0.0014). Importantly, this difference could not be explained by different levels of false positives, as an ROC analysis also showed a superior statistical sensitivity for the ZETA-test: mean ANOVA-AUC = 0.880, mean ZETA-AUC = 0.914, paired t-test, n = 12, p = 7.7 × 10–4.
 
 Taken together, the results of comparing the ZETA-test to t-tests, ANOVAs, and renewal-process based tests show that the binless ZETA-test has a statistical sensitivity superior to all alternative tests, regardless of number of trial repetitions, brain region where the data were recorded, or specifics of the data preparation.
 
-## ZETA-test in the absence of short peaks of activity
+### ZETA-test in the absence of short peaks of activity
 
 Having established that the ZETA-test performs well in real neural data, we looked for conditions under which the ZETA-test fails. We know that the t-test has access to information that the ZETA-test does not: the spike times used by the ZETA-test are flattened over trials, while the t-test uses the variability across trials. Therefore, when the variability of mean activity across trials is low, but the variability of spike times within a trial is high, the ZETA-test could perform worse than a t-test.
 
@@ -80,7 +108,66 @@ To test this hypothesis, we simulated Poisson-spiking artificial neurons (see Ma
 
 While this scenario is important to consider from a theoretical perspective, pure Poisson-spiking neurons probably do not exist in the brain. We therefore proceeded with a (somewhat) more biologically plausible simulation of bursting cells, where their bursting probability is orientation-tuned (Figure 4C, see Materials ad methods and Table 1). These neurons show no consistent peaks or troughs of activity (Figure 4D and E). However, the highly variable spike counts this bursting produces result in the ZETA-test outperforming the t-test (AUC, ZETA = 0.941, t-test = 0.902, z-test, p = 4.1 × 10–11). To conclude, even in hypothetical scenarios that we specifically constructed to investigate the limits of the ZETA-test, it performs close to the t-test (Figure 4B4). Importantly, in the case of strongly bursting cells (Figure 4F), the ZETA-test clearly outperforms the t-test.
 
-## Neuronal responsiveness to natural movies
+**Table 1.**
+ Parameters of bursting neurons used in Figure 4.Abbreviations and mathematical symbols are as follows: ISI = Inter-spike interval; IBI = Inter-burst interval; Exp = exponential distribution; |x| = absolute of x; N = standard normal distribution; U(x,y) = uniform distribution on interval [x,y]; ℳ = von Mises distribution; Γ = Gamma distribution.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Unit</th>
+      <th>Distributed as</th>
+      <th>Sampled from:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Single-spike ISI</td>
+      <td>s</td>
+      <td>Exp(1 /r)</td>
+      <td>r~Exp(λ = 1)</td>
+    </tr>
+    <tr>
+      <td>Baseline IBI</td>
+      <td>s</td>
+      <td>Exp(1/| Rb|)</td>
+      <td>Rb~|N|/20 + 1/80</td>
+    </tr>
+    <tr>
+      <td>Preferred orientation IBI</td>
+      <td>s</td>
+      <td>Exp(1/| Rt|)</td>
+      <td>Rt~|N| + 1/4</td>
+    </tr>
+    <tr>
+      <td>Preferred orientation</td>
+      <td>rad</td>
+      <td>θp</td>
+      <td>θp~U(0,2π)</td>
+    </tr>
+    <tr>
+      <td>Orientation-tuned bursting</td>
+      <td>Hz</td>
+      <td>1/Rb + 1/Rt ∙ ℳ(θp, κ)</td>
+      <td>κ ~ 5 + U(0,5)</td>
+    </tr>
+    <tr>
+      <td>Burst duration</td>
+      <td>ms</td>
+      <td>Γ(2*k, θ = 0.5)</td>
+      <td>k~90 + 10*N</td>
+    </tr>
+    <tr>
+      <td>ISI in bursts</td>
+      <td>ms</td>
+      <td>Γ(2*k, θ = 0.5)</td>
+      <td>k~0.5 + Exp(λ = 2.4)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Neuronal responsiveness to natural movies
 
 Next, we asked how the performance of the ZETA-test compares to that of an ANOVA, in a case where there is no a priori knowledge regarding the neuronal response profile, but where the stimulus itself provides a natural timescale that may be used for binning neuronal responses. We therefore determined the responsiveness of neurons to natural movies, using either the ZETA-test, or a one-way ANOVA across bins, repeated for different bin sizes (i.e. timescales). Single-cell data were recorded using Neuropixels in seven visual brain areas of 3 mice, while the animals were presented with repetitions of 20 s long natural movies (Figure 5A).
 
@@ -92,7 +179,7 @@ To ensure that the ANOVA approach could detect short bursts of activity, as well
 
 The above approaches give some insight into which bin sizes best capture the dominant temporal components in neuronal responses in our data, but a more powerful approach might be to classify a neuron as “included” whenever any of the 19 ANOVAs reached significance (i.e. p < α). Repeating this procedure for various significance levels α on the interval (0,1) produces an ROC curve (Figure 5C). Using this approach, we found there was no significant difference in performance between a set of ANOVAs and the ZETA-test (z-test, p = 0.554): ANOVAs AUC = 0.798 ± 0.010, ZETA-test AUC = 0.792 ± 0.011 (mean ± sd). Overall, the above results show that, under these conditions, the binless and timescale-free ZETA-test performs as well as an aggregate set of ANOVAs binned at various timescales.
 
-## Instantaneous firing rates (IFRs) for visualization and onset latency detection
+### Instantaneous firing rates (IFRs) for visualization and onset latency detection
 
 The above paragraphs have shown that the ZETA-test is a sensitive statistical tool to detect whether neurons respond to a stimulus. However, it cannot be used to determine when exactly the strongest response of a neuron occurs. Therefore, we also developed a method that determines the instantaneous firing rate (IFR) using the temporal deviations upon which ZETA is based. Like the ZETA-test, it avoids the bin size selection issue of peri-stimulus time histograms (PSTHs). Another advantage of this IFR is that its temporal resolution is limited only by the neuron’s spike density. Moreover, unlike model-based methods, such as the multiplicative inhomogeneous Markov interval (MIMI) model (Kass and Ventura, 2001), it requires no fitting and is orders of magnitude faster (see Materials and methods, Figure 3—figure supplement 2). It is therefore a useful tool for determining spike train features with high precision, such as a neuron’s onset latency.
 
@@ -108,15 +195,23 @@ As no ground truth is known for the real latencies of experimentally recorded ne
 
 We next tested the estimator accuracy when using a binning-based PSTH approach (bin width 1–58 ms) and found it depends on both the bin width and the width of the peak response (Figure 6J). This means that accurate latency determination using PSTHs requires the use of multiple bin sizes. More importantly, when comparing the estimation error between these bin-based methods and our IFR, we found that the binning-less IFR-based latencies were consistently as accurate as, or more accurate than, the best possible bin-width for any given peak-width (Figure 6K). Finally, the IFR-latency accuracy also exceeded the MIMI-model fit based method. In other words, the IFR-based accuracy supersedes the PSTH-based (and MIMI-based) accuracy without the need to hand-pick the optimal binning width per neuron for a PSTH-method, nor tune hyperparameters such as knot number, location, and regularization strength for the MIMI-method.
 
-## Visuomotor mismatch and spatial location are mediated by different neuronal subpopulations
+### Visuomotor mismatch and spatial location are mediated by different neuronal subpopulations
 
 Having established that the ZETA-test and IFR are statistically robust and have clear advantages over mean-rate approaches and PSTHs, we applied these tools to a GCaMP6 data set. Many theories, such as predictive coding (Friston, 2005; Gregory et al., 1980; Rao and Ballard, 1999), biologically realistic error backpropagation (Ooyen and Roelfsema, 2003; Whittington and Bogacz, 2019), and canonical cortical microcircuit operation (Bastos et al., 2012; Douglas et al., 1989), define a ‘top-down’ signal representing an expectation, error or surprise signal as distinct from a bottom-up sensory drive. In mouse V1, such top-down visuomotor mismatch signals have been reported previously (Attinger et al., 2017; Keller et al., 2012; Leinweber et al., 2017; Saleem et al., 2013). However, whether individual V1 neurons can be classified into different groups based on their encoding of top-down visuomotor mismatch or bottom-up sensory-driven spatial location signals has not been studied.
 
 To examine this issue, and to provide an example of how one could use ZETA in a neurophysiology study, we used neuronal calcium data recorded in L2/3 V1 of 4 mice running on a virtual-reality linear track (Figure 7A). In 87 % of all corridor runs (N = 622/713 trials), the track was rendered normally, and the mice received visual feedback matching their running speed. In the remaining 13 % of runs (N = 91), rendering was halted at a random location for 500 ms before resuming (Figure 7B). After performing calcium-transient detection to obtain putative spike times (Montijn et al., 2016b), we calculated ZETA-scores for all neurons in three different ways. We aligned the spikes to mismatch-onsets, to trial starts, or converted the spike times into locations on the track, and aligned these spike locations to the start. For each recording (n = 7), we calculated the Pearson correlation for each pair of these three ZETA-scores (Figure 7C–F). Across recordings, time- and location-modulation were positively correlated (mean r = 0.23, one-sample t-test, n = 7 recordings, p = 0.016); time- and mismatch-modulation were not significant (r = 0.13, p = 0.28); and location- and mismatch-modulation were negatively correlated (r = −0.22, p = 0.04).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig7-v3.jpg)
+
+**Figure 7.:** (A) Schematic of setup showing mouse on running wheel (lhs) viewing a virtual tunnel (rhs). (B) Trials consist of a 100 cm linear track. One second after the mice ran to the end of the tunnel, an auditory stimulus signaled that a water reward would be delivered two seconds later. 6 s after reward delivery, mice were transported to the start of the virtual tunnel. In a subset of trials, the rendering of the tunnel was paused at a random location, eliciting a visuomotor mismatch signal. Top right shows calcium imaging data for an example ‘mismatch neuron’ during 16 control and 16 mismatch trials. (C) Spiking data for example neuron obtained from exponential fits of the dF/F0 signals. Putative spikes were aligned to start (left), location of the animal on the track (middle), or mismatch onset (right). From top to bottom: raster plot of putative spike times; mean ± SEM of firing rates over trials (n = 105 trials, of which n = 16 mismatch trials); spiking deviation underlying ZETA; instantaneous firing rate. (D–I) Relationship between time-, location-, and mismatch-modulation. One point is one neuron. (D–F) ZETA-scores for example recording 6 (N = 120 neurons). (G–I) Analysis using a kernel-density estimate (KDE) to test whether joint-encoding of two features is more common than expected by chance (see Figure 1). (G) More neurons showed joint-encoding of both spatial and temporal location than expected by chance (p = 1.1 × 10–4). (H) Joint-encoding of temporal location and mismatch was not significantly different from chance (p = 0.932). (I) Location on the virtual track and visuomotor mismatch are less likely to be encoded by the same neuron than expected from chance (p = 2.0 × 10–5). See Figure 7—figure supplement 1 for more details on the KDE procedure.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71969/elife-71969-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Each column shows one step in our analysis procedure, and each row shows the comparison of two features. Top row shows the comparison of location-modulation (x-axis) with time-modulation (y-axis). Left-hand panel: probability density derived from combining the independent KDE-distributions of location-modulation and time-modulation. Middle-left panel: real joint probability distribution (red-scale). One point is a single neuron’s modulation after z-scoring per recording. Middle-right panel: the difference in probability density between the real and null-hypothesis distributions. Blue indicates fewer neurons in the real joint-distribution than in the null-hypothesis distribution. The upper-right quadrant is mostly red, indicating the real distribution contains more neurons that encode both location and time than expected by chance. Right-hand panel: we sampled 10,000 synthetic neuronal populations from the null-hypothesis probability distribution, and calculated for each synthetic population the number of neurons that fell in the upper-right quadrant (URQ): that is, the number of neurons that show both above-average location-modulation as well as above-average time-modulation. The histogram shows the number of neurons in the URQ for each of the 10,000 populations, and the blue vertical line shows that the real number of neurons in the URQ is much higher than expected by chance (z = 3.812, p = 1.144 × 10–4). Middle row: as top row, but now comparing time- and mismatch-modulation. The URQ-analysis showed that time- and mismatch-modulation were not more often seen in the same neurons than expected by chance if the two features are independently encoded (z = −0.059, p = 0.953 (n.s.)). Bottom row: location on the virtual track and visuomotor mismatch are less likely to be encoded by the same neuron than if the two features were randomly distributed (z = −4.310, p = 2.019 × 10–5). This shows that neurons show an encoding specialization for either spatial location or visuomotor mismatch, but not both. Analyzing the Pearson correlation per recording we find qualitatively similar results. Mean Pearson correlation between time-modulation and location-modulation across recordings: n = 7, mean r = 0.2272; one-sample t-test vs. 0: p = 0.0164. Mean correlation between time- and mismatch-modulation: r = 0.1267, p = 0.2829 (n.s.). Mean correlation between location- and mismatch-modulation: r = −0.2249, p = 0.0414.
+
 We next used a kernel-density estimate (KDE) to directly test whether the joint encoding of two features within single neurons was different from chance (Figure 7G–I; Figure 7—figure supplement 1). Indeed, we found that it was less likely that a neuron showed high modulation values for both spatial location and visuomotor mismatch than if the two features were encoded independently (z = −4.3, p = 2.0 × 10–5). We also found time and location to be more likely to be encoded by the same neurons (z = 3.8, p = 1.1 × 10–4), while time- and mismatch-modulation show no effect (z = −0.06, p = 0.95). This suggests a functional specialization for many neurons to encode either visuomotor mismatch signals or spatial location, but not both. While it is possible that location- and mismatch-encoding are also mediated by specific genetic subtypes of interneurons (Attinger et al., 2017), our analysis of putative pyramidal cells demonstrates that principal cells also show encoding specialization.
 
-## Optogenetic stimulation of VIP cells disinhibits visual cortex
+### Optogenetic stimulation of VIP cells disinhibits visual cortex
 
 Finally, we applied the IFR and ZETA-test to data recorded at the Allen Brain Institute (Siegle et al., 2019). In this case, we investigate whether optogenetic stimulation of VIP cells in visual cortex disinhibits the local circuit, as has been shown previously for auditory cortex and mPFC (Pi et al., 2013). The analysis of optogenetic stimulation in visually-responsive areas is complicated by the fact that mice can see the blue light used for optogenetic stimulation. In other words, if a neuron is active after a laser pulse, it could be caused by direct stimulation, indirect circuit disinhibition, or simply be a sensory-driven response. Using the methods described in this paper to overcome these issues, we show that optogenetic stimulation of VIP-expressing cells in mouse visual cortex causes short-latency inhibition and longer latency disinhibition in separate neuronal subpopulations (Figure 8).
 
@@ -150,75 +245,177 @@ In conclusion, the IFR and ZETA-test are simpler, more statistically powerful, a
 
 ## Materials and methods
 
-## ZETA
+### ZETA
 
 Well documented and easy-to-use Matlab and python code performing the procedures described in the following paragraphs can be found here: https://github.com/JorritMontijn/ZETA and https://github.com/JorritMontijn/zetapy.
 
 We developed a timescale-free, binning-less statistical test for determining whether a neuron shows a time-locked modulation of spiking activity. It is derived from a metric that represents the reliability, as number of standard deviations away from chance, that the temporal density of spikes is non-random across trial repetitions. This metric, we call ZETA (ζ), can be computed on a vector of i = [1 … N] spike times x, and a vector of k = [1 … q] event times (e.g. stimulus onsets), w, using the following steps.
 
-First, we make a vector v of the spike times in x relative to the most recent stimulus onset, as when making a raster plot of spike times:(1)vi=xi-wk
+First, we make a vector v of the spike times in x relative to the most recent stimulus onset, as when making a raster plot of spike times:
 
-where(2)wk<xi≤wk+1
+$$
+v_{i}=x_{i}-w_{k}
+$$
 
-Next, we remove all spike times that are larger than a cut-off value τ, for example the trial duration, and add two artificial spikes at t = 0 and t=τ to ensure coverage of the full epoch. We sort the n spike times in v such that vi < vi+1, and calculate the fractional position gi, ranging from 1 /n to 1, of each spike time in v:(3)gi=i/n
+where
 
-Therefore, another interpretation is that g represents a neuron’s cumulative density function sampled at the spike times in v. In order to quantify whether this distribution is different from our null hypothesis – that is that the neuron’s firing rate is not modulated with respect to the stimulus onset – we compare this vector to a linear baseline density vector b. If a neuron’s spiking rate is constant, the cumulative density function is linear over time, and therefore the expected fractional position of spike i at time vi converges to the spike time divided by the trial duration τ as the number of events q increases:(4)limq→∞bi=vi/τ
+$$
+w_{k}<x_{i}\leqw_{k+1}
+$$
 
-The difference δi between gi and bi therefore gives a neuron’s deviation from a temporally non-modulated spiking rate at time point vi:(5)δi=gi-bi
+Next, we remove all spike times that are larger than a cut-off value τ, for example the trial duration, and add two artificial spikes at t = 0 and t=τ to ensure coverage of the full epoch. We sort the n spike times in v such that vi < vi+1, and calculate the fractional position gi, ranging from 1 /n to 1, of each spike time in v:
 
-As we show in the Materials and methods section ‘A proof of time-invariance’, using δi to compute ZETA would make it dependent on the choice of onset times. Therefore, we create d, a time-invariant mean-normalized version of δ:(6)di=δi−δ¯
+$$
+g_{i}=i/n
+$$
 
-where(7)δ¯=1n∑i=1nδi
+Therefore, another interpretation is that g represents a neuron’s cumulative density function sampled at the spike times in v. In order to quantify whether this distribution is different from our null hypothesis – that is that the neuron’s firing rate is not modulated with respect to the stimulus onset – we compare this vector to a linear baseline density vector b. If a neuron’s spiking rate is constant, the cumulative density function is linear over time, and therefore the expected fractional position of spike i at time vi converges to the spike time divided by the trial duration τ as the number of events q increases:
 
-We then define the Zenith of Event-based Time-locked Anomalies (ZETA, or ζr) as the most extreme value, that is the maximum of the absolute values:(8)ζr≡max(|d|)
+$$
+limq→∞b_{i}=v_{i}/\tau
+$$
 
-## Null hypothesis for ZETA
+The difference δi between gi and bi therefore gives a neuron’s deviation from a temporally non-modulated spiking rate at time point vi:
 
-Having calculated ZETA from the temporal deviation vector d, we wish to quantify its statistical significance. First, we scale it such that its value is interpretable as a z-score. We therefore construct a null hypothesis distribution by repeating the above procedure P times with jittered event-times w’, where we move each event time by a random sample drawn from the interval [-τ, τ]. This way, we calculate the chance of observing randomly high values in d without having to make assumptions about the underlying distribution of d. However, a naive approach would lead to difficulties here, as jittering w also changes the corresponding values of v; and any jittered vector d’ we obtain would be sampled at different times than the original vector d. Therefore, we instead linearly interpolate the values of jittered fractional position vector g’ at the original spike times of v. First, we construct a vector f of fractional spiking positions analogously to g, but based on jittered event-times w’:(9)fi=i/n`
+$$
+\delta_{i}=g_{i}-b_{i}
+$$
 
-Note that we cannot simply take g, as the total number of spikes n’ in this jittered version is likely different from the original number of spikes n, because we only consider the spike times in the interval [0, τ] after the (jittered) event times. Next, we interpolate the values of f at sample times v’ to the original sample times v:(10)gi′=(1−w)fj−1+wfj
+As we show in the Materials and methods section ‘A proof of time-invariance’, using δi to compute ZETA would make it dependent on the choice of onset times. Therefore, we create d, a time-invariant mean-normalized version of δ:
 
-where(11)w=vi′−vjvk−vj
+$$
+d_{i}=\delta_{i}−\delta¯
+$$
 
-with.(12)vj−1≤vi′≤vj
+where
 
-We repeat this process P times; where for each jitter iteration j, we calculate δ’(j):(13)δ′(j)=g′(j)−b
+$$
+\delta¯=\frac{1}{n}\sumi=1n\delta_{i}
+$$
 
-Note that b is invariant with respect to the jitter iteration, as it is simply the n-element linear vector from 1 /n to n. As before, we mean-normalize δ’(j) to obtain a temporal deviation vector d’(j).(14)d′(j)=δ′(j)−δ′¯(j)
+We then define the Zenith of Event-based Time-locked Anomalies (ZETA, or ζr) as the most extreme value, that is the maximum of the absolute values:
 
-Now we can define a null-hypothesis ZETA sample j as:(15)ζ′(j)≡max(|d′(j)|)
+$$
+ζ_{r}≡max(|d|)
+$$
 
-## Statistical significance of ZETA
+### Null hypothesis for ZETA
 
-Having constructed a way to generate samples from a null-hypothesis distribution, we are left with the task of using it in calculating the statistical significance of ZETA. If we had infinite samples, we could directly calculate the percentile of the empirical ζr from the null-distribution. However, as this is computationally intractable, we will approximate the true distribution from a finite number of null-hypothesis samples. From extreme value theory we know that the distribution of maximum values is known as a Gumbel distribution (Gumbel, 1941). Its cumulative density is given by:(16)Fx;m,β=e-e-x-m/β
+Having calculated ZETA from the temporal deviation vector d, we wish to quantify its statistical significance. First, we scale it such that its value is interpretable as a z-score. We therefore construct a null hypothesis distribution by repeating the above procedure P times with jittered event-times w’, where we move each event time by a random sample drawn from the interval [-τ, τ]. This way, we calculate the chance of observing randomly high values in d without having to make assumptions about the underlying distribution of d. However, a naive approach would lead to difficulties here, as jittering w also changes the corresponding values of v; and any jittered vector d’ we obtain would be sampled at different times than the original vector d. Therefore, we instead linearly interpolate the values of jittered fractional position vector g’ at the original spike times of v. First, we construct a vector f of fractional spiking positions analogously to g, but based on jittered event-times w’:
 
-Here, x is the sample maximum (i.e., ζr), m is the mode, and β is the scale parameter. Therefore, we need to find m and β, which can be derived from the estimated sample mean and variance over jittered ZETAs of ζ’. The mean x´ and variance v are given by Gumbel, 1954:(17)x¯=m+βγ(18)v=π2β26
+$$
+f_{i}=i/n`
+$$
 
-Here, γ is the Euler–Mascheroni constant (γ ≈ 0.577), m is the mode, and β is the scale parameter. Using v=Var(ζ′) , and Equation 18, we can write the scale parameter β as:(19)β=6⋅Var(ζ′)π
+Note that we cannot simply take g, as the total number of spikes n’ in this jittered version is likely different from the original number of spikes n, because we only consider the spike times in the interval [0, τ] after the (jittered) event times. Next, we interpolate the values of f at sample times v’ to the original sample times v:
 
-Then using Equation 17 and x¯=ζ′¯ , the mode can be computed from β and the mean:(20)m=ζ′¯−βγ
+$$
+g_{i}^{′}=(1−w)f_{j−1}+wf_{j}
+$$
 
-Now we can define the p-value by reading out the cumulative Gumbel distribution at ζr:(21)p=1-Fζr;m,β
+where
 
-Finally, we can use p with the standard normal’s quantile function Φ-1 to obtain a corrected ZETA ζ that is interpretable as a z-score:(22)ζ=Φ-11-p2
+$$
+w=\frac{v_{i}^{′}−v_{j}}{v_{k}−v_{j}}
+$$
+
+with
+
+$$
+v_{j−1}\leqv_{i}^{′}\leqv_{j}
+$$
+
+We repeat this process P times; where for each jitter iteration j, we calculate δ’(j):
+
+$$
+\delta^{′}(j)=g^{′}(j)−b
+$$
+
+Note that b is invariant with respect to the jitter iteration, as it is simply the n-element linear vector from 1 /n to n. As before, we mean-normalize δ’(j) to obtain a temporal deviation vector d’(j).
+
+$$
+d^{′}(j)=\delta^{′}(j)−\delta^{′}¯(j)
+$$
+
+Now we can define a null-hypothesis ZETA sample j as:
+
+$$
+ζ^{′}(j)≡max(|d^{′}(j)|)
+$$
+
+### Statistical significance of ZETA
+
+Having constructed a way to generate samples from a null-hypothesis distribution, we are left with the task of using it in calculating the statistical significance of ZETA. If we had infinite samples, we could directly calculate the percentile of the empirical ζr from the null-distribution. However, as this is computationally intractable, we will approximate the true distribution from a finite number of null-hypothesis samples. From extreme value theory we know that the distribution of maximum values is known as a Gumbel distribution (Gumbel, 1941). Its cumulative density is given by:
+
+$$
+Fx;m,\beta=e^{-e^{-x-m/\beta}}
+$$
+
+Here, x is the sample maximum (i.e., ζr), m is the mode, and β is the scale parameter. Therefore, we need to find m and β, which can be derived from the estimated sample mean and variance over jittered ZETAs of ζ’. The mean $x´$ and variance v are given by Gumbel, 1954:
+
+$$
+x¯=m+\beta\gamma
+$$
+
+
+
+$$
+v=\frac{\pi^{2}\beta^{2}}{6}
+$$
+
+Here, γ is the Euler–Mascheroni constant (γ ≈ 0.577), m is the mode, and β is the scale parameter. Using $v=Var(ζ^{′})$ , and Equation 18, we can write the scale parameter β as:
+
+$$
+\beta=\frac{\sqrt{6⋅Var(ζ^{′})}}{\pi}
+$$
+
+Then using Equation 17 and $x¯=ζ^{′}¯$ , the mode can be computed from β and the mean:
+
+$$
+m=ζ^{′}¯−\beta\gamma
+$$
+
+Now we can define the p-value by reading out the cumulative Gumbel distribution at ζr:
+
+$$
+p=1-Fζ_{r};m,\beta
+$$
+
+Finally, we can use p with the standard normal’s quantile function $Φ^{-1}$ to obtain a corrected ZETA ζ that is interpretable as a z-score:
+
+$$
+ζ=Φ^{-1}1-\frac{p}{2}
+$$
 
 Note that when we refer to ZETA or ζ in the rest of the manuscript, we mean the corrected version and its p-value as defined above.
 
-## Computing an optimal bin size
+### Computing an optimal bin size
 
 For the analyses where we used an optimal binning width to compare the performance of the ZETA-test and a bin-wise ANOVA, we computed the optimal bin width using the procedure described by Shimazaki and Shinomoto, 2007. Their method describes a loss function that can be computed for a given bin-width. To find the optimal bin width, we used a simple iterative 10-point grid search until a local minimum was found. The code used for finding the optimal bin size is available online at https://github.com/JorritMontijn/GeneralAnalysis, (copy archived at swh:1:rev:7f866e0c875af17e9d76fdfbd8cec3d41145c031, Jorrit, 2021a) in the function opthist.m.
 
-## The multiplicative inhomogeneous Markov Interval (MIMI) Model
+### The multiplicative inhomogeneous Markov Interval (MIMI) Model
 
-A classic model for neuronal firing rates are inhomogeneous Poisson processes, where a time-dependent function f(t) can be used to describe how the mean firing rate λ of a cell varies with time t after some experimental intervention, such as the onset of a visual stimulus (Kass et al., 2014):(23)λt=ft
+A classic model for neuronal firing rates are inhomogeneous Poisson processes, where a time-dependent function f(t) can be used to describe how the mean firing rate λ of a cell varies with time t after some experimental intervention, such as the onset of a visual stimulus (Kass et al., 2014):
 
-Spike-times v can then be generated by sampling from an exponential distribution with an inter-spike interval equal to 1/λ:(24)vi+1=vi+Exp1λ
+$$
+\lambdat=ft
+$$
 
-While this framework is attractive in its simplicity, it cannot capture several important properties of spiking dynamics, such as refractory periods or burst firing. Even when one is only interested in the question whether a particular neuron responds to a visual stimulus, bursting cells might produce apparent bumps in a peri-stimulus time histogram (PSTH). This could lead to the possibly erroneous conclusion that a cell is stimulus-modulated, simply because their spiking patterns are non-Poisson by nature. This problem is remedied by a class of models that combine a Poisson process with a renewal process, which describes the likelihood of a spike conditioned on the time since the last spike. These processes are called multiplicative inhomogeneous Markov interval (MIMI) processes (Kass and Ventura, 2001):(25)λ(t,t−s∗(t))=λ1(t)⋅λ2(t−s∗(t))
+Spike-times v can then be generated by sampling from an exponential distribution with an inter-spike interval equal to 1/λ:
+
+$$
+v_{i+1}=v_{i}+Exp\frac{1}{\lambda}
+$$
+
+While this framework is attractive in its simplicity, it cannot capture several important properties of spiking dynamics, such as refractory periods or burst firing. Even when one is only interested in the question whether a particular neuron responds to a visual stimulus, bursting cells might produce apparent bumps in a peri-stimulus time histogram (PSTH). This could lead to the possibly erroneous conclusion that a cell is stimulus-modulated, simply because their spiking patterns are non-Poisson by nature. This problem is remedied by a class of models that combine a Poisson process with a renewal process, which describes the likelihood of a spike conditioned on the time since the last spike. These processes are called multiplicative inhomogeneous Markov interval (MIMI) processes (Kass and Ventura, 2001):
+
+$$
+\lambda(t,t−s_{∗}(t))=\lambda_{1}(t)⋅\lambda_{2}(t−s_{∗}(t))
+$$
 
 Here, s*(t) is the time of the last spike, the λ1 term refers to the inhomogeneous Poisson process described above, while the latter λ2 term captures the inter-spike-interval dependent spiking probability. While this model can be extended to include interaction terms, n-back spike dependencies, and bias constants per trial, prior work has shown these additions do not appreciably improve the fitting quality (Kass and Ventura, 2001). As an additional baseline model, we therefore also compared the performance of the ZETA-test to that of a method based on the MIMI-model (Equation 25).
 
-## MIMI-model fit evaluation as a statistical test for responsiveness
+### MIMI-model fit evaluation as a statistical test for responsiveness
 
 To use the MIMI-model framework as a statistical test, we binned spikes in 1 ms bins. We used cubic splines with 16 B-form coefficients spread uniformly over the trial’s 1.5 s duration for the inhomogeneous Poisson component, and 16 B-form coefficients spread uniformly over a time horizon of 500 ms for the renewal-process component (Kass et al., 2014). We then simultaneously fitted these 32 coefficients to produce the closest match to the neuron’s spike train by running a least-squares curve fitting algorithm. Specifically, we minimized the error between the stimulus-locked trace reconstituted from the B-form splines and the real average spiking rate per bin of the PSTH. The fitting procedure used 1 ms binning, but the resulting model can be resolved at theoretically infinitesimal time steps. We ran a couple of fits with different numbers of coefficients ranging from 8 + 8–32 + 32, but this did not strongly impact either the fitting quality or computation time (Figure 3—figure supplement 2).
 
@@ -226,11 +423,19 @@ Theoretically, we could now follow the same procedure as with the ZETA-test by g
 
 The ROC analysis is insensitive to the absolute level of significance values, but instead provides insight in the discriminability of real inclusions from false positives (Figure 3—figure supplement 2, panel G). To keep the computational time tractable, we subsampled the data to include only V1 cells, and only their response to the first 480 drifting grating trials. We compared the ZETA-test, t-test and MIMI-model method as described above. The ZETA-test gave an area under the curve (AUC) of 0.996, the t-test 0.900, and the MIMI-method 0.749. However, we noticed that the MIMI-method appeared to fail mostly for cells with low firing rates, so we also added a hypothetical curve where we only included neurons with > 1000 spikes during the 480-trial long epoch (MIMI-1k). This significantly boosted the MIMI-method’s discriminability to an AUC similar to the t-test’s at 0.898. Perhaps choosing a different number of coefficients would improve the MIMI test, but the issue remains that this test does not work without manual tuning. These results suggest it will require significant work to develop a MIMI-based test that can compete with a t-test, and that even if we were successful, it might not exceed the ZETA-test’s performance. Moreover, as the MIMI-model requires parameters to be iteratively fitted to experimental data, it is multiple orders of magnitude slower than the ZETA-test and t-test. To conclude, full MIMI-model based methods do not seem to be suited for unsupervised, large-scale use as neuronal responsiveness tests.
 
-## Decomposition of ZETA
+### Decomposition of ZETA
 
-While using full multiplicative inhomogeneous Markov interval models of the form of Equation 25 is not a viable option when creating a responsiveness test, we used it as a starting point to further explore which properties of the ZETA allow it to function so well. As already noted above, the main problem for developing a robust responsiveness test is finding a suitable null-hypothesis distribution to test against. As a first naïve baseline, we built a simple test that checks whether a cell’s firing rate, binned with width τ and averaged across trials, differs from a homogeneous Poisson process with rate λ. Under this null-hypothesis, the number of spikes per bin X is therefore distributed as:(26)X∼Pois(λτ)
+While using full multiplicative inhomogeneous Markov interval models of the form of Equation 25 is not a viable option when creating a responsiveness test, we used it as a starting point to further explore which properties of the ZETA allow it to function so well. As already noted above, the main problem for developing a robust responsiveness test is finding a suitable null-hypothesis distribution to test against. As a first naïve baseline, we built a simple test that checks whether a cell’s firing rate, binned with width τ and averaged across trials, differs from a homogeneous Poisson process with rate λ. Under this null-hypothesis, the number of spikes per bin X is therefore distributed as:
 
-The null-hypothesis random variable H0 for rates averaged over T trials follows:(27)H0=1/T∑i=1TXi
+$$
+X∼Pois(\lambda\tau)
+$$
+
+The null-hypothesis random variable H0 for rates averaged over T trials follows:
+
+$$
+H_{0}=1/T\sumi=1TX_{i}
+$$
 
 Whether a neuron’s observed number of spikes per bin, averaged over trials, differs from this null distribution can then be tested using a standard Kolmogorov-Smirnov test.
 
@@ -238,23 +443,39 @@ We benchmarked this approach with V1 cells, using 1 ms bins, and performed an RO
 
 This may seem a trivial result, as the null-hypothesis distribution in this latter case does not match the null (Poisson) distribution used by the statistical test. This is a critical issue, however: in the case of real experimental data sets, there is no known ground truth, so a robust statistical test for neuronal responsiveness must be able to handle a wide variety of intrinsic spiking behaviors. Clearly, the Poisson test fails this requirement, as it is only able to distinguish i.i.d. Poisson-distributed spiking from anything that is not exactly i.i.d. Poisson-distributed spiking. For comparison, both the ZETA-test and t-test show robust behavior that is insensitive to the specifics of the shuffle-control we use. The ZETA-test gives an AUC of 0.983 using ISI-shuffles and 0.984 using onset jittering; and the mean-rate t-test gives AUCs of 0.899 and 0.902 respectively. In the following section, we investigate which properties of the ZETA-test allow it to perform so much better than the Poisson test.
 
-The first aspect we investigated is the assumption of the homogeneous Poisson-distributed spiking when a neuron is unmodulated by visual stimulation. We know that neurons can be intrinsically bursting and have refractory periods, so even the most purely sensory-driven cell in V1 is likely to not fire i.i.d. Poisson when no visual stimulus is present. A more versatile and possibly more accurate H0 might be a renewal process. We therefore constructed an inter-spike-interval (ISI)-based test, where we first calculated a neuron’s inter-spike intervals dt from its spike time vector t:(28)dti=ti−ti−1
+The first aspect we investigated is the assumption of the homogeneous Poisson-distributed spiking when a neuron is unmodulated by visual stimulation. We know that neurons can be intrinsically bursting and have refractory periods, so even the most purely sensory-driven cell in V1 is likely to not fire i.i.d. Poisson when no visual stimulus is present. A more versatile and possibly more accurate H0 might be a renewal process. We therefore constructed an inter-spike-interval (ISI)-based test, where we first calculated a neuron’s inter-spike intervals dt from its spike time vector t:
 
-We then randomly permuted the ISIs, creating a shuffled ISI vector dts and using it to construct a null-hypothesis vector of spike times t0:(29)ti0=ti−10+dtis
+$$
+dt_{i}=t_{i}−t_{i−1}
+$$
+
+We then randomly permuted the ISIs, creating a shuffled ISI vector dts and using it to construct a null-hypothesis vector of spike times t0:
+
+$$
+t_{i}^{0}=t_{i−1}^{0}+dt_{i}^{s}
+$$
 
 In effect, this null-hypothesis vector is a different random sample of the same renewal process that would generate the real neuron’s spiking times, under the simplifying assumption that the spike times are generated by a renewal process. We constructed mean firing rates x0 by binning t0 using 1 ms bins. We repeated this 100 times, and used a two-sample K-S test between the real binned spike count vector x and shuffle-control spike count matrix X0, as we also did for the Poisson test described above. Unfortunately, this SISI-KS (Shuffled Inter-Spike-Interval Kolmogorov-Smirnov) test performed very similar to the Poisson test, resulting in an AUC of 0.985 for the ISI-shuffle control, and an AUC of 0.610 for the jitter-control.
 
 This similarity might be explained by the ability of the KS test to distinguish with high sensitivity between the spiking distributions obtained from shuffling ISIs and jittering stimulus onsets, as these are not identical. If we wish to construct a more robust test, we must therefore use a procedure that is less sensitive to the full shape of the H0 distribution, and only takes into account the likelihood of observing extreme deviations from the average firing rate. This will make the test less sensitive to real stimulus-induced activity, but also less sensitive to errors in the specific shape of the null hypothesis distribution we use to estimate the neuron’s natural variability. We achieved this by using the Gumbel-distribution of maximum absolute deviations in our random ISI-shuffle samples to calculate a p-value of the maximum absolute deviation in the real, unshuffled, PSTH. The procedure works as intended: this SISI-G test gives an AUC of 0.844 for the ISI-shuffle controls, and an AUC of 0.821 for the jitter controls.
 
-We noticed that the SISI-G test suffered from high variance in the PSTH when using 1 ms bins, especially for cells with few spikes. One option would therefore be to increase the bin width, but this would come at the expense of temporal resolution and ability to detect short peaks of activity. We therefore opted instead to calculate the maximum absolute deviation of the cumulative sum of spikes counts, similar to the ZETA-test’s, but in this case over the discrete 1 ms spike count vector x0. For the SISI-∫G test, we defined the normalized cumulative spike count vector T0 (similar to Equation 29) as:(30)Tj0=∑i=1jxi0−x¯0
+We noticed that the SISI-G test suffered from high variance in the PSTH when using 1 ms bins, especially for cells with few spikes. One option would therefore be to increase the bin width, but this would come at the expense of temporal resolution and ability to detect short peaks of activity. We therefore opted instead to calculate the maximum absolute deviation of the cumulative sum of spikes counts, similar to the ZETA-test’s, but in this case over the discrete 1 ms spike count vector x0. For the SISI-∫G test, we defined the normalized cumulative spike count vector T0 (similar to Equation 29) as:
 
-Moreover, as this would create fixed points with 0 variance at j = 1 and j = n, we also mean-subtracted the T0 vector itself:(31)T0,c=T0−T¯0
+$$
+T_{j}^{0}=\sumi=1jx_{i}^{0}−x¯^{0}
+$$
+
+Moreover, as this would create fixed points with 0 variance at j = 1 and j = n, we also mean-subtracted the T0 vector itself:
+
+$$
+T^{0,c}=T^{0}−T¯^{0}
+$$
 
 In essence, this test is a 1 ms binned and ISI-shuffle based version of the binless onset-jittering ZETA-test. Benchmarking this test, we found that it performed close to, but slightly less well than, the ZETA-test. This SISI-∫G test gave an AUC of 0.968 for the ISI-shuffle controls and an AUC of 0.974 for the jitter controls.
 
 Finally, we created an alternative, also binless, version of the ZETA-test where we created the null distributions by shuffling the inter-spike intervals rather than jittering the stimulus onsets. The alternative ZETA-ISI test performed at a level indistinguishable from ZETA; the ZETA-ISI gave an AUC of 0.986 for the ISI-shuffle controls and an AUC of 0.982 for the jitter controls. To conclude; the (alternative) ZETA-test strongly outperforms other tests, mainly for two reasons: (1) using the Gumbel distribution to calculate a cell’s significance based on the most extreme stimulus-locked spiking deviation rather than a KS test allows the ZETA-test to be relatively invariant to the full, and a priori unknown, spike time distribution of a neuron and (2) using an integral-based approach has a timescale-free smoothing effect that reduces spurious peaks that can occur in the firing rate domain. Finally, the binless ZETA-test shows a small, but significant, improvement over its 1 ms binned cousin in terms of both statistical power and computational efficiency (Figure 3—figure supplement 3C). While the random null distribution (ISI shuffling or onset jittering) did not seem to have a large impact on the ZETA-test’s performance for this data set of predominantly regular-spiking V1 neurons, the following section shows that this distinction becomes more important when one tests the responsiveness of bursting cells.
 
-## Simulated bursting cells: onset jittering versus inter-spike interval shuffling
+### Simulated bursting cells: onset jittering versus inter-spike interval shuffling
 
 Stimulus onset jittering and inter-spike interval shuffling produce different distributions, unless a neuron’s probability of spiking only depends on the time since the last spike. The previous section showed that, when using our V1 data set, performance has already saturated too much to show a difference between the ISI-shuffle ZETA and onset-jitter ZETA tests. To better differentiate their performance, we therefore generated a population of simulated bursting cells. While bursting cells are rare in visual cortex, they are abundant in many brain regions, such as the subiculum and others (Cooper, 2002; Mattia et al., 1993). To test the performance on bursting cells, we generated artificial spike trains, using the parameters for burst properties from Chen et al., 2009 as listed in Table 1.
 
@@ -262,51 +483,99 @@ All cells were assigned a background single-spike firing rate that was on averag
 
 Running the same benchmark as before on this artificial data set, we found that the onset-jitter ZETA-test indeed outperformed both the ISI-shuffle ZETA-test and mean-rate t-test (Figure 3—figure supplement 3F). The ZETA-test gave an AUC of 0.941, the ISI-shuffle ZETA-test an AUC of 0.845, and the mean-rate t-test an AUC of 0.902. This difference in performance can be attributed to the fact that jittering stimulus onsets keeps the properties of individual bursts intact, while ISI-shuffling changes these properties, leading to more variable burst spike trains. While shuffling of ISIs or stimulus onsets both produce spike trains that are unmodulated by stimulus presence, we have shown that they are not equivalent.
 
-## Multi-scale derivatives of ZETA for latency detection
+### Multi-scale derivatives of ZETA for latency detection
 
-The ZETA-test indicates whether a neuron shows reliable deviations in spiking rate with respect to a particular series of events. The time of this maximum deviation, however, is not necessarily when the neuron shows its strongest firing rate modulation, but rather when the cumulative distribution reaches peak statistical significance. Therefore, in order to use the ZETA procedure to calculate the time of peaks in modulations (e.g. onset latencies), we should take the derivative of the temporal deviation vector d underlying ZETA. A naïve approach with a simple spike-to-spike derivative unfortunately yields a curve with many spurious peaks. One solution would be to calculate the derivative over a larger time interval, but this comes at the expense of temporal resolution. Moreover, many different cell types exist with different dominant time constants. To balance temporal resolution and robustness, we therefore developed a multi-scale derivative procedure. First, we define a vector t of S timescales at which to compute derivatives. By default, we define the timescales to lie on a logarithmic scale with base 1.5, as this gave a reasonable trade-off between computational speed and accuracy. Base values closer to one will give more accurate results at the cost of computational speed. For base b and a trial duration of τ:(32)t=bp
+The ZETA-test indicates whether a neuron shows reliable deviations in spiking rate with respect to a particular series of events. The time of this maximum deviation, however, is not necessarily when the neuron shows its strongest firing rate modulation, but rather when the cumulative distribution reaches peak statistical significance. Therefore, in order to use the ZETA procedure to calculate the time of peaks in modulations (e.g. onset latencies), we should take the derivative of the temporal deviation vector d underlying ZETA. A naïve approach with a simple spike-to-spike derivative unfortunately yields a curve with many spurious peaks. One solution would be to calculate the derivative over a larger time interval, but this comes at the expense of temporal resolution. Moreover, many different cell types exist with different dominant time constants. To balance temporal resolution and robustness, we therefore developed a multi-scale derivative procedure. First, we define a vector t of S timescales at which to compute derivatives. By default, we define the timescales to lie on a logarithmic scale with base 1.5, as this gave a reasonable trade-off between computational speed and accuracy. Base values closer to one will give more accurate results at the cost of computational speed. For base b and a trial duration of τ:
 
-where(33)p={x∣x∈Z,logb10−3<x<logbτ10}
+$$
+t=b^{p}
+$$
 
-The derivative d˙ at spike i can then be defined for di and timescale tk as:(34)d˙i,k=db−davb−va
+where
 
-where(35)a=argmaxva{va∣va∈v,va<vi−tk2}b=argminvb{vb∣vb∈v,vb>vi+tk2}
+$$
+p={x∣x\inZ,log_{b}10^{−3}<x<log_{b}\frac{\tau}{10}}
+$$
 
-Here, v are spike times, following the definition above. To avoid undefined edges, we set a and b to one and n respectively, iff vi ± tk/2 falls outside the interval [0, τ]. Taking the mean over all S timescales, we obtain an average of multi-scale derivatives m,(36)mi=1S∑k=1Sd˙i,k
+The derivative $d˙$ at spike i can then be defined for di and timescale tk as:
+
+$$
+d˙_{i,k}=\frac{d_{b}−d_{a}}{v_{b}−v_{a}}
+$$
+
+where
+
+$$
+a=argmaxv_{a}{v_{a}∣v_{a}\inv,v_{a}<v_{i}−\frac{t_{k}}{2}}b=argminv_{b}{v_{b}∣v_{b}\inv,v_{b}>v_{i}+\frac{t_{k}}{2}}
+$$
+
+Here, v are spike times, following the definition above. To avoid undefined edges, we set a and b to one and n respectively, iff vi ± tk/2 falls outside the interval [0, τ]. Taking the mean over all S timescales, we obtain an average of multi-scale derivatives m,
+
+$$
+m_{i}=\frac{1}{S}\sumk=1Sd˙_{i,k}
+$$
 
 which has two important properties. First, long-timescale derivatives tend to 0, so there is a bias of m to more strongly follow shorter timescales. Secondly, random noise at the shortest timescales averages out over multiple short-timescale derivatives. Therefore, these two properties combined lead m to reflect the shortest timescales at which a real signal starts to emerge from random noise.
 
-## Calculation of high-resolution instantaneous firing rates
+### Calculation of high-resolution instantaneous firing rates
 
 Another interesting property of the mean multi-scale derivative m is that it scales with the actual firing rate. In other words, it produces a time-locked neural activation curve, similar to a peri-stimulus time histogram (PSTH). If we properly rescale m, we can therefore create an instantaneous firing rate metric with a temporal resolution that is only limited by the spike density.
 
-Remember that the temporal deviation vector δ itself is scaled to lie between –1 and +1, as its value depends on the difference between the fractional position of a spike (from 0 to 1) and the linear interval from x,y=[0,0] to [τ,1]. The theoretical lower limit of the multi-scale derivative is therefore -1/τ. This can be illustrated as follows. Imagine a hypothetical neuron where all spikes are fired in an arbitrarily short interval close the start of each trial. This means that δ rises from 0 to 1 in a short interval and from then decays linearly from 1 to 0 over an interval of τ. As d˙ is defined between two spikes (including window edges 0 and τ), this means that the lowest possible value in this extreme case is the point between the last spike n and τ, i.e.:(37)d˙min=dτ−dnvτ−vn=0−1τ−0=−1/τ
+Remember that the temporal deviation vector δ itself is scaled to lie between –1 and +1, as its value depends on the difference between the fractional position of a spike (from 0 to 1) and the linear interval from x,y=[0,0] to [τ,1]. The theoretical lower limit of the multi-scale derivative is therefore $-1/\tau$. This can be illustrated as follows. Imagine a hypothetical neuron where all spikes are fired in an arbitrarily short interval close the start of each trial. This means that δ rises from 0 to 1 in a short interval and from then decays linearly from 1 to 0 over an interval of τ. As $d˙$ is defined between two spikes (including window edges 0 and τ), this means that the lowest possible value in this extreme case is the point between the last spike n and τ, i.e.:
 
-The lowest possible firing rate is 0 Hz, which therefore corresponds to -1/τ . An upper bound for d˙ does not exist, as an arbitrarily short interval with a finite number of n spikes would lead to arbitrarily high d˙ :(38)d˙max=dj−divi−vj=1/nt−(t+1/∞)=∞
+$$
+d˙_{min}=\frac{d_{\tau}−d_{n}}{v_{\tau}−v_{n}}=\frac{0−1}{\tau−0}=−1/\tau
+$$
 
-This is a desirable property, as the maximum instantaneous firing rate of a neuron is not theoretically constrained. Finally, the average firing rate of our metric should correspond to the real average firing rate in Hz (n/τq), where q is the number of events as defined above. We therefore define our instantaneous firing rate metric r as:(39)r=nτ⋅q⋅(m+1/τm¯+1/τ)
+The lowest possible firing rate is 0 Hz, which therefore corresponds to $-1/\tau$ . An upper bound for $d˙$ does not exist, as an arbitrarily short interval with a finite number of n spikes would lead to arbitrarily high $d˙$ :
 
-Here, m¯ is the weighted average of m by the inter-spike interval, such that the averaging occurs in the time domain and not the spike-number domain:(40)m¯=1τ∑i=2nmi−1+mi2(vi−1−vi)
+$$
+d˙_{max}=\frac{d_{j}−d_{i}}{v_{i}−v_{j}}=\frac{1/n}{t−(t+1/∞)}=∞
+$$
 
-Considering the definitions above, we can therefore state that the maximum firing rate in r occurs where(41)ri=1S∑k=1Sbk-akvbk-vak
+This is a desirable property, as the maximum instantaneous firing rate of a neuron is not theoretically constrained. Finally, the average firing rate of our metric should correspond to the real average firing rate in Hz (n/τq), where q is the number of events as defined above. We therefore define our instantaneous firing rate metric r as:
 
-is at its maximum, with ak the index of the largest spike time smaller than vi-tk2 and bk the index of the smallest spike time larger than vi+tk2 ; with tk being the logarithmically distributed time ranges. In the limit of a high number of spikes, we find that vak≈vi-tk2 and vbk≈vi+tk2 , and therefore,(42)ri=1S∑k=1S#spikesin(vi−tk2,vi+tk2)tk
+$$
+r=\frac{n}{\tau⋅q}⋅(\frac{m+1/\tau}{m¯+1/\tau})
+$$
 
-which is an average of the instantaneous spike rates at vi at timescales tk.
+Here, $m¯$ is the weighted average of m by the inter-spike interval, such that the averaging occurs in the time domain and not the spike-number domain:
 
-## Mean-rate artificial Poisson neurons
+$$
+m¯=\frac{1}{\tau}\sumi=2n\frac{m_{i−1}+m_{i}}{2}(v_{i−1}−v_{i})
+$$
 
-We tested whether ZETA required short bursts of activity to work by generating artificial spike trains that only varied in mean-rate between a 1 s stimulus presentation and a 1 s inter-stimulus interval, and did not show onset peak responses. We created spike trains for 100 neurons with an orientation preference θ randomly sampled from a uniform distribution on the interval (0,π). The shape of the tuning curve was defined as the sum of two von Mises distributions centered at preferred orientation θ and θ+π with a concentration parameter of κ = 5 + ε, where ε was randomly sampled from a uniform distribution on the interval (0,5). The von Mises probability density function with mean θ and concentration parameter κ is given by:(43)f(x∣θ,κ)=eκcos(x−θ)2πI0(κ)
+Considering the definitions above, we can therefore state that the maximum firing rate in r occurs where
+
+$$
+r_{i}=\frac{1}{S}\sum_{k=1}^{S}\frac{b_{k}-a_{k}}{v_{b_{k}}-v_{a_{k}}}
+$$
+
+is at its maximum, with $a_{k}$ the index of the largest spike time smaller than $v_{i}-\frac{t_{k}}{2}$ and $b_{k}$ the index of the smallest spike time larger than $v_{i}+\frac{t_{k}}{2}$ ; with $t_{k}$ being the logarithmically distributed time ranges. In the limit of a high number of spikes, we find that $v_{a_{k}}≈v_{i}-\frac{t_{k}}{2}$ and $v_{b_{k}}≈v_{i}+\frac{t_{k}}{2}$ , and therefore,
+
+$$
+r_{i}=\frac{1}{S}\sumk=1S\frac{#spikesin(v_{i}−\frac{t_{k}}{2},v_{i}+\frac{t_{k}}{2})}{t_{k}}
+$$
+
+which is an average of the instantaneous spike rates at $v_{i}$ at timescales $t_{k}$.
+
+### Mean-rate artificial Poisson neurons
+
+We tested whether ZETA required short bursts of activity to work by generating artificial spike trains that only varied in mean-rate between a 1 s stimulus presentation and a 1 s inter-stimulus interval, and did not show onset peak responses. We created spike trains for 100 neurons with an orientation preference θ randomly sampled from a uniform distribution on the interval (0,π). The shape of the tuning curve was defined as the sum of two von Mises distributions centered at preferred orientation θ and θ+π with a concentration parameter of κ = 5 + ε, where ε was randomly sampled from a uniform distribution on the interval (0,5). The von Mises probability density function with mean θ and concentration parameter κ is given by:
+
+$$
+f(x∣\theta,κ)=\frac{e^{κcos(x−\theta)}}{2\piI_{0}(κ)}
+$$
 
 Here, where I0(κ) is the modified Bessel function of order 0. The baseline mean spiking rate µbase was defined by randomly sampling from an exponential distribution with a mean of λbase = 5 Hz. µbase defined the trough of the neuron’s tuning curve (i.e. the activity at θ+π/2 and θ-π/2) as well as the activity of the neuron when no stimulus was present. The firing rate for the preferred stimulus µstim was determined by similarly sampling from an exponential distribution with a mean of λstim = µbase +20 Hz. We generated spiking activity for 160 trials (20 repetitions of 8 stimulus orientations: θstim = [0, 45, …, 315]). The average baseline firing across all n = 10,000 artificial neurons was therefore 5 Hz and the average firing rate during the preferred stimulus was 25 Hz. Spike times were generated for each trial-epoch (stimulus/baseline) independently by consecutively drawing inter-spike intervals from a Poisson distribution with λ = 1/µ.
 
-## Artificial Poisson neurons for peak-latency benchmarking
+### Artificial Poisson neurons for peak-latency benchmarking
 
 We also addressed the question whether our instantaneous firing rate metric was sufficiently robust to allow accurate peak-time detection over a range of background firing rates and a range of peak widths. The procedure here was similar as above, with the exception that the firing rate during baseline and stimulus periods was identical: µbase = µstim. We tested 13 base rates (0.5–32 Hz) and 19 jitter widths (1–10 ms in steps of 0.5). For each combination of base rate and jitter width, we generated 100 neurons and 100 trials per neuron. Peaks were added to the background activity by adding a single spike to half of all trials. Spike times were chosen by random sampling from a normal distribution with the standard deviation equal to the above jitter width and centered at 100 ± 10 ms after stimulus onset.
 
 Figure panels 6 J,K used slightly different parameters. Instead, we used 10 jitter widths (1–10 ms in steps of 1), simulated only a base rate of 32 Hz, used 160 trials for 1000 neurons, and compared the peak-latency detection using the ZETA-IFR with binning windows ranging from 1.00 ms to 57.67 ms; a logarithmic scale of base 1.5 with the exponent ranging from 0 to 10 in steps of 1.
 
-## Acquisition and preprocessing of laminar probe data (neuronexus and neuropixels)
+### Acquisition and preprocessing of laminar probe data (neuronexus and neuropixels)
 
 We performed silicon probe recordings in six C57BL/6 mice, 2–7 months of age. Mice were housed in a 12 hr/12 hr dark/light cycle with ad libitum access to food and water. All experiments were approved by the animal ethics committee of the Royal Netherlands Academy of Arts and Sciences, in compliance with all relevant ethical regulations.
 
@@ -316,21 +585,25 @@ After the mice recovered as indicated by a return to their pre-operative weight,
 
 NeuroNexus recordings were performed using either a Tucker-Davis Technologies digitizer and custom-written MATLAB code as described previously (Ahmadlou and Heimel, 2015). Neuropixels recordings were performed using a National Instruments I/O PXIe-6341 module and SpikeGLX (https://github.com/billkarsh/SpikeGLX). Visual stimulation was performed as described previously (Montijn et al., 2016a), and synchronized with high accuracy ( < 1 ms) using photodiode signals that recorded visual stimulus onsets. Spikes were sorted post-hoc using Kilosort2 (https://github.com/MouseLand/Kilosort2, Pachitariu, 2021) and only clusters of sufficient quality, as defined by Kilosort2’s default threshold, were included for further analysis. High-quality clusters (i.e. putative neurons) were assigned a brain region using the AllenCCF MATLAB toolbox (https://github.com/cortex-lab/allenCCF, Peters, 2021), which automatically calculates a neuron’s anatomical position based on penetration location, angle, and depth of the silicon probe. Abbreviations for brain areas mostly follow the Allen Brain Atlas area codes. V1: primary visual cortex. AM: anteromedial visual cortex. PM: posteromedial visual cortex. LGN: lateral geniculate nucleus. LP: lateral posterior nucleus. NOT: nucleus of the optic tract. APN: anterior pretectal nucleus. SC: superior colliculus. All code used in laminar probe data acquisition and pre-processing is available online (https://github.com/JorritMontijn/Acquipix, Montijn, 2021).
 
-## Visual stimulus parameters
+### Visual stimulus parameters
 
 Visual stimuli during Neuronexus and Neuropixels recordings were shown at 60 Hz on a 51 by 29 cm Dell screen at 17 cm distance from the animal’s eyes, using Psychtoolbox three in Matlab. Drifting gratings were displayed within a 120 visual-degree diameter window with two visual-degree cosine edge that faded smoothly into a neutral-gray background. Drifting gratings were shown in 24 directions: [0, 15, … 345] degrees at a spatial frequency of 0.05 cycles per degree and a temporal frequency of 1 cycle per second. Natural movies were 20 s long and consisted of four distinct scenes taken from the BBC nature documentary Earthflight (Montijn et al., 2016a).
 
-## Acquisition and preprocessing of retinal multi-electrode array data
+#### Acquisition and preprocessing of retinal multi-electrode array data
 
 Adult ( > 1 year) zebrafish (Danio rerio), were dark-adapted for at least 1 hr. Then under IR illumination fish were euthanized by rapid immersion in ice-cold water, the eyes removed, the retina isolated and placed photoreceptor side up on a perforated 60 electrode array (60pMEA200/30iR-Ti using a MEA2100 system: Multichannel systems, Reutlingen, Germany) in a recording chamber mounted on an Nikon Optiphot-2 upright microscope and viewed under IR with an Olympus 2 x objective and video camera (Abus TVCC 20530). Room temperature Ames’ medium (Sigma-Aldrich) gassed with a mixture of O2 and CO2 at pH of 7.6 continuously superfused the MEA recording chamber.
 
-Extracellular multiunit GC activity was recorded at 25 kHz in MC rack (Multichannel systems, Reutlingen, Germany), zero-phase bandpass filtered (250–6250 Hz) with a fourth-order Butterworth filter in Matlab (MathWorks, Natick, MA, USA), and sorted into single-unit activity with ‘offline spike sorter’ (Plexon, Dallas, TX, USA). Spikes were detected using an amplitude threshold > 4σn where σn is an estimation of the background noise(44)σn=medianx0.6745
+Extracellular multiunit GC activity was recorded at 25 kHz in MC rack (Multichannel systems, Reutlingen, Germany), zero-phase bandpass filtered (250–6250 Hz) with a fourth-order Butterworth filter in Matlab (MathWorks, Natick, MA, USA), and sorted into single-unit activity with ‘offline spike sorter’ (Plexon, Dallas, TX, USA). Spikes were detected using an amplitude threshold > 4σn where σn is an estimation of the background noise
+
+$$
+\sigma_{n}=median\frac{x}{0.6745}
+$$
 
 with x being the bandpass-filtered signal (Quiroga et al., 2004). The detected spikes were manually sorted into single units based on the first two principal components versus time.
 
 The light stimulus consisted of a 500 ms full field light flash, preceded and followed by a 500- and 1000 ms period of darkness, generated using Psychophysics Toolbox Version 3 (Brainard, 1997; Kleiner et al., 2007), and repeated either 50 or 100 times. Stimuli were projected onto the retina from the photoreceptor side by a DLP projector (Light Crafter 4500, Wintech, Carlsbad, CA, USA) using a custom-built 2 x water immersion objective. Only white light stimuli were used. The “dark” light intensity was 6 μW/m2, and the maximal ‘light’ intensity was 176.2 μW/m2.
 
-## Acquisition and preprocessing of calcium imaging data
+#### Acquisition and preprocessing of calcium imaging data
 
 Drifting grating responses were recorded as previously described (Montijn et al., 2016a) and putative spike times were extracted using an exponential fitting algorithm (Montijn et al., 2016b). All codes used in pre-processing of drifting grating calcium imaging data are available online (https://github.com/JorritMontijn/Preprocessing_Toolbox).
 
@@ -342,83 +615,237 @@ Before imaging, mice were trained to being head fixed and run through a virtual 
 
 Imaging was performed with a two-photon microscope (Neurolabware) equipped with a Ti-sapphire laser (Mai-Tai ‘Deepsee’, Spectraphysics; wavelength, 920 nm) and a 16 x, 0.8 NA water immersion objective (Nikon). The microscope was controlled by Scanbox (Neurolabware) running on Matlab. One one mouse we performed dual-plane imaging at 15.5 Hz/plane using an electrically tunable lens (OptoTune). The other three mice were imaged in a single plane at 15.5 Hz. During the pre-processing stage, we discarded all interneurons and only included putative pyramidal cells for further analysis.
 
-## Analysis of virtual corridor joint-feature encoding
+#### Analysis of virtual corridor joint-feature encoding
 
 For each neuron, we calculated ZETA-scores after aligning the putative spike times to trial start (‘time-aligned’), converting spike times to locations and aligning them to the beginning of the corridor (‘location-aligned’), or aligning the spike times to a visuomotor mismatch event, where rendering of the virtual corridor was paused for 500 ms (‘mismatch-aligned’) (Figure 7C). We call the resulting values time-modulation, location-modulation and mismatch-modulation respectively. In the case of the spatial “location-aligned” analysis, we furthermore discarded the first and last 10 % of the track to avoid including the start and end box locations. We investigated whether there was a relationship between the modulation values that neurons showed for these three different features in two ways. First, we simply calculated the Pearson correlation at the level of a single recording between time/location, time/mismatch, and location/mismatch modulations (Figure 7D–F). A one-sample t-test on these correlation values showed there was a significant, positive correlation for time/location and a significant, negative correlation for location/mismatch. However, this analysis does not directly answer the question whether the joint encoding of two features at the level of single neurons is more or less likely than we would expect by chance.
 
 We therefore z-scored the modulation values per recording and pooled all neurons. We then used a kernel-density estimator (KDE) to construct a probability density estimate for the distribution of modulation values for time, location, and mismatch (Figure 7—figure supplement 1). Combining these distributions for a pair of features, we obtain a null-hypothesis distribution of what the joint-feature-encoding distribution would look like if the modulation-scores are independent of each other. Using the same bandwidths as for the single-feature KDE-distributions, we smoothed the real data so we could directly compare which regions are over- or under-represented in the real data, producing the heat maps in Figure 7G–I. To quantify this over/underrepresentation, we counted the number of neurons in the upper-right quadrant, where neurons lie that have high modulation scores for both features. We compared the real count to the distribution obtained from 10,000 random samples taken from the joint-feature KDE-derived null-hypothesis distribution, where there is no correlation between the two feature modulation scores. As shown in Figure 7G-I, Figure 7—figure supplement 1, time and location-modulation scores were more often both high in single neurons than expected from chance. Moreover, there were fewer neurons that showed a joint encoding of both spatial location and visuomotor mismatch than expected from chance.
 
-## VIP-optogenetics analysis of Allen Brain Institute cephys data
+#### VIP-optogenetics analysis of Allen Brain Institute cephys data
 
 Detailed information on experimental and data acquisition procedures can be found online at the Allen Brain Institute website: https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels. We used data from 5 Vip-IRES-Cre; Ai32 mice that underwent laser-based optogenetic stimulation. We pre-selected 1706 clusters that were recorded in visually-responsive cortex (AL, AM, PM, L, V1, RL, or MMP) and were of sufficient quality, specifically: KiloSort2 tagged the cluster as “good”, ISI violations were under 0.5, amplitude thresholds under 0.1, and presence ratios over 0.9. The next step was to cull this population to only cells that showed modulated spiking with respect to the onset of optogenetic stimulation. We therefore included N = 1144 cells that showed P < 0.05 with a ZETA-test on the window between (–0.5, + 0.5 s) after optogenetic stimulation. We calculated the peak-response latency using our IFR method and discarded cells with peak responses earlier than 1 ms after optogenetic stimulation onset (N = 909). The remaining cells were classified as VIP if their IFR peak latency was < 10 ms (N = 13), as Inhibited if their firing rate was significantly lower during 10–30 ms after optogenetic stimulation than during the 50 ms preceding optogenetic onsets (N = 59), as Activated if their rate was significantly higher during 10–30 ms after optogenetic onset than during the pre-stimulus baseline (N = 137), and otherwise as Other (N = 700). The large size of this latter group could be explained by many cells being visually-responsive to the blue laser light. We chose a 10–30 ms window to compare the IFR peak/trough latencies of Activated and Inhibited cells, as 10 ms was the time of laser offset, and visual responses start to emerge in visual cortex after about 30–50 ms.
 
-## A Proof of Time-Invariance
+### A Proof of Time-Invariance
 
 We have described some properties of the ZETA-test in the main method section, but we have not yet explained what the function is of the mean-subtraction of δ in Equation 14. This step plays a critical role in ensuring that the ZETA-test is time-invariant: i.e., that the latency of a neuronal response with respect to the stimulus onset does not affect the statistical significance of the ZETA-test.
 
-We can see that this is the case if we have made a specific choice for the trial onsets, consisting of consecutive intervals of τ, and made a set of n spike times v1 to vn in the interval [0, τ]. First we rewrite Equations 1–4 as:(45)δi=in−viτ
+We can see that this is the case if we have made a specific choice for the trial onsets, consisting of consecutive intervals of τ, and made a set of n spike times v1 to vn in the interval [0, τ]. First we rewrite Equations 1–4 as:
 
-Recall that di = δi – 1 /n Σi δi (Equations 6; 7). Now, consider a shift of the trial onset times by Δ and let vk be the highest spike time smaller than Δ. This results in a new set of n spike times vi’:(46)vi′=vi+k−Δfor1≤i≤n−k(47)vi′=vi+k−n−Δ+τforn−k+1≤i≤n
+$$
+\delta_{i}=\frac{i}{n}−\frac{v_{i}}{\tau}
+$$
 
-Note that Equation 47 implies circular time with the recording wrapping back to the beginning at the end of all trials, which we assume here to keep n constant. If we define δi’, analogous to δi, and use Equation 46–47 we find:(48)δi′=δi+k−kn+Δτfor1≤i≤n−k(49)δi′=in−vi+k−n−Δ+ττ=δi+k−n−kn+Δτforn−k+1≤i≤n
+Recall that di = δi – 1 /n Σi δi (Equations 6; 7). Now, consider a shift of the trial onset times by Δ and let vk be the highest spike time smaller than Δ. This results in a new set of n spike times vi’:
 
-And if we subtract its mean, the constants are removed, and we get:(50)di′=di+kfor1≤i≤n−k(51)di′=di+k−nforn−k+1≤i≤n
+$$
+v_{i}^{′}=v_{i+k}−Δfor1\leqi\leqn−k
+$$
+
+
+
+$$
+v_{i}^{′}=v_{i+k−n}−Δ+\tauforn−k+1\leqi\leqn
+$$
+
+Note that Equation 47 implies circular time with the recording wrapping back to the beginning at the end of all trials, which we assume here to keep n constant. If we define δi’, analogous to δi, and use Equation 46–47 we find:
+
+$$
+\delta_{i}^{′}=\delta_{i+k}−\frac{k}{n}+\frac{Δ}{\tau}for1\leqi\leqn−k
+$$
+
+
+
+$$
+\delta_{i}^{′}=\frac{i}{n}−\frac{v_{i+k−n}−Δ+\tau}{\tau}=\delta_{i+k−n}−\frac{k}{n}+\frac{Δ}{\tau}forn−k+1\leqi\leqn
+$$
+
+And if we subtract its mean, the constants are removed, and we get:
+
+$$
+d_{i}^{′}=d_{i+k}for1\leqi\leqn−k
+$$
+
+
+
+$$
+d_{i}^{′}=d_{i+k−n}forn−k+1\leqi\leqn
+$$
 
 The set of d’i are thus identical to the set di except for a reordering. The maximum of the set |di| will therefore also be the maximum of the set |di’|. This means that it does not matter when the trial onsets are taken to compute ZETA. Note that this is not the case if δi is used instead of di.
 
 To illustrate this difference, we will now derive closed-form solutions for the expectation and variance of δi and di in the specific case of step-wise changing Poisson-distributed spiking rates. Note that this section serves only to illustrate the above derivation (Equation 45–51) for a specific case, so the reader may choose to skip the rest of this section without missing out on any particularly important comments.
 
-First, recall the base variables: we use v as a vector of spike times relative to stimulus onset, with the total onset-to-onset epoch duration defined as τ (see equation 1). We will set the neuron’s firing probability to be homogeneous with Poisson rate λ. Since exponentially distributed inter-spike intervals generate Poisson-distributed spike counts, we use:(52)S∼Exp(1λ)
+First, recall the base variables: we use v as a vector of spike times relative to stimulus onset, with the total onset-to-onset epoch duration defined as τ (see equation 1). We will set the neuron’s firing probability to be homogeneous with Poisson rate λ. Since exponentially distributed inter-spike intervals generate Poisson-distributed spike counts, we use:
 
-Therefore, spike time wi is:(53)wi=wi−1+Si
+$$
+S∼Exp(\frac{1}{\lambda})
+$$
 
-In the limit of large n, the incremental deviation D˙i from an exactly uniform spike-time distribution (i.e., 1/λ) is therefore:(54)D˙i=1λ−Si
+Therefore, spike time wi is:
 
-In reality, however, the rate λ^ is estimated from data that are limited by the observation window τ, number of trials m, and observed number of spikes n=mτλ^ . First we collapse all spikes over trials, following Equation 1, such that vn=τ. Then we normalize by τ to make vn = 1, which means that we now have:,(55)σ∼Exp(1mτλ^)=Exp(1n)
+$$
+w_{i}=w_{i−1}+S_{i}
+$$
 
-generating spike times(56)vi=vi-1+σi
+In the limit of large n, the incremental deviation $D˙_{i}$ from an exactly uniform spike-time distribution (i.e., 1/λ) is therefore:
 
-with incremental deviations.(57)δ˙i=1mτλ^−σi
+$$
+D˙_{i}=\frac{1}{\lambda}−S_{i}
+$$
 
-We can confirm this is correct by rewriting the total deviation δi at spike i as:(58)δi=∑j=1i(δ˙j)=imτλ^−vi=in−vi
+In reality, however, the rate $\lambda^$ is estimated from data that are limited by the observation window τ, number of trials m, and observed number of spikes $n=m\tau\lambda^$ . First we collapse all spikes over trials, following Equation 1, such that vn=τ. Then we normalize by τ to make vn = 1, which means that we now have:
 
-To compute a closed-form for the variance of d, we need the first and second central moments of δ (i.e., the mean and variance). δ depends on δ˙, the variance of which is:(59)Var[δ˙]=Var[Exp(1n)]=1n2
+$$
+\sigma∼Exp(\frac{1}{m\tau\lambda^})=Exp(\frac{1}{n})
+$$
 
-In the case for large n, each δ˙ is an exponential random variable. As δi is a sum over δ˙s, we can approximate its pdf as an Erlang distribution with scale parameter k equal to the spike number i:(60)Δi=∑j=1i(δ˙j)Δi∼Erlang(k=i,λ=1n)
+generating spike times
 
-The Erlang distribution is a special case of the gamma distribution with discrete parameters. An equivalent formulation is therefore:(61)Δi∼Γ(i,λ)
+$$
+v_{i}=v_{i-1}+\sigma_{i}
+$$
 
-However, we have so far ignored that δi is mean-zero and fixed at 0 at t = 0 and t = τ. For a Wiener process W, such fixed points are known as a Brownian bridge (Mansuy and Yor, 2008), which is described by:(62)B(t)=W(t)−tτW(τ)
+with incremental deviations
 
-However, since the underlying stochastic process in our case is not a standard normal, but gamma-distributed, we cannot directly apply the above equation. Instead, we found that with sufficiently large n, the behavior of δ is described by a weighted difference of two time-symmetric series of gammas (see Figure 2—figure supplement 1B). One series grows as Equation 60, whereas its symmetric counterpart shrinks as k = n-i:(63)δi=n−i2nΓ(i,λ)−i2nΓ(n−i,λ)
+$$
+\delta˙_{i}=\frac{1}{m\tau\lambda^}−\sigma_{i}
+$$
 
-The central moments of the difference between two gamma distributions are given by Klar, 2015:(64)μ=α1β1−α2β2(65)σ2=α1β12+α2β22
+We can confirm this is correct by rewriting the total deviation δi at spike i as:
 
-Where the subscripts indicate the two distributions and α1= k = i, α2= n - i, and β1 = β2 = 1/λ. Filling in the above parameters and weighting variables, we therefore get:(66)Eδi=n-i2niλ-i2nn-iλ=0(67)Var[δi]=n−i2niλ2+i2n(n−i)λ2=niλ2−i2λ2n
+$$
+\delta_{i}=\sumj=1i(\delta˙_{j})=\frac{i}{m\tau\lambda^}−v_{i}=\frac{i}{n}−v_{i}
+$$
+
+To compute a closed-form for the variance of d, we need the first and second central moments of δ (i.e., the mean and variance). δ depends on $\delta˙$, the variance of which is:
+
+$$
+Var[\delta˙]=Var[Exp(\frac{1}{n})]=\frac{1}{n^{2}}
+$$
+
+In the case for large n, each $\delta˙$ is an exponential random variable. As δi is a sum over $\delta˙_{s}$, we can approximate its pdf as an Erlang distribution with scale parameter k equal to the spike number i:
+
+$$
+Δ_{i}=\sumj=1i(\delta˙_{j})Δ_{i}∼Erlang(k=i,\lambda=\frac{1}{n})
+$$
+
+The Erlang distribution is a special case of the gamma distribution with discrete parameters. An equivalent formulation is therefore:
+
+$$
+Δ_{i}∼Γ(i,\lambda)
+$$
+
+However, we have so far ignored that δi is mean-zero and fixed at 0 at t = 0 and t = τ. For a Wiener process W, such fixed points are known as a Brownian bridge (Mansuy and Yor, 2008), which is described by:
+
+$$
+B(t)=W(t)−\frac{t}{\tau}W(\tau)
+$$
+
+However, since the underlying stochastic process in our case is not a standard normal, but gamma-distributed, we cannot directly apply the above equation. Instead, we found that with sufficiently large n, the behavior of δ is described by a weighted difference of two time-symmetric series of gammas (see Figure 2—figure supplement 1B). One series grows as Equation 60, whereas its symmetric counterpart shrinks as k = n-i:
+
+$$
+\delta_{i}=\frac{n−i}{2n}Γ(i,\lambda)−\frac{i}{2n}Γ(n−i,\lambda)
+$$
+
+The central moments of the difference between two gamma distributions are given by Klar, 2015:
+
+$$
+\mu=\frac{\alpha_{_{1}}}{\beta_{_{1}}}−\frac{\alpha_{_{2}}}{\beta_{_{2}}}
+$$
+
+
+
+$$
+\sigma^{2}=\frac{\alpha_{_{1}}}{\beta_{_{1}}^{^{2}}}+\frac{\alpha_{_{2}}}{\beta_{_{2}}^{^{2}}}
+$$
+
+Where the subscripts indicate the two distributions and α1= k = i, α2= n - i, and β1 = β2 = 1/λ. Filling in the above parameters and weighting variables, we therefore get:
+
+$$
+E\delta_{i}=\frac{n-i}{2n}i\lambda-\frac{i}{2n}n-i\lambda=0
+$$
+
+
+
+$$
+Var[\delta_{i}]=\frac{n−i}{2n}i\lambda^{2}+\frac{i}{2n}(n−i)\lambda^{2}=\frac{ni\lambda^{2}−i^{2}\lambda^{2}}{n}
+$$
 
 Now, we need to compute the variance over di, which is defined as the mean-subtracted δi.
 
-To simplify the following derivation, we will assume that time is circular (as in Equation 47) and that jittering does not strongly impact the number of spikes n, so we can we treat n as a fixed number of samples. As shown in Figure 2—figure supplement 1C, these assumptions allow accurate estimations. Now, we consider vk, 1≤k≤n taken from a uniform distribution on [0,1] and ordered such that v1≤v2≤…≤vn. We recognize the vk as the order statistics of the sample, for which the probability distribution is(68)pvk=n!n-k!k-1!vkk-11-vkn-k
+To simplify the following derivation, we will assume that time is circular (as in Equation 47) and that jittering does not strongly impact the number of spikes n, so we can we treat n as a fixed number of samples. As shown in Figure 2—figure supplement 1C, these assumptions allow accurate estimations. Now, we consider vk, $1\leqk\leqn$ taken from a uniform distribution on [0,1] and ordered such that $v_{1}\leqv_{2}\leq…\leqv_{n}$. We recognize the vk as the order statistics of the sample, for which the probability distribution is
 
-The expectation of vk and vk2 are given by(69)Evk=n!n-k!k-1!∫01dvkvkk1-vkn-k=kn+1(70)Evk2=n!n-k!k-1!∫01dvkvkk+11-vkn-k=kk+1n+2n+1
+$$
+pv_{k}=\frac{n!}{n-k!k-1!}v_{k}^{k-1}1-v_{k}^{n-k}
+$$
 
-Now, redefine(71)δi=in+1-vi
+The expectation of $v_{k}$ and $v_{k}^{2}$ are given by
 
-Then using Equation 69 and Equation 70, we find(72)Eδi=0(73)Eδi2=in-i+1n+12n+2
+$$
+Ev_{k}=\frac{n!}{n-k!k-1!}\int_{0}^{1}dv_{k}v_{k}^{k}1-v_{k}^{n-k}=\frac{k}{n+1}
+$$
 
-We find that the variance of δi is parabolic with respect to i, with its minimum at i=1 and i=n and its maxium at the middle between those points. The maximum of all δi is thus also more likely to at the middle δi than at the extremes.
 
-We define again(74)di=δi−δ¯
 
-with δ¯=1/nΣiδi. We know already that E(di2) is the same for all i, and we can thus write(75)E(di2)=1n∑kE(dk2)=1n∑kE(δk2)−E(δ¯2)
+$$
+Ev_{k}^{2}=\frac{n!}{n-k!k-1!}\int_{0}^{1}dv_{k}v_{k}^{k+1}1-v_{k}^{n-k}=\frac{kk+1}{n+2n+1}
+$$
 
-To compute E(δ¯2) , we need to know Eδiδj and therefore E(vivj). To compute Evivj for j>i, we can write vj=vi+xj-i and understand that xj-i follows the same order statistic distribution as vi except that there are now only n-i samples taken from an interval 0,1-vi and xj-i is the j-ith sample.(76)Evivj=Evivi+xj-i=ij+1n+1n+2
+Now, redefine
 
-Using this we see that forj>i(77)Eδiδj=Ein+1-vijn+1-vj=in-j+1n+12n+2
+$$
+\delta_{i}=\frac{i}{n+1}-v_{i}
+$$
 
-Then we find, after a long but straightforward calculation, that(78)E(δ2¯)=1n2∑i∑jE(δiδj)=1n2∑i=1n{∑j=1i−1E(δiδj)+∑j=inE(δiδj)}=112n
+Then using Equation 69 and Equation 70, we find
 
-And therefore(79)E(di2)=1n∑kE(δk2)−E(δ¯2)=16(n+1)−112n=n−112(n+1)n
+$$
+E\delta_{i}=0
+$$
+
+
+
+$$
+E\delta_{i}^{2}=\frac{in-i+1}{n+1^{2}n+2}
+$$
+
+We find that the variance of $\delta_{i}$ is parabolic with respect to i, with its minimum at $i=1$ and $i=n$ and its maxium at the middle between those points. The maximum of all $\delta_{i}$ is thus also more likely to at the middle $\delta_{i}$ than at the extremes.
+
+We define again
+
+$$
+d_{i}=\delta_{i}−\delta¯
+$$
+
+with $\delta¯=1/nΣ_{i}\delta_{i}$. We know already that $E(d_{i}^{2})$ is the same for all i, and we can thus write
+
+$$
+E(d_{i}^{2})=\frac{1}{n}\sumkE(d_{k}^{2})=\frac{1}{n}\sumkE(\delta_{k}^{2})−E(\delta¯^{2})
+$$
+
+To compute $E(\delta¯^{2})$ , we need to know $E\delta_{i}\delta_{j}$ and therefore $E(v_{i}v_{j})$. To compute $Ev_{i}v_{j}$ for $j>i$, we can write $v_{j}=v_{i}+x_{j-i}$ and understand that $x_{j-i}$ follows the same order statistic distribution as $v_{i}$ except that there are now only $n-i$ samples taken from an interval $0,1-v_{i}$ and $x_{j-i}$ is the j-ith sample.
+
+$$
+Ev_{i}v_{j}=Ev_{i}v_{i}+x_{j-i}=\frac{ij+1}{n+1n+2}
+$$
+
+Using this we see that for$j>i$
+
+$$
+E\delta_{i}\delta_{j}=E\frac{i}{n+1}-v_{i}\frac{j}{n+1}-v_{j}=\frac{in-j+1}{n+1^{2}n+2}
+$$
+
+Then we find, after a long but straightforward calculation, that
+
+$$
+E(\delta^{2}¯)=\frac{1}{n^{2}}\sumi\sumjE(\delta_{i}\delta_{j})=\frac{1}{n^{2}}\sumi=1n{\sumj=1i−1E(\delta_{i}\delta_{j})+\sumj=inE(\delta_{i}\delta_{j})}=\frac{1}{12n}
+$$
+
+And therefore
+
+$$
+E(d_{i}^{2})=\frac{1}{n}\sumkE(\delta_{k}^{2})−E(\delta¯^{2})=\frac{1}{6(n+1)}−\frac{1}{12n}=\frac{n−1}{12(n+1)n}
+$$
 
 Note that the dependence on i has disappeared: i.e., the variance of d is time-invariant; which is what we aimed to show. Also note that while we made various assumptions to simplify the above derivations, our theoretical solutions accurately predict simulated data (Figure 2—figure supplement 1); showing these assumptions have little impact on the results.
 

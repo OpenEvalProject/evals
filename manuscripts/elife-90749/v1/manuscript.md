@@ -10,8 +10,8 @@
 
 1. Departments of Genetics and Ophthalmology, Blavatnik Institute, Harvard Medical School Boston United States
 2. Lingang Laboratory Shanghai China
-3. https://ror.org/030bhh786 School of Life Science and Technology, ShanghaiTech University Shanghai China
-4. https://ror.org/006w34k90 Howard Hughes Medical Institute Boston United States
+3. School of Life Science and Technology, ShanghaiTech University Shanghai China ([ROR:030bhh786](https://ror.org/030bhh786))
+4. Howard Hughes Medical Institute Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -25,43 +25,65 @@ Retinitis pigmentosa (RP) is an inherited retinal degenerative disease that affe
 
 ## Results
 
-## Arrdc4 reduces rd1 cone survival
+### Arrdc4 reduces rd1 cone survival
 
 As TXNIP is a member of the α-arrestin protein family, we explored whether another family member might prolong RP cone survival. There are six known α-arrestins in mammals (Puca and Brou, 2014). Among them, arrestin domain-containing protein 4 (ARRDC4) is the closest to TXNIP in amino acid sequence, sharing ~60% similar amino acids with TXNIP (Figure 1A). ARRDC4 is thought to have functions that are similar to those of TXNIP in regulating glucose metabolism in vitro (Patwari et al., 2009). Like TXNIP and other α-arrestins, ARRDC4 is composed of three domains: a N-terminal arrestin (Arrestin N-) domain, a C-terminal arrestin (Arrestin C-) domain, and an intrinsically disordered region (IDR) at the C-terminus. Because an IDR lacks a stable 3D structure under physiological conditions, previous studies using crystallography did not reveal the full structure of the TXNIP protein (Hwang et al., 2014). None of the other α-arrestins have been characterized structurally. To begin to examine potential similarities in structure among some of these family members, we utilized an artificial intelligence (AI) algorithm, AlphaFold-2, to visualize the predicted 3D full structure of ARRDC4 (Jumper et al., 2021). Similar to TXNIP, ARRDC4 is predicted to have a ‘W’ shaped arrestin structure, which is composed of the Arrestin N- and C-domains, plus a long IDR which looks like a tail (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig1-v1.jpg)
 
-**Figure 1.:** (A) Amino acid sequences of mouse TXNIP and mouse ARRDC4. In the full-length alignment (421 amino acid), Identity: 172/421, 40.86%; Similarity: 246/421, 58.43%; Gaps: 28/421, 6.65%. Color code: identical, black; similar, blue; not similar, red. (B) Predicted 3D protein structures of mouse TXNIP and mouse ARRDC4 by artificial intelligence (AI) algorithm AlphaFold-2. Abbreviations: Arr N-, N-terminal arrestin domain; Arr C-, C-terminal arrestin domain. (C) Representative P50 rd1 flat-mounted retinas after P0 subretinal infection with AAV8-RO1.7-Arrdc4 (1×109 vg/eye), plus AAV8-RedO-H2BGFP (2.5×108 vg/eye), or control eyes infected with AAV8-RedO-H2BGFP, 2.5×108 vg/eye alone. (D) Quantification of H2BGFP-positive cones within the center of P50 rd1 retinas transduced with Arrdc4, and control (same as in C). The number in the round brackets ‘()’ indicates the number of retinas within each group. Error bar: standard deviation. Statistics: two-tailed unpaired Student’s t-test. **** p<or << 0.0001. RedO: red opsin promoter; RO1.7: a 1.7 kb version of red opsin promoter. AAV: adeno-associated virus.Figure 1—source data 1.Figure 1D.
+**Figure 1.:** (A) Amino acid sequences of mouse TXNIP and mouse ARRDC4. In the full-length alignment (421 amino acid), Identity: 172/421, 40.86%; Similarity: 246/421, 58.43%; Gaps: 28/421, 6.65%. Color code: identical, black; similar, blue; not similar, red. (B) Predicted 3D protein structures of mouse TXNIP and mouse ARRDC4 by artificial intelligence (AI) algorithm AlphaFold-2. Abbreviations: Arr N-, N-terminal arrestin domain; Arr C-, C-terminal arrestin domain. (C) Representative P50 rd1 flat-mounted retinas after P0 subretinal infection with AAV8-RO1.7-Arrdc4 (1×109 vg/eye), plus AAV8-RedO-H2BGFP (2.5×108 vg/eye), or control eyes infected with AAV8-RedO-H2BGFP, 2.5×108 vg/eye alone. (D) Quantification of H2BGFP-positive cones within the center of P50 rd1 retinas transduced with Arrdc4, and control (same as in C). The number in the round brackets ‘()’ indicates the number of retinas within each group. Error bar: standard deviation. Statistics: two-tailed unpaired Student’s t-test. **** p<or << 0.0001. RedO: red opsin promoter; RO1.7: a 1.7 kb version of red opsin promoter. AAV: adeno-associated virus.
 
 Arrdc4 was tested for its ability to prolong cone survival in rd1 mice using AAV-mediated gene delivery, as was done for Txnip previously (Xue et al., 2021). Expression of Arrdc4 was driven by a cone-specific promoter, RO1.7, derived from human red opsin (Krol et al., 2010; Wang et al., 1992; Ye et al., 2016). The vector was packaged into the AAV8 serotype capsid. AAV-Arrdc4 was injected sub-retinally into P0 rd1 mouse eyes along with AAV-H2BGFP, which is used to trace the infection and to label the cone nuclei for counting. At P50, the treated retinas were harvested and flat-mounted for further quantification of cones within the central retina, the area that first degenerates. Unlike Txnip, the cone counts were much lower in Arrdc4 treated retina relative to the AAV-H2BGFP control (Figure 1C and D).
 
-## Evaluation of cone survival using Txnip deletion alleles expressed in the RPE
+### Evaluation of cone survival using Txnip deletion alleles expressed in the RPE
 
 We previously showed (Xue et al., 2021) that overexpressing the Txnip wt allele in the RPE using an RPE-specific promoter, derived from the human BEST1 gene (Esumi et al., 2009), did not improve RP cone survival. The wt allele removes the glucose transporter from the plasma membrane, thus preventing the RPE from taking up glucose for its own metabolism, and preventing it from serving as a conduit for glucose to flow from the blood to the cones. However, a triple mutant, Txnip.C247S.LL351 and 352AA, improved cone survival when expressed only in the RPE (Xue et al., 2021). The C247S mutation eliminates the interaction with thioredoxin, and enhances the Txnip rescue when expressed in cones (Xue et al., 2021). The LL351 and 352AA mutations eliminate a clathrin-binding site, which is required for Txnip’s interaction with clathrin-coated pits for removal of GLUT1 from the cell surface (Wu et al., 2013). We previously proposed a model in which Txnip.C247S.LL351 and 352AA promotes the use of lactate by the RPE (Xue et al., 2021), as we found was the case when Txnip was expressed in cones. Although the RPE normally uses lactate in wt animals, in RP, it is hypothesized that it retains the glucose that it normally would deliver to cones (Reviewed in Hurley, 2021). The retention of glucose by the RPE is thought to be due to a reduction in lactate supply, as rods normally provide lactate for the RPE, and with rod loss that source would be greatly diminished. If the RPE can utilize lactate in RP, perhaps using lactate supplied by the blood, and the LL351 and 352AA mutation impairs the ability of TXNIP to remove the glucose transporter from the plasma membrane, this allele of Txnip may then allow glucose to flow from the blood to the cones via the GLUT1 transporter. The expression of Txnip.C247S.LL351 and 352AA allele thus has the potential to address the proposed glucose shortage of RP cones. However, we noted two caveats. One is that the survival of cones was not as robust as when Txnip was expressed directly in cones. In addition, the rd1 retina in the FVB strain used here, even without any treatment, shows holes in the cone layer, which appear as ‘craters.’ An RP rat model presents a similar pattern (Ji et al., 2014; Ji et al., 2012; Zhu et al., 2013). When Txnip.C247S.LL351 and 352AA are expressed in the RPE, there are more craters in the photoreceptor layer. We note that these craters are common only in the rd1 allele on the FVB background, i.e., not as common on other inbred mouse strains that also harbor the rd1 allele, so the meaning of this observation is unclear.
 
 Arrestins are well-known for their protein-protein interactions via different domains. Different regions of TXNIP are known to directly associate with different protein partners to affect several different functions. For example, the N-terminus is sufficient to interact with KPNA2 for TXNIP’s localization to the nucleus (Nishinaka et al., 2004), while the C-terminus of TXNIP is critical for interactions with COPS5, to inhibit cancer cell proliferation (Jeon et al., 2005). The C-terminus of TXNIP is also necessary for inhibition of glycolysis, at least in vitro, through an unclear mechanism (Patwari et al., 2009). Based on these studies, we made several deletion alleles of Txnip, and expressed them in the RPE using the Best1 promoter. We assayed their ability to clear GLUT1 from the RPE surface (Figure 2A), as well as promote cone survival (Figure 2B–G). To enable automated cone counting and trace the infection, we co-injected an AAV (AAV8-RedO-H2BGFP-WPRE-bGHpA) encoding an allele of GFP fused to histone 2B (H2BGFP), which localized to the nucleus. As the red opsin promoter was used to express this gene, H2BGFP was seen in cone nuclei, but not in the RPE, if AAV8-RedO-H2BGFP-WPRE-bGHpA was injected alone. However, when an AAV that expressed in the RPE, i.e., AAV8-Best1-Sv40intron-(Gene)-WPRE-bGHpA, was co-injected with AAV8-RedO-H2BGFP-WPRE-bGHpA, H2BGFP was expressed in the RPE, along with expression in cones (Figure 2A). We speculate that this is due to concatenation or recombination of the two genomes, such that the H2BGFP comes under the control of the RPE promoter. This may be due to the high copy number of AAV in the RPE, as it did not happen in the reverse combination, i.e., AAV with an RPE promoter driving GFP and a cone promoter driving another gene. It was previously observed that the AAV genome copy number was »10 fold lower in cones than in the RPE (Wang et al., 2020).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig2-v1.jpg)
+
+**Figure 2.:** (A) Glucose transporter 1 (GLUT1) expression in P20 wild-type eyes infected with control (AAV8-RedO-H2BGFP, 2.5×108 vg/eye), or a Txnip allele (2.5×108 vg/eye) plus RedO-H2BGFP (2.5×108 vg/eye), as indicated in each panel. Txnip deletions are detailed in Figure 4. GLUT1 intensity from basal RPE is quantified in Figure 2—figure supplement 1. Magenta: GLUT1; green: RedO-H2BGFP for infection tracing; gray: DAPI. (B, D, F) Representative P50 rd1 flat-mounted retinas after P0 infection with one of seven different Txnip alleles expressed only within the RPE, as indicated in the figure, or control eyes infected with AAV8-RedO-H2BGFP, 2.5×108 vg/eye alone. (C, E, G) Quantification of H2BGFP-positive cones within the center of P50 rd1 retinas transduced with indicated vectors, as shown in B, D, F. The number in the round brackets ‘()’ indicates the number of retinas within each group. Error bar: standard deviation. Statistics: ANOVA and Dunnett’s multiple comparison test for C and E; two-tailed unpaired Student’s t-test for G. C.Txnip.CS: C-terminal portion of Txnip.C247S; C.Txnip.CS.LLAA: C-terminal portion of Txnip.C247S.LL351 and 352AA; nt.Txnip.CS320: no tail Txnip (1-320aa). NS: not significant, p>0.05, *p<0.05, **p<0.01, ****p<or << 0.0001. Best1: Best1 promoter.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** GLUT1 expression in P20 wild-type (wt) eyes infected with control (AAV8-RedO-H2BGFP, 2.5×108 vg/eye), or a Txnip allele (2.5×108 vg/eye) plus RedO-H2BGFP (2.5×108 vg/eye), as indicated in each panel. Txnip deletions are detailed in Figure 4. Wt Txnip (red group) and Txnip.C247S.LLAA (blue group) were published previously (Xue et al., 2021), and are repeated here using the same conditions as in this study for comparison to the new alleles. Only regions that were infected, as indicated by the H2BGFP marker that was co-injected, were analyzed. GLUT1 intensity from regions of interest (ROIs) within the basal RPE was quantified. Red: GLUT1; green: RedO-H2BGFP for infection tracing; gray: DAPI. Arrows: RPE basal surface. Sample size: control, 26 ROIs from four eyes; Txnip.C247S, nine ROIs from three eyes; N.Txnip, 36 ROIs from six eyes; sC.Txnip, 10 ROIs from six eyes; C.Txnip.CS, 13 ROIs from three eyes, C.Txnip.CS.LLAA, seven ROIs from three eyes; nt.Txnip.CS320, 14 ROIs from four eyes; wt Txnip, 11 ROIs from four eyes; Txnip.CS.LLAA, 21 ROIs from four eyes. Error bar: standard deviation. Statistics: Mann-Whitney U Test compared to control with Bonferroni correction. NS: not significant, ***p<0.001, ****p<or << 0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig2-figsupp2-v1.jpg)
+
 To assay GLUT1, we focused on the basal surface of the RPE, as it is easier to score than the apical surface, where its processes are intertwined with those of the retina, where GLUT1 is also expressed. The 149-397aa portion of Txnip.C247S (C.Txnip.C247S) had the highest activity for GLUT1 removal from the RPE basal surface in vivo, while the 1-228aa portion (N.Txnip) failed to remove GLUT1 (Figure 2A and Figure 2—figure supplement 1). As predicted by ColabFold, an AI algorithm based on AlphaFold-2 (Mirdita et al., 2022), the Arrestin C-domain, which is part of C.Txnip.C247S, but is not present in the N-domain of TXNIP, interacts with the intracellular C-terminal IDR of GLUT1 (Figure 2—figure supplement 2). These results are consistent with these predictions, in that the C-terminal portion of TXNIP is sufficient to bind and clear GLUT1 from cell surface, while the N-domain is not.
 
 Cone survival was assayed in vivo following infection of rd1 with these missense and deletion alleles at P0 and sacrifice at P50 (Figure 2B–G). Similar to Best1-wt Txnip (Xue et al., 2021), Best1-Txnip.C247S did not show significant improvement of cone survival, ruling out the C247S mutation alone as promoting the cone survival by Best1-Txnip.C247S.LL351 and 352AA. In addition, Best1-N.Txnip (1-228aa) and Best1-sC.Txnip (255-397aa, sC: short C-) failed to improve cone survival. However, Best1-C.Txnip.C247S (149-397aa), Best1-C.Txnip.C247S.LL351 and 352AA (149-397aa), and Best1-nt.Txnip.C247S320 (1-320aa, nt: no-tail) promoted significant cone survival compared to the corresponding control retinas. Best1-N.Txnip and Best1-sC.Txnip-treated rd1 retina did not have increased numbers of craters, while all other vectors increased the number of craters. These results suggest that the C-terminal portion of TXNIP expressed in the RPE is required for RP cone survival, for a function(s) that is unrelated to the removal of GLUT1, or to the mechanism that leads to an increase in craters.
 
-## Evaluation of Txnip deletion alleles for autonomous cone survival
+### Evaluation of Txnip deletion alleles for autonomous cone survival
 
 Our previous study used the human red opsin promoter, ‘RedO,’ in AAV to drive the expression of Txnip in rd1 cones, with a low level of expression in some rods. This same strategy was used to evaluate whether the aforementioned deletion alleles of Txnip could prolong cone survival. Neither N.Txnip (1-228aa) nor C.Txnip.C247S (149-397aa) promoted significant improvement in rd1 cone survival. However, nt.Tnxip.C247S301 (1-301aa) and nt.Txnip.C247S320 (1-320aa) promoted survival of rd1 cones: 47% and 63% more cones than the control GFP virus, respectively (Figure 3A and B). In comparison, the full-length Txnip.C247S promoted an increase of 97% in cones in our previous study (Xue et al., 2021). These results show that the full-length Txnip provides the most benefit in terms of RP cone survival. To determine if expression of this allele might give increased survival when expressed in both the RPE and in cones, we used a CMV promoter to drive expression, as CMV expresses highly in both cell types (Xiong et al., 2015). CMV-Txnip.C247S provided a 38% rescue (Figure 3A and C), which is lower than RedO-Txnip.C247S (97%) alone. These and previous results are summarized in Figure 4.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig3-v1.jpg)
 
-**Figure 3.:** Txnip alleles on cone survival.(A) Representative P50 rd1 flat-mounted retinas after P0 infection with 1 of 5 different Txnip alleles (AAV8-RedO- N.Txnip /C.Txnip.C247S/ nt.Txnip.C247S1-301/nt.Txnip.C247S1-320 or AAV8-CMV-Txnip.C247S, ≈1×109 vg/eye, plus AAV8-RedO-H2BGFP, 2.5×108 vg/eye), or control eyes infected with AAV8-RedO-H2BGFP, 2.5×108 vg/eye alone. (B, C) Quantification of H2BGFP-positive cones within the center of P50 rd1 retinas transduced with AAV8-RedO- N.Txnip /C.Txnip.C247S/ nt.Txnip.C247S1-301/nt.Txnip.C247S1-320 or AAV8-CMV-Txnip.C247S, and control (same as in A). The number in the round brackets ‘()’ indicates the number of retinas within each group. Error bar: standard deviation. Statistics: ANOVA and Dunnett’s multiple comparison test for B; two-tailed unpaired Student’s t-test for C. NS: not significant, ****p<or << 0.0001.Figure 3—source data 1.Figure 3B and C.
+**Figure 3.:** (A) Representative P50 rd1 flat-mounted retinas after P0 infection with 1 of 5 different Txnip alleles (AAV8-RedO- N.Txnip /C.Txnip.C247S/ nt.Txnip.C247S1-301/nt.Txnip.C247S1-320 or AAV8-CMV-Txnip.C247S, ≈1×109 vg/eye, plus AAV8-RedO-H2BGFP, 2.5×108 vg/eye), or control eyes infected with AAV8-RedO-H2BGFP, 2.5×108 vg/eye alone. (B, C) Quantification of H2BGFP-positive cones within the center of P50 rd1 retinas transduced with AAV8-RedO- N.Txnip /C.Txnip.C247S/ nt.Txnip.C247S1-301/nt.Txnip.C247S1-320 or AAV8-CMV-Txnip.C247S, and control (same as in A). The number in the round brackets ‘()’ indicates the number of retinas within each group. Error bar: standard deviation. Statistics: ANOVA and Dunnett’s multiple comparison test for B; two-tailed unpaired Student’s t-test for C. NS: not significant, ****p<or << 0.0001.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig4-v1.jpg)
 
-**Figure 4.:** Txnip in this and previous study (Xue et al., 2021).‘Retinal pigmented epithelium (RPE) Glucose transporter 1 (GLUT1) Removal’ refers to the amount of GLUT1 immunohistochemical signal on the basal surface following expression in the RPE using the Best1 promoter. ‘Cone Rescue: Expression in RPE’ refers to cone rescue following expression only in the RPE using the Best1 promoter. ‘Cone Rescue: Expression in Cones’ is due to expression only in cone photoreceptors using the RedO promoter. Abbreviations: Y (x%): Yes with x% increase compared to AAV-H2BGFP control; N: No; NT: Not tested. N.TXNIP, N-terminal portion of TXNIP; C.TXNIP.C247S, C-terminal portion of TXNIP.C247S mutant allele; sC.TXNIP: a shorter version of C-terminal portion of TXNIP; nt.TXNIP.C247S, no tail version TXNIP.C247S mutant allele; Arrestin N-, N-terminal arrestin domain; Arrestin C-, C-terminal arrestin domain; PPxY, a motif where P is proline, x is any amino acid and Y is tyrosine.
+**Figure 4.:** ‘Retinal pigmented epithelium (RPE) Glucose transporter 1 (GLUT1) Removal’ refers to the amount of GLUT1 immunohistochemical signal on the basal surface following expression in the RPE using the Best1 promoter. ‘Cone Rescue: Expression in RPE’ refers to cone rescue following expression only in the RPE using the Best1 promoter. ‘Cone Rescue: Expression in Cones’ is due to expression only in cone photoreceptors using the RedO promoter. Abbreviations: Y (x%): Yes with x% increase compared to AAV-H2BGFP control; N: No; NT: Not tested. N.TXNIP, N-terminal portion of TXNIP; C.TXNIP.C247S, C-terminal portion of TXNIP.C247S mutant allele; sC.TXNIP: a shorter version of C-terminal portion of TXNIP; nt.TXNIP.C247S, no tail version TXNIP.C247S mutant allele; Arrestin N-, N-terminal arrestin domain; Arrestin C-, C-terminal arrestin domain; PPxY, a motif where P is proline, x is any amino acid and Y is tyrosine.
 
-## Inhibiting Hsp90ab1 prolongs rd1 cone survival
+### Inhibiting Hsp90ab1 prolongs rd1 cone survival
 
 To further investigate the potential mechanism(s) of cone survival induced by Txnip, we considered the list of protein interactors that were identified in HEK293 cells using biotinylated protein interaction pull-down assay plus mass spectrometry (Forred et al., 2016). Forred et al. identified a subset of proteins that interact with Txnip.C247S, the mutant that provides better cone rescue than the wt Txnip allele (Xue et al., 2021). As we found that Txnip promotes the use of lactate in cones, and improves mitochondrial morphology and function, we looked for TXNIP interactors that are relevant to mitochondria. We identified two candidates, PARP1 and HSP90AB1. PARP1 mutants have been shown to protect mitochondria under stress (Hocsak et al., 2017; Szczesny et al., 2014). Accordingly, in our previous study, we crossed the null PARP1 mice with rd1 mice, to ask if mitochondrial improvements alone were sufficient to induce cone rescue. We found that it was not. In our current study, we thus prioritized HSP90AB1 inhibition, which had been shown to improve skeletal muscle mitochondrial metabolism in a diabetes mouse model (Jing et al., 2018).
 
 Three shRNAs targeting different regions of the mRNA of Hsp90ab1 (shHsp90ab1) were delivered by AAV into the retinas of wt mice. Knock-down was evaluated using an AAV encoding a FLAG-tagged HSP90AB1 that was co-injected with the AAV-shRNA. All three shRNAs reduced the HSP90AB1-FLAG signal compared to the shNC, the non-targeting control shRNA (Figure 5A and B), suggesting that they are able to inhibit the expression of HSP90AB1 protein in vivo. The promotion of cone survival was then tested in rd1 mice using these shRNA constructs. The two shRNAs with the most activity in reducing the FLAG-tagged HSP90AB1 signal, shHsp90ab1(#a), and shHsp90ab1(#c), were found to increase the survival of rd1 cones at P50 (Figure 5C and D). To determine if this effect was capable of increasing the Txnip rescue, the shRNAs were co-injected with Txnip.C247S. A slight additive effect of shHsp90ab1 and Txnip.C247S was observed (Figure 5E and F). We also asked if there might be an effect of the knock-down of Hsp90ab1 on a Parp1 loss of function background. We did not observe any rescue effect of the shRNAs on this background (Figure 5G and H).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig5-v1.jpg)
+
+**Figure 5.:** (A) AAV8-RO1.7-Hsp90ab1-FLAG (1×109 vg/eye) co-injected with shNC (non-targeting shRNA control, AAV8-RedO-shRNA, 1×109 vg/eye) or co-injected with Hsp90ab1 shRNAs #a, #b, #c (AAV8-RedO-shRNA, 1×109 vg/eye) in P20 wild-type (wt) retina, all also injected with AAV8-RedO-H2BGFP (2.5×108 vg/eye) to track the infection. Magenta: anti-FLAG; green: anti-GFP; gray: DAPI. Right panel: (B) The quantification of FLAG intensity from multiple fields of inner segment regions in A. The number in the square brackets ‘[]’ indicates the number of images taken from regions of interest of one retina, in each condition. (C) Representative P50 rd1 flat-mounted retinas injected with shNC, shHsp90ab1(#a), shHsp90ab1(#b), or shHsp90ab1(#c) (AAV8-RedO-shRNAs, 1×109 vg/eye, plus AAV8-RedO-H2BGFP, 2.5×108 vg/eye). (D) Quantification of H2BGFP-positive cones within the center of P50 rd1 retinas transduced with shNC, shHsp90ab1(#a, #b, #c) (same as in C). (E) Representative P50 rd1 flat-mounted retinas with H2BGFP (gray)-labeled cones transduced with Txnip.C247S or Txnip.C247S+shHsp90ab1 (AAV8-RedO-Txnip.C247S, 1×109 vg/eye; AAV8-RO1.7-shHsp90ab1(#a or #c), 1×109 vg/eye; plus AAV8-RedO-H2BGFP, 2.5×108 vg/eye). (F) Quantification of H2BGFP-positive cones within the center of P50 rd1 retinas transduced with Txnip.C247S or Txnip.C247S+shHsp90ab1 (same as in E). (G) Representative P50 Parp1-/- rd1 flat-mounted retinas with H2BGFP (gray)-labeled cones transduced with shNC (non-targeting shRNA control, AAV8-RedO-shRNA, 1×109 vg/eye; plus AAV8-RedO-H2BGFP, 2.5×108 vg/eye) or shHsp90ab1 (AAV8-RedO-shRNA #a or #c, 1×109 vg/eye; plus AAV8-RedO-H2BGFP, 2.5×108 vg/eye). (H) Quantification of H2BGFP-positive cones within the center of P50 Parp1-/- rd1 retinas transduced with shNC or shHsp90ab1 (same as in G). Error bar: standard deviation. Statistics: ANOVA and Dunnett’s multiple comparison test for B and D; two-tailed unpaired Student’s t-test for F and H. NS: not significant, p>0.05, *p<0.05, **p<0.01, ***p<0.001 ****p<or << 0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Predicted 3D protein structures of HSP90AB1 by AI algorithm AlphaFold-2 from two angles of view. (B) Predicted 3D protein structures of PARP1 by AI algorithm AlphaFold-2 from two angles of view.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/90749/elife-90749-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Abbreviations: Arr C-, C-terminal arrestin domain.
 
 ## Discussion
 
@@ -80,5 +102,71 @@ Regarding potential protein interactions beyond the glucose transporter, the int
 Here, we found that sh-mediated knock-down of Hsp90ab1 enhanced cone survival in rd1 mice. This rescue seems to be dependent on PARP1, another binding partner of wt TXNIP and Txnip.C247S (Forred et al., 2016). As shown by PARP1 knock-out mice, PARP1 is deleterious to mitochondrial heath under stressful conditions (Hocsak et al., 2017; Szczesny et al., 2014; Xue et al., 2021). When we examined a possible rescue effect of PARP1 loss on rd1 cone survival, we did not see a benefit, indicating that the TXNIP-mediated rescue is not due solely to its beneficial effects on mitochondria, nor does TXNIP-mediated rescue rely upon PARP1 (Xue et al., 2021). These results indicate that the Txnip rescue is more complex than inhibition of HSP90AB1, and a PARP1-independent mechanism is involved. It is possible that HSP90AB1 directly interacts with PARP1, and this interaction is critical for shHsp90ab1 to benefit RP cones. We looked into the predicted 3D structures of HSP90AB1 and PARP1 using AlphaFold-2 (Figure 5—figure supplement 1), but did not gain additional insight into such interactions. We also explored AlphaFold Multimer, which is an algorithm predicting the interaction of multiple proteins based upon AlphaFold-2 (Evans et al., 2021), and noticed that the Arrestin-C domain of TXNIP linked PARP1 and HSP90AB1 together in one of the predicted models (Figure 5—figure supplement 2). Despite the unclear mechanism, combining Hsp90ab1 inhibition with Txnip.C247S could be a potential combination therapy to maximize the protection of RP cones.
 
 ## Materials and methods
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>GLUT1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab115730</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Arrdc4 cDNA</td>
+      <td>GeneCopoeia</td>
+      <td>Cat. #: Mm26972 NCBI: NM_001042592.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Hsp90ab1 cDNA</td>
+      <td>GeneCopoeia</td>
+      <td>Cat. #: Mm03161 NCBI: NM_008302.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein 3D structure prediction</td>
+      <td>AlphaFold-2</td>
+      <td>TXNIP (M. musculus); ARRDC4 (M. musculus); HSP90AB1 (M. musculus); PARP1 (M. musculus)</td>
+      <td>Jumper et al., 2021;https://alphafold.ebi.ac.uk</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein 3D interaction prediction</td>
+      <td>ColabFold</td>
+      <td>AlphaFold2_mmseqs2</td>
+      <td>Mirdita et al., 2022;Ovchinnikov, 2021;https://github.com/sokrypton/colabfold</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein 3D interaction prediction</td>
+      <td>COSMIC2</td>
+      <td>AlphaFold2 – Multimer</td>
+      <td>Evans et al., 2021;http://cosmic-cryoem.org/tools/alphafoldmultimer/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein 3D structure viewer</td>
+      <td>RCSB PDB</td>
+      <td>Mol* 3D Viewer</td>
+      <td>To visualize the 3D structure of proteins in.pdb files https://www.rcsb.org/3d-view</td>
+    </tr>
+  </tbody>
+</table>
 
 The material and methods in this study are similar to those used in our previous study (Xue et al., 2021). The cone number of the central retina is defined as the counts of H2BGFP-positive cells within the central portion of the retina. New reagents and algorithms used in this study are listed in the Key resources table above. Txnip deletion alleles were cloned from the Txnip plasmid using Gibson assembly (Figure 4). The following sense strand sequences were used to knock down the Hsp90ab1: shHsp90ab1(#a) 5′- GCATCTACCGCATGATTAAAC-3′; shHsp90ab1(#b) 5′- CCAGAAGTCCATCTACTATAT-3′; shHsp90ab1(#c) 5′- CCTGAGTACCTCAACTTTATC-3′. In almost all experiments, other than as noted, one eye of the mouse was treated with control (AAV8-RedO-H2BGFP, 2.5×108 vg/eye), and the other eye was treated with the experimental vector plus AAV8-RedO-H2BGFP, 2.5×108 vg/eye. For RPE basal surface GLUT1 quantification, multiple regions of interest (ROI) were selected from at least three eyes of each condition, and the mean intensity of the ROI was measured using ImageJ software. Statistics are listed in each figure legend.

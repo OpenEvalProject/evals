@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.27860.001 Recent functional, proteomic and ribosome profiling studies in eukaryotes have concurrently demonstrated the translation of alternative open-reading frames (altORFs) in addition to annotated protein coding sequences (CDSs). We show that a large number of small proteins could in fact be coded by these altORFs. The putative alternative proteins translated from altORFs have orthologs in many species and contain functional domains. Evolutionary analyses indicate that altORFs often show more extreme conservation patterns than their CDSs. Thousands of alternative proteins are detected in proteomic datasets by reanalysis using a database containing predicted alternative proteins. This is illustrated with specific examples, including altMiD51, a 70 amino acid mitochondrial fission-promoting protein encoded in MiD51 / Mief1 / SMCR7L , a gene encoding an annotated protein promoting mitochondrial fission. Our results suggest that many genes are multicoding genes and code for a large protein and one or several small proteins.
+Recent functional, proteomic and ribosome profiling studies in eukaryotes have concurrently demonstrated the translation of alternative open-reading frames (altORFs) in addition to annotated protein coding sequences (CDSs). We show that a large number of small proteins could in fact be coded by these altORFs. The putative alternative proteins translated from altORFs have orthologs in many species and contain functional domains. Evolutionary analyses indicate that altORFs often show more extreme conservation patterns than their CDSs. Thousands of alternative proteins are detected in proteomic datasets by reanalysis using a database containing predicted alternative proteins. This is illustrated with specific examples, including altMiD51, a 70 amino acid mitochondrial fission-promoting protein encoded in MiD51/Mief1/SMCR7L, a gene encoding an annotated protein promoting mitochondrial fission. Our results suggest that many genes are multicoding genes and code for a large protein and one or several small proteins.
 
 ## Introduction
 
@@ -49,45 +49,205 @@ Functional annotation of ORFs encoding small proteins is particularly challengin
 
 We systematically reanalyzed several eukaryotic transcriptomes to annotate previously unannotated ORFs which we term alternative ORFs (altORFs), and we annotated the corresponding hidden proteome. Here, altORFs are defined as potential protein-coding ORFs in ncRNAs, in UTRs or in different reading frames from annotated CDSs in mRNAs (Figure 1a). For clarity, predicted proteins translated from altORFs are termed alternative proteins and proteins translated from annotated CDSs are termed reference proteins.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig1-v2.jpg)
+
+**Figure 1.:** (a) AltORF nomenclature. AltORFs partially overlapping the CDS must be in a different reading frame. (b) Pipeline for the identification of altORFs. (c) Size distribution of alternative (empty bars, vertical and horizontal axes) and reference (grey bars, secondary horizontal and vertical axes) proteins. Arrows indicate the median size. The median alternative protein length is 45 amino acids (AA) compared to 460 for the reference proteins. (d) Distribution of altORFs in the human hg38 transcriptome. (e, f) Number of total altORFs (e) or number of altORFs/10kbs (f) in hg38 compared to shuffled hg38. Means and standard deviations for 100 replicates obtained by sequence shuffling are shown. Statistical significance was determined by using one sample t-test with two-tailed p-values. ****p<0.0001. (g) Percentage of altORFs with an optimal Kozak motif. The total number of altORFs with an optimal Kozak motif is also indicated at the top.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** While more than half of the human genome is composed of repeated sequences, only 9.83% or 18,003 altORFs are located inside these repeats (a), compared to 2,45% or 1,677 CDSs (b). AltORFs and CDSs are detected in non-LTR retrotransposons (LINEs, SINEs, SINE-VNTR-Alus), LTR repeats, DNA repeats, satellites and other repeats. Proportions were determined using RepeatMasker (version 3.3.0).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Percentage of altORFs with a TIS within an optimal Kozak sequence in hg38 (dark blue) compared to 100 shuffled hg38 (light blue). Mean and standard deviations for sequence shuffling are displayed, and significant difference was defined by using one sample t-test. ****p<0.0001. Note that shuffling all transcripts in the hg38 transcriptome generates a total of 489,073 altORFs on average, compared to 539,134 altORFs in hg38. Most transcripts result from alternative splicing and there are 183,191 unique altORFs in the hg38 transcriptome, while the 489,073 altORFs in shuffled transcriptomes are all unique. Figure 1g shows the percentage of unique altORFs with a kozak motif (15%), while the current figure shows the percentage of altORFs with a kozak motif relative to the total number of altORFs (14%).
+
 Our goal was to provide functional annotations of alternative proteins by (1) analyzing relative patterns of evolutionary conservation between alternative and reference proteins and their corresponding coding sequences; (2) estimating the prevalence of alternative proteins both by bioinformatics analysis and by detection in large experimental datasets; (3) detecting functional signatures in alternative proteins; and (4) testing the function of some alternative proteins.
 
 ## Results
 
-## Prediction of altORFs and alternative proteins
+### Prediction of altORFs and alternative proteins
 
 We predicted a total of 539,134 altORFs compared to 68,264 annotated CDSs in the human transcriptome (Figure 1b, Table 1). Because identical ORFs can be present in different RNA isoforms transcribed from the same genomic locus, the number of unique altORFs and CDSs becomes 183,191 and 54,498, respectively. AltORFs were also predicted in other organisms for comparison (Table 1). By convention, only reference proteins are annotated in current protein databases. As expected, altORFs are on average small, with a size ranging from 30 to 1480 codons. Accordingly, the median size of predicted human alternative proteins is 45 amino acids compared to 460 for reference proteins (Figure 1c), and 92.96% of alternative proteins have less than 100 amino acids. Thus, the bulk of the translation products of altORFs would be small proteins. The majority of altORFs either overlap annotated CDSs in a different reading frame (35.98%) or are located in 3’UTRs (40.09%) (Figure 1d). 9.83% of altORFs are located in repeat sequences (Figure 1—figure supplement 1a), compared to 2.45% of CDSs. To assess whether observed altORFs could be attributable solely to random occurrence, due for instance to the base composition of the transcriptome, we estimated the expected number of altORFs generated in 100 shuffled human transcriptomes. Overall, we observed 62,307 more altORFs than would be expected from random occurrence alone (Figure 1e; p<0.0001). This analysis suggests that a large number are expected by chance alone but that at the same time, a large absolute number could potentially be maintained and be functional. The density of altORFs observed in the CDSs, 3’UTRs and ncRNAs (Figure 1f) was markedly higher than in the shuffled transcriptomes, suggesting that these are maintained at frequencies higher than expected by chance, again potentially due to their coding function. In contrast, the density of altORFs observed in 5’UTRs was much lower than in the shuffled transcriptomes, supporting recent claims that negative selection eliminates AUGs (and thus the potential for the evolution of altORFs) in these regions (Iacono et al., 2005; Neafsey and Galagan, 2007).
 
+**Table 1.**
+ AltORF and alternative protein annotations in different organisms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genomes</th>
+      <th colspan="6">Features</th>
+    </tr>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Transcripts</th>
+      <th colspan="2">Current annotations</th>
+      <th colspan="2">Annotations of alternative protein coding sequences</th>
+    </tr>
+    <tr>
+      <th>mRNAs</th>
+      <th>Others1*</th>
+      <th>CDSs</th>
+      <th>Proteins</th>
+      <th>AltORFs</th>
+      <th>Alternative proteins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H. sapiens GRCh38 RefSeq GCF_000001405.26</td>
+      <td>67,765</td>
+      <td>11,755</td>
+      <td>68,264</td>
+      <td>54,498</td>
+      <td>539,134</td>
+      <td>183,191</td>
+    </tr>
+    <tr>
+      <td>P. troglodytes 2.1.4 RefSeq GCF_000001515.6</td>
+      <td>55,034</td>
+      <td>7527</td>
+      <td>55,243</td>
+      <td>41,774</td>
+      <td>416,515</td>
+      <td>161,663</td>
+    </tr>
+    <tr>
+      <td>M. musculus GRCm38p2, RefSeq GCF_000001635.22</td>
+      <td>73,450</td>
+      <td>18,886</td>
+      <td>73,55 1</td>
+      <td>53,573</td>
+      <td>642,203</td>
+      <td>215,472</td>
+    </tr>
+    <tr>
+      <td>B. Taurus UMD3.1.86</td>
+      <td>22,089</td>
+      <td>838</td>
+      <td>22,089</td>
+      <td>21,915</td>
+      <td>79,906</td>
+      <td>73,603</td>
+    </tr>
+    <tr>
+      <td>X. tropicalis Ensembl JGI_4.2</td>
+      <td>28,462</td>
+      <td>4644</td>
+      <td>28,462</td>
+      <td>22,614</td>
+      <td>141,894</td>
+      <td>69,917</td>
+    </tr>
+    <tr>
+      <td>D. rerio Ensembl ZV10.84</td>
+      <td>44,198</td>
+      <td>8196</td>
+      <td>44,198</td>
+      <td>41,460</td>
+      <td>214,628</td>
+      <td>150,510</td>
+    </tr>
+    <tr>
+      <td>D. melanogaster RefSeq GCA_000705575.1</td>
+      <td>30,255</td>
+      <td>3474</td>
+      <td>30,715</td>
+      <td>20,995</td>
+      <td>174,771</td>
+      <td>71,705</td>
+    </tr>
+    <tr>
+      <td>C. elegans WBcel235, RefSeq GCF_000002985.6</td>
+      <td>28,653</td>
+      <td>25,256</td>
+      <td>26,458</td>
+      <td>25,750</td>
+      <td>131,830</td>
+      <td>45,603</td>
+    </tr>
+    <tr>
+      <td>S. cerevisiae YJM993_v1, RefSeq GCA_000662435.1</td>
+      <td>5471</td>
+      <td>1463</td>
+      <td>5463</td>
+      <td>5423</td>
+      <td>12,401</td>
+      <td>9492</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Other transcripts include miRNAs, rRNAs, ncRNAs, snRNAs, snoRNAs, tRNAs.†Annotated retained-intron and processed transcripts were classified as mRNAs._
+
 Although the majority of human annotated CDSs do not have a TIS with a Kozak motif (Figure 1g) (Smith et al., 2005), there is a correlation between a Kozak motif and translation efficiency (Pop et al., 2014). We find that 27,539 (15% of 183,191) human altORFs encoding predicted alternative proteins have a Kozak motif (A/GNNAUGG), as compared to 19,745 (36% of 54,498) for annotated CDSs encoding reference proteins (Figure 1g). The number of altORFs with Kozak motifs is significantly higher in the human transcriptome compared to shuffled transcriptomes (Figure 1—figure supplement 2), again supporting their potential role as protein coding.
 
-## Conservation analyses
+### Conservation analyses
 
 Next, we compared evolutionary conservation patterns of altORFs and CDSs. A large number of human alternative proteins have homologs in other species. In mammals, the number of homologous alternative proteins is higher than the number of homologous reference proteins (Figure 2a), and nine are even conserved from human to yeast (Figure 2b), supporting a potential functional role. As phylogenetic distance from human increases, the number and percentage of genes encoding homologous alternative proteins decreases more rapidly than the percentage of genes encoding reference proteins (Figure 2a and c). This observation indicates either that altORFs evolve more rapidly than CDSs or that distant homologies are less likely to be detected given the smaller sizes of alternative proteins. Another possibility is that they evolve following the patterns of evolution of genes that evolve de novo, with a rapid birth and death rate, which accelerates their turnover over time (Schlötterer, 2015).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig2-v2.jpg)
 
-**Figure 2.:** (a) Number of orthologous and paralogous alternative and reference proteins between H. sapiens and other species (pairwise study). (b) Phylogenetic tree: conservation of alternative (blue) and reference (red) proteins across various eukaryotic species. (c) Number and fraction of genes encoding homologous reference proteins or at least one homologous alternative protein between H. sapiens and other species (pairwise study).10.7554/eLife.27860.011Figure 2—source data 1.
+**Figure 2.:** (a) Number of orthologous and paralogous alternative and reference proteins between H. sapiens and other species (pairwise study). (b) Phylogenetic tree: conservation of alternative (blue) and reference (red) proteins across various eukaryotic species. (c) Number and fraction of genes encoding homologous reference proteins or at least one homologous alternative protein between H. sapiens and other species (pairwise study).
 
 If altORFs play a functional role, they would be expected to be under purifying selection. The first and second positions of a codon experience stronger purifying selection than the third because of redundancy in the genetic code (Pollard et al., 2010). In the case of CDS regions overlapping altORFs with a shifted reading frame, the third codon positions of the CDSs are either the first or the second in the altORFs, and should thus also undergo purifying selection. We analyzed conservation of third codon positions of CDSs for 100 vertebrate species for 1088 altORFs completely nested within and conserved across vertebrates (human to zebrafish) with their 889 CDSs from 867 genes (Figure 3). We observed that in regions of the CDS overlapping altORFs, third codon positions were evolving at significantly more extreme speeds (slow or quick) than third codon positions of random control sequences from the entire CDS (Figure 3), reaching up to 67-fold for conservation at p<0.0001 and 124-fold for accelerated evolution at p<0.0001. This is illustrated with three altORFs located within the CDS of NTNG1, RET and VTI1A genes (Figure 4). These three genes encode a protein promoting neurite outgrowth, the proto-oncogene tyrosine-protein kinase receptor Ret and a protein mediating vesicle transport to the cell surface, respectively. Two of these alternative proteins have been detected by ribosome profiling (RET, IP_182668.1) or mass spectrometry (VTI1A, IP_188229.1) (see Supplementary files 1 and 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig3-v2.jpg)
 
-**Figure 3.:** Differences between altORF and CDS PhyloP scores (altORF PhyloP – CDS PhyloP, y-axis) are plotted against PhyloPs for their respective CDSs (x-axis). We restricted the analysis to altORF-CDS pairs that were conserved from humans to zebrafish. The plot contains 889 CDSs containing at least one fully nested altORF, paired with one of its altORFs selected at random (to avoid problems with statistical non-independence). PhyloPs for both altORFs and CDSs are based on third codons in the CDS reading frame, calculated across 100 vertebrate species. We compared these differences to those generated based on five random regions in CDSs with a similar length as altORFs. Expected quantiles of the differences (‘DQ’ columns) were identified and compared to the observed differences. We show the absolute numbers (‘n’) and observed-to-expected ratios (‘O/E’) for each quantile. There are clearly substantial over-representations of extreme values (red signaling conservation DQ 0.95, and blue signaling accelerated evolution DQ 0.05) with 317 of 889 altORFs (35.7%). A random distribution would have implied a total of 10% (or 89) of altORFs in the extreme values. This suggests that 25.7% (35.7delete–10%) of these 889 altORFs undergo specific selection different from random regions in their CDSs with a similar length distribution.10.7554/eLife.27860.013Figure 3—source data 1.
+**Figure 3.:** Differences between altORF and CDS PhyloP scores (altORF PhyloP – CDS PhyloP, y-axis) are plotted against PhyloPs for their respective CDSs (x-axis). We restricted the analysis to altORF-CDS pairs that were conserved from humans to zebrafish. The plot contains 889 CDSs containing at least one fully nested altORF, paired with one of its altORFs selected at random (to avoid problems with statistical non-independence). PhyloPs for both altORFs and CDSs are based on third codons in the CDS reading frame, calculated across 100 vertebrate species. We compared these differences to those generated based on five random regions in CDSs with a similar length as altORFs. Expected quantiles of the differences (‘DQ’ columns) were identified and compared to the observed differences. We show the absolute numbers (‘n’) and observed-to-expected ratios (‘O/E’) for each quantile. There are clearly substantial over-representations of extreme values (red signaling conservation DQ 0.95, and blue signaling accelerated evolution DQ 0.05) with 317 of 889 altORFs (35.7%). A random distribution would have implied a total of 10% (or 89) of altORFs in the extreme values. This suggests that 25.7% (35.7delete–10%) of these 889 altORFs undergo specific selection different from random regions in their CDSs with a similar length distribution.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig4-v2.jpg)
 
-**Figure 4.:** NTNG1, RET and VTI1A genes.Chromosomal coordinates for the different CDSs and altORFs are indicated on the right. The regions highlighted in red indicate the presence of an altORF characterized by a region with elevated PhyloP scores for wobble nucleotides. The region of the altORF is indicated by a black bar above each graph.10.7554/eLife.27860.015Figure 4—source data 1.
+**Figure 4.:** Chromosomal coordinates for the different CDSs and altORFs are indicated on the right. The regions highlighted in red indicate the presence of an altORF characterized by a region with elevated PhyloP scores for wobble nucleotides. The region of the altORF is indicated by a black bar above each graph.
 
-## Evidence of expression of alternative proteins
+### Evidence of expression of alternative proteins
 
 We provide two lines of evidence indicating that thousands of altORFs are translated into proteins. First, we re-analyzed detected TISs in publicly available ribosome profiling data (Michel et al., 2014; Raj et al., 2016), and found 26,531 TISs mapping to annotated CDSs and 12,616 mapping to altORFs in these studies (Figure 5a; Supplementary file 1). Only a small fraction of TISs detected by ribosomal profiling mapped to altORFs3’ even if those are more abundant than altORF5’ relative to shuffled transcriptomes, likely reflecting a recently resolved technical issue which prevented TIS detection in 3’UTRs (Miettinen and Björklund, 2015). New methods to analyze ribosome profiling data are being developed and will likely uncover more translated altORFs (Ji et al., 2015). In agreement with the presence of functional altORFs3’, cap-independent translational sequences were recently discovered in human 3’UTRs (Weingarten-Gabbay et al., 2016). Second, we re-analyzed proteomic data using our composite database containing alternative proteins in addition to annotated reference proteins (Figure 5b; Supplementary file 2). We selected four studies representing different experimental paradigms and proteomic applications: large-scale (Hein et al., 2015) and targeted (Tong et al., 2014) protein/protein interactions, post-translational modifications (Sharma et al., 2014), and a combination of bottom-up, shotgun and interactome proteomics (Rosenberger et al., 2014). In the first dataset, we detected 3957 predicted alternative proteins in the interactome of reference proteins (Hein et al., 2015), providing a framework to uncover the function of these proteins. In a second proteomic dataset containing about 10,000 reference human proteins (Rosenberger et al., 2014), a total of 549 predicted alternative proteins were detected. Using a phosphoproteomic large data set (Sharma et al., 2014), we detected 384 alternative proteins. The biological function of these proteins is supported by the observation that some alternative proteins are specifically phosphorylated in cells stimulated by the epidermal growth factor, and others are specifically phosphorylated during mitosis (Figure 6; Supplementary file 3). We provide examples of spectra validation (Figure 6—figure supplement 1). A fourth proteomic dataset contained 77 alternative proteins in the epidermal growth factor receptor interactome (Tong et al., 2014) (Figure 5b). A total of 4872 different alternative proteins were detected in these proteomic data. The majority of these proteins are coded by altORFCDS, but there are also significant contributions of altORF3’, altORFnc and altORF5’ (Figure 5c). Overall, by mining the proteomic and ribosomal profiling data, we detected the translation of a total of 17,371 unique alternative proteins. 467 of these alternative proteins were detected by both MS and ribosome profiling (Figure 7), providing a high-confidence collection of small alternative proteins for further studies.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig5-v2.jpg)
+
+**Figure 5.:** (a) Percentage of CDSs and altORFs with detected TISs by ribosomal profiling and footprinting of human cells (Iacono et al., 2005). The total number of CDSs and altORFs with a detected TIS is indicated at the top. (b) Alternative and reference proteins detected in three large proteomic datasets: human interactome (Hein et al., 2015), 10,000 human proteins (Rosenberger et al., 2014), human phosphoproteome (Sharma et al., 2014), EGFR interactome (Tong et al., 2014). Numbers are indicates above each column. (c) Percentage of altORFs encoding alternative proteins detected by MS-based proteomics. The total number of altORFs is indicated at the top. Localization ‘Unknown’ indicates that the detected peptides can match more than one alternative protein. Localization ‘>1’ indicates that the altORF can have more than one localization in different RNA isoforms.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Example of validation for altSLC35A45’ specific peptide RVEDEVNSGVGQDGSLLSSPFLK. (a) Experimental MS/MS spectra (PeptideShaker graphic interface output). (b) MS/MS spectra of the synthetic peptide. Matching peaks are shown with blue masks. A diagram of the transcript with its accession number and the localization of the altORF and the CDS is shown at the top.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Example of validation for altRELT5’-specific peptide VALELLK. (a) Experimental MS/MS spectra (PeptideShaker graphic interface output). (b) MS/MS spectra of the synthetic peptide. Matching peaks are shown with blue masks. A diagram of the transcript with its accession number and the localization of the altORF and the CDS is shown at the top.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Example of validation for altLINC01420nc-specific peptide WDYPEGTPNGGSTTLPSAPPPASAGLK. (a) Experimental MS/MS spectra (PeptideShaker graphic interface output). (b) MS/MS spectra of the synthetic peptide. Matching peaks are shown with blue masks. A diagram of the transcript with its accession number and the localization of the altORF is shown at the top.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Example of validation for altSRRM2CDS-specific peptide EVILDPDLPSGVGPGLHR. (a) Experimental MS/MS spectra (PeptideShaker graphic interface output). (b) MS/MS spectra of the synthetic peptide. Matching peaks are shown with blue masks. A diagram of the transcript with its accession number and the localization of the altORF and the CDS is shown at the top.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig6-v2.jpg)
+
+**Figure 6.:** Heatmap showing relative levels of spectral counts for phosphorylated peptides following the indicated treatment (Sharma et al., 2014). For each condition, heatmap colors show the percentage of spectral count on total MS/MS phosphopeptide spectra. Blue bars on the right represent the number of MS/MS spectra; only proteins with spectral counts above 10 are shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) AltLINC01420nc amino acid sequence with detected peptides underlined and phosphorylated peptide in bold (73,9% sequence coverage). (b) MS/MS spectrum for the phosphorylated peptide (PeptideShaker graphic interface output). The phosphorylation site is the tyrosine residue, position 2. (c) MS/MS spectrum for the non-phosphorylated peptide. The mass difference between the precursor ions between both spectra corresponds to that of a phosphorylation, confirming the specific phosphorylation of this residue in mitosis.
+
 ![Figure 7.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig7-v2.jpg)
 
-**Figure 7.:** The expression of 467 alternative proteins was detected by both ribosome profiling (translation initiation sites, TIS) and mass spectrometry (MS).10.7554/eLife.27860.025Figure 7—source data 1.
+**Figure 7.:** The expression of 467 alternative proteins was detected by both ribosome profiling (translation initiation sites, TIS) and mass spectrometry (MS).
 
-## Functional annotations of alternative proteins
+### Functional annotations of alternative proteins
 
 An important goal of this study is to associate potential functions to alternative proteins, which we can do through annotations. Because the sequence similarities and the presence of particular signatures (families, domains, motifs, sites) are a good indicator of a protein's function, we analyzed the sequence of the predicted alternative proteins in several organisms with InterProScan, an analysis and classification tool for characterizing unknown protein sequences by predicting the presence of combined protein signatures from most main domain databases (Mitchell et al., 2015) (Figure 8; Figure 8—figure supplement 1). We found 41,511 (23%) human alternative proteins with at least one InterPro signature (Figure 8b). Of these, 37,739 (or 20.6%) are classified as small proteins. Interestingly, the reference proteome has a smaller proportion (840 or 1.68%) of small proteins with at least one InterPro signature, supporting a biological activity for alternative proteins.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig8-v2.jpg)
+
+**Figure 8.:** (a) InterPro annotation pipeline. (b) Alternative and reference proteins with InterPro signatures. (c) Number of alternative and reference proteins with transmembrane domains (TM), signal peptides (S) and both TM and SP. (d) Number of all alternative and reference proteins predicted to be intracellular, membrane, secreted and membrane-spanning and secreted (Ingolia et al., 2011). Proteins with at least one InterPro signature (Lee et al., 2012); proteins with no predicted signal peptide or transmembrane features. (e) Number of predicted TM regions for alternative and reference proteins.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** For each organism, the number of InterPro signatures (top graphs) and proteins with transmembrane (TM), signal peptide (SP), or TM +SP features (bottom pie charts) is indicated for alternative and reference proteins.
 
 Similar to reference proteins, signatures linked to membrane proteins are abundant in the alternative proteome and represent more than 15,000 proteins (Figure 8c–e; Figure 8—figure supplement 1). With respect to the targeting of proteins to the secretory pathway or to cellular membranes, the main difference between the alternative and the reference proteomes lies in the very low number of proteins with both signal peptides and transmembrane domains. Most of the alternative proteins with a signal peptide do not have a transmembrane segment and are predicted to be secreted (Figure 8c,d), supporting the presence of large numbers of alternative proteins in plasma (Vanderperre et al., 2013). The majority of predicted alternative proteins with transmembrane domains have a single membrane spanning domain but some display up to 27 transmembrane regions, which is still within the range of reference proteins that show a maximum of 33 (Figure 8e).
 
@@ -95,31 +255,268 @@ We extended the functional annotation using the Gene Ontology. A total of 585 al
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig9-v2.jpg)
 
-**Figure 9.:** GO terms assigned to InterPro entries are grouped into 13 categories for each of the three ontologies. (a) 34 GO terms were categorized into cellular component for 107 alternative proteins. (b) 64 GO terms were categorized into biological process for 128 alternative proteins. (c) 94 GO terms were categorized into molecular function for 302 alternative proteins. The majority of alternative proteins with GO terms are predicted to be intracellular, to function in nucleic acid-binding, catalytic activity and protein binding and to be involved in biosynthesis and nucleic acid metabolism processes.10.7554/eLife.27860.030Figure 9—source data 1.
+**Figure 9.:** GO terms assigned to InterPro entries are grouped into 13 categories for each of the three ontologies. (a) 34 GO terms were categorized into cellular component for 107 alternative proteins. (b) 64 GO terms were categorized into biological process for 128 alternative proteins. (c) 94 GO terms were categorized into molecular function for 302 alternative proteins. The majority of alternative proteins with GO terms are predicted to be intracellular, to function in nucleic acid-binding, catalytic activity and protein binding and to be involved in biosynthesis and nucleic acid metabolism processes.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig10-v2.jpg)
 
-**Figure 10.:** (a) The top 10 InterPro families in the human alternative proteome. (b) A total of 110 alternative proteins have between 1 and 23 zinc finger domains.10.7554/eLife.27860.032Figure 10—source data 1.
+**Figure 10.:** (a) The top 10 InterPro families in the human alternative proteome. (b) A total of 110 alternative proteins have between 1 and 23 zinc finger domains.
+
+**Table 2.**
+ Alternative zinc finger proteins detected by mass spectrometry (MS) and ribosome profiling (RP)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Alternative protein accession</th>
+      <th>Detection method*</th>
+      <th>Gene</th>
+      <th>Amino acid sequence</th>
+      <th>AltORF localization</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IP_238718.1</td>
+      <td>MS</td>
+      <td>RP11</td>
+      <td>MLVEVACSSCRSLLHKGAGASEDGAALEPAHTGGKENGATT</td>
+      <td>nc</td>
+    </tr>
+    <tr>
+      <td>IP_278905.1</td>
+      <td>RP</td>
+      <td>ZNF761</td>
+      <td>MSVARPLVGSHILYAIIDFILERNLISVMSVARTLVRSHPLYATIDFILERNLTSVMSVARPLVRSQTLHAIVDFILEKNKCNECGEVFNQQAHLAGHHRIHTGEKP</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_278745.1</td>
+      <td>MS and RP</td>
+      <td>ZNF816</td>
+      <td>MSVARPSVRNHPFNAIIYFTLERNLTNVKNVTMFTFADHTLKDIGRFILERDHTNVRFVTRFSGVIHTLQNIREFILERNHTSVINVAGVSVGSHPFNTIIHFTLERNLTHVMNVARFLVEEKTLHVIIDFMLERNLTNVKNVTKFSVADHTLKDIGEFILGKNHTNVRFVTRLSGVIHALQTIREFILERNLTSVINVRRFLIKKESLHNIREFILERNLTSVMNVARFLIKKQALQNIREFILQRNLTSVMSVAKPLLDSQHLFTIKQSMGVGKLYKCNDCHKVFSNATTIANHYRIHIEERSTSVINVANFSDVIHNL</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_138289.1</td>
+      <td>MS</td>
+      <td>ZSCAN31</td>
+      <td>MNIGGATLERNPINVRSVGKPSVPAMASLDTEESTQGKNHMNAKCVGRLSSSAHALFSIRGYTLERSAISVVSVAKPSFRMQGFSSISESTLVRNPISAVSAVNSLVSGHFLRNIRKSTLERDHKGDEFGKAFSHHCNLIRHFRIHTVPAELD</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_278564.1</td>
+      <td>MS</td>
+      <td>ZNF808</td>
+      <td>MIVTKSSVTLQQLQIIGESMMKRNLLSVINVACFSDIVHTLQFIGNLILERNLTNVMIEARSSVKLHPMQNRRIHTGEKPHKCDDCGKAFTSHSHLVGHQRIHTGQKSCKCHQCGKVFSPRSLLAEHEKIHF</td>
+      <td>3’UTR</td>
+    </tr>
+    <tr>
+      <td>IP_275012.1</td>
+      <td>MS</td>
+      <td>ZNF780A</td>
+      <td>MKPCECTECGKTFSCSSNIVQHVKIHTGEKRYNVRNMGKHLLWMISCLNIRKFRIVRNFVTIRSVDKPSLCTKNLLNTRELILMRNLVNIKECVKNFHHGLGFAQLLSIHTSEKSLSVRNVGRFIATLNTLEFGEDNSCEKVFE</td>
+      <td>3’UTR</td>
+    </tr>
+    <tr>
+      <td>IP_270595.1†</td>
+      <td>MS</td>
+      <td>ZNF440</td>
+      <td>MHSVERPYKCKICGRGFYSAKSFQIHEKSYTGEKPYECKQCGKAFVSFTSFRYHERTHTGENPYECKQFGKAFRSVKNLRFHKRTHTGEKPCECKKCRKAFHNFSSLQIHERMHRGEKLCECKHCGKAFISAKIL</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_270643.1†</td>
+      <td>MS</td>
+      <td>ZNF763</td>
+      <td>MKKLTLERNPINACHVVKPSIFPVPFSIMKGLTLERNPMSVSVGKPSDVPHTFEGMVGLTGEKPYECKECGKAFRSASHLQIHERTQTHIRIHSGERPYKCKTCGKGFYSPTSFQRHEKTHTAEKPYECKQCGKAFSSSSSFWYHERTHTGEKPYECKQCGKAFRSASIQMHAGTHPEEKPYECKQCGKAFRSAPHLRIHGRTHTGEKPYECKECGKAFRSAKNLRIHERTQTHVRMHSVERPYKCKICGKGFYSAKSFQIPEKSYTGEKPYECKQCGKAFISFTSFR</td>
+      <td>3’UTR</td>
+    </tr>
+    <tr>
+      <td>IP_270597.1‡</td>
+      <td>MS</td>
+      <td>ZNF440</td>
+      <td>MKNLTLERNPMSVSNVGKPLFPSLPFDIMKGLTLERTPMSVSNLGKPSDLSKIFDFIKGHTLERNPVNVRNVEKHSIISLLCKYMKGCTEERSSVNVSIVGKHSYLPRSFEYMQEHTMERNPMNVKNAEKHSACLLPFIDMKRLTLEGNTMNASNVAKLSLLPVLFNIMKEHTREKPYQCKQCAKAFISSTSFQYHERTHMGEKPYECMPSGKAFISSSSLQYHERTHTGEKPYEYKQCGKAFRSASHLQMHGRTHTGEKPYECKQYGKAFRPDKIL</td>
+      <td>3’UTR</td>
+    </tr>
+    <tr>
+      <td>IP_270609.1‡</td>
+      <td>MS</td>
+      <td>ZNF439</td>
+      <td>MNVSNVAKAFTSSSSFQYHERTHTGEKPYQCKQCGKAVRSASRLQMHGSTHTWQKLYECKQYGKAFRSARIL</td>
+      <td>3’UTR</td>
+    </tr>
+    <tr>
+      <td>IP_270663.1‡</td>
+      <td>MS</td>
+      <td>ZNF844</td>
+      <td>MHGRTHTQEKPYECKQCGKAFIFSTSFRYHERTHTGEKPYECKQCGKAFRSATQLQMHRKIHTGEKPYECKQCGKAYRSVSQLLVHERTHTVEQPYEYKQYGKAFRFAKNLQIQTMNVNN</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_270665.1‡</td>
+      <td>MS</td>
+      <td>ZNF844</td>
+      <td>MHRKIHTGEKPYECKQCGKAYRSVSQLLVHERTHTVEQPYEYKQYGKAFRFAKNLQIQTMNVNN</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_270668.1‡</td>
+      <td>MS</td>
+      <td>ZNF844</td>
+      <td>MSSTAFQYHEKTHTREKHYECKQCGKAFISSGSLRYHERTHTGEKPYECKQCGKAFRSATQLQMHRKIHTGEKPYECKQCGKAYRSVSQLLVHERTHTVEQPYEYKQYGKAFRFAKNLQIQTMNVNN</td>
+      <td>3’UTR</td>
+    </tr>
+    <tr>
+      <td>IP_138139.1</td>
+      <td>MS</td>
+      <td>ZNF322</td>
+      <td>MLSPSRCKRIHTGEQLFKCLQCQLCCRQYEHLIGPQKTHPGEKPQQV</td>
+      <td>3’UTR</td>
+    </tr>
+    <tr>
+      <td>IP_204754.1</td>
+      <td>RP</td>
+      <td>ZFP91-CNTF</td>
+      <td>MPGETEEPRPPEQQDQEGGEAAKAAPEEPQQRPPEAVAAAPAGTTSSRVLRGGRDRGRAAAAAAAAAVSRRRKAEYPRRRRSSPSARPPDVPGQQPQAAKSPSPVQGKKSPRLLCIEKVTTDKDPKEEKEEEDDSALPQEVSIAASRPSRGWRSSRTSVSRHRDTENTRSSRSKTGSLQLICKSEPNTDQLDYDVGEEHQSPGGISSEEEEEEEEEMLISEEEIPFKDDPRDETYKPHLERETPKPRRKSGKVKEEKEKKEIKVEVEVEVKEEENEIREDEEPPRKRGRRRKDDKSPRLPKRRKKPPIQYVRCEMEGCGTVLAHPRYLQHHIKYQHLLKKKYVCPHPSCGRLFRLQKQLLRHAKHHTDQRDYICEYCARAFKSSHNLAVHRMIHTGEKPLQCEICGFTCRQKASLNWHMKKHDADSFYQFSCNICGKKFEKKDSVVAHKAKSHPEVLIAEALAANAGALITSTDILGTNPESLTQPSDGQGLPLLPEPLGNSTSGECLLLEAEGMSKSYCSGTERSIHR</td>
+      <td>nc</td>
+    </tr>
+    <tr>
+      <td>IP_098649.1</td>
+      <td>RP</td>
+      <td>INO80B-WBP1</td>
+      <td>MSKLWRRGSTSGAMEAPEPGEALELSLAGAHGHGVHKKKHKKHKKKHKKKHHQEEDAGPTQPSPAKPQLKLKIKLGGQVLGTKSVPTFTVIPEGPRSPSPLMVVDNEEEPMEGVPLEQYRAWLDEDSNLSPSPLRDLSGGLGGQEEEEEQRWLDALEKGELDDNGDLKKEINERLLTARQRALLQKARSQPSPMLPLPVAEGCPPPALTEEMLLKREERARKRRLQAARRAEEHKNQTIERLTKTAATSGRGGRGGARGERRGGRAAAPAPMVRYCSGAQGSTLSFPPGVPAPTAVSQRPSPSGPPPRCSVPGCPHPRRYACSRTGQALCSLQCYRINLQMRLGGPEGPGSPLLATFESCAQE</td>
+      <td>nc</td>
+    </tr>
+    <tr>
+      <td>IP_115174.1</td>
+      <td>RP</td>
+      <td>ZNF721</td>
+      <td>MYIGEFILERNPTHVENVAKPLDSLQIFMRIRKFILERNPTRVETVAKPLDSLQIFMHIRKFILEIKPYKCKECGKAFKSYYSILKHKRTHTRGMSYEGDECRGL</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_275016.1</td>
+      <td>RP</td>
+      <td>ZNF780A</td>
+      <td>MNVRSVGKALIVVHTLFSIRKFIPMRNLLYVGNVRWPLDIIANLLNILEFILVTSHLNVKTVGRPSIVAQALFNIRVFTLVRSPMNVRSVGRLLDFTYNFPNIRKLTQVKNHLNVRNVGNSFVVVQILINIEVFILERNPLNVRNVGKPFDFICTLFDIRNCILVRNPLNVRSVGKPFDFICNLFDIRNCILVRNPLNVRNVERFLVFPPSLIAIRTFTQVRRHLECKECGKSFNRVSNHVQHQSIRAGVKPCECKGCGKGFICGSNVIQHQKIHSSEKLFVCKEWRTTFRYHYHLFNITKFTLVKNPLNVKNVERPSVF</td>
+      <td>CDS or 3’UTR</td>
+    </tr>
+    <tr>
+      <td>IP_278870.1</td>
+      <td>RP</td>
+      <td>ZNF845</td>
+      <td>MNVARFLIEKQNLHVIIEFILERNIRNMKNVTKFTVVNQVLKDRRIHTGEKAYKCKSL</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_278888.1</td>
+      <td>RP</td>
+      <td>ZNF765</td>
+      <td>MSVARPSAGRHPLHTIIDFILDRNLTNVKIVMKLSVSNQTLKDIGEFILERNYTCNECGKTFNQELTLTCHRRLHSGEKPYKYEELDKAYNFKSNLEIHQKIRTEENLTSVMSVARP</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_278918.1</td>
+      <td>RP</td>
+      <td>ZNF813</td>
+      <td>MNVARVLIGKHTLHVIIDFILERNLTSVMNVARFLIEKHTLHIIIDFILEINLTSVMNVARFLIKKHTLHVTIDFILERNLTSVMNVARFLIKKQTLHVIIDFILERNLTSLMSVAKLLIEKQSLHIIIQFILERNKCNECGKTFCHNSVLVIHKNSYWRETSVMNVAKFLINKHTFHVIIDFIVERNLRNVKHVTKFTVANRASKDRRIHTGEKAYKGEEYHRVFSHKSNLERHKINHTAEKP</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_280349.1</td>
+      <td>RP</td>
+      <td>ZNF587</td>
+      <td>MNAVNVGNHFFPALRFMFIKEFILDKSLISAVNVENPFLNVPVSLNTGEFTLEKGLMNAPNVEKHFSEALPSFIIRVHTGERPYECSEYGKSFAEASRLVKHRRVHTGERPYECCQCGKHQNVCCPRS</td>
+      <td>CDS</td>
+    </tr>
+    <tr>
+      <td>IP_280385.1</td>
+      <td>RP</td>
+      <td>ZNF417</td>
+      <td>MNAMNVGNHFFPALRFMFIKEFILDKSLISAVNVENPLLNVPVSLNTGEFTLEKGLMNVPNVEKHFSEALPSFIIRVHTGERPYECSEYGKSFAETSRLIKHRRVHTGERPYECCQSGKHQNVCSPWS</td>
+      <td>CDS</td>
+    </tr>
+  </tbody>
+</table>
+
+_*MS, mass spectrometry; RP, ribosome profiling.† These two proteins were not detected with unique peptides but with shared peptides. One protein only was counted in subsequent analyses.These five proteins were not detected with unique peptides but with shared peptides. One protein only was counted in subsequent analyses._
 
 We compared the functional annotations of the 585 alternative proteins with an InterPro entry with the reference proteins expressed from the same genes. Strikingly, 89 of 110 altORFs coding for zinc finger proteins (Figure 10) are present in transcripts in which the CDS also codes for a zinc finger protein. Overall, 138 alternative/reference protein pairs have at least one identical InterPro entry and many pairs have more than one identical entry (Figure 11a). The number of identical entries was much higher than expected by chance (Figure 11b, p<0.0001). The correspondence between InterPro domains of alternative proteins and their corresponding reference proteins coded by the same genes also indicates that even when entries are not identical, the InterPro terms are functionally related (Figure 11c; Figure 11—figure supplement 1). The presence of identical domains remains significant (p<0.001) even when the most frequent domains, zinc fingers, are not considered (Figure 11—figure supplement 2).
+
+![Figure 11.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig11-v2.jpg)
+
+**Figure 11.:** (a) Distribution of the number of identical InterPro entries co-ocurring between alternative and reference proteins coded by the same transcripts. 138 pairs of alternative and reference proteins have between 1 and 4 identical protein domains (InterPro entries). Only alternative/reference protein pairs that have at least one identical domain are considered (n = 298). (b) The number of reference/alternative protein pairs with identical domains (n = 138) is higher than expected by chance alone. The distribution of expected pairs having identical domains and the observed number are shown. (c) Matrix of co-occurrence of domains related to zinc fingers. The entries correspond to the number of times entries co-occur in reference and alternative proteins. The full matrix is available in Figure 11—figure supplement 1.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** Pixels show the number of times entries co-occur in reference and alternative proteins. Blue pixels indicate that these domains do not co-occur, white pixels indicate that they co-occur once, and red that they co-occur twice or more.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig11-figsupp2-v2.jpg)
+
+**Figure 11—figure supplement 2.:** The number of reference/alternative protein pairs with identical domains (n = 49) is higher than expected by chance alone (p<0.001). The distribution of expected pairs with identical domains and the observed number are shown. This is the same analysis as the one presented in Figure 11b, with the zinc finger domains taken out.
+
+![Figure 11—figure supplement 3.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig11-figsupp3-v2.jpg)
+
+**Figure 11—figure supplement 3.:** There is no significant differences between both groups (p-value=0.6272; Kolmogorov Smirnov test). We conclude that there is no significant association between identity/overlap and functional relationship.
 
 The presence of identical domains within alternative/reference protein pairs encoded in the same genes may result from alternative splicing events which connect an altORF in a different reading frame than the CDS with a coding exon in the CDS reading frame. Such alternative proteins would likely be unannotated isoforms of the corresponding reference proteins. Thus, we examined whether there is any association between the % of overlap or identity and functional similarity within alternative/reference protein pairs. We performed blast searches of the 183,191 predicted alternative proteins against 54,498 reference proteins using BlastP. All altORFs with more than 80% identity and overlap had already been removed to generate our database (as indicated in the Materials and methods). We found 100 (0.055%) alternative proteins with 25% to 100% identity and 10% to 100% overlap with their reference protein pairs. Among them, 20 (0.00054%) alternative proteins have identical InterPro signatures with their respective reference proteins (Supplementary file 5). The distribution of the percentage of sequence identity and overlap between alternative-reference protein pairs with (w/, n = 20) or without (w/o, n = 80) identical Interpro signature is shown in Figure 11—figure supplement 3. We observed no significant differences between the two groups (p-value=0.6272; Kolmogorov Smirnov test). We conclude that there is no significant association between identity/overlap and the presence of identical domains in alternative/reference protein pairs.
 
 Recently, the interactome of 118 human zinc finger proteins was determined by affinity purification followed by mass spectrometry (Schmitges et al., 2016). This study provides a unique opportunity to test if, in addition to possessing zinc finger domains, some pairs of reference and alternative proteins coded by the same gene may functionally interact. We re-analyzed the MS data using our alternative protein sequence database to detect alternative proteins in this interactome (Supplementary file 6). Five alternative proteins (IP_168460.1, IP_168527.1, IP_270697.1, IP_273983.1, IP_279784.1) were identified within the interactome of their reference zinc finger proteins. This number was higher than expected by chance (p<10−6) based on 1 million binomial simulations of randomized interactomes. These physical interactions within zinc finger alternative/reference protein pairs suggest that there are examples of functional relationships between large and small proteins coded by the same genes.
 
-## Function of alternative proteins
+### Function of alternative proteins
 
 Finally, we integrated the expression analyses and the conservation analyses of alternative/reference protein pairs to produce a high-confidence list of alternative proteins predicted to have a function and found 2715 alternative proteins in mammals (H. sapiens to B. taurus), and 44 in vertebrates (H. sapiens to D. rerio) (Supplementary file 7). From this list, we focused on alternative proteins detected with at least two peptide spectrum matches or with high TIS reads and selected altMiD51 (IP_294711.1) among the top 2% of alternative proteins detected with the highest number of unique peptides in proteomics studies, and altDDIT3 (IP_211724.1) among the top 2% of altORFs with the most cumulative reads in translation initiation ribosome profiling studies.
 
 AltMiD51 is a 70 amino acid alternative protein conserved in vertebrates (Andreev et al., 2015) and conserved with its reference protein MiD51 from humans to zebrafish (Supplementary file 7). Its coding sequence is present in exon 2 of the MiD51/MIEF1/SMCR7L gene. This exon forms part of the 5’UTR for the canonical mRNA and is annotated as non-coding in current gene databases (Figure 12a). Yet, altMiD51 is robustly detected by MS in several cell lines (Supplementary file 2: HEK293, HeLa Kyoto, HeLa S3, THP1 cells and gut tissue), and we validated some spectra using synthetic peptides (Figure 12—figure supplement 1), and it is also detected by ribosome profiling (Supplementary file 1) (Vanderperre et al., 2013; Andreev et al., 2015; Kim et al., 2014). We confirmed co-expression of altMiD51 and MiD51 from the same transcript (Figure 12b). Importantly, the tripeptide LYR motif predicted with InterProScan and located in the N-terminal domain of altMiD51 (Figure 12a) is a signature of mitochondrial proteins localized in the mitochondrial matrix (Angerer, 2015). Since MiD51/MIEF1/SMCR7L encodes the mitochondrial protein MiD51, which promotes mitochondrial fission by recruiting cytosolic Drp1, a member of the dynamin family of large GTPases, to mitochondria (Losón et al., 2013), we tested for a possible functional connection between these two proteins expressed from the same mRNA. We first confirmed that MiD51 induces mitochondrial fission (Figure 12—figure supplement 2). Remarkably, we found that altMiD51 also localizes at the mitochondria (Figure 12c; Figure 12—figure supplement 3) and that its overexpression results in mitochondrial fission (Figure 12d). This activity is unlikely to be through perturbation of oxidative phosphorylation since the overexpression of altMiD51 did not change oxygen consumption nor ATP and reactive oxygen species production (Figure 12—figure supplement 4). The decrease in spare respiratory capacity in altMiD51-expressing cells (Figure 12—figure supplement 4a) likely resulted from mitochondrial fission (Motori et al., 2013). The LYR domain is essential for altMiD51-induced mitochondrial fission since a mutant of the LYR domain, altMiD51(LYR→AAA) was unable to convert the mitochondrial morphology from tubular to fragmented (Figure 12d). Drp1(K38A), a dominant negative mutant of Drp1 (Smirnova et al., 1998), largely prevented the ability of altMiD51 to induce mitochondrial fragmentation (Figure 12d; Figure 12—figure supplement 5a). In a control experiment, co-expression of wild-type Drp1 and altMiD51 proteins resulted in mitochondrial fragmentation (Figure 12—figure supplement 5b). Expression of the different constructs used in these experiments was verified by western blot (Figure 12—figure supplement 6). Drp1 knockdown interfered with altMiD51-induced mitochondrial fragmentation (Figure 13), confirming the proposition that Drp1 mediates altMiD51-induced mitochondrial fragmentation. It remains possible that altMiD51 promotes mitochondrial fission independently of Drp1 and is able to reverse the hyperfusion induced by Drp1 inactivation. However, Drp1 is the key player mediating mitochondrial fission and most likely mediates altMiD51-induced mitochondrial fragmentation, as indicated by our results.
 
+![Figure 12.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig12-v2.jpg)
+
+**Figure 12.:** (a) AltMiD515’ coding sequence is located in exon two or the MiD51/MIEF1/SMCR7L gene and in the 5’UTR of the canonical mRNA (RefSeq NM_019008).+2 and+1 indicate reading frames. AltMiD51 amino acid sequence is shown with the LYR tripeptide shown in bold. Underlined peptides were detected by MS. (b) Human HeLa cells transfected with empty vector (mock), a cDNA corresponding to the canonical MiD51 transcript with a Flag tag in frame with altMiD51 and an HA tag in frame with MiD51, altMiD51Flag cDNA or MiD51HA cDNA were lysed and analyzed by western blot with antibodies against Flag, HA or actin, as indicated. (c) Confocal microscopy of mock-transfected cells, cells transfected with altMiD51WT, altMiD51LYR→AAA or Drp1K38A immunostained with anti-TOM20 (red channel) and anti-Flag (green channel) monoclonal antibodies. In each image, boxed areas are shown at higher magnification in the bottom right corner. % of cells with the most frequent morphology is indicated: mock (tubular), altMiD51WT (fragmented), altMiD51(LYR→AAA) (tubular), Drp1(K38A) (elongated). Scale bar, 10 mm. (d) Bar graphs show mitochondrial morphologies in HeLa cells. Means of three independent experiments per condition are shown (100 cells for each independent experiment). ***p<0.0005 (Fisher’s exact test) for the three morphologies between altMiD51(WT) and the other experimental conditions.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig12-figsupp1-v2.jpg)
+
+**Figure 12—figure supplement 1.:** Example of validation for altMiD51 specific peptides YTDRDFYFASIR and GLVFLNGK. (a,c) Experimental MS/MS spectra (PeptideShaker graphic interface output). (b,d) MS/MS spectra of the synthetic peptides. Matching peaks are shown with blue masks. A diagram of the transcript with its accession number and the localization of the altORF and the CDS is shown at the top.
+
+![Figure 12—figure supplement 2.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig12-figsupp2-v2.jpg)
+
+**Figure 12—figure supplement 2.:** (a) Confocal microscopy of HeLa cells transfected with MiD51GFP immunostained with anti-TOM20 (red channel) monoclonal antibodies. In each image, boxed areas are shown at higher magnification in the bottom right corner. The localization of MiD51 in fission sites is shown in merged higher magnification inset. Scale bar, 10 mm. (b) Human HeLa cells transfected with empty vector (mock) or MiD51GFP were lysed and analyzed by western blot to confirm MiD51GFP expression.
+
+![Figure 12—figure supplement 3.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig12-figsupp3-v2.jpg)
+
+**Figure 12—figure supplement 3.:** Trypan blue quenching experiment performed on HeLa cells stably expressing the indicated constructs: Matrix-Venus (Mx-Venus) and Intermembrane space-Venus (IMS-Venus). The fluorescence remaining after quenching by trypan blue is shown relative to Matrix-Venus (Mx-Venus) indicated by the dashed line. (****p<0,0001, one-way ANOVA). The absence of quenching of the fluorescence compared to IMS-Venus indicates the matricial localization of altMiD51. n ≥ 3 cells were quantified per experiment, and results are from six independent experiments. Data are mean ±SEM.
+
+![Figure 12—figure supplement 4.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig12-figsupp4-v2.jpg)
+
+**Figure 12—figure supplement 4.:** (a) Oxygen consumption rates (OCR) in HeLa cells transfected with empty vector (mock) or altMiD51Flag. Mitochondrial function parameters were assessed in basal conditions (basal), in the presence of oligomycin to inhibit the ATP synthase (oxygen consumption that is ATP-linked), FCCP to uncouple the mitochondrial inner membrane and allow for maximum electron flux through the respiratory chain (maximal OCR), and antimycin A/rotenone to inhibit complex III (non-mitochondrial). The balance of the basal OCR comprises oxygen consumption due to proton leak and nonmitochondrial sources. The mitochondrial reserve capacity (maximal OCR- basal OCR) is an indicator of rapid adaptation to stress and metabolic changes. Mean values of replicates are plotted with error bars corresponding to the 95% confidence intervals. Statistical significance was estimated using a two-way ANOVA with Tukey's post-hoc test (**p=0,004). (b) ROS production in mock and altMiD51-expressing cells. Cells were untreated, treated with a ROS inducer or a ROS inhibitor. Results represent the mean value out of three independent experiments, with error bars corresponding to the standard error of the mean (s.e.m.). Statistical significance was estimated using unpaired T-test. (c) ATP synthesis rate in mock and altMiD51-expressing cells. No significant differences in ATP production were observed between mock and altMiD51 transfected cells. Results represent the mean of three independent experiments (eight technical replicates each). Error bars represent the standard error of the mean. At the end of the experiments, cells were collected and proteins analyzed by western blot with antibodies against the Flag tag (altMiD51) or actin, as indicated, to verify the expression of altMiD51. A representative western blot is shown on the right. Molecular weight markers are shown on the left (kDa).
+
+![Figure 12—figure supplement 5.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig12-figsupp5-v2.jpg)
+
+**Figure 12—figure supplement 5.:** (a) Confocal microscopy of HeLa cells co-transfected with altMiD51GFP and Drp1(K38A)HA immunostained with anti-TOM20 (blue channel) and anti-HA (red channel) monoclonal antibodies. In each image, boxed areas are shown at higher magnification in the bottom right corner. % of cells with the indicated morphology is indicated on the TOM20 panels. (b) Confocal microscopy of HeLa cells co-transfected with altMiD51GFP and Drp1(wt)HA immunostained with anti-TOM20 (blue channel) and anti-HA (red channel) monoclonal antibodies. In each image, boxed areas are shown at higher magnification in the bottom right corner. Scale bar, 10 mm.
+
+![Figure 12—figure supplement 6.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig12-figsupp6-v2.jpg)
+
+**Figure 12—figure supplement 6.:** HeLa cells were transfected with empty vector (pcDNA3.1), altMiD51(WT)Flag, altMID51(LYR→AAA)Flag, Drp1(K38A)HA, or Drp1(K38A)HA and altMiD51(WT)Flag, as indicated. Proteins were extracted and analyzed by western blot with antibodies against the Flag tag (altMiD51), the HA tag (Drp1K38A) or actin, as indicated. Molecular weight markers are shown on the left (kDa). Representative experiment of three independent biological replicates.
+
 ![Figure 13.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig13-v2.jpg)
 
-**Figure 13.:** (a) Bar graphs show mitochondrial morphologies in HeLa cells treated with non-target or Drp1 siRNAs. Cells were mock-transfected (pcDNA3.1) or transfected with altMiD51Flag. Means of three independent experiments per condition are shown (100 cells for each independent experiment). ***p<0.0005 (Fisher’s exact test) for the three morphologies between altMiD51 and the other experimental conditions. (b) HeLa cells treated with non-target or Drp1 siRNA were transfected with empty vector (pcDNA3.1) or altMiD51Flag, as indicated. Proteins were extracted and analyzed by western blot with antibodies against the Flag tag (altMiD51), Drp1 or actin, as indicated. (c) Confocal microscopy of Drp1 knockdown cells transfected with altMiD51GFP immunostained with anti-TOM20 (blue channel) and anti-Drp1 (red channel) monoclonal antibodies. In each image, boxed areas are shown at higher magnification in the bottom right corner. % of cells with the indicated morphology is indicated on the TOM20 panels. Scale bar, 10 mm. (d) Control Drp1 immunostaining in HeLa cells treated with a non-target siRNA. For (c) and (d), laser parameters for Drp1 and TOM20 immunostaining were identical.10.7554/eLife.27860.048Figure 13—source data 1.
+**Figure 13.:** (a) Bar graphs show mitochondrial morphologies in HeLa cells treated with non-target or Drp1 siRNAs. Cells were mock-transfected (pcDNA3.1) or transfected with altMiD51Flag. Means of three independent experiments per condition are shown (100 cells for each independent experiment). ***p<0.0005 (Fisher’s exact test) for the three morphologies between altMiD51 and the other experimental conditions. (b) HeLa cells treated with non-target or Drp1 siRNA were transfected with empty vector (pcDNA3.1) or altMiD51Flag, as indicated. Proteins were extracted and analyzed by western blot with antibodies against the Flag tag (altMiD51), Drp1 or actin, as indicated. (c) Confocal microscopy of Drp1 knockdown cells transfected with altMiD51GFP immunostained with anti-TOM20 (blue channel) and anti-Drp1 (red channel) monoclonal antibodies. In each image, boxed areas are shown at higher magnification in the bottom right corner. % of cells with the indicated morphology is indicated on the TOM20 panels. Scale bar, 10 mm. (d) Control Drp1 immunostaining in HeLa cells treated with a non-target siRNA. For (c) and (d), laser parameters for Drp1 and TOM20 immunostaining were identical.
 
 AltDDIT3 is a 31 amino acid alternative protein conserved in vertebrates and conserved with its reference protein DDIT3 from human to bovine (Supplementary file 7). Its coding sequence overlaps the end of exon 1 and the beginning of exon 2 of the DDIT3/CHOP/GADD153 gene. These exons form part of the 5’UTR for the canonical mRNA (Figure 14a). To determine the cellular localization of altDDIT3 and its possible relationship with DDIT3, confocal microscopy analyses were performed on HeLa cells co-transfected with altDDIT3GFP and DDIT3mCherry. Expression of these constructs was verified by western blot (Figure 14—figure supplement 1). Interestingly, both proteins were mainly localized in the nucleus and partially localized in the cytoplasm (Figure 14b). This distribution for DDIT3 confirms previous studies (Cui et al., 2000; Chiribau et al., 2010). Both proteins seemed to co-localize in these two compartments (Pearson correlation coefficient 0.92, Figure 14c). We further confirmed the statistical significance of this colocalization by applying Costes’ automatic threshold and Costes’ randomization colocalization analysis and Manders Correlation Coefficient (Figure 14d; Figure 14—figure supplement 2) (Bolte and Cordelières, 2006). Finally, in lysates from cells co-expressing altDDIT3GFP and DDIT3mCherry, DDIT3mCherry was immunoprecipitated with GFP-trap agarose, confirming an interaction between the small altDDTI3 and the large DDIT3 proteins encoded in the same gene (Figure 14e).
 
-## Discussion
+![Figure 14.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig14-v2.jpg)
+
+**Figure 14.:** (a) AltDDIT35’ coding sequence is located in exons 1 and 2 or the DDIT3/CHOP/GADD153 gene and in the 5’UTR of the canonical mRNA (RefSeq NM_004083.5).+2 and+1 indicate reading frames. AltDDIT3 amino acid sequence is also shown. (b) Confocal microscopy analyses of HeLa cells co-transfected with altDDIT3GFP (green channel) and DDIT3mCherry (red channel). Scale bar, 10 µm. (c, d) Colocalization analysis of the images shown in (b) performed using the JACoP plugin (Just Another Co-localization Plugin) implemented in Image J software (two independent biological replicates). (c) Scatterplot representing 50% of green and red pixel intensities showing that altDDIT3GFP and DDIT3mCherry signal highly correlate (with Pearson correlation coefficient of 0.92 [p-value<0.0001]). (d) Binary version of the image shown in (b) after Costes’ automatic threshold. White pixels represent colocalization events (p-value<0.001, based on 1000 rounds of Costes’ randomization colocalization analysis). The associated Manders Correlation Coefficient, M1 and M2, are shown in the right upper corner. M1 is the proportion of altDDIT3GFP signal overlapping DDIT3mCherry signal and M2 is the proportion of DDIT3mCherry signal overlapping altDDIT3GFP. (e) Representative immunoblot of co-immunoprecipitation with GFP-Trap agarose beads performed on HeLa lysates co-expressing DDIT3mcherry and altDDIT3GFP or DDIT3mcherry with pcDNA3.1GFP empty vector (two independent experiments).
+
+![Figure 14—figure supplement 1.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig14-figsupp1-v2.jpg)
+
+**Figure 14—figure supplement 1.:** HeLa cells were co-transfected with GFP and mCherry, or altDDIT3GFP and DDIT3mCherry, as indicated. Proteins were extracted and analyzed by western blot with antibodies, as indicated. Molecular weight markers are shown on the left (kDa). AltDDIT3 has a predicted molecular weight of 4.28 kDa and thus migrates at its expected molecular weight when tagged with GFP (~32 kDa). Representative experiment of two independent biological replicates.
+
+![Figure 14—figure supplement 2.](https://cdn.elifesciences.org/articles/27860/elife-27860-fig14-figsupp2-v2.jpg)
+
+**Figure 14—figure supplement 2.:** Scatter plots of Pearson’s Correlation Coefficient and Manders’ Correlation Coefficient after Costes’ automatic threshold (p-value<0.001, based on 1000 rounds of Costes’ randomization colocalization analysis). M1 is the proportion of altDDIT3GFP signal overlapping DDIT3mCherry signal and M2 is the proportion of DDIT3mCherry signal overlapping altDDIT3GFP. Error bars represent the mean ±SD of three independent experiments (28 cells).
+
+### Discussion
 
 We have provided the first functional annotation of altORFs with a minimum size of 30 codons in different genomes. The comprehensive annotation of H. sapiens altORFs is freely available to download at https://www.roucoulab.com/p/downloads (Homo sapiens functional annotation of alternative proteins based on RefSeq GRCh38 (hg38) predictions). In light of the increasing evidence from approaches such as ribosome profiling and MS-based proteomics that the one mRNA-one canonical CDS assumption is untenable, our findings provide the first clear functional insight into a new layer of regulation in genome function. While many observed altORFs may be evolutionary accidents with no functional role, several independent lines of evidence support translation and a functional role for thousands of alternative proteins: (1) overrepresentation of altORFs relative to shuffled sequences; (2) overrepresentation of altORF Kozak sequences; (3) active altORF translation detected via ribosomal profiling; (4) detection of thousands of alternative proteins in multiple existing proteomic datasets; (5) correlated altORF-CDS conservation, but with overrepresentation of highly conserved and fast-evolving altORFs; (6) overrepresentation of identical InterPro signatures between alternative and reference proteins encoded in the same mRNAs; and (7) presence of clear, striking examples in altMiD51, altDDIT3 and 5 alternative proteins interacting with their reference zinc finger proteins. While far from proven in our study, three of these lines of evidence (5, 6, and 7) would support the intriguing hypothesis that many altORFs code for proteins that cooperate functionally with the proteins coded by their CDSs. This hypothesis would also agree with recently increasing evidence that small proteins often regulate the function of larger proteins (Couso and Patraquim, 2017). Further experimental examples and more detailed co-conservation studies will be needed to address this hypothesis.
 
@@ -135,9 +532,76 @@ Only a relatively small percentage of alternative proteins (22.6%) are functiona
 
 In conclusion, our deep annotation of the transcriptome reveals that a large number of small eukaryotic proteins, possibly even the majority, are still not officially annotated. Our results with altMiD51, altDDIT3, and some zinc-finger proteins also suggest that some small and large proteins coded by the same mRNA may cooperate by regulating each other’s function or by functioning in the same pathway, confirming the few examples in the literature of unrelated proteins encoded in the same genes and functionally cooperating (Table 3) (Quelle et al., 1995; Abramowitz et al., 2004; Bergeron et al., 2013; Lee et al., 2014; Yosten et al., 2016). To determine whether or not this functional cooperation is a general feature of small/large protein pairs encoded in the same gene will require more experimental evidence.
 
+**Table 3.**
+ Examples of proteins encoded in the same gene and functionally interacting
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Polypeptides*</th>
+      <th>Reference</th>
+      <th>altORF localization</th>
+      <th>altORF size aa</th>
+      <th>Conservation</th>
+      <th>Summary of functional relationship with the annotated protein</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CDKN2A, INK4</td>
+      <td>Cyclin-dependent kinase inhibitor 2A or p16-INK4 (P42771), and p19ARF (Q8N726)</td>
+      <td>(61)</td>
+      <td>5'UTR</td>
+      <td>169</td>
+      <td>Human, mouse</td>
+      <td>the unitary inheritance of p16INK4a and p19ARF may underlie their dual requirement in cell cycle control.</td>
+    </tr>
+    <tr>
+      <td>GNAS, XLalphas</td>
+      <td>Guanine nucleotide-binding protein G(s) subunit alpha isoforms XLαs (Q5JWF2) and Alex (P84996)</td>
+      <td>(62)</td>
+      <td>5'UTR</td>
+      <td>+700</td>
+      <td>Human, mouse, rat</td>
+      <td>Both subunits transduce receptor signals into stimulation of adenylyl cyclase.</td>
+    </tr>
+    <tr>
+      <td>ATXN1</td>
+      <td>Ataxin-1 (P54253) and altAtaxin-1</td>
+      <td>(63)</td>
+      <td>CDS</td>
+      <td>185</td>
+      <td>Human, chimpanzee, cow</td>
+      <td>Direct interaction</td>
+    </tr>
+    <tr>
+      <td>Adora2A</td>
+      <td>A2A adenosine receptor (P30543) and uORF5</td>
+      <td>(64)</td>
+      <td>5'UTR</td>
+      <td>134</td>
+      <td>Human, chimpanzee, rat, mouse</td>
+      <td>A2AR stimulation increases the level of the uORF5 protein via post-transcriptional regulation.</td>
+    </tr>
+    <tr>
+      <td>AGTR1</td>
+      <td>Angiotensin type 1a receptor (P25095) and PEP7</td>
+      <td>(65)</td>
+      <td>5'UTR</td>
+      <td>7</td>
+      <td>Highly conserved across mammalian species</td>
+      <td>Inhibits non-G protein-coupled signalling of angiotensin II, without altering the classical G protein-coupled pathway activated by the ligand.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The UniProtKB accession is indicated when available._
+
 ## Materials and methods
 
-## Generation of alternative open-reading frames and alternative protein databases
+### Generation of alternative open-reading frames and alternative protein databases
 
 Throughout this manuscript, annotated protein coding sequences and proteins in current databases are labeled annotated coding sequences or CDSs and reference proteins, respectively. For simplicity reasons, predicted alternative protein coding sequences are labeled alternative open-reading frames or altORFs.
 
@@ -149,29 +613,29 @@ AltORF localization was assigned according to the position of the predicted tran
 
 The presence of the simplified Kozak sequence (A/GNNATGG) known to be favorable for efficient translation initiation was also assessed for each predicted altORF (Kozak, 2002).
 
-## Identification of TISs
+### Identification of TISs
 
 The global aggregates of initiating ribosome profiles data were obtained from the initiating ribosome tracks in the GWIPS-viz genome browser (Michel et al., 2014) with ribosome profiling data collected from five large-scale studies (Lee et al., 2012; Ji et al., 2015; Fritsch et al., 2012; Stern-Ginossar et al., 2012; Gao et al., 2015). Sites were mapped to hg38 using a chain file from the UCSC genome browser (http://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz) and CrossMap v0.1.6 (RRID:SCR_001173). Similar to the methods used in these studies, an altORF is considered as having an active TIS if it is associated with at least ten reads at one of the seven nucleotide positions of the sequence NNNAUGN (AUG is the predicted altORF TIS). An additional recent study was also included in our analysis (Raj et al., 2016). In this study, a threshold of 5 reads was used. Raw sequencing data for ribosome protected fragments in harringtonine treated cells were aligned to the human genome (GRCh38) using bowtie2 (2.2.8) (Langmead and Salzberg, 2012). Similar to the method used in this work, altORFs with at least five reads overlapping one position in the kozak region were considered as having an experimentally validated TIS.
 
-## Generation of shuffled transcriptomes
+### Generation of shuffled transcriptomes
 
 Each annotated transcript was shuffled using the Fisher-Yates shuffle algorithm. In CDS regions, all codons were shuffled except the initiation and stop codons. For mRNAs, we shuffled the 5’UTRs, CDSs and 3’UTRs independently to control for base composition. Non-coding regions were shuffled at the nucleotide level. The resulting shuffled transcriptome has the following features compared to hg38: same number of transcripts, same transcripts lengths, same nucleotide composition, and same amino-acid composition for the proteins translated from the CDSs. Shuffling was repeated 100 times and the results are presented with average values and standard deviations. The total number of altORFs is 539,134 for hg38, and an average of 489,073 for shuffled hg38. AltORFs and kozak motifs in the 100 shuffled transcriptomes were detected as described above for hg38.
 
-## Identification of paralogs/orthologs in alternative proteomes
+### Identification of paralogs/orthologs in alternative proteomes
 
 Both alternative and reference proteomes were investigated. Pairwise ortholog and paralog relationships between the human proteomes and the proteomes from other species, were calculated using an InParanoid-like approach (Sonnhammer and Östlund, 2015), as described below (RRID:SCR_006801). The following BLAST (RRID:SCR_001010) procedure was used. Comparisons using our datasets of altORFs/CDS protein sequences in multiple FASTA formats from Saccharomyces cerevisiae, Caenorhabditis elegans, Drosophila melanogaster, Danio rerio, Xenopus tropicalis Bos taurus, Mus musculus, Pan troglodytes, Homo sapiens were performed between each pair of species (Homo sapiens against the other species), involving four whole proteome runs per species pair: pairwise comparisons (organism A vs organism B, organism B vs organism A), plus two self-self runs (organism A vs organism A, organism B vs organism B). BLAST homology inference was accepted when the length of the aligned region between the query and the match sequence equalled or exceeded 50% of the length of the sequence, and when the bitscore reached a minimum of 40 (Remm et al., 2001). Orthologs were detected by finding the mutually best scoring pairwise hits (reciprocal best hits) between datasets A-B and B-A. The self-self runs were used to identify paralogy relationships as described (Sonnhammer and Östlund, 2015).
 
-## Analysis of third codon position (wobble) conservation
+### Analysis of third codon position (wobble) conservation
 
 Basewise conservation scores for the alignment of 100 vertebrate genomes including H. sapiens were obtained from UCSC genome browser (http://hgdownload.soe.ucsc.edu/goldenPath/hg38/phyloP100way/) (RRID:SCR_012479). Conservation PhyloP scores relative to each nucleotide position within codons were extracted using a custom Perl script and the Bio-BigFile module version 1.07 (see code file). The PhyloP conservation score for the wobble nucleotide of each codon within the CDS was extracted. For the 53,862 altORFs completely nested inside 20,814 CDSs, the average PhyloP score for wobble nucleotides within the altORF region was compared to the average score for the complete CDS. To generate controls, random regions in CDSs with a similar length distribution as altORFs were selected and PhyloP scores for wobble nucleotides were extracted. We compared the differences between altORF and CDS PhyloP scores (altORF PhyloP – CDS PhyloP) to those generated based on random regions. We identified expected quantiles of the differences (‘DQ’ column in the table), and compared these to the observed differences. Because there was greater conservation of wobble nucleotide PhyloP scores within altORFs regions located farther from the center of their respective genes (r = 0.08, p<0.0001), observed differences were adjusted using an 8 knot cubic basis spline of percent distance from center. These observed differences were also adjusted for site-specific signals as detected in the controls.
 
-## Human alternative protein classification and in silico functional annotation
+### Human alternative protein classification and in silico functional annotation
 
-## Repeat and transposable element annotation
+#### Repeat and transposable element annotation
 
 RepeatMasker, a popular software to scan DNA sequences for identifying and classifying repetitive elements (RRID:SCR_012954), was used to investigate the extent of altORFs derived from transposable elements (Tarailo-Graovac and Chen, 2009). Version 3-3-0 was run with default settings.
 
-## Alternative protein analysis using InterProScan (RRID:SCR_005829)
+#### Alternative protein analysis using InterProScan (RRID:SCR_005829)
 
 InterProScan combines 15 different databases, most of which use Hidden Markov models for signature identification (Jones et al., 2014). Interpro merges the redundant predictions into a single entry and provides a common annotation. A recent local version of InterProScan 5.14–53.0 was run using default parameters to scan for known protein domains in alternative proteins. Gene ontology (GO) and pathway annotations were also reported if available with -goterm and -pa options. Only protein signatures with an E-value <10−3 were considered.
 
@@ -181,7 +645,7 @@ The GO terms assigned to alternative proteins with InterPro entries were grouped
 
 Each unique alternative protein with InterPro entries and its corresponding reference protein (encoded in the same transcript) were retrieved from our InterProscan output. Alternative and reference proteins without any InterPro entries were ignored. The overlap in InterPro entries between alternative and reference proteins was estimated as follows. We went through the list of alternative/reference protein pairs and counted the overlap in the number of entries between the alternative and reference proteins as 100*intersection/union. All reference proteins and the corresponding alternative proteins were combined together in each comparison so that all domains of all isoforms for a given reference protein were considered in each comparison. The random distribution of the number of alternative/reference protein pairs that have at least one identical InterPro entry was computed by shuffling the alternative/reference protein pairs and calculating how many have at least one identical InterPro entry. This procedure was repeated 1000 times. Finally, we compared the number and identity of co-ocurrence of InterPro entries in a two-dimensional matrix to illustrate which Interpro entries are identical in alternative/reference protein pairs. In many instances, including for zinc-finger coding genes, InterPro entries in alternative/reference protein pairs tend to be related when they are not identical.
 
-## Mass spectrometry identification
+#### Mass spectrometry identification
 
 Wrapper Perl scripts were developed for the use of SearchGUI v2.0.11 (Vaudel et al., 2011) (RRID:SCR_012054) and PeptideShaker v1.1.0 (Vaudel et al., 2015) (RRID:SCR_002520) on the Université de Sherbrooke’s 39,168 core high-performance Mammouth Parallèle two computing cluster (https://www.computecanada.ca/research-portal/accessing-resources/available-resources/). SearchGUI was configured to run the following proteomics identification search engines: X!Tandem (Craig and Beavis, 2004), MS-GF+ (Kim and Pevzner, 2014), MyriMatch (Tabb et al., 2007), Comet (Eng et al., 2013), and OMSSA (Geer et al., 2004). SearchGUI parameters were set as follow: maximum precursor charge, 5; maximum number of PTM per peptide, 5; X!Tandem minimal fragment m/z, 140; removal of initiator methionine for Comet, 1. A full list of parameters used for SearchGUI and PeptideShaker is available in Supplementary file 2, sheet 1. For PXD000953 dataset (Rosenberger et al., 2014), precursor and fragment tolerance were set 0.006 Da and 0.1 Da respectively, with carbamidomethylation of C as a fixed modification and Nter-Acetylation and methionine oxidation as variable modifications. For PXD000788 (Tong et al., 2014) and PXD000612 (Sharma et al., 2014) datasets, precursor and fragment tolerance were set to 4.5 ppm and 0.1 Da, respectively, with carbamidomethylation of cysteine as a fixed modification and Nter-Acetylation, methionine oxidation and phosphorylation of serine, threonine and tyrosine as variable modifications. For PXD002815 dataset (Hein et al., 2015), precursor and fragment tolerance were set to 4.5 ppm and 0.1 Da, respectively, with carbamidomethylation of cysteine as a fixed modification and Nter-Acetylation and methionine oxidation as variable modifications.Datasets were searched using a target-decoy approach against a composite database composed of a target database [Uniprot canonical and isoform reference proteome (16 January 2015) for a total of 89,861 sequences + custom alternative proteome resulting from the in silico translation of all human altORFs (available to download at https://www.roucoulab.com/p/downloads)], and their reverse protein sequences from the target database used as decoys. In order to separate alternative and reference proteins for FDR analyses, PeptideShaker output files were extracted with target and decoy hits. PSMs matching reference target or decoy proteins were separated from those matching alternative targets or decoys as previously described (Menschaert and Fenyö, 2017; Woo et al., 2014). PSMs that matched both reference and alternative proteins were automatically moved to the reference database group. PSMs were then ranked according to their PeptideShaker score and filtered at 1% FDR separately. Validated PSMs were selected to group proteins using proteoQC R tool (Gatto et al., 2015), and proteins were separately filtered again using a 1% FDR cut-off.
 
@@ -193,31 +657,31 @@ For spectral validation (Figure 5—figure supplements 1, 2, 3 and 4), synthetic
 
 In order to test if the interaction between alternative zinc-finger/reference zinc-finger protein pairs (encoded in the same gene) may have occurred by chance only, all interactions between alternative proteins and reference proteins were randomized with an in-house randomization script. The number of interactions with reference proteins for each altProt was kept identical as the number of observed interactions. The results indicate that interactions between alternative zinc-finger/reference zinc-finger protein pairs did not occur by chance (p<10−6) based on 1 million binomial simulations; highest observed random interactions between alternative zinc-finger proteins and their reference proteins = 3 (39 times out of 1 million simulations), compared to detected interactions = 5.
 
-## Code availability
+#### Code availability
 
 Computer codes are available upon request with no restrictions.
 
-## Data availability
+#### Data availability
 
 Alternative protein sequence databases for different species can be accessed at https://www.roucoulab.com/p/downloads with no restrictions.
 
-## Cloning and antibodies
+#### Cloning and antibodies
 
 Human Flag-tagged altMiD51(WT) and altMiD51(LYR→AAA), and HA-tagged DrP1(K38A) were cloned into pcDNA3.1 (Invitrogen) using a Gibson assembly kit (New England Biolabs, E26115). The cDNA corresponding to human MiD51/MIEF1/SMCR7L transcript variant 1 (NM_019008) was also cloned into pcDNA3.1 by Gibson assembly. In this construct, altMiD51 and MiD51 were tagged with Flag and HA tags, respectively. MiD51GFP and altMiD51GFP were also cloned into pcDNA3.1 by Gibson assembly. For MiD51GFP, a LAP tag (Hein et al., 2015) was inserted between MiD51 and GFP. gBlocks were purchased from IDT. Human altDDIT3mCherry was cloned into pcDNA3.1 by Gibson assembly using coding sequence from transcript variant 1 (NM_004083.5) and mCherry coding sequence from pLenti-myc-GLUT4-mCherry (Addgene plasmid # 64049). Human DDIT3GFP was also cloned into pcDNA3.1 by Gibson assembly using CCDS8943 sequence.
 
 For immunofluorescence, primary antibodies were diluted as follow: anti-Flag (Sigma, F1804) 1/1000, anti-TOM20 (Abcam, ab186734) 1/500. For western blots, primary antibodies were diluted as follow: anti-Flag (Sigma, F1804) 1/1000, anti-HA (BioLegend, 901515) 1/500, anti-actin (Sigma, A5441) 1/10000, anti-Drp1 (BD Transduction Laboratories, 611112) 1/500, anti-GFP (Santa Cruz Biotechnology, sc-9996) 1/10000, anti-mCherry (Abcam, ab125096) 1/2000.
 
-## Cell culture, immunofluorescence, knockdown and western blots
+#### Cell culture, immunofluorescence, knockdown and western blots
 
 HeLa cells (ATCC CRM-CCL-2, authenticated by STR profiling, RRID:CVCL_0030) cultures tested negative for mycoplasma contamination (ATCC 30–1012K), transfections, immunofluorescence, confocal analyses and western blots were carried out as previously described (Vanderperre et al., 2011). Mitochondrial morphology was analyzed as previously described (Palmer et al., 2011). A minimum of 100 cells were counted (n = 3 or 300 cells for each experimental condition). Three independent experiments were performed.
 
 For Drp1 knockdown, 25,000 HeLa cells in 24-well plates were transfected with 25 nM Drp1 SMARTpool: siGENOME siRNA (Dharmacon, Canada, M-012092-01-0005) or ON-TARGET plus Non-targeting pool siRNAs (Dharmacon, D-001810-10-05) with DharmaFECT one transfection reagent (Dharmacon, T-2001–02) according to the manufacturer’s protocol. After 24 hr, cells were transfected with pcDNA3.1 or altMiD51, incubated for 24 hr, and processed for immunofluorescence or western blot. Colocalization analyses were performed using the JACoP plugin (Just Another Co-localization Plugin) (Bolte and Cordelières, 2006) implemented in Image J software.
 
-## Immunoprecipitations
+#### Immunoprecipitations
 
 Immunoprecipitations experiments were conducted using GFP-Trap (ChromoTek, Germany) protocol with minor modifications. Briefly, cells were lysed with co-ip lysis buffer (0.5 % NP40, Tris-HCl 50 mM pH 7.5, NaCl 150 mM and two EDTA-free Roche protease inhibitors per 50 mL of buffer). After 5 mins of lysis on ice, lysate was sonicated twice at 11% amplitude for 5 s with 3 min of cooling between sonication cycles. Lysate was centrifuged, supernatant was isolated and protein content was assessed using BCA assay (Pierce). GFP-Trap beads were conditioned with lysis buffer. 40 µL of beads were added to 2 mg of proteins at a final concentration of 1 mg/mL. After overnight immunoprecipitation, beads were centrifuged at 5000 rpm for 5 min and supernatant was discarded. Beads were then washed three times with wash buffer (0.5 % NP40, Tris-HCl 50 mM pH 7.5, NaCl 200 mM and two EDTA-free Roche protease inhibitors per 50 mL of buffer) and supernatants were discarded. Immunoprecipitated proteins were eluted from beads by adding 40 µL of Laemmli buffer and boiling at 95°C for 15 min. Eluate was split in halfs which were loaded onto 10% SDS-PAGE gels to allow western blotting of GFP and mCherry tagged proteins. 40 µg of initial lysates were loaded into gels as inputs.
 
-## Mitochondrial localization, parameters and ROS production.
+#### Mitochondrial localization, parameters and ROS production.
 
 Trypan blue quenching experiment was performed as previously described (Vanderperre et al., 2016).
 

@@ -43,7 +43,7 @@ Here, we investigate the details of nevus growth arrest in a model in which mela
 
 ## Results
 
-## Dynamics of nevus growth
+### Dynamics of nevus growth
 
 Characterizing the dynamics of nevus growth and arrest requires observing nevi that started growing at known times. We took advantage of a mouse model in which Cre-mediated recombination introduces the activating V600E mutation into the endogenous Braf locus. When crossed onto a background carrying a Tyr-CreER transgene, the mice acquire the BrafV600E mutation only in cells of the melanocytic lineage, and only after Cre activation by 4-hydroxytamoxifen (4-OHT), applied either systemically or through painting on the skin.
 
@@ -51,21 +51,53 @@ As shown previously (Dankort et al., 2009), 4-OHT treatment of these mice leads 
 
 As shown in Figure 1, in mice whose back skin was treated with topical 4-OHT at postnatal day 2 (P2), P3 and P4, nevi were apparent macroscopically at telogen (P50; Figure 1A). Live imaging, using multi-photon microscopy (MPM; Saager et al., 2015), revealed that, like human nevi, mouse nevi consist of scattered nests of pigment-containing cells (Figure 1B). Nevi could also be visualized post-mortem, using a dissecting microscope, on the undersurface of pieces of telogen-stage back skin (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig1-v1.jpg)
+
+**Figure 1.:** (A-D) Visualization of nevi on BrafV600E mice. (A) Live imaging of back skin at telogen-stage (P50), following hair depilation. Scale bar = 5 mm. (B) Live imaging of a sample like that in panel A using multi-photon microscopy. The central square is an en face view of the skin (x-y plane), while rectangles above and to the right are cross-sections (x-z and y-z planes, respectively, with blue lines marking the location of the central image). Melanin autofluorescence appears yellow, second harmonic generation of collagen is cyan, and keratin autofluorescence is green. Dashing outlines dermal melanocyte nests. Scale bar = 318 µm. (C) Appearance of nevi on the undersurface of back skin (at P21). Scale bar = 1 mm. (D) Nevus development on the ventral (glabrous) surface of the paw. Images of a single paw were taken at the indicated ages. Scale bar = 0.5 cm. (E-F) Assessment of melanocyte proliferation. Sections are from albino wildtype (E) and BrafV600E (F) skin at P21. Melanocytes were identified by premelanosome protein (Pmel) immunohistochemistry and proliferation assessed by BrdU incorporation. Wildtype hair follicle (HF) melanocytes (E) incorporate BrdU whereas nevus melanocytes (F) do not. Scale bar = 20 µm.
+
+![Figure 1—figure supplement 1 .](https://cdn.elifesciences.org/articles/61026/elife-61026-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1 .:** (A) Nevus development on the ventral surface of the glabrous paw. Images were taken at the indicated age. (B–C) Identification of dividing or non-dividing melanocytes with the premelanosome protein (Pmel), and BrdU incorporation, in the (B) hair follicle (HF) of wild type mice and (C) in nests at P21 in BrafV600E mice. Scale bar = 20 µm.
+
 An alternate approach to visualization that did not require hair synchronization was to generate nevi by painting 4-OHT on glabrous (hairless) skin, such as the ventral surface of the paw, permitting tracking of individual nevi on a daily basis. As shown in Figure 1D, when forepaws were treated with 4-OHT from P2 through P4, tiny nevi could be detected as early as P6. Serial observation indicated that most nevi reach a maximum size somewhere between P16 and P21 (Figure 1D , Figure 1—figure supplement 1A). This suggests that, in the mouse, BrafV600E-transformed melanocytes arrest within 2–3 weeks. To confirm this, we used BrdU labeling to monitor DNA synthesis. Because melanin readily obscures immunohistochemical signals, these experiments were done in an albino (unpigmented) genetic background, using premelanosome protein (Pmel) staining to identify melanocytes. As shown in Figure 1F, albino mice generate nests similar to those seen in pigmented mice. In such animals, BrdU readily incorporated into hair follicle melanocytes (Figure 1E, Figure 1—figure supplement 1B), whereas by p21 nests within nevi were uniformly negative for BrdU, implying growth arrest (Figure 1F, Figure 1—figure supplement 1C).
 
 The conclusion that Braf-induced nevi are already growth-arrested by P21 agrees with the reports of others (Damsky and Bosenberg, 2017), and is lent further support by time course measurements of nest size by MPM (Figure 1C), which show that nest size distributions change insignificantly between P21 and P50 (Figure 4—figure supplement 1A-B).
 
-## Do nevi undergo OIS?
+### Do nevi undergo OIS?
 
 As discussed above, senescence is usually accompanied by distinctive gene expression. Various gene expression ‘signatures’ have been developed to help investigators identify senescent cells and distinguish them from cells that have become growth-arrested by other processes. We considered several of these (Source data 1):
 
 To determine whether any of these proposed signatures fits nevus melanocytes, we performed single-cell RNA sequencing on dissociated cells from the back skin of nevus-bearing mice at both P30 and P50 (i.e. after nevi have stopped growing), using wildtype skin as a control. Using known cell-type marker genes (Figure 2—figure supplement 1A-B), we identified 14 different cell types in the skin, including melanocytes (Figure 2A). Unsupervised clustering further sub-divided the melanocytes into four groups (Figure 2B): Two of them, Mel 0 and Mel 1, were composed of cells found only in nevus-bearing, and not wildtype, skin (Figure 2C); they are highly similar in gene expression, primarily differing in having a slightly lower level of pigment gene expression in Mel 1 versus Mel 0 (Figure 2D). We identify them as the ‘nevus melanocytes’, because they are seen only when nevi are present, and are by far the predominant melanocyte population in such animals.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig2-v1.jpg)
+
+**Figure 2.:** (A) Skin cell types are visualized with tSNE (cells = 35,141) from mice at P30 (n[BrafWT]=2 mice, n[BrafV600E]=2 mice) and P50 (n[BrafWT]=3 mice, n[BrafV600E]=3 mice). Melanocytes are outlined with a blue box. (B) Subclustering of melanocytes (n = 609) visualized on a tSNE plot. Four clusters were identified. (C) Visualization of melanocytes based on their genotype on a tSNE plot. (D) A heat map of genes involved in pigmentation. Each cluster expresses these genes at different levels. (E) Visualization of melanocytes, based on mouse age, on a tSNE plot. (F) Quantification of melanocytes in each cluster based on their genotype (BRAF wildtype or mutant).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heat map depicting the average gene expression of canonical markers for known cell types found in the skin. (B) Using gene expression of the indicated genes to identify cell-type clusters.
 
 Mel 2 cells express the lowest levels of pigmentation genes (Figure 2D), and are seen in both genotypes (Figure 2C) at all stages (although expanded in number in nevus-bearing animals (Figure 2F)). Their pattern of gene expression bears a strong resemblance to one recently published for melanocyte stem cells isolated from telogen-stage hair follicles (Zhang et al., 2020). In particular, they express Cd34, which has been proposed to be a marker for bulge-associated melanocyte stem cells (Joshi et al., 2019).
 
 Finally, cells of cluster Mel 3, which express the highest levels of pigment genes (Figure 2D), are found in both mutant and wildtype mice, but only at the P30 time point (Figure 2E–F). We thus identify them as mature hair follicle melanocytes, as such cells are present exclusively during anagen phase of the hair cycle (P30), and disappear during telogen (P50).
 
 Because gene signatures are based on the idea of up- and downregulation of expression relative to some baseline state, to test whether nevus melanocytes fit a known signature it is necessary to have comparison transcriptomes. We made two types of comparisons: nevus melanocytes versus every other cell type in the skin (which, with the possible exception of mature keratinocytes, we would not expect to be senescent); and the four melanocyte subclusters (two of which are nevus-associated and two of which are not) versus each other. In each case we computed average expression for each gene in every cell type or cluster, together with a standard error of the mean as a measure of dispersion. Expression values were then normalized to average expression across all of the cells being compared (i.e. all skin cells, or all melanocytes, depending on which comparison was being done) and log2-transformed, so that positive values signify upregulation (relative to the average for that gene), and negative downregulation. Gene expression was then visualized using heat maps (Figure 3A and Figure 3—figure supplements 1–2, with positive values in blue and negative in red). Because gene expression levels inferred from single-cell RNA sequencing tend to be noisy, particularly for genes with low expression, we ranked all genes by their minimum level of noise (i.e. normalized standard error of the mean in the least noisy cell type), and used this value (‘n-SEM’, which is also presented graphically as a bar to the right of each heatmap) to sort gene lists, so that maps vary from most to least reliable as one goes from top to bottom.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig3-v1.jpg)
+
+**Figure 3.:** Transcriptomes of clusters identified in Figure 2 were compared with proposed ‘signatures’ of senescence.( A) Gene expression data for clusters in Figure 2A and B were averaged by cluster and, for each gene, expressed as a ratio to the average expression level of that gene in the entire skin sample (‘Whole Skin’) or just the melanocyte clusters (‘Melanocytes’). The heat map displays the logarithm of that ratio, with blue representing upregulation and red downregulation, relative to the appropriate average. Two proposed signatures for genes upregulated in senescence (‘Classical’ and ‘Universal Up’) are shown (For other signatures, see Figure 3—figure supplement 1). Gene lists have been sorted by the minimum gene expression variability within the least variable cluster (green-brown bar). (B). The ‘Classical’ heatmaps in panel A are summarized as a bar graph displaying the sum of the log-transformed data. Also shown are summary results for a proposed signature of proliferation, ‘meta-PCNA’, which clearly distinguishes between cell types expected to be proliferative and non-proliferative (in normal skin). The ‘Classical’ senescence signature fails to identify nevus melanocytes (Mel 0 and Mel 1) as senescent, especially when compared with other cell types or other melanocytes. (C). Extension of the analysis in panel B to eight additional signatures.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The single-cell transcriptomes analyzed in Figure 3 were compared with each of the signatures in Source data 1. (A–D) Summary (A–C) and detailed (D) comparisons for the four melanocytes subclusters. (E–F). detailed comparisons of all skin subclusters to all signatures not shown in Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** As shown in Figure 3 and Figure 3—figure supplement 1, Mel 3 melanocytes score higher for expression of proliferation genes (meta-PCNA signature) that those of clusters Mel 0 and Mel 1. Here, cluster Mel 3 was divided into wildtype and Braf-mutant subsets, and levels of meta-PCNA genes compared. The heat map is essentially the same as in panel D of Figure 3—figure supplement 1, except three genes not expressed in cluster Mel 3 were removed. As in Figure 3, genes have been sorted by minimum normalized standard error of the mean. Highest confidence assignments are at left, lowest at right. Bars show genes expression in wildtype (orange) and Braf-mutant (blue) cells (error bars are SEMs). No statistically significant differences are seen, although there is a slight trend toward lower expression in mutant (suggesting Braf activation might be associated with some inhibition of proliferation).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A-B) In the scatter plots, values on the abscissa are gene expression fold-change data from microarray data of Pawlikowski et al., 2013, comparing gene expression in cultured BrafV600E-transduced human melanocytes with mock-transduced human melanocytes. Log-transformed fold-change data from probe sets mapping to the same gene were averaged, and genes without clear mouse orthologs were discarded. Values on the ordinate are from the present study, comparing gene expression in nevus melanocyte from BrafV600E-expressing skin (Mel 0 and 1) with non-nevus melanocytes of either Mel 2 (panel A, putative melanocyte stem cells) or Mel 3 (panel B, hair follicle melanocytes) from wild-type skin. Each dot represents a single gene; in the right-hand plot of panel B, only genes that were found to be significantly different (adjusted p-value<0.05) between nevus melanocytes and Mel 3 melanocytes are shown. Points at the very bottom or top of each plot represent genes that showed no detectable expression in either the nevus melanocytes, or the non-nevus melanocytes, respectively. Lines of best fit are shown, along with the coefficient of determination (R2). The small positive correlation in B is largely driven by points in the lower left quadrant. The shaded area in the right panel of B highlights 99 jointly-statistically significant genes that are substantially affected in this quadrant. (C) Sixteen of the genes associated with the shaded area in the right-hand panel of B are associated with cell proliferation (meta-PCNA signature; see Figure 3), while 19 are Mitf-target genes (as described by Hoek et al., 2008; Rambow et al., 2015; Tirosh et al., 2016). The remaining 64 are listed here. (D–G) All plots are based on the left-hand plot in panel B, colored to highlight particular sets of genes. Panel D shows genes belonging to the meta-PCNA signature; the data imply that nevus cells and cultured BRAF-transformed melanocytes are both growth-inhibited. Panel E highlights Mitf (green) and Mitf-target genes (red). The data imply that Mitf and its targets are nearly all downregulated in BRAFV600E-transduced cultured melanocytes, but not in nevus melanocytes (compared with hair follicle melanocytes); instead, Mitf expression is little-changed, and only a subset of Mitf target genes is downregulated (these include melanin synthesis and melanosome biogenesis genes Gpr143, Mlana, Pmel, Slc45a2, Tyr and Tyrp1). Panel F highlights genes ‘universally’ associated with senescence (Hernandez-Segura et al., 2017; see Figure 3). The data show that the senescent phenotype of the cultured BRAFV600E-melanocytes is well captured by this signature, whereas the phenotype of nevus melanocytes is not. Panel G highlights those genes considered by Pawlikowski et al., 2013 to be SASP-associated, most of which are upregulated in BRAFV600E-transduced cultured melanocytes. A subset of these appears upregulated in nevus melanocytes (arrows), although the very high fold-change values of those genes marked by arrows simply reflect the fact that transcripts for these genes were not detected in hair follicle melanocytes.
 
 Figure 3A shows the results for the ‘Classical’ and ‘Universal Up’ signatures (heat maps for the other signatures are shown in Figure 3—figure supplement 1). Here we see no strong enrichment of blue over red signals in nevus melanocytes, nor in most other cells. When compared with whole skin, using the ‘Classical’ signature, only Cdkn2a stands out as strongly upregulated in nevus melanocytes, but it is similarly upregulated in skin fibroblasts (it also has the noisiest data among genes in the signature). With the ‘Universal Up’ signature, more genes are downregulated than upregulated in nevus melanocytes. To quantify such impressions, we summed the log2-transformed data in each column in every heat map, producing the bar graphs in Figure 3B. We reasoned that summation of log-transformed data would emphasize consistent trends in the data while suppressing effects of noise (random positive and negative variation would tend to cancel out). The results suggest that skin fibroblasts better fit the ‘Classical’ senescent signature than any skin cell type, including nevus melanocytes, or indeed melanocytes of any cluster. As a control—to demonstrate the ability of this approach to correctly associate cell types with gene signatures— we analyzed the same data using a signature of cell proliferation, ‘meta-PCNA’, that represents 129 human genes most positively correlated with proliferation marker PCNA in a compendium of normal tissues (Venet et al., 2011). As shown in Figure 3B (also see Figure 3—figure supplement 1), this signature (122 genes of which had unambiguous mouse orthologs; Source data 1) identified two keratinocyte populations (‘IFE-cycling’ and ‘Outer Bulge 1’) as highly proliferative (in agreement with Joost et al., 2020), and mature (postmitotic) keratinocytes as non-proliferative. Importantly, it also correctly identified nevus melanocytes as non-proliferative—and other melanocytes as proliferative—in agreement with Figure 1E–F. Interestingly, the relatively high expression of proliferation-associated genes in non-nevus, hair follicle melanocytes (Mel 3) when compared with nevus melanocytes, was consistent between BrafV600E-expressing and control mice (Figure 3—figure supplement 2), suggesting that tissue context plays a role in whether BrafV600E-expressing cells even arrest growth.
 
@@ -75,11 +107,19 @@ To confirm that the senescence-associated gene expression signatures used here t
 
 Together these data do not support the view that any sort of senescence—oncogene-induced or otherwise—is characteristic of nevus melanocytes and therefore a possible cause of their growth arrest.
 
-## Does a cell-autonomous process arrest nevi?
+### Does a cell-autonomous process arrest nevi?
 
 As discussed above, OIS is usually presented as a cell-autonomous process (e.g. Dankort et al., 2009; Dhomen et al., 2009; Michaloglou et al., 2005; Serrano et al., 1997). The simplest cell-autonomous process that one might imagine is a probabilistic switch: Once oncogene activation commences, cells arrest with a fixed probability (per time or per cell cycle). Regardless of the molecular details, such a model makes distinctive predictions about clonal dynamics.
 
 Consider the clonal descendants of a single oncogene-transformed founder cell. For any value of the per-cell-cycle senescence probability (which we denote here as ‘s’), how many cells should we expect that clone to contain at any given time? How many cell cycles should it take before all of the cells in most clones should have arrested? Such questions are well studied in mathematics (Athreya and Ney, 1972), and easily solved by computer simulation. For this particular problem, there are two key results (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig4-v1.jpg)
+
+**Figure 4.:** (A-D) Monte Carlo simulations were carried out in which a single-cell replicates and arrests with fixed probability, s, per cell cycle. (A) Cell cycles required before proliferation stops in 95% or 99% of simulations. (B) Mean cells at 30 cell cycles, and fraction of clones expected to have arrested by then. (C–D) Clone (nevus) size distributions, after 30 cell cycles, assuming s = 0.56 (C), the probability required for 99% arrest, or 0.53 (D), the probability required for 95% arrest (see panel A). (E) Actual mouse nevus sizes at P21 (mice = 3, nevi = 768). Dashed line shows median radius, 76.8 µm. (F–I) Simulations in which proliferating cells arrest after multiple events (stages). (F) The value of s required to ensure arrest within 30 cell cycles, as a function of number of stages. (G–H) Clone size distributions for two (G), or three (H) stages, assuming the lowest per-stage transition probability compatible with 99% arrest by 30 cell cycles (see panel C). (I) Median clone size for different numbers of stages (labeled above each graph), transition probabilities per stage (plotted on the abscissa), and thresholds below which clones are excluded from analysis. Each curve represents a different exclusion threshold (between 0 and 200 cells for 1–4 stages, and up to 1600 cells for 5–8 stages, as labeled). Curves change from solid to dashed where the observability threshold becomes inconsistent with the observations in panel E (in panel E the median nevus has >3 times the area of the smallest observable nevi; in panel I the curves become dashed when median cell number is less than twice the observability threshold). Within the hatched region, fewer than 95% of clones arrest by 30 cell cycles. The thin line to right of the hatched region marks the probability at which 99% of clones arrest by 30 cell cycles. Solid gray demarcates median cell numbers between 100 and 3000 (see text). All results are from a minimum of 20,000 simulations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A-B) Quantification of nest radii from mice treated with 75 mg/mL of tamoxifen at (A) P21 (mice = 10, nests = 221) or (B) P50 (mice = 18 mice, nests = 428). The black dashed line represents the medians of 20.2 and 21.4 µm, respectively. (C) Quantification of human nests. The black dashed line represents the median radius of 70 µm.
 
 First, the time after which one can expect clones to have stopped growing (e.g. when all cells will have arrested in, say, 95% or 99% of clones) is a steep function of s. If s < 0.5, (i.e. less than a 50% chance of arrest per cell cycle), then some clones will never stop growing. If s is, say, 0.53, all clones will eventually stop growing, but one must wait 51 cell cycles before 99% of them do so (Figure 4A). Given typical lengths of postnatal mammalian cell cycles, and the fact that we observe cessation of mouse nevus growth in about 2–3 weeks, we may consider 30 to be a generous estimate for the maximum number of cell cycles by which nevi stop growing. To achieve 99% clonal arrest by 30 cell cycles, s must be around 0.56 or higher; to achieve arrest in 95% of clones, s must be greater than 0.52 (Figure 4A).
 
@@ -99,13 +139,21 @@ To determine how many independent steps would be required for a random cell-auto
 
 As described below (see Materials and methods), we estimate that the average nevus has about 500–1000 cells, but given possible errors in the estimate, we consider here a range of values between 100 and 3000 (gray-shaded area in Figure 4I). Subject to the constraint that enough clones must arrest within 30 cell cycles, and that observation thresholds cannot be so high that the observed median is less than twice the threshold, we find that, to produce nevi of even 200 cells requires 4–5 independent events (stages), depending on whether one requires 95% or 99% clonal arrest; to reach 500 cells requires 6–7 events. To reach even larger numbers—as would be found in human nevi, or in other mouse models (Chai et al., 2014)—would require even more stages.
 
-## Does a collective process arrest nevi?
+### Does a collective process arrest nevi?
 
 The above results indicate that, to generate in vivo-like distributions of nevi, a process something like a clock is needed, with cells either counting elapsed divisions (or time) since oncogene activation, or progressing through a sufficiently large sequence of random processes, with tightly controlled probabilities, so that the net outcome is clock-like.
 
 Cell-autonomous counting of cell cycles (up to about 12) can occur in early, cleavage-stage embryos (Tadros and Lipshitz, 2009), but no mechanism has been described to enable growing (as opposed to merely cleaving) cells to track more than a small handful of divisions (or the equivalent amount of time). Erosion of telomeres can mark the passage of large amounts of time in some cells, but this does not seem to occur to any significant degree in nevus melanocytes (Michaloglou et al., 2005).
 
 In contrast, if growth arrest is not cell-autonomous, but driven by cell–cell communication, then clock-like behavior is easily achieved, without any sort of intrinsic cell memory: Consider a simple communication circuit in which every cell’s arrest probability is simply a monotonically increasing function of the number of cells around it that have already arrested (Figure 5A). This mechanism describes a dynamically well-understood feedback process that normal tissues use to control size (Lander, 2011; Lander et al., 2009). Termed ‘renewal control’ (Buzi et al., 2015), because differentiated cells control the probability that progenitor cells self-renew, the process is often mediated by secreted TGF-β superfamily members such as myostatin, activin and GDF11 (Gokoffski et al., 2011; Lee et al., 2005). Because it implements the engineering principle of ‘integral negative feedback’, renewal control produces highly robust final population sizes that are independent of parameters such as cell cycle speed or the starting numbers of cells (Buzi et al., 2015; Lander, 2011; Lander et al., 2009).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig5-v1.jpg)
+
+**Figure 5.:** (A) A generic integral negative feedback scheme. ‘Renewal probability’, p, is the probability that offspring of cell division remain dividing (i.e. 1−p is the probability that they arrest). (B) Clone sizes generated by 9115 stochastic simulations of scheme A, modeled as an ordinary differential equation, where p falls with the number of arrested cells according to a Hill function with half-maximal effect at 50 arrested cells. (C–D) Results from a spatial (agent-based) simulation of scheme A, in which the signal from arrested cells spreads by diffusion. Histogram (C) tabulates clone sizes produced by 100 independent simulations (the histograms in both B and C are logarithmically-scaled to show that the data are well fit by log-normal distributions). Panels (D) are from a single simulation, showing locations of growing and arresting cells, and the gradient of the diffusible signal. Bar = 50 µm. The average cell cycle is equivalent to approximately 382 Monte Carlo time steps. (E–F) Using spatial coordinates and areas of 122 nests in seven individual fields at P21, nests were modeled as disks of equivalent area, and mean sizes of neighboring nests falling within successively larger annuli around each target nest were determined. Distributions of mean neighbor sizes up to 45 µm away from (E) large (radius >20 µm) and (F) small (radius <20 µm) nests (histograms) are compared with a ‘null distribution’ derived by random permutation (blue fields). Arrows show deviations in neighbor size distribution greater than expected at random, and substantially different for large versus small nests.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61026/elife-61026-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) The same nest size and location data were analyzed as in Figure 5E–F, except that distributions of mean neighbor sizes up to 150 μm away from (A) large (radius >20 μm) and (B) small (radius <20 μm) nests (histograms) were included. As in Figure 5E–F, observed distributions are compared with a ‘null distribution’ derived by random permutation (blue fields).
 
 When growth arrest due to renewal control is simulated as a probabilistic process (Figure 5B), the observed size distributions of clones are very close to log-normal. This is because renewal control effectively enforces cell cooperation, so that once a small fraction of a clone has arrested, the entire clone stops soon thereafter. The resulting narrow distribution of stopping times produces size distributions that are approximately log-normal, that is that emulate a clock.
 
@@ -145,37 +193,173 @@ Nevi are but one of many types of benign, clonal, proliferative lesions that ari
 
 ## Materials and methods
 
-## Mouse treatment for nevus development
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Braf</td>
+      <td>Mouse Genome Informatics (MGI)</td>
+      <td>MGI:88190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Tyr::CreER</td>
+      <td>MGI</td>
+      <td>MGI:3641203</td>
+      <td>MGI Transgene name: GeneTg(Tyr-cre/ERT2)13Bos</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Tg(Tyr-cre/ERT2)13Bos Braftm1Mmcm /BosJ</td>
+      <td>Dankort et al., 2009</td>
+      <td>RRID:MGI:5902125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pmel (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab137078 RRID:AB_2732921</td>
+      <td>Also known as anti-melanoma gp100 IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab6326 RRID:AB_305426</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit alexa fluor 594 conjugated (polyclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#A-11012 RRID:AB_2534079</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-rat alexa fluor 488 (polyclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#A-21470 RRIB:AB_2535873</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Braf_F</td>
+      <td>IDT</td>
+      <td>PCR primer</td>
+      <td>5’-TGAGTATTTTTGTGGCAACTGC −3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Braf_R</td>
+      <td>IDT</td>
+      <td>PCR primer</td>
+      <td>5’-CTCTGCTGGGAAAGCGCC −3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre_F</td>
+      <td>IDT</td>
+      <td>PCR primer</td>
+      <td>5’- GGTGTCCAATTTACTGACCGTACA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre_R</td>
+      <td>IDT</td>
+      <td>PCR primer</td>
+      <td>5’- CGGATCCGCCGCATAACCAGTG −3’</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-hydroxytamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#68047-06-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TrueBlack lipofuscin</td>
+      <td>Biotium</td>
+      <td>Cat#23007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mathematica</td>
+      <td>Wolfram</td>
+      <td>RRID:SCR_014448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scanpy</td>
+      <td>Wolf et al., 2018</td>
+      <td>RRID:SCR_018139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger</td>
+      <td>10X genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CompuCell3D</td>
+      <td>Swat et al., 2012</td>
+      <td>RRID:SCR_003052</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse treatment for nevus development
 
 BrafV600E, Tyr-CreER (C56BL/6) mice (RRID:MGI:5902125) were genotyped by PCR as previously described (Bosenberg et al., 2006; Dankort et al., 2007). The primers used in this study are: Braf forward 5’-TGAGTATTTTTGTGGCAACTGC −3’, Braf reverse 5’-CTCTGCTGGGAAAGCGCC −3’, Cre forward 5’- GGTGTCCAATTTACTGACCGTACA-3’ and Cre reverse 5’- CGGATCCGCCGCATAACCAGTG −3’. Topical administration of 4-hydroxytamoxifen (4-OHT; 25 mg/mL or 75 mg/mL in DMSO; 98% Z-isomer, Sigma-Aldrich) was administered to pups on their back and/or paws at ages P2, P3, and P4. Images of nevi on back and paw skin were taken with a digital camera at the indicated ages. Nevi from the underside of the skin were imaged using a dissection microscope. All mouse procedures were approved by UCI’s IACUC.
 
-## Live imaging of the skin by MPM
+### Live imaging of the skin by MPM
 
 Mice were sedated, shaved, and depilated with wax strips at the indicated ages (during a telogen phase) and the dorsal skin was imaged to capture the intrinsic fluorescent signal from keratin, melanin, as well as the second-harmonic-generation signal from collagen, using the LSM 510 NLO Zeiss system. Excitation was achieved with a femtosecond Titanium: Sapphire (Chameleon-Ultra, Coherent) laser at 900 nm. Emission was detected at 390–465 nm for second harmonic generation (blue) and 500–550 nm (green) and 565–650 (red) for fluorescence.
 
-## In vivo labeling with BrdU
+### In vivo labeling with BrdU
 
 BrdU was prepared in sterile PBS at 10 mg/mL and injected intraperitoneally into mice that were 20 days old at 100 mg/kg of body weight. 24 hr later the mouse was shaved, depilated with wax strips and the skin was removed and fixed in 10% formalin for 16 hr.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Formalin fixed paraffin embedded skins were sectioned 8 µm thick, deparaffinized with Xylene, and dehydrated in a series of increasing concentration of ethanol washes. Antigen retrieval was performed with 10 mM citric acid buffer at pH 6.0 for 10 min in a steamer. Samples were washed with PBS, incubated with TrueBlack for 30 s to reduce autofluorescence, and washed again with PBS. All antibodies were diluted at a 1:500 and incubated overnight at 4°C. Samples were washed and incubated with the appropriate secondary antibody. Melanocytes were identified with a Pmel antibody (EP4863(2); ab137078, Abcam; RRID:AB_2732921). Cells that incorporated BrdU were visualized with a BrdU antibody (ab6326, Abcam; RRID:AB_305426).
 
-## Cell isolation for single-cell RNA sequencing
+### Cell isolation for single-cell RNA sequencing
 
 BrafWT, Tyr-CreER or BrafV600E, Tyr-CreER mice were euthanized at either P30 (n = 2 of each genotype) or P50 (n = 3 of each genotype), shaved, and depilated. A 2 × 3 cm section of the dorsal skin was removed, and the fat scraped off from the underside. The piece was then diced into smaller pieces and suspended in dissociation buffer (RPMI, liberase 0.25 mg/mL, Hepes 23.2 mM, Sodium Pyruvate 2.32 mM, Collagenase:Dispase 1 mg/mL) for 50 min at 37°C with gentle agitation. After incubation, DNaseI (232U) was added for 10 min and then inactivated with fetal bovine serum and EDTA (1 mM). The tissue suspension was further dissociated mechanically with the GentleMACS using the setting m_imptumor_04.01, which runs for 37 s at various speeds. Single-cell suspensions were filtered twice through a 70 µm strainer and dead cells removed by centrifugation at 300 x g for 15 min. The live cells were washed with 0.04% UltraPure BSA:PBS buffer, gently re-suspended in the same buffer, and counted using trypan blue.
 
-## Library preparation for single-cell RNA sequencing and analysis
+### Library preparation for single-cell RNA sequencing and analysis
 
 Libraries were prepared using the Chromium Single Cell 3’ v2 protocol (10X Genomics). Briefly, individual cells and gel beads were encapsulated in oil droplets where cells were lysed and mRNA was reverse transcribed to 10X barcoded cDNA. Adapters were ligated to the cDNA followed by the addition of the sample index. Prepared libraries were sequenced using paired end 100 cycles chemistry for the Illumina HiSeq 4000. FASTQ files were generated from Illumina’s binary base call raw output with Cell Ranger’s (v2.1.0; RRID:SCR_017344) `cellranger mkfastq` command and the count matrix for each sample was produced with `cellranger count`. All ten samples (four samples from P30 [two control (wild type) and two mutant] and six samples from P50 [three control and three mutant]) were aggregated together with the `cellranger aggr` command to produce one count matrix that includes all samples. Data analysis was performed with Scanpy [v1.3.6; RRID:SCR_018139] (Wolf et al., 2018). Cells with fewer than 200 detected genes, and genes detected in less than three cells, were discarded. We calculated the percent mitochondrial gene expression and kept cells with less than 13% mitochondrial gene expression, and cells with fewer than 4000 genes/cell (35,141 cells). Each cell was normalized to total counts over all genes. In the final preprocessing step, we regressed out cell-cell variation driven by mitochondrial gene expression and the number of detected UMI. To identify clusters, we first performed principal component analysis on log-transformed data, using highly variable genes, Louvain clustering (Levine et al., 2015), and visualization with t-distributed stochastic neighbor embedding (tSNE).
 
-## Quantification of nevus and nest size and cell content
+### Quantification of nevus and nest size and cell content
 
 To quantify the sizes of nevi in mice, dorsal skin was excised and the underside visualized using a dissecting microscope. Nevi were traced, and area calculated using ImageJ. Nest sizes were quantified in live mice by MPM. Sizes of human nests were measured from histological samples (n = 5) obtained from the UCI Department of Dermatology. Samples were stained with hematoxylin and eosin and imaged with a microscope. A dermatologist manually identified the nests on each slide, and nest area was quantified using ImageJ. Human studies were performed under IRB protocol HS# 2019–5054.
 
 Estimates of cell numbers for mouse nevi were obtained in two different ways: First, we used estimates from Chai et al., 2014 for melanocytic nuclei per square area of mouse nevus, together with our observed median nevus radius of 76.8 µm; this approach led to an estimate of 897 cells/nevus. As the data of Chai et al., 2014 come from a different genetic model, we also estimated cell number as follows: Using 8 µm sections of back skin from Albino BrafV600E mice, we used fluorescence microscopy to measure the sizes of 194 Pmel-stained melanocytes within the nests of nevi, obtaining an average cell diameter of 5.68 µm, and counted approximately 14.4 cells per 104 µm3 of nest. In pigmented animals, we measured by MPM an average nest cross sectional area of 1385 µm2, an average nest volume of 38792 µm3, and an average number of nests per nevi of approximately 12, yielding an estimate of 672 cells/nevus. Given uncertainties in these measures, analyses in the manuscript take into account the possibility of an average that falls anywhere between 100 and 1000 cells.
 
-## Simulations and agent-based modeling
+### Simulations and agent-based modeling
 
 Stochastic, non-spatial simulations of renewal control were obtained by Monte Carlo simulation, in which cells duplicated every cell cycle, and then chose randomly whether to differentiate or continue dividing according to a probability modified by feedback from non-dividing cells. A Hill function, with Hill coefficient = 1, was used to represent the feedback.
 
@@ -185,6 +369,6 @@ Simulations were initialized by seeding a single cell, with a size of 25 pixel2,
 
 Upon division, a cell either remained dividing or became permanently arrested. All cells had a minimum 1% probability of arrest per cell division. Once an arrested cell was generated, it began continuous secretion of a signaling molecule that diffuses and promotes the transition from dividing to non-dividing (Kunche et al., 2016). Diffusion and decay of the feedback factor was modeled deterministically, with parameters chosen to produce a steady state decay length of 15 pixels. The concentration of this factor at the center of mass of each cell then augmented the arrest probability of that cell by an amount determined by a Hill function (see Source data 2).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses for single-cell RNA sequencing were performed using Scanpy (RRID:SCR_018139). Other statistical testing was done using Mathematica (RRID:SCR_014448). For the spatial analysis in Figure 5E–F, nest areas in each field were randomly swapped, with positions held constant, 5000 times, and the distributions of neighboring nest locations and sizes recalculated each time. This allowed us to generate an envelope enclosing the 5th and 95th percentiles for the permuted data, at each target nest size, and compare the observed data with the bounds of that envelope.

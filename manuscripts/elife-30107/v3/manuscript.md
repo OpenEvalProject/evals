@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.30107.001 Work on genetic model systems such as Drosophila and mouse has shown that the fundamental mechanisms of myogenesis are remarkably similar in vertebrates and invertebrates. Strikingly, however, satellite cells, the adult muscle stem cells that are essential for the regeneration of damaged muscles in vertebrates, have not been reported in invertebrates. In this study, we show that lineal descendants of muscle stem cells are present in adult muscle of Drosophila as small, unfused cells observed at the surface and in close proximity to the mature muscle fibers. Normally quiescent, following muscle fiber injury, we show that these cells express Zfh1 and engage in Notch-Delta-dependent proliferative activity and generate lineal descendant populations, which fuse with the injured muscle fiber. In view of strikingly similar morphological and functional features, we consider these novel cells to be the Drosophila equivalent of vertebrate muscle satellite cells.
+Work on genetic model systems such as Drosophila and mouse has shown that the fundamental mechanisms of myogenesis are remarkably similar in vertebrates and invertebrates. Strikingly, however, satellite cells, the adult muscle stem cells that are essential for the regeneration of damaged muscles in vertebrates, have not been reported in invertebrates. In this study, we show that lineal descendants of muscle stem cells are present in adult muscle of Drosophila as small, unfused cells observed at the surface and in close proximity to the mature muscle fibers. Normally quiescent, following muscle fiber injury, we show that these cells express Zfh1 and engage in Notch-Delta-dependent proliferative activity and generate lineal descendant populations, which fuse with the injured muscle fiber. In view of strikingly similar morphological and functional features, we consider these novel cells to be the Drosophila equivalent of vertebrate muscle satellite cells.
 
 ## Introduction
 
@@ -28,11 +28,19 @@ In a previous study, we showed that a small set of embryonically generated muscl
 
 ## Results
 
-## Two different types of cells are present in adult flight muscle
+### Two different types of cells are present in adult flight muscle
 
 During normal postembryonic development of the indirect flight muscles, a set of approximately 250 mitotically active adult muscle precursors (AMPs) located on the epithelial surface of the wing imaginal disc generates a large number of postmitotic myoblast progeny. These myoblasts subsequently migrate and fuse to form the indirect flight muscles (IFMs) of the adult. The IFMs are composed of the dorso-ventral muscles (DVMs) formed by the de novo fusion of myoblast and the dorsal longitudinal muscles (DLMs) which are formed using remnant larval muscles as templates (Gunage et al., 2014; Fernandes et al., 1991; Dhanyasi et al., 2015).
 
 Consistent with their developmental origin, which results in a large myoblast pool, the IFMs are large multinucleated cells formed by myoblast fusion. For convenience we focus here on the DLMs. The multinucleate nature of these muscles is evident in confocal optical sections through adult flight muscle fibers labeled by TOPRO (marks all nuclei) and myosin heavy chain (MHC) immunostaining, which marks myofibers. As expected, numerous nuclei, clearly located intra-cellular between individual myofibrils, are seen throughout the muscle fiber (Figure 1A, A’, white arrowheads). Interestingly, however, these optical sections also reveal nuclei located peripherally in close proximity to the muscle fiber surface (Figure 1A, A’, green arrowheads).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/30107/elife-30107-fig1-v3.jpg)
+
+**Figure 1.:** (A) Dorsal longitudinal muscles (DLMs) stained for Myosin Heavy Chain (MHC) (red) to delineate muscle fibrils and TOPRO (Blue) marking nuclei. White arrowhead marks one example nucleus, surrounded by MHC-labeled myofibrils showing it is inside a myofiber. Green arrowhead, white circle, marks one example nucleus located at the peripheral surface of MHC labeled myofiber. (A’) Orthogonal view of (A). (B) DLMs stained for Dmef2 Gal4 > UAS mCD8::GFP marking muscle membrane (green) MHC (red) and TOPRO (blue). Unfused nuclei are enveloped in GFP-labeled membrane (white arrowhead), B’ Orthogonal view of (B) at the muscle fiber surface. (C, D) Magnified views of nucleus indicated in (A’) and (B’), respectively. N = 15. Scale bar 10 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30107/elife-30107-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) DLMs stained for Actin88F (green) to delineate muscle fibrils (Phalloidin, Red) and TOPRO (Blue) marking nuclei. Red arrowhead marks one example nucleus, between two DLM myofibers (marked by Act88F) showing through an XY axis view and the orthogonal [YZ axis view (A’]) that the nucleus is outside the myofibers. n = 7. (B) DLMs stained for Tropomyosin (green) to delineate muscle fibrils (Phalloidin, Red) and TOPRO (Blue) marking nuclei. White arrowhead marks one example nucleus, surrounded by tropomyosin myofibrils showing it is inside a myofiber. Red arrowhead marks one example nucleus, between two DLM myofibers. (B’) Orthogonal view of (B) n = 10 Scalebars=10 um.
 
 Additional co-labeling of these adult muscle fibers with Dmef2-Gal4 driving mCD8GFP (marking muscle fiber membranes) indicates that these peripherally located nuclei belong to cells at the muscle fiber surface, which are apparently not fused with their associated muscle fiber cell (Figure 1B, B’, white arrowheads). Figure 1C, D show some these nuclei at higher magnification revealing that they are located at the muscle fiber surface and are surrounded by membrane-specific mCD8GFP label implying that these nuclei are not situated inside the muscle fiber. This observation is confirmed by co-staining these adult muscle fibers for expression of either Act88F, an indirect flight muscle-specific isoform of actin, or Tropomyosin (Figure 1—figure supplement 1).
 
@@ -40,15 +48,31 @@ Scans along the z-axis through co-labeled optical sections of muscle fibers indi
 
 Taken together, these findings indicate that two different types of cells are present in adult muscle. The first comprises the well-characterized population of differentiated myoblasts that have fused to generate the large multinuclear muscle fibers. The second comprises a novel population of small, apparently unfused cells located at the surface of the muscle fibers. In the following, we will refer to these small, unfused muscle fiber-associated cells as Drosophila satellite cells.
 
-## Ultrastructure of satellite cells in adult flight muscle
+### Ultrastructure of satellite cells in adult flight muscle
 
 To characterize the morphological features of the close association of satellite cells with the large multinucleated muscle fibers at the ultrastructural level, an electron-microscopic analysis of adult DLM fibers was carried out. In electron micrographs, the mature muscle fibers are large cells containing multiple prominent nuclei, numerous organelles, as well as extensive sets of elongated myofibrils, and are surrounded by a prominent extracellular matrix (Figure 2A). In addition to these typical multinucleated muscle cells, the ultrastructural analysis also shows satellite cells as small, wedge-shaped cells closely apposed to the large multinucleated muscle fibers (Figure 2B, Figure 2—figure supplement 1). These satellite cells have compact nuclei and small cytoplasmic domains with few organelles. The intact cell membrane of the satellite cells is directly adjacent to the intact muscle cell membrane demonstrating unequivocally that they are not fused with the muscle cells. They do, however, appear to be embedded in the same contiguous extracellular matrix of their adjoining muscle fiber.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/30107/elife-30107-fig2-v3.jpg)
+
+**Figure 2.:** (A, B) Transmission electron micrographs of adult flight muscle. (A) Nuclei inside DLM fibers are large round structures surrounded by nuclear membranes (white dotted lines). A. Distinct sarcomeres in the cytoplasm of the muscle syncytium (marked as S) and mitochondria (marked as M). (B) Mononucleate cell apposed to mature muscle surface. Cell membrane (marked by a green double-headed arrow) seen distinctly apposed to mature muscle membrane (red arrow) and beneath the basement membrane (yellow arrow) of the muscle fiber. Organelles and wedged shaped nucleus (white dotted line) are visible in the cytoplasm of this cell. N = 8 Scale bar 1 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30107/elife-30107-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Left panel: Mononucleate cell outside mature DLM fiber. Cell boundary marked with colored dotted lines; green apposed to mature muscle surface; red away from the muscle fiber. ‘N’ surrounded by white dotted line marks the cell’s nucleus. Red ‘S’s denote sarcomeric arrays in mature DLM fiber; Yellow ‘M’s mark mitochondria inside fiber DLM mature. Right panel: Higher magnification of the same mononucleate cell in left panel. ‘N’ surrounded by white dotted line marks the cell’s nucleus. Yellow ‘M’ marks the nucleus of the unfused cell.
+
 In terms of their ultrastructural morphology, the satellite cells in adult flight muscle share significant characteristics with satellite cells of vertebrate muscle. In both cases, the cells are small, mononucleated and intercalated between the cell membrane and the extracellular matrix of mature muscle fibers.
 
-## Drosophila satellite cells are lineal descendants of adult muscle precursors
+### Drosophila satellite cells are lineal descendants of adult muscle precursors
 
 Previous work has shown that the myoblasts which fuse to generate adult muscle derive from a small set of stem cell-like AMPs (Gunage et al., 2014). Proliferating AMPs located on the larval wing disc can be identified by clonal MARCM labeling experiments using a Dmef2-Gal4 driver (Lee and Luo, 2001; Wu and Luo, 2006); (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30107/elife-30107-fig3-v3.jpg)
+
+**Figure 3.:** (A) Single-cell MARCM clones of AMP lineage (mef2-Gal4 driver) induced in the third instar (120AEL) and recovered from a single 15 m heat shock at 37°C, clones from the notum of the wing disc (induced in the late third instar (120AEL). A labeled single cell clone (green) is indicated by a white arrow. Right panel shows the same cell (white arrow) in orthogonal view. The AMP cell lies in close proximity to wing disc epithelium. Phalloidin (red) marks F-actin and TOPRO (blue) marks all the nuclei. (B). Simplified schematic describing lineal origin of adult DLM fibers and satellite cells. AMPs (green circles) on the third instar wing disc notum give rise to myoblasts (beige circles) located distal to the epithelium. Cells from the AMP lineage either fuse to muscle templates and give rise to adult DLMs or remain unfused as mononucleate cells closely apposed to the DLM surface. (C). MARCM clones with mef2-Gal4 driving UAS mCD8::GFP induced in the third instar (~120 hr AEL) and recovered in the adults stage. 3D reconstruction of adult muscle with mononucleate GFP-labeled cells (green arrows) located on the surface of mature DLM fibers. Phalloidin (red) marks F-actin and TOPRO (blue) marks all the nuclei. (D) Orthogonal view of the same preparation as in (C). mef2-Gal4-labeled mononucleate MARCM clones (GFP positive) indicated with green arrowheads clearly seen on the surface of adult DLMs. (E) Simplified schematic of (D) Red checkered ovals containing blue ovals indicate mature DLMs. Cells with red membranes and green nuclei represent satellite cells. Scale bars in (A, C, D) 50 μm. N = 12.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30107/elife-30107-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** e33c-Gal4 driver (specific for hemocytes) used to drive UAS mCD8::GFP expression. Muscles are stained for GFP (anti-GFP, green), F-actin (Phalloidin, red) and TOPRO (blue, marks all nuclei). In both control (A) and injured (B) no GFP-labeled cells were seen. Scalebar = 50 μm.
 
 Given the fact that Drosophila satellite cells, like myoblasts, are labeled by the Dmef2-Gal4 driver and considering their close ultrastructural association with muscle fibers, we wondered if these satellite cells might also be lineal descendants of AMPs (Figure 3B). To investigate this, we induced MARCM clones in late larval stages and recovered labeled clones in the adult muscle. In these experiments, Dmef2-Gal4 was used to drive a GFP reporter label, muscle cells were co-labeled using MHC immunostaining, and cell nuclei were co-labeled with TOPRO. Labeled cells in the adult were visualized using confocal microscopy and analyzed in serial stacks of optical sections.
 
@@ -56,7 +80,7 @@ These clonal labeling experiments reveal the presence of a small number of GFP l
 
 These clonal MARCM labeling experiments are in accordance with the notion that Drosophila satellite cells are lineal descendants of AMPs, which, in contrast to myoblasts, do not fuse with the mature muscle cells but rather persist as unfused cells in the adult albeit closely associated with the mature muscle fibers. To control for a possible contribution of hemocytes lineages to the unfused cell population, we used the e33c-Gal4 line to show that hemocytes are not seen in muscles (Figure 3—figure supplement 1; for expression pattern of the e33c-Gal4 in hemocytes see Fossett et al. (2003) and Matova and Anderson (2006).
 
-## The Zfh1 transcription factor is a marker for satellite cells in adult muscle
+### The Zfh1 transcription factor is a marker for satellite cells in adult muscle
 
 To facilitate the analysis of satellite cells, we searched for a protein specifically expressed in adult DLM satellite cells by examining the expression of a set of transcription factors implicated in embryonic muscle specification and myoblast fusion competence. Among these, we identified Zfh1 as a specific marker for adult muscle satellite cells. Zfh1is a zinc finger transcription factor that regulates somatic myogenesis from embryonic stages onward (Postigo and Dean, 1999; Sellin et al., 2009). In larval stages, Zfh1 is expressed in all of the AMP lineage cells on the wing discs; both AMPs and myoblasts are labeled (Figure 4A).
 
@@ -82,7 +106,7 @@ Immunolabeling experiments show that at 20 hr APF all of the nuclei of myoblasts
 
 Taken together, these findings establish Zfh1 expression as a specific marker for satellite cells in adult muscle. Moreover, they characterize the dramatic change in Zfh1 expression that occurs in DLM muscle development between 20 hr and 30 hr APF, and provide further support for the lineal origin of satellite cells from the muscle stem cell-like AMPs.
 
-## Muscle injury results in the proliferative expansion of the satellite cell population and the generation of fusion competent myoblasts
+### Muscle injury results in the proliferative expansion of the satellite cell population and the generation of fusion competent myoblasts
 
 Vertebrate satellite cells are essential for muscle regeneration and repair in that muscle damage results in proliferative activity of satellite cells and the production of myoblasts that help rebuild compromised muscle tissue (Mauro, 1961; Brack and Rando, 2012; Relaix and Zammit, 2012). To investigate if satellite cells in Drosophila can also respond to muscle injury by increased proliferate activity, we induced physical damage in adult flight muscles mechanically and subsequently probed the damaged muscle for proliferative activity in the satellite cell population.
 
@@ -118,7 +142,7 @@ In age matched, uninjured animals with G-trace induced in the adult stage, Zfh1 
 
 Taken together, these findings imply that following muscle injury, cells of the Zfh1 lineage, that is, lineal descendants of the Zfh1-expressing satellite cells, fuse with the damaged muscle fibers. This fusion process, which is preceded by a proliferative expansion of the normally quiescent satellite cell population, may contribute to the promotion of muscle fiber repair and, hence, represent a remarkable functional similarity in the role of satellite cells in response to muscle injury in flies and vertebrates.
 
-## Proliferative activity of satellite cells in response to muscle injury requires Notch expression in satellite cells and Delta expression in muscle fibers
+### Proliferative activity of satellite cells in response to muscle injury requires Notch expression in satellite cells and Delta expression in muscle fibers
 
 It has previously been shown that proliferative activity of AMPs during development requires Notch signaling (Gunage et al., 2014). Might the AMP lineal descendant satellite cells in adult muscle also require Notch signaling for injury-induced proliferative activity? To investigate this, we first determined if satellite cells express Notch. For this, we used a Notch-Gal4 driver in G-trace experiments. In uninjured controls, all the nuclei within the muscle fiber were GFP-positive, in accordance with their lineal origin from Notch expressing AMPs, but none were RFP positive (Figure 11A). In contrast the muscle surface associated nuclei were RFP positive due to real-time activity of the Notch-Gal4 driver in implying that the nuclei of satellite cells express Notch. To establish that the RFP-positive nuclei were indeed the nuclei of satellite cells, we combined these G-trace experiments with Zfh1-immunolabeling. In these experiments the RFP-positive nuclei at the muscle fiber surface were always Zfh1-positive, while the GFP-positive nuclei within the muscle fiber were Zfh1-negative (Figure 11B). These findings indicate that satellite cells in intact muscle fibers express Notch.
 
@@ -166,7 +190,7 @@ Drosophila has proven to be a powerful genetic model system for unraveling the f
 
 ## Materials and methods
 
-## Fly strains, genetics and MARCM
+### Fly strains, genetics and MARCM
 
 Fly stocks were obtained from the Bloomington Drosophila Stock Centre (Indiana, USA) and were grown on standard cornmeal medium at 25°C.
 
@@ -180,20 +204,20 @@ G-trace analysis-
 
 Notch Gal4 (Bloom 49528) (Dey et al., 2016) was crossed to GTRACE stock(Bloom, 28280). F1-Progenies, N > GTRACE, from this cross were used for the experimental analysis. The following strains were a kind gift from Christian Böekel (Technische Universität Dresden, Germany): +;+;Zfh1-T2A-Gal4, tub-Gal80ts/TM3 and +;+;Zfh1::GFP/TM3. Crosses were set with +;+;Zfh1-T2A-Gal4, tub-Gal80ts/TM3 and GTRACE/Cyo; Gal80ts (Lolitika Mandal, IISCER, Mohali) animals at 18°C. Eclosed animals between 1 to 3 days of age were shifted to 29°C for 72 hr before injury. Injured animals and uninjured controls were incubated at 29°C until dissection.
 
-## Immunohistochemistry and confocal microscopy
+### Immunohistochemistry and confocal microscopy
 
 Flight muscles were dissected from specifically staged flies were dissected and then fixed in 4% paraformaldehyde diluted in phosphate buffered saline (PBS pH-7.5). For each experiment group in this manuscript, replicates ranged from 6 to 25. Immunostaining was performed according to (Weitkunat and Schnorrer, 2014) with few modifications. In brief, samples were then subjected to two washes of 0.3% PTX (PBS + 0.3% Triton-X) and 0.3% PBTX (PBS + 0.3% Triton-X+0.1 %BSA) for 6 hr each. Primary antibody staining was performed for overnight on a shaker and secondary antibodies were added following four washes of 0.3% PTX 2 hr each. Excess of unbound secondary antibodies was removed at the end of 12 hr by two washes of 0.3% PTX 2 hr each following which samples were mounted in Vectashield mounting media. For immunostaining, anti-GFP (Chick, 1:500, Abcam, RRID: AB_300798), anti-Delta (monoclonal mouse, 1:50, Hybridoma bank C594.9B RRID:AB_528194), anti-MHC (Mouse, 1:100, kind gift from Dr. Richard Cripps), TOPRO-3-Iodide (1:1000, Invitrogen), Hoechst 33342 (1:500, ThermoFisher) anti-Neuralized (1:50, Rabbit) (Lai et al., 2001), Anti-Zfh-1 (1:1000, rabbit, gift from Prof. Ruth Lehmann lab), Anti-Dmef2 (rabbit 1:3000, gift from Bruce Patterson RRID:AB_2568604) Phalloidin (Alexa-488/647/568 conjugate, 1:500, ThermoFisher), anti-phosphohistone-H3 (Rabbit, 1:100, Millipore), anti-Spectrin (3A9 mouse monoclonal, DSHB 1:5, RRID:AB_528473), anti-Vinculin (1:200, mouse Abcam RRID:AB_444215) antibodies were used. Secondary antibodies (1:500) from Invitrogen conjugated with Alexa fluor-488, 568 and 647 were used in immunostaining procedures.
 
-## Confocal and electron microscopy
+### Confocal and electron microscopy
 
 For confocal experiments, an Olympus FV 1000 confocal point scanning microscope and Zeiss LSM 780 were used for image acquisition. Images were processed using ImageJ software (Rasband WS, ImageJ U S. National Institutes of Health, Bethesda, Maryland, USA, http://imagej.nih.gov/ij/, 1997–2012). Quantification of number of actively dividing cells in PH-3 labeling experiments was performed as described in Gunage et al., 2014).
 
 For electron microscopic analysis, the muscles were processed according to (Garcia-Murillas et al., 2006). In brief, flight muscles were dissected in ice-cold fixative (2.5% glutaraldehyde in 0.1 M PIPES buffer at pH 7.4). After 10 hr of fixation at 4°C, samples were washed with 0.1M PIPES, post-fixed in 1% OsO4 (30 min), and stained in 2% uranyl acetate (1 hr). Samples were dehydrated in an ethanol series (50%, 70%, 100%) and embedded in epoxy. Ultrathin sections (50 nm) were cut and viewed on a Tecnai G2 Spirit Bio-TWIN electron microscope. Results presented in this manuscript were replicated eight times.
 
-## Muscle injury
+### Muscle injury
 
 To induce regeneration response in the flight muscle, flies were injured through the cold stab method. Flies were CO2 anesthetized and a single stab injury was performed manually with dissection pin or tungsten needle dipped in liquid nitrogen (Fine Scientific Tools, Item no-26002–10, Minutien Pins-Stainless Steel/0.1 mm Diameter). Care was taken so that the tungsten needle tip did not cross the hemithorax so that the damage was restricted to a minimum. Although completely effective, the method has limited precision. Control flies were age matched adult flies but with no injury to muscles. Injured animals recovered on corn meal Drosophila food. The flies were then processed for immunostaining of flight muscles as mentioned in the immunohistochemistry procedure. The detailed protocol of muscle injury can be found at Bio-protocol (Chakraborty et al., 2018).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance of differences in cell counts between control and treatment groups were calculated by the Student’s t test on Microsoft Excel. In all quantitations, the mean and standard error for each group are presented.

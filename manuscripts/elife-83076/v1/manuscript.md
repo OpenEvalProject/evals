@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01a8ajp46 iGReD, Université Clermont Auvergne, CNRS, INSERM, Faculté de Médecine Clermont-Ferrand France
+1. iGReD, Université Clermont Auvergne, CNRS, INSERM, Faculté de Médecine Clermont-Ferrand France ([ROR:01a8ajp46](https://ror.org/01a8ajp46))
 
 † Corresponding author
 

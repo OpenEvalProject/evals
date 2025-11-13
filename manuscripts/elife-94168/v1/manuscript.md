@@ -17,17 +17,25 @@
 
 ### Affiliations
 
-1. https://ror.org/006w34k90 Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
+1. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
 ## Abstract
 
-The mushroom body (MB) is the center for associative learning in insects. In Drosophila , intersectional split-GAL4 drivers and electron microscopy (EM) connectomes have laid the foundation for precise interrogation of the MB neural circuits. However, investigation of many cell types upstream and downstream of the MB has been hindered due to lack of specific driver lines. Here we describe a new collection of over 800 split-GAL4 and split-LexA drivers that cover approximately 300 cell types, including sugar sensory neurons, putative nociceptive ascending neurons, olfactory and thermo-/hygro-sensory projection neurons, interneurons connected with the MB-extrinsic neurons, and various other cell types. We characterized activation phenotypes for a subset of these lines and identified a sugar sensory neuron line most suitable for reward substitution. Leveraging the thousands of confocal microscopy images associated with the collection, we analyzed neuronal morphological stereotypy and discovered that one set of mushroom body output neurons, MBON08/MBON09, exhibits striking individuality and asymmetry across animals. In conjunction with the EM connectome maps, the driver lines reported here offer a powerful resource for functional dissection of neural circuits for associative learning in adult Drosophila .
+The mushroom body (MB) is the center for associative learning in insects. In Drosophila, intersectional split-GAL4 drivers and electron microscopy (EM) connectomes have laid the foundation for precise interrogation of the MB neural circuits. However, investigation of many cell types upstream and downstream of the MB has been hindered due to lack of specific driver lines. Here we describe a new collection of over 800 split-GAL4 and split-LexA drivers that cover approximately 300 cell types, including sugar sensory neurons, putative nociceptive ascending neurons, olfactory and thermo-/hygro-sensory projection neurons, interneurons connected with the MB-extrinsic neurons, and various other cell types. We characterized activation phenotypes for a subset of these lines and identified a sugar sensory neuron line most suitable for reward substitution. Leveraging the thousands of confocal microscopy images associated with the collection, we analyzed neuronal morphological stereotypy and discovered that one set of mushroom body output neurons, MBON08/MBON09, exhibits striking individuality and asymmetry across animals. In conjunction with the EM connectome maps, the driver lines reported here offer a powerful resource for functional dissection of neural circuits for associative learning in adult Drosophila.
 
 ## Introduction
 
 In the insect brain, the mushroom body (MB) serves as the center for associative learning (Davis, 2023; Figure 1A-C; reviewed in Davis, 2023; Heisenberg, 2003; Modi et al., 2020; Owald and Waddell, 2015; Rybak and Menzel, 2017). Information about sensory inputs such as odor and color which can serve as a conditioned stimulus (CS), comes into the calyx of the MB. In Drosophila, approximately 2000 Kenyon cells (KCs), the MB’s primary intrinsic neurons, represent the identity of sensory stimuli by their sparse activity patterns (Honegger et al., 2011; Perez-Orive et al., 2002; Turner et al., 2008). Dopaminergic neurons (DANs) transmit signals related to the unconditioned stimulus (US), such as sugar rewards or electric shock punishments, to the MB (Burke et al., 2012; Kirkhart and Scott, 2015; Liu et al., 2012; Mao and Davis, 2009; Schwaerzel et al., 2003). DANs and MB output neurons (MBONs) collectively form 15 compartmental zones that tile down the length of the KC axons in the MB lobes (Aso et al., 2014a; Tanaka et al., 2008). Memories are stored as altered weights of synaptic connections between KCs and MB output neurons (MBONs) in each compartment (Hige et al., 2015a; Owald et al., 2015; Pai et al., 2013; Plaçais et al., 2013; Séjourné et al., 2011). Relative activity levels of MBONs across compartments represent the valence of the learned CS and drive memory-based behaviors (Aso et al., 2014b; Owald et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig1-v1.jpg)
+
+**Figure 1.:** (A) In associative learning, flies adjust their behavioral responses to conditioned stimuli (CS), such as odors and colors, based on the contingency with innately rewarding or punishing unconditioned stimuli (US), such as sugar, bitter, shock and heat. A schematic of Drosophila melanogaster is from Namiki et al., 2018. (B) An image of a standard fly brain with a rendering of the mushroom bodies (MB) and the antennal lobes (AL). Projection neurons (PN) convey information from the AL to the calyx of the MB and the lateral horn (LH). (C) A simplified diagram of the mushroom body circuit. The identity of sensory stimuli is represented by sparse activity patterns of Kenyon cells (KCs). A subset of dopaminergic neurons (DANs) respond to punishment/reward. Dopamine modulates weights of synapses between KCs and MB output neurons (MBONs) depending on the activity status of KCs. The skewed activity patterns of MBONs across compartments in response to the learned stimulus drive memory-based actions and feedback pathways to DANs. (D) A summary of the workflow to generate split-GAL4 lines. (E) Coverage of the collection. The crepine (CRE), the superior medial protocerebrum (SMP), the superior intermediate protocerebrum (SIP) and the superior lateral protocerebrum (SLP) are MB adjacent brain areas where MBONs and DANs most often have arborizations. CX, central complex. LAL, lateral accessory lobes. (F) Examples of cell types covered by the collection. Expression patterns of CsChrimson-mVenus (green) are shown with neuropil counterstaining of Bruchpilot (Brp) with nc82 antibody (magenta). The whole body image of Gr64f-Gal4 line at the left middle panel is shown with muscle counterstaining (magenta). Light gray labels indicate EM-identified neurons labeled by each line (see Supplementary file 1 for details). Putative cell types are bracketed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Additional examples of cell types covered by the collection. Expression patterns of CsChrimson-mVenus (green) are shown with neuropil counterstaining of Brp (magenta). Only one brain hemisphere is shown. Light gray labels indicate EM-identified neurons labeled by each line (see Supplementary file 1 for details).
 
 The recently completed electron microscopy (EM) connectomes of the Drosophila brain in larvae and adults revealed thousands of interneurons upstream of DANs, which convey reinforcement signals to the MB, and downstream of MBONs, which link the MB to premotor pathways and other higher-order brain centers (Dorkenwald et al., 2023; Eichler et al., 2017; Eschbach et al., 2020; Hulse et al., 2021; Li et al., 2020; Scheffer et al., 2020; Winding et al., 2023; Zheng et al., 2018). Functional investigation of these interneuron cell types has been limited by the lack of cell-type-specific driver lines.
 
@@ -37,25 +45,79 @@ Since the MB split-GAL4 lines were generated, new genetic and computational tool
 
 ## Results and discussion
 
-## Split-GAL4 design and anatomical screening
+### Split-GAL4 design and anatomical screening
 
 We screened the expression patterns of over 4000 intersections of split-GAL4 hemidrivers to identify lines potentially labeling neurons of interest (Figure 1D). From this we selected 1183 split-GAL4 lines for further characterization using both higher resolution imaging, and MCFO to visualize the individual neurons that compose each split-GAL4 pattern. For these lines, we employed higher resolution confocal microscopy and visualized the individual neurons that compose each split-GAL4 pattern with the MCFO method. We eventually identified 828 lines that we deemed experimentally useful based on their specificity, intensity and consistency. These fly lines are now publicly available through the webpage of the Janelia Flylight team project (https://splitgal4.janelia.org/cgi-bin/splitgal4.cgi), where we have deposited a total of 28,376 confocal images from 6374 tissue samples to document their expression patterns. We included lines with off-target expression, as they can be valuable for anatomical, developmental or functional imaging experiments, even if not suitable for behavioral experiments. Additionally, we retained drivers that serendipitously had specific and likely useful labeling of cell types we were not intentionally screening for. Examples of confocal microscopy images are shown in Figure 1F, Figure 1—figure supplement 1.
 
 We have annotated our split-GAL4 lines by matching the labeled neurons to their counterparts in the hemibrain connectome volume (Scheffer et al., 2020). We utilized confocal images registered to a standard brain, and matched neuronal cell types in each split-GAL4 line with those present in other lines and with the EM-reconstructed neurons (Figure 2A–D, see Materials and methods). This light microscopy (LM) to EM matching process allows us to locate the cell type of each driver line in the connectome map, enabling users to select driver lines for further functional investigations based on their upstream and downstream synaptic partners (Figure 2E; Figure 2—figure supplements 1–20).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-v1.jpg)
+
+**Figure 2.:** (A) Expression pattern of SS45245-split-GAL4 in the brain. (B) MCFO image of SS45245 showing individual labeled neurons. (C) Frontal (top) and ventral (bottom) views of segmented light microscopy (LM) images of an exemplary split-Gal4 line (SS45245) visualized with a membrane reporter (myr-smGFP-FLAG) that was aligned to the JRC2018 standard brain. Projections are shown with outline of relevant neuropils. (D) The skeleton reconstructed from electron microscopy (EM) data of the matched cell type CRE011 in the hemibrain connectome. The CRE011 cell on the right hemisphere is shown. (E) Synaptic connectivity of CRE011 with MBONs and DANs in the MB derived from the hemibrain connectome.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Frontal and ventral views of segmented light microscopy (LM) images of SS00460 in the JRC2018 standard brain. Projections are shown with the outline of relevant neuropils. A’ (ventral) is a rotated view of A (frontal) with the reference axis indicated. (B) The skeleton reconstructed from electron microscopy (EM) data in the hemibrain volume of the matched cell type v2LN44. (C) EM images of neurons with the most input connections (upstream) to v2LN44 in the hemibrain connectome. The number after ‘#’ indicates the number of connections between the matched cell type (i.e. v2LN44) and its synaptic partners. The color code and EM BodyId for each EM-reconstructed neuron are also listed. (D) EM images of neurons with the most output connections (downstream) from v2LN44 in the hemibrain connectome. In Figure 2—figure supplement 1–20, sensory neurons and KCs are not displayed as top upstream or downstream neurons.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp4-v1.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp5-v1.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp6-v1.jpg)
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp7-v1.jpg)
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp8-v1.jpg)
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp9-v1.jpg)
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp10-v1.jpg)
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp11-v1.jpg)
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp12-v1.jpg)
+
+![Figure 2—figure supplement 13.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp13-v1.jpg)
+
+![Figure 2—figure supplement 14.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp14-v1.jpg)
+
+![Figure 2—figure supplement 15.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp15-v1.jpg)
+
+![Figure 2—figure supplement 16.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp16-v1.jpg)
+
+![Figure 2—figure supplement 17.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp17-v1.jpg)
+
+![Figure 2—figure supplement 18.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp18-v1.jpg)
+
+![Figure 2—figure supplement 19.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp19-v1.jpg)
+
+![Figure 2—figure supplement 20.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig2-figsupp20-v1.jpg)
+
 Figure 1E provides an overview of the categories of covered cell types. Among the 828 lines, a subset of 355 lines, collectively labeling at least 319 different cell types, exhibit highly specific and non-redundant expression patterns are likely to be particularly valuable for behavioral experiments. Supplementary file 1 lists 859 lines (including split-LexA) and their detailed information, such as genotype, expression specificity, matched EM cell type(s), and recommended driver for each cell type. A small subset of 47 lines from this collection have been previously used in studies (Aso et al., 2023; Dolan et al., 2019; Gao et al., 2019; Scaplen et al., 2021; Schretter et al., 2020; Takagi et al., 2017; Xie et al., 2021; Yamada et al., 2023). The newly generated LexA, Gal4DBD and LexADBD lines are listed in Supplementary file 2.
 
-## Drivers for the MB cell types, MBON-downstream and DAN-upstream
+### Drivers for the MB cell types, MBON-downstream and DAN-upstream
 
 Our initial efforts to identify cells of interest started prior to the completion of the EM connectome. At this early stage, we attempted to identify cell types either downstream of MBONs or upstream of DANs using confocal images of GAL4 drivers registered to a standard brain (Bogovic et al., 2020). We searched for GAL4 drivers containing cell types with potential connections to MBONs or DANs by quantifying the number of voxels overlapping with MBON axons or DAN dendrites (Otsuna et al., 2018). We then built split-GAL4 intersections from selected pairs of drivers from the established hemidriver library (Dionne et al., 2018; Tirian and Dickson, 2017).
 
 Once EM information became available, we matched the neurons identified with this approach to EM-reconstructed neurons to yield split-GAL4 drivers encompassing 110 cell types that connect with the DANs and MBONs (Figure 3). Several of the cell types originally selected by LM were found to be not directly connected with MBONs or DANs. Nevertheless, these lines can be valuable for other types of investigations. For example, one such line, SS32237, was found to exhibit robust female-female aggression when activated (Schretter et al., 2020).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig3-v1.jpg)
+
+**Figure 3.:** (A) Examples of confocal microscopy images of split-GAL4 lines (bottom) and their matching cell types in the hemibrain connectome (top). CsChrimson-mVenus (green); Brp (magenta). (B) The number of cell types that receive synaptic output from MBONs and supply synaptic input to DANs. Only cell types with connection (conn) over the indicated thresholds (i.e. more than 4 synapses for DAN upstream and more than 9 synapses for MBON downstream) were considered. The number of covered cell types are indicated in the brackets. (C) A scatter plot of MB interneuron cell types connected with DANs and MBONs. Cell types covered by Split-GAL4 lines are highlighted in red.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Confocal images and matched EM cell types. CsChrimson-mVenus (green); Brp (magenta). (B) Summary of within-MB split-GAL4 coverage. See Supplementary file 5 for details.
+
 In the hemibrain EM connectome, there are about 400 interneuron cell types that have over 100 total synaptic inputs from MBONs and/or synaptic outputs to DANs. Our newly developed collection of split-GAL4 drivers covers 30 types of these ‘major interneurons’ of the MB (Supplementary file 3). While this constitutes a small fraction, it includes cell types with remarkable connectivity patterns. For instance, CRE011, present as a single neuron per hemisphere, integrates over 2000 inputs from nine types of MBONs. This is the highest number of synaptic inputs from MBONs among all interneurons (Figure 3C). CRE011 provides cholinergic input to reward DANs (Figure 2E) and neurons in the lateral accessory lobe, a premotor center housing dendrites of multiple descending neurons (Kanzaki et al., 1994; Namiki et al., 2018). Another notable example is SMP108, which receives inputs from multiple glutamatergic MBONs and makes the highest number of cholinergic connections to DANs involved in appetitive memory (Figure 3C). We recently reported on SMP108’s role in second-order conditioning (Yamada et al., 2023) and its upstream neurons labeled in SS33917 in transforming appetitive memory into wind-directed locomotion (Aso et al., 2023). Supplementary file 3 contains connectivity information of MBON-downstream and DAN-upstream neurons, along with the predicted neurotransmitters (Eckstein et al., 2023) and the available driver lines.
 
 The current collection also contains over 180 lines for cell types that have innervations within the MB (Figure 3—figure supplement 1, Supplementary file 4, Supplementary file 5). These lines offer valuable tools to study several prominent cell types that previously are not genetically accessible. Notably, SS85572 enables the functional study of LHMB1, which forms a rare direct pathway from the calyx and the lateral horn (LH) to the MB lobes (Bates et al., 2020). SS48794 labels OA-VUMa2 octopaminergic neurons, which are the Drosophila counterparts to the honeybee OA-VUMmx1 neurons, the first neurons identified as mediating US signals in an insect brain (Hammer, 1993). Moreover, several drivers in this collection provide improved specificity. When combined with previous collections (Aso et al., 2014a; Rubin and Aso, 2024), we now have coverage for seven types of Kenyon cells and 62 out of 87 total cell types within the MB (excluding PNs). Overall, this amounts to over 70% coverage for non-PN cell types within the MB and about 10% coverage for MBON-downstream and DAN-upstream cell types (Supplementary file 3, Supplementary file 5, Figure 3B and C).
 
-## Drivers for the antennal lobe projection neurons
+### Drivers for the antennal lobe projection neurons
 
 In Drosophila, the primary CS pathway to the MB involves the antennal lobe PNs that convey olfactory signals. We have developed a set of driver lines for PNs and other cell types in the antennal lobe (Supplementary file 1). This set includes 191 lines, covering more than 48 of the approximately 190 PN types identified through EM connectome and LM studies (Bates et al., 2020; Li et al., 2020; Lin et al., 2007; Tanaka et al., 2004; Zheng et al., 2022). This set encompasses both uni- and multi-glomerular PNs (Figures 4 and 5; Supplementary file 6).
 
@@ -75,7 +137,7 @@ The antennal lobe, in addition to the 51 olfactory glomeruli, contains 7 glomeru
 
 Although less abundant than the olfactory input, the MB also receives visual information from the visual projection neurons (VPNs) that originate in the medulla and lobula and project to the accessory calyx (Li et al., 2020; Vogt et al., 2016). A recent preprint described the full collection of split-GAL4 driver lines in the optic lobe, which includes the VPNs to the MB (Nern et al., 2024).
 
-## Drivers for reinforcement pathways
+### Drivers for reinforcement pathways
 
 Our understanding of the neural pathways that encode the US has been greatly advanced by experiments that have tested the sufficiency of various neuronal cell types to substitute for the US (Aso et al., 2010; Aso and Rubin, 2016; Burke et al., 2012; Chiang et al., 2011; Claridge-Chang et al., 2009; Hige et al., 2015a; Huetteroth et al., 2015; Liu et al., 2012; Saumweber et al., 2018; Schroll et al., 2006; Yamagata et al., 2015). These experiments leveraged thermogenetic or optogenetic tools expressed in specific neuronal cell types, especially DANs, to assess their functions in associative learning. The approach to directly stimulate DANs, although valuable, bypasses the earlier US processing pathways and potential feedback in the circuit. Because of this experimental caveat, it is preferable to activate neurons at the sensory level of reward or punishment pathways to faithfully replicate the natural activity of these DANs. In that way, DANs can be regulated by both US sensory pathways and feedback pathways from MBONs. That is likely to be essential for the successful execution of more complex learning tasks in which flies update memories based on the current and past experiences (Felsenberg et al., 2018; Felsenberg et al., 2017; Jiang and Litwin-Kumar, 2021; McCurdy et al., 2021; Otto et al., 2020; Rajagopalan et al., 2022).
 
@@ -83,11 +145,59 @@ Our collection identified several useful genetic tools that advance this approac
 
 We had a particular interest in developing a driver panel for gustatory sensory neurons. Although they play a central role in reward signaling, they convey those signals to the MB through largley uncharacterized pathways (Bohra et al., 2018; Burke et al., 2012; Deere et al., 2023; Kim et al., 2017; Miyazaki et al., 2015; Sterne et al., 2021). GAL4 driver lines that recapitulate expression patterns of gustatory receptors (GRs) have been generated and utilized for functional studies (Dahanukar et al., 2007; Harris et al., 2015; Miyamoto et al., 2012; Wang et al., 2004; Yavuz et al., 2014). However, these driver lines tend to contain a morphologically and functionally heterogeneous set of sensory neurons (see for examples: Chen et al., 2022; Thoma et al., 2016) and may have off-target expression. To address these limitations, we have developed split-GAL4 drivers specific to different subsets of gustatory sensory neurons by generating hemidrivers for GR-gene promoters and screening intersections with existing hemidrivers (Figure 7A).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig7-v1.jpg)
+
+**Figure 7.:** (A) A summary of new transgenic lines generated by this study. In addition to Gr64f promoters, LexADBD lines were generated with Gr64f, Gr43a, Gr66a, Gr28b promoters and other GMR or VT promoters. The six Gr64f-LexADBD lines are with different insertion sites, and with the presence or absence of the p10 translational enhancer (see Supplementary file 2 for details). (B) Schematic of the screening strategy used here to subdivide the Gr64f-DBD pattern by intersecting it with GMR and VT AD lines. (C) A schematic of the sensory neuron projection types that compose the Gr64f-DBD pattern. (D) A summary of expression patterns of 6 of the Gr64f split-GAL4 lines derived from the screening strategy in (B), using the anatomical notation described in (C). (E) Expression pattern of SS87269 in the brain and VNC. The arrow indicates an ascending projection of atGRN. (F) Expression of SS87269 in the labellum. (G) Expression of SS87269 in tarsi of fore (f), middle (m) and hind (h) legs. (H) Expression of SS87272 in the labral sense organ (LSO). (I) Expression of SS88801 in tarsi. (J) Expression of SS87278 in the abdominal body wall. (K–Q) Expression patterns of designated driver lines in the Gnathal Ganglia (GNG) and VNC. The arrow in K indicates the absence of ascending projections from stGRN. Magenta in F-J indicates muscle counterstaining with phalloidin (actin filaments); magenta in other panels indicates neuropil counterstaining of Brp. All scale bars are 50 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Expression pattern of Gr64f-GAL4 driving 5xUAS-myr-smFLAG in VK0005 in the brain and VNC (green) with neuropil counterstaining of Brp (magenta). The line used contains two copies of Gr64f-Gal4, with one copy on the second and one copy on the third chromosome. The insert on the left shows a magnified view of each cell type in different colors. The insert on the right shows a sagittal view of the VNC.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Split-LexA line derived from sugar-sensory Gr43a-LexADBD. SL99997 labels internal fructose sensory neurons (Miyamoto et al., 2012). The labeling of T1 neurons in SL99998 presumably comes from ectopic expression of Gr43a-LexADBD. (B) Split-LexA line derived from Gr66a-LexADBD labels different subsets of bitter-sensory neurons.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (Top two rows) New or improved split-GAL4 drivers for cell types already covered by the SEZ Split-GAL4 Collection (Sterne et al., 2021). (Bottom row) Split-GAL4 drivers for cell types not included in the SEZ Split-GAL4 Collection. Cell types are from Hemibrain 1.2.1, Sterne et al., 2021 or mn2V (McKellar et al., 2020).
+
 In fruit flies, sugar is detected by sensory neurons located on different taste organs of the body and also inside the brain (Fujii et al., 2015; Hiroi et al., 2002; Miyamoto et al., 2012; Rodrigues and Siddiqi, 1978). Gr64f-Gal4, in which Gal4 is expressed under the control of the promoter of the sugar receptor gene Gr64f, broadly labels sugar sensory neurons (Dahanukar et al., 2007 and Figure 7—figure supplement 1). Gr64f-Gal4 expression can be found in heterogeneous sets of sensory neurons in the labellum, the tarsi and the labral sense organ (LSO) located along the pharynx. In addition, Gr64f-Gal4 also labels subsets of olfactory receptor neurons and neurons innervating the abdominal ganglion (Park and Kwon, 2011; Figure 7—figure supplement 1). Whether these cells endogenously express Gr64f is yet to be confirmed. However it seems likely that the heterogeneity of Gr64f-Gal4 expression could limit its usage in generating fictive rewards in complex associative learning.
 
 To refine Gr64f-Gal4 expression, we intersected Gr64f-GAL4DBD with various AD lines selected to have overlapping expression with a subset of the projection patterns of the original Gr64f-GAL4. We obtained 16 stable split-GAL4 lines with labeling in distinct subsets of the original expression pattern (Figure 7). We examined the ability of these lines to serve as US in olfactory learning (Aso and Rubin, 2016) and their potency to drive local search behaviors, another memory-based behavior induced by appetitive stimuli (Corfas et al., 2019; Figure 8, Figure 8—figure supplement 1). Additionally, we measured the walking speed of flies, as flies decrease walking while feeding (Thoma et al., 2016; Aso and Rubin, 2016).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig8-v1.jpg)
+
+**Figure 8.:** (A) In the optogenetic olfactory arena, odors are delivered from the periphery and sucked out from the central vacuum port to deliver odors only to defined quadrants. Red LEDs (627 nm peak) enable programmed optogenetic activation of neurons expressing CsChrimson. (B) Training and testing protocol for experiments shown in (E). The training protocol consisted of 3x20s optogenetic activation training followed by the first preference test, 1x1 min training followed by the 2nd test, and additional 2x1 min training followed by the last test. Odors delivered to the two zones and odor durations in each period are indicated. LED intensities were 4.3 µW/mm2 in early 20 s training and 34.9 µW/mm2 in later training. Activation LED was applied with 1 s ON and 1 s OFF during pairing with odor A. Odors were trained reciprocally. Pentyl acetate and Ethyl lactate were used as odor A and B, respectively, in one half of the experiments and the two odors were swapped in the other half of experiments. (C) Protocol to characterize Gr64f split-GAL4 activation phenotypes in the absence of an odor. During each trial, flies were illuminated with a red LED light continuously for 10 s. (D) Summary diagram of the expression patterns of the original Gr64f-GAL4 (far left) and 6 Gr64f-split-GAL4s. The expression of the original Gr64f-GAL4 in olfactory sensory neurons is not depicted here. (E) Associative memory scores after the training protocol in (B). Mean, standard error of the mean (SEM), and the number of groups are shown. (F) The kinematic parameters of trajectories measured with Caltech FlyTracker during split-GAL4 activation in the absence of odor as shown in (C). Return behavior was assessed within a 15 s time window. The probability of return (P return) is the number of flies that made an excursion (>10 mm) and then returned to within 3 mm of their initial position divided by the total number of flies. Curvature is the ratio of angular velocity to walking speed. Each group of flies received 6 activation trials. Summarization was based on the trial average of each group. The number of groups is indicated. The thick lines and shadows are mean and SEM. Gray lines are Empty-split-GAL4 control. Dashed lines are time bins for data summary in Figure 8—figure supplement 2. (G) Average walking speed in each of 6 trials. (H) An image of a tethered fly on a floating ball. Flies were tracked for proboscis extension (PE) activity with the Animal Part Tracker (Kabra et al., 2022). The annotated points, in the order of numbers, consisted of the tip of the abdomen (1), the highest point on the thorax (2), the midpoint between the root of the antennae (3), the base of the proboscis (4) and the tip of the proboscis (5). PE activity was quantified as the change of proboscis length, i.e., the distance from the tip to the base of the proboscis, or the distance between points 4 and 5. (I) SS87269 and SS88801 activation and proboscis extension. Each fly was recorded over 6 activation trials in which the 624 nm LED was turned on for 1 s. LED intensity for SS87269 and SS88801, 11 µW/mm2; for empty Gal4 (pBDPGal4), 50 µW/mm2. Less saturated traces indicate behavior during LED off trials, while more saturated traces indicate behavior during LED on trials.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) To test associative learning in the olfactory circular arena, two different odors (A) and (B) were delivered to interleaved quadrants, defined as Zone 1 and Zone 2. The trajectory of an example fly during the odor choice period after automatic tracking of the experiment movies is shown. (B) Experiment protocol for learning as in Figure 8B. Odors (green-A, purple-B) and LED delivered to the two zones are indicated. The transition between sessions that were not video-recorded are masked by gray. In the example data, the odor ethyl lactate (EL) served as CS+ and was paired with CsChrimson-activation of SS87269, while the other odor pentyl acetate (PA) served as CS- and was unpaired. The full data set included an additional reciprocal group with PA as CS + and EL as CS-. (C) Upwind displacement towards CS + and CS- during the experiment was quantified by a change in the mean distance-to-wall for all flies (airflow came from the periphery of the arena and was drawn out in the center). In addition to the three testing periods (0–20 s after odor onset), the mean distance-to-wall during training in the odor periods before LED onset (0–10 s after odor onset) were also quantified. ‘CS+’ and ‘CS-’ groups were compared with a multi-comparison t-test with Bonferroni-Dunn’s correction. *, p<0.05; ***, p<0.001.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** The data points during the time bin shown in Figure 8F. (A) Probability of return during the post-activation period. (B) Change of walking speed during the onset of activation period. (C) Change of curvature during the onset of activation period. (D) Change of curvature during the post-activation period. One-way ANOVA followed by Dunnett’s multiple comparisons test. ***, p<0.001. Individual data points are shown with minimum, maximum, median, and interquartile ranges.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** Flies expressing the CsChrimson-mVenus were repeatedly exposed to 10-s red LED as in Figure 8F but with lower intensity (4.3 µW/mm2) and more repetitions. N=8. (A) The averaged time course of probability of return binned over 10 trials. LED was turned on at 10 s and lasted for 10 s. (B) The mean probability of return in the 10-s period after the LED is turned off. (C) The walking speed in the 5-s period before LED onset. Averages of 10-trial bins are displayed, except for the trial zero. Gradual increase of walking speed was observed in the Empty-split-GAL4 control, likely because of dehydration caused by constant exposure to the airflow. (D) Change of walking speed during the activation onset period.
+
 Among the Gr64f-split-GAL4 lines, SS87269 emerged as the best driver for substituting sugar reward in olfactory learning given its anatomical specificity as well as its effectiveness throughout long training protocols (Figure 8E). SS87269 expresses in the labellum and in at least two types of tarsal sensory neurons, namely the ascending (atGRN) and the non-ascending segment-specific (stGRN) types (Figure 7E and F). The driver does not label pharyngeal sensory neurons, and importantly, it lacks expression in abdominal ganglion and olfactory sensory neurons, which could reflect off-target expression from the original Gr64f-GAL4. When odor presentation was paired with the activation of SS87269 neurons, flies formed robust appetitive memories even after extended training with high LED intensity (Figure 8E, Figure 8—figure supplement 1 and Video 1). Furthermore, and consistent with the idea that this subset of sensory neurons encodes appetitive food-related taste information, activating these neurons elicited proboscis extension and slowed flies (Figure 8F–I; Figure 8—figure supplement 2, Video 2 and Video 3). These flies also showed robust local search behavior during the post-activation period, that is an increased probability of revisiting the area where they experienced the activation (Video 4). Notably, the revisiting phenotype of SS87269 was stronger than any other Gr64f-split-GAL4 drivers (Figure 8, Figure 8—figure supplement 2Figure 8F, Figure 8—figure supplement 2A) and the original Gr64f-GAL4 even after 180 repetitive activation trials (Figure 8—figure supplement 3).
+
+![Video 1.](https://cdn.elifesciences.org/articles/94168/elife-94168-video1.mp4.jpg)
+
+**Video 1.:** An exemplar video of learning of flies of the genotype SS87269/UAS-CsChrimson-mVenus attP18. Movies were tracked with Caltech FlyTracker (Eyjolfsdottir et al., 2014). Trailing trajectories of individual flies in the last 5 s were overlaid. Delivery of odor A and B to the quadrants along with the 625 nm LED activation are indicated. Experiment movie and data from the first 1x1 m training and test are presented with the gray line indicating session transition.
+
+![Video 2.](https://cdn.elifesciences.org/articles/94168/elife-94168-video2.mp4.jpg)
+
+**Video 2.:** An exemplar video of activation of flies of the genotype SS87269/UAS-CsChrimson-mVenus attP18. Flies receive six consecutive 60 s trials; during each trial a 10 s LED activation was presented (from 10 to 20 s) as indicated. The trajectories of individual flies over the previous 5 s are shown.
+
+![Video 3.](https://cdn.elifesciences.org/articles/94168/elife-94168-video3.mp4.jpg)
+
+**Video 3.:** Flies were thorax-fixed by tethering to a pin and allowed to walk on an air-floated foam ball. Proboscis activities were tracked with the Animal Part Tracker (https://github.com/kristinbranson/APT; Branson, 2024; Kabra et al., 2022).
+
+![Video 4.](https://cdn.elifesciences.org/articles/94168/elife-94168-video4.mp4.jpg)
+
+**Video 4.:** Behaviors of individual flies with their trajectories from LED offset up to 15 s after LED offset. Videos are centered to the positions of flies at LED offset. The two white circles indicate 3 mm and 10 mm boundaries from the position. Flies were sorted by the time they re-entered the 3 mm inner circle after they exited the 10 mm outer circle. Flies at the bottom row did not return within the 15 s time frame.
 
 Two other lines SS88801 and SS88776, which label stGRNs or stGRNs along with labial sensory neurons, respectively (Figure 7K–L and I), similarly showed appetitive learning and reduced locomotion during activation (Figure 8E–F). Interestingly, however, the activation of stGRNs with SS88801 did not induce significant local search behaviors (Figure 8F, Figure 8—figure supplement 2A). This finding could be valuable for understanding circuits underlying local search behavior and invites further investigation to compare pathways from labial and tarsal sensory neurons to the MB and the central complex.
 
@@ -99,9 +209,13 @@ Lastly, we generated driver lines for putative ascending nociceptive pathways. W
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig9-v1.jpg)
 
-**Figure 9.:** (A) Activation preference screen of 581 split-GAL4 lines (342 lines from this study). SS01159 (blue arrow) is one of the lines that flies showed strong avoidance at optogenetic activation. (B) Time course of flies’ preference to quadrants with red LED light by SS01159>CsChrimson (blue) or empty-GAL4>CsChrimson (gray). A preference score to red LED quadrants was quantified from the distribution during the last 5s of two 30s activation periods. n = 8 groups for SS01159, n = 15 for empty Gal4. Mean (thick lines) and SEM (shadow) are plotted. (C) The mean normalized movement speed at the LED onset for flies in the LED quadrants. The 3-s period before LED onset was used as the baseline for normalization. (D) The mean cumulative turning angles in 5 movie frames (total elapsed time of 167 ms) when flies encountered the LED boundary. The boundary was defined as a 4-mm zone in between the LED and dark quadrants. Trajectories too close to the center (< 0.2*radius) or the wall (> 0.6*radius) of the arena were not analyzed. (E) Examples of split-GAL4 lines for ascending neurons. SS35227 and SS35256 shared a split half (R41C05-AD) with SS01159. SS32217 matched with TPN1 (Kim et al., 2017). No cell types (or only EM BodyIds) were assigned to the other lines shown due to missing information in the hemibrain volume.Figure 9—source data 1.Figure 9B–D.
+**Figure 9.:** (A) Activation preference screen of 581 split-GAL4 lines (342 lines from this study). SS01159 (blue arrow) is one of the lines that flies showed strong avoidance at optogenetic activation. (B) Time course of flies’ preference to quadrants with red LED light by SS01159>CsChrimson (blue) or empty-GAL4>CsChrimson (gray). A preference score to red LED quadrants was quantified from the distribution during the last 5s of two 30s activation periods. n = 8 groups for SS01159, n = 15 for empty Gal4. Mean (thick lines) and SEM (shadow) are plotted. (C) The mean normalized movement speed at the LED onset for flies in the LED quadrants. The 3-s period before LED onset was used as the baseline for normalization. (D) The mean cumulative turning angles in 5 movie frames (total elapsed time of 167 ms) when flies encountered the LED boundary. The boundary was defined as a 4-mm zone in between the LED and dark quadrants. Trajectories too close to the center (< 0.2*radius) or the wall (> 0.6*radius) of the arena were not analyzed. (E) Examples of split-GAL4 lines for ascending neurons. SS35227 and SS35256 shared a split half (R41C05-AD) with SS01159. SS32217 matched with TPN1 (Kim et al., 2017). No cell types (or only EM BodyIds) were assigned to the other lines shown due to missing information in the hemibrain volume.
 
-## Morphological individuality and asymmetry
+![Video 5.](https://cdn.elifesciences.org/articles/94168/elife-94168-video5.mp4.jpg)
+
+**Video 5.:** An exemplar video of LED choices of flies of the genotype SS01159/UAS-CsChrimson-mVenus attP18. The trajectories of individual flies over the previous 5 s are shown. 625 nm LED was on from 30 s to 60 s and from 90 s to 120 s, and the lit quadrants are indicated.
+
+### Morphological individuality and asymmetry
 
 Neuronal morphology can vary, and the randomness of developmental processes can ultimately result in differences in behavior among individuals (Linneweber). The recent landmark study systematically examined morphological variability of neurons using the EM connectomic data (Schlegel et al., 2023), but it will only be possible to examine relatively few individual brains for the foreseeable future. As a part of Janelia Flylight team project to generate cell-type-specific driver lines, we have imaged over 6,000 fly brains for the present study. While annotating those confocal images, we occasionally encountered samples with atypical morphologies (Figure 10). For example, one V_l2PN neuron, which typically projects to the lateral horn of the ipsilateral hemisphere, exhibited a peculiar morphology in one brain sample, where its axon crossed the midline and projected to the contralateral hemisphere, yet it still reached the correct target area within the lateral horn of the opposite side (Figure 10A). Another instance involved a DPM neuron, the sole serotonergic neuron of the MB lobes. While typical brain samples contain only one DPM neuron per hemisphere, we found a brain with two DPM neurons in one hemisphere (Figure 10B). In this case, the DPM projections exhibited an atypical innervation of the calyx of the mushroom body. We also found examples involving MBONs. The dendrites of MBON-α1 are typically confined to the α lobe of the MB, but we discovered a case where this cell in addition sent projections to the ellipsoid body (Figure 10C). MBON-α3 displayed striking variability in soma positions, but only subtle variability in axonal projections (Figure 10D). The table in Figure 10E summarizes additional examples of the atypical morphologies of MBONs. Overall in 1241 brain hemispheres examined, we found mislocalization of dendrites and axons in 3.14% and 0.97% of MB cell types, respectively. If this rate of mislocalization is generalizable to other brain regions, a fly brain of ~130,000 neurons (Dorkenwald et al., 2023) would have a few thousands of neurons with mislocalized dendrites or axons. These examples of atypical morphology were observed only once in dozens of samples, and thus can be considered as erroneous projections either resulting from stochastic developmental processes, or possibly caused by ectopic expression of reporter proteins on the plasma membrane at a high level.
 
@@ -111,9 +225,21 @@ Neuronal morphology can vary, and the randomness of developmental processes can 
 
 In contrast to these rare, and seemingly erroneous, morphological variations, we observed much more frequent and reproducible variations in the composition as well as morphologies in the two MBONs (MBON08 and MBON09) labeled by MB083C, which may amount to ‘individuality’. This split-GAL4 driver line invariably labels two cells in each hemisphere in 169 brain samples examined with four different reporters and in both sexes (57 males and 112 females; Figure 11—figure supplement 1). In all samples, these MBONs arborize dendrites in the γ3 and β′1 compartments. An obvious mistargeting of the axon was observed in only one sample, suggesting highly consistent development of these MBONs (Figure 11A and B). However, MCFO method visualized two distinct morphologies of these MBONs: MBON08 arborizes dendrites in the γ3 compartment of both hemispheres, whereas MBON09 arborize dendrites in ipsilateral γ3 and contralateral β′1 (Figure 11C–H; Aso et al., 2014a). β′1 compartment was always labeled in both hemispheres for all 169 samples, suggesting that MBON09 represents at least one of the two cells in each hemisphere. The second cell can be either MBON08 or MBON09. In MCFO experiments, we observed 21 instances of MBON08 (8 in the left and 13 in the right hemisphere) and 188 instances of MBON09 (Figure 11I). Based on these observations, we expect 65% of flies contain four MBON09, while the remaining 35% of flies likely have at least one MBON08 (Figure 11J). In 71 hemispheres, two cells were visualized in different colors of MCFO: 52 contained two MBON09 and 19 contained one MBON08 and MBON09. We never observed a brain with MBON08 on both hemispheres or two MBON08 in one hemisphere (Figure 11J). When MBON08 and MBON09 coexist, MBON09 arborized in the lateral part of the ipsilateral γ3 and MBON08 arborize in the medial part of the contralateral γ3 (Figure 11E–H). This seemingly extended γ3 compartment innervated by MBON08 is not part of γ4, because it did not overlap with DANs in the γ4 (Figure 11—figure supplement 2A and B).
 
+![Figure 11.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig11-v1.jpg)
+
+**Figure 11.:** (A) A typical image of two MBONs in MB083C-split-GAL4 driver. (B) Abnormal axonal projection of MBON08/09 observed in one of 169 samples. (C, D) MCFO images of MB083C driver from different flies show that the two cells can either be both MBON09-γ3β’1 (C) or one MBON09-γ3β’1 and one MBON08-γ3 (D). (E–G) An example of MCFO image of MB083C, which visualized one MBON08 and two MBON09 in the same brain. The projection (E) and image sections at the γ3 (F) or β’1 (G) are shown. (H) Diagrams of the three MBONs shown in E-G. (I) A summary table for observation of MBON08 and MBON09 in male and female brains. (J) All possible variations of 4 MBONs in MB083C driver, and estimated probability for each case based on the observations summarized in I. (A) and (C) were adapted from Figure 8 of Aso et al., 2014a.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** Maximum intensity projection images of individual samples are shown. Note that two somas in each hemisphere are labeled in all samples. Reporters used are indicated in each panel.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/94168/elife-94168-fig11-figsupp2-v1.jpg)
+
+**Figure 11—figure supplement 2.:** (A) Overlay between the dendrites of MBON08/09 and axons of PAM-γ4 DANs. (B) Overlay between the dendrites of MBON08/09 and axons of PAM-γ3 DANs. (C) A subset of PAM-γ3 arborizes in the medial part of the γ3 compartment. Asterisk indicates the position of the lateral γ3 that is not labeled in this line.
+
 Although MBON08 was not found in brain samples used for the hemibrain or FAFB EM connectome (Dorkenwald et al., 2023; Scheffer et al., 2020; Zheng et al., 2018), DANs in the γ3 could be subdivided to two groups that innervate the medial or lateral part of the γ3 (Figure 11—figure supplement 2C; Li et al., 2020). Therefore, subdivision of the γ3 compartment may exist irrespective of heterogeneity on the MBON side. In larval brains, two MBONs that correspond to adult MBON08/09 exhibit identical morphology (Eichler et al., 2017; Saumweber et al., 2018; Truman et al., 2023). During metamorphosis, these larval MBONs may acquire distinct morphology as MBON08 at 21/209 odds. We have never observed a brain with MBON08 on both hemispheres, and therefore MBON08 is likely to appear in only one hemisphere, if at all (Figure 11J). This resulting asymmetry could be one source of turning handedness and idiosyncratic learning performance (de Bivort et al., 2022; Smith et al., 2022), given that MBON09 forms extensive connections with other MBONs and fan-shaped body neurons (Hulse et al., 2021; Li et al., 2020) and the activity of MBON08/MBON09 has a strong influence on turning (Aso et al., 2023; Matheson et al., 2022).
 
-## Conversion to split-LexA
+### Conversion to split-LexA
 
 Split-GAL4 lines enable cell-type-specific manipulation, but some experiments require independent manipulation of two cell types. Split-GAL4 lines can be converted into split-LexA lines by replacing the GAL4 DNA binding domain with that of LexA (Ting et al., 2011). To broaden the utility of the split-GAL4 lines that have been frequently used since the publication in 2014 (Aso et al., 2014a), we have generated over 20 LexADBD lines to test the conversions of split-GAL4 to split-LexA. The majority (22 out of 34) of the resulting split-LexA lines exhibited very similar expression patterns to their corresponding original split-GAL4 lines (Figure 12). The main mode of failure when converting to LexA was that expression levels become too weak and stochastic.
 
@@ -121,40 +247,121 @@ Split-GAL4 lines enable cell-type-specific manipulation, but some experiments re
 
 **Figure 12.:** Split-LexA shares the same enhancers with split-GAL4 but with the Gal4DBD replaced by LexADBD. Among 34 conversions tested, 22 were successful, with the split-LexA showing identical or similar expression patterns as the split-GAL4. The remaining 12 had weak/no expression or showed unintended intersectional patterns. See Supplementary file 2 for the hemidriver lines with p10 translational enhancers to enhance expression level.
 
-## Concluding remarks
+### Concluding remarks
 
 The ability to define and manipulate a small group of neurons is crucial for studying neural circuits. Here, we have generated and characterized driver lines targeting specific cell types that are likely to be a part of associative learning circuits centered on the MB. We have provided these driver lines with a comprehensive lookup table linking these cell types with the EM hemibrain connectome (Supplementary file 1). These lines, together with preceding collections of drivers (Aso et al., 2014a; Aso and Rubin, 2016; Davis et al., 2020; Dolan et al., 2018; Rubin and Aso, 2024; Shuai et al., 2015; see for examples: Sterne et al., 2021; Strother et al., 2017; Truman et al., 2023; Tuthill et al., 2013; Wang et al., 2021; Wolff and Rubin, 2018; Wu et al., 2016), collectively constitute a powerful resource for precise functional interrogation of associative learning in adult Drosophila melanogaster, and will be a foundation to reveal conserved principles of neural circuits for associative learning.
 
 ## Materials and methods
 
-## Fly strains
+### Fly strains
 
 Drosophila melanogaster strains were reared at 22 °C and 60% humidity on standard cornmeal food in 12:12 hour light:dark cycle. The genotypes of all split-GAL4 and split-LexA driver lines released here are listed in the Supplementary file 1. The new collection of split-GAL4 drivers reported here was designed based on confocal image databases (https://flweb.janelia.org/cgi-bin/flew.cgi) (Jenett et al., 2012; Tirian and Dickson, 2017), and screening expression patterns of p65ADZp and ZpGAL4DBD combinations was performed as described previously (Aso et al., 2014a; Pfeiffer et al., 2010). The confocal microscopy images of the splitGAL4 lines can be found at flylight database under ‘Scaplen et al., 2021’ release. Fly strains can be requested from Janelia or the Bloomington stock center. Split-LexA expression data and fly strains are also available upon request from Aso lab.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Brains and ventral nerve cords of 3–10 days old flies were dissected, fixed and immunolabeled and imaged with confocal microscopes (Zeiss LSM710, LSM780, or LSM880) as previously described (Aso et al., 2014a; Jenett et al., 2012; Meissner et al., 2023; Nern et al., 2015). The detailed protocols and videos are available at https://www.janelia.org/project-team/flylight/protocols.
 
 Most samples were collected from females, though typically at least one male fly was examined for each driver line. While we noticed certain lines such as SS48900, exhibited distinct expression patterns in females and males, we did not particularly focus on sexual dimorphism, which is analyzed elsewhere (Meissner et al., 2024). Therefore, unless stated otherwise, the presented samples are of mixed gender. Detailed metadata, including gender information and the reporter used, can be found in Supplementary file 7.
 
-## Whole-body sections
+### Whole-body sections
 
 For sample preparation, flies were anesthetized on ice and briefly washed with 70% ethanol. Small incisions were made in the flanks of the thorax and abdomen under 2% paraformaldehyde in PBS with 0.1% Triton X-100 (PBS-T), and the flies were fixed in this solution overnight at 4 °C. After washing in PBS containing 1% Triton X-100, the samples were embedded in 7% agarose and sectioned on Leica Vibratome (VT1000s) sagittally in slices of 0.3 mm. The slices were incubated in PBS with 1% Triton X-100, 0.5% DMSO, 3% normal goat serum, Texas Red-X Phalloidin (1:50, Life Technologies #T7471) and anti-GFP rabbit polyclonal antibodies (1:1000, Thermo Fisher, #A10262) at room temperature with agitation for 24 hours. After a series of three washes in PBS-T, the sections were incubated for another 24 hr in the solution containing secondary antibodies (1:1000, goat anti-rabbit, Thermo Fisher #A32731). The samples were then washed in PBS-T and mounted in Tris-HCL (pH 8.0)-buffered 80% glycerol + 0.5% DMSO. For imaging and rendering, serial optical sections were obtained at 2 µm intervals on a Zeiss 880 confocal microscope with a pan-apochromat 10 x/0.45 NA objective using 488 and 594 nm lasers. Images were processed in Fiji (https://fiji.sc/) and Photoshop (Adobe Systems Inc).
 
-## Behavioral assays
+### Behavioral assays
 
 For flies expressing CsChrimson (Klapoetke et al., 2014), the food was supplemented with retinal (0.2 mM all-trans-retinal prior to eclosion and then 0.4 mM). Two- to 6-day-old adult females were collected and sorted on a Peltier cold plate 2–4 days before testing in behavioral assays. Flies were starved for 40–48 hr on 1% agar before they were subjected to behavioral experiments. Olfactory conditioning and optogenetic activation experiments were performed as previously described using the modified four-field olfactory arena equipped with the 627 nm LED board and odor mixers (Aso and Rubin, 2016; Pettersson, 1970). The odors were diluted in paraffin oil: pentyl acetate (PA, 1:10000, v/v) and ethyl lactate (EL, 1:10000, v/v). Videos were taken at 30 frames per second and analyzed using Fiji and Caltech FlyTracker (Eyjolfsdottir et al., 2014).
 
-## LM-EM matching
+### LM-EM matching
 
 The confocal microscopy images of different split-GAL4 lines were registered to a common template JRC2018_unisex (Bogovic et al., 2020) and organized in Janelia Workstation software (https://github.com/JaneliaSciComp/workstation; JaneliaSciComp, 2025). Color depth MIP mask search (Otsuna et al., 2018) was used to search through the EM neuron library (hemibrain 1.2.1) for matching candidates. The searching target was obtained by either creating a mask on the full confocal image or using neurons of interest manually segmented in VVD viewer (https://github.com/takashi310/VVD_Viewer; Kawase et al., 2023; Wan et al., 2012). SWC files of top-matching EM neuron candidates were loaded into VVD viewer together with the confocal microscopy images in the same standard brain coordinates. By rotating the 3d images and manually scrutinizing the branching patterns, we picked the best matching candidate. Typically, we had high confidence of LM-to-EM matching for the line that labels only one cell per hemishere. For instance, we could unambiguously match the cell in SS67721 with SMP108 in the EM hemibrain volume. Our confidence of LM-to-EM matching tended to be lower for the lines that label multiple cells, because neurons of similar morphologies could be labeled together in those lines.
 
-## Connectivity analysis
+### Connectivity analysis
 
 Connectivity information was retrieved from neuPrint (https://neuprint.janelia.org/), a publicly accessible website hosting the ‘hemibrain’ dataset (Scheffer et al., 2020). For cell types, we used cell type name assignments reported in Scheffer et al., 2020. Only connections of the cells in the right hemisphere were used due to incomplete connectivity in the left hemisphere. The 3D renderings of neurons presented were generated using the visualization tools of NeuTu (Zhao et al., 2018) or VVD viewer.
 
-## Statistics
+### Statistics
 
 Statistical comparisons were performed on GraphPad Prism 7.0 using one-way ANOVA followed by Dunnett’s test for multiple comparisons. Sample size was not predetermined based on pilot experiments.
 
-## Detailed fly genotypes used by figures
+### Detailed fly genotypes used by figures
+
+<table>
+  <tbody>
+    <tr>
+      <td>Figure 1F</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18; +/split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18; +/P{Gr64f-GAL4.9.7}5; +/P{Gr64f-GAL4.9.7}1</td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18;+/SS45245-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 2B</td>
+      <td>w/w, pBPhsFlp2::PEST in attP3;;pJFRC201-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-HA in VK00005, pJFRC240-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-V5-THS-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-FLAG in su(Hw)attP1/SS45245-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 2C</td>
+      <td>w/w;pJFRC225-5XUAS-IVS-myr::smFLAG in VK00005, pJFRC51-3XUAS-IVS-Syt::smHA in su(Hw)attP1/SS45245-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 7E–J</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18;+/SS87269-split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18;+/SS87272-split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18;+/SS88801-split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18;+/SS87278-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 7K–Q</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18;+/Gr64f-split-GAL4s w/w, 20xUAS-CsChrimson-mVenus attP18;+/Gr66a-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 7—figure supplement 1</td>
+      <td>w/w; +/ P{Gr64f-GAL4.9.7}5; 5xUAS-myr-smFLAG in VK00005/P{Gr64f-GAL4.9.7}1</td>
+    </tr>
+    <tr>
+      <td>Figures 2</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18; +/Gr64f-split-GAL4s w/w, 20xUAS-CsChrimson-mVenus attP18; +/ P{Gr64f-GAL4.9.7}5; +/P{Gr64f-GAL4.9.7}1w/w, 20xUAS-CsChrimson-mVenus attP18; +/empty-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1A</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18; +/SS87269-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 8—figure supplement 1C</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18; +/SS87269-split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18; +/SS87278-split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18; +/empty-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 8I</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18;+/SS87269-split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18;+/SS88801-split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18;+/empty-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 9B–D</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18;+/SS01159-split-GAL4w/w, 20xUAS-CsChrimson-mVenus attP18;+/empty-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 10A</td>
+      <td>w/w;pJFRC225-5XUAS-IVS-myr::smFLAG in VK00005, pJFRC51-3XUAS-IVS-Syt::smHA in su(Hw)attP1/SS01336-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 10B</td>
+      <td>w/w;pJFRC225-5XUAS-IVS-myr::smFLAG in VK00005, pJFRC51-3XUAS-IVS-Syt::smHA in su(Hw)attP1 /SS01241-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 10C</td>
+      <td>w/w, pBPhsFlp2::PEST in attP3;; pJFRC201-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-HA in VK00005, pJFRC240-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-V5-THS-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-FLAG in su(Hw)attP1/MB310C-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 10D</td>
+      <td>w/w, pBPhsFlp2::PEST in attP3;; pJFRC201-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-HA in VK00005, pJFRC240-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-V5-THS-10XUAS-FRT&gt;STOP &gt; FRT-myr::smGFP-FLAG in su(Hw)attP1/MB082C-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figures 1</td>
+      <td>w/w;;pJFRC225-5XUAS-IVS-myr::smFLAG in VK00005, pJFRC51-3XUAS-IVS-Syt::smHA in su(Hw)attP1 /MB083C-split-GAL4w/w;UAS-mCD8::GFP/MB083C-split-GAL4w/w, 20xUAS-CsChrimson-mVenus in attP18;;+/ MB083C-split-GAL4w/w, pJFRC12-10XUAS-IVS-myr::GFP in attP18 /MB083C-split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Figure 11—figure supplement 2</td>
+      <td>w, 10xUAS-IVS-myr::smGdP-HA in attP18, 13xLexAop2-IVS-myr::smGdP-V5 in su(Hw)attP8; +/R52G04-LexA (MBON08/09);+/MB312C-split-GAL4 (PAM-γ4)w, 10xUAS-IVS-myr::smGdP-HA in attP18, 13xLexAop2-IVS-myr::smGdP-V5 in su(Hw)attP8; +/R52G04-LexA (MBON08/09);+/MB441B-split-GAL4 (PAM-γ3) w/w;;VT006202-LexAp65 in attP2/pJFRC19-13XLexAop2-IVS-myr::GFP in attP2</td>
+    </tr>
+    <tr>
+      <td>Figure 12</td>
+      <td>w/w, 20xUAS-CsChrimson-mVenus attP18; +/split-GAL4s w/w, 13xLexAop2-CsChrimson-mVenus attp18; +/split-LexAs</td>
+    </tr>
+  </tbody>
+</table>

@@ -24,17 +24,17 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Memory and Aging Center, Department of Neurology, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Radiology and Biomedical Imaging, University of California, San Francisco San Francisco United States
-3. https://ror.org/02h4myp42 Medical Imaging Business Center, Ricoh Company Kanazawa Japan
-4. https://ror.org/01an7q238 Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States
-5. https://ror.org/046rm7j60 Mary S. Easton Center for Alzheimer’s Disease Research, Department of Neurology, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States
+1. Memory and Aging Center, Department of Neurology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Radiology and Biomedical Imaging, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Medical Imaging Business Center, Ricoh Company Kanazawa Japan ([ROR:02h4myp42](https://ror.org/02h4myp42))
+4. Helen Wills Neuroscience Institute, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+5. Mary S. Easton Center for Alzheimer’s Disease Research, Department of Neurology, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 
 ## Abstract
 
-Neuronal- and circuit-level abnormalities of excitation and inhibition are shown to be associated with tau and amyloid-beta (Aβ) in preclinical models of Alzheimer’s disease (AD). These relationships remain poorly understood in patients with AD. Using empirical spectra from magnetoencephalography and computational modeling (neural mass model), we examined excitatory and inhibitory parameters of neuronal subpopulations and investigated their specific associations to regional tau and Aβ, measured by positron emission tomography, in patients with AD. Patients with AD showed abnormal excitatory and inhibitory time-constants and neural gains compared to age-matched controls. Increased excitatory time-constants distinctly correlated with higher tau depositions while increased inhibitory time-constants distinctly correlated with higher Aβ depositions. Our results provide critical insights about potential mechanistic links between abnormal neural oscillations and cellular correlates of impaired excitatory and inhibitory synaptic functions associated with tau and Aβ in patients with AD. This study was supported by the National Institutes of Health grants: K08AG058749 (KGR), F32AG050434-01A1 (KGR), K23 AG038357 (KAV), P50 AG023501, P01 AG19724 (BLM), P50-AG023501 (BLM and GDR), R01 AG045611 (GDR); AG034570, AG062542 (WJ); NS100440 (SSN), DC176960 (SSN), DC017091 (SSN), AG062196 (SSN); a grant from John Douglas French Alzheimer’s Foundation (KAV); grants from Larry L. Hillblom Foundation: 2015-A-034-FEL (KGR), 2019-A-013-SUP (KGR); grants from the Alzheimer’s Association: AARG-21-849773 (KGR); PCTRB-13-288476 (KAV), and made possible by Part the CloudTM (ETAC-09-133596); a grant from Tau Consortium (GDR and WJJ), and a gift from the S. D. Bechtel Jr. Foundation.
+Background:Neuronal- and circuit-level abnormalities of excitation and inhibition are shown to be associated with tau and amyloid-beta (Aβ) in preclinical models of Alzheimer’s disease (AD). These relationships remain poorly understood in patients with AD.Methods:Using empirical spectra from magnetoencephalography and computational modeling (neural mass model), we examined excitatory and inhibitory parameters of neuronal subpopulations and investigated their specific associations to regional tau and Aβ, measured by positron emission tomography, in patients with AD.Results:Patients with AD showed abnormal excitatory and inhibitory time-constants and neural gains compared to age-matched controls. Increased excitatory time-constants distinctly correlated with higher tau depositions while increased inhibitory time-constants distinctly correlated with higher Aβ depositions.Conclusions:Our results provide critical insights about potential mechanistic links between abnormal neural oscillations and cellular correlates of impaired excitatory and inhibitory synaptic functions associated with tau and Aβ in patients with AD.Funding:This study was supported by the National Institutes of Health grants: K08AG058749 (KGR), F32AG050434-01A1 (KGR), K23 AG038357 (KAV), P50 AG023501, P01 AG19724 (BLM), P50-AG023501 (BLM and GDR), R01 AG045611 (GDR); AG034570, AG062542 (WJ); NS100440 (SSN), DC176960 (SSN), DC017091 (SSN), AG062196 (SSN); a grant from John Douglas French Alzheimer’s Foundation (KAV); grants from Larry L. Hillblom Foundation: 2015-A-034-FEL (KGR), 2019-A-013-SUP (KGR); grants from the Alzheimer’s Association: AARG-21-849773 (KGR); PCTRB-13-288476 (KAV), and made possible by Part the CloudTM (ETAC-09-133596); a grant from Tau Consortium (GDR and WJJ), and a gift from the S. D. Bechtel Jr. Foundation.
 
 ## Introduction
 
@@ -44,11 +44,90 @@ The goal of this study was to identify impaired neuronal parameters in excitator
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twenty patients with AD (diagnostic criteria for probable AD or mild cognitive impairment due to AD) (Albert et al., 2011; McKhann et al., 2011; Jack et al., 2018) and 35 age-matched controls were included in this study (Table 1). Each participant underwent a complete clinical history, physical examination, neuropsychological evaluation, brain magnetic resonance imaging (MRI), and a 10-min session of resting MEG. All AD patients underwent PET with tau-specific radiotracer, 18F-flortaucipir and Aβ-specific radiotracer, 11C-PIB. Twelve AD patients in this study cohort overlapped with our previous multimodal imaging investigation of long-range synchrony assay (Ranasinghe et al., 2020). All participants were recruited from research cohorts at the University of California San Francisco-Alzheimer’s Diesease Research Center(UCSF-ADRC). Informed consent was obtained from all participants and the study was approved by the Institutional Review Board (IRB) at UCSF (UCSF-IRB 10-02245).
 
-## Clinical assessments and MEG, PET, and MRI acquisition and analyses
+**Table 1.**
+ Participant demographics and clinical characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Controls(N = 35)</th>
+      <th>Patients with AD(N = 20)</th>
+      <th>p†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (year)</td>
+      <td>69.3.6 ± 8.4</td>
+      <td>66.3 ± 9.8</td>
+      <td>0.237</td>
+    </tr>
+    <tr>
+      <td>Female sex, no. (%)</td>
+      <td>20 (57.1)</td>
+      <td>11 (55.0)</td>
+      <td>0.876</td>
+    </tr>
+    <tr>
+      <td>White, no. (%) ‡</td>
+      <td>30 (90.9)</td>
+      <td>20 (100.0)</td>
+      <td>0.282</td>
+    </tr>
+    <tr>
+      <td>Education (year)</td>
+      <td>18 (16–18)</td>
+      <td>18 (16–18)</td>
+      <td>0.855</td>
+    </tr>
+    <tr>
+      <td>Right handedness, no. (%)</td>
+      <td>30 (85.7)</td>
+      <td>17 (85.0)</td>
+      <td>0.340</td>
+    </tr>
+    <tr>
+      <td>MMSE</td>
+      <td>30 (29–30)</td>
+      <td>23 (22–26)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>CDR*</td>
+      <td>0 (0–0)</td>
+      <td>0.5 (0.5–0.8)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>CDR-SOB*</td>
+      <td>0 (0–0)</td>
+      <td>3.5 (2.3–4.3)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Age at disease onset</td>
+      <td>.</td>
+      <td>59.4±9.39</td>
+      <td>.</td>
+    </tr>
+    <tr>
+      <td>Disease duration</td>
+      <td>.</td>
+      <td>6.9±2.4</td>
+      <td>.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Scores on the CDR range from 0 to 3 and scores on the CDR-SOB range from 0 to 18, with higher scores denoting more disability. Scores on the MMSE range from 0 to 30, with higher scores denoting better cognitive function. AD = Alzheimer’s disease.†Statistical tests: p values are reported from unpaired t-test for age, Pearson χ2 test for sex and handedness, Fisher’s exact test for race, Wilcoxon–Mann–Whitney test for education, MMSE, CDR, and CDR-SOB.‡Race or ethnic group was self-reported. Two control participants opted out from reporting the race._
+
+### Clinical assessments and MEG, PET, and MRI acquisition and analyses
 
 AD patients were assessed via MMSE and a standard battery of neuropsychological tests. All participants were assessed via a structured caregiver interview to determine the Clinical Dementia Rating (CDR) (Appendix 2).
 
@@ -56,13 +135,23 @@ MEG scans were acquired on a whole-head biomagnetometer system (275 axial gradio
 
 Flortaucipir and PIB-PET acquisitions were done based on the same protocols detailed previously (Schöll et al., 2016). Standardized uptake value ratios (SUVRs) were created using Freesurfer-defined cerebellar gray matter for PIB-PET. For 18F-flortaucipir, Freesurfer segmentation was combined with the SUIT template to include inferior cerebellum voxels, avoiding contamination from off-target binding in the dorsal cerebellum (Appendix 2).
 
-## Mathematical modeling and parameter estimation
+### Mathematical modeling and parameter estimation
 
-We used a linearized NMM (Raj et al., 2020; Verma et al., 2022) to estimate excitatory and inhibitory neuronal subpopulation parameters. In this regional model, for every region k (k varies from 1 to N and N is the total number of regions) based on the Desikan–Killiany parcellation, the regional population signal is modeled as the sum of excitatory signals xe(t) and inhibitory signals xi(t). Both excitatory and inhibitory signal dynamics consist of a decay of the individual signals with a fixed neural gain, incoming signals from populations that alternate between the excitatory and inhibitory signals, and input Gaussian white noise. The equations for the excitatory and inhibitory signals for every region are the following:dxe(t)dt=−fe(t)τe⋆(geexe(t)−geifi(t)⋆xi(t))+p(t)dxi(t)dt=−fi(t)τi⋆(giixi(t)+geife(t)⋆xe(t))+p(t)
+We used a linearized NMM (Raj et al., 2020; Verma et al., 2022) to estimate excitatory and inhibitory neuronal subpopulation parameters. In this regional model, for every region k (k varies from 1 to N and N is the total number of regions) based on the Desikan–Killiany parcellation, the regional population signal is modeled as the sum of excitatory signals xe(t) and inhibitory signals xi(t). Both excitatory and inhibitory signal dynamics consist of a decay of the individual signals with a fixed neural gain, incoming signals from populations that alternate between the excitatory and inhibitory signals, and input Gaussian white noise. The equations for the excitatory and inhibitory signals for every region are the following:
+
+$$
+\frac{dx_{e}(t)}{dt}=−\frac{f_{e}(t)}{\tau_{e}}⋆(g_{ee}x_{e}(t)−g_{ei}f_{i}(t)⋆x_{i}(t))+p(t)
+$$
+
+
+
+$$
+\frac{dx_{i}(t)}{dt}=−\frac{f_{i}(t)}{\tau_{i}}⋆(g_{ii}x_{i}(t)+g_{ei}f_{e}(t)⋆x_{e}(t))+p(t)
+$$
 
 The symbols used in the equations are as following: * stands for convolution; parameters gee, gii, and gei are neural gains for the excitatory, inhibitory, and alternating populations, respectively; τe and τi are time-constants of excitatory and inhibitory populations, respectively; p(t) is the input Gaussian white noise; fe(t) and fi(t) are Gamma-shaped ensemble average neural impulse response functions (see Appendix 2 for step-by-step details). The parameters, gee, gii, τe, and τi were estimated for each region-of-interest (ROI) and parameter gei was fixed at 1. The excitatory and inhibitory time-constant parameters characterize the duration of the neural responses (modeled by a Gamma-shaped function) in each neuronal subpopulation, respectively. It also characterizes the rate at which a local signal dissipates in absence of other inputs. A lower time-constant indicates a faster rate of change in signals while a higher time-constant indicates a slower rate. The excitatory and inhibitory gain parameters correspond to the postsynaptic gain on the impulse response function of each neuronal subpopulation, respectively. Each region’s spectrum was modeled using the above equations, and the power spectral density was generated for frequencies 1–35 Hz. The goodness of fit of the model was estimated by calculating the Pearson’s correlation coefficient between the simulated model power spectra and the empirical source localized MEG spectra for frequencies 1–35 Hz. This goodness of fit value was used to estimate the model parameters. Parameter optimization was done using the basin hopping global optimization algorithm in Python (Wales and Doye, 1997). The model parameter values and bounds were specified as: 17, 5, and 30 ms, respectively, for initial, lower-boundary, and upper-boundary, for τe and τi ; 0.5, 0.1, and 10, respectively, for initial, lower-boundary, and upper-boundary, for gee and gii. The hyperparameters of the algorithm which included the number of iterations, temperature, and step size were set at 2000, 0.1, and 4, respectively. If any of the parameters was hitting the specified bounds, parameter optimization was repeated with a step size of 6 for that specific ROI. Finally the set of parameters which led to the highest Pearson’s correlation coefficient was chosen. The cost function for this optimization was negative of Pearson’s correlation coefficient between the source localized MEG spectra in dB scale and the model power spectral density in dB scale as well. This procedure was performed for every ROI for every subject.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical tests were performed using SAS software (SAS9.4; SAS Institute, Cary, NC). To compare the demographics and clinical characteristics between controls and patients with AD, we used unpaired t-tests for age, Pearson χ2 test for sex and handedness, Fisher’s exact test for race, Wilcoxon–Mann–Whitney test for education, MMSE, CDR, and CDR-SOB.
 
@@ -80,15 +169,15 @@ As our analyses on NMM parameters and AD proteinopathy revealed that inhibitory 
 
 On average, the patients were mild to moderately impaired with a mean MMSE score of 22.8 ± 4.5 (MMSE range: 22–26), mean CDR of 0.72 ± 0.47 (CDR range: 0.5–0.8), and mean CDR-SOB of 3.8 ± 2.5, with characteristic cognitive deficits (Table 1; Appendix 1—table 1).
 
-## Regional spectral changes in AD: increased delta–theta and reduced alpha and beta
+### Regional spectral changes in AD: increased delta–theta and reduced alpha and beta
 
 Patients with AD showed a clear leftward shift in their power spectra when compared to age-matched controls. Specifically, AD patients showed a reduced spectral power within alpha (CI, 58.04–59.85 dB, 60.33–61.69 dB, AD and controls, respectively) and beta (CI, 53.16–54.11B, 56.03–56.75 dB, AD and controls, respectively) but increased power within delta–theta bands (60.14–61.79 dB, 57.60–58.85 dB, AD and controls, respectively) (Figure 1A, B). A direct region-wise comparison showed a frontal predominant spatial distribution for the spectral power increase within delta–theta and a posterior predominant distribution for the spectral power reduction in alpha and beta, in patients with AD (Figure 1C; Appendix 1—figure 1). These results demonstrate the frequency-specific and region-dependent characteristics of oscillatory abnormalities in AD.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/77850/elife-77850-fig1-v2.jpg)
 
-**Figure 1.:** Patients with AD showed higher delta–theta (2–7 Hz) spectral power and lacked a clear alpha peak (8–12 Hz) as opposed to controls (A). A two-way ANOVA comparing patients and controls showed significantly higher spectral power within delta–theta frequency band and showed significantly lower spectral power within alpha and beta (13–35 Hz) bands, in AD patients (B). The markers depict the least-square means, and the error bars depict the 95% confidence intervals. Regional patterns of spectral power changes in patients with AD showed increased delta–theta power is predominant in the frontal regions and reduced alpha and beta spectral power is predominant in the temporoparietal and occipital cortices (C). Images show the t-values from statistical comparison of regional data, based on DK atlas parcellations, and thresholded at FDR 10%. Schematic representation of the linear neural mass model (NMM) (D), where the NMM represents local assemblies of excitatory and inhibitory neurons at each region of interest (ROI) lumped into linear systems. External inputs and outputs are gated through both excitatory and inhibitory neurons. The recurrent architecture of the two pools within a local area is captured by the neuronal time-constants, τ and eτ, and neural gain terms, ig and eeg, indicating the loops created by recurrents within excitatory, inhibitory, and cross-populations. At each ROI, the model delivers these parameters as it predicts the broad-band spectrum (1–35 Hz) optimized to the empirical spectrum derived from MEG. Patients with AD showed significantly increased neuronal time-constants, iiτ and eτ compared to age-matched controls (iE). Patients with AD also showed increased excitatory neural gains (g) and reduced inhibitory neural gains (eeg) than controls (c). The markers and error bars depict the least-square means and 95% confidence intervals. Abbreviations: AD, Alzheimer’s disease; MEG, magnetoencephalography.ii
+**Figure 1.:** Patients with AD showed higher delta–theta (2–7 Hz) spectral power and lacked a clear alpha peak (8–12 Hz) as opposed to controls (A). A two-way ANOVA comparing patients and controls showed significantly higher spectral power within delta–theta frequency band and showed significantly lower spectral power within alpha and beta (13–35 Hz) bands, in AD patients (B). The markers depict the least-square means, and the error bars depict the 95% confidence intervals. Regional patterns of spectral power changes in patients with AD showed increased delta–theta power is predominant in the frontal regions and reduced alpha and beta spectral power is predominant in the temporoparietal and occipital cortices (C). Images show the t-values from statistical comparison of regional data, based on DK atlas parcellations, and thresholded at FDR 10%. Schematic representation of the linear neural mass model (NMM) (D), where the NMM represents local assemblies of excitatory and inhibitory neurons at each region of interest (ROI) lumped into linear systems. External inputs and outputs are gated through both excitatory and inhibitory neurons. The recurrent architecture of the two pools within a local area is captured by the neuronal time-constants, τe and τi, and neural gain terms, gee and gii, indicating the loops created by recurrents within excitatory, inhibitory, and cross-populations. At each ROI, the model delivers these parameters as it predicts the broad-band spectrum (1–35 Hz) optimized to the empirical spectrum derived from MEG. Patients with AD showed significantly increased neuronal time-constants, τe and τi compared to age-matched controls (E). Patients with AD also showed increased excitatory neural gains (gee) and reduced inhibitory neural gains (gii) than controls (c). The markers and error bars depict the least-square means and 95% confidence intervals. Abbreviations: AD, Alzheimer’s disease; MEG, magnetoencephalography.
 
-## Estimated NMM parameters demonstrate altered excitatory and inhibitory subpopulation activity
+### Estimated NMM parameters demonstrate altered excitatory and inhibitory subpopulation activity
 
 We used a linear NMM, capable of reproducing spectral properties of neural activity, to predict the empirical spectra at regional level (i.e., 68 cortical regions) in patients with AD and controls. NMM predicted four parameters for neuronal populations: excitatory time-constant (τe), inhibitory time-constant (τi), excitatory neural gain (gee), and inhibitory neural gain (gii). Specifically, in each subject, and for each cortical region, the NMM parameters were estimated based on the best fit (highest Pearson correlation coefficient) between observed MEG power spectrum and the predicted NMM spectrum (Figure 1D; Appendix 1—figure 2). Statistical mixed models with repeated measures demonstrated that AD patients have significantly increased time-constant parameters of excitatory and inhibitory neurons (τe and τi) than controls (Figure 1E; τe: CI, 15.27–16.19, 11.49–12.18; p < 0.0001; τi: CI, 16.03–16.96, 15.02–15.73; p = 0.0002, AD and controls, respectively). Furthermore, AD patients showed increased gee and reduced gii compared to controls indicating abnormal neural gains in both excitatory and inhibitory subpopulations (Figure 1E; gee: CI, 1.88–2.21, 1.59–1.87; p = 0.0005; gii: CI, 3.04–3.42, 3.52–3.81; p = 0.0003, AD and controls, respectively). The regional patterns of increased excitatory time-constants and neural gains showed the highest changes in a spatial pattern involving thetemporal lobe and the precuneus (Figure 2A, C). Increased inhibitory time-constants showed a distributed spatial pattern involving frontal and parietal cortices (Figure 2B), while the reduced inhibitory neural gains showed the highest reductions in the right temporal and posterior parietal regions (Figure 2C).
 
@@ -96,21 +185,21 @@ We used a linear NMM, capable of reproducing spectral properties of neural activ
 
 **Figure 2.:** Subplots A–D depict the regional differences (z-scores) for excitatory time-constant (A), inhibitory time-constant (B), excitatory gain (C), and inhibitory gain (D) parameters in AD patients when compared to age-matched controls. Subplots E and F depict the average regional patterns of flortaucipir standardized uptake value ratio (SUVR) (E) and 11C-PIB SUVR (F) for patients with AD showing high flortaucipir retention in temporal lobe, posterior and lateral parietal regions, and high 11C-PIB retention in bilateral frontal and posterior parietal cortices. Abbreviations: AD, Alzheimer’s disease; Aβ, amyloid-beta.
 
-## Tau and Aβ distinctly modulate excitatory and inhibitory time-constants, respectively
+### Tau and Aβ distinctly modulate excitatory and inhibitory time-constants, respectively
 
 Next, we examined the functional associations of model parameters with flortaucipir (tau) and 11C-PiB (Aβ) uptake patterns (Figure 2E, F). linear mixed-effects models showed that increased τe was correlated with higher tau-tracer uptake, while increased τi was correlated with higher Aβ-tracer uptake (Figure 3A, D; τe: tau, t = 4.11, p < 0.0001; τi: Aβ, t = 3.38, p = 0.0008). In contrast, there were no correlations between τe and Aβ-tracer uptake and between τi and tau-tracer uptake (Figure 3B, C; τe: Aβ, t = −1.59, p = 0.1131; τi: tau, t = 0.54, p = 0.5863). In contrast to time-constant associations, altered neural gains did not show statistically significant associations to either flortaucipir or 11C-PiB uptakes (Appendix 1—figure 3). Distinctive association of tau with excitatory time-constants and Aβ with inhibitory time-constants may support the hypothesis of distinct roles of tau- and Aβ-mediated pathomechanisms on excitatory and inhibitory synaptic functions.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77850/elife-77850-fig3-v2.jpg)
 
-**Figure 3.:** Increased time-constants showed distinct associations with tau and Aβ in AD patients. Increased excitatory time-constant (τ) was positively correlated with tau, but not with Aβ (eA, B). Increased inhibitory time-constant (τ) was positively correlated with Aβ, but not with tau (iC, D). Subplots A–D indicate the model estimates from linear mixed-effects models predicting the changes (z-scores) in each neuronal parameter from flortaucipir (tau) standardized uptake value ratio (SUVR) and 11C-PIB (Aβ) SUVR, in patients with AD. The fits depicting tau predictions were computed at the average SUVR of Aβ (1.99), and the fits depicting Aβ were computed at average SUVR of tau (1.64). The scatter plots indicate the predicted values from each model incorporating a repeated measures design. Abbreviations: AD, Alzheimer’s disease; Aβ, amyloid-beta.
+**Figure 3.:** Increased time-constants showed distinct associations with tau and Aβ in AD patients. Increased excitatory time-constant (τe) was positively correlated with tau, but not with Aβ (A, B). Increased inhibitory time-constant (τi) was positively correlated with Aβ, but not with tau (C, D). Subplots A–D indicate the model estimates from linear mixed-effects models predicting the changes (z-scores) in each neuronal parameter from flortaucipir (tau) standardized uptake value ratio (SUVR) and 11C-PIB (Aβ) SUVR, in patients with AD. The fits depicting tau predictions were computed at the average SUVR of Aβ (1.99), and the fits depicting Aβ were computed at average SUVR of tau (1.64). The scatter plots indicate the predicted values from each model incorporating a repeated measures design. Abbreviations: AD, Alzheimer’s disease; Aβ, amyloid-beta.
 
-## Spectral changes associated with tau and Aβ are partially mediated by altered excitatory and inhibitory time-constants
+### Spectral changes associated with tau and Aβ are partially mediated by altered excitatory and inhibitory time-constants
 
 Next, we tested the hypothesis that effects of tau and Aβ on the frequency-specific spectral power changes would be mediated by their unique modulatory effects on τe and τi, respectively. To this end, we first demonstrated the specific relationships between frequency-specific spectral changes and regional tracer uptake (flortaucipir and 11C-PiB). Consistent with previous reports (Canuet et al., 2015; Nakamura et al., 2018; Pusil et al., 2019; Ranasinghe et al., 2020), linear mixed model analyses showed that associations of tau and Aβ on the power spectrum were frequency specific. For example, delta–theta was only associated with Aβ (positive correlation) and showed no associations to tau (Figure 4A, B). In contrast, alpha and beta power spectra showed significant associations to both tau and Aβ, where higher tau reduced spectral power and higher Aβ increased spectral power (Figure 4D, E, G, H). Including regional cortical atrophy as a covariate into the models did not influence these relationships, indicating that spectral changes are robust to neuronal loss (Appendix 1—figure 4). In summary, delta–theta power was uniquely associated with Aβ while reduced alpha and beta spectral power were the result of a dual modulation by tau and Aβ with a net negative modulatory effect from tau.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77850/elife-77850-fig4-v2.jpg)
 
-**Figure 4.:** τ) and inhibitory (eτ) time-constants.iAssociations between tau- and Aβ-tracer uptake and spectral power changes in patients with AD are depicted in subplots A, B, D, E, G, and H. Tau was not associated with the delta–theta (2–7 Hz) spectral changes (A), while it was positively modulated by Aβ (B). Both alpha (8–12 Hz) and beta (13–35 Hz) spectra showed significant negative associations with tau (D, G) and significant positive associations with Aβ (E, H). Subplots indicate the model estimates from linear mixed-effects analyses predicting the spectral power changes from flortaucipir (tau) SUVR and 11C-PIB (Aβ) SUVR, for patients with AD. The fits depicting tau predictions were computed at the average SUVR of Aβ (1.99), while the fits depicting Aβ were computed at average SUVR of tau (1.64). The scatter plots indicate the predicted values from each model incorporating a repeated measures design to account for 68 regions per subject. Subplots C, F, and I depict mediation models to examine the direct effects of tau and Aβ, and the effects mediated through excitatory (τ) and inhibitory (eτ) time-constants on different frequency bands. Delta–theta power increases were significantly affected by Aβ and were partially mediated through the effect of Aβ on inhibitory (iτ) time-constant (iC). Alpha power reductions were affected by tau and a small, but a significant fraction of this effect was mediated through the effect of tau on excitatory (τ) time-constant (eF). Beta power reductions were significantly affected by tau, although there was no statistically significant effect mediated through the effect of tau on excitatory (τ) time-constant (eI). Aβ effects on alpha and beta spectral changes were only direct effects with no statistically significant effects mediated through altered inhibitory (τ) time-constants. Abbreviations: AD, Alzheimer’s disease; Aβ, amyloid-beta; SUVR, standardized uptake value ratio.i
+**Figure 4.:** Associations between tau- and Aβ-tracer uptake and spectral power changes in patients with AD are depicted in subplots A, B, D, E, G, and H. Tau was not associated with the delta–theta (2–7 Hz) spectral changes (A), while it was positively modulated by Aβ (B). Both alpha (8–12 Hz) and beta (13–35 Hz) spectra showed significant negative associations with tau (D, G) and significant positive associations with Aβ (E, H). Subplots indicate the model estimates from linear mixed-effects analyses predicting the spectral power changes from flortaucipir (tau) SUVR and 11C-PIB (Aβ) SUVR, for patients with AD. The fits depicting tau predictions were computed at the average SUVR of Aβ (1.99), while the fits depicting Aβ were computed at average SUVR of tau (1.64). The scatter plots indicate the predicted values from each model incorporating a repeated measures design to account for 68 regions per subject. Subplots C, F, and I depict mediation models to examine the direct effects of tau and Aβ, and the effects mediated through excitatory (τe) and inhibitory (τi) time-constants on different frequency bands. Delta–theta power increases were significantly affected by Aβ and were partially mediated through the effect of Aβ on inhibitory (τi) time-constant (C). Alpha power reductions were affected by tau and a small, but a significant fraction of this effect was mediated through the effect of tau on excitatory (τe) time-constant (F). Beta power reductions were significantly affected by tau, although there was no statistically significant effect mediated through the effect of tau on excitatory (τe) time-constant (I). Aβ effects on alpha and beta spectral changes were only direct effects with no statistically significant effects mediated through altered inhibitory (τi) time-constants. Abbreviations: AD, Alzheimer’s disease; Aβ, amyloid-beta; SUVR, standardized uptake value ratio.
 
 Next, we used a mediation analysis to examine whether the distinct effects of tau and Aβ on frequency-specific spectral changes are mediated via altered τe and τi , respectively. The mediation analyses specifically examined: (1) the direct and the τi mediated effects of Aβ on delta–theta power; (2) the direct and the τe mediated effects of tau on alpha and beta power; and (3) the direct and the τi mediated effects of Aβ on alpha and beta power. We found that Aβ modulation of delta–theta power was significantly mediated through τi in addition to direct modulation (Figure 4C). We also found that tau modulation of alpha power was significantly mediated through τe in addition to the direct modulation (Figure 4F), whereas Aβ modulation of alpha power was only through a direct effect. Tau as well as Aβ modulation of beta power occurred only though direct effects (Figure 4I). Collectively, τe and τi partially mediated the effects of AD proteinopathy toward signature spectral changes observed in AD.
 
@@ -118,7 +207,7 @@ Next, we used a mediation analysis to examine whether the distinct effects of ta
 
 This is the first study, in patients with AD, showing quantitative links between altered neuronal subpopulation dynamics of excitatory and inhibitory function, and abnormal accumulations of tau and Aβ. We combined electrophysiology, molecular imaging, and NMM model, to examine the excitatory and inhibitory parameters of regional neural subpopulations in patients with AD and how these relate to tau and Aβ depositions. AD patients showed abnormal excitatory and inhibitory neuronal parameters compared to controls and with distinct associations to tau and Aβ where higher tau correlated with increased excitatory time-constants and higher Aβ correlated with increased inhibitory time-constants. Furthermore, the frequency-specific associations of spectral changes to tau and Aβ were partially mediated by increased excitatory and inhibitory time-constants, respectively. Collectively, our findings demonstrate distinct functional consequences of tau and Aβ at the level of circuits where cellular and molecular changes of AD pathophysiology possibly converge, and provide a rationale to identify potential mechanisms of excitation–inhibition imbalance, hyperexcitability, and abnormal neural synchronization in AD patients that could help guide future clinical trials.
 
-## Abnormal excitatory and inhibitory time-constants represent differential functional consequences of AD pathophysiology at circuit level
+### Abnormal excitatory and inhibitory time-constants represent differential functional consequences of AD pathophysiology at circuit level
 
 Unlike invasive basic science approaches that can be designed to examine causal relationships, clinical investigations for the most part are limited to examine associative relationships. Nonetheless, the associative links from clinical studies provide essential building blocks to link the findings from preclinical models to clinical manifestations in patients. NMM is currently by far the most sophisticated tool to investigate circuit function at the level of excitatory and inhibitory neuronal subpopulations in the human brain using noninvasive imaging modalities. The finding that excitatory and inhibitory time-constant abnormalities are uniquely correlated with higher tau and Aβ, respectively, draws a few key insights in the context of our evolving understanding of AD pathobiology.
 
@@ -130,7 +219,7 @@ Collectively, findings from this clinical imaging investigation, together with c
 
 Although we found significant impairments in both excitatory and inhibitory gain parameters in AD patients, these did not show significant associations with tau and Aβ. This result maybe explained in part by the relative smaller effect sizes of gain parameters (compared to time-constants). Another possible explanation may be related to the type of molecular form associated with pathophysiological effects. In both tau and Aβ, not only that the soluble molecular forms are important mediators of neurotoxicity but also their effects predominate during the preclinical stages of the disease (Busche, 2019; Zott et al., 2019). However, PET tracer uptake represents mostly the deposited nonsoluble forms of protein accumulations. As such it is possible that abnormal neural gains may represent an early effect of soluble neurotoxins, while abnormal time-constants may represent dynamic effects of network changes indicatingprogressive pathophysiological events.
 
-## Frequency-specific spectral changes may indicate distinct processes leading to network dysfunction in AD
+### Frequency-specific spectral changes may indicate distinct processes leading to network dysfunction in AD
 
 How the opposing phenomena of Aβ- and tau-associated abnormal hyper- and hypoactivity of neurons lead to a status of abnormal network dysfunction remains a conundrum. In Figure 5, we speculate the possible interactions of molecular and oscillatory mechanisms that could lead to network dysfunction. Although a unifying principle governing the physiology of rhythmic oscillations remains obscure, a commonly accepted principle is that oscillations regulate the top-down processing of local neuronal firing and facilitate long-range interactions (Uhlhaas et al., 2009). Low-frequency delta–theta and mid-frequency alpha and beta oscillations employ diverse physiological mechanisms determined by different ionic currents (Wang, 2010) and have distinct functional roles (Engel et al., 2001). The prominent view in the current literature is that delta–theta oscillations are positive top-down modulators of local neural activity whereas the power of alpha and beta exert an inhibitory modulation of irrelevant neuronal activity thus reducing the neural noise (Klimesch, 1999). We posit that higher delta–theta power associated with increased Aβ therefore may predispose a dysregulated increase of local firing (Figure 5, left panel). In patients with epilepsy increased focal and generalized slow waves are characteristic features during the interictal period, although the mechanistic relationship between network hyperexcitability and slow oscillations remains unknown. In patients with temporal lobe epilepsy higher incidence of slow waves are associated with greater volume loss in medial temporal lobe structures (Cascino et al., 1996; Cendes et al., 1996). Although it is possible that Aβ-associated unknown mechanisms may relate to both neuronal death and hyperexcitability, the relationship between Aβ and atrophy in AD is weak as the two phenomena are widely apart in temporal evolution and anatomical distribution.
 
@@ -140,14 +229,14 @@ How the opposing phenomena of Aβ- and tau-associated abnormal hyper- and hypoac
 
 Our results are also consistent with opposing modulations from tau and Aβ, and an overall net effect of tau resulting in reduced neuronal activity (Harris et al., 2020). For example, alpha and beta oscillations were positively modulated by Aβ and negatively modulated by tau, albeit a stronger net negative effect with reduced alpha and beta power. Because alpha oscillations are considered as inhibitory gain controllers of local circuits (Klimesch et al., 2007; Lorincz et al., 2009), we posit that a net reduction of alpha may yet again be favorable for a status of dysregulated network activity (Figure 5, right panel). Collectively, the multimodal neuroimaging in AD patients in the current study demonstrates how positive oscillatory modulators (delta–theta) are associated with Aβ, while negative oscillatory modulators (alpha) are associated with tau. Together, these findings suggest that the paradoxical relationship between tau, Aβ, and network dysfunction, could be better understood by the frequency-specific nature of oscillatory abnormalities. Future studies are warranted to further delineate the contributions from excitatory and inhibitory subpopulation functions toward network hyperexcitability and their interplay with oscillatory spectral changes. Overall, this framework offers a new perspective for evaluating and understanding future efforts in network stabilizing therapies.
 
-## Oscillatory spectral changes reflect dynamic functional deficits in AD
+### Oscillatory spectral changes reflect dynamic functional deficits in AD
 
 Previous MEG/EEG studies have further shown that abnormal neurophysiological indices also represent dynamic changes of AD pathophysiology. Individuals with preclinical stages of AD and APOE4 carriers who carry an elevated risk of developing AD show increased alpha power and synchrony in select regions including medial frontal and posterior parietal cortices (Cuesta et al., 2015; Nakamura et al., 2018; Pusil et al., 2019), whereas in patients with AD dementia syndrome the alpha power and long-range synchrony are reduced (Sami et al., 2018; Ranasinghe et al., 2020). For example, a study using Aβ-PET in cognitively normal controls and MCI patients showed that Aβ-positive cognitively normal participants have higher alpha power than Aβ-negative cognitively normal whereas, Aβ-positive MCI patients had reduced alpha spectral power compared to cognitively normal regardless of Aβ status (Nakamura et al., 2018). These data support the hypothesis that hyperactive effects of Aβ dominate in the preclinical and prodromal stages of AD with subsequent effects of tau and the complex synergy of both proteins leading to hypoactivity in neural circuits. The dynamic association of the dual proteinopathy is a crucial factor in developing new disease modifying drugs for AD for they may not only explain that the dominance of tau as a possible reason for the relative lack of efficiency in anti-Aβ trials, but also indicate the importance of targeting the dual modulation of tau and Aβ. Frequency-specific oscillatory signatures provide attractive biomarkers to track the dynamics of AD pathophysiology in the next generation of AD therapeutic trials.
 
-## NMMs in AD research
+### NMMs in AD research
 
 Although quantitative electrophysiological assays of neural oscillations provide the most direct measures of neuronal and synaptic function in the human brain (Buzsáki et al., 2012), it is only by combining these fine spectral details with mathematical modeling (David and Friston, 2003) that we can delineate neuronal level details from noninvasive neuroimaging in human subjects. Current NMMs are capable of depicting more realistic forms of synaptic and network interactions and have proved especially successful in simulating the pathological alterations of distinct excitatory and inhibitory neurons in diseases such as AD (de Haan et al., 2017). Furthermore, using a nonlinear NMM a recent study also showed consistent findings of a positive relationship between inhibitory time-constant and higher Aβ suggesting an association between Aβ accumulation and spectral slowing (Stefanovski et al., 2019). A key difference is the use of a nonlinear form of NMM model by Stefanovski et al. as opposed to the linear version in our study. While linearizing is a simplification of the detailed underlying biophysics, recent comparisons among different models demonstrate that linear models sufficiently capture neuroimaging data with higher accuracy compared to nonlinear models. In addition, the small set of model parameters and the closed-form solution in the frequency domain in our model makes the parameter inference more tractable compared to nonlinear versions of NMM. Indeed, we were able to show accurate fits to empirical spectra capturing the empirical peak frequency as well as the frequency fall-off. We do not however, observe bifurcation points and other bistable behaviors that can be observed in a nonlinear NMM. Notwithstanding the differences, these studies collectively illustrate an important role of NMM applications in expressing abnormalities in excitatory and inhibitory neuronal parameters which may help unify the electrophysiological findings from clinical AD populations and from AD transgenic mice. Future experiments extending the NMM applications to global network properties in addition to local neuronal synchrony may elucidate the relationships between altered neuronal parameters and hierarchical network organizations in AD.
 
-## Limitations
+### Limitations
 
 Our findings should be considered in the context of the following limitations. First, it is important to point out that any computational model may not perfectly capture the complex dynamics of structure–function coupling in the human brain. Nonetheless, our model has the advantage of using only a few parameters which were interpretable in terms of the underlying biophysics. Second, PET signal represents the deposited proteins and is mostly insensitive to soluble forms of proteins, although basic science models suggest that soluble oligomers are concentrated around deposited proteins (Busche et al., 2008). Another limitation includes the known off-target binding of flortaucipir in the basal ganglia, choroid plexus, and the meninges. However, these off-target sources of signal are unlikely to have driven our results because the flortaucipir increases in the current study were seen in brain areas remote from these sites. While the current study was limited to examine the pathophysiological consequences on network properties in AD patients, it is equally important to understand the same phenomena in normal aging. It is also noteworthy that functional changes associated with AD pathophysiology are dynamic along the biological progression of the disease and will be best investigated in future longitudinal study designs. Finally, the current sample size limited the ability to establish a natural history of the excitatory and inhibitory neuronal parameters, which will be the focus of future investigations.

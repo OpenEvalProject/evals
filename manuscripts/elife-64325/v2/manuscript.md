@@ -47,21 +47,21 @@ There are over 600 STs currently described, and some STs may have access to a ge
 
 ## Results
 
-## An updated global population structure based on sequence typing of 12,000 genomes
+### An updated global population structure based on sequence typing of 12,000 genomes
 
 We obtained and determined the ST and clade for a collection of 12,621 C. difficile genomes (taxid ID 1496, Illumina data) existing in the NCBI Sequence Read Archive (SRA) as of 1 January 2020. A total of 272 STs were identified spanning the eight currently described clades, indicating that the SRA contains genomes for almost 40% of known C. difficile STs worldwide (n = 659, PubMLST, January 2020). C1 STs dominated the database in both prevalence and diversity (Figure 1) with 149 C1 STs comprising 57.2% of genomes, followed by C2 (35 STs, 22.9%), C5 (18 STs, 10.2%), C4 (34 STs, 7.5%), C3 (7 STs, 2.0%), and the cryptic clades C-I, C-II, and C-III (collectively 17 STs, 0.2%). The five most prevalent STs represented were ST1 (20.9% of genomes), ST11 (9.8%), ST2 (9.5%), ST37 (6.5%), and ST8 (5.2%), all prominent lineages associated with CDI worldwide (Knight et al., 2015).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64325/elife-64325-fig1-v2.jpg)
 
-**Figure 1.:** C. difficile genomes in the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA).Snapshot obtained 1 January 2020; 12,304 strains (taxid ID 1496). (A) Top 40 most prevalent sequence types (STs) in the NCBI SRA coloured by clade. (B) The proportion of genomes in SRA by clade. (C) Number/proportion of STs per clade found in the SRA/present in the PubMLST database. (D) Annual and cumulative deposition of C. difficile genome data in SRA.
+**Figure 1.:** Snapshot obtained 1 January 2020; 12,304 strains (taxid ID 1496). (A) Top 40 most prevalent sequence types (STs) in the NCBI SRA coloured by clade. (B) The proportion of genomes in SRA by clade. (C) Number/proportion of STs per clade found in the SRA/present in the PubMLST database. (D) Annual and cumulative deposition of C. difficile genome data in SRA.
 
 Figure 2 shows an updated global C. difficile population structure based on the 659 STs; 27 novel STs were found (an increase of 4%) and some corrections to assignments within C1 and C2 were made, including assigning ST122 (Knetsch et al., 2012) to C1. Based on PubMLST data and bootstraps values of 1.0 in all monophyletic nodes of the cryptic clades (Figure 2), we could confidently assign 25, 9, and 10 STs to cryptic clades I, II, and III, respectively. There remained 26 STs spread across the phylogeny that did not fit within a specific clade (defined as outliers). The full MLST data and tree file for Figure 2 are available as Supplementary files 1a–d and 2 at http://doi.org/10.6084/m9.figshare.12471461. Representative genomes of each ST present in the SRA were chosen based on metadata, read depth, and assembly quality. This resulted in a final dataset of 260 STs (C1, n = 149; C2, n = 35; C3, n = 7; C4, n = 34; C5, n = 18; C-I, n = 12; C-II, n = 3; C-III, n = 2) used for all subsequent bioinformatics analyses. The list of representative genomes is available in Supplementary file 1b.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64325/elife-64325-fig2-v2.jpg)
 
-**Figure 2.:** C. difficile population structure.(A) Neighbor joining phylogeny of 659 aligned, concatenated, multilocus sequence-type (MLST) allele combinations coloured by current PubMLST clade assignment. Black bars indicate whole-genome sequencing (WGS) available for average nucleotide identity (ANI) analysis (n = 260). (B) A subset of the tree showing cryptic clades C-I, C-II, and C-III. Again, black bars indicate WGS available for ANI analysis (n = 17).
+**Figure 2.:** (A) Neighbor joining phylogeny of 659 aligned, concatenated, multilocus sequence-type (MLST) allele combinations coloured by current PubMLST clade assignment. Black bars indicate whole-genome sequencing (WGS) available for average nucleotide identity (ANI) analysis (n = 260). (B) A subset of the tree showing cryptic clades C-I, C-II, and C-III. Again, black bars indicate WGS available for ANI analysis (n = 17).
 
-## Whole-genome ANI analysis reveals clear species boundaries
+### Whole-genome ANI analysis reveals clear species boundaries
 
 Whole-genome ANI analyses were used to investigate genetic discontinuity across the C. difficile species (Figure 3 and Supplementary file 1f). Whole-genome ANI values were determined for the final set of 260 STs using three independent ANI algorithms (FastANI, ANIm, and ANIb; see Materials and methods). All 225 STs belonging to clades C1–4 clustered within an ANI range of 97.1–99.8% (median FastANI values of 99.2, 98.7, 97.9%, and 97.8%, respectively; Figure 3A–C).
 
@@ -71,7 +71,7 @@ Whole-genome ANI analyses were used to investigate genetic discontinuity across 
 
 These ANI values are above the 96% species demarcation threshold used by the NCBI (Ciufo et al., 2018) and indicate that strains from these clades belong to the same species. ANI values for all 18 STs belonging to C5 clustered on the borderline of the species demarcation threshold (FastANI range 95.9–96.2%, median 96.1%). ANI values for all three cryptic clades fell well below the species threshold; C-I (FastANI range 90.9–91.1%, median 91.0%), C-II (FastANI range 93.6–93.9%, median 93.7%), and C-III (FastANI range 89.1–89.1%, median 89.1%). All results were corroborated across the three independent ANI algorithms (Figure 3A–C). C. difficile strain ATCC 9689 (ST3, C1) was defined by Lawson et al. as the type strain for the species (Lawson et al., 2016) and used as a reference in all the above analyses. To better understand the diversity among the divergent clades themselves, FastANI analyses were repeated using STs 11, 181, 200, and 369 as reference archetypes of clades C5, C-I, C-II, and C-III, respectively. This approach confirmed that C5 and the three cryptic clades were as distinct from each other as they were collectively from C1–4 (Figure 3D–G).
 
-## Taxonomic placement of cryptic clades predates C. difficile emergence by millions of years
+### Taxonomic placement of cryptic clades predates C. difficile emergence by millions of years
 
 Previous studies using BEAST have estimated the common ancestor of C1–5 existed between 1 to 85 or 12 to 14 million years ago (mya) (He et al., 2010; Kumar et al., 2019). Here, we used an alternative Bayesian approach, BactDating, to estimate the age of all eight C. difficile clades currently described. The last common ancestor for C. difficile clades C1–5 was estimated to have existed between 1.11 and 6.71 mya. In contrast, all three cryptic clades were estimated to have emerged millions of years prior to the common ancestor of C1–5 (Figure 4). Independent analysis with BEAST, using a smaller core gene dataset (see Materials and methods), provided temporal estimates of clade emergence that were of the same order of magnitude and, importantly, supported the same branching order for all clades (Figure 4).
 
@@ -81,25 +81,437 @@ Previous studies using BEAST have estimated the common ancestor of C1–5 existe
 
 Next, to identify their true taxonomic placement, ANI was determined for ST181 (C-I), ST200 (C-II), and ST369 (C-III) against two reference datasets. The first dataset comprised 25 species belonging to the Peptostreptococcaceae as defined by Lawson et al., 2016 in their 2016 reclassification of Clostridium difficile to Clostridioides difficile. The second dataset comprised 5895 complete genomes across 21 phyla from the NCBI RefSeq database (accessed 14 January 2020), including 1366 genomes belonging to Firmicutes, 92 genomes belonging to 15 genera within the Clostridiales, and 18 Clostridium and 2 Clostridioides species. The nearest ANI matches to species within the Peptostreptococcaceae dataset were C. difficile (range 89.3–93.5% ANI), Asaccharospora irregularis (78.9–79.0% ANI), and Romboutsia lituseburensis (78.4–78.7% ANI). Notably, Clostridioides mangenotii, the only other known member of Clostridioides, shared only 77.2–77.8% ANI with the cryptic clade genomes (Table 1).
 
+**Table 1.**
+ Whole-genome ANI analysis of cryptic clades vs. 25 Peptostreptococcaceae species from Lawson et al., 2016.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Species</th>
+      <th rowspan="2">NCBI accession</th>
+      <th colspan="3">ANI %</th>
+    </tr>
+    <tr>
+      <th>ST181 (C-I)</th>
+      <th>ST200 (C-II)</th>
+      <th>ST369 (C-III)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clostridioides difficile (ST3)</td>
+      <td>AQWV00000000.1</td>
+      <td>91.11</td>
+      <td>93.54</td>
+      <td>89.30</td>
+    </tr>
+    <tr>
+      <td>Asaccharospora irregularis</td>
+      <td>NZ_FQWX00000000</td>
+      <td>78.94</td>
+      <td>78.87</td>
+      <td>78.91</td>
+    </tr>
+    <tr>
+      <td>Romboutsia lituseburensis</td>
+      <td>NZ_FNGW00000000.1</td>
+      <td>78.51</td>
+      <td>78.36</td>
+      <td>78.66</td>
+    </tr>
+    <tr>
+      <td>Romboutsia ilealis</td>
+      <td>LN555523.1</td>
+      <td>78.45</td>
+      <td>78.54</td>
+      <td>78.44</td>
+    </tr>
+    <tr>
+      <td>Paraclostridium benzoelyticum</td>
+      <td>NZ_LBBT00000000.1</td>
+      <td>77.92</td>
+      <td>77.71</td>
+      <td>78.14</td>
+    </tr>
+    <tr>
+      <td>Paraclostridium bifermentans</td>
+      <td>NZ_AVNC00000000.1</td>
+      <td>77.89</td>
+      <td>77.89</td>
+      <td>78.06</td>
+    </tr>
+    <tr>
+      <td>Clostridioides mangenotii</td>
+      <td>GCA_000687955.1</td>
+      <td>77.82</td>
+      <td>77.84</td>
+      <td>78.15</td>
+    </tr>
+    <tr>
+      <td>Paeniclostridium sordellii</td>
+      <td>NZ_APWR00000000.1</td>
+      <td>77.73</td>
+      <td>77.59</td>
+      <td>77.86</td>
+    </tr>
+    <tr>
+      <td>Clostridium hiranonis</td>
+      <td>NZ_ABWP01000000</td>
+      <td>77.52</td>
+      <td>77.42</td>
+      <td>77.59</td>
+    </tr>
+    <tr>
+      <td>Terrisporobacter glycolicus</td>
+      <td>NZ_AUUB00000000.1</td>
+      <td>77.47</td>
+      <td>77.53</td>
+      <td>77.53</td>
+    </tr>
+    <tr>
+      <td>Intestinibacter bartlettii</td>
+      <td>NZ_ABEZ00000000.2</td>
+      <td>77.29</td>
+      <td>77.52</td>
+      <td>77.48</td>
+    </tr>
+    <tr>
+      <td>Clostridium paradoxum</td>
+      <td>NZ_LSFY00000000.1</td>
+      <td>76.60</td>
+      <td>76.65</td>
+      <td>76.93</td>
+    </tr>
+    <tr>
+      <td>Clostridium thermoalcaliphilum</td>
+      <td>NZ_MZGW00000000.1</td>
+      <td>76.49</td>
+      <td>76.61</td>
+      <td>76.85</td>
+    </tr>
+    <tr>
+      <td>Tepidibacter formicigenes</td>
+      <td>NZ_FRAE00000000.1</td>
+      <td>76.41</td>
+      <td>76.47</td>
+      <td>76.38</td>
+    </tr>
+    <tr>
+      <td>Tepidibacter mesophilus</td>
+      <td>NZ_BDQY00000000.1</td>
+      <td>76.38</td>
+      <td>76.44</td>
+      <td>76.22</td>
+    </tr>
+    <tr>
+      <td>Tepidibacter thalassicus</td>
+      <td>NZ_FQXH00000000.1</td>
+      <td>76.34</td>
+      <td>76.31</td>
+      <td>76.46</td>
+    </tr>
+    <tr>
+      <td>Peptostreptococcus russellii</td>
+      <td>NZ_JYGE00000000.1</td>
+      <td>76.30</td>
+      <td>76.08</td>
+      <td>76.38</td>
+    </tr>
+    <tr>
+      <td>Clostridium formicaceticum</td>
+      <td>NZ_CP020559.1</td>
+      <td>75.18</td>
+      <td>75.26</td>
+      <td>75.62</td>
+    </tr>
+    <tr>
+      <td>Clostridium caminithermale</td>
+      <td>FRAG00000000</td>
+      <td>74.97</td>
+      <td>75.07</td>
+      <td>75.03</td>
+    </tr>
+    <tr>
+      <td>Clostridium aceticum</td>
+      <td>NZ_JYHU00000000.1</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+    </tr>
+    <tr>
+      <td>Clostridium litorale</td>
+      <td>FSRH01000000</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+    </tr>
+    <tr>
+      <td>Eubacterium acidaminophilum</td>
+      <td>NZ_CP007452.1</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+    </tr>
+    <tr>
+      <td>Filifactor alocis</td>
+      <td>NC_016630.1</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+    </tr>
+    <tr>
+      <td>Peptostreptococcus anaerobius</td>
+      <td>ARMA01000000</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+    </tr>
+    <tr>
+      <td>Peptostreptococcus stomatis</td>
+      <td>NZ_ADGQ00000000.1</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+      <td>≤70.00</td>
+    </tr>
+    <tr>
+      <td>NCBI: National Center for Biotechnology Information; ANI: average nucleotide identity: ST: sequence type.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Similarly, the nearest ANI matches to species within the RefSeq dataset were several C. difficile strains (range C-I: 90.9–91.1%; C-II: 93.4–93.6%; and C-III: 89.2–89.4%) and Paeniclostridium sordellii (77.7–77.9%). A low ANI (range ≤70–75%) was observed between the cryptic clade genomes and 20 members of the Clostridium including Clostridium tetani, Clostridium botulinum, Clostridium perfringens, and Clostridium butyricum, the type strain of the Clostridium genus senso stricto. An updated ANI-based taxonomy for the Peptostreptococcaceae is shown in Figure 5A. The phylogeny places C-I, C-II, and C-III between C. mangenotii and C. difficile C1–5, suggesting that they should be assigned to the Clostridioides genus, distinct from both C. mangenotii and C. difficile. Comparative analysis of ANI and 16S rRNA values for the eight C. difficile clades and C. mangenotii shows significant incongruence between the data generated by the two approaches (Figure 5B). The range of 16S rRNA % similarity between C. difficile C1–4, cryptic clades I–III, and C. mangenotii was narrower (range 94.5–100) compared to the range of ANI values (range 77.8–98.7). Curiously, C. mangenotii and C. difficile shared 94.5–94.7% similarity in 16S rRNA sequence identity, yet only 77.8–78.2% ANI, indicating that they should not even be considered within the same genus, as proposed by Lawson et al., 2016.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/64325/elife-64325-fig5-v2.jpg)
 
-**Figure 5.:** Peptostreptococcaceae.(A) Average nucleotide identity (ANI)-based minimum evolution tree showing evolutionary relationship between 8 C. difficile ‘clades’ along with 17 members of the Peptostreptococcaceae (from Lawson et al., 2016) as well as Clostridium butyricum as the outgroup and type strain of the Clostridium genus senso stricto. To convert the ANI into a distance, its complement to 1 was taken. (B) Matrices showing pairwise ANI and 16S rRNA values for the eight C. difficile clades and C. mangenotii (Cm), the only other known member of Clostridioides.
+**Figure 5.:** (A) Average nucleotide identity (ANI)-based minimum evolution tree showing evolutionary relationship between 8 C. difficile ‘clades’ along with 17 members of the Peptostreptococcaceae (from Lawson et al., 2016) as well as Clostridium butyricum as the outgroup and type strain of the Clostridium genus senso stricto. To convert the ANI into a distance, its complement to 1 was taken. (B) Matrices showing pairwise ANI and 16S rRNA values for the eight C. difficile clades and C. mangenotii (Cm), the only other known member of Clostridioides.
 
 We also extended our approach to five other medically important clostridia available on the NCBI database; C. botulinum (n = 783), C. perfringens (n = 358), Clostridium sporogenes (n = 100), C. tetani (n = 32), and P. sordellii (formerly Clostridium sordellii, n = 46). We found that three out of the five species (C. perfringens, C. sporogenes, and C. botulinum) showed evidence of taxonomic discontinuity similar to that observed for C. difficile (e.g., a proportion of strains with pairwise ANI below the 96% demarcation threshold). This was most notable for C. sporogenes and C. botulinum, where there were many sequenced strains with a pairwise ANI below 90% (8% and 31% of genomes, respectively, Supplementary file 1i).
 
-## Evolutionary and ecological insights from the C. difficile species pangenome
+### Evolutionary and ecological insights from the C. difficile species pangenome
 
 Next, we sought to quantify the C. difficile species pangenome and identify genetic loci that are significantly associated with the taxonomically divergent clades. With Panaroo, the C. difficile species pangenome comprised 17,470 genes, encompassing an accessory genome of 15,238 genes and a core genome of 2232 genes, just 12.8% of the total gene repertoire (Figure 6). The size of the pangenome reduced by 2082 genes with the exclusion of clades CI-III, and a further 519 genes with the exclusion of C5. Compared to Panaroo, Roary overestimated the size of the pangenome (32,802 genes, 87.7% overestimation), resulting in markedly different estimates of the percentage core genome, 3.9% and 12.8%, respectively (χ2 = 1395.3, df = 1, p<0.00001). The overestimation of pangenome was less pronounced when the identity threshold was decreased to 90% (42.0% overestimation) and the paralogs were merged (28.7% overestimation). Panaroo can account for errors introduced during assembly and annotation, thus polishing the 260 Prokka-annotated genomes with Panaroo resulting in a significant reduction in gene content per genome (median 2.48%; 92 genes, range 1.24–12.40%; 82–107 genes, p<0.00001). The C. difficile species pangenome was determined to be open (Tettelin et al., 2005; Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/64325/elife-64325-fig6-v2.jpg)
 
-**Figure 6.:** Clostridioides difficile species pangenome.(A) Pan and core genome estimates for all 260 sequence types (STs), clades C1–4 (n = 242 STs) and clades C1–5 (n = 225 STs). (B) The difference in % core genome and pangenome sizes with Panaroo and Roary algorithms. * indicates χ2 p<0.00001 and ** indicates χ2 p=0.0008. (C) The proportion of retained genes per genome after polishing Prokka-annotated genomes with Panaroo. (D) The total number of genes in the pan (grey) and core (black) genomes is plotted as a function of the number of genomes sequentially added (n = 260). Following the definition of Tettelin et al., 2005., the C. difficile species pangenome showed characteristics of an ‘open’ pangenome. First, the pangenome increased in size exponentially with sampling of new genomes. At n = 260, the pangenome exceeded more than double the average number of genes found in a single C. difficile genome (~3700) and the curve was yet to reach a plateau or exponentially decay, indicating more sequenced strains are needed to capture the complete species gene repertoire. Second, the number of new ‘strain-specific’ genes did not converge to zero upon sequencing of additional strains, at n = 260, an average of 27 new genes were contributed to the gene pool. Finally, according to Heap’s law, α values of ≤1 are representative of open pangenome. Rarefaction analysis of our pangenome curve using a power-law regression model based on Heap’s law (Tettelin et al., 2005) showed the pangenome was predicted to be open (Bpan [≈ α (Tettelin et al., 2005) = 0.47], curve fit, r2 = 0.999). (E) Presence-absence variation (PAV) matrix for 260 C. difficile genomes is shown alongside a maximum-likelihood phylogeny built from a recombination-adjusted alignment of core genes from Panaroo (2232 genes, 2,606,142 sites).
+**Figure 6.:** (A) Pan and core genome estimates for all 260 sequence types (STs), clades C1–4 (n = 242 STs) and clades C1–5 (n = 225 STs). (B) The difference in % core genome and pangenome sizes with Panaroo and Roary algorithms. * indicates χ2 p<0.00001 and ** indicates χ2 p=0.0008. (C) The proportion of retained genes per genome after polishing Prokka-annotated genomes with Panaroo. (D) The total number of genes in the pan (grey) and core (black) genomes is plotted as a function of the number of genomes sequentially added (n = 260). Following the definition of Tettelin et al., 2005., the C. difficile species pangenome showed characteristics of an ‘open’ pangenome. First, the pangenome increased in size exponentially with sampling of new genomes. At n = 260, the pangenome exceeded more than double the average number of genes found in a single C. difficile genome (~3700) and the curve was yet to reach a plateau or exponentially decay, indicating more sequenced strains are needed to capture the complete species gene repertoire. Second, the number of new ‘strain-specific’ genes did not converge to zero upon sequencing of additional strains, at n = 260, an average of 27 new genes were contributed to the gene pool. Finally, according to Heap’s law, α values of ≤1 are representative of open pangenome. Rarefaction analysis of our pangenome curve using a power-law regression model based on Heap’s law (Tettelin et al., 2005) showed the pangenome was predicted to be open (Bpan [≈ α (Tettelin et al., 2005) = 0.47], curve fit, r2 = 0.999). (E) Presence-absence variation (PAV) matrix for 260 C. difficile genomes is shown alongside a maximum-likelihood phylogeny built from a recombination-adjusted alignment of core genes from Panaroo (2232 genes, 2,606,142 sites).
 
 Pangenome-Wide Association Study (Pan-GWAS) analysis with Scoary revealed 142 genes with significant clade specificity. Based on KEGG orthology, these genes were classified into four functional categories: environmental information processing, genetic information processing, metabolism, and signalling and cellular processes. We identified several uniquely present, absent, or organised gene clusters associated with ethanolamine catabolism (C-III), heavy metal uptake (C-III), polyamine biosynthesis (C-III), fructosamine utilisation (C-I, C-III), zinc transport (C-II, C5), and folate metabolism (C-I, C5). A summary of the composition and function of these major lineage-specific gene clusters is given in Table 2, and a comparative analysis of their respective genetic architecture can be found in Supplementary file 1l.
 
-## Cryptic clades CI-III possessed highly divergent toxin gene architecture
+**Table 2.**
+ Major clade-specific gene clusters identified by Pangenome-Wide Association Study (pan-GWAS).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Gene</th>
+      <th>Clade specificity</th>
+      <th>Functional insights</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ethanolamine kinase</td>
+      <td>ETNK, EKI</td>
+      <td rowspan="14">Unique to C-III and is in addition to the highly conserved eut cluster found in all lineages. Has a unique composition and includes six additional genes that are not present in the traditional CD630 eut operon or any other non-C-III strains.</td>
+      <td rowspan="14">An alternative process for the breakdown of ethanolamine and its utilisation as a source of reduced nitrogen and carbon.</td>
+    </tr>
+    <tr>
+      <td>Agmatinase</td>
+      <td>speB</td>
+    </tr>
+    <tr>
+      <td>1-propanol dehydrogenase</td>
+      <td>pduQ</td>
+    </tr>
+    <tr>
+      <td>Ethanolamine utilisation protein EutS</td>
+      <td>eutS</td>
+    </tr>
+    <tr>
+      <td>Ethanolamine utilisation protein EutP</td>
+      <td>eutP</td>
+    </tr>
+    <tr>
+      <td>Ethanolamine ammonia-lyase large subunit</td>
+      <td>eutB</td>
+    </tr>
+    <tr>
+      <td>Ethanolamine ammonia-lyase small subunit</td>
+      <td>eutC</td>
+    </tr>
+    <tr>
+      <td>Ethanolamine utilisation protein EutL</td>
+      <td>eutL</td>
+    </tr>
+    <tr>
+      <td>Ethanolamine utilisation protein EutM</td>
+      <td>eutM</td>
+    </tr>
+    <tr>
+      <td>Acetaldehyde dehydrogenase</td>
+      <td>E1.2.1.10</td>
+    </tr>
+    <tr>
+      <td>Putative phosphotransacetylase</td>
+      <td>K15024</td>
+    </tr>
+    <tr>
+      <td>Ethanolamine utilisation protein EutN</td>
+      <td>eutN</td>
+    </tr>
+    <tr>
+      <td>Ethanolamine utilisation protein EutQ</td>
+      <td>eutQ</td>
+    </tr>
+    <tr>
+      <td>TfoX/Sxy family protein</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Iron complex transport system permease protein</td>
+      <td>ABC.FEV.P</td>
+      <td rowspan="12">Unique to C-III.</td>
+      <td rowspan="12">Multicomponent transport system with specificity for chelating heavy metal ions.</td>
+    </tr>
+    <tr>
+      <td>Iron complex transport system ATP-binding protein</td>
+      <td>ABC.FEV.A</td>
+    </tr>
+    <tr>
+      <td>Iron complex transport system substrate-binding protein</td>
+      <td>ABC.FEV.S</td>
+    </tr>
+    <tr>
+      <td>Hydrogenase nickel incorporation protein HypB</td>
+      <td>hypB</td>
+    </tr>
+    <tr>
+      <td>Putative ABC transport system ATP-binding protein</td>
+      <td>yxdL</td>
+    </tr>
+    <tr>
+      <td>Class I SAM-dependent methyltransferase</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Peptide/nickel transport system substrate-binding protein</td>
+      <td>ABC.PE.S</td>
+    </tr>
+    <tr>
+      <td>Peptide/nickel transport system permease protein</td>
+      <td>ABC.PE.P</td>
+    </tr>
+    <tr>
+      <td>Peptide/nickel transport system permease protein</td>
+      <td>ABC.PE.P1</td>
+    </tr>
+    <tr>
+      <td>Peptide/nickel transport system ATP-binding protein</td>
+      <td>ddpD</td>
+    </tr>
+    <tr>
+      <td>Oligopeptide transport system ATP-binding protein</td>
+      <td>oppF</td>
+    </tr>
+    <tr>
+      <td>Class I SAM-dependent methyltransferase</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Heterodisulfide reductase subunit D (EC:1.8.98.1)</td>
+      <td>hdrD</td>
+      <td rowspan="6">Unique to C-III and is in addition to the highly conserved spermidine uptake cluster found in all other lineages.</td>
+      <td rowspan="6">Alternative spermidine uptake processes that may play a role in stress response to nutrient limitation. The additional cluster has homologs in Romboutsia, Paraclostridium, and Paeniclostridium spp.</td>
+    </tr>
+    <tr>
+      <td>CDP-L-myo-inositol myo-inositolphosphotransferase</td>
+      <td>dipps</td>
+    </tr>
+    <tr>
+      <td>Spermidine/putrescine transport system substrate-binding protein</td>
+      <td>ABC.SP.S</td>
+    </tr>
+    <tr>
+      <td>Spermidine/putrescine transport system permease protein</td>
+      <td>ABC.SP.P1</td>
+    </tr>
+    <tr>
+      <td>Spermidine/putrescine transport system permease protein</td>
+      <td>ABC.SP.P</td>
+    </tr>
+    <tr>
+      <td>Spermidine/putrescine transport system ATP-binding protein</td>
+      <td>potA</td>
+    </tr>
+    <tr>
+      <td>Sigma-54-dependent transcriptional regulator</td>
+      <td>gfrR</td>
+      <td rowspan="6">Present in all lineages except C-I. Cluster found in a different genomic position in C-III.</td>
+      <td rowspan="6">Mannose-type PTS system essential for utilisation of fructosamines such as fructoselysine and glucoselysine, abundant components of rotting fruit and vegetable matter.</td>
+    </tr>
+    <tr>
+      <td>Fructoselysine/glucoselysine PTS system EIIB component</td>
+      <td>gfrB</td>
+    </tr>
+    <tr>
+      <td>Mannose PTS system EIIA component</td>
+      <td>manXa</td>
+    </tr>
+    <tr>
+      <td>Fructoselysine/glucoselysine PTS system EIIC component</td>
+      <td>gfrC</td>
+    </tr>
+    <tr>
+      <td>Fructoselysine/glucoselysine PTS system EIID component</td>
+      <td>gfrD</td>
+    </tr>
+    <tr>
+      <td>SIS domain-containing protein</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Fur family transcriptional regulator, ferric uptake regulator</td>
+      <td>furB</td>
+      <td rowspan="4">Unique to C-II and C5.</td>
+      <td rowspan="4">Associated with EDTA resistance in E. coli, helping the bacteria survive in Zn-depleted environment.</td>
+    </tr>
+    <tr>
+      <td>Zinc transport system substrate-binding protein</td>
+      <td>znuA</td>
+    </tr>
+    <tr>
+      <td>Fe-S-binding protein</td>
+      <td>yeiR</td>
+    </tr>
+    <tr>
+      <td>Rrf2 family transcriptional regulator</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Putative signalling protein</td>
+      <td>-</td>
+      <td rowspan="3">Unique to C-I and C5 STs 163, 280, and 386</td>
+      <td rowspan="4">In E. coli, AbgAB proteins enable uptake and cleavage of the folate catabolite p-aminobenzoyl-glutamate, allowing the bacterium to survive on exogenous sources of folic acid.</td>
+    </tr>
+    <tr>
+      <td>Aminobenzoyl-glutamate utilisation protein B</td>
+      <td>abgB</td>
+    </tr>
+    <tr>
+      <td>MarR family transcriptional regulator</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cryptic clades CI-III possessed highly divergent toxin gene architecture
 
 Overall, 68.8% (179/260) of STs harboured tcdA (toxin A) and/or tcdB (toxin B), the major virulence factors in C. difficile, while 67 STs (25.8%) harboured cdtA/cdtB (binary toxin). The most common genotype was A+B+CDT- (113/187; 60.4%), followed by A+B+CDT+ (49/187; 26.2%), A-B+CDT+ (10/187; 5.3%), A-B-CDT+ (8/187; 4.3%), and A-B+CDT- (7/187; 3.7%). Toxin gene content varied across clades (C1, 116/149, 77.9%; C2, 35/35, 100.0%; C3, 7/7, 100.0%; C4, 6/34, 17.6%; C5, 18/18, 100.0%; C-I, 2/12, 16.7%; C-II, 1/3, 33.3%; C-III, 2/2, 100.0%) (Figure 7).
 
@@ -143,36 +555,270 @@ Our findings highlight major incongruence in C. difficile taxonomy, identify dif
 
 ## Materials and methods
 
-## Genome collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ABRicate</td>
+      <td>https://github.com/tseemann/abricate</td>
+      <td>RRID:SCR_021093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ACT: Artemis Comparison Tool</td>
+      <td>http://www.sanger.ac.uk/resources/software/act/</td>
+      <td>RRID:SCR_004507</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BactDating</td>
+      <td>https://github.com/xavierdidelot/BactDating</td>
+      <td>RRID:SCR_021092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEAST</td>
+      <td>http://beast.bio.ed.ac.uk/</td>
+      <td>RRID:SCR_010228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>http://www.ebi.ac.uk/Tools/msa/clustalo/</td>
+      <td>RRID:SCR_001591</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Easyfig</td>
+      <td>http://easyfig.sourceforge.net/</td>
+      <td>RRID:SCR_013169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastANI</td>
+      <td>https://github.com/ParBLiSS/FastANI</td>
+      <td>RRID:SCR_021091</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious</td>
+      <td>http://www.geneious.com/</td>
+      <td>RRID:SCR_010519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gubbins</td>
+      <td>https://sanger-pathogens.github.io/gubbins/</td>
+      <td>RRID:SCR_016131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iToL</td>
+      <td>https://itol.embl.de/</td>
+      <td>RRID:SCR_018174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>KEGG</td>
+      <td>http://www.kegg.jp/</td>
+      <td>RRID:SCR_012773</td>
+      <td>Online database</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kraken2</td>
+      <td>http://www.ebi.ac.uk/research/enright/software/kraken</td>
+      <td>RRID:SCR_005484</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT</td>
+      <td>http://mafft.cbrc.jp/alignment/server/</td>
+      <td>RRID:SCR_011811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA</td>
+      <td>http://megasoftware.net/</td>
+      <td>RRID:SCR_000667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MUSCLE</td>
+      <td>http://www.ebi.ac.uk/Tools/msa/muscle/</td>
+      <td>RRID:SCR_011812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NCBI RefSeq</td>
+      <td>https://www.ncbi.nlm.nih.gov/refseq/</td>
+      <td>RRID:SCR_008420</td>
+      <td>Online database</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NCBI Sequence Read Archive</td>
+      <td>http://www.ncbi.nlm.nih.gov/sra</td>
+      <td>RRID:SCR_004891</td>
+      <td>Online database</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Panaroo</td>
+      <td>https://github.com/gtonkinhill/panaroo</td>
+      <td>RRID:SCR_021090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PanGP</td>
+      <td>https://pangp.zhaopage.com/</td>
+      <td>RRID:SCR_021089</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phandango</td>
+      <td>http://phandango.net/</td>
+      <td>RRID:SCR_015243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prokka</td>
+      <td>http://www.vicbioinformatics.com/software.prokka.shtml</td>
+      <td>RRID:SCR_014732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PubMLST</td>
+      <td>http://pubmlst.org/</td>
+      <td>RRID:SCR_012955</td>
+      <td>Online database</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pyani</td>
+      <td>https://pypi.org/project/pyani/</td>
+      <td>RRID:SCR_021088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QUAST</td>
+      <td>http://bioinf.spbau.ru/quast</td>
+      <td>RRID:SCR_001228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAxML</td>
+      <td>https://github.com/stamatak/standard-RAxML</td>
+      <td>RRID:SCR_006086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Roary</td>
+      <td>https://sanger-pathogens.github.io/Roary/</td>
+      <td>RRID:SCR_018172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scoary</td>
+      <td>https://github.com/AdmiralenOla/Scoary</td>
+      <td>RRID:SCR_021087</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPAdes</td>
+      <td>http://bioinf.spbau.ru/spades/</td>
+      <td>RRID:SCR_000131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>https://www.ibm.com/products/spss-statistics</td>
+      <td>RRID:SCR_019096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SRST2</td>
+      <td>https://github.com/katholt/srst2</td>
+      <td>RRID:SCR_015870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrimGalore</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/</td>
+      <td>RRID:SCR_011847</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genome collection
 
 We retrieved the entire collection of C. difficile genomes (taxid ID 1496) held at the NCBI SRA (https://www.ncbi.nlm.nih.gov/sra/). The raw dataset (as of 1 January 2020) comprised 12,621 genomes. After filtering for redundancy and Illumina paired-end data (all platforms and read lengths), 12,304 genomes (97.5%) were available for analysis.
 
-## Multi-locus sequence typing
+### Multi-locus sequence typing
 
 Sequence reads were interrogated for MLST using SRST2 v0.1.8 (Inouye et al., 2014). New alleles, STs, and clade assignments were verified by submission of assembled contigs to PubMLST (https://pubmlst.org/cdifficile/). A species-wide phylogeny was generated from 659 ST alleles sourced from PubMLST (dated 1 January 2020). Alleles were concatenated in frame and aligned with MAFFT v7.304. A final neighbour-joining tree was generated in MEGA v10 (Kumar et al., 2018) and annotated using iToL v4 [https://itol.embl.de/].
 
-## Genome assembly and quality control
+### Genome assembly and quality control
 
 Genomes were assembled, annotated, and evaluated using a pipeline comprising TrimGalore v0.6.5, SPAdes v3.6.043, Prokka v1.14.5, and QUAST v2.344 (Knight et al., 2019). Next, Kraken2 v2.0.8-beta (Wood et al., 2019) was used to screen for contamination and assign taxonomic labels to reads and draft assemblies. Based on metadata, read depth, and assembly quality, a final dataset of 260 representative genomes of each ST present in the ENA were used for all subsequent bioinformatics analyses (C1, n = 149; C2, n = 35; C3, n = 7; C4, n = 34; C5, n = 18; C-I, n = 12; C-II, n = 3; C-III, n = 2). The list of representative genomes is available in Supplementary file 1b.
 
-## Taxonomic analyses
+### Taxonomic analyses
 
 Species-wide genetic similarity was determined by computation of whole-genome ANI for 260 STs. Both alignment-free and conventional alignment-based ANI approaches were taken, implemented in FastANI (Jain et al., 2018) v1.3 and the Python module pyani (Pritchard et al., 2016) v0.2.9, respectively. FastANI calculates ANI using a unique k-mer based alignment-free sequence mapping engine, whilst pyani utilises two different classical alignment ANI algorithms based on BLAST+ (ANIb) and MUMmer (ANIm). A 96% ANI cut-off was used to define species boundaries (Ciufo et al., 2018). For taxonomic placement, ANI was determined for divergent C. difficile genomes against two datasets comprising (i) members of the Peptostreptococcaceae (n = 25) (Lawson et al., 2016) and (ii) the complete NCBI RefSeq database (n = 5895 genomes, https://www.ncbi.nlm.nih.gov/refseq/, accessed 14 January 2020). Finally, comparative identity analysis of consensus 16S rRNA sequences for C. mangenotii type strain DSM1289T (Lawson et al., 2016) (accession FR733662.1) and representatives of each C. difficile clade was performed using Clustal Omega https://www.ebi.ac.uk/Tools/msa/clustalo/.
 
-## Estimates of clade and species divergence
+### Estimates of clade and species divergence
 
 BactDating v1.0.1 (Didelot et al., 2018) was applied to the recombination-corrected phylogeny produced by Gubbins (471,708 core-genome sites) with Markov chain Monte Carlo (MCMC) chains of 107 iterations sampled every 104 iterations with a 50% burn-in. A strict clock model was used with a rate of 2.5 × 10−9 to 1.5 × 10−8 substitutions per site per year, as previously defined by He et al., 2013 and Kumar et al., 2019. The effective sample sizes (ESS) were >200 for all estimated parameters, and traces were inspected manually to ensure convergence. To provide an independent estimate from BactDating, BEAST v1.10.4 (Drummond and Rambaut, 2007) was run on a recombination-filtered gap-free alignment of 10,466 sites with MCMC chains of 5 × 108 iterations, with a 9 × 10−7 burn-in, which were sampled every 104 iterations. The strict clock model described above was used in combination with the discrete GTR gamma model of heterogeneity among sites and skyline population model. MCMC convergence was verified with Tracer v1.7.1, and ESS for all estimated parameters were >150. For ease of comparison, clade dating from both approaches was transposed onto a single MLST phylogeny. Tree files are available asSupplementary file 3 and 4 at http://doi.org/10.6084/m9.figshare.12471461.
 
-## Pangenome analysis
+### Pangenome analysis
 
 The 260 ST dataset was used for pangenome analysis with Panaroo v1.1.0 (Tonkin-Hill et al., 2020) and Roary v3.6.0 (Page et al., 2015). Panaroo was run with default thresholds for core assignment (98%) and blastP identity (95%). Roary was run with a default threshold for core assignment (99%) and two different thresholds for BlastP identity (95%, 90%). Sequence alignment of the final set of core genes (Panaroo; n = 2232 genes, 2,606,142 bp) was performed using MAFFT v7.304, and recombinative sites were filtered using Gubbins v7.304 (Croucher et al., 2015). A recombinant adjusted alignment of 471,708 polymorphic sites was used to create a core genome phylogeny with RAxML v8.2.12 (GTR gamma model of among-site rate-heterogeneity), which was visualised alongside pangenome data in Phandango (Hadfield et al., 2018). Pangenome dynamics were investigated with PanGP v1.0.1 as previously described (Knight et al., 2019).
 
 Scoary (Brynildsrud et al., 2016) v1.6.16 was used to identify genetic loci that were statistically associated with each clade via a pan-GWAS. The Panaroo-derived pangenome (n = 17,470) was used as input for Scoary with the evolutionary clade of each genome depicted as a discrete binary trait. Scoary was run with 1000 permutation replicates, and genes were reported as significantly associated with a trait if they attained p-values (empirical, naïve, and Benjamini–Hochberg-corrected) of ≤0.05, a sensitivity and specificity of >99% and 97.5%, respectively, and were not annotated as ‘hypothetical proteins’. All significantly associated genes were reannotated using Prokka and BlastP, and functional classification (KEGG orthology) was performed using the Koala suite of web-based annotation tools (Kanehisa et al., 2016).
 
-## Comparative analysis of toxin gene architecture
+### Comparative analysis of toxin gene architecture
 
 The 260 ST genome dataset was screened for the presence of tcdA, tcdB, cdtA, and cdtB using the Virulence Factors Database (VFDB) compiled within ABRicate v1.0 (Seemann, 2020). Results were corroborated by screening raw reads against the VFDB using SRST2 v0.1.8 (Inouye et al., 2014). Both approaches employed minimum coverage and identity thresholds of 90 and 75%, respectively. Comparative analysis of PaLoc and CdtLoc architecture was performed by mapping of reads with Bowtie2 v.2.4.1 to cognate regions in reference strain R20291 (ST1, FN545816). All PaLoc and CdtLoc loci investigated showed sufficient coverage for accurate annotation and structural inference. Genome comparisons were visualised using ACT and figures prepared with Easyfig (Ramírez-Vargas et al., 2018). MUSCLE-aligned TcdB sequences were visualised in Geneious v2020.1.2 and used to create trees in iToL v4.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed using SPSS v26.0 (IBM, NY). For pangenome analyses, a chi-squared test with Yate's correction was used to compare the proportion of core genes and a one-tailed Mann–Whitney U test was used to demonstrate the reduction of gene content per genome, with a p-value≤0.05 considered statistically significant.

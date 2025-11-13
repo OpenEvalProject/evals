@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Chemical Engineering, Stanford University Stanford United States
-2. https://ror.org/00f54p054 Wu Tsai Neurosciences Institute, Stanford University Stanford United States
-3. https://ror.org/00f54p054 Department of Neurology & Neurological Sciences, Stanford University Stanford United States
-4. https://ror.org/01kpzv902 College of Medicine and Public Health, Flinders Health & Medical Research Institute, Flinders University Adelaide Australia
-5. https://ror.org/043mz5j54 Department of Ophthalmology, School of Medicine, University of California San Francisco San Francisco United States
-6. https://ror.org/00f54p054 Department of Neurosurgery, Stanford University School of Medicine Stanford United States
+1. Department of Chemical Engineering, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Wu Tsai Neurosciences Institute, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Department of Neurology & Neurological Sciences, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+4. College of Medicine and Public Health, Flinders Health & Medical Research Institute, Flinders University Adelaide Australia ([ROR:01kpzv902](https://ror.org/01kpzv902))
+5. Department of Ophthalmology, School of Medicine, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+6. Department of Neurosurgery, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
 ## Abstract
 
-Intrinsic sensory neurons are an essential part of the enteric nervous system (ENS) and play a crucial role in gastrointestinal tract motility and digestion. Neuronal subtypes in the ENS have been distinguished by their electrophysiological properties, morphology, and expression of characteristic markers, notably neurotransmitters and neuropeptides. Here, we investigated synaptic cell adhesion molecules as novel cell-type markers in the ENS. Our work identifies two type II classic cadherins, Cdh6 and Cdh8, specific to sensory neurons in the mouse colon. We show that Cdh6+ neurons demonstrate all other distinguishing classifications of enteric sensory neurons including marker expression of Calcb and Nmu , Dogiel type II morphology and AH-type electrophysiology and I current. Optogenetic activation of H Cdh6+ sensory neurons in distal colon evokes retrograde colonic motor complexes (CMCs), while pharmacologic blockade of rhythmicity-associated current I disrupts the spontaneous generation of CMCs. These findings provide the first demonstration of selective activation of a single neurochemical and functional class of enteric neurons and demonstrate a functional and critical role for sensory neurons in the generation of CMCs. H
+Intrinsic sensory neurons are an essential part of the enteric nervous system (ENS) and play a crucial role in gastrointestinal tract motility and digestion. Neuronal subtypes in the ENS have been distinguished by their electrophysiological properties, morphology, and expression of characteristic markers, notably neurotransmitters and neuropeptides. Here, we investigated synaptic cell adhesion molecules as novel cell-type markers in the ENS. Our work identifies two type II classic cadherins, Cdh6 and Cdh8, specific to sensory neurons in the mouse colon. We show that Cdh6+ neurons demonstrate all other distinguishing classifications of enteric sensory neurons including marker expression of Calcb and Nmu, Dogiel type II morphology and AH-type electrophysiology and IH current. Optogenetic activation of Cdh6+ sensory neurons in distal colon evokes retrograde colonic motor complexes (CMCs), while pharmacologic blockade of rhythmicity-associated current IH disrupts the spontaneous generation of CMCs. These findings provide the first demonstration of selective activation of a single neurochemical and functional class of enteric neurons and demonstrate a functional and critical role for sensory neurons in the generation of CMCs.
 
 ## Introduction
 
@@ -37,25 +37,25 @@ Here, we identify type II cadherin, Cdh6, as a novel marker for IPANs of the col
 
 ## Results
 
-## Expression of the type II classic cadherin Cdh6 in colonic IPANs
+### Expression of the type II classic cadherin Cdh6 in colonic IPANs
 
 To identify cadherins expressed in enteric neuronal subtypes in mouse, we screened recently published RNA-Seq data (Drokhlyansky et al., 2020; Morarach et al., 2021) for classic type II cadherin expression. Cdh6 and Cdh8 appeared to be restricted to IPAN subsets in both small intestine and colon (Drokhlyansky et al., 2020; Morarach et al., 2021). Cdh9 was previously identified in a separate population of IPANs in the small intestine (May-Zhang et al., 2021; Drokhlyansky et al., 2020; Morarach et al., 2021). We validated Cdh6 and Cdh8 expression by RNAscope in situ hybridization in the myenteric plexus, which contains the enteric motility circuitry. Cdh6 mRNA was expressed in 14.7 ± 0.8% of myenteric neurons in small intestine (jejunum) and in 6.8 ± 0.3% of myenteric neurons in distal colon (mean ± SEM) (Figure 1A–C). Cdh8 was almost exclusively co-expressed in Cdh6+ neurons, although at a much lower level of detection (Figure 1D–H). We therefore focused our further analysis on Cdh6+ neurons.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101043/elife-101043-fig1-v1.jpg)
 
-**Figure 1.:** Cdh6 expression overlaps with intrinsic primary afferent neuron (IPAN) markers Calcb and Nmu.(A, B) Representative images of jejunum (A) and distal colon (B) myenteric plexus labeled with HuC/D (IHC) (blue) and Cdh6 (RNA) (red). (C) Proportion of total HuC/D neurons positive for Cdh6 (jejunum, n=9; distal colon, n=9). (D, E) As in (A, B) for HuC/D (IHC) (blue), Cdh6 (RNA) (red), and Cdh8 (RNA) (green). (F) Proportion of Cdh6+ neurons positive for Cdh8 (jejunum, n=8; distal colon, n=8). (G) Proportion of Cdh8+ neurons positive for Cdh6 (jejunum, n=8; distal colon, n=8). (H) Proportion of total HuC/D neurons positive for Cdh8 (jejunum, n=8; distal colon, n=8). (I, J) As in (A, B) for HuC/D (IHC) (blue), Calcb (RNA) (red), and Nmu (RNA) (green). (K) Proportion of Nmu+ neurons positive for Calcb (jejunum, n=5; distal colon, n=5). (L) Proportion of Calcb+ neurons positive for Nmu (jejunum, n=5; distal colon, n=5). (M, N) As in (A, B) for HuC/D (IHC) (blue), Cdh6 (RNA) (red), and Nmu (RNA) (green). (O) Proportion of Cdh6+ neurons positive for Nmu (jejunum, n=7; distal colon, n=8). (P) Proportion of Nmu+ neurons positive for Cdh6 (jejunum, n=7; distal colon, n=8). (Q) Proportion of total HuC/D neurons positive for Nmu (jejunum, n=7; distal colon, n=8). (R, S) As in (A, B) for HuC/D (IHC) (blue), Cdh6 (RNA) (red), and Calcb (RNA) (green). (T) Proportion of Cdh6+ neurons positive for Calcb (jejunum, n=9; distal colon, n=7). (U) Proportion of Calcb+ neurons positive for Cdh6 (jejunum, n=9; distal colon, n=7). (V) Proportion of total HuC/D neurons positive for Calcb (jejunum, n=9; distal colon, n=9). (W, X) Schematic of marker overlap in jejunum (W) and distal colon (X). Scale bar represents 100 μm for (A, B, I, J, M, N, R, S), 50 μm for (D, E). All charts (mean ± SEM). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+**Figure 1.:** (A, B) Representative images of jejunum (A) and distal colon (B) myenteric plexus labeled with HuC/D (IHC) (blue) and Cdh6 (RNA) (red). (C) Proportion of total HuC/D neurons positive for Cdh6 (jejunum, n=9; distal colon, n=9). (D, E) As in (A, B) for HuC/D (IHC) (blue), Cdh6 (RNA) (red), and Cdh8 (RNA) (green). (F) Proportion of Cdh6+ neurons positive for Cdh8 (jejunum, n=8; distal colon, n=8). (G) Proportion of Cdh8+ neurons positive for Cdh6 (jejunum, n=8; distal colon, n=8). (H) Proportion of total HuC/D neurons positive for Cdh8 (jejunum, n=8; distal colon, n=8). (I, J) As in (A, B) for HuC/D (IHC) (blue), Calcb (RNA) (red), and Nmu (RNA) (green). (K) Proportion of Nmu+ neurons positive for Calcb (jejunum, n=5; distal colon, n=5). (L) Proportion of Calcb+ neurons positive for Nmu (jejunum, n=5; distal colon, n=5). (M, N) As in (A, B) for HuC/D (IHC) (blue), Cdh6 (RNA) (red), and Nmu (RNA) (green). (O) Proportion of Cdh6+ neurons positive for Nmu (jejunum, n=7; distal colon, n=8). (P) Proportion of Nmu+ neurons positive for Cdh6 (jejunum, n=7; distal colon, n=8). (Q) Proportion of total HuC/D neurons positive for Nmu (jejunum, n=7; distal colon, n=8). (R, S) As in (A, B) for HuC/D (IHC) (blue), Cdh6 (RNA) (red), and Calcb (RNA) (green). (T) Proportion of Cdh6+ neurons positive for Calcb (jejunum, n=9; distal colon, n=7). (U) Proportion of Calcb+ neurons positive for Cdh6 (jejunum, n=9; distal colon, n=7). (V) Proportion of total HuC/D neurons positive for Calcb (jejunum, n=9; distal colon, n=9). (W, X) Schematic of marker overlap in jejunum (W) and distal colon (X). Scale bar represents 100 μm for (A, B, I, J, M, N, R, S), 50 μm for (D, E). All charts (mean ± SEM). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
 
 To confirm IPAN identity of Cdh6+ neurons, we first established the differential expression of two putative and broadly used markers of IPANs, Calcb and Nmu (Qu et al., 2008; May-Zhang et al., 2021; Morarach et al., 2021). We found that all Nmu+ neurons co-express Calcb in both jejunum and distal colon (Figure 1I–K). In contrast, only about half of Calcb+ neurons in the jejunum and two-thirds in the distal colon co-express Nmu (Figure 1L).
 
 We next assessed co-expression of Cdh6 with Calcb and Nmu. In the jejunum, we found that nearly all Nmu+ neurons and Calcb+ neurons express Cdh6 (Figure 1P and U), though only about three-quarters of all Cdh6+ neurons express Calcb and only about half express Nmu (Figure 1O and T). In contrast, in the distal colon, while Cdh6 is only expressed in about two-thirds of all Calcb+ neurons (Figure 1U), nearly all Cdh6+ neurons express Nmu and Calcb (Figure 1O and T). Taken together, our data show that in the myenteric plexus, Cdh6 is expressed exclusively in Calcb+/Nmu+ IPANs in the mouse distal colon (Figure 1W and X).
 
-## Mouse colonic IPANs display AH-type electrophysiology and IH current
+### Mouse colonic IPANs display AH-type electrophysiology and IH current
 
 We next assessed the electrophysiological properties of Cdh6+ IPANs. We focused our analysis on the colon, and for ease of neuron tracing, took advantage of a genetic strategy to sparsely label Cdh6+ neurons. Previous studies of Hb9:GFP transgenic mice have shown that due to the inserted transgene’s proximity to Cdh6, Cdh6+ neurons can express eGFP (Laboulaye et al., 2018). Hb9:GFP+ neurons were rare and projected extensively throughout the myenteric plexus (Figure 2A–C). In situ hybridization confirmed eGFP expression was limited to a small fraction (3.5 ± 0.8%) of Cdh6+ colonic neurons (Figure 2D and F–H), and all eGFP+ neurons expressed Cdh6 (Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/101043/elife-101043-fig2-v1.jpg)
 
-**Figure 2.:** Cdh6+ colon myenteric neurons.(A, B) Representative images of Hb9:GFP+ distal colon myenteric plexus labeled with HuC/D (IHC) (magenta) and GFP (green). (C) Proportion of total distal colon HuC/D neurons positive for GFP (n=3). (D) Proportion of distal colon Cdh6+ neurons positive for eGFP (n=3). (E) Proportion of distal colon eGFP+ neurons positive for Cdh6 (n=3). (F–H) Representative images of Hb9:GFP+ distal colon myenteric plexus labeled with HuC/D (IHC) (blue), Cdh6 (RNA) (red), and eGFP (RNA) (green). Scale bar represents 200 μm for (A, B), 50 μm for (F-H). All charts (mean ± SEM).
+**Figure 2.:** (A, B) Representative images of Hb9:GFP+ distal colon myenteric plexus labeled with HuC/D (IHC) (magenta) and GFP (green). (C) Proportion of total distal colon HuC/D neurons positive for GFP (n=3). (D) Proportion of distal colon Cdh6+ neurons positive for eGFP (n=3). (E) Proportion of distal colon eGFP+ neurons positive for Cdh6 (n=3). (F–H) Representative images of Hb9:GFP+ distal colon myenteric plexus labeled with HuC/D (IHC) (blue), Cdh6 (RNA) (red), and eGFP (RNA) (green). Scale bar represents 200 μm for (A, B), 50 μm for (F-H). All charts (mean ± SEM).
 
 We developed a protocol to perform whole-cell patch-clamp recordings (Osorio and Delmas, 2011) in Hb9:GFP+ colonic neurons in the distal colon. Membrane capacitance reflecting overall size of these cells was 32±8.7 pF (Figure 3D); their resting membrane potential (RMP) was –49.4±2.9 mV (Figure 3C). The input resistance (Rin) was 393±54.7 MΩ (Figure 3E) as computed from the slope of the voltage-current (V-I) relationship. All patched neurons had large-amplitude AP (72±2.5 mV, Figure 3F and E) with threshold of –26.4±0.9 mV (Figure 3L) and a half-width of 1.2±0.1 ms (Figure 3H) elicited at rheobase (20±4.5 pA, Figure 3G), each followed by an afterhyperpolarization (AHP = –67.7 ± 0.9 mV, Figure 3K). In addition, the first derivative of membrane voltage during the AP (dV/dt, Figure 3J) exhibited an inflection during the repolarization phase, suggesting the presence of fast and slow AP repolarization mechanisms (Figure 3F). Patched Hb9:GFP+ neurons generally could not sustain repetitive APs in response to long depolarizing current pulses. All patched neurons responded to hyperpolarizing current pulses with a time-dependent membrane potential sag (–6.3±1.2 mV, Figure 3B and M) and a rebound depolarization following the hyperpolarization (Figure 3B and N).
 
@@ -65,7 +65,7 @@ We developed a protocol to perform whole-cell patch-clamp recordings (Osorio and
 
 Consistent with these findings of sag and rebound, voltage clamp step hyperpolarizations revealed IH (hyperpolarization-activated current, Figure 3N) and, upon repolarization, IT (transient inward presumed Ca2+ current) (Huguenard, 1996) in terms of its kinetics (Figure 3O) and steady-state inactivation (Figure 3O and P). Taken together, these results show that Hb9:GFP+/Cdh6+ distal colonic neurons have AP afterhyperpolarizing (AH)-type electrophysiology typical of IPANs, including rhythm generating currents IH and IT (Xiao et al., 2004; Nurgali et al., 2007; Mao et al., 2006).
 
-## Colonic IPANs have Dogiel type II morphology and abundant projections throughout the myenteric plexus
+### Colonic IPANs have Dogiel type II morphology and abundant projections throughout the myenteric plexus
 
 To visualize the morphology and projections of individual patched Hb9:GFP+ neurons, we included biocytin in the internal solution for postfixation single-cell tracing (Figure 4). Patched Hb9:GFP+ neurons displayed Dogiel type II morphology (Furness et al., 2004), with large smooth cell somas and multiple branching neurites. Projections were mainly circumferential and extensively branched within myenteric ganglia. Thus, Hb9:GFP+ neurons display morphological features characteristic of IPANs (Nurgali et al., 2004; Furness et al., 2004).
 
@@ -77,17 +77,33 @@ To further visualize the full extent of IPAN circuitry in the myenteric plexus, 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/101043/elife-101043-fig5-v1.jpg)
 
-**Figure 5.:** +/tdTomato+ neurons have Dogiel type II morphology.CreER(A, B) Representative images of Cdh6+;tdTomato+ distal colon myenteric plexus labeled with HuC/D (IHC) (magenta) and tdTomato (IHC) (green). (CreERC) Inset of (A). (D) Dimensions of tdTomato+ neurons (major and minor axes) (N=73; n=3). (E) Representative image of Cdh6+;tdTomato+ distal colon myenteric plexus labeled with HuC/D (IHC) (blue), tdTomato (IHC) (red), and CreERCdh6 (RNA) (green). Arrowheads indicate Cdh6+/tdTomato+ cells; arrow, Cdh6+/tdTomato-negative cell. (F) Proportion of Cdh6+ distal colon neurons positive for tdTomato (n=6). (G) Proportion of total HuC/D neurons positive for tdTomato (proximal colon, n=5; mid colon, n=5; distal colon, n=10). Scale bar represents 100 μm for all images. All charts (mean ± SEM).
+**Figure 5.:** (A, B) Representative images of Cdh6CreER+;tdTomato+ distal colon myenteric plexus labeled with HuC/D (IHC) (magenta) and tdTomato (IHC) (green). (C) Inset of (A). (D) Dimensions of tdTomato+ neurons (major and minor axes) (N=73; n=3). (E) Representative image of Cdh6CreER+;tdTomato+ distal colon myenteric plexus labeled with HuC/D (IHC) (blue), tdTomato (IHC) (red), and Cdh6 (RNA) (green). Arrowheads indicate Cdh6+/tdTomato+ cells; arrow, Cdh6+/tdTomato-negative cell. (F) Proportion of Cdh6+ distal colon neurons positive for tdTomato (n=6). (G) Proportion of total HuC/D neurons positive for tdTomato (proximal colon, n=5; mid colon, n=5; distal colon, n=10). Scale bar represents 100 μm for all images. All charts (mean ± SEM).
 
-## Optogenetic activation of distal colon IPANs evokes CMCs
+### Optogenetic activation of distal colon IPANs evokes CMCs
 
 In thalamocortical relay neurons, IH contributes to intrinsic slow rhythmic burst firing at 1–2 Hz (McCormick and Pape, 1990), but the function of IH in colonic IPANs is not known. During CMCs, large regions of the ENS oscillate in synchrony at 1–2 Hz to generate traveling contractions along the colon (Spencer et al., 2021). Recent calcium imaging studies have shown that IPANs participate, along with all other subtypes of enteric neurons, in this synchronized oscillatory firing (Hibberd et al., 2018b). Furthermore, our electrophysiological studies confirm the presence of IH in mouse colonic IPANs (Figure 3N). However, the role of IPANs in spontaneous CMCs is not well understood.
 
 To interrogate the functional role of Cdh6+ IPANs in CMCs, we performed ex vivo colonic contraction force recordings in conjunction with optogenetic activation. To express ChR2-eYFP in Cdh6+ cells, we intercrossed Cdh6CreER and ROSA26LSL-ChR2-eYFP (Ai32) (Madisen et al., 2012) mice and induced Cre expression at 5–8 weeks of age (Figure 6A–C). In Cdh6CreER+;ChR2-eYFP+ colon preparations, we observed spontaneous CMCs at regular intervals of about 3–5 min. Blue light stimulation of Cdh6+ IPANs in distal colon 60–90 s after a spontaneous CMC (‘control’ CMC) resulted in an evoked, premature CMC that began during stimulation (N=17 stimulations; n=5 mice) (Figure 6D and E). Evoked CMCs traveled retrogradely from the distal to the proximal colon. They were similar to spontaneous CMCs in peak amplitude, area under the curve, and duration, though the contractile force (peak amplitude and AUC) was slightly weaker in the proximal colon (Figure 6F–H). Blue light stimulation in proximal or mid colon failed to generate CMCs (n=5/5, data not shown). In comparison, stimulation in control Cdh6CreER-negative;ChR2-eYFP+ colons failed to evoke any CMCs (N=28 stimulations; n=7 mice) (Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/101043/elife-101043-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) Representative images of Cdh6CreER+;ChR2-eYFP+ distal colon myenteric plexus labeled with HuC/D (magenta) and GFP (green). (C) Proportion of total distal colon HuC/D neurons positive for ChR2-eYFP (n=6). (D) Representative force traces. Blue bars indicate timing of light stimulation. LEDs placed distal to distal hook. (E) CMC intervals recorded from force traces. Evoked (blue) intervals represent the time from the prior spontaneous CMC before stimulation to the evoked CMC following stimulation. Control (gray) intervals represent the time between the spontaneous CMC prior to stimulation and the previous spontaneous CMC (n=5). Paired t test, one-tailed. (F) CMC peak amplitude recorded from force traces. Evoked (blue) indicates the evoked CMC following stimulation. Gray (control) indicates the spontaneous CMC prior to stimulation (n=5). Paired t test, two-tailed. (G) CMC AUC (area under the curve). Evoked (blue) and control (gray) as in (F) (n=5). Paired t test, two-tailed. (H) CMC duration. Evoked (blue) and control (gray) as in (F) (n=5). Paired t test, two-tailed. (I) Representative force traces. Hex indicates addition of 300 µM hexamethonium. Blue bars indicate timing of light stimulation. LEDs placed distal to distal hook (n=5/5). (J) Representative force traces on tethered pellets. First arrowhead indicates addition of 10 µM ZD7288. Second arrowhead indicates washout in Krebs. Third arrowhead indicates addition of 1 µM TTX. ZD7288 abolished CMCs in both proximal and distal colon (n=6/6, p=0.0022, Fisher’s exact test). Washout in Krebs restored CMCs in both proximal and distal colon (n=6/6, p=0.0022, Fisher’s exact test). (K) As in (J). First arrowhead indicates addition of 2 mM CsCl. Second arrowhead indicates washout in Krebs. Third arrowhead indicates addition of 1 µM TTX. Typical CMC production was impaired or altered by CsCl (proximal colon, n=5/6, p=0.0152; distal colon, n=6/6, p=0.0022, Fisher’s exact test): increased frequency (proximal colon, n=5/6, p=0.0152; distal colon, n=6/6, p=0.0022, Fisher’s exact test), decreased in amplitude (proximal colon, n=5/6, p=0.0152; distal colon, n=4/6, p=0.0606, Fisher’s exact test); retrograde force (proximal colon, n=2/6; distal colon, n=2/6). Scale bar represents 100 μm for (A, B). *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101043/elife-101043-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative force traces of control Cdh6CreER-;Chr2eYFP+ colon (n=5). Blue bars indicate timing of light stimulation. LEDs placed distal to distal hook. (B) The duration of CMC intervals recorded from force traces in control Cdh6CreER-;Chr2eYFP+ colon. CMC intervals containing optical stimulation are shown in blue in comparison to preceding spontaneous CMC intervals shown in black/grey (control). Each data point represents average data from a single animal. N=7 for the first two groups (proximal and mid-proximal) and N=6 for the last two groups (mid-distal and distal). Paired t test, one tailed.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/101043/elife-101043-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) Representative force traces from tethered pellet in proximal half (A) or distal half (B) of colon. Addition of 10 µM ZD7288 (first arrowhead), followed by washout in Krebs (second arrowhead), and addition of 1 µM TTX (third arrowhead). Scale bars represent 2 g force (vertical bars) and 10 min (horizontal bars) for all traces.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/101043/elife-101043-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A, B) Representative force traces from tethered pellet in proximal half (A) or distal half (B) of colon. Addition of 2 mM CsCl (first arrowhead), followed by washout in Krebs (second arrowhead), and addition of 1 µM TTX (third arrowhead). Scale bars represent 2 g force (vertical bars) and 10 min (horizontal bars) for all traces.
+
 CMCs have previously been shown to depend on nicotinic cholinergic transmission (Hibberd et al., 2018b). We performed optogenetic stimulation in the presence of hexamethonium, a blocker of nicotinic cholinergic transmission. Spontaneous CMCs were abolished in hexamethonium, and CMCs could not be evoked by optogenetic stimulation (Figure 6I). We conclude that activation of Cdh6+ distal colon IPANs evokes retrograde-traveling but otherwise characteristic and hexamethonium-sensitive CMCs.
 
-## Blockade of IH current in colonic IPANs disrupts CMC production
+### Blockade of IH current in colonic IPANs disrupts CMC production
 
 To determine whether IH in IPANs may contribute to oscillatory firing driving CMCs, we measured colonic contraction force on a tethered pellet in the presence of IH blockers ZD7288 or CsCl (Harris and Constanti, 1995; Galligan et al., 1990). ZD7288 blocks IH in all IPANs, including Cdh6+ IPANs. Spontaneous CMCs were recorded in all preparations of both proximal and distal colon prior to drug application. Addition of 10 µM ZD7288 to the recording chamber abolished spontaneous CMCs and washout of ZD7288 recovered spontaneous CMC activity (Figure 6J, Figure 6—figure supplement 2). Addition of 2 mM CsCl also impaired or altered spontaneous rhythmic production of typical CMCs (Figure 6K, Figure 6—figure supplement 3); rhythmic contractions increased in frequency (proximal colon, n=5/6; distal colon, 6/6), decreased in amplitude (proximal colon, n=5/6; distal colon, n=4/6, p=0.0606), or in some cases even included significant retrograde force components (proximal colon, n=2/6; distal colon, n=2/6). We conclude that pharmacologic blockade of IH in IPANs impairs the production of CMCs in the mouse colon.
 
@@ -111,7 +127,220 @@ Type II cadherins are most commonly homophilic synaptic cell adhesion molecules 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>#000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Hb9:GFP</td>
+      <td>Jackson Laboratory</td>
+      <td>#005029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ai14</td>
+      <td>Jackson Laboratory</td>
+      <td>#007908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ai32 (ChR2-eYFP)</td>
+      <td>Jackson Laboratory</td>
+      <td>#024109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Cdh6CreER</td>
+      <td>Xin Duan, UCSF</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human anti-HuC/D</td>
+      <td>Vanda Lennon, Mayo Clinic</td>
+      <td></td>
+      <td>IF(1:75,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep anti-GFP (polyclonal)</td>
+      <td>Biogenesis</td>
+      <td>Cat# 4745-1051, RRID:AB_619712</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RFP (polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat# 600-401-379, RRID:AB_2209751</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-PGP9.5 (polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab15503, RRID:AB_301912</td>
+      <td>IF(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-human Alexa Fluor (AF)-647 (polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#709-605-098, RRID:AB_2340577</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-sheep AF-488 (polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>#A11015, RRID:AB_141362</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit AF-488 (polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>#A21206, RRID:AB_2535792</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin AF-546</td>
+      <td>Invitrogen</td>
+      <td>#S11225</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Mm-Cdh6</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat #519541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Mm-Cdh8</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat #485461</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Mm-Nmu</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat #446831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Mm-Calcb</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat #425511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe Mm-eGFP</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat #400281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent V2 Assay kit with RNA-Protein Co-detection Ancillary Kit</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat #323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease XIV</td>
+      <td>Sigma</td>
+      <td>#P5417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase</td>
+      <td>Worthington</td>
+      <td>#CLS-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dispase</td>
+      <td>Sigma</td>
+      <td>#D4693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZD7288</td>
+      <td>Sigma-Aldrich</td>
+      <td>#73777</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cesium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>#C4036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin citrate</td>
+      <td>Alomone Labs</td>
+      <td>#T-550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris Filament Tracer</td>
+      <td>Bitplane, Oxford Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabChart 7, 8</td>
+      <td>AD Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All procedures conformed to the National Institutes of Health Guidelines for the Care and Use of Laboratory Animals and were approved by the Stanford University Administrative Panel on Laboratory Animal Care. Mice were group housed up to a maximum of five adults per cage. Food and water were provided ad libitum and mice were maintained on a 12:12 LD cycle. Male and female mice were used in all experiments.
 
@@ -119,72 +348,72 @@ Wild-type C57BL/6J mice (#000664), Hb9:GFP mice (#005029), Ai14 (#007908), and A
 
 Adult male and female mice (Cdh6CreER+;Ai32 and Cdh6CreER-;Ai32) aged 16–19 weeks were euthanized by isoflurane inhalation overdose in accordance with Flinders Animal Welfare Committee guidelines (ethics approval #4004). The protocol for animal euthanasia is approved by the National Health and Medical Research Council (NHMRC) Australian code for the care and use of animal for scientific purposes (8th edition, 2013) and recommendations from the NHMRC Guidelines to promote the well-being of animals used for scientific purposes (2008).
 
-## Dissection
+### Dissection
 
 Mice were culled by CO2 and cervical dislocation. Small intestine and colon were removed and flushed with ice-cold PBS, then placed in a Sylgard-lined Petri dish with ice-cold PBS for further dissection.
 
-## Wholemount preparations
+#### Wholemount preparations
 
 Intestinal segments were prepared and fixed as in Gomez Frittelli et al., 2023. Briefly, each intestinal segment was opened along the mesentery border, pinned flat under light tension serosa-side up, and fixed in 4% PFA in PBS at 4°C with gentle rocking for 90 min. Segments were washed three times in PBS at 4°C for at least 10 min with gentle rocking. Muscularis was separated from the mucosa at one end of the segment with fine forceps for 2–3 mm, then pinned mucosa-side up in the dish. The mucosa was peeled away from the muscularis with fine forceps while the muscularis was gently held down in the dish with a cotton swab. For immunohistochemistry, segments were processed immediately or stored in PBS with 0.1% NaN3 at 4°C until use. For RNAscope, muscularis segments were postfixed in 4% PFA in PBS at 4°C with gentle rocking overnight, then washed three times in PBS at 4°C with gentle rocking for at least 10 min each wash before use.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry was performed as described previously (Hamnett et al., 2022). Briefly, muscularis wholemount tissue segments about 7 mm × 7 mm were incubated with primary antibodies in PBT (PBS with 1% BSA and 0.3% Triton X-100) at 4°C with gentle rocking overnight, then washed three times in PBT for at least 10 min each at room temperature with gentle shaking. Tissues were incubated in secondary antibodies in PBT for 2 hr with gentle shaking, washed twice in PBT, and twice in PBS, then mounted on Superfrost Plus slides with Fluoromount G medium (Southern Biotech). Primary antibodies: human anti-HuC/D (1:75k) (gift from Vanda Lennon); sheep anti-GFP (1:1k) (Biogenesis); rabbit anti-RFP (1:1k) (Rockland); rabbit anti-PGP9.5 (1:4k) (Abcam). Secondary antibodies: donkey anti-human Alexa Fluor (AF)-647 (1:500); donkey anti-sheep AF-488 (1:1k); donkey anti-rabbit AF-488 (1:1k); streptavidin AF-546 (1:500).
 
-## RNAscope
+### RNAscope
 
 In situ hybridization in combination with immunohistochemistry was performed on muscularis wholemount tissues using the RNAscope Multiplex Fluorescent V2 Assay kit with RNA-Protein Co-detection Ancillary Kit [ACD], according to the manufacturer’s instructions with modifications as previously described (Guyer et al., 2023). Probes used were Cdh6 (#519541), Cdh8 (#485461), Nmu (#446831), Calcb (#425511), and eGFP (#400281).
 
-## Confocal imaging
+### Confocal imaging
 
 Images were acquired on a Leica SP8 confocal microscope using a ×20 (NA 0.75) oil objective at 1024 × 1024 pixel resolution. Tiled images (24–30 tiles) of z-stacks (2.5 µm between planes) were acquired and stitched together using the Navigator mode within LASX (Leica). Imaged regions were located away from the mesenteric border.
 
-## Image analysis and quantification
+### Image analysis and quantification
 
 Image analysis was performed using ImageJ/Fiji (NIH, Bethesda, MD, USA), as described previously (Hamnett et al., 2022). HuC/D images (z-stack individual planes) were blurred and thresholded, then maximally projected and total neurons counted using the Analyze Particles function. Cdh6CreER;Ai32 expression and RNAscope in situ hybridization and Cdh6CreER;Ai14 expression were counted manually. Cell tracing was performed in Imaris using Filament Tracer (Bitplane, Oxford Instruments).
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Whole-cell patch-clamp electrophysiological recordings of Hb9:GFP+ neurons were performed according to Osorio and Delmas, 2011, with modifications for recording from the distal colon. The protocol is described in brief below.
 
-## Tissue dissection and preparation
+#### Tissue dissection and preparation
 
 Mice aged 8–10 weeks were culled by CO2 and cervical dislocation. The colon was removed and flushed with ice-cold oxygenated Krebs solution (118 mM NaCl, 4.8 mM KCl, 1 mM NaH2PO4, 25 mM NaHCO3, 1.2 mM MgCl2, 2.5 mM CaCl2, and 11 mM glucose, supplemented with scopolamine [2 M] and nicardipine [6 μM]), then placed in a Sylgard-lined Petri dish with ice-cold oxygenated Krebs solution for further dissection. Krebs solution was changed out for fresh oxygenated solution every 5 min. Under a dissection microscope, the distal colon was pinned and the mucosa peeled away using fine forceps, leaving a few millimeters of mucosa along the edges of the tissue for pinning stability. The muscularis was then flipped over and re-pinned, serosa side up, and the longitudinal muscle carefully peeled away. The tissue was transferred to a custom 3D-printed recording chamber lined with a thin layer of clear Sylgard, and re-pinned under light tension, with the myenteric plexus facing up. The tissue was kept at 32°C and was continuously perfused with oxygenated Krebs solution. Hb9:GFP+ neurons were visually identified within a ganglion under epifluorescence illumination with a 455 nM LED (Thorlabs, M455L2) and a 470 (excitation)/525 (emission) nm wavelength filter set. A local perfusion of protease XIV (0.2% in Krebs) (Sigma, P5417) was applied on top of the targeted cell to digest any muscle fiber residue. A 1–2 MΩ pipet with a trimmed arm hair glued to the tip was used to brush and clean the surface of the ganglion. Further cleaning with 1 mg/mL collagenase (Worthington, CLS-4) 4 mg/mL dispase (Sigma, D4693) in Krebs solution was also performed to expose the GFP neuron for patching.
 
-## Patching and recording
+#### Patching and recording
 
 Patch pipettes (4–6 MΩ) pulled from borosilicate glass were filled with internal solution containing in mM: 144 K-gluconate, 3 MgCl2, 0.5 EGTA, 10 HEPES, pH 7.2 (285/295 mOsm), and 2% biocytin (Millipore Sigma, B4261-100MG). Patch-clamp recordings were collected with a Multiclamp 700A (Molecular Devices) amplifier, a Digidata 1440 digitizer, and pClamp10.7 (Molecular Devices). Recordings were sampled and filtered at 10 kHz. Passive properties analysis was performed using pClamp10.7. Analysis of AP was performed using a custom MATLAB (MathWorks) software. All recordings were performed at 32°C. Membrane potentials were not corrected for liquid junction potential. Immediately after whole-cell configuration, the cell was maintained at –70 mV and a short voltage clamp membrane test protocol consisting of 20 times 600 ms, 10 mV depolarization steps was performed to assess cell health and recording conditions. Recordings were performed in Hb9:GFP+ colonic neurons with an access resistance less than 30 MΩ (16.69±2.63 MΩ). Next, the current clamp mode was used to measure RMP, input resistance (Rin), and APs stimulated. Membrane potential was not adjusted from resting potential, and cells were depolarized by 1 s current pulses in 10 pA increments until APs were triggered (rheobase). Finally, if the seal was still stable, a voltage clamp steady-state inactivation of T-current protocol was performed as previously described (Huguenard and Prince, 1992). In brief, a sequence of depolarization from –90 to –45 mV for 500 ms quickly followed by a depolarization to –40 mV for 200 ms. Tissues were then fixed and immunostained according to Wholemount preparations and Immunohistochemistry sections above.
 
-## Mechanical recordings and optical stimulation
+### Mechanical recordings and optical stimulation
 
 Optogenetic stimulation experiments were performed as previously described (Hibberd et al., 2018a). A 2.5 mm stainless-steel rod was inserted through the lumen of the colon and mounted in an organ bath (120*40*12 mm; L*W*H) located on a heated base. Krebs solution (35.5–36°C) superfused the bath (~5 mL/min). Smooth muscle force was recorded via four evenly spaced hooks in the colonic muscularis externa, each linked to an isometric force transducer (Grass FT03C) by suture thread. Initial base resting tension was set between 0.5 and 1.0 g. Preamplified signals (Biomedical Engineering, Flinders University) were digitized by a PowerLab 16/35 (ADInstruments, Bella Vista, NSW, Australia) and recorded using LabChart 7 software (ADInstruments) on iMac computer. Post hoc analysis of the mechanical recordings was done using LabChart 8 software on PC.
 
 For optical stimulation during mechanical recordings in vitro, two LEDs (emitting 470 nmλ photons; C470DA2432, Cree Inc, NC, USA) were used, driven by a variable power supply. The area of light emission from each LED was 240 μm × 320 μm (0.0768 mm2). To characterize LED function, light power density across a range of currents was measured 5 mm from the LED using a standard photodiode power sensor (S120C; Thorlabs, NJ, USA) and a power meter (Thorlabs, PM100USB). The stimulator panel within LabChart software was used to set parameters and manually trigger LED pulse trains via the 10 V analogue output of the PowerLab and an ILD1 opto-isolator.
 
-## Intraluminal pellet CMC recordings
+### Intraluminal pellet CMC recordings
 
 To record proximal and distal colon CMCs separately (Ishizawa, 1984; Hibberd et al., 2022), full-length colon was bisected halfway between the caeco-colonic junction and terminal rectum, creating equal length proximal and distal colon preparations. Each preparation was suspended vertically on a stainless-steel holder inside a glass, water jacketed organ bath containing Krebs solution (Figure 6J and K). A 2.7 mm diameter synthetic pellet (polymethyl methacrylate, ‘Perspex’) was placed inside the gut lumen and linked by stainless-steel rod to a force transducer (MLT0420, ADInstruments), allowing measurement of both anterograde and retrograde propulsive forces on the pellet. Signals were amplified by bridge amplifier (FE224, ADInstruments), digitized at 1 kHz (PLCF1, ADInstruments) and recorded using LabChart 8 software.
 
 ZD7288 (73777, Sigma-Aldrich) was dissolved in water as stock solution at 10 mM. Cesium chloride (C4036, Sigma-Aldrich) was dissolved in water as stock solution at 200 mM. Tetrodotoxin citrate (T-550, Alomone Labs) was dissolved in water as stock solution at 3 mM. Control, ZD7288, CsCl, and washout periods were at least 30 min; TTX was applied for at least 10 min.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests and graphical representation of data were performed using Prism 9 software (GraphPad). Statistical comparisons were performed using paired t tests (one-tailed, CMC intervals; two-tailed, peak amplitude, AUC, duration) and Welch’s t test (marker colocalizations). Asterisks indicate significant differences.
 
-## Study design
+### Study design
 
-## Sample size determination
+#### Sample size determination
 
 Power analyses for previous similar experiments of neuronal marker cell counting determined that a sample size of n=5 was sufficient. For colonic motility experiments, sample sizes were based on 25% of measurement variance explained by the treatment effect (the minimum effect of interest) and a within group variance of 20% (effect size f=1.12). Repeated measures ANOVA with two groups with an alpha error probability of 5% and power of 95% gives a minimum sample size of five replicates in each group.
 
-## Randomization
+#### Randomization
 
 Randomization was not relevant to our study, as all mice were allocated into experimental groups based on genotype.
 
-## Blinding
+#### Blinding
 
 For optogenetic studies, experimenters were initially blinded to group allocation; however, it should be noted that overt functional responses to optogenetic stimulation unavoidably reveal group allocation once experiments are underway. For pharmacological experiments in control mice, it was not possible to blind the subject performing analysis of the mechanical force recordings.
 
-## Inclusion/exclusion criteria
+#### Inclusion/exclusion criteria
 
 All experiments were completed with replicates, and all replicates included in the data, with sample sizes detailed in the text and figure legends. Data was not excluded in this study.

@@ -16,8 +16,8 @@
 
 ### Affiliations
 
-1. https://ror.org/043z4tv69 National Institute of Allergy and Infectious Diseases Bethesda United States
-2. https://ror.org/02feahw73 CNRS UMR-5203; INSERM U661; UM1; UM2, Institut de Génomique Fonctionnelle Montpellier France
+1. National Institute of Allergy and Infectious Diseases Bethesda United States ([ROR:043z4tv69](https://ror.org/043z4tv69))
+2. CNRS UMR-5203; INSERM U661; UM1; UM2, Institut de Génomique Fonctionnelle Montpellier France ([ROR:02feahw73](https://ror.org/02feahw73))
 
 † Corresponding author
 
@@ -39,9 +39,21 @@ Here, we use RPM, and the ribosome transit assay (RTA), an extension of RPM that
 
 ## Results
 
-## Characterizing protein synthesis in human lymphocytes ex vivo with flow RPM implicates widespread ribosome stalling in non-activated cells
+### Characterizing protein synthesis in human lymphocytes ex vivo with flow RPM implicates widespread ribosome stalling in non-activated cells
 
 We first used flow RPM to compare translation in non-activated vs. Phorbol 12-myristate 13-acetate (PMA)/ionomycin/IL-2-activated human lymphocyte subsets after 2 and 5 days in culture (Figure 1A). We devolved the total flow RPM signals into T cell (CD4+, CD8+) and B cell (CD19+) subsets to follow distinct patterns of protein synthesis in each population (Figure 1—figure supplement 1A). Comparing lymphocytes from three donors revealed considerable donor heterogeneity in RPM staining of day 2 activated cells and proliferation of lymphocyte subpopulations.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig1-v1.jpg)
+
+**Figure 1.:** (A) Primary human lymphocytes from three independent donors were cultured in PMA/ionomycin and IL-2 (+PMA/iono) or IL-2 only (−PMA/iono) for up to 5 days. CD45+ cells were processed for flow ribopuromycylation method (RPM). (B) Primary human lymphocytes were cultured ex vivo as indicated, followed by a 15-min treatment with vehicle, harringtonine (HAR, 5 μg/ml), pactamycin (PA, 10 μM), emetine (EME, 25 μg/ml), or cycloheximide (CHX, 200 μg/ml), and all cultures were then treated with puromycin (PMY, 50 µg/ml) for 5 min. Cells were harvested, and RPM staining was performed. Gated on CD45+ cells. Error bars represent standard deviation of two independent experiments. (C) Radioactive amino acid incorporation (0.2 mCi/ml [3H]-Leu for 5 min) or RPM (as in B) in day 1 non-activated human lymphocytes. Error bars represent standard deviation of two independent experiments. (D) Radioactive amino acid incorporation and RPM in rested and activated human lymphocytes. RPM MFI values (gated on CD45+ cells) on the left, [3H]-Leu incorporation (cpm) in the middle, and ratios of the activated to the resting cells on the right. Each point represents a single donor; bars indicate the mean from three to five independent donors. Left and middle panels: one-way analysis of variance (ANOVA) pairwise p-values; right panel: unpaired t-test p-values with Welch’s correction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Population frequency and RPM of resting day 2 or 5 human lymphocytes or PMA/ionomycin/IL-2 activated day 2 or 5 human lymphocytes. Left panel is the percent of CD45+ cells in the indicated population, the right panel is the RPM signal in each population. (B) Representative RPM flow cytometry plot gated on polyclonal CD8+ T cells. Similar data was obtained from all donors. (C) Gating strategy to quantify HeLa cell ribosome transit assays (RTAs) as described in Figure 2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Primary human lymphocytes were cultured for 1 day in the absence of PMA/ionomycin or for up to 2 days in the presence of PMA/ionomycin/IL-2, followed by polysome profiling. Representative of two independent experiments. (B) Freshly isolated human lymphocytes were treated with 0.1 μg/ml cycloheximide (CHX) for 30 min prior to cell lysis and sucrose gradient centrifugation. Representative of two independent experiments. (C) C57BL/6 mice were treated IV with vehicle or CHX. After 10 min, spleens and lymph nodes were harvested, and the resulting cells subjected to polysome profiling via ultracentrifugation through 15–45% sucrose gradients. (D) Lymphocytes or hepatocytes were harvested from OT-I mice treated IV with CHX, lysed, and processed for polysome profiling. For activated cells, OT-I T cells were treated with PMA/ionomycin and IL-2 for 2 days prior to CHX treatment and polysome profiling. Bottom right: quantification of the areas under the curve of free subunits, monosomes, and polysomes. Representative of two independent experiments.
 
 We performed RPM on peripheral blood mononuclear cells labeled with carboxyfluorescein succinimidyl ester (CFSE) to track cell division by dye dilution (Figure 1—figure supplement 1B). On day 2, activated CD8+ T cells demonstrated a wide range of RPM staining, with nearly all divided cells at day 5 CFSElow and RPMhigh. Some divided cells exhibited near baseline RPM signals, however, consistent with their return to a resting state. Interestingly, although non-activated cells did not divide, ~50% demonstrated increased RPM staining.
 
@@ -51,13 +63,13 @@ We repeated this experiment using day 1 resting lymphocytes to directly compare 
 
 Thus, we cannot attribute the persistence of flow RPM staining in translation initiation inhibitor-treated resting lymphocytes to incomplete inhibition of protein synthesis. Instead, these data are consistent with a significant fraction of ‘stalled’ ribosomes in cultured resting cells, that is, ribosomes with nascent chains that are not actively translating. Stalled ribosomes would be labeled with PMY, as originally described in neurons (Graber et al., 2013), but would not incorporate [3H]-Leu, just as we observe with resting lymphocytes.
 
-## Flow RPM measures ribosome elongation rates in live cells
+### Flow RPM measures ribosome elongation rates in live cells
 
 To extend these findings, we developed a variation of approaches that use initiation inhibitors to measure ribosome transit times, for example by conversion of polysomes to monosomes (Conn and Qian, 2013) or ribosome profiling (Ingolia et al., 2011). To derive a relative ribosome transit rate, we incubate cells with the initiation inhibitor HAR for increasing times before shifting cells to 4°C to halt ribosome elongation and process for RPM staining (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic representation of the RPM ribosome transit analysis (RTA) method. Translation initiation is blocked and the decrease in RPM is monitored as the elongating ribosomes run off mRNA. (B) RPM-RTA in HeLa cells. Harringtonine (HAR, 5 μg/ml) is used to inhibit new ribosome initiation; emetine (EME, 25 μg/ml) is used to freeze ribosomes on mRNA; puromycin (PMY, 50 μg/ml) generates RPM signal. Curve is fitted using one phase exponential decay, and ribosome transit times are expressed as RPM half-time to decay. Representative of three biological replicates. (C) Same as B, but cells are instead lysed in the presence of MG-132 and subjected to anti-puromycin western blot analysis. Representative of two biological replicates. (D) Representative plots of the RPM-RTA signal in resting and activated human lymphocytes (left three panels). Gated on CD45 cells. Far right, ribosome transit times determined from three independent donors. Each dot represents data from one individual donor; the horizontal bars indicate the mean. p-values indicate one-way analysis of variance (ANOVA) pairwise comparisons. (E) Ribosome transit times as in A but determined by [3H]-Leu incorporation instead of RPM. After treatment with HAR or HAR plus EME, cells were labeled for 5 min in 0.25 mCi/ml [3H]-Leu. Right panel, ribosome transit times determined by [3H]-Leu incorporation from three independent donors. Each dot represents data from one individual donor; the horizontal bars indicate the mean. Unpaired t-test.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2C.
+**Figure 2.:** (A) Schematic representation of the RPM ribosome transit analysis (RTA) method. Translation initiation is blocked and the decrease in RPM is monitored as the elongating ribosomes run off mRNA. (B) RPM-RTA in HeLa cells. Harringtonine (HAR, 5 μg/ml) is used to inhibit new ribosome initiation; emetine (EME, 25 μg/ml) is used to freeze ribosomes on mRNA; puromycin (PMY, 50 μg/ml) generates RPM signal. Curve is fitted using one phase exponential decay, and ribosome transit times are expressed as RPM half-time to decay. Representative of three biological replicates. (C) Same as B, but cells are instead lysed in the presence of MG-132 and subjected to anti-puromycin western blot analysis. Representative of two biological replicates. (D) Representative plots of the RPM-RTA signal in resting and activated human lymphocytes (left three panels). Gated on CD45 cells. Far right, ribosome transit times determined from three independent donors. Each dot represents data from one individual donor; the horizontal bars indicate the mean. p-values indicate one-way analysis of variance (ANOVA) pairwise comparisons. (E) Ribosome transit times as in A but determined by [3H]-Leu incorporation instead of RPM. After treatment with HAR or HAR plus EME, cells were labeled for 5 min in 0.25 mCi/ml [3H]-Leu. Right panel, ribosome transit times determined by [3H]-Leu incorporation from three independent donors. Each dot represents data from one individual donor; the horizontal bars indicate the mean. Unpaired t-test.
 
 We validated this approach in HeLa cells whose ribosome transit times are well characterized (Nielsen and McConkey, 1980). This revealed a curve that follows one phase exponential decay (Figure 2B; gating strategy in Figure 1—figure supplement 1C), with a calculated half-life to decay of 70–150 s. Including EME with HAR prevented decay of the RPM signal, as predicted, since EME blocks elongation while enabling (even enhancing) puromycylation (David et al., 2012 ; David et al., 2013).
 
@@ -69,13 +81,13 @@ To independently measure ribosome transit times in day 1 resting vs. activated l
 
 Based on these findings, we conclude that:
 
-## Resting human lymphocytes have a dominant monosome population
+### Resting human lymphocytes have a dominant monosome population
 
 Protein synthesis is generally believed to occur predominantly in polysome structures, consisting of multiple ribosomes transiting a single mRNA (Warner et al., 1963). Classic (Cooper et al., 1976 ; Kay et al., 1971) and more recent studies (Tan et al., 2017) have established, however, that resting lymphocytes have few polysomes and provided evidence for active monosome translation by their stability in high salt, which dissociates non-translating ribosomes (Zylber and Penman, 1970).
 
 Confirming these reports, we found that a large fraction of assembled ribosomes in resting human lymphocytes fractionate as monosomes in sucrose gradients (Figure 1—figure supplement 2A). Polysome abundance increases over 2 days post-activation. Treating freshly isolated human lymphocytes with CHX to freeze ribosomes (Kay et al., 1971; Stanners, 1966) did not increase polysome recovery (Figure 1—figure supplement 2B). These findings, coupled with our RPM/RTA measurements, indicate that stalled ribosomes are likely monosomes.
 
-## Protein synthesis in mouse lymphocytes ex vivo
+### Protein synthesis in mouse lymphocytes ex vivo
 
 Working with human lymphocytes is problematic – preparations between individuals vary considerably, and the manipulations required to isolate lymphocytes from donor blood, such as elutriation and Percoll gradient purification, increase the time cells spend outside their physiological environment.
 
@@ -85,13 +97,21 @@ RTA analysis revealed that there was no decay in RPM signal for ex vivo day 1 re
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig3-v1.jpg)
 
-**Figure 3.:** (A) Lymphocytes from spleens and lymph nodes from transgenic OT-I mice were isolated, and either used immediately, cultured for 1 day in the absence of PMA/ionomycin, or cultured for 2 days in the presence of PMA/ionomycin and IL-2. RPM-ribosome transit assay (RTA) analysis was conducted to determine ribosome transit half-lives, both with and without emetine (EME). Representative of three biological replicates. (B) Lymphocytes from spleens and lymph nodes from transgenic OT-I mice were isolated, labeled with carboxyfluorescein succinimidyl ester (CFSE), and cultured under activating conditions for either 24 or 48 hr. Cells were harvested, and RPM-RTA was performed at both 37 and 39.5°C. Half-life of RPM signal by RTA is plotted; p-values determined by paired t-test analysis. Representative of two biological replicates.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Lymphocytes from spleens and lymph nodes from transgenic OT-I mice were isolated, and either used immediately, cultured for 1 day in the absence of PMA/ionomycin, or cultured for 2 days in the presence of PMA/ionomycin and IL-2. RPM-ribosome transit assay (RTA) analysis was conducted to determine ribosome transit half-lives, both with and without emetine (EME). Representative of three biological replicates. (B) Lymphocytes from spleens and lymph nodes from transgenic OT-I mice were isolated, labeled with carboxyfluorescein succinimidyl ester (CFSE), and cultured under activating conditions for either 24 or 48 hr. Cells were harvested, and RPM-RTA was performed at both 37 and 39.5°C. Half-life of RPM signal by RTA is plotted; p-values determined by paired t-test analysis. Representative of two biological replicates.
 
 In contrast, day 2 activated ex vivo OT-I T cells demonstrated a 20-fold increased RPM signal relative to resting cells, a near total signal decay with a t½ of ~70 s (Figure 3A, right panel), and a preponderance of polysomes (Figure 1—figure supplement 2D). This is consistent with the large fractional engagement of ribosomes upon activation. Notably, the decay rate is faster than observed in previous conditions and intriguingly, the rate increases by ~20% at a ‘fever’ temperature of 39.5°C (Figure 3B). This suggests that lymphocytes may be able to exceed the standard mammalian cell elongation rate of ~6 residues/s (Fan and Penman, 1970), particularly under fever conditions, when maximizing T cell protein synthesis is likely at a premium to support their anti-viral activity by rapid division and production of effector molecules.
 
-## Protein synthesis in mouse lymphocytes and innate immune cells in vivo
+### Protein synthesis in mouse lymphocytes and innate immune cells in vivo
 
 Mammalian cells evolved, of course, in mammals, not in plastic flasks nurtured by synthetic media in a 20% oxygen atmosphere. We therefore adapted the RTA assay to mice. To simultaneously measure resting and activated T cells, we adoptively transferred CFSE-labeled OT-I T cells into congenic B6 mice, which we infected with SIINFEKL-expressing vaccinia virus (VACV) to activate OT-I cells. We then injected mice with HAR for 0–10 min, followed by PMY injection and flow RPM processing of harvested splenocytes (Figure 4A). With each mouse providing a single data point, we could generate RTA curves for non-activated host CD4 and CD8 cells as well as transferred OT-I cells activated by VACV infection (Figure 4B). These curves show that nearly all ribosomes with nascent chains in both resting and activated lymphocytes are actively elongating proteins in vivo.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig4-v1.jpg)
+
+**Figure 4.:** (A) Depiction of the in vivo ribopuromycylation method (RPM)-ribosome transit assay (RTA) method. Labeled OT-I T cells are first adoptively transferred, followed by VACV-SIINFEKL infection of mice. RTA analysis is performed by intravenous injection of harringtonine (HAR) followed by puromycin (PMY; +/− cycloheximide [CHX] to prevent leakiness from HAR inhibition alone). Spleens are harvested for RPM analysis on both endogenous and transferred T cells. Schematic designed with Biorender. (B) Carboxyfluorescein succinimidyl ester (CFSE)-labeled Ly5.2+ (CD45.2+CD45.1−) OT-I T cells were adoptively transferred into Ly5.1 (CD45.1+CD45.2−) mice, which were then infected with VACV-SIINFEKL to activate the OT-I cells. Three days after infection, mice were intravenously injected with HAR simultaneously with PMY for 5 min (maximum signal), or first injected with HAR for ~110, ~275, or ~575 s before being injected with PMY for 5 min. Splenocytes from mice were harvested, surface stained for gating and activation markers as indicated, fixed and permeabilized, and stained for RPM. Gates were CFSElow OT-I CD8+ T cells to measure decay in activated cells, and CD44−CD8+ or CD44−CD4+ T cells to measure decay in resting T cells. The curve was generated by fitting to a one phase exponential decay. Representative of two independent experiments, 2–4 mice per group, with the mean and standard deviation of the calculated half-life decays as indicated. (C) RTA, with the CHX modification, of adoptively transferred OT-I T cells or un-activated host CD8+ T cells in mice infected for 2 or 3 days with VACV-SIINFEKL. Three to four independent experiments combined, normalized by setting maximum background-subtracted signal to 100.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) C57BL/6 mice were treated intravenously with cycloheximide (CHX) and puromycin (PMY) or only PMY. After the indicated times, splenocytes were harvested, surface stained, fixed/permeabilized, and RPM staining was performed. Representative of three independent experiments, 2–3 mice per group. (B) In one set of C57BL/6 mice, harringtonine (HAR) was intravenously injected for 15 min before intravenously injecting mice with PMY for 5 min. In a second set of mice, CHX and PMY were IV injected for 5 min. Splenocytes from each set of mice were harvested, surface stained, fixed, and permeabilized, and RPM staining was performed for various immune cell subsets. To determine relative amounts of ribosomes, the ‘HAR then PMY’ RPM signal was subtracted from the CHX + PMY RPM signal for each cell subset after flow cytometry. Representative of two independent experiments, 2–4 mice per group. (C) Carboxyfluorescein succinimidyl ester (CFSE)-labeled Ly5.2+ (CD45.2+CD45.1−) OT-I cells were adoptively transferred into Ly5.1+ (CD45.1+CD45.2−) mice, which were then infected with VAC-SIINFEKL. One to three days after infection, mice were intravenously injected with CHX simultaneously with PMY for 5 min. Splenocytes from the mice were harvested, surface stained, fixed and permeabilized, and RPM staining was performed. Representative flow cytometry plots gated on OT-I T cells. (D) Gating strategy used to display and quantify in vivo T cell data as described in panel C and elsewhere. (E) Number of divisions (by CFSE dilution) of OT-I T cells 1–3 days after infection of mice with VACV-SIINFEKL. (F) Amount of translation as measured by RPM signal (with ‘no PMY’ signal subtracted) in uninfected, or 1-, 2-, or 3-day VACV-SIINFEKL-infected mice. Representative of four independent experiments, 2–3 mice per time point.
 
 The elongation rate in vivo is surprisingly slower than the in vitro rate. Notably, this experiment used our original protocol of PMY treatment alone (Seedhom et al., 2016) since EME, the inhibitor used to stabilize puromycylated polypeptides on ribosomes in vitro (David et al., 2012) was ineffective in vivo. We found, however, that CHX is active in vivo, arresting the accumulation of puromycylated polypeptides for at least 60 min after injecting PMY (Figure 4—figure supplement 1A). We therefore modified the RTA by simultaneously treating animals with CHX with PMY to determine the relative amount of ribosome-associated nascent chains in vivo. This enabled comparison of translation activity in various immune cell types using 15-min HAR pretreatment values to subtract the signal from stalled ribosomes. The number of translating ribosomes varies over a narrow range among resting splenic lymphocytes, NK cells, macrophages, and neutrophils (Figure 4—figure supplement 1B).
 
@@ -101,9 +121,21 @@ We next performed the modified RTA to measure translation rates in OT-I cells in
 
 These results indicate that:
 
-## Contribution of monosomes vs. polysomes to T cell translation
+### Contribution of monosomes vs. polysomes to T cell translation
 
 We next biochemically characterized translation in resting OT-I cells in vivo or OT-I cells activated in vitro by PMA/ionomycin/IL-2. We treated animals/cells with CHX/PMY, isolated ribosomes from cell lysates on sucrose gradients in monosome and polysome fractions, blotted fractions onto nitrocellulose and stained with antibodies against RPL7 or PMY. The robust PMY signal shows that, contrary to recent claims (Enam et al., 2020; Hobson et al., 2020), PMY does not completely release nascent chains when ribosomes are previously exposed to CHX (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig5-v1.jpg)
+
+**Figure 5.:** (A) OT-I mice were treated intravenously with cycloheximide (CHX) and puromycin (PMY), and lymphocytes from the spleens and lymph nodes were isolated and subjected to polysome profiling by ultracentrifugation through 15–45% sucrose gradients (resting OT-I T cells). OT-I T cells activated in vitro for 2 days with PMA/ionomycin and IL-2 (without cognate SIINFEKL peptide) were treated either with CHX alone (no PMY control) or CHX with PMY and subjected to polysome profiling. The indicated fractions were collected, pooled, and their ribosomes were re-isolated and dotted onto a nitrocellulose membrane for blotting with antibodies against PMY and RPL7. After subtraction of background signal from the anti-puro antibody (middle panel), the PMY/RPL7 ratio of monosomes was expressed relative to that of polysomes, which was defined as 100% translating. Representative of two biological replicates. (B) For resting T cells, OT-I mice were treated intravenously with CHX, and lymphocytes from the spleens or lymph nodes were isolated and lysed. For activated T cells, lymph node or splenic OT-I T cells were stimulated in vitro for 2 days with PMA/ionomycin, IL-2, and exogenous SIINFEKL, followed by treatment with CHX for 5 min. For both resting and activated cells, ribosome-containing lysates were fractionated via ultracentrifugation on 15–45% sucrose gradients. Representative of two biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Maximum-normalized MFI of CD69, CD25, CD44, and side scatter (SSCa), as well as carboxyfluorescein succinimidyl ester (CFSE) expansion index, of OT-I T cells after 1 or 2 days with PMA/ionomycin or PMA/ionomycin with exogenous SIINFEKL. IL-2 was included in all conditions. (B) Side scatter is a good proxy for cell size. SSCa MFI plotted vs. cell diameter as determined by automated cell counter measurements. Combined measurements from four separate experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Lymph node and splenic OT-I T cells were mixed and stimulated in vitro for 2 days with SIINFEKL, PMA/ionomycin, and IL-2. Cells were treated with cycloheximide (CHX) for 5 min, lysed, and brought to either 300 or 500 mM NaCl final concentration. Ribosome-containing lysates were subjected to polysome profiling via ultracentrifugation through 15–45% sucrose gradients containing either 300 or 500 mM NaCl. Representative of two biological replicates. (B) Quantification of the areas under the curve of free subunits, monosomes, and polysomes for each sample. (C) For resting T cells, OT-I mice were treated IV with CHX and lymphocytes from the spleens or lymph nodes were isolated and lysed. For activated T cells, lymph node and splenic OT-I T cells were mixed and stimulated in vitro for 2 days with SIINFEKL, PMA/ionomycin, and IL-2, treated with CHX for 5 min, and lysed. Lysates were subjected to polysome profiling via ultracentrifugation on 15–45% sucrose gradients after bringing both lysate and sucrose gradients to a final concentration of 500 mM NaCl to dissociate non-translating ribosomes. (D) Quantification of the areas under the curve of free subunits, monosomes, and polysomes in each sample. Representative of two independent experiments.
 
 After setting the puromycylation:RPL7 ratio in polysomes to 100% (assuming that all ribosomes in the polysome fraction are actively translating), we found that 33% of monosomes in resting in vivo OT-I T cells and 52% of monosomes in day 2 activated OT-I T cells were puromycylated. Since in vivo RTA indicates that there is essentially no stalling of puromycylated ribosomes (Figure 4C), these data demonstrate robust translation in T cell monosomes. Assuming equal elongation rates, ~38% and ~32% of overall translation would occur in monosomes of resting in vivo and activated in vitro cells, respectively. We note, however, that since PMY reduces the number of polysomes recovered from CHX-treated cells by 5 – 10%, a small fraction of translating monosomes probably derive from the polysome population.
 
@@ -111,9 +143,17 @@ The high fraction of monosome-based translation is surprising in activated cells
 
 These findings indicate that monosomes make a major contribution to translation in resting T cells but are likely to make a minor contribution in fully activated cells. These results might also complicate the conclusion reached by Gerashchenko et al., 2021 that HAR may only be useful until 45 s after the start of treatment, as the assumption was made that polysomes were the only ribosome subset actively translating mRNA.
 
-## Accounting for translation in lymphocytes: measuring the protein-to-ribosome ratio
+### Accounting for translation in lymphocytes: measuring the protein-to-ribosome ratio
 
 Cells need to synthesize sufficient proteins to regenerate a complete proteome each division cycle. This number will depend on the division rate, cell size, protein concentration, and protein loss due to degradation and export (secretion, release of exosomes, loss of other cellular material). To understand how the protein synthesis apparatus enables such rapid T cell division times, we quantitated a number of critical protein synthesis parameters in resting and activated OT-I T cells (Figure 6A). For these experiments, we used the optimized protocol for in vitro OT-I T cell activation (Tan et al., 2017) that greatly increased the fraction of ribosomes in polysomes on day 1 post activation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig6-v1.jpg)
+
+**Figure 6.:** (A) Measurements made to calculate in vitro and in vivo rates of T cell division. (B) Volume calculations based on diameter measurements made by automated cell counter for the indicated cell types. Days 1 and 2 represent in vitro activated OT-I T cells. Ex vivo day 2 represent cells activated in vivo for 2 days, followed by isolation and processing. (C) Protein content per cell as measured by tryptophan fluorescence of denatured lysates. (D) Protein molecules per fL, assuming an average protein length of 472 aa and average amino acid mass of 110 Da. (E) Example output from custom bioanalyzer method to determine number or ribosomes per cell. Total RNA is quantified and the bioanalyzer is used to determine area under the curve for 18S and 28S percentage of total RNA. Additionally, an exogenous mRNA standard is spiked into the sample prior to RNA isolation to determine the percent loss in yield during the purification procedure. Combined, this method allows for the accurate determination of total number of 18S and 28S molecules per cell. (F) Number of ribosomes per cell for the indicated cells. (G) Ribosome per fL for the indicated cells. (H) The protein/ribosome ratio, a representation of how many proteins a single ribosome would need to create to duplicate the proteome. (I) Discrepancy between measured and calculated rates of division for OT-I T cells activated and dividing in vivo.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89015/elife-89015-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** HeLa cells (A), freshly isolated resting OT-I T cells (B), or OT-I T cells stimulated with PMA/ionomycin and IL-2 in vitro for 2 days (C) were either lysed directly in sodium dodecyl sulfate (SDS) extraction buffer (all) or subjected to a hypotonic lysis procedure to isolate non-nuclear lysates and nuclear lysates. Equal amounts of each fraction were subjected to immunoblotting for markers typical of the cytosol, ER, and nucleus. Antibodies against ribosomal proteins were used to determine where the majority of ribosomal proteins (and therefore ribosomes) fractionated. Controls with antibodies specific for nucleolar located fibrillarin, histone H3, and lamin A/C establish lack of nuclear contamination in non-nuclear fractions. ER and cytoplasmic proteins HSP90, GRP94, PDI, and actin indicate lack of contamination in the nuclear fraction. Representative of two experiments.
 
 Automated microscope measurements revealed that OT-I T cells increase in diameter from the resting state to the day 1 and 2 activated states, with a corresponding calculated volume increase (based on spherical geometry) of ~2.9-fold (Figure 6B). To quantify protein content, we determined total tryptophan (Trp) autofluorescence of fully denatured proteins in a total cell lysate (Wiśniewski and Gaugaz, 2015). Protein content per T cell increases ~fivefold following activation (Figure 6C), from 421 million proteins per cell (assuming an average length of 472 aa and a proteome Trp content of 0.69% Wiśniewski and Gaugaz, 2015) to 2.15 billion proteins per cell in day 2 activated cells, resulting in a net 1.7-fold increase in protein concentration (Figure 6D).
 
@@ -125,7 +165,7 @@ The ratio of proteins to ribosomes is critical since it dictates the minimal tim
 
 For HeLa cells, it would take a ribosome 19.9 hr to synthesize 910 ‘average’ proteins of 472 amino acids, reasonably close to the reported doubling time of ~24 hr. For OT-I T cells, with an in vitro doubling time of ~9.7 hr, the calculated minimal proteome duplication time is also within shouting distance – 10.1 hr by day 2. Therefore, the division rates of in vitro activated OT-I T cells, and HeLa cells can be approximated from the number of proteins and functional ribosomes translating a full capacity.
 
-## Paradoxical discrepancy in OT-I cell division rate and protein synthesis capacity
+### Paradoxical discrepancy in OT-I cell division rate and protein synthesis capacity
 
 We extended these findings to OT-I T cells in vivo, determining first that adoptively transferred OT-I T cells divide most rapidly between days 1 and 2 of activation during acute viral infection, with an average doubling time of 6.8 hr, slowing to approximately 7.7 hr by day 2 post-infection (via CFSE labeling; Figure 4—figure supplement 1C–E). We sorted for transferred OT-I T cells on day 2 post-infection and measured cell size, protein, and ribosome numbers (‘ex vivo day 2’ measurements in Figure 6 graphs). Cells activated in vivo were similar in size and protein content to in vitro activated cells, but the protein-to-ribosome ratio was significantly higher than in vitro activated T cells due to the presence of 2.3 vs. 3.6 million 60S subunits in maximally in vitro activated T cells.
 
@@ -157,59 +197,482 @@ In any event, our findings clearly indicate how much remains to be learned about
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male, female)</td>
+      <td>(C57BL/6J)male, female</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664Strain #(000664)</td>
+      <td>(6 weeks to 8 months of age)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male, female)</td>
+      <td>(C57BL/6NTac) male, female</td>
+      <td>Taconic Biosciences</td>
+      <td>RRID:IMSR_TAC:B6Model #(B6-M, B6-F)</td>
+      <td>(6 weeks to 8 months of age)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male, female)</td>
+      <td>(B6.SJL-Ptprca/BoyAiTac) male, female</td>
+      <td>Taconic Biosciences</td>
+      <td>RRID:IMSR_TAC:1349Model #(4007-M, 4007-F)</td>
+      <td>(6 weeks to 8 months of age)CD45.1 (Ly5.1)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male, female)</td>
+      <td>Strain (B6.129S7-Rag1tm1Mom Tg(TcraTcrb)1100Mjb N9 + N1) male, female</td>
+      <td>NIAID Intramural Research Repository</td>
+      <td>RRID:IMSR_TAC:4175Model #(4175-M, 4175-F)</td>
+      <td>(6 weeks to 8 months of age)RAG1ko OTI TCR transgenic</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa, Epithelial cell, uterus; cervix (adenocarcinoma)</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0030CCL2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Peripheral blood mononuclear cells (PBMCs, healthy, adult)</td>
+      <td>NIH Clinical Center Department of Transfusion Medicine</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Calbiochem</td>
+      <td>540222 – 100 MG</td>
+      <td>(1 mg/ mouse)(20 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>EMD Millipore</td>
+      <td>239764 – 100 MG</td>
+      <td>(0.34 mg/mouse)(200 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Harringtonin</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-204771A</td>
+      <td>(100 µg/mouse)(5 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emetine, dihydrochloride</td>
+      <td>Calbiochem</td>
+      <td>324693</td>
+      <td>(25 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anisomycin</td>
+      <td>Sigma</td>
+      <td>A9789-25MG</td>
+      <td>(50 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pactamycin</td>
+      <td>Sigma</td>
+      <td>PZ0182</td>
+      <td>(10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carboxyfluorescein succinimidyl ester (CFSE)</td>
+      <td>Invitrogen</td>
+      <td>C34554</td>
+      <td>(5 µM)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD3 mouse monoclonal antibody (OKT3), PerCP-eFluor 710, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 46-0037-42RRID:AB_1834395</td>
+      <td>FACS(1 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human mouse CD19 Monoclonal Antibody (HIB19), PE, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 12-0199-42RRID:AB_1834376</td>
+      <td>FACS(1 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human mouse CD45 Monoclonal Antibody (2D1), APC-eFluor 780, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 12-0199-42RRID:AB_1834376</td>
+      <td>FACS(1 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon PE-CF594 Mouse anti-Human CD4 (L3T4)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 562281RRID:AB_11154597</td>
+      <td>FACS(1 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human mouse CD4 Monoclonal Antibody (RPA-T4), PE-Cyanine7, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 25-0049-42RRID:AB_1659695</td>
+      <td>FACS(1 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon BV421 Mouse Anti-Human CD8 (RPA-T8)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 562428RRID:AB_11154035</td>
+      <td>FACS(1 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon BV786 Hamster Anti-Mouse CD3e (145 – 2 C11)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 564379RRID:AB_2738780</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon BV510 Rat Anti-Mouse CD4 (RM4-5)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 563106RRID:AB_2687550</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon APC-R700 Rat anti-Mouse CD5 (53 – 7.3)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 565505</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon PE-CF594 Rat Anti-Mouse CD8a (53 – 6.7)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 562283RRID:AB_11152075</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse rat CD11b Monoclonal Antibody (M1/70), PE-Cyanine7, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 25-0112-82RRID:AB_469588</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse rat CD19 Monoclonal Antibody (eBio1D3 (1D3)), APC, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 17-0193-82RRID:AB_1659676</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon BV650 Rat Anti-Mouse CD25 (PC61)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 564021RRID:AB_2738547</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon BV605 Rat Anti-Mouse CD44 (IM7)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 563058RRID:AB_2737979</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse rat CD44 Monoclonal Antibody (IM7), eFluor 450, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 48-0441-82RRID:AB_1272246</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse mouse CD45.1 Monoclonal Antibody (A20), APC, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 17-0453-82RRID:AB_469398</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse mouse CD45.1 Monoclonal Antibody (A20), eFluor 450, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 48-0453-82RRID:AB_1272189</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Armenian hamster TCR gamma/delta Monoclonal Antibody (eBioGL3 (GL-3, GL3)), PE, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 12-5711-82RRID:AB_465934</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Pharmingen PE Rat Anti-Mouse Ly-6G and Ly-6C(RB6-8C5)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 561084RRID:AB_394644</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse mouse NK1.1 Monoclonal Antibody (PK136), FITC, eBioscience</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 11-5941-82RRID:AB_465318</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Horizon BV711 Hamster Anti-Mouse TCR β Chain(H57-597)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 563135RRID:AB_2738023</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Pharmingen PE Mouse Anti-Mouse Vβ 5.1, 5.2 T-Cell Receptor(MR9-4)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 562086RRID:AB_394698</td>
+      <td>FACS(0.75 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-puromycin(PMY-2A4)</td>
+      <td>(made in-house)Developmental Studies Hybridoma Bank</td>
+      <td>Cat#:PMY-2A4RRID:AB_2619605</td>
+      <td>FACS(1 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human anti-riboP</td>
+      <td>Immunovision</td>
+      <td>PAG-3000</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RPL7</td>
+      <td>Abcam</td>
+      <td>Catalog number: ab72550, RRID:AB_1270391</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RPL26</td>
+      <td>Bethyl Laboratories</td>
+      <td>Catalog number: A300-686A, RRID:AB_530289</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-beta actin</td>
+      <td>Invitrogen</td>
+      <td>Catalog number: MA1-140, RRID:AB_2536844</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-HSP90</td>
+      <td>Santa Cruz</td>
+      <td>Discontinued</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-GRP94</td>
+      <td>Enzo</td>
+      <td>Catalog number: ADI-SPA-850-D, RRID:AB_2039133</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RPL28</td>
+      <td>Abcam</td>
+      <td>Catalog number: ab138125</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RPL6</td>
+      <td>Abcam</td>
+      <td>Catalog number: ab176705</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PDI</td>
+      <td>Abcam</td>
+      <td>Catalog number: ab2792, RRID: AB_303304</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-lamin A/C</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog number: 4777, RRID:AB_1054575</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-fibrillarin</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog number: 2639, RRID: AB_2278087</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-RPS6</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog number: 2317, RRID:AB_2238583</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-histone H3</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog number: 4499, RRID:AB_10544537</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RPL5</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog number: 51345, RRID:AB_279939</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RPS3</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog number: 9538, RRID:AB_10622028</td>
+      <td>Immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Flour 647 Protein Labelling Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat#:A20173</td>
+      <td>Used to label anti-puromycin Ab, used at 1 μl per test for FACS</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SIINFEKL</td>
+      <td>Research Technology Branch, NIAID</td>
+      <td>N/A</td>
+      <td>For T cell activation</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>vaccinia virus NP (366NT60)-SIINFEKL-tdTomato</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Leucine, L-[4,5-3H], 1 mCi</td>
+      <td>Revvity</td>
+      <td>Cat.#: NET1166001MC</td>
+      <td>(0.2 mCi/ml)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DC Protein Assay Kit I</td>
+      <td>Bio-Rad</td>
+      <td>Cat.#: 5000111</td>
+      <td>Protein quantification</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CleanCap EGFP mRNA</td>
+      <td>Tri-Link</td>
+      <td>Cat.#: L-7601</td>
+      <td>Spike in standard for RNA quantification</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA 6000 Nano Kit</td>
+      <td>Agilent</td>
+      <td>Cat.#: 5067 – 1511</td>
+      <td>RNA quantification</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Specific pathogen-free C57BL/6 mice were purchased from the Jackson Laboratory or from Taconic. OT-I TCR transgenic mice were acquired from the NIAID Intramural Research Repository. All mice were housed under specific pathogen-free conditions (including murine norovirus, mouse parvovirus, and mouse hepatitis virus) and maintained on standard rodent chow and water supplied ad libitum. All animal studies were approved by and performed in accordance with the Animal Care and Use Committee of the National Institute of Allergy and Infectious Diseases under protocol LVD-5E. For acute infections, and to generate memory T cells, CFSE-labeled Ly5.2+ (CD45.2+CD45.1−) OT-I T cells were adoptively transferred into Ly5.1 (CD45.1+CD45.2−) mice. A subset of these mice was infected with VACV-SIINFEKL for indicated times to activate OT-I T cells, with some mice left uninfected where specified. For experiments done directly on memory OT-I T cells, assays were done 8–9 weeks after infection.
 
-## Cells
+### Cells
 
 HeLa cells were obtained originally from the ATCC, were authenticated by the ATCC STR profiling service, and were routinely confirmed to be mycoplasma-negative with the ATCC Universal Mycoplasma Detection Kit.
 
-## In vivo RPM, in vivo RPM-RTA, and relative protein synthesis determination
+### In vivo RPM, in vivo RPM-RTA, and relative protein synthesis determination
 
 For the standard and CHX-improved in vivo RPM assays, mice were intravenously injected with 100 μl of a 10 mg/ml solution of PMY in phosphate-buffered saline (PBS) that was warmed to 37°C, or PMY, as just described, along with 0.34 mg per mouse of CHX. After indicated times, mice were sacrificed, and organs were collected into complete Roswell Park Memorial Institute (RPMI) on ice (Gibco RPMI supplemented with 7.5% fetal calf serum). For the in vivo RTA, or the CHX-improved in vivo RTA, mice were intravenously injected with 100 μg of HAR simultaneously with 1 mg of PMY, or 1 mg of PMY and 0.34 mg of CHX for 5 min (for the maximum signal) or first intravenously injected with 100 μg of HAR for the times indicated before being intravenously injected with 1 mg of PMY, or PMY and 0.34 mg of CHX for 5 min. To determine relative levels of active protein synthesis, two sets of mice were required. In the first set, mice were intravenously injected with 100 μg of HAR for 15 min, and then intravenously injected with 1 mg of PMY and 0.34 mg of CHX for 5 min before spleens were harvested. In the second set, mice were intravenously injected simultaneously with 0.34 mg of CHX and 1 mg of PMY for 5 min before spleens were harvested.
 
-## Single-cell preparation from organs
+### Single-cell preparation from organs
 
 Isolated organs were crushed between two frosted microscope slides, and the resultant single cell suspension was filtered through a 70-µm mesh screen. The filtered single cell suspension was then centrifuged, resuspended in ACK lysing buffer (Lonza) to lyse red blood cells, centrifuged again, and resuspended in complete RPMI for counting on a Nexcelom Cellometer Vision using Trypan Blue (Lonza BioWhittaker) for live/dead cell discrimination and cell diameter measurements.
 
-## CFSE labeling
+### CFSE labeling
 
 Spleens and inguinal, mediastinal, cervical, mesenteric, and popliteal lymph nodes from OT-I TCR transgenic or C57BL/6 mice were processed into a single-cell suspension, red blood cells were lysed in ACK lysing buffer, and the resultant cells filtered through a 70-µM mesh screen. After two washes in PBS, cells were counted on a Nexcelom Cellometer Vision using Trypan Blue for dead cell exclusion, and cells were labeled in 5 µM CFSE (Invitrogen) in PBS at 1 × 107 cells per ml for 18 min in a 37° water bath with mixing every 6 min. Cells were washed three times in PBS, recounted, and adoptively transferred into the indicated mice or cultured as specified.
 
-## Human lymphocyte purification and culture conditions for human and mouse lymphocytes
+### Human lymphocyte purification and culture conditions for human and mouse lymphocytes
 
 Elutriated human lymphocytes were from healthy anonymous donors at the NIH Clinical Center Department of Transfusion Medicine. After collection, elutriated lymphocytes were purified on a discontinuous 35–70% Percoll (Amersham Biosciences) gradient and washed once with ACK lysing buffer (Life Technologies) to remove contaminating red blood cells. For time-course experiments, purified lymphocytes were resuspended in PBS and labeled with CFSE where indicated (as described above) to enable tracking of cell division over time. Lymphocytes were plated at 1–2 × 106 cells/ml in RPMI: RPMI 1640 (Gibco) supplemented with 15% fetal calf serum (FCS), 25 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES, Corning Cellgro), 1 mM sodium pyruvate (Gibco), and 55 µM beta-mercaptoethanol(Gibco). Depending on the experiment, media was also supplemented with recombinant human IL-2 (BRB NCI Frederick, 25 U/ml), PMA (Sigma, 1 ng/ml), and ionomycin (Sigma, 100 ng/ml). For OT-I T cell cultures, PMA was added at 100 ng/ml instead, and, where noted, SIINFEKL was added as well (100 nM) for optimal activation. Lymphocytes were cultured in 6% CO2 at 37°C and allowed to sit overnight prior to any experiments unless noted (noted as ‘freshly isolated’). For time-course experiments, lymphocytes were cultured for up to 5 days and resuspended in fresh media every 2 days. Cell counts, diameters, and viabilities (through Trypan blue exclusion) were made on a Nexcelom Cellometer Vision cell counter. Cell volumes were calculated assuming spherical geometry.
 
-## In vitro RPM and RPM staining
+### In vitro RPM and RPM staining
 
 For each sample, cells were resuspended at 2 × 107 cells per ml and 100 μl transferred into 96-well round-bottom plates. When indicated, the media contained protein synthesis inhibitors at the following concentrations: 5 μg/ml HAR (Santa Cruz Biotechnology), 25 μg/ml EME (Calbiochem), 200 μg/ml CHX (Sigma), 50 μg/ml anisomycin (Sigma), or 10 μM pactamycin (Sigma). After a 15-min incubation at 37°C, 50 μl of 3× PMY (Calbiochem) media was added (150 μg/ml, for a final concentration of 50 μg/ml) and the cells were incubated for an additional 5 min before shifting to ice and adding 100 μl of cold PBS. Cells were then stained with ethidium monoazide (10 μg/ml in PBS, Molecular Probes) for live/dead cell discrimination. After thorough washing, and a 10-min incubation with heat-inactivated sera, or 2.4G2 to block Fc receptors, cell surface antigens were labeled for 30 min at 4°C with the following antibodies: For human lymphocyte stains, antibodies against: CD3ε PerCP-eFluor 710 (clone OKT3, eBioscience), CD19 PE (clone HIB19, eBioscience), CD45 APC-eFluor 780 (clone 2D1, eBioscience), CD4 PE-CF594 (clone RPA-T4, BD) or CD4 PE-Cy7 (clone RPA-T4, eBioscience), and CD8α BV421 (clone RPA-T8, BD). For mouse lymphocyte stains, antibodies were: CD3ε BV786 (clone 145 – 2 C11, BD), CD4BV510 (clone RM4-5, BD), CD5 APC-R700 (clone 53-7.3, BD), CD8α PE-CF594 (clone 53-6.7, BD), CD11b PE-Cy7 (clone M1/70, eBioscience), CD19 APC-Cy7 (eBio1D3, eBioscience), CD25 BV650 (PC61, BD), CD44 BV605 (IM7, BD), CD44 eFl450 (clone IM7, eBioscience), CD45.1 APC (clone A20, eBioscience), CD45.1 eFl450 (clone A20, eBioscience), CD45.2 eFluor450 (clone 104, eBioscience), CD45.2 PE-Cy7 (clone 104, eBioscience), CD69 PerCP-Cy5.5 (clone H1.2F3, Invitrogen), γδ TCR PE (eBioGL3, GL3, eBioscience), Gr1 PE (clone RB6-8C5, BD), NK1.1 FITC (clone PK136, eBioscience), TCRβ 711 (H57-597, BD), and Vβ5.1/Vβ5.2 PE (clone MR9-4, BD). All antibodies were used at 1:150 dilution in buffered saline supplemented with 0.1% BSA. Next, cells were simultaneously fixed and permeabilized in fix/perm buffer (1% paraformaldehyde, 0.0075% digitonin in PBS) for 20 min at 4°C. Intracellular PMY was labeled with an anti-PMY antibody (clone 2A4) directly conjugated with Alex Fluor 647 (conjugated using the Life Technologies Protein Labeling Kit per the manufacturer’s instructions) for 1 hr. Cells were thoroughly washed and resuspended in buffered saline supplemented with 0.1% BSA, flow cytometry performed on a BD LSRII or BD LSRFortessa X-20, and resulting data analyzed with FlowJo software. To gate on OT-I T CD8+ T cells, setup was: singlets by FSCa and FSCw, lymphocytes by SSCa and FSCa, EMA− (live/dead cell marker), CD3+CD19−, CD8+CD4−, CD45.2+CD45.1−, and Vb5+, and activation markers as indicated. For thymocyte subsets, gating setup was singlets by FSCa and FSCw, lymphocytes by SSCa and FSCa, EMA−, and then subsets on combinations of CD3ε, CD4, CD8α, CD19, CD25, CD44, CD69, γδ TCR, and TCRβ. For human lymphocytes, gating setup was singlets by FSCa and FSCw, lymphocytes by SSCa and FSCa, EMA−, and on subsets as indicated.
 
-## Amino acid radiolabeling
+### Amino acid radiolabeling
 
 The following reagents were used for radioactive amino acid labeling: Dulbecco’s modified Eagle medium (for labeling HeLa cells) or RPMI minus leucine (RPMI without L-leucine, L-glutamine, and sodium pyruvate from MP Biomedicals, supplemented with Glutamax and 1 mM sodium pyruvate) for labeling human lymphocytes with or without inhibitors and for the [3H]-Leu (Perkin Elmer) ribosome transit analysis. Cells were kept at 37°C throughout the experiment and labeling. Cells were resuspended in complete RPMI at 1 × 107 cells/ml and 1 ml was aliquoted into fresh Eppendorf tubes. Next, cells were spun at 300 × g for 4 min and pre-treated with protein synthesis inhibitors (concentrations as in RPM Staining above) in complete RPMI for 15 min. Pre-treated cells were spun at 300 × g for 4 min, resuspended in 200 μl of labeling media (RPMI-Leu) containing 0.2 mCi/ml [3H]-Leu in the absence or presence of protein synthesis inhibitors as indicated. After a 5-min labeling period, protein synthesis was stopped by adding 1 ml of ice-cold PBS containing 200 μg/ml of CHX. For all labeling experiments, after washing cells thoroughly in ice-cold PBS, cells were lysed in 100 or 200 μl of 2% SDS lysis buffer (2% SDS, 50 mM Tris–HCl pH 7.5, 5 mM ethylenediaminetetraacetic acid (EDTA), 15 U/ml DnaseI (Roche), cOmplete mini EDTA-free protease inhibitor tablet (Roche) in water) and boiled for 30–60 min to ensure complete lysis. Protein amounts were quantified by the DC Protein Assay (Bio-Rad) or by tryptophan fluorescence measurements (Wiśniewski and Gaugaz, 2015). To quantify the amount of [3H]-Leu incorporated into proteins, equal amounts of lysate (six replicates per condition) were spotted onto a 96-well DEAE filter mat (PerkinElmer) and the mat was dried at 60°C. The mat was then soaked in a 10% trichloroacetic (Calbiochem) solution for 30 min at room temperature, washed twice in 70% ethanol, dried at 60°C, placed in a MicroBeta sample bag (PerkinElmer) with ~6 ml of BetaPlate Scint (PerkinElmer), and heat sealed. Radioactivity was quantified in a 1450 MicroBeta TriLux scintillation counter. To determine the total amount of amino acid incorporated into proteins, dilutions of the [3H]-Leu stock were counted and used as standards.
 
-## In vitro RPM-RTA
+### In vitro RPM-RTA
 
 RPM-RTA: For each time point, 1 × 106 lymphocytes were transferred to a fresh conical tube and resuspended in 250 μl of the appropriate media. Cells were kept at 37°C (or 39.5°C when indicated) throughout the experiment. An equal volume of 2× inhibitor media was added to each tube at the indicated time and the tube was vortexed briefly to mix. Depending on the time course, the 2× inhibitor media contained HAR (Santa Cruz Biotechnology) at 10 μg/ml (final concentration 5 μg/ml), or HAR at 10 μg/ml and EME (Calbiochem) at 50 μg/ml final concentrations of 5 and 25 μg/ml, respectively. At the end of the time course, an equal volume (250 μl) of 3× PMY (Calbiochem) media (150 μg/ml, for a final concentration of 50 μg/ml) was added to each tube and the tube was vortexed briefly to mix. Cells were incubated for 5 min with PMY before adding an excess of ice-cold PBS to quench the ribopuromycylation reaction. The cells were then stained for analysis by flow cytometry as described above.
 
 [3H]-Leu RTA: Cells were kept at 37°C throughout the experiment. For each time point, 30 × 106 lymphocytes were transferred to fresh Eppendorf tubes and resuspended in 50 μl of the RPMI-Leu. 50 μl of 2× inhibitor media was added to each tube and the tubes were vortexed briefly to mix. The inhibitor concentrations are as noted above. At the indicated times, an equal volume (100 μl) of [3H]-Leu labeling media (RPMI-Leu media and [3H]-Leu in a 1:1 ratio, 0.5 mCi/ml) was added and cells were labeled for 5 min. To stop [3H]-Leu incorporation, an excess of ice-cold PBS containing 200 μg/ml CHX and 1 mg/ml leucine was added before placing the cells on ice. Cells were lysed and [3H]-Leu incorporation quantified as described under ‘Amino acid radiolabeling’ subsection.
 
-## Polysome profiling
+### Polysome profiling
 
 A 15–45% continuous sucrose gradient was made in Thinwall polyallomer tubes (Beckman Coulter) from 15% and 45% sucrose (MP Biomedicals) solutions in gradient buffer (20 mM Tris–HCl pH 7.4, 5 mM MgCl2, 100 mM KCl, supplemented with 100 μg/ml CHX (Sigma) and 10 U/ml RNaseOUT (Invitrogen)). Briefly, 5 ml of the 15% sucrose solution was carefully layered onto 5 ml of the 45% sucrose solution, and the tube was placed horizontally at 4°C, typically overnight or for at least 2.5 hr before the experiment. For each gradient, cells were harvested and washed in cold PBS as described above. For cell lysis, cells were first swelled by adding 950 μl of a cold hypotonic buffer (20 mM Tris–HCl pH 7.4, 5 mM MgCl2, 10 mM KCl, 40 U/ml RNaseOUT, 0.1 U/μl SuperaseIn, supplemented with Complete EDTA-free protease inhibitors (Roche)). After 10 min of cell swelling, NP-40 was added to a final concentration of 0.5%, the resultant lysate mixed, incubated on ice for 3 min, and spun at 7000 rpm for 2 min to remove nuclei. Post-nuclear lysates were then brought to 100 mM KCl (or 300 or 500 mM NaCl where indicated), layered onto 15–45% continuous sucrose gradients, and spun for 100 min at 38,000 rpm at 4°C in a SW41Ti rotor (Beckman Ultracentrifuge). Gradients were syringe-fractionated mechanically from the bottom up and monitored for absorbance at 254 nm (Teledyne Isco) to obtain polysome profiles. When indicated, area under the curve measurements were calculated by a trapezoidal method from the resulting curves. When required by the experiment, we concentrated monosome and polysome fractions for immunoblotting. To pellet the ribosomes, we spun the pooled monosome or polysome fractions for 1 hr or O/N at 39,000 rpm at 4°C in the SW41Ti rotor on a 34% sucrose cushion. The resultant ribosome pellet was resuspended in 2% SDS extraction buffer.
 
-## Quantitating cellular proteins
+### Quantitating cellular proteins
 
 We quantitated total protein in cell lysates based on Trp fluorescence (Wiśniewski and Gaugaz, 2015). Briefly, cells (1–2 million lymphocytes per 100 µl) were lysed for 10–30 min at 95°C in a solution of 2% SDS, 0.1 M Tris–HCl, 50 mM Dithiothreitol (DTT), pH 7.8 with 15 U/ml DnaseI (Roche) and a cOmplete mini EDTA-free protease inhibitor tablet (Roche) added fresh. An 8 M urea, 10 mM Tris–HCl with 0.5 mM DTT solution was freshly prepared, and 200 µl added to wells of a flat-bottomed black polystyrene plate, and 2–4 µl of either cell lysates or a Trp standard solution was added to individual wells in triplicate. Fluorescence emitted at 350 nm after excitation at 295 nm was measured. We also compared this assay with the commercially available DC protein assay (Bio-Rad, performed according to the manufacturer’s instructions), and found that the assays generated similar values.
 
-## Quantitating cellular ribosomes
+### Quantitating cellular ribosomes
 
 After lymphocyte isolation, the PBS-washed cell pellet was dissolved in TRIzol; a spike-in mRNA standard was added at this step (CleanCap EGFP mRNA from TriLink, L-7601) to account for RNA loss during processing. RNA purification was conducted as described in the manufacturer’s TRIzol protocol, with 5 µg of glycogen used as carrier and the isopropanol precipitation step conducted overnight at −20°C. The final RNA pellet was dissolved in 50 µl of ultra-pure water and roughly quantified to determine appropriate range for the Agilent bioanalyzer chip. Samples, including fresh spike-in mRNA alone, were loaded and run on RNA Nano Bioanalyzer chips (Agilent RNA Nano 6000), with a 70°C heating step and run on a 2100 Agilent Bioanalyzer. Bioanalyzer 2100 Expert software was used to determine total RNA concentration of each sample and percent area under curve of each peak (mRNA spike-in at ~1000 bp, 18S rRNA at ~1800 bp, 28S rRNA at ~4000 bp). The yield of the RNA prep was calculated as follows:
 
 (mRNA spike-in standard peak from an RNA-purified sample)/average of 2–3 standard peaks from 75 ng/µl standard wells) = (fraction of RNA that remains after the purification process). We next converted the 18S and 28S ng/µl values to ‘number molecules per cell’ using the number of cells that originally went into the RNA purification, the RNA yield described above, and the following values: mouse 18S = 6.40E + 05 g/mol; mouse 28S = 1.60E + 06 g/mol; human 18S = 6.40E + 05 g/mol; human 28S = 1.70E + 06 g/mol.
 
-## Immunoblotting
+### Immunoblotting
 
 To fractionate cells into nuclear and non-nuclear lysates, cells were either dissolved directly in 2% SDS extraction buffer at 95°C (‘all’ in Figure 6—figure supplement 1) or subjected to a hypotonic lysis procedure. Cells were swelled with a buffer containing 20 mM Tris–HCl pH 7.4, 2.5 mM MgCl2, and 10 mM KCl supplemented with protease inhibitors for 10 min on ice. NP-40 was added to a final concentration of 0.5%, and the resultant lysate was mixed, incubated on ice for 3 min, and spun at 7000 rpm for 1 min. Non-nuclear lysates were removed and immediately dissolved in gel loading sample buffer (Life Technologies) to prevent sample degradation. Nuclei were washed gently 2× with PBS buffer containing NP-40 and protease inhibitors. Finally, nuclear proteins were extracted by dissolving pelleted nuclei in 2% SDS extraction buffer at 95°C. Equal amounts of each fraction were prepared for SDS–PAGE.
 

@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02dxx6824 Department of Molecular Medicine, The Scripps Research Institute La Jolla United States
-2. https://ror.org/05kxtq558 Institute of Molecular Biology Mainz Germany
-3. https://ror.org/02dxx6824 Department of Integrative Structural and Computational Biology, The Scripps Research Institute La Jolla United States
-4. https://ror.org/046rm7j60 Department of Biological Chemistry, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States
-5. https://ror.org/040gcmg81 Laboratory of Genome Integrity, National Cancer Institute Bethesda United States
-6. https://ror.org/01qmkwf03 San Diego Biomedical Research Institute San Diego United States
+1. Department of Molecular Medicine, The Scripps Research Institute La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+2. Institute of Molecular Biology Mainz Germany ([ROR:05kxtq558](https://ror.org/05kxtq558))
+3. Department of Integrative Structural and Computational Biology, The Scripps Research Institute La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+4. Department of Biological Chemistry, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. Laboratory of Genome Integrity, National Cancer Institute Bethesda United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
+6. San Diego Biomedical Research Institute San Diego United States ([ROR:01qmkwf03](https://ror.org/01qmkwf03))
 
 † Corresponding author
 
@@ -42,7 +42,7 @@ The existing SMC5/6 core and regulatory subunits do not explain its recruitment 
 
 ## Results
 
-## SIMC1 identified proximal to SMC5 within LT-induced subnuclear foci
+### SIMC1 identified proximal to SMC5 within LT-induced subnuclear foci
 
 The large T antigen (LT) of SV40 induces nuclear foci in cells that contain DNA replication and repair factors related to the viral lifecycle (Boichuk et al., 2010). Moreover, although functionally unexplored, a previous proteomic analysis of LT-associated proteins identified several subunits of SMC5/6 (Fine et al., 2012). Consistent with this, we detected SMC5/6 in nuclear foci that colocalized with SV40 LT in HEK293T cells (Figure 1a). HEK293 cells lack SMC5/6 foci but expression of LT led to the emergence of puncta containing both SMC5/6 and LT. Thus, SMC5/6 may be a new cellular factor involved in the SV40 lifecycle.
 
@@ -52,41 +52,289 @@ The large T antigen (LT) of SV40 induces nuclear foci in cells that contain DNA 
 
 Based on the foregoing, we reasoned that virus-related SMC5/6 cofactors may be concentrated within LT-induced nuclear foci (Figure 1b). Therefore, we used proximity labeling with biotin and SILAC-based mass spectrometry to identify proteins in the environment of human SMC5 that was fused to the promiscuous biotin ligase BirA* and expressed in HEK293T cells (Roux et al., 2012; Figure 1c). We defined the top-ranking hits by the SILAC ratios of proteins recovered in SMC5-BirA* versus the NLS-BirA* control purifications (Figure 1d, Supplementary file 1 and PRIDE database: PXD033923). Proteins on the list provide high confidence in the data, as five of the top nine most enriched SMC5 interactors are known components of the SMC5/6 core complex (Figure 1d). In addition, the presumptive Nse6 orthologue SLF2 was detected but the suggested Nse5 counterpart SLF1 was missing. Instead, a poorly characterized protein called SIMC1 (C5orf25) was detected with similar enrichment as SLF2 (Figure 1d).
 
-## SIMC1 contains a yeast Nse5-like domain
+### SIMC1 contains a yeast Nse5-like domain
 
 SIMC1 is a modular protein that contains tandem SIMs within a large N-terminal intrinsically disordered region (IDR) and a predicted alpha-helical rich C-terminal region (Figure 2a). Standard sequence searches failed to identify homologous proteins in lower eukaryotes such as yeast. Therefore, we conducted remote homology searches on the HHpred server (Zimmermann et al., 2018). Searching against yeast and A. thaliana databases returned yeast Nse5 and plant SNI1 as the most probable hits in each species for SIMC1 C-terminal amino acids 467–802 (Figure 2—figure supplement 1). Consistent with previous reports (Räschle et al., 2015) a search with the putative Nse5 orthologue SLF1 did not identify Nse5. These results led us to hypothesize that SIMC1 is the Nse5-like regulator of human SMC5/6 that directs SMC5/6 to antagonize viral infections.
 
-## SIMC1 and SLF2 interact via their Nse5- and Nse6-like regions
+![Figure 2.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic representation of SIMC1 and SLF2. SIM1/2, SUMO interaction motifs; IDR, intrinsically disordered regions; APIM, AlkB homologue 2 PCNA-interacting motif. (b) Representative immunofluorescence images of U2OS cells overexpressing mCherry-SIMC1 and GFP-SLF2 that were fixed and stained with DAPI. Dotted outline marks nucleus. Scale bar 10 µm. (c) Western blot of GFP-Trap immunoprecipitation from HEK293 cells transfected with plasmids expressing the indicated combinations of proteins. Truncation constructs of SIMC1 and SLF2 are represented schematically including the status of SIMC1-SLF2 interaction that is, +++ > +, – undetectable. Full and unedited blots provided in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Query proteomes: Arabidopsis thaliana, Saccharomyces cerevisiae, Schizosaccharomyces pombe.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Western blot of GFP-Trap immunoprecipitation from HEK293 cells transfected with plasmids expressing the indicated combinations of proteins. Full and unedited blots provided in Figure 2—figure supplement 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) SDS-PAGE analysis of Ni- and glutathione-affinity purifications. The Ni elution contained GST-SIMC1284 and His-SLF2CTD. The Ni eluate was loaded onto glutathione sepharose and proteins were eluted by Tev protease digestion. The elution fractions contained untagged SIMC1284 and SLF2CTD. (b) Superdex 200 size exclusion chromatography of the glutathione elution. SIMC1284 and SLF2CTD co-eluted in a single peak at the position corresponding to a globular domain of ~120 kDa, which matches with the mass of the complex. Full and unedited gels provided in Figure 2—figure supplement 3—source data 1.
+
+### SIMC1 and SLF2 interact via their Nse5- and Nse6-like regions
 
 In all species tested, Nse5/6-like complexes are composed of two alpha-helical domain-containing proteins that form an obligate heterodimer. We, therefore, investigated if and how SIMC1 and SLF2 interact. When co-expressed in cells, full-length SIMC1 and SLF2 colocalize in subnuclear foci and specifically co-immunoprecipitate (Figure 2b, Figure 2—figure supplement 2). Co-expressed SIMC1 and SLF2 are more abundant than when each is expressed with controls, which likely reflects the stabilization of each protein when in complex (Figure 2—figure supplement 2).
 
 Next, we sought to determine the interacting regions of SIMC1 and SLF2. For SLF2, we tested a C-terminal construct (SLF2CTD; 635–1173) that contains the Nse6-like region previously reported to interact with SLF1 (Adamus et al., 2020). This construct supports binding to full-length SIMC1 (Figure 2c). For SIMC1, we tested four N-terminal truncations, starting with residues 284, 381, 457 or 652. The results showed that SIMC1 constructs 284 and 381 stably interact with SLF2CTD (Figure 2c). However, the shortest construct that lacks the N-terminal part of the SIMC1 Nse5-like region (652) was poorly expressed (Figure 2c). Whilst SIMC1 construct 457 interacts with SLF2CTD and contains the entire Nse5-like region defined by HHpred, the binding appears weakened (Figure 2c). Thus, the minimum SLF2-interacting region of SIMC1 with full binding capacity is located between residues 381 and 872. In parallel, we succeeded in co-purifying an apparently heterodimeric complex of SIMC1284 and SLF2CTD proteins expressed in insect cells (Figure 2—figure supplement 3). Thus, the C-terminal domains of SIMC1 and SLF2 directly interact to form a stable complex, supporting our hypothesis that the SIMC1-SLF2 complex is an Nse5/6-like regulatory factor for human SMC5/6.
 
-## SIMC1 interacts with SMC5/6 and SUMO pathway factors
+### SIMC1 interacts with SMC5/6 and SUMO pathway factors
 
 To probe the local environment where SIMC1 functions, we used proximity labeling and mass spectrometry in cells stably expressing either Myc-BirA* or Myc-BirA*-SIMC1 together with SLF2. Because the biotinylation radius of BirA* is restricted to ~10 nm, direct protein contacts within multiprotein complexes can be selectively detected in denaturing but not native conditions (Kim et al., 2014; Kim et al., 2016). Indeed, in native BioID conditions, SLF2 and all known subunits of the SMC5/6 complex were detected (Figure 3a) whereas under the denaturing conditions of BioID, SLF2 but no other SMC5/6 complex subunits were recovered (Figure 3b). These results confirm our SMC5 BioID results (Figure 1d), and together, they establish SIMC1 as an Nse5-like SMC5/6 cofactor.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig3-v2.jpg)
 
-**Figure 3.:** (a, b) A subset of SIMC1 interacting proteins identified by BioID screen carried out under native (a) or denaturing (b) lysis conditions, respectively. Pink circle illustrates the biotinylation radius of BirA*. BioID datasets are available in the PRIDE database (https://www.ebi.ac.uk/pride/archive) under the accession code PRIDE PXD033923 and in Supplementary file 2. (c) Representative immunofluorescence images of U2OS cells overexpressing mCherry-SIMC1 or mCherry-SIMC1 SIM mut (mutations: FIDL to AADA (26–29 aa) and VIDL to AADA (45–48 aa)) that were stained for PML (left three panels); or were co-expressing GFP-ZNF451 (right three panels). The cells were stained with DAPI to mark nucleus (dotted lines). Scale bar 10 µm. (d) HEK293 cells overexpressing ZNF451, BirA*-SIMC1, SLF2, BirA* control in indicated combination were cultured in the presence of 50 μM supplemental biotin. The total cell extracts and streptavidin pulldown were analyzed by western blot using anti-GFP or Myc antibodies. Full and unedited blots provided in Figure 3—source data 1.Figure 3—source data 1.d).
+**Figure 3.:** (a, b) A subset of SIMC1 interacting proteins identified by BioID screen carried out under native (a) or denaturing (b) lysis conditions, respectively. Pink circle illustrates the biotinylation radius of BirA*. BioID datasets are available in the PRIDE database (https://www.ebi.ac.uk/pride/archive) under the accession code PRIDE PXD033923 and in Supplementary file 2. (c) Representative immunofluorescence images of U2OS cells overexpressing mCherry-SIMC1 or mCherry-SIMC1 SIM mut (mutations: FIDL to AADA (26–29 aa) and VIDL to AADA (45–48 aa)) that were stained for PML (left three panels); or were co-expressing GFP-ZNF451 (right three panels). The cells were stained with DAPI to mark nucleus (dotted lines). Scale bar 10 µm. (d) HEK293 cells overexpressing ZNF451, BirA*-SIMC1, SLF2, BirA* control in indicated combination were cultured in the presence of 50 μM supplemental biotin. The total cell extracts and streptavidin pulldown were analyzed by western blot using anti-GFP or Myc antibodies. Full and unedited blots provided in Figure 3—source data 1.
 
 In both conditions, multiple SUMO pathway factors were also identified as SIMC1 proximal, including PML, SUMO2/3, and ZNF451 (Figure 3a and b, Supplementary file 2 and PRIDE database: PXD033923), a SUMO2/3 specific E3 ligase that can drive SUMO2/3 chain formation (Cappadocia et al., 2015; Eisenhardt et al., 2015). Supporting this, SIMC1 was previously identified using a computational string search for proteins that contain multiple SIMs and was found to bind SUMO2 polymers in vitro via its tandem N-terminal SIMs (Sun and Hunter, 2012; González-Prieto et al., 2021). Interestingly, SMC5/6 localizes at PML bodies in cancer cells (e.g. U2OS) that use the alternative lengthening of telomeres (ALT) mechanism to maintain their telomeres (Potts and Yu, 2007). Thus, SIMC1 may recruit SMC5/6 to SUMO-rich PML bodies.
 
 We further tested SIMC1’s proximity to the BioID hits PML and ZNF451. Expressed SIMC1 forms nuclear foci that colocalize with both endogenous PML NBs and expressed ZNF451, in a manner dependent on the SIM motifs of SIMC1 (Figure 3c). Moreover, epitope-tagged ZNF451 co-purifies with Myc-BirA*-SIMC1 but not a Myc-BirA* control (Figure 3d). SIMC1’s proximity to ZNF451 is not enhanced by co-expression with SLF2, consistent with SIMC1 having direct SIM-mediated contacts with both SUMO and SUMO pathway factors (Figure 3d). These data validate the interface between SIMC1 and the SUMO pathway, and link SMC5/6 and SUMO-regulated PML NBs via SIMC1.
 
-## SIMC1 recruits SMC5/6 to SV40 replication centers
+### SIMC1 recruits SMC5/6 to SV40 replication centers
 
 Because SV40 has been reported to localize to PML NBs (Ishov and Maul, 1996), SIMC1 may recruit SMC5/6 to SV40 viral replication centers. To test this, we first confirmed the colocalization of SMC5/6, PML, and SV40 LT in permissive HEK293 cells transfected with replication competent SV40. As anticipated, SV40 replication centers (as marked by LT) contain endogenous SMC5/6 and often colocalize with PML NBs (Figure 4a). Thus, SMC5/6 is a novel DNA repair and replication factor found at sites of SV40 replication. We then generated SIMC1 knockout HEK293 cells, which are viable and show no overt changes to cell cycle distribution or signs of spontaneous DNA damage, as determined by FACS analysis and comet assay, respectively (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig4-v2.jpg)
+
+**Figure 4.:** (a) Representative immunofluorescence images of SV40 LT (green), SMC6 (red) and PML (light blue) in HEK293 and HEK293 SIMC1-/- cells fixed 48 h after SV40 transfection. Scale bar 10 μm. The bar graph shows relative quantification of the number of cells containing SMC6 foci. A minimum of 175 cells with at least four SV40 LT foci were counted for each cell line. Primary data for graph in panel (a) provided in Figure 4—source data 1. (b) Representative immunofluorescence images of HEK293 SIMC1-/- cells with integrated empty vector or vectors expressing FLAG-SIMC1 or FLAG-SIMC1 SIM mut, respectively, 48 hr after SV40 transfection. SV40 LT (green), SMC6 (red), FLAG (light blue); Scale bar 10 μm. (c) Relative quantification of the number of cells containing SMC6 and FLAG foci (representative images shown in panel b). A minimum of 225 cells with at least four SV40 LT foci were counted for each cell line. Primary data provided in Figure 4—source data 2. (d) Immunoblot from HEK293 SIMC1-/- cells with integrated empty vector or vector expressing FLAG-SIMC1 or SIMC1 SIM mut, respectively, and transfected with a plasmid carrying SV40 genome. Cells were harvested 48 hr after transfection. PSTAIR serves as a loading control. Full and unedited blots provided in Figure 4—source data 3. Statistics in (a, c): Means and error bars (s.d.) were derived from a minimum of three independent SV40 transfections representing biological replicates. (∗) p<0.05; (∗∗) p<0.005; (∗∗∗) p<0.0005; (n.s.) p>0.05 (two-tailed unpaired t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Sanger sequencing of exon 5 to verify the insertion of STOP cassette (red). (b, c) SIMC1 expression was measured by quantitative PCR and normalized to the expression of beta-actin (mean ± s.d. from n=4 independent experiments,two-tailed unpaired t-test p<0.0005) and also analyzed on western blot using PSTAIR as a loading control. Primary data for graph in panel (b) and full, unedited blots for panel (c) provided in Figure 4—figure supplement 1—source data 1, Figure 4—figure supplement 1—source data 2. (d) Flow cytometry analysis of cell cycle profile of asynchronous or G2/M nocodazole arrested cells. (e) Comet assay assessing the spontaneous DNA damage. As a control, cells were treated with 1 mM MMS for 1 hr. Scale bar 100 μm. (f) Flow cytometry analysis of cell cycle profile of asynchronous or nocodazole-treated cells arrested in G2/M in cells transfected with SV40. Cells were treated with nocodazole at the indicated time points after SV40 transfection.
+
 In SIMC1 null cells, SMC5/6 localization to SV40 replication centers is abolished (Figure 4a). Re-expression of SIMC1 restored SMC5/6 colocalization with SV40 LT and SIMC1 (Figure 4b and c). Despite similar expression levels as wild-type, SIMC1 with mutated SIMs only partially restored SMC5/6 colocalization with SV40 LT, indicating that it is hypomorphic (Figure 4b–d). In addition, the SIM mutant of SIMC1 failed to colocalize with PML and ZNF451 NBs (Figure 3c). Thus, SIMC1 and its interaction with SUMO are required for SMC5/6 localization to PyVRCs.
 
-## SIMC1 and SLF2 form an Nse5/6-like structure
+### SIMC1 and SLF2 form an Nse5/6-like structure
 
 To gain insights into the molecular mechanism underlying SMC5/6 regulation, we analyzed the structures of the Nse5- and Nse6-like domains of SIMC1 and SLF2. AlphaFold structure prediction has provided highly reliable structures for proteomes (Jumper et al., 2021). The AlphaFold model of SIMC1 confirms that the N-terminus is disordered and reveals that the Nse5-like region forms an α-solenoid-like helical structure consisting of 17 α-helices (Figure 5a). S. cerevisiae Nse5 (ScNse5) also has an α-solenoid-like structure as determined previously by cryo-EM and X-ray crystallography Taschner et al., 2021; Yu et al., 2021; therefore, we compared SIMC1 and ScNse5 structures. Because automated superimposition did not work well, we used remote sequence homology. The HHpred matches are limited to the core region of SIMC1 ranging from α5 to α14 (Figure 5—figure supplement 1). Mapping the matched α-helices on the structures indicated that the matched regions are topologically similar (Figure 5—figure supplement 2a and b). Manual alignment of the matched regions overlaid the N-terminal region α1-α4 as well (Figure 5—figure supplement 2c). It also visualized additional helices (termed α3.1, α4.1, and α4.2) unique to ScNse5 in its N-terminus. By excluding these helices, the two structures could be superimposed with an r.m.s.d. of 7.8 Å between the structurally aligned 225 Cα atoms (Figure 5—figure supplement 2d). Similarly, an HHpred search using a ScNse5 sequence excluding the additional helices extended the match to include the α1-α4 region (Figure 5—figure supplement 3). While these results seemed to indicate that SIMC1’s α15-α17 at its C-terminus was not conserved in yeast, an unpublished PDB entry (ID: 7SDE) of a cryo-EM structure of ScNse5/6 containing these additional helices has become available. Superimposing this Nse5 onto the SIMC1 model (r.m.s.d.=6.3 Å for 207 CA atoms) extended the overlaid region to include these C-terminal helices (Figure 5a and Figure 5—figure supplement 4). Thus, SIMC1’s α-solenoid domain is mostly similar to Nse5.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-v2.jpg)
+
+**Figure 5.:** (a) The AlphaFold 2 (AF2) model of SIMC1 and its comparison to ScNse5. The C-terminal α-solenoid domain (468–858 aa) is shown on the left in the blue-red rainbow. The disordered 629–653 aa region between α8 and α9 is excluded for clarity. ScNse5 of the cryo-EM ScNse5/6 structure (PDB ID: 7SDE) is shown in the middle. Each α-helix is colored to match the corresponding α-helix of SIMC1. ScNse5’s α-helices colored in black are not found in SIMC1. The superimposition of SIMC1 and ScNse5 is shown on the right. (b) AF2 model of SLF2 and its comparison to ScNse6. The C-terminal α-solenoid domain of SLF2 (755–1158 aa) is shown on the left. ScNse6 structure (PDB ID: 7SDE) shown in the middle is colored to match the α-helices of SIMC1. The superimposition of SLF2 and ScNse6 is shown on the right. (c) Overlay of SIMC1 and SLF2 AF2 models. (d) Cryo-EM structure of the SIMC1-SLF2 complex. Both SIMC1 and SLF2 structures contain a loop-like region at their N-termini, which are colored purple. The label “N(α)” indicates the N-terminus of each α-solenoid fold. On the right panel, SIMC1’s surface is drawn only for its α-solenoid domain to clarify the N-terminal loop of SIMC1. (e) The cryo-EM structure of ScNse5/6 (PDB: 7SDE). (f) Superimposition of the SIMC1-SLF2 and ScNse5/6 complexes. Well-converged and diverged regions are indicated.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The α-helices determined by experimental structures are colored. The colors match the rainbow used for cartoon structures shown in Figure 5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a, b) Remote homology mapping on the α-solenoid domain of SIMC1 AlphaFold model residues 468–858 excluding the 629–653 loop for clarity, (a) and ScNse5 structure (PDB ID: 7LTO), (b). The HHpred matches are indicated by the same color. (c) Manually aligned SIMC1 and Nse5 are shown as an overlay. (d) SIMC1 is colored in the blue-red full rainbow spectrum and Nse5 is colored by the same manner as in the middle panel. The labels ‘N’ and ‘C’ indicate the N- and C-termini, respectively, of the protein chains.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** ScNse5 sequence is shown with the residues 81–96 aa and 119–210 aa in bold. The boxes indicate α-helices in the regions shown in bold. The sequence of ScNse5 lacking the residues 81–96 aa and 119–210 aa used for an HHpred search is shown as ‘ScNse5_delta’. The resulting sequence alignment covers more N- and C-terminal regions than the initial HHpred alignment shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Secondary structures (α-helices) are colored.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Secondary structures (α-helices) are colored.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** Secondary structures (α-helices) are colored.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** SIMC1 (425–872 aa) and SLF2 (733–1173 aa) were used. The predictions are shown on the left and colored by pLDDT. Orange, yellow, sky blue, and blue indicate very low (pLDDT <50), low (50<pLDDT < 70), confident (70<pLDDT < 90), and high (pLDDT >90) regions, respectively. PAE plots are shown on the right. Both plots show low PAE values between subunits, indicating high confidence of the predictions.
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp8-v2.jpg)
+
+**Figure 5—figure supplement 8.:** (a) Representative cryo-electron micrographs from Session1 and 2. (b) Representative 2D class average images of Session 1 and 2. (c) Flow chart of 3D reconstruction. (d) Euler angle distribution of the final particle images. (e) 3D FSC plot. (f) Map-to-model FSC plot. (g) Local resolution estimation shown on the final map (unsharpened).
+
+![Figure 5—figure supplement 9.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp9-v2.jpg)
+
+**Figure 5—figure supplement 9.:** (a) The sharpened map. (b) SIMC1 fragments. (c) SLF2 fragments. The residue regions are indicated.
+
+![Figure 5—figure supplement 10.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp10-v2.jpg)
+
+**Figure 5—figure supplement 10.:** (a, b) Structures predicted by ColabFold (a) and AlphaFold Multimer (b) are superimposed on the cryo-EM structure. Prediction structures are colored by pLDDT. SIMC1 and SLF2 of the cryo-EM structure are colored grey and wheat, respectively.
+
+![Figure 5—figure supplement 11.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp11-v2.jpg)
+
+**Figure 5—figure supplement 11.:** The blue-red rainbow indicate the B-factor range 0.0–97.0 and 99.3–213.2 in (a) and (b), respectively.
+
+![Figure 5—figure supplement 12.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp12-v2.jpg)
+
+**Figure 5—figure supplement 12.:** (a) The cryo-EM structure of the SIMC1-SLF2 complex is shown as the ribbon model with the surfaces of the α-solenoids. The N-terminal extension is shown in purple without surface for clarity. The right panel is the same as the middle one except that SLF2 is omitted. (b) The structure of the ScNse5/6 complex (PDB: 7SDE) show in the same orientation as the SIMC1-SLF2 complex in (a).
+
+![Figure 5—figure supplement 13.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp13-v2.jpg)
+
+**Figure 5—figure supplement 13.:** (a) Electrostatic potential of the SIMC1 and SLF2 surfaces. SIMC1 and SLF2 are oriented to show their interfaces. Double arrows point at intramolecular charge pairs. (b) Conservation mapping on the subunit interface. The conservation scores obtained from the Consurf server are shown by the color graduation as indicated.
+
+![Figure 5—figure supplement 14.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig5-figsupp14-v2.jpg)
+
+**Figure 5—figure supplement 14.:** (a) Positions of the mutations on SIMC1 and SLF2. SIMC1 set A (Y528D, M529D, K533D, L537D), set B (S778D, F775E), and set C (L847E, L850A, L851E, Y854D) mutations and SLF2 set A (L775E, F786E, F792E), set B (C820W, I821W), set C (M831R, I835R), and set D (P957D, V959D, W1006A) mutations are indicated on the SIMC1 interface (left), the side view of the complex (center), and the SLF2 interface (right). SIMC1’s N-terminal loop (425–467 aa) is shown with surface. (b, c) Western blot of GFP-Trap immunoprecipitation from HEK293 cells transiently transfected with plasmids expressing GFP-SIMC1 variants and FLAG-SLF2CTD (b) or GFP-SIMC1 and Myc-SLF2CTD variants (c). Full and unedited blots of (b) and (c) are provided in Figure 5—figure supplement 14—source data 1, Figure 5—figure supplement 14—source data 2, respectively.
 
 AlphaFold reveals that the C-terminal Nse6-like region of SLF2 also adopts an α-solenoid-like structure. Although an HHpred search with SLF2 did not identify ScNse6 (Figure 2—figure supplement 1), automated superimposition aligned the SLF2 and ScNse6 structures well, with an r.m.s.d. of 5.7 Å between the structurally aligned 128 Cα atoms (Figure 5b). The overlay suggests that SLF2 and Nse6 structures are very similar except for a few α-helices (α1-α3) in the N-terminus of SLF2 that are missing in ScNse6 (Figure 5b and Figure 5—figure supplement 5). We noted that the SIMC1 and SLF2 α-solenoids are also similar; they can be superimposed well from their N- to C-termini (an r.m.s.d. of 5.6 Å for 247 Cα atoms, Figure 5c). However, the similarity between SIMC1 and SLF2 appears to be limited to topology (Figure 5—figure supplement 6); their sequences do not align, not even remotely, as HHpred fails to detect each other. ScNse5 and ScNse6 structures are too remote to superimpose.
 
 Next, we attempted to predict the structure of the SIMC1-SLF2 complex using ColabFold and AlphaFold-Multimer (Evans et al., 2021; Mirdita et al., 2021). Both programs yielded the same structure with high confidence (Figure 5—figure supplement 7). To evaluate the accuracy of the predicted structures, we performed cryo-EM single-particle analysis on the SIMC1284-SLF2CTD complex (Figure 5—figure supplement 8 and Table 1). 3D reconstruction yielded an anisotropic and low-quality map, resolving side-chain densities of only bulky residues in the protein core (Figure 5—figure supplement 9). The limited orientations and alignability of the particles and the dynamic nature in the end regions of the α-solenoids together likely hampered the reconstruction. Nonetheless, the predicted SIMC1-SLF2 model could be docked into the map unambiguously and refined to ~3.9 Å resolution. The refined structure was strikingly similar to the predictions, with r.m.s.d.s of only ~1 Å for Cα atoms (Figure 5—figure supplement 10), validating the accuracy of the predicted structures.
+
+**Table 1.**
+ Cryo-EM data collection/processing and model refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th colspan="2">Human SIMC1 (284-872)-SLF2 (635–1173) (EMD-25706, PDB 7T5P)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Data collection and processing</td>
+    </tr>
+    <tr>
+      <td>Condition</td>
+      <td>0.4 mg/ml protein</td>
+      <td>0.8 mg/ml protein with 0.128 mM DDM</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>73,000 ×</td>
+      <td>73,000 ×</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>200</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>66.8</td>
+      <td>66.9</td>
+    </tr>
+    <tr>
+      <td>Number of frames per image</td>
+      <td>46</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>–0.5 to –1.8</td>
+      <td>–0.5 to –1.8</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.567</td>
+      <td>0.567</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>1,873,621</td>
+      <td>1,065,073</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>31,383</td>
+      <td>8,443</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)FSC threshold</td>
+      <td colspan="2">3.40.143</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Refinement</td>
+    </tr>
+    <tr>
+      <td>Initial model used</td>
+      <td colspan="2">AlphaFold model</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å2)FSC threshold</td>
+      <td colspan="2">3.90.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td colspan="2">–</td>
+    </tr>
+    <tr>
+      <td colspan="3">Model composition</td>
+    </tr>
+    <tr>
+      <td>Chains</td>
+      <td colspan="2">2</td>
+    </tr>
+    <tr>
+      <td>Atoms</td>
+      <td colspan="2">13597 (Hydrogens: 6866)</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td colspan="2">822</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td colspan="2">0</td>
+    </tr>
+    <tr>
+      <td colspan="3">B-factors (Å2) min/max/mean</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td colspan="2">99.26/213.18/135.62</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td colspan="2">–</td>
+    </tr>
+    <tr>
+      <td colspan="3">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å2)</td>
+      <td colspan="2">0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td colspan="2">0.591</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td colspan="2">2.00</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td colspan="2">15.16</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td colspan="2">0.26</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td colspan="2">95.43</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td colspan="2">4.57</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td colspan="2">0.00</td>
+    </tr>
+  </tbody>
+</table>
 
 The cryo-EM structure contains 425–858 aa of SIMC1 and 733–1158 aa of SLF2. SIMC1 and SLF2 α-solenoids face each other in a head-to-tail fashion through the concave surfaces of their slightly curved shapes (Figure 5d). Yeast Nse5 and Nse6 also interface in the same manner (Figure 5e). Overall, the ellipsoid-shaped SIMC1-SLF2 structure resembles the Nse5/6 structure (Figure 5f). The two structures could be superimposed with an r.m.s.d of 7.9 Å for 473 Cα atoms. The superimposition reveals that the regions consisting of the N-termini of SLF2/Nse6 and the C-termini of SIMC1/Nse5 are diverged: Nse6 lacks the N-terminal helices corresponding SLF2’s α1-α3 and the C-terminal helices (α16-α17) of Nse5 do not overlap with the corresponding helices of SIMC1. In fact, the α16-α17 region of Nse5 does not make contacts with the N-terminus (α4) of Nse6 and appears to be dynamic as indicated by its high B-factors compared to the rest of the complex (Figure 5—figure supplement 11a). Notably, these C-terminal regions were not clearly resolved in the initial cryo-EM structure of ScNse5/6 and the X-ray ScNse5/6 structure. By contrast, the C-terminus of SIMC1 seems to be stable as indicated by its B-factor being comparable to the rest of the structure (Figure 5—figure supplement 11b). In comparison, the structures of the opposite ends consisting of the N-terminal region of SIMC1/Nse5 and the C-terminal region of SLF2/Nse6 converge well, suggesting the structural preservation of this region (Figure 5f).
 
@@ -98,19 +346,57 @@ We attempted to verify the SIMC1-SFL2 interface by mutational analysis. SIMC1 co
 
 We then set up reverse experiments with four SLF2 mutants (set A–D, Figure 5—figure supplement 14a). The set A residues on α1 and α2 in the N-terminal end of SLF2 contact the set B and C residues of SIMC1. The SLF2 set B residues at the N-terminal end of α4 contact α9 in the middle of SIMC1’s α-solenoid. The SLF2 set C residues are also on α4 but contact the N-terminal loop of SIMC1. The SLF2 set D residues are on the turns preceding α9 and α12 and contact the SIMC1 set A residues. Myc-tagged SLF2CTD mutants were co-expressed with GFP-SIMC1 and precipitated using GFP-Trap. All mutants tested were significantly less detected in the precipitate compared to the wild-type, indicating reductions in the binding (Figure 5—figure supplement 14c). Thus, we conclude that our mutagenesis data support the structure of the SIMC1-SLF2 complex, which resembles the Nse5/6 structure.
 
-## SIMC1 regulates SMC5/6 localization via its Nse5-like domain
+### SIMC1 regulates SMC5/6 localization via its Nse5-like domain
 
 To explore functional sites of the SIMC1-SLF2 complex, we returned to conservation analysis and found a composite patch consisting of conserved residues of the N-terminus of SIMC1 and the C-terminus of SLF2 (Figure 6a). As described above, this end of the complex is structurally preserved between yeast and human complexes (Figure 5f). Therefore, this patch may play a role in SMC5/6 regulation, possibly by binding to SMC5/6.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig6-v2.jpg)
 
-**Figure 6.:** (a) Conservation mapping on the surface of the SIMC1-SLF2 complex. The conservation score obtained from Consurf server are shown by the color graduation as indicated. The boundary of SIMC1’s surface is indicated by yellow lines for clarity. Mutated amino acids (R473D/N477A/E480K/E481K) in the α1 of SIMC1 α-solenoid are labeled. (b) Western blot of GFP-trap immunoprecipitation from HEK293 cells transfected with either GFP-SIMC1 or GFP-SIMC1 combo mutant in combination with FLAG-SLF2CTD and Myc-SMC6. Full and unedited blots provided in Figure 6—source data 1 (c) Representative immunofluorescence images of HEK293 SIMC1-/- cells with integrated vectors expressing FLAG-SIMC1 or FLAG-SIMC1 combo mut, respectively. Cells were fixed 48 hr after SV40 transfection and stained with SV40 LT (green), SMC6 (red), FLAG (light blue) antibodies. Scale bar 10 μm. (d) Relative quantification of the number of cells containing SMC6 and FLAG foci (representative images shown in panel c). A minimum of 210 cells with at least four SV40 LT foci were counted for each cell line. Means and error bars (s.d.) were derived from three independent SV40 transfections representing biological replicates. (∗) p<0.05; (∗∗) p<0.005; (∗∗∗) p<0.0005; (n.s.) p>0.05 (two-tailed unpaired t-test). Primary data provided in Figure 6—source data 2.Figure 6—source data 1.b).Figure 6—source data 2.d).
+**Figure 6.:** (a) Conservation mapping on the surface of the SIMC1-SLF2 complex. The conservation score obtained from Consurf server are shown by the color graduation as indicated. The boundary of SIMC1’s surface is indicated by yellow lines for clarity. Mutated amino acids (R473D/N477A/E480K/E481K) in the α1 of SIMC1 α-solenoid are labeled. (b) Western blot of GFP-trap immunoprecipitation from HEK293 cells transfected with either GFP-SIMC1 or GFP-SIMC1 combo mutant in combination with FLAG-SLF2CTD and Myc-SMC6. Full and unedited blots provided in Figure 6—source data 1 (c) Representative immunofluorescence images of HEK293 SIMC1-/- cells with integrated vectors expressing FLAG-SIMC1 or FLAG-SIMC1 combo mut, respectively. Cells were fixed 48 hr after SV40 transfection and stained with SV40 LT (green), SMC6 (red), FLAG (light blue) antibodies. Scale bar 10 μm. (d) Relative quantification of the number of cells containing SMC6 and FLAG foci (representative images shown in panel c). A minimum of 210 cells with at least four SV40 LT foci were counted for each cell line. Means and error bars (s.d.) were derived from three independent SV40 transfections representing biological replicates. (∗) p<0.05; (∗∗) p<0.005; (∗∗∗) p<0.0005; (n.s.) p>0.05 (two-tailed unpaired t-test). Primary data provided in Figure 6—source data 2.
 
 To test this, we took advantage of our SIMC1 null cells and expressed an epitope-tagged SIMC1 ‘combo’ mutant that contains four mutations (R473D, N477A, E480K, and E481K), three of which are charge reversals in the α1 of SIMC1 α-solenoid (Figure 6a). We reasoned that these multiple and likely severe mutations would effectively disrupt the hypothesized interaction with SMC5/6. The mutated residues are all exposed to solvent and do not contact SLF2. Consistent with this, the SIMC1 combo mutant retained SLF2 binding, as demonstrated by co-immunoprecipitation (Figure 6b), contrasting the results with the SIMC1-SLF2 interface mutants that also had multiple mutations (Figure 5—figure supplement 14). The SIMC1 combo mutant expressed at a similar level to wild-type SIMC1 and colocalized with LT (Figure 6b and c). However, both the interaction of SIMC1 with SMC6 and the LT localization of SMC5/6 were markedly reduced with the combo mutant compared to wild-type SIMC1 (Figure 6b, c and d). Thus, these data indicate that the Nse5-like domain of SIMC1 is responsible for SMC5/6 recruitment but not for LT localization.
 
-## SLF1 interacts with SLF2 through its split Nse5-like domain
+### SLF1 interacts with SLF2 through its split Nse5-like domain
 
 The sequence of SLF1, the putative human orthologue of yeast Nse5, lacks detectable Nse5-like regions but contains an ankyrin repeat domain (ARD) (Räschle et al., 2015; Adamus et al., 2020). We turned to the AlphaFold model of SLF1, which reveals a flexible architecture containing BRCT domains at the N-terminus and the ARD and an α-solenoid-like helical domain in the C-terminus (SLF1410; 410–1058 aa, Figure 7a). Notably, the ARD (726–935 aa) is an insert of the α-solenoid, which strikingly resembles SIMC1’s Nse5-like domain, with an r.m.s.d. of 5.9 Å between the structurally aligned 300 Cα atoms (Figure 7b). We then ran an HHpred search with a C-terminal SLF1 sequence lacking the ARD (SLF1410_∆ARD), which identified Nse5 and SNI1 (Figure 7—figure supplement 1a). Thus, SLF1 does contain an Nse5-like domain split by an ARD in its sequence.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-v2.jpg)
+
+**Figure 7.:** (a) Schematic of SLF1 domain boundaries on the AlphaFold model. (b) Superposition of the α-solenoid domains of SLF1 and SIMC1. (c) The ColabFold-predicted structural model of the SLF1410-SLF2CTD complex. (d) Western blot of GFP-Trap immunoprecipitation from HEK293 cells transiently transfected with plasmids expressing the respective protein combination. Schematic on the right represents domains in SLF1 truncated variants. Full and unedited blots provided in Figure 7—source data 1 (e) Western blot of Myc-Trap or GFP-Trap immunoprecipitation from HEK293 cells transfected with FLAG-SIMC1, Myc-SLF2CTD and GFP-SLF1410 or GFP-SLF1410_ΔARD (linker), respectively. Domains of SLF1 constructs are shown in the scheme on the right side. Full and unedited blots provided in Figure 7—source data 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) SLF1410 (410–1058 aa). (b) SLF1410_ΔARD (410–725 aa +935–1058 aa). (c) SLF1410_ΔC-half (410–935 aa). (d) SLF1410_N-half (410–725 aa). The best-ranked structure of five predictions is shown for each prediction. Overlays with the SIMC1-SLF2 structure are generated by superimposing SLF2. SIMC1 and SLF2 of the SIMC1-SLF2 structure are colored by grey and wheat, respectively. SLF1 and SLF2 of the predictions are colored in rainbow. The right panels show the PAE plots. The inter-protein PAE values in (a) and (b) are low, indicating high confidence of the predictions, while those in (c) and (d) are high, indicating low confidence of the prediction.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (a–c) Unedited SLF2, SIMC1, and SLF1 interactome nodes from the Harvard BioPlex Interactome https://bioplex.hms.harvard.edu. The “bait” protein is colored purple at the center of each node, and interacting proteins are shown around the bait with connecting arrows.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Secondary structures (α-helices) are colored.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** The query was SLF1410_ΔARD (410–725 aa +937–1058 aa), and SIMC1 was the top hit. The α-helices determined by AlphaFold (for SLF1) and cryo-EM (SIMC1) are colored.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp6-v2.jpg)
+
+**Figure 7—figure supplement 6.:** (a) The AlphaFold model of SLF1 (336–1058). The model on left is colored by pLDDT scores as indicated. The model in middle are colored in the rainbow with ARD in gray and the N-terminal region (336–410 aa) in purple. SIMC1 of the cryo-EM SIMC1-SLF2 structure is shown on right for comparison and colored in the same way as in the middle panel. (b) AlphaFold Multimer structure prediction of the SLF1/2 complex including the N-terminal region. Shown on left is the model of SLF1 (336–1058) of the SLF1/2 complex model. The middle panel shows the predicted structure of the SLF1/2 complex. The PAE table is show on right. (c) SLF1 (336–1058) of the predicted SLF1/2 complex is shown on left and middle. The α-solenoid in the middle panel is shown with its surface. The right panel is the predicted structure of the complex with the α-solenoids shown with their surface.
+
+![Figure 7—figure supplement 7.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp7-v2.jpg)
+
+**Figure 7—figure supplement 7.:** (a) Electrostatic potential of the SLF1 and SLF2 surfaces. SLF1 and SLF2 are oriented to show their interfaces. Double arrows point at intramolecular charge pairs. (b) Conservation mapping on the subunit interface. The conservation scores obtained from the Consurf server are shown by the color graduation as indicated.
+
+![Figure 7—figure supplement 8.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp8-v2.jpg)
+
+**Figure 7—figure supplement 8.:** (a) Positions of the mutations are indicated on SLF1336 (left), the SLF1336-SLF2CTD complex (center), and SLF2CTD (right). The ARD domain (726–934 aa) and the N-terminal disordered region (336–350 aa) are omitted for clarity. SLF1 mutations are set A (G464D, H468E, A472D, L476E), set B (F957E, L964E), and set C (A1042D, I1045E, M1049E). SLF2 mutations are same as shown in Figure 5—figure supplement 14. (b) Western blot of Myc-Trap immunoprecipitation from HEK293 cells transiently transfected with plasmids expressing Myc-SLF2CTD and GFP-SLF1 variants. (c, d) Western blot of GFP-Trap immunoprecipitation from HEK293 cells transiently transfected with plasmids expressing GFP-SLF1336 variants and FLAG-SLF2CTD (c) or GFP-SLF1336 and Myc-SLF2CTD variants (d). Full and unedited blots of (b–d) are provided in Figure 7—figure supplement 8—source data 1, Figure 7—figure supplement 8—source data 2, Figure 7—figure supplement 8—source data 3, respectively.
+
+![Figure 7—figure supplement 9.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig7-figsupp9-v2.jpg)
+
+**Figure 7—figure supplement 9.:** (a) The sequence alignment of the α1 of SIMC1 and SLF1 colored according to the conservation score calculated by Consurf. The mutations in the SIMC1 ‘combo’ mutant are indicated. (b) Conservation mapping on the surface of the SLF1-SLF2 complex. The boundary of SLF1’s surface is indicated by yellow line for clarity. The SLF1 residues whose corresponding residues were mutated in the SIMC1 ‘combo’ mutant (a) are labeled.
 
 We then asked ColabFold for an SLF1410-SLF2 structure, which predicted with high confidence a model similar to the SIMC1-SLF2 structure (Figure 7c, Figure 7—figure supplement 2a). Because the ARD does not contact SLF2, we repeated the prediction with SLF1410_ΔARD, which produced the same structure (Figure 7—figure supplement 2b). Predictions using a short SLF1 lacking the C-terminal half of the split Nse5-like domain (SLF1410_ΔC-half; 410–935 aa) and another SLF1 containing only the N-terminal half of the split Nse5-like domain (SLF1410_N-half; 410–725 aa) failed to assemble a reliable complex (Figure 7—figure supplement 2c, d). These results suggest that the complete Nse5-like domain is necessary and sufficient for the association of SLF1 with SLF2.
 
@@ -126,9 +412,17 @@ SLF2CTD set B and C are only slightly defective in SLF1 binding, contrasting the
 
 The structural similarity between the SIMC1-SLF2 and SLF1/2 complexes implies that the two complexes would share a mechanism for SMC5/6 regulation. The N-terminal helix of SLF1’s α-solenoid seems to be somewhat less conserved than that of SIMC1 (Figure 7—figure supplement 9). Indeed, the four residues that were mutated in the SIMC1 combo mutant are not strictly the same. Nonetheless, there is a glutamic acid shared between SLF1 and SIMC1, and the other three residues are all hydrophilic residues in both proteins. Thus, SLF1 may also use these residues to regulate SMC5/6.
 
-## SLF1 but not SIMC1 is recruited to sites of DNA damage
+### SLF1 but not SIMC1 is recruited to sites of DNA damage
 
 Having established both SIMC1 and SLF1 as Nse5-like proteins, we investigated potential functional overlap between the two proteins. Thus far, our data suggest separate roles for SIMC1 and SLF1 in the recruitment of SMC5/6 to sites of viral replication or DNA damage, respectively. To explore this possibility, we stably expressed epitope tagged SIMC1 or SLF1 in U2OS cells and tested the recruitment of each to laser induced DNA damage, as done previously for SLF1 (Räschle et al., 2015). As expected, SLF1 colocalizes at laser stripes with gamma-H2AX, a marker of DNA damage (Figure 8a). In contrast, SIMC1 does not similarly colocalize with gamma-H2AX (Figure 8a).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig8-v2.jpg)
+
+**Figure 8.:** (a) U2OS cells stably expressing either FLAG-SLF1 or FLAG-SIMC1 were exposed to laser microirradiation. Cells were fixed 1 hr later and stained with gamma-H2A.X (phosphorylation of histone H2A.X Ser139) and FLAG antibodies. Scale bar 10 μm. (b) Localization of SLF1 to LT foci depends on SIMC1. Representative immunofluorescence images of HEK293 WT and SIMC1-/- cells with integrated vector expressing FLAG-SLF1. Cells were fixed 48 hr after SV40 transfection and stained with SV40 LT (green), FLAG (red), PML (light blue) antibodies. Scale bar 10 μm. (c) Relative quantification of the number of cells containing FLAG and PML foci representative images shown in panel (b). A minimum of 267 cells with at least four SV40 LT foci were counted for each cell line. Means and error bars (s.d.) were derived from three independent SV40 transfections representing biological replicates. (∗) p<0.05; (∗∗) p<0.005; (∗∗∗) p<0.0005; (n.s.) p>0.05 (two-tailed unpaired t-test). Primary data provided in Figure 8—source data 1. (d) Comparison of localization of FLAG-SIMC1 and FLAG-SLF1 (red), stably expressed from integrated vectors, and LT foci (green) in HEK293 cells. Cells fixed 48 hr after SV40 transfection. Scale bar 10 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/79676/elife-79676-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Expression was measured in indicated time points after transfection and normalized to non-transfected cells. Values represent 2^(-∆∆Ct) ± SEM from three technical replicates, n=1. Primary data provided in Figure 8—figure supplement 1—source data 1.
 
 We also tested whether SLF1, like SIMC1, localizes at SV40 replication centers. Overexpressed SLF1 localized proximal to LT foci in a qualitatively different manner to SIMC1 in wild-type HEK293 cells (Figure 8b). Moreover, this SLF1 localization requires SIMC1, as it is greatly reduced in SIMC1 null cells (Figure 8b and c). Whereas SIMC1 appears to be within PML NBs and LT foci, consistent with its SUMO binding properties, SLF1 appears at the periphery of LT foci (Figure 8d). Notably, we did not identify endogenous SLF1 in LT foci in our SMC5 BioID analysis, suggesting that the observed localization of overexpressed SLF1 may be an artifact.
 
@@ -154,11 +448,11 @@ In light of our discoveries, we propose that SIMC1 is a lynchpin of the antivira
 
 ## Materials and methods
 
-## Construction of recombinant plasmids
+### Construction of recombinant plasmids
 
 Plasmid DNA was constructed either by standard restriction enzyme digestion and T4 ligase ligation-based cloning or using Takara In-Fusion HD Cloning Plus Kit. To make SIMC1 SIM mutations (FIDL to AADA and VIDL to AADA, corresponding to SIMC1 amino acids 26–29, and 45–48), a gBlock sequence containing all mutation was purchased (IDT). Combo, set mutations in SIMC1 Nse5-like domain and SLF2 set mutations were introduced in primers and gBlock sequences (IDT) and cloned into plasmids using In-Fusion kit (Takara). All plasmids created in this study have been verified by sequencing service provided by Eton Bioscience (San Diego). Plasmids used in this study are provided in Appendix 1 Key Resource table, additional details of plasmid construction are available upon request.
 
-## Cell culture, transfection, stable line generation
+### Cell culture, transfection, stable line generation
 
 Cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% fetal bovine serum (FBS), 1% antibiotic-antimycotic (Gibco) and maintained at 37 °C in humidified air with 5% CO2. Human embryonic kidney cell lines HEK293T, human osteosarcoma cell line U2OS, and Phoenix ampho cells were obtained from Lazzerini-Denchi lab. HEK293 were provided by X. Wu lab. Flp-In–293 cell line was purchased from ThermoFisher (R75007). HEK293 and U2OS cell lines were authenticated by STR profiling (ATCC). Mycoplasma contamination was tested monthly by PCR detection (Uphoff and Drexler, 2014).
 
@@ -166,33 +460,33 @@ Transient plasmid transfections were generally carried out using TransIT-LT1 (Mi
 
 A complete list of stable mammalian cell lines generated and reagents used in this study is provided (Appendix 1 Key Resource table).
 
-## Cell line generation by CRISPR/Cas9
+### Cell line generation by CRISPR/Cas9
 
 SIMC1 knockout clones were generated via CRISPR/Cas9 gene targeting by transient transfection of a hSpCas9 encoding plasmid (Addgene) and a pcDNA-H1 plasmid encoding specific sgRNA: guide1 (5´-gggtctgaacgacataacgc-3´), guide 2 (5´-cgcaggaaaaggactcgccc-3´), both in exon 5. To introduce stop codons by HR-mediated repair, a donor template with the STOP cassette sequence (GTCGGATCCTTTAAACCTTAATTAAGCTGTTGTAG) was used. The presence of the STOP cassette in clones from single cell were confirmed by sequencing, depletion of SIMC1 was verified by RT-qPCR and western blot. For RT-qPCR, total RNA was precipitated using RNeasy Plus Mini kit (Quiagen), cDNA synthetized by SuperScript III First-Strand Synthesis System for RT-PCR (Invitrogen) and SensiFAST SYBR No-ROX kit (Meridian Bioscience) was used for qPCR. Oligonucleotides are listed in the Appendix 1 Key Resource table.
 
-## SILAC SMC5 BioID labeling and affinity purification of biotinylated proteins
+### SILAC SMC5 BioID labeling and affinity purification of biotinylated proteins
 
 For stable isotope labeling by amino acids in cell culture (SILAC), 8×106 cells were seeded in a 15 cm plate with 45 mL of DMEM for SILAC (ThermoFisher) supplemented with foetal calf serum (10% v/v), 2 mM L-glutamine, 100 U/mL penicillinstreptomycin and the relevant amino acids: arginine-0/lysine-0 (light, 84 and 146 mg/L, Sigma-Aldrich, A6969 and L8662), arginine-6/lysine-8 (heavy, Cambridge Isotope Laboratories, CNLM-539-H-1 and CNLM-291-H-1). After 48 hr, biotin (stock: 50 mM in DMSO) was added to the medium to a final concentration of 50 µM for BirA*-SMC5 or 0.0125 µM for BirA*, and cells were cultured in the presence of biotin for 24 hr. Cells were detached by trypsinization, then counted and diluted to ~1.25 × 108 in 50 mL of PBS. Equal volumes of light and heavy-labelled cells were mixed as follows: 25 mL of BirA*-light with 25 mL of BirA*-SMC5-heavy and 25 mL of BirA*-heavy with 25 mL BirA*-SMC5-light. Cells were centrifuged at 300 g for 5 min, then incubated on ice for 15 min in 30 mL of 10 mM HEPES pH 7.6, 25 mM NaCl, 1.5 mM MgCl2, 0.34 M sucrose, 10% v/v glycerol, 1×cOmplete protease inhibitors, 1 mM DTT (buffer A), supplemented with 0.1% v/v Triton X-100. The released nuclei were harvested by centrifugation at 1500 g for 5 min, washed once in 30 mL of buffer A supplemented with 0.1% v/v Triton X-100 and twice more in 30 mL of buffer A without Triton X-100. Purified nuclei were suspended in 2 mL of 1% v/v SDS, 10 mM EDTA pH 8, 20 mM HEPES pH 7.6, 1×cOmplete protease inhibitors (SDS buffer) and boiled for 10 min. Nuclear lysate was sonicated using a Branson 450 Sonifer equipped with a cone micro tip in five pulses of 15–20 s at minimum power settings to reduce sample viscosity. Nuclear lysate was diluted with 8 mL of 25 mM HEPES Ph 7.6, 150 mM NaCl, 1 mM EDTA pH 8, 1×cOmplete protease inhibitors, and 1 mM DTT (dilution/wash buffer), and incubated overnight at 4 ° C with 400 µl of MyOne Streptavidin T1 Dynabeads that was pre-washed in dilution buffer. The beads were washed three times with 10 mL of dilution/wash buffer, and eluted twice with 20 µl of 1×NuPAGE LDS Sample Buffer supplemented with 100 mM of DTT and 1 mM of biotin for 5 min at 95 ° C.
 
-## Sample preparation and mass spectrometry of SMC5 BioID with SILAC
+### Sample preparation and mass spectrometry of SMC5 BioID with SILAC
 
 The immunoprecipitated samples were run on the 10% SDS-PAGE for 10 min at 180 V to allow the proteins to move into the resolving gel. The gel was then fixed for 15 min in 7% acetic acid and 40% methanol solution and stained for 15 min with 0.25% Coomassie Blue G-250, 7% acetic acid, and 45% ethanol. After rinsing with deionized water to remove excess dye, In-gel digestion was performed in principle as described previously (Shevchenko et al., 2006) and detailed as follows. Each gel lane was cut separately using the new sharp scalpel, then minced, and transferred to an Eppendorf tube. Gel pieces were destained with 50% ethanol and 25 mM NH4HCO3 for 15 min to remove Coomassie dye. After removing supernatant, the gel pieces were dehydrated with 100% acetonitrile for 10 min on the rotator. Acetonitrile was discarded, and the samples were dried to completion using a vacuum evaporator (Eppendorf). The dried samples were then rehydrated and disulphide bonds in the proteins were reduced using 10 mM DTT in 50 mM NH4HCO3 pH 8.0 (reduction buffer) for 1 h at 56 °C. The buffer was removed, and cysteine residues of proteins were subsequently alkylated with 50 mM iodoacetamide and 50 mM NH4HCO3 pH 8.0 for 45 min at room temperature in dark. Samples were dehydrated again with 100% acetonitrile, then dried by vacuum evaporation. The fully dried gel slices were incubated with 1 µg trypsin per tube in 50 mM ammonium bicarbonate buffer at 37 °C overnight on a ThermoMixer (Eppendorf). Digested peptides were extracted twice with 150 µl of 30% acetonitrile, then with 150 µl of 100% acetonitrile to the gel pieces for 15 min at 25 °C while being agitated at 1400 rpm in a ThermoMixer (Eppendorf). Extracted peptides combined. The reductive dimethylation step was performed as described previously (Boersema et al., 2009). The labeled samples (each sample pair including a replicate were switched with the SILAC (Lys8/Arg10) labels) were mixed, and purified and desalted with C18 Stage-Tips (M3 company) as described (Rappsilber et al., 2007). The eluted peptides were loaded on the silica column of 75 µm inner diameter (New Objective) packed to 25 cm length with 1.9 µm, C18 Reprosil beads (Dr. Maisch Phases) using an Easy-nLC1000 Liquid Chromatography system (Thermo Scientific).
 
 Peptides were separated on the C18 column using an Easy-nLC1000 Liquid Chromatography system (Thermo Scientific) with the following 2 h reversed-phase chromatography gradient: 0–4 min, 2–5% solvent B; 4–67 min, 5–22% solvent B; 67–88 min, 22–40% solvent B; 88–92 min, 40–95% solvent B; 92–97 min, 95% solvent B; 97–101 min, 95–2% solvent B; and 101–105 min, 2% solvent B (solvent B: 80% acetonitrile containing 0.1% formic acid) and directly sprayed into a Q-Exactive Plus mass spectrometer (Thermo Scientific) for the data acquisition. The mass spectrometer was operated in the positive ion scan mode with a full scan resolution of 70,000; AGC target 3x106 max. IT = 20ms; Scan range 300–1650 m/z with a top10 MS/MS DDA method. Normalized collision energy was set to 25 and MS/MS scan mode operated at a resolution of 17,000; AGC target 1x105 and max IT of 120ms.
 
-## Nano-Trap immunoprecipitation
+### Nano-Trap immunoprecipitation
 
 GFP and Myc-labeled proteins were immunoprecipitated using the Nano-Trap magnetic agarose (Chromotek) following the manufacturer’s instructions. Briefly, about 10x106 cells were harvested by trypsinization 48–72 h after plasmids transfection, lysed by incubation in 200 μl of dilution buffer (10 mM Tris pH 7.5, 150 mM NaCl, 0.5 mM EDTA) supplemented with 0.5% Nonidet NP40, 1 mM phenylmethylsulfonyl fluoride (PMSF), 1 x Halt Protease Inhibitor Cocktail (Thermo Fisher Scientific) for 30 min on ice with extensive pipetting every 10 min. Lysates were cleared by centrifugation at 17,000 g 12 min and input aliquot was incubated with 6 mM MgCl2 and Benzonase (1:75, EMD Millipore). The remaining lysate was diluted with 300 μl of dilution buffer +supplements and incubated with 25 μl of GFP- or Myc-Trap magnetic agarose beads for 2 hr at 4 °C, followed by three washes in dilution buffer and elution into 2 x NuPAGE LDS Sample Buffer (ThermoFisher). Samples were analyzed in SDS-PAGE and western blot.
 
-## SIMC1 BioID labeling and affinity purification of biotinylated proteins
+### SIMC1 BioID labeling and affinity purification of biotinylated proteins
 
 BioID labeling was carried out essentially as described (Nie et al., 2021). Briefly, cells were cultured in media containing 50 μM biotin (Sigma) for 24 hr. Denaturing cell lysis and streptavidin pulldown was performed as described previously (Roux et al., 2012; Nie et al., 2021). Native lysis purification was carried out as detailed below. Cell pellet was suspended in native lysis buffer (20 mM Tris, pH 7.5, 150 mM NaCl, 1 mM EDTA, 0.5% NP-40, 1 mM DTT, 6 mM MgCl2, 1 mM PMSF) supplemented with Halt Protease Inhibitor Cocktail (ThermoFisher). The cell lysate was incubated on ice for 30 min with 50 units of Benzonase (EMD Millipore), then centrifuged at 4 °C at 16,000 g for 10 min. Supernatant, diluted with 3 volumes of 10 mM Tris, pH 7.5, 150 mM NaCl (native dilution buffer), was incubated for 2 h with Dynabeads MyOne Streptavidin C1 beads (ThermoFisher, 20 μl of beads was used in small-scale analysis; 75 μl in large-scale preparation for mass spectrometry). The beads were then washed three times with 10 mM Tris, pH 7.5, 500 mM NaCl (native wash buffer). Following washes, beads were either eluted with 35 μl of 2 x NuPAGE LDS Sample Loading Buffer (ThermoFisher) with 100 mM DTT at 100 °C for 5 min for western blotting, or stored in 100 mL of 8 M urea, 100 mM Tris, pH 8.5, for mass spectrometry analysis.
 
-## Protein identification by mass spectrometry
+### Protein identification by mass spectrometry
 
 Protein samples were reduced and alkylated by sequential incubation with 5mM Tris (2-carboxyethyl) phosphine for 20 min at room temperature and 10 mM iodoacetamide reagent in the dark at room temperature for additional 20 min. Proteins were digested sequentially at 37 °C with lys-C for 4 hr followed by trypsin for 12hours. After quenching the digest by the addition of formic acid to 5% (v/v), peptides were desalted using Pierce C18 tips (Thermo Fisher Scientific), dried by vacuum centrifugation, and resuspended in 5% formic acid. Peptides were fractionated online using reversed phase chromatography on in-house packed C18 columns as described before (Jami-Alahmadi et al., 2021). The 140 min gradient of increasing acetonitrile was delivered using a Dionex Ultimate 3000 UHPLC system (Thermo Fisher Scientific). Peptides were electrosprayed into the mass spectrometer by the application of a distal 2.2 kV spray voltage. MS/MS data were acquired using an Orbitrap Fusion Lumos mass spectrometer operating in Data-Dependent Acquisition (DDA) mode consisting of a full MS1 scan to identify peptide precursors that were subsequently targeted by MS2 scans (Resolution = 15,000) using high energy collision dissociation for the remainder of the 3 s cycle time. Data analysis was performed using the Integrated Proteomics bioinformatic pipeline 2 (Integrated Proteomics Applications, San Diego, CA). Database searching was performed using the ProLuCID algorithm against the EMBL Human reference proteome (UP000005640 9606). Peptides identifications were filtered using a 1% FDR as estimated using a decoy database. Proteins were considered present in a sample if they had two or more unique peptides mapping to them. Relative comparisons between samples to identify candidate SIMC1 interacting proteins was done using raw peptide spectral counts.
 
-## Immunofluorescence and microscopy
+### Immunofluorescence and microscopy
 
 Immunofluorescence was performed essentially as described (Nie et al., 2021). Briefly, U2OS cells grown on coverslips were fixed in 4% formaldehyde in PBS for 10 min, then permeabilized with PBS containing 0.2% Triton X-100 for 5 min at room temperature. The cells were incubated with antibodies diluted in a blocking solution of 5% Normal Goat Serum (BioLegend) in PBS. HEK293 cells were grown on coverslips coated in 0.1% gelatin (type A, MP bio), fixed in 4% formaldehyde in PBS for 15 min, permeabilized in Triton X-100 buffer (0.5% Triton X-100, 20 mM Hepes, 50 mM NaCl, 3 mM MgCl2, 300 mM sucrose) for 2 min. Antibodies were diluted in PBS containing 0.2% cold water fish gelatin (Sigma) and 0.5% BSA.
 
@@ -200,31 +494,31 @@ To visualize DNA, fixed cells were stained with 0.1 μg/mL 4’,6-diamidino-2-ph
 
 Confocal images were acquired with LSM 780 or 880 confocal laser scanning microscope (Zeiss) equipped with 63 x/1.4 oil immersion high NA objective lens, using standard settings in Zen software. Images were processed using ImageJ software (NIH).
 
-## Western blotting
+### Western blotting
 
 Whole cell lysate was prepared by lysis cells in RIPA buffer (150 mM NaCl, 1% Triton X-100, 0.5% sodium deoxycholate, 0.1% SDS, 50 mM Tris, pH 8), agitated for 40 min in 4 °C and centrifuged at 16,000 g for 20 min. The whole cell lysate or pulldown sample was combined with NuPAGE LDS Sample Loading Buffer and 100 mM DTT, separated by SDS-PAGE and transferred to nitrocellulose. Immunoblotting was performed as described (Nie et al., 2017). Antibodies used for immunoblotting are listed (Appendix 1 Key Resource table). Protein detection was carried out using ECL chemiluminescent substrates (genDEPOT, ThermoFisher) on a ChemiDoc XRS + Molecular Imager (BioRad) using ImageLab software (BioRad).
 
-## Flow cytometry
+### Flow cytometry
 
 HEK293 cells were treated with 100 ng/mL nocodazole in 0.1% DMSO for 10 hr to induce G2/M arrest. Cells were fixed with ice-cold 70% EtOH, washed in PBS containing 1% BSA and stained with 50 μg/mL propidium iodide in the presence of 250 μg/mL RNAse A for 30 min in 37°C and 4°C overnight. Flow cytometry analysis was performed on a NovoCyte 3000 (ACEA Biosciences) using NovoExpress software.
 
-## Alkaline comet assay
+### Alkaline comet assay
 
 Endogenous level of DNA damage in HEK293 cells was evaluated using the CometAssay kit (Trevigen) according to the manufacturer’s instructions. Control cells were treated with 1 mM MMS (Sigma) for 1 h to induce DNA damage. Cells were harvested by trypsinization and 500 cells were mixed with LMAgarose and spread on the slide. Slides were dried 20 min in 4 °C, incubated 40 min in kit lysis solution in 4 °C and 20 min in unwinding solution (300 mM NaOH, 1 mM EDTA, pH 13) in room temperature. Electrophoresis was performed in the unwinding solution in 4 °C, 300 mA, 30 min. Slides were washed twice in water, once in 70% EtOH, dried 15 min in 37 °C and stained with SYBR Gold (Thermo) for 30 min. Images were taken using Zeiss Axio Imager MI with 20 x objective.
 
-## DNA damage by laser microirradiation
+### DNA damage by laser microirradiation
 
 Protocol adapted from Tampere and Mortusewicz, 2016. Briefly, U2OS cells were plated in a 35 mm μ-Grid dish (Ibidi) a day before microirradiation. Cells were sensitized by 1 μg/ml Hoechst 33342 (Invitrogen) for 10 min and transferred to the stage incubator of LSM880 Airyscan confocal laser scanning microscope (Zeiss). Using the bleaching mode in ZEN software, DNA damage was induced by irradiation of a 5-pixel wide region with a 405 nm diode laser set to 15% power, 1 iteration, zoom 1, averaging 1, pixel dwell time 0.27 μs (speed 7). Cells were fixed 1 hour after the irradiation and stained with anti-phospho-Histone H2A.X (Ser139) and anti-D tag antibodies following the immunofluorescence protocol.
 
-## Recombinant protein expression and purification
+### Recombinant protein expression and purification
 
 Recombinant human SIMC1 and SLF2 proteins were expressed in baculovirus-infected Spodoptera frugiperda (Sf9) insect cells. The cDNA fragment encoding SIMC1284 (284–872 aa) was placed after the Tev-protease cleavable GST tag in a modified pACEBac vector. The cDNA fragment encoding SLF2CTD (a.a. 635–1173) was cloned after the Tev-cleavable Histidine tag in a modified pACEBac. Baculoviruses were generated from these vectors using the published protocol (Berger et al., 2004). Sf9 cells were co-infected with the baculoviruses harboring GST-SIMC1284 or His-SLF2CTD and harvested after 48–50 hr. The cells were suspended in the lysis buffer (20 mM Hepes pH 7.5, 150 mM NaCl, 0.5 mM TCEP) supplemented with protease inhibitor cocktail (Pierce) and lysed using C3 pressure homogenizer (Avestin). The lysate was clarified by centrifugation at 40,000 g. Imidazole (pH 7, final 20 mM) was added to the supernatant, which was then poured onto a Ni affinity column (Thermo Fisher Scientific). The Ni resin was washed with five column volume of the lysis buffer. Proteins were eluted with 300 mM Imidazole. The Ni eluate was immediately poured onto a glutathione sepharose column (GoldBio). After wash, an aliquot of Tev protease was added to the resin, which was then left at 4 °C overnight. Proteins were then eluted in the lysis buffer, concentrated, and injected a Superdex 200 size exclusion column (GE Healthcare). The protein contents of the fractions were analyzed by SDS-PAGE, which was stained with Coomassie blue.
 
-## ColabFold and AlphaFold-Multimer structural modeling
+### ColabFold and AlphaFold-Multimer structural modeling
 
 ColabFold and AlphaFold-Multimer were run on Google Colab platform using default settings.
 
-## Cryo-EM data collection and processing
+### Cryo-EM data collection and processing
 
 Cryo-EM grids were prepared in a cold room. A 3 µl drop of the SIMC1284-SLF2CTD complex (0.4 mg/ml protein in 20 mM HEPES pH 7.5, 150 mM NaCl, 0.5 mM TCEP or 0.8 mg/ml protein in 20 mM HEPES pH 7.5, 150 mM NaCl, 0.5 mM TCEP, 0.128 mM DDM) was applied to a plasma-cleaned UltraAuFoil R1.2/1.3 300-mesh grids (Quantifoil). Immediately after removing excess liquid by a filter paper (Whatman No. 1), the grid was rapidly dropped into liquid ethane using a manual plunger. Grids were stored in liquid nitrogen tank until use.
 
@@ -232,10 +526,10 @@ Data were collected in two sessions, which were done in a same manner as follows
 
 Processing of the first data set made it clear that the orientation of the particles was limited. To alleviate this issue, DDM (0.75×critical micelle concentration) was added to the sample and the concentration of the protein was increased. The images of this sample appeared to show more different views of the particles; however, the grid contained too many empty holes in areas with thin ice, which made it difficult to obtain a large number of good particles. As such, the second session collected 1553 micrographs. A total of 1,065,073 particles were picked using Laplacian-of-Gaussian filter, extracted at 2.268 Å per pixel with a box size of 100 pixels, and then subjected to 2D classification. 128,371 particles belonging to well-resolved 2D class average images were selected and 3D auto-refined. The refined particles were re-centered and re-extracted at 1.134 Å per pixel with a box size of 200 pixels, and then subjected to 3D auto-refinement. The refined particles were 3D classified with no alignment with K=2 and T=8. 30932 particles belonging the better-resolved class (24.2% of the total input particles) were selected and 3D auto-refined. The particles were then combined with the refined particles from the first data set, yielding a total of 234,396 particles. The combined particles were subjected to 3D auto-refinement, followed by 3D classification without alignment (K=2, T=12). A total of 39,826 particles belonging to the better-resolved map (17.0% of the total input) were 3D auto-refined. The refined particles were subjected to CTF refinement, but no improvement was observed. Local resolution variation was calculated in Relion. Three-dimensional FSC analyses were performed on the remote 3DFSC processing server (https://3dfsc.salk.edu/, Tan et al., 2017). The final map was sharpened by DeepEMhancer (Sanchez-Garcia et al., 2021) on the COSMIC2 server (https://cosmic-cryoem.org/, Cianfrocco et al., 2017).
 
-## Model building, refinement, and structural analyses
+### Model building, refinement, and structural analyses
 
 For model building, a SIMC1-SLF2 model predicted by AlphaFold-Multimer was docked into the sharpened cryo-EM map using the Dock in map module of PHENIX (Liebschner et al., 2019). The model was trimmed and adjusted into the map using COOT (Emsley et al., 2010) and refined using the Real-space refinement module of PHENIX. The map-to-model FSC was obtained from PHENIX. The refined model was validated using MolProbity (Chen et al., 2010). The buried surface areas of the SIMC1-SLF2 (PDB ID: 7T5P) and Nse5/6 (PDB ID: 7LTO) complexes were obtained from 'Protein interfaces, surfaces and assemblies' service PISA at the European Bioinformatics Institute (http://www.ebi.ac.uk/pdbe/prot_int/pistart.html, Krissinel and Henrick, 2007). Electrostatic potential was calculated using APBS (Baker et al., 2001). Conservation scores were obtained from Consurf server (https://consurf.tau.ac.il, Ashkenazy et al., 2016). Structure figures were generated using Pymol (https://pymol.org), Chimera (Pettersen et al., 2004) and ChimeraX (Goddard et al., 2018).
 
-## Material Availability
+### Material Availability
 
 All materials produced during this work are available upon written request, in keeping with the requirements of the journal, funding agencies, and The Scripps Research Institute.

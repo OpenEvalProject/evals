@@ -19,9 +19,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05w21nn13 Department of Nephrology, the Key Laboratory for the Prevention and Treatment of Chronic Kidney Disease of Chongqing, Chongqing Clinical Research Center of Kidney and Urology Diseases, Xinqiao Hospital, Army Medical University Chongqing China
-2. https://ror.org/05w21nn13 Department of Respiratory Medicine, Xinqiao Hospital, Army Medical University Chongqing China
-3. https://ror.org/02n96ep67 Shanghai Key Laboratory of Regulatory Biology, Shanghai Frontiers Science Center of Genome Editing and Cell Therapy, East China Normal University, School of Life Sciences Shanghai China
+1. Department of Nephrology, the Key Laboratory for the Prevention and Treatment of Chronic Kidney Disease of Chongqing, Chongqing Clinical Research Center of Kidney and Urology Diseases, Xinqiao Hospital, Army Medical University Chongqing China ([ROR:05w21nn13](https://ror.org/05w21nn13))
+2. Department of Respiratory Medicine, Xinqiao Hospital, Army Medical University Chongqing China ([ROR:05w21nn13](https://ror.org/05w21nn13))
+3. Shanghai Key Laboratory of Regulatory Biology, Shanghai Frontiers Science Center of Genome Editing and Cell Therapy, East China Normal University, School of Life Sciences Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))
 
 † Corresponding author
 
@@ -41,23 +41,51 @@ In this study, we have employed single-cell sequencing in zebrafish kidney and h
 
 ## Results
 
-## Single-cell messenger RNA sequencing reveals RICs
+### Single-cell messenger RNA sequencing reveals RICs
 
 Understanding the function of an organ requires the characterization of its cell types (Panina et al., 2020). To illustrate the functions of the various cell types in the zebrafish kidney, we sequenced kidney cells by 10X Genomics single-cell RNA sequencing. Six randomly selected 6-month-old zebrafish kidneys were used to obtain about 7147 cells for sequencing. 3902 cells passed the quality control and were incorporated into analyses. Our initial analysis of kidney samples identified distinct clusters comprising 12 different cell types (Figure 1A). Further, we identified unique gene expression signatures that defined each of these cell clusters. The identities of 11 clusters were readily assigned based on expression of known markers or previous sequencing data (Tang et al., 2017; Diep et al., 2011). For example, two cell clusters were composed of epithelial cell types that are highly conserved in mammals, including the distal tubule epithelial cells defined by expression of solute carrier family 12 member 3 (slc12a3), ATPase Na+/K+ transporting subunit alpha 1a, tandem duplicate 4 (atp1a1a.4), and ATPase Na+/K+ transporting subunit beta 1a (atp1b1a), as well as the proximal tubule epithelial cells defined by the expression of solute carrier family 22 member 2 (slc22a2), paired box 2a (pax2a), and aminoacylase 1 (acy1) (Tang et al., 2017). We also identified hematopoietic stem cells, erythrocytes, T cells, neutrophils, macrophages, and vascular endothelial cells (Figure 1A and B, Figure 1—source data 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig1-v2.jpg)
+
+**Figure 1.:** (A) A tSNE plot showing clustering of all kidney cells after alignment using the Seurat package. Cells clustered with resolution 0.6. (B) Heat map showing relative log-expression of the top 2 or 3 marker genes for each cell cluster in A. (C) GO analysis of differentially expressed genes of cluster 12. A false discovery rate <0.05 was considered to indicate significant enrichment. BP, biological process; CC, cellular component; MF, molecular function. (D) Expression analysis of fabp10a in all clusters, showing that fabp10a was specifically expressed in cluster 12. DTECs, distal tubule epithelial cells; PTECs, proximal tubule epithelial cells; ECs, endothelial cells; HSCs, hematopoietic stem cells; MSCs, mucin-secreting cells; Exp, expression.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Expression analysis of col1a2 (A), dnc (B), col1a1b (C), and emilin1a (D). DTECs, distal tubule epithelial cells; PTECs, proximal tubule epithelial cells; ECs, endothelial cells; HSCs, hematopoietic stem cells; MSCs, mucin-secreting cells; Exp, expression.
+
 Interestingly, we found a new cell type (cluster 12). By comparing our data with the single-cell RNA sequencing data of human and mouse kidneys, it was found that this cluster of cells expressed human or mouse RICs signature genes, including collagen type 1 alpha 1b (col1a1b), collagen type 1 alpha 2 (col1a2), decorin (dcn), and elastin microfibril interfacer 1a (emilin1a) (Young et al., 2018; Stewart et al., 2019; Ransick et al., 2019; Figure 1B, Figure 1—figure supplement 1A–C). Therefore, we speculated that these cells were RICs. We next performed gene ontology (GO) analysis of all genes in this cell cluster and found that a significant percentage of genes corresponded to the extracellular matrix, the extracellular proteins that are not attached to the cell surface, or response to steroid hormones. Furthermore, this cluster of cells was also enriched in genes that respond to lipids (Figure 1C), which are richly contained by mammalian RICs (Hao and Breyer, 2007). Notably, we found that fatty acid-binding protein 10a (fabp10a), which plays a pivotal role in intracellular binding and trafficking of long-chain fatty acids (Her et al., 2003), was specifically expressed in cell cluster 12 but not in other type cells (Figure 1D). Taken together, we inferred fabp10a as a specific marker of this cell cluster.
 
-## RICs are specifically marked by fabp10a:GFP in transgenic zebrafish
+### RICs are specifically marked by fabp10a:GFP in transgenic zebrafish
 
 Tg(fabp10a:GFP) has been reported to specifically label the liver during early embryonic development (Her et al., 2003). To observe the expression of fabp10a in the kidney, we crossed Tg(fabp10a:GFP) with Tg(cdh17:DsRed), which is a transgenic line specifically labeled nephron epithelial cells, and found that Tg(fabp10a:GFP) labeled not only the liver and spinal cord but also a part of proximal straight tubule (PST) and distal tubule (DT) starting at 4 days post-fertilization (4 dpf) (Figure 2—figure supplement 1A). Furthermore, a large number of Tg(fabp10a:GFP) labeled cells were observed to distribute around the area where the mesonephric tubules appeared after 15 dpf (Figure 2A, Figure 2—figure supplement 1A). These cells were fusiform with irregular polygon shapes, and interweaved between cells to form a network (Figure 2A), similar to the same cell shape as mammalian RICs (Whiting et al., 1999; Zhang et al., 2018).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig2-v2.jpg)
+
+**Figure 2.:** (A) Localization of Tg(fabp10a:GFP) labeled-RICs in 6.8 mm stage juvenile zebrafish. Tg(cdh17:DsRed) labeled renal tubules (arrowheads, new mesonephric branches; n = 6). (B, C) In adult zebrafish kidney, Tg(fabp10a:GFP) marks RICs (n = 3), while Tg(cdh17:DsRed) labels CD and also renal capsule (RC). Tg(fabp10a:GFP) cells form a network to tightly wrap kidney tubules (B) and capsules (C). CD, collecting duct; RC, renal capsule. (D) RT-PCR analysis of the expression of epoa and cox2a. β-actin was used as a sample control. GFP+ indicates cells with only GFP fluorescence; control indicates all cells except GFP+/DsRed- cells. (E, F) col1a1b and col1a2 mRNA levels in Tg(fabp10a:GFP)-labeled GFP+/DsRed- cells were quantified by qPCR. Both were significantly increased at 5 dpi (n = 3). Both genes were normalized to the mean expression level at 0 dpi, which was set to 1. **p<0.01 by one-way ANOVA. (G) Nile red staining section of Tg(fabp10a:GFP) zebrafish kidney showing that Tg(fabp10a:GFP)-labeled cells contained plentiful lipid droplets. (H) Higher-magnification image of the boxed area showed in (G) (arrowheads, lipid droplets). n = 3. Scale bar in (A–C), 100 μm; (G, H), 20 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The development process of Tg(fabp10a:GFP;cdh17:DsRed) zebrafish from 4 dpf to 15 dpf. Tg(fabp10a:GFP) labeled PST and DT in early stages (4–14 dpf) and RICs (arrowheads) at 15 dpf (n = 5). The spinal cord is also labeled by fabp10a:GFP cells. (B) RT-PCR analysis indicated the expression of fabp10a in Tg(fabp10a:GFP) labeled-kidney cells. β-actin was used as a sample control. GFP + indicates kidney cells with only GFP fluorescence; control indicates all kidney cells except GFP + /DsRed- cells. P, pronephros; S, spine; PCT, the proximal convoluted tubule; PST, proximal straight tubule; DT, distal tubule. Scale bar, 100 μm.
 
 To further identify these cells, we analyzed adult kidney sections of the Tg(fapb10a:GFP;cdh17:DsRed) double transgenic line. A large number of GFP+ cells were attached to the renal tubules and collecting ducts, or distributed in the renal interstitium (Figure 2B). Moreover, these cells also tightly surrounded the cdh17-labeled renal capsules (Figure 2C). As in juvenile zebrafish, these cells had multitudinous shapes and formed a network (Figure 2A–C). The distribution and morphology of these cells were similar to those of the RICs in the mammalian metanephros (Whiting et al., 1999; Zhang et al., 2018). Next, we sorted the adult kidney cells of the Tg(fapb10a:GFP;cdh17:DsRed) line by flow cytometry (FACS). Two groups of cells were collected. One group of cells only expressed green fluorescence (GFP+/DsRed-), and the control group included all of the other cells, except GFP+/DsRed- cells. We detected the fabp10a expression in GFP+/DsRed- cells but not in control cells by semi-quantitative reverse transcription-polymerase chain reaction (RT-PCR) (Figure 2—figure supplement 1B), indicating that GFP+/DsRed- cells were indeed fabp10a positive. Furthermore, we detected the enrichment of erythropoietin (epo) gene, a marker of mammalian RICs (Kobayashi et al., 2016; Souma et al., 2015), in GFP +/DsRed- cells, but not in control cells (Figure 2D). Cox2 is also considered to be a marker of mammalian RICs (Zhang et al., 2018). We found that cox2a, the Cox2-orthologous gene in zebrafish, was also highly enriched in GFP+/DsRed- cells (Figure 2D).
 
 RICs have been reported to differentiate into fibroblasts when AKI occurs in mammals (Baues et al., 2020). We intraperitoneally injected gentamicin (Gent; 2.7 μg/μL, 20 μL per fish), an established nephrotoxin, into zebrafish to induce AKI (Diep et al., 2011; Augusto et al., 1996) and then collected the GFP+/DsRed- kidney cells of Tg(fapb10a:GFP;cdh17:DsRed) zebrafish at 5 days post-injury (5 dpi) by FACS. Compared with the uninjured kidneys, mRNA levels of fibroblast markers col1a1b and col1a2 were increased significantly in GFP+/DsRed- cells at 5 dpi according to quantitative PCR (qPCR) analysis (Figure 2E and F). Because mammalian RICs are lipid-rich cells (Hao and Breyer, 2007), Nile red, a fluorescent dye that specifically stains lipids, was used to detect lipid droplets in adult renal tissues. Many lipid droplets were detected in the cytoplasm of most Tg(fabp10a:GFP) labeled cells (Figure 2G and H). Collectively, these findings demonstrated that this cluster of cells had a high degree of similarity and conservation as mammalian RICs based on cell location, morphology, and molecular or biochemical characteristics. Thus, we defined the cluster of fabp10a+ cells as the zebrafish RICs.
 
-## Kidney injury promotes synthesis and secretion of PGE2 by RICs
+### Kidney injury promotes synthesis and secretion of PGE2 by RICs
 
 Kidney injury in adult zebrafish induces the synchronous formation of many new nephrons marked by lhx1a (Kamei et al., 2019; Diep et al., 2011). In the Tg(fapb10a:GFP;lhx1a:DsRed) injured kidneys, we found that the lhx1a + RPC aggregates were wrapped around by the RICs that closely interacted with lhx1a + cells (Figure 3B, Figure 3—figure supplement 1A). Additionally, EdU assay showed that RICs and lhx1a + RPCs proliferated simultaneously after AKI (Figure 3—figure supplement 1B), suggesting that RICs participate in the regeneration of nephrons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig3-v2.jpg)
+
+**Figure 3.:** (A) cox2a mRNA levels were evaluated by RT-PCR at 0, 1, 3, 5, 7, and 9 dpi. β-actin was used as a sample control. The expression of cox2a was upregulated after acute kidney injury (AKI) and reached its peak level at 5 dpi (n = 3). (B) Immunofluorescence staining of Cox2a in Tg(fabp10a:GFP;lhx1a:DsRed) zebrafish kidneys at 7 dpi. RICs around lhx1a+ cell aggregates highly expressed Cox2a (arrows; DT, distal tubule, red outline; lhx1a+ cell aggregates, white outline; n = 4) Scale bar, 50 μm. (C) PGE2 levels were assessed at 0, 1, 3, 5, 7, and 9 dpi using PGE2 ELISA kits. PGE2 levels increased after AKI and reached their peak at 5 dpi (n = 3). Data were analyzed by ANOVA, *p<0.05, **p<0.01, ***p<0.001 vs 0 dpi. (D) lhx1a mRNA levels were evaluated by RT-PCR at 7 dpi. (E) The lhx1a mRNA levels in cox2a-/- and WT zebrafish kidneys were assessed by RT-PCR at 7 dpi. (F) The lhx1a mRNA levels were determined by RT-PCR at 7 dpi after injection of EP2 inhibitor TG4-155 or EP4 inhibitor GW627368X (GW). β-actin was used as a sample control in (D–F). (G–O) lhx1a WISH showing the trunk kidney region at 7 dpi (n = 5–7). (G) lhx1a + cell aggregates could not be detected in un-injured (Un-Inj) kidneys. (H) Injury induced the formation of lhx1a+ cell aggregates. Indo (I), NS-398 (J), or Cox2a deficiency (K) inhibited the formation of lhx1a+ cell aggregates. dmPGE2 could rescue the effect of Cox2a deficiency (L). GW627368X inhibited the formation of lhx1a+ cell aggregates (M), and dmPGE2 could not rescue the defect (N). dmPGE2 could promote the formation of lhx1a+ cell aggregates (O). (P) lhx1a+ cell aggregates in uninjured and injured kidneys that were treated with DMSO, COX inhibitors or dmPGE2 were calculated using ImageJ. n = 5–7 in each condition. Data were analyzed by ANOVA, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Confocal stack projection of Tg(fabp10a:GFP;lhx1a:DsRed) transgenic kidney tissue at 4 dpi. RICs were wrapped around and closely interacted with the lhx1a+ cell aggregate (n = 4). Scale bar, 10 μm. (B) Proliferation assay of RICs which wrapped around lhx1a+ cell aggregates at 5 dpi. D, DAPI; Ds, DsRed; E, EdU; G, GFP in the merged image (n = 6). Scale bar, 100 μm. (C) Immunofluorescent staining of Cox2a in kidneys at 0 dpi (Con, control) and 5 dpi. Cox2a was increased at 5 dpi (n = 4). Scale bar, 100 μm. (D, E) qPCR relative quantification of cox1a and cox2 mRNA in kidney tissue harvested at 0, 1, 3, 5, 7, and 9 dpi (n = 3). (F) PGE2 levels of WT and cox2a-/- kidneys were assessed at 0 and 5 dpi using PGE2 ELISA kit (n = 3). Data were analyzed by ANOVA, *p<0.05, **p<0.01, ***p<0.001; ns, no significant difference.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Time-lapse fluorescence microscopy imaging of Tg(fabp10a:GFP;lhx1a:DsRed) juvenile zebrafish revealed the interaction between RICs (arrowheads) and RPC aggregate at 4.6 mm (A), 5.0 mm (B), and 5.3 mm (C) stage. (D, E) Time-lapse microscopy of Tg(fabp10a:GFP;cdh17:DsRed) juvenile zebrafish revealed the behavior of RICs during mesonephros development (n = 4). (D) The RICs occurred upon the pronephric tubule at 5.0 mm stage (n = 4). (E) Mesonephric branch (arrow) occurred upon the pronephric tubule and was wrapped by RICs (arrowheads) at 5.3 mm stage (n = 4). (F) The mesonephric tubule elongated into nascent nephron (arrow) and RICs (arrowheads) formed a network that completely wrapped up the tubule at 5.8 mm stage (n = 4). (G) EdU assay of RICs showed that the RICs were proliferating during mesonephros development (n = 5). Scale bar in (A–C) 50 μm; (D–F) 100 μm; and (G) 50 μm.
 
 To further validate the interaction between RICs and RPCs, we assessed the real-time interaction in the Tg(fabp10a:GFP;cdh17:DsRed) or Tg(fabp10a:GFP; lhx1a:DsRed) juvenile zebrafish using time-lapse fluorescence microscopy imaging technique (Figure 3—figure supplement 2A–F, Figure 3—video 1). During the development of mesonephros from 10 dpf to 16 dpf, RPCs occurred with the pronephric tubules at the 4.6 mm stage (body length; Figure 3—figure supplement 2A) and RICs were detected around the RPC at the 5 mm stage. At this time, the RPCs congregate to form the first cell aggregate (Figure 3—figure supplement 2B and D). During the differentiation of this cell aggregate, more RICs appeared and covered the cell aggregate as a cell network. The RPC aggregate then elongated to form the first mesonephric branch at the 5.3 mm stage, and large numbers of RICs appeared in the direction of elongation (Figure 3—figure supplement 2C and E). Further, the mesonephric tubule elongated and formed the nascent nephron at the 5.8 mm stage, and RICs formed a network that completely wrapped the entire nephron (Figure 3—figure supplement 2F, Figure 3—video 1). As the body grew, other nascent nephrons appeared in the pronephric tubules. RICs repeat the above process to produce new cell networks to wrap nascent nephrons (Figure 2A). This finding demonstrates that the RIC network is a basic element of nephron structure. Furthermore, we also determined the proliferation of RICs during this process, and found a large number of RICs were EdU+, as in regeneration stage (Figure 3—figure supplement 2G), indicating that cell proliferation during nephrogenesis is a source of RICs. The above results indicate that RICs are closely related to nephrogenesis.
 
@@ -65,29 +93,69 @@ In order to analyze the molecular mechanism of nephron regeneration, we performe
 
 Cox2 is a rate-limiting enzyme in PGE2 synthesis (Nørregaard et al., 2015; Poureetezadi et al., 2016). We examined PGE2 levels in kidneys using immunosorbent (ELISA) assay and found that PGE2 was increased significantly during nephron regeneration. The PGE2 levels were about 69.7% higher in injured groups than uninjured control groups at 1 dpi and reached their maximum value at 5 dpi (Figure 3C). This pattern was consistent with the change in cox2a mRNA in the transcriptome analysis (Figure 3A). We next evaluated the expression of cox1, cox2a, and cox2b, the zebrafish cox gene family, by qPCR. The results showed that the expression of cox2a was increased (Figure 3A), whereas cox2b expression was reduced during nephron regeneration. However, cox1 expression remained unaltered (Figure 3—figure supplement 1D and E). Altogether, these results indicate that AKI could induce RICs to specifically express cox2a that increases the synthesis and secretion of PGE2.
 
-## Blockade of the Cox2a-mediated PGE2 synthesis leads to the defective nephron regeneration
+### Blockade of the Cox2a-mediated PGE2 synthesis leads to the defective nephron regeneration
 
 Our results show that RICs, which surround RPC aggregates, highly expressed Cox2a and secreted PGE2, suggesting that PGE2 participates in nephron regeneration. To assess whether endogenous PGE2 participates in nephron regeneration after AKI, we intraperitoneally injected indomethacin (Indo, 200 μM, 10 μL per fish), an inhibitor of both Cox1 and Cox2, at 2, 4, and 6 dpi (Poureetezadi et al., 2016). Whole-mount in situ hybridization (WISH) showed that the number of lhx1a+ cell aggregates was decreased at 7 dpi compared with the control group (Figure 3D, G–I, P). lhx1a expression was also reduced (Figure 3D). These results indicate that suppressing Cox activity restrains nephron regeneration. Given that the cox2a expression was significantly upregulated following AKI (Figure 3A), we infer that Cox2a has a decisive role in PGE2 synthesis during regeneration. To test this, N-(2-cyclohexyloxy-4-nitrophenyl) methane sulfonamide (NS-398, 140 μM, 10 μL per fish), a selective Cox2 inhibitor (Marra et al., 2019), was injected after AKI. As a result, lhx1a expression and the number of lhx1a+ cell aggregates was decreased, as in the Indo-treated group (Figure 3D, J and P).
 
 To further explore these findings, we used a genetic model of Cox2a deficiency to assess the effects of the Cox2a-PGE2 pathway on nephron regeneration. There were no obvious morphological differences between cox2a-/- and wild-type (WT) sibling fish (Li et al., 2019). We next induced AKI in cox2a-/- mutants and found that lhx1a mRNA and the number of lhx1a+ cell aggregates in cox2a-/- kidneys were less than injured WT kidneys at 7 dpi (Figure 3E, K and P), indicating that Cox2a is required for nephron regeneration. We next measured PGE2 level in cox2a-/- kidneys at 5 dpi and found it was significantly lower than that in injured WT kidneys, while no significant differences were detectable between uninjured cox2a-/- and WT groups (Figure 3—figure supplement 1F). Furthermore, we injected the stable PGE2 analog dmPGE2 (600 μM, 10 μL per fish) into injured cox2a-/- kidneys (Goessling et al., 2009; Marra et al., 2019), and observed that the expression of lhx1a and the number of lhx1a+ cell aggregates were restored to the levels in injured WT kidneys at 7 dpi (Figure 3E, H, L and P). To assess the effects of PGE2 on the induction in nephron regeneration, we injected dmPGE2 (600 μM, 10 μL per fish) into WT zebrafish following AKI and observed significant increases in both the expression of lhx1a and the number of lhx1a+ cell aggregates, in comparison with that in DMSO-treated groups at 7 dpi (Figure 3D, O and P), indicating that PGE2 is sufficient for nephron regeneration.
 
-## PGE2–EP4 signaling promotes the proliferation of RPCs during regeneration
+### PGE2–EP4 signaling promotes the proliferation of RPCs during regeneration
 
 During nephron regeneration, RPCs congregate to form cell aggregates, then proliferate rapidly and differentiate into RVs (Diep et al., 2011). Therefore, we tested the proliferation of RPCs by EdU incorporation assay and found that about 43.5% of lhx1a+ RPCs incorporated EdU in the process of proliferation. However, only about 5.5% of lhx1a+ RPCs displayed EdU+ nuclei during RPC aggregation (Figure 4—figure supplement 1A). Next, we observed that the RPCs in the cell aggregate differentiate into square epithelial cells from irregular mesenchymal cells (Figure 4—figure supplement 1B and C). Cadherins responsible for cell–cell adhesion were also increased in the aggregates (Figure 4—figure supplement 1D and E). Notably, the lhx1a+ RPC aggregates remained small in cox2a-/- mutants compared to WT at 5 dpi (Figure 4—figure supplement 1F and G), suggesting that PGE2 signaling mediates the proliferation of RPC aggregates.
 
 To test whether PGE2 affects proliferation of RPCs during nephron regeneration, we assessed the proliferation of RPCs following AKI in adult zebrafish. First, we blocked PGE2 synthesis with Indo or NS-398 after AKI, and analyzed the EdU incorporation of DsRed+ RPCs in cell aggregates in Tg(lhx1a:DsRed) kidneys. The results showed that the number of RPCs in the cell aggregate was about 5–15 cells in the Indo- or NS-398-treated group at 5 dpi (Figure 4—figure supplement 2C and E). Among them, 10.9% of Indo-treated or 11.6% of NS-398-treated lhx1a+ RPCs exhibited EdU+ nuclei (Figure 4—figure supplement 2A–G). Moreover, these aggregates had no epithelial cell morphology as cox2a-/- mutants (Figure 4—figure supplement 2A–F). In contrast, the number of RPCs in DMSO-treated cell aggregates was increased to an average of 47 (Figure 4A, Figure 4Figure 2A), and about 39.9% of lhx1a+ RPCs displayed EdU+ nuclei (Figure 4A, B and K). Furthermore, we found that the number of RPCs in the cell aggregate in the Tg(lhx1a:DsRed)/cox2a-/- kidney was about 11 cells at 5 dpi, with about 10.3% of lhx1a+ RPCs being EdU-positive RPCs. Then, we injected dmPGE2 to Tg(lhx1a:DsRed)/cox2a-/- kidney following AKI. RPC numbers in the cell aggregate were restored to injured WT level at 5 dpi, with about 49.9% of lhx1a+ RPCs incorporating EdU (Figure 4C–F and K). These findings indicate that PGE2 secreted by RICs is required for the proliferation of RPCs during nephron regeneration.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig4-v2.jpg)
+
+**Figure 4.:** Tg(lhx1a:DsRed) fish were injected with EdU to label proliferating nuclei at 5 dpi and kidneys were harvested 3 hr later. (A, B) Gentamicin induced lhx1a+ cell aggregates with proliferating EdU+ nuclei. (C, D) The proliferation of lhx1a+ cell aggregates in cox2a-/- was significantly less than that in WT. (E, F) Intraperitoneal injection of dmPGE2 could promote the proliferation of lhx1a+ cells in cox2a-/-. (G, H) GW627368X inhibited the proliferation of lhx1a+ cells. (I, J) Injection of dmPGE2 could not rescue the GW627368X treatment. n = 5–7 in each condition. Scale bar in (A, C, E, G, I), 50 μm; (B, D, F, H, J), 100 μm. The images on the right showed a higher-magnification image (arrowheads). (K) Proliferation ratio of lhx1a+ RPCs in (A–J) was calculated using ImageJ. n = 5–7 in each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Proliferation ratio of lhx1a+ RPCs in cell aggregates during RPC aggregation or proliferation was calculated using ImageJ. n = 5–7 in each condition. (B, C) Morphology of RPCs during aggregation (B) or differentiation (C) (arrowheads, RPC; n = 3). (D, E) Immunofluorescence staining of Pan-cadherin in Tg(lhx1a:DsRed) zebrafish kidneys showed that Pan-cadherin was hardly detected in lhx1a+ cell aggregates during RPC aggregation (D), whereas the amount of Pan-cadherin could be detected in lhx1a+ cell aggregates during RPCs differentiation (E). n = 3. (F, G) Morphology of RPCs in WT (G) or cox2a-/- (H) kidneys at 5 dpi (n = 3). Scale bar in (B, C, F, G), 50 μm; (D, E), 100 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Tg(lhx1a:DsRed) fish were injected with EdU to label proliferating nuclei at 5 dpi and 3 hr after the injection, the kidneys were harvested. (A, B) Gentamicin induced lhx1a+ cell aggregates with proliferating EdU+ nuclei. NS-398. (C, D) inhibited the proliferation of lhx1a+ cell aggregates. Indo (E, F) inhibited the proliferation of lhx1a+ cell aggregates. Scale bar, 50 μm. The images on the right showed a higher-magnification image (arrowheads). (G) Proliferation ratio of lhx1a+ RPCs was calculated using ImageJ. n = 5–7 in each condition. Data were analyzed by ANOVA, ***p<0.001.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) qPCR relative quantification of PGE2 receptors mRNA in lhx1a+ RPCs. Results for each gene are normalized to ep4b. (B) ep4b whole-mount in situ hybridization (WISH) showing the uninjured or injured zebrafish kidney region. ep4b-labeled cell aggregates at 7 dpi (n = 3). Scale bar, 500 μm.
+
 PGE2 signals through four prostaglandin E receptors (EP1–4) in mammals (Miyoshi et al., 2017). To test which EP receptor mediates PGE2 signaling in RPCs, we obtained DsRed+ RPCs from the Tg(lhx1a:DsRed) transgenic line by FACS at 5 dpi. The qPCR results showed that ep2a and ep4b mRNAs but not ep1, ep3, or ep4a mRNAs were highly expressed in RPCs. Notably, the ep4b expression was about twice than the ep2a level (Figure 4—figure supplement 3A). Furthermore, ep4b was expressed in the RPC aggregates using WISH analyses (Figure 4—figure supplement 3B). We next injected a specific pharmacological inhibitor for EP2 (TG4-155, 400 μM, 10 μL per fish) or EP4 (GW627368X, GW, 200 μM, 10 μL per fish) into WT fish (Baker and Van Der Kraak, 2019). Only the EP4 inhibitor GW627368X blocked nephron regeneration (Figure 3F, M and P). Furthermore, injection of GW627368X restrained the proliferation of RPCs (only about 6.4% hx1a+ RPCs had EdU+ nuclei). Importantly, dmPGE2 did not rescue the GW627368X-induced inhibitory effect on RPC proliferation (Figure 4G–K) and nephron regeneration (Figure 3F, N and P). Taken together, these results indicate that PGE2 promotes nephrogenesis through the EP4 receptor during nephron regeneration.
 
-## PGE2–EP4 signaling promotes nephron regeneration through the PGE2/Wnt interaction
+### PGE2–EP4 signaling promotes nephron regeneration through the PGE2/Wnt interaction
 
 Previous reports have shown that PGE2 signaling promotes the development of hematopoietic stem cells and liver regeneration through the PGE2/Wnt interaction (Goessling et al., 2009; North et al., 2010). To assess whether PGE2–EP4 signaling contributes to nephron regeneration through the Wnt signaling pathway, we tested Wnt activity at 7 dpi. As a result, the expression of lef1, a canonical marker of Wnt signaling activity (Kamei et al., 2019), was increased significantly in the injured kidneys compared with the uninjured kidneys. However, Wnt activity was significantly diminished in injured cox2a-/- kidneys at 7 dpi, but was rescued by the intraperitoneal dmPGE2 injection (Figure 5A). Furthermore, the expression of lef1 was also significantly inhibited by injection of Indo, NS-398, or EP4-specific inhibitor GW627368X, but was significantly enhanced by injection of excessive dmPGE2 (Figure 5—figure supplement 1A). These findings reveal a link between PGE2 and Wnt activity.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig5-v2.jpg)
+
+**Figure 5.:** (A) qPCR relative quantification of lef1 mRNA in kidney tissue of WT and cox2a-/- harvested at 7 dpi. Gene was normalized to the mean expression level in uninjured (Un-Inj) kidneys, which was set to 1. **p<0.01, ***p<0.001; ns, no significant difference (n = 3). (B) FACS-related RT-PCR analysis of wnt4a expression in Tg(lhx1a:DsRed) labeled RPCs at 5 dpi, and wnt4a was expressed in these cells. (C) The wnt4a mRNA levels were assessed by RT-PCR in uninjured or injured kidneys. (D) lhx1a mRNA levels were evaluated by RT-PCR in wnt4a-/- and WT zebrafish kidneys at 7 dpi. β-actin was used as a sample control. (E–H) lhx1a whole-mount in situ hybridization (WISH) showing the trunk kidney region at 7 dpi. (G) the number of lhx1a+ cell aggregates in wnt4a-/- was less than that in WT. (H) Injection of dmPGE2 could rescue the influence of Wnt4a deficiency. (I) lhx1a+ cell aggregates of whole kidney were calculated using ImageJ. n = 5–7 fish for each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference. (J, K) Gentamicin induced lhx1a+ new nephrons with proliferating EdU+ nuclei at 5 dpi (n = 5). (L, M) The proliferation of lhx1a+ cells in wnt4a-/- was significantly less than that in WT (n = 6). (N, O) dmPGE2 could rescue the effect of Wnt4a deficiency and recover the proliferation of lhx1a+ cells in wnt4a-/- (n = 6). (K, M, O) show the higher-magnification images of the boxed areas showed in (J, L, N). Scale bar in (J–O), 100 μm. (G) Proliferation ratio of lhx1a+ RPCs in (J–O) was calculated using ImageJ. n = 5–7 in each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) qPCR relative quantification of lef1 mRNA in kidney tissue harvested at 7 dpi with different treatments (n = 3). Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference.
+
 Genetic studies in mice reported that Wnt/β-catenin signaling plays various roles during kidney development (Pulkkinen et al., 2008). Wnt4, expressed in the nephrogenic cap mesenchyme, induces the condensation of RPCs by mesenchymal to epithelial transition (MET) and also promotes the formation of RVs (Carroll et al., 2005; Kispert et al., 1998; Stark et al., 1994). We sorted lhx1a+ cells by FACS using Tg(lhx1a:DsRed) kidneys at 5 dpi and found that wnt4a, the Wnt4-orthologous gene in zebrafish, was expressed in RPCs (Figure 5B). RT-PCR results indicated that wnt4a transcripts were increased at 5 dpi compared with uninjured kidneys (Figure 5C), indicative of the involvement of Wnt4a in the regeneration of nephrons. Next, we injured wnt4a-/- kidneys and discovered that both lhx1a expression and RPC aggregate number were significantly less than that in injured WT kidneys at 7 dpi (Figure 5D–G). Interestingly, the influence of Wnt4a deficiency was rescued by injection of dmPGE2 (Figure 5D–I). Furthermore, we detected that only about 4.6% of lhx1a+ RPCs showed EdU incorporation in wnt4a-/- kidneys at 5 dpi (Figure 5J–M and P). After dmPGE2 injection, the effects of Wnt4a deficiency on nephron regeneration were eliminated and 42.8% of the lhx1a+ RPCs exhibited EdU+ nuclei. No significant differences were detected in WT kidneys at 5 dpi (Figure 5J–P). Altogether, these findings suggest that RIC-secreted PGE2 cooperates with RPC-secreted Wnt4a to regulate nephron regeneration.
 
-## PGE2 regulates the stability of β-catenin in regenerating RPCs through PKA
+### PGE2 regulates the stability of β-catenin in regenerating RPCs through PKA
 
 In the absence of Wnt ligand, intracellular β-catenin can be degraded by the β-catenin destruction complex formed by Axin, APC, GSK3β, and CK1 (Stamos and Weis, 2013; Cadigan and Waterman, 2012; MacDonald and He, 2012; Ha et al., 2004). To assess whether PGE2 regulates the Wnt signaling pathway through β-catenin destruction complex, we injected a Wnt pathway inhibitor, XAV939, which stimulates β-catenin degradation by stabilizing Axin (Hofsteen et al., 2018). It has been shown that XAV939 can inhibit nephron regeneration (Kamei et al., 2019). We found that the XAV939-mediated nephron regeneration defect could be rescued by the injection of dmPGE2 (Figure 6A, D–G, L). Similarly, the administration of ICRT 14 or ICG-001, the Wnt inhibitor that perturbs the interaction between β-catenin and TCF, impedes the nephron regeneration, which was neither rescued by the dmPGE2 injection (Figure 6B–E, H–L). These findings indicate that PGE2 acts downstream of the β-catenin destruction complex but upstream of the nuclear transcriptional interaction.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) lhx1a mRNA levels were assessed by RT-PCR at 7 dpi. β-actin was used as a sample control. (D–K) lhx1a whole-mount in situ hybridization (WISH) showing the trunk kidney region at 7 dpi. XAV939 (F) could reduce the number of lhx1a + cell aggregates and dmPGE2 could rescue the influence of XAV939 treatment (G); ICRT 14 (H) or ICG-001 (J) could reduce the number of lhx1a+ cell aggregates and dmPGE2 could not rescue the influence of ICRT 14 (I) or ICG-001 (K) treatment. n = 5–7 in each condition. (L) lhx1a+ cell aggregates of whole kidney were calculated using ImageJ. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference. (M–V) Immunofluorescence staining of β-catenin in Tg(lhx1a:DsRed) zebrafish kidneys at 5 dpi. (M, N) Zebrafish injected DMSO as a control group, and the amount of β-catenin could be detected in lhx1a+ cell aggregates during renal progenitor cell (RPC) aggregation (M) or proliferation (N). (O) β-catenin level in lhx1a+ cell aggregates of cox2a-/- was significantly less than the control group, and injection of dmPGE2 (P, Q) could rescue the influence of Cox2a deficiency. (R) β-catenin level in lhx1a+ cell aggregates of wnt4a-/- was significantly less than the control group, and injection of dmPGE2 (S, T) could rescue the influence of Wnt4a deficiency. Injection of PKI (U) could reduce β-catenin level in lhx1a+ cell aggregates, while injection of dmPGE2 (V) could not rescue the influence of PKI treatment. n = 3–6 in (M–V). Scale bar in (M–V), 50 μm. (W) Bar chart depicting β-catenin levels following acute kidney injury (AKI) (M–V). Fluorescent intensities per unit area were measured at the lhx1a+ RPC aggregates using ImageJ. β-catenin levels of lhx1a+ RPCs during RPC aggregation normalized as 1. Ag, aggregation; Pr, proliferation. n = 3–6 in each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Immunofluorescent staining of β-catenin in Tg(lhx1a:DsRed) zebrafish kidneys at 5 dpi. (A, B) Injected DMSO as a control group and the amounts of β-catenin could be detected in lhx1a+ cell aggregates during renal progenitor cell (RPC) aggregation (A) or proliferation (B). Intraperitoneal injection of Indo (C), NS-398 (D), or GW627368X (E) could reduce β-catenin level in lhx1a+ cell aggregates. Injection of H89 (F) could reduce β-catenin level in lhx1a+ cell aggregates, while injection of dmPGE2 (G) could not rescue the influence of H89 treatment (n = 3–6). Scale bar, 50 μm. (H) Bar chart depicting β-catenin levels following acute kidney injury (AKI) (M–V). Fluorescent intensities per unit area were measured at the lhx1a+ RPC aggregates using ImageJ. β-catenin levels of lhx1a+ RPCs during RPC aggregation normalized as 1. Ag, aggregation; Pr, proliferation. n = 3–6 in each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–E) Immunostaining imaging analyses displaying the nuclear β-catenin and lhx1a in FACS-sorted RPCs from kidney following acute kidney injury (AKI) in WT, cox2a-/- mutants and wnt4a-/- mutants, as well as dmPGE2-treated cox2a-/- and wnt4a-/- mutants. (F) Bar chart depicting the quanbtifications of β-catenin levels in (A–E). Fluorescent intensities per unit area were measured at the lhx1a+ RPCs using ImageJ. β-catenin levels of WT at 5 dpi normalized as 1. n = 5. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference. Scale bar, 10 μm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Immunofluorescent staining of Pax2a and fluorescence in situ hybridization of lef1 in zebrafish kidneys at 5 dpi. Pax2a labeled renal tubules and renal progenitor cells (RPCs), and localized in the nucleus. (A, B) Injected DMSO as a control group and the amounts of lef1 could be detected in lhx1a+ cell aggregates during RPC aggregation (A) or proliferation (B). (C) lef1 level in lhx1a+ cell aggregates of cox2a-/- was significantly less than the control group, and injection of dmPGE2 (D, E) could rescue the influence of Cox2a deficiency. (F) lef1 level in lhx1a+ cell aggregates of wnt4a-/- was significantly less than the control group, and injection of dmPGE2 (G, H) could rescue the influence of Wnt4a deficiency. n = 3 in (A–H). Scale bar, 100 μm. (I) Bar chart depicting lef1 levels following acute kidney injury (AKI) (A–H). Fluorescent intensities per unit area were measured at the lhx1a+ RPC aggregates using ImageJ. lef1 levels of lhx1a+ RPCs during RPC aggregation normalized as 1. Ag, aggregation; Pr, proliferation. Data are mean ± SD, n = 3 in each condition.
 
 Next, we tested the β-catenin protein level in the RPC aggregates following AKI by immunofluorescence and observed the enrichment of β-catenin during RPC aggregation or proliferation (Figure 6M, N and W). On the contrary, β-catenin was hardly detected in the RPC aggregates in the injured cox2a-/- mutant kidney (Figure 6O and W). The administration of Indo-, NS-398-, or GW627368X of injured WT kidneys also decreased β-catenin in the regenerating RPC aggregates (Figure 6—figure supplement 1A–D and H). However, the injection of dmPGE2 into the cox2a-/- kidneys rescued the loss of β-catenin in the lhx1a+ RPC aggregates following AKI (Figure 6P, Q and W). Furthermore, we found that β-catenin was less in wnt4a-/- RPC aggregates than WT aggregates at 5 dpi and that injection of dmPGE2 restored partially the β-catenin level in wnt4a-/- RPC aggregates (Figure 6R–T and W). To more clearly demonstrate the subcellular location of β-catenin, we sorted out the RPCs and performed β-catenin immunofluorescence. We observed that nuclear β-catein was significantly reduced in cox2a-/- or wnt4a-/- RPCs compared to WT RPCs, and dmPGE2 treatment can restored the reduced β-catein in these mutants (Figure 6—figure supplement 2A–F). To further prove that the change of nuclear β-catenin level affects the Wnt signal activity, we used fluorescence in situ hybridization (FISH) to detect the change of the Wnt/β-catenin target gene lef1. FISH analyses showed that the reduced Wnt/β-catenin signaling in cox2a-/-and wnt4a-/- mutants caused a decrease in lef1 expression in RPC aggregates, and dmPGE2 treatment rescued the reduced lef1 expression (Figure 6—figure supplement 3A–I). Altogether, these results indicate that PGE2–EP4 signaling regulates Wnt activity in the lhx1a+ RPC aggregate by regulating nuclear β-catenin levels during nephron regeneration.
 
@@ -95,7 +163,7 @@ It has been shown that PGE2 can stabilize β-catenin through the cAMP-PKA (cycli
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/81438/elife-81438-fig7-v2.jpg)
 
-**Figure 7.:** (A, B) lhx1a mRNA levels were evaluated by RT-PCR at 7 dpi. β-actin was used as a sample control. (C–H) lhx1a whole-mount in situ hybridization (WISH) showing the trunk kidney region at 7 dpi. PKI (E) or H89 (G) treatment reduced the number of lhx1a cell aggregates, while injection of dmPGE2 could not rescue the influence of PKI (+F) or H89 (H) treatment. (I) lhx1a cell aggregates of whole kidney were calculated using ImageJ. n = 5–7 in each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference. (+J–N) Immunofluorescence staining of p-S9-GSK3β (arrowheads) in Tg(lhx1a:DsRed) zebrafish kidneys at 5 dpi. (J, K) Zebrafish injected with DMSO as a control group, and the amount of p-S9-GSK3β could be detected in lhx1a cell aggregates cytoplasm during RPC aggregation (+J) or proliferation (K). (L) p-S9-GSK3β in lhx1a cell aggregates of +cox2a was hardly detectable, and injection of dmPGE2 (-/-M, N) could rescue the influence of Cox2a deficiency. Injection of PKI (O) could reduce p-S9-GSK3β level in lhx1a cell aggregates, while injection of dmPGE2 (+P) could not rescue the influence of PKI treatment. (Q–W) Immunofluorescence staining of p-S675-β-catenin in Tg(lhx1a:DsRed) zebrafish kidneys at 5 dpi. (Q, R) Injection of DMSO as a control group and amounts of p-S675-β-catenin could be detected in lhx1a cell aggregates during RPC aggregation (+Q) or proliferation (R). (S) p-S675-β-catenin level in lhx1a cell aggregates of +cox2a was hardly detectable, and injection of dmPGE2 (-/-T, U) could rescue the influence of Cox2a deficiency. Injection of PKI (V) could reduce p-S675-β-catenin level in lhx1a cell aggregates, while injection of dmPGE2 (+W) could not rescue the influence of PKI treatment. Scale bar, 50 μm. (X, Y) Bar chart depicting p-S9-GSK3β (X) and p-S675-β-catenin (Y) levels following acute kidney injury (AKI) (J–W). Fluorescent intensities per unit area were measured at the lhx1a RPC aggregates using ImageJ. p-S9-GSK3β or p-S675-β-catenin levels of +lhx1a RPCs during RPC aggregation normalized as 1. Ag, aggregation; Pr, proliferation. n = 3–6 in each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference.+Figure 7—source data 1.Figure 7A and B.Figure 7—source data 2.Figure 7I, X, and Y.
+**Figure 7.:** (A, B) lhx1a mRNA levels were evaluated by RT-PCR at 7 dpi. β-actin was used as a sample control. (C–H) lhx1a whole-mount in situ hybridization (WISH) showing the trunk kidney region at 7 dpi. PKI (E) or H89 (G) treatment reduced the number of lhx1a+ cell aggregates, while injection of dmPGE2 could not rescue the influence of PKI (F) or H89 (H) treatment. (I) lhx1a+ cell aggregates of whole kidney were calculated using ImageJ. n = 5–7 in each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference. (J–N) Immunofluorescence staining of p-S9-GSK3β (arrowheads) in Tg(lhx1a:DsRed) zebrafish kidneys at 5 dpi. (J, K) Zebrafish injected with DMSO as a control group, and the amount of p-S9-GSK3β could be detected in lhx1a+ cell aggregates cytoplasm during RPC aggregation (J) or proliferation (K). (L) p-S9-GSK3β in lhx1a+ cell aggregates of cox2a-/- was hardly detectable, and injection of dmPGE2 (M, N) could rescue the influence of Cox2a deficiency. Injection of PKI (O) could reduce p-S9-GSK3β level in lhx1a+ cell aggregates, while injection of dmPGE2 (P) could not rescue the influence of PKI treatment. (Q–W) Immunofluorescence staining of p-S675-β-catenin in Tg(lhx1a:DsRed) zebrafish kidneys at 5 dpi. (Q, R) Injection of DMSO as a control group and amounts of p-S675-β-catenin could be detected in lhx1a+ cell aggregates during RPC aggregation (Q) or proliferation (R). (S) p-S675-β-catenin level in lhx1a+ cell aggregates of cox2a-/- was hardly detectable, and injection of dmPGE2 (T, U) could rescue the influence of Cox2a deficiency. Injection of PKI (V) could reduce p-S675-β-catenin level in lhx1a+ cell aggregates, while injection of dmPGE2 (W) could not rescue the influence of PKI treatment. Scale bar, 50 μm. (X, Y) Bar chart depicting p-S9-GSK3β (X) and p-S675-β-catenin (Y) levels following acute kidney injury (AKI) (J–W). Fluorescent intensities per unit area were measured at the lhx1a+ RPC aggregates using ImageJ. p-S9-GSK3β or p-S675-β-catenin levels of lhx1a+ RPCs during RPC aggregation normalized as 1. Ag, aggregation; Pr, proliferation. n = 3–6 in each condition. Data were analyzed by ANOVA, ***p<0.001; ns, no significant difference.
 
 ## Discussion
 
@@ -113,66 +181,377 @@ Overall, our study enriches the understanding of the PGE2/Wnt signaling interact
 
 ## Materials and methods
 
-## Zebrafish
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>cox2a</td>
+      <td>GenBank</td>
+      <td>NM_153657.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>cox1</td>
+      <td>GenBank</td>
+      <td>NM_153656.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>cox2b</td>
+      <td>GenBank</td>
+      <td>NM_001025504.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>ep1</td>
+      <td>GenBank</td>
+      <td>NM_001166330.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>ep2a</td>
+      <td>GenBank</td>
+      <td>NM_200635.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>ep3</td>
+      <td>GenBank</td>
+      <td>XM_017356646.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>ep4a</td>
+      <td>GenBank</td>
+      <td>NM_001039629.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>ep4b</td>
+      <td>GenBank</td>
+      <td>NM_001128367.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>wnt4a</td>
+      <td>GenBank</td>
+      <td>NM_001040387.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>lhx1a</td>
+      <td>GenBank</td>
+      <td>NM_131216.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>lef1</td>
+      <td>GenBank</td>
+      <td>NM_131426.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>epoa</td>
+      <td>GenBank</td>
+      <td>NM_001038009.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>AB</td>
+      <td>Laboratory resources</td>
+      <td>Labs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tg(fabp10a:GFP)</td>
+      <td>Laboratory resources</td>
+      <td>Labs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tg(lhx1a:DsRed)</td>
+      <td>This study</td>
+      <td></td>
+      <td>methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tg(cdh17:DsRed)</td>
+      <td>This study</td>
+      <td></td>
+      <td>methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>wnt4a-/-</td>
+      <td>Chinese National Zebrafish Resource Center (Wuhan, China)</td>
+      <td>fh294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>cox2a-/-</td>
+      <td>Li et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cox2 (goat polyclonal)</td>
+      <td>Cayman, 100034-lea</td>
+      <td>RRID:AB_10078977</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-catenin (mouse monoclonal)</td>
+      <td>Sigma, C7207</td>
+      <td>RRID:AB_2086128</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-Ser9-GSK3 beta (rabbit polyclonal)</td>
+      <td>Abcam, ab107166</td>
+      <td>RRID:AB_476865</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-β-catenin (ser675) (D2F1) XP (rabbit monoclonal)</td>
+      <td>CST, 4176T</td>
+      <td>RRID:AB_1903923</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pax2a (rabbit polyclonal)</td>
+      <td>Abcam, ab229318, Chen et al., 2019</td>
+      <td></td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pan-cadherin (rabbit polyclonal)</td>
+      <td>Sigma, C3678</td>
+      <td>RRID:AB_258851</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG H&amp;L Alexa Fluor 647 (goat polyclonal)</td>
+      <td>Abcam, ab150115</td>
+      <td>RRID:AB_2687948</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat IgG (Alexa Fluor 647) (donkey polyclonal)</td>
+      <td>Abcam, ab150131</td>
+      <td>RRID:AB_2732857</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L) Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Invitrogen, A11008</td>
+      <td>RRID:AB_143165</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L) Alexa Fluor 633 (goat polyclonal)</td>
+      <td>Invitrogen, A21070</td>
+      <td>RRID:AB_2535731</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Indomethacin</td>
+      <td>Sigma</td>
+      <td>I7378-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NS-398</td>
+      <td>Sigma</td>
+      <td>N194-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TG4-155</td>
+      <td>Selleck</td>
+      <td>S6793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dmPGE2</td>
+      <td>Sigma</td>
+      <td>D0160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GW627368X</td>
+      <td>TOPSCIENCE</td>
+      <td>T1978</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XAV939</td>
+      <td>Selleck</td>
+      <td>S1180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ICRT 14</td>
+      <td>MCE</td>
+      <td>HY-16665</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ICG-001</td>
+      <td>MCE</td>
+      <td>HY-14428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H89 (dihydrochloride)</td>
+      <td>MCE</td>
+      <td>HY-15979A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PKA Inhibitor Fragment (6-22) amide (TFA)</td>
+      <td>MCE</td>
+      <td>HY-P1290A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism (version 8.02)</td>
+      <td>GraphPad Prism, version 8.02</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel 2019</td>
+      <td>Microsoft, version office home and student 2019</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ for Windows, V 1.8.0</td>
+      <td>National Institutes of Health</td>
+      <td>RRID:SCR_001935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI Stain Solution</td>
+      <td>Beyotime</td>
+      <td>C1002</td>
+      <td>For nucleic acid staining</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish
 
 Zebrafish embryos, larvae, and adults were produced, grown, and maintained according to standard protocols described in the zebrafish book. For experiments with adult zebrafish, animals ranging in age from 3 to 12 months were used. Zebrafish were maintained in standard conditions under a 14-hr-light and 10-hr-dark cycle and fed twice daily. Zebrafish were anesthetized using 0.0168% buffered tricaine (MS-222, Sigma). AB strain of zebrafish is used as the wild-type (WT). The following zebrafish lines were used in this study: Tg(fabp10a:GFP) (Her et al., 2003); cox2a-/- (Li et al., 2019); wnt4a-/- (fh294) was purchased from the Chinese National Zebrafish Resource Center (Wuhan, China); and Tg(cdh17:DsRed) and Tg(lhx1a:DsRed) were constructed in this study.
 
-## Generation of Tg(lhx1a:DsRed) transgenic line
+### Generation of Tg(lhx1a:DsRed) transgenic line
 
 We obtained the lhx1a:EGFP/pI-SceI plasmid from Dr. Neil A Hukdiede (Swanhart et al., 2010), substituted DsRed for EGFP using ClonExpress II One Step Cloning Kit (Vazyme, C112-01), and constructed lhx1a:DsRed/pI-SceI plasmid. Then, 30 pg of lhx1a:DsRed/pI-SceI plasmid DNA was injected into one-cell-stage embryos along with the I-SceI restriction enzyme (NEB, R0694S). These injected embryos were raised to adulthood and screened for DsRed expression in known lhx1a expression domains, and a stable Tg(lhx1a:DsRed) transgenic line was isolated.
 
-## Generation of Tg(cdh17:DsRed) transgenic line
+### Generation of Tg(cdh17:DsRed) transgenic line
 
 Promoters of cadherin-17 (cdh17) (–4.3k) were amplified from zebrafish genomic DNA by PCR and constructed cdh17:DsRed/pI-SceI plasmids (Liao et al., 2021). These injected embryos were raised to adulthood and screened for DsRed expression in known cdh17 expression domains, and isolated stable Tg(cdh17:DsRed) transgenic line was constructed.
 
-## Zebrafish AKI model
+### Zebrafish AKI model
 
 Intraperitoneal injection of gentamicin was used to induce AKI as previously described (Chen et al., 2019). In brief, gentamicin (2.7 μg/μL, 20 μL per fish) diluted in water was intraperitoneally injected in WT or other zebrafish lines. Each injected zebrafish was then dropped into an individual container. The fish excreting proteinuria at 1 dpi was used for subsequent experiments.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 Kidney cells from six randomly selected 6-month-old zebrafish were loaded into Chromium microfluidic chips with 30v chemistry and barcoded with a 10× Chromium Controller (10X Genomics). RNA from the barcoded cells was subsequently reverse-transcribed and sequencing libraries were constructed with reagents from a Chromium Single Cell 30v3 reagent kit (10X Genomics) according to the manufacturer’s instructions. Sequencing was performed on an Illumina (NovaSeq) platform according to the manufacturer’s instructions (Illumina). The Seurat package was used for data normalization, dimensionality reduction, clustering, and differential expression. We used Seurat alignment method canonical correlation analysis (Butler et al., 2018) for integrated analysis of datasets. For clustering, highly variable genes were selected and the principal components based on those genes were used to build a graph, which was segmented with a resolution of 0.6. GO enrichment analysis of marker genes was implemented using the cluster Profiler R package, in which gene length bias was corrected. GO terms with corrected p-values <0.05 were considered significantly enriched by the marker gene of interest. Sequencing data have been deposited in GEO under accession code GSE183382.
 
-## Transcriptome sequencing
+### Transcriptome sequencing
 
 Six-month-old zebrafish were used for RNA sequencing. Kidney samples were obtained at 0, 1, 3, 5, and 7 dpi and RNA was isolated from kidney tissue using TRIzol reagent (Invitrogen, 15596018) according to the manufacturer’s protocol. A total amount of 1 μg RNA per sample was used as input material for the RNA sample preparations. Sequencing libraries were generated using NEB Next Ultra RNA Library Prep Kit for Illumina (NEB, USA) following the manufacturer’s recommendations and index codes were added to attribute sequences to each sample. The clustering of the index-coded samples was performed on a cBot Cluster Generation System using TruSeq PE Cluster Kit v3-cBot-HS (Illumia) according to the manufacturer’s instructions. After cluster generation, the library preparations were sequenced on an Illumina NovaSeq platform and 150 bp paired-end reads were generated. Raw data (raw reads) of fastq format were firstly processed through in-house Perl scripts. In this step, clean data (clean reads) were obtained by removing reads containing adapter, reads containing ploy-N and low-quality reads from raw data. At the same time, Q20, Q30, and GC content, the clean data were calculated. All the downstream analyses were based on the clean data with high quality. The mapped reads of each sample were assembled by StringTie (v1.3.3b) (Pertea et al., 2015) in a reference-based approach. FeatureCounts v1.5.0-p3 was used to count the reads numbers mapped to each gene. And then FPKM (expected number of fragments per kilobase of transcript sequence per million base pairs sequenced) of each gene was calculated based on the length of the gene and reads count mapped to this gene. Differential expression analysis of two conditions/groups (three biological replicates per condition) was performed using the DESeq2 R package (1.16.1). The resulting p-values were adjusted using the Benjamini and Hochberg’s approach for controlling the false discovery rate. Genes with an adjusted p-value<0.05 found by DESeq2 were assigned as differentially expressed. Sequencing data have been deposited in GEO under accession code GSE191068.
 
-## ELISA for PGE2
+### ELISA for PGE2
 
 ELISA for PGE2 was conducted using a Prostaglandin E2 ELISA Kit (D751014-0048, BBI) according to the manufacturer’s instructions. Briefly, kidneys were collected from 20 weight-matched fish, washed in ice-cold phosphate-buffered saline (PBS), and homogenized in 500 μL PBS. Homogenate was spun down at 12,000 rpm for 10 min at 4°C to eliminate particulate, and the supernatant was collected for ELISA. Assays were run in technical triplicate.
 
-## Inhibitor treatment
+### Inhibitor treatment
 
 During the nephron regeneration stage, the Indo (I7378-5G, Sigma; 400 μM, 10 μL per fish), NS-398 (N194-5MG, Sigma; 140 μM, 10 μL per fish), TG4-155 (S6793, Selleck; 400 μM, 10 μL per fish), dmPGE2 (D0160, Sigma; 600 μM, 10 μL per fish), GW627368X (T1978, TOPSCIENCE; 200 μM, 10 μL per fish), XAV939 (S1180, Selleck; 200 μM, 10 μL per fish), ICRT 14 (HY-16665, MCE; 10 μM, 10 μL per fish), ICG-001 (HY-14428, MCE; 100 μM, 10 μL per fish), PKI (HY-P1290A, MCE; 20 μM, 10 μL per fish), and H89 (HY-15979, MCE; 200 μM, 10 μL per fish) were intraperitoneally injected into zebrafish at 2, 4, and 6 dpi. Kidneys were collected at 7 dpi for RNA extraction, WISH, or immunofluorescence. For the 5 dpi test, inhibitors were injected at 2 and 4 dpi, and samples were collected at 5 dpi; 1% DMSO was injected in control groups with the same conditions. For juvenile zebrafish experiments, dmPGE2 (2 μM in egg water) was used to test the influence on mesonephros development. 0.2% DMSO was used in control groups under the same conditions.
 
-## WISH
+### WISH
 
 WISH was performed as previously described using lhx1a and ep4b probes (Chen et al., 2019). Briefly, fish with internal organs and hands removed were fixed overnight in 4% paraformaldehyde. Fixed kidneys were removed from body and permeabilized with proteinase K (10 μg/mL, Roche) in PBT (0.1% tween-20 in PBS) for 1 hr with rocking. Digoxigenin-labeled riboprobes were generated from cDNA fragments comprising the sequences of zebrafish lhx1a or ep4b probe. Hybridization was performed as previously described (Chen et al., 2019). Anti-DIG AP antibody and NBT/BCIP substrate (Roche) were used to detect the probe. After the color reaction, images were taken using a BX3-CBH microscope (Olympus, Japan).
 
-## Fluorescence in situ hybridization
+### Fluorescence in situ hybridization
 
 Fluorescence in situ hybridization was performed as previously described using lef1 probes (He et al., 2020). Briefly, fish with internal organs and hands removed were fixed overnight in 4% paraformaldehyde. kidneys were harvested and embedded in OCT to obtain frozen-sections at 100 μm. Sections permeabilized with proteinase K (10 μg/mL, Roche) in PBT for 20 min with rocking. Digoxigenin-labeled riboprobes were generated from cDNA fragments comprising the sequences of zebrafish lef1 probe (F: 5′-ATGCCGCAGTTGTCAGGTG-3′, R: 5′-CGCTTTCCTCCATTGTTCAGATG-3′). Hybridization was performed as previously described (He et al., 2020). Anti-DIG POD antibody (11207733910, Roche) and TSA plus fluorescein system (NEL741001KT, PerkinElmer) were used to detect the probe. Fluorescent intensities per unit area were measured using ImageJ.
 
-## EdU assay
+### EdU assay
 
 A Click-iT Plus EDU Alexa Fluor 647 Imaging Kit (C10640, Invitrogen) was used to detect cell proliferation in juvenile zebrafish or sections of kidney. Briefly, EdU solution (200 mM, 10 μL per fish) was intraperitoneally injected into fish. After 3 hr, kidneys were obtained and proliferation measurements were performed. Quantification of EdU was performed in a blinded manner using ImageJ, Briefly, 4-square mm kidney images were taken randomly. Subsequently, Total number of lhx1a+ cells and lhx1a+ EdU+ cells were calculated for further study. Images were marked so that the person performing the analysis was unaware of the treatment conditions for each sample prior to calculation.
 
-## Semi-quantitative RT-PCR and quantitative PCR
+### Semi-quantitative RT-PCR and quantitative PCR
 
 RNA was isolated from kidney tissue using TRIzol reagent (15596018, Invitrogen) according to the manufacturer’s protocol. A Prime Script II first-strand cDNA Synthesis Kit (9767, Takara) was used to synthesize cDNA, which was then subjected to PCR using Taq Master Mix (p112-01, Vazyme) for RT-PCR or TB Green Premix EX Taq II (Takara, RR820A) for quantitative PCR. The following primers were used: lhx1a (F: gacaggtttctccttaatgttc, R: CTTTCAGTGTCTCCAGTTGC); cox2a, (F: CGCTATATCCTGTTGTCAAGG, R: gatggtctcaccaatcagg); col1a1b, (F: GGTTCTGCTGGTAACGATGG, R: CCAGGCATTCCAATAAGACC); col1a2, (F: CTGGTAAAGATGGTTCAAATGG, R: CACCTCGTAATCCTTGGCT); lef1 Kamei et al., 2019; cox1 and cox2b (FitzSimons et al., 2020). The primers for ep1a were QF: AAATGTCACCTCGAGCAGAC, QR: ACAGGAGAAAGGCCTTGGAT; those for ep4b were QF: ATCGTTCTCATAGCCACGTCCACT, QR: CCGGGTTTGGTCTTGCTGATGAAT, other eps primers were as previously described (FitzSimons et al., 2020). β-actin (Chen et al., 2019) or rpl13a (FitzSimons et al., 2020) were used to standardize samples.
 
-## FACS
+### FACS
 
 To obtain RNA libraries of lhx1a+ cells or RICs, Tg(lhx1a:DsRed) or Tg(fabp10a:GFP;cdh17:DsRed) kidney cells from 10 fish were manually dissected in 1% PBS and 0.005% trypsin-EDTA solution at 0 or 5 dpi. Cells of interested were sorted using MoFlo XDP (Beckman) and collected for RNA extraction.
 
-## Immunofluorescence
+### Immunofluorescence
 
 For immunofluorescent analysis, kidneys were harvested and fixed in 4% formaldehyde overnight at 4°C, and then embedded in OCT (optimal cutting temperature compound) to obtain frozen-sections at 100 μm on Micron HM550 cryostat. The primary antibodies used were anti-Cox2 (100034-lea, Cayman), anti-Pax2a (ab229318, Abcam), anti-β-catenin (C7207, Sigma), anti-p-Ser9-GSK3 beta (ab107166, Abcam), anti-Pan-cadherin (C3678, Sigma), and anti-phospho-β-catenin (ser675) (D2F1) XP Rabbit mab (4176T, CST). The secondary antibodies used goat anti-mouse IgG H&L Alexa Fluor 647 (ab150115, Abcam), donkey anti-goat IgG Alexa Fluor 647 (ab150131, Abcam), goat anti-rabbit IgG (H+L) Alexa Fluor 633 (A11008, Invitrogen), and goat anti-rabbit IgG (H+L) Alexa Fluor 488 (A21070, Invitrogen), at 1:500. Images were taken using the Nikon A1 confocal microscope. Fluorescent intensities per unit area were measured using ImageJ.
 
-## Nile red staining
+### Nile red staining
 
 For Nile red staining, Tg(fabp10a:GFP) kidneys were harvested and fixed in 4% formaldehyde overnight at 4°C, and then embedded in OCT to obtain frozen-sections at 10 μm on Micron HM550 cryostat. Sections were incubated for 5 min in 1 μM Nile red-PBS buffer at room temperature and then washed three times using PBS. Images were taken using the Nikon A1 confocal microscope.
 
-## Statistics
+### Statistics
 
 All data are presented as means ± standard deviation (SD). Unless otherwise specified, all experiments were carried out using more than three independent replicates. Statistical analysis was performed using GraphPad Prism (version 8.02) and Excel (version, Microsoft office home and student 2019) for Microsoft Windows. Data were analyzed by ANOVA, *p<0.05, **p<0.01, ***p<0.001; ns, no significant difference.

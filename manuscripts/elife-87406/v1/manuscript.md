@@ -14,16 +14,16 @@
 
 ### Affiliations
 
-1. https://ror.org/02bfwt286 Department of Infectious Diseases, Central Clinical School, Monash University Melbourne Australia
-2. https://ror.org/04scfb908 Microbiology Unit, Alfred Health Melbourne Australia
-3. https://ror.org/0168r3w48 Department of Bioengineering, University of California, San Diego San Diego United States
-4. https://ror.org/00a0jsq62 Department of Infection Biology, London School of Hygiene & Tropical Medicine London United Kingdom
+1. Department of Infectious Diseases, Central Clinical School, Monash University Melbourne Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+2. Microbiology Unit, Alfred Health Melbourne Australia ([ROR:04scfb908](https://ror.org/04scfb908))
+3. Department of Bioengineering, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+4. Department of Infection Biology, London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
 
 † Corresponding author
 
 ## Abstract
 
-Metabolic capacity can vary substantially within a bacterial species, leading to ecological niche separation, as well as differences in virulence and antimicrobial susceptibility. Genome-scale metabolic models are useful tools for studying the metabolic potential of individuals, and with the rapid expansion of genomic sequencing there is a wealth of data that can be leveraged for comparative analysis. However, there exist few tools to construct strain-specific metabolic models at scale. Here, we describe Bactabolize , a reference-based tool which rapidly produces strain-specific metabolic models and growth phenotype predictions. We describe a pan reference model for the priority antimicrobial-resistant pathogen, Klebsiella pneumoniae , and a quality control framework for using draft genome assemblies as input for Bactabolize. The Bactabolize-derived model for K. pneumoniae reference strain KPPR1 performed comparatively or better than currently available automated approaches CarveMe and gapseq across 507 substrate and 2317 knockout mutant growth predictions. Novel draft genomes passing our systematically defined quality control criteria resulted in models with a high degree of completeness (≥99% genes and reactions captured compared to models derived from matched complete genomes) and high accuracy (mean 0.97, n=10). We anticipate the tools and framework described herein will facilitate large-scale metabolic modelling analyses that broaden our understanding of diversity within bacterial species and inform novel control strategies for priority pathogens.
+Metabolic capacity can vary substantially within a bacterial species, leading to ecological niche separation, as well as differences in virulence and antimicrobial susceptibility. Genome-scale metabolic models are useful tools for studying the metabolic potential of individuals, and with the rapid expansion of genomic sequencing there is a wealth of data that can be leveraged for comparative analysis. However, there exist few tools to construct strain-specific metabolic models at scale. Here, we describe Bactabolize, a reference-based tool which rapidly produces strain-specific metabolic models and growth phenotype predictions. We describe a pan reference model for the priority antimicrobial-resistant pathogen, Klebsiella pneumoniae, and a quality control framework for using draft genome assemblies as input for Bactabolize. The Bactabolize-derived model for K. pneumoniae reference strain KPPR1 performed comparatively or better than currently available automated approaches CarveMe and gapseq across 507 substrate and 2317 knockout mutant growth predictions. Novel draft genomes passing our systematically defined quality control criteria resulted in models with a high degree of completeness (≥99% genes and reactions captured compared to models derived from matched complete genomes) and high accuracy (mean 0.97, n=10). We anticipate the tools and framework described herein will facilitate large-scale metabolic modelling analyses that broaden our understanding of diversity within bacterial species and inform novel control strategies for priority pathogens.
 
 ## Introduction
 
@@ -39,9 +39,29 @@ Here, we present Bactabolize (Watts et al., 2023), an easy-to-use tool which all
 
 ## Results
 
-## Description of Bactabolize
+### Description of Bactabolize
 
 Bactabolize is written in Python 3 and utilises the metabolic modelling library COBRApy (Ebrahim et al., 2013). Bactabolize has four main commands:
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig1-v1.jpg)
+
+**Figure 1.:** In pink is the draft_model command, which builds a draft strain-specific metabolic model using an input reference model and an input target assembly (approach adapted from Norsigian et al., 2020). If the model fails to simulate growth, Bactabolize will attempt automated gap-filling and produce a model patch file. The patch_model command (orange) allows the addition of missing reactions to produce a valid draft model that can simulate growth in a user-specified growth environment. A functioning model can be passed to the fba command (yellow), which performs Flux Balance Analysis to simulate growth in the user specified conditions, across all carbon, nitrogen, phosphorus, and sulphur metabolite sources supported by the model under aerobic and anerobic conditions. The sgk command (blue) shows the single-gene knockout analysis, which outputs a predicted phenotype. User inputs and outputs are shown in white boxes while Bactabolize commands are shown inside the grey box. Additional graphics can be found in Figure 1—figure supplements 1–4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Input and output files are shown in light pink while Bactabolize processes are shown in dark pink. Third-party dependencies are indicated within the white boxes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Input and output files are shown in light orange while Bactabolize processes are shown in dark orange. Third-party dependencies are indicated within the white boxes.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Input and output files are shown in light yellow while Bactabolize processes are shown in dark yellow. Third-party dependencies are indicated within white boxes. C, carbon; N, nitrogen, P, phosphorus; S, sulphur; O2, oxygen.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Input and output files are shown in light blue while Bactabolize processes are shown in dark blue. Third-party dependencies are indicated within white boxes.
 
 Additional processing scripts are provided alongside Bactabolize to improve model metadata annotation (improve_model_annotations.py), convert models generated using KBase and ModelSEED to Bactabolize/BiGG-compatible format (SEED_to_BiGG_model_convert.sh), generate network graph files from models (model_to_network_graph.py) and merging output FBA profiles (merge_fba_profiles_longtable.sh). Full documentation including example code and test data are available at the Bactabolize code repository (Watts et al., 2023).
 
@@ -55,15 +75,23 @@ Substrate usage analysis (the fba command) is performed iteratively for each pos
 
 The growth impacts of single-gene knockout mutations can be simulated via the sgk command (Figure 1—figure supplement 4). Bactabolize will iterate through every gene in the model, temporarily removing it and its associated reactions (unless they are also associated with another gene) and running FBA to simulate growth in the user-specified conditions. The output is comparable to single-gene knockout studies such as transposon mutagenesis and can be used to probe gene essentiality.
 
-## KpSC pan-metabolic reference model
+### KpSC pan-metabolic reference model
 
 We constructed a species complex-specific pan-metabolic reference model by combining a collection of 37 manually curated models for which we have previously demonstrated high accuracy (range 88.3–96.8% for prediction of 94 distinct growth phenotypes, Hawkey et al., 2022). These models represent a diverse collection of KpSC (Hawkey et al., 2022) (including at least one each of the seven major taxa in the complex; K. pneumoniae, Klebsiella variicola subsp variicola, Klebsiella variicola subsp tropica, Klebsiella quasipneumoniae subsp quasipneumoniae, Klebsiella quasipneumoniae subsp similipneumoniae, Klebsiella quaisivariicola, Klebsiella africana). The combined pan-model, known as KpSC-pan v1, comprises a total of 1265 distinct genes, 2319 reactions, and 1696 metabolites, and is available on GitHub (Vezina et al., 2023).
 
-## Performance comparison
+### Performance comparison
 
 We compared the output and performance of Bactabolize to the two previously published tools that can support high-throughput analyses, that is CarveMe (Machado et al., 2018) and gapseq (Zimmermann et al., 2021a). To aid interpretation in the context of community standard approaches, we also include a comparison to the popular web-based reconstruction tool, KBase (ModelSEED), and a manually curated metabolic reconstruction of K. pneumoniae strain KPPR1 (also known as VK055 and ATCC 43816, metabolic model named iKp1289) (Henry et al., 2017). This isolate was chosen as there is a completed genome sequence (Genbank accession: CP009208), single-source growth phenotype (Henry et al., 2017), and single-gene knockout growth essentiality data available (Short et al., 2020). De novo draft models for strain KPPR1 were built using: (i) Bactabolize with the KpSC pan v1 reference; (ii) CarveMe, with its universal reference model (CarveMe universal); (iii) CarveMe, with KpSC-pan v1 reference (CarveMe KpSC pan); (iv) gapseq; and (v) KBase (ModelSEED). Importantly, neither K. pneumoniae KPPR1 nor its genetic lineage (seven gene multi-locus sequence type, ST493) are represented in the KpSC pan reference model, meaning these benchmarking comparisons were on equal footing. Subsequently, each model was used to predict growth phenotypes: (i) in M9 minimal media with different sole sources of carbon, nitrogen, phosphorus, and sulphur; and (ii) for all possible single-gene knockouts in LB under aerobic conditions. The predicted phenotypes were compared directly to the published phenotype data.
 
 Among the high-throughput approaches, the Bactabolize draft model captured fewer genes and reactions (n=1233 and 2307, respectively) than the gapseq (n=1489 and 3186, respectively) and CarveMe universal models (n=1960 and 2857, Figure 2A). The Bactabolize and CarveMe universal models contained similar numbers of metabolites (1696 vs 1737, respectively), while the gapseq model contained many more (n=2519). Notably, the initial gapseq model was gap-filled by simulation of growth in M9 minimal media with glucose (consistent with Bactabolize and CarveMe media recipes), which resulted in the addition of 31 reactions to the draft model. This is in contrast to CarveMe and Bactabolize-generated models which produced biomass in M9 minimal media plus glucose without additional gap-filling. The CarveMe KpSC pan model captured considerably more genes than any of the other models (n=2407), but these were associated with many fewer unique reactions and metabolites (1206 and 825, respectively). Upon further investigation we determined that this method resulted in the over-prescription of gene reaction rules (GPRs) to multiple reactions (mean 2.2 GPRs per reaction when compared to Bactabolize using the same pan reference model: 1.94 GPRs per reaction).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig2-v1.jpg)
+
+**Figure 2.:** (A) Counts of model features: genes, metabolites, and reactions captured by each model. Exchanges refer to number of exchange reactions, a subset of reactions involved in substrate uptake, which determine the number of distinct growth substrates for which phenotypes can be predicted with the model. (B) MEMOTE scores indicating the richness of annotations and metadata for metabolic model features according to database outlinks. SBO refers to score of Systems Biology Ontology (SBO), a controlled vocabulary for systems biology. Consistency refers to the score of stoichiometric consistency and chemical formulae annotation. Total refers to total MEMOTE score, as a combination of all previous scores, and is shown in bold. (C) Counts of carbon, nitrogen, phosphorus, and sulphur growth substrates that can be simulated by models and for which matched phenotypes were available for comparison (Henry et al., 2017). Hatched columns indicate the total number of substrates for which phenotypic data for K. pneumoniae KPPR1 were described (Henry et al., 2017). (D and E) Accuracy metrics for predicted to true phenotypes for the growth substrates shown in D and E, respectively. False-negatives, true-negatives, false-positives, and true-positives are coloured as shown in legend. (F and G) Accuracy metrics for the KPPR1 single-gene knockout mutant library described in Short et al., 2020 as shown in F and G, respectively. Numbers of true-positives and false-positives are shown to the left of the respective columns. Figure 2—source data 1 and Figure 2—figure supplements 1–2 contain additional data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig2-figsupp2-v1.jpg)
 
 Figure 2—figure supplements 1 and 2 show the overlaps of metabolites and reactions between the high-throughput reconstruction methods after processing with MetaNetX (Moretti et al., 2021) to standardise the reaction and metabolite nomenclatures (excluding CarveMe pan for simplicity and given the likely problems of reaction oversubscription). The majority of the reactions included in the Bactabolize model were conserved in either the CarveMe universal model (n=1225, 53.2%), gapseq model (n=54, 2.3%), or both (n=665, 28.9%). The reaction overlap was skewed to the CarveMe universal model which shared 1225 reactions that were conserved in the Bactabolize model but absent from the gapseq model. Notably, the gapseq model contained a large number (2200) of unique reactions (70.4% of those in the model). Similarly, the vast majority of metabolites in the Bactabolize model were conserved in one or both of the other models (n=917, 85.6%). However, it is likely that true overlaps between methods are underrepresented due to the different reaction identifiers and chemical synonyms used within the BiGG (Bactabolize, CarveMe) vs ModelSEED nomenclatures (gapseq), which are difficult to harmonise in an automated manner even after the application of MetaNetX.
 
@@ -77,7 +105,7 @@ The gene essentiality results showed that gapseq produced the highest absolute n
 
 While model features and accuracy are essential metrics for comparison, computation time is also a key consideration for high-throughput analyses. We recorded the time required for each tool to build draft models for 10 of the completed KpSC genomes used in the quality control framework (see below) on a high-performance computing cluster (Intel Xeon Gold 6150 CPU @ 2.70 GHz and 155 GB of requested memory on a CentOS Linux release 7.9.2009 environment). CarveMe KpSC pan was the fastest with a mean of 20.04 (range 19.90–20.18) s, followed by CarveMe universal at 30.28 (range 29.20–31.80) s, then Bactabolize KpSC pan at 98.05 (range 92.19–100.4) s. KBase took 183.50 (range 120.00–338.00) s per genome via batch analysis, including genome upload time and queuing. gapseq took 5.46 (range 4.55–6.28) hr to produce draft models (not including the required gap-filling), consistent with previous reports (Zimmermann et al., 2021b).
 
-## Quality control framework for input genome assemblies
+### Quality control framework for input genome assemblies
 
 There are now thousands of bacterial genomes available in public databases, the majority of which are in draft form, comprising 10s–1000s of assembly contigs. This fragmentation of the genome is caused by repetitive sequences that cannot be resolved by the assembly algorithm and/or sequence drop-out. The latter can result in the loss of genetic information such that some portion of genes present in the underlying genome are lost from the genome assembly (either completely or partially). This in turn poses a limitation for the reconstruction of metabolic models using these assemblies, since most published approaches use sequence searches to predict the presence/absence of genes and their associated enzymatic reactions. Therefore, if we are to use public genome data for high-throughput metabolic modelling studies, it is essential to evaluate the expected model accuracies and understand the minimum input genome quality requirements.
 
@@ -89,9 +117,21 @@ We used FBA to simulate substrate growth profiles for the 40× depth assemblies,
 
 We investigated the relationships between assembly quality metrics and model gene/reaction capture in more detail. Variation in assembly graph dead-ends accounted for the greatest amount of variation in model capture, closely followed by raw contig counts (cubic polynomial fit, R2 of ≥0.98 for graph dead-ends, R2 of ≥0.9 for contig count). A segmented linear model was fitted to N50 length (R2 ≥0.83), producing a breakpoint at 25,153 bp (Figure 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig3-v1.jpg)
+
+**Figure 3.:** Each point represents the mean values from a single genome (technical triplicate) and is coloured by model quality. ‘Good’ models capture ≥99% of the model metric as compared to the corresponding complete model (shown at each facet), ‘Bad’ models capture <99%. Cubic polynomial line plotted for assembly ‘graph dead-ends’, ‘contigs’, while a segmented linear model was plotted for ‘N50’. R2 is shown on each panel. Figure 3—source data 1 contains additional data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig3-figsupp1-v1.jpg)
+
 To further explore the optimum thresholds for assembly metrics, we tallied the number of draft assemblies resulting in ≥99% and<99% gene and reaction capture at increasing graph dead-end and contig count cut-offs, and decreasing N50 cut-offs. Draft models that captured ≥99% of the complete model genes/reactions were considered ‘good’ models, whereas draft models that captured <99% of complete model genes/reactions were considered ‘bad’ models. The optimum threshold for assembly graph dead-end was determined to be ≤200. At this value, 94.44% of ‘good’ models were captured, and 0% ‘bad’ models. The optimum threshold for contig counts was determined as ≤130 contigs at which 67.92% of ‘good’ and 0% ‘bad’ models were captured (Figure 4). The optimum threshold for N50 was determined to be ≥65,000, at which 94.97% of ‘good’ and 1.71% of ‘bad’ models were captured. The assembly graph dead-end threshold results in comparatively higher sensitivity (i.e. a higher proportion of ‘good’ models pass the threshold) than contig count and comparatively better specificity (i.e. lower proportion of ‘bad’ models pass the threshold) than N50, but the underlying metric information is not universally available because many isolate genomes are deposited in public databases only as assemblies without the associated assembly graph. We therefore recommend a three-tier approach, whereby the assembly graph dead-end criterion is preferenced if available, followed by N50 and then contig count.
 
-## Impact of gap-filling models
+![Figure 4.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig4-v1.jpg)
+
+**Figure 4.:** ‘Good’ models which captured ≥99% of model features are shown in green, while ‘bad’ models captured <99% model features are shown in gold. The blue dotted line shows the metric cut-off thresholds, to minimise the number of models that capture <99% model features and maximise models that capture ≥99%. Metric cut-off statistics are calculated in intervals of 10 for assembly graph dead-ends and contigs, and every 5000 for N50.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig4-figsupp1-v1.jpg)
+
+### Impact of gap-filling models
 
 Of the 901 draft genome assemblies which passed our QC criteria (≤200 assembly graph dead-ends), 23 of the resulting draft models failed to simulate growth in M9 minimal media with glucose (despite capturing ≥99% of the genes and reactions in the corresponding complete models). It is expected that all KpSC models should be able to simulate growth on M9 media with glucose as a sole carbon source, as this central metabolism is universal amongst KpSC. To replace missing, critical reactions required for growth on M9 with glucose, we investigated model gap-filling using the patch_model command of Bactabolize. We then assessed the accuracy of the gap-filled models for prediction of growth on the full range of substrates, as compared to the predictions from the corresponding complete models.
 
@@ -99,7 +139,7 @@ Gap-filling added one to three missing reactions to each model, with a median of
 
 Substrate usage predictions from the 21 successfully gap-filled models were highly accurate, with 18/21 having a prediction concordance of ≥99% across all 846 growth conditions (12/21 had 100% concordance) (Supplementary file 1). We therefore conclude that models generated for genome assemblies passing our QC criteria, which have been gap-filled to successfully simulate growth on minimal media plus glucose, are suitable for the prediction of growth across a range of substrates.
 
-## Predictive accuracy of draft models
+### Predictive accuracy of draft models
 
 We assessed the accuracy of Bactabolize for the construction of draft models for 10 novel KpSC clinical isolates, representing five of the major taxa in the complex. We included five isolates for which the associated STs were represented in the KpSC-pan v1 model and five isolates with STs that were not represented. Whole-genome sequence data were generated on the Illumina platform and draft assemblies generated de novo. The resultant assemblies had 0–4 graph dead-ends, N50s of 15,1958–388,486 bp and 83–187 contigs (Figure 5—source data 1), within the tiered threshold values.
 
@@ -107,7 +147,7 @@ FBA was performed, and the predicted growth profiles compared to matched phenoty
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/87406/elife-87406-fig5-v1.jpg)
 
-**Figure 5.:** (A) Comparisons of predicted to true phenotypes for 16 carbon source substrates. False-negatives, true-negatives, false-positives, and true-positives are coloured as shown in legend. Each column represents a different isolate, separated by ST representation in the K. pneumoniae species complex (KpSC)-pan model. (B) Accuracy metrics for predicted vs phenotypic growth comparisons shown in A. Each column represents a different isolate, coloured by taxa and separated by ST representation in the KpSC-pan v1 model. Additional information can be found in Figure 5—source data 1.Figure 5—source data 1.
+**Figure 5.:** (A) Comparisons of predicted to true phenotypes for 16 carbon source substrates. False-negatives, true-negatives, false-positives, and true-positives are coloured as shown in legend. Each column represents a different isolate, separated by ST representation in the K. pneumoniae species complex (KpSC)-pan model. (B) Accuracy metrics for predicted vs phenotypic growth comparisons shown in A. Each column represents a different isolate, coloured by taxa and separated by ST representation in the KpSC-pan v1 model. Additional information can be found in Figure 5—source data 1.
 
 ## Discussion
 
@@ -123,17 +163,62 @@ Bactabolize and the KpSC pan v1 model are freely available under open source lic
 
 ## Materials and methods
 
-## Bactabolize pipeline
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bactabolize</td>
+      <td>This study – Data availability section</td>
+      <td></td>
+      <td>Software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cobrapy</td>
+      <td>Ebrahim et al., 2013</td>
+      <td></td>
+      <td>Software</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>K. pneumoniae KPN2061, KPN2100, KPN2175, KPN2233, KPN2245, KPN2250, KPN2270, KPN2272, KPN2285, KPN2286</td>
+      <td>This study – See Source data 1 and Figure 5—source data 1 for details and accessions</td>
+      <td></td>
+      <td>Isolates used to validate Bactabolize</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VITEK 2 GN ID cards</td>
+      <td>bioMérieux</td>
+      <td></td>
+      <td>Method used to validate Bactabolize</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bactabolize pipeline
 
 Bactabolize utilises the existing metabolic modelling library COBRApy (Ebrahim et al., 2013) and Python 3 (Van Rossum and Drake, 2009). All code is freely available and open source at GitHub (Watts et al., 2023) under a GNU General Public License v3.0. Users should additionally cite COBRApy (Ebrahim et al., 2013) if Bactabolize is used.
 
-## KpSC pan-metabolic model
+### KpSC pan-metabolic model
 
 The 37 metabolic models from a previous study (Hawkey et al., 2022) were combined with the iY1228 model using the create_master_model.py script (available at 10.6084/m9.figshare.21728717). Briefly, all GPRs from the iYL1228 model and the associated sequences were included, as well as new GPRs identified from the 36 additional strains by manual curation following comparison to the matched phenotype data (as described in Hawkey et al., 2022). Additionally, orthologous sequence variants with <75% nucleotide identity to gene sequences associated with these GPRs were added if there was phenotype data supporting the reaction. The biomass reaction was updated, removing the metabolites udpgalur_c and udpgal_c as their production was strain-specific.
 
 Metadata annotations were improved using the improve_model_annotations.py script (also available in the Bactabolize code repository) resulting in the KpSC_pan v1 used in this study (Vezina et al., 2023).
 
-## Draft model generation
+### Draft model generation
 
 The annotated and unannotated genome of K. pneumoniae KPPR1 were obtained from Genbank accession number: CP009208.
 
@@ -145,11 +230,11 @@ A draft model for K. pneumoniae KPPR1 was also generated via CarveMe version 1.5
 
 A draft model was generated using gapseq version 1.2 with the ‘doall’ command using the unannotated genome (as gapseq does not take annotated input files). Gap-filling was subsequently performed using the ‘fill’ command and a custom M9 media file to match the nutrient list found in Bactabolize. Finally, a draft model was constructed using the annotated genbank K. pneumoniae KPPR1 file and the KBase narrative (Henry et al., 2017).
 
-## Speed calculations
+### Speed calculations
 
 Modelling methods were timed via a script using the date +%s.%N command run before and after command on the MASSIVE computing cluster (Intel Xeon Gold 6150 CPU @ 2.70 GHz and 155 GB of memory, CentOS Linux release 7.9.2009 environment). 10 individual complete KpSC genomes used in the quality control framework were tested for each method and the mean and range reported using R version 4.0.3 (R Development Core Team, 2020).
 
-## Performance comparisons
+### Performance comparisons
 
 The annotated and unannotated genomes of K. pneumoniae KPPR1 were obtained from Genbank under the accession: CP009208, and draft metabolic models were generated using Bactabolize, CarveMe, ModelSEED, and gapseq as described above. The previously described, manually curated model for KPPR1 (iKp1289) was also included for comparison (Henry et al., 2017). MEMOTE version 0.13.0 was used to collate basic model statistics. The following KPPR1 phenotype data were retrieved from published studies: BIOLOG Phenotypic Microarray data (Henry et al., 2017) and single-gene knockout data inferred from the outputs of a TraDIS transposon mutagenesis library (Short et al., 2020).
 
@@ -163,19 +248,47 @@ Gene essentiality was inferred from single-gene knockout growth predictions usin
 
 In all cases, an objective value cut-off of ≥10–4 was used to indicate binarised growth as per previous studies (Hawkey et al., 2022; Norsigian et al., 2019).
 
-In silico predictions were compared to matched phenotype data and the following accuracy metrics were calculated:Precision=TPTP+FPSensitivity/recall=TPTP+FNSpecificity=TNTN+FPAccuracy=TP+TNTP+FP+TN+FNF1-score=2×Precision×SensitivityPrecision+Sensitivity
+In silico predictions were compared to matched phenotype data and the following accuracy metrics were calculated:
+
+$$
+Precision=\frac{TP}{TP+FP}
+$$
+
+
+
+$$
+Sensitivity/recall=\frac{TP}{TP+FN}
+$$
+
+
+
+$$
+Specificity=\frac{TN}{TN+FP}
+$$
+
+
+
+$$
+Accuracy=\frac{TP+TN}{TP+FP+TN+FN}
+$$
+
+
+
+$$
+F1-score=2\times\frac{Precision\timesSensitivity}{Precision+Sensitivity}
+$$
 
 Model metabolite and reaction IDs were harmonised for overlap comparisons using the ‘Import model’ function from MetaNetX.org (Moretti et al., 2021) after import and export via the write_sbml_model function from COBRApy.
 
-## Quality control framework
+### Quality control framework
 
 Illumina read sets (250 bp paired end) and completed genome sequences for 37 KpSC isolates were described previously (Hawkey et al., 2022). Here, we randomly subsampled the Illumina reads at various depths (10–100, by increments of 10) using rasusa version 0.3.0 (Hall, 2019) in technical triplicate. Reads were then trimmed using TrimGalore version 0.5.0 (Krueger, 2012) and assembled de novo with Unicycler version 0.4.7 (Wick et al., 2017), default parameters. Assembly statistics and assembly graph dead-ends were calculated using the GFA-dead-end-counter version 1.0.0 (Wick, 2023). Draft metabolic models were generated with Bactabolize using the KpSC-pan v1 reference, and growth substrate profiles were predicted as described above. We compared the outputs from models generated for draft genome assemblies to those generated for the corresponding completed genomes. Where necessary models were gap-filled via the patch_model command.
 
-## Predictive accuracy of draft models
+### Predictive accuracy of draft models
 
 Novel growth phenotype data were generated for 10 KpSC clinical isolates from our in-house collection using the VITEK 2 GN ID card system as described previously (Hawkey et al., 2022). Briefly, isolates were grown on Tryptic Soy (OXOID) agar plates overnight at 37°C, then analysed using VITEK 2 GN ID cards (bioMérieux) and read on the VITEK 2 Compact (bioMérieux) as per the manufacturer’s instructions using software version 8.0. DNA was extracted for whole-genome sequencing via Genfind v3 extraction kit, library preparation performed using Nextera Flex (Illumina) using ¼ reagents. Paired-end read data (300 bp) were generated on an Illumina NovaSeq6000 SP v1.0 and have been deposited in the European Nucleotide Archive under Bioproject PRJNA777643 (individual read accession numbers are given in Figure 5—source data 1). Draft genome assemblies were generated with Unicycler, and draft metabolic models and growth predictions were generated with Bactabolize as described above.
 
-## Statistics and visualisation
+### Statistics and visualisation
 
 Statistical analysis and graphical visualisation were performed using R version 4.0.3 (R Development Core Team, 2020), RStudio version 1.3.1093 (RStudio-Team, 2020), with the following software packages: tidyverse version 1.3.1 (Wickham et al., 2019), viridis version 0.5.1 (Garnier, 2018), RColorBrewer version 1.1–2 (Neuwirth, 2022), ggpubr version 0.4.0 (Kassambara, 2023), ggpmisc version 0.4.4 (Aphalo et al., 2023), aplot version 0.1.6 (Yu, 2023), colorspace version 2.0–2 (Zeileis et al., 2020), ggpattern version 0.4.3–3 (Mike and Davis, 2022), ggtext version 0.1.1 (Wilke and Wiernik, 2020), and glue version 1.4.2 (Hester, 2022).
 
@@ -183,6 +296,6 @@ Linear regression analysis was performed in R using the lm function and a third-
 
 All code used to generate results can be found as supplemental material (Watts et al., 2023 and Vezina et al., 2023) and on Figshare.
 
-## Logo
+### Logo
 
 The Bactabolize logo was constructed in Inkscape version 1.0.1 (Inkscape, 2020). The font used is Proportional TFB (zanatlija, 2012) and Element (Weknow, 2015).

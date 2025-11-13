@@ -36,7 +36,7 @@
 
 ## Abstract
 
-Hepatic platelet accumulation contributes to acetaminophen (APAP)-induced liver injury (AILI). However, little is known about the molecular pathways involved in platelet recruitment to the liver and whether targeting such pathways could attenuate AILI. Mice were fasted overnight before intraperitoneally ( i.p. ) injected with APAP at a dose of 210 mg/kg for male mice and 325 mg/kg for female mice. Platelets adherent to Kupffer cells were determined in both mice and patients overdosed with APAP. The impact of α-chitinase 3-like-1 (α-Chi3l1) on alleviation of AILI was determined in a therapeutic setting, and liver injury was analyzed. The present study unveiled a critical role of Chi3l1 in hepatic platelet recruitment during AILI. Increased Chi3l1 and platelets in the liver were observed in patients and mice overdosed with APAP. Compared to wild-type (WT) mice, Chil1 -/- mice developed attenuated AILI with markedly reduced hepatic platelet accumulation. Mechanistic studies revealed that Chi3l1 signaled through CD44 on macrophages to induce podoplanin expression, which mediated platelet recruitment through C-type lectin-like receptor 2. Moreover, APAP treatment of Cd44 -/- mice resulted in much lower numbers of hepatic platelets and liver injury than WT mice, a phenotype similar to that in Chil1 -/- mice. Recombinant Chi3l1 could restore hepatic platelet accumulation and AILI in Chil1 -/- mice, but not in Cd44 -/- mice. Importantly, we generated anti-Chi3l1 monoclonal antibodies and demonstrated that they could effectively inhibit hepatic platelet accumulation and AILI. We uncovered the Chi3l1/CD44 axis as a critical pathway mediating APAP-induced hepatic platelet recruitment and tissue injury. We demonstrated the feasibility and potential of targeting Chi3l1 to treat AILI. ZS received funding from NSFC (32071129). FWL received funding from NIH (GM123261). ALFSG received funding from NIDDK (DK 058369). ZA received funding from CPRIT (RP150551 and RP190561) and the Welch Foundation (AU-0042–20030616). CJ received funding from NIH (DK122708, DK109574, DK121330, and DK122796) and support from a University of Texas System Translational STARs award. Portions of this work were supported with resources and the use of facilities of the Michael E. DeBakey VA Medical Center and funding from Department of Veterans Affairs I01 BX002551 (Equipment, Personnel, Supplies). The contents do not represent the views of the US Department of Veterans Affairs or the US Government.
+Background:Hepatic platelet accumulation contributes to acetaminophen (APAP)-induced liver injury (AILI). However, little is known about the molecular pathways involved in platelet recruitment to the liver and whether targeting such pathways could attenuate AILI.Methods:Mice were fasted overnight before intraperitoneally (i.p.) injected with APAP at a dose of 210 mg/kg for male mice and 325 mg/kg for female mice. Platelets adherent to Kupffer cells were determined in both mice and patients overdosed with APAP. The impact of α-chitinase 3-like-1 (α-Chi3l1) on alleviation of AILI was determined in a therapeutic setting, and liver injury was analyzed.Results:The present study unveiled a critical role of Chi3l1 in hepatic platelet recruitment during AILI. Increased Chi3l1 and platelets in the liver were observed in patients and mice overdosed with APAP. Compared to wild-type (WT) mice, Chil1-/- mice developed attenuated AILI with markedly reduced hepatic platelet accumulation. Mechanistic studies revealed that Chi3l1 signaled through CD44 on macrophages to induce podoplanin expression, which mediated platelet recruitment through C-type lectin-like receptor 2. Moreover, APAP treatment of Cd44-/- mice resulted in much lower numbers of hepatic platelets and liver injury than WT mice, a phenotype similar to that in Chil1-/- mice. Recombinant Chi3l1 could restore hepatic platelet accumulation and AILI in Chil1-/- mice, but not in Cd44-/- mice. Importantly, we generated anti-Chi3l1 monoclonal antibodies and demonstrated that they could effectively inhibit hepatic platelet accumulation and AILI.Conclusions:We uncovered the Chi3l1/CD44 axis as a critical pathway mediating APAP-induced hepatic platelet recruitment and tissue injury. We demonstrated the feasibility and potential of targeting Chi3l1 to treat AILI.Funding:ZS received funding from NSFC (32071129). FWL received funding from NIH (GM123261). ALFSG received funding from NIDDK (DK 058369). ZA received funding from CPRIT (RP150551 and RP190561) and the Welch Foundation (AU-0042–20030616). CJ received funding from NIH (DK122708, DK109574, DK121330, and DK122796) and support from a University of Texas System Translational STARs award. Portions of this work were supported with resources and the use of facilities of the Michael E. DeBakey VA Medical Center and funding from Department of Veterans Affairs I01 BX002551 (Equipment, Personnel, Supplies). The contents do not represent the views of the US Department of Veterans Affairs or the US Government.
 
 ## Introduction
 
@@ -50,103 +50,390 @@ In the current study, we observed elevated levels of Chi3l1 in patients with APA
 
 ## Materials and methods
 
-## Animal experiments and procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory, PMID:14759567</td>
+      <td>Stock #:000664 MGI Cat# 3849035, RRID:MGI:3849035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Cd44-/- mice (also called Cd44tm1Hbg/Cd44tm1Hbg)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #:005878 MGI Cat# 4941902, RRID:MGI:4941902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Chil1-/-mice</td>
+      <td>PMID:19414556</td>
+      <td>MGI #:3846223 RRID:MGI:3846223</td>
+      <td>Dr Jack A. Elias (Brown University)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetaminophen</td>
+      <td>Sigma-Aldrich</td>
+      <td>A7085</td>
+      <td>210 mg/kg for male mice, 325 mg/kg for female mice</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse Chi3l1</td>
+      <td>Sino Biological</td>
+      <td>50929-M08H</td>
+      <td>500 ng/mouse in 100 μl PBS</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ALT diagnostic assay kit</td>
+      <td>Teco Diagnostics,</td>
+      <td>A526-120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Syrian hamster polyclonal IgG Ctrl IgG for anti-podoplanin antibody</td>
+      <td>Bioxcell InvivoMab</td>
+      <td>BE0087, RRID:AB_1107782</td>
+      <td>100 μg/mouse</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Syrian hamster monoclonal anti-mouse podoplanin antibody</td>
+      <td>Bioxcell InvivoMab</td>
+      <td>BE0236, RRID:AB_2687718</td>
+      <td>100 μg/mouse</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal Ctrl IgG for anti-mouse CD41 antibody</td>
+      <td>BD Biosciences</td>
+      <td>553922, Clone R334, RRID:AB_479672</td>
+      <td>2 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD41 antibody</td>
+      <td>BD Biosciences</td>
+      <td>553847, Clone MWReg 30, RRID:AB_395084</td>
+      <td>2 mg/kg, 1:200 for IF</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human Chi3l1</td>
+      <td>Sino Biological</td>
+      <td>11227-H08H</td>
+      <td>1 μg/mouse in 100 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-human CD41</td>
+      <td>Proteintech</td>
+      <td>24552–1-AP, RRID:AB_2879604</td>
+      <td>1:200 for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-human CD68</td>
+      <td>Thermo Fisher</td>
+      <td>MA5-13324, RRID:AB_10987212</td>
+      <td>1:100 for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-human Chi3l1</td>
+      <td>Proteintech</td>
+      <td>12036–1-AP, RRID:AB_2877819</td>
+      <td>1:100 for IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse F4/80, Alexa 647 conjugated</td>
+      <td>Biolegend</td>
+      <td>123122, RRID:AB_893480</td>
+      <td>1:100 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD44</td>
+      <td>abcam</td>
+      <td>ab112178, clone KM81, RRID:AB_10864553</td>
+      <td>1:200 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Golden Syrian Hamster monoclonal anti-mouse podoplanin</td>
+      <td>Novus, biological</td>
+      <td>NB600-1015, RRID:AB_2161937</td>
+      <td>1:100 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-mouse Clec-2</td>
+      <td>Biorbyt</td>
+      <td>orb312182, RRID:AB_2891123</td>
+      <td>1:100 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rat polyclonal immunoglobulin, Alexa 488-conjugated</td>
+      <td>Invitrogen</td>
+      <td>A-21208, RRID:AB_141709</td>
+      <td>1:1000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit polyclonal immunoglobulin, Alexa 488-conjugated</td>
+      <td>Invitrogen</td>
+      <td>A-11034, RRID:AB_141709</td>
+      <td>1:1000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit polyclonal immunoglobulin, Alexa 594-conjugated</td>
+      <td>Invitrogen</td>
+      <td>A-11012, RRID:AB_141359</td>
+      <td>1:1000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-hamster polyclonal immunoglobulin, Alexa 594-conjugated</td>
+      <td>Invitrogen</td>
+      <td>A-21113, RRID:AB_2535762</td>
+      <td>1:1000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hoechst</td>
+      <td>Invitrogen</td>
+      <td>H3570, RRID:AB_10626776</td>
+      <td>1:10000 for IF</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TRITC-labeled Albumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2289-10MG RRID:AB_2891111</td>
+      <td>10 μl/mouse for intravital microscopy</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse anti-F4/80 antibody, BV421-labeled</td>
+      <td>Biolegend</td>
+      <td>123132, RRID:AB_11203717</td>
+      <td>15 μl/mouse for intravital microscopy</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-mouse CD41 antibody, DyLight 649-labeled</td>
+      <td>emfret ANALYTICS</td>
+      <td>X649, RRID:AB_2861336</td>
+      <td>30 μl/mouse for intravital microscopy</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments and procedures
 
 C57BL/6J (RRID:MGI:3849035) and Cd44-/- mice (RRID:MGI:4941902) were purchased from the Jackson Laboratory. Chil1-/- mice were provided by Dr Jack Elias (Brown University, Providence, RI, RRID:MGI:3846223). All mouse colonies were maintained at the animal core facility of University of Texas Health Science Center (UTHealth). C57BL/6J, not C57BL/6N, was used as wild-type (WT) control because both Chil1-/- and Cd44-/- mice are on the C57BL/6J background, determined by polymerase chain reaction (PCR) (data not shown). Animal studies described have been approved by the UTHealth Institutional Animal Care and Use Committee (IACUC). For APAP treatment, mice (8–12 weeks of age) were fasted overnight (5:00 p.m. to 9:00 a.m.) before intraperitoneally (i.p.) injected with APAP (Sigma, A7085) at a dose of 210 mg/kg for male mice and 325 mg/kg for female mice, as female mice are less susceptible to AILI (Munoz and Fearon, 1984). Male mice have been the choice in the vast majority of the studies of AILI reported in the literature (Ju et al., 2002; Sullivan et al., 2012). Therefore, we used male mice in the majority of the experiments presented. In some experiments, APAP-treated mice were immediately injected i.p. with either PBS (100 μl) or recombinant mouse Chi3l1 (rmChi3l1, 500 ng/mouse in 100 μl, Sino Biological 50929-M08H). Livers were harvested at time points indicated in the figure legends and immunofluorescence (IF) staining was performed using frozen sections to detect Mɸs and platelets using anti-F4/80 and anti-CD41 antibodies, respectively. Liver paraffin sections and sera were harvested at time points indicated in the figure legends. H&E staining and ALT measurement to examine liver injury were performed using a diagnostic assay kit (Teco Diagnostics, Anaheim, CA).
 
-## Blocking endogenous podoplanin
+### Blocking endogenous podoplanin
 
 Mice were intravenously (i.v.) injected with Ctrl IgG (Bioxcell InvivoMab, BE0087, 100 μg/mouse, RRID:AB_1107782) or anti-podoplanin antibody (Bioxcell InvivoMab, BE0236, 100 μg/mouse, RRID:AB_2687718) in Chil1-/- reconstituted with rmChi3l1 at 16 hr prior to APAP treatment.
 
-## Platelet depletion
+### Platelet depletion
 
 WT mice were i.v. injected with Ctrl IgG (BD Pharmingen, 553922, 2 mg/kg, RRID:AB_479672) or CD41 antibody (BD Pharmingen, 553847, 2 mg/kg, RRID:AB_395084) to deplete platelets at 12 hr prior to APAP treatment.
 
-## Kupffer cells depletion
+### Kupffer cells depletion
 
 WT mice were i.v. injected with empty liposomes (PBS, 100 μl/mouse) or clodronate (CLDN)-containing liposomes (100 μl/mouse) to deplete Kupffer cells (KCs) at either 9 or 40 hr prior to APAP treatment. CLDN-containing liposomes were generated as previously described (Ju et al., 2002).
 
-## Evaluation of the effects of anti-Chi3l1 monoclonal antibodies
+### Evaluation of the effects of anti-Chi3l1 monoclonal antibodies
 
 To examine the therapeutic potential of anti-mouse Chi3l1 monoclonal antibodies (mAbs), WT mice were injected (i.p.) with either Ctrl IgG or anti-mouse Chi3l1 antibody clones 3 hr after APAP administration. To examine the therapeutic potential of anti-human Chi3l1 mAbs, Chil1-/- mice treated with APAP were immediately injected (i.p.) with either PBS (100 μl) or recombinant human Chi3l1 (rhChi3l1, 1 μg/mouse in 100 μl, Sino Biological 11227-H08H). After 3 hr, these mice were divided into two groups injected (i.p.) with either Ctrl IgG or anti-human Chi3l1 mAbs.
 
-## Bio-layer interferometry
+### Bio-layer interferometry
 
 The binding affinity between Fc-CD44 and His-Chi3l1 was measured using the Octet system eight-channel Red96 (Menlo Park). Protein A biosensors and kinetics buffer were purchased from Pall Life Sciences (Menlo Park). Fc-CD44 protein was immobilized onto protein A biosensors and incubated with varying concentrations of recombinant His-Chi3l1 in solution (1000–1.4 nM). Binding kinetic constants were determined using 1:1 fitting model with ForteBio’s data analysis software 7.0, and the KD was calculated using the ratio Kdis/Kon (the highest four concentrations were used to calculate the KD).
 
-## IHC and IF
+### IHC and IF
 
 H&E staining and immunohistochemistry (IHC) were performed on paraffin sections using the following antibodies: anti-human CD41 (Proteintech, 24552–1-AP, 1:200, RRID:AB_2879604), anti-human CD68 (Thermo Fisher, MA5-13324, 1:100, RRID:AB_10987212), anti-human Chi3l1 (Proteintech, 12036–1-AP, 1:100, RRID:AB_2877819). IF staining was performed on frozen sections using the following antibodies: anti-mouse CD41 (BD Bioscience, Clone MWReg 30, RRID:AB_395084), mouse F4/80 (Biolegend, 123122, 1:100, RRID:AB_893480), anti-CD44 (abcam, clone KM81, ab112178, 1:200, RRID:AB_10864553), anti-Chi3l1 (Proteintech, 12036–1-AP, 1:100, RRID:AB_2877819), anti-podoplanin (Novus, NB600-1015, 1:100, RRID:AB_2161937), and anti-Clec-2 (C-type lectin-like receptor 2) (Biorbyt, orb312182, 1:100, RRID:AB_2891123). Alexa 488-conjugated donkey anti-rat immunoglobulin (Invitrogen, A-21208, 1:1000, RRID:AB_141709) was used as a secondary antibody for CD41 and CD44 detection. Alexa 488-conjugated goat anti-rabbit immunoglobulin (Invitrogen, A-11034, 1:1000, RRID:AB_141709) was used as a secondary antibody for Clec-2 detection. Alexa 594-conjugated goat anti-rabbit immunoglobulin (Invitrogen, A-11012, 1:1000, RRID:AB_141359) was used as a secondary antibody for Chi3l1 detection. Alexa 594-conjugated goat anti-hamster immunoglobulin (Invitrogen, A-21113, 1:1000, RRID:AB_2535762) was used as a secondary antibody for podoplanin detection. Nuclei were detected by Hoechst (Invitrogen, H3570, 1:10,000, RRID:AB_10626776).
 
-## Intravital confocal microscopy
+### Intravital confocal microscopy
 
 Mice were prepared for intravital microscopy as previously described (Da et al., 2018). Briefly, mice were anesthetized using pentobarbital and underwent tracheostomy (to facilitate breathing) and internal jugular catheterization (for antibody administration) followed by liver exteriorization as described by Marques et al., 2015 with modifications. Mice were placed supine on a custom-made stage with the liver overlying a glass coverslip wetted with warmed saline and surrounded with wet saline-soaked gauze. Mice were kept euthermic at 37°C using radiant warmers and monitored with a rectal thermometer. Anesthesia was maintained using an isoflurane delivery device (RoVent with SomnoSuite; Kent Scientific) with 1–3% isoflurane delivered. Mice were i.v. injected with an antibody mixture in sterile 0.9% sodium chloride containing TRITC/bovine serum albumin (Sigma; to label the vasculature; 500 µg/mouse, RRID:AB_2891111), BV421-anti-F4/80 antibody (to label Kupffer; 0.75 µg/mouse, RRID:AB_11203717), and DyLight 649/anti-GPIbβ antibody (emfret analytics; to label platelets; 3 µg/mouse, RRID:AB_2861336) for visualization. Mice were imaged on an Olympus FV3000RS laser scanning confocal inverted microscope system at 30 fps using a 60×/NA1.30 silicone oil objective with 1× and 3× optical zoom using the resonance scanner. This allows for simultaneous excitation and detection of up to four wavelengths. All animals were euthanized under a surgical plane of anesthesia at the end of the experiments.
 
-## Image analysis of intravital microscopy experiments
+### Image analysis of intravital microscopy experiments
 
 The images were then analyzed by a blinded investigator to assess platelet area. Eleven to fifteen 1 min fields of view (1× optical zoom) were analyzed per mouse using FIJI/ImageJ software. Background noise was removed using a Gaussian filter (one pixel) for all channels prior to analysis. Vascular area was measured in each field using the region of interest selection brush in the TRITC (albumin) channel. The platelet area within the vascular ROI was then determined using threshold of the DyLight 649 (platelet) channel.
 
-## Generation of Chi3l1 mAbs
+### Generation of Chi3l1 mAbs
 
 Rabbit mAbs were generated using previously reported methods (Deng et al., 2018). Briefly, two New Zealand white rabbits were immunized subcutaneously with 0.5 mg recombinantly expressed human Chi3l1 protein (Sino Biological, Cat#11227-H08H). After the initial immunization, animals were given boosters three times in a 3-week interval. Serum titers were evaluated by indirect enzyme-linked immunosorbent assay (ELISA) and rabbit peripheral blood mononuclear cells (PBMCs) were isolated after the final immunization. A large panel of single memory B cells were enriched from the PBMCs and cultured for 2 weeks, and the supernatants were analyzed by ELISA. To isolate mouse Chi3l1 antibody, the rabbits were boosted twice more with mouse Chi3l1 before the memory B cell culture. The variable region genes of the antibodies from these positive single B cells were recovered by reverse transcription PCR (RT-PCR) and cloned into the mammalian cell expression vector as described previously (Deng et al., 2018). Both the heavy and light chain constructs were co-transfected into Expi293 cell lines using transfection reagent PEI (Sigma). After 7 days of expression, supernatants were harvested and antibodies were purified by affinity chromatography using protein A resin as reported before (Deng et al., 2018).
 
-## Statistics
+### Statistics
 
 Data were presented as mean ± SEM unless otherwise stated. Statistical analyses were carried out using GraphPad Prism (GraphPad Software). Comparisons between two groups were carried out using unpaired Student’s t-test. Comparisons among multiple groups (n ≥ 3) were carried out using one-way ANOVA. p-Values are as labeled and less than 0.05 was considered significant. Platelets counts/mm2 was analyzed using ImageJ software.
 
-## Study approval
+### Study approval
 
 Serum samples from patients diagnosed with APAP-induced liver failure on day 1 of admission were obtained from the biobank of the Acute Liver Failure Study Group (ALFSG) at UT Southwestern Medical Center, Dallas, TX, USA. The study was designed and carried out in accordance with the principles of ALFSG and approved by the Ethics Committee of ALFSG (HSC-MC-19–0084). Formalin-fixed, paraffin-embedded human liver biopsies from patients diagnosed with APAP-induced liver failure were obtained from the National Institutes of Health-funded Liver Tissue Cell Distribution System at the University of Minnesota, which was funded by NIH contract # HHSN276201200017C.
 
 See Materials and methods for details for other methods.
 
-## Blocking endogenous CD44
+### Blocking endogenous CD44
 
 Mice were i.p. injected with Ctrl IgG (BD Pharmingen, 559478, 50 μg/mouse) or anti-CD44 antibody (BD Pharmingen, 553131, 50 μg/mouse) in Chil1-/- reconstituted with rmChi3l1 at 30 min prior to APAP treatment.
 
-## Preparation of liver cells and in vitro cell culture
+### Preparation of liver cells and in vitro cell culture
 
 Hepatic NPCs and hepatocytes were isolated as previously described (Shan et al., 2018). In brief, mice were anesthetized and liver tissues were perfused with EGTA solution, followed by a 0.04% collagenase digestion buffer. Liver hepatocytes and NPCs were isolated by gradient centrifugation using 35% percoll (Sigma). To further purify LSEC and Mɸs, LSEC and Mɸs fractions were stained with phycoerythrin (PE)-conjugated anti-CD146 (for LSEC, Invitrogen, 12-1469-42), and anti-F4/80 (for Mɸs, Invitrogen, 12-4801-82) antibodies and positively selected using EasySep Mouse PE Positive Selection Kit (Stemcell Technologies) following manufacturer’s instructions. Each subset will yield a purity around 90%.
 
-## Co-culture of Mɸs and platelets
+### Co-culture of Mɸs and platelets
 
 Isolated Mɸs were cultured in DMEM with 10% fetal bovine serum and pre-treated with podoplanin antibody (Bioxcell InvivoMab, BE0236, 2 μg/ml) for 30 min and then co-culture with washed platelets for 30 min. Unbound platelets were washed out and podoplanin and Clec-2 on Mɸs were stained.
 
-## Isolation of platelets
+### Isolation of platelets
 
 Mouse whole blood was collected with anti-coagulant ACD solution from Inferior vena cava. Platelets were further isolated by additional washes with Tyrode’s buffer. Isolated washed platelets were subjected to functional assay after incubation with PGI2 (Sigma, P6188) for 30 min.
 
-## Flow cytometry
+### Flow cytometry
 
 Isolated liver NPCs were incubated with1 μl of anti-mouse FcγRII/III (Becton Dickinson, Franklin Lakes, NJ) to minimize non-specific antibody binding. The cells were then stained with anti-mouse CD45-V655 (eBioscience, 15520837), F4/80-APC/Cy7 (Biolegend, 123118), Ly6C-APC (BD Pharmingen, 560595), Ly6G-V450 (BD Pharmingen, 560603), CD146-PerCP-Cy5.5 (BD Pharmingen, 562134), CD44-PE (BD Pharmingen, 553134), anti-His-FITC (abcam, ab1206). In some experiments, cells were incubated with 2 μg rmChi3l1 for 2 hr before antibody staining. The cells were analyzed on a CytoFLEX LX Flow Cytometer (Beckman Coulter, Indianapolis, IN) using FlowJo software (Tree Star, Ashland, OR). For flow cytometric analysis, CD45+ cells were gated to exclude endothelial cells, hepatic stellate cells, and residue hepatocytes. Within CD45+ cells, CD44+ cells that bind to Chi3l1 were back-gated to determine the cells types.
 
-## Extraction of liver proteins, immunoprecipitation, and mass spectrometry
+### Extraction of liver proteins, immunoprecipitation, and mass spectrometry
 
 Snap-frozen liver tissues were pulverized to extract liver proteins in STE buffer. Protein concentration was measured by BCA kit (Thermo Scientific, 23225) following the manufacturer’s instructions.
 
-## Immunoprecipitation of NPCs lysates
+### Immunoprecipitation of NPCs lysates
 
 Proteins were extracted from NPCs lysates and incubated with 5 μg rmChi3l1, followed by immunoprecipitation with 2 μg rabbit IgG (negative control, Peprotech, 500-p00) or 2 μg anti-His tag antibody (Abnova, MAB12807). Dynabeads Protein G (Invitrogen, 1003D) were used to pull down antibodies-binding proteins. Immunoprecipitated proteins were subject to mass spectrometry analyses by the Proteomics Core Facility at UTHealth.
 
-## Immunoprecipitation of liver homogenates
+### Immunoprecipitation of liver homogenates
 
 Cd44-/- and WT mice were treated with APAP for 2 hr; 10 mg liver proteins were extracted from treated mice and incubated with 5 μg rmChi3l1, followed by immunoprecipitation with 2 μg anti-CD44 antibody (BD Pharmingen, 553131). Dynabeads Protein G (Invitrogen, 1003D) were used to pull down antibody-binding proteins. Input and immunoprecipitated proteins were subject to Western blot analyses.
 
-## In vitro immunoprecipitation assays
+### In vitro immunoprecipitation assays
 
 Two microgram rhChi3l1 (Sino Biological, His Tag, 11227-H08H) or 2 μg GST protein (His Tag) as control were incubated with 2 μg human CD44 (Sino Biological, Fc Tag, 12211-H02H) and immunoprecipitated with 2 μg anti-His antibody (Abnova, MAB12807). Input and immunoprecipitated proteins were subject to Western blot analyses.
 
-## Western blotting
+### Western blotting
 
 Samples were prepared with loading buffer and boiled before loading onto SDS-PAGE gels. Nitrocellulose membranes (Bio-Rad) were used to transfer proteins. Primary antibodies used to detect specific proteins: anti-Chi3l1 (Proteintech, 12036–1-AP, 1:1000), anti-CD44 (abcam, ab25340, 1:500), anti-β-actin (Cell Signaling, 4970, 1:1000), anti-His (Abnova, MAB12807, 1:1000), anti-cyp2e1 (LifeSpan BioSciences, LS-C6332, 1:500), anti-APAP adducts (Ju et al., 2002) (provided by Dr Lance R. Pohl, NIH, 1:500). Secondary antibodies include goat anti-Rabbit IgG (Jackson ImmunoResearch, 111-035-144, 1:1000), goat anti-Rat (Jackson ImmunoResearch, 112-035-003, 1:1000).
 
-## Quantitative real-time RT-PCR
+### Quantitative real-time RT-PCR
 
 Total RNA was isolated from 1 × 106 cells using RNeasy Mini Kit (Qiagen, Valencia, CA). After the removal of genomic DNA, RNA was reversely transcribed into cDNA using Moloney murine leukemia virus RT (Invitrogen, Carlsbad, CA) with oligo (dT) primers (Invitrogen). Quantitative PCR was performed using SYBR green master mix (Applied Biosystem) in triplicates on a Real-Time PCR 7500 SDS system and software following manufacturer’s instruction (Life Technologies, Grand Island, NY). RNA content was normalized based on amplification of 18S ribosomal RNA (rRNA) (18S). Change folds = normalized data of experimental sample/normalized data of control. The specific primer pairs used for PCR are listed in Table 1.
 
+**Table 1.**
+ Real-time PCR primers used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward (F)/reverse (R) primer</th>
+      <th>Primer sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Pdpn</td>
+      <td>F</td>
+      <td>ACCGTGCCAGTGTTGTTCTG</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>AGCACCTGTGGTTGTTATTTTGT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Psgl-1</td>
+      <td>F</td>
+      <td>GAAAGGGCTGATTGTGACCCC</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>AGTAGTTCCGCACTGGGTACA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cd40</td>
+      <td>F</td>
+      <td>TGTCATCTGTGAAAAGGTGGTC</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>ACTGGAGCAGCGGTGTTATG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mcam</td>
+      <td>F</td>
+      <td>GTGGCGTTGACATCGTTGG</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>CTATGTACTTCGTATGCAGGTCG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Icam-1</td>
+      <td>F</td>
+      <td>GTGATGCTCAGGTATCCATCCA</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>CACAGTTCTCAAAGCACAGCG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Fcr</td>
+      <td>F</td>
+      <td>AGGGCCTCCATCTGGACTG</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>GTGGTTCTGGTAATCATGCTCTG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lfa1</td>
+      <td>F</td>
+      <td>CCAGACTTTTGCTACTGGGAC</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>GCTTGTTCGGCAGTGATAGAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Vwf</td>
+      <td>F</td>
+      <td>CTCTTTGGGGACGACTTCATC</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>TCCCGAGAATGGAGAAGGAAC</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Chi3l1 is upregulated and plays a critical role in AILI
+### Chi3l1 is upregulated and plays a critical role in AILI
 
 Although elevated serum levels of Chi3l1 have been observed in chronic liver diseases (Kumagai et al., 2016; Lee et al., 2011; Nøjgaard et al., 2003; Wang et al., 2020), modulations of Chi3l1 levels during acute liver injury have not been reported. Our data demonstrated, for the first time, that compared with healthy individuals, patients with AILI displayed higher levels of Chi3l1 in the liver and serum (Figure 1A,B). Similarly, in mice treated with APAP, hepatic mRNA and serum protein levels of Chi3l1 were upregulated (Figure 1C,D). To determine the role of Chi3l1 in AILI, we treated WT mice and Chi3l1-knockout (Chil1-/-) mice with APAP. Compared with WT mice, serum ALT levels and the extent of liver necrosis were dramatically lower in Chil1-/- mice (Figure 1E,F). Moreover, administration of rmChi3l1 protein to Chil1-/- mice enhanced liver injury to a similar degree observed in APAP-treated WT mice (Figure 1E,F). These data strongly suggest that Chi3l1 contributes to AILI.
 
@@ -154,19 +441,43 @@ Although elevated serum levels of Chi3l1 have been observed in chronic liver dis
 
 **Figure 1.:** (A) Immunohistochemical (IHC) staining for Chi3l1 in normal liver biopsies (Normal) and those from patients with AILI (Patient). Images shown are representative of 10 samples/group. Scale bar, 250 μm. (B) Enzyme-linked immunosorbent assay (ELISA) analysis of Chi3l1 in serum of healthy individuals (Normal, n = 6) and those from patients with AILI (Patient, n = 29). Data were presented as median+interquartile range. (C, D) Male C57B/6 mice treated with PBS or acetaminophen (APAP). (C) Chil1 mRNA in liver homogenates and (D) Chi3l1 protein levels in serum were measured by quantitative reverse transcription polymerase chain reaction (qRT-PCR) and ELISA at 3 and 24 hr, respectively (n = 4 mice/group). (E, F) Male C57B/6 (wild-typr [WT]) and Chil1-/- mice were treated with APAP. Additionally, Chil1-/- mice were divided into two groups treated with either PBS or recombinant mouse Chi3l1 (rmChi3l1) simultaneously with APAP (n = 4–10 mice/group). (E) Serum levels of ALT and (F) liver histology with necrotic areas outlined were evaluated 24 hr after APAP treatment. Scale bar, 250 μm. Mann-Whitney test was performed in B. Two-tailed, unpaired Student’s t-test was performed in C, D. One-way ANOVA were performed in E.
 
-## Chi3l1 contributes to AILI by promoting hepatic platelet recruitment
+### Chi3l1 contributes to AILI by promoting hepatic platelet recruitment
 
 Thrombocytopenia is often observed in patients with APAP overdose (Harrison et al., 1990; Stravitz et al., 2013; Stravitz et al., 2016). We hypothesized that this phenomenon may be attributed to the recruitment of platelets into the liver. We performed IHC staining of liver biopsies from patients with APAP-induced liver failure and found markedly increased numbers of platelets compared with normal liver tissues (Figure 2A). Similarly, in mice treated with APAP, a marked increase of platelets in the liver was observed by intravital microscopy (Figure 2B). It is reported that depletion of platelets prior to APAP treatment can prevent liver injury in mice (Miyakawa et al., 2015). Our data demonstrated that even after APAP treatment, depletion of platelets could still attenuate AILI (Figure 2C,D; Figure 2—figure supplement 1). These data indicate a critical contribution of platelets to AILI. Given the role of Chi3l1 in promoting intrahepatic coagulation in concanavalin A-induced hepatitis (Shan et al., 2018), we hypothesized that Chi3l1 might be involved in platelet recruitment to the liver during AILI. To examine this hypothesis, we detected platelets in the liver by IHC using anti-CD41 antibody. Comparing with WT mice, we observed much fewer platelets in the liver after APAP treatment (Figure 2E). Moreover, administration of rmChi3l1 to Chil1-/- mice restored hepatic platelet accumulation similar to APAP-treated WT mice (Figure 2E). These data suggest that Chi3l1 plays a critical role in promoting hepatic platelet accumulation, thereby contributing to AILI.
 
-## Chi3l1 functions through its receptor CD44
+![Figure 2.](https://cdn.elifesciences.org/articles/68571/elife-68571-fig2-v2.jpg)
+
+**Figure 2.:** (A) Immunohistochemical (IHC) staining to detect platelets (CD41+) in healthy liver biopsies (Normal) and those from patients with AILI (Patient). Scale bar, 250 μm (n = 10/group). (B) Male C57B/6 mice treated with PBS or acetaminophen (APAP). Intravital microscopy analyses were performed around 3 hr post-APAP. Mɸs (cyan) and platelets (white) in liver sinusoids (red) are indicated. Representative images were chosen from intravital microscopy videos: https://bcm.box.com/s/15hmtryyrdl302mihrsm034ure87x4ea (Supplementary video 1, PBS treatment) and https://bcm.box.com/s/tuljfmstvv4lvoksx16fkxkpirkekynz (Supplementary video 2; n = 6–7 mice/group, 4–15 videos/mouse). (C–E) Male C57B/6 (wild-type [WT]) mice were treated with control IgG (Ctrl IgG) or an anti-CD41 antibody (α-CD41 Ab) either 3 hr before or 3 hr after APAP administration. (C) Serum levels of ALT and (D) liver histology with necrotic areas outlined were evaluated 24 hr after APAP treatment (n = 5 mice/group in C, D). Scale bar, 250 μm. (E) Male C57B/6 (WT) and Chil1-/- mice were treated with APAP. Additionally, Chil1-/- mice were divided into two groups treated with either PBS or recombinant mouse Chi3l1 (rmChi3l1) simultaneously with APAP. Immunofluorescence (IF) staining was performed to detect intrahepatic platelets (CD41+) 3 hr after APAP treatment (n = 3 mice/group). Scale bar, 25 μm. Two-tailed, unpaired Student’s t-test was performed in A–C. One-way ANOVA were performed in E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68571/elife-68571-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Male C57B/6 mice were treated with control IgG (Ctrl IgG) or an anti-CD41 antibody (α-CD41 Ab) either 3 hr before (pre-) or 3 hr after (post-) APAP administration. Immunofluorescence (IF) staining was performed to identify intrahepatic platelets (CD41+) (n = 5 mice/group). Scale bar, 25 μm.
+
+### Chi3l1 functions through its receptor CD44
 
 To further understand how Chi3l1 is involved in platelet recruitment, we set out to identify its receptor. We isolated non-parenchymal cells (NPCs) from WT mice at 3 hr after APAP treatment and incubated the cells with His-tagged rmChi3l1. The cell lysate was subjected to immunoprecipitation using an anti-His antibody. The ‘pulled down’ fraction was subjected to LC/MS analyses, and a partial list of proteins identified is shown in Supplementary file 1. Among the potential binding proteins, we decide to further investigate CD44, which is a cell surface receptor expressed on diverse mammalian cell types, including endothelial cells, epithelial cells, fibroblasts, keratinocytes, and leukocytes (Ponta et al., 2003). Immunoprecipitation experiments using liver homogenates from APAP-treated WT and Cd44-/- mice demonstrated that the anti-CD44 antibody could ‘pull down’ Chi3l1 from WT but not Cd44-/- liver homogenates (Figure 3A). Supporting this finding, interferometry measurements using rhChi3l1 revealed a direct interaction between Chi3l1 and CD44 (Kd = 251 nM, Figure 3B). Moreover, we incubated rhChi3l1 with human CD44 and then performed immunoprecipitation with an anti-CD44 antibody. Data shown in Figure 3C confirmed that Chi3l1 directly binds to CD44. Together, these results suggest that CD44 is a receptor for Chi3l1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68571/elife-68571-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunoprecipitation with anti-CD44 antibody was performed using liver homogenates obtained from wild-type (WT) and Cd44-/- mice treated with acetaminophen (APAP) for 2 hr. Input proteins and immune-precipitated proteins were blotted with the indicated antibodies. (B) Interferometry measurement of the binding kinetics of human His-Chi3l1 with human Fc-CD44. (C) His-tagged control GFP and human Chi3l1 were incubated with recombinant human CD44. Proteins bound to Chi3l1 were immune-precipitated with an anti-His antibody. Input proteins and immune-precipitated proteins were blotted with indicated antibodies. (D–F) Male WT mice were treated with APAP and Cd44-/- mice were treated with PBS or recombinant mouse Chi3l1 (rmChi3l1) plus APAP. (D) Serum levels of ALT and (E) liver histology with necrotic areas outlined were evaluated 24 hr after APAP treatment (n = 4–9 mice/group in A, B). Scale bar, 250 μm. (F) Immunofluorescence (IF) staining was performed to detect intrahepatic platelets (CD41+) 3 hr after APAP treatment (n = 3 mice/group). Scale bar, 25 μm. One-way ANOVA were performed in D.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68571/elife-68571-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Chil1-/- mice reconstituted with recombinant mouse Chi3l1 (rmChi3l1) were treated with either Ctrl IgG or α-CD44 Ab 30 min prior to acetaminophen (APAP) challenge. (A) Serum levels of ALT and (B) liver histology with necrotic areas outlined were evaluated 24 hr after APAP treatment (n = 4–5 mice/group). Scale bar, 250 μm. (C) Immunofluorescence (IF) staining was performed to detect intrahepatic platelets (CD41+) 3 hr after APAP treatment (n = 3 mice/group). Scale bar, 25 μm. (D) Flow cytometry analysis was performed to identify Chi3l1-binding cells among liver non-parenchymal cells (NPCs) isolated from wild-type (WT) mice treated with APAP for 2 hr. CD44+ cells were gated from single live cells. CD44+ cells that bind to rmChi3l1 were further gated. The Chi3l1+CD44+ cells were then identified by markers for various cell types, including CD45+ CD146-F4/80+ (Mɸs), CD45-CD146+ (liver sinusoidal endothelial cells [LSECs]), and Ly6G+ (neutrophils). Two-tailed, unpaired Student’s t-test was performed in A.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68571/elife-68571-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Male wild-type (WT), Chil1-/-, Cd44-/- mice were treated with APAP (n = 3 mice/group). (A) glutathione (GSH) levels in the liver were measured at indicated time points by HPLC. (B) Hepatic protein levels of cytochrome P450 2E1 (CYP2E1) were measured by Western blotting after mice were fasted overnight without APAP treatment. (C) N-acetyl-p-benzoquinone imine (NAPQI)-protein adducts in liver were measured by Western blotting 2 hr after APAP treatment.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68571/elife-68571-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Female WT, Chil1-/- and Cd44-/- mice were treated with acetaminophen (APAP). Serum ALT levels were measured at 6 and 24 hr after APAP treatment (n = 6–8 mice/group). One-way ANOVA was performed.
 
 To investigate the role of CD44 in mediating the function of Chi3l1, we treated Cd44-/- mice with rmChi3l1 simultaneously with APAP challenge. We found that rmChi3l1 had no effect on platelet recruitment or AILI in Cd44-/- mice (Figure 3D–F). This is in stark contrast to restoring platelet accumulation and increasing AILI by rmChi3l1 treatment in Chil1-/- mice (Figure 1E, F and 2E). However, these effects of rmChi3l1 in Chil1-/- mice were abrogated when CD44 was blocked by using an anti-CD44 antibody (Figure 3—figure supplement 1A–C). Together, these data demonstrate a critical role of CD44 in mediating Chi3l1-induced hepatic platelet accumulation and AILI.
 
 CYP2E1-mediated APAP bio-activation to form NAPQI and the detoxification of NAPQI by glutathione (GSH) are important in determining the degrees of AILI (Hinson et al., 2004). Although unlikely, there is a possibility that the phenotypes observed in Chil1-/- and Cd44-/- mice were due to the effects of gene deletion on APAP bio-activation. To address this concern, we compared the levels of GSH, liver CYP2E1 protein expression, and NAPQI-protein adducts among WT, Chil1-/- and Cd44-/- mice (Figure 3—figure supplement 2A–C). However, we did not observe any difference, suggesting that Chi3l1 or CD44 deletion does not affect APAP bio-activation and its direct toxicity to hepatocytes. Moreover, although we used male mice performed all of the experiments, we observed a similar phenotype in female Chil1-/- and Cd44-/- mice as in male mice (Figure 3—figure supplement 3).
 
-## Hepatic Mɸs promote platelet recruitment
+### Hepatic Mɸs promote platelet recruitment
 
 To further identify the cell type on which Chi3l1 binds to CD44, we incubated liver NPCs with His-tagged rmChi3l1. We found that almost all CD44+Chi3l1+ cells were F4/80+ Mɸs (Figure 3—figure supplement 2D). This finding suggested the possible involvement of hepatic Mɸs in platelet recruitment. We performed IHC staining of liver biopsies from AILI patients and observed co-localization of Mɸs (CD68+) and platelets (CD41+) (Figure 4A). In the livers of APAP-treated mice, adherence of platelets to Mɸs was also observed by IHC (Figure 4B) and intravital microscopy (Figure 2B). Quantification of the staining confirmed that there were higher numbers of platelets adherent to Mɸs than to liver sinusoidal endothelial cells (LSECs) after APAP challenge (Figure 4B).
 
@@ -178,13 +489,21 @@ To further investigate the role of hepatic Mɸs in platelet recruitment during A
 
 To better investigate the role of hepatic Mɸs in platelet recruitment, we set out to identify a time period in which both KCs and IMs are absent after CLDN treatment. We measured hepatic Mɸs by flow cytometry at various time points after CLDN treatment and established a ‘New Strategy’, in which mice were injected with CLDN and after 9 hr treated with APAP. As shown in Figure 4D, at 6 hr after APAP challenge (15 hr after CLDN), both KCs and IMs were dramatically reduced. Interestingly, when compared to control mice treated with empty liposomes, CLDN-treated mice developed markedly reduced liver injury with nearly no platelet accumulation in the liver (Figure 4D–F, ‘New Strategy’). These data suggest that hepatic Mɸs play a crucial role in platelet recruitment into the liver, thereby contributing to AILI.
 
-## Chi3l1/CD44 signaling in Mɸs upregulates podoplanin expression and platelet adhesion
+### Chi3l1/CD44 signaling in Mɸs upregulates podoplanin expression and platelet adhesion
 
 To further understand how Chi3l1/CD44 signaling in Mɸs promotes platelet recruitment, we measured Mɸs expression of a panel of adhesion molecules known to be important in platelet recruitment (Hamburger and McEver, 1990; Hitchcock et al., 2015; Larsen et al., 1989; Simon et al., 2000). Our data showed that podoplanin is expressed at a much higher level in hepatic Mɸs isolated from APAP-treated WT mice than those from Chil1-/- or Cd44-/- mice (Figure 5A). Interestingly, rmChi3l1 treatment of Chil1-/-, but not Cd44-/- mice, markedly increased the podoplanin mRNA and protein expression levels in Mɸs (Figure 5B,C). To examine the role of podoplanin in mediating platelet adhesion to Mɸs, we blocked podoplanin using an anti-podoplanin antibody in Chil1-/- mice reconstituted with rmChi3l1. As shown in Figure 5D–F, blockade of podoplanin not only abrogated rmChi3l1-mediated platelet recruitment into the liver but also significantly reduced its effect on increasing AILI in Chil1-/- mice.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68571/elife-68571-fig5-v2.jpg)
+
+**Figure 5.:** (A) Male WT, Chil1-/-, Cd44-/- mice were treated with acetaminophen (APAP) (n = 4 mice/group). After 3 hr, mice were sacrificed and Mɸs were isolated to measure mRNA levels of various adhesion molecules, including selectin P ligand (Selplg), Cd40, melanoma cell adhesion molecule (Mcam), Fc receptor (Fcr), intercellular adhesion molecule 1 (Icam1), lymphocyte function-associated antigen 1 (Lfa1), von Willebrand factor (Vwf), and podoplanin (Pdpn). (B, C) Wild-type (WT) mice were treated with APAP. Chil1-/- and Cd44-/- mice were treated with PBS or rmChi3l1 followed by APAP challenge simultaneously and mice were sacrificed 3 hr after APAP (n = 3 mice/group). (B) Mɸs were isolated and mRNA levels of Pdpn in Mɸs were analyzed by quantitative reverse transcription polymerase chain reaction (qRT-PCR). (C) Immunofluorescence (IF) staining of liver sections for podoplanin and F4/80 is shown and the proportions of Mɸs that express Pdpn were quantified, Scale bar, 25 μm. (D–F) Chil1-/- mice reconstituted with rmChi3l1 were treated with either Ctrl IgG or α-podoplanin Ab for 16 hr and subsequently challenged with APAP. (D) Serum levels of ALT and (E) liver histology were evaluated 24 hr after APAP treatment (n = 6 mice/group). Scale bar, 250 μm. (F) IF staining for intrahepatic platelets (CD41+) and Mɸs (F4/80+) was performed 3 hr after APAP (n = 3 mice/group). Scale bar, 25 μm. One-way ANOVA were performed in A–C. Two-tailed, unpaired Student’s t-test was performed in D.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68571/elife-68571-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Mɸs were isolated from wild-type (WT) mice treated with acetaminophen (APAP) for 3 hr. The cells were treated in vitro with either control IgG (Ctrl IgG) or an anti-podoplanin antibody (α-podoplanin Ab) before incubation with platelets. Immunofluorescence (IF) staining was performed to detect podoplanin on Mɸs and C-type lectin-like receptor 2 (Clec-2) on platelets. Scale bar, 25 μm.
+
 Clec-2 is the only platelet receptor known to bind podoplanin (Kerrigan et al., 2012). To further elucidate the role of podoplanin in mediating platelet adhesion to Mɸs, we isolated Mɸs from WT mice treated with APAP. After treating Mɸs with anti-podoplanin antibody or IgG as control, we added platelets. IF staining of podoplanin and Clec-2 showed that the Clec-2-expressing platelets only bound to IgG-treated, but not anti-podoplanin-treated Mɸs (Figure 5—figure supplement 1). Together, our data demonstrate that Mɸs recruit platelets through podoplanin and Clec-2 interaction, and that the podoplanin expression on Mɸs is regulated by Chi3l1/CD44 signaling.
 
-## Evaluation of the therapeutic potential of targeting Chi3l1 in the treatment of AILI
+### Evaluation of the therapeutic potential of targeting Chi3l1 in the treatment of AILI
 
 Although NAC greatly reduces morbidity and mortality from ALF due to APAP overdose, the death rate and need for liver transplantation remain unacceptably high. While elucidating the underlining biology of Chi3l1 in AILI, we also generated mAbs specifically recognizing either mouse or human Chi3l1. We screened a panel of anti-mouse Chi3l1 monoclonal antibodies (α-mChi3l1 mAb) to determine their efficacies in attenuating AILI. We injected WT mice with an α-mChi3l1 mAb or IgG at 3 hr after APAP challenge. Our data showed that clone 59 (C59) had the most potent effects on inhibiting APAP-induced hepatic platelet accumulation and attenuating AILI (Figure 6A–C).
 

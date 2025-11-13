@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.06426.001 The entorhinal cortex (EC) is the primary site of interactions between the neocortex and hippocampus. Studies in rodents and nonhuman primates suggest that EC can be divided into subregions that connect differentially with perirhinal cortex (PRC) vs parahippocampal cortex (PHC) and with hippocampal subfields along the proximo-distal axis. Here, we used high-resolution functional magnetic resonance imaging at 7 Tesla to identify functional subdivisions of the human EC. In two independent datasets, PRC showed preferential intrinsic functional connectivity with anterior-lateral EC and PHC with posterior-medial EC. These EC subregions, in turn, exhibited differential connectivity with proximal and distal subiculum. In contrast, connectivity of PRC and PHC with subiculum followed not only a proximal-distal but also an anterior-posterior gradient. Our data provide the first evidence that the human EC can be divided into functional subdivisions whose functional connectivity closely parallels the known anatomical connectivity patterns of the rodent and nonhuman primate EC. DOI: http://dx.doi.org/10.7554/eLife.06426.001
+The entorhinal cortex (EC) is the primary site of interactions between the neocortex and hippocampus. Studies in rodents and nonhuman primates suggest that EC can be divided into subregions that connect differentially with perirhinal cortex (PRC) vs parahippocampal cortex (PHC) and with hippocampal subfields along the proximo-distal axis. Here, we used high-resolution functional magnetic resonance imaging at 7 Tesla to identify functional subdivisions of the human EC. In two independent datasets, PRC showed preferential intrinsic functional connectivity with anterior-lateral EC and PHC with posterior-medial EC. These EC subregions, in turn, exhibited differential connectivity with proximal and distal subiculum. In contrast, connectivity of PRC and PHC with subiculum followed not only a proximal-distal but also an anterior-posterior gradient. Our data provide the first evidence that the human EC can be divided into functional subdivisions whose functional connectivity closely parallels the known anatomical connectivity patterns of the rodent and nonhuman primate EC.
 
 ## Introduction
 
@@ -40,47 +40,240 @@ Here, we used ultra-high resolution fMRI at 7 Tesla to characterize the function
 
 ## Results
 
-## Entorhinal connectivity topography related to PRC and PHC seeds
+### Entorhinal connectivity topography related to PRC and PHC seeds
 
-## Seed-to-voxel connectivity of PRC vs PHC with EC
+#### Seed-to-voxel connectivity of PRC vs PHC with EC
 
-We used 7T high-resolution fMRI to characterize and compare intrinsic functional connectivity profiles of PHC and PRC seed regions with the EC. Particularly, we investigated correlations of activity over time (spontaneous changes in the BOLD signal) between individually defined PRC and PHC seed regions and the EC across subjects. Seed-to-voxel correlation analyses were performed on the native (unnormalized) residual fMRI data after extraction of task-related activity (see ‘Materials and methods’ section for details). Resulting connectivity maps were normalized on a group-specific T1-template by means of Region of Interest-Advanced Normalization Tools (ROI-ANTS;
+We used 7T high-resolution fMRI to characterize and compare intrinsic functional connectivity profiles of PHC and PRC seed regions with the EC. Particularly, we investigated correlations of activity over time (spontaneous changes in the BOLD signal) between individually defined PRC and PHC seed regions and the EC across subjects. Seed-to-voxel correlation analyses were performed on the native (unnormalized) residual fMRI data after extraction of task-related activity (see ‘Materials and methods’ section for details). Resulting connectivity maps were normalized on a group-specific T1-template by means of Region of Interest-Advanced Normalization Tools (ROI-ANTS; Klein et al., 2009; Yassa and Stark, 2009; Avants et al., 2011). The template has the same resolution and alignment as the functional images, such that coronal images (as in Figure 1) are oriented orthogonal to the longitudinal axis of the hippocampus. Note that our terminology of axes (anterior-posterior, lateral-medial and dorsal-ventral) always refers to the longitudinal hippocampal axis, although the hippocampus has a slightly upward-tilted position when moving from anterior to posterior within the brain. Group results maps were masked with a manually-defined EC ROI.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06426/elife-06426-fig1-v1.jpg)
 
-**Figure 1.:** Group results for seed-to-voxel connectivity of bilateral PRC and PHC seeds with the EC shown for Experiment 1 (one-sample t-test; Z > 2.3, pcluster < 0.05, NExp. 1 = 15). Bright regions denote overlapping connectivity with PRC/PHC. Single-subject beta maps were normalized on the group-specific T1-template by ROI-based alignment with ANTS and masked with a manually defined EC ROI. The T1-template has the same resolution (and alignment) as the high-resolution functional EPI volumes (0.8 mm × 0.8 mm × 0.8 mm). See also Figure 1—figure supplement 1 for results of Exp. 2. ROI: region of interest.DOI: http://dx.doi.org/10.7554/eLife.06426.003
+**Figure 1.:** Group results for seed-to-voxel connectivity of bilateral PRC and PHC seeds with the EC shown for Experiment 1 (one-sample t-test; Z > 2.3, pcluster < 0.05, NExp. 1 = 15). Bright regions denote overlapping connectivity with PRC/PHC. Single-subject beta maps were normalized on the group-specific T1-template by ROI-based alignment with ANTS and masked with a manually defined EC ROI. The T1-template has the same resolution (and alignment) as the high-resolution functional EPI volumes (0.8 mm × 0.8 mm × 0.8 mm). See also Figure 1—figure supplement 1 for results of Exp. 2. ROI: region of interest.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/06426/elife-06426-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.06426.004
+Group-level functional connectivity profiles of each seed region for Experiment 1 and 2 are shown in Figure 1 and Figure 1—figure supplement 1, respectively (voxelwise one-sample t-tests, Z > 2.3, pcluster < 0.05). While the PRC showed significant connectivity with bilateral EC clusters covering approximately the anterior two-thirds of the EC, significant functional connectivity of the PHC was found with bilateral EC clusters comprising about the posterior two-thirds of the EC (see also peak coordinates of significant clusters in Table 1). Additionally, PRC-connectivity clusters were limited to progressively more lateral regions of the EC when moving posteriorly while PHC-connectivity clusters were limited to progressively more medial regions of the EC when moving anteriorly. Overlapping connectivity with both seeds was strongest in the transition zone between anterior-posterior and lateral-medial EC (see bright regions in Figure 1 and Figure 1—figure supplement 1).
 
-Group-level functional connectivity profiles of each seed region for Experiment 1 and 2 are shown in Figure 1 and Figure 1—figure supplement 1, respectively (voxelwise one-sample t-tests, Z > 2.3, pcluster < 0.05). While the PRC showed significant connectivity with bilateral EC clusters covering approximately the anterior two-thirds of the EC, significant functional connectivity of the PHC was found with bilateral EC clusters comprising about the posterior two-thirds of the EC (see also peak coordinates of significant clusters in Table 1). Additionally, PRC-connectivity clusters were limited to progressively more lateral regions of the EC when moving posteriorly while PHC-connectivity clusters were limited to progressively more medial regions of the EC when moving anteriorly. Overlapping connectivity with both seeds was strongest in the transition zone between anterior-posterior and lateral-medial EC (see bright regions in Figure 1 and Figure 1—figure supplement 1).10.7554/eLife.06426.005Table 1.Univariate group-results for seed-to-voxel connectivity of PRC and PHC seeds with the ECDOI: http://dx.doi.org/10.7554/eLife.06426.005ClusterClusterClusterPeakPeak coordinate (template)SidePFWE-corrPFDR-corrSizeZ-scorexyzExperiment 1PRC seed<0.001<0.0015175.051531498R<0.001<0.0012734.8210814612LPHC seed<0.001<0.0013805.291501299R<0.001<0.0015105.0510613812LPRC > PHC0.0380.022424.311511508R0.0010.001914.041011469LPHC > PRC0.0080.005614.1515013110R0.0010.002873.5310813611LExperiment 2PRC seed<0.001<0.0017774.8210915220L<0.001<0.0018494.7314914510RPHC seed<0.001<0.0016695.3114713713R<0.001<0.0016374.9110713914LPRC > PHC<0.001<0.0011674.7010515315LPHC > PRC0.0220.024664.091531309R0.0470.026533.7410813618LEntorhinal subregions showing significant functional connectivity (one-sample t-test) or differential connectivity (paired t-test) with bilateral PRC or PHC seeds (Z > 2.3, pcluster <0.05, NExp. 1 = 15, NExp. 2 = 14). Single-subject beta maps were normalized on the group-specific T1-template and masked with a manually defined EC ROI. The EC covered 26 coronal slices on the template (y = 154: most anterior slice, y = 129: most posterior slice), with coronal slices being oriented orthogonal to the hippocampal long-axis. See also Figure 1 and Figure 1—figure supplement 1.
+**Table 1.**
+ Univariate group-results for seed-to-voxel connectivity of PRC and PHC seeds with the EC
 
-Paired t-tests revealed those EC regions that exhibited significant stronger connectivity with PRC than PHC seeds, and vice versa (see
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th>Cluster</th>
+      <th>Cluster</th>
+      <th>Cluster</th>
+      <th>Peak</th>
+      <th colspan="3">Peak coordinate (template)</th>
+      <th rowspan="2">Side</th>
+    </tr>
+    <tr>
+      <th>PFWE-corr</th>
+      <th>PFDR-corr</th>
+      <th>Size</th>
+      <th>Z-score</th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="9">Experiment 1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PRC seed</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>517</td>
+      <td>5.05</td>
+      <td>153</td>
+      <td>149</td>
+      <td>8</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>273</td>
+      <td>4.82</td>
+      <td>108</td>
+      <td>146</td>
+      <td>12</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PHC seed</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>380</td>
+      <td>5.29</td>
+      <td>150</td>
+      <td>129</td>
+      <td>9</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>510</td>
+      <td>5.05</td>
+      <td>106</td>
+      <td>138</td>
+      <td>12</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PRC &gt; PHC</td>
+      <td>0.038</td>
+      <td>0.022</td>
+      <td>42</td>
+      <td>4.31</td>
+      <td>151</td>
+      <td>150</td>
+      <td>8</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>91</td>
+      <td>4.04</td>
+      <td>101</td>
+      <td>146</td>
+      <td>9</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PHC &gt; PRC</td>
+      <td>0.008</td>
+      <td>0.005</td>
+      <td>61</td>
+      <td>4.15</td>
+      <td>150</td>
+      <td>131</td>
+      <td>10</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>0.001</td>
+      <td>0.002</td>
+      <td>87</td>
+      <td>3.53</td>
+      <td>108</td>
+      <td>136</td>
+      <td>11</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td colspan="9">Experiment 2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PRC seed</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>777</td>
+      <td>4.82</td>
+      <td>109</td>
+      <td>152</td>
+      <td>20</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>849</td>
+      <td>4.73</td>
+      <td>149</td>
+      <td>145</td>
+      <td>10</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PHC seed</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>669</td>
+      <td>5.31</td>
+      <td>147</td>
+      <td>137</td>
+      <td>13</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>637</td>
+      <td>4.91</td>
+      <td>107</td>
+      <td>139</td>
+      <td>14</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>PRC &gt; PHC</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>167</td>
+      <td>4.70</td>
+      <td>105</td>
+      <td>153</td>
+      <td>15</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PHC &gt; PRC</td>
+      <td>0.022</td>
+      <td>0.024</td>
+      <td>66</td>
+      <td>4.09</td>
+      <td>153</td>
+      <td>130</td>
+      <td>9</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>0.047</td>
+      <td>0.026</td>
+      <td>53</td>
+      <td>3.74</td>
+      <td>108</td>
+      <td>136</td>
+      <td>18</td>
+      <td>L</td>
+    </tr>
+  </tbody>
+</table>
+
+_Entorhinal subregions showing significant functional connectivity (one-sample t-test) or differential connectivity (paired t-test) with bilateral PRC or PHC seeds (Z > 2.3, pcluster <0.05, NExp. 1 = 15, NExp. 2 = 14). Single-subject beta maps were normalized on the group-specific T1-template and masked with a manually defined EC ROI. The EC covered 26 coronal slices on the template (y = 154: most anterior slice, y = 129: most posterior slice), with coronal slices being oriented orthogonal to the hippocampal long-axis. See also Figure 1 and Figure 1—figure supplement 1._
+
+Paired t-tests revealed those EC regions that exhibited significant stronger connectivity with PRC than PHC seeds, and vice versa (see Table 1). While stronger functional connectivity of the PRC was found with bilateral clusters in the anterior-lateral EC (al-EC), the PHC showed relatively stronger connectivity with bilateral clusters located in the posterior-medial EC (pm-EC). Paired t-test results are illustrated for Experiment 1 on Figure 2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06426/elife-06426-fig2-v1.jpg)
 
-**Figure 2.:** (A) To assess differential connectivity of PRC vs PHC with the EC, voxelwise paired-sample t-tests were performed on the normalized single-subject beta maps (resulting from seed-to-voxel connectivity analyses). Significant clusters for Exp. 1 are shown for two coronal sample slices (Z > 2.3. pcluster < 0.05, NExp. 1 = 15) at the level of the anterior (1) and posterior (2) hippocampal head. (B) To visualize the 3-dimensional geometry of connectivity, the connectivity preference with PRC vs PHC of each EC voxel was plotted along the x-, y-, and z-axis (red: TPRC > PHC > 0, blue: TPHC > PRC > 0). Axes terminology is relative to the long-axis of the hippocampus. (C) Classification of PRC vs PHC connectivity preference was tested across subjects based on the x-y-z coordinate of an EC voxel. Multivariate classification (support vector machine; leave-one-subject-out cross-validation) was significant across both data sets (p < 0.001; accuracies: Exp. 1: left: 62%, right: 60%, Exp. 2: left: 67%, right: 57%), which confirms a spatial dissociation of entorhinal connectivity with PRC vs PHC. Predicted clusters are color-coded in red vs. blue, bright regions denote high consistency of the classifier (accuracy for each voxel across subjects). Results are shown for Exp. 1. See also Figure 2—figure supplement 1 for 3D plots of Exp. 2 and for unilateral seeds of Exp. 1.DOI: http://dx.doi.org/10.7554/eLife.06426.006
+**Figure 2.:** (A) To assess differential connectivity of PRC vs PHC with the EC, voxelwise paired-sample t-tests were performed on the normalized single-subject beta maps (resulting from seed-to-voxel connectivity analyses). Significant clusters for Exp. 1 are shown for two coronal sample slices (Z > 2.3. pcluster < 0.05, NExp. 1 = 15) at the level of the anterior (1) and posterior (2) hippocampal head. (B) To visualize the 3-dimensional geometry of connectivity, the connectivity preference with PRC vs PHC of each EC voxel was plotted along the x-, y-, and z-axis (red: TPRC > PHC > 0, blue: TPHC > PRC > 0). Axes terminology is relative to the long-axis of the hippocampus. (C) Classification of PRC vs PHC connectivity preference was tested across subjects based on the x-y-z coordinate of an EC voxel. Multivariate classification (support vector machine; leave-one-subject-out cross-validation) was significant across both data sets (p < 0.001; accuracies: Exp. 1: left: 62%, right: 60%, Exp. 2: left: 67%, right: 57%), which confirms a spatial dissociation of entorhinal connectivity with PRC vs PHC. Predicted clusters are color-coded in red vs. blue, bright regions denote high consistency of the classifier (accuracy for each voxel across subjects). Results are shown for Exp. 1. See also Figure 2—figure supplement 1 for 3D plots of Exp. 2 and for unilateral seeds of Exp. 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/06426/elife-06426-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** A) and unilateral (B) PRC vs PHC seeds with the EC for Experiment 2 (A) and Experiment 1 (B).DOI: http://dx.doi.org/10.7554/eLife.06426.007
-
-## Three-dimensional topography of entorhinal connectivity
+#### Three-dimensional topography of entorhinal connectivity
 
 In order to assess and visualize the 3-dimensional topography of differential EC connectivity with PRC vs PHC seeds, we plotted the connectivity preference of each voxel along the x-y-z direction (see Figure 2B and Figure 2—figure supplement 1A). Connectivity preference was defined on the basis of the paired t-test t-maps (red: TPRC > PHC > 0; blue: TPHC > PRC > 0). These plots indicated a complex 3-dimensional topography of EC connectivity with a gradient of PRC-to-PHC preference running from anterior-ventral-lateral to posterior-dorsal-medial EC. In addition, we plotted functional connectivity preference of unilateral (left and right) PRC/PHC seeds with both the ipsi- and contralateral EC to evaluate whether connectivity patterns were symmetric across hemispheres (see Figure 2—figure supplement 1B for results of data set 1). These additional analyses confirmed the findings of bilateral connectivity analyses with an anterior-posterior and lateral-medial gradient of EC connectivity for contralateral PRC and PHC seeds. These findings also suggest that the dissociation of EC connectivity cannot be simply explained by local autocorrelations of neighboring voxels.
 
 Our next analyses assessed the reliability of topographic differences in EC connectivity with PHC and PRC. If the topographic organization is reliable across participants, then it should be possible to predict the connectivity preference of specific EC voxels within any participant, simply by knowing the connectivity preferences of corresponding voxels in other participants. To test this strong prediction, we conducted a multivariate pattern classification analysis using a leave-one-subject-out cross-validation scheme. Specifically, we trained a multivariate support vector machine classifier (see ‘Materials and methods’ section) on data from all but one subject, entering only the x-, y-, and z-coordinates of each voxel and the relative preference of PRC and PHC connectivity (based on the subject's paired t-test t-maps, analogous to the definition of preference in the previous section). The classifier was then tested on the remaining subject, and the accuracy of this validation step was calculated as the proportion of EC voxels that were classified correctly as being preferentially connected to PRC or PHC in the tested subject. The training and cross-validation steps were repeated for all combinations of participants, and a mean classification accuracy score was computed. Classification accuracy was significantly above chance across both data sets (p < 0.001). Mean classifier accuracies across all EC voxels and subjects were around 60% (Exp. 1: left 62%, right 60%, Exp. 2: left 67%, right 57%). However, connectivity preference of voxels in the very anterior-lateral and posterior-medial EC could be predicted with more than 80% accuracy. These analyses confirm a spatial dissociation in connectivity between EC subregions with regard to PRC vs PHC seeds. Predicted clusters of preferential connectivity are color-coded in Figure 2C (bright regions denote high consistency of the classifier).
 
-Moreover, we repeated the classification analysis on the combined data of both studies to predict al-EC and pm-EC functional subregions (based on preferential connectivity with PRC vs PHC) across all participants. Anatomical landmarks for these clusters are described further below in ‘Landmarks for delineation of al-EC and pm-EC’ and al-EC and pm-EC masks in template and MNI space are available online (Source codes 1, 2). Moreover, predicted al-EC and pm-EC subregions as well as the subicular and parahippocampal subregions are shown in a 3D animation in Video 1.10.7554/eLife.06426.012Video 1.3D animation of entorhinal, subicular and parahippocampal subregions.DOI: http://dx.doi.org/10.7554/eLife.06426.012
+Moreover, we repeated the classification analysis on the combined data of both studies to predict al-EC and pm-EC functional subregions (based on preferential connectivity with PRC vs PHC) across all participants. Anatomical landmarks for these clusters are described further below in ‘Landmarks for delineation of al-EC and pm-EC’ and al-EC and pm-EC masks in template and MNI space are available online (Source codes 1, 2). Moreover, predicted al-EC and pm-EC subregions as well as the subicular and parahippocampal subregions are shown in a 3D animation in Video 1.
 
-## PRC and PHC show significantly different connectivity patterns along the transverse and longitudinal axis of the EC
+![Video 1.](https://cdn.elifesciences.org/articles/06426/elife-06426-media1.mp4.jpg)
 
-Anatomical studies in rodents have demonstrated a rostrolateral-caudomedial dissociation of EC connectivity with PRC vs PHC, and data in nonhuman primates suggest a similar gradient of differential connectivity along anterior-posterior and lateral-medial axes (
+#### PRC and PHC show significantly different connectivity patterns along the transverse and longitudinal axis of the EC
+
+Anatomical studies in rodents have demonstrated a rostrolateral-caudomedial dissociation of EC connectivity with PRC vs PHC, and data in nonhuman primates suggest a similar gradient of differential connectivity along anterior-posterior and lateral-medial axes (Suzuki and Amaral, 1994; Witter et al., 2000a; van Strien et al., 2009). In order to directly test for significant differences of PRC vs PHC intrinsic functional connectivity between the anterior vs posterior and lateral vs medial EC, we divided the template EC ROI equally into four portions: anterior-lateral, anterior-medial, posterior-lateral and posterior-medial (see Figure 3A, right panel). Mean parameter estimates for PRC and PHC connectivity (mean betas) were extracted across all voxels in each section for each subject. Note that the lateral-medial split was performed for each coronal slice individually as the EC is curved along the longitudinal axis and furthermore, that this separation also corresponds to a ventral-dorsal split.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06426/elife-06426-fig3-v1.jpg)
 
-**Figure 3.:** (A) To test for an anterior-posterior or lateral-medial dissociation of EC connectivity with PRC vs PHC seeds (upper panel, left), we divided the EC template mask into four equal portions (upper panel, right) and extracted mean parameter estimates (betas) from each subsection. (B) Repeated-measures ANOVAs revealed significant seed (PRC vs PHC) × anterior-posterior EC section and seed × lateral-medial EC section interactions (p < 0.001 for both data sets; NExp1 = 15, NExp2 = 14). Slice-by-slice plots of connectivity estimates along the longitudinal and transverse EC axis confirmed an anterior-to-posterior and lateral-to-medial dissociation with decreasing PRC-connectivity and increasing PHC-connectivity. As the number of sagittal EC slices differed from anterior to posterior, we divided each coronal EC slice into 5 equal portions (with 1 being most lateral and 5 most medial EC) and calculated mean betas for each portion.DOI: http://dx.doi.org/10.7554/eLife.06426.008
+**Figure 3.:** (A) To test for an anterior-posterior or lateral-medial dissociation of EC connectivity with PRC vs PHC seeds (upper panel, left), we divided the EC template mask into four equal portions (upper panel, right) and extracted mean parameter estimates (betas) from each subsection. (B) Repeated-measures ANOVAs revealed significant seed (PRC vs PHC) × anterior-posterior EC section and seed × lateral-medial EC section interactions (p < 0.001 for both data sets; NExp1 = 15, NExp2 = 14). Slice-by-slice plots of connectivity estimates along the longitudinal and transverse EC axis confirmed an anterior-to-posterior and lateral-to-medial dissociation with decreasing PRC-connectivity and increasing PHC-connectivity. As the number of sagittal EC slices differed from anterior to posterior, we divided each coronal EC slice into 5 equal portions (with 1 being most lateral and 5 most medial EC) and calculated mean betas for each portion.
 
 Repeated-measures ANOVAs with PRC and PHC connectivity estimates revealed significant two-way interactions of seed region × anterior-posterior EC section (Exp. 1: F(1,14) = 56.0, p < 0.001; Exp. 2: F(1,13) = 95.9, p < 0.001) and seed region × lateral-medial EC section (Exp. 1: F(1,14) = 11.3, p = 0.005; Exp. 2: F(1,13) = 32.8, p < 0.001).
 
@@ -88,25 +281,23 @@ Follow-up paired sample t-tests confirmed significantly greater PRC than PHC con
 
 To characterize the topography of PRC and PHC functional connectivity with voxels along the longitudinal (anterior to posterior) and transverse (lateral to medial) axis of the EC, we plotted mean parameter estimates for each slice (see Figure 3B). These slice-by-slice plots further confirmed a dominant topographical organization of EC connectivity along the longitudinal axis with decreasing PRC connectivity and increasing PHC connectivity from anterior to posterior to EC. Furthermore, lateral to medial connectivity plots demonstrated decreasing PRC and increasing PHC connectivity.
 
-## Subicular connectivity profiles related to functional EC subregions and PRC/PHC
+### Subicular connectivity profiles related to functional EC subregions and PRC/PHC
 
-## EC subregions differentially interact with proximal and distal subiculum
+#### EC subregions differentially interact with proximal and distal subiculum
 
 Anatomical studies in rodents have demonstrated that LEC and MEC exhibit different patterns of connectivity along the proximo-distal (transverse) axis of the subiculum and CA1 (e.g., Witter et al., 2000a). Similarly, anterolateral vs posteromedial EC regions in nonhuman primates have been shown to exhibit differential connectivity with proximal vs distal subiculum and CA1 (Witter and Amaral, 1991). These findings motivated us to test whether functional connectivity between our functional EC subregions and the hippocampus is topographically organized. Within the hippocampus, we focused on the subiculum, based on previous findings demonstrating that the topographic organization of cortico-hippocampal functional connectivity is most prominent in the subiculum (Libby et al., 2012).
 
 Consistent with our previous analyses for the EC, we divided the subiculum into four equal portions along the longitudinal (anterior vs posterior) and transverse (lateral [‘proximal’] vs medial [‘distal’]) axis. We then extracted mean parameter estimates of functional connectivity with anterior-lateral and posterior-medial EC for each subicular section and each subject and submitted them to a factorial ANOVA to test for connectivity differences as a function of EC subregion (al-EC vs pm-EC) and anterior vs posterior and proximal vs distal subiculum subregions. Similar to the division of the EC, we performed the proximal-distal cut individually for each coronal subiculum slice.
 
-Repeated-measures ANOVAs with EC seed connectivity estimates revealed a significant two-way interaction of seed EC subregion × proximal vs distal subiculum (Exp. 1: F(1,14) = 25.7, p < 0.001; Exp. 2: F(1,13) = 24.3, p < 0.001). However, there was no interaction between EC seed region and longitudinal subiculum sections (p > 0.26). Follow-up t-tests confirmed that the proximal subiculum showed significantly greater connectivity with al-EC than with pm-EC (Exp. 1: t(14) = 2.27; p = 0.040; Exp. 2: t(13) = 2.15; p = 0.049) and, conversely, that distal subiculum showed significantly greater connectivity with pm-EC than with al-EC (Exp. 1: t(14) = 3.06; p = 0.008; Exp. 2: t(13) = 4.24, p = 0.001). Slice-by-slice plots confirmed that connectivity of the al-EC decreased from proximal (lateral) to distal (medial) subiculum, whereas pm-EC connectivity increased (see
+Repeated-measures ANOVAs with EC seed connectivity estimates revealed a significant two-way interaction of seed EC subregion × proximal vs distal subiculum (Exp. 1: F(1,14) = 25.7, p < 0.001; Exp. 2: F(1,13) = 24.3, p < 0.001). However, there was no interaction between EC seed region and longitudinal subiculum sections (p > 0.26). Follow-up t-tests confirmed that the proximal subiculum showed significantly greater connectivity with al-EC than with pm-EC (Exp. 1: t(14) = 2.27; p = 0.040; Exp. 2: t(13) = 2.15; p = 0.049) and, conversely, that distal subiculum showed significantly greater connectivity with pm-EC than with al-EC (Exp. 1: t(14) = 3.06; p = 0.008; Exp. 2: t(13) = 4.24, p = 0.001). Slice-by-slice plots confirmed that connectivity of the al-EC decreased from proximal (lateral) to distal (medial) subiculum, whereas pm-EC connectivity increased (see Figure 4A and Figure 4—figure supplement 1A for data of Experiment 1 and 2, respectively).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06426/elife-06426-fig4-v1.jpg)
 
-**Figure 4.:** (A) To test for differential connectivity of EC functional subdivisions with the subiculum, anterior-lateral EC (al-EC) and posterior-medial EC (pm-EC) regions that exhibited preferential connectivity with PRC vs PHC, respectively (see paired t-tests in Figure 2A) were used as seed regions. The subiculum ROI was equally divided into four portions along the longitudinal (anterior vs posterior) and transverse (proximal vs distal) axis and mean betas of functional connectivity with EC seeds extracted for each subsection. Repeated-measures ANOVAs revealed a significant seed (al-EC vs pm-EC) × proximal-distal subiculum interaction in both datasets (p < 0.001; NExp1 = 15, NExp2 = 14; results shown for Exp. 1). Slice-by-slice plots of connectivity estimates demonstrated decreasing al-EC-connectivity and increasing pm-EC connectivity from proximal to distal subiculum but no anterior-posterior dissociation. (B) Similarly, connectivity for PRC vs PHC seeds with the subiculum along the longitudinal and transverse axis was evaluated. Seed (PRC vs PHC) × proximal-distal subiculum section interactions were significant across both datasets (p < 0.01) with preferential connectivity of PRC with proximal and PHC with distal subiculum, respectively. Slice-by-slice plots of connectivity estimates along the hippocampal long axis revealed stronger PRC connectivity with the most anterior and stronger PHC connectivity with the most posterior subiculum (= 8 slices), respectively (Exp. 1). See also Figure 4—figure supplement 1 for data of Exp. 2.DOI: http://dx.doi.org/10.7554/eLife.06426.009
+**Figure 4.:** (A) To test for differential connectivity of EC functional subdivisions with the subiculum, anterior-lateral EC (al-EC) and posterior-medial EC (pm-EC) regions that exhibited preferential connectivity with PRC vs PHC, respectively (see paired t-tests in Figure 2A) were used as seed regions. The subiculum ROI was equally divided into four portions along the longitudinal (anterior vs posterior) and transverse (proximal vs distal) axis and mean betas of functional connectivity with EC seeds extracted for each subsection. Repeated-measures ANOVAs revealed a significant seed (al-EC vs pm-EC) × proximal-distal subiculum interaction in both datasets (p < 0.001; NExp1 = 15, NExp2 = 14; results shown for Exp. 1). Slice-by-slice plots of connectivity estimates demonstrated decreasing al-EC-connectivity and increasing pm-EC connectivity from proximal to distal subiculum but no anterior-posterior dissociation. (B) Similarly, connectivity for PRC vs PHC seeds with the subiculum along the longitudinal and transverse axis was evaluated. Seed (PRC vs PHC) × proximal-distal subiculum section interactions were significant across both datasets (p < 0.01) with preferential connectivity of PRC with proximal and PHC with distal subiculum, respectively. Slice-by-slice plots of connectivity estimates along the hippocampal long axis revealed stronger PRC connectivity with the most anterior and stronger PHC connectivity with the most posterior subiculum (= 8 slices), respectively (Exp. 1). See also Figure 4—figure supplement 1 for data of Exp. 2.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/06426/elife-06426-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** A) and PRC/PHC seeds (B) for Experiment 2.DOI: http://dx.doi.org/10.7554/eLife.06426.010
-
-## Repeated-measures ANOVAs and slice-by-slice plots for PRC/PHC seeds
+#### Repeated-measures ANOVAs and slice-by-slice plots for PRC/PHC seeds
 
 Previous human resting-state fMRI studies at 3 Tesla (Kahn et al., 2008; Libby et al., 2012) have reported reliable differences in connectivity between the PRC and PHC with the hippocampus along the longitudinal hippocampal axis, most prominently with the subiculum (Libby et al., 2012). However, a dissociation of PRC vs PHC connectivity along the proximo-distal axis of the subiculum, as demonstrated between PRC and POR in rodents (Naber et al., 1999, 2001; Agster and Burwell, 2013), has not been reported so far in humans.
 
@@ -118,11 +309,11 @@ Slice-by-slice plots further confirmed a dissociation of PRC/PHC connectivity al
 
 However, we note that we did not segment the subiculum within the hippocampal tail (where anatomical borders are difficult to delineate) and thus might underestimate any difference in the posterior subiculum.
 
-## The topographic organization of PRC and PHC connectivity with subiculum differs from that of al-EC and pm-EC with subiculum
+#### The topographic organization of PRC and PHC connectivity with subiculum differs from that of al-EC and pm-EC with subiculum
 
 The above analyses revealed that the connectivity differences between al-EC and pm-EC along the transverse axis of the subiculum parallel the differences between PRC and PHC. However, only PRC and PHC seeds showed dissociable connectivity gradients along the longitudinal axis of the subiculum, whereas no such difference was seen between al-EC and pm-EC. This suggests that the gradients of al-EC and pm-EC connectivity with subiculum are not merely a reflection of their differential connectivity with PRC and PHC. To quantify the differences between the connectivity profiles of entorhinal functional subregions and PRC/PHC along the long axis of the subiculum, we calculated differences between al-EC/pm-EC and PRC/PHC connectivity estimates for anterior and posterior subiculum subsections. Repeated-measures ANOVAs revealed a significant interaction between seed regions (∆al-EC/pm-EC vs ∆PRC/PHC) × longitudinal subiculum section (anterior vs posterior) for Experiment 1 (F(1,14) = 7.3, p = 0.017) with a similar trend evident in the dataset of Experiment 2 (F(1,13) = 3.4, p = 0.087). These additional analyses show that functional connectivity profiles of PRC vs PHC and al-EC vs pm-EC with the subiculum differ along the longitudinal hippocampal axis.
 
-## Landmarks for delineation of al-EC and pm-EC
+#### Landmarks for delineation of al-EC and pm-EC
 
 We used the multivariate classification approach to predict al-EC and pm-EC subregions across all subjects. Based on the relative connectivity preference of an EC voxel across subjects the classifier predicts PRC or PHC connectivity preference for the left out subject. Thereby we can compute consistency maps that show the consistency of predictions for each EC voxel across all subjects. This revealed regions of high and low consistency. Based on the predictions of the classifier we created a PRC-connectivity preference (‘al-EC’) and a PHC-connectivity preference EC (‘pm-EC’) mask. To provide these masks in a more usable manner (not on a partial volume T1-template), we created a whole brain high-resolution T1-template based on the MPRAGEs of all participants (N = 29; voxel size: 0.6 mm3 isotropic, AC-PC aligned). We then aligned the EC masks on the whole-brain template (linear registration) and manually corrected outer borders, if these did not fit perfectly.
 
@@ -134,11 +325,11 @@ Al-EC and pm-EC masks as well as the whole brain T1-template are available onlin
 
 ## Discussion
 
-We report the first detailed topographic parcellation of the human EC on the basis of its functional connectivity with neocortical and hippocampal subregions. In two independent samples, our analyses revealed that anterior-lateral and posterior-medial EC subregions (al-EC and pm-EC, respectively) exhibited distinct patterns of intrinsic functional connectivity with regions in the neocortex (PRC and PHC) and hippocampal formation (subiculum). Specifically, the al-EC region could be delineated on the basis of preferential connectivity with PRC, whereas the borders of pm-EC were derived from connectivity with PHC. Al-EC and pm-EC, in turn, were found to have preferential connectivity with proximal and distal subiculum, respectively. Moreover, the pattern of subiculum connectivity with al-EC and pm-EC was partially distinct from its connectivity with PRC and PHC. A schematic summary of functional connectivity gradients in the subiculum related to PRC/PHC seeds and EC subdivisions is illustrated in
+We report the first detailed topographic parcellation of the human EC on the basis of its functional connectivity with neocortical and hippocampal subregions. In two independent samples, our analyses revealed that anterior-lateral and posterior-medial EC subregions (al-EC and pm-EC, respectively) exhibited distinct patterns of intrinsic functional connectivity with regions in the neocortex (PRC and PHC) and hippocampal formation (subiculum). Specifically, the al-EC region could be delineated on the basis of preferential connectivity with PRC, whereas the borders of pm-EC were derived from connectivity with PHC. Al-EC and pm-EC, in turn, were found to have preferential connectivity with proximal and distal subiculum, respectively. Moreover, the pattern of subiculum connectivity with al-EC and pm-EC was partially distinct from its connectivity with PRC and PHC. A schematic summary of functional connectivity gradients in the subiculum related to PRC/PHC seeds and EC subdivisions is illustrated in Figure 5. These results reveal the functional topography of the human EC as a gateway between neocortex and hippocampus and show remarkable accordance with principles known from anatomical studies of rodents (rostrolateral vs caudomedial; for reviews see Witter et al., 2000a; van Strien et al., 2009) and studies of nonhuman primates (anterolateral vs posteromedial; see e.g., Witter and Amaral, 1991; Suzuki and Amaral, 1994). As we describe below, these data provide a link between basic and translational research on the human medial temporal lobes (Small et al., 2011; Ranganath and Ritchey, 2012) and results from detailed circuit level analyses of the rodent hippocampal formation (e.g., Moser and Moser, 2013).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06426/elife-06426-fig5-v1.jpg)
 
-**Figure 5.:** (A) Functional connectivity analyses revealed preferential connectivity of PRC (red) with the anterior-lateral EC and PHC (blue) with the posterior-medial EC. Regarding the subiculum, PRC showed strongest connectivity with most anterior and proximal parts, whereas PHC showed strongest connectivity with most posterior and distal parts of the subiculum. (B) Anterior-lateral (red) and posterior-medial (blue) EC exhibited a similar dissociation in connectivity with the subiculum along its transverse (proximal-distal) axis but there was no trend for a dissociation of entorhinal connectivity along the longitudinal axis of the subiculum.DOI: http://dx.doi.org/10.7554/eLife.06426.011
+**Figure 5.:** (A) Functional connectivity analyses revealed preferential connectivity of PRC (red) with the anterior-lateral EC and PHC (blue) with the posterior-medial EC. Regarding the subiculum, PRC showed strongest connectivity with most anterior and proximal parts, whereas PHC showed strongest connectivity with most posterior and distal parts of the subiculum. (B) Anterior-lateral (red) and posterior-medial (blue) EC exhibited a similar dissociation in connectivity with the subiculum along its transverse (proximal-distal) axis but there was no trend for a dissociation of entorhinal connectivity along the longitudinal axis of the subiculum.
 
 Previous fMRI studies have used functional connectivity analyses on data collected at 3T to characterize topographic patterns of connectivity between the PRC, PHC, and hippocampal subfields (Lacy and Stark, 2012; Libby et al., 2012). These studies have generally found that PRC and PHC exhibit different patterns of connectivity along the longitudinal axis of the hippocampus. Unfortunately, these studies could not address the topographic organization of connectivity within the EC, possibly due to limitations in resolution and SNR. The present results demonstrate that the enhanced resolution and sensitivity of ultra-high field fMRI can overcome these limitations and reveal fine-grained topographical patterns in connectivity. Three-dimensional plots of entorhinal connectivity preferences revealed a gradient of decreasing PRC and increasing PHC connectivity running from anterior-lateral to posterior-medial EC. It is notable that, by training a pattern classifier on the coordinates of EC voxels that showed preferential connectivity with PRC or PHC within a subset of participants, we could reliably predict these voxels in the remaining participant. This finding indicates that the topography of neocortical connectivity within the EC is highly conserved across participants, which, in turn, could indicate fundamental functional differences between the two EC subdivisions.
 
@@ -156,21 +347,21 @@ To summarize, the results of the present study provide a detailed description of
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Two independent samples of 21 and 22 young, healthy subjects underwent high resolution fMRI scanning (Exp. 1: mean age 26 ± 3.6 yrs, 12 male; Exp. 2: mean age 28 ± 3.9 yrs, 7 male). Exclusion criteria were metallic implants (other than standard dental implants), tinnitus, known metabolic disorders or a history of neurological or psychiatric disorders. Both studies were approved by the local ethics committee of the University Magdeburg. All subjects gave written informed consent and consent to publish prior to participation and received monetary compensation for participation. Six subjects from Experiment 1 and six from Experiment 2 were excluded due to strong dropouts in the PRC and/or EC or due to severe movement artifacts. Functional connectivity analyses were performed on the residuals of task data after extraction of task effects (NExp. 1 = 15, NExp. 2 = 14).
 
-## Tasks
+### Tasks
 
-## Experiment 1 (encoding of novel vs familiar images of scenes)
+#### Experiment 1 (encoding of novel vs familiar images of scenes)
 
 During the fMRI session, subjects performed an incidental visual encoding paradigm. In 1 run, 120 new images (60 indoor and 60 outdoor), 60 ‘noise’ images and 60 repetitions of one familiar image were presented randomly. The familiar image and the ‘noise’ images were familiarized using 10 repetitions each directly before the functional MR scan. Subjects made an indoor/outdoor judgment for each image by button press (for more details, see Maass et al., 2014).
 
-## Experiment 2 (Differentiation of original images and similar lures)
+#### Experiment 2 (Differentiation of original images and similar lures)
 
 During fMRI data acquisition subjects performed an explicit mnemonic discrimination task. Stimuli were presented in short sequences consisting of 3–5 stimulus presentations of the same two stimuli (two similar versions of the same indoor scene). Sequences were presented in an event-related design. Each stimulus was presented for 3 s and stimuli were separated by a presentation of a scrambled noise picture for 3.5 s to prevent after-image or pop-out effects. Sequences were separated by a presentation of a fixation star for 4 s. Subjects had to keep the first stimulus of each sequence (target) in mind and indicate the third presentation of this exact stimulus via button press with their right index finger.
 
-## Data acquisition and preprocessing
+### Data acquisition and preprocessing
 
 MRI data were acquired using a 7T MR system (Siemens, Erlangen, Germany). A 32-channel head coil was used (Nova Medical, Willmington, MA). First, a high-resolution whole head MPRAGE volume (TE = 2.8 ms, TR = 2500 ms, TI = 1050 ms, flip angle = 5°, resolution 0.6 mm isotropic) was acquired.
 
@@ -184,7 +375,7 @@ FMRI data pre-processing and statistical modeling was done in SPM8 (Wellcome Dep
 
 To remove task effects, general linear models were run (including all task conditions and the movement parameters) and the residual images were saved for subsequent intrinsic functional connectivity analyses. Based on previous studies suggesting a linear superposition of task activity and spontaneous BOLD fluctuations, removing task-induced variance of event-related fMRI data should yield a remaining residual signal similar to ‘continuous’ resting state data (e.g., Fox et al., 2006). Although quantitative differences between residuals derived from task data and continuous resting state data have been reported (Fair et al., 2007), in qualitative terms, patterns of functionally connected regions have been shown to be remarkably consistent (Fair et al., 2007; Lacy and Stark, 2012).
 
-## Segmentation of regions of interest
+### Segmentation of regions of interest
 
 In order to analyze PRC vs PHC seed-to-voxel connectivity, we manually segmented PRC and PHC regions of interest (ROIs) for each subject on the individual high resolution MPRAGEs (which had been bias-corrected and coregistered to the individual mean EPIs). Furthermore, the EC and the subiculum were labelled on the T1-group template in order to analyze PRC vs PHC connectivity topography within the EC and al-EC vs pm-EC as well as PRC vs PHC connectivity topography within the subiculum, respectively, at group level (individual beta-maps were registered to the template). ROIs were traced on consecutive coronal slices bilaterally using MRIcron (Chris Rorden, Version 4 April 2011).
 
@@ -196,11 +387,11 @@ Subsequently, PRC and PHC masks were coregistered and resliced to the individual
 
 Probabilistic white matter (WM) and cerebral spinal fluid (CSF) masks were generated by automated segmentation (SPM8, ‘New Segment’) of the co-registered MPRAGE images and thresholded at p(tissue) > 0.95.
 
-## First-level functional connectivity analyses
+### First-level functional connectivity analyses
 
 We performed seed-to-voxel correlational analyses on the native (preprocessed, unnormalized) residual fMRI data using the conn-toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012). First, functional connectivity patterns of PRC vs PHC seeds with the EC were analyzed. For each functional connectivity analysis, seed regions' average time series were generated as regressors of interest. As covariates of no interest, WM and CSF time series and subjects' realignment parameters (including spike regressors) were included to account for physiological noise and movements, respectively. Functional data were band-pass filtered for frequencies of 0.01–0.1 Hz. Bivariate correlations were computed, resulting in beta maps containing Fisher-transformed correlation coefficients. To perform group analyses, beta maps were registered to the group-specific T1 template (see below) and Z-standardized.
 
-## Cross-participant alignment for group analyses
+### Cross-participant alignment for group analyses
 
 In order to enable precise cross-participant alignment for hippocampal and parahippocampal regions, we used Region of Interest-Advanced Normalization Tools (ROI-ANTS [Klein et al., 2009; Yassa and Stark, 2009; Avants et al., 2011]).
 
@@ -210,15 +401,15 @@ Second, a study-specific template was created (from individual MPRAGE images of 
 
 Third, the expectation-based point set registration (‘pse’; step size: SyN[0.5]) was used to register the individual MPRAGEs on the T1-template based on the labeled points sets (= MTL masks). The resulting transformation matrix was then applied to each participant's beta map as well as to the MTL masks in order to verify alignment precision. Finally, the aligned beta images were submitted to second-level group analyses.
 
-## Second-level analyses
+### Second-level analyses
 
-## Univariate
+#### Univariate
 
 First, we calculated single-seed group connectivity maps using voxelwise one-sample t-tests to characterize the intrinsic connectivity profiles of PHC and PRC with EC (Figure 1 and Figure 1—figure supplement 1A). Additionally, paired t-tests were performed to determine significant differences in PRC vs PHC connectivity (Figure 2A). Resulting t-maps were masked with the EC ROI and significant clusters determined by cluster-extent based thresholding (Z > 2.3; pcluster < 0.05). In addition, we visualized the differential topographic pattern of PRC vs PHC connectivity along the x-y-z direction in three-dimensional plot of connectivity preference for each voxel (see Figure 2B). These analyses indicated relatively stronger connectivity of the PRC with the anterior-ventral-lateral EC and stronger connectivity of the PHC with the posterior-dorsal-medial EC.
 
 In a next step, to directly test for significant differences between anterior/posterior and lateral/medial regions of the EC, we divided the template EC ROI into four equally-sized sections along the longitudinal and horizontal (or transverse) plane, corresponding to coronal and sagittal cuts, respectively. As mentioned previously, the planes are defined in reference to the longitudinal axis of the hippocampus (which also corresponds to the EC long-axis). The lateral vs medial division was performed for each coronal slice individually in order to ensure equally-sized portions along the longitudinal axis. Mean parameter estimates were extracted from each of the four subsections for each subject (from the group-registered beta maps). The resulting PRC and PHC connectivity estimates were submitted to a 2 × 2 × 2 repeated-measures ANOVA with seed ROI (PHC vs PRC), longitudinal EC section (anterior vs posterior), and horizontal EC section (lateral vs medial) as factors. Furthermore, we assessed connectivity gradients across the longitudinal and horizontal axes by plotting slice-by-slice mean parameter estimates. As the number of transverse EC slices differed along the longitudinal axis (between 5 and 11 slices), we divided each coronal EC slice into 5 equal sections and calculated mean betas for each section. The same approach was used to test for differential connectivity of EC subregions and PRC/PHC with the subiculum along the longitudinal or transverse axis.
 
-## Multivariate
+#### Multivariate
 
 Finally, we used a multivariate classifier (linear CSVMC) to further investigate the reliability of the topography of PRC vs PHC preferential connectivity within the EC. A linear support vector machine classifier (Linear CSVMC, Chang and Lin, 2011) was trained and tested on the x-y-z coordinates of all EC voxels across all subjects using PyMVPA 2.2.0 (Hanke et al., 2009). Independent data chunks were defined according to the individual subjects of each study. Each chunk consisted of the same amount of samples (EC voxels). For the purpose of evaluation of classification validity, a leave-one-subject-out cross-validation was performed. In each of the validation steps, a linear support vector machine was trained on the data of all but one subject and tested on the remaining one. Accuracy of the validation step was calculated as the proportion of the samples (voxels) that were classified correctly (as being preferentially connected to PRC or PHC). Overall classification accuracy was defined as the mean accuracy of all validation steps across subjects.
 

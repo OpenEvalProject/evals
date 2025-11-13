@@ -30,7 +30,7 @@ Compared to the comprehensive structural and biochemical characterization of Nat
 
 ## Results
 
-## hNatB is potently inhibited by a CoA-αSyn conjugate
+### hNatB is potently inhibited by a CoA-αSyn conjugate
 
 While attempts to express recombinant hNatB in E. coli were unsuccessful, we found that overexpression of hNatB complex with full-length hNAA25 (residues 1–972) and C-terminally truncated hNAA20 (residue 1–163 out of 178 total residues) in baculovirus-infected Sf9 insect cells produced soluble protein that could be purified to homogeneity (Figure 1A). To evaluate the activity of the recombinant hNatB, we tested it against different peptide substrates. αSyn with an N-terminal sequence of ‘MDVF’ has been widely considered as an in vivo hNatB substrate (Van Damme et al., 2012; Anderson et al., 2006; Ohrfelt et al., 2011; Theillet et al., 2016). We, therefore, incorporated this sequence into a peptide substrate named ‘MDVF’ for an in vitro acetyltransferase assay (‘MDVF’ peptide sequence: NH2-MDVFMKGRWGRPVGRRRRP-COOH). In agreement with in vivo studies (Van Damme et al., 2012; Anderson et al., 2006; Ohrfelt et al., 2011; Theillet et al., 2016), we observed that the purified recombinant hNatB was active against this ‘MDVF’ peptide, while no activity could be observed in the absence of either the enzyme or peptide (Figure 1B). hNatB also showed no observable activity if either the first residue ‘M’ or the first two residues ‘MD’ in this αSyn peptide substrate was removed (‘DVFM’ peptide sequence: NH2-DVFMKGLRWGRPVGRRRRP-COOH; ‘VFMK’ peptide sequence: NH2-VFMKGLSRWGRPVGRRRRP-COOH; Figure 1B), suggesting that peptide substrate recognition by NatB is highly dependent on the first two N-terminal residues. To further confirm the substrate specificity of hNatB, we tested it against several previously identified peptide substrates for other NATs (‘SASE’ peptide sequence (NatA-type): NH2-SASEAGVRWGRPVGRRRRP-COOH; ‘MLRF’ peptide sequence (NatC-type): NH2-MLRFVTKRWGRPVGRRRRP-COOH; ‘SGRG’/H4 peptide sequence (NatD-type): NH2-SGRGKGGKGLGKGGAKRHR-COOH; ‘MLGP’ peptide sequence (NatE-type): NH2-MLGPEGGRWGRPVGRRRRP-COOH; Figure 1B). Consistent with previous results (Van Damme et al., 2012), hNatB is only active toward its unique canonical substrate type, displaying no overlapping activity toward other NAT substrates.
 
@@ -40,17 +40,319 @@ While attempts to express recombinant hNatB in E. coli were unsuccessful, we fou
 
 In order to understand the mechanism of hNatB substrate recognition, we synthesized a bi-substrate inhibitor in which the first 10 residues of αSyn are covalently linked to CoA (Liszczak et al., 2013) for enzymatic and structural studies. Half-maximum inhibitory concentration (IC50) determinations revealed that this CoA-αSyn conjugate had an IC50 of about 1.63 ± 0.13 µM (Figure 1C), significantly lower than the Km values we had determined for hNatB toward a ‘MDVF’ peptide (45.08 ± 3.15 µM) and acetyl-CoA (47.28 ± 5.70 µM) (Table 1).
 
-## hNatB reveals potentially biologically significant structural differences with hNatA and caNatB
+**Table 1.**
+ Catalytic parameter of wild-type hNatB and mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substrate</th>
+      <th>Protein</th>
+      <th>Kcat (min−1)</th>
+      <th>Kcat (normalized to WT)</th>
+      <th>Km (μM)</th>
+      <th>Km (normalized to WT)</th>
+      <th>Kcat/Km (normalized to WT)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acetyl-CoA</td>
+      <td>WT</td>
+      <td>9.25 ± 0.29</td>
+      <td>1</td>
+      <td>47.28 ± 5.70</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="12">MDVF peptide</td>
+      <td>WT</td>
+      <td>7.63 ± 0.14</td>
+      <td>1.0</td>
+      <td>45.08 ± 3.15</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>E25A</td>
+      <td>8.31 ± 0.35</td>
+      <td>1.1</td>
+      <td>39.30 ± 6.62</td>
+      <td>0.87</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Y27A</td>
+      <td>16.73 ± 2.11</td>
+      <td>2.2</td>
+      <td>75.03 ± 33.26</td>
+      <td>1.7</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>H73A</td>
+      <td>0.89 ± 0.14</td>
+      <td>0.12</td>
+      <td>54.76 ± 32.81</td>
+      <td>1.2</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>R84A</td>
+      <td>13.86 ± 1.75</td>
+      <td>1.8</td>
+      <td>320.8 ± 96.7</td>
+      <td>7.1</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>R85A</td>
+      <td>18.65 ± 1.02</td>
+      <td>2.4</td>
+      <td>109.6 ± 19.33</td>
+      <td>2.4</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>G87A</td>
+      <td>14.86 ± 0.56</td>
+      <td>1.9</td>
+      <td>78.16 ± 10.25</td>
+      <td>1.7</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>N116A</td>
+      <td>0.90 ± 0.06</td>
+      <td>0.12</td>
+      <td>39.86 ± 11.84</td>
+      <td>0.88</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Y123A</td>
+      <td>0.34 ± 0.03</td>
+      <td>0.045</td>
+      <td>9.04 ± 3.81</td>
+      <td>0.20</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Y123F</td>
+      <td>0.94 ± 0.06</td>
+      <td>0.12</td>
+      <td>42.43 ± 11.52</td>
+      <td>0.94</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Y137A</td>
+      <td>6.43 ± 0.23</td>
+      <td>0.84</td>
+      <td>53.67 ± 9.63</td>
+      <td>1.2</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>Y138A</td>
+      <td>3.09 ± 0.25</td>
+      <td>0.40</td>
+      <td>44.23 ± 13.87</td>
+      <td>0.98</td>
+      <td>0.41</td>
+    </tr>
+  </tbody>
+</table>
+
+### hNatB reveals potentially biologically significant structural differences with hNatA and caNatB
 
 We performed single particle cryo-EM of hNatB in the presence of the CoA-αSyn conjugate. A 3.46 Å-resolution cryo-EM three-dimensional (3D) map was determined from 982,420 particles, selected from 5281 raw electron micrographs (Table 2, Figure 2—figure supplement 1 and Figure 2—figure supplement 2). The central core region of the EM map contains excellent sidechain density with a local resolution of ~2.5 Å, particularly around the catalytic subunit, hNAA20.
 
+**Table 2.**
+ Cryo-EM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>hNatB/CoA-αSyn complex EMD-21307 PDB: 6VP9 EMPIAR-10477</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection and processing</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>105,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (keV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e/Å2)</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.5 to −2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particles (no.)</td>
+      <td>1,927,675</td>
+    </tr>
+    <tr>
+      <td>Final particles (no.)</td>
+      <td>982,420</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.46</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>2.5–4.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Model resolution range (Å)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−191.177</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model composition</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>8611</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1077</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td colspan="2">B factors (Å2)</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>2.51/84.68/33.39</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>17.07/19.91/19.74</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.M.S. deviations</td>
+    </tr>
+    <tr>
+      <td>Bonds lengths (Å)</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.105</td>
+    </tr>
+    <tr>
+      <td colspan="2">Validation</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.73</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>3.98</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>90.10</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>9.71</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.19</td>
+    </tr>
+  </tbody>
+</table>
+
 Consistent with previous NAT structural studies, the atomic model of hNatB features a catalytic subunit, hNAA20, that adopts a canonical Gcn5-related N-acetyltransferase (GNAT) fold (Deng and Marmorstein, 2020; Neuwald and Landsman, 1997). Additionally, the model reveals that the auxiliary subunit hNAA25 is composed of a total of 39 α-helices among where the predicted first and second α-helices were built as poly-alanine due to a lack of resolvable sidechain density (Figure 2—figure supplement 3). The 39 α-helices can be roughly divided into three groups: an N-terminal region: α1-α8; a core region: α9-α29; and a C-terminal region: α30-α39 (Figure 2A and Video 1). The N-terminal region (residue 1–164) displays relatively weak EM density compared to other regions, suggesting that it is relatively flexible (Figure 2—figure supplement 2). The eight helices of the N-terminal region form four helical bundle tetratricopeptide repeat (TPR) motifs, which often participate in protein-protein interactions. While there are no visible contacts between the N-terminal TPR motifs and hNAA20, it is possible that this region participates in ribosome association, similar to the N-terminal region of the NAA15 auxiliary subunits of Schizosaccharomyces pombe (Magin et al., 2017) and Saccharomyces cerevisiae (Knorr et al., 2019) NatA. The 21 helices of the core region also form a number of TPR motifs, which come together to form a ring that completely wraps around and extensively contacts hNAA20 within its hollow center (Figure 2A). Indeed, the interaction between hNAA20 and the TPR motifs of this core region buries a total interface area of about 2300 Å2. In the core region, it is noteworthy that there is a long α-helix (α28, ranging 30 residues) that traverses almost from one side of the complex to the other. The α28 helix closes the core ring structure, locking hNAA20 in position, and bridging the N- and C-terminal and regions. This is similar to the role played by α29-α30 of the hNAA15 auxiliary subunit of hNatA (Figure 2A and B). The C-terminal region features helices that bundle together to protrude out of the plane of the core ring structure at an angle of ~45° (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57491/elife-57491-fig2-v2.jpg)
+
+**Figure 2.:** (A) hNaa20 (light orange) and hNaa25 (cyan) are shown in cartoon. The CoA-αSyn conjugate inhibitor is shown in sticks and colored as magenta. The N- and C- terminal regions are indicated as ‘N-region’ and ‘C-region’, respectively. Some helices are as labeled. (B) hNaa20 (light orange) and hNaa25 (cyan) are shown overlapped with hNatA (marine blue, PDB: 6C9M). Small molecule IP6 bound to hNatA is shown as surface representation (red). (C) hNaa20 (light orange) and hNaa25 (cyan) are shown superimposed on CaNatB (slate blue, PDB:5K04).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57491/elife-57491-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 2D and 3D classification scheme for hNatB EM map determination. (B) Local resolution map of hNatB. (C) Gold standard Fourier shell correlation (FSC) curve of hNatB EM map 3D reconstruction. (D) FSC curves of the refined model versus the overall map that it was refined against (brown); of the model refined in the first of the two independent maps used for the gold-standard FSC versus that same map (green); and of the model refined in the first of the two independent maps versus the second independent map (red).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57491/elife-57491-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) A representative micrograph of a hNatB frozen grids hole (B) Atomic model of hNatB fitted into the Cryo-EM map. (C) The fit of a helical segment from hNAA20 in the EM density. The contour level is 5 sigma. (D) The fit of a helical segment from hNAA25 in the EM density. The contour level is 5 sigma. (E) The fit of hNatB in the EM density at contour levels of 4 sigma, 3 sigma, and 2 sigma.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57491/elife-57491-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Species include H. sapiens (Hs), C. albicans (Ca), D. melanogaster (Dm), S. cerevisiae (Sc), and S. pombe (Sp).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/57491/elife-57491-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) hNatB overlaid with hNatA-HYPK. hNatA and HYPK are colored as light salmon and red, respectively. N- and C- termini of the auxiliary subunits are indicated. (B) The extended loop connecting α31 to α32 is highlighted in green in hNatB. This loop is not present in hNatA (not shown).
+
+![Video 1.](https://cdn.elifesciences.org/articles/57491/elife-57491-video1.mp4.jpg)
+
+**Video 1.:** hNaa20 (light orange) and hNaa25 (cyan) are shown in cartoon. The CoA-αSyn conjugate inhibitor is shown in sticks and colored as magenta.
 
 The sequence identity of the catalytic and auxiliary subunits of hNatA and hNatB are 20% and 15%, respectively. To understand how this translates to key structural differences, we superimposed the crystal structure of hNatA (PDB: 6C9M) with our model. Between the catalytic subunits, there is a high degree of superposition (1.151 Å root-mean-square deviation [RMSD] over 105 common Cα atoms), except for an additional helix, α5, on the C-terminus of hNatA-NAA10, which is absent in hNatB-NAA20 (Figure 2B). Between the auxiliary subunits, the core and N-terminal regions of both hNatA-NAA15 and hNatB-NAA25 display similar topology, although a higher degree of deviation than the catalytic subunits. The core regions both wrap around their respective catalytic subunits (8.369 Å RMSD over 262 common Cα atoms), while the N-terminal regions jut off to the side (7.360 Å RMSD over 55 common Cα atoms). By contrast, the C-terminal regions of hNatA-NAA15 and hNatB-NAA25 diverge significantly from one another. For hNA25, the C-terminal region of hNAA25 is oriented toward its N-terminal region, while the C-terminal region of hNAA15 is positioned ~50 Å away from the relative position of the superimposed C-terminal domain of hNAA25 (Figure 2B). The positioning of hNAA25 may serve to promote hNAA25 intra-termini communication, which is similar to the interaction of hNatA and its regulatory protein HYPK (Gottlieb and Marmorstein, 2018). HYPK, which does not interact with hNatB, interacts with both the N- and C-terminal domains of hNatA-NAA15, potentially serving as bridge to enable closer communication between these two domains (Figure 2—figure supplement 4). Recent reports have described the role of the small molecule IP6 (inositol hexakisphosphate) in hNatA activity, where it is found to act as ‘glue’ between the C-terminal and core domains in hNAA15 and hNAA10 via a series of hydrogen bonds and electrostatic interactions (Gottlieb and Marmorstein, 2018; Cheng et al., 2019). While no corresponding small molecules have been identified to play a similar role in hNatB, our model shows that this interaction is replaced by an extended loop that connects the α31 helix with the α32 helix of hNatB-NAA25. This loop, which is not present in hNatA-NAA15, appears to mediate hydrophobic interactions between hNatB-NAA25 and -NAA20, likely to serve a similar role as IP6 (Figure 2—figure supplement 4B).
 
 We also compared the structures from human and the previously described C. albicans NatB (CaNatB, PDB: 5K18). Although the two superimposed structures revealed a high degree of structural conservation (NAA20: 0.698 Å RMSD over 125 common Cα atoms; NAA25 Core region: 3.267 Å RMSD over 266 common Cα atoms), the N-terminal region of hNatB-NAA25 appears to overlay more closely to hNatA-NAA15 than to CaNatB-NAA25 (Figure 2B and C). Compared to CaNAA25, the N-terminal regions of hNatB-NAA25 and hNatA-NAA15 are positioned more closely to the peptide substrate binding sites of the respective catalytic subunits. Based on the role that the N-terminal yeast NatA-Naa15p regions play in ribosome docking (Magin et al., 2017; Knorr et al., 2019), we propose that the relative shift in the position of the N-terminal regions of the human NAT auxiliary subunits, hNAA15 and hNAA25, may reflect a difference in the mechanism for ribosome association and co-translational NTA in C. albicans compared with humans. In addition, the overlay of C-terminal regions of hNAA25 and CaNAA25 displays an RMSD of 15.960 Å over 133 common Cα atoms. We observe that the main difference that contributes to this deviation in this region is the length of helices.
 
-## hNAA25 and hNAA20 make intimate interactions within hNatB
+### hNAA25 and hNAA20 make intimate interactions within hNatB
 
 The hNatB/CoA-αSyn structure reveals an extensive interaction interface between the core region of the auxiliary hNAA25 and catalytic hNAA20 subunits (Figure 3A). The most intimate contact between the two proteins is made by the α28-α29 segment of hNAA25 and almost the entire length of hNAA20 α2, creating a large hydrophobic interface (Figure 3B). Residues that contribute to the interaction include Thr26, Gly28, Ile29, Pro30, Leu33, Gln34, Leu36, Ala37, His38, and Glu41 of hNAA20 and Lys535, His536, Ile537, Phe569, Asp576, Thr577, Tyr580, Ala584, Tyr 587, Lys592, Phe596, Phe599, and Leu603 of hNAA25 (Figure 3B). Another region of interaction, involving predominantly van der Waals interaction occurs between the hNAA20 β4-α3 loop and the hNAA25 α18-α19 loop. Here residues Lys362, Pro363, Lys362,Thr367, Cys364, and Pro363 from hNAA25 and residues Arg85, Phe83, Glu82, and Arg84 from hNAA20 contribute to this small batch of hydrophobic interface (Figure 3C).
 
@@ -62,13 +364,25 @@ Additional intimate contacts between hNAA20 and hNAA25 are mediated between hNAA
 
 Different sides of hNAA20 feature several potentially hNAA25-stabilizing polar interactions. Hydrogen bonds are formed between the Asp261 sidechain of the hNAA25 α14-α15 loop and the hNAA20-Thr2 backbone nitrogen atom (Figure 3E), between the Glu227 backbone carbonyl group of hNAA25 α12-α13 loop and the hNAA20-Arg102 sidechain (Figure 3F), and between the Lys535 sidechain from NAA25 α26-α27 loop and the hNAA20-Ser141 backbone carbonyl group (Figure 3G).
 
-## hNatB makes specific interactions with the first 4 N-terminal residues of αSyn
+### hNatB makes specific interactions with the first 4 N-terminal residues of αSyn
 
 In the cryo-EM map, density for the CoA-αSyn conjugate bisubstrate inhibitor is well resolved, allowing us to confidently model the CoA portion and the first 5 N-terminal residues (of 10 residues present) of the αSyn portion (Figure 4A and B, Video 2). Similar to other NATs, CoA enters the catalytic active site through a groove formed by α3 and α4 of the catalytic subunit, while the peptide substrate enters the active site on the opposite side of the catalytic subunit flanked by the α1–2 and β6-β7 loops (Deng and Marmorstein, 2020; Figure 4A). hNAA20 contains a conserved acetyl-CoA binding motif among NATs: R84R85XG87XA89 (Figure 4—figure supplement 1). Here we observe that the positively charged hNAA20-Arg85 interacts with the negatively charged 3'-phosphorylated ADP portion of CoA to form a salt bridge while Arg84 makes Van der Waals interactions (Figure 4C and D). A hydrogen-bonding network is formed mainly between the 5’-diphosphate group and backbone atoms of a few residues including Val79, Gly87, Ala89, and Ala90 (Figure 4C and D), and mediated by the sidechains of Arg85 and Gln125. The CoA molecule anchors to the binding pocket through a series of van der Waals contacts formed by residues Ser67, Val79, Leu77, Leu88, Val118, Met 122, and Tyr123 (Figure 4D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57491/elife-57491-fig4-v2.jpg)
+
+**Figure 4.:** (A) The structure of hNAA20 bound to the CoA-αSyn conjugate bound is shown in cartoon with corresponding secondary structures labeled. (B) The fit of the CoA-αSyn conjugate ligand in the EM density map. The contour level is 4.0 sigma. (C) Interaction between CoA-αSyn conjugate and hNAA20 residues is generated with LIGPLOT (Laskowski and Swindells, 2011). Hydrogen bonds are indicated by dashed green lines, and van der Waals interactions are indicated with red semicircles. (D) Highlighted polar and hydrophobic interactions between CoA-αSyn conjugate and the hNAA20 are depicted in the 3D view.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57491/elife-57491-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Species depicted include H. sapiens (Hs), C. albicans (Ca), D. melanogaster (Dm), S. cerevisiae (Sc), and S. pombe (Sp). Blue, black and magenta labeled indicate mutation sensitive residues, CoA-binding residues, and peptide-binding residues, respectively.
+
+![Video 2.](https://cdn.elifesciences.org/articles/57491/elife-57491-video2.mp4.jpg)
+
+**Video 2.:** Amino acid sidechains that mediate hydrogen bond and van der Waals interactions with α-synuclein are highlighted in a cartoon model of NAA20.
+
 Four N-terminal residues of αSyn participate in hNAA20 interactions. Anchoring of the αSyn peptide is mediated by protein hydrogen bonds with the backbone atoms of Met1 and Asp2 of αSyn. Hydrogen bonds are formed between the backbone N-H group of αSyn-Met1 and the backbone carbonyl group of hNAA20-Phe111, as well as the backbone carbonyl group of αSyn-Met1 with the sidechain of hNAA20-Tyr138. The backbone N-H and carbonyl of αSyn-Asp2 also form hydrogen bonds to the sidechain of Tyr27 and between the backbone carbonyl group of Asp2 and sidechain of hNAA20-Tyr27 (Figure 4D). Remarkably, hNAA20 contacts each of the first 4 N-terminal residue sidechains of αSyn via van der Waals interactions. The only sidechain that forms a hydrogen bond with hNAA20 is αSyn-Asp2, which hydrogen bonds with a hNAA20-His73 ring nitrogen and the hNAA20-Thr75 sidechain (Figure 4D). The more extensive van der Waals interactions include the following: αSyn-Met1 interacts with hNAA20 residues Glu25, Phe27, Tyr56, and Ala76; αSyn-Asp2 interacts with hNAA20 residues Tyr27, Thr75, His73, Phe111, and Tyr138; αSyn-Val3 interacts with hNAA20 residues Tyr137 and Tyr138; and αSyn-Phe4 interacts with hNAA20 residues Glu25 and Als140. αSyn-Met5 does not appear to make specific interactions (Figure 4D). Consistent with the importance of the residues that mediate αSyn binding, most of the residues are highly conserved from yeast to humans (Figure 4—figure supplement 1).
 
-## Mutational analysis identifies key residues for hNatB catalysis and cognate substrate binding
+### Mutational analysis identifies key residues for hNatB catalysis and cognate substrate binding
 
 To determine the functional importance of hNAA20 residues that appear to make important peptide or CoA substrate contacts in our model, we used an in vitro acetyltransferase assay to kinetically characterize WT and mutant hNatB proteins. Each mutant was purified to homogeneity and displayed identical gel filtration chromatography elution profiles (data not shown), indicating that they were all properly folded. We prepared alanine mutants of several residues involved in the CoA binding including Arg84, Arg85, Gly87, and Tyr123. Among them, R84A, R85A, and G87A did not show significant defects in overall protein catalytic function (Table 1). However, a Y123A mutant nearly abolished protein activity, with a 95% loss of protein activity, affecting both kcat and Km (Table 1). To further interrogate the properties of this residue, we prepared a Y123F mutant which features a similar aromatic bulky sidechain but not the polar p-hydroxyl group. We observed that Y123F displayed a similar ~88% loss of kcat, but had a negligible effect on the peptide Km (Table 1). These data suggested that the Tyr123 hydroxyl group is critical for catalysis but not required for substrate binding, while the aromatic ring of Tyr123 plays a role in peptide substrate binding. Given that the hydroxyl group of Tyr123 is about 3.5 Å from the sulfur atom of the CoA-αSyn conjugate and 6.3 Å away from the αSyn N-terminus, it is in a position to play a role as a general base or acid for catalysis, potentially through an intervening water molecule (Figure 5A). This is analogous to the proposed general base role of Tyr73 as a general base for hNAA50 catalysis (Liszczak et al., 2011; see Discussion).
 
@@ -94,22 +408,179 @@ The biological importance of hNatB and its connection to various disease process
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFASTBac HTA-hNAA20(1-163) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression plasmid for hNAA20 (in Sf9 cells) and found in the Materials and methods section of this paper</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFASTBac HTA-6HIS-TEV-hNAA25(1-972) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression plasmid for hNAA25 (in Sf9 cells) and found in the Materials and methods section of this paper</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9 cells</td>
+      <td>ThermoFisher</td>
+      <td>cat #12659017</td>
+      <td>For protein expression</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MVDF peptide</td>
+      <td>GenScript</td>
+      <td>NH2-MDVFMKGRWGRPVGRRRRP-COOH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>‘SASE’ peptide</td>
+      <td>GenScript</td>
+      <td>NH2-SASEAGVRWGRPVGRRRRP-COOH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>‘MLGP’ peptide</td>
+      <td>GenScript</td>
+      <td>NH2-MLGPEGGRWGRPVGRRRRP-COOH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>‘SGRG’/H4 peptide</td>
+      <td>GenScript</td>
+      <td>NH2-SGRGKGGKGLGKGGAKRHR-COOH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>‘MLRF’ peptide</td>
+      <td>GenScript</td>
+      <td>NH2-ML RFVTKRWGRPVGRRRRP-COOH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>‘DVFM’ peptide</td>
+      <td>GenScript</td>
+      <td>NH2-DVFMKGLRWGRPVGRRRRP-COOH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>‘VFMK’ peptide</td>
+      <td>GenScript</td>
+      <td>NH2-VFMKGLSRWGRPVGRRRRP-COOH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>[14C] Acetyl-CoA (4 mCi/mmol)</td>
+      <td>PerkinElmer Life Sciences</td>
+      <td>Cat#NEC313050UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>P81 Phosphocellulose squares</td>
+      <td>EMD Millipore</td>
+      <td>Cat#20–134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Zivanov et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ResMap</td>
+      <td>Kucukelbir et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>Zhang, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 5.0</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrodinger LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 hNAA20 with a C-terminal truncation (1–163 out of 178 residues) and full-length hNAA25 were cloned into two separate insect cell expression vectors pFASTBac HTA. hNAA20 was untagged, while hNAA25 contained a Tobacco-etch virus (TEV)-cleavable N-terminal 6xHis-tag. Human NatB complex (hNAA201-163/hNAA25FL) was obtained by co-expressing these two plasmids in Sf9 (S. frugiperda) cells (ThermoFisher, cat# 12659017), and purified as described previously (Gottlieb and Marmorstein, 2018). Sf9 cells were grown to a density of 1 × 106 cells/mL and infected using the amplified hNAA201-163/hNAA25FL baculovirus to an MOI (multiplicity of infection) of 1–2. The cells were grown at 27°C and harvested for 48 hr post-infection by centrifugation. Cell pellets were resuspended in lysis buffer (25 mM Tris, pH 8.0, 300 mM NaCl, 10 mM Imidazole, 10 mM β-ME, 0.1 mg/mL PMSF, DNase, and complete, EDTA-free protease inhibitor tablet) and lysed by sonication. After centrifugation, the supernatant was isolated and passed over Ni-NTA resin (Thermo Scientific), which was subsequently washed with 10 column volumes of lysis buffer. Protein was eluted with a buffer with 25 mM Tris, pH 8.0, 300 mM imidazole, 200 mM NaCl, 10 mM β-ME, which was dialyzed into a buffer with 25 mM HEPES pH 7.5 50 mM NaCl 10 mM β-ME. Ion-exchange was carried out with an SP ion-exchange column (GE Healthcare) in dialysis buffer with a salt gradient (50–750 mM NaCl). Peak fractions were concentrated to ~0.5 mL with a 50 kDa concentrator (Amicon Ultra, Millipore), and loaded onto an S200 gel-filtration column (GE Healthcare) in a buffer with 25 mM HEPES, pH 7.5, 200 mM NaCl, and 1 mM TCEP. Proteins were aliquoted, snap-frozen in liquid nitrogen, and stored at −80°C for further use. Protein harboring mutations were generated with the QuickChange protocol (Stratagene) and obtained following the same expression and purification protocol as described for the wild-type protein. Primers synthesized for the generation mutant constructs are listed in Supplementary file 1.
 
-## Acetyltransferase activity assays
+### Acetyltransferase activity assays
 
 All acetyltransferase assays were carried out at room temperature in a reaction buffer containing 75 mM HEPES, pH 7.5, 120 mM NaCl, 1 mM DTT as described (Deng et al., 2020; Deng et al., 2019). The ‘MDVF’ peptide substrate was based on the first seven amino acid of α-Synuclein (‘MDVF’ peptide: NH2-MDVFMKGRWGRPVGRRRRP-COOH; ‘SASE’ peptide: NH2-SASEAGVRWGRPVGRRRRP-COOH; ‘MLGP’ peptide: NH2-MLGPEGGRWGRPVGRRRRP-COOH; ‘SGRG’/H4 peptide: NH2-SGRGKGGKG LGKGGAKRHR-COOH; ‘MLRF’ peptide: NH2-ML RFVTKRWGRPVGRRRRP-COOH; ‘DVFM’ peptide: NH2-DVFMKGLRWGRPVGRRRRP-COOH; ‘VFMK’ peptide: NH2-VFMKGLSRWGRPVGRRRRP-COOH; GenScript). Reactions were performed in triplicate. To determine steady-state catalytic parameters of hNatB with respect to acetyl-CoA, 100 nM hNatB was mixed with a saturating concentration of ‘MDVF’ peptide substrate (500 μM) and varying concentrations (1.95 μM to 1 mM) of acetyl-CoA (14C-labeled, 4 mCi mmol−1; PerkinElmer Life Sciences) for 10 min reactions. To determine steady-state catalytic parameters of hNatB with respect to peptide substrate, 100 nM hNatB was mixed with saturating concentrations of acetyl- CoA (300 μM, 14C-labeled) and varying concentrations of ‘MVDF’ peptide (1.95 μM to 1 mM) for 10 min. Reactions were quenched by adding the solution to P81 paper discs (Whatman). Unreacted acetyl-CoA was removed by washing the paper discs in buffer with 10 mM HEPES, pH 7.5, at least three times, each 5 min. The paper discs were then dried with acetone and transferred to 4 mL scintillation fluid for signal measurement (Packard Tri-Carb 1500 liquid scintillation analyzer). Data was fitted to a Michaelis–Menten equation in GraphPad Prism to calculate kinetic parameters. Kinetic parameters on mutants with respect to peptide were carried out in the same condition as for wild type, with 300 μM 14C labeled acetyl-CoA and varied peptide concentration (1.95 μM to 1 mM). All radioactive count values were converted to molar units with a standard curve created with known concentrations of radioactive acetyl-CoA added to scintillation fluid. GraphPad Prism (version 5.01), was used for all data fitting to the Michaelis–Menten equation. For IC50 determination of the CoA-αSyn conjugate, 100 nM hNatB was mixed with 500 μM ‘MVDF’ peptide and 300 μM 14C labeled acetyl-CoA, and inhibitor concentrations were varied (0.23 μM to 13.44 μM). Data were fit to a sigmoidal dose-response curve with GraphPad Prism (version 5.01). Errors represent s.d. (n = 3).
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 For initial sample screening, 0.6 mg/mL fresh hNatB sample with three-molar excess bisubstrate was used. hNatB particles on these grids exhibited a severe preferred orientation, which generated an incorrect 3D initial model (data not shown). To solve this issue, 1 μL of 0.05% NP-40 was mixed with 20 μL of hNatB (4 mg/mL). 3 μL of this sample was applied to glow-discharged Quantinfoil R1.2/1.3 holey carbon support grids, blotted and plunged into liquid ethane, using an FEI Vitrobot Mark IV. An FEI TF20 was used for screening the grids and data collection was performed with a Titan Krios equipped with a K3 Summit direct detector (Gatan), at a magnification of 105,000×, with defocus values from −0.1 to −2.0 µm. Each stack was exposed in super-resolution mode with a total dose of 45 e-/Å2, resulting in 35 frames per stack. Image stacks were automatically collected with Latitude software (Gatan, Inc).
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 Original image stacks were summed and corrected for drift and beam-induced motion at the micrograph level using MotionCor2 (Zheng et al., 2017), and binned twofold, resulting in a pixel size of 0.83 Å/pixel. Defocus estimation and the resolution range of each micrograph were performed with Gctf (Zhang, 2016). About 3000 particles were manually picked to generate several rough 2D class averages. Representative 2D classes were used to automatically pick ~1,927,673 particles from 5281 micrographs in Relion 3.0 (Kimanius et al., 2016; Zivanov et al., 2018). All particles were extracted and binned to accelerate the 2D and 3D classification. After bad particles were removed by 2D and 3D classification, 982, 420 particles were used for auto-refinement and per-particle CTF refinement. After refinement, a mask was created in Relion with an initial binarization threshold of 0.005, covering the protein complex and extending the binary map and soft-edge by 12 pixels. The map was sharpened with the created mask by estimating B-factor automatically in Relion. The final map was refined to an overall resolution of 3.46 Å, with local resolution estimated by Resmap (Kucukelbir et al., 2014). We attempted particle polishing on this data set but this surprisingly resulted in artifactual density in the resulting map. We believe that this was due to some small defects in the K3 camera during data collection, which corrupted the particle polishing process. We, therefore, did not perform particle polishing on this data set. Raw micrographs were deposited in EMPIAR with access ID of EMPIAR-10477.
 
-## Cryo-EM model building and refinement
+### Cryo-EM model building and refinement
 
 The hNatB atomic model was manually built de novo using the program COOT (Emsley and Cowtan, 2004) according to the cryo-EM map, with the guidance of predicted secondary structure and bulky residues such as Phe, Tyr, Trp, and Arg. The first two alpha helices of hNAA25 were built as poly-alanine due to the lack of tracible density in the 3D map. The complete model was then refined by real-space refinement in PHENIX (Adams et al., 2010). All representations of cryo-EM density and structural models were performed with Chimera (Pettersen et al., 2004) and PyMol (https://pymol.org/2/). The sequence alignments with secondary structure display were created by ESPript 3.0 (Robert and Gouet, 2014). hNAA25 TPR predictions were performed using the TPRpred server (Karpenahalli et al., 2007; Zimmermann et al., 2018; https://toolkit.tuebingen.mpg.de/#/tools/tprpred). The surface area calculation was performed using PDBePISA (Krissinel and Henrick, 2007; Proteins, Interfaces, Structures, and Assemblies; http://www.ebi.ac.uk/pdbe/pisa/).

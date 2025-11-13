@@ -38,7 +38,7 @@
 
 ## Abstract
 
-10.7554/eLife.28672.001 Oriented cell division is one mechanism progenitor cells use during development and to maintain tissue homeostasis. Common to most cell types is the asymmetric establishment and regulation of cortical NuMA-dynein complexes that position the mitotic spindle. Here, we discover that HMMR acts at centrosomes in a PLK1-dependent pathway that locates active Ran and modulates the cortical localization of NuMA-dynein complexes to correct mispositioned spindles. This pathway was discovered through the creation and analysis of Hmmr -knockout mice, which suffer neonatal lethality with defective neural development and pleiotropic phenotypes in multiple tissues. HMMR over-expression in immortalized cancer cells induces phenotypes consistent with an increase in active Ran including defects in spindle orientation. These data identify an essential role for HMMR in the PLK1-dependent regulatory pathway that orients progenitor cell division and supports neural development.
+Oriented cell division is one mechanism progenitor cells use during development and to maintain tissue homeostasis. Common to most cell types is the asymmetric establishment and regulation of cortical NuMA-dynein complexes that position the mitotic spindle. Here, we discover that HMMR acts at centrosomes in a PLK1-dependent pathway that locates active Ran and modulates the cortical localization of NuMA-dynein complexes to correct mispositioned spindles. This pathway was discovered through the creation and analysis of Hmmr-knockout mice, which suffer neonatal lethality with defective neural development and pleiotropic phenotypes in multiple tissues. HMMR over-expression in immortalized cancer cells induces phenotypes consistent with an increase in active Ran including defects in spindle orientation. These data identify an essential role for HMMR in the PLK1-dependent regulatory pathway that orients progenitor cell division and supports neural development.
 
 ## Introduction
 
@@ -54,29 +54,77 @@ Hmmr mutant mice models are viable, including when central exons are targeted in
 
 ## Results
 
-## Hmmrtm1a/tm1a neonates have reduced survival
+### Hmmrtm1a/tm1a neonates have reduced survival
 
 We generated mice encoding a targeting construct following Hmmr exon 2, termed Hmmrtm1a(EUCOMM)Hmgu (hereafter Hmmrtm1a/tm1a, Figure 1A, Figure 1—figure supplement 1A–B). Western blot analysis of lysates from tissues known to have elevated levels of HMMR expression (spleen and testes) (Line et al., 2002) using antibodies targeting the N-terminal peptide in HMMR revealed that HMMR expression was completely lost in Hmmrtm1a/tm1a mice (Figure 1B). Adult Hmmrtm1a/tm1a mice were rare, and those Hmmrtm1a/tm1a mice that did survive were smaller than their wild-type (WT) littermates (Figure 1C). Similar to the phenotypes seen in Hmmrm/m mice attributed to misoriented germ cell divisions (Li et al., 2016), we observed atrophic seminiferous tubules and an increase in apoptosis in the testes as indicated by TUNEL staining in Hmmrtm1a/tm1a mice (Figure 1D–E). Additionally, Hmmrtm1a/tm1a mice were less fertile (fewer litters and fewer pups per litter) (Figure 1F–G). Few adult Hmmrtm1a/tm1a mice survived despite no evidence of embryonic lethality at E14.5 and E18.5 (Figure 1H). To identify when Hmmrtm1a/tm1a mice were dying, we monitored neonates for 2 days following birth. 12.5% of Hmmrtm1a/tm1a neonates were found dead within 3 hr of birth and 76.9% were found dead within the first 48 hr after birth (Figure 1I).
 
-## Hmmrtm1a/tm1a mice display defects in brain structure, neural progenitor division, and differentiation
+![Figure 1.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig1-v2.jpg)
+
+**Figure 1.:** (A) Genotyping PCR confirmed insertion of the targeting vector between exon 2 and exon 4 in Hmmrtm1a/+ (Het) or Hmmrtm1a/tm1a (KO) but not in Hmmr+/+ (WT) mice. (B) HMMR expression in tissues extracted from WT, Het, or KO mice. Actin served as a loading control. (C) Weight at wean for WT and KO mice. Data are represented as mean ±SD (*p=0.028 (males), p=0.022 (females); for males, n = 10 (WT), 3 (KO); for females, n = 12 (WT), 4 (KO)). (D) Defects in seminiferous tubules are present in a KO male (*, atrophic tubules) relative to age-matched WT mouse stained with H&E. Scale bars, 200 µm. (E) Apoptosis (TUNEL staining) in KO male seminiferous tubules relative to age-matched WT mouse. Scale bars, 100 µm. (F) Number of litters per 6 months breeding time for matings of WT, Het, and KO mice. (*p<0.05; **p<0.01; n = 11 matings (WT x Het), 2 (Het x Het), 4 (WT x KO), 3 (Het x KO), 2 (KO x KO)). (G) Pups per litter for matings of WT, Het, and KO mice (See Figure 1F for n values). (H) Percentage of WT, Het, and KO pups at E14.5, E18.5 and weaning (~21 days) (***p<0.001; n = 64 (E14.5), 49 (E18.5), 133 (wean)). (I) Survival analysis for WT, Het or KO neonates during the first 48 hr following birth (n = 34 (WT), 69 (Het), 36 (KO)).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of HMMR protein/gene and mouse models. (B) Schematic of HMMR exons and the location of the primers used for genotyping PCRs.
+
+### Hmmrtm1a/tm1a mice display defects in brain structure, neural progenitor division, and differentiation
 
 Necropsy samples from Hmmrtm1a/tm1a neonates (P0-1) demonstrated morphological defects in the brain, including defects in overall structure and size (Figure 2A). In multiple matching sections taken from WT or Hmmrtm1a/tm1a neonatal brains, we measured the area of the cerebrum and ventricles. We found large variation in the size of Hmmrtm1a/tm1a neonatal brains with three of the nine measuring two standard deviations smaller (microcephaly) than the mean brain size for age-matched (P0-1) WT littermates (Figure 2B). In addition, three of nine Hmmrtm1a/tm1a neonatal brains measured two standard deviations larger (megalencephaly) than the mean brain size for age-matched (P0-1) WT littermates, but these larger areas correlated with increases in the ventricle area in two of these three Hmmrtm1a/tm1a brains (Figure 2C). The putative reduced cortical area identified in Hmmrtm1a/tm1a relative to WT brains was not accompanied by increased levels of apoptosis, as measured by TUNEL staining, at either E18.5 or P0-1 (Figure 2—figure supplement 1A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig2-v2.jpg)
+
+**Figure 2.:** (A) Hmmrtm1a/tm1a (KO) neonate brains showed abnormalities compared to Hmmr+/+ (WT) brains (*, enlarged ventricles). Scale bars, 500 μm. (B) Quantification of brain size in WT and KO neonate (P0-1) brains. Dotted line indicates average of WT brains. The grey region indicates two standard deviations from the WT mean (n = 3 (WT), 9 (KO), p=0.512). (C) Correlation between brain size and ventricular area in WT and E14.5 P0-1 brains. (D) HMMR localization to the mitotic spindle (γ-tubulin) in neuroepithelial progenitor (NP) cells of WT and KO E14.5 brains. Scale bar, 10 μm. (E) Mitotic NP cells labeled with γ-tubulin (centrosomes) and DAPI in WT and KO E14.5 brains. Scale bar, 5 μm. (F) Division angle for NP cells in WT or KO E14.5 embryos (***p<0.001; n = 94 (WT), 96 (KO)). (G) Mitotic rate in Pax6+ NP cells in WT and KO E14.5 brains. Stars indicate dividing cells. Scale bar, 10 μm. (H) Quantification of mitotic rate in WT and KO E14.5 brains. Data are represented as mean ±SD (*p=0.018; n = 4(WT), 5(KO)). (I) Tbr2 localization in WT and KO E14.5 brains. Scale bars, 20 μm. (J) Quantification of Tbr2+ cells in E14.5 brains. Data are represented as mean ±SD (*p=0.019; n = 4 (E14.5, WT), 5 (E14.5, KO)).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantification of apoptosis (TUNEL staining) in the cortex of E18.5 and PO-1 Hmmr+/+ (WT) and Hmmrtm1a/tm1a (KO) mice. Data are represented as mean ±SD (n = 4 (E18.5, WT); 6 (E18.5, KO); 3 (P0-1, WT); 5 (P0-1, KO). (B) Polarity markers were normal in WT and KO E18.5 neural progenitors. Scale bar, 5 µm. (C) Centrosome amplification was not observed in WT or KO E14.5 neural progenitors (Yellow dashed line indicates ventricle surface). Scale bar, 5 µm.
+
 A putative reduction in cortical area and the potential manifestation of enlarged ventricles (hydrocephalus) in Hmmrtm1a/tm1a mice is consistent with phenotypes associated with defects in the orientation of NP cell division (Noatynska et al., 2012; Kielar et al., 2014). As HMMR is known to regulate the cell division axis in immortalized cancer cells (Dunsch et al., 2012), we next examined the localization of HMMR and the axis of NP cell division during neurogenesis in E14.5 embryos. In WT embryos, HMMR localized to spindle microtubules in dividing NP cells lining the ventricle surface (Figure 2D). The angle of NP cell divisions measured during anaphase was strongly biased to be planar with the ventricle surface (<30 degrees off the axis of centrosomes lining the surface) with an average spindle angle of 18.0 ± 19.5 degrees (Figure 2E–F). In WT brains, 60.6% or 82.9% of divisions were oriented within 15 degrees or 30 degrees of the ventricular surface, respectively. In Hmmrtm1a/tm1a embryos, however, HMMR was absent from mitotic spindles (Figure 2D) and the axis for division was altered with an average angle of 24.8 ± 19.5 degrees (p<0.05; unpaired t-test) with only 38.5% or 66.6% of divisions oriented within 15 degrees or 30 degrees of the ventricular surface, respectively (χ2 test, p<0.001) (Figure 2E–F). The degree of misorientation observed in Hmmrtm1a/tm1a NP cells compares to that observed in LGN-mutant NP cells, which have 37.1% or 60% of divisions oriented within 15 degrees or 30 degrees of the ventricular surface, respectively (Konno et al., 2008). We also observed a significant reduction in the number of mitotic Pax6+ radial glial cells at E14.5 in the brains of Hmmrtm1a/tm1a embryos (Figure 2G–H) and a consistent, significant reduction in Tbr2+ intermediate progenitor cells in Hmmrtm1a/tm1a brains (Figure 2I–J). However, we observed no significant difference between WT and Hmmrtm1a/tm1a brains in the levels of TUNEL-positive cells in the cortex, the localization of Par3 and ZO-1 in cells lining the ventricles, or the levels of centrosome amplification in dividing NP cells (Figure 2—figure supplement 1A–C). These data support the conclusion that the reduced cortical areas observed in Hmmrtm1a/tm1a neonatal mice, which are less able to successfully transition to extrauterine life, result from the reduced production of intermediate progenitor cells that correspond with impaired planar spindle orientation during NP cell division and an overall decreased mitotic rate of Pax6+ radial glial cells.
 
-## Mitotic spindle orientation requires the centrosome targeting bZip motif in HMMR
+### Mitotic spindle orientation requires the centrosome targeting bZip motif in HMMR
 
 To better understand the mechanisms through which HMMR controls spindle orientation, we isolated mouse embryonic fibroblasts (MEFs) from WT or Hmmrtm1a/tm1a mice and imaged these cells through mitosis (Figure 3A). Hmmrtm1a/tm1a MEFs contained significantly higher levels of centrosome amplification (defined as cells containing greater than two centrosomes, which were quantified using colocalization of pericentrin and γ–tubulin) (Figure 3B–C), and were less able to orient the cell division axis, measured at anaphase relative to their long cell axis in interphase (Figure 3A,D–E). In addition, Hmmrtm1a/tm1a MEF progeny cells were more likely to display indications of genome instability, including increases in the frequency of mitotic death, binucleated progeny and micronuclei (Figure 3F). To ensure that the observed spindle orientation defects were not due to changes in cell shape that may accompany the loss of HMMR, we confirmed that the width to long axis ratio of the cell did not differ between WT or Hmmrtm1a/tm1a MEFs (Figure 3—figure supplement 1A). Thus, Hmmrtm1a/tm1a MEFs are less able to correctly orient the axis of cell division, which is similar to the defective spindle orientation that was observed following the treatment of HeLa cells with siRNA targeting HMMR (Dunsch et al., 2012).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cell division in mouse embryonic fibroblasts (MEFs) isolated from Hmmr+/+ (WT) or Hmmrtm1a/tm1a (KO) embryos. DNA is counterstained with Hoechst (red). Yellow line indicates long axis of interphase cell and red line indicates cell division axis. Scale bars, 20 μm. (B) Centrosome amplification in WT or KO MEFs indicated by colocalization of pericentrin and γ-tubulin. Arrow indicates centrosome. (C) Quantification of centrosome amplification in WT or KO MEFs. Amplification was counted as >2 centrosomes per cell as indicated by colocalization of pericentrin and γ-tubulin. Data are represented as mean ±SD (**p=0.0002; 3 replicates of ≥100 cells). (D) Schematic of spindle angle measurement in MEFs. (E) Spindle angle in WT or KO MEFs. KO MEFs were transduced with HMMR constructs truncated at the indicated amino acid. WT and KO average spindle angle are significantly different (**p<0.01; n = 117 (WT), 114 (KO), 50 (KO + FL), 56 (KO + 679), and 31 (KO + 623)). (F) Mitotic outcomes in WT or KO MEFs (n = 111 (WT) and 94 (KO)).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cell elongation in Hmmrtm1a/tm1a (KO) compared to Hmmr+/+ (WT). Data are represented as mean ±SD (n = 56 (WT); 61(KO)). (B) Localization of HMMR truncation constructs. Arrows point to the microtubule organizing center or centrosome. Scale bar, 10 µm.
+
 To uncover the critical domain in HMMR needed to establish the cell division axis, we transduced GFP-HMMR (human) constructs into Hmmrtm1a/tm1a MEFs. We used truncations of the bZip domain, which is required to target HMMR to the centrosome (Maxwell et al., 2003), including GFP- HMMRFL (full-length, FL), HMMR1-679 (truncation following the b-Zip domain), and HMMR1-623 (truncation lacking the b-Zip domain). The transduction of HMMRFL or HMMR1-679, gene products that are known to locate at centrosomes (Figure 3—figure supplement 1B)(Maxwell et al., 2003), recovered the axis of cell division (Figure 3E). However, the expression of HMMR1-623 failed to rescue the axis of cell division (Figure 3E), implicating the centrosome targeting bZip motif (amino acids 624–679) as an essential domain for the orientation of cell division.
 
-## Fixed spindle position and asymmetric cortical NuMA-dynein localization requires HMMR
+### Fixed spindle position and asymmetric cortical NuMA-dynein localization requires HMMR
 
 As the centrosome targeting domain was critical to HMMR function in spindle positioning, we next used time-lapse imaging of HeLa cells that stably expressed DHC-GFP and were previously treated with either scrambled control siRNA or siRNA targeting HMMR to determine whether the centrosome-localized, PLK1-dependent positioning pathway, which regulates the localization and activity of dynein complexes anchored at polar regions of the cortex (Kiyomitsu and Cheeseman, 2012), was functional in HMMR-silenced cells. As multipolar spindles occur at an elevated frequency in HMMR-silenced cells (Maxwell et al., 2005), we restricted our analysis to mitotic cells with phenotypically normal bipolar spindles. Immediately prior to anaphase in control-treated cells with an off-center mitotic spindle, DHC-GFP was asymmetrically localized to the far polar region of the cortex and absent from the cortex near the proximal pole leading to the correction of spindle position (Figure 4A, Video 1) as described previously (Kiyomitsu and Cheeseman, 2012). In HMMR-silenced cells with an off-center mitotic spindle, however, DHC-GFP remained on the polar cortex and its retention on the cortex predicted the direction of spindle rotation (Figure 4A, Video 2). We also measured the intensity of DHC-GFP recruited to the cortex relative to the cytoplasmic intensity and determined that overall DHC-GFP recruitment to crescents was not significantly different between scrambled control-treated and HMMR-silenced cells (Figure 4—figure supplement 1A). In addition, the spindle was maintained in an off-centered position in HMMR-silenced cells as determined by the ratio of the distance between the cortex and the location of chromosomes in anaphase cells (Figure 4B). A prolonged period of spindle rotation was frequently observed in HMMR-silenced HeLa cells expressing DHC-GFP (Figure 4C) and, as seen in separate experiments, in HMMR-silenced HeLa cells expressing mCherry histone H2B, eGFP-TUBA (Figure 4—figure supplement 1B–C; Videos 3–4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig4-v2.jpg)
+
+**Figure 4.:** (A) Localization of Dynein heavy chain tagged with GFP (DHC-GFP) stably expressed in HeLa cells treated with scrambled (siScr) or HMMR (siHMMR) siRNA using time-lapse imaging (arrows indicate predicted direction of movement). Scale bar, 10 μm. (B) Quantification of off-center spindles at anaphase start in cells treated with siScr or siHMMR (n = 25 (siScr), 26 (siHMMR)). (C) Quantitation of spindle movement in cells treated with siScr or siHMMR. Back and forth movement is exemplified by Figure 5A (top panels) and rotation is exemplified by Figure 5A (middle and bottom panels) (p<0.001; n = 22 (siScr), 28 (siHMMR)). (D) Localization of NuMA and DHC-GFP in HeLa cells transfected with siScr or siHMMR with mispositioned spindles. Scale bar, 5 μm. (E) Quantification of NuMA and DHC-GFP intensities at the farthest polar cortex compared to the proximal polar cortex in HeLa cells transfected with siScr or siHMMR. Cells are pooled from experiments in panels 1E,F. (***p<0.0001; n = 39 (untreated), 32 (siScr), 53 (siHMMR)). (F) Localization of DHC-GFP and NuMA in HeLa cells transfected with siScr or siHMMR. Scale bar, 5 μm. (G) Quantification of NuMA and DHC-GFP at the poles compared to the midzone in HeLa cells transfected with siScr or siHMMR. All data are represented as mean ±SD (p<0.001; 3 replicates of ≥25 cells).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Dynein recruitment to cortical crescents in DHC-GFP HeLa cells treated with scrambled (siScr) and HMMR (siHMMR) siRNA. Data are represented as mean ±SD (n = 25 (siScr), 20 (siHMMR)). (B) Mitotic spindle movement tracked by eGFP-TUBA stably expressed in HeLa cells treated with scrambled (siScr) or HMMR (siHMMR) siRNA using time-lapse imaging. Scale bar, 10 μm. (C) Quantitation of spindle rotation in cells treated with siScr or siHMMR. (p<0.05; n = 145 (siScr), 145 (siHMMR) from two experiments).
+
+![Video 1.](https://cdn.elifesciences.org/articles/28672/elife-28672-video1.mp4.jpg)
+
+**Video 1.:** Images were captured every 1 min.
+
+![Video 2.](https://cdn.elifesciences.org/articles/28672/elife-28672-video2.mp4.jpg)
+
+**Video 2.:** Images were captured every 1 min.
+
+![Video 3.](https://cdn.elifesciences.org/articles/28672/elife-28672-video3.mp4.jpg)
+
+**Video 3.:** Images were captured every 15 min.
+
+![Video 4.](https://cdn.elifesciences.org/articles/28672/elife-28672-video4.mp4.jpg)
+
+**Video 4.:** Images were captured every 15 min.
+
 We next examined the localization of the dynein anchoring protein NuMA in fixed HMMR-silenced cells by immunofluorescence. When the fluorescence intensity of DHC-GFP or NuMA was measured along the cortex in control-treated cells with an off-center spindle, the ratio of intensities along the far polar cortex was elevated compared to that along the proximal polar cortex (Figure 4D–E), as expected. However, NuMA was retained at the proximal polar cortex and the consequent ratio of intensities was significantly dampened in HMMR-silenced mitotic cells with an off-center metaphase spindle (Figure 4D–E). Yet, when the metaphase spindle was centered, the asymmetric cortical localization of NuMA and DHC-GFP was indistinguishable in control-treated and HMMR-silenced cells (Figure 4F–G). That is, the ratio of intensities along the polar cortex relative to the midzone cortex was elevated at the polar cortex for both NuMA and DHC-GFP, as reported (Kiyomitsu and Cheeseman, 2012). Our data indicate HMMR is dispensable for the loss of NuMA and DHC-GFP at the midzone cortical region, which is established by Ran-GTP gradient generated at chromosomes (Kiyomitsu and Cheeseman, 2012), but HMMR is needed for a centrosome-localized positioning pathway that strips NuMA and DHC-GFP when the pole is brought proximal to the cortex.
 
-## HMMR enables the PLK1-dependent spindle pole positioning pathway
+### HMMR enables the PLK1-dependent spindle pole positioning pathway
 
 We identified a requirement for HMMR in the removal of cortical NuMA-DHC-GFP, which is consistent with a prior report (Dunsch et al., 2012). However, we observed spindle rotation in HMMR-silenced cells rather than fixed and misoriented spindles (Dunsch et al., 2012). It was postulated that HMMR-DYNLL1 complexes at the centrosome functioned independent of the PLK1 intrinsic positioning pathway (Dunsch et al., 2012). That is, spindle pole-localized HMMR may create a local increase of DYNLL1 at the spindle/spindle poles that binds to dynein in competition with dynactin and displaces dynein from the cortex (Dunsch et al., 2012); however, Dyn2 (yeast DYNLL1 ortholog) promotes, rather than impedes, the incorporation of dynactin into the dynein motor complex (Stuchell-Brereton et al., 2011). So, we examined whether the loss of HMMR altered the composition of the dynein motor complex. HeLa cells expressing DHC-GFP were treated with control siRNA or siRNA targeting HMMR and DHC complexes were immunoprecipitated with antibodies recognizing GFP. In HMMR-silenced lysates, relative to control-treated lysates, the abundance of subunits for dynein (DHC, dynein intermediate chain (DIC), and DYNLL1) and dynactin (p150glued) were unchanged (Figure 5A). While the amount of DHC-GFP precipitated and the levels of DIC co-precipitated with DHC-GFP remained unaffected, the level of co-precipitated DYNLL1 was reduced in HMMR-silenced lysates (Figure 5A). Moreover, a corresponding reduction in p150glued co-precipitated with DHC-GFP was also observed in HMMR-silenced lysates (Figure 5A). We also noted that both FLAG-DYNLL1 and CHICA were retained at spindle poles, although absent from spindle fibers, in HMMR-silenced cells (Figure 5B–C). Therefore, HMMR appears dispensable for the spindle pole localization of CHICA and DYNLL1 and HMMR promotes, rather than restricts, the incorporation of p150glued into DHC complexes. As our data do not support the proposed PLK1-independent role for HMMR in spindle positioning, we investigated a putative role for HMMR in the PLK1-dependent positioning pathway.
 
@@ -86,19 +134,39 @@ We identified a requirement for HMMR in the removal of cortical NuMA-DHC-GFP, wh
 
 PLK1 activity at centrosomes and kinetochores enables the removal of LGN-NuMA-DHC complexes from the cortex (Kiyomitsu and Cheeseman, 2012; Zhu et al., 2013; Tame et al., 2016). As PLK1 activity is reduced at kinetochores in HMMR-silenced cells (Chen et al., 2014), we measured the levels of phosphorylated-PLK1, the active form of the kinase, by immunofluorescence in HMMR-silenced and control-treated mitotic cells. In HMMR-silenced mitotic cells, we observed a significant reduction in the fluorescence intensity of pPLK1 at spindle poles (Figure 5D–E). Consistent with a putative reduction in PLK1 activity at spindle poles, we observed a significant decrease in the number of EB1-positive microtubule plus ends contacting the cortex in HMMR-silenced or BI2536-treated mitotic cells (Figure 5F–G). As these data suggest HMMR enables PLK1-dependent processes, we tested if the concurrent inhibition of HMMR and PLK1 significantly altered the spindle positioning pathway when compared to the inhibition of either alone. We focused on the localization of NuMA to the cortical regions most proximal to the spindle pole in control treated, HMMR-silenced, BI2536-treated, or dual inhibited metaphase cells with off-center spindles (Figure 5H). In control-treated cells, NuMA was uniformly absent from the cortex, while NuMA was largely retained in HMMR-silenced cells with the exception of a discreet loss in the inner region directly proximal to the pole (Figure 5H–I). In mitotic cells treated with BI2536, the localization of NuMA mirrored that observed in HMMR-silenced cells and was not additively altered in dual inhibited cells (Figure 5H–I) consistent with a requirement for PLK1 and HMMR in a shared positioning pathway. Thus, our data supports the conclusion that astral microtubule density is dampened in HMMR-silenced mitotic cells in a PLK1-dependent manner, which disturbs the spindle pole-localized positioning pathway and results in spindle rotation due to the retention of NuMA-DHC complexes at the proximal cortex.
 
-## HMMR interacts with RanBP2 and regulates the centrosome localization of Ran
+### HMMR interacts with RanBP2 and regulates the centrosome localization of Ran
 
 As PLK1 phosphorylates HMMR at threonine 703 (pHMMR) (Nousiainen et al., 2006), we used mass spectrometry to identify proteins that are co-precipitated with antibodies targeting pHMMR as a means to discover putative pathways through which centrosome-localized HMMR may regulate spindle position. In pHMMR immunoprecipitates from mitotic or G2-phase synchronized HeLa cell lysates, we identified a number of actin-, myosin-, and dynein-binding proteins (Figure 6—figure supplement 1; Figure 6—source data 1), including known interactors FAM83D/CHICA and DYNLL1 (Dunsch et al., 2012). We filtered out proteins that were also co-precipitated with antibodies targeting a non-phosphorylated N-terminal peptide in HMMR (unpublished results) and found that proteins related to small GTPases, such as ARHGAP17, RACGAP1, and RanBP2, were uniquely co-precipitated with pHMMR antibodies (Figure 6A). As Ran regulates cortical LGN-NuMA-dynein localization during mitosis (Kiyomitsu and Cheeseman, 2012), we focused on the putative pHMMR-RanBP2 interaction and confirmed this interaction by western blot analysis (Figure 6B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig6-v2.jpg)
+
+**Figure 6.:** (A) Mass spectrometry analysis of proteins co-precipitated from HeLa cell lysates with antibodies targeting HMMR phosphorylated at threonine 703 (pHMMR). Proteins, other than HMMR, co-precipitated with antibodies targeting non-phosphorylated HMMR have been removed. (B) Immunoblots of mitotic HeLa extracts subjected to immunoprecipitation with pHMMR antibody or control IgG and blotted with the indicated antibodies. (C) Ran activity assay (GTP-bound Ran is immunoprecipitated) in mitotic HeLa cells transfected with scrambled (Scr) or siRNA targeting HMMR (two replicates). (D) Immunoblots of mitotic HeLa extracts treated with the indicated concentration of non-hydrolysable GTP (GTPγS) and immunoprecipitated with HMMR antibody or control IgG and blotted with the indicated antibodies (three replicates). (E) Localization of constitutively-active Ran (RanQ69L; RanCA) in mitotic HeLa cells transfected with scrambled (Scr) or siRNA targeting HMMR. Yellow boxes indicate magnified region. Scale bar, 5 μm. (F) Quantification of the ratio of intensities for RanCA relative to γ-tubulin in mitotic HeLa cells transfected with scrambled (Scr) or siRNA targeting HMMR. Data are represented as mean ±SD (**p<0.01; 3 replicates of ≥50 cells). (G) Localization of constitutively-active Ran (RanQ69L; RanCA) in cells treated with DMSO or BI2536 (Plk1 inhibitor, 20 nM). Yellow boxes indicate magnified region. Scale bar, 5 μm. (H) Quantification of RanCA localization at the centrosome in cells treated with DMSO or BI2536 (20 nM). Data are represented as mean ±SD (***p=0.0006; 2 replicates of >30 cells).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Mass spectrometry analysis of proteins co-precipitated from HeLa cell lysates with antibodies targeting HMMR phosphorylated at threonine 703 (pHMMR) including proteins co-precipitating with non-phosphorylated HMMR.
+
 RanBP2 binds specifically to Ran-GTP (Vetter et al., 1999), so we postulated that HMMR may affect Ran-GTP levels or localization. To test this postulate, we first measured the levels of Ran-GTP in scrambled siRNA-treated or HMMR-silenced HeLa cell lysates with a commercially available assay that pulls-down the active form of Ran (Ran-GTP). In control experiments, scrambled siRNA-treated HeLa cell lysates were treated with either non-hydrolysable GTP (GTPγS) or with GDP to switch all Ran to Ran-GTP or Ran-GDP, respectively, prior to immunoprecipitation. As expected, the level of co-precipitated Ran was significantly augmented in cell lysates treated with GTPγS and lost in cell lysates treated with GDP (Figure 6C). Having verified our control conditions, we then compared the levels of Ran-GTP in control-treated and HMMR-silenced cell lysates. In HMMR-silenced cell lysates, the level of Ran-GTP precipitated was slightly reduced relative to scrambled control-treated cell lysates (Figure 6C). When we confirmed the knockdown efficacy of HMMR in these experiments, we noted that HMMR was also co-precipitated when lysates were pretreated with GTPγS suggesting HMMR may interact specifically with Ran-GTP, which is greatly increased by GTPγS treatment. To titrate a putative HMMR-Ran-GTP interaction, we precipitated HMMR from mitotic cell lysates previously treated with increasing amounts of GTPγS. While the levels of precipitated HMMR remained constant, we found that the level of Ran co-precipitated with HMMR was increased in a GTPγS dose-dependent manner (Figure 6D). Thus, HMMR interacts with Ran-GTPγS in cell lysates. We predicted that HMMR may affect the localization of active Ran in mitotic cells. To test this, we expressed constitutively active Ran (Ran Q69L, RanCA) (Kazgan et al., 2010) in HeLa cells treated with scrambled siRNA or siRNA targeting HMMR. In scrambled siRNA-treated cells, a fraction of RanCA colocalized with the spindle pole demarked by γ-tubulin (Figure 6E), consistent with the identification of Ran in the centrosome proteome (Andersen et al., 2003). However, the fraction of RanCA that colocalized with γ-tubulin, as measured by the ratio of intensities for RanCA and γ-tubulin, was significantly reduced in HMMR-silenced cells (Figure 6E–F). Similarly, inhibition of PLK1 activity, through treatment with a small-molecule inhibitor BI2536, also reduced the fraction of RanCA that colocalized with γ-tubulin (Figure 6G–H). This data shows that reducing PLK1 activity or silencing HMMR reduces the localization of constitutively active Ran at mitotic centrosomes and suggests the phosphorylation of HMMR (pHMMR) by PLK1 may promote pHMMR-RanBP2-Ran-GTP complexes at spindle poles.
 
-## HMMR localizes Ran and positions metaphase spindles in neural cells and tissues
+### HMMR localizes Ran and positions metaphase spindles in neural cells and tissues
 
 To investigate the HMMR-Ran pathway in neural cells and tissues, we first utilized the neuroblastoma cell line, SHSY5Y, which is known to polarize NuMA during cell division (Izumi and Kaneko, 2012). Following the transduction of shRNA targeting HMMR or nonhairpin control shRNA, we confirmed the loss of HMMR immunofluorescence at mitotic spindles (Figure 7—figure supplement 1A). In HMMR-silenced cells compared to control-treated cells, we observed a decrease in the immunofluorescence intensity detected for endogenous Ran colocalized with pericentrin, a centrosome marker (Figure 7—figure supplement 1B–C). We then investigated mitotic spindle structure and position as well as the localization of Ran in sections derived from WT and Hmmrtm1a/tm1a E14.5 brains. In these sections stained for the spindle marker beta-tubulin (Figure 7A), we measured the position and length of the spindle in dividing neural progenitor cells that lined the ventricles. When compared to spindles within wild-type progenitor cells, spindles in Hmmrtm1a/tm1a neural progenitors were less centered (a/b measurement) and significantly shorter (c measurement) (Figure 7B). Additionally, the density of spindle fibers, as measured by the intensity of beta-tubulin fluorescence, was significantly lower in Hmmrtm1a/tm1a neural progenitors than those in WT cells (Figure 7C). Similar to our observations in HMMR-silenced HeLa or SH-SY5Y cells, we found a fraction of endogenous Ran, as measured by immunofluorescence, colocalized with a centrosome marker (γ-tubulin, Figure 7D); this fraction of Ran, as measured by the ratio of intensities for Ran and γ-tubulin, was significantly reduced in Hmmrtm1a/tm1a relative to WT neural progenitors (Figure 7E).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig7-v2.jpg)
+
+**Figure 7.:** (A) Spindle position, density, and length in neuroepithelial progenitor (NP) cells in Hmmr+/+ (WT) or Hmmrtm1a/tm1a (KO) E14.5 mice. Yellow dotted line indicates cell border and white dotted line indicates the ventricle edge. Scale bar, 5 μm. (B) Quantification of spindle position and length in WT and KO E14.5 mice. Data are represented as mean ±SD (**p=0.003 (a/b),***p=5.4e-7 (c); n = 57 (WT- a/b), 56 (KO- a/b), 56 (WT- c), 51 (KO- c)). (C) Quantification of spindle density in WT and KO E14.5 mice. Data are represented as mean ±SD (**p=0.003; n = 25 (WT), 20 (KO)). (D) Localization of Ran in NP cells in WT and KO E14.5 mice. Scale bar, 5 μm. (E) Quantification of Ran localization in WT and KO E14.5 brains. Data are represented as mean ±SD (**p=0.002; n = 29 (WT), 49 (KO)).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Immunofluorescence detection of HMMR in SHSY5Y neuroblastoma cells treated with non-short hairpin (NHP) or HMMR shRNA (shHMMR). Scale bar, 5 μm. (B) Localization of Ran in SHSY5Y neuroblastoma cells treated with NHP or shHMMR. Scale bar, 5 μm. (C) Quantification of Ran localization in SHSY5Y cells. Data are represented as mean ±SD (**p<0.006; n = 39 (NHP), 35 (shHMMR)). (D) HMMR protein levels were reduced in HmmrBB0166/+ (BB0166) ES cells, which express a β-Geo fusion from one allele. E14Tg2 (WT) ES cells were used as the wild-type line. Actin was used as a loading control. (E) The Hmmr promoter was active, as indicated by β-Geo activity, in apical cells within rosettes. Scale bars, 50 μm (ES cells and Day 3); 1 mm (Day 11). (F) HMMR-positive cells are Cyclin B1(CCNB1)-positive in neural rosettes. Scale bar, 10 μm. (G) Spindle position in WT and BB0166 neural rosettes. Dotted line indicates cell border. Scale bar, 5 μm. (H) Quantification of spindle position in WT and BB0166 rosettes. Data are represented as mean ±SD (***; n = 31 (WT); 23 (BB0166)).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/28672/elife-28672-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Proposed pathway through which PLK1/HMMR/Ran regulate cortical NuMA dynein. PLK1 activity controls astral microtubule density, which strips cortical NuMA localization. Silencing HMMR dampens PLK1, potentially through Aurora A. pHMMR, a proposed Aurora A and PLK1 substrate, locates RanBP2-RanGTP at spindle poles although the relative contribution to cortical NuMA localization remains unclear (grey). (B) Wild-type cells reposition mitotic spindles through force produced by asymmetric dynein motor localization. The asymmetric force is produced by stripping of cortical NuMA/Dynein by centrosomal PLK1/HMMR/Ran. Loss of HMMR reduces the stripping effect regulated by the centrosome and leads to misoriented and mispositioned mitotic spindles. Overexpression of HMMR strips NuMA completely from the cortex during metaphase. Mispositioned spindles are not able to correctly center.
+
 Taken together, our data obtained from studies of cells, tissues and animals that are deficient for HMMR indicate a critical role for the protein in establishing the correct position of the mitotic spindle during cell division. Complete loss of HMMR is sufficient to alter the position and orientation of NP cell division and, in the case of Hmmrtm1a/tm1a mice, disturb brain development and impair the animal’s ability to successfully transition to extrauterine life. Our in vitro data support a model where HMMR supports PLK1 activity at the centrosome, which stabilizes astral microtubules and through the phosphorylation of HMMR localizes Ran to mitotic spindle poles. These PLK1-dependent spindle pole positioning processes are critical to reduce cortical localization of NuMA-DHC in off-center spindles and prevent spindle rotation (Figure 7—figure supplement 2A–B).
 
-## Ectopic HMMR alters Ran localization, cortical NuMA and spindle positioning
+### Ectopic HMMR alters Ran localization, cortical NuMA and spindle positioning
 
 To compare and contrast the mitotic consequences that follow HMMR deletion to those that follow ectopic GFP-HMMR expression, we studied spindle positioning and NuMA localization using HeLa cells with doxycycline-inducible expression of GFP-HMMR (tet-HMMR) (Figure 8A), which express GFP-HMMR along the spindle microtubules in mitotic cells and undergo spindle tumbling when grown on L-shaped micropatterned substrates (He et al., 2017). In subconfluent cultures of induced tet-HMMR cells, metaphase spindles were more frequently off-center (Figure 8B). We next examined whether induced tet-HMMR expression altered the localization of co-expressed RanWT, RanCA, or RanDN constructs tagged with mCherry. In HeLa cells, these constructs localized as previously reported (Hutchins et al., 2009): RanWT was cytoplasmic, RanCA localized to the mitotic spindle, and RanDN localized to the chromosomes (Figure 8C). In induced tet-HMMR cells, however, RanWT localized to the spindle similar to that of RanCA (Figure 8C). Induction of GFP-HMMR expression also caused NuMA to be lost entirely from the cortex (Figure 8D–E). We observed a similar effect on cortical NuMA localization in HeLa cells overexpressing RanCA (Figure 8F–G). Taken together, these data indicate that expression of GFP-HMMR induces defects in the spindle positioning pathway that are consistent with an ectopic localization of Ran-GTP on mitotic spindles (Figure 7—figure supplement 2B).
 
@@ -130,19 +198,329 @@ Taken together, the results of our study identify HMMR as a key component of the
 
 ## Materials and methods
 
-## Generation of Hmmrtm1a/tm1a mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>genetic reagent (Mus musculus)</td>
+      <td>Hmmrtm1a/tm1a</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC (Manassas, VA)</td>
+      <td>CCL-2</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>Hmmr+/+</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>Hmmrtm1a/tm1a</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>HeLa DHC-GFP</td>
+      <td>Mitocheck, PMID: 20360068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>HeLa tet-HMMR</td>
+      <td>PMCID: PMC5464802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>HeLa eGFP-TUBA, mCherry-histone H2B</td>
+      <td>Gruneberg lab, PMID: 21187329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (H. sapiens)</td>
+      <td>SH-SY5Y</td>
+      <td>Sigma (St. Louis, MO)</td>
+      <td>94030304-1VL</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>ES cells Hmmr+/+</td>
+      <td>Mutant Mouse Resource Regional Cente (MMRC)r</td>
+      <td>E14TG2a</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>ES cells HmmrBB0166/+</td>
+      <td>MMRC</td>
+      <td>026467-UCD</td>
+    </tr>
+    <tr>
+      <td>cell line (M. musculus)</td>
+      <td>ES cells Hmmrtm1a(EUCOMM)Hmgu</td>
+      <td>European Conditional Mouse Mutagenesis Program</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct</td>
+      <td>HMMR siRNA 5'A</td>
+      <td>Dharmacon (Lafayette, CO), PMID 24875404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct</td>
+      <td>HMMR siRNA 5'B</td>
+      <td>Dharmacon, PMID 24875404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct</td>
+      <td>HMMR siRNA 3'</td>
+      <td>Dharmacon, PMID 24875404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Actin</td>
+      <td>Sigma</td>
+      <td>a5060</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>alpha-tubulin</td>
+      <td>Abcam (United Kingdom)</td>
+      <td>ab4074</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>beta-tubulin</td>
+      <td>Sigma</td>
+      <td>T5293</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>beta tubulin-647</td>
+      <td>Cell Signaling Technology (Danvers, MA)</td>
+      <td>3624</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>mCherry</td>
+      <td>Abcam</td>
+      <td>ab167453</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>DIC</td>
+      <td>Millipore (Burlington, MA)</td>
+      <td>mab1618</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>DynLL1</td>
+      <td>Abcam</td>
+      <td>ab51603</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>EB1</td>
+      <td>Abcam</td>
+      <td>ab53358</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>gamma-tubulin</td>
+      <td>Sigma</td>
+      <td>t6557</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>GFP</td>
+      <td>Abcam</td>
+      <td>ab1218</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>HMMR</td>
+      <td>Abcam</td>
+      <td>ab124729</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>pHMMR</td>
+      <td>PMID:22110403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>NuMA</td>
+      <td>Abcam</td>
+      <td>ab36999</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>NuMA</td>
+      <td>Cell Signaling Technology</td>
+      <td>3888</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>p150 glued</td>
+      <td>Abcam</td>
+      <td>ab151184</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Par3</td>
+      <td>Millipore</td>
+      <td>1330</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Pax6</td>
+      <td>Covance (Princeton, NJ)</td>
+      <td>prb278p10</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Pericentrin</td>
+      <td>Covance</td>
+      <td>prb432c</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>pPLK1</td>
+      <td>Abcam</td>
+      <td>ab189139</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>PLZF</td>
+      <td>EMD Chemical</td>
+      <td>op128</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Ran</td>
+      <td>Cell Biolabs Inc (San Diego, CA)</td>
+      <td>in STA-409 kit</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Ran</td>
+      <td>Abcam</td>
+      <td>ab53775</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>RanBP2</td>
+      <td>Abcam</td>
+      <td>ab197044</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Tbr2</td>
+      <td>Abcam</td>
+      <td>ab183991</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>TPX2</td>
+      <td>Novus Biologicals (Littleton, CO)</td>
+      <td>mb500179</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>ZO-1</td>
+      <td>Invitrogen (Carlsbad, CA)</td>
+      <td>339100</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>ZO-1</td>
+      <td>Invitrogen</td>
+      <td>402200</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pmCherry-C1-RanQ69L</td>
+      <td>Addgene (Cambridge, MA), PMID: 20685962</td>
+      <td>Addgene #30309</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pcDNA-RanWT-mRFP1-polyA</td>
+      <td>Addgene, PMID: 24908396</td>
+      <td>Addgene #59750</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mCherry-RanDN</td>
+      <td>PMID: 23870127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>HMMR-FL</td>
+      <td>PMID: 12808028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>HMMR 1–623</td>
+      <td>PMID: 12808028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>HMMR 1–679</td>
+      <td>PMID: 12808028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Ran Activation Assay kit</td>
+      <td>Cell Biolabs, Inc</td>
+      <td>STA-409</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>BI2536</td>
+      <td>Selleck Chemicals (Houston, TX)</td>
+      <td>S1109</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of Hmmrtm1a/tm1a mice
 
 Hmmrtm1a/+ ES cell strains with the L1L2_Bact_P cassette inserted after Hmmr exon 2 were purchased from The European Conditional Mouse Mutagenesis Program (HEPD0778_4_B11; EUCOMM). Hmmrtm1a/+ ES cells were introduced into blastocyst stage embryos by microinjection and resulting male chimera mice were bred to C57BL/6J female to obtain Hmmrtm1a/+ mice. Hmmrtm1a/+ mice were then intercrossed to generate Hmmrtm1a/+ mice on a C57BL/6J background. All mice were maintained in the pathogen-free Centre for Molecular Medicine and Therapeutics animal facility on a 6 am-to-8 pm light cycle, 20 ± 2°C, with 50 ± 5% relative humidity, and had food and water ad libitum. All procedures involving animals were in accordance with the Canadian Council on Animal Care (CCAC) and UBC Animal Care Committee (ACC) (Protocol no. A13-0168).
 
-## Genotyping
+### Genotyping
 
 Tail clips from embryos and ear notches from weaned animals were lysed in GB buffer (100 mM Tris, pH8.8, 100 mM (NH4)2SO4, 100 mM MgCl2, 1% β-mercaptoethanol, 0.5% triton X-100 and 1.6 mg/ml protease K) at 50°C for 3–5 hr. Protease K was inactivated at 95°C for 10 min. PCR was performed using AccuStart II PCR mix (Quanta Biosciences, Beverly, MA). Primers used for PCR1 were: Hmmr-for, 5’-AGATACAACCTTGCTTGCTTCGGC-3’, loxR, 5’-TGAACTGATGGCGAGCTCAGACC-3’ (mutant 507 bp); Primers used for PCR2 were: Hmmr-5'-arm, 5’-CAGGCCTTAGAAGCTGACATGAGC-3’, Hmmr-3'-arm, 5’-TCCAAACTTCTCACTGCAGACAGC-3’, LAR3, 5’-CAACGGGTTCTTCTGTTAGTCC-3’ (WT 515 bp, mt 339 bp).
 
-## Immunoblotting
+### Immunoblotting
 
 Mouse tissues were harvested, snap frozen, ground into powder, lysed in RIPA buffer supplemented with protease inhibitor (Roche, Switzerland) and sonicated. Lysates were clarified by centrifugation at 16,000xg for 20 min at 4°C, and concentration was determined by BCA protein assay kit (Thermo Scientific, Waltham, MA). Lysates were mixed with SDS sample buffer, separated by SDS-PAGE, and blotted with the indicated antibodies: Actin (rabbit (rb), Sigma, 1:2500) and HMMR (rb, Abcam, 1:500).
 
-## Cell culture
+### Cell culture
 
 HmmrBB0166/+ mouse ES cells (BB0166; MMRRC: 026467-UCD) and the parental control mouse ES cells (E14TG2a; MMRRC: 015890-UCD) were purchased from a Mutant Mouse Regional Resource Center (University of California, Davis). ES cells were maintained on mitomycin C-treated MEFs prepared as previously described (Conner, 2001). ES cells were cultured and neural induction was initiated as previously described (Barberi et al., 2003).
 
@@ -154,7 +532,7 @@ HeLa cells with tet-on inducible expression of enhanced GFP fused in frame with 
 
 SH-SY5Y (Sigma 94030304; ECACC validated prior to purchase) were maintained as previously described (Izumi and Kaneko, 2012).
 
-## Immunostaining
+### Immunostaining
 
 Neural rosettes and MEFs were grown on coverslips coated with 0.1% gelatin and fixed with 4% paraformaldehyde (PFA) for 15 min. For pericentrin, cells were fixed with 4% PFA followed by MeOH for 15 min at −20°C. HeLa cells were fixed in ice-cold MeOH for 15 min at −20 °C Cells were blocked with 0.3% triton X-100, 10% donkey serum, 0.1% BSA in PBS (rosettes) or 0.3% triton X-100, 1.0% BSA, in PBS. Cells were incubated with primary antibodies for 2 hr at RT or overnight at 4°C and secondary antibodies for 1 hr at RT.
 
@@ -164,27 +542,27 @@ For TUNEL, samples were stained with the In Situ cell death detection kit, Fluor
 
 Coverslips were mounted with Prolong Gold antifade reagent with DAPI (Invitrogen) and images were acquired with confocal microscopy (FluoView Fv10i, Olympus (Japan) or Axiovert 200, Zeiss (Germany)). Image analysis was performed using ImageJ.
 
-## Live imaging
+### Live imaging
 
 For DHC-GFP HeLa, imaging was performed using a Perkin Elmer Ultraview VOX spinning disk confocal microscope using a Leica DMI6000 inverted microscope equipped with a Hamamatsu 9100–02 camera. Images were taken at two intervals. MEFs, Tet-HeLa cells, and eGFP-TUBA HeLa cells were imaged using an ImageXpress Micro High Content Screening System (Molecular Devices, Inc., Sunnyvale, CA) for up to 24 hr at 15 min intervals. Prior to imaging cells were stained with Hoechst. Image analysis was performed using ImageJ.
 
-## Virus packaging and transduction
+### Virus packaging and transduction
 
 HMMR constructs were delivered and expressed using the Gateway system (Invitrogen). Briefly, HEK293FT cells (Invitrogen R7007) were transfected using Lipofectamine 2000 (Invitrogen) with vectors containing, HMMRFL, HMMR1-623, or HMMR1-679, for 72 hr. Supernatant was collected and concentrated using Lenti-X concentrator (Clontech). Virus was added to MEFs with polybrene (8 μg/ml). After 24 hr, the media was replaced and cells grown for 24 hr prior to imaging.
 
-## Transfection
+### Transfection
 
 On-target plus siRNA (Dharmacon) and scrambled siRNA as previously described (Chen et al., 2014). pmCherry-C1-RanQ69L was a gift from Jay Brenman (Addgene plasmid # 30309) (Kazgan et al., 2010). pcDNA-RanWT-mRFP1-polyA was a gift from Yi Zhang (Addgene plasmid # 59750) (Inoue and Zhang, 2014). The mCherry-RanDN construct was graciously provided by Dr. Iain Cheeseman (Kiyomitsu and Cheeseman, 2013). Transfection of DNA and siRNA used JetPrime (Polyplus Transfection, France) following the manufacturer’s protocols. Cells were harvested 96 hr post-transfection of siRNA.
 
-## Ran activity assay
+### Ran activity assay
 
 HeLa cells were treated with siRNA and synced with a double thymidine block and treated with MG132 for 2 hr starting 8 hr post-release. Ran activity assays were performed using the Ran Activation Assay kit (Cell Biolabs, Inc) as per manufacturer’s protocols.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 DHC-GFP HeLa cells treated with siRNA and synced with a double thymidine block were homogenized with lysis buffer (Dunsch et al., 2012) with a phosphatase inhibitor (Phosphostop (Roche)) and Protease Inhibitor cocktail (Roche). HeLa cells were treated with indicated plasmids and synced with a nocodazole block and then released into mg-132. Cells were lysed with lysis buffer (25 mM HEPES, pH 7.5, 150 mM NaCl, 1% NP-40, 10 mM MgCl2, 1 mM EDTA, 2% glycerol). GTPγS was loaded prior to immunoprecepitation by adding EDTA (10 µM) and GTPγS at the indicated concentration for 30 min at 30°C. The reaction was stopped with MgCl2 (65 µM). The supernatants were used for immunoprecipitation with IgG (ms and rb, Sigma), GFP (ms, Abcam), HMMR (rb, Abcam), or pHMMR (Maxwell et al., 2011), overnight at 4°C, followed by incubation with protein A/G beads overnight at 4°C (Santa Cruz Biotechnology). Protein A/G beads were washed with lysis buffer three times. Bound proteins were separated by SDS-PAGE and analysed by western blotting. Actin (rb, Sigma, 1:2500); mCherry (rb, Abcam, 1:1000); HMMR (rb, Abcam, 1:500); GFP (ms, Abcam, 1:1000); DIC (ms, Millipore, 1:500); DynLL1 (rb Abcam, 1:1000); p150Glued (ms, Abcam, 1:500); Ran (ms, Cell Biolabs Inc, 1:1000); and RanBP2 (Abcam, 1:5000).
 
-## Mass spectrometry of protein complexes
+### Mass spectrometry of protein complexes
 
 Cells were lysed at 0.5–1.0 × 107 cells/ml in immunoprecipitation buffer (50 mM Tris-HCl, pH 7.4, 150 mM NaCl, 1 mM EDTA, 0.5% NP-40) supplemented with protease and phosphatase inhibitors (Roche). Cell lysates were clarified by centrifugation at 16,000 X g for 10 min at 4°C and protein concentration was determined using the BCA protein assay kit (Thermo Fisher). For immunoprecipitation, lysates were precleared with protein G or A/G PLUS-Agarose beads (Santa Cruz). Protein complexes were isolated by incubation with the indicated antibodies at 4°C on rotation, and then with protein G or A/G PLUS-Agarose beads for 6 hr at 4°C on rotation. Isolated complexes were washed four times with lysis buffer.
 
@@ -196,10 +574,10 @@ MS data were acquired using a data-dependent top 12 method with a dynamic exclus
 
 Acquired spectra from two separate experiments and multiple injections were searched using Proteome Discoverer 2.1 (Thermo Fisher Scientific). Database search was performed against the Homo sapiens reference proteome including isoforms downloaded from UniProt in June 2016. Main search parameters: enzyme: Trypsin (full); missed cleavages: 2; precursor mass tolerance: 10 ppm; fragment mass tolerance: 0.02 Da; static modifications: +57.021 Da on C; variable modifications: +15.995 Da on M, +28.031 or +34.063 on K and peptide N terminus, +42.011 Da on protein N terminus. Identifications were filtered for 1% FDR at the peptide and protein level. Differential abundance of proteins between pHMMR and control IP was calculated based on the area of heavy and light dimethyl precursor peaks. Common contaminants and decoy identifications were filtered out. To identify proteins commonly identified in affinity purification experiments the identified proteins were searched against the CRAPOME database (www.crapome.org, version 1.1, H. sapiens). Proteins that were found in less than 30% of reported experiments were classified as ‘rare’, the reminder as ‘common’. Proteins not matched in the CRAPOME database were classified as ‘unknown’. Full Proteome Discoverer results are available in Figure 6—source data 1 and raw data is available through the PRIDE Archive.
 
-## Quantification of mitotic spindle orientation
+### Quantification of mitotic spindle orientation
 
 Neural rosettes were stained with TPX2, ZO-1, and TUBB and images were acquired using confocal microscopy. In rosettes, spindle orientation was measured as the angle of the cleavage plane (anaphase or telophase cells) relative to the apical surface. For analysis of the division orientation of apical NP cells, E14.5 brain sections were stained for pH3 and γ-Tubulin. The long spindle axis of anaphase cells, defined by a line bisecting the two centrosomes, was used to indicate the cell division plane. For each progenitor, the angle between the long spindle axis and the apical surface (defined by a line along the centrosomes of apically localized interphase cells) was determined. In cultured MEFs, spindle orientation was measured between the long axis of G2 phase cells (15 mins prior to mitosis) and the angle of the mitotic spindle (anaphase cells).
 
-## Statistical methods
+### Statistical methods
 
 All replicates were biological replicates. Statistical analysis was performed using GraphPad Prism v5.01 for Windows (Graphpad Software, La Jolla, CA). Pairwise comparisons were made using two-tailed, paired or unpaired student’s t-test. Comparisons of multiple groups were made using one-way analysis of variance (ANOVA) with a Bonferroni post-test.

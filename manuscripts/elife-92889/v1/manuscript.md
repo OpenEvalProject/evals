@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Orthopedic Surgery and Department of Biomedical Engineering, Johns Hopkins University School of Medicine Baltimore United States
+1. Department of Orthopedic Surgery and Department of Biomedical Engineering, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -33,15 +33,23 @@ Here, we demonstrate the presence of SnOCs in the porous endplates in two differ
 
 ## Results
 
-## A significantly increased number of SnOCs are associated with endplate degeneration and spinal hypersensitivity in the LSI and aged mouse models
+### A significantly increased number of SnOCs are associated with endplate degeneration and spinal hypersensitivity in the LSI and aged mouse models
 
 In this study, we used two different LBP mouse models created by LSI and aging. LSI was induced in 3-month-old C57/BL6 mice by surgically resecting the L3–L5 spinous processes along with the supraspinous and interspinous ligaments (Bian et al., 2016; Ariga et al., 2001; Miyamoto et al., 1991). Aged (24-month-old) C57BL/6J male mice were purchased from Jackson Laboratory. To explore spinal hypersensitivity, pain-related behavioral assessments, such as the von Frey test, hot plate test, and active wheel test, were performed on sham-operated mice, LSI mice, and aged mice. In both models, there was significantly less active time, distance traveled, and maximum speeds compared to the sham control (Figure 1a–c). Additionally, LSI mice and aged mice displayed significantly less reduced heat response times (Figure 1d), as well as significantly increased frequencies of paw withdrawal (PWF), depending on the strength of the mechanical stimulation, (Figure 1e and f) compared to the sham mice. By three-dimensional microcomputed tomography (μCT) analysis, we found a significant increase in the porosity and separation of trabecular bone (Tb.Sp) within the endplates of both LSI and aged mice compared to their younger counterparts without LSI (Figure 1g and k).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92889/elife-92889-fig1-v1.jpg)
+
+**Figure 1.:** (a–c) Spontaneous activity, including active time (a), distance traveled (b), and maximum speed (c) on the wheel within 48 hr in the sham, LSI injury, and aged mice. (d) Time in seconds spent on a hot plate in the three groups of mice. (e, f) The frequency of hind paw withdrawal (PWF) in response to mechanical stimulation (von Frey test, 0.07 g (e) and 0.4 g (f)) in the sham, LSI injury, and aged mice. (g) Microcomputed tomography (μCT) images of coronal caudal endplate sections of L4–5 from 3-month-old sham and LSI and 24-month-old aged mice. (h) Immunofluorescent (IF) staining of p16 (green), tartrate-resistant acid phosphatase positive (TRAP) (red), and 4′,6-diamidino-2-phenylindole (DAPI) (blue) of the endplates of sham, LSI, and aged mice. (i and j) IF staining of TRAP (red) and DAPI (blue) (i) and senescence-associated beta-galactosidase (SA-βGal) (blue) staining (j) of endplate serial sections of sham, LSI surgery, and aged mice. (k and l) Microcomputed tomography (μCT) quantitative analysis of the porosity percentage (k) and trabecular separation (Tb.Sp) (l) of the endplates in the indicated groups. (m) Number of SnOCs (p16-positive and TRAP-positive cells) per mm2 in the indicated groups. (n) Number of SA-βGal (blue) positive cells per mm2 in the endplates in the indicated groups. (o) Number of TRAP (red) positive cells per mm2 in the endplates in the indicated groups. n≥4 per group. Scale bar, 1 mm (g) and 20 μm (h, i, j). Statistical significance was determined by one-way ANOVA, and all data are shown as means ± standard deviations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92889/elife-92889-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative images of immunofluorescent analysis of HMGB1, a senescent marker (green), tartrate-resistant acid phosphatase positive (TRAP), an osteoclast marker (red) and nuclei (4′,6-diamidino-2-phenylindole [DAPI]; blue) of adult sham, lumbar spine instability (LSI), and aged mice. (b) Quantitative analysis of the number of TRAP+HMGB1+ senescent osteoclasts (SnOCs) per mm2. n≥4 per group. Statistical significance was determined by one-way ANOVA, and all data are shown as means ± standard deviations.
 
 To investigate the potential relationship between SnOCs and the degeneration of spinal endplates in the context of LSI and aging, co-staining of TRAP, a glycosylated monomeric metalloprotein enzyme expressed in osteoclasts, and p16, a tumor suppressor and established marker for cellular senescence, was performed (Figure 1h). We found that compared to the control young sham mice, there was a significantly increased number of p16+TRAP+ cells in the LSI and aged mice, indicative of SnOCs occurring in the endplates of these two mouse models (Figure 1h and m). To confirm the occurrence of SnOCs in the endplates in the LSI and aged mice, we stained the adjacent slides with TRAP and senescence-associated beta-galactosidase (SA-βGal) or HMGB1, markers for cellular senescence, respectively, and found that SnOCs existed in the two LBP mouse models but not in the sham controls (Figure 1i, j, n, and o, Figure 1—figure supplement 1a and b).
 
 These findings collectively show a strong association between the presence of SnOCs and the development of spinal hypersensitivity, along with the degenerative changes in the endplates of mice subjected to LSI and during the aging process.
 
-## ABT263 effectively depletes endplate SnOCs in the LSI and aging mouse models
+### ABT263 effectively depletes endplate SnOCs in the LSI and aging mouse models
 
 To study the contribution of SnOCs to spinal pain, we first needed to show that such cells could be successfully depleted. Thus, we treated 24-month-old aged mice and 3-month-old sham and LSI mice with ABT263, a specific inhibitor targeting the anti-apoptotic proteins BCL-2 and BCL-xL, effectively leading to the depletion of SnOCs (Chang et al., 2016). ABT263 was administered via gavage at a dose of 50 mg/kg per day for 7 days per cycle, with two cycles separated by a 2-week interval, resulting in a total treatment period of 4 weeks. Remarkably, after the administration of ABT263, we observed a significant reduction of SnOCs in the endplates compared to the PBS-treated group (Figure 2a–c).
 
@@ -49,7 +57,7 @@ To study the contribution of SnOCs to spinal pain, we first needed to show that 
 
 **Figure 2.:** (a–c) Immunofluorescent staining of p16 (green), tartrate-resistant acid phosphatase (TRAP) (red), and nuclei (4′,6-diamidino-2-phenylindole [DAPI]; blue) of the endplates in aged (a) and LSI mice (b) injected with PBS (control) or ABT263 and the quantitative analysis of SnOCs based on dual staining for p16 and TRAP (c). n≥4 per group. Scale bar, 20 μm. Statistical significance was determined by one-way ANOVA, and all data are shown as means ± standard deviations.
 
-## Eliminating SnOCs reduces spinal hypersensitivity
+### Eliminating SnOCs reduces spinal hypersensitivity
 
 To investigate spinal hypersensitivity, pain behavioral tests, including the von Frey test, hot plate test, and active wheel test, were conducted in sham, LSI, and aged mice treated with ABT263 and PBS, respectively. In the aged mice, ABT263 treatment resulted in a significant reduction in PWF (Figure 3a and b) and prolonged heat response times (Figure 3c) compared to the PBS-treated mice. In addition, there is a significant increased PWF in aged mice treated with PBS compared with young mice, particularly at 0.4 g instead of 0.07 g (Figure 3a and b). Furthermore, aged mice treated with PBS exhibited a significant reduction in both distance traveled and active time when compared to young mice (Figure 3d and e). Additionally, PBS-treated aged mice demonstrated a significantly shortened heat response time relative to young mice (Figure 3c). Importantly, these aged mice treated with ABT263 exhibited significantly increased distance traveled and active time compared to aged mice that received PBS injections (Figure 3d and e).
 
@@ -59,7 +67,7 @@ To investigate spinal hypersensitivity, pain behavioral tests, including the von
 
 Notably, LSI mice treated with ABT263 also demonstrated substantial improvements across several parameters compared to the PBS-treated control mice. These improvements included lower PWF (Figure 3f and g), prolonged heat response time (Figure 3h), increased distance traveled (Figure 3i), and extended active time (Figure 3j). These results collectively indicate that the elimination of SnOCs reduces spinal hypersensitivity in both aged and LSI mouse models.
 
-## Depletion of SnOCs reduces spinal degeneration and sustains endplate microarchitecture
+### Depletion of SnOCs reduces spinal degeneration and sustains endplate microarchitecture
 
 To determine the effect of SnOCs on endplate architecture, degeneration, and osteoclast formation in the context of spinal pain in the aged mice, we conducted μCT analysis and immunostaining in aged mice treated with ABT263, or PBS and untreated 3-month-old young mice (Figure 4a–e). There was a significant reduction in endplate porosity and Tb.Sp of the caudal endplates of L4/5 in the aged mice treated with ABT263 compared to the PBS-treated aged group (Figure 4f and g). The PBS-treated aged mice exhibited a significant increase in endplate porosity (Figure 4f) and Tb.Sp (Figure 4g) compared to young mice. To examine the effects of ABT263 on endplate degeneration, we performed Safranin O staining and immunofluorescent staining to target matrix metalloproteinase 13-containing (MMP13+) and type X collagen-containing (ColX+) components within the endplate (Figure 4b–d). In the aged model, the ABT263-treated group exhibited a significant reduction in endplate score (Figure 4h), as well as the distribution of MMP13 and ColX within the endplates, compared to aged mice treated with PBS (Figure 4i and j). PBS-treated aged mice showed a significant elevation in endplate score (Figure 4h), as well as an increased distribution of MMP13 and ColX within the endplates when compared to young mice (Figure 4i and j). Furthermore, TRAP staining demonstrated a substantial rise in the count of TRAP+ osteoclasts within the endplates of aged mice in comparison to young control mice. Importantly, ABT263 treatment resulted in a significant reduction of TRAP+ osteoclasts within the endplates compared to PBS treatment (Figure 4e and k).
 
@@ -73,9 +81,17 @@ We next conducted μCT analysis and immunostaining in sham and LSI mice treated 
 
 **Figure 5.:** (a) Microcomputed tomography (μCT) images of adult sham mice and 3-month-old LSI model mice caudal endplates of L4–L5 injected with PBS or ABT263. Scale bar, 1 mm. (b) Representative images of Safranin O and fast green staining in different groups. Lower panners are zoomed-in images from upper white boxes. Scale bar, 1 mm (upper panels) and 100 μm (lower panels). (c) Representative images of immunofluorescent staining of spine degeneration marker MMP13 (red) and nuclei (4′,6-diamidino-2-phenylindole [DAPI]; blue). Scale bar, 100 μm. (d) Representative images of immunofluorescent staining of spine degeneration marker ColX (red) and nuclei (DAPI; blue). Scale bar, 100 μm. (e) Representative images of tartrate-resistant acid phosphatase (TRAP) (magenta) staining in different groups. Lower panners are zoomed-in images from upper white boxes. Scale bar, 100 μm. (f) The quantitative analysis of the porosity percentage of the mouse caudal endplates of L4–5 measured by the μCT. (g) The quantitative analysis of the trabecular separation (Tb.Sp) of the mouse caudal endplates of L4–5 measured by the μCT. (h) The endplate score based on the Safranin O and fast green staining. (i) Quantitative analysis of the intensity mean value of MMP13 in endplates per mm2. (j) Quantitative analysis of the intensity mean value of ColX in endplates per mm2. (k) The quantitative analysis of the number of TRAP-positive cells in the endplate per mm2. n≥3 per group. Statistical significance was determined by one-way ANOVA, and all data are shown as means ± standard deviations.
 
-## Depletion of SnOCs abrogates sensory innervation and pain
+### Depletion of SnOCs abrogates sensory innervation and pain
 
 We previously found that sensory innervation occurs in the porous endplates, contributing to spinal hypersensitivity, in LSI and aged mice (Ni et al., 2019). To evaluate the contribution of SnOCs to sensory innervation and pain in LSI and aged mice, we co-stained for calcitonin gene-related peptide (CGRP), a marker of peptidergic nociceptive C nerve fibers, and PGP9.5, a broad marker of nerve fibers, in the endplates of LSI and aged mice treated with ABT263 or PBS (Figure 6a). Notably, we found fewer CGRP+ PGP9.5+ nerves in LSI mice and aged mice treated with ABT263 compared to those treated with PBS (Figure 6b–e).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92889/elife-92889-fig6-v1.jpg)
+
+**Figure 6.:** (a) Representative images of immunofluorescent analysis of calcitonin gene-related peptide (CGRP) (green), PGP9.5 (red), and nuclei (4′,6-diamidino-2-phenylindole [DAPI]; blue) of adult sham, LSI, and aged mice injected with PBS or ABT263. Scale bar, 20 μm. (b) Quantitative analysis of the intensity mean value of PGP9.5 per mm2 in aged mice. (c) Quantitative analysis of the intensity mean value of CGRP per mm2 in aged mice. (d) Quantitative analysis of the intensity mean value of PGP9.5 per mm2 in the LSI mouse model. (e) Quantitative analysis of the intensity mean value of CGRP per mm2 in the LSI mouse model. (f, g) Relative fold expression of Ntn and Ngf in aged mice (f) or LSI mice (g) with or without ABT263 treatment. n≥4 per group. Statistical significance in panels b, c, and f are analyzed using t-tests, while panels d, e, and g are subjected to one-way ANOVA. All data are shown as means ± standard deviations.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92889/elife-92889-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Enzyme-linked immunosorbent assay (ELISA) analysis showing the concentration of Netrin-1 in L3–5 endplates of adult sham, lumbar spine instability (LSI) + PBS, and LSI + ABT263 mice. (b) ELISA analysis showing the concentration of NGF in L3–5 endplates of adult sham, LSI + PBS, and LSI + ABT263 mice. n=3 per group. Statistical significance was determined by one-way ANOVA, and all data are shown as means ± standard deviations.
 
 To investigate the mechanisms underlying sensory innervation-induced spinal pain, we performed RT-qPCR to screen for expression of mediators regulating nerve fiber innervation and outgrowth, including Netrin-1 and NGF (Bian et al., 2017; Papadakis et al., 2011; Rodriguez et al., 2012). Compared to the young sham mice, aging and LSI was associated with significantly increased expression of Ntn and Ngf (the genes encoding netrin-1 and Ngf, respectively), which was substantially attenuated by ABT263 treatment in both LSI and aged mice (Figure 6f and g, Figure 6—figure supplement 1a, b).
 
@@ -105,11 +121,11 @@ The recent discovery that senescent cells play a causative role in aging and in 
 
 ## Methods
 
-## Mice
+### Mice
 
 Three- and 24-month-old C57BL/6J male mice were purchased from Jackson Laboratory. Three-month-old mice were anesthetized with ketamine (Ketalar, 0.13 mg/kg, intraperitoneally) and xylazine (Millipore Sigma; PHR3264, 12 mg/kg, intraperitoneally). Then, the L3–L5 spinous processes, and the supraspinous and interspinous ligaments were resected to induce instability of the lumbar spine and to create the LSI model (Bian et al., 2016; Ariga et al., 2001; Miyamoto et al., 1991). For mice in the sham group, we only surgically detached the posterior paravertebral muscles from L3 to L5. ABT263 (Navitoclax, Selleckchem, S1001) was administered to mice by gavage at 50 mg/kg per day for 7 days per cycle for two cycles with a 2-week interval between the cycles (the whole treatment time was 4 weeks). ABT263 was administered to aged (24 M) C57BL/6J mice (12 per group) at the age of 23 months. In the meantime, 4-month-old C57BL/6J mice 4 weeks post LSI or sham operation were treated with ABT263 or vehicle (PBS) (Chang et al., 2016). The control group (sham group) for the LSI group refers to C57BL/6J mice that did not undergo LSI surgery, while the control group (young group) for the aged group refers to 4-month-old C57BL/6J mice. All mice were maintained at the animal facility of The Johns Hopkins University School of Medicine (protocol number: MO21M276, MO21M270, MO22M18). All experimental protocols were approved by the Animal Care and Use Committee of The Johns Hopkins University, Baltimore, MD, USA.
 
-## Behavioral testing
+### Behavioral testing
 
 Behavioral tests were performed after ABT263 administration and before sacrifice. All behavioral tests were performed by the same investigator, who was blinded to the study groups.
 
@@ -119,19 +135,19 @@ The Hargreaves test of nociception threshold was evaluated by the Model Heated 4
 
 Spontaneous wheel-running activity was recorded using activity wheels designed for mice (model BIO-ACTIVW-M, Bioseb) (Cobos et al., 2012). The software enabled recording of activity in a cage similar to the mice’s home cage, with the wheel spun in both directions. The device was connected to an analyzer that automatically recorded the spontaneous activity. We evaluated the distance traveled, maximum speed, and total active time during 2 days for each mouse.
 
-## RT-qPCR
+### RT-qPCR
 
 Mice were euthanized with an overdose of isoflurane inhalation. Total RNA was then extracted from the L4–L5 lumbar spine endplate tissue samples. Briefly, spine endplate tissue was ground in liquid nitrogen and isolated from Buffer RLT Plus using RNeasy Plus Mini Kits (QIAGEN, Germany) and homogenized directly with ultrasound (probe sonication at 50 Hz for three times, 10 s per cycle). The purity of RNA was measured by the absorbance at 260/280 nm. Then, the RNA was reverse transcribed into complementary DNA by PrimeScript RT (reverse transcriptase) using a primeScript RT-PCR kit (Takara), and qPCR was performed with SYBR Green-Master Mix (Thermo Fisher Scientific, USA) on a QuantStudio 3 (Applied Biosystems, USA). Relative expression was calculated for each gene by the 2-△△CT method, with glyceraldehyde 3-phosphate dehydrogenase (GAPDH) used for normalization. Primers used for RT-qPCR are listed below: Netrin-1: forward: 5’- CCTGTCACCTCTGCAACTCT -3’, reverse: 5’- TGTGCGGGTTATTGAGGTCG -3’; NGF: forward: 5’- CTGGCCACACTGAGGTGCAT -3’, reverse: 5’-TCCTGCAGGGACATTGCTCTC-3’; BDNF: forward:5’- TGCAGGGGC ATAGACAAAAGG -3’, reverse: 5’- CTTATGAATCGCCAGCCAATTCTC -3’; NT3: forward: 5’- CTCATTATCAAGTTGATCCA -3’, reverse: 5’- CCTCCGTGGTGATGTTCTATT –3’; Slit3: forward: 5’- AGT TGTCTGCCTTCCGACAG -3’, reverse: 5’- TTTCCATGGAGG GTCAGCAC -3’; GAPDH: forward: 5'-ATGTGTCCGTCGTGGATCTGA-3', reverse: 5'-ATGCCTGCTTCACCACCTTCTT-3'.
 
-## ELISA
+### ELISA
 
 We determined the concentration of Netrin-1 (LSBio, LS-F5882) and NGF (Boster, EK0470) in the L3–L5 endplates using the ELISA Development Kit according to the manufacturer’s instructions.
 
-## μCT
+### μCT
 
 Mice were euthanized with an overdose of isoflurane inhalation and flushed with PBS for 5 min followed by 10% buffered formalin perfusion for 5 min via the left ventricle. Then, the whole lumbar spine was dissected and fixed in 10% buffered formalin for 48 hr, transferred into PBS, and examined by high-resolution μCT (Skyscan1172). The scanner was set at a voltage of 55 kV, a current of 181 μA, and a resolution of 9.0 μm per pixel to measure the endplates and vertebrae. The ribs on the lower thoracic spine were included for identification of L4–L5 unit localization. Images were reconstructed and analyzed using NRecon v1.6 and CTAn v1.9 (Skyscan US, San Jose, CA, USA), respectively. Coronal images of the L4–L5 unit were used to perform three-dimensional histomorphometric analyses of the caudal endplate. The three-dimensional structural parameters analyzed were total porosity and trabecular bone separation distribution (Tb.Sp) for the endplates. Six consecutive coronal-oriented images were used for showing three-dimensional reconstruction of the endplates and the vertebrae using three-dimensional model visualization software, CTVol v2.0 (Skyscan US).
 
-## Histochemistry, immunohistochemistry, and histomorphometry
+### Histochemistry, immunohistochemistry, and histomorphometry
 
 After μCT scanning, the spine samples were decalcified in 0.5 M EDTA (pH 7.4) for 30 days and embedded in paraffin or optimal cutting temperature compound (Sakura Finetek, Torrance, CA, USA).
 
@@ -141,6 +157,6 @@ The sections were incubated with primary antibodies to mouse Col X (1:100, ab260
 
 The sample images were observed and captured by the confocal microscope (Zeiss LSM 780). ImageJ (NIH) software was used for quantitative analysis. We calculated endplate scores as described previously (Boos et al., 2002; Masuda et al., 2005).
 
-## Statistics
+### Statistics
 
 All data analyses were performed using SPSS, version 15.0, software (IBM Corp.). Data are presented as means ± standard deviations. Unpaired, two-tailed Student’s t-tests were used for comparisons between two groups. One-way ANOVA with Bonferroni’s post hoc test was used for comparisons among multiple groups. For all experiments, p<0.05 was considered to be significant. There were no samples or animals that were excluded from the analysis. The experiments were randomized, and the investigators were blinded to allocation during experiments and outcome assessment.

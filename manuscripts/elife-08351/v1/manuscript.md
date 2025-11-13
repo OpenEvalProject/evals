@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.08351.001 Poor study methodology leads to biased measurement of treatment effects in preclinical research. We used available sunitinib preclinical studies to evaluate relationships between study design and experimental tumor volume effect sizes. We identified published animal efficacy experiments where sunitinib monotherapy was tested for effects on tumor volume. Effect sizes were extracted alongside experimental design elements addressing threats to valid clinical inference. Reported use of practices to address internal validity threats was limited, with no experiments using blinded outcome assessment. Most malignancies were tested in one model only, raising concerns about external validity. We calculate a 45% overestimate of effect size across all malignancies due to potential publication bias. Pooled effect sizes for specific malignancies did not show apparent relationships with effect sizes in clinical trials, and we were unable to detect dose–response relationships. Design and reporting standards represent an opportunity for improving clinical inference. DOI: http://dx.doi.org/10.7554/eLife.08351.001
+Poor study methodology leads to biased measurement of treatment effects in preclinical research. We used available sunitinib preclinical studies to evaluate relationships between study design and experimental tumor volume effect sizes. We identified published animal efficacy experiments where sunitinib monotherapy was tested for effects on tumor volume. Effect sizes were extracted alongside experimental design elements addressing threats to valid clinical inference. Reported use of practices to address internal validity threats was limited, with no experiments using blinded outcome assessment. Most malignancies were tested in one model only, raising concerns about external validity. We calculate a 45% overestimate of effect size across all malignancies due to potential publication bias. Pooled effect sizes for specific malignancies did not show apparent relationships with effect sizes in clinical trials, and we were unable to detect dose–response relationships. Design and reporting standards represent an opportunity for improving clinical inference.
 
 ## Introduction
 
@@ -31,35 +31,96 @@ In what follows, we conducted a systematic review and meta-analysis of features 
 
 ## Results
 
-## Study characteristics
+### Study characteristics
 
-Our screen from database and reference searches captured 74 studies eligible for extraction, corresponding to 332 unique experiments investigating tumor volume response (
+Our screen from database and reference searches captured 74 studies eligible for extraction, corresponding to 332 unique experiments investigating tumor volume response (Figure 1, Table 1, Table 1—source data 1E). Effect sizes (standardized mean difference [SMD] using Hedges' g) could not be computed for 174 experiments (52%) due to inadequate reporting (e.g., sample size not provided, effect size reported as a median, lack of error bars, Figure 1—figure supplement 1). Overall, 158 experiments, involving 2716 animals, were eligible for meta-analysis. The overall pooled SMD for all extracted experiments across all malignancies was −1.8 [−2.1, −1.6] (Figure 2—figure supplement 1). Mean duration of experiments used in meta-analysis (Figures 2–4) was 31 days (±14 days standardized deviation of the mean (SDM)).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08351/elife-08351-fig1-v1.jpg)
 
-**Figure 1.:** A) internal, construct, and (B) external validity design elements.External validity scores were calculated for each malignancy type tested, according to the formula: number species used + number of models used; an extra point was assigned if a malignancy type tested more than one species and more than one model.DOI: http://dx.doi.org/10.7554/eLife.08351.00310.7554/eLife.08351.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08351.004
+**Figure 1.:** External validity scores were calculated for each malignancy type tested, according to the formula: number species used + number of models used; an extra point was assigned if a malignancy type tested more than one species and more than one model.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08351/elife-08351-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** A) internal, construct, and (B) external validity design elements for all experiments (n = 332) extracted for validity data parameters.DOI: http://dx.doi.org/10.7554/eLife.08351.005
+**Table 1.**
+ Demographics of included studiesTable 1—source data 1.(C) Search Strategies. (D) PRISMA Flow Diagram. (E) Demographics of included studies at qualitative level.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study level demographics</th>
+      <th>Included studies (n = 74)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Conflict of interest</td>
+    </tr>
+    <tr>
+      <td>Declared</td>
+      <td>19 (26%)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Funding statement*</td>
+    </tr>
+    <tr>
+      <td>Private, for-profit</td>
+      <td>44 (59%)</td>
+    </tr>
+    <tr>
+      <td>Private, not-for-profit</td>
+      <td>35 (47%)</td>
+    </tr>
+    <tr>
+      <td>Public</td>
+      <td>37 (50%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2 (3%)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Recommended clinical testing</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>37 (50%)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Publication date</td>
+    </tr>
+    <tr>
+      <td>2003–2006</td>
+      <td>13 (18%)</td>
+    </tr>
+    <tr>
+      <td>2007–2009</td>
+      <td>17 (23%)</td>
+    </tr>
+    <tr>
+      <td>2010–2013</td>
+      <td>44 (59%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Does not sum to 100% as many studies declared more than one funding source._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08351/elife-08351-fig2-v1.jpg)
 
-**Figure 2.:** Shaded region denotes the pooled standardized mean difference (SMD) and 95% confidence interval (CI) (−1.8 [−2.1, −1.6]) for all experiments combined at the last common time point (LCT).DOI: http://dx.doi.org/10.7554/eLife.08351.00810.7554/eLife.08351.009Figure 2—source data 1.2) for each malignancy sub-group.DOI: http://dx.doi.org/10.7554/eLife.08351.009
+**Figure 2.:** Shaded region denotes the pooled standardized mean difference (SMD) and 95% confidence interval (CI) (−1.8 [−2.1, −1.6]) for all experiments combined at the last common time point (LCT).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08351/elife-08351-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.08351.010
-
 ![Figure 3.](https://cdn.elifesciences.org/articles/08351/elife-08351-fig3-v1.jpg)
 
-**Figure 3.:** The shaded region denotes the pooled SMD and 95% CI (−1.8 [−2.1, −1.6]) for all experiments combined at the LCT.DOI: http://dx.doi.org/10.7554/eLife.08351.011
+**Figure 3.:** The shaded region denotes the pooled SMD and 95% CI (−1.8 [−2.1, −1.6]) for all experiments combined at the LCT.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08351/elife-08351-fig4-v1.jpg)
 
-**Figure 4.:** Trim and fill analysis was performed on pooled malignancies, as well as the three malignancies with the greatest study volume. (A) All experiments for all malignancies (n = 182), (B) all experiments within renal cell carcinoma (RCC) (n = 35), (C) breast cancer (n = 32), and (D) colorectal cancer (n = 29). Time point was the LCT. Open circles denote original data points whereas black circles denote ‘filled’ experiments. Trim and fill did not produce an estimate in RCC; therefore, no overestimation of effect size could be found.DOI: http://dx.doi.org/10.7554/eLife.08351.012
+**Figure 4.:** Trim and fill analysis was performed on pooled malignancies, as well as the three malignancies with the greatest study volume. (A) All experiments for all malignancies (n = 182), (B) all experiments within renal cell carcinoma (RCC) (n = 35), (C) breast cancer (n = 32), and (D) colorectal cancer (n = 29). Time point was the LCT. Open circles denote original data points whereas black circles denote ‘filled’ experiments. Trim and fill did not produce an estimate in RCC; therefore, no overestimation of effect size could be found.
 
-## Design elements addressing validity threats
+### Design elements addressing validity threats
 
 Effects in preclinical studies can fail clinical generalization because of bias or random variation (internal validity), a mismatch between experimental operations and the clinical scenario modeled (construct validity), or idiosyncratic causal mediators in an experimental system (external validity) (Henderson et al., 2013). We extracted design elements addressing each using consensus design practices identified in a systematic review of validity threats in preclinical research (Henderson et al., 2013).
 
@@ -69,19 +130,19 @@ Implementation of internal validity practices did not show clear relationships w
 
 Within construct validity, there was a significant difference in pooled effect size between genetically engineered mouse models and human xenograft (p-value <0.0001) and allograft (p-value 0.001) model types (Figure 3B). For external validity (Figure 3C), malignancies tested in more and diverse experimental systems tended to show less extreme effect sizes (p < 0.001).
 
-## Evidence of publication bias
+### Evidence of publication bias
 
 For the 158 individual experiments, 65.8% showed statistically significant activity at the experiment level (p < 0.05, Figure 2—figure supplement 1), with an average sample size of 8.03 animals per treatment arm and 8.39 animals per control arm. Funnel plots for all studies (Figure 4A), as well as our renal cell carcinoma (RCC) subset (Figure 4B) suggest potential publication bias. Trim and fill analysis suggests an overestimation of effect size of 45% (SMD changed from −1.8 [−2.1, −1.7] to −1.3 [−1.5, −1.0]) across all indications. For high-grade glioma and breast cancer, the overestimation was 11% and 52%, respectively. However, trim and fill analysis suggested excellent symmetry for the RCC subgroup, suggesting coverage of the overall effect size and confidence intervals and not overestimation of effect size.
 
-## Preclinical studies and clinical correlates
+### Preclinical studies and clinical correlates
 
 Every malignancy tested with sunitinib showed statistically significant anti-tumor activity (Figure 2). Though we did not perform a systematic review to estimate clinical effect sizes for sunitinib against various malignancies, a perusal of the clinical literature suggests little relationship between pooled effect sizes and demonstrated clinical activity. For instance, sunitinib monotherapy is highly active in RCC patients (Motzer et al., 2006a, 2006b) and yet showed a relatively small preclinical effect; in contrast, sunitinib monotherapy was inactive against small cell lung cancer in a phase 2 trial (Han et al., 2013), but showed relatively large preclinical effects.
 
-Using measured effect sizes at a standardized time point of 14 days after first administration (a different time point than in
+Using measured effect sizes at a standardized time point of 14 days after first administration (a different time point than in Figures 2–4 to better align our evaluation of dose–response), we were unable to observe a dose–response relationship over three orders of magnitude (0.2–120 mg/kg/day) for all experiments (Figure 5A). We were also unable to detect a dose–response relationship over the full dose range (4–80 mg/kg/day) tested in the RCC subset (Figure 5B). The same results were observed when we performed the same analyses using the last time point in common between the experimental and control arms.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08351/elife-08351-fig5-v1.jpg)
 
-**Figure 5.:** Only experiments with a once daily (no breaks) administration schedule were included in both graphs. Effect size data were taken from a standardized time point (14 days after first sunitinib administration). (A) Experiments (n = 158) from all malignancies tested failed to show a dose–response relationship. (B) A dose–response relationship was not detected for RCC (n = 24). (C) Dose–response curves reported in individual studies within the RCC subset showed dose–response patterns (blue diamond = Huang 2010a [n = 3], red square = Huang 2010d [n = 3], green triangle = Ko 2010a [n = 3], purple X = Xin 2009 [n = 3]).DOI: http://dx.doi.org/10.7554/eLife.08351.013
+**Figure 5.:** Only experiments with a once daily (no breaks) administration schedule were included in both graphs. Effect size data were taken from a standardized time point (14 days after first sunitinib administration). (A) Experiments (n = 158) from all malignancies tested failed to show a dose–response relationship. (B) A dose–response relationship was not detected for RCC (n = 24). (C) Dose–response curves reported in individual studies within the RCC subset showed dose–response patterns (blue diamond = Huang 2010a [n = 3], red square = Huang 2010d [n = 3], green triangle = Ko 2010a [n = 3], purple X = Xin 2009 [n = 3]).
 
 ## Discussion
 
@@ -101,13 +162,13 @@ Numerous commentators have raised concerns about the design and reporting of pre
 
 ## Materials and methods
 
-## Literature search
+### Literature search
 
 To identify all in vivo animal studies testing the anti-cancer properties of sunitinib (‘efficacy studies’), we queried the following databases on 27 February 2012 using a search strategy adapted from Hooijmans et al. (2010) and de Vries et al. (2011): Ovid MEDLINE In-Process & Other Non-Indexed Citations and Ovid MEDLINE (dates of coverage from 1948 to 2012), EMBASE Classic and EMBASE database (dates of coverage from 1974 to 2012) and BIOSIS Previews (dates of coverage from 1969 to 2012). Search results were entered into an EndNote library and duplicates were removed. Additional citations were identified during the screening of identified articles. See Table 1—source data 1C,D for detailed search strategy and PRISMA flow diagram.
 
 Screening was performed at citation level by two reviewers (CF and VCH), and at full-text by one reviewer (VCH). Inclusion criteria were (a) original reports or abstracts, (b) English language, (c) contained at least one experiment measuring disease response in a live, non-human animals, and (d) employed sunitinib in a control, comparator, or experimental context, (e) tested anti-cancer activity. To avoid capturing the same experiment twice, in rare cases where the same experiment was reported in different articles, the most detailed and/or recent publication was included.
 
-## Extraction
+### Extraction
 
 All included studies were evaluated at the study-level, but only those with eligible experiments (e.g., those evaluating the effect of monotherapy on tumor volume and that were reported with sample sizes and error measurements) were forwarded to experiment-level extractions. We excluded experiments when they had been reported in a previous publication after specifically searching for duplicates during screening and analysis. For each eligible experiment, we extracted experimental design elements derived from a prior systematic review of validity threats in preclinical research (Henderson et al., 2013).
 
@@ -115,7 +176,7 @@ Details regarding the coding of internal and construct validity categories are g
 
 Our primary outcome was experimental tumor volume and we extracted necessary information (sample size, mean measure of treatment effect, and SDM/SEM) to enable calculation of study and aggregate level effect sizes. Since the units of tumor volume were not always consistent between experiments, we extracted those experiments for which a reasonable proxy of tumor volume could be obtained. These included physical caliper measurements (often reported in mm3 or cm3), tumor weights (often reported in mg), optical measurements made from luminescent tumor cell lines (often reported in photons/second), and fold differences in tumor volumes between the control and treatment arms. We extracted experiments of both primary and metastatic tumors, but not experiments where tumor incidence was reported. To account for these different measures of tumor volume, SMDs were calculated using Hedges' g. Hedges' g is a widely accepted standardized measure of effect in meta-analyses where units are not always identical. For experiments where more than one dose of sunitinib was tested against the same control arm, we created a pooled SMD to adjust appropriately for the multiple use of the same control group. Data were extracted at baseline (Day 0 and defined as the first day of drug administration), Day 14 (the closest measured data point to 14 days following first dose), and the last common time point (LCT) between the control group and the treatment group. The LCT was variable between experiments and the last time point for which we could calculate SMD and often represented the point at which the greatest difference was observed between the arms. Data presented graphically were extracted using the graph digitizer software GraphClick (Arizona Software). Extraction was performed by four independent and trained coders (VCH, ND, AH, and NM) using DistillerSR. There was a 12% double-coding overlap to minimize inter-rater heterogeneity and prevent coder drift. Discrepancies in double coding were reconciled through discussion, and if necessary, by a third coder. The gross agreement rate before reconciliation for all double-coded studies was 83%.
 
-## Meta-analysis
+### Meta-analysis
 
 Effect sizes were calculated as SMDs using Hedges' g with 95% confidence intervals. Pooled effect sizes were calculated using a random effects model employing the DerSimonian and Laird (1986) method, in OpenMeta[Analyst] (Wallace et al., 2009). We also calculated heterogeneity within each malignancy using I2 statistics (Figure 2—source data 1B). To assess the predictive value of preclinical studies in our sample, we calculated pooled effect sizes for each type of malignancy. Subgroup analyses were performed for each validity element. p-values were calculated by a two-sided independent group T-test. Statistical significance was set at a p-value <0.05; as this was an exploratory study we did not adjust for multiple analyses.
 

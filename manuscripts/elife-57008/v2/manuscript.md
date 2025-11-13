@@ -25,41 +25,61 @@ In an earlier paper, we showed that robust idiosyncrasies exist between visual a
 
 ## Results
 
-## External morphology of sensory systems
+### External morphology of sensory systems
 
 In order to examine the sensory traits of five closely related and often co-occurring species – D. persimilis, D. affinis, D. bifasciata, D. subobscura and D. pseudoobscura – we quantified their visual and olfactory investment by first measuring the external morphology of their visual and olfactory systems. Here, we first focused on the two best studied members, D. subobscura and D. pseudoobscura, where previous work has already suggested potential differences (Keesey IW et al., 2019; Ramaekers et al., 2019; Tanaka et al., 2017). Eight to 10 females of these species were photographed using a Zeiss AXIO microscope, including lateral, dorsal, and frontal views. We then measured across a variety of physical characteristics, such as surface areas of the compound eye, antenna, maxillary palps, ocelli, and overall body size, as well as head, thorax, abdomen and femur length. We also generated metrics for the number of ommatidia as well as measures of trichoid sensilla for each species. It is not possible to distinguish between antennal trichoid one (at1) and antennal trichoid four (at4), at least not based on morphology alone. Therefore, we clarify herein that trichoid measurements refer collectively to both at1 and at4 across those examined Drosophila species. In general, we found that D. subobscura possessed much larger eyes in regards to surface area, as well as 25–30% more ommatidia than its close relative, D. pseudoobscura, though ommatidia diameter was identical (Figure 1A–E; Figure 1—figure supplement 2F). While there was some variation in individual size within and between species (with D. subobscura exhibiting larger dimensions in all measured body parts; Figure 1—figure supplement 1A–E), we note that eye surface area was consistently correlated with ommatidium number (Figure 1D), suggesting that eye surface area provides a good approximation of visual investment. Here, we note that both of these two species had a nearly identical linear relationship between surface area and number of ommatidia (Figure 1D), with D. subobscura possessing larger eyes. While D. pseudoobscura possessed smaller eyes and a reduced ommatidium count, females of this species instead displayed larger antennal surface areas relative to D. subobscura females (Figure 1A–C,F). Interestingly, not all metrics related to sensory organs on the head were different between these closely related species. For example, the maxillary palps (Figure 1G) did not display any significant variation in surface area, but we do note differences in the ocelli (Figure 1—figure supplement 2C–E). Thus, these changes to sensory systems on the head appear mostly restricted to the antenna and to the visual sensory modalities.
 
-## Comparative neuroanatomy of visual and olfactory investment
+![Figure 1.](https://cdn.elifesciences.org/articles/57008/elife-57008-fig1-v2.jpg)
+
+**Figure 1.:** (A) Examples of frontal head replicates, where eye and antenna surface area was measured from females. Note the differences in pigmentation, as well as the size of the compound eye and third antennal segment from both species. (B) Side-by-side comparison of both the compound eye (red) and third antennal segment (blue) from each fly. (C) Example of lateral views used for measurements, including compound eye surface area, antennal surface area, and maxillary palp surface area. (D) Intra- and interspecies correlations between eye surface area and the number of ommatidia for D. subobscura (yellow) and D. pseudoobscura (grey). (E–G) Comparison of ommatidia counts (E), antennal surface (F), and palp surface (G) for both species. Boxplots represent the median (bold black line), quartiles (boxes), as well as 1.5 times the inter quartile range (whiskers). Mann-whitney U test; ***, p<0.001; *, p<0.05; ns, p>0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57008/elife-57008-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Images of whole flies were collected to provide measurements on overall size differences between these two Drosophila species. While D. subobscura was significantly larger, this does not appear to explain the observed variation in eye or antenna sizes between these two species. (A) Lateral views of each fly species were measured to provide surface area estimates for head. (B) Linear correlations reveal that head size does not mirror ommatidia number; thus, that the visual sensory system varies isometrically with respect to head size. (C) Lateral views of each fly species were measured to provide surface area estimates for thorax, abdomen and foreleg (femur) measurements. In all cases, D. subobscura females were significantly larger than D. pseudoobscura adults. (D) Lateral views of D. pseudoobscura adult females. (E) Lateral views of D. subobscura females. (F) Time metrics are shown for flies selecting between darkened or lightened sides of the Y-tube during phototaxis experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57008/elife-57008-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Here, we note a difference in trichoid length between males of the two obscura species, with D. subobscura having significantly longer sensillum than D. pseudoobscura. It was not possible to distinguish between antennal trichoid one (at1) and antennal trichoid four (at4), at least not based on morphology alone. Therefore, we clarify in the present measurements that trichoid refers collectively to both at1 and at4 across those examined Drosophila species. (B) Stacked focal images of the antenna from each species. (C–D) Average ocelli length from males and females of each species, where D. subobscura consistently had larger ocelli. (E) Stacked focal images of the ocelli from each species. (F) Average ommatidium diameters, where there was no significant difference between our two obscura species. (G) Courtship arenas used in this study, including measurements of sizes for each component.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/57008/elife-57008-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Heads were dissected and mounted in order to image the apex of each species’ compound eye. Example confocal image of the apex of the compound eye from one replicate of D. subobscura analyses. (B) Repeated measures of ommatidia diameter were generated and statistically compared between our five obscura species, though we did not document any significant differences in diameter.
+
+### Comparative neuroanatomy of visual and olfactory investment
 
 As we had already established divergent external morphology between these two species, especially in regards to vision and olfaction, we next focused our attention on the primary processing centers in the brain for these sensory systems, including the antennal lobe (AL) and optic lobe (OL) (Figure 2AB). After correcting for adult size (using the remaining hemisphere or central brain volume as a reference for each species; in grey) (Keesey et al., 2019), we identified a relative increase of the AL size for D. pseudoobscura (Figure 2C), as well as a relative decrease of the size of its OL (Figure 2D) when compared to the same neuropils for D. subobscura adults. These inverse values between the two sensory systems correspond strongly to the variations we measured in the external morphology, where one species had larger eyes but smaller antennae, and vice versa. Moreover, to highlight the regions of the OL that show the largest increases, we provide similar metrics for relative size for the lobula plate, lobula and the medulla (Figure 2E), where all brain regions (again when corrected for total brain size; in grey) are bigger in D. subobscura, but only the medulla is significantly larger.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/57008/elife-57008-fig2-v2.jpg)
 
-**Figure 2.:** (A) Three-dimensional reconstructions of the neuropils of D. pseudoobscura and D. subobscura adult females. (B) Diagrammatic representation of the brain, with color-coded and labeled volumetric sources. AL, blue; hemisphere, grey; optic lobe, OL, with medulla (yellow), lobula (red) and lobula plate (orange). (C–E) Relative size of AL (C), OL (D), and lobula plate, lobula, and medulla (E) as compared to respective hemisphere [%].Figure 2—source data 1.
+**Figure 2.:** (A) Three-dimensional reconstructions of the neuropils of D. pseudoobscura and D. subobscura adult females. (B) Diagrammatic representation of the brain, with color-coded and labeled volumetric sources. AL, blue; hemisphere, grey; optic lobe, OL, with medulla (yellow), lobula (red) and lobula plate (orange). (C–E) Relative size of AL (C), OL (D), and lobula plate, lobula, and medulla (E) as compared to respective hemisphere [%].
 
-## Courtship and mating behavior differences between obscura species
+### Courtship and mating behavior differences between obscura species
 
 In order to ascertain the possible ramifications of inverse eye and antenna variation between our two species, we proceeded to examine behaviors related to mate selection and courtship. Previous research has shown that D. subobscura displays light-dependent courtship, and will not successfully copulate in the dark (Wallace and Dobzhansky, 1946; Grossfield, 1971; Spieth, 1952). Counter to this, D. pseudoobscura mating is light-independent, and courtship can successfully occur regardless of light conditions (Brown, 1964; Wallace and Dobzhansky, 1946; Grossfield, 1971; Ripfel and Becker, 1982; Spassky, 1967). Therefore, as we wanted to observe and dissect the behavioral motifs and succession of events that lead to successful courtship, we performed courtship trials under identical conditions for both species. We recorded videos (Video 1 and Video 2) using virgin males and females that were introduced into a small courtship arena (Figure 3). Several differences were immediately noted between the species. D. pseudoobscura males oriented themselves either behind or to the side of the female during courtship, often forming a right angle to her with the male head focusing on the last few abdominal segments of the potential mate (Figure 3A). Next, this species performed characteristic wing vibrations and singing, with the outstretched wing always nearest to and in the direction of the head of the female (Figure 3A), and with the male constantly in pursuit of the female from behind or from the side. It is not clear if larger pedicel size (i.e. Johnston’s organ) correlates with species that perform songs, but future work will address this hypothesis. In stark contrast, observations of the courtship of D. subobscura showed that the males of this species often dart around in a circular arc to put themselves directly in front of the path of the female, and appear to arrest her movement (Figure 3B,C). This frontal positioning by the D. subobscura male results in most of the subsequent courtship behaviors occurring in front of the female and within her visual field, including the male wing displays. Here, D. subobscura was not observed to vibrate the outstretched wing (unlike D. pseudoobscura males, which are known to sing), and instead, seemed to angle or tilt the outstretched wing during the display, possibly as a flash of color via wing interference patterns (WIPs) (Shevtsova et al., 2011) or another visual exhibition for the female (Figure 3B,D,E).
+
+![Video 1.](https://cdn.elifesciences.org/articles/57008/elife-57008-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/57008/elife-57008-video2.mp4.jpg)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57008/elife-57008-fig3-v2.jpg)
 
 **Figure 3.:** (A–B) Images of courtship for D. pseudoobscura (A) and D. subobscura (B) and schematic of the behavior, whether the male is in- or outside the predicted visual field of the female. (C) Time that males spent within the female visual field during courtship. Boxplots represent the median (bold black line), quartiles (boxes), as well as 1.5 times the inter quartile range (whiskers). Mann-Whitney U test; ***, p<0.001 (D) Diagram of D. subobscura wing display by the male, where no wing vibration was observed, and instead, a discrete range of wing angles was presented and maintained towards the female mating partner during courtship. (E) Stable structural wing interference patterns observed across the otherwise clear wings of males of both species.
 
-## Phototactic responses by close-relatives of the obscura group
+### Phototactic responses by close-relatives of the obscura group
 
 Given that we had established that differences in compound eye and antenna sizes correlated with differences in courtship behavior, we next examined whether the morphological investments played any additional role in ecological decisions related to environmental preferences. Here we utilized a simple Y-tube two-choice behavioral assay, where adult flies from each species could select between a light or dark environment (Figure 4A). We observed that the smaller-eyed D. pseudoobscura significantly preferred to enter the Y-tube arm that was in shadow and darkened (Figure 4B). In contrast, the larger-eyed adult D. subobscura significantly preferred the Y-tube arm that was in full light.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57008/elife-57008-fig4-v2.jpg)
 
-**Figure 4.:** (A) Two diagram views of the Y-tube phototactic response paradigm. Single flies were allowed to choose between either a well-lit or a darkened arm of a Y-tube. (B) Percentages of male and female flies of both species choosing the well-lit or darkened arm of the y-tube. (C) Diagram of ecological niche partitioning where our closely-related Drosophila species divide spatially across microhabitats within the same environment, and where light gradients act as an isolation barrier. Here we propose that these obscura species, despite sharing a forest ecology, create a reduction in either host resource or mating competition via their different preferences toward edge and open canopy environmental conditions, as related directly to their innate preferences for light intensity.Figure 4—source data 1.
+**Figure 4.:** (A) Two diagram views of the Y-tube phototactic response paradigm. Single flies were allowed to choose between either a well-lit or a darkened arm of a Y-tube. (B) Percentages of male and female flies of both species choosing the well-lit or darkened arm of the y-tube. (C) Diagram of ecological niche partitioning where our closely-related Drosophila species divide spatially across microhabitats within the same environment, and where light gradients act as an isolation barrier. Here we propose that these obscura species, despite sharing a forest ecology, create a reduction in either host resource or mating competition via their different preferences toward edge and open canopy environmental conditions, as related directly to their innate preferences for light intensity.
 
-## Expansion of hypotheses to include additional species
+### Expansion of hypotheses to include additional species
 
 Using the same behavioral, phenotypic and morphological examinations, we tested our hypotheses of sensory trait variation across three additional members of the obscura group. Here we included D. persimilis, which is a well-studied, sympatric species for direct comparison to D. pseudoobscura, as well as D. affinis, which also shares North American habitats with these two species. We also added D. bifasciata, which is a member of the obscura subgroup, and is endemic to Asia. In total, these five vinegar flies represent a reasonable phylogenetic spectrum, and provide example species from four of the main subgroups of the obscura clade. After collecting images from several angles including frontal views (Figure 5A), we analyzed in depth the visual and olfactory morphology of each new species, ultimately generating an eye-to-funiculus ratio (EF ratio) for each fly (Figure 5A–C), which has been used previously to compare sensory systems from species of differing absolute size (Keesey IW et al., 2019). Moreover, we examined three populations of each species in order to examine the consistency of EF Ratio within and between our five obscura species. Subsequently, we again repeated the same behavioral regimes using these new obscura members, including both y-tube phototaxis as well as species-specific courtship ethology. In these cases, we documented a rather steady variance in positive or negative phototaxis across this growing phylogenetic examination, with our initial two species (e.g. D. pseudoobscura and D. subobscura) representing the two extremes (Figure 5D). Similarly, we also observed a consistent change in male courtship behavior, as measured by the percentage of time the male of each new species spent in front of the female during his dance or mating display. By documenting the relationship between our ommatidium counts and our estimates of the surface area of the compound eye, we conclude that diameter of ommatidia does not vary between our species (Figure 1—figure supplement 3), and we conclude that surface area is a consistently accurate metric for estimating the number of visual facets in the obscura group (Figure 5E). We do note variation in the absolute size of flies within each species, and future research should examine this aspect for additional assessments of sensory plasticity or constraints, perhaps related to population density. However, to generate similar sized adults, we controlled rearing density for consistent adult sizes across both morphological and behavioral assessments. Interestingly, we also describe correlations between EF ratio and phototaxis across our species, as well as the percentage of courtship the male spends in front of the female (Figure 5F,G). In both instances, larger EF ratios correspond tightly with increases in positive phototaxis (i.e. attraction to light) and correspond strongly with increases in courtship behaviors generated while in front of the female, which we presume are related to the importance of visual sensory signals. Here we note that some of the largest behavioral differences (i.e. slope between individual species) still occur between closest phylogenetic relatives, including D. pseudoobscura and D. persimilis (Figure 5F,G), which represent the most-studied and well-published sympatric species pair from the obscura group. In these sympatric species, we see larger behavioral variations (y-axis) than changes in morphology (x-axis), suggesting that perhaps even small tradeoffs in olfactory or visual sensory systems can generate robust changes in behavior (Figure 5F,G). Here, we note that changes in phototaxis between sympatric species appear to be stronger and more acute than changes in courtship dynamics (Figure 5D,F,G). Moreover, we observe that the slope of the correlation between phototaxis and EF Ratio for the sympatric species is greater than the slope related to the rest of the obscura subgroup (Figure 5F; orange vs grey).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57008/elife-57008-fig5-v2.jpg)
 
-**Figure 5.:** obscura group.(A) Measures of eye-to-funiculus ratio (EF ratio) across 15 populations of obscura species. (B) Statistical assessments of average EF Ratio between each species. (C) Diagram of morphology used to generate EF ratio for each species and the phylogenetic relationship of these five members of the obscura group (Crysnanto and Obbard, 2019; O'Grady, 1999), as well as examples of the frontal head images used to collect certain morphological data. Additional images are available with the online version of this publication. (D) Eye-to-funiculus ratio for each measured species, as well as the male phototactic response during y-tube trials. More details about phototaxis behavioral regimes are available in Figure 4. In addition, courtship videos from each species were addressed to quantify the amount of time the male spent in courtship, and shown are what percentage of that courtship time was spent in front of the female (see Figure 3 and supplementary videos for more detail). (E) Morphological measurements of eye surface area and the number of ommatidia collected from lateral views of each species. (F) Correlation between EF ratio and positive phototaxis for all tested obscura species. Our hypothesized correlation is shown with a dashed line, which stems from initial comparison of just two species (D. pseudoobscura and D. subobscura), while the actual correlation following the additional analyses of three new species is shown using a solid line. (G) Correlation between EF ratio and the percentage of male courtship spent in front of the female during his dance or display ethology.Figure 5—source data 1.
+**Figure 5.:** (A) Measures of eye-to-funiculus ratio (EF ratio) across 15 populations of obscura species. (B) Statistical assessments of average EF Ratio between each species. (C) Diagram of morphology used to generate EF ratio for each species and the phylogenetic relationship of these five members of the obscura group (Crysnanto and Obbard, 2019; O'Grady, 1999), as well as examples of the frontal head images used to collect certain morphological data. Additional images are available with the online version of this publication. (D) Eye-to-funiculus ratio for each measured species, as well as the male phototactic response during y-tube trials. More details about phototaxis behavioral regimes are available in Figure 4. In addition, courtship videos from each species were addressed to quantify the amount of time the male spent in courtship, and shown are what percentage of that courtship time was spent in front of the female (see Figure 3 and supplementary videos for more detail). (E) Morphological measurements of eye surface area and the number of ommatidia collected from lateral views of each species. (F) Correlation between EF ratio and positive phototaxis for all tested obscura species. Our hypothesized correlation is shown with a dashed line, which stems from initial comparison of just two species (D. pseudoobscura and D. subobscura), while the actual correlation following the additional analyses of three new species is shown using a solid line. (G) Correlation between EF ratio and the percentage of male courtship spent in front of the female during his dance or display ethology.
 
 ## Discussion
 
@@ -81,34 +101,163 @@ Nevertheless, it is apparent from our current data that variation in visual and 
 
 ## Materials and methods
 
-## External morphometrics from head and body
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Drosophila subobscura)</td>
+      <td>Dsub 1</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0203739</td>
+      <td>14011–0131.16</td>
+    </tr>
+    <tr>
+      <td>Strain (D. subobscura)</td>
+      <td>Dsub 2</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0201472</td>
+      <td>14011–0131.04</td>
+    </tr>
+    <tr>
+      <td>Strain (D. subobscura)</td>
+      <td>Dsub 3</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0201473</td>
+      <td>14011–0131.05</td>
+    </tr>
+    <tr>
+      <td>Strain (D. pseudoobscura)</td>
+      <td>Dpse 1</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0200037</td>
+      <td>14011–0121.00</td>
+    </tr>
+    <tr>
+      <td>Strain (D. pseudoobscura)</td>
+      <td>Dpse 2</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0200038</td>
+      <td>14011–0121.03</td>
+    </tr>
+    <tr>
+      <td>Strain (D. pseudoobscura)</td>
+      <td>Dpse 3</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0201452</td>
+      <td>14011–0121.100</td>
+    </tr>
+    <tr>
+      <td>Strain (D. affinis)</td>
+      <td>Daff 1</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0200081</td>
+      <td>14012–0141.00</td>
+    </tr>
+    <tr>
+      <td>Strain (D. affinis)</td>
+      <td>Daff 2</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0201485</td>
+      <td>14012–0141.05</td>
+    </tr>
+    <tr>
+      <td>Strain (D. affinis)</td>
+      <td>Daff 3</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0203594</td>
+      <td>14012–0141.09</td>
+    </tr>
+    <tr>
+      <td>Strain (D. bifasciata)</td>
+      <td>Dbif 1</td>
+      <td>KYORIN-fly</td>
+      <td></td>
+      <td>E-12733</td>
+    </tr>
+    <tr>
+      <td>Strain (D. bifasciata)</td>
+      <td>Dbif 2</td>
+      <td>KYORIN-fly</td>
+      <td></td>
+      <td>E-12701</td>
+    </tr>
+    <tr>
+      <td>Strain (D. bifasciata)</td>
+      <td>Dbif 3</td>
+      <td>KYORIN-fly</td>
+      <td></td>
+      <td>E-12710</td>
+    </tr>
+    <tr>
+      <td>Strain (D. persimilis)</td>
+      <td>Dper 1</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0200020</td>
+      <td>14011–0111.00</td>
+    </tr>
+    <tr>
+      <td>Strain (D. persimilis)</td>
+      <td>Dper 2</td>
+      <td>NDSSC</td>
+      <td>RRID:FlyBase_FBst0200034</td>
+      <td>14011–0111.41</td>
+    </tr>
+    <tr>
+      <td>Strain (D. persimilis)</td>
+      <td>Dper 3</td>
+      <td>NDSSC</td>
+      <td></td>
+      <td>14011–0111.63</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>data repository</td>
+      <td>EDMOND</td>
+      <td>https://dx.doi.org/10.17617/3.3v</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### External morphometrics from head and body
 
 For each fly species, 8–10 females were photographed using a Zeiss AXIO Zoom.V16 microscope (ZEISS, Germany, Oberkochen), including lateral, dorsal, and frontal views. We utilized the following laboratory strains: D. subobscura (#1, 14011–0131.16; #2, 14011–0131.04; #3, 14011–0131.05), D. pseudoobscura (#1, 14011–0121.00; #2, 14011–0121.03; #3, 14011–0121.100), D. affinis (#1, 14012–0141.00; #2, 14012–0141.05; #3, 14012–0141.09), D. persimilis (#1, 14011–0111.00; #2, 14011–0111.41; #3, 14011–0111.63), and D. bifasciata (#1, E-12733; #2, E-12701; #3, E-12710). Insects were obtained from the National Drosophila Species Stock Center (NDSSC, Cornell, USA) or from KYORIN-Fly, the Drosophila species stock center at Kyorin University (KYORIN-fly, Tokyo, Japan). We reared all insects with softened standard diet and a single crushed blueberry (in order to further induce and improve egg-laying behaviors). Flies of each wild type were dispatched using pure ethyl acetate (MERCK, Germany, Darmstadt). Lateral body (40×), dissected frontal head (128×), and dissected antenna views (180×) were acquired as focal stacks with a 0.5x PlanApo Z objective (ZEISS, Germany, Oberkochen). The resulting stacks were compiled to extended focus images in Helicon Focus 6 (Helicon Soft, Dominica) using the pyramid method. Based on the extended focus images, we measured head, thoracic, abdominal, foreleg (femur), as well as funiculus and compound eye surface areas, where all measurements are in µm or µm2 (Figure 1; Figure 1—figure supplement 1). We also measured surface areas of the maxillary palps and length of the ocelli from both species; however, we did not find any significant difference for the palps (Figure 1C,G; Figure 1—figure supplement 2). Measurements of all body regions were conducted manually using the tools available in Image J (Fiji) software. All raw data available with online version of the manuscript.
 
-## Ommatidia counts and compound eye surface area metrics
+### Ommatidia counts and compound eye surface area metrics
 
 In order to count ommatidia, the compound eye of each species was arranged laterally and perpendicular to the AXIO Zoom.V16 microscope. A total of 8–12 individuals per species were utilized, with only the best eight specimens used where the eye was completely intact and in focus, where counts were done manually using Image J (Fiji) software tools (Figure 1C–E). We also examined the association between eye surface area and ommatidia counts (Figure 1D). Here, we note that species share nearly identical linear regression analyses between the number of ommatidia and the associated surface area, thus we conclude that ommatidium diameter is identical between the two species, and that surface area is a good predictor of ommatidia number. Although we observed small variations in absolute body size within our species populations that appeared to be correlated with rearing density (e.g. high density produced smaller flies), we also observed a consistently conserved ratio between the eye and antenna morphology regardless of adult body size (data not shown). However, to control for density-dependent plasticity, we maintained both species at a consistent population size (15 females per rearing vial). This resulted in all flies for each species being nearly identical in adult body size for use in morphometric analyses as well as all behavioral examinations. We used the following populations for these measurements: D. pseudoobscura #3, D. persimilis #1, D. affinis #1, D. bifasciata #1, D. subobscura #1.
 
-## 3D reconstructions and neuropil measurements
+### 3D reconstructions and neuropil measurements
 
 In order to assess neuroanatomy, the dissection of fly brains was carried out according to established protocols (Keesey et al., 2019). The confocal scans were obtained using confocal laser scanning microscopy (Zeiss confocal laser scanning microscope [cLSM] 880; ZEISS) using a 40x water immersion objective (W Plan-Apochromat 40×/1.0 DIC M27; ZEISS) in combination with the internal Helium-Neon 543 (ZEISS) laser line. Reconstruction of whole OLs and ALs was done using the segmentation software AMIRA version 5.5.0 (FEI Visualization Sciences Group). We analyzed scans of at least three specimens for each and then reconstructed the neuropils using the segmentation software AMIRA 5.5.0 (FEI Visualization Sciences Group). Using information on the voxel size from the cLSM scans as well as the number of voxels labeled for each neuropil in AMIRA, we calculated the volume of the whole AL as well as the individual sections of the OL and the central brain (where central brain values exclude the AL volume). We used these strains for all measurements: D. pseudoobscura #3, D. subobscura #1.
 
-## Analyses of courtship and mating behavior
+### Analyses of courtship and mating behavior
 
 For the analysis of courtship behavior, the adult flies were collected from pupae that were separated into single vials (using a wet paint brush), and then later identified by sex after subsequent eclosion. Adults were kept virgin in these single vials for 2–6 days after eclosion with access to food and water. Temperature controlled chambers were used for courtship conditions. Here we optimized the temperature for both obscura species, where courtship initiation and success was observed to be highest between 18–24 degrees Celsius, which was a substantially lower temperature than previous examinations of D. melanogaster courtship. In the behavioral assays, a female fly was first aspirated into the tiny chamber, and secured with a clear cover slide (Figure 1—figure supplement 2G). Next, a male fly was introduced into the same chamber, and video recording was initiated. The flies were recorded under white light illumination for 10–15 min. If no initiation of courtship was observed after 10 min, then videos were halted and new flies were introduced as a novel pair. Videos of successful courtship and copulation were analyzed with BORIS (http://www.boris.unito.it/). We used the following strains for these behavioral experiments: D. pseudoobscura #3, D. persimilis #1, D. affinis #1, D. bifasciata #1, D. subobscura #1.
 
-## Wing interference patterns and pigmentation
+### Wing interference patterns and pigmentation
 
 In order to assess visual elements of adult wings from both obscura species, individual wings from each species were photographed using an AXIO microscope, as was described previously for external head and body metrics. Both clear as well as dark, opaque backgrounds were used to examine wing interference patterns (WIPs) and any other elements of visual information that the wings represent during courtship display (Figure 3E). Here, we noted differences in wing shape, as well as sensillum and hair lengths along the wing margins of these two species. However, we did not observe any obvious differences in WIP, nor did we note any apparent differences in pigmentation, color or other visual structures. Thus, it would appear that the wings of the two species are nearly identical, and that perhaps only the behavioral utilization of the wing differs between these species during male courtship (Figure 1A–D).
 
-## Phototaxis behavior and Y-tube two-choice experiments
+### Phototaxis behavior and Y-tube two-choice experiments
 
 A glass Y-tube was fixed and positioned at approximately a 15-degree slope (which encouraged upward walking), with one arm covered with an opaque cardboard box that was cut to match the diameter of the glass (Figure 4A). This covered area provided a heavily darkened arm of the Y-tube, while the other arm was fully illuminated. Both terminal ends of the Y-tube contained sealed glass containers for insect collection and removal. Adults were introduced into the base of the glass Y-tube using an aspirator, where adults could freely walk out of the aspirator pipette tip once they had calmed, and acclimatized to the setup (this greatly reduced escape responses, and random choices). We positioned a light source that mimics natural sunlight wavelengths at the end of the Y-tube, and all overhead illumination (as well as all other sources of light in the chamber) were eliminated. Adult flies were allowed to walk up the Y-tube where they had to then choose between either a dark or light arm, where the first choice was noted for each individual fly (Figure 4B), and time duration was also recorded (Figure 1—figure supplement 1D). After every 10 individuals, an additional, clean glass Y-tube was used (to avoid any contamination from cuticular hydrocarbons or frass/feces left behind by previous flies [Keesey et al., 2016]), and the Y-tubes were rotated after every fly to eliminate any directional bias that could be caused by imperfections in the glass or Y-tube arms. We also rotated the darkened arm every time we exchanged the Y-tube for a clean one, to eliminate any left-right bias. Each day we cleaned glassware with hot soapy water, then rinsed with cold water, then rinsed with ethanol, and lastly we heated them for several hours at 200°C before use in these behavioral assays. In both species, the males showed a stronger trend of light preference than females; however, this trend was not significant (Figure 4B). We also noted no significant differences in the time it took flies to make a choice (Figure 1—figure supplement 1D), but there was a trend that D. pseudoobscura were slighty faster, as were the males of both species when compared to females. We used the following strains for these behavioral experiments: D. pseudoobscura #3, D. persimilis #1, D. affinis #1, D. bifasciata #1, D. subobscura #1.
 
-## Statistical assessments and figure generation
+### Statistical assessments and figure generation
 
 All images and drawings are originals, and were prepared by the first author for this publication. Figures were prepared via a combination of R Studio, Microsoft Excel, IrfanView v4.52, ScreenToGif, VLC Media Player, and Adobe Illustrator CS5. Statistics were performed using GraphPad InStat version 3.10 at α = 0.05 (*), α = 0.01 (**), and α = 0.001 (***) levels. Error bars for bar graphs are standard deviation. Boxplots represent the median (bold black line), quartiles (boxes), as well as 1.5 times the inter quartile range (whiskers).
 
-## Supplementary information
+### Supplementary information
 
 All data supporting the findings of this study, including methodology, display examples, raw confocal images and z-stack scans, statistical assessments, courtship videos, as well as other supplementary materials are all available with the online version of this publication. An additional, online data depository also contains raw data from this publication, and this material can be accessed via EDMOND, the Open Access Data Repository of the Max Planck Society (MPG): https://dx.doi.org/10.17617/3.3v.

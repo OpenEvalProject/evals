@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.04677.001 When choosing actions, we can act decisively, vacillate, or suffer momentary indecision. Studying how individual decisions unfold requires moment-by-moment readouts of brain state. Here we provide such a view from dorsal premotor and primary motor cortex. Two monkeys performed a novel decision task while we recorded from many neurons simultaneously. We found that a decoder trained using ‘forced choices’ (one target viable) was highly reliable when applied to ‘free choices’. However, during free choices internal events formed three categories. Typically, neural activity was consistent with rapid, unwavering choices. Sometimes, though, we observed presumed ‘changes of mind’: the neural state initially reflected one choice before changing to reflect the final choice. Finally, we observed momentary ‘indecision’: delay forming any clear motor plan. Further, moments of neural indecision accompanied moments of behavioral indecision. Together, these results reveal the rich and diverse set of internal events long suspected to occur during free choice. DOI: http://dx.doi.org/10.7554/eLife.04677.001
+When choosing actions, we can act decisively, vacillate, or suffer momentary indecision. Studying how individual decisions unfold requires moment-by-moment readouts of brain state. Here we provide such a view from dorsal premotor and primary motor cortex. Two monkeys performed a novel decision task while we recorded from many neurons simultaneously. We found that a decoder trained using ‘forced choices’ (one target viable) was highly reliable when applied to ‘free choices’. However, during free choices internal events formed three categories. Typically, neural activity was consistent with rapid, unwavering choices. Sometimes, though, we observed presumed ‘changes of mind’: the neural state initially reflected one choice before changing to reflect the final choice. Finally, we observed momentary ‘indecision’: delay forming any clear motor plan. Further, moments of neural indecision accompanied moments of behavioral indecision. Together, these results reveal the rich and diverse set of internal events long suspected to occur during free choice.
 
 ## Introduction
 
@@ -34,135 +34,374 @@ To achieve such a moment-by-moment view in the monkey, we applied state-space an
 
 ## Results
 
-## Task and behavior
+### Task and behavior
 
-We employed a novel decision-making variant of the previously described maze task (
+We employed a novel decision-making variant of the previously described maze task (Churchland et al., 2010; Kaufman et al., 2013, 2014). Monkeys (J and N) touched and fixated a central spot, then were shown two targets and four virtual barriers (Figure 1A). The monkeys were required to remain still and maintain eye fixation until a Go cue was given following a 0–1000 ms exponentially distributed delay (Figure 1B). Two barrier configurations were used: ‘T-maze’ (Figure 1C) and ‘S-maze’ (Figure 1D). In each configuration, two ‘key barriers’ appeared in one of three lengths making the nearby target easy (shown as dark gray in Figure 1C,D), hard (medium gray in Figure 1C,D), or inaccessible (light gray in Figure 1C,D). Either key barrier could change difficulty at a random point in the trial (∼58% of trials). At most one change was made per trial.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig1-v1.jpg)
 
-**Figure 1.:** (A) Illustration of task setup. Two targets were presented along with four virtual barriers and a frame. The monkey performed the task with a cursor projected above his fingertip. Targets were rewarded equally. The cursor left a white trail on the screen. (B) Task timeline. (C and D) The two families of mazes used: ‘T-maze’ (C) and ‘S-maze’ (D). Key barriers could take one of three positions, making each target easy, difficult, or blocked (shown here as shades of gray). Reaches for trials with ≥300 ms delay shown. Faded colors, reach trajectories on forced choice trials; saturated colors, reach trajectories on free choice trials. (E and F) Overt changes of mind on free-choice trials with no barrier changes. Dataset J1 (A–E); dataset N3 (F).DOI: http://dx.doi.org/10.7554/eLife.04677.003
+**Figure 1.:** (A) Illustration of task setup. Two targets were presented along with four virtual barriers and a frame. The monkey performed the task with a cursor projected above his fingertip. Targets were rewarded equally. The cursor left a white trail on the screen. (B) Task timeline. (C and D) The two families of mazes used: ‘T-maze’ (C) and ‘S-maze’ (D). Key barriers could take one of three positions, making each target easy, difficult, or blocked (shown here as shades of gray). Reaches for trials with ≥300 ms delay shown. Faded colors, reach trajectories on forced choice trials; saturated colors, reach trajectories on free choice trials. (E and F) Overt changes of mind on free-choice trials with no barrier changes. Dataset J1 (A–E); dataset N3 (F).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Displayed as in Figure 1E,F.DOI: http://dx.doi.org/10.7554/eLife.04677.004
+**Figure 1—figure supplement 1.:** Displayed as in Figure 1E,F.
 
 This task presented a continuum of situations, ranging from complete experimenter control (‘forced choices’, with only one target accessible), to moderate experimenter influence (e.g., a barrier that changed mid-trial might provoke a change of mind), to free choices with both targets accessible. This task is somewhat analogous to a driver choosing a lane. Often one attempts to pick a lane that will be most expeditious. The choice may be determined by the environment: for example, one lane is blocked by a large truck and the other is nearly empty. On other occasions the choice is more ambiguous. Both lanes may have some cars or both may be clear. We are all familiar with the experience of rapidly weighing these choices, and with the vacillation and hesitation that can result. Our task is roughly analogous: often the stimulus does not fully specify the right answer, leaving a choice to be made.
 
-In agreement with this idea, the monkeys' choices statistically reflected the relative difficulties of the two options (Table 1), similar to previous observations (Cos et al., 2011). As expected, choices were also influenced by barrier changes during the delay period (Table 1; dataset N2 showed imperfect responses to barrier changes, and was thus excluded from one analysis below). For example, if the leftward target became more accessible as the result of a barrier change then the probability of choosing left increased. While biases were common (much as they would be for drivers choosing lanes) both monkeys made reaches to both targets when given a choice, and reached more often to a target when it was easy than when it was hard. Finally, the monkeys occasionally ‘changed their mind’ mid-reach: they began reaching toward one target but performed a sharp turn and reached to the other target (Figure 1E,F, Figure 1—figure supplement 1). In most of these overt change-of-mind trials, both options were available when the monkey deviated from his original reach. Depending on the trial, these changes of mind were driven either by a barrier change that only altered the relative difficulties of the two options, or by some purely internal process. Thus, ‘freedom of choice’ was indeed exercised.10.7554/eLife.04677.005Table 1.Choice probabilitiesDOI: http://dx.doi.org/10.7554/eLife.04677.005p(left) easy|easyp(left) hard|hardp(left) easy|hardp(left) hard|easyΔp for left-biasing changeΔp for right-biasing changeJ1-T0.660.020.950.0127%−38%J1-S0.160.570.660.1732%−19%J2-T0.920.000.920.0020%−44%J2-S0.230.991.000.0645%−38%N1-S0.981.001.000.2037%−37%N2-S0.790.830.880.70−4%*−15%N3-S0.790.540.790.4518%−16%The first four columns show the probability that the monkey chose the leftward target given the particular barrier configuration. ‘Easy|hard’ means that the barrier configuration was easy for the left and hard for the right. Trials included for these columns had no barrier changes. The Δp values show the change in p(left) when a trial presented a free choice throughout, but the difficulty of a key barrier changed during preparation (from 100 ms after maze onset to 50 ms after Go). These are separated by whether the change favored the left target (the left barrier became easier or the right harder) or the right target. Because dataset N2-S did not have consistent behavioral effects on trials with a change in barrier difficulty (starred entry), N2-S was not used for one analysis of biasing change trials.
+In agreement with this idea, the monkeys' choices statistically reflected the relative difficulties of the two options (Table 1), similar to previous observations (Cos et al., 2011). As expected, choices were also influenced by barrier changes during the delay period (Table 1; dataset N2 showed imperfect responses to barrier changes, and was thus excluded from one analysis below). For example, if the leftward target became more accessible as the result of a barrier change then the probability of choosing left increased. While biases were common (much as they would be for drivers choosing lanes) both monkeys made reaches to both targets when given a choice, and reached more often to a target when it was easy than when it was hard. Finally, the monkeys occasionally ‘changed their mind’ mid-reach: they began reaching toward one target but performed a sharp turn and reached to the other target (Figure 1E,F, Figure 1—figure supplement 1). In most of these overt change-of-mind trials, both options were available when the monkey deviated from his original reach. Depending on the trial, these changes of mind were driven either by a barrier change that only altered the relative difficulties of the two options, or by some purely internal process. Thus, ‘freedom of choice’ was indeed exercised.
+
+**Table 1.**
+ Choice probabilities
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>p(left) easy|easy</th>
+      <th>p(left) hard|hard</th>
+      <th>p(left) easy|hard</th>
+      <th>p(left) hard|easy</th>
+      <th>Δp for left-biasing change</th>
+      <th>Δp for right-biasing change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>J1-T</td>
+      <td>0.66</td>
+      <td>0.02</td>
+      <td>0.95</td>
+      <td>0.01</td>
+      <td>27%</td>
+      <td>−38%</td>
+    </tr>
+    <tr>
+      <td>J1-S</td>
+      <td>0.16</td>
+      <td>0.57</td>
+      <td>0.66</td>
+      <td>0.17</td>
+      <td>32%</td>
+      <td>−19%</td>
+    </tr>
+    <tr>
+      <td>J2-T</td>
+      <td>0.92</td>
+      <td>0.00</td>
+      <td>0.92</td>
+      <td>0.00</td>
+      <td>20%</td>
+      <td>−44%</td>
+    </tr>
+    <tr>
+      <td>J2-S</td>
+      <td>0.23</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>0.06</td>
+      <td>45%</td>
+      <td>−38%</td>
+    </tr>
+    <tr>
+      <td>N1-S</td>
+      <td>0.98</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.20</td>
+      <td>37%</td>
+      <td>−37%</td>
+    </tr>
+    <tr>
+      <td>N2-S</td>
+      <td>0.79</td>
+      <td>0.83</td>
+      <td>0.88</td>
+      <td>0.70</td>
+      <td>−4%*</td>
+      <td>−15%</td>
+    </tr>
+    <tr>
+      <td>N3-S</td>
+      <td>0.79</td>
+      <td>0.54</td>
+      <td>0.79</td>
+      <td>0.45</td>
+      <td>18%</td>
+      <td>−16%</td>
+    </tr>
+  </tbody>
+</table>
+
+_The first four columns show the probability that the monkey chose the leftward target given the particular barrier configuration. ‘Easy|hard’ means that the barrier configuration was easy for the left and hard for the right. Trials included for these columns had no barrier changes. The Δp values show the change in p(left) when a trial presented a free choice throughout, but the difficulty of a key barrier changed during preparation (from 100 ms after maze onset to 50 ms after Go). These are separated by whether the change favored the left target (the left barrier became easier or the right harder) or the right target. Because dataset N2-S did not have consistent behavioral effects on trials with a change in barrier difficulty (starred entry), N2-S was not used for one analysis of biasing change trials._
 
 Trials were sorted post hoc to identify those relevant for the various analyses below. We first describe results from the ends of the choice spectrum (fully forced choices and fully free choices), then consider cases where barrier changes encouraged changes of mind. Finally, we examine how the neural state related to RT.
 
-## Multi-unit responses during forced and free choices
+### Multi-unit responses during forced and free choices
 
 All analyses were, by necessity, performed on the data collected within a single day: the population of recorded neurons, as well as any monkey's internal events and behavior, likely change from day to day. To provide the necessary statistical power to observe internal events on a single-trial basis, neural data were recorded using two 96-electrode arrays (in PMd and M1) per monkey. These recordings yielded 96–196 single- and multi-units per dataset. Since neurons were recorded simultaneously, we could neither optimize target locations for each neuron separately nor select for strongly responsive neurons. Instead, we selected target arrangements that evoked both possible choices and drove particularly robust population responses, which for some datasets yielded sufficient statistical power for good decoding of choice on single trials. This selection yielded seven datasets for analysis: two target arrangements (T and S mazes) for monkey J across 2 days (J1 and J2), and one target arrangement (S maze) for monkey N for 3 days (N1, N2 and N3).
 
-Neural responses during forced-choice trials showed delay-period activity (after maze onset but before the Go cue) that rapidly (in 100–200 ms) reflected the available choice (
+Neural responses during forced-choice trials showed delay-period activity (after maze onset but before the Go cue) that rapidly (in 100–200 ms) reflected the available choice (Figure 2A,B). In order for this to occur, the monkey needed to visually parse the arrangement of barriers and targets, determine which target was accessible, and form a motor plan that would reach the target and avoid the barriers. A key question is whether the neural activity during free choices reflects the eventual movement in a similar way and with a similar time course. This is not a given: during free choices, the preparatory activity might maintain its baseline state, achieve an intermediate state to make a change of mind ‘easier’ (Cisek and Kalaska, 2005; Fleming et al., 2009; Ifft et al., 2012), might develop more slowly, or might vacillate between the choices continually.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig2-v1.jpg)
 
-**Figure 2.:** Blue represents eventual leftward reaches, red indicates eventual rightward reaches. (A and B) Responses of example units, dataset J2-S. Thick traces, mean; thin traces, s.e.m, Maze, maze onset. Time in ms. Selectivity for left vs right movements was common, and responses were almost always similar for forced and free reaches (A). Less commonly, forced and free evoked somewhat different responses (B). (C) Schematic of decoder. Each dot represents neural state in a window of time on a single trial. (D–F) Decoded choice plots for forced-choice trials, generated by leave-one-out cross-validation. Percentages show fraction correct classification. Datasets J2-T (D), J2-S (E), N1-S (F). Small dots are at last decoded time point. (G–I) Decoded choice plots for free-choice trials (saturated colors) with forced-choice trials shown for context (faded colors). Datasets same as D–F. (J–L) Cross-validated decoded choice at final point for forced-choice trials. Datasets same as D–F.DOI: http://dx.doi.org/10.7554/eLife.04677.006
+**Figure 2.:** Blue represents eventual leftward reaches, red indicates eventual rightward reaches. (A and B) Responses of example units, dataset J2-S. Thick traces, mean; thin traces, s.e.m, Maze, maze onset. Time in ms. Selectivity for left vs right movements was common, and responses were almost always similar for forced and free reaches (A). Less commonly, forced and free evoked somewhat different responses (B). (C) Schematic of decoder. Each dot represents neural state in a window of time on a single trial. (D–F) Decoded choice plots for forced-choice trials, generated by leave-one-out cross-validation. Percentages show fraction correct classification. Datasets J2-T (D), J2-S (E), N1-S (F). Small dots are at last decoded time point. (G–I) Decoded choice plots for free-choice trials (saturated colors) with forced-choice trials shown for context (faded colors). Datasets same as D–F. (J–L) Cross-validated decoded choice at final point for forced-choice trials. Datasets same as D–F.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Both the preparatory epoch and the peri-movement epoch are shown. For display, we selected units that attained different firing rates for right vs left during preparation and which reflected the diversity of responses observed. (A–C) Units from J1-T. (D–F) Units from J1-S. (G–I) Units from J2-T. (J–L) Units from J2-S. (M–O) Units from N1-S. Units shown in panels J and K are the same units from Figure 2A,B. MAZE, target/maze onset; MOVE, movement onset.DOI: http://dx.doi.org/10.7554/eLife.04677.007
+**Figure 2—figure supplement 1.:** Both the preparatory epoch and the peri-movement epoch are shown. For display, we selected units that attained different firing rates for right vs left during preparation and which reflected the diversity of responses observed. (A–C) Units from J1-T. (D–F) Units from J1-S. (G–I) Units from J2-T. (J–L) Units from J2-S. (M–O) Units from N1-S. Units shown in panels J and K are the same units from Figure 2A,B. MAZE, target/maze onset; MOVE, movement onset.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** These plots are like Figure 2D–I, for the remaining datasets. (A) Cross-validated decoded choices for forced-choice trials. Column headers indicate dataset. (B) Decoded choices for free choice trials using the decoder trained on forced-choice trials (saturated colors). Forced-choice trials shown in faded colors for context. (C) Cross-validated decoded choices at final point for forced-choice trials.DOI: http://dx.doi.org/10.7554/eLife.04677.008
+**Figure 2—figure supplement 2.:** These plots are like Figure 2D–I, for the remaining datasets. (A) Cross-validated decoded choices for forced-choice trials. Column headers indicate dataset. (B) Decoded choices for free choice trials using the decoder trained on forced-choice trials (saturated colors). Forced-choice trials shown in faded colors for context. (C) Cross-validated decoded choices at final point for forced-choice trials.
 
 To answer this question, we segregated free choice trials by whether the monkey eventually reached left vs right (Figure 2A, Figure 2—figure supplement 1; possible change-of-mind trials were excluded, see ‘Materials and methods’). For most neurons, the average response only depended on which reach was made; responses were similar regardless of whether a choice was forced or free. Interestingly, for most neurons, the time course of the neural response was nearly identical for forced and free choices. This implies that the monkey formed a motor plan quickly when presented with a free choice: that is, the time to make an initial movement selection for free choices did not take appreciably longer than the time to determine which target was accessible for forced choices. For a smaller fraction of neurons, free-choice trials exhibited selectivity that was weaker than for forced-choice trials (e.g., Figure 2B). However, neurons consistently ‘preferred’ the same target in free-choice trials as in forced-choice trials (102 of 104 significantly tuned units maintained their preference), and neurons' trial-averaged responses during the delay strongly correlated for forced and free choices (mean r = 0.76, p < 0.001 for 6/7 datasets, p < 0.01 for N3-S; sign test; ‘Materials and methods’). In sum, activity on free choice trials was consistent with the interpretation that initial choices were typically made rapidly. Below, we consider whether some of those choices might spontaneously waver or reverse.
 
-## Decoding the moment-by-moment population response
+### Decoding the moment-by-moment population response
 
 To analyze the population response on single trials, we trained a linear decoder using the forced-choice trials (‘Materials and methods’). This decoder was simply a weighted sum of the neurons' smoothed spike counts (Figure 2C). Empirically, the decoder chose to exploit the activity of most neurons, with the decoder's weights distributed over units approximately as a double-exponential distribution (not shown). The same decoder was used across a set of delay-period time points: from 300 ms before maze onset to 200 ms before movement onset. Though it made decoding more challenging, the time invariance of the decoder was essential to ensure that any changes of mind we observed were solely due to changing neural activity.
 
 This decoder performed well on forced-choice trials, as verified by leave-one-out cross-validation. Each trial's decoded choice over time is represented by a single trace, with the horizontal coordinate representing the decoded choice and time unfolding upward (Figure 2D–F; Figure 2—figure supplement 2A). Trials culminating in a leftward reach are shown in blue, while trials culminating in a rightward reach are shown in red. At the final time point (200 ms before movement onset), the decoder performed correctly on 99% of forced-choice trials for monkey J and 94% of trials for monkey N (p < 10−6 for each dataset assessed individually, ‘Materials and methods’). Conveniently, errors were all ‘small’, lying just on the wrong side of the classifier boundary (three datasets shown in Figure 2J–L; others in Figure 2—figure supplement 2C).
 
-## Free choices
+### Free choices
 
 This same decoder (trained on forced-choice trials) typically generalized well to free-choice trials. For the datasets containing at least 1000 trials, at the final time point (200 ms before movement onset) the choice was decoded correctly on 96% of trials for monkey J and 88% of trials for monkey N. Free choice decoder performance was less accurate for the two datasets with fewer trials (N2-S and N3-S), at 80%. Neural data from all the long-delay free choice trials (including four barrier configurations), in which neither target was blocked and in which no barrier changes occurred, are shown in Figure 2G–I (saturated traces, forced-choice trials shown as faded traces for context; see also Figure 2—figure supplement 2B; p < 10−6 for all datasets). As expected, decoding was unsuccessful before maze onset, for either forced or free choices. The slightly lower decoder performance on free choice trials was not due to any systematic shift in neurons' preferences: retraining the decoder using free-choice trials did not improve performance on free-choice trials (96% and 77% for monkeys J and N, assessed via leave-one-out cross-validation). Thus, in PMd and M1 the neural events during free choices closely resemble those during forced choices that result in the same movement. Rather, the lower performance of the decoder may reflect some additional complexity during free choices, such as last-moment changes of mind. The decoder is not given access to the data from shortly before movement onset, so any such last-moment changes of mind will necessarily be missed.
 
 It is immediately clear from these free-choice plots that there are some trials in which the decoder first indicated a plan toward one target, then switched to the other target (traces crossing the midline/decoded value of 0 in Figure 2G–I). If the decoder is reliable at many time points, then these crossings would be evidence for covert changes of mind (Horwitz and Newsome, 2001; Resulaj et al., 2009; Bollimunta et al., 2012; Kiani et al., 2014; Thura and Cisek, 2014). Below, we present evidence that these early decoder values are indeed reliable, then quantify these changes of mind.
 
-## Early decision activity relates to behavior
+### Early decision activity relates to behavior
 
 In order to search for fully covert processes such as vacillation (unprompted changes of mind), it is important to determine the reliability of the decoder across time points. We did so in three ways: by exploiting our distribution of delays, by examining the decoded choice on trials where changes-of mind must occur a large fraction of the time, and by examining the RTs for trials with a particular set of events.
 
-For the first method, we considered trials with relatively short delays. Short-delay trials allow us to verify the accuracy of the decoder at various time points, since the monkey could not know in advance how long the delay would be for any given trial. If these early time points are decoded accurately, then we can rely on the short-latency decoded points for long-delay trials as well. Using these trials, we found that decoder accuracy plateaued ∼200–250 ms after maze onset (
+For the first method, we considered trials with relatively short delays. Short-delay trials allow us to verify the accuracy of the decoder at various time points, since the monkey could not know in advance how long the delay would be for any given trial. If these early time points are decoded accurately, then we can rely on the short-latency decoded points for long-delay trials as well. Using these trials, we found that decoder accuracy plateaued ∼200–250 ms after maze onset (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig3-v1.jpg)
 
-**Figure 3.:** (A) Decoder performance vs time, forced-choice trials. (B) Maze icons illustrate free-to-forced trials. Saturated colors show the decoded choice for free-to-forced trials, which began as free but became forced when a barrier changed during the delay epoch. Faded colors show forced-choice trials for context. Large red dots indicate time of changes that made the rightward target the only available option; blue dots, leftward. Percentage indicates the fraction of trials for which the final decoded time point matched the monkey's choice. Dataset J2-S. (C) Same for dataset N3-S. (D) RT distributions for free-to-forced trials in which the barrier changed around the time of the Go cue. Black, trials where the monkey initially prepared a reach to the now-blocked side; gray, to the unchanging side. Data for monkey J pooled. Arrows, medians. (E) Same for monkey N.DOI: http://dx.doi.org/10.7554/eLife.04677.009
+**Figure 3.:** (A) Decoder performance vs time, forced-choice trials. (B) Maze icons illustrate free-to-forced trials. Saturated colors show the decoded choice for free-to-forced trials, which began as free but became forced when a barrier changed during the delay epoch. Faded colors show forced-choice trials for context. Large red dots indicate time of changes that made the rightward target the only available option; blue dots, leftward. Percentage indicates the fraction of trials for which the final decoded time point matched the monkey's choice. Dataset J2-S. (C) Same for dataset N3-S. (D) RT distributions for free-to-forced trials in which the barrier changed around the time of the Go cue. Black, trials where the monkey initially prepared a reach to the now-blocked side; gray, to the unchanging side. Data for monkey J pooled. Arrows, medians. (E) Same for monkey N.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** These plots are like Figure 3B,C, for the remaining datasets. (A) J1-T. (B) J1-S. (C) J2-T. (D) N1-S. (E) N2-S.DOI: http://dx.doi.org/10.7554/eLife.04677.010
+**Figure 3—figure supplement 1.:** These plots are like Figure 3B,C, for the remaining datasets. (A) J1-T. (B) J1-S. (C) J2-T. (D) N1-S. (E) N2-S.
 
 Second, we wished to confirm that our readout could reflect the monkeys' choices at fast timescales. To do so, we examined ‘free-to-forced’ trials, in which one of the available choices became inaccessible due to a barrier change. Since we randomly chose which side to make inaccessible, on roughly half of such trials the monkey should have already fortuitously chosen the ‘lucky’ (unchanging) side. For the other ‘unlucky’ half of trials, we expect that the monkey must re-plan. This can be clearly seen in the decoded choice: when the barrier change occurred mid-delay (at least 100 ms after maze onset but at least 50 ms before the Go cue), as expected there were large swings in the decoded choice on about half the trials following the change event (Figure 3B,C, Figure 3—figure supplement 1; dots indicate barrier change). These large swings in the decoded choice contributed to strong decoder performance on free-to-forced trials: using the final decoded time, 91% of these trials were correctly decoded for monkey J, and 94% for monkey N. Thus, it was possible for the decoder to detect transient choices.
 
 Third, we hypothesized that our readout of the internal choice reflected behaviorally important aspects of the neural state. The free-to-forced trials considered above presented barrier changes during the delay, which gave the monkey time to re-plan. In contrast, when barrier changes occurred around the time of the Go cue, we would expect that the monkey must spend time re-planning and thus have a slower RT. This was the case in our data. We considered free-to-forced trials in which the barrier change occurred around the time of the Go cue (no more than 50 ms before), and segregated them based on the decoded choice at the time of the barrier change. If the decoded choice indicated a plan to the unchanging side, the RT was faster than if it indicated a plan to the now-blocked side (Figure 3D,E, median difference 68 ms for monkey J, p = 0.009; median difference 24 ms for monkey N, n.s., Mann–Whitney U test).
 
-## Spontaneous changes of mind (vacillations) are present in the neural activity
+### Spontaneous changes of mind (vacillations) are present in the neural activity
 
-Do monkeys ever revise their choices? We hypothesized that monkeys would quickly make an initial choice, then occasionally revise it when given more time to consider. For fully free choices, there is no reason this must happen, yet intuition suggests that a person would occasionally vacillate when presented with two viable options (e.g., a driver choosing a lane). Indeed, in both monkeys a modest number of trials exhibited such spontaneous vacillations. This was apparent above in
+Do monkeys ever revise their choices? We hypothesized that monkeys would quickly make an initial choice, then occasionally revise it when given more time to consider. For fully free choices, there is no reason this must happen, yet intuition suggests that a person would occasionally vacillate when presented with two viable options (e.g., a driver choosing a lane). Indeed, in both monkeys a modest number of trials exhibited such spontaneous vacillations. This was apparent above in Figure 2G–I (and Figure 2—figure supplement 2B). Using a conservative algorithm (‘Materials and methods’), we identified trials in which the decoder initially produced a value indicating one choice, then underwent a large swing to indicate the opposite choice. These trials are shown in Figure 4A,B (saturated traces; see also Figure 4—figure supplement 1 for vacillation and non-vacillation trials plotted separately, and Video 1 for two examples). Using these same conservative criteria, 13% (3–24% range over datasets) of free-choice trials exhibited such spontaneous vacillations, compared to only 2% (2–4%) of forced-choice trials (forced-choice assessed using leave-one-out cross-validated decoding). Vacillation trials were more common among free-choice trials than forced-choice trials in every one of the 7 datasets (p < 10−9 pooled; χ2 2 × 2 contingency test; Figure 4I, left). This difference in frequency also reached statistical significance for 5/7 datasets when considered individually (p < 0.05, χ2 2 × 2 contingency test). To our knowledge, observations of such spontaneous vacillations when presented with a free choice—without changing external evidence—have not previously been described.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig4-v1.jpg)
 
-**Figure 4.:** Maze icons indicate situation for adjacent decoded choice plots (saturated colors), with faded colors showing forced-choice trials for context. (A and B) Apparent ‘vacillation’ on free choice trials. Datasets J1-S (A) and J2-S (B). (C and D) Encouraged switch trials, which began as forced but became free when a barrier changed mid-delay. Red dots on traces indicate time of changes that made the rightward target more attractive; blue dots, leftward more attractive. J2-T. (C) Trials where the monkey chose the newly-available target. (D) Trials where the monkey chose the always-available target. (E and F) Biasing change trials. These trials were free throughout, but the difficulty of one side changed mid-delay. (E) Trials where the monkey reached to the target that was initially more difficult, and thus likely changed his mind. (F) Trials where the monkey reached to the target that was initially easier, and thus likely retained his initial decision. Dataset J1-S. (G and H) Distance from mean ‘baseline state’ (−300 to −40 ms from maze onset) for different trials and time epochs: during baseline (gray), during free-choice vacillations around the time of the change in the decoded choice (filled pink), during biasing-change trials around the time of the change in the decoded choice (filled green), during all times for free (hollow pink) or biasing-change (hollow green) trials. J2-S (G) and N1-S (H). (I) Probability that a trial of the given type exhibited a neural change of mind (a large change in the decoded choice during the delay period). See ‘Results’ for details. Forced vs free and untaken vs taken switch, p < 10−9; unlikely vs likely change, p < 10−4 (χ2 2 × 2 contingency test). Error bars show Wilson binomial confidence intervals equivalent to 1 s.e.m.DOI: http://dx.doi.org/10.7554/eLife.04677.011
+**Figure 4.:** Maze icons indicate situation for adjacent decoded choice plots (saturated colors), with faded colors showing forced-choice trials for context. (A and B) Apparent ‘vacillation’ on free choice trials. Datasets J1-S (A) and J2-S (B). (C and D) Encouraged switch trials, which began as forced but became free when a barrier changed mid-delay. Red dots on traces indicate time of changes that made the rightward target more attractive; blue dots, leftward more attractive. J2-T. (C) Trials where the monkey chose the newly-available target. (D) Trials where the monkey chose the always-available target. (E and F) Biasing change trials. These trials were free throughout, but the difficulty of one side changed mid-delay. (E) Trials where the monkey reached to the target that was initially more difficult, and thus likely changed his mind. (F) Trials where the monkey reached to the target that was initially easier, and thus likely retained his initial decision. Dataset J1-S. (G and H) Distance from mean ‘baseline state’ (−300 to −40 ms from maze onset) for different trials and time epochs: during baseline (gray), during free-choice vacillations around the time of the change in the decoded choice (filled pink), during biasing-change trials around the time of the change in the decoded choice (filled green), during all times for free (hollow pink) or biasing-change (hollow green) trials. J2-S (G) and N1-S (H). (I) Probability that a trial of the given type exhibited a neural change of mind (a large change in the decoded choice during the delay period). See ‘Results’ for details. Forced vs free and untaken vs taken switch, p < 10−9; unlikely vs likely change, p < 10−4 (χ2 2 × 2 contingency test). Error bars show Wilson binomial confidence intervals equivalent to 1 s.e.m.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** All datasets contained free-choice trials exhibiting large, late changes in the decoded choice, presumably indicating spontaneous changes of mind. (A) Algorithmically-identified vacillation trials (‘Materials and methods’) shown in saturated colors; forced-choice trials shown in faded colors for context. Data from monkey J. Dataset identity indicated by column header. (B) All free-choice trials not included in (A) shown in saturated colors; faded colors same as in (A). (C) Same as (A) for monkey N. (D) Same as (B) for monkey N.DOI: http://dx.doi.org/10.7554/eLife.04677.012
+**Figure 4—figure supplement 1.:** All datasets contained free-choice trials exhibiting large, late changes in the decoded choice, presumably indicating spontaneous changes of mind. (A) Algorithmically-identified vacillation trials (‘Materials and methods’) shown in saturated colors; forced-choice trials shown in faded colors for context. Data from monkey J. Dataset identity indicated by column header. (B) All free-choice trials not included in (A) shown in saturated colors; faded colors same as in (A). (C) Same as (A) for monkey N. (D) Same as (B) for monkey N.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** Each row represents a free-choice trial (saturated-color trace) that was identified as containing a vacillation using both brain areas. Faded colors show forced-choice trials for context. The first column shows the decoded choice over time using both brain areas; the second column shows the decoded choice over time using PMd alone; the third column shows the decoded choice over time using M1 alone. (A–C) Trials in which vacillations appear similar using all three decoders. (D) Trial in which the M1 decoder disagreed with the combined and PMd decoders.DOI: http://dx.doi.org/10.7554/eLife.04677.013
+**Figure 4—figure supplement 2.:** Each row represents a free-choice trial (saturated-color trace) that was identified as containing a vacillation using both brain areas. Faded colors show forced-choice trials for context. The first column shows the decoded choice over time using both brain areas; the second column shows the decoded choice over time using PMd alone; the third column shows the decoded choice over time using M1 alone. (A–C) Trials in which vacillations appear similar using all three decoders. (D) Trial in which the M1 decoder disagreed with the combined and PMd decoders.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** These plots are like Figure 4C,D, for the remaining datasets. (A and B) J1-T. (C and D) J1-S. (E and F) J2-S. (G and H) N1-S. (I and J) N2-S. (K and L) N3-S.DOI: http://dx.doi.org/10.7554/eLife.04677.014
+**Figure 4—figure supplement 3.:** These plots are like Figure 4C,D, for the remaining datasets. (A and B) J1-T. (C and D) J1-S. (E and F) J2-S. (G and H) N1-S. (I and J) N2-S. (K and L) N3-S.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig4-figsupp4-v1.jpg)
 
-**Figure 4—figure supplement 4.:** These plots are like Figure 4E,F, for the remaining datasets. Left column, trials where the monkey reached toward the target that was initially more difficult, and thus changes of mind were likely; right column, trials where changes of mind were unlikely. (A and B) J1-T. (C and D) J2-T. (E and F) J2-S. (G and H) N1-S. (I and J) N3-S.DOI: http://dx.doi.org/10.7554/eLife.04677.015
+**Figure 4—figure supplement 4.:** These plots are like Figure 4E,F, for the remaining datasets. Left column, trials where the monkey reached toward the target that was initially more difficult, and thus changes of mind were likely; right column, trials where changes of mind were unlikely. (A and B) J1-T. (C and D) J2-T. (E and F) J2-S. (G and H) N1-S. (I and J) N3-S.
 
 ![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig4-figsupp5-v1.jpg)
 
-**Figure 4—figure supplement 5.:** These plots are like Figure 4G,H, for the remaining datasets. (A) J1-T. (B) J1-S. (C) J2-T. (D) N2-S. (E) N3-S.DOI: http://dx.doi.org/10.7554/eLife.04677.016
+**Figure 4—figure supplement 5.:** These plots are like Figure 4G,H, for the remaining datasets. (A) J1-T. (B) J1-S. (C) J2-T. (D) N2-S. (E) N3-S.
 
-We performed two additional controls to aid in interpreting these apparent vacillations. First, we wished to verify that the activity in PMd and M1 agreed. For the 5 datasets that could be decoded most accurately (all four J datasets and N1-S), we considered the data from PMd and M1 separately. Specifically, we asked whether the decoded choice from these two areas agreed at time points at least 160 ms into the delay period; this time point was chosen to be late enough that the decoded choice reflected a real choice and not just noise (‘Materials and methods’). Despite the much higher noise levels involved when splitting our data into two (not necessarily equal) parts, the results from decoding PMd agreed with the results from decoding M1 with a similar reliability as expected from how well each decoder agreed with the behavior. This was true when considering all trials (Table 2) or free choice trials alone (Table 3). Moreover, we could examine vacillation trials specifically. On the same trials, we could often see similar vacillations when decoding PMd and M1 separately (Figure 4—figure supplement 2A–C), though this was not always the case (Figure 4—figure supplement 2D).10.7554/eLife.04677.018Table 2.Decoding using PMd and M1 separately, all trialsDOI: http://dx.doi.org/10.7554/eLife.04677.018Forced-choice decoder performance (leave-one-out)Decoder agreementCombinedPMdM1PMd-combinedM1-combinedPMd-M1J1-T0.990.990.900.920.850.80J1-S1.001.000.800.930.860.81J2-T0.980.970.800.960.870.86J2-S1.001.000.850.980.840.83N1-S0.900.840.950.930.720.67Statistics for decoding choice from PMd and M1 data separately. Decoder performance refers to the fraction of trials for which the final decoded point agreed with the target that the animal reached to. This was assessed on forced-choice trials with delays of at least 300 ms, using leave-one-out cross-validation. Decoder agreement refers to the mean fraction of time points per trial for which the decoded choice was the same using the two datasets indicated. For this statistic, all successful trials with delay periods of at least 300 ms were included. ‘Combined’ refers to the decoder trained using both PMd and M1 data.10.7554/eLife.04677.019Table 3.Decoding using PMd and M1 separately, free choice trialsDOI: http://dx.doi.org/10.7554/eLife.04677.019Free-choice decoder performanceDecoder agreementCombinedPMdM1PMd-combinedM1-combinedPMd-M1J1-T0.940.860.770.900.830.77J1-S0.960.940.890.860.820.73J2-T0.970.960.820.960.820.80J2-S0.950.950.860.980.780.78N1-S0.880.820.790.910.720.67Same as Table 2, but only considering free-choice trials with delay periods of at least 300 ms. The decoders were trained using forced-choice trials.
+![Video 1.](https://cdn.elifesciences.org/articles/04677/elife-04677-media1.mp4.jpg)
+
+**Video 1.:** The left panel shows the display that the monkey saw, plus descriptive text. The right panel shows the decoded choice trajectory for the same trial (black), and the decoded choice trajectories for forced choice trials for context (blue for left, red for right). Video is presented at 1/4 real-time speed.
+
+We performed two additional controls to aid in interpreting these apparent vacillations. First, we wished to verify that the activity in PMd and M1 agreed. For the 5 datasets that could be decoded most accurately (all four J datasets and N1-S), we considered the data from PMd and M1 separately. Specifically, we asked whether the decoded choice from these two areas agreed at time points at least 160 ms into the delay period; this time point was chosen to be late enough that the decoded choice reflected a real choice and not just noise (‘Materials and methods’). Despite the much higher noise levels involved when splitting our data into two (not necessarily equal) parts, the results from decoding PMd agreed with the results from decoding M1 with a similar reliability as expected from how well each decoder agreed with the behavior. This was true when considering all trials (Table 2) or free choice trials alone (Table 3). Moreover, we could examine vacillation trials specifically. On the same trials, we could often see similar vacillations when decoding PMd and M1 separately (Figure 4—figure supplement 2A–C), though this was not always the case (Figure 4—figure supplement 2D).
+
+**Table 2.**
+ Decoding using PMd and M1 separately, all trials
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Forced-choice decoder performance (leave-one-out)</th>
+      <th colspan="3">Decoder agreement</th>
+    </tr>
+    <tr>
+      <th>Combined</th>
+      <th>PMd</th>
+      <th>M1</th>
+      <th>PMd-combined</th>
+      <th>M1-combined</th>
+      <th>PMd-M1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>J1-T</td>
+      <td>0.99</td>
+      <td>0.99</td>
+      <td>0.90</td>
+      <td>0.92</td>
+      <td>0.85</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>J1-S</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.80</td>
+      <td>0.93</td>
+      <td>0.86</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>J2-T</td>
+      <td>0.98</td>
+      <td>0.97</td>
+      <td>0.80</td>
+      <td>0.96</td>
+      <td>0.87</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>J2-S</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.85</td>
+      <td>0.98</td>
+      <td>0.84</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>N1-S</td>
+      <td>0.90</td>
+      <td>0.84</td>
+      <td>0.95</td>
+      <td>0.93</td>
+      <td>0.72</td>
+      <td>0.67</td>
+    </tr>
+  </tbody>
+</table>
+
+_Statistics for decoding choice from PMd and M1 data separately. Decoder performance refers to the fraction of trials for which the final decoded point agreed with the target that the animal reached to. This was assessed on forced-choice trials with delays of at least 300 ms, using leave-one-out cross-validation. Decoder agreement refers to the mean fraction of time points per trial for which the decoded choice was the same using the two datasets indicated. For this statistic, all successful trials with delay periods of at least 300 ms were included. ‘Combined’ refers to the decoder trained using both PMd and M1 data._
+
+**Table 3.**
+ Decoding using PMd and M1 separately, free choice trials
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">Free-choice decoder performance</th>
+      <th colspan="3">Decoder agreement</th>
+    </tr>
+    <tr>
+      <th>Combined</th>
+      <th>PMd</th>
+      <th>M1</th>
+      <th>PMd-combined</th>
+      <th>M1-combined</th>
+      <th>PMd-M1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>J1-T</td>
+      <td>0.94</td>
+      <td>0.86</td>
+      <td>0.77</td>
+      <td>0.90</td>
+      <td>0.83</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>J1-S</td>
+      <td>0.96</td>
+      <td>0.94</td>
+      <td>0.89</td>
+      <td>0.86</td>
+      <td>0.82</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>J2-T</td>
+      <td>0.97</td>
+      <td>0.96</td>
+      <td>0.82</td>
+      <td>0.96</td>
+      <td>0.82</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>J2-S</td>
+      <td>0.95</td>
+      <td>0.95</td>
+      <td>0.86</td>
+      <td>0.98</td>
+      <td>0.78</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>N1-S</td>
+      <td>0.88</td>
+      <td>0.82</td>
+      <td>0.79</td>
+      <td>0.91</td>
+      <td>0.72</td>
+      <td>0.67</td>
+    </tr>
+  </tbody>
+</table>
+
+_Same as Table 2, but only considering free-choice trials with delay periods of at least 300 ms. The decoders were trained using forced-choice trials._
 
 Second, we addressed the concern that some of these vacillations might be related to the tendency for the baseline state (before maze onset) to produce a ‘leftward’ decoded choice in most datasets. To check for this possibility, we performed a simple control. For each vacillation trial, we considered the last time the decoded choice switched sign. We counted how many times it was left-to-right, and how many times it was right-to-left. In 3/7 datasets, left-to-right switches were more common; in 3/7, right-to-left were more common; in 1 dataset they were tied. It is not entirely clear why at baseline the decode choice tended to register as ‘leftward’, but it does not appear that this baseline bias affected our ability to identify vacillations.
 
-## Changes of mind in a changing environment
+### Changes of mind in a changing environment
 
 On some trials, we changed the difficulty of one option mid-trial to invite (but not force) the monkey to change his mind. We hypothesized that the monkey would sometimes change his mind on such trials, to be responsive to a changing environment.
 
-The most straightforward of these trials was the ‘encouraged switch’ (forced-to-free) case. These trials began as forced, then a barrier changed difficulty during the delay to provide a free choice. On some trials the monkey reached to the always-accessible option (‘untaken’ switch trials). On other trials (‘taken’ switch trials) the monkey reached to the side that had changed, presumably reflecting a change of mind from the initial option to the newly-accessible target. Indeed, for taken-switch trials the decoded choice over time often reflected the change of mind well before movement onset (saturated traces in Figure 4C; Figure 4—figure supplement 3; Video 2). For these taken-switch trials, 40% exhibited a large change in the decoded choice (15–75%; assessed as for vacillations; ‘Materials and methods’) in the period from 160 ms after maze onset until 200 ms before movement onset. The remaining taken-switch trials presumably involved switches in the internal state that occurred after the analyzed period (i.e., just before or as the monkey began reaching), consistent with recent work showing that planning and re-planning can be rapid (Ames et al., 2014; Wong et al., 2014). On untaken-switch trials, the decoded choice was generally steady, as expected (Figure 4D). Only 5% (0–17%) of untaken-switch trials exhibited such a large change in the decoded choice. In all 7 datasets, large changes in the decoded choice were more common for taken-switch trials than untaken-switch trials (p < 10−9 pooled; p < 0.02 for 6/7 datasets assessed individually, N3-S n.s.; χ2 2 × 2 contingency test; Figure 4I, center). Thus, changes in the decoded choice were common for conditions where they were expected to be present, and uncommon for conditions where they were expected to be rare. This result provides further validation of the decoder.10.7554/eLife.04677.020Video 2.Two example ‘taken-switch’ trials.These trials began as forced then became free, and the monkey reached to the newly-accessible target. A red or blue dot appears on the decoded choice trace at the time of the barrier change (dot color indicates which side the change favored). Video is presented at 1/4 real-time speed.DOI: http://dx.doi.org/10.7554/eLife.04677.020
+The most straightforward of these trials was the ‘encouraged switch’ (forced-to-free) case. These trials began as forced, then a barrier changed difficulty during the delay to provide a free choice. On some trials the monkey reached to the always-accessible option (‘untaken’ switch trials). On other trials (‘taken’ switch trials) the monkey reached to the side that had changed, presumably reflecting a change of mind from the initial option to the newly-accessible target. Indeed, for taken-switch trials the decoded choice over time often reflected the change of mind well before movement onset (saturated traces in Figure 4C; Figure 4—figure supplement 3; Video 2). For these taken-switch trials, 40% exhibited a large change in the decoded choice (15–75%; assessed as for vacillations; ‘Materials and methods’) in the period from 160 ms after maze onset until 200 ms before movement onset. The remaining taken-switch trials presumably involved switches in the internal state that occurred after the analyzed period (i.e., just before or as the monkey began reaching), consistent with recent work showing that planning and re-planning can be rapid (Ames et al., 2014; Wong et al., 2014). On untaken-switch trials, the decoded choice was generally steady, as expected (Figure 4D). Only 5% (0–17%) of untaken-switch trials exhibited such a large change in the decoded choice. In all 7 datasets, large changes in the decoded choice were more common for taken-switch trials than untaken-switch trials (p < 10−9 pooled; p < 0.02 for 6/7 datasets assessed individually, N3-S n.s.; χ2 2 × 2 contingency test; Figure 4I, center). Thus, changes in the decoded choice were common for conditions where they were expected to be present, and uncommon for conditions where they were expected to be rare. This result provides further validation of the decoder.
 
-We then examined a case where decisions were more nearly free yet still under experimenter influence: ‘biasing change’ trials. These trials began with a free choice, with one side hard and the other easy. During the delay, the hard key barrier changed to become easy as well. Behavioral statistics indicate that these barrier changes successfully induced changes of mind on many trials (Table 1). In particular, there were many ‘likely change’ trials: for example, a trial where the rightward target had been hard, became easy, and was eventually chosen. Yet behavior alone cannot tell us which of those trials involved internal changes of mind: the monkey may have chosen the hard target from the start, as sometimes occurred during free choices. At the neural level, large changes in the decoded choice were frequently apparent: they comprised 41% (29–50%) of such likely change trials (saturated traces in Figure 4E; Figure 4—figure supplement 4; Video 3). Conversely, on trials where the monkey eventually reached to a target that was easy throughout, changes of mind were presumably uncommon: most likely the monkey immediately chose the easy target and maintained this plan. Accordingly, for these ‘unlikely change’ trials changes in the decoded choice were observed less frequently: only 12% (4–23%) of trials (Figure 4F). Likely-change trials exhibited large changes in the decoded choice more frequently than unlikely-change trials in all 6 datasets (N2-S excluded; see above discussion of Table 1), and this difference was highly statistically significant (p < 10−4 pooled; p < 0.05 for 3/6 individual datasets, χ2 2 × 2 contingency test; Figure 4I, right).10.7554/eLife.04677.021Video 3.Two example ‘likely change’ trials.These trials began with one side hard and the other easy, then a change made the initially easy side hard or the initially hard side easy. The monkey reached to the target that was not initially easy. Video is presented at 1/4 real-time speed.DOI: http://dx.doi.org/10.7554/eLife.04677.021
+![Video 2.](https://cdn.elifesciences.org/articles/04677/elife-04677-media2.mp4.jpg)
 
-## Neural state during changes of mind
+**Video 2.:** These trials began as forced then became free, and the monkey reached to the newly-accessible target. A red or blue dot appears on the decoded choice trace at the time of the barrier change (dot color indicates which side the change favored). Video is presented at 1/4 real-time speed.
+
+We then examined a case where decisions were more nearly free yet still under experimenter influence: ‘biasing change’ trials. These trials began with a free choice, with one side hard and the other easy. During the delay, the hard key barrier changed to become easy as well. Behavioral statistics indicate that these barrier changes successfully induced changes of mind on many trials (Table 1). In particular, there were many ‘likely change’ trials: for example, a trial where the rightward target had been hard, became easy, and was eventually chosen. Yet behavior alone cannot tell us which of those trials involved internal changes of mind: the monkey may have chosen the hard target from the start, as sometimes occurred during free choices. At the neural level, large changes in the decoded choice were frequently apparent: they comprised 41% (29–50%) of such likely change trials (saturated traces in Figure 4E; Figure 4—figure supplement 4; Video 3). Conversely, on trials where the monkey eventually reached to a target that was easy throughout, changes of mind were presumably uncommon: most likely the monkey immediately chose the easy target and maintained this plan. Accordingly, for these ‘unlikely change’ trials changes in the decoded choice were observed less frequently: only 12% (4–23%) of trials (Figure 4F). Likely-change trials exhibited large changes in the decoded choice more frequently than unlikely-change trials in all 6 datasets (N2-S excluded; see above discussion of Table 1), and this difference was highly statistically significant (p < 10−4 pooled; p < 0.05 for 3/6 individual datasets, χ2 2 × 2 contingency test; Figure 4I, right).
+
+![Video 3.](https://cdn.elifesciences.org/articles/04677/elife-04677-media3.mp4.jpg)
+
+**Video 3.:** These trials began with one side hard and the other easy, then a change made the initially easy side hard or the initially hard side easy. The monkey reached to the target that was not initially easy. Video is presented at 1/4 real-time speed.
+
+### Neural state during changes of mind
 
 We wished to ask in greater detail what occurred during changes of mind. First, we asked whether these changes of mind required a return to the baseline state. To do so, we examined the distance between the neural state during changes of mind and the neural state before the maze onset (baseline). The changes of mind did not approach the baseline state for either induced changes (on biasing-change trials) or spontaneous vacillations (Figure 4G,H, Figure 4—figure supplement 5). That is, although we used a one-dimensional neural readout as a decoder, the neural state was multidimensional and in those other dimensions the neural state did not pass through baseline during changes of mind. This is consistent with previous findings about the neural response when a single target jumps from one location to another (Archambault et al., 2009, 2011; Ames et al., 2014).
 
 Second, we asked whether there was a population signature during changes of mind. This is challenging because of the heterogeneity of event timing, but we could nonetheless ask whether individual units' firing rates were unusually high or low during these changes of mind. To do so, we compared firing rates during a time window around the change of mind with matched windows on similar non-change-of-mind trials (‘Materials and methods’). For trials in which a change of mind was induced by a changing barrier, there was no systematic difference in firing rates relative to non-change-of-mind trials; units had higher-than-average and lower-than average firing rates with similar frequencies (30% were higher, 26% lower, 44% in the normal range; p = 0.16 pooled over datasets). However, during vacillation trials, firing rates tended to be slightly low relative to non-vacillation trials: 37% of units had lower-than-average firing rates during the vacillation, while only 27% were higher than average (p = 0.04 for J; p = 0.009 for N; Z-test for proportions; remaining units were in the normal range). This suggests that changes of mind induced by outside events may represent a slightly different process from spontaneous vacillation. However, vacillations occurred earlier on average than shifts in choice due to barrier changes, so this firing rate difference may reflect the time course of motor preparation rather than a difference between spontaneous vacillation and induced changes of mind.
 
-## Hesitation and indecision
+### Hesitation and indecision
 
-Finally, we exploited the single-trial view to examine two potentially informative but rare and variable circumstances—cases in which decision and/or execution were slowed. Focusing first on execution, we returned to untaken-switch trials. These correspond to a situation we have all experienced: at the last minute an option becomes available, but we choose not to exercise it. This last-moment offer nonetheless produced behavioral consequences: the monkey occasionally exhibited slowed RTs even though his choice was unaffected (
+Finally, we exploited the single-trial view to examine two potentially informative but rare and variable circumstances—cases in which decision and/or execution were slowed. Focusing first on execution, we returned to untaken-switch trials. These correspond to a situation we have all experienced: at the last minute an option becomes available, but we choose not to exercise it. This last-moment offer nonetheless produced behavioral consequences: the monkey occasionally exhibited slowed RTs even though his choice was unaffected (Figure 5A, Figure 5—figure supplement 1). We hypothesized that this slowing might be due to a transient re-planning event. To our surprise, the decoded choice on these trials never wavered: the same decoded choice was always observed throughout each trial in all datasets (Figure 5B, Figure 5—figure supplement 1). This suggests that the slow RTs on these trials were not due to re-planning/vacillation, but instead involved a ‘hesitation’ to execute. That is, when presented with a new option, the monkeys hesitated to execute their seemingly still-valid motor plan.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig5-v1.jpg)
 
-**Figure 5.:** (A) RT distribution for forced-choice trials (gray) and encouraged switch trials in which the monkey reached to the always-available target (black). Arrows indicate medians; difference, 21 ms, p = 0.014, Mann–Whitney U test. Dataset J1-T. (B) Decoded choice for the untaken switch trials from (A) with RTs >450 ms (saturated colors), with forced-choice trials for context (faded colors). Red dots, time of barrier change. (C) RT distributions for non-delayed forced (gray) and free (black) trials. Arrows indicate medians; difference, 56 ms, p < 0.001, Mann–Whitney U test. Dataset J2-S. (D) Strength of decoded choice in direction of eventual reach (positive toward reach) at 100 ms after maze onset, vs RT for non-delayed free-choice trials. One point per trial; line indicates regression fit, dashed lines show 95% CI of fit.DOI: http://dx.doi.org/10.7554/eLife.04677.022
+**Figure 5.:** (A) RT distribution for forced-choice trials (gray) and encouraged switch trials in which the monkey reached to the always-available target (black). Arrows indicate medians; difference, 21 ms, p = 0.014, Mann–Whitney U test. Dataset J1-T. (B) Decoded choice for the untaken switch trials from (A) with RTs >450 ms (saturated colors), with forced-choice trials for context (faded colors). Red dots, time of barrier change. (C) RT distributions for non-delayed forced (gray) and free (black) trials. Arrows indicate medians; difference, 56 ms, p < 0.001, Mann–Whitney U test. Dataset J2-S. (D) Strength of decoded choice in direction of eventual reach (positive toward reach) at 100 ms after maze onset, vs RT for non-delayed free-choice trials. One point per trial; line indicates regression fit, dashed lines show 95% CI of fit.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** These plots are the same as Figure 5A,B, for the remaining datasets. (A and B) J1-S. (C and D) J2-T. (E and F) J2-S. (G and H) N1-S. (I and J) N2-S. (K and L) N3-S.DOI: http://dx.doi.org/10.7554/eLife.04677.023
+**Figure 5—figure supplement 1.:** These plots are the same as Figure 5A,B, for the remaining datasets. (A and B) J1-S. (C and D) J2-T. (E and F) J2-S. (G and H) N1-S. (I and J) N2-S. (K and L) N3-S.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/04677/elife-04677-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** Figure 5C,D).All trials shown had no instructed delay. Left column, RT histograms; right column, RT vs strength of decoded choice in direction of eventual reach. (A and B) J1-T. (C and D) J1-S. Free choices for this dataset were significantly slower than forced choices (p = 0.011), but this difference was small. (E and F) J2-T. (G and H) N1-S. (I and J) N2-S. (K and L) N3-S.DOI: http://dx.doi.org/10.7554/eLife.04677.024
+**Figure 5—figure supplement 2.:** All trials shown had no instructed delay. Left column, RT histograms; right column, RT vs strength of decoded choice in direction of eventual reach. (A and B) J1-T. (C and D) J1-S. Free choices for this dataset were significantly slower than forced choices (p = 0.011), but this difference was small. (E and F) J2-T. (G and H) N1-S. (I and J) N2-S. (K and L) N3-S.
 
 Second, we examined an effect that corresponds to another intuitively common situation: the moment of indecision that can occur when faced with two good options. Such an effect is not inevitable (there is little advantage to indecision when both choices are good) and was not always observed. However, for one dataset the monkey did appear to undergo such moments of indecision: when a choice had to be made immediately upon maze presentation, the RT was often longer for two possible choices than for one choice (Figure 5C, dataset J2-S; median difference 56 ms, p < 0.001, Mann–Whitney U test). These indecisive moments were present for trials resulting in either left or right choices (RT distributions were generally similar for left and right). Although this interesting behavior was only present in one dataset, the ability to analyze individual trials allows us to identify neural correlates. We hypothesized that these slow RTs might be due to a slowly-developing initial motor plan or quick vacillation. In accordance with this idea, there was a strong relationship between a trial initially exhibiting an ‘incorrect’ decoded choice (relative to the eventual reach) and that trial having a slow RT (Figure 5D). Thus, this moment of indecision was distinct from hesitation, which did not have an obvious correlate in the decoded choice. As a control, we compared the datasets in which free-choice RTs were not slowed substantially (Figure 5—figure supplement 2); the neural effect was absent in these datasets, as expected. Thus, neural ‘indecision’ was observed only when there was behavioral indecision.
 
@@ -182,35 +421,35 @@ The similarity we observed between activity for forced and free choices suggests
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Animal protocols were approved by the Stanford University Institutional Animal Care and Use Committee. Subjects were two adult male macaque monkeys (Macaca mulatta), J and N, trained to perform a delayed reach task on a fronto-parallel screen for juice reward. Use of two monkeys is standard practice in the field. The surgical history of the monkeys has been described previously (Churchland et al., 2010, 2012); briefly, they were implanted with a head restraint and two 96-electrode silicon arrays (Blackrock Microsystems, Salt Lake City, UT) in surface M1 and caudal PMd of both monkeys (estimated from local anatomical landmarks). Both monkeys performed the task with their right arm, and the arrays were implanted in the left hemisphere.
 
-## Task details
+### Task details
 
 As described in the ‘Results’, both monkeys performed a decision-making variant of the center-out delayed-reach ‘maze’ task. Both had previously performed other variants of the maze task, including thousands of different mazes (Churchland et al., 2010; Kaufman et al., 2013, 2014). Typically, they completed novel mazes successfully on the first attempt. Errors for both novel and familiar mazes were almost always due to grazing the corner of a barrier along the correct path; other types of errors were much less common, and reaching toward a blocked target or into a dead end was extremely rare. These patterns of success and failure argue that the monkeys ‘understood’ the task and were not simply performing memorized stimulus-response associations.
 
 The task was performed with a cursor projected on the screen just above the monkey's fingertip. Initially, the two targets jittered slightly in place, indicating that the monkey was not yet allowed to move. The targets and barriers always appeared simultaneously. ‘Go’ was indicated by cessation of target jitter, the targets filling in, and the fixation point extinguishing. The monkey was then required to make a brisk movement, curving to avoid the barriers, and end at either target. The delay duration and latency to barrier change were drawn from independent, truncated exponential distributions (τ = 500 ms). For the delay, the distribution was truncated at 1000 ms; for the barrier change, 1200 ms. To keep the task unpredictable, barrier locations and the occurrence and timing of barrier changes were randomized. All starting configurations and possible changes occurred with equal frequency. The two key barriers were not visibly different from the other barriers. Targets yielded equal rewards.
 
-## Identifying overt changes of mind
+### Identifying overt changes of mind
 
 In previous studies using the maze task, we have excluded reaches whose velocity profiles differed too much from typical (correlation r < 0.9). No such attempt was made here, since this could have introduced bias into decision-related analyses. However, to find overt changes of mind, rewarded trials with correlation coefficients less than 0.9 were screened by hand to identify those in which the monkey clearly began moving toward one target then switched to the other. All rewarded trials exhibiting a clear overt change of mind are plotted in Figure 1E,F and Figure 1—figure supplement 1.
 
-## Neural recordings
+### Neural recordings
 
 Data from these same arrays has appeared in previous publications for both J (Churchland et al., 2010, 2012; Kaufman et al., 2014) and N (Churchland et al., 2012; Kaufman et al., 2014). Since the primary goal was to decode the monkeys' preparatory activity on single trials, all stable single- and multi-unit recordings with at least one spike during the relevant epoch were included (101 units for J1; 132 units for J2; 96 units for N1; 188 units for N2; 196 units for N3). Spike sorting was performed offline using a custom software package (available online as MKsort; https://github.com/ripple-neuro/mksort), and special attention was paid to ensuring the stability of isolations over the session. The total numbers of successful trials per dataset were: J1-T, 1302; J1-S, 1345; J2-T, 1108; J2-S, 1096; N1-S, 1282; N2-S, 869; N3-S, 739. For any given trial subset of interest, the number of trials was necessarily much lower.
 
-## Data selection
+### Data selection
 
 Each monkey performed this task for approximately 2 weeks, resulting in eight possible datasets for monkey J and 10 for monkey N. For monkey J, on the first 4 days we did not yet have certain timing equipment in place; one of these datasets was used to pilot analyses but was not included for confirmatory analysis. On 2 days, we changed the mazes mid-session to achieve better behavior; these datasets were not analyzed. The remaining 2 days' data were included. For monkey N, on 6 days we changed the mazes mid-session or the monkey exhibited unstable preferences over the session. Those datasets were not analyzed further. For one dataset, the neural data could not be decoded. In the remaining three datasets, the neural data could be decoded for the S maze but not the T maze. These three S maze datasets were included.
 
-## Similarity of forced- and free-choice responses for single neurons
+### Similarity of forced- and free-choice responses for single neurons
 
 To determine whether neurons exhibited similar responses for forced and free choices, we performed a correlation analysis. For each neuron, we first collected a vector of trial-averaged firing rates over time for the forced left condition. Firing rates were smoothed with a Gaussian (30 ms SD). We concatenated this response vector with the smoothed response vector for the forced-right condition. We then correlated it (Pearson correlation) with the analogous response vector for the free-choice conditions. The resulting correlation coefficients were averaged over neurons. This analysis was performed separately for the T-maze and S-maze, and the epoch considered was from −200 to +300 ms from maze onset.
 
 We restricted the above analysis to units with a reasonable signal-to-noise ratio (SNR), since ‘modulation’ for unresponsive units would simply be noise and produce correlation coefficients near zero. To compute signal, we concatenated the unit's forced and free response vectors then took the range of this vector. To compute the noise, we found the greatest SEM for any point in the concatenated response vector. The SNR was signal divided by noise. We included units with an SNR of at least four. This included a total of 219 units.
 
-## Single-trial decoding
+### Single-trial decoding
 
 In order to smooth the data in a principled way based on the data itself, and to reduce the possibility of overfitting the classifier, we first applied Gaussian Process Factor Analysis (GPFA; Yu et al., 2009). Among other advantages, GPFA chooses smoothing kernels for each dimension to reflect both their natural spectral content and the signal-to-noise available in the data. For each trial, we took the portion of the data from 300 ms before maze onset to 200 ms before movement onset, and applied GPFA with a 20 ms bin width and 12 dimensions. Only successful trials were included. The dimensionality was chosen conservatively based both on previous analysis of PMd activity and cross-validation of the present data, which indicated that any dimensionality between ∼8–14 would retain most structure without increasing noise. Movement epoch data were excluded because firing rate changes tended to be much larger and thus dominated the resulting space, reducing the quality of the delay epoch trajectory estimation. For both monkeys, GPFA was performed on all successful trials from a single day together. The subsequent decoding did not appreciably change quality when performing the GPFA step on the T-maze and S-maze separately.
 
@@ -224,19 +463,19 @@ In order to test the decoder's performance with time (Figure 3A), we divided the
 
 We computed a p-value to verify that the cross-validated forced-choice decoder performed above chance. To do so, we performed a simulation in which we chose the ‘decoded choice’ for each trial to be left or right by chance (according to their overall prevalence), then checked how often this simulation performed as well as the real decoder. 10 million runs were performed with different random seeds.
 
-## Trial selection
+### Trial selection
 
 For all decoder-based analyses except those noted, only trials with delay durations ≥300 ms were used. Where noted, trials with delay durations of zero were used (the Go cue was presented simultaneously with maze onset). For producing PSTHs, trials with a delay duration of ≥350 ms were used. When forced or free choice trials are referenced without explicitly noting barrier changes, only trials with no barrier changes were included.
 
-## Identifying possible changes of mind for PSTHs
+### Identifying possible changes of mind for PSTHs
 
 For producing PSTHs, the presence of changes of mind represented a potential confound. We therefore used the moment-by-moment decoded choice to aggressively exclude all trials that might have contained such changes of mind. Specifically, we excluded all trials for which the eventual choice did not match the decoded choice at any point more than 160 ms after maze onset (150 ms is the approximate length of time it takes for movement preparation to complete, see Churchland et al., 2006b; we rounded this value up to the next multiple of 20 ms to align with our binning). This criterion was applied to both forced choice and free choice trials. Change-of-mind trials were also excluded before determining whether selectivity was consistent for forced and free choices (exclusion for free choices only). This exclusion was not performed before any other analyses.
 
-## Quantifying changes of mind in free choice, encouraged switch, and biasing change trials
+### Quantifying changes of mind in free choice, encouraged switch, and biasing change trials
 
 To identify trials with clear covert changes of mind, we used the following algorithm. For each trial with a delay of ≥300 ms, we considered time points ≥160 ms after maze onset (see above for justification of timing). After this time, to be considered a change of mind the time course of the decoded choice had to meet three criteria: (1) at some time point, it needed to change from leftward to rightward or vice versa; (2) at some time point, it needed to be ≥10 times as likely to come from the ‘leftward’ forced-choice distribution of decoded choice as from the ‘rightward’ forced-choice distribution of decoded choice for the same time point; and (3) at some time point, it needed to be ≥10 times as likely to come from the ‘rightward’ forced-choice distribution of decoded choice as from the ‘leftward’ forced-choice distribution of decoded choice for the same time point. That is, the decoded choice needed to swing from ‘strongly left’ to ‘strongly right’ or vice versa. To determine likelihoods, Gaussian fits were used for the leftward and rightward distributions. For determining the forced-choice distributions of decoded choice at late time points, all time points ≥600 ms were pooled. To be conservative, when this algorithm was applied to leave-one-out cross-validation trials, the classifier and distributions from that cross-validation fold were used. All trials meeting these criteria are shown in the relevant plots. This algorithm was also used to identify trials for Figure 4G,H.
 
-## Determining whether changes of mind passed near the baseline state
+### Determining whether changes of mind passed near the baseline state
 
 We determined whether the neural state during a change of mind resembled the baseline state, in the 12-D GPFA space (Figure 4G,H, Figure 4—figure supplement 5). This 12-D state acts as a denoised summary of the firing rates of all the recorded neurons.
 
@@ -248,10 +487,10 @@ Next, we identified change of mind trials: subsets of free choice trials and bia
 
 Finally, for comparison, we considered all free choice trials and all biasing change trials (not just the crossing trials). For each point at least 160 ms after maze onset, we again found the Euclidean distance to the mean baseline state. These distributions are plotted in hollow purple and green.
 
-## Determining whether changes of mind had typical firing rates
+### Determining whether changes of mind had typical firing rates
 
 To compare firing rates during changes of mind with firing rates on other trials, we had to choose a comparison population of trials and a matched window of time (since firing rates were not perfectly stable over the delay). We therefore used the following procedure. For each unit, for each vacillation trial, we found the last time that the decoder switched from indicating one choice to the other. We then found the firing rate of that unit in the 200 ms window centered on this crossing time. Next, we found the mean firing rate in the same window for the same unit for all non-vacillation free left-choice trials, and for all non-vacillation free right-choice trials. After repeating this procedure for each vacillation trial, we found three average firing rates: for all the vacillation trials, for all non-vacillation free lefts, and for all non-vacillation free rights. Finally, we categorized the vacillation firing rate as lower than both free rates, between them, or higher than both free rates. The procedure for bias trials was similar: analogously, we compared bias trials on which the decoder did indicate a change of mind (sign change in the decoded choice) with those in which it did not. If instead we repeated the analysis using free choice non-vacillation trials for comparison, results were similar. This last point indicates that the observed difference between vacillations and induced changes of mind were not due to differences in the comparison trials.
 
-## Regression-based indecision analysis
+### Regression-based indecision analysis
 
 We wished to see whether a slowly resolving decoded choice might be responsible for the slow RTs sometimes observed on free choice trials (Figure 5D, Figure 5—figure supplement 2). To do so, we first identified free choice trials on which the Go cue was presented simultaneously with maze onset, and which evoked an RT ≥300 ms. For these trials, we considered the decoded choice at 100 ms after maze onset. For the regression, we ensured that a decoded choice agreeing with the eventual choice was positive while a decoded choice disagreeing with the eventual choice was negative. Thus, for trials on which the monkey chose the leftward target, we inverted the sign of the decoded choice. Linear regression was then performed.

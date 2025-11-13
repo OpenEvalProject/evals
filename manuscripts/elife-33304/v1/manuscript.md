@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.33304.001 Squamous cell carcinoma (SCC) can progress to malignant metastatic cancer, including an aggressive subtype known as spindle cell carcinoma (spSCC). spSCC formation involves epithelial-to-mesenchymal transition (EMT), yet the molecular basis of this event remains unknown. The transcriptional co-activator YAP undergoes recurrent amplification in human SCC and overexpression of YAP drives SCC formation in mice. Here, we show that human spSCC tumours also feature strong nuclear localisation of YAP and overexpression of activated YAP (NLS-YAP-5SA) with Keratin-5 (K5-CreERt) is sufficient to induce rapid formation of both SCC and spSCC in mice. spSCC tumours arise at sites of epithelial scratch wounding, where tumour-initiating epithelial cells undergo EMT to generate spSCC. Expression of the EMT transcription factor ZEB1 arises upon wounding and is a defining characteristic of spSCC in mice and humans. Thus, the wound healing response synergises with YAP to drive metaplastic transformation of SCC to spSCC.
+Squamous cell carcinoma (SCC) can progress to malignant metastatic cancer, including an aggressive subtype known as spindle cell carcinoma (spSCC). spSCC formation involves epithelial-to-mesenchymal transition (EMT), yet the molecular basis of this event remains unknown. The transcriptional co-activator YAP undergoes recurrent amplification in human SCC and overexpression of YAP drives SCC formation in mice. Here, we show that human spSCC tumours also feature strong nuclear localisation of YAP and overexpression of activated YAP (NLS-YAP-5SA) with Keratin-5 (K5-CreERt) is sufficient to induce rapid formation of both SCC and spSCC in mice. spSCC tumours arise at sites of epithelial scratch wounding, where tumour-initiating epithelial cells undergo EMT to generate spSCC. Expression of the EMT transcription factor ZEB1 arises upon wounding and is a defining characteristic of spSCC in mice and humans. Thus, the wound healing response synergises with YAP to drive metaplastic transformation of SCC to spSCC.
 
 ## Introduction
 
@@ -34,6 +34,12 @@ The molecular basis for spSCC formation remains a fundamental unsolved problem. 
 ## Results and discussion
 
 We sought to test whether YAP is involved in formation of spSCC as well as SCC. To address this question, we stained histological sections of normal human skin and human spSCC tumours with an anti-YAP antibody and an anti-Keratin-5 (K5) antibody to mark epidermal cells (Figure 1A–C). YAP is normally expressed primarily in the epidermis, and is nuclear localised in the basal layer stem progenitor cells (Figure 1B,C). In spSCC tumours, YAP is strongly expressed and nuclear localised throughout the tumour, despite the fact that the tumour is dermal rather than epidermal in character as revealed by the absence of K5 expression in the tumour (Figure 1A–C; Figure 1—figure supplement 1). We note that spSCC tumours are often associated with a wounded epidermis, as indicated by a gap in the K5-positive layer above the tumour. These results suggest that high levels of nuclear YAP and epidermal wounding may be involved in spSCC formation.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/33304/elife-33304-fig1-v1.jpg)
+
+**Figure 1.:** (A) Histological sections of normal human skin and spindle cell carcinoma patient tumour stained for the epithelial marker Keratin-5 (brown immunostain). Scale bar 200 μM. (B) Histological sections of normal human skin and spindle cell carcinoma patient tumour stained for YAP (brown immunostain). Scale bar 200 μM. (C) High magnification view of (B) showing nuclear localisation of YAP protein in spindle cell carcinoma (brown immunostain). Sections are co-stained for eosin (blue). Scale bar 200 μM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33304/elife-33304-fig1-figsupp1-v1.jpg)
 
 To test this notion, we generated a conditionally inducible YAP transgene (Rosa26 LoxSTOPLox NLS-YAP-5SA IRES LacZ) that can be activated by expression of the Cre recombinase enzyme. We included a lineage tracer (LacZ) to identify all daughter cells deriving from mother cells undergoing Cre-mediated recombination. Crossing this transgene with a Keratin-5 driven, tamoxifen-inducible, Cre recombinase line (K5-CreERt) enabled conditional expression of oncogenic NLS-YAP-5SA in skin epidermis after treatment with tamoxifen to induce nuclear localisation of the CreERt enzyme and excision of the PolyA-containing STOP cassette (Figure 2A). We find that NLS-YAP-5SA is able to induce formation of both SCC and spSCC in skin within 2–4 weeks of tamoxifen treatment (Figure 2B). SCC and spSCC can be distinguished because spSCC tumour cells are dermally located and lack expression of K5 (Figure 2B). Notably, spSCC tumours tended to arise in regions where the mice scratch their skin, and spSCC tumours were often associated with a wounded epidermis, while SCCs could arise in the absence of epidermal wounding (Figure 2B). These findings raise the question of how expression of oncogenic YAP in the K5-positive epidermal cells can give rise to K5-negative dermal spSCC, and whether wounding of the skin has a role in the process.
 
@@ -55,58 +61,270 @@ Importantly, we find that ZEB1 is also induced during the wound healing response
 
 **Figure 4.:** (A) Punch wounding of mouse skin induces ZEB1 immunostaining in some leading edge cells. Scale bars 100 μM. (B) Scratch wounding of skin keratinocytes in culture induces ZEB1 and YAP immunostaining in leading edge cells. Scale bar 50 μM. (C) Induction of ZEB1 at the leading edge is prevented by transfection with siRNAs against YAP/TAZ. Scale bar 50 μM. (D) Induction of ZEB1 at the leading edge is prevented by treatment with Dasatinib, a Src-family kinase inhibitor that prevents YAP activation. Scale bar 50 μM. (E) Induction of ZEB1 at the leading edge is prevented by treatment with siRNAs against TEAD1-4. Scale bar 50 μM. (F) Chromatin Immunoprecipitation of TEAD1 at an upstream enhancer of the ZEB1 gene in keratinocytes before or after scratch wounding. The weak enrichment may be caused by the small percentage of ZEB1-expressing cells in this experiment. Data were analysed by a Mann-Whitney Test n = 9 samples per experimental condition.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/33304/elife-33304-fig5-v1.jpg)
+
+**Figure 5.:** (A) YAP immunostaining of normal human skin, SCC and spSCC-like tumours. Note strong nuclear localisation in spindle-shaped spSCC tumour cells. (B) ZEB1 immunostaining of normal human skin, SCC and spSCC-like tumours. Note strong expression in spindle-shaped spSCC tumour cells. (C) Vimentin immunostaining of normal human skin, SCC and spSCC-like tumours. Note strong expression in spindle-shaped spSCC tumour cells. (D) E-cadherin immunostaining of normal human skin, SCC and spSCC-like tumours. Note absence of expression in spindle-shaped spSCC tumour cells. (E) Model comparing normal wound healing with SCC and spSCC formation. Scale bars 100 μM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33304/elife-33304-fig5-figsupp1-v1.jpg)
+
 In conclusion, our findings identify YAP as a driver of both SCC and spSCC formation, demonstrate that both SCC and spSCC originate in the basal layer of the epidermis, and reveal that the SCC versus spSCC outcome is determined by whether or not tumour cells undergo a ZEB1-mediated EMT program that can be induced by skin wounding (Figure 5E). Thus, while SCC reflects an abnormal hyperactivation of homeostatic epidermal proliferation mechanisms (requiring YAP/TAZ (Debaugnies et al., 2018) but not ZEB1, which is not expressed in SCC), spSCC reflects an abnormal hyperactivation of wound repair proliferation and EMT mechanisms (driven by both YAP and ZEB1). Future work should aim to examine genetic deletion of ZEB1 in spSCC tumours (Brabletz et al., 2017) and precisely how the wounding event synergises with YAP to induce ZEB1 and EMT, as many other wound-induced signal transduction pathways (MRTF-SRF, Ras-AP1, TGFbeta-SMAD) have been implicated in EMT and have binding sites in the ZEB1 regulatory region (Bakiri et al., 2015; Brabletz et al., 2018; David et al., 2016; Davies et al., 2005; Gasparics and Sebe, 2018; Räsänen and Vaheri, 2010; Yang and Weinberg, 2008). Overall, our findings begin to provide a molecular understanding of how genetic changes lead to SCC tumour growth and subsequent transformation to spSCC, and explain why exposure of skin to trauma, burns or ionizing radiation are so commonly associated with spSCC formation in patients (McKee, 1996).
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>HaCAT</td>
+      <td>Cell Services (Francis Crick Institute) Pubmed ID: 26989177</td>
+      <td>(CLS Cat# 300493/p800_HaCaT, RRID:CVCL_0038)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit monoclonal)</td>
+      <td>anti-Vimentin</td>
+      <td>Abcam</td>
+      <td>(Abcam Cat# ab92547, RRID:AB_10562134)</td>
+      <td>1/600 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit polyclonal)</td>
+      <td>anti-ZEB1</td>
+      <td>Proteintech</td>
+      <td>(Proteintech Group Cat# 21544–1-AP, RRID:AB_10734325)</td>
+      <td>1/500 IHC/1/100 IF</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit monoclonal)</td>
+      <td>anti-Keratin-5</td>
+      <td>Abcam</td>
+      <td>(Abcam Cat# ab52635, RRID:AB_869890)</td>
+      <td>1/500 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit polyclonal)</td>
+      <td>anti-beta- galactosidase</td>
+      <td>Acris</td>
+      <td>(Acris Antibodies GmbH Cat# R1064P, RRID:AB_973264)</td>
+      <td>1/5000 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit polyclonal)</td>
+      <td>anti-E-Cadherin</td>
+      <td>Santa Cruz</td>
+      <td>(Santa Cruz Biotechnology Cat# sc-7870, RRID:AB_2076666)</td>
+      <td>1/75 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit monoclonal)</td>
+      <td>anti-YAP</td>
+      <td>Cell Signalling Technology</td>
+      <td>(Cell Signaling Technology Cat# 14074, RRID:AB_2650491)</td>
+      <td>1/400 O/N IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit monoclonal)</td>
+      <td>anti-Ki67</td>
+      <td>Abcam</td>
+      <td>(Abcam Cat# ab16667, RRID:AB_302459)</td>
+      <td>1/350 IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody (Mouse monoclonal)</td>
+      <td>anti-TEAD-1</td>
+      <td>BD Biosciences</td>
+      <td>(BD Biosciences Cat# 610922, RRID:AB_398237)</td>
+      <td>12.5 per 200 ug chromatin input CHIP</td>
+    </tr>
+    <tr>
+      <td>Antibody (Mouse monoclonal)</td>
+      <td>anti-YAP</td>
+      <td>Santa Cruz</td>
+      <td>(Santa Cruz Biotechnology Cat# sc-101199, RRID:AB_1131430)</td>
+      <td>1/100 IF</td>
+    </tr>
+    <tr>
+      <td>Transfection reagent</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Thermo Fisher</td>
+      <td>Cat no: 13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>siRNA</td>
+      <td>TEAD 1</td>
+      <td>Dhamacon</td>
+      <td>Cat no: M-012603-01-0005</td>
+      <td>80 nM Final</td>
+    </tr>
+    <tr>
+      <td>siRNA</td>
+      <td>TEAD 2</td>
+      <td>Dhamacon</td>
+      <td>M-012611-00-0005</td>
+      <td>80 nM Final</td>
+    </tr>
+    <tr>
+      <td>siRNA</td>
+      <td>TEAD 3</td>
+      <td>Dhamacon</td>
+      <td>M-012604-01-0005</td>
+      <td>80 nM Final</td>
+    </tr>
+    <tr>
+      <td>siRNA</td>
+      <td>TEAD 4</td>
+      <td>Dhamacon</td>
+      <td>M-019570-03-0005</td>
+      <td>80 nM Final</td>
+    </tr>
+    <tr>
+      <td>siRNA</td>
+      <td>YAP</td>
+      <td>Dhamacon</td>
+      <td>M-012200-00-0005</td>
+      <td>80 nM Final</td>
+    </tr>
+    <tr>
+      <td>Human Protein Atlas</td>
+      <td>Various</td>
+      <td>Pubmed ID: 16774037</td>
+      <td>https://www.proteinatlas.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Human cancer samples</td>
+      <td>Vimentin/YAP</td>
+      <td>University of Southamption/ Gareth Thomas</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dasatinib</td>
+      <td>Selleck Biochem</td>
+      <td>S1021</td>
+      <td>5 uM Final</td>
+    </tr>
+    <tr>
+      <td>Mouse strain</td>
+      <td>Rosa26-YAP5SA</td>
+      <td>Junhao Mao (University of Massachusetts Medical School)</td>
+      <td></td>
+      <td>mixed background</td>
+    </tr>
+    <tr>
+      <td>Mouse strain</td>
+      <td>K5-CreERT2</td>
+      <td>Ian Rosewell (Francis Crick Institute)</td>
+      <td></td>
+      <td>mixed background</td>
+    </tr>
+    <tr>
+      <td>Mouse strain</td>
+      <td>Yapfl/fl Tazfl/fl</td>
+      <td>Axel Behrens (Francis Crick Institute)</td>
+      <td></td>
+      <td>mixed background</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Sigma</td>
+      <td>H7904</td>
+      <td>topical application of 200 ul oF 1.0 mg per 0.1 mL 4’OHT in DMSO on dorsal skin 5x consecutive days</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>T5648</td>
+      <td>IP 5 ul/g body weight of a 20 mg/ml solution in corn oil 5x consecutive days</td>
+    </tr>
+    <tr>
+      <td>RNA target probe</td>
+      <td>RNAscope Probe - Mm-Zeb1</td>
+      <td>ACD</td>
+      <td>451201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA target probe</td>
+      <td>RNAscope Probe - Mm-Snai1</td>
+      <td>ACD</td>
+      <td>451211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA target probe</td>
+      <td>RNAscope Probe - Mm-Snai2</td>
+      <td>ACD</td>
+      <td>451191</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Human HaCAT cells (Francis Crick Institute cell services) were grown in DMEM (Gibco 41966) with 10% FCS and Penicillin/Streptomycin. All cells are subject to mycoplasma testing.
 
-## Cell culture scratch assay
+### Cell culture scratch assay
 
 Cells are transfected with siRNA as previously described (Ref 13), before being replated at high density and left for 24 hr. Cells are scratched with a P200 pipette tip and left for 4 hr before being fixed. Cells treated with Dasatinib were treated and scratched simultaneously before being fixed. Cells were fixed with 4% PFA for 15 min before permeabilsing as previously described (Ref 13).
 
-## Cell culture antibodies, image acquisition and quantification
+### Cell culture antibodies, image acquisition and quantification
 
 Primary antibodies used were: Rabbit Zeb1 Proteintech 21544-AP) 1/100 and Mouse YAP (Santa cruz sc-101199) 1/100. Secondary antibodies were from Invitrogen, and used at 1:500 for 2 hr at room temperature along with DAPI. Cell culture samples were imaged with a Leica SP5 confocal microscope using a 63x oil immersion objective and processed using Adobe Photoshop. Cells were assessed over three independent experiments counting 200–300 cells per condition.
 
-## siRNA transfection and inhibitor treatments
+### siRNA transfection and inhibitor treatments
 
 siRNA transfection experiments and inhibitor treatments were performed as previously described (Ref Dong et al., 2007).
 
 Plasmids pCMV6 AC GFP ZEB-1 Transcript 1 (Origene) was transfected using Lipofectamine 3000 (Invitrogen). Quantification of extruded cells was performed by analysing n342 transfected cells over three experiments and recording number of extruded cells versus cells present within the monolayer.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 ChIP was performed as previously described (Coda et al., 2017), with the exception of the use of the ChIP Clean and Concentrate kit (Zymo Research, USA) for clean up of enriched chromatin according to the manufacturer’s instructions. Quantitative PCR for enrichment at the ZEB1 promoter was performed using the following primers: Fwd: 5’-GATGGGGAAGTGAGACAAGC-3’; Rev: 5’-CAGCTGGATTGAAAGAGAGGC-3’.
 
-## Animal procedures
+### Animal procedures
 
-## Ethics statement
+#### Ethics statement
 
 All animal-regulated procedures were carried out according to Project License constraints (PPL 70/7926) and Home Office guidelines and regulations.
 
 All experiments were carried out in accordance with the United Kingdom Animal Scientific Procedures Act (1986).
 
-## pROSA26-YAP5SA targeting construct
+#### pROSA26-YAP5SA targeting construct
 
 Diagram of the construct is shown in Figure 2. K5-CreERt mice were in mixed background. ROSA26-YAP5SA-NLS K5-CreERt mice were used with littermate controls.
 
-## Mouse experiments
+### Mouse experiments
 
-## R26-YAP5SA-NLS transgene expression in adult epidermis
+#### R26-YAP5SA-NLS transgene expression in adult epidermis
 
 Tamoxifen (Sigma, 20 mg/ml in con oil) was injected intraperitoneally (IP) (5 µl/g body weight) for five consecutive days into 8–16 week old controls or transgenic animals carrying K5-CreERt Yap R26-YAP5SA-NLS to induce YAP5SA-NLS expression and analyzed for LacZ (lineage tracer) expression by immunohistochemistry from 3 days thereafter. K5-CreERt R26-YAP5SA-NLS mice used for tumour formation analysis were analyzed by immunohistochemistry from 10 days after the initial tamoxifen treatment start.
 
-## Wound healing
+### Wound healing
 
 Following the 5 day tamoxifen treatment, four hydroxy-tamoxifen (4OHT, sigma) was topically applied to shaved backskin for five consecutive days at a dosage of 10 mg/ml in Ethanol and 100 µl was applied per mouse. Mice were anaesthetized with IsoFlo (Isoflurane, Abbott Animal Health) and treated with the analgesics Vetergesic (Alstoe Animal Health) and Rimadyl (Pfizer Animal Health) for 2 days after wounding. A 4 mm punch wound was made in the backskin using a biopsy punch (Miltex) and mice were culled 48 hr later, with the wound section harvested and fixed immediately for immunohistochemical analysis.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mouse backskin samples were harvested and fixed in neutral-buffered formaldehyde 10% vol/vol (sigma) and then embedded in paraffin in a head to tail orientation. The tissues were processed, embedded and sectioned at 4 µm and used for hematoxylin–eosin staining and immunohistochemistry. Sections were de-waxed in xylene, dehydrated by passage through graded alcohols to water. If required for antigen retrieval, sections were microwaved in citrate buffer pH6 for 15 min and then transferred to PBS. Endogenous peroxidase was blocked using 1.6% hydrogen peroxide in PBS for 10 min followed by washing in distilled water. Species specific blocking serum (Diluted to 10% in 1% BSA) was used to block non-specific staining in the tissue for 30 min. Slides were incubated with Primary antibody diluted to 1:100 in 1% BSA for 1 hr at room temperature. Sections were washed in PBS prior to applying the appropriate biotinylated secondary antibody for 45 min at room temperature. Sections were then washed in PBS and then incubated in ABC (Vector Laboratories PK-6100) for 30 min. Following washing in PBS, DAB solution was applied for 2–5 min with development of the colour reaction being monitored microscopically. Slides were washed in tap water, stained with a light haematoxylin, dehydrated, cleared and then mounted. Antibodies used for IHC were: Vimentin (Abcam ab92547) 1/600, Zeb1 (Proteintech 21544-AP) 1/500, Keratin-5 Abcam ab52635) 1/500, LacZ (Acris R1064P) 1/5000, E-Cadherin (Santa Cruz sc-7870) 1/75 O/N, YAP Cell signalling (14074) 1/400 O/N; (Santa cruz sc-101199) 1/200 O/N, Ki67 (Abcam ab16667) 1/350. Images were acquired with a Zeiss light microscope using 40x and 20x objectives. Additional images of human samples were obtained by data-mining the proteinatlas.org database.
 
-## RNAscope (ACDbio)
+### RNAscope (ACDbio)
 
 Zeb1 probe was used according to manufacturer’s instructions.

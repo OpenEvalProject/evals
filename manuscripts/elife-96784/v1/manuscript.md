@@ -18,18 +18,18 @@
 
 ### Affiliations
 
-1. https://ror.org/05wg1m734 Radboud University Medical Centre, Donders Institute for Brain, Cognition and Behavior Nijmegen Netherlands
-2. https://ror.org/02crff812 Child Development Center and Children’s Research Center, University Children's Hospital Zürich, University of Zürich Zürich Switzerland
-3. https://ror.org/01462r250 Department of Child and Adolescent Psychiatry and Psychotherapy, Psychiatric University Hospital Zurich Zurich Switzerland
-4. https://ror.org/04dq56617 Max Planck Institute of Psychiatry Munich Germany
-5. https://ror.org/035d65343 Klinikum Ingolstadt, Centre of Mental Health Ingolstadt Germany
-6. https://ror.org/01g9ty582 Semmelweis University, Institute of Behavioural Sciences Budapest Hungary
+1. Radboud University Medical Centre, Donders Institute for Brain, Cognition and Behavior Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+2. Child Development Center and Children’s Research Center, University Children's Hospital Zürich, University of Zürich Zürich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+3. Department of Child and Adolescent Psychiatry and Psychotherapy, Psychiatric University Hospital Zurich Zurich Switzerland ([ROR:01462r250](https://ror.org/01462r250))
+4. Max Planck Institute of Psychiatry Munich Germany ([ROR:04dq56617](https://ror.org/04dq56617))
+5. Klinikum Ingolstadt, Centre of Mental Health Ingolstadt Germany ([ROR:035d65343](https://ror.org/035d65343))
+6. Semmelweis University, Institute of Behavioural Sciences Budapest Hungary ([ROR:01g9ty582](https://ror.org/01g9ty582))
 
 † Corresponding author
 
 ## Abstract
 
-Sleep cycles are defined as episodes of non-rapid eye movement (non-REM) sleep followed by an episode of REM sleep. Fractal or aperiodic neural activity is a well-established marker of arousal and sleep stages measured using electroencephalography. We introduce a new concept of ‘fractal cycles’ of sleep, defined as a time interval during which time series of fractal activity descend to their local minimum and ascend to the next local maximum. We assess correlations between fractal and classical (i.e. non-REM – REM) sleep cycle durations and study cycles with skipped REM sleep. The sample comprised 205 healthy adults, 21 children and adolescents and 111 patients with depression. We found that fractal and classical cycle durations (89±34 vs 90±25 min) correlated positively ( r =0.5, p<0.001). Children and adolescents had shorter fractal cycles than young adults (76±34 vs 94±32 min). The fractal cycle algorithm detected cycles with skipped REM sleep in 91–98% of cases. Medicated patients with depression showed longer fractal cycles compared to their unmedicated state (107±51 vs 92±38 min) and age-matched controls (104±49 vs 88±31 min). In conclusion, fractal cycles are an objective, quantifiable, continuous and biologically plausible way to display sleep neural activity and its cycles.
+Sleep cycles are defined as episodes of non-rapid eye movement (non-REM) sleep followed by an episode of REM sleep. Fractal or aperiodic neural activity is a well-established marker of arousal and sleep stages measured using electroencephalography. We introduce a new concept of ‘fractal cycles’ of sleep, defined as a time interval during which time series of fractal activity descend to their local minimum and ascend to the next local maximum. We assess correlations between fractal and classical (i.e. non-REM – REM) sleep cycle durations and study cycles with skipped REM sleep. The sample comprised 205 healthy adults, 21 children and adolescents and 111 patients with depression. We found that fractal and classical cycle durations (89±34 vs 90±25 min) correlated positively (r=0.5, p<0.001). Children and adolescents had shorter fractal cycles than young adults (76±34 vs 94±32 min). The fractal cycle algorithm detected cycles with skipped REM sleep in 91–98% of cases. Medicated patients with depression showed longer fractal cycles compared to their unmedicated state (107±51 vs 92±38 min) and age-matched controls (104±49 vs 88±31 min). In conclusion, fractal cycles are an objective, quantifiable, continuous and biologically plausible way to display sleep neural activity and its cycles.
 
 ## Introduction
 
@@ -59,9 +59,29 @@ Finally, we test the clinical value of the fractal cycles by analyzing polysomno
 
 ## Results
 
-## Fractal cycles in healthy adults
+### Fractal cycles in healthy adults
 
 Figure 1A displays smoothed fractal slope time series and hypnogram for an example subject. Four additional examples are presented in Figure 1—figure supplement 1. Fractal slope time series and hypnograms for all healthy adult participants are shown in Supplementary PowerPoint File shared on https://osf.io/gxzyd.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig1-v1.jpg)
+
+**Figure 1.:** (A – B) Individual fractal and classical sleep cycles. Time series of smoothed z-normalized fractal slopes (bottom) and corresponding hypnograms (top) observed in two different participants. The duration of the fractal cycle is a time interval between two successive peaks (blue diamonds). (A) S15 from Dataset 3 shows a one-to-one match between fractal cycles defined by the algorithm and classical (non-REM – REM) cycles defined by the hypnogram. (B) In S22 from dataset 5, the second part of night has many wake epochs, some of them are identified by the algorithm as local peaks. This results in a higher number of fractal cycles as compared to the classical ones and a poor match between the fractal cycles No. 3–7 and classical cycles No. 2–5. The algorithm does not distinguish between the wake and REM-related fractal slopes and can define both as local peaks. Since the duration of the fractal cycles is defined as an interval of time between two adjacent peaks, more awakenings/arousals during sleep (usually associated with aging) are expected to result in more peaks and, consequently, more fractal cycles, that is a shorter cycle duration. This is one of the possible explanations for the correlation between the fractal cycle duration and age (shown in Figure 1—figure supplement 4A). Time series of the fractal slopes and corresponding hypnograms for all participants are reported in Supplementary PowerPoint File shared on https://osf.io/gxzyd. SWS – slow-wave sleep, REM – rapid eye movement. (C) Scatterplots: each dot represents the duration of the cycles averaged over one participant. The durations of the fractal and classical sleep cycles averaged over each participant correlate in all analyzed datasets, raw (non-ranked) values are shown, r – Spearman’s correlation coefficient. (D) Cycle-to-cycle overnight dynamics show an inverted U shape of the duration of both fractal and classical cycles across a night and a gradual decrease in absolute amplitudes of the fractal descents and ascents from early to late cycles.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Time series of smoothed z-normalized fractal slopes (bottom) and corresponding hypnograms (top). The duration of the fractal cycle is an interval of time between two successive peaks (blue diamonds) defined with Matlab’s function findpeaks with the minimum peak distance of 40 min and minimum peak prominence of 0.9 z. Supplementary PowerPoint File shared on https://osf.io/gxzyd presents these time series and hypnograms for all participants. (A – B) one-to-one match. In these two participants (from Dataset 3), there is an almost one-to-one match between fractal cycles defined by the algorithm and classical (non-REM – REM) cycles defined by the hypnogram. (C – D) algorithm’s misses. Two participants from Dataset. In S4, the fourth fractal cycle corresponds to two classical cycles, No.4 and No.5, since the algorithm misses the local fractal peak at the 410th minute, which is not high enough (< |0.9| z). In S39, the second fractal cycle corresponds to two classical cycles, No.2 and No.3: the algorithm misses the local fractal peak at the 140th minute (the time of the corresponding REM episode), as the amplitude of the subsequent fractal descent is < |0.9| z. Two fractal cycles, No. 4 and No. 5, correspond to one classical cycle, No. 5: the algorithm identifies the wake episode at the 380th minute (in the middle of the 5th classical cycle) as a local fractal peak, i.e., the end of the fractal cycle. SWS – slow-wave sleep, REM – rapid eye movement sleep.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Frequency distribution of fractal and classical cycle durations. The individual fractal (top) and classical (bottom) cycles are counted (n) for each dataset separately and for all datasets merged. Across studies, 205 healthy adult participants provided 940 fractal cycles with a mean of 4.6±1.0 cycles per participant and 961 classical cycles with a mean of 4.7±0.9 cycles per participant. For both fractal and classical cycles, Kolmogorov-Smirnov test rejected the assumption that cycle duration comes from a standard normal distribution. (B) Box plots of fractal and classical cycle durations. In each box, a vertical central line represents the median, the left and right edges of the box indicate the 25th and 75th percentiles, respectively, the whiskers extend to the most extreme data points not considered outliers, and a plus sign represents outliers. (C) A subset of healthy adults with a one-to-one match between fractal and classical cycles durations (correlations). In a subset of the participants (from 45 to 66% in different datasets), there was a one-to-one match between fractal and classical cycles, each dot represents an individual cycle, n – number of cycles, all p-values < $10^{-9}$, r – Spearman’s correlation coefficient. (D) Individual fractal time series across 13 hr. Time series of raw (middle) and smoothed z-normalized fractal slopes (bottom) as well as the corresponding hypnograms (top) in a 25-year-old healthy male. In addition to sleep-related fractal activity, this figure shows fractal activity during 3 hr before the sleep onset and 2 hr after awakening. The graph shows that fractal cycles are not observed during wake, being specific to sleep. This participant does not come from the datasets depicted in the current study (where no recordings >8 h were available). The study, EEG device and preprocessing are described in Rosenblum et al., 2024b. EEG power was averaged over F4, C4, and O2 electrodes, differentiated into its components, z-scored and smoothed as described in Methods of the current paper. The duration of the fractal cycle is a time interval between two successive peaks (blue diamonds). SWS – slow-wave sleep (green dots), REM – rapid eye movement sleep (red dots).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Time series of smoothed z-normalized fractal slopes (bottom) and corresponding hypnograms (top) observed in three young healthy participants (from Dataset 4). Hypnograms show skipped first cycles (as well as the rest of the classical cycles). (A) In S17, at the 90th minute, an episode of REM sleep is expected to appear – except only a ‘lightening of sleep’ (wake, N1 and N2) is observed. We divided the long 209 min cycle into two cycles, the 90 min skipped cycle and the 119 min normal cycle. (B) In S18, at the 63rd minute, an episode of REM sleep is expected to appear – except only a ‘lightening of sleep’ (N1 and N2) is observed. We divided the long 138 min cycle into two cycles, the 63 min skipped cycle and the 75 min normal cycle. The fractal cycle algorithm was very effective in detecting skipped cycles, showing a one-to-one match with divided – but not long undivided – cycles. (C) S37’s hypnogram shows that she has no REM sleep at all, that is all her cycles are the ‘skipped’ ones. Based on this, S37 was even excluded from the formal analysis. This example is presented here to illustrate that the fractal cycle algorithm is sensitive enough in detecting sleep cycles even in the absence of REM sleep. SWS – slow-wave sleep, REM – rapid eye movement sleep.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Fractal cycle duration negatively correlates with the age of healthy participants. (B) The WASO proportion positively correlates with the age of healthy participants. The partial correlations between the fractal cycle duration and age adjusted for WASO and REM latency remained significant. (C) Fractal cycle duration positively correlates with REM latency of the healthy participants. (D) REM latency negatively correlates with the participant’s age. The partial correlation between the fractal cycle duration and REM latency adjusted for the participant’s age is non-significant. Age range: 18–75 years, median: 33.5 years, n=205 (pooled Datasets 1–5), raw (non-ranked) values are presented, r – Spearman’s correlation coefficient where values <0.3 are considered as weak correlations, REM – rapid eye movement, WASO – wakefulness after sleep onset.
 
 We observed that the slopes of the fractal (aperiodic) power component fluctuate across a night such that the peaks of the time series largely coincide with REM sleep episodes while the troughs of the time series for the most part coincide with non-REM sleep episodes. Based on this observation we propose the following definition:
 
@@ -73,11 +93,222 @@ Overall, fractal slopes cyclically descend and ascend 4–6 times per night and 
 
 This observation strikingly resembles what we know about classical sleep cycles: ‘night sleep consists of 4–6 sleep cycles, which last for about 90 min each’ (Feinberg and Floyd, 1979; Le Bon, 2020; Figure 1—figure supplement 2A, bottom panel). Further calculations showed that the mean duration of the fractal cycles averaged over all cycles from all datasets (n=940) is 89±34 min while the mean duration of the classical sleep cycles is 90±25 min (Figure 1—figure supplement 2B). The mean durations of the fractal and classical sleep cycles averaged over each participant correlated in all analyzed datasets (r=0.4–0.5, Table 1, Figure 1C).
 
+**Table 1.**
+ Demographic, sleep and fractal characteristics of healthy adults.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Dataset 1</th>
+      <th>Dataset 2</th>
+      <th>Dataset 3</th>
+      <th>Dataset 4</th>
+      <th>Dataset 5</th>
+      <th>Pooled dataset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No. participants analyzed</td>
+      <td>38</td>
+      <td>39</td>
+      <td>32</td>
+      <td>34</td>
+      <td>62</td>
+      <td>205</td>
+    </tr>
+    <tr>
+      <td>Age, years</td>
+      <td>46.8±10.7</td>
+      <td>31.0±9.9</td>
+      <td>45.3±15.9</td>
+      <td>21.5±3.8</td>
+      <td>37.4±15.3</td>
+      <td>36.7±15.0</td>
+    </tr>
+    <tr>
+      <td>Age range, years</td>
+      <td>29–65</td>
+      <td>19–54</td>
+      <td>22–75</td>
+      <td>18–35</td>
+      <td>20–66</td>
+      <td>18–75</td>
+    </tr>
+    <tr>
+      <td>Sex, female, %</td>
+      <td>53</td>
+      <td>54</td>
+      <td>61</td>
+      <td>68</td>
+      <td>55</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Wake, %</td>
+      <td>6.0</td>
+      <td>4.9</td>
+      <td>7.5</td>
+      <td>7.1</td>
+      <td>9.1</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>Non-REM stage 1, %</td>
+      <td>7.7</td>
+      <td>11.9</td>
+      <td>9.0</td>
+      <td>3.6</td>
+      <td>7.5</td>
+      <td>7.9</td>
+    </tr>
+    <tr>
+      <td>Non-REM stage 2, %</td>
+      <td>48.1</td>
+      <td>45.9</td>
+      <td>49.3</td>
+      <td>34.7</td>
+      <td>46.1</td>
+      <td>45.1</td>
+    </tr>
+    <tr>
+      <td>Slow-wave sleep, %</td>
+      <td>19.2</td>
+      <td>20.3</td>
+      <td>16.2</td>
+      <td>34.2</td>
+      <td>17.2</td>
+      <td>20.9</td>
+    </tr>
+    <tr>
+      <td>REM sleep, %</td>
+      <td>19.0</td>
+      <td>16.9</td>
+      <td>17.9</td>
+      <td>19.3</td>
+      <td>19.3</td>
+      <td>18.6</td>
+    </tr>
+    <tr>
+      <td>Total sleep time, min</td>
+      <td>394±55</td>
+      <td>430±26</td>
+      <td>434±37</td>
+      <td>445±62</td>
+      <td>467±38</td>
+      <td>438±51</td>
+    </tr>
+    <tr>
+      <td>Classical sleep cycle duration, min</td>
+      <td>86.2±23.3</td>
+      <td>90.0±21.3</td>
+      <td>89.0±22.7</td>
+      <td>92.2±23.7</td>
+      <td>91.9±29.0</td>
+      <td>90.1±24.9</td>
+    </tr>
+    <tr>
+      <td>Fractal sleep cycle duration, min</td>
+      <td>86.4±35.2</td>
+      <td>90.0±25.5</td>
+      <td>86.4±31.2</td>
+      <td>94.7±37.1</td>
+      <td>89.9±37.1</td>
+      <td>89.1±34.0</td>
+    </tr>
+    <tr>
+      <td>Classical-fractal cycles duration correlation, r</td>
+      <td>0.407</td>
+      <td>0.485</td>
+      <td>0.498</td>
+      <td>0.548</td>
+      <td>0.481</td>
+      <td>0.488</td>
+    </tr>
+    <tr>
+      <td>Classical-fractal cycles duration correlation, p</td>
+      <td>0.011</td>
+      <td>0.002</td>
+      <td>0.004</td>
+      <td>0.001</td>
+      <td>10–5</td>
+      <td>10–13</td>
+    </tr>
+    <tr>
+      <td>One-to-one match between classical and fractal cycles timing and duration, % cycles</td>
+      <td>78</td>
+      <td>88</td>
+      <td>82</td>
+      <td>87</td>
+      <td>77</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>Participants having all fractal and classical cycles in a one-to-one match, % participants</td>
+      <td>53</td>
+      <td>62</td>
+      <td>66</td>
+      <td>53</td>
+      <td>45</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Descent amplitude, z</td>
+      <td>–2.2±0.9</td>
+      <td>–2.3±0.9</td>
+      <td>–2.2±0.8</td>
+      <td>–2.2±0.8</td>
+      <td>–2.1±0.8</td>
+      <td>–2.2±0.8</td>
+    </tr>
+    <tr>
+      <td>Ascent amplitude, z</td>
+      <td>2.1±0.6</td>
+      <td>2.2±0.6</td>
+      <td>2.1±0.6</td>
+      <td>2.1±0.6</td>
+      <td>2.0±0.6</td>
+      <td>2.2±0.6</td>
+    </tr>
+    <tr>
+      <td>No. fractal cycles</td>
+      <td>167</td>
+      <td>171</td>
+      <td>152</td>
+      <td>152</td>
+      <td>298</td>
+      <td>940</td>
+    </tr>
+    <tr>
+      <td>No. classical cycles</td>
+      <td>171</td>
+      <td>180</td>
+      <td>146</td>
+      <td>161</td>
+      <td>303</td>
+      <td>961</td>
+    </tr>
+    <tr>
+      <td>No. ‘skipped’ first cycles (%)</td>
+      <td>5 (13%)</td>
+      <td>7 (18%)</td>
+      <td>1 (3%)</td>
+      <td>19 (56%)</td>
+      <td>15 (24%)</td>
+      <td>47 (23%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_±shows mean and SD, r – Spearman’s correlation coefficient, ‘skipped’ cycle – a cycle where REM sleep does not appear, REM – rapid eye movement._
+
 Figure 1—figure supplement 1D shows fractal activity across 13 hr, including 3 hr before the sleep onset and 2 hr after awakening (using data from Rosenblum et al., 2024b). The pattern of fractal fluctuations suggests that fractal cycles are specific to sleep and are not observed during wake.
 
 Cycle-to-cycle overnight dynamics showed an inverted U-shape of the fractal cycle durations and a gradual decrease in absolute amplitudes of the fractal descents and ascents from early to late cycles. This pattern resembled an inverted U-shape of the classical cycle durations (Figure 1D).
 
-## Correspondence between fractal and classical cycles
+### Correspondence between fractal and classical cycles
 
 Analysis at the individual cycle level revealed that 81% (763/940) of all fractal cycles (77–88% in different datasets) could be matched to a specific classical cycle defined by hypnogram, that is, the timings of fractal and classical cycles approximately coincide. Bayesian prevalence analysis further revealed that the Bayesian highest posterior density interval with 96% probability level lies within the 0.77–0.83 range (the range within which the true population value lies) and the maximum a posteriori point estimate prevalence is equal to 0.8, reflecting the most likely values for the population parameter. This analysis reflects the within-participant replication probability: the probability of obtaining a significant experimental result if the same experiment was applied to a new participant randomly selected from the population (Ince et al., 2022).
 
@@ -85,23 +316,189 @@ In 54% (111/205) of the participants (45–66% in different datasets), all fract
 
 In the remaining 46% of the participants, the difference between the fractal and classical cycle numbers ranged from –2 to 2 with the average of –0.23±1.23 cycle. This subgroup had 4.6±1.2 fractal cycles per participant, while the number of classical cycles was 4.9±0.7 cycles per participant. The correlation coefficient between the fractal and classical cycle numbers was 0.280 (p=0.006) and between the cycle durations – 0.278 (p=0.006). Still, in these participants, many – even though not all – fractal cycles could be matched to a specific classical cycle. Figure 1B displays such an example in one participant. More examples can be found in Figure 1—figure supplement 1C, D and Supplementary PowerPoint File shared on https://osf.io/gxzyd.
 
-## Sources of fractal and classical cycle mismatches
+### Sources of fractal and classical cycle mismatches
 
 The timings and correlations between the fractal and classical cycles were not one-to-one (r=0.6–0.8, p<0.001). We identified two possible sources of a mismatch (Table 2; see also Table 5).
 
-## REM episode duration
+**Table 2.**
+ Sources of fractal and classical cycle mismatches.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Dataset 1 (A)</th>
+      <th>Dataset 2 (B)</th>
+      <th>Dataset 3(C)</th>
+      <th>Dataset 4</th>
+      <th>Dataset 5</th>
+      <th>Pooled dataset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Classical – fractal cycle duration difference, min</td>
+      <td>13.2±15.9</td>
+      <td>9.6±9.1</td>
+      <td>8.0±11.3</td>
+      <td>13.0±17.0</td>
+      <td>11.9±10.2</td>
+      <td>11.3±12.7</td>
+    </tr>
+    <tr>
+      <td>WASO, %</td>
+      <td>6.0±5.6</td>
+      <td>4.9±3.6</td>
+      <td>7.5±5.0</td>
+      <td>7.1±4.2</td>
+      <td>9.1±5.7</td>
+      <td>7.0±5.2</td>
+    </tr>
+    <tr>
+      <td>WASO %, r</td>
+      <td>–0.011</td>
+      <td>0.488</td>
+      <td>0.377</td>
+      <td>0.141</td>
+      <td>0.361</td>
+      <td>0.226</td>
+    </tr>
+    <tr>
+      <td>WASO %, p</td>
+      <td>0.950</td>
+      <td>0.002</td>
+      <td>0.034</td>
+      <td>0.425</td>
+      <td>0.004</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Descent amplitude, z</td>
+      <td>–2.3±0.9</td>
+      <td>–2.5±0.9</td>
+      <td>–2.3±0.8</td>
+      <td>–2.0±0.7</td>
+      <td>–2.1±0.8</td>
+      <td>–2.2±0.8</td>
+    </tr>
+    <tr>
+      <td>Fractal descent, r</td>
+      <td>0.189</td>
+      <td>0.327</td>
+      <td>0.143</td>
+      <td>0.144</td>
+      <td>0.149</td>
+      <td>0.152</td>
+    </tr>
+    <tr>
+      <td>Fractal descent, p</td>
+      <td>0.171</td>
+      <td>0.002</td>
+      <td>0.182</td>
+      <td>0.271</td>
+      <td>0.135</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Ascent amplitude, z</td>
+      <td>2.3±0.6</td>
+      <td>2.1±0.5</td>
+      <td>2.2±0.6</td>
+      <td>2.0±0.6</td>
+      <td>2.0±0.6</td>
+      <td>2.1±0.6</td>
+    </tr>
+    <tr>
+      <td>Fractal ascent, r</td>
+      <td>0.109</td>
+      <td>–0.105</td>
+      <td>–0.103</td>
+      <td>0.028</td>
+      <td>–0.010</td>
+      <td>–0.062</td>
+    </tr>
+    <tr>
+      <td>Fractal ascent, p</td>
+      <td>0.432</td>
+      <td>0.318</td>
+      <td>0.339</td>
+      <td>0.835</td>
+      <td>0.918</td>
+      <td>0.217</td>
+    </tr>
+    <tr>
+      <td>Skipped cycle lengths/TST, proportion</td>
+      <td>0.144</td>
+      <td>0.223</td>
+      <td>0.139</td>
+      <td>0.249</td>
+      <td>0.201</td>
+      <td>0.206</td>
+    </tr>
+    <tr>
+      <td>Skipped cycle lengths/TST, r</td>
+      <td>0.098</td>
+      <td>–0.363</td>
+      <td>0.384</td>
+      <td>–0.216</td>
+      <td>0.374</td>
+      <td>–0.019</td>
+    </tr>
+    <tr>
+      <td>Skipped cycles length/TST, p</td>
+      <td>0.788</td>
+      <td>0.303</td>
+      <td>0.523</td>
+      <td>0.334</td>
+      <td>0.066</td>
+      <td>0.873</td>
+    </tr>
+    <tr>
+      <td>REM episode length, min</td>
+      <td>23.5±15.2(72 cycles)</td>
+      <td>22.8±13.2(93 cycles)</td>
+      <td>21.8±11.6(90 cycles)</td>
+      <td>26.0±13.9(60 cycles)</td>
+      <td>24.3±15.0(102 cycles)</td>
+      <td>0.251±0.08(417 cycles)</td>
+    </tr>
+    <tr>
+      <td>REM episode length, r</td>
+      <td>0.222</td>
+      <td>0.411</td>
+      <td>0.400</td>
+      <td>0.231</td>
+      <td>0.394</td>
+      <td>0.358</td>
+    </tr>
+    <tr>
+      <td>REM episode length, p</td>
+      <td>0.061</td>
+      <td>&lt;0.001</td>
+      <td>0.001</td>
+      <td>0.076</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_All parameters listed in the first column were correlated with the absolute value of the difference in classical vs fractal sleep cycle durations. For WASO and skipped cycles, all cycles of a given participant were averaged and the correlations were performed at the subject level. For the rest of the parameters, fractal and classical cycles were matched one-to-one when possible (~50% of all participants) and correlations were performed at the cycle level, r’s higher than 0.7 are considered as strong correlation scores, values lower than 0.3 are considered as weak, r’s values in the range of 0.3–0.7 are considered as moderate scores.REM – rapid eye movement sleep, WASO – wake after sleep onset, TST – total sleep time, r – Spearman correlation coefficients._
+
+#### REM episode duration
 
 While the fractal cycle end is defined as the local maximum of time series of fractal slopes, the classical cycle ends with the end of a REM episode. As a consequence, in some cases, especially for morning cycles that have rather long REM periods (>20 min), the match between fractal and classical cycles can be rather coarse-grained (See, for example, cycle 3 in S16, Figure 1—figure supplement 1A). Yet, in other cases, the match between fractal and classical cycles might be almost perfect (See Figure 1A).
 
 To test this visual observation, we correlated the absolute values of the difference in classical vs fractal sleep cycle durations with the REM episode length within a given cycle. We included in this analysis only the participants who had an equal number of fractal and classical cycles in order to match each fractal cycle to a classical cycle individually. We found that longer REM episodes were associated with a higher difference between classical vs fractal sleep cycle durations (r=0.36, p<0.001, n=417 cycles, Table 2). Interestingly, our recent study has shown that fractal activity within a REM sleep episode is not homogenous, with phasic states showing steeper fractal slopes than tonic ones (Rosenblum et al., 2025).
 
-## Wake after sleep onset (WASO) duration
+#### Wake after sleep onset (WASO) duration
 
 Visual inspection of the data suggested that participants with more WASO often had more fractal than classical cycles. This might stem from the fact that both REM- and wake-related smoothed fractal slopes could be defined as local peaks (Figure 1A, B, Figure 4—figure supplement 4). More fractal peaks imply more fractal cycles and thus, possibly, more mismatches between the number and duration of classical and fractal cycles. To test this hypothesis, we correlated the average difference between the durations of classical and fractal cycles for each participant with the WASO proportion. We found that a higher difference in cycle durations was associated with a higher WASO proportion in 3/5 datasets (r’s=0.36–0.49, p<0.030) as well as in the merged dataset (r=0.23, p=0.001, n=205 participants, Table 2).
 
 In addition, we correlated the difference in classical vs fractal cycle durations with the fractal descent or ascent amplitudes (as reflections of fractal cycle depth and possibly sleep quality). We found that a shallower fractal descent was associated with a higher mismatch between fractal and classical cycles in 1/5 datasets (r=0.33, p=0.02) as well as in the merged dataset (r=0.15, p=0.002, n=400 cycles, Table 2).
 
-## Fractal cycles in children and adolescents
+### Fractal cycles in children and adolescents
 
 Next, we explored fractal cycles in children and adolescents (mean age: 12.4±3.1 years, n=21, Appendix 1—table 3) and compared them with those in young adults (mean age: 24.8±0.9 years, n=24). Two examples of smoothed fractal slope time series and hypnograms from the pediatric dataset are shown in Figure 2A – B. All examples are shown in Supplementary PowerPoint File shared on https://osf.io/gxzyd.
 
@@ -115,7 +512,7 @@ To directly compare the fractal and classical approaches, we performed a Multiva
 
 Cycle-to-cycle overnight dynamics further revealed that the first and second fractal – but not classical – cycles were significantly shorter in the pediatric compared to the control group (Figure 2E) with medium effect sizes (d=–0.61–0.72). At the same time, the overnight classical – but not fractal – cycle analysis detected a between-group difference for the fourth classical cycle with a large effect size (d=–1.0, Figure 2E).
 
-## Skipped cycles
+### Skipped cycles
 
 We tested whether the fractal cycle algorithm can detect skipped cycles, that is the cycles where an anticipated REM episode is skipped possibly due to too high homeostatic non-REM pressure. We counted only the first classical cycles (i.e. the first cycle out of the 4–6 cycles that each participant had per night, Figure 2A – B) as these cycles coincide with the highest non-REM pressure. An additional reason to disregard skipped cycles observed later during the night was our aim to achieve higher between-subject consistency as second – sixth skipped cycles were observed in only a small number of participants and were not distributed equally across the datasets.
 
@@ -123,7 +520,7 @@ The average number of the first skipped cycles for Datasets 1–5 is reported in
 
 Visual inspection of the hypnograms from Datasets 1–6 was performed by two independent researchers. Scorer 1 and Scorer 2 detected that out of 226 first sleep cycles 58 (26%) and 64 (28%), respectively, lacked REM episodes. The agreement on the presence of skipped cycles between two human raters equaled 91% (58 cycles detected by both raters out of 64 cycles detected by two scorers). The fractal cycle algorithm detected skipped cycles in 57 out of 58 (98%) cases detected by Scorer 1 with one false positive (which, however, was tagged as a skipped cycle by Scorer 2), and in 58 out of 64 (91%) cases detected by Scorer 2 with no false positives.
 
-## Age and fractal cycles
+### Age and fractal cycles
 
 Next, we tested whether fractal cycle duration changes as a function of age. We found that in the merged adult dataset (Datasets 1–5, n=205), the mean duration of the fractal cycles negatively correlated with the age of the participants (r=–0.19, p=0.006, age range: 18–75 years, median: 33.5 years, Figure 1—figure supplement 4A). Intriguingly, this correlation looked like a mirror image of the correlation between the age and wakefulness after sleep onset (Figure 1—figure supplement 4B). Following this observation, we performed an additional correlation between the fractal cycle duration and wakefulness proportion and found that it was non-significant (r=0.01, p=0.969). Nevertheless, we further performed a partial correlation between the fractal cycle duration and participant age, while controlling for the effect of wakefulness after the sleep onset and found that the correlation remained significant (r=–0.18, p=0.011).
 
@@ -133,9 +530,206 @@ Of note, these correlations were significant while analyzing the pooled dataset 
 
 Interestingly, the mean duration of the classical cycles did not correlate with the age of the adult participants neither in the merged dataset (r=–0.02, p=0.751) nor while analyzing each dataset separately.
 
-## Fractal cycles in MDD
+### Fractal cycles in MDD
 
 Finally, to assess the clinical relevance of the fractal cycles, we explored them in patients with MDD. We found that patients at 7- and 28 day of medication treatment as well as long-termed medicated patients (Datasets A – C) showed a longer fractal cycle duration compared to controls with medium effect size (Table 3, Figure 3B). Moreover, in Dataset B, the patients who took REM-suppressive antidepressants (See Appendix 1—table 5 for information on specific medications taken by the patients) showed longer fractal cycle duration compared to patients who took REM-non-suppressive antidepressants with medium effect size (70 cycles of 21 patients vs 63 cycles of 17 patients). In Dataset C, no difference was detected between these sub-groups. However, it should be noted that in Datasets C, the REM-suppressive and REM-non-suppressive antidepressant groups were unbalanced (87 cycles of 23 patients vs 35 cycles of 10 patients) and consisted of different medications than Dataset B.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig3-v1.jpg)
+
+**Figure 3.:** (A) Individual fractal cycles: time series of smoothed z-normalized fractal slopes observed in a 22 y.o. MDD patient (Dataset B) in their unmedicated (top) and 7-day medicated (bottom) states. Peaks (blue diamonds) are defined with the Matlab function findpeaks with the minimum peak distance of 20 min and minimum peak prominence of 0.9 z. Fractal cycles duration (defined as an interval of time between two successive peaks) is longer in the medicated compared to unmedicated states, reflecting shallower fluctuations of fractal (aperiodic) activity. Two additional patients are shown in Figure 3—figure supplement 1. (B) Box plots: the fractal cycle duration is longer in medicated MDD patients (red) compared to age and gender-matched healthy controls (black) in all datasets. In Dataset B, fractal cycles are longer in the medicated vs patients’ own unmedicated state and in patients who took REM-suppressive vs REM-non-suppressive antidepressants. A vertical central line represents the median in each box, the left and right edges of the box indicate the 25th and 75th percentiles, respectively, the whiskers extend to the most extreme data points not considered outliers, and a plus sign represents outliers (individual cycles). (C) Frequency distribution: individual fractal and classical cycles pooled from three MDD datasets (A – C) are counted separately for medicated MDD patients and HC. (D) Overnight dynamics: cycle-to-cycle dynamics of the duration of both fractal and classical cycles show a gradual decrease in medicated patients vs an inverted U shape in controls. The between-group difference in cycle duration is the largest for the first cycle. Patients show flatter fractal descents of the second cycle and steeper fractal descents of the fourth cycle compared to controls. Contrary to controls, patients do not show a gradual decrease in absolute amplitudes of the fractal descents from the second to the fourth cycles. Patients and controls show comparable cycle-to-cycle dynamics of fractal ascents, * marks a statistically significant difference between the groups. MDD – major depressive disorder, HC – healthy controls, unmed. – unmedicated, med. – medicated, SWS – slow-wave sleep, REM – rapid eye movement.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Time series of smoothed z-normalized fractal slopes observed in two additional MDD patients (Dataset B) in their unmedicated (top) and 7-day medicated (bottom) states. Fractal cycles duration (defined as an interval of time between two successive peaks, blue diamonds) is longer in the medicated compared to unmedicated states, reflecting shallower fluctuations of fractal (aperiodic) activity. MDD – major depressive disorder, SWS – slow-wave sleep, REM – rapid eye movement sleep.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Individual example: time series of smoothed z-normalized fractal slopes (bottom) and corresponding hypnograms (top). The duration of the fractal cycle is a time interval between two successive peaks (blue diamonds) defined with Matlab’s function findpeaks with a minimum peak distance of 20 min and minimum peak prominence of 0.9 z. SWS – slow-wave sleep, REM – rapid eye movement sleep. (B) Histograms: The frequency distribution of fractal cycle durations in patients with insomnia compared to controls. Kolmogorov-Smirnov’s test rejected the assumption that cycle duration comes from a standard normal distribution. (C) Box plots: in each box, a vertical central line represents the median, the left and right edges of the box indicate the 25th and 75th percentiles, respectively, the whiskers extend to the most extreme data points not considered outliers, and a plus sign represents outliers. Patients with insomnia show shorter fractal cycle duration compared to controls. (D) Averaged slopes: The slopes of the frontal fractal spectral power components in the 1–18 Hz range are averaged over each sleep stage as defined by the hypnogram. N3 is characterized by the steepest (most negative slopes) spectral decay compared to all other sleep stages in line with the existing literature. Patients present with flatter slopes compared to controls in all sleep stages confirming previous findings (Andrillon et al., 2020).
+
+**Table 3.**
+ Fractal cycles in MDD.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Dataset</th>
+      <th rowspan="2">Group</th>
+      <th rowspan="2">No. participants</th>
+      <th rowspan="2">Age</th>
+      <th colspan="4">Classical cycles</th>
+      <th colspan="4">Fractal cycles</th>
+      <th colspan="2">Fractal-classical cycles correlation</th>
+    </tr>
+    <tr>
+      <th>No. cycles</th>
+      <th>Duration, min</th>
+      <th>p</th>
+      <th>d</th>
+      <th>No. cycles</th>
+      <th>Duration, min</th>
+      <th>p</th>
+      <th>d</th>
+      <th>r</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">A</td>
+      <td>HC (Dataset 1)</td>
+      <td>38</td>
+      <td>46.8±10.7</td>
+      <td>171</td>
+      <td>86±23</td>
+      <td>---</td>
+      <td>---</td>
+      <td>167</td>
+      <td>84±35</td>
+      <td>---</td>
+      <td>---</td>
+      <td>0.33</td>
+      <td>0.042</td>
+    </tr>
+    <tr>
+      <td>long-termed med. MDD</td>
+      <td>40</td>
+      <td>50.1±8.6</td>
+      <td>141</td>
+      <td>109±55</td>
+      <td>10−6</td>
+      <td>0.6</td>
+      <td>143</td>
+      <td>97±43</td>
+      <td>0.001</td>
+      <td>0.3</td>
+      <td>0.51</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="5">B</td>
+      <td>HC (Dataset 2)</td>
+      <td>39</td>
+      <td>31.0±9.9</td>
+      <td>180</td>
+      <td>90±21</td>
+      <td>---</td>
+      <td>---</td>
+      <td>171</td>
+      <td>90±26</td>
+      <td>---</td>
+      <td>---</td>
+      <td>0.51</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>unmed. MDD</td>
+      <td>38</td>
+      <td>31.3±10.2</td>
+      <td>169</td>
+      <td>92±31</td>
+      <td>n.s.</td>
+      <td>---</td>
+      <td>155</td>
+      <td>92±38</td>
+      <td>n.s.</td>
+      <td>---</td>
+      <td>0.19</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>7d med. MDD</td>
+      <td>---</td>
+      <td>---</td>
+      <td>149</td>
+      <td>102±43</td>
+      <td>0.003</td>
+      <td>0.4</td>
+      <td>133</td>
+      <td>107±51</td>
+      <td>10−4</td>
+      <td>0.5</td>
+      <td>0.68</td>
+      <td>10−6</td>
+    </tr>
+    <tr>
+      <td>REM-non-suppressive</td>
+      <td>17</td>
+      <td>31.6±10.4</td>
+      <td>77</td>
+      <td>91±26</td>
+      <td>---</td>
+      <td>---</td>
+      <td>63</td>
+      <td>95±44</td>
+      <td>---</td>
+      <td>---</td>
+      <td>0.49</td>
+      <td>0.046</td>
+    </tr>
+    <tr>
+      <td>REM-suppressive</td>
+      <td>21</td>
+      <td>33.6±11.3</td>
+      <td>72</td>
+      <td>103±54</td>
+      <td>0.002*</td>
+      <td>0.5*</td>
+      <td>70</td>
+      <td>121±55</td>
+      <td>0.003*</td>
+      <td>0.5*</td>
+      <td>0.66</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">C</td>
+      <td>HC (Dataset 3)</td>
+      <td>32</td>
+      <td>45.3±15.9</td>
+      <td>146</td>
+      <td>89±23</td>
+      <td>---</td>
+      <td>---</td>
+      <td>154</td>
+      <td>88±32</td>
+      <td>---</td>
+      <td>---</td>
+      <td>0.57</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>7d med. MDD</td>
+      <td>33</td>
+      <td>46.2±16.2</td>
+      <td>121</td>
+      <td>114±45</td>
+      <td>10−7</td>
+      <td>0.7</td>
+      <td>122</td>
+      <td>107±48</td>
+      <td>10−4</td>
+      <td>0.5</td>
+      <td>0.47</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>28d med. MDD</td>
+      <td>---</td>
+      <td>---</td>
+      <td>117</td>
+      <td>111±51</td>
+      <td>10−5</td>
+      <td>0.6</td>
+      <td>100</td>
+      <td>106±51</td>
+      <td>0.001</td>
+      <td>0.4</td>
+      <td>0.42</td>
+      <td>0.018</td>
+    </tr>
+  </tbody>
+</table>
 
 Table 3 and Figure 3 show results calculated over frontal electrodes (or central ones for Dataset A). The topographical analysis over other areas is reported in Appendix 1—table 6.
 
@@ -149,11 +743,11 @@ To test our hypothesis that fractal cycles are more sensitive than classical cyc
 
 This study introduced the new concept of fractal activity-based cycles of sleep or ‘fractal cycles’ for short, which is based on temporal fluctuations of the fractal (aperiodic) slopes across a night. We showed that durations of these fractal cycles correlated with those of classical (non-REM – REM) sleep cycles defined by hypnograms in five independently collected datasets counting 205 healthy participants overall as well as in 111 medicated patients with MDD. Overnight cycle-to-cycle dynamics in healthy adults showed an inverted U-shape for both fractal and classical cycle durations. The fractal cycle algorithm was effective in detecting cycles with skipped REM sleep. The findings further revealed that children and adolescents showed shorter fractal cycles as compared to young healthy adults. In adults, fractal cycle durations negatively correlated with participants’ age. Medicated patients with MDD showed longer fractal cycles compared to their own unmedicated state and healthy controls. Below we discuss these findings in detail.
 
-## Fractal cycles: definition and motivation
+### Fractal cycles: definition and motivation
 
 We observed that the time series of fractal slopes have a cyclical nature, descending and ascending for about 4–6 times per night with a mean duration of approximately 90 min for each such (‘fractal’) cycle. This strikingly resembles the description of classical sleep cycles. Indeed, both the visual inspection and formal correlational analyses revealed that the timing and duration of the fractal and classical cycles mainly matched. This led us to propose that the ‘fractal cycles of sleep’ could serve as a new data-driven definition of sleep cycles, that is a means to appreciate quantitatively what has been previously observed only qualitatively using hypnograms. Notably, we do not claim that fractal cycles are a substitute for the study of the individual sleep stages or microstructural features of sleep. We want to stress, however, that currently, sleep research is shifted towards the study of, to use a metaphor, ‘the atoms’ of sleep, such as individual sleep stages, slow oscillations, spindles, microarousals etc. Yet it is possible that some important (currently unknown) features of sleep could be explored only at the level of sleep cycles, ‘the molecules of sleep’. (Note, that we use the molecule and atom concepts only as a metaphor for the macro- and microstructure of sleep.)
 
-## Hypothetical functional significance of aperiodic activity and fractal cycles
+### Hypothetical functional significance of aperiodic activity and fractal cycles
 
 The decision to incorporate fractal activity analysis in sleep cycle research was based on the reports that fractal (aperiodic) dynamics may reflect the bistability of the network (the overall tendency of alternating up and down states; Baranauskas et al., 2012) and/or alterations in the balance between neural excitatory and inhibitory currents (Gao et al., 2017). Circumstantial evidence suggests that fractal activity is a measure of sleep homeostasis or sleep intensity, reflecting sleep-wake history, sleep stage differences, sleep cycles, age-effects, local sleep and sleep disorders (Bódizs et al., 2024). Recently, it has been reported that during human sleep, spectral slopes positively correlate with pupil size, a marker of arousal levels linked to the activity of the locus coeruleus-noradrenergic system (Carro-Domínguez et al., 2023).
 
@@ -163,7 +757,133 @@ Given that the specific neurochemical milieu of the brain produces a specific ty
 
 In view of this literature, we speculate that fractal fluctuations may reflect two antagonistic roles of sleep (Simor et al., 2022). Specifically, fractal cycle troughs might cohere with sensory disconnection that facilitates restorative properties of sleep while fractal cycle peaks reflect monitoring of the environment that transiently restores alertness (Table 4).
 
-## Fractal and classical cycles comparison (Table 5)
+**Table 4.**
+ Hypothetical functional significance of fractal cycles.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Theory/model</th>
+      <th>Reference</th>
+      <th>Hypothetical integration of the fractal cycle concept to the existing model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Two antagonistic roles of sleep:sensory disconnection that facilitates restorative properties of sleep;monitoring of the environment that transiently restores alertness.</td>
+      <td>Simor et al., 2022</td>
+      <td>troughs of fractal cycles reflect (1);peaks of fractal cycles reflect (2).</td>
+    </tr>
+    <tr>
+      <td>Reactive and predictive homeostatic functions of sleep:intensive restorative processes during early-night sleep;active future-oriented processes during late-night sleep.</td>
+      <td>Simor et al., 2023</td>
+      <td>deeper fractal cycles observed during early-night sleep reflect (1);shallower fractal cycles seen during late-night sleep reflect (2).</td>
+    </tr>
+    <tr>
+      <td>Reciprocal-interaction model of sleep cycles:- alternations between non-REM and REM sleep stages are explained by the interaction between aminergic and cholinergic neurons of the mesopontine junction.</td>
+      <td>Pace-Schott and Hobson, 2002</td>
+      <td>ascents and peaks of fractal cycles reflect acetylcholine release*;descents and troughs of fractal cycles coincide with aminergic activity.</td>
+    </tr>
+    <tr>
+      <td>Noradrenergic neurons create a non‐reducible timeframe for the NREM‐REM sleep cycle where low noradrenaline levels allow entries into REM sleep.</td>
+      <td>Osorio-Forero et al., 2023.</td>
+      <td>Ascents and peaks of fractal cycles reflect a cease of noradrenaline release.</td>
+    </tr>
+    <tr>
+      <td>The Neuronal Transition Probability Model:During a move towards deep sleep beta power drops exponentially, delta power rises in an S-curve and sigma power peaks while delta is still rising;During a move away from deep sleep, delta drops, beta rises.</td>
+      <td>Merica and Fortune, 2011</td>
+      <td>descending part of the fractal cycle corresponds to (1);ascending part of the fractal cycle corresponds to (2).</td>
+    </tr>
+  </tbody>
+</table>
+
+_*this hypothesis is also based on the report that in rats, cholinergic nucleus basalis stimulation caused flattering of spectral decay (Goard and Dan, 2009)._
+
+### Fractal and classical cycles comparison (Table 5)
+
+**Table 5.**
+ Fractal and classical cycle comparison.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Fractal cycles by our algorithm</th>
+      <th colspan="2">Classical cycles by hypnograms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Definition/detection</td>
+    </tr>
+    <tr>
+      <td colspan="2">Based on a real-valued metric with known neurophysiological functional significance</td>
+      <td colspan="2">Based on categorical values of the cycle constituents (e.g. wake = 0, REM = –1, N1 = –2, N2 = –3 and SWS = –4)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Gradual changes</td>
+      <td colspan="2">Abrupt changes</td>
+    </tr>
+    <tr>
+      <td colspan="2">Automatic computation, objective</td>
+      <td colspan="2">Usually based on the visual inspection, time-consuming, subjective, error-prone</td>
+    </tr>
+    <tr>
+      <td colspan="4">Findings</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cycles with skipped REM sleep detected in 91–98% of cases</td>
+      <td colspan="2">Inter-rater agreement of 91% on the presence of cycles with skipped REM sleep</td>
+    </tr>
+    <tr>
+      <td colspan="2">Fractal cycle durations negatively correlated with the age of adult participants</td>
+      <td colspan="2">Classical cycle durations did not correlate with the age of adult participants</td>
+    </tr>
+    <tr>
+      <td colspan="2">Shorter fractal cycle durations in children vs adults: higher F-values, R², effect sizes than for classical cycles</td>
+      <td colspan="2">Shorter classical cycle durations in children vs adults: lower F-values, R², effect sizes than for fractal cycles</td>
+    </tr>
+    <tr>
+      <td colspan="2">Shorter first and second fractal cycles in the pediatric group</td>
+      <td colspan="2">No difference in durations of the first and second classical cycles in pediatric vs adult groups</td>
+    </tr>
+    <tr>
+      <td colspan="2">No difference in duration of the fourth fractal cycles in the pediatric group</td>
+      <td colspan="2">Shorter duration of the fourth classical cycle in the pediatric group</td>
+    </tr>
+    <tr>
+      <td colspan="2">Longer fractal cycle duration in medicated patients with depression: comparable differences with those on classical cycles</td>
+      <td colspan="2">Longer classical cycle duration in medicated patients with depression: comparable differences with those on fractal cycles</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sources of mismatches between fractal and classical cycles</td>
+    </tr>
+    <tr>
+      <td>Source</td>
+      <td colspan="2">Finding</td>
+      <td>Reason</td>
+    </tr>
+    <tr>
+      <td>Across night variation in REM sleep episode duration: longer REM episodes towards morning</td>
+      <td colspan="2">Longer REM episodes are associated with a higher mismatch between fractal vs classical cycles</td>
+      <td>The end of a fractal cycle is defined as the local maximum of time series of fractal slopes, whereas the end of a classical cycle is defined as the end of the REM episodes</td>
+    </tr>
+    <tr>
+      <td>Across subject variation in WASO: a higher WASO proportion in older participants</td>
+      <td colspan="2">A higher WASO proportion is associated with a higher mismatch between fractal vs classical cycles</td>
+      <td>REM- and wake-related smoothed fractal slopes show close values, therefore, both could be defined as local peaks. More fractal peaks imply more fractal cycles</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_REM – rapid eye movement, SWS – slow-wave sleep, WASO – wake after sleep onset._
 
 In this study, in healthy adults, 81% of all fractal cycles defined by our algorithm could be matched to individual classical cycles defined by hypnograms. Correlations between the durations of fractal and classical cycles were observed not only in healthy adults but also in MDD patients who took antidepressants. The results show that displaying sleep data using fractal activity as a function of time meaningfully adds to the conventionally used hypnograms thanks to the gradual and objective quality of fractal power.
 
@@ -179,13 +899,13 @@ The mismatches between fractal and classical cycle numbers and durations (observ
 
 In summary, we expect that fractal cycles could bring insights into (yet) unexplained phenomena thanks to their gradual and objective quality, and, therefore, have the potential to induce a paradigm shift in basic and clinical (see below) sleep research.
 
-## Fractal slopes and SWA: overnight dynamics
+### Fractal slopes and SWA: overnight dynamics
 
 Of note, currently, the gold standard marker of many sleep functions (e.g. restorative, regenerative) with a long-standing use is slow-wave activity (SWA), which, similar to fractal slopes, is also continuous and objective. SWA, however, has several disadvantages, such as large variability between individuals, which makes it impossible to set up a given reference point for healthy sleep (Horváth et al., 2022). Interindividual variability of spectral slopes is much smaller compared to SWA, making it a less individual-specific metric, yet spectral slopes strongly correlate with SWA (31–53% of shared variance throughout the non-REM periods; Horváth et al., 2022; Bódizs et al., 2024). In addition, both the literature and our findings show that while SWA has a cycling nature during the first part of the night, neural dynamics of late-night’s sleep are not reflected by SWA at all (Figure 4—figure supplement 9). Given that SWA is a primary marker of sleep homeostasis, this pattern possibly reflects the dissipation of a sleep need over the night (Bódizs et al., 2024). In contrast, fractal slopes show a cycling nature over the entire night’s sleep (Figure 1A, B), suggesting that they are a more suitable means to reflect the macrostructure of the whole night’s sleep than SWA.
 
 Having said this, we should highlight that characteristics of fractal cycles of sleep do undergo some overnight changes. Thus, the durations of both fractal and classical cycles in health show an inverted U-shape across a night and the amplitudes of fractal descents and ascents are larger during early-night- compared to late-night cycles (Figure 1D). This is in line with the report on the flattening of fractal activity from early to late sleep cycles (Horváth et al., 2022). If seen in the context of the reactive and predictive homeostatic functions of sleep (Simor et al., 2023), deeper fractal cycles observed during early-night sleep could reflect intensive restorative processes (which are also reflected by SWA), whereas shallower fractal cycles seen during the later part of night’s sleep could reflect more active future-oriented processes (which are not reflected by SWA) with a shift towards neural excitation relative to inhibition expressed as overall flatter fractal activity (Table 4).
 
-## Fractal cycles and age
+### Fractal cycles and age
 
 We found that older healthy participants had shorter fractal cycles compared to the younger ones while classical cycles did not correlate with the participants’ age. At first glance, it looked as if this association simply reflected an increased proportion of the wake after the sleep onset often seen in older adults (Figure 1—figure supplement 4B). Indeed, our algorithm does not discriminate between the smoothened wake- and REM-related fractal slopes and can define both as local peaks (Figure 1A, B). This happens because for the most part, wake- and REM sleep-related smoothed fractal slopes display comparable values, which are also the highest ones compared to other stages (Figure 4—figure supplement 4, green squares). Since the fractal cycle duration is defined as an interval of time between two adjacent peaks, more awakenings during sleep are expected to result in more peaks and, consequently, more fractal cycles per total sleep time, that is a shorter cycle duration. It is worth mentioning that unsmoothed wake- and REM-related slopes differ Schneider et al., 2022 and Figure 4—figure supplement 4 here (black squares). However, this is a side notion as raw values were not used in this study since our algorithm performed poorly on raw time series.
 
@@ -195,13 +915,13 @@ Another plausible explanation for longer fractal cycles in younger compared to o
 
 To further strengthen this line of explanations, we performed a supplemental analysis, which showed that prolonged REM latencies are indeed associated with longer fractal cycles (Figure 1—figure supplement 4C). Nevertheless, the correlation was weak (yet significant) and observed in the pooled dataset only, that is not while analyzing individual datasets. Likewise, the partial correlation between the fractal cycle duration and REM latency adjusted for the participants’ age was non-significant. Moreover, we found that children and adolescents (the group that has the longest REM latencies and the highest rate of cycles with skipped REM sleep) showed shorter fractal cycles compared to young adults, specifically the early-night fractal cycles. In view of these analyses, our attempt to explain longer fractal cycles in younger compared to older adults by increased REM sleep latency becomes less convincing. Moreover, given that our algorithm does not miss cycles with skipped REM sleep, longer REM sleep latencies should not necessarily be related to longer cycles. To summarize, at this stage, the mechanism underlying age-related differences in fractal cycle duration is unclear (possibly with some non-linearities) and future studies are needed to corroborate and further explore it.
 
-## Fractal cycles in MDD
+### Fractal cycles in MDD
 
 In addition, our study shows that deviations from the observed fractal patterns have some clinical relevance. We found that MDD patients in the medicated state had longer fractal cycles compared to their own unmedicated state and healthy controls. The largest differences were observed for the first sleep cycles. Moreover, patients who took REM-suppressive antidepressants showed prolonged fractal cycles compared to patients who took REM-non-suppressive antidepressants. Given that the fractal cycle duration was defined as an interval of time between two adjacent peaks and that the peaks usually coincide with REM sleep (Figure 1A), this finding may reflect such aftereffects of antidepressants as delayed onset and reduced amount of REM sleep (Palagini et al., 2013). In other words, if a patient has fewer REM sleep episodes, then the time series of their fractal slopes has fewer peaks and the algorithm detects fewer cycles per total sleep time, that is cycle’s duration is longer (Figure 3A).
 
 Another explanation considers our previous finding that medicated MDD patients show flatter average fractal slopes compared to controls and their own unmedicated state during all sleep stages (Rosenblum et al., 2023a). This might mean that the antidepressant intake results in shallower fractal fluctuations, which in turn implies that fewer peaks could be detected by our algorithm as the peak threshold was defined a priori in a healthy – not MDD – sample. Interestingly, recently, flatter fractal slopes during REM sleep have been also associated with sustained polyphasic sleep restriction in health (Rosenblum et al., 2024b), whereas flatter fractal slopes during non-REM sleep were observed in patients with objective insomnia and sleep state misperception, reflecting an abnormally high level of excitation in line with the hyperarousal model of insomnia (Andrillon et al., 2020). Our pilot findings have shown that patient with psychophysiological insomnia have shorter fractal cycles compared to controls (Figure 3—figure supplement 2).
 
-## Limitations and strengths
+### Limitations and strengths
 
 The major limitation of this study is its correlational approach, and thus an inability to shed light on the mechanism underlying sleep cycle generation. Therefore, the question of what determines the number and duration of cycles per night remains open. Moreover, further work is needed to determine the mathematically precise and physiologically meaningful model of fractal cycles. Notably, here, we suggest that fractal cycles are a new tool to study the macrostructure of sleep; however, they are presumably not a substitute for the study of the individual sleep stages and microstructural features of sleep (e.g. microarousals, spindles, slow waves).
 
@@ -211,47 +931,175 @@ The strengths of this study are its large sample size, scripts and data sharing 
 
 To summarize, the large sample and self-replication performed in this study suggest that the ‘fractal cycle’ is a universal concept that should be extensively studied. Displaying the data in the format of fractal cycles provides an intuitive and biologically plausible way to present whole-night sleep neural activity and also adds some graduality to the purely categorical concept of sleep stages that comprise a hypnogram. In future studies, this graduality might help to illuminate differences in sleep architecture across different species, advance our understanding of the role of sleep in neurocognitive development in infants and adolescents as well as in neurodegenerative processes and other fields of neuroscience.
 
-## Conclusion
+### Conclusion
 
 We observed that the slopes of the fractal (aperiodic) spectral power descend and ascend cyclically across a night such that the peaks of the time series of the fractal slopes coincide with REM sleep or sleep lightening while the troughs of these time series coincide with non-REM sleep. Based on this observation, we introduced a new concept of fractal activity-based cycles of sleep or ‘fractal cycles’ for short, defining it as a time interval between two adjacent local peaks of the fractal time series. We have shown that fractal cycles defined by our algorithm largely coincide with classical (non-REM – REM) sleep cycles defined by a hypnogram and replicated our findings in several independently collected healthy and clinical datasets. Moreover, we found that the fractal cycle algorithm reliably detected cycles with skipped REM sleep. In addition, we observed that fractal cycle duration changes as a non-linear function of age, being shorter in children and adolescents compared to young adults as well as in older compared to younger adults. To this end, we conclude that the fractal cycle is an objective, quantifiable and universal concept that could be used to define sleep cycles and display the whole-night sleep neural activity in a more intuitive and biologically plausible way as compared to the conventionally used hypnograms. Having shown that the fractal cycles are prolonged in medicated patients with MDD, we suggest that fractal cycles are a useful tool to study the effects of antidepressants on sleep. Possibly, fractal cycles also will be able to serve as a means to explore sleep architecture alterations in different clinical populations (e.g. to detect REM sleep without atonia) and during neurocognitive development. In summary, this study shows that the fractal cycles of sleep are a promising research tool relevant in health and disease that should be extensively studied.
 
 ## Materials and methods
 
-## Healthy participants
+### Healthy participants
 
 We retrospectively analyzed polysomnographic recordings from the following studies (Table 6):
 
-## Datasets 1–3
+#### Datasets 1–3
 
 40, 40, and 33 healthy controls from three independent sleep studies in MDD conducted at the Max Planck Institute of Psychiatry, Germany. These datasets are described in Rosenblum et al., 2023a and Bovy et al., 2022. In addition, these participants are used as controls in MDD datasets A – C described below.
 
-## Dataset 4
+**Table 6.**
+ Datasets description.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Dataset 1(A)</th>
+      <th>Dataset 2(B)</th>
+      <th>Dataset 3(C)</th>
+      <th>Dataset 4</th>
+      <th>Dataset 5</th>
+      <th>Dataset 6(pediatric)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reference to original study</td>
+      <td colspan="3">Rosenblum et al., 2023a</td>
+      <td>Jafarzadeh Esfahani et al., 2023</td>
+      <td>Rosenblum et al., 2024a</td>
+      <td>Furrer et al., 2019; Volk et al., 2019; Jaramillo et al., 2020</td>
+    </tr>
+    <tr>
+      <td>No. healthy participants(-excluded)</td>
+      <td>40 (-2)</td>
+      <td>40 (-1)</td>
+      <td>33 (-1)</td>
+      <td>36 (-2)</td>
+      <td>68 (-6)</td>
+      <td>21 (0)</td>
+    </tr>
+    <tr>
+      <td>Exclusion reasons</td>
+      <td>&gt;25% WASO&lt;150 min recording</td>
+      <td>&lt;150 min recording</td>
+      <td>&gt;25% WASO</td>
+      <td>&gt;25% WASONo REM</td>
+      <td>&gt;25% WASONo REM</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>No. MDD patients (none excluded)</td>
+      <td>40</td>
+      <td>38</td>
+      <td>33</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Study environment</td>
+      <td>Sleep lab +a memory task before*</td>
+      <td>Sleep lab +memory tasks before*,†</td>
+      <td>Sleep lab</td>
+      <td>Sleep at home with EEG and headband</td>
+      <td>Sleep lab +simultaneous blood measurement ‡</td>
+      <td>Sleep lab +MRI before and after sleep §</td>
+    </tr>
+    <tr>
+      <td>Device</td>
+      <td>Comlab 32 Digital Sleep Lab, Brainlab V 3.3 Software, Schwarzer, GmbH, Munich, Germany</td>
+      <td>JE-209A amplifier (Nihon Kohden, Tokyo, Japan), with 128ch BrainCap (EasyCap GmbH, Herrsching, Germany)</td>
+      <td>Comlab 32 Digital Sleep Lab, Brainlab V 3.3 Software, Schwarzer GmbH, Munich, Germany</td>
+      <td>Somnomedics GmbH, Randersacker, Germany</td>
+      <td>Comlab 32 Digital Sleep Lab, Brainlab V 3.3 Software, Schwarzer GmbH, Munich, Germany</td>
+      <td>Sensor Net for long-term monitoring (Electrical Geodesic Inc, EGI, Eugene, OR, USA)</td>
+    </tr>
+    <tr>
+      <td>No. channels</td>
+      <td>4</td>
+      <td>128</td>
+      <td>32</td>
+      <td>24</td>
+      <td>16</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>(Offline re)-referenced to</td>
+      <td>Contralateral mastoid</td>
+      <td>Average of all leads</td>
+      <td>Average of all leads</td>
+      <td>Contralateral mastoid</td>
+      <td>Contralateral mastoid</td>
+      <td>Contralateral mastoid</td>
+    </tr>
+    <tr>
+      <td>Sample rate, Hz</td>
+      <td>250</td>
+      <td>200</td>
+      <td>250</td>
+      <td>256</td>
+      <td>250</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>Filtering during recording, Hz</td>
+      <td>0.3–70</td>
+      <td>&gt;0.016</td>
+      <td>0.53–70</td>
+      <td>0.2–35</td>
+      <td>0.3–70</td>
+      <td>0.01–200</td>
+    </tr>
+    <tr>
+      <td>Available frontal electrodes</td>
+      <td>none</td>
+      <td>Fz, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10</td>
+      <td>Fz, F3, F4, F7, F8</td>
+      <td>F3, F4</td>
+      <td>F3, F4</td>
+      <td>F3, F4</td>
+    </tr>
+    <tr>
+      <td>Analyzed electrodes</td>
+      <td>C3, C4</td>
+      <td>F3, F4</td>
+      <td>F3, F4</td>
+      <td>F3, F4</td>
+      <td>F3, F4</td>
+      <td>F3, F4</td>
+    </tr>
+  </tbody>
+</table>
+
+_WASO – wake after sleep onset, REM – rapid eye movement sleep, MDD – major depressive disorder.*a procedural memory paradigm (finger tapping task) before sleep.†a declarative memory paradigm (word-pair learning task) before sleep.‡in this study, 4 ml blood were drawn every 20 min from the adjacent room, using an intravenous cannula and a tube extension.§an MRI scan was taken in the evening before and in the morning after the sleep measurement._
+
+#### Dataset 4
 
 36 healthy participants from a home-based sleep study exploring simultaneous polysomnographic and EEG wearables conducted at the Donders Institute for Brain, Cognition and Behavior, the Netherlands (Described as Dataset 2 in Jafarzadeh Esfahani et al., 2023). The signal was recorded at participants’ homes over three nights with a gap of a week between each recording. For consistency with other datasets (i.e. to end up with a comparable number of cycles provided by each participant), we used polysomnography (and not EEG recorded by wearables) from the first night only since it had the largest sample size (i.e. 5 subjects dropped out from the study after the first polysomnographic recording).
 
-## Dataset 5
+#### Dataset 5
 
 68 healthy controls from previous endocrinological studies conducted at the Max Planck Institute of Psychiatry, Germany, using only nights with no pharmacological or endocrine intervention. 60/68 participants are described in Rosenblum et al., 2024a.
 
-## Dataset 6
+#### Dataset 6
 
 21 healthy children and adolescents from previous studies (Furrer et al., 2019; Volk et al., 2019; Jaramillo et al., 2020) conducted at the University Children’s Hospital Zürich, Switzerland. For the control group to this dataset, we selected all healthy adults from Datasets 1–3, 5, 6 (n=205) whose ages lay in the range of 23–25 years (the age when the brain maturation process is supposed to be finished Giedd and Rapoport, 2010 and no age-related processes are expected to start). This resulted in 24 subjects with a mean age of 24.8±0.9 years.
 
 The studies were approved by the Ethics committee of the University of Munich (Datasets 1–3, 5), Radboud University (Dataset 4) and Canton of Zürich (Dataset 6). All participants (or participants’ parents for Dataset 6) gave written informed consent.
 
-## Patients with MDD
+### Patients with MDD
 
 We retrospectively analyzed polysomnographic recordings from our previous studies (Bovy et al., 2022; Rosenblum et al., 2023a, Table 1, Table 2):
 
-## Dataset A
+#### Dataset A
 
 40 long-term medicated MDD patients vs 40 age- and gender-matched healthy controls (Dataset 1 here).
 
-## Dataset B
+#### Dataset B
 
 38 MDD patients in unmedicated and 7-day medicated states vs 40 healthy age and gender-matched controls (Dataset 2 here).
 
-## Dataset C
+#### Dataset C
 
 33 MDD patients at 7 day and 28 day of medication treatment vs 33 healthy age and gender-matched controls (Dataset 3 here).
 
@@ -261,7 +1109,7 @@ The first part of this study analyzes the data from healthy participants only an
 
 In Appendix, we report how many participants and for what reasons were excluded from the analysis. An example of one excluded participant is given in Figure 1—figure supplement 3 C (S37). Likewise, we report pilot findings on fractal cycles in patients with psychophysiological insomnia, using the open access dataset from Rezaei et al., 2017 (Figure 3—figure supplement 2).
 
-## Polysomnography
+### Polysomnography
 
 Information about the studies and polysomnographic devices is reported in Table 6. The participants slept wearing a polysomnographic device in a sleep laboratory (Datasets 1–3, 5, 6) or in the home environment (Dataset 4). In datasets 1–3 and 5, all participants had an adaptation night before the examination night; adaptation night data was not available to be analyzed and reported here. In dataset 6, all participants had two recording nights: a baseline and an examination night with auditory stimulation. Here, only the baseline night was analyzed, which was either the first night (in 50% of cases) or the second night for a given participant.
 
@@ -269,9 +1117,49 @@ Sleep stages were previously scored manually by independent experts according to
 
 We opted to analyze the F3 and F4 electrodes for maximal consistency between the studies as these leads were available in 6 out of 7 datasets. Another reason is that in our future studies, we plan to replicate this work using the data recorded with at-home wearable devices, which often have only frontal channels (e.g. F7 and F8). We report the topographical analysis over central, parietal and occipital electrodes (when available) in healthy and clinical datasets in Appendix 1—table 1; Appendix 1—table 6 respectively, showing comparable results. In Appendix 1—table 1, we also report correlations between fractal cycle durations defined using different channels.
 
-## Fractal power component
+### Fractal power component
 
 The analysis flowchart is depicted in Figure 4—figure supplement 1. Outputs of some of the analysis steps in an example individual are shown in Figure 4.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-v1.jpg)
+
+**Figure 4.:** Outputs of some of the analysis steps in an example healthy 26-year-old individual. From top to bottom: time-frequency representation of the total spectral power, raw and smoothed time series of the fractal slopes and hypnogram. Frontal spectral power and its slopes were calculated in the 0.3–30 Hz range for each 30 s of sleep.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** IRASA – Irregularly Resampled Auto-Spectral Analysis, sgolayfilt – Savitzky-Golay filter.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Fractal (aperiodic) power components averaged over each sleep stage separately over all participants of a given dataset are plotted as a function of frequency in the log-log space. Shading indicates standard errors. Slow-wave (green) and REM (red) sleep stages show the steepest and the flattest spectral decay, respectively in all datasets. For comparison, wake after sleep onset (blue) with the flattest decay in the higher frequency band is also shown.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** N – non-REM sleep, N3 – slow-wave sleep, REM – rapid eye movement sleep. Of note, in this study, we did not average spectral power/its slope over sleep stages; these graphs are shown to put our study in a broader context of the studies that looked at spectral power averaged over sleep stages for visualization only.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** The slopes of the frontal fractal spectral power components in the 0.3–30 Hz range are averaged over each sleep stage as defined by the hypnogram and z-normalized (black squares). For the analysis of the fractal cycles reported in the main text, fractal slopes were smoothened using the Savitzky-Golay filter (green squares). N3 is characterized by the steepest (most negative slopes) spectral decay compared to all other sleep stages in line with the existing literature.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** The slopes of the aperiodic (fractal) spectral power component in the 30–48 Hz range are averaged over each sleep stage as defined by the hypnogram and z-normalized (black squares). Green squares show fractal slopes smoothened with the Savitzky-Golay filter. According to literature, REM sleep is expected to show the steepest (most negative) high-band slopes compared to all other sleep stages. However, we were able to replicate this finding in Datasets 1 and 5 only. Given poor differentiation between the stages in 2/4 datasets, this variable was not used in any analyses. Note: During recording, Dataset 4 was filtered in the 0.2–35 Hz range and therefore, it was excluded from this subanalysis.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** Given that raw slope values contain valuable information per se (Bódizs et al., 2024), we also report raw slope values (before z-scoring). Note: Dataset 4 was filtered in the 0.3–18 Hz range due to low-pass filtering during the recording.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** Red horizontal lines indicate approximate 95% probability limits for a purely random process. Correlation coefficients were calculated separately for each participant and then averaged over the pooled dataset (n=205).
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp8-v1.jpg)
+
+**Figure 4—figure supplement 8.:** Cross-correlations between the time series of fractal slopes on the one side and the proportion of non-REM (top) or REM sleep (bottom) per 5 min on the other side. Cross-correlations were calculated for each participant individually, then correlation coefficients were averaged over all healthy adults (n=205). Negative and positive lags mean that fractal slope time series are leading and lagging, respectively. Here, the shape of the cross-correlation function does not allow one to decide which time series is leading and which one is lagging here. The horizontal red lines mark the CI of 95%, the absolute values above these lines indicate statistical significance (r > |0.22|). REM – rapid eye movement sleep, CI – confidence interval.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/96784/elife-96784-fig4-figsupp9-v1.jpg)
+
+**Figure 4—figure supplement 9.:** Time series of smoothed z-normalized fractal slopes (top) and SWA/delta (1–4 Hz) oscillatory power (bottom) observed in three healthy adults (from Dataset 3). SWS – slow-wave sleep, SWA – slow-wave activity, REM – rapid eye movement sleep.
 
 Offline EEG data analyses were carried out with MATLAB (version R2021b, The MathWorks, Inc, Natick, MA), using the Fieldtrip toolbox and custom-made scripts. For each participant, we averaged the EEG signal over the F3 and F4 electrodes (or C3 and C4 – for Dataset 1 where the frontal channels were unavailable), calculated its spectral power for every 30 (adult datasets) or 20 (the pediatric dataset) seconds corresponding to the conventionally defined duration of sleep epochs and differentiated the total power to its fractal (i.e. aperiodic, 1 /f, scale-free) and oscillatory components. Several methods to calculate fractal components exist. We opted to use the Irregularly Resampled Auto-Spectral Analysis (IRASA; Wen and Liu, 2016) tool embedded in the Fieldtrip toolbox (Oostenveld et al., 2011), one of the leading open-source EEG softwares, with the ft_freqanalysis function as described elsewhere (Rosenblum et al., 2023b). A side note: slopes calculated with the IRASA strongly correlate (r = |0.9|) with those calculated using the ‘fitting oscillations and one over f’ (FOOOF, Schneider et al., 2022), another useful method used for aperiodic analysis (Donoghue et al., 2020). The fractal power component (shown in Figure 4—figure supplement 2) was transformed to log-log coordinates and its slope was calculated to estimate the power-law exponent (the rate of spectral decay), using the function logfit (Lansey, 2020). The loglog data fit is shown in Figure 4—figure supplement 3.
 
@@ -281,7 +1169,7 @@ Here, we used the 0.3–30 Hz range as this is a typical sleep frequency band us
 
 Finally, Figure 4—figure supplement 5 shows aperiodic slopes in the 30–48 Hz band averaged over sleep stages for Datasets 1–3 and 5. According to literature, REM sleep is expected to show the steepest (most negative) high-band slopes compared to all other sleep stages. However, we were able to replicate this finding in Datasets 1 and 5 only. Given poor differentiation between the stages in 2/4 datasets, this variable was not used in any further analyses.
 
-## Fractal activity-based cycles of sleep
+### Fractal activity-based cycles of sleep
 
 Fractal activity-based cycles of sleep or ‘fractal cycles’ for short were defined from fractal slope time series. For this, time series of the fractal slopes were z-normalized (raw values can be seen in Figure 4—figure supplement 6) within a participant and smoothened with the Savitzky-Golay filter (Figure 4), the filter highly used in many fields of data processing. We used the Matlab’s function sgolayfilt(slope_time_series, order, frame_length) with the polynomial order of five and the frame length of 101. The peaks of the smoothed time series of the fractal slopes were defined with Matlab’s function findpeaks (slope_time_series, 'MinPeakDistance', 40, 'MinPeakProminence', 0.9) with the minimum peak distance of 20 min (i.e. forty 30 s epochs) and minimum peak prominence of |0.9| z (Figure 4). The amplitude of the descending and ascending phases of a cycle was defined to be > |0.9| z, meaning that there is a probability of P=0.8 that a given fractal slope lies below/above the standard normal distribution.
 
@@ -289,7 +1177,7 @@ Of note, we had no solid a priori theoretical indication for choosing either of 
 
 In Appendix 1—table 7, we compare results obtained while using different thresholds of the abovementioned parameters; namely, longer and shorter smoothing windows and higher and lower minimum peak prominence.
 
-## Classical sleep cycles
+### Classical sleep cycles
 
 Classical sleep cycles were defined manually via the visual inspection of the hypnograms by two independent scorers according to the criteria originally proposed by Feinberg and Floyd, 1979 with some adaptations as follows. A cycle typically starts with N1, N2 or sometimes wake and is followed by N2 or N2 and slow-wave sleep (SWS) >20 min in duration, which can include wake. The cycle ends with the end of the REM period, which can include wake or short segments of non-REM sleep. No minimum REM duration criterion was applied (Tarokh et al., 2012). In some cases (described below), the cycle end was defined at a non-REM sleep stage or wake. Two examples of hypnograms with marked classical sleep cycles are shown in Figure 1A – B. Four more examples are presented in Figure 1—figure supplement 1.
 
@@ -297,13 +1185,13 @@ The last incomplete (not terminated by the REM sleep phase) cycle at the end of 
 
 In Supplementary Excel File shared on https://osf.io/gxzyd, we report classical cycle durations for each participant as scored by two human raters and the automatic algorithm (Blume and Cajochen, 2021). In Appendix 1—table 8, we report the inter-rater agreement in number and durations of classical cycles.
 
-## Skipped cycles
+### Skipped cycles
 
 Given the absence of strict and broadly accepted rules for cycles with skipped REM sleep definition in literature, here, we tagged a cycle as ‘skipped’ based on the visual inspection of the hypnogram combined with the criteria proposed by Jenni and Carskadon, 2004 and Tarokh et al., 2012. Specifically, we subdivided a long cycle >110 min into two when: (1) there was a ‘lightening of sleep’ (i.e. the presence of wake, N1 and N2) in the middle of the long cycle, when a REM sleep episode was anticipated, (2) a continuous episode of N1, N2, wake or movement time lasting at least 12 min was preceded and followed by slow-wave sleep Jenni and Carskadon, 2004; (3) two clear episodes of slow-wave sleep were separated by lighter non-REM stages (which might include wake; Campbell et al., 2011; Tarokh et al., 2012). Long cycles containing skipped cycles were divided into cycles at time of sleep lightening. Examples of hypnograms with skipped sleep are shown in Figure 1—figure supplement 3. For each dataset, we checked whether the classical cycles with skipped REM sleep had been detected by the fractal cycle algorithm.
 
 In Supplementary Excel File shared on https://osf.io/gxzyd, we report which classical cycles were tagged as ‘skipped’ by two human raters. In Appendix, we report the inter-rater agreement in number of cycles with skipped REM sleep (Appendix 1—table 9). In Supplementary PowerPoint File shared on https://osf.io/gxzyd, hypnograms of all healthy adult participants are presented next to fractal cycles with skipped cycles marked individually as assessed by rater 1.
 
-## Statistical analysis
+### Statistical analysis
 
 The assumption that durations of the fractal and classical cycles come from a standard normal distribution was tested using the one-sample Kolmogorov-Smirnov test. The result suggested that this assumption should be rejected (p<0.05); therefore, non-parametric tests were used for all further analyses.
 

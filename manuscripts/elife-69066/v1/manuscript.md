@@ -26,7 +26,7 @@ Traditionally, evolution of the primary axis has been studied from genomic and m
 
 Upon consideration of such systems from various species, including Nematostella, Xenopus, zebrafish, mouse and human, it transpires that isolated ensembles from embryonic stem cells (ESCs) and ESC-like populations (ESC-LPs, box definitions) universally harbor the capacity to self-organize (box definitions) into a rudimentary body plan with at least a primary axis. Notably, this may occur via developmental trajectories alternative to those in the respective native embryo. We hence argue that these observations could point toward a deeper, evolutionarily conserved developmental mode (box definitions) which cells exhibit as they are released from their species-specific geometrical arrangements and mechanochemical signaling environments (Newman and Bhat, 2008; Newman, 2016). Altogether, in this perspective, we outline metazoan body axes and conserved initial patterning genes, followed by a brief review and comparison of mostly recent embryo-like systems in an evolutionary context. Lastly, we speculate on the underlying mechanisms which may have led to the observed diversity in early embryo morphology and on shared, fundamental principles of initial body plan establishment across the animal kingdom.
 
-## Animal body axes
+### Animal body axes
 
 Animals display a variety of body plans consisting of one or more anatomical axes that delineate body polarity and characterize the degree of symmetry in the arrangement of body parts around the axes. Notably, while the initial axis of the pre-gastrulating embryo is often labeled as animal-vegetal, based on the polarity of the oocyte, this may not necessarily correspond to the alignment of the body axes that generally emerge concomitantly with gastrulation or germ layer specification (Valentine, 2004; Willmore, 2012).
 
@@ -48,7 +48,7 @@ While generally associated with mesoderm formation in bilaterians, depending on 
 
 Intriguingly, the emergence of animal multicellularity has been linked to Wnt signaling due to its implication as a facilitator of symmetry breaking (Loh et al., 2016) (box definitions) and having not been identified in unicellular eukaryotes, plants, or fungi (Holstein, 2012). Whereas in several studied species Bra/T has been found to act immediately downstream of the Wnt and the TGF-β pathways (Arnold et al., 2000; Vonica and Gumbiner, 2002; Turner et al., 2014; Latinkić et al., 1997; Pauklin and Vallier, 2015), T-box transcription factors themselves predate multicellularity, as they are present in genomes of several unicellular opisthokonts, including several fungi taxa as well as ichthyosporeans and filastereans (Sebé-Pedrós et al., 2013; Sebé-Pedrós and Ruiz-Trillo, 2017; Richter et al., 2018).
 
-## Evolution of body plans in vivo and the significance of systems from ESCs and ESC-LPs
+### Evolution of body plans in vivo and the significance of systems from ESCs and ESC-LPs
 
 Despite the evolutionarily conserved role of Wnt and Bra/T in patterning of the primary body axis, the diversity of shape, size, dynamics of tissue rearrangements and the environmental niches across embryos of different species (Leptin, 2005; Solnica-Krezel and Sepich, 2012) points toward a vast space of functional developmental trajectories accessible to early embryonic cells. Furthermore, both within and between phyla there is evident topology shuffling within key developmental gene networks, especially in terms of co-option of novel or external genes into these regulatory modules, thereby creating novel developmental mechanisms via the cell-to-tissue-level morphogenetic processes they influence (Chen et al., 2013).
 
@@ -64,7 +64,7 @@ Historically and perhaps conceptually, they are preceded by SC embryonic explant
 
 In what follows, we will list mostly recent examples from both diploblasts and triploblasts and discuss selected ones as to how far these can provide clues for elucidating universal principles of animal body axis specification. While we aim to present an evolutionary perspective with as much phylum coverage as possible, it has to be noted that relevant data on non-mammalian systems is rare and limited to re-aggregation approaches.
 
-## Re-aggregation studies in cnidarians
+### Re-aggregation studies in cnidarians
 
 In the cnidarian model organism Hydra, single-cell dissociation and reaggregation experiments were already performed decades ago and yielded insights into regeneration and tissue developmental processes (Wilson, 1911; Gierer and Meinhardt, 1972). Remarkably, Hydra exhibits vast regenerative potential with any extracted fragment of its body being able to reconstitute an animal (Vogg et al., 2019). Labeling experiments have demonstrated that pattern formation in re-aggregates arises de novo and that cells sort themselves only in regards to their germ layer identity (Technau and Holstein, 1992; Technau et al., 2000).
 
@@ -76,7 +76,7 @@ Akin to corresponding experiments in adult Hydra, cells in developing embryonic 
 
 Perhaps, most intriguing though is the observation that re-aggregates which successfully reform a functional animal employ a developmental mode distinct to normal Nematostella embryogenesis, but similar to other cnidarians, such as hydrozoans. Namely, instead of invagination, germ layer specification occurs via delamination of the ectoderm, ingression of those endodermal plate cells that were initially located at the aggregate surface due to random mixing, as well as cavitation of inner cells.
 
-## Explants in anamniotes
+### Explants in anamniotes
 
 The field of amphibian (and avian) development has had a long history of excising tissues from the native embryo and either transplanting them in a different embryo or different regions of the same embryo or culturing them as ex vivo explants over extended periods (Mookerjee, 1953; Ball, 1966; Hamburger, 1969; Frederick, 1991). While these studies have provided crucial insights into the developmental potential of cells through the comparison of ex vivo explants from different stages of development (Keller and Danilchik, 1988), a detailed picture of the self-organizing capabilities of cells, akin to reaggregation studies in cnidarians or 3D aggregates of ESCs from mammals, is emerging only recently.
 
@@ -92,23 +92,23 @@ Results in amniotic embryos need to be interpreted with care since the embryonic
 
 In their natural settings, the phenomenon of complete dispersion of pre-embryonic blastomeres in annual killifish (Austrofundulus myersi Wourms, 1972, Austrolebias charrua Pereiro et al., 2017), followed by their re-aggregation to generate embryonic body plan is the closest observation to complete dissociation of teleost cells. While it is not clear to what extent the organization of dissociated cells is autonomous and independent of extraembryomic cues, annual killifish, intriguingly, represent an exceptional in vivo testimony to the notion of multiple developmental trajectories being available to the embryonic cells as seen in the differential rate of specification of anterior and posterior structures in embryos that have and have not undergone diapause (Podrabsky et al., 2010; Romney et al., 2018).
 
-## Mammalian in vitro systems
+### Mammalian in vitro systems
 
 In the past few years, a diverse array of mammalian in vitro embryonic models has emerged, generated from either mouse or human ESCs (Shahbazi et al., 2019; Baillie-Benson et al., 2020; Ghimire et al., 2021; Gupta et al., 2021). Pioneering work on 3D aggregates, termed embryoid bodies (EBs), has demonstrated that these can give rise to progenitor cells for the germ layers as well as form rudiments of tissues and organs without the context of an embryo (Doetschman et al., 1985; Desbaillets et al., 2000; Brickman and Serup, 2017). Polarized gene expression and self-organized axial emergence in embryoid bodies has been shown to be mediated by Wnt signaling (ten Berge et al., 2008; Sagy et al., 2019), although the extent of displayed axial organization is limited.
 
-## Mouse gastruloids
+#### Mouse gastruloids
 
 mGastruloids are initially spherical aggregates derived from few hundreds of homogenous mESCs which, although removed from extraembryonic tissues and nearly all associated signaling and mechanical cues, mimic some morphogenetic events of early mouse embryos, such as elongation, germ layer as well as axis formation and associated patterning (van den Brink et al., 2014; Beccari et al., 2018). Initially mGastruloids were developed motivated by the observation that, under differentiation conditions, mouse embryo P19 carcinoma cells are able to form polarized, elongated structures (Marikawa et al., 2009). Lately, they have also been extrapolated to hESCs (hGastruloids) (Moris et al., 2020a; Marikawa et al., 2020).
 
 AP axis specification in aggregates is demarcated by autonomous polarization of previously homogeneously distributed canonical Wnt and Bra/T expression, constituting the first system-wide symmetry breaking event identified thus far (Turner et al., 2017). After 6–7 days in non-adherent culture, mGastruloids not only develop transcriptionally demarcated AP, DV, and ML axes, but also display spatiotemporal expression of hox gene clusters similar to those in mouse at roughly embryonic day (E) 9.0–9.5 (Beccari et al., 2018).
 
-## Human gastruloids
+#### Human gastruloids
 
 Recently established hGastruloids constitute a model for human early AP patterning (Moris et al., 2020a). Morphologically resembling their mouse counterpart, they are generated from few hundreds of hESCs, pre-treated with a WNT agonist for 24 hr in 2D culture, then aggregated in low adherence, differentiation conditions with ongoing WNT upregulation that is subsequently diluted. BRA/T develops polarized expression a day after aggregation, thereby demarcating the posterior pole which subsequently elongates.
 
 Already after 3–4 days of development, hGastruloids reach maximal elongation and exhibit expression of genes associated with all three germ layers as well as a plethora of AP axial patterning genes, spatially organized in a manner similar to mammalian embryos. These notably include anterior cardiac mesoderm- and posterior node-related genes as well as a posterior to anterior somitogenesis signature. Hence, in terms of their transcriptional profile, hGastruloids partly correspond to CS9 human embryos. Akin to mGastruloids, for the most part, they do not seem to recapitulate early human-specific embryonic morphology.
 
-## Common developmental trajectories accessible by ESC(-LP)s across species
+### Common developmental trajectories accessible by ESC(-LP)s across species
 
 Despite the differences in early embryogenesis of source species, studies involving aggregates of corresponding ESC(-LPs) in Nematostella, zebrafish, Xenopus, mouse, and human embryonic model systems, reveal several unifying observations as well as interpretations. Particularly with respect to the establishment of the primary axis, cell aggregates develop an oral or posterior domain characterized by Bra/T expression in the native embryo, demarcating a symmetry-breaking event (Figure 1), followed by axial elongation and AP patterning.
 
@@ -132,13 +132,13 @@ Moreover, it was recently shown, through a transcriptional comparison of early m
 
 Complementary to the idea of ESC(-LP)s unraveling a conserved developmental mode under minimal culture conditions, is the observation that cells on a separate, advanced differentiation path can be coaxed to follow such basal trajectories when presented with the right factors. In re-aggregates from Nematostella aboral halves, prior injection of Wnts is required to prompt the cells to develop into a functional animal (Kirillova et al., 2018). Conversely, in gastruloids from induced pluripotent stem cell (iPSC) lines, AP patterning dynamics, including initial Bra/T polarization, are similar to their ESC counterparts (Beccari et al., 2018).
 
-## Significance of extraembryonic inputs for recapitulating embryo-like patterning
+### Significance of extraembryonic inputs for recapitulating embryo-like patterning
 
 Embryo-like structures also serve as a valuable tool to study the divergence of developmental trajectories in a systematic manner by exposing ESC(-LP)s to species-specific cues. These can be applied in manifold ways, for instance via adding early extraembryonic cells such as TSCs (trophoblast stem cells) or XEN (extraembryonic endoderm stem-) cells which in mammals give rise to tissues that closely interact with and instruct embryo patterning (Arnold and Robertson, 2009; Langdon and Mullins, 2011). Further options comprise the timed and localized application of signaling molecules to mirror endogenous inputs and the use of ECM mimics, such as hydro- or matrigel (Hughes et al., 2010; Caliari and Burdick, 2016) to generate 2D or 3D scaffolds and hence cues through mechanochemical interactions.
 
 Indeed, several recently described systems which implement such principles are allowing us to dive deeper into the question of how embryonic cells can generate a richer diversity of cell states and embryo-like morphology in the presence of aforementioned external cues.
 
-## Mouse - ETS and ETX embryos
+### Mouse - ETS and ETX embryos
 
 Single mESCs and TSCs, when grown together in a 3D Matrigel scaffold, mutually cooperate to assemble into structures, termed ETS embryos, highly reminiscent of the actual mouse embryo from E5.0 to 6.5 (Harrison et al., 2017). They recapitulate epiblast and trophoblast lumenogenesis, pro-amniotic cavity formation as well as mesoderm and primordial germ cell (PGC) induction.
 
@@ -148,7 +148,7 @@ This system was further complemented by adding a third cell type, XEN cells, whi
 
 Replacing XEN cells with induced endodermal cells (transgenic mESCs featuring transient Gata4 upregulation) yields inducible ETX (iETX) embryos which more faithfully recapitulate particularly anterior morphogenetic events during mouse gastrulation (Amadei et al., 2021). This appears to be due to the previously employed XEN cells resembling the parietal endoderm rather than primitive endoderm, whereas induced endodermal cells exhibit increased developmental potential. iETX embryos hence form an anterior signaling center and display anterior visceral endoderm (AVE) migration, two hallmarks of mouse gastrulation.
 
-## Mouse and human - blastoids
+### Mouse and human - blastoids
 
 Blastoids, originally made from aggregated mESCs and TSCs, illustrate how the two cell types influence each other to form structures closely resembling mouse E3.5 blastocysts (morphologically and transcriptionally) with an outer trophoectoderm layer encapsulating the blastocoel, a fluid filled cavity, as well as the epiblast (Rivron et al., 2018). It appears that, not only do the TSCs guide the ESCs along their native developmental trajectory, the ESCs in turn maintain proliferation and self-renewal of TSCs as well as the trophoblast epithelial morphogenesis.
 
@@ -158,7 +158,7 @@ In particular, EPS-blastoids are generated from extended pluripotent stem cells 
 
 A series of very recent studies with hPSCs (induced or otherwise) demonstrated that also human blastocyst-like structures (hBlastoids) can be successfully obtained by either mixing hESCs with SCs from extra-embryonic lineages or via employing naïve hEPSCs, akin to the mouse model (Liu et al., 2021; Yu et al., 2021; Sozen et al., 2021; Fan et al., 2021).
 
-## Mouse and human - gastruloids
+### Mouse and human - gastruloids
 
 By expanding on culture conditions of mGastruloids, further research efforts have coaxed these into recapitulating additional aspects of native embryo morphology. For example, a recent work reports the application of matrigel to generate somite-like structutures in conjunction with respective gene oscillation during mGastruloid elongation (van den Brink et al., 2020). A parallel study adds that Wnt inhibition in conjunction with matrigel embedding further promotes anterior segment formation and improves physical separation of somites (Veenvliet et al., 2020).
 
@@ -172,7 +172,7 @@ In a conceptually similar approach, two disparately sized ESC aggregates were fu
 
 Regarding human systems, it was recently demonstrated that pretreatment of human iPSCs with a Wnt agonist and FGF2 for 48 hr, followed by aggregation and maintenance in shaking culture, supplemented for 4 days with a growth factor cocktail (FGF2, HGF and IGF-1) yields gastruloids, termed EMLO, that can be grown over several weeks (Olmsted and Paluh, 2021). Overall, these appear to be biased toward trunk mesendoderm and central as well as peripheral nervous system fates. In particular, EMLO gastruloids display more complex morphology and neural cell type diversity when compared to standard hGastruloids, developing a primitive gut tube-like structure and, notably, innervation thereof.
 
-## Human - amniotic-sac-like embryoids
+### Human - amniotic-sac-like embryoids
 
 By employing a microfluidic device, researchers were able to recapitulate post-implantation embryo development prior to and during early gastrulation, encompassing epiblast luminogenesis, formation of the bipolar embryonic sac and PGC as well as primitive streak cell specification (Zheng et al., 2019). To achieve this, single hESCs were grown on gel pockets within a customized three channel device, enabling cell loading and consecutive medium switching.
 
@@ -180,7 +180,7 @@ Following lumenogenesis, dorsal amniotic ectoderm-like cells were induced via lo
 
 Altogether, the above examples illustrate, in systems from both mouse and human, how embryo-like morphology can be recapitulated through mimicking of an extraembryonic environment or associated cues which provide morphogenetic instructions.
 
-## Outlook
+### Outlook
 
 In conjunction with the observed diversity in (pre-) gastrulation embryo shapes, comparison of in vitro and ex vivo systems to their in vivo counterparts may point toward an underlying developmental morphospace spanning a plethora of available trajectories (Mitteroecker and Huttegger, 2009).
 
@@ -190,7 +190,7 @@ Since embryos of a given species generally develop under the same specific input
 
 **Figure 3.:** The developmental trajectories which aggregates of ESC(-LP)s exhibit upon removal of external or extraembryonic and associated boundaries may constitute a conserved mode that is shared across species. On a cellular level, this can be visually approximated as cells undergoing differentiation within Waddington’s developmental landscape Waddington, 1957. The landscape is shaped by key gene networks which remain constant between species and in vitro (bottom) as well as the external (micro-)environment and embryo geometry (top), here represented as green tiles, which vary between species. In case the latter factors are not present as ESCs are removed from their native context and grown in vitro, cellular developmental trajectories revert to the aforementioned conserved mode since cells from different species now experience the same landscape.
 
-## A conserved developmental mode versus the influence of species-specific extraembryonic environments
+### A conserved developmental mode versus the influence of species-specific extraembryonic environments
 
 When comparing systems such as gastruloids with blastoids and ETS/ETX embryos, it becomes apparent that, while the latter (mostly) faithfully recapitulate embryo geometry and morphogenesis, they are, at the present time, not able to develop beyond the in vivo equivalent of embryonic stage E7.0-E7.5. On the other hand, gastruloids do not look like actual embryos and undergo a more abstracted morphogenesis, yet they are capable of reaching the partial (transcriptional) equivalent of E9.0 (in case of the mESC-based system).
 
@@ -202,7 +202,7 @@ In summary, the wide range of trajectories displayed by ESCs and ESC-LPs in vitr
 
 Characterizing this fundamental mode may perhaps ultimately provide insights into the origin and evolution of animal body plans as well as how the complexity of animal shapes during peri-gastrulation development may have arisen via distinct extraembryonic factors. In order to properly address this from a comprehensive evolutionarily perspective, however, more phylum coverage is required, dictating the need for novel minimal in vitro embryo-like systems from, for instance, diploblasts and protostomes.
 
-## Evolution of early embryo morphology diversification
+### Evolution of early embryo morphology diversification
 
 Concerning the significance of extraembryonic environments, it could be argued that, from the multitude of ways that pre-gastrulating embryos have at their disposal to establish their initial body plan, refinement of a species-specific developmental mode as well as corresponding (extra-)embryonic morphology over the course of evolution ensures robustness (or canalization) (Siegal and Bergman, 2002; Félix and Wagner, 2008; Wagner, 2008; Melzer and Theißen, 2016): Those developmental trajectories that worked most robustly in the specific ecological and reproductive niches were further specified to maximize fitness (Kalinka and Tomancak, 2012).
 
@@ -212,7 +212,7 @@ Such external or extraembryonic environments and their complexity vary greatly a
 
 Nonetheless, comparing these different kinds of embryo-like structures should therefore provide tangible clues as to which aspects of embryonic development or, more precisely, axis formation and associated morphogenesis are inherent to ESCs and which parts strictly require extraembryonic input.
 
-## The phylotypic period and further developmental modes
+### The phylotypic period and further developmental modes
 
 We note that there are established concepts related to conservation of body plans and gene expression across species: The developmental hourglass model delineates a phylotypic period at mid-embryogenesis during which common anatomical features (the basic body plan) for each respective phylum are established (Duboule, 1994; Raff, 1996). In turn, this period is developmentally preceded and followed by phases of increased morphological and transcriptional divergence, thereby shaping a developmental ‘hourglass’ (Kalinka and Tomancak, 2012; Kalinka et al., 2010; Irie and Kuratani, 2014).
 

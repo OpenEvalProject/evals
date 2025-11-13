@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Institute of Cognitive Neuroscience, University College London London United Kingdom
-2. https://ror.org/02jx3x895 Research Department of Clinical, Educational and Health Psychology, University College London London United Kingdom
+1. Institute of Cognitive Neuroscience, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. Research Department of Clinical, Educational and Health Psychology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ We therefore aimed to develop a new translational measure of approach-avoidance 
 
 ## Results
 
-## The approach-avoidance reinforcement learning task
+### The approach-avoidance reinforcement learning task
 
 We developed a novel approach-avoidance conflict task, based on the ‘restless bandit’ design (Daw et al., 2006), in which the participants’ goal was to accrue rewards whilst avoiding punishments (Figure 1a). On each of 200 trials, participants chose one of two options, depicted as distinct visual stimuli, to obtain certain outcomes. There were four possible outcomes: a monetary reward (represented by a coin); an aversive sound consisting of a combination of a female scream and a high-pitched sound; both the reward and aversive sound; or no reward and no sound (Figure 1b). The options were asymmetric in their associated outcomes, such that one option (which we refer to as the ‘conflict’ option) was associated with both the reward and aversive sound, whereas the other (the ‘safe’ option) was only associated with the reward (Figure 1c). In other words, choosing the conflict option could result in any of the four possible outcomes on any given trial, but the safe option could only lead to either the reward or no reward, and never the aversive sounds.
 
@@ -51,7 +51,7 @@ The probability of observing the reward and the aversive sound at each option fl
 
 We initially investigated behaviour in the task in a discovery sample (n = 369) after which the key effects-of-interest were retested in a pre-registered study (https://osf.io/8dm95) with an independent replication sample (n = 629). The discovery sample had a significantly greater proportion of female participants than the replication sample (59% vs 52%, χ2 = 4.64, p = 0.031). The average age was also significantly different across samples (discovery sample mean = 37.7, SD = 10.3, replication sample mean = 34.3, SD = 10.4; t785.5 = 5.06, p < 0.001). The differences in self-reported psychiatric symptoms across samples did not reach significance (p > 0.086). Since our behavioural findings were broadly comparable across samples, we primarily report findings from the discovery sample and discuss deviations from these findings in the replication sample. A detailed comparison of statistical findings across samples is reported in Appendix 1.
 
-## Choices reflect both approach and avoidance
+### Choices reflect both approach and avoidance
 
 First, we verified that participants demonstrated both approach and avoidance responses during the task through a hierarchical logistic regression model, in which we used the latent outcome probabilities to predict trial-by-trial choice. Overall, participants learned to optimise their choices to accrue rewards and avoid the aversive sounds. As expected, across trials participants chose (i.e. approached) the option with relatively higher reward probability (β = 0.98 ± 0.03, p < 0.001; Figure 2a and c). At the same time, they avoided the conflict option when it was more likely to produce the punishment (β = –0.33 ± 0.04, p < 0.001; Figure 2a and d). These effects were also clearly evident in our replication sample (effect of relative reward probability: β = 0.95 ± 0.02, p < 0.001; effect of punishment probability: β = –0.52 ± 0.03, p < 0.001; Appendix 1—table 1). While sex was significantly associated with choice in the hierarchical logistic regression in the discovery sample (β = 0.16 ± 0.07, p = 0.028) with males being more likely to choose the conflict option, this pattern was not evident in the replication sample (β = 0.08 ± 0.06, p = 0.173), and age was not significantly associated with choice in either sample (p > 0.2). Across individuals, there was considerable variability in overall choice proportions (discovery sample: mean = 0.52, SD = 0.14, min/max = [0.03, 0.96]; replication sample: mean = 0.52, SD = 0.15, min/max = [0.01, 0.99]).
 
@@ -59,7 +59,7 @@ First, we verified that participants demonstrated both approach and avoidance re
 
 **Figure 2.:** (a) Coefficients from the mixed-effects logistic regression of trial-by-trial choices in the task (n = 369). On any given trial, participants chose the option that was more likely to produce a reward. They also avoided choosing the conflict option when it was more likely to produce the punishment. Task-induced anxiety significantly interacted with punishment probability. Significance levels are shown according to the following: p < 0.05 – *; p < 0.01 – **; p < 0.001 – ***. Error bars represent confidence intervals. (b) Subjective ratings of task-induced anxiety, given on a scale from ‘Not at all’ (0) to ‘Extremely’ (50). (c) On each trial, participants were likely to choose the option with greater probability of producing the reward. (d) Participants tended to avoid the conflict option when it was likely to produce a punishment. (e) Compared to individuals reporting lower anxiety during the task, individuals experiencing greater anxiety showed greater avoidance of the conflict option, especially when it was more likely to produce the punishment. Note. Figures c–e show logistic curves fitted to the raw data using the ‘glm’ function in R. For visualisation purposes, we categorised continuous task-induced anxiety into tertiles. We show linear curves here since these effects were estimated as linear effects in the logistic regression models, however the raw data showed non-linear trends – see Appendix 11—figure 1.
 
-## Task-induced anxiety is associated with greater avoidance
+### Task-induced anxiety is associated with greater avoidance
 
 Immediately after the task, participants rated their task-induced anxiety in response to the question, ‘How anxious did you feel during the task?’, from ‘Not at all’ to ‘Extremely’ (scored from 0 to 50). On average, participants reported a moderate level of task-induced anxiety (mean rating of 21, SD = 14; Figure 2b).
 
@@ -69,23 +69,23 @@ To investigate this association further, we included task-induced anxiety into t
 
 These associations with task-induced anxiety were again clearly evident in the replication sample (correlation between task-induced anxiety and proportion of conflict/safe option choices: τ = –0.075, p = 0.005; interaction between task-induced anxiety and punishment probability in the hierarchical model: β = –0.23 ± 0.03, p < 0.001; Appendix 1—table 1).
 
-## A reinforcement learning model explains individual choices
+### A reinforcement learning model explains individual choices
 
-Next, we investigated the putative cognitive mechanisms driving behaviour on the task by fitting standard reinforcement learning models to trial-by-trial choices. The winning model in both the discovery and replication samples included reward- and punishment-specific learning rates, and reward- and punishment-specific sensitivities (i.e. four parameters in total; Figure 3a and b). Briefly, it models participants as learning four values, each corresponding to the probabilities of observing specific outcomes (reward or punishment) associated with each option (conflict or safe). At every trial, the probability estimates for the chosen option are updated after observing the outcome(s) according to the Rescorla-Wagner update rule. Individual differences in the rate of updating are captured by the learning rate parameters (αr , αp), whereas differences in the extent to which each outcome impacts choice are captured by the sensitivity parameters (βr , βp).
+Next, we investigated the putative cognitive mechanisms driving behaviour on the task by fitting standard reinforcement learning models to trial-by-trial choices. The winning model in both the discovery and replication samples included reward- and punishment-specific learning rates, and reward- and punishment-specific sensitivities (i.e. four parameters in total; Figure 3a and b). Briefly, it models participants as learning four values, each corresponding to the probabilities of observing specific outcomes (reward or punishment) associated with each option (conflict or safe). At every trial, the probability estimates for the chosen option are updated after observing the outcome(s) according to the Rescorla-Wagner update rule. Individual differences in the rate of updating are captured by the learning rate parameters ($\alpha^{r}$ , $\alpha^{p}$), whereas differences in the extent to which each outcome impacts choice are captured by the sensitivity parameters ($\beta^{r}$ , $\beta^{p}$).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87720/elife-87720-fig3-v1.jpg)
 
-**Figure 3.:** (a) Model comparison results (n = 369). The difference in integrated Bayesian information criterion scores from each model relative to the winning model is indicated on the x-axis. The winning model included specific learning rates for reward () and punishment learning (αR), and specific outcome sensitivity parameters for reward (αp) and punishment (βR). Some models were tested with the inclusion of a lapse term (βP). (ξb) Distributions of individual parameter values from the winning model. (c) The winning model was able to reproduce the proportion of conflict option choices over all trials in the observed data with high accuracy (observed vs predicted data r = 0.97). (d) The distribution of the reward-punishment sensitivity index – the computational measure of approach-avoidance bias. Higher values indicate approach biases, whereas lower values indicate avoidance biases.
+**Figure 3.:** (a) Model comparison results (n = 369). The difference in integrated Bayesian information criterion scores from each model relative to the winning model is indicated on the x-axis. The winning model included specific learning rates for reward ($\alpha^{R}$) and punishment learning ($\alpha^{p}$), and specific outcome sensitivity parameters for reward ($\beta^{R}$) and punishment ($\beta^{P}$). Some models were tested with the inclusion of a lapse term ($ξ$). (b) Distributions of individual parameter values from the winning model. (c) The winning model was able to reproduce the proportion of conflict option choices over all trials in the observed data with high accuracy (observed vs predicted data r = 0.97). (d) The distribution of the reward-punishment sensitivity index – the computational measure of approach-avoidance bias. Higher values indicate approach biases, whereas lower values indicate avoidance biases.
 
 To assess how well this model captured our observed data, we simulated data from the model given each participant’s parameter values, choices, and observed outcomes. These synthetic choice data closely resembled the actual choices made by the participants (Figure 3c). Parameter recovery from the winning model was excellent, with Pearson’s r values between data-generating and recovered parameters ranging from 0.77 to 0.86 (Appendix 4—figure 1).
 
-To quantify individual approach-avoidance bias computationally, we calculated the ratio between the reward and punishment sensitivity parameters (βr/βp). As the task requires simultaneously balancing reward pursuit (i.e. approach) and punishment avoidance, this composite measure provides an index of where an individual lies on the continuum of approach vs avoidance, with higher and lower values indicating approach and avoidance biases, respectively. We refer to this measure as the ‘reward-punishment sensitivity index’ (Figure 3d).
+To quantify individual approach-avoidance bias computationally, we calculated the ratio between the reward and punishment sensitivity parameters ($\beta^{r}/\beta^{p}$). As the task requires simultaneously balancing reward pursuit (i.e. approach) and punishment avoidance, this composite measure provides an index of where an individual lies on the continuum of approach vs avoidance, with higher and lower values indicating approach and avoidance biases, respectively. We refer to this measure as the ‘reward-punishment sensitivity index’ (Figure 3d).
 
 Comparing parameters across sexes via Welch’s t-tests revealed significant differences in reward sensitivity (t289 = –2.87, p = 0.004, d = 0.34; lower in females) and consequently reward-punishment sensitivity index (t336 = –2.03, p = 0.043, d = 0.22; lower in females, i.e. more avoidance-driven). In the replication sample, we observed the same effect on reward-punishment sensitivity index (t626 = –2.79, p = 0.005, d = 0.22; lower in females). However, the sex difference in reward sensitivity did not replicate (p=0.441), although we did observe a significant sex difference in punishment sensitivity in the replication sample (t626 = 2.26, p = 0.024, d = 0.18).
 
-## Computational mechanisms of anxiety-related avoidance
+### Computational mechanisms of anxiety-related avoidance
 
-We assessed the relationship between task-induced anxiety and individual model parameters through permutation testing of non-parametric correlations, since the distribution of task-induced anxiety was non-Gaussian. The punishment learning rate and reward-punishment sensitivity index were significantly and negatively correlated with task-induced anxiety in the discovery sample (punishment learning rate: Kendall’s τ = –0.088, p = 0.015; reward-punishment sensitivity index: τ = –0.099, p = 0.005; Figure 4a and b). These associations were also significant in the replication sample (punishment learning rate: τ = –0.064, p = 0.020; reward-punishment sensitivity index: τ = –0.096, p < 0.001), with an additional positive correlation between punishment sensitivity and anxiety (τ = 0.076, p = 0.004; Appendix 1—table 1) which may have been detected due to greater statistical power. The learning rate equivalent of the reward-punishment sensitivity index (i.e. αr/αp) did not significantly correlate with task-induced anxiety (discovery sample: τ = 0.048, p = 0.165; replication sample: τ = 0.029, p = 0.298).
+We assessed the relationship between task-induced anxiety and individual model parameters through permutation testing of non-parametric correlations, since the distribution of task-induced anxiety was non-Gaussian. The punishment learning rate and reward-punishment sensitivity index were significantly and negatively correlated with task-induced anxiety in the discovery sample (punishment learning rate: Kendall’s τ = –0.088, p = 0.015; reward-punishment sensitivity index: τ = –0.099, p = 0.005; Figure 4a and b). These associations were also significant in the replication sample (punishment learning rate: τ = –0.064, p = 0.020; reward-punishment sensitivity index: τ = –0.096, p < 0.001), with an additional positive correlation between punishment sensitivity and anxiety (τ = 0.076, p = 0.004; Appendix 1—table 1) which may have been detected due to greater statistical power. The learning rate equivalent of the reward-punishment sensitivity index (i.e. $\alpha^{r}/\alpha^{p}$) did not significantly correlate with task-induced anxiety (discovery sample: τ = 0.048, p = 0.165; replication sample: τ = 0.029, p = 0.298).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87720/elife-87720-fig4-v1.jpg)
 
@@ -95,23 +95,23 @@ Given that both the punishment learning rate and the reward-punishment sensitivi
 
 This analysis reveals two effects: first, that individuals who reported feeling more anxious during the task were slower to update their estimates of punishment probability; and second, more anxious individuals placed a greater weight on the aversive sound relative to the reward when making their decisions, meaning that the potential for a reward was more strongly offset by potential for punishment. Critically, the latter but not the former effect explained the effect of task-induced anxiety on avoidance behaviour, thus providing an important insight into the computational mechanisms driving anxiety-related avoidance.
 
-## Psychiatric symptoms predict task-induced anxiety, but not avoidance
+### Psychiatric symptoms predict task-induced anxiety, but not avoidance
 
 We assessed the clinical potential of the measure by investigating how model-agnostic and computational indices of behaviour correlate with self-reported psychiatric symptoms of anxiety, depression, and experiential avoidance; the latter indexes an unwillingness to experience negative emotions/experiences (Hayes et al., 1996). We included experiential avoidance as a direct measure of avoidance symptoms/beliefs, given that our task involved avoiding stimuli inducing negative affect. Given that we recruited samples without any inclusion/exclusion criteria relating to mental health, the instances of clinically relevant anxiety symptoms, defined as a score of 10 or greater in the Generalised Anxiety Disorder 7-item scale (Spitzer et al., 2006), were low in both the discovery (16%, 60 participants) and the replication sample (20%, 127 participants).
 
 Anxiety, depression, and experiential avoidance symptoms were all significantly and positively correlated with task-induced anxiety (p < 0.001; Appendix 1—table 1). Only experiential avoidance symptoms were significantly correlated with the proportion of conflict/safe option choices (τ = –0.059, p = 0.010; Appendix 1—table 1), but this effect was not observed in the replication sample (τ = –0.029, p = 0.286). Experiential avoidance was also significantly correlated with punishment learning rates (Kendall’s τ = –0.09, p = 0.024) and the reward-punishment sensitivity index (τ = –0.09, p = 0.034) in the discovery sample. However, these associations were non-significant in the replication sample (p > 0.3), and no other significant correlations were detected between the psychiatric symptoms and model parameters (Appendix 1—table 1).
 
-## Split-half reliability
+### Split-half reliability
 
 We assessed the split-half reliability of the task by correlating the overall proportion of conflict option choices and model parameters from the winning model across the first and second half of trials. For overall choice proportion, reliability was simply calculated via Pearson’s correlations. For the model parameters, we calculated model-derived estimates of Pearson’s r values from the parameter covariance matrix when first- and second-half parameters were estimated within a single model, following a previous approach recently shown to accurately estimate parameter reliability (Waltmann et al., 2022). We interpreted indices of reliability based on conventional values of <0.40 as poor, 0.4–0.6 as fair, 0.6–0.75 as good, and >0.75 as excellent reliability (Fleiss, 1986). Overall choice proportion showed good reliability (discovery sample r = 0.63; replication sample r = 0.63; Appendix 5—figure 1). The model parameters showed good-to-excellent reliability (model-derived r values ranging from 0.61 to 0.85 [0.76–0.92 after Spearman-Brown correction]; Appendix 5—figure 1).
 
-## Test-retest reliability
+### Test-retest reliability
 
 We assessed the test-retest reliability of the task by retesting 57 participants from the replication sample at least 10 days after they initially completed the task. The retest version of the task was identical to the initial version, except for the use of new stimuli to represent the conflict and safe options and different latent outcome probabilities to limit practice effects. The test-retest reliability of model-agnostic effects was assessed using the intra-class correlation (ICC) coefficient, specifically ICC(3,1) (following the notation of Shrout and Fleiss, 1979). Test-retest reliability of the model parameters was assessed by calculating Pearson’s correlations derived from the parameter covariance matrix when parameters from both sessions were estimated within a single model.
 
 Task-induced anxiety, overall proportion of conflict option choices, and the model parameters demonstrated fair to excellent reliability (reliability indices ranging from 0.4 to 0.77; Appendix 6—figure 1), except for the punishment learning rate which showed a model-derived reliability of r = –0.45. Practice effects analyses showed that task-induced anxiety and the punishment learning rate were also significantly lower in the second session (anxiety: t56 = 2.21, p = 0.031; punishment learning rate: t56 = 2.24, p = 0.029), whilst the overall probability of choosing the conflict option and the other parameters did not significantly change over sessions (Appendix 7—figure 1). As the dynamic (latent) outcome probabilities were different across the test vs. retest sessions, in other words participants were not performing the exact same task across sessions, we argue that even ‘fair’ reliability (i.e. estimates in range of 0.4–0.6) is encouraging, as this suggests that model parameters generalise across different environments if the required computations are preserved. However, potential within-subjects inferences based on the punishment learning rate may not be justified in this task.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 As our procedure for estimating model parameters (the expectation maximisation (EM) algorithm, see ‘Methods’) produced high inter-parameter correlations in our data (Appendix 2—figure 2), we also re-estimated the parameters using Stan’s variational Bayesian inference (VBI) algorithm (Stan Development Team, 2023) – this resulted in lower inter-parameter correlations, but our primary computational finding, that the effect of anxiety on choice is mediated by relative sensitivity to reward/punishment was consistent across algorithms (see Appendix 8 for details).
 
@@ -143,82 +143,159 @@ We also did not find any significant correlations between task performance and c
 
 Finally, whilst there is a broad literature on the roles of behavioural inhibition and avoidance tendency traits on decision-making and behaviour (Gray, 1982; Carver and White, 1994; Corr, 2004), we did not replicate the correlation of experiential avoidance and avoidance responses or the reward-punishment sensitivity index. Since there were also no significant correlations across task performance indices and clinical symptom measures, our findings suggest that the measure may be more sensitive to behaviours relating to state anxiety, rather more stable traits. Nevertheless, how performance in the present task relates to other traits such as behavioural approach/inhibition tendencies (Carver and White, 1994), as has been found in previous studies on reward/punishment learning (Wise and Dolan, 2020; Sharp et al., 2022) and approach-avoidance conflict (Aupperle et al., 2011), will be an important question for future work.
 
-## Conclusion
+### Conclusion
 
 Avoidance is a hallmark symptom of anxiety-related disorders and there is a need for better translational models of avoidance. In our novel translational task designed to involve the same computational processes as those involved in non-human animal tests, anxiety was reliably induced, associated with avoidance behaviour, and linked to a computational model of behaviour. We hope that similar approaches will facilitate progress in the theoretical understanding of avoidance and ultimately aid in the development of novel anxiolytic treatments for anxiety-related disorders.
 
 ## Methods
 
-## Participants
+### Participants
 
 We recruited participants from Prolific (https://www.prolific.com/). Participants had to be aged 18–60, speak English as their first language, have no language-related disorders/literacy difficulties, have no vision/hearing difficulties/have no mild cognitive impairment or dementia, and be resident in the UK. Participants were reimbursed at a rate of £7.50 per hour, and could earn a bonus of up to an additional £7.50 per hour based on their performance on the task. The study had ethical approval from the University College London Research Ethics Committee (ID 15253/001).
 
 We first recruited a discovery sample to investigate whether anxiety was associated with avoidance in the novel task. We conducted an a priori power analysis to detect a minimally interesting correlation between anxiety and avoidance of r = 0.15 (alphatwo-tailed=0.05, power = 0.80), resulting in a required sample size of 346. We aimed to replicate our initial finding (that task-induced anxiety was associated with the model-derived measure of approach-avoidance bias) in a replication sample. In the initial sample, the size of this effect was Kendall’s τ = 0.099, which approximates to a Pearson’s r of 0.15 – this was the basis for the power analysis for the replication sample. Therefore, the power analysis was configured to detect a correlation of r = 0.15 (alphaone-tailed=0.05, power = 0.95), resulting in a required sample size of n = 476. A total of 423 participants completed the initial study (mean age = 38, SD = 10, 59% female), and 726 participants completed the replication study (mean age = 34, SD = 10, 51% female).
 
-## Headphone screen and calibration
+### Headphone screen and calibration
 
 We used aversive auditory stimuli as our punishments in the reinforcement learning task, which consisted of combinations of female screams and high-frequency tones that were individually rated as highly aversive in a previous online study (Seow and Hauser, 2022). The stimuli can be found online at https://osf.io/m3zev/. To maximise their aversiveness, we asked participants to use headphones whilst they completed the task. All participants completed an open-source, validated auditory discrimination task (Woods et al., 2017) to screen out those who were unlikely to be using headphones. Participants could only continue to the main task if they achieved an accuracy threshold of five out of six trials in this screening task.
 
 To further increase the aversiveness of the punishments, we wanted each participant to hear them at a loud volume. We initially used a calibration task to increase the system volume and implemented attention checks in the main task to ensure that participants had kept the volume at a sufficiently high level during the task (see below). Before beginning the calibration task, participants were advised to set their system volume to around 10% of the maximum possible. Then, we presented two alternating auditory stimuli: a burst of white noise which was set to have the same volume as the aversive sounds in the main task, and a spoken number played at a lower volume to one ear (‘one’, ‘two’, or ‘three’; these stimuli are also available online at https://osf.io/m3zev/). We instructed participants to adjust their system volume so that the white noise was loud but comfortable. At the same time, they also had to press the number key on their keyboard corresponding to the number spoken between each white noise presentation. The rationale for the difference in volume was to fix a lower boundary for each participant’s system volume, so that the volume of the punishments presented in the main task was locked above this boundary. We used the white noise as a placeholder for the punishments to limit desensitisation. Since the volume of the punishments, and therefore at least in part their aversiveness, was determined by the participants themselves, we conducted sensitivity analyses on all reported findings after accounting for self-reported unpleasantness ratings for the punishment – this did not materially affect our main findings (see Appendix 9).
 
-## The approach-avoidance reinforcement learning task
+### The approach-avoidance reinforcement learning task
 
 We developed a novel task on which participants learned to simultaneously pursue rewards and avoid punishments. On each trial, participants had 2 seconds to choose one of two options, depicted as distinct visual stimuli (Figure 2a), using the left/right arrow keys on their keyboard. The chosen option was then highlighted by a white border, and participants were presented with the outcome for that trial for 2 seconds. This could be one of (1) no outcome, (2) a reward (an animated coin image), (3) a punishment (an aversive sound), or (4) both the reward and punishment. We incentivised participants to collect the coins by informing them that they could earn a bonus payment based on the number of coins earned during the task. If no choice was made, the text ‘Too slow!’ was shown for 2 seconds and the trial was skipped. Participants completed 200 trials which took 10 minutes on average across the sample. Each option was associated with separate probabilities of producing the reward/aversive sound outcomes (Figure 2b), and these probabilities fluctuated randomly over trials. Both options were associated with the reward, but only one was associated with the punishment (i.e. the ‘conflict’ option could produce both rewards and punishments, but the ‘safe’ option could produce only rewards and never punishments). When asked to rate the unpleasantness of the punishments from ‘Not at all’ to ‘Extremely’ (scored from 0 to 50, respectively), participants gave a mean rating of 31.7 (SD = 12.8).
 
-The latent outcome probabilities were generated as decaying Gaussian random walks in a similar fashion to previous restless bandit tasks (Daw et al., 2006), where the probability, p, of observing outcome, o, at option, i, on trial, t, drifted according to the following:pi,o(t+1)=λpi,o(t)+(1−λ)θ+ee∼N(0,0.042)
+The latent outcome probabilities were generated as decaying Gaussian random walks in a similar fashion to previous restless bandit tasks (Daw et al., 2006), where the probability, p, of observing outcome, $o$, at option, $i$, on trial, $t$, drifted according to the following:
 
-The decay parameter, λ, was set to 0.97, which pulled all values towards the decay centre θ, which was set to 0.5. The random noise, e, added on each trial was drawn from a zero-mean Gaussian with a standard deviation of 0.04. All probabilities of observing the reward at the safe option were scaled down by a factor of 0.7 so that it was less rewarding than the conflict option, on average. We initialised each walk at the following values: conflict option reward probability – 0.7, safe option reward probability – 0.35, conflict option punishment probability – 0.2. We only used sets of latent outcome probabilities where the cross-correlations across each probability walk were below 0.3. A total of four sets of outcome probabilities were used across our studies – they are available online at https://osf.io/m3zev/.
+$$
+p_{i,o}(t+1)=\lambdap_{i,o}(t)+(1−\lambda)\theta+e
+$$
+
+
+
+$$
+e∼N(0,0.04^{2})
+$$
+
+The decay parameter, $\lambda$, was set to 0.97, which pulled all values towards the decay centre $\theta$, which was set to 0.5. The random noise, $e$, added on each trial was drawn from a zero-mean Gaussian with a standard deviation of 0.04. All probabilities of observing the reward at the safe option were scaled down by a factor of 0.7 so that it was less rewarding than the conflict option, on average. We initialised each walk at the following values: conflict option reward probability – 0.7, safe option reward probability – 0.35, conflict option punishment probability – 0.2. We only used sets of latent outcome probabilities where the cross-correlations across each probability walk were below 0.3. A total of four sets of outcome probabilities were used across our studies – they are available online at https://osf.io/m3zev/.
 
 We implemented three auditory attention checks during the main task, to ensure that participants were still using an appropriate volume to listen to the auditory stimuli. As participants could potentially mute their device during the outcome phase of the trial only (i.e. only when the aversive sounds could occur), the timing of these checks had to coincide with moment of outcome presentation. Therefore, we implemented these checks at the outcome phase of two randomly selected trials where the participants’ choices led to no outcome (no reward or punishment), and also once at the very end of the task. Specifically, we played one of the spoken numbers used during the calibration task (see above) and the participant had 2.5 seconds to respond using the corresponding number key on their keyboard.
 
 Immediately after the task and the final attention check, we obtained subjective ratings about the task using the following questions: ‘How unpleasant did you find the sounds?’ and ‘How anxious did you feel during the task?’. Responses were measured on a continuous slider ranging from ‘Not at all’ (0) to ‘Extremely’ (50).
 
-## Data cleaning
+### Data cleaning
 
 As the task was implemented online where we could not ensure the same testing standards as we could in-person, we used three exclusion criteria to improve data quality. Firstly, we excluded participants who missed a response to more than one auditory attention check (see above; 8% in both discovery and replication samples) – as these occurred infrequently and the stimuli used for the checks were played at relatively low volume, we allowed for incorrect responses so long as a response was made. Secondly, we excluded those who responded with the same response key on 20 or more consecutive trials (>10% of all trials; 4%/6% in discovery and replication samples, respectively) – note that as the options randomly switched sides on the screen across trials, this did not exclude participants who frequently and consecutively chose a certain option. Lastly, we excluded those who did not respond on 20 or more trials (1%/2% in discovery and replication samples, respectively). Overall, we excluded 51 out of 423 (12%) in the discovery sample, and 98 out of 725 (14%) in the replication sample. We conducted all the analyses with and without these exclusions. These exclusions had no effects on the main findings reported in the manuscript, and differences before and after excluding data are reported in Appendix 1.
 
-## Mixed-effects regressions of trial-by-trial choice
+### Mixed-effects regressions of trial-by-trial choice
 
-We specified two hierarchical logistic regression models to test the effect of the dynamic outcome probabilities on choice. Both models included predictors aligned with approach and avoidance responses, based on the latent probabilities of observing an outcome given the chosen option at trial t, P(outcome | option)t. First, if individuals were learning to choose maximise their rewards earned, they should generally be choosing the option which was relatively more likely to produce the reward on each trial. This would result in a significant effect of the difference in reward probabilities across options, as given by: δP(reward)t = P(reward | conflict)t - P(reward | safe)t. Second, if individuals were learning to avoid punishments, they should generally be avoiding the conflict option on trials when it is likely to produce the punishment. This would result in a significant effect of the punishment probability at the conflict option: P(punishment | conflict)t.
+We specified two hierarchical logistic regression models to test the effect of the dynamic outcome probabilities on choice. Both models included predictors aligned with approach and avoidance responses, based on the latent probabilities of observing an outcome given the chosen option at trial t, $P(outcome | option)_{t}$. First, if individuals were learning to choose maximise their rewards earned, they should generally be choosing the option which was relatively more likely to produce the reward on each trial. This would result in a significant effect of the difference in reward probabilities across options, as given by: $\deltaP(reward)_{t} = P(reward | conflict)_{t} - P(reward | safe)_{t}$. Second, if individuals were learning to avoid punishments, they should generally be avoiding the conflict option on trials when it is likely to produce the punishment. This would result in a significant effect of the punishment probability at the conflict option: $P(punishment | conflict)_{t}$.
 
-The first regression model simply included these two predictors and random intercepts varying by participant to predict choice:Choice∼δP(reward) + P(punishment | conflict) + (1 | participant)
+The first regression model simply included these two predictors and random intercepts varying by participant to predict choice:
 
-The second model tested the effect of task-induced anxiety on choice, by including anxiety as a main effect and its interactions with δP(reward)t and P(punishment | conflict)t:Choice∼δP(reward) + P(punishment | conflict) + Anxiety + Anxiety⋅δP(reward) + Anxiety⋅P(punishment | conflict) + (1 | participant)
+$$
+Choice∼\deltaP(reward) + P(punishment | conflict) + (1 | participant)
+$$
 
-## Computational modelling using reinforcement learning
+The second model tested the effect of task-induced anxiety on choice, by including anxiety as a main effect and its interactions with $\deltaP(reward)_{t}$ and $P(punishment | conflict)_{t}$:
 
-## Model specification
+$$
+Choice∼\deltaP(reward) + P(punishment | conflict) + Anxiety + Anxiety⋅\deltaP(reward) + Anxiety⋅P(punishment | conflict) + (1 | participant)
+$$
 
-We used variations of classical reinforcement learning algorithms (Sutton and Barto, 2018), specifically the ‘Q-learning’ algorithm (Watkins and Dayan, 1992), to model participants’ choices in the main task (Table 1). Briefly, our models assume that participants estimate the probabilities of observing a reward and punishment separately for each punishment, and continually update these estimates after observing the outcomes of their actions. Consequently, participants can then use these estimates to choose the option which will maximise subjective value, for example by choosing the option which is more likely to produce a reward, or avoiding an option if it is very likely to produce a punishment. By convention, we refer to the probability estimates as ‘Q-values’; for example, the estimated probability of observing a reward after choosing the conflict option is written as Qrconflict, whereas the probability of observing a punishment after choosing the safe option would be written as Qpsafe.
+### Computational modelling using reinforcement learning
 
-In all models, the probability estimates of observing outcome, o=r,p, of the chosen option, a=conflict,safe, on trial, t, were updated via: Qt+1oa=Qtoa+α∙ot-Qtoa, where the learning rate is controlled by α∈0,1. In some models (Table 1), the learning rate was split into reward- and punishment-specific parameters, αr and αp .
+#### Model specification
 
-On each trial, the probability estimates for observing rewards and aversive sounds are integrated into action weights, W, via:
+We used variations of classical reinforcement learning algorithms (Sutton and Barto, 2018), specifically the ‘Q-learning’ algorithm (Watkins and Dayan, 1992), to model participants’ choices in the main task (Table 1). Briefly, our models assume that participants estimate the probabilities of observing a reward and punishment separately for each punishment, and continually update these estimates after observing the outcomes of their actions. Consequently, participants can then use these estimates to choose the option which will maximise subjective value, for example by choosing the option which is more likely to produce a reward, or avoiding an option if it is very likely to produce a punishment. By convention, we refer to the probability estimates as ‘$Q$-values’; for example, the estimated probability of observing a reward after choosing the conflict option is written as $Q^{r}conflict$, whereas the probability of observing a punishment after choosing the safe option would be written as $Q^{p}safe$.
 
-W=β∙Qr-Qp, where individual differences in sensitivity to the outcomes (how much the outcomes affect value-based choice) are parameterised by the outcome sensitivity parameter, β. In models with a single sensitivity parameter, participants were assumed to value the reward and punishment equally, such that obtaining a reward had the same subjective value as avoiding a punishment. However, as individual differences in approach-avoidance conflict could manifest in asymmetries in the valuation of reward/punishment, we also specified models (Table 1) where β was split into reward- and punishment-specific parameters, βr and βp :W=βr⋅Qr−βp⋅Qp.
+**Table 1.**
+ Model specification.
 
-The action weights are then the basis on which a choice was made between the options, which was modelled with the softmax function:P(a)=W(a)∑iW(i).
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th colspan="4">Parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reward learning only</td>
+      <td colspan="2">αr</td>
+      <td colspan="2">βr</td>
+    </tr>
+    <tr>
+      <td>Punishment learning only</td>
+      <td colspan="2">αp</td>
+      <td colspan="2">βp</td>
+    </tr>
+    <tr>
+      <td>Symmetrical learning</td>
+      <td colspan="2">α</td>
+      <td colspan="2">β</td>
+    </tr>
+    <tr>
+      <td>Asymmetric learning rates</td>
+      <td>αr</td>
+      <td>αp</td>
+      <td colspan="2">β</td>
+    </tr>
+    <tr>
+      <td>Asymmetric sensitivities</td>
+      <td colspan="2">α</td>
+      <td>βr</td>
+      <td>βp</td>
+    </tr>
+    <tr>
+      <td>Asymmetric learning rates and sensitivities</td>
+      <td>αr</td>
+      <td>αp</td>
+      <td>βr</td>
+      <td>βp</td>
+    </tr>
+  </tbody>
+</table>
+
+_All custom model scripts are available online at https://osf.io/m3zev/._
+
+In all models, the probability estimates of observing outcome, $o=r,p$, of the chosen option, $a=conflict,safe$, on trial, $t$, were updated via: $Q_{t+1}^{o}a=Q_{t}^{o}a+\alpha∙o^{t}-Q_{t}^{o}a$, where the learning rate is controlled by $\alpha\in0,1$. In some models (Table 1), the learning rate was split into reward- and punishment-specific parameters, $\alpha^{r}$ and $\alpha^{p}$ .
+
+On each trial, the probability estimates for observing rewards and aversive sounds are integrated into action weights, $W$, via:
+
+$W=\beta∙Q^{r}-Q^{p}$, where individual differences in sensitivity to the outcomes (how much the outcomes affect value-based choice) are parameterised by the outcome sensitivity parameter, $\beta$. In models with a single sensitivity parameter, participants were assumed to value the reward and punishment equally, such that obtaining a reward had the same subjective value as avoiding a punishment. However, as individual differences in approach-avoidance conflict could manifest in asymmetries in the valuation of reward/punishment, we also specified models (Table 1) where $\beta$ was split into reward- and punishment-specific parameters, $\beta^{r}$ and $\beta^{p}$ :
+
+$$
+W=\beta^{r}⋅Q^{r}−\beta^{p}⋅Q^{p}.
+$$
+
+The action weights are then the basis on which a choice was made between the options, which was modelled with the softmax function:
+
+$$
+P(a)=\frac{W(a)}{\sumiW(i)}.
+$$
 
 We also tested all models with the inclusion of a lapse term, which allows for choice stochasticity to vary across participants, but since this did not improve model fit for any model, we do not discuss this further.
 
-## Model fitting and comparison
+#### Model fitting and comparison
 
 We fit the models using a hierarchical EM algorithm (Huys et al., 2011) – the algorithm and supporting code is available online at https://www.quentinhuys.com/pub/emfit/. All prior distributions of the untransformed parameter values were set as Gaussian distributions to regularise fitting and to limit extreme values. Parameters were transformed within the models, via the sigmoid function for parameters constrained to values between 0 and 1; or exponentiated for strictly positive parameters. We compared evidence across models using integrated Bayesian information criterion (Huys et al., 2011) which integrates both model likelihood and model complexity into a single measure for model comparison.
 
-## Mediation analysis of anxiety-related avoidance
+### Mediation analysis of anxiety-related avoidance
 
 To investigate the cognitive processes underlying anxiety-related avoidance, we tested for potential mediators of the effect of task-induced anxiety on avoidance choices in the approach-avoidance reinforcement learning task. Mediation was assessed using structural equation modelling with the ‘lavaan’ package in R (Rosseel, 2012). This allowed us to test multiple potential mediators within a single model. We used maximum-likelihood estimation with and without bootstrapped standard errors (using 2000 bootstrap samples) for estimation. The potential mediators were any parameters from our computational model that significantly correlated with task-induced anxiety. Therefore, the model included the following variables: task-induced anxiety, avoidance choices (computed as the proportion of safe option choices for each participant), and model parameters which correlated with task-induced anxiety. The model was constructed such that the model parameters were parallel mediators of the effect of task-induced anxiety on avoidance choices. The model parameters were allowed to covary with one another.
 
-## Symptom questionnaires
+### Symptom questionnaires
 
 Psychiatric symptoms were measured using the Generalised Anxiety Disorder scale (GAD7; Spitzer et al., 2006), Patient Health Questionnaire depression scale (PHQ8; Kroenke et al., 2009), and the Brief Experiential Avoidance Questionnaire (BEAQ; Gámez et al., 2014).
 
-## Test-retest reliability analysis
+### Test-retest reliability analysis
 
 We retested a subset of our sample (n = 57) to assess the reliability of our task. We determined our sample size via an a priori power analysis using GPower (Faul et al., 2007), which was set to detect the smallest meaningful effect size of r = 0.4, as any lower test-retest correlations are considered poor by convention (Fleiss, 1986; Cicchetti, 1994). The required sample size was thus 50 participants, based on a one-tailed significance threshold of 0.05 and 90% power. Participants were recruited from Prolific. We invited participants from the replication study (providing they had not been excluded on the basis of data quality) to complete the study again, at least 10 days after their first session. The retest version of the approach-avoidance reinforcement learning task was identical to that in the first session, except for the use of new stimuli to represent the conflict and safe options and different latent outcome probabilities to limit practice effects.
 
 We calculated ICCs coefficients to assess the reliability of our model-agnostic measures. Specifically, we used consistency-based ICC(3,1) (following the notation of Shrout and Fleiss, 1979). To estimate the reliability of the model-derived measures, we estimated individual- and session-level model parameters via a joint model in an approach recently shown to improve the accuracy of estimating reliability (Waltmann et al., 2022). Briefly, this involved fitting behavioural data from both test and retest sessions per participant in a single model, but specifying unique parameters per session. Since our fitting algorithm assumes parameters are drawn from a multivariate Gaussian distribution, information about the reliability of the parameters can be derived from the covariance of each parameter across time. These covariance values can subsequently be converted to Pearson’s r values, and thus indices of reliability.
 
-## Materials availability statement
+### Materials availability statement
 
 The data and code required to replicate the data analyses are available online at https://osf.io/m3zev/.

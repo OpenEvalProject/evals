@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.33337.001 Adult skeletal muscle maintenance and regeneration depend on efficient muscle stem cell (MuSC) functions. The mechanisms coordinating cell cycle with activation, renewal, and differentiation of MuSCs remain poorly understood. Here, we investigated how adult MuSCs are regulated by (p57 CDKN1c kip2 ), a cyclin-dependent kinase inhibitor, using mouse molecular genetics. In the absence of , skeletal muscle repair is severely impaired after injury. We show that CDKN1c is not expressed in quiescent MuSCs, while being induced in activated and proliferating myoblasts and maintained in differentiating myogenic cells. In agreement, isolated CDKN1c Cdkn1c -deficient primary myoblasts display differentiation defects and increased proliferation. We further show that the subcellular localization of is dynamic; while CDKN1c is initially localized to the cytoplasm of activated/proliferating myoblasts, progressive nuclear translocation leads to growth arrest during differentiation. We propose that CDKN1c activity is restricted to differentiating myoblasts by regulated cyto-nuclear relocalization, coordinating the balance between proliferation and growth arrest. CDKN1c
+Adult skeletal muscle maintenance and regeneration depend on efficient muscle stem cell (MuSC) functions. The mechanisms coordinating cell cycle with activation, renewal, and differentiation of MuSCs remain poorly understood. Here, we investigated how adult MuSCs are regulated by CDKN1c (p57kip2), a cyclin-dependent kinase inhibitor, using mouse molecular genetics. In the absence of CDKN1c, skeletal muscle repair is severely impaired after injury. We show that CDKN1c is not expressed in quiescent MuSCs, while being induced in activated and proliferating myoblasts and maintained in differentiating myogenic cells. In agreement, isolated Cdkn1c-deficient primary myoblasts display differentiation defects and increased proliferation. We further show that the subcellular localization of CDKN1c is dynamic; while CDKN1c is initially localized to the cytoplasm of activated/proliferating myoblasts, progressive nuclear translocation leads to growth arrest during differentiation. We propose that CDKN1c activity is restricted to differentiating myoblasts by regulated cyto-nuclear relocalization, coordinating the balance between proliferation and growth arrest.
 
 ## Introduction
 
@@ -36,25 +36,79 @@ Although members of the Cip/Kip family have been shown to inhibit proliferation 
 
 ## Results
 
-## Cdkn1c is required for postnatal myogenesis
+### Cdkn1c is required for postnatal myogenesis
 
 Although Cdkn1c loss is generally associated with perinatal death (Yan et al., 1997; Zhang et al., 1997; Susaki et al., 2009; Mademtzoglou et al., 2017), a few Cdkn1c mutant mice survived in a mixed CD1;B6 background (4.2%; Figure 1—figure supplement 1A). Cdkn1c-deficient mice displayed reduced body weight compared to control littermates (Figure 1—figure supplement 1B–C). However, there was no significant difference in forelimb grip strength between Cdkn1c mutant and control mice at 1 or 2 months of age when the strength was calculated on a per weight basis. Strength was even slightly higher in 3- or 4-month-old Cdkn1c mutant mice compared to controls (Figure 1—figure supplement 1D). This difference could be explained by the smaller body weight of Cdkn1c mutants, possibly leading to increased relative grip strength (N/kg) in mutants. To evaluate the role of CDKN1c in muscle homeostasis, we examined sections of the hindlimb Tibialis anterior (TA) muscles in adult mice. Histological analysis showed that Cdkn1c knock-out muscles contained smaller fibers and displayed increased fibrosis (Figure 1A–D), implying hindered myogenic differentiation. The amount of centrally located nuclei, indicative of ongoing regeneration, was comparable in mutants and controls (Figure 1E). Myofiber culture conditions used allow MuSCs to become activated, start dividing (T24-48), and eventually, proceed to myogenic differentiation or self-renewal of the quiescent pool (T72) (Zammit et al., 2004). The number of PAX7+ MuSC on freshly isolated myofibers of Extensor digitorum longus (EDLs) was increased in Cdkn1c mutant mice compared to the controls (Figure 1F–G). Furthermore, PAX7+ MuSCs on Cdkn1c mutant myofibers were mostly MYOD-, at a similar percentage to controls (Figure 1H), indicating that Cdkn1c is not regulating MuSCs quiescence. When single myofibers were cultured for 72 hr (T72), Cdkn1c mutants displayed an increased ratio of PAX7+ MYOD- self-renewing cells and a decreased ratio of PAX7-MYOD+ differentiating myoblasts (Figure 1I–J). Taken together, our data suggest that in the absence of CDKN1c the MuSC compartment is correctly established, but a proportion of the MuSC population undergo increased self-renewal at the expense of differentiation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig1-v1.jpg)
+
+**Figure 1.:** (A) Hematoxylin and Eosin (HE) and Sirius red staining of control (Ctrl) and Cdkn1c mutant (Cdkn1c-Mut) mouse Tibialis anterior (TA) muscles were performed to examine muscle histology, centrally located nucleated myofibers, and fibrosis. Scale bars, 100 μm. (B) Histogram showing the average of myofiber diameters (μm). (C) Histogram of average fibrotic area per TA muscle. (D) Fiber size (μm) distribution in control and Cdkn1c mutant mice. (E) Histogram of number of fibers with centrally located nuclei. (F) PAX7+ (green) MuSCs (arrows) on the myofibers isolated from EDL muscles of Cdkn1c mutant and control mice. MYOD (red) is not normally expressed in PAX7+ MuSCs at T0 (quiescence). DAPI (blue) shows all nuclei. Scale bars, 50 μm. (G) Numbers of PAX7+ satellite cells on the myofibers isolated from EDL. (H) Ratio of MYOD+ activated cells per PAX7+ MuSC on the myofibers isolated from EDL muscles of Cdkn1c mutant and control mice. (I) Immunofluorescence for PAX7 (green) and MYOD (red) at T72 in single myofiber cultures. Arrows and arrowheads show PAX7+MYOD- quiescent satellite cells and PAX7-MYOD+ differentiating cells, respectively. Scale bars, 50 μm. (J) Quantification of ratios of PAX7+ and MYOD+ cells per fiber at T72. Nuclei were counter-stained with DAPI. *p≤0.05, **p≤0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A few Cdkn1c mutant (Cdkn1cM/-) mice survived postnatally in a mixed CD1;B6 background. (B–C) Body weight average of control (Ctrl) and Cdkn1c mutant male (B) and female (C) mice. (D) Forelimb grip strength normalized for body weight control and Cdkn1c mutant mice. *p≤0.05, **p≤0.01.
+
 Next, we evaluated the impact of CDKN1c loss on skeletal muscle regeneration. We performed intramuscular cardiotoxin (CTX) injections into the Tibialis anterior (TA) and sacrificed the mice at 3, (d3), 4 (d4), 7 (d7), and thirty (d30) days post-injury, to evaluate early and late time points of the regeneration procedure. Once muscle degeneration is induced, MuSCs undergo: (1) activation, (2) proliferation to expand their population, (3) self-renewal of the quiescent pool for future needs, and (4) differentiation for newly generated fibers and muscle repair (Relaix and Zammit, 2012). At d3 post-injury, loss of Cdkn1c promoted myoblasts proliferation and counteracted differentiation, as shown by increased EdU+ incorporation and reduced MYOD+EdU+ fraction, respectively. (Figure 2—figure supplement 1A,B). At d4 post-injury, Cdkn1c-deficient muscles showed smaller embryonic myosin (eMyHC)+ myofibers, a marker for early myofiber formation, compared to controls (Figure 2A,C). At d7 post-injury, Cdkn1c-deficient muscles showed increased cell infiltration and smaller and heterogeneous myofiber formation (Figure 2A,B,D), suggesting a delay in the regeneration process. At d30, signs of impaired regeneration associated with smaller fibers were observed (Figure 2A,B,E), including deposition of fibrotic tissue (Figure 2A,F) in Cdkn1c-mutant mice. Next, we evaluated the MuSC population from isolated myofibers of EDLs at d30 and TA muscle sections. The number of PAX7+ MuSCs was increased in Cdkn1c mutants compared to the controls (Figure 2G–H; Figure 2—figure supplement 1C,D) while the proportion of MYOD+ MuSCs was not altered (Figure 2I). Therefore, our data suggest that Cdkn1c is required for postnatal muscle repair. In addition, Cdkn1c mutant myogenic cells demonstrated increased propensity for stem-cell self-renewal during both tissue establishment and regeneration.
 
-## CDKN1c regulates the balance between proliferation and differentiation in activated myoblasts
+![Figure 2.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig2-v1.jpg)
+
+**Figure 2.:** (A) Embryonic myosin (eMyHC)/LAMININ/DAPI, Hematoxylin and Eosin (HE), and Sirius red staining of twelve- to fifteen-week-old control (Ctrl) and Cdkn1c mutant mouse TA muscles were performed for histological and fibrosis characterization 4, 7 or thirty days after cardiotoxin (CTX) injection. Scale bars, 100 μm. (B) Fiber size (μm) distribution in control (Ctrl) and Cdkn1c mutant (Cdkn1c-Mut) mice 7 (upper panel) or thirty (lower panel) days after CTX injection. (C) Histogram of average embryonic MyHC+ fiber diameters (μm) 4 days after CTX injection. (D) Histogram of average fiber diameters (μm) 7 and thirty days after CTX injection. (E) Fiber size (μm) distribution in control and Cdkn1c mutant mice thirty days after CTX injection. (F) Histogram of average fibrotic area per TA muscle. (G) PAX7+ (green) MuSCs (arrows) on the myofibers isolated from EDL muscles of Cdkn1c mutant and control mice thirty days after CTX injection. MYOD (red) is occasionally expressed in PAX7+ MuSCs (arrow heads). DAPI (blue) shows all nuclei. Scale bars, 50 μm. (H) Numbers of PAX7+ MuSCs on the EDL isolated myofibers . (I) Ratio of MYOD+ activated cells per PAX7+ MuSC on the myofibers isolated from EDL muscles of Cdkn1c mutant and control mice. Nuclei were counter-stained with DAPI. Scale bars, 100 μm. *p≤0.05, **p≤0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) EdU (green)/MYOD (red)/DAPI (blue) staining of TA muscle sections of control (Ctrl) and Cdkn1c mutant (Cdkn1c-Mut) mice at day 3 after CTX injection. Arrows indicate EdU-MYOD+ differentiating myoblasts. (B) Graph shows EdU±/MYOD ± cell ratio. (C) EdU (green)/PAX7 (red)/LAMININ (white)/DAPI (blue) staining of TA muscle sections of control (Ctrl) and Cdkn1c mutant (Cdkn1c-Mut) mice at day thirty after CTX injection. EdU+ or PAX7 + cells are indicated by green and red arrows, respectively. (D) Graph shows EdU±/PAX7± cell ratio per 1 mm2 section area. Scale bar, 50 μm. *p≤0.05 and **p≤0.01.
+
+### CDKN1c regulates the balance between proliferation and differentiation in activated myoblasts
 
 We next abrogated CDKN1c specifically in adult MuSC to avoid cell non-autonomous effects and bypass the impact of CDKN1c loss during development. To conditionally ablate Cdkn1c, we have generated a floxed Cdkn1c allele (Cdkn1cFlox) to enable conditional knock-out of Cdkn1c using the Cre/loxP system (Mademtzoglou et al., 2017). Given that Cdkn1c is an imprinted gene expressed only by the maternal allele (Matsuoka et al., 1995), we used heterozygotes with maternal inheritance of Cdkn1cFlox, hereafter indicated as Cdkn1cFlox(m)/+. To specifically target the MuSCs and their progeny, we intercrossed Cdkn1cFlox mice with the Pax7CreERT2 line (Lepper et al., 2009). In the compound mice, tamoxifen (TMX) administration results in CreERT2 translocation to the nucleus and Cdkn1c excision in the MuSC lineage. One week of TMX administration led to 84.5% recombination efficiency (Figure 3—figure supplement 1A–B). We then inserted Cdkn1cFlox and Pax7CreERT2 in the ROSAmTmG background (Muzumdar et al., 2007). These double-fluorescent mice report Cre activity by expressing membrane-Tomato (mT) prior to Cre-mediated excision and membrane-GFP (mG) after excision. This allowed us to selectively isolate recombined (GFP+) MuSC cells.
 
 We isolated by flow cytometry GFP+ MuSCs of control (Pax7CreERT2; Cdkn1c+/+; ROSAmTmG/+) and Cdkn1c-deficient (Pax7CreERT2; Cdkn1c Flox(m)/+; ROSAmTmG/+) mice. Collected cells grew in expansion conditions (20% fetal bovine serum, 10% horse serum) up to 70% confluence and then were serum-deprived to differentiate for 1 or 3 days (Figure 3A). Cdkn1c transcript and protein were induced by differentiation in control cells (Figure 3B–C). In contrast, they were not detected in cells from mutant animals (Figure 3B,D), demonstrating efficient Cre-mediated recombination of the Cdkn1c allele in FACS-isolated cells. We then performed primary myoblast cultures from control and Cdkn1c-deficient mice. We monitored proliferating cells under ‘growth’ (high serum) or ‘differentiation’ (low serum) conditions, and at d1 and d3 post-differentiation we stained with early (e.g. MYOGENIN) or late (i.e. Myosin heavy chain, MyHC) differentiation markers, respectively. Consistent with the function of CDKN1cas a cell cycle inhibitor, we observed increased proliferation in primary myoblasts derived from MuSC-specific Cdkn1c mutant mice. When cells were maintained in growth conditions for 5 days, we observed 50% and 38% more EdU+ and KI67+ cells, respectively, in the absence of CDKN1c (Figure 3E–H), suggesting that CDKN1c is involved in restraining cell cycle progression. Slightly more PAX7+ EdU+ cells were observed in the Cdkn1c-deficient myoblast cultures, while differences in MYOD+ EdU+ or MYOGENIN+ EdU+ populations did now show significant differences (Figure 3—figure supplement 1C–F). Furthermore, in cultures of FACS-isolated MuSCs from MuSC-specific Cdkn1c-deficient mice, myogenic differentiation was impaired. One-day post-differentiation, MYOGENIN was significantly decreased (Figure 3I,K,L). In addition, myotube formation 3 days post-differentiation was severely compromised (Figure 3J,M,N). We also detected a similar increase in cell proliferation and reduction in myogenic differentiation in primary myoblasts isolated from global Cdkn1c mutant mice (Figure 3—figure supplement 2). In conclusion, both MuSC-specific and global ablation of CDKN1c led to increased primary myoblasts proliferation at the expense of myogenic differentiation. Together, our data demonstrate that CDKN1c is required in MuSCs for correct cell cycle regulation and differentiation during postnatal myogenesis.
 
-## Satellite-cell-specific CDKN1c loss compromises muscle regeneration
+![Figure 3.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig3-v1.jpg)
+
+**Figure 3.:** (A) Time-course of tamoxifen (TMX) administration, muscle satellite cell harvest (FACS arrow) and culture (light gray bar for growth culture conditions, dark gray bar for differentiation culture conditions). Analyzed animals were Pax7CreERT2/+; Cdkn1cFlox(m)/+;RosamTmG (Cdkn1c cKO) and Pax7CreERT2/+; Cdkn1c+/+;RosamTmG (control; Ctrl); maternal inheritance of the imprinted Cdkn1c is indicated by superscript (m). (B) Cdkn1c transcript levels of control and Cdkn1c cKO myoblast cultures 3 days post-differentiation. ND; not detected. (C–D) Control (C) and Cdkn1c cKO (D) myoblast cultures were examined for CDKN1c protein (red) following three days under differentiation conditions. (E–N) Control and Cdkn1c cKO myoblast cultures were examined for EdU+ (light blue) cells (E, G, H), KI67+ cells (F), MYOGENIN+ cells (green; I, K, L), and myotube formation (J, M, N). Nascent myotubes were marked with myosin heavy chain (MyHC; green; M, N). Nuclei were counter-stained with DAPI (blue). Graphs show quantification of EdU and KI67 expression under growth conditions (E, F), MYOGENIN expression following 24 hr under differentiation conditions (I), and MyHC+ cells following 72 hr under differentiation conditions (J). Data show mean +SD, n = 3 animals. Asterisks indicate significance; *p≤0.05, ***p≤0.001. Scale bars, 40 μm (C, K), 1000 μm (G, M).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Time-course of tamoxifen administration, muscle satellite cell harvest (FACS arrow) and culture. Analyzed animals were Pax7CreERT2/+; Cdkn1cFlox(m)/+;RosamTmG (Cdkn1c cKO) and Pax7CreERT2/+; Cdkn1c+/+;RosamTmG (control; Ctrl); maternal inheritance of the imprinted Cdkn1c is indicated by superscript (m). (B–D) Control and Cdkn1c cKO myoblast cultures were examined for PAX7 (B), MYOD (C), and MYOGENIN (D) expression in the EdU+ fraction, following 2-hr incubation with 2 μM EdU prior to cell fixation. Data show mean +SD, n = 3 animals. Asterisks indicate significance; *p≤0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Control (Ctrl) and Cdkn1c mutant (Cdkn1c-Mut) primary myoblasts are positive for both PAX7 and MYOD. (B) Under growth conditions, EdU+ cells are significantly higher in Cdkn1c mutant primary myoblasts compared with control cells. By contrast, there is no difference for MyHC+ differentiating cells. (C) Under differentiation conditions, Cdkn1c mutant primary myoblasts display reduced differentiation kinetics detected by MyHC in both day 1 and 3. However, in day 5, myogenic differentiation is almost saturated in both control and Cdkn1c mutant primary myoblasts. Nuclei were counter-stained with DAPI. Scale bars, 50 μm. *p≤0.05, **p≤0.01.
+
+### Satellite-cell-specific CDKN1c loss compromises muscle regeneration
 
 We next evaluated the impact of MuSC-specific Cdkn1c ablation, driven by Pax7CreERT2 (Lepper et al., 2009), on skeletal muscle regeneration after injury. Following 4 weeks of tamoxifen administration to induce recombination in adult (8- to 12-week-old) mice, we injected control and Pax7CreERT2/+; Cdkn1cFlox (Cdkn1c cKO) TA muscles with CTX and evaluated muscle repair at 7 days post-injury (Figure 4A), having achieved 94.5% recombination efficiency in MuSCs (Figure 4—figure supplement 1A–B). Of note, Pax7CreERT2/+ (hereafter, Cre control) animals only express one allele of Pax7, as the Cre recombinase is inserted into the Pax7 gene. Hence, in all experiments we also included Cre control mice, as we found that Pax7CreERT2 (Lepper et al., 2009) heterozygous mice display a mild regeneration phenotype (Figure 4B–G’), hence potentially acting as sensitizing background. Histological analysis at d7 post-injury showed normal tissue repair in wild-type (Wt) muscles (Figure 4B,C). In contrast, Cre control muscles showed increased cell infiltration and reduced regenerated myofibers of smaller sizes compared to Wt (Figure 4B’; Figure 4—figure supplement 1C–D), while muscle regeneration was severely compromised in Cdkn1c cKO muscles, in which newly formed myofibers were rare and small and most of the tissue consisted of cell infiltration and fat deposits (Figure 4B’’, C’’; Figure 4—figure supplement 1C–D). Furthermore, induction of early differentiation was delayed, as evidenced by the presence of embryonic eMyHC+ fibers in Cdkn1c cKO and Cre control, but not in Wt muscles at this time point (Figure 4D–E’’). Consistent with the lack of tissue regeneration, we observed a massive diminution of the MuSC compartment in Cdkn1c cKO muscles (Figure 4F–H). Together, our data reveal that CDKN1c expression in the myogenic lineage is required for muscle repair.
 
-## Dynamic CDKN1c expression in adult myogenesis
+![Figure 4.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig4-v1.jpg)
+
+**Figure 4.:** (A) Time-course of tamoxifen administration, intramuscular injury of TA muscle (CTX arrow), and muscle harvest (D7 arrow). (B–G) Cryosections of TA muscle were stained for histological and satellite cell population characterization 7 days after CTX injection. Analyzed animals at (B-G) were wild-type littermates (Wt; Pax7+; Cdkn1c+; B–G), Cre control (Pax7CreERT2; B’–G’), and Cdkn1c cKO (Pax7CreERT2; Cdkn1cFlox; B’’–G’’). (B) HE staining for histologic characterization of the muscles. (C) Oil Red O staining for evaluation of fat infiltration of the muscles. (D–E) embryonic myosin (eMYHC, red)/LAMININ (LAM, green) immunofluorescence to mark newly formed myofibers post-regeneration. (F–G) PAX7 (red)/LAMININ (LAM, green) immunofluorescence to mark PAX7+ satellite cells. Nuclei in (D-G) were counter-stained with DAPI (blue). Scale bars, 50 μm. (H) Quantification of (F-G). Data show mean +SD, n ≥ 5 animals. Asterisks indicate significance; **p≤0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig4-figsupp1-v1.jpg)
+
+### Dynamic CDKN1c expression in adult myogenesis
 
 To analyze the expression of CDKN1c during MuSC-mediated myogenesis, we isolated single myofibers with their associated PAX7+ MuSCs from EDL muscles of adult wild-type mice. Immunostaining experiments, using a CDKN1c-specific antibody, showed that quiescent MuSCs were not labeled (Figure 5—figure supplement 1A). Similarly, MuSCs of resting adult TA muscles were CDKN1c-negative following labeling of cryosections (Figure 5—figure supplement 1B). To evaluate the kinetics of CDKN1c expression during activation, self-renewal, and differentiation, we analyzed myofibers that were cultured from 24 to 72 hr. Zammit et al., 2004During the initial proliferation state (T24-T48) MuSCs co-express PAX7 and MYOD (Zammit et al., 2004). Activated PAX7+ and MYOD+ myoblasts at T24-T48 presented with increasing amounts of CDKN1c. Unexpectedly, this negative cell cycle regulator was not expressed in the quiescent population, but in activated MuSCs entering the cell cycle. However, during this early proliferation phase, CDKN1c was restricted to the cytoplasm (Figures 5A–B and 6A–B). Consistent with these findings, CDKN1c was mainly restricted to the cytoplasm at d3 following CTX injection in vivo, a time point when most cells are in a proliferative state (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig5-v1.jpg)
+
+**Figure 5.:** (A) Satellite-cell-derived myoblasts (T24–T48) of single EDL myofibers stained with PAX7 (green) and CDKN1c (red). Arrowheads indicate PAX7+ cells. (B) Satellite cell-derived myoblasts of single EDL myofibers stained with MYOD (green) and CDKN1c (red). Arrowheads indicate MYOD+ cells. Nuclei were counter-stained with DAPI. n ≥ 3. Scale bars, 40 μm. (C) CDKN1c (red) staining of TA muscle at 3 (D3) or t (D13) days after CTX injection. Asterisks indicate regions with cytoplasmic CDKN1c. # indicates central nuclei of newly formed fibers during muscle regeneration. Nuclei were counter-stained with DAPI. Scale bars, 20 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Muscle satellite cells (MuSCs; T0) stained with PAX7 (green) and Cdkn1c (red) in single myofiber cultures of EDL muscles. (B) Cdkn1c (red) presence in TA muscle section. MuSCs were marked with PAX7 (green) and fibers were outlined with LAMININ (gray). Arrowheads indicate Cdkn1c + cells. Asterisks indicate satellite cells. Nuclei were counter-stained with DAPI. Scale bars, 40 μm.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Immunofluorescence for PAX7 (A; green), MYOD (B; green), MYOGENIN (C; green) or KI67 (D; green) and Cdkn1c (red) at T72 in single myofiber cultures of EDL muscles and quantification of PAX7+ (A), MYOD+ (B), MYOGENIN+ (C) or KI67+ (D) cells that co-expressed CDKN1c over the time-course of the culture. Cytoplasmic (light blue) or nuclear (dark blue) localization of CDKN1c is indicated in the graphs. Scale bars, 40 μm. (E) Immunofluorescence for Cyant fluorescent protein (CFP, green), KI67 (purple), and CDKN1c (red) in transduced (i.e. CFP+) myoblasts at T72 in single myofiber cultures. Fibers were transduced with empty retroviruses (control; left panel), retroviruses expressing full-length Cdkn1c (Cdkn1c FL; middle panel) or Nuclear localization signal-deficient Cdkn1c (Cdkn1c–NLS; right panel). (F) Quantification of transduced (CFP+) myoblasts that were proliferating (KI67+). Nuclei were counter-stained with DAPI (blue). Scale bars, 20 μm. Data show mean +SD, n ≥ 3 animals, 20–32 fibers/animal. *p≤0.05 compared to control virus.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Chromatin immunoprecipitation followed by qPCR on C2C12 myogenic cells 4 days after differentiation induction. Enrichment was evaluated in myogenic regions that have previously been shown to be MYOD-regulated by the ChIP-sequencing study of Cao et al. (2010).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/33337/elife-33337-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Time-course of single myofiber culture, transduction of activated myoblasts with virus, and readouts. (B–D) Quantification of transduced (CFP+) myoblasts that were differentiating, as evaluated by expression of MYOGENIN at T48 (B) and T72 (C) or MYOD (T72; D). Data show mean +SD, n = 3 animals, 20–30 fibers/animal. *p≤0.05 compared to control virus. (E) Time-course of tamoxifen administration, muscle satellite cell harvest (FACS arrow) and culture, transduction of activated myoblasts with virus, and readouts. (F–G) Quantification of transduced (CFP+) myoblasts that were proliferating (KI67+; F) or differentiating (MYOGENIN+; G). Data show mean +SD, n = 3 animals. *p≤0.05. (A–G) Myoblasts were transduced with empty retroviruses (control), retroviruses expressing full-length Cdkn1c (Cdkn1c FL) or Nuclear localization signal-deficient Cdkn1c (Cdkn1c–NLS). Analyzed animals in (A-D) were wild-type C57BL/6. Analyzed animals in (E-G) were Pax7CreERT2/+; Cdkn1cFlox(m)/+;RosamTmG (Cdkn1c cKO); maternal inheritance of the imprinted Cdkn1c is indicated by superscript (m).
 
 At T72, clusters composed of cells at different states are observed, including differentiation (loss of PAX7 expression associated with expression of MYOD and MYOGENIN) and self-renewal (maintenance of PAX7, loss of MYOD, and lack of MYOGENIN) (Zammit et al., 2004). Thus, there is a mixed population of self-renewing (cells expressing PAX7 alone), activated/proliferating (cells co-expressing PAX7 and MYOD), and differentiating (cells expressing MYOGENIN and/or MYOD) myogenic cells. At this stage, we observed high percentages of CDKN1c expression in each of these populations (Figure 6A–C). Interestingly, as differentiation proceeded (MYOD+ followed by MYOGENIN +at T72), Cdkn1c expression became increasingly nuclear (Figure 6B–C). Although Cdkn1c was mostly cytoplasmic in PAX7+/Cdkn1c + T72 myoblasts, Cdkn1c exhibited nuclear presence in around 25% of MYOD+/Cdkn1c+ and 55% of MYOGENIN+/Cdkn1c + T72 myoblasts (Figure 6A–C). In line with this, Cdkn1c protein was mainly restricted to cell nuclei at late stages of regeneration following in vivo muscle injury (d13 post-CTX; Figure 5C). Finally, similarly to the T24-T48 activated/cycling populations of myoblasts in single myofibers ex vivo, Cdkn1c continued to be present in KI67+ proliferating cells at T72, yet limited to their cytoplasm (Figure 6D). Next, to evaluate whether Cdkn1c nuclear translocation was linked with its association with MYOD (Reynaud et al., 2000; Vaccarello et al., 2006; Figliola et al., 2008; Osborn et al., 2011; Busanello et al., 2012; Battistelli et al., 2014; Zalc et al., 2014), we used data generated by a MYOD ChIP sequencing experiment (Cao et al., 2010) to identify MYOD-binding sites at muscle regulatory regions. We performed ChIP experiments with an anti-Cdkn1c antibody to test whether Cdkn1c shares these binding sites with MYOD, and we found no significant enrichment at any of the tested sites (Figure 6—figure supplement 1).
 
@@ -78,47 +132,698 @@ In conclusion, our data indicate that CDKN1c plays essential roles at the initia
 
 ## Materials and methods
 
-## Mouse lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Cdkn1ctm1Sje</td>
+      <td>The Jackson Laboratory; PMID: 9144284</td>
+      <td>MGI: J40203, RRID:IMSR_JAX:003336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>p57flox</td>
+      <td>PMID: 28196404</td>
+      <td></td>
+      <td>Mouse line generated by the group of F.Relaix and characterized in Mademtzoglou et al. (2017); Genesis 55(4) doi: 10.1002/dvg.23025</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Pax7CreERT2/+</td>
+      <td>The Jackson Laboratory; PMID: 19554048</td>
+      <td>MGI: J:150962; RRID:IMSR_JAX:012476</td>
+      <td>Mouse line obtained from C.M. Fan</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>RosamTmG</td>
+      <td>The Jackson Laboratory; PMID: 17868096</td>
+      <td>MGI: J:124702; RRID:IMSR_JAX:007576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (synthetic)</td>
+      <td>pGEMT-Easy vector</td>
+      <td>Promega</td>
+      <td>A1360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>DSMZ</td>
+      <td>ACC635; RRID:CVCL_0063</td>
+      <td>https://www.dsmz.de/catalogues/details/culture/ACC-635.html?tx_dsmzresources_pi5%5BreturnPid%5D=192</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>C2C12</td>
+      <td>American Type Culture Collection (ATCC); PMID: 28966089</td>
+      <td>CRL-1772; RRID: CVCL_0188</td>
+      <td>Cell line maintained in E. Gomes lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD31-PE (monoclonal)</td>
+      <td>eBiosciences</td>
+      <td>12-0311-81; RRID:AB_465631</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD45-PE (monoclonal)</td>
+      <td>eBiosciences</td>
+      <td>12-0451-81; RRID:AB_465667</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-embryonic MyHC (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>F1.652; RRID:AB_528358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-embryonic MyHC (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc53091; RRID:AB_670121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab13970; RRID:AB_300798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-integrin a-biotin (mouse)</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-101-979; RRID:AB_2652472</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IgG (rabbit)</td>
+      <td>Diagenode</td>
+      <td>C15410206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KI67 (mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>556003; RRID:AB_396287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Laminin (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>L9393; RRID:AB_477163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Laminin (rat monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>4H8-2; RRID:AB_784266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Laminin (rabbit polyclonal)</td>
+      <td>Novus Biological</td>
+      <td>NB300-144AF647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MyHC (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>mf20-c; RRID:AB_2147781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MyoD (mouse monoclonal)</td>
+      <td>DAKO</td>
+      <td>M3512; RRID:AB_2148874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MyoD (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-760; RRID:AB_2148870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myogenin (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>F5D; RRID:AB_2146602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p57 (goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc1039; RRID:AB_2078158</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p57 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc56431; RRID:AB_2298043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p57 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc8298; RRID:AB_2078155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Pax7 (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>PAX7-c; RRID:AB_528428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sca-1-PE (mouse)</td>
+      <td>eBiosciences</td>
+      <td>12-5981-81; RRID:AB_466085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>fab fragment affinity- purified antibody (goat)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>115-007-003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AGGGCATATCC AACAACAAACTT</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>qPCR HPRT (Forward primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GTTAAGCAGTA CAGCCCCAAA</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>qPCR HPRT (Reverse primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CTGAAGGACCA GCCTCTCTC</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>qPCR p57 (Forward primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AAGAAGTCGTT CGCATTGGC</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>qPCR p57 (Reverse primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ATCTGAGGTCA GCCATTTGGT</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Mef2a (Forward primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GCTAAGGACAG CTGTGACCTG</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Mef2a (Reverse primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TTAAAGACATGTG GCAACAGACTAC</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Lmn2b (Forward primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TGCTCTTTCTGTA CTGTGTGGTG</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Lmn2b (Reverse primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GGAGTGATTGA GGTGGACAGA</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Lincmd1 (Forward primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CTCTCCCACCTG TTTGTGTCTT</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Lincmd1 (Reverse primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AATTACAGCCG ACGGCCTCC</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Myogenin (Forward primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCAACGCCACA GAAACCTGA</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Myogenin (Reverse primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CAGCTCCTTG CCCTGTGAAA</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Desmin-proximal (Forward primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TGTAGCCCTCC TGACATCAC</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Desmin proximal (Reverse primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCAAAAGGG CCGATGAGGAA</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Desmin distal (Forward primer)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TAGAGACAGA CCAGTGGCGG</td>
+      <td>Eurogentec</td>
+      <td>N/A</td>
+      <td>ChIP qPCR Desmin distal (Reverse primer)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler 480 SYBR Green I Master</td>
+      <td>Roche-Sigma-Aldrich</td>
+      <td>04887352001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iDeal ChIP-seq kit</td>
+      <td>Diagenode</td>
+      <td>C01010051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNasy Micro Kit</td>
+      <td>QIAGEN</td>
+      <td>74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Transcriptor First Strand cDNA Synthesis Kit</td>
+      <td>Roche-Sigma-Aldrich</td>
+      <td>4379012001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bFGF</td>
+      <td>Peprotech</td>
+      <td>450–33</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bFGF</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PHG0263</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine serum albumin (BSA)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>10001620</td>
+      <td>0.2%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cardiotoxin</td>
+      <td>Latoxan</td>
+      <td>L8102</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cardiotoxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>217503–1 mg</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chicken embryo extract</td>
+      <td>MP-Biomedical</td>
+      <td>92850145</td>
+      <td>0.5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chicken embryo extract</td>
+      <td>Seralab</td>
+      <td>CE-650-J</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>collagen</td>
+      <td>BD Biosciences</td>
+      <td>354236</td>
+      <td>culture dish coating</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type I</td>
+      <td>Sigma-Aldrich</td>
+      <td>C0130</td>
+      <td>0.2%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type I</td>
+      <td>Worthington Biochemical Corp</td>
+      <td>9001-12-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase A</td>
+      <td>Roche-Sigma-Aldrich</td>
+      <td>11088793001</td>
+      <td>0.2% w/v</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI (4’,6-diamidino-2- phenylindole dihydrochloride)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dispase II</td>
+      <td>Roche-Sigma-Aldrich</td>
+      <td>4942078001</td>
+      <td>2.4 U/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNaseI</td>
+      <td>Roche-Sigma-Aldrich</td>
+      <td>11284932001</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco’s Modified Eagle’s Medium (DMEM)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>41966</td>
+      <td>single myofiber culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM with GlutaMAX</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>61965</td>
+      <td>myoblast culture</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EdU</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C10340</td>
+      <td>2 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>F-10 Ham's media</td>
+      <td>Sigma-Aldrich</td>
+      <td>N6635</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10270</td>
+      <td>20%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal calf serum (FCS)</td>
+      <td>Eurobio</td>
+      <td>CVFSVF00-01</td>
+      <td>10% (prol/tion medium), 2% (diff/tion medium)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoromount-G</td>
+      <td>Southern Biotech</td>
+      <td>0100–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hanks' Balanced Salt Solution (HBSS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>14025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hepes</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15630</td>
+      <td>0.1M</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Horse serum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>26050088</td>
+      <td>5% (coating), 10% (culture)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>25030</td>
+      <td>20 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>matrigel</td>
+      <td>Corning Life Sciences</td>
+      <td>354230</td>
+      <td>1:20 in DMEM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin/streptomycin</td>
+      <td>Life Technologies</td>
+      <td>15140</td>
+      <td>1X</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyruvate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11360</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CS5</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other (anti-biotin beads)</td>
+      <td>anti-biotin beads</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-090-485; RRID:AB_244365</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Other (anti-PE beads)</td>
+      <td>anti-PE beads</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-048-801; RRID:AB_244373</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Other (chamber slides)</td>
+      <td>chamber slide</td>
+      <td>Nalge Nunc International</td>
+      <td>177445</td>
+      <td>myoblast culture</td>
+    </tr>
+    <tr>
+      <td>Other (culture plates)</td>
+      <td>petri dish</td>
+      <td>Sigma-Aldrich</td>
+      <td>Z692301</td>
+      <td>single myofiber culture</td>
+    </tr>
+    <tr>
+      <td>Other (LD column)</td>
+      <td>LD column</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-042-901</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Other (MS column)</td>
+      <td>MS column</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-042-201</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Other (grip strength meter)</td>
+      <td>grip strength meter</td>
+      <td>Columbus Instruments</td>
+      <td>1027CSM-D54</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse lines
 
 The following mouse lines have been previously described: Pax7CreERT2/+ (Lepper et al., 2009), RosamTmG (The Jackson Laboratory, stock 007576), Cdkn1ccKO (m)/+ (Cdkn1c is imprinted with preferential expression of the maternal allele; superscript (m) indicates maternal inheritance) (Mademtzoglou et al., 2017), Cdkn1c+/- (Zhang et al., 1997). Cdkn1c+/-female mice (C57BL/B6J background, Jackson Laboratory) were bred with CD1 (Evigo) male mice to generate Cdkn1cm/- CD1/B6 hybrid mice. Non-mutant littermates were used as controls. For recombination induction with the Pax7CreERT2 allele, mice were fed in tamoxifen diet (TD.55125.I, Envigo). C57BL/6J (Janvier) mice were used as wild-type animals for Figures 5–6. Adult mice of 8 to 16 weeks of age were used. At least three mice per genotype were assessed. All animals were maintained inside a barrier facility, and all in vivo experiments were performed in accordance with the French and European Community guidelines (File No: 15–018 from the Ethical Committee of Anses/ENVA/UPEC) and Institutional Animal Care and the Use Committee of University of Minnesota (1604-33660A) for the care and use of laboratory animals.
 
-## Single myofiber isolation and culture
+### Single myofiber isolation and culture
 
 Single muscle fibers were isolated by enzymatic digestion and mechanical disruption of EDL muscles (Moyle and Zammit, 2014). For enzymatic digestion, muscles were incubated for 90 min at 37°C with 0.2% collagenase type I (C0130, Sigma-Aldrich) in Penicillin/Streptomycin(P/S)-supplemented DMEM (41966, ThermoFisher Scientific). For mechanical disruption, muscles were transferred to 5%-horse-serum-coated deep petri dishes (Z692301, Sigma-Aldrich) with P/S-supplemented DMEM and medium was flushed against the muscle. Detached fibers were transferred into new dishes with P/S-supplemented DMEM. For timed culture, all fibers were transferred after finishing isolation into 5%-horse-serum-coated six-well plates and cultured in the presence of 10% horse serum and 0.5% chicken embryo extract (#092850145, MP Biomedicals). Single myofibers for Figure 6E–F and Figure 6—figure supplement 2 were cultured in the presence of 20% FBS (#10270, Life Technologies) and 1% chicken embryo extract (#CE-650-J, Seralab).
 
-## Retroviral cloning and infection
+### Retroviral cloning and infection
 
 Cdkn1c cDNA was cloned by PCR from mouse cDNA and subcloned in the pGEMT-Easy vector (#A1360, Promega). An additional primer was also designed to produce Cdkn1c cDNA lacking the NLS and following sequences (Lee et al., 1995). Full-length or -NLS Cdkn1c were subsequently subcloned -using XhoI and EcoRI added to cloning primers- into the MISSINCK retroviral production vector, which was based on the pMSCV- IRES-eGFP (MIG) vector (Pear et al., 1998), substituting eGFP with an insulin signal sequence-Cyan Fluorescent Protein (CFP)-KDEL sequence in order to restrict fluorescent tracker expression to the endoplasmic reticulum and Golgi (Alonso-Martin et al., 2016). MISSINCK retroviruses expressing either full-length or -NLS Cdkn1c were produced in 293T (DSMZ, #ACC635) cells, and retroviral supernatant was acquired 50 hr post-transfection of 293 T cells. For transduction, single myofiber cultures were incubated with 1:10 diluted retroviral supernatant from 24 to 72 hr after fiber isolation (Figure 6E; Figure 6—figure supplement 2A–D) and primary myoblasts were incubated with 1:10 diluted retroviral supernatant from 48 to 120 hr after FACS isolation (Figure 6—figure supplement 2E–G).
 
-## Cell sorting and culture
+### Cell sorting and culture
 
 Using the tamoxifen-inducible Cre line Pax7CreERT2, membrane-GFP is expressed in muscle satellite cells (MuSCs) of Pax7CreERT2; RosamTmG mice. Hindlimb muscles were dissociated by 0.2% w/v collagenase A (11088793001, Roche) and 2.4 U/ml dispase II (04942078001, Roche) in digestion buffer [HBSS (14025, Thermo Scientific), 1% Penicillin/Streptomycin, 10 ng/ml DNase I (11284932001, Sigma), 0.4 mM CaCl2, 5 mM MgCl2, 0.2% bovine serum albumin (BSA; 0010001620, Jackson ImmunoResearch)] with 90 min incubation at 37°C. Dissociated muscles were filtered through 100 μm and 40 μm cell strainers. GFP +cells were collected based on gating of GFP signal.
 
 Sorted cells were plated on matrigel (354230, Corning Life Sciences)-coated chamber slides (177445, Nalge Nunc International). They were initially cultured in high-serum conditions (referred to as ‘growth phase’) with 20% fetal bovine serum, 10% horse serum and 1:4000 bFGF (20 ng/ml; 450-33B, PeproTech) in DMEM + Glutamax (61965, ThermoFisher Scientific) supplemented with 1% P/S, 20 mM L-glutamine (25030, Thermo Scientific), 10 mM pyruvate (11360, Thermo Scientific), and 0.1M Hepes (15630, Thermo Scientific). Upon reaching 70% confluence at 5 days post-plating, they were switched to low-serum conditions (5% horse serum in P/S-supplemented DMEM + Glutamax) to differentiate (referred to as ‘differentiation phase’). EdU (2 μM; C10340, Thermo Fisher Scientific) chase was performed for 2 hr. EdU-incorporating cells were detected according to the manufacturer’s protocol.
 
-## Myoblast culture
+### Myoblast culture
 
 Hindlimb muscle of control or Cdkn1c mutant mice was harvested for isolation of MuSC-derived primary myoblasts as described previously (Asakura et al., 2001; Motohashi et al., 2014). Briefly, muscle was dissected, minced and then digested in type I collagenase (Worthington Biochemical Corp.). The dissociated cells were filtered, and incubated with anti-CD45-PE, anti-Sca-1-PE, and anti-CD31-PE antibodies (all from eBiosciences) and integrin α-biotin antibody (Miltenyi Biotec) followed by anti-PE beads (Miltenyi Biotec). For magnetic-activated cell sorting (MACS), LD column (Miltenyi Biotec) was used for negative selection to remove non-muscle cells. Flow-through fraction was used for incubation with anti-biotin beads (Miltenyi Biotec) followed by MS column (Miltenyi Biotec). Enriched MuSCs were fractionated as a positive fraction. MuSC-derived primary myoblasts were cultured in growth media, F-10 Ham's media supplemented with 20% FBS, 20 ng/ml basic fibroblast growth factor (Invitrogen) and 1% penicillin-streptomycin (Gibco) on culture dishes coated with collagen (BD Biosciences), and the growth medium was changed every two days. Procedures for EdU experiments and myogenic differentiation were described above.
 
-## Gene expression analysis
+### Gene expression analysis
 
 RNA was extracted with the RNeasy Micro kit (74004, Qiagen), according to the manufacturer’s instructions. cDNA was synthetized with the Transcriptor First Strand cDNA Synthesis kit (04379012001, Roche). RT-qPCR reactions were carried out in triplicate using the LightCycler 480 SyBR Green I Master (04887352001, Roche). Hypoxanthine Phosphoribosyltransferase 1 (HPRT) transcripts were used for normalization. Oligonucleotides sequences were AGGGCATATCCAACAACAAACTT and GTTAAGCAGTACAGCCCCAAA for HPRT and CTGAAGGACCAGCCTCTCTC and AAGAAGTCGTTCGCATTGGC for Cdkn1c.
 
-## C2C12 culture and ChIP-qPCR
+### C2C12 culture and ChIP-qPCR
 
 C2C12 (PMID: 28966089) cells were grown in DMEM High Glucose (#41966, Life Technologies) supplemented with 10% SVF (Eurobio) until reaching 70% confluence and then they were changed to low serum (2% SVF), differentiation, conditions for four days. Cells were collected and processed for ChIP with the iDeal ChIP-seq kit (C01010051, Diagenode) according to manufacturer’s instructions. 1 μg of a mouse anti-Cdkn1c (sc56341, Santa Cruz) or IgG negative control (C15410206, Diagenode) was used. The precipitated and input chromatins were analyzed by qPCR. Primer sequences are listed in Table 1.
 
-## Muscle regeneration
+**Table 1.**
+ Sequences of primers used for the ChIP-qPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regulated gene/region</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mef2a</td>
+      <td>ATCTGAGGTCAGCCATTTGGT</td>
+      <td>GCTAAGGACAGCTGTGACCTG</td>
+    </tr>
+    <tr>
+      <td>Lmn2b</td>
+      <td>TTAAAGACATGTGGCAACAGACTAC</td>
+      <td>TGCTCTTTCTGTACTGTGTGGTG</td>
+    </tr>
+    <tr>
+      <td>Lincmd1</td>
+      <td>GGAGTGATTGAGGTGGACAGA</td>
+      <td>CTCTCCCACCTGTTTGTGTCTT</td>
+    </tr>
+    <tr>
+      <td>Myogenin</td>
+      <td>AATTACAGCCGACGGCCTCC</td>
+      <td>CCAACGCCACAGAAACCTGA</td>
+    </tr>
+    <tr>
+      <td>Desmin (proximal)</td>
+      <td>CAGCTCCTTGCCCTGTGAAA</td>
+      <td>TGTAGCCCTCCTGACATCAC</td>
+    </tr>
+    <tr>
+      <td>Desmin (distal)</td>
+      <td>CCAAAAGGGCCGATGAGGAA</td>
+      <td>TAGAGACAGACCAGTGGCGG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Muscle regeneration
 
 Adult (12- to 15-week-old) mice in Figure 2 and Figure 2—figure supplement 1 were intramuscularly injected with 70 µl of 10 μM cardiotoxin (CTX) solution (Sigma-Aldrich) into the Tibialis Anterior (TA) after being anesthetized by i.p. injection of Avertin (Sigma-Aldrich) (Asakura et al., 2002). Muscles were recovered 3, 4, 7 or 30 days post-injury. Five mg/kg of EdU was injected at 24 hr before sacrifice for EdU staining.
 
 Adult (8- to 12-week old) mice in Figure 4 and Figure 5C were intramuscularly injected with 45 ul of 10 μM CTX (Latoxan) into the TA after being anesthetized by i.p. injection of ketamine-xylasin. Muscles were recovered at 3, 7 or 13 days post-injury.
 
-## Grip strength test
+### Grip strength test
 
 The maximum grip strength using a grip strength meter (Columbus Instruments) was determined by taking the average of the three highest values out of the 15 values collected and normalized by body weight (Aartsma-Rus and van Putten, 2014). We performed three sets of five consecutive measurements for one set, and mice were allowed to rest for at least 20 min between the sets.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Sections: Muscles were frozen fresh in liquid nitrogen-cooled isopentane and sectioned at 8 µm. Frozen sections were fixed with 4% paraformaldehyde/PBS for 20 min at room temperature. For hematoxylin-eosin staining, nuclei were stained with hematoxylin (Sigma-Aldrich) for 11 min and cytoplasmes were counter-stained with eosin (Sigma-Aldrich) for 30 s. The sections were then dehydrated with brief passages through increasing concentrations of ethanol (30%, 50%, 70%, 85%, 95%, 100%). Sirius red staining (Sigma-Aldrich) was performed for detection of fibrosis as described previously (Shimizu-Motohashi et al., 2015). For two-color immunofluorescence, frozen sections were permeabilized with 0.2% Triton X (Sigma-Aldrich) and blocked with M.O.M kit (Vector laboratories) followed by 2% bovine serum albumin (Sigma-Aldrich) at room temperature. For three-color immunofluorescence, sections were permeabilized and blocked with 3% BSA, 10% lamb serum, 0.25% TritonX-100/PBS for 30 min at room temperature. In both cases, immunolabeling was performed at 4°C overnight for primary antibodies and at room temperature for 1 hr for secondary antibodies. To outline fibers with Alexa-conjugated anti-laminin, incubation was performed for 3 hr at room temperature, after washing out the secondary antibody. Nuclei were counterstained blue with DAPI. When mouse-raised antibodies were applied, endogenous mouse IgG was blocked by incubation with goat anti-mouse fab fragment affinity-purified antibody (115-007-003, Jackson Immunoresearch) for 30 min at room temperature.
 
@@ -126,14 +831,14 @@ Single myofibers: After isolation (T0) or following culture (T24, T48, T72), myo
 
 Primary myoblast culture: Cell cultures were fixed with 4% paraformaldehyde/PBS for 15 min at room temperature, permeabilized with 0.5% TritonX-100/PBS for 5 min, blocked with 5% BSA, 10% goat serum and immunolabeled with primary antibody (overnight at 4°C) and secondary antibody (1 hr at room temperature). Nuclei were counterstained blue with DAPI.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used: chicken anti-GFP 1:1000 (#ab13970, Abcam), mouse anti-KI67 1:80 (#556003, BD Pharmingen), mouse anti-MYOD 1:80 (M3512, DAKO), rabbit anti-MYOD 1:1000 (sc304, Santa Cruz), mouse anti-MYOGENIN 1:100 (F5D-c, DSHB), mouse anti-embryonic MyHC 1:50 (F1.652, DSHB), mouse anti-embryonic MyHC 1:300 (sc53091, Santa Cruz), mouse anti-MyHC 1:100 (mf20-c, DSHB), rabbit AlexaFluor647-conjugated anti-laminin 1:200 (NB300-144AF647, Novus Biological), rabbit anti-laminin 1:400 (L9393, Sigma Aldrich), rat anti-laminin 1:1000 (4H8-2, Sigma-Aldrich), mouse anti-PAX7 1:100 (Pax7-c, DSHB), rabbit anti-CDKN1c 1:100 (sc8298, Santa Cruz), goat anti-CDKN1c 1:50 (sc1039, Santa Cruz), AlexaFluor-coupled secondary antibodies (Life Technologies, Jackson ImmunoResearch).
 
-## Graphic editing
+### Graphic editing
 
 Graphs and representative photos were arranged in Figure format with the graphics editor Photoshop CS5. Curves were adjusted in some photos with identical adjustments between control and experimental samples. Color intensities of hematoxylin-eosin photos were adjusted to acquire uniform result among different sections.
 
-## Statistical test
+### Statistical test
 
 Data of control and mutant mice were compared with the Mann-Whitney U-test, using a significance level of 0.05.

@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Some remarkable animal species require an opposite-sex partner for their sexual development but discard the partner’s genome before gamete formation, generating hemi-clonal progeny in a process called hybridogenesis. Here, we discovered a similar phenomenon, termed pseudosexual reproduction, in a basidiomycete human fungal pathogen, Cryptococcus neoformans , where exclusive uniparental inheritance of nuclear genetic material was observed during bisexual reproduction. Analysis of strains expressing fluorescent reporter proteins revealed instances where only one of the parental nuclei was present in the terminal sporulating basidium. Whole-genome sequencing revealed that the nuclear genome of the progeny was identical with one or the other parental genome. Pseudosexual reproduction was also detected in natural isolate crosses where it resulted in mainly MAT α progeny, a bias observed in Cryptococcus ecological distribution as well. The mitochondria in these progeny were inherited from the MAT a parent, resulting in nuclear-mitochondrial genome exchange. The meiotic recombinase Dmc1 was found to be critical for pseudosexual reproduction. These findings reveal a novel, and potentially ecologically significant, mode of eukaryotic microbial reproduction that shares features with hybridogenesis in animals.
+Some remarkable animal species require an opposite-sex partner for their sexual development but discard the partner’s genome before gamete formation, generating hemi-clonal progeny in a process called hybridogenesis. Here, we discovered a similar phenomenon, termed pseudosexual reproduction, in a basidiomycete human fungal pathogen, Cryptococcus neoformans, where exclusive uniparental inheritance of nuclear genetic material was observed during bisexual reproduction. Analysis of strains expressing fluorescent reporter proteins revealed instances where only one of the parental nuclei was present in the terminal sporulating basidium. Whole-genome sequencing revealed that the nuclear genome of the progeny was identical with one or the other parental genome. Pseudosexual reproduction was also detected in natural isolate crosses where it resulted in mainly MATα progeny, a bias observed in Cryptococcus ecological distribution as well. The mitochondria in these progeny were inherited from the MATa parent, resulting in nuclear-mitochondrial genome exchange. The meiotic recombinase Dmc1 was found to be critical for pseudosexual reproduction. These findings reveal a novel, and potentially ecologically significant, mode of eukaryotic microbial reproduction that shares features with hybridogenesis in animals.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ In a previous study, we generated a genome-shuffled strain of C. neoformans, VYD
 
 ## Results
 
-## Chromosomal translocation strain exhibits unusual sexual reproduction
+### Chromosomal translocation strain exhibits unusual sexual reproduction
 
 Previously, we generated a strain (VYD135α) with eight centromere-mediated chromosome translocations compared to the wild-type parental isolate H99α (Yadav et al., 2020). Co-incubation of the wild-type strain KN99a with the genome-shuffled strain VYD135α resulted in hyphal development and basidia production, but no spores were observed during a standard 2-week incubation. However, when sporulation was assessed at later time points in the VYD135α×KN99a cross, we observed a limited number of sporulating basidia (16/1201=1.3%) after 5 weeks compared to a much greater level of sporulation in the wild-type H99α×KN99a cross (524/599=88%) (Figure 1A–D). None of these strains exhibited any filamentation on their own even after 5 weeks of incubation, indicating that the sporulation events were not a result of unisexual reproduction (Figure 1A–B). To analyze this delayed sporulation process in detail, spores from individual basidia were dissected and germinated to yield viable F1 progeny. As expected, genotyping of the mating-type locus in the H99α×KN99a progeny revealed that both MATa and MATα progeny were produced from each basidium (Figure 1E and G, Table 1). In contrast, the same analysis for VYD135α×KN99a revealed that all germinating progeny from each individual basidium possessed either only the MATα or the MATa allele (Figure 1E and G, Table 1). Polymerase chain reaction (PCR) assays also revealed that the mitochondria in all of these progeny were inherited from the MATa parent, in accord with known UPI (Figure 1F–G). These results suggest the inheritance of only one of the parental nuclei in the VYD135α×KN99a F1 progeny. The presence of mitochondria from only the MATa parent in MATα progeny further confirmed that these progeny were the products of fusion between the parent strains and were not the products of unisexual reproduction.
 
@@ -38,35 +38,303 @@ Previously, we generated a strain (VYD135α) with eight centromere-mediated chro
 
 **Figure 1.:** (A, B) Images of cultures for the individual strains H99α, KN99a, and VYD135α, showing no self-filamentation on mating medium. Magnification=10×. (C, D) Light microscopy images showing robust sporulation in the H99α×KN99a cross, whereas the VYD135α×KN99a cross exhibited robust hyphal development but infrequent sporulation events. The inset images in colored boxes show examples of basidia observed in each of the crosses. Scale bar, 100 µm. (E, F) A scheme showing the MATα (H99α and VYD135α) and MATa (KN99a) alleles at the STE20 (E) and COX1 (F) loci. Primers used for PCR analysis are marked by blue triangles. (G) Gel images showing PCR amplification of STE20 and COX1 alleles in the progeny obtained from four different basidia for both H99α×KN99a and VYD135α×KN99a crosses. PCR analysis for the parental strains is also shown, and key bands for DNA marker are labeled. PCR, polymerase chain reaction.
 
-## Fluorescence microscopy reveals uniparental nuclear inheritance after mating
+**Table 1.**
+ Genotype analysis of basidia-specific spores germinated from H99α×KN99a and VYD135α×KN99a crosses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Basidia #</th>
+      <th colspan="4">H99α×KN99a cross</th>
+      <th colspan="4">VYD135α×KN99a cross</th>
+    </tr>
+    <tr>
+      <th>Spores germinated/ dissected</th>
+      <th>% Germinated</th>
+      <th>MAT</th>
+      <th>Mito</th>
+      <th>Spores germinated/ dissected</th>
+      <th>% Germinated</th>
+      <th>MAT</th>
+      <th>Mito</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>5/14</td>
+      <td>36</td>
+      <td>4α+1a</td>
+      <td>a</td>
+      <td>12/24</td>
+      <td>50</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>14/14</td>
+      <td>100</td>
+      <td>7α+7a</td>
+      <td>a</td>
+      <td>6/10</td>
+      <td>60</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>12/14</td>
+      <td>86</td>
+      <td>2α+7a+3a/α</td>
+      <td>a</td>
+      <td>15/15</td>
+      <td>100</td>
+      <td>All a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>10/14</td>
+      <td>71</td>
+      <td>4α+6a</td>
+      <td>a</td>
+      <td>22/27</td>
+      <td>81</td>
+      <td>All a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>7/13</td>
+      <td>54</td>
+      <td>6a+1a/α</td>
+      <td>a</td>
+      <td>3/12</td>
+      <td>25</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>13/14</td>
+      <td>93</td>
+      <td>6α+7a</td>
+      <td>a</td>
+      <td>25/27</td>
+      <td>93</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>11/14</td>
+      <td>79</td>
+      <td>6α+5a</td>
+      <td>a</td>
+      <td>4/4</td>
+      <td>100</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>14/14</td>
+      <td>100</td>
+      <td>12α+2a</td>
+      <td>a</td>
+      <td>10/13</td>
+      <td>77</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10/14</td>
+      <td>71</td>
+      <td>4α+6a</td>
+      <td>a</td>
+      <td>13/15</td>
+      <td>87</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>14/14</td>
+      <td>100</td>
+      <td>7α+7a</td>
+      <td>a</td>
+      <td>31/61</td>
+      <td>51</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>14/14</td>
+      <td>100</td>
+      <td>10α+4a</td>
+      <td>a</td>
+      <td>10/10</td>
+      <td>100</td>
+      <td>All a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>12/14</td>
+      <td>86</td>
+      <td>8α+4a</td>
+      <td>a</td>
+      <td>4/5</td>
+      <td>80</td>
+      <td>All a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>4/11</td>
+      <td>36</td>
+      <td>All a</td>
+      <td>a</td>
+      <td>24/28</td>
+      <td>86</td>
+      <td>All a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>13/13</td>
+      <td>100</td>
+      <td>8α+5a</td>
+      <td>a</td>
+      <td>16/28</td>
+      <td>57</td>
+      <td>All a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>14/14</td>
+      <td>100</td>
+      <td>7α+7a</td>
+      <td>a</td>
+      <td>11/11</td>
+      <td>100</td>
+      <td>All a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>14/14</td>
+      <td>100</td>
+      <td>6α+8a</td>
+      <td>a</td>
+      <td>10/22</td>
+      <td>45</td>
+      <td>All α</td>
+      <td>a</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mito refers to Mitochondria._
+
+### Fluorescence microscopy reveals uniparental nuclear inheritance after mating
 
 Next, we tested whether the uniparental inheritance detected at the MAT locus also applied to the entire nuclear genome. To address this, we established a fluorescence-based assay in which the nuclei of strains H99α and VYD135α were labeled with GFP-H4, whereas the KN99a nucleus was marked with mCherry-H4. In a wild-type cross (H99α×KN99a), the nuclei in the hyphae as well as in the spores were yellow to orange because both nuclei were in a common cytoplasm and thus incorporated both the GFP-tagged and the mCherry-tagged histone H4 proteins (Figure 2—figure supplement 1A and B). We hypothesized that in the cases of uniparental nuclear inheritance, only one of the nuclei would reach the terminal basidium and would thus harbor only one fluorescent nuclear color signal (Figure 2—figure supplement 1A).
 
 After establishing this fluorescent tagging system using the wild-type strains H99α×KN99a, shuffled-strain VYD135α×KN99a crosses with fluorescently labeled strains were examined. In the wild-type cross, most of the basidia formed robust spore chains with both fluorescent colors observed in them, while a small population (~1%) of basidia exhibited spore chains with only one color, representing uniparental nuclear inheritance (Figure 2A and Figure 2—figure supplement 2A). In contrast, the majority of the basidium population in the shuffled-strain VYD135α×KN99a cross did not exhibit sporulation, and the two parental nuclei appeared fused but undivided (Figure 2B and Figure 2—figure supplement 2B). A few basidia (~1%) bore spore chains with only one fluorescent color, marking uniparental nuclear inheritance events. While the basidia with uniparental nuclear inheritance in the H99α×KN99a cross were a small fraction (~1%) of sporulating basidia, the uniparental basidia accounted for all of the sporulating basidia in the VYD135α×KN99a cross. Taken together, these results show that the uniparental nuclear inheritance leads to the generation of clonal progeny but requires mating, the cell-cell fusion between parents of two opposite mating types. Thus, this process defies the main purpose of sexual reproduction, which is to produce recombinant progeny from two parents. Based on these observations, we define the process of uniparental nuclear inheritance during sporulation in C. neoformans as pseudosexual reproduction (and it is referred to as such hereafter). The progeny obtained via this process will be referred to as the uniparental progeny because they inherit a nuclear genome derived from only one of the two parents.
 
-## Pseudosexual reproduction also occurs in natural isolates
+![Figure 2.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig2-v2.jpg)
+
+**Figure 2.:** (A) Crosses of GFP-H4 tagged H99α and mCherry-H4 tagged KN99a revealed the presence of both fluorescent markers in most spore chains along with uniparental nuclear inheritance in rare cases (~1%). In these few sporulating basidia, only one of the fluorescent signals was observed in the spore chains, reflecting the presence of only one parental nucleus in these basidia. (B) Crosses involving GFP-H4 tagged VYD135α and mCherry-H4 tagged KN99a revealed the presence of spore chains with only one fluorescent color. In the majority of basidia that have both parental nuclei, marked by both GFP and mCherry signals, spore chains are not produced, consistent with a failure of meiosis in these basidia. Scale bar, 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A cartoon depicting various stages of sexual reproduction in C. neoformans, from the formation of conjugation tube to sporulation, and possible dynamics of the nuclei at these different stages. After the cell-cell fusion, tagged proteins assort into both nuclei and yield a yellow/orange fluorescence color as a result of the mixing of the green and red signals. Cartoons in the box show hypothetical scenarios where uniparental nuclear inheritance occurs after the loss of one parental nucleus. (B) Direct fluorescence microscopy images showing the status of GFP-H4 tagged and mCherry-H4 tagged nuclei in post-mating hyphae as well as in spores. Both GFP and mCherry fluorescent colors were observed in hyphae and spores as hypothesized in (A). Scale bar, 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** GFP-H4 and mCherry-H4 tagging revealed different localization patterns in the (A) wild-type H99α×KN99a and (B) VYD135α×KN99a crosses. Wild-type spore chains mostly harbored both the nuclear stains as a result of bisexual meiosis. On the other hand, basidia with only one of the parental nuclei produced spores in VYD135α×KN99a crosses; basidia with both nuclei failed to produce spore chains and, as a result, remained as bald basidia. Scale bar, 10 µm.
+
+### Pseudosexual reproduction also occurs in natural isolates
 
 After establishing the pseudosexual reproduction of lab strains, we sought to determine whether such events also occur with natural isolates. For this purpose, we selected two wild-type natural isolates, Bt63a and IUM96-2828a (referred to as IUM96a hereafter) (Desjardins et al., 2017; Keller et al., 2003; Litvintseva et al., 2003). IUM96a belongs to the same lineage as H99α/KN99a (VNI) and exhibits approximately 0.1% genome divergence from the H99α reference genome. Bt63a belongs to a different lineage of the C. neoformans species (VNBI) and exhibits ~0.5% genetic divergence from the H99α/KN99a genome. Both the Bt63a and the IUM96a genomes exhibit one reciprocal chromosome translocation with H99α, and as a result, share a total of 10 chromosome-level changes with the genome-shuffled strain VYD135α (Figure 3A). None of these strains are self-filamentous even after prolonged incubation on mating media but both cross efficiently with H99α and VYD135α (Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig3-v2.jpg)
+
+**Figure 3.:** (A) Chromosome maps for H99α/ΚN99a, VYD135α, Bt63a, and IUM96a showing the karyotype variation. The genome of the wild-type strain H99α served as the reference. Black arrowheads represent chromosome translocations between VYD135α and H99α whereas red arrowheads mark chromosomes with a translocation between H99α and Bt63a or IUM96a. (B) Whole-genome sequencing, followed by SNP identification, of H99α×Bt63a progeny revealed evidence of meiotic recombination in all of the progeny. The left panel shows SNPs with respect to the Bt63a genome whereas the right panel depicts SNPs against the H99α genome. H99α and Bt63a Illumina sequencing data served as controls for SNP calling. (C) SNP analysis of VYD135α ×Bt63a progeny revealed no contribution of the Bt63a parental genome in the progeny as evidenced by the presence of SNPs only against Bt63a (left panel) but not against the VYD135α genome (right panel). The presence of a few SNPs observed in VYD135α, as well as all VYD135α×Bt63a progeny, are within nucleotide repeat regions. GF stands for germination frequency and P stands for progeny. (D) SNP analysis of H99α×Bt63a and VYD135α×Bt63a progeny using mitochondrial DNA as the reference revealed that mitochondrial DNA is inherited from Bt63a in all of the progeny. Progeny obtained from VYD135α×Bt63a basidium 18 also revealed recombination between the two parental mitochondrial genomes as marked by the absence or presence of two SNPs when mapped against VYD135α and Bt63a mitochondrial genomes, respectively. The green bar in each panel depicts the locus used for PCR analysis of the mitochondrial genotype in the progeny. PCR, polymerase chain reaction; SNP, single nucleotide polymorphism.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Images of the mating spots showing filamentation when two strains of opposite mating types are crossed. No filamentation is observed without the presence of a mating partner. (B, D) Light microscopy images showing sporulation frequency in crosses involving Bt63a (B) and IUM96a (D). Scale bar, 100 µm. (C, E) Schemes depicting the STE20 alleles used for MAT locus and COB1 (for Bt63a) and COX1 (for IUM96a) alleles for mitochondrial genotyping, respectively. Gel images show the PCR analysis on progeny from four basidia and the parental strains for all crosses as mentioned. PCR, polymerase chain reaction.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** GFP-H4 tagged VYD135α crossed with mCherry-H4 tagged Bt63a showed only VYD135α sporulation events as also observed in spore dissection analysis. Scale bar, 10 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** SNP analysis on VYD135α×Bt63a progeny revealed no contribution of the Bt63a parental genome in the progeny as evidenced by the presence of SNPs only against Bt63a (left panel) but not against VYD135α genome (right panel). The few SNPs observed in VYD135α as well as all VYD135α×Bt63a progeny lie within nucleotide repeat regions. GF stands for germination frequency and P stands for progeny. SNP, single nucleotide polymorphism.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) A map of SNPs detected in H99α×Bt63a progeny when using H99α mitochondrial DNA (upper panel) and Bt63a mitochondrial DNA (lower panel) as the reference. (B) SNP analysis revealed variants in all the progeny when using VYD135α mitochondrial DNA as the reference but not when using Bt63a mitochondrial DNA. The two SNPs detected against Bt63a DNA in progeny P19–24 (basidium 18) suggest recombination of two parental mitochondrial DNA during mating. The green bar in each panel depicts the fragment used for PCR analysis in Figure 3—figure supplement 1. P stands for progeny. PCR, polymerase chain reaction; SNP, single nucleotide polymorphism.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Whole-genome sequencing of the H99α×Bt63a progeny revealed extensive aneuploidy in the progeny. Each progeny seemed to exhibit aneuploidy for at least one chromosome. (B) Whole-genome sequencing data revealed that the progeny obtained from VYD135α×Bt63a 5-week-old crosses are euploid in nature as they show a uniform level of genomic content when mapped to the Bt63 genome. VYD135α and Bt63a whole-genome sequencing data were also mapped as controls. Each lane represents one strain, and the difference in intensity correlates with the number of reads obtained per sample. (C) Flow-cytometry analysis on progeny obtained from three basidia confirmed that all the germinating progeny are haploid. While progeny from B12 and B14 are the same as used for the whole-genome sequencing, progeny from B3 were subjected to only flow cytometry analysis. Bt63a and VYD135α were also analyzed as controls for this experiment. P stands for progeny.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) The left panel depicts SNPs with respect to the IUM96a genome whereas the right panel shows SNPs against the H99α genome. Whole-genome sequencing, followed by SNP analysis, for the H99α×IUM96a progeny (basidia 3 and 4) revealed evidence of meiotic recombination in the progeny. Basidium 7 from the H99α×IUM96a cross produced uniparental progeny, which was confirmed by SNP analysis on a subset of these progeny. The progeny exhibited SNPs only against the IUM96a genome but not against the H99α genome. (B) SNP analysis from two different basidia revealed the inheritance of only one set of parental nuclear DNA in the progeny from VYD135α×IUM96a cross. Basidium 3 progeny possessed DNA from only the VYD135α parent, while basidium 5 progeny inherited nuclear DNA from IUM96a alone. The results obtained from this analysis are congruent with mating-type PCR results shown in Supplementary file 1b. GF stands for germination frequency and P stands for progeny. PCR, polymerase chain reaction; SNP, single nucleotide polymorphism.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Whole-genome sequencing analysis revealed the presence of multiple aneuploidies in the (A) H99α×IUM96a progeny, but a completely euploid genome for the (B) VYD135α ×IUM96a progeny. P stands for progeny.
 
 The H99α×Bt63a strains crossed rapidly (within a week) producing robust sporulation from most of the basidia observed. The VYD135α×Bt63a cross underwent a low frequency of sporulation (12 spore-producing basidia/840 basidia=1.4%) in 2–3 weeks (Figure 3—figure supplement 1B). Dissection of spores from the H99α×Bt63a cross revealed a low germination frequency (average of 25%) with two of the basidia showing no spore germination at all (Supplementary file 1a). This result is consistent with previous results, and the low germination frequency could be explained by the genetic divergence between the two strains (Morrow et al., 2012). Genotyping of germinated spores from the H99α×Bt63a cross revealed both MATa and MATα progeny from individual basidia, with almost 75% of the meiotic events generating progeny that were heterozygous for the MAT locus (Figure 3—figure supplement 1C and Supplementary file 1a). For the VYD135α×Bt63a cross, spores from 15/20 basidia germinated and displayed a higher germination frequency than the H99α×Bt63a cross (Supplementary file 1a). Interestingly, all germinated progeny harbored only the MATα mating type, whereas the mitochondria were in all cases inherited from the MATa parent (Figure 3—figure supplement 1C). These results suggest that pseudosexual reproduction also occurs with Bt63a and accounts for the high germination frequency of progeny from the VYD135α×Bt63a cross. The occurrence of pseudosexual reproduction was also identified using the fluorescence-based assay with crosses between the GFP-H4 tagged VDY135α and mCherry-H4 tagged Bt63a strains (Figure 3—figure supplement 2).
 
 Crosses with strain IUM96a also revealed a low level of sporulation (19/842=2.3%) with VYD135α but a high sporulation frequency with H99α (91%) (Figure 3—figure supplement 1D). Analysis of progeny from crosses involving IUM96a revealed a similar pattern to what was observed with crosses involving KN99a. The progeny from H99α×IUM96a exhibited variable basidium-specific germination frequencies and inherited both MATa and MATα in each basidium, whereas VYD135α×IUM96a progeny from each basidium inherited exclusively either MATa or MATα (Figure 3—figure supplement 1E, and Supplementary file 1b). Interestingly, we observed co-incident uniparental MAT inheritance and a high germination frequency in progeny of basidia 7, 8, and 9 from the H99α×IUM96a cross as well (Figure 3—figure supplement 1E, and Supplementary file 1b). Taken together, these results suggest that this unusual mode of sexual reproduction occurs with multiple natural isolates. We further propose that pseudosexual reproduction occurs in nature in parallel with canonical sexual reproduction.
 
-## Uniparental progeny completely lack signs of nuclear recombination between the two parents
+### Uniparental progeny completely lack signs of nuclear recombination between the two parents
 
 As mentioned previously, H99α (as well as the H99α-derived strain VYD135α) and Bt63a have approximately 0.5% genetic divergence. The occurrence of pseudosexual reproduction in the VYD135α×Bt63a cross allowed us to test if the two parental genomes recombine with each other during development. We subjected progeny from crosses VYD135α×Bt63a and H99α×Bt63a to whole-genome sequencing. As expected, for the H99α×Bt63a cross, both parents contributed to the nuclear composition of their progeny, and there was clear evidence of meiotic recombination as determined by variant analysis (Figure 3B). However, when the VYD135α×Bt63a progeny were similarly analyzed, the nuclear genome in each of the progeny was found to be inherited exclusively from only the VYD135α parent (Figure 3C and Figure 3—figure supplement 3), and the progeny exhibited sequence differences across the entire Bt63a genome. In contrast, the mitochondrial genome was inherited exclusively from the Bt63a parent (Figure 3D and Figure 3—figure supplement 4), in accord with the PCR assay results discussed above. In addition, the whole-genome sequencing data also revealed that while most of the H99α×Bt63a progeny exhibited aneuploidy, the genome-shuffled strain VYD135α×Bt63a progeny were euploid (Figure 3—figure supplement 5A and B), and based on flow cytometry analysis, these uniparental progeny were haploid (Figure 3—figure supplement 5C).
 
 The progeny from crosses involving IUM96a as the MATa partner were also sequenced. Similar to the Bt63a analysis, the H99α×IUM96a progeny exhibited signs of meiotic recombination, whereas the VYD135α ×IUM96a progeny did not (Figure 3—figure supplement 6). Congruent with the mating-type analysis, the progeny in each of the basidia exclusively inherited nuclear genetic material from only one of the two parents. Furthermore, the H99α×IUM96a progeny were found to be aneuploid for some chromosomes, while the VYD135α×IUM96a progeny were completely euploid (Figure 3—figure supplement 7). We also sequenced four progeny from basidium 7 from the H99α×IUM96a cross, which were suspected to be uniparental progeny based on mating-type PCRs. This analysis showed that all four progeny harbored only H99α nuclear DNA and had no contribution from the IUM96a nuclear genome, further supporting the conclusion that pseudosexual reproduction occurs in wild-type crosses (Figure 3—figure supplement 6A). Similar to other progeny, the mitochondria in these progeny were inherited from the MATa parent (Figure 3—figure supplement 1E, and Supplementary file 1b). Combined, these results affirm the occurrence of a novel mode of sexual reproduction in C. neoformans, which is initiated by the fusion of two strains of opposite mating types, but whose progeny inherit DNA exclusively from one parent.
 
-## Pseudosexual reproduction stems from nuclear loss via hyphal branches
+### Pseudosexual reproduction stems from nuclear loss via hyphal branches
 
 Fluorescence microscopy revealed that only one of the two parental nuclei undergoes meiosis and produces spores in approximately 1% of the total basidia population. Based on this finding, we hypothesized that the basidia with only one parental nucleus might arise due to nuclear segregation events during hyphal branching. To gain further insight into this process, the nuclear distribution pattern along the sporulating hyphae was studied. As expected, imaging of long hyphae in the wild-type cross revealed the presence of pairs of nuclei with both fluorescent markers along the length of the majority of hyphae (Figure 4A). In contrast, tracking of hyphae from basidia with spore chains in the genome-shuffled strain VYD135α×KN99a cross revealed hyphal branches with only one parental nucleus, which were preceded by a hyphum with both parental nuclei (Figure 4B, Figure 4—figure supplement 1A and B). Unfortunately, a majority of the hyphae (>30 independent hyphae) we tracked were embedded into the agar, and most of these could not be tracked to the point of branching. For some others, we were able to image the hyphal branching point where two nuclei separate from each other but were then either broken or did not have mature basidia on them (Figure 4—figure supplement 1B). In total, we observed seven events of nuclear loss at hyphal branching in independent experiments and were able to track two of them to observe sporulation or basidia formation at the tip. We also observed long hyphae with only one parental nucleus in the VYD135α×Bt63a cross as well, suggesting the mechanism might be similar between strains.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig4-v2.jpg)
+
+**Figure 4.:** Spore-producing long hyphae were visualized in both (A) wild-type H99α×KN99a and (B) VYD135α×KN99a crosses to study the dynamics of nuclei in hyphae. Both nuclei were present across the hyphal length in the wild-type and resulted in the production of recombinant spores. On the other hand, one of the nuclei was lost during hyphal branching in the VYD135α×KN99a cross and resulted in uniparental nuclear inheritance in the spores that were produced. The arrow in (B) marks the hyphal branching point after which only one of the parental nuclei is present (also see Figure 4—figure supplement 1A). The images were captured as independent sections and assembled to obtain the final presented image. Scale bar, 10 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Individual z-sections showing the hyphal branching (marked by arrow) where the two parental nuclei segregate in the Figure 4B. (B) Images showing hyphal branching points where one of the parental nuclei separates from the main hyphae with two parental nuclei (top two panels). The branch point is marked with the arrow. The lower two panels show the long hyphae with only one of the parental nuclei in them. The third panel shows other hyphae with both parental nuclei suggesting that separation occurred at an early stage. The fourth panel exhibits the same between VYD135α×Bt63a but also has a sporulating basidium on it. Scale bar, 10 µm.
+
 These results suggest that hyphal branching may facilitate the separation of one parental nucleus from the main hyphae harboring both parental nuclei. While this is the most plausible explanation based on our results, we cannot rule out other possible mechanisms, such as a role for clamp cells, leading to nuclear separation during hyphal growth. As a result, one of the parental genomes is excluded at a step before diploidization and meiosis, similar to the process of genome exclusion observed in hybridogenesis. We hypothesize that nuclear segregation can be followed by endoreplication occurring in these hyphal branches or in the basidium to produce a diploid nucleus that then ultimately undergoes meiosis and produces uniparental progeny, which will be explored in future studies.
 
-## Meiotic recombinase Dmc1 is important for pseudosexual reproduction
+### Meiotic recombinase Dmc1 is important for pseudosexual reproduction
 
 Because the genomes of the uniparental progeny did not show evidence of meiotic recombination between the two parents, we tested whether pseudosexual reproduction involves meiosis. In addition, we sought to test our hypothesis that pseudosexual reproduction involves endoreplication that is followed by meiosis. We therefore tested whether Dmc1, a key component of the meiotic machinery, is required for pseudosexual reproduction. The meiotic recombinase gene DMC1 was deleted in congenic strains H99α, VYD135α, and KN99a, and the resulting mutants were subjected to crossing. A previous report documented that dmc1Δ bilateral crosses (both the parents are mutant for DMC1) display significantly reduced, but not completely abolished, sporulation in Cryptococcus (Lin et al., 2005). We observed a similar phenotype with the H99α dmc1Δ×KN99a dmc1Δ cross. While most of the basidia were devoid of spore chains, a small percentage (21/760=2.7%) of the population bypassed the requirement for Dmc1 and produced spores (Figure 5A and Figure 5—figure supplement 1A). When dissected, the germination frequency for these spores was found to be very low (~22% on average) with spores from many basidia not germinating at all (Supplementary file 1c). Furthermore, MAT-specific PCRs revealed that some of the progeny were aneuploid or diploid. For VYD135α dmc1Δ×KN99a dmc1Δ, many fewer basidia (~0.1%) produced spore chains as compared to ~1% sporulation in VYD135α×KN99a (Figure 5A,B and Figure 5—figure supplement 1B). dmc1 mutant unilateral crosses (one of the two parents is mutant and the other one is wild-type) sporulated at a frequency of 0.4% suggesting that only one of the parental strains was producing spores (Figure 5B). When a few sporulating basidia from the VYD135α dmc1Δ×KN99a dmc1Δ bilateral cross were dissected, two different populations of basidia emerged, one with no spore germination, and the other with a high spore germination frequency and uniparental MAT inheritance (Supplementary file 1c). We hypothesized that the basidia with a high spore germination frequency represent those that have escaped the normal requirement for Dmc1. Overall, the DMC1 deletion led to a 20-fold reduction in viable sporulation in the VYD135α×KN99a cross, observed as a ten fold decrease from the number of sporulation events in the bilateral cross and a further two fold reduction in the number of basidia producing viable spores.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig5-v2.jpg)
+
+**Figure 5.:** (A) Light microscopy images showing the impact of dmc1 mutation on sexual and pseudosexual reproduction in C. neoformans. Scale bar, 100 µm. (B) A graph showing quantification (n=3) of sporulation events in multiple crosses with dmc1Δ mutants. At least 3000 basidia were counted in each experiment.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Light microscopy images showing the phenotype of DMC1 deletion in (A) H99α×KN99a unilateral crosses as well as bilateral mutant crosses and (B) VYD135α×KN99a dmc1Δ unilateral and bilateral crosses. The deletion of DMC1 led to a reduction in sporulating basidia in bilateral mutant crosses.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** A cross between a GFP-H4 tagged VYD135α strain and an mCherry-H4 tagged KN99a dmc1Δ mutant revealed that Dmc1 is required for pseudosexual reproduction events. The majority of the KN99a dmc1Δ nucleus-containing basidia failed to produce spore chains (top two rows and bottom rows). While all 11 observed basidia with VYD135α nuclei produced spores, only 2 out of 19 observed basidia with KN99a dmc1Δ nuclei produced spores. One of these two is represented in the third row. Scale bar, 10 µm.
 
 To further support these findings, DMC1 was deleted in mCherry-H4 tagged KN99a and crossed with GFP-H4 tagged VYD135α. We hypothesized that GFP-H4 tagged VYD135α would produce spore chains in this cross because it harbors DMC1, whereas mCherry-H4 tagged KN99a dmc1Δ would fail to do so. Indeed, all 11 observed basidia with only the GFP-H4 fluorescence signal were found to produce spores, but only 2 out of 19 mCherry-H4 containing basidia exhibited sporulation (Figure 5—figure supplement 2). These results combined with the spore dissection findings show that Dmc1 is critical for pseudosexual reproduction. While these results provide concrete evidence for meiosis as a part of pseudosexual reproduction, they also suggest the occurrence of a preceding endoreplication event. However, further studies will need to be conducted to validate and confirm endoreplication or alternate mechanisms to achieve the ploidy necessary for a classical meiosis event.
 
@@ -82,48 +350,56 @@ The occurrence of pseudosexual reproduction might also have significant implicat
 
 We propose that pseudosexual reproduction can occur between any two opposite mating-type strains as long as each of them is capable of undergoing cell-cell fusion and at least one of them can sporulate. We speculate that pseudosexual reproduction might play a key role in C. neoformans survival during unfavorable conditions. In conditions where two mating partners are fully compatible, pseudosexual reproduction will be mostly hidden and might not be important (Figure 6, top panel). However, when the two mating partners are partially incompatible or completely incompatible due to high genetic divergence or karyotypic variation, pseudosexual reproduction will be important (Figure 6, left, right, and bottom panels). For example, most of the basidia in H99α and Bt63a cross largely produce aneuploid and/or inviable progeny leading to unsuccessful sexual reproduction. However, a small yet significant proportion of the basidia generate clonal progeny that are viable and fit via pseudosexual reproduction. We hypothesized that these progeny will have a better chance of survival and find a suitable mating partner in the environment whereas, the unfit recombinant progeny might fail to do so. In nature, this might allow a new genotype/karyotype to not only survive but also expand and will prove advantageous. If a new genotype/karyotype had only the option of undergoing sexual reproduction, it might not survive, restricting the evolution of a new strain. Overall, this mode of pseudosexual reproduction might act as an escape path from genomic incompatibilities between two related isolates and allow them to produce spores for dispersal.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig6-v2.jpg)
+
+**Figure 6.:** Scenarios showing possible roles for pseudosexual reproduction under various hypothetical mating conditions. Except for one condition where the two parents are completely compatible with each other, pseudosexual reproduction could play a significant role in survival and dissemination despite its occurrence at a low frequency.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66234/elife-66234-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** A diagram depicting various types of sexual reproduction in Cryptococcus species. C. deneoformans exhibits unisexual reproduction in which two cells of the same mating-type fuse or a single cell undergoes endoreplication followed by the production of clonal progeny. Both C. neoformans and C. deneoformans show bisexual reproduction in which two cells of opposite mating types fuse with each other and produce recombinant progeny. Pseudosexual reproduction, as proposed in this study, arises from bisexual mating but generates clonal progeny of one of the parents after the other parental nucleus is lost during development. While both unisexual and pseudosexual reproduction produce clonal progeny, they differ with respect to the inheritance of mitochondrial DNA (marked by gray color cell background in the illustration).
+
 One of the key differences between pseudosexual reproduction and unisexual reproduction observed in the Cryptococcus species complex is the inheritance of mitochondrial DNA. While both unisexual and pseudosexual reproduction result in clonal progeny with respect to the nuclear genome, the mitochondria in pseudosexual reproduction are almost exclusively inherited from the MATa parent (Figure 6—figure supplement 1). This results in the exchange of mitochondrial DNA in the progeny that inherit the MATα nuclear genome, resembling the nuclear-mitochondrial exchange observed during cytoduction in Saccharomyces cerevisiae. During cytoduction, mutants defective in nuclear fusion produce haploid progeny with nuclear genome from one parent, but a mixture of both parents cytoplasm resulting in the inheritance of one parental mitochondrial genome with the other parent’s nuclear genome (Conde and Fink, 1976; Lancashire and Mattoon, 1979; Zakharov and Yarovoy, 1977). This process was used to study mitochondrial genetics with respect to the transfer of drug-resistance genes and other mitochondrial mutations. Similar to cytoduction, pseudosexual reproduction could be employed to study mitochondrial genetics, such as functional analysis of mitochondrial encoded drug resistance, and cytoplasmic inheritance of factors such as prions in C. neoformans.
 
 The fungal kingdom is one of the more diverse kingdoms with approximately 3 million species (Sun et al., 2020b). The finding of hybridogenesis-like pseudosexual reproduction hints toward unexplored biology in this kingdom that might provide crucial clues for understanding the evolution of sex. Fungi have also been the basis of studies focused on understanding the evolution of meiosis, and the presence of genome reduction, as well as the parasexual cycle in fungi, have led to the proposal that meiosis evolved from mitosis (Hurst and Nurse, 1991; Wilkins and Holliday, 2009). Pseudosexual reproduction may be a part of an evolutionary process wherein genome exclusion followed by endoreplication and meiosis was an ancestral form of reproduction that preceded the evolution of sexual reproduction. Evidence supporting such a hypothesis can be observed in organisms undergoing facultative sex or facultative parthenogenesis (Booth et al., 2012; Fields et al., 2015; Hodač et al., 2019; Hojsgaard and Horandl, 2015). The presence of these organisms also suggests that a combination of both sexual and clonal modes of reproduction might prove to be evolutionarily advantageous.
 
 ## Materials and methods
 
-## Strains and media
+### Strains and media
 
 C. neoformans wild-type strains H99α and KN99a served as the wild-type isogenic parental lineages for the experiments (Nielsen et al., 2003; Perfect et al., 1993), in addition to MATa strains Bt63a and IUM96-2828a (Keller et al., 2003; Litvintseva et al., 2003). Strains were grown in YPD media for all experiments at 30°C unless stated otherwise. G418 and/or NAT were added at a final concentration of 200 and 100 µg/ml, respectively, for the selection of transformants. MS media was used for all the mating assays, which were performed as described previously (Sun et al., 2019b). Basidia-specific spore dissections were performed after 2–5 weeks of mating, and the spore germination frequency was scored after 5 days of dissection. All strains and primers used in this study are listed in Supplementary file 1d and Supplementary file 1e, respectively.
 
-## Genotyping for mating-type locus and mitochondria
+### Genotyping for mating-type locus and mitochondria
 
 Mating type (MAT) and mitochondrial genotyping for all the progeny were conducted using PCR assays. Genomic DNA was prepared using the MasterPure Yeast DNA Purification Kit from Lucigen. To determine the MAT, the STE20 allele present within the MAT locus was detected because it differs in length between the two different mating types. Primers specific to both MATa and MATα (JOHE50979-50982 in Supplementary file 1e) were mixed in the same PCR mix, and the identification was made based on the length of the amplicon (Figure 1E–G). For the mitochondrial genotyping, the COX1 allele present in the mitochondrial DNA was probed to distinguish between H99α/VYD135α and KN99a/IUM96a. For the differentiation between Bt63a and H99α/VYD135α, the COB1 allele was used because COX1 in Bt63a is identical to H99α/VYD135α. The difference for both COX1 and COB1 is the presence or absence of an intron and results in significantly different size products between MATα and MATa parents (Figure 1 and Figure 3—figure supplement 1). The primers used for these assays (JOHE51004-51007) are mentioned in Supplementary file 1e.
 
-## Genomic DNA isolation for sequencing
+### Genomic DNA isolation for sequencing
 
 Genomic DNA for whole-genome sequencing was prepared using the CTAB-based lysis method, as described previously (Yadav et al., 2020). Briefly, 50 ml of an overnight culture was pelleted, frozen at −80°C, and subjected to lyophilization. The lyophilized cell pellet was broken into a fine powder, mixed with lysis buffer, and the mix was incubated at 65°C for an hour with intermittent shaking. The mix was then cooled on ice, and the supernatant was transferred into a fresh tube, and an equal volume of chloroform (~15 ml) was added and mixed. The mix was centrifuged at 3200 rpm for 10 min, and the supernatant was transferred to a fresh tube. An equal volume of isopropanol (~18–20 ml) was added into the supernatant and mixed gently. This mix was incubated at −20°C for an hour and centrifuged at 3200 rpm for 10 min. The supernatant was discarded, and the DNA pellet was washed with 70% ethanol. The pellet was air-dried and dissolved in 1 ml of RNase containing 1× TE buffer and incubated at 37°C for 45 min. The DNA was again chloroform purified and precipitated using isopropanol, followed by ethanol washing, air drying, and finally dissolved in 200 µl 1× TE buffer. The DNA quality was estimated with NanoDrop, whereas DNA quantity was estimated with Qubit.
 
-## Whole-genome Illumina sequencing, ploidy, and SNP analysis
+### Whole-genome Illumina sequencing, ploidy, and SNP analysis
 
 Illumina sequencing of the strains was performed at the Duke sequencing facility core (https://genome.duke.edu/), using Novaseq 6000 as 150 paired-end sequencing. The Illumina reads, thus obtained, were mapped to the respective genome assembly (H99α, VYD135α, Bt63a, or IUM96a) using Geneious (RRID:SCR_010519) default mapper to estimate ploidy. The resulting BAM file was converted to a. tdf file, which was then visualized through IGV to estimate the ploidy based on read coverage for each chromosome.
 
 For SNP calling and score for recombination in the progeny, Illumina sequencing data for each progeny was mapped to parental strain genome assemblies individually using the Geneious default mapper with three iterations. The mapped BAM files were used to perform variant calling using Geneious with 0.8 variant frequency parameter and at least 90× coverage for each variant. The variants thus called were exported as VCF files and imported into IGV for visualization purposes. H99α, Bt63a, IUM96a, and VYD135α Illumina reads were used as controls for SNP calling analysis.
 
-## PacBio/Nanopore genome assembly and synteny comparison
+### PacBio/Nanopore genome assembly and synteny comparison
 
 To obtain high-molecular-weight DNA for Bt63a genome PacBio and IUM96a genome Nanopore sequencing, DNA was prepared as described above. The size estimation of DNA was carried out by electrophoresis of DNA samples using PFGE. For this purpose, the PFGE was carried out at 6 V/cm at a switching frequency of 1–6 s for 16 hr at 14°C. Samples with most of the DNA ≥100 kb or larger were selected for sequencing. For PacBio sequencing, the DNA sample was submitted to the Duke sequencing facility core. Nanopore sequencing was performed in our lab using a MinION device on an R9.4.1 flow cell. After sequencing, reads were assembled to obtain a Bt63a genome assembly via Canu (RRID:SCR_015880) using PacBio reads >2 kb followed by five rounds of pilon polishing (RRID:SCR_014731). For IUM96a, one round of nanopolish was also performed before pilon polishing. Once completed, the chromosomes were numbered based on their synteny with the H99α genome. For chromosomes involved in translocation (Chr 3 and Chr 11), the chromosome numbering was defined by the presence of the respective syntenic centromere from H99. Centromere locations were mapped based on BLASTn analysis with H99α centromere flanking genes.
 
 Synteny comparisons between the genomes were performed with SyMAP v4.2 using default parameters (Soderlund et al., 2011) (http://www.agcol.arizona.edu/software/symap/). The comparison block maps were exported as .svg files and were then processed using Adobe Illustrator (RRID:SCR_010279) and Adobe Photoshop (RRID:SCR_014199) for representation purposes. The H99α genome was used as the reference for comparison purposes for plotting VYD135α, Bt63a, and IUM96a genomes. The centromere and telomere locations were manually added during the figure processing.
 
-## Fluorescent tagging and microscopy
+### Fluorescent tagging and microscopy
 
 GFP and mCherry tagging of histone H4 were performed by integrating respective constructs at the safe haven locus (Arras et al., 2015). GFP-H4 tagging was done using the previously described construct, pVY3 (Yadav and Sanyal, 2018). For mCherry-H4 tagging, the GFP-containing fragment in pVY3 was excised using SacI and BamHI and was replaced with mCherry sequence PCR amplified from the plasmid pLKB25 (Kozubowski and Heitman, 2010). The constructs were then linearized using XmnI and transformed into desired strains using CRISPR transformation, as described previously (Fan and Lin, 2018). The transformants were screened by PCR, and correct integrants were obtained and verified using fluorescent microscopy.
 
 To observe the fluorescence signals in the hyphae and basidia, a 2- to 3-week-old mating patch was cut out of the plate and directly inverted onto a coverslip in a glass-bottom dish. The dish was then used to observe filaments under a DeltaVision microscope available at the Duke University Light Microscopy Core Facility (https://microscopy.duke.edu/dv). The images were captured at 60× magnification with 2×2 bin size and z-sections of either 1 or 0.4 µm each. GFP and mCherry signals were captured using the GFP and mCherry filters in the Live-Cell filter set. The images were processed using Fiji-ImageJ (https://imagej.net/Fiji) (RRID:SCR_002285) and exported as tiff files as individual maximum projected images. The final figure was then assembled using Adobe Photoshop software for quality purposes.
 
-## Sporulation frequency counting
+### Sporulation frequency counting
 
 To visualize hyphal growth and sporulation defects during mating assays, the mating plates were directly observed under a Nikon Eclipse E400 microscope. Hyphal growth and basidia images were captured using the top-mounted Nikon DXM1200F camera on the microscope. The images were processed using Fiji-ImageJ and assembled in Adobe Photoshop software.
 
 For crosses involving wild-type H99α, VYD135α, KN99a, Bt63a, and IUM96a, approximately 1000 total basidia were counted after 4 weeks of mating, and the sporulation frequency was calculated. For crosses involving VYD135 dmc1Δ strain, three mating spots were setup independently. From each mating spot periphery, six images were captured after 3–4 weeks of mating. Basidia (both sporulating and non-sporulating) in each of these spots were counted manually after some processing of images using ImageJ. The sporulation frequency was determined by dividing the sporulating basidia by the total number of basidia for each spot. Each mating spot was considered as an independent experiment and at least 3000 basidia were counted from each mating spot.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry analysis was performed as described previously (Fu and Heitman, 2017). Cells were grown on YPD medium for 2 days at 30°C, harvested, and washed with 1× phosphate-buffered saline buffer followed by fixation in 70% ethanol at 4°C overnight. Next, cells were washed once with 1 ml of NS buffer (10 mM Tris-HCl, pH=7.2, 250 mM sucrose, 1 mM EDTA, pH=8.0, 1 mM MgCl2, 0.1 mM CaCl2, 0.1 mM ZnCl2, 0.4 mM phenylmethylsulfonyl fluoride, and 7 mM β-mercaptoethanol), and finally resuspended in 180 μl NS buffer containing 20 μl 10 mg/ml RNase and 5 μl 0.5 mg/ml propidium iodide (PI) at 37°C for 3–4 hr. Then, 50 μl stained cells were diluted in 2 ml of 50 mM Tris-HCl, pH=8.0, transferred to FACS compatible tube, and submitted for analysis at the Duke Cancer Institute Flow Cytometry Shared Resource. For each sample, 10,000 cells were analyzed on the FL1 channel on the Becton-Dickinson FACScan. Wild-type H99α and previously generated AI187 were used as haploid and diploid controls, respectively, in these experiments. Data analysis was performed using the FlowJo software (RRID:SCR_008520).

@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04pp8hn57 Cell Biology, Neurobiology and Biophysics, Department of Biology, Faculty of Science, Utrecht University Utrecht Netherlands
-2. https://ror.org/013sk6x84 Janelia Research Campus, HHMI Ashburn United States
+1. Cell Biology, Neurobiology and Biophysics, Department of Biology, Faculty of Science, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+2. Janelia Research Campus, HHMI Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ To systematically explore the expansion recipe space, we developed a streamlined
 
 **Figure 1.:** (A) Parameters of gel recipe families explored, including component concentrations and gelation temperature. Each family was characterized by keeping these conditions constant while systematically varying the crosslinker concentration. (B) Expansion factor (mean ± SD, n = 3) versus crosslinker concentration (log scale) for each gel recipe family without biological specimens. Line colors correspond to recipe families as in (A). Specific recipes are indicated with a filled purple dot (original expansion microscopy [ExM] recipe) and yellow dot (TREx). All recipe families were tested with crosslinker concentrations of 0, 10, 30, 100, 300, and 1000 µg/mL, plus an additional condition for family A with 1500 µg/mL, corresponding to the original ExM recipe. Only conditions in which gels formed are plotted. (C) Definition of gel deformation index. Example gels from recipe family A with high crosslinker and low deformation (top panel, 1.5 mg/mL), and low crosslinker and high deformation (middle panel, 300 µg/mL). Bottom panel: schematic illustrating deformation index measurement. (D) Deformation index (mean ± SD, n = 3) versus expansion factor for each gel recipe family without biological specimens, with line colors and dots corresponding to specific recipes as in (A) and (B). Horizontal gray lines indicate thresholds for gels with mechanical quality deemed perfect (deformation < 0.125) and acceptable (deformation < 0.25). Ideal recipes would occupy the lower-right quadrant, corresponding to high expansion and low deformability.
 
-## Development of the TRex gel recipe
+### Development of the TRex gel recipe
 
 We began by characterizing a recipe family generated from the original ExM recipe (family A). Consistent with Chen et al., 2015, reducing the crosslinker to 300 µg/mL increased the expansion to ~9×, below which the gels fail to form consistently (Figure 1B, purple). We next characterized a high-monomer recipe family (family B) inspired by the 4×-expanding Ultra-ExM recipe from Gambarotto et al., 2019, which found that a higher monomer concentration relative to the original ExM recipe was necessary for high-fidelity preservation of the shape of centrioles. This was offset with a lower crosslinker (bisacrylamide) concentration of 0.1% (1000 µg/mL) to achieve 4× expansion. Indeed, for this high-monomer family of recipes, expansion as a function of crosslinker concentration was shifted leftward compared to standard ExM (Figure 1B, blue). As the crosslinker was decreased below 30 µg/mL, the increase in expansion factor saturated around 11.5×. The deformation index versus expansion factor curve for the high-monomer family ran below that for standard ExM, indicating that for a given expansion factor the high-monomer gel holds its shape better than the corresponding standard ExM gel (Figure 1D, blue).
 
@@ -50,17 +50,25 @@ We further tested an elevated gelation temperature of 50°C (family E) in an att
 
 Considering all five recipe families, family B (high acrylate and high APS/TEMED) displayed the lowest deformation index for a given expansion factor. Family D (high acrylamide and low APS/TEMED) displayed similar performance, with the deformation index remaining well within the acceptable range for expansion factors up to 10. In handling high-expanding (>8×) gels from all recipe families, we found that while those from the standard ExM family (A) were extremely prone to fragmentation, those from any of the high-monomer families could be handled more easily (and even dropped from a height of several feet) without breaking. Because the reduced initiator concentration of family D results in a slower and more controlled polymerization rate, and because we preferred a lower acrylate content, we chose this recipe family to proceed to biological specimen expansion. We found that the exact expansion factor varied for different specimens and gelation chamber geometries but could readily be adjusted by fine-tuning the crosslinker concentration. We thus recommend that users test gels with a range of crosslinker concentrations between 30 and 100 µg/mL to find a suitable recipe for their specimen preparation. We name the resulting method Ten-fold Robust Expansion (TREx) microscopy.
 
-## Subcellular imaging of specific proteins and cellular ultrastructure in thick brain slices
+### Subcellular imaging of specific proteins and cellular ultrastructure in thick brain slices
 
 In electron microscopy, nonspecific stains for proteins and membranes are commonly used to provide structural detail at high spatial resolution. Recently, the use of nonspecific NHS ester protein stains and other small-molecule probes has been combined with ExM (M’Saad and Bewersdorf, 2020; Mao et al., 2020; Sim et al., 2021; Yu et al., 2020). Expansion allows visualization of intracellular detail in such densely stained samples, which would otherwise be too crowded to lead to meaningful contrast. These applications have the promise to bring together the advantages of light microscopy (specific staining using antibodies and volumetric imaging) with the advantage of seeing cellular context typically provided by electron microscopy. Because TREx reaches single-step expansion factors at which small-molecule stains are expected to be useful, we set out to explore this idea further.
 
 We applied the inexpensive, green-emitting dye BODIPY-FL NHS (total protein stain; see Materials and methods) after expansion with TREx to demonstrate total protein distribution in thick (100 µm) slices of mouse brain cortex (Figure 2A, Figure 2—figure supplement 1, Figure 2—video 1). The neuropil region outside the cell somas contained a rich profusion of fibers and structures visible in sharp relief. The nucleus of each cell was easily identified, with especially strong staining in nucleoli-like structures. Surrounding each nucleus, the nuclear envelope could be identified, with particularly dense total protein stain on the side facing the nucleus. The nuclear envelope was punctuated by heavily stained spots that span the envelope, consistent with nuclear pore complexes (NPCs; Figure 2A, inset). Within the cytosol, several organelles were marked by either heavy inner staining with a dim border or weak inner staining.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73775/elife-73775-fig2-v1.jpg)
+
+**Figure 2.:** (A) Mouse brain tissue (cortex) expanded using TREx, stained for total protein content with BODPIY-FL NHS, and imaged by confocal microscopy. Displayed contrast is inverted to show dense stained regions as dark. Inset: zoom-in showing nuclear envelope with densely stained structures spanning the nuclear envelope, consistent with nuclear pore complexes. (B) Mouse brain tissue (cortex) stained with antibodies against Homer (magenta), Bassoon (yellow), VGAT (blue), and DAPI (gray), and expanded using TREx. (C) Volumetrically rendered zoom-in of white box in (A) showing paired Bassoon- and Homer-rich structures, consistent with excitatory synapses. Depending on the orientation, clear separation of Bassoon and Homer can be observed, as well as a complex, structured presynaptic vesicle pool marked by VGAT bearing several release sites marked by Bassoon. (D) Quantification of Bassoon and Homer separation (mean ± SD plotted, n = 538 synapses, one replicate). Scale bars (corrected to indicate pre-expansion dimensions): main ~2 µm, zooms ~400 nm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73775/elife-73775-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mouse brain tissue samples anchored with varying amounts of acryloyl-X SE (AcX), stained with NHS ester dye and disrupted with two methods: proteinase K diluted 1:1000 into phosphate buffered saline (PBS) and applied at room temperature (top row) or denaturing disruption buffer applied at 80°C (bottom row) for 3 hr. AcX was diluted from a 10 g/L stock to 200, 100, 50, 20, and 0 mg/L (from left to right) into PBS and applied for 1 hr. (B) Additional zooms of 3D volume in Figure 2B showing correlation in excitatory synapses between Homer and Bassoon. Line plots depict peak normalized intensity of example synapses. Scale bars (corrected to indicate pre-expansion dimensions): (A) ~ 1 mm; (B) 300 nm.
+
 We attempted to optimize protein retention, according to the total protein stain intensity, by reducing both protein anchoring and proteolysis compared with the original ExM. We tested a range of anchoring strengths by varying the concentration of the acryloyl-X SE (AcX) anchoring molecule applied prior to gelation. This was done in combination with two reduced disruption methods: proteinase K applied at one-tenth that of the original ExM method (Figure 2—figure supplement 1A, top row) and a high-temperature, protease-free denaturation treatment (Gambarotto et al., 2019; Ku et al., 2016; Tillberg et al., 2016; Zwettler et al., 2020) similar to that employed in Western blotting (Figure 2—figure supplement 1A, bottom row). The protease-free treatment enabled greater protein retention but at the cost of incomplete expansion. This could be offset through reduced AcX concentration, though this was not clearly superior to high AcX followed by proteolysis, indicating a general tradeoff between protein retention and gel expansion (see Materials and methods). We chose a hybrid approach with moderate AcX anchoring and low-concentration proteinase K digestion followed by high-temperature denaturation to proceed.
 
 We next tested whether antibodies, applied to the tissue using a standard immunofluorescence procedure before embedding, were also retained in the TREx gel. We stained mouse brain cortex tissue for Bassoon (a marker for both excitatory and inhibitory presynaptic active zones), Homer (a marker for the excitatory postsynaptic apparatus), and VGAT (a vesicular GABA transporter in the presynaptic compartments of inhibitory synapses). After staining and anchoring with AcX, tissue was expanded with TREx and imaged by light sheet microscopy. Numerous putative excitatory synapses were observed at high density, with clearly separated Bassoon and Homer pre- and postsynaptic staining (Figure 2B and C, Figure 2—figure supplement 1B, Figure 2—video 2). Because of the excellent axial resolution, TREx allowed us to quantify the separation of Bassoon and Homer in 3D, regardless of the angle of the synapse with respect to the imaging plane (Figure 2D). We found an average separation of 1.17 µm ± 0.52 µm (mean ± SD, 583 synapses), which, when corrected for expansion, is consistent with previous reports in cultured neurons that estimated the synapse separation between 90 and 130 nm (Glebov et al., 2016; Wiesner et al., 2020). Compared with Bassoon and Homer, VGAT had a more extended staining pattern, consistent with the known distribution of synaptic vesicles throughout presynaptic boutons. Elaborately shaped compartments with dense VGAT staining were seen with multiple synaptic release sites marked by Bassoon (Figure 2C). As expected, these release sites were not paired with the excitatory postsynaptic marker Homer. In addition, spatial correlation was observed in excitatory synapses between Homer and Bassoon, reflecting the transsynaptic alignment reported previously (Hruska et al., 2018; Figure 2—figure supplement 1B). These results demonstrate the ability of TREx to preserve correct synaptic staining while enabling sub-diffraction limited imaging of large tissue sections.
 
-## Validation of expansion factor and deformation
+### Validation of expansion factor and deformation
 
 Increasing the expansion factor from 4 to 10× could result in greater sensitivity of the expansion factor to local variation, for example, in protein dense complexes, resulting in less uniform expansion. To examine this, we explored the nanoscale isotropy of TREx by imaging NPCs, which have a highly stereotyped and well-characterized structure. The NPC constituent protein nucleoporin 96 (NUP96) appears in a ring structure with a 107 nm diameter (Thevathasan et al., 2019). NPCs have recently been explored as a reference structure for super-resolution microscopy methods, including ExM in combination with other super-resolution methods (Pesce et al., 2019; Thevathasan et al., 2019). For the conventional 4–5× expansion approach, this revealed that the diameter of the NPC was 14–29% smaller than expected from the macroscopic expansion of the gel. We used the NUP96-GFP homozygous knock-in cell line from Thevathasan et al., 2019 to study the quality of nuclear pore expansion using TREx with well-validated anti-GFP antibodies (Figure 3A). After expansion with TREx, individual NPCs were uniformly retained and clearly visible using diffraction-limited confocal microscopy (Figure 3B). An antibody against NUP153 similarly demonstrated individual NPCs but with less complete NPC coverage compared with the antibody stain against the NUP96-GFP tag (Figure 3C). The macroscopic gel expansion factor was 9.5×, suggesting an expected NPC size after expansion of 107 nm × 9.5 = 1.02 µm. We used a semi-automated approach to determining the diameter of 60 NPCs randomly chosen from three nonadjacent cells and found the size after expansion to be 939 nm ± 90 nm (mean ± SD) (Figure 3D). This is about 8% smaller than expected based on the macroscopic expansion of the gel and implies a local expansion factor of 8.8×, or 92% of the expected 9.5×. These data indicate that TREx offers more uniform local expansion compared to conventional ExM.
 
@@ -72,15 +80,27 @@ Other reference structures for super-resolution microscopy include microtubules 
 
 Next, we quantified the measurement error introduced by nonuniform expansion by comparing antibody-stained microtubules imaged before expansion with 3D gSTED versus after expansion with confocal microscopy (Figure 3H–J), as described previously (Chen et al., 2015). Measurement lengths between pairs of points after expansion were compared to the distance expected given uniform expansion, and the average fractional deviation plotted as a function of measurement length (Figure 3I). For a large tiled acquisition of 42 fields of view from one gel (~650 × 750 µm after expansion), the measurement error was found to be a constant fraction (3.2% ± 1.7%) of the measurement length (Figure 3I). We used the similarity transform to calculate the overall expansion factor of the entire imaged area and found it to be 9.4×, consistent with the expansion expected for the whole gel. Together, these data show that TREx enables uniform single-step, 10-fold expansion that retains structural detail over large distances, in both cultured cells and thick tissue slices, with similar performance compared with the original 4× ExM.
 
-## TREx enables subcellular localization of proteins and cellular ultrastructure in cultured cells
+### TREx enables subcellular localization of proteins and cellular ultrastructure in cultured cells
 
 We next explored the use of TREx for high-resolution imaging of specific proteins, NHS ester stains, and lipid membranes in cultured cells. For membranes, a custom-synthesized membrane probe compatible with the ExM process has been shown to visualize membranes in fixed brain tissue (Karagiannis et al., 2019). This probe relies on a peptide-modified lipid tail that intercalates in target membranes and provides opportunities for anchoring to the gel through D-lysines in its peptide sequence. We asked whether the commercially available membrane-binding probe mCLING could also be used for membrane staining and gel anchoring. mCLING has been developed as a fixable endocytosis marker consisting of a fluorophore and a short polypeptide group with one cysteine and seven lysines coupled to a palmitoyl membrane anchor (Revelo and Rizzoli, 2016). Due to the presence of multiple lysines, we hypothesized that mCLING would be compatible with standard ExM anchoring through AcX. While the standard protocol for mCLING delivery relies on active endocytosis in living cells, we tested whether mCLING would stain intracellular membranes more uniformly when added to fixed cells, which would have the added benefit of not perturbing intracellular membrane trafficking by long incubation in live cells. To test this, we fixed activated Jurkat T cells, incubated the fixed cells with mCLING overnight, and proceeded with the TREx protocol. We found that mCLING efficiently intercalates in both the plasma membrane and internal organelles and is retained following our standard anchoring procedure (Figure 4A, Figure 4—video 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73775/elife-73775-fig4-v1.jpg)
+
+**Figure 4.:** (A) Volumetric render of Jurkat T cell activated on anti-CD3-coated coverslip fixed and stained using mCLING. Colored clipping planes indicate portion clipped out to reveal intracellular detail. (B) Immunological synapse of activated T cell in (A) revealing organelle clustering at the immunological synapse. Below: mitochondria segmented using the trainable Weka segmentation algorithm indicated in magenta. (C) Representative example of mitochondrion in T cells visualized with mCLING. Line profile along the orange dashed line indicates mitochondrial cristae. (D) Depth-coded volumetric projection of Caco2 monolayer apical brush border as seen from above looking down on the cells. (E) Representative plane below the apical surface revealing highly interdigitated cell-cell contacts. (F) Resliced (left) representative zoom (right) of brush border showing microvilli as hollow protrusions. Line scan indicated in orange. (G) Comparison of dense brush borders after 10-fold expansion in water (left) and ~4.5× expansion in 13 mM salt (right, see Figure 4—figure supplement 1). Single plane of brush border and plane of same cell below the apical surface shown in cyan. Zooms 1 and 2 correspond to areas of the same size corrected for the expansion factor to illustrate the increase in resolution of tenfold expansion. (H) Quantification of microvilli diameter by determining the area of cross-sectioned (left). Plotted mean ± SD (107.7 ± 16.1 nm) of 12,339 microvili with means of individual cells color coded per replicate overlayed (four cells per replicate, N = 3). Scale bars (corrected to indicate pre-expansion dimensions): (A, B, D, E) (main) ~2 µm, (C, E) (zoom), (F) ~ 500 nm, (G, H) ~ 1 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73775/elife-73775-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Expansion factor of Ten-fold Robust Expansion Microscopy (TREx) gel without biological sample as a function of ionic strength. Black dots are measured values with mM total salt being derived from dilutions of phosphate buffered saline (PBS) (factor 1, 0.5, 0.1, 0.02 of PBS). The magenta dot represents 10× expansion in water in equilibrium with atmospheric CO2. Assuming each H+ corresponds to one HCO3- ion, the measured pH of water in equilibrium with room air of 6 implies an ionic strength of 10–6, or 1 µM.
 
 By carefully rendering the imaged volumes, we could, with one probe, both appreciate the ruffled morphology of the plasma membrane on top of the flattened part of the cell and visualize the organelle clustering typical of activated T cells (Figure 4A and B). As in electron microscopy, where distinct morphologies are used to identify organelles, we could clearly identify different organelles based on mCLING, suggesting that it could be used for automated segmentation of organelles. Indeed, we found that mitochondria could be readily segmented using a trainable Weka segmentation algorithm (Figure 4B; Arganda-Carreras et al., 2017). While the resolution of subcellular structures is limited by the density of mCLING moieties in the membrane, the efficiency of crosslinking to the gel, and the maximum expansion factor, we found that TREx allows sufficient single-step expansion to resolve individual mitochondrial cristae (Figure 4C), which are known to be as closely spaced as 70 nm (Stephan et al., 2019). Although mCLING is membrane impermeable in live cells (due to multiple positively charged amino groups), it readily stained fixed and unpermeabilized cells following extended incubation. Because this approach does not require labeling live cells and is expected to reduce differences in uptake efficiency between intracellular compartments, we used this approach in all subsequent experiments.
 
 We next tested if mCLING could also be used to visualize membranes in more complex cell types. To test this, we used differentiated Caco-2 cells grown to form an epithelial monolayer. Using TREx, we could expand the entire monolayer and visualize membranes using mCLING (Figure 4D–H, Figure 4—video 2). The advantage of optical, volumetric imaging is underscored by the fact that we can easily render one dataset in several ways, either resembling scanning electron microscopy to highlight volumetric surface morphology (Figure 4D) or transmission electron microscopy to explore single planes in more detail (Figure 4E and F). For example, we were able to resolve the elaborate interdigitated cell-cell junctions that could previously only be clearly appreciated using electron microscopy (Drenckhahn and Franz, 1986), as well as resolve individual microvilli as hollow membrane protrusions within the dense brush border. To underscore the significant resolution increase of TREx compared to standard ExM, we incubated expanded TREx gels with solutions of increasing ionic strength to shrink the gel back to ~4.5× the size of the pre-expanded gel (Figure 4G, and Figure 4—figure supplement 1). When the 10× and 4.5× expanded gels were imaged, dense brush borders of differentiated cells could only be resolved in the 10× gel (Figure 4G). To validate the expansion factor, we quantified the diameter of individual microvilli as these have been thoroughly characterized with EM with a diameter of ~100 nm (Crawley et al., 2014). Indeed, we found an average diameter of 1.08 ± 0.16 µm (n = 12,339 from 12 cells, N = 3), which, corrected for an expansion factor of 10, is within 8% of the value from electron microscopy. Together, these data illustrate the robustness of TREx in expanding multiple cell types and show how the increased expansion factor combined with a commercially available membrane stain provides rapid volumetric insights into the elaborate membranous architecture of cells.
 
 Previously, we used ExM to study the three-dimensional organization of microtubules in neurons and T cells (Hooikaas et al., 2020; Jurriens et al., 2021; Katrukha et al., 2021). In these experiments, cells were typically pre-extracted with detergent and glutaraldehyde to reduce background, followed by paraformaldehyde fixation (Tas et al., 2017). We reasoned that the increased expansion of TREx would dilute the soluble tubulin background, resulting in a relative boost in signal over background and eliminating the need for pre-extraction to enable high-resolution imaging of microtubules in combination with membranes. To test this, we fixed cells without pre-extraction, treated them with mCLING, stained for tubulin, and imaged the stained cells both before and after expansion with TREx (Figure 5A, second panel). Expanded cells retained high-quality anti-tubulin antibody signal exhibiting high contrast relative to the cytosolic background. We also observed increased detail in both mCLING and tubulin stains after expansion compared to before expansion, which was particularly apparent with side views of the same cell (Figure 5A, far right).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73775/elife-73775-fig5-v1.jpg)
+
+**Figure 5.:** (A) Single and merged planes of expanded U2OS cell stained for mCLING, tubulin, and DAPI; gray outlined insets show similar confocal and 3D STED acquisitions pre-expansion, for mCLING and tubulin, respectively. Single planes of mCLING and tubulin are displayed in inverted contrast. Orange line (1, 2) corresponds to reslices (left) with insets showing similar resliced planes pre-expansion. (B) U2OS cell expressing GFP-Sec61β stained for mCLING, GFP, and tubulin (tubulin channel not shown). (C) Quantification of endoplasmic reticulum (ER) tubule diameter of both mCLING and GFP-Sec61β channels. Plotted mean ± SD (787.7 ± 0.09 nm for mCLING and 925.5 ± 0.13 nm for GFP-Sec61β) full width at half maximum (FWHM) of 10 line scans over ER tubules positive for both mCLING and GFP-Sec61β from four cells (two independent experiments). Below: representative line scan of region indicated by (3) shown. (D) Left: volumetric render of cell in (B). Top portion of cell is clipped with clipping plane indicated in red. Volumetric render of entire volume for GFP and tubulin in inset (A) and (B), respectively. Middle: zoomed region of top of cell (indicated by box 2 in B). Right: single channels from middle panel displayed in inverted contrast revealing the tight spatial organization. (E) Merged plane of expanded U2OS cell expressing GFP-Sec61β stained for mCLING, GFP, NHS ester, and DAPI. Single planes of mCLING and NHS ester are displayed in inverted contrast. Scale bars (corrected to indicate pre-expansion dimensions): (A) (main) ~5 µm, (D) (renders) ~2 µm, (A) (reslices), (B) (single planes), (D) (single planes), (E) ~ 1 µm.
 
 We next fixed cells expressing GFP-Sec61β without pre-extraction, treated them with mCLING, stained for GFP and tubulin, and then proceeded with TREx (Figure 5B–D, Figure 5—video 1). Because small-molecule stains like mCLING do not rely on subsequent antibody amplification we reasoned that this decrease in linkage error should be reflected in the apparent size of subcellular structures. To test this, we quantified the diameter of endoplasmic reticulum (ER) tubules that were stained by both mCLING and GFP-Sec61β (Figure 5C). Indeed, we observed an average tubule diameter of 0.79 ± 0.1 µm for mCLING, which, corrected for 10-fold expansion, is consistent with the previously published range of 60–100 nm (Shibata et al., 2009; Shibata et al., 2006), while the anti-GFP signal from the same tubules is broadened to an average diameter of 0.93 ± 0.1 µm. Within the same dataset, the interplay between microtubules and ER (Figure 5D) in three dimensions could be resolved, which revealed how other membranous organelles were connected to both structures (Figure 5D). Thus, TREx facilitates high-resolution three-dimensional mapping of specific cytoskeletal and membranous structures in combination with markers that provide ultrastructural context.
 
@@ -106,73 +126,202 @@ In summary, by systematically exploring the ExM recipe space, we established a n
 
 ## Materials and methods
 
-## Recipe space exploration
+**Key resources table**
 
-## Gelation chambers
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit IgG (H+L) Alexa Fluor 488</td>
+      <td>Abcam</td>
+      <td>Cat# 150077; RRID:AB_2630356</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG3 Alexa Fluor 594</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21155; RRID:AB_2535785</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-chicken CF633</td>
+      <td>Biotium</td>
+      <td>Cat# 20126; RRID:AB_10852831</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit IgG (H+L) Alexa Fluor 594</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A11037; RRID:AB_2534095</td>
+      <td>IF (1:400–1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG (H+L) Alexa Fluor 488</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A11029; RRID:AB_2534088</td>
+      <td>IF (1:400–1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-chicken IgY (H+L) Alexa Fluor 488</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A11039; RRID:AB_2534096</td>
+      <td>IF (1:400–1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD3</td>
+      <td>STEMCELL Technologies</td>
+      <td>Cat# 60011</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-α-tubulin</td>
+      <td>Abcam</td>
+      <td>Cat# ab52866; RRID:AB_869989</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-clathrin heavy chain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MA1-065; RRID:AB_2083179</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Aves Labs</td>
+      <td>Cat# GFP-1010; RRID:AB_2307313</td>
+      <td>IF (1:400–1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NUP153</td>
+      <td>Abcam</td>
+      <td>Cat# ab84872; RRID:AB_1859766</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-Bassoon</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 141016; RRID:AB_2661779</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Homer</td>
+      <td>Abcam</td>
+      <td>Cat# 97593; RRID:AB_10681160</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG3 anti-VGAT</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 131011; RRID:AB_887872</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U-2 OS-CRISPR-NUP96-mEGFP</td>
+      <td>Cell Lines Service</td>
+      <td>Cat# 195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pAc-GFPC1-Sec61beta</td>
+      <td>Addgene</td>
+      <td>Cat# 15108; RRID:Addgene_15108</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Recipe space exploration
+
+#### Gelation chambers
 
 A glass slide served as the bottom piece of each gelation chamber. Four strips of 250-µm-thick adhesive silicone material (DigiKey Cat# L37-3F-320-320-0.25-1A), ~ 3 mm wide and running the width of the slide, were adhered to the slide to partition it into three separate chambers, each ~12 mm wide. A plus-charged glass slide was placed over the silicone strips to form the top of the gelation chamber and held in place with tape. Two sides of each chamber were open to air, providing a convenient fill port for adding ~100 µL of monomer solution after chamber construction.
 
-## Gel synthesis and characterization
+#### Gel synthesis and characterization
 
 Sodium acrylate was made by neutralizing acrylic acid (Sigma, 147230) with NaOH until the pH reached the range of 7.5–8. Initial neutralization (until pH ~7) was done with 10 N NaOH on ice and using a fume hood. Neutralization was done in a volume of water calculated to yield a final concentration of 4 M sodium acrylate. The gel recipes for each family contained 1× phosphate buffered saline (PBS) and the amounts of acrylamide (Sigma, A4058), sodium acrylate, and initiator (APS, Sigma, A3678) indicated in Figure 1A. Each gel recipe contained the same amount of TEMED (Sigma, T7024) as APS. For each recipe family, gelation solution with crosslinker withheld (but including APS and TEMED) was premixed on ice, in one tube for each recipe family. This solution was then split into six tubes and mixed with serial dilutions of crosslinker (bisacrylamide, Sigma, M1533) to yield complete gelation solution with final crosslinker concentrations (in µg/mL) of 1000, 300, 100, 30, 10, and 0. Complete gelation solution was pipetted into gelation chambers and incubated at 50°C for 1 hr (family E) or 37°C for 2 hr (families A–D). Gels were then cooled for 15 min at RT and chamber tops carefully removed. Gels typically remained stuck exclusively to the top (plus charged) slide. Samples of each gel were taken with a 6 mm biopsy punch, taking care to avoid material within ~2 mm of the chamber edges (to avoid oxygen exposure from air or silicone material during gelation). Excess gel was scraped away with a razor blade. A few drops of distilled water were pipetted onto each gel to help release them from the glass slide. Each 6 mm gel specimen was gently released from the slide with a razor blade, placed in a 9 cm Petri dish and expanded by washing with excess water 2 × 15 min followed by 2 × 1 hr. Diameters of expanded gels were measured and divided by 6 mm to obtain the expansion factor. A semi-circle 25 mm in diameter was punched from each gel using a cookie cutter. Semi-circular gel punches were placed in a plastic tray, which was stood up on end so that the gel stood upright on its curved side, allowing the flat edge to deform under the force of gravity. Each gel was photographed, with a ruler positioned for scale. Using ImageJ, each top edge was described by seven manually chosen points, which were then fit to a circle. This best-fit circle was used to calculate the vertical deviation of the gel corners, which was divided by the gel radius to obtain the deformation index.
 
-## TREx gelation solution
+#### TREx gelation solution
 
 Sodium acrylate was either purchased (Sigma, 408220) or made by neutralizing acrylic acid as described above. TREx gelation solution contains 1.1 M sodium acrylate, 2.0 M acrylamide (AA), 50 µg/mL (for tissue slices and cultured cells prepared at Janelia), or 90 µg/mL (for cultured cells prepared at Utrecht University) N,N′-methylenebisacrylamide (bis), PBS (1×), 1.5 mg/mL APS, 1.5 mg/mL TEMED, and (optionally, for thick tissue slices) 15 µg/mL 4-hydroxy TEMPO (4HT, Sigma, 176141). Monomer solution was made by combining all components of gelation solution except APS, TEMED, and 4HT. Monomer solution may be aliquoted and stored at –20°C, but must be thawed at RT and vortexed before use to redissolve any acrylamide crystals that may have precipitated at low temperature before freezing. Fully dissolved monomer solution may be kept on ice for up to several hours before crystallization occurs. 4HT, TEMED, and APS were added to monomer solution to produce gelation solution directly before use.
 
-## Tissue experiments
+### Tissue experiments
 
-## Fixation and antibody staining
+#### Fixation and antibody staining
 
 Mice were transcardially perfused with ice-cold 4% formaldehyde in 100 mM sodium phosphate buffer, pH 7.4. Brains were dissected out and post-fixed in 4% formaldehyde at 4°C overnight (Figure 2A) or for 2 hr (Figure 2B), followed by washing with PBS (1×) and slicing by vibratome at 100 μm. For Figure 2B, slices were stained with standard IHC procedures. Primary antibodies were used at 1:300 dilution in PBS with 0.1% Triton and 2% bovine serum albumin (BSA) (PBT) overnight at 4°C (chicken anti-Bassoon, Synaptic Systems, Cat# 141016, RRID:AB_2661779; rabbit anti-Homer, Abcam, Cat# 97593, RRID:AB_10681160; mouse IgG3 anti-VGAT, Synaptic Systems, Cat# 131011, RRID:AB_887872). Sections were washed 3 × 30 min in PBT and stained for at least 6 hr in secondary antibodies 1:500 in PBT at RT (goat anti-rabbit Alexa Fluor 488, Abcam, Cat# 150077, RRID:AB_2630356; goat anti-mouse IgG3 Alexa Fluor 594, Invitrogen, Cat# A-21155, RRID:AB_2535785; goat anti-chicken CF633, Biotium, Cat# 20126, RRID:AB_10852831). Stained sections were washed 3 × 30 min in PBS.
 
-## TREx
+#### TREx
 
 Brain slices were treated with 100 μg/mL (Figure 2A) or 10 μg/mL (Figure 2B) acryloyl-X SE (Thermo Fisher, A20770) in PBS (diluted from a 10 mg/mL anhydrous DMSO stock solution) for 1 hr at RT, followed by rinsing with PBS. Slices were incubated with TREx gelation solution (using 50 µg/mL bis and with 4HT added up to 15 µg/mL) for 20 min on ice with shaking. Following incubation on ice, each tissue specimen was placed on a glass slide at RT. Four dabs of vacuum grease were applied to the slide, with each dab at least several millimeters from the tissue specimen. A coverslip was placed over the tissue and vacuum grease dabs, and pressed down until contacting the tissue, taking care not to let the tissue slide around on the slide. The vacuum grease served to hold the assembly in place, thus forming the gelation chamber. Gelation solution was pipetted into the chamber from the side to fully surround the tissue. The chamber was incubated at 37°C for 1 hr to complete gelation. Following embedding, excess gel was removed with a razor blade, and gelled slices were recovered into PBS. The gel for Figure 2B was digested in proteinase K (NEB, P8107S) diluted 1:1000 in PBS for 3 hr at RT and washed in PBS 4 × 30 min. Gels for both Figure 2A and B were then placed into disruption buffer (5% SDS, 200 mM NaCl, 50 mM Tris pH 7.5) in a 2 mL Eppendorf tube and incubated at 80°C for 3 hr followed by rinsing in 0.4 M NaCl and washing 2 × 30 min in PBS. Gels were stained with BODIPY-FL NHS (total protein stain) at 10–20 μM (Figure 2A) or DAPI at 200 µg/L (Figure 2B) in PBS for 1 hr at RT. Gels were placed in glass-bottom six-well plates and washed in Milli-Q water 3 × 15 min followed by 2 × 1 hr to fully expand. Gels were imaged using a Zeiss LSM 800 confocal microscope with ×40/1.1 NA, water immersion objective (Figure 2A), or Zeiss Z1 lightsheet microscope with ×10/0.3 NA illumination objectives and ×20/1.0 NA water immersion detection objective (Figure 2B).
 
-## Image processing
+#### Image processing
 
 For Figure 2A, raw data was drift corrected using Huygens Professional (SVI) and imported into ImageJ, where a sum projection of two planes (z-spacing: 0.8 µm) was made. Figure 2B is a maximum projection of two planes (z-spacing: 0.38 µm) and indicated zoom is a volumetric render of the raw data in Arivis.
 
-## Synaptic distance
+#### Synaptic distance
 
 Raw data was segmented using ilastik Pixel and Object segmentation workflows (Berg et al., 2019). For each Homer-positive segmented object (postsynaptic compartment), the closest Bassoon-positive segmented object (presynaptic compartment) was selected. Synaptic distance was defined as the distance between the local peaks in intensity that were closest to the mask center of mass in 3D.
 
-## Synaptic marker intensity line plots
+#### Synaptic marker intensity line plots
 
 For Figure 2—figure supplement 1B, max projections of 31 planes in three fields of view were used to get the intensities of Bassoon and Homer from synapses that were perpendicular to the imaging plane. The values were then peak normalized.
 
-## NPC experiment
+### NPC experiment
 
-## Cell culture, fixation, and antibody staining
+#### Cell culture, fixation, and antibody staining
 
 U2OS cells with homozygous GFP-NUP96 knock-in (Cell Lines Service, no. 195) were maintained in DMEM (Corning) supplemented with 10% fetal bovine serum (FBS) (Gibco), 1% L-glutamine (Gibco), and 1% penicillin-streptomycin (Gibco). Cells were tested for mycoplasma contamination prior to use for this work. Exponentially growing cells were harvested and seeded onto 12 mm, No. 1 coverslips (Carolina Biological Supply) for use in ExM. Cells were grown at 37°C and 5% CO2. Cells were fixed with 4% formaldehyde (EMS, RT 15714) in 1× PBS for 10 min at RT, then rinsed with 1× PBS. Cells were stained with standard immunocytochemistry (ICC) procedures. Primary antibodies were used at 1:200 dilution in PBS with 0.1% Triton and 2% BSA (PBT) for 2 hr at RT (chicken anti-GFP, Aves Labs, Cat# GFP-1020, RRID:AB_10000240; rabbit anti-NUP153, Abcam, Cat# ab84872, RRID:AB_1859766), followed by washing 3 × 5 min in 1× PBS. Secondary antibodies were used at 1:200 dilution in PBT for 2 hr at RT or at 4°C overnight (goat anti-chicken Alexa Fluor 488, Thermo Fisher Scientific, Cat# A11039, RRID:AB_2534096; goat anti-rabbit Alexa Fluor 594, Thermo Fisher Scientific, Cat# A11037, RRID:AB_2534095), followed by washing 3 × 5 min in 1× PBS. Stained cells were imaged before expansion on an epifluorescence microscope, Nikon Ti-E with ×60/1.2 NA water immersion objective. The imaged region was indicated by marking the back of the coverslip with a marker.
 
-## TREx
+#### TREx
 
 Fixed cells were anchored with 100 µg/mL AcX in 1× PBS for 1 hr at RT and embedded using the TREx gelation solution. The gelation chamber was constructed from a 20-mm-diameter, adhesive-backed silicone gasket (Sigma, GBL665504) affixed to a glass slide. The 12 mm coverslip with cultured cells was affixed to the center of the gelation chamber with a dab of vacuum grease and covered with PBS. TEMED and APS were then added to the TREx monomer solution on ice and mixed well to produce gelation solution. The PBS was tipped off from the cells, which were rinsed with ~100 μL of gelation solution. Approximately 200 μL of gelation solution was placed into the gelation chamber, which was sealed with a 22-mm-square #2 coverslip. The completed gelation chamber was placed at 37°C for 1 hr to complete gelation. The chamber was disassembled and the gel carefully trimmed with a curved scalpel into a right trapezoid shape centered around the pre-gelation imaged area. The trimmed trapezoid was photographed with a ruler for scale, quickly to avoid shrinking due to evaporation, and recovered into PBS. The gel was then digested with proteinase K (NEB, P8107S) diluted 1:1000 in PBS for 3 hr at RT and washed in PBS 4 × 30 min. Digested gels were placed into disruption buffer (5% SDS, 200 mM NaCl, 50 mM Tris pH 7.5) in a 2 mL Eppendorf tube and incubated at 80°C for 3 hr followed by rinsing in 0.4 M NaCl and washing 2 × 30 min in PBS. Disrupted gels were expanded fully with several washes in deionized water, photographed again with a ruler for scale, and imaged with a Zeiss LSM 800 confocal microscope with ×40/1.1 NA water immersion objective.
 
-## Data analysis
+#### Data analysis
 
 The gel size before and after expansion was measured from the gel photographs. The centers of 60 randomly chosen NPCs in three nonadjacent cells were identified manually and saved as an ROI list in ImageJ. The radial intensity distribution of each NPC was computed using the ‘Radial Profile Plot’ plugin (https://imagej.nih.gov/ij/plugins/radial-profile.html) and saved as a .csv. Radial intensity distributions were loaded into MATLAB for further processing. A Gaussian distribution was fit to a window in the middle of each profile, and the center of the Gaussian was taken as the radius of the corresponding NPC.
 
-## Wild-type, transfected, and T cell experiments
+### Wild-type, transfected, and T cell experiments
 
-## Cell culture
+#### Cell culture
 
 Jurkat T cells (clone E6.1) were grown in RPMI 1640 medium w/ L-glutamine (Lonza) supplemented with 9% FBS and 1% penicillin/streptomycin. For T cell activation, 18 mm #1.5 coverslips (Marienfeld, 107032) were coated with poly-D-lysine (Thermo Fisher Scientific, A3890401), washed with PBS and incubated overnight at 4°C with a mouse monoclonal anti-CD3 (clone UCHT1, STEMCELL Technologies, #60011) 10 μg/mL in PBS. Cells were spun down for 4 min at 1000 rpm and resuspended in fresh, prewarmed RPMI 1640 medium, after which cells were incubated on the coated coverslips for 3 min prior to fixation. U2OS and COS7 cells were cultured in DMEM medium supplemented with 9% FBS and 1% penicillin/streptomycin. U2OS cells were transfected with GFP-Sec61β (Addgene, 15108) using FuGENE6 (Promega). Caco2-BBE cells (a gift from S.C.D. van IJzendoorn, University Medical Center Groningen, the Netherlands) were maintained in DMEM supplemented with 9% FBS, 50 µg/µL penicillin/streptomycin and 2 mM L-glutamine. For imaging, cells were seeded on 6.5 mm Transwell filters (3470; Corning) at a density of 1 × 105 /cm2 and cultured for 10–12 days to allow for spontaneous polarization and brush border formation. All cell lines were tested for mycoplasma contamination prior to use in this work.
 
-## Immunofluorescence, mCLING treatment, and antibody staining
+#### Immunofluorescence, mCLING treatment, and antibody staining
 
 Cells were fixed for 10 min with prewarmed (37°C) 4% paraformaldehyde + 0.1% glutaraldehyde in PBS. For visualization of lipid membranes, cells were washed twice in PBS after fixation and incubated in 5 μM either mCLING-Atto647N (Synaptic Systems, 710 006AT1) or mCLING-Atto488 (Synaptic Systems, 710 006AT3) in PBS overnight at RT. The following day, cells were fixed a second time with prewarmed (37°C) 4% paraformaldehyde + 0.1% glutaraldehyde in PBS. For clathrin heavy chain labeling in Figure 3E and tubulin labeling of COS7 cells in Figure 3G, cells were pre-extracted for 1 min with prewarmed (37°C) extraction buffer (80 mM K-PIPES pH 6.8, 4 mM MgCl2, 1 mM EGTA, 0.35% Trition X-100, 0.2% glutaraldehyde). After extraction, cells were fixed for 10 min with prewarmed 4% paraformaldehyde in PBS. Next, cells were washed with PBS and permeabilized using PBS + 0.2% Triton X-100. Cells should be permeabilized even if no antibody staining will be done to ensure uniform gelation. Epitope blocking and antibody labeling steps were performed in PBS + 3% BSA. For immunofluorescence staining, we used a rabbit monoclonal antibody against α-tubulin (clone EP1332Y, Abcam, ab52866), a mouse monoclonal antibody against clathrin heavy chain (Thermo Fisher Scientific, MA1-065), and a chicken polyclonal antibody against GFP (Aves Labs, GFP-1010) in combination with goat anti-rabbit IgG (H+L) Alexa Fluor 594 (Molecular Probes, a11037), goat anti-mouse IgG (H+L) Alexa Fluor 488 (Molecular Probes, a11029), and goat anti-chicken IgY (H+L) Alexa Fluor 488 (Molecular Probes, a11039), respectively.
 
-## TREx
+#### TREx
 
 For TREx, samples were treated with 100 µg/mL acryloyl-X SE (AcX) (Thermo Fisher, A20770) in PBS overnight at RT. TEMED and APS were added to monomer solution (1.5 mg/mL each) to produce gelation solution. 170 μL of gelation solution was transferred to a silicone gasket with inner diameter of 13 mm (Sigma-Aldrich, GBL664107) attached to a parafilm-covered glass slide, with the sample put cell-down on top to close off the gelation chamber. The sample was directly transferred to a 37°C incubator for 1 hr to fully polymerize the gel. All gels excluding samples that were processed for subsequent NHS ester staining were transferred to a 12-well plate and digested with 7.5 U/mL Proteinase-K (Thermo Fisher, EO0491) in TAE buffer (containing 40 mM Tris, 20 mM acetic acid, and 1 mM EDTA) supplemented with 0.5% Triton X-100, 0.8 M guanidine-HCl, and DAPI for 4 hr at 37°C. The gel was transferred to a Petri dish, water was exchanged 2 × 30 min, and the sample was left in MilliQ water to expand overnight.
 
 For NHS staining, gels were first treated in disruption buffer containing 200 mM SDS, 200 mM NaCl, and 50 mM Tris pH 6.8 for 1.5 hr at 78°C. Gels were washed twice for 15 min in PBS and incubated with 20 μg/mL Atto 594 NHS ester (Sigma-Aldrich, 08471) in PBS prepared from a 20 mg/mL stock solution in DMSO for 1 hr at RT with shaking. After staining, gels were washed with excess of PBS, transferred to a Petri dish, and expanded overnight. Prior to imaging, the cells were trimmed using a scalpel blade to fit in an Attofluor Cell Chamber (Molecular Probes A-7816).
 
-## Image acquisition and analysis
+#### Image acquisition and analysis
 
 ExM and pre-expansion images were acquired using a Leica TCS SP8 STED 3X microscope equipped with an HC PL APO ×86/1.20W motCORR STED (Leica 15506333) water objective. A pulsed white laser (80 MHz) was used for excitation; when using STED, a 775 nm pulsed depletion laser was used. The internal Leica GaAsP HyD hybrid detectors were used with a time gate of 1 ≤ tg ≤ 6 ns. The set-up was controlled using LAS X.
 

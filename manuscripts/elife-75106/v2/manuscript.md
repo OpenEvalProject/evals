@@ -13,13 +13,25 @@
 
 ## Abstract
 
-Serum response factor (SRF) is an essential transcription factor that influences many cellular processes including cell proliferation, migration, and differentiation. SRF directly regulates and is required for immediate early gene (IEG) and actin cytoskeleton-related gene expression. SRF coordinates these competing transcription programs through discrete sets of cofactors, the ternary complex factors (TCFs) and myocardin-related transcription factors (MRTFs). The relative contribution of these two programs to in vivo SRF activity and mutant phenotypes is not fully understood. To study how SRF utilizes its cofactors during development, we generated a knock-in Srf allele in mice harboring point mutations that disrupt SRF-MRTF-DNA complex formation but leave SRF-TCF activity unaffected. Homozygous aI Srf mutants die at E10.5 with notable cardiovascular phenotypes, and neural crest conditional mutants succumb at birth to defects of the cardiac outflow tract but display none of the craniofacial phenotypes associated with complete loss of SRF in that lineage. Our studies further support an important role for MRTF mediating SRF function in cardiac neural crest and suggest new mechanisms by which SRF regulates transcription during development. aI/aI
+Serum response factor (SRF) is an essential transcription factor that influences many cellular processes including cell proliferation, migration, and differentiation. SRF directly regulates and is required for immediate early gene (IEG) and actin cytoskeleton-related gene expression. SRF coordinates these competing transcription programs through discrete sets of cofactors, the ternary complex factors (TCFs) and myocardin-related transcription factors (MRTFs). The relative contribution of these two programs to in vivo SRF activity and mutant phenotypes is not fully understood. To study how SRF utilizes its cofactors during development, we generated a knock-in SrfaI allele in mice harboring point mutations that disrupt SRF-MRTF-DNA complex formation but leave SRF-TCF activity unaffected. Homozygous SrfaI/aI mutants die at E10.5 with notable cardiovascular phenotypes, and neural crest conditional mutants succumb at birth to defects of the cardiac outflow tract but display none of the craniofacial phenotypes associated with complete loss of SRF in that lineage. Our studies further support an important role for MRTF mediating SRF function in cardiac neural crest and suggest new mechanisms by which SRF regulates transcription during development.
 
 ## Introduction
 
 Multicellular development requires the precise management of cellular behaviors including proliferation, migration, and differentiation. These are coordinated through intercellular communication pathways, such as growth factor signaling, that couple extracellular information with internal effectors, including transcription factors (TFs) (Fantauzzo and Soriano, 2015; Lemmon and Schlessinger, 2010). The balance between opposing transcription programs is tuned by signaling pathways which activate specific TFs or in some cases cofactors that direct the behavior of a common TF. One example of the latter is the essential transcription factor Serum Response Factor (SRF) (Posern and Treisman, 2006). SRF is necessary for the expression of immediate early genes (IEGs) in cells stimulated with serum or growth factors, as well as many genes related to the actin cytoskeleton, contractility, and muscle differentiation.
 
 SRF binds a conserved DNA regulatory sequence known as a CArG box, a motif found at many cytoskeletal and growth-factor inducible gene promoters (Mohun et al., 1991; Norman et al., 1988; Sun et al., 2006b). SRF can, however, effect at least two unique transcriptional programs by coupling with two families of cofactors that compete for a common binding site on SRF itself (Miano, 2003; Wang et al., 2004 Figure 1A). The ternary complex factors (TCFs) are E26 transformation-specific (ETS) family proteins activated by extracellular signal-regulated kinase 1/2 (ERK1/2) phosphorylation (Mylona et al., 2016). Once activated, they bind DNA and promote cellular proliferation by transcribing IEGs in coordination with SRF (Esnault et al., 2017; Gualdrini et al., 2016). There are three TCF members in mouse and human: ELK1, ELK3/NET, and ELK4/SAP1 (Posern and Treisman, 2006). Opposing SRF-TCF activity are the Myocardin Related Transcription Factors (MRTFs). These cofactors rely on SRF to bind DNA, promote cytoskeletal gene expression, and are particularly important in muscle differentiation (Posern and Treisman, 2006). MRTFs bind to and are inhibited by G-actin. Polymerization of G-actin into F-actin liberates MRTFs to translocate to the nucleus and bind SRF (Miralles et al., 2003). This can be promoted by multiple signaling pathways, including phosphoinositide 3-kinase (PI3K), that stimulate guanine nucleotide exchange factors to activate F-actin-promoting Rho-family GTPases (Brachmann et al., 2005; Hanna and El-Sibai, 2013; Jiménez et al., 2000; Vasudevan and Soriano, 2014). MRTFs are also positively and negatively regulated by extensive phosphorylation (Panayiotou et al., 2016). Three MRTFs are known to interact with SRF: Myocardin itself, MRTF-A/MKL1/MAL, and MRTF-B (Parmacek, 2007). Myocd is expressed specifically in muscle while Mrtfa and Mrtfb are more broadly expressed (Posern and Treisman, 2006). A fourth MRTF, MAMSTR/MASTR, interacts with MEF2 proteins and is not known to bind SRF (Creemers et al., 2006).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram depicting SRF, its TCF and MRTF cofactors, and the upstream signals that regulate them. (B) DAPI stained embryos at E11.5 and E12.5 show a facial cleft following loss of Srf in NC. Scale bar represents 1 mm. (C) Diagram depicting RNA-sequencing strategy. (D) Volcano plot showing DEGs in Srf NC conditional mutants. Genes with a P-value < 0.01 and log2 fold change (FC) >0.25 are colored. Select genes are labeled. (E) A heatmap of the top 25 DEGs by q value. The samples cluster by genotype and are color-coded by Z-score. (F) Gene set enrichment analysis (GSEA) using a list of DEGs with q ≤ 0.05 and Log2FC ≤–0.25. Enrichment for ENCODE TF ChIP-Seq, GO Cellular Component, and GO Biological Process are shown. (G) GSEA for known SRF, MRTF, and TCF ChIP targets from previous datasets (Esnault et al., 2014; Gualdrini et al., 2016) across our entire dataset. (H) Overlap of known MRTF and TCF targets with DEGs q ≤ 0.05. (I) Absolute value of log2 FC for DEGs that overlap with each category. Horizontal bar indicates the mean (0.385 Shared, 0.378 MRTF, 0.219 TCF).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** E10.5 embryos subject to in situ hybridization using probes against Msx1, Alx3, Six3, Shh, and Fgf8 showed no significant differences between Srf NC conditional mutants and control littermates. Msx1 embryos are shown in ¾ view to highlight maxillary expression. Fgf8 embryos are shown in frontal and profile views to highlight the ventral forebrain and mandibular expression domains, respectively. Scale bar represents 500 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Volcano plot showing genes enriched in mandible (red) versus FNP (blue) tissue. (B) Individual transcripts per million reads (TPM) values for Hand2 and Six3 plotted by genotype, showing the expected tissue enrichment. (C) PCA plots for the individual samples showing PCA1 vs PCA2 (left) and PCA1 vs PCA3 (right) indicate separation of the samples by tissue (PCA1) and genotype (PCA3). Samples are color-coded by genotype. (D) TPM values of Srf and several affected genes plotted by genotype. While Srf levels vary somewhat among the non-clefted control genotypes, downstream targets are only affected in the conditional mutants. (E) Expression of Srf and its cofactors in craniofacial tissue from this study (top) and in a separate study using sorted NC cells (Minoux et al., 2017) as well as whole E13.5 palate (Axel Visel, 2015) and passage 2 MEPMs for comparison (Vasudevan et al., 2015). (F) Overlap of DEGs from mandible (pink), FNP (cyan), and a joint model using both tissues (yellow). (G) Enrichr GSEA for upregulated genes with q ≤ 0.05 and Log2FC ≥ 0.25 from the joint model shows little enrichment and such genes may therefore be indirect targets of SRF. (H) Enrichr GSEA using a list of genes with q ≤ 0.05 and Log2FC ≤ –0.25 from each tissue showing similar terms to the joint model, with the exception of cholesterol-related GO terms specific to the FNP dataset. (I) GSEA for mandible and FNP samples compared to known SRF, MRTF, and TCF targets (Esnault et al., 2014; Gualdrini et al., 2016) showing preferential enrichment for MRTF targets in both datasets. Columns are the mean and error bars represent the standard deviation in (B) and (D).
 
 Srf and its cofactors have been extensively studied genetically. Srf-/- mutant mice die between E6.5 and E8.5 showing defects in mesoderm formation (Arsenian et al., 1998; Niu et al., 2005). Cofactor knockouts are comparatively mild. Single TCF mutants are all fully or partially viable (Ayadi et al., 2001; Cesari et al., 2004; Costello et al., 2004; Weinl et al., 2014) and Elk1; Elk3; Elk4 triple null embryos have not been described in detail but survive until E14.5 without obvious defects (Costello et al., 2010; Gualdrini et al., 2016). Mrtfa-/- mutant mice are viable (Li et al., 2006; Sun et al., 2006a) whereas Mrtfb-/- mice are inviable between E13.5-E15.5, exhibiting cardiovascular defects (Li et al., 2012; Oh et al., 2005). Myocd-/- mice have the most severe phenotype and die at E10.5, also from cardiovascular defects (Espinoza-Lewis and Wang, 2014; Li et al., 2003). Mrtfa; Mrtfb double null mice have not been described, but conditional double mutants have shown these factors exhibit redundancy and broadly phenocopy loss of Srf in several tissues and cell types (Cenik et al., 2016; Guo et al., 2018; Li et al., 2005a; Trembley et al., 2015). However, studies comparing Srf and Mrtfa; Mrtfb mutants are not always identical. In megakaryocytes, loss of Mrtfa and Mrtfb is more severe than loss of Srf and there are large gene expression differences in the two models (Smith et al., 2012; Halene et al., 2010). Indeed, there is evidence that MRTFs may regulate genes independent of SRF or act as cofactors for TFs other than SRF (Asparuhova et al., 2011; Kim et al., 2017). Whether the differences in Srf versus Mrtfa; Mrtfb loss-of-function studies are due to SRF-TCF activity, SRF-independent MRTF activity, or TCF/MRTF-independent SRF activity remains uncertain. These studies are summarized in Supplementary file 1.
 
@@ -29,7 +41,7 @@ In this study, we further characterize the molecular consequences of losing Srf 
 
 ## Results
 
-## Srfflox/flox; Wnt1-CreTg/+ mice develop a midfacial cleft and bleb, characterized by reduced cytoskeletal gene expression
+### Srfflox/flox; Wnt1-CreTg/+ mice develop a midfacial cleft and bleb, characterized by reduced cytoskeletal gene expression
 
 To establish a phenotypic baseline for embryos lacking Srf in NC, we first examined conditional null embryos at E11.5 and E12.5 and assessed their morphology. Consistent with our previous study, a midfacial cleft develops from E10.5 to E11.5, becoming prominent at E11.5 as a failure of the medial nasal process and lateral nasal process (MNP and LNP, respectively) to converge at the midline (Figure 1B–C; Vasudevan and Soriano, 2014). By E12.5, a fluid-filled bleb develops at the midline, often with hemorrhaging into the midfacial cavity (Figure 1B). Embryos turned necrotic starting at E12.5 and did not survive past E13.5.
 
@@ -41,17 +53,62 @@ The most differentially expressed genes primarily encoded cytoskeletal genes tha
 
 In summary, our gene expression analysis found that the genes most affected by loss of Srf in both mandible and FNP were enriched for cytoskeleton-related established SRF-MRTF targets. These data, coupled with our previous observations that Pdgfra interacted genetically with Srf in NC and PDGF stimulation promoted SRF-MRTF complex formation, led us to hypothesize that SRF-MRTF interactions would be critical for midfacial development.
 
-## SrfaI/aI succumb during early organogenesis with cardiovascular defects
+### SrfaI/aI succumb during early organogenesis with cardiovascular defects
 
 In order to test the requirement for SRF-MRTF interactions genetically, we introduced four knock-in point mutations to the αI helix of the SRF DNA-binding domain previously shown to disrupt SRF-MRTF-DNA ternary complex formation while leaving SRF-TCF-DNA complex formation unaffected (Figure 2—figure supplement 1A-C; Hipp et al., 2019; Zaromytidou et al., 2006). Underscoring their importance, we found these residues are conserved in Srf orthologs from human to sponge, although they are intriguingly less well-conserved in clades lacking a readily identifiable Mrtf ortholog, namely flatworms (Platyhelminthes) and Placazoa (Figure 2—figure supplement 2). We included an N-terminal 3xFLAG tag and refer to the allele as SrfaI. As a control, we generated a separate SrfFLAG tagged line without the αI helix mutations.
 
 SrfFLAG/FLAG mice were viable and fertile, confirming that neither the FLAG tag nor targeting strategy affected development. In contrast, no SrfaI/aI mice were found at weaning age (Table 1). Because we observed no stillborn or dying neonates, we examined embryos at different stages. SrfaI/aI embryos were recovered in Mendelian ratios until E10.5 but were easily identifiable from E9.5 onward due to their obvious morphological differences from control littermates. Mutant embryos were slightly smaller at E9.5 and most had turning defects that ranged in severity from incompletely turned to totally unturned (Figure 2A). This was accompanied by a wavy neural tube, as seen in many embryos with a deficiency in mesoderm (Figure 2A, middle embryo) and some embryos showed a delay in anterior neural tube closure, indicated by the open midbrain (Figure 2A). Mutant embryos also had a missing or hypoplastic second pharyngeal arch (Figure 2A–B, asterisks). Additionally, the yolk sac showed a crinkled appearance with numerous red blood cells, but no obvious mature blood vessels, indicating the onset of primitive hematopoiesis but not vasculogenesis (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig2-v2.jpg)
+
+**Figure 2.:** (A) DAPI stained E9.5 embryos of the indicated genotypes show that compared to SrfaI/+ embryos, SrfaI/aI embryos are growth retarded, incompletely turned, have short and disorganized tails, a wavy neural tube (red arrowhead, trunk), delayed anterior neural tube closure (red arrowhead, head), and a hypoplastic or missing second pharyngeal arch (red asterisk). Scale bar represents 500 μm. (B) Higher magnification confocal images of the first two embryos in (A). Scale bar represents 500 μm. (C) Brightfield images of E9.5 yolk sacs indicate defective vasculogenesis in mutant embryos. (D) DAPI-stained E10.5 embryos show more extensive growth retardation, a distended heart tube, and pericardial edema (red arrow). Scale bar represents 500 μm. (E) Immunofluorescent staining of E10.5 yolk sacs shows that mutant yolk sacs lack a remodeled vascular plexus or any large vessels. Images are representative of n = 4 embryos of each genotype. Scale bar represents 250 μm. (F) Transverse sections through E10.5 embryos at the level of the heart show reduced F-actin intensity via phalloidin staining. Images are representative of n = 4 embryos of each genotype. Scale bar represents 50 μm. (G) A similar pattern Is seen in the neural tube. Scale bar represents 50 μm. (H) Cell proliferation, indicated through phospho-Histone H3 (Ser10) (pHH3) staining, is reduced in mutant embryos. Scale bar represents 50 μm. (I) Quantitation of (H), n = 4 each genotype. p = 0.0005, Student’s unpaired two-tailed t-test. (J) Cell death, revealed through cleaved caspase three staining, is dramatically increased in mutant embryos. Scale bar represents 50 μm. (K) Quantitation of (J), n = 3 control embryos and n = 4 mutant embryos. p = 0.0033, Student’s unpaired two-tailed t-test. Columns are the mean and error bars represent the standard deviation in (I) and (K).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A diagram of the targeting vector and the Srf locus. Homology arms containing an N-terminal 3 x FLAG tag with or without mutated SRF αI residues were cloned into a targeting vector containing a Pgk-NeoR cassette flanked by loxP (l) and FRT (F) sequences. Dotted lines demarcate the homology arms relative to the endogenous locus. Exons are dark and UTR regions are striped. The FLAG tag is green and the location of the SRF αI residues is marked by red arrowheads. Autoregulatory CarG elements at –62 bp, –82 bp, and +2800 bp are marked by blue asterisks. (B) Southern blot of SspI digested targeted clones and WT genomic DNA blotted with the P32 labeled DNA probe indicated in (A). (C) Diagram of mouse SRF protein showing the DNA-binding domain as a dark box, the core MADS domain within it is labeled, subdomains are indicated underneath, and the SRF αI mutations are red arrowheads. Domains are based on Zaromytidou et al., 2006 with amino acid numbers adjusted for mouse. The 3 x FLAG tag (not shown) was inserted just downstream of the start codon.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Representative species from major clades were subjected to BLASTP searches for mouse SRF, MRTF-B, and ELK1. The presence of a reciprocal best BLASTP hit is denoted in green. If a hit was negative, the search was repeated for the entire clade and identification of a hit is represented in cyan. Negative hits for ELK1 were researched with mouse ETS1 to find any ETS domain proteins. SRF αI residues were manually inspected and divergence is denoted by the height of the green bar in 25% increments, representing the four residues. Red arrows indicate clades where the SRF αI residues diverge that are also missing readily identifiable MRTF homologs, although some of these lineages also lack TCF/ELK homologs. Blue arrows indicate clades where SRF αI residues are conserved along with presence of an MRTF homolog, but that lack an obvious TCF/ELK homolog. The cross indicates that there is a BLASTP hit for T. adhaerens (NCBI XP_002109236.1) that has MRTF-like N-terminal actin-binding RPEL motifs, but it is not a reciprocal best hit. This protein aligns closer to PHACTR1 when searched against mouse. PHACTR1, like the MRTFs, contains actin-binding RPEL domains and it remains unclear whether the protein in T. adhaerens is a functional MRTF or PHACTR ortholog. The asterisk indicates that although a reciprocal best BLASTP hit for MRTF-B was found in S. rosetta, the hit was a short protein fragment and it is unclear if it represents a true MRTF homolog. The genus Caenorhabditis lacks an obvious MRTF homolog, but likely MRTF homologs can be found in other nematodes such as B. malayi, L. loa, and O. flexuosa.
+
+**Table 1.**
+ SrfaI/aI embryos are not recovered at weaning.Expected and recovered numbers of embryos of each genotype at weaning (P21). No homozygous mutant embryos were recovered.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Expected</th>
+      <th>Observed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Srf+/+</td>
+      <td>7.75</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>SrfαI/+</td>
+      <td>15.5</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>SrfaI/aI</td>
+      <td>7.75</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_X2 Test = 0.0044._
+
 By E10.5, the anterior neural tube had closed but other defects remained or became apparent. Mutant embryos were much smaller than their wild-type or heterozygous littermates (Figure 2D). The developing heart tube appeared distended and thin, and most embryos showed pericardial edema (Figure 2D, arrows). The overall length of mutant embryos was shorter (Figure 2D) and a subset failed to turn, remaining inflected similar to the rightmost embryo in Figure 2A (data not shown). Whole-mount immunostaining of the yolk sac with the endothelial marker CD31/PECAM1 revealed that while wild-type littermates had an extensively remodeled capillary plexus, including the presence of larger vessels, mutant yolk sacs had only a crude primitive capillary plexus, despite the presence of CD31-positive cells (Figure 2E). A reduction in F-Actin levels throughout mutant embryos, including the heart (Figure 2F) and neural tube (Figure 2G), was consistent with reduced SRF-MRTF-mediated transcription of cytoskeletal genes. Additionally, mutant embryos showed reduced cell proliferation and significantly increased cell death (Figure 2H–K).
 
 While striking, the phenotype of SrfaI/aI embryos is less severe than that reported for Srf null mutants, which succumb from E6.5-E8.5 and do not induce expression of the mesoderm marker T (Arsenian et al., 1998). We generated homozygous Srf-/- embryos and found them to be delayed at E6.5 and E7.5 and were not recovered at later stages (data not shown), verifying the early lethality on our genetic background and thus confirming the difference in severity between the Srf- and SrfaI alleles.
 
-## The Srf- and SrfaI alleles cause similar defects in the anterior mesodermal lineage
+### The Srf- and SrfaI alleles cause similar defects in the anterior mesodermal lineage
 
 In order to make a second comparison between the SrfaI and Srf- alleles, we generated Srfflox/flox; Mesp1Cre/+ and SrfaI/flox; Mesp1Cre/+ embryos and assessed them at E9.5 and E10.5. Mesp1-Cre directs recombination in anterior mesoderm, including cardiac mesoderm. This is a tissue where SRF-MRTF interactions are known to be required, particularly through SRF-Myocardin activity in the developing heart and vascular smooth muscle (Li et al., 2003; Miano et al., 2004; Niu et al., 2005; Parlakian et al., 2004). In addition, the wavy neural tube phenotype that we observed in SrfaI/aI is often associated with mesoderm deficiency.
 
@@ -59,11 +116,19 @@ Both Srfflox/flox; Mesp1Cre/+ and SrfaI/flox; Mesp1Cre/+ embryos were inviable a
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig3-v2.jpg)
 
-**Figure 3.:** aIand Srfflox alleles exhibits similar defects in anterior mesoderm.(A) E10.5 littermate embryos were stained with DAPI and imaged. Loss of Srf in the Mesp1-Cre lineage causes embryos to be undersized with pericardial edema, hypoplastic hearts, and turning defects. Phenotype observed in n = 3/3 mutant embryos. (B) A similar experiment in which Srf is the only aISrf allele expressed in the Mesp1-Cre lineage. These embryos appear comparable to the mutant embryos in (A), although they are clearly less severely affected as they are slightly larger and partially turned. Phenotype observed in n = 3/3 mutant embryos. Scale bar represents 500 μm in all images. Note the 2 x higher crop in mutant embryos to better illustrate phenotypes.
+**Figure 3.:** (A) E10.5 littermate embryos were stained with DAPI and imaged. Loss of Srf in the Mesp1-Cre lineage causes embryos to be undersized with pericardial edema, hypoplastic hearts, and turning defects. Phenotype observed in n = 3/3 mutant embryos. (B) A similar experiment in which SrfaI is the only Srf allele expressed in the Mesp1-Cre lineage. These embryos appear comparable to the mutant embryos in (A), although they are clearly less severely affected as they are slightly larger and partially turned. Phenotype observed in n = 3/3 mutant embryos. Scale bar represents 500 μm in all images. Note the 2 x higher crop in mutant embryos to better illustrate phenotypes.
 
-## SrfaI/flox; Wnt1-CreTg/+ embryos do not display craniofacial defects at E13.5
+### SrfaI/flox; Wnt1-CreTg/+ embryos do not display craniofacial defects at E13.5
 
 We next asked whether SrfaI/flox; Wnt1-CreTg/+ embryos would display similar defects to Srfflox/flox; Wnt1-CreTg/+ embryos, as we expected. Surprisingly, these embryos appeared completely normal at E13.5 (Figure 4A), when Srfflox/flox; Wnt1-CreTg/+ embryos are already dying and display obvious craniofacial abnormalities.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig4-v2.jpg)
+
+**Figure 4.:** (A) DAPI stained E13.5 littermate embryos carrying a ROSA26TdT/+ Cre reporter show no apparent craniofacial defects in conditional mutants. Scale bar represents 500 μm. (B) Diagram illustrating the culture of MEPM cells. (C) Immunofluorescent staining of passage 2 MEPM cells shows reduced F-actin and SMA fluorescence in mutant cells compared to cells from heterozygous littermate control embryos. Scale bar represents 50 μm. (D) RT-qPCR from serum-starved and serum-stimulated MEPM cells indicates no difference in IEG expression (Egr1, Fos) but a significant defect in Srf, Tagln,, and Acta2 expression and a downward trend in Vcl expression. Values are fold expression of control starved cells. N = 3 control lines and n = 4 mutant lines. (F) RT-qPCR from E11.5 FNPs and mandibles shows a significant reduction in Actg1, Vcl, and Srf expression in Srf NC conditional knockouts compared to control conditional heterozygous littermates. N = 5 each genotype. (G) Assaying the same genes and tissues as (F) using SrfaI NC conditional mutants shows a downward trend or significant reduction approximately half as large as (F). N = 7 controls and n = 6 mutants. For (E–G) significance was determined by Student’s unpaired t-test with two-stage step-up correction (Benjamini, Krieger, and Yekutieli) for multiple comparisons. q-values are indicated on the graphs. Columns are the mean and error bars represent the standard deviation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Serum starved or stimulated P2 primary MEPM cells from SrfaI/flox; Wnt1-CreTg/+; ROSA26TdT/+ (mutant) and Srfflox/+; Wnt1-CreTg/+; ROSA26TdT/+ (control) embryos were stained for MRTF-A and DAPI. (B) Nuclear MRTF-A levels were quantified using the DAPI channel to identify nuclei. Dots represent individual cells pooled from n = 2 unique cell lines for each genotype. Horizontal bars are the mean and error bars represent the standard deviation.
 
 We tested whether the SrfaI allele was behaving as expected in the NC lineage using MEPM cells cultured from E13.5 SrfaI/flox; Wnt1-CreTg/+; ROSA26TdT/+ (mutant) and Srfflox/+; Wnt1-CreTg/+; ROSA26TdT/+ (control) palatal shelves (Figure 4B). We assessed the expression of genes preferentially regulated by SRF-TCF activity, such as the IEGs, and those regulated by SRF-MRTF activity, namely cytoskeletal genes. At the protein level, immunofluorescent staining of MEPM cells for F-actin and smooth muscle actin (SMA) showed reduced intensity in mutant cell lines compared to control lines (Figure 4C). We also assessed gene expression at the mRNA level by qPCR in starved and serum-stimulated lines. While we noted no significant changes in the expression of the IEGs Egr1 and Fos (Figure 4D), levels of Tagln (SM22) and Acta2 (the gene encoding SMA) were significantly downregulated in both conditions, and we noted a downward trend in Vcl expression (Figure 4D). Srf itself was also significantly downregulated, likely due to autoregulation via the several CArG elements at the Srf locus (Figure 4D, Figure 2—figure supplement 1A). We confirmed that MRTF-A translocated to the nucleus in response to serum in control and mutant cell lines, indicating that the regulated localization of MRTF-A is not affected but that SRFaI fails to productively interact with MRTF-A despite its nuclear localization, thereby affecting transcription of MRTF targets (Figure 4—figure supplement 1A-B).
 
@@ -73,9 +138,21 @@ Because Srf interacts genetically with Pdgfra in the NC and because SRF-MRTF tra
 
 In summary, cells from SrfaI/flox; Wnt1-CreTg/+ embryos show the expected changes in gene expression, yet the embryos themselves show no outward signs of the severe craniofacial phenotypes observed in Srfflox/flox; Wnt1-CreTg/+ embryos at this stage and have milder defects in gene expression.
 
-## SrfaI/flox; Wnt1-CreTg/+ mice succumb in the early postnatal period with outflow tract defects
+### SrfaI/flox; Wnt1-CreTg/+ mice succumb in the early postnatal period with outflow tract defects
 
 SrfaI/flox; Wnt1-CreTg/+ embryos survived until birth, after which they died within the first 2 days of life with visible cyanosis (Figure 5A). We examined E18.5 skeletal preparations for defects in patterning or ossification that may arise after E13.5. Mutant skulls were smaller than in control littermates, but the craniofacial skeleton was patterned normally indicating a developmental delay at this timepoint (Figure 5—figure supplement 1). To determine the underlying cause of cyanosis, we examined the cardiac outflow tract at P0 as the smooth muscle in this region is NC-derived and responsible for proper remodeling of the aortic arch vessels during development. We found a highly penetrant (9/14) patent ductus arteriosus (PDA) exclusively in SrfaI/flox; Wnt1-CreTg/+ neonates (Figure 5B–C). In this condition, the embryonic shunt from the pulmonary artery to the aorta, the ductus arteriosus, fails to close after birth, making circulation to the lungs inefficient and likely explaining the postnatal cyanosis. We also noted one instance of aberrant right subclavian artery, in which the right subclavian artery originates from the descending aorta instead of the brachiocephalic artery, which only supplies the right common carotid artery in this condition. We also inspected P0 mice from a similar cross on a PdgfraH2B-EGFP/+ background to assess whether heterozygosity for Pdgfra would exacerbate phenotypes at this stage, but neonates were recovered in the expected Mendelian ratios with similar outflow tract defects (Figure 5—figure supplement 2A-B). Two SrfaI/flox; Wnt1-CreTg/+; Pdgfra+/+ from this set of crosses displayed a more severe outflow tract defect: right aortic arch with mirror image branching (2/9; Figure 5C, far right).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig5-v2.jpg)
+
+**Figure 5.:** (A) Kaplan-Meyer survival curve for neonatal SrfaI/flox; Wnt1-CreTg/+ (Mutant) compared to littermates of all other genotypes (Control). Significance was computed at each timepoint using a Mantel-Cox log-rank test. P0 p = 0.0142, P1 p < 0.0001, P2 p < 0.0001. (B) Stacked columns showing the distribution of PDA-related phenotypes in SrfaI/flox; Wnt1-CreTg/+ neonates compared to littermates of all other genotypes. (C) DAPI-stained postnatal day 0 (P0) hearts carrying a ROSA26TdT/+ Cre lineage reporter showing the entire heart (top row) and the outflow tract region (bottom row). Examples of mutant phenotypes such as PDA, ARSA, and RAA. An asterisk indicates where the missing right subclavian artery should be. Note the ARSA mouse had succumbed prior to dissection and the image is dimmer due to the presence of clotted blood. The outflow tract defects are schematized below. Scale bar represents 500 μm. (D) Hematoxylin and eosin-stained frontal sections through P0 hearts showing mild to severe PDA and an example of VSD and PTA in mutants. Scale bar represents 500 μm. (E) Summary of our results, showing the requirements for SRF versus SRFaI in different tissues and timepoints. A, aorta; ARSA, aberrant right subclavian artery; DA, ductus arteriosus; LCA, left common carotid artery; LSA, left subclavian artery; LV, left ventricle; P, pulmonary artery; PDA, patent ductus arteriosus; PTA, persistent truncus arteriosus; RAA, right aortic arch with mirror image branching; RCA, right common carotid artery; RSA, right subclavian artery.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Alizarin red (bone) and alcian blue (cartilage) stained E18.5 skulls of the indicated genotypes from two litters are shown. All three conditional mutant embryos were smaller than their control littermates and had less extensive ossification. However, all the indicated bones were present in each genotype, except for the presphenoid bone, which was missing in 2/3 mutants (location of missing bone indicated in bold) and rudimentary in one (italics). Bo, basioccipital; bs, basisphenoid; eo, exoccipital; etm, ectotympanic; fmx, frontal process of maxilla; fr, frontal; h, hyoid; ip, interparietal; jg, jugal; m, mandible; mx, maxilla; na, nasal; pl, palatine; pmx, premaxilla; ppmx, palatal process of maxilla; pppl, palatal process of palatine; pppmx, palatal process of premaxilla; pr, parietal; ps, presphenoid; ptg, pterygoid; rtp, retrotympanic process; so, supraoccipital; sq, squamosal; zpmx, zygomatic process of maxilla.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75106/elife-75106-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Expected and recovered numbers of embryos of each genotype at birth (P0). No significant deviation from Mendelian ratios was observed. (B) PDA-related phenotypes in SrfaI/flox; Wnt1-CreTg/+ neonates are not exacerbated by the loss of one copy of Pdgfra.
 
 Sections through SrfaI/flox; Wnt1-CreTg/+ and control Srfflox/+; Wnt1-CreTg/+ hearts confirmed the macroscopically observed PDAs and also revealed one instance of ventricular septal defect (VSD) with persistent truncus arteriosus (PTA), a failure of the truncus arteriosus to fully septate into the aorta and pulmonary artery, out of ten mutant hearts examined (Figure 5D). Mutant embryos that survived the first several hours of life had a milk spot, indicating they did not have pronounced defects in olfaction or the craniofacial bones, nerves, and muscles required for suckling. Thus, while the SrfaI allele is surprisingly well-tolerated in the cranial NC lineage throughout most of development, it is required in the cardiac NC-derived smooth muscle of the cardiac outflow tract to support postnatal life, highlighting a critical role for SRF-MRTF interactions in this particular NC lineage (Figure 5E).
 
@@ -103,29 +180,564 @@ In conclusion, we found that the primary transcriptional consequence of losing S
 
 ## Materials and methods
 
-## Animal husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Srf</td>
+      <td>MGI, Ensembl, UniProt</td>
+      <td>Srf, ENSMUSG00000015605, Q9JM73</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>129S4/SvJaeJ</td>
+      <td>IMSR, Jackson Labs</td>
+      <td>009104</td>
+      <td>All the subsequent genetic reagents were made on or backcrossed to this strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>SrfFLAG</td>
+      <td>This paper</td>
+      <td>To be submitted to Jackson Labs</td>
+      <td>3x-FLAG tag knocked in to SRF’s N-terminus</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>SrfaI</td>
+      <td>This paper</td>
+      <td>To be submitted to Jackson Labs</td>
+      <td>Alpha-I helix mutations knocked into SRF and identical 3x-FLAG to above</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Wnt1-Cre</td>
+      <td>IMSR, Jackson Labs</td>
+      <td>H2az2Tg(wnt1-cre)11RthRRID:IMSR_JAX:003829</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mesp1Cre</td>
+      <td>IMSR, Jackson Labs</td>
+      <td>Mesp1tm2(cre)YsaRRID:IMSR_HAR:3358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Srfflox</td>
+      <td>IMSR, Jackson Labs</td>
+      <td>Srftm1RmnRRID:IMSR_JAX:006658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>MORE-Cre</td>
+      <td>IMSR, Jackson Labs</td>
+      <td>Meox2tm1(cre)SorRRID:IMSR_JAX:003755</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>R26RTdT</td>
+      <td>IMSR, Jackson Labs</td>
+      <td>Gt(ROSA)26Sortm14(CAG-tdTomato)HzeRRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>R26RmTmG</td>
+      <td>IMSR, Jackson Labs</td>
+      <td>Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)LuoRRID:IMSR_JAX:007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MEPM</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary cell line derived in lab. Used and extinguished by passage 2.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM High Glucose</td>
+      <td>Invitrogen</td>
+      <td>11965118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Penicillin-Streptomycin (10,000 U/mL)</td>
+      <td>Gibco</td>
+      <td>15140122</td>
+      <td>100 x stock used at 0.5 x</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>L-Glutamine (200 mM)</td>
+      <td>Gibco</td>
+      <td>2 5030081</td>
+      <td>100 x stock used at 1 x</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Characterized Fetal Bovine Serum, CA Origin</td>
+      <td>HyClone</td>
+      <td>SH30396.03</td>
+      <td>Lot AC10235406</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD31 (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences Cat# 553370, RRID:AB_394816</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cleaved Caspase 3 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat# 9665, RRID:AB_2069872</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti phospho-Histone H3 (Ser10) (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore Cat# 06–570, RRID:AB_310177</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MKL1 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Proteintech Cat# 21166–1-AP, RRID:AB_2878822</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMA (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat# 19245, RRID:AB_2734735</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor Plus 488</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher Scientific Cat# A32723, RRID:AB_2633275</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H + L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor Plus 555</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher Scientific Cat# A32732, RRID:AB_2633281</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin-Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat A22287</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Alx3 (plasmid, in situ probe)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>doi.10.5061/dryad.mgqnk9916</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Fgf8 (plasmid, in situ probe)</td>
+      <td>Crossley and Martin, 1995</td>
+      <td>pBS-SK-Fgf8</td>
+      <td>doi.10.5061/dryad.mgqnk9916</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Msx1 (plasmid, in situ probe)</td>
+      <td>Hong and Krauss, 2012</td>
+      <td></td>
+      <td>doi.10.5061/dryad.mgqnk9916</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Shh (plasmid, in situ probe)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>doi.10.5061/dryad.mgqnk9916</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Six3 (plasmid, in situ probe)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>doi.10.5061/dryad.mgqnk9916</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Srf_flox_F</td>
+      <td>Holtz and Misra, 2008</td>
+      <td>genotyping primers</td>
+      <td>TGCTTACTGGAAAGCTCATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Srf_flox_R</td>
+      <td>Holtz and Misra, 2008</td>
+      <td>genotyping primers</td>
+      <td>TGCTGGTTTGGCATCAACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Srf_null_R</td>
+      <td>This paper</td>
+      <td>genotyping primers</td>
+      <td>CTAACCCTGCCTGTCCTTCAUse with Srf_flox_F</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Srf_flag_F</td>
+      <td>This paper</td>
+      <td>genotyping primers</td>
+      <td>GATGAACGATGTGACCTCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Srf_flag_R</td>
+      <td>This paper</td>
+      <td>genotyping primers</td>
+      <td>AGGGAGGAGCCAACTCCTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>aR4</td>
+      <td>Hamilton et al., 2003</td>
+      <td>genotyping primers</td>
+      <td>CCCTTGTGGTCATGCCAAACFor PdgfraEGFP</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>aR5</td>
+      <td>Hamilton et al., 2003</td>
+      <td>genotyping primers</td>
+      <td>GCTTTTGCCTCCATTACACTGGFor PdgfraEGFP</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>lox</td>
+      <td>Hamilton et al., 2003</td>
+      <td>genotyping primers</td>
+      <td>ACGAAGTTATTAGGTCCCTCGACFor PdgfraEGFP</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre_800</td>
+      <td>This paper</td>
+      <td>genotyping primers</td>
+      <td>GCTGCCACGACCAAGTGACAGCAATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre_1200</td>
+      <td>This paper</td>
+      <td>genotyping primers</td>
+      <td>GTAGTTATTCGGATCATCAGCTACAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>morefor</td>
+      <td>Tallquist and Soriano, 2000</td>
+      <td>genotyping primers</td>
+      <td>GGGACCACCTTCTTTTGGCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>morerev</td>
+      <td>Tallquist and Soriano, 2000</td>
+      <td>genotyping primers</td>
+      <td>AAGATGTGGAGAGTTCGGGGTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>morecre</td>
+      <td>Tallquist and Soriano, 2000</td>
+      <td>genotyping primers</td>
+      <td>CCAGATCCTCCTCAGAAATCAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R26mTmG_F</td>
+      <td>Muzumdar et al., 2007</td>
+      <td>genotyping primers</td>
+      <td>CTCTGCTGCCTCCTGGCTTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R26mTmG_wt_R</td>
+      <td>Muzumdar et al., 2007</td>
+      <td>genotyping primers</td>
+      <td>CGAGGCGGATCACAAGCAATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R26mTmG_mut_R</td>
+      <td>Muzumdar et al., 2007</td>
+      <td>genotyping primers</td>
+      <td>TCAATGGGCGGGGGTCGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R26Tdt_wt_F</td>
+      <td>Madisen et al., 2010</td>
+      <td>genotyping primers</td>
+      <td>AAGGGAGCTGCAGTGGAGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R26Tdt_wt_R</td>
+      <td>Madisen et al., 2010</td>
+      <td>genotyping primers</td>
+      <td>CCGAAAATCTGTGGGAAGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R26Tdt_mut_F</td>
+      <td>Madisen et al., 2010</td>
+      <td>genotyping primers</td>
+      <td>GGCATTAAAGCAGCGTATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R26Tdt_mut_R</td>
+      <td>Madisen et al., 2010</td>
+      <td>genotyping primers</td>
+      <td>CTGTTCCTGTACGGCATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Acta2_qPCR_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GGCACCACTGAACCCTAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Acta2_qPCR_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>ACAATACCAGTTGTACGTCCAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actg1_qPCR_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>ATTGTCAATGACGAGTGCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actg1_qPCR_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CTTACACTGCGCTTCTTGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egr1_qPCR_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TGGGATAACTCGTCTCCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egr1_qPCR_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GAGCGAACAACCCTATGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fos_qPCR_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TCCTACTACCATTCCCCAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fos_qPCR_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TGGCACTAGAGACGGACAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hprt_qPCR_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TCCTCCTCAGACCGCTTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hprt_qPCR_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CATAACCTGGTTCATCATCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Srf_qPCR_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GTGCCACTGGCTTTGAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Srf_qPCR_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GCAGGTTGGTGACTGTGAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tagln_qPCR_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GACTGCACTTCTCGGCTCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tagln_qPCR_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CCGAAGCTACTCTCCTTCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vcl_qPCR_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TCTGATCCTCAGTGGTCTGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vcl_qPCR_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>AAAGCCATTCCTGACCTCAC</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BM-Purple</td>
+      <td>Roche</td>
+      <td>Cat. #11442074001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luna Universal qPCR Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat. #M3003L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi DNA Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat. #E2621S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #74,134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibco Geneticin (G-418)</td>
+      <td>Thermo FIsher</td>
+      <td>Cat. #11811031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Salmon</td>
+      <td>Salmon</td>
+      <td>Salmon, RRID:SCR_017036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wasabi</td>
+      <td>Wasabi</td>
+      <td></td>
+      <td>https://github.com/COMBINE-lab/wasabi; Patro, 2019</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sleuth</td>
+      <td>Sleuth</td>
+      <td>sleuth, RRID:SCR_016883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism, RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Sigma</td>
+      <td>Cat. #D9542-10mg</td>
+      <td>(1–5 µg/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry
 
 All animal experimentation was conducted according to protocols approved by the Institutional Animal Care and Use Committee of the Icahn School of Medicine at Mount Sinai (LA11-00243). Mice were kept in a dedicated animal vivarium with veterinarian support. They were housed on a 13 hr-11hr light-dark cycle and had access to food and water ad libitum.
 
-## Mouse models
+### Mouse models
 
 The following previously described mouse lines were used: H2az2Tg(wnt1-cre)11Rth referred to as Wnt1-Cre (Danielian et al., 1998), Mesp1tm2(cre)Ysa referred to as Mesp1Cre (Saga et al., 1999), Srftm1Rmn referred to as Srfflox (Miano et al., 2004), Meox2tm1(cre)Sor referred to as MORE-Cre (Tallquist and Soriano, 2000), Gt(ROSA)26Sortm14(CAG-tdTomato)Hze referred to as R26RTdT (Madisen et al., 2010), and Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo referred to as R26RmTmG (Muzumdar et al., 2007). SrfFLAG and SrfaI mice were generated by gene targeting. Homology arms of 2 kb and 6.4 kb were cloned into the pPGKneoF2L2DTA backbone. The longer arm was assembled in three fragments using HiFi assembly cloning (NEB) and included a 3 x FLAG tag introduced with a primer. Fragments were amplified from 129S4 genomic DNA using Q5 polymerase (NEB) except for the middle segment of the long arm (i.e. the coding sequence of exon 1), which was amplified from a cDNA clone before or after introducing the αI helix mutations via site-directed mutagenesis. The targeting constructs were linearized and electroporated in AK7 (129S4 lineage) embryonic stem cells. Clones were selected with G418, screened by long-range PCR, and verified by Southern blot. Correctly targeted clones were injected into C57BL6/J E3.5 blastocysts, transferred to pseudopregnant F1 (C57BL6/J X 129S4) surrogates, and chimeras selected based on coat color. Founders were crossed to MORE-Cre mice to remove the NeoR cassette (Tallquist and Soriano, 2000). All mice were analyzed on a 129S4 co-isogenic background. Genotyping primers are available in Supplementary file 2.
 
-## Conservation
+### Conservation
 
 Representative species from the various taxa were subject to BLASTP searches with default parameters using the amino acid sequences for mouse SRF, MKL2, and ELK1. Potential hits were then confirmed by reciprocal BLASTP back to mouse. If a species lacked an ELK1 homolog, the mouse ETS1 sequence was used to search for ETS-domain containing genes. If the given species lacked a hit for a particular search, the search was repeated for the entire taxon. Ctenophora were searched using amino acid sequences for mouse SRF and MEF2C, yeast MCM2, snapdragon Deficiens, and Arabidopsis Agamous. No homolog was identified, suggesting loss of MADS proteins in this lineage.
 
-## RNA sequencing
+### RNA sequencing
 
 FNPs (LNP+ MNP) and mandibles were carefully removed from E11.5 embryos in ice-cold PBS using fine forceps. A total of eight embryos across two litters representing four mutants and four controls were collected. Total RNA was immediately extracted using the RNeasy Plus Mini kit (Qiagen). RNA quality was assessed by Tapestation and all samples had RIN scores ≥ 9.8. Samples were sent to GeneWiz for PE150 sequencing. There were 14.6–30 m reads / sample and an average of 24.2 m reads / sample.
 
 Reads were pseudo-aligned to the mouse transcriptome (mm10 partial selective alignment method, downloaded from refgenie) using salmon 1.5.0 and the flags –validateMappings –gcBias –numBootstraps 30. Pseudoalignments were processed with wasabi 1.0.1 and analyzed with sleuth 0.30.0–4 with the flag gene_mode = true. Analysis was performed using a full model that accounted for genotype, litter/batch, and tissue-of-origin (for combined tissue analysis only) versus a reduced model consisting only of litter/batch (and tissue-of-origin). Fold-changes and q-values were computed using the Wald test. Volcano plots were made with VolcaNoseR. Heat maps were generated using the Shinyapp HeatMappr. Gene set enrichment analysis for GO terms, ENCODE datasets, etc. were done with the web utility Enrichr (Xie et al., 2021). Enrichment for a custom list of targets was performed using GSEA software 4.10 and normalized read counts for the entire dataset. Analysis for the joint tissue model was run in phenotype mode ( > 7 samples per condition) and for the individual tissue samples in gene_set mode ( < 7 samples per condition) according to the software developer. The maximum number of genes per set was raised to 800 to accommodate the target lists. All other parameters were default.
 
-## MEPM culture
+### MEPM culture
 
 Mouse embryonic palatal mesenchyme cells were generated as described (Fantauzzo and Soriano, 2017). Briefly, palatal shelves were dissected from E13.5 embryos in ice cold PBS using fine forceps. Yolk sac tissue was used for genotyping. Palates from individual embryos were held on ice until dissection was complete and palates were then dissociated using 0.125% Trypsin-EDTA at 37°C for 10 min with occasional trituration using a P1000 pipet. Trypsin was neutralized with an equal volume of growth media (DMEM High Glucose supplemented with Glutamine, Penicillin-Streptomycin, and 10% Fetal Calf III serum) and plated onto culture dishes coated in 0.1% gelatin. Cells were passaged as they approached confluency, every 2–3 days, and used for experiments at passage 2. MEPM cell lines were not screened for mycoplasma as they were used and extinguished by passage 2, but there was no evidence of mycoplasma by DAPI staining and other immortalized cell lines used in the lab tested negative for mycoplasma, so the risk of contamination was negligible.
 
-## Immunofluorescence
+### Immunofluorescence
 
 MEPM cells were seeded on #1.5 coverslips coated with 0.1% gelatin. For starvation experiments, cells were starved overnight in 0.1% serum then stimulated 30’ with 10% serum. Cells were fixed using 4% PFA in PBS for 10’ at 37 °C. Embryos were dissected in ice cold PBS, fixed one hour in 4% PFA in PBS at 4 °C, rinsed in PBS, cryoprotected in 30% sucrose, and embedded in OCT. Sections were cut at 10 µm thickness using a Leica cryostat. Yolk sacs were fixed one hour in 4% PFA in PBS at 4 °C and stained whole. All samples were rinsed in PBS, blocked and permeabilized in blocking media (PBS, 0.3% TritonX-100, 1% BSA, 5% calf serum) one hour at RT, primary antibody was diluted in fresh blocking media and samples treated overnight at 4 °C, washed 3 x PBS at RT, incubated in Alexa Fluor Plus-conjugated secondary antibodies (Invitrogen) diluted 1:500 in fresh blocking media with 1 μg/ml DAPI for 1–2 hr at RT or overnight at 4 °C, and finally washed 3 x in PBS at RT. Samples were mounted in Prolong Diamond (Invitrogen) mounting media and imaged on a Zeiss AxioObserver inverted fluorescence microscope or a Zeiss 780 upright confocal microscope. Thresholding was performed and scalebars added in the FIJI implementation of ImageJ. All images for a given experiment were processed identically with the exception of Figure 2A where the mutant embryos were brightened compared to the control embryo to better illustrate phenotypes.
 
@@ -133,26 +745,26 @@ Quantitation of cell proliferation and cell death was performed by staining froz
 
 Antibodies used were, rat anti-CD31 (BD Pharmingen, 553370) 1:50, rabbit anti-cleaved Caspase 3 (Cell Signaling 9665, 1:400), rabbit anti-phospho Histone H3 (Ser10) (Millipore 06–570, 1:500), rabbit anti-MKL1 (Proteintech, 21166–1-AP) 1:100, rabbit anti-SMA (Cell Signaling, 19245) 1:200. Phalloidin-Alexa Fluor 647 (Invitrogen) was included where indicated during secondary antibody staining at 1:400.
 
-## RT-qPCR
+### RT-qPCR
 
 Cells were seeded, passaged, starved, and stimulated as for immunofluorescence except in 12-well tissue culture plates. Embryo facial prominences were dissected in cold PBS and transferred to 1.5 ml microfuge tubes on ice. Following the indicated stimulation regimes when applicable, cells/tissue were lysed in 300 μl RLT buffer supplemented with BME, and RNA isolated using the RNeasy Plus Kit (Qiagen) according to the manufacturer’s instructions. RNA concentration was quantified using a Nanodrop. One μg total RNA was used for reverse transcription. RNA was primed using a 2:1 molar ratio of random hexamer and polydT (Invitrogen) and reverse transcribed with Superscript IV (Invitrogen) according to the manufacture’s protocol. Resulting cDNA was diluted 5 x with water and stored at –20 °C. One μl cDNA was used per qPCR reaction. qPCR was performed using Luna 2 x Master Mix (NEB) on an iQ5 thermocycler (Bio-Rad) in triplicate. Differences in gene expression were calculated by ΔΔCT using Hprt for normalization. Primer sequences are listed in Supplementary file 3.
 
-## Nuclear translocation analysis
+### Nuclear translocation analysis
 
 Cells were starved, treated, and stained as described above and imaged on an inverted Zeiss AxioObserver microscope. Z-stacks were maximum intensity projected in the FIJI implementation of ImageJ, background subtracted, and the DAPI channel used to create a nuclear mask. This mask was then used to measure the average nuclear intensity in the MRTF-A channel for each nucleus. The data presented are the pooled results from two cell lines of each genotype where each dot is an individual nucleus. At least 70 cells were analyzed per condition.
 
-## In situ hybridization
+### In situ hybridization
 
 E10.5 embryos were dissected in ice-cold PBS and fixed overnight in 4% FA in PBS at 4 °C, rinsed in PBS, dehydrated through a MeOH series and stored in 100% MeOH at –20 °C. Embryos were stained using standard techniques for the indicated transcripts using published, DIG-labeled probes, and were developed in BM Purple (Roche | Sigma-Aldrich). For Fgf8 the proteinase-K digestion was omitted in order to maintain integrity of the ectoderm. A detailed protocol is included as Supplementary file 2 and probe sequences are available as SnapGene files at Dryad. https://doi.org/105061/dryadmgqnk9916.
 
-## Histology
+### Histology
 
 P0 hearts were fixed overnight in 4% FA in PBS at 4 °C, rinsed in PBS, dehydrated through an ethanol series, and embedded in paraffin. Five μm sections were cut using a Leica microtome. After drying, sections were stained with Harris modified hematoxylin (Fisher) and Eosin Y using a standard regressive staining protocol.
 
-## Skeletal preparations
+### Skeletal preparations
 
 Skeletons were stained by standard techniques. Briefly, E18.5 embryos were skinned, eviscerated, fixed in ethanol, stained with.015% alcian blue and.005% alizarin red overnight at 37 ° C, cleared in 1% KOH, processed through a glycerol:KOH series, and photographed in 80% glycerol in PBS.
 
-## Statistical methods
+### Statistical methods
 
 Specific statistical methods, significance values, and n are detailed in the figure legends. For RNA-Seq, statistics were computed using the built-in Wald Test function in the Sleuth analysis package. All other statistics were performed using GraphPad Prism 9.

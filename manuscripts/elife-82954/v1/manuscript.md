@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0051rme32 College of Science, Northwest A & F University Yangling China
-2. https://ror.org/04qr3zq92 School of Mathematical Sciences, University of Electronic Science and Technology of China Chengdu China
-3. https://ror.org/05wswj918 Institute of Technical Physics and Materials Science, Centre for Energy Research Budapest Hungary
+1. College of Science, Northwest A & F University Yangling China ([ROR:0051rme32](https://ror.org/0051rme32))
+2. School of Mathematical Sciences, University of Electronic Science and Technology of China Chengdu China ([ROR:04qr3zq92](https://ror.org/04qr3zq92))
+3. Institute of Technical Physics and Materials Science, Centre for Energy Research Budapest Hungary ([ROR:05wswj918](https://ror.org/05wswj918))
 
 † Corresponding author
 
@@ -36,95 +36,192 @@ To fill this gap, we propose a coupled coevolutionary game framework based on th
 
 ## Materials and methods
 
-## Collective-risk social dilemma game
+### Collective-risk social dilemma game
 
-We consider an infinite well-mixed population in which N individuals are selected randomly to form a group for playing the collective-risk social dilemma game. Each individual in the group has an initial endowment b and can choose one of the two strategies, that is, cooperation and defection. Cooperators will contribute an amount c to the common pool, whereas defectors contribute nothing. The remaining endowments of all individuals can be preserved if the overall number of cooperators exceeds a threshold value M, where 1<M<N (Milinski et al., 2008; Santos and Pacheco, 2011). Otherwise, individuals will lose all their endowments with a probability r, which characterizes the risk level of collective failure. Accordingly, the payoffs of cooperators and defectors in a group of size N with jC cooperators and N-jC defectors can be summarized as(1)PC=bθ(jC+1−M)+(1−r)b[1−θ(jC+1−M)]−c,(2)PD=bθ(jC−M)+(1−r)b(1−θ(jC−M)),
+We consider an infinite well-mixed population in which $N$ individuals are selected randomly to form a group for playing the collective-risk social dilemma game. Each individual in the group has an initial endowment $b$ and can choose one of the two strategies, that is, cooperation and defection. Cooperators will contribute an amount $c$ to the common pool, whereas defectors contribute nothing. The remaining endowments of all individuals can be preserved if the overall number of cooperators exceeds a threshold value $M$, where $1<M<N$ (Milinski et al., 2008; Santos and Pacheco, 2011). Otherwise, individuals will lose all their endowments with a probability $r$, which characterizes the risk level of collective failure. Accordingly, the payoffs of cooperators and defectors in a group of size $N$ with $j_{C}$ cooperators and $N-j_{C}$ defectors can be summarized as
 
-where θ⁢(x) is the Heaviside function, that is, θ⁢(x)=0 if x<0, being one otherwise. Here, we would like to note that the collective-risk social dilemma is a kind of public goods games, which are a special and extended version of Donor & Recipient game by referring to the concept of universal dilemma strength (Wang et al., 2015; Ito and Tanimoto, 2018; Tanimoto, 2021). However, following previous work on collective-risk social dilemma (Santos and Pacheco, 2011), we retain the parameters mentioned above for the sake of convenience, instead of replacing them with the universal dilemma strength.
+$$
+P_{C}=b\theta(j_{C}+1−M)+(1−r)b[1−\theta(j_{C}+1−M)]−c,
+$$
 
-To analyze the evolutionary dynamics of strategies in an infinite population, we use replicator equations to describe the time evolution of cooperation (Taylor and Jonker, 1978; Schuster and Sigmund, 1983). Accordingly, we havex˙=x⁢(1-x)⁢(fC-fD),
 
-where x denotes the frequency of cooperators in the population, while fC and fD respectively denote the average payoffs of cooperators and defectors, which can be calculated asfC=∑jC=0N-1(N-1jC)⁢xjC⁢(1-x)N-jC⁢PC,fD=∑jC=0N-1(N-1jC)⁢xjC⁢(1-x)N-jC⁢PD,
 
-where PC and PD are shown in Equations 1 and 2. After some calculations, the difference between the average payoffs of cooperators and defectors can be written asfC−fD=(N−1M−1)xM−1(1−x)N−Mrb−c.
+$$
+P_{D}=b\theta(j_{C}−M)+(1−r)b(1−\theta(j_{C}−M)),
+$$
 
-In the above replicator equation, we describe a game-theoretic interaction involving the risk of collective failure, which is a positive constant in previous works (Santos and Pacheco, 2011; Chen et al., 2012a). Here, we are focusing on a dynamical system where there is feedback between strategic behaviors and risk. In particular, the impact of strategies on the risk level is channeled through a function U⁢(x,r), which depends on both key variables. Then by using the general form of the feedback, the coevolutionary dynamics can be written as(3){ε⁢x˙=x⁢(1-x)⁢[(N-1M-1)⁢xM-1⁢(1-x)N-M⁢r⁢b-c],r˙=U⁢(x,r),
+where $\theta⁢(x)$ is the Heaviside function, that is, $\theta⁢(x)=0$ if $x<0$, being one otherwise. Here, we would like to note that the collective-risk social dilemma is a kind of public goods games, which are a special and extended version of Donor & Recipient game by referring to the concept of universal dilemma strength (Wang et al., 2015; Ito and Tanimoto, 2018; Tanimoto, 2021). However, following previous work on collective-risk social dilemma (Santos and Pacheco, 2011), we retain the parameters mentioned above for the sake of convenience, instead of replacing them with the universal dilemma strength.
 
-where ε denotes the relative speed of strategy update dynamics (Weitz et al., 2016), such that when 0<ε≪1 the strategies evolve significantly faster than the change in the risk level. In the following, we consider both linear and nonlinear forms of feedback describing the effect of strategy distribution on the evolution of risk.
+To analyze the evolutionary dynamics of strategies in an infinite population, we use replicator equations to describe the time evolution of cooperation (Taylor and Jonker, 1978; Schuster and Sigmund, 1983). Accordingly, we have
 
-## Linear effect of strategy on risk
+$$
+x˙=x⁢(1-x)⁢(f_{C}-f_{D}),
+$$
 
-In the first case, we assume that the effect of strategies on the risk level takes a linear form, which is the most common form that can be used to describe the characteristic attributes between key variables. Just to illustrate it by a specific example, the probability of influenza infection among individuals who have not been vaccinated decreases linearly with the increase in vaccine coverage (Vardavas et al., 2007). Here, we consider that the value of risk decreases linearly with the increase in cooperation level. Furthermore, by following the work of Weitz et al., 2016, we can write the dynamical equation of risk as(4)r˙=r⁢(1-r)⁢[u⁢(1-x)-x],
+where $x$ denotes the frequency of cooperators in the population, while $f_{C}$ and $f_{D}$ respectively denote the average payoffs of cooperators and defectors, which can be calculated as
 
-where u⁢(1-x)-x denotes the increase in risk by the defection level at rate u and the decrease by the fraction of cooperators at relative rate one. Then the dynamical system is described by the following equation:(5){ε⁢x˙=x⁢(1-x)⁢[(N-1M-1)⁢xM-1⁢(1-x)N-M⁢r⁢b-c]r˙=r⁢(1-r)⁢[u⁢(1-x)-x].
+$$
+f_{C}=\sum_{j_{C}=0}^{N-1}(\frac{N-1}{j_{C}})⁢x^{j_{C}}⁢(1-x)^{N-j_{C}}⁢P_{C},f_{D}=\sum_{j_{C}=0}^{N-1}(\frac{N-1}{j_{C}})⁢x^{j_{C}}⁢(1-x)^{N-j_{C}}⁢P_{D},
+$$
 
-## Exponential effect of strategy on risk
+where $P_{C}$ and $P_{D}$ are shown in Equations 1 and 2. After some calculations, the difference between the average payoffs of cooperators and defectors can be written as
 
-To complete our study, we also apply a nonlinear form of feedback function. The most plausible choice is when the risk level depends exponentially on the population state. To be more specific, we consider that the risk will decrease when the frequency of cooperators in the population exceeds a certain threshold value T. Otherwise, the risk level will increase. Such a scenario is suitable for describing climate change and the spread of infectious diseases, in which the risk can increase sharply, such as the occurrence of extreme weather (Eckstein et al., 2021) or a sudden outbreak of an epidemic in a region (Yang and Shaman, 2022). Here, we use the sigmoid function to describe the effect of strategy on the risk state (Boza and Számadó, 2010; Chen et al., 2012b; Couto et al., 2020), which can be written as(6)r˙=r⁢(1-r)⁢[11+eβ⁢(x-T)-11+e-β⁢(x-T)],
+$$
+f_{C}−f_{D}=(\frac{N−1}{M−1})x^{M−1}(1−x)^{N−M}rb−c.
+$$
 
-where β characterizes the steepness of the function and r⁢(1-r) ensures that the risk state remains in the [0,1] domain. For convenience, we introduce the variable ξ=x-T and the function B⁢(ξ)=11+eβ⁢ξ-11+e-β⁢ξ. Thus we have r˙=r⁢(1-r)⁢B⁢(ξ). When β=0, we know that B⁢(ξ)=0. In this situation, strategies have no effect on the risk level. For β=+∞, the function B⁢(ξ) becomes steplike so that the risk will decrease only if the frequency of cooperators in the group exceeds the threshold T. Otherwise, the risk level remains high. To study the consequence of a proper feedback effect, we apply a finite β>0 value. In Figure 2, we illustrate how B⁢(ξ) varies with ξ for four different values of β.
+In the above replicator equation, we describe a game-theoretic interaction involving the risk of collective failure, which is a positive constant in previous works (Santos and Pacheco, 2011; Chen et al., 2012a). Here, we are focusing on a dynamical system where there is feedback between strategic behaviors and risk. In particular, the impact of strategies on the risk level is channeled through a function $U⁢(x,r)$, which depends on both key variables. Then by using the general form of the feedback, the coevolutionary dynamics can be written as
+
+$$
+{\epsilon⁢x˙=x⁢(1-x)⁢[(\frac{N-1}{M-1})⁢x^{M-1}⁢(1-x)^{N-M}⁢r⁢b-c],r˙=U⁢(x,r),
+$$
+
+where $\epsilon$ denotes the relative speed of strategy update dynamics (Weitz et al., 2016), such that when $0<\epsilon≪1$ the strategies evolve significantly faster than the change in the risk level. In the following, we consider both linear and nonlinear forms of feedback describing the effect of strategy distribution on the evolution of risk.
+
+### Linear effect of strategy on risk
+
+In the first case, we assume that the effect of strategies on the risk level takes a linear form, which is the most common form that can be used to describe the characteristic attributes between key variables. Just to illustrate it by a specific example, the probability of influenza infection among individuals who have not been vaccinated decreases linearly with the increase in vaccine coverage (Vardavas et al., 2007). Here, we consider that the value of risk decreases linearly with the increase in cooperation level. Furthermore, by following the work of Weitz et al., 2016, we can write the dynamical equation of risk as
+
+$$
+r˙=r⁢(1-r)⁢[u⁢(1-x)-x],
+$$
+
+where $u⁢(1-x)-x$ denotes the increase in risk by the defection level at rate $u$ and the decrease by the fraction of cooperators at relative rate one. Then the dynamical system is described by the following equation:
+
+$$
+{\epsilon⁢x˙=x⁢(1-x)⁢[(\frac{N-1}{M-1})⁢x^{M-1}⁢(1-x)^{N-M}⁢r⁢b-c]r˙=r⁢(1-r)⁢[u⁢(1-x)-x].
+$$
+
+### Exponential effect of strategy on risk
+
+To complete our study, we also apply a nonlinear form of feedback function. The most plausible choice is when the risk level depends exponentially on the population state. To be more specific, we consider that the risk will decrease when the frequency of cooperators in the population exceeds a certain threshold value $T$. Otherwise, the risk level will increase. Such a scenario is suitable for describing climate change and the spread of infectious diseases, in which the risk can increase sharply, such as the occurrence of extreme weather (Eckstein et al., 2021) or a sudden outbreak of an epidemic in a region (Yang and Shaman, 2022). Here, we use the sigmoid function to describe the effect of strategy on the risk state (Boza and Számadó, 2010; Chen et al., 2012b; Couto et al., 2020), which can be written as
+
+$$
+r˙=r⁢(1-r)⁢[\frac{1}{1+e^{\beta⁢(x-T)}}-\frac{1}{1+e^{-\beta⁢(x-T)}}],
+$$
+
+where $\beta$ characterizes the steepness of the function and $r⁢(1-r)$ ensures that the risk state remains in the $[0,1]$ domain. For convenience, we introduce the variable $ξ=x-T$ and the function $B⁢(ξ)=\frac{1}{1+e^{\beta⁢ξ}}-\frac{1}{1+e^{-\beta⁢ξ}}$. Thus we have $r˙=r⁢(1-r)⁢B⁢(ξ)$. When $\beta=0$, we know that $B⁢(ξ)=0$. In this situation, strategies have no effect on the risk level. For $\beta=+∞$, the function $B⁢(ξ)$ becomes steplike so that the risk will decrease only if the frequency of cooperators in the group exceeds the threshold $T$. Otherwise, the risk level remains high. To study the consequence of a proper feedback effect, we apply a finite $\beta>0$ value. In Figure 2, we illustrate how $B⁢(ξ)$ varies with $ξ$ for four different values of $\beta$.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/82954/elife-82954-fig2-v1.jpg)
 
-**Figure 2.:** varies with B⁢(ξ) for different values of ξ.βThe parameter  determines the steepness of the curves. When the value of β is small, the β function is almost constant or decays linearly by increasing B⁢(ξ). For larger ξ values, the shape of β approaches a step-like form. In this parameter area, the risk level depends sensitively on whether the group cooperation exceeds the threshold B⁢(ξ) value or not.T
+**Figure 2.:** Feedback equation $B⁢(ξ)$ varies with $ξ$ for different values of $\beta$.The parameter $\beta$ determines the steepness of the curves. When the value of $\beta$ is small, the $B⁢(ξ)$ function is almost constant or decays linearly by increasing $ξ$. For larger $\beta$ values, the shape of $B⁢(ξ)$ approaches a step-like form. In this parameter area, the risk level depends sensitively on whether the group cooperation exceeds the threshold $T$ value or not.
 
-Accordingly, the feedback-evolving dynamical system where the effect of strategies on the risk state is expressed by the exponential form can be written as(7){ε⁢x˙=x⁢(1-x)⁢[(N-1M-1)⁢xM-1⁢(1-x)N-M⁢r⁢b-c]r˙=r⁢(1-r)⁢[11+eβ⁢(x-T)-11+e-β⁢(x-T)].
+Accordingly, the feedback-evolving dynamical system where the effect of strategies on the risk state is expressed by the exponential form can be written as
+
+$$
+{\epsilon⁢x˙=x⁢(1-x)⁢[(\frac{N-1}{M-1})⁢x^{M-1}⁢(1-x)^{N-M}⁢r⁢b-c]r˙=r⁢(1-r)⁢[\frac{1}{1+e^{\beta⁢(x-T)}}-\frac{1}{1+e^{-\beta⁢(x-T)}}].
+$$
 
 Here, in order to help readers to overview easily all the parameters and variables introduced in our work, we present them in Table 1. In the following section, we respectively investigate the coevolutionary dynamics of strategy and risk when considering linear and exponential feedback forms. We note that the details of theoretical analysis can be found in Appendix 1.
 
+**Table 1.**
+ Notation symbols and meanings in our work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>Group size</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>Initial endowment</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>Cost of cooperation</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>Risk</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>Collective goal</td>
+    </tr>
+    <tr>
+      <td>ε</td>
+      <td>Feedback speed</td>
+    </tr>
+    <tr>
+      <td>u</td>
+      <td>Growth rate of risk with the proportion of defectors</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>Threshold value of cooperation</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>Steepness parameter</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>Frequency of cooperation</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## System I: Coevolutionary dynamics with linear feedback
+### System I: Coevolutionary dynamics with linear feedback
 
-We first consider the case of linear feedback. More precisely, we assume that the risk value of collective failure will decrease linearly with the increase in cooperation and increase linearly with the increase in defection level. The resulting dynamical system is presented in Equation 5. After some calculations, we find that this equation system has at most seven fixed points, which are (0,0), (0,1), (1,0), (1,1), (u1+u,r*), (x1*,1), and (x2*,1), where r*=c(N-1M-1)⁢(u1+u)M-1⁢(11+u)N-M⁢b, x1* and x2* are the real roots of the equation (N-1M-1)⁢xM-1⁢(1-x)N-M⁢b=c. We further perform theoretical analysis for these equilibrium points, as provided in Appendix 1. In order to describe the stable states of System I for the complete parameter regions, we present a schematic plot in the parameter space (u,cb), as shown in Figure 3. We use different colors to distinguish the evolutionary outcomes for specific pairs of key parameters. In the following, we discuss the representative results in detail.
+We first consider the case of linear feedback. More precisely, we assume that the risk value of collective failure will decrease linearly with the increase in cooperation and increase linearly with the increase in defection level. The resulting dynamical system is presented in Equation 5. After some calculations, we find that this equation system has at most seven fixed points, which are $(0,0)$, $(0,1)$, $(1,0)$, $(1,1)$, $(\frac{u}{1+u},r^{*})$, $(x_{1}^{*},1)$, and $(x_{2}^{*},1)$, where $r^{*}=\frac{c}{(\frac{N-1}{M-1})⁢(\frac{u}{1+u})^{M-1}⁢(\frac{1}{1+u})^{N-M}⁢b}$, $x_{1}^{*}$ and $x_{2}^{*}$ are the real roots of the equation $(\frac{N-1}{M-1})⁢x^{M-1}⁢(1-x)^{N-M}⁢b=c$. We further perform theoretical analysis for these equilibrium points, as provided in Appendix 1. In order to describe the stable states of System I for the complete parameter regions, we present a schematic plot in the parameter space $(u,\frac{c}{b})$, as shown in Figure 3. We use different colors to distinguish the evolutionary outcomes for specific pairs of key parameters. In the following, we discuss the representative results in detail.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82954/elife-82954-fig3-v1.jpg)
 
-**Figure 3.:** Different colors are used to distinguish the stability of different equilibrium points in the parameter space (). The blue line indicates that the system undergoes a Hopf bifurcation at u,cb. Here, u=M-1N-M is the real root of the equation x2*, where Γ⁢(x)=cb, and Γ⁢(x)=(N-1M-1)⁢xM-1⁢(1-x)N-M is the interior fixed point where (u1+u,r*). The dashed curve represents that the value of r∗=c(N−1M−1)(u1+u)M−1(11+u)N−Mb changes with Γ⁢(u1+u) when u. The horizontal dashed line represents that u>M−1N−M when Γ⁢(M-1N-1)=cb. The vertical dashed line represents that u>x2∗1−x2∗ when u=x2*1-x2*.Γ(x2∗)<cb<Γ(M−1N−1)
+**Figure 3.:** Different colors are used to distinguish the stability of different equilibrium points in the parameter space ($u,\frac{c}{b}$). The blue line indicates that the system undergoes a Hopf bifurcation at $u=\frac{M-1}{N-M}$. Here, $x_{2}^{*}$ is the real root of the equation $Γ⁢(x)=\frac{c}{b}$, where $Γ⁢(x)=(\frac{N-1}{M-1})⁢x^{M-1}⁢(1-x)^{N-M}$, and $(\frac{u}{1+u},r^{*})$ is the interior fixed point where $r^{∗}=\frac{c}{(\frac{N−1}{M−1})(\frac{u}{1+u})^{M−1}(\frac{1}{1+u})^{N−M}b}$. The dashed curve represents that the value of $Γ⁢(\frac{u}{1+u})$ changes with $u$ when $u>\frac{M−1}{N−M}$. The horizontal dashed line represents that $Γ⁢(\frac{M-1}{N-1})=\frac{c}{b}$ when $u>\frac{x_{2}^{∗}}{1−x_{2}^{∗}}$. The vertical dashed line represents that $u=\frac{x_{2}^{*}}{1-x_{2}^{*}}$ when $Γ(x_{2}^{∗})<\frac{c}{b}<Γ(\frac{M−1}{N−1})$.
 
-## System I has an interior equilibrium point
+#### System I has an interior equilibrium point
 
-When (N−1M−1)(u1+u)M−1(11+u)N−Mb>c, we know that our coevolutionary system has an interior fixed point. According to its stability, we can distinguish three subcases here. Namely, when u>M−1N−M, then the existing interior fixed point is stable. Besides, since (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb>c, there exist seven fixed points in the system, namely, (0,0),(0,1),(1,0),(1,1),(u1+u,r*),(x1*,1), and (x2*,1). Here, only (0,1) and (u1+u,r*) are stable (marked by the yellow area in Figure 3). Besides, we provide numerical examples to illustrate the above theoretical analysis (see the top row of Figure 4). We find that bistable dynamics can appear, that is, depending on the initial conditions the system will evolve to one of two stable equilibria: here, (0,1), which is the undesirable full defection equilibrium, or the interior fixed point suggests that cooperation can be maintained at a high level when the value of risk exceeds an intermediate value. Furthermore, we note that the results are not affected qualitatively by the feedback speed in any of the cases (see Appendix 1—figure 1 in Appendix 1).
+When $(\frac{N−1}{M−1})(\frac{u}{1+u})^{M−1}(\frac{1}{1+u})^{N−M}b>c$, we know that our coevolutionary system has an interior fixed point. According to its stability, we can distinguish three subcases here. Namely, when $u>\frac{M−1}{N−M}$, then the existing interior fixed point is stable. Besides, since $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b>c$, there exist seven fixed points in the system, namely, $(0,0),(0,1),(1,0),(1,1),(\frac{u}{1+u},r^{*}),(x_{1}^{*},1)$, and $(x_{2}^{*},1)$. Here, only $(0,1)$ and $(\frac{u}{1+u},r^{*})$ are stable (marked by the yellow area in Figure 3). Besides, we provide numerical examples to illustrate the above theoretical analysis (see the top row of Figure 4). We find that bistable dynamics can appear, that is, depending on the initial conditions the system will evolve to one of two stable equilibria: here, $(0,1)$, which is the undesirable full defection equilibrium, or the interior fixed point suggests that cooperation can be maintained at a high level when the value of risk exceeds an intermediate value. Furthermore, we note that the results are not affected qualitatively by the feedback speed in any of the cases (see Appendix 1—figure 1 in Appendix 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82954/elife-82954-fig4-v1.jpg)
 
-**Figure 4.:** Filled circles represent stable and open circles denote unstable fixed points. The arrows provide the most likely direction of evolution and the continuous color code depicts the speed of convergence in which red denotes the highest speed, while purple represents the lowest speed of transition. On the right-hand side, blue solid line and red dash line respectively denote the fraction of cooperation and the risk level, as indicated in the legend. The first three rows show the coevolutionary dynamics when , u>M−1N−M, and u=M-1N-M, respectively. The bottom row shows coevolutionary dynamics when u<M−1N−M. Parameters are (N−1M−1)(u1+u)M−1(11+u)N−Mb<c in panel (N=6,c=0.1,b=1,u=2,ε=0.1,M=3a). The initial conditions are  in panel ((x,r)=(0.4,0.3)b) and  in panel ((x,r)=(0.1,0.1)c).  in panel (N=6,c=0.1,b=1,u=23,ε=0.1,M=3d). The initial conditions are  in panel ((x,r)=(0.4,0.3)e) and  in panel ((x,r)=(0.4,0.5)f).  in panel (N=6,c=0.1,b=1,u=0.5,ε=0.1,M=3g). The initial conditions are  in panel ((x,r)=(0.4,0.3)h). , N=6,c=0.1,b=1,u=4 in panel (ε=0.1,M=3i). The initial conditions are  in panel ((x,r)=(0.4,0.3)j) and  in panel ((x,r)=(0.1,0.1)k).
+**Figure 4.:** Filled circles represent stable and open circles denote unstable fixed points. The arrows provide the most likely direction of evolution and the continuous color code depicts the speed of convergence in which red denotes the highest speed, while purple represents the lowest speed of transition. On the right-hand side, blue solid line and red dash line respectively denote the fraction of cooperation and the risk level, as indicated in the legend. The first three rows show the coevolutionary dynamics when $u>\frac{M−1}{N−M}$, $u=\frac{M-1}{N-M}$, and $u<\frac{M−1}{N−M}$, respectively. The bottom row shows coevolutionary dynamics when $(\frac{N−1}{M−1})(\frac{u}{1+u})^{M−1}(\frac{1}{1+u})^{N−M}b<c$. Parameters are $N=6,c=0.1,b=1,u=2,\epsilon=0.1,M=3$ in panel (a). The initial conditions are $(x,r)=(0.4,0.3)$ in panel (b) and $(x,r)=(0.1,0.1)$ in panel (c). $N=6,c=0.1,b=1,u=\frac{2}{3},\epsilon=0.1,M=3$ in panel (d). The initial conditions are $(x,r)=(0.4,0.3)$ in panel (e) and $(x,r)=(0.4,0.5)$ in panel (f). $N=6,c=0.1,b=1,u=0.5,\epsilon=0.1,M=3$ in panel (g). The initial conditions are $(x,r)=(0.4,0.3)$ in panel (h). $N=6,c=0.1,b=1,u=4$, $\epsilon=0.1,M=3$ in panel (i). The initial conditions are $(x,r)=(0.4,0.3)$ in panel (j) and $(x,r)=(0.1,0.1)$ in panel (k).
 
-If the enhancement rate of risk caused by defection drops to a certain threshold, namely, u=M-1N-M, a Hopf bifurcation takes place, which is supercritical (marked by the blue line in Figure 3). In this situation, System I has all seven fixed points. As analyzed in Appendix 1, only (0,1) is stable. Furthermore, we provide numerical examples to illustrate our theoretical analysis (see the second row of Figure 4). We find that the system is bistable: depending on the initial fractions of cooperators and risk, the system can evolve either to a high-risk state without cooperation or to a limit cycle where the frequencies of cooperation and risk show periodic oscillations.
+If the enhancement rate of risk caused by defection drops to a certain threshold, namely, $u=\frac{M-1}{N-M}$, a Hopf bifurcation takes place, which is supercritical (marked by the blue line in Figure 3). In this situation, System I has all seven fixed points. As analyzed in Appendix 1, only $(0,1)$ is stable. Furthermore, we provide numerical examples to illustrate our theoretical analysis (see the second row of Figure 4). We find that the system is bistable: depending on the initial fractions of cooperators and risk, the system can evolve either to a high-risk state without cooperation or to a limit cycle where the frequencies of cooperation and risk show periodic oscillations.
 
-When the enhancement rate of risk caused by defection is weak and meets u<M−1N−M condition, then the interior fixed point is unstable. Besides, since (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb>c, there exist all seven fixed points. According to the theoretical analysis presented in Appendix 1, only (0,1) fixed point is stable. In the third row of Figure 4, we present some representative numerical examples. They show that all trajectories in the state space terminate at the fixed point (0,1), which is consistent with our theoretical results. This means that no individual chooses to contribute to the common pool, leading to the failure of collective action, and finally, all individuals inevitably lose all their endowments.
+When the enhancement rate of risk caused by defection is weak and meets $u<\frac{M−1}{N−M}$ condition, then the interior fixed point is unstable. Besides, since $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b>c$, there exist all seven fixed points. According to the theoretical analysis presented in Appendix 1, only $(0,1)$ fixed point is stable. In the third row of Figure 4, we present some representative numerical examples. They show that all trajectories in the state space terminate at the fixed point $(0,1)$, which is consistent with our theoretical results. This means that no individual chooses to contribute to the common pool, leading to the failure of collective action, and finally, all individuals inevitably lose all their endowments.
 
-## System I has no interior equilibrium point
+#### System I has no interior equilibrium point
 
-The alternative case is when there is no interior fixed point, namely, (N−1M−1)(u1+u)M−1(11+u)N−Mb≤c. In this situation, when (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb>c, System I has six fixed points, which are (0,0),(0,1),(1,0),(1,1),(x1*,1), and (x2*,1), respectively. The theoretical analysis, presented in Appendix 1 , shows that (0,0),(1,0),(1,1), and (x1*,1) are unstable, (0,1) is stable, and (x2*,1) is stable for x2∗<u1+u (shown by the green area in Figure 3). In the bottom row of Figure 4, we provide some numerical examples to illustrate our theoretical results. The phase plane dynamics show that most trajectories in phase space converge to the stable equilibrium point (x2*,1), which suggests that driven by the high risk of future loss, most individuals will contribute to the common pool. Besides, the remaining trajectories in the phase space will converge to the fixed point (0,1), which means a complete failure when all individuals lose all remaining endowments.
+The alternative case is when there is no interior fixed point, namely, $(\frac{N−1}{M−1})(\frac{u}{1+u})^{M−1}(\frac{1}{1+u})^{N−M}b\leqc$. In this situation, when $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b>c$, System I has six fixed points, which are $(0,0),(0,1),(1,0),(1,1),(x_{1}^{*},1),$ and $(x_{2}^{*},1)$, respectively. The theoretical analysis, presented in Appendix 1 , shows that $(0,0),(1,0),(1,1),$ and $(x_{1}^{*},1)$ are unstable, $(0,1)$ is stable, and $(x_{2}^{*},1)$ is stable for $x_{2}^{∗}<\frac{u}{1+u}$ (shown by the green area in Figure 3). In the bottom row of Figure 4, we provide some numerical examples to illustrate our theoretical results. The phase plane dynamics show that most trajectories in phase space converge to the stable equilibrium point $(x_{2}^{*},1)$, which suggests that driven by the high risk of future loss, most individuals will contribute to the common pool. Besides, the remaining trajectories in the phase space will converge to the fixed point $(0,1)$, which means a complete failure when all individuals lose all remaining endowments.
 
-Furthermore, we prove that the fixed point (x2*,1) is unstable when x2∗>u1+u in Appendix 1. For the special case of x2*=u1+u, we find that one eigenvalue of the Jacobian matrix at (x2*,1) is zero and the other one is negative. We provide the stability analysis of this fixed point by using the center manifold theorem (Khalil, 1996). When (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb≤c, (0,1) is the only stable equilibrium point of the System I.
+Furthermore, we prove that the fixed point $(x_{2}^{*},1)$ is unstable when $x_{2}^{∗}>\frac{u}{1+u}$ in Appendix 1. For the special case of $x_{2}^{*}=\frac{u}{1+u}$, we find that one eigenvalue of the Jacobian matrix at $(x_{2}^{*},1)$ is zero and the other one is negative. We provide the stability analysis of this fixed point by using the center manifold theorem (Khalil, 1996). When $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b\leqc$, $(0,1)$ is the only stable equilibrium point of the System I.
 
-## System II: Coevolutionary dynamics with exponential feedback
+### System II: Coevolutionary dynamics with exponential feedback
 
-In this section, we consider the case of exponential feedback. Here, there are at most seven equilibrium points of the replicator Equation 7. Namely, (x,y)=(0,0), (0,1), (1,0), (1,1), (x1*,1), (x2*,1), and (T,c(N-1M-1)⁢TM-1⁢(1-T)N-M⁢b), in which x1* and x2* satisfy the equation (N-1M-1)⁢xM-1⁢(1-x)N-M⁢b=c and x1∗<M−1N−1<x2∗ (Santos and Pacheco, 2011). For convenience, we set r¯=c(N-1M-1)⁢TM-1⁢(1-T)N-M⁢b. Here, the first six equilibria are boundary fixed points, and the last one is an interior fixed point. In Appendix 2, we analyze the stability of these equilibria under four different parameter ranges by evaluating the sign of the eigenvalues of the Jacobian (Khalil, 1996). The basins of each solution in parameter space (T,cb) are shown in Figure 5. In the following, we will discuss the evolutionary outcomes depending on whether System II has an interior equilibrium point.
+In this section, we consider the case of exponential feedback. Here, there are at most seven equilibrium points of the replicator Equation 7. Namely, $(x,y)=(0,0)$, $(0,1)$, $(1,0)$, $(1,1)$, $(x_{1}^{*},1)$, $(x_{2}^{*},1)$, and $(T,\frac{c}{(\frac{N-1}{M-1})⁢T^{M-1}⁢(1-T)^{N-M}⁢b})$, in which $x_{1}^{*}$ and $x_{2}^{*}$ satisfy the equation $(\frac{N-1}{M-1})⁢x^{M-1}⁢(1-x)^{N-M}⁢b=c$ and $x_{1}^{∗}<\frac{M−1}{N−1}<x_{2}^{∗}$ (Santos and Pacheco, 2011). For convenience, we set $r¯=\frac{c}{(\frac{N-1}{M-1})⁢T^{M-1}⁢(1-T)^{N-M}⁢b}$. Here, the first six equilibria are boundary fixed points, and the last one is an interior fixed point. In Appendix 2, we analyze the stability of these equilibria under four different parameter ranges by evaluating the sign of the eigenvalues of the Jacobian (Khalil, 1996). The basins of each solution in parameter space $(T,\frac{c}{b})$ are shown in Figure 5. In the following, we will discuss the evolutionary outcomes depending on whether System II has an interior equilibrium point.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/82954/elife-82954-fig5-v1.jpg)
 
-**Figure 5.:** We use different colors to distinguish the stability of equilibrium points in the parameter space (). The blue line indicates that the system undergoes a Hopf bifurcation at T,cb. Here, T=M-1N-1 is the interior fixed point where (T,r¯). The dashed curve represents that the value of r¯=c(N-1M-1)⁢TM-1⁢(1-T)N-M⁢b changes with Γ⁢(T) when T. The horizontal dashed line represents that T>M−1N−1 when Γ⁢(M-1N-1)=cb. The vertical dashed line represents that T>x2∗ when T=x2*.Γ(x2∗)<cb<Γ(M−1N−1)
+**Figure 5.:** We use different colors to distinguish the stability of equilibrium points in the parameter space ($T,\frac{c}{b}$). The blue line indicates that the system undergoes a Hopf bifurcation at $T=\frac{M-1}{N-1}$. Here, $(T,r¯)$ is the interior fixed point where $r¯=\frac{c}{(\frac{N-1}{M-1})⁢T^{M-1}⁢(1-T)^{N-M}⁢b}$. The dashed curve represents that the value of $Γ⁢(T)$ changes with $T$ when $T>\frac{M−1}{N−1}$. The horizontal dashed line represents that $Γ⁢(\frac{M-1}{N-1})=\frac{c}{b}$ when $T>x_{2}^{∗}$. The vertical dashed line represents that $T=x_{2}^{*}$ when $Γ(x_{2}^{∗})<\frac{c}{b}<Γ(\frac{M−1}{N−1})$.
 
-## System II has an interior equilibrium point
+#### System II has an interior equilibrium point
 
-In this case c<(N−1M−1)TM−1(1−T)N−Mb, there are three typical dynamical behaviors for the evolution of cooperation and risk according to the stability conditions of the interior equilibrium point (for details, see Appendix 2).
+In this case $c<(\frac{N−1}{M−1})T^{M−1}(1−T)^{N−M}b$, there are three typical dynamical behaviors for the evolution of cooperation and risk according to the stability conditions of the interior equilibrium point (for details, see Appendix 2).
 
-When T>M−1N−1, the interior fixed point is stable. Besides, since (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb−c>0, there exist two boundary fixed points, which are (x1*,1) and (x2*,1). Thus the system has seven fixed points, which are (0,0),(0,1),(1,0),(1,1),(x1*,1),(x2*,1), and (T,r¯). From the Jacobian matrices, we can conclude that the fixed points (0,0),(0,1),(1,0),(1,1),(x1*,1), and (x2*,1) are unstable, while (0,1) and (T,r¯) are stable. The latter case is shown in the top row of Figure 6, where we plot the phase plane and temporal dynamics of the system. It suggests that there is a stable interior fixed point, and most trajectories in phase space converge to this nontrivial solution, which means that the system can evolve into a state where the risk is kept at a low level and almost half of the individuals contribute to the common pool. The remaining trajectories in the phase space will converge to the alternative destination in which the risk level becomes particularly high and cooperators disappear.
+When $T>\frac{M−1}{N−1}$, the interior fixed point is stable. Besides, since $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b−c>0$, there exist two boundary fixed points, which are $(x_{1}^{*},1)$ and $(x_{2}^{*},1)$. Thus the system has seven fixed points, which are $(0,0),(0,1),(1,0),(1,1),(x_{1}^{*},1),(x_{2}^{*},1)$, and $(T,r¯)$. From the Jacobian matrices, we can conclude that the fixed points $(0,0),(0,1),(1,0),(1,1),(x_{1}^{*},1),$ and $(x_{2}^{*},1)$ are unstable, while $(0,1)$ and $(T,r¯)$ are stable. The latter case is shown in the top row of Figure 6, where we plot the phase plane and temporal dynamics of the system. It suggests that there is a stable interior fixed point, and most trajectories in phase space converge to this nontrivial solution, which means that the system can evolve into a state where the risk is kept at a low level and almost half of the individuals contribute to the common pool. The remaining trajectories in the phase space will converge to the alternative destination in which the risk level becomes particularly high and cooperators disappear.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/82954/elife-82954-fig6-v1.jpg)
 
-**Figure 6.:** Filled circles represent stable and open circles denote unstable fixed points. The arrows provide the most likely direction of evolution and the continuous color code depicts the speed of convergence in which red denotes the highest speed, while purple represents the lowest speed of transition. Blue solid line and red dash line respectively denote the fraction of cooperation and the risk level, as indicated in the legend. The first three rows show the coevolutionary dynamics when , T>M−1N−1, and T=M-1N-1, respectively. The bottom row shows the case when T<M−1N−1. Parameters are c>(N−1M−1)TM−1(1−T)N−Mb in panel (N=6,c=0.1,b=1,T=0.5,ε=0.1,M=3a). The initial conditions are  in panel ((x,r)=(0.4,0.3)b) and  in panel ((x,r)=(0.1,0.1)c).  in panel (N=6,c=0.1,b=1,T=0.4,ε=0.1,M=3d). The initial conditions are  in panel ((x,r)=(0.4,0.3)e) and  in panel ((x,r)=(0.4,0.5)f).  in panel (N=6,c=0.1,b=1,T=0.2,ε=0.1,M=3g). The initial conditions are  in panel ((x,r)=(0.4,0.3)h). , N=6,c=0.1,b=1,T=0.8 in panel (ε=0.1,M=3i). The initial conditions are  in panel ((x,r)=(0.4,0.3)j) and  in panel ((x,r)=(0.1,0.1)k).
+**Figure 6.:** Filled circles represent stable and open circles denote unstable fixed points. The arrows provide the most likely direction of evolution and the continuous color code depicts the speed of convergence in which red denotes the highest speed, while purple represents the lowest speed of transition. Blue solid line and red dash line respectively denote the fraction of cooperation and the risk level, as indicated in the legend. The first three rows show the coevolutionary dynamics when $T>\frac{M−1}{N−1}$, $T=\frac{M-1}{N-1}$, and $T<\frac{M−1}{N−1}$, respectively. The bottom row shows the case when $c>(\frac{N−1}{M−1})T^{M−1}(1−T)^{N−M}b$. Parameters are $N=6,c=0.1,b=1,T=0.5,\epsilon=0.1,M=3$ in panel (a). The initial conditions are $(x,r)=(0.4,0.3)$ in panel (b) and $(x,r)=(0.1,0.1)$ in panel (c). $N=6,c=0.1,b=1,T=0.4,\epsilon=0.1,M=3$ in panel (d). The initial conditions are $(x,r)=(0.4,0.3)$ in panel (e) and $(x,r)=(0.4,0.5)$ in panel (f). $N=6,c=0.1,b=1,T=0.2,\epsilon=0.1,M=3$ in panel (g). The initial conditions are $(x,r)=(0.4,0.3)$ in panel (h). $N=6,c=0.1,b=1,T=0.8$, $\epsilon=0.1,M=3$ in panel (i). The initial conditions are $(x,r)=(0.4,0.3)$ in panel (j) and $(x,r)=(0.1,0.1)$ in panel (k).
 
-When T=M-1N-1, the eigenvalues of Jacobian matrix at the interior fixed point are a purely imaginary conjugate pair. Then, according to the Hopf bifurcation theorem (Kuznetsov, 1998; Guckenheimer and Holmes, 2013), the system undergoes a Hopf bifurcation at T=M-1N-1 and a limit cycle encircling around interior equilibrium emerges. By calculating the first Lyapunov coefficient, we can evaluate that the limit cycle is stable (see Appendix 2). Besides, there exist two boundary fixed points, (x1*,1) and (x2*,1), because (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb−c>0. Thus the system has all seven fixed points. As we discuss in Appendix 2, only the fixed point (0,1) is stable. A representative numerical example is shown in the second row of Figure 6, which is conceptually similar to those we observed for System I. More precisely, the population either converges toward a limit cycle in the interior space or arrives to the undesired (0,1) point where there are no cooperators, but just high risk.
+When $T=\frac{M-1}{N-1}$, the eigenvalues of Jacobian matrix at the interior fixed point are a purely imaginary conjugate pair. Then, according to the Hopf bifurcation theorem (Kuznetsov, 1998; Guckenheimer and Holmes, 2013), the system undergoes a Hopf bifurcation at $T=\frac{M-1}{N-1}$ and a limit cycle encircling around interior equilibrium emerges. By calculating the first Lyapunov coefficient, we can evaluate that the limit cycle is stable (see Appendix 2). Besides, there exist two boundary fixed points, $(x_{1}^{*},1)$ and $(x_{2}^{*},1)$, because $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b−c>0$. Thus the system has all seven fixed points. As we discuss in Appendix 2, only the fixed point $(0,1)$ is stable. A representative numerical example is shown in the second row of Figure 6, which is conceptually similar to those we observed for System I. More precisely, the population either converges toward a limit cycle in the interior space or arrives to the undesired $(0,1)$ point where there are no cooperators, but just high risk.
 
-The interior fixed point is unstable when T<M−1N−1. Besides, there are two boundary fixed points, (x1*,1) and (x2*,1), because (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb−c>0. In this situation, the system has all seven fixed points. Theoretical analysis, presented in Appendix 2, confirms that only (0,1) is stable. This is illustrated in the third row of Figure 6 where all trajectories terminate in the mentioned point, signaling that the tragedy of the commons state is inevitable.
+The interior fixed point is unstable when $T<\frac{M−1}{N−1}$. Besides, there are two boundary fixed points, $(x_{1}^{*},1)$ and $(x_{2}^{*},1)$, because $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b−c>0$. In this situation, the system has all seven fixed points. Theoretical analysis, presented in Appendix 2, confirms that only $(0,1)$ is stable. This is illustrated in the third row of Figure 6 where all trajectories terminate in the mentioned point, signaling that the tragedy of the commons state is inevitable.
 
-## System II has no interior equilibrium point
+#### System II has no interior equilibrium point
 
-When c≥(N−1M−1)TM−1(1−T)N−Mb, there is no interior fixed point in System II. In this case, when (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb−c<0, there are four equilibrium points, namely, (0,0),(0,1),(1,0),(1,1), where (0,1) is stable. When (N−1M−1)(M−1N−1)M−1(1−M−1N−1)N−Mb−c>0, there exist two boundary fixed points, (x1*,1) and (x2*,1). Altogether, the system has six fixed points, which are (0,0), (0,1), (1,0), (1,1), (x1*,1), and (x2*,1). As we discuss in Appendix 2, the fixed points (0,0),(1,0),(1,1),(x1*,1) are unstable, while (0,1) is stable. In the special case of x2∗<T, the fixed point (x2*,1) becomes stable, which suggests that there is a significant cooperation at a high risk level. A representative numerical illustration is shown in the bottom row of Figure 6, signaling the importance of the initial conditions because the trajectories converge either to the fixed point (0,1) or to (x2*,1).
+When $c\geq(\frac{N−1}{M−1})T^{M−1}(1−T)^{N−M}b$, there is no interior fixed point in System II. In this case, when $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b−c<0$, there are four equilibrium points, namely, $(0,0),(0,1),(1,0),(1,1)$, where $(0,1)$ is stable. When $(\frac{N−1}{M−1})(\frac{M−1}{N−1})^{M−1}(1−\frac{M−1}{N−1})^{N−M}b−c>0$, there exist two boundary fixed points, $(x_{1}^{*},1)$ and $(x_{2}^{*},1)$. Altogether, the system has six fixed points, which are $(0,0)$, $(0,1)$, $(1,0)$, $(1,1)$, $(x_{1}^{*},1),$ and $(x_{2}^{*},1)$. As we discuss in Appendix 2, the fixed points $(0,0),(1,0),(1,1),(x_{1}^{*},1)$ are unstable, while $(0,1)$ is stable. In the special case of $x_{2}^{∗}<T$, the fixed point $(x_{2}^{*},1)$ becomes stable, which suggests that there is a significant cooperation at a high risk level. A representative numerical illustration is shown in the bottom row of Figure 6, signaling the importance of the initial conditions because the trajectories converge either to the fixed point $(0,1)$ or to $(x_{2}^{*},1)$.
 
 ## Discussion
 
@@ -138,10 +235,10 @@ Previous theoretical studies have revealed that the coevolutionary game models d
 
 The reciprocal feedback process, though many types have not been well characterized, occurs at all levels of our life (Liu et al., 2007; Ezenwa et al., 2016; Obradovich and Rahwan, 2019). Consequently, they may play an indispensable role in maintaining the stability of human society and the ecosystem. Mathematical modeling based on evolutionary game theory is a powerful tool for addressing social–ecological and human–environment interactions and analyzing the evolutionary dynamics of these coupled systems. The mathematical framework proposed in this article considers two characteristic forms to describe the effect of strategy on risk, namely, linear and nonlinear (exponential) forms of feedback. Although these two forms can be equivalent under some limit conditions, there are essential differences. On the one hand, linear relationship is a relatively simple way to describe the correlation mode of two factors, which is common in real society. For example, with the increase in protection awareness and vaccination proportion, the mortality rate of the epidemic decreased gradually (Yang and Shaman, 2022). Furthermore, linear feedback has been used to describe the interactions between actions of the population and environmental state (Weitz et al., 2016; Tilman et al., 2020). However, linear link cannot fully describe the relationship between variables in real societies. For example, in recent years, extreme weather phenomena have occurred more frequently, with greater intensity and wider impact areas. Thus the feedback between human behaviors and environment may take on a more complex nonlinear form. In this work, we consider that the strategy of the population has an exponential effect on risk level, and such form can describe the phenomenon that risk will rise and fall sharply with the change in strategy frequency (Figure 2). It is worth emphasizing that although we use different forms of feedback to describe the impact of strategies on risk, the evolutionary dynamics have not changed substantially, which highlights the prime importance of the feedback mechanism independently of its actual form.
 
-Our feedback-evolving game model reveals that the coupled strategy and environment system will produce a variety of representative dynamical behaviors. We find that the undesired equilibrium point (0,1) in our feedback system is always evolutionarily stable, which does not depend on whether the effect of strategy on risk is linear or exponential. Such evolutionary outcome means that all individuals are unwilling to contribute to achieving the collective goal, which leads to the failure of collective action, and all individuals inevitably lose their remaining endowments. In real-world scenarios, such as climate change (Milinski et al., 2008) and the spread of infectious diseases (Cronk and Aktipis, 2021; Chen and Fu, 2022), once the whole society is in such a state, it is undoubtedly disastrous for the public. Therefore, how to adjust and control the system to deviate from this state is particularly important for policymakers.
+Our feedback-evolving game model reveals that the coupled strategy and environment system will produce a variety of representative dynamical behaviors. We find that the undesired equilibrium point $(0,1)$ in our feedback system is always evolutionarily stable, which does not depend on whether the effect of strategy on risk is linear or exponential. Such evolutionary outcome means that all individuals are unwilling to contribute to achieving the collective goal, which leads to the failure of collective action, and all individuals inevitably lose their remaining endowments. In real-world scenarios, such as climate change (Milinski et al., 2008) and the spread of infectious diseases (Cronk and Aktipis, 2021; Chen and Fu, 2022), once the whole society is in such a state, it is undoubtedly disastrous for the public. Therefore, how to adjust and control the system to deviate from this state is particularly important for policymakers.
 
 Finally, it is worth emphasizing that the feedback loop operates over time. In this situation, the change in risk state or strategy frequency may lead to the change in other factors, such as collective target, which provides an opportunity for the emergence of new feedback loops. Thus, multiple types of feedback loops are possible in a single coupled system. Such multiple feedback loops have been confirmed in the coupling system of animal behavior and disease ecology (Ezenwa et al., 2016). Therefore, a promising expansion of our current model could be to consider the multiple feedback loops.
 
-## Code availability
+### Code availability
 
 The Mathematica (Wolfram Mathematica 11.1) source code used to generate Figures 4 and 6 is available on GitHub (copy archived at Liu, 2023).

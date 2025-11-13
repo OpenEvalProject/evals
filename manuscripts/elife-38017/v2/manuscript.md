@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.38017.001 α-Xenorhabdolysins (Xax) are α-pore-forming toxins (α-PFT) that form 1–1.3 MDa large pore complexes to perforate the host cell membrane. PFTs are used by a variety of bacterial pathogens to attack host cells. Due to the lack of structural information, the molecular mechanism of action of Xax toxins is poorly understood. Here, we report the cryo-EM structure of the XaxAB pore complex from Xenorhabdus nematophila and the crystal structures of the soluble monomers of XaxA and XaxB. The structures reveal that XaxA and XaxB are built similarly and appear as heterodimers in the 12–15 subunits containing pore, classifying XaxAB as bi-component α-PFT. Major conformational changes in XaxB, including the swinging out of an amphipathic helix are responsible for membrane insertion. XaxA acts as an activator and stabilizer for XaxB that forms the actual transmembrane pore. Based on our results, we propose a novel structural model for the mechanism of Xax intoxication.
+α-Xenorhabdolysins (Xax) are α-pore-forming toxins (α-PFT) that form 1–1.3 MDa large pore complexes to perforate the host cell membrane. PFTs are used by a variety of bacterial pathogens to attack host cells. Due to the lack of structural information, the molecular mechanism of action of Xax toxins is poorly understood. Here, we report the cryo-EM structure of the XaxAB pore complex from Xenorhabdus nematophila and the crystal structures of the soluble monomers of XaxA and XaxB. The structures reveal that XaxA and XaxB are built similarly and appear as heterodimers in the 12–15 subunits containing pore, classifying XaxAB as bi-component α-PFT. Major conformational changes in XaxB, including the swinging out of an amphipathic helix are responsible for membrane insertion. XaxA acts as an activator and stabilizer for XaxB that forms the actual transmembrane pore. Based on our results, we propose a novel structural model for the mechanism of Xax intoxication.
 
 ## Introduction
 
@@ -38,9 +38,231 @@ So far structural data on xenorhabdolysins are missing limiting our understandin
 
 ## Results and discussion
 
-## Structure of XaxA and XaxB soluble monomers
+### Structure of XaxA and XaxB soluble monomers
 
 In two different experiments, we independently expressed and purified XaxA and XaxB (Materials and methods). The protein quantity and quality of both proteins was sufficient (Figure 1—figure supplements 1a–b and 2a–b) to perform crystallization experiments. We obtained well diffracting crystals of both XaxA and XaxB in their soluble monomeric form and solved their structures to 2.5 and 3.4 Å, respectively (Figure 1a–b, Table 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig1-v2.jpg)
+
+**Figure 1.:** (a) Ribbon representation of the atomic model of the XaxA soluble monomer. (b) Ribbon representation of the XaxB soluble monomer. Each helix is depicted in a different color and labeled accordingly.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a-b) SDS-PAGE (a) of the monomer fraction (peak 3) from the size exclusion chromatography of XaxA (b). Peaks 1 and 2 correspond to the void volume and aggregation of XaxA by the hydrophobic head domains, respectively. Lane 1: molecular weight marker, lane 2: protein. (c) Representative electron micrograph of negatively stained XaxA from peak 3 in (b). Scale bar, 50 nm. (d–e) Representative electron micrograph (d) and 2-D class averages (e) of negatively stained XaxA clusters from peak 2 in (b). Scale bars, 50 nm (d) and 10 nm (e).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a-b) SDS-PAGE (a) of the monomer fraction (peak 3) from the size exclusion chromatography of XaxB (b). Peaks 1 and 2 correspond to the void volume and possibly dimers of XaxB in solution. Lane 1: molecular weight marker, lane 2: protein. (c) Representative electron micrograph of negatively stained XaxB from peak 3 in (b). Scale bar, 50 nm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Size exclusion chromatography profile of XaxAB after incubation overnight without detergent. (b) Representative electron micrograph of negatively stained XaxAB after incubation overnight without detergent. Scale bars, 50 nm. Arrow indicates the fraction analyzed by negative stain electron microscopy.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Comparison of the soluble monomers of ClyA-type toxins (pdb-IDs: ClyA: 1QOY, NheA: 4K1P, Hbl-B: 2NRJ, Cry6Aa: 5KUC). (b) Comparison of XaxA and XaxB protomers with the ClyA protomer (pdb-IDs: ClyA: 2WCD). Protomers are rotated 90° in respect to the soluble monomers in a. Relevant helices are colored corresponding to their structural equivalent of XaxA and XaxB.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Stereo left eye. (b) Stereo right eye. Images were generated with Chimera UCSF. Molecules are depicted as backbone chain trace. Molecules A, B, C, and D are shown in red, green, blue and purple, respectively.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** The secondary structure of the built model is labeled above the prediction in the colors assigned to the different helices in Figure 1. The transmembrane sequence of XaxA is highlighted in red.
+
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>XaxA</th>
+      <th>XaxB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>SLS PETRA</td>
+      <td>2.07505 1.8233</td>
+      <td>0.97793</td>
+    </tr>
+    <tr>
+      <td colspan="2">Resolution range (Å)</td>
+      <td>44.48–2.5 (2.589–2.5)</td>
+      <td>48.15–3.4 (3.521–3.4)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Space group</td>
+      <td>P 21 21 21</td>
+      <td>P 21 21 21</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cell dimensions a, b, c (Å)</td>
+      <td>67.27 90.83 153.03</td>
+      <td>88.7 99.41 194.15</td>
+    </tr>
+    <tr>
+      <td colspan="2">α, β, γ (°)</td>
+      <td>90 90 90</td>
+      <td>90 90 90</td>
+    </tr>
+    <tr>
+      <td colspan="2">Molecule no. in AU</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total reflections</td>
+      <td>996,585 (92,922)</td>
+      <td>961,813 (91,076)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Unique reflections</td>
+      <td>33,174 (3,258)</td>
+      <td>24,297 (2,378)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Multiplicity</td>
+      <td>30.0 (28.5)</td>
+      <td>39.6 (38.3)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Completeness (%)</td>
+      <td>99.91 (99.94)</td>
+      <td>99.91 (99.96)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Mean I/σ(I)</td>
+      <td>25.11 (2.38)</td>
+      <td>14.23 (0.82)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Wilson B-factor</td>
+      <td>58.45</td>
+      <td>137.29</td>
+    </tr>
+    <tr>
+      <td colspan="2">R-merge</td>
+      <td>0.1055 (1.722)</td>
+      <td>0.2846 (6.285)</td>
+    </tr>
+    <tr>
+      <td colspan="2">R-meas</td>
+      <td>0.1073 (1.753)</td>
+      <td>0.2883 (6.369)</td>
+    </tr>
+    <tr>
+      <td colspan="2">CC1/2</td>
+      <td>1 (0.872)</td>
+      <td>0.999 (0.493)</td>
+    </tr>
+    <tr>
+      <td colspan="2">CC*</td>
+      <td>1 (0.965)</td>
+      <td>1 (0.813)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Reflections used in refinement</td>
+      <td>33,167 (3,257)</td>
+      <td>24,289 (2377)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Reflections used for R-free</td>
+      <td>1659 (173)</td>
+      <td>1215 (119)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Rwork/Rfree (%)</td>
+      <td>23.84/28.57 (35.19/42.56)</td>
+      <td>26.38/30.52 (37.37/40.11)</td>
+    </tr>
+    <tr>
+      <td colspan="2">CC(work)/CC(free)</td>
+      <td>0.958/0.943 (0.786/0.715)</td>
+      <td>0.957/0.941 (0.613/0.442)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Average B-factor (Å2)</td>
+      <td>77.47</td>
+      <td>142.42</td>
+    </tr>
+    <tr>
+      <td colspan="2">No. atoms in AU</td>
+      <td>5373</td>
+      <td>10,624</td>
+    </tr>
+    <tr>
+      <td colspan="2">Macromolecules</td>
+      <td>5348</td>
+      <td>10,624</td>
+    </tr>
+    <tr>
+      <td colspan="2">Solvent</td>
+      <td>249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Protein residues</td>
+      <td>678</td>
+      <td>1329</td>
+    </tr>
+    <tr>
+      <td colspan="2">r.m.s. deviations:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">RMS (bonds)</td>
+      <td>0.004</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td colspan="2">RMS (angles)</td>
+      <td>0.87</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran favored (%)</td>
+      <td>99.4</td>
+      <td>97.50</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran allowed (%)</td>
+      <td>0.6</td>
+      <td>2.20</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran outliers (%)</td>
+      <td>0.00</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Rotamer outliers (%)</td>
+      <td>1.32</td>
+      <td>3.82</td>
+    </tr>
+    <tr>
+      <td colspan="2">Clashscore</td>
+      <td>3.69</td>
+      <td>3.99</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values for the highest resolution shell are inside brackets.*For XaxA multiple datasets were collected from one crystal at the PXIII-X06DA beamline at the Swiss Light Source and at the DESY PETRA III beamline P11._
 
 Both XaxA and XaxB have a long rod-shaped structure and are mainly composed of α-helices (Figure 1a–b). XaxA and XaxB have a similar domain organization. They both contain a tail domain that is formed by a five-helix bundle (αA, αB, αC, αG and αH) and elongated neck and head domains. The five-helix bundle motif has so far only been described for ClyA and ClyA-type toxins (Roderer and Glockshuber, 2017). Like in the case of ClyA-type toxins the N-terminal helices (αA) of XaxA and XaxB are significantly shorter than in ClyA, where it plays a crucial role in pore formation (Figure 1—figure supplement 4). Interestingly, XaxA contains two large loops connecting the helices, a big hook-shaped loop (lp1, aa 136–169) between helices αB and αC at the top of the tail domain and an additional loop (lp2, aa 202–215) dividing helix αC (Figure 1a). The four XaxB molecules in the asymmetric unit differ considerably in their tail domain (Figure 1—figure supplement 5). Especially, helices αB and αC that protrude slightly from the five-helix-bundle take different positions. Although this might be due to tight crystal packing, it also indicates a certain degree of flexibility of the tail domain of XaxB.
 
@@ -56,7 +278,7 @@ In general, the overall fold of the soluble monomers is similar to that of ClyA 
 
 It is tempting to speculate that the function of the N-terminal helix and β-tongue in ClyA has been evolutionary compensated in multicomponent toxins, such as XaxAB, NheABC and Hbl-ABC that only contain a short N-terminal helix. In the case of XaxAB, the hydrophobic helices of XaxA that enter the membrane in the pore, are functionally equivalent to the hydrophobic β-tongue of ClyA, The β-tongue likely inserts first into the membrane, where it rearranges into two α-helices (Mueller et al., 2009). Similar to XaxA, these helices only span half the membrane. αF and the helix-turn-helix motif αE of XaxB, that span the complete membrane in the XaxAB pore, would substitute the N-terminal membrane-spanning helix of ClyA.
 
-## Structure of the XaxAB pore complex
+### Structure of the XaxAB pore complex
 
 To investigate the pore complex formed by XaxA and XaxB, we planned to induce pore formation in vitro and analyze the structure of the complex by single particle electron cryomicroscopy (cryo-EM). We first mixed both soluble monomers, incubated them with a variety of detergents and analyzed the pores by negative stain electron microscopy. We could indeed observe pore formation in most cases; however, the choice of detergent greatly influenced the size and homogeneity of the observed crown-shaped pore complexes. Some detergents induced the formation of star-like aggregates or differently sized pores (Figure 3—figure supplement 1). We observed the most homogenous distribution of XaxAB pore complexes, that appear as crown-shaped structures, after incubating the monomers with 0.1% Cymal-6 (Figure 3—figure supplement 1c, Figure 3—figure supplement 2b). The average diameter of the pores was ~250 Å. However, the pores had the tendency to aggregate and were not suitable for further structural investigations. Interestingly, when we incubated soluble monomers of XaxA and XaxB in the absence of detergents at room temperature, we observed the formation of higher oligomers but not of complete pores (Figure 1—figure supplement 3a,b). This is not the case when XaxA and XaxB are not mixed (Figure 1—figure supplements 1 and 2). This indicates that heterodimerization and oligomerization of XaxAB can happen independently of the hydrophobic environment provided by detergents or a lipid bilayer and may happen prior to pore formation also in vivo.
 
@@ -64,15 +286,186 @@ To improve the homogeneity of our XaxAB pore complexes, we exchanged Cymal-6 wit
 
 Analyzing the single particles by two-dimensional clustering and sorting in SPHIRE (Yang et al., 2012; Moriya et al., 2017) revealed populations of XaxAB pores with different numbers of subunits (Figure 3—figure supplement 3). Most of the complexes contain either 12, 13, 14 or 15 subunits. We separated the different populations by multi-reference alignment and solved the structure of the different complexes in SPHIRE (Moriya et al., 2017) (Materials and methods, Figure 3—figure supplement 4–5). The average resolutions of the reconstructions were 5, 4, 4.2 and 4.3 Å for do-, tri-, tetra-, and pentadecameric pores, respectively (Figure 3—figure supplements 4–5). We used the highest resolved cryo-EM density of the tridecameric pore complex to build an atomic model of XaxAB (Video 1, Figure 3, Table 2). The high quality of the map allowed both models to be almost completely built, except for the first residues of the N-terminal helix αA in XaxA (aa 1–40) and XaxB (aa 1–12). These regions are also not resolved in the crystal structures indicating a high flexibility of the N-termini.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-v2.jpg)
+
+**Figure 3.:** (a) Cryo-EM density map of tridecameric XaxAB pores shown as top, side and bottom view. XaxA and XaxB are colored in green and yellow, respectively. (b) Ribbon representation of the atomic model of XaxAB. Colors shown as in (a).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a-f) Representative micrographs of negatively stained XaxAB pore complexes formed by incubation with different detergents, in particular n-Octyl-β-D-glucopyranoside (OG) (a), Lauryl maltose neopentyl glycol (LMNG) (b), 6-Cyclohexyl-1-hexyl-β-D-maltoside (Cymal-6) (c), 7-Cyclohexyl-1-hexyl-β-D-maltoside (Cymal-7) (d), 3-[(3-Cholamidopropyl)-dimethylammonio]−1-propane sulfonate] (CHAPS) (e), and Digitonin (f). Scale bars, 50 nm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Size exclusion chromatography profile of XaxAB after incubation overnight with Cymal-6. (b) Representative electron micrograph of negatively stained XaxAB after incubation overnight with Cymal-6 (c). (c–d) Size exclusion profile (c) and representative electron micrograph (d) of the negatively stained XaxAB pore complex in amphipols. Scale bars, 50 nm. Arrows indicate fractions analyzed by negative stain electron microscopy.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Representative class averages of top views showing XaxAB pores with 12, 13, 14, and 15 subunits are highlighted in yellow, red, green and blue, respectively. Scale bar, 10 nm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** During 3-D refinement a mask excluding the amphipol ring is applied to improve alignment of the particles during 3-D reconstruction.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a-b) Representative digital micrograph (a) and selected 2-D class averages (b) of the XaxAB toxin complex embedded in vitrified ice. Scale bars, 50 nm (a), and 10 nm (b). (c) Ab initio 3-D reconstruction generated with RVIPER. (d) Angular distribution of the particles. (e) Cryo-EM density map of XaxAB colored according to the local resolution. (f) Fourier Shell Correlation (FSC) curves between maps from two independently refined half data sets (black) and the final map versus the atomic model (grey). The 0.143 criterion shows an average resolution of 4 Å. (g) Representative regions of the density with fitted atomic models of XaxA (green) and XaxB (yellow).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** The amphipol density is shown in transparent grey at a lower threshold to allow better visualization. Protomers of XaxA and XaxB are depicted in green and yellow, respectively.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** (a-c) Top and side views on the surface and the inside of the pore complex, showing the conservation of residues (a), the surface electrostatic Coulomb potential at pH 7.5 (b), and the surface hydrophobicity (c). Conserved residues are shown in magenta, positively and negatively charged surfaces are colored in blue and red, respectively and hydrophobic patches are depicted in orange.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** Yellow boxes highlight the conserved positively charged region in XaxA (a) and the conserved proline (P204) and glycine (G243) residues located at the hinge regions of XaxB (b).
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig3-figsupp9-v2.jpg)
+
+**Figure 3—figure supplement 9.:** (a, b) Top (a) and side (b) views of the XaxAB, ClyA (pdb-ID: 2WCD) and FraC (pdb-ID: 4TSY) pore complexes. (c) Surface electrostatic Coulomb potential at pH 7.5 on the inside of the XaxAB, ClyA and FraC pore complexes. Positively and negatively charged surfaces are shown in blue and red, respectively. The membrane is indicated by a grey band.
+
+**Table 2.**
+ EM data collection and refinement statistics of XaxAB.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td>Titan Krios (Cs corrected, XFEG)</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>Falcon III (counting mode)</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>59 k</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.11</td>
+    </tr>
+    <tr>
+      <td>Number of frames</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <td>Total electron dose (e-/Å2)</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>1.0–2.6</td>
+    </tr>
+    <tr>
+      <td>Number of particles</td>
+      <td>139,286</td>
+    </tr>
+    <tr>
+      <td>Atomic Model Composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-Hydrogen atoms</td>
+      <td>72,436</td>
+    </tr>
+    <tr>
+      <td>Protein Residues</td>
+      <td>9139</td>
+    </tr>
+    <tr>
+      <td>Refinement (Phenix)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMSD bond</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>RMSD angle</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>Model to map fit, CC mask</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>Resolution (FSC@0.143, Å)</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-Factor (Å2)</td>
+      <td>−170</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clashscore, all atoms</td>
+      <td>4.68</td>
+    </tr>
+    <tr>
+      <td>Poor Rotamers (%)</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Favored rotamers (%)</td>
+      <td>94.56</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td>97.42</td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.35</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/38017/elife-38017-video1.mp4.jpg)
+
+**Video 1.:** Molecular model and cryo-EM map of the tridecameric XaxAB pore complex from Xenorhabdus nematophila, showing the overall structure of the pore complex. XaxA and XaxB subunits are colored in green and yellow, respectively.
+
 The pore complexes have a total height of 160 Å and depending on the number of subunits a diameter of 210 to 255 Å. Each subunit consists of a XaxAB heterodimer with XaxA bound to the back of XaxB. This results in a localization of XaxA on the periphery of the pore, whereas XaxB resides more at the center of the complex lining the inner pore lumen (Figure 3, Video 1). Interestingly, the transmembrane helices of XaxA that fortify the inner ring of helices of XaxB, do not completely span the membrane (Figure 3—figure supplement 6). The arrangement of the components clearly shows that XaxAB is not a binary toxin as suggested (Vigneux et al., 2007; Zhang et al., 2014), but rather a bi-component toxin, such as BinAB from Lysinibacillus sphaericus (Colletier et al., 2016) and leukocidin A and B (LukGH and SF) from Staphylococcus aureus (Badarau et al., 2015) where both proteins contribute to building the pore.
 
 Depending on the number of subunits, the inner diameter of the pore narrows down from 140 to 170 Å at the membrane-distal part to 40–55 Å at the transmembrane region. The inner surface of the pore is hydrophilic and mostly negatively charged suggesting a preference for positively charged ions and molecules (Figure 3—figure supplement 7). At the outside, the pore complex has a conserved highly hydrophobic band of 40 Å corresponding to the transmembrane region (Figure 3—figure supplement 7). The hydrophobic band merges into a positively charged stretch that is formed by the conserved arginine and lysine residues of XaxA (R290, K291, K293, K295, K301) (Figure 3—figure supplements 7–8). These residues likely interact with negatively charged lipid head groups of target membranes and thereby stabilize the pore complex in the lipid bilayer.
 
 When comparing the shape of XaxAB with that of the pores of FraC and ClyA, we found that the crown-like structure of XaxA is shared by actinoporin FraC (Tanaka et al., 2015) but not by ClyA (Mueller et al., 2009), where the extramembrane regions form a cylinder (Figure 3—figure supplement 9a). In agreement with the smaller number and size of subunits in FraC and ClyA, these pores have a smaller diameter than the XaxAB pore, and, in addition, FraC contains large β-sheets in the extramembrane region (Figure 3—figure supplement 9b). Interestingly, the lumen of all pores is negatively charged (Figure 3—figure supplement 9c), suggesting the same preference for positively charged molecules.
 
-## Interaction between XaxA and XaxB in the pore complex
+### Interaction between XaxA and XaxB in the pore complex
 
 The tail domains of XaxA and XaxB do almost not differ between the oligomeric pore conformation and soluble monomers. The neck and head domains of XaxA are also arranged similarly to the crystal structure, however, the coiled-coil is twisted by 15 Å and interacts with helices αB and αC of the adjacent XaxB (Figure 4a,c, Figure 5). The neck and head domains of XaxB, however, differ considerably in comparison to the soluble monomer. The amphipathic helix αF and the helix-loop-helix motif fold out, thereby extending helices αD and αG forming the transmembrane region (Figure 4b,d, Figure 5).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig4-v2.jpg)
+
+**Figure 4.:** (a) Ribbon representation of the atomic model of the XaxA monomer (left) and protomer (right). (b) Ribbon representation of the XaxB monomer (left) and protomer (right). (c–d) Topology diagram depicting helices and domain organization of XaxA (c) and XaxB (d). Each helix is shown in a different color and labeled accordingly.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a). Superposition of the XaxA (green) and YaxA (pink) (pdb:6EK7) crystal structures. (b) Superposition of the cryo-EM structures of XaxA (green) and YaxA protomers (pink, pdb: 6EL1). Inset: Close up view on the head domain. (c-d) Superposition of the XaxB (yellow), YaxB (pink, pdb: 6EK8) and PaxB (blue, pdb: 6EK4) crystal structures. (e) Superposition of the cryo-EM structures of the XaxB (green) and YaxB protomers (pink, pdb: 6EL1). Inset: Close up view on the head domain.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig5-v2.jpg)
 
@@ -90,7 +483,7 @@ The heterodimers are linked manifold in the oligomeric pore. One XaxA interacts 
 
 Two major interfaces are mediated by the tail domains of XaxA and XaxB (Figure 6a–c). The residues K45, N50, E398, E402 and D333 that are conserved in XaxA form an extensive putative hydrogen network and salt bridges with helices αB (R48, Y52) and αC (D138, R147) of the adjacent XaxB (Figure 6b). A second putative hydrogen network between helices αC2 and αG in XaxA and helices αD and αG in XaxB likely contributes to the stabilization of the oligomer (Figure 6c). The oligomer is further stabilized by a putative salt bridge between two XaxAs. Glutamate E206 in the loop between αC1 and αC2 of XaxA of one subunit interacts with lysine K405 in the C-terminal helix of neighboring XaxA (Figure 6d). The fourth interface is formed by the head domains of two XaxBs via several putative hydrogen bonds (D197/S241 N192/K245) (Figure 6e). Taken together the heterodimeric subunits of the complex and the heterodimer itself are stabilized by strong interactions that guarantee a stable pore complex inside the membrane.
 
-## XaxAB spontaneously inserts membranes
+### XaxAB spontaneously inserts membranes
 
 There are at least two concerted or consecutive steps during pore formation of PFTs, namely oligomerization and membrane penetration (Cosentino et al., 2016). In bi-component toxins, where both proteins contribute to building the pore, the two components first dimerize into a heterodimer prior to oligomerization (Colletier et al., 2016; Badarau et al., 2015). In several cases, PFTs have been shown to oligomerize and insert spontaneously into membranes in vitro (Iacovache et al., 2008). However, membrane insertion in vivo depends on the specific interaction with lipids or proteins on the membrane surface of the host (Ros and García-Sáez, 2015). To better understand the process of dimerization, membrane insertion and pore formation of XaxA and XaxB, we performed in vitro reconstitution assays with and without liposomes.
 
@@ -102,11 +495,19 @@ XaxA alone has the tendency to form small aggregates by interacting with its hea
 
 When both XaxA and XaxB were added to liposomes, they spontaneously associated with the vesicles and formed the typical crown-shaped structures (Figure 7g–i) as we have observed them in detergents (Figure 3—figure supplement 1c). Notably, this is independent of the sequence of mixing, that is XaxA can be added before XaxB or vice versa, suggesting that dimerization of XaxA and XaxB is necessary for spontaneous association of the proteins with the membrane and subsequent pore formation. Importantly, association with liposomes happens without specific lipids, such as cholesterol, or protein receptors at the membrane surface. At this point, we cannot distinguish between association with and insertion into the membranes. Thus, formation of a pre-pore before membrane insertion cannot be excluded.
 
-## Pore formation – structural comparison between monomers and pores
+### Pore formation – structural comparison between monomers and pores
 
 In general, the transition from the soluble monomer to the protomer does not involve major structural rearrangements of the whole molecule. Only the conformation of the head domains changes considerably. Besides the described twist of XaxA (Figure 4a), the α-helical tongue αF of XaxB folds out forming the transmembrane region. Interestingly, the conformation of the coiled-coil backbone in XaxB remains unaltered (Figure 4b). This is in direct contrast to ClyA (Wallace et al., 2000) but similar to FraC (Tanaka et al., 2015), the only other two α-PFTs, for which a structure of the soluble and pore complex has been determined at high resolution. In ClyA, not only the head domain but also the tail domain undergoes considerable conformational changes (Mueller et al., 2009).
 
 In order to better understand the conformational changes during dimerization, oligomerization and pore formation, we compared the structures of the soluble and pore forms of XaxA and XaxB. When the crystal structures of XaxA and XaxB are overlaid with the respective XaxAB structure, it becomes obvious that the neck and head domains of the proteins would not interact (Video 2). In agreement with our reconstitution assays such a dimer would probably not be able to spontaneously insert into membranes. In the XaxAB pore conformation, however, helices αD and αG of XaxA, forming the coiled-coil backbone twist by 15 Å toward XaxB (Figure 4a, Figure 5, Video 2). As described above, through this conformational change a stronger interaction with XaxB is created. Interestingly, without the conformational change in XaxA, oligomerization of XaxAB would not be possible because of prominent steric hindrances (Video 3). This movement is therefore crucial for complex formation.
+
+![Video 2.](https://cdn.elifesciences.org/articles/38017/elife-38017-video2.mp4.jpg)
+
+**Video 2.:** Starting from the soluble monomers of XaxA and XaxB, the video focuses on the conformational changes during dimerization and membrane insertion.
+
+![Video 3.](https://cdn.elifesciences.org/articles/38017/elife-38017-video3.mp4.jpg)
+
+**Video 3.:** The video highlights possible intermediate interactions and clashes during oligomerization and membrane insertion. It starts with XaxA and XaxB in their monomeric conformation in the position of the respective protomers in the pore. Then shifts to XaxA in its pore conformation, followed by a conformational change in XaxB leading to the final XaxAB in the pore complex. Dimerization of the soluble monomers would introduce a large sterical clash between the head domains. Therefore, the soluble monomer of XaxA must transition to its protomeric form prior to oligomerization. The remaining smaller sterical clash of XaxA with the loop between helices αD, αG in the head domain of XaxB probably destabilizes its conformation and activates XaxB for membrane insertion.
 
 If we assumed that only XaxA and not XaxB changed its conformation during dimerization and oligomerization (Video 2, Video 3), the transmembrane region of XaxA would sterically clash with the loop between αF and αG of XaxB from the adjacent subunit (Videos 2 and 3). This could in principle trigger conformational changes in XaxB that activate its head domain for membrane insertion.
 
@@ -118,7 +519,7 @@ To better analyze these hypothetical conformational changes in detail, we create
 
 A cluster of aromatic residues at the bottom of the head domain of our XaxAprot-XaxBmon heterodimer model suggests that this region could be crucial in triggering the conformational changes in XaxB when exposed to a lipid membrane. In the heterodimer of the XaxAB pore complex, most of these residues build a hydrophobic cluster between the transmembrane domain of XaxA and the reorganized helix αE of XaxB (Figure 8). Aromatic residues have been shown to be important for membrane insertion of many PFTs and responsible for conformational changes induced by their interaction with membranes or detergents (Mueller et al., 2009). Interactions with the membrane likely destabilize this region, inducing stronger conformational changes in the rest of the domain.
 
-## Mechanism of pore formation
+### Mechanism of pore formation
 
 Our atomic model of XaxA and XaxB in solution as well as in the pore conformation provides important insights into the interaction and function of these proteins. Although the structural record is lacking intermediate states, we can use the information provided by our structural data to define critical steps in the action of XaxAB toxins and suggest the following mechanism.
 
@@ -126,11 +527,23 @@ Although XaxA and XaxB are not homologous, their structure is very similar. The 
 
 Our results show that XaxA and XaxB together form higher oligomers in the absence of detergent or membranes. In addition, XaxA likely activates XaxB during oligomerization by inducing conformational changes. We therefore propose that XaxA and XaxB dimerize (Figure 9a–c, Figure 9—figure supplements 1a–c and 2a–c) and oligomerize (Figure 9d, Figure 9—figure supplements 1d and 2d) in solution. Dimerization happens probably spontaneously since the conformation of domains located at the heterodimer interface in the tail domains of XaxA and XaxB is not different compared to the monomers. The conformational change in the neck and head domain of XaxA (Figures 9b and 5d–f) further stabilizes the interaction and is crucial for oligomerization (Figure 9d). During oligomerization XaxA sterically clashes with the loop connecting helices αF and αG in XaxB. We therefore propose that XaxA induces conformational changes in XaxB that do not immediately result in exposing its hydrophobic domain but rather put XaxB in an activated state for membrane insertion (Figure 9b–c). When interacting with a lipid membrane, aromatic residues at the bottom of the head domain of XaxB likely trigger the conformational change resulting in membrane perforation (Figure 9d). Our reconstitution assays in liposomes showed that neither XaxA nor XaxB strongly interact with liposomes. Thus, neither the interaction of the aromatic residues of XaxB nor the hydrophobic domain of XaxA are able to enter membranes on their own and dimerization and induced conformational changes during oligomerization are crucial for membrane insertion. Since XaxB is the component that finally forms the pore, XaxA that only partially enters the membrane, acts like an activator of XaxB and stabilizes it in the pore complex.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig9-v2.jpg)
+
+**Figure 9.:** (a) XaxA and XaxB dimerize in solution. (b–c) The major interaction site in the heterodimer is between the tail domains of XaxA and XaxB (b). This interaction induces neck and head domain (αD, αG) of XaxA to shift towards XaxB (αD, αG) activating XaxB for oligomerization interaction (c) and membrane insertion by clashing with the loop between αE and αF. (d–e) Interactions of aromatic residues at the bottom of the head domain with the membrane trigger the conformational changes that lead to membrane insertion. Membrane insertion happens either directly (d) or after a pre-pore complex is formed (e). The soluble monomer of XaxA and XaxB is shown in teal and orange, respectively. After the conformational change of the soluble monomers, XaxA and XaxB protomers are depicted in green and yellow, respectively.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (a) XaxA and XaxB dimerize in solution. (b–c) The major interaction site in the heterodimer is between the tail domains of XaxA and XaxB (b). This interaction induces neck and head domain (αD, αG) of XaxA to shift toward XaxB (αD, αG) activating XaxB for oligomerization interaction (c) and membrane insertion by clashing with the loop between αE, αF. (d–e) Interactions of aromatic residues at the bottom of the head domain with the membrane trigger the conformational changes that lead to membrane insertion. Membrane insertion happens either directly (d) or after a pre-pore complex is formed (e). For better visualization, the helices of the soluble monomer and protomer of XaxA are depicted in the different colors established in Figure 4. The soluble monomer and protomer after the conformational change of XaxB are shown in orange and yellow, respectively.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/38017/elife-38017-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (a) XaxA and XaxB dimerize in solution. (b–c) The major interaction site in the heterodimer is between the tail domains of XaxA and XaxB (b). This interaction induces neck and head domain (αD, αG) of XaxA to shift toward XaxB (αD, αG) activating XaxB for oligomerization interaction (c) and membrane insertion by clashing with the loop between αE, αF. (d–e) Interactions of aromatic residues at the bottom of the head domain with the membrane trigger the conformational changes that lead to membrane insertion. Membrane insertion happens either directly (d) or after a prepore complex is formed (e). For better visualization, the helices of the soluble monomer and protomer of XaxB are depicted in the different colors established in Figure 4. The soluble monomer and protomer after the conformational change of XaxA are shown in teal and green, respectively.
+
 Recently, a new mechanism for ClyA membrane permeation has been suggested in which a conformational change in a ClyA monomer initiates the assembly of dimers and higher oligomers on the membrane forming a homo-dodecameric pre-pore complex that ultimately enters the membrane after an additional conformational change (Benke et al., 2015). Although, we never observed structures at high resolution that would indicate a pre-pore complex, we cannot exclude that such a complex exists as intermediate state on liposomes before permeation (Figure 9e, Figure 9—figure supplements 1e and 2e). Obviously, more evidence is needed before our proposed mechanism of XaxAB action can be regarded as established. Thus, additional structures of intermediate states are needed to fully understand the process.
 
 In summary, our results provide novel insights into the mechanism of action of xenorhabdolyins and serve as a strong foundation for further biochemical experiments to fully understand the molecular mechanism of xenorhadolysin intoxication.
 
-## Comparison to YaxAB
+### Comparison to YaxAB
 
 During the revision of our work, crystal structures and a low-resolution cryo-EM structure of the human pathogenic homolog YaxAB from Yersinia enterocolitica as well as a crystal structure of PaxB from Photorhabdus luminescens have been published (Bräuning et al., 2018). The crystal structures of YaxA and XaxA, as well as YaxB (PaxB) and XaxB are very similar although their sequences are only 54.5 and 36.0% (56.7%) identical, respectively (Figure 4—figure supplement 1a,c,d). Importantly, YaxA does not contain the hook-shaped loop (lp1), which is a prominent feature of XaxA (Figure 4—figure supplement 1a,b). The neck and head domain of XaxA and YaxA as well as the head of XaxB and PaxB differ in their position indicating that these domains are flexible in solution. This is supported by the fact that the head domain of XaxA and YaxB are not resolved in the structures. Similarly, the tip of the tail domain takes different positions in XaxB and is not resolved in YaxB (Figure 4—figure supplement 1c,d).
 
@@ -140,33 +553,134 @@ Interestingly, YaxA associates directly with erythrocyte membranes. This is in d
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Xenorhabdus nematophila)</td>
+      <td>XaxA</td>
+      <td>N/A</td>
+      <td>NCBI Reference sequence: FN667742.1</td>
+      <td>Genes ordered from GenScript</td>
+    </tr>
+    <tr>
+      <td>Gene (X. nematophila)</td>
+      <td>XaxB</td>
+      <td>N/A</td>
+      <td>NCBI Reference sequence: FN667742.1</td>
+      <td>Genes ordered from GenScript</td>
+    </tr>
+    <tr>
+      <td>Cell line (Escherichia coli)</td>
+      <td>BL21-CodonPlus (DE3)-RIPL</td>
+      <td>Agilent Technologies</td>
+      <td>Agilent: 230280–41</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET19b</td>
+      <td>Novagen</td>
+      <td>Merck: 69677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cymal-6</td>
+      <td>Anatrace</td>
+      <td>Anatrace: 228579-27-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amphipol A8-35</td>
+      <td>Anatrace</td>
+      <td>Anatrace: 1423685-21-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPHIRE software package</td>
+      <td>Moriya et al. (2017) PMID: 28570515</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gautomatch</td>
+      <td>N/A</td>
+      <td></td>
+      <td>http://www.mrc-lmb.cam.ac.uk/kzhang/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Terwilliger et al. (2008) PMID: 18094468</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al. (2004) PMID: 15264254</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>hkl2map</td>
+      <td>Pape and Schneider, 2004 ISSN: 0021–8890</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Crank2</td>
+      <td>Pannu et al. (2011) PMID: 21460451</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 The genes coding for C-terminally His6-tagged XaxA and N-terminally His6-tagged XaxB were introduced into a pET19b vector and expressed in the E. coli BL21 RIPL (DE3) expression strain. Both constructs contained a PreScission cleavage site. For the expression culture, 2 l of LB media containing 125 μg/ml ampicillin were inoculated with the preculture and cells were grown at 37°C until an OD600 of 0.5–0.8 was reached. Selenomethionine-substituted XaxB was expressed in the E. coli BL21 RIPL (DE3) strain in M9 minimal medium with the addition of 100 mg/l L-lysine, 100 mg/l L-phenylalanine, 100 mg/l L-threonin, 50 mg/l L-isoleucine, 50 mg/l L-leucine 50 mg/l L-valine and finally 60 mg/l l-selenomethionine (SeMet). Afterwards, protein production was induced by adding 0.4 mM of isopropyl-β-D-thiogalactopyranoside (IPTG) and incubated for 20 hr at 20°C. The cells were harvested and the bacterial pellet homogenized in a buffer containing 50 mM HEPES, pH 7.5, and 200 mM NaCl. After cell disruption, the lysate was centrifuged at 38,000 rpm, 4°C and XaxA and XaxB was purified using Ni-NTA affinity and size-exclusion chromatography (Superdex 200 26/600, GE Healthcare).
 
-## Crystallization of XaxA and XaxB
+### Crystallization of XaxA and XaxB
 
 Crystallization experiments were performed using the sitting-drop vapor diffusion method at 20°C. XaxA crystals formed by mixing 0.1 µl of 40 mg/ml purified XaxA with 0.1 µl reservoir solution containing 0.2 M sodium chloride, 0.1 M phosphate citrate pH 4.2% and 10% PEG 3000 over a period of 3 weeks. SeMet-labeled XaxB (40 mg/ml) was mixed in a 1:1 ratio with reservoir solution containing 0.2 M NaBr, 0.1 KCl and 20% PEG 3350 with a final drop size of 2 µl. Prior to flash freezing in liquid nitrogen, the crystals were soaked in reservoir solution containing 20% glycerol as cryo-protectant.
 
-## X-ray data collection and processing
+### X-ray data collection and processing
 
 X-ray diffraction data for XaxA was collected at the PXIII-X06DA beamline at the Swiss Light Source (24 datasets) and at the DESY PETRA III beamline P11 (3 datasets) from one crystal. The datasets were merged and used for phase determination.
 
 Data collection for XaxB was performed at the PXII-X10SA beamline. Datasets were indexed, integrated and merged with the XDS package (Kabsch, 2010b, 2010a).
 
-## Structure solution and refinement
+### Structure solution and refinement
 
 XaxA crystallized in orthorhombic space group P212121 with a unit cell dimension of 67 × 90 × 153 Å and two molecules per asymmetric unit (AU). Phases were determined using the anomalous sulfur signal of the merged datasets and HKL2MAP (Pape and Schneider, 2004), the graphical interface for SHELX C/D/E (Sheldrick, 2010). The obtained phases combined with the given sequence and a few placed α-helices in the density with COOT (Emsley et al., 2010) were sufficient enough for phenix autobuild (Terwilliger et al., 2008) to almost completely build the structure of XaxA. The structure was refined with the datasets collected at the DESY PETRA III beamline P11. XaxB also crystallized in orthorhombic space group P212121 with a unit cell dimension of 89 × 99 × 194 Å and four molecules per AU. The diffraction data of XaxB was processed with the XDS package and SeMet atoms were determined using the CRANK2 pipeline (Ness et al., 2004; Pannu et al., 2011) in the CCP4 software package. SHELX C/D (Winn et al., 2011) was used in the substructure detection process, while REFMAC (Skubák et al., 2004), SOLOMON and PARROT (Abrahams and Leslie, 1996) were used for phasing and substructure refinement and density modification for hand determination, respectively. BUCANEER (Cowtan, 2012) gave the best results for the initial model-building step. This model was first optimized with phenix autobuild (Terwilliger et al., 2008). The rest of the model was built in COOT (Emsley et al., 2010) using the anomalous peaks of the SeMet residues to determine the amino acid sequence due to the limited resolution. The structures were optimized by iteration of manual and automatic refinement using COOT (Emsley et al., 2010) and phenix refine implemented in the PHENIX package (Adams et al., 2010) to a final Rfree of 28 and 30% for XaxA and XaxB, respectively (Table 1).
 
-## Reconstitution into liposomes
+### Reconstitution into liposomes
 
 Stock solutions of 10 mg/ml 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) and brain extract polar lipids (BPL) (Avanti Polar Lipids) were prepared in buffer containing 20 mM Tris-HCl pH 8, 250 mM NaCl and 5% w/v n-octyl-β-D-glucopyranoside (Antrace). 10 µM XaxA and XaxB were mixed with a final lipid concentration of 2 mg/ml and incubated for 30 min at room temperature. For reconstitution, the mixture was dialyzed against a buffer containing 20 mM HEPES pH 7.5 and 200 mM NaCl. The sample was then analyzed by size exclusion chromatography with a Superose 6 10/300 GL column (GE Healthcare Life Sciences) and by negative stain electron microscopy.
 
-## Preparation of XaxAB pore complexes
+### Preparation of XaxAB pore complexes
 
 XaxAB pore complexes were prepared by incubating equimolar concentrations of XaxA and XaxB with 0.1% cymal-6 (Antrace) at room temperature overnight. For a more homogenous and stable distribution of XaxAB pore complexes, the detergent was exchanged to amphipols A8-35 (Antrace). Amphipols were added in fivefold molar excess and the solution was incubated at room temperature for 20 min. For detergent removal, the mixture was dialyzed against a buffer containing 20 mM HEPES pH 7.5, 200 mM NaCl overnight at room temperature. Subsequently, aggregates and XaxAB pore complexes with higher molecular weight were separated by size exclusion chromatography on a Superose 6 10/300 GL column (GE Healthcare Life Sciences).
 
-## EM data acquisition
+### EM data acquisition
 
 The quality of the XaxAB pore complexes was evaluated by negative stain electron microscopy before proceeding to cryo-EM grid preparation. 4 µl of a 0.01 mg/ml XaxAB solution in amphipols were applied to a freshly glow-discharged copper grid (Agar Scientific; G400C) coated with a thin carbon layer and incubated for 45 s. After sample incubation, the solution was blotted with Whatman no. four filter paper and stained with 0.75% uranyl formate. The digital micrographs were acquired with a JEOL JEM-1400 TEM equipped with an acceleration voltage of 120 kV, and a 4000 × 4000 CMOS detector F416 (TVIPS) with a pixel size of 1.33 Å/pixel.
 
@@ -174,12 +688,12 @@ For sample vitrification, XaxAB pore complexes were concentrated to a final conc
 
 A cryo-EM dataset of XaxAB in amphipols was collected with a Cs-corrected TITAN KRIOS electron microscope (FEI), with a XFEG and operated at an acceleration voltage of 300 kV. Images were acquired automatically using EPU (FEI) and a Falcon III (FEI) direct detector operated in counting mode at a nominal magnification of 59,000 x corresponding to a pixel size of 1.11 Å/pixel on the specimen level. In total 4746 images were collected with 180 frames, an exposure time of 60 s resulting in a total dose of ~44 e- Å−2 and a defocus range of 1.0–2.6 µm. Motion correction was performed using the MotionCor2 program (Zheng et al., 2017).
 
-## Single particle cryo-EM data processing
+### Single particle cryo-EM data processing
 
 All image-processing steps were carried out with the SPHIRE software package (Moriya et al., 2017) (Figure 3—figure supplement 4). Initially, micrographs were manually screened for bad ice or high drift and discarded accordingly. The remaining 3617 motion-corrected sums without dose weighting were evaluated in aspect of defocus and astigmatism in CTER (Moriya et al., 2017) and low-quality images were discarded using the graphical CTF assessment tool in SPHIRE (Moriya et al., 2017). 186,700 single particles were automatically picked from motion-corrected sums with dose weighting using gautomatch (http://www.mrc-lmb.cam.ac.uk/kzhang/). 2-D class averages were generated as a template for gautomatch by manually picking 200 micrographs with EMAN2 boxer (Tang et al., 2007). Pre-cleaning of the dataset and reference-free 2-D classification were performed with the iterative stable alignment and clustering approach ISAC2 (Yang et al., 2012) in SPHIRE with a pixel size of 4.97 Å/pixel on the particle level. Refined and sharpened 2-D class averages with the original pixel size and exhibiting high-resolution features were generated with the Beautifier tool implemented in SPHIRE (Figure 3—figure supplements 3 and 5b). The quality of the 2-D class averages were examined in regard of high-resolution features and completeness of the XaxAB pore complexes. According to observed oligomerization states of XaxAB pore complexes in the class averages, five initial 3-D models with c12, c13, c14, c15 and c16 symmetry were generated with RVIPER. Particles were then sorted against the five RVIPER models using the 3-D-mulrireference projection matching approach (sxmref_ali3d). The clean dataset was split into four datasets according to the number of XaxAB subunits in the complex: c12: 4409 particles, c13: 53,546 particles, c14: 46,596 particles and c15 34,542 particles. The sixteen-fold symmetry was discarded due to low number of particles (193). The subsets containing particles with 13-, 14- and 15-fold symmetry were further cleaned with ISAC and subsequently subjected to 3-D refinements in MERIDIEN with a mask excluding amphipols and applying c12, c13-, c14-, and c15-symmetry, respectively (Moriya et al., 2017). In the following only the results of the map with the highest resolution will be described in detail.
 
 SPHIRE’s PostRefiner tool was used to combine the half-maps, to apply a tight adaptive mask and a B factor of −170 Å2. The estimated average resolution according to the gold standard FSC@0.5/0.143 criterion between the two masked half-maps was 4.5/4 Å for the c13-symmetry (Figure 3—figure supplement 5f). The estimated accuracy of angles and shifts at the final iteration of the 3-D refinement was 0.55 degrees and 0.6 pixels, respectively. The ‘Local Resolution’ tool in SPHIRE (Figure 3—figure supplement 5e) was used to calculate and analyze the local resolution of the c13 density map. The resulting colored density map showed a local resolution of up to 3.4 Å at the lower tail domain region, whereas the tip of the spikes at the top of the XaxAB pore and at the end of the transmembrane region showed the lowest resolution (5–6.7 Å) (Figure 3—figure supplement 5e). The final density was locally filtered according to the estimated local resolution using the ‘LocalFilter’ tool in SPHIRE. Details related to data processing are summarized in Table 2.
 
-## Model building, refinement and validation
+### Model building, refinement and validation
 
 The atomic model of the XaxAB pore complex was built by isolating the EM density of a XaxAB dimer and rigid body fitting the crystal structure of XaxA into the EM density map using UCSF Chimera (Pettersen et al., 2004). XaxA was further fitted into the dimer density using IMODFIT (Lopéz-Blanco and Chacón, 2013). For XaxA only the transmembrane region (aa 254–283) had to be manually built, which was missing in the crystal structure. The final model of the XaxA protomer covers residues 41–405 of the full-length sequence with residues 1–40 missing at the N-terminal helix αA. XaxB was built by placing helix fragments into the remaining density with COOT (Emsley et al., 2010), generating first a polyalanine model and subsequently determining the correct sequence by the identification of bulky side chains. The full sequence of the XaxB protomer is also almost covered in the final model (aa 13–350) with the first 12 residues missing at the N-terminal helix αA. The XaxAB dimer was then rigid-body fitted into the XaxAB pore complex using UCSF Chimera (Pettersen et al., 2004) and the full model refined using PHENIX real-space refinement (Adams et al., 2010). Finally, the overall geometry of the refined model was evaluated with MOLPROBITY (Williams et al., 2018). The data statistics are summarized in Table 2.

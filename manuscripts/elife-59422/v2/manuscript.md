@@ -31,9 +31,17 @@ Whether homeostatic plasticity is present during a progressive retinal degenerat
 
 ## Results
 
-## Progression of retinal degeneration and functional decline in heterozygous P23H mice
+### Progression of retinal degeneration and functional decline in heterozygous P23H mice
 
 Retinal remodeling following photoreceptor cell death has been observed in a number of genetic and induced animal models of retinal degeneration (Beltran, 2009; Chang et al., 2007a; LaVail et al., 2018; Petersen-Jones, 1998; Ross et al., 2012), as well as in postmortem human eye specimens from patients with retinitis pigmentosa (RP) or age-related macular degeneration (AMD) (Fariss et al., 2000; Jones et al., 2016a; Jones et al., 2016b; Li et al., 1995). In the current study, we utilized a well-established mouse model of autosomal dominant RP (Sakami et al., 2014; Sakami et al., 2011), caused by a heterozygous P23H mutation in the rhodopsin gene (RhoP23H/WT). These mice will be referred to in this report as P23H mice. We started by confirming the suitability of this model for our study, focusing on rod-mediated retinal signaling and night vision. We followed structural changes of the retina by standard histology and optical coherence tomography (OCT) imaging, and confirmed that the outer nuclear layer (ONL) where the photoreceptor nuclei reside, and the inner and outer segments (IS and OS, respectively) of rod and cone photoreceptors progressively degenerated, while inner retinal layers appeared to remain anatomically intact (Figure 1A–G). In mice, the thickness of the ONL correlates with the number of surviving rod photoreceptors. We found 20%, 60% and 73% decreases in central retinal ONL thickness at 1-, 3- and 5 months of age, respectively, in P23H mice compared to WT littermates (Figure 1H). Next, using in vivo electroretinography (ERG) we tested the light-activated mass electrical response arising from the retina. We analyzed the a-wave of the fully dark-adapted retina, which is primarily a rod-dominant response with a minute contribution from cones. The dark-adapted a-wave showed an almost 50% suppression in P23H mice by 1 month of age (Figure 1I,J) consistent with an earlier study by Sakami et al., 2011.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative histology image of a wild-type (WT) mouse eye. (B–C) Representative magnified histology images of 1-month-old WT (B) and P23H (C) dorsal retinas. Asterisks mark the ONL, i.e. photoreceptor nuclei layer. RGCL, retinal ganglion cell layer; IPL, inner plexiform layer; INL, inner nuclear layer; OPL, outer plexiform layer (the site of photoreceptor-bipolar cell synapse); IS/OS, photoreceptor inner and outer segments. (D–G) Representative optical coherence tomography images. (H) ONL thickness analysis from central retina (WT, black, n = 4; P23H one mo, red, n = 4; P23H three mo, n = 5; P23H five mo, green, n = 4 mice). (I) Scotopic ERG waveforms in response to 100 cd•s/m2 flash in 1-month-old WT (black) and P23H (red) mice (WT, black, n = 4 (8); P23H, red, n = 4 (8) mice(eyes)). (J) ERG a-wave amplitude analysis at 1 month of age. (K) Total M- and S-opsin counts in whole mount retinas (WT, black, n = 6; P23H one mo, red, n = 5; three mo, blue, n = 6; five mo, green, n = 7 mice) (L) Photopic ERG b-wave amplitude analysis (WT, black, n = 6 (12); P23H one mo, red, n = 8 (16); three mo, blue, n = 7 (14); five mo, green, n = 5 (10) mice(eyes)). Bonferroni post hoc tests: *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Vesicular glutamate transporter 1 (VGLUT1) staining appears normal at 1-month-old P23H retinas. Instead, VGLUT1 puncta at outer plexiform layer (OPL, the site of photoreceptor-interneuron synapses) is somewhat decreased at 3 months and prominently at 5 months of age. (E–H). Horizontal cell marker calbindin shows similar decreasing immunoreactivity pattern as VGLUT1. (I–L) Rod bipolar cell (RBC) marker protein kinase C alpha (PKCα) shows normal macrostructure up to 3 months of age; however, immunoreactivity is clearly decreased (note, images K-L were obtained with three times higher exposure time compared to I-J). At 5 months of age, the RBC somata appear less in density. Three biological replicates per group were inspected. All images have the same size and aspect ratio.
 
 Cone cells comprise only 3% of the photoreceptor population in pigmented mice. Therefore, the experiments just described lacked the necessary sensitivity to evaluate cone cell survival. To investigate the fate of cone cells in P23H mice, we used an immunohistochemical approach to determine the number of cone cells and light-adapted, cone-dominant ERG recordings to assess their functional status. The total count of short- and medium-wavelength sensitive S- and M-cones, respectively, remained constant even at 5 months of age, the oldest time point tested (Figure 1K). ANOVA analysis revealed a modest but statistically significant (F1,12=5.25, p=0.04) increase in the photopic ERG amplitude in P23H mice compared to WT littermates at 1 month of age, which continued at 3 months of age (Figure 1L). However, cone function started to decline thereafter, and at 5 months of age the photopic ERG amplitudes significantly decreased in P23H mice.
 
@@ -43,13 +51,37 @@ Finally, we performed anti-C-terminal-binding protein 2 (CtBP2) and anti-metabot
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig2-v2.jpg)
 
-**Figure 2.:** (A) Representative sections of wild-type and (B) P23H mouse retinas stained with mGluR6 (green) and CtBP2 (magenta) antibodies that stain the postsynaptic and presynaptic compartments at the photoreceptor-bipolar cell synapse, respectively. Images A and B were acquired with 40x objective. Dashed line boxes show where images C-D acquired with 100x objective were taken. E and F are 3x digital zoom images from C-D (dashed line boxes show zoomed location). The photoreceptor-to-bipolar cell synapses show normal appearance in P23H retinas; however, the count is moderately decreased as shown in graph G. (H) Average mGluR6 puncta size is comparable in WT and P23H retinas. Four biological replicates and five technical replicates in each were inspected per group. mGluR6 puncta parameters were averaged of five technical replicates per sample. T-test: **p<0.01.Figure 2—source data 1.2 counting window (G) and average mGluR6 puncta size (H) for individual mice.
+**Figure 2.:** (A) Representative sections of wild-type and (B) P23H mouse retinas stained with mGluR6 (green) and CtBP2 (magenta) antibodies that stain the postsynaptic and presynaptic compartments at the photoreceptor-bipolar cell synapse, respectively. Images A and B were acquired with 40x objective. Dashed line boxes show where images C-D acquired with 100x objective were taken. E and F are 3x digital zoom images from C-D (dashed line boxes show zoomed location). The photoreceptor-to-bipolar cell synapses show normal appearance in P23H retinas; however, the count is moderately decreased as shown in graph G. (H) Average mGluR6 puncta size is comparable in WT and P23H retinas. Four biological replicates and five technical replicates in each were inspected per group. mGluR6 puncta parameters were averaged of five technical replicates per sample. T-test: **p<0.01.
 
 These data demonstrate that rod photoreceptors in the P23H mouse model of RP are preferentially targeted in the early stage of disease and that the loss of these rod photoreceptors occurs at a moderate rate (Figure 1). The loss of rods is accompanied with a modest decrease of photoreceptor-to-bipolar cell synapse count but with no change in synaptic morphology at the light microscopy level (Figure 2). Therefore, the model is suitable for investigating the compensatory network changes that arise during progressive rod cell degeneration.
 
-## RNA-sequencing from retinas reveals a robust neural network adaptation in early RP
+### RNA-sequencing from retinas reveals a robust neural network adaptation in early RP
 
 We initially used RNA-sequencing (RNA-seq) to determine whether the transcriptomic profile of the retina changed in a manner that might provide functional adaptation in response to rod photoreceptor degeneration. Because at 1 month the P23H mouse retina has matured but has not yet degenerated severely, we believed this period would be optimum for RNA-seq analysis (Figure 1H). We found 2721 downregulated and 2683 upregulated genes in P23H mice compared to WT littermates (Figure 3A). There were few differentially expressed genes between sexes, unrelated to disease (Supplementary files 1 and 2), and therefore we pooled samples from both genders in the remainder of the analyses.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig3-v2.jpg)
+
+**Figure 3.:** RNA-sequencing was performed from whole retinal extracts at 1 month of age in P23H mice (n = 7) and WT (n = 7) littermates. (A) A total of 5404 transcripts showed differential expression (downregulation, green; upregulation, red) between P23H and WT retinas. (B) Gene ontology (GO) term analysis shows expected downregulation in photoreceptor-dominant gene clusters. (C) KEGG analysis shows significant enrichments in cell/neuron adhesion and growth pathways, glutamatergic synapse formation and several pathways associated with both cell stress and synaptic plasticity. (D) GO term analysis illustrates the most significant upregulation in synaptic and neural development and growth pathways in P23H retinas.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Samples were collected at 1 month of age. Phospho-ERK was first detected using 680 nm fluorescence acquisition. The same membrane was incubated a second time using anti-ERK and anti α-tubulin (loading control) antibodies and detected using 800 nm fluorescence acquisition. MAPK activation is indicated by the increased ERK phosphorylation level. T-test: **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Whole retinal extracts from 3-month-old P23H (n = 4) and WT (n = 3) littermate mice were used. (A) Number of differentially expressed genes with an adjusted p<0.05 as a threshold criterion. (B) GO pathway analysis shows progressed downregulation in photoreceptor function-dominant gene clusters. (C) KEGG analysis shows most significant enrichments in extracellular matrix receptor interactions and cell adhesion pathways, and glutamatergic synapse- and axon guidance-associated pathways continue to be significantly upregulated. (D) GO pathway analysis reveals strongest pathway regulation associated with cell stress and growth. Note that this is notably different compared to results obtained at early disease state (refer to main Figure 1D).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Cell growth-related pathways show the strongest upregulation followed by ion channel activity-associated pathways both at 1-month (A) and 3-month-old (B) retinas.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** EData was obtained from 1-month-old (A) and 3-month-old (B) mice. Expression levels were obtained from FPKM reads. Data are normalized to WT values at 1.0. Note that the decreased mRNA expression of presynaptic genes is likely a consequence of photoreceptor loss in whole retina extracts. Cacna1F encodes Cav1.4 calcium channel, Cabp4 encodes calcium-binding protein that interacts with Cav1.4, and Slc17a7 encodes vesicular glutamate transporter vGlut1. Grm6 encodes metabotropic glutamate receptor 6 (mGluR6), Trpm1 encodes transient receptor potential cation channel subfamily M member 1, and Gpr179 encodes an orphan G protein-coupled receptor GPR179. mGluR6, TRPM1 and GPR179 are required for normal depolarization at ON bipolar cells. Multiple comparisons corrected t-tests: *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Expression levels were obtained using the ΔΔCt method. Data is normalized to WT values at 1.0. Multiple comparisons corrected t-tests: *p<0.05, ***p<0.001.
 
 We used gene ontology analysis (GO) to objectively identify the 20 most downregulated and 20 most upregulated gene classes in P23H mouse retinas based on the p-values. As expected, numerous photoreceptor-specific gene classes were significantly downregulated in P23H mice, such as those related to ciliary structure, phototransduction, and photoreceptor cell differentiation (Figure 3B). In contrast, GO analysis revealed robust increases in gene clusters associated with neural growth and development, encompassing such cellular processes as synapse organization, postsynaptic specialization, glutamatergic synapse formation, axonogenesis, and cell-cell adhesion (Figure 3D). Furthermore, KEGG pathway analysis showed a total of 74 statistically upregulated pathways including those involved in cell adhesion, axon guidance, and glutamatergic synapse processing (Figure 3C). As expected, several pathways associated with cell stress were also upregulated, including the MAPK, NF-kappa B, and TNF signaling pathways. To verify the activation of at least one of these key pathways, the MAPK signaling pathway, ERK phosphorylation was analyzed in whole retina extracts and found to be enhanced in P23H mice (Figure 3—figure supplement 1).
 
@@ -57,15 +89,114 @@ We performed another RNA-seq analysis at a more advanced disease state, at 3 mon
 
 All filtered RNA-seq analysis results, including all differentially expressed genes between genotypes, as well as GO, KEGG and predicted reactome pathways that reached the statistical cut-off criterion are presented in Supplementary files 3–18. Raw data is freely available in the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/) with accession numbers GSE152474 (1-month-old samples) and GSE156533 (3-month-old samples).
 
-## Increased sensitivity of rod bipolar cells to their rod input in P23H mice
+### Increased sensitivity of rod bipolar cells to their rod input in P23H mice
 
 To evaluate if transcriptomic network adaptation in P23H mice in response to rod degeneration is associated with changes in retinal light signaling, we first recorded light-evoked responses from isolated mouse retinas using ex vivo ERG (Figure 4A). Ex vivo ERG allows quantitative dissection of photoreceptor (RPR) and ON bipolar cell (RBC) responses by using blockers for the metabotropic glutamate receptor (mGluR) and potassium channels in Müller glia (Bolnick et al., 1979; Vinberg et al., 2014), see Materials and methods (Figure 4B–D). As expected, we found that the maximal photoreceptor response decreased by ~40% at 1 month of age in P23H mice as compared to control mice, and responses continued to decrease thereafter (Figure 4E, Table 1). These changes, initially at 1 month of age, were larger than expected when compared to the total loss of rod photoreceptors (Figure 1H), suggesting that the decrease in the light-sensitive current of the rods precedes rod degeneration in this model. Interestingly, however, light sensitivity measured as the light intensity to generate a half-maximal response (I1/2) was not reduced in 1- to 3-month-old P23H mice (Figure 4E, Table 1). At 5 months of age, I1/2 of P23H mice significantly increased (Figure 4E, Table 1). This may be due to the contribution from cone cells at this age (Figure 1I and K). Progressive reduction of rod photoreceptor light responses was expected and has been reported previously (Sakami et al., 2011).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig4-v2.jpg)
 
-**Figure 4.:** (A) Custom ex vivo ERG specimen holder used to record transretinal voltage with two Ag/AgCl macro electrodes. Isolated retina without retinal pigment epithelium is mounted photoreceptor side up and perfused with Ames’ medium. (B) Representative light flash responses from a dark-adapted WT control mouse retina perfused with Ames' containing 100 µM BaCl2 to remove signal component arising from Müller cells. (C) Light responses from the same retina after addition of DL-AP4 eliminating metabotropic glutamatergic transmission to reveal the photoreceptor-specific responses. (D) Bipolar cell responses obtained by subtracting the traces shown in (C) from those in (B). Amplitude data for photoreceptor (RPR, E) and bipolar (RBC, F) responses, and RBC/RPR ratio (G) as a function of light flash intensity in photons μm−2 (505 nm). Mean ± SEM. In panel G, *p<0.05 (two-way ANOVA between-subjects effect). Smooth traces in E and F plot Equation 1 fitted to the mean amplitude data. Statistics for R and intensity required to generate half-maximal photoreceptor or ON bipolar cell response (maxI) are in 1/2Table 1. (Control, one mo, n = 4; P23H, one mo, n = 4; three mo, n = 3; five mo, n = 4 mice/retinas).Figure 4—source data 1.PR, E) and bipolar cell (RBC, F) amplitude, and RBC/RPR ratio (G) data for individual mice.
+**Figure 4.:** (A) Custom ex vivo ERG specimen holder used to record transretinal voltage with two Ag/AgCl macro electrodes. Isolated retina without retinal pigment epithelium is mounted photoreceptor side up and perfused with Ames’ medium. (B) Representative light flash responses from a dark-adapted WT control mouse retina perfused with Ames' containing 100 µM BaCl2 to remove signal component arising from Müller cells. (C) Light responses from the same retina after addition of DL-AP4 eliminating metabotropic glutamatergic transmission to reveal the photoreceptor-specific responses. (D) Bipolar cell responses obtained by subtracting the traces shown in (C) from those in (B). Amplitude data for photoreceptor (RPR, E) and bipolar (RBC, F) responses, and RBC/RPR ratio (G) as a function of light flash intensity in photons μm−2 (505 nm). Mean ± SEM. In panel G, *p<0.05 (two-way ANOVA between-subjects effect). Smooth traces in E and F plot Equation 1 fitted to the mean amplitude data. Statistics for Rmax and intensity required to generate half-maximal photoreceptor or ON bipolar cell response (I1/2) are in Table 1. (Control, one mo, n = 4; P23H, one mo, n = 4; three mo, n = 3; five mo, n = 4 mice/retinas).
+
+**Table 1.**
+ Ex vivo ERG parameters.I1/2, photons (505 nm) per flash/µm2 from fitting Equation 1 to photoreceptor (pharmacologically isolated) and bipolar cell (subtracted) amplitude data; Rmax, maximum amplitude measured at plateau of the photoreceptor response and at the peak of the bipolar cell component in response to bright flash (~15,000 photons µm−2); RPR,1/2, photoreceptor response amplitude required for half-maximal bipolar cell response as determined by fitting Equation 2 to RPR – RBC amplitude data. C57 background: Control, one mo, n = 4; P23H, one mo, n = 4; three mo, n = 3; five mo, n = 4 mice/retinas; Gnat2-/- background: Pooled control, 1–6 mo, n = 7 (11); P23H, one mo, n = 4 (6); five mo, n = 11(18); six mo, n = 2 (4) mice(retinas). *p<0.05, **p<0.005, ***p<0.001 in comparison to control data, two-tailed t-test. All data mean ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Photoreceptors</th>
+      <th></th>
+      <th></th>
+      <th>Bipolar cells</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Genotype/age</th>
+      <th>I1/2 (hn/µm2)</th>
+      <th>Rmax (µV)</th>
+      <th>I1/2 (hn/µm2)</th>
+      <th>Rmax (µV)</th>
+      <th>RPR,1/2 (µV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 month Control P23H/C57</td>
+      <td>74 ± 18</td>
+      <td>410 ± 20</td>
+      <td>24 ± 8</td>
+      <td>1,120 ± 203</td>
+      <td>76 ± 9</td>
+    </tr>
+    <tr>
+      <td>1 month P23H/C57</td>
+      <td>78 ± 10</td>
+      <td>242 ± 29**</td>
+      <td>15 ± 2</td>
+      <td>1,152 ± 40</td>
+      <td>29 ± 6**</td>
+    </tr>
+    <tr>
+      <td>3 month P23H/C57</td>
+      <td>98 ± 13</td>
+      <td>138 ± 24***</td>
+      <td>71 ± 30</td>
+      <td>547 ± 74*</td>
+      <td>39 ± 1*</td>
+    </tr>
+    <tr>
+      <td>5 month P23H/C57</td>
+      <td>285 ± 83*</td>
+      <td>81 ± 7***</td>
+      <td>72 ± 7*</td>
+      <td>388 ± 14*</td>
+      <td>24 ± 1**</td>
+    </tr>
+    <tr>
+      <td>Pooled Control P23H/Gnat2</td>
+      <td>104 ± 17</td>
+      <td>545 ± 76</td>
+      <td>33 ± 12</td>
+      <td>830 ± 160</td>
+      <td>68 ± 9</td>
+    </tr>
+    <tr>
+      <td>1 month P23H/Gnat2</td>
+      <td>230 ± 40**</td>
+      <td>238 ± 37**</td>
+      <td>48 ± 6</td>
+      <td>670 ± 80</td>
+      <td>38 ± 6*</td>
+    </tr>
+    <tr>
+      <td>5 month P23H/Gnat2</td>
+      <td>214 ± 32*</td>
+      <td>176 ± 21***</td>
+      <td>42 ± 5</td>
+      <td>540 ± 50</td>
+      <td>28 ± 4***</td>
+    </tr>
+    <tr>
+      <td>6 month P23H/Gnat2</td>
+      <td>339 ± 47***</td>
+      <td>54 ± 8***</td>
+      <td>88 ± 9**</td>
+      <td>220 ± 20**</td>
+      <td>13 ± 2***</td>
+    </tr>
+  </tbody>
+</table>
 
 However, in this study, the main issue was to determine whether the observed transcriptomic changes correlate with changes in how bipolar cells respond to their photoreceptor input in P23H mice. Strikingly, despite the ~40% decrease of photoreceptor input in 1-month-old P23H mice, their bipolar cell responses did not diminish at any of the light flash intensities utilized (Figure 4F). Since rod bipolar cells derive their responses by pooling input from several rod photoreceptors, we quantified the sensitivity of rod bipolar cells to their intrinsic input in two ways. First, we compared the ratio of bipolar cell and photoreceptor cell responses (RBC/RPR) between control and P23H mice at each light flash intensity (Figure 4G). This ratio increased in 1-month-old P23H mice compared to control mice, indicating a significant increase in the sensitivity of the bipolar cells. We also found less pronounced but statistically significant increases of RBC/RPR in 5-month-old P23H mice (Figure 4G). These results are consistent with two prior studies showing less severe reduction of the in vivo ERG b-waves as compared to a-waves in a P23H transgenic rat model (Aleman et al., 2001; Machida et al., 2000). However, one caveat in analyzing RBC/RPR is that the photoreceptor response amplitudes are not linear functions of light intensity. Thus, a second, more quantitative way to determine the sensitivity of bipolar cells to their photoreceptor input is to plot RBC as a function of RPR and determine the RPR required to generate a half-maximal RBC (=RPP,1/2, see Figure 5D–F below and Materials and methods). This analysis revealed a significant decrease of RP,1/2, i.e. sensitization of bipolar cells in P23H mice at all ages tested (1, 3 and 5 months) as compared to WT control mice (Table 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig5-v2.jpg)
+
+**Figure 5.:** Ex vivo ERG rod (A) and RBC (B) response amplitudes, and their ratio (C) derived as in Figure 4. (D–F) RBC plotted as a function of RPR in individual retinas from Gnat2-/- control (D), and one month (E) and five month (F) P23H/Gnat2-/- mice. Smooth lines in A and B plot Equation 1 fitted to mean data. Smooth lines in D-F plot Equation 2 fitted to data from individual retinas. *p<0.05, **p<0.005, ***p<0.001, ****p<0.0001. Statistics for Rmax and intensity required to generate half-maximal rod or RBC response (I1/2) as well as RPR,1/2 are in Table 1. In C, two-way ANOVA followed by Bonferroni’s post hoc test was used to compare between-subjects main effect and the intensity where a significant effect was found, respectively. (Pooled control, 1–6 mo, n = 7 (11); P23H, one mo, n = 4 (6); five mo, n = 11(18); six mo, n = 2 (4) mice(retinas)).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Light responses to identical flash of light in the absence of BaCl2 (A), in the presence of 100 μM BaCl2 (B) and Müller cell response (slow PIII) derived by subtracting the response in B from that shown in A (C). Mean (± SEM) b-wave amplitudes as a function of light flash intensity in the absence (D) and presence (E) of BaCl2 in 1-month-old control Gnat2-/- (black) and P23H/Gnat2-/- (red) mice. (F) Slow P-III amplitudes plotted as a function of light flash intensity in control and P23H mice. (Control, n = 5 (8); P23H, n = 8 (12) mice(retinas)). No differences between control and P23H mouse means in D and E. A statistically significant group-stimulus intensity interaction was found in F (p<0.01); however, post-hoc test did not reach statistical criterion at any light intensity. Statistical analysis was performed by repeated measures two-way ANOVA followed by Bonferroni’s post hoc test.
 
 Since the mouse retina is rod-dominant, our results strongly suggest that rod bipolar cells become more sensitive to their rod input in P23H mice. However, at an older age, it is possible that the cone-mediated responses, which we found to be preserved longer compared to rods (Figure 1J–L), and even hyper-sensitized in the early disease state (Figure 1L), could dominate and explain the compensation of bipolar cell responses in P23H mice. To exclude this possibility and to study more quantitatively the implications of the P23H rhodopsin mutation in the rod signaling pathway, we crossed P23H mice with a cone transducin-α (Gnat2) knock-out (P23H/Gnat2-/-) mouse line. The cones in these mice do not generate light responses but have no structural abnormalities (Ronning et al., 2018). We observed a qualitatively similar phenomenon in P23H/Gnat2-/- mice as in P23H knock-in mice (Figures 4 and 5). The maximal rod response amplitude was suppressed by more than half in 1-month-old P23H/Gnat2-/- mice compared to their littermate control mice (Figure 5A). A further decrease of the maximal rod response amplitudes in aging P23H/Gnat2-/- mice was accompanied by the desensitization of their rods as indicated by larger values of I1/2 in 1–6 month-old P23H/Gnat2-/- mice compared to their littermate controls (Figure 5A, Table 1). The rod bipolar cell responses decreased less than the rod responses in 1- and 5-month-old P23H/Gnat2-/- mice before a relatively steep decrease from 5 to 6 months of age (Figure 5B). Since the decrease of RBC was slower compared to the decline in RPR with age, the RBC/RPR ratios remained significantly higher up to 6 months of age in P23H/Gnat2-/- mice (the oldest age tested, Figure 5C). Moreover, we found an almost twofold decrease in photoreceptor input required to generate a half-maximal RBC response in 1-month-old P23H/Gnat2-/- mice as compared to that in control mice, and RPR,1/2 continued to decrease down to ~20% of that in control retinas in 6-month-old P23H mice (Figure 5D–F, Table 1). Although Barium Chloride (BaCl2) has been shown to be effective in blocking the ex vivo ERG component arising from Müller cells (Bolnick et al., 1979; Nymark et al., 2005; Vinberg and Kefalov, 2015b), the experiments above did not specifically assess the potential contribution of Müller cells to the b-wave amplitudes. To test that, we recorded ex vivo ERG responses from 1-month-old Gnat2-/- and their littermate P23H/Gnat2-/- mouse retinas perfused with Ames’ medium without and with 100 μM BaCl2 (Figure 5—figure supplement 1A and B). We found that b-wave amplitudes in the absence of BaCl2 were smaller than those in the presence of barium (Figure 5—figure supplement 1D,E). This is probably because barium removes the negative slow PIII component that temporally overlaps with the positive b-wave. Comparison between 1-month-old control and P23H mice revealed that b-wave amplitudes were not affected by the P23H rhodopsin mutation in the absence or presence of barium (Figure 5—figure supplement 1D,E). Finally, we derived Müller cell responses by subtracting the responses recorded in the presence of barium from those recorded in the absence of barium from individual retinas across different light intensities (Figure 5—figure supplement 1C,F). Müller cell responses were not affected at dim light but tended to be somewhat smaller with the two brightest light intensities used in these experiments in the 1-month-old P23H mice as compared to those in control mice. These results do not support a role for increased Müller cell activity in explaining the observed potentiation of the b-wave responses in P23H mice.
 
@@ -73,15 +204,23 @@ Although the cones lacking GNAT2 do not generate light responses, light signal t
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig6-v2.jpg)
 
-**Figure 6.:** (A) Example traces to dim and bright flashes recorded from a dark-adapted wild-type mouse retina perfused with Ames’ containing 100 µM BaCl2. B-wave amplitudes were measured from baseline using the dim flash responses and a-wave amplitudes from the baseline using the bright flash responses as indicated by arrows. (B) Mean ± SEM a- (brown, a-wavedrug/a-wavecontrol) and b-wave (green, b-wavedrug/b-wavecontrol) ratios determined from the each individual retina perfused with control solution and solution containing 100 µM of the gap junction blocker meclofenamic acid (MFA), 100 µM of picrotoxin (PTX) and 10 µM strytchinine (STR), 10 µM of the dopamine D2 and D4 receptor antagonists L-745870 and L-741626, respectively, or 50 µM the GABAC receptor antagonist (1,2,5,6-Tetrahydropyridin-4-yl)methylphosphinic acid (TPMPA). Mouse genotypes for each drug experiment is indicated in Figure. No statistically significant changes in a- or b-wave amplitudes was observed with any of the drugs tested by paired t-test. n = 6 retinas for PTX/STR, n = 3 retinas for each MFA, TPMPA, and L-745870/L741626 experiments.Figure 6—source data 1.
+**Figure 6.:** (A) Example traces to dim and bright flashes recorded from a dark-adapted wild-type mouse retina perfused with Ames’ containing 100 µM BaCl2. B-wave amplitudes were measured from baseline using the dim flash responses and a-wave amplitudes from the baseline using the bright flash responses as indicated by arrows. (B) Mean ± SEM a- (brown, a-wavedrug/a-wavecontrol) and b-wave (green, b-wavedrug/b-wavecontrol) ratios determined from the each individual retina perfused with control solution and solution containing 100 µM of the gap junction blocker meclofenamic acid (MFA), 100 µM of picrotoxin (PTX) and 10 µM strytchinine (STR), 10 µM of the dopamine D2 and D4 receptor antagonists L-745870 and L-741626, respectively, or 50 µM the GABAC receptor antagonist (1,2,5,6-Tetrahydropyridin-4-yl)methylphosphinic acid (TPMPA). Mouse genotypes for each drug experiment is indicated in Figure. No statistically significant changes in a- or b-wave amplitudes was observed with any of the drugs tested by paired t-test. n = 6 retinas for PTX/STR, n = 3 retinas for each MFA, TPMPA, and L-745870/L741626 experiments.
 
-## Rod-mediated visual contrast sensitivity remains relatively normal despite loss of majority of rods
+### Rod-mediated visual contrast sensitivity remains relatively normal despite loss of majority of rods
 
 Our molecular genetics and functional analyses showed that compensatory pathways in the retina are expected to support retinal output even after 50–70% degeneration or functional decline of the rods in P23H mice. To test if these compensatory changes can promote vision, we applied an optomotor response test (OMR; Prusky et al., 2004) to evaluate behavioral visual contrast sensitivity (CS) in P23H/Gnat2-/- mice and their Gnat2-/- littermate controls (Figure 7A). This reflexive test was selected to avoid confounding factors caused by potential plasticity in the cortical brain areas that could also promote vision even when retinal output is suppressed (Koskela et al., 2020). Our aim was to focus on the question of whether potentiation of the rod-rod bipolar cell signaling in P23H mice can help maintain high-sensitivity night vision. This goal was further facilitated by use of the Gnat2-/- background to abolish light responses of cones and the use of ambient light ranging from scotopic to photopic conditions. We found that CS decreased slightly in P23H/Gnat2-/- mice only at the dimmest background light up until 3 months of age in ambient light ranging from −3.3 to 0.85 log(Cd/m2) (Figure 7B,C). At 5 months of age, CS was suppressed at the two dimmest ambient light levels (−3.3 and −2.4 log(Cd/m2)), but not at brighter illuminances (Figure 7D). In contrast, a significant drop in performance occurred in 6-month-old P23H/Gnat2-/- mice at all except the brightest ambient light level (Figure 7D). A decrease in the sensitivity of rod-mediated vision was expected since absolute rod bipolar cell responses decreased in P23H mice as they aged beyond 1 month (Figures 4F and 5B; Sarria et al., 2015). However, consistent with our finding that the rod bipolar cell sensitivity to their rod input was potentiated in P23H/Gnat2-/- mice up to 5 months of age, the decrease in scotopic contrast sensitivity was less severe than expected if based solely on the degeneration and functional decline of rod photoreceptors caused by the P23H rhodopsin mutation. It is possible that the removal of cone light responses in Gnat2-/- mice effects the remodeling process during rod degeneration caused by the P23H mutation in rhodopsin or some off-target effects that influence mouse behavior. To control for these possibilities, we also conducted the optomotor response tests in control and P23H mice on a C57Bl/6J background with functional cones. In these mice, we did not observe any change in contrast sensitivity in dim (scotopic), intermediate (mesopic) or bright (photopic) ambient light (Figure 7—figure supplement 1).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig7-v2.jpg)
+
+**Figure 7.:** (A) Mouse contrast sensitivity threshold was tested using an optomotor reflex test and infrared visualization of the mouse head movement and cylindrical neutral density filters around the mouse platform. Contrast sensitivity was compared between RhoWT/P23H/Gnat2-/- and their age-matched Gnat2-/- littermate mice from dim scotopic up to mesopic/photopic conditions at 1 (B), 3 (C), and 5/6 (D) month of age. Smooth lines plot Hill-type Equation 3 fitted to mean data points. *p<0.05, **p<0.005, ***p<0.001, two-way ANOVA followed by Bonferroni’s post-hoc test. (Control, 2–3 mo, n = 6 (24); P23H, two mo, n = 11(12); P23H, three mo, n = 6 (13); control, 5–6 mo, n = 9 (17); P23H, five mo, n = 4 (25); P23H, six mo, n = 3 (5) mice(experiments)).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59422/elife-59422-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Contrast sensitivity threshold in dim (scotopic), mesopic and photopic ambient light measured as shown in Figure 7 plotted for control (3–5 mo, black), and their littermate 3-month (red) and 5-month RhoWT/P23H mice. No statistically significant differences between control and P23H were found by two-way ANOVA (Control, 3–5 mo, n = 5 (5); P23H, three mo, n = 4 (4); P23H, five mo, n = 5 (6) mice(experiments)).
+
 ## Discussion
 
-## P23H mice as a model to study the impact of early stage retinal remodeling on retinal function and vision
+### P23H mice as a model to study the impact of early stage retinal remodeling on retinal function and vision
 
 Retinal remodeling commonly refers to neuronal-glial changes in the retina in response to photoreceptor degeneration regardless of the etiology of the disease, and it is characterized by three distinct phases (Jones and Marc, 2005; Pfeiffer et al., 2020). In phase 1, glial cells are activated, and neural reprogramming begins due to photoreceptor death, typically starting in rods that mediate our night vision. Phase 2 refers to an advanced disease stage when collateral, secondary cone cell death ensues. Phase 3 is a terminal phase and is thought to begin when all the photoreceptors have degenerated. According to this classification, our study using an adRP mouse model begins when remodeling is in phase 1 and ends in the earliest steps of phase 2 (Figure 1).
 
@@ -89,13 +228,13 @@ We employed knock-in mice that carry a heterozygous P23H rhodopsin mutation. The
 
 We first hypothesized that if homeostatic plasticity occurs in response to rod cell death in the retina, it must show a discernible fingerprint in the retinal transcriptome. As expected, due to a loss of rods, several photoreceptor selective gene clusters were downregulated in P23H retinas (Figure 3B, Figure 3—figure supplement 2). In contrast, in the early disease state pronounced upregulation arose in pathways involving neural development, such as synaptic organization, axonogenesis and cell adhesion (Figure 3C,D). We also found several enriched pathways that overlap between cell stress responses and neuronal plasticity, such as the MAPK, NF-kappa B and TNF signaling pathways (Pozniak et al., 2014). In the case of P23H retinas, it is difficult to determine whether these major transcription regulators are upregulated primarily due to cell degeneration and stress or due to the induction of plasticity machinery. Nevertheless, our RNA-seq analysis is consistent with our hypothesis that a robust neural network adaptation in the retina takes place in the early stages of photoreceptor degenerative disease caused by the P23H rhodopsin mutation. At the same 1 month of age, we found that while the photoreceptor component of the ex vivo ERG response was significantly suppressed (Figures 4E and 5A), the light sensitivity of the rod bipolar cell responses was similar to that in control mice (Figures 4F and 5B, Table 1). In the C57 background, the light-sensitivity of bipolar cells tended to be even higher in 1-month-old P23H mice as compared to WT controls (Figure 4F, Table 1). However, this may be due to the contribution from increased light responses of cones observed in vivo (Figure 1L), since without the contribution of cone phototransduction, the rod bipolar cell sensitivity slightly decreased in P23H/Gnat2-/- mice (Figure 5B, Table 1). We also found better preserved visually guided behavior on the C57 background (Figure 7—figure supplement 1) as compared to the Gnat2-/- background (Figure 7). However, the compensatory sensitization of the rod bipolar cells to their rod input cannot be explained simply by upregulation of cone-mediated signaling, since the same phenomenon was observed in P23H mice both in C57 and Gnat2-/- backgrounds (Figure 5C, Table 1). The P23H/Gnat2-/- mice were also observed to perform almost normally until 3 months of age in a behavioral visual contrast threshold task, even at the lowest luminance (Figure 7). At this age, the overall rod input already decreased by more than half in P23H mice which was expected to significantly elevate contrast thresholds (or decrease contrast sensitivity) specifically at the two lowest luminance levels where the contrast sensitivity is proportional to background light intensity (Figures 5A and 7). Therefore, it appears that the gradual loss of the rod photoreceptors, or declined input from them, triggers functional homeostatic adaptation in the retina that allows maintenance of visual function downstream of the photoreceptors.
 
-## Is retinal remodeling and plasticity supporting or impairing retinal output and vision?
+### Is retinal remodeling and plasticity supporting or impairing retinal output and vision?
 
 Our results using the P23H mouse model appear at odds with some prior research casting a rather negative connotation over retinal remodeling following the loss of photoreceptors. Such studies proposed that retinal remodeling exacerbates vision loss and therefore may interfere with strategies to restore vision in the blind (Jones et al., 2003; Marc and Jones, 2003b; Telias et al., 2019; Toychiev et al., 2013). What might underlie this apparent discrepancy with our findings? We speculate that the contrasting conclusions could stem from the retinal remodeling phase at which various retinal degeneration models with significantly different rates of photoreceptor degeneration have been studied. The list of retinal degeneration mouse models in which remodeling has been investigated is extensive (Marc et al., 2003a); however, currently the most utilized models according to the literature are rd1 and rd10 mice in which photoreceptors degenerate rapidly due to mutations of phosphodiesterase 6 (Pde6) in rods. The rd1 mouse model represents an extremely severe disease where rod death starts at P8 and progresses to practically complete loss of all photoreceptors by 4 weeks of age. The rd10 model exhibits somewhat slower progression of the disease. Their dark-adapted ERG response is observable but already significantly compromised at P18 and by 1 month of age the light responses of rods are practically abolished and most of their photoreceptors have degenerated, particularly in the central retina (Chang et al., 2007b; Gargini et al., 2007; Wang et al., 2018). Thus, it is possible that functional and behavioral studies using rd1 and rd10 mice, typically conducted with mice older than 1 month of age, may have missed the window for observing constructive remodeling expected to promote retinal output and vision. In contrast, the slower rate of retinal degeneration in the heterozygous P23H animal model provides a broader window of opportunity for investigating the impact of photoreceptor degeneration on early stage retinal remodeling (phase 1).
 
 Recent studies using the specific deletion of ~50–90% of rods, cones or rod bipolar cells during development or in mature mice have revealed homeostatic mechanisms associated with the maintenance of normal retinal output and vision (Care et al., 2020; Care et al., 2019; Johnson et al., 2017; Shen et al., 2020; Tien et al., 2017). Here we used a P23H knock-in mouse model of RP that recapitulates the human disease. Our results are consistent with the idea that at least during phase 1 of remodeling, photoreceptor death induces functional compensation that supports close to normal retinal output and rod-mediated vision (Figures 4, 5 and 7). Even at the stage where we observed prominent cone dysfunction (Figure 1L) in 5- or even 6-month-old P23H/Gnat2-/- mice, the rod bipolar cells continued to increase their sensitivity to rod input (Figure 5C–F, Table 1), although at this point the light responses of rods were already small (Figure 5A) and the absolute amplitudes of the rod bipolar cell light responses had significantly decreased (Figure 5B) together with lower contrast sensitivity of their rod-mediated vision in dim light (Figure 7D). These results therefore suggest that up to a point where some residual rod light responses exist, the retina can adapt toward supporting normal retinal output and scotopic vision. In this manner, patients at this stage of retinal degenerative disease might be expected to benefit from various treatments designed to restore photoreceptors and their light responses. However, the duration during which the inner retina remains capable of processing light signals and therefore is amenable to these types of treatments remains unknown. Studies with other animal models suggest that corruption of the inner retina would become a problem at later time points, including in P23H mutation-associated RP models. Quantitative functional and behavioral studies at later stages will be needed to address this question.
 
-## Mechanism for increased sensitivity of rod bipolar cells to their rod input
+### Mechanism for increased sensitivity of rod bipolar cells to their rod input
 
 Our RNA-seq and electrophysiology data strongly suggest that homeostatic plasticity is induced at early stages of rod degeneration in the P23H mouse retina. Still, the homeostatic plasticity mechanisms for the increased sensitivity of rod bipolar cells to their rod input remain unclear. Possibilities include (1) formation of new synapses between rod bipolar cells and surviving photoreceptors, (2) increased electrical coupling of rods to the cone pathway, (3) reduced inhibitory drive to rod bipolar cells (disinhibition), (4) pre- and/or postsynaptic scaling, and (5) increased excitability through axonal remodeling of rod bipolar cells (Figure 8). We tested hypotheses 2 and 3 by using blockers for gap junctions and major inhibitory postsynaptic receptors (Figure 6). Our findings did not support either of these hypotheses, and it appears that the potentiation of the ERG b-wave is not mediated by disinhibition or altered gap junctional coupling in P23H mice. Hypothesis 1 would align well with recent studies showing that cone bipolar cell dendrites formed new synapses with surviving cones after ~50% of cones had been ablated in juvenile or mature mice (Care et al., 2019; Shen et al., 2020). In another study, ablation of 50–90% of rod bipolar cells during development led to an extension of the dendrites of the remaining rod bipolar cells so that they contacted more rods (Johnson et al., 2017). It also has been shown that restoration of rod function in juvenile mice, which lacked rod function during development, can lead to the formation of new functional synapses between rods and rod bipolar cells (Wang et al., 2019). However, our data from IHC staining does not support formation of new synaptic contacts . We detected fewer mGluR6 positive puncta, reflecting a decreased number of synapses, in 1-month-old P23H retinas (Figure 2), and on the other hand, rod bipolar cell labeling showed indistinguishable staining patterns between P23H and control retinas (Figure 1—figure supplement 1). In line with this, ablation of ~50% of rods in a WT adult mouse retina, phenotypically mimicking the situation in young adult P23H mice including compensation of the ERG b-wave amplitude, did not lead to morphological synaptic changes in the study by Care et al., 2020. Our RNA-seq data show upregulations in a number of mRNAs of ion channels and G protein-coupled receptors, such as the Trpm1 cation channel crucial for ON bipolar cell depolarization as well as glutamatergic receptors that could contribute either to the strengthening of individual rod-rod bipolar cell synapses or increased excitability of the rod bipolar cells (Figure 3—figure supplements 3–5). Therefore, postsynaptic scaling and/or increased intrinsic excitability of rod bipolar cells (hypotheses 4 and/or 5) appear the most likely candidates in explaining the functional compensation upon rod death in P23H mice (Figure 8). On the other hand, Care et al. proposed that functional compensation at rod bipolar cells upon ~50% input loss from rods was attributable to disinhibition (our hypothesis 3). It should be noted, however, that the mechanism by which neurons and neural networks adapt to acute stressors versus progressive disease conditions may differ. Another interesting possibility is that Müller cells would support bipolar cell function and contribute to the preservation of b-wave response amplitudes in ex vivo ERG experiments. Although we used barium to block the slow PIII component (Bolnick et al., 1979), it is possible that Müller cells contribute to the ERG b-wave even in the presence of barium. If this contribution changes in P23H mice, that could in principle also explain the observed potentiation of the ex vivo ERG b-waves in the P23H mice. Additional work will be needed to resolve the exact homeostatic plasticity mechanisms that promote rod-rod bipolar cell signaling and visual function. Such knowledge could then help us understand how sensory systems respond to potentially compromising circumstances throughout life, and as well help in designing interventions to enhance homeostatic plasticity when needed.
 
@@ -105,11 +244,259 @@ Our RNA-seq and electrophysiology data strongly suggest that homeostatic plastic
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664 RRID:MGI:5657312</td>
+      <td>WT mouse</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>B6.129S6(Cg)-Rhotm1.1Kpal/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 017628 RRID:IMSR_JAX:017628</td>
+      <td>RhoP23H/P23H mouse</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Mus musculus</td>
+      <td>Gnat2tm1(KOMP)Vlcg</td>
+      <td>Marie E. Burns (University of California, Davis)</td>
+      <td>Original reference: doi:10.1016/j.exer.2018.02.024</td>
+      <td>Gnat2-/- mouse</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PKCα (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab32376 RRID:AB_777294</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab75524 RRID:AB_1310017</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-vGlut1 (guinea pig polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. #: ab5905 RRID:AB_2301751</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mGluR6 (sheep)</td>
+      <td>Jeannie Chen (University of Southern California)</td>
+      <td>Originally developed by Kirill Martemyanov lab, doi:10.1523/JNEUROSCI.1367–09.2009</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CtBP2 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat. #: 612044 RRID:AB_399431</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S opsin (goat polyclonal)</td>
+      <td>Krzysztof Palczewski lab</td>
+      <td>Generated by Bethyl Laboratories</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-M opsin (rabbit polyclonal)</td>
+      <td>Novus biologicals</td>
+      <td>Cat. #: NB110-74730 RRID:AB_1049390</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERK1/2 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4695S RRID:AB_390779</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 2144S RRID:AB_2210548</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho ERK1/2 (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9106S RRID:AB_331768</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit AlexaFluor 647 secondary</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab150075 RRID:AB_2752244</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse AlexaFluor 488 secondary</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab150105 RRID:AB_2732856</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse AlexaFluor 555 secondary</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab150106 RRID:AB_2857373</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-guinea pig AlexaFluor 568 secondary</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab175714</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-sheep AlexaFluor 488 secondary</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab150177 RRID:AB_2801320</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat AlexaFluor 488 secondary</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab150129 RRID:AB_2687506</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-rabbit</td>
+      <td>Licor</td>
+      <td>Cat. #: 926–32211 RRID:AB_621843</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD donkey anti-mouse</td>
+      <td>Licor</td>
+      <td>Cat. #: 926–68072 RRID:AB_10953628</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Keyence BZ-X800 Analyzer</td>
+      <td>Keyence Corporation of America</td>
+      <td>RRID:SCR_017205</td>
+      <td>Microscopy image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph 7.8</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_002368</td>
+      <td>Microscopy image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software Inc</td>
+      <td>RRID:SCR_002798</td>
+      <td>Statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro 2020b</td>
+      <td>OriginLab Inc</td>
+      <td>https://www.originlab.com/</td>
+      <td>Analysis and graphing software</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CBR-5884</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: 1656</td>
+      <td>Phosphoglycerate dehydrogenase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-AP4</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #: 0101/100</td>
+      <td>Glutamatergic antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin; PTX</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: 528105</td>
+      <td>GABA antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine; STR</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: S0532</td>
+      <td>Glycine antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Meclofenamic acid; MFA</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: M4531</td>
+      <td>Gap junction blocker</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(1,2,5,6-Tetrahydropyridin-4-yl)methylphosphinic acid; TPMPA</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: T200</td>
+      <td>GABAA-ρ antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-741626</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #:1003</td>
+      <td>D2-antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-745870</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat. #:1002</td>
+      <td>D4-antagonist</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Initially, we crossed RhoP23H/P23H males (Sakami et al., 2011) with C57Bl/6J female mice (The Jackson Laboratory, stock # 000664) to generate mice carrying the heterozygous P23H mutation in rhodopsin. Experimental (RhoP23H/WT) and littermate control mice were generated using RhoP23H/WT and RhoWT/WT breeding pairs. We also generated a P23H mouse line on Gnat2-/- (Ronning et al., 2018) background by crossing P23H mice with Gnat2-/- mice, a kind gift from Dr. Marie Burns, University of California, Davis. Experimental (RhoP23H/WT/Gnat2-/-) and littermate controls (Gnat2-/-) were generated using RhoP23H/WT/Gnat2-/- and RhoWT/WT/Gnat2-/- breeding pairs. Both male and female mice were used in this study. Mice were kept under 12/12 hr light cycle with free access to food and water. All experimental protocols adhered to Guide for the Care and Use of Laboratory Animals and were approved by the institutional Animal Studies Committees at the University of Utah and University of California, Irvine.
 
-## Histology, immunohistochemistry, microscopy and image analysis
+### Histology, immunohistochemistry, microscopy and image analysis
 
 After euthanasia, the superior side of each mouse eye was marked with a thread burner or a permanent marker and then enucleated. Eyes for histology were fixed in Hartman's fixative (Sigma Aldrich, St. Louis, MO) for at least 24 hr. The eyes were kept in 70% ethanol before embedding into paraffin blocks. Sections were cut at 10 μm thickness in a nasal-temporal orientation. Retinal panorama images were captured using a light microscope. Representative magnified images shown in Figure 1B,C were taken at the superior middle retina centered at ~700 µm from the optic nerve head (ONH).
 
@@ -117,15 +504,15 @@ Eyes for cryosectioning and immunohistochemistry (IHC) were put in ice-cold 4% p
 
 Fluorescence microscopy was performed using Keyence BZ-X800 microscope (Keyence Corp. USA, Itasca, IL) either using a 40x objective or a 100x oil immersion objective. All images were taken at a central location. Sixteen z-axis positions with 0.3 µm separation were taken at each x-y coordinate when using the 40x objective, and 50 z-axis positions with 0.2 µm separation when using the 100x objective to generate z-stacks. Maximum intensity projections of the z-stacks are displayed in figures. The exposure was kept at same level at each experimental condition, with the exception that PKCα signal was acquired at three times longer exposure when imaging 3-month and 5-month-old P23H samples compared to 1-month-old P23H and WT samples. Raw images were deconvoluted using Keyence BZ-X800 Analyzer’s haze reduction tool retaining the same settings in all technical and biological replicates. Keyence BZ-X800 Analyzer’s hybrid cell count tool was used to evaluate mGluR6 puncta count and average puncta size in 1-month-old P23H and WT samples. For this, five technical replicates per sample were acquired. These images were cropped to 100 µm width and 30 µm height as shown in Figure 2C,D. Puncta counts and sizes were averaged between the technical replicates within a sample for statistical analysis.
 
-## Optical coherence tomography
+### Optical coherence tomography
 
 Mice were anesthetized with ketamine (100 mg/kg, KetaVed, Bioniche Teoranta, Inverin Co, Galway, Ireland) and xylazine (10 mg/mg, Rompun, Bayer, Shawnee Mission, KS) by intraperitoneal injection, and their pupils were dilated with 1% tropicamide. OCT was performed with a Bioptigen spectral-domain OCT device (Leica Microsystems Inc, Buffalo Grove, IL). Four frames of OCT b-scan images were acquired from a series of 1200 a-scans. ONL thickness was measured 500 μm from the ONH at nasal, temporal, superior and inferior quadrants. The ONL thickness was averaged over the four retinal quadrants, and this average was used in the analysis.
 
-## Preparation of retinal whole mounts and cone counting
+### Preparation of retinal whole mounts and cone counting
 
 Retina whole mounts for cone population analyses were performed as described earlier (Leinonen et al., 2019). In brief, the superior side of each eye was marked with a permanent marker before enucleation. Eyes were then fixed in 4% paraformaldehyde in isotonic phosphate buffered saline (PBS) for 1 hr after enucleation, and the retina was dissected away and processed as a whole-mount sample and subsequently stained using polyclonal goat S-opsin (1:1000 dilution, Bethyl Laboratories, Montgomery, TX) and polyclonal rabbit M-opsin (1:1000 dilution, Novus Biologicals, Littleton, CO) primary antibodies and fluorescent secondary antibodies (dilution for both 1:500; donkey anti-goat Alexa Fluor 488 and donkey anti-rabbit Alexa Fluor 647; Abcam). The whole retinal area was imaged using a fluorescence light-microscope (Leica DMI6000B, Leica Microsystems Inc) equipped with an automated stage, a 20 × objective, and green (excitation 480/40 nm) and far red (excitation 620/60 nm) fluorescence filter channels. Cone counts were computed from each individual image using MetaMorph 7.8 software (Molecular Devices, Sunnyvale, CA) and summed together to yield a whole retina count. For illustrative panorama images, the individual images were stitched together using MetaMorph 7.8 software.
 
-## In vivo electroretinography (ERG)
+### In vivo electroretinography (ERG)
 
 In vivo ERG was performed as previously described (Orban et al., 2018) using a Diagnosys Celeris rodent ERG device (Diagnosys, Lowell, MA). Briefly, a mouse was anesthetized with ketamine and xylazine and placed on a heating pad at 37°C, and its pupils were moistened with 2.5% hypromellose eye lubricant (HUB Pharmaceuticals, Rancho Cucamonga, CA). Light stimulation was produced by an in-house scripted stimulation series in Espion software (version 6; Diagnosys). Before scotopic recordings, the mice were dark-adapted overnight and animal handling before recording was performed under dim red light. The eyes were stimulated with a green LED (peak 544 nm, bandwidth 160 nm) using a 13-step ascending flash intensity series ranging from 0.00015 to 300 cd·s/m2.
 
@@ -133,28 +520,97 @@ Before photopic ERG recordings, mice were kept in a vivarium. After induction of
 
 The ERG signal was acquired at 2 kHz and filtered with a low frequency cutoff at 0.25 Hz and a high frequency cutoff at 300 Hz. Espion software automatically detected the ERG a-wave (first negative ERG component) and b-wave (first positive ERG component).
 
-## RNA isolation, quantitative PCR and RNA-sequencing
+### RNA isolation, quantitative PCR and RNA-sequencing
 
 Mice were euthanized by cervical dislocation, and eyes were promptly harvested. Retinas were dissected away from the eyecup and put into RNAlater solution (Qiagen, Germantown, MD). The samples were stored at −80°C before processing. The retinas were homogenized using a motorized pestle, and the homogenate was spun in a tabletop centrifuge at full speed for 3 min. Supernatant was collected and RNA extracted using a Qiagen RNeasy Mini Kit following the manufacturer’s instructions. On-column DNAase digestion (Qiagen RNase-Free DNase) was used to remove any genomic DNA contamination from the sample. Five hundred ng of purified RNA were used for cDNA synthesis using an iScript cDNA synthesis kit (Bio-Rad, Irvine, CA), and real-time quantitative PCR (qPCR) was used as one of the initial sample quality checks before RNA-sequencing (RNA-seq), and also in verifying the expression level of Grm6, Trpm1, Slc17a7 and Cacna1F using the ∆∆Ct method. The combination of Actb, Sdha and Gapdh expression was used as a normalization control. The primer sequences are shown in Table 2.
+
+**Table 2.**
+ Primer sequences used in qPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer sequence</th>
+      <th>Reverse primer sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actb</td>
+      <td>GGCCAACCGTGAAAAGATGA</td>
+      <td>GACCAGAGGCATACAGGGAC</td>
+    </tr>
+    <tr>
+      <td>Cacna1F</td>
+      <td>CGGACGAATGCACAAGACAT</td>
+      <td>CGGTATGGTTCAGTGTGCAT</td>
+    </tr>
+    <tr>
+      <td>Gapdh</td>
+      <td>GACGGCCGCATCTTCTTG</td>
+      <td>CCAAATCCGTTCACACCGA</td>
+    </tr>
+    <tr>
+      <td>Grm6</td>
+      <td>CCATCACCATCTTGCCCAAA</td>
+      <td>CCAGAACTCAGCAAACCAGA</td>
+    </tr>
+    <tr>
+      <td>Sdha</td>
+      <td>GCAGTTTCGAGGCTTCTTC</td>
+      <td>CAACAGAGAAGTGAAAGCCG</td>
+    </tr>
+    <tr>
+      <td>Slc17a7</td>
+      <td>GGGTCCTTGTGCAGTATTCA</td>
+      <td>CAGTGCCGGTGACTCATAGG</td>
+    </tr>
+    <tr>
+      <td>Trpm1</td>
+      <td>CTGTCAGCAAACACACCCAG</td>
+      <td>GCCAGTCCTTCACCATGAG</td>
+    </tr>
+  </tbody>
+</table>
 
 Final RNA quality control (QC), library preparation, and RNA-seq were performed by Sacramento NovoGene Co., Ltd. (Sacramento, CA) using the Illumina HiSeq instrument. QC was performed with agarose gel electrophoresis and Nanodrop and Agilent 2100 devices. The gene expression data were aligned with a reference genome (Mus musculus mm10) using Tophat2 (http://ccb.jhu.edu/software/tophat/index.shtml). The gene expression level was measured by transcript abundance and reported as Fragments Per Kilobase of transcript sequence per Millions base pairs (FPKM) sequenced. As the first measure of dataset reliability, a Pearson correlation was conducted between all samples. Subsequently, to test data integrity between experimental groups (1-month WT female, n = 4; 1-month WT male, n = 3; 1-month P23H female, n = 4; 1-month P23H male, n = 3; 3-month WT, n = 3; 3-month P23H female, n = 2: 3-month P23H male, n = 2), the FPKM distribution was inspected in violin plots. Next, Venn diagrams were inspected to reveal relationships between the four groups, after which the sexes were pooled and only genotypes (WT females+males vs P23H females+males) were compared in further analyses. The Gene Ontology (GO) and KEGG analyses, and predicted protein-protein interaction analysis using the STRING database (https://string-db.org/cgi/input.pl), were obtained to reveal gene expression changes at the level of networks. Gene expression differences of single genes between genotypes was reported as log2(mean of P23H/mean of WT) and an adjusted p-value of <0.05 was used as a level of statistical significance.
 
 Raw data is made freely available in the Gene Expression Omnibus (GEO) database (https://www.ncbi.nlm.nih.gov/geo/) with accession numbers GSE152474 (1-month-old samples) and GSE156533 (3-month-old samples).
 
-## Immunoblotting
+### Immunoblotting
 
 The mice were euthanized by cervical dislocation, eyes were promptly harvested, and retinas were quickly dissected away from the eyecup and immediately frozen using liquid nitrogen. A single retina extract was homogenized in ice-cold lysis buffer (70 µl) containing 100 mM Tris-HCl, 10 mM magnesium acetate, 6 M urea, 2% SDS, benzonase nuclease (25 U per ml), protease inhibitor (cOmplete Mini EDTA-free, Roche Diagnostics, Indianapolis, IN) and phosphatase inhibitor cocktails I and II (Sigma Aldrich). Homogenates were centrifuged and the supernatants mixed with Laemlli sample buffer (Bio-Rad). Protein concentration in each sample was determined using a Pierce BCA protein assay kit (ThermoFisher, Waltham, MA). Forty-eight µg of protein were loaded onto a Mini-Protean TGX gel (Bio-Rad) and electrophoresis was run on an ice-bed. Proteins were transferred to a nitrocellulose membrane. The membrane was blocked with 5% fat-free milk in Tris-buffered saline containing 0.1% Tween 20 (TBST) for 1 hr, and thereafter incubated in primary antibody in 1% milk in TBST. After an overnight incubation, the membrane was washed three times with TBST and thereafter incubated in fluorescent secondary antibody solution (LI-COR, Lincoln, NE) at 1:10,000 dilution for 2 hr. The membrane was washed three times with TBST and subsequently imaged using an Odyssey imager (LI-COR). The primary antibodies used were mouse anti-phospho-ERK1/2 (dilution 1:1000), rabbit anti-ERK1/2 (dilution 1:2000) and rabbit α-tubulin (dilution 1:2000) all purchased from Cell Signaling Technology (Danvers, MA). The phospho-ERK1/2 expression was evaluated first using a 680 nm secondary anti-mouse antibody, and the same membrane was re-incubated later in ERK1/2 and α-tubulin solution using an 800 nm secondary anti-rabbit antibody.
 
-## Ex vivo electroretinogram
+### Ex vivo electroretinogram
 
 Transretinal (ex vivo) electroretinography (ERG) was conducted as described previously (Vinberg et al., 2014; Vinberg et al., 2015a). Briefly, mice were dark adapted for at least two hours and euthanized by CO2 and cervical dislocation under dim red light. Eyes were enucleated and immediately placed into carbonated (95% O2/5% CO2) Ames’ medium (A1420; Sigma-Aldrich, St. Louis, MO) containing 1.932 g/L NaHCO3 (Sigma-Aldrich, St. Louis, MO). The retina was dissected from the eye and transferred to the recording chamber which was perfused at a rate of 1 mL/min with heated (37°C) Ames’ medium containing 100 µM BaCl2 (Sigma-Aldrich, St. Louis, MO) to remove the Müller glia contribution to the ERG signal (Bolnick et al., 1979). To isolate the photoreceptor component of the ERG signal, 40 µM DL-AP4 (Cat. #0101; Tocris Bioscience) was added to the perfusion medium. In some experiments (Figure 6), the following drugs were added into Ames’ (µM; supplier Sigma-Aldrich, St. Louis, MO unless otherwise noted): 100 picrotoxin (PTX) to block GABA receptors, 10 strychnine (STR) to block glycine receptors, 100 meclofenamic acid (MFA) to block electrical coupling via gap junctions, 50 (1,2,5,6-Tetrahydropyridin-4-yl)methylphosphinic acid (TPMPA) to block GABAC receptors, and 10 L-741626 and L-745870 (both from Tocris Bioscience) to block D2 and D4 receptors respectively. Drugs were first dissolved in ethanol (PTX), DMSO (L-741626) or water (STR, L-745870, MFA, TPMPA), and 0.02–0.2% of the stock solutions were added into Ames’ to achieve the final concentration indicated above. For control solution, the same amount of water, DMSO or ethanol instead of the drug-containing stock solution was added.
 
-From the dark-adapted retina, ERG responses to flashes of light (505 nm, 2–10 ms flash duration) from ~17 photons µm−2 up to ~20,000 photons µm−2 were recorded (10 trials/dimmer flash intensity and five trials/brighter flashes). ON bipolar cell responses were determined by subtracting the photoreceptor response (containing DL-AP4) from the ERG response without DL-AP4. Photoreceptor response and ON bipolar cell response amplitudes were measured and their ratio was calculated and plotted as a function of light flash intensity (see Figure 4). To determine flash intensity (I) required to generate half-maximal photoreceptor or ON bipolar cell responses (I1/2), a Hill function(1)R=RmaxInI1/2n+In,was fitted to amplitude (R) data using the Originlab’s (2018, build: 9.5.0193) nonlinear curve fit tool. Rmax is the maximal response amplitude to a bright flash (set based on data) and n is a steepness factor that was set to one for photoreceptor responses but was let to vary freely to produce optimal fits to RBC (bipolar cell response amplitude) data. We also fit similar Hill functions to data plotting RBC as a function of RPR:(2)RBC=RBC,maxRPRnRPR,1/2n+RPRnto determine the photoreceptor input required to generate half-maximal ON bipolar cell response, RPR,1/2.
+From the dark-adapted retina, ERG responses to flashes of light (505 nm, 2–10 ms flash duration) from ~17 photons µm−2 up to ~20,000 photons µm−2 were recorded (10 trials/dimmer flash intensity and five trials/brighter flashes). ON bipolar cell responses were determined by subtracting the photoreceptor response (containing DL-AP4) from the ERG response without DL-AP4. Photoreceptor response and ON bipolar cell response amplitudes were measured and their ratio was calculated and plotted as a function of light flash intensity (see Figure 4). To determine flash intensity (I) required to generate half-maximal photoreceptor or ON bipolar cell responses (I1/2), a Hill function
 
-## Measurement of visual contrast sensitivity
+$$
+R=R_{max}\frac{I^{n}}{I_{1/2}^{n}+I^{n}},
+$$
 
-An optomotor reflex test (OMR) was used to determine contrast sensitivity threshold using a commercially available OptoMotry system (CerebralMechanics Inc, Canada) (Prusky et al., 2004) customized with an infrared LED in the chamber for visualization of mouse head movement by a camera attached to the lid of the box (Figure 7A). Additional cylindrical neutral density filters (in layers) were placed around the mouse platform to assess contrast sensitivity in scotopic and mesopic-photopic conditions. The ambient luminance (Cd/m2) was calibrated using an optometer (UDTi FlexOptometer, photometric sensor model 2151, Gamma Scientific, CA). Since the dynamic range of the sensor did not reach the dimmest conditions, those were derived based on separate measurements of the attenuation factor for each neutral density filter layer. Before each experiment mice were dark-adapted overnight, and the testing started at the dimmest light condition. The test was administered in a single-blinded fashion, with the experimenter unaware of the stimulus presented to the mouse. Horizontally drifting vertical sine-wave gratings moving left or right with different contrast were presented at a spatial frequency of 0.128 cycles/degree and a grating rotation speed (drift speed) of 5.4 degrees/s to measure contrast thresholds (CT, 1–100%) at different ambient luminance (L) levels from 5*10−4 to 7 Cd/m2. Contrast sensitivity (CS) is defined as 1/CT and was plotted as a function of ambient luminance. A Hill function defined by(3)CS=CSmaxLnL1/2n+Lnwas fit to the mean luminance-CS data with L1/2 (luminance at which CS = 0.5 CSmax), CSmax (maximal CS at ~1–7 Cd/m2) and n (steepness factor) as free parameters.
+was fitted to amplitude (R) data using the Originlab’s (2018, build: 9.5.0193) nonlinear curve fit tool. Rmax is the maximal response amplitude to a bright flash (set based on data) and n is a steepness factor that was set to one for photoreceptor responses but was let to vary freely to produce optimal fits to RBC (bipolar cell response amplitude) data. We also fit similar Hill functions to data plotting RBC as a function of RPR:
 
-## Statistical analysis
+$$
+R_{BC}=R_{BC,max}\frac{R_{PR}^{n}}{R_{PR,1/2}^{n}+R_{PR}^{n}}
+$$
+
+to determine the photoreceptor input required to generate half-maximal ON bipolar cell response, RPR,1/2.
+
+### Measurement of visual contrast sensitivity
+
+An optomotor reflex test (OMR) was used to determine contrast sensitivity threshold using a commercially available OptoMotry system (CerebralMechanics Inc, Canada) (Prusky et al., 2004) customized with an infrared LED in the chamber for visualization of mouse head movement by a camera attached to the lid of the box (Figure 7A). Additional cylindrical neutral density filters (in layers) were placed around the mouse platform to assess contrast sensitivity in scotopic and mesopic-photopic conditions. The ambient luminance (Cd/m2) was calibrated using an optometer (UDTi FlexOptometer, photometric sensor model 2151, Gamma Scientific, CA). Since the dynamic range of the sensor did not reach the dimmest conditions, those were derived based on separate measurements of the attenuation factor for each neutral density filter layer. Before each experiment mice were dark-adapted overnight, and the testing started at the dimmest light condition. The test was administered in a single-blinded fashion, with the experimenter unaware of the stimulus presented to the mouse. Horizontally drifting vertical sine-wave gratings moving left or right with different contrast were presented at a spatial frequency of 0.128 cycles/degree and a grating rotation speed (drift speed) of 5.4 degrees/s to measure contrast thresholds (CT, 1–100%) at different ambient luminance (L) levels from 5*10−4 to 7 Cd/m2. Contrast sensitivity (CS) is defined as 1/CT and was plotted as a function of ambient luminance. A Hill function defined by
+
+$$
+CS=CS_{max}\frac{L^{n}}{L_{1/2}^{n}+L^{n}}
+$$
+
+was fit to the mean luminance-CS data with L1/2 (luminance at which CS = 0.5 CSmax), CSmax (maximal CS at ~1–7 Cd/m2) and n (steepness factor) as free parameters.
+
+### Statistical analysis
 
 ONL thickness analysis was tested using one-way ANOVA. Repeated measures two-way ANOVA was performed for ERG stimuli series comparisons. Two-way ANOVA was used to analyze OMR and RBC/RPR data at various luminance/intensity levels. The ANOVAs were followed by Bonferroni’s post hoc tests. Ex vivo ERG parameters from fitted functions or measured Rmax between control and P23H mice were analyzed by a two-tailed t-test. A paired two-tailed t-test was used to determine if inhibitors affected the ERG a- or b-waves (Figure 6). T-tests were corrected from multiple comparisons when analyzing mRNA expressions (Figure 3—figure supplements 4–5) using False Discovery Rate approach and two-stage step-up method of Benjamini, Krieger and Yekutieli in GraphPad Prism version eight software (San Diego, Ca). Results are displayed as mean ± SEM and statistical significance was set at p<0.05.

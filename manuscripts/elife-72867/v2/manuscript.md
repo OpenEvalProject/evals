@@ -35,9 +35,21 @@ Here, we test both the co- and post-transcriptional consequences of inhibiting T
 
 ## Results
 
-## Type I and II PRMT inhibition promotes changes in alternative splicing
+### Type I and II PRMT inhibition promotes changes in alternative splicing
 
 PRMTs consume S-adenosyl methionine (SAM) and produce S-adenosyl homocysteine (SAH) to catalyze the post-translational methylation of either one or both terminal nitrogen atoms of the guanidino group of arginine (Figure 1a; Gary and Clarke, 1998). All PRMTs can generate monomethyl arginine (Rme1). Type I PRMTs further catalyze the formation of asymmetric NG,NG-dimethylarginine (Rme2a); Type II PRMTs (PRMT5 and 9) form symmetric NG,N’G-dimethylarginine (Rme2s). PRMT5 is the primary Type II methyltransferase (Yang et al., 2015). As previous reports indicated that lengthy treatment with PRMT inhibitors promotes aberrant RNA splicing, we wanted to determine whether alternative splicing differences occurred as early as day 2 and, if so, how they changed over time (Bezzi et al., 2013; Fong et al., 2019; Radzisheuskaya et al., 2019; Tan et al., 2019; Li et al., 2021; Sachamitr et al., 2021). Therefore, we performed poly(A)-RNA sequencing on A549 cells treated with DMSO, GSK591, MS023, or both inhibitors in combination for 2, 4, and 7 days. As 7 days of co-treatment resulted in significant cell death, these cells were not sequenced (not shown). Using replicate Multivariate Analysis of Transcript Splicing (rMATS) (Shen et al., 2014) to identify alternative splicing events, we observed significant differences in RI with GSK591, MS023, and co-treatment with both inhibitors (FDR < 0.05) relative to DMSO (Figure 1b). Furthermore, whereas RI were increased with GSK591 and co-treatment—signified by a positive difference in percent spliced in (+ΔPSI or +ΔΨ)—RI were decreased with MS023 treatment (−ΔΨ) relative to DMSO.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig1-v2.jpg)
+
+**Figure 1.:** (a) Overview of protein arginine methyltransferases and their catalyzed reactions. (b) Comparison of ΔΨ for retained introns (RI) following PRMT inhibition where ΔΨ=Ψ (PRMT inhibitor)–Ψ (DMSO). Significance determined using Kolmogorov-Smirnov test; *<0.05, ****<0.0001, ns=not significant. (c) Comparison of ΔΨ z-score for common RI after 2-day treatment with PRMT inhibitors. (d) Genome browser track of poly(A)-RNA seq aligned reads for GAS5, ANKZF1, and NOP2. Yellow shading denotes RI. Scale (0.1 kb) indicated in lower right corner. (e) RT-qPCR of RI highlighted in panel (d). Data are represented as mean ± SD. (f, g) Comparison of RI and A549-expressed intron distance to the transcription-end site (TES) (f) or intron length (g) in log10(kb). Dashed line indicates genomic median; solid line within boxplot is condition-specific median. Significance determined using Wilcoxon rank-sum test; ****<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a, b) RT-qPCR of PRMT expression (a) or RI (b) 4 days after transduction of A549 cells with gRNAs targeting the indicated PRMT. Data are represented as mean ± SD. Significance determined using Student’s t-test; *<0.05, **<0.01, ***<0.001, ****<0.0001. (c) Western blot of total cell extract following 2-day treatment with DMSO, GSK591, or MS023 or 4-day knockdown of indicated PRMTs. See Figure 1—figure supplement 1—source data 1. (d) Western blot of chromatin following 2-day treatment with DMSO, GSK591, or MS023. DB71=Direct Blue 71 membrane stain. See Figure 1—figure supplement 1—source data 2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Matrix comparing the log2(odds ratio) and significance as determined by the Fisher’s exact test of overlapping RI from indicated experimental models. (b) Web logo diagram of nucleotide distribution probability of A549 expressed or RI.
 
 We next intersected all common RI between treatment conditions in A549 at day 2 (Figure 1c). We found 239 common introns. Strikingly, whereas GSK591 and co-treatment with both inhibitors had increased inclusion, for the same introns, MS023 treatment resulted in decreased inclusion relative to DMSO (Figure 1c). When analyzing the distribution of ΔΨ for this subset of common introns (as in Figure 1b), the median ΔΨ did not significantly differ from the parent population (not shown). This observation indicates that this subset of RI is suitably representative of the larger group of PRMT-regulated RI. To confirm and quantify the presence of PRMT-regulated RI by RT-qPCR, we selected three representative genes, GAS5, ANKZF1, and NOP2. These were identified by rMATS as containing inversely regulated RI after either Type I or II PRMT inhibition (Figure 1d). Notably, while the expression of GAS5 and NOP2 was increased with GSK591 treatment, it was unchanged with MS023 treatment. Using primers that spanned the intron-exon boundaries of GAS5 intron 9, ANKZF1 intron 9, and NOP2 intron 14 and normalized by exonic primers, we confirmed the presence of the RI at day 2 of GSK591 or MS023 treatment (Figure 1e). Consistent with our rMATS data, GAS5 intron 9, ANKZF1 intron 9, and NOP2 intron 14 had increased retention upon GSK591 treatment (p=0.141, 0.016, and 0.001, respectively). Furthermore, despite decreased dynamic range inherent to quantifying intronic signal loss, we observed less retention with MS023 treatment (p<0.0001, 0.064, and 0.040, respectively) (Figure 1e).
 
@@ -45,27 +57,39 @@ To confirm that these RI were specific to the PRMT inhibitors and not a conseque
 
 We recently published an extensive proteomic and transcriptomic characterization of the A549 arginine methylome in response to GSK591 and MS023 treatment (Maron et al., 2021). In that work, we identified 2444 unique methylations across 585 proteins, the majority of which were involved in nuclear and chromatin regulation. Therefore, to increase our signal of methylarginine changes following PRMT inhibition, we specifically analyzed the chromatin fraction (Figure 1—figure supplement 1d). We observed the following changes: (1) an increase in Rme1 and Rme2s with MS023 treatment; (2) an increase in Rme2a with GSK591 treatment; (3) decreased Rme2s with GSK591 treatment; and (4) decreased Rme2a with MS023 treatment. In addition to previously published reports using these same inhibitors, our data support that GSK591 and MS023 are specific and effective in depleting cellular methylarginine (Chan-Penebre et al., 2015; Duncan et al., 2016; Eram et al., 2016; Fong et al., 2019; Plotnikov et al., 2020; Maron et al., 2021; Sachamitr et al., 2021). As MS023 inhibits multiple Type I enzymes, the consequences of MS023 treatment on RI are likely more robust than the targeted CRISPR interference due to the ability of the remaining PRMTs to scavenge each other’s substrates (Dhar et al., 2013; Eram et al., 2016; Maron et al., 2021).
 
-## PRMT-regulated RI are conserved across cell types and share common characteristics
+### PRMT-regulated RI are conserved across cell types and share common characteristics
 
 We next asked whether the RI in our data were common to other data sets in which PRMT activity was perturbed. To accomplish this, we used rMATS on publicly available data (Braun et al., 2017; Fedoriw et al., 2019; Fong et al., 2019; Radzisheuskaya et al., 2019). In these experiments—conducted in a variety of cell lines from diseases including acute myeloid leukemia (THP-1), chronic myeloid leukemia (K562), pancreatic adenocarcinoma (PANC03.27), and glioblastoma (U87)—arginine methylation was inhibited via PRMT knockdown using CRISPRi or with chemical inhibition using GSK591 or MS023. As demonstrated by the high odds ratio (log2(OR)>6) between all the data sets, we showed that there was a highly significant overlap in RI (Fisher’s exact adjusted p<1e−05, Figure 1—figure supplement 2a). This high level of overlap between cell models and inhibition approaches further establishes the importance of PRMTs in regulating RI and also supports that the observed changes in RI are on-target effects of the inhibitors.
 
 RI have previously been reported to have common characteristics such as being shorter in length, closer to transcription end site (TES), and having reduced splice site strength (Braunschweig et al., 2014). To determine the common characteristics of the PRMT-regulated RI, we analyzed their length, distances to the TES, and sequences. We found that the RI were significantly closer to the TES and shorter when compared to the genomic distribution of A549 expressed introns (p<2.2e−16) (Figure 1f and g). Moreover, in analyzing the probability of nucleotide distribution at the 5′ and 3′ splice sites, we noted both a preference for guanine three nucleotides downstream of the 5′ splice site and increased frequency of cytosine in the polypyrimidine tract (Figure 1—figure supplement 2b). This is consistent with previous literature demonstrating that RI have common features contributing to their persistence in poly(A) RNA (Bezzi et al., 2013; Braunschweig et al., 2014; Braun et al., 2017; Tan et al., 2019). Despite GSK591 and MS023 treatments’ inverse effect on RI, these characteristics did not differ between the observed retained or removed introns. Therefore, to uncover the mechanisms behind our observed splicing changes, we sought to characterize their co-transcriptional consequences.
 
-## PRMT-dependent changes in co-transcriptional splicing do not reflect changes in poly(A) RNA
+### PRMT-dependent changes in co-transcriptional splicing do not reflect changes in poly(A) RNA
 
 The inverse relationship on RI by Type I or II inhibition in addition to their TES-proximal location, shorter length, and non-canonical splice sites led us to specifically investigate the kinetics of co-transcriptional splicing. To accomplish this, we used Splicing Kinetics and Transcript Elongation Rates by Sequencing (SKaTER seq) (Casill et al., 2021). A brief overview of the method follows. To synchronize transcription, SKaTER seq uses a 3-hr 5,6-dichloro-1-β-D-ribofuranosylbenzimidazole (DRB) treatment, followed by a rapid washout to allow productive elongation to commence. Once RNA pol II begins elongating, nascent RNA is collected every 5 min until 35 min post-DRB washout. Nascent RNA is isolated via a 1 M urea wash of chromatin and an additional poly(A)-RNA depletion. Following sequencing, the rate of nascent RNA formation—including: (1) RNA pol II initiation and pause-release (spawn) rate, (2) elongation rate, (3) splicing rate, and (4) transcript cleavage rate—is calculated using a comprehensive model that determines the rates that best fit the sequencing coverage (Casill et al., 2021).
 
 As splicing changes are present 2 days following GSK591 or MS023 treatment, we performed SKaTER seq at this treatment time point (Figure 2a). To assess the accuracy of the rates determined by the SKaTER model, we used the spawn, elongation, splicing, and cleavage rates to simulate a predicted poly(A)-RNA cassette exon Ψ and compared these results with our poly(A)-RNA sequencing. We successfully predicted cassette exon Ψ detected in poly(A) RNA in DMSO (Spearman’s correlation coefficient ρ=0.54), GSK591 (ρ=0.61), and MS023 (ρ=0.55) (p<2.2e−16) treatment conditions (Figure 2—figure supplement 1a). Next, we compared spawn rate to poly(A)-RNA sequencing transcripts per million (TPM). As expected, we observed a strongly significant (p<2.2e−16) correlation between RNA pol II spawn rate and TPM in DMSO-, GSK591-, and MS023-treated cells (ρ=0.50, 0.51, and 0.51, respectively) (Figure 2—figure supplement 1b; Casill et al., 2021). Consistent with previously published reports, a comparison of splicing rates within each condition confirmed that constitutive introns splice faster than cassette exons and also faster than alternative 5′ and 3′ splice sites (Figure 2—figure supplement 1c; Pandya-Jones et al., 2013).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig2-v2.jpg)
+
+**Figure 2.:** (a) Histogram of SKaTER-seq aligned reads across WASL. (b) Distribution of splicing rates for common genomic introns. Dashed line indicates DMSO median; solid line within boxplot is condition-specific median. Significance determined using Wilcoxon rank-sum test; ****<0.0001, ns=not significant. (c) Distribution of splicing rates for common RI as in panel (b). (d–f) Distribution of splicing rates (d), time to transcribe (e), and the probability of cleavage prior to splicing (f) for RI (orange) and A549 expressed introns (dark gray) within the same condition. Dashed line indicates genomic median; solid line within boxplot is condition-specific median. Significance determined using Wilcoxon rank-sum test; *<0.05, **<0.01, ***<0.001, ****<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Correlation of SKaTER-seq model simulated cassette exon Ψ versus poly(A)-RNA seq Ψ. (b) Correlation of RNA pol II initiation and pause-release (spawn rate) with poly(A)-RNA seq transcripts per million (TPM). x-axis is spawn rate in tertiles; y-axis is poly(A)-RNA seq ln(TPM). (c) Distribution of splicing rate versus splicing event as determined by SKaTER-seq modeling. A5SS=alternative 5′ splice site, A3SS=alternative 3′ splice site. Dashed line indicates constitutive intron median; solid line within boxplot is event-specific median. Significance determined using Kolmogorov-Smirnov test; *<0.05, **<0.01, ***<0.001, ****<0.0001, ns=not significant.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Correlation of splicing rate and intron position in cells treated with DMSO, GSK591, or MS023 for 2 days. (b) Probability of cleavage prior to splicing for common genome-wide introns relative to DMSO. Dashed line indicates DMSO median; solid line within boxplot is condition-specific median. Significance determined using Wilcoxon rank-sum test; **<0.01, ****<0.0001. (c) Cumulative distribution functions comparing the probability of transcript cleavage prior to intron splicing and intron position. Color range indicates intron position where light blue is closer to transcription start site and dark blue closer to transcription end site.
+
 Poly(A)-RNA sequencing had revealed opposing splicing changes with PRMT inhibition: increased RI with GSK591 treatment and decreased RI with MS023 treatment (Figure 1b). To determine if this was a direct result of altered splicing rates, we used the SKaTER-seq data to ask how inhibiting PRMTs affected the genome-wide distribution of splicing rates. Surprisingly, compared to the DMSO control, GSK591 treatment did not significantly change the median of this distribution (Wilcoxon rank-sum test, p>0.05), while MS023 treatment resulted in significantly slower global splicing rates (p<2.2e−16) (Figure 2b). We next compared the splicing rates of introns that were retained with PRMT inhibition to the same introns in DMSO-treated cells. We found no significant difference in the median of GSK591-treated cells compared to DMSO (p=0.53), while MS023 treatment led to slower splicing rates (p=0.07) (Figure 2c). As we initially hypothesized that a slower splicing rate should increase RI, this result was surprisingly inconsistent with the PRMT-inhibited changes seen in poly(A) RNA (Figure 1b). These observations therefore suggested that changes in intron retention following PRMT inhibition were not entirely due to co-transcriptional splicing.
 
-## RI share unique characteristics that limit their co-transcriptional removal
+### RI share unique characteristics that limit their co-transcriptional removal
 
 We next asked how RI splicing rates compared to non-RI. We observed that, when compared to all introns, introns that were retained in GSK591- or MS023-treated cells were slower to splice (p=0.01 and p=0.17, respectively) (Figure 2d). However, consistent with slower splicing as a general feature of RI, analysis of these same RI in DMSO-treated cells similarly revealed a significantly slower splicing rate (p=3.6e−6) (Figure 2d, left violin plots). As we previously found that RI were more likely to be closer to the TES (Figure 1f), we asked whether intron position correlated with splicing rate. Indeed, we determined that introns located closer to the TES had slower splicing rates (Figure 2—figure supplement 2a). Importantly, we had also previously found that RI were significantly shorter than non-RI (Figure 1g). The time required to transcribe an intron is a determining factor of splice site availability and co-transcriptional splicing outcomes (Fong et al., 2014). Thus, we next analyzed the time required to transcribe RI in comparison to non-RI. We found that RI transcription was completed significantly faster in DMSO-, GSK591-, and MS023-treated cells (p=1.03e−24, 1.94e−15, and 3.00e−7, respectively) (Figure 2e). This observation, together with the proximity of RI to the TES and their slower splicing rate, suggests that RI in all conditions have a decreased window of opportunity for splicing to occur co-transcriptionally. Moreover, the lack of specific co-transcriptional splicing changes in RI following PRMT inhibition further supports that a post-transcriptional mechanism underlies the observed PRMT-dependent changes in poly(A) RNA.
 
 The paradox that—despite their slower co-transcriptional splicing rate—RI are decreased with Type I PRMT inhibition led us to hypothesize that PRMTs exert their control over splicing post-transcriptionally. To test this hypothesis, we used the elongation, splicing, and cleavage rates determined by SKaTER seq to calculate the probability that a transcript will be cleaved from RNA pol II prior to a given intron being spliced co-transcriptionally. Consistent with most splicing being co-transcriptional, we found that the median probability of cleavage prior to splicing genome-wide was 9.7% in DMSO-, 8.7% in GSK591-, and 18.1% in MS023-treated cells (Figure 2—figure supplement 2b). The global distribution was significantly reduced with GSK591 treatment (p=0.002) and increased with MS023 treatment (p<2.2e−16) when compared to DMSO treatment. We next analyzed the probability of cleavage prior to splicing for RI compared to non-RI. Consistent with the hypothesis that PRMTs regulate RI post-transcriptionally, the median probability of transcript cleavage prior to co-transcriptional splicing was significantly higher for RI in DMSO- (p=2.65e-14), GSK591- (p=2.70e-9), and MS023-treated (p=0.004) cells (Figure 2f). Furthermore, intron position was strongly predictive of whether transcript cleavage was likely to occur prior to splicing: TES proximal introns had a higher probability of cleavage prior to their being spliced (Figure 2—figure supplement 2c). Altogether, the proximity of RI to the TES, shorter length, and slower splicing rate likely drives their decreased probability of being spliced co-transcriptionally.
 
-## PRMTs regulate RI post-transcriptionally
+### PRMTs regulate RI post-transcriptionally
 
 The lack of evidence supporting a co-transcriptional mechanism for PRMTs in regulating RI led us to hypothesize that RI are regulated post-transcriptionally. Specifically, we hypothesized that MS023 promotes more efficient post-transcriptional intron decay, whereas GSK591 promotes less efficient post-transcriptional intron decay. To test this model, we pre-treated A549 cells for 2 days with GSK591 or MS023 and then blocked transcription using actinomycin D (ActD) for 60 min. We then performed poly(A)-RNA sequencing to determine the post-transcriptional consequences of PRMT inhibition on RI (Figure 3a). Genome browser tracks demonstrated reduced RI and flanking exon signal intensity following 60 min of ActD treatment (Figure 3b). Further quantification of RI common to both GSK591- and MS023-treated cells relative to their non-ActD treated controls—normalized to the abundance of their flanking exons—demonstrated a negative median log2 fold change in all conditions, indicating less RI abundance in the ActD-treated samples. Moreover, consistent with a post-transcriptional mechanism, we observed significantly decreased intron decay in GSK591-treated cells (median = –0.106) compared to DMSO (–0.220) or MS023-treated cells (–0.275) (p=0.002 relative to DMSO) (Figure 3c). The RI loss following ActD in MS023-treated cells was not significantly different than DMSO, although the median was more negative suggesting a trend toward increased decay (p=0.36) (Figure 3c).
 
@@ -75,15 +99,23 @@ The lack of evidence supporting a co-transcriptional mechanism for PRMTs in regu
 
 We next validated these changes in RI following treatment with ActD using RT-qPCR for our three candidate introns described above (Figure 1e). GSK591 treatment resulted in significantly decreased intron decay relative to DMSO for GAS5 intron 9 and NOP2 intron 14 but not ANKZF1 intron 9 after 60 min of ActD treatment (p=0.06, 0.0005, and 0.74, respectively) (Figure 3d). Conversely, intron decay increased with MS023 treatment relative to DMSO for GAS5 intron 9 but not ANKZF1 intron 9 or NOP2 intron 14 (p=0.0043, 0.27, and 0.98, respectively) (Figure 3d). As the changes in RI following transcriptional inhibition with ActD reflect those of PRMT inhibition alone—increased RI with GSK591 and decreased RI with MS023—these results support the hypothesis that PRMTs regulate RI post-transcriptionally.
 
-## PRMTs regulate the binding of RNA processing factors to chromatin-associated poly(A) RNA
+### PRMTs regulate the binding of RNA processing factors to chromatin-associated poly(A) RNA
 
 We next sought to identify the factors responsible for mediating the post-transcriptional consequences of PRMT inhibition. Previous reports have highlighted that delayed co-transcriptional splicing leads to chromatin retention of poly(A) transcripts (Brody et al., 2011; Pandya-Jones et al., 2013; Yeom et al., 2021). Therefore, we analyzed differences in proteins bound to chromatin-associated poly(A) RNA. To accomplish this, we performed UV-crosslinking of A549 cells 2 days after treatment with DMSO, GSK591, or MS023. We then isolated the chromatin fraction, and after a high-salt wash, sheared the material with a light, brief sonication. This was followed by poly(A) enrichment using oligo(dT) beads. To control for non-specific interactions, we performed high stringency washes and added an excess of free poly(A) to our negative control. After elution of the bound poly(A) RNA, we digested the RNA and analyzed the remaining material with liquid chromatography coupled online with tandem mass spectrometry (LC-MS/MS) (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig4-v2.jpg)
+
+**Figure 4.:** (a) Overview of chromatin-associated poly(A)-RNA LC-MS/MS experiment. (b, c) Dot plot of proteins bound to chromatin (b) or chromatin-associated poly(A) RNA (c) relative to DMSO. Circle size is proportional to −log2(p). Colored values denote factors with ontology pertaining to RNA splicing, transport, or degradation. The names of the top 15 significant proteins are labeled. Significance determined using a heteroscedastic t-test. (d, e) Venn diagram comparing proteins containing methylarginine (Maron et al., 2021) and those that were differentially enriched in the chromatin (d) or chromatin-associated poly(A) (e) fractions following PRMT inhibition. (f) Western blot of chromatin following 2-day treatment with DMSO, GSK591, or MS023. See Figure 4—source data 1. (g) Immunoprecipitation and analysis of CHTOP and SNRPB methylarginine following treatment with DMSO, GSK591, or MS023 for 2 days. See Figure 4—source data 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a, b) Enriched biological processes found in the proteome of input chromatin (a) and chromatin-associated poly(A) RNA (b) in A549 cells treated with GSK591 or MS023 relative to DMSO.
 
 Across the three conditions, we identified 1832 unique proteins on chromatin (Supplementary file 1). Following GSK591 treatment, 118 had significantly altered abundance with 70 increased and 48 decreased (p<0.05). In the MS023-treated chromatin, we observed 255 differentially enriched proteins, with 150 increasing in abundance and 105 decreasing (p<0.05). The chromatin-associated poly(A) enriched fraction—after background subtraction—contained 1251 unique proteins. Of these, 32 were differentially bound in the GSK591-treated samples with 24 increased and eight decreased (p<0.05). In the MS023-treated cells, there were 55 proteins with altered binding—37 increased and 18 decreased (p<0.05).
 
 To identify the biological processes most affected by these inhibitors, we performed overrepresentation analysis of the top 200 enriched proteins (Figure 4—figure supplement 1a and b). In the chromatin fraction of both GSK591- and MS023-treated cells, we observed a significant enrichment of gene ontology terms for RNA splicing and ribonucleoprotein complex biogenesis (Padj<0.05) (Figure 4—figure supplement 1a). This was consistent with the gross aberrations in splicing following treatment with these inhibitors. In GSK591-treated cells, there was also a unique enrichment for the regulation of protein localization to Cajal bodies (Padj<0.05). Conversely, in MS023-treated cells, we observed a highly significant enrichment for nuclear RNA export and the regulation of RNA catabolism (Padj<0.05). When looking specifically at the poly(A)-enriched fraction, we noted similar ontologies as those in the chromatin fraction (Figure 4—figure supplement 1b).
 
-## PRMT inhibition perturbs binding of nuclear export factors and snRNPs to poly(A) RNA
+### PRMT inhibition perturbs binding of nuclear export factors and snRNPs to poly(A) RNA
 
 Of the proteins that were differentially bound to the input chromatin and poly(A) RNA following PRMT inhibition, we were interested in candidates that were most likely to mediate post-transcriptional RI. To accomplish this, we took into consideration the enriched gene ontology categories described above and highlighted the most significant factors involved in RNA splicing, transport, and degradation relative to their log2 fold change (Figure 4b and c). In the input chromatin of GSK591-treated cells, we observed increased signal in the snRNP assembly factor SMN, as well as the snRNP component SNRPB (SmB/B′) (Figure 4b). We also observed enrichment of SNRPB in the poly(A)-enriched fraction (Figure 4c). Previous reports have documented changes in exon skipping following SNRPB knockdown—including within its own transcript—that resemble changes seen with PRMT5 knockdown (Saltzman et al., 2011; Bezzi et al., 2013). Together with the fundamental role of snRNPs in assembling the spliceosome, this suggested that SNRPB methylation may regulate intron retention.
 
@@ -93,11 +125,23 @@ To further refine the PRMT targets that regulate RI, we compared these data with
 
 To validate changes in CHTOP and SNRPB chromatin-association following PRMT inhibition, we isolated the chromatin fraction and probed for CHTOP and SNRPB. In MS023-treated cells, we observed faster CHTOP gel migration; this is consistent with its hypomethylation (Figure 4f). In GSK591-treated cells, there was increased chromatin-bound SNRPB (Figure 4f). To further confirm that the changes in methylarginine were specific to CHTOP and SNRPB, we performed an immunoprecipitation for these proteins following PRMT inhibition (Figure 4g). Subsequent analysis of methylarginine confirmed loss of CHTOP Rme2a with MS023 treatment and SNRPB Rme2s with GSK591 treatment (Figure 4g). Taken together, the differential enrichment of ALYREF, DDX39B, and POLDIP3 on chromatin, along with CHTOP on poly(A) RNA following treatment with MS023—in addition to their dependence on Rme2a—presented the possibility that the TREX complex may have an important role in the post-transcriptional consequences of Type I PRMTs on RI. Moreover, as snRNPs are fundamental in splicing, increased SNRPB in both the input and poly(A) fractions following treatment with GSK591—as well as the loss of Rme2s—prompted us to further evaluate the role of SNRPB in the regulation of RI.
 
-## Knockdown of CHTOP and SNRPB recapitulates changes in RI seen following PRMT inhibition
+### Knockdown of CHTOP and SNRPB recapitulates changes in RI seen following PRMT inhibition
 
 To address the question of whether CHTOP, ALYREF, or SNRPB were involved in regulation of RI, we first checked whether there was any publicly available RNA-seq data in which these proteins were perturbed. We found two independent data sets where SNRPB was knocked down in U251 glioblastoma cells or in HeLa cells (Saltzman et al., 2011; Correa et al., 2016). We also identified two independent data sets where CHTOP or ALYREF were knocked down in HEK293T cells or HeLa cells, respectively (Fan et al., 2019; Viphakone et al., 2019). Strikingly, after performing rMATS on these data sets, we observed that both SNRPB knockdown (SNRPBkd) experiments strongly recapitulated the increase in RI seen with GSK591 treatment (Figure 5a). Likewise, although ALYREF knockdown did not significantly affect RI levels (Figure 5—figure supplement 1a), CHTOP knockdown (CHTOPkd) resulted in a global decrease in RI inclusion, paralleling that seen with MS023 treatment (Figure 5a). To understand if the RI were common across data sets, we intersected either the SNRPBkd or CHTOPkd RI with the RI seen following GSK591 or MS023 treatment (Figure 5b and c). There were 535 mutual RI between GSK591 and both the SNRPBkd data sets, most of which had the same effect on ΔΨ (log2 OR 7.84 for GBM and 7.56 for HeLa, p<1e−300) (Figure 5b). The opposite was true when comparing GSK591 to CHTOPkd—we observed 620 shared RI (log2 OR 7.49, p<1e−300) that largely contrasted in their ΔΨ (Figure 5b). When compared to SNRPBkd and CHTOPkd, MS023 treatment had the inverse effect to GSK591 treatment. There were 164 overlapping RI between both SNRPBkd data sets (log2 OR 6.68 for GBM and 6.38 for HeLa, p<7e−290) with the majority having opposite ΔΨ values; CHTOPkd and MS023 treatment shared 201 RI (log2 OR 6.46, p<2e−279), with the majority having coincident ΔΨ values (Figure 5c). Consistent with PRMTs regulating a common group of RI, SNRPBkd and CHTOPkd were significantly correlated with either GSK591 or MS023 treatment (Figure 5d). Remarkably, the correlations that were positive for GSK591 treatment were negative for MS023 treatment, reflecting the changes seen in poly(A)-RNA seq and consistent with SNRPB and CHTOP mediating the effects of PRMT inhibition on RI.
 
-## Sm arginine mutants increase RI
+![Figure 5.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig5-v2.jpg)
+
+**Figure 5.:** (a) Comparison of ΔΨ for RI following SNRPB knockdown (kd), GSK591 treatment, MS023 treatment, and CHTOPkd where ΔΨ=Ψ (Treatment)–Ψ (Control). (b, c) Comparison of ΔΨ z-score for common RI between SNRPBkd and CHTOPkd with either GSK591 (b) or MS023 (c) treatment. (d) Spearman rank correlation of ΔΨ for common RI between SNRPBkd and CHTOPkd with either GSK591 or MS023 treatment. (e) Schematic of Sm expression constructs where lollipops represent individual methylarginines. (f) RT-qPCR of RI following transduction with Sm R-to-A or R-to-K mutants relative to wild-type (WT). Data are represented as mean ± SD. Significance determined using Student’s t-test; *<0.05, ***<0.001, ****<0.0001. (g) Schematic of CHTOP expression construct as in panel (e). (h) RT-qPCR of RI following transduction with CHTOP R-to-A or R-to-K mutants relative to WT. Data are represented as mean ± SD. Significance determined using Student’s t-test; ***<0.001, ****<0.0001, ns=not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Comparison of ΔΨ for RI following ALYREFkd and CHTOPkd where ΔΨ=Ψ (Treatment)–Ψ (Control). (b) RT-qPCR of Exogenous Sm R-to-A and R-to-K mutants normalized to wild-type (WT) expression vector. Data are represented as mean ± SD. (c) Western blot of total cell extract from A549 cells expressing CHTOP or Sm WT, R-to-A, or R-to-K mutants. DB71=Direct Blue 71 membrane stain. See Figure 5—figure supplement 1—source data 1. (e) RT-qPCR of Exogenous CHTOP R-to-A and R-to-K mutants normalized to WT expression vector. Data are represented as mean ± SD. (f) RT-qPCR of Endogenous CHTOP in A549 cells expressing CHTOP WT, R-to-A, or R-to-K mutants. Data are represented as mean ± SD.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Western blot analysis of FLAG-targeted immunoprecipitation in A549 cells expressing Sm wild-type (WT), R-to-A, or R-to-K mutants. DB71=Direct Blue 71 membrane stain. See Figure 5—figure supplement 2—source data 1. (b) Northern blot analysis of snRNAs from FLAG- or SNRPB-targeted immunoprecipitation in A549 cells expressing Sm WT, R-to-A, or R-to-K mutants. See Figure 5—figure supplement 2—source data 2. (c) Northern blot analysis of snRNAs from SNRPB-targeted immunoprecipitation in A549 cells treated with DMSO, GSK591, or MS023 for 7 days. See Figure 5—figure supplement 2—source data 3. (d) Indirect immunofluorescence for FLAG (top/red) or SNRPB (bottom/green) in A549 cells expressing Sm WT, R-to-A, or R-to-K mutants. DAPI-nuclear stain is blue. See Figure 5—figure supplement 2—source data 4. (e) Indirect immunofluorescence for SNRPB (green) in A549 cells treated with DMSO, GSK591, or MS023 for 2 days. DAPI-nuclear stain is blue. See Figure 5—figure supplement 2—source data 5.
+
+### Sm arginine mutants increase RI
 
 To address the question of whether Sm arginine methylation was directly involved in the regulation of RI, we designed a single vector containing SNRPD3, SNRPB, and SNRPD1—the Sm targets of PRMT5—as either wild-type (WT), R-to-A, or R-to-K mutants separated by 2a-self cleaving peptides (P2A) and modified with FLAG- (SNRPD3 and SNRPB) or V5-affinity (SNRPD1) tags at their N-termini (Figure 5e). To identify the appropriate arginines to mutate, we utilized our proteomic data (Maron et al., 2021) as well as a previously published high-resolution crystal structure of the U4/U6.U5 tri-snRNP (Charenton et al., 2019). As we showed that PRMTs prefer to methylate intrinsically disordered regions (IDRs), we mutated all 29 arginines within Sm IDRs and within GR repeats (Figure 5e; Maron et al., 2021). We then transduced A549 cells with the constructs. We achieved similar expression of the exogenous Sm proteins relative to the endogenous between WT and mutant constructs at the level of RNA (Figure 5—figure supplement 1b). However, likely owing to the tight cellular control of total Sm levels, we were unable to achieve ample overexpression with the WT vector (Figure 5—figure supplement 1c; Prusty et al., 2017). We observed a migratory shift toward a lower molecular weight in the R-to-A mutants when compared to the WT or R-to-K mutants (Figure 5—figure supplement 1c). We also observed a strong Rme2s signal on the FLAG-SmB WT protein that was absent on the R-to-A and R-to-K mutants (Figure 5—figure supplement 1c).
 
@@ -107,17 +151,17 @@ In addition to accounting for snRNP assembly, we also tested whether the mutagen
 
 As our primary question was how Sm methylarginine influences RI levels, we analyzed intron inclusion in our three candidate transcripts, GAS5 intron 9, ANKZF1 intron 9, and NOP2 intron 14 following transduction with Sm WT, R-to-A, or R-to-K mutants. With the R-to-A Sm mutants, we observed increased inclusion of all three RI (p<0.05) (Figure 5f). We also detected a significant increase in GAS5 intron 9 (p<0.001) with the Sm R-to-K mutants and a trend toward increased RI in ANKZF1 intron 9 (p=0.23) and NOP2 intron 14 (p=0.16). Thus, mutagenesis of Sm methylarginine sites increased RI in our candidate transcripts. The greater effect of the R-to-A mutants suggests that the charge of arginine itself may also play an important role in regulating RI levels.
 
-## CHTOP arginine mutants decrease RI
+### CHTOP arginine mutants decrease RI
 
 We performed similar experiments with CHTOP, in which we mutated 30 arginines present within the centrally located ‘GAR’ motif—the preferred PRMT1 substrate recognition motif—to either alanine or lysine (Figure 5g). This region of CHTOP has been previously shown to be required for PRMT1-catalyzed methylarginine (van Dijk et al., 2010). We transduced A549 cells with the constructs and performed RT-qPCR for GAS5 intron 9, ANKZF1 intron 9, or NOP2 intron 14. We achieved similar expression of the mutant CHTOP proteins when compared to the WT at the level of RNA and protein (Figure 5—figure supplement 1c and d). Interestingly, when transducing cells with the WT CHTOP, we noted a gross downregulation of the endogenous transcript (Figure 5—figure supplement 1e). CHTOP has been previously reported to control its own expression as part of an autoregulatory loop (Izumikawa et al., 2016). We did not observe this compensation with either the R-to-A or R-to-K mutants (Figure 5—figure supplement 1e). Consistent with the gel shift in CHTOP seen following MS023 treatment, we observed a similar change in the R-to-A mutant when compared to the WT or R-to-K mutants. Moreover, supporting a role for CHTOP methylarginine in Type I PRMT-dependent RI inclusion, in both R-to-A and R-to-K mutants, we observed decreased inclusion in GAS5 intron 9 (p<0.001) (Figure 5h). We also saw a trend toward decreased inclusion of ANKZF1 intron 9 (p=0.23 and 0.26) and significantly decreased inclusion of NOP2 intron 14 (p<0.0001) in the R-to-K mutant, but not the R-to-A mutant. Taken together, these experiments support that CHTOP methylarginine is involved in regulating RI levels.
 
-## PRMT-regulated RI are detained within the nucleoplasm and chromatin
+### PRMT-regulated RI are detained within the nucleoplasm and chromatin
 
 PRMT5 has been proposed to specifically regulate DI—introns that persist in poly(A) RNA but remain nuclear (Braun et al., 2017). However, direct experimental evidence—namely fractionation of subcellular compartments to identify the location of RI—has been lacking. To address the question of whether the RI in our data are nuclear and therefore DI, we first ran rMATS on publicly available ENCODE poly(A)-RNA seq from cytoplasmic and nuclear fractions of A549 cells (ENCSR000CTL and ENCSR000CTM, respectively). We observed an enrichment of RI within the nuclear fraction: 97% of significant RI events (FDR<0.05) had a +ΔΨ, where ΔΨ is the difference in Ψ between the nuclear and cytoplasmic compartments. We then intersected these data with the PRMT-dependent RI and noted that there was a significant overlap with both GSK591 (log2 OR 8.89, p<1e−300) and MS023 treatment (log2 OR 7.75, p<1e−300) when compared to all A549 expressed introns (Figure 6a). We also observed that GAS5 intron 9, ANKZF1 intron 9, and NOP2 Intron 14 were significantly increased in nuclear poly(A) RNA (GAS5 and ANKZF1 not shown) (Figure 6b).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/72867/elife-72867-fig6-v2.jpg)
 
-**Figure 6.:** (a) Scatter plot of ΔΨ for common RI in A549 nuclear/cytoplasmic fractions and GSK591 (left, green) or MS023 (right, purple) treated cells where ΔΨ=Ψ (Nuclear/PRMT inhibition)–Ψ (Cytoplasm/DMSO). (b) Genome browser track of poly(A)-RNA seq aligned reads for NOP2 in A549 cytoplasmic or nuclear fractions. (c) Western blot of cellular fractions following 2-day treatment with DMSO, GSK591, or MS023. DB71=Direct Blue 71 membrane stain. See Figure 6—source data 1. (d) RT-qPCR of RI or non-RI from cytoplasmic, nuclear, or chromatin fractions of A549 cells treated with DMSO, GSK591, or MS023 for 2 days. Data are represented as mean ± SD. Significance determined using two-way analysis of variance with Tukey’s multiple comparisons test; *<0.05, **<0.01, ***<0.001, ****<0.0001, ns=not significant. (e) RT-qPCR of RI (−) and (+) ActD relative to DMSO from cytoplasmic, nuclear, or chromatin fractions. Data are represented as mean ± SD. Significance determined using Student’s t-test; *<0.05, **<0.01, ***<0.001, ****<0.0001, ns=not significant.Figure 6—source data 1.Figure 6c.
+**Figure 6.:** (a) Scatter plot of ΔΨ for common RI in A549 nuclear/cytoplasmic fractions and GSK591 (left, green) or MS023 (right, purple) treated cells where ΔΨ=Ψ (Nuclear/PRMT inhibition)–Ψ (Cytoplasm/DMSO). (b) Genome browser track of poly(A)-RNA seq aligned reads for NOP2 in A549 cytoplasmic or nuclear fractions. (c) Western blot of cellular fractions following 2-day treatment with DMSO, GSK591, or MS023. DB71=Direct Blue 71 membrane stain. See Figure 6—source data 1. (d) RT-qPCR of RI or non-RI from cytoplasmic, nuclear, or chromatin fractions of A549 cells treated with DMSO, GSK591, or MS023 for 2 days. Data are represented as mean ± SD. Significance determined using two-way analysis of variance with Tukey’s multiple comparisons test; *<0.05, **<0.01, ***<0.001, ****<0.0001, ns=not significant. (e) RT-qPCR of RI (−) and (+) ActD relative to DMSO from cytoplasmic, nuclear, or chromatin fractions. Data are represented as mean ± SD. Significance determined using Student’s t-test; *<0.05, **<0.01, ***<0.001, ****<0.0001, ns=not significant.
 
 To validate that these RI remain nuclear following PRMT inhibition, and to further resolve their localization within the nucleus, we treated A549 cells with DMSO, GSK591, and MS023 and isolated cytoplasmic, nucleoplasmic, and chromatin fractions. We first confirmed the integrity of our fractionation approach by comparing the distribution of GAPDH, LaminB2, U1-70k, and H3 (Figure 6c). Whereas GAPDH was strongly enriched in the cytoplasm, LaminB2 was completely nuclear and distributed between the chromatin and nucleoplasm. Furthermore, U1-70k was nucleoplasmic, while H3 was only found on chromatin. This is consistent with results from previously published reports (Bhatt et al., 2012; Yeom et al., 2021). We next analyzed the cellular distribution of SNRPB, SNRPD3, and CHTOP as well as Rme2s and Rme2a. Interestingly, we observed an increase in nucleoplasmic and chromatin-bound SNRPB in cells treated with GSK591, with the majority of SNRPB located in the nucleoplasm (Figure 6c). A similar distribution was also seen for SNRPD3. When analyzing Rme2s across cellular fractions, there was a significant decrease in the cytoplasmic, nucleoplasmic, and chromatin fractions with GSK591 treatment and a slight increase in Rme2s signal with MS023 treatment that was most apparent in the nucleoplasm (Figure 6c). When analyzing the distribution of CHTOP across cellular fractions, we observed an enrichment in the nucleoplasm and chromatin; a migration shift toward a lower molecular weight with MS023 treatment was also seen in both fractions (Figure 6c). Furthermore, MS023 resulted in a strong decrease in Rme2a across all cellular fractions, while GSK591 treatment slightly increased Rme2a levels in the nucleoplasm and chromatin (Figure 6c).
 
@@ -149,27 +193,310 @@ As PRMTs have thousands of diverse substrates—many of which are involved in RN
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>Cat#: CCL-185RRID:CVCL_0023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Wild-type FLAG-SmD3-p2a-FLAG-SmB-p2a-V5-SmD1</td>
+      <td>VectorBuilder</td>
+      <td>VB210103-1026dg</td>
+      <td>Lentiviral construct to transfect and express the wild-type Sm proteins.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>R-to-A FLAG-SmD3-p2a-FLAG-SmB-p2a-V5-SmD1</td>
+      <td>VectorBuilder</td>
+      <td>VB210103-1027ttz</td>
+      <td>Lentiviral construct to transfect and express the R-to-A mutant Sm proteins.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>R-to-K FLAG-SmD3-p2a-FLAG-SmB-p2a-V5-SmD1</td>
+      <td>VectorBuilder</td>
+      <td>VB210317-1185yxr</td>
+      <td>Lentiviral construct to transfect and express the R-to-K mutant Sm proteins.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Wild-type FLAG-CHTOP</td>
+      <td>VectorBuilder</td>
+      <td>VB210427-1238rhx</td>
+      <td>Lentiviral construct to transfect and express the wild-type CHTOP protein.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>R-to-A FLAG-CHTOP</td>
+      <td>VectorBuilder</td>
+      <td>VB210427-1241jrw</td>
+      <td>Lentiviral construct to transfect and express the R-to-A CHTOP protein.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>R-to-K FLAG-CHTOP</td>
+      <td>VectorBuilder</td>
+      <td>VB210427-1242gjh</td>
+      <td>Lentiviral construct to transfect and express the R-to-K CHTOP protein.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>dCas9-KRAB-MeCP2</td>
+      <td>VectorBuilder</td>
+      <td>VB900120-5303pyt</td>
+      <td>Lentiviral construct to transfect and express dCas9-KRAB-MeCP2.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>gRNA parent vector</td>
+      <td>VectorBuilder</td>
+      <td>VB210119-1169qwd</td>
+      <td>Lentiviral construct to clone, transfect, and expressPRMTkd gRNAs (see Materials and methods).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human SNRPB (Rabbit polyclonal)</td>
+      <td>ProteinTech</td>
+      <td>Cat#: 16807-1-AP; RRID:AB_2878319</td>
+      <td>WB: 1:2000IF: 1:125IP: 5 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: F1804; RRID:AB_262044</td>
+      <td>WB: 1:10,000IF: 1:50IP: 5 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 35552; RRID:AB_844398</td>
+      <td>IF: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A28180RRID:AB_2536164</td>
+      <td>IF: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rme2s (Rabbit polyclonal)</td>
+      <td>CST</td>
+      <td>Cat#: 13222SRRID:AB_2714013</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rme2a (Rabbit polyclonal)</td>
+      <td>CST</td>
+      <td>Cat#: 13522SRRID:AB_2665370</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rme1 (Rabbit polyclonal)</td>
+      <td>CST</td>
+      <td>Cat#: 8015SRRID:AB_10891776</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CHTOP (Rat monoclonal)</td>
+      <td>LSBio</td>
+      <td>Cat#: LS-B11259-50</td>
+      <td>WB: 1:2000IP: 5 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human SNRPD3(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab157118</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human LaminB2 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: MA1-06104RRID:AB_2136415</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human U1-70k (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc-390988</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human H3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab1791RRID:AB_302613</td>
+      <td>WB: 1:100,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human GAPDH (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab9484RRID:AB_307274</td>
+      <td>WB: 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human PRMT1 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: 07-404RRID:AB_11212188</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human PRMT5 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: 07-405RRID:AB_310589</td>
+      <td>WB: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat IgG HRP (Goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: AP183PMI</td>
+      <td>WB: 1:100,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG HRP (Goat polyclonal)</td>
+      <td>Cytiva</td>
+      <td>Cat#: NA934</td>
+      <td>WB: 1:100,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG HRP (Goat polyclonal)</td>
+      <td>Cytiva</td>
+      <td>Cat#: NA931</td>
+      <td>WB: 1:100,000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Acros Organics</td>
+      <td>Cat#: D/4125/PB08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK591</td>
+      <td>Cayman</td>
+      <td>Cat#: 18354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MS023</td>
+      <td>Cayman</td>
+      <td>Cat#: 18361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Actinomycin D</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A1410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td>RRID:SCR_004463</td>
+      <td>Version 2.4.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>rMATS</td>
+      <td>Shen et al., 2014</td>
+      <td>RRID:SCR_013049</td>
+      <td>Version 4.1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kallisto</td>
+      <td>Bray et al., 2016</td>
+      <td>RRID:SCR_016582</td>
+      <td>Version 0.46.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer software</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>Version 2.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Project</td>
+      <td>RRID:SCR_001905</td>
+      <td>Version 4.0.2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI Prolong gold</td>
+      <td>Invitrogen</td>
+      <td>Cat#: P36941</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 A549 and HEK293T cells were cultured in DMEM (Corning) supplemented with 10% FBS (Hyclone), 100 µg/ml streptomycin, and 100 I.U./ml penicillin (Corning) and maintained at 37°C with humidity and 5% CO2. For this study, fresh cells were purchased from ATCC and tested routinely for Mycoplasma (PCR, FWD primer: ACTCCTACGGGAGGCAGCAGT, REV primer: TGCACCATCTGTCACTCTGTTAACCTC) (Dussurget and Roulland-Dussoix, 1994).
 
-## RT-qPCR
+### RT-qPCR
 
 RNA purification was performed using RNeasy Plus (QIAGEN) or TRIzol (Thermo Fisher Scientific). Isolated RNA was reverse transcribed with Moloney Murine Leukemia Virus (MMLV) reverse transcriptase (Invitrogen) and oligo(dT) primers. LightCycler 480 Sybr Green I (Roche) master mix was used to quantitate cDNA with a LightCycler 480 (Roche). An initial 95°C for 5 min was followed by 45 cycles of amplification using the following settings: 95°C for 15 s, 60°C for 1 min. Primer sequences can be found in Supplementary file 2.
 
-## Poly(A)-RNA sequencing
+### Poly(A)-RNA sequencing
 
 RNA was extracted using RNeasy Mini Kit (QIAGEN) following the manufacturer’s protocol. RNA quantitation and quality control were accomplished using the Bioanalyzer 2100 (Agilent Technologies). Stranded RNA seq libraries were constructed by Novogene Genetics US. The barcoded libraries were sequenced by Novogene on an Illumina platform using 150 nt paired-end libraries generating ~30–40 million reads per replicate. Reads were trimmed and aligned to the human genome (hg19) with Spliced Transcripts Alignment to a Reference (STAR) (Dobin et al., 2013). Alternative splicing events were determined using rMATS (version 4.0.2) (Shen et al., 2014). Expression was determined using Kallisto (Bray et al., 2016). IGV (Broad Institute) was used as the genome browser. Graphs pertaining to RNA seq were created using Gviz (Hahne and Ivanek, 2016) in R (4.0.2) and assembled in Adobe Illustrator 2020.
 
-## Splicing kinetics and transcript elongation rates by sequencing
+### Splicing kinetics and transcript elongation rates by sequencing
 
 SKaTER seq was performed as described (Casill et al., 2021). Briefly, A549 cells were grown with 0.01% DMSO, 1 µM GSK591 (Cayman), or 1 µM MS023 (Cayman) for 2 days followed by addition of 100 µM DRB (Cayman). DRB-containing media was removed, and the cells were incubated at 37°C until the indicated time point. The cells were washed once with 4°C phosphate-buffered saline (PBS), and lysed by addition of 1 ml CL buffer (25 mM Tris pH 7.9 at 4°C, 150 mM NaCl, 0.1 mM EDTA, 0.1% Triton X-100, and 1 mM DTT) supplemented with protease inhibitor (Thermo Fisher Scientific) and Drosophila melanogaster S2 cell spike-in. Next, lysate was centrifuged at 845×g for 5 min at 4°C. The pellet resuspended in 1 ml CL buffer without S2 spike-in and incubated on ice for 5 min. Repeat centrifugation was performed. The supernatant was removed, and cells resuspended in 100 µl GR buffer (20 mM Tris pH 7.9, 75 mM NaCl, 0.5 mM EDTA, 50% glycerol, and 0.85 mM DTT) followed by addition of 1.1 ml NL buffer (20 mM HEPES pH 7.6, 300 mM NaCl, 7.5 mM MgCl2, 1% NP-40, 1 mM DTT, and 1 M Urea). Following a 15-min incubation, the lysate was spun at 16,000×g for 10 min and the resulting chromatin pellet was resuspended and stored in TRIzol (Thermo Fisher Scientific) at –80°C. RNA isolation was followed by poly(A) depletion using the NEBNext Poly(A) RNA magnetic isolation module (NEB). RNA quantitation and quality control were accomplished using the Bioanalyzer 2100 (Agilent Technologies). Stranded RNA-seq libraries were prepared using the KAPA RNA HyperPrep Kit with RiboErase (HMR) and KAPA Unique Dual-Indexed Adapters (Roche) according to instructions provided by the manufacturer. The barcoded paired-end libraries were sequenced by Novogene using a NovaSeq S4, generating ~70 million reads per replicate.
 
-## Actinomycin D post-transcriptional processing
+### Actinomycin D post-transcriptional processing
 
 A549 cells were grown in the presence of 0.01% DMSO, 1 µM GSK591 (Cayman), or 1 µM MS023 (Cayman) for 2 days. Following a 2-day incubation, the media were removed and replaced with media containing 5 µg/ml actinomycin D (Sigma-Aldrich) with 0.01% DMSO, 1 µM GSK591, or 1 µM MS023 for 60 min. RNA was isolated using RNeasy Mini Kit (QIAGEN) and poly(A)-RNA sequencing was performed as above.
 
-## Chromatin-associated poly(A)-RNA enrichment and LC-MS/MS
+### Chromatin-associated poly(A)-RNA enrichment and LC-MS/MS
 
 Poly(A)-RNA isolation was performed with modifications to a previously described protocol (Iadevaia et al., 2018). A549 cells were grown in the presence of 0.01% DMSO, 1 µM GSK591 (Cayman), or 1 µM MS023 (Cayman) for 2 days. Cells were washed with 4°C PBS and irradiated on ice with 100 mJ cm–2 in a UV Stratalinker 1800. Cells were centrifuged at 500×g for 10 min at 4°C. Chromatin was isolated with nuclear lysis buffer (NLB; 10 mM Tris-HCl pH 7.5 at 4°C, 0.1% NP-40, 400 mM KCl, and 1 mM DTT) supplemented with 40 U/ml RNaseOUT (Thermo Fisher Scientific), protease inhibitor (Thermo Fisher Scientific), and phosphatase inhibitor (Thermo Fisher Scientific). The chromatin pellet was resuspended in NLB and sonicated for 5 s at 20% amplitude with a probe-tip sonicator using a 1/8 inch tip. The sonicate was centrifuged at 10,000×g for 10 min and the soluble material transferred to a low-adhesion RNase-free microcentrifuge tube. An aliquot from each sample was saved to serve as the unenriched control. The samples were split into two separate tubes, one of which received 10 µg of competitor 25-nt poly(A) RNA. Magnetic oligo(dT) beads (NEB) were equilibrated in NLB and added to the enrichments. The samples were vortexed at room temperature for 10 min. The beads were then captured on a magnetic column, and the supernatant transferred to fresh tube for additional rounds of depletion. The beads were washed once with buffer A (10 mM Tris pH 7.5, 600 mM KCl, 1 mM EDTA, and 0.1% Triton X-100), followed by buffer B (10 mM Tris pH 7.5, 600 mM KCl, and 1 mM EDTA) and finally buffer C (10 mM Tris pH 7.5, 200 mM KCl, and 1 mM EDTA). The RNA was eluted by incubating the beads in 10 µl of 10 mM Tris pH 7.5 at 80°C for 2 min, capturing the magnetic beads with a magnetic column, and quickly transferring the supernatant to a new tube. The beads were then used for two additional rounds of poly(A)-RNA capture.
 
@@ -177,30 +504,30 @@ The (un)enriched proteome were treated with Benzonase (Sigma-Aldrich) and then d
 
 Data were transformed, normalized and statistics were applied as described previously (Aguilan et al., 2020). Briefly, the data were log2 transformed and normalized by the average of the data distribution. Statistical analysis was performed by using a two-tail heteroscedastic t-test.
 
-## CHTOP and SNRPB immunoprecipitation
+### CHTOP and SNRPB immunoprecipitation
 
 A549 cells were grown with 0.01% DMSO, 1 µM GSK591 (Cayman), or 1 µM MS023 (Cayman) for 2 days. Cells were harvested using trypsin (Corning) and washed once with 4°C PBS supplemented with PRMT inhibitors. Cells were then resuspended in RIPA buffer (1% NP-40, 150 mM NaCl, 50 mM Tris-HCl pH 8 at 4°C, 0.25% sodium deoxycholate, 0.1% SDS, and 1 mM EDTA) supplemented with 40 U/mL RNaseOUT (Thermo Fisher Scientific) and protease inhibitor (Thermo Fisher Scientific). Lysates were incubated on ice for 10 min followed by sonication for 5 s at 20% amplitude with a probe-tip sonicator using a 1/8 inch tip. Lysates were then spun at 10,000×g for 10 min at 4°C. Supernatants were transferred to new low-adhesion RNase-free microcentrifuge tubes and normalized to the same protein concentration using bicinchoninic acid (Pierce). Primary antibody targeting CHTOP (LSBio, LS-C193506; 5 μg) or SNRPB (ProteinTech, 16807-1-AP; 5 μg) was added followed by incubation overnight at 4°C with gentle rotation. The next morning, Protein G agarose (Millipore-Sigma) was equilibrated in lysis buffer and added to the lysates at 4°C with gentle rotation. The beads were washed three times with lysis buffer followed by resuspension in 1× Laemmli buffer for western blotting with CHTOP (as above), SNRPB (as above), Rme2s (CST, 13222), and Rme2a (CST, 13522) antibodies.
 
-## CRISPRi and expression of methylarginine mutants
+### CRISPRi and expression of methylarginine mutants
 
 The dCas9-KRAB-MeCP2 expression vector (VB900120-5303pyt) was purchased from VectorBuilder (Santa Clara, CA). The PRMT-targeting gRNA parent vector (VB210119-1169qwd) was purchased from VectorBuilder and custom gRNA sequences (Supplementary file 2) derived from CRISPick (Doench et al., 2016) were cloned as described previously (Ran et al., 2013) with the exception that BfuA1 (NEB) was used to digest the parent vector. Sm WT (VB210103-1026dg), R-to-A (VB210103-1027ttz), and R-to-K (VB210317-1185yxr) as well as CHTOP WT (VB210427-1238rhx), R-to-A (VB210427-1241jrw), and R-to-K (VB210427-1242gjh) expression vectors were cloned by VectorBuilder. Lentiviral particles containing expression vectors were produced in HEK293T cells using calcium phosphate transfection. Transduction of A549 cells was accomplished by combining lentivirus with polybrene containing media (4 µg/ml) and centrifuging at 30°C for 90 min at 500×g followed by incubation for 24 hr at 37°C, 5% CO2 with humidity. Following the 24-hr incubation, lentiviral containing media was removed and complete DMEM containing appropriate selection antibiotic (Cayman) was added. A549 cells expressing dCas9-KRAB-MeCP2 were selected using 2 µg/ml puromycin and then maintained in culture with 1 µg/ml puromycin. For PRMT knockdown and Sm expression experiments, A549 cells were selected with 10 µg/ml blasticidin for 72 hr. For CHTOP expression experiments, A549 cells were selected for 96 hr with 1 mg/ml G418. Primers used in RT-qPCR experiments can be found in Supplementary file 2. Lysis for western blotting was accomplished as above and the antibodies used included Rme2s (CST, 13222), Rme2a (CST, 13522S), GAPDH (Abcam, ab9484), PRMT1 (Millipore, 07-404), PRMT5 (Millipore, 07-405), and FLAG (Sigma-Aldrich, F1804).
 
-## Cell fractionation
+### Cell fractionation
 
 A549 cells were grown with 0.01% DMSO, 1 µM GSK591 (Cayman), or 1 µM MS023 (Cayman) for 2 days. Cells were harvested using trypsin (Corning) and washed once with 4°C PBS. Cells were resuspended in Hypotonic Lysis Buffer (10 mM Tris-Cl pH 8 at 4°C, 0.1% NP-40, 1 mM KCl, 1.5 mM MgCl2, 1 mM DTT supplemented with protease inhibitor and 40 U/ml RNaseOUT) and rotated for 30 min at 4°C. Cells were then centrifuged at 10,000×g for 10 min at 4°C and the supernatant was kept as the cytosolic fraction. The nuclear pellet was washed once with hypotonic buffer using a wide-orifice tip and then resuspended in NLB (10 mM Tris-HCl pH 8 at 4°C, 0.1% NP-40, 400 mM KCl, 1 mM DTT supplemented with protease inhibitor, and 40 U/mL RNaseOUT) followed by rotation for 30 min at 4°C. The sample was then centrifuged at 10,000×g for 10 min and the supernatant was kept as the nucleoplasm, while the remaining material was washed once with NLB and kept as the chromatin fraction. RNA from each fraction was isolated using TRIzol (Thermo Fisher Scientific) and RT-qPCR was performed as above. For western analysis, 10% of each fraction was set aside and diluted to 1× with Laemmli buffer. To isolate the chromaitn fraction for western analysis, after resuspension of nuclei in NLB, 10% was aliquoted into a low-adhesion microcentrifuge tube. Following centrifugation, the supernatant was saved as the nucleoplasm. The chromatin fraction was subsequently washed once with NLB and then resuspended again in NLB equivalent to the original volume and sheared with sonication. This was followed by addition of Laemmli buffer to 1× and western blotting with H3 (Abcam, ab1791), GAPDH (Abcam, ab9484), U1-70k (Santa Cruz Biotechnology, sc-390988), LaminB2 (Thermo Fisher Scientific, MA1-06104), CHTOP (LSBio, LS-B11259-50), Rme2a (CST, 13522), SNRPB (ProteinTech, 16807-1-AP), SNRPD3 (Abcam, ab157118), and Rme2s (CST, 13222) antibodies.
 
-## FLAG co-immunoprecipitation
+### FLAG co-immunoprecipitation
 
 A549 cells were transduced with Sm expression constructs as above. Cells were harvested using trypsin (Corning), washed once with 4°C PBS, and then resuspended in NP-40 Lysis Buffer (0.5% NP-40, 50 mM Tris pH 8 at 4°C, 150 mM NaCl, 1 mM EDTA) supplemented with 40 U/ml RNaseOUT (Thermo Fisher Scientific) and protease inhibitor (Thermo Fisher Scientific). Lysates were incubated on ice for 10 min followed by sonication for 5 s at 20% amplitude with a probe-tip sonicator using a 1/8 inch tip. Lysates were then spun at 10,000×g for 10 min at 4°C. Supernatants were transferred to new low-adhesion RNase-free microcentrifuge tubes and pre-cleared for 30 min with Protein G agarose (Millipore-Sigma) equilibrated in lysis buffer. The pre-cleared supernatants were again transferred to new low-adhesion RNase-free microcentrifuge tubes and normalized to the same protein concentration using Bradford assay (Bio-Rad). Primary antibody FLAG (Sigma-Aldrich, F1804; 5 μg), SNRPB (ProteinTech, 16807-1-AP; 5 μg), or control IgG (Abcam, ab46540; 5 μg) was added and incubated overnight at 4°C with gentle rotation. The next morning, Protein G agarose was equilibrated in lysis buffer and added to the lysates at 4°C with gentle rotation for 2 hr. The beads were washed three times with lysis buffer containing 300 mM NaCl followed by resuspension in either 1× Laemmli buffer for western blotting or TRIzol (Thermo Fisher Scientific) for northern blotting.
 
-## Northern blotting
+### Northern blotting
 
 RNA was isolated using TRIzol (Thermo Fisher Scientific) and coprecipitated with GlycoBlue (Thermo Fisher Scientific). The RNA pellet was resuspended in sample buffer (6.8 M Urea in TBE with 10% glycerol and 0.25% Bromophenol Blue/Xylene Cyanide), heated at 90°C for 3 min, followed by loading onto an 8% Urea Gel (National Diagnostics) that was pre-run for 45 min at 45 W. The gel was run for 1 hr at 45 W in 1× TBE (100 mM Tris, 100 mM Boric acid, and 0.2 mM EDTA) followed by transfer to nitrocellulose in 0.5× TBE at 30 mA for 4 hr at 4°C. Following transfer, RNA was crosslinked to the membrane at 120,000 μJ/cm2 (UV Stratalinker 1800). 5′ end labeling of snRNA probes (Supplementary file 2) was performed using ATP [32P] (PerkinElmer) with T4 PNK reaction (NEB). Unincorporated ATP [32P] was removed using a Microspin G-25 column (Cytiva). Post-transfer hybridization was performed at 37°C in a hybridization oven overnight with gentle agitation in hybridization buffer containing 100 mM NaHPO4 pH 7.2, 750 mM NaCl, 1× Denhardt’s Solution (0.02% BSA, 0.02% Ficoll 400, and 0.02% Polyvinylpyrrolidone), 1% Herring sperm DNA, and 7% SDS. The next morning, the hybridization solution was carefully discarded according to institutional protocol and the membrane was washed twice with wash buffer (40 mM NaHPO4 pH 7.2, 2% SDS, 1 mM EDTA). The wash buffer was also discarded according to institutional guidelines. The membrane was left to expose on a Phosphoimager screen (Cytiva) and imaged at 633 nm using a Typhoon 9400 Variable Mode Imager.
 
-## Indirect immunofluorescence
+### Indirect immunofluorescence
 
 Cells were seeded on coverslips (Corning) and either transduced with Sm proteins (as above) or allowed to grow in the presence of 0.01% DMSO, 1 µM GSK591 (Cayman), or 1 µM MS023 (Cayman) for 2 days. Cells were then washed with 37°C PBS (Hyclone) and fixed with 4% paraformaldehyde at 20–25°C for 10 min followed by washing with 4°C PBS. Residual aldehyde was quenched with 0.1 M glycine in 20–25°C PBS for 15 min. Permeabilization was performed using 0.1% Triton X-100 at 20–25°C with gentle rotation for 30 min. Cover slips were then washed with PBS and blocked for one hour using 0.1% Fish Skin Gelatin in PBS. Primary antibody for FLAG (Sigma-Aldrich, F1804; 1:50) or SNRPB (ProteinTech 16807-1-AP; 1:125) was added to the cover slip and incubated overnight at 4°C in blocking buffer. Coverslips were washed with PBS and incubated with secondary antibody (Goat anti-Rabbit Dylight 488, Thermo Fisher Scientific 35552 or Goat anti-Mouse Alexa Fluor 555, Thermo Fisher Scientific A28180; 1:1000) with gentle rotation while protected from light for 1 hr at 20–25°C followed by PBS wash and mounting with DAPI prolong gold anti-fade (Thermo Fisher Scientific). Imaging was performed with an Olympus IX-70 inverted microscope with a 60× objective.
 
-## Statistical analysis
+### Statistical analysis
 
 All western blots were performed independently at least twice. RT-qPCR was performed at least three times with independent biological replicates. Statistical analyses were performed using either Prism software (version 8.3.1, GraphPad) or R (version 4.0.2). To compare general distributions, the Kolmogorov-Smirnov test was used. To compare median distribution changes, the Wilcoxon rank-sum test was used. To account for differences in sample size between global and RI distributions, random sampling from the global population equivalent to the number of RI within the tested condition was performed. This process was repeated 1000 times after which the median p-value was reported. To compare means where only two groups exist, independent t-test was performed. To compare means where two categorical variables exist, two-way ANOVA with Tukey’s multiple comparisons test was performed. GeneOverlap with Fisher’s exact test was used to determine ORs of RI overlap between different RNA-seq data sets (Shen, 2020). All code used to generate data in this manuscript can be found here: https://github.com/Shechterlab/PRMTsRegulatePostTranscriptionalDI [copy archived at https://doi.org/10.5281/zenodo.5851791 (Maron, 2022)].

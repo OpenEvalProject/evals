@@ -24,17 +24,17 @@
 
 ### Affiliations
 
-1. https://ror.org/05dxps055 Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States
+1. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
 2. Aligning Science Across Parkinson’s (ASAP) Collaborative Research Network Chevy Chase United States
-3. https://ror.org/0168r3w48 Department of Cellular and Molecular Medicine, University of California, San Diego San Diego United States
-4. https://ror.org/02dqehb95 Department of Food Science, Whistler Center for Carbohydrate Research, Purdue University West Lafayette West Lafayette United States
-5. https://ror.org/03taz7m60 Lawrence J Ellison Institute for Transformative Medicine, University of Southern California Los Angeles United States
-6. https://ror.org/0168r3w48 Department of Pediatrics, University of California, San Diego San Diego United States
-7. https://ror.org/01j7c0b24 Department of Internal Medicine, Division of Gastroenterology, Rush University Medical Center Chicago United States
-8. https://ror.org/01j7c0b24 Rush Center for Integrated Microbiome and Chronobiology Research, Rush University Medical Center Chicago United States
-9. https://ror.org/0168r3w48 Department of Computer Science and Engineering, University of California, San Diego San Diego United States
-10. https://ror.org/0168r3w48 Department of Bioengineering, University of California, San Diego San Diego United States
-11. https://ror.org/0168r3w48 Center for Microbiome Innovation, University of California San Diego San Diego United States
+3. Department of Cellular and Molecular Medicine, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+4. Department of Food Science, Whistler Center for Carbohydrate Research, Purdue University West Lafayette West Lafayette United States ([ROR:02dqehb95](https://ror.org/02dqehb95))
+5. Lawrence J Ellison Institute for Transformative Medicine, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+6. Department of Pediatrics, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+7. Department of Internal Medicine, Division of Gastroenterology, Rush University Medical Center Chicago United States ([ROR:01j7c0b24](https://ror.org/01j7c0b24))
+8. Rush Center for Integrated Microbiome and Chronobiology Research, Rush University Medical Center Chicago United States ([ROR:01j7c0b24](https://ror.org/01j7c0b24))
+9. Department of Computer Science and Engineering, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+10. Department of Bioengineering, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+11. Center for Microbiome Innovation, University of California San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
@@ -54,17 +54,33 @@ Herein, we explore the interplay between diet and microglia in the ASO mouse mod
 
 ## Results
 
-## Prebiotic diet attenuates motor symptoms and reduces αSyn aggregation in the brain
+### Prebiotic diet attenuates motor symptoms and reduces αSyn aggregation in the brain
 
 We generated three custom high-fiber diets (Supplementary file 1), each containing 20% of a prebiotic mixture of two or three dietary fibers designed to promote growth of distinct gut bacterial taxa (Figure 1—figure supplement 1A) and boost SCFA production (Figure 1—figure supplement 1B-E) based on in vitro fecal fermentation. The prebiotic diets (Figure 1—figure supplement 1F) were compared to a cellulose-free control diet that is similar in major micro- and macro-nutrients (Supplementary file 1).
 
 We fed each of the three prebiotic diets (prebiotic #1, #2, #3) to male ASO mice from 5 to 22 weeks of age. To assess whether long-term prebiotic intervention ameliorated motor deficits, mice were subjected to a battery of motor tests to evaluate fine motor control, grip strength, locomotion, and coordination (Figure 1A–D, Figure 1—figure supplement 2A-G). We identified a single prebiotic (prebiotic #1, referred to hereafter as ‘prebiotic’) that improved disease symptoms in ASO mice. Remarkably, administration of the prebiotic diet to ASO mice enhanced performance in several motor behavioral tests, including the pole descent and beam traversal tests (time to cross, steps to cross, errors per step) compared to mice fed a control diet (Figure 1A–D). Outcomes in other paradigms including adhesive removal, wire hang, and hindlimb score were unchanged (Figure 1—figure supplement 3A-C). These findings reveal that a gut-targeting intervention has the potential to attenuate key behavioral features in a mouse model of PD.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig1-v3.jpg)
+
+**Figure 1.:** (A–D) Motor behavior metrics at 22 weeks of age for prebiotic- and control-fed WT and ASO mice from pole descent (A) and beam traversal (B–D) tests. Motor test data is derived from two independent experiments (n=16–29/group). (E) Concentrations (μM) of acetate, propionate, butyrate, and isobutyrate in fecal samples collected from prebiotic-fed WT and ASO mice (n=7–12/group). (F–G) Aggregated α-synuclein levels in the substantia nigra (SN) (F; n=8–10/group) and striatum (STR) (G; n=9–11/group) measured by dot blot. Each point represents data from one mouse. Data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test. Bars represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Hierarchical clustering of the 25 most abundant genera after 24 hr of in vitro fecal fermentation using a pooled human gut microbiota community, as previously described (Cantu-Jungles et al., 2018). Taxa were associated with fiber type by hierarchical clustering using Euclidean distances and the Ward algorithm. (B–D) SCFA concentration (mM) in fecal slurries of acetate (B), butyrate (C) and propionate (D). Data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test. Bars represent mean ± SEM. Statistical differences from the blank are indicated by *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. (E) Relative proportion of each SCFA produced in the 24 hr in vitro fecal fermentation, showing association with fiber type. (F) Fiber composition of Prebiotic Diets 1–3.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Motor behavior metrics for mice fed Prebiotic #2 diet from beam traversal (A,B), wire hang (C), and adhesive removal (D) tests. (E–G) Motor behavior metrics for mice fed Prebiotic #3 diet from wire hang (E), adhesive removal (F), and hindlimb score (G) tests (n=6–7/group). Data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test, except for hindlimb score data, which was analyzed by Kruskal-Wallis test. Bars represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Motor behavior metrics for mice at 22 weeks from wire hang (A), adhesive removal (B), and hindlimb score (C) tests (n=18–24/group). (D) Mouse weight at 22 weeks (n=16–24/group). (E) Food intake per mouse recorded over the course of experiment. Data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test, except hindlimb score data, which was analyzed by Kruskal-Wallis test. Bars represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
 As anticipated, levels of all major SCFAs were higher in fecal samples from prebiotic-fed mice than from control-fed mice (Figure 1E). Concentrations of propionate, butyrate, and isobutyrate were not significantly different between wild type (WT) and ASO mice fed a control diet (Figure 1E). ASO mice weighed significantly less than their WT counterparts and exhibited reduced food intake of control diet, but not prebiotic diet (Figure 1—figure supplement 3D-E). While prebiotic-ASO mice ate significantly more than control-ASO mice, no difference in body weight was detected between the groups at 22 weeks of age (Figure 1—figure supplement 3D). There were no obvious health issues in animals on either diet.
 
 Aggregation of αSyn is a hallmark of PD pathology. We found a significant reduction in αSyn aggregation in the substantia nigra (SN) of prebiotic-fed ASO mice compared to ASO mice on control chow (Figure 1F). In contrast, prebiotic intervention had no effect on αSyn aggregation in the striatum (STR) (Figure 1G). We speculate that this difference may be attributable to regional differences in microglia density, gene expression, and clearance activity (Grabert et al., 2016; Y.-L. Tan et al., 2020). Taken together, these results suggest that early intervention with a prebiotic diet can reduce PD-like symptoms and brain pathology in ASO mice.
 
-## Prebiotics alter gut microbiome composition
+### Prebiotics alter gut microbiome composition
 
 Gut microbiome composition is strongly influenced by diet in mice and humans (Turnbaugh et al., 2009; Wu et al., 2011). We performed shotgun metagenomics on fecal samples from mice fed control or prebiotic diet. Alpha diversity analysis revealed significant reduction in observed species count, Shannon’s diversity, and Simpson’s evenness in prebiotic-fed groups, as well as an increase in Gini’s dominance (Figure 2A–D). This is consistent with a previous report of reduced microbiome diversity in high-fiber fed mice (Luo et al., 2017). Principal coordinate analysis (PCoA) of species abundance showed that samples clustered more closely by diet than mouse genotype (Figure 2E) and PERMANOVA revealed that prebiotic treatment explained 6-fold more variance than genotype, with R2 values of 0.334 and 0.053 for each, respectively (Figure 2F). Thus, the prebiotic diet reshapes gut microbial communities in WT and ASO mice.
 
@@ -74,7 +90,7 @@ Gut microbiome composition is strongly influenced by diet in mice and humans (Tu
 
 We observed broad changes at the microbial phylum and genus levels following administration of prebiotic diet (Figure 2G and I), displaying an increase in Bacteroidetes and a decrease in Firmicutes in prebiotic diet-fed mice, resulting in a lower Firmicutes/Bacteroidetes (F/B) ratio that has been associated with general features of metabolic health (Figure 2H). Intriguingly, it has been shown that Bacteroidetes are reduced in PD patients compared to age-matched controls, suggesting the prebiotic may counter this effect (Unger et al., 2016). Additionally, we observed a decrease in Proteobacteria, a phylum often increased in dysbiosis and inflammation and elevated in PD patient fecal samples (Figure 2H; Keshavarzian et al., 2015; Shin et al., 2015). Gut-brain module analysis showed variation in metabolic pathways including SCFA degradation/synthesis in response to diet and genotype (Figure 2J). Overall, feeding of a prebiotic diet appears to qualitatively restructure the ASO microbiome toward increased relative abundances of taxa associated with potentially protective effects.
 
-## Prebiotic diet alters microglia morphology in ASO mice
+### Prebiotic diet alters microglia morphology in ASO mice
 
 In ASO mice, microglia reactivity in response to αSyn overexpression appears at 4–5 weeks of age in the STR and at 20–24 weeks of age in the SN (Watson et al., 2012). SCFAs have been shown to influence the physiology of microglia in several contexts (Colombo et al., 2021; Erny et al., 2015; Sadler et al., 2020; Erny et al., 2021; Sampson et al., 2016). To explore whether prebiotics alter microglia morphology, we performed immunofluorescence imaging using the pan-microglial marker IBA1. The morphology of microglia can indicate their reactivity state, with homeostatic microglia exhibiting a ramified shape with a smaller cell body and increased dendritic processes, whereas activated microglia adopt an amoeboid form with a larger cell body and retracted processes (Menassa and Gomez-Nicola, 2018). We observed that microglia in the SN and STR of prebiotic-ASO mice had significantly smaller cell bodies than in control-ASO mice (Figure 3A–B). 3D analysis of key morphological features revealed that microglia in the SN and STR of prebiotic-ASO mice exhibited increased dendrite length, number of segments, number of branch points, and number of terminal points compared to microglia from control-ASO mice (Figure 3C–F). Taken together, these findings indicate that long-term prebiotic intervention dampens microglial reactivity in brain regions implicated in PD.
 
@@ -82,11 +98,23 @@ In ASO mice, microglia reactivity in response to αSyn overexpression appears at
 
 **Figure 3.:** (A,B) Measurement of IBA1+ microglia diameter in substantia nigra (SN) (A; n=5/group) and striatum (STR) (B; n=5/group). Left: quantification of cell diameter. Each point represents one mouse with 26–79 cells measured per mouse. Right: Representative 20 X images of IBA1 staining. Scale bars 50 μm. (C–F) 3D reconstruction of microglia in the substantia nigra (C–D) and striatum (E–F). (C,E) Quantification of dendrite length, number of segments, number of branch points, and number of terminal points (n=14–18/group for SN and n=12–14/group for STR). Each point represents one cell, with 3–5 cells analyzed/mouse. (D,F) Representative 3D reconstructions of microglia imaged at 40 X magnification. Data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test. Bars represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
 
-## ASO mice display increased disease-promoting microglial subsets
+### ASO mice display increased disease-promoting microglial subsets
 
 Single-cell RNA sequencing (scRNA-seq) has emerged as a powerful tool to interrogate microglial biology in mouse models of neurodegeneration (Keren-Shaul et al., 2017; Liu et al., 2020). We first sought to investigate differences in microglial gene expression between control-WT and control-ASO mice (no prebiotics), since scRNA-seq of microglia has not been previously applied to this mouse model. Differential gene expression analysis of all cells revealed 313 differentially expressed genes (DEGs) (↑163, ↓150, FDR <0.05) in the SN and 997 DEGs (↑511, ↓486) in the STR. In the SN, microglia harvested from control-ASO mice displayed increased expression of MHC class I components (H2-K1, H2-D1), several chemokines (Ccl2, Ccl3, Ccl4, Ccl9) and chemokine receptors (Ccr1, Ccr5), and pro-inflammatory markers (Nfkbid, Cd 74) (Figure 4C, Supplementary file 2a). Gene enrichment analysis of all upregulated DEGs in control-ASO mice showed enrichment in pathways related to cellular responses to cytokine stimulus and interferon-gamma, immune system processes, and response to stress (Figure 4D). Several genes that were downregulated in control-ASO mice compared to control-WT were related to anti-inflammatory signaling (Klf2, Klf4) and microglial homeostasis (P2ry12, Slc2a5) (Figure 4C, Supplementary file 2a). We observed similar trends in the STR, with control-ASO microglia upregulating pro-inflammatory modulators (Tnf, Nfkbiz, Trim8, Irgm1) and antigen processing and presentation genes (H2-Q7, H2-K1, H2-D1, H2-T23) and downregulating genes related to homeostatic cellular processes (Figure 4H–I, Supplementary file 2c). Notably, the anti-inflammatory cytokine transforming growth factor beta 2 (Tgfβ2) was ~45-fold downregulated in control-ASO (Supplementary file 2c). These data suggest microglia from control-ASO mice upregulate pro-inflammatory immune processes and downregulate pathways related to homeostasis and cellular maintenance in response to αSyn overexpression.
 
-## Prebiotic diet promotes microglia with disease-protective functions
+![Figure 4.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig4-v3.jpg)
+
+**Figure 4.:** (A) UMAP plot of all 5278 substantia nigra (SN) cells sequenced by scRNA-seq from all four treatment groups (left) and distribution of cells from individual samples (right). (B) Relative distribution of cells within each cluster in the SN. (C) Dot plot showing genes significantly upregulated in control-ASO microglia (relative to control-WT) and significantly downregulated in prebiotic-ASO microglia (relative to control-ASO) in the SN. (D) Significantly enriched pathways among 163 genes upregulated in control-ASO microglia relative to control-WT microglia in the SN. (E) Significantly enriched pathways among 156 genes downregulated in prebiotic-ASO microglia relative to control-ASO microglia in the SN. (F) UMAP plot of all 27,152 striatal (STR) cells sequenced by scRNA-seq from all four treatment groups (left) and distribution of cells from individual samples (right). (G) Relative distribution of cells within each cluster in the STR. (H) Dot plot and showing genes significantly upregulated in control-ASO microglia (relative to control-WT) and significantly downregulated in prebiotic-ASO microglia (relative to control-ASO) in the STR. (I) Significantly enriched pathways among the 50 most upregulated genes in control-ASO microglia relative to control-WT microglia in the STR. (J) Significantly enriched pathways among the 50 most downregulated genes in prebiotic-ASO microglia relative to control-ASO microglia in the STR.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A,B) Concentration (μM) of acetate, propionate, and butyrate measured by UHP-LC in the substantia nigra (A) and striatum (B). Each point represents data from one mouse (n=5/group). Data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test. Bars represent mean ± SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A,B) qPCR measurement of FFAR2 (A) and FFAR3 (B) in small intestine, cerebellum, midbrain, striatum and motor cortex (n=2–4/group). (C,D) ATAC-seq measurement of open chromatin regions in purified microglia in the substantia nigra (C) and striatum (D). (E–I) qPCR measurement of HDAC-1 (E), HDAC-2 (F), HDAC-6 (G), HDAC-7 (H), and HDAC-9 (I) in the striatum (n=5–6/group). qPCR data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test. Bars represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+### Prebiotic diet promotes microglia with disease-protective functions
 
 Based on global scRNA-seq gene expression, Uniform Manifold Approximation and Projection for Dimension Reduction (UMAP) analysis yielded nine distinct microglia clusters in the SN and eight clusters in the STR (Figure 4A and F). In the SN, we detected differences in cluster distribution between experimental groups, with the strongest differences in clusters 0 and 2 (Figure 4A–B). Interestingly, the percentage of microglia in cluster 0 was higher in control-ASO than control-WT mice (27.1% vs 18.9%), and prebiotic treatment reduced the percentage of microglia belonging to cluster 0 in ASO mice compared to control diets (18.3%) (Figure 4B). Gene enrichment analysis of the top 50 genes associated with cluster 0 revealed pathways related to immune system processes, cellular response to tumor necrosis factor (TNF), cellular response to lipopolysaccharide, and response to stress. Cluster 0 contained several prominent immune markers including Tnf, Nfkbia, Ccl2, Ccl3, and Ccl4, suggesting that a prebiotic diet may suppress or prevent pro-inflammatory responses in ASO mice. Notably, levels of TNF and Ccl2 are elevated in the serum of PD patients (Brodacki et al., 2008; Reale et al., 2009). Conversely, the percentage of microglia belonging to cluster 2 was reduced in control-ASO mice but increased in prebiotic-ASO mice (Figure 4B). Among the most highly expressed genes in cluster 2 were the homeostatic microglial markers P2ry12 and Cst3, as well as the anti-inflammatory transcription factors Klf2 and Klf4 (Das et al., 2006; Li et al., 2018).
 
@@ -94,15 +122,27 @@ Within the STR, we detected eight clusters of microglia, with notable shifts in 
 
 To determine effects of long-term prebiotic exposure on microglial gene expression in ASO mice, we compared prebiotic-ASO microglia to control-ASO and found 473 DEGs (↑317, ↓156) in the SN and 1474 DEGs (↑608, ↓866) in the STR (Figure 4C and H, Supplementary file 2b, d). Gene enrichment analysis of the 156 genes downregulated in prebiotic-ASO microglia in the SN revealed reduction in interleukin-1 (IL-1)β production pathways, as well as dampened innate immune response and defense response pathways compared to control-ASO mice (Figure 4E). Among the genes downregulated in microglia from prebiotic-ASO mice were several mediators of the pro-inflammatory immune response (Mif, Masp1, Trim12a, Bs2, B2m), antigen presentation and processing (H2-Q7), and chemokines/receptors (Ccl9, Ccr1, Ccr5) (Figure 4C, Supplementary file 2b). We observed a similar trend in the STR, with prebiotic-ASO showing downregulation of pathways related to innate immunity, response to stress, and defense response (Figure 4H and J, Supplementary file 2d). Interestingly, several of the pro-inflammatory markers upregulated in control-ASO and downregulated in prebiotic-ASO microglia were expressed by a small subset of microglia, suggesting that a subpopulation of cells alters its transcriptomic profile in response to αSyn expression, similar to what has been observed in microglia from aged mice and a mouse model of Alzheimer’s disease (AD) (Hammond et al., 2019; Keren-Shaul et al., 2017). Further DEG analysis revealed increased expression of several markers that define disease-associated macrophages (DAM) in the SN and STR in prebiotic-ASO mice (Supplementary file 2b, d), a microglial sub-population associated with protection during early stages of disease in several mouse models (Deczkowska et al., 2018; Onuska, 2020). Notably, we observed an increase in Trem2 in microglia from the STR of prebiotic-ASO mice, suggesting prebiotics may induce a neuroprotective DAM phenotype by 22 weeks of age (Gratuze et al., 2018; Keren-Shaul et al., 2017; Onuska, 2020). Taken together, gene expression analysis suggests prebiotic intervention in ASO mice dampens proinflammatory and neurotoxic signaling pathways and potentially upregulates a neuroprotective phenotype in microglia.
 
-## Potential effects of SCFAs are likely indirect and not via epigenetic regulation
+### Potential effects of SCFAs are likely indirect and not via epigenetic regulation
 
 We detected no differences in SCFA levels between control and prebiotic animal groups in either the SN or STR (Figure 4—figure supplement 1A-B). SCFAs can signal through activation of GPCR receptors (GPCR43 or FFAR2, and GPCR41 or FFAR3) and/or inhibition of histone deacetylases (HDACs), altering the epigenetic landscape of target cells (Silva et al., 2020; Vinolo et al., 2011). As determined via qRT-PCR, ASO mice exhibited very low or no expression of FFAR2 and FFAR3 in the cerebellum, midbrain, striatum, and motor cortex relative to the small intestine (Figure 4—figure supplement 2A, B), consistent with scRNA-seq data showing an absence of FFAR2/3 expression in microglia in the SN and STR (Supplementary file 3).
 
 To explore whether the prebiotic diet was inducing epigenetic changes, we performed bulk ATAC-seq on purified microglia from the SN and STR and observed no significant differences in chromatin accessibility between experimental groups (Figure 4—figure supplement 2C, D). However, from this bulk measurement, we cannot rule out changes in open chromatin or histone modifications in specific subset(s) of microglia. We also measured the expression levels of several HDAC isoforms (Hdac 1, 2, 6, 7, and 9) in the striatum and found no differences in expression between control and prebiotic groups of both genotypes (Figure 4—figure supplement 2E-I). Collectively, these findings suggest that dietary metabolites may influence microglial gene expression through indirect mechanisms and likely not by entering the brain, consistent with previous reports (Erny et al., 2015), though additional work is needed to validate this hypothesis.
 
-## Depletion of microglia blocks beneficial effects of prebiotics
+### Depletion of microglia blocks beneficial effects of prebiotics
 
 Microglia are dependent on colony stimulating factor 1 receptor (CSF1R) signaling for development, maintenance, and proliferation (Elmore et al., 2014). PLX5622 is a brain-penetrant inhibitor of CSF1R that can deplete microglia with no observed effects on behavior or cognition (Elmore et al., 2014). We added PLX5622 to the diet of mice from 5 to 22 weeks of age, and quantified the number of IBA1 +microglia in various brain regions. The efficiency of microglial depletion varied depending on brain region, with regions containing low numbers of microglia such as the cerebellum exhibiting higher depletion (~80%) than areas with high microglial density such as the SN (~65%) and STR (~75%) (Figure 5A–C). We did not observe differences in depletion efficiency between WT and ASO mice or between control and prebiotic-fed mice (Figure 5—figure supplement 1A-B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig5-v3.jpg)
+
+**Figure 5.:** (A–C) Number of IBA1+ cells per field of view in 20 X images of the cerebellum (A), substantia nigra (B), and striatum (C). n=4/group. Representative images from the striatum are shown at right (scale bars: 50 μm). (D–F) Motor performance metrics for pole descent (D) and beam traversal (E–F) tests. Motor data derived from five independent cohorts (n=12–21/group). (G,H) Aggregated α-synuclein measured by dot blot in the substantia nigra (G; n=6–10/group) and striatum (H; n=6–8/group). Microglia count data analyzed by one-way ANOVA followed by Tukey’s multiple comparisons test. Motor and αSyn data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test. Data represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A,B) Iba1+ cell count in the substantia nigra (A) and striatum (B). n=2/group. (C–F) Motor behavior metrics from beam traversal (C), wire hang (D), hindlimb score (E), and adhesive removal (F) tests (n=12–23/group). (G) Mouse weight at 22 weeks (n=9–15/group). Data analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test. Bars represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/81453/elife-81453-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A–E) Large intestine quantification of CD45, CSF1r+high cells (A); CD45+, CSF1r low cells (B); CD11b+, CD45 high cells (C); T cells (CD19-, CD3e+) (D); and B cells (CD19+, CD3e-) (E). n=6–8/group. (F–J) Small intestine quantification of the same populations (n=6–8/group). (K–O) Spleen quantification of the same populations (n=3–6/group). Each point represents data from an individual mouse. White data points represent WT mice and grey data points represent ASO mice. Data is combined from three independent experiments. Data analyzed by one-way ANOVA followed by Tukey’s multiple comparisons test. Bars represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
 
 Following PLX5622 treatment, we assayed motor behavior at 22 weeks of age. PLX5622 treatment had no impact on motor performance in tests where prebiotic treatment had no effect (Figure 5—figure supplement 1C-F). Remarkably however, even incomplete microglia depletion eliminated prebiotic-induced improvements in the pole descent and beam traversal tests (time to cross, errors per step) (Figure 5D–F), suggesting that microglia are required for the ability of prebiotics to ameliorate motor deficits. PLX5622 treatment did not alter body weight in control or prebiotic-fed mice (Figure 5—figure supplement 1G). We also measured αSyn aggregation in the SN and STR of 22-week-old mice. In control-fed mice, depletion of microglia had no impact on levels of αSyn aggregation in the SN or STR (Figure 5G–H). However, in prebiotic-fed WT and ASO mice, depletion of microglia significantly increased levels of aggregated αSyn in the SN, while levels in the STR remained unchanged (Figure 5G–H). These data reveal that partial ablation of microglia or diminished CSF1R signaling eliminate the protective effects of the prebiotic diet in ASO mice.
 
@@ -122,13 +162,471 @@ Prebiotics present a potentially promising therapeutic approach as diet is a sig
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
 
-## Breeding
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Thy1-α-synuclein (line 61)</td>
+      <td>Chesselet et al., 2012; Rockenstein et al., 2002</td>
+      <td>ASO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta actin, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab8227; RRID:AB_2305186</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-aggregated α-synuclein, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab209538; RRID:AB_2714215</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1, rabbit polyclonal</td>
+      <td>Wako</td>
+      <td>Cat# 019–19741; RRID:AB_839504</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase, chicken polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab76442; RRID:AB_1524535</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG-647, donkey polyclonal</td>
+      <td>Life Technologies</td>
+      <td>Cat# 1874788; RRID:AB_2536183</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken IgG-594, donkey polyclonal</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 703-585-155; RRID:AB_2340377</td>
+      <td>1:600</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked, goat polyclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 7074; RRID:AB_2099233</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse/human CD11b-APC, rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>Cat# 101211; RRID:AB_312794</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CX3CR1-PE/Cyanine7, mouse monoclonal</td>
+      <td>BioLegend</td>
+      <td>Cat# 149016; RRID:AB_2565700</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45-Alexa Flour 488, rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>Cat# 103121; RRID:AB_493532</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/CD32 Antibody (93), eBioscience (1 mg); rat monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 14-0161-86; RRID:AB_467135</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3e Antibody (145–2 C11), PE, eBioscience, hamster monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 12-0031-82; RRID:AB_465496</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4 Antibody (GK1.5), APC, eBioscience, rat monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 17-0041-83; RRID:AB_469321</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TCR beta Antibody (H57-597), PerCP-Cyanine5.5, eBioscience, hamster monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 45-5961-82; RRID:AB_925763</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8a Antibody (53–6.7), APC-eFluor 780, eBioscience, rat monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 47-0081-82; RRID:AB_1272185</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c Antibody (N418), FITC, eBioscience, hamster monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 11-0114-82; RRID:AB_464940</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD170 (Siglec F) Monoclonal Antibody (1RNM44N), PE-Cyanine7, eBioscience, rat monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 25-1702-82; RRID:AB_2802251</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly-6C Antibody (HK1.4), APC, eBioscience, rat monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 17-5932-82; RRID:AB_1724153</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD103 (Integrin alpha E) Monoclonal Antibody (2E7), PerCP-eFluor 710, eBioscience, hamster monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 46-1031-82; RRID:AB_2573704</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD64 Antibody (X54-5/7.1), APC-eFluor 780, eBioscience, mouse monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 47-0641-82; RRID:AB_2735012</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b Antibody (M1/70), Super Bright 645, eBioscience, rat monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 64-0112-82; RRID:AB_2662387</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD45.2, mouse monoclonal</td>
+      <td>Tonbo</td>
+      <td>Cat# 20–0454; RRID:AB_2621576</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti-mouse Ly6G, rat monoclonal</td>
+      <td>Tonbo</td>
+      <td>Cat# 60–1276; RRID:AB_2621860</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti-mouse TCRb, hamster monoclonal</td>
+      <td>Tonbo</td>
+      <td>Cat# 60–5961; RRID:AB_2877098</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti-mouse/human B220, rat monoclonal</td>
+      <td>Tonbo</td>
+      <td>Cat# 60–0452; RRID:AB_2621849</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD19, rat monoclonal</td>
+      <td>Tonbo</td>
+      <td>Cat# 35–0193; RRID:AB_2621682</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Anti-Mouse MHC Class II (I-A/I-E) (M5/114.15.2), rat monoclonal</td>
+      <td>Tonbo</td>
+      <td>Cat# 50–5321; RRID:AB_2621796</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD115 (CSF-1R) Antibody, rat monoclonal</td>
+      <td>BioLegend</td>
+      <td>Cat# 135506; RRID:AB_1937253</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MHC Class II (I-A/I-E) anti-mouse Antibody (M5/114.15.2), PerCP-eFluor 710, eBioscience, rat monoclonal</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 46-5321-82; RRID:AB_1834439</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>eBioscience Foxp3 /Transcription Factor Staining Buffer Set</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 00-5523-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PLX5622</td>
+      <td>DC Chemicals</td>
+      <td>Cat# DC21518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>IL-6 Mouse ELISA kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 88-7064-88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TNF-α Mouse ELISA Kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 88-7324-77</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Tagment DNA enzyme and buffer kit</td>
+      <td>Illumina</td>
+      <td>Cat# 20034197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prolong Diamond antifade mountant with DAPI</td>
+      <td>Invitrogen</td>
+      <td>Cat# P36971</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Tissue Extraction Reagent I</td>
+      <td>ThermoFisher</td>
+      <td>Cat# FNN0071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Chromium Next GEM Single Cell 3' GEM, Library &amp; Gel Bead Kit v3.1</td>
+      <td>10 x Genomics</td>
+      <td>Cat# 1000128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Chromium Next GEM Chip G Single Cell Kit</td>
+      <td>10 x Genomics</td>
+      <td>Cat# 1000127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Single Index Kit T Set A</td>
+      <td>10 x Genomics</td>
+      <td>Cat# 2000240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ChiP DNA clean and concentrator</td>
+      <td>Zymo</td>
+      <td>Cat# D5205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Direct-zol RNA Microprep</td>
+      <td>Zymo</td>
+      <td>Cat# R2062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Direct-zol RNA Miniprep</td>
+      <td>Zymo</td>
+      <td>Cat# R2050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Clarity Western ECL Substrate</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1705060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC1_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAACTGCTAAAGTACCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC1_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CATGACCCGGTCTGTAGTAT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGGTGTTTGATGGACTCTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTGATGCTTCTGACTTCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC6_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGCATGGCATCGCTGGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC6_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCATCAAAGCCAGTGAGATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC7_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTCGGCTGAGGACCTAGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC7_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGAGAAATGGAGCCTCTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC9_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCGGTCCAGGTTAAAACAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HDAC9_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCCACCTCAAACACTCGCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGGCCTTCCGTGTTCCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTGCTTCACCACCTTCTTGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FFAR2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTCCCATGGCAGTCACCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FFAR2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTAGGGTCCAAAGCACACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FFAR3_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACCGCCGTCAGGAAGAGGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FFAR3_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCCTGCCGTTTCGCSTGGTGG</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 10236276001</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Aqua Viability Dye</td>
+      <td>ThermoFisher/Invitrogen</td>
+      <td>Cat# L34957</td>
+      <td>1:1000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
+
+#### Breeding
 
 The Thy1-α-synuclein (ASO; line 61) mouse line was used for all experiments in this study (Chesselet et al., 2012; Rockenstein et al., 2002). Male BDF1 mice were crossed with female ASO mice expressing the α-synuclein transgene on the X chromosome to generate WT and ASO littermates. Mice were weaned at P21 and housed by genotype on the day of weaning. Male mice were used for all experiments since the human α-synuclein transgene is inserted in the X chromosome, which undergoes random X chromosome inactivation (Chesselet et al., 2012).
 
-## Diet experiments
+#### Diet experiments
 
 Mice were switched from standard chow to either the cellulose-free control diet or high-fiber prebiotic diet at 5–6 weeks of age and housed in sterile, autoclaved cages with sterile water. Custom fiber mixes were sent from Purdue University for formulation at Envigo Teklad (Madison, WI, USA). After screening diets for efficacy (see Figure 1—figure supplement 1), all subsequent studies were performed with Prebiotic diet #1.
 
@@ -136,112 +634,112 @@ PLX5622 was acquired from DC Chemicals and incorporated in the cellulose-free an
 
 All animal experiments were done under the guidance and approval of Caltech’s Institutional Animal Care and Use Committee (IACUC).
 
-## Motor testing
+### Motor testing
 
 A full battery of motor tests was performed at 22 weeks of age. All motor testing was completed in the same room in a biological safety cabinet between the hours of 6 and 10 of the light phase. Motor testing was completed as described in Fleming et al., 2004; Sampson et al., 2016. Motor tests were done in the following order: Day 1: beam traversal training, pole training; Day 2: beam traversal training, pole training, wire hang; Day 3: beam traversal test, pole test, hindlimb score, adhesive removal; Day 4: fecal output. Mouse cages were not changed during the duration of testing.
 
-## Beam traversal
+#### Beam traversal
 
 Time to cross, errors per step, and number of steps were tested using a plexiglass beam 1 m in length. The beam was constructed of four individual segments, with decreasing width of 1 cm increments along the length of the beam (3.5 cm, 2.5 cm, 1.5 cm, and 0.5 cm). Mice were trained for two consecutive days prior to testing on day 3. On each training day, mice were prompted to cross the beam for three consecutive trials. On testing day mice were recorded using a GoPro camera for analysis of errors per step and number of steps.
 
-## Pole descent
+#### Pole descent
 
 Time to descend a 24-inch pole wrapped in mesh liner was recorded. The pole was placed in the animal’s home cage and mice were trained for two consecutive days prior to testing on day 3. Three trials were performed on day 1 of training: trial 1: mice were gently placed head down on the pole 1/3 of the distance from the base, trial 2: mice were placed head down on the pole 2/3 of the distance from the base, trial 3: mice were placed head down on the top of the pole. On day 2 of training, mice were placed on the top of the pole for three consecutive trials. On testing day, mice were placed on the top of the pole for three trials of testing. The timer was stopped once one of the front hindlimbs touched the base of the pole. Time to descend was averaged across all three trials.
 
-## Adhesive removal
+#### Adhesive removal
 
 A 0.25 in. adhesive, round sticker was placed on the nose of the mouse. The mouse was subsequently placed in its home cage (without cagemates) and time to remove the adhesive was recorded. Time to remove was averaged across two trials.
 
-## Wire hang
+#### Wire hang
 
 Mice were placed in the middle of a rectangular wire grid placed over a sterile, clean cage. the wire grid was gently inverted with the mouse hanging over the cage. Time to fall was recorded as the time between grid inversion and the mouse falling off the grid. Maximum time was set to 60 s. Time to fall was averaged across two trials.
 
-## Hindlimb score
+#### Hindlimb score
 
 Mice were gently held upwards in the air by the mid-section of their tail and hindlimb movement was observed. Mice were given a score of 0, 1, 2, or 3 depending on the movement and flexibility of their rear hindlimbs. The score was assessed by two experimenters and the average score was reported.
 
 Scores were assigned as follows:
 
-## Microglia isolation and sequencing
+### Microglia isolation and sequencing
 
-## Microglia isolation
+#### Microglia isolation
 
 Microglia were isolated from mouse brains at 22 weeks of age. For all experiments, samples were pooled from 4 to 6 mice/treatment group. Mice were anesthetized and perfused with ice-cold PBS. Brain regions of interest were dissected and homogenized using mechanical dissociation. Single cell suspensions were obtained using a Dounce homogenizer. A 37/70 Percoll density gradient was used to separate cells from debris and myelin. Following Percoll separation, cells were washed and stained with Cd11B (1:1000, Biolegend), CX3CR1 (1:10,000, Biolegend), CD45 (1:1000, Biolegend), and DAPI (1:10,000, Sigma-Aldrich). All steps were performed in microglia staining buffer (1 X HBSS, 1% BSA and 1 mM EDTA). Cells were sorted in a FACSAria III Fusion flow cytometer (BD Biosciences). Live CD11b+, CX3CR1+, and CD45 (low) cells were identified as microglia and collected for analysis. The full protocol can be found at protocols.io (https://doi.org/10.17504/protocols.io.kqdg3p7bel25/v1).
 
-## Single-cell sequencing
+#### Single-cell sequencing
 
 The v3.1 Chromium Next GEM single cell reagent kit from 10 x genomics was used for scRNAseq of FACS-purified microglia. Between 2 and 4000 cells were loaded on the Next GEM chip for substantia nigra samples, with 1000–1700 cells/group recovered for analysis. For striatum samples, approximately 8–16,000 cells were loaded on the Next GEM chip, with 5–10,000 cells/group recovered for analysis. Library construction was completed according to the manufacturer’s instructions. Samples were tagged with a unique sample index, pooled, and sequenced with an average depth of 111 k reads/cell on a NovaSeq 6000 sequencing platform (Illumina). Cell Ranger software (10 X Genomics) was used for sequence alignment, cluster analysis, and identification of differentially expressed genes between groups. ShinyGO was used for gene ontology and pathway analysis (Ge et al., 2020).
 
-## Single-cell transcriptomic analysis
+#### Single-cell transcriptomic analysis
 
 The data were first filtered by removing cells with less than 200 genes and genes that were expressed in less than 100 cells. Gene counts were normalized by dividing the number of times a particular gene appeared in a cell (gene cell count) by the total gene counts in that cell. Counts were multiplied by a constant factor (5000), a constant value of 1 was added to avoid zeros, and then the data were log transformed. Data analysis steps including Leiden clustering, differential gene expression analysis, and plotting of marker genes were performed using the Scanpy package (Wolf et al., 2018).
 
-## ATAC Seq
+#### ATAC Seq
 
 FACS-purified microglia were collected as described above and resuspended in 50 µL of ice-cold lysis buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2, 0.1% IGEPAL CA-630). Cells were spun down at 500 xg for 10 min at 4 °C. Supernatant was discarded and a transposition reaction was performed on the cell pellet using the Illumina Tagment DNA enzyme and buffer kit. Samples were purified using the Zymo ChIP DNA clean and concentrator kit and transposed DNA was eluted in elution buffer. Two independent trials were completed for the experiment.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
-## Sectioning
+#### Sectioning
 
 Twenty-two-week-old WT and ASO mice were anesthetized with pentobarbital (Euthasol). Mice were perfused with ice-cold phosphate buffered saline (PBS) and 4% paraformaldehyde (PFA). Brains were removed and placed in tissue culture plates with 4% PFA for 48 hr before transfer to PBS +0.05% sodium azide. Whole brains were embedded in agarose and sliced coronally into 50 µM sections using a vibratome. Free-floating sections were placed in PBS +0.05% sodium azide and stored at 4 °C until staining.
 
-## Staining
+#### Staining
 
 Sections were permeabilized for 30 min in 3% BSA, 0.5% Triton X-100 in PBS, blocked for 1 hr in 3% BSA, 0.1% Triton X-100 in PBS, and stained with IBA-1 (1:1000, Wako, anti-rabbit) and tyrosine hydroxylase (Th) (1:1000, Abcam, anti-chicken) overnight at 4 °C (protocol adapted from Datta et al., 2018). Sections were then stained with anti-rabbit IgG AF-647 (1:1,000, Life Technologies) and anti-chicken IgG AF-594 (1:600, Jackson ImmunoResearch). Slices containing brain regions of interest were mounted on a cover slip using ProLong Diamond anti fade mountant with 4',6-diamidino-2-phenylindole (DAPI). Coverslips were stored at 4 °C until imaging.
 
-## Imaging
+#### Imaging
 
 Images were obtained on a Zeiss LSM800. For diameter measurements: images were taken with a 20 X objective, with 3 pictures taken per brain region of interest. Imaris Software was used to measure the diameters of cells, with 30–70 cells counted per brain region/animal. For 3D reconstruction: z-stack images were taken with 1.00 µm steps in the z-direction with a 40 X objective. 3D reconstruction was done in the Imaris Software, with 3–6 cells analyzed per brain region/animal.
 
-## α-Synuclein aggregation assays
+### α-Synuclein aggregation assays
 
 Susbtantia nigra and striatum were dissected on ice from 22-week-old mice and stored at –80 °C until used.
 
-## Protein extraction
+#### Protein extraction
 
 Brain tissues were lysed using Tissue Extraction Reagent (Thermo Fisher) and protease inhibitor. Samples were homogenized for 90 s using a bead beater and were placed directly on ice for 10–15 min following homogenization. Lysates were centrifuged at 10 k rpm for 5 min and supernatants were collected and stored at –80 °C for later use. The full protocol can be found at protocols.io (https://doi.org/10.17504/protocols.io.5jyl896o6v2w/v1).
 
-## α-Synuclein aggregation
+#### α-Synuclein aggregation
 
 Levels of aggregated α-synuclein were determined using the dot blot assay. Samples were quantified using the Pierce BCA Protein assay kit (Thermo Fisher) and normalized to equal concentrations between 0.5–1.0 ng/µL in water. One µg of sample was spotted on dry nitrocellulose membrane (0.45 µm). Samples were blocked in 5% skim milk in Tris-buffered saline with 0.1% Tween-20 (TBS-T) and stained with anti-aggregated α-synuclein antibody (1:1000, Abcam) overnight at 4 °C. The next day, blots were stained with anti-rabbit IgG-HRP (1:1000, Cell Signaling) for 2 hr. Signal was detected using Clarity chemiluminescence substrate (Bio-Rad) and imaged on a Bio-Rad digital imager. Integrated density is reported as the intensity of an identically-sized area of each dot for each sample. The full protocol can be found at protocols.io (https://doi.org/10.17504/protocols.io.261gen2xdg47/v1).
 
-## RNA extraction and qPCR
+### RNA extraction and qPCR
 
 Brain regions were dissected on ice from 22-week-old mice and stored at –80 °C in RNAlater solution (Thermo Fisher) until RNA extraction.
 
-## RNA extraction
+#### RNA extraction
 
 RNA was extracted using either Direct-zol RNA Microprep or Miniprep kit (Zymo Research) depending on the size of the brain region. qPCR: RNA was transcribed using the iScript cDNA synthesis kit (Bio-Rad) per the manufacturer’s instructions. SYBR Green master mix was used for qPCR reactions. Primers used for experiments were: HDAC1: 5’-GAACTGCTAAAGTACCACC-3’ & 5’-CATGACCCGGTCTGTAGTAT-3; HDAC2: 5’-CGGTGTTTGATGGACTCTTTG-3’ & 5’-CCTGATGCTTCTGACTTCTTG-3’; HDAC6: 5’-CTGCATGGCATCGCTGGTA-3’ & 5’-GCATCAAAGCCAGTGAGATC-3’; HDAC7: 5’-CTCGGCTGAGGACCTAGAGA-3’ & 5’-CAGAGAAATGGAGCCTCTGC-3’; HDAC9: 5’-GCGGTCCAGGTTAAAACAGAA-3’ & 5’-GCCACCTCAAACACTCGCTT-3’; GAPDH: 5’-CATGGCCTTCCGTGTTCCTA-3’ & 5’- CCTGCTTCACCACCTTCTTGAT-3’; FFAR2: 5’-TTCCCATGGCAGTCACCATC-3’ & 5’-TGTAGGGTCCAAAGCACACC-3’; FFAR3: 5’-ACCGCCGTCAGGAAGAGGGAG-3’ & 5’TCCTGCCGTTTCGCSTGGTGG-3’.
 
-## Isolation of immune cells from intestinal lamina propria/spleen and flow cytometry
+### Isolation of immune cells from intestinal lamina propria/spleen and flow cytometry
 
 For isolation of intestinal lamina propria cells, the small and large intestines were dissected and placed immediately into ice-cold PBS. After mesenteric fat and Peyer’s patches (small intestine) were removed, the intestines were longitudinally opened and luminal contents were washed out with cold PBS. Tissue pieces were washed for 10 min in 1 mM dithiothreitol (DTT)/PBS at room temperature on a rocker to remove mucus, followed by a wash for 25 min in 10 mM EDTA/30 mM HEPES/PBS at 37 °C on a platform shaker (180 rpm) to remove epithelium. After a 2 min wash in complete RPMI, tissue was digested in a six-well plate for 1.5 hr in complete RPMI with 150 U/mL (small intestine) or 300 U/mL (large intestine) collagenase VIII (Sigma-Aldrich) and 150 µg/mL DNase (Sigma-Aldrich) in a cell culture incubator (5% CO2). Tissue digests were passed through a 100 μm cell strainer and separated by centrifugation (1200 xg for 20 min) using a 40/80% Percoll gradient. Immune cells were collected at the 40/80% interface. For the spleen, the tissue was passed through a 100 μm cell strainer and incubated in red cell lysis buffer (Sigma-Aldrich) for 8 min at room temperature. Both spleen and intestine immune cells were washed with 0.5% BSA/PBS before staining and fixation (eBioscience Foxp3 /Transcription Factor Staining Buffer Set).
 
 For flow cytometry staining, CD16/32 antibody (eBioscience) was used to block non-specific binding to Fc receptors before surface staining. Immune cells were stained with antibodies against the following markers: CD103 (PerCP-efluor710), CD11b (SuperBright645), CD11c (FITC), CD19 (FITC), CD3e (PE), CD4 (APC), CD45.2 (BV421), CD64 (APC-Cy7), CD8a (APC-e780), CSF1R (PE), Ly6C (APC), MHCII I-A/I-E (PE or PerCP-efluor710), TCRβ (PerCP-Cy5.5). For some panels, a lineage marker mix (Lin) contained TCRβ, B220, Ly6G and Siglec-F (PE-Cy7). Live and dead cells were discriminated by Live/Dead Fixable Aqua Dead Cell Stain Kit (Invitrogen).
 
-## Gut microbiome profiling
+### Gut microbiome profiling
 
-## Metagenomic sequencing
+#### Metagenomic sequencing
 
 Shotgun sequencing libraries were generated using the Kapa HyperPlus protocol on gDNA extracted from mouse fecal pellets. Samples were sequenced using 150 bp paired end reads on an Illumina NovaSeq 6000 at the UCSD IGM Genomics Center.
 
-## Metagenomic analyses
+#### Metagenomic analyses
 
 Quality control filtering and read alignment of metagenomic reads was conducted with Qiita (study-id 13244). First, adapter removal and quality trimming were conducted using Atropos v1.1.24. To generate taxonomic and functional gene-level profiles we applied the Woltka v0.1.1 pipeline to align reads against the Web of Life database (Zhu et al., 2019) using Bowtie2 v2.3.0 (Langmead and Salzberg, 2012), followed by generation of Operational Genomic Units (Zhu et al., 2021). Downstream statistical analyses and data visualization was conducted in R (v4.1.0). For community-level measures, including alpha- and beta-diversity, Woltka-generated taxonomic predictions at the species level were rarefied to an even depth of 321,980 counts. Alpha-diversity metrics including Observed Species, Simpson’s Evenness, and Gini’s Dominance were calculated using the microbiome R package and tested for statistical significance using a one-way ANOVA for treatment group and post-hoc Tukey’s test for pairwise comparisons. Assessment of between-sample diversity was accomplished using the Bray-Curtis distance. We estimated metadata-explained variance using the Bray-Curtis distance with permutational multivariate analysis of variance (PERMANOVA) with 9,999 permutations followed by multiple hypothesis testing corrections using the Benjamini-Hochberg method (FDR = 0.1). Differential abundance testing was conducted using Multivariable Association with Linear Models (MaAsLin2)(Mallick et al., 2021). For data preparation, we applied a 10% prevalence filter, total sum scale normalization, and an arcsine square root transformation for variance stability. We then applied a feature-level-specific variance filter based on the variance distribution and the number of features present at each level. MaAsLin2 linear models were fit with genotype and diet variables as fixed effects.
 
-## SCFA fecal measurements (LC-MS)
+#### SCFA fecal measurements (LC-MS)
 
 Fecal samples were collected from mice at 22 weeks of age and stored at –80 °C until analysis. Sample preparation: Mouse fecal samples were extracted and derivatized as described previously (Chan et al., 2017). Briefly, ice-cold extraction solvent (1:1 v/v acetonitrile/water) was added to fecal sample at a ratio of 2 μL:1 mg sample and internal standard mix to a final concentration of 100 μM. The suspension was vortex mixed for 3 min at room temperature, sonicated for 15 min, and then centrifuged at 18,000 x g for 15 min at 4 °C. An aliquot of 100 μL was subsequently derivatized using a final concentration of 10 mM aniline and 5 mM 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride (EDC) (ThermoFisher) for 2 hr at 4 °C. The derivatization reaction was quenched using a final concentration of 18 mM succinic acid and 4.6 mM 2-mercaptoethanol for 2 hr at 4 °C. All samples were stored at 4 °C until analysis on the same day. Mixed calibrators of acetic acid, propanoic acid, butyric acid and isobutyric acid (10 nM - 10×103 nM) (Sigma-Aldrich) together with single- and double- blanks, spiked with internal standard mix (acetic acid-d3, propanoic acid-d2, butyric acid-d2) (Pointe-Claire) to a final concentration of 100 µM were prepared and subjected to the same sample preparation procedure as fecal samples. The full protocol can be found at protocols.io (https://doi.org/10.17504/protocols.io.bp2l61rrkvqe/v1).
 
-## Liquid chromatography mass spectrometry (LC-MS)
+#### Liquid chromatography mass spectrometry (LC-MS)
 
 Derivatized samples were analyzed using an ultra-high-performance liquid chromatography (UHPLC) system 1290 connected to a quadrupole time of flight (Q-TOF 6545) mass spectrometer (Agilent Technologies) equipped with an orthogonal DUAL AJS-ESI interface. Samples were subjected to reverse phase C18 separation (Phenomenex Scherzo SS-C18 100x2 mm) and data were collected in positive ion mode. Data were acquired from 50 to 750 m/z-1 at 2 spectra s–1. Electrospray ionization (ESI) source conditions were set as follows: gas temperature 325 °C, drying gas 9 L min–1, nebulizer 35 psi, fragmentor 125 V, sheath gas temperature 350 °C, sheath gas flow 8 L min–1, nozzle voltage 1000 V. For reverse phase C18 chromatographic separation, a two-solvent gradient running at 0.3 mL min–1 (Mobile Phase: A: 100:0.1 Water:Formic Acid, B: 100:0.1 Isopropanol:Formic Acid) was used. The column was equilibrated at 15% B for 1 min and a sample was introduced. The solvent ratio was then increased from 15% B to 100% B over 13 min and then reduced back to 15% B over 2 min. Injection volume was 5 μL with a column temperature of 45 ° C. The LC-MS/MS data acquired using Agilent Mass Hunter Workstation (.d files) were processed in quantitative analysis software (Agilent Technologies) for quantitative analysis of samples. The linear calibration plots for acetic acid, propanoic acid, butyric acid and isobutyric acid were constructed using peak area ratios of each analyte to the IS versus the concentrations of calibrators (x) with 1 /x weighting, and the least squares linear regression equations were obtained as the calibration equations for individual analytes.
 
-## SCFA brain measurements (UHP-LC)
+#### SCFA brain measurements (UHP-LC)
 
 Striatum and substantia nigra were dissected from 22-week-old mice, placed in dry ice, and stored at –80 °C until analysis. Samples were analyzed by BIOTOOLS CO. using an ultra-high-performance liquid chromatography (UHPLC) system. Brain tissue samples were extracted with 70% methanol for 30 min, using a sample:solvent ratio of 1 mg:40 μL. The sample was centrifuged at 21,380 rcf for 5 min at 4 °C. The supernatant was used for derivatization procedures. Each sample was mixed with 5 μL of 0.1 mM internal standard and 200 μL each of pyridine, 1-EDC-HCl, and 2-NPH-HCl solutions as reaction- assistive agents, and reacted at 45 °C for 20 min. 100 μL of potassium hydroxide solution was added (to stop the reaction) and reacted at 45 °C for 15 min. After cooling, the mixture was ultrasonicated with 1 mL of phosphoric acid aqueous solution and 2 mL of ether for 3 min and then centrifuged for 5 min at 2,054 rcf. The ether layer was collected and spun-dry. The sample was reconstituted with 25 μl MeOH. Mass analysis: Each sample (2 μL) was injected into a Vanquish ultra-high-performance liquid chromatography (UHPLC) system coupled with SCIEX QTrap 5500. UHPLC parameters were set as follows: A CSH 1.7 μm, 2.1x100 mm column (Waters) was used. The column oven temperature was set at 45 °C. The binary mobile phase included deionized water containing 5 mM ammonium acetate as solvent A, and acetonitrile with 5 mM ammonium acetate as solvent B. The flow rate was 0.35 mL/min with a linear gradient elution over 15 min. Reagent 1: Pyridine (Sigma-Aldrich) was adjusted with methanol to 3% (V/V) (Weng et al., 2020).
 
-## Statistical analysis
+### Statistical analysis
 
 Graphpad Prism software (version 9.0) was used for statistical analysis. Data presented represent mean ± SEM, with each data point representing values from an individual mouse. All behavioral and molecular data were analyzed by two-way ANOVA followed by Tukey’s multiple comparisons test, unless stated otherwise. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.

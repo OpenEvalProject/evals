@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.44590.001 Most sensory systems are organized into parallel neuronal pathways that process distinct aspects of incoming stimuli. In the insect olfactory system, second order projection neurons target both the mushroom body, required for learning, and the lateral horn (LH), proposed to mediate innate olfactory behavior. Mushroom body neurons form a sparse olfactory population code, which is not stereotyped across animals. In contrast, odor coding in the LH remains poorly understood. We combine genetic driver lines, anatomical and functional criteria to show that the Drosophila LH has ~1400 neurons and >165 cell types. Genetically labeled LHNs have stereotyped odor responses across animals and on average respond to three times more odors than single projection neurons. LHNs are better odor categorizers than projection neurons, likely due to stereotyped pooling of related inputs. Our results reveal some of the principles by which a higher processing area can extract innate behavioral significance from sensory stimuli.
+Most sensory systems are organized into parallel neuronal pathways that process distinct aspects of incoming stimuli. In the insect olfactory system, second order projection neurons target both the mushroom body, required for learning, and the lateral horn (LH), proposed to mediate innate olfactory behavior. Mushroom body neurons form a sparse olfactory population code, which is not stereotyped across animals. In contrast, odor coding in the LH remains poorly understood. We combine genetic driver lines, anatomical and functional criteria to show that the Drosophila LH has ~1400 neurons and >165 cell types. Genetically labeled LHNs have stereotyped odor responses across animals and on average respond to three times more odors than single projection neurons. LHNs are better odor categorizers than projection neurons, likely due to stereotyped pooling of related inputs. Our results reveal some of the principles by which a higher processing area can extract innate behavioral significance from sensory stimuli.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ We then used genetically targeted single cell electrophysiology and anatomy to r
 
 ## Results
 
-## Key anatomical features of the lateral horn
+### Key anatomical features of the lateral horn
 
 Our key goal in this study was to understand the coding principles of third order neurons underlying innate olfactory behaviors. Nevertheless it is hard to understand the functional properties of a brain area without a basic understanding of the number and variety of constituents neurons. We used a wide variety of experimental/analytic approaches to obtain a comprehensive overview of the functional anatomy of the LH. We now present the observations most relevant to odor coding, organized hierarchically. We present further details in Materials and methods and online supplements including accompanying 3D data (jefferislab.org/si/lhlibrary).
 
@@ -50,7 +50,194 @@ Neuropil volume is indicative of the energetic investment in particular sensory 
 
 The number of neurons in a brain area is a key determinant of neuronal coding. A classic EM study cutting the MB’s parallel axon tract counted 2200 Kenyon cells (Technau and Heisenberg, 1982), while comprehensive genetic driver lines contain up to 2000 KCs (Aso et al., 2009). However the number of LHNs has remained undefined, since there is no single tract to cross-section, nor any driver line labelling all LHNs. In the locust, (Gupta and Stopfer, 2012) estimated that there are fewer LHNs than PNs. We combined light level image data with whole brain electron microscopy (EM) (Zheng et al., 2018) to address this question. Our anatomical screen (see below) identified 31 primary neurite tracts entering the LH (Figure 1B and Table 1); a random EM tracing procedure targeting 17 of the largest tracts yielded an estimate of 1410 LHNs (90% CI 1368–1454, see Experimental Procedures). Each tract consists predominantly of either output or local neurons giving an estimate of about 580 LH local neurons (LHLNs, 40%) and 830 LH output neurons (LHONs, 60%). These results show that LHONs are much more numerous than second order input PNs and within a factor of 2 of the number of third order MB Kenyon cells. The large number of KCs enables sparse odor coding, which is proposed to avoid synaptic interference during memory formation (reviewed by Masse et al., 2009). Why should the LH also contain so many neurons?
 
-## Driver lines and hierarchical naming system for LHNs
+![Figure 1.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig1-v2.jpg)
+
+**Figure 1.:** (A) Flow diagram following olfactory information to third order neurons of the LH and MB calyx. (B) Section through the PV5 primary neurite tract within the EM data; each profile was identified as an LHN (circles) or non LHN (triangles) by tracing to the first branch point. Scale bar 1 μm. (C) Sample Split-GAL4 intersection with parental lines inset. Cell body locations marked with white circle. (D) Summary table for the genetic screen. (E) Matrix summarizing which driver lines contained which anatomy groups (colored LHON = blue, LHLN = green). The vast majority of genetic driver lines labeled only a few LH anatomy groups. NB these data are also available as a supplementary spreadsheet. (F) Anterior (left) and posterior (right) views of the different LHN primary neurite tracts demonstrating the broad origin of LHNs. Grey dashed arrow indicates the order of increasing tract numbers for ventral PNTs (Lower arrow) and dorsal PNTs (above). The entry point into the brain rather than soma location was the point of reference for naming tracts. (G) Upper panels, cartoons summarizing the logic of the LHN naming system, lower panels, the PV5 primary neurite as an example. Note this includes only 3 out of 24 cell types in PV5. For each cell type one cell is highlighted (thick lines).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Matrix showing putative neuroblast origin for anatomy groups identified in the screen. (B) Matrix showing physiology classes together with the cross from which they were recorded. (C) Matrix connecting each of the physiology classes with the anatomy cell types to which it belongs.
+
+**Table 1.**
+ LHN tracts characterized in electron microscopy data.$Tracts¯$ match the Primary Neurite Tract nomenclature defined in Figure 1. $Type¯$ indicates whether the tract contains output or local neurons or a mix of both. $Profiles¯$ indicates the total number of profiles within the tract. $Est.LHNs¯$ indicates the sampling based estimate for the number of LHNs in the tract. $Range¯$ gives a 90% confidence interval.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tract</th>
+      <th>Type</th>
+      <th>Profiles</th>
+      <th>Est. LHNs</th>
+      <th>Range</th>
+      <th>Recorded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AV4</td>
+      <td>LHLN&gt;&gt;LHON</td>
+      <td>324</td>
+      <td>252</td>
+      <td>244–259</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>PV4</td>
+      <td>LHLN&gt;LHON</td>
+      <td>158</td>
+      <td>155</td>
+      <td>152–158</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>PV2</td>
+      <td>LHLN&gt;&gt;LHON</td>
+      <td>193</td>
+      <td>92</td>
+      <td>81–102</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>PD3</td>
+      <td>LHLN</td>
+      <td>75</td>
+      <td>59</td>
+      <td>43–75</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PD4</td>
+      <td>LHLN</td>
+      <td>88</td>
+      <td>22</td>
+      <td>10–33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>–LHLNs–</td>
+      <td>838</td>
+      <td>578</td>
+      <td>555–602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AV3</td>
+      <td>LHON&gt;LHLN</td>
+      <td>144</td>
+      <td>140</td>
+      <td>140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PD2</td>
+      <td>LHON</td>
+      <td>193</td>
+      <td>128</td>
+      <td>128</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>PV5</td>
+      <td>LHON</td>
+      <td>127</td>
+      <td>119</td>
+      <td>119</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>AD1</td>
+      <td>LHON</td>
+      <td>286</td>
+      <td>116</td>
+      <td>102–130</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>AV6</td>
+      <td>LHON</td>
+      <td>323</td>
+      <td>106</td>
+      <td>96–115</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>AV2</td>
+      <td>LHON&gt;&gt;LHLN</td>
+      <td>98</td>
+      <td>63</td>
+      <td>49–77</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>AD3</td>
+      <td>LHON</td>
+      <td>59</td>
+      <td>59</td>
+      <td>59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AV7</td>
+      <td>LHON</td>
+      <td>141</td>
+      <td>48</td>
+      <td>25–70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AV1</td>
+      <td>LHON</td>
+      <td>33</td>
+      <td>25</td>
+      <td>25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AV5</td>
+      <td>LHON</td>
+      <td>108</td>
+      <td>17</td>
+      <td>7–27</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PV3</td>
+      <td>LHON</td>
+      <td>52</td>
+      <td>12</td>
+      <td>0–25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AD2</td>
+      <td>LHON</td>
+      <td>52</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>–LHONs–</td>
+      <td>1616</td>
+      <td>832</td>
+      <td>797–868</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>–Total–</td>
+      <td>2454</td>
+      <td>1411</td>
+      <td>1368–1454</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Driver lines and hierarchical naming system for LHNs
 
 Transgenic driver lines are the standard approach to label and manipulate neurons in Drosophila (Venken et al., 2011). Given the large number of LHNs, it seemed essential to identify lines targeting subpopulations to test our hypothesis that LHNs are stereotyped odor encoders. When we began our studies, the only relevant lines came from Tanaka et al. (2004), who identified four drivers labeling distinct populations of LHNs from a screen of ~4,000 GAL4 lines. We carried out an enhancer trap Split-GAL4 screen (Luan et al., 2006), eventually selecting 234 lines containing LHNs from 2769 screened (see Experimental Procedures for details). These lines gave us access to the majority of known classes of LHNs and were used for most functional studies in this paper. However they were rarely cell type-specific, making them less suitable for behavioral experiments.
 
@@ -60,11 +247,23 @@ Building on our initial screen, we also annotated (Figure 1D) the widely used Fl
 
 This second screen of GMR/VT lines provides a link between our LHN classification and experimentally valuable resources including further driver lines and co-registered 3D image data (see Materials and methods). Indeed, building on these annotations we went on to prepare a large collection of highly specific intersectional Split-GAL4 lines selectively targeting specific LH cell types; this facilitates many experiments including behavioral analysis for which our first generation split-GAL4 reagents were less suitable (see Dolan et al., 2019, sister manuscript).
 
-## Single cell anatomy of the lateral horn
+### Single cell anatomy of the lateral horn
 
 The results presented so far provide principled estimates of the number of LHNs, identify genetic reagents for their study and develop a hierarchical nomenclature classification system. The final part of our neuroanatomical groundwork was to carry out a large scale single cell analysis of the LH in order to gain an initial understanding of the variety of cell types that it contains.
 
 Given our new estimate that there are ~1400 neurons LHNs, what is the anatomical and functional diversity amongst this large number of neurons? To address this, we co-registered FlyCircuit neurons (Chiang et al., 2011) and neurons recorded during this study, segmenting each neuron into predicted axonal and dendritic domains (Figure 2, see Materials and methods). We created an online 3D atlas of 1619 LHNs as well as 1258 LH input neurons. We first reviewed LH inputs (Figure 2A). The principal uniglomerular olfactory inputs to the LH have been well-studied but we found 26 new classes including many non-olfactory inputs (see Figure 2—figure supplement 1A and Materials and methods for details). Multiglomerular olfactory neurons, and presumptive thermosensory, hygrosensory, and mechanosensory neurons were all concentrated in a ventromedial domain of the LH (Figure 2B), emphasizing that the LH is a multimodal structure.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig2-v2.jpg)
+
+**Figure 2.:** (A) Sample single projection neurons with axonal projections in the LH, showing all major axon tracts and sensory modalities that provide input. (B) Close up of the LH with axonal arbors for all FlyCircuit neurons of each presumptive sensory modality. (C) Overview of our annotated LHN skeleton library showing all skeletons with LH arbors, core LHN cell types (see Figure 2—figure supplement 1) and those neurons reconstructed after electrophysiological recording in the present study. Neurons colored by anatomy group. (D) Visualization of single exemplars for all cell types for which we have >=3 skeletons in the library, or from which we made electrophysiological recordings in this study. Output neurons in blue, local neurons in green. (E) Bar chart showing, for each target neuropil, the total axonal cable length contributed by all core LHONs (calculated as sum of mean for each identified cell type). Brains plots show in major (> 3 mm axonal cable) and minor (1–3 mm) targets of LHONs. Brain neuropil according to Ito et al. (2014); mALT, medial antennal lobe tract, tALT, transverse antennal lobe tract, mlALT, medio-lateral antennal lobe tract, lALT, lateral antennal lobe tract.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) FlyCircuit PN skeletons co-registered in a standard brain and separated by anatomy group (panels). Each skeleton is plotted in a different color. The number of skeletons is determined by frequency in the FlyCircuit dataset not the number of cells in a single brain. LH, MB lobes and AL shown in darker grey. (B) Example LHN primary neurite cluster, PD2, broken down into its constituent anatomy groups (panels) and cell types (colors). (B’) Using NBLAST to disambiguate cell types and anatomy groups. Dendrogram based on hierarchical clustering of NBLAST scores. Node shape and color indicate different anatomy groups. Leaf color indicates whether each skeleton is from the FlyCircuit dataset or a dye-fill from this study. (C) The number of skeletons, cell types and anatomy groups in the LHN dataset in each primary neurite cluster. (D) Histogram showing the number of skeletons for each LHN anatomy group and cell type. (E) Using NBLAST to match a neuron skeleton to the correct anatomy group. Each skeleton in the dataset was removed, NBLASTed against the rest, mean scores were taken per anatomy group, and anatomy groups ranked. Bar chart shows percentage of skeletons matched to, 1, the correct anatomy group and, >=2, incorrect anatomy groups. (F) Defining a ‘core' set of LHNs. Scatter plot shows cell type plotted against the Log10 of their overlap score (see Materials and methods) with PN termini and the proportion of their dendritic arbor (see Materials and methods) in the standard LH (Ito et al., 2014). Horizontal decision boundary at 50%, vertical decision boundary at 50000, red box, non ‘core' LHNs. The dopaminergic MB input neuron, PPL1-a'3 (Aso et al., 2014a), is flagged in orange as an example of a non-core LHON. Points bounded in blue indicate cell types shown in panel A. Points in chartreuse and dark green (rather than gray) indicate cell types belonging to anatomy groups identified in the Gal4 lines we screened. We made electrophysiological recordings from cell types in dark green.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) A frontal view of the two largest tracts containing local interneurons. Local anatomy group AV4a (A) and PV4a (A’) are colored red. Similar clusters with local arborization just outside the LH AV4b (A) and PV4b (A’) are colored blue. The rest of the anatomy groups in these primary neurite tracts are colored green. (B) Same as A but showing frontal (left) and dorsolateral (right) views with the two main anatomy groups only.
 
 To classify LHNs, i.e. neurons with presumptive dendrites in the LH, we assigned neurons to anatomy groups and cell types (Figure 1G) using NBLAST clustering (Costa et al., 2016), followed by a close manual review of within and across cell type stereotypy in fine branching patterns (Figure 2—figure supplement 1B). We found that there is no unique statistical definition (i.e. single cut height for NBLAST clustering) that is appropriate for all LH cell types (Figure 2—figure supplement 1B'), even when these anatomical cell type can be validated by other cellular properties (see below). Nevertheless for those cell types with more than one neuron, NBLAST identified the correct, manually ascribed cell type ~80% of the time (Figure 2—figure supplement 1E).
 
@@ -78,11 +277,19 @@ Input distribution is not uniform within the LH. Excitatory uniglomerular and in
 
 In order to enable more effective exploration of these data, we have prepared a number of downloadable data and source code resources (see Online resources). These include a 3D enabled web application at jefferislab.org/si/lhlibrary which also links to the highly selective split-GAL4 reagents described in our (Dolan et al., 2019) sister manuscript as well as cross-referencing 26 LHN cell types recently characterized by Jeanne et al. (2018).
 
-## Odor responses of lateral horn neurons
+### Odor responses of lateral horn neurons
 
 The neuroanatomical groundwork that we have just summarized includes a huge amount of detail that will be relevant for many circuit studies. However as we turn our attention to olfactory coding one question, one major question stands out. Why are there so many LHN cell types? To answer this question we began by defining the odor response properties of LHNs and comparing them with their presynaptic partners, the PNs. We also hoped to contrast LHN responses with those of MB Kenyon cells, the other main class of third order olfactory neuron.
 
 With genetic driver lines in hand we were able to carry out targeted recordings from LHNs (Figure 3). Given that these cells had unknown response properties and our previous experience was that calcium signals in LHN somata are not a sensitive measure of LHN firing, we carried out in vivo whole cell patch clamp recordings as we have previously described (Kohl et al., 2013). We recorded 587 cells of which 410 (242 LHONs, 84 LHLNs, and 84 identified PNs) reached the criteria for inclusion in our population analysis (see Experimental Procedures). Comparing basic electrophysiological parameters across different groups, both LHONs and LHLNs generally have a much higher input resistance and lower cell capacitance than PNs (Figure 4D and Figure 3—figure supplement 1D); this suggests that the energetic costs of individual spikes will be lower in LHONs than PNs.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig3-v2.jpg)
+
+**Figure 3.:** Raster plots for two PNs (red), five LHLNs (green), and seven LHONs (blue). Each odor was presented 4 times to each cell with a 250 ms valve opening starting 500 ms after recording (red bar). For each odor the voltage response of the four trials was averaged (continuous line) while rasters show the spiking response for each presentation. Note the progressive reduction in baseline firing rate and sparseness between PNs and LHLNs, and LHONs. Odors abbreviated on the left can be identified from a supplementary spreadsheet.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** For each physiology class the mean response is plotted against the access resistance (A), the cell capacitance (B), and the membrane resistance (C). (D) Cell capacitance is plotted against membrane resistance with cells colored according to their group (PN, LHLN, LHON). (E) Single trial response reliability using different mean response thresholds.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig4-v2.jpg)
 
@@ -94,7 +301,7 @@ If we consider every single odor presentation, the mean firing rate was similar 
 
 In conclusion, LHONs are on average 10x quieter than PNs at baseline, show significant responses to 3x more odors, but have lower evoked firing rates, consequently firing a similar total number of spikes.
 
-## Defining functional cell types
+### Defining functional cell types
 
 Our recordings indicated that cells fall into distinct groups based on their odor tuning profile (Figure 5). For example, morphologically similar neurons belonging to the same anatomy group could be subdivided by their odor-evoked responses. Close inspection revealed subtle morphological differences between these subgroups (Figure 5B,E). However when looking over the entire cell repertoire it was evident that although we used a large odor set, many cells that were anatomically completely distinct, had rather similar odor responses that we could not reliably separate by automated analysis (Figure 5C,F).
 
@@ -108,7 +315,7 @@ While some functional cell types had low variability in odor responses and were 
 
 Finally, we would also like to emphasize that a requirement of co-clustering of LHNs by odor response alone is actually very stringent. PNs are generally assumed to be highly stereotyped odor responders, but we found that many PNs were not perfectly clustered using the approach of cutting a dendrogram formed by clustering odor responses. This was also true for earlier results of Murthy et al. (2008) (obtained with 7 cell types and 12 odors vs 22 cell types and 36 odors).
 
-## Fine scale anatomical clustering confirms LHN classification
+### Fine scale anatomical clustering confirms LHN classification
 
 We next wanted to compare and cross-validate our manual classification into functional cell types with automated clustering. We were specifically concerned with the finest level of classification (i.e. cell type) and whether odor tuning differences (among cells with similar coarse anatomy) or fine anatomical differences would individually be sufficient to define a cell type. We selected all the functional cell types for which we had more then three filled, traced and co-registered cells (122 out of a total of 141; 42 cell types) and began by dividing them into six pools based on their primary neurite tract. We then carried out automated clustering based either on odor response profile (Figure 6A) or NBLAST clustering of neuronal morphology. Automated clustering of each of these pools reliably identified our manually defined physiology classes with a median Adjusted Rand Index for anatomy of 0.64 and 0.60 for odor response data (Figure 7B). This result demonstrates that the manual classification strategy in of the previous section is well-grounded. It also strongly supports the interpretation that our functional cell types are bona fide cell types since they can be independently defined by both anatomical and functional properties.
 
@@ -116,13 +323,21 @@ We next wanted to compare and cross-validate our manual classification into func
 
 **Figure 6.:** (A) Analysis pipeline for generating the cell-odor response correlation matrix and measuring correlation across cells. Responses were binned (blue squares, 50 ms) and the mean firing rate was calculated for each time bin. For each cell, the responses to all odor, ware concatenated into a single vector and a matrix of all the cell odor responses was generated. This cell-odor matrix was used to calculate the Pearson’s correlation between the odor responses for all pairs of cells. (B–D) Heatmaps of the resultant cross-correlation matrices for LHONs, PNs and LHLNs, respectively. To allow comparison all three heatmaps share the same color scale for the correlation coefficient (top left) demonstrating a higher correlation between LHONs as well as considerable higher level of off-diagonal correlation structure.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig7-v2.jpg)
+
+**Figure 7.:** (A) Cross correlation matrix of odor responses and fine anatomy (NBLAST) for the same cells. Cells were divided according to their PNT. Only classes with at least three traced cells were used. We highlighted areas of misclassification with either a star (single mis-classified cell) or a red bar for a section of several cells. Correlation matrices for six primary neurites were organized in pairs with physiology on top and Anatomy below. Color scale for all physiology Correlation matrices and all anatomy Correlation matrices is the same. (B) Summary comparing Adjusted Rand Index clustering score for each primary neurite tract by physiology and anatomy. Black dot in B to D marks the results of analyzing the entire data set together. (C) Summary comparing Adjusted Rand Index clustering score for each primary neurite tract by physiology and anatomy after correcting class labels in two cases. (D) Summary comparing percent correct clustering score for each primary neurite tract by physiology and anatomy after class correction. (E) NBLAST clustering of all functional cell types with >=3 traced cells after merging two cases of indistinct cell types (see Figure 7—figure supplement 1 for details). Note the excellent agreement between the anatomical clustering and our manually defined functional cell types.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** We examined three cases in which both odor tuning and anatomy had significant similarities. (A) Functional cell types 12, 14, and 28 are very similar in their anatomy and their odor responses were showed high variability. We therefore decided to merge them into a single class (12). (B) We had initially separated cell types 34 and 35 due to a large difference in response strength, however in the absence of a difference in anatomy and given that they responded to the same odors we decided to merge them into a new class (34). (C) Classes 8 and 10 are similar both in physiology and anatomy but nevertheless significant differences still enabled them to be separated.
+
 We also carried out the same cluster analysis across the whole dataset that is without dividing the neurons into six pools (black dots in Figure 7B to D). Although NBLAST anatomical clustering continued to perform well (Adjusted Rand Index, ARI = 0.74), hierarchical clustering of odor response data performed considerably worse (ARI = 0.38) albeit still above the chance level of ARI = 0 (Figure 7B). This lower performance results from the confusion of cells with rather similar response properties but very different morphology (Figure 7—figure supplement 1B).
 
 In three cases, neither automated clustering by odor response or NBLAST clustering could reliably separate similar cell types defined during our manual classification. We carefully scrutinized the odor responses and morphology of the relevant cells (Figure 7—figure supplement 1. In two of these cases, we eventually decided to merge closely related cell types. In the third case, we concluded that our initial manual classification was correct. This resulted in a set of consensus cell types based on all the information at our disposal. We then reran our automated clustering across the whole dataset. While the performance of our anatomical clustering improved somewhat, the functional clustering continued to perform poorly (Figure 7C). For this set of consensus cell types we find the percent of correct classification by physiology or anatomy (Figure 7D) as 86% and 66%, respectively, when considering all cell types in a single pool. Finally we show a hierarchical NBLAST clustering for all cell types in Figure 7E, showing excellent agreement between the automated anatomical clustering and manually defined functional cell types.
 
 In conclusion these results demonstrate the existence of 33 cell types in the LH with stereotyped odor responses and neuronal morphology across animals. They also strongly support the idea that the >165 LHN cell types that we have defined based on anatomical criteria alone will also show stereotyped odor responses across animals.
 
-## LHONs sample odor space in a non homogeneous manner
+### LHONs sample odor space in a non homogeneous manner
 
 The odor response cross-correlation heatmaps presented in Figure 6B–D are noticeably different for PNs, LHLNs, and LHONs. First, the mean correlation across cells is significantly higher for LHONs than for PNs or LHLNs. Second, the LHON heatmap shows considerable off-diagonal correlation structure that is largely absent from the PN and LHLN heatmaps. These two differences are obviously not independent – the higher overall correlation across LHONs may also result in more neurons with overlapping odor response profiles. It is important to understand the nature and origin of these differences between second order PNs and third order LHONs since the correlation structure of odor responses across each neuronal population will have a significant impact on its odor coding capacity.
 
@@ -142,11 +357,11 @@ Odor Space - LHONs sample odor space in a biased manner, with many cell types 
 
 To try to distinguish these different possibilities, we first carried out a simple computational experiment in which we shuffled the odor stimulus labels, choosing a different permutation for each cell type. This procedure maintains the same firing rates and tuning breadths for each cell type, but disrupts the correlation structure across cell types that would result from extensive similarities in odor profiles across types. Figure 8A’–C’ presents the results of this manipulation, which clearly removes the off-diagonal structure for all three groups of cells, leaving almost no cases of elevated cross-correlation. This effect is clearly much larger for LHONs than for PNs (quantified in Figure 8D). Increased tuning breadth alone therefore cannot explain the extensive off-diagonal cross-correlation structure for LHONs, but instead biases in the odor response properties across cell types appear to be the main factor.
 
-This first analysis suggests that in the absence of strong biases in the odors that excite LHONs, tuning breadth has no substantial impact on the population cross-correlation. However, given that LHONs have such response biases, we next examined whether tuning breadth could be a contributory factor. We found a statistically significant (p=0.004) although not particularly strong (adjusted R2 = 0.19) positive relationship between mean odor response probability and mean cross-correlation scores. However we can also see that if we compare with PNs, LHONs had consistently higher cross-correlation scores, even for cell types with low odor response probabilities (left of red line in Figure 8E). One issue with this last comparison is that the mean cross-correlation scores for narrowly tuned LHONs still included comparisons against both broad and sparse LHONs. We therefore further limited our analysis to consider the cross-correlation only between sparse LHON cell types. Once again LHONs showed higher cross-correlation scores (p=2.7E-5) than PNs (Figure 8F). This also indicates that the number of cell classes is not the main reason for the high correlation since by limiting our analysis to sparse classes only we also matched the number of PN and LHON classes (20 and 22 classes, respectively).
+This first analysis suggests that in the absence of strong biases in the odors that excite LHONs, tuning breadth has no substantial impact on the population cross-correlation. However, given that LHONs have such response biases, we next examined whether tuning breadth could be a contributory factor. We found a statistically significant (p=0.004) although not particularly strong (adjusted $R^{2}$ = 0.19) positive relationship between mean odor response probability and mean cross-correlation scores. However we can also see that if we compare with PNs, LHONs had consistently higher cross-correlation scores, even for cell types with low odor response probabilities (left of red line in Figure 8E). One issue with this last comparison is that the mean cross-correlation scores for narrowly tuned LHONs still included comparisons against both broad and sparse LHONs. We therefore further limited our analysis to consider the cross-correlation only between sparse LHON cell types. Once again LHONs showed higher cross-correlation scores (p=2.7E-5) than PNs (Figure 8F). This also indicates that the number of cell classes is not the main reason for the high correlation since by limiting our analysis to sparse classes only we also matched the number of PN and LHON classes (20 and 22 classes, respectively).
 
 Summarizing, we conclude that LHONs sample odor space less homogeneously than PNs leading to higher cross-correlation in LHON responses than their PN inputs. We further show that increased tuning breadth of LHONs and the increased number of LHON classes are not the main reason for this high correlation.
 
-## Encoding of odor categories
+### Encoding of odor categories
 
 We have already explored a number of aspects of odor coding by LHNs. For example we have seen that LHNs, as a population, respond to 3 times more odors than their PN inputs and that they sample odor space inhomogeneously. We hypothesized that these features of LHN odor coding arise because they pool specific odor input channels that signify odors of common behavioral significance. The circuit origins of behavioral significance, which can be summarized at its very simplest level as a binary valence – whether odors are attractive or repulsive – have received considerable attention recently (reviewed by Knaden and Hansson, 2014). However the observed behavioral valence is extremely dependent on numerous factors including the exact behavioral paradigm and odor concentration used. Therefore rather than trying to examine LH odor coding from the perspective of the behavioral valence reported for different odors in the literature, we initially focussed on encoding of well-defined chemical features.
 
@@ -154,7 +369,7 @@ We first categorized our odor set based on the presence of alcohol, aldehyde, am
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/44590/elife-44590-fig9-v2.jpg)
 
-**Figure 9.:** (A) Population representations of odors. Responses are projected into the spaces of the second and third principal components, and color-coded by odor category. (B) Distribution of AUC scores for PNs and LHLNs, and LHONs. An AUC score of 0.5 indicates no information about odor category. Box = 25–75% centiles, line = median, whiskers 5–95% centiles, notch indicates bootstrap 95% confidence interval of the median. LHON odor responses convey more category information than PNs (), one-sided Mann-Whitney U-test (p<0.005C) Distribution of AUC scores for each population divided into the different odor categories (D) PCA analysis after divisive normalization. (E) Mapping of the different odor categories to brain voxels (see Materials and methods: Odor coding analysis). (F–G) Decoding accuracy of linear support vector classifiers (SVC) trained to perform category (F) or identity (G) classification using different numbers of cell classes. The main figure shows the result of using 1 to 10 classes while the inset shows the result of using all available classes for each group. Altogether we show that LHONs are better at encoding odor chemical categories than PNs.
+**Figure 9.:** (A) Population representations of odors. Responses are projected into the spaces of the second and third principal components, and color-coded by odor category. (B) Distribution of AUC scores for PNs and LHLNs, and LHONs. An AUC score of 0.5 indicates no information about odor category. Box = 25–75% centiles, line = median, whiskers 5–95% centiles, notch indicates bootstrap 95% confidence interval of the median. LHON odor responses convey more category information than PNs ($p<0.005$), one-sided Mann-Whitney U-test (C) Distribution of AUC scores for each population divided into the different odor categories (D) PCA analysis after divisive normalization. (E) Mapping of the different odor categories to brain voxels (see Materials and methods: Odor coding analysis). (F–G) Decoding accuracy of linear support vector classifiers (SVC) trained to perform category (F) or identity (G) classification using different numbers of cell classes. The main figure shows the result of using 1 to 10 classes while the inset shows the result of using all available classes for each group. Altogether we show that LHONs are better at encoding odor chemical categories than PNs.
 
 This result motivated us to examine the ability of individual LHNs to encode odor categories. We treated each cell as a binary classifier for a given odor category, that is signaling the presence or absence of that category and measured its performance using a normalized area under the ROC curve (AUC) score (see Materials and methods). LHONs and, to a lesser extent, LHLNs, but not PNs convey category information in their odor responses, when compared with shuffled control distributions (Figure 9B). The LHON population has the largest fraction (70%) of category-informative cells, followed closely by LHLNs, which have nearly twice as many category-informative cells as PNs (data not shown). Among the six categories, four were highly represented in the LHON population and amine categorizers appeared to be the most selective (Figure 9C). These results indicate that LHNs indeed develop a novel ability to encode higher order odor features that are more likely to be behaviorally relevant to the fly, confirming a longstanding hypothesis in the field.
 
@@ -168,7 +383,7 @@ As we expected, LHN populations were better than PNs and LHLN at identifying odo
 
 In comparison, neither PNs, LHONs, or LHLNs showed above chance odor identification performance when only one class was used (Figure 9G). As we increased the number of cell types in the decoding population, performance improved for all groups but LHONs gradually improved compared with PNs and LHLNs. In future it will be interesting to compare these results with KCs by obtaining odor response data in equivalent conditions. While this analysis is certainly consistent with our hypothesis that stereotyped integration in the LH could enable genetically determined categorical odor representations, there is also a weakness that cannot obviously be overcome without additional data: this population decoding analysis tests the ability of random subsets of neurons to predict the category or identity of all our test odors. However given the stereotyped nature of LHN responses, we propose that particular LHN populations are dedicated for particular odor categories. In this regard, future analysis based on comparing the responses of LHNs integrating known olfactory channels will be instructive.
 
-## Integration of odor channels by LHNs
+### Integration of odor channels by LHNs
 
 Many of our observations (increased tuning breadth, increased single cell categorization ability, reduced representational dimensionality) suggest that the LHONs pool olfactory information to better inform the behavioral significance of an odor. Although this provides a rationale for the observed differences in odor coding, it does not account for them mechanistically. Previous light level studies have attempted to predict PN to LHN connectivity (Jefferis et al., 2007) based on light level overlap and a handful of these predictions have been validated (or refuted) electrophysiologically (Fişek and Wilson, 2014). Nevertheless light level mapping, especially when carried out across brains cannot reliably predict actual synaptic connections.
 
@@ -184,7 +399,7 @@ We also compared these LHN input numbers with those for MB Kenyon cells, re-anal
 
 ## Discussion
 
-## Odor coding in LH
+### Odor coding in LH
 
 Our principal finding is that lateral horn neurons (LHNs) as a population are genetically and anatomically defined cell types with stereotyped odor responses. Starting from recordings of genetically defined populations we cross-validated fine scale anatomical differences and odor tuning for 37 LHN cell types; this confirms that stereotypy is a general feature of the lateral horn (LH) and not particular to specialist odor pathways such as those that process pheromone information, which may retain a labeled line logic all the way from the periphery. Although we see evidence of narrowly tuned LHNs dedicated to the processing of specific odors, the population as a whole shows 3x more odor responses than their olfactory projection neuron (PN) inputs. The increased tuning breadth may reflect a transition to a more behaviorally relevant coding scheme. This is consistent with our findings that LHNs show significantly improved odor categorization compared with PNs, apparently due to stereotyped pooling of related odor channels. The chemical categories that we analyzed are probably not of direct ethological relevance to the fly, but serve as proxies – further explorations of olfactory neuroecology are clearly necessary. For example we saw limited evidence for simple representations of olfactory valence in LHN responses.
 
@@ -192,7 +407,7 @@ It is instructive to compare the odor tuning properties we find across the later
 
 It is also interesting to compare response properties with recent recordings from the mammalian posterolateral cortical amygdala (Lurilli and Datta, 2017), which has been compared to the LH, since it receives spatially stereotyped input from the olfactory bulb (Sosulski et al., 2011) and is required for innate olfactory behaviors (Root et al., 2014). (Lurilli and Datta, 2017) found that odor tuning properties were very similar to the mammalian piriform cortex (which has been compared to the mushroom body). Both regions showed decorrelated odor representations (whereas we find that LHN odor responses show significant correlations suggestive of a focus on particular combinations of olfactory channels) and odor tuning in the cortical amygdala was actually somewhat sparser. In further contrast to our observations in the LH they found no evidence for categorization of odors by chemical class and crucially no evidence for response stereotypy in a way suggestive of stereotyped integration of defined odor channels. We would however caution with respect to the last point that had we recorded from a small fraction of randomly selected neurons of the Drosophila LH, we might easily have missed response stereotypy. It is only because we were able to use genetics to bias our sampling, and also to record from a significant fraction of the whole LH population, that we could obtain clear evidence for odor response stereotypy. Nevertheless, these differences seem marked and it will be very interesting to compare the logic of these systems across organisms. One point to note is that the circuits in the fly may be more compact: LHNs can in a few cases connect directly to fourth order neurons with descending projections to the nerve cord likely to have a direct impact on motor behavior (Ruta et al., 2010; Huoviala et al., 2018).
 
-## Circuit mechanisms
+### Circuit mechanisms
 
 There are some similarities between the increase in tuning breadth that we observe at the PN-LHN transition and what has previously been reported at the first synaptic layer of the olfactory system (the olfactory receptor neuron to PN synapse). In the antennal lobe broadening appears to depend on a compressive non-linearity, which boosts weaker inputs (Bhandawat et al., 2007) and possible excitatory local interactions (Olsen et al., 2007; Shang et al., 2007). Although a direct comparison between the extent of broadening in the antennal lobe and LH is not possible without measuring odor responses from many receptor neurons under the same stimulus conditions (as we did for PNs and LHNs) it seems likely that the effect is larger in the LH. Importantly the mechanism here appears quite different, with direct pooling of feed-forward inputs.
 
@@ -200,7 +415,7 @@ Our initial EM connectomics observations suggest that a typical output LHN (LH
 
 We would also like to highlight some additional differences in circuit architecture between the MB and LH that may be of functional significance. First the MB calyx receives only excitatory PN input, whereas, there is a population of almost 100 inhibitory PNs that project to the LH (Tanaka et al., 2012a). Second we find that the LH contains an estimated 580 local neurons (most of which are inhibitory, Dolan et al., 2019), whereas the mushroom contains just one local inhibitory neuron, the APL. We suspect that a major reason for this difference is again related to the stereotyped vs non-stereotyped design of these two centers. The APL is not selective but appears to pool all KC inputs to implement a winner take all gain control mechanism, suppressing more weakly activated KCs (Papadopoulou et al., 2011). Our preliminary EM results show that at least some LHLNs integrate small numbers of input channels (2–3 strong inputs). We suggest that they then make stereotyped connections either reciprocally onto their input PNs or onto other specific neurons in the LH.
 
-## Cell types in the central brain
+### Cell types in the central brain
 
 There is renewed interest in the identification of cell types in the brain as an important step in the process of characterizing circuits and behavior (Zeng and Sanes, 2017; Bates et al., 2019a). Historically, cell types have been best classified by morphology and the most detailed work has been in the sensory periphery (e.g. 55 cell types in the mouse retina: Masland, 2001). Recently single cell transcriptomics has begun to match this morphological classification (Shekhar et al., 2016) and also to enable more detailed exploration of diversity in deeper brain regions (e.g. 133 cell types in mammalian cortex: Tasic et al., 2018). However, relating cell types to functional and network properties especially in higher brain areas remains challenging.
 
@@ -210,7 +425,7 @@ One interesting observation is that it was easier to identify cell types anatomi
 
 Initial evidence from EM connectomics (Dolan et al., 2018) has shown that two specific LHN cell types integrate stereotyped sets of olfactory channels with similar odor response profiles. This is paralleled by the recent work of Jeanne et al. (2018), who showed that morphologically similar neurons sampled from the same or different GAL4 lines showed similar functional connectivity; furthermore they showed that the patterns of co-integration were not random, but that certain pairings of PN inputs were over-represented in the PN population. These observations are likely to be at the heart of the category selectivity that we observe in LHON responses. It will be exciting to integrate functional and anatomical properties more deeply with circuit properties. Furthermore our genetic screening identifies at least 69 molecular profiles based on expression of driver lines (Figure 1E). This molecular diversity underlies our ability to generate cell type specific split-GAL4 lines in Dolan et al. (2019). The existence of such a rich and coupled genetic and anatomical diversity raises interesting questions about how connection specificity can be achieved during development in this integrative brain area.
 
-## What is the behavioral function of the lateral horn?
+### What is the behavioral function of the lateral horn?
 
 The lateral horn is one of two major olfactory centers in the fly. The hypothesis that it might play a specific role in unlearned olfactory behaviors dates back at least to Heimbeck et al. (2001). This has been strengthened by observations about the relative anatomical stereotypy of input projections to the mushroom body and lateral horn (Marin et al., 2002; Wong et al., 2002; Tanaka et al., 2004; Jefferis et al., 2007; Caron et al., 2013). Nevertheless in spite of this general model of a division of labour between LH and MB, functional evidence has been hard to come by. Some arguments about LH function have been based on experiments that manipulate mushroom body neurons; here it is worth noting that there are olfactory projections neurons that target areas outside of these two principal centers (e.g. Tanaka et al., 2012a; Aso et al., 2014b) so the lateral horn cannot rigorously be concluded to mediate behaviors for which the mushroom body appears dispensable.
 
@@ -224,7 +439,7 @@ We finally return to a key question posed at the start of the manuscript: why do
 
 ## Materials and methods
 
-## Enhancer trap Split-GAL4 screen
+### Enhancer trap Split-GAL4 screen
 
 We hypothesized the low yield of previous screens to identify LH driver lines was due to a combination of extensive genetic heterogeneity amongst LHNs and the use of classic enhancer trap GAL4 lines, each of which labeled many neuronal classes; if an expression pattern labels many neurons, expression in a small subpopulation may be missed either because they are obscured by brighter neurons or because neurons of interest do not have a common highly organized structure that observers can more easily discern (Ito et al., 2003).
 
@@ -234,45 +449,49 @@ Split-GAL4 screen: DBD and AD enhancers lines were crossed to broadly expressing
 
 ET-AD insertions were screened by crossing to Cha-DBD (in theory targeting cholinergic excitatory neurons) with a GFP reporter, while ET-DBD insertions were crossed to elav-AD (in theory targeting all neurons). In each case the resulting expression pattern was imaged. Of these lines we chose the best lines based on criteria such as selectivity, and expression strength. The expression pattern was analyzed and annotated for selected lines. Image registration (Ostrovsky et al., 2013) to the standard IS2 template brain (Cachero et al., 2010; Manton et al., 2014) was used to facilitate comparison of lines and clusters. AD and DBD lines that potentially contained the same neurons of interest were then intercrossed to generate more specific lines.
 
-## Hierarchical naming system for LHNs
+### Hierarchical naming system for LHNs
 
 We chose primary neurite tract as the top level of our hierarchy because each neuron has just one soma and primary neurite tract and because it groups functionally related neurons for example those with common neurotransmitters or similar axonal projections. We named the 31 primary neurite tracts found based on their anterior-posterior and dorso-ventral position with respect to the centre of the LH: AV1-AV7 (AV = anterior ventral), AD1-AD5, PV1-PV12 and PD1-7. Neurons within each tract typically have a shared developmental origin; using co-registered image data (Yu et al., 2013; Ito et al., 2013; Manton et al., 2014), we matched neurons following each of the 31 tracts with 39 parental neuroblasts likely to generate LH neurons (Figure 1—figure supplement 1A, this indicates that over a third of the neuronal lineages in the central brain have projections in the LH. Primary neurite tracts were defined using skeletons extracted from light microscopy, and assessing whether co-registered neurons’ primary neurites appeared to fasciculate and enter the neuropil together; higher resolution data will likely reveal that some of these tracts can be subdivided.
 
 Primary neurite tracts can be identified in even quite broadly expressed driver lines, but anatomy group distinctions are not always evident and cell types can usually only be convincingly characterized with single neuron images. In our scheme, cell type names are composites incorporating the corresponding tract and anatomy group. As shown in Figure 2G, cell type PV5a1 belongs to the posterior ventral tract PV5 and anatomy group PV5a. This provides flexibility for the addition of new cell types, while still ensuring that anatomically and functionally related neurons have similar names; this naming strategy may be useful for other brain areas without clearly defined compartments.
 
-## Computational neuroanatomy
+### Computational neuroanatomy
 
-## Neuropil volumes
+#### Neuropil volumes
 
-Using a standard female template brain (Ito et al., 2014) we calculated that the first olfactory relay, the AL, has a volume of 1.5×105⁢μ⁢m3. Normalizing with respect to the AL, the LH and whole MB occupy relative volumes of 65% and 93%, respectively. However while second order projection neurons leaving the AL make synapses throughout the LH, in the MB they are restricted to the calyx region (relative volume 32% i.e. about half the LH). Similarly, while third order Kenyon cells are completely intrinsic to the MB, LH output neurons have axonal processes outside the LH. Using light level skeleton data (Chiang et al., 2011), we find that the on average LHNs have almost exactly the same amount of arbor outside the LH as they have within the LH; note that this calculation was carried out after aggregating by cell type, to avoid cell types that are present at higher frequencies in the FlyCircuit dataset from skewing the results. We therefore conclude that the arbors of third order LHNs are actually likely to occupy a greater volume than MB Kenyon cells (an estimated 130% of the AL volume vs 93%).
+Using a standard female template brain (Ito et al., 2014) we calculated that the first olfactory relay, the AL, has a volume of $1.5\times10^{5}⁢\mu⁢m^{3}$. Normalizing with respect to the AL, the LH and whole MB occupy relative volumes of 65% and 93%, respectively. However while second order projection neurons leaving the AL make synapses throughout the LH, in the MB they are restricted to the calyx region (relative volume 32% i.e. about half the LH). Similarly, while third order Kenyon cells are completely intrinsic to the MB, LH output neurons have axonal processes outside the LH. Using light level skeleton data (Chiang et al., 2011), we find that the on average LHNs have almost exactly the same amount of arbor outside the LH as they have within the LH; note that this calculation was carried out after aggregating by cell type, to avoid cell types that are present at higher frequencies in the FlyCircuit dataset from skewing the results. We therefore conclude that the arbors of third order LHNs are actually likely to occupy a greater volume than MB Kenyon cells (an estimated 130% of the AL volume vs 93%).
 
 On 17th December 2018, the PubMed search (‘mushroom body’ AND Drosophila) OR (‘mushroom bodies’ AND Drosophila) returned 1002 results, whereas (‘lateral horn’ AND Drosophila) OR (‘lateral protocerebrum’ AND Drosophila) returned 77 results. Note that lateral protocerebrum has sometimes been used as a synonym for lateral horn and on other occasions refers to a wider range of protocerebral neuropils – for this reason it is no longer a recommended term (Ito et al., 2014).
 
-## Skeleton data processing pipeline
+#### Skeleton data processing pipeline
 
 Open source neuron skeletons were obtained from http://www.flycircuit.tw/ (accessed: January 2017), filtering for any skeleton with processes in within the LH (total: 2245). These skeletons had been automatically reconstructed from sparse image data and the dataset described in previous studies (Chiang et al., 2011; Lee et al., 2012). A bridging registration (Manton et al., 2014) was generated from their Standard Model Brain to our FCWB template brain using the Computational Morphometry Toolkit ( https://www.nitrc.org/projects/cmtk/). Skeletons manually traced from successfully dye-filled neurons (147) during physiological experiments were also registered to a template brain (IS2, Cachero et al., 2010) and bridged into the same FCWB space so that all skeletons could be directly compared. Skeletons were then assigned as possible input neurons (1225) to the LH from sensory neuropils or LHNs (1619). A minority (1225) of skeletons seemed to input the LH from other brain areas, for example known MB output neurons (Aso et al., 2014a) and others that may be centrifugal inputs from other brain areas. Lacking synaptic data we excluded them from our analysis. Skeletons where split into axonal and dendritic compartments based on a classifier trained on skeleton data from the Drosophila medulla (Lee et al., 2014) followed by manual editing based on available confocal stack data and expert understanding of neuronal morphology.
 
 Although the axo-dendritic segmentation process was very helpful in defining local vs output LHNs, this was still sometimes challenging. For examples neurons in the AV4 tract, which clearly consists predominantly of LHLNs sometimes project out of the LH to the superior lateral protocerebrum (SLP) (Figure 2—figure supplement 1B-B’). Without information about synapse placement it is hard to be certain if these are polarized neurons with axonal arbors in the SLP or local neurons whose domain extends somewhat beyond the anatomically defined LH.
 
-Since the standard LH (Ito et al., 2014) is not based solely on PN arborisations and we wanted to exclude neurons that simply passed through the LH making few arborisations outside of their synaptic range. We therefore calculated an ‘overlap’ score between PN termini within the standard LH neuropil and potential LHN arbor:f⁢(is,jk)=∑k=1ne-d2/2⁢δ2
+Since the standard LH (Ito et al., 2014) is not based solely on PN arborisations and we wanted to exclude neurons that simply passed through the LH making few arborisations outside of their synaptic range. We therefore calculated an ‘overlap’ score between PN termini within the standard LH neuropil and potential LHN arbor:
 
-Skeletons were resampled so that we considered ‘points’ in the neuron at 1 μm intervals and an ‘overlap score’ calculated as the sum of f⁢(is,jk) over all points s of i. Here, i is the axonal portion of a neuron, j is the dendritic portion of a putative target, δ is the distance between two points at which a synapse might occur (e.g. 1 μm), and d is the euclidean distance between points s and k . The sum was taken of the scores between each point in i and each point in j . Neurons that did not meet a threshold score of 6000 were excluded as they only skimmed past the PN arbors. Many of the remaining skeletons seemed tangential to the LH but plausibly received direct synaptic input from PNs. A core’ set of LHNs was defined using two thresholds, one for overlap score and another for percentage dendrite within the standard LH volume (Figure 2—figure supplement 1F).
+$$
+f⁢(i_{s},j_{k})=\sumk=1ne^{-d^{2}/2⁢\delta^{2}}
+$$
 
-## Defining supervoxels for LH input and output zones
+Skeletons were resampled so that we considered ‘points’ in the neuron at 1 μm intervals and an ‘overlap score’ calculated as the sum of $f⁢(i_{s},j_{k})$ over all points $s$ of $i$. Here, $i$ is the axonal portion of a neuron, $j$ is the dendritic portion of a putative target, $\delta$ is the distance between two points at which a synapse might occur (e.g. 1 μm), and $d$ is the euclidean distance between points $s$ and $k$ . The sum was taken of the scores between each point in $i$ and each point in $j$ . Neurons that did not meet a threshold score of 6000 were excluded as they only skimmed past the PN arbors. Many of the remaining skeletons seemed tangential to the LH but plausibly received direct synaptic input from PNs. A core’ set of LHNs was defined using two thresholds, one for overlap score and another for percentage dendrite within the standard LH volume (Figure 2—figure supplement 1F).
+
+#### Defining supervoxels for LH input and output zones
 
 In order to define overlapping supervoxels that would divide the LH and its output zones into more intuitive anatomical sub-volumes than contiguous isotropic cubes, we first used NBLAST to cluster the axonal and dendritic sub-branches of our LHONs separately. These sub-branches were generated by calculating the Strahler order within the dendrite and removing the highest order segments. We divided these sub-branches each into 25 different clusters. Each of these clusters was then used to generate a supervoxel. For each cluster, a 3-D weighted kernel density estimate was calculated based on points within the clustered sub-branches. Points were placed on the neurites at 1 μm intervals and weighted as 1/total number of points in the cluster, so that supervoxels could be directly compared. An ‘inclusion’ score for each LHON dendrite, LHLN arbor and PN axon analyzed within each supervoxel was calculated by summing the density estimate for each point in the chosen arbor, again sampled at 1 μm intervals, and normalized by the total number of points in each arbor. A ‘projection’ score between LH supervoxels and LH target supervoxels was calculated by multiplying the average LH supervoxels and LH target supervoxel inclusion scores for each LHON cell type.
 
-## Immunochemistry and imaging
+### Immunochemistry and imaging
 
 Immunochemistry was as described previously (Jefferis et al., 2007 and Kohl et al., 2013) except that we used either streptavidin Alexa-568 (ThermoFisher S-11226 1:2000) for the filled neurons with Pacific Blue (ThermoFisher P31582 1:1000) for detection of mouse anti-nc82 or streptavidin Pacific Blue (ThermoFisher S-11222 1:2000) for the filled neurons with Alexa Fluor 568 (ThermoFisher A21144 1:1000) for detection of mouse anti-nc82.
 
-## Electrophysiology and odor stimulation
+### Electrophysiology and odor stimulation
 
 Electrophysiological recordings were carried out using the general approach of Wilson et al. (2004) as modified by Kohl et al. (2013). Briefly, on the day of eclosion flies were CO2 anesthetized and females of the correct genotype were selected. On the day of the experiment (1–2 days later) the fly was cold anesthetized, placed in the recording chamber, and dissected for recording as described in Kohl et al. (2013). Data acquisition was performed as previously described only a Grasshopper 14S5M camera was used and the recording electrodes were 4.5 to 7 MΩ for PNs and 6 to 8 MΩ for LHNs.
 
 Odor stimuli were delivered via a custom odor delivery system (originally described by Kohl et al., 2013; see jefferis-lab.org/resources). The setup used for these experiments had a total of 64 channels. Unless otherwise indicated, liquid odors were diluted to 0.2% (2 microliter in 1 ml) of mineral oil (Sigma Aldrich M8410) or distilled water; solid odors were dissolved at 2 mg in 1 ml of solvent. A full list of odors, solvents and dilutions is provided as a supplementary spreadsheet. During stimulus presentation, a portion of the airstream was switched from a solvent control to a selected odorant. The odorized air stream was then mixed with a clean carrier air stream at a 1:8 ratio to give a notional final dilution of 2.5 × 10-4. The length of the valve opening stimulus was 250 ms. All the genetic driver line combinations used for electrophysiological recording are given in our supplemental data, driver lines.
 
-## Image analysis
+### Image analysis
 
 Image registration of nc82 stained brains used CMTK fully automatic intensity-based 3D image registration available at http://www.nitrc.org/projects/cmtk (Rohlfing and Maurer, 2003; Jefferis et al., 2007). We used the registration parameters and IS2 template brain described in Cachero et al. (2010). Brains from which recordings have been made often have higher background staining in the cortical cell body layer than the IS2 template and sometimes this results in mis-registration. We addressed this issue by using a second template brain consisting of a high background image that had been successfully registered against the IS2 template.
 
@@ -280,7 +499,7 @@ Neuron tracing was carried out in Amira (Thermo Fisher Scientific, Merignac, Fra
 
 Fine scale analysis of neuronal structure was carried out using NBLAST clustering (Costa et al., 2016) as implemented in the nat.nblast R package (Manton and Jefferis, 2018; copy archived at https://github.com/elifesciences-publications/nat.nblast); clustering used Ward’s method as implemented in the R function hclust.
 
-## Analysis of electrophysiological data
+### Analysis of electrophysiological data
 
 Spike finding was carried out in Igor Pro using the NeuroMatic package (Rothman and Silver, 2018) as previously described (Kohl et al., 2013). All subsequent analysis was carried out in R using custom, open source packages: gphys (Jefferis, 2019; copy archived at https://github.com/elifesciences-publications/gphys), physplitdata (Frechter and Jefferis, 2019b; copy archived at https://github.com/elifesciences-publications/physplitdata), and physplit.analysis (Frechter and Jefferis, 2019a; copy archived at https://github.com/elifesciences-publications/physplit.analysis). Note that to ensure reproducibility, the physplitdata package includes every spike from our study (469 cells, 638602 spikes). We determined if cells showed a significant increase in firing to an odor, by an exact one-sided Poisson test of the number of spikes in windows 0.7–2.2 s after trial onset; we compared odor and control (blank) stimuli using data from four trials per cell (physplit.analysis function poissonTestOdoursSF). We adjusted raw p values to control the false discovery rate (Benjamini and Hochberg, 1995) using R's p.adjust function; responses for a given cell-odor pair were declared significant for FDR adjusted p < 0.01. For single trial response detection we used the same method as above but the responses for a given cell-odor pair were declared significant for FDR adjusted to a slightly more permissive p < 0.04 (single trials necessarily contain less information than the four trials used above). The detection probability for each cell-odor pair was first calculated, then cell response reliability was calculated by averaging across all the significant cell-odor pairs for each cell. Since the weakest significant odor responses (as initially assessed using four trials) necessarily had lower detection probability we also tested the effect of selecting only cell-odor response pairs above a variety of thresholds (Figure 2—figure supplement 1E), which resulted in a small increase in response reliability. In the main sequence figure (Figure 4), we use a threshold of 5 Hz (which captures 95% of our significant responses).
 
@@ -288,19 +507,19 @@ Odor response profiles for LHNs were initially manually classified, defining a f
 
 We also characterized the odor-evoked responses for a given cell-odor pair using peristimulus time histograms (PSTH). The PSTH was calculated for the period 0–3 s using a sliding window of width 500 ms and a time step of 50 ms. We summarized this by the maximum response in the window 0.55–2.4 s (valve opening was from 0.5 s) and when necessary compared this with a baseline spiking rate before odor arrival (calculated for the range 0–0.55 s).
 
-## Odor coding analysis
+### Odor coding analysis
 
-## Correlation and aggregated correlation heatmaps
+#### Correlation and aggregated correlation heatmaps
 
 To generate the correlation matrix we concatenated the PSTHs for each cell-odor pair to generate one single continuous vector per cell; these vectors were then merged row-wise to form a matrix of all cell odor responses. The cell-odor matrix was then used to calculate the odor response correlation across all cells. For automatic assignment of cell types by physiological or anatomical similarity, we used hierarchical clustering of the NBLAST or odor response similarity matrix using Ward’s method as implemented in the R function hclust. We then calculated the percent correct and Adjusted Rand Index with R package mclust classError and adjustedRandIndex functions for different dendrogram different cut heights; the cut height giving the minimum prediction error was then selected.
 
 Aggregated correlation heatmaps (Figure 8) were calculated by generating a mean odor response profile for each cell type and then computing the Pearson cross-correlation coefficient across all these cell types. The correlation shift was calculated by randomizing the odor labels and subtracting the shuffled from the original matrix and taking the mean of the result matrix. This procedure was repeated 1000 times for each group (PNs, LHLNs, LHONs) to generate a distribution.
 
-## ROC analysis
+#### ROC analysis
 
 The ROC analysis measured the ability of each functional cell type to categorize the presented odors. We defined the response of each cell type to each odor as the maximum of the baseline subtracted responses in the 6 time bins following odor onset. We then used these responses to compute a separate area under the ROC curve (AUC) score for each cell type as a categorizer for each of the six odor categories. The resulting scores indicated whether the presence of a response by a cell type was an indicator for an odor category. For each cell type we also generated five shuffled responses by randomly permuting the odor labels on the responses. We then computed the maximum AUC scores across odor categories within each cell type, and within each of the shuffles per cell type. Averaging maxima over the shuffles yielded one unshuffled maximum AUC score, and one shuffled one. Finally, we grouped these by the three cell groups (PNs, LHLNs, LHONs), and performed one-sided Mann-Whitney U tests to determine the differences in the median scores.
 
-## Measuring population decoding accuracy
+#### Measuring population decoding accuracy
 
 We using linear support vector classifiers to test the population decoding accuracy of each of the three main groups of neurons (PNs, LHLNs, LHONs). The overall procedure is to repeatedly generate random subpopulations of cells of a given size, where each cell is the sole representative of a particular class. We then train linear classifiers to perform identity or category decoding on a trial-by-trial basis for each time bin. The classifiers used have a single parameter that has to be tuned, so we train classifiers for a range of settings of this parameter and store the cross-validated accuracies. We then report the results for the parameter value that maximized the accuracy.
 
@@ -314,22 +533,22 @@ For each time bin of each cell we
 
 This split procedure reduces the bias associated with selection of the parameter C by measuring performance over independent random samples from those used to tune C. We also compared accuracy of the whole procedure with shuffled data.
 
-## Mapping odor categories to brain regions
+#### Mapping odor categories to brain regions
 
 We sought to produce a simple visualization that combined the location of LHON axons and dendrites with their odor category selectivity. First each cell type was assigned the odor category for which it was most selective in the ROC analysis. In parallel we calculated the average amount of cable overlap for each cell type the 25 LH input supervoxels and 25 LH output defined earlier. We then combined these two data sources to create a supervoxel-category score by calculating the mean supervoxel score, selecting only the classes whose score was maximal for that category. In this way a high voxel score was generated only when classes were both specific for an odor category and had dense arborization in a specific voxel. We then manually selected two separate thresholds for the LH and the output regions as the two distributions of voxel scores were quite different.
 
-## Electron microscopy data analysis
+### Electron microscopy data analysis
 
 The whole fly brain EM dataset is described by Zheng et al. (2018) and is available for public download at temca2data.org.
 
-## Estimating LHN numbers
+#### Estimating LHN numbers
 
 We identified the largest primary neurite tracts by combining bridging registrations of existing light level data (Manton et al., 2014; Zheng et al., 2018) and by simple anatomical tracing. Tract size was calculated by counting all the profiles in a single plane. In this way we identified 17 tracts containing 2465 neuronal profiles. For large tracts, we traced a random subset of these profiles until the first branch point and/or LH entry point – this was used to estimate the number of profiles in the tract belonging to LHNs. The confidence intervals for each tract were calculated assuming that we were sampling from a hypergeometric distribution. Since we only traced 17/31 primary neurite tracts our estimate is a lower bound, but light level data suggest the remaining 14 tracts contain few LHNs (Figure 2—figure supplement 1F). We could identify LH output neurons (LHONs) if the first branch point was clearly outside the LH but one of the daughter branches entered the LH. However for those neurons whose first branch point was in the LH it was not possible to determine whether they were LHLNs or LHONs without more extensive tracing. However we were able to confirm the match of EM traced tracts to light level neuronal morphologies by carrying out more extensive tracing of a subset of neurons in each tract. In order to estimate the number of local vs output neurons, we assumed that each tract consisted of its majority cell class (local or output).
 
-## PN to LHN connectivity
+#### PN to LHN connectivity
 
 Preliminary work in Zheng et al. (2018) partially traced and identified most uniglomerular projection neurons. An account of the tracing of projection neuron axons in the LH including marking all their presynapses is given in Dolan et al. (2018). We completed LH arbors for excitatory uniglomerular PNs from the following 51 glomeruli: D, DA1, DA2, DA3, DA4l, DA4m, DC1, DC2, DC3, DC4, DL1, DL2d, DL2v, DL3, DL4, DL5, DM1, DM2, DM3, DM4, DM5, DM6, DP1l, DP1m, V, VA1d, VA1v, VA2, VA3, VA4, VA5, VA6, VA7l, VA7m, VC1, VC2, VC3l, VC3m, VC4, VC5, VL1, VL2a, VL2p, VM1, VM2, VM3, VM4, VM5d, VM5v, VM7d, VM7v.
 
-## Online resources
+### Online resources
 
 The source code and data supplements for this study are listed at jefferislab.org/si/frechter18. Dataset and source code packages are hosted on GitHub and archived to zenodo.org. In order to make our cell type annotations for FlyCircuit (Chiang et al., 2011) and dye filled skeletons, and our stimulus response data more easily available to the community, we created an interactive R Shiny Web app (shiny.rstudio.com), which can be found at http://jefferislab.org/si/lhlibrary (Bates and Jefferis, 2019c; copy archived at https://github.com/elifesciences-publications/LHlibrary), based on data collated from several studies, found at https://github.com/jefferislab/lhns (Bates et al., 2019a; copy archived at https://github.com/elifesciences-publications/lhns). Skeletons can be viewed within a template brain in 3D, response data can be plotted for specific odors and cell types, and skeletons and response data can be downloaded as SWC and CSV files respectively. Significantly, this ‘LH library’ also hosts maximal projection images (brain and ventral nervous system), single skeletons from multi-color FlpOut, and 3D vector clouds representing sparse split-GAL4 lines that label LH cell types (from Dolan et al., 2019, sister manuscript). The LH library also contains other available datasets that relate to the LH, including PN response data from a calcium imaging study (Badel et al., 2016) and functional connectivity data from GH146 uniglomerular PNs providing input to LHNs (Jeanne et al., 2018). We were able to cross-match 80/89 3D morphologies reported in Jeanne et al. (2018) onto 26 LHN cell types in our data set. Finally we also include predicted connectivity to a wide range of cell types (ASB) to enable the rapid generation of connectivity hypotheses that can be tested functionally or through EM tracing. This web application can also be run directly on an end user’s own computer to increase response speed.

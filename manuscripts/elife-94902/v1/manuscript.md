@@ -17,16 +17,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04m01e293 Department of Psychology, University of York North Yorkshire United Kingdom
-2. https://ror.org/04m01e293 York Neuroimaging Centre, Innovation Way, Heslington North Yorkshire United Kingdom
-3. https://ror.org/006jb1a24 School of Human and Behavioural Sciences, Bangor University, Gwynedd, Wales, UK York United Kingdom
+1. Department of Psychology, University of York North Yorkshire United Kingdom ([ROR:04m01e293](https://ror.org/04m01e293))
+2. York Neuroimaging Centre, Innovation Way, Heslington North Yorkshire United Kingdom ([ROR:04m01e293](https://ror.org/04m01e293))
+3. School of Human and Behavioural Sciences, Bangor University, Gwynedd, Wales, UK York United Kingdom ([ROR:006jb1a24](https://ror.org/006jb1a24))
 4. Sussex Neuroscience, School of Psychology, University of Sussex Brighton and Hove United States
 5. Department of Psychiatry and Behavioral Sciences, Stanford University School of Medicine Stanford Stanford United Kingdom
-6. https://ror.org/057qpr032 University of Bordeaux, CNRS, CEA, IMN Bordeaux France
-7. https://ror.org/02en5vm52 Brain Connectivity and Behaviour Laboratory, Sorbonne Universities Paris France
-8. https://ror.org/04zfme737 Department of Psychology, Liverpool John Moores University Liverpool United Kingdom
-9. https://ror.org/02fgakj19 Integrative Neuroscience and Cognition Center (UMR 8002), Centre National de la Recherche Scientifique (CNRS) and Université de Paris Paris France
-10. https://ror.org/02y72wh86 Department of Psychology, Queen’s University, Kingston Kingston Canada
+6. University of Bordeaux, CNRS, CEA, IMN Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+7. Brain Connectivity and Behaviour Laboratory, Sorbonne Universities Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
+8. Department of Psychology, Liverpool John Moores University Liverpool United Kingdom ([ROR:04zfme737](https://ror.org/04zfme737))
+9. Integrative Neuroscience and Cognition Center (UMR 8002), Centre National de la Recherche Scientifique (CNRS) and Université de Paris Paris France ([ROR:02fgakj19](https://ror.org/02fgakj19))
+10. Department of Psychology, Queen’s University, Kingston Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))
 
 † Corresponding author
 
@@ -46,7 +46,7 @@ Here, we used multiple neuroscientific methods to delineate the pathways from vi
 
 ## Results
 
-## Behavioural results
+### Behavioural results
 
 To examine task accuracy, we performed a 2×2 repeated-measures ANOVA using task (2 levels: semantic, spatial context) and condition (2 levels: mixed-category building [MCB], and same-category building [SCB]) as factors. There was a main effect of task (F(1,26)=76.52, p<0.001), condition (F(1,26)=11.31, p=0.002) and a task by condition interaction (F(1,26)=14.51, p<0.001). Participants showed poorer accuracy in the spatial context task relative to the semantic task and in the MCB relative to the SCB condition. Participants were significantly less accurate in the MCB trials relative to the SCB trials of the spatial context task (t(26)=4.08, p<0.001); this difference was not observed in the semantic task (t(26)=0.74, p=0.47).
 
@@ -56,15 +56,59 @@ Response times showed the same pattern, with main effects of task (F(1,26)=51.37
 
 **Figure 1.:** SCB = same-category buildings: all the items in the building were taken from the same semantic category. MCB = mixed-category buildings: the items in the buildings were drawn from different semantic categories.
 
-## Neuroimaging results
+### Neuroimaging results
 
 To probe the organisation of streams of information between visual cortex and DMN, our neuroimaging analysis strategy consisted of a combination of task-based and connectivity approaches. We first delineated the regions in visual cortex that are engaged by the viewing of probes during our task (Figure 2), as well as the DMN regions that respond when making decisions about those probes (Figure 3): we characterised both by comparing the activation maps with well-established DMN and object/scene perception regions, analysed the pattern of activation within them, their functional connectivity and task associations. Having characterised these dissociable visual and DMN regions, we proceeded to ask whether they are differentially linked: are the visual regions activated by object probe perception more strongly linked to DMN regions that are activated when making semantic decisions about object probes, relative to other DMN regions? Is the same true for visual regions associated with scene perception and DMN regions responding to spatial decisions about which rooms were in the same building? We answered this question through a series of connectivity analyses (Figure 4) that examined: (1) if the functional connectivity of visual-to-DMN regions (and DMN-to-visual regions) shows a dissociation, suggesting there are object semantic and spatial cognition processing ‘pathways’; (2) if this pattern was replicated in structural connectivity; (3) if it was present at the level of individual participants, and (4) we characterised the spatial layout, network composition (using influential RS networks), and cognitive decoding of these pathways. Having found dissociable pathways for semantic (object) and spatial context (scene) processing, we then examined their position in a high-dimensional connectivity space (Figure 5) that allowed us to document that the semantic pathway is less reliant on unimodal regions (i.e. more abstract) while the spatial context pathway is more allied to the visual system. Finally, we used uni- and multivariate approaches to examine how integration between these pathways takes place when semantic and spatial information is aligned (Figure 6).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig2-v1.jpg)
+
+**Figure 2.:** Warm colours = semantic > spatial context probes. Cool colours = spatial context > semantic probes. Left panel: Univariate results from Study 1, contrasting semantic and spatial context probes. Right panel: Intrinsic connectivity results from Study 3 using semantic and spatial context probe activation within visual networks as seeds. (a) Brain maps depicting the suprathreshold univariate activation results for the probe phase of the semantic and spatial context tasks. (b and c) Axial slices showing the overlap of these univariate results with scene and object localiser maps from Study 2 (the localiser maps are in green, and the univariate results maps are in warm and cool colours; the localiser maps are shown in Figure 2—figure supplement 1). (d) Region of interest (ROI) analysis examining the activation in the three default mode subnetworks of the Yeo 17 parcellation during the probe phase of the semantic and spatial context tasks. The error bars in the bar plots depict the standard error of the mean (Note: ***p<0.001); the ROIs are shown to the right of the bar plots. (e) Brain maps depicting the seeds and intrinsic connectivity results for the semantic and spatial context probe regions. (f) Word clouds depicting the cognitive decoding of unthresholded connectivity maps for semantic and spatial context probe seeds using Neurosynth (bigger words reflect stronger correlation of the functional maps with the terms); the colour code follows that of the brain maps. (g) Brain maps showing the overlap of these intrinsic connectivity maps for semantic and spatial context probes with the default mode network from the 7-network parcellation from Yeo et al., 2011.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Right panel: The results of the localiser shown in the left panel were further constrained to contain only voxels that overlapped with the visual networks in Yeo’s 17-network parcellation. Common voxels (the ones that responded to both objects and scenes) have been removed.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig3-v1.jpg)
 
 **Figure 3.:** Warm colours = semantic > spatial context decisions. Cool colours = spatial context > semantic decisions. Left panel: Univariate results from Study 1 contrasting semantic and spatial context decisions. Right panel: Intrinsic connectivity results from Study 3 using semantic and spatial context decision activation within default mode network (DMN) as seeds. (a) Brain maps depicting the suprathreshold univariate activation results for the decision phase of the semantic and spatial context tasks. (b and c) Axial slices showing the overlap of these univariate results with the fronto-temporal (FT) and medial temporal (MT) default mode subnetworks of the Yeo’s 17-network parcellation (the default mode maps are in green, and the univariate results maps are in warm and cool colours). (d) Region of interest (ROI) analysis examining the activation in the scene and object localiser maps from Study 2 during the decision phase of the semantic and spatial context tasks. The error bars in the bar plots depict the standard error of the mean (Note: ***p<0.001, *p<0.05); the ROIs are shown in Figure 2—figure supplement 1. (e) Brain maps depicting the seeds and intrinsic connectivity results for the semantic and spatial context decision regions. (f) Word clouds depicting the cognitive decoding of unthresholded connectivity maps for semantic and spatial context decision seeds using Neurosynth (bigger words reflect stronger correlation of the functional maps with the terms); the colour code follows that of the brain maps. (g) Brain maps showing the overlap of these intrinsic connectivity maps with the visual network from the 7-network parcellation from Yeo et al., 2011.
 
-## Probe phase
+![Figure 4.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig4-v1.jpg)
+
+**Figure 4.:** (a–c) These panels depict the seeds, regions of interest (ROIs), and their connectivity. The bar plots in (b and c) show the connectivity between default mode network (DMN) decision regions and probe visual regions. (d) Warm colours = common regions showing stronger intrinsic connectivity to semantic decision regions in DMN and semantic probe regions in visual cortex; cool colours = common regions showing stronger intrinsic connectivity to spatial context decision regions in DMN and spatial context probe regions in visual cortex. (e) The cognitive decoding of these spatial maps using Neurosynth following the same colour code as (d). (f) Network composition showing the percentage of each pathway map overlapping with the three DMN and two visual subnetworks defined by the Yeo et al., 2011, 17-network parcellation. (g) Results of spatial correlation analysis comparing the semantic and spatial context pathways with non-pathway maps (derived from the conjunction of the connectivity of probe and decision seeds across different tasks, e.g., probe spatial context ∩ decision semantic connectivity). We assessed the spatial similarity of these pathway and non-pathway maps to the univariate activation during the probe and decision phases for each task and each participant. (h) Results of the structural connectivity analysis. Tracts displayed are a conjunction of streamlines between the probe and decision seeds of each task. The y axis of the bar plots shows the percentage of streamlines from each visual seed that terminate in each DMN ROI (shown in the x axis). The error bars depict the standard error of the mean. ***p<0.001, *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Seeds and ROIs can be consulted in Figure 4a. The error bars depict the standard error of the mean.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** This analysis collapses the same-category building (SCB) and mixed-category building (MCB) conditions, which showed no significant differences. Note: *=p<0.05, **=p<0.01.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig5-v1.jpg)
+
+**Figure 5.:** The scatterplots depict the position of each participant’s peak response to the semantic and context task in this gradient space (the big circles represent the mean of each task for that phase). The bar plots compare the mean of each gradient across tasks. The inset on the bottom left of the panel displays Margulies et al., 2016, original gradient space.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Dashed lines highlight the cases that contradict the pattern found in the group-level analysis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig6-v1.jpg)
+
+**Figure 6.:** (a) Contrast of spatial context same- > mixed-category building trials during the probe phase. (b) Task by condition (same/mixed-category building) interaction. (c) Contrast of semantic same- > mixed-category building trials during the probe phase. (d) Spatial relations of the same > mixed spatial context cluster with the semantic and spatial context pathways outlined in Figure 4. (e) Intrinsic connectivity seed-to-region of interest (ROI) results using the three univariate results clusters shown in the top panel as seeds and the pathways as ROIs. The error bars depict the standard error of the mean. ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Top left panel: Within-task RSA results correlating BOLD activity from the probe phase of semantic mixed-category building trials with the semantic similarity matrix described in the Methods section, and BOLD activity from the probe phase of context mixed-category building trials with the context similarity matrix. Top right panel: Cross-task similarity analysis correlating BOLD activity from semantic trials with the context similarity matrix. Bottom panel: The left part depicts the spatial relations of the cross-task similarity analysis cluster with the semantic and context pathways outlined in Figure 4; the right part shows intrinsic connectivity seed-to-region of interest (ROI) results using the within- and cross-task RSA clusters shown in the top panel as seeds and the pathways as ROIs. The error bars depict the standard error of the mean. ***p<0.001, **p<0.01.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** No significant voxels were identified for the spatial context task.
+
+#### Probe phase
 
 We began our exploration of the streams of information between visual cortex and DMN by characterising their visual end. To accomplish this, we first analysed the whole-brain activation observed during the probe phase of our semantic and spatial context tasks, when participants were viewing objects and scenes, and related these responses to previously established visual regions for object and scene perception. We then linked the visual regions engaged by our task to the DMN by describing their patterns of intrinsic connectivity, their functional involvement, and activation found within DMN regions during the probe phase of our task.
 
@@ -76,7 +120,7 @@ We next analysed the probe responses exploring the strength of activation during
 
 Finally, we examined the intrinsic connectivity of activation regions in Figure 2a, masked by Yeo et al., 2011, visual networks (combining central and peripheral networks), using data from Study 3. Visual areas responding to semantic and spatial context probes showed differential connectivity, including to regions of DMN (posterior cingulate, medial prefrontal cortex, portions of anterior and dorsal prefrontal cortex, and anterior temporal cortex; Figure 2e). Cognitive decoding using Neurosynth revealed that semantic probe connectivity was associated with perceptual and somatomotor terms, while spatial context probe connectivity was associated with navigation, visuospatial and episodic memory terms (Figure 2f). Semantic probe regions showed preferential overlap with FT-DMN, whilst spatial context probe regions showed greater overlap with MT-DMN, followed by core DMN (Figure 2g).
 
-## Decision phase
+#### Decision phase
 
 Having characterised the visual end of the visual-DMN pathways in our previous analysis, we next turned our attention to the DMN end. Following the same logic, we first analysed the whole-brain activation during the decision phase of our task, where participants had to judge the relationship between objects and scenes respectively. We compared this activation to classic DMN regions described by Yeo et al., 2011, and linked the regions engaged within this network to visual regions in terms of their task activation and functional connectivity.
 
@@ -88,7 +132,7 @@ We investigated differences in the intrinsic connectivity of the distinct DMN de
 
 Cognitive decoding of these connectivity maps using Neurosynth (Figure 3f) revealed that the semantic decision network was associated with terms related to language, semantic processing, and reading, while the spatial context decision network was associated with navigation, episodic, and autobiographical memory. The decision DMN seeds also showed differential connectivity to visual regions (Figure 3g). Semantic decision regions were more connected with lateral and ventral occipital cortex, whilst spatial context decision regions showed more connectivity with medial occipital, ventromedial temporal (including parahippocampal), and dorsal LOC.
 
-## Pathways analysis
+#### Pathways analysis
 
 The analysis above identified regions of visual cortex showing a differential response to semantic and spatial context probes, related to category effects for objects versus scenes. We also found distinct DMN subnetworks which supported semantic and spatial context decisions respectively. Next, we considered if these effects are linked: Do FT-DMN regions have stronger connectivity to object perception areas of visual cortex, while MT-DMN regions connect to scene perception regions? To answer this question, we analysed the functional and structural connectivity from the visual regions that were responsive to viewing probes during our tasks to those DMN regions activated during decisions about those probes. We characterised the spatial layout of these pathways in the brain as well as their large-scale network composition, their functional involvement, and verified their presence in individual participants.
 
@@ -102,13 +146,13 @@ Next, we examined if these pathways were reflected in the strength of white matt
 
 Finally, we examined how connectivity within the pathways changes depending on task demands in a psychophysiological interaction (PPI) analysis (see supplementary materials). We took the visual regions showing differential activation to object and scene probes as seeds (shown in Figures 2e and 4a), while the ROIs were regions sensitive to semantic and spatial context decisions within the DMN (shown in Figures 3e and 4a). The results, shown in Figure 4—figure supplement 4, showed that the object seed was more connected to both semantic and spatial context DMN decision regions during the semantic task, while the scene probe regions were more connected to spatial context decision regions during the spatial context task than object probe regions.
 
-## Location of pathways in whole-brain gradients
+#### Location of pathways in whole-brain gradients
 
 Having found evidence for dissociable semantic and spatial context pathways, we analysed their location in a functional state space defined by the first two gradients of intrinsic connectivity (Margulies et al., 2016). The principal gradient relates to connectivity differences between unimodal and heteromodal cortex, while the second gradient captures connectivity differences between visual and auditory/somatomotor cortex. By locating the ends of the two visual-to-DMN pathways within gradient space, we can establish if DMN regions supporting semantic and spatial cognition are equally distant in connectivity from sensory-motor cortex: semantic cognition is arguably more abstract than spatial cognition and might be supported by DMN regions that are more isolated from sensory-motor systems on the principal gradient (Margulies et al., 2016; Smallwood et al., 2021). We can also establish if semantic and spatial DMN regions differ in the balance of connectivity to visual versus auditory-motor regions on the second gradient: heteromodal concepts are thought to be constructed from diverse sensory-motor features (Ralph et al., 2017), while spatial representations might draw more strongly on visual information (Epstein and Baker, 2019). We tested these predictions by locating individual unthresholded peak response coordinates for semantic and spatial context probes (within visual networks) and decisions (within the DMN) in gradient space (masked by Yeo et al.’s 7-network parcellation). We then asked if there are significant differences in the gradient locations of these tasks across participants.
 
 The results (Figure 5a) showed that there were no differences between the two tasks during the probe phase, while the decision phase was associated with task effects: DMN peaks for semantic decisions were more distant from sensory-motor cortex on the principal gradient, compared with spatial context decisions (t(1,26)=2.34, p=0.027), consistent with the view that semantic cognition draws on more abstract and heteromodal representations in DMN. In addition, responses for the spatial context task were closer to the visual end of the second gradient, while responses for the semantic task were somewhat more balanced across visual and auditory-motor ends of this gradient (t(1,26)=3.31, p=0.003). [An ANOVA including task and condition (MCB versus SCB) replicated these task effects and found no effects of condition on the position of peak responses in gradient space.] Since the scatterplots in Figure 5 do not distinguish whether these effects took place at the individual level (the data points are not linked across tasks), we plotted the same data comparing the gradient values for the peak responses in each of our tasks at the participant level in the supplementary materials (see Figure 5—figure supplement 1). This plot shows that in the majority of individual cases, the pattern of group-level results shown in Figure 5 held.
 
-## Cross-pathway integration of semantic and spatial cognition: response to SCB versus MCB
+#### Cross-pathway integration of semantic and spatial cognition: response to SCB versus MCB
 
 Having identified dissociable semantic and spatial context pathways, and examined how these are differentially recruited across tasks, we investigated the integration of semantic and spatial context information across these processing streams. We compared responses in SCB and MCB trials, since semantic and spatial information are aligned when buildings contain items from a single semantic category, but not in MCB. In these analyses, there were differences between conditions in the probe but not the decision-making phase (perhaps because many probes were presented without decisions, increasing statistical power).
 
@@ -140,25 +184,37 @@ Moreover, many questions remain about information integration across the semanti
 
 ## Methods
 
-## Study 1: Task-based fMRI
+### Study 1: Task-based fMRI
 
-## Study 1: Participants
+#### Study 1: Participants
 
 Thirty native English speakers (mean age = 22.6 ± 2.7 years, age-range 18–34 years, 8 males) with normal or corrected-to-normal vision and no history of language disorders participated in this study. Ethical approval was obtained from the Research Ethics Committees of the Department of Psychology and York Neuroimaging Centre, University of York. Written informed consent was obtained from all subjects prior to testing.
 
-## Study 1: Materials
+#### Study 1: Materials
 
 The learning phase employed videos showing a walk-through for 12 different buildings (one per video), shot from a first-person perspective. The videos and buildings were created using an interior design program (Sweet Home 3D). Each building consisted of two rooms: a bedroom and a living room/office, with an ajar door connecting the two rooms. The order of the rooms (first and second) was counterbalanced across participants. Each room was distinctive, with different wallpaper/wall colour and furniture arrangements. The building contexts created by these rooms were arbitrary, containing furniture that did not reflect usual room distributions (i.e. a kitchen next to a dining room), to avoid engaging further conceptual knowledge about frequently encountered spatial contexts in the real world. Within each room, there were three framed images of objects and animals, towards the start, middle, and end of each video (see top panel of Figure 7—figure supplement 1), each at the same distance from its neighbour (across the two rooms); 72 images were presented overall. The images represented single items from six semantic categories: musical instruments, gardening tools, sports equipment, mammals, fish, and birds (12 pictures from each category). Half of the buildings contained images from the same semantic category (SCB), and the other half contained images from different semantic categories (‘MCB). The presentation of items within each room in MCB was controlled such that: (1) no item from the same category was presented at the same location twice, and (2) no three categories were grouped together more than once.
 
 A full list of pictures of the object and location stimuli employed in this task as well as the videos watched by the participants can be consulted in the OSF collection associated with this project under the components OSF > Tasks > Training.
 
-## Study 1: Design and procedure
+#### Study 1: Design and procedure
 
-## Training task
+##### Training task
 
 Subjects participated in a training session the day before the MRI scan, where they watched the walk-through videos, each lasting 49 s (Figure 7 and top panel of Figure 7—figure supplement 1). Participants watched each video at least six times in three rounds (twice per round). Each round consisted of four mini-blocks of videos containing three videos. After each mini-block, participants were given a test in Psychopy3: they were asked to choose the room that each item was presented in, responding via button press. Items were pictured at the top of the screen, with the correct room and another room below (Figure 7—figure supplement 1, left half of bottom panel). Screenshots were taken of the location of each framed image and the rooms themselves (from the entrance way), with the images and their frames removed (see bottom panel of Figure 7—figure supplement 1). They had 5 s to respond, after which the correct room was presented as feedback for a further 5 s. Following each round, there was a matching task, which reinforced participants’ memory of which rooms belonged together. Two rooms from the same building were presented, with two items from that building (one from each room) below. Participants were instructed to drag the objects into the correct room of the building (Figure 7—figure supplement 1, right half of bottom panel). Feedback showed the correct object in each room. Finally, to establish how well the item-location pairs were learned, participants were given a final test on all the rooms and items: this followed the structure of the mini-block tests, except that materials from the entire session were included. If accuracy was below 80%, participants watched the videos again until this threshold was reached. In total, participants spent approximately 2 hr on the training. The amount of training required was established in pilot testing with nine participants who did not take part in the main study. This also confirmed the items were easily nameable.
 
-## fMRI task
+![Figure 7.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig7-v1.jpg)
+
+**Figure 7.:** These items and locations are shown in the example trials below. Bottom panel: Trial procedure for semantic and spatial context decisions. The phases of a trial are shown (probe, dots, decision, arrow task, fixation), and the red square indicates the correct response (not shown to participants). Participants were required to press ‘left’ or ‘right’ buttons in the decision phase. No-decision trials omitted the dots and decision phases. The videos and tests used during the training session for this task as well as the stimuli used in the task of Study 2 can be consulted in Figure 7—figure supplements 1 and 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** This is a ‘mixed-category building’ that contains items from different semantic categories. An example walk-through video of this building can be watched following this link: https://www.youtube.com/watch?v=XVHhOh3BF74. Bottom panel: Example of training tests. On the left is an example of the mini-block test depicting the probe item at the top and two room screenshots below. The target screenshot is the room the object was presented in at training (left). The distractor screenshot (right) is from a different building, which the object did not belong to. On the right is an example of the matching task depicting two rooms from the same building and two items that belong to each room (rake-right room, goose-left room) which participants needed to match.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/94902/elife-94902-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Still images taken from the beginning, middle, and end of the corresponding movie clip. The stimuli corresponding to the ‘faces’ condition were changed to line drawings to make this material suitable for hosting in bioRxiv preprint server. The actual stimuli shown can be consulted in the OSF collection associated with this paper (https://osf.io/sh79m/).
+
+##### fMRI task
 
 On the day of the scan, participants repeated the final test from the training day to establish how well they retained the information. They then watched all 12 videos once again, in a counterbalanced order, and performed the test phase a second time. The mean accuracy on the first day was 95.1% (SD = 5.7%) while on the second day it was 97.1% (SD = 3.8%). Two participants were excluded from the mean accuracy calculation for day 2 due to data loss.
 
@@ -166,91 +222,91 @@ Inside the scanner, participants performed a semantic and spatial context memory
 
 During the fMRI scan, there were four runs of the spatial context task and four runs of the semantic task. Each run contained 36 trials and lasted approximately 6 min. All 72 objects were presented as stimuli across blocks 1 and 2, and across blocks 3 and 4. Each run included 18 decision and 18 no-decision trials. The decision trials in each run were further subdivided into nine SCB and nine MCB decision trials. The decision trials in run 1 and run 2 became the no-decision trials in runs 3 and 4, and vice versa. Spatial context runs preceded semantic runs. The order of trials within each run was counterbalanced between participants. Prior to scanning, participants were given formal instructions for the tasks and shown how to use the response box.
 
-## Study 1: Task-based fMRI
+### Study 1: Task-based fMRI
 
-## MRI data acquisition
+#### MRI data acquisition
 
 Whole-brain structural and fMRI data were acquired using a 3T Siemens MRI scanner utilising a 64-channel head coil, tuned to 123 MHz at York Neuroimaging Centre, University of York. A Localiser scan and eight whole-brain functional runs (four of the semantic task, four of the spatial context task) were acquired using a multi-band multi-echo (MBME) EPI sequence, each approximately 6 min long (repetition time [TR] = 1.5 s; echo time [TEs] = 12, 24.83, 37.66 ms; 48 interleaved slices per volume with slice thickness of 3 mm [no slice gap]; FoV = 24 cm [resolution matrix = 3 × 3 × 3; 80×80]; 75° flip angle; 705 volumes per run [235 TRs with each TR collecting 3 volumes]; 7/8 partial Fourier encoding and GRAPPA [acceleration factor = 3, 36 ref lines; multi-band acceleration factor = 2]). Structural T1-weighted images were acquired using an MPRAGE sequence (TR = 2.3 s, TE = 2.26 s; voxel size = 1 × 1 × 1 isotropic; matrix size = 256 × 256, 176 slices; flip angle = 8°; FoV = 256 mm; ascending slice acquisition ordering).
 
-## Multi-echo data pre-processing
+#### Multi-echo data pre-processing
 
 This study used an MBME scanning sequence to optimise signal from MT regions (e.g. ATL, MTL) while also maintaining optimal signal across the whole brain (Halai et al., 2014). We used TE Dependent ANAlysis (TEDANA, version 0.0.10, https://zenodo.org/records/5461803, https://tedana.readthedocs.io/) to combine the images (Kundu et al., 2013; Posse et al., 1999). Before images were combined, some pre-processing was performed. FSL_anat (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/fsl_anat) was used to process the anatomical images, including re-orientation to standard (Montreal Neurological Institute [MNI]) space (fslreorient2std), automatic cropping (robustfov), bias-field correction (RF/B1 – inhomogeneity-correction, using FAST), linear and nonlinear registration to standard-space (using FLIRT and FNIRT), brain extraction (using FNIRT, BET), tissue-type and subcortical structure segmentation (using FAST). The multi-echo data were pre-processed using AFNI (https://afni.nimh.nih.gov/), including de-spiking (3dDespike), slice timing correction (3dTshift; heptic interpolation), and motion correction of all echoes aligned to the first echo (with a cubic interpolation; 3dvolreg was applied to the first echo to realign all images to the first volume; these transformation parameters were then applied to echoes 2 and 3). The pre-processing script is available at OSF (https://osf.io/sh79m/).
 
-## Task-based fMRI data analysis
+#### Task-based fMRI data analysis
 
 Further pre-processing of the functional and structural data was carried out using FSL version 6.0 (Jenkinson et al., 2002; Smith et al., 2004; Woolrich et al., 2009). Functional data were pre-processed using FSL’s FMRI Expert Analysis Tool (FEAT). The TEDANA outputs (denoised optimally combined time series) registered to the participants’ native space were submitted to FSL’s FEAT. The first volume of each functional scan was deleted to negate T1 saturation effects. Pre-processing included high-pass temporal filtering (Gaussian-weighted least-squares straight line fitting, with sigma = 50 s), linear co-registration to the corresponding T1-weighted image followed by linear co-registration to MNI152 2 mm standard space (Jenkinson and Smith, 2001), which was then further refined using FSL’s FNIRT nonlinear registration (Andersson et al., 2007a; Andersson et al., 2007b) with 10 mm warp resolution, spatial smoothing using a Gaussian kernel with full-width-half-maximum (FWHM) of 5 mm, and grand-mean intensity normalisation of the entire 4D dataset by a single multiplicative factor.
 
-## Task GLM
+#### Task GLM
 
 Second and group-level analyses were also conducted using FSL’s FEAT version 6. Pre-processed time series data were modelled using a general linear model (GLM) in FSL, using FILM correcting for local autocorrelation (Woolrich et al., 2001). We used an event-related design. Our aim was twofold: (1) to characterise differential activation between the semantic and spatial context tasks at each phase of the trials, and (2) to document any potential differences of activation in response to MCB and SCB trials in probe and decision phases, in each task. To this end, the following eight EVs were entered into a GLM, convolved with a double-gamma haemodynamic response function: the probe, dots and decision phases (only correct responses) were modelled for both MCB and SCB trials (3×2 EVs). Correct decisions made during the arrow task were modelled in a separate EV to use as an explicit baseline. Incorrect and omitted responses in the decision phase, as well as errors made during the arrow task, were combined into a regressor of no interest. The fixation crosses between trials were not explicitly modelled. Probe and dots phases were modelled as fixed-duration epochs, while semantic, spatial context and arrow decisions were modelled using a variable epoch approach, based on each participant’s reaction time on that trial. At the first level, the semantic and spatial context tasks were entered into separate models for each run performed by all participants. We then combined all valid runs for each participant into a participant-level analysis, again separately for each task, at the second level (see ‘Data exclusions’ below for details).
 
 At the group level, we performed two separate univariate analyses. First, we compared activation for the two tasks, contrasting semantic and spatial context models. Inputs for this analysis were lower-level contrasts of the probe phase of each task against the implicit baseline, and the decision phase of each task contrasted against the explicit baseline of arrow decisions. In our second analysis, we used the same lower-level contrasts but examined the semantic and spatial context tasks separately, examining within-task differences between MCB and SCB trials in the probe and decision phases. This also allowed us to explore interactions between MCB/SCB trials and task. We did not include any motion parameters in the model as the data submitted to these first level analyses had already been denoised as part of the TEDANA pipeline (Kundu et al., 2012). At the group level, analyses were carried out using FMRIB’s local analysis of mixed effects (FLAME1) stage 1 with automatic outlier detection (Beckmann et al., 2003; Woolrich, 2008; Woolrich et al., 2004), using a (corrected) cluster significance threshold of p = 0.05, with a z-statistic threshold of 2.6 (Eklund et al., 2016) to define contiguous clusters.
 
-## Data exclusions
+#### Data exclusions
 
 We excluded three participants: one due to excessive motion (mean framewise displacement >0.3 mm) in more than 50% of functional runs, another due to misunderstanding the task (0% accuracy in MCB decisions in three out of four runs of the semantic task), and one due to low SCB accuracy in three out of four runs of the spatial context task, with less than 50% of usable data. We also excluded any individual runs where the decision accuracy was equal or below chance level (50%) in the SCB condition. [This threshold was not applied to the MCB condition, which was expected to elicit interference between semantic and spatial context information.] This led to the removal of four runs across three participants in the semantic task, and twelve runs across eight participants in the spatial context task. Two runs were removed due to data loss (a corrupted EV file and data transfer failure from the MRI scanner). 92.5% of the runs acquired were included in the analysis.
 
-## Study 1: Psychophysiological interaction analysis
+### Study 1: Psychophysiological interaction analysis
 
 In order to test for distinct semantic and spatial memory pathways that connect visual regions to distinct subnetworks of the DMN, we conducted a PPI supplementary analysis. In short, we created semantic and spatial context seeds from the visual regions activated to object and scene probes, and examined their connectivity to the DMN regions activated during the decision phase of the tasks, using two separate models (one for each seed) which examined the main effect of the task. We describe the methods in detail in the relevant section of the supplementary materials (Supplementary analysis: effects of task demands on pathway connectivity).
 
-## Study 1: Representational similarity analysis
+### Study 1: Representational similarity analysis
 
 Since distinct but adjacent regions were associated with semantic and spatial context decisions, we asked what they represented during probe presentation using RSA. We constructed semantic similarity matrices where trials that shared a specific category (e.g. birds) were assigned the strongest value, and spatial context similarity matrices where pairs of trials belonging to the same room were assigned the strongest value. After single-trial estimation using a least square-single (LSS) approach, we carried out second-order RSA using a searchlight approach to compare semantic and spatial context similarity matrices with neural similarity matrices. This allowed us to identify voxels that were sensitive to semantic and spatial relationships between probes in each of our tasks. We also performed cross-task similarity analysis, correlating semantic similarity to the neural similarity matrix from the spatial context task (and vice versa), to identify regions sensitive to semantic and spatial context information across tasks. We report the methods in detail in the section for this analysis in the supplementary materials (Supplementary analysis: multivariate response to SCB versus MCB).
 
-## Study 2. Passive viewing of objects and scenes
+### Study 2. Passive viewing of objects and scenes
 
 We examined passive viewing of objects and scenes in a sample of 52 healthy volunteers, providing independent ROIs for the analyses of Studies 1 and 3.
 
-## Study 2: Participants
+#### Study 2: Participants
 
 Fifty-two participants with normal, or corrected-to-normal, vision gave informed consent. The study was approved by the Research Ethics Committee at York Neuroimaging Centre.
 
-## Study 2: Stimuli
+#### Study 2: Stimuli
 
 Dynamic stimuli were 3 s movie clips of faces, bodies, scenes, objects, and scrambled objects (see Figure 7—figure supplement 2) designed to localise category-selective visual areas (Pitcher et al., 2011). Only the scenes and object stimuli were used in the present study. There were 60 movie clips for each category in which distinct exemplars appeared multiple times. Fifteen different locations were used for the scene stimuli which were mostly pastoral scenes shot from a car window while driving slowly through leafy suburbs, along with films flying through canyons or walking through tunnels that were included for variety. Fifteen different moving objects were selected that minimised any suggestion of animacy of the object itself or of a hidden actor pushing the object (these included mobiles, windup toys, toy planes and tractors, balls rolling down sloped inclines). Within each block, stimuli were randomly selected from within the entire set for that stimulus category (faces, bodies, scenes, objects, scrambled objects).
 
-## Study 2: Procedure and data acquisition
+#### Study 2: Procedure and data acquisition
 
 Functional data were acquired over six block-design functional runs lasting 234 s each. Each functional run contained three 18 s rest blocks, at the beginning, middle, and end of the run, during which a series of six uniform colour fields were presented for 3 s. Participants were instructed to watch the movies but were not asked to perform any overt task.
 
 Imaging data were acquired using a 3T Siemens Magnetom Prisma MRI scanner (Siemens Healthcare, Erlangen, Germany) at the University of York. Functional images were acquired with a 20-channel phased array head coil and a gradient-echo EPI sequence (38 interleaved slices, TR=3 s, TE=30 ms, flip angle = 90%; voxel size 3 mm isotropic; matrix size = 128 × 128) providing whole-brain coverage. Slices were aligned with the anterior to posterior commissure line. Structural images were acquired using the same head coil and a high-resolution T1-weighted 3D fast spoilt gradient (SPGR) sequence (176 interleaved slices, TR=7.8 s, TE=3 ms, flip angle = 20°; voxel size 1 mm isotropic; matrix size = 256 × 256).
 
-## Study 2: Imaging analysis
+#### Study 2: Imaging analysis
 
 fMRI data were analysed using AFNI (http://afni.nimh.nih.gov/afni). Images were slice-time corrected and realigned to the third volume of the first functional run and to the corresponding anatomical scan. All data were motion-corrected and any TRs in which a participant moved more than 0.3 mm in relation to the previous TR were discarded from further analysis. The volume-registered data were spatially smoothed with a 4 mm FWHM Gaussian kernel. Signal intensity was normalised to the mean signal value within each run and multiplied by 100 so that the data represented percent signal change from the mean signal value before analysis.
 
 Data from all runs were entered into a GLM by convolving the standard haemodynamic response function with the regressors of interest (faces, bodies, scenes, objects, and scrambled objects) for dynamic and static functional runs. Regressors of no interest (e.g. six head movement parameters obtained during volume registration and AFNI’s baseline estimates) were also included in the GLM. Data from all 52 participants were entered in a group whole-brain analysis. Group whole-brain contrasts were generated to quantify the neural responses across the experimental conditions. Scene-selective areas were defined using a contrast of dynamic scenes greater than dynamic objects, and object-selective areas were defined using a contrast of dynamic objects greater than scrambled objects, following convention (Epstein and Kanwisher, 1998; Malach et al., 1995). Activation maps were calculated using a t-statistical threshold of p=0.001 and a cluster correction of 50 contiguous voxels as these thresholds have been successfully used in other studies to characterise activation in the visual perception literature (e.g. Nikel et al., 2022; Zimmermann et al., 2018). The whole-brain results are presented in Figure 2—figure supplement 1.
 
-## Study 3. Analysis of intrinsic functional connectivity using resting-state fMRI
+### Study 3. Analysis of intrinsic functional connectivity using resting-state fMRI
 
 The results of Study 1 suggested separate visual-DMN pathways recruited by semantic and spatial context tasks. To provide converging evidence for this ‘dual pathway’ architecture, we examined the intrinsic connectivity of sites identified in the univariate and RSA in a separate sample.
 
-## Study 3: Participants
+#### Study 3: Participants
 
 One hundred and ninety-one student volunteers (mean age = 20.1 ± 2.25 years, range 18–31; 123 females) with normal or corrected-to-normal vision and no history of neurological disorders participated in this study. Written informed consent was obtained from all subjects prior to the resting-state scan. The study was approved by the ethics committees of the Department of Psychology and York Neuroimaging Centre, University of York. This data has been used in previous studies to examine the neural basis of memory and mind-wandering, including ROI-based connectivity analysis and cortical thickness investigations (Wang et al., 2018a; Evans et al., 2020; Gonzalez Alam et al., 2018; Gonzalez Alam et al., 2019; Gonzalez Alam et al., 2022; Gonzalez Alam et al., 2021; Karapanagiotidis et al., 2017; Poerio et al., 2017; Turnbull et al., 2019; Vatansever et al., 2017; Wang et al., 2020).
 
-## Study 3: Pre-processing
+#### Study 3: Pre-processing
 
 Pre-processing and statistical analyses of resting-state data were performed using the CONN functional connectivity toolbox V.20a (http://www.nitrc.org/projects/conn; Whitfield-Gabrieli and Nieto-Castanon, 2012) implemented through SPM (version 12.0) and MATLAB (version 19a). For pre-processing, functional volumes were slice-time (bottom-up, interleaved) and motion-corrected, skull-stripped, and co-registered to the high-resolution structural image, spatially normalised to the MNI space using the unified-segmentation algorithm, smoothed with a 6 mm FWHM Gaussian kernel, and band-pass filtered (0.008–0.09 Hz) to reduce low-frequency drift and noise effects. A pre-processing pipeline of nuisance regression included motion (twelve parameters: the six translation and rotation parameters and their temporal derivatives), scrubbing (outlier volumes were identified through the composite artefact detection algorithm ART in CONN with conservative settings, including scan-by-scan change in global signal z-value threshold = 3; subject motion threshold = 5 mm; differential motion and composite motion exceeding 95% percentile in the normative sample), and CompCor components (the first five) attributable to the signal from white matter and CSF (Behzadi et al., 2007), as well as a linear detrending term, eliminating the need for global signal normalisation (Chai et al., 2012; Murphy et al., 2009).
 
-## Seed selection and analysis
+#### Seed selection and analysis
 
 Intrinsic connectivity seeds were binarised masks derived from: (1) significant univariate clusters; and (2) significant effects identified in RSA. For semantic and spatial probe effects, which characterised effects of visual perception, we created ROIs within Yeo et al., 2011, visual central and peripheral networks combined. For semantic and spatial context decisions, we identified regions within Yeo et al., 2011, combined DMN subnetworks. We also examined the intrinsic connectivity of regions activated by SCB versus MCB probes in Study 1. For representational similarity analyses, all voxels that survived thresholding at p<0.05 in the MCB conditions for the semantic and context task, as well as the cross-task analyses were binarised and used as seeds. We excluded all non-grey matter voxels that fell within these masks.
 
-## Spatial maps and seed-to-ROI analysis
+#### Spatial maps and seed-to-ROI analysis
 
 We performed seed-to-voxel analyses convolved with a canonical haemodynamic response function for each of these seeds. At the group level, analyses were carried out using CONN with cluster correction at p<0.05, and a threshold of p-FDR=0.001 (two-tailed) to define contiguous clusters. Seed-to-ROI connectivity was extracted for each participant and seed using REX implemented in CONN (Whitfield-Gabrieli and Nieto-Castanon, 2012), with percentage signal change as units. These values were then entered into a series of repeated-measures ANOVAs.
 
-## Cognitive decoding
+#### Cognitive decoding
 
 Connectivity maps were uploaded to Neurovault (Gorgolewski et al., 2015; https://neurovault.org/collections/13821/) and decoded using Neurosynth (Yarkoni et al., 2011). Neurosynth is an automated meta-analysis tool that uses text-mining approaches to extract terms from neuroimaging articles that typically co-occur with specific peak coordinates of activation. It can be used to generate a set of terms frequently associated with a spatial map. The results of cognitive decoding were rendered as word clouds using in-house scripts implemented in R. We excluded terms referring to neuroanatomy (e.g. ‘inferior’ or ‘sulcus’), as well as the second occurrence of repeated terms (e.g. ‘semantic’ and ‘semantics’). The size of each word in the word cloud relates to the frequency of that term across studies.
 
-## Structural connectivity analysis
+### Structural connectivity analysis
 
 To provide converging evidence for parallel visual-to-DMN pathways, we performed tractography analysis using DTI data from an independent sample derived from the HCP.
 
-## DTI pre-processing
+#### DTI pre-processing
 
 We used data from a subgroup of 164 HCP participants who underwent diffusion-weighted imaging at 3 T (Uğurbil et al., 2013; http://www.humanconnectome.org/study/hcp-young-adult/). The imaging parameters were previously described in Uğurbil et al., 2013, involved acquiring 111 near-axial slices with an acceleration factor of 32, an isotropic resolution of 1.25 mm3, and coverage of the entire head. The diffusion-weighted images were obtained using 90 uniformly distributed gradients in multiple Q-space shells (Caruyer et al., 2013), and this process was repeated three times with different b-values and phase-encoding directions. We used a pre-processed version of this dataset, previously described (Karolis et al., 2019; Thiebaut de Schotten et al., 2020; Vu et al., 2015), that included steps to correct for susceptibility-induced off-resonance field, motion, and geometrical distortion.
 
@@ -258,20 +314,20 @@ We used StarTrack software (https://www.mr-startrack.com) to perform whole-brain
 
 To standardise the structural connectome data, we followed these steps: first, we converted the whole-brain streamline tractography into streamline density volumes, with the intensity corresponding to the number of streamlines crossing each voxel. Second, we generated a study-specific template of streamline density volumes using the Greedy symmetric diffeomorphic normalisation pipeline provided by ANTs. This average template was created for all subjects. Third, we co-registered the template with a standard 1 mm MNI152 template using the FLIRT tool in FSL to produce a streamline density template in the MNI152 space. Finally, we registered individual streamline density volumes to the template and applied the same transformation to the individual whole-brain streamline tractography using ANTs GreedySyn and the Trackmath tool in the Tract Querier software package (Wassermann et al., 2016). This produced whole-brain streamline tractography in the standard MNI152 space.
 
-## Tract extractions and ROI analysis
+#### Tract extractions and ROI analysis
 
 Our starting point for extracting semantic and spatial context pathway tracts was each participant’s whole-brain streamline tractography in MNI (1 mm) space. We used the same univariate regions described in Section 2.3.3 as seeds (i.e. the seeds in the intrinsic connectivity analysis): these consisted of regions that were activated during the probe phase of each task, masked by Yeo’s visual networks, and regions that were activated during the decision phase of each task, masked by Yeo’s DMN. For each of our seeds, we used Trackvis (Wang and Benner, 2007) to extract all streamlines emerging from these regions as a volume, yielding one streamline group per seed per participant. Then, for each probe visual seed, we calculated what percentage of streamlines touched one decision DMN ROI or the other (activated by semantic and spatial context decisions; percentages adding to 100%); likewise, for each decision DMN seed, we calculated what percentage of streamlines touched either visual probe ROI (activated by object and scene probes; again adding to 100%). This allowed us to examine if the object probe regions were more connected to the semantic decision DMN regions, and if the scene probe regions were more connected to the spatial context DMN regions, in line with dual pathways.
 
-## Situating the pathways in whole-brain gradients
+### Situating the pathways in whole-brain gradients
 
 We examined the position of the semantic and context pathways in a functional connectivity space defined by the first two dimensions of whole-brain intrinsic connectivity patterns, frequently referred to as ‘gradients’. The first dimension of this space relates to the distinction between the connectivity patterns of unimodal and heteromodal cortical regions, while the second dimension captures the separation of visual and auditory/somatomotor regions (Margulies et al., 2016). This analysis can reveal whether the semantic pathway shows more of a balance between visual and somatosensory/auditory modalities than the spatial context pathway, in line with view that concepts are heteromodal, abstracted from multiple sensory-motor features (Ralph et al., 2017). The analysis can also show whether the spatial context pathway is anchored in more visual portions of this functional space, in line with this modality’s importance for scene processing (Epstein and Baker, 2019).
 
 First, we examined the univariate BOLD activation for each participant during the probe and decision phases of each task. The decision phase was contrasted with the arrow task baseline to control for low-level motor responses. Next, we identified the MNI voxel location of the peak response for each participant: for activation during the decision phase, this was done within a mask of the DMN from the Yeo et al., 2011, 7-network parcellation, while for probe responses, we performed this analysis within the visual network of the same parcellation. We then fitted a sphere with a 5 mm radius around this peak and used it as a ROI to extract the mean value in Margulies et al., 2016 maps for the two dimensions or gradients described above. The results were entered into a repeated-measures 2×2 ANOVA with task and gradient as factors to establish whether the semantic and spatial context pathways differed in their location in this functional space.
 
-## ROI-based ANOVAs
+### ROI-based ANOVAs
 
 ROI-based analyses of activation and intrinsic connectivity in Studies 1 and 3 were performed using FSL’s ‘Featquery’ tool for Study 1 and REX for Study 3, which we used to extract the percentage signal change within unweighted, binarised masks. The ANOVAs were carried out using IBM SPSS Statistics version 27. The results of post hoc tests to interpret significant interactions were corrected for multiple comparisons using the Holm-Bonferroni method (Aickin and Gensler, 1996). All the p values reported in the Results section are Holm-Bonferroni adjusted p values.
 
-## Visualisations of neural results
+### Visualisations of neural results
 
 Brain maps were produced in BrainNet (Xia et al., 2013) using the extremum voxel algorithm, with the exception of slices depicted in Figures 2—4, which were produced in FSL Eyes (Figures 2 and 3) and MRIcroGL (Figure 4). Maps are provided in the following Neurovault collection: https://neurovault.org/collections/13821/.

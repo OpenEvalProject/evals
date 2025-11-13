@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04yrgt058 Center for Environment Sciences and Humanities, Bard College Annandale-on-Hudson United States
-2. https://ror.org/0190ak572 Center for Genomics and Systems Biology, New York University New York United States
+1. Center for Environment Sciences and Humanities, Bard College Annandale-on-Hudson United States ([ROR:04yrgt058](https://ror.org/04yrgt058))
+2. Center for Genomics and Systems Biology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 

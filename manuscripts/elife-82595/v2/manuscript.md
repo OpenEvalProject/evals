@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj54h04 Department of Integrative Biology, The University of Texas at Austin Austin United States
-2. https://ror.org/00hj54h04 Mass Spectrometry Facility, Department of Chemistry, The University of Texas at Austin Austin United States
-3. https://ror.org/04b08hq31 Instituto Gulbenkian de Ciência Oeiras Portugal
+1. Department of Integrative Biology, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+2. Mass Spectrometry Facility, Department of Chemistry, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+3. Instituto Gulbenkian de Ciência Oeiras Portugal ([ROR:04b08hq31](https://ror.org/04b08hq31))
 
 † Corresponding author
 
 ## Abstract
 
-While foraging for nectar and pollen, bees are exposed to a myriad of xenobiotics, including plant metabolites, which may exert a wide range of effects on their health. Although the bee genome encodes enzymes that help in the metabolism of xenobiotics, it has lower detoxification gene diversity than the genomes of other insects. Therefore, bees may rely on other components that shape their physiology, such as the microbiota, to degrade potentially toxic molecules. In this study, we show that amygdalin, a cyanogenic glycoside found in honey bee-pollinated almond trees, can be metabolized by both bees and members of the gut microbiota. In microbiota-deprived bees, amygdalin is degraded into prunasin, leading to prunasin accumulation in the midgut and hindgut. In microbiota-colonized bees, on the other hand, amygdalin is degraded even further, and prunasin does not accumulate in the gut, suggesting that the microbiota contribute to the full degradation of amygdalin into hydrogen cyanide. In vitro experiments demonstrated that amygdalin degradation by bee gut bacteria is strain-specific and not characteristic of a particular genus or species. We found strains of Bifidobacterium , Bombilactobacillus, and Gilliamella that can degrade amygdalin. The degradation mechanism appears to vary since only some strains produce prunasin as an intermediate. Finally, we investigated the basis of degradation in Bifidobacterium wkB204, a strain that fully degrades amygdalin. We found overexpression and secretion of several carbohydrate-degrading enzymes, including one in glycoside hydrolase family 3 (GH3). We expressed this GH3 in Escherichia coli and detected prunasin as a byproduct when cell lysates were cultured with amygdalin, supporting its contribution to amygdalin degradation. These findings demonstrate that both host and microbiota can act together to metabolize dietary plant metabolites.
+While foraging for nectar and pollen, bees are exposed to a myriad of xenobiotics, including plant metabolites, which may exert a wide range of effects on their health. Although the bee genome encodes enzymes that help in the metabolism of xenobiotics, it has lower detoxification gene diversity than the genomes of other insects. Therefore, bees may rely on other components that shape their physiology, such as the microbiota, to degrade potentially toxic molecules. In this study, we show that amygdalin, a cyanogenic glycoside found in honey bee-pollinated almond trees, can be metabolized by both bees and members of the gut microbiota. In microbiota-deprived bees, amygdalin is degraded into prunasin, leading to prunasin accumulation in the midgut and hindgut. In microbiota-colonized bees, on the other hand, amygdalin is degraded even further, and prunasin does not accumulate in the gut, suggesting that the microbiota contribute to the full degradation of amygdalin into hydrogen cyanide. In vitro experiments demonstrated that amygdalin degradation by bee gut bacteria is strain-specific and not characteristic of a particular genus or species. We found strains of Bifidobacterium, Bombilactobacillus, and Gilliamella that can degrade amygdalin. The degradation mechanism appears to vary since only some strains produce prunasin as an intermediate. Finally, we investigated the basis of degradation in Bifidobacterium wkB204, a strain that fully degrades amygdalin. We found overexpression and secretion of several carbohydrate-degrading enzymes, including one in glycoside hydrolase family 3 (GH3). We expressed this GH3 in Escherichia coli and detected prunasin as a byproduct when cell lysates were cultured with amygdalin, supporting its contribution to amygdalin degradation. These findings demonstrate that both host and microbiota can act together to metabolize dietary plant metabolites.
 
 ## Introduction
 
@@ -42,35 +42,43 @@ In this study, we investigated the contributions of honey bees and their microbi
 
 To investigate amygdalin metabolism by bee gut bacteria, we selected representative strains of four bacterial groups involved in food metabolism in the bee gut: Bifidobacterium, Bombilactobacillus (formerly called Lactobacillus Firm-4), Lactobacillus nr. melliventris (formerly called Lactobacillus Firm-5), and Gilliamella (Figure 1). We cultured these strains in semi-defined media (SDM, Figure 1A) or in nutritionally rich media (MRS or Insectagro, Figure 1B) to assess their susceptibility to amygdalin and their ability to metabolize amygdalin into byproducts, such as prunasin, as analyzed by LC-MS (Figure 1C).
 
-## Bee gut bacterial symbionts vary in susceptibility to amygdalin
+![Figure 1.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig1-v2.jpg)
+
+**Figure 1.:** Experimental design in (A) semi-defined or (B) nutritionally rich media in 96-well plates. (C) Sample processing for LC-MS analysis. (D) Bifidobacterium and (E) Bombilactobacillus growth in semi-defined media in the presence of amygdalin (or amygdalin and glucose) normalized to growth in the presence of glucose. (F) Gilliamella and (G) Lactobacillus nr. melliventris growth in nutritionally rich media in the presence of amygdalin normalized to growth in the absence of amygdalin. Bacterial growth was measured as optical density at 600 nm after 3 days of incubation at 35°C and 5% CO2. (H–K) Amygdalin and (L–O) prunasin concentrations in spent medium of amygdalin (or amygdalin and glucose) grown cultures of Bifidobacterium, Bombilactobacillus, Gilliamella, and Lactobacillus nr. melliventris, respectively. Controls consisted of media with amygdalin (or amygdalin and glucose) but no bacteria. Experiments were performed in three biological replicates. Groups with different letters are significantly different (p < 0.01, one-way ANOVA test followed by Tukey’s multiple-comparison test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Growth of (A) Bifidobacterium and (B) Bombilactobacillus strains in semi-defined media in the presence of 100 mM amygdalin (or 100 mM amygdalin and 100 mM glucose) normalized to the bacterial growth in the presence of 100 mM glucose. Growth of (C) Gilliamella strains in nutritionally rich media in the presence of 100 mM amygdalin normalized to the bacterial growth in the absence of amygdalin. Bacterial growth was measured as optical density at 600 nm after 3 days of incubation at 35°C and 5% CO2. (D–F) Amygdalin and (G–H) prunasin concentrations in spent medium of amygdalin (or amygdalin and glucose) grown cultures of Bifidobacterium, Bombilactobacillus, and Gilliamella strains, respectively. Controls consisted of media with amygdalin (or amygdalin and glucose) but no bacteria. Experiments were performed in three biological replicates. Groups with different letters are statistically significantly different (p < 0.01, one-way ANOVA test followed by Tukey’s multiple-comparison test).
+
+### Bee gut bacterial symbionts vary in susceptibility to amygdalin
 
 Within species (or closely related species clusters), strains varied in their ability to cope with different concentrations of amygdalin in vitro.
 
-## Bifidobacterium
+#### Bifidobacterium
 
 Three strains isolated from the guts of A. mellifera (wkB204, wkB344, and wkB338) were cultured in the presence of amygdalin and/or glucose as sole carbon sources in SDM (Figure 1A). Strain wkB204 grew in the presence of amygdalin as the sole carbon source, suggesting that this strain degrades amygdalin and is not susceptible to the potential byproducts (Figure 1D). On the other hand, strains wkB344 and wkB338 grew only when glucose was added, and their growth was hampered if amygdalin was added, indicating a toxic effect on these strains (Figure 1D).
 
-## Bombilactobacillus
+#### Bombilactobacillus
 
 Strains isolated from the guts of Bombus impatiens (BI-1.1 and BI-2.5), Bombus appositus (LV-8.1) and A. mellifera (Bin4N) were tested in SDM (Figure 1A). Strains BI-1.1 and BI-2.5 grew in the presence of amygdalin as the sole carbon source, with BI-2.5 growing better than BI-1.1. In fact, growth of BI-2.5 was higher with amygdalin than with glucose as the sole carbon source (Figure 1E). Strains LV-8.1 and Bin4N grew only in the medium with glucose, but their growth was not affected when amygdalin was added (Figure 1E).
 
-## Gilliamella
+#### Gilliamella
 
 Strains isolated from the guts of Apis dorsata (wkB112, wkB178, and wkB108), Apis cerana (wkB308), and A. mellifera (M6-3G, M1-2G, wkB7, and wkB1) were cultivated in Insectagro due to the lack of an SDM for these strains (Figure 1B). Most of the strains grew at similar rates in the presence or absence of 10 mM amygdalin, except for wkB108 and wkB1 which exhibited a delay in growth, suggesting susceptibility to amygdalin at the tested concentration (Figure 1F).
 
-## Lactobacillus nr. melliventris
+#### Lactobacillus nr. melliventris
 
 Strains isolated from the guts of A. mellifera (HB-1, HB-2, HB-C2, HB-D10, wkB8, and wkB10), B. impatiens (BI-4G), and Bombus occidentalis (OCC3) were cultivated in rich medium (MRS) since they do not grow well in SDM (Figure 1B). All strains grew in the presence of amygdalin, though HB-2 growth was reduced by adding amygdalin to MRS (Figure 1G).
 
 For most bacterial strains tested, growth was hampered by increasing the concentration of amygdalin from 10 to 100 mM (Figure 1—figure supplement 1A–C). This toxicity is probably related to the presence of amygdalin itself and not to potential byproducts since most strains could not degrade amygdalin. The amygdalin concentrations were chosen to correspond to the glucose concentrations usually added to growth media to investigate carbon source usage by bacteria, and are higher than the concentrations detected in almond pollen (~4 mM) and nectar (~0.01 mM) (London-Shafir et al., 2003).
 
-## Specific bee gut bacterial strains degrade amygdalin
+### Specific bee gut bacterial strains degrade amygdalin
 
 Using LC-MS analyses, amygdalin degradation was confirmed for strains that could grow in the presence of amygdalin as the sole carbon source, such as Bifidobacterium strain wkB204 (Figure 1H) and Bombilactobacillus strains BI-1.1 and BI-2.5 (Figure 1I). Amygdalin was not detected (Figure 1H) or was detected in a lower concentration (Figure 1I and Figure 1—figure supplement 1D–E) in the spent medium of amygdalin-grown cultures when compared to the initial concentration. In these cases, amygdalin degradation was observed regardless of whether glucose was present. Interestingly, Bombilactobacillus strain BI-2.5 degrades less amygdalin when glucose is also present in the medium (Figure 1I). For Bifidobacterium strain wkB204 and Bombilactobacillus strain BI-1.1, on the other hand, similar levels of amygdalin degradation were detected in cultures with or without glucose (Figure 1H–I).
 
 Gilliamella and Lactobacillus nr. melliventris strains were cultivated in nutritionally rich media, and therefore amygdalin degradation was primarily investigated by LC-MS of spent medium. We observed amygdalin degradation only for Gilliamella strain wkB112 (Figure 1J and Figure 1—figure supplement 1F). The use of nutritionally rich media for these strains may have masked the ability of some strains to degrade amygdalin, as they had glucose as an alternative carbon source (Figure 1J–K).
 
-## Different mechanisms of amygdalin degradation by bee gut bacteria
+### Different mechanisms of amygdalin degradation by bee gut bacteria
 
 Metabolism of amygdalin by Bifidobacterium strain wkB204 and Bombilactobacillus strain BI-1.1 produces prunasin as a byproduct (Figure 1L–M and Figure 1—figure supplement 1G–H), although prunasin was only detected in wkB204 cultures after providing an excessive amount of amygdalin (Figure 1—figure supplement 1G). This suggests that wkB204 and BI-1.1 encode enzymes to break down the glycosidic bond between the glucose residues in the amygdalin structure, releasing prunasin and one glucose molecule, which can then be used as carbon source by these bacteria. On the other hand, prunasin was not produced by Bombilactobacillus strain BI-2.5 or Gilliamella strain wkB112 (Figure 1M–N) even after adding excess amygdalin (Figure 1—figure supplement 1H–I). Therefore, BI-2.5 and wkB112 seem to metabolize amygdalin in a different way than wkB204 and BI-1.1, probably by breaking down the glycosidic bond that links the two glucose residues to the aglycone, releasing a disaccharide and mandelonitrile into the medium. These mechanisms are corroborated by LC-MS analyses of spent medium taken from these cultures on a daily census (Figure 2). These results suggest that amygdalin breakdown via a prunasin intermediate is limited to wkB204 and BI-1.1.
 
@@ -78,9 +86,17 @@ Metabolism of amygdalin by Bifidobacterium strain wkB204 and Bombilactobacillus 
 
 **Figure 2.:** Amygdalin and prunasin concentrations detected by LC-MS in spent-medium of 3- or 4-day-old cultures of (A) Bifidobacterium strain wkB204, (B) Bombilactobacillus strains BI-1.1 and BI-2.5, and (C) Gilliamella strain wkB112. Concentrations were determined every day for 3–4 days. Controls consisted of medium with amygdalin but no bacteria. Only wkB204 and BI-1.1 produced prunasin as an intermediate. (D) Proposed mechanism of amygdalin degradation by different bacterial species in the bee gut.
 
-## Characterizing an enzyme involved in amygdalin metabolism
+### Characterizing an enzyme involved in amygdalin metabolism
 
 After finding that specific strains from different bee gut bacterial species can degrade amygdalin, we focused on honey bee-associated Bifidobacterium strains to investigate the enzyme involved in this metabolism. First, we checked whether the enzyme is secreted or not. Large cultures of wkB204, wkB344, and wkB338 were grown for 5 days (Figure 3A), after which we performed biochemical assays with both spent medium and cell lysate of glucose- and amygdalin-grown cultures.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig3-v2.jpg)
+
+**Figure 3.:** (A) Bacterial growth curves of Bifidobacterium strains cultured in semi-defined media (SDM) without a carbon source, with 10 mM glucose (10G), with 10 mM amygdalin (10A), or with both 10 mM glucose and 10 mM amygdalin (10G+10A) as carbon sources at 35°C and 5% CO2. Experiments were performed in three biological replicates. Each data point represents the average optical density (600 nm) measured every day for 5 days. (B–C) For each strain, 10G and 10A grown cultures were separated into (B) spent medium (sm), originating from samples 10G sm and 10A sm, and (C) cell lysate (cl), originating from samples 10G cl and 10 A cl. These samples were used to investigate amygdalin degradation by adding extra 10A to the samples. Controls consisted of 10A grown cultures without adding extra 10A and fresh SDM with 10A. Reactions were incubated at 35°C and 5% CO2 for 3 days, after which amygdalin concentration was determined. Experiments were performed in three biological replicates. Groups with different letters are significantly different (p < 0.01, one-way ANOVA test followed by Tukey’s multiple-comparison test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Bifidobacterium strains were cultured in semi-defined media (SDM) without a carbon source, with 10 mM glucose (10G), with 10 mM amygdalin (10A), or with both 10 mM glucose and 10 mM amygdalin (10G+10A) as carbon sources at 35°C and 5% CO2. For each strain, 10G and 10A grown cultures were separated into (A) spent medium (sm), originating the samples 10G-sm and 10A-sm, and (B) cell lysate (cl), originating the samples 10G-cl and 10A-cl. These samples were used to investigate prunasin release by adding extra 10A to the samples. Controls consisted of 10A grown cultures without adding extra 10A and fresh SDM with 10A. Reactions were incubated at 35°C and 5% CO2 for 3 days, after which amygdalin concentration (see Figure 6) and prunasin release were determined. Experiments were performed in three biological replicates. Groups with different letters are statistically significantly different (p < 0.05, one-way ANOVA test followed by Tukey’s multiple-comparison test).
 
 As observed in the previous experiment, wkB204 completely degraded amygdalin; we did not detect amygdalin in spent medium (10A sm, Figure 3B) or in cell lysate of amygdalin-grown cultures (10A cl, Figure 3C). To investigate whether the enzyme involved in amygdalin degradation was secreted, we added fresh amygdalin to sterile spent medium (10A sm + 10A) or to sterile cell lysate (10A cl + 10A) originating from amygdalin-grown cultures. After 3 days of incubation, we found full degradation of amygdalin in spent medium (10A sm + 10 A) (Figure 3B), but only slight degradation in cell lysate (10A cl + 10A) (Figure 3C); this was compared to a control sample containing only medium and amygdalin (Fresh 10A). No amygdalin was detected in cell lysates of amygdalin-grown cultures, showing that amygdalin does not enter bacterial cells (10A cl, Figure 3C). Moreover, we detected prunasin in both spent medium and cell lysate of amygdalin-grown cultures supplemented with amygdalin (10A sm + 10A and 10A cl + 10A, respectively) (Figure 3—figure supplement 1).
 
@@ -90,35 +106,144 @@ Since spent medium of wkB204 amygdalin-grown cultures achieved full degradation 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig4-v2.jpg)
 
-**Figure 4.:** Bifidobacterium.(A) Large-scale culture of Bifidobacterium strain wkB204 in semi-defined media (SDM) without a carbon source, with 10 mM glucose, or with 10 mM amygdalin at 35°C and 5% CO2. Experiments were performed in three biological replicates and each data point represents the average optical density (600 nm) measured every day for 7 days. (B) Spent medium concentration for running on an SDS-PAGE gel. (C) Venn diagram and volcano plot showing the number of differentially expressed proteins in spent medium of glucose- or amygdalin-grown cultures. Numbers in the volcano plot: 1: alpha/beta fold hydrolase (WP_254477374), 2: nucleoside hydrolase (WP_254477231), 3: glycoside hydrolase family 3 (WP_254476944), 4: beta-galactosidase (WP_254477161), 5: alpha-mannosidase (WP_254477012), 6: Nudix hydrolase (WP_254477413), 7: MFS transporter (WP_254476943), 8: alpha-L-fucosidase (WP_254477430), 9: glycoside hydrolase family 30 (WP_254477160) (p<0.05, t-test followed by Benjamini-Hochberg procedure to control for false discovery rate).Figure 4—source data 1.Bifidobacterium strain wkB204.From left to right, columns represent: (1) PageRuler Plus Prestained Protein Ladder; (2–10) Supernatants of cultures (1–4) grown in the absence of a carbon source, (5–7) in the presence of 10 mM glucose as sole carbon source, or (8–10) in the presence of 10 mM amygdalin as sole carbon source. Each sample (30 μL) was mixed with 5 μL of 6× SDS gel-loading buffer (0.35 M Tris-Cl pH 6.8, 10% w/v SDS, 0.012% w/v bromophenol blue, 30% v/v glycerol, 0.6 mM dithiothreitol), denatured at 100°C for 5 min, then run on a Bolt 4–12% Bis-Tris Plus, 1.0 mm, protein gel at 200 V for 22 min.Figure 4—source data 2.Bifidobacterium strain wkB204.
+**Figure 4.:** (A) Large-scale culture of Bifidobacterium strain wkB204 in semi-defined media (SDM) without a carbon source, with 10 mM glucose, or with 10 mM amygdalin at 35°C and 5% CO2. Experiments were performed in three biological replicates and each data point represents the average optical density (600 nm) measured every day for 7 days. (B) Spent medium concentration for running on an SDS-PAGE gel. (C) Venn diagram and volcano plot showing the number of differentially expressed proteins in spent medium of glucose- or amygdalin-grown cultures. Numbers in the volcano plot: 1: alpha/beta fold hydrolase (WP_254477374), 2: nucleoside hydrolase (WP_254477231), 3: glycoside hydrolase family 3 (WP_254476944), 4: beta-galactosidase (WP_254477161), 5: alpha-mannosidase (WP_254477012), 6: Nudix hydrolase (WP_254477413), 7: MFS transporter (WP_254476943), 8: alpha-L-fucosidase (WP_254477430), 9: glycoside hydrolase family 30 (WP_254477160) (p<0.05, t-test followed by Benjamini-Hochberg procedure to control for false discovery rate).
 
-## GH3 gene expression in Bifidobacterium strains
+### GH3 gene expression in Bifidobacterium strains
 
 We used this wkB204 GH3 (WP_254476944) as a query to search a customized database of proteins from bee gut bacteria, including 22 bee-associated Bifidobacterium strains. Ten other Bifidobacterium strains encode a GH3 in their genomes with a high sequence similarity to the wkB204 GH3 (Figure 5—figure supplement 1). Intriguingly, these included a GH3 from wkB344 (WP_121913979), which did not grow in the presence of amygdalin in vitro.
 
 To determine why this GH3 does not enable wkB344 to use amygdalin as a carbon source, we investigated whether this enzyme is expressed in cultures, and used wkB204 and wkB338 cultures as controls for presence and absence of GH3 activity, respectively (Figure 5A). In the presence of glucose as the sole carbon source, strains wkB204 and wkB344, but not wkB338, express the GH3 gene (Figure 5B). When cultivated in the presence of amygdalin as the sole carbon source, only wkB204 shows elevated expression of GH3 transcripts (Figure 5B), which correlates with the ability of this strain to degrade amygdalin in vitro. No elevation in expression was evident for wkB344 (Figure 5B), and the levels of GH3 produced by wkB344 in glucose-grown cultures did not result in observable amygdalin degradation when incubated in 10 mM amygdalin (Figure 3C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig5-v2.jpg)
+
+**Figure 5.:** (A) RNA extraction and complementary DNA (cDNA) synthesis from cultures of Bifidobacterium strains wkB204, wkB344, and wkB338. (B) qPCR data for the transcript levels of GH3 in cells of Bifidobacterium strains cultured in the presence of 10 mM glucose (10G) or 10 mM amygdalin (10A). Experiments were performed in three biological replicates. Groups with different letters are significantly different (p < 0.01, one-way ANOVA test followed by Tukey’s multiple-comparison test). (C) The genomic region containing the GH3 gene with high sequence similarity in wkB204 and wkB344. The corresponding region is included for wkB338 for comparison. Gray shading indicates operons. Dashed lines indicate regions not present in the genome. (D) Venn diagram showing the number of GH3s shared between the strains with amino acid similarity to other annotated GH3s according to the NCBI inference database. (E) Phylogenetic analysis for the GH3s found in the genomic regions shown in C. Outgroup is represented by two amygdalin-degrading GH3s isolated from Rhizomucor miehei strain RmBglu3B (AIY32164.1) and Talaromyces cellulolyticus strain Bgl3B (GAM39187.1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig5-figsupp1-v2.jpg)
+
 The wkB204 GH3 (WP_254476944), which is overexpressed in amygdalin-grown cultures, is encoded in an operon containing four other genes: a major facilitator superfamily transporter (WP_254476943), a glycoside hydrolase family 30 (WP_254477160), and a beta-galactosidase (WP_254477161) (Figure 5C). These were also overexpressed in the presence of amygdalin, based on proteomics data (Figure 5C). The wkB344 GH3 (WP_121913979) is also encoded in an operon, but a beta-galactosidase (WP_121914045) is the only other gene in the operon (Figure 5C), as predicted by the operon-mapper webserver (Taboada et al., 2018).
 
 According to the dbCAN meta server for automated CAZyme annotation, the genomes of these three Bifidobacterium strains encode multiple GH3s: wkB204 encodes 10 distinct GH3s, while wkB344 and wkB338 encode 5 distinct GH3s each (Figure 5—source data 1; Yin et al., 2012; Zhang et al., 2018). Based on the NCBI inference database and amino acid similarity to other annotated GH3s, these three strains have some GH3s highly similar in amino acid sequence and probably similar in function (Figure 5D and Table 1), as noted for wkB204-GH3 (WP_254476944) and wkB344-GH3 (WP_121913979) (Figure 5E).
 
-## Bifidobacterium strains also degrade prunasin
+**Table 1.**
+ Glycoside hydrolases family 3 (GH3) detected in the genomes of Bifidobacterium strains wkB204, wkB344, and wkB338.Protein ID refers to the unique identification of each GH3 in the NCBI Reference Sequence Database. Inference refers to the closest related GH3 present in the NCBI Reference Sequence Database. Same colors and superscript letters indicate GH3s with similar amino acid sequence. This information was used to make the Venn diagram in Figure 5D.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>GH3 loci number</th>
+      <th>Protein ID (NCBI RefSeq)</th>
+      <th>Inference (NCBI RefSeq)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="10">wkB204</td>
+      <td rowspan="10">10</td>
+      <td>WP_254476932a</td>
+      <td>WP_007147852</td>
+    </tr>
+    <tr>
+      <td>WP_254476944b</td>
+      <td>WP_015021504</td>
+    </tr>
+    <tr>
+      <td>WP_254477003</td>
+      <td>WP_003842825</td>
+    </tr>
+    <tr>
+      <td>WP_254477019</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>WP_254477308c</td>
+      <td>WP_015022086</td>
+    </tr>
+    <tr>
+      <td>WP_254477316</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>WP_254477624d</td>
+      <td>WP_016461981</td>
+    </tr>
+    <tr>
+      <td>WP_254477626e</td>
+      <td>WP_004221005</td>
+    </tr>
+    <tr>
+      <td>WP_254478126</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>WP_254478363</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="5">wkB344</td>
+      <td rowspan="5">5</td>
+      <td>WP_121913968a</td>
+      <td>WP_007147852</td>
+    </tr>
+    <tr>
+      <td>WP_121913979b</td>
+      <td>WP_015021504</td>
+    </tr>
+    <tr>
+      <td>WP_121914233c</td>
+      <td>WP_015022086</td>
+    </tr>
+    <tr>
+      <td>WP_121914846d</td>
+      <td>WP_016461981</td>
+    </tr>
+    <tr>
+      <td>WP_121914847</td>
+      <td>WP_004221005</td>
+    </tr>
+    <tr>
+      <td rowspan="5">wkB338</td>
+      <td rowspan="5">5</td>
+      <td>WP_121912678c</td>
+      <td>WP_015022086c</td>
+    </tr>
+    <tr>
+      <td>WP_121912768</td>
+      <td>WP_003838412</td>
+    </tr>
+    <tr>
+      <td>WP_121912769e</td>
+      <td>WP_004221005e</td>
+    </tr>
+    <tr>
+      <td>WP_121913257</td>
+      <td>WP_003839235</td>
+    </tr>
+    <tr>
+      <td>WP_121913288</td>
+      <td>WP_015450023</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bifidobacterium strains also degrade prunasin
 
 To investigate whether Bifidobacterium strains can also degrade prunasin, we performed an additional in vitro experiment in which Bifidobacterium strains wkB204, wkB344, and wkB338 were grown in 10 mM glucose in SDM in the presence of 0.1 mM prunasin (Figure 6A). Under these conditions, all strains grew in the presence of prunasin (Figure 6B) and degraded it (Figure 6C). For comparison, we also checked growth in the presence of 0.1 mM amygdalin (Figure 6D) and found that not only wkB204, but also wkB344 degraded amygdalin (Figure 6E). The lack of growth and, consequently, of degradation observed before for this strain is probably due to the much higher concentration of amygdalin provided in previous cultures (10 or 100 mM).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig6-v2.jpg)
 
-**Figure 6.:** Bifidobacterium strains.(A) Experimental design. (B) Bacterial growth, and (C) prunasin degradation after 3 days of incubation in the presence of 0.1 mM prunasin. (D) Bacterial growth and (E) amygdalin degradation after 3 days of incubation in the presence of 0.1 mM amygdalin. Experiments were performed in three biological replicates. Groups with different letters are significantly different (p < 0.01, one-way ANOVA test followed by Tukey’s multiple-comparison test).
+**Figure 6.:** (A) Experimental design. (B) Bacterial growth, and (C) prunasin degradation after 3 days of incubation in the presence of 0.1 mM prunasin. (D) Bacterial growth and (E) amygdalin degradation after 3 days of incubation in the presence of 0.1 mM amygdalin. Experiments were performed in three biological replicates. Groups with different letters are significantly different (p < 0.01, one-way ANOVA test followed by Tukey’s multiple-comparison test).
 
-## Escherichia coli expressing the GH3 enzyme produces prunasin
+### Escherichia coli expressing the GH3 enzyme produces prunasin
 
 To confirm the ability of the Bifidobacterium GH3 enzyme to degrade amygdalin and/or prunasin, we cloned and expressed the GH3 gene from Bifidobacterium strains wkB204 (WP_254476944) or wkB344 (WP_121913979) in E. coli (Figure 7A–B). Cell lysates of transformed E. coli expressing GH3 were incubated in the presence of 0.1 mM amygdalin or 0.1 mM prunasin (Figure 7C). After 5 days of incubation, we observed amygdalin degradation (Figure 7D) followed by prunasin production (Figure 7E) for E. coli cell lysates expressing either wkB204-GH3 or wkB344-GH3, but not for E. coli transformed with an empty plasmid, indicating that both enzymes can degrade amygdalin into prunasin. When the cell lysates were incubated in the presence of prunasin, only a small amount of prunasin was degraded (Figure 7F), suggesting that this enzyme, under the tested conditions, still can degrade prunasin, but to a lesser extent. These findings show that this Bifidobacterium-related GH3 enzyme can degrade amygdalin into prunasin, and potentially prunasin into mandelonitrile, and may be responsible for the degradation patterns observed for Bifidobacterium strain wkB204 when cultured in the presence of amygdalin.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig7-v2.jpg)
 
-**Figure 7.:** Bifidobacterium glycoside hydrolase family 3 (GH3) enzyme in Escherichia coli.(A) E. coli Rosetta BL21 competent cells were transformed with the vector pET-25b carrying the gene that encodes the wkB204-GH3 or wkB344-GH3, or only the empty vector as a control. (B) Bacterial cells from overnight cultures were lysed to extract RNA and investigate the expression levels of cloned genes by RT-qPCR. In parallel, bacterial cells from similar overnight cultures were lysed and used in incubation assays with 0.1 mM amygdalin or 0.1 mM prunasin in minimal medium at 37°C. Samples were submitted for LC-MS analysis along with amygdalin and prunasin standards. (C) Transcript levels of Bifidobacterium-related GH3 genes expressed in E. coli. (D) Amygdalin degradation and (E) prunasin production levels after 5 days of incubation in the presence of 0.1 mM amygdalin. (F) Prunasin degradation levels after 5 days of incubation in the presence of 0.1 mM prunasin. Experiments were performed in three biological replicates. Groups with different letters are significantly different (p < 0.01, one-way ANOVA test followed by Tukey’s multiple-comparison test).
+**Figure 7.:** (A) E. coli Rosetta BL21 competent cells were transformed with the vector pET-25b carrying the gene that encodes the wkB204-GH3 or wkB344-GH3, or only the empty vector as a control. (B) Bacterial cells from overnight cultures were lysed to extract RNA and investigate the expression levels of cloned genes by RT-qPCR. In parallel, bacterial cells from similar overnight cultures were lysed and used in incubation assays with 0.1 mM amygdalin or 0.1 mM prunasin in minimal medium at 37°C. Samples were submitted for LC-MS analysis along with amygdalin and prunasin standards. (C) Transcript levels of Bifidobacterium-related GH3 genes expressed in E. coli. (D) Amygdalin degradation and (E) prunasin production levels after 5 days of incubation in the presence of 0.1 mM amygdalin. (F) Prunasin degradation levels after 5 days of incubation in the presence of 0.1 mM prunasin. Experiments were performed in three biological replicates. Groups with different letters are significantly different (p < 0.01, one-way ANOVA test followed by Tukey’s multiple-comparison test).
 
-## Host and symbionts contribute to amygdalin degradation
+### Host and symbionts contribute to amygdalin degradation
 
 We also investigated amygdalin degradation in vivo. To that end, we performed experiments with bees lacking a microbiota (microbiota-deprived or MD), colonized with a conventional microbiota (CV), or monocolonized with Bifidobacterium strains wkB204 or wkB344 (Figure 8A). Bees were hand-fed 5 μL of 1 mM amygdalin in sucrose syrup, or only sucrose syrup. Amygdalin was detected in different compartments of the bee body, including the midgut, the hindgut and the body carcass without the gut of MD, CV, and monocolonized bees (Figure 8B). In the hindgut samples, amygdalin was detected for MD and wkB344-monocolonized bees but not for CV and wkB204-monocolonized bees (Figure 8B). Total amygdalin concentration was significantly lower in CV bees and wkB204-monocolonized bees when compared to control bees not treated with amygdalin but spiked with 5 μL of 1 mM amygdalin during the extraction protocol (Figure 8C). Interestingly, prunasin was only detected in the midgut and hindgut of MD bees (Figure 8D–E).
 
@@ -128,9 +253,17 @@ We also investigated amygdalin degradation in vivo. To that end, we performed ex
 
 These findings demonstrate the role of the microbiota in amygdalin degradation, as amygdalin concentration is reduced in CV bees and prunasin does not accumulate in the guts of CV or monocolonized bees. These findings also show that bees themselves can degrade amygdalin, but that this degradation is partial, since prunasin accumulates in the guts of MD bees. Therefore, the presence of the microbiota contributes to continued amygdalin and prunasin degradation in the bee gut.
 
-## Honey bees tolerate typical environmental concentrations of amygdalin
+### Honey bees tolerate typical environmental concentrations of amygdalin
 
 Honey bees exposed to concentrations of amygdalin, ranging from 0.01 to 1 mM, did not exhibit increased mortality rates or dysbiosis (Figure 9A–B). We did not find any significant changes in gut microbial composition (Figure 9C–D) or abundance (Figure 9E) of amygdalin-treated bees when compared to untreated bees, which is consistent with other studies (Tauber et al., 2020). Moreover, amygdalin did not affect mortality rates of MD bees (Figure 9—figure supplement 1). The concentrations used in the in vivo experiments are below the concentrations detected in almond pollen (~4 mM), and the lower concentration resembles what has been detected in almond nectar (~0.01 mM) (London-Shafir et al., 2003).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig9-v2.jpg)
+
+**Figure 9.:** (A) Experimental design and (B) survival rates of honey bees exposed to different concentrations of amygdalin. (C) Stacked column graphs showing the relative abundance of bee gut bacterial species in control bees (n=15), 0.01 mM amygdalin (n=15), 0.1 mM amygdalin (n=13), and 1 mM amygdalin (n=15) exposed bees. (D) Principal coordinate analysis of gut community compositions of control and amygdalin exposed bees using Bray-Curtis dissimilarity (p>0.5, Permanova test with 9999 permuations). (E) Boxplot of total bacterial 16S rRNA gene copies estimated by qPCR for control and amygdalin exposed bees. Box-and-whisker plots show high, low, and median values, with lower and upper edges of each box denoting first and third quartiles, respectively. No significant differences were observed in total bacterial abundance between control and amygdalin exposed bees (p>0.05, Kruskal-Wallis test).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/82595/elife-82595-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Microbiota-deprived bees were exposed to sterile sucrose syrup (control, n=189 bees), 0.01 mM amygdalin in sterile sucrose syrup (n=185 bees) or 0.1 mM amygdalin in sucrose syrup (n=190 bees). (B) Microbiota-colonized bees were exposed to sterile sucrose syrup (control, n=210 bees), 0.01 mM amygdalin in sterile sucrose syrup (n=210 bees) or 0.1 mM amygdalin in sucrose syrup (n=210 bees). Bees from each group were split into 6 cup cages. No significant effects were found between control and treatment groups.
 
 ## Discussion
 
@@ -162,15 +295,538 @@ Our results show the relevance of the microbiota for the metabolism of plant tox
 
 ## Methods
 
-## Chemicals, media, and solutions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Bifidobacterium asteroides)</td>
+      <td>wkB204</td>
+      <td>NCBI Reference Sequence</td>
+      <td>Locus: WP_254476944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bifidobacterium asteroides)</td>
+      <td>wkB344</td>
+      <td>NCBI Reference Sequence</td>
+      <td>Locus: WP_121913979</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5-alpha</td>
+      <td>New England BioLabs</td>
+      <td>Cat#: C2987H</td>
+      <td>NEB 5-alpha competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>New England BioLabs</td>
+      <td>Cat#: C2527H</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bifidobacterium asteroides)</td>
+      <td>wkB204</td>
+      <td>This paper</td>
+      <td>JAFMNU020000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bifidobacterium asteroides)</td>
+      <td>wkB344</td>
+      <td>doi:10.1073/pnas.1916224116</td>
+      <td>NPOQ00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bifidobacterium asteroides)</td>
+      <td>wkB338</td>
+      <td>doi:10.1073/pnas.1916224116</td>
+      <td>NPOR00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bombilactobacillus bombi)</td>
+      <td>BI-2.5</td>
+      <td>This paper</td>
+      <td>CP031513</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bombilactobacillus bombi)</td>
+      <td>BI-1.1</td>
+      <td>This paper</td>
+      <td>QOCR00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bombilactobacillus bombi)</td>
+      <td>LV-8.1</td>
+      <td>This paper</td>
+      <td>QOCS00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bombilactobacillus mellifer)</td>
+      <td>Bin4N</td>
+      <td>doi:10.1099/ijs.0.059600–0doi:10.1099/ijsem.0.004107</td>
+      <td>JXJQ00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus bombicola)</td>
+      <td>OCC3</td>
+      <td>This paper</td>
+      <td>QOCV00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus bombicola)</td>
+      <td>BI-4G</td>
+      <td>This paper</td>
+      <td>QOCU00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus nr. melliventris)</td>
+      <td>HB-1</td>
+      <td>This paper</td>
+      <td>OQ216581</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus nr. melliventris)</td>
+      <td>HB-2</td>
+      <td>This paper</td>
+      <td>OQ216582</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (L. nr. melliventris)</td>
+      <td>HB-C2</td>
+      <td>This paper</td>
+      <td>OQ216583</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus nr. melliventris)</td>
+      <td>HB-D10</td>
+      <td>This paper</td>
+      <td>OQ216584</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus helsingborgensis)</td>
+      <td>wkB8</td>
+      <td>doi:10.1128/genomeA.01176–14</td>
+      <td>CP009531</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus kullabergensis)</td>
+      <td>wkB10</td>
+      <td>doi:10.1128/genomeA.01176–14</td>
+      <td>JRJB00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gilliamella apicola)</td>
+      <td>wkB1</td>
+      <td>doi:10.1073/pnas.1405838111</td>
+      <td>CP007445</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gilliamella apicola)</td>
+      <td>wkB7</td>
+      <td>doi:10.1128/mBio.01326–16</td>
+      <td>LZGG00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gilliamella apis)</td>
+      <td>M1-2G</td>
+      <td>doi:10.1128/mBio.01326–16</td>
+      <td>LZGQ00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gilliamella sp.)</td>
+      <td>wkB112</td>
+      <td>doi:10.1128/mBio.01326–16</td>
+      <td>LZGL00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gilliamella sp.)</td>
+      <td>wkB178</td>
+      <td>doi:10.1128/mBio.01326–16</td>
+      <td>LZGK00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gilliamella sp.)</td>
+      <td>wkB108</td>
+      <td>doi:10.1128/mBio.01326–16</td>
+      <td>LZGM00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gilliamella sp.)</td>
+      <td>wkB308</td>
+      <td>doi:10.1128/mBio.01326–16</td>
+      <td>LZGN00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gilliamella sp.)</td>
+      <td>M6-3G</td>
+      <td>doi:10.1128/mBio.01326–16</td>
+      <td>MCIU00000000</td>
+      <td>Bacterial isolate</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Apis mellifera)</td>
+      <td>Western honey bee Apis mellifera</td>
+      <td>Collected from hives at UT-Austin</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEM-T Easy vector (plasmid)</td>
+      <td>Promega</td>
+      <td>Cat#: A1360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET25b (plasmid)</td>
+      <td>Novagen</td>
+      <td>Cat#: 69753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET25b-wkB204-GH3 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pET25b expressing wkB204-GH3 (WP_254476944)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET25b-wkB344-GH3 (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pET25b expressing wkB344-GH3 (WP_121913979)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B-GH3-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ctaccgcaatcccgacct</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B-GH3-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>cacctccttgtccactccc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GH3-NdeI-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ttgtttaactttaagaaggagatatacatatggcatcaaggaagttgacagagg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GH3-HindIII-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>agcccgtttgatctcgagtgcggccgcaagcttacccacggtcaccgtca</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-RNA Miniprep kit</td>
+      <td>Zymo Research</td>
+      <td>Cat#: R1055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat#: 172–5125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monarch Plasmid Miniprep Kit</td>
+      <td>New England BioLabs</td>
+      <td>Cat#: T1010L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>qScript cDNA Synthesis Kit</td>
+      <td>QuantBio</td>
+      <td>Cat#: 95047–500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amygdalin</td>
+      <td>Chem-Impex International</td>
+      <td>Cat#: 22029</td>
+      <td>Lot#: 002681–16112001</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prunasin</td>
+      <td>Toronto Research Chemicals</td>
+      <td>Cat#: P839000</td>
+      <td>Lot#: 6-EQJ-155–1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Fisher Bioreagents</td>
+      <td>Cat#: BP1760-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopropyl β-D-1-thiogalactopyranoside (IPTG)</td>
+      <td>Gold Biotechnology</td>
+      <td>Cat#: I2481C25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antarctic Phosphatase</td>
+      <td>New England BioLabs</td>
+      <td>Cat#: M0289S</td>
+      <td>Enzyme</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NdeI</td>
+      <td>New England BioLabs</td>
+      <td>Cat#: R0111S</td>
+      <td>Restriction enzyme</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HindIII-HF</td>
+      <td>New England BioLabs</td>
+      <td>Cat#: R3104S</td>
+      <td>Restriction enzyme</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SeaView</td>
+      <td>http://pbil.univ-lyon1.fr/software/seaview3.html</td>
+      <td>RRID:SCR_015059</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Insectagro DS2 media</td>
+      <td>Corning</td>
+      <td>Cat#: 13-402-CV</td>
+      <td>Lot#: 12818007</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Difco Lactobacilli MRS broth</td>
+      <td>BD</td>
+      <td>Cat#: 288130</td>
+      <td>Lot#: 9211338</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Heart Infusion Agar</td>
+      <td>Criterion</td>
+      <td>Cat#: C5822</td>
+      <td>Lot#: 491030</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Defibrinated Sheep Blood</td>
+      <td>HemoStat Laboratories</td>
+      <td>Cat#: DSB1</td>
+      <td>Lot#: 663895–2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein extraction reagent (B-PER)</td>
+      <td>Thermo Scientific</td>
+      <td>Cat#: 78248</td>
+      <td>Lot#: LJ148147A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bolt 4–12% Bis-Tris Plus Gel</td>
+      <td>Thermo Scientific</td>
+      <td>Cat#: NW04120BOX</td>
+      <td>Lot#: 21022470</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals, media, and solutions
 
 Amygdalin was obtained from Chem-Impex International, Inc (catalog number: 22029, lot number: 002681-16112001). Prunasin was obtained from Toronto Research Chemicals, Inc (catalog number: P839000, lot number: 6-EQJ-155-1). An SDM (for recipe see Table 2 and Menon et al., 2013) was used to culture Bifidobacterium and Bombilactobacillus strains. The nutrient-rich medium Insectagro DS2 (Corning, Inc, catalog number: 13-402-CV, lot number: 12818007) was used to culture Gilliamella strains. The Difco Lactobacilli MRS broth (BD, Inc, catalog number: 288130, lot number: 9211338) was used to culture Lactobacillus strains. Luria-Bertani (LB) or a minimal medium (MM, for recipe see Table 3 and Li et al., 2014) was used to culture transformed E. coli strains. For experiments with bacterial isolates, a 1 M amygdalin solution was prepared by dissolving 4.57 g amygdalin in 10 mL of culture medium, then diluted to final concentrations of 0.1, 1, 10, or 100 mM in the same culture medium. Also, a 5 mM prunasin solution was prepared by dissolving 5 mg prunasin in 3387 μL sterile water, then an aliquot was transferred to SDM or MM to a final concentration of 0.1 mM prunasin. For experiments with honey bees, a 10 mM amygdalin solution was prepared by dissolving 45.74 mg amygdalin in 10 mL sterile water, then diluted to final concentrations of 0.01 , 0.1, or 1 mM with filter-sterilized 0.5 M sucrose syrup and provided to bees in cup cages.
 
-## Isolation and characterization of Bifidobacterium strains
+**Table 2.**
+ Composition of a semi-defined medium (SDM) recipe used to culture Bifidobacterium and Lactobacillus strains.Specific carbon sources (amygdalin and/or glucose) were added according to the experiments. Recipe was adapted from Walker et al., 2014.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ingredient</th>
+      <th>Amount (g/L)</th>
+    </tr>
+    <tr>
+      <th colspan="2">Defined</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ammonium chloride</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Cysteine hydrochloride</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Magnesium chloride</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Manganese chloride</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Nicotinic acid</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Pantothenic acid</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Potassium phosphate monobasic</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Pyridoxine hydrochloride</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Sodium acetate</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Undefined</td>
+    </tr>
+    <tr>
+      <td>Yeast extract</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>SC, synthetic complete supplement(Sunrise Scientific Products, Knoxville, TN, USA)</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Tween 80</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Composition of a minimum medium (MM, pH 6.8) recipe used to culture transformed Escherichia coli strains.Specific carbon sources (amygdalin, prunasin, or glucose) were added according to the experiments. Recipe was adapted from Li et al., 2014.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Ingredient</th>
+      <th>Amount (g/L)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ammonium iron (III) citrate</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Ammonium phosphate tetrahydrate</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Boric acid</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Citric acid</td>
+      <td>1.55</td>
+    </tr>
+    <tr>
+      <td>Cobalt (II) chloride hexahydrate</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Copper (II) chloride dihydrate</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Magnesium sulfate</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>Manganese (II) chloride tetrahydrate</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Potassium phosphate monobasic</td>
+      <td>13.3</td>
+    </tr>
+    <tr>
+      <td>Sodium molybdate dihydrate</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Zinc sulfate heptahydrate</td>
+      <td>0.034</td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation and characterization of Bifidobacterium strains
 
 Bifidobacterium strains wkB204, wkB344, and wkB338 were isolated from fresh guts of A. mellifera workers from hives kept at UT-Austin (August 2014). Guts were homogenized in 10% PBS and cultured on Heart Infusion agar at 35°C and 5% CO2 for 3–5 days. Genomic DNA was extracted from overnight cultures, as in Kwong et al., 2017b. The wkB204 genome was sequenced on the Illumina MiSeq platform from 2×150 bp paired-end libraries at the SeqCenter (Pittsburgh, PA) and assembled using CLC Genomics Workbench 5.5 (QIAGEN). The wkB344 and wkB338 genomes were previously reported in Zheng et al., 2019.
 
-## Isolation and characterization of Bombilactobacillus and Lactobacillus strains
+### Isolation and characterization of Bombilactobacillus and Lactobacillus strains
 
 Bee gut-associated bacterial strains were isolated from fresh guts of commercial (strains BI-2.5, BI-1.1) and wild-caught (strain BI-4G) B. impatiens workers, preserved guts of B. appositus (strain LV-8.1) and B. occidentalis (strain OCC3) workers. Wild B. impatiens were collected in New Haven, CT, USA (August 2013); B. appositus and B. occidentalis were collected in Logan, UT, USA (July 2013); commercial B. impatiens were obtained from BioBest (Romulus, MI, USA). Guts and feces were homogenized in 10% PBS and cultured in MRS broth at 35°C and 5% CO2 for 3–5 days, then plated on MRS agar and incubated at 35°C and 5% CO2. Several passages on MRS agar were required to achieve pure isolates. Genomic DNA was extracted from overnight cultures, as in Kwong et al., 2017b.
 
@@ -182,11 +838,11 @@ Lactobacillus strains HB-1, HB-2, HB-C2, and HB-D10 were isolated from fresh gut
 
 Lactobacillus strains wkB8 and wkB10 were previously isolated from the guts of A. mellifera (Kwong et al., 2014).
 
-## Isolation and characterization of Gilliamella strains
+### Isolation and characterization of Gilliamella strains
 
 Gilliamella strains were previously isolated from the guts of A. dorsata (wkB112, wkB178, wkB108), A. cerana (wkB308), or A. mellifera (M6-3G, M1-2G, wkB7, wkB1) (Zheng et al., 2016).
 
-## Exposure of bee gut bacteria to amygdalin
+### Exposure of bee gut bacteria to amygdalin
 
 All strains were initially cultured in Heart Infusion Agar (Criterion, New York, NY, USA, catalog number: C5822, lot number: 491030) with 5% Defibrinated Sheep Blood (HemoStat Laboratories, Dixon, CA, USA, lot number: 663895-2) at 35°C and 5% CO2 for 3–5 days, then colonies were transferred to proper liquid media to obtain enough bacterial mass for in vitro experiments.
 
@@ -198,7 +854,7 @@ Strains of Lactobacillus nr. melliventris (HB-1, HB-2, HB-C2, HB-D10, wkB8, wkB1
 
 At the end of the experiment, plates were centrifuged at 7000 rpm for 5 min, and spent medium was removed and filter-sterilized with a 0.22 μm filter. Samples were transferred to 1.5 mL microtubes and dried under vacuum using an Eppendorf Vacufuge (Eppendorf, Enfield, CT, USA). Later, they were resuspended in 1 mL LC-MS grade water and 100-fold diluted to be submitted for LC-MS analysis.
 
-## Amygdalin degradation in spent media and cell lysates
+### Amygdalin degradation in spent media and cell lysates
 
 Bifidobacterium strains wkB204, wkB344, and wkB338 were chosen to investigate the mechanism of amygdalin degradation. They were cultured in 5 mL of MRS broth at 35°C and 5% CO2 overnight. OD was measured for each bacterial culture at 600 nm and diluted to an OD of 0.5 with SDM. Cells were washed twice with SDM. One-hundred µL aliquots of each bacterial suspension were transferred in three biological replicates to 15 mL culture tubes containing 10 mL of SDM with 10 mM amygdalin, 10 mM glucose, or both, or without a carbon source. Samples were incubated at 35°C and 5% CO2 and OD was measured at 600 nm every day for 5 days. At the end of the experiment, amygdalin- and glucose-grown cultures from each strain were centrifuged for 10 min at full speed, and spent medium was separated from the cell pellet.
 
@@ -210,46 +866,46 @@ Spent medium and cell lysate of amygdalin-grown cultures only, and 10 mM amygdal
 
 All samples were incubated at 35°C and 5% CO2 for 3 days, after which they were 500-fold diluted and submitted for LC-MS analysis.
 
-## Quantification of amygdalin in bacterial cultures
+### Quantification of amygdalin in bacterial cultures
 
 Diluted samples were analyzed using an Agilent 6546 Q-TOF LC-MS with an Agilent Dual Jet Stream electrospray ionization source in negative mode. Chromatographic separations were obtained under gradient conditions by injecting 1 μL onto an Agilent RRHD Eclipse Plus C18 column (50×2.1 mm, 1.8 µm particle size) with an Agilent Zorbax Eclipse Plus C18 narrow bore guard column (12.5×2.1 mm, 5 µm particle size) on an Agilent 1260 Infinity II liquid chromatography system. The mobile phase consisted of eluent A (water + 0.1% formic acid) and eluent B (methanol). The gradient was as follows: held at 5% B from 0 to 1 min, 5% B to 30% B from 1 to 1.5 min, 30% B to 37% B from 1.5 to 9 min, 37% B to 95% B from 9 to 9.1 min, held at 95% B from 9.1 to 12 min, 95% B to 5% B from 12 to 12.1 min, and held at 5% B from 12.1 to 15 min. The flow rate was 0.4 mL/min. The sample tray and column compartment were set to 7°C and 30°C, respectively. The ion source settings were capillary voltage, 3500 V; nozzle voltage, 2000 V; fragmentor voltage, 180 V; drying gas and sheath gas temperature, 350°C; drying gas flow, 10 L/min; sheath gas flow, 11 L/min; nebulizer pressure, 60 lb/in2. Q-TOF data was processed using Agilent MassHunter Qualitative Analysis software. Amygdalin (C20H27NO11) and prunasin (C14H17NO6) were observed in the samples with this LC-MS method as [M-H]– at 456.1511 and 294.0983 Da, as well as [M+CH3COO]– at 502.1566 and 340.1038 Da, with a retention time of 2.73 and 3.05 min, respectively. Amygdalin quantification was performed by preparing analytical curves using the area under the amygdalin extracted ion chromatogram peak (20 ppm extraction window) of the following standard solutions prepared from a 1 mM amygdalin stock solution in water: 0.078125, 0.15625, 0.3125, 0.625, 1.25, 2.5, 5, 10, 20, 30, and 40 μM amygdalin. Two analytical curves were prepared: one with the six lower concentrations to calculate amygdalin concentration in 0.1 or 10 mM amygdalin cultures; another curve with the five higher concentrations to calculate amygdalin concentration in 100 mM amygdalin cultures. The linear equations obtained from these analytical curves were used to calculate the concentration of amygdalin in the samples. The concentrations obtained from the linear equation were corrected for the dilution factor. Prunasin quantification was performed similarly, by preparing an analytical curve using the area under the prunasin extracted ion chromatogram peak of the following standard solutions prepared from a 1 mM prunasin stock solution in water: 0.01953125, 0.0390625, 0.078125, 0.15625, 0.3125, 0.625, 1.25, 2.5, 5, and 10 μM prunasin. The linear equation obtained from this analytical curve was used to calculate the concentration of prunasin in the samples. The concentrations obtained from the linear equation were corrected for the dilution factor.
 
-## SDS-PAGE and sample preparation for proteomics analysis
+### SDS-PAGE and sample preparation for proteomics analysis
 
 Bifidobacterium strain wkB204 was cultured in 5 mL of MRS broth at 35°C and 5% CO2 overnight. OD was measured at 600 nm and adjusted to 0.5 with SDM. Bacterial cells were washed two times with SDM and resuspended in SDM. Two-hundred μL aliquots were transferred in three biological replicates to 250 mL culture flasks containing 100 mL of SDM with 10 mM amygdalin, 10 mM glucose, or without a carbon source. Samples were incubated at 35°C and 5% CO2 and OD was measured at 600 nm every day for 7 days. At the end of the experiment, samples were centrifuged at 7800 rpm for 10 min. Spent media were separated from bacterial cells and concentrated to about 10 mL in under vacuum using an Eppendorf Vacufuge (Eppendorf, Enfield, CT, USA). Then, samples were dialyzed three times in 1 L of exchange buffer (10% glycerol, 1 mM MgCl2, 0.1 M NaCl, 1 mM PMSF, and 25 mM Tris pH 8), after which they were further concentrated with centrifugal concentrators (10 kDa MWCO, Millipore Sigma-Aldrich, Burlington, MA, USA) to a final volume of 1.5 mL. Thirty μL of each concentrated sample were run on a Bolt 4–12% Bis-Tris Plus Gel (Thermo Scientific, catalog number: NW04120BOX, log number: 21022470). Then, concentrated samples from amygdalin- and glucose-grown cultures were submitted for proteomics analysis at the Proteomics facility, UT-Austin. The samples were digested with trypsin, desalted and run on the Dionex LC and Orbitrap Fusion 1 for LC-MS/MS with 1 hr run time and processed by the facility using PD 2.2 and Scaffold proteomics software (Proteome Software, Inc, Portland, OR, USA, version 5.1.2). For protein assignment, we used the amino acid sequences predicted from the wkB204 genome combined with a list of common contaminants for the searches. A basic Scaffold analysis was performed using a custom amino acid sequence database covering the genome of wkB204, a reference database for Saccharomyces cerevisiae (because of the yeast extract portion of the SDM used to grow this strain), as well as a list of common contaminants, using min protein: 0.1% false discovery rate.
 
-## Blast search and phylogenetic analysis
+### Blast search and phylogenetic analysis
 
 A local blast was performed to search for homologous proteins of the GH3 that was detected in wkB204 amygdalin-grown cultures. We used the amino acid sequence of wkB204-GH3 as a query to search for homologous proteins in a custom database containing amino acid sequences of several published bee gut bacterial genomes, including 22 bee gut-associated Bifidobacterium strains. We applied a query coverage high-scoring sequence pair percent of 90. wkB204-GH3 and homologous proteins were used to build a phylogenetic tree. Amino acid sequences were aligned using Muscle (Edgar, 2004) and used to infer a maximum-likelihood phylogeny (LG model + Gamma4, 100 bootstrap replicates) with PhyML 3.1 (Guindon et al., 2010) implemented in SeaView (Gouy et al., 2010).
 
-## GH3 gene expression in Bifidobacterium strains
+### GH3 gene expression in Bifidobacterium strains
 
 One-hundred μL of 0.5 OD cultures of Bifidobacterium strains wkB204, wkB344, and wkB338 were transferred in three biological replicates to SDM with 10 mM amygdalin or 10 mM glucose for a final volume of 10 mL. After 5 days, bacterial cultures were centrifuged to separate the supernatant from the cells. Total RNA was extracted from washed bacterial cells using the Quick-RNA Miniprep kit (Zymo Research, Irvine, CA, USA). To that end, bacterial cells were resuspended and lysed in 600 μL of RNA Lysis Buffer, and transferred to a capped vial containing 0.5 mL of 0.1 mm Zirconia beads (BioSpec Products, Bartlesville, OK, USA). Samples were bead-beaten for 2×30 s, centrifuged at 14,000 rpm for 30 s, and transferred to a new 1.5 mL microtube. After this step, extraction followed the protocol provided by Zymo Research. Final RNA samples were dissolved in 50 μL of water and stored at –80°C. RNA concentrations were measured in a Qubit instrument and normalized to 200 ng/μL. Complementary DNA (cDNA) was synthesized using the qScript cDNA Synthesis Kit (QuantaBio, Beverly, MA, USA) following the manufacturer’s instructions, and stored at –20°C. cDNA samples were 10-fold diluted to be used as templates for qPCR analyses.
 
 Specific primers targeting a conserved 124 bp region in the GH3 gene found in Bifidobacterium strains wkB204 and wkB344 (B-GH3-F: 5’-ctaccgcaatcccgacct-3’ and B-GH3-R: 5’-cacctccttgtccactccc-3’) were designed and used to amplify total copies of GH3 gene transcripts in each sample on 384-well plates on a Thermo Fisher QuantStudio 5 instrument. Three technical replicates of 10 μL reactions were carried out for each sample with 5 μL iTaq Universal SYBR Green Supermix (Bio-Rad, Hercules, CA, USA), 0.05 μL (each) 100 μM primer, 3.9 μL H2O, and 1.0 μL template DNA. The cycling conditions consisted of an initial cycle of 50°C for 2 min and 95°C for 2 min, followed by 40 cycles of a two-step PCR of 95°C for 15 s and 60°C for 1 min. Quantification was based on standard curves from amplification of the cloned target sequence in the pGEM-T Easy vector (Promega, Madison, WI, USA). Briefly, genomic DNA of Bifidobacterium strain wkB204 was used as a template to amplify the GH3 gene region of interest (124 bp) using the primers B-GH3-F and B-GH3-R. The purified amplicon was ligated into the pGEM-T Easy vector (Promega, Madison, WI, USA). The recombined vector was purified and transformed into E. coli strain DH5-alpha competent cells via electroporation using the Gene Pulser Xcell Electroporation System (Bio-Rad, Hercules, CA, USA). The recombined vector was then isolated from an overnight culture using the Monarch Plasmid Miniprep Kit (New England BioLabs, Ipswich, MA, USA), digested by the restriction enzyme ApaI (New England Biolabs, Ipswich, MA, USA), purified, quantified in a Qubit 4 fluorometer (Invitrogen, Waltham, MA, USA) and the final concentration was adjusted so it could be used as a standard for qPCRs.
 
-## Cloning and transformation experiments
+### Cloning and transformation experiments
 
 E. coli strain DH5-alpha was used for gene cloning and E. coli strain Rosetta BL21 was used for heterologous expression. LB or MM (Table 3) supplemented with 100 μg/mL ampicillin were used for the cultivation. E. coli strains were always cultured at 37°C overnight. The vector pET25b (Invitrogen, Waltham, MA, USA) was applied for cloning and expression. First, the vector pET25b-empty was transformed into E. coli DH5-alpha cells via electroporation using the Gene Pulser Xcell Electroporation System (Bio-Rad, Hercules, CA, USA). Positive transformants were screened on LB plates with 100 μg/mL ampicillin and by PCR amplification. An overnight culture was used to isolate the vector pET25b-empty (Monarch Plasmid Miniprep Kit, New England BioLabs, Ipswich, MA, USA), which was then dephosphorylated with Antarctic Phosphatase (New England BioLabs, Ipswich, MA, USA) to reduce recyclization. Genomic DNA of Bifidobacterium strains wkB204 and wkB344 were used as templates to amplify their respective amygdalin degrading GH3 enzymes by PCR. Specific primers, GH3-NdeI-F (5’-ttgtttaactttaagaaggagatatacatatggcatcaaggaagttgacagagg-3’) and GH3-HindIII-R (5’-agcccgtttgatctcgagtgcggccgcaagcttacccacggtcaccgtca-3’) were designed to amplify the whole gene encoding the amygdalin-degrading GH3 enzyme. The PCR products were purified and submitted for Sanger sequencing for confirmation. The purified vector pET25b-empty and the PCR product of wkB204-GH3 (or wkB344-GH3) were digested by the restriction enzymes NdeI and HindIII-HF (both from New England Biolabs, Ipswich, MA, USA) and then ligated to construct the recombinant plasmid pET25b-wkB204-GH3 (or pET25b-wkB344-GH3). The sequence-verified recombinant plasmids were purified and transformed into E. coli Rosetta BL21 competent cells via electroporation using the Gene Pulser Xcell Electroporation System (Bio-Rad, Hercules, CA, USA). The empty plasmid was also transformed into E. coli Rosetta BL21 competent cells to be used as a control in the experiments. Positive transformants were screened on LB plates with 100 μg/mL ampicillin and by PCR amplification, and bacterial stocks were made from single cell, overnight cultures.
 
-## GH3 gene expression in transformed E. coli strains
+### GH3 gene expression in transformed E. coli strains
 
 One-hundred μL of 0.5 OD cultures of E. coli Rosetta BL21 cells carrying pET25b-empty, pET25b-wkB204-GH3, or pET25b-wkB344-GH3 were transferred in three biological replicates to 5 mL LB broth supplemented with 100 μg/mL ampicillin and 100 μg/mL isopropyl β-D-1-thiogalactopyranoside (IPTG). Bacterial cultures were grown overnight at 37°C, after which cells were separated from the supernatant by centrifugation. Total RNA was extracted from washed cells using the Quick-RNA Miniprep kit (Zymo Research, Irvine, CA, USA), cDNA was synthesized using the qScript cDNA Synthesis Kit (QuantaBio, Beverly, MA, USA), and qPCR was performed using the primers B-GH3-F and B-GH3-R and following the protocol described in the ‘GH3 gene expression in Bifidobacterium strains’ section.
 
-## Amygdalin and prunasin degradation in cell lysates of transformed E. coli
+### Amygdalin and prunasin degradation in cell lysates of transformed E. coli
 
 In vitro experiments were performed with transformed E. coli Rosetta BL21 cells carrying pET25b-empty, pET25b-wkB204-GH3, or pET25b-wkB344-GH3. To that end, transformants were grown overnight at 37°C in LB supplemented with 100 μg/mL ampicillin and 100 μg/mL IPTG. OD was adjusted to 1 and cells were washed twice with MM (Table 2). Five mL of 1 OD washed bacterial cultures were transferred to 5 mL Falcon tubes, centrifuged for 10 min at 7000 rpm, supernatant was removed, and cells were resuspended in 5 mL MM. Bacterial cells were centrifuged again and media was removed. Washed cells were lysed with 1 mL of B-PER solution, as described above, for 15 min at room temperature, after which 4 mL of MM was added. Samples were filter-sterilized with a 0.22 μm filter and dialyzed in centrifugal concentrators (10 kDa MWCO, Millipore Sigma-Aldrich, Burlington, MA, USA) for 20 min. After dialysis, the final volume of concentrated samples was adjusted to 5 mL with MM. 0.5 mL aliquots of each sample were transferred in three biological replicates to 1.5 mL tubes containing 0.5 mL of 0.2 mM amygdalin or 0.2 mM prunasin in MM to investigate degradation. 0.1 mM amygdalin in fresh MM or 0.1 mM prunasin in fresh MM were used as controls. Samples were incubated at 37°C for 5 days, after which they were 10-fold diluted and submitted for LC-MS analysis.
 
-## In vivo experiment to investigate amygdalin degradation in the bee gut
+### In vivo experiment to investigate amygdalin degradation in the bee gut
 
 Late-stage pupae (with eyes pigmented but lacking movement) of A. mellifera female workers were aseptically removed from a brood frame from a hive kept at UT-Austin. Pupae were placed on Kimwipes in sterile plastic bins and placed in an incubator at 35°C and ~60% relative humidity to simulate hive conditions until emerging as adults. After 3 days, newly emerged workers (NEWs), which lack their normal microbiota, were transferred to cup cages containing sterile sucrose syrup and sterile bee bread. Approximately 400 NEWs were randomly divided into four groups which were fed sterile sucrose syrup and specific treatments as described below. Group 1 was exposed to sterile pollen, and therefore the bees remained as MD. Group 2 was exposed to a fresh bee gut homogenate mixed with sterile pollen, and therefore the bees acquired the normal microbiota. The gut homogenate was prepared by aseptically pulling out the guts from 10 healthy workers from the same hive and mixing with equal proportions of 1× PBS and sterile sucrose syrup (5 mL total volume), and 200 μL of gut homogenate were transferred to sterile pollen and provided to the bees in each cup cage. Groups 3 and 4 were exposed to a Bifidobacterium wkB204 or wkB344 bacterial suspension, respectively. Each bacterial strain was cultured in SDM at 35°C and 5% CO2 overnight. The 600 nm OD of each bacterial culture was measured, cells were washed with 1× PBS, and diluted to a concentration of 0.5 OD in equal proportions of 1× PBS and sterile sucrose syrup. Two-hundred μL of bacterial suspension were transferred to the bee bread provided to the bees in each cup cage. After 5 days, which is sufficient time for establishment of the gut microbiota (Powell et al., 2014), bees were transferred to 0.5 mL vials with tips cut off, then starved for 6 hr, after which they were hand-fed with 5 μL of 1 mM amygdalin in sterile sugar syrup. They were kept in the same vial for 18 hr, after which they were frozen until further processing. The control group consisted of unexposed bees that were mixed with 5 μL of 1 mM amygdalin at the beginning of sample processing to determine the amount of amygdalin that would be detected before any degradation event could occur. Three bees from each group were thawed and aseptically dissected to obtain the following bee body compartments: midgut, hindgut, and bee body carcass. These samples were homogenized with 1 mL LC-MS grade water and submitted for LC-MS analyses.
 
-## In vivo experiment to investigate the effects of amygdalin on honey bees and their gut microbiota
+### In vivo experiment to investigate the effects of amygdalin on honey bees and their gut microbiota
 
 First experiment. A brood frame was collected from a honey bee hive at UT-Austin, transferred to a frame cage and placed in an incubator at 35°C and ~60% relative humidity to simulate hive conditions until adults emerged. One -day-old bees were randomly divided into four groups, each being treated with sucrose syrup, 0.01 mM amygdalin dissolved in sucrose syrup, 0.1 mM amygdalin dissolved in sucrose syrup, or 1 mM amygdalin dissolved in sucrose syrup. A gut homogenate (200 μL) was added to the bee bread provided to each cup cage, enabling colonization by the full gut microbiota, as in Motta and Moran, 2020b. Fifteen bees were sampled from each group after 1 week of treatment and stored at –80°C. Each group consisted of 4 cup cages each containing 40 bees. Survival rates were monitored and dead bees were removed in a daily census.
 
 Second experiment. Two other brood frames were collected from a different hive at UT-Austin, and bees were allowed to emerge under lab conditions similar to the first experiment. One -day-old bees were randomly split into 36 cup cages, with 29–36 bees each, and divided into two groups to be treated (microbiota-colonized) or not (MD) with a gut homogenate solution. Each main group was divided into three subgroups and fed sucrose (control), 0.01 mM amygdalin in sucrose syrup, or 0.1 mM amygdalin in sucrose syrup. Sucrose syrup was filter-sterilized. Survival rates were monitored, and dead bees were removed in a daily census.
 
-## DNA extraction, qPCR analysis, and 16S rRNA amplicon sequencing
+### DNA extraction, qPCR analysis, and 16S rRNA amplicon sequencing
 
 Sampled honey bees from the first experiment were placed in sterile Falcon tubes and transferred to a freezer at –80°C. DNA was extracted from individual guts, following a previously described protocol (Kwong et al., 2017b). Final DNA samples were 10-fold diluted to be used as templates for qPCR analyses, as described in Motta et al., 2018, and for 16S rRNA library preparation and sequencing, as described in Motta et al., 2020a.

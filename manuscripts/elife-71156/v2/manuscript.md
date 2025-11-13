@@ -22,16 +22,16 @@
 
 ### Affiliations
 
-1. https://ror.org/040af2s02 Drug Research Program (DRP) ImmunoViroTherapy Lab (IVT), Division of Pharmaceutical Biosciences, Faculty of Pharmacy, Viikinkaari 5E, University of Helsinki Helsinki Finland
-2. https://ror.org/040af2s02 Helsinki Institute of Life Science (HiLIFE), Fabianinkatu 33, University of Helsinki Helsinki Finland
-3. https://ror.org/040af2s02 Translational Immunology Program (TRIMM), Faculty of Medicine Helsinki University, postal code Haartmaninkatu 8, University of Helsinki Helsinki Finland
+1. Drug Research Program (DRP) ImmunoViroTherapy Lab (IVT), Division of Pharmaceutical Biosciences, Faculty of Pharmacy, Viikinkaari 5E, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+2. Helsinki Institute of Life Science (HiLIFE), Fabianinkatu 33, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+3. Translational Immunology Program (TRIMM), Faculty of Medicine Helsinki University, postal code Haartmaninkatu 8, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
 4. Experimental Hematology Unit, Division of Immunology, Transplantation and Infectious Diseases, IRCCS San Raffaele Scientific Institute, University Vita-Salute San Raffaele Milan Italy
-5. https://ror.org/040af2s02 Digital Precision Cancer Medicine Flagship (iCAN), University of Helsinki Helsinki Finland
-6. https://ror.org/040af2s02 Institute for Molecular Medicine Finland, FIMM, Helsinki Institute of Life Science (HiLIFE), University of Helsinki Helsinki Finland
-7. https://ror.org/040af2s02 Pharmaceutical Biophysics Research Group, Drug Research Program, Faculty of Pharmacy, University of Helsinki Helsinki Finland
+5. Digital Precision Cancer Medicine Flagship (iCAN), University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+6. Institute for Molecular Medicine Finland, FIMM, Helsinki Institute of Life Science (HiLIFE), University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+7. Pharmaceutical Biophysics Research Group, Drug Research Program, Faculty of Pharmacy, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
 8. Valo Therapeutics Oy Helsinki Finland
-9. https://ror.org/04ev03g22 Science for Life Laboratory, Department of Oncology-Pathology, Karolinska Institutet Solna Sweden
-10. https://ror.org/05290cv24 Department of Molecular Medicine and Medical Biotechnology, Naples University “Federico II” Pansini Italy
+9. Science for Life Laboratory, Department of Oncology-Pathology, Karolinska Institutet Solna Sweden ([ROR:04ev03g22](https://ror.org/04ev03g22))
+10. Department of Molecular Medicine and Medical Biotechnology, Naples University “Federico II” Pansini Italy ([ROR:05290cv24](https://ror.org/05290cv24))
 
 † Corresponding author
 
@@ -47,9 +47,17 @@ To the best of our knowledge, the described pipeline covers for the first time a
 
 ## Results
 
-## Immunopeptidomic analysis reveals the MHC-I profile in a preclinical model of colon cancer
+### Immunopeptidomic analysis reveals the MHC-I profile in a preclinical model of colon cancer
 
 The identification and selection of candidate targets followed by the generation of therapeutic cancer vaccines is a scattered rather than a complete workflow. This drawback prompted us to develop a comprehensive pipeline that could cover the major steps in the process. First, we aimed to directly isolate MHC-I-restricted peptides from the tumor surface as they are the key contact points between the tumor cells and the cytotoxic CD8+ T cells (Figure 1, Step 1). Next, the peptides were analyzed by mass spectrometry (Figure 1, Step 2) and the generated list of peptides was investigated with two independent approaches: RNAseq analysis and HEX software (Figure 1, Step 3). The selected peptides were then functionally characterized for their immunogenicity profile in vivo by ELIspot (Figure 1, Step 4) and the best candidates were modified to contain polyK attachment moiety and were analyzed by surface plasmon resonance (SPR) for their binding affinity to the OAd (Figure 1, Step 5). Finally, the peptides were used in our PeptiCRAd cancer vaccine platform (Figure 1, Step 6). As we sought to investigate whether the proposed pipeline could be applied for the development of therapeutic cancer vaccines, we selected the known immunogenic model CT26 (Lechner et al., 2013) that expresses high surface level of MHC-I as shown in our flow cytometry data (Figure 1—figure supplement 1). We immunopurified MHC-I-restricted peptides and analyzed the eluted peptides by tandem mass spectrometry. By using the murine reference proteome and applying a false discovery rate (FDR) threshold of 5% for peptide identification, a total of 8834 unique peptides were identified (Figure 2A). In order to assess the overall performance of the immunopurification of the MHC-I-restricted peptides, we carefully investigated the presence of contaminants in the immunopurified peptides. Among those, the 7-13mers accounted for 5434 peptides (65% of the total eluted peptides) derived from 2218 unique source proteins (Figure 2A). The peptides showed the typical amino acid length distribution profile with the 9mers as the most enriched fraction, representing 21% of the total amount of peptides (Figure 2B). Next, the analysis of binding affinity to MHC-I showed that 81% (1413 of 1752) of 9mers were binders either for H2Kd or H2Dd (according to NetMHC4.0, applied rank <2%) with 62% of the binders showing preference for the H2Kd allele (Figure 2C). Moreover, Gibbs analysis was used to deconvolute the consensus binding motifs of respective MHC-I alleles from the eluted 9mer peptides; these clustered in two distinct groups, with a preference for reduced amino acid complexity for residues at positions P2 and P9, matching remarkably well with the known motifs for H2Kd and H2Dd (Figure 2D). Overall, the analysis outcome was similar to published dataset (Schuster et al., 2018) (amino acidic length distribution, Gibbs clustering profile, amount of binders), confirming the good quality of the ligandome landscape identified.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig1-v2.jpg)
+
+**Figure 1.:** Major histocompatibility complex (MHC) I peptides are immunopurified from the surface of tumor cells (Step 1). Next, the peptides are analyzed by mass spectrometry (Step 2) and the generated list of peptides is investigated with two main approaches: RNAseq analysis and HEX software (Step 3). The selected peptides then go through a functional characterization for their immunogenicity profile in vivo through enzyme-linked immunospot (ELISpot) assay (Step 4) and the best candidates are poly-lysine-modified and analyzed by surface plasmon resonance (SPR) for their binding affinity to the oncolytic adenovirus (OAd) (Step 5). Finally, the peptides are used to decorate OAd to generate therapeutic cancer vaccine (PeptiCRAd) and tested in tumor-bearing mice (Step 6).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The frequency and the mean fluorescent intensity (MFI) are shown without or upon IFN-γ stimulation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig2-v2.jpg)
 
@@ -57,9 +65,21 @@ The identification and selection of candidate targets followed by the generation
 
 Then, we aimed to investigate whether the MHC-I source proteins identified among the binders (9mers) were attributable to a specific biological process. Indeed, MHC-I peptides are predominantly derived from cytosolic/nuclear proteins, which normally do not intersect the endocytic compartment and are mainly involved in maintaining the structure of the cell (cell proliferation, differentiation, signaling, translation) (Adamopoulou et al., 2013). To this end, we performed a Gene Ontology (GO) enrichment analysis. As expected, the biological process highlighted the enrichment in pathways that comprise regulation of chromosome organization, DNA repair, ribosome biogenesis, RNA splicing, DNA-protein interactions, and cytoskeleton organization (Figure 3A). Moreover, the linkage between the genes and the biological process depicted an overrepresentation of epigenetic regulators (e.g., histones, DNMT1) (Figure 3B, Figure 3—figure supplement 1), in line with preceding reports in the literature (Löffler et al., 2018). The cellular component (CC) and molecular functions (MFs) confirmed the nature of the source proteins, showing an enrichment, for instance, in nucleosome and chaperone proteins, respectively; these are well-known sources of MHC-I ligands (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig3-v2.jpg)
+
+**Figure 3.:** (A) GO enrichment was evaluated by biological process (BP); adjusted p-values of the first 20 statically relevant BPs are depicted as color gradient, and the respective number of genes is shown as bar plots. (B) Genes and BP linkages are summarized in a cnetplot graph. Each color line represents a different BP category, and the bubble size symbolizes the number of genes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The biological process analysis of the source proteins was performed, and the first 20 biological processes with the respective gene names are shown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Dot plot showing enrichment of GO biological process (BP), cellular components (CCs), and molecular functions (MFs); adjusted p-values of the first 10 statically relevant terms are depicted as color gradient.
+
 Overall, these analyses assessed and demonstrated the reliability of the generated ligandome dataset, confirming the robustness of the peptides’ list as true ligands and allowing us to proceed further with the downstream applications.
 
-## In silico prediction of candidate targets based on RNAseq analysis and similarity to pathogen antigens
+### In silico prediction of candidate targets based on RNAseq analysis and similarity to pathogen antigens
 
 We carefully examined the list of generated peptides to check for the presence of contaminants, and based on the aforementioned analysis, the eluted peptides resembled the MHC-I ligandome landscape. As we sought to generate and develop an effective therapeutic cancer vaccine, we next moved to select the best peptide candidates that could elicit a strong adaptive immune response. However, the criteria for selecting and narrowing down the number of peptide targets are still challenging for the field, usually involving laborious and time-consuming approaches and remaining therefore a critical question to address (Laumont et al., 2018). To overcome this limitation, we analyzed the list of peptides adopting two parallel approaches. The first one is based on the RNA expression level of the source proteins of the MHC-I ligands. With this mind, we first identified the transcripts (and thus the corresponding source proteins) overrepresented in CT26 tumor cell line compared to normal cells. The RNAseq profile of the syngeneic medullary thymic epithelial cells (mTECs) and the colon Balb/c was used as normal control. Thus, we analyzed the differential gene expression (DESeq) profile between the CT26 and mTEC (Figure 4A) and CT26 and colon (Figure 4B) (standard cutoff values of fold change 1.5 and a padj-value of 0.05, red square); then, we searched the source proteins of the 9mers ligands derived from our previously generated ligandome dataset (red dots in Figure 4A and B) in the DESeq data for each expression profile analysis. In order to identify tumor-associated antigens (TAAs), we selected the liagandome source proteins for which the corresponding transcripts were overexpressed in both DESeq analyses (Figure 4A and B, red dots within the red square). Finally, we further investigated the chosen candidates, prioritizing the peptides with source proteins that have transcript-level high fold change for both DESeq analyses and simultaneously a strong binding affinity for both H2Kd and H2Dd allotypes (cutoff values -log10 0.5 H_Average ranks and third quartile of average fold change; Figure 4C), generating the final list of candidates (Supplementary file 1).
 
@@ -81,9 +101,29 @@ The splenocytes from those mice were harvested and tested for IFN-γ production 
 
 In summary, the in vitro and in vivo validation and characterization guided the selection of candidate peptides to be used with our PeptiCRAd technology to elicit antitumor T-cell response.
 
-## PeptiCRAd platform induces systemic antitumor immune response controlling the tumor growth of distant untreated cancer lesion in a murine model of colon carcinoma
+### PeptiCRAd platform induces systemic antitumor immune response controlling the tumor growth of distant untreated cancer lesion in a murine model of colon carcinoma
 
 By applying RNAseq and HEX software followed by an in vivo functional characterization, we identified six peptides to be tested (Supplementary file 4, peptides 1–6) in the PeptiCRAd cancer vaccine platform. The adenovirus used in the PeptiCRAd platform was VALO-mD901, genetically modified to express murine OX40L and CD40L and previously shown to elicit tumor growth control and systemic antitumor response in a murine model of melanoma (Ylösmäki et al., 2021). Therefore, immunocompetent Balb/c mice were subcutaneously injected with the syngeneic CT26 tumor cells in the left and right flanks (day 0, Figure 7A). When the tumors were established (day 7, Figure 7A), VALO-mD901 was coated with a pair of each polyK-peptide in our list (PeptiCRAd1, PeptiCRAd2, PeptiCRAd3, Supplementary file 5) and injected intratumorally only in the right tumor. PeptiCRAd4 consisted of VALO-mD901 coated with gp70423–431 (AH1-5); mock and VALO-mD901 groups were used as controls. PeptiCRAd1 and PeptiCRAd2 improved tumor growth control as well as VALO-mD901 in the injected lesions (Figure 7B, right panel) as depicted also in the single-tumor growth curves per each mouse per each treatment group (Figure 7—figure supplement 1). In addition, PeptiCRAd1 (PC1) showed a clear trend towards an improved antitumor growth control in the untreated tumor in contrast to all other groups (Figure 7B, left panel). As we sought to investigate the immunological modulation due to the treatments, tumors were harvested for downstream flow cytometric analysis. Interestingly, PeptiCRAd1 showed higher CD8+/CD4+ T-cell ratio (Figure 8A) within the TME of the treated tumor (right side) well in line with an increased CD8+ T-cell infiltration (Figure 8B) in both treated (right side) and untreated (left side) cancer lesions. Moreover, the improved tumor growth control achieved in the PeptiCRAd1 group correlated with the upregulation of the migratory marker CXCR4 in the CD8+ T-cell population in both treated and untreated tumors (Figure 8C) and upregulation of effector marker CXCR3 in the CD8+ T-cell population in the treated lesions (Figure 8D). Exhaustion markers PD1 and TIM3 were also analyzed. The expression of PD1 in the CD8+ T-cell population showed a tendency to be upregulated in both treated and untreated cancer lesions (Figure 8—figure supplement 1A), suggesting the presence of antigen-experienced T-cell response. On the other hand, exhausted CD8+ T cells phenotypically defined as PD1+ and TIM3+ were downregulated in the untreated lesions; the same tendency was also seen in the treated tumors (Figure 8—figure supplement 1B). We further investigated the CD4+ T-cell compartment. Our oncolytic cancer vaccine treatment induced a modest downregulation of the CD4+ T cells in both treated and untreated tumors (Figure 8—figure supplement 1C) in line with the increase of CD8+ T cells as mentioned before. The CD4+ population showed upregulation of CXCR4 in the treated tumors in PeptiCRAd1, PeptiCRAd2, PeptiCRAd3 compared to the VALO-mD901-treated tumors; however, no differences were observed when compared to the mock group. Even though the effector marker CXCR3 was downregulated in the untreated and treated tumors, PeptiCRAd1 showed the tendency in upregulating CXCR3 in the untreated lesion (Figure 8—figure supplement 1C). No statistical differences were observed in regard to the antigen experienced or exhausted phenotypes compared to the control groups (Figure 8—figure supplement 1C). According to previous studies, the effectiveness of the immune therapy is associated with the induction of T central memory (Tcm) or T stem cell memory (Tscm)-like CD8+ T cells in the peripheral lymphoid tissues. The Tscm population has been reported as novel memory T-cell subgroup (CD44low CD62L+) characterized by high expression amount of stem cell antigen 1 (SCA-1) and capable of self-renew (Gattinoni et al., 2017; Wang et al., 2021; Zhang et al., 2005). This latter characteristic makes the Tscm T CD8+ cells a desirable population to develop upon vaccination (Gattinoni et al., 2017). In line with that, we investigated the expression of SCA-1 in CD44low CD62L+ CD8+ T cells in spleens harvested from mock-, VALO-mD901-, and PeptiCRAd1-treated groups. According to the gating strategy reported in Figure 8—figure supplement 1A, we observed that SCA-1 showed a tendency to be upregulated in spleens from mice treated with PeptiCRAd1 (Figure 8—figure supplement 2B), suggesting the possible generation of a long-term CD8+ T-cell population in mice upon oncolytic vaccine treatment. No differences were instead observed in CD44+ CD62L+ (Tcm) (Figure 8—figure supplement 2C) or CD44+ CD62L- (T effector memory) (Figure 8—figure supplement 2D) compartments.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig7-v2.jpg)
+
+**Figure 7.:** (A) A schematic representation of the animal experiment setting is depicted. Immunocompetent Balb/c mice were subcutaneously injected with the syngeneic tumor model CT26 in the left (0.6 × 106 cells) and right flanks (1 × 106). PeptiCRAd was intratumorally administrated four times, 2 days apart. (B) The CT26 tumor growth was followed until the end of the experiment, and the tumor size is presented as the mean ± SEM. Statistically significant difference was assessed with two-way ANOVA (*p<0.05; ***p<0.001; ****p<0.0001; ns, nonsignificant).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** A threshold of 138 mm3 (right tumor) and 278 mm3 (left tumor) was set to define the percentage of mice responding to the different therapies (dotted line). The percentage of responders in each treatment group is shown on the right side of the dotted line. (The threshold was defined as the average of the tumor size on the last day of the experiment in the treatment control group ValomD901 and calculated separately for the right and left tumors.)
+
+![Figure 8.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig8-v2.jpg)
+
+**Figure 8.:** (A–D) The treated (right side) and untreated tumors (left side) were harvested at the end of the experiment and analyzed for the CD8+/CD4+ ratio (A) and the frequency of CD8+ (B), CD8+ CXCR4+ (C), and CD8+ CXCR3+ (D) in the tumor microenvironment (TME). All the data are plotted as dot plot for each mouse and each treatment group. The significance was assessed by one-way ANOVA and Tukey’s correction (*p<0.05; ***p<0.001; ****p<0.0001; ns, nonsignificant).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The antigen experience (PD1+TIM3-) (A)/exhaustion profile (PD1+TIM3+) (B) of CD8+ T cells in the tumor microenvironment (TME) was investigated by flow cytometry analysis. (C) The frequency of CD4+, CD4+CXCR4+, CD4+CXCR3+, CD4+PD1+TIM3, and CD4+PD1+TIM3+ in the TME is shown. All the data are plotted as dot plot for each mouse, each tumor, and each treatment group. The significance was assessed by one-way ANOVA and Tukey’s correction (*p<0.05; ***p<0.001; ****p<0.0001; ns, nonsignificant).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/71156/elife-71156-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Representative flow cytometry staining from spleens illustrating the gating strategy for identifying SCA-1+CD44-CD62L+CD8+ T-cell population (A). (B–D) The spleens were harvested at the end of the experiment and analyzed for the frequency of SCA1+ (B), CD44+CD62L+ (C), and CD44+CD62L- (D) CD8+ T-cell population. All the data are plotted as dot plot for each mouse and each treatment group. The significance was assessed by one-way ANOVA and Tukey’s correction (*p<0.05; ***p<0.001; ****p< 0.0001; ns, nonsignificant).
 
 Altogether, the data showed that PeptiCRAd 1 induced remodulation of the immune cell infiltration within the TME, in particular influencing the CD8+ T-cell population.
 
@@ -105,7 +145,7 @@ The overall results demonstrated the feasibility of applying the described pipel
 
 ## Methods
 
-## Cell lines and reagents
+### Cell lines and reagents
 
 Murine colon carcinoma CT26 cell line was purchased from ATCC (ATTC CRL-2639) and cultured in RPMI-1640 supplemented with 1% GlutaMAX (Gibco, Invitrogen, Carlsbad, CA), 10% heat-inactivated fetal bovine serum (Gibco), and 1% penicillin-streptomycin (10,000 U/mL) (Gibco). The cells were cultivated at 37°C, 5% CO2 in a humidified atmosphere and routinely tested for mycoplasma contamination.
 
@@ -117,19 +157,19 @@ All peptides were purchased from Zhejiang Ontores Biotechnologies (Zhejiang, Chi
 
 The following peptides were used through the animal study and purchased from PepScan (LelyStand, the Netherlands): KKKKKKSYLPPGTSL (Mavs), KKKKKKRYLPAPTAL (Fanca), KKKKKKYIPAARHL (Zw10), KKKKKKLYKESLSRL (Myh14), KKKKKKYLNVREAV (Chac1), KKKKKKKFYATIIHDL (Ndst3), SYLPPGTSL (Mavs), RYLPAPTAL (Fanca), KYIPAARHL (Zw10), LYKESLSRL (Myh14), KYLNVREAV (Chac1), annd FYATIIHDL (Ndst3).
 
-## Oncolytic adenovirus
+### Oncolytic adenovirus
 
 In this study, the virus VALO-mD901 was used, and it was generated according to Ylösmäki et al., 2021. Briefly, VALO-mD901 is a conditionally replicating adenovirus serotype 5 with adenovirus 3 fiber knob modification and 24-base pair deletion of the gene E1A. The E3 region was replaced with human CMV promoter region, murine OX40L, 2A self-cleaving peptide sequence, murine CD40Lgene, and β-rabbit globin polyadenylation signal. The VP concentration was measured at 260 nm, and infections units were determined by immunocytochemistry by staining the hexon protein on infected A549 cells.
 
-## IFN-γ ELISpot
+### IFN-γ ELISpot
 
 IFN-γ ELISpot assays were performed using a commercially available mouse ELISpot reagent set (ImmunoSpot, Bonn, Germany), and 20 ng/µL of each peptide was tested in in vitro stimulations of 3 × 105 splenocytes for each well at 37 °C for 72 hr. Spots were counted using an ELISpot reader system (ImmunoSpot).
 
-## PeptiCRAd complex formation
+### PeptiCRAd complex formation
 
 The PeptiCRAd complex was prepared by mixing the oncolytic adenovirus VALO-mD901 and each peptide with a polyK tail. We mixed polyK-extended epitopes with VALO-mD901 for 15 min at room temperature prior to treatments with the PeptiCRAd complexes. More details about the stability and formation of the complex can be found in our previous study (Capasso et al., 2016).
 
-## Animal experiment
+### Animal experiment
 
 All animal experiments were reviewed and approved by the Experimental Animal Committee of the University of Helsinki and the Provincial Government of Southern Finland (license number ESAVI/11895/2019). 4- to 6-week-old female Balb/cOlaHsd mice were obtained from Envigo (Laboratory, Bar Harbor, Maine, UK).
 
@@ -137,52 +177,52 @@ For the pre-immunization experiment, mice (n = 3 per group) were allocated in ni
 
 For the tumor-bearing mice experiment, 1 × 106 and 6 × 105 CT26 cells were injected subcutaneously into the right and left flanks, respectively. A complete randomization was done on the day of the treatment. Details about the schedule of the treatment can be found in the figure legends. Viral dose was 1 × 109 vp/tumor complexed with 20 µg of a single peptide or with 10 µg + 10 µg mixture of two peptides.
 
-## Flow cytometry
+### Flow cytometry
 
 The antibodies were TruStain FcX anti-mouse CD16/32 (BioLegend), APC-H2Kd (BioLegend), BV711-CD3 (BD Horizon), PE-CF594-CD4 (BD Horizon), FITC-NK1.1 (Invitrogen), PE-PD1 (BioLegend), APC-CXCR3 (BD Pharmigen), PE-CY7-TIM3 (BioLegend), BV510-CD8 (BD Horizon), and V450-CXCR4 (BD Horizon).
 
 The data were acquired using BD LSRFortessa flow cytometer and analyzed using FlowJo software v9 (Ashland, OR).
 
-## Purification and concentration of MHC-I peptides
+### Purification and concentration of MHC-I peptides
 
 MHC class I peptides were immunoaffinity purified from the CT26 mouse cell line using anti-mouse MHC class I (clone 34-1-2S, BioXCell, BE0180, Lebanon, USA). For sample preparation, the snap-frozen cell pellet (1 × 108 cells for each replicate, in total six replicates) was incubated for 2 hr at 4°C in lysis buffer. The lysis buffer contained 150 mM NaCl, 50 mM Tris-HCl, pH 7.4, protease inhibitors (A32955, Thermo Scientific Pierce, Waltham, MA), and 1% Igepal (I8896, Sigma-Aldrich, St. Louis, MO). The lysates were first cleared by low-speed centrifugation for 10 min at 500 × g, and then the supernatant was centrifuged for 30 min at 25,000 × g. Next, MHC-I complexes were immunoaffinity purified loading the cleared lysate to the immunoaffinity column (AminoLink Plus Immobilization, Pierce) with covalently linked antibody according to the manufacturer’s instructions. Following binding, the affinity column was washed using seven column volumes of each buffer (150 mM NaCl, 20 mM Tris-HCl; 400 mM NaCl, 20 mM Tris-HCl; 150 mM NaCl, 20 mM Tris-HCl, and 20 mM Tris-HCl, pH 8.0) and bound complexes were eluted in 0.1 N acetic acid.
 
 Eluted HLA peptides and the subunits of the HLA complexes were desalted using SepPac-C18 cartridges (Waters) according to the protocol previously described by Bassani-Sternberg, 2018. Briefly, the cartridge was prewashed with 80% acetonitrile in 0.1% trifluoroacetic acid (TFA) and then with 0.1% TFA. The peptides were purified from the MHC-I complex by elution with 30% acetonitrile in 0.1% TFA. Finally, the samples were dried using vacuum centrifugation (Eppendorf).
 
-## Algorithms used for prediction of peptide ligands
+### Algorithms used for prediction of peptide ligands
 
 Affinity to the H2Kd/H2Dd alleles was predicted for all eluted peptides identified in the CT26 cell line using NetMHC4.0 (Andreatta and Nielsen, 2016, Nielsen et al., 2003). The threshold for binding was set to rank 2% to include only the binding partners.
 
-## Gibbs clustering analysis
+### Gibbs clustering analysis
 
 Clustering of peptides into groups based on sequence similarities was performed using the GibbsCluster-2.0 tool with the default settings (Andreatta et al., 2017; Andreatta et al., 2013).
 
-## GO enrichment analysis
+### GO enrichment analysis
 
 ClusterProfiler Bioconductor package (v. 3.12.0) in the RStudio server environment (v. 3.6.0) (Yu et al., 2012) was used for the functional annotation and visualization. ClusterProfiler implements a hypergeometric test to evaluate the statistical enrichment of the input gene list over the desired functional classes.
 
-## DESeq profile
+### DESeq profile
 
 Raw sequence data for colon tissue (source: GEO accession #GSE92563) and mTEC/CT26 (source: GEO accession: #GSE111092) were mapped to the mouse genome Mus_musculus GRCm38.95 using the online tool Chipster (Kallio et al., 2011).
 
 Briefly, FastQ files were combined for each sample sequencing using the function ‘Make a list of file names: paired end data.’ The alignment to the reference genome and the count aligned reads per gene was done respectively with HISAT2 and HTSeq. Finally, the differential expression analysis used DESeq2, applying a cutoff for the adjusted p-value of 0.05 (Benjamini–Hochberg adjusted p-value). The ‘MultiQC function’ was used to assess the quality of the FastQ files.
 
-## LC-MS analysis of MHC-I peptides
+### LC-MS analysis of MHC-I peptides
 
 Each dry sample was dissolved in 10 μL of LCMS solvent A (0.1% formic acid) by dispensing/aspirating 20 times with the micropipette. The nanoElute LC system (Bruker, Bremen, Germany) injected and loaded 10 μL of the sample directly onto the analytical column (Aurora C18, 25 cm long, 75 µm ID, 1.6 µm bead size, Ionopticks, Melbourne, Australia) constantly kept at 50°C by a heating oven (PRSO-V2 oven, Sonation, Biberach, Germany). After washing and loading the sample at a constant pressure of 800 bar, the LC system started a 30 min gradient from 0% to 32% solvent B (acetonitrile, 0.1% formic acid), followed by an increase to 95% B in 5 min, and finally a wash of 10 min at 95% B, all at a flow rate of 300 nL/min. Online LC-MS was performed using a Tims TOF Pro mass spectrometer (Bruker) with the CaptiveSpray source, capillary voltage 1500 V, dry gas flow of 3 L/min, dry gas temperature at 180°C. MS data reduction was enabled. Mass spectra peak detection maximum intensity was set to 10. Mobilogram peak detection intensity threshold was set to 5000. Mass range was 300–1100 m/z, and mobility range was 0.6–1.30 V.s/cm2. MS/MS was used with three PASEF (parallel accumulation – serial fragmentation) scans (300 ms each) per cycle with a target intensity of 20,000 and intensity threshold of 1000, considering charge states 0–5. Active exclusion was used with release after 0.4 min, reconsidering precursor if the current intensity is greater than fourfold the previous intensity, and a mass width of 0.015 m/z and a 1/k0 width of 0.015 V.s/cm2. Isolation width was defined as 2.00 m/z for mass 700 m/z and 3.00 m/z for mass 800 m/z. Collision energy was set as 10.62 eV for 1/k0 0.60 V.s/cm2 and 51.46 eV for 1/k0 1.30 V.s/cm2. Precursor ions were selected using 1 MS repetition and a cycle overlap of 1 with the default intensities/repetitions schedule.
 
-## Proteomics database search
+### Proteomics database search
 
 All MS/MS spectra were searched by PEAKS Studio X+ (v10.5 build 16 October 2019) using a target-decoy strategy. The database used was the Swissprot Mouse protein database (including isoforms, 25,284 entries, downloaded from uniprot.org on 27 November 2019).
 
 A precursor mass tolerance of 20 ppm and a product mass tolerance of 0.02 Da for CID-ITMS2 were used. Enzyme was none, digest mode unspecific, and oxidation of methionine was used as variable modification, with max three oxidations per peptide. An FDR cutoff of 1% was employed at the peptide level. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD026463.
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 Measurements were performed using a multiparametric SPR Navi 220A instrument (Bionavis Ltd, Tampere, Finland). Phosphate-buffered saline (PBS) (pH 7.4) was used as a running buffer, a constant flow rate of 20 µL/min was used throughout the experiments, and temperature was set to +20°C. Laser light with a wavelength of 670 nm was used for surface plasmon excitation and analysis. APTES-coated Au-SiO2 sensor slides were used to immobilize VALO-mD901 viruses on the sensors for evaluating peptide affinity and assessing the number of peptides per VALO-mD901 virus. The APTES-coated Au-SiO2 was prepared by first activating its surface by 5 min of oxygen plasma treatment followed by incubating the sensor in 50 mM APTES in isopropanol for 4 hr, thus rendering the SPR sensor highly positively charged. The sensor was then washed and placed into the SPR device. The VALO-mD901 viruses were immobilized in situ on the sensor surface by injecting approximately 4.96 × 1011 vp/mL in PBS (pH 7.4) for 10 min, followed by a 10 min wash with PBS. For testing the interaction between various peptides and the immobilized VALO-mD901 viruses, 100 µM of the tested peptides were injected onto the viruses.
 
 The SPR responses measured during virus immobilization as well as peptide interactions were used to estimate how many peptides were adsorbed per virus. This estimation is based on geometrical calculations including the SPR detection area (AS = πr2, where r = 0.5 mm), diameter of the virus (d = 100 nm), footprint area one virus covers on the SPR sensor (AV = πr2, where r = 50 nm), SPR signal response for a sensor fully covered with viruses (Δ° = 1.4°), percent coverage of viruses in the detection area (C(%) = (measured SPR response)/(SPR response for full layer of viruses, i.e., 1.4°)), area covered by viruses in the detection area (AV,cov = AS × C(%)), number of viruses in detection area (NV = AV, cov/AV), mass/area of peptides determined from the corresponding SPR response (m/A = measured SPR response × 660 ng/cm2), mass of peptides in the detection area (mP = m/A × AS), and the number of peptides in the detection area (NP = [(mP/MP) × NA], where MP is the molecular weight of the peptide and NA is the Avogadro constant).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism 9.0 software (GraphPad Software Inc). Details about the statistical tests for each experiment can be found in the corresponding figure legends.

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.12631.001 Toc75 plays a central role in chloroplast biogenesis in plants as the membrane channel of the protein import translocon at the outer envelope of chloroplasts (TOC). Toc75 is a member of the Omp85 family of bacterial and organellar membrane insertases, characterized by N-terminal POTRA (polypeptide-transport associated) domains and C-terminal membrane-integrated β-barrels. We demonstrate that the Toc75 POTRA domains are essential for protein import and contribute to interactions with TOC receptors, thereby coupling preprotein recognition at the chloroplast surface with membrane translocation. The POTRA domains also interact with preproteins and mediate the recruitment of molecular chaperones in the intermembrane space to facilitate membrane transport. Our studies are consistent with the multi-functional roles of POTRA domains observed in other Omp85 family members and demonstrate that the domains of Toc75 have evolved unique properties specific to the acquisition of protein import during endosymbiotic evolution of the TOC system in plastids. DOI: http://dx.doi.org/10.7554/eLife.12631.001
+Toc75 plays a central role in chloroplast biogenesis in plants as the membrane channel of the protein import translocon at the outer envelope of chloroplasts (TOC). Toc75 is a member of the Omp85 family of bacterial and organellar membrane insertases, characterized by N-terminal POTRA (polypeptide-transport associated) domains and C-terminal membrane-integrated β-barrels. We demonstrate that the Toc75 POTRA domains are essential for protein import and contribute to interactions with TOC receptors, thereby coupling preprotein recognition at the chloroplast surface with membrane translocation. The POTRA domains also interact with preproteins and mediate the recruitment of molecular chaperones in the intermembrane space to facilitate membrane transport. Our studies are consistent with the multi-functional roles of POTRA domains observed in other Omp85 family members and demonstrate that the domains of Toc75 have evolved unique properties specific to the acquisition of protein import during endosymbiotic evolution of the TOC system in plastids.
 
 ## Introduction
 
@@ -39,61 +39,435 @@ The relationship between Toc75 and other Omp85 superfamily members raises intere
 
 ## Results
 
-## POTRA domains are required for Toc75 function
+### POTRA domains are required for Toc75 function
 
-To investigate the role of POTRA domains in the function of Toc75, we introduced a series of in-frame internal deletion mutations in a
+To investigate the role of POTRA domains in the function of Toc75, we introduced a series of in-frame internal deletion mutations in a TOC75-III genomic construct to encode proteins lacking one (Toc75ΔP1), two (Toc75ΔP1-2) or all three (Toc75ΔP1-3) predicted POTRA domains (Figure 1A), and tested their ability to complement the lethal phenotype of the toc75-III-1 null mutant. The TOC75-III genomic fragment retains both the native promoter and introns and was previously shown to complement toc75-III-1 (Shipman-Roston et al., 2010). Heterozygous toc75-III-1 plants were transformed with a wild-type TOC75 gene construct (TOC75), TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3. Transformants were selected for hygromycin resistance linked to the toc75-III-1 T-DNA insertion and for the DsRed fluorescence marker linked to the TOC75 and POTRA-deletion constructs. The presence of TOC75, TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 (Figure 1B) and the toc75-III-1 allele (data not shown) was confirmed by PCR of genomic DNA in T3 transformants homozygous for the DsRed marker. Plants homozygous for the TOC75, TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 transgenes were selected in the heterozygous toc75-III-1 (toc75III-1[+/-]) background, and the progeny of these plants were segregated to test for complementation of the lethal phenotype of toc75-III-1 homozygous plants. At least five independent lines were selected for each construct. The segregation analysis of representative T3 lines is shown in Table 1. As expected, toc75-III-1(+/-) progeny carrying the homozygous TOC75 wild type transgene segregated at a near 3:1 ratio of hygromycin resistant:sensitive plants, consistent with complementation of the toc75-III-1 insertion (Baldwin et al., 2005, Shipman-Roston et al., 2010) (Table 1A). Furthermore, plants homozygous for both toc75-III-1 and TOC75 alleles (toc75-III-1[+/+] TOC75 [+/+]) could be recovered (Table 1A), indicating complementation of the lethal phenotype. By contrast, progeny of toc75-III-1(+/-) lines homozygous for the TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 deletion constructs segregated at 2:1 or lower ratios of hygromycin resistant:sensitive plants, indicating that the POTRA deletions were unable to complement toc75-III-1 (Table 1B). No homozygous toc75-III-1 lines expressing the POTRA-deletion constructs were recovered. On the basis of these data, we conclude that the POTRA domains are required for Toc75 function.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig1-v1.jpg)
 
-**Figure 1.:** TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 in toc75-III-1 plants.(A) Schematic diagram of Toc75 and Toc75ΔP1, Toc75ΔP1-2 or Toc75ΔP1-3 proteins used in this study. The dashed line represents the deleted POTRA domain region in various constructs. The numbers refer to the amino acid position, with 1 indicating the N-terminal residue of mature Toc75. (B) PCR confirmation of the genotypes of heterozygous toc75-III-1 plants transformed with TOC75 and TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 constructs. Primers spanning the genomic regions encoding POTRA-1, -2 or -3 were used to distinguish between TOC75 and TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 (Table 2). The approximate positions of the primers are indicated by the forward and reverse arrows. The positions of the PCR products for TOC75 and TOC75ΔP1 (ΔP1), TOC75ΔP1-2 (ΔP1-2) and TOC75ΔP1-3 (ΔP1-3) are indicated to the right of the figure. (C) Visual phenotypes of 7- and 22-day old TOC75, TOC75ΔP1#2, TOC75ΔP1-2#2 and TOC75ΔP1-3#2 (7-day only) plants grown on soil. Bars = 1 cm (D) Chlorophyll content of 22-day old TOC75, TOC75ΔP1#2, TOC75ΔP1-2#2 plants.DOI: http://dx.doi.org/10.7554/eLife.12631.003
+**Figure 1.:** (A) Schematic diagram of Toc75 and Toc75ΔP1, Toc75ΔP1-2 or Toc75ΔP1-3 proteins used in this study. The dashed line represents the deleted POTRA domain region in various constructs. The numbers refer to the amino acid position, with 1 indicating the N-terminal residue of mature Toc75. (B) PCR confirmation of the genotypes of heterozygous toc75-III-1 plants transformed with TOC75 and TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 constructs. Primers spanning the genomic regions encoding POTRA-1, -2 or -3 were used to distinguish between TOC75 and TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 (Table 2). The approximate positions of the primers are indicated by the forward and reverse arrows. The positions of the PCR products for TOC75 and TOC75ΔP1 (ΔP1), TOC75ΔP1-2 (ΔP1-2) and TOC75ΔP1-3 (ΔP1-3) are indicated to the right of the figure. (C) Visual phenotypes of 7- and 22-day old TOC75, TOC75ΔP1#2, TOC75ΔP1-2#2 and TOC75ΔP1-3#2 (7-day only) plants grown on soil. Bars = 1 cm (D) Chlorophyll content of 22-day old TOC75, TOC75ΔP1#2, TOC75ΔP1-2#2 plants.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** toc75-III-1 lines expressing TOC75ΔP1 or TOC75ΔP1-2.Visual phenotypes of 7- and 22-day old TOC75, TOC75ΔP1 and TOC75ΔP1-2 plants grown on soil. Bars = 1 cmDOI: http://dx.doi.org/10.7554/eLife.12631.004
+**Figure 1—figure supplement 1.:** Visual phenotypes of 7- and 22-day old TOC75, TOC75ΔP1 and TOC75ΔP1-2 plants grown on soil. Bars = 1 cm
+
+**Table 1.**
+ Segregation analysis of toc75-III-1 plants transformed with full-length and POTRA deletion constructs of Toc75 expressed under the TOC75 promoter.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parental plants</th>
+      <th>Hygromycin resistant (R)</th>
+      <th>Hygromycin sensitive (S)</th>
+      <th>R:S ratio</th>
+      <th>χ2- valuea</th>
+      <th>p0.05-valueb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-)</td>
+      <td>76</td>
+      <td>41</td>
+      <td>1.85</td>
+      <td>0.18</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75 (+/+)</td>
+      <td>82</td>
+      <td>30</td>
+      <td>2.73</td>
+      <td>0.19</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/+) TOC75 (+/+)</td>
+      <td>119</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>B.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75ΔP1(+/+)#1</td>
+      <td>79</td>
+      <td>38</td>
+      <td>2.08</td>
+      <td>3.49</td>
+      <td>0.062</td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75ΔP1-2(+/+)#1</td>
+      <td>76</td>
+      <td>39</td>
+      <td>1.95</td>
+      <td>4.87</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75ΔP1-3(+/+)#1</td>
+      <td>72</td>
+      <td>35</td>
+      <td>2.06</td>
+      <td>3.39</td>
+      <td>0.065</td>
+    </tr>
+    <tr>
+      <td>C.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75ΔP1(+/+)#2</td>
+      <td>67</td>
+      <td>48</td>
+      <td>1.4</td>
+      <td>17.19</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75ΔP1-2(+/+)#2</td>
+      <td>64</td>
+      <td>50</td>
+      <td>1.28</td>
+      <td>21.62</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75ΔP1-3(+/-)#2</td>
+      <td>61</td>
+      <td>59</td>
+      <td>1.03</td>
+      <td>37.37</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>D.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75myc(+/+)</td>
+      <td>112</td>
+      <td>38</td>
+      <td>2.95</td>
+      <td>0.009</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/+) TOC75myc(+/+)</td>
+      <td>115</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>toc75-III-1(+/-) TOC75ΔP1myc (+/+)</td>
+      <td>63</td>
+      <td>48</td>
+      <td>1.31</td>
+      <td>19.7</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_aGoodness-of-fit of the observed segregation ratios to the expected 2:1 ratio for toc75-III-1 (+/-) or expected 3:1 ratio for complementation of toc75-III-1 with the indicated TOC75 gene constructs was assessed by χ2 analysis.bp-Values were calculated using Graphpad Prism software version 4.00._
+
+**Table 2.**
+ List of primers used for genotyping plants.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="7">Primers used for making POTRA deletions in TOC75 genomic construct for generating transgenic plant</td>
+    </tr>
+    <tr>
+      <td colspan="7">For TOC75∆P1</td>
+    </tr>
+    <tr>
+      <td>Primer 1</td>
+      <td colspan="6">CTTAGTGGTTTCAAGAAGTATTGGCAATCTGCTGATAGG</td>
+    </tr>
+    <tr>
+      <td>Primer 2</td>
+      <td colspan="6">CCTATCAGCAGATTGCCAATACTTCTTGAAACCACTAAG</td>
+    </tr>
+    <tr>
+      <td colspan="7">For TOC75∆P1-2</td>
+    </tr>
+    <tr>
+      <td>Primer 3</td>
+      <td colspan="6">CTTAGTGGTTTCAAGAAGTATATAACTCAGCTAGTTATTCAG</td>
+    </tr>
+    <tr>
+      <td>Primer 4</td>
+      <td colspan="6">CTGAATAACTAGCTGAGTTATATACTTCTTGAAACCACTAAG</td>
+    </tr>
+    <tr>
+      <td colspan="7">For TOC75∆P1-3</td>
+    </tr>
+    <tr>
+      <td>Primer 5</td>
+      <td colspan="6">CTTAGTGGTTTCAAGAAGTATCAGAAGTCAGCTGAAGCT</td>
+    </tr>
+    <tr>
+      <td>Primer 6</td>
+      <td colspan="6">AGCTTCAGCTGACTTCTGATACTTCTTGAAACCACTAAG</td>
+    </tr>
+    <tr>
+      <td colspan="7">Primers used for myc insertions in TOC75 genomic construct for generating transgenic plant</td>
+    </tr>
+    <tr>
+      <td colspan="7">For TOC75myc and TOC75∆P1myc using TOC75 and TOC75∆P1as templates, respectively</td>
+    </tr>
+    <tr>
+      <td>Primer 7</td>
+      <td colspan="6">GATGAAGAACAAAAACTTATTTCTGAAGAAGATCTGGAACAATCACCGGAT</td>
+    </tr>
+    <tr>
+      <td>Primer 8</td>
+      <td colspan="6">ATCCGGTGATTGTTCCAGATCTTCTTCAGAAATAAGTTTTTGTTCTTCATC</td>
+    </tr>
+    <tr>
+      <td colspan="7">Primers used for genotyping transgenic plants</td>
+    </tr>
+    <tr>
+      <td colspan="7">For TOC75</td>
+    </tr>
+    <tr>
+      <td>Primer 9</td>
+      <td colspan="6">TTCTTTGATCGACGGAGAC</td>
+    </tr>
+    <tr>
+      <td>Primer 10</td>
+      <td colspan="6">CAGCAAACGAGATTGTAACACC</td>
+    </tr>
+    <tr>
+      <td colspan="7">For TOC75∆P1</td>
+    </tr>
+    <tr>
+      <td>Primer 11</td>
+      <td colspan="6">GGTTTCAAGAAGTATTGGCAATCTGCTGAT</td>
+    </tr>
+    <tr>
+      <td>Primer 12</td>
+      <td colspan="6">GACATGTGTGTTCTTCACGGGTATTCTGATCTC</td>
+    </tr>
+    <tr>
+      <td colspan="7">TOC75∆P1-2</td>
+    </tr>
+    <tr>
+      <td>Primer 13</td>
+      <td colspan="6">GGTTTCAAGAAGTATATAACTCAGCTAGTT</td>
+    </tr>
+    <tr>
+      <td>Primer 14</td>
+      <td colspan="6">GACATGTGTGTTCTTCACGGGTATTCTGATCTC</td>
+    </tr>
+    <tr>
+      <td colspan="7">For TOC75∆P1-3</td>
+    </tr>
+    <tr>
+      <td>Primer 15</td>
+      <td colspan="6">GGTTTCAAGAAGTATCAGAAGTCAGCTGAAGTC</td>
+    </tr>
+    <tr>
+      <td>Primer 16</td>
+      <td colspan="6">GACATGTGTGTTCTTCACGGGTATTCTGATCTC</td>
+    </tr>
+    <tr>
+      <td colspan="7">Primers used for generating transit peptide deletions using TOC75∆P1 and TOC75∆P1-2 cDNA</td>
+    </tr>
+    <tr>
+      <td>Primer 17</td>
+      <td colspan="6">GAAGGAGATATACATATGGATGAAGAACAATCACCGG</td>
+    </tr>
+    <tr>
+      <td>Primer 18</td>
+      <td colspan="6">CTACTTCTTGTTAGTGGCCCATATGTATATCTCCTTCTTAAAG</td>
+    </tr>
+    <tr>
+      <td colspan="7">Primers used to construct POTRA domain constructs for solid phage binding assays</td>
+    </tr>
+    <tr>
+      <td>Primer 19</td>
+      <td colspan="6">CTCGAGGGTGATGAAGAACAATCACCGG</td>
+    </tr>
+    <tr>
+      <td>Primer 20</td>
+      <td colspan="6">CTCGAGTTCTAGCTCCTTAAGCTTGATCTC</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ List of primers used for RT-qPCR.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="5">TOC75</td>
+    </tr>
+    <tr>
+      <td>Primer 21</td>
+      <td colspan="4">TTCTTTGATCGACGGAGAC</td>
+    </tr>
+    <tr>
+      <td>Primer 22</td>
+      <td colspan="4">CAGCAAACGAGATTGTAACACC</td>
+    </tr>
+    <tr>
+      <td colspan="5">TOC75∆P1</td>
+    </tr>
+    <tr>
+      <td>Primer 23</td>
+      <td colspan="4">GGTTTCAAGAAGTATTGGCAATCTGCTGAT</td>
+    </tr>
+    <tr>
+      <td>Primer 24</td>
+      <td colspan="4">ACATCTGCATAACCTCACCATACA</td>
+    </tr>
+    <tr>
+      <td colspan="5">TOC75∆P1-2</td>
+    </tr>
+    <tr>
+      <td>Primer 25</td>
+      <td colspan="4">GGTTTCAAGAAGTATATAACTCAGCTAGTT</td>
+    </tr>
+    <tr>
+      <td>Primer 26</td>
+      <td colspan="4">GCGTGGATTGACTTCAATGTT</td>
+    </tr>
+    <tr>
+      <td colspan="5">TOTAL TOC75</td>
+    </tr>
+    <tr>
+      <td>Primer 27</td>
+      <td colspan="4">AAGCTTGGTAATGTGGTTGAA</td>
+    </tr>
+    <tr>
+      <td>Primer 28</td>
+      <td colspan="4">TCAACAATAATGCCCCCTTC</td>
+    </tr>
+    <tr>
+      <td colspan="5">TOC159</td>
+    </tr>
+    <tr>
+      <td>Primer 29</td>
+      <td colspan="4">AGAACCAACCAACCCCTTCT</td>
+    </tr>
+    <tr>
+      <td>Primer 30</td>
+      <td colspan="4">ACCAAATTCGGCTTCTCCTT</td>
+    </tr>
+    <tr>
+      <td colspan="5">TOC33</td>
+    </tr>
+    <tr>
+      <td>Primer 31</td>
+      <td colspan="4">GGTGCAAAACCTTGCTTGTT</td>
+    </tr>
+    <tr>
+      <td>Primer 32</td>
+      <td colspan="4">GGAAGAGCCTTTTCGTCCTT</td>
+    </tr>
+    <tr>
+      <td colspan="5">TIC22-III</td>
+    </tr>
+    <tr>
+      <td>Primer 33</td>
+      <td colspan="4">AAAACATGAGTTATCGCCCTGT</td>
+    </tr>
+    <tr>
+      <td>Primer 34</td>
+      <td colspan="4">TTGCTCAGTTGAAACCTCAAAA</td>
+    </tr>
+    <tr>
+      <td colspan="5">TIC22-IV</td>
+    </tr>
+    <tr>
+      <td>Primer 35</td>
+      <td colspan="4">ATGCGTTAGAGCTCAAATCCTC</td>
+    </tr>
+    <tr>
+      <td>Primer 36</td>
+      <td colspan="4">CATCTCCATTTTCCTCAACACA</td>
+    </tr>
+  </tbody>
+</table>
 
 Heterozygous toc75-III-1 plants are phenotypically indistinguishable from the wild-type plants (Baldwin et al., 2005) under normal growth conditions, implying that one copy of TOC75-III is sufficient for chloroplast function. Although most plants transformed with the Toc75 POTRA-deletion constructs (e.g. TOC75ΔP1#1, TOC75ΔP1-2#1 or TOC75ΔP1-3#1; Table 1B) were phenotypically indistinguishable from toc75-III-1 plants (data not shown), several transformed lines (TOC75ΔP1#2, TOC75ΔP1-2#2 or TOC75ΔP1-3#2) showed progressively increased pale phenotypes and reduced growth rates (Figure 1C). The chlorophyll levels in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were reduced by 26% and 62%, respectively (Figure 1D). TOC75ΔP1-3#2 plants were nearly albino and exhibited severe growth defects (Figure 1C). Interestingly, the hygromycin resistance marker in progeny of the TOC75ΔP1#2, TOC75ΔP1-2#2 and TOC75ΔP1-3#2 lines segregated at a ratio significantly lower than the expected 2:1 ratio (Table 1C). These data suggest that expression of Toc75ΔP1, Toc75ΔP1-2 or Toc75ΔP1-3 proteins in these lines competed with the normal function of native Toc75, expressed from the single wild-type allele in the toc75-III-1(+/-background, resulting in disruption of the import apparatus and a consequent impact on plant growth and viability.
 
-The differences in the segregation (
+The differences in the segregation (Table 1) and phenotypes (Figure 1C) in the TOC75ΔP1#2, TOC75ΔP1-2#2 and TOC75ΔP1-3#2 plants compared to TOC75ΔP1#1, TOC75ΔP1-2#1 and TOC75ΔP1-3#1 plants, suggested that the levels of Toc75ΔP1, Toc75ΔP1-2 or Toc75ΔP1-3 in these lines varied. To further examine the nature of the aberrant segregation, we focused on TOC75ΔP1#2, TOC75ΔP1-2#2 lines. We were unable to pursue further characterization of TOC75ΔP1-3 because of the severe phenotype in lines expressing this construct (Figure 1C). We compared the expression levels of Toc75ΔP1 or Toc75ΔP1-2 in lines showing normal 2:1 hygromycin resistance segregation (TOC75ΔP1#1 and TOC75ΔP1-2#1) and those showing aberrant segregation (TOC75ΔP1#2 and TOC75ΔP1-2#2) (Table 1B and C). TOC75ΔP1#1 and TOC75ΔP1-2#1 plants were nearly indistinguishable from heterozygous toc75-III-1 plants, whereas TOC75ΔP1#2 and TOC75ΔP1-2#2 plants showed a lower germination rate and significant growth defects when grown on agar plates (Figure 2A). Real-time reverse transcription quantitative PCR (RT-qPCR) (Figure 2B) and immunoblotting of extracts (Figure 2C) from seedlings of these lines indicated that the expression of the Toc75 POTRA deletion was higher in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants compared to TOC75ΔP1#1 and TOC75ΔP1-2#1. The examination of additional transformants confirmed that the severity of defects in growth (Figure 1 – supplement 1) and germination (Figure 2 - supplement 1A and B) correlated with the levels of Toc75ΔP1 or Toc75ΔP1-2 accumulation (Figure 2 – supplement 1C). Although we did not examine the reasons for the differences in expression between the lines, the location of transgene insertion in the Arabidopsis genome could account for the variation (Gelvin and Kim, 2007). These data indicate that increased expression of the POTRA deletions induces significant phenotypic defects, consistent with a dominant-negative effect on native Toc75 function in the toc75-III-1(+/-) background. Consistent with this observation, the levels of Toc75ΔP1 or Toc75ΔP1-2 mRNA in TOC75ΔP1#2 or TOC75ΔP1-2#2 plants were 3.5–4.5 times higher than those of native Toc75 mRNA, whereas the Toc75ΔP1 or Toc75ΔP1-2 protein levels were significantly lower than native Toc75. This suggests that expression of TOC75ΔP1#2 and TOC75ΔP1-2#2 is tightly controlled post-transcriptionally or by proteolytic degradation of Toc75ΔP1 or Toc75ΔP1-2, most likely in response to the negative impact of the POTRA deletions on chloroplast function.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig2-v1.jpg)
 
-**Figure 2.:** (A) Phenotypes of wild type, toc75-III-1 (+/-) and TOC75 plants compared to plants expressing lower (TOC75ΔP1#1 and TOC75ΔP1-2#1) or higher (TOC75ΔP1#2 and TOC75ΔP1-2#2) levels of Toc75ΔP1 and Toc75ΔP1-2, respectively. Plants were grown for 14 days on agar media containing 20 μg/ml hygromycin. (B) Toc75, Toc75ΔP1 or Toc75ΔP1-2 mRNA levels in the transgenic plants indicated at the bottom of the graph as determined by quantitative real-time PCR. The primers used for RT-qPCR are listed in Table 3. Data represent the mean of three replicates. Error bars represent standard deviation. (C) Immunoblots of protein extracts from TOC75, TOC75ΔP1#1, TOC75ΔP1-2#1, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants using anti-atToc75 sera. The positions of Toc75, Toc75ΔP1 (ΔP1) or Toc75ΔP1-2 (ΔP1-2) are indicated to the right of the figure. Immunoblots of actin, a loading control, are shown in the bottom panel.DOI: http://dx.doi.org/10.7554/eLife.12631.008
+**Figure 2.:** (A) Phenotypes of wild type, toc75-III-1 (+/-) and TOC75 plants compared to plants expressing lower (TOC75ΔP1#1 and TOC75ΔP1-2#1) or higher (TOC75ΔP1#2 and TOC75ΔP1-2#2) levels of Toc75ΔP1 and Toc75ΔP1-2, respectively. Plants were grown for 14 days on agar media containing 20 μg/ml hygromycin. (B) Toc75, Toc75ΔP1 or Toc75ΔP1-2 mRNA levels in the transgenic plants indicated at the bottom of the graph as determined by quantitative real-time PCR. The primers used for RT-qPCR are listed in Table 3. Data represent the mean of three replicates. Error bars represent standard deviation. (C) Immunoblots of protein extracts from TOC75, TOC75ΔP1#1, TOC75ΔP1-2#1, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants using anti-atToc75 sera. The positions of Toc75, Toc75ΔP1 (ΔP1) or Toc75ΔP1-2 (ΔP1-2) are indicated to the right of the figure. Immunoblots of actin, a loading control, are shown in the bottom panel.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) and (B) Phenotypes of wild type, toc75-III-1 (+/-) and TOC75 plants compared to plants expressing lower (TOC75ΔP1#1, #3 and #4) or higher (TOC75ΔP1#2, #5 and #6) levels of Toc75ΔP1 or lower (TOC75ΔP1-2#1, #3 and #4) or higher (TOC75ΔP1-2#2, #5 and #6) levels of Toc75ΔP1-2. A low and high exposure of the blots for the extracts from the TOC75ΔP1 plants is presented to allow visualization of the bands corresponding to Toc75ΔP1 (ΔP1). All plants were grown for 14 days on agar media containing 20 μg/ml hygromycin. (C) Immunoblots of protein extracts from lines expressing Toc75ΔP1 or Toc75ΔP1-2 shown in (A) and (B). The positions of Toc75, Toc75ΔP1 (ΔP1) or Toc75ΔP1-2 (ΔP1-2) are indicated to the right of the figure. Immunoblots of actin, a loading control, are shown in the bottom panel.DOI: http://dx.doi.org/10.7554/eLife.12631.009
+**Figure 2—figure supplement 1.:** (A) and (B) Phenotypes of wild type, toc75-III-1 (+/-) and TOC75 plants compared to plants expressing lower (TOC75ΔP1#1, #3 and #4) or higher (TOC75ΔP1#2, #5 and #6) levels of Toc75ΔP1 or lower (TOC75ΔP1-2#1, #3 and #4) or higher (TOC75ΔP1-2#2, #5 and #6) levels of Toc75ΔP1-2. A low and high exposure of the blots for the extracts from the TOC75ΔP1 plants is presented to allow visualization of the bands corresponding to Toc75ΔP1 (ΔP1). All plants were grown for 14 days on agar media containing 20 μg/ml hygromycin. (C) Immunoblots of protein extracts from lines expressing Toc75ΔP1 or Toc75ΔP1-2 shown in (A) and (B). The positions of Toc75, Toc75ΔP1 (ΔP1) or Toc75ΔP1-2 (ΔP1-2) are indicated to the right of the figure. Immunoblots of actin, a loading control, are shown in the bottom panel.
 
-## POTRA deletions disrupt protein import into chloroplasts
+### POTRA deletions disrupt protein import into chloroplasts
 
-The TOC complex mediates the initial recognition of preproteins followed by their translocation across the outer envelope membrane via the Toc75 channel (
+The TOC complex mediates the initial recognition of preproteins followed by their translocation across the outer envelope membrane via the Toc75 channel (Richardson et al., 2014). To test how deletion of the POTRA domains might impact preprotein translocation at the outer membrane, we measured time-dependent import kinetics in chloroplasts isolated from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. Isolated chloroplasts were incubated with [35S]-labeled chloroplast preprotein, preSSU, in the presence of 3 mM ATP to promote import for 2, 5 or 10 min at 26° (Figure 3A). Quantitative analysis indicates that preprotein import rates in chloroplasts from toc75-III-1 (+/-) and TOC75 plants were statistically indistinguishable (Figure 3B), consistent with the normal phenotype of these plants. By contrast, the levels of [35S]preSSU import into chloroplasts expressing Toc75ΔP1, and Toc75ΔP1-2 were reduced to ~35% of the levels observed in chloroplasts from toc75-III-1 (+/-) and TOC75 plants (Figure 3B). A similar reduction in import was observed for an additional preprotein, the precursor of the E1α subunit of pyruvate dehydrogenase ([35S]preE1α) (Figure 3C). PreE1α utilizes an import pathway involving Toc75 and a set of TOC receptor GTPase isoforms distinct from those involved in preSSU import (Ivanova et al., 2004). These data demonstrate that Toc75ΔP1 and Toc75ΔP1-2 disrupt the function of protein import complexes involved in multiple import pathways, resulting in the defects in chloroplast biogenesis observed in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig3-v1.jpg)
 
-**Figure 3.:** TOC75ΔP1#2 and TOC75ΔP1-2#2 plants compared to toc75-III-1 (+/-) or TOC75 plants.(A) In vitro import with isolated chloroplasts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. In vitro-translated [35S]preSSU was incubated with equivalent numbers of chloroplasts (107 chloroplasts) from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants under import conditions in the presence of 3 mM ATP for the times indicated. Lane 1 contains 10% of the [35S]preSSU added to each reaction (IVT). Dashed lines indicate that the panels in the figure were generated from different regions of the same SDS-PAGE gel using samples from the same experiment. The chloroplasts were analyzed directly by SDS-PAGE and phosphor imaging. (B) Quantitative analysis of the protein import assays in (A). Data represent the mean of triplicate experiments, with bars indicating standard error. (C) Comparison of the import of in vitro-translated [35S]preSSUand [35S]preE1α into isolated chloroplasts from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. Import is presented as a percentage of the import of each preprotein observed in toc75-III-1 (+/-) chloroplasts. [35S]preSSU import data for the graph were derived from (A). The inset shows a representative gel of the triplicate experiments used to generate the graph for [35S]preE1α. Lane 1 contains 40% of the [35S]pre E1α added to each reaction (IVT).DOI: http://dx.doi.org/10.7554/eLife.12631.010
+**Figure 3.:** (A) In vitro import with isolated chloroplasts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. In vitro-translated [35S]preSSU was incubated with equivalent numbers of chloroplasts (107 chloroplasts) from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants under import conditions in the presence of 3 mM ATP for the times indicated. Lane 1 contains 10% of the [35S]preSSU added to each reaction (IVT). Dashed lines indicate that the panels in the figure were generated from different regions of the same SDS-PAGE gel using samples from the same experiment. The chloroplasts were analyzed directly by SDS-PAGE and phosphor imaging. (B) Quantitative analysis of the protein import assays in (A). Data represent the mean of triplicate experiments, with bars indicating standard error. (C) Comparison of the import of in vitro-translated [35S]preSSUand [35S]preE1α into isolated chloroplasts from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. Import is presented as a percentage of the import of each preprotein observed in toc75-III-1 (+/-) chloroplasts. [35S]preSSU import data for the graph were derived from (A). The inset shows a representative gel of the triplicate experiments used to generate the graph for [35S]preE1α. Lane 1 contains 40% of the [35S]pre E1α added to each reaction (IVT).
 
-To understand whether the reduced import in chloroplasts expressing Toc75ΔP1, and Toc75ΔP1-2 was due to defects in the recognition or translocation of preproteins at the outer membrane, we examined the interaction of [
+To understand whether the reduced import in chloroplasts expressing Toc75ΔP1, and Toc75ΔP1-2 was due to defects in the recognition or translocation of preproteins at the outer membrane, we examined the interaction of [35S]preSSU with the import machinery under two distinct energy conditions. In the absence of ATP, preproteins bind to chloroplasts in a low-affinity, energy-independent interaction involving the Toc159 and Toc33 GTPase receptors (Aronsson and Jarvis, 2011, Inaba and Schnell, 2008). In the presence of 0.1 mM ATP, preproteins are promoted to a higher affinity intermediate, which is inserted across the outer membrane and represents the initial translocation of preprotein across the envelope (Fitzpatrick and Keegstra, 2001, Inaba and Schnell, 2008). The distinction between energy-independent binding and the formation of the higher affinity intermediate is apparent by an increase in the levels of preprotein that stably associates with chloroplasts (Olsen and Keegstra, 1992). As expected TOC75 and toc75-III-1(+/-) chloroplasts showed 53% and 97% increases in chloroplast-associated preprotein, respectively, in the presence of 0.1 mM ATP compared to chloroplasts depleted of ATP (Figure 4A and B). By contrast, the stimulation of chloroplast-associated [35S]preSSU in the presence of 0.1 mM ATP, in TOC75ΔP1#2, and TOC75ΔP1-2#2 chloroplasts was ~25% and was statistically indistinguishable from energy-independent binding (Figure 4A and B). Incubation of the chloroplasts from the 0.1 mM ATP-binding experiment with 3 mM ATP to promote import of the intermediate into the stroma resulted in translocation and processing of 70–85% of bound [35S]preSSU in the TOC75 and toc75-III-1(+/-) control chloroplasts and TOC75ΔP1#2, and TOC75ΔP1-2#2 chloroplasts (Figure 4A and C). These data suggest that the POTRA deletions impact the transition from low-affinity, energy-independent binding to an energy-dependent, high-affinity insertion across the outer membrane, but not subsequent translocation across the inner envelope into the stroma.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig4-v1.jpg)
 
-**Figure 4.:** (A) Energy-dependent and independent binding of [35S]preSSU to chloroplasts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. In vitro-translated [35S]preSSU was incubated at 26°C for 5 min with chloroplasts (107) from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants in the absence of exogenous energy or in the presence of 0.1 mM ATP and GTP to promote translocation across the outer membrane and form an early import intermediate (Inter). toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts (107) containing bound early import intermediate (Inter) were reisolated and resuspended in the presence of 3 mM ATP to promote full translocation of the bound preprotein into the stroma (Chase). Lane 1 contains 10% of the in vitro translated [35S]preSSU added to each reaction (IVT). Dashed lines indicate that the figure was generated from different regions of the same SDS-PAGE gel using samples from the same experiment. The chloroplasts were analyzed directly by SDS-PAGE and phosphor imaging. (B) Quantitation of the [35S]preSSU early import intermediate from (A). (C) Quantitation of [35S]SSU imported from the chase experiment in (A). Data represent the mean of triplicate experiments, with bars indicating standard error.DOI: http://dx.doi.org/10.7554/eLife.12631.011
+**Figure 4.:** (A) Energy-dependent and independent binding of [35S]preSSU to chloroplasts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. In vitro-translated [35S]preSSU was incubated at 26°C for 5 min with chloroplasts (107) from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants in the absence of exogenous energy or in the presence of 0.1 mM ATP and GTP to promote translocation across the outer membrane and form an early import intermediate (Inter). toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts (107) containing bound early import intermediate (Inter) were reisolated and resuspended in the presence of 3 mM ATP to promote full translocation of the bound preprotein into the stroma (Chase). Lane 1 contains 10% of the in vitro translated [35S]preSSU added to each reaction (IVT). Dashed lines indicate that the figure was generated from different regions of the same SDS-PAGE gel using samples from the same experiment. The chloroplasts were analyzed directly by SDS-PAGE and phosphor imaging. (B) Quantitation of the [35S]preSSU early import intermediate from (A). (C) Quantitation of [35S]SSU imported from the chase experiment in (A). Data represent the mean of triplicate experiments, with bars indicating standard error.
 
-The results from
+The results from Figure 4 suggest that the POTRA deletions do not have a major impact on initial energy-independent binding of preSSU, but significantly impact preprotein translocation across the outer membrane. To test this hypothesis, we investigated the kinetic parameters of import in TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts to determine the affinity and maximum translocation capacity of TOC translocons for preSSU. We generated a preprotein binding curve with increasing concentrations of purified E. coli-expressed preSSU-FLAG-HIS in the presence of 0.1 mM ATP and visualized bound preprotein by immunoblotting with anti-FLAG (Figure 5A). The apparent dissociation constants (Kd(app)) of preSSU-FLAG-HIS for TOC translocons in TOC75 and TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts were 158.6 ± 29 nM, 187.7 ± 46 nM and 126.5 ± 24 mM, respectively (Figure 5B). This indicates that there were no measurable differences in the affinity of TOC translocons for preprotein in these plants. However, the maximum binding capacity was estimated as 91.4 ± 6.2, 57.1 ± 5.6 and 48.2 ± 3.3 fmol preSSU/μg chloroplast protein in TOC75 and TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts, respectively (Figure 5B). As shown in Figure 7, the levels of TOC proteins were not reduced in the TOC75ΔP1#2 and TOC75ΔP1-2#2 plants, indicating that the reduced binding capacity was not due to a reduction in the levels of import components. These data are consistent with the hypothesis that deletion of the POTRA domains reduces the number of active TOC complexes at the outer envelope by interfering with their ability to mediate outer membrane translocation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig5-v1.jpg)
 
-**Figure 5.:** (A) Saturation binding of preprotein in chloroplasts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. Isolated chloroplasts (107) from TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were incubated with increasing amounts of E. coli-expressed, urea-denatured preSSU-FLAG-HIS in the presence of 0.1 mM ATP and GTP at 26°C for 5 min, to promote formation of an early import intermediate. Chloroplasts were reisolated through Percoll silica gel, resolved by SDS-PAGE, and the early import intermediate form of preSSU-FLAG-HIS was detected by immunoblotting with anti-FLAG. Lane 1 contains 0.64 pmol of the preSSU-FLAG-HIS. (B) Quantitation of the data from (A). Saturation binding analysis of the data in (A) is presented in the table inset. The maximum number of binding sites (Maximum Binding) and apparent Kd were calculated by nonlinear fitting of the data in (A). Each data bar represents the mean ± SD (n = 3).DOI: http://dx.doi.org/10.7554/eLife.12631.012
+**Figure 5.:** (A) Saturation binding of preprotein in chloroplasts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. Isolated chloroplasts (107) from TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were incubated with increasing amounts of E. coli-expressed, urea-denatured preSSU-FLAG-HIS in the presence of 0.1 mM ATP and GTP at 26°C for 5 min, to promote formation of an early import intermediate. Chloroplasts were reisolated through Percoll silica gel, resolved by SDS-PAGE, and the early import intermediate form of preSSU-FLAG-HIS was detected by immunoblotting with anti-FLAG. Lane 1 contains 0.64 pmol of the preSSU-FLAG-HIS. (B) Quantitation of the data from (A). Saturation binding analysis of the data in (A) is presented in the table inset. The maximum number of binding sites (Maximum Binding) and apparent Kd were calculated by nonlinear fitting of the data in (A). Each data bar represents the mean ± SD (n = 3).
 
-## Effects of POTRA deletions on Toc75 targeting and membrane topology
+### Effects of POTRA deletions on Toc75 targeting and membrane topology
 
-To investigate the nature of the import defect in
+To investigate the nature of the import defect in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants, we examined whether the POTRA deletions disrupted Toc75 targeting and membrane integration. Toc75 is unique among known chloroplast outer envelope membrane proteins in being targeted to the membrane via a cleavable N-terminal bipartite targeting signal (Tranel and Keegstra, 1996). Toc75 is translated as an 89.2 kDa precursor (pre-Toc75) and processed sequentially at the outer membrane and intermembrane space, to generate an 84.6 kDa intermediate form and the 75 kDa mature form, respectively (Inoue et al., 2001, Inoue and Keegstra, 2003, Shipman and Inoue, 2009). Upon complete processing, the predicted sizes of mature Toc75ΔP1 and Toc75ΔP1-2 are 66.6 kDa and 52.7 kDa, respectively. To determine if the POTRA deletions were processed normally, we synthesized [35S]Toc75ΔP1 and [35S]Toc75ΔP1-2 in a cell-free in vitro translation system, mixed them with protein extracts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants and compared the sizes of the radiolabeled and endogenous Toc75ΔP1 and Toc75ΔP1-2 by phosphorimaging and immunoblotting, respectively. The results in Figure 6A show that the SDS-PAGE migration of the radiolabeled and endogenous Toc75ΔP1 and Toc75ΔP1-2 are coincident, indicating that the POTRA-deletions were processed to their mature forms. Consistent with proper processing, fractionation of chloroplasts into soluble and membrane fractions demonstrated that Toc75ΔP1 and Toc75ΔP1-2 from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants, respectively, were membrane integrated (Figure 6B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig6-v1.jpg)
 
-**Figure 6.:** (A) Toc75ΔP1 and Toc75ΔP1-2 accumulate as their mature forms in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. In vitro translated mature [35S]Toc75ΔP1 and [35S]Toc75ΔP1-2 were mixed with chloroplasts extracts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants and analyzed by SDS-PAGE. The mobility of [35S]Toc75ΔP1 and [35S]Toc75ΔP1-2, detected by phosphorimaging (Lanes 1 and 2), was compared to the mobility of endogenous Toc75ΔP1 and Toc75ΔP1-2, detected by immunoblotting with anti-atToc75 serum (Lanes 3 and 4). (B) Toc75ΔP1 and Toc75ΔP1-2 are integrated into the chloroplast envelope. Isolated chloroplasts (T) from heterozygous toc75-III-1, TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were hypotonically lysed and fractionated by centrifugation at 18,000 × g for 30 min at 4°C into membrane pellet (M) and soluble (S) fractions. Equivalent samples of each fraction from chloroplasts corresponding to 10 μg chlorophyll was resolved by SDS-PAGE and immunoblotted with anti-atToc75 serum. (C) Toc75myc and Toc75ΔP1myc constructs used in this study. The dashed line represents the deleted POTRA domain region in POTRA1-deleted constructs. The site of insertion of myc tag is shown in each panel. (D) Protease sensitivity of Toc75myc, and Toc75ΔP1myc proteins in isolated intact chloroplasts. Intact chloroplasts from TOC75, TOC75seedlings were treated with trypsin or thermolysin in the absence (-) or presence (+) of 1% Triton X-100. Reactions were incubated on ice for 30 min, and proteolysis was stopped with 2.5 mM PMSF, 0.05 mg/mL Nα-Tosyl-L-lysine chloromethyl ketone (TLCK), 0.25 mg/mL soybean trypsin inhibitor, and 2 μg/mL aprotinin (for trypsin) or 20 mM EDTA (for thermolysin). Chloroplasts were analyzed by immunoblotting with antibodies against various proteins as indicated. The asterisk indicates the position of a non-specific immunoreactive band. a and b denote bands corresponding to the ~55 kDa and ~46 kDa trypsin fragments of Toc75myc and TOC75ΔP1myc myc and Toc75ΔP1myc, respectively.DOI: http://dx.doi.org/10.7554/eLife.12631.013
+**Figure 6.:** (A) Toc75ΔP1 and Toc75ΔP1-2 accumulate as their mature forms in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. In vitro translated mature [35S]Toc75ΔP1 and [35S]Toc75ΔP1-2 were mixed with chloroplasts extracts from TOC75ΔP1#2 and TOC75ΔP1-2#2 plants and analyzed by SDS-PAGE. The mobility of [35S]Toc75ΔP1 and [35S]Toc75ΔP1-2, detected by phosphorimaging (Lanes 1 and 2), was compared to the mobility of endogenous Toc75ΔP1 and Toc75ΔP1-2, detected by immunoblotting with anti-atToc75 serum (Lanes 3 and 4). (B) Toc75ΔP1 and Toc75ΔP1-2 are integrated into the chloroplast envelope. Isolated chloroplasts (T) from heterozygous toc75-III-1, TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were hypotonically lysed and fractionated by centrifugation at 18,000 × g for 30 min at 4°C into membrane pellet (M) and soluble (S) fractions. Equivalent samples of each fraction from chloroplasts corresponding to 10 μg chlorophyll was resolved by SDS-PAGE and immunoblotted with anti-atToc75 serum. (C) Toc75myc and Toc75ΔP1myc constructs used in this study. The dashed line represents the deleted POTRA domain region in POTRA1-deleted constructs. The site of insertion of myc tag is shown in each panel. (D) Protease sensitivity of Toc75myc, and Toc75ΔP1myc proteins in isolated intact chloroplasts. Intact chloroplasts from TOC75, TOC75myc and TOC75ΔP1myc seedlings were treated with trypsin or thermolysin in the absence (-) or presence (+) of 1% Triton X-100. Reactions were incubated on ice for 30 min, and proteolysis was stopped with 2.5 mM PMSF, 0.05 mg/mL Nα-Tosyl-L-lysine chloromethyl ketone (TLCK), 0.25 mg/mL soybean trypsin inhibitor, and 2 μg/mL aprotinin (for trypsin) or 20 mM EDTA (for thermolysin). Chloroplasts were analyzed by immunoblotting with antibodies against various proteins as indicated. The asterisk indicates the position of a non-specific immunoreactive band. a and b denote bands corresponding to the ~55 kDa and ~46 kDa trypsin fragments of Toc75myc and Toc75ΔP1myc, respectively.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig7-v1.jpg)
 
-**Figure 7.:** TOC75ΔP1#2 and TOC75ΔP1-2#2 plants.(A) Serial dilutions of protein extracts from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were immunoblotted using antisera corresponding to the proteins indicated at the left. (B) Relative quantitation of plastid proteins. The signal intensities falling within the linear range of chemiluminescence detection were normalized to the signal for actin in each sample and plotted as fold change relative to the levels of the corresponding protein in toc75-III-1 (+/-) plants. (C) Relative expression of various proteins analyzed by RT-qPCR from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. The values are normalized to the internal levels of actin mRNA and plotted as the fold change relative to the levels of the corresponding mRNA in toc75-III-1 (+/-) plants. Each error bar represents the mean ± SD (n = 3).DOI: http://dx.doi.org/10.7554/eLife.12631.014
+**Figure 7.:** (A) Serial dilutions of protein extracts from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were immunoblotted using antisera corresponding to the proteins indicated at the left. (B) Relative quantitation of plastid proteins. The signal intensities falling within the linear range of chemiluminescence detection were normalized to the signal for actin in each sample and plotted as fold change relative to the levels of the corresponding protein in toc75-III-1 (+/-) plants. (C) Relative expression of various proteins analyzed by RT-qPCR from toc75-III-1 (+/-), TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. The values are normalized to the internal levels of actin mRNA and plotted as the fold change relative to the levels of the corresponding mRNA in toc75-III-1 (+/-) plants. Each error bar represents the mean ± SD (n = 3).
 
 To test if the POTRA deletions impacted the topology of Toc75 in the outer membrane, we examined the sensitivity of full-length Toc75 and Toc75ΔP1 to exogenous protease in isolated, intact chloroplasts. We were unable to examine Toc75ΔP1-2 due to relatively low levels of expression of this construct in transgenic plants and the consequent inability to reliably detect proteolytic fragments from the deletion construct. To facilitate our studies, we expressed Toc75 and Toc75ΔP1 containing a myc epitope inserted just upstream of the POTRA domains at the N-terminus of the mature proteins in toc75-III-1 plants (Figure 6C). The TOC75myc transgene was able to fully complement the toc75-III-1 lethal phenotype (Table 1D). Consistent with the TOC75ΔP1 transformants, the TOC75ΔP1myc lines showed both normal and pale phenotypes, and none were able to complement toc75-III-1 (Table 1D). For subsequent studies, we selected a line, which showed a pale phenotype TOC75ΔP1myc (data not shown) similar to TOC75ΔP1#2.
 
@@ -101,33 +475,33 @@ Isolated chloroplasts from TOC75myc and TOC75ΔP1myc plants were treated with 
 
 Toc75myc is degraded by treatments with increasing concentrations of trypsin (Figure 6D ii). Reduction in full length Toc75myc (75 kDa) is concomitant with the appearance of a ~55 kDa protease-resistant fragment, which reacts with anti-POTRA and anti-myc (Figure 6D ii, band a). Disruption of the membrane with triton X-100 results in complete degradation of Toc75, indicating that the protected fragment observed in intact chloroplasts is not intrinsically resistant to proteolysis (Figure 6D ii). Treatment of chloroplasts from TOC75ΔP1myc plants with trypsin resulted in the degradation of both the 75 kDa Toc75 and the 68 kDa Toc75ΔP1myc proteins (Figure 6D iii), and generated two anti-POTRA reactive proteolytic fragments of ~55 kDa and ~46 kDa (Figure 6D iii, bands a and b). The difference in the size of the two anti-POTRA reactive fragments corresponds to the difference in size between native Toc75 and Toc75ΔP1 (8.6 KDa). The ~46 kDa fragment reacted with anti-myc (Figure 6D iii, band b), confirming its identity as an N-terminal fragment containing the Toc75ΔP1myc POTRA domain fragment. These data demonstrate that the peptides are generated from the N-terminal region of Toc75 and Toc75ΔP1myc, respectively, and confirm that Toc75ΔP1 has the same topology as native Toc75 in the outer envelope membrane.
 
-## Protein import components accumulate to higher levels in plants expressing POTRA deletions
+### Protein import components accumulate to higher levels in plants expressing POTRA deletions
 
 Toc75 is implicated in the insertion of Toc33 and Toc159 into the outer membrane (Richardson et al., 2014), and it participates in the initial stages of targeting of TIC components to the inner membrane (Shi and Theg, 2013). Consequently, we examined the expression and accumulation of TOC and TIC components in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants to determine if the import defects could result from a disruption in the levels of import components. Immunoblots indicated that overall levels of Toc75, including Toc75, Toc75ΔP1 and Toc75ΔP1-2, were increased up to two fold in plants expressing POTRA-deleted Toc75 compared to wild type or TOC75 plants (Figure 7A and B). Levels of Toc33 protein were significantly increased (~five fold) in TOC75ΔP1 and TOC75ΔP1-2 plants, suggesting that accumulation of Toc33 is increased in response to expression of the POTRA deletion constructs (Figure 7A and B). Toc159 levels were slightly increased (<1.4-fold), but the increase was not statistically significant compared to toc75-III-1 (+/-) plants (Figure 7A and B). The levels of OEP80, another member of Omp85 superfamily in the outer membrane of chloroplasts (Hsu et al., 2012, Day et al., 2014), were unchanged in plants expressing Toc75ΔP1 and Toc75ΔP1-2 (Figure 7A and B), further indicating that the increased accumulation of Toc33 was not due to a general increase in outer membrane protein levels. A representative TIC component, Tic110, did not show a change in abundance in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants (Figure 7A and B). However, the levels of Tic22-III and Tic22-IV, two homologous protein import components of the intermembrane space (Kouranov et al., 1998, Kasmati et al., 2013), were increased in TOC75ΔP1 and TOC75ΔP1-2 plants. Tic22-IV levels were moderately but significantly increased, whereas Tic22-III showed a ~three fold increase in both deletion lines (Figure 7A and B).
 
 We performed RT-qPCR to determine if the increases in protein accumulation observed in the immunoblotting experiments correlated with increased transcription. Compared to toc75III-1 (+/-) and TOC75 plants, the levels of total transcripts encoding Toc75 and the POTRA deletions (Toc75, Toc75ΔP1 and Toc75 ΔP2) were increased by four- and six fold in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants, respectively (Figure 7C). Toc33 transcript also increased, as did those of Tic22-III and Tic22-IV (Figure 7C), whereas Toc159 transcript levels were unchanged (Figure 7C). These data suggest that the changes observed in the levels of import components in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were at least partially due to changes in gene expression in response to expression of the Toc75 POTRA deletions.
 
-## POTRA deletions disrupt TOC complex stoichiometry
+### POTRA deletions disrupt TOC complex stoichiometry
 
-Toc75 forms stable complexes with Toc33 and Toc159 in stoichiometric ratios estimated at 4:4:1 or 3:3:1 (Toc75:Toc34:Toc159), based on the mobility of TOC complexes on blue-native gel electrophoresis (
+Toc75 forms stable complexes with Toc33 and Toc159 in stoichiometric ratios estimated at 4:4:1 or 3:3:1 (Toc75:Toc34:Toc159), based on the mobility of TOC complexes on blue-native gel electrophoresis (Schleiff et al., 2003, Kikuchi et al., 2006, Chen and Li, 2007). The over-accumulation of Toc75 and Toc33 in the POTRA deletion lines (Figure 7) suggested that the mutations might disrupt the stoichiometry of TOC complexes, thereby resulting in the observed import defects (Figure 3). As a first step to determine if Toc75ΔP1 and Toc75ΔP1-2 were interacting with other TOC components, we immunoprecipitated detergent-solubilized chloroplast membranes from TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants with anti-Toc33-Sepharose and immunoblotted the samples with TOC antibodies. Toc159, full-length Toc75 and Tic110, a component of TIC complexes, co-immunoprecipitated with Toc33 from TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts. Toc75ΔP1 and Toc75ΔP1-2 also co-immunoprecipitate with Toc33 (Figure 8A). OEP80, an outer membrane protein that is not associated with TOC complexes, was not co-immunoprecipitated with anti-Toc33 (Figure 8A). These data indicate that Toc75ΔP1 and Toc75ΔP1-2 can interact directly or indirectly with other import components of TOC-TIC complexes.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig8-v1.jpg)
 
-**Figure 8.:** (A) Co-immunoprecipitation of Toc75ΔP1 and Toc75ΔP1-2 with Toc33 and Toc159. Detergent-soluble chloroplast membranes from TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were subjected to immunoaffinity chromatography on anti-atToc33 Sepharose. Twenty-five percent of the total extracts (Start) and unbound fractions (Unbound) or the eluate fractions (Bound) were resolved by SDS-PAGE and immunoblotted with antisera indicated to the left of each panel. (B) 2D Blue-native PAGE analysis of chloroplast membranes from TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. Chloroplast membranes from TOC75 (i), TOC75ΔP1#2 (ii) and TOC75ΔP1-2#2 (iii) plants were subjected to 4–12% BN-PAGE in the first dimension followed by 5–12% SDS-PAGE in the second dimension. Proteins were then transferred to a PVDF membrane and immunoblotted with the antisera indicated to the left of each panel. The positions of the major 1.3 MDa (region a), 440 kDa (region b) and 70 kDa (region c) complexes are indicated at the top of each panel. Asterisks to the left of the middle panels indicate the positions of the bands corresponding Toc75 (*), Toc75ΔP1 (**) and Toc75ΔP1-2 (***).DOI: http://dx.doi.org/10.7554/eLife.12631.015
+**Figure 8.:** (A) Co-immunoprecipitation of Toc75ΔP1 and Toc75ΔP1-2 with Toc33 and Toc159. Detergent-soluble chloroplast membranes from TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants were subjected to immunoaffinity chromatography on anti-atToc33 Sepharose. Twenty-five percent of the total extracts (Start) and unbound fractions (Unbound) or the eluate fractions (Bound) were resolved by SDS-PAGE and immunoblotted with antisera indicated to the left of each panel. (B) 2D Blue-native PAGE analysis of chloroplast membranes from TOC75, TOC75ΔP1#2 and TOC75ΔP1-2#2 plants. Chloroplast membranes from TOC75 (i), TOC75ΔP1#2 (ii) and TOC75ΔP1-2#2 (iii) plants were subjected to 4–12% BN-PAGE in the first dimension followed by 5–12% SDS-PAGE in the second dimension. Proteins were then transferred to a PVDF membrane and immunoblotted with the antisera indicated to the left of each panel. The positions of the major 1.3 MDa (region a), 440 kDa (region b) and 70 kDa (region c) complexes are indicated at the top of each panel. Asterisks to the left of the middle panels indicate the positions of the bands corresponding Toc75 (*), Toc75ΔP1 (**) and Toc75ΔP1-2 (***).
 
 To determine if the interactions detected in Figure 8A correspond to the correct stoichiometric assembly of TOC components, we analyzed the complexes by two-dimensional (2D) blue-native PAGE. As shown in Figure 8B i, Toc33, Toc75 and Toc159 from TOC75 chloroplasts co-migrated in complexes, which peaked at ~1.3 MDa (region a). A second complex, with a peak at ~440 kDa (region b) migrated between 400 and 880 kDa and contained Toc75 and Toc33, but lacked detectable levels of Toc159. The presence of the ~1.3 MDa and ~440 kDa complexes is consistent with the 800–1000 kDa and 300–450 kDa TOC complexes previously reported from pea chloroplasts (Kikuchi et al., 2006) on 2D blue-native gels. The minor differences in the mobilities of the TOC complexes reported here and in the previous study are likely due to differences in the sizes of TOC components in Arabidopsis versus pea chloroplasts. Both 1.3 MDa and 440 kDa complexes containing native Toc75, Toc33 and Toc159 were also observed in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants (Figure 8B). Toc75ΔP1 is detected in both 1.3 MDa and 440 kDa complexes in chloroplasts from TOC75ΔP1#2 plants (Figure 8B ii), suggesting that Toc75ΔP1 assembles with the core TOC GTPase receptors. By contrast, Toc75ΔP1-2 was absent from the 1.3 MDa complexes and present only in complexes with a mobility similar or smaller than the 440 kDa complexes in TOC75ΔP1-2#2 plants (Figure 8B iii). In conjunction with the observation that Toc75ΔP1-2 co-immunoprecipitates with Toc33 (Figure 8A), the results from 2D blue-native gels suggest that Toc75ΔP1-2 is able to interact with Toc33 but is unable to assemble into the 1.3 MDa complexes containing all three core TOC components.
 
 Interestingly, the levels of Toc33 migrating at a low molecular weight (~70 kDa peak) were increased significantly in TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts compared to TOC75 chloroplasts (Figure 8B, region c). Neither Toc75, the Toc75 POTRA deletions or Toc159 co-migrate with this form of Toc33, suggesting that a considerable proportion of Toc33 is not assembled into native TOC complexes in the TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts. The dramatic increase in Toc33 expression relative to the other TOC components in TOC75ΔP1#2 and TOC75ΔP1-2#2 chloroplasts (Figure 7) is likely to be responsible, at least in part, for the Toc33 that is not assembled into TOC complexes (Figure 8B). Taken together, these data demonstrate that deletion of both the first and second POTRA domains of Toc75 disrupts assembly of native TOC complexes within the outer membrane.
 
-## Toc75 POTRA domains interact with an intermembrane import component, Tic22
+### Toc75 POTRA domains interact with an intermembrane import component, Tic22
 
 The increase in accumulation of the Tic22 isoforms in TOC75ΔP1#2 and TOC75ΔP1-2#2 plants, raised questions regarding the relationship of these two import proteins. Previous work had demonstrated a potential interaction between the N-terminal POTRA domains of an Omp85 family member in the outer membrane of the cyanobacteria, Anabeana sp. PCC 7120, and a chaperone protein in the periplasmic space, which is structurally related to Tic22 (Tripp et al., 2012). These observations led us to examine a possible physical interaction between Toc75 and Tic22 in the chloroplast intermembrane space. A protein fragment encompassing all three Toc75 POTRA domains and a C-terminal hexahistidine tag (POTRA-His) was expressed and purified from E. coli and tested for binding to Tic22-III and Tic22-IV. The recombinant POTRA-His was immobilized on nickel-nitrilotriacetic acid (Ni-NTA) matrix and incubated with in vitro–translated [35S]Tic22-III and [35S]Tic22-IV. Binding was measured as the fraction of [35S]Tic22-III and [35S]Tic22-IV that co-sedimented with the immobilized POTRA domains. Transit peptide-dependent binding of preSSU to Toc75 POTRAs has been demonstrated previously (Ertel et al., 2005), and therefore, we used [35S]preSSU and [35S]SSU as positive and negative controls for binding, respectively.
 
-As shown in
+As shown in Figure 9, [35S]Tic22-III, [35S]Tic22-IV and [35S]preSSU bound to immobilized POTRA-His in a dose-dependent manner, with maximum binding observed at 60%, 35% and 77% of added radiolabeled proteins, respectively (Figure 9A and B). None of the proteins exhibited significant binding to the Ni-NTA matrix alone (Figure 9 A, lanes 2 and 7), and <10% of added [35S]SSU, the negative control, associated with the resin at the highest concentrations tested (Figure 9B). Soluble POTRA domains effectively competed for binding of [35S]Tic22-III, [35S]Tic22-IV and [35S]preSSU to immobilized POTRA-His in a dose-dependent manner (Figure 9 C), whereas soluble SSU was unable to compete, further demonstrating the specificity of binding. These data demonstrate the ability of Tic22-III and Tic22-IV to directly bind to Toc75 POTRA domains and are consistent with a functional interaction between these proteins in the intermembrane space.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/12631/elife-12631-fig9-v1.jpg)
 
-**Figure 9.:** (A) Binding of Tic22-III, Tic22-IV and preSSU to immobilized Toc75 POTRA domains. [35S]-labeled Tic22-III, Tic22-IV, preSSU and SSU were incubated with increasing amounts of Ni-NTA resin-immobilized Toc75 POTRA-His. Lane 2 in A shows the background binding of radiolabeled proteins to the Ni-NTA resin in the absence of POTRAs. In all cases, binding to Ni-NTA resin alone (lane 2) was less than 10% of added radiolabelled protein. (B) Quantitation of the binding in (A). Binding is presented as the percentage of added [35S]-labeled proteins recovered in each reaction after subtracting binding to Ni-NTA resin alone (lane 2). (C) Binding of POTRA domains to preSSU, Tic22-III or Tic22-IV is specific. Two hundred picomole immobilized POTRA-His was incubated with [35S]-labeled preSSU, Tic22-III or Tic22-IV in the absence or presence of increasing concentrations of soluble POTRA domains or SSU as a competitor. (D) Quantitation of the binding in (C). Binding is presented as the percentage of maximal initial binding. Each data bar represents the mean ± SEM (n = 3). Lanes labeled IVT in panels A and C contain 10% of the in vitro translation product added to each reaction.DOI: http://dx.doi.org/10.7554/eLife.12631.016
+**Figure 9.:** (A) Binding of Tic22-III, Tic22-IV and preSSU to immobilized Toc75 POTRA domains. [35S]-labeled Tic22-III, Tic22-IV, preSSU and SSU were incubated with increasing amounts of Ni-NTA resin-immobilized Toc75 POTRA-His. Lane 2 in A shows the background binding of radiolabeled proteins to the Ni-NTA resin in the absence of POTRAs. In all cases, binding to Ni-NTA resin alone (lane 2) was less than 10% of added radiolabelled protein. (B) Quantitation of the binding in (A). Binding is presented as the percentage of added [35S]-labeled proteins recovered in each reaction after subtracting binding to Ni-NTA resin alone (lane 2). (C) Binding of POTRA domains to preSSU, Tic22-III or Tic22-IV is specific. Two hundred picomole immobilized POTRA-His was incubated with [35S]-labeled preSSU, Tic22-III or Tic22-IV in the absence or presence of increasing concentrations of soluble POTRA domains or SSU as a competitor. (D) Quantitation of the binding in (C). Binding is presented as the percentage of maximal initial binding. Each data bar represents the mean ± SEM (n = 3). Lanes labeled IVT in panels A and C contain 10% of the in vitro translation product added to each reaction.
 
 ## Discussion
 
@@ -161,44 +535,44 @@ Our analysis of Toc75 is consistent with models in which the POTRA domains play 
 
 ## Materials and methods
 
-## Plant growth, genetic complementation of toc75-III-1 and screening of transgenic plants
+### Plant growth, genetic complementation of toc75-III-1 and screening of transgenic plants
 
 Seedlings of Arabidopsis thaliana Col-0 were grown on phytoagar plates containing 0.5 × Murashige and Skoog growth medium (MS medium), 1% sucrose under long-day condition for 14-day at 22°C. Genetic complementation was carried out as described earlier (Shipman-Roston et al., 2010) with a few modifications. Briefly, the Arabidopsis TOC75 genomic fragment of 4.7 kb, including 1 kb upstream and 0.5 kb downstream of the coding sequence in pDONR221 was generated as described (Shipman-Roston et al., 2010), producing the entry clone pDONRgTOC75wt. All deletion constructs were made using the Quickchange II XL site-directed mutagenesis kit (Makarova et al., 2000) using the primers listed in Table 2. The expression clones were generated by an LR recombination reaction between entry clones and the Gateway destination vector, pBnRGW (http://gateway.psb.ugent.be). The destination vector contains a fluorescent marker, DsRed, under a seed specific promoter and BASTA (glufosinate ammonium) resistance, allowing for rapid screening of seed and seedlings. Final constructs were confirmed by sequencing and introduced into heterozygous toc75-III-1 plants (Baldwin et al., 2005) by the Agrobacterium tumefaciens-mediated floral dip method (Clough and Bent, 1998). Transformed seed was initially screened for DsRed fluorescence, followed by growth on MS plates containing 20 µg/ml hygromycin to select for plants carrying the TOC75 variants and toc75-III-1, respectively.
 
-## Reverse transcription-PCR and quantitative PCR
+### Reverse transcription-PCR and quantitative PCR
 
 Total RNA was isolated from 14-day-old Arabidopsis seedlings grown on plates using the RNeasy Plant Mini Kit (Qiagen, Germany) as per manufacturer’s instructions. RNA isolated was quantified by absorbance at 260 nm, and equivalent amounts were used to synthesize first-strand cDNA using SuperScript III and an oligo(dT) primer (Invitrogen, Carlsbad, CA). cDNA was used for PCR reactions (35 cycles) using gene-specific primers. Primers used for PCR amplification of TOC75, TOC75ΔP1, TOC75ΔP1-2 or TOC75ΔP1-3 are listed in Table 3.
 
 Primers for RT-qPCR reactions were designed by Primer 3 v.0.4.0 (Untergasser et al., 2012) with optimal melting temperatures of 58–60°C, primer lengths of 20–30 bp and amplicon lengths of 220–250 bp. RT-qPCR was performed in triplicate using DyNAmo Flash SYBR Green qPCR kit (Thermo Scientific, Waltham, MA). Baseline and threshold cycles (Ct) were analyzed by Realplex 2.2 Software. Relative gene expressions were calculated with respect to internal reference of actin using the 2∆Ct method (Schmittgen and Livak, 2008).
 
-## Chloroplast isolation
+### Chloroplast isolation
 
 Intact chloroplasts were isolated from 14-day-old plants as described previously (Schulz et al., 2004, Wang et al., 2008, Brock et al., 1993). Chloroplasts were counted with a hemocytometer using a phase-contrast microscope with 40x objective (Sung and Chen, 1989) and equivalent numbers of chloroplasts were used in all assays. Chloroplasts were fractionated into soluble and membrane fractions by centrifugation at 18,000 x g at 4°C for 30 min. Proteins from the soluble fraction were precipitated with 15% trichloroacetic acid. Both fractions were resuspended in the sample buffer and analyzed by SDS-PAGE followed by immunoblotting with anti-atToc75.
 
-## Protease treatments
+### Protease treatments
 
 Thermolysin and trypsin treatments of intact chloroplasts were performed as described earlier (Pain and Blobel, 1987, Chen and Schnell, 1997, Inoue et al., 2013, Hsu et al., 2012). All protease treatments were performed in HS buffer (50 mM Hepes-KOH, 330 mM sorbitol, pH 7.5) for 30 min on ice with increasing protease concentrations up to 200 µg/ml trypsin and 100 µg/ml thermolysin in a reaction containing 5 x 108 chloroplasts/ml. Thermolysin was quenched with 20 mM EDTA and trypsin digestion was quenched by addition of protease inhibitor cocktail (2.5 mM PMSF, 0.05 mg/ml Nα-Tosyl-L-lysine chloromethyl ketone (TLCK), 0.25 mg/ml soybean trypsin inhibitor and 2 μg/ml aprotinin). Intact chloroplasts were reisolated through 35% Percoll and washed with ice-cold HS buffer containing EDTA or trypsin inhibitor cocktail. 1% (v/v) Triton X-100 was included in reactions to disrupt membrane permeability.
 
-## Protein extraction, immunoblotting and immunoaffinity chromatography
+### Protein extraction, immunoblotting and immunoaffinity chromatography
 
 Total protein was extracted directly in SDS-PAGE sample buffer from Arabidopsis seedlings. Samples corresponding to equivalent amounts of total protein were resolved by SDS-PAGE, transferred to PVDF membranes, and subjected to immunoblotting with antisera to the indicated proteins. Immunoblotting was performed as described previously (Ma et al., 1996) using chemiluminescence detection. Antisera to atToc159, atToc132, atToc33, atToc34, atTic110, LHCP, SSU and OEP80 were described previously (Ivanova et al., 2004, Inaba et al., 2005, Wang et al., 2008, Hsu et al., 2012). atToc75 antiserum was a generous gift of Dr. Takehito Inaba at Miyazaki University. Quantitation of immunoblots was carried out using ImageJ (v. 1.47).
 
 Immunoaffinity chromatography of TOC core complex proteins under native conditions was performed as described previously (Kouranov et al., 1998). The proteins in each fraction were precipitated with 10% trichloroacetic acid. Total membranes, unbound and eluate fractions were analyzed by SDS-PAGE and immunoblotting with antiserum of atToc159, atTic110, atToc75 and affinity purified atToc33 antibodies.
 
-## In vitro translation and preprotein binding and import assays
+### In vitro translation and preprotein binding and import assays
 
 [35S]Methionine-labeled Arabidopsis preSSU, preE1α, fully processed (mature) forms of Toc75ΔP1 and Toc75ΔP1-2 were generated in a coupled transcription-translation system containing reticulocyte lysate according to the manufacturer’s instructions (Promega, Madison, WI). The in vitro translation product containing [35S]preSSU or [35S]preE1α was used directly for chloroplast import assays. Chloroplast early binding and import reactions were performed using [35S]methione-labeled preproteins and equal number of chloroplasts (107 chloroplasts), in a total volume of 50 μl of import buffer (330 mM sorbitol, 50 mM Hepes-KOH, pH 7.5, 25 mM KOAc and 5 mM MgOAc) for 5 min with 0.1mM ATP and GTP or 20 min at 26°C in the presence of 3 mM ATP for binding and import, respectively as described previously (Chen et al., 2002, Wang et al., 2008). For preprotein binding reactions or early import intermediate formation, the in vitro translated [35S]preSSU was gel filtered on Sephadex G-25 to remove nucleotides (Agne et al., 2009). For the chase experiments, chloroplasts (107) containing bound preprotein or the early import intermediate reactions were generated as above. Chloroplasts recovered after isolation over the 35% Percoll cushion were washed once and resuspended in import buffer. Preprotein translocation was initiated with the addition of 3 mM ATP, and samples were incubated at 26°C for 20 min. All samples were resolved by SDS-PAGE and analyzed by phosphorimaging (Fuji Fla-5000 phosphorimager). Equivalent numbers of chloroplasts based on microscopic counting were loaded in all lanes. ImageQuant TL (v 1.00) software was used for analysis.
 
 For saturation-binding experiments, preSSU-FLAG-HIS was expressed from pET21a:atpSC(-1)-3xFLAG-HIS in E. coli BL21 (DE3) and purified using Ni-NTA matrix (Novagen) under denaturing conditions as described previously (Smith et al., 2004, Inoue et al., 2013). Import and binding were performed as previously described (Wang et al., 2008). The preSSU-FLAG-HIS was denatured with 6 M urea and diluted into import buffer, before the addition of 107 chloroplasts to initiate the reaction. The maximum number of binding sites and apparent Kd for early binding were calculated by plotting specific binding vs. [S], where specific binding was quantitated from immunoblots using ImageJ and [S] equaled the total concentration of preSSU-FLAG-HIS, using non-linear regression analysis of binding data using Graphpad Prism software version 4.00 (San Diego, CA).
 
-## 2D Blue-native PAGE analysis
+### 2D Blue-native PAGE analysis
 
 2D BN-PAGE was performed as described earlier (Kikuchi et al., 2006, Hsu et al., 2012) with a few modifications. Briefly, intact chloroplasts isolated from A. thaliana were resuspended in the hypotonic lysis buffer (10 mM HEPES-KOH, pH 7.5, containing 1 mM MgCl2 and 10 μl/ml PIC [Protease Inhibitor Cocktail for plant extracts; P-9599, Sigma-Aldrich, St. Louis, MO]) for 10 min on ice, and centrifuged at 18,000 x g, 4°C for 30 min. The pellet was solubilized in the buffer (50 mM Bis(2-hydroxyethyl) iminotris (hydroxymethyl)methane (BisTris)-HCl, pH 7.0, containing 1% (w/v) decylmaltoside (Calbiochem, San Diego, CA), 500 mM 6-amino-n-caproic acid, 10% (v/v) glycerol, and 10 μl/ml PIC) at a concentration of 0.5 mg chlorophyll/ml for 20 min on ice. The insoluble materials were removed by centrifugation at 17,000 g for 20 min at 4°C. The supernatant was mixed with Coomassie Brilliant Blue G-250 solution (50 mM BisTris-HCl, pH 7.0, containing 5% (w/v) Serva blue G and 500 mM 6-amino-n-caproic acid] in 100:3.25 (v/v) to give a ratio of the detergent (decylmaltoside) to the dye (Serva blue G) as 8:1 (w/w). The sample was loaded onto a 4–12% (w/v) polyacrylamide gradient gel in 50 mM BisTris-HCl, pH 7.0, containing 500 mM 6-amino-n-caproic acid (1.5 mm thickness, Mini-PROTEAN3, Bio-Rad laboratories, Hercules, CA). Electrophoresis was carried out in the cathode buffer (50 mM tricine, 15 mM BisTris-KOH, pH 7) and the anode buffer (50 mM BisTris-HCl, pH 7) at a constant voltage of 30 V at 4°C for 14 hr. Spectra multicolor Broad Range Protein Ladder (Thermo Scientific) and ferritin (Sigma, F-4503) were used as size standards. After BN-PAGE, the marker lanes were directly stained with Coomassie Brilliant Blue, and the sample lanes were excised and heated at 37°C for 30 min in 3.3% SDS, 4% 2-mercaptoethanol and 65 mM Tris-HCl, pH 6.8. The gel strip was layered on top of a 1.5 mm-thick stacking gel, and the second dimension 5–12% gradient SDS-PAGE under reducing conditions was performed according to standard procedures.
 
-## Solid phase binding assays
+### Solid phase binding assays
 
 A glutathione S-transferase-POTRA fusion (GST-POTRA-His) was expressed in E. coli, purified by Glutathione Sepharose 4B chromatography and cleaved using TEV protease to generate soluble POTRA-His. Solid phase binding assays were performed as described previously (Smith et al., 2004) with some modifications. Soluble POTRA-His was bound to ~10 μl of packed Ni-NTA resin and washed thrice with 50 mM Hepes-KOH, pH 7.5, 2 mM MgCl2, and 40 mM KOAc (HMK buffer) with 10 mM imidazole and 0.1% Triton X-100 (binding buffer). 1–3 μl of [35S]Tic22-III, [35S]Tic22-IV, [35S]preSSU and [35S]SSU were incubated in binding buffer with POTRA-bound resin in a final volume of 100 μl for 30 min at room temperature (23°C). After washing, resin-bound proteins were eluted with SDS-PAGE sample buffer containing 500 mM imidazole. All radiolabeled proteins from in vitro pull-down assays were resolved using SDS-PAGE, and radioactivity was analyzed by phosphorimaging (Fuji Fla-5000 phosphorimager) and quantitated using ImageQuant TL (v 1.00).
 
-## Accession numbers
+### Accession numbers
 
 Sequence data from this article can be found in the EMBL/GenBank data libraries under accession number Arabidopsis AGI locus identifier: AT3G46740 for Toc75-III.

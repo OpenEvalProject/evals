@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/000prga03 College of Medical Laboratory Science, Guilin Medical University Guangxi China
+1. College of Medical Laboratory Science, Guilin Medical University Guangxi China ([ROR:000prga03](https://ror.org/000prga03))
 
 † Corresponding author
 
@@ -22,27 +22,27 @@ Immunotherapy is designed to strengthen the patient’s immune system in order t
 
 ## Results
 
-## Monitoring body weight
+### Monitoring body weight
 
 Fifty male C57BL/6 mice were randomly divided into five equal groups: tumor + serum treatment, tumor + no serum treatment, control + serum treatment (control 1), control + no serum treatment (control 2), and serum provider (Figure 1). At the beginning of the experiment, male C57BL/6 mice (aged 6–8 weeks) had an average body weight of 20.5±0.3 g, with a range of 20.0–21.3 g. Following 12 weeks of DMBA/TPA treatment, mCSCC developed on the backs of these mice in tumor + serum treatment and tumor + no serum treatment groups. The average body weights of the DMBA/TPA-treated and control animals were 24.9±1.1 g and 26.7±0.8 g, respectively. At the end of the experiment (week 17), the average body weights were as follows: 26.6±1.4 g for the tumor + serum treatment group, 27.6±1.2 g for the tumor + no serum treatment group, 28.5±0.8 g for the control 1 group (control + serum treatment), and 28.5±0.8 g for control 2 group (control + no serum treatment).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95678/elife-95678-fig1-v1.jpg)
 
-## Serum treatment inhibits the growth of mCSCC
+### Serum treatment inhibits the growth of mCSCC
 
 During the DMBA/TPA induction phase, the tumor progressively grows, reaching its peak average volume at 12 weeks. This volume measures 13.3 mm³ in the tumor + serum treatment group and 13.6 mm³ in the tumor + no serum treatment group. In the group that did not receive serum treatment, no significant changes in the tumor volume (13.5 mm³) were observed by week 17. However, after 3 weeks of serum treatment, the tumor volume dramatically reduced to 8.6 mm³ in the tumor + serum treatment group. This substantial decrease demonstrates the efficacy of serum treatment in reducing tumor volume (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95678/elife-95678-fig2-v1.jpg)
 
-**Figure 2.:** (A) Tumor growth induced by Dimethylbenz(a)anthracene (DMBA)/Tetradecanoylphorbol-13-acetate (TPA) and changes in tumor volume before and after serum treatment. At week 12, the tumor volume reached its peak. Week 13 was dedicated to the isolation and expansion of the tumor cell. In week 14, the tumor cells were injected into the tail vein of paired mice in the serum provider group to produce serum-based antibodies. Weeks 15, 16, and 17 represent mice in tumor + serum treatment group receiving three times of serum treatment, respectively. Results are presented as the mean ± standard deviation (SD) obtained from at least three biological replicates. A paired two-tailed t-test was used for statistical evaluation. Asterisks indicate the following: **p<0.01. (B) Tumor cells isolated and cultured from mouse cutaneous squamous cell carcinoma (mCSCC). Scale bar, 100 µm.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Tumor growth induced by Dimethylbenz(a)anthracene (DMBA)/Tetradecanoylphorbol-13-acetate (TPA) and changes in tumor volume before and after serum treatment. At week 12, the tumor volume reached its peak. Week 13 was dedicated to the isolation and expansion of the tumor cell. In week 14, the tumor cells were injected into the tail vein of paired mice in the serum provider group to produce serum-based antibodies. Weeks 15, 16, and 17 represent mice in tumor + serum treatment group receiving three times of serum treatment, respectively. Results are presented as the mean ± standard deviation (SD) obtained from at least three biological replicates. A paired two-tailed t-test was used for statistical evaluation. Asterisks indicate the following: **p<0.01. (B) Tumor cells isolated and cultured from mouse cutaneous squamous cell carcinoma (mCSCC). Scale bar, 100 µm.
 
-## Serum treatment reverses the expression of cancer biomarkers
+### Serum treatment reverses the expression of cancer biomarkers
 
 The ELISA assay results indicate that in mCSCC, the expression levels of p53, Bcl-xL, and NF-κB are high, while Bax is expressed at a lower level. However, following serum treatment, the levels of p53, Bcl-xL, and NF-κB decreased, whereas the expression of Bax increased (Figure 3). These findings suggest that serum treatment can effectively reverse the expression of cancer biomarkers.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/95678/elife-95678-fig3-v1.jpg)
 
-**Figure 3.:** ELISA analysis revealed the changes in the expression of p53, Bcl-xL, NF-κB, and Bax proteins before and after serum treatment. The tumor volume reached its peak at week 12. The mice in the tumor + serum treatment group received serum treatment at weeks 15, 16, and 17, respectively. Results are presented as the mean ± standard deviation (SD) obtained from at least three biological replicates. Statistical significance was determined by a paired two-tailed t-test. Asterisks indicate the following: **p<0.01.Figure 3—source data 1.Figure 3.
+**Figure 3.:** ELISA analysis revealed the changes in the expression of p53, Bcl-xL, NF-κB, and Bax proteins before and after serum treatment. The tumor volume reached its peak at week 12. The mice in the tumor + serum treatment group received serum treatment at weeks 15, 16, and 17, respectively. Results are presented as the mean ± standard deviation (SD) obtained from at least three biological replicates. Statistical significance was determined by a paired two-tailed t-test. Asterisks indicate the following: **p<0.01.
 
 ## Discussion
 
@@ -58,18 +58,18 @@ In conclusion, this research has explored a new strategy for mCSCC treatment by 
 
 ## Materials and methods
 
-## DMBA/TPA carcinogenesis
+### DMBA/TPA carcinogenesis
 
 Fifty C57BL/6 male mice were randomly divided into five groups: tumor + serum treatment, tumor + no serum treatment, control + serum treatment (control 1), control + no serum treatment (control 2), and serum provider. Each mouse from the tumor + serum treatment group was paired with a mouse of the same blood type (type A or type B) from the serum provider group. The mice in the tumor + serum treatment and tumor + no serum treatment groups received treatment with 7,12-Dimethylbenz(a)anthracene (DMBA) and 12-O-Tetradecanoylphorbol-13-acetate (TPA). The dorsal skin area of the mice was shaved. Two days later, the mice were topically treated with 60 µg of DMBA, dissolved in 200 µl of acetone, on their bare backs. This DMBA administration was carried out for 2 weeks, after which the mice were exposed to 2.5 µg of TPA in 200 µl of acetone once a week for a total of 10 weeks. DMBA (Lot: D3254) and TPA (Lot: P1585) were purchased from Sigma-Aldrich, China. Skin tumors were measured using a precision caliper, which allowed for the detection of size changes greater than 0.1 mm. Body weights were recorded weekly. Tumor volumes were measured on the first day of treatment and every week thereafter until the end of the experiments. The volume was calculated using the formula V=π × [d2 ×D]/6, where V represents the volume of the tumor, d is the minor axis of the tumor (the shortest diameter), D is the major axis of the tumor (the longest diameter) (Lapouge et al., 2012). Figure 1 presents a workflow of this study. This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee protocols of Guilin Medical University. The protocol was approved by the Experimental Animal Ethics Committee of Guilin Medical University (Permit Number: GLMC202203177). All surgery was performed under sodium pentobarbital anesthesia, and every effort was made to minimize suffering.
 
-## Cell preparation and serum injection
+### Cell preparation and serum injection
 
 The preparation of single-cell suspensions from skin tumor tissues involved the use of a cell suspension preparation kit (Lot: KFS439, Beijing Baiaolaibo Technology Co, China), with a slight modification. Briefly, the dorsal skin tumor tissues were washed with PBS and cut into small fragments of 1–2 mm in size in a Petri dish containing EDTA/Trypsin. The minced tumor pieces were then transferred to a tube containing trypsin and incubated at 37 °C for an hour with shaking. DMEM/10% FBS was added to the dish to recover all cells and tissue, which were then passed through a 100 mm cell strainer. The cell suspension was centrifuged at 500×g for 5 min, and the recovered cells were plated out, ideally at densities of 1×105 per 100 mm dish in KC growth medium (Figure 2B). The cells were then incubated at 37 °C in a 5% CO2 incubator for 7 days with daily medium changes (Li et al., 2017). Each mouse in the tumor + serum treatment group was randomly paired with a mouse in the serum provider group. Approximately 5×105 primary tumor cells suspended in PBS were injected into the tail vein of the paired mice in the serum provider group. After 7 days, 0.1 ml of whole blood was collected from the tail vein of the mice in the serum provider group under ether anesthesia. The serum was immediately separated by brief centrifugation, yielding about 0.02–0.05 ml of serum each time. This serum (0.02 ml) was then injected into the tail vein of its paired mouse in the tumor + serum treatment group once a week, for a total of three times (from weeks 15–17).
 
-## Enzyme linked immunosorbent assay
+### Enzyme linked immunosorbent assay
 
 Previous research has established a connection between the levels of p53, Bcl-xL, NF-κB, and Bax and the occurrence, progression, and metastasis of mCSCC (Piipponen et al., 2021; Vasiljević et al., 2009; Han et al., 2019; Zhou et al., 2017). Consequently, this study measured the concentrations of p53, Bcl-xL, NF-κB, and Bax in tissue samples using an ELISA assay. The ELISA Development Kits for mouse p53 (Lot: ab224878), Bcl-xL (Lot: ab227899), NF-κB (Lot: ab176648), and Bax (Lot: ab233624) were procured from Abcam, China. The procedure was as follows: The coated antibody was diluted and added to the ELISA plate (100 µL/well) and incubated for 48 hr at 4 °C. The ELISA plate was then washed three times with tris-buffered saline (TBS) and the diluted sample (100 µL/well) was added and incubated for 90 min at 37 °C. After washing three times, all samples were incubated with the diluted enzyme-labeled antibody (100 µl/well) for 60 min at 37 °C. The plate was washed three times again, and then the avidin-biotin-peroxidase complex (ABC) developer (100 µL/well) was added. After a 30 min incubation in the dark at 37°C, the reaction was stopped using 100 μl of stop buffer. Finally, the plates were read at 450 nm on a microplate reader (Thermo, China).
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± standard deviation (SD) from three independent experiments. Differences before and after treatment were analyzed using paired sample t-tests with the SPSS 16.0 software package (SPSS Inc, Chicago). p value less than 0.05 was considered statistically significant. All experiments were repeated at least three times.

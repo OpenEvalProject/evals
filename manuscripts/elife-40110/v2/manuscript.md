@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.40110.001 Human excitatory amino acid transporters (EAATs) take up the neurotransmitter glutamate in the brain and are essential to maintain excitatory neurotransmission. Our understanding of the EAATs’ molecular mechanisms has been hampered by the lack of stability of purified protein samples for biophysical analyses. Here, we present approaches based on consensus mutagenesis to obtain thermostable EAAT1 variants that share up to ~95% amino acid identity with the wild type transporters, and remain natively folded and functional. Structural analyses of EAAT1 and the consensus designs using hydrogen-deuterium exchange linked to mass spectrometry show that small and highly cooperative unfolding events at the inter-subunit interface rate-limit their thermal denaturation, while the transport domain unfolds at a later stage in the unfolding pathway. Our findings provide structural insights into the kinetic stability of human glutamate transporters, and introduce general approaches to extend the lifetime of human membrane proteins for biophysical analyses.
+Human excitatory amino acid transporters (EAATs) take up the neurotransmitter glutamate in the brain and are essential to maintain excitatory neurotransmission. Our understanding of the EAATs’ molecular mechanisms has been hampered by the lack of stability of purified protein samples for biophysical analyses. Here, we present approaches based on consensus mutagenesis to obtain thermostable EAAT1 variants that share up to ~95% amino acid identity with the wild type transporters, and remain natively folded and functional. Structural analyses of EAAT1 and the consensus designs using hydrogen-deuterium exchange linked to mass spectrometry show that small and highly cooperative unfolding events at the inter-subunit interface rate-limit their thermal denaturation, while the transport domain unfolds at a later stage in the unfolding pathway. Our findings provide structural insights into the kinetic stability of human glutamate transporters, and introduce general approaches to extend the lifetime of human membrane proteins for biophysical analyses.
 
 ## Introduction
 
@@ -34,43 +34,95 @@ In this work, we used consensus-based approaches to design EAAT1 variants that s
 
 ## Results
 
-## EAAT1 consensus designs
+### EAAT1 consensus designs
 
 EAAT1WT heterologously expresses at the cell surface of mammalian cells and is functional for neurotransmitter transport (Arriza et al., 1994). However, when detergent-purified and reconstituted into synthetic liposomes, EAAT1WT lacks this function suggesting that the detergent solutions used for solubilization and purification irreversibly inactivate the protein (Canul-Tec et al., 2017). To increase the stability of the transporters in detergent solutions, we identified the most frequent amino acids among representative animal SLC1 structural homologs (i.e. consensus amino acids; see methods), and simultaneously exchanged all residues within the expected helical regions of EAAT1WT for consensus amino acids. This consensus design yielded a transporter, so-called EAAT1-consensus (EAAT1CO), with 44 and 33 amino acid exchanges in the ScaD and TranD, respectively (Figure 1a, Figure 1—figure supplement 1). The exchanges localize mostly to hydrophobic regions facing either the trimeric interface or the lipid bilayer and involve conservative substitutions among hydrophobic residues (mainly between Ile, Leu, Val, and Met). EAAT1CO shares 85% amino acid identity and 92% similarity with EAAT1WT, and shows similar levels of neurotransmitter uptake in cells compared to EAAT1WT. Unlike the wild-type protein however, EAAT1CO featured robust glutamate uptake upon purification and reconstitution in synthetic liposomes (Figure 1c–e). Moreover, glutamate transport in liposomes was strongly dependent on opposite gradients of sodium and potassium across the bilayer, and the rate of transport increased with the external L-glutamate concentration with a Km (~30 μM) similar to the one reported for EAAT1WT (Arriza et al., 1994). Altogether, these data demonstrate that detergent-solubilized and purified EAAT1CO remains active and that its ion-coupled transport mechanism is conserved.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig1-v2.jpg)
+
+**Figure 1.:** (a-b) Residues exchanged for consensus amino acids in EAAT1CO (a) and EAAT1COCO (b) are mapped into the structure of the EAAT1CRYST (PDB 5LLM) trimer viewed from the extracellular medium (left panel), as well as the scaffold (cyan) and the transport (orange) domains viewed from the membrane. These domains are depicted separately for clarity of display, including two views of the transport domain separated ~ 180° from each other, showing its interface with the scaffold domain (left) and the membrane (right), respectively. Spheres correspond to the alpha carbon atoms of residues that were exchanged by conservative (grey) and non-conservative (black) consensus mutations. (c–d), Radioactive L-glutamate uptake in HEK293 cells expressing the transporters (c), including control cells transfected with a vector lacking EAAT1 genes, and in liposomes with purified reconstituted transporters (d). EAAT1WT data in (d) was originally published in ref. (29). Yellow circles depict the liposomal bilayer separating sodium- (Na+), potassium- (K+), and choline-based (Ch+) solutions. (e), Rate of L-glutamate uptake by purified EAAT1CO (blue) and EAAT1COCO (red) reconstituted in liposomes, as a function of L-glutamate concentration. Solid lines indicate Michaelis-Menten fits to the data with Km values 30.7 ± 25.6 and 18.8 ± 8.3 μM, and Vmax values 18.3 ± 4.3 and 12.8 ± 1.4 pmol μg−1 min−1 for EAAT1CO (blue) and EAAT1COCO (red), respectively. Plots in c–e) depict an average of at least three independent experiments performed with duplicate measurements, and error bars represent s.e.m.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a), Amino acid sequences of EAAT1CO, EAAT1COCO, and EAAT1WT are compared. The rectangles above the sequences highlight the transmembrane helices observed in the crystal structure of EAAT1CRYST (PDB 5LLM) that form the transport (orange) and scaffold (cyan) domains, respectively. (b) Topology organization diagram of EAAT1 transporters following the same color code as above.
+
 In a second consensus design, we hypothesized that coevolved residue-residue contacts could play an important role in protein stability. Amino acid covariance in large sequence alignments has been shown to accurately predict amino acid physical proximity in 3D protein structures (Morcos et al., 2011; Hopf et al., 2012; Kamisetty et al., 2013; Nugent and Jones, 2012), and we used it as a proxy for coevolved inter-residue contacts. Amino acid covariance was calculated from a curated PFAM alignment of the SLC1 family, and the consensus exchanges were restricted to positions in the EAAT1WT sequence with the highest covariance (see methods). It is worth noting that the consensus amino acid exchanges were identical to those in EAAT1CO, and determined from animal SLC1 homologs. This alternative design yielded a transporter, the so-called EAAT1-consensus-covariance (EAAT1COCO), that contains a subset of the EAAT1CO amino acid exchanges, 15 in the ScaD and 14 in TranD, and shares high amino acid sequence identity (95%) and similarity (97%) with EAAT1WT (Figure 1b, Figure 1—figure supplement 1). Like EAAT1CO, purified EAAT1COCO retained conserved ion-coupled transport mechanism upon reconstitution in synthetic liposomes (Figure 1c–e).
 
-## Structural comparison between EAAT1 wild type and consensus designs
+### Structural comparison between EAAT1 wild type and consensus designs
 
 To gain insights into the structural differences between EAAT1WT and the consensus designs in detergent solutions, we compared their hydrogen-deuterium exchange (HDX) behavior using a protease-induced fragmentation approach linked to mass spectrometry (MS) (Konermann et al., 2011; Englander et al., 2016). HDX-MS measures the rate of deuterium exchange of the hydrogen amide in the protein backbone that strongly depends on the presence of secondary structure, due to the engagement of the amide group in hydrogen bonding, as well as on its access to the aqueous solvent. Therefore, HDX-MS provides very valuable information on protein folding, stability, and dynamics.
 
 EAAT1CO and EAAT1COCO showed similar overall HDX patterns when assayed at 20°C in detergent solutions with overall sequence coverage of ~70% (Figure 2a–e, Figure 2—figure supplements 1 and 2), and unimodal isotopic envelopes across all peptides (Figure 2, Figure 2—figure supplement 3). The deuterium uptake time course of most peptides covering structured regions of the TranD and ScaD based on the structure of EAAT1CRYST showed slow deuterium incorporation that starts after ≥10 s, or even lacked any incorporation for up to 1 hr (Figure 2a–c, Figure 2—figure supplement 4). The observed kinetics is several orders of magnitude slower than predicted for unstructured peptides that are expected to reach saturating uptake values in the millisecond range under our experimental conditions (Bai et al., 1993). This demonstrates high degree of backbone protection of those peptides and strongly suggests conservation of the overall secondary structure in the transporters. Notably, TranD peptides covering buried regions that lack secondary structure and are involved in coordination of substrate and sodium ions, like the SLC1-family signature sequence 398-NMDG-401, also showed high degree of HDX backbone protection arguing that ligands remain bound and occluded from the bulk solution as observed in the crystal structures. In contrast, peptides covering predicted unstructured and non-conserved regions like the N- and C-termini, as well as the extracellular loops connecting TM3-TM4a and TM4b-TM4c, respectively, which were not resolved in the EAAT1CRYST structures, showed saturating levels of deuterium uptake already at the shortest time measured of 10 s, consistent with these regions being fully solvent accessible. Importantly, the HDX patterns of EAAT1CO and EAAT1COCO are similar to that of EAAT1CRYST (Canul-Tec et al., 2017), which is also a functional transporter, suggesting that the overall secondary structure is similar among these transporters.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig2-v2.jpg)
+
+**Figure 2.:** (a-c) Deuterium uptake kinetics at 20°C of examples peptides from EAAT1WT (grey), EAAT1CO (blue), and EAAT1COCO (red), respectively, covering both helical and unstructured regions of the transporters. Solid lines represent double-exponential fits to the data, and dotted lines the expected deuterium kinetics of unfolded and solvent exposed peptides (see ‘HDX kinetic analysis’ in Methods). Plots in (a–c) depict an average of three independent experiments, and error bars represent s.e.m. (d-f) Deuterium incorporation after 1 hr at 20°C in EAAT1CO (d), EAAT1COCO (e), and EAAT1WT (f) mapped into the structure of the EAAT1CRYTS (PDB 5LLM) trimer viewed from the extracellular medium (upper panel), as well as the scaffold (ScaD) and the transport (TranD) domains viewed from the membrane (lower panel), respectively. These domains are depicted separately for clarity of display, and black lines indicate the approximate position of some peptides in the structure, and the substrate (Asp). In the trimeric depiction, arrows point to the interface between protomers. Deuterium incorporation was calculated as an average of three independent experiments, and normalized to the maximal theoretical incorporation based on the number of backbone amide available for exchange in each peptide. The color code representing deuterium incorporation is depicted in a scale bar (d).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Sequence coverage of EAAT1COCO obtained after 2 min pepsin digestion. Each bar below the protein sequence corresponds to a unique peptide identified by data independent MS/MS acquisition. A total of 49 peptides (colored in blue) covering 69.5% of the EAAT1CO sequence were selected for data extraction. Two extra N-terminal residues (GP) remaining after PreScission cleavage are also reported. (b) HDX-MS profile of EAAT1CO. The relative fractional uptake values determined for each peptide and at each time point are plotted as a function of peptide position in the protein sequence. The color code of the MS data acquired from 10 s up to 1 hr is indicated in the upper part of the panel. Each point corresponds to the average fractional uptake value obtained from three independent replicates. Small color bars indicate helical regions of the TranD (orange) and ScaD (blue).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Sequence coverage of EAAT1COCO obtained after 2 min pepsin digestion. Each bar below the protein sequence corresponds to a unique peptide identified by data independent MS/MS acquisition. A total of 53 peptides (colored in blue) covering 78.3% of the EAAT1COCO sequence were selected for data extraction. The two extra N-terminal residues (GP) remaining after PreScission cleavage are also reported. (b) HDX-MS profile of EAAT1COCO. The relative fractional uptake values determined for each peptide and at each time point are plotted as a function of peptide position in the protein sequence. The color code of the MS data acquired from 10 s up to 1 hr is indicated in the upper part of the panel. Each point corresponds to the average fractional uptake value obtained from three independent replicates. Small color bars indicate the helical region of the TranD (orange) and ScaD (blue).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a-b) Raw MS data of example peptides 357–369 (a) and 390–399 (b) in EAAT1CO (left column) and EAAT1COCO (right column). The top mass spectra represent the isotopic distribution of the undeuterated (UND) peptides. One unique isotopic distribution is observed during the time course of the experiment indicative of EX2 kinetic.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Deuterium uptake kinetic plots at 20°C of example peptides from EAAT1WT (grey), EAAT1CO (blue), and EAAT1COCO (red), respectively, covering both helical and unstructured regions of the transporters. Solid lines represent double exponential fits to the data, and dotted lines the expected deuterium kinetics of unfolded and solvent exposed peptides (see methods). Labels at the top of the plots indicate the positions of residues in the sequence as well as the regions of the transporter covered by the peptides and their involvement in substrate (subst.) and sodium 1 – 3 (Na1-3) coordination (in brackets), respectively. Plots depict an average of three independent experiments, and error bars represent s.e.m.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Sequence coverage of EAAT1WT obtained after 2 min pepsin digestion. Each bar below the protein sequence corresponds to a unique peptide identified by data independent MS/MS acquisition. A total of 48 peptides (colored in blue) covering 74.8% of the EAAT1WT sequence were selected for data extraction. The two extra N-terminal residues (GP) remaining after PreScission cleavage are also reported. (b) HDX-MS profile of EAAT1WT. The relative fractional uptake values determined for each peptide and at each time point are plotted as a function of peptide position in the protein sequence. The color code of the MS data acquired from 10 s up to 1 hr is indicated in the upper part of the panel. Each point corresponds to the average fractional uptake value obtained from three independent replicates. Small color bars indicate the helical region of the TranD (orange) and ScaD (blue).
+
 The HDX behavior of detergent-solubilized EAAT1WT was strikingly different from the consensus designs and showed an overall dramatic increase in deuterium uptake over most of the sequence coverage (Figure 2a–c and f, Figure 2—figure supplements 4 and 5). The HDX increase was most prominent in the cytoplasmic half of the TranD including TM3 (peptide 112 – 123) and importantly, in peptides covering the substrate and sodium binding sites in HP1 (peptide 357 – 369), TM7 (peptides 390 – 399 and 397 – 404), and TM8b (peptide 479 – 492). These regions of the TranD revealed maximal deuterium uptake already at 10 s, just as we observed in the unstructured N- and C-termini. The dramatic loss of HDX backbone protection at the functional core of the wild type transporter, compared to the consensus designs, implies that its native structure along with the interactions with the substrate and sodium ions was lost upon detergent-solubilization and purification. We also observed increased HDX in the ScaD, particularly in extracellular TM4a-b (including peptide 174 – 184, and 187 – 194) that forms extensive inter-subunit contacts, as well as the cytoplasmic end of TM2 (peptide 98 – 104) connecting the ScaD to the TranD at the level of TM3. Although the deuterium uptake time course in these regions still reveals some level of backbone protection, the large increase in deuterium uptake argues that the ScaD in EAAT1WT has partly lost secondary structure and/or that the oligomeric state of the transporter is compromised.
 
 Altogether the HDX results show that EAAT1CO and EAAT1COCO retain the native fold observe in the structure of EAAT1CRYST, while EAAT1WT undergoes partial and extensive unfolding events that include the substrate and coupled-sodium binding sites. Consistently, purified EAAT1CO and EAAT1COCO, but not EAAT1WT showed robust transport function. The above results prove that the consensus, as well as the consensus-covariance designs can be used as semi-rational approaches to stabilize human EAAT1 and possibly other membrane proteins for biophysical analyses of their molecular mechanisms.
 
-## Thermal stability of trimeric transporters
+### Thermal stability of trimeric transporters
 
 To gain further insights into the stability of EAAT1CO and EAAT1COCO, we studied their thermal denaturation. Thermal denaturation is in general an irreversible process in detergent-solubilized membrane proteins, and offers the possibility to capture kinetic intermediates of the unfolding pathway. We first used size exclusion chromatography (SEC) to analyze the effect of single twenty-minute temperature pre-pulses on purified EAAT1CO and EAAT1COCO in detergent solutions, at a constant protein concentration. In this way, we aimed to quantify the irreversible effect of temperature on protein solubility, aggregation, and oligomeric state compared to reference transporters that were not pre-heated.
 
 Indeed, both EAAT1CO and EAAT1COCO reference samples maintained at 4°C eluted as monodisperse peaks that correspond to the trimeric form of the transporters, and remained stable up to 35°C and 25°C, respectively (Figure 3a,b,d,e). At higher temperatures the trimers unfolded into a lower oligomeric state accompanied by a significant right-shift in the elution volume, but without any sign of aggregation or insolubility judging by the lack of high molecular-weight peaks and the constant area under the chromatograms at all temperatures, respectively. The temperature at which half of the transporters were in the trimeric state (T50-SEC) in EAAT1CO and EAAT1COCO were 49.06 ± 0.02°C and 38.4 ± 0.3°C, respectively, demonstrating that the quaternary structure of EAAT1CO is kinetically more thermo-stable than that of EAAT1COCO. Interestingly, the appearance of a single low molecular-weight peak in the chromatographic profiles at high temperatures argues that the trimers unfold into monomers, in a highly cooperative process that does not involve the formation of stable dimers, and that monomers remain soluble at pre-pulse temperatures up to 65°C.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig3-v2.jpg)
+
+**Figure 3.:** (a-c) Size-exclusion chromatograms of purified EAAT1CO (a), EAAT1COCO (b), and the chimeric transporter EAAT1-ScaDCO-TranDCOCO (c), respectively, pre-heated at different temperatures. The chromatograms at all temperatures were normalized to the peak fluorescence value observed at 4°C, and show how the trimeric form of the transporters that elutes at ~3.0 ml unfolds into lower oligomeric state(s), most likely monomers that elute at ~3.5 ml. (d-f) Thermal unfolding curves depicting the change in fractional area of the chromatographic peak corresponding to the trimeric transporters (black symbols), as a function of the pre-pulse temperature in EAAT1CO (d), EAAT1COCO (e), and EAAT1-ScaDCO-TranDCOCO (f), respectively. Solid lines indicate fits of a Hill-like equation (see methods) to the data with T50-SEC values 49.06 ± 0.1, 38.4 ± 0.4°C and 45.6 ± 0.4°C, and H values −21.0 ± 0.3,–9.3 ± 0.7, and −18.3 ± 5.3 for EAAT1CO, EAAT1COCO, and EAAT1-ScaDCO-TranDCOCO, respectively. The total area under the chromatogram at each temperature, normalized to that at 4°C, is also shown (empty symbols), and remains relatively constant at all temperatures showing the lack of protein aggregation or loss during sample preparation. Plots in (d), (e), and (f) depict an average of at least three independent experiments (circles), and error bars represent s.e.m.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** a, Representative SEC profiles of purified EAAT1COCO samples at 4°C (reference temperature) or pre-heated at 55°C. The profiles are also shown in Figure 3b. (b), Radioactive L-glutamate uptake in liposomes with purified reconstituted EAAT1COCO. The protein was reconstituted after incubation for 20 min at either 4°C or 55°C. Plots depict an average of three independent experiments performed with duplicate measurements, and error bars represent s.e.m. Individual measurements are overlaid (open circles).
+
 In order to probe the transport function of the low molecular-weight species observed by SEC, we reconstituted EAAT1COCO samples pre-heated at 55°C in liposomes, and compared them to the reference samples maintained at 4°C. Indeed, the large decrease in neurotransmitter uptake observed in the pre-heated samples shows that the transport function of the low molecular-weight species has been largely impaired (Figure 3—figure supplement 1), and indicates that the monomeric form of the transporter is not functional.
 
 The concomitant loss of trimeric state and transport function argues that early events during the thermal inactivation of the transporters involve the cooperative dissociation of the subunits, and suggests an important role of the trimeric interface in the thermal stability of the transporters. To gain further insights into the role of this interface, we built a transporter with the ScaD of EAAT1CO and the TranD of EAAT1COCO (EAAT1-ScaDCO-TranDCOCO), which involved adding 29 consensus mutations into the EAAT1COCO ScaD (Figure 1, Figure 1—figure supplement 1). Notably, the temperature unfolding curve of EAAT1-ScaDCO-TranDCOCO approached that of EAAT1CO (T50-SEC of 45.2 ± 1.0°C; Figure 3f) confirming that key determinants of the transporter thermal stability localize to the trimeric interface.
 
-## Local thermal unfolding
+### Local thermal unfolding
 
 The chromatographic and functional analysis of the consensus designs clearly established that temperature pre-pulses irreversibly generate soluble intermediates of the thermal unfolding pathway. To gain structural insights into these intermediates, we measured deuterium uptake at 20°C in transporters pre-heated at different temperatures, using as reference transporters that were not pre-heated. Since the sample throughput by HDX-MS is limited, we focused the analysis of EAAT1CO and EAAT1COCO to temperatures corresponding to their respective T50-SEC, as well as selected temperatures below and above it.
 
 The overall HDX behavior of EAAT1CO and EAAT1COCO was similar when the transporters were pre-heated at temperatures close to their T50-SEC, 50°C and 40°C, respectively (Figure 4a,b; Figure 4—figure supplements 1a,b and 2a). In the TranD of the two consensus designs, deuterium uptake remained unchanged showing that within the limits of our sequence coverage, there were no irreversible structural changes at temperatures near the T50-SEC. Strikingly, the two consensus designs showed significant HDX increases in the extracellular part of TM4 (e.g. peptide 174 – 184) and TM2 (e.g. peptide 81 – 87), which localize to the inter-subunit interface in the trimeric transporters. To a lesser extent, HDX also increased in the cytoplasmic parts of TM2 and TM3 in EAAT1CO (e.g. peptides 105–111 and 112–123, respectively), as well as the extracellular end of TM4c in EAAT1COCO (peptide 230–246), which are in close proximity to that interface (Figure 4a,b). These results map the initial temperature-induced structural changes in the transporters to the extracellular part of the inter-subunit interface, and reinforce its key role in thermal stability.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig4-v2.jpg)
+
+**Figure 4.:** (a-b) Changes in deuterium incorporation induced by pre-pulses at nearly the T50-SEC of EAAT1CO (50°C) (a), and EAAT1COCO (40°C) (b), respectively, measured after 1 hr at 20°C. The changes are mapped into the structure of the EAAT1CRYST (PDB 5LLM) trimer viewed from the extracellular medium (upper panel), as well as the scaffold (ScaD) and the transport (TranD) domains viewed from the membrane (lower panel), respectively. These domains are depicted separately for clarity of display, and black lines indicate the approximate position of some peptides in the structure, and the substrate (Asp). In the trimeric depiction, arrows point to the interface between protomers. The color code representing the change in deuterium incorporation is depicted in a scale bar (a). Positive values represent increase in deuterium uptake at 50°C (EAAT1CO) and 40°C (EAAT1COCO) over the reference temperature (20°C), respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a-c) Difference in fractional deuterium uptake between the reference pre-pulse temperature (20°C) and 40°C (a), 50°C (b), or 65°C (c) plotted as a function of the peptide position in the protein sequence. The color code of the MS data acquired from 10 s up to 1 hr is indicated in (a). All identified peptides are plotted. Each point corresponds to the difference in the average fractional uptake value obtained from three independent replicates. Negative differences indicate increase HDX at the test pre-pulse temperature compared to the reference. Small color bars indicate the helical region of the TranD (orange) and ScaD (blue).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a-b) Difference in fractional deuterium uptake between the reference pre-pulse temperature (20°C), and 40 (a) or 50°C (b) plotted as a function of the peptide position in the protein sequence. The color code of the MS data acquired from 10 s up to 1 hr is indicated in (a). All identified peptides are plotted. Each point corresponds to the difference in the average fractional uptake value obtained from three independent replicates. Negative differences indicate increase HDX at the test pre-pulse temperature compared to the reference. Small color bars indicate the helical region of the TranD (orange) and ScaD (blue).
+
 Next, we measured HDX in EAAT1CO and EAAT1COCO pre-heated at 65°C and 55°C (Figure 4—figure supplements 1c and 2b), respectively. Both transporters showed dramatic HDX increases at the inter-subunit interface and its proximity (e.g. TM4 peptide 174–184; and TM2 peptide 81–87), which went beyond the changes observed at their respective T50-SEC. Such extensive loss of backbone protection is consistent with the subunit dissociation observed by SEC that would expose the buried inter-subunit interface to the solvent. Furthermore, the fact that deuterium uptake at high temperature pre-pulses reaches nearly saturating values at 10–60 s in TM4a-c peptides 162–172 and 187–194 (Figure 6—figure supplement 1, cyan circles), strongly argues that there is also loss of secondary structure at the interfacial helices.
 
 On the other hand, the HDX profile of the TranD differed greatly between EAAT1CO and EAAT1COCO at temperatures above their T50-SEC. In the latter, deuterium uptake remained unchanged in samples preheated at 55°C, demonstrating lack of significant structural changes (Figure 4—figure supplement 2b). In contrast, EAAT1CO preheated at 65°C showed an overall dramatic HDX increase in the TranD (e.g peptide 361–369 in HP1, 390–399 in TM7, and 483–495 in TM8) (Figure 4—figure supplement 1c) consistent with extensive unfolding of this domain, including the substrate and sodium binding sites, just as we observed in EAAT1WT. All together, these results show that the TranD of both EAAT1CO and EAAT1COCO have higher thermal stability than the respective ScaD, and remain folded at pre-pulse temperatures < 50°C.
 
-## Correlation between local unfolding and subunit dissociation
+### Correlation between local unfolding and subunit dissociation
 
 Our thermal denaturation experiments show that increasing temperatures induce on one side loss of the trimeric state as monitored by SEC, as well as local unfolding that initially map to the inter-subunit interface, as indicated by HDX. Both types of structural changes are irreversible in nature and reflect the kinetic stability of the transporters, rather than their thermodynamic stability. Hence, the comparison between the T50 values for the subunit dissociation (T50-SEC) and those for the unfolding of individual peptides based on HDX (T50-HDX), offers a quantitative way to correlate the temporal course of the two processes.
 
@@ -80,15 +132,23 @@ With that aim in mind, we observed that peptides at the inter-subunit interface 
 
 **Figure 5.:** (a-b) m/z envelopes of an example peptide covering residues 174–184 of EAAT1CO (a) and EAAT1COCO (b), respectively, at different pre-pulse temperatures. Grey symbols represent the average of three experiments and error bars represent s.e.m, and are superimposed on the m/z spectrum of a representative experiment (black solid line). Blue solid lines represent fits of a double Gaussian equation to the data. The low-m/z (orange solid line) and high-m/z (green solid lines) components of such double-Gaussian fits are also shown. (c–d), HDX temporal course of peptide 174–184 of EAAT1CO (c) and EAAT1COCO (d) samples pre-heated at different temperatures. Deuterium incorporation values were calculated for the low-mass (blue open circles) and high-mass (blue solid circles) components of bimodal isotopic envelopes at the T50-SEC, as well as unimodal envelopes at high (cyan solid circles) and reference (black open circles) temperatures. Plots are an average of three independent experiments, and error bars represent s.e.m. (e–f), Pre-pulse temperature dependence of the low-m/z component in peptides 174–184 (e) and 187–194 (f) of EAAT1CO (blue), and EAAT1COCO (red). Solid and dashed lines indicate fits of a Hill-like equation to the data with T50-HDX-Bi values 49.5 ± 0.1°C and 36.8 ± 2°C, and H values −20 ± 3.1 and −4.4 ± 1 for peptide 174–184 in EAAT1CO and EAAT1COCO, respectively, as well as T50-HDX-Bi values 48.8 ± 0.2°C and 42.4 ± 0.1°C, and H values −20 ± 3.2 and −8 ± 0.1 for peptide 187–194 in EAAT1CO and EAAT1COCO, respectively. Plots depict an average of amplitudes measured at least at four different time points in three independent experiments, and error bars represent s.e.m.
 
-## Rate-limiting structural changes of thermal unfolding
+### Rate-limiting structural changes of thermal unfolding
 
 The above analyses can only be applied to peptides with bimodal isotopic envelopes, precluding a more extensive comparison of the local unfolding kinetics in other regions of the transporters. To overcome this problem, we calculated T50 values of individual peptides from the uptake kinetics of unimodal isotopic envelopes (T50-HDX-Uni). Briefly, the HDX kinetics of any detected peptide was well described by three components: an initial burst determined by uptake measured at 10 s (the first time point in the experiments); an intermediate component determined by uptake within 101–103 s (where most of our experimental measurements were done); and a slow component with uptake at longer times > 103 s. Despite the scarcity of experimental data covering this temporal window, with our longest uptake point measured at 3600 s, the slow component is required to reach saturating uptake values at pre-pulses ≤ 50°C (Figure 6a–c). The HDX kinetics of the structure regions of reference transporter samples (20°C) was dominated by the slow component, while the amplitude of the initial burst was nearly zero (Figure 6a,b; Figure 6—figure supplement 1). At increasing pre-pulse temperatures, the slow component gradually disappeared and instead, the HDX kinetics was dominated by the burst and/or the intermediate components reflecting loss of backbone protection. Therefore, we computed the temperature-induced changes of the slow component amplitude as a proxy for the loss of native folded state, and extracted the associated T50-HDX-Uni for individual peptides (Figure 6d).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig6-v2.jpg)
+
+**Figure 6.:** (a-b) Deuterium uptake kinetics at different pre-pulse temperatures of example peptides containing residues 174–184 in EAAT1CO (a), and EAAT1COCO (b), respectively. Solid lines represent double-exponential fits to the data, and dotted lines the expected deuterium kinetics of the unfolded and solvent exposed peptide at 20°C (see methods). Plots in (a–b) depict an average of three independent experiments, and error bars represent s.e.m. (c), Depiction of the temperature protocol used to prepare the protein samples. (d), The fraction of the slow HDX component extracted from the double-exponential fit to the kinetic data in (a) and (b) corresponding to EAAT1CO (blue symbols) and EAAT1COCO (red symbols), respectively. Lines represent the fit of a Hill-like equation with T50-HDX-Uni values 51.9°C and 40.6°C in EAAT1CO and EAAT1COCO, respectively, and H values of −18.7 and −20, respectively. (e–f) T50-HDX-Uni values, calculated as in (d), of EAAT1CO (e) and EAAT1COCO (f), respectively, are mapped into the structure of the EAAT1CRYST (PDB 5LLM) trimer viewed from the extracellular medium (upper panel), as well as the scaffold (ScaD) and the transport (TranD) domains viewed from the membrane (lower panel), respectively. These domains are depicted separately for clarity of display. The color code representing T50-HDX-Uni values is depicted in a scale bar between the trimers. Peptides that did not show any temperature-induced HDX changes are also labeled in cyan (T50-HDX-Uni>60°C).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40110/elife-40110-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Deuterium uptake kinetic plots at different pre-pulse temperatures of example peptides covering different regions of the ScaD (peptides 162–170, and 187–194) and the TranD (peptides 374–389, and 397–404) in EAAT1CO (left column), and EAAT1COCO (middle column), respectively. The color code for the temperatures used in symbols and lines is indicated in the corresponding 162–170 peptide plots. Solid lines represent global double-exponential fits to the data obtained at all measured temperatures for an individual peptide (see methods). Dotted lines represent the expected deuterium kinetics of the unfolded and solvent exposed peptide at 20°C. Plots depict an average of three independent experiments, and error bars represent s.e.m. From the kinetic fits, the computed fraction of the slow HDX component is plotted as a function of temperature pre-pulses in EAAT1CO (blue) and EAAT1COCO (red symbols), respectively (right column). Solid and dashed lines represent the fit of a Hill-like equation (see methods) to EAAT1CO and EAAT1COCO data, respectively, with T50-HDX-Uni values depicted in the plots.
 
 Indeed, peptides covering the extracellular inter-subunit interface (174–184 and 187–194 in TM4a-b; and 81–88 in TM2) showed the lowest T50-HDX-Uni values that ranged between 50.6–52.8°C and 40.6–42.1°C in EAAT1CO and EAAT1COCO, respectively, demonstrating that unfolding of this region is the first structural change observed during thermal denaturation (Figure 6e,f). Notably, the excellent agreement between the T50-SEC obtained for the subunit dissociation and the T50-HDX-Uni, as well as the T50-HDX-Bi, show that the structural changes in TM4a-b, and possibly in TM2, are key rate-limiting steps that determine the thermal stability of the trimeric and functional state of the transporters. Interestingly, the T50-HDX-Uni values of peptides covering the TranD of EAAT1CO ranged between 52.8°C in the cytoplasmic end of TM3 to 56–58°C in HP1, TM7, and TM8, demonstrating that the regions involved in substrate and ion coordination unfold at later stages in the thermal denaturation pathway of the transporters.
 
 ## Discussion
 
-## Thermal denaturation pathway
+### Thermal denaturation pathway
 
 EAAT1WT looses its transport function after purification in detergent solutions and shows extensive unfolding of several transmembrane regions important for oligomerization and transport function, highlighting the importance of the plasma membrane in stabilizing folded transporters. In stark contrast, EAAT1CO and EAAT1COCO remain functional and natively folded in detergent solutions, showing that the consensus exchanges effectively compensate for the destabilizing effect of detergent micelles and the lack of lipid bilayer, while conserving the neurotransmitter transport function.
 
@@ -104,7 +164,7 @@ The important question arises of what unfolding events cause the functional inac
 
 Our discovery of early unfolding events at the trimeric interface that determine the lifetime of the transporters opens the interesting possibility to target this region by mutagenesis, or even small-molecule compounds that could extend the half-life of the transporters and possibly act as the long-sought glutamate transport activators.
 
-## Consensus-based approaches to thermal stability
+### Consensus-based approaches to thermal stability
 
 Using consensus-based mutagenesis approaches, we engineered increased kinetic stability to a human oligomeric and multidomain integral membrane protein of ~180 kDa (EAAT1), and trapped it in folded and functional states for biophysical analysis. Interestingly, consensus amino acids were identified from an alignment of two divergent branches of animal SLC1 proteins: sodium- and potassium-dependent glutamate transporters (EAAT1-5), as well sodium-dependent neutral amino acid transporters (ASCT1-2). The fact that our consensus designs show conserved sodium- and potassium-dependent glutamate transport function might simply reflect the higher number of sequences with such function in the alignment. More intriguing is the fact that the alignment includes exclusively SLC1 sequences from cold- and warm-blooded animals, and lacks those from thermophilic organisms. Pioneering work on soluble proteins has shown that individual consensus mutations have a higher chance to be stabilizing than random ones (Steipe, 2004; Steipe et al., 1994; Nikolova et al., 1998). In addition, protein evolution is driven by random mutagenesis to achieve specialized functions, and some degree of protein stability loss is expected during specialization, despite the acquisition of compensatory stabilizing mutations (Tokuriki and Tawfik, 2009). Hence, a sequence containing the most frequent amino acids among structural homologs, that is consensus amino acids, will on average filter out some of the non-stabilizing mutations acquired during the specialization of the individuals, and confer higher stability to the fold. Several expectations follow from this line of thought: first, the impact of consensus mutagenesis in protein stability should be smaller in protein families that have high selective pressure to retain stability, in other words, protein families in which stability is part of the specialized function. Although systematic studies will be needed to test this, the loss of stability observed in a full-consensus sequence of a highly thermostable soluble protein supports the above expectation (Dai et al., 2007). Second, less-specialized ancestral proteins are expected to be more stable than the extant specialized structural homologs. Indeed, gain of stability has been observed in several laboratory resurrections of ancestral soluble proteins (Gaucher et al., 2008; Perez-Jimenez et al., 2011; Risso et al., 2013; Wheeler et al., 2016). Third, in multi-domain proteins, conserved domains are expected to be more stable than divergent ones, since they contain more consensus residues. This is in fact what we observed in EAAT1, in which the conserved transport domain is more thermostable than the divergent scaffold domain.
 
@@ -116,11 +176,105 @@ The consensus-based approaches presented here could be generalized to other huma
 
 ## Materials and methods
 
-## Consensus designs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>EAAT1WT</td>
+      <td>DNA2.0 synthetic</td>
+      <td>Uniprot P43003-1</td>
+      <td>Codon optimized Homo sapiens</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293F</td>
+      <td>Thermo Fisher</td>
+      <td>R79007</td>
+      <td>negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>EAAT1CO</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>EAAT1COCO</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>EAAT1 ScaCO-TranDCOCO</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3.1</td>
+      <td>Invitrogen, doi: 10.1038/nature22064</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FELIX 4.1.2</td>
+      <td>Photon Technology International/Horiba</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DynamX 3.0</td>
+      <td>Waters</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HX-Express2</td>
+      <td>http://www.hxms.com/HXExpress</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sigma Plot 12</td>
+      <td>Sysat Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Consensus designs
 
 Consensus amino acids were calculated using JALVIEW (Waterhouse et al., 2009) from 113 aligned sequences using Muscle (Edgar, 2004) of vertebrate homologs of the seven human SLC1 family members (Gesemann et al., 2010) (SLC1A1-7) (available in FASTA format in Supplementary file 1). A consensus amino acid at any position was defined as the most frequent amino acid, given that it shows a total frequency of appearance >~20%, and this frequency was ~ 10% higher than that of the corresponding amino acid in human EAAT1. To generate EAAT1CO, we simultaneously introduced all consensus amino acid exchanges defined as above in regions where secondary structure was predicted, based on the structures of GltPh (PDB 1XFH, 3KBC). To generate EAAT1COCO, we selected a subset of the consensus exchanges introduced in EAAT1CO at positions in the EAAT1 sequence that show strong amino acid covariance. Amino acid covariance was calculated with the EVcouplings server (http://evfold.org/evfold-web/evfold.do) (Marks et al., 2011) using the pseudo-likelihood maximization approach. The input for the calculations was a manually curated alignment of the PFAM ‘sodium:dicarboxylate symporter’ family (PF00375) with 4275 sequences of SLC1 homologs (available in FASTA format in Supplementary file 2), including prokaryotic and eukaryotic organisms, and covering at least 70% of the human EAAT1 amino acid sequence (P43003-1 UniProt). From this analysis, the top covariance scored residue pairs predicted physical contacts (<6 Å apart) in the outward- and inward-facing state crystal structures of the prokaryotic homolog GltPh (PDB 1XFH, 3KBC) at a success rate of ~ 90%. Then, after removing false negative contacts using the above-mentioned GltPh trimeric structures, we focused the consensus amino acid exchanges to the top 100 amino acid pairs with the highest amino acid covariance scores to generate EAAT1COCO. It is important to emphasize here, that the covariance analysis was used only to select the subset of positions in the EAAT1 sequence where to preform the consensus amino acid exchanges. However, these exchanges were identical to those introduced in EAAT1CO, and calculated from the alignment of vertebrate SLC1 homologs. Hence, neither of the consensus designs carries mutations from distant prokaryotic homologs that dominate the PFAM alignment.
 
-## Protein expression, purification and size-exclusion chromatography
+### Protein expression, purification and size-exclusion chromatography
 
 Synthetic genes codifying for EAAT1WT, EAAT1CO, and EAAT1COCO were codon optimized for expression in human cell-lines and purchased (DNA2.0 and Invitrogen). All genes were cloned into pcDNA3.1(+) (Invitrogen) with N-terminal Strep-tag II affinity tag followed by eGFP and PreScission protease cleavage site, and expressed in HEK293F cells (Thermo Fisher, mycoplasma test negative, and no authentication was attempted) grown in Excell293 medium (Sigma) and supplemented with 4 mM L-glutamine (Sigma) and 5 μg ml−1 Phenol red (Sigma-Aldrich) to densities of 2.5 × 106 cells ml−1. Cells were transiently transfected in Freestyle293 medium (Invitrogen) using 9 µg ml−1 polyethylenimine (PEI) (Polysciences) and 3 µg ml−1 of plasmid DNA, at a density of 2.5 × 106 cells ml−1, diluted with an equivalent volume of Excell293 6 hr after transfection, and treated with 2.2 mM valproic acid (Sigma) 12 hr after dilution of the cultures. Cells were collected at around 48 hr after transfection in 50 mM HEPES/Tris-base, pH 7.4, buffer supplemented with 1 mM L-Asp, 1 mM EDTA, 1 mM PMSF, 1 mM TCEP, and 1:200 (v/v) dilution of mammalian protease inhibitor cocktail (Sigma), and disrupted in an cell homogenizer (EmulsiFlex-C5, Avestin) after three runs at approximately 125,000 kPa. The resulting homogenate was clarified by centrifugation (4,500 g, 0.5 hr) and the crude membranes were collected by ultracentrifugation (186,000 g, 1.5 hr). Membranes were washed once with the above-mentioned buffer and finally homogenized with a douncer in a buffer containing 50 mM HEPES/Tris-base, pH 7.4, 200 mM NaCl, 1 mM L-Asp, 1 mM EDTA, 1 mM TCEP, and 5% glycerol, snap-frozen in liquid N2 and stored at − 80°C at 0.25 g membranes ml−1. Membrane solubilization was done by thawing out and supplementing the membrane homogenate with 2% sucrose monododecanoate (DDS) and 0.4% cholesterol hemi-succinate (CHS). After 1 hr incubation, the insoluble material was removed by ultracentrifugation (186,000 g for 1 hr), and Strep-Tactin sepharose resin (GE Healthcare) was added to the supernatant and rotated for 2 hr. Resin was washed with 25 column volumes of 50 mM HEPES/Tris-base, pH 7.4, 200 mM NaCl, 1 mM L-Asp, 0.5 mM TCEP, 5% glycerol, 0.0632% DDS and 0.0126% CHS, and the protein was eluted with the same buffer supplemented with 2.5 mM L-desthiobiotin. The eluted eGFP-transporter fusion was concentrated to 500 μl using 100 kDa cutoff membranes (Millipore), ultra-centrifuged (86,900 g, 20 min), and applied to a Superose 6 10/300 gel filtration column (GE Healthcare) equilibrated with 50 mM HEPES/Tris-base, pH 7.4, 200 mM NaCl, 1 mM L-Asp, 0.5 mM TCEP, 5% glycerol, 0.0632% DDS and 0.01264% CHS.
 
@@ -128,11 +282,11 @@ To study the thermal stability of the different constructs, the purified protein
 
 Norm. area = 1/(1+(T50-SEC/T)H) in which T50-SEC is the temperature at which half of the transporters are in the trimeric state, and H the Hill coefficient.
 
-## Radioactive substrate transport
+### Radioactive substrate transport
 
 Unilamellar liposomes were made at 9:1 molar ratio of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (Avanti Polar Lipids) and CHS, in a buffer containing 50 mM HEPES/Tris-base, pH 7.4, 200 mM NaCl and 1 mM L-Asp. To reconstitute the protein, liposomes were first mixed with DDS at a 1:2 (w/w) lipid-to-detergent ratio for 1 hr, and then the purified transporters were added at a 1:40 (w/w) protein-to-lipid ratio. Detergent removal was done at 4°C using SM-2 biobeads (BioRad) at 100 mg ml−1. The internal solution of the liposomes was exchanged using 10 freeze-thaw cycles in 50 mM HEPES/Tris-base, pH 7.4, and 200 mM KCl, unless indicated otherwise. After extrusion through 400 nm polycarbonate membranes (Avanti Polar Lipids), the proteoliposomes were concentrated by ultracentrifugation (150,000 g for 30 min at 4°C) and resuspended at 20 mg lipids ml−1, for immediate use. Substrate transport was assayed at 37°C. The uptake reaction was initiated by diluting the proteoliposomes tenfold into a buffer containing 50 mM HEPES/Tris-base, pH 7.4, 200 mM NaCl, 50 μM L-glutamate, 5 μM [14C] L-glutamate (PerkinElmer), and 2.5% glycerol. After 30 min, 200 μl aliquots were diluted fivefold into ice-cold quench buffer (50 mM HEPES/Tris-base, pH 7.4, 200 mM ChCl, and 2.5% glycerol), followed by immediate filtration and wash on nitrocellulose 0.22 μm filters (Millipore). Radioactivity was quantified by liquid scintillation using a Tri-Carb 3110TR counter (PerkinElmer). Background radioactivity was estimated from protein-free liposomes, and subtracted from the uptake data. The values were normalized by the amount of reconstituted protein, estimated by the level of GFP fluorescence measured in an Infinite M1000Pro microplate reader (Tecan). To titrate the rate of L-glutamate transport, proteoliposomes were assayed in the presence of 0, 5, 50 or 200 μM L-glutamate supplemented with 1, 5, 5, or 5 μM [14C] L-glutamate, respectively. At each substrate concentration, the initial rate of transport was calculated by a linear fit to 120 s and 180 s uptake measurements with origin fixed at zero. For the cell-based transport uptake, cells were collected 36 hr after transfection, and washed three times and resuspended at a density of 50 × 106 cells ml−1 in 11 mM HEPES/Tris-base, pH 7.4, 140 mM ChCl, 4.7 mM KCl, 2.5 mM CaCl2, 1.2 mM MgCl2, and 10 mM D-glucose, for immediate use. The uptake assay was performed similarly to the one described for the proteoliposomes, but using a reaction buffer containing 11 mM HEPES/Tris-base, pH 7.4, 140 mM NaCl, 4.7 mM KCl, 2.5 mM CaCl2, 1.2 mM MgCl2, 10 mM D-glucose, 50 μM L-glutamate, and 5 μM [14C] L-glutamate, and 0.8 μm nitrocellulose filters. Background radioactivity was estimated from cells transfected with empty vector, and subtracted from the uptake data.
 
-## Hydrogen-deuterium exchange mass spectrometry
+### Hydrogen-deuterium exchange mass spectrometry
 
 HDX-MS experiments were performed with transporters purified as described above, but after removal of eGFP following elution. The eluted eGFP-transporter fusion was digested with PreScission protease overnight at 4°C, concentrated to 100 μL using 100 kDa cutoff membranes (Millipore), ultra-centrifuged for 20 min at 86,900 g, and finally applied to a Superose 6 5/150 gel filtration column equilibrated with 50 mM HEPES/Tris-base, 200 mM NaCl, pH 7.4, 1 mM L-Asp, 0.5 mM TCEP, 0.0632% DDS, 0.01264% CHS and 5% glycerol. To evaluate and compare the stability of the EAAT1 consensus designs by HDX-MS, the purified proteins were heated at a single pre-pulse temperature for 20 min in a C1000 Touch Thermal Cycler (BioRad), ultra-centrifuged (86,900 g, 20 min) to clear the solution, and further equilibrated for 1 hr at 20°C before deuterium labeling.
 
@@ -148,7 +302,7 @@ Fract. Amplitude = 1/(1+(T50-HDX-Bi/T)H)
 
 Where H is the Hill coefficient (constrained to > −20), T is the pre-pulse temperature, and T50-HDX-Uni is the temperature at which the fraction of the low m/z component equals 0.5.
 
-## HDX kinetic analysis
+### HDX kinetic analysis
 
 Deuterium uptake values were calculated from the centroid of unimodal isotopic m/z envelopes measured at 20°C in the absence of temperature pre-pulses. These values were fitted to a double exponential function of the form:
 

@@ -122,9 +122,7 @@ We added a subsection to the Materials and methods on the culture of mESC and th
 
 9) Does TERT suppress progerin effects on nuclear morphology (as shown for mESCs in Figure 2)?
 
-We addressed this point in point 3 of the major comments and added the results to Author response image 1. Our data do not provide any evidence that TERT suppresses progerin induced nuclear morphology defects, regardless as to whether we expressed TERT in HGPS cells, progerin in TERT-positive fibroblasts or undifferentiated mESC. In addition, the nuclear architecture of mESC appears to be a lot more plastic than in human fibroblasts, and present a high degree of what would be qualified as abnormal nuclei in somatic cells.10.7554/eLife.07759.020Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.07759.020
-
-DOI: http://dx.doi.org/10.7554/eLife.07759.020
+We addressed this point in point 3 of the major comments and added the results to Author response image 1. Our data do not provide any evidence that TERT suppresses progerin induced nuclear morphology defects, regardless as to whether we expressed TERT in HGPS cells, progerin in TERT-positive fibroblasts or undifferentiated mESC. In addition, the nuclear architecture of mESC appears to be a lot more plastic than in human fibroblasts, and present a high degree of what would be qualified as abnormal nuclei in somatic cells.10.7554/eLife.07759.020Author response image 1.
 
 Also, panels A/B seem more appropriate for supplemental, while a zoom image of nuclear morphology changes would be helpful in the main figure.
 

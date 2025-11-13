@@ -48,21 +48,37 @@ Most of the previously published literature focuses on beneficial effects of adi
 
 ## Results
 
-## Altered adiponectin levels in APN-KO and adiponectin overexpressing transgenic mice
+### Altered adiponectin levels in APN-KO and adiponectin overexpressing transgenic mice
 
 Male APN-KO mice (Nawrocki et al., 2006) and ΔGly mice (Combs et al., 2004) were used for this study. The initial number of mice for each group in the study and a detailed scheme of the phenotypic assessments performed are outlined in Figure 1—figure supplement 1A and B. APN-KO were challenged with chow diet (NCD) or HFD. ΔGly mice were challenged with NCD. Consistent with expectations, serum adiponectin was absent in APN-KO mice (Figure 1—figure supplement 1C). For ΔGly mice, circulating adiponectin levels were increased by 50% (Figure 1—figure supplement 1C). All these observations indicate that our loss and gain of function mouse models indeed alter circulating adiponectin levels effectively as expected.
 
-## Deletion of adiponectin in aged mice shortens lifespan on HFD
+### Deletion of adiponectin in aged mice shortens lifespan on HFD
 
 Given that the loss of adiponectin leads to impaired glucose tolerance and lipid clearance, we wanted to test whether these mice have a shortened lifespan. A cohort of APN-KO and wild-type (WT) mice was used to measure the lifespan. The survival curves for APN-KO reveal a statistically significant shortened lifespan compared to WT control both in the NCD cohort (Figure 1A) and in the HFD cohort (Figure 1B). Thus, loss of adiponectin in mice accelerates the aging process and shortens lifespan.
 
-## Loss of adiponectin impairs glucose and lipid homeostasis during aging
+![Figure 1.](https://cdn.elifesciences.org/articles/65108/elife-65108-fig1-v2.jpg)
+
+**Figure 1.:** (A) Kaplan–Meier survival curves for wild-type (WT) and adiponectin null (APN-KO) mice on chow diet. (B) Kaplan–Meier survival curves for WT and APN-KO mice on high-fat diet (HFD). (C) Median survival time and maximum lifespan for each cohort. n denotes the number of mice per group.p-Values were determined by log-rank (Mantel–Cox) test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65108/elife-65108-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experimental strategy for longevity experiments. (B) Diagram of the aging process. Lifespan and healthspan are always strongly coupled. (C) Circulating adiponectin levels measured in 50-week-old APN-KO and ΔGly mice with their controls fed on chow diet, respectively (n = 4 per group).
+
+### Loss of adiponectin impairs glucose and lipid homeostasis during aging
 
 Glucose intolerance is a hallmark of the aging process (DeFronzo, 1981). Compared to WT mice, APN-KO mice did not show any striking difference in body weight at middle and advanced age, both on NCD and HFD (Figure 2A and B). However, APN-KO mice exhibit a slight reduction in fat mass at advanced age (Figure 2—figure supplement 1A). The reduction of fat mass seems to be due mainly to the loss of subcutaneous fat (Figure 2—figure supplement 1A). We also found that adiponectin-deficient mice have increased bone content and higher bone mineral density during HFD feeding but normal values for NCD cohort (Figure 2—figure supplement 1B and C). We examined glucose homeostasis in aged mice (100 weeks for the HFD cohort and 140 weeks for the NCD cohort). In accordance with previous metabolic studies of young APN-KO mice, differences in glucose tolerance were marginal in mice fed standard NCD (Figure 2C). APN-KO mice fed HFD, in contrast, exhibited significantly higher glucose excursions during an oral glucose tolerance test (OGTT) (Figure 2D) reflecting impaired glucose tolerance. However, no significant difference in plasma insulin level was observed during the OGTT at the different time points (Figure 2—figure supplement 1D). This indicates that APN-KO mice are more susceptible to diet-induced glucose intolerance.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65108/elife-65108-fig2-v2.jpg)
+
+**Figure 2.:** (A) Body weights during aging processes for wild-type (WT) and adiponectin null (APN-KO) mice fed on chow diet. (B) Body weights during aging processes for WT and APN-KO mice fed on high-fat diet (HFD). (C) An oral glucose tolerance test (OGTT) (2 g kg−1 body weight; single gavage) on chow diet-feeding WT and APN-KO mice at 110 weeks old (n = 7 per group). (D) An OGTT (1.25 g kg−1 body weight; single gavage) on HFD-feeding WT and APN-KO mice at 85-weeks old (n = 8 for WT, n = 7 for APN-KO mice). (E) Triglyceride (TG) clearance test (20% intralipid; 15 μl g−1 body weight; single gavage) in chow diet-feeding WT and APN-KO mice at 110 weeks old (n = 9 for WT, n = 10 for APN-KO mice). (F) TG clearance test (20% intralipid; 15 μl g−1 body weight; single gavage) in HFD-feeding WT and APN-KO mice at 85 weeks old (n = 8 per group). (G) Metabolic cage analyses showing food intake for chow diet-feeding WT in APN-KO mice at 110 weeks old (n = 8 for WT, n = 7 for APN-KO mice). Data are mean ± SEM. Student’s t test: *p<0.05, **p<0.01, ***p<0.001 for WT vs. APN-KO. (H) Metabolic cage analyses showing respiratory exchange rate (RER) chow diet-feeding WT and APN-KO mice at 110 weeks old (n = 8 for WT, n = 7 for APN-KO mice). Data are mean ± SEM. Student’s t test: *p<0.05, **p<0.01, ***p<0.001 for WT vs. APN-KO.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65108/elife-65108-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fat mass, lean mass, and relative subcutaneous, visceral, and brown fat pad weights of 140-weeks old WT(n=5) and APN-KO (n=5) mice fed chow diet or 100-week-old WT (n = 5–7) and APN-KO mice (n = 5) fed on high-fat diet (HFD) (B) Bone mineral content, bone mineral density, spinal bone mineral density, and femoral bone mineral density of 140-week-old WT and APN-KO mice fed on chow diet (n = 5 per group). (C) Bone mineral content, bone mineral density, spinal bone mineral density, and femoral bone mineral density of 100-week-old WT (n = 7) and APN-KO mice (n = 4) fed HFD. (D) No difference in insulin levels during oral glucose tolerance tests (OGTTs) in aged WT and APN-KO mice on HFD (n = 8 for WT, n = 7 for APN-KO mice). (E) The relative wet kidney weight with respect to body weight of 140-week-old WT and APN-KO mice fed on chow diet (n = 5 for WT, n = 6 for APN-KO mice). Bar, 100 μm. Data are mean ± SEM. Student’s t test: *p<0.05, **p<0.01, ***p<0.001 for WT vs. APN-KO.
+
 To elucidate the effects of adiponectin on lipid metabolism of aged mice, we performed a triglyceride (TG) clearance test by gavaging the WT and APN-KO mice with 20% intralipid. Triacylglycerol levels in both NCD- and HFD-fed APN-KO mice peaked at higher levels and showed a slower clearance of lipids from plasma (Figure 2E and F). This highlights a prevailing impaired lipid clearance in APN-KO mice. Furthermore, although APN-KO and WT mice consume comparable amounts of diet (Figure 2G), indirect calorimetric studies show that APN-KO mice had a significantly higher respiratory exchange ratio (Figure 2H), indicative of carbohydrate being a more predominant fuel source in the absence of adiponectin. Combined, these results suggest that adiponectin is necessary to maintain proper lipid homeostasis. Lack of adiponectin prompts glucose metabolism to be more prevalent.
 
-## Deletion of adiponectin in aged mice exacerbates tissue functional decline
+### Deletion of adiponectin in aged mice exacerbates tissue functional decline
 
 The aging process is associated with gradual decline and deterioration of functional properties at the tissue level. In aging adipose tissue, this is manifest as expansion of B cells in fat-associated lymphoid clusters (Camell et al., 2019), enrichment of senescent-like pro-inflammatory macrophages, and loss of tissue protective macrophage subsets that drive inflammaging and compromise glucose and lipid metabolism (Camell et al., 2017; Lumeng et al., 2011; Tchkonia et al., 2010). In the liver and kidney, dysfunction is usually apparent as overexpression of extracellular matrix (ECM) protein constituents, such as collagen and the resulting increased fibrosis (Kim et al., 2016). We examined whether the deletion of APN will affect the function of these major organs. We collected adipose tissue, kidney, and liver from separate aging cohorts of young (20 weeks) and old (100 weeks for HFD cohort and 140 weeks for NCD cohort) mice. Compared to WT mice, APN-KO mice did not show significant morphological differences in adipocytes in both young and aged mice. However, the epididymal fat of APN-KO mice fed either HFD or NCD show increased pro-inflammatory-like macrophages in the aged mice, as demonstrated by a prominent signal for the macrophage marker Mac2 (Figure 3A and B). Consistent with the immunohistochemical staining, the expression levels of inflammatory markers were drastically increased in gonadal white adipose tissue of APN-KO mice, both on NCD and on HFD (Figure 4A). This demonstrates that the loss of adiponectin accelerates adipose tissue inflammation, a characteristic marker of the increased aging process.
 
@@ -70,13 +86,21 @@ The aging process is associated with gradual decline and deterioration of functi
 
 **Figure 3.:** (A) H&E staining of an Epi fat depot of 20-week-old and 100-week-old wild-type (WT) and adiponectin null (APN-KO) mice fed on high-fat diet (HFD) or 140-week-old WT and APN-KO mice on chow diet. (B) Mac2 staining of an Epi fat depot of 20-week-old and 100-week-old WT and APN-KO mice fed on HFD or 140-week-old WT and APN-KO mice on chow diet. (C) Trichrome staining of kidney sections reveals severe interstitial and periglomerular fibrosis in 110-week-old APN-KO mice fed on HFD and 140-week-old APN-KO mice fed on chow diet. Collapsed tufts are seen inside widened Bowman’s capsules forming glomerular cysts (red arrow). (D) Mac2 staining of kidney sections of 20-week-old and 100-week-old WT and APN-KO mice fed on HFD or chow diet. (E) H&E staining of liver of 20-week-old and 100-week-old WT and APN-KO mice fed on HFD, 140-week-old WT and APN-KO mice on chow diet. Note the extensive inflammatory cell infiltrates in the liver of the aged APN-KO mice fed on HFD. (F) Trichrome and Picrosirius stains of liver sections from 100-week-old WT and APN-KO mice fed on HFD or 140-week-old WT and APN-KO mice on chow diet examine liver fibrosis. Bar, 100 μm. Data are mean ± SEM. Student’s t test: *p<0.05, **p<0.01, ***p<0.001 for WT vs. APN-KO.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65108/elife-65108-fig4-v2.jpg)
+
+**Figure 4.:** (A) Expression of inflammatory markers in epididymal fat depots of 140-week-old wild-type (WT) and adiponectin null (APN-KO) mice fed on chow diet and 100-week-old WT and APN-KO fed on HFD(n = 10 per group). (B) Expression of inflammatory markers in kidneys of 140-week-old WT and APN-KO mice fed on chow diet and 100-week-old WT and APN-KO HFD (n = 8–10 per group). (C) FACS analysis of percentages of total macrophages, Kupffer cells, and monocytes-derived macrophages isolated from 100-week-old WT and APN-KO mice fed on HFD (n = 3 per group). (D) Expression of inflammatory and fibrosis markers in liver tissues of 20-week-old and 100-week-old WT and APN-KO mice fed on HFD (n = 5 per group of young cohorts, n = 6 per group of aged cohorts). (E) Serum AST and ALT activities in 100-week-old WT and APN-KO mice fed on HFD (n = 6 per group). (F) β-Galactosidase staining of kidney and liver sections from 100-week-old WT and APN-KO mice fed on HFD or 140-week-old WT and APN-KO mice on chow diet examines cellular senescence. (G) Expression of senescence biomarkers in kidneys and livers of 140-week-old WT (n = 6 or 10) and APN-KO mice fed on chow diet (n = 10). (H) Expression of senescence biomarkers in kidneys and livers of 100-week-old WT (n = 7–10) and APN-KO mice fed on HFD (n = 8–10). Bar, 100 μm. Data are mean ± SEM. Student’s t test: *p<0.05, **p<0.01, ***p<0.001 for WT vs. APN-KO.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65108/elife-65108-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Expression of inflammatory and fibrosis markers in liver of 140-week-old wild-type (WT) and adiponectin null (APN-KO) mice fed on chow diet (n = 7 for WT, n = 7 for APN-KO mice). (B) Serum corticosterone level in 100-week-old WT and APN-KO mice fed on HFD or 140-week-old WT and APN-KO mice fed on chow diet (n = 5 per group). (C) IL1β, TNFα, CD11b, F4/80, CD206, Chil3 mRNA expression were measured from FACS-sorted hepatocytes and macrophages isolated from 100-week-old WT and APN-KO mice fed on HFD (n = 6 per group). Bar, 100 μm. Data are mean ± SEM. Student’s t test: *p<0.05, **p<0.01, ***p<0.001 for WT vs. APN-KO.
+
 We also examined the age-related decline of health parameters in two other vital organs, kidney and liver. Even during normal aging, the kidney develops age-related structural changes and displays functional declines, including nephrosclerosis, loss of renal mass, or compensatory hypertrophy of the remaining nephrons, with a corresponding decrease in glomerular filtration rate and renal blood flow (Weinstein and Anderson, 2010). Clinical studies have demonstrated that adiponectin is elevated in patients with chronic kidney disease, suggesting a possible compensatory upregulation to alleviate further renal injury (Christou and Kiortsis, 2014). Morphologically, APN-KO mice fed either the HFD or the NCD show more severe interstitial and periglomerular fibrosis. Compared to aged WT mice, the glomeruli in aged APN-KO mice have collapsed tufts, accompanied by hypertrophic Bowman’s capsules (Figure 3C). Meanwhile, aged APN-KO mice exhibited a significant increase in kidney weight as compared with aged WT mice (Figure 2—figure supplement 1E). To determine the cause of this severe glomerular and tubulointerstitial damage in APN-KO mice, we investigated the glomerular infiltration with macrophages. Immunohistochemical staining with Mac2 antibodies reveals a significant increase in Mac2 positive intraglomerular signal in the old mice which is vastly more abundant in the APN-KO mice fed the HFD (Figure 3D). Markers of kidney inflammation, such as TNFα, IL1β, IL10, F4/80, MCP-1, and CRP, were assessed in total kidney tissues, isolated from both APN-KO and control mice. Across the board, the expression levels of inflammation markers were dramatically increased in adiponectin-deficient mice (Figure 4B).
 
 Aging increases the susceptibility of various liver diseases as well, responsible for a deteriorated quality of life in the elderly and increasing mortality rate. Several studies suggest that hypoadiponectinemia predicts liver fibrosis and accelerates hepatic tumor formation (Park et al., 2015). Thus, we explored whether the lack of adiponectin may exacerbate age-induced dysfunction and dysmorphology of the liver. Unlike other diet-induced obese mouse models, we did not find any enhanced lipid droplet accumulation in the livers of APN-KO mice compared to WT mice upon short-term and long-term exposure to HFD treatment (Figure 3E). However, we found many inflammatory infiltrates in the livers of APN-KO mice on HFD diet. The expression of inflammatory markers is significantly increased in aged APN-KO mice fed on HFD and NCD (Figure 4D and Figure 4—figure supplement 1A), indicative of increased inflammation in the liver. Meanwhile, we found corticosteroids, key systemic anti-inflammatory factors, were upregulated in APN-KO mice compared to control mice, presumably as a compensatory response (Figure 4—figure supplement 1B). To further assess the origin of these inflammatory markers, we have isolated macrophages from livers of WT and APN-KO mice and sorted out Kupffer cells and monocyte-derived macrophages. We found that the total number of macrophages in APN-KO mice is doubled (Figure 4C). Moreover, compared to WT mice, Kupffer cells and monocyte-derived macrophages both increased in APN-KO mice (Figure 4C), and Kupffer cells are the major source of the inflammatory response (Figure 4C). Hepatic stellate cells are the major cell types that produce collagen in response to a liver insult. In the APN-KO mice, significant increases in liver inflammation were observed, in part due to elevated total macrophage numbers and enhanced macrophage activity (Figure 4—figure supplement 1C), thereby imposing a strong insult to the livers, resulting in hepatic stellate cell activation and liver fibrosis. Moreover, trichrome and Picrosirius red stains highlighting ECM components reveal increased hepatic fibrosis in old APN-KO mice on NCD that was even more evident under HFD conditions (Figure 3F). Mirroring these histological findings, the expression levels of liver fibrosis markers, such as Col1α1 and αSMA, are strikingly increased in older HFD and NCD fed APN-KO mice (Figure 4D and Figure 4—figure supplement 1A). Liver damage was further confirmed by elevated serum AST and ALT levels in HFD fed APN-KO mice compared with control mice (Figure 4E). Senescent cells increasingly accumulate within tissues over the course of aging. Livers and kidneys of aged APN-KO mice display a higher percentage of senescent cells (as judged by senescence-associated β-galactosidase staining) compared to control mice (Figure 4F). Moreover, Cdkn2a and Glb1, as highly distinctive senescence markers, are also upregulated in kidneys and livers of APN-KO mice, both on NCD and on HFD (Figure 4G and H). The accumulation of these senescent cells over time may contribute to progressive kidney and liver failure observed. All of these observations support a model that suggests that adiponectin plays an essential role in maintaining normal liver function during the aging process.
 
 Upon comparing young WT vs. APN-KO mice (20 weeks) that were exposed for 8 weeks to HFD, no genotype-specific differences were observed in the kidney and the liver. This therefore indicates that the pathological changes in older APN-KO mice genuinely reflect age-related chronic changes rather than simple developmental differences that would be apparent in the young mice as well. These findings clearly indicate that the lack of adiponectin during aging exacerbates liver and renal damage, at least in part through pro-inflammatory mechanisms.
 
-## Increasing adiponectin protects mice from aged induced metabolic dysfunction
+### Increasing adiponectin protects mice from aged induced metabolic dysfunction
 
 Clinically, adiponectin levels are significantly higher in centenarians and in some of their offspring, suggesting that adiponectin may be a key driver to promote healthspan and lifespan. As the elimination of adiponectin shortens healthspan and lifespan, we wondered whether increasing adiponectin by our previously established transgenic mouse model (that we refer to as the ‘ΔGly mouse’) could promote both healthspan and lifespan. A large cohort of WT and ΔGly mice was placed on NCD to assess their lifespan. After calculation, a median lifespan in control mice was around 117 weeks, while this value in ΔGly mouse has been extended to 128 weeks (9% extension), indicating that increasing circulating adiponectin prolongs median lifespan. However, the maximum lifespan is comparable in control and ΔGly mice, as the overall survival curves were not different by log-rank test (Figure 5A).
 
@@ -86,7 +110,7 @@ Clinically, adiponectin levels are significantly higher in centenarians and in s
 
 Besides its positive effects in prolonging median lifespan, we determined if increasing adiponectin levels may have beneficial effects in extending healthspan. Previous studies indicated that increasing adiponectin levels results in improved glucose and lipid profiles in younger mice (Berg et al., 2001). However, whether these beneficial effects of adiponectin carry to older age has not been assessed. When fed with an NCD, ΔGly mice show a similar body weight during lifespan, compared to littermate controls (Figure 5B). Then, we measured fasting glycemia, insulin, and insulin-like growth factor 1 (IGF-1) (Figure 5C). Under 16 hr fasted conditions, ΔGly mice have a significantly lower fasting glycemia, accompanied by a robust reduction in plasma insulin. Moreover, a reduction in circulating IGF-1 levels is observed in ΔGly mice. Lower IGF-1 levels are thought to play a key role as a mediator of healthspan and lifespan extension (Bartke et al., 2003). To test whether the improvements in systemic insulin sensitivity are also associated with improvements at the level of the pancreatic β cell, we performed H&E staining on pancreatic sections. Consistent with the reduced demand on islets to produce and release insulin in a more insulin-sensitive environment, the average islet size was considerably reduced by adiponectin overexpression, with islet structural integrity fully preserved (Figure 5D). Immunohistochemical analysis of islets exhibits a normal composition with α cells (glucagon) and β cells (insulin) in ΔGly mice. During an OGTT, ΔGly mice displayed a much lower glucose excursion than littermates (Figure 5E). In addition, insulin levels in ΔGly mice were significantly lower in response to the glucose challenge, which further supports improved insulin sensitivity (Figure 5F). To confirm this, we performed insulin tolerance tests (ITTs). ΔGly mice show a significant increase in insulin sensitivity (Figure 5G), which is consistent with our results for the young mice. Moreover, when orally challenged with TGs, ΔGly mice display enhanced lipid clearance (Figure 5H and I), with correspondingly lower free fatty acid (FFA) values (Figure 5J). These data demonstrate that increasing adiponectin levels significantly promotes metabolic fitness in aged mice.
 
-## Increasing adiponectin levels improves the age-related functional decline in tissues of aged mice
+### Increasing adiponectin levels improves the age-related functional decline in tissues of aged mice
 
 To probe tissue functional declines that might contribute to metabolic syndrome in the elderly, we evaluated the function of fat and liver in aged mice. Aging is associated with a redistribution of fat from the periphery to central fat deposition (Kuk et al., 2009). The redistribution and ectopic fat deposition with aging appear to accelerate onset of multiple age-related diseases. A histological examination of adipose tissue showed that ΔGly mice harbor much smaller adipocytes in subcutaneous and gonadal fat (Figure 6A) compared to controls at the age of 140 weeks. In agreement with the epididymal adipocyte size and fat mass, inflammation is potently suppressed in visceral fat tissues of ΔGly mice, as demonstrated by a significantly reduced Mac2 staining (Figure 6B). Moreover, it was quite apparent that visceral fat pad weight was reduced in ΔGly mice with a slightly increase in subcutaneous adipose tissue (Figure 6C). Aged WT mice revealed an unclear boundary in the hepatic lobule with lose cellular cytoplasm, while ΔGly mice entirely prevented lipid droplet accumulation and age-related deterioration of the morphology of the liver (Figure 6D). Meanwhile, considerably less collagen was deposited in the livers of ΔGly mice, as judged by the reduced ECM stain (Figure 6E). Furthermore, gene expression of inflammation and fibrosis markers in the livers were dramatically reduced, in parallel with decreased corticosterone levels in ΔGly mice compared to their littermates (Figure 6F and G). Combined, these findings strongly support that adiponectin promotes metabolic fitness, by maintaining a proper fat distribution and reducing adipose tissue inflammation, along with reducing inflammation and fibrosis in liver.
 
@@ -108,48 +132,352 @@ Combined, our studies, along with previous reports, demonstrate that adipose tis
 
 ## Materials and methods
 
-## Animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>WT C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX 000664 RRID:IMSR_JAX:000664</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>APN-KO</td>
+      <td>PMID:16326714</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>ΔGly</td>
+      <td>PMID:14576179</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzolTM Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 15596018</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Eli Lilly</td>
+      <td>Product ID: A10008415</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco’s phosphate buffered saline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D806552</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>High-fat diet (HFD)</td>
+      <td>Research Diets</td>
+      <td>Cat# D12492</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Life Technology</td>
+      <td>Cat# P36941</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine serum albumin</td>
+      <td>Sigma</td>
+      <td>Cat# A9418</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Adiponectin ELISA kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# EZMADP-60K RRID:AB_2651034</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Insulin ELISA Jumbo kit</td>
+      <td>ALPCO</td>
+      <td>Cat# 80-INSMS-E10</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse/rat IGF-1 Quantikine ELISA kit</td>
+      <td>R and D</td>
+      <td>R and D Systems, Inc, Minneapolis, MN</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Corticosterone Competitive ELISA kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# EIACORT</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>BIO-RAD</td>
+      <td>Cat# 170–8891</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Sybr Green Master Mix</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A25778</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Senescence detection kit</td>
+      <td>Abcom</td>
+      <td>Cat#: AB65351</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mac2 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 125401 RRID:AB_1134237</td>
+      <td>IF(1:500) IHC(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Perilipin (goat polyclonal)</td>
+      <td>Novus</td>
+      <td>Cat# NB100-60554 RRID:AB_922242</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Insulin (guinea pig polyclonal)</td>
+      <td>Dako</td>
+      <td>Cat# A0564 RRID:AB_10013624</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Glucagon (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 15954–1-AP RRID:AB_2878200</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-guinea pig IgG (HCL)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11073 RRID:AB_2534117</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 donkey anti-rabbit IgG (HCL)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A32754 RRID:AB_2762827</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 donkey anti-goat IgG (HCL)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A32758 RRID:AB_2762828</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-rat IgG (HCL)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A48262</td>
+      <td>IF(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45-PerCP/Cyanine5.5 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 103132 RRID:AB_893340</td>
+      <td>FACS(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11b-Pacific Blue (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 101224 RRID:AB_755986</td>
+      <td>FACS(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F4/80 -PE (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 123110 RRID:AB_893486</td>
+      <td>FACS(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11c -APC (Armenian Hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 117310 RRID:AB_313779</td>
+      <td>FACS(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD206 -FITC (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 141703 RRID:AB_10900988</td>
+      <td>FACS(1:200)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh _F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTGAACGGATTTGGCCGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh _R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACTGTGCCGTTGAATTTGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F4/80_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGACTCACCTTGTGGTCCTAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F4/80_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTTCCCAGAATCCAGTCTTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-6_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAGAGATACAAAGAAATGATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IL-6_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACTCCAGAAGACCAGAGGAAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNFα_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAGAAAGTCAACCTCCTCTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TNFα_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAGACTCCTCCCAGGTATATG</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software</td>
+      <td>GraphPad Software</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Keyence BZ-X700 fluorescence microscope</td>
+      <td>Keyence</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zeiss Axioskop FS2 microscope</td>
+      <td>Zeiss</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments
 
 APN-KO mice (Nawrocki et al., 2006) and ΔGly mice (Combs et al., 2004) with WT controls are on a pure C57BL/6J background. The transgenic strategy was to elevate adiponectin in the circulation using a deletion mutant of adiponectin under control of the adipose-specific enhancer/promoter of the aP2 gene. All of the animal experimental protocols have been approved by the Institutional Animal Care and Use Committee of University of Texas Southwestern Medical Center at Dallas. The mice were housed under standard laboratory conditions (12 hr on/off; lights on at 7:00 a.m.) and temperature-controlled environment with food and water available ad libitum. Mice were fed a standard NCD (number 5058, LabDiet, St. Louis, MO) or HFD (60% energy from fat, D12492, Research Diets) for various periods as indicated in the figures. All experiments were initiated at approximately 8 weeks of age, unless indicated otherwise. Mouse phenotyping studies were performed with controls and a minimum of two independent cohorts with more than five mice in each group.
 
-## Systemic tests
+### Systemic tests
 
 Systemic tests were previously described (Zhao et al., 2014; Zhu et al., 2017). In brief, OGTTs were performed on overnight fasted mice. The mice orally received 1.25 or 2 g of glucose per kg body weight dissolved in phosphate buffered saline (Cat# 806552, Sigma-Aldrich). Injection volume was calculated based on 10 μl g−1 body weight. Blood glucose concentrations were measured by glucose meters (Contour) at the indicated time points. For ITTs, mice were fasted for 6 hr in the morning, and chow-fed animals were intraperitoneally injected with insulin at a dose of 0.5 U kg−1 body weight, while HFD-fed animals were injected with a dose of 0.75 U kg−1 body weight. Blood glucose concentrations were measured by glucose meter at the indicated time points. For TG clearance, mice were fasted (16 hr), then gavaged 15 μl g−1 body weight of 20% intralipid (Fresenius Kabi Clayton, L.P.). Blood was collected at timed intervals, then assayed for TG levels (Infinity, Thermo Fisher Scientific) and FFA levels (NEFA-HR, Wako Pure Chemical Industries). For some of the experiments, area under curve was calculated.
 
-## Blood parameters
+### Blood parameters
 
 Blood was taken from fed animals in the morning and was centrifuged at 8000 g for 5 min, and then the supernatants were collected for multiple analyses. Adiponectin was measured using an ELISA kit from Invitrogen (Cat# EZMADP-60K). Serum insulin levels were measured using ALPCO Mouse Insulin ELISA Jumbo kit (Cat# 80-INSMS-E10, Mercodia Developing Diagnostic). Serum IGF-1 levels were measured by Mouse/Rat IGF-1 Quantikine ELISA kit (R and D Systems, Inc, Minneapolis, MN). Corticosterone was measured using a Corticosterone Competitive ELISA Kit (Cat# EIACORT); serum parameters were measured and calculated with a VITROS analyzer (Ortho Clinical Diagnostics) at UTSW metabolic core.
 
-## RT-qPCR and analysis
+### RT-qPCR and analysis
 
 RNA was extracted from fresh or frozen tissues by homogenization in TRIzol reagent (Invitrogen) as previously described (Zhu et al., 2016). We used 1 μg RNA to transcribe cDNA with a reverse transcription kit (Bio-Rad). Most of RT-qPCR primers were from the Harvard Primer Bank (https://pga.mgh.harvard.edu/primerbank/). The relative expression levels were calculated using the comparative threshold cycle method, normalized to the housekeeping gene Gapdh.
 
-## Histological analysis
+### Histological analysis
 
 For all histological analyses, four sections from at least three mice per group were stained and the examiner, typically a pathologist, was blinded to the genotype and/or treatment condition, as previously described (Zhao et al., 2020). In brief, for immunohistochemistry (IHC), tissues were fixed in 4% paraformaldehyde and embedded in paraffin. Sections (5 µm) were deparaffinized, heat retrieved (buffer with 10 mM Tris, 1.0 mM EDTA, pH = 8.0, 94–96°C for 30 min, cool naturally), perforated (0.2% Triton × 100, 10 min), blocked in 3% BSA (Sigma, A9418) and then incubated with Mac2 (1:500 dilution, Cat# 125401, BioLegend) primary antibodies. IHC and Hematoxylin (Vector, H3401) and Eosin Y (Thermo, 6766007) staining (H&E staining) were performed using standard protocols or under the manufacturer’s instructions. Detection of IHC signal was performed with Vectastain Elite ABC kit (Vector Laboratories, Burlingame, CA) and DAB substrate kit for peroxidase (Vector Laboratories) followed by hematoxylin counterstaining (Vector Laboratories). For immunofluorescence of perilipin (1:500 dilution NB100-60554, Novus), Mac2, insulin (1:500, Dako #A0564) and glucagon (1:500, Invitrogen #15954–1-AP), after incubation with primary antibody, slides were washed and incubated with secondary antibodies (1:250 dilution) used were Alexa Fluor 488 or 594 donkey anti-rabbit IgG (HCL), Alexa Fluor 488 or 594 donkey anti-goat IgG (HCL) (Invitrogen) or Alexa Fluor 488 or 594 donkey anti-guinea pig IgG (HCL) at room temperature for 1 hr, then washed and sealed with Prolong Gold antifade reagent with DAPI (Life Technology P36941). Picrosirius red and trichrome staining were performed by the histology core at UT Southwestern Medical Center.
 
-## Metabolic cage experiments
+### Metabolic cage experiments
 
 Metabolic cage studies were conducted using a PhenoMaster System (TSE Systems) at USTW Metabolic Phenotyping Core as previously described (Zhao et al., 2019). Mice were acclimated in temporary holding cages for 5 days before recording. Food intake, movement, and CO2 and O2 levels were measured at various intervals (determined by collectively how many cages were running concurrently) for the indicated period shown on figures.
 
-## Isolation of liver macrophages and flow cytometry
+### Isolation of liver macrophages and flow cytometry
 
 The detailed procedure used to isolate liver macrophages and flow cytometry has been recently described in our recent publication (An et al., 2021). In brief, mouse livers from APN-KO and littermate control mice were perfused with digestion buffer. Then the digested mixture was centrifuged at low speed (50 g). After collecting the supernatant, neural progenitor cell (NPC) was harvested after centrifuge. Then the cells were resuspended in blocking buffer (2% FBS/PBS containing anti-mouse CD16/CD32 Fc Block 1:200). For macrophage flow cytometry and sorting, primary antibodies were supplemented into the cells in blocking buffer for 15 min incubation at 4°C. The cells were then washed once and resuspended in 2% FBS/PBS before sorted by a BD Biosciences FACSAria cytometer (BD, San Jose, CA) at the Flow Cytometry Core Facility at UT Southwestern. The primary antibodies and the working concentrations are as follows: CD45-PerCP/Cyanine5.5 1:400 (Biolegend, clone 30-F11, #103132), CD11b-Pacific Blue 1:200 (Biolegend, clone M1/70, #101224), F4/80-PE (Biolegend, clone BM8, #123110), CD11c-APC 1:200 (Biolegend, clone N418, #117310), CD206-FITC 1:200 (Biolegend, clone C068C2, #124808). Total RNA from freshly FACS-sorted macrophages was extracted and purified using the RNAqueous Micro total RNA isolation kit (Thermo Fisher Scientific, #AM1931). Subsequently, cDNA was synthesized using the random hexamer primers (Thermo Fisher Scientific, #N8080127) and M-MLV reverse transcriptase (Thermo Fisher Scientific, #28025013). All the flow cytometric results were analyzed, and plots were generated with FlowJo (Version 10, FlowJo, BD). Total, pro- and anti-inflammatory macrophages in the liver are labeled as: total: CD45+/F4/80+/CD11b+; pro: pro-inflammatory macrophages (M1), CD45+/F4/80+/CD11b+/CD11c+/CD206-; anti: anti-inflammatory macrophages (M2), CD45+/F4/80+/CD11b+/CD11c-/CD206+.
 
-## β-Galactosidase staining
+### β-Galactosidase staining
 
 Aged APN-KO and littermate control mice were used in this experiment. The mice were perfused through the heart initially by PBS, followed with 4% PFA. Kidney and liver were collected, frozen-sectioned, and stored at −20°C for future use. β-Galactosidase staining was done using Senescence Detection Kit (Cat# ab65351). In brief, the slides were incubated with PBS for 15 min and fixed with fixative solution provided inside the kit for 15 min at room temperature. After washing the slides with PBS for two times, the slides were stained with staining buffer for overnight at 37°C. Followed with two times PBS wash, the slides were fixed with mounting media.
 
-## Body composition and bone analyses
+### Body composition and bone analyses
 
 Body fat and lean mass were measured using an EchoMRI-100 (Echo Medical Systems, LLC). Bone mass was determined by DEXA scanning, as previously described (Ford et al., 2011).
 
-## Statistics
+### Statistics
 
 All values are expressed as the mean ± SEM. The significance between the mean values for each study was evaluated by Student’s t tests for comparisons of two groups. One-way or two-way ANOVA was used for comparisons of more than two groups. The box-and-whisker analysis was performed to exclude potential outliner data accordingly.
 
 p≤0.05 is regarded as statistically significant. For lifespan analysis, data were calculated using the GraphPad Prism 7 and OASIS 2 software. Log-rank (Mantel–Cox) tests were used to analyze Kaplan–Meier curves. All the detailed statistical methods, sample sizes, and p-values are listed in the supplementary file.
 
-## Study approval
+### Study approval
 
 The Institutional Animal Care and Use Committee of the University of Texas Southwestern Medical Center approved all animal experiments (APN:2015–101207G).

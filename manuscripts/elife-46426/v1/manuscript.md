@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.46426.001 Patterning is a critical step during organogenesis and is closely associated with the physiological function of organs. Tooth root shapes are finely tuned to provide precise occlusal support to facilitate the function of each tooth type. However, the mechanism regulating tooth root patterning and development is largely unknown. In this study, we provide the first in vivo evidence demonstrating that Ezh2 in the dental mesenchyme determines patterning and furcation formation during dental root development in mouse molars. Mechanistically, an antagonistic interaction between epigenetic regulators Ezh2 and Arid1a controls Cdkn2a expression in the dental mesenchyme to regulate dental root patterning and development. These findings indicate the importance of balanced epigenetic regulation in determining the tooth root pattern and the integration of roots with the jaw bones to achieve physiological function. Collectively, our study provides important clues about the regulation of organogenesis and has general implications for tooth regeneration in the future.
+Patterning is a critical step during organogenesis and is closely associated with the physiological function of organs. Tooth root shapes are finely tuned to provide precise occlusal support to facilitate the function of each tooth type. However, the mechanism regulating tooth root patterning and development is largely unknown. In this study, we provide the first in vivo evidence demonstrating that Ezh2 in the dental mesenchyme determines patterning and furcation formation during dental root development in mouse molars. Mechanistically, an antagonistic interaction between epigenetic regulators Ezh2 and Arid1a controls Cdkn2a expression in the dental mesenchyme to regulate dental root patterning and development. These findings indicate the importance of balanced epigenetic regulation in determining the tooth root pattern and the integration of roots with the jaw bones to achieve physiological function. Collectively, our study provides important clues about the regulation of organogenesis and has general implications for tooth regeneration in the future.
 
 ## Introduction
 
@@ -38,45 +38,97 @@ In this study, we found that loss of Ezh2 in the tooth mesenchyme dramatically a
 
 ## Results
 
-## Ezh2 in the dental mesenchyme plays a key role in root patterning and furcation formation during molar root development
+### Ezh2 in the dental mesenchyme plays a key role in root patterning and furcation formation during molar root development
 
 Ezh2 is a key enzyme of the PRC2 complex that is responsible for trimethylation of histone 3 lysine 27 (H3K27Me3). In order to investigate the role of Ezh2 in epigenetically regulating root patterning during tooth morphogenesis, we first analyzed the expression pattern of Ezh2 in developing molars. We found that Ezh2 is widely expressed in the dental epithelium, dental follicle, and dental papilla of control mice prior to root development initiation at the newborn stage (Figure 1C). H3K27Me3 was detectable in a similar pattern to that of Ezh2 in control mice, consistent with Ezh2’s execution of a PRC2-dependent function during molar development (Figure 1E). In order to test the functional significance of Ezh2-mediated root patterning and development, we generated Osr2-Cre;Ezh2fl/fl mice, in which Ezh2 is specifically ablated in the dental mesenchyme. Osr2-Cre genetically targets the dental mesenchyme and alveolar bone but not the tooth epithelium; thus, we expected Ezh2 expression to be lost from the mesenchyme of Osr2-Cre;Ezh2fl/fl teeth, but to persist in the epithelium. Indeed, Ezh2 and H3K27Me3 were undetectable in the molar mesenchyme of Osr2-Cre;Ezh2fl/fl mice at the newborn stage (Figure 1D and F), indicating efficient tissue-specific deletion of Ezh2 in the dental mesenchyme.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig1-v1.jpg)
 
-**Figure 1.:** H&E staining (A–B), Ezh2 immunofluorescence (C–D), and H3K27Me3 immunofluorescence (E–F) of newborn control and Osr2-Cre;Ezh2 molars. Arrows indicate positive signal and asterisks indicate absence of signal. n ≥ 3 histological sections were examined from multiple littermate mice per group. Scale bars, 100 μm.fl/fl
+**Figure 1.:** H&E staining (A–B), Ezh2 immunofluorescence (C–D), and H3K27Me3 immunofluorescence (E–F) of newborn control and Osr2-Cre;Ezh2fl/fl molars. Arrows indicate positive signal and asterisks indicate absence of signal. n ≥ 3 histological sections were examined from multiple littermate mice per group. Scale bars, 100 μm.
 
 There were no morphological differences between the crowns of Osr2-Cre;Ezh2fl/fl and control molars at the newborn stage (Figure 1A–1B), prior to root development. At one week after birth, tooth crown formation is almost complete and root formation is yet to start. Tooth crown formation was similar in Osr2-Cre;Ezh2fl/fl and control mice at one week of age (Figure 2—figure supplement 1A–1F), indicating that Ezh2 is dispensable for crown patterning.
 
 In control mice, at two weeks after birth the root furcation was well formed, resulting in two roots in the mandibular first molars (Figure 2A–2E). Interestingly, only one root trunk with no furcation was observed in Osr2-Cre;Ezh2fl/fl mandibular first molars (Figure 2F–2J). The absence of furcation persisted in Osr2-Cre;Ezh2fl/fl mice at postnatal 4 weeks (Figure 2P–2T), by which time the tooth root had completed development in the control group (Figure 2K–2O). Moreover, the alveolar bone underneath the molar was undetectable throughout all developmental stages in Osr2-Cre;Ezh2fl/fl mice. Interestingly, Dspp expression was not affected in Osr2-Cre;Ezh2fl/fl mice, indicating that loss of Ezh2 in the dental mesenchyme has no effect on odontoblast differentiation (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig2-v1.jpg)
+
+**Figure 2.:** MicroCT images of control (white) and Osr2-Cre;Ezh2fl/fl (blue) molars at postnatal (PN) 2 and 4 weeks of age. A, F, K, P, lateral view of mandibular molars; B, G, L, Q, apical view of mandibular first molars; C, H, M, R, sagittal sections of mandibular molars; D, I, N, S, coronal sections of mandibular molars in the furcation region; E, J, O, T, coronal sections of mandibular molars in the root forming region. The schematic drawings indicate where the CT section were taken. Arrows indicate furcation and asterisks indicate absence of furcation. Scale bars, 200 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A-F) MicroCT images of control (white) and Osr2-Cre;Ezh2fl/fl (blue) mandibular molars at 1 week of age. A, D, lateral view of mandibular molars; B, E, sagittal sections of mandibular molars; C, F, coronal sections of mandibular molars; (G-N) MicroCT images of control (white) and Osr2-Cre;Ezh2fl/fl (blue) maxillary molars at 2 weeks of age. G, K, lateral view of maxillary molars; H, L, apical view of maxillary first molars; I, M, sagittal sections of maxillary molars; J, N, transverse sections of maxillary molars. Arrows indicate furcation and asterisks indicate absence of furcation. Scale bars, 200 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A-F) Dspp staining of control and Osr2-Cre;Ezh2fl/fl at 2 weeks of age. Boxes in A and D are shown magnified in B, C, E, and F. Arrows indicate odontoblasts. n ≥ 3 histological sections were examined from multiple littermate mice per group. Scale bars, 100 μm.
+
 In order to investigate whether mandibular and maxillary tooth furcations develop similarly, we also analyzed maxillary molars from two-week-old mice, which have three roots rather than the two of mandibular molars in controls (Figure 2—figure supplement 1G–1J). We found that maxillary molars were also single-rooted with no furcation formation in Osr2-Cre;Ezh2fl/fl mice (Figure 2—figure supplement 1K–1N), suggesting that the mechanisms regulating root patterning and furcation development are similar for maxillary and mandibular molars.
 
-## Loss of Ezh2 in the dental mesenchyme affects epithelial diaphragm, alveolar bone, and PDL formation
+### Loss of Ezh2 in the dental mesenchyme affects epithelial diaphragm, alveolar bone, and PDL formation
 
 At the beginning of root formation, the root sheath forms the epithelial diaphragm. Previous studies highlighted the importance of differential growth of the epithelial diaphragm as the crucial step in forming multi-rooted molars (Li et al., 2017). In order to test whether formation of the epithelial diaphragm was affected in Osr2-Cre;Ezh2fl/fl mice, we investigated its development at earlier time points. At PN 1 week, the epithelial diaphragm was not fused at the furcation region in control mice, as evidenced by a lack of continuous Krt14 staining in the apical region of the molar (Figure 3A–3B). One day later, a fused epithelial diaphragm was detectable in control mice (Figure 3G–3H). In contrast, we did not detect epithelial diaphragms in Osr2-Cre;Ezh2fl/fl mice at any time point (Figure 3D–3E and J–K). Moreover, cell proliferation activity in the mesenchyme of the apical region was compromised in molars of Osr2-Cre;Ezh2fl/fl mice just prior to the time point at which epithelial diaphragm formation would normally be expected (Figure 3C, F and I). However, no apoptotic cells were detectable in the molars of control or Osr2-Cre;Ezh2fl/fl mice at PN 1 week or PN 3 weeks of age, indicating that loss of Ezh2 in the tooth mesenchyme has no impact on cell survival (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig3-v1.jpg)
+
+**Figure 3.:** A-K, H&E staining (A, D, G, J), Krt14 immunofluorescence (B, E, H, K) and Ki67 staining (C, F) of coronal sections of control and Osr2-Cre;Ezh2fl/fl (mutant) molars at postnatal 7 days and 8 days. I, Quantitation of Ki67+ cells in boxed areas of C and F presented as mean ± SD with n = 4. Arrows indicate positive signal and asterisks indicate absence of signal. ***, p<0.001. Scale bars, 100 μm. Statistical analyses were performed using two-tailed Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A-B) TUNEL assay of molars in control and Osr2-Cre;Ezh2fl/fl mice at PN 1 week; (C-D) TUNEL assay of molars in control and Osr2-Cre;Ezh2fl/fl mice at PN 3 weeks. n ≥ 3 histological sections were examined from multiple littermate mice per group. Scale bars, 100 μm.
 
 In addition, formation of the alveolar bone and PDL was abnormal in Osr2-Cre;Ezh2fl/fl mice. At PN 2 weeks, alveolar bone was already formed between and underneath the molars of control mice. However, alveolar bone was undetectable in Osr2-Cre;Ezh2fl/fl mice until PN 4 weeks (Figure 4A–4B, D–E and G–J). Similarly, expression of PDL marker periostin was detectable in two-week-old control mice, but its expression was undetectable in Osr2-Cre;Ezh2fl/fl mice (Figure 4C and F), indicating defective PDL formation due to loss of Ezh2 in the dental follicle. Collectively, our studies show that Ezh2 in the dental mesenchyme is crucial for the development of alveolar bone and PDL.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig4-v1.jpg)
 
-**Figure 4.:** Osr2-Cre;Ezh2 molars.fl/fl(A-F) H&E staining (A, B, D, E) and Periostin immunofluorescence (C, F) of control and Osr2-Cre;Ezh2 molars at 2 weeks of age. B and E are magnified images of the boxed areas in A and D, respectively. (fl/flG-J) H&E staining of control and Osr2-Cre;Ezh2 molars at 4 weeks of age. (fl/flH and J) are magnified images of the boxed areas in G and I, respectively. Arrows indicate normal alveolar bone and asterisks indicate defective alveolar bone. n ≥ 3 histological sections were examined from multiple littermate mice per group. Scale bars, 100 μm.
+**Figure 4.:** (A-F) H&E staining (A, B, D, E) and Periostin immunofluorescence (C, F) of control and Osr2-Cre;Ezh2fl/fl molars at 2 weeks of age. B and E are magnified images of the boxed areas in A and D, respectively. (G-J) H&E staining of control and Osr2-Cre;Ezh2fl/fl molars at 4 weeks of age. (H and J) are magnified images of the boxed areas in G and I, respectively. Arrows indicate normal alveolar bone and asterisks indicate defective alveolar bone. n ≥ 3 histological sections were examined from multiple littermate mice per group. Scale bars, 100 μm.
 
-## Ezh2 in the dental epithelium and odontoblasts is not required for root patterning or furcation formation
+### Ezh2 in the dental epithelium and odontoblasts is not required for root patterning or furcation formation
 
 Ezh2 is also expressed in the epithelium of the mouse molar. In order to investigate whether Ezh2 in the epithelium is crucial for root patterning and furcation development, we generated Krt14-Cre;Ezh2fl/fl mice. At PN 2 weeks, the furcation was already formed in control molars, but it was not detectable in molars of Krt14-Cre;Ezh2fl/fl mice (Figure 5A–5J). Interestingly, alveolar bone formation was delayed in Krt14-Cre;Ezh2fl/fl mice at PN 2 weeks (Figure 5—figure supplement 1A–1B). However, by PN 3 weeks, the alveolar bone and molar root furcation had formed in Krt14-Cre;Ezh2fl/fl mice (Figure 5K–5T and Figure 5—figure supplement 1C–1F), indicating delayed furcation development due to loss of Ezh2 in the dental epithelium.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig5-v1.jpg)
+
+**Figure 5.:** MicroCT images of control (white) and Krt14-Cre;Ezh2fl/fl (blue) molars at 2 and 3 weeks of age. A, F, K, P, lateral view of mandibular molars; B, G, L, Q, apical view of mandibular first molars; C, H, M, R, sagittal sections of mandibular molars; D, I, N, S, coronal sections of mandibular molars in the furcation region; E, J, O, T, coronal sections of mandibular molars in the root forming region. The schematic drawings indicate where the CT section were taken. Arrows indicate furcation and asterisks indicate absence of furcation. Scale bars, 200 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A-B) H&E staining of molars from control and Krt14-Cre;Ezh2fl/fl mice at PN 2 weeks; (C-F) H&E staining of molars from control and Krt14-Cre;Ezh2fl/fl mice at PN 3 weeks. E and F are magnified images of the boxed areas in C and D, respectively. Arrows indicate alveolar bone and asterisks indicate defect of alveolar bone. n ≥ 3 histological sections were examined from multiple littermate mice per group. Scale bars, 100 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A-H) MicroCT images of control (white) and Dmp1-Cre;Ezh2fl/fl (blue) molars at 3 weeks of age. A, B, lateral view of mandibular molars; C, D, apical view of mandibular first molars; E, F, sagittal sections of mandibular molars; G, H, coronal sections of mandibular molars. (I-J) H&E staining of control and Dmp1-Cre;Ezh2fl/fl molars at 3 weeks of age. n ≥ 3 histological sections were examined from multiple littermate mice per group. Arrows indicate furcation. Scale bars, 200 μm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A-B) expression of Arid1a in coronal sections of molars from control and Osr2-Cre;Ezh2fl/fl mice. n ≥ 3 histological sections were examined from multiple littermate mice per group. Scale bars, 100 μm.
+
 Next, we investigated whether Ezh2 in odontoblasts has a role in root patterning and furcation development by generating Dmp1-Cre;Ezh2fl/fl mice. We found no distinguishable differences between the tooth roots of Dmp1-Cre;Ezh2fl/fl and control mice at PN 3 weeks, based on CT images and H&E staining (Figure 5—figure supplement 2). Alveolar bone and PDL formation were also normal in Dmp1-Cre;Ezh2fl/fl mice when compared to control samples. Collectively, our results indicate that Ezh2 in odontoblasts is not required for root patterning and furcation development.
 
-## Antagonistic interaction between Ezh2 and Arid1a in regulating root patterning
+### Antagonistic interaction between Ezh2 and Arid1a in regulating root patterning
 
 Arid1a is part of the SWI/SNF chromatin remodeling complex and has an antagonistic relationship with Ezh2 of the PRC2 complex in cancer development (Bitler et al., 2015; Wu et al., 2018). Arid1a has a similar expression pattern to that of Ezh2 during root development. Interestingly, it appears that the expression of Arid1a was not affected in the molars of Osr2-Cre;Ezh2fl/fl mice (Figure 5—figure supplement 3), indicating Arid1a is not a downstream target of Ezh2. However, previous studies have shown that the antagonism between Ezh2 and Arid1a may occur on the functional level (Bitler et al., 2015). In order to investigate whether there is an antagonistic interaction between Ezh2 and Arid1a in regulating furcation development, we generated Osr2-Cre;Ezh2fl/fl;Arid1afl/+ mice. Indeed, the abnormal root patterning and furcation development seen in Osr2-Cre;Ezh2fl/fl mice were completely rescued in Osr2-Cre;Ezh2fl/fl;Arid1afl/+ molars, based on microCT images (Figure 6A–6L), indicating that Arid1a and Ezh2 may work antagonistically to control furcation development. To examine whether monoallelic deletion of Arid1a affects furcation development, we generated Osr2-Cre;Arid1afl/+ mice and found that their root furcations were identical to those of control mice (n = 4), suggesting that haploinsufficiency of Arid1a did not affect root patterning or development (Figure 6—figure supplement 1). We also analyzed alveolar bone and PDL development at PN 3 weeks and found that there was no difference between the molars of Osr2-Cre;Ezh2fl/fl;Arid1afl/+ and control mice, suggesting that alveolar bone and PDL devlopment was also rescued in Osr2-Cre;Ezh2fl/fl;Arid1afl/+ mice (Figure 6).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig6-v1.jpg)
+
+**Figure 6.:** MicroCT images of control, Osr2-Cre;Ezh2fl/fl and Osr2-Cre;Ezh2fl/fl;Arid1afl/+ molars at 3 weeks of age. A, E, I, lateral view of mandibular molars; B, F, J, apical view of mandibular first molars; C, G, K, coronal sections of molars in the furcation region; D, H, L, coronal sections of mandibular molars in the root forming region. The schematic drawings indicate where the CT section were taken. Arrows indicate furcation and asterisks indicate absence of furcation. Scale bars, 200 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A-H) MicroCT images of control (white) and Osr2-Cre;Arid1afl/+ (blue) molars at 4 weeks of age. A, E, lateral view of mandibular molars; B, F, apical view of mandibular first molars; C, G, sagittal sections of mandibular molars; D, H, coronal sections of mandibular molars. Arrows indicate furcation. Scale bars, 200 μm.
+
 In order to identify downstream mediators that control furcation development, mesenchymal tissue from PN day three mouse molars was isolated for RNA-seq analysis. We found that more genes were upregulated than downregulated in Osr2-Cre;Ezh2fl/fl molars (Figure 7A), consistent with the gene repression function of Ezh2. Patterning genes such as Hox family members and Hand2 were highly enriched and among the top twenty upregulated genes, indicating their potential role in root furcation development. The proliferation of dental mesenchymal cells has been shown to regulate tooth root furcation formation (Sohn et al., 2014). Interestingly, we found that Cdkn2a, a cell cycle inhibitor, was also upregulated in the root-forming dental mesenchyme in Osr2-Cre;Ezh2fl/fl molars, consistent with the observed reduction in cell proliferation activity. Therefore, we hypothesized that Cdkn2a may be a downstream target of Ezh2 involved in root furcation development. In order to test our hypothesis, we first examined the expression of Cdkn2a in the molar root-forming region and found that it was upregulated in Osr2-Cre;Ezh2fl/fl mice (Figure 7B and D), whereas the level of Cdkn2a expression was restored to the level in control samples in Osr2-Cre;Ezh2fl/fl;Arid1afl/+ molars (Figure 7F). Based on this finding, we further examined cell proliferation activity in the root-forming region and found that proliferation was also restored in Osr2-Cre;Ezh2fl/fl;Arid1afl/+ molars (Figure 7C, E, G and H). Furthermore we performed the CHIP sequencing of H3K27Me3 in root mesenchyme of the control molars. Interestingly, our data have shown that the Hox genes and Cdkn2a are in the H3K27Me3 binding sites (Figure 7—figure supplement 1), which is consistent with our RNA sequencing data. Collectively, our data highlight a critical role for the antagnistic interaction between Ezh2 and Arid1a in controlling Cdkn2a expression in regulating cell proliferation during root patterning and furcation development.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig7-v1.jpg)
+
+**Figure 7.:** (A) Heatmap and list of top twenty upregulated genes (red highlights Cdkn2a) generated from RNA-sequencing. (B-G) Cdkn2a and Ki67 staining of control, Osr2-Cre;Ezh2fl/fl and Osr2-Cre;Ezh2fl/fl;Arid1afl/+ molars at 1 week of age. (H) quantitation of Ki67+ cells in boxed areas of C, E and G presented as mean ± SD with n = 4. Arrows indicate positive signal. ns, not significant. ***, p<0.001. Scale bars, 100 μm. Statistical analyses were performed using one-way ANOVA.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/46426/elife-46426-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A-D) ChIP-seq signals of Hoxc4, Cdkn2a, Eda and Arid1a from H3K27Me3 ChIP-sequencing of mouse molars from three-day-old wild type mice.
 
 ## Discussion
 
-## Mesenchymal signaling controls root patterning during tooth morphogenesis
+### Mesenchymal signaling controls root patterning during tooth morphogenesis
 
 Epithelial-mesenchymal interaction is crucial for organ patterning and morphogenesis. During the formation of branched organs, the mesenchyme can instruct the epithelium to form branching patterns. For example, various types of signaling in the mesenchyme, including WNT, hedgehog (HH) and bone morphogenetic protein (BMP), play important roles in regulating branch patterning and morphogenesis in the salivary gland, kidney and lung (Lu and Werb, 2008). Similarly, epithelial-mesenchymal interaction is also crucial for tooth root patterning and morphogenesis. Previous studies have suggested that the pattern of HERS growth may correlate with the number, length, and shape of roots (Kumakami-Sakano et al., 2014). Furthermore, HERS provides instructive signals that contribute to the induction of dental mesenchyme differentiation, suggesting that it functions as a signaling center to guide root formation (Huang et al., 2009; Li et al., 2017). For example, HERS-derived TGFβ/BMP signaling regulates root dentin formation through Nfic expression in the dental mesenchyme (Huang et al., 2010). Previous studies have suggested that the pattern of the cervical epithelial diaphragm may guide furcation formation, and signals from HERS may have a critical impact on determination of the root number. For instance, the Eda pathway is specifically active in HERS in mouse molars. Cell proliferation activity is altered in the dental mesenchyme in Eda mutant molars with delayed furcation formation, suggesting that epithelial-derived signals may regulate furcation development through epithelial-mesenchymal interaction (Fons Romero et al., 2017). Recent studies have begun to explore the role of the dental mesenchyme in regulating root patterning and furcation development. The directionality of HERS growth may be regulated by differential proliferation of mesenchymal cells in furcation-forming and root-forming regions, which in turn determines root number (Sohn et al., 2014). However, the key determinant for root patterning remained unknown.
 
@@ -84,7 +136,7 @@ In this study, we found that loss of Ezh2 in the tooth mesenchyme transformed mu
 
 It is interesting to note that dental cusp and root patterning can be regulated independently because loss of Ezh2 in the dental mesenchyme does not adversely affect dental cusp patterning though it results in a root patterning defect. Importantly, alveolar bone formation is intimately linked to root patterning and development. It is well known that proper integration between the dental root and alveolar bone is of paramount importance for our dentition. Future study will allow us to investigate whether there are common or predetermined progenitor cells that contribute both to root and alveolar bone formation. Osr2-Cre is active in the dental mesenchyme including both the dental follicle and dental papilla. The dental follicle gives rise to periodontal tissues such as alveolar bone and PDL, which have a critical impact on tooth root development and tooth eruption (Takahashi et al., 2019), implying the interaction between periodontal tissue and tooth root development. In our study, loss of alveolar bone and PDL in the mouse molar correlated with the observed root furcation defect. However, whether the alveolar bone and PDL defects are primary malformations or the result of root furcation defect still needs to be further investigated.
 
-## Epigenetic factors in regulating organ patterning and development
+### Epigenetic factors in regulating organ patterning and development
 
 Although various signaling pathways have been reported to play crucial roles in organ patterning and morphogenesis, such as BMP, TGFβ, WNT, FGF, and HH, the function of epigenetic regulation in organ patterning is largely unknown. The antagonism between PRCs and SWI/SNF complexes is crucial in both development and disease. For example, SWI/SNF antagonizes Polycomb-mediated transcriptional repression and suppresses Cyclin E transcription, arresting the cell division of myogenic precursors during muscle differentiation (Ruijtenberg and van den Heuvel, 2015). In human malignant rhabdoid tumors, loss of SMARCB1 (a subunit of SWI/SNF) leads to Polycomb-mediated repression of genes that suppress proliferation; when SMARCB1 is re-expressed, Polycomb is removed from the chromatin and DNA methylation is lost (Kadoch et al., 2016). However, there is virtually no information on how PRCs and SWI/SNF exert epigenetic control over organ patterning and development in mammals. In this study, we found that antagonistic interaction between Ezh2 and Arid1a is indispensable for tooth root furcation patterning. Interestingly, Ezh2 represses the Hox gene family, and many Hox genes can suppress osteochondrogenesis (Creuzet et al., 2002). In particular, cells in pharyngeal arch one and the anterior domains of neural crest cells (NCCs) do not express Hox genes, thus enabling the cartilage and bony elements of the face to form (Minoux et al., 2017). Although migration of NCCs and their localization to target structures are not impaired by loss of Ezh2, craniofacial osteochondrogenesis is suppressed in Wnt1-Cre;Ezh2fl/fl mice (Schwarz et al., 2014). In our study, we found that loss of Ezh2 in the dental mesenchyme also affected dental follicle-derived tooth root-supporting tissue including PDL and alveolar bone, likely through overactivation of Hox genes, indicating that the differentiation of dental follicle-derived cells is also Ezh2-dependent.
 
@@ -94,42 +146,185 @@ From an evolutionary perspective, our results clearly demonstrate that epigeneti
 
 ## Materials and methods
 
-## Animals and procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Arid1aflox/flox</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 027717; RRID:IMSR_JAX:027717</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Dmp1-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 023047; RRID:IMSR_JAX:023047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ezh2flox/flox</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 022616; RRID:IMSR_JAX:022616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Krt14-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 018964; RRID:IMSR_JAX:018964</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Osr2-Cre</td>
+      <td>Rulang Jiang, Cincinnati Children’s Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>anti-Cdkn2a probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat# 411011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Arid1a</td>
+      <td>Abcam</td>
+      <td>Cat# ab182561</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Ki67</td>
+      <td>Abcam</td>
+      <td>Cat# ab16667; RRID:AB_302459</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Ezh2</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5246S; RRID:AB_10694683</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-H3K27Me3</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9733S; RRID:AB_2616029</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Periostin</td>
+      <td>Abcam</td>
+      <td>Cat# ab14041; RRID:AB_2299859</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit Alexa Fluor 568</td>
+      <td>Life Technologies</td>
+      <td>Cat# A-11011; RRID:AB_143157</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse Alexa Fluor 568</td>
+      <td>Life Technologies</td>
+      <td>Cat# A-11004; RRID:AB_2534072</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell Death Detection Kit</td>
+      <td>Roche Life Science</td>
+      <td>Cat# 11684795910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromatrap Enzymatic Shearing Kit</td>
+      <td>Chromatrap</td>
+      <td>Cat# 500165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and procedures
 
 Arid1afl/fl (Gao et al., 2008), Dmp1-Cre (Lu et al., 2007), Ezh2fl/fl (Shen et al., 2008), Krt14-Cre (Fell et al., 2014), and Osr2-Cre (gift from Rulang Jiang, Cincinnati Children’s Hospital, Tian et al., 2017) mouse lines were used and cross-bred as needed in this study. All mouse experiments were conducted in accordance with protocols approved by the Department of Animal Resources and the Institutional Animal Care and Use Committee of the University of Southern California.
 
 All mice were housed in pathogen-free conditions and analyzed in a mixed background. Mice were identified by ear tags. Genotyping was conducted on tail samples. Tail biopsies were lysed through incubation at 55°C overnight in DirectPCR tail solution (Viagen 102 T) followed by 85°C heat inactivation for 30 min and PCR-based genotyping (GoTaq Green MasterMix, Promega, and C1000 Touch Cycler, Bio-rad). Mice were euthanized by carbon dioxide overdose followed by cervical dislocation. All mice were used for analysis regardless of sex.
 
-## Immunofluorescence and in situ hybridization (ISH)
+### Immunofluorescence and in situ hybridization (ISH)
 
 For immunofluorescence analysis, mouse mandibles were dissected, fixed in 4% PFA overnight, and decalcified with 10% EDTA for 4 weeks. Then, the tissues were incubated with 15% sucrose for 2 hr and 30% sucrose overnight, followed by embedding in OCT. Frozen tissue blocks were sectioned at 10 mm on a cryostat (Leica) and mounted on SuperFrost Plus slides (Fisher). The tissue sections were blocked for 1 hr at room temperature in blocking solution (Vector Laboratories). Sections were then incubated with primary antibodies diluted in blocking solution at 4°C overnight. After washing three times with PBS, sections were incubated with secondary antibodies in blocking solution at room temperature for 1 hr. DAPI was used for nuclear staining and all images were acquired using a Keyence microscope (Carl Zeiss).
 
 In situ hybridization was performed using RNAscope multiplex fluorescent assay (Advanced Cell Diagnostics). Briefly, tissues were fixed in 4% PFA overnight at room temperature before cryosectioning. ISH was performed on 10 μm sections according to the manufacturer’s instructions.
 
-## MicroCT analysis
+### MicroCT analysis
 
 MicroCT analysis was performed using a SCANCO μCT50 device at the University of Southern California Molecular Imaging Center. The microCT images were acquired with the x-ray source at 70 kVp and 114 μA. The data were collected at a resolution of 10 μm. Three-dimensional (3D) reconstruction was done with AVIZO 7.1 (Visualization Sciences Group).
 
-## TUNEL assays
+### TUNEL assays
 
 Specimens were harvested, fixed overnight in 4% PFA, and decalcified in 10% EDTA for four weeks. Tissues were embedded in OCT compound (Sakura Tissue-Tek 4583), frozen, and sectioned at 8–10 µm thickness. Apoptotic cells were detected with the In Situ Cell Death Detection Kit (Roche Life Science 11684795910) following the recommended protocol.
 
-## RNA-sequencing
+### RNA-sequencing
 
 Molar samples from three-day-old Ezh2fl/fl (control) and Osr2-Cre;Ezh2fl/fl mice (n = 4 per group) were collected for RNA isolation with RNeasy Micro Kit (QIAGEN). The quality of RNA samples was determined using an Agilent 2100 Bioanalyzer and all samples for sequencing had RNA integrity (RIN) numbers > 7.0. cDNA library preparation and sequencing were performed at the Epigenome Center of the University of Southern California. Single-end reads with 75 cycles were performed on Illumina Hiseq 4000 equipment for three pairs of samples. Raw reads were trimmed, aligned using TopHat (version 2.0.8) with the mm10 genome, and normalized using RPKM. Differential expression was calculated by selecting transcripts that changed with a significance of p<0.05.
 
-## ChIP-sequencing
+### ChIP-sequencing
 
 Molar samples from three-day-old wildtype mice were collected to performed ChIP-sequencing using H3K27me3 antibody (Cell signaling) and Chromatrap Enzymatic Shearing Kit (Chromatrap). ChIP DNA was quantified by Bioanalyzer and sequencing libraries construction were prepared using the standard Illumina ChIP-seq protocol. Technology Center for Genomic and Bioinformatics, University of California, Los Angeles constructed the library and sequenced the ChIPseq libraries on Illumina Nextseq 500 platform. Reads were mapped to NCBI mouse reference genome (Genome Reference Consortium Mouse Build 38, Jan 2012) using Burrows-Wheeler Alignment (BWA) tool. The uniquely mapped reads were used to identify the regions in the genome with significant enrichment of H3K27me3 modification. The aligned bam files were sorted using SAMtools followed by peak calling by MACS2-2.1.1 using broad calling with p<0.005.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism was used for statistical analysis. All bar graphs display mean ± SD (standard deviation). Significance was assessed by independent two-tailed Student’s t test or analysis of variance. p<0.05 was considered statistically significant.
 
-## ImageJ image analysis
+### ImageJ image analysis
 
 ImageJ was used to determine the percentage of the immunostained area. Positive immunofluorescence signals in molar apical regions were first converted to 8-bit binary images and measured using the ‘Analyze Particles’ function. The derived area was then divided by the total area of apical regions to calculate the percentage of positive immunostaining.
 
-## Data availability
+### Data availability
 
 The GEO accession number for the RNA sequencing and ChIP sequencing data reported in this paper is GSE131684.

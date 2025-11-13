@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Predicting antibiotic efficacy within microbial communities remains highly challenging. Interspecies interactions can impact antibiotic activity through many mechanisms, including alterations to bacterial physiology. Here, we studied synthetic communities constructed from the core members of the fruit fly gut microbiota. Co-culturing of Lactobacillus plantarum with Acetobacter species altered its tolerance to the transcriptional inhibitor rifampin. By measuring key metabolites and environmental pH, we determined that Acetobacter species counter the acidification driven by L. plantarum production of lactate. Shifts in pH were sufficient to modulate L. plantarum tolerance to rifampin and the translational inhibitor erythromycin. A reduction in lag time exiting stationary phase was linked to L. plantarum tolerance to rifampicin, opposite to a previously identified mode of tolerance to ampicillin in E. coli . This mechanistic understanding of the coupling among interspecies interactions, environmental pH, and antibiotic tolerance enables future predictions of growth and the effects of antibiotics in more complex communities.
+Predicting antibiotic efficacy within microbial communities remains highly challenging. Interspecies interactions can impact antibiotic activity through many mechanisms, including alterations to bacterial physiology. Here, we studied synthetic communities constructed from the core members of the fruit fly gut microbiota. Co-culturing of Lactobacillus plantarum with Acetobacter species altered its tolerance to the transcriptional inhibitor rifampin. By measuring key metabolites and environmental pH, we determined that Acetobacter species counter the acidification driven by L. plantarum production of lactate. Shifts in pH were sufficient to modulate L. plantarum tolerance to rifampin and the translational inhibitor erythromycin. A reduction in lag time exiting stationary phase was linked to L. plantarum tolerance to rifampicin, opposite to a previously identified mode of tolerance to ampicillin in E. coli. This mechanistic understanding of the coupling among interspecies interactions, environmental pH, and antibiotic tolerance enables future predictions of growth and the effects of antibiotics in more complex communities.
 
 ## Introduction
 
@@ -34,13 +34,25 @@ Synthetic microbial communities provide the opportunity to perform controlled ex
 
 A natural system with low diversity provides a consortium of species with a common evolutionary and ecological history from which to build synthetic communities (Ponomarova et al., 2017). The gut microbiota of Drosophila melanogaster fruit flies is such a low diversity assemblage in which all members can be cultured in vitro (Obadia et al., 2017), making it amenable to the systematic dissection of bacterial interactions. This community consists of ~5 species predominantly from the Lactobacillus and Acetobacter genera (Wong et al., 2011) (Figure 1A). The metabolic lifestyles of species from these genera in isolation have been largely uncovered. Lactobacillus spp. produce lactic acid (Makarova et al., 2006), while Acetobacter spp. produce acetic acid and are distinguished by their ability to oxidize lactate to carbon dioxide and water (Yamada et al., 1997).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig1-v2.jpg)
+
+**Figure 1.:** (A) Synthetic community construction scheme. Relative abundances of the dominant species in the D. melanogaster gut microbiome determined from 16S rRNA sequencing. All reads mapped to two Lactobacillus species: L. plantarum (Lp) and L. brevis (Lb), and to three Acetobacter species: A. pasteurianus (Ap), A. tropicalis (At), and A. aceti (Aa). Values are mean ± standard deviation (S.D.), n = 18. Mean and S.D. were weighed by the total number of reads for each fly. Strains were isolated in agar plates and grown in liquid culture. Synthetic communities were then built by co-culturing individual species in liquid culture. (B) When grown with Ap, Lp survived after 24 h at rifampin concentrations above the MIC. Viable cell plating counts of Lp after growth in rifampin for 24 h normalized to the counts at the start of the experiment (t = 0, 3 × 105 and 4 × 105 CFU/mL in monoculture and co-culture, respectively). Dashed line indicates where the population at t = 24 h would have the same size as at t = 0. Error bars are S.D. for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference of the co-culture from the monoculture (*: p<4×10−3, **: p<8×10−4, ***: p<8×10−5, equivalent to *: p<0.05/n, **: p<0.01/n, ***: p<1×10−3/n, where n = 12 is the number of comparisons; NS: not significant). (C) Protection of Lp at supra-MIC concentrations of rifampin is elicited by all Acetobacter species tested. CFU/mL of Lp grown in monoculture (Lp) or in co-culture with Ap, At, A. orientalis (Ao), A. indonesiensis (Ai), and Aa, and then treated with 20 µg/mL rifampin for 24 h normalized to counts at the start of the experiment (t = 0). Error bars are S.D. for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference from the monoculture (*: p<0.01, equivalent to *: p<0.05/n, where n = 5 is the number of comparisons; NS: not significant). (D) Ap-mediated survival of Lp at rifampin concentrations above the MIC is history-dependent, requiring co-culturing before exposure as compared with mixing. CFU/mL of Lp grown in monoculture, in co-culture with Ap (Co.), or mixed with Ap without subsequent growth in the absence of antibiotic (Mix), and treated with 20 µg/mL rifampin for 24 h normalized to counts at the start of the experiment (t = 0). Error bars are S.D. for each condition, n = 3. p-vValues are from a Student’s two-sided t-test of the difference from the monoculture (**: p<5×10−3, equivalent to **: p<0.01/n, where n = 2 is the number of comparisons; NS: not significant). (E) The time to killing of Lp under rifampin treatment is extended in the presence of an Acetobacter. CFU/mL of Lp grown in monoculture and co-cultured with Ap, and treated with 50 µg/mL rifampin, normalized to counts at the start of the experiment (t = 0). Error bars are S.D. for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference from the monoculture at the corresponding timepoint (**: p<2×10−3, equivalent to **: p<0.01/n, where n = 5 is the number of comparisons; †: measurement below limit of detection; NS: not significant). Values off the graph were below the limit of detection of the assay.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Data were normalized by the initial OD (t = 0) for each curve. Lactobacillus plantarum, Lp; L. brevis, Lb; Acetobacter pasteurianus, Ap; and A. tropicalis, At. Shaded regions are standard deviation, n = 16. Data points were taken every 8.3 min.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Ap has similar MICs in monoculture and in co-culture with Lp, and dies at supraMIC concentrations. Viable cell plating counts of Ap after growth in rifampin for 48 h were normalized to counts at the start of the experiment (t = 0, 5 × 105 and 1.3 × 105 CFU/mL in monoculture and co-culture, respectively) to highlight the concentration at which growth is completely inhibited. Note that the monoculture experiences partial growth inhibition at a lower concentration than the co-culture, and that in the absence of antibiotic, Ap grows more in co-culture with Lp than as a monoculture. Error bars are standard deviation (S.D.) for each condition, n = 3. The highest concentration of rifampin tested was 40 µg/mL. b) Inoculum size did not change the MIC of rifampin in Lp monocultures. Viable cell plating counts of Lp after growth in rifampin for 48 h were determined from different initial cell densities (numbers in colors, CFU/mL at t = 0). Error bars are S.D. for each condition, n = 3. (C) Inoculum size did not change the survivability of Lp to supraMIC concentrations of rifampin. Viable cell plating counts of Lp after growth in rifampin for 48 h were normalized to the initial cell density (t = 0), same data as in (B). Error bars are S.D. for each condition, n = 3. (D) Single-cell imaging demonstrated that Ap-induced tolerance of Lp was not due to growth under rifampin treatment. Representative phase-microscopy images of Lp in monoculture and co-cultured with Ap on an MRS agar pad containing 50 µg/mL rifampin.
+
 Bacteria can survive antibiotics through (i) resistance mutations, which counteract the antibiotic mechanism and increase the minimum inhibitory concentration (MIC); (ii) tolerance, whereby the entire population enters an altered physiological state that prolongs survivability without changing the MIC of the antibiotic, leading to an increase in the time required to kill a given fraction of the population; (iii) heteroresistance, whereby a subset of the population has a higher MIC and grows at concentrations that would otherwise kill the population; and (iv) persistence, whereby a subset of the population survives treatment for a longer period (Balaban et al., 2019; Brauner et al., 2016). Members of multispecies communities, such as biofilms and models of urinary tract infections, can display altered sensitivity to antibiotics in the community context (Adamowicz et al., 2018; de Vos et al., 2017; Nicoloff and Andersson, 2016; Sanchez-Vizuete et al., 2015). Previous studies have used synthetic communities to uncover the interplay between interspecies interactions and antibiotic efficacy; for example, the exoproducts of Pseudomonas aeruginosa affect the survival of Staphylococcus aureus through changes in antibiotic uptake, cell-wall integrity, and intracellular ATP pools (Radlinski et al., 2017). In genetically modified communities, intracellular antibiotic degradation affords cross-species protection against chloramphenicol (Sorg et al., 2016). Additionally, metabolic dependencies within synthetic communities can lower the viability of bacteria when antibiotics eliminate providers of essential metabolites, leading to an apparent change in the MICof the dependent species (Adamowicz et al., 2018). However, we still lack understanding of how metabolic interactions between bacteria affect the physiological processes targeted by antibiotics and the resulting balance between growth inhibition (bacteriostatic activity) and death (bactericidal activity). For example, the intimate relationship between bacterial metabolism and environmental pH could also lead to changes in antibiotic efficacy, as previously shown in monocultures (Aagaard et al., 1991; Argemi et al., 2013; Kamberi et al., 1999; Karslake et al., 2016; Yang et al., 2014). The interplay of all these processes in complex communities will provide new ways to combat pathogen survival and resistance evolution, particularly in cases involving tolerance, an important and understudied aspect of antibiotic susceptibility that can be elicited by diverse mechanisms and can facilitate the evolution of resistance (Levin-Reisman et al., 2017).
 
 In this study, we interrogated how interspecies interactions affect growth, pH, and antibiotic susceptibilities. We used high-throughput assays to measure and compare these parameters in monocultures and co-cultures. We found that Lactobacillus plantarum (Lp) exhibited antibiotic tolerance (delay in death Brauner et al., 2016) in the presence of Acetobacter species. Lactate accumulation by Lp in monocultures acidified the media, inhibiting growth during stationary phase. Acetobacter-mediated lactate consumption released this inhibition by increasing pH, leading to a shorter Lp lag while exiting stationary phase. This reduced lag exiting stationary phase was correlated with the antibiotic tolerance of Lp that we observed. We determined that changes in pH elicited by Acetobacter activity were sufficient to modulate tolerance of Lp to both rifampin and erythromycin. Taken together, our findings indicate that simple changes to the environment can drive complex physiological behaviors and antibiotic responses within bacterial communities.
 
 ## Results
 
-## Interspecies interactions induce tolerance to rifampin in a synthetic community
+### Interspecies interactions induce tolerance to rifampin in a synthetic community
 
 To determine the composition of the gut microbiota in our laboratory fruit flies, we performed 16S rRNA sequencing from 18 individual dissected guts (Materials and methods). We identified five species belonging to seven unique operational taxonomic units (OTUs) by clustering the sequences at 99% identity: L. plantarum (Lp), L. brevis (Lb), Acetobacter pasteurianus (Ap), A. tropicalis (At), and A. aceti (Aa) (Figure 1A). We then isolated the species in culture (Supplementary file 1a) and determined the antibiotic sensitivities of the four major fly gut inhabitants (Lp, Lb, Ap, and At; Figure 1A) in vitro grown in Man, Rogosa, and Sharpe (MRS) medium.
 
@@ -52,13 +64,35 @@ To determine whether Lp’s increased survival was specific to co-culturing with
 
 To determine whether co-culturing slows killing by the drug, we examined the survival of Lp over time at a high drug concentration (50 µg/mL, 40X MIC). Similar to the experiments above, we compared Lp CFU/mL in a monoculture with that in a co-culture with Ap. In monoculture, Lp rapidly died, with CFU/mL becoming undetectable within 18 hr; by contrast, Lp survived >30 h after co-culturing (Figure 1E). To test whether the increased time to death was due to a disruption in the balance of growth and death, we performed single-cell imaging of mono- and co-cultures on MRS agarose with 50 µg/mL rifampin. We observed no growth in either mono- or co-cultures over 3 h of imaging (n = 568 and n = 236 cells, respectively; Figure 1—figure supplement 2D), indicating that survivability is due to protection from death, as opposed to increased growth. Because the MIC of Lp was unchanged in co-cultures compared with monocultures (no resistance), and the delay in killing was observed in the bulk population in co-cultures, these results indicate that co-culturing Lp with Ap induces tolerance of Lp to rifampin (Balaban et al., 2019; Brauner et al., 2016).
 
-## Co-culturing leads to growth of Lp in stationary phase
+### Co-culturing leads to growth of Lp in stationary phase
 
-To investigate possible environmental factors that could be linked to Lp tolerance to rifampin when co-cultured with Acetobacter species (Figure 1C,E), we first inquired whether the total amount of growth of the co-culture was larger or smaller than expected from the yield of the monocultures. We grew Lp and each of the Acetobacter species separately for 48 hr, diluted the monocultures to OD = 0.04, combined the Lp monoculture 1:1 with each Acetobacter monoculture, and grew the co-cultures for 48 h in a plate reader. We then diluted the saturated cultures 1:30 in phosphate-buffered saline (PBS) to accurately measure the final OD, and computed an interaction score based on an additive model:(1)α=ODco-(ODLp+ODA)ODLpODAwhere ODco and ODA are the final ODs of the co-culture and the Acetobacter monoculture, respectively. With this metric, α>0 indicates synergy and α<0indicates antagonism. Ap showed a strong (positive) interaction with Lp, whereas At, Ai, and Aa had an interaction score closer to 0 (Figure 2—figure supplement 1A). Only the Lp-Ao co-culture was significantly antagonistic (Figure 2—figure supplement 1A). We also performed this measurement in cultures grown in test tubes, where we only observed a significant positive interaction of Lp with Ap (Figure 2—figure supplement 1A). We then determined the total carrying capacity of each species in the co-cultures by counting CFUs. The Lp CFU/mL values for 48-h co-cultures with Ap, At, and Ai were higher than the Lp monoculture (Figure 2A); Ap showed the strongest effect. Aa and Ao did not significantly increase Lp CFU/mL (Figure 2A). At and Ao reached lower CFU/mL in co-cultures with Lp than in monocultures, while Ap, At, and Aa did not change significantly (Figure 2—figure supplement 1C). Thus, Lp benefits from growth with certain Acetobacter species including Ap, and it has negative or neutral effects on the Acetobacter species (Figure 2—figure supplement 1A, B).
+To investigate possible environmental factors that could be linked to Lp tolerance to rifampin when co-cultured with Acetobacter species (Figure 1C,E), we first inquired whether the total amount of growth of the co-culture was larger or smaller than expected from the yield of the monocultures. We grew Lp and each of the Acetobacter species separately for 48 hr, diluted the monocultures to OD = 0.04, combined the Lp monoculture 1:1 with each Acetobacter monoculture, and grew the co-cultures for 48 h in a plate reader. We then diluted the saturated cultures 1:30 in phosphate-buffered saline (PBS) to accurately measure the final OD, and computed an interaction score based on an additive model:
+
+$$
+\alpha=\frac{OD_{co}-(OD_{Lp}+OD_{A})}{\sqrt{OD_{Lp}OD_{A}}}
+$$
+
+where ODco and ODA are the final ODs of the co-culture and the Acetobacter monoculture, respectively. With this metric, α>0 indicates synergy and α<0indicates antagonism. Ap showed a strong (positive) interaction with Lp, whereas At, Ai, and Aa had an interaction score closer to 0 (Figure 2—figure supplement 1A). Only the Lp-Ao co-culture was significantly antagonistic (Figure 2—figure supplement 1A). We also performed this measurement in cultures grown in test tubes, where we only observed a significant positive interaction of Lp with Ap (Figure 2—figure supplement 1A). We then determined the total carrying capacity of each species in the co-cultures by counting CFUs. The Lp CFU/mL values for 48-h co-cultures with Ap, At, and Ai were higher than the Lp monoculture (Figure 2A); Ap showed the strongest effect. Aa and Ao did not significantly increase Lp CFU/mL (Figure 2A). At and Ao reached lower CFU/mL in co-cultures with Lp than in monocultures, while Ap, At, and Aa did not change significantly (Figure 2—figure supplement 1C). Thus, Lp benefits from growth with certain Acetobacter species including Ap, and it has negative or neutral effects on the Acetobacter species (Figure 2—figure supplement 1A, B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig2-v2.jpg)
+
+**Figure 2.:** (A) Co-culturing Lp with Ap, At, or Ai resulted in increased Lp cell density after 48 hr. Co-culturing with Ao or Aa did not significantly increase Lp cell density by 48 hr. Error bars are standard deviation (S.D.) for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference from the monoculture (*: p<0.01, **: p<2×10−3, equivalent to *: p<0.05/n, **: p<0.01/n, where n = 5 is the number of comparisons; NS: not significant). (B) Co-culturing Lp with Ap resulted in higher Lp cell density in stationary phase, as well as faster growth and shorter lag for Ap. Shaded regions indicate S.D., n = 3. Inset: zoom-in on region inside dashed box highlighting increase in carrying capacity in co-culture. (C) L- and D-lactate accumulated to much higher levels in Lp monocultures than in co-cultures after 48 h of growth, suggesting that Acetobacter spp. consumed Lp-produced lactate. Lactate concentration was measured enzymatically from culture supernatants at 48 hr. Error bars are S.D. for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference from the monoculture (**: p<2×10−3, ***: p<2×10−4, equivalent to **: p<0.01/n, ***: p<1×10−3/n, where n = 5 is the number of comparisons; †: measurement below limit of detection). (D) The increase in Lp cell density in stationary phase is associated with an Acetobacter-dependent increase in pH early in stationary phase. pH was measured with the pH-sensitive dye 2’,7-bis-(2-carboxyethyl)−5-(and-6)-carboxyfluorescein over time (Materials and methods). Shaded regions indicate S.D., n = 3. Data points were taken every 8.3 min.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Interaction score for Lp and Acetobacter spp. calculated using OD (Equation 1) measured after 48 h of growth in a 96-well plate (light colors) or in test tubes (dark colors). Error bars indicate standard deviation (S.D.), n = 5 for 96-well plates, n = 3 for test tubes. P-values are from a Student’s two-sided t-test of the hypothesis that the score is 0 using the mean OD of individual samples (monocultures and co-cultures) to calculate the mean and S.D. by propagation of error (*: p<5×10−3, **: p<1×103, ***: p<1×10−4, equivalent to *: p<0.05/n, **: p<0.01/n, ***: p<1×10−3/n, where n = 10 is the number of comparisons). (B) Co-culturing with Lp did not significantly increase Ap cell density, but did significantly decrease At and Ao cell densities after 48 hr. Error bars are S.D. for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference from the monoculture (***: p<2×10−4, equivalent to ***: p<1×10−3/n, where n = 5 is the number of comparisons).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Lactate is accumulated in Lp monocultures and in co-cultures with Ap, Ao and Aa before entering stationary phase. L- and D-lactate concentration was measured enzymatically from the supernatants of 20 h monocultures of Lp or co-cultures of Lp with Acetobacter species (Materials and methods). Error bars are standard deviation (S.D.) for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference from the monoculture (**: p<3×10−3, ***: p<3×10−4, equivalent to **: p<0.01/n, ***: p<1×10−3/n, where n = 3 is the number of comparisons). (B) pH in stationary phase of co-cultures of Lp is higher than monoculture. pH meter readings (Materials and methods) of saturated Lp monocultures and co-cultures with Acetobacter species. Error bars are S.D. for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference from the monoculture (***: p<2×10−4, equivalent to ***: p<1×10−3/n, where n = 5 is the number of comparisons).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Intracellular pH of Lp decreases upon entry to stationary phase in monoculture but not in co-culture with Ap. A strain of Lp containing a plasmid expressing the pH-sensitive GFP pHluorin (LppH) was grown in monoculture, co-cultured with Ap, or mixed with Ap at the start of the experiment. Fluorescence emission (at 509 nm) was measured at an excitation wavelength of 475 nm over time, and is correlated with pH. Shaded regions indicate standard deviation (S.D.), n = 3. Cultures of the parent strain without pHluorin (Lp, dashed lines) and MRS alone (gray) were included as controls. Data points were taken every 8.3 min. (B) Intracellular pH increases in co-cultures of LppH and Ap after 48 h of growth. Fluorescence (emission at 509 nm) was measured for two excitation wavelengths (405 and 475 nm) after resuspending pHluorin-harboring cells in PBS. The ratiometric signal scales with pH. Error bars are S.D., n = 3. p-values are from a Student’s two-sided t-test of the difference from the monoculture (***: p<0.001).
 
 To determine when the additional Lp growth took place, we monitored CFU/mL values for Lp and Ap in co-culture throughout a 48 h time course starting from an initial combined cell density of ~5 × 105 CFU/mL. Initially, Lp accounted for the bulk of the growth in the co-culture (Figure 2B). Interestingly, Ap in liquid monoculture showed little to no growth in most replicates after 40 h (Figure 2B); by contrast, in co-culture Ap started to grow after ~20 h and reached saturation by ~40 h (Figure 2B), indicating that Ap also benefited from growth as a co-culture. Thus, a mutualism exists between Lp and Ap driven by growth during stationary phase.
 
-## Lactate metabolism leads to changes in pH in stationary phase co-cultures
+### Lactate metabolism leads to changes in pH in stationary phase co-cultures
 
 Interestingly, after 30 hr, Lp displayed a significant (~2X) increase in CFU/mL in the Lp-Ap co-culture that did not occur in the monoculture (Figure 2B), indicating that the increase in final yield occurs late in stationary phase. Since this increase occurs generally (Figure 2B), we hypothesized that Lp has a common metabolic interaction with each of the Acetobacter species. An obvious candidate is cross-feeding, since Lp produces lactate and the Acetobacter species consume it. We measured lactate levels in the supernatants of Lp monocultures and co-cultures of Lp with each of the Acetobacter species individually, after 48 h of growth. As expected, the Lp monoculture accumulated L- and D-lactate to high levels (>100 mM; Figure 2C). All co-cultures had significantly lower concentrations of both isomers than the monoculture (<2 mM, Figure 2C). The Lp-Ao co-culture harbored higher levels of L-lactate than any other co-culture and Lp-Aa had the highest concentration of L-lactate of the co-cultures (Figure 2C). Lp-Ap, Lp-Ao, and Lp-Aa co-cultures all accumulated lactate to >10 mM by 20 h (Figure 2—figure supplement 2A). Taken together, these data suggest that Lp metabolism leads to an initial accumulation of lactate and that the Acetobacter species consume it, although Aa and Ao are less efficient at consuming L-lactate than the other species.
 
@@ -70,21 +104,41 @@ Given the strong acidification of the medium in Lp monoculture but not in Lp-Ap 
 
 To verify that the decrease in fluorescence in monoculture was due to a drop in intracellular pH, as opposed to a decrease in protein concentration, we sampled cells after 48 h of growth, centrifuged them, resuspended them in PBS to measure pHluorin signal at both its excitation wavelengths, and measured fluorescence within 1 min of resuspension. The pHluorin signal ratio was significantly higher in Lp-Ap co-culture than in an Lp monoculture (Figure 2—figure supplement 3B). Taken together, these data indicate that the intracellular pH of Lp cells is significantly lower in monoculture than in co-culture with Acetobacter species.
 
-## Low pH inhibits the growth of Lp and extends lag phase
+### Low pH inhibits the growth of Lp and extends lag phase
 
 The growth rates of lactic acid bacteria such as Lp are known to be affected by pH (Stecka and Grzybowsii, 2000). Since Ap growth causes a large increase in the extracellular pH of an Lp-Ap co-culture, we sought to determine the general dependence of Lp growth properties on pH. We diluted a 48 h culture of Lp cells grown in MRS at starting pH = 6.75 to a starting OD = 0.02 in MRS adjusted to starting pH ranging from 3 to 8 (Materials and methods). We then measured growth and BCECF fluorescence (Figure 3—figure supplement 1A,B). For lower starting pH values, the carrying capacity was lower (Figure 3A) and varied over a large OD range from <0.02 to>2. For all starting pH values, Lp cells reduced the pH to a common final value of ~3.7 (Figure 3A). The bulk growth rate approached zero (Figure 3B) as the pH approached its final value, explaining the differences in yield. Interestingly, the maximum growth rate was also pH-dependent (Figure 3C), with the highest growth rate at starting pH = 7.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig3-v2.jpg)
+
+**Figure 3.:** (A) Lp growth is inhibited by low pH. Logarithm of OD (blue) and pH measured using BCECF (orange) after 48 h of growth in MRS at various starting pH values. Error bars are standard deviation (S.D.), n = 4. (B) Instantaneous growth rate in MRS is strongly linked to pH. Each curve was initialized at a different starting pH and represents 48 h of growth. Arrowheads indicate direction of time. Shaded regions are S.D., n = 4. Data points were taken every 8.3 min. (C) Maximal growth rate in MRS increases with increasing initial pH. Error bars are S.D., n = 4. (D) Increasing the pH of a saturated, spent Lp culture from 3.77 to 7 allows growth, although not as much as fresh MRS. Error bars are S.D., n = 3. Data points were taken every 8.3 min. (E) Increasing the pH of an Lp monoculture at t = 30 h from 4 to 7 to mimic the pH increase in Lp-Ap co-culture (top) leads to a shorter lag phase (bottom). Lag time was calculated by fitting growth curves to the Gompertz equation. Error bars are S.D., n = 3. p-values are from a Student’s two-sided t-test of the difference from the control (***: p<5×10−4, equivalent to ***: p<1×10−3/n, where n = 2 is the number of comparisons; NS: not significant).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Growth of Lp depends on the initial pH of the medium and it stops at a common pH of ~3.7. Logarithm of (A) OD or (B) pH (measured with the pH-sensitive dye BCECF) over time for cultures of Lp in MRS at various starting pH values (colors). Shaded regions are standard deviation (S.D.), n = 4. Data points were taken every 8.3 min. (C) Lp-spent media can support growth of bulk Lp culture when taken from pH 3.77 to pH 7 and it supports faster growth rates and higher carrying capacity when supplemented with glucose at pH 7. Error bars are S.D., n = 3. Data points were taken every 8.3 min. (D) Lp-conditioned medium supports growth of Ap to higher OD than fresh medium and Ap-conditioned medium supports growth of Lp to lower OD than fresh medium. Error bars are S.D., n = 3. p-values are from a Student’s two-sided t-test of the difference from growth in fresh MRS (***: p<0.001). (E) Increasing the pH of an Lp monoculture at t = 30 h from 4 to 7 to mimic the pH increase in Lp-Ap co-culture (left panel) does not lead to significant increase in CFU/mL with respect to a control. A 48-hr-old culture with no changes in pH was used as a control (Ctrl.). Error bars are S.D. for each condition, n = 3. p-values are from a Student’s two-sided t-test of the difference between the cultures (NS, not significant, p>0.0167).
 
 Given these findings, we hypothesized that the inhibition of growth in stationary phase of an Lp monoculture is due to the decreased intracellular and extracellular pH, and that Ap releases Lp’s growth inhibition by raising intracellular and extracellular pH. To test this hypothesis, we inoculated a 48 h culture of Lp to an initial OD = 0.02 into the supernatant of a 48 h Lp culture at pH = 3.77 or manually adjusted to pH = 7. Almost no growth took place in supernatant starting from pH = 3.77, but we observed substantial growth (~20 fold increase in OD) of the bulk culture in supernatant raised to pH = 7 (Figure 3D). As expected, the maximal growth rate was lower than in fresh MRS, presumably due to the partial depletion of nutrients (Figure 3D); addition of glucose to the conditioned medium supported faster growth, but only starting from neutral pH (Figure 3—figure supplement 1C). We also hypothesized that the accumulation of lactate by Lp would allow growth of Ap in Lp-conditioned medium even at low starting pH. When we diluted a saturated Ap culture in Lp-conditioned medium generated as above, Ap achieved an even higher OD than in fresh MRS (Figure 3—figure supplement 1D).
 
 These findings suggested that Ap’s effects on Lp growth might be due primarily to the pH changes that Ap initiates because Acetobacter species can grow at low pH and consume lactate. Thus, we first increased the pH of an Lp monoculture to 7 after 30 h of growth, which is when the pH increased most rapidly in the Lp-Ap co-culture (Figure 3E). We then incubated the cells for an additional 18 hr. We did not observe a significant increase in CFUs/mL from this pH-adjusted culture versus controls that simply grew for 48 h or were subjected to all washes required for pH adjustment and then returned to the same supernatant (Figure 3—figure supplement 1E), possibly due to the high cell density and the transient nature of pH neutralization. We then assessed if increasing the pH at 30 h resulted in a decrease in the duration of lag phase by diluting the monoculture to OD = 0.0375 into fresh MRS after an additional 18 h of growth. Indeed, the lag phase was shorter for the pH-adjusted cells compared with a control culture (Figure 3E). Thus, pH is a driver of the growth advantages of Lp in lag phase even in the absence of a net increase in cell number.
 
-## Co-culturing Lp with Acetobacter species reduces lag time
+### Co-culturing Lp with Acetobacter species reduces lag time
 
 Canonical antibiotic tolerance in E. coli results from a decrease in growth rate or an increase in lag phase that protects cells through metabolic inactivity (Brauner et al., 2016). To measure growth rate and lag phase, we co-cultured Lp with each of the Acetobacter species individually for 48 hr, diluted the culture to a common OD of 0.0375, and monitored growth in a plate reader. The maximum growth rate was the same for the Lp monoculture and co-cultures with Ap, At, and Ai, and slightly higher for co-cultures with Ao and Aa (Figure 4—figure supplement 1). We previously observed for Lp monocultures when shifting the pH that the stimulation of growth in stationary phase was connected with a shorter lag phase (Figure 3E). In agreement with these data, there was a significant decrease in bulk lag time for all the Acetobacter co-cultures (Figure 4A,B). Surprisingly, this shorter lag phase was linked to Lp tolerance to rifampin, opposite to the longer phase linked to E. coli tolerance to ampicillin (Brauner et al., 2016). Ap, At, and Ai co-cultures had the largest lag decreases. The Aa and Ao co-cultures had smaller, although still significant, decreases (Figure 4A,B); interestingly, Aa and Ao were also less efficient at consuming lactate than the other Acetobacter species (Figure 2C). These data indicate that interspecies interactions can change the physiology of community members, and that differences across the Acetobacter species constitute an opportunity to probe the underlying cause of the lag phenotype.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig4-v2.jpg)
+
+**Figure 4.:** (A) Calculating the logarithm of OD normalized by OD at t = 0 reveals that co-cultures of Lp and various Acetobacter species (Ax) experience more rapid transitions from stationary phase to exponential growth than monocultures of Lp. Shaded regions indicate standard deviation (S.D.), n = 5. Inset: zoom-in of region inside dashed box highlighting lag differences. Data points were taken every 8.3 min. (B) Co-culture lag times are significantly shorter than Lp monoculture lag times. Lag times were obtained by fitting the growth curves in (A) to the Gompertz equation. Error bars are S.D. for each condition, n = 5. p-values are from a Student’s two-sided t-test of the difference from the monoculture (***: p<2×10−4, equivalent to ***: p<1×10−3/n, where n = 5 is the number of comparisons). (C) Mixing Lp monocultures with Ap monocultures (Mix) yields growth curves with a similar lag phase than those of Lp monocultures. Shaded regions indicate S.D., n = 5. Inset: zoom-in on region inside dashed box highlighting lag differences. Data points were taken every 8.3 min. (D) Mixed Lp-Ap cultures do not experience significantly shorter lag times than Lp monocultures. Lag times were obtained by fitting the curves in (C) to the Gompertz equation. Error bars are S.D. for each condition, n = 5. p-values are from a Student’s two-sided t-test of the difference from the monoculture (***: p<5×10−4, equivalent to ***: p<1×10−3/n, where n = 2 is the number of comparisons; NS: not significant). (E) Single-cell microscopy demonstrates that a decrease in the duration of lag phase of Lp was responsible for the lag-time decrease in co-culture. Representative phase microscopy images of Lp in monoculture and co-cultured with Ap on an MRS agar pad. The only Ap cell visible in these images is indicated with an arrow. Size bar = 5 µm. (F) The instantaneous elongation rate of single Lp cells increases faster in co-culture than in monoculture. Phase-contrast images were segmented and cells were classified as Lp or Ap based on their aspect ratio. Lines are the mean and shaded regions are the standard error for an Lp monoculture (nLp,0 h = 465, nLp,9.5 h = 27,503) or a co-culture with Ap (nLp,0 h = 448, nLp,9.5 h = 58,087, nAp,0 h = 47, nAp,9.5 h = 146). Images were taken every 5 min.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Maximum growth rate of Lp in monoculture or co-cultures with Acetobacter species (Ax) obtained by fitting growth curves to the Gompertz Equation 1. Species names are abbreviated as in Supplementary Figure 2—figure supplement 1. Error bars are S.D., n = 5. p-values are from a Student’s two-sided t-test of the difference from the monoculture (**: p<2×10−3, ***: p<2×10−4, equivalent to **: p<0.01/n, ***: p<1×10−3/n, where n = 5 is the number of comparisons ; NS: not significant).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51493/elife-51493-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A-C) Representative phase-contrast images (top) enable quantification of width versus length (bottom) of individual cells in 48 h monocultures of Lp (A) or Ap (B) and in co-cultures of both species (C). (D–F) Representative phase-contrast images are overlaid with fluorescence images (top) for quantification of width versus length (bottom) of 48 h monocultures of mCherry-tagged Lp (D) or GFP-tagged Ap (E), and co-cultures of both species (F). (G-I) Morphology enables differentiation of Lp and Ap in phase microscopy images. Length (G), width (H), and aspect ratio (length/width, I) for monocultures in (A) and (B). Gray dots are individual cells, black circle is the mean, and error bars are standard deviation. (J) ROC curve for a classifier of Lp and Ap using the aspect ratio as a threshold. Curves shown correspond to the true-positive rate (sensitivity) of Lp and false-positive rate (1-specificity) of Ap classified as Lp for data in (A) and (B) (light blue) or (F) (purple). Circles show the optimal compromise points, with log10 (aspect ratio) of 0.164 and 0.162 for light blue and purple, respectively. Inset: zoom-in of region inside dashed box.
+
 As with Lp tolerance to antibiotics (Figure 1B), the shortened lag phase of the Lp-Ap co-culture depended on the inoculum coming from a co-culture. When we simply mixed independent 48 h cultures of Lp and Ap, the resulting bulk culture had the same lag time as an Lp monoculture (Figure 4C,D). To determine which of the two species was responsible for the decrease in lag, we performed time-lapse microscopy (Materials and methods) to monitor the initiation of growth at the single-cell level (Figure 4E). Lp and Ap were clearly distinguishable based on morphology (Figure 4—figure supplement 2): Lp cells are longer (2.46 ± 0.78 µm vs. 1.66 ± 0.38 µm) and thinner (0.72 ± 0.12 µm vs. 0.90 ± 0.09 µm) than Ap cells. Therefore, we used the aspect ratio (length/width; 3.41 ± 0.91 for Lp and 1.87 ± 0.46 for Ap) to distinguish single cells from each species in co-culture. We validated this strategy on co-cultures of fluorescently tagged strains of the same two species and measured a 10% error rate in classification (Figure 4—figure supplement 2D–F). In co-culture, most Lp cells were observed to have grown by 1 h after spotting, but in Lp monoculture, few cells were growing even after 2 h (Figure 4E,F). Ap cells did not grow during the time of imaging (Figure 4F), indicating that the reduced lag time was due to Lp’s growth, in agreement with CFU/mL measurements from liquid cultures (Figure 2B).
 
-## Growth status and pH are drivers of antibiotic tolerance
+### Growth status and pH are drivers of antibiotic tolerance
 
 Since pH changes shortened lag phase (Figure 3E) and changes in lag time were linked to antibiotic tolerance (Figures 1 and 4), we tested whether shortening lag phase was sufficient to induce tolerance. Increased time in starvation leads to changes in physiology, including an increase in the duration of lag phase (Levin-Reisman et al., 2010). To determine the relationship between time spent in stationary phase and lag time for Lp, we grew Lp cultures for varying amounts of time in stationary phase then used these cultures as inocula for growth in a plate reader. Incubating the Lp monocultures for more than 48 h resulted in a dramatic increase in the duration of lag phase, while reducing the culturing time shortened lag phase (Figure 5A).
 
@@ -96,7 +150,7 @@ Because lag phase in co-culture is slightly shorter than that of a 24 h monocult
 
 In co-culture with Lp, Ap raised the pH earlier than did Aa, while Ao only raised the pH very slightly (Figure 2D). We hypothesized that due to these distinct pH dynamics, rifampin would also have different Lp killing dynamics in these co-cultures. We grew co-cultures of these Acetobacter species with Lp as previously, and then treated the co-cultures with 50 µg/mL rifampin. While all co-cultures had extended survival relative to Lp monoculture, the killing dynamics of Lp were indeed distinct, with Aa inducing the highest tolerance (Figure 5E). To determine the extent to which these dynamics can be explained by the time at which each species raises the pH, we measured CFU/mL at various time points after rifampin treatment for Lp monocultures grown for 48 h whose pH was raised to pH seven at t = 30 h or 40 hr, mimicking the early and late increases in pH for Ap and Aa co-cultures, respectively. The shift to pH 7 at 40 h induced higher rifampin tolerance than the shift at 30 h (Figure 5F), consistent with the increased tolerance of the Lp-Aa co-culture (Figure 5E). Moreover, shifting the pH to 4.5 at t = 30 hr, to mimic the slight increase caused by Ao, was also sufficient to increase tolerance comparable to pH neutralization at t = 30 h (Figure 5F), consistent with the similar killing dynamics of the Ap and Ao co-cultures (Figure 5E). All pH shifts induced higher tolerance compared to control cultures that underwent the same protocol but whose pH was maintained (Figure 5F). Taken together, these experiments establish that pH changes drive changes in both the exit from stationary phase and tolerance of Lp to rifampin.
 
-## Growth status and pH also modulate tolerance to a ribosome-targeting antibiotic
+### Growth status and pH also modulate tolerance to a ribosome-targeting antibiotic
 
 The robust relationships among changes in pH, lag time, and rifampin tolerance prompted us to explore how changes in pH and lag time affect survival to other antibiotics. We decided to use the ribosome-targeting macrolide erythromycin because it is bacteriostatic (in contrast to rifampin) and Lp is sensitive to it (Supplementary file 1b). We treated Lp monocultures grown for 20 h or 48 h with increasing concentrations of erythromycin for 24 h at a starting cell density of ~5 × 105 CFU/mL. Opposite to our observations with rifampin (Figure 5B), a 48 h Lp monoculture displayed tolerance to erythromycin, while a 20 h culture did not (Figure 5G). While both cultures had the same MIC in erythromycin (0.078 µg/mL, Figure 5G), at concentrations above the MIC, the 48 h culture showed no changes in CFU/mL after 24 h of erythromycin treatment; the 20 h culture had a reduction of ~10 fold in CFU/mL (Figure 5G). This result suggests that Lp cells are typically tolerant to erythromycin but killing is accelerated under conditions that make them tolerant to rifampin.
 
@@ -118,13 +172,373 @@ In principle, a myriad of intra- and extracellular variables are subject to the 
 
 ## Materials and methods
 
-## Fruit fly stocks and gut microbiome sequencing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>Wolbachia-free Drosophila melanogaster Canton-S</td>
+      <td>BloomingtonDrosophilaStock Center</td>
+      <td>BL64349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BW29427</td>
+      <td>Carol Gross lab</td>
+      <td></td>
+      <td>pir+ DAP- host strain thrB1004, pro, thi, rpsL, hsdS, lacZDM15, RP4-1360 ∆(araBAD) 567 ∆dapA1341::[erm pir+], donor for conjugation with Acetobacter pasteurianus</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus plantarum)</td>
+      <td>Lp</td>
+      <td>(Obadia et al., 2017)</td>
+      <td></td>
+      <td>Lactobacillus plantarum (WF) wild fly (D. melanogaster) isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus brevis)</td>
+      <td>Lb</td>
+      <td>(Obadia et al., 2017)</td>
+      <td></td>
+      <td>Lactobacillus brevis lab fly (Oregon-R) isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Acetobacter pasteurianus)</td>
+      <td>Ap</td>
+      <td>(Gould et al., 2018)</td>
+      <td></td>
+      <td>Acetobacter pasteurianus lab fly (Oregon-R) isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Acetobacter tropicalis)</td>
+      <td>At</td>
+      <td>(Gould et al., 2018)</td>
+      <td></td>
+      <td>Acetobacter tropicalis lab fly (Oregon-R) isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Acetobacter orientalis)</td>
+      <td>Ao</td>
+      <td>(Obadia et al., 2017)</td>
+      <td></td>
+      <td>Acetobacter orientalis lab fly (Oregon-R) isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Acetobacter indonesiensis)</td>
+      <td>Ai</td>
+      <td>(Obadia et al., 2017)</td>
+      <td></td>
+      <td>Acetobacter indonesiensis lab fly isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Acetobacter aceti)</td>
+      <td>Aa</td>
+      <td>(Obadia et al., 2017)</td>
+      <td></td>
+      <td>Acetobacter aceti lab fly isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus plantarum)</td>
+      <td>Lp mCherry</td>
+      <td>(Obadia et al., 2017)</td>
+      <td></td>
+      <td>Lactobacillus plantarum (WF) wild fly isolate pCD256-P11-mCherry</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactobacillus plantarum)</td>
+      <td>LppH</td>
+      <td>This study</td>
+      <td></td>
+      <td>Lactobacillus plantarum (WF) wild fly isolate pCD256-P11-pHluorin</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Acetobacter pasteurianus)</td>
+      <td>Ap GFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>Acetobacter pasteurianus lab fly (Oregon-R) isolate pCM62-Plac-sfGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCM62 (plasmid)</td>
+      <td>(Marx and Lidstrom, 2001)</td>
+      <td></td>
+      <td>Plasmid to clone sfGFP under the control of the Escherichia coli lac promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCD256-mCherry (plasmid)</td>
+      <td>(Spath et al., 2012a)</td>
+      <td></td>
+      <td>Backbone for pHluorin expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBad-sfGFP (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_85482</td>
+      <td>Source of sfGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pZS11-pHluorin</td>
+      <td>(Mitosch et al., 2017)</td>
+      <td></td>
+      <td>Source of pHluorin</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZTG109</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ggatttatgcATGAGCAAGGGCGAGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZTG110</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>gctttgttagcagccggatcgggcccggatctcgagTTACTTGTACAGCTCGTCCATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZFH064-pHluorin</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATTACAAGGAGATTTTACAT ATGAGTAAAGGAGAAGAACTTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZFH065-pHluorin</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>gtctcggacagcggttttGGATCCTTATTTGTATAGTTCATCCATG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Viability Kit</td>
+      <td>BD</td>
+      <td>349483</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzyChrom L-lactate Assay Kit</td>
+      <td>BioAssay Systems</td>
+      <td>ECLC-100, Lots BH06A30 and BI07A09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzyChrom D-lactate Assay Kit</td>
+      <td>BioAssay Systems</td>
+      <td>EDLC-100, Lots BH0420 and BI09A07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-mannitol</td>
+      <td>ACROS Organics</td>
+      <td>AC125345000, Lot A0292699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>lactate</td>
+      <td>Sigma</td>
+      <td>L6661-100ML Lot MKCC6092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween 80</td>
+      <td>ACROS Organics</td>
+      <td>AC278632500 Lot A0375189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaOH</td>
+      <td>EMD Millipore</td>
+      <td>SX0590, Lot B0484969043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HCl</td>
+      <td>Fisher Chemical</td>
+      <td>A144-500, Lot 166315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ampicillin</td>
+      <td>MP Biomedicals</td>
+      <td>02194526, Lot R25707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>streptomycin</td>
+      <td>Sigma</td>
+      <td>S9137 Lot SLBN3225V</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>chloramphenicol</td>
+      <td>Calbiochem</td>
+      <td>220551, Lot D00083225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tetracycline</td>
+      <td>MP Biomedicals</td>
+      <td>02103011, Lot 2297K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>erythromycin</td>
+      <td>Sigma</td>
+      <td>E5389-1G, Lot WXBC4044V</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ciprofloxacin</td>
+      <td>Sigma-Aldrich</td>
+      <td>17850, Lot 116M4062CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>trimethoprim</td>
+      <td>Alfa Aesar</td>
+      <td>J63053-03, Lot T16A009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>spectinomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>PHR1426-500MG, Lot LRAA9208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>rifampin</td>
+      <td>Sigma</td>
+      <td>R3501-5G, Lot SLBP9440V</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>vancomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>PHR1732−4 × 250 MG, Lot LRAB3620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BCECF</td>
+      <td>Invitrogen</td>
+      <td>B1151, Lot 1831845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Fisher BioReagents</td>
+      <td>BP231, Lot 165487</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_01622</td>
+      <td>R2018a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>µManager</td>
+      <td>(Edelstein et al., 2010)</td>
+      <td>RRID:SCR_016865</td>
+      <td>v. 1.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Morphometrics</td>
+      <td>(Ursell et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SuperSegger</td>
+      <td>(Stylianidou et al., 2016)</td>
+      <td></td>
+      <td>v. 3</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MRS medium</td>
+      <td>BD</td>
+      <td>288110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>yeast extract</td>
+      <td>Research Products International</td>
+      <td>Y20020, Lot 30553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>peptone</td>
+      <td>BD</td>
+      <td>211677 Lot 7065816</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>agar</td>
+      <td>BD</td>
+      <td>214530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PBS</td>
+      <td>Gibco</td>
+      <td>70011044</td>
+      <td>(10X, pH 7.4)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fruit fly stocks and gut microbiome sequencing
 
 Wolbachia-free Drosophila melanogaster Canton-S (BL64349) flies were obtained from the Bloomington Drosophila Stock Center, and were reared and maintained as previously described in Obadia et al. (2017). To determine the bacterial strains present in our flies, we performed culture-independent 16S amplicon sequencing targeting the V4 region on an Illumina MiSeq. Individual flies were CO2-anesthetized, surface-sterilized by washing with 70% ethanol and sterile PBS six times each. Flies were dissected under a stereo microscope and their guts were placed in 2 mL screw cap microtubes containing 200 µL of 0.1 mm sterile zirconia-silicate beads (BioSpec Products 11079101z) and 350 µL of sterile lysis buffer (10 mM Tris-HCl, pH 8, 25 mM NaCl, 1 mM EDTA, 20 mg/mL lysozyme). Samples were homogenized by bead beating at maximum speed (Mini-Beadbeater, BioSpec Products) for 1 min. Proteinase K was added at 400 µg/mL and samples were incubated for 1 h at 37°C. Sample were then centrifuged (3000 × g for 3 min) and 300 µL of the nucleic acids-containing supernatant were transferred to 1.7 mL microtubes. Genomic DNA from samples was cleaned up through a DNA Clean and Concentrator-5 column (Zymo Research D4014). Using the protocol described in Fadrosh et al. (2014) for library preparation and sequencing, we sequenced the gut contents of 18 individual flies, three flies each from six independent vials. Paired-end 250-base pair sequencing generated >10,000 reads per sample. Reads were filtered using PrinSeq as in Koch et al. (2016). The reads were then clustered into operational taxonomic units (OTUs) at 99% identity and assigned taxonomy using LOTUS (Hildebrand et al., 2014) with the following parameters: [-threads 60 -refDB SLV -highmem 1 -id 0.99 p miseq -useBestBlastHitOnly 1 -derepMin 3:10,10:3 -simBasedTaxo 1 CL 3]. Redundant strain identities were collapsed into single OTUs. Common reagent contaminant strains were then removed (Salter et al., 2014). After filtering, only five unique species were identified (Figure 1A). We isolated these species in culture and verified the taxonomic identity of our isolates using Sanger sequencing of the complete 16S rRNA gene (Gould et al., 2018). At 97% OTU clustering, only three species were found: Acetobacter sp., Lactobacillus plantarum, and Lactobacillus brevis. When less stringent FASTQ quality filtering was used, trace amounts (~0.01%) of two mammalian gut strains were identified: Blautia sp. and Bacteroides sp. Because these OTUs were eliminated by more stringent quality filtering, we speculate that they may have resulted from barcode bleed-through on the MiSeq flowcell.
 
 Sequencing data is available at the NCBI website under BioProject accession number PRJNA530819.
 
-## Bacterial growth and media
+### Bacterial growth and media
 
 Bacterial strains used in this study are listed in Supplementary file 1a. For culturing, all strains were grown in MRS medium (Difco Lactobacilli MRS Broth, BD 288110). MYPL medium was adapted from Moens et al. (2014), with 1% (w/v) D-mannitol (ACROS Organics AC125345000, Lot A0292699), 1% (w/v) yeast extract (Research Products International Y20020, Lot 30553), 0.5% (w/v) peptone (Bactopeptone, BD 211677 Lot 7065816), 1% (w/v) lactate (Lactic acid, Sigma L6661-100ML Lot MKCC6092), and 0.1% (v/v) Tween 80 (Polyoxyethylene(20)sorbitan monooleate, ACROS Organics AC278632500 Lot A0375189). The medium was set to pH 7 with NaOH (EMD Millipore SX0590, Lot B0484969043). All media were filter-sterilized.
 
@@ -132,33 +546,33 @@ Frozen stocks were streaked onto MRS agar plates (1.5% agar, Difco agar, granula
 
 To count CFUs in cultures, aliquots were diluted serially in PBS. For cultures treated with high concentrations of antibiotics, cells were centrifuged for 1.5 min at 8000 x g and resuspended in 1X PBS pH 7.4 (Gibco 70011044) after removing the supernatants. PBS-diluted cultures were plated on MRS and MYPL because Lactobacillus species grow faster than Acetobacter species on MRS and vice versa on MYPL. Colony morphology and color enable differentiation of Lactobacillus from Acetobacter species.
 
-## Conditioned media
+### Conditioned media
 
 Conditioned media were obtained by centrifuging cultures at 4500 x g for 5 min and filtering the supernatant with a 0.22 µm polyethersulfone filter (Millex-GP SLGP033RS) to remove cells. Conditioned media were acidified with HCl (Fisher Chemical A144-500, Lot 166315) or basified with NaOH (EMD Millipore SX0590, Lot B0484969043). Conditioned media were sterilized after adjusting pH with 0.22 µm PES filters.
 
-## MIC estimations
+### MIC estimations
 
 To estimate the sensitivity of each species to various antibiotics, colonies were inoculated into MRS and grown for 48 h at 30°C with constant shaking. Cultures were diluted to an OD of 0.001 for Lp, Lb, and At, and 0.01 for Ap. Diluted cultures (195 µL) were transferred to 96-well plates containing 5 µL of antibiotics at 40X the indicated concentration. Antibiotics used were ampicillin (ampicillin sodium salt, MP Biomedicals 02194526, Lot R25707, stock at 100 mg/mL in milliQ H2O), streptomycin (streptomycin sulfate salt, Sigma S9137 Lot SLBN3225V, stock at 50 mg/mL in milliQ H2O), chloramphenicol (Calbiochem 220551, Lot D00083225, stock at 50 mg/mL in ethanol), tetracycline (tetracycline hydrochloride, MP Biomedicals 02103011, Lot 2297K, stock at 25 mg/mL in dimethyl sulfoxide (DMSO)), erythromycin (Sigma E5389-1G, Lot WXBC4044V, stock at 64 mg/mL in methanol), ciprofloxacin (Sigma-Aldrich 17850, Lot 116M4062CV, stock at 1.2 mg/mL in DMSO), trimethoprim (Alfa Aesar J63053-03, Lot T16A009, stock at 2 mg/mL in DMSO), spectinomycin (spectinomycin hydrochloride, Sigma-Aldrich PHR1426-500MG, Lot LRAA9208, stock at 50 mg/mL in milliQ H2O), rifampin (Sigma R3501-5G, Lot SLBP9440V, stock at 50 mg/mL in DMSO), and vancomycin (vancomycin hydrochloride, Sigma-Aldrich PHR1732−4 × 250 MG, Lot LRAB3620, stock at 200 mg/mL in DMSO:H2O 1:1). Antibiotics were diluted serially in 2-fold increments into MRS. Cultures were grown for 24 h at 30°C with constant shaking and absorbance was measured in an Epoch2 plate reader (BioTek Instruments) at 600 nm. The MIC was estimated as the minimum concentration of antibiotic with absorbance within two standard deviations of media controls.
 
 For experiments in Figure 1B and Figure 1—figure supplement 2A–C, mono- and co-cultures were diluted to an OD of 0.001 (final cell density ~5 × 105 CFU/mL) and transferred to 96-well plates containing 5 µL of rifampin at 40X working concentration. Cultures were grown for 24 h and then serially diluted in 5-fold increments in PBS, and 3 µL of the dilutions were spotted onto MRS and MYPL rectangular plates using a semi-automated high-throughput pipetting system (BenchSmart 96, Mettler Toledo). Plates were incubated at 30°C until colonies were visible for quantification of viability.
 
-## Plate reader growth curves
+### Plate reader growth curves
 
 Cultures were grown from single colonies for 48 h in MRS at 30°C with constant shaking. Then, cultures were diluted to a final OD of 0.02 and 200 µL of the dilutions were transferred to clear-bottom transparent 96-well plates. Plates were sealed with transparent film pierced with a laser cutter to have ~0.5 mm holes to allow aeration in each well. Absorbance was measured at 600 nm in an Epoch2 plate reader (BioTek Instruments). Plates were shaken between readings with linear and orbital modes for 145 s each.
 
 Growth rates and lag times were quantified using MATLAB (Mathworks, R2008a). The natural logarithm of OD was smoothed with a mean filter with window size of 5 timepoints for each condition over time, and the smoothed data were used to calculate the instantaneous growth rate d(ln(OD))/dt. The smoothed ln(OD) curve was fit to the Gompertz equation (Zwietering et al., 1990) to determine lag time and maximum growth rate.
 
-## pH measurements
+### pH measurements
 
 Culture pH was measured using the dual-excitation ratiometric pH indicator 2’,7-bis-(2-carboxyethyl)−5-(and-6)-carboxyfluorescein, mixed isomers (BCECF, Invitrogen B1151, Lot 1831845), which has a pKa of ~6.98. A stock solution of 1 mg/mL BCECF in DMSO (Fisher BioReagents BP231, Lot 165487) was diluted 1000-fold into MRS to a final concentration of 1 µg/mL. Cells were grown in a Synergy H1 plate reader (BioTek Instruments) following the procedure described above. In addition to absorbance, fluorescence was measured every cycle using monochromators at excitation (nm)/emission (nm) wavelength combinations 440/535 and 490/535. After subtracting the fluorescence of wells containing cells without the indicator, the ratio of the signals excited at 490 nm and 440 nm was used to calculate the culture pH using a calibration curve of MRS set to various pH values.
 
 Culture pH after 48 h of growth was directly measured with a pH meter (sympHony, VWR) equipped with a pH combination electrode (Fisherbrand accumet 13-610-104A).
 
-## Changes in pH during growth
+### Changes in pH during growth
 
 To change the pH of monocultures and co-cultures in stationary phase, we obtained conditioned medium at 30 h or 40 h as described above and set the pH to the desired values. We then centrifuged 2 mL of a replicate culture for 3 min at 8000 x g, removed the supernatant, and resuspended cells in 1 mL of the corresponding medium to wash the cells. The suspension was centrifuged a second time and the pellets were resuspended in 2 mL of the corresponding medium.
 
-## Time-lapse and fluorescence microscopy
+### Time-lapse and fluorescence microscopy
 
 Cells were imaged on a Nikon Eclipse Ti-E inverted fluorescence microscope with a 100X (NA 1.40) oil-immersion objective. Images were collected on a DU897 electron multiplying charged couple device camera (Andor) using µManager v. 1.4 (Edelstein et al., 2010). Cells were maintained at 30°C during imaging with an active-control environmental chamber (Haison).
 
@@ -166,11 +580,11 @@ Cultures grown for 48 h were diluted 100-fold into PBS and 2 µL were spotted on
 
 To quantify the morphology of cells using fluorescent strains, co-cultures were diluted 100-fold into PBS and 2 µL were spotted onto a 1% (w/v) agarose PBS pad. After drying, the pads were covered with a cover slip and transferred to the microscope. Images were acquired at room temperature using µManager v. 1.4.
 
-## Single-cell tracking and analysis
+### Single-cell tracking and analysis
 
 Images were segmented and cells were tracked using the software SuperSegger v. 3 (Stylianidou et al., 2016). Further analysis of single-cell growth was performed using MATLAB. Cells with length >6 µm were removed from further analysis due to issues with segmentation. Length traces were smoothed using a mean filter of window size 5. Cells were classified as Lp or Ap if 90% of their traces were above (Lp) or below (Ap) a log10(length-to-width ratio) of 0.375. Traces with more than 15 timepoints were used for further analysis. Elongation rates d(ln L)/dt were calculated for each cell and the mean and standard error were computed for each time point.
 
-## Cloning and transformations
+### Cloning and transformations
 
 To generate the fluorescently labeled Ap strain, the sfGFP coding sequence was cloned into pCM62 (Marx and Lidstrom, 2001) under control of the Escherichia coli lac promoter. The sfGFP coding sequence was amplified from pBAD-sfGFP using primers ZTG109 (5’ ggatttatgcATGAGCAAGGGCGAGGAG) and ZTG110 (5’- gctttgttagcagccggatcgggcccggatctcgagTTACTTGTACAGCTCGTCCATG). Gibson assembly (Gibson et al., 2009) was used to insert the amplified sfGFP cassette into BglII/XhoI-digested pCM62. This construct was delivered into Ap by conjugation as previously described (Deeraksa et al., 2005). Escherichia coli BW29427 was used as a donor strain and maintained with 80 mg/mL 2,6-diaminopimelic acid (Sigma Aldrich 33240) in potato agar mating plates (Deeraksa et al., 2005). Transformed Ap was selected with 10 µg/mL tetracycline on yeast peptone glycerol agar plates (Deeraksa et al., 2005).
 
@@ -178,17 +592,17 @@ To generate the Lp strain harboring pHluorin, the pHluorin coding sequence was c
 
 Fluorescent strains were further grown in MRS with antibiotics (10 µg/mL chloramphenicol (Calbiochem 220551, Lot D00083225) for Lp, tetracycline (10 µg/mL tetracycline hydrochloride, MP Biomedicals 02103011, Lot 2297K) for Ap).
 
-## pHluorin measurements
+### pHluorin measurements
 
 Cells were grown following the procedure described above. The Lp pHluorin strain was grown in MRS containing 10 µg/mL chloramphenicol for the first 48 h of growth. In addition to absorbance, fluorescence was measured every cycle using monochromators at excitation (nm)/emission (nm) wavelength combinations 405/509 and 475/509. Because the signal from excitation wavelength 405 nm was indistinguishable from signal from medium (data not shown), we also measured pHluorin signal at both excitation/emission wavelength combinations for cells in PBS. Cultures (48-h-old, 250 µL) were centrifuged at 10,000 x g for 1 min and resuspended in 1X PBS. Aliquots (200 µL) were transferred to a 96-well plate and fluorescence was measured using monochromators at excitation (nm)/emission (nm) wavelength combinations 405/509 and 475/509 within 1 min of resuspension in a Synergy H1 plate reader (BioTek Instruments).
 
-## Lactate measurements
+### Lactate measurements
 
 Colonies of Lp and Acetobacter species were inoculated into 3 mL MRS and grown for 48 h at 30°C with constant shaking. Saturated cultures were diluted to OD 0.02, mixed 1:1, and grown at 30°C with constant shaking. After mixing for 20 h and 48 hr, a 700 µL aliquot was transferred to a microcentrifuge tube and centrifuged at 10,000 x g for 4 min. Supernatant (600 µL) was transferred to a new tube and centrifuged at 10,000 x g for 4 min. Supernatant (500 µL) was transferred to a new tube and kept on ice for not longer than 1 hr, until lactate was measured.
 
 L- and D-lactate concentrations were measured using the EnzyChrom L- (BioAssay Systems ECLC-100, Lots BH06A30 and BI07A09) and D-lactate (BioAssay Systems EDLC-100, Lots BH0420 and BI09A07) Assay Kits. Samples were diluted 10- and 100-fold in water, and absorbance was measured according to the manufacturer’s instructions in a plate reader (Tecan M200). We also included controls without lactate dehydrogenase to account for endogenous activity in the supernatants.
 
-## Statistical analyses
+### Statistical analyses
 
 To determine significance of differences, we performed pairwise Student’s two-sided t-tests throughout. To decrease Type I error, we performed Bonferroni corrections for each experiment. Significant differences are denoted in the figures: *: p<0.05/n, **: p<0.01/n, ***: p<0.001/n, where n is the number of comparisons.
 

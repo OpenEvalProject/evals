@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.36734.001 The CRISPR system for prokaryotic adaptive immunity provides RNA-mediated protection from viruses and mobile genetic elements. When viral RNA transcripts are detected, type III systems adopt an activated state that licenses DNA interference and synthesis of cyclic oligoadenylate (cOA). cOA activates nucleases and transcription factors that orchestrate the antiviral response. We demonstrate that cOA synthesis is subject to tight temporal control, commencing on target RNA binding, and is deactivated rapidly as target RNA is cleaved and dissociates. Mismatches in the target RNA are well tolerated and still activate the cyclase domain, except when located close to the 3’ end of the target. Phosphorothioate modification reduces target RNA cleavage and stimulates cOA production. The ‘RNA shredding’ activity originally ascribed to type III systems may thus be a reflection of an exquisite mechanism for control of the Cas10 subunit, rather than a direct antiviral defence.
+The CRISPR system for prokaryotic adaptive immunity provides RNA-mediated protection from viruses and mobile genetic elements. When viral RNA transcripts are detected, type III systems adopt an activated state that licenses DNA interference and synthesis of cyclic oligoadenylate (cOA). cOA activates nucleases and transcription factors that orchestrate the antiviral response. We demonstrate that cOA synthesis is subject to tight temporal control, commencing on target RNA binding, and is deactivated rapidly as target RNA is cleaved and dissociates. Mismatches in the target RNA are well tolerated and still activate the cyclase domain, except when located close to the 3’ end of the target. Phosphorothioate modification reduces target RNA cleavage and stimulates cOA production. The ‘RNA shredding’ activity originally ascribed to type III systems may thus be a reflection of an exquisite mechanism for control of the Cas10 subunit, rather than a direct antiviral defence.
 
 ## Introduction
 
@@ -28,17 +28,124 @@ The crenarchaeaon Sulfolobus solfataricus has been a model for studies of the CR
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig1-v2.jpg)
 
-**Figure 1.:** S. solfataricus.The six CRISPR loci (A-F) are shown in black. There are three type I-A systems (grey), a Csm/III D system (dark blue) and Cmr/III B system (light blue). Adaptation genes are shown in green. Numbers shown correspond to Sso gene numbers; non-Cas genes are omitted. Genes encoding CARF family proteins are outlined in purple. The structures of two CARF proteins, Sso1389 (Csx1) and Sso1445 (Csa3), are shown. The SDS-PAGE gels show purified Csx1 (Sso1389) wild-type and variant H345N, and the Csm complex.
+**Figure 1.:** The six CRISPR loci (A-F) are shown in black. There are three type I-A systems (grey), a Csm/III D system (dark blue) and Cmr/III B system (light blue). Adaptation genes are shown in green. Numbers shown correspond to Sso gene numbers; non-Cas genes are omitted. Genes encoding CARF family proteins are outlined in purple. The structures of two CARF proteins, Sso1389 (Csx1) and Sso1445 (Csa3), are shown. The SDS-PAGE gels show purified Csx1 (Sso1389) wild-type and variant H345N, and the Csm complex.
 
 Here, we demonstrate that the S. solfataricus Csm/III-D complex generates cOA in response to target RNA binding, activating a CARF-domain nuclease Csx1 for RNA degradation. We describe a new method to generate short oligoadenosine molecules with a 3’-cyclic phosphate moiety and use this to determine that cOA4 is the relevant activator for Csx1. Activation of cOA synthesis is sensitive to changes at the 3’ end of RNA targets, next to Cas10. The deactivation of cOA synthesis is shown to correlate with backbone cleavage towards the centre of bound target RNA, leading to rapid product release.
 
 ## Results
 
-## S. solfataricus Csm generates cOA in response to target RNA binding
+### S. solfataricus Csm generates cOA in response to target RNA binding
 
 cOA synthesis has so far been observed directly in two bacterial type III systems (Kazlauskiene et al., 2017; Niewoehner et al., 2017). To study the system in the archaeon S. solfataricus, we first purified the Csm complex and the CARF nuclease Csx1 (Sso1389) (Figure 1). To determine whether the Csm complex in S. solfataricus can synthesise cOA, we incubated Csm with target RNA (A26) in the presence of ATP. Using a radioactively labelled target RNA, we first confirmed that the wild-type Csm complex can bind and cleave the target RNA via ‘backbone-mediated’ cleavage by the Cas7 subunit (Figure 2A), as demonstrated previously (Zhang et al., 2016). Three cleavage sites (B1-B3) are clearly visible, and a fourth (B4) is very faint. Targeted mutations that abrogate the active site of the HD domain and cyclase domain (denoted HD and GGDD, respectively) did not affect this backbone cleavage mode. The presence of 1 mM ATP in these reactions also had little effect on activity. Next, we performed the same reactions shown in Figure 2A but with unlabelled target RNA, phenol-chloroform extracted the products of reactions shown in Figure 2A to deproteinise them and added this solution to a reaction containing purified Csx1 (Sso1389) along with a radioactively labelled RNA substrate (A1) (Figure 2B). Cleavage of the target RNA by Csx1 at five positions (arrowed) was only observed with products of reactions that had included ATP as well as Csm with a wild-type cyclase domain. The cleavage sites map to C/U dinucleotides for this substrate (see Table 1). An active Csm HD domain was not required for stimulation of Csx1. These data suggest that Csx1 is activated by a small molecule that is synthesised by the cyclase domain of Csm when it is incubated with target RNA in the presence of ATP, consistent with an active cOA-signalling pathway in S. solfataricus. By carrying out the reaction shown in Figure 2A in the presence of α-32P-ATP, followed by separation of reaction products by denaturing gel electrophoresis, we observed synthesis of small radioactive oligomers, dependent on an active Csm cyclase domain, consistent with cOA synthesis by the Csm complex (Figure 2C). Liquid chromatography coupled with mass spectrometry (LC-MS) was used to confirm that the major product corresponded to cOA4, with much lower amounts of other cyclic molecules present (Figure 2—figure supplement 1).
 
-## Linear analogues of cOA generated using the MazF toxin confirm cOA4 as the relevant activator
+![Figure 2.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig2-v2.jpg)
+
+**Figure 2.:** (A) Backbone-mediated cleavage of a labelled target RNA. Three prominent cleavage sites (B1–B3) are indicated. Abrogation of the HD nuclease (HD) or cyclase (GGDD) domain active sites has no effect on this activity. The marker lanes (m) are generated by alkaline hydrolysis of the target RNA. The presence of ATP in the reaction is indicated by a ‘+’ symbol. Control lanes c1 and c2 represent incubation without Csm complex in the presence and absence of ATP, respectively. The diffuse density above the intact RNA is an artefact of electrophoresis. The yellow stars indicate the presence of a radioactive label. (B) Activation of the CARF nuclease Csx1 (Sso1389) by the reaction products of the Csm reaction in A. Csx1 is inactive against the labelled substrate RNA unless activated by the products of the Csm reaction. This activation is dependent on the presence of ATP in the original reaction and an intact cyclase domain. Control lanes c1 and c2 represent incubation of the RNA in buffer at 4 and 50°C, respectively, whereas c3 is a control in presence of Csx1 without added supernatant from Csm reaction. (C) Analysis of the products generated by Csm on addition of target RNA and α−32P-ATP. These products are dependent on the presence of an active cyclase domain. They represent a range of linear and cyclic polyadenosines of varying sizes. Control lanes c1 and c2 respectively represent the reaction in absence of Csm or in presence of Csm without target RNA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Extracted ion chromatograms (EIC) are provided as indicated in the panels. The data confirm that cOA4 is the major product; cOA5 is present at significantly lower concentration. No other oligoadenylate species were present above the MS detection limit. The EIC for linear MazF-derived OA4 >P demonstrates the difference in chromatographic retention for the isomeric species. (B) High-resolution mass spectra for 12.9 min (cOA4) and 16.7 min (cOA5) retention time showing the doubly charged molecular ion peak alongside mono- and disodium adducts. Expected for cOA4 C40H48N20O24P4 1316.2101, found 1316.2100 (-0.1 ppm); expected for cOA5 C50H60N25O30P5 1645.2626, found 1645.2618 (-0.5 ppm).
+
+**Table 1.**
+ Oligonucleotides.Regions complementary to crRNA A26 are italicized and mismatches are shown in bold. crRNA A26 is shown 3’ to 5’ and the 5’ handle is bold. Phosphorothioate linkages are indicated with an asterisk. For substrate A1, Csx1 cleavage sites are in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>crRNA A26</th>
+      <th>3’-GCAACAATTCTTGCTGCAACAATCTTCAACCCATACCAGAAAGUUA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Sequence (5’−3’)</td>
+    </tr>
+    <tr>
+      <td>Target RNA A26</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUAUGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>3’-blunt</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUAUGGU</td>
+    </tr>
+    <tr>
+      <td>Match</td>
+      <td>CGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUAUGGUCUUUCAAU</td>
+    </tr>
+    <tr>
+      <td>5’-blunt</td>
+      <td>CGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUAUGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>MM0.5</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUAUUUUGGAGA</td>
+    </tr>
+    <tr>
+      <td>MM1</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUCGGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>MM1a</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUAGGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>MM1b</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUCUGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>MM1.5</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGCCGGGUAUGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>MM2</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUCGGAAGUUGGGUAUGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>MM2.5</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUCAUAGAAGUUGGGUAUGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>MM4</td>
+      <td>AGGGUCGUUGUUAAAGACGACGUUGUUAGAAGUUGGGUAUGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>P-thioate A26</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGU*U*A*GAAGUUGGGU*A*U*GGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>Substrate (A1)</td>
+      <td>AGGGUAUUAUUUGUUUGUUUCUUCUAAACUAUAAGCUAGUUCUGGAGA</td>
+    </tr>
+    <tr>
+      <td>A3 (MazF)</td>
+      <td>AAAACAUCAG</td>
+    </tr>
+    <tr>
+      <td>A4</td>
+      <td>AAAAACAUCAG</td>
+    </tr>
+    <tr>
+      <td>A5</td>
+      <td>AAAAAACAUCAG</td>
+    </tr>
+    <tr>
+      <td>A6</td>
+      <td>AAAAAAACAUCAG</td>
+    </tr>
+    <tr>
+      <td>Trap DNA</td>
+      <td>GTCGTTCTTAACAACGACCCT</td>
+    </tr>
+    <tr>
+      <td>Target RNA B2 product</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUU</td>
+    </tr>
+  </tbody>
+</table>
+
+### Linear analogues of cOA generated using the MazF toxin confirm cOA4 as the relevant activator
 
 Although cOA4 is the main product generated by the Csm cyclase domain, it is possible that Csx1 is stimulated by a minor product. For example, S. thermophilus Csm mainly generates cOA3 and cOA4 but very little of the cOA6 that is the activator of the cognate Csm6 (Kazlauskiene et al., 2017). It is difficult to generate large amounts of cOA of defined ring size by enzymatic means; the type III systems are complex ribonucleoprotein machines, and each generates a mixture of cOA molecules with different ring sizes, often in non-ideal proportions. Linear oligoadenylates can activate CARF-domain nucleases, an effect stimulated by the presence of a cyclic 2’,3’-phosphate terminus (Niewoehner et al., 2017). However, standard phosphoramidite synthesis is problematic for small oligonucleotides below six nucleotides in length. In order to generate large quantities of defined signalling species, we have devised a convenient method for the generation of linear polyadenylates with a 2’,3’ cyclic phosphate – a species that has an identical mass to the corresponding cOA. To do this, we took advantage of the specificity of the MazF toxin of E. coli, which cuts RNA 5’ to an ACA recognition sequence, leaving a 2’,3’-cyclic phosphate (Zhang et al., 2003). MazF can be expressed at high levels in E. coli in complex with the antitoxin MazE and is activated by proteolysis (Park et al., 2012). By feeding recombinant MazF with oligoribonucleotides of sequence 5’-(A)n-ACAUCAG, we could generate large quantities of linear analogues of cOAs A3 >P, A4 >P, A5 >P and A6 >P (where ‘>P’ denotes a 2’,3’ cyclic phosphate moiety) as desired (Figure 3A).
 
@@ -48,59 +155,75 @@ Although cOA4 is the main product generated by the Csm cyclase domain, it is pos
 
 To test the utility of this approach, we incubated the Csx1 nuclease Sso1389 with a labelled target RNA substrate in the presence of MazF-derived A3 >P, A4 >P, A5 >P and A6 >P oligoadenylates (Figure 3B). We observed clear activation of the Csx1 ribonuclease activity by A4 >P, comparable to the activation by the authentic cOA mixture generated by the S. solfataricus Csm effector, demonstrating that cOA4 is the relevant activator for this enzyme.
 
-## cOA synthesis is coupled to target RNA cleavage
+### cOA synthesis is coupled to target RNA cleavage
 
 To investigate the relationship between target RNA cleavage and cOA synthesis, we used a 205 nt RNA transcript containing the target site for crRNA A26 (Figure 4). The RNA transcript was labelled during in vitro transcription with α-32P-ATP, allowing detection of any product containing an adenosine. We showed previously that Csm degrades target RNA oligonucleotides by backbone cleavage at up to four positions, B1-B4 (28). Under single turnover conditions (Csm 5 µM, transcript 5 nM), Csm-mediated backbone cleavage at sites B1-B3 of the transcript target sequence could be observed both by the processing of the large RNA species from 205 down to 170 nt, and by the appearance of small RNA products corresponding to cleavage at sites B1 and B2 further down the gel (Figure 4A). Since the six nucleotides between sites B2 and B3 lack an adenosine, this product was not visible. We quantified the fractional cleavage of the transcript over time and fitted it to an exponential equation, yielding a rate kc = 0. 15 ± 0.01 min−1 (Figure 4B). More detailed kinetics are described using synthetic oligonucleotide substrates, below.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig4-v2.jpg)
 
-**Figure 4.:** (A) Denaturing gel electrophoresis showing cleavage of a 205 nt RNA tanscript target by Csm over time, and cOA synthesis. Products arising from cleavage at sites B1-B3 are indicated. Lanes 1–10 represent time points of 0, 1, 2, 5, 10, 20, 40, 60, 90, 120 min. (B) Quantification of the fraction of cleaved transcript against time, fitted to an exponential equation, yielded a rate of 0.15 min−1. A bar chart showing the change in cOA4 production per minute for each time period (normalised to the value at 2 min) is shown as an insert.10.7554/eLife.36734.009Figure 4—source data 1.Figure 4B.
+**Figure 4.:** (A) Denaturing gel electrophoresis showing cleavage of a 205 nt RNA tanscript target by Csm over time, and cOA synthesis. Products arising from cleavage at sites B1-B3 are indicated. Lanes 1–10 represent time points of 0, 1, 2, 5, 10, 20, 40, 60, 90, 120 min. (B) Quantification of the fraction of cleaved transcript against time, fitted to an exponential equation, yielded a rate of 0.15 min−1. A bar chart showing the change in cOA4 production per minute for each time period (normalised to the value at 2 min) is shown as an insert.
 
 In the same reaction, we monitored cOA production by including α-32P-ATP (5 nM) along with cold ATP (0.5 mM). cOA synthesis was observed from early time points and plateaued over the time course. No more than 10% of the total amount of ATP was consumed in the course of the reaction. The change in cOA4 production over time was calculated by quantifying the amount of cOA4 produced per minute during each time interval and is shown as a bar chart in Figure 4B. As the target site in the transcript RNA becomes fully cleaved between 20 and 40 min, cOA4 production shuts down.
 
-## Target RNA requirements for activation of cOA synthesis
+### Target RNA requirements for activation of cOA synthesis
 
 Induction of cOA synthesis in response to viral infection induces an anti-viral state with an altered gene expression landscape and activation of non-specific ribonucleases. It follows that the synthesis of cOA should be under tight control. Activation of the cyclase domain of the Csm complex occurs on target RNA binding (Figure 2), which presumably initiates a conformational change that activates the cyclase domain. To investigate this further, we tested the activation of cOA synthesis using a variety of oligonucleotide target RNA molecules (Figure 5). Viral-derived target RNA is naturally mismatched with the CRISPR-derived 5’ handle of the crRNA. When the target RNA is complementary to the 5’ handle of the crRNA sequence, or when the 5 nt mismatched 3’-end of target RNA is missing, backbone cleavage still occurs but the cyclase domain is not activated (Figure 5—figure supplement 1). This confirms previous observations with S. thermophilus Csm (Kazlauskiene et al., 2017). We next tested the effect of mismatches by introducing pairs of mismatches at a variety of positions along the target RNA (Figure 5). All mismatched targets were still cleaved by Csm, in keeping with previous observations (Staals et al., 2014; Kazlauskiene et al., 2016). Target MM1 and MM2, with two mismatches spanning cleavage site B1 and B2 respectively, abolished backbone cleavage at the mutated position, but cleavage at other sites was still observed. Single mismatches flanking site B1 reduced but did not abolish backbone cleavage at site B1 (MM1a and 1b), whilst the double mismatch adjacent to site B1 (MM0.5) reduced cleavage at that site very significantly, suggesting local perturbation. None of the double mismatches introduced 5’ to site B1 on the target RNA reduced cOA synthesis, showing that they behave very similarly to fully cognate target RNA. In contrast, a double mismatch positioned two nt (MM0.5) or four nt (MM1) from the 3’ end of the matching target RNA resulted in complete abolition of cOA synthesis. Together, these data suggest that Csm is particularly sensitive to disruptions of targets at the 3’ end nearest the Cas10 subunit, whether by truncation, base-pairing with the crRNA 5’-handle, or mismatch (discussed later).
 
-## Kinetic analysis of target RNA cleavage
+![Figure 5.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig5-v2.jpg)
+
+**Figure 5.:** Oligonucleotides containing mismatches ranging along the length of the target RNA were used to test both backbone cleavage and cOA synthesis activity by Csm. Backbone cleavage is abolished when two mismatches flank the cleavage site, but is otherwise active. cOA synthesis is not observed for substrates MM0.5 and MM1, which introduce two consecutive mismatches close to the 3’ end of the target RNA. Bands marked with an asterisk are artefactual bands present in the RNA substrate. For all targets, lane c shows the reaction at the zero time point and the three further time points correspond to incubation for 5, 10 and 20 min. Further substrates are shown in Figure 5—figure supplement 1. (B) Table summarising backbone cleavage and cOA production for the mismatch substrates studied in Figure 5A and Figure 5—figure supplement 1. Backbone cleavage sites are indicated with a triangle and mismatches with an ‘X’. The target RNA is represented by the grey line.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Backbone cleavage for Target RNA wild-type, Match (with eight nt match to 5’ handle of crRNA) and 3’-blunt (with no 3’ extension). All three targets are cleaved by the Csm complex. Control c1 and c2 represent incubation of target RNA without Csm for 30 min at 0 or 70°C, respectively. Lanes – and + represent assays in the presence or absence of 1 mM ATP, respectively. For the 3’-blunt target, time points of 5 and 30 min are shown. (B) cOA production is seen for the WT but not the Match or 3’-blunt targets. A control target (5’ -blunt) lacking the 5 nt 5’ overhang present in the WT target behaves like the WT target. This serves as a control for the Match target, which also lacks these 5 nt. Lane c is run in the absence of Csm protein. The time points are 5 and 30 min for WT and 3’-blunt, and 5, 10, 30 min for the 5’-blunt substrate. All oligonucleotide sequences are shown in Table 1. (C) Target RNAs carrying mismatches at sites M1.5, M2.5 and M4 all support backbone cleavage and cOA production. Details as for Figure 5.
+
+### Kinetic analysis of target RNA cleavage
 
 Two possibilities for deactivation of the cyclase activity are when target RNA is cleaved, or when cleaved target RNA is released from the Csm complex. To measure the rates of target RNA cleavage and product release under pseudo-single turnover conditions we incubated an excess of Csm with an end-labelled target RNA oligonucleotide to follow target cleavage as a function of time. Three backbone cleavage sites (B1-B3) were clearly visible on gels (Figure 6A) (Zhang et al., 2016). We quantified the rates of cleavage at these three sites in triplicate experiments (Figure 6B), normalised to aid comparison – this normalisation does not change the rates measured. Site B1, which is the closest site to the Cas10 subunit, was cleaved with a rate constant kB1 of 0.19 min−1 under these conditions. The next backbone cleavage site, B2, was cut about half as fast (kB2 = 0.077 min−1). The third site, distal to Cas10, was cleaved at the slowest rate (kB3 = 0.004 min−1). The rate of cleavage at sites B1 and B2 thus corresponds very well with that observed for the transcript substrate (Figure 4). Faster target RNA cleavage at sites closer to the Cas10 domain has been observed qualitatively for other type III systems (Staals et al., 2014; Tamulaitis et al., 2014), and may be a general phenomenon.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig6-v2.jpg)
 
-**Figure 6.:** (A) Backbone cleavage of target RNA over time (0,1, 2, 5, 10, 20, 40, 60, 90, 120 min). Controls c1 and c2 represent target RNA incubated for 120 min in the absence of Csm at 4 and 70°C, respectively. (B) The rates of target RNA backbone cleavage at sites B1-B3 were determined. Data points represent means of 4 experiments with standard deviation shown. The star represents the radioactive label.10.7554/eLife.36734.013Figure 6—source data 1.Figure 6B.
+**Figure 6.:** (A) Backbone cleavage of target RNA over time (0,1, 2, 5, 10, 20, 40, 60, 90, 120 min). Controls c1 and c2 represent target RNA incubated for 120 min in the absence of Csm at 4 and 70°C, respectively. (B) The rates of target RNA backbone cleavage at sites B1-B3 were determined. Data points represent means of 4 experiments with standard deviation shown. The star represents the radioactive label.
 
-## Kinetic analysis of cOA synthesis
+### Kinetic analysis of cOA synthesis
 
 Having defined the kinetics of target RNA cleavage, we investigated the related cOA synthesis activity of Csm by feeding the reaction with α-32P-ATP to monitor the synthesis of cOA species. These experiments were carried out under the exact same conditions as those used to determine RNA cleavage (in fact they can be run simultaneously with labelled oligonucleotide target RNA and α-32P-ATP). The amount of cOA4 generated per minute during each interval following the initiation of the reaction was quantified in triplicate and is shown in Figure 7A. The rate of cOA4 synthesis peaked at 10 min and rapidly fell away, suggesting that the cyclase domain is rapidly activated on target RNA binding, and quickly deactivated after target RNA cleavage. To investigate this further, we monitored cOA4 synthesis by spiking radioactive ATP into a reaction containing Csm, target RNA and 0.5 mM cold ATP at three different time points (0, 20 and 40 min) after initiation of the reaction and followed cOA4 synthesis for a further 40 min (Figure 7B). Under single turnover conditions with 25 nM target RNA, we observed very low amounts of cOA4 production after 20 min of reaction. When the target RNA was increased ten-fold, this allowed cOA production to continue for a longer period. Thus, cOA synthesis is closely linked to target RNA availability, and is rapidly deactivated once target RNA is cleaved.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig7-v2.jpg)
 
-**Figure 7.:** (A) cOA4 synthesis was quantified using radioactive ATP under the assay conditions described for Figure 6 and plotted as cOA4 synthesised per min (densitometric counts) during the period of each reaction time slot. This was carried out in triplicate: means and standard deviations are shown. (B) In this experiment, α-32P-ATP was added to reactions at 0, 20 or 40 min and the reaction followed for a further 40 min (time points 5, 10, 20 and 40 min). Under standard single turnover conditions (25 nM target RNA), cOA synthesis was largely complete after 20 min. When target RNA was increased ten-fold, cOA synthesis persisted for a longer period.10.7554/eLife.36734.015Figure 7—source data 1.Figure 7A.
+**Figure 7.:** (A) cOA4 synthesis was quantified using radioactive ATP under the assay conditions described for Figure 6 and plotted as cOA4 synthesised per min (densitometric counts) during the period of each reaction time slot. This was carried out in triplicate: means and standard deviations are shown. (B) In this experiment, α-32P-ATP was added to reactions at 0, 20 or 40 min and the reaction followed for a further 40 min (time points 5, 10, 20 and 40 min). Under standard single turnover conditions (25 nM target RNA), cOA synthesis was largely complete after 20 min. When target RNA was increased ten-fold, cOA synthesis persisted for a longer period.
 
-## Phosphorothioate modification slows target RNA degradation and enhances cOA production
+### Phosphorothioate modification slows target RNA degradation and enhances cOA production
 
 Oligonucleotides with phosphorothioate (P-thioate) bonds, where a non-bridging oxygen of the phosphate linkage is replaced by sulfur, show enhanced resistance to a variety of nucleases. We therefore explored the effect of introduction of three consecutive phosphorothioate linkages centred on cleavage sites B1 and B2 (Table 1). The P-thioate target RNA was still cleaved by Csm, but the rate was significantly slower (Figure 8). In particular, a defect in cleavage at site B2 was apparent. By adding radioactive α-ATP to the reaction, we were able to monitor cOA4 simultaneously. This revealed that cOA4 production was strongly enhanced in the reaction with P-thioate target RNA, consistent with a requirement for cleavage and/or dissociation of cleaved target RNA to switch off the activity of the Cyclase domain.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig8-v2.jpg)
 
-**Figure 8.:** (A) Comparison of target RNA cleavage for unmodified target RNA (A26) and the same sequence with two sets of three phosphorothioate bonds at sites B1 and B2 (indicated by *). Target RNA cleavage was slowed significantly, with a particular reduction in cleavage at site B2. The synthesis of cOA4, on the other hand, was strongly stimulated over the course of the reaction. Time points are 0 (denoted ‘c’), 5, 10, 20, 40, 60, 80, 100 min. (B) Quantification of cOA4 production, showing four-fold higher levels of cOA4 after 100 min when the P-thioate modified target RNA was used. Values are the means of triplicate experiments, with standard deviation shown, and are normalised to the signal from the unmodified target RNA at 100 min.10.7554/eLife.36734.017Figure 8—source data 1.
+**Figure 8.:** (A) Comparison of target RNA cleavage for unmodified target RNA (A26) and the same sequence with two sets of three phosphorothioate bonds at sites B1 and B2 (indicated by *). Target RNA cleavage was slowed significantly, with a particular reduction in cleavage at site B2. The synthesis of cOA4, on the other hand, was strongly stimulated over the course of the reaction. Time points are 0 (denoted ‘c’), 5, 10, 20, 40, 60, 80, 100 min. (B) Quantification of cOA4 production, showing four-fold higher levels of cOA4 after 100 min when the P-thioate modified target RNA was used. Values are the means of triplicate experiments, with standard deviation shown, and are normalised to the signal from the unmodified target RNA at 100 min.
 
-## Kinetic analysis of RNA product release
+### Kinetic analysis of RNA product release
 
 In the cell, target RNA cleavage by Csm may be rate-limited by the rate of product release, rather than the chemical step of a cleavage reaction (Kazlauskiene et al., 2016). Conceivably, cleaved target RNA that remained bound to Csm could continue to activate the cyclase domain. We therefore quantified the rate of dissociation of cleaved target RNA by carrying out a cleavage reaction over time and running the products in a native gel. RNA remaining bound to Csm was held up in the wells whilst released RNA migrated through the gel. Dissociated, radioactively labelled target RNA cleavage products were trapped by the addition of a cold DNA oligonucleotide of complementary sequence to generate a RNA:DNA heteroduplex that migrated at a defined position in the gel (Figure 9A). The DNA trap is complementary to the target RNA from the 5’ end to roughly the site of B3 cleavage (Table 1). The dissociated RNA product built up over the time course of the reaction and was quantified in triplicate experiments. The rate of cleaved target RNA release was determined as koff = 0.066 ± 0.003 min−1 (Figure 9B), similar to the rate of cleavage of site B2 in the centre of the target RNA (kB2 = 0.077 min−1), significantly faster than the cleavage at site B3. The site of cleavage of the main dissociated product was confirmed as B2 using a synthetic RNA marker of that size (Figure 9—figure supplement 1). Thus, the clearance of target RNA from the Csm complex may be governed by the rate of backbone cleavage rather than product dissociation. Furthermore, cleavage up to the centre of the target RNA (site B2) appears sufficient to allow product dissociation. We also analysed the rate of synthesis of cOA4 over time (as shown in Figure 7), setting the rate at 10 min equal to one and normalising the data. The data fit a simple exponential with a rate constant kobs = 0.047 ± 0.008 min−1.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig9-v2.jpg)
+
+**Figure 9.:** (A) Native polyacrylamide gel following the reaction products generated by Csm bound to radioactively labelled target RNA. A time course of cleavage is shown in the first nine lanes (0, 2, 5, 10, 20, 40, 60, 90, 120 min), where trapping DNA complementary to the 5’ end of the target RNA was added at the end of the reaction. Only species released from the Csm complex enter the gel. A time dependent increase in a species corresponding to a trapped RNA:DNA heteroduplex was observed. Lane c1 shows the reaction run for 2 hr in the absence of trapping DNA – a smear of ssRNA reaction products were observed. Lane c2 shows the position of full length target RNA, and lane c3 shows the full length target RNA bound to the trapping DNA. Figure 9—figure supplement 1 shows the position of a control RNA corresponding to the 5’ end of the B2 cleavage product. (B) The time-dependent accumulation of trapped RNA was quantified in triplicate, normalised and plotted. Means plus standard deviation are shown, yielding a rate koff = 0.066 min−1. The progress of cleavage at site B2 (0.077 min−1) is included for comparison. We also quantified the rate of cOA synthesis in triplicate using target RNA and normalising the rate at 10 min to the value 1.0. This fitted to an exponential with a rate constant kobs = 0.047 min−1, suggesting that product release is correlated with a rapid inactivation of cyclase activity.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/36734/elife-36734-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Native polyacrylamide gel following the reaction products generated by Csm bound to radioactively labelled target RNA. A time course of cleavage is shown in the first six lanes (10, 20, 40, 60, 90, 120 min), where trapping DNA complementary to the 5’ end of the target RNA was added at the end of the reaction. Only species released from the Csm complex enter the gel. A time dependent increase in a species corresponding to a trapped RNA:DNA heteroduplex was observed. Lane c1 shows the reaction run for 2 hr in the absence of trapping DNA – a smear of ssRNA reaction products can be observed. Lane c2 shows the position of full length target RNA. Lane c3 shows the full length target RNA bound to the trapping DNA. Lane c4 shows the migration position of a labelled RNA oligonucleotide corresponding to cleavage at site B2, and lane c5 shows the same oligonucleotide hybridised to the trap DNA. The gel has a slight ‘smile’ at the edge, but the migration position of the B2 product: trap DNA hybrid fits the major product trapped after Csm cleavage of target RNA.
 
 In conclusion, the rates of target RNA cleavage at site B2, RNA product dissociation and inactivation of cOA synthesis were very similar, within experimental error. When cleavage at site B2 is perturbed by phosphorothioate modification, cOA production is enhanced significantly. These observations are consistent with activation of the cyclase domain quickly upon target RNA binding, followed by deactivation as target RNA is cleaved and dissociates from the Csm complex.
 
 ## Discussion
 
-## Synthesis of cyclic oligoadenylates by type III systems
+### Synthesis of cyclic oligoadenylates by type III systems
 
 We have demonstrated that the type III-D Csm complex from S. solfataricus generates cOA on binding target RNA. Given the preponderance of CARF-family proteins associated with type III systems and the conservation of the cyclase domain, this is likely to be a general phenomenon. The major product of cOA synthesis by this complex is cOA4, with much smaller amounts of other cyclic and linear oligoadenylates observed. For the S. solfataricus system, the generation of cOA4 fits with the binding pocket modelled for the CARF domain of the transcription factor Csa3 (Lintner et al., 2011), and with the observation that OA4 activates the CARF nuclease Csx1 in the related organism S. islandicus (Han et al., 2017b). Enterococcus italicus Csm generates mostly cOA6, and this molecule is the effector for the corresponding Csm6 enzyme (Niewoehner et al., 2017). In contrast, the major product generated by the S. thermophilus enzyme is cOA3, despite the fact that the corresponding Csm6 protein is activated by cOA6 (Kazlauskiene et al., 2017). Given that CARF domains are formed by dimeric subunits, the corresponding activators are likely to have a 2-fold axis of symmetry, which fits with observations that cOA4 and cOA6 are both activators of CARF nucleases. In contrast, cOA3 and cOA5 lack this symmetry and are unlikely to bind to CARF domains. They may be irrelevant in the context of signalling by type III systems, or alternatively may be activators for families of effector proteins that utilise a different domain for ligand binding.
 
 To circumvent the difficulty in generating defined activators of CARF domain proteins, we have developed a facile technique that takes advantage of the specificity of the E. coli toxin MazF, which cleaves RNA 5’ to an ACA sequence, generating a 3’ cyclic phosphate group. Linear analogues of cOA can be generated with the same mass and charge as the cyclic equivalents in a cost effective and scalable manner and be radioactively labelled if required. This approach could prove particularly useful for smaller molecules such as OA4, where phosphoramidite synthesis is problematic.
 
-## Activation of cOA synthesis
+### Activation of cOA synthesis
 
 Target RNA binding has been shown to activate both the HD nuclease and cOA synthesis activities of diverse type III systems. This is likely to result from conformational changes in the complex, and the Cas10 subunit in particular. A 5° rotation of the Cas10 subunit on target RNA binding has been observed for T. thermophilus Cmr (Taylor et al., 2015), which may reflect this activation. We observe that the activation of cOA synthesis is rapid, with activity detected within the first minute of incubation of Csm with target RNA transcripts. As for S. thermophilus Csm, activation requires a 3’ extension to the target RNA that does not base-pair with the 5’-handle of the crRNA (Figure 5 and [Kazlauskiene et al., 2017]). In our standard oligonucleotide substrates there is a 5 nt 3’- overhang, which fits the minimum requirement predicted from the biochemical and modelling study of the Siksnys group (Kazlauskiene et al., 2016). This short stretch of RNA presumably interacts with the Cas10 and/or the Csm4 subunit in such a way that a conformational change occurs in this region of the complex, resulting in the activation of both the HD nuclease and GGDD cyclase active sites, paving the way for DNA degradation and, through cOA signalling, the activation of HEPN family ribonucleases.
 
@@ -108,7 +231,7 @@ As observed for other type III systems, there is a high degree of tolerance for 
 
 The degree of specificity of the HEPN family nucleases against viral targets is still a matter for conjecture. The Marraffini group report that Csm6 selectively targets phage transcripts (Jiang et al., 2016), and the spatial coupling of the HD nuclease activity of Cas10 to actively transcribing viral RNA targets could ensure at least partial selectivity for foreign nucleic acids. Nonetheless, it seems likely that host nucleic acids would be caught in the cross-fire of this ‘scorched earth’ attack, leading to a shutdown in host gene expression or even cell death – which, as pointed out previously, could be a sensible option if viral infection is established in the cell (Elmore et al., 2016). Indeed, viral infection has been shown to result in dormancy and cell death in S. islandicus, which harbours a type III CRISPR system (Bautista et al., 2015).
 
-## Switching off cOA synthesis
+### Switching off cOA synthesis
 
 The activation of the HD nuclease and cyclase domains of Cas10 as a result of target RNA binding is not an irreversible event. Logically, it could be predicted that these domains are deactivated either when target RNA is cleaved, or when it dissociates from the complex, with a time lag possible in either circumstance. Backbone cleavage of RNA was the first activity detected in type III CRISPR systems (Hale et al., 2009), and appears to be ubiquitous. Nonetheless, this activity is not essential for type III-mediated immunity against phage infection in vivo (Samai et al., 2015). Terns and colleagues suggested that target RNA cleavage may represent a means for deactivation of the DNA nuclease activity of type III systems, as cleavage of the RNA transcript would cause the type III effector to ‘drift away’ (Elmore et al., 2016). Rather than spatial separation though, it seems more likely that target RNA cleavage and subsequent dissociation allows a collapse back to an inactive ground state of Cas10, switching off the highly potent HD nuclease and cOA signalling activities.
 
@@ -126,19 +249,57 @@ Several studies have reported that the HD nuclease activity of type III systems 
 
 ## Materials and methods
 
-## Csm complex expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Sulfolobus solfataricus)</td>
+      <td>Csm complex (eight subunits)</td>
+      <td>PMID: 24119402</td>
+      <td></td>
+      <td>virus expression construct</td>
+    </tr>
+    <tr>
+      <td>Gene (Sulfolobus solfataricus)</td>
+      <td>Csx1/Sso1389</td>
+      <td>this paper</td>
+      <td>UniProtKB - Q97YD5</td>
+      <td>plasmid expression construct</td>
+    </tr>
+    <tr>
+      <td>Gene (Eschericia coli)</td>
+      <td>MazEF</td>
+      <td>PMID: 22447587</td>
+      <td></td>
+      <td>plasmid expression construct</td>
+    </tr>
+  </tbody>
+</table>
+
+### Csm complex expression and purification
 
 The Csm (III-D) complex (wild-type, HD and GGDD variants) was expressed and purified from S. solfataricus as described previously (Zhang et al., 2016). This involves expression of a his-tagged subunit from an arabinose-inducible vector in S. solfataricus, followed by purification of the native complex with the tagged subunit incorporated. Variants such as the HD and GGDD targeted changes can thus be introduced on the tagged subunit. The resultant protein has a mixture of all the crRNAs loaded into the Csm complex, with abundant crRNAs such as A26 present at 1–2% of the total crRNA (Rouillon et al., 2013). A target RNA (target RNA A26 and derivatives) complementary to crRNA A26 is used in the assays described.
 
-## Purification of Csx1 and Csx1 variant H345N
+### Purification of Csx1 and Csx1 variant H345N
 
 Sso1389 (encoding Csx1) was purchased as a synthetic gene from Integrated DNA Technologies, Coralville, IA, United States (IDT) and cloned into the pEHisTEV vector (Liu and Naismith, 2009). The inactive Csx1 variant H345N was generated using the QuikChange Site-Directed Mutagenesis kit as per manufacturer’s instructions (Agilent technologies). The pEHisTEVCsx1 and pEHisTEVCsx1H345N constructs were transformed into C43 (DE3) E. coli cells. Protein expression was induced with 0.4 mM isopropyl-β-D-1-thiogalactoside (IPTG) at an OD600 of ~0.6 and grown for 4 hr at 25°C. Cells were harvested and resuspended in lysis buffer containing 50 mM Tris-HCl pH 7.5, 0.5 M NaCl, 10 mM Imidazole and 10% glycerol, and lysed by sonicating six times 2 min on ice with 2 min rest intervals. Csx1 was purified with a 5 ml HisTrapFF column (GE Healthcare), washing with five column volumes (CV) of buffer containing 50 mM Tris-HCl pH 7.5, 0.5 M NaCl, 30 mM Imidazole and 10% glycerol, and eluting with a linear gradient of buffer containing 50 mM Tris-HCl pH 7.5, 0.5 M NaCl, 0.5 M imidazole and 10% glycerol across 15 CV. Size exclusion chromatography was used to further purify Csx1, eluting protein with buffer containing 20 mM Tris-HCl pH 7.5, 0.5 M NaCl, 1 mM EDTA and 1 mM DTT. Csx1 was concentrated using a centrifugal concentrator, aliquoted and frozen at −80°C.
 
-## MazEF purification
+### MazEF purification
 
 The pET21c-mazEF-Fxa construct was a kind gift from Professor Masayori Inouye (Robert Wood Johnson Medical School, New Jersey). pET21c-mazEF-Fxa was transformed into BL21 (DE3) E. coli cells and expressed as previously published (Park et al., 2012), except cells were grown at 25°C for 4 hr after induction with 0.5 mM IPTG at OD600 of ~0.6. Cells were harvested by centrifugation at 4000 x g at 4°C for 15 min, suspended in buffer A (10 mM Tris-HCl, pH 7.5 and 150 mM NaCl) and lysed by sonicating six times 2 min on ice with 2 min rest intervals. MazEF was purified with a 5 ml HisTrapFF column, washing with 20 CV buffer A and 20 CV 2% buffer B (10 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 M imidazole) prior to elution with a linear gradient of buffer B across 15 CV. Size exclusion chromatography (Sepharose200 26/600; GE Healthcare) was used to further purify MazEF, eluting protein with buffer A. MazEF was concentrated using a centrifugal concentrator, aliquoted and frozen at −80°C.
 
-## RNA substrate preparation and kinetic analysis: short RNAs and transcripts
+### RNA substrate preparation and kinetic analysis: short RNAs and transcripts
 
 RNA oligonucleotides were ordered from IDT. Before assays, oligonucleotides were 5′-32P-radiolabelled and purified by denaturing (7M urea) polyacrylamide (20%) gel electrophoresis with 1 x Tris-borate-EDTA (TBE) buffer, followed by band excision, gel extraction, ethanol precipitation, as described previously (Rollie et al., 2015). The RNA transcript substrate was generated using as template a HindIII linearised pUC19 vector containing a cloned DNA sequence (between BamHI-HindIII) harbouring a target sequence (in bold) recognised by Csm crRNA A26 and a T7 phage polymerase promoter. Transcripts were obtained using the MEGAscript kit (Ambion by Life Technologies) according to the manufacturer instructions. 32P-α-ATP was added to the cold NTPs mix for further visualisation. Transcripts were finally purified using a G50 column (illustra Dye terminator removal kit-GE Healthcare) before use. For kinetic analysis, cleaved and uncleaved species were quantified using the Bio-Formats plugin (Linkert et al., 2010) of ImageJ (Schneider et al., 2012) as distributed in the Fiji package (Schindelin et al., 2012) and fitted to a single exponential curve using Kaleidagraph (Synergy Software), as described previously (Sternberg et al., 2012). For the transcript cleavage, a single experiment was quantified, but replicates were qualitatively similar. For the target A26 cleavage, the cleavage rate determined for site B1 could be a slight underestimate, as cleavage of B1 products at site B2 would decrease the B1 signal. This appears to be a minor effect however (see discussion).
 
@@ -146,20 +307,20 @@ The sequence of the DNA fragment used for the transcript generation, with the A2
 
 5’GGATCCTAATACGACTCACTATAGGATCAGATCATATCAGCTACATCGACAGGGTATTATTTGTTTGTTTCTTCTAAACTATAAGCTAGTTCTGGAGAGCATTAGCATGTAGAGGGTACAGTTTGGGTATTGCCGTTCTGGTCCTTATACGAAATGGAGATCGATTCTCGAGAGGGTCGTTGTTAAGAACGACGTTGTTAGAAGTTGGGTATGGTGGAGATGGAAGCTT
 
-## Csm target RNA cleavage and product release
+### Csm target RNA cleavage and product release
 
 The assay of target RNA cleavage by Csm was carried out as described previously (Zhang et al., 2016) unless specified. Briefly, the reaction was carried out under single turn-over conditions with 5 µM of CSM and 25 nM labelled RNA target in a buffer containing 20 mM MES pH 6.0, 100 mM NaCl, 0.1 mg/ml BSA, 2 mM MgCl2 and 0.5 or 1 mM ATP as mentioned in the text. The reaction was incubated at 70°C for the specified times. Following the reaction, products were phenol-chloroform extracted and run in 50% formamide on a denaturing gel (20% acrylamide, 7M Urea, 1X TBE) to observe backbone cleavage. Alternatively, the same reaction products were chilled in a stop solution containing 2 mM EDTA and 10 µM of DNA trap before adding Ficoll and running on a native gel (12% acrylamide containing 50 mM of NaCl and 1X TBE). Following electrophoresis, gels were imaged by phosphorimaging as described previously (Zhang et al., 2016). For the experiments comparing unmodified and phosphorothioate-containing target RNA, the target RNA cleavage reactions were performed as described above in presence of α-32P-ATP to visualise the formation of cyclic oligoadenylate.
 
 Generation of cyclic oligoadenylate (cOA) activator was generated by incubating 120 µg S. solfataricus Csm complex with 0.5 mM ATP, 1 mM MgCl2 and 100 nM target RNA in Csx1 buffer for 2 hr at 70°C. Reaction product was isolated by phenol-chloroform extraction followed by chloroform extraction and frozen at −20°C. For the experiments where the cOA production was observed over time, 2 nM of 32P-α-ATP was added (in addition to 1 or 0.5 mM of cold ATP) in the reaction to allow visualisation of the generated product on denaturing gel electrophoresis and phosphorimaging. In the case of the spiking experiment, 32P-α-ATP was added to a final concentration of 2 nM in the reaction (at 0, 20 or 40 min). The quantification of free 32P-α-ATP versus 32P-α-ATP incorporated in cOA allowed determination of a total ATP ratio used in cyclase reaction that is lower than 10% (50 µM) for the longest time points.
 
-## Generation of active MazF and linear oligoadenylates
+### Generation of active MazF and linear oligoadenylates
 
 MazF was used to generate linear oligoadenylate. Active MazF was initially obtained by incubating 1 mg of MazEF with 0.1 units Factor X (Sigma-Aldrich) activated in FXa buffer containing 10 mM Tris-HCl pH 8.0 and 1 mM DTT for 3 hr at 37°C. MazEF digestion with bovine trypsin (Promega) (1600:1 ratio) was found to yield a similar level of active MazF when incubated in the same buffer for 15 min. Therefore, MazF was predominantly generated by trypsin digestion and used immediately. Linear oligoadenylate was generated by incubating MazF with 30 µM A3, A4, A5 or A6 RNA (Table 1) in FXa buffer for 2.5 hr at 37°C. Products were phenol-chloroform extracted, and then chloroform extracted and frozen at −20°C. Denaturing polyacrylamide gel electrophoresis (20% acrylamide, 7M urea and 1x TBE) followed by phosphorimaging of MazF-cleaved 32P end-labelled A3, A4, A5 and A6 RNA was used to assess successful generation of intended linear OA.
 
-## Csx1 activation assay
+### Csx1 activation assay
 
 Csx1 and Csx1 H345N mutant were diluted in buffer containing 20 mM Tris-HCl pH 8.0, 0.5 M NaCl, 1 mM DTT and 1 mM EDTA. 250 nM of Csx1 dimer was incubated with 0.01% (v/v) cOA activator or 3 µM linear oligoadenylate (A3, A4, A5 or A6) and 50 nM 32P-5’-labelled substrate RNA in Csx1 buffer containing 20 mM MES pH 5.5, 100 mM K-glutamate and 1 mM DTT. Two control reactions, both containing only 50 nM RNA and buffer were incubated at 4°C or 50°C, respectively. All other reactions were incubated at 50°C and quenched at 5, 15 or 30 min by the addition of a reaction volume equivalent of 100% formamide prior to freezing at −20°C. RNA cleavage by Csx1 was visualised by phosphorimaging following denaturing gel electrophoresis. Csx1 is stable and active at 70°C, but the choice of 50°C reduced background substrate RNA cleavage.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Liquid chromatography-high resolution mass spectrometry (LC-HRMS) analysis was performed on a Thermo Scientific Velos Pro instrument equipped with HESI source and Dionex UltiMate 3000 chromatography system. Compounds were separated on a Kinetex 2.6 µm EVO C18 column (2.1 × 100 mm, Phenomenex) using a linear gradient of 2–15% acetonitrile against 20 mM ammonium bicarbonate pH 8 (gradient start delay 5 min, gradient length 28 min) at a flow rate of 350 µl min−1 and column temperature of 40°C. Data were acquired on the FT mass analyzer in negative ion mode with scan range m/z 150–1500. Source voltage was set to 3.5 kV, capillary temperature was 350°C, and source heater temperature was 250°C.

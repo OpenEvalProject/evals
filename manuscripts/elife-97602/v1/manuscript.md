@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02s376052 Laboratory of Sensory Processing, Brain Mind Institute, Faculty of Life Sciences, École Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland
-2. https://ror.org/013meh722 Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/02cgss904 International Research Center for Medical Sciences, Kumamoto University Kumamoto Japan
+1. Laboratory of Sensory Processing, Brain Mind Institute, Faculty of Life Sciences, École Polytechnique Fédérale de Lausanne (EPFL) Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
+2. Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. International Research Center for Medical Sciences, Kumamoto University Kumamoto Japan ([ROR:02cgss904](https://ror.org/02cgss904))
 
 † Corresponding author
 
@@ -33,25 +33,77 @@ In order to understand in more detail how these diverse signaling pathways might
 
 ## Results
 
-## Sample preparation, imaging and analysis methods to quantify long-range axonal projections
+### Sample preparation, imaging and analysis methods to quantify long-range axonal projections
 
 We developed a workflow for sample preparation, imaging and analysis to quantify cell class-specific axonal projections from genetically defined classes of neurons located in SSp-bfd and SSs (Figure 1A). We first identified the C2 whisker representations in SSp-bfd and SSs through intrinsic optical imaging (El-Boustani et al., 2020; Ferezou et al., 2007; Grinvald et al., 1986) and subsequently injected Cre-dependent adeno-associated virus to express fluorescent proteins (GFP or tdTomato) in various transgenic mouse lines expressing Cre-recombinase in subsets of neocortical neurons. After 4 weeks of expression, brains were extracted and treated through iDISCO (Renier et al., 2014) for signal amplification and clearing. Volumetric images were obtained at ~5 µm near-isotropic resolution using MesoSPIM (Voigt et al., 2019) and registered to the Allen CCF (Wang et al., 2020) with Elastix (Klein et al., 2010; Shamonin, 2013). Injection sites were then segmented semi-automatically using Ilastik (Berg et al., 2019; Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cell class-specific labeling of axonal projections was achieved by injecting a Cre-dependent GFP or tdTomato reporter virus into posterior whisker-related SSp-bfd or SSs of transgenic mice expressing Cre in specific classes of cortical neurons. Samples then went through iDISCO treatment in order to achieve whole-brain immunolabeling and clearing. Volumetric brain imaging was performed using mesoscale selective plane illumination microscopy (MesoSPIM) to visualize axonal structures throughout the full brain. Axons were segmented on the original MesoSPIM images while atlas alignment and injection site segmentation were obtained with downsampled MesoSPIM images. To count the number of labeled cells, high-resolution images of a subregion around the injection site were obtained using a Zeiss Lightsheet 7 microscope. Finally, axons were aligned to the Allen CCF with the axonal density values normalized by the number of infected neurons. (B) An example downsampled plane (green color shows the fluorescence) aligned to the Allen CCF near the injection site in SSp-bfd of a Rbp4-Cre mouse (left). Segmentation of injection site (red color, center) and overlay in the Allen CCF space (right). This allowed the assignment of imaged voxels to voxels of the Allen CCF. (C) An example horizontal plane from the raw image stack obtained by MesoSPIM (left, green color raw fluorescence signal, same mouse as panel B), with the result of TrailMap axon segmentation (red) overlayed on the raw image (green) (center). Max horizontal projection (i.e. binary, axon or no axon) of the final axonal skeleton obtained from the axon segmentation (right). (D) Long-range axonal density maps in the Allen CCF in coronal (left), sagittal (middle), and horizontal (right) views, represented as summed projections of axonal voxel values normalized by the number of labeled neurons (same mouse as panels B and C).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) An example image plane from an image sub-stack used to further train the Trailmap network (left). This image contains axons with delineated morphologies and blood vessel artifacts in the cortex. During training, pixels were manually labeled as axon (red) or artifact (cyan) (center). Overlay of the raw image with the labels (right). (B) Another example similar to A but demonstrating axon labeling in the corpus callosum. (C) Another example similar to A but demonstrating axon labeling in deeper brain regions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Left, overview of one image plane in a Tlx3-Cre sample with region of interest in a frontal cortical area. Middle, zoomed in view of the region of interest displaying travelling and branching axons in the cortex. Right, zoomed in view of the region of interest overlayed with Trailmap segmentation (red). (B) Same as A but for a Scnn1a-Cre sample with the region of interest in the striatum. (C) Same as A but for a Sim1-Cre sample with the region of interest in the thalamus and brainstem region.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) An example plane focused on the injection site with labeled cell bodies (white circles). Each sample was imaged at higher resolution near the injection to quantify the numbers of infected cells. Note that the sizes of white circles increase and decrease as the center of cell body comes in and out of plane. (B) Number of cells labeled in the injection site for each sample. (C) Number of axon voxels per labeled cell for each sample.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The sample preparation and analysis pipeline were repeated in wild-type mice to test for Cre-independent expression of the reporter viruses. A raw image plane from a control mouse injected with a Cre-dependent GFP-expressing virus in the SSp-bfd with region of interest indicating injection site (white box). Inset, zoomed in image of the region of interest showing few cell bodies with barely identifiable processes. (B) Max projection of connected components greater than 10,000 pixels after axon segmentation and processing of the same brain shown in panel A. These are mainly composed of midline artifacts which would then be eliminated in the visual inspection step. This suggests that our method specifically identifies axons from Cre-expressing neurons. (C) Same as panel A, but for a wild-type mouse injected with a Cre-dependent tdTomato -expressing virus in the SSs. (D) Same as panel B, but for the mouse investigated in panel C.
 
 For each sample, voxels containing axons were segmented in the original ~5 µm isotropic-resolution image volume using TrailMap (Friedmann et al., 2020; Figure 1C), after further training of the network to segment axons in our light-sheet images (Figure 1—figure supplements 1 and 2). The resulting segmentation was skeletonized into different bins based on the segmentation confidence and a weighted sum was calculated to prevent disconnections arising from dimmer axons. After manual curation (see Materials and methods), axon skeletons were registered to the Allen CCF using the parameters obtained when registering the original image volumes. Each 25 x 25 × 25 µm voxel of the Allen CCF was assigned the total number of near-isotropic ~5 µm-resolution voxels containing axon in the original image. In each sample, we also imaged the injection site at a higher resolution to count the number of neurons in the injection site expressing fluorescent protein (Figure 1—figure supplement 3). We then normalized the axonal quantification with the number of labeled neurons to be able to compare across different samples allowing us to compute the long-range axonal projection density per neuron for each cell class-specific SS injection site (Figure 1D).
 
 To test for specificity, we injected a doubled volume of our reporter viruses in mice that did not express Cre-recombinase, but otherwise following identical protocols. We found very few fluorescently labeled cells and their axonal arbors could not be readily distinguished by visual inspection, and, more importantly, axons were not identified by the TrailMap-based analysis procedure (Figure 1—figure supplement 4). Axonal projections quantified by our methods therefore appear to be specific for a given Cre-driver line.
 
-## Laminar characterization of Cre-lines in SSp-bfd and SSs
+### Laminar characterization of Cre-lines in SSp-bfd and SSs
 
 We selected six previously characterized mouse lines expressing Cre-recombinase in different classes of neurons distributed across different cortical layers. In order to explore the laminar distributions of Cre-recombinase expression, we crossed each of the Cre-driver lines with Cre-dependent tdTomato reporter mice (Madisen et al., 2010), and examined coronal sections ~1.8 mm posterior to Bregma, close to the plane including the C2 whisker representations in SSp-bfd and SSs (Figure 2 and Figure 2—figure supplement 1). In terms of overall layer-specificity, our results were in good agreement with previous investigations for each of the selected Cre-driver mouse lines. We found that the tdTomato-expressing cell bodies in crosses with Rasgrf2-dCre mice (Harris et al., 2014) were mainly, although not exclusively, in layer 2/3 of SSp-bfd and SSs (Vavladeli et al., 2020; Yamashita et al., 2018), and, to help the reader, we refer to these as Rasgrf2-L2/3 neurons in subsequent sections of this manuscript (Figure 2A). In crosses with Scnn1a-Cre mice (Madisen et al., 2010), the expression was mostly, but not exclusively, in layer 4 neurons of SSp-bfd and SSs, and we label these as Scnn1a-L4 neurons (Figure 2B). For Tlx3-Cre mice (Gerfen et al., 2013), fluorescently-labelled cell bodies were largely found in superficial layer 5, likely coinciding with the thalamic innervation from high-order posterior medial thalamus in layer 5A (Sermet et al., 2019; Wimmer et al., 2010). Consistent with previous studies (Gerfen et al., 2013), in Tlx3-Cre mice we did not observe axonal labelling outside of cortex and striatum, but found dense axon bundles traveling through the corpus callosum to the contralateral hemisphere. This observation suggests that only intratelencephalic-projecting neurons were labeled in this mouse line, which we term Tlx3-L5IT neurons (Figure 2C). In contrast, in Sim1-Cre mice (Gerfen et al., 2013), deep layer 5 neurons were preferentially labeled in SSp-bfd and SSs, with obvious fluorescence in the pyramidal tract but not the callosum, suggesting that pyramidal tract-projecting neurons are labeled in this mouse line, but not intratelencephalic-projecting neurons. We therefore term these as Sim1-L5PT neurons (Figure 2E). Neurons in layer 5 were labeled in the neocortex of Rbp4-Cre mice (Gerfen et al., 2013), which we term Rbp4-L5 neurons (Figure 2D). Obvious fluorescence in the callosum as well as pyramidal tract, suggests Cre expression in both intratelencephalic- and pyramidal tract-projecting neurons in this mouse line. Finally, we investigated Ntsr1-Cre mice (Gong et al., 2007; Olsen et al., 2012), finding labelled neurons in layer 6 and strong labeling in the thalamus via corticothalamic axons, and we term these Ntsr1-L6CT neurons (Figure 2F).
 
-## Axonal projections from SSp-bfd and SSs
+![Figure 2.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig2-v1.jpg)
+
+**Figure 2.:** (A) Expression pattern of tdTomato in a coronal section including the posterior barrel field of a transgenic cross of a Rasgrf2-Cre mouse with a Cre-dependent tdTomato reporter mouse, presented as an overview image from an epifluorescent microscope overlayed with the corresponding annotation of the Allen Brain Atlas (left), and two confocal images from the locations of SSp-bfd (middle) and SSs (right) together with labels for the approximate cortical layer boundaries. Red, tdTomato. Cyan, DAPI. (B) As for panel A, but for Scnn1a-L4 neurons. (C) As for panel A, but for Tlx3-L5IT neurons. Labelling in layer 1 is likely of axonal or dendritic origin, and no cell bodies were labelled in this layer. (D) As for panel A, but for Rbp4-L5 neurons. Labelling in layer 1 is likely of axonal or dendritic origin, and no cell bodies were labelled in this layer. Note strong expression of Cre in neurons with cell bodies located in the hippocampus, which does not affect our analysis of axonal density based on virus injected locally into the neocortex. (E) As for panel A, but for Sim1-L5PT neurons. (F) As for panel A, but for Ntsr1-L6CT neurons.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Same data as shown in Figure 2, but showing the panels of SSp-bfd and SSs for each of the Cre-lines at higher resolution.
+
+### Axonal projections from SSp-bfd and SSs
 
 In this study, we analyzed the axonal projections from a total of 37 injection sites with 18 injection sites in SSp-bfd and 19 in SSs. Across Cre-lines we studied: (i) 3 SSp-bfd and 3 SSs Rasgrf2-L2/3 injection sites with 837±232 labeled cells in a volume of 0.066±0.020 mm3 (mean ±sem); (ii) 4 SSp-bfd and 3 SSs Scnn1a-L4 injection sites on average with 644±89 labeled cells in a volume of 0.033±0.004 mm3; (iii) 3 SSp-bfd and 3 SSs Tlx3-L5IT injection sites on average with 837±161 labeled cells in a volume of 0.036±0.005 mm3; (iv) 2 SSp-bfd and 3 SSs Rbp4-L5 on average with 850±175 labeled cells in a volume of 0.056±0.008 mm3; (v) 3 SSp-bfd and 4 SSs Sim1-L5PT injection sites on average with 255±78 labeled cells in a volume of 0.042±0.012 mm3; and (vi) 3 SSp-bfd and 3 SSs Ntsr1-L6CT injection sites on average with 1240±309 labeled cells in a volume of 0.045±0.010 mm3 (Figure 1—figure supplement 3). After TrailMap segmentation and registration to the Allen CCF, the axonal density was normalized by the number of labeled cells in each injection site. The axonal projection density maps for each individual injection site along with the complete analysis code are available via Zenodo (https://doi.org/10.5281/zenodo.13377319). The data from individual injections were then averaged separately according to the Cre-driver mouse line and the location of the injection site in either SSp-bfd (Figures 3A and 4) or SSs (Figure 3B and Figure 4—figure supplement 1). The total number of ~5 µm-resolution axon-containing voxels per labeled cell body was further quantified according to the parcellated regions of the Allen CCF (Figure 5, and Figure 5—figure supplement 1). Heavily innervated cortical regions include primary and secondary motor areas (MOp and MOs), various other primary somatosensory areas such as the upper limb (SSp-ul), unassigned region (SSp-un), lower limb (SSp-ll), trunk (SSp-tr), and mouth (SSp-m), temporal association areas (TEa), auditory areas (AUD), visual areas (VIS), anterior cingulate areas (ACA), orbital areas (ORB), perirhinal areas (PERI), agranular insular areas (AI), and retrosplenial areas (RSP). Strongly innervated subcortical structures include regions such as the caudoputamen (CP), midbrain (MB), superior colliculus (SC), zona incerta (ZI), anterior pretectal nucleus (APN), principal and spinal trigeminal nuclei (PSV and SPV), and various thalamic regions (such as the ventral complex of the thalamus, VP, and the lateral group of dorsal thalamus, LAT, which includes the posterior complex of the thalamus, PO). There were obvious differences comparing across Cre-lines, but the projections from SSp-bfd and SSs overall appeared to be similar (Figures 3—5, Figure 4—figure supplement 1, Figure 5—figure supplement 1, Figure 5—figure supplement 2 and Figure 5—figure supplement 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig3-v1.jpg)
 
 **Figure 3.:** (A) Averaged axonal density maps for each of the six transgenic mouse lines with axons originating from SSp-bfd presented in horizontal (top), coronal (middle) and sagittal (lower) sum-projection views. White dots represent the center of each injection site and color-coded pixel intensity represents the amount of axon voxels normalized with the number of labeled cells. For Rasgrf2-L2/3, n=3 injections; for Scnn1a-L4, n=4 injections; for Tlx3-L5IT, n=3 injections; for Rbp4-L5, n=2 injections, for Sim1-L5PT, n=3 injections; and for Ntsr1-L6CT, n=3 injections. (B) Same as panel A, but for SSs injections. For Rasgrf2-L2/3, n=3 injections; for Scnn1a-L4, n=3 injections; for Tlx3-L5IT, n=3 injections; for Rbp4-L5, n=3 injections, for Sim1-L5PT, n=4 injections; and for Ntsr1-L6CT, n=3 injections.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig4-v1.jpg)
+
+**Figure 4.:** The leftmost column shows the Allen CCF atlas at different AP locations (from AP +3 mm in the top row to AP –7 mm in the bottom row). Some brain regions of interest are labeled with color-coded dots and acronyms. The next columns show the mean axonal density averaged across the injection sites in SSp-bfd for each of the six transgenic lines. Each axon image represents a 125 µm sum projection centered around the corresponding AP location with each 25x25 µm pixel indicating the color-coded number of 5 µm voxels containing axon per labeled neuron within the analysed 25 x 25 × 125 µm volume. Abbreviations: ACA, Anterior cingulate area; AUDd, Dorsal auditory area; AUDpo, Posterior auditory area; CP, Caudoputamen; ECT, Ectorhinal area; ENT, Entorhinal area; GRN, Gigantocellular reticular nucleus; ICe, Inferior colliculus external nucleus; IRN, Intermediate reticular nucleus; KF, Koelliker-Fuse subnucleus; MARN, Magnocellular reticular nucleus; MOp, Primary motor area; MOs, Secondary motor area; MRN, Midbrain reticular nucleus; ORB, Orbital area; PAG, Periaqueductal gray; PARN, Parvicellular reticular nucleus; PIR, Piriform area; PL, Prelimbic area; PO, Posterior complex of the thalamus; PRNr, Pontine reticular nucleus; PSV, Principal sensory nucleus of the trigeminal; py, pyramidal tract; RN, Red nucleus; RSPagl, Retrosplenial area, lateral agranular part; SC, Superior colliculus; SNr, Substantia nigra, reticular part; SPVC, Spinal nucleus of the trigeminal, caudal part; SPVO, Spinal nucleus of the trigeminal, oral part; SSp-bfd, Primary somatosensory area, barrel field; SSs, Supplemental somatosensory area; TEa, Temporal association area; TRN, Tegmental reticular nucleus; VISa, Anterior visual area; VISal, Anterolateral visual area; VPL, Ventral posterolateral nucleus of the thalamus; VPM, Ventral posteromedial nucleus of the thalamus; and ZI, Zona incerta.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Same as Figure 4, but for SSs injections. The leftmost column shows the Allen CCF atlas at different AP locations (from AP +3 mm in the top row to AP –7 mm in the bottom row). Some brain regions of interest are labeled with color-coded dots and acronyms. The next columns show the mean axonal density averaged across the injection sites in SSs for each of the six transgenic lines. Each axon image represents a 125 µm sum projection centered around the corresponding AP location. Abbreviations: ACA, Anterior cingulate area; AUDd, Dorsal auditory area; AUDpo, Posterior auditory area; CP, Caudoputamen; ECT, Ectorhinal area; ENT, Entorhinal area; GRN, Gigantocellular reticular nucleus; ICe, Inferior colliculus external nucleus; IRN, Intermediate reticular nucleus; KF, Koelliker-Fuse subnucleus; MARN, Magnocellular reticular nucleus; MOp, Primary motor area; MOs, Secondary motor area; MRN, Midbrain reticular nucleus; ORB, Orbital area; PAG, Periaqueductal gray; PARN, Parvicellular reticular nucleus; PIR, Piriform area; PL, Prelimbic area; PO, Posterior complex of the thalamus; PRNr, Pontine reticular nucleus; PSV, Principal sensory nucleus of the trigeminal; py, pyramidal tract; RN, Red nucleus; RSPagl, Retrosplenial area, lateral agranular part; SC, Superior colliculus; SNr, Substantia nigra, reticular part; SPVC, Spinal nucleus of the trigeminal, caudal part; SPVO, Spinal nucleus of the trigeminal, oral part; SSp-bfd, Primary somatosensory area, barrel field; SSs, Supplemental somatosensory area; TEa, Temporal association areas; TRN, Tegmental reticular nucleus; VISa, Anterior visual area; VISal, Anterolateral visual area; VPL, Ventral posterolateral nucleus of the thalamus; VPM, Ventral posteromedial nucleus of the thalamus; and ZI, Zona incerta.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig5-v1.jpg)
+
+**Figure 5.:** The total number of axon voxels in various brain regions calculated across the group average for each Cre-line separately for SSp-bfd and SSs injection sites. Ipsilateral (left) and contralateral (right) innervation locations are indicated separately. The target areas were ranked in a descending order with respect to the average innervation density across all injections. The top 75 innervated regions are listed here with full anatomical names of each acronym presented in the leftmost column. Note that the values are represented in logarithmic scale, highlighting regions with little axon.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Same as Figure 5, but here the data are represented on a linear color scale, highlighting regions with dense axonal projections.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Quantification of axons in the isocortex of the ipsilateral and contralateral hemispheres across all group averages. Regions are arranged such that functionally-related areas are placed together. Note the color-coded intensity scale is logarithmic. (B) Comparison of the number of isocortex regions in the contralateral hemisphere vs the ipsilateral hemisphere innervated by SSp-bfd (left) and SSs (right) samples. Regions with axon values below the 25th percentile across all data were considered as not being innervated.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Here we schematically represent the long-range projection patterns of the different genetically-defined classes of neurons in a highly simplified manner, which fails to capture the richness of the full data set, but might nonetheless serve as a useful high-level overview of some important aspects of the cell class-dependent connectivity.
 
 Rasgrf2-L2/3 neurons projected strongly to ipsilateral SSp, SSs, MOp, MOs and perirhinal/temporal association cortex. These neurons also innervate an outer segment of the ipsilateral dorsolateral striatum. Contralaterally, the only major target of Rasgrf2-L2/3 neurons was SS, and there appeared to be no innervation of contralateral MO. Consistent with an intratelencephalic projection class, Rasgrf2-L2/3 neurons did not project outside of cortex and striatum.
 
@@ -73,21 +125,37 @@ To quantify similarities and differences in cell class-specific projection maps,
 
 In the Allen CCF, there are numerous brain regions that occupy large volumes encompassing distinct subregions. Assessing axonal projections at finer levels of spatial detail could therefore be important to reveal any further topographical arrangements. As an independent quantification, we therefore carried out direct voxel-wise spatial correlations of Gaussian-filtered 25 µm-resolution axonal projection maps for each injection site across the entire Allen CCF brain volume (Figure 6B). Overall spatial correlation remained high for Rasgrf2-L2/3, Scnn1a-L4, Tlx3-L5IT and Rbp4-L5 neurons, all of which include intratelencephalic-projecting classes of neurons. Similar to the correlations found for the categorical brain segmentation analysis, the highest levels of spatial correlation were found for Tlx3-L5IT and Rbp4-L5 neurons across all injections, possibly because these samples had many cortical axons occupying a large fraction of the reference space. Correlations between SSp-bfd and SSs injections were lower for some other transgenic lines and this could suggest that there might be finer spatial arrangements of axonal innervation within the anatomical regions defined by the atlas depending on the precise location of the injection site, which, as described below, we investigated anatomically and functionally with respect to one major specific downstream target of both injection sites, the motor cortex (MO), comprised of MOp and MOs.
 
-## Spatial organization of the axonal innervation of the motor cortex
+### Spatial organization of the axonal innervation of the motor cortex
 
 In order to investigate the spatial mapping of SSp-bfd and SSs axonal input to frontal cortex, we examined the horizontal axonal density maps in MO for each individual injection site. Axons in layer 2/3 and layer 5 of the MO region were Gaussian-filtered and, subsequently, the spread, intensity, and locations of the axonal innervation in MO was quantified (Figure 7). We computed contours of regions with ≥75% and≥95% maximum axon density and the center locations (Figure 7A and B). The area within the 75% contour was used as a measure of the horizontal degree of spread of the frontal innervation. Tlx3-L5IT samples had the greatest lateral extent of MO axon innervation (0.43±0.03 mm2, n=6 injections), followed by Rbp4-L5 (0.34±0.08 mm2, n=5 injections), Rasgrf2-L2/3 (0.18±0.05 mm2, n=6 injections), Scnn1a-L4 (0.11±0.02 mm2, n=7 injections), Ntsr1-L6CT (0.10±0.04 mm2, n=6 injections), and finally Sim1-L5PT (0.05±0.01 mm2, n=7 injections) (Figure 7C). The peak density of MO axonal innervation was quantified within a 225 x 225 µm ROI centered on the peak of the MO hotspot, giving: Rasgrf2-L2/3 with 1,364±512 axon voxels/mm2, Scnn1a-L4 with 273±56 axon voxels/mm2, Tlx3-L5IT with 632±146 axon voxels/mm2, Rbp4-L5 with 911±277 axon voxels/mm2, Sim1-L5PT with 381±134 axon voxels/mm2, and Ntsr1-L6CT with 32±13 axon voxels/mm2 (Figure 7D). Next, we plotted the centers of all injections within a transgenic line and the locations of their densest MO innervation, indicated by the center of the 95% contour (Figure 7E). In many cases, there seemed to be a reflected mapping of the location of the injection site along the mediolateral axis in SS with the location of the peak of frontal axonal target innervation along the anteroposterior axis in MO. Indeed, we found significant correlations between these two locations, where more lateral injections in SS corresponded to more anterior MO innervations for Rasgrf2-L2/3 neurons (r=0.89, p=0.017, slope = 0.57), Scnn1a-L4 neurons (r=0.95, p=0.0013, slope = 0.62), and Sim1-L5PT neurons (r=0.89, p=0.0071, slope = 0.47) (Figure 7F). No significant correlation was found for Tlx3-L5IT, Rbp4-L5 and Ntsr1-L6CT neurons, which could be due to the wide spread of axonal innervations in MO for Tlx3-L5IT and Rbp4-L5 neurons making precise center-localization more difficult, and due to the overall paucity of axons extending to MO from Ntsr1-L6CT neurons.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig7-v1.jpg)
+
+**Figure 7.:** (A) Example images of MO axons from two Rasgrf2-L2/3 injections represented with cyan (SSp-bfd injection site) and magenta (SSs injection site), and their centers of injection sites represented as circles with corresponding colors (above). Axons in layers 2/3 and 5 of motor cortex (MOp and MOs) were sum-projected in a horizontal view and axonal density per 25 x 25 µm pixel per labeled neuron represented on a color scale. Pixels with intensities ≥75% or≥95% of maximum intensity were segmented and a centroid of the 95% max segmentation was computed. Contours at 75% max (green and red) and 95% max (cyan and magenta) of the MO axons of the two injections as well as the centroid of the 95% contour (white crosses) were computed to help quantify axonal innervation patterns (below). Bregma is indicated with a red cross at the midline. White outline near the frontal region depicts the boundary for the MO region. (B) Same as panel A, but for two Tlx3-L5IT injections. (C) The cortical surface area within the 75% max contours of axonal innervation in MO for each Cre-line provides a measure of the horizontal spread of the MO innervation. Each dot represents an individual injection site with cyan indicating data from SSp-bfd injections and magenta from SSs injections. Black dots and error bars represent the group averages with standard errors. (D) Same as panel C, but indicating the sum-projected axonal density within a 225 x 225 µm ROI centered on the location of the peak axonal density. This is a measure of the peak innervation density in MO. (E) Center of injection sites and centroids of 95% contours of MO innervation mapped in the horizontal plane for each Cre-line. Each injection site and projection target is represented with the same color and a line drawn to connect the injection site center (filled circles) and its corresponding MO innervation center (open circles) in order to visualize a map reflected along the axis from anterolateral to posteromedial. Note that two injection sites from the Ntsr1-Cre transgenic line did not have any axons in MO. (F) Linear regression to measure the correlation between mediolateral positions (using the absolute values) of the injection site center and the anteroposterior positions of the MO innervation centers for each Cre-line (Rasgrf2-L2/3: r=0.89, p=0.017, slope = 0.57; Scnn1a-L4: r=0.95, p=0.0013, slope = 0.62; Tlx3-L5IT r=–0.05, p=0.93, slope = –0.046; Rbp4-L5: r=0.84, p=0.078, slope = 0.64; Sim1-L5PT: r=0.89, p=0.0071, slope = 0.47; and Ntsr1-L6CT: r=–0.26, p=0.74, slope = –0.68). Cyan data points show SSp-bfd injections whereas magenta data points are from SSs injections. Two Ntsr1-L6CT samples did not have any axon in MO, leaving only 4 data points for this mouse line.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Axons in the caudoputamen from Rasgrf2-L2/3 neurons. Left, sum projections in coronal (above) and horizontal (below) views of Ssp-bfd (cyan) group average. Middle, sum projections in coronal and horizontal views of SSs (magenta) group average. Right, merge of Ssp-bfd and SSs group averages. Images are Gaussian filtered and red crosses in horizontal views indicates bregma. Axonal density from Rasgrf2-L2/3 neurons is concentrated in the most lateral, posterior, and dorsal part of the ipsilateral caudate putamen, displaying a ‘crescent’ shape in the coronal views. (B) Similar to panel A, but for Scnn1a-L4 neurons. The axonal projection patterns remain in the ipsilateral caudoputamen for Scnn1a-L4 neurons, but are somewhat broader than for Rasgrf2-L2/3 neurons. (C) Similar to panel A, but for Tlx3-L5IT neurons. The ipsilateral caudoputamen is broadly innervated by both SSp-bfd and SSs Tlx3-L5IT neurons. However, SSp-bfd Tlx3-L5IT neurons show greater innervation in the contralateral striatum compared to SSs Tlx3-L5IT neurons. (D) Sum axon intensity along the anterior-posterior axis and dorsal-ventral axis on the ipsilateral side, as well as bilateral medial-lateral axis were computed for each Rasgrf2-L2/3, Scnn1a-L4, and Tlx3-L5IT sample. Semi-transparent lines indicate individual samples, solid lines represent group averages for SSp-bfd (cyan) and SSs (magenta) injections.
+
 We also investigated the spatial innervation pattern of Rasgrf2-L2/3, Scnn1a-L4 and Tlx3-L5IT neurons in the striatum (Figure 7—figure supplement 1), where we found that axonal density from Rasgrf2-L2/3 neurons in both SSp-bfd and SSs was concentrated in a posterior dorsolateral part of the ipsilateral striatum, whereas Tlx3-L5IT neurons had extensive axonal density across a much larger region of the striatum, including bilateral innervation by SSp-bfd neurons. Striatal innervation by Scnn1a-L4 neurons was intermediate between Rasgrf2-L2/3 and Tlx3-L5IT neurons.
 
-## Functional connections from sensory to motor cortex
+### Functional connections from sensory to motor cortex
 
 If functionally relevant, the spatial anatomical organization of axonal innervation of MOs and MOp by SSp-bfd and SSs neurons could also be reflected in a similar functional connectivity map. To test this, we crossed the same Cre-driver lines (except Rbp4-Cre) with a mouse line expressing channelrhodopsin-2 in a Cre-dependent manner (Madisen et al., 2012), as well as a red fluorescent genetically encoded calcium indicator, jRGECO1a, driven by the Thy1 promoter (Dana et al., 2018). Blue light pulses (4 ms pulses at 50 Hz for 500 ms with a spot diameter of ~0.5 mm) were delivered to SSp-bfd and SSs of awake head-restrained triple-transgenic mice through an intact transparent skull and the evoked calcium signals were imaged at 50 Hz in the period interleaving the blue light pulses (Figure 8A). Mice were accustomed to sit calmly in the setup and no specific behavior was enforced during data acquisition. We quantified the location of the hotspot of evoked signals in MO for stimulation sites in posterior SSp-bfd and SSs from 3 to 4.5 mm lateral to the midline and ~1.5 mm posterior to Bregma, similar to the locations of the injections for the anatomical analysis (Figure 8B and Figure 8—figure supplement 1). As the stimulation site was moved more laterally, the frontal hotspot of activity appeared to move anteriorly (Figure 8C and D). Correlating the laterality of the optogenetic stimulus with the anterior location of the hotspot in MO revealed significant relationships for Rasgrf2-L2/3 neurons (n=7 mice, r=0.52, p=0.005, slope = 0.50), Scnn1a-L4 neurons (n=5 mice, r=0.60, p=0.005, slope 0.49), Tlx3-L5IT neurons (n=6 mice, r=0.92, p=2.6 x 10–10, slope 0.66) and Ntsr1-L6CT neurons (n=6 mice, r=0.75, p=2.3 x 10–5, slope = 0.46) (Figure 8E). Frontal signals evoked by stimulation of Sim1-L5PT neurons were weak and difficult to localize, likely explaining the absence of significant correlation for this class of projection neurons (n=6 mice, r=0.25, p=0.27, slope = 0.30).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig8-v1.jpg)
+
+**Figure 8.:** (A) Schematic of the experimental apparatus. Awake mice were trained to sit comfortably under a wide-field fluorescence macroscope with their head fixed to a metal pole. jRGECO1a excitation light (563 nm) traveled through a series of dichroic mirrors towards the transparent skull of the mice. Emission light was bandpass filtered (590–700 nm) and collected by an sCMOS camera. Interleaved with imaging frames, a 473 nm laser pulse train was directed by x-y galvoscan mirrors to generate an ~500 µm diameter cortical spot to photostimulate cell class-specific ChR2-expressing neurons. (B) Schematic of the Allen CCF parcellations of dorsal cortex with a 24 degree rotation around the anteroposterior axis (left). Example average functional images after stimulation for Rasgrf2-L2/3 neurons located 3 mm lateral to bregma (center) or 4.5 mm lateral to bregma (right). The red boxes (center and right panels) delineate the region used for the calculation of the center of mass. (C) Determination of centers of mass after stimulation of 4 cortical locations averaged for each mouse line. Stimulated points span 1.5 mm horizontally from SSp-bfd to SSs separated by 0.5 mm. The color scale is adjusted from min to max for each image. (D) Summary plot of the locations of the centers of mass in MO after stimulating each point in SSp-bfd and SSs, computed from the across mouse average images shown in panel C. (E) Correlation between mediolateral location of the stimulation points and the anteroposterior distribution of the centers of mass in MO. Individual gray lines correspond to individual mice and red lines represent the Pearson’s correlation trendline calculated over the population. For Rasgrf2-L2/3 neurons: n=7 mice, r=0.52, p=0.005, slope = 0.50; Scnn1a-L4 neurons: n=5 mice, r=0.60, p=0.005, slope 0.49; Tlx3-L5IT neurons: n=6 mice, r=0.92, p=2.6 x 10–10, slope 0.66; Sim1-L5 neurons: n=6 mice, r=0.25, p=0.27, slope 0.30; and Ntsr1-L6CT neurons: n=6 mice, r=0.75, p=2.3 x 10–5, slope = 0.46.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/97602/elife-97602-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Data from the individual mice that comprise the average calcium image in Rasgrf2-L2/3 mice shown in Figure 8. Color scales represent ∆F/F0 for each row of cortical images. Insets represent the region used to calculate the center of mass, with color scale adjusted from min to max. Crosses indicate center of mass and boxes the regions of interest used for quantification. (B) Grand average time course of ∆F/F0 for each mouse line computed around the center of mass of the frontal hotspot across the 3 s trial period (left) and at higher temporal resolution showing the first 100 ms following the onset of the 50 Hz optogenetic stimulus (right). The shaded gray area indicates the optogenetic stimulation period.
 
 ## Discussion
 
 In this study, we investigated the long-range axonal projections of neurons located in posterior SSp-bfd and SSs utilizing layer-specific transgenic mouse lines and applying recent advances in sample preparation, volumetric brain imaging, computer vision machine learning, and digital mouse brain atlases. Our results are largely in agreement with previously reported studies of the major projection targets, but our data extend current knowledge through the high sensitivity of the methodology for detecting sparse axons, the high specificity of labeling of genetically defined classes of neurons, and the brain-wide analysis for assigning axons to detailed brain regions. Furthermore, we demonstrated that aspects of the anatomical organization appear consistent with functional mapping by combining wide-field calcium imaging and optogenetic stimulation.
 
-## Cell class-specific projections from whisker-related somatosensory cortices
+### Cell class-specific projections from whisker-related somatosensory cortices
 
 We studied six mouse lines expressing Cre-recombinase in distinct neurons located largely in different neocortical layers (Figure 2), as previously characterized (Gerfen et al., 2013; Gong et al., 2007; Harris et al., 2014; Madisen et al., 2010). Consistent with previous literature and extending to further areas, major target regions for projections from SS neurons are various cortical regions such as MO, SS, TEa, AUD, ACA, VIS, ECT, PERI, ORB, VISC, AI, PL, RSP, and FRP; various regions of basal ganglia CP, SNr, ACB, STR, and GPe; various thalamic-related nuclei such as LAT, VP, VENT, ZI, APN, ILM, RT, TH, and MED; midbrain areas such as MB, MRN, SC, and PAG; and brainstem areas such as SPVI, PSV, PARN, GRN, MY, PG, P, and PRN (Petreanu et al., 2007; Aronoff and Petersen, 2008; Yamashita et al., 2018; Mao et al., 2011; Oh et al., 2014; Zingg et al., 2014; Guo et al., 2017; Minamisawa et al., 2018; Petersen, 2019; Santiago et al., 2018; Liu et al., 2021). Each genetically defined class of neurons innervates a subset of the mentioned targets ranging from a few (e.g. Ntsr1-L6CT neurons) to many regions (e.g. Rbp4-L5 neurons). Indeed, the axonal projections of each cell class had unique properties. Ntsr1-L6CT neurons projected almost exclusively to thalamus with little long-range corticocortical connectivity. Sim1-L5PT neurons did not project to the contralateral cortex but strongly projected to many subcortical targets including thalamus, superior colliculus, pons, and spinal trigeminal nuclei. Rbp4-L5 neurons had the broadest innervation spreading across very many brain regions. Tlx3-L5IT neurons were unique in projecting strongly to the contralateral motor cortex but not projecting to subcortical targets other than striatum. Scnn1a-L4 neurons overall had few long-range projections with sparse innervation of ipsilateral motor cortex and contralateral somatosensory cortex. In contrast Rasgrf2-L2/3 neurons strongly innervated ipsilateral motor cortex without innervating contralateral motor cortex, but with some projections to contralateral somatosensory cortex.
 
@@ -97,7 +165,7 @@ Overall, the patterns of axonal projections for a given cell class largely overl
 
 It is important to note that classes of cortical neurons can be defined across many different features with the six Cre lines studied here likely only accounting for a fraction of the overall diversity. Investigating further transgenic lines expressing Cre-recombinase in different neuron classes will likely help provide deeper understanding of the organization of cortical circuits. For example, Ctgf-Cre mice show specific expression in L6B intratelencephalic-projecting neurons (Tasic et al., 2016), Fezf2-Cre mice label pyramidal tract-type neurons in L5B with subtypes thereof labeled in Adcyap1-Cre and Tcerg1l-Cre mice (Matho et al., 2021), Efr3a-Cre mice are highly specific for L5 intratelencephalic-projecting neurons (Gerfen et al., 2013; Kim et al., 2015), and Cux1-Cre mice label corticocortical, but not corticostriatal, neurons in L2/3 (Matho et al., 2021). Furthermore, recent large-scale investigations of single-cell gene expression patterns followed by clustering provide an important data-driven approach to identify cell classes, some of which might represent unique cell types (Tasic et al., 2018; Tasic et al., 2016). For instance, in ALM and VISp, 56 clusters of gene expression were found for excitatory neurons (Tasic et al., 2018), which helped uncover two different classes of L5 pyramidal tract neurons projecting to non-overlapping targets and contributing to different aspects of motor control (Economo et al., 2018). The current study thus represents only a small fraction of the overall diversity of cortical cell classes, which can in the future be studied in further quantitative detail following the technical approach used here. It should also be noted that at the single-cell level, the relationship between axonal projection patterns and genetic markers is often complex and in many cases there is no one-to-one correspondence between neuronal types defined by transcriptomics and axonal projection patterns (Lui et al., 2021; Peng et al., 2021), with axonal projection patterns in some cases appearing more correlated to functional activity than transcriptomic profile (Lui et al., 2021). In L2/3 of SSp-bfd, excitatory neurons projecting to SSs or to MOp form two largely non-overlapping neuronal populations with clear both anatomical and functional differences (Chen et al., 2013; Yamashita et al., 2013). Early transcriptional studies furthermore pointed to differences between SSp neurons projecting to SSs vs MOp (Sorensen et al., 2015), and more recently distinct developmental programs have been uncovered in these two populations (Klingler et al., 2021). Although remarkable progress has been made in defining cell classes of the mouse neocortex, much remains to be discovered especially in linking cell class-specific structure to function.
 
-## Limitations and future perspectives
+### Limitations and future perspectives
 
 One important limitation of the current study arises from the axon segmentation procedures using the 3D convolutional network. The current network specializes in capturing sparse, dim and thin axons. In contrast, axons with denser morphologies are less recognized. These are often observed near the injection sites, in thick fiber bundles (such as the corpus callosum), and in heavily innervated target regions. Hence, for example, axons in samples with very strong focal thalamic innervations such as Ntsr1-L6CT neurons are under-represented. Future studies might utilize additional models aiming to capture more diverse axonal innervation patterns (Gongwer et al., 2023). Probably most important for future studies is the need to increase the light-sheet imaging resolution perhaps combined with the use of expansion microscopy to provide brain-wide micron-resolution data (Glaser et al., 2023; Wassie et al., 2019). Likely of equal importance, is to prepare samples with fewer numbers of labeled cells, aiming for overall sparse, but bright, axonal labeling (Economo et al., 2016; Luo et al., 2016). Such technical advances may help towards the key goal of obtaining reliable reconstructions of many individual neurons (Peng et al., 2021; Winnubst et al., 2019). Future studies should also aim to identify neurotransmitter release sites along the axon, which could be achieved by fluorescent labeling of prominent synaptic components, such as synaptophysin-GFP (Li et al., 2010). Machine-learning methods may also provide powerful approaches to try to more specifically localize synapses (Liu et al., 2024).
 
@@ -105,35 +173,192 @@ In summary, this study contributes to the goal of developing increasingly robust
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>Rasgrf2-dCre</td>
+      <td>Harris et al., 2014</td>
+      <td>JAX: 022864</td>
+      <td>129S-Rasgrf2tm1(cre/folA)Hze/J</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>Scnn1a-Cre</td>
+      <td>Madisen et al., 2010</td>
+      <td>JAX: 009613</td>
+      <td>C3-Tg(Scnn1a-cre)3Aibs/J</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>Tlx3-Cre</td>
+      <td>Gerfen et al., 2013</td>
+      <td>GENSAT: MMRRC_041158-UCD</td>
+      <td>FVB(Cg)-Tg(Tlx3-cre)PL56Gsat/Mmucd</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>Sim1-Cre</td>
+      <td>Gerfen et al., 2013</td>
+      <td>GENSAT: MMRRC 037650-UCD</td>
+      <td>FVB(Cg)-Tg(Sim1-cre)KJ18Gsat/Mmucd</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>Rbp4-Cre</td>
+      <td>Gerfen et al., 2013</td>
+      <td>GENSAT: MMRRC_037128-UCD</td>
+      <td>FVB(Cg)-Tg(Rbp4-cre)KL100Gsat/Mmucd</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>Ntsr1-Cre</td>
+      <td>Gong et al., 2007; Olsen et al., 2012</td>
+      <td>GENSAT: MMRRC_030648-UCD</td>
+      <td>FVB(Cg)-Tg(Ntsr1-cre)GN220Gsat/Mmucd</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>LSL-tdTomato</td>
+      <td>Madisen et al., 2010</td>
+      <td>JAX: 007909</td>
+      <td>Cg-Gt(ROSA)26Sor tm9(CAG-tdTomato)Hze/J</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>LSL-ChR2</td>
+      <td>Madisen et al., 2012</td>
+      <td>JAX: 024109</td>
+      <td>Cg-Gt(ROSA)26Sor tm32(CAG-COP4*H134R/EYFP)Hze/J</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mouse, C57BL/6)</td>
+      <td>Thy1-jRGECO1a</td>
+      <td>Dana et al., 2018</td>
+      <td>JAX: 030525</td>
+      <td>Tg(Thy1-jRGECO1a) GP8.20Dkim/J</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Adeno-associated virus)</td>
+      <td>AAV1-FLEX-tdTomato</td>
+      <td>Addgene</td>
+      <td>Addgene_28306</td>
+      <td>Gift from Edward Boyden</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Adeno-associated virus)</td>
+      <td>AAV9-FLEX-EGFP-WPRE</td>
+      <td>Addgene Oh et al., 2014</td>
+      <td>Addgene_51502</td>
+      <td>Gift from Hongkui Zeng</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP antibody(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam # Ab290</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP antibody(chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Aves Labs # GFP-1010</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tdTomato antibody(goat polyclonal)</td>
+      <td>Sicgen</td>
+      <td>Sicgen # Ab8181</td>
+      <td>1:600 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit-Alexa647 antibody(alpaca monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>ThermoFisher # SA5-10327</td>
+      <td>1:800 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken-Alexa647 antibody(goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam # Ab150171</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat-Alexa594antibody(donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen # A-11058</td>
+      <td>1:400 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat-Alexa594antibody(Fab, donkey polyclonal)</td>
+      <td>Jackson Immuno Research</td>
+      <td>Jackson ImmunoResearch # Fab 705-587-003</td>
+      <td>1:600 dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrailMap</td>
+      <td>Friedmann et al., 2020</td>
+      <td>https://doi.org/10.1073/pnas.1918465117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Data and code</td>
+      <td>Zenodo</td>
+      <td>https://doi.org/10.5281/zenodo.13377319</td>
+      <td>Data and code for this study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Male and female mice, at least 6 weeks old, of the following transgenic lines were used (all back-crossed with C57BL/6 mice): Rasgrf2-dCre (B6;129S-Rasgrf2tm1(cre/folA)Hze/J, JAX: 022864) (Harris et al., 2014), Scnn1a-Cre (B6;C3-Tg(Scnn1a-cre)3Aibs/J, JAX: 009613) (Madisen et al., 2010), Tlx3-Cre (B6.FVB(Cg)-Tg(Tlx3-cre)PL56Gsat/Mmucd, GENSAT: MMRRC_041158-UCD) (Gerfen et al., 2013), Sim1-Cre (B6.FVB(Cg)-Tg(Sim1-cre)KJ18Gsat/Mmucd, GENSAT: MMRRC 037650-UCD) (Gerfen et al., 2013), Rbp4-Cre (B6.FVB(Cg)-Tg(Rbp4-cre)KL100Gsat/Mmucd, GENSAT: MMRRC_037128-UCD) (Gerfen et al., 2013), and Ntsr1-Cre (B6.FVB(Cg)-Tg(Ntsr1-cre)GN220Gsat/Mmucd, GENSAT: MMRRC_030648-UCD) (Gong et al., 2007; Olsen et al., 2012). In addition, C57BL/6 mice were used as controls to test the Cre-dependence of our reporter virus. To investigate the expression pattern of Cre, each transgenic line was also crossed with Cre-dependent tdTomato reporter mice (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J, JAX: 007909) (Madisen et al., 2010). In the optogenetic connectivity mapping experiments we crossed the same Cre-driver lines (except for Rbp4-Cre) with Cre-dependent ChR2 reporter mice (B6;Cg-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J, JAX: 024109) (Madisen et al., 2012) and transgenic red fluorescent calcium indicator mice (Tg(Thy1-jRGECO1a)GP8.20Dkim/J, JAX: 030525) (Dana et al., 2018).
 
-## Characterization of Cre lines
+### Characterization of Cre lines
 
 To study the expression patterns of the Cre lines (Figure 2), mice were perfused with phosphate-buffered saline (PBS, warmed up to 37 °C) with heparin solution (20 units / mL) followed by 4% paraformaldehyde (PFA, Electron Microscopy Science) in PBS. Brains were extracted, post-fixed overnight in 4% PFA, rinsed and stored in PBS at 4 °C until subsequent procedures. Brains were sectioned using a vibratome with a thickness of 100 µm. Coronal sections were collected and then stained with DAPI for 10 min on a shaker. Slices were then washed with PBS for 10 min on the shaker and finally carefully mounted on glass coverslips with VECTASHIELD HardSet Antifade Mounting Medium (Vector laboratories). We imaged sections around AP –1.8 mm that contained both SSp-bfd and SSs, located close to our virus injection sites. Brain slices mounted on glass coverslips were imaged with a slide scanner (Olympus VS200) to capture overall tdTomato expression patterns. The tdTomato signal was acquired through an excitation filter BP 554/23 in combination with an emission filter HC 595/31 and the DAPI signal was acquired through an excitation filter BP 378/52 in combination with an emission filter BP 432/36. A single focal plane near the middle of the section was captured with a pixel size of 0.69 x 0.69 µm (10x air objective). To have a more detailed view of the tdTomato expression pattern, the brain slices were further imaged with a confocal microscope (Leica SP8) with a pixel size of 0.142 x 0.142 µm (40x glycerol objective) and smaller regions of interest near SSp-bfd and SSs were acquired (excitation at 405 nm with a 430–485 nm emission filter for DAPI; excitation at 552 nm with a 565–645 nm emission filter for tdTomato).
 
-## Virus injections
+### Virus injections
 
 Mice were anesthetized with isoflurane (3% with O2 for induction, then 1.5% for maintenance) with body temperature being maintained at 37 °C through a heating pad. Eye gel (VITA-POS, Pharma Medica AG) was applied to maintain eye moisture. Carprofen was injected subcutaneously (7.5 mg/kg) and a lidocaine /bupivacaine mixture (lidocaine 6 mg/kg; bupivacaine 2.5 mg/kg) was injected at the site of incision under the scalp. A piece of scalp was removed and the periosteum was carefully removed using a scalpel blade and the exposed surface was disinfected with a povidone-iodine solution (Betadine, Mundipharma Medical Company). Then, a thin layer of super glue (Loctite 401, Henkel, Germany) was applied to the skull and a custom-made metal head-post was secured to the skull with dental acrylic (Paladur, Kulzer). All whiskers except for the C2 whisker on the right whisker pad were trimmed and the representations of the C2 whisker in the left SSp-bfd and SSs were identified through intrinsic optical signal imaging, as previously described (Ferezou et al., 2007; Grinvald et al., 1986). After at least 4 days of recovery, craniotomies were made to access SSp-bfd and SSs based on blood vessel patterns obtained during the intrinsic optical imaging. A total of 25 nl of AAV1-FLEX-tdTomato (Addgene # 28306, original titer 1.2x1013 vg/ml, diluted 10 times with Ringers’ solution before injection) or AAV9-FLEX-EGFP-WPRE (Addgene # 51502, original titer 1.9x1013 vg/ml, diluted 10 times with Ringers’ solution before injection) were injected at a subpial depth of 200 µm for Rasgrf2-L2/3 neurons, 400 µm for Scnn1a-L4 neurons, 500 µm for Tlx3-L5IT neurons, 500 µm Rbp4-L5 neurons, 700 µm for Sim1-L5PT neurons, and 850 µm for Ntsr1-L6CT neurons. For the control injections in C57BL/6 mice, the same AAV1-FLEX-tdTomato or AAV9-FLEX-EGFP-WPRE viruses (diluted 10 times with Ringers’ solution) were injected in SSp-bfd or SSs at both 300 µm and 700 µm from the pial surface with 25 nl injected per depth (i.e. double the amount of virus was injected in control mice compared to Cre-expressing mice). After 4 weeks of viral expression, mice were perfused as described above, brains post-fixed overnight in 4% PFA, rinsed and stored in PBS at 4 °C until subsequent procedures.
 
-## Whole-brain clearing, immunostaining, and light-sheet imaging
+### Whole-brain clearing, immunostaining, and light-sheet imaging
 
 We largely followed the published procedures for immunolabeling-enabled three-dimensional imaging of solvent-cleared organs (iDISCO) (Renier et al., 2014). In brief, samples were dehydrated with a methanol/dH2O gradient, delipidated with dichloromethane, bleached, rehydrated, permeabilized and blocked before incubation with primary antibody for 7 days. Samples were washed for 2 days before incubation in secondary antibodies for another 7 days. After the incubation, samples were washed again for 2 days and dehydrated again in methanol/dH2O gradient. A final delipidation step was performed before the samples were immersed in ethyl cinnamate for refractive index matching and stored until light-sheet imaging. The immunostaining agents involved were: rabbit anti-GFP antibody (Ab290, Abcam, 1:1000 dilution), chicken anti-GFP antibody (GFP-1010, Aves Labs, 1:2000), and goat anti-tdTomato antibody (Ab8181, Sicgen, 1:600) as primary antibodies; alpaca anti-rabbit-Alexa647 (SA5-10327, ThermoFisher, 1:800), goat anti-chicken-Alexa647 (Ab150171, Abcam, 1:1000), donkey anti-goat-Alexa594 (A-11058, Invitrogen, 1:400), and Fab-donkey anti-goat-Alexa594 (Fab 705-587-003, Jackson ImmunoResearch, 1:600) as secondary antibodies. The blocking agents to prevent non-specific binding of the secondary antibodies were either bovine serum albumin (3%) or normal goat serum (3%) in the case of the goat anti-chicken-Alexa647 antibody.
 
 The cleared brains were imaged with a mesoscale selective plane illumination microscope (MesoSPIM) (Voigt et al., 2019). The tissue was illuminated from the side of the injection site at 561 nm excitation and collected through a LP561 or 593/40 nm filter for imaging Alexa594 or at 647 nm excitation with a LP663 filter for imaging Alexa647. An auto-fluorescent channel was also acquired at 488 nm illumination with a 530/43 nm filter. The voxel size of the image stack was 5.3 x 5.3 x 5 µm (x, y, z). For each sample, a subregion containing the injection site was reimaged at higher resolution with a Zeiss Lightsheet 7 microscope in order to count infected cells. The tissue was illuminated from the side of the injection site at 561 nm excitation and fluorescence collected through a BP575-615 filter for imaging Alexa594 or at 638 nm excitation with a LP660 filter for imaging Alexa647. The voxel size of the image stack was 1.52 x 1.52 x 6 µm (x, y, z). The number of labeled cells for each injection site was quantified using the spot detection function of Imaris followed by manual curation.
 
-## Axon segmentation and post-processing
+### Axon segmentation and post-processing
 
 Pixels containing axons were segmented from images using TrailMap (Friedmann et al., 2020), a 3D convolutional network with U-net architecture specialized to identify elongated structures. We followed the author’s guidelines for transfer learning to familiarize the network with our samples. Training of the network was done in Python 3.9 with Tensorflow version 2.8.0 on a GPU (NVIDIA GeForce RTX 3090). We labeled an additional 32 image sub-stacks from 8 samples to further train the TrailMap model to adapt to our data. These image substacks were selected to encompass different morphologies of axons and artifacts, as well as different image appearances accounting for the two secondary antibodies (Alexa594 or Alexa647). Each substack consisted of 100 planes of the original image cropped to a smaller dimension, the cropped sections were either 200 x 200 pixels or 400 x 400 pixels. 70% of our labeled image substacks, as well as their annotations, were assigned to the training data while the remaining 30% was used for validation. We enhanced our dataset using horizontal and vertical flip data augmentation via the VolumeDataGenerator class (Friedmann et al., 2020). To optimize, we performed training sessions consisting of 100 epochs with the Adam optimizer, a batch size of 8, a learning rate of 0.0001 and employing the TrailMap custom binary cross-entropy loss function with default label weights (for axons, axon edges, artifacts and background). Model selection was based on validation loss followed by visual inspection across three specifically chosen full image stacks, each representing a potential challenge we encountered: a sample stack with higher levels of noise, a sample with lower axon intensity, and a sample with a high level of bright artifacts at the edge of the brain. The final model demonstrated robust performance across varied image conditions and predicted well on all three types of image problems.
 
 TrailMap’s output, the probability for a given pixel to contain axon ranging from 0 to 1, was then used to compute a weighted axon skeleton. In brief, the output image was binarized at 8 separate thresholds with 0.1 intervals from 0.2 to 0.9. Skeletonization was done separately for each of the 8 stacks and the 8 skeletons were weighted by the initial threshold value and then summed. We then computed all the connected components and excluded those with sizes less than 10,000 voxels to remove artifacts. The remaining connected components (typically ranging between 1 and 10 components) were carefully inspected to preserve bigger axon chunks that were disconnected and to eliminate artifacts. The final axon skeletons were transformed into lists of x, y and z coordinates for subsequent registration to a 25 x 25 x 25 µm voxel atlas.
 
-## Registration to Allen CCFv3 and injection site identification
+### Registration to Allen CCFv3 and injection site identification
 
 The autofluorescence channel was down-sampled to 25 x 25 x 25 µm voxel size and aligned to the Allen CCF v3 (Wang et al., 2020) using affine and B-spline transformations via Elastix (Klein et al., 2010; Shamonin, 2013). The resultant transformation was then applied to the down-sampled signal channel and the list of axon coordinates. The transformed signal image stack was used to segment the injection site semi-automatically through Ilastik (Berg et al., 2019). In Ilastik, a classifier was trained for each sample by sparsely annotating pixels in the background and pixels belonging to the injection site. The classifier then segmented out injection sites from the full stack. The size and the anatomical location of the injection site can then be identified in the Allen CCF space. Samples that had at least 80% of injection site voxels in SSp-bfd or SSs were included in the subsequent analysis.
 
-## Axonal analysis and visualization
+### Axonal analysis and visualization
 
 In order to compare and characterize axon projections across injections and cell types, we normalized axon density to the numbers of labeled cells at the injection site for each sample. The number of axon-containing voxels in the original resolution were retained after down-sampling and transformation. We then generated 3D arrays of axons in the Allen CFF space where each voxel represents the number of axon-containing voxels in the original 5.3 x 5.3 x 5 µm resolution. We then divide each voxel by the corresponding number of infected cells and hence the final image stacks represent the axon density per cell per 25 x 25 x 25 µm voxel. These 3D stacks are the starting point for all subsequent analyses related to axonal projections.
 
@@ -145,11 +370,11 @@ In analysis with regard to motor cortex (MO), axons within layer 2/3 and layer 5
 
 Similarly, axon projections to the caudoputamen were masked and gaussian filtered (sigma = 4). The processed axon stacks were then sum projected into coronal and horizontal planes and we then extracted axon density values in the anterior-posterior, dorsal-ventral, and medial-lateral axis. Axons ipsilateral to the injection sites were included for the quantification of anterior-posterior and dorsal-ventral axis, whereas signals were extracted bilaterally to calculate along the medial-lateral axis.
 
-## Optogenetic stimulation and wide-field calcium imaging
+### Optogenetic stimulation and wide-field calcium imaging
 
 Triple transgenic mice encompassing Cre-driver, Cre-dependent ChR2 reporter and Thy1-driven jRGECO1a were used to optogenetically stimulate Cre-expressing neurons and to perform simultaneous calcium imaging. Surgical procedures for transparent intact skull preparation followed previous protocols (Esmaeili et al., 2021; Mayrhofer et al., 2019). For optogenetic stimulation experiments, a multimode custom patch fiber (0.22 NA, 105 µm diameter core, FG105UCA, Thorlabs, USA) attached to a 473 nm laser source (S1FC473MM, Thorlabs, USA) was used to direct a laser beam into a set of galvo-galvo scan mirrors (GVS202, Thorlabs, USA). We designed a grid of stimulation points separated by 0.5 mm covering the dorsal surface of the mouse brain, and calibrated the grid to bregma. On a trial-by-trial basis, we randomly directed the ~0.5 mm diameter laser stimulation spot to one of the grid points and excited neurons expressing ChR2 with a train of 4 ms square pulses at 50 Hz for 500 ms. We excited the red-shifted calcium indicator using 563 nm light (19.2 µW/mm2 on the cortical surface; 567 nm LED, SP-01-L1, Luxeon, Canada; 563/9 nm bandpass filter, 563/9 BrightLine HC, Semrock, USA). Red emission light was bandpass filtered (645/110 ET Bandpass, Semrock) and separated from excitation light using a dichroic mirror (Beamsplitter T 588 LPXR, Chroma, USA). Images of the dorsal cortex were taken at 100 Hz during peri-stimulus time, and at 50 Hz during stimulation, with a 2.5 ms exposure time using a 16-bit monochromatic scientific Complementary Metal Oxide Semiconductor camera (sCMOS, Hamamatsu Orca Flash 4.0 v3, Hamamatsu Photonics, Japan) coupled in face-to-face tandem to an objective (Nikkor 50 mm f/1.2, Nikon, Japan) and imaging lens (Navitar 50 mm f/0.95 video lens, AMETEK, USA). To minimize light stimulation artefacts from the optogenetic stimulation, sensor exposure was interleaved with stimulation pulses at 50 Hz throughout the duration of the stimulation. Images (320 x 256 pixels; field of view 10 x 8 mm) were post hoc 2 x 2 binned to reduce data volume while increasing the signal-to-noise ratio and aligned to a common bregma for each individual mouse.
 
-## Analysis of functional connectivity
+### Analysis of functional connectivity
 
 We calculated ∆F/F0 using as F0 the average fluorescence image during a baseline window of 300 ms prior to stimulation onset. We then collected the trial indices for each stimulation point of interest and computed the within-subject average of cortical images across time (10–260 ms post-stimulus onset), and across trials for each stimulation ROI. The average population map of evoked activity was obtained by computing the average of the single mouse data weighted according to the number of trials.
 

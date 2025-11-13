@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Office of Medical Education, University of North Carolina at Chapel Hill School of Medicine Chapel Hill United States
-2. https://ror.org/0130frc33 Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill School of Medicine Chapel Hill United States
+1. Office of Medical Education, University of North Carolina at Chapel Hill School of Medicine Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+2. Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill School of Medicine Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 
 † Corresponding author
 
@@ -46,15 +46,71 @@ The annual School of Medicine survey used for this study includes self-reported 
 
 In the primary analysis, mental health data was analyzed by type of training program (MD vs. PhD; that is, medical students vs. biomedical doctoral students), year (2019 vs 2020), and historically excluded vs. non-historically excluded (HE vs NHE) populations based on race/ethnicity (HE-RE vs. NHE-RE) and gender (HE-G vs. NHE-G, that is students identifying as women vs. men). A post hoc analysis included the primary variables as well as historically excluded on the basis of sexual orientation (HE-SO vs. NHE-SO, that is LGBQ+ vs. non-LGBQ+ populations).
 
-## Measures
+### Measures
 
 Demographic data including race/ethnicity were collected. In some cases, partial survey data was recorded (n=957 total responses; n=931 completed the survey; of those, n=740 submitted some or all demographic data). Partial surveys were used, however, only fully completed measures were included in the analysis (a blocked survey design enabled a data cleaning check that ensured participants completed each section/measure they were working on before closing the survey).
 
 We assessed four measures of mental health (depression, anxiety, hazardous alcohol use, and problems related to substance use) using widely utilized and validated questionnaires. For each of these four measures, the values of responses were summed and sorted into categories of increasing severity ranging from 0 (indicating a lack of presentation of symptoms/no problematic substance use) to 3 or 4 (indicating increasing population-normed levels of severity for each variable), and then recoded into no symptoms (0) versus any symptoms (1). Depression scores/categories were calculated using the Patient Health Questionnaire (PHQ-9; Kroenke et al., 2001); anxiety scores/categories were calculated using the Generalized Anxiety Disorder Assessment (GAD-7; Spitzer et al., 2006); hazardous alcohol use was assessed using the Alcohol Use Disorder Identification Test (AUDIT; World Health Organization, 2001); problems with drug use was assessed by the Drug Abuse Screening Test (DAST-10; Skinner, 1982; Yudko et al., 2007; see Table 1 for details of the categories and how they were created). To assess meaningful categories of symptomatic versus asymptomatic responses, each mental health outcome measure (for depression, anxiety, alcohol use and drug use) was recoded into bivariate (0/1) variables with a value of one (1) indicating symptoms or problems with each category (see Table 1).
 
+**Table 1.**
+ Coding of the four measures of mental health used in the analyses.Each measure of mental health (depression, anxiety, hazardous alcohol use, and problems related to substance use) was examined and coded according to its respective validated scale (PHQ-9, GAD-7, AUDIT, DAST-10). The scores were recoded as interim measures based on symptom severity, from 0 to 4. These were then transferred into a clinically meaningful bivariate category (no symptoms, 0; any symptoms, 1) to facilitate the planned analysis (bivariate logistic regression).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measures</th>
+      <th>No Symptoms(Coded as 0)</th>
+      <th colspan="4">Any Symptoms(Coded as 1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>InterimRecoded as 0</td>
+      <td>InterimRecoded as 1</td>
+      <td>InterimRecoded as 2</td>
+      <td>InterimRecoded as 3</td>
+      <td>InterimRecoded as 4</td>
+    </tr>
+    <tr>
+      <td>PHQ-9</td>
+      <td>1–4: Minimal or No Depression</td>
+      <td>5–9: Mild Depression</td>
+      <td>10–14: Moderate Depression</td>
+      <td>15–19: Moderately Severe Depression</td>
+      <td>20–27: Severe Depression</td>
+    </tr>
+    <tr>
+      <td>GAD-7</td>
+      <td>0–4: Minimal Anxiety</td>
+      <td>5–9: Mild Anxiety</td>
+      <td>10–14: Moderate Anxiety</td>
+      <td>15–21: Severe Anxiety</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AUDIT</td>
+      <td>0–7: Low Risk</td>
+      <td>8–15: Hazardous</td>
+      <td>16–19: Harmful</td>
+      <td>20+: Possible Dependence</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAST-10</td>
+      <td>0: No problems</td>
+      <td>1–2: Low Problems</td>
+      <td>3–5: Moderate Problems</td>
+      <td>6–8: Substantial Problems</td>
+      <td>9–10: Severe Problems</td>
+    </tr>
+  </tbody>
+</table>
+
 In addition, suicidal ideation was assessed using the following three “Yes” or “No” questions: “Have you ever thought about ending your life?”; “Have you ever thought about ending your life while enrolled?”; “Have you ever thought about ending your life in the last 12 months?”.
 
-## Participants
+### Participants
 
 All of the approximately 800 medical students and 600 biomedical doctoral students on campus were invited to participate in the survey each year via student listservs. Respondents included both medical and biomedical doctoral students (Fall 2020 n=431, Fall 2019 n=526, n=957 total respondents). This sample included 622 medical students, 309 biomedical doctoral students, with 26 surveys missing data, for a total of 931 completed surveys. Amongst those 931 respondents, 91 medical students were classified as HE-RE and 531 as NHE-RE; and 57 biomedical doctoral students were classified as HE-RE, with 252 being classified as NHE-RE.
 
@@ -66,7 +122,7 @@ The majority of respondents identified as women (67%; 63% of medical students, 7
 
 Respondents were classified as non-historically excluded on the basis of sexual orientation (NHE-SO) if they identified as straight/heterosexual (83%; 85% of medical students, 79% of biomedical doctoral students); or historically excluded on the basis of sexual orientation (HE-SO) if they identified as bisexual (7%; 5% of medical students, 10% biomedical doctoral students), gay/lesbian (5%; 5% of medical students, 4% of biomedical doctoral students), queer (2%; 3% of medical students, 2% of biomedical doctoral students), pansexual (2%; 1% of medical students, 3% of biomedical doctoral students), asexual (1%;<1% of medical students and biomedical doctoral students), or other (1%; <1% of medical students, 2% of biomedical doctoral students).
 
-## Analysis plan
+### Analysis plan
 
 A logistic regression was conducted, including significant interaction terms, to examine the effects of each variable on mental health outcomes using a parsimonious model. Full models with main effects and interactions were run for each variable, with stepwise addition of the largest interaction terms to the main effects, until the next largest interaction term added was no longer significant. At that point, the prior model with significant main effects and any significant interactions was retained as the final model for that variable (see Source data 1).
 
@@ -76,7 +132,7 @@ Year was coded into a practically meaningful bivariate category, with pre-COVID-
 
 The primary analysis included type of program (MD vs. PhD) x Year x Race/Ethnicity x Gender. A post hoc model included all these variables, with the addition of sexual orientation (all three historically excluded social identity groups; HE-RE, HE-G, & HE-SO).
 
-## Limitations
+### Limitations
 
 Response bias is always a consideration in cross-sectional self-report research. Relatedly, there were no matched controls, hence it is possible that sampling distributions may have differed by chance. Furthermore, it is possible that respondents differed based on how important mental health is to them, potentially skewing the sample; hence we cannot definitively evaluate the respondent sample as representative of the full population. Due to anonymous data collection and optional questions to protect participant identities, we cannot assess granular response rates by demographic characteristics. Future studies could be completed with a controlled sample matched with participant identifiers to know who in the sample is and is not responding, as this could impact findings. Nonetheless, we achieved a response rate commensurate with voluntary survey data, suggesting a typical level of participation. We also had a high percentage of women respondents, who experience higher rates of depression and anxiety compared to men respondents; however, greater response from women is not atypical of our graduate medical and biomedical doctoral student populations, which include more enrolled women than men.
 
@@ -98,19 +154,19 @@ In the combined population (when medical and biomedical doctoral students are co
 
 Overall, across medical and biomedical doctoral students, HE-RE students were approximately twice as likely to say they had thought about ending their life in the last 12months than their NHE-RE peers, and about 1.8 times more likely while enrolled (Figure 1B); such high rates are extremely concerning. Due to different patterns emerging for training type and racial/ethnic identity by year, examining effect solely by year obscured these differences, hence interactions were further explored.
 
-## Depression and anxiety
+### Depression and anxiety
 
 Surprisingly, for medical students, there was a significant decrease in depression and anxiety between 2019 and 2020 (P<.001), whereas doctoral students observed no change between years. However, HE-RE students differed from their NHE-RE peers, being significantly more likely to be depressed (P<.02) and anxious (P<.04). Women (HE-G) exhibited higher depression and anxiety scores than men (NHE-G) consistent with known mental health trends; hence these effects are controlled for in the analyses.
 
-## Problems with drug use and hazardous alcohol use
+### Problems with drug use and hazardous alcohol use
 
 No significant differences of note emerged between populations or within populations (e.g., NHE/HE by Program, Race/Ethnicity, Gender) on the primary measures. Reported problems with substance use and hazardous alcohol use were comparatively low in contrast to depression and anxiety, which were more pervasive. Men (NHE-G) exhibited more problems with drug use and hazardous alcohol use than women (HE-G) consistent with known substance use trends; hence these effects are controlled for in the analysis.
 
-## Suicidal ideation
+### Suicidal ideation
 
 Medical students showed trends toward improvement, whereas biomedical doctoral students exhibited no change between 2019 and 2020. As compared with NH-RE peers, there were significant increase in HE-RE student suicidal ideation ‘while enrolled’ (P=.03), and ‘in the last 12 months’ (P<.01). There were no significant effects of gender on suicidal ideation (ps = .58 -.62, not significant).
 
-## Medical school versus biomedical doctoral training
+### Medical school versus biomedical doctoral training
 
 Prior to 2020, both medical and biomedical doctoral students suffered from depression (46% of medical students, 65% of biomedical doctoral students) and anxiety (47% of medical students, 67% of biomedical doctoral students) at high rates (Figure 2A and B), as defined by no symptoms compared with any symptomatic categories (see Methods for categorical definitions). Doctoral student mental health in 2020 remained very poor (depression: 26% of medical students, 64% of biomedical doctoral students; anxiety: 32% of medical students, 61% of biomedical doctoral students), whereas, surprisingly, the mental health of medical students improved. Suicidal ideation ‘in the last 12 months’ among biomedical doctoral students (compared with medical students) was markedly higher, both before (11% of medical students, 16% of biomedical doctoral students) and during 2020 (6% of medical students, 19% of biomedical doctoral students).
 
@@ -120,17 +176,17 @@ Prior to 2020, both medical and biomedical doctoral students suffered from depre
 
 We assessed differences between medical and biomedical doctoral students for depression (PHQ-9), anxiety (GAD), problematic drug use (DAST), and hazardous alcohol use (AUDIT) using nominal outcome variables (Figure 2A and B). We identified significantly higher rates of depression and anxiety for biomedical doctoral students compared with medical students, as well as higher rates of suicidal ideation ‘while enrolled’ and ‘in the last 12 months’. No significant differences emerged for problems with drug use or hazardous alcohol use by training type, year, or historical exclusion by race/ethnicity; furthermore, problems with drug use rates were comparatively low in contrast to depression and anxiety. Known gender effects were consistent with expectations for both problematic substance use categories (greater use found in prior studies is also reflected in our sample for NHE-G vs. HE-G).
 
-## Historically excluded versus non-historically excluded students based on race/ethnicity (HE-RE vs. NHE-RE)
+### Historically excluded versus non-historically excluded students based on race/ethnicity (HE-RE vs. NHE-RE)
 
 Mental health results for groups historically and non-historically excluded on the basis of race/ethnicity (HE-RE vs. NHE-RE) across a combined pool of biomedical doctoral students and medical students were also compared (Figure 2C and D). In both 2019 and 2020, HE-RE students experienced higher rates of depression and anxiety compared to their NHE-RE peers (Figure 2C and D). Suicidal ideation was also worse for HE-RE students as compared with their NHE-RE peers, specifically ‘while enrolled’ and ‘in the last 12 months’. In summary, HE-RE outcomes in general were worse for depression and anxiety (Figure 2C), as well asthese students experiencing more suicidal ideation ‘while enrolled’ and ‘over the last 12 months’ (Figure 2D).
 
 While individuals identifying as Asian are well-represented in the academic workforce, 2020 saw an increase in anti-Asian violence, which led us to conduct additional analyses to compare the mental health of Asian American and HE-RE students in 2019 and 2020. People who identified as of Asian descent generally scored better than other NHE-RE or HE-RE groups, indicating fewer mental health challenges on all four outcome variables and the three suicidal ideation variables. However, conditional odds ratios based on these models indicated some changes by year that may be associated with the negative psychosocial and environmental factors many Asian Americans experienced between 2019–2020. Accounting for the effect of race (3-level: HE-RE Asian, HE-RE Non-Asian, HE-NRE) while controlling for year, type of training and gender, Asian American participants showed greater mean depression scores (P<.03) and anxiety scores (P<.04) in 2020 compared with 2019; there was no change in either alcohol use (P=.07, though marginal) or drug use (P=.28). There were no significant changes in conditional probabilities for suicidal ideation of Asian American participants during that time.
 
-## Associations
+### Associations
 
 A robust positive association was evident between depression and anxiety (r=.69, P<.001), not surprisingly as these conditions are often comorbid. Both depression (r=.14) and anxiety (r=.33) were associated with problems with drug use (ps <.001). Neither depression (r=-.01, P=.74) nor anxiety (r=-.01, P=.77) were associated with hazardous alcohol use. Since this was only correlational in nature, a causal direction cannot be determined; nonetheless, these associations may indicate a connection between problems with drug use either as a precursor to or as an effect of experiencing mental health symptoms.
 
-## Post hoc analysis: historically excluded versus non-historically excluded students based on sexual orientation (HE-SO vs. NHE-SO)
+### Post hoc analysis: historically excluded versus non-historically excluded students based on sexual orientation (HE-SO vs. NHE-SO)
 
 To further examine additional aspects of intersectionality, we completed a post hoc analysis including LGBQ+ identities (HE-SO) into a simplified model (controlling for main effects of the four primary variables and identifying any significant two-way interactions). Due to a smaller sample size, this was included as a post hoc analysis.
 
@@ -148,7 +204,7 @@ HE-SO participants experienced more suicidal ideation (ever, OR = 4.37, P<.001; 
 
 Overall, medical student mental health improved from 2019–2020 on measures of both depression and anxiety, whereas biomedical doctoral students showed no change, their scores remaining concernedly high. HE-RE students were worse off than their NHE-RE peers in measures of depression, anxiety, and suicidal ideation – particularly reporting more suicidal ideation than their counterparts both ‘while enrolled’ and in the ‘last 12 months’. All analyses controlled for gender, for which women (HE-G) generally experienced anxiety and depression more than men (NHE-G), whereas men generally reported higher substance use. Post hoc analyses also indicated that those identifying as HE-SO (LGBQ+ respondents) experienced more anxiety and depression than NHE-SO (non-LGBQ+) respondents, as well as greater suicidal ideation.
 
-## Trends in medical students versus biomedical doctoral students
+### Trends in medical students versus biomedical doctoral students
 
 Despite unique challenges between 2019 and 2020, many metrics of medical student mental health improved. In mid-March of 2020, medical students were pulled from clinical settings and from typical coursework due to the pandemic. Usual academic and clinical responsibilities were replaced with a four-week online course named ‘Medical Management of COVID-19’, which focused for instance on wellness, self-care, medical management and personal protective equipment related to COVID-19 (UNC Health and UNC School of Medicine, 2020). It is possible that the pause in traditional medical student training and the new course focused on timely topics mitigated stress-induced mental health erosion. In contrast, biomedical doctoral students did not receive any similar interventions addressing emerging COVID knowledge or mental health coping strategies.
 
@@ -162,19 +218,19 @@ For biomedical doctoral students whose research was not directly related to COVI
 
 Additionally, medical students will soon become medical doctors in a society where this profession took center stage. On the other hand, the success of the vaccine effort – which received praise but also backlash – may yet improve how basic research scientists are considered in society in the coming years (Bogel-Burroughs, 2020; Kauer, 2020; Kolata, 2021). Future education and mental health research should delve into the aspects of medical education versus biomedical doctoral training that drive different mental health outcomes during a crisis and in normal times.
 
-## Mental health trends for student from historically excluded racial or ethnic groups
+### Mental health trends for student from historically excluded racial or ethnic groups
 
 Irrespective of medical or doctoral program, mental health metrics for depression, anxiety and suicidal ideation were worse for students from historically excluded groups based on race/ethnicity compared to students from non-historically excluded racial groups, and they worsened between 2019 and 2020. Overall, the incidence of suicidal thoughts for HE-RE students increased proportionately both ‘while enrolled’ and ‘in the last 12 months’ compared with NHE-RE students, and particularly for biomedical doctoral HE-RE students ‘in the last 12 months’. We hypothesize that the COVID-19 pandemic and heightened racial unrest contributed to these differences, although future research is needed to isolate the factors causing the observed effects. This result may be partially explained by the added stressors of systemic racism in academic, medical, and American cultures. Academic culture, in particular, is based on norms that systematically exclude minority groups and create additional mental health challenges for people of color (e.g., persons excluded due to ethnicity or race, see Asai, 2020).
 
-## Associations
+### Associations
 
 Our finding that depression was correlated with both anxiety and problematic drug use was consistent with previous work which demonstrates common comorbidity of depression and anxiety, as well as of substance use disorders with mental illness (e.g., National Institute on Drug Abuse, 2010); hence, it is plausible that problematic drug use could represent a contributing factor and/or a coping strategy for depression but this should be interpreted with caution. Furthermore, the lack of association in our sample between hazardous alcohol use and mental illness was surprising given the common associations found between these variables in previous work (e.g., Smith and Randall, 2012; McHugh and Weiss, 2019).
 
-## Mental health trends for students belonging to groups historically excluded because of sexual orientation
+### Mental health trends for students belonging to groups historically excluded because of sexual orientation
 
 Our findings that LGBQ+ students experience worse mental health outcomes align with national studies showing that sexual minorities are approximately twice more likely than heterosexual people to experience mental health conditions such as anxiety, depression, suicide, and substance use (Medley et al., 2016; SAMHSA, 2020; SAMHSA, 2021). Similar to national trends, gender interacted with sexual orientation to indicate worse effects for LGBQ+ women for depression and anxiety, but worse substance use for LGBQ+ men. While our small sample suggests that these results should be interpreted with caution, the large effect size evident in our analysis was extremely concerning and indicates a crucial need for studies to further examine this population and how it could be better supported. In addition, our inability to evaluate these hypotheses for transgender and gender non-conforming students (due to an insufficient sample size to run a parallel analysis) was a limitation. This should certainly be evaluated in future studies, especially due to transgender people being at increased risk and incidence for mental health problems, as evidenced nationally (National Center for Transgender Equality, 2016).
 
-## Conclusions and recommendations
+### Conclusions and recommendations
 
 Whereas medical schools have had mental health recommendations in place since 1992 (AAMC Executive Council, 1992; enforced by the Liaison Committee on Medical Education accreditation standards), biomedical doctoral programs have had no such parallel policies regarding mental health provisions nationwide. Our new data suggest a need for swift action to address the very urgent mental health needs of biomedical doctoral students both before and during the COVID-19 pandemic, especially for students who have been traditionally excluded from the academy based on their gender, race/ethnicity, and sexual orientation. Furthermore, the data we present suggests that depression, anxiety, and suicidality for historically excluded medical and biomedical research students have been exacerbated during the ongoing COVID-19 pandemic and climate of heightened visibility of racial inequity. Future studies should explore additional disparities between historically and non-historically excluded students in addition to those highly concerning trends.
 
@@ -186,7 +242,7 @@ Given the higher indicators of distress, the factors driving the mental health c
 
 While individual protective measures can alleviate some negative impacts of operating within a flawed system (e.g., the academic environment), systemic change must occur rather than relying on those most likely to be impacted to create change (Halsey et al., 2020). It is imperative that leaders in higher education use evidence-based quantitative and qualitative research to examine population trends, create visibility for lived experience, and ultimately identify and reduce causes of mental health problems rather than just treating symptoms when they emerge. Academic culture needs to be actively reformed by those in power to model, encourage, and sustain student, faculty and staff wellbeing.
 
-## Study limitations and future directions
+### Study limitations and future directions
 
 Limitations related to anonymous data collection include the inability to estimate exact response rates, percentage of repeated versus new respondents, or non-respondents who skipped entering demographic data. In addition, self-reported mental health status may be biased, and independent assessments by a clinician would provide greater accuracy. Importantly, given the observational nature of our data collection, many confounds could also not be accounted for which changed over the course of the year between data collection timepoints. Nonetheless we believe that our work provides a compelling starting point to further examine trends and emergent concerns in the mental health of medical and biomedical doctoral students. Even given the limitations of our dataset, the unexpectedly high rate of suicidal ideation is concerning: among respondents alone, nearly 40 trainees (16 medical students and 21 biomedical doctoral students) reported recent suicidal ideation in 2020.
 

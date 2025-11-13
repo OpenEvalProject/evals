@@ -24,9 +24,7 @@ We have also addressed the reviewers’ comments that partial coherence should b
 
 3) Figure 2D, E shows results at 1 Hz while Figure 3 shows the contrast at 4 Hz. It is stated that Figure 2D, E focused on 1 Hz since significant entrainment was seen "especially at 1 Hz". Does that mean stronger coherence or broader activation? It would be helpful to show the coherence spectrum of representative areas or to show the source distribution at several frequencies. Additionally, for the source-space plots, showing the differences between the actual coherence values could be more informative.
 
-We now realise that the statement ‘especially at 1 Hz’ is misleading. This frequency was selected because the lip movement signal shows the strongest power at this frequency (Figure 2B). The power spectrum for sound speech signals (for all the auditory stimuli we used) also shows the peak at 1 Hz as shown in Author response image 1.10.7554/eLife.14521.012Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.14521.012
-
-DOI: http://dx.doi.org/10.7554/eLife.14521.012
+We now realise that the statement ‘especially at 1 Hz’ is misleading. This frequency was selected because the lip movement signal shows the strongest power at this frequency (Figure 2B). The power spectrum for sound speech signals (for all the auditory stimuli we used) also shows the peak at 1 Hz as shown in Author response image 1.10.7554/eLife.14521.012Author response image 1.
 
 We have now rephrased the corresponding part in the revised manuscript:
 
@@ -34,13 +32,9 @@ We have now rephrased the corresponding part in the revised manuscript:
 
 In addition, as the reviewers suggested, we have added source distribution at several frequencies corresponding to Figure 2D and E as supplemental figures (Figure 2—figure supplement 3).
 
-Author response image 2 shows maps with actual coherence values for Figure 2D, E, F.10.7554/eLife.14521.013Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.14521.013
+Author response image 2 shows maps with actual coherence values for Figure 2D, E, F.10.7554/eLife.14521.013Author response image 2.
 
-DOI: http://dx.doi.org/10.7554/eLife.14521.013
-
-In Author response image 2 we also show maps of actual coherence value for each condition corresponding to Figure 3—figure supplement 1A and B. However, we think the graphs in the original manuscript (t-statistics) are more informative than the plots in Author response image 3.10.7554/eLife.14521.014Author response image 3.DOI: http://dx.doi.org/10.7554/eLife.14521.014
-
-DOI: http://dx.doi.org/10.7554/eLife.14521.014
+In Author response image 2 we also show maps of actual coherence value for each condition corresponding to Figure 3—figure supplement 1A and B. However, we think the graphs in the original manuscript (t-statistics) are more informative than the plots in Author response image 3.10.7554/eLife.14521.014Author response image 3.
 
 4) Visual attention was not explicitly manipulated in this study. It is assumed that visual attention is enhanced when a competing sound is presented. Although this is a reasonable interpretation, it is not appropriate to report the auditory masking effect quite so definitively as a visual attention effect. Furthermore, the All incongruent condition should be the most attention demanding condition since there are two independent distractors, yet no regions show this in the contrast (Figure 3D). Please comment on this. Is this true for the all incongruent vs. all congruent contrast?
 
@@ -62,15 +56,11 @@ The contrast between AV congruent and AV incongruent condition already establish
 
 Thank you for raising this important and interesting point and we have looked at the latencies of visual and auditory tracking in each condition and the effect of congruence.
 
-We first checked the lag between lip (visual) and sound (auditory) speech signals. We performed cross-correlation analysis to estimate the delay between two signals. We computed this cross-correlation for both matching and non-matching signals used in the study. As shown in Author response image 4, visual signals lead auditory signals by about 70 ms (here negative latency indicates lip speech (visual) signals lead sound speech (auditory) signals) for matching signals, however as expected there’s no effect for non-matching signals.10.7554/eLife.14521.015Author response image 4.DOI: http://dx.doi.org/10.7554/eLife.14521.015
-
-DOI: http://dx.doi.org/10.7554/eLife.14521.015
+We first checked the lag between lip (visual) and sound (auditory) speech signals. We performed cross-correlation analysis to estimate the delay between two signals. We computed this cross-correlation for both matching and non-matching signals used in the study. As shown in Author response image 4, visual signals lead auditory signals by about 70 ms (here negative latency indicates lip speech (visual) signals lead sound speech (auditory) signals) for matching signals, however as expected there’s no effect for non-matching signals.10.7554/eLife.14521.015Author response image 4.
 
 Next, we performed the cross-correlation analysis between speech signals and brain responses to measure visual and auditory tracking lag and how they change across conditions. We computed cross-correlation for both lip speech-visual cortex signals (visual tracking) and sound speech-auditory cortex signals (auditory tracking). Here the visual and auditory cortices were selected from the maximum voxels in the Figure 2F (left visual cortex (MNI coordinates = [-28 -88 8]), right STG (MNI coordinates = [44 -32 16])).
 
-In Author response image 5 the latency indicates the lag between signals in visual or auditory cortex and the lip or sound speech signals (brain signals following the speech signals). The mean lag across conditions is around 100 ms for all conditions as can be expected from studies of temporal response functions (e.g. Crosse et al., 2015). Congruent visual speech reduces the mean lag of auditory entrainment as can be seen in the comparison of ‘All cong A’ and ‘All incong A’. This is consistent with previous findings (van Wassenhove et al., 2005). But the difference is not significant and performing this analysis on narrow-band (filtered) data is not without problems. We therefore prefer to address this question in a separate study.10.7554/eLife.14521.016Author response image 5.DOI: http://dx.doi.org/10.7554/eLife.14521.016
-
-DOI: http://dx.doi.org/10.7554/eLife.14521.016
+In Author response image 5 the latency indicates the lag between signals in visual or auditory cortex and the lip or sound speech signals (brain signals following the speech signals). The mean lag across conditions is around 100 ms for all conditions as can be expected from studies of temporal response functions (e.g. Crosse et al., 2015). Congruent visual speech reduces the mean lag of auditory entrainment as can be seen in the comparison of ‘All cong A’ and ‘All incong A’. This is consistent with previous findings (van Wassenhove et al., 2005). But the difference is not significant and performing this analysis on narrow-band (filtered) data is not without problems. We therefore prefer to address this question in a separate study.10.7554/eLife.14521.016Author response image 5.
 
 7) Although the relationship shown in Figure 5 between coherence in the left motor cortex and speech comprehension is very interesting, this does not show that the "motor cortex component contributes to speech comprehension" (Discussion), which would require demonstrating that disruption of activity in motor cortex affects speech comprehension.
 

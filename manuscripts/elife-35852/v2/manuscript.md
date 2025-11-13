@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.35852.001 Randall et al., 2018 and Vereecke, 2018 have raised concerns about a paper we published (Savory et al., 2017). Here, we respond to those concerns.
+Randall et al., 2018 and Vereecke, 2018 have raised concerns about a paper we published (Savory et al., 2017). Here, we respond to those concerns.
 
 ## Potential misdiagnosis of an epidemic; Presence of virulence genes (Randall et al., 2018)
 

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Advances in DNA sequencing have revolutionized our ability to read genomes. However, even in the most well-studied of organisms, the bacterium Escherichia coli , for ≈65% of promoters we remain ignorant of their regulation. Until we crack this regulatory Rosetta Stone, efforts to read and write genomes will remain haphazard. We introduce a new method, Reg-Seq, that links massively parallel reporter assays with mass spectrometry to produce a base pair resolution dissection of more than a E. coli promoters in 12 growth conditions. We demonstrate that the method recapitulates known regulatory information. Then, we examine regulatory architectures for more than 80 promoters which previously had no known regulatory information. In many cases, we also identify which transcription factors mediate their regulation. This method clears a path for highly multiplexed investigations of the regulatory genome of model organisms, with the potential of moving to an array of microbes of ecological and medical relevance.
+Advances in DNA sequencing have revolutionized our ability to read genomes. However, even in the most well-studied of organisms, the bacterium Escherichia coli, for ≈65% of promoters we remain ignorant of their regulation. Until we crack this regulatory Rosetta Stone, efforts to read and write genomes will remain haphazard. We introduce a new method, Reg-Seq, that links massively parallel reporter assays with mass spectrometry to produce a base pair resolution dissection of more than a E. coli promoters in 12 growth conditions. We demonstrate that the method recapitulates known regulatory information. Then, we examine regulatory architectures for more than 80 promoters which previously had no known regulatory information. In many cases, we also identify which transcription factors mediate their regulation. This method clears a path for highly multiplexed investigations of the regulatory genome of model organisms, with the potential of moving to an array of microbes of ecological and medical relevance.
 
 ## Introduction
 
@@ -45,51 +45,73 @@ The organization of the remainder of the paper is as follows. In the Results sec
 
 ## Results
 
-## Selection of genes and methodology
+### Selection of genes and methodology
 
 As shown in Figure 1, we have explored more than 100 genes from across the E. coli genome. Our choices were based on a number of factors (see Appendix 1 Section 'Choosing target genes' for more details); namely, we wanted a subset of genes that served as a 'gold standard' for which the hard work of generations of molecular biologists have yielded deep insights into their regulation. Our set of gold standard genes is lacZYA, znuCB, znuA, ompR, araC, marR, relBE, dgoR, dicC, ftsK, xylA, xylF, rspA, dicA, and araAB. By using Reg-Seq on these genes, we were able to demonstrate that this method recovers not only what was already known about binding sites of transcription factors for well-characterized promoters (Appendix 2—figures 2 and 3), but also whether there are any important differences between the results of the methods presented here and the previous generation of experiments based on fluorescence and cell-sorting as a readout of gene expression (Kinney et al., 2010; Belliveau et al., 2018). These promoters of known regulatory architecture are complemented by an array of previously uncharacterized genes that we selected in part using data from a recent proteomic study, in which mass spectrometry was used to measure the copy number of different proteins in 22 distinct growth conditions (Schmidt et al., 2016). We selected genes that exhibited a wide variation in their copy number over the different growth conditions considered, reasoning that differential expression across growth conditions implies that those genes are under regulatory control.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig1-v2.jpg)
 
-**Figure 1.:** E. coli regulatory genome.Illustration of the current ignorance with respect to how genes are regulated in E. coli. Genes with previously annotated regulation (as reported on RegulonDB [Gama-Castro et al., 2016]) are denoted with blue ticks and genes with no previously annotated regulation denoted with red ticks. The 113 genes explored in this study are labeled in gray, and their precise genomic locations can be found in Figure 1—source data 1.Figure 1—source data 1.Figure 1.In Figure 1 the locations of all promoters studied in Reg-Seq are displayed along the E. coli genome. The source data contains the exact position of the '0' position of each mutagenized promoter region.
+**Figure 1.:** Illustration of the current ignorance with respect to how genes are regulated in E. coli. Genes with previously annotated regulation (as reported on RegulonDB [Gama-Castro et al., 2016]) are denoted with blue ticks and genes with no previously annotated regulation denoted with red ticks. The 113 genes explored in this study are labeled in gray, and their precise genomic locations can be found in Figure 1—source data 1.
 
 As noted in the introduction, the original formulation of Reg-Seq, termed Sort-Seq, was based on the use of fluorescence activated cell sorting, one gene at a time, as a way to uncover putative binding sites for previously uncharacterized promoters (Belliveau et al., 2018). As a result, as shown in Figure 2, we have formulated a second generation version that permits a high-throughput interrogation of the genome. A comparison between the Sort-Seq and Reg-Seq approaches on the same set of genes is shown in Figure 3. In the Reg-Seq approach, for each promoter interrogated, we generate a library of mutated variants and design each variant to express an mRNA with a unique sequence barcode. By counting the frequency of each expressed barcode using RNA-Seq, we can assess the differential expression from our promoter of interest based on the base-pair by base-pair sequence of its promoter. Using the mutual information between mRNA counts and sequences, we develop an information footprint that reveals the importance of different bases in the promoter region to the overall level of expression. We locate potential transcription-factor-binding regions by looking for clusters of base pairs that have a significant effect on gene expression. Further details on how potential binding sites are identified are found in the Methods Section 'Automated putative binding site algorithm' and 'Manual selection of binding sites', while determination of the false positive and false negative rates of the method can be found in Appendix 2 Section 'False positive and false negative rates'. Blue regions of the histogram shown in the information footprints of Figure 2 correspond to hypothesized activating sequences and red regions of the histogram correspond to hypothesized repressing sequences.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig2-v2.jpg)
 
-**Figure 2.:** The process is as follows: After constructing a promoter library driving expression of a randomized barcode (an average of five barcodes for each promoter), RNA-Seq is conducted to determine the frequency of these mRNA barcodes across different growth conditions (list included in Appendix 1 Section 'Growth conditions'). By computing the mutual information between DNA sequence and mRNA barcode counts for each base pair in the promoter region, an 'information footprint' is constructed that yields a regulatory hypothesis for the putative binding sites (with the RNAP-binding region highlighted in blue and the repressor-binding site highlighted in red). Energy matrices, which describe the effect that any given mutation has on DNA-binding energy, as well as sequence logos, are inferred for the putative transcription-factor-binding sites. Next, we identify which transcription factor preferentially binds to the putative binding site via DNA-affinity chromatography followed by mass spectrometry. This procedure culminates in a coarse-grained, cartoon-level view of our regulatory hypothesis for how a given promoter is regulated.Figure 2—source data 1.Figure 2.
+**Figure 2.:** The process is as follows: After constructing a promoter library driving expression of a randomized barcode (an average of five barcodes for each promoter), RNA-Seq is conducted to determine the frequency of these mRNA barcodes across different growth conditions (list included in Appendix 1 Section 'Growth conditions'). By computing the mutual information between DNA sequence and mRNA barcode counts for each base pair in the promoter region, an 'information footprint' is constructed that yields a regulatory hypothesis for the putative binding sites (with the RNAP-binding region highlighted in blue and the repressor-binding site highlighted in red). Energy matrices, which describe the effect that any given mutation has on DNA-binding energy, as well as sequence logos, are inferred for the putative transcription-factor-binding sites. Next, we identify which transcription factor preferentially binds to the putative binding site via DNA-affinity chromatography followed by mass spectrometry. This procedure culminates in a coarse-grained, cartoon-level view of our regulatory hypothesis for how a given promoter is regulated.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig3-v2.jpg)
 
-**Figure 3.:** We show the identified regulatory regions as well as quantitative comparisons between inferred position weight matrices. (A) CRP binds upstream of RNAP in the lacZYA promoter. Despite the different measurement techniques for the two inferred position weight matrices, the CRP-binding sites have a Pearson correlation coefficient of . (r=0.98B) The dgoRKADT promoter is activated by CRP in the presence of galactonate and is repressed by DgoR. For Sort-Seq and Reg-Seq, type II activator-binding sites can be identified based on the signals in the information footprint in the area indicated in green. Additionally, the quantitative agreement between the CRP position weight matrices are strong, with . (r=0.9C) The relBE promoter is repressed by RelBE as can be identified algorithmically in both Sort-Seq and Reg-Seq. The inferred logos for the two measurement methods have . (r=0.8D) The marRAB promoter is repressed by MarR. The inferred energy matrices (data not shown) and sequence logos shown have . The right most MarR site overlaps with a ribosome-binding site. The overlap has a stronger obscuring effect on the sequence specificity of the Sort-Seq measurement, which measures protein levels directly, than it does on the output of the Reg-Seq measurement. Numeric values for the displayed data can be found in r=0.78Figure 3—source data 1.Figure 3—source data 1.Figure 3.
+**Figure 3.:** We show the identified regulatory regions as well as quantitative comparisons between inferred position weight matrices. (A) CRP binds upstream of RNAP in the lacZYA promoter. Despite the different measurement techniques for the two inferred position weight matrices, the CRP-binding sites have a Pearson correlation coefficient of $r=0.98$. (B) The dgoRKADT promoter is activated by CRP in the presence of galactonate and is repressed by DgoR. For Sort-Seq and Reg-Seq, type II activator-binding sites can be identified based on the signals in the information footprint in the area indicated in green. Additionally, the quantitative agreement between the CRP position weight matrices are strong, with $r=0.9$. (C) The relBE promoter is repressed by RelBE as can be identified algorithmically in both Sort-Seq and Reg-Seq. The inferred logos for the two measurement methods have $r=0.8$. (D) The marRAB promoter is repressed by MarR. The inferred energy matrices (data not shown) and sequence logos shown have $r=0.78$. The right most MarR site overlaps with a ribosome-binding site. The overlap has a stronger obscuring effect on the sequence specificity of the Sort-Seq measurement, which measures protein levels directly, than it does on the output of the Reg-Seq measurement. Numeric values for the displayed data can be found in Figure 3—source data 1.
 
 With the information footprint in hand, we can then determine energy matrices and sequence logos (described in the next section). Given putative binding sites, we use synthesized oligonucleotides that serve as fishing hooks to isolate the transcription factors that bind to those putative binding sites using DNA-affinity chromatography and mass spectrometry (Mittler et al., 2009). Given all of this information, we can then formulate a schematized view of the newly discovered regulatory architecture of the previously uncharacterized promoter. For the case schematized in Figure 2, the experimental pipeline yields a complete picture of a simple repression architecture (i.e. a gene regulated by a single binding site for a repressor).
 
-## Visual tools for data presentation
+### Visual tools for data presentation
 
 Throughout our investigation of the more than 100 genes explored in this study, we repeatedly relied on several key approaches to help make sense of the immense amount of data generated in these experiments. As these different approaches to viewing the results will appear repeatedly throughout the paper, here we familiarize the reader with five graphical representations referred to respectively as information footprints, energy matrices, sequence logos, mass spectrometry enrichment plots and regulatory cartoons, which taken together provide a quantitative description of previously uncharacterized promoters.
 
-## Information footprints
+#### Information footprints
 
-From our mutagenized libraries of promoter regions, we can build up a base-pair by base-pair graphical understanding of how the promoter sequence relates to level of gene expression in the form of the information footprint shown in Figure 2. In this plot, the bar above each base pair position represents how large of an effect mutations at this location have on the level of gene expression. Specifically, the quantity plotted is the mutual information Ib at base pair b between mutation of a base pair at that position and the level of expression. In mathematical terms, the mutual information measures how much the joint probability p⁢(m,μ) differs from the product of the probabilities pm⁢u⁢t⁢(m)⁢pe⁢x⁢p⁢r⁢(μ) which would be produced if mutation and gene expression level were independent. Formally, the mutual information between having a mutation at position b and level of expression is given by(1)Ib=∑m=01∑μ=01p⁢(m,μ)⁢log2⁡(p⁢(m,μ)pm⁢u⁢t⁢(m)⁢pe⁢x⁢p⁢r⁢(μ)).
+From our mutagenized libraries of promoter regions, we can build up a base-pair by base-pair graphical understanding of how the promoter sequence relates to level of gene expression in the form of the information footprint shown in Figure 2. In this plot, the bar above each base pair position represents how large of an effect mutations at this location have on the level of gene expression. Specifically, the quantity plotted is the mutual information $I_{b}$ at base pair $b$ between mutation of a base pair at that position and the level of expression. In mathematical terms, the mutual information measures how much the joint probability $p⁢(m,\mu)$ differs from the product of the probabilities $p_{m⁢u⁢t}⁢(m)⁢p_{e⁢x⁢p⁢r}⁢(\mu)$ which would be produced if mutation and gene expression level were independent. Formally, the mutual information between having a mutation at position $b$ and level of expression is given by
 
-Note that both m and µ are binary variables that characterize the mutational state of the base of interest and the level of expression, respectively. Specifically, m can take the values(2)m={0,if⁢b⁢ is a mutated base1,if⁢b⁢ is a wild-type base.and µ can take on values(3)μ={0,for sequencing reads from the DNA library1,for sequencing reads originating from mRNA,where both m and µ are index variables that tell us whether the base has been mutated and if so, how likely that the read at that position will correspond to an mRNA, reflecting gene expression or a promoter, reflecting a member of the library. The higher the ratio of mRNA to DNA reads at a given base position, the higher the expression. pm⁢u⁢t⁢(m) in Equation 1 refers to the probability that a given sequencing read will be from a mutated base. pe⁢x⁢p⁢r⁢(μ) is a numeric value that gives the ratio of the number of DNA or mRNA sequencing counts to the total number of sequencing counts for each barcode.
+$$
+I_{b}=\summ=01\sum\mu=01p⁢(m,\mu)⁢log_{2}⁡(\frac{p⁢(m,\mu)}{p_{m⁢u⁢t}⁢(m)⁢p_{e⁢x⁢p⁢r}⁢(\mu)}).
+$$
+
+Note that both m and µ are binary variables that characterize the mutational state of the base of interest and the level of expression, respectively. Specifically, m can take the values
+
+$$
+m={0,if⁢b⁢is a mutated base1,if⁢b⁢is a wild-type base.
+$$
+
+and µ can take on values
+
+$$
+\mu={0,for sequencing reads from the DNA library1,for sequencing reads originating from mRNA,
+$$
+
+where both m and µ are index variables that tell us whether the base has been mutated and if so, how likely that the read at that position will correspond to an mRNA, reflecting gene expression or a promoter, reflecting a member of the library. The higher the ratio of mRNA to DNA reads at a given base position, the higher the expression. $p_{m⁢u⁢t}⁢(m)$ in Equation 1 refers to the probability that a given sequencing read will be from a mutated base. $p_{e⁢x⁢p⁢r}⁢(\mu)$ is a numeric value that gives the ratio of the number of DNA or mRNA sequencing counts to the total number of sequencing counts for each barcode.
 
 Furthermore, we color the bars based on whether mutations at this location lowered gene expression on average (in blue, indicating an activating role) or increased gene expression (in red, indicating a repressing role). In this experiment, we targeted the regulatory regions based on a guess of where a transcription start site (TSS) will be, based on experimentally confirmed sites contained in RegulonDB (Santos-Zavaleta et al., 2019), a 5’ RACE experiment (Mendoza-Vargas et al., 2009), or by targeting small intergenic regions so as to capture all likely regulatory regions. Further details on TSS selection can be found in the Materials and methods Section 'Library design and construction'. After completing the Reg-Seq experiment, we note that many of the presumed TSS sites are not in the locations assumed, the promoters have multiple active RNA polymerase (RNAP) sites and TSS, or the primary TSS shifts with growth condition. To simplify the data presentation, the '0' base pair in all information footprints is set to the originally assumed base pair for the primary TSS, rather than one of the TSS that was found in the experiment.
 
-## Energy matrices
+#### Energy matrices
 
-Focusing on an individual putative transcription-factor-binding site as revealed in the information footprint, we are interested in a more fine-grained, quantitative understanding of how the underlying protein-DNA interaction is determined. An energy matrix displays this information using a heat map format, where each column is a position in the putative binding site and each row displays the effect on binding that results from mutating to that given nucleotide (given as a change in the DNA-transcription factor interaction energy upon mutation) (Berg and von Hippel, 1987; Stormo and Fields, 1998; Kinney et al., 2010). These energy matrices are scaled such that the wild type sequence is colored in white, mutations that improve binding are shown in blue, and mutations that weaken binding are shown in red. These energy matrices encode a full quantitative picture for how we expect sequence to relate to binding for a given transcription factor, such that we can provide a prediction for the binding energy of every possible binding site sequence as (4)binding energy=∑i=1Nεi,where the energy matrix is predicated on an assumption of a linear binding model in which each base within the binding site region contributes a specific value (εi for the it⁢h base in the sequence) to the total binding energy. Energy matrices are either given in A.U. (arbitrary units) or, for several cases where the gene has a simple repression or activation architecture with a single RNA polymerase (RNAP) site, are assigned kBT energy units following the procedure in Kinney et al., 2010 and validated on repression by lac repressor in Barnes et al., 2019. The details of how and when absolute units are determined can be found in Appendix 3 Section 'Inference of scaling factors for energy matrices'.
+Focusing on an individual putative transcription-factor-binding site as revealed in the information footprint, we are interested in a more fine-grained, quantitative understanding of how the underlying protein-DNA interaction is determined. An energy matrix displays this information using a heat map format, where each column is a position in the putative binding site and each row displays the effect on binding that results from mutating to that given nucleotide (given as a change in the DNA-transcription factor interaction energy upon mutation) (Berg and von Hippel, 1987; Stormo and Fields, 1998; Kinney et al., 2010). These energy matrices are scaled such that the wild type sequence is colored in white, mutations that improve binding are shown in blue, and mutations that weaken binding are shown in red. These energy matrices encode a full quantitative picture for how we expect sequence to relate to binding for a given transcription factor, such that we can provide a prediction for the binding energy of every possible binding site sequence as 
 
-## Sequence logos
+$$
+binding energy=\sumi=1N\epsilon_{i},
+$$
+
+where the energy matrix is predicated on an assumption of a linear binding model in which each base within the binding site region contributes a specific value ($\epsilon_{i}$ for the $i^{t⁢h}$ base in the sequence) to the total binding energy. Energy matrices are either given in A.U. (arbitrary units) or, for several cases where the gene has a simple repression or activation architecture with a single RNA polymerase (RNAP) site, are assigned kBT energy units following the procedure in Kinney et al., 2010 and validated on repression by lac repressor in Barnes et al., 2019. The details of how and when absolute units are determined can be found in Appendix 3 Section 'Inference of scaling factors for energy matrices'.
+
+#### Sequence logos
 
 From an energy matrix, we can also represent a preferred transcription-factor-binding site with the use of the letters corresponding to the four possible nucleotides, as is often done with position weight matrices (Schneider and Stephens, 1990). In these sequence logos, the size of the letters corresponds to how strong the preference is for that given nucleotide at that given position, which can be directly computed from the energy matrix. This method of visualizing the information contained within the energy matrix is more easily digested and allows for quick comparison among various binding sites.
 
-## Mass spectrometry enrichment plots
+#### Mass spectrometry enrichment plots
 
 As the final piece of our experimental pipeline, we wish to determine the identity of the transcription factor we suspect is binding to our putative binding site that is represented in the energy matrix and sequence logo. While the details of the DNA-affinity chromatography and mass spectrometry can be found in the Materials and methods, the results of these experiments are displayed in enrichment plots such as is shown in the bottom panel of Figure 2. In these plots, the relative abundance of each protein bound to our site of interest is quantified relative to a scrambled control sequence. The putative transcription factor is the one we find to be highly enriched compared to all other DNA-binding proteins.
 
-## Regulatory cartoons
+#### Regulatory cartoons
 
 The ultimate result of all these detailed base-pair-by-base-pair resolution experiments yields a cartoon model of how we think the given promoter is being regulated. A complete set of cartoons for all the architectures considered in our study is presented later in Figure 4. While the cartoon serves as a convenient, visual way to summarize our results, it is important to remember that these cartoons are a shorthand representation of all the data in the four quantitative measures described above and are, further, backed by quantitative predictions of how we expect the system to behave when tested experimentally. Throughout this paper, we use consistent iconography to illustrate the regulatory architecture of promoters with activators and their binding sites in green, repressors in red, and RNAP in blue.
 
@@ -97,25 +119,890 @@ The ultimate result of all these detailed base-pair-by-base-pair resolution expe
 
 **Figure 4.:** For each regulated promoter, activators and their binding sites are labeled in green, repressors and their binding sires are labeled in red, and RNAP-binding sites are labeled in blue. All cartoons are displayed with the transcription direction to the right. Only one RNAP site is depicted per promoter. The transcription-factor-binding sites displayed have either been identified by the method described in the Section 'Automated putative binding site algorithm' or have additional evidence for their presence as described in Table 2. Binding sites found for these promoters in the EcoCyc or RegulonDB databases are only depicted in these cartoons if the sites are within the 160 bp mutagenized region studied, and are detected by Reg-Seq.
 
-## Newly discovered E. coli regulatory architectures
+### Newly discovered E. coli regulatory architectures
 
-## Elucidating individual promoters
+#### Elucidating individual promoters
 
 With the tools outlined above, we are positioned to explore individual promoters, specifically those belonging to the part of the E. coli genome for which the function of the genes is unknown. Previously christened as the ‘y-ome’, Ghatak et al., 2019 surprisingly found that roughly 35% of the genes in E. coli lack experimental evidence of function. The situation is likely worse for other organisms. For many of the genes in the y-ome, we remain similarly ignorant of how those genes are regulated. Figures 4 and 5 provide several examples of genes which until now had unknown regulation. As shown in Figure 5, our study has found the first examples that we are aware of in the entire E. coli genome of a binding site for YciT. These examples are intended to show the outcome of the methods developed here and to serve as an invitation to browse the online resource (https://www.rpgroup.caltech.edu/RegSeq/interactive) where our full dataset is presented.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig5-v2.jpg)
 
-**Figure 5.:** Activator-binding regions are highlighted in green, repressor binding regions in red, and RNAP binding regions in blue. (A) From the information footprint of the ykgE promoter under different growth conditions, we can identify a repressor-binding site downstream of the RNAP-binding site. From the enrichment of proteins bound to the DNA sequence of the putative repressor as compared to a control sequence, we can identify YieP as the transcription factor bound to this site as it has a much higher enrichment ratio than any other protein. Lastly, the binding energy matrix for the repressor site along with corresponding sequence logo shows that the wild-type sequence is the strongest possible binder and it displays an imperfect inverted repeat symmetry. (B) Illustration of a comparable dissection for the phnA promoter. Numeric values for the displayed data can be found in Figure 5—source data 1.Figure 5—source data 1.Figure 5.
+**Figure 5.:** Activator-binding regions are highlighted in green, repressor binding regions in red, and RNAP binding regions in blue. (A) From the information footprint of the ykgE promoter under different growth conditions, we can identify a repressor-binding site downstream of the RNAP-binding site. From the enrichment of proteins bound to the DNA sequence of the putative repressor as compared to a control sequence, we can identify YieP as the transcription factor bound to this site as it has a much higher enrichment ratio than any other protein. Lastly, the binding energy matrix for the repressor site along with corresponding sequence logo shows that the wild-type sequence is the strongest possible binder and it displays an imperfect inverted repeat symmetry. (B) Illustration of a comparable dissection for the phnA promoter. Numeric values for the displayed data can be found in Figure 5—source data 1.
 
 The ability to find binding sites for both widely acting regulators and transcription factors which may have only a few sites in the whole genome allows us to get an in-depth and quantitative view of any given promoter. As indicated in Figure 5(A) and (B), we were able to perform the relevant search and capture for the transcription factors that bind our putative binding sites. In both of these cases, we now hypothesize that these newly discovered binding site-transcription factor pairs exert their control through repression. The ability to extract the quantitative features of regulatory control through energy matrices means that we can take a nearly unstudied gene such as ykgE, which is regulated by an understudied transcription factor YieP, and quickly get to the point at which we can do quantitative modeling in the style that we and many others have performed on the lac operon (Vilar and Leibler, 2003; Vilar et al., 2003; Bintu et al., 2005; Kinney et al., 2010; Garcia and Phillips, 2011; Vilar and Saiz, 2013; Barnes et al., 2019; Phillips et al., 2019).
 
-## A panoply of promoter results
+#### A panoply of promoter results
 
 Figure 6 (and Tables 1 and 2) provides a summary of the discoveries made in the work done here using our next-generation Reg-Seq approach. The outcome of our study is a set of hypothesized regulatory architectures as characterized by a suite of binding sites for RNAP, repressors, and activators, as well as the extremely potent binding energy matrices. We do not assume, a priori, that a particular collection of such binding sites is AND, OR, or any other logic (Galstyan et al., 2019). Figure 6(A) provides a shorthand notation that conveniently characterizes the different kinds of regulatory architectures found in bacteria. In this (na, nr) notation, na and nr correspond to the number of recovered activator- and repressor-binding sites, respectively. In previous work (Rydenfelt et al., 2014), we have explored the entirety of what is known about the regulatory genome of E. coli, revealing that the most common motif is the (0, 0) constitutive architecture, although we hypothesized that this is not a statement about the facts of the E. coli genome, but rather a reflection of our collective regulatory ignorance in the sense that we suspect that with further investigation, many of these apparent constitutive architectures will be found to be regulated under the right environmental conditions. The two most common regulatory architectures that emerged from our previous datebase survey are the (0, 1) and the (1, 0) architectures, the simple repression motif and the simple activation motif, respectively. It is interesting to consider that the (0, 1) architecture is in fact the repressor-operon model originally introduced in the early 1960s by Jacob and Monod, 1961 as the concept of gene regulation emerged. Now we see retrospectively the far reaching importance of that architecture across the regulatory genome.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig6-v2.jpg)
 
-**Figure 6.:** (A) The cartoons display a representative example of each type of architecture, along with the corresponding shorthand notation. (B) Counts of the different regulatory architectures discovered in this study. We exclude the 'gold-standard' promoters (listed in Appendix 2—table 1) unless new transcription factors are also discovered in the promoter. If, for example, one repressor was newly discovered and two activators were previously known, then the architecture is still counted as a (2,1) architecture. (C) Distribution of positions of binding sites discovered in this study for activators and repressors. Only newly discovered binding sites are included in this figure. The position of the transcription-factor-binding sites are calculated relative to the estimated TSS location, which is based on the location of the associated RNAP site. Numeric values for the binding locations can be found in Figure 6—source data 1.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) The cartoons display a representative example of each type of architecture, along with the corresponding shorthand notation. (B) Counts of the different regulatory architectures discovered in this study. We exclude the 'gold-standard' promoters (listed in Appendix 2—table 1) unless new transcription factors are also discovered in the promoter. If, for example, one repressor was newly discovered and two activators were previously known, then the architecture is still counted as a (2,1) architecture. (C) Distribution of positions of binding sites discovered in this study for activators and repressors. Only newly discovered binding sites are included in this figure. The position of the transcription-factor-binding sites are calculated relative to the estimated TSS location, which is based on the location of the associated RNAP site. Numeric values for the binding locations can be found in Figure 6—source data 1.
+
+**Table 1.**
+ All promoters examined in this study, categorized according to type of regulatory architecture.Those promoters which have no recognizable RNAP site are labeled as inactive rather than constitutively expressed (0, 0).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Architecture</th>
+      <th>Total number of promoters</th>
+      <th>Number of promoters with at least one newly discovered binding site</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All Architectures</td>
+      <td>113</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>(0,0)</td>
+      <td>34</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>(0,1)</td>
+      <td>26</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>(1,0)</td>
+      <td>11</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>(1,1)</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>(0,2)</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>(2,0)</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>(1,2)</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>(2,1)</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>(2,2)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>(3,0)</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>(0,3)</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>(0,4)</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>inactive</td>
+      <td>18</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ All genes investigated in this study categorized according to their regulatory architecture, given as (number of activators, number of repressors).The regulatory architectures as listed reflect only the binding sites that would be able to be recovered within our 160 bp constructs, but include both newly discovered and previously known binding sites. In those cases where binding sites that appear in RegulonDB or Ecocyc are omitted from this tally, the Section 'Explanation of included binding sites' in Appendix 4 has the reasoning, for each relevant gene, why the binding sites are not shown. The table also lists the number of newly discovered binding sites, previously known binding sites, and number of identified transcription factors. The evidence used for the transcription factor identification is given in the final column. 'Bioinformatic' evidence implies that discovered position weight matrices were compared to known transcription factor position weight matrices. The literature sites column contains only those sites that are both expected to be and are, in actuality, observed in the Reg-Seq data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Architecture</th>
+      <th>Promoter</th>
+      <th>Newly discovered binding sites</th>
+      <th>Literature binding sites</th>
+      <th>Identified binding sites</th>
+      <th>Evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(0, 0)</td>
+      <td>acuI</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>aegA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>arcB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>cra</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dnaE</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ecnB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fdoH</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>holC</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>hslU</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>htrB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>minC</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>modE</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ycgB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>mscL</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pitA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>poxB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rlmA</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rumB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>sbcB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>sdaB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>tar</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ybdG</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ybiP</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ybjT</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yehT</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yfhG</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ygdH</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ygeR</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yggW</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ynaI</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yqhC</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>zapB</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>zupT</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>amiC</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(0, 1)</td>
+      <td>araC</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>bdcR</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Known binding location (NsrR) (Partridge et al., 2009)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>coaA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dicC</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dinJ</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ybeZ</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>idnK</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mass- Spectrometry (YgbI)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>leuABCD</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mass- Spectrometry (YgbI)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>mscM</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yedK</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mass- Spectrometry (TreR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rapA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Growth condition Knockout (GlpR), Bioinformatic (GlpR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>sdiA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>tff-rpsB-tsf</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Growth condition Knockout (GlpR), Bioinformatic (GlpR), Knockout (GlpR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>thiM</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>tig</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Growth condition Knockout (GlpR), Bioinformatic (GlpR), Knockout (GlpR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ybiO</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ydjA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yedJ</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>phnA</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mass- Spectrometry (YciT)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>mutM</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rhlE</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Growth condition Knockout (GlpR), Bioinformatic (GlpR), Mass- Spectrometry (GlpR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>uvrD</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Bioinformatic (LexA)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dusC</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ftsK</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>znuA</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>znuCB</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(1, 0)</td>
+      <td>waaA-coaD</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rcsF</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>groSL</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>mscS</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>thrLABC</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yeiQ</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Growth condition Knockout (FNR), Bioinformatic (FNR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ycbZ</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ygjP</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>lac</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Bioinformatic (CRP)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yehS</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yehU</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Growth condition Knockout (FNR), Bioinformatic (FNR)</td>
+    </tr>
+    <tr>
+      <td>(0, 2)</td>
+      <td>pcm</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yecE</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mass- Spectrometry (HU)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yjjJ</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Growth condition Knockout (MarA), Bioinformatic (MarA)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dcm</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mass- Spectrometry (HNS)</td>
+    </tr>
+    <tr>
+      <td>(1, 1)</td>
+      <td>arcA</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>Growth condition Knockout (FNR), Bioinformatic (FNR), Mass- Spectrometry (FNR, CpxR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>dgoR</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>Bioinformatic (CRP) Bioinformatic (DgoR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ykgE</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>Growth condition Knockout (FNR), Bioinformatic (FNR), Mass- Spectrometry(YieP) Knockout (YieP)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ymgG</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(2, 0)</td>
+      <td>asnA</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fdhE</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>Growth condition Knockout (FNR, ArcA), Bioinformatic (FNR, ArcA), Knockout (ArcA)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>xylF</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(1, 2)</td>
+      <td>marR</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>Mass- Spectrometry (MarR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>aphA</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>Growth condition Knockout (FNR), Bioinformatic (FNR), Mass- Spectrometry (DeoR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>iap</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ilvC</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Mass- Spectrometry (IlvY) (Rhee et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>(2, 1)</td>
+      <td>maoP</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Growth condition Knockout (GlpR), Bioinformatic (GlpR), Knockout (PhoP, HdfR, GlpR)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rspA</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Mass- Spectrometry (DeoR)</td>
+    </tr>
+    <tr>
+      <td>(2, 2)</td>
+      <td>ybjX</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+      <td>Bioinformatic (2 PhoP sites), Mass- Spectrometry (HNS, StpA)</td>
+    </tr>
+    <tr>
+      <td>(3, 0)</td>
+      <td>araAB</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>xylA</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>yicI</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(0, 3)</td>
+      <td>ompR</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ybjL</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(0, 4)</td>
+      <td>relBE</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>Mass- Spectrometry (RelBE)</td>
+    </tr>
+  </tbody>
+</table>
 
 For the 113 genes we considered, Figure 6(B) summarizes the number of simple repression (0, 1) architectures discovered, the number of simple activation (1, 0) architectures discovered and so on. A comparison of the frequency of the different architectures found in our study to the frequencies of all the known architectures in the RegulonDB database is provided in Appendix 4—figure 2. Tables 1 and 2 provide a more detailed view of our results. As seen in Table 1, of the 113 genes we considered, 34 of them revealed no signature of any transcription-factor-binding sites and they are labeled as (0, 0). The simple repression architecture (0, 1) was found 26 times, the simple activation architecture (1, 0) was found 11 times, and more complex architectures featuring multiple binding sites (e.g. (1, 1), (0, 2), (2, 0), etc.) were revealed as well. Further, for 18 of the genes that we label 'inactive’, Reg-Seq did not reveal a potential RNAP-binding site. The lack of observable RNAP site could be because the proper growth condition to get high levels of expression was not used, or because the mutation window chosen for the gene does not capture a highly transcribing TSS.
 
@@ -123,17 +1010,17 @@ The tables also include our set of 15 'gold standard' genes for which previous w
 
 We observe that the most common motif to emerge from our work (with the exception of constitutive expression) is the simple repression motif. Another relevant regulatory statistic is shown in Figure 6(C) where we see the distribution of binding site positions. Our own experience in the use of different quantitative modeling approaches to transcriptional regulation reveal that, for now, we remain largely ignorant of how to account for transcription-factor-binding site positions, and datasets like the one presented here will begin to provide data that can help us uncover how this parameter dictates gene expression. Indeed, with binding site positions and energy matrices in hand, we can systematically move these binding sites and explore the implications for the level of gene expression, providing a systematic tool to understand the role of binding-site position.
 
-## Uncovering the action of global regulators
+#### Uncovering the action of global regulators
 
 One of the revealing case studies that demonstrates the broad reach of our approach for discovering regulatory architectures is offered by the insights we have gained into two widely acting regulators, GlpR (Figure 7; Schweizer et al., 1985) and FNR (Figure 8; Körner et al., 2003; Kargeti and Venkatesh, 2017). In both cases, we have expanded the array of promoters that they are now known to regulate. Further, these two case studies illustrate that even for widely acting transcription factors, there is a large gap in regulatory knowledge and the approach advanced here has the power to discover new regulatory motifs. The newly discovered binding sites in Figure 7(A), with additional evidence for GlpR binding in Figure 7(B) and (C), more than double the number of operons known to be regulated by GlpR as reported in RegulonDB (Santos-Zavaleta et al., 2019). We found five newly regulated operons in our data set, even though we were not specifically targeting GlpR regulation. Although the number of example promoters across the genome that we considered is too small to make good estimates, finding five regulated operons out of approximately 100 examined operons supports the claim that GlpR widely regulates and many more of its sites would be found in a full search of the genome. The regulatory roles revealed in Figure 7(A) also reinforce the evidence that GlpR is a repressor.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig7-v2.jpg)
 
-**Figure 7.:** (A) Information footprints for the promoters which we found to be regulated by GlpR, all of which were previously unknown. Activator-binding regions are highlighted in green, repressor-binding regions in red, and RNAP-binding regions in blue. (B) GlpR was demonstrated to bind to rhlE by mass spectrometry. (C) Sequence logos for GlpR-binding sites. Binding sites in the promotes of tff, tig, maoP, rhlE, and rapA have similar DNA binding preferences as seen in the sequence logos and each transcription-factor-binding site binds strongly only in the presence of glucose (As shown in (A)). These similarities suggest that the same transcription factor binds to each site. To test this hypothesis, we knocked out GlpR and ran the Reg-Seq experiments for tff, tig, and maoP. In (A), we see that knocking out GlpR removes the binding signature of the transcription factor. Numeric values for the binding locations can be found in Figure 7—source data 1.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Information footprints for the promoters which we found to be regulated by GlpR, all of which were previously unknown. Activator-binding regions are highlighted in green, repressor-binding regions in red, and RNAP-binding regions in blue. (B) GlpR was demonstrated to bind to rhlE by mass spectrometry. (C) Sequence logos for GlpR-binding sites. Binding sites in the promotes of tff, tig, maoP, rhlE, and rapA have similar DNA binding preferences as seen in the sequence logos and each transcription-factor-binding site binds strongly only in the presence of glucose (As shown in (A)). These similarities suggest that the same transcription factor binds to each site. To test this hypothesis, we knocked out GlpR and ran the Reg-Seq experiments for tff, tig, and maoP. In (A), we see that knocking out GlpR removes the binding signature of the transcription factor. Numeric values for the binding locations can be found in Figure 7—source data 1.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig8-v2.jpg)
 
-**Figure 8.:** FNR is known to be upregulated in anaerobic growth, and here we found it to regulate a suite of six genes. In aerobic growth conditions, the putative FNR sites are weakened. (A) Information footprints for the six regulated promoters. Activator binding regions are highlighted in green, repressor-binding regions in red, and RNAP binding regions in blue. (B) Sequence logos for the FNR-binding sites displayed in (A). The DNA binding preference of the six sites are shown to be similar from their sequence logos. Numeric values for the binding locations can be found in Figure 8—source data 1.Figure 8—source data 1.Figure 8.
+**Figure 8.:** FNR is known to be upregulated in anaerobic growth, and here we found it to regulate a suite of six genes. In aerobic growth conditions, the putative FNR sites are weakened. (A) Information footprints for the six regulated promoters. Activator binding regions are highlighted in green, repressor-binding regions in red, and RNAP binding regions in blue. (B) Sequence logos for the FNR-binding sites displayed in (A). The DNA binding preference of the six sites are shown to be similar from their sequence logos. Numeric values for the binding locations can be found in Figure 8—source data 1.
 
 For the GlpR-regulated operons newly discovered here, we found that this repressor binds strongly in the presence of glucose while all other growth conditions result in greatly diminished, but not entirely abolished, binding (Figure 7(A)). As there is no previously known direct molecular interaction between GlpR and glucose and the repression is reduced but not eliminated, the derepression in the absence of glucose is likely an indirect effect. As a potential mechanism of the indirect effect, gpsA is known to be activated by CRP (Seoh and Tai, 1999), and GpsA is involved in the synthesis of glycerol-3-phosphate (G3P), a known binding partner of GlpR which disables its repressive activity (Larson et al., 1987). Thus, in the presence of glucose, GpsA and consequently G3P will be found at low concentrations, ultimately allowing GlpR to fulfill its role as a repressor.
 
@@ -145,15 +1032,15 @@ We observe quantitatively how FNR affects the expression of fdhE both directly t
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig9-v2.jpg)
 
-**Figure 9.:** (A) Here, the information footprint of the arcA promoter is displayed along with the energy matrix describing the discovered FNR-binding site. (B) Intra-operon regulation of fdhE by both FNR and ArcA. The information footprint of fdhE is displayed. The discovered sites for FNR and ArcA are highlighted and the energy matrix for ArcA is displayed. A TOMTOM (Gupta et al., 2007) search of the binding motif found that ArcA was the most likely candidate for the transcription factor. The displayed information footprint from a knockout of ArcA demonstrates that the binding signature of the site, and its associated RNAP site, are no longer determinants of gene expression. (C) Sequence logos for FNR generated from both the sites cataloged in RegulonDB, as well as the discovered sites regulating arcA and fdhE. (D) Sequence logos for ArcA from sites contained in RegulonDB and the ArcA site regulating fdhE. Numeric values for the binding locations can be found in Figure 9—source data 1.Figure 9—source data 1.Figure 9B.
+**Figure 9.:** (A) Here, the information footprint of the arcA promoter is displayed along with the energy matrix describing the discovered FNR-binding site. (B) Intra-operon regulation of fdhE by both FNR and ArcA. The information footprint of fdhE is displayed. The discovered sites for FNR and ArcA are highlighted and the energy matrix for ArcA is displayed. A TOMTOM (Gupta et al., 2007) search of the binding motif found that ArcA was the most likely candidate for the transcription factor. The displayed information footprint from a knockout of ArcA demonstrates that the binding signature of the site, and its associated RNAP site, are no longer determinants of gene expression. (C) Sequence logos for FNR generated from both the sites cataloged in RegulonDB, as well as the discovered sites regulating arcA and fdhE. (D) Sequence logos for ArcA from sites contained in RegulonDB and the ArcA site regulating fdhE. Numeric values for the binding locations can be found in Figure 9—source data 1.
 
-## In summary
+#### In summary
 
 By examining the over 100 promoters considered here, grown under 12 growth conditions, we have a total of more than 1000 information footprints and data sets. In this age of big data, methods to explore and draw insights from that data are crucial. To that end, as introduced in Figure 10, we have developed an online resource (see https://www.rpgroup.caltech.edu/RegSeq/interactive) that makes it possible for anyone who is interested to view our data and draw their own biological conclusions. Information footprints for any combination of gene and growth condition are displayed via drop down menus. Each identified transcription-factor-binding site is marked, and energy matrices for all transcription-factor-binding sites are displayed. In addition, for each gene, we feature a simple cartoon-level schematic that captures our now current, best understanding of the regulatory architecture and resulting mechanism.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig10-v2.jpg)
 
-**Figure 10.:** This interactive figure captures the entirety of our dataset. Each figure features a drop-down menu of genes and growth conditions. For each such gene and growth condition, there is a corresponding information footprint revealing putative binding sites, an energy matrix that shows the strength of binding of the relevant transcription factor to those binding sites and a cartoon that schematizes the newly-discovered regulatory architecture of that gene. Numeric values for the binding locations can be found in Figure 10—source data 1.Figure 10—source data 1.Figure 10.
+**Figure 10.:** This interactive figure captures the entirety of our dataset. Each figure features a drop-down menu of genes and growth conditions. For each such gene and growth condition, there is a corresponding information footprint revealing putative binding sites, an energy matrix that shows the strength of binding of the relevant transcription factor to those binding sites and a cartoon that schematizes the newly-discovered regulatory architecture of that gene. Numeric values for the binding locations can be found in Figure 10—source data 1.
 
 The interactive figure in question was invaluable in identifying transcription factors, such as GlpR, whose binding properties vary depending on growth condition. As sigma factor availability also varies greatly depending on growth condition, studying the interactive figure identified many of the secondary RNAP sites present. The interactive figure provides a valuable resource both to those who are interested in the regulation of a particular gene and those who wish to look for patterns in gene regulation across multiple genes or across different growth conditions.
 
@@ -177,7 +1064,7 @@ Despite their limitations, the findings from this study provide a foundation for
 
 Here, we provide an overview of the key methodological aspects of Reg-Seq. Extensive details of the methods used in this study can also be found on the GitHub Wiki associated with this work.
 
-## Library design and construction
+### Library design and construction
 
 We selected 113 TSS from the E. coli K12 genome for experiments. The promoter regions analyzed in this study were each 160 base pairs in length, a region that includes 45 base pairs downstream and 115 base pairs upstream of each TSS. The general principles by which we selected each TSS were to first prioritize those TSS which have been extensively experimentally validated and catalogued in RegulonDB (Santos-Zavaleta et al., 2019) or EcoCyc (Keseler et al., 2017). Secondly, we selected those sites which had evidence of active transcription from RACE experiments (Mendoza-Vargas et al., 2009) and were listed in RegulonDB. If a TSS lacked both experimental evidence and active transcription as indicated by RACE experiments, we used the computationally predicted TSS as indicated on RegulonDB (Santos-Zavaleta et al., 2019) or EcoCyc (Keseler et al., 2017) and determined previously by Huerta and Collado-Vides, 2003. If there were multiple TSS located upstream of the gene in question, we selected the TSS closest to the gene start, unless selecting one further upstream would allow for multiple TSS to be contained in the 160 base pair mutated region analyzed for each promoter. Not all TSS locations are known, and many genes have multiple TSS. The exact start sites used, as well as the reasoning behind our selection of each TSS, are listed in Supplementary file 1.
 
@@ -187,54 +1074,54 @@ The PCR product was then run on a 2% TAE agarose gel, and approximately 200 base
 
 All genetic barcodes were inserted 120 base pairs from the 5’ end of the mRNA, containing 45 base pairs from the targeted regulatory region, 64 base pairs containing primer sites used in the construction of the plasmid, and 11 base pairs containing a three frame stop codon. Exact sequences of primers and spacer sequences for the constructs are listed in Supplementary file 2. Following each genetic barcode, there is an RBS, a GFP-coding region, and a terminator.
 
-## Preparation of libraries for sequencing
+### Preparation of libraries for sequencing
 
 To prepare cDNA libraries for sequencing, cells were grown to an optical density of 0.3 and RNA was stabilized using Qiagen RNA Protect (Qiagen, Hilden, Germany). Lysis was performed using lysozyme (Sigma Aldrich, Saint Louis, MO) and RNA isolated using the Qiagen RNA Mini Kit. Reverse transcription was preformed using Superscript IV (Invitrogen, Carlsbad, CA) with a specific primer for the labeled mRNA. qPCR was then performed in triplicate to check the level of DNA contamination. Any sample that had contaminating DNA at a level of 5% or more of the mRNA concentration was discarded. DNA libraries were prepared by growing cells to an optical density of 0.3 and isolating plasmid DNA with a spin miniprep kit (Qiagen, Hilden, Germany).
 
-## Sequencing
+### Sequencing
 
 After preparing the barcoded libraries, we used next-generation sequencing (NGS) to map promoters to their respective barcodes. Sequencing libraries (both cDNA and DNA) had unindexed illumina flow cell adaptors attached via PCR, using primers that amplified a 221 base pair region that included the random barcode. We limited PCR cycles to exponential amplification, as determined by qPCR. Specifically, when we performed qPCR to check for DNA contamination, we also determined the number of cycles at which each sample reached exponential amplification, and then repeated the PCR reactions with the determined number of cycles to limit bias. After amplification, libraries were cleaned using a Zymo Clean and Concentrator kit and analyzed on an Agilent 2100 Bioanalyzer (Agilent, Santa Clara, CA). Samples were submitted to NGX Bio (NGX Bio, South Plainfield, NJ) for 150 base pair paired-end sequencing on a Hi-Seq 2500 (Illumina, San Diego, CA). We typically acquired 250 million total reads for mapping of libraries. Further details of how we process the sequences can be found in Appendix 1 Section 'Sequencing Analysis' and the GitHub Wiki associated with this work.
 
 To quantify relative gene expression values for each promoter mutant in our library, we next grew cells expressing the DNA libraries in various growth conditions to an OD600 of 0.3. DNA and cDNA libraries were prepared in the same way as stated previously, and were sequenced at the Millard and Muriel Jacobs Genetics and Genomics Laboratory at Caltech on a HiSeq 2500 with a 100 base pair single read flow cell. An average of five unique 20 base pair barcodes per variant promoter was used for the purpose of counting transcripts. Specifically, for each promoter variant the number of sequences from the DNA library and the number of sequences produced from mRNA are determined.
 
-## Determination of energy matrices
+### Determination of energy matrices
 
 Energy matrices are used to represent the binding energy contribution for each nucleotide in a DNA sequence. We use relative gene expression values, as determined by counting genetic barcodes from NGS data for each mutated variant of a given regulatory sequence, and infer the energy contribution of each nucleotide by maximizing the mutual information between the rank-ordered binding strength predictions from the energy matrix and the gene expression data. We also perform this maximization using MCMC. Further discussion of how energy matrices are inferred can be found in Appendix 3 Section 'Energymatrix inference' and on the GitHub Wiki that accompanies this study.
 
-In each energy matrix plot, a red box indicates that a mutation to a nucleotide in that position decreases the energy of transcription factor binding, while a blue box indicates that a mutation at a given nucleotide position increases transcription-factor-binding energy. Energy matrices are typically given in arbitrary units, but the method by which we can assign absolute units in kb⁢T is covered in Appendix 3 Section 'Inference of scaling factors for energy matrices'.
+In each energy matrix plot, a red box indicates that a mutation to a nucleotide in that position decreases the energy of transcription factor binding, while a blue box indicates that a mutation at a given nucleotide position increases transcription-factor-binding energy. Energy matrices are typically given in arbitrary units, but the method by which we can assign absolute units in $k_{b}⁢T$ is covered in Appendix 3 Section 'Inference of scaling factors for energy matrices'.
 
-## DNA-affinity chromatography and mass spectrometry
+### DNA-affinity chromatography and mass spectrometry
 
 Upon identifying a putative transcription-factor-binding site, we used DNA-affinity chromatography, as performed in Belliveau et al., 2018, to isolate and enrich for the transcription factor of interest. In brief, we order biotinylated oligos of our binding site of interest (Integrated DNA Technologies, Coralville, IA) along with a control, 'scrambled' sequence, that we expect to have no specificity for the given transcription factor. We tether these oligos to magnetic streptavidin beads (Dynabeads MyOne T1; ThermoFisher, Waltham, MA), and incubate them overnight with whole cell lysate grown in the presences of either heavy (with 15N) or light (with 14N) lysine for the experimental and control sequences, respectively. The next day, proteins are recovered by digesting the DNA with the PtsI restriction enzyme (New England Biolabs, Ipswich, MA), whose cut site was incorporated into all designed oligos.
 
-Protein samples were then prepared for mass spectrometry by either in-gel or in-solution digestion using the Lys-C protease (Wako Chemicals, Osaka, Japan). Liquid chromatography coupled mass spectrometry (LC-MS) was performed as previously described by Belliveau et al., 2018, and is further discussed in Appendix 3 Section 'Processing of mass spectrometry experiments'. SILAC labeling was performed by growing cells (Δ LysA) in either heavy isotope form of lysine or its natural form.
+Protein samples were then prepared for mass spectrometry by either in-gel or in-solution digestion using the Lys-C protease (Wako Chemicals, Osaka, Japan). Liquid chromatography coupled mass spectrometry (LC-MS) was performed as previously described by Belliveau et al., 2018, and is further discussed in Appendix 3 Section 'Processing of mass spectrometry experiments'. SILAC labeling was performed by growing cells ($Δ$ LysA) in either heavy isotope form of lysine or its natural form.
 
 It is also important to note that while we utilized the SILAC method to identify the transcription factor identities, our approach does not require this specific technique. Specifically, our method only requires a way to contrast between the copy number of proteins bound to a target promoter in relation to a scrambled version of the promoter. In principle, one could use multiplexed proteomics based on isobaric mass tags (Pappireddi et al., 2019) to characterize up to 10 promoters in parallel. Isobaric tags are reagents used to covalently modify peptides by using the heavy-isotope distribution in the tag to encode different conditions. The most widely adopted methods for isobaric tagging are the isobaric tag for relative and absolute quantitation (iTRAQ) and the tandem mass tag (TMT). This multiplexed approach involves the fragmentation of peptide ions by colliding with an inert gas. The resulting ions are resolved in a second MS-MS scan (MS2).
 
 Only a subset (13) of all transcription factor targets were identified by mass spectrometry due to limitations in scaling the technique to large numbers of targets. The transcription factors identified by this method are enriched more than any other DNA binding protein, with p<0.01 using the outlier detection method as outlined by Cox and Mann, 2008, with corrections for multiple hypothesis testing using the method proposed by Benjamini and Hochberg, 1995. Details on data processing can be found in Appendix 3 Section 'Processing of mass spectrometry experiments'. A detailed explanation of all experimental and computational steps can be found in the GitHub Wiki that accompanies this work.
 
-## Construction of knockout strains
+### Construction of knockout strains
 
 Conducting DNA-affinity chromatography followed by mass spectrometry on putative binding sites resulted in potential candidates for the transcription factors that bind to the target region. For some cases, to verify that a given transcription factor is, in fact, regulating a given promoter, we repeated the RNA sequencing experiments on strains in which the transcription factor of interest has been knocked out.
 
 To construct the knockout strains, we ordered strains from the Keio collection (Yamamoto et al., 2009) from the Coli Genetic Stock Center. These knockouts were put in a MG1655 background via phage P1 transduction and verified with Sanger sequencing. To remove the kanamycin resistance that comes with the strains from the Keio collection, we transformed in the pCP20 plasmid (Datsenko and Wanner, 2000), induced FLP recombinase, and then selected for colonies that no longer grew on either kanamycin or ampicillin, verifying both loss of the chromosomally integrated kanamycin resistance and the pCP20 plasmid which confers ampicillin resistance. Finally, we transformed our desired promoter libraries into the constructed knockout strains, allowing us to perform the RNA sequencing in the same context as the original experiments.
 
-## Automated putative binding site algorithm
+### Automated putative binding site algorithm
 
-We introduce a systematized way of identifying the locations of binding sites to supplement manual curation (described in the Section 'Manual selection of binding sites'). As illustrated in Figure 11, for a given information footprint, we average over 15 base pair 'windows'. We then determine which base pairs are part of a regulatory region by setting an information threshold of 2.5×10−4 bits. Threshold selection is described in Appendix 2 Section 'False positive and false negative rates'. All base pair positions that pass the information threshold were then joined into regulatory regions. We consider 'activator-like' (mutation decreases expression) and 'repressor-like' (mutation increases expression) base pairs separately. This means that it is possible to have overlapping repressor- and activator-binding sites identified. We join any base pair positions within four base pairs of each other into single regulatory regions. We then find the edges of the region by trimming off any base pairs at the edge that are below the information threshold (even if the 15 base pair average is above the threshold). While we can often resolve overlapping or nearby repressors from activators, a limitation of this method of identification is that is cannot resolve two activators or two repressors that are very close to each other or overlapping.
+We introduce a systematized way of identifying the locations of binding sites to supplement manual curation (described in the Section 'Manual selection of binding sites'). As illustrated in Figure 11, for a given information footprint, we average over 15 base pair 'windows'. We then determine which base pairs are part of a regulatory region by setting an information threshold of $2.5\times10^{−4}$ bits. Threshold selection is described in Appendix 2 Section 'False positive and false negative rates'. All base pair positions that pass the information threshold were then joined into regulatory regions. We consider 'activator-like' (mutation decreases expression) and 'repressor-like' (mutation increases expression) base pairs separately. This means that it is possible to have overlapping repressor- and activator-binding sites identified. We join any base pair positions within four base pairs of each other into single regulatory regions. We then find the edges of the region by trimming off any base pairs at the edge that are below the information threshold (even if the 15 base pair average is above the threshold). While we can often resolve overlapping or nearby repressors from activators, a limitation of this method of identification is that is cannot resolve two activators or two repressors that are very close to each other or overlapping.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/55308/elife-55308-fig11-v2.jpg)
 
-**Figure 11.:** First, an information footprint is generated for the target region. Next, the information footprint is smoothed over a 15 base pair sliding window and a threshold of  bits is applied to identify regions of interest. RNAP-binding sites are first identified (in blue), and the remainder of the regulatory regions are identified as repressor-binding sites (if they tend to increase expression on mutation from wild type) or activator-binding sites (if they tend to decrease expression upon mutation).2.5×10−4Figure 11—source data 1.Figure 11.
+**Figure 11.:** First, an information footprint is generated for the target region. Next, the information footprint is smoothed over a 15 base pair sliding window and a threshold of $2.5\times10^{−4}$ bits is applied to identify regions of interest. RNAP-binding sites are first identified (in blue), and the remainder of the regulatory regions are identified as repressor-binding sites (if they tend to increase expression on mutation from wild type) or activator-binding sites (if they tend to decrease expression upon mutation).
 
-To identify RNAP-binding sites, we compare the sequence preference (through energy matrices and sequence logos) to experimentally validated examples of RNAP sites. We have examples of energy matrices for the σ70 RNAP site from Belliveau et al., 2018. For energy matrices of other σ factor binding sites, such as σ32 and σ28, we use energy matrices generated from within the Reg-Seq experiment itself. For a σ32 binding site, for example, we used the example from the hslU gene. For a σ28 binding site, we used the energy matrix generated from the dnaE gene. We 'scan' the example energy matrices across the mutated region. For each position in the region, we calculate the Pearson correlation coefficient between the example RNAP energy matrix and the inferred energy matrix at that position. We find RNAP-binding site locations by thresholding the Pearson correlation coefficients at a value of 0.45. When performing manual curation of binding sites, we visually compare the sequence logos of the example RNAP-binding sites to the sequence logos of putative binding sites. Further details of the method to create energy matrices and compare them to known motifs are given in Appendix 3 Section 'Energy matrix inference' and Appendix 3 Section 'TOMTOM motif comparison', respectively. Further, a detailed discussion of energy matrix construction is provided in the Sequencing Analysis GitHub Wiki page that accompanies this work.
+To identify RNAP-binding sites, we compare the sequence preference (through energy matrices and sequence logos) to experimentally validated examples of RNAP sites. We have examples of energy matrices for the $\sigma^{70}$ RNAP site from Belliveau et al., 2018. For energy matrices of other $\sigma$ factor binding sites, such as $\sigma^{32}$ and $\sigma^{28}$, we use energy matrices generated from within the Reg-Seq experiment itself. For a $\sigma^{32}$ binding site, for example, we used the example from the hslU gene. For a $\sigma^{28}$ binding site, we used the energy matrix generated from the dnaE gene. We 'scan' the example energy matrices across the mutated region. For each position in the region, we calculate the Pearson correlation coefficient between the example RNAP energy matrix and the inferred energy matrix at that position. We find RNAP-binding site locations by thresholding the Pearson correlation coefficients at a value of 0.45. When performing manual curation of binding sites, we visually compare the sequence logos of the example RNAP-binding sites to the sequence logos of putative binding sites. Further details of the method to create energy matrices and compare them to known motifs are given in Appendix 3 Section 'Energy matrix inference' and Appendix 3 Section 'TOMTOM motif comparison', respectively. Further, a detailed discussion of energy matrix construction is provided in the Sequencing Analysis GitHub Wiki page that accompanies this work.
 
-## Manual selection of binding sites
+### Manual selection of binding sites
 
-Similarly to the automated method of locating putative binding regions, we look for regions of high mutual information in the information footprints. While there was no hard cut-off for mutual information values during manual curation, we select clusters of base pairs that have a similar average information value (2.5×10−4 bits) to that described in the Section 'Automated putative binding site algorithm'.
+Similarly to the automated method of locating putative binding regions, we look for regions of high mutual information in the information footprints. While there was no hard cut-off for mutual information values during manual curation, we select clusters of base pairs that have a similar average information value ($2.5\times10^{−4}$ bits) to that described in the Section 'Automated putative binding site algorithm'.
 
 During manual curation of binding sites, we also disqualify any binding sites where there are only three or fewer base pairs with high values in the mutual information footprint. The logic behind this decision is that individual bases with very high mutual information can potentially indicate that a putative binding site is only active when a certain mutation occurs. In turn, the binding site would not be active in wild-type conditions. To explain why this is, consider that a typical binding site mutation, at any given base pair, will significantly weaken the binding site of interest. Therefore, each of those mutated base pairs is said to have a 'large effect' on expression. For a very poor binding site that is not active in the wild-type case, most mutations will further weaken a site which already will have only a minor effect on gene expression. However, for a small number of base pairs, a mutation can occur that makes the DNA bind more tightly to the transcription factor, making it relevant for gene expression. Therefore, in the case of an extremely weak binding site that is not relevant in the wild type condition, there can still be a small number of highly informative bases. Initial hypothesis generation in Reg-Seq was done manually. However, all those sites that are reported in Table 2 that do not have additional validation through mass spectrometry, gene knockouts, or bioinformatics appear in the set of putative binding sites generated by the method described in Section 'Automated putative binding site algorithm'.
 
-## Code and data availability
+### Code and data availability
 
 An in-depth discussion of all experimental protocols and mathematical analysis used in this study can be found on the GitHub Wiki for this study (Ireland, 2020 https://github.com/RPGroup-PBoC/RegSeq/wiki (copy archived at https://github.com/elifesciences-publications/RegSeq). All code used for processing data and plotting as well as the final processed data, plasmid sequences, and primer sequences can also be found on the GitHub repository(archived by Zenodo; https://doi.org/10.5281/zenodo.3966687). Energy matrices were generated using the MPAthic software (Ireland and Kinney, 2016). All raw sequencing data is available at the Sequence Read Archive (accession no.PRJNA599253 and PRJNA603368). All inferred information footprints and energy matrices can be found on the GitHub repository (archived by Zenodo; https://doi.org/10.5281/zenodo.3966687). All mass spectrometry raw data is available on the CaltechData repository (https://doi.org/10.22002/d1.1336).

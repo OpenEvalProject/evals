@@ -17,8 +17,8 @@
 
 ### Affiliations
 
-1. https://ror.org/053fp5c05 College of Pharmacy and Graduate School of Pharmaceutical Sciences, Ewha Womans University Seoul Republic of Korea
-2. https://ror.org/04yka3j04 College of Pharmacy, CHA University Pocheon Republic of Korea
+1. College of Pharmacy and Graduate School of Pharmaceutical Sciences, Ewha Womans University Seoul Republic of Korea ([ROR:053fp5c05](https://ror.org/053fp5c05))
+2. College of Pharmacy, CHA University Pocheon Republic of Korea ([ROR:04yka3j04](https://ror.org/04yka3j04))
 
 † Corresponding author
 
@@ -42,7 +42,7 @@ In our previous study, pyrazoline analogue YK-1 was developed as an effective in
 
 ## Results
 
-## Identification of compound 10 as potent ELF3-MED23 PPI inhibitor
+### Identification of compound 10 as potent ELF3-MED23 PPI inhibitor
 
 We designed and synthesized 26 novel compounds, including chalcones, pyrazoline acetyl, and pyrazoline propionyl analogs based on the YK1 structure (Figure 2). To screen out compounds exhibiting superior inhibitory activity against ELF3-MED23 PPI, we first performed secreted alkaline phosphatase (SEAP) assay (Hwang et al., 2023; Kim et al., 2012) using 26 synthesized compounds. As in our previous studies, gefitinib and CI-1033 (Canertinib) were used as positive controls for the experiment (Hwang et al., 2023; Kim et al., 2012; Figure 3A). Cell viability tests were conducted in parallel with the SEAP assay under the same experimental condition, in order to confirm that the decrease in fluorescence observed in the SEAP assay was specifically due to ELF3-MED23 disruption, and not related to non-specific cytotoxicity of the compounds (Figure 3B). Overall, a total of 12 compounds displayed nearly 100% inhibition at 10 μM, showing the most excellent significant SEAP inhibitory activities among the entire series. Most of these have a chalcone moiety (compounds 1–10 in group 1), while compounds 16 and 17 have a pyrazoline acetyl moiety. Among the remaining pyrazoline acetyl derivatives in group 2, compounds 11, 13, 14, and 15 also showed inhibitory effects, but their extent was relatively low (compounds 11, 14, and 15; below 30% inhibition, compound 13; 68% inhibition). In case of the molecules of pyrazoline propionyl skeleton in group 3, only compound 26 displayed a moderate inhibitory rate of 63.8%, while majority of them did not show noticeable inhibitory effects (Figure 3A). To select the compounds that can actually induce downregulation of HER2 in cancer cells, we applied the top 12 compounds with the highest SEAP inhibitory activity to NCI-N87, a well-known HER2-positive gastric cancer cell line, and evaluated changes in the HER2 protein expression level (Figure 3C). Of the tested molecules, only compounds 3, 5, and 10 were found to significantly reduce the HER2 levels by more than 50%. However, unlike compound 3 and 10, the downregulation of HER2 induced by compound 5 did not occur at the mRNA level. This indicates that only compounds 3 and 10 were capable of transcriptionally downregulating HER2 by disrupting the ELF3-MED23 interaction (Figure 3D). Since compound 10 remarkably decreased the HER2 level of NCI-N87 by more effectively disrupting the ELF3-MED23 PPI compared to compound 3 (Figure 3E), we finally selected compound 10 as the candidate molecule and performed further experiments.
 
@@ -50,9 +50,9 @@ We designed and synthesized 26 novel compounds, including chalcones, pyrazoline 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97051/elife-97051-fig3-v1.jpg)
 
-**Figure 3.:** (A) Synthesized compounds were screened to evaluate their inhibitory activity against ELF3–MED23 PPI. All compounds were used at 10 μM for 12 h (n=3, mean ± S.D.). (B) Cell viability was also measured in parallel using the same conditions as for the reporter gene assay in (A) (n=3, mean ± S.D.). (C) Changes in the HER2 levels were evaluated by treating NCI-N87 cells with the compounds that exhibited high SEAP inhibitory activity in (A). (D) Effect of compound 3, 5, and 10 on mRNA level of HER2 in NCI-N87 was assessed (16 hr treatment at 10 μM, n=3, mean ± S.D., ANOVA, ***p<0.001 vs. CON). (E) PPI inhibitory activities of compounds 3 and 10 were evaluated against endogenous ELF3 and MED23.Compound 25 was used as negative control.Figure 3—source data 1.Figure 3C.Figure 3—source data 2.Figure 3C.Figure 3—source data 3.Figure 3E.Figure 3—source data 4.Figure 3E.
+**Figure 3.:** (A) Synthesized compounds were screened to evaluate their inhibitory activity against ELF3–MED23 PPI. All compounds were used at 10 μM for 12 h (n=3, mean ± S.D.). (B) Cell viability was also measured in parallel using the same conditions as for the reporter gene assay in (A) (n=3, mean ± S.D.). (C) Changes in the HER2 levels were evaluated by treating NCI-N87 cells with the compounds that exhibited high SEAP inhibitory activity in (A). (D) Effect of compound 3, 5, and 10 on mRNA level of HER2 in NCI-N87 was assessed (16 hr treatment at 10 μM, n=3, mean ± S.D., ANOVA, ***p<0.001 vs. CON). (E) PPI inhibitory activities of compounds 3 and 10 were evaluated against endogenous ELF3 and MED23.Compound 25 was used as negative control.
 
-## Qualitative structure-activity relationship (SAR) of prepared compounds
+### Qualitative structure-activity relationship (SAR) of prepared compounds
 
 Field-based approaches primarily focus on characterizing the molecular properties of compounds based on their interaction fields. By providing comprehensive 3D information regarding charge distribution, non-polar interactions, and shape properties of diverse molecules, this method allows detailed insights into how distinct electrostatic, hydrophobic, and steric fields of ligands contribute to their biological activity or inactivity (Cheeseright et al., 2006; Floresta and Abbate, 2021). Based on this concept, we utilized FieldTemplater software to three-dimensionally align all 26 compounds according to their field points. We subsequently analyzed their configurations through Activity Atlas software (Tedesco et al., 2024). We finally visualized the results in 3D activity cliff summary plots of positive/negative electrostatics and favorable/unfavorable hydrophobics (Figure 4). According to the electrostatic and hydrophobic plots, the positive/negative and hydrophobic field points of the compounds demonstrating relatively high HER2 inhibitory activity (as exemplified by compounds 3 and 5) were found to be well-distributed within the favored areas. Especially, the negative field formed around the ketone moiety within the chalcone skeleton, and the hydrophobic field generated by 3-methyl-but-2-enyl side chain of compound 10 are assumed to be important for the HER2 inhibitory effect induced by interrupting ELF3-MED23 PPI. This assumption arises from the observation that the overall activity slightly decreased when both the negative and hydrophobic field point were less distributed in the mentioned regions (Figure 4A and B; compounds 3 and 5). For the compounds displaying low potency (represented by compounds 12, 15, 20, and 24), their positive/negative electrostatic and hydrophobic potentials shared unfavorable distribution patterns. This suggests that conformation of these compounds is less likely to complementarily fit into the binding interface of ELF3-MED23 PPI (Figure 4A and B; compounds 12, 15, 20, and 24).
 
@@ -60,29 +60,29 @@ Field-based approaches primarily focus on characterizing the molecular propertie
 
 **Figure 4.:** Activity cliff summary for the prepared compound series were plotted regarding the contributions of electrostatic (A) and hydrophobic (B) fields. The field point pattern was depicted as spheres (Red, positive electrostatics; Cyan, negative electrostatics; Yellow brown, hydrophobic fields).
 
-## Compound 10 as a transcriptional regulator of HER2 by inhibiting ELF3-MED23 PPI
+### Compound 10 as a transcriptional regulator of HER2 by inhibiting ELF3-MED23 PPI
 
 Previously, we have verified that the TAD domain of ELF3 (129–145 residues; 17 amino acids) interacts with the 391–582 residues of MED23, thereby regulating HER2 at the transcriptional level. Specifically, within ELF3, residues S137 to E144 were identified as essential residues for this interaction (Hwang et al., 2023). Based upon the results, we performed in vitro fluorescence polarization (FP) assay by utilizing the (His)6-MED23391-582 protein and fluorescein isothiocyanate (FITC)-labeled ELF3129-145 peptide (Figure 4A). Similar to the positive control, unlabeled ELF3137-144 peptide, compound 10 significantly reduced the FP signal induced by the binding of FITC-ELF3129-145 and (His)6-MED23391-582, demonstrating that compound 10 directly inhibits the ELF3-MED23 PPI. While the Ki value of unlabeled ELF3137-144 peptide calculated from the Kd of FITC-ELF3129-145 and (His)6-MED23391-582 interaction was determined to be 4.47±0.03 μM, compound 10 showed a 6.6-fold lower value of 0.68±0.08 μM, falling within the nanomolar range (Figure 5A and B). Through GST-pull down assay, we then confirmed that ELF3-MED23 PPI inhibitory effect of compound 10 is also valid at the cell level (Figure 5C). To investigate whether intracellular compound 10 also acts on the binding interface of ELF3 and the 391–582 amino acid region of MED23 within the cell system, we performed split luciferase complementation assay using ELF3- and MED23391-582-ligated with N-terminal (Nluc) and C-terminal (Cluc) fragments of split luciferase, respectively (Figure 5D). Without compound 10, ELF3 and MED23391-582 successfully interacted within the cell system, subsequently inducing the complementation of Nluc and Cluc to generate a significant amount of bioluminescence (32.7-fold change vs. control). However, compound 10 markedly reduced this luciferase activity in a dose-dependent manner. This result verified that compound 10 is also capable of disrupting the ELF3-MED23 PPI at the cellular level. In fact, the successful inhibition of the ELF3-MED23 PPI by compound 10 ultimately resulted in the attenuation of ERBB2 promoter activity (Figure 5E). This led to a significant downregulation of HER2 expression and its downstream signaling molecules such as pAKT and pMAPK in a concentration- and time-dependent manner (Figure 5F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97051/elife-97051-fig5-v1.jpg)
 
-**Figure 5.:** 10 as a transcriptional regulator of HER2 by inhibiting ELF3-MED23 PPI.(A) Titration curve of MED23391-582 protein FITC-labeled ELF3129-145 peptide. Binding of the MED23391-582 protein and ELF3-FITC peptide (17 a.a.) was validated via cell-free FP assay. Kd value was measured as 10.2±0.82 (nM) using the least squares non-linear fit method (n=3, mean ± S.D). (B) Effect of compound 10 on the FP (mP) induced by the binding of FITC-ELF3129-145 peptide to (His)6-MED23391-582 protein was evaluated in cell-free system. Unlabeled ELF3137-144 peptide was used as positive control. IC50 and Ki values were calculated from the FP assay results (n=3, mean ±S.D.). (C) Intracellular PPI inhibitory effect of compound 10 (5 μM, 12 h treatment) against ELF3-MED23 was evaluated through GST-pull down assay using GST-ELF3WT and 3xFLAG-MED23. (D) Impact of compound 10 on the relative luciferase activity generated by Nluc-ELF3WT and Cluc-MED23391-582 interaction was evaluated (20 hr treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, ***p<0.001). (E) Effect of compound 10 on the overall ERBB2 promoter activity was assessed (20 hr treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, *p<0.05, **p<0.01, and ***p<0.001). (F) Changes in the HER2 and its downstream signaling pathway were evaluated by treating compound 10 in dose- and time-dependent manner.Figure 5—source data 1.Figure 5C.Figure 5—source data 2.Figure 5C.Figure 5—source data 3.Figure 5F.Figure 5—source data 4.Figure 5F.
+**Figure 5.:** (A) Titration curve of MED23391-582 protein FITC-labeled ELF3129-145 peptide. Binding of the MED23391-582 protein and ELF3-FITC peptide (17 a.a.) was validated via cell-free FP assay. Kd value was measured as 10.2±0.82 (nM) using the least squares non-linear fit method (n=3, mean ± S.D). (B) Effect of compound 10 on the FP (mP) induced by the binding of FITC-ELF3129-145 peptide to (His)6-MED23391-582 protein was evaluated in cell-free system. Unlabeled ELF3137-144 peptide was used as positive control. IC50 and Ki values were calculated from the FP assay results (n=3, mean ±S.D.). (C) Intracellular PPI inhibitory effect of compound 10 (5 μM, 12 h treatment) against ELF3-MED23 was evaluated through GST-pull down assay using GST-ELF3WT and 3xFLAG-MED23. (D) Impact of compound 10 on the relative luciferase activity generated by Nluc-ELF3WT and Cluc-MED23391-582 interaction was evaluated (20 hr treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, ***p<0.001). (E) Effect of compound 10 on the overall ERBB2 promoter activity was assessed (20 hr treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, *p<0.05, **p<0.01, and ***p<0.001). (F) Changes in the HER2 and its downstream signaling pathway were evaluated by treating compound 10 in dose- and time-dependent manner.
 
-## Compound 10 as a potent anticancer agent for HER2-positive gastric cancer cells
+### Compound 10 as a potent anticancer agent for HER2-positive gastric cancer cells
 
 Based upon the obtained results so far, we proceeded to evaluate whether compound 10-mediated inhibition of ELF3-MED23 PPI could lead to significant anticancer activity against HER2-positive gastric cancer cells in both in vitro and in vivo settings. First, by treating NCI-N87 cells with varying concentrations of compound 10, we found that apoptosis was significantly induced in a concentration-dependent manner (Figure 6A). This effect was further validated by the dose- and time-dependent increases in pro-apoptotic markers, cleaved PARP (c-PARP) and cleaved caspase 3 (c-Caspase 3) (Figure 6B). Accordingly, compound 10 significantly decreased the cell proliferation of NCI-N87 in a concentration-dependent manner (Figure 6C), indicating its potent anticancer activity in the in vitro system. To evaluate its potency in the in vivo setting, we then established an NCI-N87 xenograft mouse model and administered compound 10 intravenously. Notably, the administration of 4 mg/kg of compound 10 resulted in significant retardation of tumor growth (Figure 6D), leading to a marked reduction in the final tumor volume, approximately 3.5-fold decrease compared to the control group (Figure 6E and F). Through Immunohistochemistry (IHC) analysis, we confirmed that the proliferation marker, Ki67, was remarkably downregulated (a 2.3-fold decrease compared to the control) in the tumor tissues administered with compound 10 (Figure 6G, right panel). This reduction in Ki67 expression was accompanied by a significant decrease in HER2 levels in the tumor tissue (a 1.7-fold decrease compared to the control), suggesting that the overall anti-tumor activity of compound 10 is primarily due to its capacity to inhibit HER2 expression (Figure 6G, left panel).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/97051/elife-97051-fig6-v1.jpg)
 
-**Figure 6.:** (A) Apoptosis induced by compound 10 in parental NCI-N87 was assessed by treatment with the compound in a dose-dependent manner (24 hr treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, ns = non-significant, ***p<0.001 vs. CON). (B) Changes in the pro-apoptotic markers were evaluated by treating compound 10 in dose- and time-dependent manner. (C) Anti-proliferative effect of compound 10 (10 μM) was evaluated against NCI-N87 cell line (10 days of treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, ***p<0.001 vs. CON). (D) Tumor growth inhibitory effect of compound 10 was evaluated using NCI-N87 xenograft mouse model (n=5 per group; intravenous (IV) injection at 4 mg/kg every 3 days, indicated by red arrows). Tumor volumes were evaluated at the indicated time points by measuring the length and width of the tumor with calipers using the equation (length x width2)/2. Data was indicated as mean ± S.E.M. (E) Photograph of the tumors collected from the vehicle- and compound 10-treated mice. (F) Final volume changes were assessed for the tumors excised from each experimental group (n=5, mean ± S.E.M., Student’s t-test, ***p<0.001 vs. CON) (G) IHC analysis was conducted against HER2 and Ki67 in the tumors (scale bar = 100 μm). Score quantification was performed using Image J software (10 independent fields per sample were evaluated, mean ± S.D., Student’s t test, ***p<0.001 vs. CON).Figure 6—source data 1.Figure 6B.Figure 6—source data 2.Figure 6B.
+**Figure 6.:** (A) Apoptosis induced by compound 10 in parental NCI-N87 was assessed by treatment with the compound in a dose-dependent manner (24 hr treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, ns = non-significant, ***p<0.001 vs. CON). (B) Changes in the pro-apoptotic markers were evaluated by treating compound 10 in dose- and time-dependent manner. (C) Anti-proliferative effect of compound 10 (10 μM) was evaluated against NCI-N87 cell line (10 days of treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, ***p<0.001 vs. CON). (D) Tumor growth inhibitory effect of compound 10 was evaluated using NCI-N87 xenograft mouse model (n=5 per group; intravenous (IV) injection at 4 mg/kg every 3 days, indicated by red arrows). Tumor volumes were evaluated at the indicated time points by measuring the length and width of the tumor with calipers using the equation (length x width2)/2. Data was indicated as mean ± S.E.M. (E) Photograph of the tumors collected from the vehicle- and compound 10-treated mice. (F) Final volume changes were assessed for the tumors excised from each experimental group (n=5, mean ± S.E.M., Student’s t-test, ***p<0.001 vs. CON) (G) IHC analysis was conducted against HER2 and Ki67 in the tumors (scale bar = 100 μm). Score quantification was performed using Image J software (10 independent fields per sample were evaluated, mean ± S.D., Student’s t test, ***p<0.001 vs. CON).
 
-## Compound 10 as a novel strategy to overcome trastuzumab resistance
+### Compound 10 as a novel strategy to overcome trastuzumab resistance
 
 As previously mentioned, trastuzumab has been a primary first-line therapy for various HER2-overexpressing cancer subtypes, including gastric cancer (NCCN, 2019; Gradishar et al., 2020). However, one of the significant drawback of this drug is the development of resistance, which readily occurs within 1 year of medication (Fiszman and Jasnis, 2011). In our previous study, we demonstrated that inhibiting the ELF3-MED23 PPI to downregulate HER2 at the transcriptional level could serve as a potentially promising alternative therapeutic option to trastuzumab (Hwang et al., 2023). Consequently, we sought to determine whether compound 10 holds the capability to overcome trastuzumab resistance. For this assessment, we utilized the trastuzumab-refractory NCI-N87 (NCI-N87 TR) cell line, which exhibited a 5.3-fold lower response rate to 10 μg/mL trastuzumab compared to the parental NCI-N87 cells (Parent vs. TR; 50.1% vs 9.5% growth inhibition; Figure 7A). At a concentration of 10 μg/mL, trastuzumab exhibited no discernible impact on the level of HER2 or its downstream signaling molecules such as p-AKT and p-MAPK in NCI-N87 TR cells. In contrast, compound 10 effectively attenuated these pathways by inhibiting HER2 expression (Figure 7B). Accordingly, compound 10 markedly inhibited the long-term proliferation of NCI-N87 TR, unlike trastuzumab (Figure 7C). Moreover, the dose-dependent treatment of compound 10 significantly induced apoptosis in NCI-N87 TR cells (Figure 7D). These findings collectively suggest that compound 10 demonstrates anticancer activity not only against parental HER2-positive cancer cells but also against their trastuzumab-refractory clones.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/97051/elife-97051-fig7-v1.jpg)
 
-**Figure 7.:** (A) Trastuzumab (10 μg/ml, 24 hr)-induced growth inhibitory effects were assessed against parental and TR NCI-N87 cell lines (n=3, mean ± S.D., Student’s t-test, ***p<0.001 vs. parent). (B) Trastuzumab- and compound 10-mediated changes of HER2 and its downstream signaling pathway were evaluated (16 hr treatment at indicated concentrations). (C) Anti-proliferative effects of trastuzumab (10 μg/mL) and compound 10 (10 μM) were evaluated against NCI-N87 TR cell line. Each compound was treated for 10 days (n=3, mean ± S.D., ANOVA, ns = non-significant, *p<0.05 vs. CON). (D) Apoptosis induced by compound 10 in NCI-N87 TR was assessed by FACS analysis with treatment of the compound in a dose-dependent manner (24 hr treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, ns = non-significant, ***p<0.001 vs. CON).Figure 7—source data 1.Figure 7B.Figure 7—source data 2.Figure 7B.
+**Figure 7.:** (A) Trastuzumab (10 μg/ml, 24 hr)-induced growth inhibitory effects were assessed against parental and TR NCI-N87 cell lines (n=3, mean ± S.D., Student’s t-test, ***p<0.001 vs. parent). (B) Trastuzumab- and compound 10-mediated changes of HER2 and its downstream signaling pathway were evaluated (16 hr treatment at indicated concentrations). (C) Anti-proliferative effects of trastuzumab (10 μg/mL) and compound 10 (10 μM) were evaluated against NCI-N87 TR cell line. Each compound was treated for 10 days (n=3, mean ± S.D., ANOVA, ns = non-significant, *p<0.05 vs. CON). (D) Apoptosis induced by compound 10 in NCI-N87 TR was assessed by FACS analysis with treatment of the compound in a dose-dependent manner (24 hr treatment at indicated concentrations, n=3, mean ± S.D., ANOVA, ns = non-significant, ***p<0.001 vs. CON).
 
 ## Discussion
 
@@ -98,7 +98,7 @@ This study highlights that the chalcone moiety can efficiently bind to the ELF3-
 
 ## Materials and methods
 
-## Chemistry
+### Chemistry
 
 The synthesized compounds were classified into three groups: group 1 encompassing chalcone compounds, group 2 comprising N-1-acetyl-4,5-dihydropyrazoline compounds, and group 3 consisting of N-1-propionyl-4,5-dihydropyrazoline compounds (Scheme 1 and Figure 2). Group 1 chalcone compounds were synthesized through a modified Claisen-Schmidt condensation reaction using 3,4,5-trimethoxyacetohenone and the appropriate aromatic aldehyde under 50% NaOH base condition, yielding between 47.8% to 88.4%. Analysis through 1H-NMR spectroscopy confirmed the trans conformation of chalcone compounds, evidenced by two doublet peaks with coupling constants around 15.6 Hz, representing α and β hydrogens in the conjugated ketone structure. Group 2 acetyl-pyrazoline compounds were obtained by reacting group 1 chalcone compounds with hydrazine and acetic acid, yielding between 50.8% to 82.4%. 1H-NMR spectra of group 2 compounds displayed characteristic peaks of three double of doublets at 3.1, 3.7, and 5.5 ppm, indicating each hydrogen at C-4 and C-5 positions in the pyrazoline ring structure. Compounds 11–17 also showed a methyl peak as a singlet at about 2.4 ppm, corresponding to the acetyl group of N-1 position. Interestingly, during this pyrazoline ring construction process, chalcone compounds 5 and 10 yielded compounds 11 and 16 with the O-substituted 3-methyl-but-2-enyl moiety deleted instead of the desired acetyl compounds. Group 3 propionyl-pyrazoline compounds were also prepared in the same manner as group 2 compounds with yields of 4.9% to 79.7%, except for propionic acid conditions. 1H-NMR spectra confirmed the presence of a propionyl substituent at the N-1 position of the pyrazoline ring, displaying a set of triplet and double of quartet peaks at about 1.2 and 2.7 ppm, respectively, corresponding to the ethyl peak of the propionyl group. All synthesized compounds are consistent with the spectral data.
 
@@ -106,66 +106,231 @@ The synthesized compounds were classified into three groups: group 1 encompassin
 
 Chemicals and reagents used were obtained from Aldrich Chemical Co. and others were from company like TCI. Melting points were measured without correction in open capillaries with Barnstead Electrothermal melting point apparatus, Manual MELTEMP (Model No: 1202D). Chromatographic separations were monitored by thin-layer chromatography using a commercially available pre-coated Merck Kieselgel 60 F254 plate (0.25 mm) and detected by visualizing under UV at 254 and 365 nm. Silicagel column chromatography was carried out with Merck Kieselgel 60 (0.040–0.063 mm). All solvents used for chromatography were directly used without distillation. The purity was assessed by HPLC (Shimadzu LC-20AD) analysis under the following conditions; column, SunFire C18 (4.6 mm × 150 mm, 5 mm); mobile phase, condition: A (water) and B (acetonitrile) using a linear gradient of 50–70% B in 0–15 min, 70% B in 15–20 min, 100% B in 20–25 min and 50% B in 25–30 min, flow rate; 1.0 mL/min; detection, diode array detector (Shimadzu Spd-M20A). The purity of compound is described as percent (%) and retention time was given in minutes. NMR spectra were recorded on Varian AS 400 (1H NMR at 400 MHz and 13C NMR at 100 MHz) with tetramethylsilane as an internal standard (Supplementary file 1). Chemical shift (d) values are expressed in ppm and coupling constant (J) values in hertz (Hz). The melting points were measured on Gallenkamp Melting Point Apparatus without correction. Detailed methods for synthesis of each compound were indicated in Appendix 1.
 
-## Cell culture
+### Cell culture
 
 NCI-N87 cell line was cultured at 37 °C in a humidified atmosphere with 5% CO2. NCI-N87 cells were obtained from Korean Cell Line Bank (KCLB No. 60113) and cultured in RPMI (Welgene, Korea) containing 10% fetal bovine serum (FBS, Hyclone, USA).
 
-## Secreted alkaline phosphatase (SEAP) assay
+### Secreted alkaline phosphatase (SEAP) assay
 
 SEAP assay was performed as previously described to measure ELF3-MED23 PPI-dependent HER2 transcription (Hwang et al., 2023). In this assay, the GAL4-ELF3 fusion protein binds to one of the five GAL4 binding sites on the reporter gene (pG4IL2SX). The interaction between the GAL4-ELF3 fusion protein and endogenous MED23 induces the expression of the SEAP. Once expressed, SEAP acts as a phosphatase on the substrate 4-MUP (4-methyl umbelliferyl phosphate), resulting in increased fluorescence. The mammalian expression vector, pBJ-GAL4-ELF3 was co-transfected with the reporter gene, pG5IL2SX to 293T human kidney cells. Compounds were treated for 16 hr, and each of the cultured medium was analyzed to measure the changes in SEAP activity.
 
-## Western blot analysis
+### Western blot analysis
 
 Western blot analysis was performed as described previously (Hwang et al., 2023). For the experiment, indicated cells were seeded in 6-well plates and incubated until they reached ~70% confluence. Stock solutions were prepared in DMSO and PBS for compound 10 and trastuzumab, respectively. The stock solutions were individually treated with varying volumes to meet the final concentration as indicated. Media were exchanged to serum-free media right before the compound treatment. All of the antibodies utilized in this study are summarized in Table 1.
 
-## RNA extraction and quantitative real-time PCR
+**Table 1.**
+ Summary of the antibody lists used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Vendor</th>
+      <th>Catalogue number</th>
+      <th>Application</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AKT</td>
+      <td>Cell signaling</td>
+      <td>#9272</td>
+      <td>WB</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>c-PARP</td>
+      <td>Cell signaling</td>
+      <td>#9541</td>
+      <td>WB</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>ELF3</td>
+      <td>Thermo Fisher</td>
+      <td>PA5-21293</td>
+      <td>WB</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>FLAG</td>
+      <td>MBL</td>
+      <td>M185-3L</td>
+      <td>WB</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>GAPDH</td>
+      <td>MBL</td>
+      <td>M171-3</td>
+      <td>WB</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>GST</td>
+      <td>MBL</td>
+      <td>M209-3</td>
+      <td>WB</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">HER2</td>
+      <td rowspan="2">Thermo Fisher</td>
+      <td rowspan="2">MA5-13105</td>
+      <td>WB</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Ki67</td>
+      <td>Dako</td>
+      <td>M7240</td>
+      <td>IHC</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>MAPK</td>
+      <td>Cell signaling</td>
+      <td>#9102</td>
+      <td>WB</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>MED23</td>
+      <td>Novus</td>
+      <td>NB200-338</td>
+      <td>WB</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>p-AKT (S473)</td>
+      <td>Santa cruz</td>
+      <td>sc-7985</td>
+      <td>WB</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>p-MAPK (T202/Y204)</td>
+      <td>Cell signaling</td>
+      <td>#9101</td>
+      <td>WB</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Cleaved caspase-3</td>
+      <td>Cell signaling</td>
+      <td>#9661</td>
+      <td>WB</td>
+      <td>1:1000</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA extraction and quantitative real-time PCR
 
 Cells were seeded in 60 mm cell culture dishes at a density of 5×105 cells per dish and incubated overnight. The cells were washed with PBS and treated with serum-free medium containing compounds at indicated concentrations. Total RNA from the compound treated cells was extracted using the Tri-RNA Reagent (FAVORGEN Biotech Corp., Taiwan) and cDNA was synthesized from the extracted RNA using PrimeScriptTM RT Reagent Kit (Takara Bio Inc, Japan) according to the manufacturer’s instruction. Quantitative analysis of the ERBB2 was performed using a SensiFAST SYBR Hi-ROX kit (Bioline, Canada). PCR amplification condition was applied as described previously (Hwang et al., 2023). Relative quantity of mRNA was calculated using the ∆∆Ct method and normalized by GAPDH. The primer sequences used in this study are summarized in Table 2.
 
-## Co-immunoprecipitation (Co-IP) assay
+**Table 2.**
+ Information of utilized qRT-PCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th></th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Actin</td>
+      <td>Forward</td>
+      <td>5' AGCCATGTACGTAGCCATCC 3'</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5' CTCTCAGCTGTGGTGGTGAA 3'</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ERBB2</td>
+      <td>Forward</td>
+      <td>5' GGTGGTCTTTGGGATCCTCA 3'</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5' ACCTTCACCTTCCTCAGCTC 3'</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ELF3</td>
+      <td>Forward</td>
+      <td>5' GTGATGCTGAGCTTGGGATG 3'</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5' TTAGGTTAGAAGCGCCCACA 3'</td>
+    </tr>
+    <tr>
+      <td rowspan="2">GAPDH</td>
+      <td>Forward</td>
+      <td>5' GAGTCAACGGATTTGGTCGT 3'</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5' GACAAGCTTCCCGTTCTCAG 3'</td>
+    </tr>
+  </tbody>
+</table>
+
+### Co-immunoprecipitation (Co-IP) assay
 
 NCI-N87 cells were seeded in 100 mm cell culture dish. When they reached to 70~80% confluency, 10 μM of each candidate compounds were treated for 16 hr. Cell lysates were prepared under the same procedure utilized in western blot analysis. 400 μg of each protein aliquots were incubated with MED23 antibody or rabbit-IgG antibody for 6 hr under rotary agitation at 4 °C. Rabbit-IgG-treated samples were compared as control. Fifteen μl of the protein-A/G PLUS-agarose beads (sc-2003, Santa Cruz, CA) were then added to each the samples and again rotated at 4 °C for 8 hr. The incubated samples were centrifugated for 20 min under 13,000 rpm. After discarding the supernatant, the beads were washed with 200 μl lysis buffer for three times. Fifteen μl of 2Χ loading buffer (1 M Tris-HCl (pH6.8), glycerol, 10% SDS, H2O, bromophenol blue, 2-mercaptoethanol) was added right after removing the supernatant from last washing step, and boiled at 100 °C for 5 min to denature the protein and detach from the beads. The samples were loaded on SDS-PAGE after centrifugation at 1300 rpm for 10 min. The following western blot protocol was same as above.
 
-## Fluorescence polarization (FP) assay
+### Fluorescence polarization (FP) assay
 
 FP assay was conducted following a previously described method to evaluate the molecular interaction between ELF3 and MED23 (Hwang et al., 2023). The FP assay operates on the principle of the molecular rotation dynamics. When a fluorescently labeled small molecule is excited by polarized light, the fluorescence emitted can be either polarized or depolarized depending on the molecular status. Free small molecules rotate rapidly, altering the orientation of their fluorescence dipole and emitting depolarized light. However, when these small moelcules bind to large molecules such as proteins, the resulting complex rotates more slowly, and the emitted light retains much of its original polarization. In this study, different concentrations of (His)6-MED23391–582, as the large molecule, and 10 nM of FITC-labeled ELF3129–145 peptide, as the fluorescence-labeled small molecule, were combined in assay buffer to determine the Kd value in advance. The calculations were performed using Prism 6.0 (GraphPad Software, USA) with the least-squares non-linear fit method. The FP signals were measured in millipolarization (mP) units using the Infinite F200 PRO microplate reader (Tecan Group Ltd., Switzerland) at excitation/emission wavelengths of 485/535 nm. For the displacement assays, varying concentrations of compound 10 and unlabeled ELF3137–144 peptide were separately added to the mixture containing 80 nM of (His)6-MED23391–582 and 10 nM of FITC-ELF3129–145. Activity of compound 10 was assessed by determining the IC50 of each compound, using the four-parameter logistic equation with Table Curve 2D program (SPSS Inc). Finally, the Ki values were calculated based on the Cheng-Prusoff equation: Ki = IC50/1+([Ligand]/Kd).
 
-## Glutathione S-transferase (GST) pull-down assay
+### Glutathione S-transferase (GST) pull-down assay
 
 Indicated plasmids were transduced to HEK293 cell using JetPRIME (Polyplus transfection, France). Five μM of compound 10 was co-applied to the system. Cell lysis was prepared under the same procedure as for the western blot analyses (Hwang et al., 2023). A total of 1000 μg of cell lysates were incubated overnight with Glutathione Sepharose beads (GE Healthcare, UK) at 4 °C on a rotator. Beads were washed three times with ice-cold 1 x PBS, and eluted with elution buffer (20 mM Glutathione, 100 mM Tris-HCl (pH 8.0), 120 mM NaCl, 10% glycerol). The precipitated proteins were analyzed via western blot.
 
-## Split-luciferase complementation assay
+### Split-luciferase complementation assay
 
 All split luciferase biosensors were made by In-Fusion HD Cloning kit using firefly luciferase from the pGL3-basic vector (Promega, USA) template. Luciferase was split into two fragments (Nluc and Cluc). Full-length cDNA for ELF3 was fused with the N-terminal fragments of the split luciferase (Nluc), and the MED23391-582 fragment was fused with the C-terminal fragments of the split luciferase (Cluc). Both fragments were cloned into the p3Xflag-myc-CMV26 vector. The HEK293 cells were co-transfected with Nluc-ELF3 and Cluc-MED23391-582. After incubation for 6 hr, the transfected HEK293 cells were washed with PBS and treated with compound in a serum-free medium for 20 hr. HT59 was treated at different concentrations.
 
-## Luciferase promoter assay
+### Luciferase promoter assay
 
 HEK293 cells were plated in 60 mm culture dishes and transfected with 1 µg of pGL2-HER2 alone or in combination with 0.5 µg of pcDNA3.1-flag-ELF3 and p3Xflag-myc-CMV26-MED23. All transfections were conducted using jetPRIME Transfection Reagent (Polyplus-transfection, FRANCE). After incubation for 6 hr, the culture medium was replaced with serum-free medium containing different concentrations of HT59 for 20 hr. After 20 hr, luciferase activities were measured with the Tecan Infinite 200 PRO microplate reader (Tecan, Tecan Group Ltd., Switzerland) using the Luciferase Assay system (Promega, USA), according to the manufacturer’s protocols.
 
-## Annexin V/PI double staining apoptosis assay
+### Annexin V/PI double staining apoptosis assay
 
 NCI-N87 cells were seeded in 60 mm dishes at a density of 5×105 cells per dish. When cells reached 80% confluence, the cells were treated with 5, 10, and 20 μM of compound 10 for 16 hr. Cells were washed with PBS and harvested using Trypsin-EDTA and centrifugation at 3200 rpm for 3 min. FITC-Annexin V apoptosis detection kit 1 (BD Pharmingen) was used to evaluate compound-induced apoptosis. Pellets were washed with PBS and incubated with 100 μL of 1×Annexin V binding buffer containing propidium iodide and FITC-Annexin V for 20 min in the dark at room temperature. The samples were diluted by adding 400 μL of 1×Annexin V binding buffer and then analyzed using Fluorescence-Activated Cell Sorting (FACS; BD Biosciences, USA). At least 10,000 cells were measured for each sample.
 
-## Clonogenic assay
+### Clonogenic assay
 
 Cells were seeded at a density of 1000 cells per well in six-well plates and incubated overnight. After the cells were treated with serum-free medium containing compounds at the indicated concentrations for 24 hr, the medium was replaced to growth medium without compounds. The media was changed every 3 days. The plates were incubated for 9 days to allow colony formation. The colonies were washed with PBS, fixed with 100% methanol for 3 min at room temperature, and then stained with crystal violet (0.5% in 100% Methanol) for 10 min. The images were obtained using ChemiDoc (bio-image analyzer, BR179-8280) and the number of colony was counted using the image J program.
 
-## Tumor xenografts
+### Tumor xenografts
 
 NCI-N87 cells (5×106 cells) were implanted into the flank of 5-week-old female athymic nude mice (Envigo, USA) using 100 μL of 1 x PBS. The mice were then assigned randomly to different groups once the average tumor volume reached 90–100 mm3. Subsequently, the drug was administered intravenously to NCI-N87 xenografts, with six repetitions at 3 day intervals. Compound 10 was given at the concentration of 4 mg/kg, prepared in DMAC/Tween80/saline (5:10:85) mixture along with saline. Tumor size changes were monitored for additional days after the last drug injection until the average tumor size of the control group reached 2000–2500 mm3. Mice were sacrificed 25 days after the first drug injection, and tumors were immediately excised from each mouse. The relative tumor sizes were determined by measuring the tumor length (L) and width (W) with calipers and the formula (L × W2) / 2 was used for calculations. Animal handling was conducted in accordance with ethical guidelines approved by the Animal Experiment Ethics Committee of Ewha Womans University, adhering to relevant regulations (IACUC20-008).
 
-## IHC assay for xenograft mouse model
+### IHC assay for xenograft mouse model
 
 Tumors excised from the xenograft mouse model were processed into paraffin-embedded block sections for IHC. The experiments were carried out following standard protocols. The specified HER2 and Ki67 primary antibodies were incubated at 4 °C overnight and then washed 3 times with 1 x PBS. Subsequently, they were exposed to secondary antibodies, developed using a Vectastain ABC kit (Vector Laboratories, USA), and stained with DAB solution (Dako, Carpinteria, USA), all in accordance with the manufacturers’ protocols. The IHC staining was further counterstained with hematoxylin (USA), and was evaluated under light microscopy at ×200 magnification. A semi-quantitative IHC score was adopted for evaluation, where the final scores were calculated by multiplying the intensity and fraction score (percentage of samples counted at each scale), leading to a range from 0 to 300. All imaging and evaluation were conducted using an Axiophot 2 apparatus (Carl Zeiss MicroImaging Inc, Thornwood, NY, USA), at the Drug Development Research Core Center. The details of the applied antibodies and dilution ratios can be found in Table 1.
 
-## In silico qualitative SAR analysis
+### In silico qualitative SAR analysis
 
 For the qualitative SAR analysis Cresset’s Flare v7.1 software was utilized. All the prepared 28 compounds were primarily aligned in FieldTemplater to generate conformations and molecular fields for each compound. Using compound 10 as the reference molecule, qualitative Activity Atlas model was subsequently constructed under the default settings Haider et al., 2022 to visualize the activity cliff summary of electrostatics and hydrophobics in 3D plots.
 
-## Development of trastuzumab resistant NCI-N87
+### Development of trastuzumab resistant NCI-N87
 
 To develop trastuzumab-resistance NCI-N87 cells, NCI-N87 cells were continuously treated with gradually increased amount of trastuzumab. Cells were cultured in medium containing 3–10 μg/ml of trastuzumab until 30th passage.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were performed at least three times and all results were expressed as mean ± standard deviation. Statistics were analyzed via one-way ANOVA or Student’s t-test with Prism 6.0 (GraphPad Software, USA). Differences between two values were considered statistically significant when the p-values (demonstrated as single, double, or triple asterisks) were <0.05, <0.01, and <0.001.

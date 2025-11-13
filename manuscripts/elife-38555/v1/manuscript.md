@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.38555.001 Vertebrate pelvic reduction is a classic example of repeated evolution. Recurrent loss of pelvic appendages in sticklebacks has previously been linked to natural mutations in a pelvic enhancer that maps upstream of Pitx1 . The sequence of this upstream PelA enhancer is not conserved to mammals, so we have surveyed a large region surrounding the mouse Pitx1 gene for other possible hind limb control sequences. Here we identify a new pelvic enhancer, PelB , that maps downstream rather than upstream of Pitx1. PelB drives expression in the posterior portion of the developing hind limb, and deleting the sequence from mice alters the size of several hind limb structures. PelB sequences are broadly conserved from fish to mammals. A wild stickleback population lacking the pelvis has an insertion/deletion mutation that disrupts the structure and function of PelB , suggesting that changes in this ancient enhancer contribute to evolutionary modification of pelvic appendages in nature.
+Vertebrate pelvic reduction is a classic example of repeated evolution. Recurrent loss of pelvic appendages in sticklebacks has previously been linked to natural mutations in a pelvic enhancer that maps upstream of Pitx1. The sequence of this upstream PelA enhancer is not conserved to mammals, so we have surveyed a large region surrounding the mouse Pitx1 gene for other possible hind limb control sequences. Here we identify a new pelvic enhancer, PelB, that maps downstream rather than upstream of Pitx1. PelB drives expression in the posterior portion of the developing hind limb, and deleting the sequence from mice alters the size of several hind limb structures. PelB sequences are broadly conserved from fish to mammals. A wild stickleback population lacking the pelvis has an insertion/deletion mutation that disrupts the structure and function of PelB, suggesting that changes in this ancient enhancer contribute to evolutionary modification of pelvic appendages in nature.
 
 ## Introduction
 
@@ -37,25 +37,37 @@ Although the hind limb-specific expression pattern of Pitx1 is conserved across 
 
 ## Results
 
-## A BAC scan across the Pitx1 locus
+### A BAC scan across the Pitx1 locus
 
 To identify regulatory sequences that drive limb expression in developing mouse embryos, we surveyed an 850 kb region of the Pitx1 locus using overlapping mouse BAC clones that cover the entire Pitx1 coding region as well as flanking regions (Figure 1). Note that the scan includes 607 kb of sequence upstream of the Pitx1 coding region. The known Pel enhancer maps upstream of the stickleback Pitx1 gene (Chan et al., 2010), and although a mammalian Pel ortholog cannot be identified by sequence alignment, it is possible that a functionally conserved Pel enhancer also resides in the same upstream region in mammals. Two large deletions associated with human forelimb abnormalities also map upstream of the Pitx1 gene (Figure 1). Both deletions remove the flanking H2afy gene and bring a far upstream enhancer called hs1473 closer to the human Pitx1 gene (Spielmann et al., 2012). The hs1473 enhancer can drive gene expression in both forelimbs and hind limbs (Pennacchio et al., 2006), and has hence been named the pan-limb enhancer or Pen (Kragesteen et al., 2018). Ectopic expression of Pitx1 in forelimbs likely causes the arm-to-leg-like morphological abnormalities characteristic of human Liebenberg syndrome (Spielmann et al., 2012; Kragesteen et al., 2018). A deletion associated with lowered Pitx1 expression in hind limbs and feathered feet in birds also maps upstream of the H2afy gene (Domyan et al., 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig1-v1.jpg)
 
-**Figure 1.:** Pitx1 locus.(A) Schematic of a genomic region surrounding Pitx1 (red). Note that the transcriptional orientation of the Pitx1 gene is from right to left in this view (arrow). Black bars show BAC locations. Gray bars denote orthologous positions of other known or suspected cis regulatory regions, including: sequences removed by the avian deletion associated with feathered feet in pigeons (Domyan et al., 2016), the PDE element (Sarro et al., 2018), the Pit enhancer (Kragesteen et al., 2018), human deletions associated with Liebenberg syndrome (Spielmann et al., 2012), and the hs1473 limb enhancer (Pennacchio et al., 2006; Spielmann et al., 2012), now also referred to as the pan-limb enhancer, or Pen (Kragesteen et al., 2018). (B-P) Whole-mount lacZ staining of transgenic embryos carrying RP23-55J18 (B-D), RP24-296G14 (E-G), RP24-353M13 (H-J, only left side of embryo showed limb staining), RP23-231P13 (K-M), or RP23-233P6 (N-P), with close ups of the forelimb (‘FL’) and hind limb (‘HL’) below. Dotted lines denote boundaries of limbs.
+**Figure 1.:** (A) Schematic of a genomic region surrounding Pitx1 (red). Note that the transcriptional orientation of the Pitx1 gene is from right to left in this view (arrow). Black bars show BAC locations. Gray bars denote orthologous positions of other known or suspected cis regulatory regions, including: sequences removed by the avian deletion associated with feathered feet in pigeons (Domyan et al., 2016), the PDE element (Sarro et al., 2018), the Pit enhancer (Kragesteen et al., 2018), human deletions associated with Liebenberg syndrome (Spielmann et al., 2012), and the hs1473 limb enhancer (Pennacchio et al., 2006; Spielmann et al., 2012), now also referred to as the pan-limb enhancer, or Pen (Kragesteen et al., 2018). (B-P) Whole-mount lacZ staining of transgenic embryos carrying RP23-55J18 (B-D), RP24-296G14 (E-G), RP24-353M13 (H-J, only left side of embryo showed limb staining), RP23-231P13 (K-M), or RP23-233P6 (N-P), with close ups of the forelimb (‘FL’) and hind limb (‘HL’) below. Dotted lines denote boundaries of limbs.
 
 In our initial screen, two different BAC clones drove lacZ expression in the pituitary gland, a well-known site of endogenous Pitx1 expression (BACs RP24-296G14 and RP24-353M13, see Supplementary file 1A). These two BACs overlap in a 29 kb region, suggesting this shared region may contain a pituitary enhancer. Interestingly, this shared region also contains a sequence called the Pitx1 Distal Enhancer (PDE, Figure 1), a region that shows significant chromatin interactions in limb tissues with the promoter of Pitx1 (Sarro et al., 2018). This region has been knocked out in mice, leading to modest reductions in Pitx1 expression in limbs and mandibles, but no detectable limb or jaw skeletal phenotypes (Sarro et al., 2018). Possible effects on pituitary development and expression were not reported in PDE knockout mice. However, a 2.5 kb subregion of the PDE region can drive consistent expression in the developing pituitary, and this region has now been named the Pit enhancer (Kragesteen et al., 2018).
 
 Three different BAC clones drove lacZ expression in the developing forelimb (Figure 1C,I,O). However, only one of these clones, BAC RP23-55J18, also drove prominent expression in the hind limb. With this clone, lacZ expression was observed at the proximal end of the forelimb autopod (Figure 1C), as well as the posterior side of the hind limb autopod (Figure 1D). Although the expression driven by RP23-55J18 was not specific to the hind limb, it is possible that multiple limb enhancers exist in the Pitx1 region, and that the overall pattern represents the combined activity of separate forelimb and hind limb enhancers.
 
-## Isolation of a Pitx1 pelvic hind limb enhancer
+### Isolation of a Pitx1 pelvic hind limb enhancer
 
 Previous studies suggest that evolutionarily conserved sequences and tissue-specific chromatin marks can often be used to identify tissue-specific enhancers (Fortini and Rubin, 1990; Mortlock et al., 2003; Woolfe et al., 2005; Pennacchio et al., 2006). To further test for possible hind limb enhancer regions within the interval covered by BAC RP23-55J18, we looked for conserved regions that also showed increased chromatin accessibility or H3K27ac marks in hind limb tissues relative to forelimb (Figure 2 and Figure 2—figure supplement 1). We subcloned several of these regions upstream of a lacZ reporter and tested whether these sequences were capable of driving reporter gene activity at consistent locations in transgenic mice.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of genomic region encompassing Pitx1 (black), with flanking genes (gray). Black bars mark the location of the BAC RP23-55J18 and smaller enhancer constructs. Forelimb (FL) and hind limb (HL) DNaseI hypersensitivity tracks from ENCODE are shown (Rosenbloom et al., 2013), along with vertebrate sequence conservation (Blanchette et al., 2004). (B-D) Whole-mount lacZ staining of transgenic embryos carrying PelB enhancer constructs, with close ups of the limbs. Dotted lines denote boundaries of limbs.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) H3K27ac ChIP-seq signal from E11.5 mouse forelimbs (blue) and hind limbs (red); mm9 genome coordinates: chr13:55,809,000–56,275,000. (B) H3K27ac ChIP-seq signal from stage 7 Anolis carolinensis forelimbs (blue) and hind limbs (red); AnoCar2 genome coordinates: ChrUn_GL343223:324,575–981,559. H3K27ac data are from genome-wide analysis in Infante et al. (2015), and black bars are added to show the locations of PelB sequences (this study) and the previously described PDE region (Sarro et al., 2018). Note that in the PelB region, but not the PDE region, hind limb-enriched H3K27ac signals are conserved between mice and lizards.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** VISTA conservation plot (Frazer et al., 2004) of PelB enhancer sequence in vertebrates. Black bars show the relative positions of the PelB enhancer constructs that were tested in mice. Alignments were made with Shuffle-LAGAN relative to the mouse sequence. Note that PelB sequences are largely intact in two different mammalian lineages that show morphological hind limb reduction (manatees and dolphins). The PelBcon1 region is poorly conserved in several snake genome assemblies, except for pythons and boas. Pythons and boas are related snake species that retain small external pelvic appendages (Cohn and Tickle, 1999).
+
 A 9466 bp region downstream of Pitx1, and located within a large intron of the Pcbd2 gene, contains multiple conserved sequences with increased DNaseI accessibility during hind limb development (Figure 2A). Chromosome conformation capture experiments (Andrey et al., 2017) show that this region directly interacts with the Pitx1 promoter in hind limbs but not forelimbs of developing mouse embryos, consistent with the region serving as a possible Pitx1 enhancer (Supplementary file 1B). The same region is enriched for H3K27ac signal in developing hind limbs versus forelimbs of both mouse and lizard embryos (Infante et al., 2015), suggesting the region may contain evolutionarily conserved hind limb enhancer activity (Figure 2—figure supplement 1). A lacZ expression construct containing this region drove strong and reproducible lacZ expression in the hind limbs but not forelimbs of transient transgenic E12.5 embryos (Figure 2B). Strongest expression was observed in the posterior half of the developing autopod, with weaker expression also seen at the proximal junction of hind limb and body wall. We designated the full 9466 bp fragment pelvic limb enhancer B (PelB). A 2173 bp subregion (PelBcon1), containing a hind limb-enriched open chromatin domain and sequence conservation through amphibia, exhibited the same proximal expression as the full-length fragment (Figure 2C). A separate, non-overlapping 3280 bp subregion (PelBcon2), with a strong hind limb-enriched DNase peak and sequence conservation through teleosts, exhibited the same autopod pattern as the full-length fragment (Figure 2D).
 
-## Deletion of PelB enhancer in mouse
+### Deletion of PelB enhancer in mouse
 
 To test whether PelB is required for normal hind limb development, we used CRISPR/Cas9 targeting to delete a 9425 bp region from the endogenous mouse locus, encompassing virtually the entire PelB region tested in the lacZ assay (see Materials and methods). The deletion allele was transmitted through the germline, and subsequent crosses showed that PelB heterozygotes and homozygotes were born in expected Mendelian ratios, and showed normal viability and fertility. Quantitative RT-PCR experiments of developing wild type and PelB homozygous mutant embryos showed that loss of the PelB enhancer reduced Pitx1 levels to approximately 85% of control levels in E12.5 hind limbs (p<0.05, Supplementary file 1C). In contrast, no significant change was seen in Pcbd2 expression (Supplementary file 1C). These results suggest that PelB acts as an enhancer of the Pitx1 gene during normal development, but that additional control regions also must contribute to overall levels of Pitx1 hind limb expression.
 
@@ -63,7 +75,7 @@ To identify possible effects of PelB enhancer loss on hind limb development, we 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig3-v1.jpg)
 
-**Figure 3.:** PelB deletion mice have smaller hind feet.Bones with significant length changes between control (Pitx1+/+) and enhancer knockout (Pitx1) mice are highlighted (Blue = measured, Yellow = PelB-/PelB-p < 0.01, Red = p < 0.0001). Numbers indicate percent change in mean length. (Pitx1+/+ n=21, Pitx1 n = 20).PelB-/PelB-
+**Figure 3.:** Bones with significant length changes between control (Pitx1+/+) and enhancer knockout (Pitx1PelB-/PelB-) mice are highlighted (Blue = measured, Yellow = p < 0.01, Red = p < 0.0001). Numbers indicate percent change in mean length. (Pitx1+/+ n=21, Pitx1PelB-/PelB- n = 20).
 
 To test whether PelB deletion has additional phenotypic effects in a sensitized background with lower levels of Pitx1, we crossed Pitx1PelB-/PelB- animals to mice heterozygous for a functional knockout mutation that disrupts the protein-coding region of the Pitx1 gene (Pitx1null/+) (Szeto et al., 1999). Pitx1null/null mice show severe hind limb deformities, facial abnormalities, and neonatal lethality (Lanctôt et al., 1999; Szeto et al., 1999). By contrast, heterozygous Pitx1null/+ mice are reported to be phenotypically normal, with a small percentage exhibiting a club foot phenotype (Alvarado et al., 2011). We compared Pitx1null/PelB- mice to Pitx1null/+ to determine if loss of the PelB sequence alters hind limb development.
 
@@ -71,13 +83,33 @@ All heterozygous carriers of the Pitx1 null mutation were smaller than non-carri
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig4-v1.jpg)
 
-**Figure 4.:** PelB enhancer and one functional copy of Pitx1.(A,D,G,J) Gene diagrams showing the status of the PelB enhancer and Pitx1 coding region produced by crossing PelB knockout and Pitx1 null mutant lines. (B,E,H,K) Mouse knee joint, with patellae indicated with a black arrow. Scale bars = 1 mm. (C,F,I,L) Outlines of bones, with patellae highlighted in red.
+**Figure 4.:** (A,D,G,J) Gene diagrams showing the status of the PelB enhancer and Pitx1 coding region produced by crossing PelB knockout and Pitx1 null mutant lines. (B,E,H,K) Mouse knee joint, with patellae indicated with a black arrow. Scale bars = 1 mm. (C,F,I,L) Outlines of bones, with patellae highlighted in red.
 
-## PelB enhancer activity is conserved from mouse to fish
+### PelB enhancer activity is conserved from mouse to fish
 
 Because of the high sequence conservation of PelB across vertebrates, we tested whether the orthologous sequence from teleosts can also function as an enhancer in developing pelvic appendages. Stickleback PelB shows 51% identity to mouse PelB over a core 530 bp region. We cloned the PelB sequence from a marine stickleback population (Salmon River PelB; SALR-PelB) upstream of a GFP reporter, and injected the reporter construct into fertilized eggs of pelvic-complete sticklebacks. Transient transgenic larvae are readily identifiable by GFP expression driven by the reporter vector itself in the lens of the eye (Nagayoshi et al., 2008). The SALR-PelB constructs drove consistent GFP expression in the developing pelvic spines and girdle (Figure 5B). Interestingly, very strong GFP was also observed in the developing jaw region, another site of normal Pitx1 expression (Shapiro et al., 2004). We note that the 530 bp region contains many predicted transcription factor binding sites, including a putative Pitx1 binding domain (Figure 5—figure supplement 1–3), which may contribute to the tissue-specific pattern.
 
-## PelB enhancer is disrupted in a pelvic-reduced stickleback population
+![Figure 5.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of enhancer constructs tested in stickleback fish. Each enhancer was cloned as a 2x concatemer upstream of an hsp70 promoter and eGFP. The marine sequence is from the Salmon River (SALR) population, and the lake sequence is from Paxton benthic (PAXB). (B-C) GFP fluorescence in live sticklebacks. GFP expression in the lens of the eye (e) is driven by the hsp70 promoter itself, allowing easy identification of transgenic fish. (B) The marine PelB enhancer drives expression in the jaw (j) and pelvis (p). (C) The lake PelB enhancer drives similar expression in the jaw (j), but significantly less expression in the pelvis (p), as well as a novel expression in the fin rays (f). (D-E) Quantified fluorescence in GFP-positive fish that show pelvic expression, normalized to intensity in the lens of the eye to control for copy number and integration site. SALR n = 24, PAXB n = 18. Scale bars = 1 mm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Sequence alignment of PelB in different stickleback populations. Matches to consensus are in grey and mismatches are highlighted (A = red, T = green, G = yellow, C = blue, gaps = black dash). Pelvic-complete populations are listed in alphabetical order above the space and divider line, and pelvic-reduced populations are listed in alphabetical order below the space and divider line. Populations with more than one allele sequenced are numbered. Putative Pitx1 binding site is labeled in purple below the consensus sequence. Alignment generated in Geneious10 (Kearse et al., 2012).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Sequence alignment of PelB in different stickleback populations. Matches to consensus are in grey and mismatches are highlighted (A = red, T = green, G = yellow, C = blue, gaps = black dash). Pelvic-complete populations are listed in alphabetical order above the space and divider line, and pelvic-reduced populations are listed in alphabetical order below the space and divider line. Populations with more than one allele sequenced are numbered. Putative Pitx1 binding site is labeled in purple below the consensus sequence. Alignment generated in Geneious10 (Kearse et al., 2012).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Sequence alignment of PelB in different stickleback populations. Matches to consensus are in grey and mismatches are highlighted (A = red, T = green, G = yellow, C = blue, gaps = black dash). Pelvic-complete populations are listed in alphabetical order above the space and divider line, and pelvic-reduced populations are listed in alphabetical order below the space and divider line. Populations with more than one allele sequenced are numbered. Putative Pitx1 binding site is labeled in purple below the consensus sequence. Alignment generated in Geneious10 (Kearse et al., 2012).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/38555/elife-38555-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Quantified fluorescence in GFP-positive fish that show pelvic expression. (A) GFP intensity of the lens of the eye. This is a constitutive pattern driven by the hsp70 promoter, which allows easy identification of transgenic animals. (B) Standard length of measured fish, in mm. (C, E) GFP intensity. (D, F) GFP intensity normalized to eye intensity to control for copy number and integration site. SALR n = 24, PAXB n = 18.
+
+### PelB enhancer is disrupted in a pelvic-reduced stickleback population
 
 To determine whether PelB sequences are modified in wild populations with evolutionary changes in pelvic hind fin development, we sequenced PelB from multiple freshwater stickleback populations that show loss or reduction of pelvic structures. We observed multiple sequence variants and small indels in the region, most of which did not correlate with pelvic status (Figure 5—figure supplement 1–3). However, one stickleback population with extreme pelvic reduction (Paxton Lake benthic, PAXB) showed a large compound indel in the PelB region (Figure 5, Figure 5—figure supplement 1–3 for full sequence). The PAXB population is interesting, as it exhibits one of the most extreme examples of pelvic loss, with most PAXB fish showing no pelvic bones at all (McPhail, 1992), and also has a known deletion in the previously identified Pel region located upstream of Pitx1 (Chan et al., 2010), which we now refer to as PelA. PAXB fish have a deletion of 125 bp and an insertion of 341 bp in the PelB sequence. The inserted sequence is nearly identical to a region located approximately 3 kb upstream of the PelB region, suggesting the allele arose by concurrent duplication and local insertion of DNA.
 
@@ -109,46 +141,231 @@ Many other vertebrates show interesting skeletal changes in hind limbs, forelimb
 
 ## Materials and methods
 
-## Comparative sequence analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Pitx1</td>
+      <td>NA</td>
+      <td>RefSeq: NM_011097.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Pcdb2</td>
+      <td>NA</td>
+      <td>RefSeq: NM_028281.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Gasterosteus aculeatus)</td>
+      <td>Pitx1</td>
+      <td>NA</td>
+      <td>NCBI GU130437.1, GU130434.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. aculeatus)</td>
+      <td>Salmon River marine population</td>
+      <td>DOI: 10.1126/ science.1182213</td>
+      <td>SALR, GU130434.1</td>
+      <td>Migratory marine fish with complete pelvis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. aculeatus)</td>
+      <td>Paxton Lake benthic freshwater population</td>
+      <td>DOI: 10.1126/ science.1182213</td>
+      <td>PAXB, GU130437.1</td>
+      <td>Lake-resident fish with no pelvis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. aculeatus)</td>
+      <td>Matadero Creek freshwater population</td>
+      <td>DOI: 10.1126/ science.1182213</td>
+      <td>MATA</td>
+      <td>Stream-resident fish with complete pelvis</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pitx1 coding region mutation</td>
+      <td>DOI: 10.1101/ gad.13.4.484.</td>
+      <td>Pitx1null</td>
+      <td>Knock out generated in M. Rosenfeld lab; transferred to C. Gurnett, then D. Menke, Kingsley lab.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pitx1 PelB deletion mutation</td>
+      <td>this paper</td>
+      <td>Pitx1PelB-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>RP23-55J18 BAC clone</td>
+      <td>bacpacresources.org/ femmouse23.htm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>RP24-296J14 BAC clone</td>
+      <td>bacpacresources.org/ mmouse24.htm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>RP24-353M13 BAC clone</td>
+      <td>bacpacresources.org/ mmouse24.htm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>RP23-231P13 BAC clone</td>
+      <td>bacpacresources.org/ femmouse23.htm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>RP23-233P6 BAC clone</td>
+      <td>bacpacresources.org/ femmouse23.htm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>PelB-lacZ</td>
+      <td>this paper</td>
+      <td>pTCPcbd2-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>PelBcon1-lacZ</td>
+      <td>this paper</td>
+      <td>pTCPcbd2-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>PelBcon2-lacZ</td>
+      <td>this paper</td>
+      <td>pTCPcbd2-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (G. aculeatus)</td>
+      <td>SALR-PelB-GFP</td>
+      <td>this paper</td>
+      <td>SALR-PelB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (G. aculeatus)</td>
+      <td>PAXB-PelB-GFP</td>
+      <td>this paper</td>
+      <td>PAXB-PelB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>basal promoter lacZ vector</td>
+      <td>DOI: 10.1073/ pnas.97.4.1612</td>
+      <td>hspLacZ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>basal promoter GFP vector</td>
+      <td>DOI: 10.1186/ gb-2007–8 s1-s7</td>
+      <td>pT2HE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus)</td>
+      <td>ENCODE DNaseI hypersensitivity peaks in developing forelimbs and hind limbs</td>
+      <td>DOI: 10.1093/ nar/gks1172</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus)</td>
+      <td>Pitx1 promoter-interacting regions with histone marks of enhancers</td>
+      <td>DOI: 10.1101/ gr.213066.116</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus)</td>
+      <td>H3K27ac peaks in developing forelimbs and hind limbs</td>
+      <td>DOI: 10.1016/ j.devcel.2015.09.003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Anolis carolinensis)</td>
+      <td>H3K27ac peaks in developing forelimbs and hind limbs</td>
+      <td>DOI: 10.1016/ j.devcel.2015.09.003</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Comparative sequence analysis
 
 Sequences from Mus musculus, Homo sapiens, Bos taurus, Tursiops truncatus, Loxodonta africana, Trichechus manatus, Anolis carolinensis, Python bivittatus, Boa constrictor, Pantherophis guttatus, Thamnophis sirtalis, Ophiophagus hannah, Vipera berus, Protobothrops mucrosquamatus, Xenopus laevis, Lepisosteus oculatus, and Gasterosteus aculeatus (Salmon River, clone BAC CHORI213-118G22, GU130434.1; Paxton Lake benthic, clone BAC CHORI215-196J14, GU130437.1) were obtained from NCBI or Assemblathon2 (Boa constrictor, Bradnam et al., 2013), aligned with Shuffle-LAGAN and analyzed with VISTA (Brudno et al., 2003; Frazer et al., 2004).
 
-## BAC scan and mouse transgenic reporter assays
+### BAC scan and mouse transgenic reporter assays
 
 Each BAC clone was co-injected with a minimal promoter-lacZ reporter construct to generate transient transgenic embryos as described (DiLeone et al., 2000). Potential enhancer regions were amplified using primers (Supplementary file 1G) containing NotI restriction sites and cloned into the NotI site of p5-Not-Hsp68LacZ (DiLeone et al., 1998). The resulting expression constructs contain the following mouse genomic regions: PelB (pTCPcbd2-1), mm9 chr13: 55,850,296–55,859,761; PelBcon1 (pTCPcbd2-4), mm9 chr13: 55,850,593–55,852,765; and PelBcon2 (pTCPcbd2-2), mm9 chr13: 55,854,269–55,857,548. Prior to microinjection, plasmid DNAs were purified as described (DiLeone et al., 2000). Pronuclear injection into FVB embryos was performed by Taconic Biosciences and Cyagen Biosciences. Microinjected embryos were collected at E12.5 and stained with X-gal as described (DiLeone et al., 1998).
 
-## Generation of PelB enhancer-knockout mice
+### Generation of PelB enhancer-knockout mice
 
 For CRISPR-Cas9 targeting of the PelB locus, potential guide RNAs were screened in cell culture lines for efficacy. Pronuclear injection of the top 4 gRNAs (Supplementary file 1G) into C57BL/6J embryos was performed to generate transient transgenic F0 mice (HHMI Janelia Farms). Eighteen independent tail positive founder mice were bred to produce stable lines. A line containing a clean deletion with breakpoints closely matching the boundaries of the PelB enhancer construct was saved for further analysis. The deleted region in this line corresponds to mm9 chr13:55,850,296–55,859,733. For comparison, the region cloned for the full-length PelB enhancer construct corresponds to mm9 chr13: 55,850,296–55,859,761.
 
-## qRT-PCR
+### qRT-PCR
 
 Left hind limbs were collected from E12.5 embryos and stored in RNAlater (Thermo Fisher Scientific). RNA was prepared using the RNeasy Mini kit (Qiagen) with the on-column DNaseI digestion step. 400 ng of RNA was treated with an additional DNaseI digestion step (Invitrogen) before cDNA was prepared using SuperScript III First Strand synthesis kit (Invitrogen). qRT-PCR was performed using a 1:20 dilution of each cDNA with primers described in Supplementary file 1G and 2X Brilliant II SYBR QPCR Low ROX Master Mix (Agilent) on a QuantStudio five system (ThermoFisher) using the Standard Curve with Melt 2-step program. All reactions were done in triplicate within an experimental run, and the average of the three values was used for further analysis. Levels of gene expression were determined using standard curves for each primer set, constructed using known amounts of unrelated E12.5 limb cDNA as templates. All mutant and wild type samples were assayed together, and standard curves were performed in each assay to control for plate-to-plate variation. The relative levels of Pitx1 and Pcbd2 gene expression in a sample were normalized to the corresponding level of expression of the reference gene, Pgk1, in the same sample.
 
-## Mouse skeletal preparations
+### Mouse skeletal preparations
 
 Male mice were collected at approximately P28. Mice were weighed, skinned, eviscerated, placed in PBS, and then fixed in 95% ethanol for at least 48 hr, with the solution replaced daily. Skeletons were incubated in 760 mL 95% ethanol + 200 mL glacial acetic acid + 50 mL alcian blue solution (2% alcian blue in 70% ethanol). After 6 days of staining, skeletons were rinsed in 95% ethanol for 48 hr, with the solution replaced daily. Skeletons were then placed in 0.8% KOH for 4 days, followed by 1% KOH + 0.00015% alizarin red for 48 hr. Skeletons were then placed in 50% glycerol overnight, followed by 100% glycerol overnight. Skeletons were then transferred to 100% glycerol +thymol crystals for storage. All incubations were done on an orbital shaker for even staining.
 
-## Mouse morphological measurements
+### Mouse morphological measurements
 
 Mouse skeletal preparations were disarticulated under a dissecting microscope to remove the right jaw, forelimb, pelvis, and hind limb (n = 21 Pitx1+/+mice, n = 20 Pitx1PelB-/PelB- mice; n = 20 Pitx1+/+ mice, n = 25 Pitx1+/PelB- mice, n = 22 Pitx1null/+ mice, n = 22 Pitx1null/PelB- mice). Bones were flattened using a coverslip, photographed, and measured in FIJI (Schindelin et al., 2012). As all bone length traits are correlated with mouse size, residuals from a linear regression on humerus length were used for all traits. Residuals were compared using a two-sided T-test. For patella presence vs absence, a Fisher’s Exact test was used. Mice exhibiting polydactyly were excluded from comparison, and blinding was not part of the study design.
 
-## Stickleback crosses and husbandry
+### Stickleback crosses and husbandry
 
 Lab-reared fish were raised in 30-gallon tanks under common conditions (2.8 g/L Instant Ocean salt) and fed live brine shrimp as larvae, then frozen daphnia, bloodworms, and mysis shrimp as juveniles and adults. Pelvic development is visible starting when the fish are 7.5 mm standard length, and is considered to be complete by the time the fish reach 16.5 mm (Bell and Harris, 1985).
 
-## Stickleback PelB enhancer
+### Stickleback PelB enhancer
 
 The stickleback pelvic enhancer region was amplified from BAC DNA from either marine fish from Salmon River (clone CHORI213-118G22, NCBI Genbank accession GU130434.1) or Paxton Lake benthic (clone CHORI215-196J14, GU130437.1) using primers with NheI and AvrII recognition sites (Supplementary file 1G). To make directional concatemers, PCR fragments were digested with NheI and AvrII, ligated together, and blunted with Klenow. 2x concatemers were gel extracted and cloned in to the EcoRV site of the pT2HE GFP reporter vector (modified from Kawakami, 2007) to generate either SALR-PelB or PAXB-PelB.
 
-## Transgenic stickleback assays
+### Transgenic stickleback assays
 
 Transgenic sticklebacks were generated by microinjection of freshly fertilized eggs as previously described (Chan et al., 2010). Plasmids were co-injected with Tol2 transposase mRNA as described (Hosemann et al., 2004). Mature Tol2 mRNA was synthesized by in vitro transcription using the mMessage mMachine SP6 kit (Life Technologies). All enhancer assays were performed on pelvic-complete stickleback from Matadero Creek, California, USA (MATA). All larvae were raised under standard aquarium conditions to Swarup St 29/30 (Swarup, 1958), when pelvic bud development is initiated, for phenotyping. Larvae were anesthetized in 0.0003% w/v tricaine (Ethyl 3-aminobenzoate methanesulfonate, Sigma). Microscopic observation for GFP expression was conducted with a MZFLIII fluorescent microscope (Leica Microsystems, Bannockburn, IL) using GFP2 filters and a ProgResCF camera (Jenoptik AG, Jena, Germany) to distinguish GFP expression from autofluorescence in pigmented fish.
 
-## GFP quantification
+### GFP quantification
 
 GFP intensity in 24 and 18 independent transgenic larvae carrying Salmon River or Paxton Benthic transgenes respectively was quantified in FIJI (Schindelin et al., 2012). In the green channel, a circle was drawn in the lens of the eye, and the mean intensity was measured. The same circle was placed over the pelvis to calculate mean intensity, and then placed on an adjacent non-GFP region to calculate background fluorescence; the background value was subtracted from the raw pelvic value to generate a pelvic GFP score. Jaw intensity was calculated by measuring mean intensity of a line drawn through the jaw, and an adjacent non-GFP region was measured with the same line for background fluorescence; the background value was subtracted from the raw jaw value to give jaw GFP score. Pelvic and jaw scores were normalized to eye intensity to control for construct integration location and copy number and compared with a Mann-Whitney U Test (Figure 5—figure supplement 4).
 
-## Primers
+### Primers
 
 All primers used in construct design, genotyping, sequencing, and qRT-PCR are listed in Supplementary file 1G.

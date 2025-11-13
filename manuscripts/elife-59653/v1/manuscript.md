@@ -44,7 +44,7 @@
 
 ## Abstract
 
-Submucosal glands (SMGs) are a prominent structure that lines human cartilaginous airways. Although it has been assumed that SMGs contribute to respiratory defense, that hypothesis has gone without a direct test. Therefore, we studied pigs, which have lungs like humans, and disrupted the gene for ectodysplasin ( EDA-KO ), which initiates SMG development. EDA-KO pigs lacked SMGs throughout the airways. Their airway surface liquid had a reduced ability to kill bacteria, consistent with SMG production of antimicrobials. In wild-type pigs, SMGs secrete mucus that emerges onto the airway surface as strands. Lack of SMGs and mucus strands disrupted mucociliary transport in EDA-KO pigs. Consequently, EDA-KO pigs failed to eradicate a bacterial challenge in lung regions normally populated by SMGs. These in vivo and ex vivo results indicate that SMGs are required for normal antimicrobial activity and mucociliary transport, two key host defenses that protect the lung.
+Submucosal glands (SMGs) are a prominent structure that lines human cartilaginous airways. Although it has been assumed that SMGs contribute to respiratory defense, that hypothesis has gone without a direct test. Therefore, we studied pigs, which have lungs like humans, and disrupted the gene for ectodysplasin (EDA-KO), which initiates SMG development. EDA-KO pigs lacked SMGs throughout the airways. Their airway surface liquid had a reduced ability to kill bacteria, consistent with SMG production of antimicrobials. In wild-type pigs, SMGs secrete mucus that emerges onto the airway surface as strands. Lack of SMGs and mucus strands disrupted mucociliary transport in EDA-KO pigs. Consequently, EDA-KO pigs failed to eradicate a bacterial challenge in lung regions normally populated by SMGs. These in vivo and ex vivo results indicate that SMGs are required for normal antimicrobial activity and mucociliary transport, two key host defenses that protect the lung.
 
 ## Introduction
 
@@ -64,13 +64,21 @@ We hypothesized that disrupting the EDA gene in pigs would eliminate SMGs and th
 
 ## Results
 
-## Gene editing generated EDA-KO pigs
+### Gene editing generated EDA-KO pigs
 
 EDA encodes a membrane protein that when cleaved releases a secreted protein fragment containing a collagen motif and a TNF-like ligand (Rawlins and Hogan, 2005; Schneider et al., 2001; Sadier et al., 2014; Figure 1A and B). Trimerization of the collagen domain is a prerequisite for trimerization of the C-terminal TNF motif that then binds to the receptor EDAR inducing signaling through EDARADD, which is required for proper gland development (Schneider et al., 2001; Swee et al., 2009). Mutations in the collagen domain prevent trimerization and subsequent binding of the TNF domain to the EDAR (Pääkkönen et al., 2001; Schneider et al., 2001).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig1-v1.jpg)
+
+**Figure 1.:** (A) Diagram of interaction of EDA, EDAR, and EDARADD at the epithelial placode. (B) Schematic of EDA protein domains, including the transmembrane domain (TM), furin cleavage site, collagen domain, and TNF domain. Exon 4 of the EDA gene encodes the collagen domain. Relative positions of guide RNAs are shown. (C) PCR fragments from six edited pigs from one litter. Lane two shows position of predicted wild-type product. Pigs 1–5 were male; pig six was female.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Top shows wild-type DNA sequence with predicted amino acid sequence directly above. The glycines in the GXY motif are in red. Below that are DNA sequences of the pigs shown in Figure 1C. Deletions are shown as dashes. Pigs 1–5 were male, and pig 6 was female. Pigs 4 and 6 had two alleles.
+
 To generate pigs lacking SMG, we targeted exon 4 of the EDA gene; exon 4 encodes the collagen domain (Figure 1B). We used CRISPR/Cas9 gene editing, injecting the guide RNAs and Cas9 mRNA into porcine zygotes (Yuan et al., 2017; Chen et al., 2018; Redel et al., 2019). Blastocysts were then implanted into surrogate sows. We generated four litters, and in all the piglets, we found indels in exon 4 that predicted a loss of function. Figure 1C shows an example of PCR fragments from six piglets in one litter suggesting large sequence deletions in most piglets. We sequenced DNA from all animals, which revealed insertions, deletions, and in some cases, nonsense mutations that either disrupted the collagen domain or truncated the protein (Figure 1—figure supplement 1). For simplicity, we refer to all these pigs as EDA-KO.
 
-## The appearance of EDA-KO piglets differed from that of wild-type piglets
+### The appearance of EDA-KO piglets differed from that of wild-type piglets
 
 The numbers of male and female piglets were approximately equal. EDA-KO pigs had birth weights (1.48 ± 0.48 kg, mean ± SD, n = 20) similar to those of wild-type controls (1.54 ± 0.31 kg, n = 18) (p=0.94). Of note, the EDA gene is located on the X chromosome. However, on initial exam, we could discern no sex differences in EDA-KO piglets. The only observed difference in behavior of EDA-KO piglets was sneezing; sneezing began within hours of birth and persisted.
 
@@ -78,33 +86,41 @@ The EDA-KO piglets all appeared healthy. However, there were obvious physical di
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig2-v1.jpg)
 
-**Figure 2.:** EDA-KO piglets had an appearance consistent with hypohidrotic ectodermal dysplasia.(A) Physical appearance of wild-type (WT) and EDA-KO piglets. (B) Image of skin on the back of an EDA-KO pig showing alternating bands of hair and bare skin (dotted lines). (C) Image of skin from the top of head of EDA-KO showing bald spot. (D) Eyelids in EDA-KO pig lacked hair, although eyelashes were intact. Eyelids of a wild-type pig are shown for comparison.
+**Figure 2.:** (A) Physical appearance of wild-type (WT) and EDA-KO piglets. (B) Image of skin on the back of an EDA-KO pig showing alternating bands of hair and bare skin (dotted lines). (C) Image of skin from the top of head of EDA-KO showing bald spot. (D) Eyelids in EDA-KO pig lacked hair, although eyelashes were intact. Eyelids of a wild-type pig are shown for comparison.
 
 To minimize potential consequences of secondary inflammation and/or infection that might occur as EDA-KO piglets age, we studied piglets within 2–8 days of birth.
 
-## EDA-KO piglets lacked airway SMGs
+### EDA-KO piglets lacked airway SMGs
 
 We detected and quantified SMGs histologically. The conducting airways of wild-type pigs had SMGs (Figure 3A and B). As is observed in humans (Widdicombe and Wine, 2015; Choi et al., 2000; Whimster, 1986; Meyerholz et al., 2018a), the numbers of SMGs decreased from proximal trachea to bronchi and bronchioles. In contrast, airways of EDA-KO piglets lacked SMGs. Consistent with loss of airway SMGs, EDA-KO pigs lacked glands in other tissues (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig3-v1.jpg)
+
+**Figure 3.:** (A) Sections of wild-type and EDA-KO conducting airways, HE (top) and dPAS (middle and bottom) stains. Arrows point to SMGs. Scale bar = 125 mm (top and bottom panels) and 625 mm (middle panels). (B) Data are percentage of airway circumference containing SMG in indicated parts of the airway. Each data point is from a different pig. Trachea: n = 6 wild-type and 5 EDA-KO, *p=0.004. Secondary bronchi: n = 3 wild-type and 5 EDA-KO, p=0.018. Segmental bronchi: n = 3 wild-type and 5 EDA-KO, p=0.018. Bronchioles: n = 6 wild-type and 5 EDA-KO, p=1.00. Statistical analysis was by Mann-Whitney test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Wild-type nasal mucosa had glands (arrows); these were absent in EDA-KO pigs. (B) Wild-type nasal planum had eccrine glands (arrows);these were absent in EDA-KO pigs. (C) EDA-KO pigs had sections of haired skin that had hair follicles (left, arrows); hairless regions of skin lacked hair follicles. HE stains. Scale bar = 60 µm (A), 150 µm (B), and 80 µm (C).
 
 Mucins MUC5AC and MUC5B are expressed in airway surface epithelia of humans and pigs (Fahy and Dickey, 2010; Ostedgaard et al., 2017; Ermund et al., 2017; Okuda et al., 2019). Immunostaining revealed no difference in the localization of MUC5AC or MUC5B in surface epithelia of EDA-KO and wild-type airways (Figure 4A). The ciliated marker β-tubulin IV also showed similar immunostaining patterns in EDA-KO and wild-type piglets (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig4-v1.jpg)
 
-**Figure 4.:** EDA-KO piglets.Images are confocal immunofluorescence of wild-type and EDA-KO trachea. In all panels, actin is labeled with phalloidin in grey and nuclei are labeled with DAPI in blue. Scale bar = 20 µm. (A) Images show goblet cells expressing MUC5AC (green) and MUC5B (red). A portion of a SMG is indicated; SMGs were detected in wild-type only. (B) Images indicate ciliated cells (β-tubulin IV, green) and MUC5B (red).
+**Figure 4.:** Images are confocal immunofluorescence of wild-type and EDA-KO trachea. In all panels, actin is labeled with phalloidin in grey and nuclei are labeled with DAPI in blue. Scale bar = 20 µm. (A) Images show goblet cells expressing MUC5AC (green) and MUC5B (red). A portion of a SMG is indicated; SMGs were detected in wild-type only. (B) Images indicate ciliated cells (β-tubulin IV, green) and MUC5B (red).
 
 Lack of SMGs throughout the lung’s entire conducting airways is consistent with disruption of the EDA gene, which directs initiation of gland duct formation. These results indicated that EDA-KO piglets can serve as a model for in vivo testing of the hypothesis that lack of SMGs impairs respiratory host defenses.
 
-## The ASL of EDA-KO piglets had a reduced capacity to kill S. aureus
+### The ASL of EDA-KO piglets had a reduced capacity to kill S. aureus
 
 It is well known that SMG cells produce a variety of antimicrobials, including lysozyme and lactoferrin (Basbaum et al., 1990; Joo et al., 2015; Dajani et al., 2005; Fischer et al., 2009; Widdicombe et al., 2012). Thus, we expected that loss of SMGs in EDA-KO piglets would decrease bacterial killing by ASL. To specifically test bacterial killing activity in ASL, we used an assay that we had previously developed (Pezzulo et al., 2012; Shah et al., 2016). We labeled Staphylococcus aureus with biotin and linked them to streptavidin-coated gold grids (Figure 5A). We introduced a small tracheal window in the newborn pigs and briefly (1 min) placed the bacteria-coated grid on the trachea surface. We then assessed ASL bactericidal activity using a Live/Dead assay to quantify the % of dead bacteria. This assay measures antibacterial activity in vivo and has the advantages that it is not affected by MCT, phagocytes, variable bacteria delivery or recovery, or bacterial multiplication (Pezzulo et al., 2012).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig5-v1.jpg)
 
-**Figure 5.:** EDA-KO pigs has impaired killing of S.aureus in vivo.(A) Schematic showing S. aureus attached to gold grids by biotin-streptavidin linkages. The grids were placed on ASL of trachea for 1 min in vivo. Then the bacteria were counted and the percentage that were dead was determined. (B) Example of live (green)/dead (red) staining of bacteria after the grid was removed from the airway. (C) Percentage of dead bacteria. *p<0.0012 by Mann-Whitney test.
+**Figure 5.:** (A) Schematic showing S. aureus attached to gold grids by biotin-streptavidin linkages. The grids were placed on ASL of trachea for 1 min in vivo. Then the bacteria were counted and the percentage that were dead was determined. (B) Example of live (green)/dead (red) staining of bacteria after the grid was removed from the airway. (C) Percentage of dead bacteria. *p<0.0012 by Mann-Whitney test.
 
 By 1 min, ASL in wild-type piglets killed approximately half of the bacteria (Figure 5B and C). These data are similar to bacterial killing in previous studies of wild-type pigs (Pezzulo et al., 2012; Shah et al., 2016). In contrast, ASL in EDA-KO piglets killed less than one-quarter of the bacteria. These results indicate that loss of SMGs impairs antimicrobial activity on the proximal airway surface. These data are consistent with earlier findings that SMGs produce abundant antimicrobials (Basbaum et al., 1990; Joo et al., 2015; Dajani et al., 2005; Fischer et al., 2009).
 
-## EDA-KO piglets lacked mucus strands and had decreased MCT ex vivo
+### EDA-KO piglets lacked mucus strands and had decreased MCT ex vivo
 
 Acinar cells in SMGs of pigs and humans produce MUC5B, a secreted gel-forming mucin that is the major structural protein of SMG mucus (Ostedgaard et al., 2017; Ermund et al., 2017; Wu et al., 2007; Thornton et al., 2018). In pigs and humans, mucus emerges from SMG ducts onto the airway surface in the form of strands (Hoegger et al., 2014; Ermund et al., 2018; Ostedgaard et al., 2017; Ermund et al., 2017; Fischer et al., 2019; Tipirneni et al., 2018; Trillo-Muyo et al., 2018; Xie et al., 2020). Mucus strands sweep across the airway surface propelled by cilia and bind particulate material and bacteria. Thus, they remove potentially injurious material from the lungs. Although airway surface epithelia of EDA-KO pigs expressed mucins, the absence of SMGs suggested that EDA-KO pigs would lack mucus strands.
 
@@ -114,11 +130,25 @@ To test this prediction, we removed trachea from newborn pigs, submerged the tra
 
 **Figure 6.:** (A) Data are confocal images of tracheal surface of wild-type and EDA-KO pigs. Mucus was labeled with fluorescent nanospheres (red). Left and middle panel show movement of mucus strand with time. Strands were not observed in EDA-KO airway in right panel. The white spots in the middle of the field are reflected light. (B) Number of mucus strands crossing the microscopy field in 15 min. N = 8 wild-type and 5 EDA-KO pigs. *p=0.0016. (C) Ciliary beat frequency on trachea under methacholine stimulation. N = 8 wild-type and 5 EDA-KO pigs. p=0.4351. (D) Metallic spheres were dropped onto the airway surface and movement was tracked with time. Mucus was labeled with fluorescent nanospheres (red). Images from wild-type airway show a mucus strand attached to a sphere and pulling it across the field. Images from EDA-KO airway show mucus attached to sphere that was rolling in place. (E) Fraction of metallic spheres that moved at least 1 mm during a 15-min observation period. N = 7 wild-type and 4 EDA-KO pigs. * indicates p=0.0061. For panels B, C, and E, each dot represents a different pig. Statistical significance was evaluated with a Mann-Whitney test.
 
+![Video 1.](https://cdn.elifesciences.org/articles/59653/elife-59653-video1.mp4.jpg)
+
+**Video 1.:** Mucus strands were labeled with fluorescent nanospheres (red). Video is real time. Scale bar 100 μm. White dot in center is from reflected light.
+
+![Video 2.](https://cdn.elifesciences.org/articles/59653/elife-59653-video2.mp4.jpg)
+
 Lack of mucus strands suggested that MCT would be impaired. To test this prediction, we used an approach we previously developed, applying 500 µm metallic spheres to the tracheal surface and tracking their movement (Fischer et al., 2019). This method allowed us to assess MCT and the role of mucus that attached to the spheres. After treating tracheal segments with methacholine to stimulate SMG secretion, we placed spheres on the airway and followed their movement with time-lapse photography. In wild-type airways, mucus strands sweeping over the surface often wrapped around the spheres and pulled them off to the edge of the tracheal segment, as we previously reported (Figure 6D and E, Video 3; Fischer et al., 2019). However, without mucus strands in EDA-KO airways to initiate movement, spheres less frequently moved (Figure 6D and E, Video 4). Bits of mucus attached to the spheres, but instead of clearing spheres to the edge of the airway segment, the spheres spun in place due to the action of the underlying cilia.
+
+![Video 3.](https://cdn.elifesciences.org/articles/59653/elife-59653-video3.mp4.jpg)
+
+**Video 3.:** Mucus strands were labeled with fluorescent nanospheres (red). Mucus strand attaches to and initiates movement of the sphere, pulling it to the edge of the airway segment. Duration of video clip was 30 s and is compressed to 6 s here. Scale bar 500 μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/59653/elife-59653-video4.mp4.jpg)
+
+**Video 4.:** A sphere is shown spinning backwards and failing to move over the surface of the airway. Mucus attaches to the sphere’s surface allowing ready detection of sphere rotation. Duration of video clip was 900 s and is compressed to 32 s.
 
 These ex vivo results emphasize the importance of SMGs in facilitating MCT by producing mucus and assembling it into strands.
 
-## EDA-KO piglets had impaired MCT in vivo
+### EDA-KO piglets had impaired MCT in vivo
 
 Based on our ex vivo results, we hypothesized that loss of SMGs in EDA-KO piglets would disrupt MCT in vivo. We measured MCT in spontaneously breathing, non-intubated, sedated pigs using methods previously described (Hoegger et al., 2014; Fischer et al., 2019). We insufflated radiodense tantalum microdisks (350 µm), obtained a high-resolution CT scan every 9 s for 6.3 min (total 44 scans), and tracked the position of individual microdisks. We measured MCT before and after stimulating SMG secretion with methacholine.
 
@@ -126,11 +156,27 @@ Under basal conditions, individual microdisks followed a trajectory toward the l
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig7-v1.jpg)
 
-**Figure 7.:** EDA-KO pigs have impaired MCT in vivo.MCT was assessed by insufflating tantalum microdisks in sedated, spontaneously breathing pigs followed by acquisition of high-resolution CT scans every 9 s for 6.3 min (total 44 scans). Positions of individual microdisks were tracked. Pigs were studied under basal conditions and after stimulating submucosal gland secretion with intravenous methacholine. N = 6 wild-type and 3 EDA-KO pigs. Statistical significance between data from wild-type and EDA-KO was evaluated with a Mann-Whitney test. (A) Examples of individual microdisks (different colors) tracked in wild-type (left) and EDA-KO (right) pigs. Position of carina is indicated. (B) Percentage of time microdisks were moving. * indicates p=0.0238 under basal conditions and p=0.0238 under methacholine-stimulated conditions. (C) Mean speed (mm/min) of microdisks that moved more than 10 mm. One EDA-KO pig had no microdisks moving >10 mm under basal conditions; therefore, only two data points and the range are shown in that case. * indicates p=0.8571 under basal conditions and p=0.1667 under methacholine-stimulated conditions. (D) Percentage of microdisks that reached the larynx during the study. p=0.1667 under basal conditions. * indicates p=0.0238 under methacholine-stimulated conditions.
+**Figure 7.:** MCT was assessed by insufflating tantalum microdisks in sedated, spontaneously breathing pigs followed by acquisition of high-resolution CT scans every 9 s for 6.3 min (total 44 scans). Positions of individual microdisks were tracked. Pigs were studied under basal conditions and after stimulating submucosal gland secretion with intravenous methacholine. N = 6 wild-type and 3 EDA-KO pigs. Statistical significance between data from wild-type and EDA-KO was evaluated with a Mann-Whitney test. (A) Examples of individual microdisks (different colors) tracked in wild-type (left) and EDA-KO (right) pigs. Position of carina is indicated. (B) Percentage of time microdisks were moving. * indicates p=0.0238 under basal conditions and p=0.0238 under methacholine-stimulated conditions. (C) Mean speed (mm/min) of microdisks that moved more than 10 mm. One EDA-KO pig had no microdisks moving >10 mm under basal conditions; therefore, only two data points and the range are shown in that case. * indicates p=0.8571 under basal conditions and p=0.1667 under methacholine-stimulated conditions. (D) Percentage of microdisks that reached the larynx during the study. p=0.1667 under basal conditions. * indicates p=0.0238 under methacholine-stimulated conditions.
+
+![Video 5.](https://cdn.elifesciences.org/articles/59653/elife-59653-video5.mp4.jpg)
+
+**Video 5.:** The head is above the top of the image and tail below the bottom. Microdisks were insufflated into the airways and tracked by sequential CT scanning. Each microdisk is represented by a different colored circle; circles are ~280 times the area of microdisks to aid visualization. When microdisks reach the larynx, they disappear. Video is compressed from original duration of 6.3 min.
+
+![Video 6.](https://cdn.elifesciences.org/articles/59653/elife-59653-video6.mp4.jpg)
+
+**Video 6.:** Procedures are as described in legend of Video 5.
 
 We also stimulated SMG secretion with the cholinergic agonist methacholine and measured MCT. In wild-type piglets, microdisks followed a trajectory up the large airways and were in motion for most of the time (Figure 7A and B, Video 7). There was less movement in EDA-KO piglets (Figure 7A and B, Video 8). For microdisks that did move, there was a non-statistically significant trend for a decreased mean speed in EDA-KO piglets (Figure 7C). In contrast to wild-type piglets, EDA-KO piglets failed to clear microdisks from the lung during the course of the study (Figure 7D). These findings indicate that loss of SMGs in EDA-KO piglets impaired MCT in vivo.
 
-## Airways of EDA-KO piglets had an impaired ability to eradicate bacteria
+![Video 7.](https://cdn.elifesciences.org/articles/59653/elife-59653-video7.mp4.jpg)
+
+**Video 7.:** Procedures are as described in legend of Video 5. Pig is same as in Video 5.
+
+![Video 8.](https://cdn.elifesciences.org/articles/59653/elife-59653-video8.mp4.jpg)
+
+**Video 8.:** Procedures are as described in legend of Video 5. Pig is same as in Video 6.
+
+### Airways of EDA-KO piglets had an impaired ability to eradicate bacteria
 
 Finding decrements in host defense led us to hypothesize that EDA-KO pigs would fail to normally eradicate bacteria. Moreover, we predicted that any defect would be more pronounced in proximal cartilaginous airways, which contain SMGs, than in distal airways. To test this hypothesis, we challenged piglets with a defined inoculum of S. aureus delivered by aerosol into the trachea. We used S. aureus because it commonly infects humans, and it is frequently found in humans and pigs with CF (Stoltz et al., 2010; Razvi et al., 2009).
 
@@ -138,7 +184,7 @@ Four hours after aerosolization, we recovered and quantified S. aureus. To sampl
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/59653/elife-59653-fig8-v1.jpg)
 
-**Figure 8.:** EDA-KO pigs have decreased eradication of Staphylococcus aureus from the lung.S. aureus were aerosolized into the airways and 4 hr later samples were obtained by tracheal washes, bronchoalveolar lavage (BAL), and lung homogenates. Data are the log colony-forming units recovered. N = 5 wild-type and 8 EDA-KO pigs. * indicates p=0.0016 for trachea washes, * indicates p=0.0186 for BAL, and p=0.3908 for distal lung homogenates. Statistical analysis was with a Mann-Whitney test.
+**Figure 8.:** S. aureus were aerosolized into the airways and 4 hr later samples were obtained by tracheal washes, bronchoalveolar lavage (BAL), and lung homogenates. Data are the log colony-forming units recovered. N = 5 wild-type and 8 EDA-KO pigs. * indicates p=0.0016 for trachea washes, * indicates p=0.0186 for BAL, and p=0.3908 for distal lung homogenates. Statistical analysis was with a Mann-Whitney test.
 
 ## Discussion
 
@@ -158,19 +204,225 @@ It has long been assumed that SMGs contribute to respiratory host defense (Widdi
 
 ## Materials and methods
 
-## Generation and identification of EDA1-KO piglets
+**Key resources table**
 
-## Guide RNA design and preparation
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- MUC5B (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# Sc-20119</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MUC5AC (mouse monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat # NBP2-15196</td>
+      <td>IF (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-tubulinIV (mouse monoclonal)</td>
+      <td>Biogenex</td>
+      <td>Cat# Mu178-5UC</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methacholine (acetyl-β-methylcholine chloride)</td>
+      <td>Sigma</td>
+      <td>Cat# A2251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CleanCap Cas9 mRNA</td>
+      <td>TriLink Biotechnologies</td>
+      <td>Cat # L-7606</td>
+      <td>20 ng/ul</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAshort script T7 Transcription kit</td>
+      <td>Thermo-fisher</td>
+      <td>Cat# AM1354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Express Extract Kit Plus amplification module</td>
+      <td>KAPA Biosystems</td>
+      <td>Cat# KK7152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAclear Transcription Clean-up kit</td>
+      <td>Thermo-fisher</td>
+      <td>Cat# AM1908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick PCR Purification Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Live/Dead Bacterial Viability Assay</td>
+      <td>Thermofisher</td>
+      <td>Cat # L13152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TOPO TA Cloning kit (with PCR 2.1-TOPO vector)</td>
+      <td>Invitrogen</td>
+      <td>Cat# K45-0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Sus scrofa)</td>
+      <td>EDA1</td>
+      <td>Ensembl</td>
+      <td>Ensembl gene link: ENSSSCG00000021647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Visualizing media</td>
+      <td>Invitrogen</td>
+      <td>4 nm Nano spheres</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Visualizing media</td>
+      <td>BalTec</td>
+      <td>Tantalum spheres</td>
+      <td>500 μm</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Visualizing media</td>
+      <td>Sigma</td>
+      <td>Tantalum disks</td>
+      <td>350 μm</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EDA guide 1</td>
+      <td>This paper</td>
+      <td>Guide RNA</td>
+      <td>GGAATCCCTGGAATCCCTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EDA guide 2</td>
+      <td>This paper</td>
+      <td>Guide RNA</td>
+      <td>GCCCGGTGGTCCCATAACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward primer</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>gcctgactttgtgttgttagaagtccata</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse primer</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>ctgctcttggtatcatgtactcctgatct</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaging software</td>
+      <td>Olympus</td>
+      <td>CellSens</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaging software</td>
+      <td>NIH</td>
+      <td>ImageJ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaging software</td>
+      <td>Nikon</td>
+      <td>NIS Elements</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaging software</td>
+      <td>Siemens</td>
+      <td>SOMATON Force</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data analysis</td>
+      <td>GRAPHPAD Software</td>
+      <td>GRAPHPAD PRISM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data analysis</td>
+      <td>ITK-SNAP</td>
+      <td>ITK-SNAP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Primer-Blast</td>
+      <td>NCBI</td>
+      <td>https://www.ncbi.nlm.nih.gov/tools/primer-blast/index.cgi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>S. aureus</td>
+      <td>Pezzulo et al., 2012 PMID:22763554</td>
+      <td>S. aureus isolate 43SA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation and identification of EDA1-KO piglets
+
+#### Guide RNA design and preparation
 
 Guide RNA sequences for two sgRNAs targeting exon 4 of porcine EDA1 were identified by using the Benchling (https://benchling.com/) and ChopChop v2 (Labun et al., 2016) web tools: Guide 1, 5’-GGAATCCCTGGAATCCCTGG-3’; Guide 2, 5’-GCCCGGTGGTCCCATAACAG-3’.
 
 Guide RNAs (sgRNAs) were in vitro transcribed from gBlock gene fragments (Integrated DNA Technologies) that were synthesized to contain a T7 promoter sequence upstream of the sgRNA sequence as previously described (Whitworth et al., 2017). The guide RNAs were generated using the MEGAshortscript T7 Transcription Kit (Thermo Fisher) and purified using the MEGAclear Transcription Clean-Up Kit (Thermo Fisher). The concentration of the transcripts was determined using a Nanodrop spectrophotometer and the quality of the transcripts was analyzed by visualization on a 5.0% Criterion TBE-urea polyacrylamide gel (BIO-RAD).
 
-## Production of pigs by injecting zygotes with Cas9/sgRNA
+#### Production of pigs by injecting zygotes with Cas9/sgRNA
 
 Both guides were mixed together in water with capped and polyadenylated s.p.Cas9 mRNA (Trilink Biotechnologies) and the mixture containing 10 ng/µl of each guide and 20 ng/µl Cas9 mRNA was injected into the cytoplasm of in vitro derived porcine zygotes. Embryos were then cultured for 5 days in MU2 (early reps) or MU3 (later reps) supplemented with FLI (FLI 40 ng/mL FGF2, 20 ng/mL LIF, 20 ng/mL IGF) (Yuan et al., 2017; Chen et al., 2018; Redel et al., 2019). Blastocyst-stage embryos were then surgically implanted into the oviduct of surrogate sows.
 
-## Piglet genotyping assay
+#### Piglet genotyping assay
 
 Tail or ear tissue collected from the piglets was lysed using the KAPA Express Extract Kit Plus Amplification Module (KAPA Biosystems). Module and targeted fragments were amplified from the crude tissue lysates using KAPA 2G polymerase (KAPA Biosystems). The primers for amplifying the targeted fragments were designed using the Primer-Blast Program (Ye et al., 2012): Forward Primer, 5'-GGC TGA CTT TGT GTT GTT AGA AGT CCA TA-3'; Reverse Primer, 5'-CTG CTC TTG GTA TCA TGT ACT CCT GAT CT-3'. PCR conditions consisted of an initial denaturation of 95°C for 3 min, followed by 40 cycles of 95°C (15 s), 60°C (15 s), 72°C (15 s), and a final extension cycle of 72°C, (1 min).
 
@@ -178,52 +430,52 @@ The PCR products were purified using the QIAquick PCR Purification Kit (Qiagen) 
 
 All piglets from EDA-KO litters were edited. Wild-type controls were from other litters at the University of Missouri or were purchased from Exemplar Genetics. Animals were sedated with ketamine/xylazine (Akorn), and sedation was maintained with propofol. Euthanasia was with Euthasol (Virbac) after ketamine sedation. The Animal Care and Use Committees (IACUC) at the University of Iowa and the University of Missouri approved all animal studies conducted at their respective locations.
 
-## Histopathological analyses
+### Histopathological analyses
 
 Tissues were placed in 10% neutral buffered formalin (5–7 days), dehydrated through a series of alcohol and xylene baths, paraffin-embedded, sectioned (4 µm) and stained with hematoxylin and eosin (HE) or diastase-pretreated Periodic acid Schiff (dPAS) (Meyerholz et al., 2018b). Tissues were examined using the post-examination method of masking and scored following principles for reproducible histopathologic scores (Meyerholz and Beck, 2018c). Submucosal glands were evaluated in trachea, secondary bronchi, segmental bronchi and bronchioles. In each airway, the length of airway luminal circumference with subjacent submucosal gland cells was divided by the total circumference of the airway to produce a ‘% circumference with SMG’.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Trachea were excised from newborn piglets and immediately fixed in 4% paraformaldehyde (EMS) in PBS for 1 hr at room temperature. Tissues were then placed in 30% sucrose and incubated overnight at 4°C, followed by quick-freezing in OCT using a dry ice/EtOH bath and stored at −80°C. Prior to immunocytochemistry, frozen blocks of tissue were cryosectioned at 7 μm followed by permeabilization in 0.3% TX-100 (Thermo-Fisher) in PBS for 20 min, and blocked in Super-Block (Thermo-Fisher) with 5% normal goat serum (Jackson ImmunoResearch) for 1 hr, all at room temperature. Tissue sections were then incubated for 2 hr at 37°C with indicated antibodies: β-tubulin IV(1:300, Biogenex), MUC5AC (1:5000, Novus Biologicals), MUC5B (1:2000, Santa Cruz). Sections were then incubated for 1 hr with secondary antibodies goat-anti-mouse Alexa-Fluor-488 and goat anti-rabbit Alexa-Fluor-555 (1:1000, Molecular Probes/Invitrogen) and phalloidin-633 (1:300, Molecular Probes/Invitrogen). Slides were imaged on an Olympus Fluoview FV3000 confocal microscope with a Plan.ApoN 60X oil lens. Images were post-processed using the Olympus imaging software, CellSens.
 
-## Assay of bacterial killing
+### Assay of bacterial killing
 
 Antimicrobial activity measurements were performed using bacteria-coated grids. Preparation, imaging, and quantification was performed as previously described (Pezzulo et al., 2012). S. aureus isolate 43SA was cultured to log-phase growth, labeled with biotin, and conjugated to gold electron microscopy grids coated with streptavidin. The bacteria-coated grids were placed on the airway surface through a tracheal window of a sedated pig for 1 min, rinsed with PBS, and immersed in SYTO9 and propidium iodide (Invitrogen) to determine bacterial viability (Live/Dead Bacterial Viability Assay, Invitrogen). Two technical replicates were performed per pig and the results averaged. Numbers of live and dead bacteria on grids were analyzed with confocal microscopy and quantified by Image J (ImageJ, Schneider, CA, USA).
 
-## In vitro assay of MCT
+### In vitro assay of MCT
 
-## Tissue preparation
+#### Tissue preparation
 
 Trachea explants were pinned to dental wax and submerged in 40 ml of Krebs buffered saline at pH 7.4 in 5% CO2 in a 37°C chamber (Hoegger et al., 2014; Fischer et al., 2019). Ciliary beat frequency, strand counting, and metallic sphere transport experiments shown in this study were all performed after treatment with 100 µM methacholine.
 
-## Ciliary beat frequency
+#### Ciliary beat frequency
 
 Ciliary beating was visualized as previously described (Hoegger et al., 2014; Fischer et al., 2019). The epithelial surface was imaged using reflected light with a Nikon A1 confocal microscope with 25X submersion lens. Video recordings were obtained at 110 frames per second for 4 s using NIS elements software. Three separate microscopy fields were collected per animal. Two observers independently calculated the ciliary beat frequency by importing image stacks into FIJI, drawing polygons around ciliated cells, and measuring the frequency of oscillation in the reflected light channel. Correlation between observers was >0.95. Each data point represents the average of all fields made by both observers.
 
-## Count of moving strands
+#### Count of moving strands
 
 Strand counting was measured as previously described (Fischer et al., 2019). The epithelial surface was imaged using reflected light and mucus strands were visualized by 1:10,000 addition of 4 nm fluorescent nanospheres (Invitrogen). The field was recorded for 15 min at a frame rate of 8–10 frames/sec. Two observers independently calculated the number of strands crossing the field by first drawing a line perpendicular to the direction of mucociliary transport then marking two points separated by 140 µm on that line. Any continuous mucus strand that crossed the field and touched both pre-defined points was counted. Correlation between observers for strand count was >0.95. Each data point represents the average of the number of strands counted by both observers.
 
-## Transport of metallic spheres
+#### Transport of metallic spheres
 
 Ta spheres (500 µm diameter, Bal-tec, Los Angeles) were added to the tracheal surface. We monitored their transport for 15 min by time lapse photography using the Frameography application for iPhone as previously described (Hoegger et al., 2014; Fischer et al., 2019). Because we previously observed that disruption of mucus impairs the initiation of transport, we measured the fraction of spheres that moved >1 mm from their original position during the tracking period. To determine the role of mucus strands in transporting Ta spheres, we added 4 nm fluorescent nanospheres and single Ta spheres simultaneously. We visualized the interaction of the sphere with mucus using a Nikon A1 confocal microscope with 10X lens. The reflected light channel was used to visualize spheres and a red fluorescence channel to visualize mucus.
 
-## In vivo MCT assay
+### In vivo MCT assay
 
-## X-ray computed tomographic (CT) assay
+#### X-ray computed tomographic (CT) assay
 
 We sedated animals for in vivo studies with ketamine (20 mg/kg, I.M., Phoenix Pharmaceutical, Inc) and acepromazine (2 mg/kg, I.M., Phoenix Pharmaceutical, Inc) or xylazine (2 mg/kg, I.M., Lloyd). Anesthesia was maintained with I.V. dexmedetomidine (10 µg/kg/hr, I.V., Accord Healthcare, Inc).
 
 To measure MCT in vivo, we used a previously described CT-based assay (Hoegger et al., 2014; Fischer et al., 2019). We measured MCT by tracking tantalum microdisks (350 μm diameter x 25 μm thick, Sigma). To deliver microdisks, animals were anesthetized, briefly intubated, and microdisks were insufflated into the airways just beyond the vocal cords with a puff of air. Immediately after delivery, the tubes and catheter were removed. CT scans were acquired with a continuous spiral mode CT scan (0.32 s rotation; 176 mm coverage in 1.5 s; 0.6 mm thick sections with 0.3 mm slice overlap, Siemens SOMATOM Force). Forty-four CT scans were obtained in a 6.3 min time interval. Microdisks were tracked over time by an automated algorithm (FiJi TrackMate plugin [Tinevez et al., 2017]) and manually validated.
 
-## CT scan data analysis
+#### CT scan data analysis
 
 Microdisks that failed to move >10 mm from their initial position were labeled as non-moving. We used that number to calculate the average % of time microdisks were in motion for each individual pig. Tracking microdisks over time provided multiple measurements of microdisk speed. From these speeds, we determined the average speed of individual microdisks after they had moved >10 mm and used that to determine the mean speed for all the microdisks in each pig. Microdisk clearance was calculated by determining whether a microdisk reached the larynx or not during the 6.3-min tracking period. The percentage of microdisks cleared was determined by dividing the number of cleared microdisks by the total number of microdisks tracked x100%. The airway tree from each animal was segmented using thresholding segmentation mode in ITK-SNAP with an upper limit of −600 HU (Yushkevich et al., 2006). An anteroposterior projection of the segmented airway tree mesh was overplayed on top of each video.
 
-## Bacterial challenge
+### Bacterial challenge
 
 Two-day-old EDA-KO (n = 8) and wild-type (n = 5) pigs received an intrapulmonary challenge with log-phase chloramphenicol-resistant S. aureus (average inoculum 1.0–1.4 × 108 CFU) delivered in 0.1 ml of 0.45% saline using a MADgic atomizer positioned just distal to the vocal cords. Four hours later, pigs were euthanized and the trachea was removed and divided in upper and lower halves. Each tracheal piece was washed with 1 mL of PBS containing Ca2+ and Mg2+ and the solution was vortexed for 30 s. Bronchoalveolar lavage was performed on the right and left lower lobes (5 ml of saline on each side), repeated three times and pooled and the numbers of bacteria for each pig were averaged. The right accessory lobe was homogenized with manual tissue grinders in 3 ml of PBS containing Ca2+ and Mg2+, spun for 1 min on a tabletop minicentrifuge, and the pellet was discarded. CFU/ml were quantitated from 10-fold serial dilutions of each recovered sample cultured on TSB plates containing chloramphenicol.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented for individual animals with mean ± SEM. Statistical comparisons between wild-type and EDA-KO were by a Mann-Whitney test. Differences were considered statistically significant at p<0.05. Analyses were made in GraphPad Prism v7.0d (GraphPad Software, La Jolla, CA).

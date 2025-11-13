@@ -48,11 +48,17 @@ In this study, we set out to characterize the dynamic co-evolution of fibroblast
 
 ## Results
 
-## Fibroblasts are activated and transcriptionally reprogrammed in the lung metastatic niche
+### Fibroblasts are activated and transcriptionally reprogrammed in the lung metastatic niche
 
 We previously demonstrated that fibroblasts at the primary tumor microenvironment are reprogrammed to obtain a pro-inflammatory and tumor-promoting phenotype (Erez et al., 2010; Sharon et al., 2015; Cohen et al., 2017). Moreover, we found that fibroblasts are also modified at the lung metastatic niche (Raz et al., 2018). In this study, we set out to characterize the changes in lung fibroblasts that mediate the formation of a hospitable niche in breast cancer metastasis.
 
 We initially investigated metastasis-associated fibroblasts in the lung metastatic microenvironment of MMTV-PyMT transgenic mice with spontaneous lung metastases, compared with normal lungs. We analyzed the changes in the population of fibroblasts using immunostaining with multiple known fibroblast markers including αSMA, FSP-1 (Gascard and Tlsty, 2016; Kalluri and Zeisberg, 2006), and Podoplanin (PDPN) (Friedman, 2020; Figure 1A–D). Notably, analysis of αSMA and FSP-1 indicated an upregulation in the expression of these markers in metastases-bearing lungs (Figure 1B, C), suggesting that lung metastases are associated with fibroblast activation.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative immunofluorescent staining of αSMA (red), FSP-1 (green), and Podoplanin (PDPN) (purple) in normal lungs from FVB/n mice (n = 3), and metastases-bearing lungs from MMTV-PyMT mice (n = 4). Scale bar: 200 µM. (B–D) Quantification of mean fluorescent intensity (MFI) in 5 fields of view (FOV) per mouse of staining shown in (A). (E) Workflow illustration of fibroblast isolation (CD45-EpCAM-YFP+) from normal FVB/n;col1a1-YFP mice (NLF) and of micro- or macrometastasis-associated fibroblasts from MMTV-PyMT;Col1a1-YFP mice (MIF and MAF). (F) Quantification of number of fibroblasts per lung, based on flow cytometry analysis. *p<0.05, **p<0.01. Data are represented as mean ± SD, n = 5. (G) Flow cytometry gating strategy for isolation of fibroblasts prior to RNA-sequencing. (H, I) Principal component analysis (PCA) (H) and hierarchical clustering (I) of 11,115 protein coding genes identified in RNA-seq.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig1-figsupp1-v2.jpg)
 
 We therefore set out to characterize the changes in fibroblasts at the metastatic niche during the formation of spontaneous lung metastases. To enable visualization, tracking, and isolation of fibroblasts, we established a transgenic mouse model of breast cancer with fibroblast-specific reporter genes: transgenic mice that express the fluorescent reporter YFP under the collagen-1α promoter (Col1a1-YFP) were crossed with MMTV-PyMT mice to create PyMT;Col1a1-YFP transgenic mice, in which all fibroblasts are fluorescently labeled (Raz et al., 2018). Flow cytometric analysis of normal lungs as compared with lungs of tumor-bearing mice revealed significantly increased numbers of fibroblasts in macrometastatic lungs (Figure 1E, F). Thus, fibroblasts are both activated and increase in numbers in the metastatic microenvironment of breast cancer lung metastasis.
 
@@ -60,9 +66,17 @@ To analyze the transcriptional reprograming of activated fibroblasts at the lung
 
 Initial data analysis indicated that fibroblasts isolated from lungs with macrometastases (macrometastasis-associated fibroblasts [MAFs]) were strikingly different from Normal lung fibroblast (NLF) as well as from fibroblasts isolated from lungs with micrometastases (micrometastasis-associated fibroblasts [MIFs]) (Figure 1H, I, Figure 1—figure supplement 1). Notably, since fibroblasts were isolated from entire lungs, rather than from specific metastatic lesions, the MIF fraction contained a mixture of normal, non-metastasis-associated fibroblasts as well as metastasis-associated fibroblasts. As a result, initial data analysis did not reveal significant differences between NLF and MIF. Thus, metastasis-associated fibroblasts are not only functionally activated but also transcriptionally reprogrammed.
 
-## Transcriptome profiling of metastasis-associated fibroblasts reveals dynamic stage-specific changes in gene expression
+### Transcriptome profiling of metastasis-associated fibroblasts reveals dynamic stage-specific changes in gene expression
 
 In light of these initial results, we next analyzed the genes that are differentially expressed between MAF and NLF. We selected upregulated and downregulated genes based on fold change (FC) of |2|. Expectedly, hierarchical clustering based on these genes revealed that the MAF group clustered separately from NLF and MIF (Figure 2A). To better characterize the trajectory of changes in fibroblasts during metastases formation, we next compared the expression of genes that were differentially expressed between MAF and NLF to their expression in the MIF population. Interestingly, we found that the expression pattern in MIF was distinct from both the MAF and the NLF gene expression, including genes that had opposite changes in MAF vs. MIF, suggesting that they are activating a distinct transcriptional program (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig2-v2.jpg)
+
+**Figure 2.:** (A) Hierarchical clustering of genes upregulated or downregulated in macrometastasis-associated fibroblast (MAF) vs. normal lung fibroblast (NLF) based on fold change (FC) > |2|. (B) Presentation of the average Z-scored gene expression of genes differentially expression in MAF vs. NLF in all three groups: NLF, micrometastasis-associated fibroblast (MIF) and MAF. Dashed lines demarcate genes upregulated in MIF vs. NLF. Dotted lines demarcate genes downregulated in MIF vs. NLF. (C) Hierarchical clustering of genes upregulated or downregulated in MIF vs. NLF based on FC > |1.5|. (D) Venn diagram of upregulated or downregulated genes in the different comparisons. (E, F) Hierarchical clustering (E) and principal component analysis (PCA) (F) of genes upregulated or downregulated in the different comparisons (MIF vs. NLF, MAF vs, NLF, MAF vs. MIF). (G) Protein-protein interaction analysis of the differentially expressed genes per comparison performed in STRING platform. Interconnected genes were selected for subsequent analysis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Confidence > 0.3, text mining connections were excluded.
 
 We therefore analyzed the differentially expressed genes in the MIF fraction separately. Since the detectible changes in micrometastases were more subtle than the changes detected in the macrometastases group, we selected these genes based on an FC of |1.5| to better differentiate the MIF group from NLF. Indeed, hierarchical clustering based on these differentially expressed genes confirmed that the MIF group clustered separately from both NLF and MAF (Figure 2C). Next, we selected a group of genes based on their differential expression between the MAF and MIF groups (FC > |2|). The combination of these yielded a total of 897 genes that were differentially expressed in MIF vs. NLF, MAF vs. NLF or MAF vs. MIF. Interestingly, only a small number of these genes were shared across the different stages, suggesting again that each stage is defined by its own specific gene signature (Figure 2D). Accordingly, principal component analysis (PCA) and hierarchical clustering applied on the selected gene signature dataset separated each of the metastatic stages (Figure 2E, F).
 
@@ -70,9 +84,17 @@ Thus, although the transcriptional changes in fibroblasts isolated from micromet
 
 Aiming to delineate the stage-specific gene signatures and the molecular mechanisms operative in metastasis-associated fibroblasts, and to identify the most relevant functional pathways, we performed protein-protein interaction (PPI) analysis using the STRING platform (Szklarczyk et al., 2017) for each comparison separately. We found that per comparison the differentially expressed genes had significantly more interactions than expected (Figure 2G, Figure 2—figure supplement 1), suggesting that they are functionally related. We therefore decided to focus our subsequent analyses on the subsets of differentially expressed genes that were found to be inner-connected.
 
-## Fibroblast metastases-promoting features are driven by gene signatures related to stress response, inflammation, and ECM remodeling
+### Fibroblast metastases-promoting features are driven by gene signatures related to stress response, inflammation, and ECM remodeling
 
 We next asked whether the changes in the different metastasis-associated fibroblast subpopulations represent specific metastases-promoting features. To address this question, we performed further analysis of the selected genes in each stage by using the over-representation enrichment analysis of the Consensus Path DB (CPDB) platform (Kamburov et al., 2011). Our focus in these analyses was based on three different databases: GO (Ashburner et al., 2000; The Gene Ontology Consortium, 2019), KEGG (Kanehisa et al., 2017; Kanehisa and Goto, 2000), and Reactome (Fabregat et al., 2018). For our analysis, we selected terms that represent biological processes enriched in at least two databases, with a relative overlap of at least 0.2 and at least two shared entities (Figure 3A). Data analysis revealed significant and stage-specific changes in functional pathways including cellular stress response, ECM remodeling, and inflammation (Figure 3B, Supplementary file 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig3-v2.jpg)
+
+**Figure 3.:** (A) Flow chart of the pathway enrichment over-representation analyses based on GO, Reactome, and KEGG using the Consensus Path DB (CPDB) platform. (B) Bubble graph heat map based on the number of specific enrichment terms and their average log-transformed q-value per group. Circle sizes denote number of terms included in a group; color indicates the average log-transformed q-value. Enrichments based on downregulated genes are presented as negative values. (C–E) Heat maps of gene expression fold-change presenting genes in selected group annotations. Fold change was log2 transformed for presentation. Only genes found in at least two different terms are presented. (C) ‘Stress response and protein folding’ enriched genes. (D) ‘Extracellular matrix remodeling’ enriched genes. (E) ‘Inflammatory signaling’ and/or ‘Cytokine and chemokine activity’ enriched genes. (F) Gene Set Enrichment Analysis (GSEA) for hallmark datasets upregulated in macrometastasis-associated fibroblast (MAF) vs. normal lung fibroblast (NLF) related to inflammatory signaling, false discovery rate (FDR) < 0.05, normalized enrichment score (NES) > 2. (G) GSEA results for ‘Myc targets’ hallmark dataset that were upregulated in all comparisons. FDR < 0.05; NES > 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (1) Relative expression (normalized to NLF) of key genes found to be differentially expressed in RNA-seq. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Data are presented as mean ± SD, n = 3 per group. (2) Expression of THBS1 and HSP90AA1 in lung fibroblasts: representative images of YFP and THBS1 immunostaining (top) or YFP and HSP90AA1 (bottom) in normal lungs, micro- and macrometastases-bearing lungs from MMTV-PyMT mice (n = 3). Arrows denote co-staining. Scale bar THBS1: 25 µM. Scale bar HSP90AA1: 50 µM.
 
 Interestingly, we found that gene expression signatures in fibroblasts isolated from the micrometastatic stage were highly and specifically enriched for functions related to cellular response to stress, including Hsf1 activation, heat shock response, and response to unfolded protein (Supplementary file 1). Upregulated genes in MIF that were related to stress and protein folding included several heat shock proteins: Hspa8, Hsp90aa1, Hspd1, Hspe1, and others (Figure 3C). Of note, detailed analysis of specific gene expression showed that while the stress response pathway was not significantly enriched in MAF, genes from the stress response pathway were elevated in MAF compared to normal fibroblasts, but not compared to MIF (Figure 3C). ECM remodeling terms were enriched in both MIF and MAF (Figure 3B), indicating the central importance of ECM modifications in facilitating metastasis. Notably, while ECM remodeling was operative throughout the metastatic process, the specific genes related to ECM remodeling in the different metastatic stages were distinct (Figure 3D).
 
@@ -84,7 +106,7 @@ Encouraged by these findings, we next set out to obtain further insights on func
 
 Taken together, these findings imply that the transcriptome of lung fibroblasts is rewired during metastatic progression, driving changes in the expression of distinct molecular pathways. Moreover, the transcriptional changes in ECM remodeling and stress response, which represent potential metastases-promoting tasks, are evident at early stages of metastases formation, suggesting that fibroblasts play an important role already at the onset of the metastatic process.
 
-## Multiple gene network analyses identify Myc as a central transcription factor in the rewiring of metastasis-associated fibroblasts
+### Multiple gene network analyses identify Myc as a central transcription factor in the rewiring of metastasis-associated fibroblasts
 
 To further characterize the regulatory nodes that govern the transcriptional changes in fibroblasts, we hypothesized that these changes may be driven by TFs related to the pathways that were identified by the pathway and GSEA analyses (Figure 3). Analysis of TFs terms within the results identified five candidate TFs that were enriched in at least one analysis and in at least one metastatic stage: Hif1a, Hsf1, Myc, Nfkb1, and Stat3 (Supplementary file 3).
 
@@ -92,23 +114,45 @@ We next examined the number of different comparisons in which each TF was enrich
 
 To rank these TFs, we performed knowledge-based multiple analyses examining their centrality in the selected gene signatures in each comparison (Supplementary file 4). We examined the PPIs of these TFs utilizing the STRING platform and counted the number of direct connections of each TF with the metastasis-associated gene signatures. In MAF gene signature, Stat3 had the largest number of connections, closely followed by Myc. In MIF gene signature, Myc had the largest number of connections (Figure 4A, orange). In addition to STRING, we examined PPIs using ANAT (Advanced Network Analysis Tool) (Yosef et al., 2011). In this platform, the inference is based on setting all the candidate TFs as anchors and the selected genes as targets in a network of PPI, and searching for a putative compact subnetwork that connects them. We analyzed the results according to three parameters: the number of direct connections of each TF, the characteristic path length to all nodes (including nondirectly related), and network centralization. Analysis of the results revealed that Myc had the largest number of direct connections in all comparisons and is overall connected to the fibroblast metastasis-associated gene signatures with the shortest path and with the highest centrality in all comparisons (Figure 4A, yellow, Figure 4B, Figure 4—figure supplement 1[1–3]). These results suggested that Myc plays a central role in mediating the transcriptional rewiring of fibroblasts in the lung metastatic niche across the different stages.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig4-v2.jpg)
+
+**Figure 4.:** (A) Heat maps of ranking parameters and analyses performed per each comparison to identify the centrality of five candidate TFs: Hif1a, Hsf1, Myc, Nfkb1, Stat3. Orange: STRING protein-protein interaction (PPI) analysis results. Yellow: Advanced Network Analysis Tool (ANAT) pathway analysis results. Green: RegNetwork analysis of connectivity between target genes and TFs. Purple: VarElect analysis results. (B) Representative ANAT protein-protein network using all TFs as anchors (green) and the stage-specific signature as target genes (red). Only interaction confidence > 0.6 are presented. (C) Box plot of VarElect scores for directly related genes to each TF (presenting top 50 per TF). (D) Z-score graphs of the results described in (A). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, one-way ANOVA with Tukey correction for multiple comparisons. Data are presented as mean ± SD. (E) Expression of TFs in micrometastasis-associated fibroblast (MIF) and macrometastasis-associated fibroblast (MAF): representative multiplex immunofluorescent staining (MxIF) staining of YFP (green), STAT3 (cyan), NF-κB (magenta), MYC (red), and HSF1 (yellow) in tissue sections of micro- and macrometastases bearing lungs from PyMT;Col1a1-YFP mice (n = 3). Regions with co-staining of several TFs are denoted with solid lines, unique MYC staining regions are denoted in dashed lines. Scale bar: 50 µM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig4-figsupp1-v2.jpg)
+
 We next examined the specific connection of each TF as a regulator in the metastasis-associated gene network. To that end, we utilized the RegNetwork tool (Liu et al., 2015), a knowledge-based database of gene regulatory networks. We found that Myc had the greatest number of targets in all comparisons, followed by Stat3 and Nfkb1 (Figure 4A, green). Finally, we analyzed the correlation of the metastasis-associated gene network with each candidate TF using the VarElect tool (Stelzer et al., 2016). This tool enables prioritization of genes related to a specific query term by using a direct and indirect relatedness score. We analyzed the scores of the stage-specific signature genes with each candidate TF and the number of directly related genes. The TFs were ranked based on the number and average score for the directly related genes, and the average score of the indirectly related genes. In agreement with previous analyses, Myc had the highest number of connections and the highest average score for both directly and indirectly related genes in all comparisons (Figure 4A, pink, Figure 4C). To consolidate these comprehensive gene network analyses, we performed a comparative analysis on the TF bioinformatics measurements listed in Figure 4A. The results indicated that Myc achieved significantly higher scores than all other TFs in all three gene signatures (Figure 4D).
 
 Since the changes in transcriptome were associated with multiple TFs, we further asked whether the various TFs are co-expressed in the same fibroblasts or in different subpopulations. To address this question, we performed multiplex immunofluorescent staining (MxIF) for YFP, combined with staining for the TFs MYC, STAT3, NFKB1, and HSF1 in lung tissue sections of micro- and macrometastases. Analysis revealed that while some of the fibroblasts co-expressed several TF (Figure 4E, solid boxes), other subpopulations expressed only MYC (Figure 4E, dashed boxes). Moreover, we found that MYC is expressed in fibroblasts in both micro- and macrometastases. Taken together, these results implicate the putative centrality and unique role of Myc in the dynamic transcriptional changes that govern the function of metastasis-associated fibroblasts in lung metastasis.
 
-## Myc is a central regulator in metastasis-associated fibroblasts and contributes to their acquisition of tumor-promoting traits
+### Myc is a central regulator in metastasis-associated fibroblasts and contributes to their acquisition of tumor-promoting traits
 
 Myc (myelocytomatosis oncogene) is a TF involved in many biological processes, including cell growth and proliferation, cell stemness, and metabolism. Myc is deregulated in many human cancers and is known to play an important role in the pathogenesis of cancer, particularly in cancer cells (Dang, 2012; Poole and van Riggelen, 2017).
 
 To validate the ranking results, we analyzed by qRT-PCR the expression of Myc in fibroblasts isolated from normal lungs or from lungs with micro- and macrometastases. Analysis of the results indicated that Myc is significantly upregulated in macrometastases-associated fibroblasts (Figure 5A). In addition, we assessed the expression of central Myc targets that we found to be upregulated in metastasis-associated fibroblasts, including Hspe1, Hsp90aa1, Odc1, and Fosl1 (Belinky et al., 2015; Chakravorty et al., 2017). The results indicated that these Myc targets were upregulated in fibroblasts isolated from lungs with metastases (Figure 5B). qRT-PCR results of Myc target genes further confirmed that the stress response-related genes Hsp90aa1 and Hspe1 were upregulated in MIF, whereas the other Myc targets were upregulated in MAF (Figure 5B, Figure 2—figure supplement 1). To elucidate the functional importance of Myc in mediating lung fibroblast reprogramming, we targeted its expression by a specific Myc targeting siRNA in primary lung fibroblasts. Abrogation of Myc expression by siMyc resulted in significant inhibition of Myc expression as compared with control fibroblasts (Figure 5C). Importantly, control fibroblasts highly upregulated the expression of Myc in response to tumor cell-secreted factors (Figure 5C, left bars), while Myc inhibition abrogated the upregulation of Myc in response to tumor cell-secreted factors in activated fibroblasts (Figure 5C, right bars). We next assessed whether inhibition of Myc affected the expression of selected Myc target genes in activated lung fibroblasts (ALFs). Analysis of the results indicated that targeting the expression of Myc significantly inhibited the expression of its target genes in response to tumor cell conditioned media (CM), indicating that the expression of Myc in fibroblasts is central to the upregulation of its known targets (Figure 5D). Finally, we examined the importance of Myc for functional reprogramming of fibroblasts. Fibroblasts at the primary tumor site were previously shown to be reprogrammed by tumor cell-derived paracrine signaling (Sharon et al., 2015; Jin et al., 2017). We therefore first asked whether fibroblasts at the metastatic microenvironment are similarly activated in response to tumor-secreted factors. Incubation of isolated primary lung fibroblasts with CM from Met-1, a PyMT-derived breast carcinoma cell line (Borowsky et al., 2005), or from 4T1 cells, a model of triple-negative breast cancer, indicated that tumor-derived factors activated multiple CAF-associated functions including enhanced motility in wound healing assay (Figure 5—figure supplement 1[1–4]) and increased contraction of collagen gel matrices (Figure 5—figure supplement 1[5–7]). Thus, NLFs are reprogrammed by signaling from breast cancer cells, resulting in acquisition of tumor-promoting properties. To test whether activation of Myc in lung fibroblasts contributes to their acquisition of CAF characteristics, we performed wound healing assays and collagen contraction assays with tumor-activated lung fibroblasts that were transfected with siMyc or with siCtrl. We found that siMyc fibroblasts were less contractile and exhibited significantly attenuated migration capacity as compared with controls (Figure 5E–H, Figure 5—figure supplement 1[8–9]). Notably, these changes were not related to any effects of Myc on fibroblast proliferation (Figure 5—figure supplement 1[10, 11]).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig5-v2.jpg)
+
+**Figure 5.:** (A) qRT-PCR analysis of Myc expression in sorted normal lung fibroblast (NLF), micrometastasis-associated fibroblast (MIF), and macrometastasis-associated fibroblast (MAF). **p<0.01. Data are represented as mean ± SD, n = 3 per group. (B) qRT-PCR analysis in sorted NLF, MIF, and MAF. Relative expression of Myc target genes found to be differentially expressed in RNA-seq. *p<0.05. Data are presented as mean ± SD, n > 3 per group. (C) Myc targeting by siRNA: Myc expression in NLF transfected with siRNA targeting Myc or with control siRNA (siMyc or siCtrl). Following transfection, cells were incubated with serum-free medium (SFM) or with Met-1 conditioned media (CM) supplemented with the same siRNA for additional 24 hr. Data are presented as mean ± SD, n = 3. (D) qRT-PCR analysis of Myc targets following treatment as in (C). Data are represented as mean ± SD, n = 3. (E, F) Representative images and quantification of collagen contraction assay of fibroblasts transfected with siMyc or siCtrl, incubated with Met-1 CM. *p<0.05. Data are represented as mean ± SD, n = 5. (G, H) Representative images and quantification of scratch closure assay of NLF transfected with siMyc or siCtrl and incubated with Met-1 CM. Scale bar: 400 µm. Two-way ANOVA with multiple comparisons. ***p<0.001. Data are presented as mean ± SD, n = 5. (I) Myc overexpression: qRT-PCR analysis of Myc expression in NLF transfected with Myc or with a control plasmid (Myc OE or Ctrl). Data are presented as mean ± SD, n = 3. (J) Quantification of scratch closure assay of NLF transfected with Myc or a control plasmid. Two-way ANOVA with multiple comparisons. *p<0.5, **p<0.01, ***p<0.001, ****p<0.0001. Data are presented as mean ± SD, n = 3. (K) qRT-PCR analysis of Myc target genes following treatment as in (I). Data are represented as mean ± SD, n = 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (1) Lung fibroblasts were incubated with serum-free medium (SFM) (normal lung fibroblasts [NLF]) or with tumor cell conditioned media (CM) (activated lung fibroblasts [ALF]), scale bar: 300 µM. (2) Quantification of scratch closure assay performed with FVB/n lung fibroblasts incubated with SFM (NLF, n = 3) or with Met1 CM (ALF, n = 3). ****p<0.0001. Two-way ANOVA with multiple comparisons. Data are represented as mean ± SD. (3) Quantification of scratch closure assay performed with BALB/c NLF incubated with SFM (n = 2) or with 4T1 CM (ALF, n = 2). ****p<0.0001. Two-way ANOVA multiple comparisons. Data are represented as mean ± SD. (4) Scratch closure is not a result of enhanced fibroblast proliferation: quantification of scratch closure of lung fibroblasts incubated with SFM (NLF), or with Met1-CM (ALF), and supplemented with the proliferation inhibitor mitomycin C. ***p<0.001, ****p<0.0001. Two-way ANOVA multiple comparisons. Data are presented as mean ± SEM, n = 3. (5) Representative images of collagen contraction assay at 24 hr. Lung fibroblasts were embedded in collagen gel and incubated with SFM (NLF) or in tumor cell CM (ALF). (6) Quantification of collagen contraction with FVB/n lung fibroblasts incubated with SFM (NLF, n = 8) or with Met1 CM (ALF, n = 8). *p<0.05. Data are represented as mean ± SD. (7) Quantification of collagen contraction with BALB/c NLF incubated with SFM (n = 2) or with 4T1 CM (ALF, n = 2). *p<0.05. Data are represented as mean ± SD. (8) Myc targeting by siRNA: Myc expression in NLF that were transfected with individual siRNA targeting Myc, or with control siRNA (siMyc1, siMyc2 siMyc3 or siCtrl). Data are presented as mean ± SD of technical repeats, n = 4. (9) Quantification of scratch closure assay of NLF transfected with individual siMyc1/2/3 or siCtrl and incubated with Met-1 CM. Two-way ANOVA with multiple comparisons. Data are presented as mean ± SEM, n = 4. (10) Flow cytometry analysis of Ki67+ cells in fibroblasts transfected with siMyc as compared with siCtrl. Data are presented as mean % of Ki67+ cells out of live cells ± SD, n = 3 per group. (11) Proliferation analysis (XTT) of fibroblasts transfected with siMyc as compared with siCtrl. Data are presented as mean fold change from siCtrl ± SD, n = 3 per group. (12) Proliferation analysis (XTT) of fibroblasts transfected with Myc overexpression plasmid or a control plasmid. Data are presented as mean fold change from control ± SD, n = 3 per group.
+
 Since targeting the expression of Myc inhibited CAF-like functions of fibroblasts, we next asked whether overexpression of Myc would be sufficient to drive fibroblasts into a CAF-like state. NLFs were transduced to overexpress Myc (Figure 5I). Interestingly, analysis of CAF-like functions revealed that scratch wound closure was significantly enhanced by overexpression of Myc in a proliferation-independent manner (Figure 5J, Figure 5—figure supplement 1[12]). Notably, Myc overexpression induced upregulation of its target genes BCAT1 and ODC1, which were also upregulated in MAF. Moreover, multiple pro-inflammatory genes were upregulated by Myc overexpression (Figure 5K). While these genes are not direct targets of Myc, they are known NFKB1 target genes. Myc itself is a target of NFKB1 (Grumont et al., 2004; La Rosa et al., 1994), and the two TFs share target genes (Han et al., 2018). Thus, overexpression of Myc was sufficient to activate CAF-like functions including wound closure and expression of its target genes, as well as pro-inflammatory signaling in fibroblasts.
 
 Taken together, our findings imply that Myc has a central role in enhancing fibroblast activation and in mediating their acquisition of metastasis-promoting functions.
 
-## High expression of MYC and its downstream target genes is associated with tumor aggressiveness in human breast cancer
+### High expression of MYC and its downstream target genes is associated with tumor aggressiveness in human breast cancer
 
 Encouraged by these findings, we next asked whether stromal activation of MYC and its downstream targets is operative in human breast cancer. There are currently no available transcriptomic datasets of lung metastases, and we therefore analyzed patient data from breast tumors utilizing a publicly available dataset (Ma et al., 2009). Since we showed that MYC is a central regulator of fibroblast rewiring during metastatic progression in mice, we asked whether MYC is similarly upregulated in the stromal compartment of human breast cancer. Importantly, analysis revealed that MYC is upregulated in breast cancer stroma in correlation with disease progression, as reflected by pathological grade: expression of MYC was significantly elevated in the stroma of grade 3 tumors compared with stroma isolated from more differentiated tumors (Figure 6A). Interestingly, NFKB1 and STAT3 did not exhibit this grade-dependent trend of expression (Figure 6B, C). To further assess whether the upregulation of stromal MYC and its target genes is operative in the stromal compartment of human breast tumors, we compared the expression of MYC with the expression of its target genes in human breast cancer patients. Target genes were selected based on their upregulation in metastasis-associated fibroblasts. We found that stromal expression of MYC was positively correlated with stromal expression of multiple target genes (Figure 6D). Notably, among the MYC downstream target genes that were positively correlated with its expression in human patients were several of the genes that were also validated in murine lung fibroblasts: HSP90AA1, HSPD1, ODC1, and HSPE1 (Figure 6D, Figure 6—figure supplement 1), suggesting that stromal MYC-driven gene signatures play a functional role in human breast cancer. Finally, to validate our findings in human metastasis, we analyzed the expression of MYC in a cohort of breast cancer patients with lung metastasis. We found that MYC was expressed in a subset of lung metastasis-associated stromal cells (Figure 6E), suggesting that stromal upregulation of MYC plays a functional role in human lung metastasis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) Box plots of MYC (A), NFKB1 (B), and STAT3 (C) expression in tumor-associated stroma from the GSE14548 dataset by disease grade (grade 1: G1; grade 2: G2; grade 3: G3). Data are presented as median and upper and lower quartiles ± SD. One-way ANOVA with Tukey correction for multiple comparisons, *p<0.05. (D) Correlations between the expression of MYC and selected downstream targets in tumor-associated stroma based on GSE14548. Positive correlations are marked in dotted red square. *p-value<0.05. (E) Representative immunohistochemistry staining of MYC in lung metastases of breast cancer patients (n = 9). Scale bars: 200 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60745/elife-60745-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** p-values of Pearson correlation and correlation coefficient are presented in the graph.
 
 These results suggest that the activation of MYC transcriptional networks in the stroma of breast tumors plays a role in tumor aggressiveness in human breast cancer.
 
@@ -138,57 +182,536 @@ In summary, we show that integration of multiple analytical platforms of gene ex
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Met-1</td>
+      <td>Collaborator’s lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>4T1</td>
+      <td>Collaborator’s lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>siRNA to Myc (Accell SMARTpool)</td>
+      <td>Dharmacon/ Thermo Fisher Scientific</td>
+      <td>E-040813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>siRNA to Myc 1</td>
+      <td>Dharmacon/ Thermo Fisher Scientific</td>
+      <td>A-040813-17</td>
+      <td>CCUCAAACUUAAAUAGUAU</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>siRNA to Myc 2</td>
+      <td>Dharmacon/ Thermo Fisher Scientific</td>
+      <td>A-040813-20</td>
+      <td>CUCUGGUGCAUAAACUGAC</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>siRNA to Myc 3</td>
+      <td>Dharmacon/ Thermo Fisher Scientific</td>
+      <td>A-040813-18</td>
+      <td>GCUUCAGCCAUAAUUUUAA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Mouse Myc cDNA pCMV-SPORT6</td>
+      <td>Tamar Laboratories</td>
+      <td>#MMM1013-202763479</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti-mouse EpCAM-APC</td>
+      <td>eBioscience/ Thermo Fisher Scientific</td>
+      <td>17-5791</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti-mouse CD45-PercpCy5.5</td>
+      <td>eBioscience/ Thermo Fisher Scientific</td>
+      <td>45-0451</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti-mouse CD31 PeCy7</td>
+      <td>eBioscience/ Thermo Fisher Scientific</td>
+      <td>25-0311</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti-mouse Ki67-PE</td>
+      <td>BioLegend</td>
+      <td>652403</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti-mouse Nfkb1</td>
+      <td>Cell Signaling</td>
+      <td>CST-8242S</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti-mouse HSP90aa1</td>
+      <td>Cell Signaling</td>
+      <td>CST-4877S</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti-mouse Stat3</td>
+      <td>Cell Signaling</td>
+      <td>CST 12640S</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal chicken anti-GFP/YFP</td>
+      <td>Abcam</td>
+      <td>AB-ab13970</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-GFP/YFP</td>
+      <td>Abcam</td>
+      <td>AB-ab6556</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti-mouse Myc</td>
+      <td>Abcam</td>
+      <td>AB-ab32072</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti-mouse THBS1</td>
+      <td>Abcam</td>
+      <td>AB-ab263905</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-mouse Hsf1</td>
+      <td>Cell Signaling</td>
+      <td>4356S</td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-mouse aSMA</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2547</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-mouse PDPN</td>
+      <td>R&amp;D Systems</td>
+      <td>AF3244</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-mouse FSP-1 (S100A4)</td>
+      <td>Abcam</td>
+      <td>Ab41532</td>
+      <td>1:600</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-rabbit</td>
+      <td>Jackson</td>
+      <td>111-035-144</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Opal 520 Reagent Pack</td>
+      <td>Akoya Biosciences</td>
+      <td>FP1487001 KT</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Opal 570 Reagent Pack</td>
+      <td>Akoya Biosciences</td>
+      <td>FP1488001 KT</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Opal 620 Reagent Pack</td>
+      <td>Akoya Biosciences</td>
+      <td>FP1495001 KT</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Opal 650 Reagent Pack</td>
+      <td>Akoya Biosciences</td>
+      <td>FP1496001 KT</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Opal 690 Reagent Pack</td>
+      <td>Akoya Biosciences</td>
+      <td>FP1497001 KT</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Intracellular staining Kit</td>
+      <td>BD Biosciences</td>
+      <td>554714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcat1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CCCATCGTACCTCTTTCACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcat1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GGGAGCGTGGGAATACGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ccl7_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CCTGGGAAGCTGTTATCTTCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ccl7_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GGTTTCTGTTCAGGCACATTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chi3l1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GGCAGAGAGAAACTCCTGCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Chi3l1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>TGAGATTGATAAAATCCAGGTGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Myc_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CGGACACACAACGTCTTGGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Myc_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>AGGATGTAGGCGGTGGCTTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Col5a3_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>AGGGACCAACTGGGAAGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Col5a3_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>AAAGTCAGAGGCAGCCACAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Col8a1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GCCAGCCAAGCCTAAATGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Col8a1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GTAGGCACCGGCCTGAATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxcl10_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CACCATGAACCCAAGTGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxcl10_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>TTGCGAGAGGGATCCCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fosl1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CCAGGGCATGTACCGAGACTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fosl1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>TGGCACAAGGTGGAACTTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>TGTGTCCGTCGTGGATCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>TTGCTGTTGAAGTCGCAGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hsp90aa1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GCGTGTTCATTCAGCCACGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hsp90aa1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>ACTGGGCAATTTCTGCCTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hspd1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CACAGTCCTTCGCCAGATGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hspd1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CTACACCTTGAAGCATTAAGGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hspe1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>AGTTTCTTCCGCTCTTTGACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hspe1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>TGCCACCTTTGGTTACAGTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hsph1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CAACAGAAAGCTCGGATGTGGATAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hsph1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CTTCTGAGGTAAGTTCAGGTGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il6_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>ATACCACTCCCAACAGACCTGTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il6_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CAGAATTGCCATTGCACAACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gusb_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GCAGCCGCTACGGGAGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gusb_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>TTCATACCACACCCAGCCAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Odc1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GACGAGTTTGACTGCCACATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Odc1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>CGCAACATAGAACGCATCCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Timp1_F</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GTGCACAGTGTTTCCCTGTTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Timp1_R</td>
+      <td>HyLabs</td>
+      <td>PCR primers</td>
+      <td>GACCTGATCCGTCCACAAAC</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Molecular Probes</td>
+      <td>D3571</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>BioLegend</td>
+      <td>422801</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JMP14 and up</td>
+      <td>JMP</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All experiments were performed using 6- to 8-week-old female mice, unless otherwise stated. All experiments involving animals were approved by the Tel Aviv University Institutional Animal Care and Use Committee. FVB/n Col1a1-YFP mice were a kind gift from Dr. Gustavo Leone. FVB/N-Tg (MMTV-PyMT) 634Mul/J were backcrossed with FVB/n;Col1a1-YFP mice to create PyMT;Col1a1-YFP double-transgenic mice as described previously (Raz et al., 2018). Non-transgenic Balb/c mice were purchased from Harlan, Israel. All animals were maintained within the Tel Aviv University Specific Pathogen Free (SPF) facility.
 
-## Cell cultures
+### Cell cultures
 
-## Cancer cell lines
+#### Cancer cell lines
 
 Met-1 mouse mammary gland carcinoma cells were a gift from Prof. Jeffrey Pollard. Met-1 cells were plated on 100 mm plastic dishes and cultured with DMEM medium supplemented with 10% FCS, 1% penicillin-streptomycin, and 1% sodium-pyruvate (Biological Industries). 4T1 mouse mammary cell lines were obtained from the laboratory of Dr. Zvi Granot. 4T1 cells were plated on 100 mm plastic dishes and cultured with RPMI medium supplemented with 10% FCS, 1% penicillin-streptomycin, and 1% sodium-pyruvate (Biological Industries). Cell lines were not authenticated in our laboratory. All cell lines were routinely tested for mycoplasma using the EZ-PCR-Mycoplasma test kit (Biological Industries; 20-700-20).
 
-## Primary lung fibroblasts cultures
+#### Primary lung fibroblasts cultures
 
 Lungs were isolated from 6- to 8-week-old FVB/n female mice or Balb/C female mice. Single-cell suspensions were prepared as previously described (Sharon et al., 2013). Single-cell suspensions were seeded on 6-well plates pre-coated with Rat tail collagen (Corning; 354236). Cells were grown in DMEM media supplemented with 10% FCS and maintained at 37°C with 5% CO2.
 
-## Conditioned media
+### Conditioned media
 
-## Tumor cell CM (Met-1 CM or 4T1 CM)
+#### Tumor cell CM (Met-1 CM or 4T1 CM)
 
 Cells were cultured as described above. When cells reached 80% confluency, plates were washed twice with PBS and fresh serum-free medium (SFM) was applied. After 48 hr, medium was collected, filtered through 0.45 μm filters under aseptic conditions, flash-frozen in liquid nitrogen, and stored at −80°C. SFM supplemented as above was used as control.
 
-## NLF or ALFs CM
+#### NLF or ALFs CM
 
 NLFs were plated as described above. CM was prepared by incubating NLF with either SFM (for NLF CM) or tumor cell CM (for ALF CM) for 24 hr. After 24 hr, plates were washed twice with PBS and cells were incubated for additional 24 hr with fresh SFM. After 48 hr, medium was collected, filtered through 0.45 μm filters under aseptic conditions, flash-frozen in liquid nitrogen, and stored at −80°C.
 
-## Scratch assay
+### Scratch assay
 
 NLF were plated in a 96-well IncuCyte imageLock plate (Essen BioScience). SFM was applied for 16 hr. Wells were then washed three times with PBS and a scratch was made using the IncuCyte WoundMaker (Essen Bioscience). Wells were washed three times with PBS and cancer cell CM or SFM were applied. The plate was placed in the IncuCyte system (Essen BioScience) for 48 hr. Images were analyzed using the IncuCyte software. Inhibition of proliferation was performed by adding 20 µg/ml mitomycin C (Sigma-Aldrich; M4287) to all wells during the scratch closure time.
 
-## Collagen contraction
+### Collagen contraction
 
 NLFs were plated as mentioned above and incubated with SFM for 16 hr. Following, cells were detached from dishes with trypsin and counted. A total of 1.5 × 105 fibroblasts were suspended in a medium and collagen mixture (cancer cell CM or SFM mixed with High Concentration Rat Tail Collagen, type 1, BD Biosciences) and allowed to set at 37°C for 45 min. Tumor cell CM or SFM were applied, gels were released, and incubated for 24 hr. Gels were photographed at various time points. ImageJ software was used to measure gel area and assess collagen contraction.
 
-## Migration assay
+### Migration assay
 
 Met-1 (5 × 104) cells were placed into the upper chamber of 24 Transwell inserts, with pore sizes of 8 µm, in 300 µl NLF CM or ALF CM. Following 24 hr incubation, the upper side of the apical chamber was scraped gently with cotton swabs to remove nonmigrating cells, fixed with methanol, and stained with DAPI. Migrated cells were documented under a fluorescence microscope. ImageJ software was used to quantify migration.
 
-## Multiplexed immunofluorescence staining
+### Multiplexed immunofluorescence staining
 
 Fibroblast markers staining was performed in formalin-fixed paraffin-embedded (FFPE) blocks. Serial sections were obtained to ensure equal sampling of the examined specimens (5–10 μm trimming). FFPE sections from mouse lungs were deparaffinized and incubated in 10% neutral buffered formalin (NBF) for 20 min in room temperature, washed, and then antigen retrieval was performed with citrate buffer (pH 6.0; for αSMA and PDPN) or with Tris-EDTA buffer (pH 9.0; for S100A4). Slides were blocked with 10% BSA + 0.05% Tween20 and antibodies were used in a multiplexed manner with OPAL reagents, O.N. at 4°C (Opal Reagent pack and amplification diluent, Akoya Biosciences). Following overnight incubation with primary antibodies, slides were incubated with secondary antibodies conjugated to HRP for 10 min, washed, and incubated with OPAL reagents for 10 min. After each cycle, slides were stained sequentially with the next first antibody or finally with DAPI and mounted. Each antibody was validated and optimized separately, and the sequence of MxIF was optimized to confirm signals were not lost or changed during the multistep protocol. Slides were scanned at ×20 magnification using the Leica Aperio VERSA slide scanner. Quantitative analyses of fluorescence intensity were performed with ImageJ software.
 
 For TF panel, lungs were fixed in PFA and embedded in O.C.T on dry ice. Serial sections were obtained to ensure equal sampling of the examined specimens (5 μm trimming). Sections were fixed with 4% PFA for 5 min, permeabilized by 0.2% Triton for 20 min, and fixed with NBF as described above. Antigen retrieval was performed using citrate buffer (pH 6.0). Slides were blocked with 1% BSA, 5% normal goat serum in 0.2% PBST for 1 hr, and primary antibody was incubated for O.N in 4°C. Slides were then incubated with secondary antibodies conjugated to HRP for 10 min and incubated with OPAL reagents for 10 min. We used the following staining sequences of primary antibodies: YFP, HSF1, STAT3, NFkB1, and MYC, and the fluorophores Opal 520, Opal 690, Opal 650, Opal 620, and Opal 570, respectively. The samples were imaged with a LeicaSP8 confocal laser-scanning microscope (Leica Microsystems, Mannheim, Germany).
 
-## Flow cytometry analysis and cell sorting
+### Flow cytometry analysis and cell sorting
 
 Single-cell suspensions of lungs isolated from FVB/n;Col1α1-YFP or PyMT;Col1α1-YFP mice were stained using the following antibodies: anti-EpCAM-APC (eBioscience, 17-5791), anti-CD45-PerCP-Cy5.5 (eBioscience, 45-0451), and anti-CD31-PE-Cy7 (eBioscience, 25-0311). DAPI was used to exclude dead cells (Molecular Probes; D3571). Ki67-PE (BioLegend, 652403) intracellular staining of fibroblasts was done using an intracellular staining kit (BD Biosciences, 554714) according to the manufacturer’s protocol. Flow cytometric analysis was performed using CytoFLEX Flow Cytometer (Beckman Coulter). Cell sorting was performed using BD FACSAria II or BD FACSAria Fusion (BD Biosciences). Data analysis was performed with the Kaluza Flow Analysis software (Beckman Coulter).
 
-## RNA isolation and qRT-PCR
+### RNA isolation and qRT-PCR
 
 RNA from sorted cells was isolated using the EZ-RNAII kit (20-410-100, Biological Industries) according to the manufacturer's protocol. RNA from in vitro experiments was isolated using the PureLink RNA Mini Kit (Invitrogen; 12183018A). cDNA synthesis was conducted using qScript cDNA Synthesis kit (Quanta; 95047-100). Quantitative real-time PCRs (qRT-PCR) were conducted using PerfeCTa SYBR Green Fastmix ROX (Quanta; 95073-012). In all analyses, expression results were normalized to Gusb or Gapdh and to control cells. RQ (2-ΔΔCt) was calculated.
 
-## Transfection of primary fibroblasts
+### Transfection of primary fibroblasts
 
 NLFs were cultured in DMEM supplemented with 10% FCS. At 70% confluency, cells were transfected with Accell Delivery Media (GE Dharmacon; B-005000) supplemented with 1 µM Accell SMARTpool mouse Myc siRNA (Dharmacon; E-040813) or Accell Control Pool nontargeting siRNA (Dharmacon; D-001910) for 96 hr. Accell SMARTpool contains a mixture of four siRNAs targeting one gene and provides extended duration of gene knockdown with only minimal effects on cell viability and the innate immune response. The efficiency of Myc siRNA knockdown was analyzed by qRT-PCR.
 
@@ -198,19 +721,19 @@ For overexpression of Myc, cells were transiently transfected with a plasmid of 
 
 XTT assay (Biological Industries, 20-300-1000) was performed 24 hr following transfection according to the manufacturer’s protocol.
 
-## RNA-seq
+### RNA-seq
 
 CD45-EpCAM-YFP+fibroblasts were isolated by cell sorting from normal FVB/n; Col1a1-YFP mice (n = 4), PyMT;Col1a1-YFP micrometastases-bearing mice (n = 3), and PyMT;Col1a1-YFP macrometastases-bearing mice (n = 4). Micrometastases were defined as visible mammary tumors, the absence of visible macrometastases, and the presence of EpCAM+ cells in lungs. Cells were collected into Trizol LS reagent (Life Technologies; 10296-028), and RNA was isolated according to the manufacturer’s instructions. Transcriptomic sequencing of RNA was performed using NEBNext rRNA Depletion Kit (New England Biolabs, Inc; E6310S) and SMARTer Stranded Total RNA-Seq Kit – Pico Input (Clontech; 635005) and sequenced on the Illumina HiSeq 2500 sequencer (Illumina, Inc) at the Technion Genome Center. Sequenced reads were aligned to the mouse genome (mm9) using TopHat2 (Kim et al., 2013). Gene expression counts were calculated using HTseq-count (Anders et al., 2015) using Gencode annotations. Only genes that got at least 20 counts in at least three replicate samples were included in subsequent analysis (12,105 genes). Gene expression counts were normalized using quantile normalization (Bolstad et al., 2003). Levels below 20 were then set to 20 to reduce inflation of FC estimates for lowly expressed genes. Preliminary differential expression analysis was carried out using DESeq2 (Love et al., 2014). For subsequent analyses, only protein coding genes were included. In addition, coefficient of variance (CV) was calculated per group (NLF, MIF, MAF) and the top 1% most in-group deviated genes (top 1% CV) were excluded, leaving a total of 11,115 genes.
 
-## Stage-specific signature analysis
+### Stage-specific signature analysis
 
 The top altered genes from MAF vs. NLF were selected based on FC > |2|. The MIF vs. NLF genes were selected based on an FC cutoff |1.5|. Data was Z-scored per gene. Venn diagram was generated using Bioinformatics and Evolutionary Genomics website (http://bioinformatics.psb.ugent.be/webtools/Venn/). All hierarchical clustering (based on Euclidean distance and average linkage) and PCAs were performed using JMP software version 14 and up.
 
-## Gene selection based on network connectivity
+#### Gene selection based on network connectivity
 
 Each group of genes (MIF vs. NLF, MAF vs. NLF, and MAF vs. MIF) were subjected to PPIs analysis using the STRING platform (Szklarczyk et al., 2017). The minimum confidence of interaction was defined as confidence > 0.3 and connections based on text-mining were excluded. Groups of under four genes were excluded, narrowing the size of each group by ~50%.
 
-## Pathway enrichment
+### Pathway enrichment
 
 For functional annotation, pathway and enrichment analysis, each comparison was analyzed separately, to a total of six comparisons (MIF vs. NLF up, MIF vs. NLF down, MAF vs. NLF up, MAF vs. NLF down, MAF vs. MIF up, MAF vs. MIF down). Over-representation analysis was performed using the ConsensusPath DataBase (CPDB) (Herwig et al., 2016; Kamburov et al., 2011) (http://cpdb.molgen.mpg.de/MCPDB) platform for GO-molecular function (MF) and GO-biological process (BP), Reactome, and KEGG. Terms larger than 500 genes were excluded. Results were considered significant with a p-value<0.01, q-value < 0.05, and a coverage > 3%. To increase the specificity of the enriched terms, we compared the relative overlap and the number of shared entities between the enriched terms from the three different databases (GO, KEGG, and Reactome). Selected terms with at least two shared entities and a relative overlap > 0.2 were grouped and annotated based on a common enriched function. Groups smaller than three terms were excluded. These steps enabled the selection of the top ~10% most highly and significantly connected terms.
 
@@ -218,44 +741,44 @@ Bubble plot heat maps were generated with averaged log-transformed q-values [-Lo
 
 Heat maps were generated per annotation group, with a [log2(Fold-change)] of gene expression calculated per comparison (MIF vs. NLF, MAF vs. NLF, and MAF vs. MIF).
 
-## Gene Set Enrichment Analysis (GSEA)
+### Gene Set Enrichment Analysis (GSEA)
 
 The GSEA Java plug-in was used to probe log-transformed normalized expression data (Subramanian et al., 2005) (http://software.broadinstitute.org/gsea/index.jsp). Settings for the analysis were defined as follows: gene set database – hallmark gene sets only, number of permutations −1000, comparisons – each separately (MIF vs. NLF, MAF vs. NLF, MAF vs. MIF), permutation type – gene_set, minimum size – 5, maximum size – 500. Significant results were considered for false discovery rate (FDR) < 0.05 and normalized enrichment score (NES) > |2|.
 
-## TF ranking
+### TF ranking
 
-## Selection of TFs
+#### Selection of TFs
 
 TFs (Hif1a, Hsf1, Myc, Nfkb1, Stat3) that were enriched in pathway enrichment and/or GSEA analyses were selected as candidates and subjected to subsequent analyses.
 
-## STRING
+#### STRING
 
 All five candidate TFs were subjected to PPI analysis in combination with each list of stage-specific genes per comparison (upregulated and downregulated in MIF vs. NLF, MAF vs. NLF, or MAF vs. MIF separately) using the STRING platform (Szklarczyk et al., 2017). The confidence of the interaction was defined as >0.2. For the ranking of each TF, the number of separate interactions for each TF was counted.
 
-## Advanced Network Analysis Tool (ANAT)
+#### Advanced Network Analysis Tool (ANAT)
 
 The ANAT application (Yosef et al., 2011) was used as an add-in to Cytoscape (version 7 and up) software. We performed the analysis for each TF separately and for all of the TFs combined. The TFs were defined as anchors in the list, and the target genes were each list of stage-specific genes per comparison separately. An HTML report of all possible pathways between the anchor and each gene in the target genes list was generated. The minimum confidence for a connection was defined as confidence >0.2. An anchor could be connected to a target directly or indirectly. For the ranking of each TF, we calculated several parameters of the protein-protein network: (1) the number of stage-specific genes connected with each TF directly (1st neighbor), (2) the average shortest path for each TF, and (3) the centrality of the network. Parameters 2 and 3 were calculated using the network analysis tool of the Cytoscape software.
 
-## RegNetwork
+#### RegNetwork
 
 Each TF was defined as a regulator in the RegNetwork database (Liu et al., 2015). For ranking of each TF, the number of registered target genes from each list of stage-specific genes was counted.
 
-## VarElect
+#### VarElect
 
 VarElect platform (Stelzer et al., 2016) was utilized to analyze the relation of each list of stage-specific genes per comparison separately with each TF. Each gene from the list received a score according to its relation to the TF. For the ranking of each TF, several parameters were considered: (1) the number of directly related genes, (2) the average score of related genes, and (3) the average score of indirectly related genes.
 
-## Ranking
+#### Ranking
 
 Ranking parameters described above were Z-scored per parameter. For ‘Characteristic path length,’ results were first transformed with a (−1) power. Statistical analysis was performed using one-way ANOVA with Tukey correction for multiple comparisons.
 
-## Human breast cancer data
+### Human breast cancer data
 
 The expression of the metastasis-associated gene signature and MYC, NFKB1, or STAT3 was analyzed in human breast cancer stroma based on a publicly available dataset GSE14548 (Ma et al., 2009). Correlation analysis between MYC and its downstream genes derived from the metastasis-associated gene signature was performed on normalized expression values using Pearson correlation. p-value<0.05 was considered significant.
 
-## Human MYC staining
+### Human MYC staining
 
 Human patient samples were collected and processed at the Sheba Medical Center, Israel, under an approved Institutional Review Board (IRB) (3112-16). Sections stained for MYC were analyzed by an expert pathologist (Prof. Iris Barshack). Images were scanned at ×20 magnification using the Leica Aperio VERSA slide scanner. Analysis of the staining was performed using ImageScope software.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using GraphPad Prism software and JMP pro 14 and 15 software. For two groups, statistical significance was calculated using t-test with Welch correction. For more than two comparisons, one-way ANOVA with Tukey correction for multiple comparisons was applied. All tests were two-tailed. p-value of ≤0.05 was considered statistically significant. Correlation analyses were based on linear regression with Pearson correlation. Bar graphs represent mean and standard deviation (SD) unless otherwise stated. All experiments represent at least three separate biological repeats, unless otherwise stated.

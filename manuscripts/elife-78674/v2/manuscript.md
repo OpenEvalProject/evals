@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/035xkbk20 Microbes, Evolution, Phylogeny and Infection (MEPHI), UM63, Institut de Recherche pour le Développement (IRD), IHU Méditerranée Infection, Marseille, France, Aix-Marseille Université Marseille France
-2. https://ror.org/053fq8t95 Faculty of Medicine, Health and Life Sciences, Institute of Life Science, Swansea University Swansea United Kingdom
-3. https://ror.org/03zbnzt98 Biology Department, Woods Hole Oceanographic Institution Woods Hole United States
-4. https://ror.org/002cp4060 Assistance Publique - Hôpitaux de Marseille (AP-HM) Marseille France
+1. Microbes, Evolution, Phylogeny and Infection (MEPHI), UM63, Institut de Recherche pour le Développement (IRD), IHU Méditerranée Infection, Marseille, France, Aix-Marseille Université Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+2. Faculty of Medicine, Health and Life Sciences, Institute of Life Science, Swansea University Swansea United Kingdom ([ROR:053fq8t95](https://ror.org/053fq8t95))
+3. Biology Department, Woods Hole Oceanographic Institution Woods Hole United States ([ROR:03zbnzt98](https://ror.org/03zbnzt98))
+4. Assistance Publique - Hôpitaux de Marseille (AP-HM) Marseille France ([ROR:002cp4060](https://ror.org/002cp4060))
 
 † Corresponding author
 
@@ -49,7 +49,7 @@ Many giant viral genes and gene products related to energy production and metabo
 
 **Figure 1.:** Schematic of the TCA cycle (dark blue) feeding into the Urea cycle (black); Carbon transfer (red); Gluconeogenesis (scarlet); Glycolysis (marine); Photosynthesis (green); Amino acid metabolism (blue); Fermentation (purple); and lipid β-oxidation (orange). Also shown in the Legend are the identified cellular enzymes and putative substrates which have been identified as being encoded in specific NCLDV genomes, here represented by Mimiviridae, Phycodnaviridae, and Pandoraviridae.
 
-## Glycolysis and gluconeogenesis
+### Glycolysis and gluconeogenesis
 
 Glycolysis is an ancient metabolic pathway that occurs in the cytoplasm of the cell and converts glucose into pyruvate, which is accompanied by transfer of electrons to NAD+ in order to generate NADH2 (Potter and Fothergill-Gilmore, 1993; Kumari, 2018). Inversely, gluconeogenesis is a process occurring in animals, fungi, plants, and bacteria, which results in the generation of glucose from non-carbohydrate carbon substrates such as lactate, amino acids, and glycerol (Rodwell et al., 2015).
 
@@ -57,17 +57,248 @@ A genomic study using environmental metagenome-assembled genomes (MAGs), identif
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78674/elife-78674-fig2-v2.jpg)
 
-**Figure 2.:** A), Pandoravirus massiliensis (B) and Tupanvirus (C).(A) Mimivirus particle is composed of an external layer of dense fibers surrounding an icosahedral capsid and an internal membrane sac enveloping the virus genomic material. (B) Pandoravirus massiliensis virion is ovoid-shaped with an ostiole-like apex, measuring 1.0 μm in length and 0.5 μm in diameter. (C) Tupanvirus exhibits an icosahedral capsid similar to those of Mimivirus measuring ~450 nm. However, Tupanvirus virion harbors a large cylindrical tail (550 nm extension;~450 nm diameter, including fibrils) attached to the base of the capsid. Electron micrographs were acquired on a Tecnai G2 transmission electron microscope (Scale bar, 200 nm).
+**Figure 2.:** (A) Mimivirus particle is composed of an external layer of dense fibers surrounding an icosahedral capsid and an internal membrane sac enveloping the virus genomic material. (B) Pandoravirus massiliensis virion is ovoid-shaped with an ostiole-like apex, measuring 1.0 μm in length and 0.5 μm in diameter. (C) Tupanvirus exhibits an icosahedral capsid similar to those of Mimivirus measuring ~450 nm. However, Tupanvirus virion harbors a large cylindrical tail (550 nm extension;~450 nm diameter, including fibrils) attached to the base of the capsid. Electron micrographs were acquired on a Tecnai G2 transmission electron microscope (Scale bar, 200 nm).
 
 This same study revealed that three genes associated with gluconeogenesis were present in Mimiviridae genomes (Moniruzzaman et al., 2020): fructose 1,6-bisphosphatase, which catalyzes the biotransformation of fructose-1,6-bisphosphate into fructose-6-phosphate; phosphoenolpyruvate carboxykinase that converts oxaloacetate to phosphoenolpyruvate; and pyruvate carboxylase that catalyzes the carboxylation of pyruvate to form oxaloacetate (Figure 1, Table 1). The presence of such genes in infecting viruses also suggests there could be reprogramming of the host glycolysis pathways.
 
-## Fermentation
+**Table 1.**
+ List of metabolic enzymes detected in NCLDVs.The enzymes were grouped according to the metabolic pathway to which they belong and associated with the giant virus and/or the family in which they were identified.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pathway</th>
+      <th>Enzyme</th>
+      <th>Function</th>
+      <th>KEGG*</th>
+      <th>Detected in</th>
+      <th>Family</th>
+      <th>Reference(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Amino acid catabolism</td>
+      <td>Glutamate dehydrogenase</td>
+      <td>Reversible conversion of glutamate to α-ketoglutarate and ammonia</td>
+      <td>R00243</td>
+      <td>Pandoravirus and others uncharacterized viruses†</td>
+      <td>Mimiviridae, Pandoraviridae and Phycodnaviridae</td>
+      <td>Moniruzzaman et al., 2020; Aherfi et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Glutamine synthetase</td>
+      <td>Condensation of glutamate and ammonia to form glutamine:</td>
+      <td>R00253</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae</td>
+      <td>Ha et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Glutaminase</td>
+      <td>Hydrolysis of glutamine into glutamate</td>
+      <td>R00256</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae</td>
+      <td>Moniruzzaman et al., 2020;Ha et al., 2021</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Lipide catabolism and β-Oxydation</td>
+      <td>Triacylglycerol lipase</td>
+      <td>Degrades triacylglycerol into glycerol and fatty acids</td>
+      <td>R01369</td>
+      <td>Prymnesium kappa virus RF01</td>
+      <td>Mimiviridae</td>
+      <td>Blanc-Mathieu et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Fatty-acyl-CoA Synthase</td>
+      <td>Conversion of a acetyl-CoA and seven malonyl-CoA molecules to produce a Palmitoyl-CoA</td>
+      <td>R05190</td>
+      <td>Prymnesium kappa virus RF01</td>
+      <td>Mimiviridae</td>
+      <td>Blanc-Mathieu et al., 2021</td>
+    </tr>
+    <tr>
+      <td>CoA-transferase</td>
+      <td>Conversion acyl-CoA and acetate into fatty acid anion and acetyl-CoA.</td>
+      <td>R00393</td>
+      <td>Prymnesium kappa virus RF01</td>
+      <td>Mimiviridae</td>
+      <td>Blanc-Mathieu et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Acyl-CoA dehydrogenase</td>
+      <td>Desaturation of the acyl-CoA esters</td>
+      <td>R00392</td>
+      <td>Prymnesium kappa virus RF01 and others uncharacterized viruses†</td>
+      <td>Mimiviridae</td>
+      <td>Blanc-Mathieu et al., 2021</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Citric Acid Cycle</td>
+      <td>Succinate dehydrogenase</td>
+      <td>Conversion of succinate into fumarate</td>
+      <td>R02164</td>
+      <td>Prymnesium kappa virus RF01, Pandoravirus massiliensis and others uncharacterized viruses†</td>
+      <td>Mimiviridae, Pandoraviridae and Phycodnaviridae</td>
+      <td>Moniruzzaman et al., 2020; Aherfi et al., 2022; Blanc-Mathieu et al., 2021; Ha et al., 2021;</td>
+    </tr>
+    <tr>
+      <td>Citrate synthase</td>
+      <td>Claisen condensation between acetyl CoA and oxaloacetate to yield, after hydrolysis of the thioester bond, citrate and CoA</td>
+      <td>R00351</td>
+      <td>Pandoravirus massiliensis and others uncharacterized viruses†</td>
+      <td>Pandoraviridae and Mimiviridae</td>
+      <td>Aherfi et al., 2022; Moniruzzaman et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Aconitase</td>
+      <td>Catalyzes the stereospecific isomerization of citrate to isocitrate via cis-aconitate in a non-redox reaction</td>
+      <td>R01324</td>
+      <td>Pandoravirus massiliensis and others uncharacterized viruses†</td>
+      <td>Pandoraviridae and Mimiviridae</td>
+      <td>Moniruzzaman et al., 2020; Rodrigues et al., 2019; Aherfi et al., 2022</td>
+    </tr>
+    <tr>
+      <td>Isocitrate/isopropyl malate dehydrogenase</td>
+      <td>Oxidative decarboxylation of isocitrate, resulting in alpha-ketoglutarate and carbon dioxide.</td>
+      <td>R00267 /R01652</td>
+      <td>Pandoravirus massiliensis and others uncharacterized viruses†</td>
+      <td>Pandoraviridae and Mimiviridae</td>
+      <td>Aherfi et al., 2022; Moniruzzaman et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Malate synthase</td>
+      <td>Conversion of enzyme are acetyl-CoA, H2O, and glyoxylate into (S)-malate and CoA.</td>
+      <td>R00472</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae</td>
+      <td>Ha et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Alpha-ketoglutarate decarboxylase</td>
+      <td>Conversion of α-ketoglutarate to succinyl-CoA and produces NADH directly providing electrons for the respiratory chain</td>
+      <td>R00272</td>
+      <td>Pandoravirus massiliensis</td>
+      <td>Pandoraviridae</td>
+      <td>Aherfi et al., 2022</td>
+    </tr>
+    <tr>
+      <td>Fumarase</td>
+      <td>Conversion of fumarate to L-malate</td>
+      <td>R01082</td>
+      <td>Pandoravirus massiliensis</td>
+      <td>Pandoraviridae</td>
+      <td>Aherfi et al., 2022</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Fermentation</td>
+      <td>Pyruvate formate-lyase</td>
+      <td>Catalyzes the reaction of pyruvate +CoA acetyl-CoA +formate</td>
+      <td>R00212</td>
+      <td>Tetraselmis virus</td>
+      <td>Phycodnaviridae</td>
+      <td>Müller et al., 2012; Schvarcz and Steward, 2018; Sun et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Formate-lyase activating enzyme</td>
+      <td>Converts pyruvate and CoA into acetyl CoA and formate</td>
+      <td>R04710</td>
+      <td>Tetraselmis virus</td>
+      <td>Phycodnaviridae</td>
+      <td>Müller et al., 2012; Schvarcz and Steward, 2018</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Gluconeogenesis</td>
+      <td>Fructose bisphosphatase</td>
+      <td>Converts fructose-1,6-bisphosphate to fructose 6-phosphate</td>
+      <td>R00762</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae</td>
+      <td>Moniruzzaman et al., 2020; Ha et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Phosphoenolpyruvate carboxykinase</td>
+      <td>Converts oxaloacetate into phosphoenolpyruvate and carbon dioxide.</td>
+      <td>R00341</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae</td>
+      <td>Moniruzzaman et al., 2020; Ha et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Pyruvate carboxylase</td>
+      <td>Catalyzes the conversion of pyruvate to oxaloacetate</td>
+      <td>R00344</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae</td>
+      <td>Moniruzzaman et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Glycolysis</td>
+      <td>Glyceraldehyde-3-phosphate dehydrogenase</td>
+      <td>Conversion of pyruvate to oxaloacetate</td>
+      <td>R01061</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+      <td>Moniruzzaman et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Phosphoglycerate mutase</td>
+      <td>Transfers the phosphate from 3-phosphoglyceric acid (3 PG) to the second carbon to form 2-phosphoglyceric acid (2 PG)</td>
+      <td>R01518</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+      <td>Moniruzzaman et al., 2020; Ha et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Phosphoglycerate kinase</td>
+      <td>Catalyzes the formation of ATP from ADP and 1,3-diphosphoglycerate</td>
+      <td>R01512</td>
+      <td>Uncharacterized viruses†</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+      <td>Moniruzzaman et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Photosynthesis</td>
+      <td>Rhodopsin</td>
+      <td>Generating a proton motive force across the cell membrane (light dependent)</td>
+      <td>R02903</td>
+      <td>Organic Lake Phycodnavirus 2 and Phaeocystis globosa virus</td>
+      <td>Phycodnaviridae</td>
+      <td>Needham et al., 2019; Yutin and Koonin, 2012; Schulz et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Mannitol metabolism</td>
+      <td>Mannitol 1-phosphate dehydrogenase</td>
+      <td>Converts D-mannitol 1-phosphate and NAD +into fructose 6-phosphate, NADH and H+.</td>
+      <td>R00758</td>
+      <td>Tetraselmis virus</td>
+      <td>Phycodnaviridae</td>
+      <td>Schvarcz and Steward, 2018</td>
+    </tr>
+    <tr>
+      <td>Saccharide degradation</td>
+      <td>Alpha-galactosidase</td>
+      <td>Catalyzes the removal of terminal α-galactose groups from substrates such as glycoproteins and glycolipids</td>
+      <td>R01101</td>
+      <td>Tetraselmis virus</td>
+      <td>Phycodnaviridae</td>
+      <td>Schvarcz and Steward, 2018</td>
+    </tr>
+  </tbody>
+</table>
+
+_*KEGG codes for the biochemical reactions described (https://www.genome.jp/kegg/reaction/).†Enzymes detected in NCLDVs from metagenome-assembled genome analysis._
+
+### Fermentation
 
 Fermentation is a heterotrophic anaerobic redox process that uses an organic compound as the terminal electron acceptor (Müller et al., 2012; Zhou et al., 2017). It is considered as an ancient metabolic pathway. Genes encoding for two key fermentation genes – pyruvate formate-lyase and pyruvate formate-lyase activating enzyme – have been found in Tetraselmis virus (TetV) (Chlorodendrephycae) (Figure 1, Table 1), a mimivirus infecting the green algae Tetraselmis and land plants of the lineage Viridiplantae Müller et al., 2012. This viral host utilizes anaerobic energy metabolism in low-oxygen conditions, suggesting horizontal gene transfer (Müller et al., 2012; Schvarcz and Steward, 2018; T.-W. Sun et al., 2020, p. 1). Pyruvate formate-lyase catalyzes the reversible conversion of pyruvate and coenzyme-A into formate and acetyl-CoA (Knappe et al., 1974). It is thought that in low oxygen conditions the host may use these viral genes to generate the required energy via manipulation of anaerobic energy metabolism. In the absence of light, algae and bacteria deplete dissolved oxygen in the superficial water. In anoxic conditions, the fermentation process thus may favor viral spreading, with the metabolism of infected cells being potentially maintained by virally encoded fermentation genes, an advantage for the viral host (Schvarcz and Steward, 2018).
 
 Other putative viral fermentation genes that have been identified include the mannitol metabolism protein, mannitol 1-phosphate dehydrogenase and the saccharide degradation enzyme alpha-galactosidase in the Tetraselmis virus (Table 1). However, the role of these genes in the virus is less clear (Schvarcz and Steward, 2018).
 
-## Tricarboxylic acid cycle
+### Tricarboxylic acid cycle
 
 The tricarboxylic acid (TCA) cycle – also known as the Krebs cycle – is a linked series of biochemical reactions used by all aerobic organisms to release stored energy via the oxidation of acetyl-CoA, derived from carbohydrates, fats, and proteins (Smith and Morowitz, 2004). It is the central metabolic hub for many biochemical pathways. It begins from acetate (in the form of acetyl-CoA) and water, to reduce NAD +into NADH, with the concomitant release of carbon dioxide (Krebs and Johnson, 1937; Meléndez-Hevia et al., 1996; Noor et al., 2010). The NADH generated by this cycle enters the oxidative phosphorylation (electron transport) pathway. As a result of these two closely linked metabolic pathways, several molecules of ATP are produced.
 
@@ -95,7 +326,7 @@ Glutaminase and glutamine synthase, two cellular enzymes that regulate primary e
 
 ## Energy from inorganic compounds including photosynthesis
 
-## Energy from inorganic compounds
+### Energy from inorganic compounds
 
 Chemolithotrophy is a metabolic process whereby energy is derived from the oxidation of inorganic compounds such as hydrogen (Friedrich and Schwartz, 1993), reduced sulfur compounds (Friedrich, 1997), hydrogen sulfide, thiosulfate, ferrous iron, and ammonia (Jetten et al., 1998). Microbial oxidation of inorganic compounds is governed by chemical and enzymatic reactions to generate energy (ATP) and reducing power (NADH).
 
@@ -103,7 +334,7 @@ The most common chemotrophic organisms that oxidize inorganic compounds are prok
 
 A recent metagenomic study found that predicted ferric reductase enzymes were encoded in several NCLDV genomes (Schulz et al., 2020). In cellular organisms, ferric reductases function as a terminal reductase in an electron transport chain, by reducing ferric ion Fe3+ into ferrous ion Fe2+. Ferric reductase enzymes are also critical for the assimilatory iron pathway in organisms (Lovley, 2002; Lovley and Coates, 2000; Lovley et al., 1998). The reduction of ferric iron combined with a proton gradient through the cell membrane, is used by membrane-bound ATP synthase to generate the ATP (Schröder et al., 2003). This proton gradient can also be used to reduce NAD(P)+ in chemolithotrophs for several biosynthetic reactions (Lovley, 2002; Lovley and Coates, 2000). The presence of these enzymes in giant viruses and their functioning biochemistry may support infected host cell(s) metabolism and confer on them a competitive advantage in suboxic environments (Márquez et al., 2007). Moreover, these enzymes may also play a significant role in modifying the composition of the surrounding chemical environment, which can impact other microorganisms, most notably those that use iron respiration (Schulz et al., 2020).
 
-## Photosynthesis
+### Photosynthesis
 
 Photosynthesis is arguably the most important biological process functioning in nature, and is responsible for the existence of most life on Earth. It is essential for producing and maintaining the oxygen content of the atmosphere and supplies most of the energy necessary for life on the planet (Bryant and Frigaard, 2006). Photosynthesis is a pivotal process used by many autotrophic organisms, enabling them to convert light energy into chemical energy which is stored in the form of carbohydrates synthesized from carbon dioxide and water (Blankenship, 2010; Olson, 2006). Subsequently, the carbohydrates can be released to fuel the organism’s cellular metabolic activities. However, viral infections can potentially affect and/or redirect metabolic pathways in photosynthetic host organisms. For example, infection with a mimivirus has been shown to suppress transcripts related to photosynthesis as well as cytoskeleton formation in brown-tide forming pelagophyte Aureococcus anophagefferens (Moniruzzaman et al., 2018; see below).
 
@@ -123,6 +354,140 @@ In another example of viral manipulation of host primary metabolism, genes encod
 
 In addition to primary metabolism energetic enzymes described above, a remarkable diversity of auxiliary metabolic genes involved in (i) carbon metabolism, nitrogen and nutrient cycling and (ii) soil organic matter degradation, have been found in marine viral communities (Table 2). It is hypothesized that these metabolic genes can complement deficient host metabolic pathways in order to sustain their host under environmental stressful conditions, with the overall goal to increase or maintain viral replication (Coutinho et al., 2017; Howard-Varona et al., 2020; Hurwitz and U’Ren, 2016). Such host / virus interactions appear to play an important role in the global ecosystem (Brum and Sullivan, 2015; Hurwitz and U’Ren, 2016; Suttle, 2007; Zimmerman et al., 2020).
 
+**Table 2.**
+ List of enzymes with other biological roles detected in NCLDVs.The enzymes were grouped according to the biological process to which they belong and associated with the giant virus and/or the family in which they were identified.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Biological process</th>
+      <th>Enzyme</th>
+      <th>Function</th>
+      <th>Detected in</th>
+      <th>Family</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Oxidative stress regulation</td>
+      <td>Superoxide dismutase</td>
+      <td>Catalyzes the dismutation of the superoxide radical into ordinary molecular oxygen and hydrogen</td>
+      <td>Emiliania huxleyi virus, Megavirus chiliensis, and others uncharacterized viruses*</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Glutathione peroxidase</td>
+      <td>Reduces free hydrogen peroxide to water.</td>
+      <td>Emiliania huxleyi virus and others uncharacterized viruses*</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Ion’s transport and assimilation</td>
+      <td>Ammonium transporter</td>
+      <td>Mediates the transport of ammonium ions</td>
+      <td>Ostreococcus virus 6</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Phosphate transporter</td>
+      <td>Mediates the transport of phosphate ions</td>
+      <td>Uncharacterized viruses</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Sulfur transporter</td>
+      <td>Mediates the transport of sulfur ions</td>
+      <td>Uncharacterized viruses</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Magnesium transporter</td>
+      <td>Mediates the transport of magnesium ions</td>
+      <td>Uncharacterized viruses</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Iron transporter</td>
+      <td>Mediates the transport of iron ions</td>
+      <td>Uncharacterized viruses</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Ferritin</td>
+      <td>Iron storage protein</td>
+      <td>Uncharacterized viruses</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Ferric reductases</td>
+      <td>Oxidation of NADPH and transference the electron to reduce metals like iron and copper</td>
+      <td>Uncharacterized viruses</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Multicopper oxidases</td>
+      <td>Oxidation of different substrates by accepting electrons at a mononuclear copper centre and transferring them to a trinuclear copper centre.</td>
+      <td>Uncharacterized viruses</td>
+      <td>Mimiviridae and Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Biosynthesis of glycosphingolipids</td>
+      <td>Serine palmitoyltransferase</td>
+      <td>Catalyzes the decarboxylative condensation of L-serine and palmitoyl coenzyme A to 3-ketodihydrosphingosine.</td>
+      <td>Coccolitho virus</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Polysaccharide biosynthesis</td>
+      <td>Hyaluronan synthase</td>
+      <td>Produces the glycosaminoglycan hyaluronan from UDP-α-N-acetyl-D-glucosamine and UDP-α-D-glucuronate</td>
+      <td>Chlorovirus CVK2</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Chitin synthase</td>
+      <td>Produces Uridine diphosphate (UDP) and [[[1,4-(N-acetyl-beta-D-glucosaminyl)]n+1]] from UDP-GlcNAc and [[[1,4-(N-acetyl-beta-D-glucosaminyl)]n]]</td>
+      <td>Chlorovirus CVK2</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sugar metabolism</td>
+      <td>GDP-D-mannose 4,6 dehydratase</td>
+      <td>Conversion of GDP-(d)-mannose to GDP-4-keto, 6-deoxy-(d)-mannose</td>
+      <td>Paramecium bursaria Chlorella virus 1</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>GDP-4-keto-6-deoxy-D-mannose epimerase/reductase</td>
+      <td>Converts GDP-4-keto-6-deoxy-d-mannose into GDP-l-fucose</td>
+      <td>Paramecium bursaria Chlorella virus 1</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Polysaccharides degradation</td>
+      <td>Chitinase</td>
+      <td>Chitin degradation by cleaves the disaccharide to its monomer subunits</td>
+      <td>Chlorella virus PBCV-1</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>1–3-beta glucanase</td>
+      <td>Successive hydrolysis at the nonreducing end of the glucan, resulting in the formation of oligosaccharides and glucose</td>
+      <td>Chlorella virus PBCV-1</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+    <tr>
+      <td>Pectate lyase</td>
+      <td>Randomly cleaves α–1,4-polygalacturonic acid via a β-elimination reaction</td>
+      <td>Aureococcus anophagefferens virus</td>
+      <td>Phycodnaviridae</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Enzyme’s genes were detected in NCLDVs from metagenome-assembled genome analysis._
+
 Other gene products have been implicated in the reprograming of cellular physiology during giant virus infection, especially in nutrient processing and oxidative stress (Monier et al., 2017; Moniruzzaman et al., 2018; Sheyn et al., 2016). For example, it has been reported that Mimiviridae and Phycodnaviridae families exhibit superoxide dismutase and glutathione peroxidase activities encoded by crucial enzymes involved in oxidative stress regulation (Table 2). A superoxide dismutase encoding gene, involved in the breakdown of reactive oxygen species (ROS), was found encoded in the Megavirus chiliensis genome (Lartigue et al., 2015). These enzymes likely help to protect the viral replication machinery from damage by ROS generated during viral infection (Moniruzzaman et al., 2018; Moniruzzaman et al., 2020).
 
 Sheyn et al., 2016. have shown that during lytic infection by Emiliana huxleyi virus, which infects the cosmopolitan unicellular eukaryotic algal host Emiliania huxleyi, glutathione was overproduced and that hydrogen peroxide (H2O2) was the major ROS during the onset of the lytic phase of infection. Moreover, the concomitant production of GSH and H2O2 occurred in the same cellular subpopulations that exhibited a higher rate of infection compared with cells that had little or no GSH and H2O2. Interestingly, the inhibition of ROS production significantly reduced virion production and inhibited host cell death (Sheyn et al., 2016).
@@ -137,7 +502,7 @@ Analysis of the A. polyphaga Mimivirus genome revealed the presence of genes pot
 
 Finally, even steroid metabolism may be manipulated by NCLDV infection. Genomes of many mimiviruses and pandoraviruses contain cytochrome P450 genes, which encode P450 monooxygenase enzymes (Lamb et al., 2019). P450s are key enzymes in the metabolism of numerous endogenous regulatory molecules and xenobiotics in Bacteria, Archaea, and Eukarya. To support this suggestion, multiple genes involved in other aspects of steroid metabolism, notably steroid reductases, are also present and expressed (typically early) during the course of NCLDV infection (De Souza et al., 2021).
 
-## Conclusion
+### Conclusion
 
 Previously, viruses were traditionally defined as molecular genetic parasites, accessories to cellular life, and lacking many of the essential criteria that define living organisms, such as the ability to capture and store free energy. However, this strict paradigm has now been fundamentally challenged by the identification of a large number of energy-linked metabolic genes encoded in some NCLDV genomes, with sequence identity to cellular orthologs, including those possibly involved in energy generation from organic and inorganic compounds. These genes are thought to have been acquired by NCLDV from diverse sources, and especially from their hosts through lateral gene transfer. Notably, a number of the genes considered here were identified in metagenomic studies, which raises a possibility that some of these genes inferred as being in viral genomes might instead represent genes from bacteria, and emphasize the need for viromics benchmarking (Pratama et al., 2021). Indeed, the filtration process to discard non-viral sequences does not completely exclude the possibility of a contamination. Recognizing that caveat, we expect that sequences analysis in such metagenomic studies cited here employed benchmarking and curation approaches sufficient to discriminate between viral and microbial sequences. However, it should be noted that NCLDV apparently endogenize into various green algae, complicating the accurate assignment of partial metagenome assemblies, but also emphasizing the role of HGT in host and virus evolution (Moniruzzaman et al., 2020). Isolation of these viruses by culture and direct sequencing of viral strains combined with further analysis in molecular biology and biochemistry should be a complementary approach to elucidate their presence in the viral genomes.
 

@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.48224.001 Predicting how species will respond to selection pressures requires understanding the factors that constrain their evolution. We use genome engineering of Drosophila to investigate constraints on the repeated evolution of unrelated herbivorous insects to toxic cardiac glycosides, which primarily occurs via a small subset of possible functionally-relevant substitutions to Na + ,K + -ATPase. Surprisingly, we find that frequently observed adaptive substitutions at two sites, 111 and 122, are lethal when homozygous and adult heterozygotes exhibit dominant neural dysfunction. We identify a phylogenetically correlated substitution, A119S, that partially ameliorates the deleterious effects of substitutions at 111 and 122. Despite contributing little to cardiac glycoside-insensitivity in vitro, A119S, like substitutions at 111 and 122, substantially increases adult survivorship upon cardiac glycoside exposure. Our results demonstrate the importance of epistasis in constraining adaptive paths. Moreover, by revealing distinct effects of substitutions in vitro and in vivo, our results underscore the importance of evaluating the fitness of adaptive substitutions and their interactions in whole organisms.
+Predicting how species will respond to selection pressures requires understanding the factors that constrain their evolution. We use genome engineering of Drosophila to investigate constraints on the repeated evolution of unrelated herbivorous insects to toxic cardiac glycosides, which primarily occurs via a small subset of possible functionally-relevant substitutions to Na+,K+-ATPase. Surprisingly, we find that frequently observed adaptive substitutions at two sites, 111 and 122, are lethal when homozygous and adult heterozygotes exhibit dominant neural dysfunction. We identify a phylogenetically correlated substitution, A119S, that partially ameliorates the deleterious effects of substitutions at 111 and 122. Despite contributing little to cardiac glycoside-insensitivity in vitro, A119S, like substitutions at 111 and 122, substantially increases adult survivorship upon cardiac glycoside exposure. Our results demonstrate the importance of epistasis in constraining adaptive paths. Moreover, by revealing distinct effects of substitutions in vitro and in vivo, our results underscore the importance of evaluating the fitness of adaptive substitutions and their interactions in whole organisms.
 
 ## Introduction
 
@@ -39,17 +39,37 @@ Here, we focus on a large group of herbivorous insects with a broad phylogenetic
 
 Insensitivity to CGs in insects can evolve via several mechanisms including modification of the CG-binding domain of NKA (i.e. target-site insensitivity), restriction of NKA expression to neurons (Petschenka et al., 2013b), the deployment of proteins that ameliorate the toxic effects of CGs (Torrie et al., 2004; Petschenka et al., 2013b) and other physiological factors (Vaughan and Jungreis, 1977). Despite this wide variety of potential paths to CG-insensitivity, the evolution of insensitivity in most CG-adapted insects is due, at least in part, to target-site insensitivity. Indeed, in most cases, diet specialization on CG-containing hostplants has been accompanied by recurrent adaptive amino acid substitutions to the CG-binding domain of the alpha-subunit of NKA, ATPα1 (Zhen et al., 2012; Dobler et al., 2012; Yang et al., 2019). Previous studies have identified up to 35 sites in ATPα1 at which substitutions could contribute to CG-insensitivity (reviewed in Zhen et al., 2012). However, CG-insensitivity of ATPα1 most often arises via a highly similar pattern of substitution at two sites (111 and 122, Figure 1A): as an illustration, a survey of 28 CG-adapted insects revealed that 30 of 63 amino acid substitutions observed at sites implicated in CG-sensitivity in ATPα1 occur at sites 111 and 122 (Yang et al., 2019). Sites 111 and 122 have also been identified as targets of positive selection in CG-adapted insects using statistical phylogenetic methods (Yang et al., 2019). Understanding why these two sites, in particular, are so often employed requires a characterization of the effects of these substitutions, individually and in combination, on organismal phenotypes and fitness.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig1-v3.jpg)
+
+**Figure 1.:** (A) Patterns of amino acid substitution at sites implicated in CG sensitivity near the H1-H2 transmembrane domain of ATPα1 in representative species from six insect orders (see Supplementary file 1 for all species). CG-adapted species names are shown in red. Dots indicate identity with the ancestral reference sequence and letters indicate derived amino acid substitutions. Positions 111 and 122, highlighted in pink and blue respectively, are hotspots of frequent parallel substitution. C104Y and N122Y represent rare substitutions associated with ATPα1 duplication (Zhen et al., 2012). Position 119 (highlighted in green) had not been previously implicated in CG sensitivity, but is identified as a candidate permissive substitution in subsequent analyses. (B) Viability of homozygous first instar larvae, pupae and adults for the first series of engineered substitution lines. Dots indicate identity with the ancestral reference at sites C104, Q111, and N122. Plotted is the proportion of surviving homozygous mutant offspring (i.e. EYFP-), scaled by the proportion for the wild-type control. The number of individuals assayed is indicated in each case. Survival odds relative to the wild type-strain (…) was tested using a Fisher’s Exact Test, with adjusted P-values indicated as: ***p<0.001; **p<0.01, *p<0.05. All larvae to pupa survivorship are significantly lower than wild-type (p<1e-5) except for Q111V. All larvae to adult survivorship are significantly lower than wild-type (p<1e-5). (C) Distributions of P-values for the strength of the phylogenetic correlation between sites 111 (above) or 122 (below) and 270 non-singleton amino acid variants in a multi-sequence alignment including 174 ATPα1 sequences representing 161 species. Sites 111 and 122 exhibit highly correlated evolution. Three additional sites in the lowest 5% of P-values shared in common between sites 111 and 122, including site 119, are labeled. (D) Viability of homozygous first instar larvae, pupae and adults for the second series of engineered substitution lines that include A119S relative to the wild-type control. Dots indicate identity with the ancestral reference at sites Q111, A119, and N122. The number of individuals assayed is indicated in each case. Despite slight reductions in viability, all reductions are not significant relative to wild-type line after multiple test correction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** A targeted replacement of exons 2-6b with a mini-white gene was generated by ends-out homologous recombination. The mini-white gene was removed using Cre-lox site-specific recombination to create the Δ2-6b ‘Founder line’. The founder line is injected with the PGE-ATPa plasmid carrying a substitution of choice (asterisk) and incorporated by site-specific phiC31/attP integration. The mini-white gene was removed using Cre-lox site-specific recombination to create engineered ATPα (ATPalpha) lines (Supplementary file 1).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** In red are species known specialists on CG-containing plants or inferred to be CG-insensitive.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Shown is the distribution of P-values for strength of phylogenetic correlation between site 119 and 270 non-singleton amino acid variants in an alignment including 174 ATPα1 sequences representing 161 species See Materials and methods for a description of estimating correlations using BayesTraits. Indicated are the 10 top ranking sites. Sites 111 (red) and 122 (blue) are highly-correlated interacting sites known to be important for insensitivity of the NKA to CG-inhibition (see Figure 1).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Estimated co-crystal structure of Drosophila melanogaster NKA bound to the cardiac glycoside (CG) ouabain. A homology model was constructed with Swiss-Model (Waterhouse et al., 2018; https://swissmodel.expasy.org), using the Sus scrofa (pig) structure bound to ouabain (PDB:4HYT) as a template and ATPα1 of D. melanogaster (Genbank: P13607) as target. The alpha-subunit is shown in white ribbon, and subunits beta and gamma in blue and gold ribbon, respectively. In red, magenta and orange are residues Q111, A119 and N122, respectively. The bound ouabain ligand is colored green. The structure was visualized using UCSF Chimera 1.11.2.
+
 To explain the frequent reuse of sites 111 and 122, it has been speculated that substitutions at most alternative sites may be associated with negative pleiotropic effects, that is, have deleterious effects on another aspect of phenotype and fitness (Zhen et al., 2012). Support for this hypothesis comes from the fact that multiple insect species specializing on CG-containing host-plants have independently duplicated and neofunctionalized ATPα1. In all cases examined to date, species with two or more copies retain one minimally altered copy that is more highly expressed in nervous tissue, and have evolved one or more insensitive copies that are more highly expressed in the gut, the site of absorption of CGs (Zhen et al., 2012; Yang et al., 2019). Further support for negative pleiotropic effects is provided by the expression of engineered ATPα1 constructs in cell lines, suggesting that some duplicate-specific CG-insensitivity substitutions appear to reduce NKA activity (Dalla and Dobler, 2016). Based on these findings, the frequent parallel substitutions observed at sites 111 and 122 in specialists lacking duplicate ATPα1 copies plausibly reflect the fact that substitutions at these sites are minimally pleiotropic.
 
 ## Results
 
-## Common substitutions at positions 111 and 122 exhibit negative pleiotropic effects
+### Common substitutions at positions 111 and 122 exhibit negative pleiotropic effects
 
 To test the idea that substitutions at positions 111 and 122 lack strong negative pleiotropic effects, we used the transgenesis toolkit of Drosophila melanogaster (Figure 1—figure supplement 1), a generalist insect that harbors a single ubiquitously expressed copy of a CG-sensitive form of ATPα1. We focus on several substitutions at sites 111 and 122 (notably Q111V, Q111T, N122H, Figure 1A) that have been directly implicated in CG-insensitivity in functional experiments (reviewed in Zhen et al., 2012). By engineering amino acid substitutions into a single D. melanogaster background, we ensure that fitness differences observed among lines are caused by the substitution and not confounded by unknown variation in the genomic background. In addition, we can rule out compensatory changes elsewhere in the genome, or evolved changes in physiology, which are concerned in multi-generation population-level experimental evolution studies. Importantly, by testing substitutions in vivo, we can evaluate their functional effects at multiple phenotypic levels, from the biochemistry of enzyme inhibition to behavior and fitness. We generated six lines that carry substitutions at these two sites of the endogenous ATPα1 locus individually (Q111L, Q111V, Q111T, N122H) and in combination (Q111V+N122H, Q111T+N122H) (see Materials and methods). For comparison, we also created three lines in which we introduced two rare, copy-specific substitutions (C104Y and N122Y and C104Y+N122Y, Figure 1A) for which we did not have a priori expectations about pleiotropic fitness effects. C104Y is known to confer some degree of insensitivity to CGs, and both C104Y and N122Y occur on a neofunctionalized copy of ATPα1 in the milkweed weevil (Zhen et al., 2012). An additional control line carrying the wild-type D. melanogaster allele was generated using the same approach.
 
 Based on the repeated use of substitutions at positions 111 and 122, we expected these would confer ATPα1 with some degree of insensitivity to CGs and be associated with either no or mild negative pleiotropic effects on fitness. To our surprise, however, each of the nine lines exhibit severely reduced fitness, behaving effectively as recessive lethals. To identify the developmental stage at which lethality occurs, we evaluated hatchability (i.e. the proportion of homozygous larva per embyro) and the probability of individuals surviving to pupae and adults (Figure 1B). Severe fitness deficits for most engineered substitution lines were apparent as early as the larval hatching stage. Still, for most engineered mutant lines, greater than 50% of individuals hatch into the first instar. Q111V homozygotes exhibit particularly high probabilities of survival until the pupal stage. Nonetheless, survivorship of individuals to adulthood is close to zero for all lines.
 
-## The substitution A119S rescues lethality of substitutions at sites 111 and 122
+### The substitution A119S rescues lethality of substitutions at sites 111 and 122
 
 The unexpected deleterious effects of common substitutions at sites 111 and 122 raises the question of how insects with sensitive ATPα1 isoforms, spanning a broad phylogenetic distribution, can evolve insensitivity to CGs via substitutions to one or both of these sites. An important clue is provided by the observation that D. subobscura, a European relative of D. melanogaster, carries haplotypes resembling those that we engineered into D. melanogaster, including the ancestral (QN) and derived states (QH and VH) at sites 111 and 122, respectively (Pegueroles et al., 2016), and yet are viable. PAML ancestral sequence reconstruction applied to full length coding sequences for D. subobscura (Materials and methods) and the closely related sister species D. guanche (Puerma et al., 2018) reveals that 21 amino acid substitutions distinguish the D. melanogaster ATPα1 from the ancestral D. subobscura protein. We hypothesized that one or more of these substitutions ameliorates the deleterious effects of substitutions at positions 111 and 122.
 
@@ -57,23 +77,59 @@ Using a multiple sequence alignment that includes 161 CG-adapted insects and out
 
 Though site 119 is not among sites known to affect CG-sensitivity (Zhen et al., 2012), previous work identified it as one of four sites in the protein that underlie a CG-association/dissociation rate difference distinguishing human ATP1A1 and ATP1A2 isoforms (Crambert et al., 2004). Considering the orientation of the amino-acid side chain of site 119 with respect to a bound CG (Figure 1—figure supplement 4), it is unlikely that it plays a direct role in CG binding. Nonetheless, due to its physical proximity to sites 111 and 122 and the evidence for correlated evolution with these sites, we hypothesized that the A119S substitution may compensate for the deleterious effects of substitutions at positions 111 and 122. To test this hypothesis, we generated a second series of substitution lines that include A119S in isolation, and A119S paired with four substitutions at sites 111 and 122 (i.e. Q111L+A119S, Q111V+A119S, Q111T+A119S and A119S+N122H, Figure 1D). Embryos homozygous for A119S, with and without substitutions at 111 and 122, have levels of hatchability and survival that are close to wild-type levels. Remarkably, we find that A119S rescues the lethality associated with homozygosity for all four substitutions with which we paired it (i.e. compare Figure 1D with Figure 1B). These results establish the existence of epistatic fitness interactions between A119S and multiple substitutions at both 111 and 122.
 
-## A119S rescues enzyme dysfunction associated with substitutions at sites 111 and 122
+### A119S rescues enzyme dysfunction associated with substitutions at sites 111 and 122
 
 To gain insight into the functional basis of the fitness interaction between A119S and substitutions at sites 111 and 122 at the level of NKA function, we carried out a series of enzyme inhibition assays (Materials and methods, Figure 2). Ideally, we would like to directly compare activities and inhibition profiles for individual substitutions at positions at 111 and 122 alone and in combination with A119S in vivo by fitting monophasic enzyme-inhibition curves (e.g. Petschenka et al., 2013a). However, homozygous lethality associated with substitutions at positions 111 and 122 in the absence of A119S prevents us from using this approach. Instead, we opted to compare wild-type and mutant forms of NKA in heterozygous (i.e. Mut/+) individuals, where we expect a heterogeneous mixture of two isoforms. In this case, assuming the mutant form of the enzyme is reasonably active (i.e. f > 0), we expect to see biphasic inhibition curves reflecting the equilibrium dissociation constants (Kd) corresponding to the wild-type (+) and mutant (Mut) forms of the enzyme, respectively (see Materials and methods and Figure 2—figure supplement 1). If the mutant form of the enzyme is inactive, f = 0 and would result in a monophasic curve (Materials and methods, Equation 1). Alternatively, failure to detect a biphasic curve may also suggest that the Kd of the wild-type and mutant forms of the enzyme are too close to be distinguished.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig2-v3.jpg)
+
+**Figure 2.:** Plotted are relative activity as a function of increasing concentrations of the cardiac glycoside (CG) ouabain. (A) Inhibition curves are plotted for heterozygous individuals to allow comparison of the effects of these substitutions in the presence and absence of A119S. Points represent biological replicates, each of which is the mean across three technical replicates. Curves for the engineered wild-type strain (+/+) and A119S/+ (S/+) are plotted for comparison. The presence of A119S alone confers a negligible increase in CG-insensitivity and results in a monophasic curve. In contrast, N122H/+ (H/+) and A119S+N122H (SH/+) exhibit biphasic curves (i.e. the estimated proportion of CG-inhibitable activity of the mutant form, f, are significantly larger than 0). For H/+, f = 0.18 (95% CI 0.14–0.24), and is significantly lower than that of SH/+, f = 0.53 (95% CI 0.47–0.56). (B) Inhibition curves for homozygous substitutions Q111L, Q111V, Q111T and N122H in the presence of A119S reveal that they increase CG-insensitivity by 7, 11, 28 and 178-fold, respectively. The effect of A119S alone is estimated to be 1.45-fold relative to +/+ (95% CI 1.13–1.86).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Shown in gray is the monophasic curve fit corresponding to observed data (gray points) for the D. melanogaster line one homozygous wild- type (+/+) construct. In black is a hypothetical biphasic curve for a mixture of two forms of the enzyme, a sensitive wild-type form (+) and insensitive mutant form (MUT). A biphasic curve is expected for a mixture of two enzymes with distinct inhibitor dissociation constants, Kd,1 and Kd,2. The proportion f corresponds to the proportion of the total CG-inhibitable activity attributable to the form with Kd,2. If the two forms are equally active and mixed in equal proportions, f is expected to be 0.5, and the shape of the curve will depend on f and two Kd corresponding to the two forms of the enzyme in the mixture. (B) Validation of the method using mixtures with known normalized proportions of Pig (sensitive form) and Monarch butterfly (insensitive form) enzymes (proportions are indicated as Pig:Monarch). Enzyme-inhibition activities were analyzed as described in the Materials and methods, except using only six ouabain concentrations (range 10−8 M to 10−3 M) and one biological replicate. Parameters for homogenous extracts and mixtures were estimated using the monophasic (f = 0) and biphasic models (f > 0), respectively (see Equation 1 of Materials and methods). (C) Corresponding parameter estimates for panel B.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Allele-specific expression (ASE) in heterozygous lines. Estimates and 95% confidence intervals are based on Cochran-Mantel-Haenzel framework analysis – that is plotted is ‘relative risk’ of the mutant allele in the cDNA population (treatment) using genomic DNA as a control population (see Materials and methods). Equal expression of the two alleles corresponds to a value of 1. Estimates and confidence intervals are shown for alleles balanced over two standard balancer chromosomes, B = TM6 (blue) or TM3 (green) which carries a wild-type allele of ATPα1. While significant deviations from equal expression (correcting for multiple comparisons) are observed for Q111V/TM6, Q111T/TM6, C104Y+N122Y/TM6, Q111T+N122H/TM3, the magnitude of the differences are small and in favor of the mutant allele.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Following Figure 2, inhibition curves are plotted for heterozygous individuals to allow comparison of the effects of these substitutions in the presence and absence of A119S. Points represent biological replicates, which is the means across technical replicates. Curves for the engineered wild-type strain (+/+) and A119S/+ are plotted for comparison. The inhibition curve for Q111V/+ appears to be monophasic suggesting that either the mutant Q111V enzyme is inactive (i.e. f = 0), or like A119S, it has small effects on CG-insensitivity. In contrast, Q111V in combination with A119S (VS/+) results in a right-shifted curve indicating increased CG-insensitivity (IC50,2 = 1.6e-6). For VS/+, f = 0.62 with 95% CI 0.54–0.69.
 
 With these considerations in mind, we note that the inhibition curve for A119S/+ appears to be monophasic (Figure 2A). Since A119S homozygotes are viable, we conclude that A119S alone likely encodes a functional enzyme that has little effect on CG inhibition of NKA. In contrast, the inhibition curve for N122H/+ heterozygotes is biphasic (f = 0.18, 95% CI 0.14–0.24). However, while this implies that N122H substantially increases CG-insensitivity (IC50,2 = 6.6e-6), the contribution of the N122H form to the total CG-inhibitable activity in heterozygotes (f) is estimated to be less than half that of the wild-type form. An analysis of allele-specific expression of N122H/+ indicates close to equal mRNA levels for the two alleles (Figure 2—figure supplement 2), suggesting that the differences in activity are not due to differences at the level of gene expression. Additionally, unlike A119S, N122H alone results in homozygous lethality. Thus, we conclude that, despite conferring CG-insensitivity, the N122H substitution likely encodes a functionally-impaired enzyme.
 
 In contrast to N122H/+, N122H+A119S/+ heterozygotes produce a strongly biphasic inhibition curve, with a two-fold higher estimated IC50,2 = 1.9e-5 and comparable levels of activity to that of the wild-type form (f = 0.53, 95% CI 0.47–0.56, Figure 2A). Similar results were obtained in comparisons of Q111V and Q111V+A119S (Figure 2—figure supplement 3). We estimate the level of CG-insensitivity conferred by Q111L, Q111V, Q111T and N122H, in the presence of A119S, to be 7, 11, 28 and 178-fold greater than the wild-type form of the enzyme, respectively (Figure 2B). Our results demonstrate epistasis between substitutions at sites 119 and 111/122 at the level of enzyme function. Previous studies have demonstrated increased survival of cell lines expressing Q111V, N122H, and Q111T+Q111H (Dobler et al., 2012), and substantial insensitivity to CG-inhibition despite little effect on ATPase activity for N122H, Q111T+Q111H and Q111V+Q111H (Dalla et al., 2013; Dalla and Dobler, 2016). Given that these substitutions were engineered on a D. melanogaster background lacking A119S, our results suggest such substitutions are likely to be associated with substantial enzyme dysfunction.
 
-## A119S rescues neural dysfunction associated with substitutions at sites 111 and 112 in vivo
+### A119S rescues neural dysfunction associated with substitutions at sites 111 and 112 in vivo
 
 An advantage of functionally testing the effects of amino acid substitutions in vivo, as opposed to in vitro, is the ability to examine fitness-related phenotypes at multiple levels. We therefore considered the impact of substitutions, alone and in combination, on higher level fitness-related phenotypes including adult behavior in response to stress and survivorship of adult flies exposed to CGs.
 
 NKA plays a central role in maintaining neuron action potentials and previous studies have documented short-term paralysis following mechanical overstimulation (aka ‘bang sensitivity’) associated with mutations that reduce this enzyme’s activity (Ganetzky and Wu, 1982; Schubiger et al., 1994; Davis et al., 1995; Palladino et al., 2003). As such, we used the bang sensitivity phenotype as a proxy for proper neural function. Examining our panel of substitutions for these effects reveals all of the substitutions we engineered at sites 111 and 122, individually and in combination, exhibit dominant bang sensitivity phenotypes that are similar in severity to those of the loss-of-function deletion Δ2-6b (Figure 3A, Figure 3—figure supplement 1). In contrast, bang sensitivity phenotypes were indistinguishable from wild-type for all heterozygous substitutions at 111 and 122 in combination with A119S (Figure 3A, Figure 3—figure supplement 2). Interestingly, individuals homozygous for A119S, and substitutions at 111 and 122 in the presence of A119S, still exhibit obvious neural dysfunction relative to the wildtype (Figure 3, Figure 3—figure supplement 2). Thus, while A119S is itself associated with recessive pleiotropic effects, our results demonstrate some degree of positive epistasis between A119S and substitutions at sites 111 and 122 when considering the level of adult behavior.
 
-## Substitutions at sites 111, 119 and 122 increase adult survival upon exposure to CGs
+![Figure 3.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig3-v3.jpg)
+
+**Figure 3.:** Plotted are recovery times for individuals (open circles), and means with approximate 95% confidence bounds (solid circles with whiskers), following mechanical over-stimulation (aka, the ‘bang sensitivity’ assay). Flies heterozygous for loss-of-function ATPα1 substitutions are known to have significantly longer recovery times than wild-type flies (see for e.g. Δ2-6b/+ relative to +/+ in panel A, p=4.5e-7). (A) Distributions of recovery times for heterozygous flies (i.e. Mut/+) carrying individual substitutions A119S (S/+), Q111V (V/+) and N122H (H/+) and combinations VS/+ and SH/+. The recovery-time distributions for S/+, VS/+ and SH/+ are indistinguishable from the engineered wild-type strain (+/+). In contrast, recovery times are significantly longer than wild-type for lines with individual substitutions V/+ and H/+ (p=1.3e-5 and p=5.2e-4, respectively) and are indistinguishable from the loss-of-function deletion mutation Δ2-6b/+. (B) Recovery times for homozygous lines S/S, VS/VS and SH/SH are all significantly longer than for heterozygotes S/+, VS/+, and SH/+ (p<3.3e-3). These results demonstrate epistasis between substitutions at sites 119 and 111/122 at the level of neural function. A119 ameliorates the dominant dysfunction caused by Q111V and N122H but residual recessive neural dysfunction is still apparent in homozygotes that include A119S.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Bang sensitivity phenotypes of lines with heterozygous substitutions at sites 104, 111 and 122. Δ2-6b is a loss of function deletion of ATPα1. Red letters indicate substitutions at position 111; blue letters indicate substitutions at position 122. Labels: + = wild type; Δ2-6b = loss of function deletion of exons 2 through 6b; L = Q111L; V = Q111V; T = Q111T; H = N122H; Y = N122Y. All substitutions are heterozygous over the engineered wild-type allele (+). In all cases, the distributions for substitution lines (Mut/+) are significantly different than the engineered wild-type strain (+/+) (p<5e-5, Wilcoxon test with continuity correction, correcting for multiple tests).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Bang sensitivity phenotypes of substitutions at sites 111 and 122 on the background of A119S. Δ2-6b is a loss of function deletion of ATPα1. Red letters indicate substitutions at position 111; green letters at position 119; blue letters at position 122. Blue points and whiskers indicate substitutions that are heterozygous for wild-type allele (+). Red points and whiskers indicate data for homozygous substitutions. Labels: + = engineered wild-type allele; Δ2–6 = loss of function deletion of exons 2-6b; S = A119S; LS = Q111L+A119S; VS = Q111V+A119S; TS = Q111T+A119S; SH = A119S+N122H. In all cases, the distributions for heterozygotes (Mut/+) and homozygotes (Mut/Mut) are significantly different (p<0.005, Wilcoxon test with continuity correction, corrected for multiple tests).
+
+### Substitutions at sites 111, 119 and 122 increase adult survival upon exposure to CGs
 
 D. melanogaster do not normally consume CG-containing plants and consumption of CGs results in increased mortality (Groen et al., 2017). Given that substitutions at sites 111 and 122 decrease sensitivity to CG-inhibition of NKA, such substitutions should confer an advantage upon exposure of D. melanogaster to CGs. To test this hypothesis, we exposed adult animals to media containing the CG ouabain. While the wild-type strain suffers high levels of mortality upon CG exposure, the lines carrying substitutions at sites 111 and 122 in combination with A119S are all substantially less-sensitive (Figure 4, Figure 4—figure supplement 1). Notably, the survival probability of A119S+N122H (SH/+ and SH/SH) is indistinguishable from control treatments in exposures with up to 10 mM ouabain. Beyond confirming an association between insensitivity to CG-inhibition of enzyme activity in vitro and reduced sensitivity to CG-exposure in vivo, two additional important findings arise from these experiments. First, a substantial measure of insensitivity to CG-exposure is also conferred by A119S alone (S/+ and S/S exhibit ~8.5 fold and ~21 fold lower relative risk, respectively, than wild-type at 5 mM ouabain, Figure 4). Despite this, A119S alone has only a small effect on NKA sensitivity to CG-inhibition (Figure 2). Further, the substantially improved survival of heterozygous strains relative to the wild-type strain, including to some extent A119S/+, suggests that insensitivity to CG exposure is a partially dominant phenotype (Figure 4, Figure 4—figure supplement 1). Importantly, despite the lethal homozygous effects of Q111V and N122H individually (Figure 1B), the dominant effects of these substitutions on insensitivity to CG-exposure imply that they have the potential to confer a fitness advantage as heterozygotes in CG-rich environments.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig4-v3.jpg)
+
+**Figure 4.:** Plotted is the log relative risk for treatments (5, 10 or 20 mM ouabain) relative to no treatment controls (no ouabain) for (A) heterozygous strains and (B) homozygous strains. Estimates (points) and 95% confidence bounds (whiskers) were obtained using the Cochran-Mantel-Haenzel framework. Each estimate is based on three biological replicates of 20 flies per concentration. A value of 0 corresponds to equal probability of survival on treatment versus the no ouabain control indicating complete insensitivity to a given concentration of ouabain. Labels: + = engineered wild-type allele; S = A119S; V = Q111V; VS = Q111V+A119S; H = N122H; SH = A119S+N122H. These results reveal appreciable CG-insensitivity conferred by individual substitutions A119S (S/+ and S/S) and the recessive lethals Q111V (V/+) and N122H (H/+) compared to the engineered wild-type control strain (+/+).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48224/elife-48224-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Adult survival of homozygous strains with A119S upon 7 day exposure to CGs. Plotted is the log relative risk of treatment, for 5 mM (blue) or 10 mM (red) ouabain, relative to no treatment controls (no ouabain) for homozygous strains. Points and whiskers represent estimates and 95% confidence bounds estimated using the Cochran-Mantel-Haenzel framework (Materials and methods). Each estimate is based in three biological replicates of 20 flies per concentration. A value of 0 corresponds to equal probability of survival of treatment versus control indicating complete insensitivity to the tested ouabain concentration. Labels: +/+ = engineered wild-type strain; S/S = A119S homozygote; LS/LS = Q111L+A119S homozygote; VS/VS = Q111V+A119S homozygote; TS/TS = Q111T+A119S homozygote; SH/SH = A119S+N122H homozygote.
 
 ## Discussion
 
@@ -91,11 +147,133 @@ Our study adds to a growing body of work linking epistasis to the dynamics of ad
 
 ## Materials and methods
 
-## Sequencing and alignments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>ATPalpha1</td>
+      <td>NA</td>
+      <td>FLYB:FBgn0027548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>ATPalpha1 △2-6b founder line, w[1118];;ATPa△2-6b attP/TM6B,Tb[1]</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>available on request</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>15 engineered variants of ATPalpha1</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>See Supplementary file 2, available on request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y[1], w[67c23], P{y[+mDint2]=Crey}1b;;D[*]/TM3, Sb[1]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:851 FLYB:FBst0000851; RRID:BDSC_851</td>
+      <td>Source of Cre protein</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[*];;ry[506] Dr[1]/TM6B, P{w[+mC]=Dfd-EYFP}3, Sb[1],Tb[1],ca[1]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:8704 FLYB:FBst0008704; RRID:BDSC_8704</td>
+      <td>Balancer, chr 3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR/sequencing primers, Sanger-based sequencing</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>ATPa1 H1-H2 Forward: AAAACTTGGAGCGCGATGGT; ATPa1 H1-H2 Reverse: ATACGGTCGCCGAACTTCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR/sequencing primers for Illumina-based sequencing</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>ATPa1 H1-H2 Forward 2834: GTCTCGTGGGCTCGGCGCTTTCAGACACATCCCGA; ATPa1 H1-H2 Forward 3185: TCGTCGGCAGCGTCTGAGAAAATGCCCGTCACGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR-added linker primers, Illumina-based sequencing</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>ATPa1 H1-H2 i5: AATGATACGGCGACCACCGAGATCTACACnnnnnnnnTCGTCGGCAGCGTCA; ATPa1 H1-H2 i7: CAAGCAGAAGACGGCATACGAGATnnnnnnnnGTCTCGTGGGCTCGG; where ‘nnnnnnnn’=any sequence index</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ouabain</td>
+      <td>Sigma</td>
+      <td>Cat#: O3125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Porcine sodium potassium ATPase, cerebral cortex</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat#: A7510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGX-attB-ATPa2-6b</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>available on request</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PAML v4.8</td>
+      <td>PMID: 17483113</td>
+      <td>RRID:SCR_014932</td>
+      <td>http://abacus.gene.ucl.ac.uk/software/paml.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BayesTraits v3.01</td>
+      <td>PMID: 16685633</td>
+      <td>RRID:SCR_014487</td>
+      <td>http://www.evolution.rdg.ac.uk/BayesTraitsV3.0.1/BayesTraitsV3.0.1.html</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>multiple sequence alignment (protein)</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>multiple sequence alignment (nucleotide)</td>
+      <td>this paper</td>
+      <td>N/A</td>
+      <td>Supplementary file 4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sequencing and alignments
 
 Sources of data used in this study are detailed in Supplementary file 2. We collected new data for three species: Drosophila subobscura (Diptera), Monophadnus latus (Hymentoptera), and Syntomeida epilais (Lepidoptera). In each case, total RNA was extracted using TRIzol (Ambion, Life Technologies) following the manufacturer’s protocol. RNA-seq libraries were prepared with either the TruSeq RNA Library Prep Kit v.2 (Illumina) or TruSeq Stranded RNA Library Prep Gold (Illumina) and sequenced on HiSeq2500 (Genomics Core Facility, Princeton, NJ, USA). 50–55 million paired-end 150 nucleotide reads per library were trimmed for quality (Phred quality ≥20) and length (≥30 contiguous bases). Trinity 2.2.0 (Haas et al., 2013) was used for de novo transcriptome assembly using default parameters. The ATPα1 coding sequences of D. melanogaster (FBgn0002921) and B. mori (GenBank: LC029030.1) were used to query the assembled transcripts using either tblastx or tblastn (blast-2.26). For Dysdercus cingulatus (Hemiptera), Macrocheraia grandis (Hemiptera), Largus californicus (Hemiptera), Jalysus sp. (Hemiptera), Metatropis rufescens, Ischnodemus falicus, Geocoris sp., Gyndes sp., Monomorium pharaonis, Hylobius abietis, Megacyllene caryae, Calligrapha philadelphica, and Basilepta melanopus, we downloaded raw RNA-seq data, carried out de novo assembly and obtained ATPα1 sequences using methods similar to those described above. The remaining ATPα1 sequences were either previously published or obtained from publicly available genome references assemblies. A multiple nucleotide sequence alignment was created using ClustalOmega (Sievers et al., 2011). Two alternatively spliced exons were masked for subsequent phylogenetic analyses. Alignments are available as Supplementary file 2.
 
-## Statistical phylogenetic analyses
+### Statistical phylogenetic analyses
 
 Phylogenetic relationships were established based on previously published sources (Supplementary file 2). Phylogeny branch lengths were estimated using IQtree (Nguyen et al., 2015) on the nucleotide alignment of 174 ATPα1 sequences representing 161 species sampled from eight insect orders (Supplementary file 1) using a guide phylogeny (Figure 1—figure supplement 2) to force species branching order within orders. We carried out a comprehensive search for substitutions at ATPα1 on which substitutions at sites 111 and 122 were dependent using BayesTraits (version 3.01; Pagel and Meade, 2006). We first reconstructed the ancestral protein sequences of ATPα1 using the codeml(aaml) algorithm of PAML (version 4.8a; Yang, 2007). As inputs, we provided PAML with the phylogeny with branch lengths and the protein sequence alignment for ATPα1. We used the default PAML parameters with the following changes: ‘cleandata’ was set to 0 to preserve sites with missing data; ‘fix_blength’ was set to one to use the branch lengths as the initial values in the ancestral reconstruction; ‘method’ was set to one to use a new algorithm in PAML that updates branch lengths one-by-one. Using the inferred ancestor, we then binarized each amino acid state in the multi-species alignment into ancestral, ‘0’, and derived, ‘1’, and used this, and the phylogeny with branch lengths as the input for BayesTraits. BayesTraits fits a continuous-time Markov model to estimate transition rates between discrete, binary traits and calculates the likelihood of the fitted model. Restricting rate parameters appropriately (see below), we tested whether the transition rates for sites 111 and 122 were dependent on the state at all other variant sites. We excluded 56 sites with just a single substitution (i.e. one instance in 174 sequences in the alignment) due to their low information content.
 
@@ -103,32 +281,38 @@ In all models, double transition rates (e.g. Q111V and A119S occurring at the sa
 
 A potential concern is that the models employed by PAML codeml(aaml) and BayesTraits ignore hierarchical relationships among codons encoding amino acid substitutions. This is a concern because, under a single nucleotide substitution model, Q111V must be reached by passing through states Q111L or Q111E. Likewise, Q111T must be reached by passing through states Q111P or Q111K. Despite ignoring these relationships, the effect on our analysis is likely to be minimal. First, although it is clear from phylogenetic patterns that Q111V was reached via Q111L in Danaid butterflies and Chrysomelid beetles (Aardema et al., 2012), there is no clear phylogenetic evidence indicating that Q111V or Q111T have passed though intermediate states in other instances. This implies that intermediate states may be short-lived and that modeling these events as single steps may be a reasonable approximation. Second, the occurrence of multi-nucleotide mutations (e.g. generating Q111V or Q111T via a single mutation event) may be more frequent than commonly assumed (Assaf et al., 2017), and even PAML’s codon-based model (codonml) does not account for this. Third, ignoring hierarchical relationships among amino acid substitutions is more likely to lead to spurious conclusions about substitution order (which we do not consider) than co-occurrence. Finally, we use BayesTraits as one of several tools to identify key substitutions and guide functional experiments. Our focus on specific correlations does not imply that other correlations are not important, nor that some important functional interactions will be missed.
 
-## Engineering ATPα amino-acid substitution lines
+### Engineering ATPα amino-acid substitution lines
 
 To test for phenotypic effects associated with candidate amino-acid substitutions, we developed a genetic engineering approach of the endogenous ATPα1 (CG5670) locus in Drosophila melanogaster. Employing a strategy similar to that of Roland et al. (2013), we first generated a ‘founder line’ by deletion of exons 2-6b and replacement with a functional attP element using ends-out homologous recombination (Figure 1—figure supplement 1). To generate the founder line, homology arms were generated as 2–3 kilobase PCR amplicons 5’ of exon 2 and 3’ of exon 6b and inserted into the pGX-attP vector (Huang et al., 2009). This construct was injected into w1118 embryos using standard protocols for P-element transgenesis (Rainbow Transgenic Flies, Inc). Ends out recombination was performed and molecularly confirmed. The mini-white gene was subsequently removed by Cre-lox mediated excision (Groth et al., 2004) to create the founder line, w1118;;ATPαΔ2-6b attP/TM6B,Tb1 (exons 2-6b were replaced by a functional attP site).
 
 To generate allelic variant lines of ATPα1, we cloned exons 2-6b into pGX-attB-ATPα2-6b vector and injected it into the attP founder line mated to vasa-phiC31-ZH2A flies using standard protocols (Rainbow Transgenic Flies, Inc). The unmodified plasmid was used to generate a wild-type control (GE-ATPα−Δ2-6b-WT) following Cre-lox reduction of the mini-white using Bloomington Drosophila Stock Center #851 (y1, w67c23, P{y[+mDint2]=Crey}1b;; D*/TM3, Sb1) as a source of Cre. We then used site-directed mutagenesis (Quick-change Lightening, Agilent) to generate a panel of amino-acid substitution variants of pGX-attB-ATPα2-6b and corresponding GE strains were generated and Cre-lox reduced, as above for the WT control (Supplementary file 2). Variant and control lines were balanced by crossing to w*;;ry506 Dr1/TM6B, P{w[+mC]=Dfd-EYFP}3, Sb1,Tb1,ca1 (Bloomington Drosophila Stock Center #8704) and selecting for EYFP florescence. Homozygous variant GE-ATPα lines were established, when possible, by sib-mating and selection of non-florescent Tb+,Sb+ larvae. All transgenic strains were generated using the same method and all substitutions were confirmed using PCR and Sanger-based sequencing.
 
-## Viability assays
+### Viability assays
 
 Viability was measured in three ways. First, we measured viability as the relative hatchability of embryos carrying a given homozygous amino acid substitution (hereafter ‘Mut’). To do this, we self-crossed each balanced GE-ATPα−Δ2-6b-Mut/TM6B, P{w[+mC]=Dfd-EYFP}3, Sb1,Tb1,ca1 and allowed them to lay fertilized eggs on standard apple juice–agar Petri plates with yeast paste for two hours at 25°C, 50% humidity. After 24 hr, the relative proportion of non-EYFP (i.e. homozygous Mut/Mut) to EYFP (i.e. heterozygous Mut/+) first instar larvae were counted. As a control, we generated GE-ATPα−Δ2-6b-WT/TM6B, P{w[+mC]=Dfd-EYFP}3, Sb1,Tb1 parents and followed the same procedure. A second measure of viability is the probability of survival of a first instar Mut/Mut larvae to adulthood. To measure this, we transferred homozygous (Mut/Mut) first instar larvae to fly media vials (recipe R, LabExpress, Ann Arbor, MI). Larval density was limited to 10 per vial and vials were kept at 25°C, 50% humidity. After two weeks, we counted the number of emerging adults. Homozygous GE-ATPα−Δ2-6b-WT first instar larvae generated the same way were used as a control. Third, we measured egg-to-adult fitness as the proportion of emerging Mut/Mut adults in media bottles (recipe B, LabExpress, Ann Arbor, MI) seeded with GE-ATPα−Δ2-6b-Mut/TM6B, P{w[+mC]=Dfd-EYFP}3, Sb1,Tb1,ca1 parents and used bottles seeded with +/TM6B, P{w[+mC]=Dfd-EYFP}3, Sb1,Tb1,ca1 parents as controls.
 
-## Enzyme inhibition assays
+### Enzyme inhibition assays
 
 For each D. melanogaster substitution line, we homogenized 90 heads (previously stored at −80°C) in 900 µl of deionized water, using a 1 ml glass grinder (Wheaton) chilled on ice (Petschenka et al., 2017). After vortexing, we divided homogenates into three aliquots of 300 µl representing technical replicates. Subsequently, samples were frozen at −80°C and freeze-dried (Christ, Alpha 2–4 LDPlus) overnight. For assessing resistance of NKA to ouabain, we followed the procedure as described in Petschenka et al. (2013a) that is based on the photometric evaluation of phosphate released from enzymatic hydrolysis of adenosine triphosphate (ATP) as a measure of NKA activity. Lyophilisates were stored at −80°C until use and reconstituted with 500 µl deionized water. Head extractions were incubated at 12 increasing concentrations of the water-soluble standard cardenolide ouabain (range 10−8 M to 2 × 10−3 M, Sigma, Germany, O3125) at 37°C under the following conditions: 100 mM NaCl, 20 mM KCl, 4 mM MgCl2, 50 mM imidazol, and 2.5 mM ATP (pH 7.4). We corrected all measurements for a background value that we obtained by incubating the extract under the same conditions as above, except with the addition of 2 × 10−3 M ouabain and no KCl (i.e., NKA inactive). On each microplate, we included an assay with porcine Na+/K+-ATPase (Sigma, Germany, A7510-5UN) as an internal standard. In addition, we ran a series of KH2PO4 dilutions as a phosphate calibration curve on every plate. We measured absorbances at 700 nm using a CLARIOstar microplate reader (BMG Labtech, Germany). We carried out three biological replicates per line based on different extractions of fly heads. Each biological replicate was the average of three technical replicates, that is measurements based on aliquots from original extracts. For data analysis, we compared all measurements to a non-inhibited control.
 
-To quantify levels of insensitivity to CG-inhibition, we used least-squares fitting to the bi-phasic curve function,(1)A=(1−f)(1−[I][I]+IC50,1) + f(1−[I][I]+IC50,2),where IC50,1 and IC50,2 represent the inhibitor concentration [I] required for 50% activity A of each isoform present in proportions (1 f) and f, respectively. For heterozygous lines, we expect a biphasic curve reflecting the inhibitor dissociation constants (Kd) of the two forms of the enzyme (Figure 2—figure supplement 1A). If the two forms of the enzyme contribute equally to the total ouabain-inhibitable activity, we expect f = 0.5. For homozygous lines, we estimated a single IC50 by setting f = 0 in the above equation, which assumes a homogenous population of enzyme. Least-squares fitting was performed with the nlsLM function of the minpack.lm library in R. Alternatively, we used OriginPro 2017 (OriginLab, Northampton, MA) with top and bottom asymptotes set to 100 and 0, respectively. The two approaches yielded similar results. Confidence intervals on estimates of IC50,1, IC50,2 and f were estimated using parametric bootstrap simulations, assuming that residuals across biological replicates are normally distributed. We assumed mixtures exhibited monophasic curves if the confidence intervals for f included 0.
+To quantify levels of insensitivity to CG-inhibition, we used least-squares fitting to the bi-phasic curve function,
+
+$$
+A=(1−f)(1−\frac{[I]}{[I]+IC_{50,1}}) + f(1−\frac{[I]}{[I]+IC_{50,2}}),
+$$
+
+where IC50,1 and IC50,2 represent the inhibitor concentration [I] required for 50% activity A of each isoform present in proportions (1 f) and f, respectively. For heterozygous lines, we expect a biphasic curve reflecting the inhibitor dissociation constants (Kd) of the two forms of the enzyme (Figure 2—figure supplement 1A). If the two forms of the enzyme contribute equally to the total ouabain-inhibitable activity, we expect f = 0.5. For homozygous lines, we estimated a single IC50 by setting f = 0 in the above equation, which assumes a homogenous population of enzyme. Least-squares fitting was performed with the nlsLM function of the minpack.lm library in R. Alternatively, we used OriginPro 2017 (OriginLab, Northampton, MA) with top and bottom asymptotes set to 100 and 0, respectively. The two approaches yielded similar results. Confidence intervals on estimates of IC50,1, IC50,2 and f were estimated using parametric bootstrap simulations, assuming that residuals across biological replicates are normally distributed. We assumed mixtures exhibited monophasic curves if the confidence intervals for f included 0.
 
 As validation of the approach, we compared inhibition curves for the commercial pig NKA enzyme (porcine cerebral cortex, Sigma A7510), extracts from Monarch butterfly brains, and normalized mixtures of the two (Figure 2—figure supplement 1, panels B and C). Enzyme-inhibition activities were analyzed as above except using six ouabain concentrations (range 10−8 M to 10−3 M) and one biological replicate. Parameters for homogenous extracts and mixtures were estimated using the monophasic (f = 0) and biphasic models (f > 0), respectively. As expected, the pig and Monarch enzymes exhibit monophasic curves whereas the mixtures exhibit biphasic curves with f estimates close to those expected based on mixture proportions.
 
-## Targeted allele-specific expression
+### Targeted allele-specific expression
 
 To estimate relative expression of mutant and wild-type alleles in heterozygous strains, we designed a targeted allele-specific expression (ASE) assay. Genomic DNA (gDNA) and total RNA were extracted sequentially using TRIzole Reagent (Invitrogen 15596026 and 15596018) from three replicate pools of 20 males sampled from each of sixteen lines. Extracted RNA was further purified with Qiagen RNAeasy column (Qiagen 74104) and reverse transcribed into cDNA with the use of random primers and ProtoScript II Reverse Transcriptase (NEB M0368S). Two sets of primers for ATPα1 were designed and used in subsequent PCR, multiplexing and sequencing. The first set were designed as exon-primed intron crossing primers (Racle et al., 2017) and span a short intron separating exons 2 and 3. A second set of primers was used to add standard Illumina-like i5 and i7 barcodes to the PCR amplicons to facilitate multiplexing and subsequent sequencing. These multiplexed amplicons were pooled and sequenced on an Illimina MiSeq (Princeton Microarray Facility) and yielded ~1 million 150 nucleotide paired-end reads. Reads were mapped to gDNA and cDNA reference sequences using bwa-mem (Li, 2013) and a Variant Calling File (VCF) file was produced using the Naive Variant Caller as implemented in Galaxy (Version 0.0.2). ASE was estimated from allele counts at focal sites (104, 111 and 122) using the Cochran-Mantel-Haenzel framework as implemented in R (mantelhaen.test). Specifically, ASE is estimated as the relative risk of the mutant substitution in the cDNA population using allele counts from gDNA as a reference population.
 
-## Behavioral phenotyping
+### Behavioral phenotyping
 
 We quantified ‘bang sensitivity’ which is a measure of susceptibility to seizures and paralysis upon mechanical over-stimulation (Ganetzky and Wu, 1982). As such, the bang sensitivity phenotype is a measure of proper neuron function. Individual flies were placed in an empty fly media vial and vortexed at the maximum setting for 20 s. Immediately following mechanical overstimulation, neurologically dysfunctional flies typically experience a period of convulsions and seizures. The recovery time was recorded as the time for each fly to right itself. Male flies were assayed 14 days post-eclosion. Approximate 95% confidence intervals were estimated around means by bootstrap resampling with replacement. An average of 43 flies were assayed (range 37–85). Recovery time distributions were compared using a Wilcoxon two-sample rank sum test with continuity correction as implemented in R (wilcox.test).
 
-## CG exposure assay
+### CG exposure assay
 
-As a measure of the ability to tolerate CGs, we exposed adult flies (1–7 days post-eclosion) to media containing known concentrations of the CG ouabain (Sigma). 1.5 grams of Drosophila instant media (Carolina Biological Supply) was reconstituted in a plastic vial with 7 mL of either 0, 5, 10 or 20 mM ouabain. After food solidified (30 min), a small paper wick was added. Three replicates, each with 10 males and 10 females, were kept in separate vials at 25°C and 50% humidity. Mortality was measured after 7 days. The genetically engineered wild-type line was used as a control. The relationship between treatment concentrations and physiologically-relevant concentrations for animals feeding on CG-containing plants is difficult to establish. Compared to values reported for various milkweed species (Züst et al., 2019), our 10 mM CG treatment corresponds to a per mg dry weight concentration that is ~10 fold higher than the range reported for leaf tissue, but well within those reported for milkweed latex. The Cochran-Mantel-Haenzel test framework (implemented in R) was used to assess significant differences between treatments (i.e. 5/10/20 mM ouabain versus no ouabain), as well as estimates and 95% confidence bounds for the relative risk associated with treatment. Odds Ratios (OR) estimated using this framework were converted into relative risk (RR) estimates using the formula, RR=OR/(1-p+(p*OR)), where p is the risk in the no ouabain control group. A constant (0.5) was added to all cells to allow for calculation of relative risk in cases where mortality or survivors were absent. Thus, the maximum relative risk for this sample size (three replicates of 20 individuals each) is limited to 117. We found no sex differences in survival.
+As a measure of the ability to tolerate CGs, we exposed adult flies (1–7 days post-eclosion) to media containing known concentrations of the CG ouabain (Sigma). 1.5 grams of Drosophila instant media (Carolina Biological Supply) was reconstituted in a plastic vial with 7 mL of either 0, 5, 10 or 20 mM ouabain. After food solidified (30 min), a small paper wick was added. Three replicates, each with 10 males and 10 females, were kept in separate vials at 25°C and 50% humidity. Mortality was measured after 7 days. The genetically engineered wild-type line was used as a control. The relationship between treatment concentrations and physiologically-relevant concentrations for animals feeding on CG-containing plants is difficult to establish. Compared to values reported for various milkweed species (Züst et al., 2019), our 10 mM CG treatment corresponds to a per mg dry weight concentration that is ~10 fold higher than the range reported for leaf tissue, but well within those reported for milkweed latex. The Cochran-Mantel-Haenzel test framework (implemented in R) was used to assess significant differences between treatments (i.e. 5/10/20 mM ouabain versus no ouabain), as well as estimates and 95% confidence bounds for the relative risk associated with treatment. Odds Ratios (OR) estimated using this framework were converted into relative risk (RR) estimates using the formula, $RR=OR/(1-p+(p*OR))$, where p is the risk in the no ouabain control group. A constant (0.5) was added to all cells to allow for calculation of relative risk in cases where mortality or survivors were absent. Thus, the maximum relative risk for this sample size (three replicates of 20 individuals each) is limited to 117. We found no sex differences in survival.

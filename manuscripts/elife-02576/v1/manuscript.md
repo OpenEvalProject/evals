@@ -40,7 +40,7 @@ How can we ensure that excellence in areas other than established disciplines is
 
 For example, one code-word used for rejecting interdisciplinary grant proposals is ‘over-ambitious’. This often stands for saying that the scientist intends to do something that is radically different from what has been done until now and does not follow the ‘rules’ of the reviewer’s home scientific community. Perhaps such judgments should be banned. What is wrong with being over-ambitious? Besides, the predictability of a scientific endeavour is arguably inversely proportional to how innovative it is. So maybe any scientific project that is not ‘over-ambitious’ is by definition not innovative enough?
 
-A useful countermeasure would be to develop an objective measure of the density of various scientific communities that could be taken into account when making decisions about funding and jobs. If two scientists are judged equal on the basis of the standard measures, then the scientist from the less dense community (see
+A useful countermeasure would be to develop an objective measure of the density of various scientific communities that could be taken into account when making decisions about funding and jobs. If two scientists are judged equal on the basis of the standard measures, then the scientist from the less dense community (see figure) could be ranked higher to compensate for the biases against researchers in these areas.
 
 ![Figure.](https://cdn.elifesciences.org/articles/02576/elife-02576-fig1-v1.jpg)
 

@@ -37,13 +37,21 @@ Many factors contribute to behavioral flexibility (Dhawale et al., 2017; Gordus 
 
 The initiation of escape responses of the nematode Caenorhabdtis elegans (C. elegans) has long been viewed as an instinctive reflex. Upon a gentle touch to its anterior body, the ventral cord-projecting premotor interneurons AVA/AVD/AVE relay mechanosensory inputs to motor neurons and reliably drive a backward movement (Chalfie et al., 1985; Pirri et al., 2009; Wicks et al., 1996). While C. elegans stays committed to its escape decision, the animal remains flexible in its approach to complete the motor sequence. After the reversal, the animal may or may not reorient its body via a deep omega (Ω) turn, before moving forward (Figure 1A). This allows the animal to resume forward movement in either the original or a new direction. Notably, which action to select and when to execute exhibit trial to trial variability, and they can be coupled. For example, a previous study (Gray et al., 2005) has shown that a longer reversal is likely to be followed by an omega turn.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig1-v2.jpg)
+
+**Figure 1.:** (A) Optogenetic stimulation of mechanosensory neurons ALM/AVM (Pmec-4::ChR2) was carried out with blue light (473 nm, 4.63 mW/mm2) for 1.5 s during animal forward movement. Identical stimuli could induce four different behavioral outputs: reversal followed by an omega turn, reversal followed by forward movement, pause state or forward movement (no response). (B) Deﬁnitions of type-I and type-II transitions. (C) Reversal length distribution (left) and transition rates (right) during ALM/AVM (Pmec-4::ChR2) triggered escape responses. Total number of trials, n = 674; reversal without turn, n = 272; reversal with turn, n = 322; no response, n = 79; pause, n = 1. Number of animals used can be found in Supplementary file 4. Here and below, the error bars of transition rates represent 95% binomial proportion conﬁdence interval. (D) Reversal length distribution (left) and transition rates (right) during thermal stimulus induced escape responses. Wild-type, n = 385. Animal heads were thermally stimulated by an infrared laser (1480 nm; 400 mA) for 0.75 s. Solid lines are theoretical ﬁts using Equation 4 and fitted type-II transition rates pass goodness-of-fit test (p>0.05).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left, examples of reorientation angle θ during the type-I (up) and the type-II transition (bottom). θ was measured as the angle between the head vector (BA) and the tail vector (DC). The worm body centerline was equally divided into 100 segments. The head vector (BA) is denoted as point B (mean coordinate of the 10th-14th segment) to A (mean coordinate of the 1st-5th segment), while the tail vector is denoted as point D (mean coordinate of 96th-100th segment) to C (mean coordinate of the 86th-90th segment). Immediately after the end of reversal, we identified a frame in which the worm exhibited a highly coiled body posture to calculate θ. If the head touched the body or tail, θ was computed from the frame before touching. Right, distribution of θ during ALM/AVM (Pmec-4::ChR2) triggered escape responses. A type-II transition was identified by either the head touching the body (or tail) or θ > 135° within a single head swing. Total trials, n=594; type-I transition, n=272; type-II transition (touching the body or tail), n=283; type-II transition (no touching), n=39. (B) A Gaussian mixture model to fit the reversal length distribution during ALM/AVM (Pmec-4::ChR2) triggered escape responses. We performed the likelihood ratio test between the unimodal Gaussian distribution fit and the bimodal Gaussian mixture model fit. After computing the difference of the negative log likelihoods, we found a p-value = 5.4e-5 using the $χ_{k}^{2}$ distribution, where k = 3 is the difference of the number of free parameters in the unimodal (total 2 parameters) and bimodal (total 5 parameters) distribution. At level α=0.01, we have sufficient evidence that the bimodal distribution fits the reversal length better than the unimodal distribution.
+
 We sought to understand algorithms and circuit mechanisms for motor sequence generation by investigating recurrently connected interneurons, which are positioned between sensory neurons and motor neurons in the C. elegans nervous system (Figure 2—figure supplement 1A). Previous studies on this layer of neural network (Figure 2—figure supplement 1A) have implicated their roles in exploratory behaviors (Gray et al., 2005; Iino and Yoshida, 2009; Mori and Ohshima, 1995; Pierce-Shimomura et al., 1999). During navigation, C. elegans moves towards a new direction by making a reversal and/or a turn in a probabilistic manner. Cell ablation studies revealed that the frequencies of reversals or turns were differentially modulated by many local interneurons including AIB and RIB (Gray et al., 2005). Here we ask whether and how activities of local interneurons and their synaptic interactions shape the dynamics of a motor sequence during escape responses.
 
 Several models have been proposed to account for motor sequence generation. In a class of synaptic chain models (Abeles, 1991; Long et al., 2010; Xiao et al., 2017), feedforward excitation between transiently activated groups of neurons controls the timing of actions hierarchically. Sequential neural activity may also emerge from a cooperation between external inputs and local synaptic interactions in a recurrent network (Rajan et al., 2016; Seeds et al., 2014). We find that neurons encoding distinct motor states, such as reversals and omega turns, use electrical coupling to reliably drive motor state transitions, whereas they exploit mutual inhibition to flexibly control the timing of an action in a sequence. We propose that a form of short-term plasticity in inhibitory synapses contributes to the time-dependent change of transition probability between motor states. Our findings provide new insights into how the nervous system organizes time-ordered and variable motor activities, by which stereotyped and flexible animal behaviors emerge.
 
 ## Results
 
-## Stereotypical and flexible motor patterns constitute C. elegans escape responses
+### Stereotypical and flexible motor patterns constitute C. elegans escape responses
 
 A potentially threatening sensory stimulus will trigger an animal’s escape response. For example, a gentle touch on the C. elegans head, which activates specific mechanosensory neurons ALM/AVM (Chalfie et al., 1985), can induce a reversal or an omega turn (Figure 1A and Figure 1—video 1).
 
@@ -53,19 +61,39 @@ The reversal length distribution is broad (Figure 1C left) and likely bimodal (
 
 This quantification, which was consistent with a previous observation and description for spontaneous reversals during exploratory behaviors (Gray et al., 2005), confirms the notion that the longer a reversal, the more likely the reversal is followed by a turn.
 
-## Local interneurons in the backward module modulate motor state transitions
+### Local interneurons in the backward module modulate motor state transitions
 
 We ask how neural dynamics underlie the behavioral variation. Whole brain and multi-neuron calcium imaging of fixed and behaving animals suggested that population interneuron activities, which perform sensorimotor transformation, encode distinct motor states (Gordus et al., 2015; Kato et al., 2015; Kawano et al., 2011; Li et al., 2014; Luo et al., 2014; Nguyen et al., 2016; Roberts et al., 2016; Venkatachalam et al., 2016; Figure 2A and Figure 2—figure supplement 1B). Several interneurons, including the ventral-cord-projecting premotor interneurons AVA and AVE, and the local interneurons AIB and RIM, exhibited increased calcium activity during a backward movement (Kato et al., 2015; Laurent et al., 2015; Luo et al., 2014; Figure 2A and Figure 2—figure supplement 1B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig2-v2.jpg)
+
+**Figure 2.:** (A) Simplified circuit diagram underlying the gentle touch induced escape responses. Neurons were grouped into four modules based on their functional roles and activity patterns. (B) Calcium activity of AIB during spontaneous reversals before type-I (n = 23) and type-II (n = 36) transitions in unrestrained behaving animals (Pinx-1::GCaMP6;Pinx-1::wCherry). Here, data are aligned to the ends of reversals (vertical dashed line, t = 0). Heat map across trials (up) and ΔR(t)/R0 (Mean ± SEM, bottom) are shown. (C) Ramping rate of calcium activity in AIB. Up, raw single trial ΔR(t)/R0 from reversal start to reversal end. The ramping rate is the slope of the red line, fitted by linear regression. Bottom, ramping rates of AIB during type-I and type-II transitions. Each color (Mean ± SEM) represents single animal data across multiple trials. Total nine animals (Pinx-1::GCaMP6;Pinx-1::wCherry) were tested. Very short reversals (less than 1.5 s) are excluded, for some of them have negative ramping rates and the slope estimate is susceptible to noise (but including those trials doesn’t affect our conclusion). **p<0.01, two-way ANOVA. (D) Optogenetic activation of AIB (635 nm, 4.46 mW/mm2, 7 s) or inhibition of AIB (561 nm, 21.71 mW/mm2, 12 s) during ALM/AVM (473 nm, 14.71 mW/mm2, 1.5 s) triggered avoidance behaviors, reversal durations (bar graph) and fractions of animals executing omega turns (pie chart) are shown. Error bars are SEMs. Bar graph, Mann–Whitney U test. Pie chart, χ2 test. *p<0.05, ***p<0.001, ****p<0.0001. Here and below, the actual turning percentages (nturn/ntotal) are noted beside the pie chart and numbers within the bars indicate the number of trials with reversal. (E–F) Reversal length distribution (E) and transition rates (F) during escape responses when AIB were persistently hyperpolarized through an exogenous expression of the potassium channel TWK-18. Control group is from Figure 1C.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic diagram of the C. elegans nervous system. (B) Multi-neuron calcium imaging in freely behaving animals (Pnmr-1/Plim-4/Plgc-55/Pnpr-9::NLS::wCherry::SL2::GCaMP6). Interneurons in the backward and forward modules were simultaneously imaged using a confocal microscopy (see Materials and methods for details). Data are aligned to the onset of a reversal (up, vertical dashed lines, t = 0) or the end of a turn (bottom, vertical dashed lines, t = 0). Heat map across trials and ΔR(t)/R0 (Mean ± SEM) across trials are shown. (C) Ramping rate of AIB calcium activity during thermally-induced escape responses. Ramping rate is significantly higher in type-II transition (nine animals, each point has more than three trials). *p<0.05, two-way ANOVA. (D–E) Characterization of the probability of type-II transition during optogenetic stimulation of two different interneurons AIB (left) and RIM (right) for varying durations. Longer activation of AIB consistently led to a higher probability of type-II transition (left). The control groups are animals performing spontaneous motor state transitions without optogenetic stimulation. A blue laser (473 nm, 14.71 mW/mm2) was used to stimulate ChR2 expressed neurons. (F–G) Hyperpolarization of RIM (Ptdc-1::Arch) or AIB (Pnpr-9::Arch) both affected reversal duration (bar graph), but only inhibiting AIB affected the probability of type-II transition (pie chart). In F), simultaneous optogenetic activation of AIB (or RIM) (635 nm, 4.46 mW/mm2 for AIB or 473 nm, 14.71 mW/mm2 for RIM) and inhibition (561 nm, 6.80 mW/mm2) of RIM (or AIB) were carried out for 7 (or 5) seconds. In G), RIM were activated for varying durations, while AIB were inactivated through an exogenous expression of the potassium channel TWK-18. (H–I) Reversal length distribution and transition rates after optogenetic ablation of AIB. ALM/AVM were optogenetically activated for 1.5 s to trigger avoidance behavior. AIB were ablated by exogenous expression of a membrane targeted PH-miniSOG. Data from Figure 1C) are used as control. For reversal duration, error bars indicate SEMs. Mann–Whitney U test. For probability of turn, error bars indicate 95% binomial proportion confidence interval. χ2 test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. All multiple comparisons were adjusted using Bonferroni correction.
+
 Structural and functional studies of AIB (Gray et al., 2005; White et al., 1986) indicate that they may play important roles in motor state transitions (Figure 2A). First, AIB establish recurrent connections with the premotor interneurons AVA and AVE that potentiate backward movement either directly through chemical synapses or indirectly through electrical and chemical connections with RIM (Figure 2A). Second, AIB form gap junctions with the inter/motor neurons RIV (White et al., 1986), which play a role in generating a ventral-biased turning behavior (Figure 2A; Gray et al., 2005). Third, AIB exhibit ramping calcium activity during reversals (Kato et al., 2015; Laurent et al., 2015; Luo et al., 2014), and finally, laser ablation of AIB significantly reduces the frequency of reversals during food search behavior (Gray et al., 2005).
 
-We first examined neuronal correlate of behavioral flexibility in action selection. We compared the AIB ramping activity (Pinx-1::GCaMP6; Pinx-1::wCherry) in different action sequences during either spontaneous or thermal-stimulus-triggered behaviors (Figure 2B-C and Figure 2—figure supplement 1B-C). If the fluorescence signal (∆R(t)/R0) reflects a change of intracellular free calcium concentration [Ca2+], the ramping rate, defined as ζ = dRdt (Figure 2C), would be proportional to the calcium current. Higher ζ may reflect a larger depolarization of the neuronal membrane potential. In Figure 2B-C, 76% trials (91/120) in the type-I (RF) transition show a positive ramping rate, whereas the proportion rose to 95% (109/115, p < 0.0001, χ2 test) in the type-II (RT) transition. Among trials longer than 1.5 seconds, they all showed positive ζ, which during the type-II transition was significantly higher than that during the type-I transition (Figure 2C and Figure 2—figure supplement 1C). These results suggest that the more active AIB are, the more likely a worm would terminate its reversal with a turn.
+We first examined neuronal correlate of behavioral flexibility in action selection. We compared the AIB ramping activity (Pinx-1::GCaMP6; Pinx-1::wCherry) in different action sequences during either spontaneous or thermal-stimulus-triggered behaviors (Figure 2B-C and Figure 2—figure supplement 1B-C). If the fluorescence signal (∆R(t)/R0) reflects a change of intracellular free calcium concentration [Ca2+], the ramping rate, defined as ζ = $\frac{dR}{dt}$ (Figure 2C), would be proportional to the calcium current. Higher ζ may reflect a larger depolarization of the neuronal membrane potential. In Figure 2B-C, 76% trials (91/120) in the type-I (RF) transition show a positive ramping rate, whereas the proportion rose to 95% (109/115, p < 0.0001, χ2 test) in the type-II (RT) transition. Among trials longer than 1.5 seconds, they all showed positive ζ, which during the type-II transition was significantly higher than that during the type-I transition (Figure 2C and Figure 2—figure supplement 1C). These results suggest that the more active AIB are, the more likely a worm would terminate its reversal with a turn.
 
 Optogenetic activation of AIB (Pnpr-9::ChR2 or Pnpr-9::Chrimson) alone reliably triggered reversals followed by omega turns (Figure 2D, Figure 2—figure supplement 1D and Figure 2—video 1), whereas strong optogenetic inhibition of AIB (Pmec-4::ChR2; Pnpr-9::Arch; lite-1) during ALM/AVM induced escape responses almost completely abolished omega turns (Figure 2D). We also generated transgenic animals in which AIB were persistently hyperpolarized by an expression of exogenous potassium channels (Pnpr-9::TWK-18(gf)). Interestingly, the no-response fraction increased to ~20% (70/332, p<0.0001, χ2 test) upon stimulating ALM/AVM in these animals and a significantly larger portion of responses were pauses (35/332, p<0.0001, χ2 test, Figure 2E). We did not observe a significant change in the type-II transition rate r2 (Kolmogorov-Smirnov test, p=0.6, Figure 2F), which might be due to a weaker AIB inhibition in these animals. Furthermore, optogenetic ablation of AIB alone (Pnpr-9::PH-miniSOG, Figure 2—figure supplement 1H; Qi et al., 2012; Xu and Chisholm, 2016) significantly suppressed the type-II transition rate (Kolmogorov-Smirnov test, p<1e-20, Figure 2—figure supplement 1I). RIM (Figure 2A) also promoted reversals (Figure 2—figure supplement 1B and E–G), but were less important in modulating the type-II transition (Figure 2—figure supplement 1D–G). Together, our data strongly suggest that AIB play an important role in promoting reversal and turning behaviors.
 
-## Feedforward coupling between the backward module and the turning module drives the omega turn
+### Feedforward coupling between the backward module and the turning module drives the omega turn
 
 How do AIB drive turning behaviors? Whole brain imaging in immobilized animals implicated that AIB and their electrically-coupled partners RIV (Figure 2A and Figure 3—figure supplement 1) exhibited sequentially activated patterns (Kato et al., 2015). We compared RIV activity patterns (Plim-4::GCaMP6) underlying different motor sequences during spontaneous behaviors. During the type-II (RT) transition, RIV calcium signal rose rapidly immediately before a turn began, whereas it remained largely quiescent during the type-I (RF) transition (Figure 3A and Figure 3—figure supplement 2A). The calcium signal decayed towards baseline before the animal finished the turn and resumed forward movement (Figure 3—figure supplement 2B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig3-v2.jpg)
+
+**Figure 3.:** (A) Calcium activity of RIV during the type-I (n = 38) and the type-II (n = 18) transitions in spontaneous behaving animals (Plim-4::GCaMP6). Here, data are aligned to the ends of reversals (vertical dashed line, t = 0). Heat map across trials (left) and Δ$R$(t) (Mean ± SEM, right, also see Materials and Methods) are shown. (B) Optical neurophysiology for probing the feedforward coupling between the backward module and the turning module. (C) Simultaneous optogenetic activation of AIB (635 nm, 6.11 mW/mm2) and calcium imaging of RIV in immobilized animals. ΔR(t)/R0 (Mean ± SEM) under different genetic backgrounds are shown: control (ATR) is wild-type (dark blue); inx-1unc-9unc-7 triple mutant (red); calcium imaging of RIV in the presence of moderate inhibition (561 nm, 1.94 mW/mm2) of RIV (light blue, Plim-4::Arch). The control (no ATR) represents imaging data from wild-type animals without feeding all-trans retinal (grey). ****p<0.0001, two-way ANOVA. (D) Probability of a reversal followed by a turn (left) and type-II transition rates (right) for gap junction deficient mutants. AIB, expressing Chrimson, were optogenetically activated for 7 s (635 nm, 4.46 mW/mm2) in wild-type animals (green), gap junction deficient mutants inx-1 (red), and inx-1 mutants, in which INX-1 channels were restored specifically in AIB (blue). Error bars indicate 95% binomial proportion confidence interval. χ2 test. ****p<0.0001. (E) Simultaneous optogenetic activation of AIB (635 nm, 6.11 mW/mm2) and calcium imaging of RIV in unrestrained behaving animals. Left, calcium activity heatmap across trials. t < 0 represents reversals. Omega turns start at t = 0. Right, $ΔR(t)$ (mean ± SEM) are shown (blue). (F) Data are related to (E), but t = 0 is aligned to the beginning of AIB stimulation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** SDQ were oxygen-sensing neurons and topological cluster analyses suggest ADA may be involved in chemosensation. RIM, RIS and RIV have direct electrical coupling with AIB.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A and C–F) Single trial data related to Figure 3A, (C and E–F). In (F), dashed lines indicate the start of a turn. (B) Calcium activity of RIV (Plim-4::GCaMP6, n = 20) during thermal stimulus induced escape responses in freely moving animals. Δ$R$(t) = [ΔR(t) - ΔR(t = 0)]/R0 (mean ± SEM) are shown. t = 0 is aligned to the initiation (up) or termination (bottom) of an omega turn.
 
 To directly probe the functional connectivity between AIB and RIV, we performed simultaneous optogenetic stimulation of AIB (Pnpr-9::Chrimson) and calcium imaging of RIV (Plim-4::GCaMP6::wCherry, Figure 3B). In immobilized wild-type animals, upon stimulating AIB at t = 0, RIV calcium signal rapidly rose (Figure 3C dark blue and Figure 3—figure supplement 2C). Several innexin, including INX-1, UNC-7 and UNC-9, have been reported to be expressed in AIB and RIV (Altun et al., 2009; Bhattacharya et al., 2019). Some of these innexins were shown to form homotypic and/or heterotypic gap junctions (Kawano et al., 2011; Liu et al., 2013; Starich et al., 2009; Xu et al., 2018). To determine whether electrical synapses contribute to the observed functional coupling between AIB and RIV, we examined the effect of AIB stimulation in inx-1unc-9unc-7 triple innexin mutants. RIV remained quiescent upon AIB stimulation (Figure 3C red and Figure 3—figure supplement 2D), indicating that gap junction coupling underlies AIB stimulation-mediated RIV calcium activity.
 
@@ -77,7 +105,19 @@ Delayed depolarization of RIV in a moving animal may result from a convergence o
 
 Taken together, our data suggest that the feedforward excitation between the backward module and the turning module takes the form of electrical synapses, likely between AIB and RIV. We considered an effective functional coupling through polysynaptic excitation highly unlikely. First, AIB triggered ventral-biased turning behaviors did not require glutamatergic synaptic transmission (Figure 4A), thus excluding polysynaptic pathways via chemical synapses from AIB. Second, two possible polysynaptic excitation pathways from AIB via electrical coupling involve interneurons RIM or RIS (Figure 3—figure supplement 1), revealed by the C. elegans connectome (White et al., 1986). Our optogenetic activation of AIB while inhibiting RIM did not modify the turning probability, whereas activating RIM while inhibiting AIB significantly reduced the turning probability (Figure 2—figure supplement 1F–G). Activation of RIS would drive an animal to a pause state and abolish motor actions (Steuer Costa et al., 2019). Both results argue against RIM and RIS being directly involved in driving turning behaviors.
 
-## Inhibitory glutamatergic synaptic transmission modulates the type-II transition
+![Figure 4.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig4-v2.jpg)
+
+**Figure 4.:** (A) Reversal durations (left) and type-II transition rates (right) in glutamatergic synaptic transmission deficient animals upon strong and persistent optogenetic activation of AIB. Optogenetic stimulation was delivered for 7 s using red light (635 nm, 4.46 mW/mm2). Right, compare r2 in eat-4 mutant or in Pnpr-9::TeTx with control animals across the whole distribution (Kolmogorov-Smirnov test, p=6.2e-7, p=0.0026) or within a time window (χ2 test: * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001). (B) Reversal durations (left) and type-II transition rates (right) in GluCl receptor mutants upon optogenetic activation of AIB (635 nm, 4.46 mW/mm2). Right, compare r2 in triple receptor mutant with control animals across the whole distribution (Kolmogorov-Smirnov test, p=5.9e-8) or within a time window (χ2 test: * p<0.05, ** p<0.01). (C) Genes encoding GluCl receptors were expressed in local interneurons RIB and AIY respectively. GFP reporter lines were constructed using avr-14, avr-15 and glc-1 promoters, respectively; mCherry (or wCherry) reporters were used for cell identification. Expression pattern from one section is showed. Scale bar, 10 µm. (D) Simultaneous optogenetic activation of AIB (635nm, 6.11 mW/mm2) and calcium imaging of RIB in immobilized animals under wide-type (control (ATR)) (blue) or eat-4 glutamate deficient mutant background (red). ΔR(t)/R0 (Mean ± SEM) are shown. t = 0 represents the beginning of AIB stimulation. The control group (no ATR) (grey) represents imaging data from animals without feeding all-trans retinal. ****p<0.0001, two-way ANOVA. (E) Functional coupling between AIB and RIB neurons was directly tested through glutamate imaging. Upon stimulation of AIB (Pnpr-9::Chrimson), the process (red), cell body (green) of the RIB (Psto-3::iGluSnFR) and the RIB process in eat-4 glutamate deficient mutants (grey) exhibited distinct fluorescence signals. The control group (blue) represents imaging data from animals without feeding all-trans retinal. Raw iGluSnFR imaging was recorded at 150 Hz. Trial average (bold color) and SEM (shaded region) are shown. Inset, the fluorescence signal of the process (red) is fitted with a double exponential function (blue), $B(e^{-\frac{t}{\tau_{1}}}-e^{-\frac{t}{\tau_{2}}})+c$, where $B$, $\tau_{1},$$\tau_{2}$ and $c$ are free parameters. $\tau_{1}$ represents the time constant of glutamate signal decay, and $c$ is the baseline constant, which was subtracted in the inset plot. For reversal duration, Error bars indicate SEM. Mann–Whitney U test: ***p<0.001, ****p<0.0001. All multiple comparisons were adjusted using Bonferroni correction.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Couplings between the backward, forward and turning modules. AIB, RIV and RIB are highlighted. (B) Reversal length during optogenetic activation of AIB in various glutamate postsynaptic receptor mutants and restoring eat-4 specifically in AIB in different eat-4 glutamate deficient mutants. GluCl single and double mutants exhibited longer reversals than the triple mutants (Figure 4B), suggesting that AVR-14, AVR-15 and GLC-1 proteins function synergistically to mediate feedforward inhibition. Error bars indicate SEMs. *p<0.05, **p<0.01, ****p<0.0001. Mann–Whitney U test. All multiple comparisons were adjusted using Bonferroni correction. (C) Single trial data related to Figure 4D).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Single trial data of the glutamatergic signal on the process of RIB after AIB activation onset, related to Figure 4E). Raw data and smoothed data (bold line) are showed. (B) Examination of AIB calcium activity after optogenetic activation of AIB, related to Figure 4E). Raw data and smoothed data (bold line) are showed.
+
+### Inhibitory glutamatergic synaptic transmission modulates the type-II transition
 
 We next investigated behavioral flexibility in the timing of an action. Given the feedforward coupling between the backward module and the turning module, we asked why omega turns did not immediately follow the optogenetic activation of AIB. We hypothesized that a balance of feedforward excitation and an unknown inhibition provides a potential mechanism to shape the statistics of the type-II (RT) transition. Besides gap junctions, AIB make chemical synapses with neurons in other modules (Figure 2A and Figure 4—figure supplement 1A), which may facilitate this inhibition. AIB are glutamatergic (Serrano-Saiz et al., 2013). In the glutamate vesicular transport deficient mutant eat-4, optogenetic activation of AIB robustly induced an omega turn that was preceded by a much shorter reversal (Figure 4A left and Figure 4—figure supplement 1B). Restoring eat-4 expression specifically in AIB significantly prolonged the reversal length before the onset of an omega turn (Figure 4A left, Figure 4—figure supplement 1B and Figure 3—video 1). Likewise, stimulating AIB while blocking chemical synaptic transmission from AIB (Pnpr-9::TeTx) triggered an omega turn preceded by a shorter reversal (Figure 4A left and Figure 3—video 1). Consistently, r2 rose more rapidly when glutamatergic inputs from AIB were disrupted (Figure 4A right).
 
@@ -85,11 +125,25 @@ C. elegans nervous system possesses a family of inhibitory glutamate-gated chlor
 
 Unlike AIY, RIB receive more and invariant synaptic inputs from AIB (White et al., 1986; Witvliet et al., 2020; Figure 2A), and hence are the prominent postsynaptic partners of AIB. Consistent with a glutamate mediated feedforward inhibition, RIB calcium activity (Psto-3::GCaMP6) significantly reduced upon optogenetic activation of AIB in immobilized animals, which was not observed in the glutamate vesicular transport deficient mutant eat-4 animals (Figure 4D and Figure 4—figure supplement 1C). Moreover, restoring either avr-15 expression in RIB or avr-14 (or glc-1) expression in AIY promoted a longer reversal before the onset of an omega turn (Figure 4B and Figure 3—video 1) upon AIB activation.
 
-To further investigate the functional connectivity between AIB and RIB, we imaged glutamate signaling (Marvin et al., 2013) at RIB (Psto-3::iGluSnFR) upon persistent optogenetic stimulation of AIB (Pnpr-9::Chrimson; see Materials and methods). After the onset of stimulation, a rapid rise (Figure 4E inset plot,~10%ΔF/F0) of iGluSnFR signal on RIB’s neurites (Figure 4E and Figure 4—figure supplement 2A up) was followed by a slow decay. The fluorescence signal change was well fit by(1)ΔF(t)F0=B(e−tτ1−e−tτ2),where τ1=0.9 s, and τ2=100 ms. In animals without feeding all-trans retinal (a co-factor required for AIB optogenetic stimulation), we observed random and smaller amplitude (~5%ΔF/F0) fluctuations of iGluSnFR signals (Figure 4E). Such dynamics was not observed in the glutamate vesicular transport deficient mutant eat-4 animals (Figure 4E and Figure 4—figure supplement 2A bottom).
+To further investigate the functional connectivity between AIB and RIB, we imaged glutamate signaling (Marvin et al., 2013) at RIB (Psto-3::iGluSnFR) upon persistent optogenetic stimulation of AIB (Pnpr-9::Chrimson; see Materials and methods). After the onset of stimulation, a rapid rise (Figure 4E inset plot,~10%ΔF/F0) of iGluSnFR signal on RIB’s neurites (Figure 4E and Figure 4—figure supplement 2A up) was followed by a slow decay. The fluorescence signal change was well fit by
 
-## Local interneurons RIB promote both turning and forward behaviors
+$$
+\frac{ΔF(t)}{F_{0}}=B(e^{−\frac{t}{\tau_{1}}}−e^{−\frac{t}{\tau_{2}}}),
+$$
+
+where $\tau_{1}=0.9s$, and $\tau_{2}=100ms$. In animals without feeding all-trans retinal (a co-factor required for AIB optogenetic stimulation), we observed random and smaller amplitude (~5%ΔF/F0) fluctuations of iGluSnFR signals (Figure 4E). Such dynamics was not observed in the glutamate vesicular transport deficient mutant eat-4 animals (Figure 4E and Figure 4—figure supplement 2A bottom).
+
+### Local interneurons RIB promote both turning and forward behaviors
 
 Local interneurons RIB, together with the ventral cord-projecting premotor interneurons AVB, have been previously reported to encode forward movement state (Gray et al., 2005; Kato et al., 2015; Li et al., 2014). Moreover, RIB form gap junctions with SMDV (Figure 2A), motor neurons that have also been implicated in ventral biased omega turns (Gray et al., 2005; White et al., 1986). RIB calcium activity declined during reversals, and rose during the type-I (RF) and type-II (RT) transitions (Figure 5A and Figure 5—figure supplement 1A), which is characteristic of neurons in both forward and turning modules (Figure 2A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig5-v2.jpg)
+
+**Figure 5.:** (A) Calcium activity of RIB during type-I (up, n = 41) and type-II transitions (bottom, n = 25). Δ$R$(t) (mean ± SEM) are shown. t = 0 is aligned to the initiation of forward movement (up) or an omega turn (bottom). (B) Statistics of motor state transitions (left) and representative curvature kymographs (right) upon optogenetic manipulation of RIB. Left, the probability for a transition and its 95% confidence limits were computed. RIB::Chrimson1, n = 65, red light (635 nm, 3.75 mW/mm2); RIB::Chrimson2, n = 82, red light (635 nm, 1.00 mW/mm2); RIB::Arch, n = 83, green light (561 nm, 8.14 mW/mm2). Right, animals crawled on fresh agar plates. Body curvature was normalized by a k · L, where L is the body length. Green (or red) shaded regions show selected spatiotemporal regions for optogenetic inhibition (or activation). The kymograph of turning behaviors exhibits longer cycles to complete body bending and larger body curvature, which are different from those during forward movement. (C) Reversal length distributions (left) and transition rates (right) when ALM/AVM activation was followed by optogenetic inhibition of RIB (12 s green light, 561 nm, 1.94 mW/mm2). Pmec-4::ChR2;Psto-3::Arch, n = 173. Control group is from Figure 1C. (D) Calcium imaging of RIV in wild-type (blue) and RIB-ablated animals (orange) upon optogenetic stimulation of AIB in freely behaving animals. ΔR(t)/R0 (Mean ± SEM) are shown. (E) Data are related to (D), but all trials were aligned to the onset of omega turns. (F) Reversal length during ALM/AVM-triggered escape responses in RIB-ablated animals or in animals where chemical synaptic transmission from RIB was blocked. Error bars indicate SEM. Mann–Whitney U test, ****p<0.0001. All multiple comparisons were adjusted using Bonferroni correction.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Single trial data related to Figure 5A). Dashed lines indicate the initiation of forward movement (up) or omega turns (bottom). (B) Persistent inhibition of RIB by expressing an exogenous histamine channel (HisCl) during ALM/AVM-triggered escape responses. Type-II transition quickly approached a plateau at a lower rate, which is consistent with our model prediction and Figure 5C). Control group is from Figure 1C). (C) Single trial data related to Figure 5D–E). (D) Left, simultaneous optogenetic activation of AIB and calcium imaging of RIV or SAAD/SMB (Pnpr-9::Chrimson;Plim-4::GCaMP6) in freely behaving animals. t = 0 is aligned to the onset of an omega turn. Δ$R$(t) (mean ± SEM) are shown. Right, smoothed single trial data. Dashed lines indicate the start of a turn.
 
 Optogenetic manipulation of RIB in freely behaving animals further revealed their functions during motor control. Activating RIB (Psto-3::Chrimson) during reversals triggered a transition to either an omega turn or forward movement (Figure 5B left). Strong optogenetic activation (635 nm, 3.75 mW/mm2) of RIB during forward movement reliably triggered omega turns (Figure 5B right and Figure 5—video 1). On the other hand, inhibiting RIB (Psto-3::Arch) during forward movement led to a pause state (Figure 5B right and Figure 5—video 1).
 
@@ -97,11 +151,15 @@ When RIB interneurons were directly inhibited to mimic an inhibitory synaptic in
 
 We asked how RIB may mediate neural activity in the turning module. Upon optogenetic stimulation of AIB (Figure 5D–E), the rise of RIV calcium activity in RIB ablated animals showed the same rectified activation when all trials were aligned to the beginning of a turn (Figure 5E). However, RIV activity was preceded by a longer quiescent state when trials were aligned to the stimulus onset (Figure 5D and Figure 5—figure supplement 1C). Thus, RIB modulate motor state transitions in part through indirect modulation of the timing of RIV activation (Figure 2A).
 
-## Inhibitory feedback contributes to reversal termination
+### Inhibitory feedback contributes to reversal termination
 
 The beginning of a turn marks the end of a reversal. We next asked whether the type-II (RT) transition can be accounted for by self-termination of neural activity in the backward module (Figure 2A), analogous to a feedforward synaptic chain model, or, whether activation of the turning module provides a feedback inhibition to terminate the activity in the backward module.
 
 In a feedforward synaptic chain model, perturbing neural activity in the downstream neurons would not affect the dynamics of upstream neurons. To test this model, we generated transgenic animals that express Archaerhodopsin in RIV/SAA/SMB neurons (Plim-4::Arch; Figure 6A). RIV/SAAD all exhibited elevated calcium activity during omega turns, and could be regarded as downstream outputs of the backward module (Figure 5—figure supplement 1D). However, optogenetic inhibition of RIV/SAA/SMB or RIV alone by spatially patterned illumination during escape responses promoted significantly longer reversals (Figure 6B and Figure 5—video 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig6-v2.jpg)
+
+**Figure 6.:** (A) Expression pattern of Plim-4::Arch::GFP. Scale bar, 10 µm. (B) Left, escape responses induced by optogenetic activation of AIB (blue text, 473 nm, 14.71 mW/mm2, 1.5 s) or thermal stimulus (pink text, 1480 nm, 0.75 s) followed by optogenetic inhibition of Arch-expressed interneurons (green text, 561 nm, 21.71 mW/mm2, 12 s). Bar graph, reversal durations, Mann–Whitney U test and error bars are SEMs. Pie chart, fractions of trials executing omega turns, χ2 test. *p<0.05, ***p<0.001, ****p<0.0001. All multiple comparisons were adjusted using Bonferroni correction. Right, schematic diagram for selective inhibition of RIV near animal head during thermally induced (1480 nm, 0.75 s) escape responses. (C) Up, reversal length distribution (left) and transition rate (right) in RIV/SAAD/SMB ablated animals. Bottom, spontaneous run length distribution (left) and transition rate from forward to backward movements (right) in wild-type animals. Insets are plots of survival functions: proportion of trials moving backward (up) or forward (bottom) until t. We fitted only trials with reversal duration ≥3 s and forward duration ≥2 s.
 
 Observations from optogenetic ablation of RIV/SAA/SMB (Plim-4::miniSOG) also argue against a pure feedforward synaptic chain model. The type-II transition was abolished since animals could no longer generate a complete omega turn (Figure 6C upper panel), while the ability of direct transition from a backward to a forward movement remained unaffected and the type-I (RF) transition rate r1 remained similar (Figure 6C upper panel) to wild-type animals. Notably, the reversal duration became much longer and approached 30 s in some trials, which had not been observed in wild-type animals (Figures 1C and 6C upper panel and Figure 6—video 1). These results indicate that during normal type-II transitions, persistent neural activity in the upstream backward module could be abolished through inhibitory feedback from the downstream activity in the turning module.
 
@@ -109,21 +167,37 @@ Both the type-I (RF) transition rate (Figure 6C upper panel) and the mirror tran
 
 Together, our data suggest that the feedforward inhibition (Figure 4) and feedback inhibition (Figure 6) between the backward module and the turning module implement a winner-take-all computation for action selection. The motor module with the highest level of activity stays active by suppressing the activities of other modules.
 
-## A biophysical model of the type-II transition
+### A biophysical model of the type-II transition
 
-With both structural and functional evidence, we now propose a mathematical model for the type-II (RT) transition. The turning module, represented by RIV inter/motor neurons, receives opposing excitatory and inhibitory inputs during a reversal (Figure 7A). The rapid increase of RIV activity coincides with the beginning of an omega turn (Figure 3A and E). To capture the essential process, we assumed that the membrane potential of RIV x fluctuates around a balanced state x0 during a reversal (Figure 7B), and its neural dynamics is governed by the Langevin equation:(2)dxdt=−k(x−x0)+η, x<xthwhere k depends on, among others, the gap junction and inhibitory synaptic conductances (see Appendix); and η could be regarded as fluctuations in synaptic currents (Lindsay et al., 2011; Narayan et al., 2011) and other sources of noises that are not explicitly considered in the model. For simplicity, η is treated as uncorrelated Gaussian white noise: ⟨η(t)η(t′)⟩=2σ2δ(t−t′). Once the membrane potential crosses the threshold xth, RIV become rapidly depolarized due to a nonlinear rectified activation (Figure 7B), immediately terminating the reversal via feedback inhibition and starting a turn by activating ventral muscles (Figure 7A and D).
+With both structural and functional evidence, we now propose a mathematical model for the type-II (RT) transition. The turning module, represented by RIV inter/motor neurons, receives opposing excitatory and inhibitory inputs during a reversal (Figure 7A). The rapid increase of RIV activity coincides with the beginning of an omega turn (Figure 3A and E). To capture the essential process, we assumed that the membrane potential of RIV $x$ fluctuates around a balanced state $x_{0}$ during a reversal (Figure 7B), and its neural dynamics is governed by the Langevin equation:
+
+$$
+\frac{dx}{dt}=−k(x−x_{0})+η, x<x_{th}
+$$
+
+where $k$ depends on, among others, the gap junction and inhibitory synaptic conductances (see Appendix); and $η$ could be regarded as fluctuations in synaptic currents (Lindsay et al., 2011; Narayan et al., 2011) and other sources of noises that are not explicitly considered in the model. For simplicity, $η$ is treated as uncorrelated Gaussian white noise: $⟨η(t)η(t^{′})⟩=2\sigma^{2}\delta(t−t^{′}).$ Once the membrane potential crosses the threshold $x_{th}$, RIV become rapidly depolarized due to a nonlinear rectified activation (Figure 7B), immediately terminating the reversal via feedback inhibition and starting a turn by activating ventral muscles (Figure 7A and D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56942/elife-56942-fig7-v2.jpg)
 
-**Figure 7.:** (A) Schematics of neuronal circuit of C. elegans avoidance behavior. Feedforward excitation between local interneurons AIB and RIV triggers turning behavior. Glutamatergic inhibition between AIB and RIB flexibly controls the motor state transitions. Feedback inhibition from the turning module helps terminate backward behavior. (B) Illustration of the biophysical meaning of the type-II transition. The sub-threshold membrane potential of RIV fluctuates around the fixed point x, just like a particle (red) in an energy well. When RIV membrane potential crosses the threshold 0x, RIV along with other neurons in the turning module become fully activated and a turn starts. (thC) A simple stochastic model without short-term synaptic plasticity cannot account for the experimentally observed transition rate. (D) Schematics of a three-module model based on the animal connectome and experimentally identified functional motifs. Short-term synaptic depression (STD) was introduced in the feedforward inhibition. (E) Type-II transition rate during ALM/AVM triggered escape responses. Pink line is a theoretical fit using Equation 4.  in τgEquation 4 is given by the glutamate decay constant in Figure 4E.
+**Figure 7.:** (A) Schematics of neuronal circuit of C. elegans avoidance behavior. Feedforward excitation between local interneurons AIB and RIV triggers turning behavior. Glutamatergic inhibition between AIB and RIB flexibly controls the motor state transitions. Feedback inhibition from the turning module helps terminate backward behavior. (B) Illustration of the biophysical meaning of the type-II transition. The sub-threshold membrane potential of RIV fluctuates around the fixed point x0, just like a particle (red) in an energy well. When RIV membrane potential crosses the threshold xth, RIV along with other neurons in the turning module become fully activated and a turn starts. (C) A simple stochastic model without short-term synaptic plasticity cannot account for the experimentally observed transition rate. (D) Schematics of a three-module model based on the animal connectome and experimentally identified functional motifs. Short-term synaptic depression (STD) was introduced in the feedforward inhibition. (E) Type-II transition rate during ALM/AVM triggered escape responses. Pink line is a theoretical fit using Equation 4. $\tau_{g}$ in Equation 4 is given by the glutamate decay constant in Figure 4E.
 
-The next step is to calculate the type-II transition rate r2: the probability that x crosses xth per unit time. It is currently impossible to measure k, but we can proceed by making a prediction. Based on electrophysiological recordings of C. elegans interneurons (Lindsay et al., 2011; Roberts et al., 2016), the membrane time constant of a neuron (~10 milliseconds) is much smaller than the behavioral timescale (~seconds). As a result, the membrane potential of a model neuron rapidly approaches the fixed point x0. By solving this problem analytically using one-dimensional Fokker-Planck equation near the system equilibrium (see Appendix), we find(3)r2≈kπerfi−1[k2σ2(xth−x0) ]
+The next step is to calculate the type-II transition rate r2: the probability that $x$ crosses $x_{th}$ per unit time. It is currently impossible to measure $k$, but we can proceed by making a prediction. Based on electrophysiological recordings of C. elegans interneurons (Lindsay et al., 2011; Roberts et al., 2016), the membrane time constant of a neuron (~10 milliseconds) is much smaller than the behavioral timescale (~seconds). As a result, the membrane potential of a model neuron rapidly approaches the fixed point $x_{0}$. By solving this problem analytically using one-dimensional Fokker-Planck equation near the system equilibrium (see Appendix), we find
 
-Here erfix=2π∫0xez2dz is the imaginary error function.
+$$
+r_{2}≈\frac{k}{\pi}erfi^{−1}[\sqrt{\frac{k}{2\sigma^{2}}}(x_{th}−x_{0}) ]
+$$
 
-Equation 3, however, would lead to a constant rate on the behavioral timescale, like that during the type-I (RF) transition, as expected and confirmed by our computer simulation (Figure 7C). To explain the experimental observation of the rising phase of r2 (Figure 1C–D), we incorporated a plasticity mechanism analogous to short-term synaptic depression (STD): the feedforward inhibition from the backward module to the turning module becomes weaker as the reversal lasts longer (Figure 7D). Consequently, the membrane potential moves towards the excitation threshold xth to potentiate transition, allowing the analytical expression for r2, Equation 3, to become time-dependent. Our hypothesis is consistent with the decay of the glutamate sensor signal on RIB neurites upon AIB stimulation (Figure 4E), an observation that may be explained by a depletion of available vesicles for release at the presynaptic site. Note that calcium activity in AIB cell body, like that during a reversal (Figure 2B), kept increasing during persistent optogenetic stimulation (Figure 4—figure supplement 2B), arguing against the possibility that an opsin-mediated membrane depolarization in the presynaptic neuron undergoes depression upon continuous light activation.
+Here $erfix=\frac{2}{\sqrt{\pi}}\int_{0}^{x}e^{z^{2}}dz$ is the imaginary error function.
 
-By incorporating the exponential decay of inhibitory synaptic strength (Equation 1), we found that the functional form of the transition rate (see Appendix) can be approximated by(4)r2(t)≈kπerfi−1(α+βe−t/τg),where τg=0.9 s  is the decay constant of the glutamate signal (Figure 4E). The experimentally measured type-II transition rate is well fit by Equation 4.
+Equation 3, however, would lead to a constant rate on the behavioral timescale, like that during the type-I (RF) transition, as expected and confirmed by our computer simulation (Figure 7C). To explain the experimental observation of the rising phase of r2 (Figure 1C–D), we incorporated a plasticity mechanism analogous to short-term synaptic depression (STD): the feedforward inhibition from the backward module to the turning module becomes weaker as the reversal lasts longer (Figure 7D). Consequently, the membrane potential moves towards the excitation threshold $x_{th}$ to potentiate transition, allowing the analytical expression for r2, Equation 3, to become time-dependent. Our hypothesis is consistent with the decay of the glutamate sensor signal on RIB neurites upon AIB stimulation (Figure 4E), an observation that may be explained by a depletion of available vesicles for release at the presynaptic site. Note that calcium activity in AIB cell body, like that during a reversal (Figure 2B), kept increasing during persistent optogenetic stimulation (Figure 4—figure supplement 2B), arguing against the possibility that an opsin-mediated membrane depolarization in the presynaptic neuron undergoes depression upon continuous light activation.
+
+By incorporating the exponential decay of inhibitory synaptic strength (Equation 1), we found that the functional form of the transition rate (see Appendix) can be approximated by
+
+$$
+r_{2}(t)≈\frac{k}{\pi}erfi^{−1}(\alpha+\betae^{−t/\tau_{g}}),
+$$
+
+where $\tau_{g}=0.9s$ is the decay constant of the glutamate signal (Figure 4E). The experimentally measured type-II transition rate is well fit by Equation 4.
 
 ## Discussion
 
@@ -141,15 +215,81 @@ Our biophysical model suggests that noises in a neural circuit (Equation 2) cont
 
 ## Materials and methods
 
-## C. elegans strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>C. elegans strains used and generated in this study</td>
+      <td>Caenorhabditis Genetics Center (CGC) and this paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmids generated in this study</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Primers for genes (or promoters) used in this study</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>https://www.mathworks.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CoLBeRT system</td>
+      <td>Samuel Lab</td>
+      <td></td>
+      <td>http://colbert.physics.harvard.edu/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Media Cybernetics</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabVIEW</td>
+      <td>National Instruments</td>
+      <td>RRID:SCR_014325</td>
+      <td>http://www.ni.com</td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains
 
 C. elegans strains including wild-type (N2), mutants, and transgenic worms were grown and cultivated according to standard procedures (Brenner, 1974). All strains used in this paper can be found in the Supplementary file 1. Transgenic worms for optogenetic experiments were cultivated in dark on NGM plates with OP50 bacteria and 0.4 mM all-trans retinal (ATR) for over 5 hr. We used young adult hermaphrodites to perform optogenetic and calcium imaging experiments, and L4 hermaphrodites to obtain expression patterns.
 
-## Molecular biology
+### Molecular biology
 
 Standard molecular biology methods were used. Details of plasmids, promoters and rescue genomic DNA (or cDNA) sequences can be found in Supplementary file 2–3.
 
-## Optogenetics
+### Optogenetics
 
 Worms were first washed in M9 buffer (or transferred onto an unseeded NGM plate for 1–3 min), then transferred onto a fresh agar plate [∼ 0.8% (w/v) agar in M9 buffer, without food], mounted on a motorized stage. Worms were left to freely explore the new environment for 3–5 min before testing, and were automatically tracked and retained within the field of view of a 10 × objective (Nikon Plan Apo, NA = 0.45) mounted on an inverted microscope (Nikon Ti-U, Japan) via dark field infrared illumination. Worm behaviors were recorded by a CMOS camera (Basler, aca2000-340kmNIR, Germany). MATLAB custom software (MathWorks, Inc Natick, MA, USA) was used for post-processing behavioral data and extracting moving directions and the kinematics of omega turns.
 
@@ -157,54 +297,64 @@ For freely roaming worms without optogenetic stimulation, we only recorded them 
 
 For worms with optogenetic stimulation, lasers and a digital micromirror device (DLI4130 0.7 XGA, Digital Light Innovations, TX, USA) were used to generate a defined spatiotemporal illumination pattern (Leifer et al., 2011) at a specific wavelength (473 nm, 561 nm or 635 nm), and to manipulate the activities of neurons expressing light-activated channels (ChR2, Arch or Chrimson) (Husson et al., 2012; Nagel et al., 2005). To eliminate the effect of adaptation, single worm was stimulated 5–8 times with at least a 50 second inter-stimulus interval. For example:
 
-## Calcium imaging
+### Calcium imaging
 
-Calcium imaging was conducted on worms expressing a GCaMP6::wCherry (or mCardinal) fusion protein. Calcium activity was measured as a ratiometric change. For example, neural activity of AIB was measured as a fluorescence ratio of GFP to RFP (ΔR(t)/R0) (GCaMP6/wCherry), where R0 is the baseline ratio. In some cases, we define a new normalized ratiometric measure, ΔR(t) = [ΔR(t)- ΔR(t = 0)]/ R0.
+Calcium imaging was conducted on worms expressing a GCaMP6::wCherry (or mCardinal) fusion protein. Calcium activity was measured as a ratiometric change. For example, neural activity of AIB was measured as a fluorescence ratio of GFP to RFP (ΔR(t)/R0) (GCaMP6/wCherry), where R0 is the baseline ratio. In some cases, we define a new normalized ratiometric measure, Δ$R$(t) = [ΔR(t)- ΔR(t = 0)]/ R0.
 
 When cell-specific promoters are available, including AIB and RIB, we performed calcium imaging using wide-field fluorescence microscopy. Unrestrained behaving worms were placed on fresh agarose plates [2% (w/v) agarose in M9 buffer], tracked by a motorized stage using the CoLBeRT system with infrared light illumination (Leifer et al., 2011). Blue and green lights were employed to excite GCaMP6 and wCherry (or mCardinal) proteins. Green and red emission signals were captured by a 10 × objective (Nikon Plan Apo, WD = 4 mm; NA = 0.45, Japan) at 50 fps with an exposure time of 20 ms, separated by a dichroic mirror, relayed by an optical splitter (OptoSplit II, Cairn-Research, UK), and projected onto one-half of a sCMOS sensor (Andor Zyla 4.2, UK) simultaneously. Green and red channels were aligned and processed by custom-written MATLAB scripts (Xu et al., 2018). Single worm was recorded for 3–10 min.
 
 To image RIV neurons, which lack cell-specific promoters, we picked transgenic worms (Plim-4::GCaMP6::wCherry) with stronger fluorescence expression on RIV, and increased the exposure time (up to 50 ms) to obtain high signal-to-noise ratio images.
 
-## Multi-neuron calcium imaging in a freely behaving worm
+### Multi-neuron calcium imaging in a freely behaving worm
 
 To image calcium activity of multiple neurons in a freely behaving worm (e.g., Figure 2—figure supplement 1B), we combined a spinning disk confocal inverted microscope (Nikon Ti-U and Yokogawa CSU-W1, Japan) for calcium imaging with a customized upright light path for worm tracking and behavior recording. A worm was placed on an agarose pad [∼ 2% (w/v)] mounted on a motorized stage. We used a 40 × air objective (Nikon Plan Apo, WD 0.25–0.17 mm; NA = 0.95, Japan) or a 60 × water immersion objective (Nikon Plan Apo, WD 0.22 mm; NA = 1.20, Japan). The wavelengths of confocal excitation lasers were 488 nm and 561 nm; the emission lights were split (Andor Optosplit II, UK) in front of a sCMOS camera (Andor Zyla 4.2, UK). At the same time, we utilized a customized light path that was aligned to the same z axis to track the worm and to record behavioral data. In the upright path, a low magnification 10 × objective (Nikon Plan Fluor, WD 16 mm; NA = 0.30, Japan) was used to gather fluorescent light excited by confocal lasers, and the fluorescent signal was processed to identify worm positions. A real time feedback signal was sent to a motorized stage to keep the worm head within the center of field of view. Meanwhile, we illuminated the worm by an infrared ring surrounding the high magnification objective to record worm behavior through the upright light path.
 
-## Simultaneous optogenetic manipulation and calcium imaging
+### Simultaneous optogenetic manipulation and calcium imaging
 
 To combine calcium imaging and optogenetic manipulation (e.g., Figure 3B), a 635 nm laser was added to activate Chrimson. Because blue light can also activate Chrimson, excitation light for GCaMP6 imaging and red light for optogenetic stimulation were synchronized using a TTL signal (LabJack Corp., U3-HV) controlled by LabVIEW (National Instruments Corp., USA). For example, to verify the connectivity between AIB and RIV, we activated AIB using red laser (635 nm) and recorded the calcium signal in RIV using blue LED excitation (M470L3-C1; Thorlabs, USA) for 7 s simultaneously. Both restrained and freely moving worms were tested. Restrained worms were placed on 10% (w/v) agarose plates with coverslips, whereas freely moving ones were placed on 2% (w/v) fresh agarose plates. Single worm was stimulated 5–8 times with at least a 50 s inter-trial interval.
 
-## Thermally-induced escape responses
+### Thermally-induced escape responses
 
 In addition to optogenetic stimulation of mechanosensory neurons, we also used a thermal stimulus to trigger escape responses. We illuminated the head of a worm with a focused infrared laser light (1480 nm; spot diameter ~120 μm, ΔT ~ 2 °C) for 0.75 s (short enough and over 80% trials showed responses in pilot experiments), and animals responded with reversals or omega turns to avoid the stimulus (Mohammadi et al., 2013). The transition rates were qualitatively similar to ALM/AVM-induced escape responses (Figure 1C–D). Identical experimental protocols were used when thermally-induced escape responses were followed by optogenetic manipulation or calcium imaging of interneurons.
 
-## Glutamate imaging
+### Glutamate imaging
 
 Glutamate imaging was conducted on worms expressing iGluSnFR (Marvin et al., 2013) on RIB and Chrimson on AIB (Figure 4E and Figure 4—figure supplement 2A). All worms were restrained on fresh 10% (w/v) agarose plates with coverslips. We used 60 × water immersion objective. Both processes and cell body of RIB were imaged on the same focal plane. Imaging acquisition rate is 150 fps. Like calcium imaging, blue excitation light (weak enough to reduce the bleaching effect; M470L3-C1; Thorlabs) for glutamate imaging and red light (635 nm, 6.11 mW/mm2) for optogenetic stimulation were synchronized with a TTL signal. Glutamate signaling resulted in a change of the green fluorescence signal on the membrane of RIB interneurons. Stimulation and imaging sustained for more than 8 s. Single worm was stimulated 2–3 times with at least a 50 s inter-stimulus interval.
 
-## Optogenetic ablation
+### Optogenetic ablation
 
 We used miniSOG (mini Singlet Oxygen Generator) to ablate specific neurons in C. elegans. Upon blue light stimulation, a mitochondria-targeted miniSOG (TOMM20-miniSOG) (Qi et al., 2012) or a membrane-targeted miniSOG (PH-miniSOG) (Xu and Chisholm, 2016) were employed to induce cell death in cell-autonomous manner. L2/early L3 worms were transferred onto an unseeded NGM plate, restricted by a small ring of filter paper soaked with 100 μM CuCl2. Worms were illuminated for 40–60 min (TOMM20-miniSOG) or 2 min (PH-miniSOG) with blue LED (M470L3-C5; Thorlabs) at the intensity of 0.46 mW/mm2. After illumination, worms were transplanted back to OP50-seeded NGM plates, and were allowed to recover for 1–2 days before behavior testing.
 
-## Behavioral assays and analysis
+### Behavioral assays and analysis
 
 Recorded movies, in which worm body centerlines were extracted in real time, were further processed semi-automatically in MATLAB to identify locomotor states (forward locomotion, backward locomotion, pause and turn) and other statistical parameters. We also set up a Graphic User Interface (GUI) that allows human interference and proofreading.
 
 Reversal duration was defined as the time from reversal start to reversal end. If one stimulus triggered several reversals, we always scored the first one. Omega turns were identified by either the head touching the body (or tail) or θ >135° within a single head swing (Figure 1—figure supplement 1A). The end of a turn was identified when a worm opened its coiled posture and began to move forward.
 
-## Transition rate calculation
+### Transition rate calculation
 
-Transition rates are calculated by the following equationsrforwi=nforwiΔt⋅(Sforwi+Sturni)rturni=nturniΔt⋅(Sforwi+Sturni)
+Transition rates are calculated by the following equations
 
-We group trials into time bins. For example, here we use time bin Δt=1s for illustration. Let nforwi, nturni denote the number of trials that end with type-I or type-II transition in the i-th time bin. nforw1=8 means there are 8 trials which terminate its reversal with forward movement from 0.0 s to 1.0 s; nturn4=12 means 12 trials terminate its reversal with a turn from 3.0 s to 4.0 s. Next, we shall use Sforwi, Sturni to represent the number of trials among type-I or type-II transition which survive to the start of the i-th time bin. Naturally, we have Sforwi=∑j=i∞nforwj, Sturni=∑j=i∞nturnj. For example, Sturn1=∑j=1∞nturnj is the total number of trials that execute a turn. Sforw3=∑j=3∞nforwj represents the number of all trials among type-I transition that survive to 2.0 s.
+$$
+r_{forw}^{i}=\frac{n_{forw}^{i}}{Δt⋅(S_{forw}^{i}+S_{turn}^{i})}
+$$
 
-## Theoretical account of transition rates and model details
+
+
+$$
+r_{turn}^{i}=\frac{n_{turn}^{i}}{Δt⋅(S_{forw}^{i}+S_{turn}^{i})}
+$$
+
+We group trials into time bins. For example, here we use time bin $Δt=1s$ for illustration. Let $n_{forw}^{i}$, $n_{turn}^{i}$ denote the number of trials that end with type-I or type-II transition in the i-th time bin. $n_{forw}^{1}=8$ means there are 8 trials which terminate its reversal with forward movement from 0.0 s to 1.0 s; $n_{turn}^{4}=12$ means 12 trials terminate its reversal with a turn from 3.0 s to 4.0 s. Next, we shall use $S_{forw}^{i}$, $S_{turn}^{i}$ to represent the number of trials among type-I or type-II transition which survive to the start of the i-th time bin. Naturally, we have $S_{forw}^{i}=\sumj=i∞n_{forw}^{j}$, $S_{turn}^{i}=\sumj=i∞n_{turn}^{j}$. For example, $S_{turn}^{1}=\sumj=1∞n_{turn}^{j}$ is the total number of trials that execute a turn. $S_{forw}^{3}=\sumj=3∞n_{forw}^{j}$ represents the number of all trials among type-I transition that survive to 2.0 s.
+
+### Theoretical account of transition rates and model details
 
 Detailed description can be found in Appendix.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Quantiﬁcation and statistical parameters were indicated in the legends of each ﬁgure, including the statistical methods, error bars, n numbers (see Supplementary file 4 for more details), and p values. We applied Mann–Whitney U test, χ2 test or Fisher’s exact test among samples, two-way ANOVA to determine the signiﬁcance of difference between groups for two factors, and Kolmogorov-Smirnov test to compare probability distributions from two samples. All multiple comparisons were adjusted using Bonferroni correction. We considered p values of < 0.05 signiﬁcant. All analyses were performed using MATLAB.
 
-## Data availability
+### Data availability
 
 Raw data of calcium imaging experiments and all code used for modeling or figure generation are available for download from https://github.com/Wenlab/Worm-Motor-Sequence-Generation (Xin et al., 2020; copy archived at https://github.com/elifesciences-publications/Worm-Motor-Sequence-Generation). Source data files have been provided for main figures.

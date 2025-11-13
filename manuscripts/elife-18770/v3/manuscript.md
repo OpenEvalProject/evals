@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.18770.001 Although seasonality is widespread and can cause fluctuations in the intensity and direction of natural selection, we have little information about the consequences of seasonal fitness trade-offs for population dynamics. Here we exposed populations of Drosophila melanogaster to repeated seasonal changes in resources across 58 generations and used experimental and mathematical approaches to investigate how viability selection on body size in the non-breeding season could affect demography. We show that opposing seasonal episodes of natural selection on body size interacted with both direct and delayed density dependence to cause populations to undergo predictable multigenerational density cycles. Our results provide evidence that seasonality can set the conditions for life-history trade-offs and density dependence, which can, in turn, interact to cause multigenerational population cycles. DOI: http://dx.doi.org/10.7554/eLife.18770.001
+Although seasonality is widespread and can cause fluctuations in the intensity and direction of natural selection, we have little information about the consequences of seasonal fitness trade-offs for population dynamics. Here we exposed populations of Drosophila melanogaster to repeated seasonal changes in resources across 58 generations and used experimental and mathematical approaches to investigate how viability selection on body size in the non-breeding season could affect demography. We show that opposing seasonal episodes of natural selection on body size interacted with both direct and delayed density dependence to cause populations to undergo predictable multigenerational density cycles. Our results provide evidence that seasonality can set the conditions for life-history trade-offs and density dependence, which can, in turn, interact to cause multigenerational population cycles.
 
 ## Introduction
 
@@ -27,53 +27,430 @@ This association between fitness and body size in seasonal environments could ha
 
 Here, we investigated how a seasonal fitness trade-off related to body-size could affect changes in population size and body size over time using replicate populations of Drosophila melanogaster exposed to repeated changes in food resources. In addition to standard breeding conditions for Drosophila, we also created a ‘non-breeding season’ by manipulating the food medium to prevent females from laying eggs during this period. Thus, in this system, breeding and survival were restricted to two sequential and distinct seasons (hereafter 'breeding' and 'non-breeding'). The number of days and amount of food in each season was determined so that both fecundity and non-breeding survival were density-dependent (Betini et al., 2013a, 2014, 2015), which is an important feature of many populations. In Drosophila, as in many other species, the positive correlation between body size and fecundity is well known (Mueller and Joshi, 2000; Appendix 1) and we previously demonstrated that small individuals have higher survival during the non-breeding season when abundance is high (Betini et al. 2013a, 2014). In addition, populations of D. melanogaster do not show evidence of multigenerational cycles (Mueller and Joshi, 2000), even when kept under the same conditions as our breeding season (i.e. ‘aseasonal populations’; Appendix 2). We, therefore, hypothesized that density dependence and opposing episodes of fecundity and viability selection on body resulting from seasonality could cause predictable and repeatable fluctuations in both population and body size. Specifically, we predicted that seasonal fitness trade-offs would cause population size and body size to undergo multigenerational cycles between periods of high abundance, when small individuals predominate, and periods of low abundance, when large individuals are more frequent. Furthermore, we predicted that populations not exposed to viability selection in the non-breeding season would lack periodic fluctuations in population size and body size.
 
-We tested whether seasonality could result in multigenerational cycles in population size and body size using three experiments (
+We tested whether seasonality could result in multigenerational cycles in population size and body size using three experiments (Figure 1). In the first experiment, we submitted 45 replicate populations to the seasonal treatment described above and tracked the total number of individuals and body size at the end of the breeding and non-breeding season for 58 generations (the ‘long-term control’ treatment; Figure 1). In the second experiment, we tested the role of viability selection during the non-breeding season by tracking 13 additional populations over 31 generations using a similar protocol to the ‘long-term control’, but in which we experimentally prevented viability selection in the ‘non-breeding’ season by providing high levels of food during this season (the ‘stop-selection’ treatment; Figure 1). This protocol also maintained direct density effects on fecundity and survival, similar to the ones observed in the ‘long-term control’. In order to address potential environmental changes in the lab, we conducted a third experiment using the same protocol as in the 'long-term control', but under the same initial conditions and at the same time as the 'stop selection' treatment. This 'short-term control' experiment also had 13 replicate populations tracked over 31 generations (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18770/elife-18770-fig1-v3.jpg)
-
-**Figure 1.:** DOI: http://dx.doi.org/10.7554/eLife.18770.003
 
 In addition to these experiments, we also developed a mathematical model to investigate the contributions of both viability selection and delayed density dependence to population dynamics. The ‘stop-selection’ experiment was designed to eliminate viability selection, but might have also reduced potential effects of past densities on fecundity and survival. Such delayed density-dependent effects can also cause populations to cycle (Stenseth et al., 2003; Yan et al., 2013), or lead to more complex dynamics, such as chaos (May 1973). One potential mechanism for delayed density dependence are carry-over effects, which we have previously identified in this seasonal system (Betini et al., 2013a). Thus, we first investigated if lag effects were present in all three experiments, and then used the mathematical model to understand whether they played a role in the dynamics of their populations.
 
 ## Results
 
-## Long-term control
+### Long-term control
 
-Over 58 generations, the 45 replicated seasonal populations showed a predictable increase in abundance during the breeding season, where the food medium allowed females to lay eggs, and a decline in the subsequent non-breeding season (
+Over 58 generations, the 45 replicated seasonal populations showed a predictable increase in abundance during the breeding season, where the food medium allowed females to lay eggs, and a decline in the subsequent non-breeding season (Figure 2a), as is typical of many natural seasonal systems. However, the autocorrelation functions (ACF) also revealed that these short, seasonal cycles were embedded within longer multigenerational cycles where average population size fluctuated 3-fold (insert in Figure 2a). In these populations, the ACF function was characterized by stationary periodic dynamics, which resulted in an oscillatory decay to zero (Figure 2a inset).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18770/elife-18770-fig2-v3.jpg)
 
-**Figure 2.:** (a) Population size of seasonal flies cycled over 58 generations; (b) Female dry weight before (blue bars) and after (black bars) the non-breeding season. Vertical bars indicate the mean female dry weight before and after the non-breeding season; (c) Increased population size in the non-breeding season led to stronger directional selection for smaller flies. (d) Time series of female dry weight measured at the end of the non-breeding season over 38 generations. In (a and (d), the autocorrelograms (insets) showed evidence of cycles in both population size and body size. In (a solid blue line denotes mean population size for each generation from all replicates and dotted lines denote ±1 s.d. In (d, the horizontal line within each box represents the median value, the edges are 25th and 75th percentiles, the whiskers extend to the most extreme data points, and points are potential outliers.DOI: http://dx.doi.org/10.7554/eLife.18770.004
+**Figure 2.:** (a) Population size of seasonal flies cycled over 58 generations; (b) Female dry weight before (blue bars) and after (black bars) the non-breeding season. Vertical bars indicate the mean female dry weight before and after the non-breeding season; (c) Increased population size in the non-breeding season led to stronger directional selection for smaller flies. (d) Time series of female dry weight measured at the end of the non-breeding season over 38 generations. In (a and (d), the autocorrelograms (insets) showed evidence of cycles in both population size and body size. In (a solid blue line denotes mean population size for each generation from all replicates and dotted lines denote ±1 s.d. In (d, the horizontal line within each box represents the median value, the edges are 25th and 75th percentiles, the whiskers extend to the most extreme data points, and points are potential outliers.
 
-To investigate the presence of viability selection for small body size and whether this selection was density-dependent, we measured female dry weight in 38 generations from 25 different populations. As expected, there is a negative correlation between population size at the end of the non-breeding season and body size at the end of the non-breeding season (Pearson's product-moment correlation = −0.64; t = −4.48, p<0.001), suggesting that density negatively impact body size in the non-breeding season. Mean survival during the non-breeding season was 71% (±0.21 SD) and survival was density-dependent (βsurvival = −0.001, t = −27.73, p<0.001). Mean female dry weight was significantly lower after the non-breeding season (0.279 mg, n = 3620 females) than before the non-breeding season (0.381 mg; n = 5258 females; standardized values = 0.577 before and −0.566 after the non-breeding season; Welch t-test: t = −35.90, df = 1,589.240.24, p<0.001; Figure 2b) and this viability selection was density-dependent (Figure 2c; Table 1, Appendix 3). That is, when population size was high at the start of the non-breeding season, there was stronger selection for smaller flies and this was driven by changes in mean dry weight after the non-breeding season rather than changes in the mean dry weight before the non-breeding season (Appendix 3). Average dry weight measured after the non-breeding season also showed multigenerational cycles (Figure 2d), as indicated by the autocorrelation function (Figure 2d, inset), varying between average peaks of 0.32 mg and lows of 0.23 mg.10.7554/eLife.18770.005Table 1.Parameter estimates obtained from linear mixed effect models to investigate viability selection on body size as a function of thenumber of individuals at the beginning of the non-breeding season. In the ‘long-term control’, R2LMM(m)=0.18 and R2LMM(c)=0.20; in the 'stop selection' treatment, R2LMM(m)=0.006 and R2LMM(c)=0.006; and in the 'short-term control', R2LMM(m)=0.22 and R2LMM(c)=0.22. R2LMM(m) is the variance on the response variable that is explained only by the fixed effects and R2LMM(c) is the variance that is explained by both fixed and random effects. In all models, the selection differential was the response variable, abundance at the beginning of the non-breeding season was the fixed effect and population (vial) was the random effect.DOI: http://dx.doi.org/10.7554/eLife.18770.005Parameters Fixed effects estimate SE Df T P 1. Long-term control Intercept −0.181 0.081434.5−2.22 0.027Non-breeding abundance −0.004 0.003745.3−12.67 <0.001 2. Stop selection Intercept −0.341 0.159159−2.15 0.033Non-breeding abundance 0.0010.0011591.060.2913. Short-term control Intercept 0.0280.184100−0.15 0.880Non-breeding abundance −0.005 0.001139−6.44 <0.001
+To investigate the presence of viability selection for small body size and whether this selection was density-dependent, we measured female dry weight in 38 generations from 25 different populations. As expected, there is a negative correlation between population size at the end of the non-breeding season and body size at the end of the non-breeding season (Pearson's product-moment correlation = −0.64; t = −4.48, p<0.001), suggesting that density negatively impact body size in the non-breeding season. Mean survival during the non-breeding season was 71% (±0.21 SD) and survival was density-dependent (βsurvival = −0.001, t = −27.73, p<0.001). Mean female dry weight was significantly lower after the non-breeding season (0.279 mg, n = 3620 females) than before the non-breeding season (0.381 mg; n = 5258 females; standardized values = 0.577 before and −0.566 after the non-breeding season; Welch t-test: t = −35.90, df = 1,589.240.24, p<0.001; Figure 2b) and this viability selection was density-dependent (Figure 2c; Table 1, Appendix 3). That is, when population size was high at the start of the non-breeding season, there was stronger selection for smaller flies and this was driven by changes in mean dry weight after the non-breeding season rather than changes in the mean dry weight before the non-breeding season (Appendix 3). Average dry weight measured after the non-breeding season also showed multigenerational cycles (Figure 2d), as indicated by the autocorrelation function (Figure 2d, inset), varying between average peaks of 0.32 mg and lows of 0.23 mg.
 
-## 'Stop selection' experiment
+**Table 1.**
+ Parameter estimates obtained from linear mixed effect models to investigate viability selection on body size as a function of thenumber of individuals at the beginning of the non-breeding season. In the ‘long-term control’, R2LMM(m)=0.18 and R2LMM(c)=0.20; in the 'stop selection' treatment, R2LMM(m)=0.006 and R2LMM(c)=0.006; and in the 'short-term control', R2LMM(m)=0.22 and R2LMM(c)=0.22. R2LMM(m) is the variance on the response variable that is explained only by the fixed effects and R2LMM(c) is the variance that is explained by both fixed and random effects. In all models, the selection differential was the response variable, abundance at the beginning of the non-breeding season was the fixed effect and population (vial) was the random effect.
 
-In order to test the role of viability selection in these multigenerational cycles, we experimentally eliminated viability selection during the non-breeding season in 13 additional populations. Unlike the ‘long-term controls’ (
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Fixed effects estimate</th>
+      <th>SE</th>
+      <th>Df</th>
+      <th>T</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Long-term control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>−0.181</td>
+      <td>0.081</td>
+      <td>434.5</td>
+      <td>−2.22</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>Non-breeding abundance</td>
+      <td>−0.004</td>
+      <td>0.003</td>
+      <td>745.3</td>
+      <td>−12.67</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>2. Stop selection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>−0.341</td>
+      <td>0.159</td>
+      <td>159</td>
+      <td>−2.15</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>Non-breeding abundance</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>159</td>
+      <td>1.06</td>
+      <td>0.291</td>
+    </tr>
+    <tr>
+      <td>3. Short-term control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>0.028</td>
+      <td>0.184</td>
+      <td>100</td>
+      <td>−0.15</td>
+      <td>0.880</td>
+    </tr>
+    <tr>
+      <td>Non-breeding abundance</td>
+      <td>−0.005</td>
+      <td>0.001</td>
+      <td>139</td>
+      <td>−6.44</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+### 'Stop selection' experiment
+
+In order to test the role of viability selection in these multigenerational cycles, we experimentally eliminated viability selection during the non-breeding season in 13 additional populations. Unlike the ‘long-term controls’ (Figure 2a), there was no evidence of multigenerational population cycles in these ‘stop selection’ populations (Figure 3a inset). In addition, body size did not significantly decline after the non-breeding season (Figure 3b; average body size was 0.337 mg before and 0.331 after the non-breeding season; n = 1290 and n = 689 females, respectively; standardized values: 0.028 before and −0.052, respectively; Welch t-test: t = −1.733, df = 1,479.400.40, p=0.081). There was also no evidence of density-dependent selection (Figure 3c; Table 1) and no evidence of cycles in body size (Figure 3d inset).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/18770/elife-18770-fig3-v3.jpg)
 
-**Figure 3.:** (a) Population size of seasonal flies cycled over 31 generations. Unlike the ‘long-term control, (b) there was no significant change in body size after the non-breeding season (female dry weight before - red bars - and after -black bars- the non-breeding season; vertical bars indicates the mean female dry weight before and after the non-breeding season) and (c) no evidence that selection for smaller flies was density dependence. (d) Time series of female dry weight measured at the end of the non-breeding season over 27 generations. In (a) and (d), the autocorrelograms (insets) showed no evidence of cycles in population or body size. In a solid red line denotes the mean population size for each generation from all replicates and dotted lines denote ±1 s.d. In (d), the horizontal line within each box represents the median value, the edges are 25th and 75th percentiles, the whiskers extend to the most extreme data points, and points are potential outliers.DOI: http://dx.doi.org/10.7554/eLife.18770.006
+**Figure 3.:** (a) Population size of seasonal flies cycled over 31 generations. Unlike the ‘long-term control, (b) there was no significant change in body size after the non-breeding season (female dry weight before - red bars - and after -black bars- the non-breeding season; vertical bars indicates the mean female dry weight before and after the non-breeding season) and (c) no evidence that selection for smaller flies was density dependence. (d) Time series of female dry weight measured at the end of the non-breeding season over 27 generations. In (a) and (d), the autocorrelograms (insets) showed no evidence of cycles in population or body size. In a solid red line denotes the mean population size for each generation from all replicates and dotted lines denote ±1 s.d. In (d), the horizontal line within each box represents the median value, the edges are 25th and 75th percentiles, the whiskers extend to the most extreme data points, and points are potential outliers.
 
-## 'Short-term control'
+### 'Short-term control'
 
-Over 31 generations, and similar to the ‘long-term control’ (
+Over 31 generations, and similar to the ‘long-term control’ (Figure 2a), the ‘short-term control' exhibited evidence for multigenerational cycles (Figure 4a). These 'short-term control' populations also experienced viability selection that was density-dependent. Overall, female dry weight significantly decreased from an average of 0.371 mg before the non-breeding season (n = 968 females) to 0.276 mg after the non-breeding season (n = 623 females; standardized values = 0.487 before and −0.761 after the non-breeding season; Welch t-test: t = −30.601, p<0.001; Figure 4b), but the magnitude of this viability selection was stronger when densities were higher at the start of the non-breeding season (Table 1, Figure 4c).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/18770/elife-18770-fig4-v3.jpg)
 
-**Figure 4.:** (a) Population size of seasonal flies cycled over 31 generations, as suggested by the autocorrelogram (insets), (b) female dry weight before the non-breeding season (blue bars) was higher than after the non-breeding season (red bars; vertical bars indicate the mean female dry weight before and after the non-breeding season). (c) increased population size in the non-breeding season led to stronger directional selection for smaller flies. In (a) solid black line denotes mean population size for each generation from all replicates and dotted lines denote ±1 s.d. In (d, the horizontal line within each box represents the median value, the edges are 25th and 75th percentiles, the whiskers extend to the most extreme data points, and points are potential outliers.DOI: http://dx.doi.org/10.7554/eLife.18770.007
+**Figure 4.:** (a) Population size of seasonal flies cycled over 31 generations, as suggested by the autocorrelogram (insets), (b) female dry weight before the non-breeding season (blue bars) was higher than after the non-breeding season (red bars; vertical bars indicate the mean female dry weight before and after the non-breeding season). (c) increased population size in the non-breeding season led to stronger directional selection for smaller flies. In (a) solid black line denotes mean population size for each generation from all replicates and dotted lines denote ±1 s.d. In (d, the horizontal line within each box represents the median value, the edges are 25th and 75th percentiles, the whiskers extend to the most extreme data points, and points are potential outliers.
 
-## Delayed density dependence
+### Delayed density dependence
 
-We statistically investigated whether fecundity and survival were influenced by density in past seasons (i.e. delayed density dependence) in all three experiments: ‘long-term control’, ‘short-term control’ and ‘stop-selection’. We used linear mixed effect models with vial (population) as a random effect and densities going back up to two generations as fixed effects. In the ‘long-term control’ and ‘short-term control’, fecundity and survival were influenced by density in the current and past season (Table 2 and Table 3). In contrast, the ‘stop-selection’ experiment showed evidence of the delayed effects on fecundity (Table 2), but not on survival (Table 3), meaning that the ‘stop-selection’ treatment eliminated both viability selection on body size as well as delayed effects of density on survival.10.7554/eLife.18770.008Table 2.Parameter estimates obtained from linear mixed effect models to investigate the effects of current and past density on fecundity in the ‘long-term control’, ‘stop-selection’ and ‘short-term control’ experiments. B refers to population size at the beginning of the breeding season in the current season and NB refers to population size at the beginning of the previous non-breeding season. In the ‘long-term control’, R2LMM(m)=0.34 and R2LMM(c)=0.37; in the 'stop selection' treatment, R2LMM(m)=0.07 and R2LMM(c)=0.07; and in the 'short-term control', R2LMM(m)=0.30 and R2LMM(c)=0.30.DOI: http://dx.doi.org/10.7554/eLife.18770.008Parameters Fixed effects estimate SE T P 1. Long-term control Intercept 0.4500.01237.445<0.001 B −0.212 0.008−25.82 <0.001 NB −0.008 0.008−1.05 0.296B * NB 0.0260.0055.07<0.001 2. Stop-selection Intercept 0.5510.02422.91<0.001 B 0.1500.0532.820.005NB −0.156 0.034−4.53 <0.001 B * NB 0.06130.032.310.0212. Short-term control Intercept 0.5320.01927.72<0.001 B −0.226 0.024−9.34 <0.001 NB −0.039 0.022−1.74 0.083B * NB 0.0460.0172.650.00810.7554/eLife.18770.009Table 3.Parameter estimates obtained from linear mixed effect models to investigate the effects of current and past density on survival in the ‘long-term control’, ‘stop-selection’ and ‘short-term control’ experiments. NB refers to population size at the beginning of the non-breeding season in the current generation. B1, NB1, B2 and NB2, refers the population size at the beginning of each season going back 1 or two generations, respectively. In the ‘long-term control’, R2LMM(m)=0.35 and R2LMM(c)=0.36; in the 'stop selection' treatment, R2LMM(m)=0.99 and R2LMM(c)=0.99; and in the 'short-term control', R2LMM(m)=0.43 and R2LMM(c)=0.43.DOI: http://dx.doi.org/10.7554/eLife.18770.009Parameters Fixed effects estimate SE T P 1. Long-term control Intercept −0.353 0.006−54.74 <0.001 NB −0.186 0.006−31.19 <0.001 B1 0.1060.00813.76<0.001 NB1 −0.056 0.007−8.34 <0.001 B2 0.0440.0075.67<0.001 NB2 −0.020 0.007−2.89 0.0042. Stop-selection Intercept −0.489 0.001−1,068.62<0.001 NB −0.213 0.001−412.71 <0.001 B1 0.0010.0011.3250.186NB1 −0.001 0.001−1.235 0.217B2 0.0010.0010.4790.632NB2 0.0010.0010.2250.8223. Short-term control Intercept −0.427 0.013−33.36 <0.001 NB −0.223 0.0142−15.64 <0.001 B1 0.1440.0157.22<0.001 NB1 −0.037 0.015−2.40 0.017B2 0.0410.0202.030.043NB2 −0.015 0.016−0.933 0.351
+We statistically investigated whether fecundity and survival were influenced by density in past seasons (i.e. delayed density dependence) in all three experiments: ‘long-term control’, ‘short-term control’ and ‘stop-selection’. We used linear mixed effect models with vial (population) as a random effect and densities going back up to two generations as fixed effects. In the ‘long-term control’ and ‘short-term control’, fecundity and survival were influenced by density in the current and past season (Table 2 and Table 3). In contrast, the ‘stop-selection’ experiment showed evidence of the delayed effects on fecundity (Table 2), but not on survival (Table 3), meaning that the ‘stop-selection’ treatment eliminated both viability selection on body size as well as delayed effects of density on survival.
 
-## Mathematical model
+**Table 2.**
+ Parameter estimates obtained from linear mixed effect models to investigate the effects of current and past density on fecundity in the ‘long-term control’, ‘stop-selection’ and ‘short-term control’ experiments. B refers to population size at the beginning of the breeding season in the current season and NB refers to population size at the beginning of the previous non-breeding season. In the ‘long-term control’, R2LMM(m)=0.34 and R2LMM(c)=0.37; in the 'stop selection' treatment, R2LMM(m)=0.07 and R2LMM(c)=0.07; and in the 'short-term control', R2LMM(m)=0.30 and R2LMM(c)=0.30.
 
-A mathematical model including delayed density dependence as well as the effects of body size on survival (viability selection) and fecundity resulted in multigenerational cycles in population size (before red line in
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Fixed effects estimate</th>
+      <th>SE</th>
+      <th>T</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Long-term control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>0.450</td>
+      <td>0.012</td>
+      <td>37.445</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>−0.212</td>
+      <td>0.008</td>
+      <td>−25.82</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NB</td>
+      <td>−0.008</td>
+      <td>0.008</td>
+      <td>−1.05</td>
+      <td>0.296</td>
+    </tr>
+    <tr>
+      <td>B * NB</td>
+      <td>0.026</td>
+      <td>0.005</td>
+      <td>5.07</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>2. Stop-selection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>0.551</td>
+      <td>0.024</td>
+      <td>22.91</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>0.150</td>
+      <td>0.053</td>
+      <td>2.82</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>NB</td>
+      <td>−0.156</td>
+      <td>0.034</td>
+      <td>−4.53</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>B * NB</td>
+      <td>0.0613</td>
+      <td>0.03</td>
+      <td>2.31</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>2. Short-term control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>0.532</td>
+      <td>0.019</td>
+      <td>27.72</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>−0.226</td>
+      <td>0.024</td>
+      <td>−9.34</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NB</td>
+      <td>−0.039</td>
+      <td>0.022</td>
+      <td>−1.74</td>
+      <td>0.083</td>
+    </tr>
+    <tr>
+      <td>B * NB</td>
+      <td>0.046</td>
+      <td>0.017</td>
+      <td>2.65</td>
+      <td>0.008</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Parameter estimates obtained from linear mixed effect models to investigate the effects of current and past density on survival in the ‘long-term control’, ‘stop-selection’ and ‘short-term control’ experiments. NB refers to population size at the beginning of the non-breeding season in the current generation. B1, NB1, B2 and NB2, refers the population size at the beginning of each season going back 1 or two generations, respectively. In the ‘long-term control’, R2LMM(m)=0.35 and R2LMM(c)=0.36; in the 'stop selection' treatment, R2LMM(m)=0.99 and R2LMM(c)=0.99; and in the 'short-term control', R2LMM(m)=0.43 and R2LMM(c)=0.43.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Fixed effects estimate</th>
+      <th>SE</th>
+      <th>T</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Long-term control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>−0.353</td>
+      <td>0.006</td>
+      <td>−54.74</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NB</td>
+      <td>−0.186</td>
+      <td>0.006</td>
+      <td>−31.19</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>0.106</td>
+      <td>0.008</td>
+      <td>13.76</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NB1</td>
+      <td>−0.056</td>
+      <td>0.007</td>
+      <td>−8.34</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>0.044</td>
+      <td>0.007</td>
+      <td>5.67</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NB2</td>
+      <td>−0.020</td>
+      <td>0.007</td>
+      <td>−2.89</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>2. Stop-selection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>−0.489</td>
+      <td>0.001</td>
+      <td>−1,068.62</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NB</td>
+      <td>−0.213</td>
+      <td>0.001</td>
+      <td>−412.71</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>1.325</td>
+      <td>0.186</td>
+    </tr>
+    <tr>
+      <td>NB1</td>
+      <td>−0.001</td>
+      <td>0.001</td>
+      <td>−1.235</td>
+      <td>0.217</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>0.479</td>
+      <td>0.632</td>
+    </tr>
+    <tr>
+      <td>NB2</td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td>0.225</td>
+      <td>0.822</td>
+    </tr>
+    <tr>
+      <td>3. Short-term control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>−0.427</td>
+      <td>0.013</td>
+      <td>−33.36</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NB</td>
+      <td>−0.223</td>
+      <td>0.0142</td>
+      <td>−15.64</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>0.144</td>
+      <td>0.015</td>
+      <td>7.22</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>NB1</td>
+      <td>−0.037</td>
+      <td>0.015</td>
+      <td>−2.40</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>0.041</td>
+      <td>0.020</td>
+      <td>2.03</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>NB2</td>
+      <td>−0.015</td>
+      <td>0.016</td>
+      <td>−0.933</td>
+      <td>0.351</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mathematical model
+
+A mathematical model including delayed density dependence as well as the effects of body size on survival (viability selection) and fecundity resulted in multigenerational cycles in population size (before red line in Figure 5a), similar to those observed in our ‘long-term control’ and ‘short-term control’ (Figure 2a and Figure 4a, respectively). The model without viability selection on body size and delayed density dependence (i.e. including only effects of current abundance on fecundity and survival), resulted in the elimination of multigenerational cycles (after red line in Figure 5a), as observed in our 'stop selection' populations (Figure 3a). The exclusion of only viability selection eliminated the fitness trade-off in body size and allowed larger flies to survive to breed. This led to unstable population dynamics (i.e. the population crashed after 10 generations; Figure 5b) because larger flies have greater fecundity and there was a negative interaction between body size and abundance. The exclusion of delayed density dependence alone eliminated the cycles (Figure 5c), suggesting that viability selection and delayed density dependence are necessary for these persistent multigenerational cycles to occur. The model with low heritability (h2 = 10−5) also generated multigenerational population cycles (Figure 5d).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/18770/elife-18770-fig5-v3.jpg)
 
-**Figure 5.:** Time series generated with the model where, (a) for the first 40 generations (before vertical red line), when both viability selection and delayed density effects on survival during the non-breeding season and fecundity were operating and, for the last 20 generations, only the effects of current population size on fecundity and survival were modelled (i.e. no viability selection and no delayed density effects); (b) population size excluding the effects of viability selection (only the effects of delayed density dependence on fecundity and survival were operating) or (c) excluding the effects of delayed density dependence (only the effects of viability selection were operating). In (d), times series were generated as in (a) but with low heritability (see Results for details). In (b), population crashed (i.e. population size <1) at generation 10. In both (b) and (c), the model incorporated the effects of current abundance on fecundity and survival and heritability for body size. In (a) and (d) inset figures represent autocorrelograms for population size obtained from the mathematical model including delayed density dependence, viability and fecundity selection (before red line) or without both delayed density dependence and viability selection (after red line). See Material and methods for details and model parameters.DOI: http://dx.doi.org/10.7554/eLife.18770.010
+**Figure 5.:** Time series generated with the model where, (a) for the first 40 generations (before vertical red line), when both viability selection and delayed density effects on survival during the non-breeding season and fecundity were operating and, for the last 20 generations, only the effects of current population size on fecundity and survival were modelled (i.e. no viability selection and no delayed density effects); (b) population size excluding the effects of viability selection (only the effects of delayed density dependence on fecundity and survival were operating) or (c) excluding the effects of delayed density dependence (only the effects of viability selection were operating). In (d), times series were generated as in (a) but with low heritability (see Results for details). In (b), population crashed (i.e. population size <1) at generation 10. In both (b) and (c), the model incorporated the effects of current abundance on fecundity and survival and heritability for body size. In (a) and (d) inset figures represent autocorrelograms for population size obtained from the mathematical model including delayed density dependence, viability and fecundity selection (before red line) or without both delayed density dependence and viability selection (after red line). See Material and methods for details and model parameters.
 
 ## Discussion
 
@@ -93,25 +470,25 @@ Examples of delayed density dependence causing cycles have been documented in na
 
 ## Materials and methods
 
-## ‘Long-term control’ experiment
+### ‘Long-term control’ experiment
 
 To simulate seasonality in populations with non-overlapping generations, we changed food composition to generate two distinct ‘seasons’ (n = 45 populations). During the breeding season, we placed adults in vials (28 × 95 mm) with a dead yeast-sugar medium to lay for 24 hr (day 0), after which adults were discarded and larvae were allowed to mature to adults (16 days). Individuals were then transferred (day 17) to a non-breeding environment for 4 days. The non-breeding season consisted of an empty vial of the same size as the breeding vials, but food was provided by a pipette tip filled with 0.200 ml of 5% water–sugar solution per day from the top of the vial. This solution was sufficient for many flies to survive (~95% survival at low population size) but did not allow females to lay eggs (Bownes and Blair, 1986; Betini et al., 2013a). In both seasonal treatments, a consistent amount of food was provided regardless of population size, which caused reproduction and survival to be density-dependent (Betini et al., 2013a). Each of 45 replicate populations was repeatedly transferred between breeding and non-breeding environments for 58 generations and together they are referred to as ‘long-term controls’. The quality and amount of the medium during the breeding season mimics the scenario well explored in other Drosophila systems (Mueller and Joshi, 2000), where the food is of lower quality and more limited for adults compared to larvae. Dynamics of populations experiencing only this medium (i.e. only the breeding season) do not show evidence of cycles (Mueller and Joshi, 2000); (Appendix 2—figure 1).
 
-## 'Stop-selection' experiment
+### 'Stop-selection' experiment
 
-To investigate whether opposing selective pressures caused multigenerational cycles in seasonal populations, we experimentally stopped viability selection for a smaller body size in the non-breeding season while preserving density-dependent survival. To do this, we exposed 13 new replicate populations to the same seasonal change in food resources (described above) over 31 generations, but provided unlimited access to food during the non-breeding season (0.8 ml/day instead of 0.2 ml/day; initial population size was 5 males and 5 females). Average mortality was reduced from 28% (±0.4; mean ± s.e.) in the 'long-term control' populations to 0.5% (±1) in these new 'stop selection' treatments. After four days in the non-breeding season, we haphazardly selected the survivors that moved to the breeding season. To preserve the density-dependent survival process during the non-breeding period, the number of survivors for each population was calculated based on a logistic non-breeding survival function parameterized from our 'long-term control' populations (
+To investigate whether opposing selective pressures caused multigenerational cycles in seasonal populations, we experimentally stopped viability selection for a smaller body size in the non-breeding season while preserving density-dependent survival. To do this, we exposed 13 new replicate populations to the same seasonal change in food resources (described above) over 31 generations, but provided unlimited access to food during the non-breeding season (0.8 ml/day instead of 0.2 ml/day; initial population size was 5 males and 5 females). Average mortality was reduced from 28% (±0.4; mean ± s.e.) in the 'long-term control' populations to 0.5% (±1) in these new 'stop selection' treatments. After four days in the non-breeding season, we haphazardly selected the survivors that moved to the breeding season. To preserve the density-dependent survival process during the non-breeding period, the number of survivors for each population was calculated based on a logistic non-breeding survival function parameterized from our 'long-term control' populations (Wilson, 1994; Figure 6)Su=11+(Nv)w
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/18770/elife-18770-fig6-v3.jpg)
 
-**Figure 6.:** The blue line represents a survival function parameterized with our 'long-term control' populations (v = 375.22, s.e.=7.60, t = 49.43, p<0.001; w = 1.83, s.e.=0.08, t = 22.50, p<0.001).DOI: http://dx.doi.org/10.7554/eLife.18770.011
+**Figure 6.:** The blue line represents a survival function parameterized with our 'long-term control' populations (v = 375.22, s.e.=7.60, t = 49.43, p<0.001; w = 1.83, s.e.=0.08, t = 22.50, p<0.001).
 
 where Su is survival (number of survivors at the end of the non-breeding season divided by the total number of individuals at the beginning of the non-breeding season), N is the population size at the beginning of the non-breeding season, and v and w are constant to be estimated from the data. The function was parameterized with our 'long-term control' populations (45 replicates over 43 generations) using the non-linear function nls in R (R Core Team, 2015). Individuals that moved to the following breeding season were haphazardly selected.
 
-## ‘Short-term control’ experiment
+### ‘Short-term control’ experiment
 
 Our ‘long-term control’ and ‘stop-selection’ populations were initiated at different periods and with different population sizes. Thus, differences in the lab environment and initial conditions could have influenced the dynamics of these populations. For these reasons, we also initiated an additional 13 replicate populations at the same time and same initial population size as the ‘stop-selection’ populations. In these populations, we used the same protocol as in the ‘long-term control’, but initial population size (5 males and 5 females) and number of generations (n = 31) was the same as in the ‘stop-selection’ experiment.
 
-## Measuring viability selection on body size
+### Measuring viability selection on body size
 
 We measured linear selection differentials (S) for female body weight (i.e. population mean dry
 
@@ -121,25 +498,25 @@ We obtained female dry weight from 5% of total population size before and after 
 
 In the ‘long-term control’, we measured female dry weight in 38 generations from an arbitrary number of replicate populations (16 to 25 population per generation) in generations 9, 10, 15, 16, 21, 22, 25, 26, 28–58. Total number of individuals measured was 5258 before and 3620 after the non-breeding season. In the ‘stop-selection’ and ‘short-term control’, we sampled females in seven populations in generations 1 to 25 (n = 1591 females and n = 1979 females in the 'short-term control' and 'stop selection' treatments, respectively), with the exception of generation 13 in the 'short term control'.
 
-## Documenting multigenerational cycles
+### Documenting multigenerational cycles
 
 To investigate whether population size cycled in our experimental populations, we used the autocorrelation function method (Turchin and Taylor, 1992; Box et al., 2013). Cycles can be inferred by investigating the shape of the estimated ACF: population cycles are characterized by stationary periodic dynamics, which result in an oscillatory decay to zero of the ACF estimates. We calculated the ACF for each treatment using the mean population size across all replicates at the start of the breeding and non-breeding season in each generation. For all-time series, we excluded the first three generations to avoid any transient effects caused by the initial population size. We also detrended the time series to eliminate any overall temporal trends in abundance by subtracting the fitted values from a linear regression of average population size on generation (‘long-term control’: β = 0.468, s.e.=0.177, t = −2.65, p=0.011; ‘short-term control’: β = −1.855, s.e.=0.686, t = −2.71, p=0.01).
 
 To investigate temporal changes in body size in the 'long-term control' and ‘stop-selection’ populations (measured as female dry weight), we used the same autocorrelation function method described above for the population size, including detrending the data.
 
-## Documenting delayed density dependence
+### Documenting delayed density dependence
 
 We investigated the effects of past abundance on fecundity and survival with LMM with vial (population) as a random effect in all three experiments: ‘long-term control’ and ‘short-term control’ and ‘stop-selection’ treatment. In previous work, we have shown that fecundity in this system is influenced by an interaction between current abundance at the beginning of the breeding season and at the beginning of the previous non-breeding season (Betini et al., 2013a, 2013b). Thus, in this study, we also investigated if this interaction significantly explained variation in fecundity in all three experiments. Fecundity was calculated as the number of individuals at the end of the breeding season (i.e. number of offspring) divided by the number of individuals at the beginning of the same breeding season (number of parents). Because we did not know how environmental effects (e.g. physiological condition) could influence survival in our system, we incorporated the breeding and non-breeding abundance going back two generations as explanatory variables in the model to explain survival. Lag effects have been documented in natural populations subjected to strong seasonality (Merritt et al., 2001, 2001; Stenseth et al., 2003). Survival was calculated as the number of individuals at the end of the non-breeding season divided by the number of individuals at the beginning of the non-breeding season. Explanatory variables were standardized before analysis by subtracting the sample mean from each observation and dividing each value by the sample standard deviation and response variables were log transformed.
 
-## Mathematical model
+### Mathematical model
 
 We developed a mathematical model to investigate the contributions of both viability selection and delayed density dependence to population dynamics. The model linked quantitative trait evolution with demography and was similar to integral projection modelling approaches that are commonly used to study ecological and evolutionary processes concurrently (Slatkin, 1979, 1980; Ellner and Rees, 2006). In particular, the number of individuals with body size y at the next time step t + 1, n (y, t + 1), was a function of a projection function k (y) and n (y, t), such that n (y, t + 1) = k(y) * n (y, t). The projection function k (y) accounted for the additive genetic and environmental contributions to body size, as well as both density-independent and density-dependent differences in fecundity or survivourship among body sizes, depending on season.
 
-## Model description
+### Model description
 
 Two population sizes were modeled in discrete time: population size at the beginning of the breeding season, and population size at the beginning of the non-breeding season within each generation. For each season, the mean breeding value for body size and the mean phenotypic value for body size were modelled, where the phenotypic value of an individual was its breeding value plus a random environmental effect. We assumed that breeding and phenotypic values were normally distributed and that the variance in breeding values and the variance in environmental effects remained constant across generations. The assumption of a constant variance in breeding values assumed that mutational variance and changes in genetic architecture (including linkage and epistatic interactions) could restore variance that was initially depleted by selection. Slatkin’s model provides for changes in the variance of breeding values due to selection and considers the effect of genetic architecture, such as linkage (Slatkin, 1979, 1980). In our experiment, we do not have information on the genetic architecture for body size, nor mutational variance. We did not see a decline in the magnitudes of the rates of change in body size in the experiment, which is consistent with the maintenance of heritability.
 
-The fecundity of an individual during the breeding season was a function of its body size and current and past effects of density. Past density influenced fecundity via changes in the physiological conditions of individuals that spent the previous non-breeding season at high densities but survived to breed at low densities (i.e. a carry-over effect that was modelled as the interaction between density at the end of the breeding season in the previous generation and current breeding density (Betini et al., 2013a, 2014). Current density could also negatively influence fecundity via density-dependent effects. There was a stronger negative effect of density on fecundity for large versus small individuals, although large individuals have higher intrinsic fecundity (Figure 3 in the main text). During the 'stop selection' phase of the simulations, we decreased carry-over effects (parameters φ5and φ6) by 25% given that flies had unlimited amount of food in the 'stop selection' treatments and were likely to be in better physiological condition than those in the 'short-term control' treatments. Parameters used in the fecundity function were chosen such that fecundities as a function of body size and densities were within the normal range observed in D. melanogaster.
+The fecundity of an individual during the breeding season was a function of its body size and current and past effects of density. Past density influenced fecundity via changes in the physiological conditions of individuals that spent the previous non-breeding season at high densities but survived to breed at low densities (i.e. a carry-over effect that was modelled as the interaction between density at the end of the breeding season in the previous generation and current breeding density (Betini et al., 2013a, 2014). Current density could also negatively influence fecundity via density-dependent effects. There was a stronger negative effect of density on fecundity for large versus small individuals, although large individuals have higher intrinsic fecundity (Figure 3 in the main text). During the 'stop selection' phase of the simulations, we decreased carry-over effects (parameters $φ_{5}$and $φ_{6}$) by 25% given that flies had unlimited amount of food in the 'stop selection' treatments and were likely to be in better physiological condition than those in the 'short-term control' treatments. Parameters used in the fecundity function were chosen such that fecundities as a function of body size and densities were within the normal range observed in D. melanogaster.
 
 The survival of an individual during the non-breeding season was also a function of its body size (when viability selection occurs) and current and past effects of density. As indicated by our previous experiment, larger flies had lower survival and this effect was magnified by increase density (Betini et al., 2014). We included the effects of past density beyond the ones described above, going back two generations. During the 'stop selection' phase of the simulations, survival was not a function of body size nor past density, but was instead only affected by current density, following the logistic equation Su for survivorship and the experimental design. To accomplish this and to ensure proper scaling of survival, we assigned all individuals the same phenotype in the survivorship function. Parameters for the survival function were based on values obtained in the long-term control (Figure 2a in the main text).
 
@@ -149,69 +526,111 @@ In the context of survivorship, since each breeding value expressed a distributi
 
 Population size across seasons was the product of the current population size times the average fecundity (breeding season) or average survivorship (non breeding season) at the phenotypic level. Below is a list of variables, parameters and functions used in the model.
 
-## Variables
+### Variables
 
-Xi - population size at the beginning of the breeding season i generations ago
+$X_{i}$ - population size at the beginning of the breeding season i generations ago
 
-Yi - population size at the beginning of the non-breeding season i generations ago
+$Y_{i}$ - population size at the beginning of the non-breeding season i generations ago
 
-bX¯ - mean breeding value for body size at the beginning of the breeding season
+$b_{X}¯$ - mean breeding value for body size at the beginning of the breeding season
 
-bY¯ - mean breeding value for body size at the beginning of the non-breeding season
+$b_{Y}¯$ - mean breeding value for body size at the beginning of the non-breeding season
 
-pX¯ - mean phenotype for body size at the beginning of the breeding season
+$p_{X}¯$ - mean phenotype for body size at the beginning of the breeding season
 
-pY¯ - mean phenotype for body size at the beginning of the non-breeding season
+$p_{Y}¯$ - mean phenotype for body size at the beginning of the non-breeding season
 
-z - body size
+$z$ - body size
 
-Note, a generation consists of a breeding season and then a non-breeding season. At the beginning of the breeding season the mean breeding value(bX¯)is a function of densities in previous generations, such that i > 0.
+Note, a generation consists of a breeding season and then a non-breeding season. At the beginning of the breeding season the mean breeding value$(b_{X}¯)$is a function of densities in previous generations, such that i > 0.
 
-## Parameters
+### Parameters
 
-VA=0.003 - additive genetic variance for body size
+$V_{A}=0.003$ - additive genetic variance for body size
 
-VE=0.007 - environmental variance for body size
+$V_{E}=0.007$ - environmental variance for body size
 
-such that h2=0.30 (Prout and Barker, 1989)
+such that $h^{2}=0.30$ (Prout and Barker, 1989)
 
-Fecundity function:f(z,X→,Y→)=(φ1+(φ2z)4)exp(−(φ3+φ4z4)(X0+φ5Y1+φ6X0Y1))
+Fecundity function:
 
-Survival function:s(z,X→,Y→)=1−z(υ1(X1+Y1)+υ2(X2+Y2))1+(z(Y0+(υ3Y0z)exp(z)υ4)υ6)υ5
+$$
+f(z,X→,Y→)=(\phi_{1}+(\phi_{2}z)^{4})exp(−(\phi_{3}+\phi_{4}z^{4})(X_{0}+\phi_{5}Y_{1}+\phi_{6}X_{0}Y_{1}))
+$$
 
-Integral projection model:b¯x=∫zminzmax∫zmin−xzmax−xxs(x+y,X→,Y→)N(x,b¯Y,VB)+N(y,eX(X1),VE)dydx∫zminzmax∫zmin−xzmax−xs(x+y,X→,Y→)N(x,b¯Y,VB)+N(y,eX(X1),VE)dydxX0=Y1∫zminzmaxs(y,X→,Y→)N(y,p¯Y,VB+VE)dy∫zminzmaxN(y,p¯Y,VB+VE)dyp¯x=∫zminzmax∫zmin−xzmax−x(x+y)N(x,b¯Y,VB)N(y,eY(Y1),VE)dydx∫zminzmax∫zmin−xzmax−xN(x,b¯X,VB)N(y,eY(Y1),VE)dydxb¯y=∫zminzmax∫zmin−xzmax−xxf(x+y,X→,Y→)N(x,b¯X,VB)N(y,eY(Y1),VE)dydx∫zminzmax∫zmin−xzmax−xf(x+y,X→,Y→)N(x,b¯X,VB)N(y,eY(Y1),VE)dydxY0=X0∫zminzmaxf(y,X→,Y→)N(y,p¯X,VB+VE)dy∫zminzmaxN(y,p¯X,VB+VE)dyp¯y=∫zminzmax∫zmin−xzmax−x(x+y)N(x,b¯Y,VB)N(y,eX(X1),VE)dydx∫zminzmax∫zmin−xzmax−xN(x,b¯Y,VB)N(y,eX(X1),VE)dydx
+Survival function:
 
-In the equations above N(z,m,v) is the probability density of a normally distributed random variable with a mean of m and variance v. Functions eX(N)=−λXNand eY(N)=−λYNgive the average environmental effect on the phenotype.
+$$
+s(z,X→,Y→)=\frac{1−z(υ_{1}(X_{1}+Y_{1})+υ_{2}(X_{2}+Y_{2}))}{1+(\frac{z(Y_{0}+(υ_{3}Y_{0}z)^{exp(z)^{υ_{4}}})}{υ_{6}})^{υ_{5}}}
+$$
 
-## Other parameters and their values
+Integral projection model:
 
-φ1=1.5 (intrinsic fecundity for small flies)
+$$
+b¯_{x}=\frac{\int_{z_{min}}^{z_{max}}\int_{z_{min}−x}^{z_{max}−x}xs(x+y,X→,Y→)N(x,b¯_{Y},V_{B})+N(y,e_{X}(X_{1}),V_{E})dydx}{\int_{z_{min}}^{z_{max}}\int_{z_{min}−x}^{z_{max}−x}s(x+y,X→,Y→)N(x,b¯_{Y},V_{B})+N(y,e_{X}(X_{1}),V_{E})dydx}
+$$
 
-φ2=2.8 (rate of increase in fecundity with body size)
 
-φ3=0.00007 (baseline rate of decline in fecundity with density for small flies)
 
-φ4=0.04588 (rate of increase in the magnitude of the decline in fecundity as body size increases)
+$$
+X_{0}=\frac{Y_{1}\int_{z_{min}}^{z_{max}}s(y,X→,Y→)N(y,p¯_{Y},V_{B}+V_{E})dy}{\int_{z_{min}}^{z_{max}}N(y,p¯_{Y},V_{B}+V_{E})dy}
+$$
 
-φ5=1 (constant characterizing the effects of population size at the end of the breeding season one generation ago; i.e. carry-over effects)
 
-φ6=0.001 (constant characterizing the interaction between current population size and population size at the end of the breeding season one generation ago)
 
-υ1=0.005 (rate of decline in survivorship due to population sizes one generation ago)
+$$
+p¯_{x}=\frac{\int_{z_{min}}^{z_{max}}\int_{z_{min}−x}^{z_{max}−x}(x+y)N(x,b¯_{Y},V_{B})N(y,e_{Y}(Y_{1}),V_{E})dydx}{\int_{z_{min}}^{z_{max}}\int_{z_{min}−x}^{z_{max}−x}N(x,b¯_{X},V_{B})N(y,e_{Y}(Y_{1}),V_{E})dydx}
+$$
 
-υ2=0.0026 (rate of decline in survivorship due to population sizes two generations ago)
 
-υ3=0.7 (constant governing negative effect of the interaction between the current population size and body size)
 
-υ4=0.7 (constant governing the shape of the negative effect of the interaction between current population size and body size on survivorship)
+$$
+b¯_{y}=\frac{\int_{z_{min}}^{z_{max}}\int_{z_{min}−x}^{z_{max}−x}xf(x+y,X→,Y→)N(x,b¯_{X},V_{B})N(y,e_{Y}(Y_{1}),V_{E})dydx}{\int_{z_{min}}^{z_{max}}\int_{z_{min}−x}^{z_{max}−x}f(x+y,X→,Y→)N(x,b¯_{X},V_{B})N(y,e_{Y}(Y_{1}),V_{E})dydx}
+$$
 
-υ5=6 (a second constant governing the shape of the negative effect of the interaction between current population size and body size on survivorship)
 
-υ6=350 (a third constant governing the shape of the negative effect of the interaction between current population size and body size on survivorship)
 
-λX=0.00001 (rate of decline in body size [with density], i.e. the environmental effect of density on body size due to density at the beginning of the breeding season)
+$$
+Y_{0}=\frac{X_{0}\int_{z_{min}}^{z_{max}}f(y,X→,Y→)N(y,p¯_{X},V_{B}+V_{E})dy}{\int_{z_{min}}^{z_{max}}N(y,p¯_{X},V_{B}+V_{E})dy}
+$$
 
-λY=0.00025 (rate of decline in body size [with density], i.e. the environmental effect of density
+
+
+$$
+p¯_{y}=\frac{\int_{z_{min}}^{z_{max}}\int_{z_{min}−x}^{z_{max}−x}(x+y)N(x,b¯_{Y},V_{B})N(y,e_{X}(X_{1}),V_{E})dydx}{\int_{z_{min}}^{z_{max}}\int_{z_{min}−x}^{z_{max}−x}N(x,b¯_{Y},V_{B})N(y,e_{X}(X_{1}),V_{E})dydx}
+$$
+
+In the equations above $N(z,m,v)$ is the probability density of a normally distributed random variable with a mean of m and variance v. Functions $e_{X}(N)=−\lambda_{X}N$and $e_{Y}(N)=−\lambda_{Y}N$give the average environmental effect on the phenotype.
+
+### Other parameters and their values
+
+$\phi_{1}=1.5$ (intrinsic fecundity for small flies)
+
+$\phi_{2}=2.8$ (rate of increase in fecundity with body size)
+
+$\phi_{3}=0.00007$ (baseline rate of decline in fecundity with density for small flies)
+
+$\phi_{4}=0.04588$ (rate of increase in the magnitude of the decline in fecundity as body size increases)
+
+$\phi_{5}=1$ (constant characterizing the effects of population size at the end of the breeding season one generation ago; i.e. carry-over effects)
+
+$\phi_{6}=0.001$ (constant characterizing the interaction between current population size and population size at the end of the breeding season one generation ago)
+
+$υ_{1}=0.005$ (rate of decline in survivorship due to population sizes one generation ago)
+
+$υ_{2}=0.0026$ (rate of decline in survivorship due to population sizes two generations ago)
+
+$υ_{3}=0.7$ (constant governing negative effect of the interaction between the current population size and body size)
+
+$υ_{4}=0.7$ (constant governing the shape of the negative effect of the interaction between current population size and body size on survivorship)
+
+$υ_{5}=6$ (a second constant governing the shape of the negative effect of the interaction between current population size and body size on survivorship)
+
+$υ_{6}=350$ (a third constant governing the shape of the negative effect of the interaction between current population size and body size on survivorship)
+
+$\lambda_{X}=0.00001$ (rate of decline in body size [with density], i.e. the environmental effect of density on body size due to density at the beginning of the breeding season)
+
+$\lambda_{Y}=0.00025$ (rate of decline in body size [with density], i.e. the environmental effect of density
 
 on body size due to density at the beginning of the non-breeding season)
 

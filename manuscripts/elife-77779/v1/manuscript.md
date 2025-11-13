@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Department of Biochemistry, University of Utah School of Medicine Salt Lake City United States
-2. https://ror.org/03r0ha626 Department of Oncological Sciences, Huntsman Cancer Institute, University of Utah Salt Lake City United States
+1. Department of Biochemistry, University of Utah School of Medicine Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+2. Department of Oncological Sciences, Huntsman Cancer Institute, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
@@ -41,9 +41,37 @@ The 12 ESCRT-III and >20 MIT human proteins have the potential to form a complex
 
 ## Results
 
-## MIT-MIM interaction screen
+### MIT-MIM interaction screen
 
 We defined the ESCRT-III-MIT interactome by using fluorescence polarization anisotropy (FP) to quantify the binding interactions between recombinant human MIT domains and ESCRT-III MIM peptides. These experiments employed fluorescently labeled C-terminal peptides (52–88 residues) that encompass the known MIM elements of the 12 human ESCRT-III proteins (Figure 1A, Supplementary file 1B). The ESCRT-III tails were fluorescently labeled at their N-termini. Literature analyses were used to identify 21 candidate human MIT domains (Ciccarelli et al., 2003; Rigden et al., 2009; Skalicky et al., 2012; Xiao et al., 2008; Fujioka et al., 2014; Figure 1B; see Materials and methods), which were expressed as recombinant proteins and purified to homogeneity. Constructs encoding the tandem MIT domains of LIP5, CAPN7, and ULK3 spanned both domains, thereby allowing intramolecular interactions to occur and native structures to form. (Skalicky et al., 2012; Vild et al., 2015; Guo and Xu, 2015). 19/21 of the human MIT domain constructs could be purified in sufficient quantities for FP binding titrations (Figure 2). The two exceptions were the C-terminal tandem MIT domains of ULK1 and ULK2, which function in autophagy (Fujioka et al., 2014) and apparently do not bind ESCRT-III proteins (see below).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig2-v1.jpg)
+
+**Figure 2.:** Equilibrium dissociation constants (μM) for pairwise binding interactions are displayed for each ESCRT-III-MIT pair and are reported as averages of at least three independent measurements. Values in parenthesis denote ± standard deviation. Interactions are color-coded based on strength of measured binding affinity (see key bar). Asterisks denote KI values that were determined from competition experiments (see Materials and methods and Figure 2—figure supplement 5B-E). Binding constants for ULK3(MIT)2 and IST1 are from Caballe et al., 2015, but were measured in the same fashion as the other interactions and are reproduced here for comparison.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Representative binding curves for pairwise interactions between MIT domains and ESCRT-III C-terminal tails. Binding isotherms with KD <200 μM are fit with colored curves. Data points for weak and non-binders (KD >200 μM) are plotted in black and white but not fit. Data for ULK3(MIT)2 and IST1, IST1344-366, IST1-MIM316-343 are from Caballe et al., 2015, but are reproduced here for comparison.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative binding curves for pairwise interactions between MIT domains and ESCRT-III C-terminal tails. Binding isotherms with KD <200 μM are fit with colored curves. Data points for weak and non-binders (KD >200 μM) are plotted in black and white but not fit. Binding curves for SPASTIN, KATNA1, and CAPN7 are shown in Figure 3A.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Representative binding curves for pairwise interactions between USP54 MIT and ESCRT-III C-terminal tails. Binding isotherms with KD <200 μM are fit with colored curves, whereas non and weak binders (KD >200 μM) are plotted as black and white points but not fit. Dissociation constants shown are averages calculated from three independent experiments ± standard deviation.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Representative raw FP values for pairwise interactions between ESCRT-III C-terminal tails and MIT domains are shown for KATNAL2 (A), NRBF2 (B), and VPS9D1 (C).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Comparison of the C-terminal peptides from different CHMP4 paralogs. Serines are colored red to highlight the unique CHMP4C insert residing between the MIM2 sequence and the ALIX binding site, suggesting that this tail might be unusually flexible and reduce fluorescence polarization anisotropy in CHMP4C-bound complexes, leading to false negative results. The cysteine attachment for the Oregon Green 488 maleimide is highlighted yellow. (B) Fluorescence polarization anisotropy competition assay. Fluorescently labeled CHMP4B peptide in complex with the MIT domain from AMSH was titrated with unlabeled CHMP4B or CHMP4C peptides. Representative curves are shown here and throughout. (C) Same experiment as in B, except with the MITD1 MIT domain. (D) Same experiment as in B, except with the USP8 MIT domain. (E) Same experiment as in B except that the labeled peptide is IST1-MIM344-366 and the unlabeled peptides are IST1 (both MIM elements) and IST1-MIM344-366 (positive control).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A) HEK 293T cells were co-transfected with constructs encoding One-Strep-Flag (OSF) ULK3(MIT)2 or ULK1(MIT)2 and the indicated Myc-tagged proteins. OSF-tagged proteins were bound to Strep-Tactin resin, and co-precipitating Myc-tagged proteins were detected by probing with α-Myc antibody. (B) Lysates from 293T cells overexpressing Myc-CHMP2A constructs were mixed with lysates from cells overexpressing OSF-ULK3(MIT)2 or OSF-ULK1(MIT)2. OSF-ULK proteins were bound to Strep-Tactin resin, and co-precipitating Myc-tagged proteins were detected with α-Myc antibody.
 
 Pairwise FP binding isotherms were fit to 1:1 equilibrium binding models (Figure 2, Figure 2—figure supplements 1–4, Figure 3). Dissociation constants (KD) for the 228 interactions tested are summarized in Figure 2 and color-coded based upon interaction strengths. Our screen generally recapitulated binding interactions reported previously using orthogonal techniques (See Supplemental Discussion), but we cannot rule out the possibility that in some cases the position of the label could have interfered with or artificially enhanced binding interactions for some ESCRT-III-MIT pairs. Pairwise binding isotherms for weak binding pairs often did not reach saturation (Figure 2—figure supplements 1–3), and the KDs for those interactions should therefore be considered approximations. In cases where isotherms did not reach half saturation at the highest MIT concentration tested (usually 100 µM), we did not attempt to estimate the KD.
 
@@ -53,7 +81,7 @@ Pairwise FP binding isotherms were fit to 1:1 equilibrium binding models (Figure
 
 Our binding survey confirmed a series of previously reported ESCRT-III-MIT domain interactions (See Supplemental discussion), and also revealed 18 previously unreported interactions (Figure 2), including establishing new direct links between ESCRT-III proteins and the MIT domains from KATNA1, KATNAL1, RPS6KC1, RPS6KL1, SNX15, and AMSHLP. These new interactions should facilitate future investigations of ESCRT-associated activities.
 
-## ESCRT-III binding behaviors
+### ESCRT-III binding behaviors
 
 MIT domains displayed a range of different ESCRT-III binding behaviors that we classified as promiscuous (>3 ESCRT-III binding partners) (Figure 2—figure supplement 1), specific (≤3 ESCRT-III binding partners) (Figure 3A, Figure 2—figure supplement 2), non-specific (Figure 2—figure supplement 3), and non-binding (Figure 2—figure supplement 4). The seven promiscuous binders bound ESCRT-III tails with high (KD <2 µM) or moderate (KD <100 µM) affinities. The MIT domain of the deubiquitinase AMSH exhibited the greatest promiscuity, binding all but two of the 12 different ESCRT-III subunits. The eight specific binders interacted with CHMP3 (KATNA1, KATNAL1, RPS6KL1, RPS6KC1, and AMSHLP), IST1 (RPS6KC1, CAPN7, SNX15, and SPARTIN), or CHMP1B, CHMP3, and IST1 (SPASTIN). The predicted MIT domain of the catalytically inactive deubiquitinase, USP54 (Rigden et al., 2009), bound weakly (KD >100 µM) to nearly all ESCRT-III proteins, indicating that these interactions were probably non-specific (Figure 2—figure supplement 3). Finally, two MIT domains (NRBF2 and VPS9D1) did not bind any ESCRT-III proteins (Figure 2—figure supplement 4). The MIT domain of NRBF2 has been characterized structurally (PDB 4ZEY, 2CRB) and shown to interact with the VPS15 kinase to promote autophagosome biogenesis (Young et al., 2019). The putative VPS9D1 MIT domain was predicted through bioinformatics, has not been characterized structurally, and has no known ESCRT connections (Rigden et al., 2009).
 
@@ -67,41 +95,73 @@ As noted above, we were unable to express and purify the ULK1 or ULK2 tandem MIT
 
 In summary, most MIT proteins can engage ESCRT-III proteins and their interactions span a range of specificities and affinities, indicating that they couple to ESCRT pathway functions in a variety of different ways.
 
-## SPASTIN, KATNA1, and CAPN7 as paradigms for MIT-ESCRT-III interactions
+### SPASTIN, KATNA1, and CAPN7 as paradigms for MIT-ESCRT-III interactions
 
 Three MIT proteins with specific ESCRT-III interactions and interesting associated enzymatic domains were selected for further characterization: (1) SPASTIN (IST1, CHMP1B, and CHMP3 binding), (2) KATNA1 (CHMP3 binding only), and (3) CAPN7 (IST1 binding only) (Figure 3A). ESCRT-III interactions with SPASTIN (Reid et al., 2005; Yang et al., 2008; Agromayor et al., 2009) and CAPN7 Yorikawa et al., 2008; Osako et al., 2010 have been described previously, whereas SPASTIN and KATNA1 binding to CHMP3 have not. The single MIT domain of SPASTIN bound tightly to the IST1 MIM344-366 (Type 1/3 binding) and CHMP1B (Type 3) C-termini. The CAPN7 tandem MIT domain binds both MIM elements (Osako et al., 2010), and in this case multiple different binding modes are possible. SPASTIN and KATNA1 are microtubule severing AAA+ ATPases (Sharp and Ross, 2012). Both have been implicated in clearing midbody microtubules prior to abscission (Yang et al., 2008; Connell et al., 2009; Benz et al., 2012; Matsuo et al., 2013), but neither has been linked to abscission checkpoint activity. CAPN7 is an understudied cysteine protease that has not previously been linked to any cytokinetic functions.
 
-## Structure and analysis of the SPASTIN MIT-IST1 complex
+### Structure and analysis of the SPASTIN MIT-IST1 complex
 
 The SPASTIN MIT domain is unusual in binding specifically to three different ESCRT-III proteins: CHMP1B, CHMP3, and IST1. The SPASTIN MIT-CHMP1B complex has been characterized structurally (Yang et al., 2008; Figure 1C), whereas the SPASTIN MIT-IST1 and SPASTIN-CHMP3 interactions have not. We determined a high resolution (1.15 Å) crystal structure of the SPASTIN MIT-IST1 complex using a SPASTIN MIT112-196 construct. (Figure 4A, and Figure 4—figure supplement 1A and B, and Supplementary file 3; PDB 7S7J). The structure revealed that the IST1 MIM344-366 adopts an amphipathic helix that buries its hydrophobic side chains in the SPASTIN MIT H1/H3 groove (Type 3 binding, Figure 4A, Figure 4—figure supplement 1). The IST1 and CHMP1B MIM elements exhibit similar binding modes (Figure 4A–D), but with two significant differences (Figure 4—figure supplement 1C): (1) The longer CHMP1B helix extends three additional turns beyond the IST1 N-terminus, and (2) the MIT H1/H3 groove expands to accommodate the longer CHMP1B helix, with a maximal displacement of 2.5 Å at the N-terminus of helix 3. The structure of SPASTIN-IST1 is nearly identical to SPARTIN-IST1, which also adopts a Type 3 interaction (Guo and Xu, 2015; Figure 4—figure supplement 1D). IST1 binding is slightly tighter than CHMP1B binding, likely owing to enhanced hydrophobic interactions with the SPASTIN H1/H3 groove (Figure 4—figure supplement 1C). IST1 buries two aromatic and two aliphatic side chains, whereas the CHMP1B binding element lacks aromatic residues and buries only three aliphatics.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig4-v1.jpg)
+
+**Figure 4.:** (A and B) Two orientations of the SPASTIN MIT-IST1 Type 3 structure (PDB 7S7J) displaying the locations of binding mutants (stick representation). See Figure 4—figure supplement 1A and B, for a detailed view of the interface and Supplementary file 3 for data collection and structure refinement statistics. (C) Cartoon depicting the positions of mutation sites in the SPASTIN MIT H1/H3 groove. (D) SPASTIN-CHMP1B structure (PDB 3EAB) showing the location of binding mutants (stick representation). See , Figure 4—figure supplement 1C for an overlay of both SPASTIN structures. (E–G) Binding isotherms for WT and mutant MIT domains with the designated MIM elements. (E) SPASTIN-IST1. (F) SPASTIN-CHMP1B. (G) KATNA1-CHMP3, and (H) CAPN7-IST1. For E and H, binding was measured using IST1 peptides composed of both MIM elements (residues 316–366). MIT groove binding cartoons within the figures show locations of mutations in the relevant MIT domain. See also Figure 4—figure supplement 2 for binding isotherms for WT and mutant SPASTIN MIT domains with the CHMP3 MIM element.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Fo-Fc IST1 omit map contoured at 3σ overlaid with the SPASTIN-IST1 structure (left) and expanded view (right) highlighting the omit map quality. SPASTIN and IST1 are shown in blue and green respectively. Four hydrophobic IST1 residues, F352, L355, F359, and L362 are shown binding in the H1/H3 groove of the SPASTIN MIT domain. (B) SPASTIN-IST1 interface details. The interface buries 1400 Å2 of surface area over 32 residues from both faces and is further stabilized with four hydrogen bonds and seven salt bridges. SPASTIN side chains with significant buried surface area are colored olive for contrast. Left shows full structure and right shows an expanded view. Salt bridges and hydrogen bonds are indicated with dotted lines. The SPASTIN intramolecular salt bridge D134-R191 is shown with olive sticks. (C) Overlay of SPASTIN-CHMP1B (PDB 3EAB, SPASTIN cartoon shown gray and CHMP1B yellow) with SPASTIN-IST1 (PDB 7S7J, SPASTIN cartoon shown blue and IST1 green), highlighting similar overlay of four prominent ESCRT-III hydrophobic side chains buried in the H1/H3 binding groove, a small shift in helical register between IST1 and CHMP1B, and an expanded H1/H3 groove in CHMP1B complex (compare the N-terminal region of SPASTIN H3 demarked by residue E169). (D) Overlay of SPASTIN-IST1 complex (PDB 7S7J, SPASTIN cartoon shown dark blue and IST1 shown green) and SPARTIN-IST1 complex (PDB 4UI, SPARTIN shown gray cartoon and IST1 shown dark green) exhibit nearly identical structures.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Cartoon inset depicts the position of the groove mutations. Both H1-H3 groove mutations disrupt CHMP3 binding.
+
 Based on our structural analyses, we created SPASTIN MIT mutations designed to disrupt the binding of both CHMP1B and IST1 (F124D, red in Figure 4A–D) and to disrupt only CHMP1B binding without affecting IST1 binding (L177D, cyan in Figure 4A–D). As shown in Figure 4E and F, these mutations behaved as designed, thereby providing a set of mutants that we could use to compare the biological effects of disrupting SPASTIN binding to both CHMP1B and IST1 vs. specifically disrupting binding to CHMP1B alone. CHMP3 binding was also inhibited by both SPASTIN F124D and L177D mutants. Thus, CHMP3 also likely binds as an extended Type 3 helix in the SPASTIN MIT H1/H3 groove (Figure 4—figure supplement 2), and only IST1 retained binding to the SPASTIN L177D mutant owing to its shorter Type 3 helix.
 
-## KATNA1 and CAPN7 binding to ESCRT-III proteins
+### KATNA1 and CAPN7 binding to ESCRT-III proteins
 
 We also screened for MIT point mutations that could block ESCRT-III binding to KATNA1 and CAPN7 by making a series of disruptive mutations in the MIT H1/H3 and H2/H3 grooves and testing whether these mutations abrogated binding in our fluorescence polarization anisotropy binding assay. In the KATNA1-CHMP3 case, a point mutation in the MIT H1/H3 groove (V55D) eliminated CHMP3 binding (Figure 4G). Our data therefore again indicate a Type 3 interaction for the helical CHMP3 MIM element. CAPN7 has tandem MIT domains, and we found that IST1 binding was significantly reduced (~30–70 fold) by point mutations in the H1/H3 groove of either the first (V18D) or second (F98D) CAPN7 MIT domains (Figure 4H). Together with our MIM mapping experiments (Figure 3C), these data indicate that both CAPN7 MIT domains engage both IST1 MIM elements, employing Type 2 (MIM316-343) and Type 3 (MIM344-366) binding modes.
 
-## SPASTIN, KATNA1, and CAPN7 localize to midbodies
+### SPASTIN, KATNA1, and CAPN7 localize to midbodies
 
 As an initial screen for cytokinetic functions, we examined whether endogenous SPASTIN, KATNA1, and/or CAPN7 localize to the midbodies of dividing cells (Figure 5A–C, respectively). Midbodies were co-stained for microtubules and CEP55, which is recruited to either side of the Flemming body where it initiates ESCRT complex assembly (Fabbro et al., 2005; Carlton and Martin-Serrano, 2007; Morita et al., 2007). Antibody staining specificity was confirmed in parallel experiments in which each MIT protein was separately depleted using siRNA (Figure 5A–C; right panels).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig5-v1.jpg)
+
+**Figure 5.:** Immunofluorescence images of SPASTIN (A, D), KATNA1 (B, E), and CAPN7 (C, F) after treatment with the indicated siRNAs. Checkpoint Active samples (D–F) were generated by additional treatment with siNups combined with a thymidine synchronization/release. Antibodies specific for α-TUBULIN and CEP55 were used to identify midbody-stage cells and the Flemming body, respectively. Enlargements of selected regions are shown at the right of each image, with the target protein shown alone (top) or together with CEP55 (bottom). (G, H) Quantification of abscission defects (midbody-stage cells and multinucleate cells) under asynchronous conditions (G) or with a sustained abscission checkpoint (H). Bars represent the average and standard deviation from n=5 independent experiments where N>500 cells were counted per experiment. Statistical analysis was performed using ANOVA, comparing total abscission defects (Midbody-stage cells + Multinucleate cells) after each individual siRNA treatment to siNT. ****p<0.0001, ***p<0.0005, **p<0.02, ns = not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blots from experiments in Figure 5. (B) Western blots using a second, independent siRNA for SPASTIN (SPAS-b), KATNA1 (KATNA1-b), and CAPN7 (CAPN7-b). (C, D) Quantification of abscission defects (midbody-stage cells and multinucleate cells) under asynchronous conditions (C) or with a sustained abscission checkpoint (D), following treatment with the indicated siRNAs. Bars represent the average and standard deviation from five independent experiments where >500 cells were counted per experiment. Statistical analysis was performed using ANOVA, comparing total abscission defects (Midbody-stage cells + Multinucleate cells) after each individual siRNA treatment to siNT. ****p<0.0001, ***p<0.0005, **p<0.005, ns = not significant.
 
 In midbody-containing cells, all three MIT proteins co-localized with CEP55 ring structures on either side of the Flemming body (Figure 5A–C). Uniquely, KATNA1 also distributed along the midbody arms, reminiscent of localization observed for caveolae, and termed ‘midbody entry points’ (Andrade et al., 2022). Arm staining was particularly prominent in early midbody-stage cells (Figure 5B), and a similar KATNA1 staining pattern has been reported in rat cell lines (Matsuo et al., 2013). Our observations of SPASTIN and KATNA1 Flemming body localization are also in good agreement with previous reports (Yang et al., 2008; Connell et al., 2009; Matsuo et al., 2013). Importantly ours is the first report that CAPN7 localizes to midbodies.
 
 MIT protein localization was also examined in cells in which abscission checkpoint signaling was sustained by nucleoporin depletion (Strohacker et al., 2021; Figure 5D–F). In these experiments, cells were synchronized using thymidine treatment and release, together with siRNA depletion of NUP153 and NUP50 (siNups), which sustains the abscission checkpoint. In all cases, the MIT proteins again localized to Flemming bodies, although in each case abscission checkpoint signaling led to more diffuse staining and spreading of the signals to midbody arms. Thus SPASTIN, KATNA1, and CAPN7 localize to midbodies under both unperturbed and checkpoint active conditions, where they are poised to function in abscission and/or the abscission checkpoint.
 
-## SPASTIN, KATNA1, and CAPN7 function in abscission
+### SPASTIN, KATNA1, and CAPN7 function in abscission
 
 To test for abscission functions, we depleted SPASTIN, KATNA1, and CAPN7 and quantified abscission failure, as reflected by increased numbers of multi-nucleated cells and cells with persistent intercellular bridges (Figure 5G and Figure 5—figure supplement 1). Specific depletion and abscission phenotypes were confirmed using two different siRNA oligonucleotides in each case, and successful target protein depletion was confirmed by Western blot (Figure 5—figure supplement 1).
 
 Cells lacking KATNA1 and CAPN7 both showed strong abscission failure phenotypes, with near doubling of the percentages of cells with midbodies or multiple nuclei (vs. control cells transfected with non-targeting (NT) siRNA). These pronounced phenotypes resembled the abscission defects observed with moderate knockdown of the essential IST1 protein (positive control) (Bajorek et al., 2009a, Agromayor et al., 2009). Cells lacking SPASTIN also exhibited significant abscission defects, although the effects were weaker. Our results are consistent with previously reported roles for KATNA1 and SPASTIN in promoting abscission by clearing midbody spindle microtubules from abscission sites (Matsuo et al., 2013; Yang et al., 2008; Connell et al., 2009). The observation that CAPN7 is required for efficient cytokinetic abscission is a new discovery.
 
-## SPASTIN and CAPN7 are required for abscission checkpoint maintenance
+### SPASTIN and CAPN7 are required for abscission checkpoint maintenance
 
 We also tested whether SPASTIN, KATNA1, or CAPN7 were required to maintain the AurB-mediated abscission checkpoint. As described above, co-depletion of the nuclear pore proteins NUP153 and NUP50 sustains abscission checkpoint activity, leading to an accumulation of midbody-connected cells (Mackay et al., 2010). However, simultaneous co-depletion of either SPASTIN or CAPN7 significantly reduced midbody accumulation, indicating roles for both proteins in abscission checkpoint maintenance (Figure 5H, Figure 5—figure supplement 1). Indeed, the effects of depleting either SPASTIN or CAPN7 were at least as penetrant as depleting CHMP4C (positive control), which plays a well-characterized role in inhibiting abscission in response to checkpoint signaling (Capalbo et al., 2012; Carlton et al., 2012). Unlike SPASTIN or CAPN7 depletion, KATNA1 depletion did not significantly alter midbody numbers, although a second oligo targeting KATNA1 showed a modest but significant decrease in cells undergoing an abscission checkpoint arrest (Figure 5H, Figure 5—figure supplement 1). Thus, our data indicate that SPASTIN and CAPN7 are required to sustain abscission checkpoint arrest, and KATNA1 may also contribute weakly.
 
-## ESCRT-III proteins recruit SPASTIN, KATNA1, and CAPN7 to midbodies
+### ESCRT-III proteins recruit SPASTIN, KATNA1, and CAPN7 to midbodies
 
 To unite our binding and functional data, we tested whether ESCRT-III interactions were responsible for recruiting SPASTIN, KATNA1 and CAPN7 to function at midbodies. This was done by generating cell lines that expressed doxycycline (DOX)-inducible, siRNA-resistant mCherry constructs fused to wildtype (WT) and mutant MIT proteins. We then treated with siRNA to deplete the respective endogenous MIT proteins (Figure 6—figure supplement 1) while inducing expression of the mCherry fusion proteins and imaging the cells to test for midbody localization (Figure 6). As in Figure 5, cells were also synchronized with sustained checkpoints to maximize the number of midbody-stage cells (Strohacker et al., 2021). Importantly, all three WT mCherry fusion constructs recapitulated localization of the endogenous MIT counterpart within the midbody (Figure 6). The percentages of “arms only” localization patterns were higher for the endogenous constructs in every case, however, potentially reflecting reduced antibody epitope accessibility at the protein-rich Flemming body. We found some additional differences between expression constructs and their individual endogenous counterparts, such as a larger population of “Flemming Body + Arms” in mCherry-SPASTIN cells, which again may reflect epitope exposure (Figure 6A). These observations suggest that there may be more variation in SPASTIN localization than currently appreciated, particularly when the abscission checkpoint is sustained. For purposes here, however, this assay provides a robust system in which to probe the requirements for ESCRT-III-mediated recruitment to the midbody.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig6-v1.jpg)
+
+**Figure 6.:** (A) Immunofluorescence of DOX-inducible cell lines expressing siRNA-resistant mCherry-SPASTIN-WT, mCherry-SPASTIN-F124D, and mCherry-SPASTIN-L177D constructs under sustained abscission checkpoint conditions (see Materials and methods). Endogenous SPASTIN was depleted by siRNA treatment of the DOX-inducible cell lines and induced protein expression/localization was detected using an anti-mCherry antibody. Antibodies to α-TUBULIN and CEP55 were used to identify midbody-stage cells and the Flemming Body, respectively. Enlargements of selected regions are shown at the right of each image with the target protein shown alone (top) or together with CEP55 (bottom). (B) Quantification of midbody localization for endogenous SPASTIN from Figure 5 (Endo) and the indicated DOX-inducible cell lines. Bars are the average and standard deviation from three independent experiments where >100 midbody-stage cells were counted. Statistical analysis was performed using ANOVA, comparing total midbody localization of the F124D and L177D mutants to WT. (C, D) Immunofluorescence and quantification of midbody localization for endogenous KATNA1 (Figure 5) and DOX-inducible cell lines expressing siRNA-resistant mCherry-KATNA1-WT and mCherry-KATNA1-V55D constructs as in A and B, except that endogenous KATNA1 was depleted by siRNA in the DOX- inducible cell lines. Statistical analysis was performed using an unpaired t-test, comparing the V55D mutant to WT. (E, F) Immunofluorescence and quantification of midbody localization for endogenous CAPN7 (Figure 5) and DOX-inducible cell lines expressing siRNA-resistant CAPN7-mCherry and CAPN7-F98D-mCherry constructs as in A and B, except that endogenous CAPN7 was depleted by siRNA in the DOX-inducible cell lines. Statistical analysis was performed using an unpaired t-test comparing the F98D mutant to WT. ****p<0.0001, ***p=0.0005, **p=0.0024, ns = not significant.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Western blots from experiments in Figure 6.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/77779/elife-77779-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Structure of KATNA1 MIT domain showing locations of V55 (cyan, stick) and R14 (red, stick). Left image shows the MIT domain alone and right image shows the MIT domain in complex with KATNB1 (PDB 5NBT). (B) Co-precipitations from HEK293T cells co-transfected with Myc-KATNB1 and WT or mutant OSF-KATNA1 proteins. An empty vector expressing OSF alone was used as a control (-).
 
 Like WT mCherry-SPASTIN, the L177D mutant SPASTIN localized to more than half of all midbodies (Figure 6A and B). The proportion of midbodies occupied by SPASTIN may reflect a temporally restricted role and/or be influenced by overall sensitivity of the assay. Strikingly, however, the F124D mutant did not localize to midbodies. These data imply that ESCRT-III binding is required to localize SPASTIN to the midbody. The SPASTIN F124D mutation disrupts binding to CHMP1B, IST1, and CHMP3 whereas the L177D mutation selectively permits only IST1 binding (Figure 4, Figure 4—figure supplement 2). Therefore, our data imply that CHMP1B and CHMP3 binding are dispensable for midbody localization when IST1 binding capability is maintained.
 
@@ -117,7 +177,7 @@ We have comprehensively surveyed the MIT-ESCRT-III interactions between human ES
 
 SPASTIN, KATNA1, and CAPN7 served as paradigms for using the binding data to discover new ESCRT cofactors that function in cytokinesis. Our screening assays identified ESCRT-III binding partners and interaction sites (Figure 3), enabled new structure determinations (Figure 4, Figure 4—figure supplement 1), and supported mutational analyses of MIT protein midbody localization (Figure 4, Figure 6). Together with previous studies, our work indicates that the primary biological function of MIT domains is to localize proteins to sites of ESCRT-driven membrane remodeling. MIT domains have also evolved to mediate protein-protein interactions in other pathways, most notably in autophagosome initiation (Fujioka et al., 2014; Young et al., 2019). Collectively, MIT-MIM interactions constitute a complex recognition network, and several principles that emerged from our studies are highlighted below. A more comprehensive discussion of the different interactions is provided in the Supplemental discussion.
 
-## MIT recruitment by ESCRT-III polymers
+### MIT recruitment by ESCRT-III polymers
 
 Although we studied the pairwise interactions of MIT domains and ESCRT-III tails, these interactions likely occur predominantly in the context of polymeric ESCRT-III filaments. Polymerization creates the potential for high avidity binding, and variations in ESCRT-III subunit compositions can alter binding modes and tune binding affinities. These properties are important because subunit compositions change as filaments mature and constrict membranes (Pfitzner et al., 2021; Banjade et al., 2021; Pfitzner et al., 2020). Current models for ESCRT-III assembly, derived from studies in simpler yeast systems, hold that CHMP6 initially nucleates the assembly of ESCRT-III strands composed of CHMP4 subunits. CHMP4 strands then recruit partner strands composed of CHMP2/CHMP3 subunits (Teis et al., 2008; Babst et al., 2002), which are subsequently exchanged for CHMP1/IST1 subunits (Pfitzner et al., 2020). Hence, the cadre of recruited MIT protein binding partners may evolve as filaments mature.
 
@@ -125,19 +185,19 @@ These different principles are nicely illustrated by VPS4 enzymes and their asso
 
 In a similar fashion, ESCRT-III subunit binding specificities and affinities are also likely tuned to recruit other MIT cofactors as needed. It is therefore of interest that IST1, CHMP3, and CHMP1 were the most promiscuous ESCRT-III binders in our screen because each of these ESCRT-III subunits functions at transitional stages of ESCRT-III polymer maturation (Pfitzner et al., 2020). Our binding data suggest that many MIT proteins will bind best to mature, IST1-containing filaments that form late, when membrane constriction is greatest and fission is most imminent. In contrast, MIT proteins like AMSH and MITD1 bind many different ESCRT-III subunits with similar affinities, perhaps because deubiquitination (AMSH) and midbody stabilization (MITD1) are required throughout abscission and other ESCRT-dependent processes.
 
-## IST1 as a versatile hub for cytokinetic cofactor recruitment
+### IST1 as a versatile hub for cytokinetic cofactor recruitment
 
 IST1 is the most promiscuous MIT binding ESCRT-III protein, and it binds most targets with high affinity (Figure 2, Figure 3C). IST1 promiscuity is achieved through combined use of two different MIM elements, and through multi-modal binding by the IST1 MIM1/3 element (Bajorek et al., 2009a, Guo and Xu, 2015; Figure 3). Our screen revealed that both IST1 MIM elements can mediate MIT-binding, and that they often collaborate to enhance binding (Figure 3C). The SPASTIN MIT-IST1 structure shows that the IST1 MIM344-366 element can make Type 3 MIT interactions, as seen previously in the SPARTIN-MIT-IST1 complex (Yang et al., 2008; Guo and Xu, 2015). However, the same hydrophobic surface of the IST1 MIM344-366 helix can also form Type 1 interactions with the MIT domains of ULK3, VPS4B, and LIP5 (Guo and Xu, 2015; Skalicky et al., 2012; Caballe et al., 2015). IST1 depletion induces severe cytokinetic defects (Bajorek et al., 2009a, Agromayor et al., 2009; Figure 5), reflecting its central role in abscission and as a versatile hub for MIT cofactor recruitment.
 
 Comparison of the SPASTIN MIT complexes with IST1 and CHMP1B allowed us to design a mutation that specifically permitted only IST1 binding (Figure 4). This SPASTIN mutant still localized to intercellular bridges (Figure 6A,B) demonstrating that IST1 binding is sufficient (and CHMP1B and CHMP3 are dispensable) for midbody recruitment. Others have reported that SPASTIN midbody localization is impaired by CHMP1B depletion (Yang et al., 2008), but this observation can be reconciled because IST1 recruitment is also likely affected by the absence of CHMP1B (Dimaano et al., 2008; Rue et al., 2008; Bajorek et al., 2009b, Goliand et al., 2018).
 
-## MIT binding modes of CHMP1 and CHMP3 proteins
+### MIT binding modes of CHMP1 and CHMP3 proteins
 
 CHMP1B and CHMP3 are also promiscuous MIT binders. CHMP1B binds two MIT domains (SPASTIN, USP8) that the closely related CHMP1A protein does not. This expanded binding range apparently reflects the ability of CHMP1B to access the Type 3 interaction mode. The Type 3 interaction extends the N-terminus of the CHMP1B MIM helix by three additional turns (vs. its Type 1 interactions). Additional interactions with this extended helix could allow SPASTIN to discriminate between CHMP1B and CHMP1A, whose sequences are highly similar at the C-terminus but diverge N-terminally (Yang et al., 2008). The USP8 MIT domain can also discriminate between CHMP1B and CHMP1A (Figure 2), and we therefore speculate that USP8 MIT may also form a Type 3 interaction with CHMP1B.
 
 The CHMP3 MIM appears to be another example of a promiscuous helical MIM element that can bind in at least two separate grooves of different MIT domains. The CHMP3 MIM element binds the MIT domains of AMSH using a Type 4 mode (Figure 1C; Solomons et al., 2011), and LIP5 (MIT1 using a Type1/4 mode; Skalicky et al., 2012). Remarkably, our study suggests that CHMP3 can also adopt yet another binding mode (Type 3), as we mapped binding to the H1/H3 grooves of SPASTIN and KATNA1 MIT. The ability to adopt multiple different binding modes increases the number of possible partnerships with MIT domain proteins, and helps to explain why IST1, CHMP3 and CHMP1B are the most promiscuous MIT binders.
 
-## SPASTIN and KATNA1 midbody recruitment and microtubule severing
+### SPASTIN and KATNA1 midbody recruitment and microtubule severing
 
 ESCRT-III proteins coordinate the recruitment of the microtubule severing enzymes KATNA1 and SPASTIN to complete abscission. Following anaphase, densely packed midbody microtubules must be cleared from the midbody to facilitate cytokinetic membrane abscission (Sharp and Ross, 2012). Both SPASTIN and KATNA1 form hexameric rings (Hartman and Vale, 1999; Eckert et al., 2012) that can engage the C-terminal tails of TUBULIN subunits within the central pore (Kuo and Howard, 2021). ATP hydrolysis then drives polypeptide translocation, thereby promoting subunit exchange and/or microtubule severing (Roll-Mecak and Vale, 2008; Zehr et al., 2017). We observed distinct but overlapping midbody localization patterns for SPASTIN and KATNA1 (Figure 5), which may reflect their recruitment by similar ESCRT-III proteins (CHMP1B, IST1, and CHMP3) and could allow the two enzymes to act on different pools of midbody microtubules.
 
@@ -147,19 +207,218 @@ The discovery that CHMP3 and KATNB1 (Rezabkova et al., 2017) share overlapping b
 
 Finally, a CHMP3 mutation, T173I, located within the MIM used in our binding studies, is associated with spastic paraplegia, a disease associated with SPASTIN defects (Cohen-Barak et al., 2022). Our identification of CHMP3 as a SPASTIN binding partner suggests that CHMP3 may play a direct role in supporting neuronal SPASTIN functions.
 
-## CAPN7 functions in abscission and the abscission checkpoint
+### CAPN7 functions in abscission and the abscission checkpoint
 
 Finally, we have discovered that the cysteine protease, CAPN7, localizes to midbodies and supports abscission and the abscission checkpoint. Our screen identified IST1 as the sole ESCRT-III binding partner for the CAPN7 MIT domains (Figure 2, Figure 3), in good agreement with previous reports of IST1 binding in pulldown assays (Osako et al., 2010; Maemoto et al., 2011). The CAPN7 MIT domain also reportedly binds the second alpha-helical region of the CHMP1B core domain (but not the C-terminal MIM region) (Maemoto et al., 2011). We did not survey this interaction because our screen included only C-terminal ESCRT-III tails, but our mutational and localization analyses indicate that CAPN7 midbody recruitment is dependent on IST1 binding (Figure 4, Figure 6).
 
 IST1 recruitment may also enhance CAPN7 proteolytic activity within the midbody as IST1 binding was shown to activate CAPN7 proteolysis of an artificial substrate (Osako et al., 2010; Maemoto et al., 2013). CAPN7 orthologues in Aspergillus (PalB) and budding yeast (Rim13) function together with ESCRT-III binding partners to cleave the PEST peptide sequences of the transcription factors Rim101 and PacC, and thereby enhance gene expression (Rodríguez-Galán et al., 2009; Subramanian et al., 2012). Similarly, human CAPN7 reportedly binds and cleaves PEST elements of the HOXA10 transcription factor (Yan et al., 2018). Thus, IST1 recruitment of CAPN7 to the midbody could provide spatial and temporal control of proteolysis, leading to downstream signaling activities required for checkpoint maintenance and/or abscission.
 
-## Cofactors for other ESCRT-dependent processes
+### Cofactors for other ESCRT-dependent processes
 
 Although we have focused on cytokinetic abscission, the same experimental framework can be used to characterize MIT cofactors for other cellular ESCRT functions, including intralumenal vesicle formation at the multi-vesicular body, nuclear envelope resealing, plasma membrane repair, and enveloped virus budding (Christ et al., 2017; Vietri et al., 2020; Zhen et al., 2021). Many of the newly discovered partnerships merit investigation in these other ESCRT functions. For example, CHMP7 is a specialized ESCRT-III protein that functions in post-mitotic closure and repair of the nuclear envelope (Vietri et al., 2015; Gu et al., 2017; Olmos et al., 2015; von Appen et al., 2020; Denais et al., 2016; Thaller et al., 2019). Our observation that CHMP7 interacts exclusively with the MIT domain of the AMSH deubiquitinase supports the possibility that these events may be dynamically regulated by ubiquitin-dependent processes, as has been recently reported (Wallis et al., 2021). More generally, our quantitative definition of the ESCRT-III-MIT interactome should provide a basis for probing how disruption of ESCRT-III and MIT cofactor activities can contribute to disease states such as hereditary spastic paraplegia (Ciccarelli et al., 2003), or can be used therapeutically, for example in anti-cancer strategies based on VPS4 synthetic lethality (Neggers et al., 2020; Szymańska et al., 2020).
 
 ## Materials and methods
 
-## Identification and cloning of human MIT domains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Hela-N</td>
+      <td>Maureen Powers Lab</td>
+      <td></td>
+      <td>HeLa cells selected for transfectability</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CAPN7(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#26985–1-AP</td>
+      <td>IF (1:1000)WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP55(Sheep polyclonal)</td>
+      <td>Bastos and Barr, 2010</td>
+      <td></td>
+      <td>IF (1:3500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IST1(Rabbit polyclonal)</td>
+      <td>Sundquist Lab/Covance</td>
+      <td>UT560</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CHMP4C(Rabbit polyclonal)</td>
+      <td>Sadler et al., 2018</td>
+      <td></td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KATNA1(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17560–1-AP</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KATNA1(Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab111881</td>
+      <td>IF (1:500)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SPASTIN(Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>S7074</td>
+      <td>IF (1:1000)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NUP153 (SA1)(Mouse monoclonal)</td>
+      <td>Brian Burke</td>
+      <td></td>
+      <td>WB (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NUP50(Rabbit polyclonal)</td>
+      <td>Mackay et al., 2010</td>
+      <td></td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siNT</td>
+      <td>Mackay et al., 2010</td>
+      <td>siRNA</td>
+      <td>GCAAAUCUCCGAUCGUAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siCHMP4C</td>
+      <td>Strohacker et al., 2021</td>
+      <td>siRNA</td>
+      <td>CACUCAGAUUGAUGGCACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sIST1</td>
+      <td>Bajorek et al., 2009a</td>
+      <td>siRNA</td>
+      <td>AGAUACCUGAUUGAAAUUG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siNUP153</td>
+      <td>Mackay et al., 2010</td>
+      <td>siRNA</td>
+      <td>GGACUUGUUAGAUCUAGUU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siNUP50</td>
+      <td>Mackay et al., 2010</td>
+      <td>siRNA</td>
+      <td>GGAGGACGCUUUUCUGGAU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siCAPN7</td>
+      <td>This Paper</td>
+      <td>siRNA</td>
+      <td>GCACCCAUACCUUUACAUU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siCAPN7-b</td>
+      <td>This Paper</td>
+      <td>siRNA</td>
+      <td>GGCCGUUACUGAUUGAGCU</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siKATNA1</td>
+      <td>This Paper</td>
+      <td>siRNA</td>
+      <td>GGACAGCACUCCCUUGAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siKATNA1-b</td>
+      <td>Horizon Discovery</td>
+      <td>CAT# L-005157</td>
+      <td>ON-TARGET-PLUS siRNA-SMARTPOOL</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siSPAS</td>
+      <td>This Paper</td>
+      <td>siRNA</td>
+      <td>GAACAGUGUGAAAGAGCUA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siSPAS-b</td>
+      <td>This Paper</td>
+      <td>siRNA</td>
+      <td>CGUUAUUGAUACUUGGAUA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thymidine</td>
+      <td>CalBiochem</td>
+      <td>CAS 50-89-5</td>
+      <td>2 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Oregon Green 488 maleimide</td>
+      <td>Life Technologies/Molecular Probes</td>
+      <td>O6034</td>
+      <td>Fluorescent label for peptides</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KaleidaGraph</td>
+      <td>Synergy Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Identification and cloning of human MIT domains
 
 MIT domains were selected from the literature (Ciccarelli et al., 2003; Rigden et al., 2009; Row et al., 2007; Skalicky et al., 2012; Xiao et al., 2008; Fujioka et al., 2014). Bacterial expression constructs were designed using previous reports (when available) (Stuchell-Brereton et al., 2007; Caballe et al., 2015; Fujioka et al., 2014; Hadders et al., 2012; Solomons et al., 2011; Avvakumov et al., 2006; Yang et al., 2008; Guo and Xu, 2015; Iwaya et al., 2010; Yorikawa et al., 2008; Osako et al., 2010; Skalicky et al., 2012) (NRBF2; PDB 2CRB; unpublished) or were guided by secondary structure predictions using Phyre2 (Kelley et al., 2015).
 
@@ -171,11 +430,11 @@ A slightly longer SPASTIN MIT construct (residues 108–200) bound five-fold mor
 
 Gene names, DNA sources, and amino acid sequences are given in Supplementary file 1 and Supplementary file 2. All plasmids generated by this study have been deposited to Addgene for distribution (See Supplementary file 2A for Addgene accession numbers).
 
-## Bacterial expression of MIT domains
+### Bacterial expression of MIT domains
 
 Proteins were expressed in BL21 RIPL cells grown in ZYP-5052 autoinduction media (Studier, 2005). Transformed cells were initially grown for 3–6 hr at 37 °C, and then switched to 19 °C for an additional 20 hr. Cells were harvested by centrifugation at 5,400 x g and cell pellets were stored at –80 °C. MIT domains from VPS4A, VPS4B, ULK3, and LIP5 were expressed and purified as described previously (Caballe et al., 2015; Skalicky et al., 2012; Scott et al., 2005; Stuchell-Brereton et al., 2007).
 
-## Purification of (His)6-fusion proteins
+### Purification of (His)6-fusion proteins
 
 All steps were carried out at 4 °C except where noted. Frozen cell pellets were thawed and resuspended in lysis buffer: 50 mM Tris pH 8.0, 500 mM NaCl, 1 mM Dithioreitol (DTT), 0.5 mM EDTA supplemented with 0.125% sodium deoxycholate, lysozyme (25 µg/mL) PMSF (35 µg/mL), pepstatin (1 µg/mL), leupeptin (0.5 µg/mL), aprotinin (0.1 µg/mL), DNAse1 (25 µg/mL), and 1 mM MgSO4. Cells were lysed by sonication and lysates were clarified by centrifugation at 37,000 x g for 60 min. The clarified supernatant was filtered through a 0.45 μM cartridge filter and incubated with 10 mL of cOmplete His-Tag purification beads (Roche, Germany) for 45 min. Beads were washed with 500 mL of wash buffer: 25 mM Tris (pH 8.0), 500 mM NaCl, 1 mM DTT, 0.5 mM EDTA, and then with 500 mL wash buffer with 200 mM NaCl. Fusion proteins were eluted with 50 mL of 200 mM NaCl wash buffer supplemented with 200 mM imidazole, pH 8.0. Eluted protein solutions were treated with 100 μg of protease ((His)6-ULP1 for (His)6-SUMO fusions; GST-HRV3C preScission protease for (His)6-GST fusions) in 3.5 kDa cutoff dialysis bags while dialyzing against 2x2 L of 200 mM NaCl wash buffer for 16–24 h. Uncut (His)6-SUMO-MIT fusion, (His)6-SUMO tag, and (His)6-ULP1 proteases were removed with 5 mL of cOmplete His-Tag purification beads, and the MIT fusion proteins were concentrated and prepared for gel filtration chromatography.
 
@@ -191,31 +450,31 @@ Purification protocols for the CAPN7, SNX15 and VSP9D1 MIT domains were sufficie
 
 Finally, all MIT proteins were purified by Superdex 75 gel filtration chromatography (GE Healthcare Life Sciences, USA) in 25 mM Tris (pH 7.2 at 25 °C), 150 mM NaCl, 1 mM DTT, and 0.5 mM EDTA. MIT protein fractions were pooled and concentrated. MIT domain masses were confirmed with ESI-MS or MALDI-TOF (University of Utah Mass Spectrometry Core Facility, see Supplementary file 1A). Yields ranged between 0.5–35 mg/L of bacterial culture.
 
-## Expression and purification of ESCRT-III C-terminal peptides
+### Expression and purification of ESCRT-III C-terminal peptides
 
 ESCRT-III C-terminal peptides were prepared as described previously (Talledge et al., 2018). Briefly, most peptides were expressed as (His)6-SUMO-fusions, except for IST1-MIM316-343 and IST1 MIM344-366 which were made synthetically by the University of Utah Peptide Synthesis Core. Peptides were expressed in BL21-Codon Plus (DE3) RIPL cells (Agilent, Santa Clara, CA, USA) in ZYP-5052 auto-induction media (Studier, 2005). Cells were lysed by sonication in lysis buffer (40 mL/L of culture) containing 50 mM Tris, pH 7.2, 150 mM NaCl, 5 mM imidazole, 2 mM DTT, 0.5 mM EDTA, and 0.125% sodium deoxycholate, supplemented with lysozyme, protease inhibitors, and DNAse I (Roche, Germany) (as described above). Clarified cell lysates were incubated with 10 mL of cOmplete His-Tag purification resin (Roche, Germany) for 30 min, washed with 500 mL wash buffer: 50 mM Tris, pH 7.2, 500 mM NaCl, 5 mM imidazole, 5 mM DTT, 0.5 mM EDTA, and then with 500 mL wash buffer containing 150 mM NaCl. (His)6-SUMO affinity tags were removed by on-column cleavage with (His)6-ULP1 (0.7 mg, overnight, 4 °C) in 40 mL of the 150 mM NaCl wash buffer. Cleaved peptides were collected from the column flow through and dialyzed against 25 mM sodium phosphate, pH 6.5, 50 mM NaCl, 2 mM DTT, 0.5 mM EDTA, and then purified by Q-sepharose ion exchange chromatography (GE Healthcare Life Sciences, USA) with a linear gradient from 50 mM to 1 M NaCl. Peptide fractions were pooled and dialyzed against 25 mM Tris, pH 7.2, 150 mM NaCl, 1 mM TCEP, 0.5 mM EDTA, and further purified by Superdex-75 size exclusion chromatography (GE Healthcare Life Sciences, USA). Typical IST1 peptide yields were 4.5 mg/L culture. Purified ESCRT-III C-terminal fragments contained non-native ‘GlyCys’ or ‘Cys’ residues at their N-termini, and masses were confirmed by mass spectrometry (see Supplementary file 1B) either before labeling (CHMP4C, CHMP1A140-196, CHMP1B143-199) or after labeling (all other peptides; dye adds a mass shift of 463.4 Da). Competition experiments used peptides lacking N-terminal ‘Cys’ residues to avoid disulfide cross-linking (see Supplementary file 1C).
 
-## Peptide fluorescent labeling
+### Peptide fluorescent labeling
 
 Fluorescent labeling was performed by the University of Utah DNA/Peptide Synthesis Core as described previously (Caballe et al., 2015; Talledge et al., 2018). Briefly, peptides were labeled in DMSO using ~1.3-fold molar excess of Oregon Green 488 maleimide (Life Technologies/Molecular Probes #O6034, USA) dissolved in a 1:1 solution of acetonitrile:DMSO. Reversed phase HPLC was used to monitor the reactions and separate labeled peptides from unreacted dye and unlabeled peptides using reversed phase HPLC. Labeled peptide fractions were dried under vacuum and dissolved in water. Peptide concentrations were quantified using the absorbance of Oregon Green 488 at 491 nm (e=83,000 cm−1 M−1 in 50 mM potassium phosphate, pH 9.0).
 
-## Fluorescence polarization anisotropy binding assays
+### Fluorescence polarization anisotropy binding assays
 
 Binding experiments were performed as described previously (Caballe et al., 2015) in 25 mM Tris, pH 7.2, 150 mM NaCl, 0.1 mg/mL Bovine Serum Albumin (BSA), 0.01% Tween-20, and 1 mM DTT, with 250–500 pM fluor-labeled ESCRT-III peptides and purified MIT domains at the indicated concentrations. A Biotek Synergy Neo Multi-Mode plate reader (Biotek, USA) was used to measure fluorescence polarization with excitation at 485 nm and emission (detection) at 535 nm. Binding isotherms were fit to 1:1 models using KaleidaGraph (Synergy Software) as described previously (Skalicky et al., 2012; Talledge et al., 2018). Reported KD values are averages from at least three independent isotherms. Non-binding (KD >200 µM) was confirmed at least twice independently. The interactions between IST1 and SPASTIN as well as IST1 and USP8 failed to generate the large changes in polarization needed to reliably fit dissociation constants. We therefore used a C-terminal labeled IST1 peptide to measure binding with SPASTIN, and competitive binding experiments were used to calculate the Ki for the interaction of USP8 with IST1 (Figure 2—figure supplement 5E). Competition experiments were performed as described previously (Sadler et al., 2018). Briefly, complexes of MIT domains and fluorescently labeled peptides (26.6 µM MITD1 and 0.5 nM CHMP4B peptide; 0.75 µM USP8 and 0.5 nM IST1 peptide, 12.5 µM USP8 MIT and 0.5 nM CHMP4B peptide) were titrated with the indicated concentrations of unlabeled peptides. IC50s were calculated using KaleidaGraph (Synergy Software) and then converted to Ki values (Cer et al., 2009). Competitive binding curves were measured independently three or more times for each peptide, and one to three times for each positive control peptide.
 
-## Co-immunoprecipitation experiments
+### Co-immunoprecipitation experiments
 
-## KATNA1 pulldowns
+#### KATNA1 pulldowns
 
 HEK293T cells were seeded at 0.5x106 cells per well in six-well plates and transfected 24 hr later with 1 µg of plasmid encoding Myc-KATNB1 and one of the following: 2 µg empty vector control, 1.5 µg OSF-KATNA1-WT, 2 µg of OSF-KATNA1-R14A, or 1.5 µg of OSF-KATNA1-V55D P60 using PEI (10 ul per well of 1 mg/mL). Empty vector was added as necessary to bring the total transfected DNA to 3 µg/well. Cells were harvested 48 hr post-transfection and lysed in 400 µl of 50 mM Tris, pH 7.2, 150 mM NaCl, 0.5% Triton-X100, 1 mM DTT, protease inhibitors (1:100, Sigma). Lysates were clarified by centrifugation at 16,100 x g for 10 min at 4 °C, and clarified lysates were incubated with 20 µl of a 50% slurry of Strep-Tactin resin (IBA Biosciences) for 30 min. Beads were washed 4 x with 500 µl lysis buffer. After the final wash, Strep-Tactin beads were aspirated to near dryness and bound proteins were eluted by boiling in 40 µl of 2 x Laemmli sample buffer, resolved by SDS-PAGE, and detected by Western blotting.
 
-## ULK(MIT)2 pulldowns
+#### ULK(MIT)2 pulldowns
 
 HEK293T cells were seeded in 6 well plates and transfected using PEI as above and DNA levels were optimized to normalize expression levels: 3 µg pCAG-OSF-ULK3(MIT)2 (residues 277–449) and 250 ng of pCAG-CHMP1A-myc, pCAG-CHMP1B-myc, or pCAG-Myc-IST1; 1.5 µg pCAG-OSF-PP-ULK1(MIT)2 (residues 833–1050) and 500 ng of pCAG-CHMP1A-myc, pCAG-CHMP1B-myc, or pCAG-Myc-IST1; 500 ng pCAG-OSF-PP-ULK1(MIT)2 and 2 µg Myc-ATG13; 2.5 µg pCAG-OSF empty vector and 500 ng of pCAG-CHMP1A-myc, pCAG-CHMP1B-myc, or pCAG-Myc-IST1; 1 µg pCAG-OSF empty vector and 2 µg Myc-ATG13. Cells were harvested 24 hr post transfection and lysed in 50 mM Tris, pH 7.2, 1% Triton, 150 mM NaCl, 1 mM DTT, 1:100 mammalian protease inhibitors (Sigma). Lysates were clarified by centrifugation at 16,100 x g for 10 min at 4 °C, and incubated with 20 µl of a 50% slurry of Strep-Tactin resin (IBA Biosciences) for 30 min at 4 °C. Beads were washed 4 x with 500 µl lysis buffer. After the final wash, Strep-Tactin beads were aspirated to near dryness and bound proteins were eluted and detected by Western blotting as described above.
 
 For ULK(MIT)2 pulldowns with CHMP2A (Figure 2—figure supplement 6); 10 cm dishes of 60–80% confluent HEK293T cells were individually transfected with PEI and 12 µg of pCAG-OSF-ULK3(MIT)2, pCAG-OSF-PP-ULK1(MIT)2, pCAG-CHMP2A-myc, pCAG-CHMP2A-L216D/L219D, Myc-ATG13, or pCAG-OSF-empty vector control. Cells were harvested 24 hr post-transfection, lysed in 25 mM Tris, pH 7.2, 150 mM NaCl, 1 mM DTT, 1% Triton-X100 supplemented with 1:100 mammalian protease inhibitors (Sigma), and lysates were clarified by centrifugation at 16,100 x g for 10 min at 4 °C. Clarified lysates expressing CHMP2A-Myc were mixed with lysates expressing OSF-ULK(MIT)2 or empty vector controls and incubated overnight at 4 °C. Lysate mixes were then incubated with 20 µl of a 50% slurry of Strep-Tactin resin (IBA Biosciences) for 1 hr at 4 °C. Beads were washed 5 x with 500 µl of 25 mM Tris, pH 7.2, 150 mM NaCl, 1 mM DTT, 0.5% Triton-X100 buffer. After the final wash, Strep-Tactin beads were aspirated to near dryness, and bound proteins were eluted and detected by Western blotting.
 
-## X-ray crystallography
+### X-ray crystallography
 
 SPASTIN MIT (residues 112–196) and IST1 peptide (residues 344–366) were prepared as described above, mixed at a 1:1.2 molar ratio (14.25 mg/ml SPASTIN MIT and 4.8 mg/ml IST1 peptide), and filtered using a 0.2 μM cartridge filter. This complex was mixed in a 2:1, 1:1, and 1:2 (v/v) ratio with 100 mM sodium cacodylate/ hydrochloric acid pH 6.5, 40% (v/v) PEG 300, 200 mM calcium acetate (0.6 μL final volume; Wizard Cryo 1/2 screen (Rigaku, USA), condition D1). Crystals formed by sitting drop vapor diffusion after ten days at 4 °C in 1:1 and 1:2 (v/v) rations. A crystal from 1:1 or 1:2 ratio was suspended in a small nylon loop and cryocooled by plunging in liquid nitrogen. Supplemental cryoprotection was not used for the crystals grown in these conditions.
 
@@ -225,23 +484,23 @@ The model was evaluated using Molprobity (Davis et al., 2007; Williams et al., 2
 
 An omit map of the IST1 portion of the complex was generated for figure presentation. This map was calculated by removing IST1 from the final model followed with phenix refinement and simulated annealing (Cartesian) to minimize phase bias (Figure 4—figure supplement 1).
 
-## Cell culture
+### Cell culture
 
 HEK293T and HeLa cells were cultured and maintained at 37 °C and 5% CO2 in DMEM supplemented with 10% FBS. TetOn-HeLa cells were supplemented with 500 μg/mL G418 (Invitrogen) to maintain expression of the Tet-On Advanced protein. DOX-inducible cell lines generated in the parental TetOn-HeLa cell line were supplemented with 500 μg/mL G418 + 0.5 μg/mL puromycin (Invivogen).
 
-## Cell lines
+### Cell lines
 
 Our parental HeLa cell line was authenticated by genomic sequencing of 24 loci (University of Utah Sequencing Core) and confirmed to be mycoplasma-free by routine PCR testing (ABM) following the manufacturer’s protocols. HeLa cells were transfected with the pLVX-TetOn-Advanced plasmid (Clontech) and selected with 500 μg/mL G418 for 14 days. Single colonies were isolated, expanded, and screened for TetOn-Advanced expression by western blot using a TetR monoclonal antibody. The optimal clone, which was selected based on a combination of TetOn Advanced expression and tight control of DOX-inducible expression, was used as the parental HeLa TetOn line. To generate stable cell lines with doxycycline-inducible expression, the parental TetOn cell line was transfected with pLVX-tight puro plasmids containing the MIT genes of interest (see Supplementary file 2A) and selected for 14 days in 500 μg/mL G418 +0.5 μg/mL puromycin. Single colonies were expanded and screened for expression by immunofluorescence and western blotting. Selected clones were further validated by sequencing the PCR amplified MIT gene of interest from genomic DNA. Protein expression was induced by addition of 1 μg/mL doxycycline.
 
-## siRNA transfections
+### siRNA transfections
 
 For experiments in Figure 5, transfection protocols were as follows: Day 1–350,000 cells were reverse transfected with 20 nM siRNA targeting MIT protein (as indicated) in a 35 mm dish using Lipofectamine RNAiMAX and following manufacturer’s instructions; Day 2 – cells from Day 1 were trypsinized, resuspended in a total volume of 6 mL DMEM, and divided as follows: 0.5 mL into each of four wells of a 24-well dish containing 12 mm circle glass coverslips, and 2 mL into each of two 35 mm dishes. These samples were again reverse transfected with 20 nM siRNA (as indicated); for active abscission checkpoint samples, cells in two wells of a 24-well dish (for Immunofluorescence) and one 35 mm dish (for Western blot) were also reverse transfected with 10 nM siNUP153 and 10 nM siNUP50 at this time, incubated for 8 hr, then treated with 2 mM thymidine for 24 hr; Day 3 – thymidine was removed, cells were washed 2 x with warm PBS, and fresh medium added to all cells; Day 4–16 hr after thymidine release cells were harvested for analysis. For localization experiments in Figure 6, protein expression was induced by incubating cells in the presence of 1 μg/mL doxycycline for the duration of the 48 hr experiment. siRNA transfection protocols (in the presence of doxycycline) were as follows: Day 1 – either 70,000 cells (in one well of a 24-well dish containing a 12 mm glass coverslip for IF) or 350,000 cells (in a 35 mm dish for Western Blot) were reverse transfected with 20 nM siRNA targeting the indicated MIT protein plus 10 nM siNUP153 and 10 nM siNUP50 (siNups), incubated for 8 hr, then treated with 2 mM thymidine for 24 hr; Day 2 – thymidine was removed and fresh medium including 1 μg/mL doxycycline was added to all cells (as described above); Days 3–16 hr after thymidine release cells were harvested for analysis. siRNA sequences are reported in Supplementary file 2B.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were lysed in RIPA buffer (Thermo Fisher) supplemented with mammalian protease inhibitor cocktail (Sigma; used at 1:100 dilution) for 15 min on ice with brief vortexing every 5 min. Lysates were cleared by centrifugation at 17,000 x g for 10 min at 4 °C. Lysate protein concentrations were determined using the BCA Assay (Thermo Fisher) and normalized prior to SDS-PAGE. 12 μg lysate per sample were prepared with SDS loading buffer, resolved by SDS-PAGE, and transferred to either PVDF or nitrocellulose. Membranes were blocked for 1 hr at room temperature in 5% milk in TBS, then incubated overnight at 4 °C with primary antibodies (see Supplementary file 2C for dilutions). Following 3x10 min washes in TBS-T, membranes were incubated with the corresponding secondary antibodies for 1 hr at 23 °C, washed again with TBS-T, and imaged using a LiCor Odyssey infrared scanner.
 
-## Immunofluorescence imaging and phenotype quantification
+### Immunofluorescence imaging and phenotype quantification
 
 Cells were seeded on fibronectin-coated glass coverslips and treated with the indicated siRNAs, according to the individual experimental protocol as described in ‘siRNA transfections’. For analysis, cells were briefly washed with 1 X PHEM buffer (60 mM PIPES, 25 mM HEPES, pH 6.9, 1 mM EGTA, 2 mM MgCl2) and then fixed for 20 min at 23 °C in 4% formaldehyde + 0.5% Triton X-100 (in 1 X PHEM buffer). Following fixation, cells were washed with PBS and incubated 30 min in blocking buffer (3% FBS +0.1% Triton X-100 in PBS). Primary antibodies were incubated for least 1 hr at 23 °C (see Supplementary file 2C for dilutions). Coverslips were then washed with PBS and incubated with the secondary antibodies (Thermo Fisher) for 1 hr at 23 °C. Following a final wash in PBS, coverslips were mounted onto glass microscope slides using Prolong Gold Antifade Reagent with or without DAPI (Thermo Fisher). In the case of KATNA1, localization was confirmed with two independent antibodies (Proteintech – #17560–1-AP; Abcam – ab111881) and two different fixation conditions: –20 °C Methanol for 10 min and PFT (1 x PHEM + 4% PFA +0.5% Triton as described above) (data not shown).
 

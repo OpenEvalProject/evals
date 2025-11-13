@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Ca 2+ /calmodulin-dependent protein kinase II (CaMKII) is an oligomeric enzyme with crucial roles in neuronal signaling and cardiac function. Previously, we showed that activation of CaMKII triggers the exchange of subunits between holoenzymes, potentially increasing the spread of the active state (Stratton et al., 2014; Bhattacharyya et al., 2016). Using mass spectrometry, we show now that unphosphorylated and phosphorylated peptides derived from the CaMKII-α regulatory segment bind to the CaMKII-α hub and break it into smaller oligomers. Molecular dynamics simulations show that the regulatory segments dock spontaneously at the interface between hub subunits, trapping large fluctuations in hub structure. Single-molecule fluorescence intensity analysis of CaMKII-α expressed in mammalian cells shows that activation of CaMKII-α results in the destabilization of the holoenzyme. Our results suggest that release of the regulatory segment by activation and phosphorylation allows it to destabilize the hub, producing smaller assemblies that might reassemble to form new holoenzymes.
+Ca2+/calmodulin-dependent protein kinase II (CaMKII) is an oligomeric enzyme with crucial roles in neuronal signaling and cardiac function. Previously, we showed that activation of CaMKII triggers the exchange of subunits between holoenzymes, potentially increasing the spread of the active state (Stratton et al., 2014; Bhattacharyya et al., 2016). Using mass spectrometry, we show now that unphosphorylated and phosphorylated peptides derived from the CaMKII-α regulatory segment bind to the CaMKII-α hub and break it into smaller oligomers. Molecular dynamics simulations show that the regulatory segments dock spontaneously at the interface between hub subunits, trapping large fluctuations in hub structure. Single-molecule fluorescence intensity analysis of CaMKII-α expressed in mammalian cells shows that activation of CaMKII-α results in the destabilization of the holoenzyme. Our results suggest that release of the regulatory segment by activation and phosphorylation allows it to destabilize the hub, producing smaller assemblies that might reassemble to form new holoenzymes.
 
 ## Introduction
 
@@ -48,7 +48,7 @@ In this paper, we present the results of investigations into interactions betwee
 
 ## Results and discussion
 
-## Mass spectrometry shows that peptides derived from the regulatory segment can break the CaMKII-α hub assembly
+### Mass spectrometry shows that peptides derived from the regulatory segment can break the CaMKII-α hub assembly
 
 We used electrospray ionization mass spectrometry to analyze the integrity of the CaMKII-α hub assembly, in isolation and in the presence of peptides. The sequences of most of these peptides are based on that of the calmodulin-binding element of the regulatory segment (Peptide A and Peptides C-F, Figure 1B), which includes several positivelycharged residues preceding hydrophobic residues. We refer to the hydrophobic portion (residues 301–308) as the β-clip segment because a part of this segment is incorporated into the interfacial β-sheet in a structure of autoinhibited CaMKII-α, in a conformation referred to as the β-clip conformation (Chao et al., 2011). We also tested a peptide that contains only the β-clip segment and a portion of the kinase-hub linker (Peptide B). Finally, we tested the effect of two different peptides that bind to the kinase domain of CaMKII but have no known affinity for the hub. One of these peptides (Peptide G) corresponds to the portion of the regulatory segment that precedes the calmodulin-binding element (residues 274–295). This region of the regulatory segment binds to the kinase domain in the autoinhibited state and includes Thr 286, which confers Ca2+/CaM-independent activity, or ‘autonomy’ when phosphorylated (Lou and Schulman, 1989). The other peptide (Peptide H) is a commonly used CaMKII inhibitor called CaMKIINtide, which binds to the kinase domain and blocks the active site (Chang et al., 1998; Chao et al., 2010).
 
@@ -56,11 +56,27 @@ The mass spectrometry experiments were carried out for the CaMKII-α hub in isol
 
 The mass spectrum of the CaMKII-α hub without added peptides is shown in Figure 2A. We observe a distribution of ions only in the higher m/z range, which correspond to dodecameric and tetradecameric hub assemblies. These observations are similar to the results of previous native mass spectrometry studies on isolated CaMKII-α hubs, in which dodecameric and tetradecameric hub assemblies were observed (Bhattacharyya et al., 2016; McSpadden et al., 2019). In the previous studies, a higher sample cone voltage of 150 V was used to reduce adduction of solvent and/or other small species, in order to obtain higherresolution mass spectra. Under these higher energy source conditions, some collision-induced disassembly of the hub occurs, resulting in the release of a small amount of monomeric species (Figure 2—figure supplement 1A). In the present study, we used softer ionization conditions, with a cone voltage of 50 V. Although this results in a decrease in the mass spectral resolution, we do not observe any smaller oligomeric species for the isolated hub. These acquisition conditions are therefore preferable for distinguishing between stable hub assemblies and those with peptide-induced disassembly, and were used for the remainder of the experiments.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig2-v3.jpg)
+
+**Figure 2.:** The masses (in Daltons) of the respective species are noted. (A) The isolated hub assembly is stable as dodecamers and tetradecamers in the absence of peptides. (B) The hub assembly (120 µM subunit concentration) incubated with 100 µM of Peptide A, shows disassembly within 3 min of initiation ionization (left). In addition to dodecamers and tetradecamers, monomers, dimers, tetramers, hexamers and octamers are observed. At ~ 4 min (right), the smaller oligomers are predominant. (C) The hub assembly (120 µM subunit concentration) incubated with 10 µM of Peptide A shows some release of smaller oligomeric species at ~2 min (left). This becomes more pronounced at 3–4 min (right), although the dodecameric and tetradecameric hub assemblies are also present. In all the spectra of the hub incubated with peptides, species corresponding to dodecameric or tetradecameric hub assemblies with one or two peptides bound are present.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mass spectrum of the isolated hub with a sample cone voltage of 150 V. Monomeric species of the hub assembly are observed at this high sample cone voltage. (B) Incubation of the hub assembly with 1 µM of Peptide A shows no disassembly, even up to 10 min after the start of ionization, and only dodecamers and tetradecamers are observed. (C) Incubation of the hub assembly with 1 mM of Peptide A shows significant protein and peptide aggregation. In all the spectra of the hub incubated with peptides, species corresponding to dodecameric or tetradecameric hub assemblies with one or two peptides bound are present, even when no hub disassembly is observed. The masses (in Daltons) of the respective species are noted.
+
 Peptide A, containing the calmodulin-binding element, was added at final concentrations of 1 µM, 10 µM, 100 µM and 1 mM to CaMKII-α hub at a final subunit concentration of 120 µM. Following incubation, the sample was ionized and mass spectra were generated by averaging the scans for specific time segments after the initiation of electrospray ionization. The dissociation constant of Peptide A for the hub is ~90 µM (Bhattacharyya et al., 2016), and so we expect appreciable binding of the peptide to the hub for the condition with 100 µM of Peptide A. Indeed, the mass spectrometry results with 100 µM of Peptide A and the hub are dramatically different than for the hub alone (Figure 2B). In the presence of 100 µM of Peptide A, we observe hub species comprised of dodecamers and tetradecamers, as well as new species corresponding in mass to the intact complex with a peptide adducted. In addition, smaller oligomeric species that correspond to monomers, dimers, tetramers and hexamers of hub subunits appear within less than 3 min (Figure 2B). After 4 min, these smaller species are predominant.
 
 Incubation of the hub with Peptide A at 10 µM concentration also yields spectra that demonstrate the release of smaller oligomeric species within ~ 1–2 min, although the peptide is sub-stoichiometric with respect to the hub under this mixing condition (Figure 2C). At ~ 3–4 min, the smaller species are prominent, although the dodecameric species are also present (Figure 2C). At even lower concentrations (1 µM) of Peptide A, we see essentially no disassembly of the hub, even after ~10 min, although there is some hexamer present at levels that are marginally above the noise. The abundance of peptide-adducted complex is significantly reduced at this lower peptide concentration. We note that under these conditions, the ratio of peptide to hub subunits is ~1:100 (Figure 2—figure supplement 1B) Incubation at saturating concentrations of peptide (1 mM) yields very noisy spectra with a high baseline consistent with significant protein/peptide aggregation (Figure 2—figure supplement 1C).
 
 The incubation of the hub with 100 µM of Peptide B also causes disassembly of the hub and the release of monomers, dimers, tetramers and hexamers, but at a slower rate than seen with Peptide A. There are no smaller species observed for up to 2.5 min (Figure 3A); smaller oligomeric species are detectable only at ~3–4 min (Figure 3A). Peptide B does not contain the positively charged residues of the calmodulin-binding element. To test the importance of positive charge in Peptide A, we replaced three positively charged residues with glutamate (Peptide C, see Figure 1B). Addition of 1 mM of Peptide C to the hub did not cause hub disassembly (Figure 3B). These results are in agreement with previously reported binding measurements that showed that this peptide fails to bind to the hub (Bhattacharyya et al., 2016).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig3-v3.jpg)
+
+**Figure 3.:** The masses (in Daltons) of the respective species are noted. (A) Peptide B, which contains the β-clip segment of the calmodulin-binding element, but not the positively charged residues, induces disassembly, but at a slower rate than Peptide A. When 100 µM of Peptide B is incubated with the hub assembly, no smaller species are observed up to ~2.5 min after initiation of ionization (left). At 3.5–4.5 min, smaller oligomeric species corresponding to monomers, dimers, tetramers and hexamers are observed (right). (B) Incubation of the hub assembly with 1 mM of Peptide C, in which three positively charged residues of Peptide A are replaced with negatively charged residues (colored red in sequence), does not result in the release of smaller oligomeric species up to 6 min after ionization, even though the peptide binds to the hub assembly. (C) Modifying the β-clip segment of the calmodulin-binding element abrogates disassembly. Incubation of the hub assembly with 1 mM of Peptide D, in which the β-clip segment of Peptide A is replaced with glycine and serine residues (colored purple) does not result in the release of smaller oligomeric species, and only dodecamers and tetradecamers are observed up to 8 min after ionization. (D) Incubation of the hub assembly with 1 mM of Peptide G, whose sequence corresponds to the autonomy site of the CaMKII-α regulatory segment, does not result in the release of smaller oligomeric species up to 4 min after ionization.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Incubation of the hub assembly with 1 mM of Peptide E, in which a portion of the β-clip segment of Peptide A is replaced with glycine and serine residues (colored purple) results in the release of some smaller oligomeric species up to 6 min after ionization. (B) Incubation of the hub assembly with 1 mM of Peptide F, in which a portion of the β-clip segment of Peptide A is replaced with glycine and serine residues (colored purple) results in the release of some smaller oligomeric species up to 4 min after ionization. (C) Incubation of the hub assembly with 100 µM of Peptide H (CaMKIINTide), an inhibitor that binds to the substrate-recognition site of the kinase domain of CaMKII, does not result in the release of smaller oligomeric species up to 4 min after the start of ionization. The CAMKII dodecamers and tetradecamers are not resolved in this mass spectra due to the soft instrument source conditions used, and peak broadening that resulted from nonvolatile salts present in the peptide solution. The masses (in Daltons) of the respective species are noted.
 
 We replaced the β-clip segment of Peptide A with glycine and serine residues (Peptides D, E and F, see Figure 1B). Modification of the β-clip segment reduces or eliminates the ability of the peptides to disturb the integrity of the hub. The results of the incubation with 1 mM of Peptide D, where the entire β-clip segment is replaced with glycine and serine residues, are shown in Figure 3C. Only intact dodecamers and tetradecamers are observed after 8 min. Peptides E and F, in which only portions of the β-clip segment are replaced by glycine and serine residues, cause hub disassembly (Figure 3—figure supplement 1A,1B) but to a lesser extent than Peptide A at similar peptide concentrations (Figure 2—figure supplement 1A).
 
@@ -68,25 +84,61 @@ We also tested the effect of two control peptides that are known to interact wit
 
 The calmodulin-binding element contains two residues, Thr 305 and Thr 306, that can be phosphorylated when CaMKII is activated, and phosphorylation at these sites prevents rebinding of Ca2+/CaM to the holoenzyme (Colbran, 1993; Bhattacharyya et al., 2020b). We tested the stability of the hub in the presence of variants of Peptides A and B (Figure 1C) in which Thr 305 is phosphorylated (hereafter referred to as Peptide Aphos and Peptide Bphos, respectively). In these experiments, CaMKII-α hub at a final subunit concentration of 120 µM was incubated with Peptide Aphos for 5 min at room temperature prior to injection into the mass spectrometer under similar ionization conditions as before. Under these conditions, the mass spectra obtained comprised predominantly of smaller oligomeric species and aggregates, suggesting that the breakage of the hub is accelerated in the presence of the phosphorylated peptide compared to the unphosphorylated peptide. We dispensed with the incubation step, and the sample was injected directly into the mass spectrometer as soon as the hub, at a final subunit concentration of 120 µM, was mixed with Peptide Aphos at final concentrations of 1 µM, 10 µM and 100 µM (Figure 4). The hub undergoes disassembly in the presence of Peptide Aphos to release hexamers, tetramers, dimers and monomers. At the higher peptide concentrations of 100 µM and 10 µM of Peptide Aphos, smaller oligomeric species appear within ~1 min (Figure 4A,B). At ~2–3 min, the spectra of the hub incubated with Peptide Aphos at these higher concentrations are very noisy, consistent with significant protein and peptide aggregation. At a lower concentration of 1 µM of Peptide Aphos, smaller oligomeric species do not appear until ~2 min after ionization Figure 4C. We also tested the stability of the hub (120 µM final subunit concentration) when mixed with 100 µM of Peptide Bphos, again with no pre-incubation of the peptide with the hub, and observed smaller oligomeric species within a minute (Figure 4D). These smaller species are predominant after ~1.5 min.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig4-v3.jpg)
+
+**Figure 4.:** Due to the rapid rate at which the hub is destabilized in the presence of phosphorylated peptide, the 5-min incubation step was dispensed which and the sample was injected into the mass spectrometer as soon as the hub was mixed with the peptide. The phosphorylated residue (Thr 305) is indicated with a filled red circle. The masses (in Daltons) of the respective species are noted. (A) The hub assembly (120 µM subunit concentration) incubated with 100 µM of Peptide Aphos shows disassembly within 1–2 min after the start of ionization (left). In addition to dodecamers and tetradecamers, monomers, dimers, tetramers and hexamers are observed. At ~2–3 min (right), the spectra consist primarily of protein and peptide aggregates. (B) The hub assembly (120 µM subunit concentration) incubated with 10 µM of Peptide Aphos also shows disassembly within 1–2 min of ionization (left). In addition to dodecamers and tetradecamers, monomers, dimers, tetramers and hexamers are observed. At ~2–3 min (right), the spectra consist primarily of protein and peptide aggregates. (C) The hub assembly (120 µM subunit concentration) incubated with 1 µM of Peptide Aphos shows almost no disassembly up to ~1.5 min (left). At ~2–4 min smaller species including hexamers, tetramers, dimers and monomers are observed, in addition to dodecamers and tetradecamers. (D) The hub assembly (120 µM subunit concentration) incubated with 100 µM of Peptide Bphos shows some disassembly into tetramers, dimers and monomers within ~1.5 min of initiation of ionization (left). At ~1.5–4 min these smaller species are predominant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Analytical gel filtration of the isolated hub shows one peak with a retention volume corresponding to the dodecameric/tetradecameric hub assembly. (B) Gel filtration of the hub incubated with 500 µM of Peptide A also shows a single peak with a retention volume that corresponds to the dodecameric/tetradecameric hub assembly.
+
 The data show that phosphorylated versions of the regulatory segments are more effective at destabilizing the hub than the unphosphorylated species (compare the data shown in Figures 2 and 3A with the data in Figure 4). This result is unexpected, since the phosphorylated and unphosphorylated peptides bind to the hub with comparable affinity (Bhattacharyya et al., 2016). Based on the available crystal structures of the hub, an explanation for why the phosphorylated peptides are more potent at breaking the hub is not readily apparent. Also, we note that the phosphorylated peptides do not appear to provide a persistent signal in the mass spectrometer, and over time the peak corresponding to the peptide decreases and eventually disappears. For these reasons, the interaction of the phosphorylated peptides with the hub requires further study in order to obtain a more complete understanding of their mechanism of action.
 
 The mass spectrometric data presented here provide compelling evidence that the interaction of the hub with the calmodulin-binding element of CaMKII, whether phosphorylated or not, results in hub destabilization. Interestingly, this destabilization is not detected in conventional experiments using gel filtration. For example, gel filtration analysis of the CaMKII hub incubated with Peptide A under conditions identical to those used for mass spectrometry shows only a single protein peak corresponding to dodecameric/tetradecameric species (Figure 4—figure supplement 1). Since Peptide A interacts with the hub relatively weakly (Bhattacharyya et al., 2016), it is possible that gel filtration causes dissociation of the peptide from the hub, perhaps allowing the hub to reassemble. In addition, perturbations introduced by the mass spectrometric analysis, such as sample heating, might partially destabilize the hub making it possible to more readily observe the effects of the peptides on the hub stability.
 
-## Long-timescale molecular dynamics simulations of regulatory segment docking on the hub
+### Long-timescale molecular dynamics simulations of regulatory segment docking on the hub
 
 We generated molecular dynamics trajectories for the hub assembly with the regulatory segments and linkers either present or absent, using the specialized Anton2 supercomputer (Shaw et al., 2014). We built a dodecameric hub assembly of CaMKII-α, based on the crystal structure of the CaMKII-α hub (PDB ID – 5IG3) (Bhattacharyya et al., 2016), on to which we modeled the unstructured linker segments (residues 311–345 in CaMKII-α) and the regulatory segments (residues 281–310). The regulatory segments and linkers were modeled in arbitrary conformations, and located at variable distances from the surface of the dodecameric hub assembly. A 13 µs molecular dynamics trajectory was generated for this system. We also generated a 6 µs trajectory of the hub assembly without the linkers and regulatory segments. The lengths of the trajectories were limited by the availability of time on the Anton2 supercomputer.
 
 In the simulation with the regulatory segments present, two of the twelve regulatory segments dock on the hub (Figure 5, Figure 5—figure supplement 1B). Using the subunit notation shown in Figure 5—figure supplement 1A, these are the regulatory segments of subunits F and L, which dock at the interfaces between subunits B and L, and subunits F and H, respectively (Figure 5). The docking involves hydrogen-bond formation between the calmodulin-binding element (residues 292–310) and the open edge of the β-sheet (residues 410–416) located at the interface (Figure 5—figure supplement 2A,2B). The regulatory segment of subunit L docks within 0.5 µs (hereafter referred to as Docking 1), and that of subunit F docks at ~3 µs (referred to as Docking 2) (Figure 5—figure supplement 1B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig5-v3.jpg)
+
+**Figure 5.:** The color scheme for the regions of the subunits are the same as in Figure 1A. (A) Instantaneous snapshot from the start (top) and end (bottom) of the simulation showing interface where Docking 1 occurs. The calmodulin-binding element of subunit L docks at the interface between the hub domains of subunits B and L. The positively-charged residues of the regulatory segment (shown in blue) form interactions with the negatively-charged residues (shown in red) that line the interface between subunits B and L. The hub domain of subunit B rotates away from the hub domain of subunit L. (B) Instantaneous snapshot from the start (top) and end (bottom) of the simulation showing interface where Docking 2 occurs. The calmodulin-binding element of subunit F docks at the interface between the hub domains of subunits F and H. The positively-charged residues of the regulatory segment (shown in blue) form interactions with the negatively-charged residues (shown in red) that line the interface between subunits F and H. The hub domain of subunit H rotates away from the hub domain of subunit F.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) A schematic representation of the hub assembly with the subunit labeling convention used in this study. The two regulatory segments that dock on the hub assembly are shown, and colored using the same scheme as in Figure 1A. (B) Presence of interactions between residues 298-306 of the calmodulin-binding element of each subunits and the corresponding interfacial β-sheet (residues 410–416) over the course of the simulation. An interaction is considered to be present if at least two backbone hydrogen bonds (distance between donor and acceptor of less than or equal to 3 Å) are formed between the calmodulin-binding element and the β-sheet. (C) Representative sample of distances between residues of the calmodulin-binding element and residues at the interface of the hub assembly from the two docking events. Docking 1 is on the left and Docking 2 is on the right. The darker traces are the time-averaged values of the distances calculated using a moving window of 470 ns while the lighter shades are the actual distances. The two figures on top show distances between positively-charged residues from the calmodulin-binding element and negatively-charged residues that line the interface between two subunits. The terminal carbon atoms of the sidechains were used to calculate distances. The two figures at the bottom show distances between the N and O atoms from residues of the backbone of the calmodulin-binding element and the backbone of the interfacial β-sheet.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** The calmodulin-binding element is colored pale pink, with the positively charged residues colored blue. The interfacial β-sheet is shown in white. (A) Close-up of Docking 1 showing backbone interactions between residues 298–300 of the calmodulin-binding element of subunit L, and residues 412–416 of the edge of the β-sheet of subunit L. (B) Close-up of Docking two showing backbone interactions between residues 301-305 of the calmodulin-binding element of subunit F, and residues 412–416 at the edge of the β-sheet of subunit F. (C) Interface from the crystal structure of CaMKII-B hub from Nematostella vectensis (PDB ID: 5IG5) at pH 4.2 (Bhattacharyya et al., 2016). In this structure, the linker folds back to interact with the hub, extending the interfacial β-sheet. Here, we have replaced the residues of the linker in the crystal structure with residues from the calmodulin-binding element, while maintaining the backbone of the linker, to show how the positively-charged residues from the calmodulin-binding element (in pale blue) might interact with the negatively-charged residues lining the interface (in red), while forming backbone hydrogen bond interactions with the edge of the interfacial β-sheet. This model is quite similar to the structures observed in the simulation.
+
 Both docking events are initiated by interactions between positively-charged residues on the regulatory segments and negatively-charged residues that line the interfacial groove (Figure 5—figure supplement 1C), although there are differences in the specific interactions that are made and in the register of the regulatory segments within the interfacial grooves. Backbone hydrogen bonds are then formed between the regulatory segment and the β-sheet at the interface, leading to the incorporation of this portion of the regulatory segment into the β-sheet, similar to the β-clip (Chao et al., 2011). The hydrophobic sidechains of the β-clip segment pack into the hydrophobic core of the subunits, further stabilizing docking by the regulatory segment. Unlike the electrostatic interactions, which are transient, the backbone hydrogen bonds are stable and persist for the duration of the simulation (Figure 5—figure supplement 1C).
 
 The interfaces at which two dockings occur are located diametrically across from each other on the hub (Figure 5—figure supplement 1A) and docking is accompanied by a large conformational change at both interfaces (Figure 6—figure supplement 1A). We quantified this distortion by measuring the angle between the axes of the N-terminal α-helices (the αA helices) of two adjacent subunits (Figure 6A). The core structures of the individual subunits remain relatively unchanged over the course of the simulation (Figure 6—figure supplement 2A), allowing us to use the angle between the axes of the αA helices as a measure of the overall rotation of one subunit at an interface with respect to the other. The initial value of the inter-helix angle between the αA helices of subunits B and L, which bracket the interface at which Docking 1 occurs, is ~50°. These subunits begin to rotate away from each other when the trajectory is initiated, and the angle between helices αA has increased to ~60° when Docking 1 is initiated (Figure 6C). At this point, there is a marked increase in the angle between the αA helices (to ~80°), where it remains for the rest of the trajectory (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig6-v3.jpg)
+
+**Figure 6.:** (A) Schematic showing the naming scheme used to identify subunits. The interhelix angle between axes of αA helices are used to measure the rotation of each hub domain with respect to the adjacent hub domain. (B) Variation of the angle between the axes of the αA helices of adjacent subunits in the simulation with the regulatory segment. The darker traces are the time-averaged values of the interhelix angles calculated using a moving window of 240 ns, while the lighter shades are the actual distances. The two interfaces where regulatory segments dock between subunits L and B (colored blue), and between subunits F and H (colored pink) open and the remaining interfaces close. In the lower ring the interfaces mirror the behavior of the interfaces in the upper ring. The interhelix angle between the αA helices of adjacent subunits from the crystal structure of an autoinhibited, dodecameric holoenzyme (PDB ID - 3SOA) (Chao et al., 2011), which is perfectly symmetrical, is indicated by the horizontal black line. (C) Variation in the angle between the axes of the αA helices of hub domains that flank the interfaces where the calmodulin-binding elements dock (shown in red), and the distance between a residue from the calmodulin-binding element and the interfacial β-sheet (shown in blue), over the course of the simulation. The darker traces are the time-averaged values, calculated using a moving window of 12 ns, while the lighter shades are the actual distances. The interhelix angle at the start of the simulation is indicated by a horizontal grey line.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Close-up of interface at which Docking 1 occurs, showing instantaneous snapshots from the end of the simulation overlaid with the start of the simulation, while aligning on the subunit to the right (subunit L). Subunit B (to the left) rotates away from subunit L over the course of the simulation. For clarity, only the hub domains are shown. (B) Hydrogen bond interactions between subunits B and L (same interface as (A)) at the start (top) and end (bottom) of the simulation. (C) Close-up of interface at which a regulatory segment does not dock, showing instantaneous snapshots from the end of the simulation overlaid with the start of the simulation, while aligning on the subunit to the right (subunit J). Subunit L (to the left) rotates toward from subunit J over the course of the simulation. For clarity, only the hub domains are shown. (D) Hydrogen bond interactions between subunits L and J (same interface as (C)) at the start (top) and end (bottom) of the simulation. The hydrogen bonds are intact in both the interface that opens and the interface that closes.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Mean probability distribution of r. m. s. deviation of the 12 hub domains from the simulation of the dodecamer with the regulatory segments and linkers present. The pale green shaded region indicates the standard deviation of the distribution of the r.m.s. deviation of the 12 hub domains. (B) Variation of the angle between the axes of αA helices of adjacent subunits in the simulation without the regulatory segments. The darker traces are the time-averaged values of the interhelix angles calculated using a moving window of 240 ns, while the lighter shades are the actual distances. In this simulation four interfaces in the lower ring open and the remaining two close (left), whereas in the upper ring two interfaces open and four close (right), indicating that the hub assembly is intrinsically highly dynamic. The angle between the axes of the αA helices of adjacent subunits from the crystal structure of an autoinhibited, dodecameric holoenzyme (PDB ID - 3SOA) (Chao et al., 2011), which is perfectly symmetrical, is indicated by the horizontal black line.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** For clarity, only the hub domains on either side of the interface (in white) and the calmodulin-binding element (in pink, with surface representation), are shown. The calmodulin-binding element was taken from subunit L, whose calmodulin-binding element docks at the interface between subunits B and L (Figure 5—figure supplement 2), from a snapshot at the end of the simulation. The model was built by aligning the hub domain of subunit L from a snapshot from the end of the simulation, onto the hub domain of subunit J, also taken from a snapshot at the end of the simulation. This positions the regulatory segment so that it can form backbone interaction with the edge of the inter-facial β-sheet of subunit J, similar to Docking 1. However, there are numerous steric clashes with the αD helix of subunit L on the left, and this interface would have to undergo considerable distortions to accommodate binding by the calmodulin-binding element.
 
 Subunits F and H, which bracket the interface where Docking 2 occurs, also rotate away from each other from the start of the simulation (Figure 6B). The angle between the αA helices at this interface increases from an initial value of ~50° to ~60° by 3 µs, when Docking 2 is initiated (Figure 6C), and then continues to increase over the rest of the simulation (Figure 6B). During the course of the simulation, the hub distorts from its normal circular shape to an oval shape, but it does not actually separate at any of the interfaces (Figure 6—figure supplement 1B D). This is because the large distortions at the two docking interfaces are compensated for by closure of the remaining interfaces (Figure 6, Figure 6—figure supplement 2B). Hydrogen bonds across the subunit interfaces are maintained, irrespective of whether an interface opens or closes (Figure 6—figure supplement 1B D). Nevertheless, given the large distortions in the geometry of the hub with respect to the crystal structure, the hub assembly may be destabilized as a consequence of the binding of just one or two regulatory segments. Alternatively, more than one regulatory segment might have to bind to promote disintegration of the hub. In the simulation, at interfaces where regulatory segments are not bound the interfacial grooves are constricted so that binding of the regulatory segments would be hindered substantially (Figure 6—figure supplement 3). This suggests that the binding of more than two regulatory segments to the hub would have to be accompanied by additional distortions and a loss of integrity of the hub assembly.
 
 The rotation between the subunits that bracket the docking interfaces is much larger in the simulation than that observed in any crystal structures of the hub, including those with peptides bound at interfaces (Bhattacharyya et al., 2016; Chao et al., 2011). In a structure of the hub assembly of CaMKII from the sea anemone Nematostella vectensis, the N-terminal portion of the linker preceding the hub folds back to interact with the hub (Bhattacharyya et al., 2016; Figure 5—figure supplement 2C). In this structure, as in the simulation, the linkers are incorporated as an additional strand of the interfacial β-sheet (Figure 5—figure supplement 2C). The N. vectensis hub assembly is slightly cracked, and it assumes a spiral, lock-washer conformation (Bhattacharyya et al., 2016). The interaction between the linker and the N. vectensis hub involves acidic residues in the linker interacting with acidic residues in the hub. This interaction is likely to be an artefact of the low pH of crystallization and neutralization of acidic residues (Bhattacharyya et al., 2016). In contrast, the interaction between the regulatory segment and the hub seen in the simulation involves favorable interactions between oppositely charged sidechains.
 
-## Regulatory segment docking appears to trap an intrinsic mode of distortion of the hub
+### Regulatory segment docking appears to trap an intrinsic mode of distortion of the hub
 
 It is striking that in the simulation a very similar distortion is seen at both docking sites, even though the register of the regulatory segment at one inter-subunit groove is offset by four residues with respect to the docking at the other inter-subunit groove (Figure 5—figure supplement 2C). This suggests that the distortion at the two docking sites reflects an intrinsic feature of the hub dynamics, one that does not depend on the details of the interaction with the peptide. In a 6 µs simulation of the hub without the regulatory segments, the hub assembly showed large structural excursions at interfaces between hub domains, including ones that are similar to those observed in the simulation of the hub with regulatory segments (Figure 6—figure supplement 2B). Large displacements of subunits were also seen in a short 100 ns simulation of the hub reported previously (Bhattacharyya et al., 2016).
 
@@ -100,13 +152,68 @@ We observed a striking similarity between the displacement seen in the molecular
 
 **Figure 7.:** (A) Conformational distortion in interfaces from the molecular dynamics simulation. The cartoon representations show the interfaces at the start of the simulation. Vectors (in pale pink) indicate the movement of the Cα-atoms of the hub domains to the left of the interfaces, with respect to the hub domains to the right of the interfaces, over the course the simulation. The interface at which Docking 1 (left) and Docking 2 (center) occur, open. One of the interfaces that closes is shown (right), and in this the hub domains to the left of the interface moves inwards, toward the interface. For clarity, only vectors from every other Cα-atom are shown. (B) Conformational change of interfaces in internal mode four from the normal mode analysis. The vectors (in pale pink) indicate the movement of the Cα-atoms of the hub domains to the left of the interfaces, with respect to the hub domains to the right of the interfaces, along the vector. Two of the interfaces (left and center) in internal mode four open, just as in the simulation, while the remainder (representative interface shown on right) close. For clarity, only vectors from every other Cα-atom are shown.
 
-## Activation-induced destabilization of CaMKII-α holoenzymes expressed in mammalian cells
+### Activation-induced destabilization of CaMKII-α holoenzymes expressed in mammalian cells
 
 We studied the effect of activation on the stability of the intact CaMKII-α holoenzyme expressed in mammalian cells, using TIRF microscopy and single-molecule analysis. We developed a cell-based assay that allowed us to rapidly isolate CaMKII-α after cell lysis, while reducing the heterogeneity that can result from proteolysis or the aggregation that occurs during purification (Bhattacharyya et al., 2020b). Briefly, CaMKII-α was tagged at the N-terminus with a biotinylation tag and mEGFP (Cormack et al., 1996; Zacharias et al., 2002) and overexpressed in HEK293T cells. The cells were lysed, and CaMKII-α was pulled down from the diluted cell-lysate onto a streptavidin-coated glass coverslip (Figure 8A). CaMKII-α is visualized on the glass slide as spots of fluorescence intensity in the GFP channel at 488 nm.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig8-v3.jpg)
+
+**Figure 8.:** (A) Schematic showing the experimental setup. Biotinylated mEGFP-CaMKII-α was overexpressed in HEK 293 T cells, the cells were lysed and mEGFP-CaMKII-α from the diluted cell lysate was either first activated, or directly pulled down onto a glass coverslip, functionalized with streptavidin, for visualization at single-molecule resolution. The fluorescence intensity of each individual mEGFP-CaMKII-α is correlated with its oligomeric state. (B) Distribution of the intensities for three replicates of unactivated (left) and activated (right) mEGFP-CaMKII-α. Two major peaks are observed, with a peak at lower intensity, and a peak at higher intensity. There is a shoulder in the peak at lower intensity, and together these correspond to a mixture of monomers and dimers, with the dimer intensities occurring in the shoulder. The peak at higher intensities corresponds to intact dodecameric holoenzymes. The intensity data were fit to a mixture comprising of monomers and dimers (red line) and the position of the peak corresponding to dodecamers was predicted (orange line). The majority of the area of the histogram is captured by these three components; however, there are oligomers of intermediate sizes also present. The residual plot shows the deviation from data with the fitted three-component distribution and shows the intermediate oligomeric species (between dimer and dodecamer). The percentage of the smaller, intermediate, dodecameric and aggregate species in the samples, as estimated from the fit are shown. Upon activation, the area of the peak at lower intensity rises, with a ~1.3–2-fold increase across three replicates, indicating that upon activation the holoenzyme undergoes some disassembly to form dimers. The percentage of intermediate oligomeric species also increases upon activation.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Step photobleaching analyses of mEGFP-CaMKII-α (top) and Hck (bottom). One-step, two-step and multiple-step traces are observed in mEGFP-CaMKII-α. Only one-step traces are observed in Hck. The one-step traces in both samples occur at similar intensities indicating that the lower intensity spots in mEGFP-CaMKII-α correspond to monomers. (B) Intensity distribution curves for activated mEGFP-CaMKII-α, activated F397A mEGFP-CaMKII-α and Hck indicate that the low-intensity peak observed in the CaMKII samples correspond to monomers, with the intensities that correspond to dimers appearing as a shoulder in the monomeric peak in the wild-type sample. In F397A mEGFP-CaMKII-α sample, the low-intensity peak can be clearly resolved into peaks corresponding to monomers and dimers. (C) Intensity distribution curves generated by convolving a log-normal intensity distribution curve from the monomeric species (see Materials and methods for a detailed description). The fit for peak at lower intensity for F397A mEGFP-CaMKII-α is shown, since this peak can clearly be resolved into monomeric and dimeric species. Here, two auto-convolutions of the log-normal distribution of the monomer yields the distribution for the dimeric species. The model curve generated by 12 convolutions matches the experimental intensity distribution curve, indicating that the peak at higher intensity corresponds to a dodecamer.
 
 The distribution of fluorescence intensities for all the samples has two major peaks, one at lower intensities and one at higher intensities (Figure 8B). Additionally, there is a shoulder in the lower intensity peaks in wild-type mEGFP-CaMKII-α (Figure 8B). Step photobleaching analyses and a comparison with the intensity distribution of mEGFP-Hck, a monomeric protein kinase, indicate that the peaks with lower fluorescence intensity correspond to CaMKII-α monomers, while the shoulder corresponds to CaMKII-α dimers (Figure 8—figure supplement 1A,1B). Some percentage of GFP is dark and so a fraction of the spots with intensities corresponding to monomeric species actually correspond to dimeric species. For spots with higher fluorescence intensity in the CaMKII-α samples, photobleaching does not result in clearly resolvable steps (Figure 8—figure supplement 1A).
 
 We estimated the number of subunits that comprise the peak at higher intensity by adapting the method described by Mutch et al., 2007, where the position of the intensity peak for an oligomer with N subunits can be determined by convolving the monomeric (log-normal) distribution peak with itself N times. We also estimated the contribution of dark GFP and accounted for this in our calculation of the position of the N-oligomer peak (see Materials and methods for more details). Approximately 30% of the GFP across all samples was found to be dark (Table 1), consistent with previous findings (Ulbrich and Isacoff, 2007). Here, we fit the peak at lower intensity to a model comprised of monomeric and dimeric species. We extracted the parameters for the underlying monomeric log-normal distribution from this fit and convolved it with itself 12 times, while accounting for dark EGFP, to predict the location and width of a peak comprising of dodecameric species. The predicted dodecamer intensity distribution corresponds well with the experimentally observed fluorescence intensity distribution of mEGFP-CaMKII-α (Figure 8B), indicating that this peak corresponds to predominantly dodecameric holoenzymes. From the fit, we were able to determine the percentage of smaller (monomeric and dimeric) species and larger, dodecameric species in the sample (Figure 8B).
+
+**Table 1.**
+ Estimated fraction of dark GFP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>NUs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unactivated WT 1</td>
+      <td>0.282</td>
+    </tr>
+    <tr>
+      <td>Activated WT 1</td>
+      <td>0.279</td>
+    </tr>
+    <tr>
+      <td>Unactivated WT 2</td>
+      <td>0.328</td>
+    </tr>
+    <tr>
+      <td>Activated WT 2</td>
+      <td>0.287</td>
+    </tr>
+    <tr>
+      <td>Unactivated WT 3</td>
+      <td>0.296</td>
+    </tr>
+    <tr>
+      <td>Activated WT 3</td>
+      <td>0.299</td>
+    </tr>
+    <tr>
+      <td>Unactivated FA</td>
+      <td>0.274</td>
+    </tr>
+    <tr>
+      <td>Activated FA</td>
+      <td>0.332</td>
+    </tr>
+  </tbody>
+</table>
 
 For unactivated mEGFP-CaMKII-α, the intensity distributions indicate the presence of a small population of monomers and dimers and a larger fraction of intact dodecameric holoenzymes (Figure 8B). We activated CaMKII-α in the diluted cell lysate with saturating amounts of Ca2+/CaM (5 µM) and ATP (10 mM), captured the activated CaMKII-α on a coverslip functionalized with streptavidin, and measured the distribution of fluorescence intensity of the imaged spots. These conditions have been shown previously to result in robust phosphorylation of CaMKII-α on Thr 286, with a lower amount of phosphorylation on Thr 305/Thr 306 (Bhattacharyya et al., 2020b).
 
@@ -114,7 +221,15 @@ The fluorescence intensity distribution for CaMKII-α, along with the modeled di
 
 Gel filtration experiments indicate that introduction of a mutation at the hub interface (F397A) leads to destabilization of the hub, with the release of dimers from the isolated hub (Bhattacharyya et al., 2016). We used single-molecule analysis to consider the effect of activation upon CaMKII-α stability when Phe 397 at the hub interface is mutated to alanine (F397A) (Figure 9A). The distribution at lower intensities for this sample has two clearly resolvable peaks that correspond to a pure dimer population with 30% dark GFP (Figure 9B). The unactivated sample of this mutant form has a much larger percentage of smaller species when compared to any of the wild-type samples (Figure 9B, Figure 9—figure supplement 1). Upon activation, the peak corresponding to intact holoenzymes is no longer observed (Figure 9, Figure 9—figure supplement 1), suggesting that the activation leads to complete destabilization of the CaMKII F397A variant holoenzyme.
 
-## Conclusions
+![Figure 9.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig9-v3.jpg)
+
+**Figure 9.:** (A) Crystal structure of human dodecameric CaMKII-α hub assembly (PDB ID – 5IG3) (Bhattacharyya et al., 2016) with the interface high-lighted. Replacement of Phe 397 at the hub interface with alanine weakens this interface. (B) Distribution of the intensities of unactivated (left) and activated (right) F397A mEGFP-CaMKII-α. At lower intensity, peaks corresponding to monomeric and dimeric species are observed. In the unactivated sample the peak at higher intensity, that corresponds to intact dodecameric holoenzyme is much smaller than in the wild-type sample. Upon activation this peak is no longer observed. As in the experiments with wild-type CaMKII-α, the intensity data were fit to a mixture comprising of monomers and dimers (red line) and the position of the peak corresponding to dodecamers was predicted (orange line). The residual plot shows the deviation from data with the fitted three-component distribution and shows the intermediate oligomeric species (between dimer and dodecamer). The percentage of the smaller, intermediate, dodecameric and aggregate species in the samples, as estimated from the fit, are shown.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/57784/elife-57784-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** These data were collected with a 12-bit camera, and the intensities were rescaled to 16-bits to be consistent with data reported in Figures 8 and 9. For these samples, the particles were localized with the Difference of Gaussian detector with an initial diameter set to five pixels. A threshold value of 150 was used to exclude noisy, low-intensity spots. Only particles within a central area of 350 × 350 pixel2 were included in the calculation. Dark images were not collected, and the correction for uneven illumination and fringe interference effects were not done for these samples. However, both replicates qualitatively agree with the results shown in Figure 9. In both the replicates, the unactivated sample has a large peak at lower intensity that corresponds to a mixture of monomeric and dimeric species. A peak at higher intensity that corresponds to intact dodecameric holoenzymes is observed. Upon activation the area of the peaks at lower intensities in both replicates increases, while the peak at higher intensity is not observed.
+
+### Conclusions
 
 The unusual oligomeric organization of CaMKII, in which 12 or more kinase domains are arranged around a central hub, is coupled to a mechanism involving phosphorylation-mediated acquisition of constitutive activity that is also unique. When unphosphorylated, CaMKII is dependent on Ca2+/CaM for kinase activity. Once phosphorylated at Thr 286, CaMKII subunits acquire calmodulin-independent activity (autonomy). Thr 286 phosphorylation must necessarily occur in trans, with one kinase subunit phosphorylating another. Efficient Thr 286 phosphorylation occurs only within a holoenzyme (De Koninck and Schulman, 1998), with the enzyme-kinase and substrate-kinase being tethered to the same hub at high local concentrations. This feature makes subunit exchange potentially important for spreading the activation of CaMKII, since it provides a means for activated subunits to enter into holoenzymes that have not yet been activated and thereby produce more activated subunits by trans-phosphorylation (Stratton et al., 2014).
 
@@ -128,15 +243,249 @@ Subunit exchange in CaMKII has been proposed originally as a mechanism whereby t
 
 ## Materials and methods
 
-## Preparation of plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>CAMK2N1</td>
+      <td>GenBank</td>
+      <td>HGNC:HGNC:1460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0014</td>
+      <td>Chemically competent</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>UC Berkeley cell culture facility</td>
+      <td></td>
+      <td>Authenticated using STR profiling and tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1 (plasmid)</td>
+      <td>Clontech, Mountain View, CA</td>
+      <td></td>
+      <td>Vector backbone for inserting the CaMKII genes</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSNAPf (plasmid)</td>
+      <td>New England Biolabs, MA</td>
+      <td>N9183S</td>
+      <td>Vector backbone</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEGFP-C1-Avi-mEGFP-CaMKII</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pEGFP-C1 vector was modified to have a biotinylation sequence followed by a linker at the N-terminus of mEGFP. Full-length human CaMKII-α is at the C-terminus of mEGFP.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pET21a-BirA</td>
+      <td>Addgene</td>
+      <td># 20857</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pcDNA3.1</td>
+      <td>Addgene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET 28-6xHis-precission- CaMKII Hub</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET-28 vector was modified to contain a PreScission Protease site between the N-terminal 6-histidine tag and the Human CaMKII-α hub coding sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSNAPf- BirA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>BirA was cloned into the pSNAPf vector after removing the SNAP-tag.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide A (LKKFNARRKLKGAILTTMLA)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide B (AILTTMLATRNFSGGKSGGNKK)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide C (LKEFNAERKLEGAILTTMLA)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide D (LKKFNARRKLKGAGSGSGSAC)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide G (RSTVASCMHRQETVDCLKKFNA)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide F (LKKFNARRKLKGAILGSMLAC)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide H, CaMKIINTide (KRPPKLGQIGRSKRVVIEDDRIDDVLK)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide Aphos(LKKFNARRKLKGAILpTTMLA)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Peptide Bphos(AILpTTMLATRNFSGGKSGGNKK)</td>
+      <td>Elim Biopharm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Poly-L-lysine PEG (PLL:PEG)</td>
+      <td>SuSoS, Dübendorf, Switzerland</td>
+      <td>PLL(20)-g[3.5]- PEG(2)</td>
+      <td>Preparation of flow chambers</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>streptavidin</td>
+      <td>Sigma-Aldrich</td>
+      <td>S0677</td>
+      <td>Functionalize the glass substrates for capturing biotinylated CaMKII</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Calmodulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4874</td>
+      <td>Activation of CaMKII</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG-Biotin</td>
+      <td>SuSoS, Dübendorf, Switzerland</td>
+      <td>PLL(20)-g[3.5]- PEG(2)/PEG(3.4)- biotin(50%)</td>
+      <td>Preparation of flow chambers</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1% protease inhibitor cocktail</td>
+      <td>Sigma</td>
+      <td>P8340</td>
+      <td>Protease inhibitor cocktail for lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.5% phosphatase inhibitor cocktail 2 and 3</td>
+      <td>Sigma</td>
+      <td>P0044 and P5726</td>
+      <td>Phosphatase inhibitor cocktails for lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI (ImageJ)</td>
+      <td>Open access software, see https://imagej.net/Fiji/Downloads</td>
+      <td></td>
+      <td>Image processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>In-house python code</td>
+      <td>Open access, see, See Figure 8 and 9 Figure 8—source code 1</td>
+      <td></td>
+      <td>Image processing</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sticky-Slide VI 0.4</td>
+      <td>Ibidi</td>
+      <td>80608</td>
+      <td>Flow chambers</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass coverslips</td>
+      <td>Ibidi</td>
+      <td>10812</td>
+      <td>functionalized substrates</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mass spectrometry data acquisition</td>
+      <td>Software MassLynx 4.1 SCN 957</td>
+      <td></td>
+      <td>Data collected on a Waters SYNAPT G2Si Mass spectrometer. Version 4.1 SCN 957 or later required to process data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>500 nm opening borosilicate emitters</td>
+      <td></td>
+      <td></td>
+      <td>Generated in the lab with a tip puller</td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of plasmids
 
 For the mass spectrometry analyses, the human CaMKII-α hub domain (Uniprot_ID: Q9UQM7, residue 345–475) was cloned into a pET-28 vector (Novagen) that was modified to contain a PreScission Protease (Pharmacia) site between the N-terminal 6-histidine tag and the coding sequence, before being expressed in E. coli. For the single-molecule analyses, the pEGFP-C1 vector was modified to contain a biotinylation sequence (Avitag, GLNDIFEAQKIEWHE) followed by a linker (GASGASGASGAS) at the N-terminus of mEGFP. Full-length human CaMKII-α (Uniprot_ID: Q9UQM7) was cloned into this vector backbone (Clontech), at the C-terminus of mEGFP, with a linker sequence (PreScission protease site: LEVLFQGP) separating the mEGFP tag from the coding sequence of CaMKII-α, before being overexpressed in mammalian cells (Bhattacharyya et al., 2020b). This construct was then used as a template to produce a CaMKII-α variant (CaMKII-α-F397A). pET21a-BirA, which carries the E. coli biotin protein ligase sequence, was a gift from Alice Ting (Addgene plasmid # 20857). BirA was cloned into the pSNAPf vector (New England Biolabs) after modifying the vector to remove the SNAP-tag. All constructs with insertions and deletions were made using standard protocols for Gibson assembly (New England Biolabs). All point mutants used were generated using standard Quikchange protocols (Agilent Technologies).
 
-## Expression and purification of CaMKII-α hub
+### Expression and purification of CaMKII-α hub
 
 Human CaMKII-α hub domain was expressed in E. coli and purified as previously described (Bhattacharyya et al., 2016). Briefly, CaMKII-α hub protein expression was carried out in E. coli BL21 cells. Cells were induced by the addition of 1 mM isopropyl β-D-1-thiogalactopyranoside at an optical density of 0.7–0.8 and grown overnight at 18°C. Cell pellets were resuspended in Buffer A (25 mM Tris, pH 8.5, 150 mM potassium chloride, 1 mM DTT, 50 mM imidazole, and 10% glycerol) and lysed using a cell homogenizer. The cell lysate was filtered through a 1.1 micron glass fiber prefilter (ThermoFisher). The filtered lysate was loaded onto a 5 mL Ni-NTA column and eluted with Buffer B (25 mM Tris, pH 8.5, 150 mM potassium chloride, 1 mM DTT, 0.5 M imidazole, and 10% glycerol). The eluate was desalted using a HiPrep 26/10 desalting column into Buffer A with 10 mM imidazole, and cleaved with PreScission protease (overnight at 4°C). The cleaved samples were loaded onto a Ni-NTA column, the flow through was collected, concentrated and purified further using a Superose six gel filtration column equilibrated in gel filtration buffer (25 mM Tris, pH 8.0, 150 mM KCl, 1.0 mM tris(2-carboxyethyl)phosphine [TCEP] and 10% glycerol). Fractions with pure protein were pooled, concentrated and stored at −80°C. All purification steps were carried out at 4°C, and all columns were purchased from GE Healthcare (Piscataway, NJ).
 
-## Electrospray ionization mass spectrometry
+### Electrospray ionization mass spectrometry
 
 Stock solutions of CAMKII-α hub were buffer-exchanged into 1 M ammonium acetate using a Bio-Spin column (Bio-Spin 6, Bio-Rad Laboratories, Inc, Hercules, CA). 10 mM stock solutions of different regulatory segment-derived unphosphorylated and phosphorylated peptides were prepared by dissolving the lyophilized powder in ddH2O. All peptides used in this study were purchased from Elim Biopharm, Hayward, CA. The hub and peptide were mixed such that final concentrations in the reaction mix contained 120 µM CaMKII-α hub (subunit concentration) and 1 µM to 1 mM of the peptide, with a constant ionic strength of ~400 mM of ammonium acetate. This reaction mix was incubated for 5 min at room temperature before analysis by electrospray ionization mass spectrometry. In experiments of the hub incubated with phosphorylated peptides, the mass spectra obtained comprised predominantly of smaller oligomeric species and aggregates. Therefore, the last incubation step was eliminated, and the sample was introduced into the mass spectrometer as soon as the hub was mixed with the phosphorylated peptide. As a control experiment, 120 µM of CaMKII-α hub in 400 mM ammonium acetate was also incubated for five minutes at room temperature and analyzed using electrospray ionization mass spectrometry.
 
@@ -144,11 +493,11 @@ Mass spectra were acquired on a Waters SYNAPT G2-Si mass spectrometer (Waters, M
 
 To minimize collisional activation of the ions, a relatively low-sample cone voltage (50 V) and low-source temperature (80°C) were used. The voltages of collisional induced dissociation cells (both Trap and Transfer cells) were set at 2 V, a value at which no gas-phase dissociation of the protein complex was observed. Mass spectral data were smoothed using the Savitsky-Golay smoothing algorithm, available via the Waters MassLynx software, with a smoothing window of 100 m/z (mass-to-charge ratio). For all experiments, the mass spectral results were continuously recorded as long as protein signals were observed. Mass spectra of the hub incubated with peptides were generated by averaging the scans for specific time segments after the initiation of electrospray ionization. These times correspond to the start of the mass spectrometry data acquisition and do not include the initial incubation time.
 
-## Analytical gel filtration chromatography
+### Analytical gel filtration chromatography
 
 For analytical gel filtration chromatography, stock solution of CAMKII-α hub was diluted to 120 µM (subunit concentration) in 1 M ammonium acetate to maintain the same conditions with mass spectrometry. 10 mM stock solution of Peptide A was prepared by dissolving the lyophilized powder in ddH2O. The hub and peptide were mixed in 1M ammonium acetate to achieve final concentrations of 120 µM CaMKII-α hub (subunit concentration) and 500 µM of the peptide. This reaction mix was incubated for 15 min at room temperature before loading onto the gel filtration column. Samples (hub alone or hub+peptide) were loaded onto a Superose 6 10/300 column (10/300 GL; GE Healthcare) equilibrated with 1M ammonium acetate at pH 7, at a flow rate of 0.5 ml/min (Prominence UFLC, Shimadzu).
 
-## System preparation for molecular dynamics simulations
+### System preparation for molecular dynamics simulations
 
 For the long-timescale simulations, we built a dodecameric hub assembly by first building a model of a vertical dimer of hub domains connected to the regulatory segments by unstructured linkers. We ran short simulations of this structure while holding the hub domains fixed and allowing the linkers and regulatory segments to sample various conformations. We used instantaneous structures from these short simulations to build the dodecameric hub assembly with linkers and regulatory segments, to ensure that the simulation started with the regulatory segments in a variety of conformations at varying distances from the hub assembly.
 
@@ -162,31 +511,31 @@ A second system comprising of the dodecamer hub assembly only, without the linke
 
 The energies of both systems were minimized first while holding the protein fixed, then while allowing all the atoms to move. The two systems were then equilibrated at constant pressure (1 atm) and temperature (300 K) for 5 ns. The NAMD package was used to run the minimization and equilibration simulations (Phillips et al., 2005) with the CHARMM36 force field (Best et al., 2012). The velocity Verlet algorithm was used to calculate the trajectories of the atoms. A time step of 2 fs was used. Particle Mesh Ewald was used to calculate long-range electrostatic interactions, with a maximum space of 1 Å between grid points (Darden et al., 1993). Long-range electrostatics were updated at every time step. Van der Waal’s interactions were truncated at 12 Å. Hydrogen atoms bonded to the heavy atoms were constrained using the ShakeH algorithm (Ryckaert et al., 1977). Temperature was controlled with Langevin dynamics with a damping coefficient of 4/ps, applied only to non-hydrogen atoms. Pressure was controlled by the Nose-Hoover method with the Langevin piston, with an oscillation period of 200 fs and a damping time scale of 50 fs (Martyna et al., 1994; Feller et al., 1995).
 
-## Anton simulation protocols
+### Anton simulation protocols
 
 Production runs for both systems were carried out on Anton2 (Shaw et al., 2014). The restart files from the end of the equilibration stage were converted to the Desmond format (Bowers et al., 2006) using the VMD (Humphrey et al., 1996). The CHARMM param36 force field (Best et al., 2012) was used through the Viparr utility of Anton2 (Shaw et al., 2014). A time step of 2 fs was used. The multigrator integration method (Lippert et al., 2013) was used to generate the trajectories while using the Nose-Hoover thermostat to maintain temperature at 300 K and the MTK barostat to maintain pressure maintain pressure at one atm (Lippert et al., 2013). Coordinates were saved every 0.24 ns. The coordinate trajectories were converted to the NAMD DCD format using VMD (Humphrey et al., 1996).
 
 The angle between the αA helices (residues 341–363) of adjacent subunits were calculated using the CHARMM package (Brooks et al., 2009). The r. m. s. deviation for each hub domain over the course of the simulation of the dodecamer with the regulatory segment and linkers present was calculated with the AmberTools18 package (Case et al., 2018), using residues 340–470 of the hub domain while fitting to the structure of the hub at the start of the simulation.
 
-## Normal mode analysis
+### Normal mode analysis
 
 The hub assembly (residues 340:470) from the structure of the dodecameric autoinhibited CaMKII-α (PDB ID – 3SOA) was used for normal mode analysis. The elNémo server was used for the analysis with a minimum and maximum perturbation of 400, a step-size of 16 and a residue-block size of 8 (Suhre and Y.-H. Suhre and Sanejouand, 2004a; Suhre and Sanejouand, 2004b). The displacement vectors were displayed using the modevectors script in PyMOL (Schrödinger, LLC, 2015).
 
-## Tissue culture and DNA transfection
+### Tissue culture and DNA transfection
 
 HEK 293 T cells (UC Berkeley cell culture facility) were grown in DMEM (Dulbecco's Modified Eagle Medium + GlutaMaX, ThermoFisher) supplemented with 10% fetal bovine serum (FBS), 1X antibiotic–antimycotic reagent (ThermoFisher) and 20 mM HEPES buffer and maintained at 37°C under 5% CO2. CaMKII-α variants were transiently transfected using the standard calcium phosphate protocol. Briefly, calcium phosphate/DNA coprecipitate was prepared by combining CaMKII-α plasmids with 5 μg of empty pcDNA3.1 vector and 1 μg of BirA plasmid. The mixture was then diluted with 10X ddH2O, and CaCl2 was added such that the final CaCl2 concentration is 250 mM. This mixture was incubated for 15 min. One volume of this 2X calcium phosphate/DNA solution was added to an equal volume of 2X HEPES-buffered saline (HBS) (50 mM HEPES, 280 mM NaCl, 1.5 mM Na2HPO4, pH 7.1) and the solution was mixed thoroughly by reverse pipetting. This mixture was then added to HEK 293 T cells and the cells were allowed to express the protein for 18–20 hr, before the protein was harvested.
 
-## Preparation of flow cells for single-molecule microscopy
+### Preparation of flow cells for single-molecule microscopy
 
 All single-molecule experiments were performed in flow chambers (sticky-Slide VI 0.4, Ibidi) that were assembled with functionalized glass substrates. The glass substrates (coverslips, Ibidi) were first cleaned using 2% Hellmanex III solution (Hellma Analytics) for 30 min, followed by a 30 min sonication in 1:1 mixture (vol/vol) of isopropanol:water. The glass substrates were then dried with nitrogen and cleaned for another 5 min in a plasma cleaner (Harrick Plasma PDC-32 G). These cleaned glass substrates were used to assemble the flow chambers immediately after plasma cleaning. After assembly, the glass substrates were treated with a mixture of Poly-L-lysine PEG and PEG-Biotin (1000:1, both at 1 mg/mL) for 30 min (SuSoS). The glass substrates were then washed with 2 mL of phosphate-buffered saline (PBS). Streptavidin was added to these glass substrates at a final concentration of 0.1 mg/mL and incubated for 30 min. Following incubation, excess streptavidin was washed away using 2 mL of PBS and these assembled flow chambers were used for all our single-molecule experiments.
 
-## Cell lysis and pulldown of biotinylated CaMKII-α in flow chambers
+### Cell lysis and pulldown of biotinylated CaMKII-α in flow chambers
 
 The co-expression of the E. coli biotin ligase, BirA, with the CaMKII-α variants bearing an N-terminal Avitag, results in the biotinylation of the Avitag in HEK 293 T cells. After harvesting, the cells were lysed in a lysis buffer (25 mM Tris at pH 8, 150 mM KCl, 1.5 mM TCEP-HCl, 1% protease inhibitor cocktail (P8340, Sigma)), 0.5% phosphatase inhibitor cocktails 2 (P0044, Sigma) and 3 (P5726, Sigma), 50 mM NaF, 15 μg/ml benzamidine, 0.1 mM phenylmethanesulfonyl fluoride and 1% NP-40 (ThermoFisher).
 
 The cell lysate was diluted in the gel filtration buffer (same recipe as above, but without glycerol). mEGFP-CaMKII-α in the diluted cell lysate was activated by incubating the lysate with an activation buffer containing 5 μM CaM, 100 μM CaCl2, 10 mM ATP and 20 mM MgCl2 (final concentrations in the reaction) for 60 min at room temperature. For the unactivated sample, the 60-min incubation was carried out in gel filtration buffer without the addition of any components of the activation buffer. For both the activated and unactivated samples, 100 μL of the diluted cell lysate was added to a well in the flow chamber. After incubation for 1 min, the diluted cell lysate was washed out with 1 mL of PBS. During this incubation, the biotinylated mEGFP-CaMKII-α variants were immobilized on the surface of the functionalized glass substrates, via the streptavidin-biotin interaction.
 
-## Single-molecule total internal reflection fluorescence (TIRF) microscopy
+### Single-molecule total internal reflection fluorescence (TIRF) microscopy
 
 Single-particle total internal reflection fluorescence (TIRF) images were acquired on a Nikon Eclipse Ti-inverted microscope equipped with a Nikon 100 × 1.49 numerical aperture oil-immersion TIRF objective, a TIRF illuminator, a Perfect Focus system, and a motorized stage. Images were recorded using an Andor iXon electron-multiplying CCD camera. The sample was illuminated using the LU-N4 laser unit (Nikon) with solid-state lasers for the channels emitting at wavelengths of 488 nm, 561 nm and 640 nm. Lasers were controlled using a built-in acousto-optic tunable filter. A 405/488/561/638 nm Quad TIRF filter set (Chroma Technology Corp.) was used along with supplementary emission filters of 525/50 m, 600/50 m, 700/75 m for the 488 nm, 561 nm and 640 nm channels, respectively. Image acquisition was performed with the automated change of illumination and filter sets, at 75 different positions from an initial reference frame, so as to capture multiple non-overlapping images, using the Nikon NIS-Elements software. mEGFP- CaMKII-α was imaged by illuminating the 488 nm laser set to 5.2 mW. Images for all the mEGFP-CaMKII-α variants were acquired using an exposure time of 80 ms, while keeping the laser power unchanged over all conditions.
 
@@ -194,15 +543,25 @@ To correct for the baseline clamp and dark current, a series of dark images were
 
 For photobleaching experiments, the GFP-fluorescence signal was recorded in a stream acquisition mode, with an exposure time of 80 ms, under the same conditions as described above. As a control, the intensities and photobleaching traces of mEGFP-Hck, a monomeric protein kinase, were also collected under the same conditions.
 
-## Analyses of single-molecule TIRF data
+### Analyses of single-molecule TIRF data
 
 Individual single particles of mEGFP-CaMKII-α were detected and localized using the single particle tracking plugin TrackMate in ImageJ (Jaqaman et al., 2008). The particles were localized with the Laplacian of Gaussian detector with an initial diameter set to 6 pixels. A threshold value of 300 was used to exclude noisy, low-intensity spots. To eliminate the effects of variation in resolution at the edges of the field due to heterogenous TIRF illumination, only particles within a central area of 400 × 400 pixel2 were included in the calculation. The intensity distributions for single particles of mEGFP-CaMKII-α (488 nm) were determined using custom in-house software written in Python. The total intensity values acquired from TrackMate for the 488-channel were adjusted by subtracting the local median background intensity for each spot (scaled by the spot area) to produce an intensity histogram for all the mEGFP-CaMKII-α spots.
 
 For the analysis of the GFP step-photobleaching data, the photobleaching traces for each spot were built by plotting the maximum intensities of mEGFP-CaMKII-α as a function of time with MATLAB. The number of single photobleaching events were counted manually by inspecting the photobleaching trace for every spot. Single-step and two-step bleaching traces were clearly identified, but multistep photobleaching traces exhibited relatively unclear, distinct bleaching events. We therefore categorized the bleaching traces into single-step, two-step, and multi-step photobleaching. A similar analysis was used for mEGFP-Hck, which exhibited only single step traces.
 
-## Determination the composition of oligomeric species in the intensity distributions
+### Determination the composition of oligomeric species in the intensity distributions
 
-The intensity distribution of monomeric GFP species is lognormal when detected on an EMCCD camera, and is given bypMx;μ,σ=1xσ2πe-(ln⁡x-μ)22σ2where x is the integrated intensity of a spot, µ is the mean of the underlying normal variable and σ is its standard deviation. Given a monomer distribution, the intensity distribution for a species with N subunits can be determined by convolving the intensity distribution of the monomer with itself N times (Mutch et al., 2007). An oligomer may have some dark GFP leading to a different intensity distribution than expected, and the dark fraction (ν) can be used to predict the extent to which this occurs. This was done by sampling pM finely, converting it to a probability mass function (pmf) and settingpMpmfx=0=ν
+The intensity distribution of monomeric GFP species is lognormal when detected on an EMCCD camera, and is given by
+
+$$
+p_{M}x;\mu,\sigma=\frac{1}{x\sigma\sqrt{2\pi}}e^{\frac{-(ln⁡x-\mu)^{2}}{2\sigma^{2}}}
+$$
+
+where $x$ is the integrated intensity of a spot, µ is the mean of the underlying normal variable and σ is its standard deviation. Given a monomer distribution, the intensity distribution for a species with N subunits can be determined by convolving the intensity distribution of the monomer with itself N times (Mutch et al., 2007). An oligomer may have some dark GFP leading to a different intensity distribution than expected, and the dark fraction (ν) can be used to predict the extent to which this occurs. This was done by sampling $p_{M}$ finely, converting it to a probability mass function (pmf) and setting
+
+$$
+p_{M}^{pmf}x=0=ν
+$$
 
 Subsequent convolutions of this modified probability mass function carry the effect of the dark GFP. The probability mass function was then reconverted back to a density function.
 

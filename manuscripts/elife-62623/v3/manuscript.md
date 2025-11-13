@@ -32,9 +32,33 @@ In this study, we performed a non-biased, systematic PiXie analysis of VemP and 
 
 ## Results
 
-## In vivo crosslinking reveals interaction of a VemP nascent polypeptide with Ffh and PpiD as well as uL22 and translocon
+### In vivo crosslinking reveals interaction of a VemP nascent polypeptide with Ffh and PpiD as well as uL22 and translocon
 
 VemP is a Sec-monitoring substrate in V. alginolyticus that monitors cellular protein secretion activity via its own translation arrest (Ishii et al., 2015). To identify proteins interacting with a VemP nascent polypeptide, we conducted a systematic PiXie analysis by expressing in E. coli a series of VemP-3xFLAG-Myc (VemP-F3M) derivative having pBPA at various positions. We distinguished three VemP species, arrested polypeptide having unprocessed signal sequence (AP-un), arrested polypeptide whose signal sequence has been proteolytically processed (AP-pro), and the full-length mature protein (FL-m) (Mori et al., 2018) based on their mobilities on SDS-PAGE (Figure 1). The site of the pBPA-introduction varied from the position for the Leu-9 to the one for Phe-131. In growing cells, VemP was initially produced as the arrested forms, which were converted to FL-m with a half-life of ~0.5 min (Mori et al., 2018). To follow the interaction profiles in this rapid process, we used the PiXie method (Miyazaki et al., 2018) (See Materials and methods), which indeed revealed the pBPA-dependent generation of higher molecular mass bands (indicated by colored arrow-heads) indicative of the formation of crosslinked products (XLs) (Figure 1—figure supplement 1A,B). To identify factors physiologically interacting with VemP during its biogenesis process, we focused on XLs that gradually decreased during the chase periods (see the next section). For instance, we eliminated an XL of ~150 kDa, observed for the VemP(L40pBPA) variant, for the further analysis, because, while immunoprecipitatable with an anti-SecA antibody (Figure 1—figure supplement 2A), it remained stable during the chase periods, in sharp contrast to other XLs observed for VemP derivatives having a pBPA at position either 56 or 124 (Figure 1—figure supplement 2B and see the next section). The XL of ~150 kDa would represent the adduct between SecA and VemP, but not reflect physiological interactions that occur during translocation of VemP.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig1-v3.jpg)
+
+**Figure 1.:** (A) Summary of proteins crosslinked with VemP in the arrested state. Colored circles represent the positions at which crosslinking with the indicated proteins was observed in B–F. Dashed red line shows the positions at which cross-linking with PpiD was detected in Figure 1—figure supplement 1. (B–F) PiXie analysis of VemP. Wild type E. coli cells were used in B and C. E. coli cells expressing SecY-His10, Ffh-His10, or PpiD-His10 from the chromosome were used in D, E and F, respectively. Wild type cells were used as negative controls in D, E and F. Cells were grown, induced to express a VemP-F3M derivative and pulse-labeled with [35S]Met for 30 s, followed by 30 s-chase as described in Materials and methods. Cells were UV-irradiated for 1 s and immediately acid-treated. Labeled proteins were subjected to immunoprecipitation (IP) or pull-down (PD) with Ni-NTA agarose, separated by SDS-PAGE and analyzed by phosphorimaging. The result shown is a representative of two independent experiments that were conducted using the same transformants (i.e. two technical replicates). Asterisks represent crosslinked dimers of VemP-F3M. An enlarged view around Trp-124 of VemP in a VemP-stalled ribosome complex (PDB:5nwy; Su et al., 2017) is shown in B, left.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Systematic PiXie analysis of VemP. Cells were grown as described in Materials and methods, induced with 1 mM IPTG for 15 min to express VemP-F3M derivatives with pBPA at the indicated position, pulse-labeled with [35S]Met for 30 s, and chased for 30 s with excess unlabeled Met. The cells were then UV-irradiated for 1 s. Total cellular proteins were acid-precipitated and subjected to immunoprecipitation (IP) with an anti-VemP antibody. Immuno-isolated proteins were separated by SDS-PAGE and analyzed by phosphorimaging. The result shown is a representative of two technical replicates. Crosslinked products (XLs) that are classified from their apparent sizes on SDS-PAGE and identified partner proteins (See Figure 1 and Figure 1—figure supplements 2–5) are marked by arrowheads with different colors. (B) Summary of the crosslinked proteins and their positions of crosslinking. A schematic picture of the VemP polypeptide in the arrested state is presented with the residue numbers. The positions of the crosslinking to each protein are represented as circles with the same colors as in A.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) VemPxSecA XLs. Celle were grown, induced to express a VemP-F3M derivative with pBPA at the indicated position (WT indicates the protein with no pBPA), pulse-chased, and UV-irradiated as in Figure 1. Labeled proteins were subjected to IP with indicated antibodies and analyzed as in Figure 1. XLs with SecA and PpiD are marked by open-black and filled-red arrowheads, respectively. The result shown is a representative of two technical replicates. (B) PiXie analysis of XLs. Cells were grown, induced to express a VemP-F3M derivative with pBPA at the indicated position (WT indicates the protein with no pBPA) pulse-labeled and chased as in Figure 1. At the indicated time points in the chase period, cells were UV-irradiated for 1 s and then acid-treated. Labeled proteins were subjected to IP with the anti-VemP antibody. Isolated proteins were analyzed as in Figure 1. XLs with SecA, PpiD, and uL22 are marked by open-black, filled-red and filled-green arrowheads, respectively. The result shown is a representative of two technical replicates.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) VemPxSecG XLs. (B) VemPxPpiD XLs. The cells of the indicated strains were grown, induced to express a VemP-F3M derivative with pBPA at the indicated position (WT indicates the protein with no pBPA), pulse-chased, and UV irradiated as in Figure 1. Labeled proteins were subjected to IP with indicated antibodies and analyzed as in Figure 1. The result shown is a representative of two technical replicates. Asterisks in A and B represent crosslinked dimer forms of VemP-F3M.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A–D) VemP PiXie analysis in cells expressing His10-tagged proteins. E. coli strains, RM2834 (expressing SecY-His10 from the chromosome, A), RM2831 (Ffh-His10, B), and RM2935 (YidC-His10,C) were constructed (see Materials and methods) and used. The cells of the indicated strains were grown, induced to express a VemP-F3M derivative with pBPA at the indicated position and analyzed by the PiXie methods as described in Figure 1. Labeled proteins were subjected to IP with an anti-VemP antibody (upper gel) or pull-down with Ni-NTA agarose (lower gel). Immuno-isolated proteins were analyzed as in Figure 1. (D) secD1 mutant cells over-expressing His10-SecD/F were grown and induced to express a VemP-F3M derivative with pBPA at the indicated position and analyzed by PiXie as in Figure 1. Labeled proteins were subjected to IP with the anti-VemP antibody (upper gel) or pull-down with Ni-NTA agarose (lower gel). Immuno-isolated proteins were analyzed as in Figure 1. The result shown is a representative of two technical replicates. Asterisks in A–D represent crosslinked dimer forms of VemP-F3M.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** The cells of the indicated strains were grown, induced to express a VemP-F3M derivative with pBPA at the indicated position (WT indicates the protein with no pBPA), and analyzed by PiXie as in Figure 1. Labeled proteins were subjected to IP with the indicated antibodies or pull-down with Ni-NTA agarose. Immuno-isolated proteins were analyzed as in Figure 1. The result shown is a representative of two technical replicates. The VemP XLs with PpiD, uL22, SecG, SecY-His10, and Ffh-His10 are marked by triangles colored in red, green, pale blue, blue, and violet, respectively. Asterisks presumably represent crosslinked dimer forms of full-length VemP-F3M.
 
 An XL of ~30 kDa, observed for the VemP(W124pBPA) variant, was immunoprecipitatable with an anti-uL22 antibody (Figure 1B, right). The proximity of Trp-124 to uL22 in vivo is consistent with a recent cryo-EM study showing that Trp-124 of arrested VemP is positioned close to the ribosomal protein uL22 (Figure 1B, left) (Su et al., 2017). VemP(F81pBPA) and VemP(T83pBPA) generated XLs of ~25 kDa. We envisioned that the crosslinked partner could either be SecE (~14 kDa) or SecG (~12 kDa), small components of the translocon, because VemP engages in the Sec-dependent translocation (Mori et al., 2018). We reasoned that these XLs contained SecG because they reacted with an anti-SecG antibody (Figure 1C and Figure 1—figure supplement 3A) and disappeared in the ΔsecG strain (VemP(F81pBPA); Figure 1—figure supplement 3A). To investigate possible crosslinking with SecY, the main component of the translocon, we used a host strain having a chromosomal secY-his10 gene. We detected the SecYxVemP XLs for the VemP derivatives having pBPA in a middle region (Arg-74, Asp-76, Leu-78, Asn-82, and Trp-86) of VemP among materials pulled-down by polyhistidine affinity isolation (Figure 1D and Figure 1—figure supplement 4A). Thus, the middle region of the newly synthesized VemP chain contacts the translocon.
 
@@ -44,27 +68,71 @@ Placement of pBPA at the C-terminal vicinity of the signal sequence (residue 30 
 
 None of the VemP XLs with uL22, Ffh, SecG, SecY, and PpiD described above were immunoprecipitated with the anti-FLAG antibody (Figure 1—figure supplement 5), indicating that the VemP component in these XLs lacks the C-terminal tag and, therefore, are in the elongation-arrested state. It follows then that each of the partner proteins binds to the nascent VemP'-tRNA tethered to the ribosome. In addition to the above XLs, we observed ~37 kDa XLs with a number of VemPpBPA derivatives (Figure 1—figure supplement 1), some of which proved to be immunoprecipitable with the anti-FLAG antibody (Figure 1—figure supplement 5). We interpret that these ~37 kDa XLs represent dimer forms of FL-m generated in the periplasm. Thus, we did not analyze these XLs any further. Although some of other XLs shown in Figure 1—figure supplement 1 could represent VemP-crosslinking with still un-identified cellular factors involved in the arrest/cancelation process of VemP, we did not conduct further analysis in this study. Figure 1A summarizes the crosslinking features of nascent VemP polypeptide.
 
-## The VemP nascent polypeptide interacts sequentially with uL22/Ffh, the translocon, and PpiD
+### The VemP nascent polypeptide interacts sequentially with uL22/Ffh, the translocon, and PpiD
 
 To gain insight into the timing and order of the molecular interactions involving VemP, we next examined in vivo stability of the XLs during the chase period using appropriate pBPA variants. The intensities of the radioactivities associated with the arrested and non-crosslinked VemP decreased during the chase period due to the secretion-coupled arrest cancelation. While XLs intensities also declined during the chase (Figure 2A,B and Figure 2—figure supplement 1), a careful comparison of the decrease rates showed that the kinetics of the XLs decrease did not always coincide exactly with that of the arrested-VemP. While the decrease rates of the SecG-XLs and the arrested VemP were almost the same, the uL22- and Ffh-XLs decreased slightly faster than the arrested VemP (Figure 2B,C and Figure 2—figure supplement 2). These results suggest that Ffh (SRP) and uL22 interact with the arrested VemP polypeptide before targeting to the translocon, in agreement with their cellular functions and localization. This was verified by examining the effect of NaN3, a SecA inhibitor, on the VemP-crosslinkings. NaN3 treatment of cells causes the stabilization of the AP-un form of VemP in living cells (Mori et al., 2018), suggesting that inhibition of SecA prevents VemP from initiating its translocation into the translocon. We confirmed it by pulse-chase experiments using a secA51 (Ts) mutant cells (Figure 2—figure supplement 3). As expected, the arrest cancelation of VemP was severely and specifically retarded at high temperature in the secA51(Ts) mutant cells, but not in its isogenic wild type cells. We found that the NaN3 treatment increased the VemP crosslinking with uL22 and Ffh, but decreased its crosslinking with SecY, SecG, and PpiD (Figure 2—figure supplement 4A,B). These results suggest that the arrested VemP interacts with SRP and uL22 before the interactions with the translocon and PpiD on the membrane. In contrast to the uL22- and Ffh-XLs, the PpiD-XLs tended to decrease more slowly than SecG-XLs or the arrested VemP (Figure 2B,C). This suggests that VemP is recognized by PpiD after it engages with the translocon, being consistent with the topology of PpiD that has a functional domain in the periplasm.
 
-## Ffh (SRP) functions in the targeting of VemP
+![Figure 2.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig2-v3.jpg)
+
+**Figure 2.:** (A) PiXie analysis of VemP. Cells were grown, induced to express a VemP derivative with pBPA, pulse-labeled and chased as in Figure 1. At the indicated time points in the chase period, cells were UV-irradiated for 1 s and then acid-treated. Labeled proteins were subjected to IP with an anti-VemP antibody or pull-down with Ni-NTA agarose. The same strains were parallelly pulse-labeled, chased, and subjected to IP with the anti-VemP antibody without the UV irradiation. Isolated proteins were analyzed as in Figure 1. Portions of the gel images showing the XLs (upper gels) or showing the VemP-derived bands of the UV-unirradiated samples (lower gels) are presented. Full images of the gels for all the results are presented in Figure 2—figure supplement 1B. The result shown is a representative of three biological replicates. (B) Relative amounts of the VemP arrested forms and the VemP-XLs. The band intensity of VemP-FL (open diamonds), VemP-APs (AP-un + AP-pro) (closed diamonds), and XLs (colored symbols) in A was quantitated and the mean values of the relative values (the value at the 0.5 min was set to 1) were plotted (error bars are S.D.; (n = 3)). The detail procedure for quantification of immunoprecipitated bands in a representative result is presented in Figure 2—figure supplement 2. (C) Relative crosslinking efficiency of the arrested VemP. The values for the relative intensities of XLs at 1 min to the corresponding average intensities of VemP-APs were calculated from the results in B. The mean values are shown with S.D. (n = 3 biological replicates). See Figure 2—source data 1 for gel images and quantitated band intensities data for A–C.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Stability of the arrested form of the VemPpBPA derivatives. Cells were grown, induced to express a VemP-F3M derivative with pBPA at the indicated position (WT indicates the protein with no pBPA), pulse-labeled and chased as described in Figure 4A. Labeled proteins were subjected to IP with anti-VemP antibodies and analyzed as in Figure 1. Arrested VemP (%) was calculated as in Figure 4A. The mean values of arrested VemP (%) are shown with S.D. (n ≥ 3 technical replicates). (B) Full images of the gels for all the PiXie analyses described in Figure 2A are presented. The result shown is a representative of three biological replicates. See Figure 2—figure supplement 1—source data 1 for gel images and quantitated band intensities data for A.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) A schematic picture of VemP-F3M. The regions corresponding to three VemP-F3M-derived species (FL-m, AP-un and AP-pro) observed during PiXie analysis are indicated below by gray bars. The precursor form of VemP-F3M has 3 and 2 Met residues (shown as red circles) in its signal sequence and mature region, respectively. Relative molar amounts (RMA) of these species were calculated from the signal intensities of the corresponding bands according to the formulas shown on the right (see below). (B) An example of quantification of XLs. The result of the PiXie analysis using VemP(W124pBPA) shown in Figure 2—figure supplement 1 is used as an example. The right gel image (ii) is a close-up view of the region surrounded by a dashed red line in the left gel (i). The intensities of the bands annotated as FL-m, AP-un, AP-pro and XLs as a background (BG), the intensity of an upper part of the AP-un band (for the VemP-derivative) or an upper part of the XL band (for the XL bands) were quantitated. The BG intensities were corrected based on the measurement areas, and subtracted from the intensities of the VemP-related bands (FL-m, AP-un, AP-pro and XLs). The intensity after subtraction of the BG intensity is here defined as the net band intensity (NBI). The values of the RMAs of the VemP-related bands at each chase time point shown in the upper table (iii). Each value in the two graphs ((iv) and (v), a part of Figure 2B and C, respectively) was calculated according to the formulae shown at the right side of these graphs. The values calculated from the third experimental data and all the data (n = 3) (See the Source data) are also presented in the table (vi) and (vii), respectively. In each of the three PiXie experiments, cells were grown, divided into two portions and separately induced. Then, one was subjected to the PiXie analysis of the XL, and the other was used for the pulse-chase analysis of the VemP-derivatives without UV-irradiation. We should thus deal with these two analyses as independent experiments. Therefore, to calculate the values for [XL/VemP-AP (chase at 1 min)], we used the average of the relative amounts of VemP-AP (UV-)1 from the three experiments.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) secA+ cells or secA51 cells carrying the vemP-3xflag-myc plasmid were grown at 30 °C until early log phase. At 2 hr after the temperature shift to 42°C, cells were induced, pulse-labeled and chased as in Figure 4. At the indicated chase time points, total cellular proteins were acid-precipitated and subjected to IP with the indicated antibodies and analyzed as in Figure 1. (B) The mean values of arrested VemP (%) are plotted with S.D. (n = 2 biological replicates). See Figure 2—figure supplement 3—source data 1 for gel images and quantitated band intensities data.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Wild type cells (upper gel) and mutant cells expressing Ffh-His10 (middle gel), and SecY-His10 (lower gel) from the chromosome were used. The cells were grown, induced to express a VemP-F3M derivatives with pBPA at the indicated position, and analyzed by PiXie as in Figure 1. NaN3 (+) indicates that the cells received 0.02% NaN3 and [35S]Met simultaneously. Labeled proteins were subjected to IP with an anti-VemP antibody (left) or pull-down with Ni-NTA agarose (right) and analyzed as in Figure 1. Asterisks presumably represent crosslinked dimer forms of full-length VemP-F3M. (B) The intensity of these crosslinking bands was quantitated and the relative mean values (the value without NaN3 treatment was set to 1) are plotted with S.D. (n = 3 technical replicates). See Figure 2—figure supplement 4—source data 1 for gel images and quantitated band intensities data.
+
+### Ffh (SRP) functions in the targeting of VemP
 
 We examined the role of Ffh (SRP) in the membrane translocation and arrest-cancelation of VemP by pulse-chase experiments using an E. coli strain, WAM121, in which ffh is transcribed from the arabinose promoter (de Gier et al., 1996). The Ffh-depletion upon removal of arabinose from the medium stabilized the AP-un form of VemP (Figure 3A), indicating an impairment of the targeting of the VemP-ribosome complex to the translocon. Consistent with the observation, deletion of the secB gene that encodes a secretion-specific chaperone severely compromised export of MBP, a SecB-dependent substrate, but exhibited the normal arrest cancelation of VemP (Figure 3—figure supplement 1), supporting the co-translational targeting of a VemP-ribosome complex. The prolonged translation-arrest of VemP is expected to induce the expression of the downstream V.secD2/F2 genes (Ishii et al., 2015). To verify this point, we examined the V.SecD2 expression in WAM121 cells carrying a vemP-V.secD2/F2 plasmid, and found that the synthesis of V.SecD2 was indeed elevated under the Ffh-depleted conditions (Figure 3B). We also examined the effect of an Ffh-depletion on the V.SecD2 expression in the cognate organism, V. alginolyticus (Figure 3C). Under a Na+-rich growth condition, the Na+-driven V.SecD1/F1 in this organism was fully functional, leading to the efficient arrest cancelation of VemP and consequent tight repression of V.SecD2 (Ishii et al., 2015). In the Ffh-depletable strain of V. alginolyticus with the arabinose promoter-controlled ffh, the V.SecD2 expression was induced in the arabinose-free medium even in the presence of a sufficient level of Na+, consistent with the notion that the Ffh-depletion compromises the targeting of VemP and stabilizes its translation arrest. These results suggest that SRP is crucial for the translocon targeting of VemP, which is a prerequisite for the proper regulation of the V.SecD2/F2 expression in Vibrio.
 
-## PpiD and SecD/F cooperate to facilitate the translocation and the arrest cancelation of VemP
+![Figure 3.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig3-v3.jpg)
+
+**Figure 3.:** (A) Effects of Ffh-depletion on stability of the arrested-VemP. (left) Ffh-depletable cells carrying a vemP-f3m plasmid were grown in the M9 medium with (+) or without (–) 0.05% arabinose, induced, pulse-labeled and chased as in Figure 1. At the indicated chase time points, total cellular proteins were acid-precipitated, subjected to IP and analyzed as in Figure 1. (middle) In parallel, a portion of the cultures just before pulse-labeling was subjected to immunoblotting (IB) analysis with an anti-Ffh antibody. (right) Percentages of the arrested VemP in left were calculated by the equation described in Materials and methods. Values are means ± S.D. (n = 3 technical replicates). (B) Effects of Ffh-depletion on the expression of V.secD2. (left) The Ffh-depletable cells carrying an empty vector or a vemP-V.secD2/F2 plasmid (WT) were grown, induced, and pulse-labeled for 1 min. Total cellular proteins were acid-precipitated. For the WTNaN3 samples, the cells carrying the vemP-V.secD2/F2 plasmid were pretreated with 0.02% NaN3 for 5 min before pulse-labeling. Labeled proteins were subjected to IP, and analyzed as in Figure 1. (middle) In parallel, a portion of the cultures just before the pulse-labeling was subjected to IB with the anti-Ffh antibody. The intensity of the V.SecD2 band from each lane was quantitated. Values are means ± S.D. (n = 3 technical replicates) (the value for WT in the presence of arabinose was set to 1). (C) Effects of Ffh-depletion on the expression of V.secD2 in a Vibrio cell. (left) The Vibrio cells indicated were grown at 30°C in VC-medium with (+) or without (–) 0.2% arabinose for 3 hr. Total cellular proteins were acid-precipitated, and analyzed by IB. (right) The intensity of the V.SecD2 band from each lane was quantitated. Values are means ± S.D. (n = 3 technical replicates) (the value for the ΔV.secD1/F1 cells in the presence of arabinose was set to 1). The asterisks (*, **, ***) in B and, C represent un-related proteins recognized by the indicated antibodies. See Figure 3—source data 1 for gel images and quantitated band intensities data for A–C.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) WT cells or ΔsecB cells carrying a vemP-3xflag-myc plasmid were grown at 30°C until early log phase, induced, pulse-labeled, and chased as in Figure 4. At the indicated chase time points, total cellular proteins were acid-precipitated and subjected to IP with the indicated antibodies and analyzed as in Figure 1. The result shown is a representative of two biological replicates. (B) Separately, the cells were acid-precipitated at the time just before the pulse-labeling. After SDS-solubilization, proteins were subjected to immunoblotting with an anti-SecB antibody.
+
+### PpiD and SecD/F cooperate to facilitate the translocation and the arrest cancelation of VemP
 
 We then carried out functional studies of PpiD, identified in this study as a crosslinking partner of VemP. Pulse-chase analysis showed that VemP was kept in the arrested state much more stably in the ΔppiD cells than in the ppiD+ E. coli cells (Figure 4A). We note that translocation of a secretory protein MBP (maltose-binding protein) was also retarded by the ppiD disruption, albeit less pronouncedly (Figure 4A). The loss of ppiD increased the V.SecD2 expression in E. coli (Figure 4B) and in Vibrio (Figure 4C). These results show that PpiD plays a crucial role in the arrest-cancelation of VemP. The PpiD disruption caused an accumulation of the AP-pro form of VemP in contrast to the Ffh depletion that led to the AP-un accumulation (compare Figures 3A and 4A). These results support the notion that PpiD acts on the periplasmic side after the signal sequence cleavage of the arrested VemP, whereas Ffh acts earlier on the cytosolic side. Our kinetic analysis already showed that PpiD is crosslinked to VemP at a late step of its translocation processes (Figure 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig4-v3.jpg)
 
-**Figure 4.:** (A) Effects of the ppiD disruption on the stability of the arrested-VemP. (left) WT cells or ΔppiD cells carrying the vemP-f plasmid were grown, induced, pulse-labeled, and chased as in 3mFigure 1. At the indicated chase time points, total cellular proteins were acid-precipitated and subjected to IP and analyzed as in Figure 1. (right) The mean values of arrested VemP (%) are plotted with S.D. (n = 3 technical replicates). (B) Effects of the ppiD disruption on the expression of V.secD2. (left) WT cells or ΔppiD cells carrying either an empty vector or a vemP-V.secD2/F2 plasmid (WT) were grown, induced as in A and pulse-labeled for 1 min. For the WTNaN3 samples, the cells carrying the vemP-V.secD2/F2 plasmid were pretreated with 0.02% NaN3 for 5 min before pulse-labeling. Labeled proteins were subjected to IP and analyzed as in Figure 1. The intensities of the V.SecD2 bands were quantitated. Values are means ± S.D. (n = 3 technical replicates) (the value for the WT cells was set to 1). (C) Effects of the ppiD disruption on the expression of V.secD2 in Vibrio cells. (left) The indicated Vibrio cells were grown at 30°C in the VC-medium for 2 hr. Total cellular proteins were acid-precipitated and subjected to IB. (right) The intensities of the V.SecD2 bands were quantitated. Values are means ± S.D. (n = 3 technical replicates) (the value for the ΔV.secD1/F1 cells was set to 1). The asterisks (*, **, ***) in B and C represent un-related proteins recognized by the indicated antibodies. (D) Roles of SecD/F and PpiD in the arrest-release of VemP. A pRM83c-based plasmid carrying either his or 10-secD/FppiD, or the empty vector was introduced, in addition to pHM1021-vemP-f into wild type cells and cells having either the 3m,secD1 or the ΔppiD mutation. These cells were grown at 37°C for 2.5 hr as in Figure 1. A half of the cell cultures were removed and acid-treated. Precipitated proteins were subjected to IB (lower two panels). The remaining cells were induced with 1 mM IPTG for 15 min, pulse-labeled for 30 s and chased for 30 s. Acid-precipitated proteins were subjected to IP and analyzed as in Figure 1 (upper two panels). The result shown is a representative of two technical replicates. The asterisk in the lowest gel represents a degradation product of PpiD. (E) In vivo photo-crosslinking of SecD with PpiD. Cells were grown in L medium containing 0.5 mM pBPA until early log phase at 37°C and induced with 0.02% arabinose for 1 hr to express the indicated SecD/F variants. The cultures were divided into two portions, each of which was treated with or without UV-irradiation for 10 min at 4°C. Total cellular proteins were acid-precipitated and subjected to IB. The result shown is a representative of two technical replicates. A crystal structure of SecD/F (PDB:3aqp; Tsukazaki et al., 2011) is shown in the left. See Figure 4—source data 1 for gel images and quantitated band intensities data for A–C.Figure 4—source data 1.(A–C) and quantified band intensity data for the pulse-chase experiments using the anti-VemP antibody (A), pulse-labeling experiments using the anti-SecD2 antibody (B) and immunoblotting with the anti-SecD2 antibody (C).
+**Figure 4.:** (A) Effects of the ppiD disruption on the stability of the arrested-VemP. (left) WT cells or ΔppiD cells carrying the vemP-f3m plasmid were grown, induced, pulse-labeled, and chased as in Figure 1. At the indicated chase time points, total cellular proteins were acid-precipitated and subjected to IP and analyzed as in Figure 1. (right) The mean values of arrested VemP (%) are plotted with S.D. (n = 3 technical replicates). (B) Effects of the ppiD disruption on the expression of V.secD2. (left) WT cells or ΔppiD cells carrying either an empty vector or a vemP-V.secD2/F2 plasmid (WT) were grown, induced as in A and pulse-labeled for 1 min. For the WTNaN3 samples, the cells carrying the vemP-V.secD2/F2 plasmid were pretreated with 0.02% NaN3 for 5 min before pulse-labeling. Labeled proteins were subjected to IP and analyzed as in Figure 1. The intensities of the V.SecD2 bands were quantitated. Values are means ± S.D. (n = 3 technical replicates) (the value for the WT cells was set to 1). (C) Effects of the ppiD disruption on the expression of V.secD2 in Vibrio cells. (left) The indicated Vibrio cells were grown at 30°C in the VC-medium for 2 hr. Total cellular proteins were acid-precipitated and subjected to IB. (right) The intensities of the V.SecD2 bands were quantitated. Values are means ± S.D. (n = 3 technical replicates) (the value for the ΔV.secD1/F1 cells was set to 1). The asterisks (*, **, ***) in B and C represent un-related proteins recognized by the indicated antibodies. (D) Roles of SecD/F and PpiD in the arrest-release of VemP. A pRM83c-based plasmid carrying either his10-secD/F or ppiD, or the empty vector was introduced, in addition to pHM1021-vemP-f3m, into wild type cells and cells having either the secD1 or the ΔppiD mutation. These cells were grown at 37°C for 2.5 hr as in Figure 1. A half of the cell cultures were removed and acid-treated. Precipitated proteins were subjected to IB (lower two panels). The remaining cells were induced with 1 mM IPTG for 15 min, pulse-labeled for 30 s and chased for 30 s. Acid-precipitated proteins were subjected to IP and analyzed as in Figure 1 (upper two panels). The result shown is a representative of two technical replicates. The asterisk in the lowest gel represents a degradation product of PpiD. (E) In vivo photo-crosslinking of SecD with PpiD. Cells were grown in L medium containing 0.5 mM pBPA until early log phase at 37°C and induced with 0.02% arabinose for 1 hr to express the indicated SecD/F variants. The cultures were divided into two portions, each of which was treated with or without UV-irradiation for 10 min at 4°C. Total cellular proteins were acid-precipitated and subjected to IB. The result shown is a representative of two technical replicates. A crystal structure of SecD/F (PDB:3aqp; Tsukazaki et al., 2011) is shown in the left. See Figure 4—source data 1 for gel images and quantitated band intensities data for A–C.
 
 Next, we addressed how PpiD participates in the arrest cancelation of VemP, whose role is to regulate the expression of SecD/F that facilitates a late step of translocation (Mori et al., 2018). The role of SecD/F itself in the VemP arrest cancelation can be seen from the prolonged VemP arrest in the secD1 (a mutation causing SecD/F depletion) E. coli cells (Figure 4D, vector lanes) and the enhanced arrest cancelation by overproduction of SecD/F (Figure 4D, left, vector vs. secD/F). As both SecD/F and PpiD are involved in later steps of VemP translocation, they might cooperate in canceling the elongation arrest. Alternatively, they might have redundant functions. The arrested state of VemP was stabilized in the ΔppiD cells (Figure 4D, vector lanes), showing that its function is required for the active translocation and the arrest cancelation of VemP. Whereas the overproduction of PpiD facilitated the arrest cancelation, as expected, SecD/F's overproduction was ineffective in relieving the arrested state due to the ppiD defect. Conversely, PpiD overproduction was ineffective in relieving the arrested state due to the secD1 mutation (Figure 4D). These results rule out the possibility that the roles of SecD/F and PpiD in arrest cancelation are redundant. Instead, both of them are specifically required for the cancelation of VemP arrest, raising the possibility that they interact with each other. We then studied this point by in vivo photo-crosslinking. When pBPA was incorporated into the position of Asp-359 in the P1 head of SecD, its XLs with PpiD were detected (Figure 4E). Thus, PpiD resides in close proximity to the mobile P1 head of SecD of the VemP-translocating translocon. Generation of the two XLs could represent crosslinking of pBPA at position 359 in SecD to two different positions in PpiD.
 
-## Conserved Arg-85 has a role in the regulation of secretion-coupling of the VemP arrest cancelation
+### Conserved Arg-85 has a role in the regulation of secretion-coupling of the VemP arrest cancelation
 
 Our systematic pBPA scanning incidentally revealed that incorporation of this amino acid analog to some VemP residues compromised the translation arrest of VemP (Figure 1—figure supplement 1A and Figure 5—figure supplement 1A). We selected several residues among them (shown in Figure 5—figure supplement 1B), and replaced them individually with Trp (having a bulky, hydrophobic side chain like pBPA). The Trp substitutions destabilized the translation arrest in similar ways to the corresponding pBPA substitutions. Among them, the R85W mutation had the strongest effect; it decreased the ratio of arrested forms to total VemP to the level comparable with that observed with a previously identified arrest motif mutation, W143A (Mori et al., 2018). Several other replacements of Arg-85 by residues of different properties also impaired apparently the translation arrest of VemP (Figure 5A). The R85W mutation abrogated the arrest-mediated up-regulation of V.secD2 (Figure 5—figure supplement 1C). These results showed that Arg-85 is crucial for the stable translation arrest of VemP in vivo.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig5-v3.jpg)
+
+**Figure 5.:** (A) Effects of Arg-85 mutations on the stability of the arrested VemP in vivo. Cells were grown, induced to express the indicated VemP-F3M derivatives, and used for the pulse-chase experiments as in Figure 4A. Labeled proteins were subjected to IP with an anti-VemP antibody and analyzed as in Figure 1. The result shown is a representative of three technical replicates. (B) Behavior of the VemP(R85W) mutant under Sec-deficient conditions. Cells defective in protein translocation (secY24/pSTV28-syd) expressing the indicated VemP-F3M derivatives were examined by the pulse-chase experiment as described in Figure 4A except that the export of MBP was also examined by IP with an anti-MBP antibody. The result shown is a representative of two technical replicates. (C) Effects of the R85W mutation on translocation of the VemP(F.S.) derivative that undergoes no translation arrest. WT cells or ΔppiD cells were grown, induced to express the indicated VemP(F.S.)-F3M derivatives, and used for the pulse-chase experiments as in Figure 4A. Labeled proteins were subjected to IP with an anti-VemP antibody and analyzed as in Figure 1. The result shown is a representative of three biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Stability of the arrested state of the VemPpBPA variants. A schematic picture of the VemP polypeptide in the arrested state is presented with residue numbers. Arrested VemP (%) was calculated from the results in Figure 1. The mean values of arrested VemP (%) are shown with S.D. (n = 2 technical replicates). (B) Effects of Trp mutations on the VemP translation arrest. Cells were grown, induced to express the indicated VemP-F3M derivative, and pulse-labeled as in Figure 1. After 30 s of chase, total cellular proteins were acid-precipitated, subjected to IP with an anti-VemP antibody and analyzed as in Figure 1. Arrested VemP (%) was calculated and the mean values are shown with S.D. (n = 2 technical replicates). (C) WT cells carrying an empty vector or a vemP-V.secD2/F2 plasmid (the indicated mutation was introduced into the vemP gene on the plasmids), were grown and induced as in Figure 1 and pulse-labeled for 1 min. Labeled proteins were then subjected to IP with an anti-V.SecD2 antibody and analyzed as in Figure 1. Double asterisks indicate an un-related protein precipitated with the anti-V.SecD2 antibody. The intensity of V.SecD2 band was quantitated and the relative mean values (the value for WT cells carrying p-vemP-V.secD2/F2 was set to 1) are shown with S.D. (n = 3 technical replicates). (D) Effect of an Arg85 mutation on the translation arrest of a VemP variant lacking its signal sequence. Cells of HM1742 carrying a plasmid, pTV118N-his10-vemP(Δsignal sequence)−3xflag-myc, into which the indicated mutation had been introduced, were grown, induced with 1 mM IPTG for 60 min, and acid-precipitated. Proteins were analyzed by immunoblotting using the anti-VemP antibody. See Figure 5—figure supplement 1—source data 1 for gel images and quantitated band intensities data for A-C.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** After 30 s of chase, total cellular proteins were acid-precipitated, subjected to IP with the anti-VemP antibody and analyzed as in Figure 1. Arrested VemP (%) was calculated and the mean values are shown with S.D. (n = 2 technical replicates). See Figure 5—figure supplement 2—source data 1 for gel images and quantitated band intensities data.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/62623/elife-62623-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Amino acids sequence of VemP orthologues were aligned using Clustal omega program (https://www.ebi.ac.uk/Tools/msa/clustalo/); Vibrio alginolyticus (Va), Vibrio nigripulchritudo (Vn), Vibrio vulnificus (Vv), Vibrio harveyi (Vh), Vibrio parahaemolyticus (Vp), Vibrio tubiashii (Vt), Vibrio furnissii (Vf), Vibrio cholerae (Vc), Vibrio mimicus (Vm). Well-conserved residues, completely conserved residues and the Arg-85 residue are colored in pale blue, blue, and red, respectively. The signal sequence and the arrest motif of VemP are boxed with green and blue lines, respectively.
 
 We conceived two possibilities that account for the observed phenotypes of the Arg-85 mutations. First, this residue belongs to the arrest sequence, although it presumably resides outside of the ribosome in the arrested translation complex. In this case, the Arg-85 mutations simply lead to a loss of arrest proficiency. Secondly, Arg-85 regulates the arrest proficiency by partially antagonizing the secretion-coupled arrest cancelation. In this scenario, the Arg-85 mutation may sensitize the VemP nascent chain to the secretion-generated pulling force and consequently lead to the apparent arrest-defective phenotype in vivo. To distinguish these possibilities, we examined the VemP(R85W) mutant protein behaviors under secretion-defective conditions. In the Sec-deficient cells (see Materials and methods), the arrested form of WT VemP was stabilized (Mori et al., 2018), while that of VemP(W143A) was rapidly converted to the full-length form (Figure 5B). In contrast, the R85W mutant did not exert a negative effect on the arrest in the secretion-impaired cell (Figure 5B). As another means to render VemP indifferent to secretion, we deleted its signal sequence. The R85 mutation did not affect the elongation arrest in the absence of the signal sequence. By sharp contrast, the W143A mutation abolished the arrest even in the absence of the signal sequence (Figure 5—figure supplement 1D). Thus, the mode of involvement of Arg-85 in the elongation arrest is fundamentally different from that of Trp-143.
 
@@ -98,25 +166,168 @@ Interestingly, SecM also possesses a cis-element that is located outside the rib
 
 ## Materials and methods
 
-## Bacterial strains, plasmids, and primers
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (E. coli)</td>
+      <td>MC4100</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Strain (V. alginolyticus)</td>
+      <td>138–2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Strain (P1 bacteriophage)</td>
+      <td></td>
+      <td>Laboratory stock</td>
+      <td>CGSC12133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmids</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td></td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Antibodies</td>
+      <td>1st antibodies</td>
+      <td>This paper</td>
+      <td></td>
+      <td>listed in the below</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit IgG (H + L)-HRP Conjugate</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>1706515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>H-p-Bz-Phe-OH</td>
+      <td>Bachem</td>
+      <td>F2800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Methionine, L-[35S] Translation Grade</td>
+      <td>American Radiolabeled Chemicals</td>
+      <td>ARS 01014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>ANTI-FLAG M2 Affinity Gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>nProtein A Sepharose4 Fast Flow</td>
+      <td>GE Healthcare</td>
+      <td>17528004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ni-NTA Agarose</td>
+      <td>QIAGEN</td>
+      <td>30250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>ECL Western Blotting Detection Reagents</td>
+      <td>GE Healthcare</td>
+      <td>RPN2106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>ECL Prime Western Blotting Detection Reagents</td>
+      <td>GE Healthcare</td>
+      <td>RPN2232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Bio-imaging Analyzer BAS-1800, BAS-5000</td>
+      <td>Fujifilm/GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Image Qaunt LAS 4000 mini</td>
+      <td>Fujifilm/GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Multi Gauge</td>
+      <td>Fujifilm/GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains, plasmids, and primers
 
 Escherichia coli K12 strains and Vibrio alginolyticus VIO5 strains, plasmids, and primers used in this study are listed in Supplementary files 1, 2, and 3, respectively. Details of the strain and plasmid construction are described in Construction of Mutant Strains and Plasmid Construction, respectively.
 
-## Media and bacterial cultures
+### Media and bacterial cultures
 
 E. coli cells were grown in L rich medium (10 g/L bacto-tryptone, 5 g/L bacto-yeast extract, 5 g/L NaCl; pH adjusted to 7.2 with NaOH) or M9 synthetic medium (without CaCl2; Miller, 1972) supplemented with maltose (final 0.2%), glycerol (final 0.4%), all amino acids (except Met and Cys; final concentration of 20 μg/mL each). 50 µg/mL ampicillin, 20 µg/mL chloramphenicol, 25 µg/mL kanamycin, 25 µg/mL tetracycline, and 50 µg/mL spectinomycin were added as appropriate for growing plasmid-bearing cells and selection of transformants and transductants. V. alginolyticus cells were grown in VC-rich medium (5 g/L bacto-tryptone, 5 g/L bacto-yeast extract, 4 g/L K2HPO4, 30 g/L NaCl, 2 g/L glucose; Terashima et al., 2010). For induction with arabinose, we used modified VC medium containing 0.2% arabinose instead of 0.2% glucose. 2.5 µg/mL chloramphenicol was added as appropriate for growing plasmid-bearing cells. Bacterial growth was monitored with Mini photo 518R (660 nm; TAITEC Co., Saitama, Japan).
 
-## Antibodies
+### Antibodies
 
 ANTI-FLAG M2 Affinity Gel (anti-FLAG antibody for immunoprecipitation) was purchased from Sigma-Aldrich, Co. LLC (St. Louis, MO). For preparation of an antibody against SecD, two oligopeptides (CYKDSGKKDANG and CYGGKRVLLLSI) were synthesized. They were mixed, conjugated with a carrier protein, keyhole limpet hemocyanin, via the Cys residue attached at their N-terminus and used to raise antibodies in rabbits. Anti-SecD IgGs were affinity-purified and used in the experiments. Anti-uL22, anti-Ffh, and anti-PpiD antibodies were gifts from S. Chiba (Kyoto Sangyo University, Kyoto, Japan), C. A. Gross (University of California at San Francisco, San Francisco, CA) and M. Müller (University of Freiburg, Freiburg, Germany), respectively. Anti-VemP, anti-V.SecD1, and anti-V.SecD2 (Ishii et al., 2015), antibodies as well as anti-SecG (Nishiyama et al., 1993) and anti-MBP (Baba et al., 1990) antibodies were described previously.
 
-## Construction of mutant strains
+### Construction of mutant strains
 
 RM3122 (HM1742, ΔsecG::kan), RM3124 (HM1742, ΔppiD::kan), and HM4790 (HM1742, ΔsecB::kan) were constructed by transducing ΔsecG::kan from JW3142 (Baba et al., 2006), ΔppiD::kan from JW0431 (Baba et al., 2006) and ΔsecB::kan from JW3584 (Baba et al., 2006) to HM1742 (Mori and Ito, 2006b), respectively. HM4798 (HM1742, ΔsecB::FRT) was constructed from HM4790 by removing the kan gene using pCP20 (Cherepanov and Wackernagel, 1995). RM2831 (HM1742, ffh-his10) were constructed by essentially the same procedure as the construction of SPA-tag collection strains (Butland et al., 2005). First, a his10-tag::kan fragment having sequences identical to the upstream and downstream regions of the ffh termination codon at its 5’ and 3’ ends, respectively, was PCR-amplified from pRM573 (See the last part of this session) using ffh-his10-f and ffh-his10-r primers. Then, this fragment was integrated into the E. coli DY330 chromosome using the λ-Red recombination system (Yu et al., 2000). After transferring an ffh-his10-tag::kan to HM1742 by P1 transduction, the kan cassette was removed using pCP20 to yield RM2831. RM2834 (HM1742, secY-his10) was constructed in a similar way, except that a different pair of the primers, secY-his10-f and secY-his10-r were used. RM2935 (HM1742, yidC-his10 kan) and RM3032 (HM1742, ppiD-his10 kan) were also constructed similarly using the primer pairs, yidC-his10-f/yidC-his10-r and ppiD-his10-f/ppiD-his10-r, respectively, whereas the kan cassettes of these strains were not removed. AD96 was constructed by transducing secA51(Ts) from MM52 (Oliver and Beckwith, 1981) to KI269 (Akiyama and Ito, 1985).
 
 Vibrio mutant strains RMV2 and RMV7 were constructed using a ‘suicide vector’, pSW7848, carrying the toxin-encoding ccdB gene under the arabinose promoter control (Ishii et al., 2015). A total of 150 μL of an overnight culture of E. coli β3914 cells harboring pRM691 or pRM744 was mixed well with 50 μL of an overnight culture of V. alginolyticus VIO5 strain. Cells were harvested and resuspended in 100 μL of the VC medium and 2.5 μL of the suspensions was spotted on the VC agar medium containing 300 μM 2,6-diaminopimelic acid (DAP) and incubated at 30°C for 6 hr. Then, the cells were streaked on a VC plate containing 2.5 μg/mL chloramphenicol but without DAP to select Vibrio cells in which a plasmid had been integrated on the chromosome. Subsequently, the chloramphenicol-resistant bacteria were grown on VC-0.2% arabinose agar plates to counter-select the plasmid-integrated Vibrio cells. After confirmation of chloramphenicol-sensitivity and arabinose resistance of obtained cells, presence of the introduced mutations was confirmed by colony PCR.
 
-## Construction of plasmids
+### Construction of plasmids
 
 pTS48 was constructed in the same way as the construction of pTS47 (pHM1021-vemP-3xflag-myc; Mori et al., 2018). pRM374 (pTV118N-vemP-3xflag-myc) was constructed by subcloning a NcoI-HindIII fragment carrying the vemP-3xflag-myc prepared from pTS48 into the same sites of pTV118N. pHM1021-vemP(amb)−3xflag-myc plasmids and pTV118N-vemP(amb)−3xflag-myc plasmids shown in Supplementary file 2 were constructed as follows. An amber mutation at the codons corresponding to the amino acid residues, F11, M16, A21, F24, K31, Y36, Q41, S46, N51, F56, E61, S66, S71, D76, F81, W86, R91, D96, V101, N106, V111, D121, Q126, F131, or S136 was introduced into pTS48 by site-directed mutagenesis using a pair of appropriate primers. Then, pTV118N-vemP-3xflag-myc plasmids containing the same amber mutation was constructed by cloning the NcoI-HindIII fragments that had been prepared from the resultant pHM1021-based plasmids into the same sites of pTV118N. For construction of plasmids carrying an amber codon at positions of the other amino acid residues, an amber mutation was first introduced into pRM374 by site-directed mutagenesis. For construction of pHM1021-vemP-3xflag-myc plasmids containing the same amber mutation, the NcoI-HindIII fragments were prepared from the pRM374-based plasmids and sub-cloned into the same sites of pHM1021. Derivatives of pTS48 encoding a VemP-F3M mutant with an amino acid alteration were constructed by site-directed mutagenesis. pRM848 (pHM1021-vemP(F.S., R85W)−3xflag-myc) was constructed from pHM1202 (pHM1021-vemP(F.S.)−3xflag-myc) by site-directed mutagenesis. pRM662 (pBAD24-vemP(R85W)-V.secD2/F2) was constructed from pHM810 (pBAD24-vemP-V.secD2/F2; Ishii et al., 2015) by site-directed mutagenesis. The pHM1021-vemP-secDF2VA (pRM663), pHM1021-vemP(W143A)-V.secD2/F2 (pRM666), and pHM1021-vemP(R85W)-V.secD2/F2 (pRM667) plasmids were constructed by subcloning the NcoI-SphI fragment carrying the V.vemP-secD2/F2 genes with or without the respective mutations that had been prepared from pBAD24-V.vemP-secD2/F2 plasmids (pHM810, pHM846 and pRM662, respectively). pRM520 (pTV118N-his10-vemP-3xflag-myc) was constructed as follows. A his10-vemP-3xflag-myc fragment was PCR-amplified from pTS48 using his10-vemP-f and M4C primers, digested with NcoI and HindIII, and cloned into the same sites of pTV118N. pRM557 (pTV118N-his10-vemP(ΔSS)−3xflag-myc) was constructed by site-directed mutagenesis of pRM520. Derivatives of pRM557 (pRM562 and pRM563) containing a mutation in the vemP gene were also constructed by site-directed mutagenesis.
 
@@ -126,18 +337,18 @@ The plasmid used for construction of RMV2 (VIO5, ΔppiD) was constructed as foll
 
 pRM570 (a plasmid carrying the spa-tag and a kan cassette sequences (spa-tag::kan)) was constructed as follows. A spa-tag::kan fragment was amplified from the genome of an ffh-spa-tag strain (Butland et al., 2005) using spa-kan-f and spa-kan-r primers, digested with EcoRI and SalI, and cloned into the same sites of pUC118. The stop codon of spa-tag was changed from TAG to TAA by site-directed mutagenesis to generate pRM570. To construct pRM573 (pUC118-his10-tag::kan), a his10-tag::kan fragment was amplified from pRM570 using his10-kan-f and M4C primers, digested with EcoRI and SalI, and cloned into the same sites of pUC118.
 
-## Immunoblotting analysis
+### Immunoblotting analysis
 
 This method was used in Figures 3A–C and 4C–E and Figure 5—figure supplement 1D. Solubilized total proteins were separated by SDS-PAGE and electro-blotted onto a PVDF membrane (Merck Millipore; Billerica, MA). The membrane was first blocked with 5% skim milk in PBST (Phosphate Buffered Saline with Tween 20), and then incubated with anti-SecD (1/2,000 dilution), anti-V.SecD1 (1/2,000), anti-V.SecD2 (1/2,000), anti-PpiD (1/20,000 or 1/50,000), anti-Ffh (1/10,000) or anti-VemP (1/2,000) antibodies After washing with PBST, the membrane was incubated with a horseradish peroxidase (HRP)-conjugated secondary antibody (1/5,000) (Goat Anti-Rabbit IgG (H + L)-HRP Conjugate; Bio-Rad Laboratories, Inc, Hercules, CA) in PBST. Proteins were visualized with ECL Western Blotting Detection Reagents (GE Healthcare UK Ltd, Amersham Place Little Chalfont, England) or ECL Prime Western Blotting Detection Reagents (GE Healthcare) and LAS4000 mini lumino-image analyzer (GE Healthcare).
 
-## PiXie analysis
+### PiXie analysis
 
 This analysis was used in Figures 1B–F and 2A, Figure 1—figure supplements 1A and 2–5 and Figure 2—figure supplement 1. Cells were first grown at 30°C in M9-medium supplemented with 2 µg/mL thiamine, 0.4% glycerol, 0.2% maltose, all amino acids (except Met and Cys; final concentration of 20 μg/mL each), 0.5 mM pBPA (H-p-Bz-Phe-OH F-2800; Bachem AG, Bubendorf, Switzerland), and 0.02% arabinose until early log phase. After IPTG induction for 15 min, cells were pulse-labeled with 370 kBq/mL [35S]Met (American Radiolabeled Chemicals, Inc, St. Louis, MO) for 30 s. In the case of the experiments in Figure 2—figure supplement 4, 0.02% NaN3 and [35S]Met were added simultaneously. After addition of excess non-radioactive Met (final conc. 250 µg/mL), a 350 µl portion of the cell cultures was quickly removed and put into wells of a 24-well microtiter plate (AGC Tehcno Glass Co. Ltd, Shizuoka, Japan) on a temperature-controllable and movable stage (MS Tech Co. Ltd., Kyoto, Japan). Cells were kept at 30°C and UV-irradiated for 1 s at appropriate time points during chase using SP-9 equipped with an SFH lens (USHIO Inc, Tokyo, Japan) at a distance of 5 cm. Control samples without UV-irradiation in Figure 2A and Figure 2—figure supplement 1 were also put to the microtiter plate on the stage and treated in the same way except that they were not UV-irradiated. After UV irradiation, total cellular proteins were immediately precipitated with 5% trichloroacetic acid (TCA), washed with acetone, and solubilized in SDS-buffer (50 mM Tris-HCl (pH 8.1), 1% SDS, 1 mM EDTA). The samples were then diluted 33-fold with Triton-buffer (50 mM Tris-HCl (pH 8.1), 150 mM NaCl, 2% Triton X-100, 0.1 mM EDTA). After clarification, samples were incubated with appropriate antibodies and nProtein A Sepharose 4 Fast Flow (GE healthcare) or Ni-NTA Agarose (QIAGEN) at 4°C over-night with slow rotation. Proteins bound to the antibody/ProteinA-Sepharose or Ni-NTA Agarose were recovered by centrifugation, washed with Triton buffer and then with 10 mM Tris-HCl (pH 8.1) and eluted by incubation at 37°C for more than 5 min in SDS-sample buffer (62.5 mM Tris-HCl (pH 6.8), 2% SDS, 10% glycerol, 5 mg/mL bromophenol blue). The isolated proteins were separated by SDS-PAGE, and visualized with BAS1800 or BAS5000 phosphoimager (Fujifilm Co., Tokyo, Japan). Band intensities were quantified using MultiGauge software (Fujifilm). To obtain the graphs in Figure 2B, the band intensity of VemP-FL (open diamonds), VemP-APs (AP-un + AP-pro; the signal intensity of the AP-pro is normalized by the Met content) (closed diamonds) and XLs (colored symbols) in Figure 2A was quantitated.
 
-## In vivo stability of the arrest-form of VemP
+### In vivo stability of the arrest-form of VemP
 
 The procedure was used in Figures 3A, 4A, D and 5, Figure 2—figure supplement 3, Figure 3—figure supplement 1 and Figure 5—figure supplements 1B and 2. Cells were first grown at 30°C in M9-medium supplemented with 2 µg/mL thiamine, 0.4% glycerol, 0.2% maltose, all amino acids (except Met and Cys) with or without 0.05% arabinose until early log phase. After induction with for 15 min, cells were pulse-labeled with 370 kBq/mL [35S]Met for 30 s. In the case of Figure 2—figure supplement 3 (for analysis of secA51(Ts)), the induction of VemP-F3M was done, at 2 hr after the temperature shift to 42°C. At appropriate time points after addition of excess nonradioactive Met (final conc. 250 µg/mL), total cellular proteins were precipitated with 5% TCA, washed with acetone, and solubilized in SDS-buffer. The samples were subjected to the IP as described above. Isolated proteins were separated by SDS-PAGE, and visualized with BAS1800 phosphoimager. Percentages of the arrested VemP were calculated by the following equation: arrested VemP (%)=100 × [VemP-APs]/[(VemP-FL) + (VemP-APs)], where VemP-APs (in Figure 2B) and VemP-FL are the intensities of the respective bands.
 
-## In vivo photo-crosslinking analysis
+### In vivo photo-crosslinking analysis
 
 In the Figure 4E, Cells were grown at 37°C in L medium containing 0.5 mM pBPA until early log phase and induced with 0.02% arabinose for 1 hr. The half volume of the cell cultures was put on a petri dish at 4°C and UV-irradiated for 10 min using B-100AP UV lamp (365 nm; UVP, LLC., Upland, CA), at a distance of 4 cm. The other half was kept on ice as non-UV-irradiated samples. Total cellular proteins were precipitated with 5% TCAs, washed with acetone, and suspended in SDS-sample buffer. The samples were subjected to SDS-PAGE and immunoblotting analysis.

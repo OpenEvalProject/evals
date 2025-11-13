@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Regulation of reward signaling in the brain is critical for appropriate judgement of the environment and self. In Drosophila , the protocerebral anterior medial (PAM) cluster dopamine neurons mediate reward signals. Here, we show that localized inhibitory input to the presynaptic terminals of the PAM neurons titrates olfactory reward memory and controls memory specificity. The inhibitory regulation was mediated by metabotropic gamma-aminobutyric acid (GABA) receptors clustered in presynaptic microdomain of the PAM boutons. Cell type-specific silencing the GABA receptors enhanced memory by augmenting internal reward signals. Strikingly, the disruption of GABA signaling reduced memory specificity to the rewarded odor by changing local odor representations in the presynaptic terminals of the PAM neurons. The inhibitory microcircuit of the dopamine neurons is thus crucial for both reward values and memory specificity. Maladaptive presynaptic regulation causes optimistic cognitive bias.
+Regulation of reward signaling in the brain is critical for appropriate judgement of the environment and self. In Drosophila, the protocerebral anterior medial (PAM) cluster dopamine neurons mediate reward signals. Here, we show that localized inhibitory input to the presynaptic terminals of the PAM neurons titrates olfactory reward memory and controls memory specificity. The inhibitory regulation was mediated by metabotropic gamma-aminobutyric acid (GABA) receptors clustered in presynaptic microdomain of the PAM boutons. Cell type-specific silencing the GABA receptors enhanced memory by augmenting internal reward signals. Strikingly, the disruption of GABA signaling reduced memory specificity to the rewarded odor by changing local odor representations in the presynaptic terminals of the PAM neurons. The inhibitory microcircuit of the dopamine neurons is thus crucial for both reward values and memory specificity. Maladaptive presynaptic regulation causes optimistic cognitive bias.
 
 ## Introduction
 
@@ -27,13 +27,37 @@ Regulation of reward signaling in the brain is critical for maximizing positive 
 
 To understand neuronal mechanisms for the regulation of reward processing, we here focused on gamma-aminobutyric acid (GABA) signaling in the PAM neurons. Six GABA receptor genes are identified in the fly genome. We silenced the expression of each receptor gene in the PAM cluster neurons by targeting transgenic RNAi (Ni et al., 2011) and tested their appetitive olfactory memory (Figure 1A). We found increased memory performance by downregulation of a metabotropic GABA receptor, GABA-B-R3 (Figure 1A and Figure 1—figure supplement 1A-B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64907/elife-64907-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cell type-specific GABA receptor silencing in the protocerebral anterior medial (PAM) neurons directed by R58E02-GAL4, showing GABA-B-R3-specific memory increment. *q < 0.008 (Benjamini and Hochberg method, N = 8, 23). Mean ± SEM are shown hereafter. (B) Acute silencing of GABA-B-R3 in the PAM neurons using Tub-GAL80ts and heat-induced inactivation. *p<0.05 (Sidak’s test, N = 10, 12; Dunn’s multiple comparisons test, N = 7, 8). (C, D) A substack projection image and a single optical slice showing endogenous GABA-B-R3 expression in somata of PAM neurons (C) and their axon terminal profiles in the mushroom body (MB) (D) by using GABA-B-R3-T2A-GAL4. Anti-tyrosine hydroxylase (TH) antibody signal (magenta) for labeling PAM neurons. Scale bars, 100 μm (C), 20 μm (D). (E) Memory acquisition curves of knock-down and control flies. Hyperbola curve fitting and subsequent permutation tests (Figure 1—figure supplement 1E–F) reveal an altered plateau level but not the acquisition speed in knock-down flies. N = 12. (F) Superimposed and color-coded sugar-evoked calcium signal (ΔF/F0) in a subset of PAM neurons measured in R15A04-GAL4/UAS-GCaMP6s, UAS-mCD8::RFP flies. (G) Time course of the calcium transients in defined compartments of the MB in control (left) and GABA-B-R3 knock-down (right) flies. Gray shades indicate sugar stimulation for 3 s. Mean ± SEM, N = 7, 8. (H) GABA-B-R3 knock-down significantly increases sugar-evoked peak calcium transients in γ5 and α1 neurons. *p<0.05 (Holm-Sidak’s test, N = 7, 8).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64907/elife-64907-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Appetitive memory score in R58E02-GAL4/UAS-GABA-B-R3-RNAi flies compared with parental controls. Mean ± SEM hereafter. *p<0.05 (Sidak’s test, N = 12). (B) Appetitive memory score in R58E02-GAL4/UAS-Dicer2, UAS-GABA-B-R3-RNAi #2 flies compared with parental controls. *p<0.05 (Sidak’s test, N = 11–12). (C) Mean TPM of GABA-B-R3 splicing isoforms in subtypes of the Kenyon cells and PAM cluster dopamine neurons. Data from Aso et al., 2019. (D) Memory acquisition curve of CS flies. Significant statistical differences between different alphabet groups (Tukey’s multiple comparisons test, N = 8–16.). (E–F) Null distributions of memory asymptote difference (left) and acquisition speed difference (right) between R58E02-GAL4/UAS-GABA-B-R3 and R58E02-GAL4/+ (E) or UAS-GABA-B-R3/+ (F) flies generated by permutation test. Broken lines indicate observed differences with respective p-values.
+
 We next examined endogenous GABA-B-R3 expression in the adult brain using the intronic CRISPR-Mediated Integration Cassette (CRIMIC) insertion of T2A-GAL4 (Lee et al., 2018). The T2A self-cleaving peptide between the target protein and GAL4 allows bi-cistronic translation by a ribosome skipping mechanism (Diao and White, 2012). GABA-B-R3 was expressed broadly in the brain, including the majority of the PAM cluster neurons (Figure 1C–D), whereas the expression was weak in KCs (Figure 1D and Figure 1—figure supplement 1C). There was no notable morphological alteration in the brain of knock-down flies (data not shown). Consistently, adult stage-specific GABA-B-R3 silencing in the PAM neurons using Tub-GAL80ts (McGuire et al., 2003) similarly enhanced appetitive memory performance (Figure 1B). Without transgene induction, their appetitive memory was indistinguishable from the controls (Figure 1B).
 
 Increased learning speed and/or performance plateau may underlie the enhanced appetitive memory in the GABA-B-R3 knock-down flies. We attempted to distinguish these possibilities by characterizing their memory acquisition (Figure 1E and Figure 1—figure supplement 1D). The performance of R58E02-GAL4/UAS-GABA-B-R3-RNAi flies reached a significantly higher asymptote than control genotypes without changing the acquisition speed (Figure 1E and Figure 1—figure supplement 1E–F). In a learning theory, the magnitude of reinforcement is the determinant for the plateau of the acquisition curve (Rescorla, 1972), suggesting that sugar reward was perceived more strongly with enhanced dopaminergic activity in the GABA-B-R3 knock-down flies. Live calcium imaging at terminal branches of the reward-related PAM neurons (i.e., PAM-γ5 and -α1) revealed the augmented sugar responses upon downregulating GABA-B-R3 (Figure 1F–H). We thus conclude that GABA-B-R3 signaling is required for negative regulation of the sugar reward.
 
 We visualized the localization of GABA-B-R3 proteins using a GFP-tagged reporter (Sarov et al., 2016). GABA-B-R3 proteins were heavily localized to the presynaptic terminals of the PAM neurons (Figure 2A–B and Figure 2—figure supplement 1A). We thus hypothesized that presynaptic inhibition of dopamine neurons within the MB controls the gain of reward signals. A single pair of the GABAergic anterior paired lateral (APL) neurons was reported to massively innervate the entire MB and to be involved in olfactory learning (Liu and Davis, 2009). Differential labeling of the PAM and APL neurons revealed that their ramifications abut on each other (Figure 2C–D). Consistently, we found enhanced reward memory in knock-down flies for glutamic acid decarboxylase 1 (Gad1) and vesicular GABA transporter (VGAT) in the APL neuron (Figure 2E). This result not only underscores the importance of GABA metabolism in the APL neurons, but suggests the role of the inhibitory microcircuit in the MB for the gain control of the reward value. We therefore examined the local inhibition hypothesis by comparing sugar responses in the dendrites and presynaptic terminals of the PAM neurons (Figure 2F and Figure 2—figure supplement 1B–C). The enhanced calcium activity upon GABA-B-R3 knock-down was much more pronounced in the presynaptic terminals (Figure 2G–H). Therefore, GABAergic signals from the APL neurons negatively control the reward gain at the output site of the PAM neurons through GABA-B-R3 signaling in the MB.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64907/elife-64907-fig2-v1.jpg)
+
+**Figure 2.:** (A) A schematic showing brain regions visualized in subsequent figures. (B) A substack projection image of double labeling of GFP-tagged GABA-B-R3 protein and PAM neurons using GABA-B-R3-sfGFP-TVPTBF, R58E02-GAL4/UAS-mCD8::RFP fly. Presynaptic localization of GABA-B-R3 protein in the γ5 and α1 (Figure 2—figure supplement 1A) compartments of the mushroom body (MB). Scale bar, 10 μm. (C–D) A substack projection image showing double labeling of the PAM and anterior paired lateral (APL) neurons visualized by VT43924-GAL4/UAS-mCD8::RFP, R58E02-LexA/LexAop-rCD2::GFP. These axonal profiles co-localize at close proximity in the MB. A single optical slice of the inset in C is magnified in D. Scale bars, 10 μm (C), 2 μm (D). (E) Increased appetitive memory score by shRNA-mediated silencing of GABA neurotransmission-related genes in the APL neurons. *p<0.05 (Sidak’s test, N = 11–13). (F) A cartoon depicting volumetric imaging from axon terminals and dendritic fields of PAM neurons using a z-objective piezo actuator. (G) Time course of calcium transients (ΔF/F0) near-simultaneously recorded from axon terminals and dendrites of PAM-γ5 neurons (Figure 2—figure supplement 1) of control (left) and GABA-B-R3 knock-down (right) flies. Gray shades indicate sugar stimulation for 3 s. Mean ± SEM, N = 5. (H) Significantly increased sugar-evoked peak calcium transients of GABA-B-R3 knock-down flies in axon terminals. *p<0.05 (Dunn’s test, N = 6, 7).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64907/elife-64907-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A substack projection image of double labeling of GFP-tagged GABA-B-R3 protein and PAM neurons using GABA-B-R3-sfGFP-TVPTBF, R58E02-GAL4/UAS-mCD8::RFP fly. Presynaptic localization of GABA-B-R3 protein in the α1 compartment of the mushroom body (MB). Scale bar, 10 μm. (B) A transverse section showing dendrites and axon terminals of PAM neurons visualized by fixed brain sample of R15A04-GAL4/UAS-mCD8::GFP flies, the depth of which approximately matches to that of C. The arrowhead and double arrowhead indicate the dendritic field and axon terminals of PAM-γ5 neurons, respectively. Scale bar, 50 μm. (C) Volumetric Ca2+ imaging of activities from axon terminals (left, double arrowhead) and dendrites (right, arrowhead) of PAM-γ5 neurons. Thresholded Ca2+ activities in response to 500 mM sucrose superimposed on the anatomy of PAM neurons (lower row). Scale bar, 50 μm.
+
 To quantify the local activity regulation in the PAM terminals, we measured calcium influx at active zones using the ratiometric calcium sensor Brp::GCaMP6s::mCherry (Kiragasi et al., 2017). This sensor is composed of GCaMP fused to calcium insensitive mCherry and targeted to active zones using the short fragment of Brp, enabling the measurement of local calcium influx at active zones (Kiragasi et al., 2017). Immunolabelling confirmed the localization of the sensor proteins to active zones of the PAM neurons in the MB (Figure 3A and Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64907/elife-64907-fig3-v1.jpg)
+
+**Figure 3.:** (A) A single optical slice showing punctate sensor localization in the mushroom body (MB) lobe of R15A04-GAL4/UAS-Brp::GCaMP6s::mCherry flies. Scale bar, 10 μm. (B) The histograms of GFP/RFP signals from nine different time points (PAM-α1 terminals) reveal a large calcium diversity among active zones and the temporal instability in the knock-down fly (right). The probability distribution of the active-zone calcium mostly followed the Gaussian distribution, characteristics of which are well represented by the mean and standard deviation (SD). Scale bar, 0.01. (C) The temporal variance of spatially averaged intensities is larger in the GABA-B-R3 knock-down PAM neurons. *p<0.001 (Mann-Whitney test, N = 24, 17). (D) Time course of odor-evoked calcium transient (mean) and the variance (SD) of PAM-α1 terminals in control (left) and GABA-B-R3 knock-down (right) flies. The blue shade indicates odor stimulation for 3 s. Mean ± SEM, N = 6–8. (E) Map of the probability distribution of active-zone calcium intensity in the PAM-α1 terminals for each individual. The abscissa and ordinate represent the mean and SD of the signal distribution, respectively. The clear inverse correlation between the mean and the variance in wild-type terminals (r = −0.82, p<10−6) may represent individually defined unique set points of activity levels. This structured individual difference is disrupted by GABA-B-R3 RNAi (r = 0.53, p=0.03). The start and end of an arrow represent the probability distribution of active-zone calcium before and during the odor stimulation, respectively. Scale bar, 0.5 in Log10(GCaMP6s/mCherry). (F) Local peaks in the PAM terminals are color-coded for their cluster sizes (right). Schematic example of the algorithm finding the cluster structure applied to a one-dimensional system (Left). Spatial distribution of calcium intensity (Left upper). Finding steepest paths from each pixel to local peaks by computing the gradient (i.e., the difference of the intensity values between neighboring pixels)(Left middle). Note that in two-dimensional systems we analyzed, each pixel had four neighboring pixels. Clustering based on the paths to local peaks (Left lower). Pixels having the same destination (i.e., local peak) are clustered together. (G) The average area per peak is significantly larger in the GABA-B-R3 knock-down flies during baseline activity (*p<0.05, Mann-Whitney test, N = 22, 17) and odor stimulation (*p<0.05, t-test, N = 15, 11).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64907/elife-64907-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Brp::GCaMP6s::mCherry (green) expressed by R15A04-GAL4 co-localizes with native Brp detected by nc82 (magenta). Scale bar, 1 μm. (B) Pseudo-color-coded distribution of active-zone calcium signals of PAM-α1 neurons at the baseline activity in control (left) and GABA-B-R3 knock-down (right) flies. Scale bar, 3 μm. (C) The histogram of active-zone calcium intensity at single representative frames of baseline activity of control (upper) and GABA-B-R3 knock-down (lower) flies, which typically follow log-normal distribution. (D) Standard deviation (SD) of the active-zone calcium intensity calculated individually. Silencing GABA-B-R3 did not alter the heterogeneity (t-test, N = 16, 11). (E) Map of the probability distribution of active-zone calcium intensity for each individual. The start and end of an arrow represent the probability distribution of active-zone calcium before and during sugar stimulation. The abscissa and ordinate represent the mean and SD of the distribution, respectively. Scale bar, 0.5 in Log10(GCaMP6s/mCherry). (F) Significantly increased peak size in GABA-B-R3 knock-down flies. See Materials and methods for details. *p<0.05 (t-test, N = 17, 22).
 
 As the basal activities of dopamine neurons represent physiological information (Ichinose et al., 2017), we characterized the regulation of active zone calcium in the PAM terminals without overt stimulation. Live imaging of punctate Brp::GCaMP6s::mCherry signals in the PAM terminals visualized a large heterogeneity of calcium levels among active zones (Figure 3B, Figure 3—figure supplement 1B and Figure 3—figure supplement 1C). This heterogeneity tended to increase upon silencing GABA-B-R3 (Figure 3—figure supplement 1D). Furthermore, we found that Brp::GCaMP6s::mCherry signals had temporal fluctuations, which was amplified by silencing GABA-B-R3 (Figure 3B and Figure 3C). GABA-B-R3 in the PAM terminals may thus stabilize the basal presynaptic activity. This suggests that GABA inhibition contributes to the robustness of activity against local perturbations.
 
@@ -45,37 +69,158 @@ To test if presynaptic GABA-B-R3 signaling controls odor representations, we exa
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64907/elife-64907-fig4-v1.jpg)
 
-**Figure 4.:** (A–D) Olfactory generalization of appetitive memory depends on the blend ratio of a contaminant to a trained odor 4-methylcyclohexanol (4MCH) (A, C) or octan-3-ol (3OCT) (B, D). Significantly broader generalization in R58E02-GAL4/UAS-GABA-B-R3-RNAi flies (A, B) and VT43924-GAL4/UAS-Gad1-RNAi flies (C, D) compared to the respective parental controls. *p<0.05; ***p<0.001 (Sidak’s test across genotypes at each blend ratio, N = 8–20 [A, B], N = 9–12 [C, D]). (E) A model for dual behavioral roles of GABA-B-R3 in the protocerebral anterior medial (PAM) terminal in the mushroom body (MB). GABA-B-R3 controls the overall gain (left) and localization (right) of sugar- and odor-evoked terminal activity of PAM neurons, respectively. Note that input sources of sugar and odor response are different. In an odor response, reciprocal PAM-KC (Kenyon cell) synapses serve as KC activity-dependent local enhancers for reward signaling from the PAM synapses. In wild-type flies, this local modulation is restricted to the PAM synapses onto the odor-activated KCs, which laterally inhibit activities of surrounding ones via KC-APL (anterior paired lateral) feedback. GABA-B-R3 knock-down in the PAM neurons eliminates this negative feedback from the APL, reducing the activity contrast within presynaptic terminals of the PAM neurons and the selectivity of memory to the rewarded odor.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.Figure 4—source data 4.
+**Figure 4.:** (A–D) Olfactory generalization of appetitive memory depends on the blend ratio of a contaminant to a trained odor 4-methylcyclohexanol (4MCH) (A, C) or octan-3-ol (3OCT) (B, D). Significantly broader generalization in R58E02-GAL4/UAS-GABA-B-R3-RNAi flies (A, B) and VT43924-GAL4/UAS-Gad1-RNAi flies (C, D) compared to the respective parental controls. *p<0.05; ***p<0.001 (Sidak’s test across genotypes at each blend ratio, N = 8–20 [A, B], N = 9–12 [C, D]). (E) A model for dual behavioral roles of GABA-B-R3 in the protocerebral anterior medial (PAM) terminal in the mushroom body (MB). GABA-B-R3 controls the overall gain (left) and localization (right) of sugar- and odor-evoked terminal activity of PAM neurons, respectively. Note that input sources of sugar and odor response are different. In an odor response, reciprocal PAM-KC (Kenyon cell) synapses serve as KC activity-dependent local enhancers for reward signaling from the PAM synapses. In wild-type flies, this local modulation is restricted to the PAM synapses onto the odor-activated KCs, which laterally inhibit activities of surrounding ones via KC-APL (anterior paired lateral) feedback. GABA-B-R3 knock-down in the PAM neurons eliminates this negative feedback from the APL, reducing the activity contrast within presynaptic terminals of the PAM neurons and the selectivity of memory to the rewarded odor.
 
 Our results indicate that presynaptic modulation of the PAM neurons is a critical component for determining the magnitude of dopaminergic reward signals. Notably, abolition of the local GABAergic input to the PAM terminals not only enhanced the internal reward intensity but compromised memory specificity (Figures 1 and 4). These behavioral alterations can be explained by a dual physiological role of GABA-B-R3, that is, the gain control and the spatial segmentation of dopaminergic reward signals in the PAM terminals (Figure 4E). As the behavioral traits caused by the downregulation of GABA-B-R3 are characteristic in optimism (Carver et al., 2010; Solvi et al., 2016), presynaptic control of reward signals may underlie such a cognitive bias. It would be fruitful to examine if a similar subcellular modulation of punishment-mediating neurons conversely leads to the pessimistic bias (Sharot et al., 2009; Bateson et al., 2011; Sharot et al., 2012; Kregiel et al., 2016; Solvi et al., 2016; Zidar et al., 2018).
 
 ## Materials and methods
 
-## Flies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GMR58E02-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 41347; FLYB: FBal0253714; RRID:BDSC_41347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GMR15A04-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 48671; FLYB: FBtp0057752; RRID:BDSC_48671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>VT043924-GAL4</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC: v201194; FLYB: FBtp0105273;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-GABA-B-R3-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 50622; FLYB: FBti0157477; RRID:BDSC_50622</td>
+      <td>FlyBase symbol:P{TRiP.HMC02989}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-mCD8::GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 32194; FLYB: FBti0131936; RRID:BDSC_32194</td>
+      <td>FlyBase symbol: P{20XUAS-IVS-mCD8::GFP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-GCaMP6s</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 42746; FLYB: FBti0151344; RRID:BDSC_42746</td>
+      <td>FlyBase symbol: P{20XUAS-IVS-GCaMP6s}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GABA-B-R3-sfGFP-TVPTBF</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>VDRC: v318614; FLYB: FBst0491638;</td>
+      <td>FlyBase symbol: PBac{fTRG00613.sfGFP-TVPTBF}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-GCaMP6s.brpS.mCherry</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 77131; FLYB: FBtp0125966; RRID:BDSC_77131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-GFP</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11122; RRID:AB_221569</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-TH</td>
+      <td>ImmunoStar</td>
+      <td>Cat# 22941; RRID:AB_1267100</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-DsRed</td>
+      <td>Clontech</td>
+      <td>Cat# 632496; RRID:AB_10013483</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-Brp</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# nc82; RRID:AB_2314866</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 5</td>
+      <td>GraphPad Software, San Diego, CA, 2007</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>MPI-CBG</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Flies
 
 Canton-S was used as a wild-type strain. w;;R58E02-GAL4, w;R58E02-LexA, and w;;R15A04-GAL4 (Jenett et al., 2012; Liu et al., 2012), yv;UAS-Grd-RNAi (#58175), yv;UAS-Lcch3-RNAi (#50668), yv;UAS-Rdl-RNAi (#52903), yv;UAS-GABA-B-R1-RNAi (#51817), yv;UAS-GABA-B-R2-RNAi (#50608), yv;UAS-GABA-B-R3-RNAi (#50622), UAS-Gad1-RNAi (#51794), and UAS-VGAT-RNAi (#41958) (Ni et al., 2011), yw;GABA-B-R3-T2A-GAL4 (#78976) (Lee et al., 2018), w;;UAS-mCD8::GFP (#32194) (Pfeiffer et al., 2010), Tub-GAL80ts (McGuire et al., 2003), w;UAS-GCaMP6s (#42746) (Chen et al., 2013), w;;LexAop-rCD2::GFP (Miyamoto et al., 2012), w;;VT043924-GAL4 (v201194) (Wu et al., 2013), GABA-B-R3-sfGFP-TVPTBF (v318614) (Sarov et al., 2016), and UAS-GCaMP6s.brpS.mCherry (#77131) (Kiragasi et al., 2017) were previously described. w;UAS-mCD8::RFP is a gift from Dr Ilona Kadow. Flies were raised at 24°C with 12:12 LD cycle. Knock-down flies were prepared as the F1 progeny of the crosses between females of w;;R58E02-GAL4 or w;UAS-Tub-GAL80ts;R58E02-GAL4 or w and males of UAS effectors or CS (Figures 1A–B, E and 4A–B and Figure 1—figure supplement 1A–B), or females of UAS effectors or w and males of w;;VT043924-GAL4 or w (Figures 2E and 4C–D). The F1 progeny was raised at 24°C, aged to 6–12 days after eclosion before experiments. For the adult-specific knock-down experiment (Figure 1B), the F1 progeny was raised at 18°C and aged to 9–14 days after eclosion. For immunohistochemistry, a female reporter strain w;;UAS-mCD8::GFP (Figure 1C–D) or w;UAS-mCD8::RFP;LexAop-rCD2::GFP (Figure 2C–D) or w;UAS-mCD8::RFP;R58E02-GAL4 (Figure 2B) or UAS-GCaMP6s.brpS.mCherry (Figure 3A and Figure 3—figure supplement 1A) was crossed to male GAL4 drivers or a reporter strain, yw;GABA-B-R3-T2A-GAL4, w;R58E02-LexA;VT043924-GAL4, GABA-B-R3-sfGFP-TVPTBF, or w;;R15A04-GAL4. Flies used for whole-mount immunohistochemistry were aged to 3–10 days after eclosion. For calcium imaging experiments, males of w;UAS-GCaMP6s,UAS-mCD8::RFP (Figures 1F–H and 2F–H) or UAS-GCaMP6s.brpS.mCherry (Figure 3B–G) were crossed to w;;R15A04-GAL4 or w;UAS-GABA-B-R3-RNAi;R15A04-GAL4 females and raised at 24°C, aged to 3–8 days after eclosion, typically. For detailed fly genotypes used for experiments, see supplementary file 1.
 
-## Behavioral assays
+### Behavioral assays
 
 The conditioning and testing protocols were as described previously (Yamagata et al., 2015; Yamagata et al., 2016). Briefly, for a normal sugar learning experiment (Figures 1A–B and 2E and Figure 1—figure supplement 1A–B), a group of approximately 50 flies in a training tube alternately received octan-3-ol (3OCT; Merck) and 4-methylcyclohexanol (4MCH; Sigma-Aldrich) for 1 min in a constant air stream with or without dried 2 M sucrose paper. For varied training duration protocol (Figure 1E and Figure 1—figure supplement 1D), flies received two odors and dried sugar alternately for defined duration (10–120 s) with an interval of 1 min between two odors. For odor generalization protocol (Figure 4A–D), flies were trained with an odor, that is, they alternately received 4MCH and paraffin oil (Sigma-Aldrich), or 3OCT and paraffin oil, for 1 min in a constant air stream with or without dried 2 M sucrose paper. Then the conditioned response of the trained flies was measured. For the normal protocol (Figures 1A–B, E and 2E, Figure 1—figure supplement 1A-B, D), flies were given a choice between CS+ and CS- for 2 min in a T maze. For generalization protocol (Figure 4A–D), flies were given a choice between a ‘trained’ odor with a respective mixture ratio of a contaminant odor (2-methylcyclohexanol [2MCH]; Sigma-Aldrich or 1-octen-3-ol [1OCT]; Sigma-Aldrich) and the solvent for 2 min in a T maze. All odors were diluted to 10% in the paraffin oil and placed in a cup with a diameter of 3 mm (OCT) or 5 mm (MCH). The memories were tested immediately after training unless otherwise stated. A learning index was then calculated by taking the mean preference of the two reciprocally trained groups. A half of the trained groups received reinforcement together with the first presented odor, and the other half with the second odor to cancel the effect of the order of reinforcement.
 
-## Brain dissection, immunohistochemistry, and sample mounting
+### Brain dissection, immunohistochemistry, and sample mounting
 
 Dissection of fly brains was performed as previously described (Kondo et al., 2020) with minor modifications. Brains of female (Figures 1C–D, 2B–D and 3A, Figure 2—figure supplement 1A–B and Figure 3—figure supplement 1A) flies were dissected in PBS, pre-fixed in 1% paraformaldehyde (PFA) in PBS on ice up to 30 min, then fixed in 2% PFA in PBS for 1 hr at room temperature. Fixed brains were washed in PBT (0.1% Triton X-100 in PBS) for 3 × 10 min. Immunostaining was performed as previously described (Kondo et al., 2020). The following primary antibodies were used at the indicated dilution: rabbit anti-GFP (1:1000; Invitrogen; A11122), mouse anti-TH (1:100; ImmunoStar Inc; 22941), rabbit anti-DsRed (1:200; Clontech, 632496), or mouse anti-Brp (1:20; DSHB; nc82). The following secondary antibodies were used at the indicated dilution: AlexaFluor-488 goat anti-rabbit (1:1000; Invitrogen; A11034), Cy3 goat anti-rabbit (1:200; Jackson Labs), AlexaFluor-568 goat anti-mouse (1:1000; Invitrogen; 11004), AlexaFluor-568 goat anti-rabbit (1:250; Invitrogen; A11036), AlexaFluor-633 goat anti-mouse (1:200; Invitrogen; A21052). In Figure 1C and D and Figure 2—figure supplements 1B, 86% glycerol was used as a mounting medium, and the native GFP fluorescence was imaged without immunohistochemistry. In Figures 2B–D and 3A, Figure 2—figure supplement 1A and Figure 3—figure supplement 1A, SeeDB2 (Ke et al., 2016) was used as mounting medium and either native or immunostained fluorescence was imaged.
 
-## Confocal imaging
+### Confocal imaging
 
 Imaging was performed on the Olympus FV1200 confocal microscope with GaAsP sensors. A 30×/1.05 silicone immersion objective (UPLSAPO30XS, Olympus) (Figure 1C–D and Figure 2—figure supplement 1B), or a 60×/1.42 oil immersion objective (PLAPON60XO, Olympus) (Figures 2B–D and 3A, Figure 2—figure supplement 1A and Figure 3—figure supplement 1A) was used for scanning specific regions of interest (ROIs). A final voxel size of the image was 0.17 × 0.17 × 0.76 μm3 (Figure 1C–D), 0.11 × 0.11 × 0.45 μm3 (Figure 2B and Figure 2—figure supplement 1A), 0.21 × 0.21 × 0.43 μm3 (Figure 2C–D), 0.10 × 0.10 × 0.45 μm3 (Figure 3A), 0.51 × 0.51 × 0.68 μm3 (Figure 2—figure supplement 1B), and 0.79 × 0.79 × 0.37 μm3 (Figure 3—figure supplement 1A), respectively. Confocal stacks were analyzed with the open-source software ImageJ (National Institute of Health) and Fiji (Schindelin et al., 2012). Where appropriate, 2D/3D image deconvolution was applied using Diffraction PSF 3D and Parallel Iterative Deconvolution plugins in ImageJ.
 
-## Fly preparation and in vivo calcium imaging
+### Fly preparation and in vivo calcium imaging
 
 Flies were treated as described in Hiroi et al., 2013; Shiozaki and Kazama, 2017 with some modifications. The fly was briefly (<1 min) anesthetized on ice and placed in a custom-made holding device on a Peltier plate (CP-085, Scinics) held at 4°C. The head capsule was fixed to the dish by UV curing optical adhesives (NOA68, Thorlabs). The proboscis was glued onto the capsule to eliminate brain movement. Forelegs interfering sugar feeding during recordings were removed. A small window on the top of the head capsule was opened using sharp forceps in Drosophila saline (103 mM NaCl [31320–05, Nacalai tesque], 3 mM KCl [28514–75, Nacalai tesque], 5 mM TES [32810–55, Nacalai tesque], 8 mM Trehalose [Tokyo kasei kogyo], 10 mM D-glucose [16806–25, Nacalai tesque], 26 mM NaHCO3 [31213–15, Nacalai tesque], 1 mM NaH2PO4 [A0110846 010, Merch], 1.5 mM CaCl2 [C5080, Sigma-Aldrich], 4 mM MgCl2 [M2670, Sigma-Aldrich], ~270 mol/kg, pH ~7.2). Air sacs and fat bodies covering the brain surface were carefully removed.
 
 A laser scanning confocal microscope (A1R, Nikon) equipped with a 30×/1.1 water immersion objective (Apo LWD 25×, Nikon) and a Piezo nanopositioner (Nano-F450, MCL Inc) combined with a Nano-Driveone controller (MCL Inc) was used for live imaging. GCaMP6s and mCD8::RFP or mCherry were sequentially excited at 488 and 561 nm, respectively. The emission light was collected onto GaAsP detectors using dichroic mirrors and emission filters (BP500–550 and BP570-620). Transverse sections of the MB lobes and the superior medial protocerebrum were scanned at a resolution of 0.5 μm/pixel (512 × 128 pixels) at 333 ms/frame (Figure 1F–H), 0.5 μm/pixel (512 × 256 pixels) at 1 s/frame (Figure 2G–H and Figure 2—figure supplement 1C), or 0.33 μm/pixel (512 × 128 pixels) at 1 s/frame (Figure 3B–E and Figure 3—figure supplement 1A–D) with line scans with 4× (Figures 1F–H and 2G–H and Figure 2—figure supplement 1C) or 16× (Figure 3B–E and Figure 3—figure supplement 1) averages using the resonant scanning mode. The pinhole was set to 2.5 AU (561 nm). For 3D imaging, two z sections (ca. 100 μm interval) were scanned using a piezoelectric motor. To record calcium responses to sugar and odors, images were acquired for 20 or 30 s and saved for later image processing. For sugar stimulation, a droplet of 500 mM sucrose deposited on a tip of Microloader pipette tip (Eppendorf) was presented to the proboscis for 3 s using a micromanipulator (UN-3C, Narishige). Sugar stimulation to flies was monitored with a USB camera (Grasshopper3, FLIR) mounted with a zoom lens (MACRO ZOOM 0.3×−1 × 1:4.5, Computar) and captured by FlyCapture2 (FLIR). Odor stimulation has been made manually using a 50 ml syringe containing a piece of filter paper (1 × 2 cm2) soaked with pure or 10 times diluted 4MCH and 3OCT. For each stimulation, ~15 ml odor contained air was delivered to a fly in 3 s through a 4 mm silicon tube placed ca. 10 mm away from the fly head.
 
-## Data analyses
+### Data analyses
 
-All the acquired images were first processed with Fiji. An object in each recording was stabilized by TurboReg plugin (Thévenaz et al., 1998) using mCD8::RFP or mCherry signal. ROIs to be involved in later calculations were defined by mCD8::RFP signal in the left or right hemisphere. In Figures 1F–H and 2F–H and Figure 2—figure supplement 1C, GCaMP6s signal was used as a fluorescent F value. The ΔF/F0 was calculated as:ΔF/F0=Ft−F0F0,where Ft and F0 denote fluorescent values at time frame t and baseline (i.e., ~7 frames before stimulation), respectively. To highlight MB compartments that responded to stimulations (Figure 1F), a time series projection of the ΔF/F0 during stimulation (for 3 s) was thresholded and superimposed on a projection image of mCD8::RFP signal at respective frames.
+All the acquired images were first processed with Fiji. An object in each recording was stabilized by TurboReg plugin (Thévenaz et al., 1998) using mCD8::RFP or mCherry signal. ROIs to be involved in later calculations were defined by mCD8::RFP signal in the left or right hemisphere. In Figures 1F–H and 2F–H and Figure 2—figure supplement 1C, GCaMP6s signal was used as a fluorescent F value. The ΔF/F0 was calculated as:
+
+$$
+ΔF/F_{0}=\frac{F_{t}−F_{0}}{F_{0}},
+$$
+
+where Ft and F0 denote fluorescent values at time frame t and baseline (i.e., ~7 frames before stimulation), respectively. To highlight MB compartments that responded to stimulations (Figure 1F), a time series projection of the ΔF/F0 during stimulation (for 3 s) was thresholded and superimposed on a projection image of mCD8::RFP signal at respective frames.
 
 After XY registration, the Brp::GCaMP6s signal was divided by mCherry (GCaMP6s/mCherry) to normalize the calcium signal by Bruchpilot abundance. An ROI for the α1 compartment of the MB was defined by mCherry signal. Pixels devoid of an mCherry fluorescence value were censored. The image stacks were then imported to Matlab (MathWorks) and log-transformed.
 
@@ -83,8 +228,14 @@ To evaluate the spatial pattern of the calcium intensity in the PAM-α1 terminal
 
 In addition to the cluster size analysis above, we used another measure (i.e., peak size) to quantify the spatial structure of the calcium intensity. The peak size was computed for each image as follows. First, we collected the pixels that had an intensity value larger than 95 percentile of the entire pixels in each image. Then, we identified the clusters of these selected pixels by checking if multiple pixels (peaks) were adjacent to each other at the top, bottom, left, or right. Finally, we counted the number of pixels in each cluster and computed the average. Similarly to the cluster size measure above, we normalized this value by using a null model. We computed the peak size for 1000 randomized images that were obtained by shuffling the intensity values in the pixels in the original image. The results were averaged over the 1000 null data, which we used for the normalization.
 
-## Statistics
+### Statistics
 
 Statistics were performed by Eclipse (Eclipse foundation) and Prism5 (Graphpad). For the data points that did not violate the assumption of normality and homogeneity of variance (D’Agostino and Brown-Forsythe test), parametric statistics were applied. The data points that were significantly different from the normal distribution were analyzed with nonparametric statistics. The significance level of statistical tests was set to 0.05. For details, see Supplementary file 1.
 
-To estimate the acquisition curve dynamics (Figure 1E), hyperbola curve fitting was applied:LI=AtB+twhere A and B are constants, t is the training duration, and LI is learning index. ‘A’ denotes the theoretical maximum value of LI (i.e., plateau) and ‘B’ the training duration required to reach the half of the maximum (i.e., acquisition speed). To test the statistical significance of observed differences in A and B (ΔAobs. and ΔBobs.) between genotypes, we performed permutation tests (Knijnenburg et al., 2009); we randomly shuffled the experimental dataset by reassigning the group labels and fitted a hyperbola function to the data to calculate the differences in A and B between groups (ΔAperm. and ΔBperm.). The procedure was repeated over 2000 runs to generate the null distributions of ΔAperm. and ΔBperm. for testing the statistical significance of ΔAobs. and ΔBobs.
+To estimate the acquisition curve dynamics (Figure 1E), hyperbola curve fitting was applied:
+
+$$
+LI=\frac{At}{B+t}
+$$
+
+where A and B are constants, t is the training duration, and LI is learning index. ‘A’ denotes the theoretical maximum value of LI (i.e., plateau) and ‘B’ the training duration required to reach the half of the maximum (i.e., acquisition speed). To test the statistical significance of observed differences in A and B (ΔAobs. and ΔBobs.) between genotypes, we performed permutation tests (Knijnenburg et al., 2009); we randomly shuffled the experimental dataset by reassigning the group labels and fitted a hyperbola function to the data to calculate the differences in A and B between groups (ΔAperm. and ΔBperm.). The procedure was repeated over 2000 runs to generate the null distributions of ΔAperm. and ΔBperm. for testing the statistical significance of ΔAobs. and ΔBobs.

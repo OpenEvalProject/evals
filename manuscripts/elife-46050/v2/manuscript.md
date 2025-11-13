@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.46050.001 The striatum is critically involved in value-based decision making. However, it is unclear how striatal direct and indirect pathways work together to make optimal choices in a dynamic and uncertain environment. Here, we examined the effects of selectively inactivating D1 receptor (D1R)- or D2 receptor (D2R)-expressing dorsal striatal neurons (corresponding to direct- and indirect-pathway neurons, respectively) on mouse choice behavior in a reversal task with progressively increasing reversal frequency and a dynamic two-armed bandit task. Inactivation of either D1R- or D2R-expressing striatal neurons impaired performance in both tasks, but the pattern of altered choice behavior differed between the two animal groups. A reinforcement learning model-based analysis indicated that inactivation of D1R- and D2R-expressing striatal neurons selectively impairs value-dependent action selection and value learning, respectively. Our results suggest differential contributions of striatal direct and indirect pathways to two distinct steps in value-based decision making.
+The striatum is critically involved in value-based decision making. However, it is unclear how striatal direct and indirect pathways work together to make optimal choices in a dynamic and uncertain environment. Here, we examined the effects of selectively inactivating D1 receptor (D1R)- or D2 receptor (D2R)-expressing dorsal striatal neurons (corresponding to direct- and indirect-pathway neurons, respectively) on mouse choice behavior in a reversal task with progressively increasing reversal frequency and a dynamic two-armed bandit task. Inactivation of either D1R- or D2R-expressing striatal neurons impaired performance in both tasks, but the pattern of altered choice behavior differed between the two animal groups. A reinforcement learning model-based analysis indicated that inactivation of D1R- and D2R-expressing striatal neurons selectively impairs value-dependent action selection and value learning, respectively. Our results suggest differential contributions of striatal direct and indirect pathways to two distinct steps in value-based decision making.
 
 ## Introduction
 
@@ -22,17 +22,41 @@ The striatum is critically involved in value-based decision making, which consis
 
 ## Results
 
-## Reversal task
+### Reversal task
 
 We used mice harboring a D1R-Cre or D2R-Cre construct to selectively inactivate D1R- or D2R-expressing striatal neurons, respectively. We bilaterally injected a double-floxed (DIO) Cre-dependent adeno-associated virus (AAV) vector carrying a modified form of the human M4 muscarinic receptor (DIO-hM4Di-mCherry) into the dorsal striatum of 31 D1R-Cre and 30 D2R-Cre mice. As controls, we bilaterally injected AAV virus carrying enhanced green fluorescent protein (DIO-eGFP) into the dorsal striatum of separate groups of D1R-Cre and D2R-Cre mice (n = 5 each). Histological examinations after completion of behavioral experiments revealed that mCherry and eGFP were expressed in the dorsal striatum and EP in D1R-Cre mice and in the dorsal striatum and GP in D2R-Cre mice, confirming their selective expression in direct- or indirect-pathway SPNs, respectively (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46050/elife-46050-fig1-v2.jpg)
+
+**Figure 1.:** (a) Representative brain sections showing h4MDi-mCherry expression in the dorsal striatum and EP in D1R-Cre mice (left), and in the dorsal striatum and GP in D2R-Cre mice (right). (b) Representative brain sections showing eGFP expression in the dorsal striatum and EP in D1R-Cre mice (left), and in the dorsal striatum and GP in D2R-Cre mice (right).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46050/elife-46050-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) A representative coronal section showing immunolabeling for choline acetyltransferase (ChaT; red) and fluorescence labeling for green fluorescent protein (GFP; green). This example was obtained from a D2R-Cre mouse. Scale bar, 50 μm. (b) Examples of parvalbumin (PV) and GFP co-labeled striatal neurons. Scale bar, 10 μm. (c) Examples of ChaT and GFP co-labeled striatal neurons. Scale bar, 10 μm. (d) Percentages of co-labeled striatal neurons. Percentages were similar between D1R-Cre and D2R-Cre mice (Fisher’s exact test, ChaT, p = 0.572; PV, p = 0.712).
+
 Twenty or 21 d after virus injection, D1R-Cre (n = 26) and D2R-Cre (n = 26) mice were trained in a reversal task in an operant chamber with progressively increasing reversal frequency. This was a self-paced instrumental learning task in which the animal initiates a trial by poking its nose into the central hole and then chooses freely either the left or right nose-poke hole to obtain a water reward (Figure 2a). D1R-Cre and D2R-Cre mice were each divided into three groups—CNO group, in which clozapine-N-oxide (CNO) was injected into hM4Di-expressing mice; DMSO group, in which dimethyl sulfoxide (DMSO, vehicle) was injected into hM4Di-expressing mice; and eGFP-CNO group, in which CNO was injected into eGFP-expressing mice (D1R-Cre mice, n = 11, 10 and 5 for CNO, DMSO and eGFP-CNO groups, respectively; D2R-Cre mice, n = 11, 10 and 5 for CNO, DMSO and eGFP-CNO groups, respectively). Mice were intraperitoneally injected daily with DMSO (2.5–3%, 0.5 ml/kg) or CNO (5 mg/kg) 40 min prior to behavioral testing. For each training stage and each animal group, sessions with mean trial durations greater than three standard deviations (SDs) from the mean of the corresponding population (i.e., trial-duration outliers) were excluded from the analysis (total deleted sessions: D1R-Cre mice, 4 of 190 DMSO sessions, 7 of 209 CNO sessions and 0 of 95 eGFP-CNO sessions; D2R-Cre mice: 3 of 190 DMSO sessions, 5 of 209 CNO sessions and 1 of 95 eGFP-CNO sessions).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46050/elife-46050-fig2-v2.jpg)
+
+**Figure 2.:** (a) Behavioral task. Following nose poke in the lit central hole, the animal was allowed to choose freely between two targets to obtain a water reward. (b) Daily performances (means ± SEM across animals) of the three animal groups (CNO, DMSO and eGFP-CNO) are shown separately for D1R-Cre and D2R-Cre mice. (c) Mean (± SEM across animals) performances of the three animal groups during each stage. Circles, data for individual animals. P-values are indicated for the main effect of animal group (Group) and the effect of mouse line ×animal group interaction (Intx) (two-way between-groups ANOVA). Asterisks indicate the results of Bonferroni post-hoc tests (**p<0.01; ***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46050/elife-46050-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** It is unlikely that differences in behavioral performance among the three animal groups are attributable to differences in trial duration. First, even though trial duration varied across animal groups, mean trial durations of the three animal groups did not match their behavioral performances (a). Second, similar results were obtained in comparisons of behavioral performances of CNO and DMSO animal groups after matching their trial durations (b,c). We could not perform the same trial duration-matching analysis between CNO and eGFP-CNO D2R-Cre animal groups because the overlap in trial duration distribution between the two groups was relatively small. Note, however, that trial duration was shorter, rather than longer, in CNO compared with eGFP-CNO D2R-Cre animal groups. Furthermore, an additional test revealed that the performance of eGFP D2R-Cre mice was similar under CNO-injection and no-injection conditions (d). Also note that trial duration was not significantly different between CNO and eGFP-CNO D1R-Cre animal groups during stages 4 and 5 (a). Collectively, these results indicate that impaired performance following D1R or D2R neuronal inactivation cannot be attributed to impaired movement of the animals. (a) Mean (± SD) trial durations of the three animal groups during the reversal task. *p<0.05, **p<0.01, ***p<0.001 (one-way ANOVA followed by Bonferroni post-hoc tests). (b) Mean trial durations were matched between CNO and DMSO animal groups for each stage of the reversal task for each mouse line by deleting long trial-duration sessions of CNO mice and short trial-duration sessions of DMSO mice; numbers above bars indicate the number of sessions deleted from the total of 418 CNO-hM4Di sessions and 380 DMSO-hM4Di sessions. Error bars, SD. (c) Mean (± SEM) percentages of correct choices for trial duration-matched CNO and DMSO animal groups. The format is the same as that in Figure 2. ***p<0.001 (two-way between-groups ANOVA, stage 4, main effect of mouse line, F(1,35) = 4.29, p = 0.045; main effect of drug, F(1,35) = 37.45, p = 3.9 × 10−7; mouse line × drug interaction, F(1,35) = 2.19, p = 0.147; stage 5, main effect of mouse line, F(1,35) = 0.26, p = 0.610; main effect of drug, F(1,35) = 31.2, p = 2.7 × 10−6; mouse line × drug interaction, F(1,35) = 1.08, p = 0.305). (d) Performances of eGFP D1R-Cre and D2R-Cre mice with and without CNO injection. The target location was reversed twice in each session (2 × within session reversal). Left, daily performances; right, mean (± SEM) performances. The CNO behavioral data is identical to that during stage five in Figure 2.
 
 All animal groups learned to choose the rewarding target (either left or right; counterbalanced across animals) during the initial 3 d of training (stage 1). After reversal of the rewarding target, all animal groups learned to choose the other rewarding target over 4 d of training (stage 2). Performances of the three animal groups were also similar during across-session reversal (reversal of the rewarding target at the beginning of each daily session; stage 3; two-way between-groups ANOVA, main effect of mouse line, F(1,46) = 2.8, p = 0.101; main effect of animal group, F(2,46) = 2.04, p = 0.141; mouse line × animal group interaction, F(2,46) = 0.15, p = 0.858). However, performance of the CNO group was significantly lower compared with other animal groups in stage 4 (main effect of mouse line, F(1,46) = 3.64, p = 0.063; main effect of animal group, F(2,46) = 58.54, p = 2.3 × 10−13; mouse line × animal group interaction, F(2,46) = 3.58, p = 0.036; post-hoc Bonferroni test, D1R-Cre mice, CNO vs. DMSO, p = 9.9 × 10−8, CNO vs. eGFP-CNO, p = 2.1 × 10−8, DMSO vs. eGFP-CNO, p = 0.089; D2R-Cre mice, CNO vs. DMSO, p = 0.003, CNO vs. eGFP-CNO, p = 3.6 × 10−5, DMSO vs. eGFP-CNO, p = 0.326) and stage 5 (main effect of mouse line, F(1,46) = 0.11, p = 0.747; main effect of animal group, F(2,46) = 39.32, p = 1.1 × 10−10; mouse line × animal group interaction, F(2,46) = 0.05, p = 0.954; post-hoc Bonferroni test, CNO vs. DMSO, p = 2.1 × 10−8, CNO vs. eGFP-CNO, p = 2.9 × 10−9, DMSO vs. eGFP-CNO, p = 0.195; Figure 2b,c), in which the target location was changed one or two times during each daily session (within-session reversal). Mean trial durations varied substantially so that it was difficult to match them across the three animal groups. However, further analysis revealed that the performance deficits following D1R or D2R neuronal inactivation could not be attributed to differences in trial duration across animal groups (Figure 2—figure supplement 1). In sum, mice in all groups learned to choose the rewarding target as long as the location of the rewarding target did not change within a session. However, as the frequency of reversal increased such that the target location changed within a session, the performance of the CNO group became significantly impaired relative to that of the other groups.
 
-## Dynamic two-armed bandit task
+### Dynamic two-armed bandit task
 
 Having established that inactivation of D1R- or D2R-expressing striatal neurons impairs reversal learning and that this is not attributable to a nonspecific effect of CNO using separate groups of animals, we examined effects of inactivating D1R- or D2R-expressing striatal neurons in a dynamic two-armed bandit (TAB) task (Figure 3a) by injecting the same animal with DMSO and CNO on alternative days prior to daily sessions (10 sessions each). This allowed us to make within-subject comparisons between the effects of CNO and DMSO injection. We used some animals (five CNO and five DMSO D1R-Cre mice; five CNO and five DMSO D2R-Cre mice) that had been used in the reversal task (>7 d interval between the two tasks) as well as naive animals (10 D1R-Cre and nine D2R-Cre mice). For each treatment group, sessions with mean trial durations > 3 SDs from the mean of the corresponding treatment group were excluded from the analysis (deleted sessions: D1R-Cre mice, 3 of 200 DMSO sessions and 2 of 200 CNO sessions; D2R-Cre mice: 4 of 190 DMSO sessions and 6 of 190 CNO sessions). In addition, mean trial durations were matched between CNO and DMSO sessions by deleting long trial-duration CNO sessions (D1R-Cre mice, 24 of 198; D2R-Cre mice, 17 of 184) and short trial-duration DMSO sessions (D1R-Cre mice, 20 of 197; D2R-Cre mice, 4 of 186).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46050/elife-46050-fig3-v2.jpg)
+
+**Figure 3.:** (a) Representative TAB-task session (D1R-Cre mouse with DMSO injection). Tick marks indicate trial-by-trial choices of the animal (top, left choice; bottom, right choice; long, rewarded; short, unrewarded). Gray vertical lines denote block transitions. Numbers indicate block reward probabilities of left and right targets. The gray line indicates actual choices of the animal, shown as the probability of choosing the left goal (PL) in a moving average of 10 trials. The black line indicates PL, predicted by the Q-learning model. (b–d) Proportions (%) of rewarded trials (P(R)), higher-reward–probability target choices (P(H)), win-stay (P(WS)), and lose-switch (P(LS)) were compared between DMSO and CNO sessions for all trials (b), dynamic-state trials (c), and steady-state trials (d) (means ± SEM across animals). Gray circles and connecting lines, individual animal data. P-values are indicated for those measures with significant main effects of drug and/or mouse line × drug interaction (Intx) effects (two-way mixed-design ANOVA). Asterisks indicate the results of Bonferroni post-hoc tests (**p<0.01; ***p<0.001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46050/elife-46050-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Gray circles indicate the probabilities of choosing the lower-reward–probability target (Plower) during 10 trials before block transition in the TAB task. Probabilities were computed using all choice data of DMSO or CNO sessions. None of the slopes of logistic regression (solid lines) was significantly different from zero.
 
 In the dynamic TAB task, each choice was associated with a different probability of reward that was kept constant within a block of trials, but changed across blocks without any sensory cues. Hence, the task required the animal to discover reward probabilities and the optimal choice based on the history of past choices and their outcomes. As shown previously in a similar TAB task (Jeong et al., 2018), the probability of choosing the lower-reward–probability target did not increase as a block transition approached, arguing against the possibility that animals were able to estimate the time of reversal (Figure 3—figure supplement 1). Consistent with this finding, animal choice behavior in this task was well captured by the Q-learning model, a simple reinforcement learning model (Sutton and Barto, 1998) (Figure 3a). All animals were over-trained in the TAB task (~3 wk) before drug injection. CNO and DMSO were then injected on alternate days with either drug injected on the first day (counterbalanced across animals). We assessed behavioral performance by examining the proportions of rewarded trials and higher-reward–probability target choices (P(R) and P(H), respectively). We found a significant main effect of drug without a significant mouse line × drug interaction effect on P(R) (two-way mixed-design ANOVA, main effect of mouse line, F(1,37) = 6.214, p = 0.017; main effect of drug, F(1,37) = 32.636, p = 1.5 × 10−6; mouse line × drug interaction, F(1,37) = 0.530, p = 0.471) as well as P(H) (main effect of mouse line, F(1,37) = 4.020, p = 0.052; main effect of drug, F(1,37) = 31.591, p = 2.1 × 10−6; mouse line × drug interaction, F(1,37) = 0.0004, p = 0.984; Figure 3b). These results indicate that inactivating either D1R- or D2R-expressing striatal neurons impairs performance in the TAB task.
 
@@ -40,9 +64,17 @@ To explore how D1R- and D2R-expressing neuronal inactivation impairs performance
 
 In the steady state, we found significant mouse line × drug interaction effects on P(H) (main effect of mouse line, F(1,37) = 0.009, p = 0.926; main effect of drug, F(1,37) = 9.0145, p = 0.005; mouse line × drug interaction, F(1,37) = 5.1513, p = 0.029) and P(LS) (main effect of mouse line, F(1,37) = 0.853, p = 0.362; main effect of drug, F(1,37) = 2.9786, p = 0.093; mouse line × drug interaction, F(1,37) = 8.735, p = 0.005), but not on P(R) (main effect of mouse line, F(1,37) = 0.921, p = 0.344; main effect of drug, F(1,37) = 5.6916, p = 0.022; mouse line × drug interaction, F(1,37) = 1.6644, p = 0.205) or P(WS) (main effect of mouse line, F(1,37) = 0.094, p = 0.761; main effect of drug, F(1,37) = 13.05, p = 9.0 × 10−4; mouse line × drug interaction, F(1,37) = 4.0786, p = 0.051). Post-hoc Bonferroni tests revealed significant CNO effects on P(H) and P(LS) in D1R-Cre, but not D2R-Cre, mice (P(H), p = 5.6 × 10−4 and 0.612 in D1R-Cre and D2R-Cre mice, respectively; P(LS), p = 0.002 and 0.396, respectively). Because the effect of mouse line × drug interaction on P(WS) was near the conventional criterion for significance (p = 0.051), we also performed post-hoc tests for this measure. CNO effect on P(WS) was significant in D1R-Cre, but not D2R-Cre, mice (p = 2.6 × 10−4 and 0.273, respectively; Figure 3c). In sum, we found CNO effects that are selective between D1R-Cre and D2R-Cre mice for some behavioral measures. CNO significantly decreased P(R) in D2R-Cre, but not D1R-Cre, mice in the dynamic state, and significantly decreased P(H), P(WS) and P(LS) in D1R-Cre, but not D2R-Cre, mice in the steady state. To test the likelihood of finding three or more significant interaction effects by chance, we randomly assigned D1-Cre and D2R-Cre mice into two animal groups and repeated the same analysis (total eight ANOVAs; P(R), P(H), P(WS) and P(LS) in the dynamic and steady states). Out of 100 such permutations, we found no case in which significant animal group × drug interaction effect was found in three or more ANOVAs, indicating that our finding is unlikely to be obtained by chance.
 
-## Model-based analysis
+### Model-based analysis
 
 Differences in the pattern of CNO effects on animal choice behavior during dynamic and steady states between D1R-Cre and D2R-Cre mice raises the possibility that D1R- and D2R-expressing striatal neurons may contribute differently to the neural processes underlying value-based decision making. To further explore this possibility, we analyzed animal-choice data using the Q-learning model, a reinforcement learning model that has two free parameters: learning rate (α) and randomness in action selection (β). The former determines the extent to which newly acquired information overrides old information, and the latter determines the degree of value-dependent action selection. We found that CNO significantly increased the randomness in action selection (or decreased value-dependent action selection) in D1R-Cre, but not D2R-Cre, mice (two-way mixed-design ANOVA, main effect of mouse line, F(1,37) = 0.398, p = 0.532; main effect of drug, F(1,37) = 8.8886, p = 0.005; mouse line × drug interaction, F(1,37) = 7.2601, p = 0.011; post-hoc Bonferroni test, CNO vs. DMSO, D1R-Cre mice, p = 2.4 × 10−4, D2R-Cre mice, p = 0.842). We also found that CNO significantly decreased learning rate in D2R-Cre, but not D1R-Cre, mice (main effect of mouse line, F(1,37) = 1.303, p = 0.261; main effect of drug, F(1,37) = 6.4289, p = 0.016; mouse line × drug interaction, F(1,37) = 5.9142, p = 0.020; post-hoc Bonferroni test, CNO vs. DMSO, D1R-Cre mice, p = 0.941, D2R-Cre mice, p = 0.001; Figure 4a). These results were consistent across several variants of the Q-learning model containing additional parameters (Figure 4—figure supplement 1; see Supplementary file 1 for results of model comparisons). Collectively, these findings indicate that inactivation of D1R-expressing striatal neurons selectively impairs value-dependent action selection and inactivation of D2R-expressing striatal neurons selectively impairs value learning.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46050/elife-46050-fig4-v2.jpg)
+
+**Figure 4.:** (a) Learning rate (α) and randomness in action selection (β), estimated from behavioral data during the TAB task, were compared between DMSO and CNO sessions (means ± SEM across animals). (b) Top, trial-by-trial action values during the initial 15 trials after block transition. Bottom, mean (± SEM across animals) action values in the dynamic state. (c) Top, trial-by-trial action values during the last 10 trials of a block. Bottom, mean (± SEM across animals) action values in the steady state. Gray circles and connecting lines, individual animal data. Asterisks indicate the results of Bonferroni post-hoc tests (*p<0.05; **p<0.01; ***p<0.001) for those measures with significant mouse line × drug interaction (Intx) effects (two-way mixed-design ANOVA).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46050/elife-46050-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Coefficients (means ± SEM across animals) of model parameters are shown for models 1–6 (see Materials and methods). In all models, CNO significantly increased randomness in action selection in D1R-Cre mice and significantly decreased learning rate in D2R-Cre mice. Left, D1R-Cre mice; right, D2R-Cre mice. α, learning rate; αpos, learning rate for positive outcome (rewarded trials); αneg, learning rate for negative outcome (unrewarded trials); β, randomness in action selection; VL, choice bias; WS, win-stay; LS, lose-switch; ε and ρ, parameters for uncertainty-based exploration (see Materials and methods). P-values are indicated for those measures with significant main effects of drug and/or mouse line × drug interaction (Intx) effects (two-way mixed-design ANOVA). Asterisks indicate the results of Bonferroni post-hoc tests (*p<0.05; **p<0.01; ***p<0.001).
 
 We also tested predictions of the above findings. In D2R-Cre mice, CNO is expected to slow the rate of action value change across trials after block transition because learning rate is reduced. However, during late trials after block transition (i.e., after sufficient learning), the magnitude of action values should be similar between CNO- and DMSO-injected sessions. In D1R-Cre mice, the effect of CNO on action value is expected to be weak because any effect of CNO on action value would be only indirect via its effect on action selection. To test these predictions, we compared action values for high- and low-probability reward targets (Qhigh and Qlow, respectively) between CNO and DMSO sessions for the initial 15 trials after block transition and the last 10 trials before block transition. We used blocks 2–4 for this analysis. Qhigh changed more slowly after block transition in CNO than DMSO sessions such that the mean Qhigh value in the dynamic state was significantly smaller in CNO compared with DMSO sessions in D2R-Cre, but not D1R-Cre, mice (two-way mixed-design ANOVA, main effect of mouse line, F(1,37) = 12.133, p = 0.001; main effect of drug, F(1,37) = 5.5095, p = 0.024; mouse line × drug interaction, F(1,37) = 14.147, p = 5.8 × 10−4; post-hoc Bonferroni test, CNO vs. DMSO, D1R-Cre mice, p = 0.318, D2R-Cre mice, p = 1.3 × 10−4; Figure 4b). In D1R-Cre mice, Qhigh was slightly higher during a few trials after block transition in CNO sessions compared with DMSO sessions (Figure 4b), but this can be explained by less value-dependent action selection in CNO sessions (i.e., greater chance of choosing the higher-reward–probability target immediately after block transition), which would increase the chance of updating the action value of the higher-reward–probability target. No significant effect of CNO was found on Qlow after block transition (main effect of mouse line, F(1,37) = 0.299, p = 0.588; main effect of drug, F(1,37) = 0.2265, p = 0.637; mouse line × drug interaction, F(1,37) = 0.2891, p = 0.594; Figure 4b), suggesting preferential contributions of striatal D2R-expressing neurons to learning from positive outcomes (Bayer and Glimcher, 2005; Fiorillo, 2013) (see also Figure 4—figure supplement 1). As expected, Qhigh and Qlow were similar between CNO and DMSO sessions in the steady state in D1R-Cre as well as D2R-Cre mice (Qhigh, main effect of mouse line, F(1,37) = 4.881, p = 0.033; main effect of drug, F(1,37) = 0.54679, p = 0.464; mouse line × drug interaction, F(1,37) = 0.57919, p = 0.452; Qlow, main effect of mouse line, F(1,37) = 1.786, p = 0.190; main effect of drug, F(1,37) = 0.64447, p = 0.427; mouse line × drug interaction, F(1,37) = 0.41336, p = 0.524; Figure 4c). These results are consistent with the possibility that inactivation of D1R-expressing striatal neurons selectively impairs value-dependent action selection, whereas inactivation of D2R-expressing striatal neurons impairs value learning.
 
@@ -60,15 +92,81 @@ Our results are not entirely consistent with previous findings. We previously sh
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>STOCK Tg(Drd1-cre)EY217Gsat/Mmucd</td>
+      <td>Gene Expression Nervous System Atlas</td>
+      <td>RRID:MMRRC_030778-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>STOCK Tg(Drd2-cre)ER44Gsat/Mmucd</td>
+      <td>Gene Expression Nervous System Atlas</td>
+      <td>RRID:MMRRC_017263-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV8-hSyn-DIO-hM4Di-mCherry</td>
+      <td>Addgene (PMID:21364278)</td>
+      <td>RRID:Addgene_44362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-hSyn-DIO-eGFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_50457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>clozapine-N-oxide</td>
+      <td>TOCRIS</td>
+      <td>Cat. #:4936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dimethyl sulfoxide</td>
+      <td>TOCRIS</td>
+      <td>Cat. #:3176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab 9.4</td>
+      <td>Matworks</td>
+      <td>R2018a</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 C57BL/6J BAC transgenic mouse lines expressing Cre recombinase under control of dopamine D1R or D2R (Drd1-EY217 and Drd2-ER44, respectively) were obtained from Gene Expression Nervous System Atlas. The animals were extensively handled and then water-deprived so that their bodyweights were maintained at ~80% of ad libitum levels throughout the experiments. Each mouse was housed in an individual home cage, and all experiments were performed in the dark phase of a 12 hr light/dark cycle. A total of 31 D1R-Cre and 30 D2R-Cre mice were used for expression of h4DMi-mCherry in the striatum. Of these, 11 D1R-Cre and 11 D2R-Cre mice were tested in the reversal task only, 10 D1R-Cre and nine D2R-Cre mice were tested in the dynamic TAB task only, and 10 D1R-Cre and 10 D2R-Cre mice were tested in both the reversal and TAB tasks. The mice tested in the reversal task were assigned randomly to CNO- or DMSO-treatment groups. An additional five D1R-Cre and five D2R-Cre mice were used for expression of eGFP in the striatum and were tested in the reversal task only. Only male mice were used in the present study and all were 10–15 wk old at the time of virus injection surgery. All animal care and experimental procedures were performed in accordance with protocols approved by the directives of the Animal Care and Use Committee of Korea Advanced Institute of Science and Technology (approval number KA2018-08).
 
-## Virus injection
+### Virus injection
 
 Mice were anesthetized with isoflurane (1.0–1.2% [vol/vol] in 100% oxygen), and two burr holes were made bilaterally at 0.3 mm anterior and 2.0 mm lateral to bregma. AAV8-based, modified human M4 muscarinic receptor (AAV8-hSyn-DIO-hM4Di-mCherry; 31 D1R-Cre and 30 D2R-Cre mice) or AAV2-based enhanced green fluorescent protein (AAV2-hSyn-DIO-eGFP; five D1R-Cre and five D2R-Cre mice; Addgene) expression constructs were injected bilaterally at a depth of 3.0 mm from the brain surface at a rate of 0.05 μl/min (total volume, 2 μl). The injection needle was held in place for 15 min before and after the injection.
 
-## Behavioral tasks
+### Behavioral tasks
 
 Animals were trained in self-paced instrumental learning tasks in an operant chamber (product #ENV-307A; MED Associates, Fairfax, VT, USA). The chamber was customized to contain three nose-poke holes, each with an infrared photobeam sensor for detecting a nose poke and an LED, on the front wall. A water-delivery nozzle was also located inside each of the left and right nose-poke holes (Figure 2a). Each animal was tested in a reversal task and/or a dynamic TAB task. In both tasks, the session began by turning on the central LED. A nose poke in the central hole turned off the central LED and turned on the LEDs on both sides. The animal was free to choose between the two lit nose-poke holes at this stage. A nose poke in either the left or right hole turned off the left and right LEDs, triggered water delivery (30 μl) in some trials (correct-choice trials in the reversal task and stochastically with a given probability in the TAB task) at the chosen target, and turned on the center LED. Mice were acclimated to the chamber on day 1 (free exploration of the chamber for 1 hr without reward delivery) and experienced shaping training on day 2 (center LED on - > nose poke - > center LED off and side LEDs on - > reward delivery on both sides; 60 trials or 1 hr) before being trained in the tasks.
 
@@ -76,18 +174,42 @@ The reversal task consisted of five stages with progressively increasing reversa
 
 The dynamic TAB task consisted of four blocks of trials, each of which consisted of 35–50 trials (one session per day; 24 hr apart); DMSO and CNO were injected on alternate days, with the order of drug injection counterbalanced across animals. A total of 35, 40, 45 or 50 trials, determined randomly, were conducted per block (means ± SD: 38.8 ± 6.1 trials per block and 155.3 ± 16.0 trials per session). In each block, one target delivered water with a relatively high probability (72%) and the other target delivered water with a relatively low probability (12%). The reward probabilities in the first block were determined randomly and were reversed across block transitions.
 
-## Determination of dynamic and steady states
+### Determination of dynamic and steady states
 
 Dynamic and steady states were determined separately for each block as previously described (Jeong et al., 2018). Animal choice data were smoothed using a moving average of seven trials. The dynamic state lasted until the probability of choosing the higher-reward–probability target (P(H)) exceeded 70% of the maximum value after block transition. The steady state corresponded to the period from the trial at which P(H) exceeded 90% of the maximum value until the end of the block. The mean (± SD across animals) numbers of trials for the dynamic state were 7.5 ± 4.4 for D1R-DMSO, 7.6 ± 5.0 for D1R-CNO, 8.4 ± 5.0 for D2R-DMSO, and 8.5 ± 7.3 for D2R-CNO. For the steady state, means ± SD were 9.6 0 ± 6.1 for D1R-DMSO, 9.5 ± 6.8 for D1R-CNO, 10.5 ± 6.8 for D2R-DMSO, and 10.4 ± 7.0 for D2R-CNO.
 
-## Reinforcement learning models
+### Reinforcement learning models
 
-Animal choice behavior in the dynamic TAB task was analyzed using the Q-learning model (Sutton and Barto, 1998), in which action values in the tth trial (Qat) were updated, as follows:(1)ifa=a(t),Qa(t+1)=(1−α)Qa(t)+αR(t)elseQa(t+1)=Qa(t),where a represents an action (left or right target choice), Rt denotes the reward (i.e., trial outcome) in the tth trial (1 if rewarded and 0 otherwise), and α indicates the learning rate. Action selection was determined using a softmax function of the difference in action values (QLt-QR(t)), as follows:(2)PL(t)=11+exp(−β(QL(t)−QR(t))),where PL(t) is the probability of choosing the left goal and β is the inverse temperature, which determines the degree of randomness in action selection (smaller β values induce more random choices).
+Animal choice behavior in the dynamic TAB task was analyzed using the Q-learning model (Sutton and Barto, 1998), in which action values in the tth trial ($Q_{a}t$) were updated, as follows:
 
-We also analyzed animal choice behavior using several variants of the Q-learning model (model 1, parameters, α and β) by adding additional parameters and using separate learning constants for positive and negative outcomes (αpos and αneg, respectively). Model two had a choice bias (VL) as an additional parameter (parameters, α, β and VL). Model three had separate learning constants for positive and negative outcomes, and also included a choice bias (parameters, αpos, αneg, β and VL). Model four had a choice bias, win-stay (WS), and lose-switch (LS) as additional parameters (parameters, α, β, VL, WS and LS). Model five had separate learning constants for positive and negative outcomes and included a choice bias, win-stay, and lose-switch (αpos, αneg, β, VL, WS and LS). All four models can be expressed by the following equations:(3)ifa=a(t),ifR(t)=1Qa(t+1)=(1−αpos)Qa(t)+αposR(t)−γ_winelseQa(t+1)=(1−αneg)Qa(t)+αnegR(t)−γ_loseelseQa(t+1)=Qa(t),where αpos and αneg are learning rates for rewarded and unrewarded trials, respectively, and γ_win and γ_lose are the penalty terms for repeating the same choice. Actions were chosen according to the softmax action selection rule, as follows:(4)PL(t)=11+exp(−β(QL(t)−QR(t))+b),where b is a bias term for selecting the left target. The following constraints were applied to these parameters for models 2–4: model 2, αpos=αneg,γwin= γlose=0; model 3,γwin= γlose=0; model 4,αpos=αneg.
+$$
+ifa=a(t),Q_{a}(t+1)=(1−\alpha)Q_{a}(t)+\alphaR(t)elseQ_{a}(t+1)=Q_{a}(t),
+$$
+
+where $a$ represents an action (left or right target choice), $Rt$ denotes the reward (i.e., trial outcome) in the tth trial (1 if rewarded and 0 otherwise), and α indicates the learning rate. Action selection was determined using a softmax function of the difference in action values $(Q_{L}t-Q_{R}(t))$, as follows:
+
+$$
+P_{L}(t)=\frac{1}{1+exp(−\beta(Q_{L}(t)−Q_{R}(t)))},
+$$
+
+where PL(t) is the probability of choosing the left goal and β is the inverse temperature, which determines the degree of randomness in action selection (smaller β values induce more random choices).
+
+We also analyzed animal choice behavior using several variants of the Q-learning model (model 1, parameters, α and β) by adding additional parameters and using separate learning constants for positive and negative outcomes (αpos and αneg, respectively). Model two had a choice bias (VL) as an additional parameter (parameters, α, β and VL). Model three had separate learning constants for positive and negative outcomes, and also included a choice bias (parameters, αpos, αneg, β and VL). Model four had a choice bias, win-stay (WS), and lose-switch (LS) as additional parameters (parameters, α, β, VL, WS and LS). Model five had separate learning constants for positive and negative outcomes and included a choice bias, win-stay, and lose-switch (αpos, αneg, β, VL, WS and LS). All four models can be expressed by the following equations:
+
+$$
+ifa=a(t),ifR(t)=1Q_{a}(t+1)=(1−\alpha_{pos})Q_{a}(t)+\alpha_{pos}R(t)−\gamma_winelseQ_{a}(t+1)=(1−\alpha_{neg})Q_{a}(t)+\alpha_{neg}R(t)−\gamma_loseelseQ_{a}(t+1)=Q_{a}(t),
+$$
+
+where $\alpha_{pos}$ and $\alpha_{neg}$ are learning rates for rewarded and unrewarded trials, respectively, and $\gamma_win$ and $\gamma_lose$ are the penalty terms for repeating the same choice. Actions were chosen according to the softmax action selection rule, as follows:
+
+$$
+P_{L}(t)=\frac{1}{1+exp(−\beta(Q_{L}(t)−Q_{R}(t))+b)},
+$$
+
+where $b$ is a bias term for selecting the left target. The following constraints were applied to these parameters for models 2–4: model 2, $\alpha_{pos}=\alpha_{neg}$,$\gamma_{win}=\gamma_{lose}=0$; model 3,$\gamma_{win}=\gamma_{lose}=0$; model 4,$\alpha_{pos}=\alpha_{neg}$.
 
 In addition, for model 6, we added terms for uncertainty-based exploration (ε and ρ) (Frank et al., 2009; Kwak et al., 2014) to model 5 (parameters, αpos, αneg, β, VL, WS, LS, ε and ρ). Details of the modeling are described in our previous paper (Kwak et al., 2014). Model parameters were estimated separately for each mouse and for each condition (DMSO or CNO injection) by pooling choice data of all sessions based on a maximum-likelihood procedure.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample sizes were determined based on the sample sizes used in our previous study (Kwak et al., 2014), in which performances of D1R- and D2R-knockout mice were compared with those of wild-type mice in similar behavioral tasks as used in the present study. Two-way ANOVA and Bonferroni post-hoc tests were used for group comparisons. All statistical tests were two-tailed. A p-value<0.05 was used as the criterion for a statistically significant difference. Data are expressed as means ± SEM unless noted otherwise. The data were analyzed with Matlab software (The MathWorks, Inc, MA, USA). Raw data and code for reproducing this work are archived at Dryad (https://doi.org/10.5061/dryad.4c80mn5).

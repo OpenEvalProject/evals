@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02k5swt12 Department of Biochemistry – Escola Paulista de Medicina – Universidade Federal de São Paulo (UNIFESP) São Paulo Brazil
-2. https://ror.org/02k40bc56 Department of Psychological and Brain Sciences, Indiana University Bloomington United States
-3. https://ror.org/02k40bc56 Department of Informatics, Computing, and Engineering, Indiana University Bloomington United States
-4. https://ror.org/02k40bc56 Department of Physics, Indiana University Bloomington United States
-5. https://ror.org/02k5swt12 Department of Neurology and Neurosurgery – Escola Paulista de Medicina – Universidade Federal de São Paulo (UNIFESP) São Paulo Brazil
+1. Department of Biochemistry – Escola Paulista de Medicina – Universidade Federal de São Paulo (UNIFESP) São Paulo Brazil ([ROR:02k5swt12](https://ror.org/02k5swt12))
+2. Department of Psychological and Brain Sciences, Indiana University Bloomington United States ([ROR:02k40bc56](https://ror.org/02k40bc56))
+3. Department of Informatics, Computing, and Engineering, Indiana University Bloomington United States ([ROR:02k40bc56](https://ror.org/02k40bc56))
+4. Department of Physics, Indiana University Bloomington United States ([ROR:02k40bc56](https://ror.org/02k40bc56))
+5. Department of Neurology and Neurosurgery – Escola Paulista de Medicina – Universidade Federal de São Paulo (UNIFESP) São Paulo Brazil ([ROR:02k5swt12](https://ror.org/02k5swt12))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Unlike other types of in vitro preparations, cultures of dissociated neurons dis
 
 We analyzed the temporal evolution of effective network topology during the development of dissociated hippocampal neuronal assemblies isolated from rats’ embryos. The set of signals used here is from the freely available data set on the Collaborative Research in Computational Neuroscience (CRCNS) data sharing initiative (Timme et al., 2016c).
 
-## In vitro effective networks
+### In vitro effective networks
 
 Effective connectivity was inferred by using TE analysis, which provided weighted and directed networks for each of the cultures. Only networks with the edge density within the 95% confidence interval were used. In this way 11 networks were removed from the total set, resulting in 424 networks, which we grouped into periods based on how long the cultures had been developing (6, 9, 12,15,18, 21, 24, 27, 30, 33, and 35 DIV). The total number of networks analyzed by DIV is shown in Figure 1a (min: 9, max: 18, mean: 15). Figure 1b shows a decrease in the number of recorded neurons over DIV that become more intense after 30 DIV.
 
@@ -53,7 +53,15 @@ The degree distributions (Figure 1e) were consistent with a heavy-tailed distrib
 
 We found that the joint probability distributions of connection weights and distance between neurons changed until the 18 DIV, and then stabilized (Figure 2a and Figure 2—figure supplement 1). On 6–9 DIV, most of the connections were short (higher probability for 25 and 205 µm, p≤0.05, Figure 2b) and weighted around the distribution geometric mean (p≤0.05, Figure 2c). After 12 DIV the probability of longer connections increased, shifting the distributions to the right side. Only some connections extended for long distances (Figure 2b), and these connections were more likely to also have a weight close to the geometric mean (p≤0.05 only between 18 and 33 DIV, Figure 2d). Figure 2e shows the raise of the distance between neurons over DIV illustrating the gradual evolution from a segregated to an integrated network.
 
-## Validation of effective connectivity
+![Figure 2.](https://cdn.elifesciences.org/articles/74921/elife-74921-fig2-v1.jpg)
+
+**Figure 2.:** (a) Joint probability distributions of the pooled logarithm weight and the distance between neurons. Weights were defined as the normalized transfer entropy resulting from significant connections while distance was calculated as the Euclidean distance between the electrodes from where the two neurons involved in a connection were recorded. (b) Mean probability density by distance. (b–d) Each row relates to 6, 12, 18, 24, 30, and 35 days in vitro (DIV), respectively. (c) Probability density only for 25 µm of the distance between neurons for each connection weight (logarithm). (d) Probability density only for 1425 µm of the distance between neurons for each connection weight (logarithm). Statistical tests: Kruskal-Wallis test followed by the Tukey-Kramer post-hoc test. (e) Distance between neurons over DIV (mean ± SEM). Sample size for each DIV: 4, 13, 16, 12, 18, 16, 15, 17, 11, 18, and 11. Asterisks indicate p-values ≤ 0.05 (*).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74921/elife-74921-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Joint probability distributions of the logarithm weight and the distance between neurons for Culture 1 over the days in vitro (DIV) that the culture was recorded. Weights were defined as the normalized transfer entropy resulting from significant connections while distance was calculated as the Euclidean distance between the electrodes from where the two neurons involved in a connection were recorded. (b) Joint probability distributions of the pooled logarithm weight and the distance between neurons. (b–e) Each row relates to 9, 15, 21, 27, and 33 DIV, respectively. (c) Mean probability density by distance. (d) Probability density only for 25 µm of the distance between neurons for each connection weight (logarithm). (e) Probability density only for 1425 µm of the distance between neurons for each connection weight (logarithm). Statistical tests: Kruskal-Wallis test followed by the Tukey-Kramer post-hoc test. Asterisks indicate p-values ≤ 0.05 (*).
+
+### Validation of effective connectivity
 
 In our analysis, since we have access only to neuron spiking activity, the term ‘connections’ reflects strong paths for information flow rather than actual structural connections (Lizier and Prokopenko, 2010). This type of inference in neural systems should be done carefully because of the number of influences that the analysis can have. Additionally, the relationship between the structural and effective connections may not fully match. Since the predicted transfer is computed from spike trains, not all possible dynamical states are presented in the spontaneous activity. With inhibition active, several communication paths may be inactive or silent, although structural connections may exist (Park and Friston, 2013). James et al., 2016 pointed out some limitations of TE in detecting information flow, they showed through simple examples of how TE can overestimate flow and underestimate the influence. On the other side, Garofalo et al., 2009, Ito et al., 2011 and Orlandi et al., 2014 showed how using a combination of time delays and adequate binning may overcome these limitations and make TE analysis a powerful tool for inferring effective connections. Furthermore, Nigam et al., 2016 discussed the importance of handling firing rate and population bursts influence, as well as spurious connections caused by common drive and transitivity to have a more accurate effective connections inference.
 
@@ -61,7 +69,7 @@ Underpinned by these works we constructed the present methodology. To test the a
 
 To quantify the ability of the methodology adopted in this work to predict the known connections in the modeled networks, we computed the area under the receiver operating characteristic (ROC) curve. This metric provides an objective and non-parametric way to measure how the algorithm classified the connections, taking into account the number of true positive, true negative, false positive, and false negative cases in the connection inference. A result equal to 1 indicates that the algorithm was able to detect where there was and where there was no synaptic connection in the model with 100% of precision. We found an area under the ROC curve equal to 0.8548 ± 0.0037 (mean ± SD).
 
-## Topological measures
+### Topological measures
 
 After confirming the effectiveness of the TE analysis to infer the connections, we analyzed the topology of the effective networks over 29 DIV. We found an increase in the edge density over time (Figure 3), as also observed by Downes, 2012 and Schroeter et al., 2015. The edge density increased for the first 21 DIV (red bracket in Figure 3) before the networks stabilized at a density of 5% ± 1.9% (median ± interquartile range, IQR).
 
@@ -75,13 +83,13 @@ Figure 4a shows that in the first DIV, the networks were fragmented into disconn
 
 **Figure 4.:** Various network measures were computed from effective networks in different periods of maturation. (a) Number of components computed for each network by days in vitro (DIV). The red line represents the convergence of the entire network to only one large and fully connected component. (b, c) Global clustering coefficient, and path length, respectively. The results for both coefficients in actual networks were normalized by the average result from 100 randomized networks (see Null model in the Materials and methods section). The red line represents when the normalization is equal to 1 meaning the results for actual and random networks are the same. (d) Small-worldness results considering the actual clustering coefficient and path length compared to a random network. The red line represents that the network architecture is not a small-world. (e) Motifs that were found significantly more frequent than in random networks during maturation. The motif frequency fingerprint was considered as the total motif frequency of occurrence in the whole network; results were normalized by the same measures in random networks (values are presented as mean ± SEM). The red line represents where the frequency of the motif is the same as in random networks. The fraction of networks was computed by dividing the number of networks that presented the motif by the total number of networks that presented at least one motif. Sample size for each DIV: 4, 13, 16, 12, 18, 16, 15, 17, 11, 18, and 11. To test whether the results come from a population with a median equal to 1 the Wilcoxon signed-rank test was used. Asterisks indicate p-values ≤ 0.05 (*).
 
-## Segregation and integration
+### Segregation and integration
 
 To better characterize the architecture of the effective networks, we measured the clustering coefficient, average path lengths, and small-worldness (see Figure 4b–d). Initially, on the 6 and 9 DIV, the clustering coefficient was not significantly different from random networks. As the edge density increased, the clustering coefficient increased, while the path length was the same as in random networks for most of the DIV (p=0.0464, p=0.0250, and p=0.0147 for 21, 24, and 30 DIV, respectively). After 12 DIV, the networks started to have a clustering coefficient higher than in random networks (p<0.05), which implied a small-world organization of the effective networks after the same period (p<0.05). The increase in the clustering coefficient resulted in the emergence of a segregated architecture, while the integration was maintained by the shortest path length, as shown in Figure 4b and c.
 
 When the 13 unique three-node structural motifs (as described by Sporns and Kötter, 2004) are considered, only 5 of the 13 patterns (5, 8, 11, 12, and 13) were significantly higher (p<0.05) than in random networks for the DIV shown in Figure 4e. The total frequency of motif occurrence in the whole network (fingerprint) was computed for each pattern found in the actual network normalized by the same coefficient for the correspondent random network. The frequency fingerprint of motifs 5, 11, and 12 was higher than in random networks after 12 DIV. Whereas motifs 8 and 13 started to present a frequency fingerprint higher than in random networks later in development, after 15 DIV, and only within 21 and 27 DIV, respectively. The results were not deemed significant for motifs 11 and 12 on some DIV, which might be explained by the fall in the fraction of the networks that presented these motifs in the same DIV as shown in Figure 4e (results lower than 0.8). The fraction of networks represents the number of networks presenting at least one motif that has presented the pattern. The smaller fraction of networks that presented motif 13 might also be related to the small-time interval in which this pattern is higher than in random networks. According to the fraction of the networks in which each motif appeared, motifs 5 and 8 are easily found in the networks over time, since they were presented in more than 80% of the cultures in most of the DIV. While motifs 11 and 12 show a small fluctuation of around 80% of appearance over time. By contrast, motif 13 is less common, appearing in more than 60% of the cultures only in later stages of maturation.
 
-## Modular organization
+### Modular organization
 
 To verify if neurons self-organize into small, integrated modules, and if this organization was related to the physical location of neurons, we applied a non-overlapping module detection algorithm to the effective networks. The physical location of neurons within modules for one culture over DIV is shown in Figure 5a. The number of modules shown in Figure 5b rise until the 12 DIV and then stabilized until the 33 DIV with an average of approximately five modules. Finally, following 33 DIV, the number of modules decreased until 35 DIV. The number of neurons per module followed a Poisson distribution for all DIV (see Figure 5c). The higher probability of modules with a smaller number of neurons suggests a preference for smaller-sized network modules. To investigate whether smaller modules were more efficient, which would justify the cause of this phenomenon, the module global efficiency was computed. Indeed, Figure 5d shows a negative Spearman’s correlation between the module global efficiency and the total number of neurons within the module for all DIV (rho ≥–0.2, p<0.05). In other words, modules with a smaller number of neurons presented a higher global efficiency. Additionally, the physical distance between neurons within modules was inferred based on the position of the electrodes that recorded a given neuron’s activity. Figure 5e shows the positive Spearman’s correlation between these two measures after 9 DIV (rho ≥0.22, p<0.05), indicating that neurons within smaller modules were closer together.
 
@@ -91,7 +99,7 @@ To verify if neurons self-organize into small, integrated modules, and if this o
 
 Previous studies have proposed that a modular network topology optimizes the trade-off between wiring cost minimization and functionality efficiency in the brain (Betzel and Bassett, 2017; Meunier et al., 2010). To investigate how the division of the effective networks into modules relates to wiring cost, we compared the sum of the physical connection lengths inside and outside modules, normalized by the sum of total physical connection lengths for actual and random networks over DIV. This comparison showed that after 12 DIV the wiring cost inside modules was significantly higher (p<0.05) in actual networks than in random ones (Figure 5f), until 30 DIV. Conversely, the wiring cost outside modules was lower (p<0.05) for actual networks than for random ones after 9 DIV and until 27 DIV.
 
-## Neuronal hubs
+### Neuronal hubs
 
 The similarity of the degree distribution with heavy-tailed distribution for all DIV indicates the existence of a few highly connected neurons (hubs). Hubs bridge different communities, facilitating the integration of information through the network. Many works have defined hubness as a function of node degree. However, in this work, we have a narrower and more conservative definition. Based on Sporns et al., 2007, we considered not only the number of connections of a node but also its strength (the sum of connection weights), as well as centrality indices (betweenness centrality and closeness centrality). This analysis captures not only highly connected nodes but also nodes with important connections that lie on many of the shortest path lengths of the network. To investigate the emergence and role of these important nodes during the maturation of the networks we ranked the results for each neuron in the same culture, considering all DIV in which the culture was recorded, taking into account the degree, strength, betweenness centrality, and closeness centrality. Considering the 40% of the highest values for these four coefficients, neurons that ranked in all of them were classified as having a score of 4. If they ranked only for three coefficients (independently of which one), they were classified as having a score of 3, and so on for 2 and 1. Through this ranking approach, we were able to establish a definition of node importance in the network topology to help us understand its role in the connections between modules.
 
@@ -103,7 +111,7 @@ Figure 6a illustrates how neurons with different scores were physically distribu
 
 The weighted rich-club coefficient definition was adapted to be computed as a function of scores (see Methods for additional details). This allowed us to investigate how the fraction of the highest weighted connections outside modules was distributed by neurons with different scores (Figure 6c). Figure 6d shows an increase in the rich-club coefficient as the score number increases. This result indicates a tendency for stronger connections between neurons with higher scores, more than ‘by chance,’ outside modules. The values for neurons with a score of 4 and 1 were deemed significant (p<0.05) for most of the DIV, indicating the difference between these two groups of neurons.
 
-Furthermore, we computed the participation coefficient (Pc) for neurons with different scores. Similarly to the results for the rich-club coefficient, the median Pc results were higher for neurons with higher scores (Figure 6f). Neurons with a score of 4 and 1 presented results deemed significant (p<0.05) since 9 DIV. It also suggests a difference between them. Using the definition of Pc , given by Guimerà and Nunes Amaral, 2005, neurons with a score of 4 seem to have a connector role, once they have many connections with most of the other modules (median Pc>0.3). While neurons with a score of 1 have a more peripheral role, having more connections within their module (median Pc< 0.3). Whereas neurons with a score of 3 and 2 are in the middle.
+Furthermore, we computed the participation coefficient ($P_{c}$) for neurons with different scores. Similarly to the results for the rich-club coefficient, the median $P_{c}$ results were higher for neurons with higher scores (Figure 6f). Neurons with a score of 4 and 1 presented results deemed significant (p<0.05) since 9 DIV. It also suggests a difference between them. Using the definition of $P_{c}$ , given by Guimerà and Nunes Amaral, 2005, neurons with a score of 4 seem to have a connector role, once they have many connections with most of the other modules (median $P_{c}$>0.3). While neurons with a score of 1 have a more peripheral role, having more connections within their module (median $P_{c}$< 0.3). Whereas neurons with a score of 3 and 2 are in the middle.
 
 Regarding specific characteristics that could influence neuron score, we found evidence of a relationship between firing rate and score. Figure 6e shows that the higher the neuron score, the higher the median firing rate over all DIV. In general, after 12 DIV, the firing rate of neurons with a score of 4 and 3 was significantly higher than neurons with a score of 1 (p<0.05), and in some periods, (18, 21, 27, 30, and 33 DIV) the firing rate of neurons with a score of 4 was higher than neurons with a score of 2. Collectively, these findings suggest the behavior and dynamics of individual neurons, and neuronal assemblies, drive the emergence of complex effective network topologies. Overall, a small-world architecture composed of modules with most likely few and nearby neurons, which are integrated by more topologically important neurons with a high firing rate.
 
@@ -111,7 +119,7 @@ Regarding specific characteristics that could influence neuron score, we found e
 
 Here, we present an analysis of how the topological properties of effective networks change during the development of in vitro neuronal assemblies. Effective networks showed non-random topological properties over time associated with the ongoing activity in individual neurons. Our results suggest that both the physical distances between neurons, as well as the heterogeneity of firing rates are key factors in the development of effective network organization. As the complex network topology emerged, we were able to investigate how it relates to the self-organization of neuronal assemblies.
 
-## Changes over time
+### Changes over time
 
 We found that most of the metrics reported here underwent significant changes after 12 DIV. Figure 3 shows an increase in the edge density during the 12–14 DIV period. Additionally, Figure 4a also shows that some networks had already started to present only one component after 12 DIV, indicating fully connected networks. Prior works investigating the dynamics of electrophysiological activity of dissociated hippocampal neuronal cultures maturation also found an increased number of network bursts at the same period (12–14 DIV) than in previous periods of the maturation (Biffi et al., 2012; Cohen et al., 2008). Network bursts indicate the synaptic spreading of the action potential across neurons reflecting the effects of a fully connected network (Hales et al., 2010). A significant number of edges and the integration of the whole network might have been responsible for the emergence of complex network framework properties.
 
@@ -119,7 +127,7 @@ Considering functional networks Downes, 2012 argued that the small-world topolog
 
 Conversely, after 30 DIV, the networks had a change in topology, ultimately returning to an architecture similar to a random network. As we used recordings from neurons in culture, this effect might be explained by neuronal death associated with the difficulties of maintaining a healthy cell culture beyond 4 weeks (Kaech and Banker, 2006). Indeed, Figure 1b shows a decrease in the number of recorded neurons, although no significant decrease in the number of network edges has been detected (Figure 3). The impact on the topology after such a period includes a breakup of the networks into different components, as can be seen in Figure 4a. This result can also indicate how the indiscriminate loss of neurons may drastically affect neural circuits during pathological conditions. However, the silencing of neurons may be a result of the multi-stage process of circuit refinement during development. To test this hypothesis novel in vivo studies should be performed.
 
-## Neuronal assemblies self-organization
+### Neuronal assemblies self-organization
 
 Considering that dissociated neurons in a culture set up firstly structural connections that are refined by activity-dependent factors, patterns of effective connectivity might be a result of combined self-reinforcing mechanisms and a dispute for limited resources. Zheng et al., 2013 related the self-reinforcing with Hebb’s postulate of synaptic plasticity, which establishes that two groups of neurons strengthen their synaptic connections when their firing patterns are correlated. And the competition for limited resources with the neuronal homeostatic mechanisms that scale the neural plasticity, where one synapse can only be strengthened by weakening another, making the sum of all the synapse weights of a neuron slightly constant.
 
@@ -133,7 +141,7 @@ Indeed, the results of connection weight by connection distance (Figure 2) showe
 
 Although this work focused on the effective connectivity during the self-organization of neuronal assemblies, the relationship between structural and functional/effective connectivity has been a subject of interest in many other works (Meier et al., 2016; Segall et al., 2012; Suárez et al., 2020). To relate structural and effective connectivity is not an easy task since inhibitory activities do not allow all possible communication paths to be explored when effective connectivity is inferred from neuronal dynamics. As pointed out by Park and Friston, 2013 structural networks constrain functional networks but also many patterns of functional connectivity can emerge from fixed structural ones and give rise to high-level neurocognitive functions. In this way, the silent synapses hypothesis might also explain functional connectivity results. However, the use of spatially organized electrical stimuli through the electrodes could support a better way to establish a relationship between neuronal structure and function by evoked activity (Bauer et al., 2018).
 
-## Emergence of complex networks properties from self-organization
+### Emergence of complex networks properties from self-organization
 
 The total square recording area formed by the electrodes corresponds to about 1.5 × 1.5 mm². The lateral size of the square corresponds to the axonal growth of neurons in culture (Kaneko and Sankai, 2014), which, in principle, could foster a neuron to connect with any other in the culture. However, when we compared the topological measures for inferred networks with random networks the results were significantly different, showing the emergence of non-random topological properties and neurons’ tendency to connect with their neighbors.
 
@@ -159,11 +167,11 @@ Indeed, although there is no overlap among modules in the effectively connected 
 
 In networks that are composed of local modules, it is expected to find nodes responsible for the integration of these frameworks. These hub nodes are more influential or essential to the network than others (Sporns, 2015). The heterogeneity of impact and overall functioning of nodes in a network is another topological property of complex networks. The results presented herein suggest that this framework is also presented in the effective networks since there is a maintained heterogeneity in the number of connections among neurons independent of the development period. This indicates that most of the neurons have fewer connections while there is a minority of high-degree neurons. The same occurs for the strength distributions as shown in Figure 1f. Our hubness definition considering node degree, connection strength, and node centrality showed a relationship between neuron rankings in these measures and the firing rate. This new concept indicates why these important neurons integrate modules. Considering the effective connection as a result of an LTP-like process, it is expected that neurons with a higher firing rate have a higher probability to synchronize with other neurons and have stronger connections with other high firing rate neurons. The multiplicative scaling of synapse weights is considered to have an important computation power by keeping at the same time the LTP and long-term depression (LTD) synapse effects as well as the firing rate of neurons within a stable range (Turrigiano and Nelson, 2004). The compensatory change of the input strengths to keep an overall resulting strength introduces competition between synapses.
 
-If neurons with higher firing rates make stronger synapses, by competition, the synapses between neurons with a score of 4 would be privileged over synapses with lower firing rate neurons. Indeed, the Pc result for neurons with a score of 4 is significantly higher than neurons with a score of 1, indicating their participation in other module connections. Additionally, we verified that the higher the score of a neuron the higher its median Pc, which suggests that the higher the score of a neuron the higher its firing rate and therefore the higher its likelihood to connect with high score neurons inside and outside its module. This hypothesis is corroborated by the rich-club results, which showed that neurons with a score of 4 comprised the largest fraction of higher weights in outside module connections when compared to neurons with a score of 1. The presence of neurons with a higher firing rate inside rich clubs was also reported by Nigam et al., 2016. They found that ‘rich’ neurons (considering all network connections in both in vivo and in vitro preparations) had on average two times the mean firing rate of the network.
+If neurons with higher firing rates make stronger synapses, by competition, the synapses between neurons with a score of 4 would be privileged over synapses with lower firing rate neurons. Indeed, the $P_{c}$ result for neurons with a score of 4 is significantly higher than neurons with a score of 1, indicating their participation in other module connections. Additionally, we verified that the higher the score of a neuron the higher its median $P_{c}$, which suggests that the higher the score of a neuron the higher its firing rate and therefore the higher its likelihood to connect with high score neurons inside and outside its module. This hypothesis is corroborated by the rich-club results, which showed that neurons with a score of 4 comprised the largest fraction of higher weights in outside module connections when compared to neurons with a score of 1. The presence of neurons with a higher firing rate inside rich clubs was also reported by Nigam et al., 2016. They found that ‘rich’ neurons (considering all network connections in both in vivo and in vitro preparations) had on average two times the mean firing rate of the network.
 
 Figure 6b shows that the neurons are equally divided among the scores in the interval of 21–27 DIV. Although only values for neurons with a score of 4 and a score of 1 were considered different for most of the results. Further, the significant difference between neurons with a score of 3 and neurons with a score of 1, as well as neurons with a score of 4 and neurons with a score of 2 in some DIV, suggests that the heterogeneity of the neuron role in a network is more complex than the definition of a hub and a non-hub node.
 
-## Limitations
+### Limitations
 
 One of the most significant issues associated with inferring connectivity using in vitro preparations is the sub-sampling of the networks. The culture itself is comprised of thousands of neurons; however, we are only analyzing those neurons close to the 60 electrodes, which leave out the vast majority of active neurons in the culture. This likely leads to bias in computing topological measures. Despite this issue, the high degree of consistency across cultures suggests to us that the results are robust, if possibly biased in one direction.
 
@@ -173,7 +181,7 @@ Another limitation is that individual neurons could not be tracked over multiple
 
 We formulated a hypothesis involving silent synapse activation and STDP mechanisms that might have a role in the activity-dependent self-organization of neural circuits. However, to provide insights into causal relationships between such hypothesis and integrations/segregation, modular organization, and important nodes, it would be interesting to construct a computational model showing the dependence of connectivity probability on Euclidean distance and that connections are established according to the synchronization of neurons. Another option is to apply electrical stimulation in neuronal cultures to induce control of the mentioned mechanisms.
 
-## Future directions
+### Future directions
 
 While the emergence of complex networks may be partly explained by the role of spontaneous neural activity, it is still necessary to test the causal relations as our results are observational in nature. By manipulating the developing network with treatments such as drugs or optogenetic stimulation, we may be able to learn, not only how self-organization occurs naturally, but to control the formation of specific structures.
 
@@ -181,13 +189,13 @@ Besides the organization, the understanding of network navigation and how neuron
 
 Finally, investigating whether these patterns also occur in circuits involving fundamental functions for example in central pattern generators may be important for generalizations of the process.
 
-## Conclusion
+### Conclusion
 
 Our findings suggest that plasticity and homeostatic mechanisms drive the emergence of segregated and integrated architectures in developing effective networks by reinforcing synchronized spontaneous activity. These processes induce a predictive relationship between the spike trains of pre- and post-synaptic neurons that produces reliable effective network patterns, such as the clustering of low firing rate neurons, the formation of modules, and the connection of high firing rate neurons across modules, integrating them. Such mechanisms, despite being independent of the exact physical location of each neuron, showed to have a preference to link neurons that are closer to each other. Finally, this organization involves a level of randomness, but it is greatly dependent on the heterogeneity of the firing rate of neurons.
 
 ## Materials and methods
 
-## Data description
+### Data description
 
 All animal care and treatment were done in accordance with the guidelines from the National Institutes of Health and all animal procedures were approved by the Indiana University Animal Care and Use Committee (Protocol: 11–041). The entire protocol description for data gathering and preprocessing is available in Timme et al., 2016b work. Briefly, female pregnant Sprague-Dawley rats were euthanized with CO2 on gestational day 18 for embryo extraction. All embryos’ hippocampi were combined for neuron dissociation. Dissociated neurons were plated in a density of 10.000 cells/µL (approximately 2.0 × 105 cells per culture) in an 8 × 8 square MEA (Multichannel Systems, 60 electrodes, 200 µm electrode spacing, and 30 µm electrode diameter). The cultures were recorded from 6 to 35 DIV, in intermittent time intervals for each culture. This implies that not necessarily the same cultures were compared over DIV. The data set totals 435 59 min recordings at a 20 kHz sampling rate. Most of the recordings have about one hundred neurons (min: 3, max: 142, mean: 91, total: 39,529). The average firing rate of the neurons was 1.9 Hz.
 
@@ -197,9 +205,13 @@ Signal preprocessing was done offline. Individual neuron spikes were sorted by t
 
 **Figure 8.:** Top row, left to right, bottom row, right to left. In the work of Timme et al., 2016a brains were extracted from embryos on gestational day 18. The hippocampi were dissected from the rest of the neuronal tissue and the hippocampal neurons were dissociated and plated on a multi-electrode array (MEA). The cultures were recorded from 6 to 35 days in vitro (DIV). The signals from the 60 electrodes were spike-sorted to reconstruct a binned and binary time series for each neuron. From this data set, we constructed effective networks, by applying a transfer entropy (TE) bivariate analysis. To infer a connection from a neuron I to a neuron J we computed the TE for each delay ranging from 1 to 20ms. Taking the highest value as the TEactual and the considered areas of the TE result curve in function of delays as the CIactual. The time series of neuron I was jittered and the TEjit(n) and CIjit(n) were calculated following the same steps for actual data with n ranging from 1 to 1000. Connection matrices were constructed using a Monte Carlo approach by comparing how many times the TE results for the null model were higher than the result for actual data. The resulting weighted directed networks were constructed by normalizing the TEactual value of the connections considered significant by the entropy of the neuron J. Finally, we analyzed the progression of the topology of these networks over time.
 
-## Effective networks inference
+### Effective networks inference
 
-We constructed directed and weighted effective networks from binary spike trains for each putative neuron. Effective connectivity was inferred using TE. TE has been widely used as a network inference methodology for discrete and continuous signals. Further TE has advantages when compared with other measures, such as being non-parametric, sensitivity to non-linear relationships, and can incorporate both excitatory and inhibitory connections. TE was first introduced by Schreiber, 2000 as a measure of interaction between two time series: a source series I and a target series J. TE quantifies how much better an observer is at predicting the future of J after information from the future of I has been accounted for (above and beyond the information provided by I’s statistics alone). Multiple time bins can be embedded in the analysis. Ito et al., 2011 showed that to account for synaptic delays between neurons by using multiple bins of past history TE and considering message length higher than one bin is a robust methodology to predict the effective connectivity between neurons using discrete time series. The equation for TE considering multiple time delays and message length was given by:TEI → J(d)=∑jt,jt-1,it-1pjt,jt-1k,it-dllog2pjt|jt-1k,it-dlpjt|jt-1k
+We constructed directed and weighted effective networks from binary spike trains for each putative neuron. Effective connectivity was inferred using TE. TE has been widely used as a network inference methodology for discrete and continuous signals. Further TE has advantages when compared with other measures, such as being non-parametric, sensitivity to non-linear relationships, and can incorporate both excitatory and inhibitory connections. TE was first introduced by Schreiber, 2000 as a measure of interaction between two time series: a source series I and a target series J. TE quantifies how much better an observer is at predicting the future of J after information from the future of I has been accounted for (above and beyond the information provided by I’s statistics alone). Multiple time bins can be embedded in the analysis. Ito et al., 2011 showed that to account for synaptic delays between neurons by using multiple bins of past history TE and considering message length higher than one bin is a robust methodology to predict the effective connectivity between neurons using discrete time series. The equation for TE considering multiple time delays and message length was given by:
+
+$$
+TE_{I → J(d)}=\sum_{j_{t},j_{t-1},i_{t-1}}^{}pj_{t},j_{t-1}^{k},i_{t-d}^{l}log_{2}\frac{pj_{t}|j_{t-1}^{k},i_{t-d}^{l}}{pj_{t}|j_{t-1}^{k}}
+$$
 
 where d was the multiple time delays from 0 to 20 ms, k is the number of bins of history from the receiver considered and l is the number of bins of history from the sender considered. The numbers used were 1 and 3 bins respectively since they provided the best performance found by Ito et al., 2011. After computing the TE for the range of delays for one pair of neurons we considered only the highest value.
 
@@ -207,121 +219,171 @@ Despite being a very used metric for effective connectivity inference TE is biva
 
 Further, dissociated neuron cultures present population bursts (Maeda et al., 1995; Wagenaar et al., 2006) that may elevate the firing rate of many neurons in a time interval. Such an effect can increase the TE value between these neurons. To address this issue, we used the TE as a function of the applied delays to detect whether the time dependence is because of bursts’ influence or not. To control for the possibility of spurious connections due to the strict non-negativity of transfer entropy, we significance-tested each prospective edge using a Monte Carlo approach: jittering spikes to disrupt fine-grained temporal correlations, while approximately preserving the local firing rate and totally preserving the global firing rate. Finally, we tested our pipeline in a modeled network based on the Izhikevich algorithm. All these steps are better described in the following sections.
 
-## Extraction of the influence of population bursts
+### Extraction of the influence of population bursts
 
-Hippocampal dissociated neuron cultures as utilized in this work present intermittent and spontaneous synchronicity of electrical activity known as population bursts (Penn et al., 2016). Population bursts refer to a transient, global increase in the coherent activity of a large number of neurons, and can vary with the number of cells and development stage (Wagenaar et al., 2006). As we used cultures during the maturation process in this work, the electrophysiological activity had high variations and we felt the need for some type of stable and adaptive methodology to extract the influence of population bursts. Beggs and Plenz, 2003 found that when plotting the TE values by multiple delays, the function tends to peak around the “natural” time delay of the two neurons producing a sharp distribution spanning around ~5 ms around this peak if the neurons are synaptically connected. If the connection is spuriously generated by population bursts, they observed a broad shape around 50–200 ms. We computed the TE value as a function of delays, and we divided the total area of the graph into two areas X and Y. Area X is defined as the 4 ms area around the TE peak and area Y as the rest of the area in the plot (Ito et al., 2011; Nigam et al., 2016). The coincidence index (CI) was used as a ratio between area X and Y to measure the sharpness of area X:CI=XX+Y
+Hippocampal dissociated neuron cultures as utilized in this work present intermittent and spontaneous synchronicity of electrical activity known as population bursts (Penn et al., 2016). Population bursts refer to a transient, global increase in the coherent activity of a large number of neurons, and can vary with the number of cells and development stage (Wagenaar et al., 2006). As we used cultures during the maturation process in this work, the electrophysiological activity had high variations and we felt the need for some type of stable and adaptive methodology to extract the influence of population bursts. Beggs and Plenz, 2003 found that when plotting the TE values by multiple delays, the function tends to peak around the “natural” time delay of the two neurons producing a sharp distribution spanning around ~5 ms around this peak if the neurons are synaptically connected. If the connection is spuriously generated by population bursts, they observed a broad shape around 50–200 ms. We computed the TE value as a function of delays, and we divided the total area of the graph into two areas X and Y. Area X is defined as the 4 ms area around the TE peak and area Y as the rest of the area in the plot (Ito et al., 2011; Nigam et al., 2016). The coincidence index (CI) was used as a ratio between area X and Y to measure the sharpness of area X:
+
+$$
+CI=\frac{X}{X+Y}
+$$
 
 The closer CI is from 1 the sharper the peak.
 
 Both high-order TE and CI were computed using the freely available TE toolbox developed by John Beggs’ group (posted at: http://code.google.com/p/transfer-entropy-toolbox/; Ito et al., 2011).
 
-## Significant connections test
+### Significant connections test
 
 Directed connections are expected to have both higher TE and CI values than by chance. In order to analyze the significance of the connections, we used a Monte Carlo approach. As a null model, we jittered the spike times only from the sender neuron to conserve the auto-prediction of the receiver neuron. This approach preserves the firing rate and forces the temporal correlation between spikes in the two time series to occur by chance. We jittered each spike in the source series by using a Gaussian distribution centered in the actual spike time and with a standard deviation of 10ms. The Gaussian distribution and the short standard deviation make the analysis stringent. We jittered I and computed TE and CI 1000 times for each pair of neurons. The connections were deemed significant if both TE and CI values calculated for the null model were higher than actual values up to once (α=0.001).
 
-## Transfer entropy normalization
+### Transfer entropy normalization
 
-In order to remove the firing rate influence on the connection weights we normalized the TE values by the entropy of the receiver neuron:TENorm,I→Jd=∑jt,jt-1,it-1pjt,jt-1k,it-dllog2pjt∨jt-1k,it-dlpjt∨jt-1k-∑jtpjtlog2pjt
+In order to remove the firing rate influence on the connection weights we normalized the TE values by the entropy of the receiver neuron:
+
+$$
+TE_{Norm,I→Jd}=\frac{\sum_{j_{t},j_{t-1},i_{t-1}}^{}pj_{t},j_{t-1}^{k},i_{t-d}^{l}log_{2}\frac{pj_{t}∨j_{t-1}^{k},i_{t-d}^{l}}{pj_{t}∨j_{t-1}^{k}}}{-\sum_{j_{t}}^{}pj_{t}log_{2}pj_{t}}
+$$
 
 This normalization can be interpreted as the percentage of the receiver neuron entropy that can be accounted for by the sender neuron rather than the information transferred (Faber et al., 2018; Timme et al., 2016a).
 
-## Validation of effective connectivity inference methodology
+### Validation of effective connectivity inference methodology
 
 In order to verify if our pipeline is efficient in effective connectivity detection, we used a network model based on Izhikevich’s model (Izhikevich, 2006).
 
 The modeled networks had 800 excitatory and 200 inhibitory neurons. Each excitatory neuron was connected randomly to 100 neurons, resulting in a probability of connection equal to 0.1, while each inhibitory neuron was connected to 100 excitatory neurons only. Each excitatory-excitatory synapse had a delay between 0–20 ms while inhibitory-excitatory synapses had a delay of 1ms.
 
-The dynamics of activation of each neuron was defined by a set of equations (Izhikevich, 2003):v′=0.04v2+5v+140−u+ISynu′=a(bv−u)If    v(t)=30mV, then     v←c    e    u←u+d
+The dynamics of activation of each neuron was defined by a set of equations (Izhikevich, 2003):
 
-where v is the neuron voltage, v` is the time derivative of the voltage, u is a variable related to neuron recovery, u` is the time derivative of the recovery variable, and ISyn is the total synaptic input received by the neuron, including a thalamic synapse delivered at random times following a Poisson process with an average rate of 1 Hz. The variables a, b, c, and d are adjustable parameters that govern the firing behavior depending on the type of neuron. The model was adjusted to have 800 regular spiking (RS) excitatory neurons, what means, (a, b, c, and d) = (0.02, 0.2, 265, and 8) and 200 fast-spiking (FS) inhibitory neurons, modeled by (a, b, c, and d) = (0.1, 0.2, 265, and 2). The connections weight was chosen as the starting parameters in the spiking-time dependent plasticity STDP Izhikevich’s model (Izhikevich, 2006), 6 mV for excitatory neurons, –5 mV for inhibitory neurons, and 20 mV for thalamic synapses.
+$$
+v^{′}=0.04v^{2}+5v+140−u+I_{Syn}
+$$
+
+
+
+$$
+u^{′}=a(bv−u)
+$$
+
+
+
+$$
+If    v(t)=30mV, then     v←c    e    u←u+d
+$$
+
+where $v$ is the neuron voltage, $v^{`}$ is the time derivative of the voltage, $u$ is a variable related to neuron recovery, $u^{`}$ is the time derivative of the recovery variable, and $I_{Syn}$ is the total synaptic input received by the neuron, including a thalamic synapse delivered at random times following a Poisson process with an average rate of 1 Hz. The variables a, b, c, and d are adjustable parameters that govern the firing behavior depending on the type of neuron. The model was adjusted to have 800 regular spiking (RS) excitatory neurons, what means, (a, b, c, and d) = (0.02, 0.2, 265, and 8) and 200 fast-spiking (FS) inhibitory neurons, modeled by (a, b, c, and d) = (0.1, 0.2, 265, and 2). The connections weight was chosen as the starting parameters in the spiking-time dependent plasticity STDP Izhikevich’s model (Izhikevich, 2006), 6 mV for excitatory neurons, –5 mV for inhibitory neurons, and 20 mV for thalamic synapses.
 
 To approximate the model to the recordings from MEA we sub-sampled the model by randomly choosing only 80 excitatory and 20 inhibitory neurons from the entire network of 1000 neurons. The simulation was done for 30 min of recording, keeping the weight of the connections, once the STDP function was disabled in the model. The activation dynamics of the neurons were marked by the periodic occurrence of population bursts, portraying only the worst situation of the registered signals.
 
-We applied the effective connectivity detection methodology previously described to the modeled data sets and compared the prediction of the effective connections with the synaptic connections constructing a ROC curve based on the true and false positives (TP and FP, respectively) and negative predictions (TN and FN, respectively). Where the true positive rate (TPR) and the false positive rate (FPR) are given by the following equations:TPR=TPTP+FNFPR=FPFP+TN
+We applied the effective connectivity detection methodology previously described to the modeled data sets and compared the prediction of the effective connections with the synaptic connections constructing a ROC curve based on the true and false positives (TP and FP, respectively) and negative predictions (TN and FN, respectively). Where the true positive rate (TPR) and the false positive rate (FPR) are given by the following equations:
 
-## Network topological measures
+$$
+TPR=\frac{TP}{TP+FN}
+$$
+
+
+
+$$
+FPR=\frac{FP}{FP+TN}
+$$
+
+### Network topological measures
 
 After constructing the networks for each culture recording and validating the methodology we homogenize the networks. Firstly, by cutting off neurons with less than on average 5 spikes per second (0.2 Hz), considering that this number of spikes is not enough to calculate a reliable TE value. Then, by measuring the edge density of the networks from the normalization of the number of actual connections by the total number of possible connections (N2−N, where N is the total number of nodes; Newman, 2003). We selected only the networks with a density within the non-parametric CI with 95% confidence calculated using all the network densities. The density per period was defined as the median for each culture (28 cultures) over 3 days. We also cut off unconnected neurons.
 
 The topology was analyzed from the resulting networks using standard or adapted graph-theoretic measures as described below. They were implemented by using the Brain Connectivity Toolbox (Rubinov and Sporns, 2010).
 
-## Adapted measures
+### Adapted measures
 
-## Modules
+#### Modules
 
 In order to investigate the subdivision of the networks into modules we used an algorithm based on the multi-iterative generalization of the Louvain community detection algorithm (Blondel et al., 2008). Briefly, we first varied 1,000 times the resolution parameter (γ) in a log scale [10–5, 105] to find modules of many different sizes (Betzel and Bassett, 2017). Then, we selected a γ range where the number of modules ranged from 2 to the total number of nodes in the network. We utilized the extremities of this range to construct a new log scale of γ, including 1000 values. We then applied the new γ range to fine sample module detection within the just established limits. Finally, we used a consensus clustering algorithm (Lancichinetti and Fortunato, 2012) seeking a consensus partition of the module detection result. Where the agreement matrix resulting from the Louvain algorithm was thresholded at a level of 0.45 (τ) to remove weak elements. The resulting matrix was partitioned again 10 times, using the Louvain algorithm with γ=1 (classic modularity). Finally, a new agreement matrix was built with the convergence of the partitions to one, representing the division of the network into modules.
 
-## Hubness
+#### Hubness
 
 To evaluate the presence of topologically important nodes in the networks we measured 4 parameters as indicators of node importance. Node degree, defined as the number of connections for each node. Node strength, the sum of the weights of the connections for each node. Betweenness centrality, the fraction of the shortest path length of the network that goes through the node (Freeman, 1977). Considering the idea that a node is central if it participates in most of the information that flows by the network. And closeness centrality, the distance (number of edges) that a node is from all the other nodes in the network. Calculated by using the inverse of the path length between a given node and all the other ones. A node with a higher closeness centrality value can achieve other nodes by shortest paths, which means it can exert a high influence on them (Sporns, 2015).
 
 These measures were computed for each neuron recorded in the same culture on all DIV. Then, we pooled all the values together and classified neurons by score. If a neuron ranked in the 40% of the highest values for the 4 measures its score was 4. A score of 3 was attributed to neurons ranking in only 3 measures, and so on.
 
-## Rich club
+#### Rich club
 
-This coefficient represents the fraction of the highest weights of the network presented in a subnetwork (Nigam et al., 2016). Since we were interested in investigating the distribution of the highest connection weights between modules across nodes with different scores, we computed the rich club coefficient considering only connections outside modules. The subnetworks are usually represented by nodes with different degrees; however, we adapted the (Opsahl et al., 2008) rich-club definition to consider scores as the richness parameter as follows:ϕWscore=Wscore∑l=1Escorewlranked
+This coefficient represents the fraction of the highest weights of the network presented in a subnetwork (Nigam et al., 2016). Since we were interested in investigating the distribution of the highest connection weights between modules across nodes with different scores, we computed the rich club coefficient considering only connections outside modules. The subnetworks are usually represented by nodes with different degrees; however, we adapted the (Opsahl et al., 2008) rich-club definition to consider scores as the richness parameter as follows:
 
-where, Wscore is the sum of the weights of the connections outside the modules considering only the subset of nodes with a score higher than a given one, Escore is the number of connections outside the modules considering the same subset of nodes, and wlranked  is the ranked weights of all connections outside the modules (from largest to smallest).
+$$
+ϕ_{}^{W}score=\frac{W_{score}}{\sum_{l=1}^{E_{score}^{}}w_{l}^{ranked}}
+$$
 
-## Spatial separation
+where, $W_{score}$ is the sum of the weights of the connections outside the modules considering only the subset of nodes with a score higher than a given one, $E_{score}^{}$ is the number of connections outside the modules considering the same subset of nodes, and $w_{l}^{ranked }$ is the ranked weights of all connections outside the modules (from largest to smallest).
+
+#### Spatial separation
 
 As the interelectrode distance in the MEA is 200 μm, we were able to calculate the Euclidean distance between all the electrodes in the plate. Besides the timestamps, the data set used in this work has information about which electrode recorded the electrophysiological signal from each neuron. We used this information to calculate the mean distance of all connections within each module by computing the distance between the electrodes that gathered the signal from the two neurons involved in each connection.
 
-## Wiring cost
+#### Wiring cost
 
 We also used the Euclidean distance between the electrodes that gathered the signal from the two neurons involved in each connection to calculate the wiring cost. To compute the wiring cost inside modules we summed up the distance of all connections between neurons inside the modules. For the wiring cost outside modules, we summed up the distance of the connections between neurons in different modules. Both measures were normalized by the total wiring cost of all connections in the network.
 
-## Standard measures
+### Standard measures
 
-## Components
+#### Components
 
 We used Dulmage-Meldensohn’s decomposition to divide the networks into components by making a partition of the network nodes from a graph bipartition into connected subsets, then we analyzed how the number and size of components changed over DIV.
 
-## Clustering coefficient
+#### Clustering coefficient
 
 We computed the global clustering coefficient for each network by averaging the local clustering coefficient, defined as the number of a node’s neighbors that were also connected, for all the nodes within the network.
 
-## Motifs
+#### Motifs
 
 We analyzed the 13 structural motif patterns presented by Sporns and Kötter, 2004, which form a basic structural alphabet of connections considering 3 nodes. The frequency in which each of the 13 patterns emerged in every network during maturation was measured.
 
-## Path length
+#### Path length
 
 Since we used weighted networks, we computed the path by averaging the sum of edge lengths in the network, defined as the inverse of the edge weight.
 
-## Global efficiency
+#### Global efficiency
 
 We computed the global efficiency within a module as the average efficiency between all node pairs in that module.
 
-## Small-worldness
+#### Small-worldness
 
-The small-world architecture is a common organization of complex networks that rovers between regular and random organizations. As it encompasses highly clustered nodes with small characteristic path lengths, we measured the small-worldness in comparison with random networks, that are known to be poorly clustered and have a small average path length (Watts and Strogatz, 1998):S=CCrandomLLrandom
+The small-world architecture is a common organization of complex networks that rovers between regular and random organizations. As it encompasses highly clustered nodes with small characteristic path lengths, we measured the small-worldness in comparison with random networks, that are known to be poorly clustered and have a small average path length (Watts and Strogatz, 1998):
 
-where C and L are the global clustering coefficient and path length, respectively, for actual data e Crandom and Lrandom are the same coefficients calculated for random networks (see Null models below for additional details).
+$$
+S=\frac{\frac{C}{C_{random}}}{\frac{L}{L_{random}}}
+$$
 
-## Participation coefficient
+where $C$ and $L$ are the global clustering coefficient and path length, respectively, for actual data e $C_{random}$ and $L_{random}$ are the same coefficients calculated for random networks (see Null models below for additional details).
 
-Providing information about the contribution of individual nodes in connections to other modules than its own module we computed the participation coefficient for nodes with different scores as follows:Pci=1-∑s=1NmKiski2
+#### Participation coefficient
 
-where Nm is the number of modules, Kis is the number of links that neuron i makes with module s, and ki is the total degree of node i. If the links of node i are uniformly distributed by all modules Pci = 1. Conversely, if all the links of node i are within its own module Pci = 0 (Guimerà and Nunes Amaral, 2005).
+Providing information about the contribution of individual nodes in connections to other modules than its own module we computed the participation coefficient for nodes with different scores as follows:
 
-## Null models
+$$
+Pc_{i}=1-\sum_{s=1}^{N_{m}}\frac{K_{is}}{k_{i}}^{2}
+$$
+
+where $N_{m}$ is the number of modules, $K_{is}$ is the number of links that neuron i makes with module s, and $k_{i}$ is the total degree of node i. If the links of node i are uniformly distributed by all modules $Pc_{i}$ = 1. Conversely, if all the links of node i are within its own module $Pc_{i}$ = 0 (Guimerà and Nunes Amaral, 2005).
+
+### Null models
 
 These network topological measures can vary significantly according to the edge density. As we are analyzing the self-organization process during maturation, it is expected that the networks have different densities. Besides that, we would like to study whether self-organization has a random or a complex influence. Therefore, we compare the results of the measures previously described for the actual networks with a null model by averaging the outcome of the measures from 100 random networks, constructed by randomly rewiring each edge approximately 20 times. The actual number of in and out connections (in- and out-degree respectively) distributions and the number of reciprocal connections were preserved in the null model.
 
-## Statistical analysis
+### Statistical analysis
 
 The firing rate distributions of all recorded neurons and the weight distribution of all persistent connections for each DIV were fitted by the generalized Pareto probability density function (Matlab R2022a) while the values in a log scale were fitted by the normal probability density function. The log-normal behavior of the distributions was tested by using a Lilliefors test, alpha of 0.01.
 
-The number of neurons by module distribution was fitted by the Poisson probability density function as follows:fx∨λ=λxx¹e-λ;x=1,2,3,...,∞.
+The number of neurons by module distribution was fitted by the Poisson probability density function as follows:
 
-where λ is the variance of the Poisson distribution.
+$$
+fx∨\lambda=\frac{\lambda^{x}}{x¹}e^{-\lambda};x=1,2,3,...,∞.
+$$
+
+where $\lambda$ is the variance of the Poisson distribution.
 
 The degree and strength distributions were built by counting the probability of the degrees and strength, respectively, within a range for each DIV.
 
 The weight vs distance probability analysis was performed by a bivariate histogram normalized by the sum of the total number of observations. The mean probability density of connections with different weights over distance and the probability of connections with different weights for distances of 25 and 1465 µm were tested by using the Kruskal-Wallis test followed by the Tukey-Kramer post-hoc test and alpha of 0.05, for each DIV.
 
-Among DIV or score comparisons for density, number of modules, rich-club coefficient, firing rate, and Pc were made by using the Kruskal-Wallis test followed by the Tukey-Kramer post-hoc test and an α of 0.05.
+Among DIV or score comparisons for density, number of modules, rich-club coefficient, firing rate, and $P_{c}$ were made by using the Kruskal-Wallis test followed by the Tukey-Kramer post-hoc test and an α of 0.05.
 
 To test whether the number of components and small-worldness, as well as the normalizations of the clustering coefficient, path length, and motifs, come from a population with a median equal to 1 the Wilcoxon signed-rank test was used, with an α of 0.05.
 

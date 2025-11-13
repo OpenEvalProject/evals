@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.34801.001 The training of PhD students and early-career scientists is largely an apprenticeship in which the trainee associates with an expert to become an independent scientist. But when is a PhD student ready to graduate, a postdoctoral scholar ready for an independent position, or an early-career scientist ready for advanced responsibilities? Research training by apprenticeship does not uniformly include a framework to assess if the trainee is equipped with the complex knowledge, skills and attitudes required to be a successful scientist in the 21 st century. To address this problem, we propose competency-based assessment throughout the continuum of training to evaluate more objectively the development of PhD students and early-career scientists.
+The training of PhD students and early-career scientists is largely an apprenticeship in which the trainee associates with an expert to become an independent scientist. But when is a PhD student ready to graduate, a postdoctoral scholar ready for an independent position, or an early-career scientist ready for advanced responsibilities? Research training by apprenticeship does not uniformly include a framework to assess if the trainee is equipped with the complex knowledge, skills and attitudes required to be a successful scientist in the 21st century. To address this problem, we propose competency-based assessment throughout the continuum of training to evaluate more objectively the development of PhD students and early-career scientists.
 
 ## Core competencies and subcompetencies
 
@@ -52,7 +52,69 @@ We used the “Milestones” framework described by the Accreditation Council fo
 
 Our overall approach to developing milestones was guided by the Dreyfus and Dreyfus model describing five levels of skill acquisition over time: novice, advanced beginner, competent, proficient and expert (Dreyfus and Dreyfus, 1986). As trainees progress through competent to proficient to expert, their perspective matures, their decision making becomes more analytical, and they become fully engaged in the scientific process (Dreyfus, 2004). These levels are easily mapped to the continuum of PhD scientist training: beginning PhD student as novice, advanced PhD student as advanced beginner, PhD graduate as competent, early-career scientist (that includes postdoctoral trainees) as proficient, and science professional as expert (see Table 2).
 
+**Table 2.**
+ PhD scientist training stages mapped to Dreyfus and Dreyfus levels of skill acquisition. Early-career scientists include researchers undertaking postdoctoral training as well as those in science positions in career pathways that involve other kinds of advanced training, e.g., on-the-job training or certification.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="2">Dreyfus &amp; Dreyfus</td>
+      <td>Novice</td>
+      <td>Advanced beginner</td>
+      <td>Competent</td>
+      <td>Proficient</td>
+      <td>Expert</td>
+    </tr>
+    <tr>
+      <td>Rule-based behavior, limited, inflexible</td>
+      <td>Incorporates aspects of the situation</td>
+      <td>Acts consciously from long-term goals and plans</td>
+      <td>Sees situation as a whole and acts from personal conviction</td>
+      <td>Has intuitive understanding of situations, zooms in on central aspects</td>
+    </tr>
+    <tr>
+      <td>PhD Scientist Training Stages</td>
+      <td>Beginning PhD Student</td>
+      <td>Advanced PhD Student</td>
+      <td>PhD Graduate</td>
+      <td>Early-Career Scientist</td>
+      <td>Science Professional</td>
+    </tr>
+  </tbody>
+</table>
+
 We therefore defined observable behaviors and outcomes for each subcompetency that would allow a qualified observer, such as a research adviser or job supervisor, to determine if a PhD student or early-career scientist had reached the milestone for their stage of training (Table 1—source data 1: Core Competencies Assessment Rubric). A sample for the Critical Thinking Skills core competency is shown in Table 3.
+
+**Table 3.**
+ Sample milestones for one of the subcompetencies within Critical Thinking Skills. Verbs in bold font indicate observable behaviors representing each stage of skill acquisition.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">CRITICAL THINKING SKILLS</th>
+      <th colspan="5">MILESTONES</th>
+    </tr>
+    <tr>
+      <th>Beginning PhD Student</th>
+      <th>Advanced PhD Student</th>
+      <th>PhD Graduate</th>
+      <th>Early-Career Scientist</th>
+      <th>Science Professional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B. Design a single experiment (answer questions, controls, etc.)</td>
+      <td>Follow experimental protocols, seek help as needed, describe critical role of controls</td>
+      <td>Plan experimental protocol; include relevant controls; choose appropriate methods; troubleshoot experimental problems</td>
+      <td>Design and execute hypothesis- based experiments independently; evaluate protocols of others; predict range of experimental outcomes</td>
+      <td>Consistently design and execute experiments with appropriate controls; assess next steps; critique experiments of others</td>
+      <td>Teach experimental design; guide others doing experiments</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Recommendations for use
 

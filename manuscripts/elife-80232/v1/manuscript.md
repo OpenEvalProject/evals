@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0220mzb33 Centre for Developmental Neurobiology, King's College London London United Kingdom
-2. https://ror.org/04tnbqb63 The Francis Crick Institute London United Kingdom
-3. https://ror.org/023b0x485 University Medical Center of the Johannes Gutenberg University Mainz Germany
+1. Centre for Developmental Neurobiology, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+2. The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
+3. University Medical Center of the Johannes Gutenberg University Mainz Germany ([ROR:023b0x485](https://ror.org/023b0x485))
 
 † Corresponding author
 

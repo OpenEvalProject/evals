@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00se2k293 Institute of Molecular Medicine and Bioengineering, National Yang Ming Chiao Tung University Hsinchu Taiwan
-2. https://ror.org/05d9dtr71 Department of Orthopedic Surgery, Changhua Christian Hospital Changhua Taiwan
-3. https://ror.org/00se2k293 Department of Biological Science and Technology, National Yang Ming Chiao Tung University Hsinchu Taiwan
-4. https://ror.org/00se2k293 Institute of Bioinformatics and Systems Biology, National Yang Ming Chiao Tung University Hsinchu Taiwan
-5. https://ror.org/00se2k293 Center for Intelligent Drug Systems and Smart Bio-devices (IDS2B), National Yang Ming Chiao Tung University Hsinchu Taiwan
+1. Institute of Molecular Medicine and Bioengineering, National Yang Ming Chiao Tung University Hsinchu Taiwan ([ROR:00se2k293](https://ror.org/00se2k293))
+2. Department of Orthopedic Surgery, Changhua Christian Hospital Changhua Taiwan ([ROR:05d9dtr71](https://ror.org/05d9dtr71))
+3. Department of Biological Science and Technology, National Yang Ming Chiao Tung University Hsinchu Taiwan ([ROR:00se2k293](https://ror.org/00se2k293))
+4. Institute of Bioinformatics and Systems Biology, National Yang Ming Chiao Tung University Hsinchu Taiwan ([ROR:00se2k293](https://ror.org/00se2k293))
+5. Center for Intelligent Drug Systems and Smart Bio-devices (IDS2B), National Yang Ming Chiao Tung University Hsinchu Taiwan ([ROR:00se2k293](https://ror.org/00se2k293))
 
 † Corresponding author
 
@@ -29,19 +29,43 @@ In this study, the function of HMMR in non-mitotic neurons is examined without a
 
 ## Results
 
-## HMMR regulates neuronal morphogenesis
+### HMMR regulates neuronal morphogenesis
 
 To examine the role of HMMR in non-mitotic neurons, Hmmr-targeting shRNA was utilized to knock down Hmmr in mouse hippocampal neurons. Hippocampal neurons were selected because they exhibit a high morphological homogeneity, it has been estimated that 85~90% of hippocampal neurons are pyramidal neurons (Banker and Goslin, 1998). Three different shRNA sequences were used for depleting Hmmr in mouse neurons (Figure 1—figure supplement 1A). Upon HMMR depletion, a significant decrease in total neurite length, axon length, dendrite length, and axon branch density can be detected in dissociated hippocampal neurons (Figure 1A–E). To eliminate the possibility of the off-target effect, we performed the rescue experiment by co-transfecting plasmids expressing human HMMR (EGFP-hHMMR) and Hmmr-targeting shRNA into hippocampal neurons at 0 days in vitro (DIV) and incubated for 4 days before fixation and immunofluorescence staining. The expression of EGFP-hHMMR rescues the phenotype of HMMR knockdown (in both total neurite length and axon branching density) (Figure 1—figure supplement 1B–E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/94547/elife-94547-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative images of hippocampal neurons co-transfected with the EGFP-expressing and the indicated shRNA-expressing plasmids on 0 DIV and fixed on 4 DIV. Neurons were immunofluorescence stained with the dendrite marker MAP2 and the axon marker SMI312 (top). Quantification of (B) total neurite length per neuron, (C) axon length, (D) dendrite length, and (E) axon branch density (i.e. branch number per 50 µm of axon). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, one-way ANOVA followed by Dunnett’s post-hoc test. More than 20 neurons were analyzed per condition per repeat. (F) Representative images of hippocampal neurons transfected with AcGFP- or AcGFP-mHMMR-expressing plasmid on 0 DIV and fixed on 3 DIV. Neurons were immunofluorescence stained with the dendrite marker MAP2 and the axon marker SMI312. Quantification of (G) total neurite length per neuron, (H) axon length per neuron, and (I) dendrite length per neuron. *p<0.05, **p<0.01, two-tailed Student’s t-test. More than 50 neurons were analyzed per condition per repeat. (J) Sholl analysis of the axon branching complexity. **p<0.01, two-way ANOVA followed by Sidak’s post-hoc tests. The solid line and shaded area indicate mean and SEM collected from three independent repetitions (more than 50 neurons were analyzed per condition per repetition). All scale bars present 50 µm and all bar graphs are expressed as mean ± SEM from three independent repetitions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94547/elife-94547-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of shRNA targeting regions of the mouse Hmmr mRNA. The untranslated regions (UTR) are shown in white and the coding sequence (CDS) in yellow. Black bars indicate shRNA targeting regions and the mRNA is numbered by the nucleotide sequence. Representative EGFP images of mouse hippocampal neurons co-transfected with the indicated shRNA- and the control cytosolic EGFP- (B) or EGFP-hHMMR (C) expressing plasmids on 2 DIV and fixed on 5 DIV. Images are inverted to improve visualization. The scale bars present 50 μm. Quantification of (D) total neurite length per neuron and (E) normalized branch density (branch number in 50 µm of neurite) for neurons shown in panel B-C. *p<0.05; ****p<0.0001, one-way ANOVA followed by Dunnett’s post-hoc test. All bar graphs are expressed as mean ± SEM from three independent repetitions. More than 50 neurons were analyzed per condition per repeat.
+
 In addition to the loss-of-function assay, we also performed the gain-of-function assay by transiently overexpressing a mouse HMMR fused to AcGFP1 (AcGFP-mHMMR) in hippocampal neurons. Consistent with the knockdown experiments, overexpressing HMMR results in the opposite phenotypes (i.e. an increase in total neurite length, axon length, dendrite length, and axon branch density) (Figure 1F–J). These functional analyses demonstrate that HMMR plays an important role in regulating the morphogenetic processes in non-mitotic neurons.
 
-## HMMR is a microtubule-associated protein in neurons
+### HMMR is a microtubule-associated protein in neurons
 
 To understand the cellular mechanism of HMMR in regulating neuronal morphogenesis, the localization of HMMR in neurons was examined. The HMMR antibody was first validated using shRNA-mediated HMMR depletion in neurons. A significant decrease in HMMR immunofluorescence signal was observed in the soma and along the neurites in HMMR-depleted neurons (Figure 2—figure supplement 1), confirming the specificity of the HMMR antibody. Using this antibody, HMMR is detected along the entire neuron with higher abundance in the soma (Figure 2A). Upon careful examination, we found that both the endogenous HMMR and transiently expressed AcGFP-mHMMR shows punctate localization along the axon and dendrite (Figure 2A–B). Furthermore, when transiently overexpressed AcGFP-mHMMR reaches a high abundance level, it colocalizes with microtubules and sometimes causes the formation of looped microtubules in neurons (Figure 2C). Given that HMMR is known to interact with microtubules in mitotic cells (Assmann et al., 1999; Maxwell et al., 2005; Tolg et al., 2010), we examined whether the same interaction exists in neurons using the proximity ligation assay (PLA). We first examined whether the endogenous HMMR interacts with microtubules in neurons. Antibodies against HMMR and neuron-specific β-III-tubulin were used in this PLA. If the two primary antibodies are localized in close proximity (<40 nm), an enzymatic reaction will catalyze the amplification of a specific DNA sequence that can then be detected using a red fluorescent probe (Söderberg et al., 2006). Consistent with the idea that HMMR associates with neuronal microtubules, fluorescent PLA punta can be detected in the soma and along the neurite in 3 DIV hippocampal neurons (Figure 2D). These fluorescent PLA puncta can only be observed when both primary antibodies were present, indicating that these PLA signals are highly specific (Figure 2E). Furthermore, AcGFP-mHMMR-expressing plasmid was transfected into dissociated mouse hippocampal neurons at 0 DIV and incubated for 3 days before fixation and PLA. Antibodies against AcGFP and β-III-tubulin were selected for this PLA. Consistent with the result using endogenous HMMR, fluorescent PLA puncta can be observed in the soma and along the neurite in 3 DIV primary hippocampal neurons (Figure 2—figure supplement 2A). PLA signals can only be observed when both GFP and β-III-tubulin antibodies were present (Figure 2—figure supplement 2B). These results demonstrate that both endogenous and transiently expressed HMMR associate with microtubules in neurons.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/94547/elife-94547-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative images of 3 DIV mouse hippocampal neurons immunofluorescence stained with antibodies against HMMR (green) and β-III-tubulin (red). Nuclei are visualized using DAPI (blue). HMMR images were inverted to improve visualization. (B) Representative images of 3 DIV mouse hippocampal neurons expressing AcGFP-mHMMR. Neurons were fixed and immunofluorescence stained with the antibody against β-III-tubulin (red). Nuclei are visualized using DAPI (blue). AcGFP-mHMMR images were inverted to improve visualization. Colored boxes indicate the magnified regions. The scale bars represent 10 μm and 50 μm in the colored boxes and the merged images, respectively. More than 50 neurons were observed for each condition, and HMMR exhibits similar localization in all neurons. (C) Representative images of 4 DIV (top) and 7 DIV (bottom) hippocampal neurons expressing AcGFP-mHMMR. Neurons were immunofluorescence stained with the β-III-tubulin antibody. AcGFP-mHMMR and β-III-tubulin signals were inverted to improve visualization. Red and white boxes at the soma are magnified in the insets. All images have the same scale and the scale bars present 50 μm. (D) Representative images of proximity ligation assay (PLA) on HMMR and β-III-tubulin in 3 DIV hippocampal neurons. The PLA image was inverted to improve visualization (left). DAPI was used to visualize the nuclei and brightfield microscopy was used to visualize the general appearance of neurons in the merged image (right). The scale bar presents 50 μm. (E) PLA puncta were present along the neurite shaft only when antibodies against HMMR and β-III-tubulin were both present. All images have the same scale and the scale bars represent 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94547/elife-94547-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images of 10 DIV mouse hippocampal neurons co-expressing the indicated Hmmr-targeting shRNA and EGFP. Neurons were immunofluorescence stained with antibodies against β-III-tubulin (red) and HMMR (pseudocolor). All scale bars present 50 μm. Only neurons possessing both β-III-tubulin and EGFP signals were quantified. Quantification of HMMR intensity in the soma (B) and along the neurite (C). *p<0.05; **p<0.01; ****p<0.0001, one-way ANOVA followed by Dunnett’s post-hoc tests. Both bar graphs are expressed as mean ± SEM from three independent repetitions. More than 30 neurons were analyzed per condition per repeat.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/94547/elife-94547-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Dissociated hippocampal neurons were transfected with AcGFP control (left) or AcGFP-mHMMR (right) on 0 DIV and fixed on 7 DIV. (A) PLA images of AcGFP control (upper left) or AcGFP-mHMMR (upper right) and β-III-tubulin in 7 DIV dissociated hippocampal neurons. Nuclei were visualized using DAPI (blue) and the general appearance of neurons was visualized using the AcGFP signal (green). All images have the same scale and the scale bars present 50 μm. (B) PLA puncta were present along the neurite shaft only when antibodies against AcGFP and β-III-tubulin were both present. All images have the same scale and the scale bars represent 10 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/94547/elife-94547-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative images of a 3 DIV hippocampal neuron immunofluorescence stained with antibodies against HMMR and EB1. The white box in the upper right panel indicates the magnified region shown in lower panels. The scale bars in the upper and lower panels represent 10 μm and 5 μm, respectively. (B) The linescan along the yellow dotted line in the lower right of panel A. The signal intensity of HMMR and EB1 is shown in red and green, respectively. The average Pearson correlation coefficient is 0.28±0.25. More than 300 neurites from three independent repeats were quantified.
+
 Because the punctate distribution of HMMR on microtubules is reminiscent of microtubule plus-ends, we also examined the colocalization of HMMR and EB1 (a microtubule plus-end tracking protein) in neurons. Upon visual examination, HMMR and EB1 do not exhibit colocalization in neurons (Figure 2—figure supplement 3A). To quantify the extent of HMMR and EB1 colocalization in 1 DIV hippocampal neurons, linescans along the neurite and Pearson correlation coefficient were calculated. The average Pearson correlation coefficient is 0.28±0.25 (Figure 2—figure supplement 3B). This result indicates that the punctate HMMR localization in neurons does not represent microtubule plus-ends.
 
-## HMMR stabilizes microtubules in neurons
+### HMMR stabilizes microtubules in neurons
 
 The presence of HMMR on neuronal microtubules and the formation of looped microtubules in AcGFP-mHMMR overexpressing neurons (Figure 3A) suggests HMMR may be a microtubule-stabilizing factor. To test this possibility, the level of acetylated microtubules was quantified, as this post-translational modification is known to accumulate on stable and long-lived microtubules (Schulze et al., 1987). Consistent with our hypothesis, HMMR depletion via Hmmr-targeting shRNA produces a significant decrease in the level of acetylated microtubules in both axons and dendrites (Figure 3B–D). In contrast, the level of microtubule acetylation increases in both axons and dendrites of HMMR-overexpressing neurons (Figure 3E–G). Taken together, these data demonstrate that HMMR enhances microtubule stability in neurons.
 
@@ -51,7 +75,7 @@ The presence of HMMR on neuronal microtubules and the formation of looped microt
 
 In addition, we examined whether HMMR expression can resist the microtubule destabilizing effect of nocodazole in neurons. AcGFP or AcGFP-mHMMR expressing plasmid was introduced into dissociated hippocampal neurons on 0 DIV, incubated for 1 day to allow HMMR expression, and administered solvent (DMSO), 10 nM, 50 nM, or 100 nM nocodazole for two additional days before neurite length examination. While the addition of nocodazole causes a concentration-dependent reduction of total neurite length in both AcGFP and AcGFP-mHMMR expressing neurons, there are subtle differences in the susceptibility of neurite length to the concentration of nocodazole (Figure 3H). (1) 10 nM nocodazole treatment causes a significant reduction of neurite length in AcGFP expressing-neurons, but not in AcGFP-mHMMR-expressing neurons. This result indicates that AcGFP-mHMMR expression increases the tolerance of neurite elongation toward 10 nM nocodazole treatment. (2) 50 nM and 100 nM nocodazole treatment exhibits no statistical significance in AcGFP-expressing neurons, suggesting that 50 nM nocodazole has reached maximal effectiveness. In AcGFP-mHMMR expressing neurons, 100 nM nocodazole further reduces the neurite length compared to the 50 nM group. Taken together, these results are consistent with the idea that HMMR plays a microtubule stabilizing role in neurons.
 
-## HMMR regulates neuronal microtubule dynamics
+### HMMR regulates neuronal microtubule dynamics
 
 The association of HMMR with neuronal microtubules and its effect on microtubule stabilization suggest that HMMR may also be involved in the regulation of microtubule dynamics in neurons. To investigate this, we utilized the neuronal microtubule dynamics assay previously established in which EB3-mCherry is utilized as a fiduciary marker of growing microtubule plus-ends (Chen et al., 2017). The rationale is that changes in microtubule dynamics can be detected as alterations in the velocity (or the speed of microtubule polymerization), persistence (the duration of time when EB3-mCherry comet can be followed), and/or frequency (the number of EB3-mCherry comets detected in a given time span). Plasmids expressing Hmmr-targeting shRNA and EB3-mCherry were introduced into dissociated neurons at 0 DIV and incubated for 4 days before ﬂuorescence live cell imaging. To quantify microtubule dynamics, the neurite was separated into three different 10  μm regions: proximal, middle, and distal neurite (Figure 4A). These 3 regions were selected because of our previous publication (Chen et al., 2017), in which a significant reduction of EB3 frequency was detected at the tip and the base of the neurite but not in the middle of the neurite in the microtubule nucleator (TPX2) depleted neurons. The reason for this difference is due to the presence of GTP-bound Ran GTPase (RanGTP) at the tip and the base of the neurite. Since RanGTP has been shown to regulate the interaction between HMMR and TPX2 (Scrofani et al., 2015), it is possible that the same regulation mechanism exists in neurons. HMMR depletion results in a decrease of EB3-mCherry emanation frequency in all three neurite regions (Figure 4B–C). Moreover, a trend of increased microtubule polymerization velocity and a trend of decreased persistence are observed in the proximal neurite of HMMR-depleted neurons. Next, we examined whether opposite effects on microtubule dynamics can be detected in HMMR overexpressing neurons. Plasmids expressing AcGFP-mHMMR and EB3-mCherry were introduced into dissociated neurons at 0 DIV and incubated for 4 days before ﬂuorescence live cell imaging and microtubule dynamics assay. Congruent with the depletion results, a significant increase in EB3-mCherry emanation frequency is observed at the proximal, middle, and distal neurites in HMMR-expressing neurons (Figure 4D–E). Further agreement comes from the decrease in microtubule polymerization velocity and the increase of microtubule persistence in neurons overexpressing HMMR. Both the decrease in microtubule polymerization velocity and the increase in microtubule persistence are consistent with the observation that HMMR can enhance the stability of neuronal microtubules. These data demonstrate that HMMR regulates the dynamics of microtubules in neurons.
 
@@ -59,7 +83,7 @@ The association of HMMR with neuronal microtubules and its effect on microtubule
 
 **Figure 4.:** (A) Representative image of a 4 DIV EB3-mCherry-expressing cortical neuron. The color boxes indicate regions of quantification: red, green, and blue boxes represent the distal, middle, and proximal neurite, respectively. The scale bar presents 10 µm. (B) Representative kymographs of indicated neurons at different regions of the neurite. (C) Quantification of EB3-mCherry comets dynamics in B. *p<0.05, ***p<0.001, ****p<0.0001, one-way ANOVA followed by Dunnett’s post-hoc tests. (D) Representative kymographs of indicated neurons at different regions of the neurite. (E) Quantification of EB3-mCherry comets dynamics in D. *p<0.05, **p<0.01, ****p<0.0001, two-tailed Student’s t-test. At least 15 neurons were analyzed per condition per repeat. All bar graphs are expressed as mean ± SEM from three independent repeats.
 
-## HMMR promotes TPX2-microtubule interaction in axons and dendrites
+### HMMR promotes TPX2-microtubule interaction in axons and dendrites
 
 While changes in microtubule polymerization velocity and persistence in the previous section can be explained by the microtubule stabilizing effect of HMMR, the alteration in microtubule emanation frequency cannot. One explanation is that HMMR influences the function of another microtubule dynamics regulator in neurons. It has been shown that HMMR interacts with the microtubule nucleator TPX2 in a cell cycle-dependent manner (Maxwell et al., 2005) and this interaction is required for concentrating TPX2 at the spindle poles (Groen et al., 2004). Furthermore, we have shown that microtubule-bound TPX2 localizes along the neurite and is responsible for non-centrosomal microtubule formation in neurons (Chen et al., 2017). Combining these two observations, we hypothesized that HMMR affects the localization of TPX2 along the neurite which in turn regulates the formation of neuronal microtubules. To examine this hypothesis, the localization of TPX2 along the neurite was examined in neurons with or without HMMR depletion. Since the abundance of TPX2 along the neurite is rather low (Chen et al., 2017), PLA was utilized to detect this localization of TPX2. PLA using antibodies against TPX2 and β-III-tubulin produces numerous puncta along the neurite (Figure 5A). This punctate distribution appears similar to that produced by HMMR and β-III-tubulin PLA (Figure 2C). Consistent with our hypothesis, a statistically significant increase in PLA inter-punctal distance (the distance between PLA puncta) is detected in both axons and dendrites of HMMR-depleted neurons (Figure 5B–C). This result indicates that HMMR depletion reduces the localization of TPX2 on neuronal microtubules. These fluorescent PLA puncta can only be observed when both primary antibodies were present, indicating that these PLA signals are highly specific (Figure 5D). Next, the effect of HMMR overexpression on TPX2 localization is examined. Plasmids expressing AcGFP-mHMMR were introduced into hippocampal neurons on 0 DIV and incubated for 7 days before fixation and PLA. In agreement with the depletion experiment, a significant decrease in PLA inter-punctal distance is observed in HMMR overexpressing axon and dendrite (Figure 5E–G). This result indicates that HMMR overexpression enhances the localization of TPX2 on neuronal microtubules. PLA puncta can only be observed when both primary antibodies were present (Figure 5H). Taken together, these results demonstrate that HMMR promotes the interaction between TPX2 and microtubules in neurons.
 
@@ -83,33 +107,176 @@ Given the importance of HMMR on spindle integrity and orientation, studies of HM
 
 ## Materials and methods
 
-## Antibodies and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Hmmr</td>
+      <td>GenBank</td>
+      <td>Gene ID: 15366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>shRNA #1</td>
+      <td>RNAi Consortium shRNA Library via RNAi Core of Academia Sinica</td>
+      <td>TRCN0000311803</td>
+      <td>Lentiviral construct to express the Hmmr-targeting shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>shRNA #2</td>
+      <td>RNAi Consortium shRNA Library via RNAi Core of Academia Sinica</td>
+      <td>TRCN0000311805</td>
+      <td>Lentiviral construct to express the Hmmr-targeting shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>shRNA #3</td>
+      <td>RNAi Consortium shRNA Library via RNAi Core of Academia Sinica</td>
+      <td>TRCN0000071592</td>
+      <td>Lentiviral construct to express the Hmmr-targeting shRNA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated-α-tubulin(mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab24610</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-III-tubulin (TUJ1)(mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>801202</td>
+      <td>IF (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-III-tubulin (TUBB3)(rabbit polyclonal)</td>
+      <td>BioLegend</td>
+      <td>802001</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-neurofilament (SMI312)(rabbit polyclonal)</td>
+      <td>BioLegend</td>
+      <td>837904</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>12A6</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HMMR (E-19)(goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-16170</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAP2(rabbit polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>AB5622</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TPX2(rabbit polyclonal)</td>
+      <td>Oliver Gruss; Gruss et al., 2002</td>
+      <td></td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-AcGFP-mHMMR (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>AcGFP-mHmmr expression vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-hHMMR (plasmid)</td>
+      <td>Christopher Maxwell; Maxwell et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink proximity ligation assay</td>
+      <td>Sigma-Aldrich</td>
+      <td>DUO92101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad v8.4.3</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Fiji</td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements</td>
+      <td>Nikon</td>
+      <td>RRID: SCR_014329</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies and reagents
 
 Acetylated-α-tubulin antibody (ab24610) was purchased from Abcam (Cambridge, United Kingdom). β-III-tubulin antibodies TUJ1 and TUBB3 (801202 and 802001) as well as neurofilament monoclonal antibody SMI312 (837904) were from BioLegend (San Diego, CA). GFP antibody (12A6) was from DSHB (Iowa City, IA). HMMR antibody E-19 (sc-16170) was from Santa Cruz Biotechnology (Dallas, TX). MAP2 antibody (AB5622) and Duolink proximity ligation assay were from MilliporeSigma (Burlington, MA). TPX2 antibody was a kind gift from Oliver Gruss (Gruss et al., 2002). Alexa Fluor-conjugated secondary antibodies were from Thermo Fisher Scientific (Waltham, MA).
 
-## Plasmids
+### Plasmids
 
 The mouse Hmmr-expressing plasmid pCAG-AcGFP-mHMMR was cloned by inserting wild-type mouse Hmmr gene obtained from the mouse embryonal carcinoma P19 cell cDNA using PCR primers (5’-ATAGTCGACAGGCGTCAGAATGTCCTTTCCT-3’ and 5’- TACCCGGGACTTCCATGATTCTTGAAGTTGCA-3’) into pCAG-AcGFP-C3 using SalI and XmaI restriction endonucleases. The Hmmr gene obtained is 2385 bp in length and translates into a protein ~92 kDa in molecular weight. The human HMMR-expressing plasmid pEGFP-hHMMR was a kind gift from Dr. Christopher Maxwell (Maxwell et al., 2003). The mouse Hmmr-targeting shRNA plasmids were obtained from the RNAi Core of Academia Sinica (Taipei, Taiwan). The targeting sequences are 5’-GCCAGCTACTTGAAACAGAAA-3’(#1), 5’-CAGGCATTGTTGAATGAACAT-3’ (#2), and 5’-GACTCTCAGAAGAATGATAAA-3’ (#3).
 
-## Neuron culture and transfection
+### Neuron culture and transfection
 
 All animal experimental procedures were approved by the Institutional Animal Care and Use Committee (IACUC) and in accordance with the Guide for the Care and Use of Laboratory Animals of National Yang Ming Chiao Tung University (approval reference number: NCTU-IACUC-110045). Dissociated hippocampal and cortical neuron cultures were prepared as previously described (Chen et al., 2017) with the following modifications. Hippocampi or cortexes from E17.5 mouse embryos were dissected, digested with trypsin-EDTA, and triturated. Dissociated neurons were seeded onto poly-L-lysine-coated coverslips (2.5×103 cells/cm2 for low-density cultures and 3×104 cells/cm2 for regular-density cultures). Plasmids were introduced into neurons using Nucleofector II (Lonza, Basel, Switzerland) immediately before seeding or using Lipofectamine 2000 (Thermo Fisher Scientific) at the indicated number of days in vitro. Lipofectamine transfected cells were incubated for 4 hr and the medium containing the transfection mixture was then replaced with cortical neuron-conditioned neurobasal medium (Thermo Fisher Scientific, 21103049) (low-density cultures) or fresh neurobasal medium plus B27 supplement (regular-density culture).
 
-## Indirect immunofluorescence staining
+### Indirect immunofluorescence staining
 
 Cells on coverslips were fixed with 3.7% formaldehyde for 15  min at 37°C and then washed three times with PBS. Fixed cells were permeabilized with 0.25% triton X-100 in PBS for 5  min at room temperature or extracted in –20°C methanol for 10  min. For experiments that required cytosolic pre-extraction, cells on coverslips were permeabilized in 0.1% triton X-100 in PIPES buffer (0.1  M PIPES pH 6.9, 1  mM MgCl2, and 1  mM EGTA) for 15  s, washed once with PIPES buffer, and fixed with 3.7% formaldehyde in PIPES buffer at 37°C for 30  min and then washed with PBS three times. Cells were then blocked with 10% BSA in PBS for 30  min at 37°C, incubated for 1  hr at 37°C with different primary antibodies: GFP (1:100), HMMR (1:50), MAP2 (1:1000), SMI312 (1:1000), TPX2 (1:2000), acetylated-α-tubulin (1:1000), TUBB3 (1:2000), and TUJ1 (1:4000). After primary antibody incubation, cells were washed with PBS three times and incubated with AlexaFluor-conjugated secondary antibodies (1:1000). All antibodies were diluted in 2% BSA in PBS. Coverslips with cells were washed with PBS three times and mounted with Fluoromount onto glass slides.
 
-## In situ proximity ligation assay (PLA)
+### In situ proximity ligation assay (PLA)
 
 Cells were fixed in –20°C methanol for 10  min, washed with PBS, and then blocked in a chamber with Duolink II Blocking Solution for 30  min at 37°C. Primary antibodies used for different experiments were diluted in PBS containing 2% BSA at aforementioned dilutions and incubated for 1  hr at 37°C. Cells were then incubated with PLA probes diluted in Antibody Diluent for 1 hr at 37°C. Subsequent procedures were conducted according to the manufacturer’s instructions.
 
-## Microscopy acquisition
+### Microscopy acquisition
 
 Fluorescence images were acquired on a Nikon Eclipse-Ti inverted microscope equipped with a Photometrics CoolSNAP HQ2 CCD camera, an Intensilight epi-fluorescence light source, and Nikon NIS-Element imaging software. 20 × 0.75  N.A. or 60 × 1.49  N.A. Plan Apochromat objective lenses were used to collect fluorescence images.
 
 Live cell imaging was performed on a Nikon Eclipse-Ti inverted microscope equipped with a TIRF illuminator and a Tokai Hit TIZHB live cell chamber. Images were acquired using a 60 × 1.49  N.A. Plan Apochromat objective lens, a 561  nm DPSS laser, a Photometrics CoolSNAP HQ2 camera, and Nikon NIS-Elements imaging software. The built-in perfect focus system (PFS) was activated to maintain the axial position. Images were acquired every 500 milliseconds over a 2 min period. Only the neurons with clear EB3 comets were imaged.
 
-## Image analysis
+### Image analysis
 
 For neurite length analysis, fluorescence images were manually traced with the ImageJ plugin NeuronJ 1.4.1 (Meijering et al., 2004). Only neurons expressing both the transfection indicator (e.g. EGFP) and specific markers (e.g. β-III-tubulin, MAP2, SMI312) were analyzed. Only neurites longer than its soma diameter were analyzed.
 
@@ -119,6 +286,6 @@ For acetylated microtubule quantification, manually generated linescans along th
 
 For microtubule plus-end dynamics analysis, NIS-Elements software was used to generate the kymograph for the EB3-mCherry images. All kymographs were generated using a window 10  μm in length and seven pixels in width. For proximal neurite analysis, the kymograph window started from the edge of the soma and extended outwards. For mid-neurite analysis, the kymograph window was centered at the midpoint of the neurite. For distal neurite analysis, the kymograph window started at the wrist of the growth cone and extended inwards. The speed and persistence time of EB3-mCherry were quantified from the kymograph by drawing a line along an EB3-mCherry event. Only EB3-mCherry movements that could be followed clearly for equal or more than four frames (1.5 s) were defined as an event. The emanating frequency of EB3-mCherry was quantified from the kymograph by counting the number of EB3-mCherry events per minute.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using GraphPad Prism 8. Significant differences between the means were calculated with the indicated statistical methods.

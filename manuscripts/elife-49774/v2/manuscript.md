@@ -38,7 +38,7 @@ Here, we use a combination of live-cell and super-resolution light microscopy, t
 
 ## Results
 
-## F-actin assembly causes reorganization of the nuclear membranes leading to rupture
+### F-actin assembly causes reorganization of the nuclear membranes leading to rupture
 
 We have shown previously that NE rupture, characterized by a wave-like entry of large cytoplasmic molecules into the nucleus, is mediated by a transient F-actin shell on the inner side of the NE, which is nucleated by the Arp2/3 complex (Mori et al., 2014). The F-actin shell first appears as an equatorial band of foci when the NE is still intact and impermeable to large dextrans (Figure 1A, 0 s). Approximately 30–45 s later, as the F-actin foci grow and intensify, merging to form a continuous F-actin shell, the first breaks on the NE appear, allowing a large 500 kDa dextran to flood into the nucleus (Figure 1A, 45 s). The shell then spreads towards the poles before a wave of membrane rupture takes place after a delay of ~30 s (Figure 1A, 90 s).
 
@@ -54,7 +54,7 @@ This membrane reorganization is dependent on actin assembly. If the F-actin shel
 
 Thus, we concluded that, in starfish oocytes, actin assembly mediates a reorganization of nuclear membranes that leads to NE rupture.
 
-## Lamina remains intact during NE rupture
+### Lamina remains intact during NE rupture
 
 We next turned to immunofluorescence to visualize the endogenous NE components at an even higher resolution in order to reveal fine details of the F-actin-mediated NE rearrangements. We developed an antibody against the only identified starfish lamin protein, which together with the pan-NPC antibody mAb414 enabled us to visualize endogenous NE components together with phalloidin-stained F-actin. However, the F-actin shell is very transient, polymerizing and depolymerizing within 2 min, so the development of a reliable temporal reference for fixed-cell assays was also necessary. Fortunately, the F-actin shell emerges in a highly reproducible spatial pattern, which enabled us to time the fixed samples by correlating them with morphologies observed live (compare Figures 1A and 2A).
 
@@ -66,7 +66,7 @@ With this assay in hand, we first wanted to clarify whether the F-actin shell de
 
 We conclude that the rupture of the NE does not proceed by F-actin-induced tearing or rapid disassembly of the lamina, which remains a continuous network throughout NEBD.
 
-## The F-actin shell assembles within the lamina sprouting spikes that separate nuclear membranes
+### The F-actin shell assembles within the lamina sprouting spikes that separate nuclear membranes
 
 In order to localize the F-actin shell relative to NE components, we next co-localized the lamina or the nuclear membranes (as marked by NPCs) at the time of shell formation, with the F-actin shell stained by phalloidin. We observed that although the lamina co-localized with phalloidin, the NPC staining formed a separate layer of fragmented appearance up to 500 nm ‘above’ the F-actin shell (Figure 3A,B). Thus, the still-intact lamina appears to serve as the scaffold upon which the F-actin shell assembles, whereas the nuclear membranes appear to fragment and separate away from the lamina and the F-actin shell.
 
@@ -80,11 +80,25 @@ STED imaging of samples that were optimally fixed for phalloidin staining reve
 
 Taken together, our data show that the F-actin shell is nucleated by the Arp2/3 complex localized in the lamina and extends filopodia-like spikes, which separate the nuclear membranes away from the lamina.
 
-## Correlative EM captures intermediates of NE rupture
+### Correlative EM captures intermediates of NE rupture
 
 Unfortunately, although live imaging showed dramatic rearrangement of membranes, we were unable to visualize fine membrane structures in immunofluorescent samples directly, because preserving F-actin in fixed oocytes requires the addition of detergents to the fixative. The oocyte NE is, however, densely packed with NPCs, so NPC staining does provide a good proxy for the nuclear membrane, as shown above. Nonetheless, during NE rupture, this organization may change. Therefore, to clarify the F-actin mediated rearrangements of nuclear membranes, we decided to target the early stages of the F-actin shell formation using electron microscopy (EM). In this time-window of approximately 30 s, when the actin shell has just partially propagated, we expected to observe intermediate steps of NE rupture, with parts of the NE already ruptured while other regions are still intact (see Figure 1A).
 
 For this purpose, we developed a correlative electron microscopy protocol using high-pressure freezing and freeze substitution, which resulted in excellent preservation of the cellular structures (Burdyniuk et al., 2018). Correlation to light microscopy was achieved by using fluorescently labeled dextrans, which are directly visible on EM sections, as indicators of NEBD progression (Figure 4A,B): the small, 25-kDa dextran enters the nucleus during the first phase of NEBD through the disassembling NPCs, whereas the large, 160-kDa dextran only enters when the NE is ruptured (Lénárt et al., 2003). Thus, the stage when the 25-kDa dextran almost completely fills the nucleus but the large, 160-kDa dextran is still excluded identifies the time-window of F-actin shell formation and NE rupture.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig4-v2.jpg)
+
+**Figure 4.:** (A) Live imaging of a starfish oocyte undergoing NEBD and injected with a 25-kDa Cy5-labeled dextran (cyan), a 160-kDa TRITC-labeled dextran (red) and UtrCh-3mEGFP (white).Selected 2-frame projections from a confocal time-series imaged at one frame per second are shown. The orange line marks the moment immediately before rupture of the membrane, corresponding to the predicted time for the EM sample shown in panels (B) and (C). Scale bar: 20 µm. (B) Wide-field fluorescence image of a 70-nm section of a Lowicryl-embedded oocyte undergoing NEBD and injected with a 25-kDa Cy5-labeled dextran (cyan) and a 160-kDa TRITC-labeled (red) dextran. Scale bar: 20 µm. (C) A whole-nucleus tile of transmission EM images stitched automatically for the oocyte section shown in panel (B). Symbols around the nucleus correspond to NE rupture intermediates. A symbol legend with examples (crops from the tiled image) is shown to the right. Under each symbol, numbers correspond to the count of these events in the section shown, and the count in two adjacent sections is given in parentheses (shown in Figure 4—figure supplements 1–3). The band that traces the NE within the nuclear space demarcates areas with color-code for predominant membrane features. For a full resolution image, see Figure 4—figure supplement 1. Scale bar: 10 µm. (D) An oocyte fixed and stained with anti-lamin antibody (cyan) and phalloidin-AlexaFluor568 at early shell formation. A maximal Z projection is shown. Right: scheme illustrating the 3D geometry of the EM section. Scale bar: 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Scale bar: 10 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Scale bar: 10 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig4-figsupp3-v2.jpg)
 
 We then performed automated large field-of-view montage transmission EM imaging of the whole nuclear cross-section to assess the state of the NE. An overview is shown in Figure 4C, this and two additional montages are available at high resolution as Supplemental Data (Figure 4—figure supplements 1–3). The montage illustrates the key advantage of the system, which allows the progression of NE rupture to be observed spatially ordered on a single section of the large oocyte nucleus. The arrangement of the rupture site is fully consistent with the live and fixed light microscopy data: NE rupture initiates near the ‘equator’ of the nucleus and spreads as a wave towards the poles (Figure 4D).
 
@@ -92,11 +106,19 @@ We carefully examined these large montages and observed a set of frequently recu
 
 Taken together, using our correlative light and electron microscopy approach, we were able to capture oocytes in the process of NE rupture.
 
-## F-actin spikes protrude pore-free nuclear membranes
+### F-actin spikes protrude pore-free nuclear membranes
 
 The large dataset (Figure 4—figure supplements 1–3), the high frequency of events observed and, importantly, the spatial arrangement from the equatorial rupture site towards the still-intact poles allowed us to reconstruct the steps of NE rupture and to correlate these to observations made in live and fixed cells.
 
 First, as consistent with earlier observations, the NE is smooth, continuous and is tightly packed with NPCs with a regular spacing of ~200 nm in immature oocytes, as well as in oocytes just before NE rupture and even in the intact polar regions of the NE undergoing rupture (see Figure 5A,B for image examples, and Figure 6C for quantification) (Lénárt et al., 2003). By contrast, in areas closer to the rupture site, we observed regions with gaps in NPC occupancy, the number and size of which increased proximal to this region (Figure 5C). In the vicinity of the site, gaps appeared to evolve into ‘bumps’ and membrane spikes (Figure 5D). Although reconstructing the full 3D architecture of these spikes is challenging, even in 300-nm-thick tomographic sections, the most prominent spikes that we observed rose ~1 µm above the level of the NE (Figure 5D,E). These spikes contain fibrous densities consistent with actin filaments (Figure 5D and Figure 5—figure supplement 1A) and are even more clearly distinguishable on tomographic reconstructions (Figure 5E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) Transmission EM images from the oocyte shown in Figure 4C showing intermediates of NE rupture. Transparency coloring distinguishes the cytoplasm (green) from the nuclear area (pink) on the basis of the presence of ribosomes. Scale bars are 1 µm, except in the zooms, where they are 250 nm. In panel (D) arrows point to nucleoplasmic bodies. Zooms of the areas outlined with white rectangles are shown below. (E) Tomogram of a NE spike from a 300-nm thick section of the oocyte shown in Figure 4C, with model overlay segmented manually. Scale bar: 200 nm. (F) Selected single frame from a deconvolved 3D Airyscan recording at the time of NE rupture. F-actin is labeled with recombinant UtrCH-AlexaFluor488, and endomembranes are stained by DiIC18(3). Arrows mark prominent F-actin spikes. Scale bar: 1 µm. (G) STED image of the NE at the shell stage stained for NPCs (mAb414), lamina and phalloidin-Abberior Star Red. Separate channels and overlays are shown in the combinations indicated. Arrows point at nucleoplasmic bodies. Scale bars: 1 µm and 0.5 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Crops from an EM montage of membrane evaginations containing actin filaments. (B) Crops each show a membrane feature identified as NPC clusters: a concave NE-membrane portion that is rich in NPCs. To help orientation, the first crop in each row is pseudo-colored for cytoplasm (green), nucleus (pink) and NPC-rich cluster (orange). Scale bar: 500 nm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig6-v2.jpg)
 
@@ -108,7 +130,7 @@ These observations are further supported by light microscopy. AiryScan imaging i
 
 Together, our data from EM correlated with live cell and immunofluorescence suggest that the growing gaps between NPCs, which then develop into bumps and spikes, are protrusions generated by Arp2/3-driven actin polymerization, which pries nuclear membranes and lamina apart. Membrane evaginations are largely free of NPCs, most probably because NPCs are still attached to the lamina, and thus NPCs are held back and cluster at the base of spikes.
 
-## NPC-dense clusters invaginate and segregate from NPC-free regions
+### NPC-dense clusters invaginate and segregate from NPC-free regions
 
 In regions closer to rupture sites, we observed an increasing segregation of pore-free and pore-dense segments (Figure 6A). Furthermore, accompanying spikes and NPC-rich clusters, we observed additional frequent membrane structures, which we call nucleoplasmic bodies. These are dense, round structures 200–500 nm in diameter beneath the NE in the nucleoplasm (Figures 5D and 6B). These bodies often appear in a beads-on-a-string arrangement with a slightly electron-denser material connecting them (Figure 6B). Above them, the NE appears to be still intact, consisting mostly of NPC-free nuclear membranes and maintaining the nucleo-cytoplasmic boundary, as judged by the distribution of ribosomes. In pore-dense segments, as well as in nucleoplasmic bodies, our quantification shows that pore-to-pore distance decreased substantially from ~200 nm in intact areas to ~100 nm (Figure 6C), suggesting that the NPC-free membranes are generated by redistribution of NPCs.
 
@@ -146,11 +168,196 @@ Taken together, our data suggest that the F-actin shell destabilizes the NE by s
 
 ## Materials and methods
 
-## Oocyte collection and injection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Patiria miniata)</td>
+      <td>starfish oocytes</td>
+      <td>https://scbiomarine.com/ http://www.marinusscientific.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Patiria pectinifera)</td>
+      <td>starfish oocytes</td>
+      <td>Kazuyoshi Chiba, Ochanomizu University, Tokyo, Japan</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mEGFP3-UtrCH, 3mCherry-UtrCH</td>
+      <td>doi:10.1002/cm.20226</td>
+      <td></td>
+      <td>synthetic mRNA (Utrophin CH domain (human))</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Importin</td>
+      <td>doi: 10.1093/emboj/16.6.1153</td>
+      <td></td>
+      <td>(Importin-ß (45-462))</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UtrCH</td>
+      <td>doi:10.1002/cm.20226</td>
+      <td></td>
+      <td>(Utrophin CH domain (human))</td>
+    </tr>
+    <tr>
+      <td>Antibody, mouse (mAb414)</td>
+      <td>mAb414, mouse monoclonal</td>
+      <td>Sigma, BioLegend</td>
+      <td>Sigma #N8786, Biologend #902907</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody, rabbit (lamin)</td>
+      <td>lamin, rabbit polyclonal</td>
+      <td>see 'Materials and methods' for details</td>
+      <td></td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AmpliCap-Max T7 High Yield Message Maker</td>
+      <td>CellScript</td>
+      <td>C-ACM04037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Poly(A) tailing kit</td>
+      <td>CellScript</td>
+      <td>C-PAP5104H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Fluor 647 maleimide</td>
+      <td>ThermoFisher</td>
+      <td>A20347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Fluor 488 maleimide</td>
+      <td>ThermoFisher</td>
+      <td>A10254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Fluor 647 NHS Ester</td>
+      <td>ThermoFisher</td>
+      <td>A20006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Fluor 488 NHS Ester</td>
+      <td>ThermoFisher</td>
+      <td>A20000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cy5 NHS Ester</td>
+      <td>discontinued</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiIC18(3)</td>
+      <td>ThermoFisher</td>
+      <td>D282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-methyladenine (1-MA)</td>
+      <td>ACROS organics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phalloidin-AlexaFluor 488</td>
+      <td>ThermoFisher</td>
+      <td>A12379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phalloidin-AlexaFluor 568</td>
+      <td>ThermoFisher</td>
+      <td>A12380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phalloidin-AlexaFluor 647</td>
+      <td>ThermoFisher</td>
+      <td>A22287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Abberior STAR RED phalloidin</td>
+      <td>Abberior</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CK-666</td>
+      <td>Merck</td>
+      <td>182515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amino-dextran 500,000 MW</td>
+      <td>ThermoFisher</td>
+      <td>D7144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amino-dextran 70,000 MW</td>
+      <td>ThermoFisher</td>
+      <td>D1862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRITC–Dextran 155,000 MW</td>
+      <td>Sigma</td>
+      <td>T1287</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Oocyte collection and injection
 
 Starfish (Patiria miniata or P. pectinifera) were obtained in the springtime from Southern California (South Coast Bio-Marine LLC, Monterey Abalone Company or Marinus Scientific Inc) or were kindly provided by Kazoyushi Chiba (Ochanomizu University, Tokyo, Japan). They were kept at 16°C for the rest of the year in seawater aquariums at EMBL’s or MPI-BPC’s marine facilities. Oocytes were extracted from the animals fresh for each experiment as described earlier (Lénárt et al., 2003). mRNAs and other fluorescent markers were injected using microneedles, as described previously (Jaffe and Terasaki, 2004; Borrego-Pinto et al., 2016). mRNA was injected the day before to allow protein expression, whereas fluorescently labeled protein markers or dextrans were injected a few hours prior to imaging. Meiosis was induced at the initiation of the experiment by addition of 1-methyladenine (1-MA, 10 µM, Acros Organics). NEBD normally started 20–25 min after 1-MA addition, and only oocytes that initiated NEBD within 40 min of 1-MA addition were considered. Every experiment was repeated at least three times, with oocytes taken from at least two different animals.
 
-## Fluorescent markers and antibodies
+### Fluorescent markers and antibodies
 
 To label F-actin, 3mEGFP-UtrCH (Burkel et al., 2007) mRNA was synthesized in vitro from linearized DNA templates using the AmpliCap-Max T7 High Yield Message Maker kit (Cellscript), followed by polyA-tail elongation (A-Plus Poly(A) Polymerase Tailing Kit, Cellscript). mRNAs were dissolved in water (typical concentration 3–5 µg/µl) and injected into the oocyte up to 5% of the oocyte volume.
 
@@ -164,11 +371,11 @@ For CK-666 (Merck) treatments, oocytes were treated at 0.5 mM final concentratio
 
 The pan-NPC antibody mAb414 was purchased from BioLegend or Sigma (catalogue #902907 or #N8786, respectively). To produce the anti-starfish-lamin antibody, the Patiria miniata lamin sequence was first identified by BLAST searches in our transcriptome-based database by comparisons to the human lamin B amino acid sequence, and then confirmed by reverse searches to other species. Furthermore, the corresponding mRNA was expressed as a mEGFP fusion and showed the expected localization to the NE in starfish oocytes (not shown). Peptide antibodies were then produced against the ‘histone-interaction peptide’ region of starfish lamin (GTKRRRLDEEESMVQSS), which was used as the antigen for rabbit immunization. Antibody production and affinity purification was performed by Cambridge Research Biochemicals. The antibody’s specificity was confirmed by Western blots, which showed an expected-sized band, and by immunostaining, which showed localization to the nuclear rim in starfish oocytes.
 
-## Immunostaining
+### Immunostaining
 
 Oocytes were fixed at the desired times in a PFA/GA fixative (100 mM HEPES [pH 7.0], 50 mM EGTA, 10 mM MgSO4, 0.5% Triton-X100, 1 or 2% formaldehyde, 0.2 or 0.4% glutaraldehyde) modified from Strickland et al. (2004). Active aldehyde groups that remained post fixation were quenched by 0.1% solution of NaBH4 or by 200 mM NH4Cl and 200 mM glycine. Subsequently, samples were permeabilized and blocked in PBS+0.1% Triton-X100 plus 3% BSA and the Image-IT reagent (ThermoFisher Scientific). Antibody staining was done overnight for the primary antibody and for 2–3 hr for the secondary antibody in PBS+0.1% Triton-X100 at room temperature. Oocytes were mounted with the antifade agent ProLongGold (ThermoFisher Scientific) under a coverslip pressed quite firmly onto tiny pillars of grease or double-sided tape (Scotch).
 
-## Light microscopy
+### Light microscopy
 
 Live-cell movies were acquired on a Leica SP5 confocal microscope using a 40x HCX PL AP 1.10 NA water immersion objective lens (Leica Microsystems), or a Zeiss LSM880 AiryScan microscope using a C-Apochromat 40 × 1.20 NA water immersion objective lens. For live-cell imaging experiments, at least 3–5 oocytes were recorded per session.
 
@@ -176,7 +383,7 @@ Fixed oocytes were imaged on a Leica SP8 microscope equipped with the HC PL APO 
 
 Live and fixed oocyte images were processed and deconvolved using the Huygens software (Scientific Volume Imaging) with either confocal, AiryScan or STED settings as appropriate.
 
-## Electron microscopy
+### Electron microscopy
 
 The electron microscopy protocol is described in detail in Burdyniuk et al. (2018). In brief, oocytes were injected with a mixture of dextrans and a small batch was tested for meiosis timing. At the approximate time of NEBD, they were transferred into a carrier (three oocytes in 0.3 µl of sea water) and most of the water was removed with filter paper. Oocytes were immediately covered with a drop of 1-hexedecene, and immediately high-pressure frozen. Oocytes were freeze-substituted into Lowicryl HM-20. To stage the oocytes, light microscopy of EM sections was used to determine the progress of dextran entry. Selected sections were then post-stained with lead citrate and imaged using a BioTwin CM120 Philips transmission electron microscope at 120 kV. Large TEM montages were acquired using a JEOL JEM-2100Plus transmission electron microscope at 120 kV. Tomograms were reconstructed from tilt series acquired on a FEI Tecnai F30 transmission electron microscope at 300 kV with 1.554 nm pixel size.
 

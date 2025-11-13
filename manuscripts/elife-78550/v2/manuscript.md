@@ -41,34 +41,34 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Diabetes Center, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 School of Medicine, University of California, San Francisco San Francisco United States
+1. Department of Biochemistry and Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Diabetes Center, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. School of Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 4. Chan Zuckerberg Biohub San Francisco United States
-5. https://ror.org/043mz5j54 Department of Pediatric Critical Care Medicine, University of California, San Francisco San Francisco United States
-6. https://ror.org/043mz5j54 Department of Medicine, University of California, San Francisco San Francisco United States
-7. https://ror.org/01cwqze88 Fungal Pathogenesis Unit, Laboratory of Clinical Immunology & Microbiology, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States
-8. https://ror.org/056d84691 Department of Medicine, Karolinska University Hospital, Karolinska Institute Stockholm Sweden
-9. https://ror.org/048a87296 Science for life Laboratory, Department of Medical Sciences, Uppsala University Uppsala Sweden
-10. https://ror.org/048a87296 Department of Medical Biochemistry and Microbiology, Uppsala University Uppsala Sweden
-11. https://ror.org/056d84691 Centre for Molecular Medicine, Department of Medicine, Karolinska Institutet Stockholm Sweden
-12. https://ror.org/0420db125 St. Giles Laboratory of Human Genetics of Infectious Diseases, Rockefeller University New York United States
-13. https://ror.org/05tr67282 Laboratory of Human Genetics of Infectious Diseases, Necker Branch, INSERM U1163, Necker Hospital for Sick Children Paris France
-14. https://ror.org/05f82e368 Imagine Institute, University of Paris Paris France
-15. https://ror.org/05tr67282 Department of Pediatrics, Necker Hospital for Sick Children Paris France
-16. https://ror.org/043mz5j54 Berkeley-University of California, San Francisco Graduate Program in Bioengineering, University of California, San Francisco San Francisco United States
-17. https://ror.org/043mz5j54 Department of Pediatrics, Division of Pediatric Allergy, Immunology, Bone and Marrow Transplantation, Division of Pediatric Rheumatology, University of California, San Francisco San Francisco United States
-18. https://ror.org/00f54p054 Division of Stem Cell Transplantation and Regenerative Medicine, Stanford University School of Medicine Stanford United States
-19. https://ror.org/0168r3w48 Kawasaki Disease Research Center, Rady Children’s Hospital and Department of Pediatrics, University of California, San Diego La Jolla United States
-20. https://ror.org/043mz5j54 Department of Laboratory Medicine, University of California, San Francisco San Francisco United States
+5. Department of Pediatric Critical Care Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+6. Department of Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+7. Fungal Pathogenesis Unit, Laboratory of Clinical Immunology & Microbiology, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+8. Department of Medicine, Karolinska University Hospital, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+9. Science for life Laboratory, Department of Medical Sciences, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+10. Department of Medical Biochemistry and Microbiology, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+11. Centre for Molecular Medicine, Department of Medicine, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+12. St. Giles Laboratory of Human Genetics of Infectious Diseases, Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
+13. Laboratory of Human Genetics of Infectious Diseases, Necker Branch, INSERM U1163, Necker Hospital for Sick Children Paris France ([ROR:05tr67282](https://ror.org/05tr67282))
+14. Imagine Institute, University of Paris Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
+15. Department of Pediatrics, Necker Hospital for Sick Children Paris France ([ROR:05tr67282](https://ror.org/05tr67282))
+16. Berkeley-University of California, San Francisco Graduate Program in Bioengineering, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+17. Department of Pediatrics, Division of Pediatric Allergy, Immunology, Bone and Marrow Transplantation, Division of Pediatric Rheumatology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+18. Division of Stem Cell Transplantation and Regenerative Medicine, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+19. Kawasaki Disease Research Center, Rady Children’s Hospital and Department of Pediatrics, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+20. Department of Laboratory Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 21. Zuckerberg San Francisco General San Francisco United States
-22. https://ror.org/043mz5j54 Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States
-23. https://ror.org/03zga2b32 Department of Clinical Science and KG Jebsen Center for Autoimmune Disorders, University of Bergen Bergen Norway
-24. https://ror.org/00m8d6786 Center of Molecular Medicine, and Department of Endocrinology, Metabolism and Diabetes, Karolinska University Hospital Stockholm Sweden
-25. https://ror.org/01cwqze88 Laboratory of Clinical Immunology and Microbiology, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States
-26. https://ror.org/006w34k90 Howard Hughes Medical Institute New York United States
+22. Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+23. Department of Clinical Science and KG Jebsen Center for Autoimmune Disorders, University of Bergen Bergen Norway ([ROR:03zga2b32](https://ror.org/03zga2b32))
+24. Center of Molecular Medicine, and Department of Endocrinology, Metabolism and Diabetes, Karolinska University Hospital Stockholm Sweden ([ROR:00m8d6786](https://ror.org/00m8d6786))
+25. Laboratory of Clinical Immunology and Microbiology, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+26. Howard Hughes Medical Institute New York United States ([ROR:006w34k90](https://ror.org/006w34k90))
 27. Seattle Children's Research Institute Seattle United States
-28. https://ror.org/00cvxb145 Department of Pediatrics, University of Washington Seattle United States
+28. Department of Pediatrics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -90,7 +90,7 @@ Here, we develop a high-throughput PhIP-seq protocol with markedly increased acc
 
 ## Results and discussion
 
-## Design and implementation of a scaled PhIP-seq protocol
+### Design and implementation of a scaled PhIP-seq protocol
 
 The ability to process large numbers of patient samples for PhIP-seq in a highly uniform manner has several important benefits, including reduction of batch effects between samples from the same cohorts as well as between disease and control cohorts, detection of lower-frequency autoantigens, and the ability to simultaneously include large numbers of control samples.
 
@@ -102,7 +102,7 @@ A benchtop vacuum-based protocol (rapid, consistent wash times) in deep-well 96-
 
 **Figure 1.:** (A) Schematic of vacuum-based scaled PhIP-seq protocol, allowing for parallelized batches of 600–800 samples. (B) Comparison of moderate-throughput multichannel protocol data to high-throughput vacuum-based protocol data, with axes showing normalized read percentages. Controls include a commercial polyclonal anti-GFAP antibody (left), APS1 patient A with known and validated autoantibodies RFX6, SOX10, ACPT, and LCN1 (center), and APS1 patient B with the same known and validated autoantibodies as well as NKX6-3.
 
-## Large control cohorts are critical for identifying disease-specific autoantibodies
+### Large control cohorts are critical for identifying disease-specific autoantibodies
 
 Some assays for autoantigen discovery, such as protein arrays, are often used as a quantitative measure of how autoreactive an individual serum sample may be. In contrast, PhIP-seq is an enrichment-based assay in which binders are serially enriched and amplified. A practical limitation of this technique is that non-specific phage may also be amplified, in addition to a wide array of autoreactive, but non-disease-related peptides. We tested whether we could detect global differences between case and control cohorts as a measure of autoreactivity. As each APS1 patient is known to have multiple, high-affinity antibodies to self-proteins (Fishman et al., 2017; Landegren et al., 2016; Meyer et al., 2016; Vazquez et al., 2020) we reasoned that this would be an ideal cohort to determine whether a global autoreactive state was discernible. As expected, each individual sample exhibits a spectrum of enriched genes, regardless of disease status (Figure 2A), indicating that measures of simple enrichment are inadequate for discrimination of cases from controls.
 
@@ -112,7 +112,7 @@ Some assays for autoantigen discovery, such as protein arrays, are often used as
 
 We and others have shown that PhIP-seq can robustly detect disease-associated antigens by comparing antigen-specific signal between disease and control cohorts (Larman et al., 2011; Mandel-Brehm et al., 2019; O’Donovan et al., 2020; Vazquez et al., 2020). In this dataset, encompassing 186 control samples and 128 APS1 samples, we further evaluated the importance of control cohort size. We iteratively downsampled the number of healthy control samples in our dataset to 5, 10, 25, 50, 100, or 150 (out of n=186 total control samples). The number of apparent hits was determined in each condition, where a gene-level hit was called when the following criteria were met: (1) at least 10% of APS1 samples and less than two control samples with a Z-score >10, (2) no control sample exhibiting higher signal than the highest patient signal, and (3) a minimum of one strong positive patient sample (50-fold enrichment over mock-IP). Genes that failed to meet these conditions were considered non-specific. Using these conservative criteria, a control set of 10 samples resulted in (on average) 404 apparent hits, while increasing the control set to 50 samples removed an additional 388 non-specific hits, leaving 16 apparent hits (Figure 2B). Further increasing the number of control samples to 150 samples had diminishing returns, although 4–5 more autoantigen candidates were removed as being non-specific, reducing the frequency of false positives, and ultimately leaving only ~1% of the original candidate list for further investigation. In sum, to improve downstream analysis aimed at detecting disease-associated hits, PhIP-seq experimental design should include a large and appropriate number of non-disease controls.
 
-## Scaled PhIP-seq replicates and expands autoantigen repertoires across multiple independent cohorts of APS1
+### Scaled PhIP-seq replicates and expands autoantigen repertoires across multiple independent cohorts of APS1
 
 We previously identified and validated PhIP-seq hits based on shared positivity of a given hit among 3 (out of 39) or more patients with APS1 (Vazquez et al., 2020). While this enabled us to robustly detect frequently shared antigens within a small disease cohort, antigens with lower frequencies – or with low detection sensitivity – would likely fall below this conservative detection threshold.
 
@@ -124,7 +124,7 @@ To improve both sensitivity and specificity, we utilized scaled PhIP-seq to expl
 
 Other notable hits with relevant tissue-restricted expression were also observed. For example, SPAG17 is closely related to the known APS1 autoantigen SPAG16 and is expressed primarily in male germ cells and in the lung, with murine genetic mutations resulting in ciliary dyskinesis with pulmonary phenotypes (Fishman et al., 2017; Teves et al., 2013). Also potentially related to ciliary and/or pulmonary autoimmunity is CROCC2/Rootletin, a protein expressed in ciliated cells, which we previously observed, and now recognize at a high frequency across multiple cohorts (Uhlén et al., 2015; Yang et al., 2002). Similarly, GAS2L2 is a ciliary protein expressed in the airway, with genetic loss of function in mice resulting in impaired mucociliary clearance, and clustered closely with CROCC2 (Bustamante-Marin et al., 2019; Uhlén et al., 2015) in this dataset. These novel putative antigens together hint at potential mucociliary airway autoreactivity. CT45A10 and GPR64 are both proteins with expression restricted primarily to male gonadal tissues (Uhlén et al., 2015). GABRR1 is a GABA receptor expressed primarily in the central nervous system as well as on platelets (Ge et al., 2006; Zhu et al., 2019), and TRIM2 is implicated in genetic disorders of demyelination within the peripheral nervous system, and therefore may be of interest to the chronic inflammatory demyelinating polyneuropathy phenotype that can be seen in some patients with APS1 (Li et al., 2020; Valenzise et al., 2017). In addition to our previously described intestinally expressed autoantigens RFX6, NKX6-3, and GIP, we also identify CDHR5, a transmembrane cadherin-family protein expressed on the enterocyte cell surface, as a putative autoantigen in APS1 (Crawley et al., 2014; Uhlén et al., 2015).
 
-## APS1 disease prediction by machine learning
+### APS1 disease prediction by machine learning
 
 APS1 is a clinically heterogeneous disease, and it is also heterogeneous with respect to autoantibodies (Ferre et al., 2016; Fishman et al., 2017; Landegren et al., 2016; Meyer et al., 2016; Vazquez et al., 2020). Because PhIP-seq simultaneously interrogates autoreactivity to hundreds of thousands of peptides, we hypothesized that unsupervised machine learning techniques could be used to create a classifier that would distinguish APS1 cases from healthy controls. We applied a simple logistic regression classifier to our full gene-level APS1 (n=128) and control (n=186) datasets, resulting in excellent prediction of disease status (AUC = 0.95, Figure 4A) using fivefold cross-validation. Moreover, we found that the classification model was driven strongly by many of the previously identified autoantigens, including RFX6, KHDC3L, and others (Figure 4A), in addition to some targets that had not been previously examined (Vazquez et al., 2020). These results demonstrate that PhIP-seq autoreactive antigen enrichment profiles are amenable to machine learning techniques, and further suggest that such data could be used to derive diagnostic signatures with strong clinical predictive value.
 
@@ -132,7 +132,7 @@ APS1 is a clinically heterogeneous disease, and it is also heterogeneous with re
 
 **Figure 4.:** (A) Receiver operating characteristic (ROC) curve for prediction of APS1 versus control disease status. (B) The highest logistic regression (LR) coefficients include known antigens RFX6, KHDC3L, and others.
 
-## Antoantibody discovery in IPEX
+### Antoantibody discovery in IPEX
 
 IPEX syndrome is characterized by defective peripheral immune tolerance secondary to impaired T regulatory cell (Treg) function. In IPEX, peripheral tolerance rather than central tolerance is impaired, resulting in a phenotypic constellation of autoimmunity that partially overlaps with APS1 (Bacchetta et al., 2006; Powell et al., 1982). Notably, the majority of IPEX patients exhibit severe enteropathy, with early-onset severe diarrhea and failure to thrive, with many of these children harboring anti-enterocyte antibodies detected by indirect immunofluorescence (Bacchetta et al., 2006; Gambineri et al., 2018; Powell et al., 1982). We hypothesized that the same PhIP-seq approach that was successful for APS1 would also yield informative hits for IPEX. A total of 27 patient samples were analyzed using scaled PhIP-seq, and the data processed in the same manner as for APS1.
 
@@ -140,7 +140,15 @@ A handful of IPEX autoantibodies targeting antigens expressed in the intestine h
 
 Several novel putative autoantigens were observed that were shared among three or more IPEX patients (Figure 5A). Among these were several with expression restricted to the intestine, including BEST4, a protein expressed by a specific subset of enterocytes, BTNL8, a butyrophilin-like molecule highly expressed in the gut epithelium, ST6GALNAC1, and ITGA4 (Figure 5A; Mayassi et al., 2019; Schaum et al., 2018; Uhlén et al., 2015). BEST4 and BTNL8 were selected for validation by whole protein immunoprecipitation. A total of 4/26 (15%) of IPEX patients were positive for anti-BEST4 autoantibodies (Figure 5B). In the case of BTLN8, orthogonal validation identified 11/26 (42%) of IPEX patients who were positive for anti-BTNL8 antibodies (Figure 5B). Of note, all patients with anti-BTNL8 and/or BEST4 antibodies also had clinical evidence of enteropathy (Supplementary file 1). In addition, to broaden the validity of our findings, we tested a second, independent cohort of IPEX patients for anti-BTNL8 antibodies and found 3/15 (20%) patients to be positive (Figure 5C). Taken together, these results suggest that anti-BEST4 and anti-BTNL8 are associated with IPEX enteropathy.
 
-## Overlap of intestinal autoantigen BEST4 in the setting of hypomorphic RAG1/2 mutations
+![Figure 5.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig5-v2.jpg)
+
+**Figure 5.:** (A) PhIP-seq heatmap of most frequent shared antigens among IPEX, with color indicating z-score relative to a cohort of non-IPEX controls. (B) Radioligand binding assay for BTNL8 reveals additional anti-BTNL8 positive IPEX patients (top). Radioligand binding assay for BEST4 autoantibodies correlates well with PhIP-seq data (bottom). (C) Discovery of additional anti-BTNL8 positive individuals in an independent IPEX cohort (n=15) by radioligand binding assay; dotted line indicates mean of healthy controls +3 SD. (D) PhIP-seq screen of patients with hypomorphic mutations in RAG1/2 reveals two patients with anti-BEST4 signal. (E) Orthogonal radioligand binding assay validation of anti-BEST4 antibodies in both PhIP-seq anti-BEST4 positive patients.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78550/elife-78550-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Phage-immunoprecipitation sequencing has low detection sensitivity for known antigens USH1C and ANKS4B, but those patients with positive signal exhibit the previously reported coupled signal for both antigens. (B) Additional, shared putative antigens within the cohort of RAG1/2-deficient patients (n=62).
+
+### Overlap of intestinal autoantigen BEST4 in the setting of hypomorphic RAG1/2 mutations
 
 Hypomorphic RAG1/2 mutations represent an additional and notoriously phenotypically heterogeneous form of monogenic immune dysregulation. Absent RAG complex activity leads to lack of peripheral T and B cells, therefore causing severe combined immunodeficiency (SCID). However, patients with hypomorphic RAG1/2 have residual capacity to generate T and B cells. Depending on the severity of the defect, these patients can present with Omenn syndrome, atypical SCID (AS), or combined immune deficiency with granulomas and autoimmunity (CID-G/AI) (Delmonte et al., 2018; Delmonte et al., 2020). Autoimmune manifestations are particularly common in patients with AS and CID-G/AI. Cytopenias are the most frequent form of autoimmunity in patients with RAG deficiency, but cutaneous, neuromuscular, and intestinal manifestations have been also reported. While anti-cytokine antibodies have been described, other disease-associated autoantibody targets remain to be identified (Delmonte et al., 2020).
 
@@ -148,7 +156,7 @@ Hypomorphic RAG1/2 mutations represent an additional and notoriously phenotypica
 
 Several other putative antigens among the larger RAG1/2 deficiency cohort were revealed. Nearly half of the cohort sera were enriched for peptides derived from ZNF365 (Figure 5—figure supplement 1B). ZNF365 is a protein associated with multiple autoimmune diseases, as evidenced by genome-wide association studies (GWAS) show that variants in ZNF365 are associated with Crohn’s disease and autoimmune uveitis (Haritunians et al., 2011; Hou et al., 2020). Many patients also had evidence of autoantibodies targeting RELL2, a TNF receptor binding partner, and CEACAM3, a phagocyte receptor that recognizes human-specific pathogens and is important for opsonin-independent phagocytosis of bacteria (Bonsignore et al., 2019; Moua et al., 2017). Autoantibodies targeting these antigens could potentially play a role in the autoinflammation seen in certain cases of hypomorphic RAG1/2 and/or increased susceptibility to particular infections and will require additional future follow-up.
 
-## PhIP-seq identifies rare, shared candidate autoantigens in MIS-C
+### PhIP-seq identifies rare, shared candidate autoantigens in MIS-C
 
 MIS-C leads to critical illness in ~70% of affected children and shares some common clinical features with KD, the most common cause of acquired pediatric heart disease in the United States. Despite hints for a role of abnormal adaptive immunity and autoantibodies in the pathogenesis of KD and MIS-C, the etiologies of both diseases remain enigmatic (Feldstein et al., 2020; Newburger et al., 2016). Recently, PhIP-seq has been deployed to explore COVID-19-associated MIS-C (Gruber et al., 2020). However, this study included only four healthy controls and nine MIS-C patients, and as our results have shown, removal of false-positive PhIP-seq hits requires the use of substantial numbers of unaffected controls (Figure 2C). Furthermore, these previously published hits lacked orthogonal validation. Therefore, we sought to examine an MIS-C cohort in light of these results, as well as to explore for possible autoantibody overlap between KD and MIS-C.
 
@@ -160,7 +168,7 @@ First, 20 MIS-C subjects, 20 pediatric febrile controls, and 20 COVID-19 control
 
 Analysis of our MIS-C cohort for shared candidate hits yielded only three candidate hits, each in 2/20 patient sera. These were CD34, RPS6KB1, and CAPZB (Figure 6B). While these targets may be of interest, disease-association remains uncertain. These results suggest that a much larger MIS-C cohort, controlled by an equally large set of healthy controls, will be required to detect rare, shared antigens with confidence by PhIP-seq.
 
-## PhIP-seq screen of a cohort of KD patients
+### PhIP-seq screen of a cohort of KD patients
 
 To screen for possible KD-specific autoantibodies, we analyzed a large cohort of 70 KD subjects by PhIP-seq. KD patients are also often treated with IVIG, so care was taken to ensure that each of these samples was collected prior to IVIG administration. Using the same hit selection criteria as previously, we detected 25 shared hits among 3 or more of the 70 KD samples, which were specific to KD relative to adult healthy controls (Figure 6C). Of these 25 shared KD hits, 17 were absent from additional control groups including the febrile pediatric patients. Each of these hits was present in only a small subset of KD samples, suggesting significant heterogeneity among samples.
 
@@ -170,11 +178,11 @@ Other KD candidate autoantigens exhibited tissue expression patterns that sugges
 
 Taken together, our dataset did not uncover the presence of common autoantibodies in KD or MIS-C. Nonetheless, our findings leave open the possibility of lower-frequency disease-associated autoantibodies, and future studies with increased cohort scaling, diverse representation of clinical subphenotypes, and high-sensitivity follow-up assays may shed further light on the role of autoantibodies in KD.
 
-## Autoantigen overlap between KD and MIS-C
+### Autoantigen overlap between KD and MIS-C
 
 Given the partial clinical overlap of KD with MIS-C, we also searched for the low-frequency, shared KD hits within MIS-C and found that 6 of the 17 KD hits were present in one or more MIS-C samples (Figure 6D). Of these, CGNL1 was of particular interest given the very high enrichment values in patients and absence of signal from all controls, as well as its anatomic expression pattern. CGNL1 is an endothelial junction protein and is highly expressed in the cardiac endothelium (Chrifi et al., 2017; Schaum et al., 2018). We confirmed anti-CGNL1 autoantibodies using a radioligand binding assay with whole CGNL1 protein (Figure 6D). We also identified an additional positive KD patient that had not been detected by PhIP-seq. These data suggest that anti-CGNL1 antibodies, while rare, may be associated with KD and/or MIS-C.
 
-## Application of scaled PhIP-seq to severe COVID-19
+### Application of scaled PhIP-seq to severe COVID-19
 
 Recently, it was reported that over 10% of severe COVID-19 pneumonia is characterized by the presence of anti-Type I IFN autoantibodies, a specificity that overlaps with APS1 (Bastard et al., 2020; Bastard et al., 2021b; Bastard et al., 2021a; Meager et al., 2006; Meyer et al., 2016; van der Wijst et al., 2021). We therefore looked for possible overlap of additional antigens between APS1 and COVID-19. As expected, we had low sensitivity for the known anti-type I IFN autoantibodies by PhIP-seq, likely due to the conformational nature of these antigens; however, this cohort had been previously assessed for anti-Type I IFN antibodies by other techniques (Bastard et al., 2020; Bastard et al., 2021c). We did not detect substantial overlap of any of the other antigens that were found in 5% or more of APS1 samples, suggesting that autoantibody commonalities between APS1 and severe COVID-19 may be limited (Figure 7A).
 
@@ -206,29 +214,29 @@ Finally, we emphasize that to broadly understand autoantibody profiles, full PhI
 
 ## Materials and methods
 
-## PhIP-seq protocols
+### PhIP-seq protocols
 
 All PhIP-seq protocols described in detail are available at protocols.io, located at the links below.
 
-## PhIP-seq data alignment and normalization
+### PhIP-seq data alignment and normalization
 
 Fastq files were aligned at the level of amino acids using RAPSearch2 (Zhao et al., 2012). For gene-level analysis, all peptide counts mapping to the same gene were summed. 0.5 reads were added to all genes, and raw reads were normalized by converting to percentage of total reads per sample. Fold change (FC) over mock-IP was calculated on a gene-by-gene basis by dividing sample read percentage by mean read percentage in corresponding AG bead-only samples. Z-scores were calculated using FC values; for each disease sample by using all corresponding healthy controls, and for each healthy control samples by using all other healthy controls. The positive threshold used for detection of shared candidate antigens was a Z-score ≥10. Shared hits were then determined by positive rate in the specified percentage of patient samples and under a specified percentage (<2% unless otherwise specified) in controls. In addition, at least one positive sample was required to have a minimum FC of 50 or above. Finally, no candidate antigens were allowed where any positive control samples signal fell above the highest patient sample.
 
-## Radioligand binding assay
+### Radioligand binding assay
 
 Radioligand binding assay was performed as described in Vazquez et al., 2020 for each gene of interest (GOI). Briefly, GOI-myc-flag construct was used to in vitro transcribe and translate [35 S]-methionine-labeled protein, which was subsequently column purified, immunoprecipitated with patient serum on Sephadex protein A/G beads, and counts per million (cpm) were read out on a 96-well liquid scintillation reader (MicroBeta Trilux, Perkin Elmer). Constructs: PDYN (Origene, #RC205331), BEST4 (Origene, #RC211033), BTNL8(Origene, #RC215370), and CGNL1 (Origene, #RC223121). Anti-MYC (Cell Signaling Technologies, #2272 S) and/or anti-FLAG (Cell Signaling Technologies, #1493 S) antibodies were used as positive controls for immunoprecipitations.
 
-## Statistics
+### Statistics
 
 Statistics for radioligand binding assay were performed as described in Vazquez et al., 2020. Briefly, the antibody index for each sample was calculated as: (sample value – mean blank value)/(positive control antibody value – mean blank value).
 
 We applied a logistic regression classifier on log-transformed PhIP-seq RPK values from APS1 patients (n=128) versus healthy controls (n=186) using the scikit-learn package (Pedregosa et al., 2011) with a liblinear solver and L1 regularization. The model was evaluated with fivefold cross-validation.
 
-## Ethics/human subjects research
+### Ethics/human subjects research
 
 Available clinical metadata varies across cohorts; all available clinical data is included in Supplementary file 1.
 
-## APS1
+#### APS1
 
 North America - 1: All patient cohort data was collected and evaluated at the NIH, and all APECED/ APS1 patients were enrolled in a research study protocol approved by the NIH Institutional Review Board Committee and provided with written informed consent for study participation (protocol #11-I-0187, NCT01386437). All NIH patients gave consent for passive use of their medical record for research purposes. The majority of this human cohort data was previously published Ferre et al., 2016; Ferré et al., 2019.
 
@@ -236,25 +244,25 @@ Sweden: Serum samples were obtained from Finnish and Swedish patients with APS1.
 
 North America - 2: All patients underwent informed consent with research study protocols approved by the UCSF Human Research Protection Program (IRB# 10-02467).
 
-## RAG1/2 deficiency
+#### RAG1/2 deficiency
 
 Patients with RAG1/2 deficiency were enrolled in research study protocols approved by the NIAID, NIH Institutional Review Board (protocols 05-I0213, 06-I-0015, NCT03394053, and NCT03610802). Peripheral blood samples were obtained upon written informed consent.
 
-## IPEX
+#### IPEX
 
 IPEX patient cohort data was collected and evaluated at Seattle Children’s Hospital under an IRB-approved protocol. Clinical data on this human cohort was previously published by Gambineri et al., 2018. For the independent validation cohort (Figure 5C), all patient cohort data was collected and evaluated at Stanford under an IRB-approved protocol and was previously published by Narula et al., 2022.
 
-## KD/MIS-C/febrile controls
+#### KD/MIS-C/febrile controls
 
 UCSD cohort (MIS-C/KD/febrile controls): The study was reviewed and approved by the institutional review board at the University of California, San Diego. Written informed consent from the parents or legal guardians and assent from patients were obtained as appropriate.
 
 Rockefeller cohort (MIS-C): All individuals were recruited according to protocols approved by local Institutional Review Boards.
 
-## Severe COVID-19
+#### Severe COVID-19
 
 All COVID-19 (non-MIS-C) patients were collected between March 01, 2020 and July 21, 2020 and had positive results by SARS-CoV-2 RT-PCR in nasopharyngeal swabs. ZSFG remnant specimens (institutional review board [IRB] number 20-30387) were approved by the IRB of the University of California, San Francisco. The committee judged that written consent was not required for use of remnant specimens.
 
-## Adult healthy controls
+#### Adult healthy controls
 
 New York Blood Center & Vitalant Research Institute: Healthy, pre-COVID control plasma were obtained as deidentified samples. These samples were part of retention tubes collected at the time of blood donations from volunteer donors who provided informed consent for their samples to be used for research.
 

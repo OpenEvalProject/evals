@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 UCL School of Pharmacy London United Kingdom
-2. https://ror.org/00dn4t376 Department of Computer Science, Brunel University London Uxbridge United Kingdom
-3. https://ror.org/0220mzb33 Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King’s College London London United Kingdom
-4. https://ror.org/01vrybr67 Research Service, Louis Stokes Cleveland Department of Veterans Affairs Medical Center Cleveland United States
-5. https://ror.org/051fd9666 Department of Molecular Biology and Microbiology, Case Western Reserve University School of Medicine Cleveland United States
-6. https://ror.org/051fd9666 Department of Medicine, Case Western Reserve University School of Medicine Cleveland United States
-7. https://ror.org/051fd9666 Departments of Pharmacology, Biochemistry, and Proteomics and Bioinformatics Case Western Reserve University School of Medicine Cleveland United States
+1. UCL School of Pharmacy London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. Department of Computer Science, Brunel University London Uxbridge United Kingdom ([ROR:00dn4t376](https://ror.org/00dn4t376))
+3. Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+4. Research Service, Louis Stokes Cleveland Department of Veterans Affairs Medical Center Cleveland United States ([ROR:01vrybr67](https://ror.org/01vrybr67))
+5. Department of Molecular Biology and Microbiology, Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
+6. Department of Medicine, Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
+7. Departments of Pharmacology, Biochemistry, and Proteomics and Bioinformatics Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
 8. CWRU-Cleveland VAMC Center for Antimicrobial Resistance and Epidemiology (Case VA CARES) Cleveland United States
-9. https://ror.org/04yej8x59 University of Tabuk (PFSCBR) Tabuk Saudi Arabia
-10. https://ror.org/02jx3x895 UCL Center for Advanced Research Computing, University College London London United Kingdom
+9. University of Tabuk (PFSCBR) Tabuk Saudi Arabia ([ROR:04yej8x59](https://ror.org/04yej8x59))
+10. UCL Center for Advanced Research Computing, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -46,23 +46,47 @@ Here, we present DyNoPy, a computational method that can extract hidden informat
 
 In this study, we applied DyNoPy to two model enzymes from different β-lactamase families: class A β-lactamase SHV-1 (a chromosomally encoded enzyme in Klebsiella pneumoniae) and class C β-lactamase PDC-3 (a chromosomally encoded enzyme in Pseudomonas aeruginosa) (Olehnovics et al., 2021; Chen et al., 2024; Figure 2). Both class A and class C β-lactamases comprise an α/β domain and an α helical domain, with the active site situated in between (Matagne et al., 1998; Philippon et al., 2022). Moreover, both enzymes target the carbonyl carbon of the β-lactams using a highly conserved serine residue (Palzkill, 2018; Jacoby, 2009). Despite these similarities, the structures of class A and class C β-lactamases are remarkably different (Figure 2—figure supplements 1 and 2). In class A β-lactamases, the active site is surrounded by three loops: the α3-α4 loop (residues 101–111), the Ω-loop (residues 164–179), and the hinge region (residues 213–218) (Galdadas et al., 2021). The Ω-loop is particularly critical as it positions N170 to hydrogen bond with the E166 via a conserved water molecule, which is essential for initiating the deacylation step (Kuzin et al., 1999). Compared to class A β-lactamases, the active site of class C β-lactamases is wider, conferring a broader substrate binding capability (Medeiros, 1997; Figure 2—figure supplement 3). The active site of class C β-lactamases can be divided into two parts: the R1 site and the R2 site (Jacoby, 2009). The R1 region is surrounded by the extended Ω-loop (residues 183–226), while the R2 site is enclosed by the R2-loop (residues 280–310) (Chen et al., 2024). The Ω-loop in class C β-lactamases is significantly longer than that in class A, enhancing the active site ability to accommodate diverse substrates and contributing to the extended spectrum profile of some class C enzymes (Chen et al., 2024).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/105005/elife-105005-fig2-v1.jpg)
+
+**Figure 2.:** Catalytic serine S70 (SHV-1) and S64 (PDC3) are highlighted using stick representation. Important loops surrounding the active site are highlighted in red. In SHV-1, highlighted loops are the α3-α4 loop (residues 101–111), the Ω-loop (residues 164–179), and the hinge region (residues 213–218). In PDC-3, highlighted loops are the Ω-loop (residues 183–226) and the R2-loop (residues 280–310).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105005/elife-105005-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** PDB ID: 3N4I.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105005/elife-105005-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** PDB ID: 4HEF.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/105005/elife-105005-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** S70 and S64 are the catalytic serine residue for SHV-1 and PDC-3, respectively. The α3-α4 loop, the Ω-loop, and the hinge region in SHV-1 are highlighted in red. The Ω-loop and the R2-loop in PDC-3 are coloured in red.
+
 SHV-1 is a very well-characterized enzyme with a wealth of information on mutations and their corresponding effects on protein function. In contrast, the information available on PDC-3 remains limited. Essential catalytic residues in SHV-1 are S70, K73, S130, E166, N170, K234, G236, and A237 (Ambler et al., 1991), and conserved catalytic residues in PDC-3 include S64, K67, Y150, N152, K315, T316, and G317. Highly conserved stretches of 3–9 hydrophobic residues, annotated as hydrophobic nodes, exist in class A β-lactamases and have been proven to be essential for protein stability (Galdadas et al., 2018). Residues defined as belonging to hydrophobic nodes within SHV-1 are listed in Supplementary file 1a.
 
 In SHV-1, the predominant extended spectrum β-lactamase (ESBL) substitutions occur at L35, G238, and E240, while R43, E64, D104, A146, G156, D179, R202, and R205 appear in ESBLs with lower frequency (Liakopoulos et al., 2016). Mutations at M69, S130, A187, T235, and R244 are known to induce inhibitor resistance in the enzyme (Pagan-Rodriguez et al., 2004). In PDC-3, substitutions primarily occur on the Ω-loop, enhancing its flexibility to accommodate the bulky side chains of antibiotics, while deletions are more common in the R2-loop (Jacoby, 2009). The predominant Ω-loop mutations isolated from clinics are found at positions V211, G214, E219, and Y221 (Barnes et al., 2018).
 
-## Emergence of highly conserved dynamic couplings
+### Emergence of highly conserved dynamic couplings
 
 DyNoPy builds a pairwise model of conserved dynamic couplings detected by combining coevolution scores and information on functional motions into a score Jij (see ‘Methods’ and Figure 1). To this end, a dynamic descriptor should be selected. When the descriptor is associated with functional conformational changes, it is expected that functionally relevant couplings will report higher scores. Dynamic descriptors can be selected from commonly used geometrical collective variables (CVs) for the analysis of MD trajectories (see ‘Methods’). As expected, the average J matrix score varies across the different CVs, with some of them showing no signal of dynamic coupling (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/105005/elife-105005-fig3-v1.jpg)
+
+**Figure 3.:** (A) Average J matrix score varies across different collective variables (CVs). Left: SHV-1; right: PDC-3. (B) Number of non-zero couplings detected by scaled coevolution scores ($\gamma_{ij}$) and J values calculated by DyNoPy ($J_{ij}$). (C) Number of residues of each community in SHV-1. (D) Number of residues of each community in PDC-3. A reasonable residue community should contain at least three residues.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105005/elife-105005-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) EVC distribution of SHV-1 for each community detected by traditional coevolution scores. (B) EVC distribution of PDC-3 of each community detected by traditional coevolution scores. (C) EVC distribution of SHV-1 of each community induced from J value calculated by DyNoPy. (D) EVC distribution of PDC-3 of each community induced from J value calculated by DyNoPy.
+
 SHV-1 and PDC-3 exhibit distinct dynamics, requiring a different choice of the CV that best captures the functional dynamics. For SHV-1, the global first principal component (PC1) proved to be the most effective feature, identifying 571 residue pairs with a Jij value greater than 0. Conversely, PDC-3 requires selection of more localized features that can extract the Ω-loop dynamics from the overall protein motion. Among the dynamic descriptors, the partial first time-lagged component (TC1_partial) performed best for PDC-3, detecting 216 residue pairs with a Jij value greater than 0. Consequently, PC1 and TC1_partial were selected to build the J matrix for SHV-1 and PDC-3, respectively. The performance of all 12 CVs for each protein was assessed and listed in Supplementary file 1b.
 
-The importance of dynamical information is evident when coevolution couplings (γij) and conserved dynamic couplings (Jij) are compared: the number of non-zero couplings decreases from 40% to <2% of total residue pairs in the protein (Figure 3B) when information from the dynamics descriptor is added. Thus, the inclusion of protein dynamics in coevolution studies acts as an effective filter that rules out residue pairs that do not have significant correlations with functional motions. Moreover, when relying only on γij, all the residues in SHV-1 and PDC-3 are included within four identified communities (Supplementary file 1c), suggesting that coevolution scores (γij) alone do not effectively discriminate residues relevant for protein functions. Furthermore, it would be hard to distinguish critical core residues for each community using only γij as the eigenvector centrality (EVC) values for the residues do not show remarkable differences (Figure 3—figure supplement 1A and B). This means that detailed dynamic investigation of the top residues is needed to determine which pairs should be picked up and further analysed. On the other hand, it is much easier to identify essential residues based on J scores calculated as clear outliers with significantly higher EVC values could be seen for almost all communities (Figure 3—figure supplement 1C and D; Parente et al., 2015; Negre et al., 2018). In conclusion, the lack of specificity in the statistically based coevolution analysis supports the choice of incorporating a score for the correlation between residue interactions and dynamic behaviours that enables deconvolution of community information.
+The importance of dynamical information is evident when coevolution couplings ($\gamma_{ij}$) and conserved dynamic couplings (Jij) are compared: the number of non-zero couplings decreases from 40% to <2% of total residue pairs in the protein (Figure 3B) when information from the dynamics descriptor is added. Thus, the inclusion of protein dynamics in coevolution studies acts as an effective filter that rules out residue pairs that do not have significant correlations with functional motions. Moreover, when relying only on $\gamma_{ij}$, all the residues in SHV-1 and PDC-3 are included within four identified communities (Supplementary file 1c), suggesting that coevolution scores ($\gamma_{ij}$) alone do not effectively discriminate residues relevant for protein functions. Furthermore, it would be hard to distinguish critical core residues for each community using only $\gamma_{ij}$ as the eigenvector centrality (EVC) values for the residues do not show remarkable differences (Figure 3—figure supplement 1A and B). This means that detailed dynamic investigation of the top residues is needed to determine which pairs should be picked up and further analysed. On the other hand, it is much easier to identify essential residues based on J scores calculated as clear outliers with significantly higher EVC values could be seen for almost all communities (Figure 3—figure supplement 1C and D; Parente et al., 2015; Negre et al., 2018). In conclusion, the lack of specificity in the statistically based coevolution analysis supports the choice of incorporating a score for the correlation between residue interactions and dynamic behaviours that enables deconvolution of community information.
 
-## DyNoPy reveals critical residues and predicts evolutionary pathways in SHV-1
+#### DyNoPy reveals critical residues and predicts evolutionary pathways in SHV-1
 
 DyNoPy identified eight meaningful communities, each consisting of at least three strongly coupled residues within SHV-1 (Figure 3C). All crucial catalytic residues and critical substitution sites previously mentioned participating in one of these communities with the exceptions of R43, R202, and S130. Residues previously known to have critical role in function or conferring ESBLs/IRBLs phenotype are either directly coupled to protein dynamics or act as a central hub. The hubs interact with residues with either a role in catalysis or structural stability through their membership of hydrophobic nodes (Olehnovics et al., 2021). Furthermore, DyNoPy identified key positions (L162 and N136) within some communities that are known to undergo substitutions, conferring an ESBL phenotype in other class A β-lactamases. These substitutions have not yet emerged in the SHV family, providing insightful predictions about the potential future evolution of the enzyme. Detailed discussions of communities with secondary importance for protein function (communities 3, 8, and 9) is provided in the Appendix (Appendix 2—figure 1).
 
-## DyNoPy predicts mutation hotspots in SHV-1
+#### DyNoPy predicts mutation hotspots in SHV-1
 
 DyNoPy detects critical mutation sites (L162 and N136) that are known to extend the range of substrates in other class A β-lactamases but have not yet emerged as variants in the SHV family. These sites have not been modified in the SHV family because of their plausible central role within the communities as they are mediating couplings with key functional residues essential for catalytic activity and structural stability, indicating their critical role in protein function and the potential lower mutation rate. These findings provide insightful predictions about the potential future evolution of the enzyme, as well as plausible explanations for why these mutations have not yet appeared.
 
@@ -78,7 +102,7 @@ Just like L162, N136 undergoes advantageous mutations in other class A β-lactam
 
 **Figure 5.:** All the residues are depicted as spheres on the protein structure. The core residue for each community is highlighted in red, while purple is used to emphasize the secondary core residue. Residues that interact with both cores are coloured in light yellow. Functional important residues are marked in cyan. (A) Community 6 of SHV-1, comprising 30 residues with Y105 being the primary core residue. R205 is a functional important residue that is 20.6 Å away from the active site S70. (B) Community 7 of SHV-1, containing 34 residues and is centred by N136.
 
-## DyNoPy detects residue couplings essential for protein stability
+#### DyNoPy detects residue couplings essential for protein stability
 
 DyNoPy identifies residue couplings critical for protein functional motions, particularly associated with protein stability. These residue pairs exhibit strong relationships as they are not only directly coupled with each other but also forms various indirect couplings via other residues. As a result, both residues are considered as core residues inside these communities. It is expected that disruption of these couplings through mutation could compromise collective motions essential for enzyme activity.
 
@@ -86,7 +110,7 @@ As the secondary core residues in community 1 (Figure 4A), F72 is showing a stro
 
 The strong interplay between V103 and S106, which are both residues on the α3-α4 loop, is seen in community 5 (Figure 4C). These residues not only interact with each other directly but are also indirectly coupled via 22 other residues. This community emphasizes the significance of hydrophobic nodes in SHV stability and dynamics. Within the analysed 48 residues, 27 are hydrophobic, out of which 15 residues act as nodes critical for enzyme stabilization. Hydrophobic nodes stabilize their own secondary structures and interconnect to stabilize the overall protein (Galdadas et al., 2021). V103 and S106 themselves are hydrophobic nodes, stabilizing α3 helix and α4 helix, respectively, and are strongly coupled with each other. In CTX-M, another class A enzyme, N106S is a common substitution that results in improved thermodynamic stability and compensate for the loss in stability of the variants (Lu et al., 2022). Interestingly, this residue is already a serine in SHV but still implies its pivotal role in protein stability.
 
-## DyNoPy provides valid explanations for mutation sites
+#### DyNoPy provides valid explanations for mutation sites
 
 During the evolution of β-lactamases, single mutations on specific sites that are distant from the functional sites have been observed to significantly alter protein catalytic functions. Additionally, single mutations on some surface exposed residues can dramatically increase protein stability. Understanding how these distant mutations impact function and stability becomes a major challenge in understanding protein evolutionary pathways. Communities extracted by DyNoPy show these residues linked with functional important residues, providing a rational for these mutation sites with unknown functions.
 
@@ -98,7 +122,7 @@ Unlike other substitution sites that are adjacent to the active site, R205 is si
 
 Y105 and R266 are the core residues for community 6 (Figure 5A). Y105 is situated on the α3-α4 loop positioned at the left side of the binding pocket. It is an important catalytic residue that recognizes and binds to the thiazolidine ring of penicillins or β-lactamase inhibitors (Bethel et al., 2006). There is very limited information on the role of R266, except that it may stabilize the Ω-loop in the SHV family similar to the analogous T266 in TEM (Kuzin et al., 1999). G238 is coupled with an essential catalytic residue Y105, which further links with other catalytic functional residues: S70 and A237, and R266, a residue that is known to stabilize the Ω-loop. This indicates that mutations on G238 would result in an alteration on protein catalytic function, as well as an increased flexibility of the protein, which strongly aligns with previous finding (Nicolas et al., 1989). Its linked mutation site R205 does not show direct coupling with any catalytic residues. Instead, it is directly coupled with R266, which we mentioned as an Ω-loop stabilizer. Thus, it is not surprising that R205 substitution alone is never observed in nature (Neubauer et al., 2020) as it would not give significant evolutionary advantage to the protein.
 
-## Insights into the unexplained functional sites of PDC-3
+#### Insights into the unexplained functional sites of PDC-3
 
 Unlike the extensively studied SHV-1, the functional roles of individual amino acids in PDC-3 remain largely unexplored. This gap in understanding serves as welcome challenge for interpreting the effects of mutations and the dynamic behaviour of PDC-3 from our results. Although several mutation hotspots, such as those on the Ω-loop (Barnes et al., 2018), have been identified, very little is known about the specific contributions of individual amino acids on the functionality of PDC-3.
 
@@ -112,7 +136,7 @@ G214, a known mutation site in PDC-3, is the core residue in community 1. Anothe
 
 G204 is the core residue of community 2, coupled with 73 other residues, most of which are distant from the catalytic site, suggesting plausible crucial role in the overall protein stability like L162 in SHV-1 (Figure 6B). G204, a newly emerged mutation site in the PDC family (67), is located on the short β-sheet β5a within the Ω-loop, near the hinge region between β8 and β9 just above the active site. The only known variant of G204 is PDC-466, which was derived from PDC-462 (A89V, Q120K, V211A, N320S), with an addition of G204D (Colque et al., 2021). Coupling of G204 to several catalytically important residues, including K67, K315, and T316 can suggest that mutations at this site can negatively impact catalytic power. This offers a plausible explanation of seeing fewer variants at this site, and mutations at this site could have an impact on the hydrolysing capabilities of PDC variants. This should be confirmed by further experimental studies of variants of G204. Unlike G214, E219, and Y221 mutations which do not influence the dynamics of the R2 loop, substitutions on V211, a member of Ω-loop, have an impact on the dynamics of the R2 loop because of its indirect couplings, through G204 to R2-loop residues (Chen et al., 2024). Two less critical substitution sites, H188 and V329, were also observed in community 2.
 
-## Conclusions
+### Conclusions
 
 DyNoPy offers two distinct advantages over existing computational tools (Yehorova et al., 2024; Osuna, 2021): (a) information on residue–residue coevolution can be directly used to detect the components of protein dynamics that have been preserved during evolution and (b) dynamic descriptors extracted from the MD ensembles can be used to identify the function-specific conserved dynamic couplings. These couplings are then easily modelled as a graph, and network analysis is used to extract epistatic communities and assign roles to residues based on their importance in the graph model. The choice of a relevant descriptor of functional dynamics has an impact on the ability to detect couplings that are involved in functional dynamics.
 
@@ -128,28 +152,52 @@ In summary, by integrating hidden evolutionary information with direct dynamic i
 
 DyNoPy generates a graph representation of the protein structure that captures the couplings between amino acid residues contributing to the functional dynamics of the protein. Residues are represented as graph nodes, and conserved dynamic couplings are recorded as edges. Edge weights quantify the strength of these couplings. The model is built on two assumptions: residue pairs should have (a) coevolved and their (b) time-dependent interactions correlate with a functional conformational change.
 
-Therefore, edge weights (Jij) for residue i and j are calculated as(1)Jij=αγij+βρijwhereα+β=1
+Therefore, edge weights ($J_{ij}$) for residue $i$ and $j$ are calculated as
 
-where γij is the scaled coevolution score and ρij is the degree of correlation with the selected functional conformational change. α and β are weights assigned to γij and ρij that have a sum of 1. The relative weight of the scaled coevolution score (α) is set to 0.5 in this study. When either of the assumptions listed above is not met, Jij is set to zero.
+$$
+J_{ij}=\alpha\gamma_{ij}+\betaρ_{ij}where\alpha+\beta=1
+$$
 
-## Scaled coevolution scores
+where $\gamma_{ij}$ is the scaled coevolution score and $ρ_{ij}$ is the degree of correlation with the selected functional conformational change. α and β are weights assigned to $\gamma_{ij}$ and $ρ_{ij}$ that have a sum of 1. The relative weight of the scaled coevolution score (α) is set to 0.5 in this study. When either of the assumptions listed above is not met, $J_{ij}$ is set to zero.
 
-The occurrence of residue–residue coevolution can be estimated and quantified using probabilistic models of correlated mutations from deep MSA. DyNoPy supports generation of the MSA using the HH-Suite package (Remmert et al., 2011) and calculation of scaled coevolution score (γij) using CCMpred (Seemayer et al., 2014) as per the protocol described in Bibik et al., 2024. For SHV-1 and PDC-3, hhblits returned 18,174 sequences (Neff: 11.082) and 27,892 sequences (Neff: 9.951). Sequences were detected from the UniRef30 (v2022_02) database (Mirdita et al., 2017). First, a pairwise residue coevolution matrix (C) is calculated, then these raw scores (cij) are divided by the matrix mean (Equation 2). All scores (sij) smaller than 1 are set to zero, and the remaining values are normalized by the maximum value (Equation 3):(2)sij=cij⟨C⟩(3)γij={0,sij<1sijsmax,sij≥1
+### Scaled coevolution scores
 
-## Correlation with functional motions
+The occurrence of residue–residue coevolution can be estimated and quantified using probabilistic models of correlated mutations from deep MSA. DyNoPy supports generation of the MSA using the HH-Suite package (Remmert et al., 2011) and calculation of scaled coevolution score ($\gamma_{ij}$) using CCMpred (Seemayer et al., 2014) as per the protocol described in Bibik et al., 2024. For SHV-1 and PDC-3, hhblits returned 18,174 sequences (Neff: 11.082) and 27,892 sequences (Neff: 9.951). Sequences were detected from the UniRef30 (v2022_02) database (Mirdita et al., 2017). First, a pairwise residue coevolution matrix (C) is calculated, then these raw scores ($c_{ij}$) are divided by the matrix mean (Equation 2). All scores ($s_{ij}$) smaller than 1 are set to zero, and the remaining values are normalized by the maximum value (Equation 3):
 
-The contribution of a residue pair to a selected functional motion is estimated by how much the change in interaction energy between the two residues over time is correlated with a CV describing the functional motion:(4)rij=cor(εij(t)d(t))(5)ρij={0,rij≤0.5rij,rij>0.5
+$$
+s_{ij}=\frac{c_{ij}}{⟨C⟩}
+$$
 
-where εijt is the pairwise non-bonded interaction energy (see details in Appendix 1) and dt is the time-dependent value of the CV. Examples of CV and a discussion on the choice of the most relevant CV are presented in the ‘Results’ section. Correlation values smaller than 0.5 are set to 0. In the absence of detectable contributions to the functional dynamics of the system, the couplings extracted by DyNoPy will describe a pure evolutionary model, and the community detection method presented below will be equivalent to a direct decomposition of the residue coevolution network into units.
 
-## Graph representation and analysis of conserved dynamic couplings
 
-All pairwise conserved dynamic couplings (Equation 1) are collected into a square matrix J. A graph is built from J using python-igraph v0.11 library (Csárdi and Nepusz, 2006). Nodes represent residues, and edges are drawn between nodes with positive Jij. Edge weights are set to Jij. The relative importance of the residues in this model of protein dynamics is calculated as EVC of the nodes (Newman, 2004). The residues involved in extensive correlated dynamics with other highly connected residues have higher EVC scores. Groups of residues contributing to important collective motions are detected by community analysis of the graph structure. The Girvan–Newman algorithm is used to extract the community structure (Newman, 2006). A meaningful community should contain at least three residues. Applying network analysis on the combined dynamics-coevolution matrix helps us extract higher-order interactions beyond pairwise coupling and detecting critical residues, which show multiple interactions with each other. Moreover, indirect long-range relationships, which would be hard to identify from numerical data, could be detected through community clustering. Community-based analysis offers a more comprehensive understanding of residue relationships and enables the visualization of residue couplings on the protein structure.
+$$
+\gamma_{ij}={0,s_{ij}<1\frac{s_{ij}}{s_{max}},s_{ij}\geq1
+$$
 
-## Adaptive sampling molecular dynamics simulations
+### Correlation with functional motions
+
+The contribution of a residue pair to a selected functional motion is estimated by how much the change in interaction energy between the two residues over time is correlated with a CV describing the functional motion:
+
+$$
+r_{ij}=cor(\epsilon_{ij}(t)_{d}(t))
+$$
+
+
+
+$$
+ρ_{ij}={0,r_{ij}\leq0.5r_{ij},r_{ij}>0.5
+$$
+
+where $\epsilon_{ij}t$ is the pairwise non-bonded interaction energy (see details in Appendix 1) and $dt$ is the time-dependent value of the CV. Examples of CV and a discussion on the choice of the most relevant CV are presented in the ‘Results’ section. Correlation values smaller than 0.5 are set to 0. In the absence of detectable contributions to the functional dynamics of the system, the couplings extracted by DyNoPy will describe a pure evolutionary model, and the community detection method presented below will be equivalent to a direct decomposition of the residue coevolution network into units.
+
+### Graph representation and analysis of conserved dynamic couplings
+
+All pairwise conserved dynamic couplings (Equation 1) are collected into a square matrix J. A graph is built from J using python-igraph v0.11 library (Csárdi and Nepusz, 2006). Nodes represent residues, and edges are drawn between nodes with positive $J_{ij}$. Edge weights are set to $J_{ij}$. The relative importance of the residues in this model of protein dynamics is calculated as EVC of the nodes (Newman, 2004). The residues involved in extensive correlated dynamics with other highly connected residues have higher EVC scores. Groups of residues contributing to important collective motions are detected by community analysis of the graph structure. The Girvan–Newman algorithm is used to extract the community structure (Newman, 2006). A meaningful community should contain at least three residues. Applying network analysis on the combined dynamics-coevolution matrix helps us extract higher-order interactions beyond pairwise coupling and detecting critical residues, which show multiple interactions with each other. Moreover, indirect long-range relationships, which would be hard to identify from numerical data, could be detected through community clustering. Community-based analysis offers a more comprehensive understanding of residue relationships and enables the visualization of residue couplings on the protein structure.
+
+### Adaptive sampling molecular dynamics simulations
 
 MD simulation data was sourced from our previous studies (Olehnovics et al., 2021; Chen et al., 2024). To summarize, SHV-1 structural coordinates (PDB ID: 3N4I) were obtained from the Protein Data Bank and modified to the wild type by introducing the E104D mutation. Similarly, the PDC-3 structure was derived from PDC-1 (PDB ID: 4HEF) by a T105A substitution. Both enzymes were protonated at pH 7.0 using PropKa from the PlayMolecule platform (Martínez-Rosell et al., 2017). One disulfide bond between C77 and C123 was specified in SHV-1. Both structures were solvated with TIP3P water molecules in a periodic box with a box size of 10 Å. Ions were added to neutralize the overall charge of each system at 150 mM KCl. Amber force field ff14SB was used for all MD simulations (Maier et al., 2015). After an initial minimization of 1000 steps, both the enzymes were equilibrated for 5 ns in the NPT ensemble at 1 atmospheric pressure using the Berendsen barostat (Berendsen et al., 1984). The initial velocities for each simulation were sampled from the Boltzmann distribution at 300 K. Multiple Markov state model (MSM)-based adaptively sampled simulations were performed for both proteins based on the ACEMD engine (Doerr et al., 2016; Harvey et al., 2009). A canonical (NVT) ensemble with a Langevin thermostat (Davidchack et al., 2009) (damping coefficient of 0.1 ps−1) and a hydrogen mass repartitioning scheme were employed to achieve time steps of 4 fs. For SHV-1, each trajectory spanned 60 ns with a time step of 0.1 ns, with a total of 593 trajectories. In the case of PDC-3, 100 trajectories were collected, each containing 3000 frames, lasting 300 ns. To manage the extensive datasets efficiently, trajectories were strategically stridden to ensure that a minimum of 30,000 frames were preserved for each system. The resulting trajectories are summarized in Supplementary file 1d.
 
-## Calculation and selection of collective variables
+### Calculation and selection of collective variables
 
 DyNoPy works on the assumption that time-dependent interactions between critical residues, either having significant structural change or not, will correlate with functional conformational motions. Since MD simulation data is high-dimensional, a time-dependent CV is required to extract the most relevant information for the process under study. The usefulness of DyNoPy is dependent on the choice of the CVs. To guide the selection of CVs, we selected 12 distinct features: radius of gyration (Rg), the first principal component (PC1), partial PC1 (PC1_partial), the first time-lagged independent component (TC1), partial TC1 (TC1_partial), global root mean square deviation (gRMSD), partial RMSD (pRMSD), dynamical RMSD (dRMSD), global solvent-accessible surface area (gSASA), partial SASA (pSASA), active site pocket volume, and the number of hydrogen bonds (hbond). A description of the CVs, including the calculation methods and the residues used to calculate the partial variables, is detailed in Appendix 1. CVs were subsequently used as input features for DyNoPy. A good CV should appropriately describe protein functional motions. Thus, a CV that detects the highest number of residue couplings is expected to be the most suitable descriptor. The length of the MD simulations should be appropriate to effectively sample the desired functional process as described by the selected CV.

@@ -31,13 +31,69 @@
 
 ## Abstract
 
-Tuberculous meningitis has high mortality, linked to excessive inflammation. However, adjunctive anti-inflammatory corticosteroids reduce mortality by only 30%, suggesting that inflammatory pathophysiology causes only a subset of deaths. In Vietnam, the survival benefit of anti-inflammatory corticosteroids was most pronounced in patients with a C/T promoter variant in the leukotriene A 4 hydrolase ( LTA4H ) gene encoding an enzyme that regulates inflammatory eicosanoids. LTA4H TT patients with increased expression had increased survival, consistent with corticosteroids benefiting individuals with hyper-inflammatory responses. However, an Indonesia study did not find an LTA4H TT genotype survival benefit. Here using Bayesian methods to analyse both studies, we find that LTA4H TT genotype confers survival benefit that begins early and continues long-term in both populations. This benefit is nullified in the most severe cases with high early mortality. LTA4H genotyping together with disease severity assessment may target glucocorticoid therapy to patients most likely to benefit from it.
+Tuberculous meningitis has high mortality, linked to excessive inflammation. However, adjunctive anti-inflammatory corticosteroids reduce mortality by only 30%, suggesting that inflammatory pathophysiology causes only a subset of deaths. In Vietnam, the survival benefit of anti-inflammatory corticosteroids was most pronounced in patients with a C/T promoter variant in the leukotriene A4 hydrolase (LTA4H) gene encoding an enzyme that regulates inflammatory eicosanoids. LTA4H TT patients with increased expression had increased survival, consistent with corticosteroids benefiting individuals with hyper-inflammatory responses. However, an Indonesia study did not find an LTA4H TT genotype survival benefit. Here using Bayesian methods to analyse both studies, we find that LTA4H TT genotype confers survival benefit that begins early and continues long-term in both populations. This benefit is nullified in the most severe cases with high early mortality. LTA4H genotyping together with disease severity assessment may target glucocorticoid therapy to patients most likely to benefit from it.
 
 ## Introduction
 
 Tuberculous meningitis (TBM) is the most severe form of tuberculosis. Despite effective antimicrobial therapy, it results in 20–25% mortality in HIV-negative individuals and ~40% mortality in HIV-positive individuals (Stadelman et al., 2020; Thwaites et al., 2013). A long-standing hypothesis that an excessive intracerebral inflammatory response underlies TBM mortality (Shane and Riley, 1953) led to multiple trials of adjunctive anti-inflammatory treatment with corticosteroids (e.g. dexamethasone) (Prasad et al., 2016; Wilkinson et al., 2017). Findings from a randomised controlled trial (RCT) in Vietnam that adjunctive dexamethasone improved survival by ~30% led to it becoming standard of care treatment (Thwaites et al., 2004). However, the modest benefit of adjunctive dexamethasone treatment suggested a heterogeneity in glucocorticoid-responsiveness (Donald and Schoeman, 2004; Schoeman and Donald, 2013). Findings in a zebrafish model of TB provided a testable hypothesis for a mechanism underlying this heterogeneity (Thwaites et al., 2004; Tobin et al., 2012; Tobin et al., 2010). The zebrafish findings suggested that either deficiency or excess of leukotriene A4 hydrolase (LTA4H), a key enzyme that regulates the balance of pro- and anti-inflammatory eicosanoids, increase susceptibility to TBM for opposite reasons - too little or too much inflammation (Tobin et al., 2012; Tobin et al., 2010). It became possible to test the prediction when a common human functional LTA4H promoter variant (rs17525495) was identified comprising a C/T transition that controlled LTA4H expression, with the T allele causing increased expression (Tobin et al., 2012). A retrospective analysis of patient LTA4H rs17525495 genotypes in the Vietnam dexamethasone RCT cohort confirmed the prediction (Thwaites et al., 2004; Tobin et al., 2012). Among HIV-negative patients, the survival benefit of dexamethasone was restricted to patients with the hyper-inflammatory TT genotype, with CC patients potentially harmed by this treatment (Tobin et al., 2012). These findings supported the model that mortality from TBM was due to two distinct inflammatory states, and that LTA4H genotype might be a critical determinant of inflammation and consequently of the response to adjunctive anti-inflammatory treatment. If true, then personalized genotype-directed adjunctive glucocorticoid treatment would be warranted, with the drug given only to TT patients. This would be particularly important given the possible harm to the hypo-inflammatory CC group, as well as the adverse effects of long-term high dose treatment with a broadly acting immunosuppressant.
 
 To further these findings, two new studies of the association of LTA4H genotype with TBM survival in HIV-negative patients were performed in Vietnam and Indonesia, respectively (Thuong et al., 2017; van Laarhoven et al., 2017). Because glucocorticoid adjunctive therapy had become standard of care owing to the benefit observed in the randomised controlled trial (Thwaites et al., 2004), all patients received it in both studies. Therefore, the prediction that could be tested was that TT mortality is less than CC+CT mortality. Whereas the Vietnam study confirmed this prediction, the Indonesia study did not. The Vietnam cohort had an overall mortality of 18.8%, similar to that reported in the literature (Stadelman et al., 2020). A striking feature of the Indonesia cohort was its more than two-fold increased mortality in comparison with the Vietnam cohort. Moreover, most of the Indonesia cohort deaths occurred early with a median time to death of eight days versus 50 days in Vietnam (Table 1). This high early mortality raised the possibility that the impact of the LTA4H variant differs by disease severity, and may not be relevant in more severe disease (Fava and Schurr, 2017). If so, then the effects of the LTA4H genotype were being masked by the preponderance of extremely severe cases in the Indonesia cohort (Fava and Schurr, 2017).
+
+**Table 1.**
+ Characteristics of the Vietnam and Indonesia cohorts.Bayesian posterior probabilities comparing the two cohorts are shown (probability that mean of starred group is higher, ** > 0.99, *** > 0.999, all other comparisons, not significant). See also Figure S1 for probability differences for each GCS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Vietnam</th>
+      <th>Indonesia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>439</td>
+      <td>376</td>
+    </tr>
+    <tr>
+      <td>Glasgow Coma Score mean (range)</td>
+      <td>13.3 ** (3-15)</td>
+      <td>12.8 (5-15)</td>
+    </tr>
+    <tr>
+      <td>BMRC TBM grade no. (% of total) 1 2 3</td>
+      <td>163 (37.1) *** 206 (47.0) 70 (15.9)</td>
+      <td>34 (9.0) 284 (75.5) *** 58 (15.4)</td>
+    </tr>
+    <tr>
+      <td>Age in years median (range)</td>
+      <td>41 *** (18-93)</td>
+      <td>28 (14-90)</td>
+    </tr>
+    <tr>
+      <td>Age in years by TBM grade median (range) 1 2 3</td>
+      <td>39 (18-85) *** 47 (18-93) *** 33 (18-86) ***</td>
+      <td>27 (16-45) 29 (14-90) 26 (14-64)</td>
+    </tr>
+    <tr>
+      <td>Overall mortality no. (%)</td>
+      <td>83 (18.8)</td>
+      <td>146 (39.9) ***</td>
+    </tr>
+    <tr>
+      <td>Time to median mortality (days)</td>
+      <td>50 ***</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Mortality by BMRC TBM grade No. dead (% of grade) 1 2 3</td>
+      <td>12 (6.8) 45 (21.9) 26 (37.9)</td>
+      <td>5 (15.9) 106 (38.0) *** 35 (63.8) **</td>
+    </tr>
+  </tbody>
+</table>
 
 Both studies used, as the primary metric of significance testing, Cox regression modelling, an approach that assumes that the ratio of hazard rates between groups is constant throughout the observed period (Bradburn et al., 2003; Greenland et al., 2016). Therefore, this analytical method could miss important differences in these studies of TBM, a disease which can present acutely yet have a prolonged time-course with vastly differing mortality risks over time (Thuong et al., 2017; Thwaites et al., 2013; van Laarhoven et al., 2017). Moreover, testing the hypothesis that LTA4H effects are limited to specific disease severity grades requires subgroup analysis. The use of frequentist statistics would limit the ability to perform such subgroup analyses because the penalties it sets for multiple comparisons do not reflect real-world situations (Gelman and Loken, 2013; Smith and Ebrahim, 2002). Bayesian analysis is ideally suited to simultaneously estimate treatment effects in multiple subgroups because it results in different interactions with the number of results obtained which are much less problematic than those arising in frequentist analysis (Box 1 and Appendix 1).
 
@@ -47,7 +103,7 @@ The severity grade-specific analyses, coupled with temporal analyses made possib
 
 ## Results
 
-## Characteristics of the Vietnam and Indonesia cohorts
+### Characteristics of the Vietnam and Indonesia cohorts
 
 The age range of patients was similar in the Vietnam and Indonesia cohorts with Indonesia patients tending to be younger (Table 1). We compared the cohorts for disease severity on presentation using both measures used in the studies, the Glasgow Coma Score (GCS) and the modified British Medical Research Council TBM grade (TBM grade) (Box 2). The Indonesia cohort had more severe disease on presentation by both measures (Table 1 and Figure 1). We used the TBM grade for further analyses because it divides patients into just three severity groups, making comparisons more feasible. Importantly, it also provides clinically relevant separation of GCS 15 patients, the most highly represented in both cohorts (Figure 1), into those with and without focal neurological signs.
 
@@ -55,7 +111,7 @@ The age range of patients was similar in the Vietnam and Indonesia cohorts with 
 
 **Figure 1.:** Frequency of GCS values indicated on the Y-axis as a percentage of the total cohort (n = 376 Indonesia, n = 439 Vietnam). Bayesian posterior probabilities of significant differences between Vietnam (VN) and Indonesia (IN) for mean GCS comprising Grade 2, VN > IN P 0.99996 (15 VN > IN p=0.99999; 11–14 VN < IN P ranging from 0.99985 (13) to 0.98 (14); rest of the values non-significant); for GCS comprising Grade 3, VN > IN, P 0.01 (GCS4, 0.98; GCS9, 0.04; all others not significant).
 
-## LTA4H TT genotype association with survival becomes stronger with increasing disease severity in Vietnam
+### LTA4H TT genotype association with survival becomes stronger with increasing disease severity in Vietnam
 
 Because the Indonesia cohort was skewed towards more severe disease on presentation, one explanation for the lack of an LTA4H genotype association with survival in Indonesia was that the underlying association is overridden by severe disease, a strong independent correlate of mortality (Fava and Schurr, 2017; Wang et al., 2019). Indeed, a detailed comparison of the Vietnam and Indonesia cohorts showed that 76% of Indonesia patients presented in Grade 2 versus 47% of the Vietnam patients (Table 1). This increase was driven entirely by a shift from Grade 1 (9% vs 37% in Vietnam). The cohorts had nearly equal proportions of Grade 3 patients (15% each). Therefore, the ~2 fold-increased overall mortality in Indonesia could be largely accounted for by a corresponding increase of Grade 2 patients (1.6 fold higher than Vietnam). Disease severity as assessed by BMRC Grade or GCS at presentation is also a strong predictor of earlier death (Fava and Schurr, 2017; Wang et al., 2019), and the Indonesia patients died sooner (median time to death 8 days versus 50 days in Vietnam) (Table 1).
 
@@ -65,13 +121,49 @@ In the original Vietnam study, the TT genotype was associated with survival and 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61722/elife-61722-fig2-v1.jpg)
 
-**Figure 2.:** LTA4H rs17525495 genotype on patient survival.Survival probability over all grades in Vietnam (A) and Indonesia (E), and stratified by grade (B–D, F–H). Coloured lines represent mean posterior survival probability curves for the nine-month observation period. Shaded areas represent 95% Bayesian confidence limits for posterior probability. Comparisons where TT (purple) to non-TT (green) differences were significant have boxed insets showing hazard rates for the first 30 days; all other comparisons, not significant. The number of patients at the starting time point are indicated in parentheses. In Vietnam, overall (A), TT survival was significantly higher than non-TT from day 39 onwards with maximum probability 0.98, survival gap 11%; non-TT hazard rate was significantly higher than TT from day 4 to day 120, with their ratio peaking at 3 on day six and remaining >1 until day 223. (D) Grade 3 TT survival was significantly higher from day 3 onwards with maximum probability 0.97, survival gap 30%. The TT hazard rate dropped from the start, while the non-TT hazard peaked at 16 times higher than TT on day 3; non-TT over TT hazard rate ratio remained >1 throughout. In Indonesia, overall (E), TT survival was non-significantly higher than non-TT (maximum probability 0.92); the non-TT hazard rate was greater than the TT hazard rate from day 1 to day 13, significantly so (and by 2-fold) on days 2 and 3 (maximum probability 0.97). (F) Grade 1 comparisons were uninformative due to TT sample size (n = 1). (G) Grade 2 TT survival was significantly higher on days 4–32 with maximum probability 0.99, survival gap 9%. The TT hazard rate dropped from the start, while the non-TT hazard peaked at five times higher than TT on day 3. The non-TT over TT hazard rate ratio remained >1 until day 15.
+**Figure 2.:** Survival probability over all grades in Vietnam (A) and Indonesia (E), and stratified by grade (B–D, F–H). Coloured lines represent mean posterior survival probability curves for the nine-month observation period. Shaded areas represent 95% Bayesian confidence limits for posterior probability. Comparisons where TT (purple) to non-TT (green) differences were significant have boxed insets showing hazard rates for the first 30 days; all other comparisons, not significant. The number of patients at the starting time point are indicated in parentheses. In Vietnam, overall (A), TT survival was significantly higher than non-TT from day 39 onwards with maximum probability 0.98, survival gap 11%; non-TT hazard rate was significantly higher than TT from day 4 to day 120, with their ratio peaking at 3 on day six and remaining >1 until day 223. (D) Grade 3 TT survival was significantly higher from day 3 onwards with maximum probability 0.97, survival gap 30%. The TT hazard rate dropped from the start, while the non-TT hazard peaked at 16 times higher than TT on day 3; non-TT over TT hazard rate ratio remained >1 throughout. In Indonesia, overall (E), TT survival was non-significantly higher than non-TT (maximum probability 0.92); the non-TT hazard rate was greater than the TT hazard rate from day 1 to day 13, significantly so (and by 2-fold) on days 2 and 3 (maximum probability 0.97). (F) Grade 1 comparisons were uninformative due to TT sample size (n = 1). (G) Grade 2 TT survival was significantly higher on days 4–32 with maximum probability 0.99, survival gap 9%. The TT hazard rate dropped from the start, while the non-TT hazard peaked at five times higher than TT on day 3. The non-TT over TT hazard rate ratio remained >1 until day 15.
+
+**Table 2.**
+ LTA4H genotype frequency in Vietnam and Indonesia.Bayesian posterior probabilities comparing the two cohorts (probability that starred group is higher, * > 0.95, ** > 0.99, *** > 0.999, all other comparisons, not significant). Comparisons within each cohort yielded no significant differences in LTA4H genotype frequencies by grade.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Vietnam</th>
+      <th>Indonesia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rs17525495 LTA4H no. (% total) CC CT TT</td>
+      <td>184 (41.9) 212 (48.3)*** 43 (9.8)</td>
+      <td>216 (57.5)*** 128 (34.0) 32 (8.5)</td>
+    </tr>
+    <tr>
+      <td>No. (% of grade total) Grade 1 CC CT TT</td>
+      <td>64/163 (39.3) 81/163 (49.7) 18/163 (11.0)</td>
+      <td>21/34 (61.8)* 12/34 (35.3) 1/34 (2.9)</td>
+    </tr>
+    <tr>
+      <td>Grade 2 CC CT TT</td>
+      <td>86/206 (41.8) 100/206 (48.5)*** 20/206 (9.7)</td>
+      <td>161/284 (56.7)*** 99/284 (34.9) 24/284 (8.5)</td>
+    </tr>
+    <tr>
+      <td>Grade 3 CC CT TT</td>
+      <td>34/70 (48.6) 31/70 (44.3) 5/70 (7.1)</td>
+      <td>34/58 (58.6) 17/58 (29.3) 7/58 (12.1)</td>
+    </tr>
+  </tbody>
+</table>
 
 When we stratified the Vietnam patients by grade and LTA4H genotype, we got a surprising result. The LTA4H TT association with survival was barely present in Grade 1, a bit more in Grade 2, and strongest in Grade 3 where it reached significance (Figure 2B–D). Similar to the overall cohort, the Grade 3 increased survival probability for TT also manifested early and persisted throughout (Figure 2D). Hazard rate analysis again showed that non-TT patients had a greatly increased risk of mortality very early (Figure 2D, inset). The non-TT over TT hazard rate ratio peaked at 16 on day 3 (Figure 2D, inset). This early high peak dropped only gradually over time; it was 5 at day 100 and remained >1 throughout (data not shown). Again survival of CC and CT patients was not significantly different at any time during the 270 day observation period (data not shown).
 
 In sum, our analysis revealed that in Vietnam, LTA4H TT was associated with survival, not in mild disease as suggested earlier (Fava and Schurr, 2017), but rather in the most severe disease grade. In fact, the bulk of the overall association was being driven by Grade 3 patients who constituted only 15.9% of the cohort (Table 1). Non-TT patients were at greatest risk of dying within days of admission, a risk that diminished with time but remained greater than the TT patients throughout.
 
-## In Indonesia, the LTA4H TT genotype effect does not extend beyond Grade 2
+### In Indonesia, the LTA4H TT genotype effect does not extend beyond Grade 2
 
 Bayesian analysis found that, in the overall Indonesia cohort, survival of the TT patient group was higher than non-TT though falling short of significance (maximum probability 0.92) (Figure 2E). Moreover, this analysis detected that the hazard rate for non-TT patients was higher than TT patients from day 1 to day 13; the non-TT over TT ratio reached significance on days 2 and 3, at which time the non-TT hazard rate was twice that of TT. Thus, while the TT beneficial effect was weaker than in Vietnam (compare Figure 2E–A), hazard rate analysis showed that as in Vietnam, TT benefit manifested early (Figure 2E inset, compare to Figure 2A inset). For the grade-stratified cohorts, the analysis of Grade 1 patients was uninformative as there was only one TT patient in this group who survived throughout (Table 2 and Figure 2F; also see Appendix 2, section 4). In Grade 2, the TT survival effect was significant, in contrast to Grade 2 Vietnam (compare Figure 2G–C). Rather, the pattern of the Grade 2 association was similar to Vietnam Grade 3 with a significant early TT survival benefit. As in Vietnam, the TT survival benefit started within days with an early hazard rate peak for the non-TT group. In Grade 3, the LTA4H TT effect was again absent (Figure 2H). As in Vietnam, survival of CC and CT patients was not significantly different at any time during the analysis for the overall cohort and for each of the three grades (data not shown).
 
@@ -79,7 +171,7 @@ Since Grade 2 patients constitute the bulk of the Indonesia cohort (75.5%), why 
 
 Thus, Bayesian analysis revealed an LTA4H TT survival association in Indonesia as well. The association being only in Grade 2 and not in Grade 3 patients suggested an upper limit of disease severity for its efficacy.
 
-## Grade-for-grade mortality rate differences may explain the difference in grade-specific LTA4H TT effects in Vietnam and Indonesia
+### Grade-for-grade mortality rate differences may explain the difference in grade-specific LTA4H TT effects in Vietnam and Indonesia
 
 Why might LTA4H effects stop after Grade 2 in Indonesia? A closer comparison of the overall survival between the two sites suggested that there were mortality differences between the two cohorts for all grades combined and in grade-for-grade comparisons that were LTA4H-independent (Figure 2). For instance, Indonesia Grade 2 non-TT patients had a mortality risk similar to that of Vietnam Grade 3 non-TT patients (compare Figures 2D and 1G).
 
@@ -105,7 +197,7 @@ Why was the LTA4H TT effect thought to be limited to the least severe patients i
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61722/elife-61722-fig5-v1.jpg)
 
-**Figure 5.:** LTA4H rs17525495 genotype as predictor for 365 day mortality in HIV-negative TBM patients in Indonesia.Panels A and B are comparable to Figure S2B of van Laarhoven et al., 2017. (A) All patients with GCS < 13. (B) Patients with GCS = 14 or 15 (note that one patient with TT genotype, GCS = 15 was censored on day 30 in the original data set but later found to have died on day 41). (C) The subset of patients from (B) with GCS 14 or 15 excluding those in BMRC Grade 1 (GCS 15 without neurological signs).
+**Figure 5.:** Panels A and B are comparable to Figure S2B of van Laarhoven et al., 2017. (A) All patients with GCS < 13. (B) Patients with GCS = 14 or 15 (note that one patient with TT genotype, GCS = 15 was censored on day 30 in the original data set but later found to have died on day 41). (C) The subset of patients from (B) with GCS 14 or 15 excluding those in BMRC Grade 1 (GCS 15 without neurological signs).
 
 Finally, in addition to providing guidance for TBM pharmacogenomic approaches, we hope that our analyses highlight the unique value of Bayesian methods for providing guidance for other complex diseases with difficult treatment decisions. The vital importance of defining the patient populations and subgroups which will benefit the most from specialised interventions and treatments is increasingly appreciated (Sadée and Dai, 2005). This is not only to target such treatments to those who will benefit, but to avoid their adverse effects in those individuals who have little chance of experiencing a clinically relevant benefit from them. Our finding that the LTA4H TT genotype’s salutary role is incumbent on the optimization of other factors that maximize patient survival has broad implications for pharmacogenomic approaches.
 

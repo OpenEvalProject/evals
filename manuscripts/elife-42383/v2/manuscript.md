@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.42383.001 Dopamine neurotransmission is suspected to play important physiological roles in multiple sparsely innervated brain nuclei, but there has not been a means to measure synaptic dopamine release in such regions. The globus pallidus externa (GPe) is a major locus in the basal ganglia that displays a sparse innervation of en passant dopamine axonal fibers. Due to the low levels of innervation that preclude electrochemical analysis, it is unknown if these axons engage in neurotransmission. To address this, we introduce an optical approach using a pH-sensitive fluorescent false neurotransmitter, FFN102, that exhibits increased fluorescence upon exocytosis from the acidic synaptic vesicle to the neutral extracellular milieu. In marked contrast to the striatum, FFN102 transients in the mouse GPe were spatially heterogeneous and smaller than in striatum with the exception of sparse hot spots. GPe transients were also significantly enhanced by high frequency stimulation. Our results support hot spots of dopamine release from substantia nigra axons.
+Dopamine neurotransmission is suspected to play important physiological roles in multiple sparsely innervated brain nuclei, but there has not been a means to measure synaptic dopamine release in such regions. The globus pallidus externa (GPe) is a major locus in the basal ganglia that displays a sparse innervation of en passant dopamine axonal fibers. Due to the low levels of innervation that preclude electrochemical analysis, it is unknown if these axons engage in neurotransmission. To address this, we introduce an optical approach using a pH-sensitive fluorescent false neurotransmitter, FFN102, that exhibits increased fluorescence upon exocytosis from the acidic synaptic vesicle to the neutral extracellular milieu. In marked contrast to the striatum, FFN102 transients in the mouse GPe were spatially heterogeneous and smaller than in striatum with the exception of sparse hot spots. GPe transients were also significantly enhanced by high frequency stimulation. Our results support hot spots of dopamine release from substantia nigra axons.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ We have an ongoing effort to develop FFNs to visualize neurotransmitter uptake a
 
 ## Results
 
-## FFN102 release differs between the GPe and striatum
+### FFN102 release differs between the GPe and striatum
 
 Fluorescent false neurotransmitters have previously been used to directly measure dopamine synaptic vesicle fusion and exocytosis from individual en passant release sites on the axon, termed puncta (Gubernator et al., 2009; Pereira et al., 2016). These FFN methods require tracking fluorescence within micron-sized regions in a field of view. Such methods use z-stacks to track puncta, which lowers temporal resolution. In these experiments, individual electrical pulses produce relatively small changes in fluorescence, and experimenters had to apply hundreds of pulses in order to generate a measurable signal.
 
@@ -61,13 +61,13 @@ We performed control experiments to confirm if we were measuring release from do
 
 To examine if FFN102 is loaded in GPe axons as a substrate for the dopamine transporter (DAT), we co-incubated slices with both FFN102 and the DAT inhibitor, nomifensine, for 30 min before the stimuli. The significant decrease of evoked fluorescent transients in slices co-incubated with nomifensine is consistent with an inhibition of uptake and loading of FFN102 into DA axons (Figure 2C,D).
 
-## FFN102 transients reflect synaptic dopamine release
+### FFN102 transients reflect synaptic dopamine release
 
 To assess whether the release of FFN102 within the GPe was of synaptic origin, we analyzed the effect of extracellular Ca2+ on FFN transient size. For these experiments, the levels of calcium reaching a slice were randomly alternated between 0.5, 2, and 4 mM Ca2+. An individual slice was perfused with a given concentration, allowing ten minutes for the calcium concentration to adjust within the slice. There was main effect of calcium levels on the AUC %ΔF/F (repeated measures ANOVA, p < 0.001) (Figure 3). Additionally, there was a significant difference between AUCs in the striatum and GPe (p < 0.001), as expected from our other experiments. We also found a significant interaction between calcium and region (p < 0.05). Consistent with release by synaptic vesicle fusion from dopamine axons in the striatum, 0.5 mM extracellular calcium produced significantly smaller average FFN102 striatal transients than 2 mM or 4 mM (Figure 3A,B). Similarly, within the GPe, calcium enhanced FFN102 transients (Figure 3C,D), with the response to increased calcium apparently saturating above 2 mM.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/42383/elife-42383-fig3-v2.jpg)
 
-**Figure 3.:** (A) Average processed transients of electrically evoked transients from striatal areas in slices perfused with 0.5, 2, and 4 mM Ca2+ (n = 9 slices). (B) There was a main effect of calcium-level on AUC %ΔF/F (repeated measures ANOVA, p < 0.001). The AUC %ΔF/F was higher in 2 and 4 mM than 0.5 mM Ca2+ (two-tailed paired t-test, p < 0.001). (C) Average processed transients of electrically evoked transients from GPe in slices perfused with 0.5, 2, and 4 mM Ca2+ (n = 16 slices). (D) The AUC %ΔF/F was higher in 2 and 4 mM than 0.5 mM Ca2+ (two-tailed paired t-test, p < 0.001). Additionally, there was a significant interaction between calcium levels and region (p<0.05).10.7554/eLife.42383.005Figure 3—source data 1.10.7554/eLife.42383.006Figure 3—source code 1.
+**Figure 3.:** (A) Average processed transients of electrically evoked transients from striatal areas in slices perfused with 0.5, 2, and 4 mM Ca2+ (n = 9 slices). (B) There was a main effect of calcium-level on AUC %ΔF/F (repeated measures ANOVA, p < 0.001). The AUC %ΔF/F was higher in 2 and 4 mM than 0.5 mM Ca2+ (two-tailed paired t-test, p < 0.001). (C) Average processed transients of electrically evoked transients from GPe in slices perfused with 0.5, 2, and 4 mM Ca2+ (n = 16 slices). (D) The AUC %ΔF/F was higher in 2 and 4 mM than 0.5 mM Ca2+ (two-tailed paired t-test, p < 0.001). Additionally, there was a significant interaction between calcium levels and region (p<0.05).
 
 To confirm whether dopaminergic neurons were the source of the FFN transients, we used the toxin 6-hydroxydopamine (6-OHDA lesion) to unilaterally lesion the dopamine projections passing through the medial forebrain bundle. We used tyrosine hydroxylase (TH) immunolabel to confirm the lesions. We subsequently prepared slices from both hemispheres and recorded FFN transients within each slice (Figure 4A,B). The global averages of FFN transients for the lesioned and unlesioned sides were compared. Consistent with the hypothesis that FFN is released from DA neurons, 6-OHDA lesion significantly decreased the FFN transients (Figure 4B,C). After imaging FFN transients, we post-fixed and confirmed the lesion in the slices used for imaging. We noted that FFN transients in the non-lesioned side were decreased relative to control slices. Therefore, 6-OHDA depletion in one hemisphere may lead to a reduction of the GPe FFN transient on the contralateral side, consistent with reports that contralateral dopamine projections extend to the GPe (Pritzel et al., 1983; Douglas et al., 1987).
 
@@ -77,25 +77,25 @@ To confirm whether dopaminergic neurons were the source of the FFN transients, w
 
 To assess the anatomical source of the evoked transients, we turned to an aphakia mouse line, in which mutation of the pitx3 gene prevents the development of dopamine neurons selectively in the substantia nigra pars compacta (SNc) while sparing VTA dopamine neurons (Nunes et al., 2003; van den Munckhof et al., 2003). We confirmed this depletion in our mice using TH immunolabel (Figure 4D). To obtain within-animal comparisons for aphakia mice, we randomly interleaved unstimulated ‘sham’ imaging epochs during which we collected images without electrical stimulation. We found that wild type mice had significantly larger FFN transients than aphakia mice (Figure 4E). The aphakia slices showed a small but significant difference between stimulated and unstimulated experiments, possibly arising from spared VTA neurons (Figure 4F). Thus, SNc dopamine neurons are the primary contributor to FFN102 release in the GPe.
 
-## FFN102 release reveals differences in dopamine release between striatum and GPe
+### FFN102 release reveals differences in dopamine release between striatum and GPe
 
 To examine the frequency dependence of FFN102 release in striatal and GPe dopamine synapses, we evoked FFN transients with 10 Hz and 50 Hz trains. We observed a main effect of frequency on FFN transients which was mostly due to the effects on GPe (two-factor ANOVA, p<0.001). Within the striatum, we did not observe significant differences in FFN transient size at 10 Hz and 50 Hz stimuli (Figure 5A). In contrast, within the GPe, the area under the curve for the transient evoked by 50 Hz was significantly higher than for 10 Hz (Figure 5B,C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/42383/elife-42383-fig5-v2.jpg)
 
-**Figure 5.:** (A) FFN transients evoked in the striatum by five pulses (red lines) at 10 Hz, gold traces, or 50 Hz, dark gray traces (N = 9 slices for 10 Hz stimuli, N = 12 slices for 50 Hz stimuli; shading represents SEM). (B) FFN transients evoked in the GPe by five pulses at either 10 Hz, bright blue traces, or 50 Hz, dark blue traces (N = 52 slices for 10 Hz stimulation, N = 68 slices for 50 Hz stimulation). (C) The AUC %ΔF/F for the period from 0 to 300 ms from stimulus onset. Striatal responses were not significantly different at higher frequencies (CI95 of %ΔF/F at 10 Hz = [12.6,19.1] versus at 50 Hz = [14.7,26.5]), whereas GPe showed significantly higher AUC %ΔF/F at 50 Hz than 10 Hz (CI95 of %ΔF/F at 10 Hz = [3.46, 5.99] versus at 50 Hz = [9.28, 11.5]), significance assessed using two-tailed unpaired t-test, p < 0.001).10.7554/eLife.42383.009Figure 5—source data 1.10.7554/eLife.42383.010Figure 5—source code 1.
+**Figure 5.:** (A) FFN transients evoked in the striatum by five pulses (red lines) at 10 Hz, gold traces, or 50 Hz, dark gray traces (N = 9 slices for 10 Hz stimuli, N = 12 slices for 50 Hz stimuli; shading represents SEM). (B) FFN transients evoked in the GPe by five pulses at either 10 Hz, bright blue traces, or 50 Hz, dark blue traces (N = 52 slices for 10 Hz stimulation, N = 68 slices for 50 Hz stimulation). (C) The AUC %ΔF/F for the period from 0 to 300 ms from stimulus onset. Striatal responses were not significantly different at higher frequencies (CI95 of %ΔF/F at 10 Hz = [12.6,19.1] versus at 50 Hz = [14.7,26.5]), whereas GPe showed significantly higher AUC %ΔF/F at 50 Hz than 10 Hz (CI95 of %ΔF/F at 10 Hz = [3.46, 5.99] versus at 50 Hz = [9.28, 11.5]), significance assessed using two-tailed unpaired t-test, p < 0.001).
 
 We then addressed whether the differences in kinetics and size of FFN transients between the striatum and the GPe might result from differential reuptake, which might broaden the signal. For these experiments, we performed within-slice paired measurements of FFN transients in ACSF alone and after 10 min of perfusion with 10 μM nomifensine-containing ACSF. Nomifensine slightly decreased the FFN transient size in the striatum (Figure 6A,B), but not in the GPe (Figure 6C,D). Neither the decay time to its half-maximum value (Figure 6E) nor the shape of the decay were altered by nomifensine (Figure 6F), indicating a lack of a role for DAT in altering evoked FFN102 signals.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/42383/elife-42383-fig6-v2.jpg)
 
-**Figure 6.:** (A) FFN transients imaged in the striatum for slices perfused first with ACSF alone followed by ten minutes with nomifensine. (B) The average AUC during the stimulus was 8.56 for control slices with a CI95 = [6.92,10.20], and for nomifensine, the average AUC was 5.90 with a CI95 = [3.94, 7.85] (paired t-test, p < 0.05). (C) FFN transients imaged in the GPe for slices similarly treated. (D) The average AUC during the stimulation time period was 4.16 with a CI95 = [2.56, 5.75], and for nomifensine, the average AUC was 2.78 with a CI95 = [0.81, 4.75] (paired t-test, p > 0.05). (E) Decay constants of log-transformed GPe traces show the time for the transient to decay to 10% of its initial value. Treated slices had an average decay time of 2.09 s, CI95= [1.56, 2.62], and untreated slices had an average of 2.20 s, CI95= [1.61, 2.79]. (F) Goodness-of-fit measurements for log-transformed traces.10.7554/eLife.42383.012Figure 6—source data 1.10.7554/eLife.42383.013Figure 6—source code 1.
+**Figure 6.:** (A) FFN transients imaged in the striatum for slices perfused first with ACSF alone followed by ten minutes with nomifensine. (B) The average AUC during the stimulus was 8.56 for control slices with a CI95 = [6.92,10.20], and for nomifensine, the average AUC was 5.90 with a CI95 = [3.94, 7.85] (paired t-test, p < 0.05). (C) FFN transients imaged in the GPe for slices similarly treated. (D) The average AUC during the stimulation time period was 4.16 with a CI95 = [2.56, 5.75], and for nomifensine, the average AUC was 2.78 with a CI95 = [0.81, 4.75] (paired t-test, p > 0.05). (E) Decay constants of log-transformed GPe traces show the time for the transient to decay to 10% of its initial value. Treated slices had an average decay time of 2.09 s, CI95= [1.56, 2.62], and untreated slices had an average of 2.20 s, CI95= [1.61, 2.79]. (F) Goodness-of-fit measurements for log-transformed traces.
 
 The greater release of FFN102 in GPe at higher frequencies (Figure 5) suggested that GPe dopamine axons might have the capacity to generate large FFN transients. Indeed, we occasionally observed transients in the GPe of comparable size to striatum (Figure 7A). Surprisingly, GPe regions with large FFN102 transients did not exhibit obvious FFN102 puncta within the field of view (Figure 7B). We then examined if the large GPe transients were due to the presence of any puncta. To do so, we measured AUC values for transients and their correlation with the Canny Edge sum, a measure of high contrast edges of an image, specifically those around fluorescent puncta and neuropil (Figure 7C). We found very little correlation between GPe transient magnitude and Canny Edge values (R = 0.051) and found a similarly low correlation between GPe transient magnitude and initial image fluorescence (R = −0.062). Thus, neither the number of puncta nor the initial image fluorescence appeared to be related to the variability in FFN transient size.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/42383/elife-42383-fig7-v2.jpg)
 
-**Figure 7.:** (A) A representative FFN transient from striatum, blue, and a ‘hotspot’ within the GPe, red. (B) Canny filtered masks were calculated from the average of each field of view’s baseline images, returning a pixel value of ‘1’ if the area has a high contrast and otherwise ‘0’. The fields of view that produced these transients are shown, both in their raw form and as a Canny edge filtered image. White scale bar = 10 µm. (C) For each field of view, the Canny edge sum (x axis) is displayed with the amplitude of its FFN transient (y axis). Correlation values are shown for GPe (n = 494 fields of view) and striatum (n = 84 fields of view). (D) An area of a representative brain slice containing the GPe. The two axes display distance in µm along the long axis of the GPe. (E) Points oriented to show imaging locations along the long axis of the GPe, with colors corresponding to their AUCs. Slices are shown from left to right, from more lateral to more medial slices. (F) Histograms showing the distance between pairs of all fields of view imaged within a slice. The distributions are split into four quartiles, where pairs in the top quartile both had the largest FFN transients compared to other pairs in the same slice. Similarly, pairs in the bottom quartile both had smaller FFN transients compared to the other 75% of pairs. (G) A plot of the derivative of the fluorescence intensity over time, averaged over the fields of view for each region (N = 84 for striatum, N = 494 for GPe). (H) Values of the derivative of the fluorescence intensity over time, for three intervals: 100 ms prior to stimulation, 100 ms after the first pulse, and 100 ms after the second pulse. Error bars represent the mean with CI95. All non-overlapping error bars were significant at p < 0.001. The mean value for the derivative at the first pulse was 0.86% for the striatum and 0.20% for the GPe.10.7554/eLife.42383.015Figure 7—source data 1.10.7554/eLife.42383.016Figure 7—source code 1.
+**Figure 7.:** (A) A representative FFN transient from striatum, blue, and a ‘hotspot’ within the GPe, red. (B) Canny filtered masks were calculated from the average of each field of view’s baseline images, returning a pixel value of ‘1’ if the area has a high contrast and otherwise ‘0’. The fields of view that produced these transients are shown, both in their raw form and as a Canny edge filtered image. White scale bar = 10 µm. (C) For each field of view, the Canny edge sum (x axis) is displayed with the amplitude of its FFN transient (y axis). Correlation values are shown for GPe (n = 494 fields of view) and striatum (n = 84 fields of view). (D) An area of a representative brain slice containing the GPe. The two axes display distance in µm along the long axis of the GPe. (E) Points oriented to show imaging locations along the long axis of the GPe, with colors corresponding to their AUCs. Slices are shown from left to right, from more lateral to more medial slices. (F) Histograms showing the distance between pairs of all fields of view imaged within a slice. The distributions are split into four quartiles, where pairs in the top quartile both had the largest FFN transients compared to other pairs in the same slice. Similarly, pairs in the bottom quartile both had smaller FFN transients compared to the other 75% of pairs. (G) A plot of the derivative of the fluorescence intensity over time, averaged over the fields of view for each region (N = 84 for striatum, N = 494 for GPe). (H) Values of the derivative of the fluorescence intensity over time, for three intervals: 100 ms prior to stimulation, 100 ms after the first pulse, and 100 ms after the second pulse. Error bars represent the mean with CI95. All non-overlapping error bars were significant at p < 0.001. The mean value for the derivative at the first pulse was 0.86% for the striatum and 0.20% for the GPe.
 
 We next examined whether the regions of high release were spatially clustered. We found that GPe slices rarely contained more than one such ‘hotspot’ of FFN release (Figure 7D,E). To quantify these observations, we segregated fields of view from a slice, assuming each field contains a putative release area, into four equal clusters based on the AUC from that field of view. We measured the distance between putative release areas (Figure 7F). If the hotspots were clustered, we would expect that the distribution of the top quarter of fields of view to have a small distance between pairs of release sites. We found that the most active areas were not closely spaced, and were as likely to be neighbors with a low releasing area as a high releasing area.
 
@@ -117,48 +117,93 @@ The use of pH-sensitive ‘flashing’ FFNs as optical analogs to cyclic voltamm
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Male and female C57BL/6J mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Male Drd2- BAC-GFP mice</td>
+      <td>MMRC</td>
+      <td>MGI:3843608</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Male and female aphakia mice</td>
+      <td>Provided by Dr. Un Kang (doi:10.1111/gbb.12210; doi: 10.1073/pnas.1006511108)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-tyrosine hydroxylase</td>
+      <td>Millipore</td>
+      <td>RRID:AB_390204</td>
+      <td>(1:750)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 All animal protocols followed NIH guidelines and were approved by Columbia University’s Institutional Animal Care and Use Committee (protocol AC-AAAR4420).
 
-## Mice
+### Mice
 
 Experiments were performed on male and female C57BL/6J mice (9–24 weeks old) obtained from Jackson Laboratories (Bar Harbor, ME, USA), Drd2-BAC-GFP (S118Gsat/Mmnc) mice purchased from MMRRC, and aphakia mice. The aphakia allele is a loss-of function mutation in the Pitx3 gene arose spontaneously on the 129/Sv-S1 j strain at the Jackson Laboratory and was maintained in a C57BL background as previously described (Ding et al., 2007; Ding et al., 2011). All mice were housed under a 12 hr light/dark cycle in a temperature-controlled environment with food and water available ad libitum.
 
-## 6-OHDA lesion
+### 6-OHDA lesion
 
 Unilateral 6-hydroxydopamine (6-OHDA) lesions were performed in male and female C57/BL6 mice of 12–15 weeks of age. Mice were anesthetized with ketamine/xylazine cocktail (80 mg/kg ketamine and 4 mg/kg xylazine, i.p.). Mice received unilateral lesion of the left medial forebrain bundle by intracranial infusion of 4.5 μg of 6-OHDA free base in 1.5 μl of 0.05% ascorbic in 0.9% saline at a rate of 300 s/μl into the following coordinates: anterior/posterior (−1.3 mm), medial/lateral (+1.2 mm), and ventral to skull surface (−5.4 mm) via a 28-gauge stainless-steel cannula that stayed in the brain for 5 min after the injection before being withdrawn. Desipramine (25 mg/kg, Sigma-Aldrich), a norepinephrine reuptake inhibitor, was injected intraperitoneally 30 min prior the infusion of 6-OHDA to protect norepinephrine neurons. Following surgery, mice received 2 weeks of intensive postoperative care consisting of twice daily, 1 ml injections (i.p.) of 5% dextrose in 0.9% saline and highly palatable, high fat content food (Bacon softies, Bio-Serv) as supplementation to the normal mouse chow diet. Mice were analyzed for FFN102 imaging two weeks after the unilateral lesion.
 
-## Imaging FFN102 transients
+### Imaging FFN102 transients
 
 Sagittal slices containing the GPe were prepared as previously described with minor modifications (Pereira et al., 2016). Briefly, mice were killed by cervical dislocation and decapitated. Both male and female wild-type mice were used. A Leica VT1200 vibratome (Leica Microsystems, Wetzlar, Germany) was used to cut three 250 µm thick slices from each hemisphere. Slices were maintained at room temperature in oxygenated (95% O2, 5% CO2) artificial cerebrospinal fluid (ACSF [in mM]: 125.2 NaCl, 2.5 KCl, 26 NaHCO3, 0.3 KH2PO4, 2.4 CaCl2, 1.3 MgSO4, 10 glucose, 0.8 HEPES, pH 7.3–7.4, 295–305 mOsm), and used within 1 to 5 hr. Prior to imaging, each slice was incubated in an ACSF solution containing 10 µM FFN102 for 30 min. Slices were then transferred to a QE-1 imaging chamber (Warner Instruments) and held in place with a custom-made platinum wire and nylon holder. Slices were perfused with ACSF at a rate of 2–3 ml/min at room temperature (23°C).
 
 All images were acquired using a Prairie Ultima Multiphoton Microscopy Systems (Bruker/Prairie Technologies) equipped either with a Spectra-Physics MaiTai HP DeepSee titanium-sapphire pulsed laser (Newport) and either a 10 × 1.0 NA air objective or 60 × 0.9 NA water immersion objective (Carl Zeiss Microscopy). For electrical stimulation, a twisted bipolar platinum stimulating electrode (Plastics One) was placed directly on top of the region to be imaged and pulses generated by an Iso-Flex stimulus isolator triggered through a Master-8 (each pulse 600 μs × 200 μA). Imaging was synchronized to the pulse generation using the TriggerSync software provided with the Prairie imaging system. FFN102 was excited at 760 nm and detected at 440–490 nm. For all imaging sessions, the stimulating electrode was placed using the 10x objective and then a region, approximately 50–100 μm from electrode tip, was examined under 60x at 10x digital zoom. Regions were only stimulated if they were 30 μm beneath the surface of the slice. Images, 64 × 64 pixels at 10x digital zoom (approximately 50 × 50 µm), were recorded at 10 Hz (6 µs dwell time) using a spiral scan. The use of a stimulus train provides a longer duration optical signal, and so a more robust detection of FFN release events by distinguishing the signal from rapid fluctuations. To minimize movement and deformation of slices, experiments were performed at room temperature.
 
-## Electrical stimulation protocols for brain slices
+### Electrical stimulation protocols for brain slices
 
 Electrical stimulation was synchronized with frame acquisition using TriggerSync software including with the PrairieView proprietary imaging package. Electrical stimulation protocols were chosen based on the type of experiment and are detailed and justified for each experiment.
 
-## Quantification of FFN102 fluorescence intensity
+### Quantification of FFN102 fluorescence intensity
 
 To analyze optical data, images were loaded into MATLAB and ΔF/F were extracted by first calculating the mean intensity of every image frame. To calculate baseline fluorescence, a linear fit was calculated to 500 ms of the data immediately prior to the stimulation. For each image sequence, this calculated baseline was subtracted from the fluorescence intensity over time and the resulting value divided by the baseline. This approach removes baseline activity due to bleaching or the washing out of FFN molecules. Fluctuations in baseline activity are much slower than the rise of an FFN transient, which are present at the first acquisition following the electrical stimulus. The smoothed baseline was used as the F for calculating ΔF/F for every time point of a given intensity. To calculate area under the curve values (AUC), we used the trapezoidal integration formula as implemented by MATLAB and measured the integral over frames within the stimulus period.
 
-## Measurement of FFN in regions of interest
+### Measurement of FFN in regions of interest
 
 Previous approaches to identify FFN labeled puncta relied on localizing the centers and boundaries of puncta (Pereira et al., 2016). In the case of flashing FFNs, which become brighter in the extracellular space, the unit of analysis is a field of view rather than individual puncta. We classify each pixel as belonging to the edge of an FFN-filled region or background by applying a Canny-edge filter using MATLAB’s canny function with a low threshold of 0.08 and a high threshold of 0.2. These values successfully outline the edge fluorescence from striatal images in which puncta are visible to the eye. The low threshold serves to extract even weak edges that may be present for thin varicosities or puncta with small quantities of FFN.
 
-## Measures of calcium and DAT dependence
+### Measures of calcium and DAT dependence
 
 For Ca2+ manipulation, slices were stimulated by using a single train of electrical pulses (10 pulses per train, 10 Hz) and imaged. The concentration of Ca2+ was varied by switching the perfusate between 0.5, 2, and 4 mM CaCl2, with a randomized order, with ten minutes between recording sessions to allow the calcium to perfuse into the slice. For the striatum, one field of view was imaged at the three concentrations and care was taken to ensure the field of view did not move during the ten minutes as the perfusate was switched. For the GPe, the same three fields of view were visited at each concentration and stimulated. The image intensity over time was obtained for each of the three stimulated fields of view, at each concentration, and an average calculated.
 
 To measure DAT dependence in the striatum, one field of view was imaged in each slice and then nomifensine (10 μM, Sigma-Aldrich) dissolved in ACSF was perfused for ten minutes. The same field of view was then imaged with nomifensine-containing ACSF. For the GPe, ten fields of view were chosen at random, imaged, and then switched to nomifensine-containing ACSF. The same ten fields of view were visited and imaged with nomifensine-containing ACSF.
 
-## Histology
+### Histology
 
 For 6-OHDA experiments, mouse brain slices were first used in FFN102 experiments. Slices were then removed from the ACSF perfusate and placed into ice-cold 4% PFA in 0.1M TBS and stored overnight at 4°C. Slices were washed for an hour, six times, in PBS. Slices were then blocked for 2 hr with 10% fetal bovine serum, 0.5% bovine serum albumin in 0.5% TBS-Triton X-100. Primary antibody against tyrosine hydroxylase (AB152, Millipore) was applied at 1:750 dilution in block for 72 hr at 4°C. Slices were washed again for an hour, six times. Secondary anti-rabbit antibody was applied in block for 16 hr at 4°C.
 
 For the Pitx3 (aphakia) mouse SN and VTA histology, mice under deep anesthesia were transcardially perfused with ice-cold 4% PFA in 0.1M TBS. Brains were post-fixed overnight and washed in TBS for fifteen minutes, four times. Sections of 30 µm thickness were obtained using a Leica VT2000 vibratome. The sections were incubated in blocking solution for 1 hr at room temperature, then placed in blocking solution containing primary antibody to TH at 1:750, and incubated overnight at 4°C. The sections were washed again and incubated with anti-rabbit secondary antibody in blocking solution for 1 hr at room temperature. Images for the 6-OHDA and aphakia experiments were acquired at 2.5x using a Hamamatsu camera attached to a Carl Zeiss epifluorescence microscope. MATLAB was used to process the images for level adjustment.
 
-## Experimental design and statistical analyses
+### Experimental design and statistical analyses
 
 For experiments showing that FFN102 is necessary for evoking fluorescence transients (Figure 2), AUCs of fluorescence were measured for each slice, then slices from the two conditions were compared for significance using a t-test, and confidence intervals are also provided for comparison. To determine calcium dependence (Figure 3), within-slice comparisons of FFN transients were made at three separate concentrations. ANOVA was used to show dependence on calcium with each group comprising the average AUCs from a slice, obtained at different concentrations. Confidence intervals for the release at a given concentration were calculated based on the data for each group. To examine the effect of 6-OHDA treatment on the size of FFN AUC transients (Figure 4), we recorded from lesioned and unlesioned sides of each treated animal and compared pairs of hemispheres for each animal using a pairwise t-test. The pairwise differences were also used to compute confidence intervals to estimate the effect of depletion on the FFN signal. For aphakia animals, pairwise comparisons were made within a slice under two conditions: stimulated and not stimulated. A pairwise t-test was used to compare the two conditions and confidence intervals indicate the magnitude of the differences obtained between the two conditions for the aphakia mice. The same experiment was performed using wild-type mice, and the confidence intervals were similarly calculated. The difference between stimulated and unstimulated represented the independent samples to be compared for the aphakia and wild-type mice. Confidence intervals were used to compare these differences. To analyze the features of the striatal and GPe FFN transients (Figures 5–7), confidence intervals were calculated using data from multiple fields of view across multiple slices and animals. We calculated confidence intervals for comparison between striatum and GPe. For all parametric statistical tests, data were deemed normally distributed.

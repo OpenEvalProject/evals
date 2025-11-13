@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05av6m066 Harvard Medical School (HMS) Library of Integrated Network-based Cellular Signatures (LINCS) Center Cambridge United States
-2. https://ror.org/02jzgtq86 Department of Cancer Biology and the Linde Program in Cancer Chemical Biology, Dana-Farber Cancer Institute Boston United States
+1. Harvard Medical School (HMS) Library of Integrated Network-based Cellular Signatures (LINCS) Center Cambridge United States ([ROR:05av6m066](https://ror.org/05av6m066))
+2. Department of Cancer Biology and the Linde Program in Cancer Chemical Biology, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
 3. Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School Boston United States
-4. https://ror.org/00tdyb139 Laboratory of Systems Pharmacology, Department of Systems Biology, Harvard Program in Therapeutic Science, Harvard Medical School Boston United States
+4. Laboratory of Systems Pharmacology, Department of Systems Biology, Harvard Program in Therapeutic Science, Harvard Medical School Boston United States ([ROR:00tdyb139](https://ror.org/00tdyb139))
 
 † Corresponding author
 
@@ -34,6 +34,71 @@ Only a few DUB inhibitors have entered clinical testing, and none are as-yet app
 
 In this paper, we take a combined and relatively unbiased computational and experimental approach to investigating the functions of DUBs, with an emphasis on cancer cell lines in which DUB inhibitors have been most extensively studied. First, we use high-throughput RNA-seq to measure the transcriptome-wide impact of an 81-member DUB CRISPR-Cas9 knockout library and also of seven small molecule DUB inhibitors chosen for high selectivity. As a complementary source of phenotypic and molecular information, we mine several large omics datasets (Table 1), including the Dependency Map (DepMap) (Meyers et al., 2017; Tsherniak et al., 2017), the Connectivity Map (CMap) (Lamb et al., 2006) and a recently published Cancer Cell Line Encyclopedia (CCLE) proteomics dataset (Nusinow et al., 2020) as well as multiple protein-protein interaction databases (PPIDs) (Cerami et al., 2011; Hermjakob et al., 2004; Malovannaya et al., 2011; Stark et al., 2006). We then test a subset of the inferred DUB activities using focused knockout and functional studies.
 
+**Table 1.**
+ Data and public resources used to infer the functions of DUB genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Description</th>
+      <th>Key Insights</th>
+      <th>Terms / abbreviations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DGE RNA-seq</td>
+      <td>High-throughput RNA-seq data collected for this study following knockout or inhibition of individual DUBs using CRISPR-Cas 9. 81 DUB knockouts (found in a commercial library) and 7 small molecules were characterized in biological replicate.</td>
+      <td>Transcriptional signatures acquired from cells in which individual DUBs are inactivated. This provides insight into potential gene function. Similarity between signatures of gene knockout and small molecules provides insight into small molecule selectivity.</td>
+      <td>3’DGE-seq: 3’ Digital Gene Expression, a type of high-throughput RNA-seq.Differentially Expressed (DE) gene: Gene with different level of expression across two samples as defined by a false discovery rate (FDR) adjusted P&lt;0.05.</td>
+    </tr>
+    <tr>
+      <td>Connectivity Map (CMap)</td>
+      <td>A Broad Institute database of post-perturbation RNA-seq signatures generated from multiple cell lines following knockdown (RNAi or CRISPR-Cas 9), gene over-expression, or treatment of cells with small molecule drugs. Signatures in CMAP resource are comprised of 978 landmark genes measured using a Luminex bead-based assay. The expression of 11,350 genes is then inferred. Data are available for ~3000 genes and ~5000 small molecules.</td>
+      <td>Enables identification of genes that, when silenced with RNAi, or overexpressed, have similar transcriptional effects as a query L1000 or DGE-Seq signature. The effects of gene knockout/over-expression can be compared to the effects of drugs for mechanism of action studies.</td>
+      <td>Query mRNA profile: the transcriptomic signature that is used to query CMap and retrieve similar signatures.Tau score: a parameter that quantifies similarity between the query mRNA profile and CMap signatures (tau similarity is computed by counting the number of pairwise mismatches between two ranked lists). CMap recommends a threshold value for tau similarity scores of &gt;90.</td>
+    </tr>
+    <tr>
+      <td>Dependency Map (DepMap)</td>
+      <td>A Broad Institute database of gene essentiality scored in &gt;700 cancer cell lines based on genome-wide pooled CRISPR-Cas9 knockout screens. Dropout of specific Guide RNAs is used as a measure of essentiality.</td>
+      <td>Enables identification of genes that are essential for cell proliferation or survival in specific cell lines. Patterns of essentiality across cell line panels (the DepMap score) can be computed to identify genes potentially having related biological functions.</td>
+      <td>DepMap score – a measure of cell line dropout rate in a pooled genome-wide CRISPR screen (a gene with a dependency score &lt;–0.5 is considered an essential gene in that cell line)Co-Dependency. Genes with similar DepMap scores are said to be co-dependent. In our study, we analyzed the top seven co-dependent genes, but similar data were obtained when more or fewer co-dependent genes were considered.</td>
+    </tr>
+    <tr>
+      <td>Cancer Cell Line Encyclopedia (CCLE) Proteomics</td>
+      <td>A Broad Institute database of baseline shotgun proteomics collected from CCLE cell lines. Data from ~375 cell lines and 12,000 proteins per line are available.</td>
+      <td>Protein co-expression across cell line panels provides insight into functional interactions: proteins in the same complex are often co-expressed to a significant degree across CCLE cell clines.</td>
+      <td>Co-expressed genes: correlation in protein abundance across cell lines with FDR &lt;0.01 and |z-score|&gt;2. These thresholds are set based on previous publications (Nusinow et al., 2020).</td>
+    </tr>
+    <tr>
+      <td>BioGRID</td>
+      <td>Protein-protein interaction database compiling interaction data from multiple sources. Protein interactions are measured using multiple physical assays including affinity capture MS, affinity capture western blotting, and assembly of reconstituted complexes from purified recombinant subunits in vitro.</td>
+      <td>Discovery of protein-protein interactions using a variety of methods that focus on physical interaction.</td>
+      <td>PPID: protein-protein interaction database.</td>
+    </tr>
+    <tr>
+      <td>IntAct</td>
+      <td>Protein-protein interaction database that compiles interaction data from multiple sources.</td>
+      <td>Discovery of protein-protein interactions using a variety of methods that focus on physical interaction.</td>
+      <td>PPID: protein-protein interaction database.</td>
+    </tr>
+    <tr>
+      <td>Pathway Commons</td>
+      <td>Protein-protein interaction database compiling interaction data from multiple sources.</td>
+      <td>Discovery of protein-protein interactions using a variety of methods that focus on physical interaction.</td>
+      <td>PPID: protein-protein interaction database.</td>
+    </tr>
+    <tr>
+      <td>NURSA</td>
+      <td>Physical interactions among proteins, particularly those involved in transcription.</td>
+      <td>Discovery of proteins that interact directly as determined by affinity capture mass spectrometry; approximately ~3000 IP assays are currently included.</td>
+      <td>PPID: protein-protein interaction database.NURSA: Nuclear Receptor Signaling Atlas</td>
+    </tr>
+  </tbody>
+</table>
+
 The DepMap aims to identify genes that are essential for cell proliferation based on a genome-wide pooled CRISPR-Cas9 knockout screen conducted in more than 700 cancer cell lines spanning multiple tumor lineages. Each cell line in the DepMap carries a unique barcode to enable parallel analysis, and each gene knockout is assigned a ‘dependency score’ on a per cell-line basis. The dependency score quantifies the rate at which a cell carrying a particular CRISPR-Cas9 guide RNA is out-competed (‘drops out’) in a specific cell line; the more negative the dependency score, the stronger the impact on proliferation and thus, the higher the rate of guide disappearance from the population (Meyers et al., 2017; Tsherniak et al., 2017). The dependency score therefore provides a measure of the essentiality of a gene in different cell lines.
 
 The CMap is a database of ~1000-gene mRNA signatures obtained from cells treated with small molecule drugs or in which individual genes have been knocked down using RNAi or overexpressed; data are available for ~3000 different genes and ~5000 small molecules. Each mRNA signature involves the measurement of a representative subset of the transcriptome using a bead-based (Luminex) assay (Lamb et al., 2006). The CCLE proteomics dataset is comprised of shotgun proteomic data for 375 cell lines from multiple tumor lineages without perturbation; ~12,000 proteins are detected in total across the dataset (Nusinow et al., 2020).
@@ -42,7 +107,7 @@ PPI datasets were obtained from BioGRID, IntAct, and Pathway Commons PPIDs, as w
 
 ## Results
 
-## General description of integrative multi-omics approach
+### General description of integrative multi-omics approach
 
 To characterize the DUB family of enzymes, we combined laboratory experiments and data mining (Figure 1, Table 1). As a first step, we leveraged CMap to identify genes that, when silenced with RNAi, or overexpressed, had similar transcriptional effects as DUB knockouts. This approach is based on the observation that genetic perturbations acting on components of the same or related pathways frequently give rise to significantly similar transcriptomic signatures (Lamb et al., 2006). To generate knockouts, we used a commercially available arrayed CRISPR-Cas9 library targeting 81 DUBs and 13 additional proteins in the ubiquitin-proteasome system, including ubiquitin-like proteins; the library was constructed with four, pooled, guides per target (coverage of DUBs is incomplete in this CRISPR-Cas9 library because it was based on a historical understanding of the DUB family; Figure 2a, Supplementary file 1). Prior to screening, transfection was optimized by assaying the abundance of selected target proteins using western blots (see Materials and methods, Figure 2—figure supplement 1a). mRNA profiling was performed 96 hr after guide RNA transfection using a high-throughput, low-cost RNA-sequencing method (3’ Digital Gene Expression; 3’DGE-seq) in the MDAMB231 breast cancer cell line (Figure 2b, Semrau et al., 2017; Soumillon et al., 2014). Four days after guide RNA transfection, we generated mRNA profiles by 3’DGE-seq and then queried the CMap database. This yielded tau scores quantifying similarity between the query mRNA profile and CMap signatures (tau similarity is computed by counting the number of pairwise mismatches between two ranked lists) (Lamb et al., 2006). We used the recommended threshold of tau similarity score >90 to determine significantly similar perturbations.
 
@@ -50,23 +115,55 @@ To characterize the DUB family of enzymes, we combined laboratory experiments an
 
 **Figure 1.:** The functional impact of DUB loss was investigated via transcriptomic profiling of cells following CRISPR-Cas9 knockout (purple box); this was compared to signatures for genetic perturbations in the Broad Connectivity Map database of RNA-seq signatures (green). The impact of DUB knockout on cancer cell line proliferation was analyzed using the Broad Dependency Map (red) and compared to other gene knockouts in the dataset; this identified co-dependent genes (sets of genes whose knockout had similar effects on cell proliferation across cell lines). Multiple protein-protein interaction databases and co-expression (correlation in protein abundance across cell lines) in baseline proteomics in Cancer Cell Line Encyclopedia (CCLE; yellow) cell lines were used to provide support for physical or functional interactions among DUBs exhibiting co-dependency. We then used these analyses to explore the impact of DUB knockout on the transcriptome, determine the impact of DUBs on proliferation, and propose E3 ligase interactors and essential functions of DUBs. Acronyms used in figure: knockout (KO), loss of function (LOF), Cancer Cell Line Encyclopedia (CCLE).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig2-v1.jpg)
+
+**Figure 2.:** (A) 81 DUBs covering the majority of the DUB phylogenetic tree were targeted in MDAMB231 cells using an arrayed CRISPR-Cas9 library (black circles (Figure 2 cont.) designate knockouts included in screen). (B) The impact of DUB loss on the transcriptome was profiled using high-throughput 3’ DGE RNA-seq 96 hr after transfection with CRISPR-Cas9. (C) The impact of individual DUB knockouts on the transcriptome of MDAMB231 cells, 4 days post CRISPR-Cas9 guide transfection as quantified by the number of differentially expressed genes (adjusted p-value <0.05). Guide RNA transfections were performed in triplicate and transcriptional responses then averaged. Knockouts that resulted in more than 20 differentially expressed (DE) genes are colored red. (D) Hierarchical clustering of log2FC values for significantly differentially expressed (DE) genes (adjusted p-value <0.05) for the knockouts colored red in (C). (E) Gene set enrichment analysis results for DUB knockouts that resulted in at least 20 DE genes. Gene sets that were significantly enriched (FDR <0.05) and in the top five up- or down-regulated gene sets in at least one condition are shown. PRPF8 knockout did not result in any significantly enriched pathways so it is not displayed.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blots showing select CRISPR-Cas9 guide target downregulation relative to a non-targeting control guide in MDAMB231 cells 96 hr post transfection. For each CRISPR-Cas9 knockout, four (cont.) crRNA guides for the target DUB were pooled together. (B) Change in CRISPR-Cas9 guide target mRNA abundance (log2 fold change vs. log 10 p-value, p-value <0.05 colored red) in MDAMB231 cells 96 hr post transfection.
+
 Next, we leveraged the DepMap dataset to investigate DUB essentiality. It has been observed that genes having similar DepMap scores across large panels of cell lines are likely to have related biological functions (Meyers et al., 2017; Pan et al., 2018; Tsherniak et al., 2017), a property known as co-dependency. More specifically, co-dependent genes are frequently found to lie in the same or parallel pathways (as defined by gene ontology (GO), for example) or to be members of the same protein complex. We identified co-dependent genes for DUBs and then ran GO enrichment analysis on the co-dependent genes to identify pathways in which the DUBs were likely to be active. We also mined data on co-dependent genes from four other datasets. First, we asked whether co-dependent genes had similar transcriptomic signatures in CMap. Second, we used protein-protein interaction databases (PPIDs) such as BioGRID, IntAct, Pathway Commons, and NURSA to ascertain whether co-dependent genes might interact physically with one another. Third, we searched CCLE proteomics data for proteins whose expression levels across ~375 cell lines strongly correlated with the level of each DUB; it has previously been observed that proteins in the same complex are often co-expressed to a significant degree across a cell line panel (Nusinow et al., 2020). Fourth, we repeated GO-enrichment analysis for protein-interactors identified from PPIDs or for significantly co-expressed proteins from the CCLE proteomics data. All four approaches involve indirect assessment of function or interaction but they are based on different types of data and different ideas about what constitutes a gene-gene ‘interaction’. We reasoned that inferences that were significantly correlated or at least consistent across data sources were more likely to be biologically meaningful. As one means of testing this hypothesis we asked whether results for well-studied DUBs were consistent with prior literature knowledge.
 
 Experimental support for functional associations obtained from data mining was sought by knocking out the DUB and several co-dependent genes and then assaying phenotypic similarity by mRNA profiling and other means. We also compared CRISPR-Cas9 knockout phenotypes with phenotypes induced by treatment of MDAMB231 or MCF7 cells with one of seven recently developed small molecule DUB inhibitors. We selected these inhibitors based on their reported selectivity for specific DUBs. We then compared drug-induced transcriptomic profiles with those obtained by CRISPR-Cas9-mediated gene knockout.
 
-## The impact of DUB knockouts on the transcriptome
+### The impact of DUB knockouts on the transcriptome
 
 Genes whose knockout with CRISPR-Cas9 resulted in 20 or more differentially expressed (DE) genes in MDAMB231 cells at a false discovery rate (FDR) adjusted p-value of p<0.05 included ten DUBs, one deSUMOylating enzyme (SENP2), and one ubiquitin-like protein (UBL5) (Figure 2c and d). To determine if the CMap database, which was collected primarily using a LUMINEX-based ‘L1000’ method (Subramanian et al., 2017), could successfully be queried using 3’DGE-Seq signatures, we focused in on three DUBs that have been relatively well studied: CYLD, TNFAIP3, and PSMD14. Using 3’ DGE-Seq data, we found that knockout of PSMD14, a proteosome subunit, strongly perturbed genes involved in the cell cycle (e.g. the GO cell division category), as expected for a DUB essential for proteasome function and thus, cell cycle progression (Figure 2e, Supplementary file 2). When CMap was queried using the 3’DGE-seq data, PSMD14 knockout was found to be similar to knockout of multiple other proteasome subunits (Supplementary file 3). In the case of CYLD and TNFAIP3 (also called A20), we found that CRISPR-Cas9 knockout resulted in highly correlated changes in transcription, and GO analysis revealed involvement in NF-κB signaling (Figure 2d and e, Lork et al., 2017). Both DUBs are known to deubiquitinate members of the NF-κB signaling cascade, such as TRAF2, which results in inhibition of signal transduction (Lork et al., 2017). Moreover, we found that 3’DGE-seq data for CYLD and TNFAIP3 knockout were most similar to CMap signatures associated with overexpression of genes that function upstream in the NF-κB pathway, such as the TNF receptor TNFRS1A (Supplementary file 3). We interpreted these data on three well-studied DUBs as helping to confirm the validity of our approach.
 
-## Analysis of DUB essentiality using publicly available datasets
+### Analysis of DUB essentiality using publicly available datasets
 
 Differences in the expression of DUBs in normal tissues and malignant tumors has been described previously (Luise et al., 2011), but the direct impact of DUB deletion on specific types of cells has not yet been systematically explored. We therefore investigated the essentiality of DUBs for cancer cells and embryonic development by leveraging three datasets: the DepMap, the International Mouse Phenotyping Consortium (IMPC) dataset, and the Mouse Genome Informatics (MGI) mouse phenotype dataset. Of 94 DUB knockouts found in DepMap, 23 strongly impacted proliferation (dependency score <–0.5) in at least 200 of the cell lines tested (30%), and an additional 25 impacted proliferation in at least eight cell lines (1%) (Figure 3a). The remainder had little, if any, detectable effect. To identify dependencies associated with tumor type, we compared DepMap data across sets of cell lines that had been divided based on tissue of tumor origin or more specific clinical or genetic subtypes (e.g. Leukemia is a general category, while AML, ALL, and CML are more specific subdivisions). This can provide insight into disease activity. For example, the tumor type in DepMap most sensitive to knockout of the BRAF kinase is melanoma, the disease in which BRAF inhibitors were first approved and are most widely used (Kakadia et al., 2018). We identified 34 DUBs that, when knocked out, significantly and disproportionately affected at least one tumor type more than all other tumor types (two-sided t-test p<0.05, FDR <0.1; Supplementary file 4). STAMBP for example, impacts proliferation of head and neck cancer cell lines more strongly (mean dependency score = –0.73) than all other tumor types in the DepMap (mean dependency score = –0.43; difference in means = 0.30 +/- 0.08, FDR = 0.03), suggesting that STAMBP might best be studied in this context; Figure 3—figure supplement 1 depicts analogous information for other DUBs.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig3-v1.jpg)
+
+**Figure 3.:** (A) The fraction of cancer cell lines present in the DepMap that are strongly dependent on each DUB (using recommended threshold CERES <–0.5). Bars are colored coded based on knockout mouse phenotype data from the IMPC and MGI datasets. (B) The strongest co-dependent genes for each DUB (n=7 but similar results were obtained for n=5–10). For visualization purposes, only DUBs that either had a significantly enriched GO term, a co-dependent gene supported by PPID or CCLE proteomics co-expression, or scored as essential in at least 20% of DepMap cell lines are displayed (see Supplementary files 6 and 7 for complete codependency results). The inner ring (ring 1) contains the top GO term for the co-dependent genes for each DUB (highly similar GO terms are grouped to aid in viewing the data, see Supplementary file 5 for all GO results). The second ring contains the DUB gene name. The third ring contains the fraction of cell lines strongly dependent on the DUB. The fourth ring contains the co-dependent gene name (green if DUB – co-dependent gene pair exists in a protein-protein interaction database). The fifth ring contains the Pearson correlation value for the DUB-co-dependent gene pair (red represents a positive correlation and blue represents a negative correlation). The sixth ring designates which co-dependent genes had similar transcriptomic profiles in CMap or were co-expressed in baseline proteomics with the respective DUB.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Two-sided t-tests were conducted between a selected cancer type and all other cell lines for each DUB knockout (plotted as difference in mean dependency score vs adjusted p-value, adjusted p-value <0.1 colored red). Negative difference in means represents a cancer type with increased dependence on that knockout (stronger impact on proliferation) and a positive difference in means represents a cancer type with decreased dependence on that knockout (weaker impact on proliferation).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Correlations between the impact of DUB knockout on proliferation (CERES dependency score) and DUB copy number, mRNA abundance, and protein abundance for each DUB. A negative correlation occurs when the DUB abundance is higher in the more sensitive cells and a positive correlation occurs when the DUB abundance is lower in the more sensitive cells. (B) The fraction of each tumor type in the DepMap with copy number loss of the eleven DUBs with correlations between copy number and sensitivity to DUB knockout greater than 0.2. (C) The fraction of all cell lines with copy number loss of the eleven DUBs with correlations between copy number and sensitivity to DUB knockout greater than 0.2.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) The fraction of each tumor type in TCGA PanCancer Atlas studies with copy number loss of individual DUBs. The eleven DUBs with correlations between copy number and sensitivity to DUB knockout greater than 0.2 in the DepMap are displayed. (B) The fraction of all tumor types with copy number loss of the 11 DUBs with correlations between copy number and sensitivity to DUB knockout greater than 0.2. (C) Abbreviations for TCGA tumor types.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) The number of co-dependent genes sorted by correlation value supported by protein-protein interactions (red) compared to the number supported when co-dependent genes are randomly shuffled (black). (B) The number of co-dependent genes sorted by correlation value supported by co-expression (red) compared to the number supported when co-dependent genes are randomly shuffled (black).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) The significant GO terms from the DepMap co-dependent gene analysis were compared to GO terms enriched in the interactors for each DUB and the co-expressed proteins in the Cancer Cell Line Encyclopedia proteomics dataset. (B) The most significant GO term from DepMap analysis (smallest FDR <0.05) for each DUB as well as the GO term from DepMap analysis with the largest sum of -log(p-value) across datasets (if different). DUBs that were not present in the dataset are distinguished with a black dot.
 
 Genes are often studied in a setting or cell type in which they are highly expressed, based on the assumption that level of expression correlates with activity. However, when we compared DUB expression levels and dependency scores, we found that they were uncorrelated (median correlation between DUB dependency score in DepMap and protein abundance in CCLE proteomics data = 0.017, median p-value 0.23), except in the case of TNFAIP3, which was more highly expressed in more sensitive cell lines (r=–0.32, p-value =1.6 x 10–6, Figure 3—figure supplement 2a). In fact, a subset of pan-essential DUBs (those DUBs that were essential in >90% of DepMap cell lines) exhibited positive correlation between DUB abundance and DUB dependency score (r>0.2), meaning that the most sensitive cell lines had the lowest DUB expression levels (Ohashi et al., 2019, Figure 3—figure supplements 2 and 3). Thus, with rare exception, the sensitivity of individual tumor lineages to different DUB knockouts is not explained by protein abundance. Moreover, studying DUBs primarily in over-expressing cell lines is not supported by available data.
 
 Using mouse data from the IMPC and MGI datasets, we compared data from cell lines in DepMap to knockout phenotypes in mice (Figure 3a, Muñoz-Fuentes et al., 2018). Phenotypes in the IMPC are scored prior to weaning in pups that arise from mating heterozygous animals, with lethality at complete penetrance corresponding to no homozygous pups and lethality with incomplete penetrance corresponding to fewer than 12.5% homozygous pups (the expected value for a gene with no impact on survival is 25%). For DUBs with no data in the IMPC, we leveraged knockout mouse data from the MGI dataset, which compiles mouse phenotypes from multiple sources. Of the 82 DUB knockout mice included in the datasets, 20 DUBs were lethal with complete penetrance, 7 were lethal with incomplete penetrance, 47 had non-lethal phenotypes, and 8 resulted in no detectable phenotype in embryos or pups. Of the 27 DUBs that were essential for embryonic development, 21 were also essential for cancer cell viability in at least 1% of cell lines in the DepMap data. A total of 32 DUB knockouts yielded a detectable lethal or non-lethal phenotype in mice but were essential in fewer than 1% of cancer cell lines. Thus, more DUBs were essential in mice than in cell lines – as might have been expected – and the majority of DUBs are likely to have non-redundant functions in development.
 
-## Analysis of co-dependent genes to infer function
+### Analysis of co-dependent genes to infer function
 
 To investigate genetic interactions between DUBs and other genes, we performed co-dependency analysis using DepMap data. For each of the 65 DUBs that were essential in ≥3 cells lines, we selected the top seven co-dependent genes and used GO enrichment analysis to identify which protein complexes and pathways were involved (hypergeometric test, FDR-adjusted p<0.05, see Materials and methods for more detail). Similar results were obtained when the top 5, 7, or 10 co-dependent genes were analyzed by GO enrichment analysis, but setting the threshold at seven genes yielded the largest number of GO terms for well-characterized DUBs that were consistent with literature knowledge. We therefore used a threshold of seven co-dependent genes for the remainder of our analysis. For 35 of 65 DUBs examined, we could identify at least one significantly enriched GO term for co-dependent genes. To enable easy visualization of these and related data, we summarized them as a series of concentric rings (Figure 3b); the rings display the most significant GO term (ring 1), the gene names and correlation values of the top seven co-dependent genes (rings 4 and 5), as well as the fraction of cell lines that are dependent on each DUB in the DepMap (ring 3). Supplementary file 5 provides the same data in tabular form to facilitate computational analysis, and the data are also available on the DUB Portal which is automatically updated weekly to capture public database updates.
 
@@ -74,7 +171,7 @@ For the well-studied DUBs described above, co-dependency analysis returned resul
 
 Among the 69 DUBs whose knockout had little or no detectable impact on transcription in MDAMB231 cells (<20 DE genes) in our studies, 55 had little or no impact on proliferation of MDAMB231 cells in DepMap data and 7 were absent from the dataset (Figure 4—figure supplement 1). In no case did we detect significant differential gene expression in MDAMB231 cells without evidence of dependency in at least 1% of cell lines (i.e. 8 cell lines). In seven cases however, DUB knockout was associated with a high DepMap dependency score but minimal changes in transcription based on CRISPR-Cas9 screens in MDAMB231 cells. We used western blotting (3 DUBs: USP1, USP7, USP10) or mRNA profiling (1 DUB: USP36) to establish that four of seven target genes in question had actually been downregulated by guide RNA transfection. In these cases, differences in the time and format of the measurement, 4 days after guide RNA transfection for mRNA profiling and 21 days for DepMap data, may explain the difference in transcript profiling and DepMap dependency data. In three other cases (BAP1, USP5, USP37), DUB mRNA was not detectably downregulated in our MDAMB231 studies, and we assume that the knockout may have failed for technical reasons. Overall, these results suggest good agreement between mRNA profiling and DepMap data with discordance that affected ~5–10% of DUBs (depending on the criterion used) and was potentially explainable by differences in assay format and experimental error.
 
-## Protein interaction and co-expression datasets provide support for co-dependent genes
+### Protein interaction and co-expression datasets provide support for co-dependent genes
 
 To search for evidence of physical interaction between genes scored as similar in function to DUBs based on DepMap and CMap data, we mined protein interaction datasets. First, we compiled the protein-protein interactions for each DUB from four PPIDs: BioGRID, IntAct, Pathway Commons, and NURSA (Cerami et al., 2011; Hermjakob et al., 2004; Malovannaya et al., 2011; Rouillard et al., 2016). These datasets involve a range of approaches to scoring interaction including affinity capture MS, affinity capture western blotting, and assembly of reconstituted complexes from purified recombinant subunits in vitro. When we asked whether any proteins that exhibited co-dependent genes with DUBs in DepMap data also exhibit interaction with that DUB in PPID data, we found that 31 DUBs (out of 65 DUBs that were essential in ≥3 cell lines in the DepMap), had at least one co-dependent gene that was also an interactor in PPID data (Figure 3b, ring 4, interactors shown in green). A total of 55 of 65 DUBs were detectable in CCLE proteomics data (the expression levels of the others were presumably too low) and of those, 24 DUBs were significantly co-expressed with one or more co-dependent genes (FDR <0.01 and |z-score|>2). Moreover, DUBs that are well known to function in multi-protein complexes, such as the USP22 subunit of the SAGA complex, were found to interact with, be co-expressed with, and exhibit co-dependency with other members of the complex. In aggregate, 39 DUBs had at least one co-dependent gene (average 1.6 co-dependent genes per DUB) that was also found to be an interaction partner in a PPID and/or significantly co-expressed in the CCLE baseline proteomics data. Based on these two lines of evidence, we conclude that co-dependent genes for 39 DUBs are likely to interact physically and functionally. These findings are summarized in Figure 3b rings 4 and 6 and available in tabular form in Figure 3—figure supplement 4. However, some DepMap co-dependent genes were not observed to interact in PPID data, in agreement with the general expectation that proteins functioning in the same pathways might, when perturbed, have a similar effect on cell growth even in the absence of physical interaction.
 
@@ -82,19 +179,31 @@ We performed GO-enrichment analysis on DUB interactors and significantly co-expr
 
 From these data, we conclude that DepMap co-dependencies, CMap signatures, CCLE proteomic data, and PPIDs provide complementary and consistent data on the likely functions and physical interactors for the great majority of DUBs. These data are summarized in the different rings in Figure 3, provided in tabular form in Supplementary files 6 and 7 are browsable online via the DUB Portal (see methods for full URL). To further increase confidence in results obtained from data mining, we tested specific hypotheses by direct experimentation.
 
-## New insight into the functions of the proteasome-bound DUBs UCHL5 and USP14
+### New insight into the functions of the proteasome-bound DUBs UCHL5 and USP14
 
 Since most well-annotated DUBs have many reported substrates, we sought to use DepMap data to identify which function(s) of DUBs or their substrate(s) might be responsible for cell-essential phenotypes. For example, UCHL5 is known to interact with both the INO80 complex (which is involved in chromatin remodeling, DNA replication, and DNA repair) and with the proteasome (Yao et al., 2008). UCHL5 has been pursued as a cancer therapeutic target because of the latter activity (D’Arcy et al., 2011; Tian et al., 2014; Xia et al., 2018). However, co-dependent gene data from the DepMap show that the effect of UCHL5 knockout is most similar to that of knockout of INO80 subunits (e.g. NFRKB, TFPT, INO80, INO80E, INO80B, r range = 0.29–0.54) (Figure 3b). In contrast, no significant correlation was observed with knockouts of proteosome components (e.g. PSMD9, PSMD6, PSMD3, r range = 0.03–0.05). We conclude that UCHL5 is likely to play an essential and non-redundant function not in the proteasome, where it has been most widely studied, but instead in the INO80 complex (Figure 3b). This suggests that the therapeutic context for the use of UCHL5 inhibitors is likely to be different from that of proteasome inhibitors, several of which are approved drugs (e.g. bortezomib; Tan et al., 2019). More specifically, since the INO80 complex has an essential role in DNA damage repair, (Yao et al., 2008) UCHL5 inhibitors may be most useful in combination with DNA damaging agents.
 
 USP14 is another highly studied, proteasome-bound DUB considered to be a promising therapeutic target in some cancers (Tian et al., 2014) and USP14 has been reported to rescue many proteins from degradation by the proteasome (Liu et al., 2018). We found USP14 to be co-expressed with proteasome subunits in CCLE proteomics data and to interact with the same subunits in PPID data (Supplementary files 6 and 7); however, USP14 is not strongly co-dependent with subunits of the proteosome (PSMD13, PSMD7, PSMD4, r range = 0.08–0.09). Instead, a DepMap correlation was observed between USP14 and the UBC polyubiquitin gene (r = 0.25), which is one of the primary sources of ubiquitin in mammalian cells (Figure 3b). This suggests that loss of USP14 has an anti-proliferative phenotype similar to that of ubiquitin loss and that this phenotype is distinct from that of proteasome inhibition. This hypothesis is consistent with reports that USP14 is required to maintain monoubiquitin pools, and that loss of USP14 leads to an accumulation of polyubiquitin, thereby lowering the levels of free ubiquitin available for conjugation onto protein substrates by E3 ligases (Lee et al., 2018; Yao et al., 2008). Also consistent with this model are our data showing that CRISPR-Cas9 knockout of USP14 resulted in significant upregulation of the UBC gene but had little additional impact on gene expression (Figure 4a). Finally, when we compared the USP14 knockout phenotype to that elicited by exposure of MDAMB231 cells for 24 hr to the USP14 inhibitor I-335 (Supplementary file 8), we observed upregulation of UBC and only one other gene (TKT - transketolase - a thiamine-dependent enzyme involved in the pentose phosphate pathway; Figure 4a, Qin et al., 2019). From these data, we conclude that maintenance of the pool of free ubiquitin, not regulation of the proteasome, is likely to be the key, non-redundant function for USP14.
 
-## USP8 and other ESCRT members impact NF-κB signaling
+![Figure 4.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig4-v1.jpg)
+
+**Figure 4.:** (A) Changes in gene expression (log2 fold change vs. log 10 adjusted p-value, adjusted p-value <0.05 colored red) in MDAMB231 cells 96 hr following USP14 knockout by CRISPR-Cas9 (left) or 24 hr after treatment with the USP14 inhibitor I-335 at 20 µM (right). (B) Hierarchical clustering of significantly differentially expressed genes (adjusted p-value <0.05) 96 hr following knockout of USP8 or UBAP1 in MDAMB231 cells. (C) Gene sets significantly (FDR <0.05) enriched in MDAMB231 cells 96 hr after knockout of USP8 or UBAP1. The top five upregulated and top five downregulated gene sets for each condition are shown. (D) Hierarchical clustering of significantly differentially expressed genes (adjusted p-value <0.05) 96 hr after knockout of USP7 or C16orf72 in wild-type MCF7 cells or following a 24 hr treatment with 5 µM nutlin3a or 1 µM XL-177A in wildtype or p53 knockdown MCF7 cells. (E) Gene sets significantly enriched (FDR <0.05) for the conditions shown in (D). The top five up- and down-regulated gene sets for each condition are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The number of differentially expressed genes in the MDAMB231 RNAseq screen for each DUB vs the impact of each DUB knock on the proliferation of MDAMB231 cells in the DepMap (CERES dependency score). (B) The impact of DUB knock on the proliferation of MDAMB231 in the DepMap (CERES dependency score) vs the fraction of cell lines dependent on each DUB (CERES dependency score <–0.5).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Hierarchical clustering of significantly differentially expressed genes (adjusted p-value <0.05) 96 hr following knockout of USP8, UBAP1, HGS, and PTPN23 in MDAMB231 cells. (B) Gene sets significantly enriched (FDR <0.05) in MDAMB231 cells 96 hr after knockout of USP8, UBAP1, HGS, (cont.) and PTPN23. The top five upregulated and top five downregulated gene sets for each condition are shown. (C) Quantification of immunofluorescence measuring p21 levels following 24 hr treatments with XL177A or nutlin3a at the concentrations indicated in MCF7 wt and p53 knock down cells.
+
+### USP8 and other ESCRT members impact NF-κB signaling
 
 USP8 is an extensively studied DUB that has been shown to regulate endosomal sorting complexes required for transport (ESCRT). ESCRT complexes recognize ubiquitinated transmembrane receptors and facilitate their transport to lysosomes for degradation (Mamińska et al., 2016). USP8 interacts with and stabilizes both receptors and ESCRT proteins. Although USP8 has been reported to regulate the abundance of many proteins (Dufner and Knobeloch, 2019), attention has focused on its role in stabilizing EGFR (Byun et al., 2013). We found that CRISPR-Cas9 knockout of USP8 also upregulates the expression of cytokines such as IL6 (with a normalized enrichment score – NES of 1.99 and adjusted p-value of 0.005 for ‘go_cytokine_activity’) implying that USP8 may have a role in recycling cytokine receptors as well as growth factor receptors. We also observed similarity between the mRNA profiles for USP8 knockout and overexpression of NF-κB signaling proteins such as TNFRSF1A and BCL10 (CMap tau scores: 98.7 and 99.6; Figure 2e, Supplementary file 3). This is consistent with data showing that knockdown of other members of the ESCRT machinery perturbs cytokine receptor trafficking and results in constitutive NF-κB signaling via TNFRSF1A (the primary TNF receptor; Mamińska et al., 2016). We hypothesized that USP8 may impact NF-κB signaling via its role in ESCRT complexes.
 
 To test this hypothesis, we used CRISPR-Cas9 to knock out three ESCRT proteins (UBAP1, HGS, PTPN23) co-dependent with USP8 in DepMap data (Figure 3b, Figure 4—figure supplement 2a). We found that the transcriptional signature of UBAP1 knockout was strongly correlated with that of USP8 knockout and that both knockouts resulted in upregulation of multiple cytokines (e.g. IL6; Figure 4b and c). We also found that, in DepMap data, USP8 knockout exhibited a higher codependency score (i.e., correlated more strongly) with knockout of ESCRT machinery proteins than with individual growth factor or cytokine receptors, independent of cancer lineage, suggesting that the essential function of USP8 in cancer cells is not mediated by one specific receptor alone – e.g. EGFR – but rather by multiple growth factor and cytokine receptors that undergo similar ESCRT-dependent endosomal sorting.
 
-## USP7 function dependent and independent of functional TP53
+### USP7 function dependent and independent of functional TP53
 
 USP7 has been the focus of many small molecule inhibitor campaigns (Kategaya et al., 2017; Lamberto et al., 2017; Schauer et al., 2020) and several pharmaceutical companies are developing USP7-based therapeutics, although none have, as yet, advanced to clinical trials. USP7 is reported to regulate chromatin remodeling factors such as polycomb complexes and MDM2, the E3 ligase for the TP53 tumor suppressor protein (Kim and Sixma, 2017). We found that MDM2 and other proteins in the TP53 signaling pathway, such as the PPM1D phosphatase, were the strongest co-dependent genes for USP7 (Figure 3b). This is consistent with recent work showing that the impact of USP7 on proliferation is strongest in TP53 wild type cell lines (Schauer et al., 2020). C16orf72, a protein of unknown function, was another top co-dependent gene for USP7 (DepMap correlation = 0.35; Figure 3b). We hypothesized that C16orf72 might be regulated by USP7 and also play a role in the TP53 pathway.
 
@@ -102,11 +211,11 @@ To investigate this hypothesis, we knocked out USP7 and C16orf72 in MCF7 cells u
 
 To test directly how much of the USP7 phenotype is dependent on the presence of TP53, we applied 1 µM XL177A (for 24 hr) to isogenic MCF7 cell lines that were WT for TP53 or that had TP53 stably knocked down using shRNA (Schauer et al., 2020); we then performed 3’DGE-seq. The MDM2 inhibitor nutlin3a was used as a positive control for TP53 stabilization and activation. MDM2 inhibition with nutlin3a elicited a strong TP53 activation phenotype in parental MCF7 cells (1084 DE genes) but little phenotype in MCF7 TP53 KD cells (only 2 DE genes; Figure 4d). Exposure of parental MCF7 cells to XL177A resulted in 737 DE genes, which strongly correlated with DE genes elicited by MDM2 inhibition with nutlin3a as well as knockout of USP7 in parental MCF7 cells (Figure 4d). In contrast, exposure of TP53-null cells to XL177A resulted in only 77 DE genes (FDR >0.05) (Figure 4d, Figure 4—figure supplement 2b). These findings are consistent with the hypothesis that TP53 is a primary target of USP7. The presence of 77 DE genes in XL177A-treated MCF7 TP53 KD cells suggests that USP7 may also have a function independent of TP53 or that XL177A has one or more targets other than USP7 (see below). Overall, these studies nominate a new candidate substrate for USP7 (C16orf72), suggest that C16orf72 plays a role in TP53 signaling, and uncover a possible activity of XL177A that is independent of TP53.
 
-## Additional DUB regulators of TP53
+### Additional DUB regulators of TP53
 
 When we looked for evidence that less well-studied DUBs affect TP53 in a manner similar to USP7, we found that VCPIP1, UCHL3, USP38 and USP42 all negatively correlate with TP53 in the DepMap while ATXN3 and USP28 positively correlated with TP53 (Figure 3b). The existence of negative correlation in DepMap data is evidence that two genes act in opposing directions on the same pathway. The strongest positive correlation in the DepMap for VCPIP1 was the E3 ligase HUWE1 (correlation = 0.43), suggesting that VCPIP1 might stabilize HUWE1. HUWE1 targets TP53 for degradation via ubiquitination followed by proteolysis by the proteasome, which may explain the negative correlation of VCPIP1 and TP53 in DepMap data (Figure 3b). ATXN3 and USP28 have been shown to activate TP53 signaling (Liu et al., 2016; Wang et al., 2018b), and knockouts of both of these genes positively correlated with TP53 knockout in DepMap data, supporting the hypothesis that these DUBs are positive regulators of TP53. CCLE co-expression and PPID protein-protein interaction analyses also support these findings: VCPIP1 and USP42 are both co-dependent and co-expressed with a negative regulator of TP53 (HUWE1 and PPMID respectively). Additionally, USP38 and USP28 both interact with DNA damage response proteins (GO response to ionizing radiation, FDR =7.0 × 10–3 and 3.0 × 10–3 for USP38 and USP28 respectively), supporting the hypothesis that these DUBs are involved in DNA repair (Figure 3b). Overall, these data nominate four DUBs – UCHL3, USP38, VCPIP1, and USP42 – as potential negative regulators of TP53 signaling in addition to the well-established regulator USP7; they also confirm ATXN3 and USP28 as positive regulators.
 
-## New insights into the function of understudied DUBs USPL1 and USP32
+### New insights into the function of understudied DUBs USPL1 and USP32
 
 Copy number loss of USPL1 is frequent in cancer cell lines and predictive of increased sensitivity to CRISPR-Cas9-mediated knockout of USPL1 in the DepMap (Figure 3—figure supplements 2 and 3). In our hands, knockout of USPL1 gave the second strongest phenotype in terms of the number of DE genes (Figure 2c) and clustered most closely with knockouts of the spliceosome subunit PRPF8 and the 73 amino acid ubiquitin-like protein UBL5, which also plays a role in splicing (Oka et al., 2014, Figure 2d). Additionally, knockout of USPL1 in MDAMB231 cells resulted in an mRNA expression signature similar to that of knock down of splicing factors such as SNRPD1 in CMap data (Supplementary file 3); genes upregulated by USPL1 knockout were enriched in mRNA processing (e.g. GO: u2 type spliceosomal complex, FDR P-value = 0.03) (Figure 2e). The strongest DepMap co-dependent genes for USPL1 across tumor types were members of the Little Elongation Complex (LEC), which is involved in transcription of spliceosomal machinery (Hutten et al., 2014) suggestive of an association between USPL1 and the LEC (Figure 3b).
 
@@ -118,17 +227,23 @@ To investigate these inferred connections, we used CRISPR-Cas9 to knock out memb
 
 USP32 has recently been reported to be important for endosomal sorting to the Golgi apparatus via regulation of the small GTPase, RAB7 (Sapmaz et al., 2019). When we ran enrichment analysis on the top USP32 DepMap co-dependent genes, the most significant GO term was Retrograde Transport Endosome to Golgi. The co-dependent genes for USP32 include VPS52, VPS54, and RAB6A, which are known to be involved in endosomal sorting to the Golgi apparatus. RAB7 was not a codependent gene, however (correlation = 0.06; Liewen et al., 2005). This suggests that the role of USP32 in endosomal transport may be via regulation of the small GTPase RAB6A rather than RAB7 (Figure 3b). RAB6 functions in Golgi trafficking, while RAB7 acts more broadly, by associating with late endosomes and lysosomes and regulating diverse trafficking events, including directing late endosomes to the Golgi (Guerra and Bucci, 2016; White et al., 1999). USP32 is co-expressed with genes involved in retrograde endosome transport to Golgi and the vesicle tethering complex (GO: Retrograde Endosome Transport to Golgi and GO: Tethering Complex, FDR adjusted enrichment p-values 6.86 × 10–6 and 1.72 × 10–12 respectively; Figure 3b), providing additional evidence that USP32 is involved in endosomal sorting to the Golgi apparatus.
 
-## Association of DUBs with E3 ligases
+### Association of DUBs with E3 ligases
 
 When we combined the top seven co-dependent genes for DUBs that impact viability in ≥3 cancer cell lines and ran GO enrichment analysis, we identified strong enrichment for gene sets that included ubiquitin ligases (E3 ligases) and ubiquitin conjugating enzymes (E2 enzymes) (GO: ubiquitin-like transferase activity, FDR adjusted p-value =4.9 x 10–3) (Figure 7—figure supplement 1). DUBs are expected to antagonize E3 ligase activity by deubiquitinating E3 ligase substrates, making negative correlations the expected outcome. However, it has also been suggested that DUBs might associate directly with E3 ligases and inhibit their auto-ubiquitination activity, thus preventing proteasomal degradation of the E3 ligase (Wilkinson, 2009). In this case, positive correlations in the DepMap between E3 ligases and DUBs are expected. We found that multiple DUBs exhibited strong positive rather than negative correlations with one or more E3 ligases in the DepMap data. We therefore constructed a network of all proteins having ubiquitin transferase activity (including E3 ligases and E2 ubiquitinating proteins) for top co-dependent genes for each DUB (Figure 6). This network was found to include many known interactions such as USP7 regulation of the MDM2 E3 and CYLD regulation of the TRAF2 E3. The strongest DUB-ligase correlation in the DepMap was OTUD5 with the UBR5 E3 (r = 0.776) which is consistent with previous data that shows that OTUD5 regulates UBR5 (de Vivo et al., 2019). Many previously undescribed interactions were also observed, a subset of which are also supported by PPID or co-expression data, including VCPIP1 with HUWE1 and ZRANB1 with HECTD1 (Figure 6, circled with dashed lines). These findings suggest roles for 23 DUBs in stabilizing 33 ubiquitin ligases, and provide new insight into which ligases are regulated by which DUBs (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig6-v1.jpg)
 
-**Figure 6.:** : Ubiquitin or ubiquitin-like transferases whose co-dependency relationships correlated with DUBs in the DepMap. DUBs are colored blue and ubiquitin transferases are colored grey. Red lines represent correlations in the top seven co-dependent genes. Green lines represent similarity by CMap (tau similarity score >90). Yellow lines represent co-expression in proteomics (FDR <0.01 and |z-score|>2). Blue lines represent interaction in protein-protein interaction databases.
+**Figure 6.:** Ubiquitin or ubiquitin-like transferases whose co-dependency relationships correlated with DUBs in the DepMap. DUBs are colored blue and ubiquitin transferases are colored grey. Red lines represent correlations in the top seven co-dependent genes. Green lines represent similarity by CMap (tau similarity score >90). Yellow lines represent co-expression in proteomics (FDR <0.01 and |z-score|>2). Blue lines represent interaction in protein-protein interaction databases.
 
-## Comparison of transcriptional impact of small molecule DUB inhibition and DUB knockout
+### Comparison of transcriptional impact of small molecule DUB inhibition and DUB knockout
 
 There is growing interest in developing small molecule DUB inhibitors for use as human therapeutics (Davis and Simeonov, 2015; Harrigan et al., 2018) but the field is still relatively new. We compiled a set of seven recently developed DUB inhibitors that have been described by their developers as being selective for one of six DUBs (COPS5, OTUD7B, USP7, USP14, USP19, and USP30); early generation DUB inhibitors were not included since many of these have been shown to have substantial polypharmacology (Altmann et al., 2017; Kluge et al., 2018; Schauer et al., 2020; Schlierf et al., 2016). USP7 inhibitors were studied in the MCF7 breast cancer cell line, which is wild type for TP53 and all other drugs were tested in MDAMB231 cells (which are TP53 mutant). Cells were plated for 24 hr, exposed to a small molecule for 24 hr at one dose per compound in technical triplicate (Figure 7a, Supplementary file 8) and mRNA profiling was performed by 3’DGE-seq. We identified significantly perturbed genes (FDR p-value <0.05) for each condition and compared the signatures to those associated with CRISPR-Cas9 knockout of the putative target DUB. We found that treatment of cells with small molecule DUB inhibitors resulted in a median of 10-fold more DE genes than CRISPR-Cas9 knockout of their proposed targets (median DE genes following KO =11, and following inhibitor treatments = 316 Figure 7a and b). We then clustered the small molecule 3’DGE-seq signatures with those from our CRISPR-Cas9 DUB knockouts and also used the small molecule signatures to query CMap to identify potential off targets.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig7-v1.jpg)
+
+**Figure 7.:** (A) The number of significantly differentially expressed genes (adjusted p-value <0.05) as a result of small molecule DUB inhibition (24 hr treatment) and knockout of the putative target (96 hours after transfection with guide). (B) Hierarchical clustering of log2FC values for significantly differentially expressed genes (adjusted p-value <0.05) for small molecule inhibitors of DUBs, the knockout of the putative DUB targets of the small molecules, and the DUB knockout hits that resulted in more than 20 differentially expressed genes. inhibition with XL177A, the DUB inhibitor and knockout were strongly correlated, but the inhibitor resulted in substantially more DE genes, and (iii) in five cases (inhibition of COPS5 with Compound 6 or CSN5i-3, inhibition of OTUD7B with I-145, inhibition of USP19 with I-124, and inhibition of USP30 with MF-094) the inhibitor and knockout had dissimilar signatures (a and b). CRISPR-Cas9 mediated knockout or small molecule inhibition of USP14 with I-335 resulted in only two DE genes, and the most strongly perturbed DE gene was the same in both instances: UBC. From these data, we conclude that I-335 is a potent and selective inhibitor of USP14.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/72879/elife-72879-fig7-figsupp1-v1.jpg)
 
 Our findings were consistent with three scenarios: (i) in the case of USP14 inhibition by I-335, the mRNA signature was very similar to that of target knockout, (ii) in the case of USP7.
 
@@ -140,49 +255,150 @@ Exposure of cells to the OTUD7B inhibitor I-145, the USP30 inhibitor MF-094, USP
 
 Rapid growth in publicly available and ‘functional genomic’ datasets affords an opportunity for extensive analysis of large gene families such as human DUBs. A total of nine different public resources measuring transcript signatures following gene perturbation (CMap), gene essentiality (DepMap, IMPC, ad MGI), protein co-expression (CCLE proteomics), and protein-protein interaction (BioGRID, IntAct, Pathway Commons PPID, and NURSA PPID) were mined for data, in most cases starting with a CRISPR-Cas9 knockout or small molecule signature we collected in our laboratories. Comparison of enriched gene sets or GO terms made it possible to bridge different types of data. We observed substantial and encouraging consistency among datasets. For example, genes identified as co-dependent with DUBs in DepMap data frequently exhibited similar transcript signatures, were co-expressed across cell lines, and were physically associated. Overall, our analysis yielded three types of information: (i) potentially new or more precisely specified functions for several well-characterized DUBs, including a UCHL5, USP7, USP8, and USP14 (ii) potential pathways or functional roles for understudied DUBs, including a role for USPL1 in the Little Elongation Complex and UCHL3, USP38, VCPIP1, and USP42 in the regulation of TP53 signaling; (iii) insight into the DUB family as a whole, including evidence that 23 DUBs play a role in stabilizing 33 E3 ubiquitin ligases, most likely by antagonizing their auto-ubiquitination activities. 52 DUBs were found to be essential for proliferation in at least five cancer cell lines, and 34 of these DUBs affected the proliferation of cell lines from one tumor type more than cell lines from all other tumor types, potentially providing insight into disease context. These data are summarized in a simple graphical form in Figure 3, as a series of tables suitable for computational analysis in supplementary materials, and in an automatically updating set of tables at the DUB Portal.
 
-## Discriminating among essential and non-essential DUB functions
+### Discriminating among essential and non-essential DUB functions
 
 In several cases, our studies yielded unexpected hypotheses about the functions of DUBs that have already been well studied. For example, USP14 is a component of the proteasome and considered to be a promising therapeutic target in cancer due to the clinical success of other proteasome inhibitors (Tan et al., 2019). However, we found that USP14 was strongly co-dependent in DepMap data not with subunits of the proteasome but instead with the UBC polyubiquitin gene, a primary source of ubiquitin in mammalian cells. Knockout of USP14 by CRISPR-Cas9, or exposure of cells to the USP14 inhibitor I-335 resulted in highly selective upregulation of the UBC gene. We therefore propose that maintenance of the pool of free ubiquitin, not regulation of the proteasome, is likely to be the key, non-redundant function for USP14. A similar story emerged for UCHL5, which is a component of both the INO80 complex and the proteasome. The effect of UCHL5 knockout is most similar to that of knockout of other INO80 subunits and no significant correlation was observed in DepMap data with knockout of proteosome subunits. In this case, we hypothesize that UCHL5 plays an essential and non-redundant function in the INO80 complex rather than the proteasome. These data strongly suggest that the therapeutic context for use of USP14 and UCHL5 inhibitors currently in pre-clinical development is likely to be different from that of proteasome inhibitors. More generally, the data show how DepMap data can distinguish among multiple activities for a protein and identify those activities most important for cell survival.
 
 One of the most promising potential uses of DUB inhibitors is to indirectly regulate the levels of disease-associated genes that are not conventionally considered to be druggable such as transcription factors and scaffolding proteins. This strategy has been most actively pursued for USP7, which is a regulator of MDM2, the E3 ligase for the TP53 tumor suppressor protein: inhibition of USP7 increases the levels of ubiquitinated MDM2, promoting its degradation and thereby increasing TP53 levels. Our data on USP7 are consistent with this hypothesis: we find that the top DepMap co-dependent gene for USP7 is MDM2, and knockdown of TP53 largely rescues the transcriptional phenotype observed for USP7 inhibition in TP53 wildtype cells. We find that USP7 has at least one additional substrate, C16orf72, that may also be a TP53 regulator. Moreover, the USP7 inhibitor XL177A has a phenotype that is independent of TP53 and involves upregulation of histone genes and genes involved in the G2M cell cycle checkpoint. We speculate that this may reflect the reported involvement of USP7 in the regulation of polycomb complexes (de Bie et al., 2010), although we cannot rule out an off-target activity for XL177A. Regardless, we conclude that the primary role of USP7 in cancer cells involves regulation of the MDM2-TP53 axis (Schauer et al., 2020). A number of other DUBs also appear to be TP53 regulators including UCHL3, USP38, VCPIP1, and USP42. Targeting these DUBs in addition to USP7 may be useful as a means to modulate TP53 levels for therapeutic benefit. This could potentially be achieved by developing a small molecule inhibitor active against multiple TP53-regulating DUBs or by using a combination of selective compounds.
 
-## DUBs as E3 regulators
+### DUBs as E3 regulators
 
 The relationship between USP7 and MDM2 does not appear to be the only instance of a DUB regulating an E3 ligase. DepMap co-dependent genes for DUBs were strongly enriched and positively correlated with E3 ligases and other ubiquitin or ubiquitin-like transferases; in many cases, DepMap data were supported by PPID or co-expression data (e.g. the VCPIP1 DUB and HUWE1 E3 ligase). Overall, we identified 23 DUBs with at least one co-dependent E3 ligase, and eight of these DUBs had a co-dependent E3 ligase also supported by PPID or co-expression data. Selected DUBs have previously been reported to stabilize E3 ligases; for example, USP7 stabilizes MDM2, CYLD stabilizes TRAF2, and OTUD5 stabilizes UBR5 (de Vivo et al., 2019; Lork et al., 2017). However, our data suggest that this may be a general feature of the DUB family, with many E3 ligases interacting with DUBs that antagonize E3 auto-ubiquitination and increase protein stability (Wilkinson, 2009). Multiple E3 ligases act as oncogenes and promoting their degradation via DUB inhibition may be a broadly useful therapeutic strategy.
 
-## Comparing DUB inhibitors and DUB knockouts
+### Comparing DUB inhibitors and DUB knockouts
 
 Using transcript profiling we compared seven small molecules reported by their developers to be highly selective inhibitors of specific DUBs to CRISPR-Cas9-mediated knockout of their targets. DUB inhibitor signatures were significantly similar to knockout signatures in only two cases: USP14 inhibition with I-335 and USP7 inhibition with XL177A. We conclude that these compounds are selective, although the signature of USP7 inhibition was substantially stronger than that of USP7 knockout. This was true in general, with exposure of cells to DUB inhibitors resulting, in all cases, in significantly more DE genes than knockouts. In the case of XL177A, our studies cannot determine whether this difference reflects the time at which the measurements were made, the degree of USP7 inhibition by drug or mRNA depletion by CRSPR-Cas9, or the existence of off-target effects. In the cases of the COPS5, OTUD7B, USP19, and USP30 inhibitors, the lack of a significant correlation between weak knockout phenotypes and the strong drug-induced phenotypes suggest substantial off-target activity. Small molecules targeting multi-protein families via competitive inhibition at the active site commonly exhibit some degree of polypharmacology (that is, they exert their biological effects by binding to multiple targets; Giri et al., 2019). It appears that, except in the case of USP7 and USP14, additional medicinal chemistry will be required to manage polypharmacology.
 
 It has been suggested that redundancy among DUBs (Vlasschaert et al., 2017) might limit the effectiveness of selective DUB inhibitors as therapeutic agents, (Davis and Simeonov, 2015). However, we find that single gene knockouts of 43 DUBs impact proliferation in at least 8 DepMap cancer cell lines, and 21 DUBs are embryonic lethal with complete or partial penetrance in mice; deletion of an additional 26 DUBs has a scorable murine phenotype. Thus, many DUBs appear to have non-redundant functions. Moreover, since many targets for successful anticancer drugs are embryonic lethal, (Yu and Xu, 2020) our data support further development of DUBs as cancer therapeutics.
 
-## Limitations of this study
+### Limitations of this study
 
 The goal of this work was to study the DUB gene family as broadly as possible with limited follow-up on a subset of inferred functions. As a result, deep analysis of individual genes was not possible, and many interferences made from public data are necessarily indirect. We also generate many more hypotheses than we are able to test. The high degree of concordance observed among datasets suggests that pursuing many of these hypotheses will be worth the effort. One nominal ‘disagreement’ among datasets is essentiality as scored by DepMap data and transcriptional responses as measured by CMap (and our own mRNA profiling studies). For example, seven DUB knockouts impact MDAMB231 viability in the DepMap but do not elicit a strong transcriptional phenotype following CRISPR-Cas9 knockout. We speculate that these discrepancies are due to differences in time point (4 days in the transcriptomics and three weeks in the DepMap screen) or incomplete knockout (although we could confirm successful depletion of four of seven DUBs in question). More study is required to understand the origins and significance of discrepancies between DepMap and CMap. We also found that many physically-interacting and co-expressed genes are not co-dependent in DepMap. Such differences are not unexpected from a biological perspective, given the many different ways in which genes can interact, but further work focused on distinguishing technical errors from functional differences will be important.
 
 Because we analyzed whole gene knockouts rather than point mutations or protein deletions, the results in this paper do not distinguish among catalytic and structural functions for DUBs. This will be an important next step, particularly for clarifying the therapeutic utility of competitive small molecule inhibitors. For example, copy number loss was predictive of increased sensitivity to USPL1 deletion, so we hypothesize that a USPL1 inhibitor may be useful in this context; however, one study suggests that USPL1 is important for Cajal body architecture independent of its catalytic activity (Schulz et al., 2012).
 
-## Conclusion
+### Conclusion
 
 Our studies provide a diverse set of data on the DUB family as a whole, as well as new insight into many individual DUBs, including several that have been studied intensively. One theme that emerges is that for genes with multiple proposed functions (USP7 and UCHL5 for example), a combination of profiling CRISPR-Cas9 knockouts or drug-induced perturbations with systematic mining of functional genomic databases makes it possible to distinguish among essential and non-essential phenotypes. A second is that more DUBs than anticipated have non-redundant roles in the tumor suppressor and oncogenic pathways, most notably TP53 regulation, suggesting new approaches to undruggable targets. The approaches described in this work are also directly applicable to other gene families and therapeutic targets.
 
 ## Materials and methods
 
-## Antibodies, cell lines, and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (human)</td>
+      <td>DUB CRISPR-Cas9 screening library: Dharmacon EDIT-R crRNA Library - Human Deubiquitinating Enzymes</td>
+      <td>Dharmacon (Horizon Discovery)</td>
+      <td>GC-004700 Lot 17,107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (human)</td>
+      <td>Dharmacon Edit-R tracrRNA</td>
+      <td>Dharmacon (Horizon Discovery)</td>
+      <td>U-002005–05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Dharmafect 4</td>
+      <td>Dharmacon (Horizon Discovery)</td>
+      <td>T-2004–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>MDAMB231</td>
+      <td>ATCC</td>
+      <td>CRM-HTB-26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>MCF7</td>
+      <td>ATCC</td>
+      <td>HTB-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag-tag (L5) antibody (rat monoclonal)</td>
+      <td>Thermo Fischer</td>
+      <td>MA1-142</td>
+      <td>1:1,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>USP7 antibody (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>4,833</td>
+      <td>1:1,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>USP8 antibody (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-376130</td>
+      <td>1:1,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>USP10 antibody (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>8,501</td>
+      <td>1:1,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>USP1 antibody (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>D37B4</td>
+      <td>1:1,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>USP11 antibody (rabbit monoclonal)</td>
+      <td>abcam</td>
+      <td>ab109232</td>
+      <td>1:1,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>UCHL5 antibody (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-271002</td>
+      <td>1:1,000 dilution</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies, cell lines, and reagents
 
 The Cas9-Flag was a generous gift from Andrew Lane at the Dana Farber Cancer Institute.
 
-## Compounds
+### Compounds
 
 All compounds were quality control checked using LCMS and NMR. CSN5i-3 was purchased from MedChemExpress. XL177A, I-335, Compound 6, I-145, I-124, and MF-094 were synthesized according to published methods and compound characterization data matched published data (patents WO2015073528A1, WO2017149313A1, WO2018020242A1) (Altmann et al., 2017; Kluge et al., 2018; Schauer et al., 2020).
 
-## Cell culture
+### Cell culture
 
 MDAMB231 (ATCC cat no. CRM-HTB-26) was maintained in DMEM media (Corning 10–017-CV) with 10% FBS (Life Technologies 26140–079) and 1% penicillin/streptomycin (Corning 30–002 Cl). MCF7 (ATCC cat no. HTB-22) was maintained in EMEM media with 10% FBS and 1% penicillin/streptomycin. Isogenic MCF7 and MCF7 stable shRNA p53 were a generous gift from the Galit Lahav lab. Cell lines were maintained in a 5% CO2 incubator at 37 °C, they were identity-validated by STR profiling (Masters et al., 2001) and verified to be Mycoplasma-free by the Lonza MycoAlert Kit (Cat. # LT07-318).
 
 Cell lines stably expressing Cas9 were generated by lentiviral infection with pCRISPRV2- FLAG-CAS9 (Addgene #52961) followed by puromycin selection and monoclonal population generation by limiting dilution in 96 well plates. Monoclonal populations with the highest observed knockout efficiency of individual DUBs (USP10 and USP7) were selected.
 
-## CRISPR-Cas9 knockouts and inhibitor treatments for transcriptomic profiling
+### CRISPR-Cas9 knockouts and inhibitor treatments for transcriptomic profiling
 
 MDAMB231 Cas9-Flag and MCF7 Cas9-Flag expressing cells were seeded in 96 well plates (4000 cells/well) and allowed to adhere for 24 hr. crRNAs were resuspended in 10 mM Tris-HCl Buffer pH 7.4 (Dharmacon (Horizon Discovery) B-006000–100) and four crRNA guides per DUB were pooled to increase knockout efficiency. Guide transfection was performed according to the recommended manufacturer protocol with optimized conditions as follows. Cells were transfected with 25 nM crRNA and 25 nM tracr RNA using 0.2 µL/well Dharmafect 4, triplicate transfections were performed per condition. The media was replaced 16–18 hr post transfection.
 
@@ -190,7 +406,7 @@ In parallel, MDAMB231 (12,000 cells/well), MCF7 parental (10,000 cells/well), an
 
 Cells were lysed 96 hr post crRNA transfection or 24 hr post inhibitor treatment; the plates were washed one time with PBS on a plate washer (BioTek). The PBS was removed (leaving ~15 µL/well residual volume), and 30 µL/well 1 X lysis buffer (1 x Qiagen TCL, 1% beta-mercaptoethanol) was added. The plates were incubated for 5 min at room temperature to aid cell lysis, and then frozen at –80 °C until RNA extraction.
 
-## 3’DGE-seq transcript profiling
+### 3’DGE-seq transcript profiling
 
 The DGE RNA-seq was performed as previously published (Semrau et al., 2017; Soumillon et al., 2014) with modifications described previously (Schauer et al., 2020) (full protocol at https://www.protocols.io/view/3-39-dge-high-throughput-rna-library-preparation-bumynu7w). All automated liquid handling steps described below were performed at the ICCB-Longwood Screening Facility. The cell lysates were mixed and 10 µl was transferred from each well of the 96 well screening plates to a well in a clean 384-well PCR plate, consolidating samples from up to four 96 well plates into a single 384-well plate for RNA extraction. SPRI (solid-phase reversible immobilization) beads, prepared as described previously (Rohland and Reich, 2012), were added to the lysate (28 µL/well), mixed, and incubated for 5 min. The beads were then pulled down magnetically, washed with 80% ethanol two times, air dried for one minute, and rehydrated with nuclease free water (20 μL/well). The plate was removed from the magnet, and the beads were resuspended by mixing. After a 5-min incubation, the beads were pulled down again by placing the plate back on the magnet, and the supernatant was transferred to a new 384-well plate. The Qubit Fluorometer and the Agilent BioAnalyzer RNA 6000 Pico Kit were used to verify RNA quantity and quality respectively. RT master mix, 1 µL of barcoded E3V6NEXT adapters, and 5 μl of the total RNA supernatant was transferred to a new 384-well plate for reverse transcription and template switching. All RNA extraction steps were performed with a BRAVO Automated Liquid Handling Platform (Agilent). Following a 90-min incubation at 42 °C, the cDNA was pooled, and the QIAquick PCR purification kit was used for purification. In order to remove excess primers, the cDNA was treated with Exonuclease I for 30 min at 37 °C. The Advantage 2 PCR Enzyme System and the SINGV6 primer were used to amplify the cDNA (5 cycles). Following amplification, Agencourt AMPure XP magnetic beads were used to purify the cDNA and the Qubit Fluorometer was used for quantification. The Nextera DNA kit was used to prepare the sequencing library following the manufacturer’s instructions. 55 ng of cDNA was tagmented for 5 min at 55 °C and purified using a Zymo DNA Clean & Concetrator-5 column. The cDNA was amplified (7 cycles) then purified using a 0.9 x ratio of AMPure XP magnetic beads. The Agilent BioAnalyzer HS DNA Kit was used to assess the library size distribution before qPCR quantification and sequencing at the Harvard Medical School Biopolymers Facility (paired end sequencing was performed on an Illumina NextSeq).
 
@@ -198,7 +414,7 @@ The data was separated by well barcode and the reads were converted to counts us
 
 To compare the small molecules and CRISPR-Cas9 knockouts, we performed hierarchical clustering of the DE genes of the small molecule treatments, the DE genes of the CRISPR-Cas9 knock outs of each putative target of the small molecules, as well as the DE genes of the DUB CRISPR-Cas9 knock outs that induced the strongest transcriptomic responses in our CRISPR-Cas9 screen (more than 20 DE geness).
 
-## Dependency map analysis
+### Dependency map analysis
 
 The Broad Institute Dependency Map dataset (CRISPR AVANA dataset 2020 Q3) was analyzed to determine the impact of DUB knockouts on cancer cell lines (Meyers et al., 2017; Tsherniak et al., 2017). The recommended dependency score threshold of –0.5 was used to score dependent cell lines. The number of cell lines with scores below –0.5 divided by the total number of cell lines tested for a particular DUB was used to determine the fraction of cell lines dependent on a particular DUB. To determine differential response by cancer type, t-tests were conducted to compare the dependency scores for a particular tumor type for a given DUB to the scores of all other cell lines. This was repeated for each tumor type for each DUB, and the p-values were FDR corrected.
 
@@ -206,19 +422,19 @@ To determine co-dependent genes for each DUB, the CRISPR AVANA dataset was used 
 
 In order to extract the associations between DUBs and ubiquitin transferase enzymes, the GO gene set GO Ubiquitin Like Protein Transferase Activity was used to subset DUB co-dependent genes that are ubiquitin or ubiquitin-like transferases.
 
-## Protein-protein interaction database analysis
+### Protein-protein interaction database analysis
 
 To compile rich protein-protein interaction data for each DUB, interactions from multiple sources were compiled: IntAct, BioGRID, PathwayCommons, and NURSA.(Cerami et al., 2011; Hermjakob et al., 2004; Malovannaya et al., 2011; Rouillard et al., 2016) The R package ClusterProfiler was used for gene set overrepresentation analysis of the interacting proteins for each DUB using MSigDB GO gene sets.
 
-## CCLE proteomics co-expression analysis
+### CCLE proteomics co-expression analysis
 
 The normalized protein abundance data for CCLE cell lines was analyzed to determine genes co-regulated with each DUB(Nusinow et al., 2020). Pearson correlations in protein abundance were calculated between each protein in the dataset and each DUB. Only correlations where both proteins were detected in at least 100 cell lines were considered. Significant correlations were selected by thresholding Benjamini-Hochberg adjusted p-values <0.01 (the same significance threshold described in the dataset publication) as well as |z-score|>2. The R package ClusterProfiler was used for gene set overrepresentation analysis of the significant co-expressed genes using MSigDB GO gene sets.
 
-## Overlapping DUB-gene association analysis
+### Overlapping DUB-gene association analysis
 
 To determine which associations between DUBs and genes have support across multiple analyses, the DUB-gene pairs were integrated across the four analyses: top seven DepMap co-dependent genes, CMap (Broad recommended threshold of Score >90), CCLE proteomics coexpression (Benjamini-Hochberg adjusted p-values <0.01 (the same significance threshold described in the dataset publication) and |z-score|>2), and PPIDs (DUB and gene interact in any of four databases compiled: BioGRID, IntAct, PathwayCommons, or NURSA). Each DUB-gene association was given an evidence count score computed as the sum of the number of analyses that interaction was significant in. Thus, evidence scores range from 0 (DUB gene pair not significant in any of the analyses) to 4 (DUB gene association in all four analyses). The complete table integrating all of these datasets is provided so individual DUBs can be explored (Supplementary file 6).
 
-## The DUB portal
+### The DUB portal
 
 To make the data and results presented in this paper available in a reusable form, we also generated online data resources.
 

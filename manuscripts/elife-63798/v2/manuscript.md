@@ -34,27 +34,85 @@ In this study, we aimed to confirm the presence of functional domains in V4 enco
 
 We injected AAV1-hSyn-GCaMP into dorsal V4 (V4d) of two rhesus macaques — GCaMP6f for monkey A and GCaMP5G for monkey B. An imaging window and head posts were implanted 1–2 months after viral injection (see Materials and methods). Subjects were trained to initiate and maintain fixation within a 1° circular window for 2 s: the first second contained the fixation spot alone, and then stimuli appeared for 1 s on a LCD monitor positioned 45 cm away (17 inch, 1280 × 960 pixel, 30 pixel/°). Neuronal responses were recorded using 2P calcium imaging, with differential images generated using ΔF = F – F0, where F0 is the average fluorescence 0.5–0 s before stimulus onset, and F is the average response 0.5–1.25 s after stimulus onset.
 
-## Cortical mapping of curve-biased and corner-biased patches in V4
+### Cortical mapping of curve-biased and corner-biased patches in V4
 
 We first identified the retinal eccentricity using drifting gratings for our sites and found they were positioned with an eccentricity of ~0.7° from the fovea in monkey A and ~0.9° in monkey B. We next used a low-power (4×) objective lens to identify and localize any cortical subregions selectively activated by curves or corners. Using a large range of contour feature stimuli including bars, curves, and corners (Figure 1A), we scanned a large area (3.4 × 3.4 mm) in V4d (Figure 1B, C, Figure 1—figure supplement 1) between the lunate sulcus (LS) and the terminal portion of the inferior occipital sulcus (IOS). We obtained global activation maps by Gaussian smoothing (standard deviation σ = 10 pixels, 67 μm) the ΔF/F0 maps. We observed that orientation is organized in linear iso-orientation domains or pinwheel-like patterns, as previously reported (Roe et al., 2012), using ISOI in V4 (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig1-v2.jpg)
+
+**Figure 1.:** (A) The stimulus set used for initial cortical mapping consisting of bars, corners, and smooth curves. (B) Vascular map. LS: lunate sulcus; IOS: inferior occipital sulcus. The black box indicates the imaging site in each subject. (C) Two-photon fluorescence images of the two monkeys. Scale bar = 400 μm. (D) Left: subtraction map showing curve-selective activation in monkey A, derived by the average response (ΔF/F0) to all curves minus the average response to all other stimuli (corners and bars). Right: subtraction map showing corner-selective activation in monkey A. (E) The equivalent of (D) for monkey B. (F) Left: significant curve patches in monkey A. For each pixel, independent t-tests were performed to compare the responses to all curves against all corners and against all bars. Benjamini-Hochberg procedure was used to compute the pixel FDR (false discovery rate, see Materials and methods). Threshold q = 0.01. The white box indicates the imaging site selected for 16× objective single-cell mapping. Right: significant corner patches in monkey A. (G) The equivalent of (F) for monkey B.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The numbers indicate the average fluorescence of the areas marked by the red boxes (normalized).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Scale bar = 400 μm. For each pixel, the preferred orientation was derived by the vector summation of its responses (Gaussian smoothed ΔF/F0) to eight orientations. Hues in the map indicate the orientations of the sum vectors (preferred orientation), and lightness indicates the length (orientation selectivity). Orientation is organized in linear bands and pinwheels in V4.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig1-figsupp3-v2.jpg)
+
 We then examined the response to curve and corner stimuli. Using map subtraction, we computed the curve-selective activation as the average response (ΔF/F0) to all curves minus all corners and bars, and corner-selective activation as the average response to all corners minus all curves and bars (Figure 1D, E). The subtraction maps we obtained clearly revealed several possible candidates for curve- or corner-selective patches. To statistically detect and locate the curve and corner patches, we performed pixel-level FDR tests to examine the curve or corner preference. For each pixel, we performed independent t-tests to compare the responses to all curves, all corners, and all bars, obtaining the p-value maps for curve and corner selectivity (see Materials and methods and Figure 1—figure supplement 3). We then computed the FDR (false dicovery rate) using Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995), with the threshold level q = 0.01 to locate the significant patches. Cluster permutation tests were also performed to exclude patches with not enough significant pixels (Nichols and Holmes, 2002). We found several patches significantly selective to curves or corners in dorsal V4 (Figure 1F, G). These curve- or corner-selective patches were considered candidates for functional domains encoding shape segments in V4.
 
-## Single-cell mapping of curve- and corner-selective neurons reveals they are spatially clustered
+### Single-cell mapping of curve- and corner-selective neurons reveals they are spatially clustered
 
 To confirm that neurons within these patches were indeed curve or corner selective, we next performed single-cell resolution imaging with a high-power objective lens (16×) to record neuronal responses (ΔF/F0) as well as their spatial organization (Figure 2—figure supplement 1). The imaging sites (850 × 850 μm) in both subjects were chosen to include both curve- and corner-selective domains found by our 4× imaging (Figure 1F, G). 535 visually responsive neurons (292 from monkey A and 243 from monkey B) were recorded in total. Each stimulus was repeated 10 times and averaged to derive neuronal responses (Figure 2—figure supplement 2). To characterize neurons’ curve and corner selectivity, we calculated a curve selectivity index (CVSI) and corner selectivity index (CNSI). A positive CVSI value indicates a neuron’s maximal response to curves is stronger than its maximal response to other stimuli: a CVSI = 0.33 signifies a response twice as strong, and a CVSI = 0.2 is 1.5 times as strong. The same definition applies to CNSI. 70.5% (74 out of 105) neurons with CVSI > 0.2 significantly (one-way ANOVA, p<0.05) preferred curves over corners and bars, and 76.9% (120 out of 156) for CNSI (Figure 2—figure supplement 3A, B). We found neurons with high CVSI or CNSI were spatially clustered (Figure 2A–D), and these neurons were also selective to the orientation of the integral curves or corners (Figure 2E–H; 91.6% of the neurons are significantly tuned to the orientation of curves or corners; one-way ANOVA, p<0.05). Their overall spatial distribution was consistent with the spatial distribution of curve and corner domains revealed by 4× imaging (Figure 2A–D vs. Figure 1E, F), especially considering the possible loss of detailed spatial information during Gaussian smoothing of 4× images. This parsimoniously suggests that the observed cortical activation was evoked by responsive neuronal clusters.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cell map of curve selectivity index (CVSI). Responsive neurons are labeled at their spatial location and colored according to their CVSI. Neurons with high positive CVSI (high curve preference) were clustered in the upper part of the imaging area. The white line indicates the curve-biased patches derived by 4× imaging (Figure 1E). Scale bar = 100 μm. (B) Cell map of corner selectivity index (CNSI). Neurons with high positive CNSI (high corner preference) were clustered in the lower part of the imaging area. (C, D) Equivalent maps for monkey B. (E–H) Responses of four example neurons preferring curves or corners, their locations labeled in (A–D), respectively. (I) Neuronal pairwise tuning correlation (mean ± SE, averaging all neurons every 100 μm) plotted against spatial distances. The average correlation between different repeats of same neuron is 0.71 (Figure 2—figure supplement 2). The dash curve indicates the average of neurons when shuffled. Significance levels were determined by permutation test. (J) Absolute CVSI value differences (mean ± SE) plotted against distances. (K) Absolute CNSI value differences (mean ± SE) plotted against distances.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fluorescence image using a 16× objective lens. (B) Raw fluorescence traces of eight neurons (colored circles in A).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) GCaMP timecourses (ΔF/F0, mean ± SE) of the neurons in Figure 2A–D, each under its optimal curves, corners, and bars. Trials were synchronized so that 0 s indicates the time of stimulus onset. (B) Scatterplots showing average neuronal responses to the stimuli (bars, curves, and corners) in the odd repeats (1, 3, 5, 7, 9) and even repeats (2, 4, 6, 8, 10). The red dash line indicates the y = x line. Pearson correlation R > 0.5 for 474 out of total 535 neurons (88.6%).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A-B) CVSI and CNSI were tested, comparing the maximum responses to curves against the maximum responses to corners/bars (CVSI), or bars against curves/bars (CNSI). One-way ANOVA, p<0.05, n = 10. (C-D) Average CVSI and CNSI (mean ± SE) plotted against the distances to the CV or CN domain boundary.
 
 We next assessed this clustering quantitatively by examining how neuronal responses correlate with spatial distance. For each neuronal pair recorded from the same subject, we computed the pairwise tuning correlation and absolute value differences for CVSI and CNSI plotted against the neuronal pairwise distances. We found that neurons close to each other (<300 μm approximately) often had more correlated tuning (Figure 2I) and generally exhibited more similar CVSI and CNSI values (Figure 2J, K). These results indicate curve-selective and corner-selective neurons are spatially clustered, which could potentially form curve domains and corner domains in V4, which could therefore be detected when imaged at a larger scale.
 
 Out of all 535 neurons recorded from two animals, the majority (346 neurons, 64.7%) significantly preferred curve and corner stimuli over single bars, and only 1.5% (eight neurons) significantly preferred bars over curves and corners (Figure 3—figure supplement 1A), indicating that neurons in these areas were indeed much more likely to encode more complex shape features compared to simple orientation. Therefore, we made a combined cell map to depict curve and corner selectivity (Figure 3A), neglecting bar responses, by calculating curve/corner index (CVCNI). Similar to CVSI and CNSI, positive CVCNI values indicate a neuron’s maximum response to curves is stronger than its maximum response to corners, and vice versa. As expected, neurons with similar CVCNI values were spatially clustered. Neurons that fell into the 4×-defined curve domains generally had positive CVCNI values (Figure 3B) and those in the 4× corner domains generally had negative CVCNI values (Figure 3C). We also performed a one-way ANOVA comparing neurons’ maximum curve and corner responses. We found that neurons with CVCNI > 0.2 or <−0.2 (which means 1.5 times as strong) predominantly showed significant preferences (p<0.05) to curves or corners over the other kind (Figure 3D). The curve- or corner-selective neurons (red and blue neurons in Figure 3D) have very diverse curve or corner tuning, and could be either selective or invariant to the radius and radian of curves or bar length and separation angle of corners (Figure 3—figure supplement 1B–D), which potentially enables the encoding of multiple shape segments. More interestingly, these neurons that were heavily biased to curves or corners over the other tended to respond very weakly to single bars (Figure 3E), implying that they might be detecting more complex and integral shape features instead of local orientation. These results suggest that curves and corners are encoded by different neuronal clusters organized in curve and corner domains, and these domains are distinct from those representing single orientations.
 
-## Curve-preferring neurons are selective for smoothness
+![Figure 3.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cell map of curve/corner index (CVCNI). Positive CVCNI indicates preference for curves over corners and vice versa. Curve-selective neurons and corner-selective neurons are spatially clustered. Scale bar = 100 μm. (B) Histogram of CVCNI for neurons located within the curve-biased domains. Mean = 0.15 ± 0.03 S.E. (C) Histogram of CVCNI for neurons located within the corner-biased domains. Mean = −0.20 ± 0.02 S.E. (D) Scatterplot of maximum responses to bars (normalized to 0–1 by the maximum responses to all contour features) against CVCNI. Red dots indicate neurons showing significant preference for curves (ANOVA p<0.05, n = 10) and blue for corners. The majority of neurons (74.5%) with CVCNI < −0.2 or >0.2 were significantly selective. Neurons that highly preferred curves over corners or corners over curves did not respond strongly to single-orientated bars. (E) Neurons’ maximum bar responses were negatively correlated with the absolute values of CVCNI. The red line represents the linear regression line.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Scatterplot of neurons’ maximum responses to curves and corners against bars. 65.7% of 535 neurons recoded in the imaging area showed significantly stronger responses to curves and corners over bars (n = 10, one-way ANOVA, p<0.05). Only 1.5% showed significantly stronger responses to bars over curves and corners. (B) Size and separation angle selectivity of corner-selective neurons (147 out of 535 neurons that significantly preferred corners over curves). 62, 52, and 33 neurons preferred 45°, 90°, and 135° corners, respectively. 70 neurons significantly preferred big corners (bar length = 20 pixels, 0.67°), and 20 significantly preferred small corners (bar length = 10 pixels, 0.33°). 57 neurons were size invariant. (C) Scatterplot of maximal responses to large (R = 20 pixels, 0.67°) against small curves (R = 10 pixels, 0.33°). 84 out of 535 neurons that significantly preferred curves over corners are included, 22 of which significantly preferred big curves and 12 preferred small curves (n = 10, one-way ANOVA, p<0.05). 50 neurons were size invariant. (D) Scatterplot of neurons’ maximum responses to long curves (rad = 180°) against short curves (rad = 120°). Neurons included are the same as (B). 35 neurons significantly preferred long curves and 18 preferred small curves. 31 neurons were radian invariant.
+
+### Curve-preferring neurons are selective for smoothness
 
 Curves and corners are both different from single bars in that they potentially contain multiple different local orientations, yet we found them to be encoded by different neuronal clusters in V4. This suggests that V4 neurons are not recognizing shapes with more than one local orientation, but computing a more fundamental feature difference. To investigate what distinguishes curves from corners in V4, we tested hexagonal segments (Π-shape stimuli; Figure 4A) that highly resemble curves except for a lack of smoothness (Nandy et al., 2013). We found that neurons that were very selective to smooth curves did not respond strongly to Π-shape stimuli (Figure 4A), suggesting that they were selective to smoothness, rather than multiple orientations. In the same way as CVCNI, we calculated curve/Π-shape index (CVPII), which characterizes a neuron’s preference to smooth curves over the Π-shape stimuli. We found that neurons’ CVPII were highly consistent with CVCNI (R = 0.72, p<0.001, Figure 4B), which means neurons preferring smooth curves over corners would also prefer smooth curves over Π-shape stimuli. As a result, the maps of CVPII were also consistent to CVCNI maps (Figure 4C vs. Figure 3A). K-means clustering analysis of population responses also showed that smooth curves are encoded differently from rectilinear shapes including Π-shapes and corners (Figure 4—figure supplement 1). Therefore, smoothness is important to the distinct encoding of curves and corners in the specific curve domains and corner domains in V4.
 
-## Curve and corner selectivity is related to concentric and radial grating preference
+![Figure 4.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig4-v2.jpg)
+
+**Figure 4.:** (A) Left: responses of an example curve preferring neurons to bars, corners, smooth curves, and Π-shape stimuli, indicated by the white circle in (C). The neurons responded strongly to smooth curves but not to Π-shape, which highly resemble curves despite lack of smoothness. Right: an example neuron responding to rectilinear corners and Π-shapes, indicated by the white square in (C). (B) Scatterplot of curve/corner index (CVCNI) against curve/Π-shape index (CVPII), which characterizes neuronal preference for smooth curves over Π-shape stimuli. The red dash line represents the linear regression line. The two values were highly correlated, indicating that neurons preferring curves over corners also preferred curves over Π-shape stimuli. (C) Cell map of CVPII. Scale bar = 100 μm. Neurons are clustered similarly to CVCNI (Figure 3A).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** 535 neurons’ responses to 20 stimulus forms (two bars, eight curves, six corners, and four Π-shapes, each at eight orientations) were used. (A) We clustered the stimulus forms using population response vector (see Materials and methods). Cluster number = 2 according to Calinski–Harabasz criterion. (B) The two clusters were visualized using multi-dimensional scaling (MDS). (C) The normalized stress of MDS. Stress = 0.104 when dimensionality = 2. (D) We clustered the neurons using neuron response vector (see Materials and methods). Cluster number = 2 according to Calinski–Harabasz criterion. (E) The two neural clusters are also spatially clustered and are consistent with curve/corner index (CVCNI) maps (Figure 3A).
+
+### Curve and corner selectivity is related to concentric and radial grating preference
 
 Early studies in V4 demonstrated that many V4 neurons are selective for non-Cartesian gratings (David et al., 2006; Gallant et al., 1993; Gallant et al., 1996). While concentric gratings highly resemble curves and radial gratings resemble corners, this result highly implied the curve/corner preference. Therefore, we wondered whether these two types of gratings are also separately encoded by neurons in curve and corner domains. So in addition to contour feature stimuli, we also tested concentric, radial, and Cartesian gratings (Figure 5—figure supplement 1A). The resultant selectivity maps were consistent with the contour feature maps as predicted. 48.4% of the neurons recorded in the imaging areas significantly preferred concentric or radial gratings over Cartesian gratings, while only 2.2% significantly preferred Cartesian gratings (Figure 5—figure supplement 1B). In addition, many of them were heavily biased to one over the other. Similar to CVCNI, we computed concentric/radial index (CRI) to characterize this bias. CRI and CVCNI values were found to be correlated (R = 0.38, p<0.001; Figure 5B, Figure 5—figure supplement 2), and naturally their cell maps were also consistent (Figure 5C vs. Figure 3A), suggesting that classical polar grating selectivity is closely related to curve and corner selectivity. Meanwhile, to assess whether the observed selectivity is related to different spatial frequencies, we examined the CRI map at 1, 2, and 4 cycle/°. The CRI values of all neurons at three spatial frequencies are highly correlated (Pearson correlation, all R > 0.5, p<0.001), and the map structures were found to remain consistent across three spatial frequencies (Figure 5C), implying such selectivity is not directly related to spatial frequency.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cell map of concentric/radial index (CRI). Positive CRI indicates preference for concentric over radial gratings and vice versa. Concentric grating-selective neurons and radial grating-selective neurons are spatially clustered, and the overall distribution was consistent with curve/corner selectivity (Figure 3A). Scale bar = 100 μm. (B) Scatterplot of curve/corner index (CVCNI) against CRI, which were positively correlated. The red dash line represents the linear regression line. (C) CRI cell maps at spatial frequencies of 1, 2, and 4 cycles/° (cpd). The map structure remained consistent.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Responses (ΔF/F0, mean ± SE) of three example neurons to grating stimuli. (B) Scatterplot of neurons’ maximum responses to concentric and radial gratings against Cartesian gratings. 48.4% of 535 neurons recoded in the imaging area showed significantly stronger responses to concentric or radial gratings (red, n = 11 for monkey A, and n = 8 for monkey B, one-way ANOVA, p<0.05). Only 2.2% showed significantly stronger responses Cartesian gratings (blue). Black indicates no significant preference (p≥0.05). (C) Histogram of neurons’ optimal Cartesian gratings spatial frequencies. Neuronal responses to its optimal Cartesian gratings at spatial frequencies of 1, 2, and 4 cycle/° were compared using one-way ANOVA (p<0.05).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63798/elife-63798-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A-B) CRI were tested, comparing the maximum responses to concentric gratings against the maximum responses to radial gratings. One-way ANOVA, p<0.05, n = 10. (C-D) Average CRI and -CRI (mean ± SE) plotted against the distances to the CV or CN domain boundary.
 
 ## Discussion
 
@@ -74,80 +132,212 @@ Finally, our results may also help to explore the later stage of the visual hier
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Macaca mulatta)</td>
+      <td>Macaca mulatta</td>
+      <td>Beijing Prima Biotech Inc</td>
+      <td></td>
+      <td>http://www.primasbio.com/en/Home</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV9.Syn.GCaMP6f.WPRE.SV40</td>
+      <td>Penn Vector Core</td>
+      <td>CS1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.Syn.GCaMP5G.WPRE.SV40</td>
+      <td>Penn Vector Core</td>
+      <td>V4102MI-R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2018b</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td>https://www.mathworks.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code for data analysis</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://github.com/RJiang1994/macaque-v4-2P (Jiang, 2021 copy archived at swh:1:rev:57dfeac5e81b91c93ef0687f8cf04010d3f47f8c)</td>
+    </tr>
+  </tbody>
+</table>
+
 All procedures involving animals were in accordance with the Guide of Institutional Animal Care and Use Committee (IACUC) of Peking University Laboratory Animal Center and approved by the Peking University Animal Care and Use Committee (LSC-TangSM-5).
 
-## Animal preparation
+### Animal preparation
 
 The subjects used in this study were two adult male rhesus monkeys (Macaca mulatta, 4 and 5 years of age, respectively), purchased from Beijing Prima Biotech Inc and housed at Peking University Laboratory Animal Center. Two sequential surgeries were performed on each animal under general anesthesia. In the first surgery, we performed a craniotomy over V4 and opened the dura. We injected 200 nl of AAV9.Syn.GCaMP6f.WPRE.SV40 (CS1001, titer 7.748e13 [GC/ml], Penn Vector Core) or AAV1.Syn.GCaMP5G.WPRE.SV40 (V4102MI-R, titer 2.37e13 [GC/ml], Penn Vector Core) at a depth of about 350 μm and speed of 5–10 nl/s. Injection and surgical protocols followed our previous study (Li et al., 2017). After injections, we sutured the dura, replaced the skull cap with titanium screws, and closed the scalp. The animal was then returned for recovery and received Ceftriaxone sodium antibiotic (Youcare Pharmaceutical Group Co. Ltd., China) for 1 week. 45 days later, we performed the second surgery to implant the imaging window and head posts. The dura was removed and a glass coverslip was put directly above the cortex without any artificial dura and glued to a titanium ring. We then glued the titanium ring to the skull using dental acrylic. The detailed design of the chamber and head posts can be found in our previous study (Li et al., 2017). Monkeys can be ready for recording about 1 week after the second surgery.
 
-## Behavioral task
+### Behavioral task
 
 Monkeys were trained to maintain fixation on a small white spot (0.1°) while seated in a primate chair with head restraint to obtain a juice reward. Eye positions were monitored by an ISCAN ETL-200 infrared eye-tracking system (ISCAN Inc, Woburn, MA) at a 120 Hz sampling rate. Trials in which the eye position deviated 1° or more from the fixation point were terminated and the same condition was repeated immediately. Only data from the successful trials was used.
 
-## Visual stimuli
+### Visual stimuli
 
 The visual stimuli were displayed on an LCD monitor 45 cm from the animal’s eyes (Acer v173Db, 17 inch, 1280 × 960 pixel, 30 pixel/°, 80 Hz refresh rate). After acquiring fixation, only the gray background (32 cd/m2) was presented for the first 1 s to obtain the fluorescence baseline, and then the visual stimuli were displayed for further 1 s. No inter-trial interval was used. Stimuli were presented in pseudo-random order. We used square-wave drifting gratings (0.4° diameter circular patch, full contrast, 4 cycle/°, 3 cycle/s) generated and presented by the ViSaGe system (Cambridge Research Systems, Rochester, UK) to measure the retinal eccentricity, which was about 1° bottom left to the fovea for both monkeys.
 
 Contour feature stimuli were generated using MATLAB (The MathWorks, Natick, MA) and presented using the ViSaGe system (Cambridge Research Systems). The contour feature stimuli were two pixels wide. The lengths of the bars and corner edges were 10 and 20 pixels (30 pixel/°, 0.33° and 0.67°), and the radius of curve stimuli were also 10 and 20 pixels. For each of the two sizes, the curve stimuli varied in radians (120°, 180° for 4× imaging and 60°, 90°, 120°, 180° for 16× imaging). The corner stimuli also varied in three separation angles (45° and 90° and 135°). All contour feature stimuli were rotated to eight orientations (0°, 45°, 90°, 135°, 180°, 225°, 270°, 315° for curves and corners, and 0°, 22.5°, 45°, 67.5°, 90°, 112.5°, 135°, 157.5° for bars).
 
-The Cartesian (eight orientations, 0°, 45°, 90°, 135°, 180°, 225°, 270°, 315°), concentric, and radial grating stimuli were full contrast sinusoidal gratings (edge blurred), which were 90 pixels (3°) in diameter, with spatial frequencies (SF) of 1, 2, and 4 cycle/°. The concentric gratings were generated asCG=sin(⁡2πSF*x2+y2)
+The Cartesian (eight orientations, 0°, 45°, 90°, 135°, 180°, 225°, 270°, 315°), concentric, and radial grating stimuli were full contrast sinusoidal gratings (edge blurred), which were 90 pixels (3°) in diameter, with spatial frequencies (SF) of 1, 2, and 4 cycle/°. The concentric gratings were generated as
 
-The radial gratings were generated asRG=sin(⁡2πSF*arctan⁡(yx))
+$$
+CG=sin(⁡2\piSF*\sqrt{x^{2}+y^{2}})
+$$
+
+The radial gratings were generated as
+
+$$
+RG=sin(⁡2\piSF*arctan⁡(\frac{y}{x}))
+$$
 
 The data for contour feature stimuli was recorded on one day, and the data for gratings on another day.
 
-## 2P imaging
+### 2P imaging
 
 2P imaging was performed using a Prairie Ultima IV 2P laser scanning microscope (Bruker Corporation, Billerica, MA) during experiments. 1000 nm mode-lock laser (Spectra-Physics, Santa Clara, CA) was used for excitation of GCaMPs, and resonant galvo scanning (512 × 512 pixel, 32 frame/s) was used to record the fluorescence images (8 fps, averaging every four frames). A 4× objective (Nikon Corporation, Tokyo, Japan) was used for sub-cortical-level recording (3.4 × 3.4 mm, 6.7 μm/pixel), and a 16× objective (Nikon Corporation) for neural population recording at single-cellular resolution (850 × 850 μm, 1.7 μm/pixel). We used a Neural Signal Processor (Cerebus system, Blackrock Microsystem, Salt Lake City, UT) to record the time stamp of each frame of the 2P images as well as the time stamps of visual stimuli onset for synchronization.
 
-## Image data processing
+### Image data processing
 
 Image data was processed by MATLAB. The 2P images were first aligned to a template image by a 2D cross-correlation algorithm (Li et al., 2017) to eliminate motion artifacts during recording sections. For all the successful trials, we found the corresponding 2P images by synchronizing the time stamps of stimulus onset recorded by the Neural Signal Processor (Cerebus system, Blackrock Microsystem). The differential fluorescence image was calculated as ΔF = F – F0, where the basal fluorescence image F0 was defined as the average image of 0–0.5 s before stimulus onset, and F as the average of 0.5–1.25 s after stimulus onset, both averaged across all repeats for each stimulus.
 
-For 4× imaging, the ΔF/F0 maps were Gaussian smoothed using a low-pass Gaussian filter (σ = 10 pixels) to obtain the activation maps. For 16× imaging, to identify responding cell bodies (ROIs), the differential image (ΔF) for each stimuli went through a band-pass Gaussian filter (σ = 2 pixels and 5 pixels, respectively, only used for identifying ROIs) and were then binarized using a pixel value threshold of 3 SD. The connected components (>25 pixels) were identified as candidates for active ROIs. An ROI was discarded if its maximum response (ΔF/F0) was below 0.3. The roundness of these ROIs was calculated asC=P24πSwhere P is the perimeter of the ROI and S is the area. Only ROIs with C < 1.1 were identified as cell bodies. We also tested this criterion by ANOVA, comparing the fluorescence 0–0.5 s before and 0.5–1.25 s after stimulus onset (same definition as ΔF), all trials together. 533 out of the 535 neurons identified had p<0.05.
+For 4× imaging, the ΔF/F0 maps were Gaussian smoothed using a low-pass Gaussian filter (σ = 10 pixels) to obtain the activation maps. For 16× imaging, to identify responding cell bodies (ROIs), the differential image (ΔF) for each stimuli went through a band-pass Gaussian filter (σ = 2 pixels and 5 pixels, respectively, only used for identifying ROIs) and were then binarized using a pixel value threshold of 3 SD. The connected components (>25 pixels) were identified as candidates for active ROIs. An ROI was discarded if its maximum response (ΔF/F0) was below 0.3. The roundness of these ROIs was calculated as
 
-## Curve and corner domains
+$$
+C=\frac{P^{2}}{4\piS}
+$$
+
+where P is the perimeter of the ROI and S is the area. Only ROIs with C < 1.1 were identified as cell bodies. We also tested this criterion by ANOVA, comparing the fluorescence 0–0.5 s before and 0.5–1.25 s after stimulus onset (same definition as ΔF), all trials together. 533 out of the 535 neurons identified had p<0.05.
+
+### Curve and corner domains
 
 All trials (stim number × repeat number) in 4× imaging were categorized first as curves (32 stim), corners (48 stim), or bars (16 stim). Curve patches: for each pixel, independent t-tests were performed to compare the responses to all curves against all corners and against all bars, respectively, and the larger one of the two p-values was chosen if the mean response to curves is stronger than corners and bars. FDR was computed following a Benjamini–Hochberg procedure, using the MATLAB command mafdr, in which qi = pi × 512×512/rank(pi). Corner patches followed the same procedure.
 
 Cluster permutation tests were then performed to exclude patches with too few significant pixels. For each permutation, all trials (stim number × repeat number) were randomly relabeled as curves, corners, or bars, keeping the total trial number within each of the three groups unchanged. Independent t-tests as in Figure 1F were performed, with an uncorrected p=0.01 as threshold. The cluster (connected component) with the maximum pixel number was recorded. 60,000 random permutations were performed, resulting in 60,000 maximum cluster sizes as null distribution. The top 5% (3000) of the null distribution was used as the threshold, and the patches with pixels below this level were regarded as insignificant and excluded.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Two tests were performed to determine whether a neuron was selective to the orientation of curves or corners. First, we performed ANOVA to compare the fluorescence 0–0.5 s before and 0.5–1.25 s after stimulus onset (same definition as ΔF) using all the trials for curve and corner stimuli. Then we find the optimal curve or corner stimuli of this neuron and used ANOVA to compare among the eight orientations of this optimal form. The p-value was then Bonferroni-corrected (14 comparisons, 6 corners, and 8 curves). Only neurons passing both ANOVA tests (p<0.05) were deemed as tuned to the orientation of curves or corners.
 
-CVSI is used to characterize a neuron’s preference to curves over other stimuli (bars and corners), defined asCVSI=MaxRespcurve−MaxRespotherMaxRespcurve+MaxRespother.where MaxRespcurve is the neuron’s maximum response to curve stimuli and MaxRespother is the neuron’s maximum response to other stimuli (bars and corners). CVSI ranges from −1 to 1, and a positive CVSI value indicates a neuron’s response to its optimal curve stimuli is greater than its response to optimal bar or corner stimuli.
+CVSI is used to characterize a neuron’s preference to curves over other stimuli (bars and corners), defined as
 
-CNSI is defined asCNSI=MaxRespcorner−MaxRespotherMaxRespcorner+MaxRespother.where MaxResp corner is the neuron’s maximum response to corner stimuli and MaxRespother is the neuron’s maximum response to other stimuli (bars and curves).
+$$
+CVSI=\frac{MaxResp_{curve}−MaxResp_{other}}{MaxResp_{curve}+MaxResp_{other}}.
+$$
 
-CVCNI is defined asCVCNI=MaxRespcurve−MaxRespcornerMaxRespcurve+MaxRespcorner.
+where MaxRespcurve is the neuron’s maximum response to curve stimuli and MaxRespother is the neuron’s maximum response to other stimuli (bars and corners). CVSI ranges from −1 to 1, and a positive CVSI value indicates a neuron’s response to its optimal curve stimuli is greater than its response to optimal bar or corner stimuli.
+
+CNSI is defined as
+
+$$
+CNSI=\frac{MaxResp_{corner}−MaxResp_{other}}{MaxResp_{corner}+MaxResp_{other}}.
+$$
+
+where MaxResp corner is the neuron’s maximum response to corner stimuli and MaxRespother is the neuron’s maximum response to other stimuli (bars and curves).
+
+CVCNI is defined as
+
+$$
+CVCNI=\frac{MaxResp_{curve}−MaxResp_{corner}}{MaxResp_{curve}+MaxResp_{corner}}.
+$$
 
 We also performed one-way ANOVA test comparing neuron’s maximum response to curve stimuli and maximum response to corner stimuli in Figure 3D, with threshold value p=0.05, repeats n = 10. The same tests were also applied to CVSI and CNSI in Figure 2—figure supplement 3.
 
-CVPII is defined asCVPII=MaxRespcurve−MaxRespΠ−shapeMaxRespcurve+MaxRespΠ−shape.where MaxRespΠ-shape is the neuron’s maximum response to Π-shape stimuli. The Pearson correlation of CVCNI and CVPII was calculated in Figure 4B, and the regression line was derived by minimizing ∑(Δx)^2+(Δy)^2.
+CVPII is defined as
 
-CRI is defined asCRI=MaxRespconcentric−MaxRespradialMaxRespconcentric+MaxRespradial.where MaxRespconcentric is the neuron’s maximum response to concentric gratings and MaxRespradial is the neuron’s maximum response to radial gratings. The Pearson correlation of CVCNI and CRI was also calculated in Figure 5B, and the regression line was derived by minimizing ∑(Δx)^2+(Δy)^2.
+$$
+CVPII=\frac{MaxResp_{curve}−MaxResp_{Π−shape}}{MaxResp_{curve}+MaxResp_{Π−shape}}.
+$$
 
-## Clustering analysis
+where MaxRespΠ-shape is the neuron’s maximum response to Π-shape stimuli. The Pearson correlation of CVCNI and CVPII was calculated in Figure 4B, and the regression line was derived by minimizing $\sum\sqrt{(Δx)^{^}2+(Δy)^{^}2}$.
 
-We analyzed 2922 neuron pairs from monkey A and 2432 neuron pairs from monkey B in Figure 2I–K. Pairwise tuning correlation was calculated as the Pearson correlation of the two neurons’ responses to all bar, curve, and corner stimuli, and were plotted against pairwise spatial distances (averaging all neurons every 100 μm).
+CRI is defined as
 
-Similarly, the differences in CVSI and CNSI were also plotted against pairwise spatial distances:|ΔCVSIij|=|CVSIi−CVSIj|,where CVSIi is the CVSI of neuron i and CVSIj is the CVSI of neuron j.|ΔCNSIij|=|CNSIi−CNSIj|,where CNSIi is the CVSI of neuron i and CNSIj is the CNSI of neuron j.
+$$
+CRI=\frac{MaxResp_{concentric}−MaxResp_{radial}}{MaxResp_{concentric}+MaxResp_{radial}}.
+$$
+
+where MaxRespconcentric is the neuron’s maximum response to concentric gratings and MaxRespradial is the neuron’s maximum response to radial gratings. The Pearson correlation of CVCNI and CRI was also calculated in Figure 5B, and the regression line was derived by minimizing $\sum\sqrt{(Δx)^{^}2+(Δy)^{^}2}$.
+
+### Clustering analysis
+
+We analyzed $\frac{292}{2}$ neuron pairs from monkey A and $\frac{243}{2}$ neuron pairs from monkey B in Figure 2I–K. Pairwise tuning correlation was calculated as the Pearson correlation of the two neurons’ responses to all bar, curve, and corner stimuli, and were plotted against pairwise spatial distances (averaging all neurons every 100 μm).
+
+Similarly, the differences in CVSI and CNSI were also plotted against pairwise spatial distances:
+
+$$
+|ΔCVSI_{ij}|=|CVSI_{i}−CVSI_{j}|,
+$$
+
+where CVSIi is the CVSI of neuron i and CVSIj is the CVSI of neuron j.
+
+$$
+|ΔCNSI_{ij}|=|CNSI_{i}−CNSI_{j}|,
+$$
+
+where CNSIi is the CVSI of neuron i and CNSIj is the CNSI of neuron j.
 
 Permutation test was performed to evaluate the significance of each average |ΔCVSI| and |ΔCNSI|. |ΔCVSI| or |ΔCNSI| were randomly paired with distances for 100,000 times to build the null distribution and averaged. A point was considered significant if it is higher than the top 100 of the null distribution or lower than the bottom 100 (p<0.001).
 
-## K-means analysis
+### K-means analysis
 
-We performed K-means analysis to cluster the stimulus forms and the neurons. Responses of 535 neurons to 20 forms (two bars, eight curves, six corners, and four Π-shapes, each at eight orientations) are used to construct the responses matrix R asR=r1,1⋯r1,535⋮⋱⋮r20,1⋯r20,535where ri,j is the response of neuron j to stimulus form i. Only the maximum responses among eight orientations were used.
+We performed K-means analysis to cluster the stimulus forms and the neurons. Responses of 535 neurons to 20 forms (two bars, eight curves, six corners, and four Π-shapes, each at eight orientations) are used to construct the responses matrix R as
 
-We used population response vectors (RP, rows of matrix R) to cluster the forms. For form i,RPi=ri,1ri,2⋯ri,535.
+$$
+R=r_{1,1}⋯r_{1,535}⋮⋱⋮r_{20,1}⋯r_{20,535}
+$$
 
-We used neuron response vectors (RN, columns of matrix R) to cluster the neurons. For neuron j,RNj=r1,jr2,j⋯r20,j.
+where ri,j is the response of neuron j to stimulus form i. Only the maximum responses among eight orientations were used.
+
+We used population response vectors (RP, rows of matrix R) to cluster the forms. For form i,
+
+$$
+RP_{i}=r_{i,1}r_{i,2}⋯r_{i,535}.
+$$
+
+We used neuron response vectors (RN, columns of matrix R) to cluster the neurons. For neuron j,
+
+$$
+RN_{j}=r_{1,j}r_{2,j}⋯r_{20,j}.
+$$
 
 The number of clusters was determined using Calinski–Harabasz criterion and squared Euclidean distance. Maximum literation time = 10,000. Clustering was repeated for 10,000 times with new initial cluster centroid, and the one with the lowest within-cluster sum was used.
 
-## Multi-dimensional scaling
+### Multi-dimensional scaling
 
-Classical multi-dimensional scaling (MDS) was performed to visualize the clustering of stimulus forms derived by K-means. The distance (dissimilarity matrix) was computed asDi,j=1-corrcoef(RPi,RPj)where Di,j is the distance between form i and j, corrcoef is the Pearson correlation, and RPi is the population response vectors of form i. Classical MDS was performed using singular value decomposition (SVD) algorithm.
+Classical multi-dimensional scaling (MDS) was performed to visualize the clustering of stimulus forms derived by K-means. The distance (dissimilarity matrix) was computed as
 
-The normalized stress was computed asStress=∑(Di,j−Di,j′)2∑Di,j2where Di,j is the distance in the original space and D’i,j is the distance in the new MDS space.
+$$
+D_{i,j}=1-corrcoef(RP_{i},RP_{j})
+$$
+
+where Di,j is the distance between form i and j, corrcoef is the Pearson correlation, and RPi is the population response vectors of form i. Classical MDS was performed using singular value decomposition (SVD) algorithm.
+
+The normalized stress was computed as
+
+$$
+Stress=\frac{\sum(D_{i,j}−D_{i,j}^{′})^{2}}{\sumD_{i,j}^{2}}
+$$
+
+where Di,j is the distance in the original space and D’i,j is the distance in the new MDS space.

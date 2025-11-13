@@ -25,22 +25,22 @@
 
 ### Affiliations
 
-1. https://ror.org/01yb10j39 Department of Human Genetics, Radboud Institute of Molecular Life Sciences (RIMLS), Radboud University Medical Center Nijmegen Netherlands
-2. https://ror.org/01yb10j39 Department of Laboratory Medicine, Laboratory for Medical Immunology, Radboud University Medical Center Nijmegen Netherlands
-3. https://ror.org/012p63287 Department of Genetics, University of Groningen, University Medical Center Groningen Groningen Netherlands
-4. https://ror.org/024pk8k39 Department of Pediatric Infectious Diseases and Immunology, Amalia Children’s Hospital, Radboud Center for Infectious Diseases (RCI), Radboud University Medical Center Nijmegen Netherlands
-5. https://ror.org/05wg1m734 Department of Pediatric Rheumatology and Immunology, Amalia Children’s Hospital, Radboud University Medical Center Nijmegen Netherlands
-6. https://ror.org/02jz4aj89 Department of Clinical Genetics, Maastricht University Medical Center+ Maastricht Netherlands
-7. https://ror.org/05xvt9f17 Center for Human and Clinical Genetics, Leiden University Medical Center Leiden Netherlands
-8. https://ror.org/05wg1m734 Department of Internal Medicine and Radboud Center for Infectious Diseases (RCI), Radboud University Medical Center Nijmegen Netherlands
-9. https://ror.org/01xnwqx93 Department for Immunology and Metabolism, Life and Medical Sciences Institute (LIMES), University of Bonn Bonn Germany
-10. https://ror.org/05wg1m734 Department of Laboratory Medicine, Laboratory for Diagnostics, Radboud University Medical Center Nijmegen Netherlands
+1. Department of Human Genetics, Radboud Institute of Molecular Life Sciences (RIMLS), Radboud University Medical Center Nijmegen Netherlands ([ROR:01yb10j39](https://ror.org/01yb10j39))
+2. Department of Laboratory Medicine, Laboratory for Medical Immunology, Radboud University Medical Center Nijmegen Netherlands ([ROR:01yb10j39](https://ror.org/01yb10j39))
+3. Department of Genetics, University of Groningen, University Medical Center Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+4. Department of Pediatric Infectious Diseases and Immunology, Amalia Children’s Hospital, Radboud Center for Infectious Diseases (RCI), Radboud University Medical Center Nijmegen Netherlands ([ROR:024pk8k39](https://ror.org/024pk8k39))
+5. Department of Pediatric Rheumatology and Immunology, Amalia Children’s Hospital, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+6. Department of Clinical Genetics, Maastricht University Medical Center+ Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
+7. Center for Human and Clinical Genetics, Leiden University Medical Center Leiden Netherlands ([ROR:05xvt9f17](https://ror.org/05xvt9f17))
+8. Department of Internal Medicine and Radboud Center for Infectious Diseases (RCI), Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+9. Department for Immunology and Metabolism, Life and Medical Sciences Institute (LIMES), University of Bonn Bonn Germany ([ROR:01xnwqx93](https://ror.org/01xnwqx93))
+10. Department of Laboratory Medicine, Laboratory for Diagnostics, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
 
 † Corresponding author
 
 ## Abstract
 
-De novo variants (DNVs) are currently not routinely evaluated as part of diagnostic whole exome sequencing (WES) analysis in patients with suspected inborn errors of immunity (IEI). This study explored the potential added value of systematic assessment of DNVs in a retrospective cohort of 123 patients with a suspected sporadic IEI that underwent patient-parent trio-based WES. A (likely) molecular diagnosis for (part) of the immunological phenotype was achieved in 12 patients with the diagnostic in silico IEI WES gene panel. Systematic evaluation of rare, non-synonymous DNVs in coding or splice site regions led to the identification of 14 candidate DNVs in genes with an annotated immune function. DNVs were found in IEI genes ( NLRP3 and RELA ) and in potentially novel candidate genes, including PSMB10 , DDX1 , KMT2C, and FBXW11 . The FBXW11 canonical splice site DNV was shown to lead to defective RNA splicing, increased NF-κB p65 signalling, and elevated IL-1β production in primary immune cells extracted from the patient with autoinflammatory disease. Our findings in this retrospective cohort study advocate the implementation of trio-based sequencing in routine diagnostics of patients with sporadic IEI. Furthermore, we provide functional evidence supporting a causal role for FBXW11 loss-of-function mutations in autoinflammatory disease. This research was supported by grants from the European Union, ZonMW and the Radboud Institute for Molecular Life Sciences.
+Background:De novo variants (DNVs) are currently not routinely evaluated as part of diagnostic whole exome sequencing (WES) analysis in patients with suspected inborn errors of immunity (IEI).Methods:This study explored the potential added value of systematic assessment of DNVs in a retrospective cohort of 123 patients with a suspected sporadic IEI that underwent patient-parent trio-based WES.Results:A (likely) molecular diagnosis for (part) of the immunological phenotype was achieved in 12 patients with the diagnostic in silico IEI WES gene panel. Systematic evaluation of rare, non-synonymous DNVs in coding or splice site regions led to the identification of 14 candidate DNVs in genes with an annotated immune function. DNVs were found in IEI genes (NLRP3 and RELA) and in potentially novel candidate genes, including PSMB10, DDX1, KMT2C, and FBXW11. The FBXW11 canonical splice site DNV was shown to lead to defective RNA splicing, increased NF-κB p65 signalling, and elevated IL-1β production in primary immune cells extracted from the patient with autoinflammatory disease.Conclusions:Our findings in this retrospective cohort study advocate the implementation of trio-based sequencing in routine diagnostics of patients with sporadic IEI. Furthermore, we provide functional evidence supporting a causal role for FBXW11 loss-of-function mutations in autoinflammatory disease.Funding:This research was supported by grants from the European Union, ZonMW and the Radboud Institute for Molecular Life Sciences.
 
 ## Introduction
 
@@ -54,15 +54,21 @@ The current study has aimed to explore the potential added value of systematic a
 
 ## Materials and methods
 
-## Patients and samples
+### Patients and samples
 
 We retrospectively screened patient-parent trios that were submitted to Genome Diagnostics at the Department of Human Genetics in the Radboud University Medical Center (RUMC) between May 2013 and November 2021. Patient-parent trios were selected for systematic DNV analysis when fulfilling the following inclusion criteria: (1) the patient’s phenotype was sporadic, (2) the clinical description was suspect for an inborn error of immunity (IEI), and (3) the in silico IEI whole exome sequencing (WES) panel was requested and analysed. The in silico IEI gene panel of the RUMC is periodically updated after literature review and currently encompasses 456 genes (version DG3.1.0 Radboudumc, 2021). During the study period, the in silico IEI WES panel was analysed in 146 patient-parent trios, of which 123 trios met the inclusion criteria for our retrospective cohort study (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78469/elife-78469-fig1-v2.jpg)
+
+**Figure 1.:** Of the 146 eligible patient-parent trios, 123 trios met the inclusion criteria for this IEI cohort study. Whole exome sequencing data from these patient-parent trios was filtered to retain rare, non-synonymous candidate de novo variants in coding regions. Subsequently, variants were systematically evaluated at variant and gene level for their potential involvement in the patient’s immunological phenotype. Abbreviations: IEI = inborn errors of immunity; dbSNP = Single Nucleotide Polymorphism Database; ExAC = Exome Aggregation Consortium; GnomAD = Genome Aggregation Database; AF = allele frequency; GoNL = Genome of the Netherlands.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78469/elife-78469-fig1-figsupp1-v2.jpg)
 
 As described previously (Arts et al., 2019), patients and their parents provided written informed consent for in silico IEI WES gene panel analysis with or without exome-wide variant analysis that is in line with the diagnostic clinical question, as approved by the Medical Ethics Review Committee Arnhem-Nijmegen (2011/188 and 2020–7142). This research is in compliance with the principles of the Declaration of Helsinki (World Medical, 2013).
 
 For the systematic DNV analysis in this study, WES data of all subjects was pseudonymised. This entailed the at random enciphering of patient DNA numbers to ascending numbers by a Genome Diagnostics member. In addition, clinical descriptions were condensed and classified according to the International Union of Immunological Societies (IUIS) classification (Bousfiha et al., 2020). Some of the included trios were part of previous publications: one was published as a clinical case report by D’hauw et al., 19 were part of the IEI cohort of Arts et al., and one was part of a study by Konrad et al. (Figure 1—source data 1; Arts et al., 2019; Konrad et al., 2019; D’hauw et al., 2008).
 
-## Diagnostic whole exome sequencing
+### Diagnostic whole exome sequencing
 
 WES was performed as described earlier with minor modifications (Lelieveld et al., 2016). In brief, genomic DNA samples isolated from whole blood were processed at the Beijing Genomics Institute (BGI) Europe (BGI Europe, Copenhagen, Denmark) or the in-house sequencing facility. All samples were enriched for exonic DNA using Agilent (Agilent Technologies, Santa Clara, CA, United States) or Twist (Twist Bioscience, San Francisco, CA, United States) exome kits. DNA samples at BGI were sequenced on Illumina HiSeq4000 (Illumina Sequencing, San Diego, CA, United States) or DNBseq (MGI Tech, Shenzhen, China). In-house DNA samples were sequenced on Illumina NovaSeq6000 (Illumina Sequencing). Sequencing was performed with 2x100 base pair (DNBseq) or 2x150 base pair (HiSeq4000 and NovaSeq6000) paired-end sequencing reads. The average median sequence coverage was 124x with an average of 96% target coverage greater than 20x (Figure 1—source data 1).
 
@@ -70,49 +76,721 @@ Downstream processing was performed by an automated data analysis pipeline, incl
 
 Subsequently, variants in genes included in the in silico IEI panel were filtered to retain both inherited and de novo coding, non-synonymous variants with population frequencies below 1% in our in-house database or population databases (GnomAD and dbSNP) (Karczewski et al., 2020; Sherry et al., 1999). Variant prioritisation was performed by clinical laboratory geneticists of the Department of Human Genetics at the RUMC. SNVs, small indels or CNVs that were considered to be (partially) related to the phenotype were classified (five-tier classification) and reported according to guidelines of the Association for Clinical Genetic Science and the American College of Medical Genetics and Genomics (ACMG; Richards et al., 2015; Wallis et al., 2013). Variants that were denoted or classified as carriership of a variant in a known recessive disease gene, known risk factors or variants of uncertain significance or (likely) pathogenic variants in disease genes other than those associated with IEI and candidate variants in genes without any disease association, were additionally reported and are listed in Table 1—source data 1.
 
-## De novo variant analysis
+### De novo variant analysis
 
 In this study, a research-based re-analysis was performed on 123 patient-parent trio WES datasets to assess the presence of candidate DNVs. For this, a standardised variant filtering strategy was scripted using R Studio version 3.6.2 (Figure 1—source code 1). Variants were filtered to retain rare (≤0.1% allele frequency in our in-house database and the population databases from Exome Aggregation Consortium (ExAC), Genome Aggregation Database (GnomAD) genomes and dbSNP as well as ≤0.5% in the Genome of the Netherlands (GoNL) database), coding, non-synonymous, possible DNVs, as annotated by the DeNovoCheck tool (Figure 1; Lelieveld et al., 2016; de Ligt et al., 2012; Karczewski et al., 2020; Sherry et al., 1999; Lek et al., 2016; Boomsma et al., 2014). Variants with ≤10 variation reads, ≤20% variant allele fraction or low coverage DNVs (de Ligt et al., 2012) were excluded. Moreover, synonymous SNVs and small indels were removed from the analysis. DNVs excluded by this filtering strategy were investigated for potential pathogenicity in known IEI genes. The remaining candidate DNVs are listed in Figure 1—source data 2. These DNVs were prioritised and systematically evaluated using variant and gene level metrics, encompassing database allele frequencies (including DNV counts in other datasets via denovo-db), nucleotide conservation, pathogenicity prediction scores, functional information and possible involvement in the immune system based on mouse knockout models, pathway-based annotation (i.e. Gene Ontology terms), and literature studies (Karczewski et al., 2020; Wiel et al., 2019; Stephenson et al., 2019; Turner et al., 2017). Prioritised candidate DNVs were visually inspected using the Integrative Genomics Viewer (IGV) and/or Alamut Visual Software version 2.13 (SOPHiA GENETICS, Saint Sulpice, Switzerland) to investigate biases that would give rise to false-positive variant calls. In addition, splice site DNVs were analysed using the SpliceAI prediction score (Jaganathan et al., 2019) and the Alamut Visual Software, which has incorporated splicing prediction tools such as SpliceSiteFinder-like, MaxEntScan, NNSPLICE, GeneSplicer and ESE tools.
 
-## FBXW11 functional validation experiments
+### FBXW11 functional validation experiments
 
-## Epstein–Barr virus (EBV)-B cell lines
+#### Epstein–Barr virus (EBV)-B cell lines
 
 Venous blood was drawn from patient 53 and collected in lithium heparin tubes. Epstein-Barr virus (EBV)-transformed B cell lines were created following established procedures (Neitzel, 1986). EBV-transformed lymphoblastoid cell lines (EBV-LCLs) from the patient and a healthy control were grown at 37 °C and 7.5% CO2 in RPMI 1640 medium (Dutch Modification, Gibco; Thermo Fisher Scientific, Inc, Waltham, MA, United States) containing 15% foetal calf serum (FCS; Sigma-Aldrich, St Louis, MO, United States), 1% 10,000 U/μl penicillin and 10,000  μg/μl streptomycin (Sigma-Aldrich), and 2% HEPES (Sigma-Aldrich). The EBV-LCLs were cultured at a concentration of 10×106 in 150 cm2 culture flasks (Corning, Corning, NY, United States) and treated with or without cycloheximide at 0.1% (20mL/20 mL medium; Sigma-Aldrich) for four hours. Cell pellets were then spun down, washed with PBS, snap-frozen in liquid nitrogen and stored at -80 °C.
 
-## RNA splicing effect
+### RNA splicing effect
 
 RNA was isolated from the EBV-B cell pellets using the RNeasy Mini isolation kit (Qiagen, Hilden, Germany) according to the manufacturer’s instructions. Subsequently, cDNA was synthesised from RNA with the iScript cDNA Synthesis Kit (Bio-Rad, Hercules, CA, United States). A primer set was designed (Primer3web, version 4.1.0) to span exon 11–13 of FBXW11, with the following sequences: Forward 5’-GAGAGCCGGAATCAGAGGTG-3’; Reverse 5’-GAATTGGTCCGATGCATCCG-3’. Subsequently, RT-PCR was performed using the AmpliTaq Gold 360 Master Mix (Life Technologies, Carlsbad, CA, United States). The amplified PCR products and Orange G ladder were electrophoresed on a 2% agarose gel with GelRed, and the resulting bands were cut out and analysed with Sanger sequencing.
 
-## Ex vivo peripheral mononuclear blood cell (PBMC) experiments
+### Ex vivo peripheral mononuclear blood cell (PBMC) experiments
 
 Venous blood was drawn and collected in EDTA tubes. Immune cell isolation was conducted as described elsewhere (Oosting et al., 2016). In brief, PBMCs were obtained from blood by differential density centrifugation, diluted 1:1 in pyrogen-free saline over Cytiva Ficoll-Paque Plus (Sigma-Aldrich). Cells were washed twice in saline and suspended in cell culture medium (Roswell Park Memorial Institute (RPMI) 1640, Gibco) supplemented with gentamicin, 50 mg/mL; L-glutamine, 2 mM; and pyruvate, 1 mM. Ex vivo PBMC stimulations were performed with 5×105 cells/well in round-bottom 96-well plates (Greiner Bio-One, Kremsmünster, Austria) for 24 hr in the presence of 10% human pool serum at 37 °C and 5% carbon dioxide. For cytokine production measurements, cells were treated with Candida albicans yeast (UC820 heat-killed, 1×106 /mL), lipopolysaccharide (LPS, 10 ng/mL), Staphylococcus aureus (ATCC25923 heat-killed, 1×106 /mL) or TLR3 ligand Poly I:C (10 µg/mL) or left untreated in regular RPMI medium. After the incubation period and centrifugation, supernatants were collected and stored at -20 °C until the measurement using enzyme-linked immunosorbent assay (ELISA).
 
 For flow cytometry experiments, PBMCs were cultured in U-bottom plates at a final concentration of 1×106 cells in 200 µL per well containing culture medium supplemented with 5% FCS (Sigma-Aldrich) at 37 °C and 5% carbon dioxide. Subsequently, cells were stimulated with phorbol 12-myristate 13-acetate (PMA, 12.5  ng/mL, Sigma-Aldrich) and ionomycin (500  ng/mL, Sigma-Aldrich) in duplicate for 30 min.
 
-## Flow cytometry
+### Flow cytometry
 
 PBMC suspensions were transferred to a V-bottom plate while pooling the duplicates. Following centrifugation for 2.5 min, cell surface markers were stained in the dark for 30 min at 4 °C with a monoclonal antibody mix containing anti-CD3-ECD (1:25; Beckman Coulter, Brea, CA, United States), anti-CD4-BV510 (1:50; BD Bioscience, Franklin Lakes, NJ, United States), anti-CD8-APC Alexa Fluor 700 (1:400; Beckman Coulter), and anti-CD14-FITC (1:50; Dako; Agilent Technologies). Subsequently, cells were washed twice with flow cytometry buffer (FCM buffer, 0.2% BSA in PBS) and fixed (BD Biosciences Cytofix, 554655) for 10 min at 37 °C. Next, cells were washed and permeabilised with perm buffer IV (1:10 diluted with PBS, BD Biosciences Phosflow, 560746) for 20 min on ice in the dark. Cells were then stained intracellularly with anti-NF-κB p65 (pS529)-PE antibody (1:50; eBioscience; Thermo Fisher Scientific, Inc, Waltham, MA, United States) for 20 min at 4 °C. After washing the cells twice in FCM-buffer, the suspensions were measured on a Beckman Coulter Navios EX Flow Cytometer using Navios System Software. Cell immunophenotypes were analysed using Kaluza Analysis Software version 2.1 (Beckman Coulter). The mean fluorescent intensities (MFIs) were calculated using the median pNF-κB p65 expression levels within the gated immune cell populations of interest.
 
-## Cytokine measurements
+### Cytokine measurements
 
 Levels of cytokines IL-1β, IL-6 and TNFα were determined in supernatants of stimulated PBMC cultures according to the instructions of the manufacturer (Duoset ELISA; R&D Systems, Minneapolis, MN, United States).
 
 ## Results
 
-## Cohort characteristics
+### Cohort characteristics
 
 This retrospective cohort study systematically re-analysed patient-parent trio whole exome sequencing (WES) data of 123 patients with suspected, sporadic inborn errors of immunity (IEI) with the aim to identify candidate de novo single-nucleotide variants (SNVs) or small insertion-deletions (indels) (Figure 1). The selected IEI patients had a median age of 9 years (IQR 2–17), and two-thirds of the cases were below 18 years of age (Table 1). The sex distribution among patients was roughly equal. Classification of IEI phenotypes according to the International Union of Immunological Societies (IUIS) indicated that most cases presented with autoinflammatory syndromes, followed by immune dysregulation and combined, predominantly syndromal immunodeficiencies (Bousfiha et al., 2020). Eight patients remained unclassified due to limited clinical data.
 
-## Reported genetic variants after diagnostic whole exome sequencing
+**Table 1.**
+ Patient cohort characteristics.Table 1—source data 1.List of patient-parent trios with variants identified in genes outside the diagnostic IEI gene panel, or classified as risk factors, carriership or variants of uncertain significance.The table displays information on inherited single nucleotide variants and small insertion-deletions or copy number variants that were identified after diagnostic in silico gene panel and/or exome-wide analysis prior to the systematic DNV analysis in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Total N=123</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Demographics</td>
+    </tr>
+    <tr>
+      <td>Age*, median (IQR) y</td>
+      <td>9 (2-17)</td>
+    </tr>
+    <tr>
+      <td>&lt;18 y, %</td>
+      <td>67.4</td>
+    </tr>
+    <tr>
+      <td>&gt;18 y, %</td>
+      <td>33.6</td>
+    </tr>
+    <tr>
+      <td>Sex ratio, M:F</td>
+      <td>50.4:49.6</td>
+    </tr>
+    <tr>
+      <td colspan="2">Distribution of clinical phenotypes †</td>
+    </tr>
+    <tr>
+      <td>Severe combined immunodeficiency, n (%)</td>
+      <td>9 (7.3)</td>
+    </tr>
+    <tr>
+      <td>Suspected SCID (low TRECs), n</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Other, n</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Combined immunodeficiency, n (%)</td>
+      <td>22 (17.9)</td>
+    </tr>
+    <tr>
+      <td>Syndromal, n</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Non-syndromal, n</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Primary antibody deficiency, n (%)</td>
+      <td>14 (11.4)</td>
+    </tr>
+    <tr>
+      <td>CVID, n</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Agammaglobulinemia, n</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Other, n</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Immune dysregulation, n (%)</td>
+      <td>20 (16.3)</td>
+    </tr>
+    <tr>
+      <td>HLH/EBV, n</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Autoimmunity, n</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Autoinflammatory syndrome, n (%)</td>
+      <td>22 (17.9)</td>
+    </tr>
+    <tr>
+      <td>Periodic fever syndrome, n</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Interferonopathy, n</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Other, n</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Phagocyte defect, n (%)</td>
+      <td>5 (4.1)</td>
+    </tr>
+    <tr>
+      <td>Functional defect, n</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Neutropenia/other, n</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Innate/intrinsic immune defect, n (%)</td>
+      <td>16 (13.0)</td>
+    </tr>
+    <tr>
+      <td>Bacterial/parasitic, n</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>MSMD/Viral, n</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Other, n</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Complement deficiencies, n (%)</td>
+      <td>0 (0.0)</td>
+    </tr>
+    <tr>
+      <td>Bone marrow failure, n (%)</td>
+      <td>10 (8.1)</td>
+    </tr>
+    <tr>
+      <td>Phenocopies of PIDs, n (%)</td>
+      <td>0 (0.0)</td>
+    </tr>
+    <tr>
+      <td>Unclassified, n (%)</td>
+      <td>5 (4.1)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: IQR = interquartile range; SCID = severe combined immunodeficiency; TREC = T cell receptor excision circle; CVID = common variable immunodeficiency; HLH = haemophagocytic lymphohistiocytosis; EBV = Epstein-Barr virus; MSMD = Mendelian susceptibility to mycobacterial disease; PID = primary immunodeficiency.*The age at the time of genetic testing is indicated, since the age of onset has not been documented for all cases.†Categorization of phenotypes is based on the IUIS classification of 2019 (14)._
+
+### Reported genetic variants after diagnostic whole exome sequencing
 
 Potential disease-causing SNVs and/or copy number variants (CNVs) were reported in 36 index patients after diagnostic WES (Table 2). Twenty-four patients were carriers of recessive disease alleles, previously characterised risk factors, variants of uncertain significance (VUS) or (likely) pathogenic variants affecting established disease genes other than those associated with IEI (Table 2). Of note, three of these patients carried de novo CNVs that met the diagnostic quality criteria. Patient 21 was diagnosed with an autoinflammatory disorder and carried a 17q terminal deletion of uncertain clinical significance. Overlapping CNVs have been previously reported in DECIPHER (Firth et al., 2009). A patient with non-syndromal combined immunodeficiency carried a de novo CNV involved in the Chromosome 22q11.2 microduplication syndrome (patient 69, OMIM #608363). Another de novo CNV was identified in patient 115 who was diagnosed with severe combined immunodeficiency. This young female carried a large duplication in Xq of uncertain clinical significance.
 
+**Table 2.**
+ Genetic findings after routine diagnostic panel analysis.Genetic variants reported after routine diagnostic whole exome sequencing analysis of the 123 patients included in this cohort of inborn errors of immunity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Total cases in which a genetic variant was reported, n (%)</th>
+      <th>36 (29.3)</th>
+      <th>Patient nr.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Likely) pathogenic mutation, n (%)</td>
+      <td>18 (14.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Within IEI gene panel, n (%)</td>
+      <td>12 (9.8)</td>
+      <td>All patients listed in Table 3</td>
+    </tr>
+    <tr>
+      <td>Beyond IEI gene panel, n (%)</td>
+      <td>6 (4.9)</td>
+      <td>1, 3, 40, 69, 85, 103 (Table 1—source data 1)</td>
+    </tr>
+    <tr>
+      <td>Other variants, n (%)</td>
+      <td>19 (15.4)</td>
+      <td>Table 1—source data 1</td>
+    </tr>
+    <tr>
+      <td>Risk factor, n (%)</td>
+      <td>6 (4.9)</td>
+      <td>21, 44, 55, 56, 68, 112</td>
+    </tr>
+    <tr>
+      <td>Carriership recessive allele, n (%)</td>
+      <td>7 (5.7)</td>
+      <td>3, 7, 16, 23, 32, 44, 76</td>
+    </tr>
+    <tr>
+      <td>Variant of unknown significance, n (%)</td>
+      <td>9 (7.3)</td>
+      <td>6, 21, 23, 45, 54, 80, 100, 101, 115</td>
+    </tr>
+  </tbody>
+</table>
+
 In 12 patients, (likely) pathogenic SNVs were identified in known IEI genes that (partially) explain the patient’s immunological phenotype (Table 2, details shown in Table 3). While most variants were inherited, one patient with Muckle-Wells syndrome (patient 59) carried a de novo missense variant in NLRP3 (NM_001079821.2:c.1049C>T p.(Thr350Met)). This variant has previously been described in patients with Muckle-Wells syndrome (Dodé et al., 2002; Jiménez-Treviño et al., 2013). Consequently, the NLRP3 de novo variant (DNV) was classified as pathogenic (Richards et al., 2015; Wallis et al., 2013).
+
+**Table 3.**
+ Patients with previously reported single nucleotide variants, small insertion-deletions, or copy number variants that may (partially) explain the patient’s immunological phenotype.Listed variants were identified prior to the research-based systematic re-analysis of the current study following diagnostic gene panel analysis for inborn errors of immunity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient nr.</th>
+      <th>Sex</th>
+      <th>Age range at sampling</th>
+      <th>Phenotype (IUIS classification)</th>
+      <th>Variant</th>
+      <th>Mutational mechanism</th>
+      <th>ACMG classification</th>
+      <th>ClinVar accession</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">10</td>
+      <td rowspan="2">F</td>
+      <td rowspan="2">0–5</td>
+      <td rowspan="2">Immune dysregulation, HLH/EBV</td>
+      <td>AP3B1 Chr5(GRCh37):g.77563371del NM_003664.4:c.177del p.(Lys59fs)</td>
+      <td rowspan="2">AR (ch) LoF</td>
+      <td>Pathogenic</td>
+      <td>VCV000224763</td>
+      <td rowspan="2">Hermansky-Pudlak syndrome 2 (OMIM #608233)</td>
+    </tr>
+    <tr>
+      <td>AP3B1 Chr5(GRCh37):g.77423980_77423983del NM_003664.4:c.1839_1842del p.(Asp613fs)</td>
+      <td>Pathogenic</td>
+      <td>VCV000224764</td>
+    </tr>
+    <tr>
+      <td rowspan="2">12</td>
+      <td rowspan="2">F</td>
+      <td rowspan="2">11–15</td>
+      <td rowspan="2">CID, syndromal</td>
+      <td>FAS Chr10(GRCh37):g.90774167_90774186dup NM_000043.6:c.968_987dup p.(Glu330fs)</td>
+      <td>AD (htz) LoF</td>
+      <td>Pathogenic</td>
+      <td>VCV000016509</td>
+      <td>Autoimmune lymphoproliferative syndrome, type IA (OMIM #601859)</td>
+    </tr>
+    <tr>
+      <td>seq[GRCh37] del(16)(p11.2p11.2) NC_000016.9:g.(29469093_29624260)_(30199846_30208282)del</td>
+      <td>AD (htz) LoF</td>
+      <td>Pathogenic</td>
+      <td>-</td>
+      <td>16 p11.2 deletion syndrome (OMIM #611913)</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>F</td>
+      <td>0–5</td>
+      <td>Bone marrow failure</td>
+      <td>DHFR Chr5(GRCh37):g.79950248C&gt;T NM_000791.3:c.61G&gt;A p.(Gly21Arg)</td>
+      <td>AR (hmz) LoF</td>
+      <td>Likely pathogenic</td>
+      <td>-</td>
+      <td>Megaloblastic anaemia due to dihydrofolate reductase deficiency (OMIM #613839)Affected sibling carries equal variant</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>M</td>
+      <td>6–10</td>
+      <td>Autoinflammatory disorder</td>
+      <td>NLRP3 Chr1(GRCh37):g.247587794C&gt;T NM_001079821.2:c.1049C&gt;T p.(Thr350Met)</td>
+      <td>AD (htz) LoF</td>
+      <td>Pathogenic</td>
+      <td>-</td>
+      <td>Muckle-Wells syndrome (OMIM #191900)De novo SNV</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>M</td>
+      <td>0–5</td>
+      <td>CID, syndromal</td>
+      <td>MKL1 Chr22(GRCh37):g.40815086dup NM_020831.4:c.1356dup p.(Val453Argfs)</td>
+      <td>AR (hmz) LoF</td>
+      <td>Likely pathogenic</td>
+      <td>-</td>
+      <td>Immunodeficiency 66 (OMIM #618847)Affected sibling carries equal variant</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>F</td>
+      <td>0–5</td>
+      <td>CID, syndromal</td>
+      <td>ALOXE3 Chr17(GRCh37):g.8006708G&gt;A NM_021628.2:c.1889C&gt;T p.(Pro630Leu)</td>
+      <td>AR (hmz) LoF</td>
+      <td>Pathogenic</td>
+      <td>-</td>
+      <td>Congenital ichthyosis 3 (OMIM #606545)</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>F</td>
+      <td>0–5</td>
+      <td>Suspected SCID (low TRECs)</td>
+      <td>FOXN1 Chr17(GRCh37):g.26857765A&gt;G NM_003593.2:c.831–2A&gt;G p.?</td>
+      <td>AD (htz) LoF</td>
+      <td>Likely pathogenic</td>
+      <td>-</td>
+      <td>T-cell lymphopenia, infantile, with or without nail dystrophy (OMIM #618806)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">102</td>
+      <td rowspan="2">F</td>
+      <td rowspan="2">11–15</td>
+      <td rowspan="2">Immune dysregulation, autoimmunity and others</td>
+      <td>CD55 Chr1(GRCh37):g.207497984dup NM_001300902.1:c.367dup p.(Thr123fs)</td>
+      <td>AR (hmz) LoF</td>
+      <td>Pathogenic</td>
+      <td>-</td>
+      <td>Complement hyperactivation, angiopathic thrombosis, and protein-losing enteropathy (OMIM #226300)</td>
+    </tr>
+    <tr>
+      <td>PET117 Chr20(GRCh37):g.18122927C&gt;T NM_001164811.1:c.172C&gt;T p.(Gln58*)</td>
+      <td>AR (hmz) LoF</td>
+      <td>Likely pathogenic</td>
+      <td>VCV000981504</td>
+      <td>Mitochondrial complex IV deficiency, nuclear type 19 (OMIM #619063)</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>M</td>
+      <td>31–35</td>
+      <td>Defects in intrinsic and innate immunity, MSMD and viral infection</td>
+      <td>TLR7 ChrX(GRCh37):g.12905756_12905759del NM_016562.3:c.2129_2132del p.(Gln710fs)</td>
+      <td>XLR (hemi) LoF</td>
+      <td>Pathogenic</td>
+      <td>VCV000977232</td>
+      <td>Immunodeficiency 74, COVID19-related (OMIM #301051)Affected sibling carries equal variant</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>M</td>
+      <td>6–10</td>
+      <td>Immune dysregulation, autoimmunity and others</td>
+      <td>LRBA Chr4(GRCh37):g.151835415del NM_006726.4:c.1093del p.(Tyr365fs)</td>
+      <td>AR (hmz) LoF</td>
+      <td>Pathogenic</td>
+      <td>-</td>
+      <td>Common variable immunodeficiency 8 (OMIM #614700)</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>M</td>
+      <td>11–15</td>
+      <td>Congenital defect of phagocyte, functional defects</td>
+      <td>NCF1 Chr7(GRCh37):g.74191615_74191616del NM_000265.5:c.75_76del p.(Tyr26fs)</td>
+      <td>AR (hmz) LoF</td>
+      <td>Pathogenic</td>
+      <td>VCV000002249</td>
+      <td>Chronic granulomatous disease 1 (OMIM #233700)</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>M</td>
+      <td>0–5</td>
+      <td>Suspected SCID (low TRECs)</td>
+      <td>FOXN1 Chr17(GRCh37):g.26851540del NM_003593.2.1:c.143del p.(Cys48fs)</td>
+      <td>AD (htz) LoF</td>
+      <td>Pathogenic</td>
+      <td>-</td>
+      <td>T-cell lymphopenia, infantile, with or without nail dystrophy (OMIM #618806)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: IUIS = International Union of Immunological societies; ACMG = American College of Medical Genetics and Genomics; HLH = haemophagocytic lymphohistiocytosis; EBV = Epstein-Barr virus; OMIM = Online Mendelian Inheritance in Man; (S)CID = (severe) combined immunodeficiency; TREC = T cell receptor excision circle; MSMD = Mendelian susceptibility to mycobacterial disease; AR = autosomal recessive; AD = autosomal dominant; XLR = X-linked recessive; ch = compound heterozygous; htz = heterozygous; hmz = homozygous; hemi = hemizygous; LoF = loss-of-function; SNV = single nucleotide variant._
+
+**Table 4.**
+ Identification of 13 heterozygous, rare and non-synonymous candidate de novo variants.The 124 non-synonymous candidate de novo variants were systematically evaluated based on the potential to be damaging to gene and protein function and the possible involvement in the patient’s immunological phenotype.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient nr.</th>
+      <th>Sex</th>
+      <th>Age range at sampling</th>
+      <th>Phenotype (IUIS classification)</th>
+      <th>De novo variant</th>
+      <th>GnomAD AF in %</th>
+      <th>in-house AF in %</th>
+      <th>PhyloP</th>
+      <th>CADD</th>
+      <th>VarMap</th>
+      <th>MetaDome</th>
+      <th>Coding DNV in denovo-db (protein effect)</th>
+      <th>LOEUF</th>
+      <th>Function</th>
+      <th>Literature</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="16">Missense SNVs</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>M</td>
+      <td>11–15</td>
+      <td>SCID</td>
+      <td>PSMB10 Chr16(GRCh37):g.67968809C&gt;T NM_002801.3:c.601G&gt;A p.(Gly201Arg)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>32</td>
+      <td>Likely deleterious</td>
+      <td>Neutral</td>
+      <td>-</td>
+      <td>1.37</td>
+      <td>Immuno- and thymoproteasome subunit</td>
+      <td>Homozygous Psmb10 variant in mice causes SCID and systemic autoinflammation (Treise et al., 2018). Homozygous PSMB10 variant in humans cause PRAAS, no immunodeficiency (Sarrabay et al., 2020).</td>
+      <td>Revertant somatic mosaicism (VAF: 39.7%). Additional inherited SNV and partial somatic UPD16 (Table 1—source data 1).</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>M</td>
+      <td>6–10</td>
+      <td>Predominantly antibody deficiency, hypogamma-globulinemia</td>
+      <td>RPL27A Chr11(GRCh37):g.8707228T&gt;C NM_000990.4:c.322T&gt;C p.(Tyr108His)</td>
+      <td>0.0032</td>
+      <td>0.0041</td>
+      <td>7.4</td>
+      <td>27.4</td>
+      <td>Likely deleterious</td>
+      <td>Intolerant</td>
+      <td>-</td>
+      <td>0.39</td>
+      <td>Ribosomal subunit</td>
+      <td>Ribosomopathies may include immunological defects (Khan et al., 2011).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>M</td>
+      <td>11–15</td>
+      <td>Autoinflammatory disorder</td>
+      <td>TAOK2 Chr16(GRCh37):g.29997683C&gt;T NM_016151.3:c.2090C&gt;T p.(Ala697Val)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.8</td>
+      <td>22.5</td>
+      <td>Possibly deleterious</td>
+      <td>Slightly intolerant</td>
+      <td>6 (4 mis)</td>
+      <td>0.24</td>
+      <td>Serine/threonine-protein kinase (p38 MAPK pathway)</td>
+      <td>Homozygous TAOK2 variant causes abnormal T cell activation in two patients with inflammatory bowel disease (Molho-Pessach et al., 2017).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>F</td>
+      <td>16–20</td>
+      <td>Predominantly antibody deficiency, hypogamma-globulinemia</td>
+      <td>KCTD9 Chr8(GRCh37):g.25292997C&gt;T NM_017634.3:c.695G&gt;A p.(Arg232His)</td>
+      <td>0</td>
+      <td>0.0082</td>
+      <td>5.8</td>
+      <td>32</td>
+      <td>Likely deleterious</td>
+      <td>Intolerant</td>
+      <td>-</td>
+      <td>0.52</td>
+      <td>Substrate-specific adapter</td>
+      <td>Involved in NK cell activation (Chen et al., 2013).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>M</td>
+      <td>11–15</td>
+      <td>Predominantly antibody deficiency, hypogamma-globulinemia</td>
+      <td>SCRIB Chr8(GRCh37):g.144874432C&gt;T NM_182706.4:c.4472G&gt;A p.(Arg1491Gln)</td>
+      <td>0.0032</td>
+      <td>0</td>
+      <td>4.2</td>
+      <td>29.9</td>
+      <td>Possibly deleterious</td>
+      <td>Intolerant</td>
+      <td>5 (4 mis)</td>
+      <td>0.31</td>
+      <td>Scaffold protein</td>
+      <td>Involved in uropod and immunological synapse formation, and ROS production by antigen-presenting cells (Barreda et al., 2020).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>F</td>
+      <td>21–25</td>
+      <td>Unclassified</td>
+      <td>CTCF Chr16(GRCh37):g.67645905G&gt;T NM_006565.4:c.833G&gt;T p.(Arg278Leu)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9.7</td>
+      <td>24.7</td>
+      <td>Possibly deleterious</td>
+      <td>Highly intolerant</td>
+      <td>12 (11 mis)</td>
+      <td>0.15</td>
+      <td>Transcriptional insulator</td>
+      <td>CTCF variants cause neurodevelopmental disorders, sometimes associated with recurrent infections and minor facial dysmorphisms (Konrad et al., 2019).</td>
+      <td>Published (Konrad et al., 2019).</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>F</td>
+      <td>6–10</td>
+      <td>Bone marrow failure</td>
+      <td>FUBP1 Chr1(GRCh37):g.78435621A&gt;C NM_001303433.1:c.199T&gt;G p.(Leu67Val)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2.6</td>
+      <td>24.8</td>
+      <td>Possibly deleterious</td>
+      <td>Intolerant</td>
+      <td>1 (0 mis)</td>
+      <td>0.12</td>
+      <td>Transcriptional regulator that binds FUSE upstream of the c-myc promoter</td>
+      <td>Essential for long-term repopulating hematopoietic stem cell renewal (Rabenhorst et al., 2015). Fubp1 KO mice show cerebral hyperplasia, pulmonary hypoplasia, pale livers, hypoplastic spleen, thymus, and bone marrow, cardiac hypertrophy, placental distress, and small size (Zhou et al., 2016).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>F</td>
+      <td>0–5</td>
+      <td>Immune dysregulation, autoimmunity and others</td>
+      <td>RUNX3 Chr1(GRCh37):g.25256227C&gt;T NM_004350.2:c.133G&gt;A p.(Gly45Arg)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2.4</td>
+      <td>18</td>
+      <td>Possibly deleterious</td>
+      <td>Slightly tolerant</td>
+      <td>1 (1 mis)</td>
+      <td>0.42</td>
+      <td>Transcriptional regulator</td>
+      <td>RUNX3 regulates CD8+T cell thymocyte development, maturation of cytotoxic CD8+T cells and the function of innate lymphoid cells 3 via stimulation of RORγt (Ebihara et al., 2015). Runx3 KO mice spontaneously develop inflammatory bowel disease and gastric lesions (Brenner et al., 2004).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="16">Frameshift SNVs</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>M</td>
+      <td>26–30</td>
+      <td>Predominantly antibody deficiency, hypogamma-globulinemia</td>
+      <td>DDX1 Chr2(GRCh37):g.15769802dup NM_004939.2:c.1952dup p.(Trp652fs)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>4 (0 fs)</td>
+      <td>0.28</td>
+      <td>RNA helicase</td>
+      <td>Part of a dsRNA sensor that activates the NF-κB pathway and type I interferon responses (Zhang et al., 2011).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>F</td>
+      <td>6–10</td>
+      <td>CID, syndromal</td>
+      <td>KMT2C Chr7(GRCh37):g.151860074del NM_170606.2:c.10588del p.(Ser3530Leufs*3)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>19 (4 fs)</td>
+      <td>0.12</td>
+      <td>Histone methyltransferase</td>
+      <td>KMT2C de novo variant causes Kleefstra syndrome 2, sometimes associated with recurrent respiratory infections (Koemans et al., 2017).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="16">Small in-frame indel</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>M</td>
+      <td>21–25</td>
+      <td>Bone marrow failure</td>
+      <td>NSD2 Chr4(GRCh37):g.1959681_1959687delinsTTTTTCT NM_133330.2:c.2903_2909delinsTTTTTCT p.(Arg968_Arg970delinsLeuPheLeu)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>-</td>
+      <td>0.12</td>
+      <td>Histone methyltransferase</td>
+      <td>NSD2 de novo LoF variant causes mild Wolf-Hirschhorn syndrome (Barrie et al., 2019). Unclear role in immunity.</td>
+      <td>Postzygotic mosaicism (VAF 29%).</td>
+    </tr>
+    <tr>
+      <td>Patient nr.</td>
+      <td>Sex</td>
+      <td>Age range at sampling</td>
+      <td>Phenotype (IUIS classification)</td>
+      <td>De novo variant</td>
+      <td>GnomAD AF in %</td>
+      <td>in-house AF in %</td>
+      <td>PhyloP</td>
+      <td>CADD</td>
+      <td>SpliceAI Acceptor Gain</td>
+      <td>SpliceAI Acceptor Loss</td>
+      <td>Coding DNV in denovo-db (protein effect)</td>
+      <td>LOEUF</td>
+      <td>Function</td>
+      <td>Literature</td>
+      <td>Comments</td>
+    </tr>
+    <tr>
+      <td colspan="16">Splice site SNVs</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>F</td>
+      <td>11–15</td>
+      <td>Autoinflammatory disorder</td>
+      <td>FBXW11 Chr5(GRCh37):g.171295802T&gt;C NM_012300.2:c.1468–2A&gt;G p.?</td>
+      <td>0</td>
+      <td>0</td>
+      <td>7.9</td>
+      <td>34</td>
+      <td>0.0134</td>
+      <td>0.9862</td>
+      <td>2 (0 ss)</td>
+      <td>0.31</td>
+      <td>Component of SCF (SKP1-CUL1-F-box) E3 ubiquitin ligase complex</td>
+      <td>Involved in the regulation of NF-κB signalling (Wang et al., 2018).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>F</td>
+      <td>11–15</td>
+      <td>Autoinflammatory disorder</td>
+      <td>RELA Chr11(GRCh37):g.65423234C&gt;T NM_021975.3:c.959–1G&gt;A p.?</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3.5</td>
+      <td>34</td>
+      <td>0.7968</td>
+      <td>0.9991</td>
+      <td>-</td>
+      <td>0.18</td>
+      <td>Transcription factor p65 (NF-κB subunit)</td>
+      <td>Heterozygous RELA variant causes chronic mucocutaneous ulceration (Badran et al., 2017).</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: IUIS = International Union of Immunological Societies; GnomAD = Genome Aggregation Database; AF = allele frequency; CADD = Combined Annotation Dependent Depletion; DNV = de novo variant; LOEUF = loss-of-function observed/expected upper bound fraction; SNV = single nucleotide variant; indel = insertion-deletion; (S)CID = severe combined immunodeficiency; NA = not applicable; mis = missense; fs = frameshift; ss = splice site; MAPK = mitogen-activated protein kinase; FUSE = far upstream element; PRAAS = proteasome-associated autoinflammatory syndrome; NK = natural killer; ROS = reactive oxygen species; KO = knockout; dsRNA = double-stranded RNA; NF-κB = nuclear factor kappa-light-chain-enhancer of activated B cells; LoF = loss-of-function; VAF = variant allele fraction; UPD16 = uniparental disomy of chromosome 16._
 
 Overall, routine diagnostic WES analysis provided a likely molecular diagnosis for (part) of the phenotype in 18 patients (14.6%) based on established mutational mechanisms and disease associations (Table 2).
 
-## Rare, non-synonymous de novo variants in novel IEI candidate genes
+### Rare, non-synonymous de novo variants in novel IEI candidate genes
 
 Next, re-analysis was performed on WES data of all 123 sporadic IEI cases and their parents to systematically identify and interpret DNVs in novel IEI genes. Automated DNV filtering retained a total of 172 candidate DNVs that were rare (148 DNVs were absent from GnomAD genomes) and located in either exonic or splice site regions (the complete list can be found in Figure 1—source data 2). The total number of candidate DNVs among patients ranged between zero and six (Figure 1—figure supplement 1). Moreover, the average number of candidate DNVs was comparable to recent literature (Figure 1—source data 3). Of these candidate DNVs, 124 were non-synonymous and therefore expected to exert an effect on protein function (Figure 1—source data 2). Two pairs of patients carried candidate DNVs in the same gene, GIGYF1 (patients 49 and 83) and MAP3K10 (patients 98 and 118). However, these patients did not share phenotypic features and the function of the proteins encoded by these genes could not be linked to the respective patient phenotype.
 
@@ -128,9 +806,17 @@ Lastly, a DNV affecting FBXW11 was identified in a patient with an autoinflammat
 
 The other candidate DNVs will not be described in detail here, as there is insufficient evidence to suggest pathogenicity or a genotype-phenotype relationship. Future discovery of cases with DNVs in the presented genes and overlapping clinical phenotypes could encourage further in-depth research into the possible mutational mechanisms.
 
-## Functional validation of FBXW11 de novo variant
+### Functional validation of FBXW11 de novo variant
 
 In addition to systematic DNV analysis, we have selected the candidate DNV in FBXW11 for functional validation as part of this study to provide further evidence for a causal genotype-phenotype relationship (patient 53, Table 4). As such, the putative effects on NF-κB signalling and the downstream production of pro-inflammatory cytokines were investigated in peripheral blood mononuclear cells (PBMC) extracted from the patient and a healthy control. In unstimulated PBMC of the patient showed higher levels of phosphorylated NF-kB p65 compared to the control. Ex vivo stimulation of these PBMC with phorbol 12-myristate 13-acetate (PMA) and ionomycin for 30 min led to higher NF-κB activation, reflected by p65 phosphorylation fluorescence intensity measured by flow cytometry, as compared to the healthy control (Figure 2, panel A). The greatest difference was observed in the lymphocyte subset, particularly in CD8 +T cells (Figure 2, panel A). Subsequently, the downstream production of the cytokines IL-1β, IL-6, and TNFα was investigated. The patient-derived PBMC produced more IL-1β upon in vitro stimulation with the heat-killed pathogens Candida albicans and Staphylococcus aureus, the TLR4 agonist lipopolysaccharides (LPS) and the TLR3 ligand Poly I:C after 24 hr, as compared to the healthy control (Figure 2, panel B). This trend was not observed for the production of IL-6 and TNFα (Figure 2, panels C and D). These results indicate that the FBXW11 DNV leads to a splicing defect with skipping of exon 12, resulting in a shorter transcript and increased NF-κB signalling and downstream IL-1β production.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78469/elife-78469-fig2-v2.jpg)
+
+**Figure 2.:** Panel A shows the median fluorescence intensity expression levels of pNF-κB p65 (S529) in peripheral blood CD14 +monocytes and CD8 +T cells from a healthy control (blue) and patient 53 (red), in the absence (baseline) or presence of phorbol 12-myristate 13-acetate and ionomycin stimulation, with the absolute values indicated in the lower right corner. Panels B, C, and D display the production of IL-1β, IL-6, and TNFα, respectively, after ex vivo stimulation for 24 hr.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78469/elife-78469-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Panel A shows the agarose gel on cDNA PCR products of patient and control Epstein–Barr virus (EBV)-transformed lymphoblastoid cell lines (EBV-LCLs) treated with or without cycloheximide (CHX). Three distinct bands were identified and are indicated by arrows next to a 100bp ladder (L). Both the wildtype allele of the patient and the control show a smear, possibly indicating the presence of multiple FBXW11 isoforms. Panel B shows traces of the three bands from the agarose gel that were cut out and sent for Sanger sequencing. As the splice site variant in the patient was expected to lead to skipping of exon 12, the boundaries between exons 11, 12 and 13 were shown. The second band confirms skipping of exon 12 that results in a shorter transcript of the mutated FBXW11 allele. After CHX treatment, this band increased in size, indicating that the mutated allele undergoes nonsense mediated decay, but incomplete. Furthermore, a smaller transcript is formed in the patient, which is shown to contain part of exon 12, but not exon 13.
 
 ## Discussion
 

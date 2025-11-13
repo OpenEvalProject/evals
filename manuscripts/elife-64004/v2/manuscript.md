@@ -32,9 +32,53 @@ As most previous studies have focused on specific biomolecules undergoing PS, we
 
 ## Results
 
-## Condensates enriched in tRNA and ribosomes form in a model bacterial cytoplasm
+### Condensates enriched in tRNA and ribosomes form in a model bacterial cytoplasm
 
 A model of the cytoplasm of Mycoplasma genitalium established previously (Feig et al., 2015; Yu et al., 2016) was simulated at a coarse-grained (CG) level with one sphere per macromolecule or complex (Supplementary file 1). CG particle interactions were calibrated against results from atomistic MD simulations of concentrated protein solutions. The parameters involve only two particle-dependent properties, namely size and charge. Droplet-like condensates formed spontaneously within 20 µs (Figure 1A/B) and remained present during 1 ms simulation time. Similar results were obtained with an alternate effective charge model that resulted in better agreement between theory and experiment (see below; Figure 1—figure supplement 1) Two types of condensates were observed: one type contained predominantly tRNAs and positively charged proteins; the other type contained ribosome particles (RP) and positively charged proteins. The RP condensates also attracted the weakly negatively charged GroEL particles at the surface (Figure 1A). The condensates increased in size as the system size was increased from 100 to 300 nm (Figure 1A). This observation is consistent with PS rather than finite-size cluster formation. The presence of multiple droplets in the 300 nm system suggests incomplete convergence, but as the droplets grow in size, further merging becomes kinetically limited due to slowing diffusion. We did not find evidence for growth via Ostwald ripening where particles preferentially evaporate from smaller condensates and redeposit onto larger condensates. Further analysis focused on the condensates observed in the 100 nm system.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-v2.jpg)
+
+**Figure 1.:** (A) Initial and final frames for 100 nm box and final frames for 200 and 300 nm boxes are shown with tRNAs in orange, ribosomes in magenta, and other molecules colored according to their charges (blue toward positive charges; red toward negative charges). Sphere sizes are shown proportional to molecular sizes. Large pink spheres correspond to GroEL particles. (B) Size of the largest cluster vs. simulation time in 100 nm system. (C) Cluster size distributions for tRNA and RP during the last 500 µs in the 100 nm system.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Initial and final frames for a 1 ms simulation of a 100 nm system are shown with tRNAs in orange, ribosomes in magenta, and other molecules colored according to their charges (blue toward positive charges; red toward negative charges). Sphere sizes are shown proportional to molecular sizes. Large pink spheres correspond to GroEL particles. (B) Size of the largest cluster vs. simulation time in 100 nm system. (C) Cluster size distributions for tRNA and RP during the last 500 µs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Grid-based contours at volume fractions exceeding 10% are indicated in blue and overlaid onto the final snapshot of the system after 1 ms. The density map was calculated using 10 nm voxel sizes and molecules were counted in a specific voxel if their volume based on their van der Waals radii was covered by that voxel.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** A 2.2 nm distance cutoff was used to identify molecules as part of the condensates.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp6-v2.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** For the last 1 µs, the diffusion coefficients were calculated separately for molecules inside and outside the tRNA and RP condensates. Solid lines depict fitting functions as a function of the particle radius for the dispersed system (Dtr = 279/r2), outside of condensates (Dtr = 222/r2), inside tRNA condensates (Dtr = 235/r2), and inside RP condensates (Dtr = 144/r2).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp8-v2.jpg)
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** Intermolecular distances (d) and molecular radii (r) are given in nm.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp10-v2.jpg)
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp11-v2.jpg)
+
+**Figure 1—figure supplement 11.:** Dashed lines show results from previously published all-atom simulations (Hasnain et al., 2014). Solid lines show results from coarse-grained simulations with the spherical colloid-type model described in the Materials and methods section. A value of κ = 1.5 was applied and T = 298 K.
+
+![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp12-v2.jpg)
+
+**Figure 1—figure supplement 12.:** tRNAs inside the cluster from pairs determined with a σij+0.7 nm cutoff are shown in red. Additional tRNA molecules included in the cluster with a σij+2.2 nm cutoff are shown in pink. Other tRNA molecules not considered to be part of the cluster are shown in blue, with the rest of the molecules shown in transparent white.
+
+![Figure 1—figure supplement 13.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig1-figsupp13-v2.jpg)
 
 Cluster analysis considered interactions between the nucleic acids and positively charged proteins to obtain trajectory-averaged cluster size distributions (Figure 1C). Most tRNA (87%) was part of a condensate. The remaining fraction of tRNA existed as monomers or small clusters, suggesting coexistence of dilute and condensed phases. RP were only found in the RP condensates. Total macromolecular volume fractions inside tRNA and RP condensates were 0.42 and 0.58, respectively, whereas volume fractions for just tRNA and RP inside their respective condensates were 0.07 and 0.26. The volume of the condensates was estimated based on the overlapping van der Waals volumes of spheres inside the largest cluster with an additional probe of 2.2 nm in consistent with our cluster definition. The dilute phase volume was estimated as the remaining accessible volume after subtracting volume of condensates from the total volume. The condensates had significantly higher macromolecular densities than the rest of the simulated system (Figure 1—figure supplement 2). The moderately high volume fractions for tRNA condensates are still within the range of concentrated liquid phases (Dumetz et al., 2008), but the higher volume fractions in the RP condensate tend toward solid- or gel-like phases (Dumetz et al., 2008). Radial distribution functions of tRNA and RP from the center of the corresponding condensates show a relatively smooth decay with a soft boundary for tRNA condensates (Figure 1—figure supplement 3), that are consistent with a more dynamic phase, whereas distinct peaks and a sharper boundary for RP indicate a highly ordered arrangement in the RP condensates. The more ordered structure of the RP condensates may be an example of the kind of structured condensates resulting from a balance between homotypic and heterotypic interactions as described recently (Regy et al., 2020).
 
@@ -42,7 +86,11 @@ We observed separate condensates involving tRNA or RP, presumably due to the lar
 
 The dynamics inside and outside the condensates was analyzed in terms of translational diffusion coefficients (Dtr) calculated based on mean-squared displacements (Figure 1—figure supplement 6). Diffusion during the last 1 μs of the simulation was compared with diffusion during the first 1 μs when condensates were not yet formed. Molecule-specific values of Dtr are given in Supplementary file 1. As a function of the radius of the macromolecules (Figure 1—figure supplement 7), Dtr values follow a similar trend as observed before in atomistic simulations of the same system. Diffusion outside the condensates resembled diffusion in the dispersed phase. In tRNA condensates, the diffusion of macromolecules is similar to the dispersed phase or is moderately retarded, depending on the molecule, and consistent with reduced diffusion in increased protein concentrations seen in experiment (Muramatsu and Minton, 1988; Zimmerman and Minton, 1993). In RP condensates, diffusion is reduced to a greater extent, but significant dynamics is still maintained for most types of macromolecules as they diffuse around a relatively static RP cluster (Video 1).
 
-## Factors promoting RNA condensation in a reduced five-component model system
+![Video 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-video1.mp4.jpg)
+
+**Video 1.:** Trajectory of the 100 nm system during the last 1 µs of a 1 ms simulation with tRNAs in orange, ribosomes in magenta, and other molecules colored according to their charges (blue toward positive charges; red toward negative charges). Sphere sizes are shown proportional to molecular sizes. Large pink spheres correspond to GroEL particles.
+
+### Factors promoting RNA condensation in a reduced five-component model system
 
 A simplified five-component system was constructed to reproduce the RNA condensation observed in the cytoplasmic model. The simplified model consisted of tRNA, ribosome particles (RP), large (POSL, q = 20, r = 3.5 nm) and small (POSS, q = 1, r = 2.52 nm) positively charged proteins as well as neutral crowders (CRW, q = 0, r = 2.52 nm). tRNA and RP concentrations were initially set as in the cytoplasmic model while concentrations, sizes, and charges of the other three particle types were adjusted to match the total number of particles, total molecular volume, and total charge of the cytoplasmic system as closely as possible. Subsequently, a series of simulations were run at different concentrations and with different parameters (Supplementary file 2).
 
@@ -50,25 +98,284 @@ In simulations of the five-component model, tRNA and RP condensed separately as 
 
 RP and POSL concentrations were varied systematically, while the concentration of POSS was kept constant and the number of CRW particles was adjusted to maintain a constant total molecular volume (Supplementary file 2). Cluster size distributions were extracted (Figure 2—figure supplement 3) and the fraction of tRNA and RP in the large clusters was determined (Figure 2). Some degree of clustering occurs at all concentrations, but condensation requires that a significant fraction of particles is found in the largest clusters. Based on a criterion that at least half of the particles are found in one or few large clusters, tRNA and RP condensation occurs for [POSL]>100 μM (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-v2.jpg)
+
+**Figure 2.:** The black star indicates the conditions that match the cytoplasmic model. tRNA condensation is a phase separation process.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The black star indicates the conditions that match the full cytoplasmic model.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The black star indicates the conditions that match the full cytoplasmic model.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** The black star indicates the conditions that match the full cytoplasmic model.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Ratio of POSL vs. tRNA; (B) ratio of POSS vs. tRNA; (C) ratio of POSL vs. RP; (D) ratio of POSS vs. RP. The black star indicates the conditions that match the full cytoplasmic model.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** The black star indicates the conditions that match the full cytoplasmic model.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp8-v2.jpg)
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** Cutoffs based on σij+0.7 nm and σij+2.2 nm are indicated as red and green vertical lines, respectively, with σRNA = 1.55 nm, σPOSL = 3.12 nm, and σPOSS = 2.25 nm.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp10-v2.jpg)
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig2-figsupp11-v2.jpg)
+
 Increasing [RP] reduces the amount of tRNA in the tRNA condensates and effectively raises the critical POSL concentration above which tRNA forms condensates (Figure 2). This can be understood from competition for POSL. tRNA only interacts significantly with POSL (Figure 2—figure supplement 4) and needs POSL to form condensates, whereas RP interacts with both POSS and POSL (Figure 2—figure supplement 5) and therefore draws POSL from tRNA condensates (Figure 2—figure supplement 6). For [POSL]>500 μM, the fraction of tRNA particles in the tRNA condensates is relatively constant (Figure 2). However, the number of POSL particles in the condensates increases as the total [POSL] increases (Figure 2—figure supplement 6). This results in larger clusters and lower effective [tRNA] in the condensates at the highest values of [POSL] (Figure 2—figure supplement 7). The effect of increasing [RP] is again a depletion of POSL in the tRNA condensates, so that [tRNA] in the condensates increases with [RP] for a given value of [POSL] (Figure 2—figure supplement 7).
 
 In the simulations described so far, the total volume fraction of the system was kept constant by reducing the crowder (CRW) concentration as [POSL] and [RP] increased. Therefore, the decrease in [tRNA] inside the condensates with increasing [POSL] could be due to reduced crowder interactions in the condensate environment. To test this further, we reduced [CRW] without changing [POSL]. Reduced [CRW] also led to reduced [tRNA] in the condensate, but the effect is much smaller than when [CRW] is reduced along with an increase in [POSL] (Figure 2—figure supplement 8).
 
 In order to construct phase diagrams, simulations of the five-component model phases were carried out at a range of temperatures for selected values of [RP] and [POSL]. Cluster size distributions were extracted (Figure 3—figure supplements 1–3) and the volume fractions of tRNA in dilute and condensed phases as a function of temperature were determined based on the number of tRNA outside and inside the largest tRNA clusters. The volume of the condensed phase containing the largest tRNA cluster was calculated as described above. The resulting curves (Figure 3) show the typical features of phase diagrams with phase coexistence below critical temperatures Tc of 400–535 K. In the absence of ribosomes, that is, [RP]=0, an increase in [POSL] lowers Tc and narrows the two-phase regime (Figure 3C). This is consistent with reentrant phase behavior expected for complex coacervation of a binary mixture. However, in the presence of ribosomes, that is, [RP]=55 μM, Tc increased at the same time as the two-phase regime narrowed with increasing [POSL] (Figure 3D). Moreover, when [POSL]=180 μM, near the minimum needed for PS, an increase in [RP] slightly decreased Tc (Figure 3A/E), whereas at a higher concentration, that is, [POSL]=880 μM, Tc increased with increasing [RP] up to a maximum at 55 μM before decreasing (Figure 3B/E). These observations reflect competition between ribosomes and tRNA for interactions with POSL and more generally highlight the effects of a complex interplay between interactions in non-binary mixtures that are more representative of biological environments than simple binary mixtures.
 
-## Phase separation in experiments for binary mixtures of globular RNA and proteins
+![Figure 3.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig3-v2.jpg)
+
+**Figure 3.:** The volume fractions of tRNA in the dilute and condensed phases were obtained based on the number of tRNA particles in the dilute and condensed phases normalized by the respective volumes of the two phases (see Text). Lines in A–D were fitted according to Equations 9 and 10.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig3-figsupp3-v2.jpg)
+
+### Phase separation in experiments for binary mixtures of globular RNA and proteins
 
 The results presented so far have focused on multi-component systems that were modeled to reflect the density and distribution of particle sizes and charges in cytoplasmic environments. A key prediction is that PS due to complex coacervation may occur for a wide range of nucleic acids and positively charged proteins simply based on electrostatic complementarity. To test this idea experimentally, we now turn to binary mixtures of globular RNA and positively charged proteins. We focused on the 47-nucleotide J345 Varkud satellite ribozyme RNA, that folds into an approximately globular shape (Bonneau and Legault, 2014) and that was mixed at high concentration with common proteins with positive charges and varying sizes for which we may expect PS: myoglobin (q = +2), trypsin (q = +6), lysozyme (q = +8), lactate dehydrogenase (LDH; q = +4), and alcohol dehydrogenase (ADH; q = +8). Bovine serum albumin (BSA; q = −17, r = 2.58 nm) was added as a control, for which condensate formation is not expected due to its negative charge.
 
 Imaging via confocal microscopy of dye-labeled RNA (Figure 4 and Figure 4—figure supplements 1–6) shows well-defined fluorescent clusters for mixtures of RNA with trypsin, ADH, lysozyme, and LDH, but not for RNA with myoglobin or BSA. The background fluorescence varies significantly with protein. It is especially high for the mixtures with LDH, suggesting that only a fraction of RNA is participating in the condensates and a larger fraction of RNA remained in the dilute phase.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-v2.jpg)
+
+**Figure 4.:** Time lapse of droplet merging in RNA-trypsin mixture from fluorescence and bright-field microscopy imaging (M).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp5-v2.jpg)
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp6-v2.jpg)
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Note that the first bar represents clusters within the diffraction limit of the microscope.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp8-v2.jpg)
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig4-figsupp9-v2.jpg)
+
+**Figure 4—figure supplement 9.:** Spectral scaling was adjusted to account for higher RNA concentration in the RNA-only sample.
+
 Individual condensates are relatively small, and many appear to have sizes near or below the diffraction limit of the microscope. For RNA-trypsin mixtures, we clearly observe single droplet-shaped condensates of varying sizes that follow roughly an exponential distribution (Figure 4—figure supplement 7). We note that the concentration of Cy3-labeled RNA is only 8 µM, corresponding to 1 in 56 RNA at 0.45 mM total RNA concentration. Therefore, the fluorescent images in Figure 4 are biased toward clusters that contain at least 50 RNA molecules, whereas smaller clusters are imaged incompletely. RNA-LDH condensates appear similar but we did not attempt a quantitative size analysis due to the high background fluorescence of the RNA-LDH sample. Diffusing droplets in the RNA-trypsin mixture merge over the course of 1 min when they come into proximity (Figure 4M and Videos 2 and 3), indicative of liquid behavior inside the condensates.
+
+![Video 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-video2.mp4.jpg)
+
+**Video 2.:** Video of two representative examples of liquid droplet dynamics in trypsin-RNA mixtures with J345 RNA at 0.45 mM and proteins at 0.35 mM from confocal microscopy of fluorescent-labeled RNA (left) and corresponding bright-field imaging (right). Time evolution is accelerated 25x (i.e. the movies correspond to about 100 s in real time).
+
+![Video 3.](https://cdn.elifesciences.org/articles/64004/elife-64004-video3.mp4.jpg)
+
+**Video 3.:** Video of two representative examples of liquid droplet dynamics in trypsin-RNA mixtures with J345 RNA at 0.45 mM and proteins at 0.35 mM from confocal microscopy of fluorescent-labeled RNA (left) and corresponding bright-field imaging (right). Time evolution is accelerated 25x (i.e. the movies correspond to about 100 s in real time).
 
 For other proteins (lysozyme and ADH), we found more complex condensate morphologies (Figure 4), where smaller condensates associate to form larger, irregular-shaped condensates without merging as seen for RNA-trypsin condensates. This suggests that the condensates with these proteins are less liquid-like, although the exact nature of the condensates not involving trypsin is unclear.
 
 To further study the particle size distributions, we carried out dynamic light scattering (DLS) analysis on RNA/lysozyme and RNA/trypsin samples (Figure 5, Figure 5—figure supplements 1–2, and Table 1). The light scattering correlation functions indicate a polydisperse sample that is dominated by very long correlation times up to 1 s (Figure 5). Those long correlation times theoretically correspond to macroscopic-size particles (Stetefeld et al., 2016), but since no such particles were readily visible in the sample, we may conclude that a significant fraction of condensates exhibited very slow diffusion due to surface adsorption. From the correlation function at shorter times, multi-exponential fits suggest particles in two size regimes for RNA-trypsin and in three regimes for RNA-lysozyme. In both cases, the data indicate the presence of 10 nm-scale particles that are consistent with oligomer-size clusters of RNA and protein molecules. Such small clusters between RNA and/or proteins are expected to be present in the dilute phase due to transient associations (Nawrocki et al., 2017; Yildirim et al., 2018; Barhoum and Yethiraj, 2010; Kowalczyk et al., 2011). In both, RNA-trypsin and RNA-lysozyme sample, the DLS analysis suggests the presence of µm-size particles (somewhat smaller for trypsin than for lysozyme). In addition, the DLS data indicate the presence of particles at the light microscopy diffraction limit, around 300 nm, for the RNA-lysozyme system but not for RNA-trypsin mixtures. In fact, the DLS results are qualitatively consistent with the microscopy images and provide additional insights into the particle size distributions at and below the light diffraction limit. However, an exact quantitative interpretation of the DLS results is challenging due to the polydispersity and dynamic nature of our samples and for that reason we also did not attempt to quantify what fraction of particles would be expected in the different size regimes.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig5-v2.jpg)
+
+**Figure 5.:** Scattering intensity as a function of particle size from multi-exponential fits to the correlation functions (shown as dotted lines in A) for trypsin (orange) and lysozyme (blue) (B).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Scattering intensity correlation functions (A) and intensities as a function of particle size from multi-exponential fits (B) from individual dynamic light scattering experiments (dashed/thin lines) of mixtures of 0.1 mM J345 RNA with 0.166 mM trypsin compared with the analysis based on averaged data (thick lines).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Scattering intensity correlation functions (A) and intensities as a function of particle size from multi-exponential fits (B) from individual dynamic light scattering experiments (dashed/thin lines) of mixtures of 0.4 mM J345 RNA with 0.675 mM lysozyme compared with the analysis based on averaged data (thick lines).
+
+**Table 1.**
+ Multi-exponential fits of dynamic light scattering correlation functions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System*</th>
+      <th colspan="3">Clusters</th>
+      <th colspan="2">Size 1</th>
+      <th colspan="2">Size 2</th>
+      <th colspan="2">Size 3</th>
+      <th colspan="2">Size 4</th>
+      <th>χ2</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Dc (nm)</th>
+      <th>ac</th>
+      <th>tc</th>
+      <th>D1 (nm)</th>
+      <th>a1</th>
+      <th>D2 (nm)</th>
+      <th>a2</th>
+      <th>D3 (µm)</th>
+      <th>a3</th>
+      <th>D4 (µm)</th>
+      <th>a4</th>
+      <th>*10−3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lysozyme #1</td>
+      <td>6.8</td>
+      <td>0.076</td>
+      <td>9.4</td>
+      <td>314.5</td>
+      <td>0.197</td>
+      <td>6061</td>
+      <td>0.309</td>
+      <td>1037.0</td>
+      <td>0.919</td>
+      <td></td>
+      <td></td>
+      <td>0.362</td>
+    </tr>
+    <tr>
+      <td>Lysozyme #2</td>
+      <td>4.3</td>
+      <td>0.085</td>
+      <td>10.5</td>
+      <td>325.4</td>
+      <td>0.240</td>
+      <td>5416</td>
+      <td>0.300</td>
+      <td>730.4</td>
+      <td>0.908</td>
+      <td></td>
+      <td></td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Lysozyme #3</td>
+      <td>4.0</td>
+      <td>0.045</td>
+      <td>21.7</td>
+      <td>270.0</td>
+      <td>0.160</td>
+      <td>2585</td>
+      <td>0.163</td>
+      <td>17.6</td>
+      <td>0.190</td>
+      <td>28,373.6</td>
+      <td>0.948</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Lysozyme avg.</td>
+      <td>5.6</td>
+      <td>0.073</td>
+      <td>10.4</td>
+      <td>339.4</td>
+      <td>0.204</td>
+      <td>5848</td>
+      <td>0.275</td>
+      <td>1184.7</td>
+      <td>0.927</td>
+      <td></td>
+      <td></td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Trypsin #1</td>
+      <td>7.6</td>
+      <td>0.129</td>
+      <td>5.0</td>
+      <td>2544</td>
+      <td>0.345</td>
+      <td>30,167</td>
+      <td>0.921</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>Trypsin #2</td>
+      <td>2.7</td>
+      <td>0.051</td>
+      <td>186,625</td>
+      <td>2003</td>
+      <td>0.297</td>
+      <td>38,323</td>
+      <td>0.942</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.46</td>
+    </tr>
+    <tr>
+      <td>Trypsin #3</td>
+      <td>2.4</td>
+      <td>0.055</td>
+      <td>106,796</td>
+      <td>5210</td>
+      <td>0.575</td>
+      <td>46,527</td>
+      <td>0.801</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <td>Trypsin avg.</td>
+      <td>9.3</td>
+      <td>0.162</td>
+      <td>3.2</td>
+      <td>3680</td>
+      <td>0.417</td>
+      <td>36,967</td>
+      <td>0.893</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.31</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All systems are mixtures between protein and J345 RNA._
+
 To map out a phase diagram, we prepared RNA-trypsin mixtures at various experimentally feasible RNA and protein concentrations. PS required a minimum protein concentration, for example with [RNA]=100 µM, PS was found with [trypsin]=150 µM but not with [trypsin]=50 µM (Figure 6—figure supplement 1). At the same time, PS was lost when RNA concentrations were too high. The resulting phase diagram based on confocal microscopy imaging is shown in Figure 6 in comparison with results from theory that are discussed below.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig6-v2.jpg)
+
+**Figure 6.:** Grey filled circles indicate concentrations for which phase separation was observed experimentally based on confocal microscopy; empty squares indicate concentrations for which microscopy imaging did not show phase separation. Colors indicate predicted concentrations from theory for RNA (A) and proteins (B) in the condensed phases. No phase separation is predicted for white areas.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The single bright spot in (A) is attributed to contamination rather than phase separation.
 
 Förster resonance energy transfer (FRET) experiments also showed a significant increase in FRET efficiencies from 50 to 150 µM (Figure 7A). The comparison between the microscopy and FRET results furthermore establishes that RNA condensates at this RNA concentration can be recognized by FRET efficiencies above 0.26, whereas lower values may indicate a disperse phase. The gradual increase in FRET efficiencies from 0.24 to 0.26 upon increase of trypsin concentrations from 0 to 50 µM is interpreted to result from increasing non-condensate cluster formation (see cluster size distributions in Figure 2—figure supplement 3 at [RP]=0 with increasing protein concentration). However, as in the confocal microscopy experiments, the low concentration of fluorescence-labeled RNA limits the detection of very small clusters where only one or zero of the RNA would be labeled. The FRET results are compared with theoretical predictions (Figure 7B) as detailed below.
 
@@ -80,15 +387,37 @@ We applied circular dichroism (CD) and nuclear magnetic resonance (NMR) spectros
 
 NMR spectroscopic analysis of RNA-trypsin and RNA-lysozyme samples at PS-inducing concentrations focused on the structure of the RNA. We observed the characteristic 1H spectrum of a solution containing only J345 RNA that matches previously matched spectra for the same structure (Bonneau and Legault, 2014; Figure 4—figure supplement 9). In the presence of proteins, the characteristic peaks were retained at the same positions, although with greatly attenuated intensities (Figure 4—figure supplement 9). This was interpreted to mean that only a fraction of RNA remained sufficiently dynamic to achieve rotational averaging via molecular tumbling. From comparing the signal-to-noise ratios, we estimate that about 80% of the RNA is not visible in the RNA-lysozyme sample and 90% is invisible in the RNA-trypsin sample. Since the majority of RNA is expected to be found in the condensates, this suggests that rotational diffusion of individual RNA molecules in the condensates is retarded significantly because the condensates themselves are too large (>100 nm) to tumble on time scales allowing NMR signals to be observed (<100 ns). Moreover, if one assumes that only RNA in the dilute phases remains visible in NMR spectroscopy, the experiments provide an estimate of the fraction of RNA in the dilute vs. condensed phases, that is 20:80 in the presence of lysozyme and 10:90 in the presence of the trypsin for the concentrations studied here. Unfortunately, that also implies that there is no information about the structure of RNA inside the condensates from these experiments.
 
-## Phase separation of RNA and proteins described by simulations and theory
+### Phase separation of RNA and proteins described by simulations and theory
 
 To compare with the experimental findings, we carried out CG simulations again with the model described above but for binary mixtures of spherical particles equivalent in size and charge to the experimentally studied systems, that is, J345 RNA (q=-46, r = 1.47 nm), myoglobin (q = +2, r = 1.64 nm), trypsin (q = +6, r = 1.81 nm), lysozyme (q = +8, r = 1.54 nm), lactate dehydrogenase (LDH; q = +4, r = 2.68 nm), alcohol dehydrogenase (ADH; q = +8, r = 2.79 nm), and bovine serum albumin (BSA; q = −17, r = 2.58 nm). We also tested a spherical particle equivalent to cytochrome C (q = +11, r = 1.45 nm) which was not studied experimentally because of heme absorption. We observed the formation of condensates at sufficiently high-salt concentrations. With κ = 0.7 (about 20 mM salt), condensates formed with lysozyme, trypsin, LDH, and ADH, but not with cytochrome C, myoglobin, or BSA (Figure 8). Very similar results were also found with an alternative effective charge model (according to Equation 6) as shown in Figure 8—figure supplement 1.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig8-v2.jpg)
+
+**Figure 8.:** [RNA]=0.493 mM and [protein]=0.350 mM. Orange and blue spheres show RNA and proteins, according to size. Concentrations inside the condensates were [RNA:lysozyme]=20.2:20.2 mM; [RNA:trypsin]=16.5:15.2 mM; [RNA:LDH]=9.6:7.2 mM; [RNA:ADH]=9.5:6.7 mM.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** [RNA]=0.493 mM and [protein]=0.350 mM. Orange and blue spheres show RNA and proteins, according to size. Concentrations inside the condensates were [RNA:lysozyme]=18.6:18.4 mM; [RNA:trypsin]=15.6:14.8 mM; [RNA:LDH]=8.8:7.2 mM; [RNA:ADH]=8.7:6.6 mM.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** rRNA = 1.47 nm, qRNA = −46, [RNA]=0.45 mM, [protein]=0.35 mM. Colors indicate proteins: trypsin (blue), alcohol dehydrogenase (violet), lysozyme (red), lactate dehydrogenase (tan), myoglobin (green), cytochrome C (dark red).
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig8-figsupp3-v2.jpg)
+
 The simulation results qualitatively match the experimental results in terms of which proteins promote PS. Moreover, the fraction of RNA in the dilute phase is higher with lysozyme than with trypsin (32% vs. 26–27% using Equation 5 or Equation 6 from averages over the last 100 µs) in qualitative agreement with the estimates from the NMR experiments. We note that an overall larger fraction of RNA is expected in the dilute phase in the simulations due to an excess concentration of RNA (0.439 mM) compared to the protein concentration (0.350 mM), whereas concentrations of RNA and protein were equal in the NMR experiments (0.150 mM). However, the scale of the simulations is too small to directly compare the condensate sizes with the experimental size distributions.
 
-To generate more extensive phase diagrams, a theoretical model was developed based on the CG simulations. Briefly, the model approximates the chemical potential for either RNA or proteins in condensed and dilute phases based on a decomposition into enthalpy and entropy: µ=∆h-T∆s. The enthalpy is determined from convoluting the coarse-grained interaction potential U(r) (Equation 3) with radial distribution functions g^(r) of RNA-RNA, RNA-protein, and protein-protein interactions in the condensed and dilute phases extracted from CG simulations and scaled by particle densities ρ:(1)Δh=2πρ∫g^(r)U(r)r2dr
+To generate more extensive phase diagrams, a theoretical model was developed based on the CG simulations. Briefly, the model approximates the chemical potential for either RNA or proteins in condensed and dilute phases based on a decomposition into enthalpy and entropy: $µ=\Deltah-T\Deltas$. The enthalpy is determined from convoluting the coarse-grained interaction potential U(r) (Equation 3) with radial distribution functions $g^(r)$ of RNA-RNA, RNA-protein, and protein-protein interactions in the condensed and dilute phases extracted from CG simulations and scaled by particle densities ρ:
 
-The entropy was estimated from the ratio of particle densities ρ between the entire system and either the dilute or condensed phase:(2)∆s=Rlogρtotalρphase
+$$
+Δh=2\piρ\intg^(r)U(r)r^{2}dr
+$$
+
+The entropy was estimated from the ratio of particle densities ρ between the entire system and either the dilute or condensed phase:
+
+$$
+\Deltas=Rlog\frac{ρ_{total}}{ρ_{phase}}
+$$
 
 Solutions with respect to the concentrations of protein and RNA in dilute and condensed phases were determined numerically under the conditions that µcondensed = µdilute for either RNA, protein, or both, and that molecular volume packing fractions did not exceed maximum packing densities. Total free energies were then calculated, taking also into account mixing entropy contributions between RNA and protein particles. PS was predicted based on the solution with the lowest free energy.
 
@@ -97,6 +426,38 @@ The theoretical approach is essentially a variation of Voorn-Overbeek theory (Ov
 In developing the theory, we found that using the alternative effective charge model according to Equation 6 (Figure 1—figure supplement 8) results in better agreement between theory and experiment and therefore we used this model here. We also use a slightly different Debye-Hückel screening term, that is, κ = 1.17, which gave better agreement between theory and experiment.
 
 Application of the theory predicts that PS should occur for a wide range of protein radii and charges as long as proteins are large enough and carry sufficiently positive charge (Figure 9). More specifically, radius/charge combination corresponding to lysozyme, trypsin, LDH, and ADH are predicted to lead to PS as in the experiments and CG simulations. The radius and charge corresponding to myoglobin is just outside the PS region (Figure 9) again consistent with the lack of PS in the experiment and simulations. The theory also predicts PS for cytochrome C, for which PS was not seen in the simulations.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig9-v2.jpg)
+
+**Figure 9.:** Colors show [RNA] (A, B) and [protein] (C, D) in dilute (A, C) and condensed (B, D) phases. Red indicates zero concentration. [RNA]=0.45 mM, [protein]=0.35 mM, κ = 1.17, and T = 298 K. Corresponding properties for proteins are denoted as follows: myoglobin (M); trypsin (T); lysozyme (L); cytochrome C (C); LDH (D); ADH (A).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Colors indicate predicted concentrations for RNA (A, B) and proteins (C, D) in dilute (A, C) and condensed (B, D) phases. Bright red color indicates zero concentration (i.e. no phase coexistence for that component); no phase separation is predicted for white areas. rRNA = 1.47 nm, qRNA = −46, rprotein = 2.79 nm, qprotein = 8. The Debye-Hückel screening term was set to κ = 1.17 and T = 298 K.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Colors indicate predicted concentrations for RNA (A, B) and proteins (C, D) in dilute (A, C) and condensed (B, D) phases. Bright red color indicates zero concentration (i.e. no phase coexistence for that component); no phase separation is predicted for white areas. rRNA = 1.47 nm, qRNA = −46, rprotein = 2.68 nm, qprotein = 4. The Debye-Hückel screening term was set to κ = 1.17 and T = 298 K.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** Colors indicate predicted concentrations for RNA (A, B) and proteins (C, D) in dilute (A, C) and condensed (B, D) phases. Bright red color indicates zero concentration (i.e. no phase coexistence for that component); no phase separation is predicted for white areas. rRNA = 1.47 nm, qRNA = −46, rprotein = 1.54 nm, qprotein = 8. The Debye-Hückel screening term was set to κ = 1.17 and T = 298 K.
+
+![Figure 9—figure supplement 4.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig9-figsupp4-v2.jpg)
+
+**Figure 9—figure supplement 4.:** Colors indicate predicted concentrations for RNA (A, B) and proteins (C, D) in dilute (A, C) and condensed (B, D) phases. Bright red color indicates zero concentration (i.e. no phase coexistence for that component); no phase separation is predicted for white areas. rRNA = 1.47 nm, qRNA = −46, rprotein = 1.81 nm, qprotein = 6. The Debye-Hückel screening term was set to κ = 1.17 and T = 298 K.
+
+![Figure 9—figure supplement 5.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig9-figsupp5-v2.jpg)
+
+**Figure 9—figure supplement 5.:** Colors indicate predicted concentrations for RNA (A, B) and proteins (C, D) in dilute (A, C) and condensed (B, D) phases. Bright red color indicates zero concentration (i.e. no phase coexistence for that component); no phase separation is predicted for white areas. rRNA = 1.47 nm, qRNA = −46, rprotein = 1.45 nm, qprotein = 11. The Debye-Hückel screening term was set to κ = 1.17 and T = 298 K.
+
+![Figure 9—figure supplement 6.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig9-figsupp6-v2.jpg)
+
+**Figure 9—figure supplement 6.:** Colors indicate predicted concentrations for RNA (A, B) and proteins (C, D) in dilute (A, C) and condensed (B, D) phases. Bright red color indicates zero concentration (i.e. no phase coexistence for that component); no phase separation is predicted for white areas. rRNA = 1.47 nm, qRNA = −46, rprotein = 1.64 nm, qprotein = 2. The Debye-Hückel screening term was set to κ = 1.17 and T = 298 K.
+
+![Figure 9—figure supplement 7.](https://cdn.elifesciences.org/articles/64004/elife-64004-fig9-figsupp7-v2.jpg)
+
+**Figure 9—figure supplement 7.:** Results represent averages over three subsequent values from values obtained at protein concentrations at increments of 0.01 mM.
 
 The theory reproduces an expected temperature dependence of PS with protein-dependent critical maximal temperatures (Figure 8—figure supplement 2). The electrostatic nature of PS also suggests that changes in salt concentrations would affect the findings and the results are indeed sensitive to the value of κ. However, the theoretical treatment is too limited due to the mean-field nature of the Debye-Hückel formalism to make meaningful predictions of salt effects. More specifically, the model is only valid for low ionic strengths and ignores entropic consequences of ion partitioning between condensed and dilute phases that are an important contribution to PS in complex coacervates (Vis et al., 2015).
 
@@ -124,7 +485,7 @@ The cytoplasmic model described here is a first step toward modeling biologicall
 
 Finally, we expect that further insights could be gained from atomistic simulations of RNA-protein clusters initiated from configurations in the CG simulations to better understand the detailed molecular interactions stabilizing the condensates. On the experimental side, we only focused on RNA without visualizing protein condensation. Moreover, there is a need to follow up on this work with in vivo studies to establish how ubiquitous the condensates described here are under cellular conditions.
 
-## Conclusions
+### Conclusions
 
 We report phase separation of RNA and proteins based on a universal principle of charge complementarity that does not require polymers or multi-valency via specific interactions. The results are supported by coarse-grained simulations, theory, and experimental validation via microscopy, FRET, and NMR spectroscopy as well as DLS experiments. Condensate formation depends on concentration, size, and charge of the proteins but appears to be possible for typical RNA and common proteins. Simulation results, furthermore, suggest that such phase separation may occur in heterogenous cellular environment, not just between tRNA and cellular proteins but also, in separate condensates, between ribosomes and proteins. Further computational and experimental studies are needed to gain more detailed insights into the exact molecular nature of the condensates described here.
 
@@ -132,13 +493,95 @@ The larger implication of the work presented here is that charge-driven phase se
 
 ## Materials and methods
 
-## Coarse-grained model
+### Coarse-grained model
 
-CG simulations were run using a modified version of a previously introduced colloid-type spherical model (Mani et al., 2014). In this model, pair interactions consist of a short-range 10–5 Lennard-Jones potential and a long-range Debye Hückel potential according to:(3)Urij=4εσijrij10-σijrij5+Aij+A0κσijrije-rijκσijwhere rij is the inter-particle distance, σij is the distance between particles at which the potential is zero, ε is the strength of short-range attraction, Aij+A0 describes attractive or repulsive long-range interactions, and κσij is the Debye-Hückel screening length. Only Aij and σij vary between different particles according to charge and size.
+CG simulations were run using a modified version of a previously introduced colloid-type spherical model (Mani et al., 2014). In this model, pair interactions consist of a short-range 10–5 Lennard-Jones potential and a long-range Debye Hückel potential according to:
+
+$$
+Ur_{ij}=4\epsilon\frac{\sigma_{ij}}{r_{ij}}^{10}-\frac{\sigma_{ij}}{r_{ij}}^{5}+\frac{A_{ij}+A_{0}κ\sigma_{ij}}{r_{ij}}e^{-\frac{r_{ij}}{κ\sigma_{ij}}}
+$$
+
+where rij is the inter-particle distance, σij is the distance between particles at which the potential is zero, ε is the strength of short-range attraction, Aij+A0 describes attractive or repulsive long-range interactions, and κσij is the Debye-Hückel screening length. Only Aij and σij vary between different particles according to charge and size.
 
 The model was initially parameterized from previously published all-atom simulations of homogeneous mixtures of chicken villin headpiece (‘villin’) (Nawrocki et al., 2017) and subsequently validated with heterogeneous mixtures of protein G, villin, and ubiquitin (Nawrocki et al., 2019a) as summarized in Table 2.
 
-A common value of ε = 4.0 kJ/mol was used for all particles in the short-range 10–5 Lennard-Jones potential. Particle size was taken into account by first determining the radii ri of spheres with equivalent volumes to the atomistic molecular volumes of a given macromolecule or complex (see Supplementary file 1 for molecules in the cytoplasmic model system). Lennard-Jones parameters σi were obtained from the radii ri according to:(4)σi=2-16∙ri
+**Table 2.**
+ Simulation systems for coarse-grained model validation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th colspan="3">Villin</th>
+      <th colspan="3">Protein G</th>
+      <th colspan="3">Ubiquitin</th>
+      <th>Box (nm)</th>
+    </tr>
+    <tr>
+      <th>Volume percentage</th>
+      <th>G/L</th>
+      <th>mM</th>
+      <th>Np*</th>
+      <th>G/L</th>
+      <th>mM</th>
+      <th>Np*</th>
+      <th>G/L</th>
+      <th>mM</th>
+      <th>Np*</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5%</td>
+      <td>9.7</td>
+      <td>2.3</td>
+      <td>5</td>
+      <td>14.3</td>
+      <td>2.3</td>
+      <td>5</td>
+      <td>19.8</td>
+      <td>2.3</td>
+      <td>5</td>
+      <td>15.3</td>
+    </tr>
+    <tr>
+      <td>10%</td>
+      <td>19.0</td>
+      <td>4.5</td>
+      <td>10</td>
+      <td>28.2</td>
+      <td>4.5</td>
+      <td>10</td>
+      <td>39.0</td>
+      <td>4.5</td>
+      <td>10</td>
+      <td>15.4</td>
+    </tr>
+    <tr>
+      <td>30%</td>
+      <td>57.9</td>
+      <td>13.8</td>
+      <td>30</td>
+      <td>85.7</td>
+      <td>13.8</td>
+      <td>30</td>
+      <td>118.6</td>
+      <td>13.8</td>
+      <td>30</td>
+      <td>10.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Number of proteins._
+
+A common value of ε = 4.0 kJ/mol was used for all particles in the short-range 10–5 Lennard-Jones potential. Particle size was taken into account by first determining the radii ri of spheres with equivalent volumes to the atomistic molecular volumes of a given macromolecule or complex (see Supplementary file 1 for molecules in the cytoplasmic model system). Lennard-Jones parameters σi were obtained from the radii ri according to:
+
+$$
+\sigma_{i}=2^{-\frac{1}{6}}∙r_{i}
+$$
 
 Pairwise parameters σij were calculated as σij = σi + σj.
 
@@ -146,39 +589,53 @@ In the long-range Debye-Hückel type potential, a common value of A0 = 3.0 kJ/
 
 The nominal net charge of a given molecule was converted to effective charges to account for counterion condensation around highly charged macromolecules (Manning, 1978). We distinguish here effectively bound ions that lead to an effectively reduced charge vs. ions that remain mobile in solution and give rise to Debye screening as described below. Generally, the effective charge remains close to nominal charges for small charges, but for highly charged molecules, in particular negatively charged nucleic acids and nucleic acid complexes such as the ribosome, the effective charge is reduced significantly (Diehl and Levin, 2004; Wishnia and Boussert, 1977; Trylska et al., 2004). Charge neutralization is more pronounced with divalent ions such as Mg2+ vs. monovalent ions such as Na+ or K+ (Diehl and Levin, 2004; Templeton and Elber, 2018; Yoo and Aksimentiev, 2012). But the amount of Mg2+ ions in biological systems is limited and typically not high enough to neutralize the charge of all the nucleic acids so that additional charge neutralization by monovalent ions remains a significant factor (Akanuma et al., 2014).
 
-Here, we propose the following two expressions to obtain effective charges:(5)qeff,1=signq∙20∙logq20+1(6)qeff,2=signq∙0.6q∙logq2+1
+Here, we propose the following two expressions to obtain effective charges:
+
+$$
+q_{eff,1}=signq∙20∙log\frac{q}{20}+1
+$$
+
+
+
+$$
+q_{eff,2}=signq∙0.6\sqrt{q}∙log\frac{q}{2}+1
+$$
 
 Both empirical formulae give effective charges close to nominal charges for molecules with small charges and highly reduced charges for molecules with large formal charges (Figure 1—figure supplement 8). For a DNA molecule with a nominal charge of −45, atomistic MD simulations suggest effective charges of −10 to −20 under the assumption that ions within 1 nm from the solute surface are effectively bound (Templeton and Elber, 2018; Yoo and Aksimentiev, 2012); at the other end, effective charges between −100 and −800 are estimated for ribosomal particle with a nominal charge of about −4000 based on colloid models (Diehl and Levin, 2004) or electrostatic potential calculations (Trylska et al., 2004), assuming a mixture of divalent and monovalent ions is involved in neutralization. Equations 5 and 6 are both consistent with these estimates. Equation 5 was used initially and screens smaller charges less and larger charges more strongly compared to Equation 6 which was adopted after adjusting the theory to better match experimental results. Neither expression considers ionic concentration as counterion condensation does not depend strongly on concentration (Yoo and Aksimentiev, 2012). Moreover, negatively and positively charged solutes are treated in the same manner even though the binding strength of biological anions (Cl-) and cations (K+, Na+, Mg2+) to oppositely charged macromolecules may be asymmetric. However, since highly positively charged macromolecules are uncommon, this assumption may not have significant consequences for the systems studied here.
 
-The effective charges calculated either via Equation 5 or Equation 6 were then converted to Ai values:(7)Ai=signqi34qi,eff
+The effective charges calculated either via Equation 5 or Equation 6 were then converted to Ai values:
+
+$$
+A_{i}=signq_{i}\sqrt{\frac{3}{4}q_{i,eff}}
+$$
 
 Pairwise values were determined as Aij=Ai*Aj and the factor ¾ was determined by parameterization against the atomistic MD simulations.
 
 The Debye screening length in Equation 3 is κσij, that is, it depends on particle size as in the original model by Mani et al., 2014 in order to better model screening interactions between particles of very different sizes with screened charges that are mostly near the surface. This complicates interpretation of κ in terms of specific salt concentrations. However, as an illustration one may consider a typical smaller protein or RNA with σii of 3 nm where κ = 0.5, 1.0, and 1.5 would correspond to monovalent ion concentrations of 40, 10, and 5 mM, respectively. Note, that these ion concentrations reflect excess ion concentrations after subtracting condensed counterions as those are accounted for in the effective charges according to Equation 5 or 6. Therefore, total ion concentrations in experiment corresponding to a given value of κ in our model should be significantly higher by factors of 2–10 depending on the charges of the considered macromolecules.
 
-## Coarse-grained molecular dynamics simulations
+### Coarse-grained molecular dynamics simulations
 
 MD simulations of the CG model were run up to 1 ms using OpenMM (Eastman et al., 2017) on GPU machines. The interaction potential from Equation 3 was implemented as a custom non-bonded interaction potential via OpenMM’s Python interface. A Langevin thermostat was applied with a temperature of 298 K unless noted otherwise and a friction coefficient of 1 ps−1. As a result, the simulations described here reflect stochastic dynamics of our CG model. A value of κ = 1.5 was used to describe salt screening unless noted otherwise. The timestep for the simulations was set to 1 ps. Frames were saved every 1 ns for simulations of the 100 nm cytoplasm model, every 10 ns for the concentrated protein simulations used for parameterization, and every 100 ns for all other systems. The pairwise potential in Equation 3 was evaluated with a cutoff 49.5 nm. A switching function was applied to be effective at 49 nm. In total, about 270 ms of combined simulation time was run for all systems described here. The total computational cost for these simulations was around 350 GPU days based on timing on a single NVIDIA GeForce GTX 1080 Ti GPU card.
 
 For validation, CG simulations of the systems with the same concentrations as in the atomistic simulations were performed for 100 μs. The CG simulations compared favorably with the atomistic simulations based on pairwise radial distribution functions and cluster size distribution (Figure 1—figure supplement 11).
 
-## Bacterial cytoplasm model
+### Bacterial cytoplasm model
 
 We constructed a coarse-grained model of Mycoplasma genitalium cytoplasm based on our previously established atomistic model (Yu et al., 2016; Feig et al., 2015). All the macromolecules and complexes were converted to single spherical particles where the particle center initially coincided with the center of mass of the molecules in the atomistic model. Sphere radii were determined as described above based on equivalent volumes, and effective charges were determined from nominal charges according to Equation 5 or Equation 6. A list of all particles with their size, charge, effective charge and concentration is given in Supplementary file 1. The initial system is a cubic box with a size of 100 nm. Additional systems were generated with 200 and 300 nm box sizes by replicating the initial system accordingly. MD simulations were run up to 1 ms as described above.
 
-## Five-component model systems
+### Five-component model systems
 
 A representative model of the cytoplasmic system consisted of five components, with an effective charge and volume fraction matching the values in the cytoplasmic system. The components consist of tRNA, ribosome particles (RP), positively charged proteins with small (POSS) and large (POSL) sizes and charges and neutral crowders (CRW) (Supplementary file 2). tRNA and RP have the same size and charge as in the full cytoplasmic system. The RP concentration includes RP, that is, complete ribosomes, in the cytoplasmic model as well as additional numbers of ribosomal fragments RR23, R50P RR16 and R30P (Supplementary file 1). The tRNA concentration was adjusted to include all particles with a nominal charge between −100 and −25, except for GroEL, which has a very large size and was not found as part of the tRNA condensates in the cytoplasmic simulations. Concentrations of the positively charged proteins were adjusted to keep the total effective charge of the system close to the cytoplasmic model. The system components were then varied to achieve different concentrations of RP and positively charged particles (Supplementary file 2). Simulations of the five-component system were performed as described above over 1 ms using only effective charges calculated via Equation 5.
 
-## Two-component model systems
+### Two-component model systems
 
 Two-component RNA-protein systems were simulated with the same CG model as described above for 1 ms to make predictions for experimentally testable systems. Effective charges were calculated either via Equation 5 or Equation 6. RNA particles were modeled after the 47-nucleotide J345 Varkud satellite ribozyme RNA, that folds into an approximately globular shape (Bonneau and Legault, 2014) with rRNA = 1.47 nm and qRNA = −46. Proteins were considered with the following charges and radii: myoglobin (+2, 1.64 nm), trypsin (+6, 1.81 nm), lysozyme (+8, 1.54 nm), cytochrome C (+11, 1.45 nm), lactate dehydrogenase (+4, 2.68 nm), alcohol dehydrogenase (+8, 2.79 nm), and bovine serum albumin (−17, 2.58 nm).
 
-## MD simulation analysis
+### MD simulation analysis
 
 Analysis of the CG simulations was performed for the simulation time between 500 µs to 1 ms unless stated otherwise using in-house code in conjunction with the MMTSB Tool Set (Feig et al., 2004).
 
-## Cluster analysis
+#### Cluster analysis
 
 We previously analyzed macromolecular clustering using specific distance cutoffs that were suitable for capturing direct molecular interactions leading to transient clusters (Nawrocki et al., 2017; Nawrocki et al., 2019a; Nawrocki et al., 2019b). From those studies, we arrived at a definition of clusters based on contacts where center of mass distances between spherical particles are less than σij + 0.7 nm. σij is the pair-wise Lennard-Jones parameters in Equation 1 defined as described above in Equation 4. This criterion was applied to all pairs of particles, of same or different type, and connected graphs were generated from the pairs determined to be in contact. All particles within such a graph were then considered to be part of one cluster.
 
@@ -186,128 +643,460 @@ We initially applied this criterion here as well in a slightly modified version 
 
 We further validated whether this criterion is more generally applicable to the cytoplasmic system by comparing with results from geometry-based scale-free hierarchical clustering. We applied such an algorithm to just tRNA particles during the last 100 µs of the simulation of the cytoplasmic systems so that clusters could be defined without having to invoke any contact-based criteria and without having to define clusters via interactions with other system components. We used the hierarchical clustering method implemented in the MMTSB Tool Set (Feig et al., 2004), but with a more recently established criterion for determining the optimal number of clusters (Zhou et al., 2017). This approach gave fluctuating cluster sizes between 180 and 260 tRNA molecules with a peak near 240 molecules (Figure 1—figure supplement 13). Clusters based on the σij + 2.2 nm distance cutoff for tRNA-protein pairs resulted in a narrower distribution but with a peak at the same number of molecules, whereas shorter cutoffs gave significantly smaller clusters. The broader variation in cluster sizes from the geometrical clustering reflects in part a lack of robustness in estimating optimal cluster sizes from scale-free hierarchical clustering (Zhou et al., 2017), and this is also the reason for why we used the contact-based criterion here instead of hierarchical geometrical clustering for determining tRNA and RP clusters.
 
-## Diffusion analysis
+#### Diffusion analysis
 
-Translational diffusion (Dtr) was calculated for each molecule in the cytoplasmic system from the mean square displacement (MSD) of molecules between time t and (t+τ) for a given lag time τ. Diffusion coefficients were then obtained from linear fits to MSD(τ) vs. τ (Figure 1—figure supplement 6).(8)Dtr=MSDτ6τ
+Translational diffusion (Dtr) was calculated for each molecule in the cytoplasmic system from the mean square displacement (MSD) of molecules between time t and (t+τ) for a given lag time τ. Diffusion coefficients were then obtained from linear fits to MSD(τ) vs. τ (Figure 1—figure supplement 6).
+
+$$
+D_{tr}=\frac{MSD\tau}{6\tau}
+$$
 
 The first and last 1 μs of the cytoplasmic simulations were resampled so that conformations could be saved with a 1-ns interval. This allowed the analysis of all molecules in the dispersed and condensed states at the beginning and end of the trajectory and a comparison with previously published diffusion rates of macromolecules in the same system simulated in atomistic detail during similar time scales (Yu et al., 2016). In this case, the slope of MSD(τ) was fitted up until τ = 20 ns. Diffusion coefficients were calculated separately for molecules inside the tRNA and RP condensates as well as for molecules in the dilute phase. Molecules were considered to be part of a condensate if they remained part of the condensate during the entire lag time τ.
 
 For the five-component model system, diffusion was analyzed based on the last 100 µs of the simulations based on snapshots saved with a 100-ns interval and determining the slope of MSD(τ) up until τ = 2 µs.
 
-## Phase separation analysis
+#### Phase separation analysis
 
-In order to determine critical temperatures, CG simulations were performed at temperatures ranging from 300 to 500 K in 10 K increments using the Langevin thermostat. The critical temperatures and concentration were obtained by fitting the temperature to the coexisting volume fractions using the following formulas (Guggenheim, 1945):(9)ϕH-ϕL=ATc-T0.32(10)12(ϕH+ϕL)=ϕC+B(T-Tc)where φH and φL are the volume fractions of tRNA inside and outside of the clusters respectively, T is the temperature, Tc is the critical temperature and φc is the critical volume fraction. This calculation was done for the model system simulations at different RP and POSL concentrations (Supplementary file 2).
+In order to determine critical temperatures, CG simulations were performed at temperatures ranging from 300 to 500 K in 10 K increments using the Langevin thermostat. The critical temperatures and concentration were obtained by fitting the temperature to the coexisting volume fractions using the following formulas (Guggenheim, 1945):
 
-## Analytical theory describing condensation between RNA and proteins
+$$
+ϕ_{H}-ϕ_{L}=AT_{c}-T^{0.32}
+$$
+
+
+
+$$
+\frac{1}{2}(ϕ_{H}+ϕ_{L})=ϕ_{C}+B(T-T_{c})
+$$
+
+where φH and φL are the volume fractions of tRNA inside and outside of the clusters respectively, T is the temperature, Tc is the critical temperature and φc is the critical volume fraction. This calculation was done for the model system simulations at different RP and POSL concentrations (Supplementary file 2).
+
+### Analytical theory describing condensation between RNA and proteins
 
 An analytical model was constructed to reproduce the phase behavior seen in the simulations and allow a wider range of parameters to be explored. The analysis focuses on a two-component system consisting of a mixture of negatively charged particles R, equivalent to the RNA in the simulations, and particles P, equivalent to proteins, typically with a positive charge. The particles have charges qR, qP and radii rR, rP. We consider a system of volume V in which R and P particles are present in total concentrations of cR and cP. However, we do not include any finite-size effects and therefore the following analysis is scale-independent.
 
-We assume that a phase-separated state is formed with a high-density condensate of volume Vc and a low-density dilute phase of volume Vd = V-Vc, that is, there is no change in the total system volume upon phase separation. The concentrations of R and P particles in the dilute and condensed phases are denoted as cR,d, cP,d, cR,c, and cP,c. From the concentrations, number densities ρR,d, ρP,d, ρR,c, and ρP,c  for R and P particles in the dilute and condensed phases are obtained according to ρ=cmM∙NA1027nm3.
+We assume that a phase-separated state is formed with a high-density condensate of volume Vc and a low-density dilute phase of volume Vd = V-Vc, that is, there is no change in the total system volume upon phase separation. The concentrations of R and P particles in the dilute and condensed phases are denoted as cR,d, cP,d, cR,c, and cP,c. From the concentrations, number densities $ρ_{R,d}$, $ρ_{P,d}$, $ρ_{R,c}$, and $ρ_{P,c}$ for R and P particles in the dilute and condensed phases are obtained according to $ρ=\frac{c}{mM}∙\frac{N_{A}}{10^{27}nm^{3}}$.
 
-Mass conservation requires that:V-VcρR,d+VcρR,c=VρRand(11)V-VcρP,d+VcρP,c=VρPleaving Vc and ρR,c, and ρP,c as independent variables to be determined for a given system in case of phase separation.
+Mass conservation requires that:
+
+$$
+V-V_{c}ρ_{R,d}+V_{c}ρ_{R,c}=Vρ_{R}
+$$
+
+and
+
+$$
+V-V_{c}ρ_{P,d}+V_{c}ρ_{P,c}=Vρ_{P}
+$$
+
+leaving Vc and ρR,c, and ρP,c as independent variables to be determined for a given system in case of phase separation.
 
 In general, the following scenarios are possible:
 
 Which of these possible scenarios is assumed, depends on the total free energy of the system.
 
-In order to determine the total free energy of the system, we begin by estimating the chemical potential for a particle either in the dilute (d) and condensed (c) phase from enthalpies and entropies according to:μR,d=ΔhR,d−TΔsR,dµP,d=∆hP,d-T∆sP,dµR,c=∆hR,c-T∆sR,c(12)µP,c=∆hP,c-T∆sP,c
+In order to determine the total free energy of the system, we begin by estimating the chemical potential for a particle either in the dilute (d) and condensed (c) phase from enthalpies and entropies according to:
+
+$$
+\mu_{R,d}=Δh_{R,d}−TΔs_{R,d}
+$$
+
+
+
+$$
+µ_{P,d}=\Deltah_{P,d}-T\Deltas_{P,d}
+$$
+
+
+
+$$
+µ_{R,c}=\Deltah_{R,c}-T\Deltas_{R,c}
+$$
+
+
+
+$$
+µ_{P,c}=\Deltah_{P,c}-T\Deltas_{P,c}
+$$
 
 In the following, only terms for the dilute phase are given. The terms for the condensed phase are obtained in an equivalent manner.
 
-The enthalpy terms are decomposed into interactions of R-R, P-P, and R-P pairs:(13)∆hR,d=∆hd, RR+∆hd, RP(14)∆hP,d=∆hd, PR+∆hd, PP
+The enthalpy terms are decomposed into interactions of R-R, P-P, and R-P pairs:
 
-Each pairwise interaction energy is estimated from the coarse-grained interaction potential by assuming a spherically symmetric distribution of particles but modulated as a function of distance according to radial distribution function extracted from simulations for each pair. This amounts to convoluting the pairwise interaction potential U (see Equation 3) with scaled volume- and density-normalized radial distribution functions g^ as follows:∆hd, RR=12ρR,d∫Vg^RR,drURRrd3r(15)                 =2πρR,d∫0rmaxg^RR,drURRrr2dr(16)∆hd,PP=2πρP,d∫0rmaxg^PP,drUPPrr2dr(17)∆hd, RP=2πρP,d∫0rmaxg^RP,drURPrr2dr(18)∆hd, PR=2πρR,d∫0rmaxg^PR,drUPRrr2drwhere the factor 1/2 corrects for double-counted self-interactions.
+$$
+\Deltah_{R,d}=\Deltah_{d,RR}+\Deltah_{d,RP}
+$$
 
-Different radial distribution functions were used for dilute and condensed environments (Figure 2—figure supplement 10). The g(r) functions extracted from the simulations were truncated at 20 nm and set to a constant value of 1 for larger radii to remove finite-size artifacts. Although the g(r) functions were determined from simulations with specific sizes rR,MD, rP,MD of the R and P particles, other particle sizes could be considered by scaling the radial dependence of the g(r) functions according to the ratios rR/rR,MD, rP/rP,MD, and (rR+rP)/(rR,MD+rP,MD) for R-R, P-P, and R-P interactions. The upper integration limit rmax was set to 100 nm for all interactions. At that radius and above, U(r) is negligible for the range of radii and charges considered here. With the fixed integration limit, the integrals in Equations 15 to 18 vary only with the charges and radii of particles R and P, and, thus, they are independent of particle concentrations. Then, the enthalpy contributions can be written as:(19)∆hd, RR=ρR,dxd,RR(20)∆hd,PP=ρP,dxd,PP(21)∆hd, RP=ρP,dxd,RP(22)∆hd, PR=ρR,dxd,PRwhere the x values represent the integrals in Equations 15 to 18 multiplied by 2π.
 
-The entropy term was calculated based on the change of concentration in either dilute or condensed phases relative to the concentration in a fully disperse, non-separated system, which is the total system concentration, that is, for the dilute phase:(23)∆sR,  d=RlogcRcR,d=RlogρRρR,d(24)∆sP,  d=RlogcPcP,d=RlogρPρP,dwhere R is the universal gas constant. In estimating the entropy for the condensed phase, the finite volumes of the R and P particles were subtracted from the condensed phase volume Vc:(25)∆sR,  c=RlogρRρR,c∙1-ρR,cVR+ρP,cVP(26)∆sP,  c=RlogρPρP,c∙1-ρR,cVR+ρP,cVPwith the molecular volumes calculated from the radii of the spherical R and P particles:VR=4π3rR3and(27)VP=4π3rP3
 
-Coexistence of the dilute and condensed phases assumes equilibrium, that is:(28)µR,d=µR,c(29)µP,d=µP,c
+$$
+\Deltah_{P,d}=\Deltah_{d,PR}+\Deltah_{d,PP}
+$$
+
+Each pairwise interaction energy is estimated from the coarse-grained interaction potential by assuming a spherically symmetric distribution of particles but modulated as a function of distance according to radial distribution function extracted from simulations for each pair. This amounts to convoluting the pairwise interaction potential U (see Equation 3) with scaled volume- and density-normalized radial distribution functions $g^$ as follows:
+
+$$
+\Deltah_{d,RR}=\frac{1}{2}ρ_{R,d}\int_{V}^{}g^_{RR,d}rU_{RR}rd^{3}r
+$$
+
+
+
+$$
+=2\piρ_{R,d}\int0r_{max}g^_{RR,d}rU_{RR}rr^{2}dr
+$$
+
+
+
+$$
+\Deltah_{d,PP}=2\piρ_{P,d}\int0r_{max}g^_{PP,d}rU_{PP}rr^{2}dr
+$$
+
+
+
+$$
+\Deltah_{d,RP}=2\piρ_{P,d}\int0r_{max}g^_{RP,d}rU_{RP}rr^{2}dr
+$$
+
+
+
+$$
+\Deltah_{d,PR}=2\piρ_{R,d}\int0r_{max}g^_{PR,d}rU_{PR}rr^{2}dr
+$$
+
+where the factor 1/2 corrects for double-counted self-interactions.
+
+Different radial distribution functions were used for dilute and condensed environments (Figure 2—figure supplement 10). The g(r) functions extracted from the simulations were truncated at 20 nm and set to a constant value of 1 for larger radii to remove finite-size artifacts. Although the g(r) functions were determined from simulations with specific sizes rR,MD, rP,MD of the R and P particles, other particle sizes could be considered by scaling the radial dependence of the g(r) functions according to the ratios rR/rR,MD, rP/rP,MD, and (rR+rP)/(rR,MD+rP,MD) for R-R, P-P, and R-P interactions. The upper integration limit rmax was set to 100 nm for all interactions. At that radius and above, U(r) is negligible for the range of radii and charges considered here. With the fixed integration limit, the integrals in Equations 15 to 18 vary only with the charges and radii of particles R and P, and, thus, they are independent of particle concentrations. Then, the enthalpy contributions can be written as:
+
+$$
+\Deltah_{d,RR}=ρ_{R,d}x_{d,RR}
+$$
+
+
+
+$$
+\Deltah_{d,PP}=ρ_{P,d}x_{d,PP}
+$$
+
+
+
+$$
+\Deltah_{d,RP}=ρ_{P,d}x_{d,RP}
+$$
+
+
+
+$$
+\Deltah_{d,PR}=ρ_{R,d}x_{d,PR}
+$$
+
+where the x values represent the integrals in Equations 15 to 18 multiplied by 2π.
+
+The entropy term was calculated based on the change of concentration in either dilute or condensed phases relative to the concentration in a fully disperse, non-separated system, which is the total system concentration, that is, for the dilute phase:
+
+$$
+\Deltas_{R,d}=Rlog\frac{c_{R}}{c_{R,d}}=Rlog\frac{ρ_{R}}{ρ_{R,d}}
+$$
+
+
+
+$$
+\Deltas_{P,d}=Rlog\frac{c_{P}}{c_{P,d}}=Rlog\frac{ρ_{P}}{ρ_{P,d}}
+$$
+
+where R is the universal gas constant. In estimating the entropy for the condensed phase, the finite volumes of the R and P particles were subtracted from the condensed phase volume Vc:
+
+$$
+\Deltas_{R,c}=Rlog\frac{ρ_{R}}{ρ_{R,c}}∙1-ρ_{R,c}V_{R}+ρ_{P,c}V_{P}
+$$
+
+
+
+$$
+\Deltas_{P,c}=Rlog\frac{ρ_{P}}{ρ_{P,c}}∙1-ρ_{R,c}V_{R}+ρ_{P,c}V_{P}
+$$
+
+with the molecular volumes calculated from the radii of the spherical R and P particles:
+
+$$
+V_{R}=\frac{4\pi}{3}r_{R}^{3}
+$$
+
+and
+
+$$
+V_{P}=\frac{4\pi}{3}r_{P}^{3}
+$$
+
+Coexistence of the dilute and condensed phases assumes equilibrium, that is:
+
+$$
+µ_{R,d}=µ_{R,c}
+$$
+
+
+
+$$
+µ_{P,d}=µ_{P,c}
+$$
 
 In scenario (3), both, Equations 28 and 29, have to be satisfied simultaneously. For scenario (4), only Equation 28 needs to be satisfied under the condition that ρP,d = 0; and for scenario (5), only Equation 29 has to be satisfied with ρR,d = 0.
 
 Solutions in terms of ρR,d, ρP,d, ρR,c, ρP,c, and Vc were determined numerically by scanning Vc and solving for the densities in the dilute phase (the densities in the condensed phase follow from Equation 11).
 
-Equation 28 combined with Equations 11, 12, 13, 19, 21, 23, and 25 gives the following:(30)0=µR,d-µR,c   =∆hR, d-T∆sR,d-∆hR, c+T∆sR,c   =ρR,dxd,RR+ρP,dxd,RP-ρR,cxc,RR-ρP,cxc,RP+TRlogρR,dρR,c∙1-ρR,cVR+ρP,cVP   =ρR,dxd,RR+V-VcVcxc,RR+ρP,dxd,RP+V-VcVcxc,RP-VVcρRxc,RR+ρPxc,RP       +TRlogVcρR,d-VRρR,dVρR-V-VcρR,d-VPρR,dVρP-V-VcρP,dVρR-V-VcρR,d(31)   =fRρR,d,ρP,d,Vc
+Equation 28 combined with Equations 11, 12, 13, 19, 21, 23, and 25 gives the following:
 
-An analogous function fPρR,d,ρP,d,Vc is obtained from Equation 29. There is no analytical solution, but fRρR,d,ρP,d,Vc=0 and fPρR,d,ρP,d,Vc=0 can be solved via the Newton-Raphson method given Vc and either ρP,d or ρR,d.
+$$
+0=µ_{R,d}-µ_{R,c}
+$$
 
-For scenario (4), fRρR,d,ρP,d,Vc=0 was solved for different values of Vc and ρP,d = 0; for scenario (5), fPρR,d,ρP,d,Vc=0 was solved for values of Vc and ρR,d = 0. For scenario (3), ρR,d was scanned as well and the value of ρP,d was determined for given values of Vc and ρR,d by first solving fRρR,d,ρP,d,Vc=0. The resulting value of ρP,d was then used with Vc to solve fPρR,d,ρP,d,Vc=0 for a refined value of ρR,d.
 
-Mathematically possible solutions include cases where the volume fractions in the cluster exceed what is physically realistic inside the condensed state. In order to exclude such solutions, it was required that the combined macromolecular volume in the condensed phase is less than 30% of the total volume of the condensed phase, that is,:(32)ρR,cVR+ρP,cVP<0.3
+
+$$
+=\Deltah_{R,d}-T\Deltas_{R,d}-\Deltah_{R,c}+T\Deltas_{R,c}
+$$
+
+
+
+$$
+=ρ_{R,d}x_{d,RR}+ρ_{P,d}x_{d,RP}-ρ_{R,c}x_{c,RR}-ρ_{P,c}x_{c,RP}+TRlog\frac{ρ_{R,d}}{ρ_{R,c}}∙1-ρ_{R,c}V_{R}+ρ_{P,c}V_{P}
+$$
+
+
+
+$$
+=ρ_{R,d}x_{d,RR}+\frac{V-V_{c}}{V_{c}}x_{c,RR}+ρ_{P,d}x_{d,RP}+\frac{V-V_{c}}{V_{c}}x_{c,RP}-\frac{V}{V_{c}}ρ_{R}x_{c,RR}+ρ_{P}x_{c,RP}
+$$
+
+
+
+$$
++TRlog\frac{V_{c}ρ_{R,d}-V_{R}ρ_{R,d}Vρ_{R}-V-V_{c}ρ_{R,d}-V_{P}ρ_{R,d}Vρ_{P}-V-V_{c}ρ_{P,d}}{Vρ_{R}-V-V_{c}ρ_{R,d}}
+$$
+
+
+
+$$
+=f_{R}ρ_{R,d},ρ_{P,d},V_{c}
+$$
+
+An analogous function $f_{P}ρ_{R,d},ρ_{P,d},V_{c}$ is obtained from Equation 29. There is no analytical solution, but $f_{R}ρ_{R,d},ρ_{P,d},V_{c}=0$ and $f_{P}ρ_{R,d},ρ_{P,d},V_{c}=0$ can be solved via the Newton-Raphson method given Vc and either ρP,d or ρR,d.
+
+For scenario (4), $f_{R}ρ_{R,d},ρ_{P,d},V_{c}=0$ was solved for different values of Vc and ρP,d = 0; for scenario (5), $f_{P}ρ_{R,d},ρ_{P,d},V_{c}=0$ was solved for values of Vc and ρR,d = 0. For scenario (3), ρR,d was scanned as well and the value of ρP,d was determined for given values of Vc and ρR,d by first solving $f_{R}ρ_{R,d},ρ_{P,d},V_{c}=0$. The resulting value of ρP,d was then used with Vc to solve $f_{P}ρ_{R,d},ρ_{P,d},V_{c}=0$ for a refined value of ρR,d.
+
+Mathematically possible solutions include cases where the volume fractions in the cluster exceed what is physically realistic inside the condensed state. In order to exclude such solutions, it was required that the combined macromolecular volume in the condensed phase is less than 30% of the total volume of the condensed phase, that is,:
+
+$$
+ρ_{R,c}V_{R}+ρ_{P,c}V_{P}<0.3
+$$
 
 We note that most final solutions were found at the 30% vol fraction limit, since the theory did not directly account for volume exclusion between individual molecules and found a gain in energy at higher particle densities. However, similar results were obtained with maximal macromolecular volume fractions according to Equation 32 in a range of 20–40%. The value of 30% was ultimately arrived at by optimal agreement between theory and experiment for the concentration-dependent phase separation between RNA and trypsin shown in Figure 6.
 
-The total system energy is calculated according to:(33)∆G=µR,d∙V-VcρR,d+µR,c∙VcρR,c+µP,d∙V-VcρP,d+µP,c∙VcρP,c-TSmixwhere Smix is the overall mixing entropy according to the ratio of particles R and P in the dilute and condensed phases according to:(34)Smix=Smix,d+Smix,c(35)Smix,d=RV-VcρR,dlogρR,dρR,d+ρP,d+ρP,dlogρP,dρR,d+ρP,d(36)Smix,c=RVcρR,clogρR,cρR,c+ρP,c+ρP,clogρP,cρR,c+ρP,c
+The total system energy is calculated according to:
+
+$$
+\DeltaG=µ_{R,d}∙V-V_{c}ρ_{R,d}+µ_{R,c}∙V_{c}ρ_{R,c}+µ_{P,d}∙V-V_{c}ρ_{P,d}+µ_{P,c}∙V_{c}ρ_{P,c}-TS_{mix}
+$$
+
+where Smix is the overall mixing entropy according to the ratio of particles R and P in the dilute and condensed phases according to:
+
+$$
+S_{mix}=S_{mix,d}+S_{mix,c}
+$$
+
+
+
+$$
+S_{mix,d}=RV-V_{c}ρ_{R,d}log\frac{ρ_{R,d}}{ρ_{R,d}+ρ_{P,d}}+ρ_{P,d}log\frac{ρ_{P,d}}{ρ_{R,d}+ρ_{P,d}}
+$$
+
+
+
+$$
+S_{mix,c}=RV_{c}ρ_{R,c}log\frac{ρ_{R,c}}{ρ_{R,c}+ρ_{P,c}}+ρ_{P,c}log\frac{ρ_{P,c}}{ρ_{R,c}+ρ_{P,c}}
+$$
 
 For the five scenarios described above, total free energies were then calculated as follows:
 
-(1) Disperse:(37)∆G1=µR,disperse∙VρR+µP,disperse∙VρP-TRVρRlogρRρR+ρP+ρPlogρPρR+ρPwhere µRP,disperse were calculated according to Equations 12 to 18 using RDFs from the disperse phase extracted from our molecular dynamics simulations before condensates started to form.
+(1) Disperse:
 
-(2) Condensed:(38)∆G2=µR,c∙VρR+µP,c∙VρP-TRVcρRlogρRρR+ρP+ρPlogρPρR+ρP
+$$
+\DeltaG_{1}=µ_{R,disperse}∙Vρ_{R}+µ_{P,disperse}∙Vρ_{P}-TRVρ_{R}log\frac{ρ_{R}}{ρ_{R}+ρ_{P}}+ρ_{P}log\frac{ρ_{P}}{ρ_{R}+ρ_{P}}
+$$
 
-(3) R and P in phase coexistence:(39)∆G3=µR,c∙VρR+µP,c∙VρP    -TRV-VcρR,dlogρR,dρR,d+ρP,d+ρP,dlogρP,dρR,d+ρP,d    -TRVcρR,clogρR,cρR,c+ρP,c+ρP,clogρP,cρR,c+ρP,csince µR,c = µR,d and µP,c = µP,d.
+where $µ_{\frac{R}{P},disperse}$ were calculated according to Equations 12 to 18 using RDFs from the disperse phase extracted from our molecular dynamics simulations before condensates started to form.
 
-(4) R in phase coexistence, ρP,d = 0:(40)∆G4=µR,c∙VρR+µP,c∙VρP-TRVcρR,clogρR,cρR,c+ρP,c+ρP,clogρP,cρR,c+ρP,c
+(2) Condensed:
 
-(5) P in phase coexistence, ρR,d = 0:(41)∆G5=µR,c∙VρR+µP,c∙VρP-TRVcρR,clogρR,cρR,c+ρP,c+ρP,clogρP,cρR,c+ρP,c
+$$
+\DeltaG_{2}=µ_{R,c}∙Vρ_{R}+µ_{P,c}∙Vρ_{P}-TRV_{c}ρ_{R}log\frac{ρ_{R}}{ρ_{R}+ρ_{P}}+ρ_{P}log\frac{ρ_{P}}{ρ_{R}+ρ_{P}}
+$$
+
+(3) R and P in phase coexistence:
+
+$$
+\DeltaG_{3}=µ_{R,c}∙Vρ_{R}+µ_{P,c}∙Vρ_{P}
+$$
+
+
+
+$$
+-TRV-V_{c}ρ_{R,d}log\frac{ρ_{R,d}}{ρ_{R,d}+ρ_{P,d}}+ρ_{P,d}log\frac{ρ_{P,d}}{ρ_{R,d}+ρ_{P,d}}
+$$
+
+
+
+$$
+-TRV_{c}ρ_{R,c}log\frac{ρ_{R,c}}{ρ_{R,c}+ρ_{P,c}}+ρ_{P,c}log\frac{ρ_{P,c}}{ρ_{R,c}+ρ_{P,c}}
+$$
+
+since µR,c = µR,d and µP,c = µP,d.
+
+(4) R in phase coexistence, ρP,d = 0:
+
+$$
+\DeltaG_{4}=µ_{R,c}∙Vρ_{R}+µ_{P,c}∙Vρ_{P}-TRV_{c}ρ_{R,c}log\frac{ρ_{R,c}}{ρ_{R,c}+ρ_{P,c}}+ρ_{P,c}log\frac{ρ_{P,c}}{ρ_{R,c}+ρ_{P,c}}
+$$
+
+(5) P in phase coexistence, ρR,d = 0:
+
+$$
+\DeltaG_{5}=µ_{R,c}∙Vρ_{R}+µ_{P,c}∙Vρ_{P}-TRV_{c}ρ_{R,c}log\frac{ρ_{R,c}}{ρ_{R,c}+ρ_{P,c}}+ρ_{P,c}log\frac{ρ_{P,c}}{ρ_{R,c}+ρ_{P,c}}
+$$
 
 The scenario with the overall lowest free energy was then considered to be the predicted state.
 
 A program implementing this model is available at http://github.com/feiglab/phasesep; copy archived at swh:1:rev:24890516a822b917b76a2730ced19839acbaec3d
 
-## Experimental materials and methods
+### Experimental materials and methods
 
 The J345 RNA sequence was synthesized and deprotected by Dharmacon (Horizon Discovery Group), both with and without Cy3 or Cy5 on the 3’ end. The 47-base sequence is GCAGCAGGGAACUCACGCUUGCGUAGAGGCUAAGUGCUUCGGCACAGCACAAGCCCGCUGCG.
 
 All measurements were made using the buffer used by Bonneau and Legault for structure determination of this sequence, 10 mM sodium cacodylate (pH 6.5), 50 mM NaCl,. 05% sodium azide, 5 mM MgCl2. Equine liver trypsin, equine alcohol dehydrogenase, bovine lactic dehydrogenase, equine myoglobin, hen egg lysozyme, and bovine serum albumin were obtained from Sigma-Aldrich and used without further modification.
 
-## Microscopy
+#### Microscopy
 
 Confocal microscopy images were obtained on a Nikon A1 scanning confocal microscope with 100x magnification. The excitation wavelength was 561 nm and detection was set for Cy3 fluorescence using a GaAsP detector. The diffraction-limited spatial resolution is 260 nm. Images were processed with ImageJ and modified only for contrast and brightness. Images were cropped and enlarged to aid observation of the smallest features.
 
-## Dynamic light scattering
+#### Dynamic light scattering
 
 The size distribution of the protein-RNA complexes were measured using a dynamic light scattering (DLS) machine (Zetasizer nano series from Malvern company) at room temperature. The samples were mixed freshly before each experiment and all measurements were repeated three times in a single run and the corresponding average results were reported. A Helium Neon laser with a wavelength of 632 nm was used for the size distribution analysis.
 
-The central observable of dynamic light scattering (DLS) experiments consists of time-dependent scattering intensity correlation functions g2(τ) that are related to electric field correlation functions g1(τ) according to:(42)g2τ-1=g1τ2
+The central observable of dynamic light scattering (DLS) experiments consists of time-dependent scattering intensity correlation functions g2(τ) that are related to electric field correlation functions g1(τ) according to:
 
-In case of a monodisperse solution with particles of a diameter d, a single exponential decay is observed with:(43)g1τ;d=e-2q2D(d)τwith the wave vector(44)q=4πnλsin⁡θ2and the diffusion according to Stokes-Einstein:(45)D(d)=kBT6πηdwhere n is the refractive index of the solvent medium (i.e. 1.335), λ is the wavelength of the incident laser light (i.e. 633 nm), θ is the scattering angle (i.e. 173°), kB is the Boltzmann constant, T is the temperature (i.e. 298 K), and η is the viscosity of the solvent (i.e. 0.8882 cP).
+$$
+g_{2}\tau-1=g_{1}\tau^{2}
+$$
 
-The samples we considered were clearly polydisperse, requiring the fit of multiple exponential decays. Moreover, from previous studies and simulations, we expect that at the smallest particle sizes there is an exponential decay of particle sizes due to dynamic cluster formation in the dilute phase (Nawrocki et al., 2019b, von Bülow et al., 2019). Therefore, we fit the experimental data (i.e. g2τ-1) to the following function:(46)g2τ-1=g1τ2≈∑i=110ac2e-2itcg12τ;dc+∑i=14ai2g12τ;di
+In case of a monodisperse solution with particles of a diameter d, a single exponential decay is observed with:
+
+$$
+g_{1}\tau;d=e^{-2q^{2}D(d)\tau}
+$$
+
+with the wave vector
+
+$$
+q=\frac{4\pin}{\lambda}sin⁡\frac{\theta}{2}
+$$
+
+and the diffusion according to Stokes-Einstein:
+
+$$
+D(d)=\frac{k_{B}T}{6\piηd}
+$$
+
+where n is the refractive index of the solvent medium (i.e. 1.335), λ is the wavelength of the incident laser light (i.e. 633 nm), θ is the scattering angle (i.e. 173°), kB is the Boltzmann constant, T is the temperature (i.e. 298 K), and η is the viscosity of the solvent (i.e. 0.8882 cP).
+
+The samples we considered were clearly polydisperse, requiring the fit of multiple exponential decays. Moreover, from previous studies and simulations, we expect that at the smallest particle sizes there is an exponential decay of particle sizes due to dynamic cluster formation in the dilute phase (Nawrocki et al., 2019b, von Bülow et al., 2019). Therefore, we fit the experimental data (i.e. $g_{2}\tau-1$) to the following function:
+
+$$
+g_{2}\tau-1=g_{1}\tau^{2}≈\sumi=110a_{c}^{2}e^{-\frac{2i}{t_{c}}}g_{1}^{2}\tau;d_{c}+\sumi=14a_{i}^{2}g_{1}^{2}\tau;d_{i}
+$$
 
 Consequently, the parameters of the numerical fits were the size of the smallest particle, dc, its contribution, ac, decreasing according to the decay ‘time’ tc, and an additional up to four discrete sizes di with contributions ai.
 
 Using gnuplot, version 5.2, we fit the function according to Equation 46 to individual correlation functions as well to an average that was obtained after normalizing individual functions.
 
-## FRET spectroscopy
+#### FRET spectroscopy
 
 Fluorescence spectra were obtained with PTI Q4 fluorimeter, excited at 475 nm and emission observed between 525 and 700 nm. The concentration of Cy3-labeled RNA and Cy5-labeled RNA were kept constant at 8 µM and 42 µM, respectively, with the unlabeled concentration varied from 0 to 0.5 mM. The low concentration of labeled RNA limits the possibility of self-quenching but also limits the detection of very small clusters.
 
-The normalized FRET ratio was calculated from the total intensity between 525 and 650 nm for the donor and 650 and 700 nm for the acceptor,(47)FRET=IAID+IA.
+The normalized FRET ratio was calculated from the total intensity between 525 and 650 nm for the donor and 650 and 700 nm for the acceptor,
+
+$$
+FRET=\frac{I_{A}}{I_{D}+I_{A}}.
+$$
 
 In the absence of protein, the RNA exhibits some baseline transfer, likely due to transient interactions between the dyes, leading to a background FRET level of ~0.24. Upon the addition of protein above the threshold concentration, the mixture is visibly turbid.
 
 FRET efficiencies for mixtures of RNA and proteins at different concentrations were estimated from the predicted amount of RNA inside and outside the condensates as follows:
 
-The theory described above predicts phase separation with the densities of RNA in the dilute and condensed phases given as ρR,d and ρR,c. From the densities the concentration of RNA in the dilute ([Rd]) and condensed ([Rc]) phases with respect to the total volume is obtained as follows:(48)Rd=ρR,d∙V-VcV(49)Rc=ρR,c∙VcV
+The theory described above predicts phase separation with the densities of RNA in the dilute and condensed phases given as ρR,d and ρR,c. From the densities the concentration of RNA in the dilute ([Rd]) and condensed ([Rc]) phases with respect to the total volume is obtained as follows:
 
-A fraction of RNA is labeled with fluorophores. The total concentration of labeled RNA is denoted as [F]; the concentration in the dilute and condensed phases, again with respect to the total system volume, is denoted as [Fd] and [Fc], respectively. Then:(50)F=Fc+Fdand(51)Rd=Ud+Fd(52)Rc=Uc+Fcwhere [Ud] and [Uc] are the concentrations of unlabeled RNA in the dilute and condensed phases.
+$$
+R_{d}=ρ_{R,d}∙\frac{V-V_{c}}{V}
+$$
 
-We further make an assumption that there is an equilibrium of labeled RNA to exchange between the dilute and condensed phases while maintaining the overall ratio of RNA between the two phases:(53)Fd+Uc ↔Fc+Udwith the equilibrium constant K given as:(54)K=FcUdFdUc
+
+
+$$
+R_{c}=ρ_{R,c}∙\frac{V_{c}}{V}
+$$
+
+A fraction of RNA is labeled with fluorophores. The total concentration of labeled RNA is denoted as [F]; the concentration in the dilute and condensed phases, again with respect to the total system volume, is denoted as [Fd] and [Fc], respectively. Then:
+
+$$
+F=F_{c}+F_{d}
+$$
+
+and
+
+$$
+R_{d}=U_{d}+F_{d}
+$$
+
+
+
+$$
+R_{c}=U_{c}+F_{c}
+$$
+
+where [Ud] and [Uc] are the concentrations of unlabeled RNA in the dilute and condensed phases.
+
+We further make an assumption that there is an equilibrium of labeled RNA to exchange between the dilute and condensed phases while maintaining the overall ratio of RNA between the two phases:
+
+$$
+F_{d}+U_{c}↔F_{c}+U_{d}
+$$
+
+with the equilibrium constant K given as:
+
+$$
+K=\frac{F_{c}U_{d}}{F_{d}U_{c}}
+$$
 
 Because of the hydrophobic character of the FRET labels we expect that labeled RNA has an affinity for the less-hydrated condensate, that is, K > 1.
 
-Equations 50, 51, 52, 54 can be solved for [Fc] as a function of [Rd], [Rc], [F], and K to give the fraction of labeled RNA in the condensate as:(55)f=FcF
+Equations 50, 51, 52, 54 can be solved for [Fc] as a function of [Rd], [Rc], [F], and K to give the fraction of labeled RNA in the condensate as:
 
-Based on the resulting value of f, FRET efficiencies E were then estimated according to:(56)E=E01-f+Ecfwhere E0 and Ec are the FRET efficiencies at zero protein concentration and in the condensed phase, respectively. E0 was taken from experiment and Ec was estimated by convoluting the distribution of minimum RNA-RNA distances in the condensed phase extracted from the simulations with 1/ (1+(r/r0)6), where r is the distance between RNA molecules and r0 is a constant that depends on the fluorescence label and additional factors such as the anisotropy of the orientational sampling and the index of diffraction of the medium.
+$$
+f=\frac{F_{c}}{F}
+$$
+
+Based on the resulting value of f, FRET efficiencies E were then estimated according to:
+
+$$
+E=E_{0}1-f+E_{c}f
+$$
+
+where E0 and Ec are the FRET efficiencies at zero protein concentration and in the condensed phase, respectively. E0 was taken from experiment and Ec was estimated by convoluting the distribution of minimum RNA-RNA distances in the condensed phase extracted from the simulations with 1/ (1+(r/r0)6), where r is the distance between RNA molecules and r0 is a constant that depends on the fluorescence label and additional factors such as the anisotropy of the orientational sampling and the index of diffraction of the medium.
 
 We applied this formalism to interpret the FRET experiments on trypsin based on predicted RNA fractions in the condensed phase (Figure 9—figure supplement 7) using the minimum distance distribution of RNA shown in Figure 2—figure supplement 11. We took E0 = 0.24 from experiment and found good agreement between experiment and theory for r0 = 4.10 nm and K = 100 (Figure 7). We note that the value r0 = 4.10 nm is lower than typical values assumed for the Cy3-Cy5 pair (Murphy et al., 2004), but the condensed state differs from typical solution conditions, whereas the spherical models used here allow only very approximate estimates of the true donor-acceptor distances and neglect orientational dependence in fluorescent energy transfer (Iqbal et al., 2008).
 
-## NMR spectroscopy
+#### NMR spectroscopy
 
 NMR spectra were acquired at a 1H frequency of 600 MHz on a Varian 600 MHz spectrometer with a room-temperature probe. Solvent was suppressed with a gradient 1–1 echo sequence. Samples were prepared in 90% H2O, 10% D2O in the buffer described above with DSS as an internal chemical shift reference. 16 k points were acquired with a 1 s recycle delay and a total acquisition time of approximately 1 hr per spectrum. RNA concentrations were 300 µM for J345 only and 135–140 µM for RNA-protein samples; protein concentrations were around 150 µM; the RNA-only spectrum was scaled to account for the differing concentration. Spectra were processed with zero-filling to 32 k and a 5 Hz exponential window function.
 
-## Circular dichroism spectroscopy
+#### Circular dichroism spectroscopy
 
 Circular dichroism measurements were made using an Applied Photophysics Chirascan spectrometer. All measurements were made using a 0.1 mm pathlength cuvette at room temperature.

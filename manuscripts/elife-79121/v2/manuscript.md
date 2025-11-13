@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05bnh6r87 Department of Computational Biology, Cornell University Ithaca United States
-2. https://ror.org/05bnh6r87 Department of Molecular Biology and Genetics, Cornell University Ithaca United States
-3. https://ror.org/02v51f717 Center for Bioinformatics, School of Life Sciences, Peking-Tsinghua Center for Life Sciences, Peking University Beijing China
+1. Department of Computational Biology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+2. Department of Molecular Biology and Genetics, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+3. Center for Bioinformatics, School of Life Sciences, Peking-Tsinghua Center for Life Sciences, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ Here, we assess which of these drive candidates may be most successful at suppre
 
 ## Results
 
-## Parameterization of Anopheles suppression gene drives
+### Parameterization of Anopheles suppression gene drives
 
 Several suppression drives have been constructed by the Crisanti lab in Anopheles gambiae (Simoni et al., 2020; Kyrou et al., 2018; Hammond et al., 2016; Hammond et al., 2021). By examining experimental data collected in these studies, particularly drive inheritance and viable larvae per female, we calculated drive conversion rates (the rate at which drive alleles are converted to wild-type alleles in the germline) in female and male drive/wild-type heterozygotes, and we similarly obtained estimates of the germline resistance allele formation rates (distinctly in females and males), embryo resistance allele rates from parental deposition of Cas9 and gRNAs (both maternal and paternal), and additional fitness costs (see Supplemental Results for details). Note that these data is subject to various levels of uncertainty due to data type and sample size. We assumed that fitness costs were from somatic expression of Cas9 and gRNA in drive/wild-type heterozygotes, with no intrinsic fitness cost of the drive itself (such costs appear to be small based on previous studies Adolfi et al., 2020; Carballar-Lejarazú et al., 2020; Champer et al., 2020c; Champer et al., 2020a; Oberhofer et al., 2019). Table 1 contains parameterizations of each modeled drive, and Figure 1 demonstrates how each parameter and drive mechanism operates.
 
@@ -42,13 +42,42 @@ Several suppression drives have been constructed by the Crisanti lab in Anophele
 
 **Figure 1.:** (A) Germline resistance allele formation occurs first in drive heterozygotes during reproduction. Remaining alleles can undergo drive conversion. If the mother has a drive allele, wild-type alleles in the offspring can be converted to resistance alleles in the early embryo, regardless of whether the offspring inherited a drive allele. Because all resistance alleles are assumed to be nonfunctional, any female genotype lacking at least one wild-type allele is sterile. (B) The fecundity of female drive heterozygotes is directly reduced by female somatic fitness costs. (C) The fecundity of any female is reduced if she mates with a nos male heterozygote. (D) Female progeny from male zpg or zpgX carriers may be sterile if paternal deposition occurs. (E) If the male parent has the zpgX or zpg2X drive, then X-shredding will result in an increased fraction of male progeny.
 
+**Table 1.**
+ Drive characteristics.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>zpg promoterShared characteristics:Female HDR cut rate = 0.99Male HDR cut rate = 0.96Female germline resistance rate = 0.01Male germline resistance rate = 0.02Maternal embryo resistance rate = 0.08</td>
+      <td>nos promoterShared characteristics:Female HDR cut rate = 0.99Male HDR cut rate = 0.98Female germline resistance rate = 0.01Male germline resistance rate = 0.01Maternal embryo resistance rate = 0.14</td>
+    </tr>
+    <tr>
+      <td>zpg drivePaternal Cas9 deposition rate = 0.69Female somatic fitness cost = 0.3</td>
+      <td>nos driveFemale somatic fitness cost = 0.45Male somatic fitness cost = 0.45</td>
+    </tr>
+    <tr>
+      <td>zpg2 driveFemale somatic fitness cost = 0.5</td>
+      <td>nosF driveFemale somatic fitness cost = 0.45</td>
+    </tr>
+    <tr>
+      <td>zpgX drivePaternal Cas9 deposition rate = 0.69Female somatic fitness cost = 0.3X-shredding rate = 0.93</td>
+      <td>nosF2 driveFemale somatic fitness cost = 0.15</td>
+    </tr>
+    <tr>
+      <td>zpg2X driveFemale somatic fitness cost = 0.5X-shredding rate = 0.93</td>
+      <td>nosF3 driveNo somatic fitness costs.</td>
+    </tr>
+  </tbody>
+</table>
+
 The first drive to demonstrate suppression of a cage population targeted a conserved site of dsx using Cas9 expressed by the zpg promoter (Kyrou et al., 2018), which was also assessed in a drive with another target site (Hammond et al., 2021). We model the authors’ interpretation of this study with paternal Cas9 deposition (zpg) and another interpretation that instead assumes no paternal deposition and higher somatic fitness costs (zpg2), which we consider more likely (Supplemental Results).
 
 A follow-up study by the same group added the I-PpoI nuclease to the drive, thus causing it to shred the X-chromosome and bias the population toward males (Simoni et al., 2020). According to their data, 93% of X-chromosomes are effectively shredded in the germline. We model this variant of the drive with both the original and alternate parameter sets for the zpg suppression drive (zpgX and zpg2X, respectively).
 
 The nos promoter has also been shown to support highly efficient homing suppression drives, though it has not yet been tested at dsx. We parameterize this drive (nos) based on a previous study (Hammond et al., 2021) with three additional alternative interpretations of the data (Supplemental Results). In one (nosF), we assume no effect of somatic Cas9 expression in males, which we believe may be more realistic. A second possible alternative interpretation assumes reduced somatic effects in females (nosF2), and a third highly optimistic interpretation assumes no somatic effects at all (nosF3).
 
-## Drive performance in the panmictic discrete-generation model
+### Drive performance in the panmictic discrete-generation model
 
 We first simulated the drives in our panmictic discrete-generation model to assess their basic properties, starting with genetic load. Genetic load describes the reduction in reproductive capacity of the population compared to a population that is identical except for being composed entirely of wild-type individuals. In panmictic populations, this measurement often reaches an early peak as the drive allele reaches its maximum frequency, but then slightly declines to a steady value once the drive allele and nonfunctional resistance alleles reach their equilibrium frequency. The rate at which wild-type alleles are converted to drive alleles in the germline of drive heterozygotes is a primary determinant of genetic load. Negative fitness effects associated with the drive can reduce the genetic load, as can the rate at which nonfunctional resistance alleles are formed in both the germline and embryo, though the effect of such alleles is usually not large (Beaghton et al., 2019). To eliminate a panmictic population, the drive must induce a sufficiently high genetic load in order to overpower the increased population growth rate at low density. All of the implementations of the nos drive were found to have a higher genetic load than the zpg drives (Figure 2), although zpg2 performed well compared to the other zpg drives. Notably, the addition of an X-shredder was detrimental to zpg2, with zpg2X’s genetic load reduced by 0.16. Even the highest fitness cost interpretation of nos showed a genetic load of 0.96, with the lower fitness cost interpretations scoring even higher. Three of the drives with low equilibrium genetic loads (zpg, zpgX, and zpg2X) actually had higher peak genetic loads shortly after their release, with the genetic load eventually declining to a lower equilibrium due to increased formation of nonfunctional resistance alleles.
 
@@ -58,7 +87,7 @@ We first simulated the drives in our panmictic discrete-generation model to asse
 
 Next, we measured the rate at which the drive spread through the population (Figure 2). The addition of the X-shredder substantially improved the speed of both zpg drives, with the zpg2 interpretation resulting in considerably higher performance than zpg. This is because the X-shredder was mostly present in males, allowing it to avoid somatic fitness costs in females. The nos drive, with its high fitness cost in both males and females, performed far worse than all the other drives in this regard, seemingly belying its high genetic load; the somatic fitness costs had so great an impact on fertility that the drive could make little headway given a low starting frequency (though the drive still eventually reaches a high equilibrium frequency, see Appendix 1—figure 1). However, the other nos drives performed well, with even nosF outperforming zpg2, although both zpg drives with X-shredders spread faster initially.
 
-## Spatial discrete-generation model
+### Spatial discrete-generation model
 
 Previously, we found that drive outcomes in a model with continuous space can substantially differ from those in panmictic populations (Champer et al., 2021a). In our spatial discrete-generation model, the migration value controls the radius in which a female can find a mate as well as the displacement between a mother and her offspring. The low-density growth rate is a multiplier on female fecundity in the absence of competition. To examine how each drive would behave under various ecological assumptions, we varied these two parameters and recorded whether the simulations resulted in (a) complete suppression without any period of chasing, (b) suppression after a period of chasing, (c) long-term chasing (defined as ongoing chasing when the simulation ends after 1000 generations), (d) drive loss after a period of chasing, or (e) drive loss without chasing (in both drive loss outcomes, the population would be quickly restored to its equilibrium after several generations). In all situations in which chasing occurred, the population size was reduced, though the magnitude of this reduction varied significantly from drive to drive. To this end, we also report the relative average number of fertile females (based on their genotype) starting from the beginning of the period of chasing for each parameter set, with each replicate weighted by the duration of the chase. By ‘relative’, we refer to the absolute number of fertile females during chasing compared to the absolute number of wild-type females present before release of the drive (the number of sterile females plays no role in this consideration). As in a previous study on chasing (Champer et al., 2021a), the release of certain drives can cause as much as an order of magnitude decrease to this number.
 
@@ -78,7 +107,7 @@ To further examine the behavior of these drives, we varied the migration rate fr
 
 Overall, the three intermediate performance drives (zpg2, zpg2X, and nosF) had outcomes that depended heavily on the migration value and to a lesser extent on the low-density growth rate (Figure 4). The strongest drives, nosF2 and nosF3, were able to induce suppression over most of the parameter space, while a release of one of the three weakest drives, zpg, zpgX, and nos, usually resulted in long-term chasing outcomes.
 
-## Anopheles-specific model
+### Anopheles-specific model
 
 In addition to our discrete-generation model, we implemented a model that more explicitly simulates the expected dynamics of an Anopheles population by modeling overlapping generations using week-long time steps. The panmictic version of this model was used to calculate the genetic load of each drive as well as the speed at which it was able to spread, in the same manner as the discrete-generation model. The genetic load values in the discrete-generation model and the Anopheles-specific model were within 1% of one another for each drive parameterization; thus, only a single value is reported for each drive (Figure 2). The allele frequency trajectories varied slightly between the two models, but only for drives with X-shredders that biased the sex ratio (Appendix 1—figure 1). This occurred because the drive was mostly present in males, which have a shorter adult-stage lifespan than females, thus reducing the overall drive-allele frequency even though frequencies in emerging adults were the same.
 
@@ -88,7 +117,7 @@ We next varied the low-density growth rate from 2 to 12 in steps of 1.0, while v
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/79121/elife-79121-fig5-v2.jpg)
 
-**Figure 5.:** Anopheles-specific model.The color of each square represents the outcome from among 20 simulations after adjustment to show the most representative outcome. The adjustment counts pairs of ‘suppression without chasing’ and ‘long-term chasing’ outcomes as two instances of ‘suppression after chasing’. Note that the range of migration values in this model corresponds to the same net migration per generation as the range in Figure 4 (see methods).
+**Figure 5.:** The color of each square represents the outcome from among 20 simulations after adjustment to show the most representative outcome. The adjustment counts pairs of ‘suppression without chasing’ and ‘long-term chasing’ outcomes as two instances of ‘suppression after chasing’. Note that the range of migration values in this model corresponds to the same net migration per generation as the range in Figure 4 (see methods).
 
 ## Discussion
 
@@ -110,7 +139,7 @@ In conclusion, our modeling indicates that several promising candidates for supp
 
 ## Materials and methods
 
-## Gene drive mechanisms
+### Gene drive mechanisms
 
 All of the gene drives modeled in this study are designed to target a female fertility gene that is essential but haplosufficient (Figure 1). Cas9 is directed by a guide RNA (gRNA) to cleave a specific target site located within this gene. Through homology-directed repair, the drive allele then can copy and paste itself into the fertility gene in a manner that effectively inactivates the gene. Since this target gene is haplosufficient, female drive heterozygotes would be fully fertile if Cas9 activity is restricted to the germline (yet most variants we model also have somatic expression that can reduce fertility, see below). However, once the drive allele has spread to a high frequency in the population, an accumulation of sterile drive-homozygous females will cause the population to be reduced or to completely collapse.
 
@@ -118,7 +147,7 @@ If the cleaved target site does not undergo homology-directed repair but instead
 
 One of our drives is motivated by a recent study in which a female fertility homing drive and an X-shredder were combined at the same genomic locus (Simoni et al., 2020). The X-shredder is designed to cleave multiple sites on the X-chromosome in gametes, rendering them nonviable. This biases the sex ratio towards males because most viable gametes will carry a Y-chromosome. Female gametes that escape destruction may still be sterile since the homing drive disrupts a female fertility gene target as before. Overall, the X-shredder reduces the number of drive females, thereby reducing the influence of drive-based somatic fitness costs in females. Unlike a Driving-Y design, this autosomal X-shredder cannot increase its own inheritance. It relies on the linked homing drive element for this purpose.
 
-## Modeling of gene drive
+### Modeling of gene drive
 
 In our model, gene drive processes occur independently in each gametocyte of each reproducing individual (Figure 1). A wild-type allele in a drive heterozygote is converted into a resistance allele with a probability equal to the germline resistance allele formation rate, which differs by sex of the individual. We assume that all resistance alleles are ‘r2’ alleles that disrupt the function of the target gene. If the allele remains wild-type, it is converted to a drive allele at a rate equal to the drive conversion rate, which also differs by sex.
 
@@ -126,27 +155,27 @@ We next model the further potential for resistance to form due to maternal Cas9 
 
 In this study, we considered drives based on the nos and zpg promoters for Cas9. The drive could also have an X-shredder (zpgX and zpg2X). However, due to diverging interpretations of existing experimental data, we modeled four possible variations of nos drives and two possible interpretations of zpg drives. We term these variations nos (without italics), nosF, nosF2, nosF3 (with the latter versions having a lower somatic fitness costs) and zpg (without italics), zpg2, zpgX, and zpg2X (with zpg2 and zpg2X interpreted as not having paternal deposition of Cas9, and instead having a higher somatic fitness cost in females). See the results and Table 1 for explanations and parameterizations of each of these drives.
 
-If the gene drive includes an X-shredder and the father has a drive allele, then the probability that a given offspring will be male is equal to [12−(X shredding rate)] . Thus, if Cas9 shreds the X-chromosome of gametes in males 100% of the time, all of a male’s offspring will be male, and if the X shredding rate is 0, then the probability that an offspring is male is the usual 50%. The presence of an X-shredder only serves to bias the sex ratio of the offspring, and is not considered to reduce the number of offspring that an individual is expected to leave.
+If the gene drive includes an X-shredder and the father has a drive allele, then the probability that a given offspring will be male is equal to $[\frac{1}{2−(X shredding rate)}]$ . Thus, if Cas9 shreds the X-chromosome of gametes in males 100% of the time, all of a male’s offspring will be male, and if the X shredding rate is 0, then the probability that an offspring is male is the usual 50%. The presence of an X-shredder only serves to bias the sex ratio of the offspring, and is not considered to reduce the number of offspring that an individual is expected to leave.
 
-## Discrete-generation panmictic simulation model
+### Discrete-generation panmictic simulation model
 
 See Appendix 1—table 1 for a list of key parameters of all models. The discrete-generation model is based on an earlier study (Champer et al., 2021a) and simulates a population of 50,000 sexually reproducing diploids with non-overlapping, discrete generations using the forward genetic simulation software SLiM (version 3.7; Haller and Messer, 2019). The wild-type population is allowed to equilibrate for 10 generations before gene drive heterozygotes are released at a frequency such that they represent 1% of the population.
 
 In the panmictic discrete-generation model, each fertile female randomly selects a mate. We then evaluate the fecundity of the female, which can be reduced by the fitness cost of somatic Cas9 expression. Fecundity is also reduced if the male mate is a nos drive heterozygote (though not in the nosF, nosF2, and nosF3 drives).
 
-Female fecundity (wi) is further scaled according to a Beverton–Holt model by how close the population size (N) is to the carrying capacity of the system (K):wi′=wi×β(β−1)(NK)+1, where β is equal to the low-density growth rate of the population. We determine the number of eggs produced by drawing from a binomial distribution, with 50 trials and a success probability equal to ωi25 such that a wild-type female is expected to produce 2 offspring on average when the population is at capacity.
+Female fecundity (wi) is further scaled according to a Beverton–Holt model by how close the population size (N) is to the carrying capacity of the system $(K):w_{i}^{′}=w_{i}\times\frac{\beta}{(\beta−1)(\frac{N}{K})+1}$, where β is equal to the low-density growth rate of the population. We determine the number of eggs produced by drawing from a binomial distribution, with 50 trials and a success probability equal to $\frac{\omega_{i}}{25}$ such that a wild-type female is expected to produce 2 offspring on average when the population is at capacity.
 
 Simulations were run until the drive was lost, the population was eliminated, or 1000 generations had elapsed if neither event occurred. In some simulations, modifications were made to facilitate accurate measurement of genetic load (see supplemental methods).
 
-## Discrete-generation spatial model
+### Discrete-generation spatial model
 
-We extend our panmictic model into continuous space by explicitly tracking every individual’s position across a 1 × 1 (unitless) area, similar to a model we introduced in a previous study (Adolfi et al., 2020). The simulation begins with 50,000 wild-type individuals that are randomly distributed across the landscape. After 10 generations, a number of drive-heterozygous individuals representing 1% of the total population are released from a 0.01-radius circle at the center of the arena. In the reproduction stage, fertile females can only sample potential mates from a circle surrounding the female with a radius equal to the migration value parameter (with a default of 0.04). If there are no males in this circle, then the female does not reproduce. Reproducing females have a fecundity of wi′=wi×β(β−1)(ρiρ)+1, where ρi is the local density in a 0.01-radius surrounding the female and ρ is the density value that would be expected if the population were evenly distributed across the landscape. This means that a female in a low-density area will have greater fecundity, reflecting greater access to resources as well as reduced competition faced by her offspring. Each offspring is displaced a random distance from its mother. Displacement distance in the x and y axis are both drawn from a normal distribution with a mean of 0 and standard deviation equal to the migration value parameter. This produces an average displacement of migration value × π/2. If an offspring’s coordinates fall outside the bounds of the simulation, the coordinates are redrawn until the offspring is placed within the boundaries.
+We extend our panmictic model into continuous space by explicitly tracking every individual’s position across a 1 × 1 (unitless) area, similar to a model we introduced in a previous study (Adolfi et al., 2020). The simulation begins with 50,000 wild-type individuals that are randomly distributed across the landscape. After 10 generations, a number of drive-heterozygous individuals representing 1% of the total population are released from a 0.01-radius circle at the center of the arena. In the reproduction stage, fertile females can only sample potential mates from a circle surrounding the female with a radius equal to the migration value parameter (with a default of 0.04). If there are no males in this circle, then the female does not reproduce. Reproducing females have a fecundity of $w_{i}^{′}=w_{i}\times\frac{\beta}{(\beta−1)(\frac{ρ_{i}}{ρ})+1}$, where $ρ_{i}$ is the local density in a 0.01-radius surrounding the female and $ρ$ is the density value that would be expected if the population were evenly distributed across the landscape. This means that a female in a low-density area will have greater fecundity, reflecting greater access to resources as well as reduced competition faced by her offspring. Each offspring is displaced a random distance from its mother. Displacement distance in the x and y axis are both drawn from a normal distribution with a mean of 0 and standard deviation equal to the migration value parameter. This produces an average displacement of $migration value \times \sqrt{\pi/2}$. If an offspring’s coordinates fall outside the bounds of the simulation, the coordinates are redrawn until the offspring is placed within the boundaries.
 
-During each simulation, we calculated Green’s coefficient, which provides a quantification of the degree of spatial clustering. To do so, we divided the 1 × 1 area into an 8 × 8 grid and counted the number of individuals present in each of the 64 grid sections. Green’s coefficient (G) is then defined by G=s2n-1N-1, where N is the total population size, n is mean number of individuals in a grid section, and s2 is the variance of the counts. If individuals are distributed randomly and according to a Poisson distribution, then it is expected that n= s2 and G=0. By contrast, if all individuals are maximally clustered into a single section of the grid, G=1. Note that we only count wild-type homozygotes in this measurement, because this was found to provide a more useful representation of the spatial dynamics (Adolfi et al., 2020).
+During each simulation, we calculated Green’s coefficient, which provides a quantification of the degree of spatial clustering. To do so, we divided the 1 × 1 area into an 8 × 8 grid and counted the number of individuals present in each of the 64 grid sections. Green’s coefficient ($G$) is then defined by $G=\frac{\frac{s^{2}}{n}-1}{N-1}$, where $N$ is the total population size, $n$ is mean number of individuals in a grid section, and $s^{2}$ is the variance of the counts. If individuals are distributed randomly and according to a Poisson distribution, then it is expected that $n= s^{2}$ and $G=0$. By contrast, if all individuals are maximally clustered into a single section of the grid, $G=1$. Note that we only count wild-type homozygotes in this measurement, because this was found to provide a more useful representation of the spatial dynamics (Adolfi et al., 2020).
 
 As observed previously (Champer et al., 2021a), the release of a suppression drive can result in chasing dynamics between the drive and wild-type alleles. When a suppression drive is first released from the center of the landscape, the population is suppressed radially outward, such that surviving wild-type individuals cluster near the boundaries. This causes Green’s coefficient to increase. However, wild-type individuals that escape into areas previously cleared by the drive are able to produce more offspring as a result of the lack of competition in these areas. If a wild-type population grows into a previously empty area, then Green’s coefficient once again decreases as these individuals occupy more territory. We aimed to capture this inflection point by finding the first local maximum in Green’s coefficient and the first local minimum in the number of wild-type alleles. These events tend to occur within 5 generations of one another. To define the generation when chasing begins in a simulation, we chose the earlier of these two time points.
 
-## Anopheles-specific model
+### Anopheles-specific model
 
 In addition to the discrete-generation models, we implemented refined versions of the models that more explicitly simulate the life-cycle, demography, and ecology of Anopheles mosquitos. These models progress by weekly time-steps, allowing for overlapping generations.
 
@@ -154,19 +183,49 @@ Female mosquitoes of most species usually just mate once, though older females h
 
 After reaching adulthood, females have a 50% probability to successfully produce offspring during any given week if they have previously mated (which takes place before offspring production). The number of eggs laid is not density dependent but is instead drawn from a Poisson distribution with the average set at 50 times the product of the fitness of the two parents. The number of eggs laid by A. gambiae appears closer to three times this level in laboratory conditions (Yaro et al., 2006), but in practice, usually only a far smaller number reach adulthood in wild conditions. Our use of 50 allows larvae at low density to have high survival rates compared to most wild conditions while still minimizing computational burden.
 
-The survival rates of adults are also not density dependent. Anopheles females have longer lifespans than males. In our model, males never survive beyond their third week as an adult and females never beyond their sixth, with the survival rates at each age of adulthood given as follows:Adultmalesurvivalrates:[23,12, 0]Adultfemalesurvivalrates:[56,45,34,23,12, 0]
+The survival rates of adults are also not density dependent. Anopheles females have longer lifespans than males. In our model, males never survive beyond their third week as an adult and females never beyond their sixth, with the survival rates at each age of adulthood given as follows:
+
+$$
+Adultmalesurvivalrates:[\frac{2}{3},\frac{1}{2}, 0]
+$$
+
+
+
+$$
+Adultfemalesurvivalrates:[\frac{5}{6},\frac{4}{5},\frac{3}{4},\frac{2}{3},\frac{1}{2}, 0]
+$$
 
 This results in an approximately linearly declining number of surviving adult members of a single week cohort. This function was chosen based on survival curves in laboratory studies (Christiansen-Jucht et al., 2014) and to allow simulation of age-based health. The measured male survival rate in the field was measured as approximately 30% per week in one recent study (Yao et al., 2022), and often higher in females and closer to 50% in males for older studies (González Jiménez et al., 2019; Matthews et al., 2020). This is somewhat lower, but broadly similar to our model, considering high variation in field conditions and our need to simulate a high effective population size with limited computational resources.
 
 Note that individuals have the opportunity to mate and reproduce before these survival rates toll. One generation in the discrete model is then equivalent to ~3167 weeks in this model (thus, we ran these simulations for 3167 weeks to represent 1,000 generations).
 
-Mosquito larvae often face fierce competition for resources in the small bodies of water in which they develop while adults do not directly compete with one another for food (Arifin et al., 2014). Thus, population density does not regulate adult fecundity in our Anopheles model; instead, it affects juvenile survival. In our model, individuals are considered to be in juvenile stages (egg, larvae, and pupae) during their first two weeks of life and reach adulthood when they enter their third week. The larger week-old larvae do not compete with new eggs, and they cease to compete completely once they reach the pupal stage. However, these larger larvae consume more resources compared to smaller larvae and are thus estimated to exert competition at fivefold strength compared to new juveniles. In the panmictic version of this model, newly generated individuals survive until adulthood with a probability that depends on the global sum of new juveniles n, the global sum of week-old larvae o, the low-density growth rate β, as well as the expected competition within the system, which is in turn a function of the number of adult females in a population at capacity (25,000 in all simulations) as well as the expected number of offspring per adult female per week (25), calculated as follows:expectedcompetition=25000(25+2×0.285714×5)competitionratior=(n+5o)expectedcompetitionnewoffspringsurvivalrate=β25((β−1)r+1)×[12×0.285714]−r
+Mosquito larvae often face fierce competition for resources in the small bodies of water in which they develop while adults do not directly compete with one another for food (Arifin et al., 2014). Thus, population density does not regulate adult fecundity in our Anopheles model; instead, it affects juvenile survival. In our model, individuals are considered to be in juvenile stages (egg, larvae, and pupae) during their first two weeks of life and reach adulthood when they enter their third week. The larger week-old larvae do not compete with new eggs, and they cease to compete completely once they reach the pupal stage. However, these larger larvae consume more resources compared to smaller larvae and are thus estimated to exert competition at fivefold strength compared to new juveniles. In the panmictic version of this model, newly generated individuals survive until adulthood with a probability that depends on the global sum of new juveniles n, the global sum of week-old larvae o, the low-density growth rate β, as well as the expected competition within the system, which is in turn a function of the number of adult females in a population at capacity (25,000 in all simulations) as well as the expected number of offspring per adult female per week (25), calculated as follows:
+
+$$
+expectedcompetition=25000(25+2\times0.285714\times5)
+$$
+
+
+
+$$
+competitionratior=\frac{(n+5o)}{expectedcompetition}
+$$
+
+
+
+$$
+newoffspringsurvivalrate=\frac{\beta}{25((\beta−1)r+1)}\times[\frac{1}{2\times0.285714}]^{−r}
+$$
 
 Here, 0.285714 adjusts for the expected number of older juveniles when the population is at equilibrium such that the adult female population size remains at the specified equilibrium value of 25,000. Note that while juvenile mosquitoes experience continuous mortality in real populations, our model approximates this by determining total juvenile mortality immediately after new juveniles are all generated, representing mortality in both 1-week-old and older juveniles (all juveniles that survive this stage will survive to adulthood). This allows more individuals to be culled immediately, thus reducing the computational burden of evaluating the large number of spatial interactions determining competition, thereby allowing for the simulation of larger populations. This approximation is supported by the fact that larvae in their second week are much larger than newly hatched larvae, thus preventing younger larvae from substantially reducing the resources available to older larvae. Later in their second week, the juveniles are pupae, which do not require additional resources. Thus, new juveniles are not likely to affect the mortality of juveniles that are at least a week older, supporting our approximation of determining mortality only in the first week.
 
-## Anopheles-specific spatial model
+### Anopheles-specific spatial model
 
-In the spatial version of this model, the survival rate of new offspring is affected by the local density of other larvae, rather than global counts thereof. The amount of competition experienced is determined by other new offspring and week-old larvae nearby. The maximum amount of competition contributed by other new offspring is 1.0, which linearly declines to 0.0 at a distance of 0.01 (the average competition contributed by another individual within range is therefore 1/3). Week-old larvae contribute five times as much competition. The expected competition again corresponds to the number of females when the population is at capacity, as well as the expected number of offspring per female:expectedcompetition=25000(25+2×0.285714×5)3π×0.012
+In the spatial version of this model, the survival rate of new offspring is affected by the local density of other larvae, rather than global counts thereof. The amount of competition experienced is determined by other new offspring and week-old larvae nearby. The maximum amount of competition contributed by other new offspring is 1.0, which linearly declines to 0.0 at a distance of 0.01 (the average competition contributed by another individual within range is therefore 1/3). Week-old larvae contribute five times as much competition. The expected competition again corresponds to the number of females when the population is at capacity, as well as the expected number of offspring per female:
+
+$$
+expectedcompetition=\frac{25000(25+2\times0.285714\times5)}{3\pi\times0.01^{2}}
+$$
 
 After determining the amount of competition being faced by a new offspring as compared to the expected competition, the survival rate of that new offspring is set in the same way as in the panmictic version of the model.
 
@@ -174,6 +233,6 @@ In the Anopheles spatial model, surviving adults migrate in the same manner that
 
 Comparing our default dispersal rate of 0.307 to a recent study that found a mean dispersal of 171 m over 20 days (Yao et al., 2022), we can potentially state that our mean dispersal corresponds to 101 m per week and that our simulation area length is therefore 3.3 km. A population density of 430 mosquitoes per hectare would thus yield a total population of 470,000 adults, compared to our default of 40,000 (of which 25,000 are females). However, the effective population (more akin to what is generally analyzed in population genetic models) would be substantially below 470,000, and there is substantial density variation between wild mosquito populations. Thus, our modeled population density could be considered reasonable when modeling Anopheles, based on length scales from our migration rate. However, it is unclear what parameter value for the density interaction radius would best represent actual mosquito populations, given the varying size and distribution of larval habitat, as well as larval movement. Thus, our value of 0.01 stands in as an estimate, chosen as a low value that is still large enough to avoid extreme variation in individual larval competition when the population is at equilibrium before a drive release.
 
-## Data generation
+### Data generation
 
 Simulations were run on the computing cluster at the Department of Computational Biology at Cornell University. Data processing and analytics were performed in Python, and figures were prepared in Python and R. All SLiM files for the implementation of these suppression drives are available on GitHub (https://github.com/jchamper/ChamperLab/tree/main/Mosquito-Drive-Modeling, copy archived at swh:1:rev:bff233aa54cd8f9b94151660a8de98adeda92c33, Champer, 2022).

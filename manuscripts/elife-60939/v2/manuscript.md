@@ -55,15 +55,251 @@ Here we performed a comprehensive study in patients with and without coronary ar
 
 ## Results
 
-## Group characteristics
+### Group characteristics
 
 Thirteen individuals with CAD due to severe atherosclerosis with a median Total Plaque Score (TPS) of 14[9-15], and thirteen individuals without coronary atherosclerosis (TPS = 0) participated in the study (Table 1). As expected, patients with atherosclerosis more often received lipid-lowering therapy with statins, which was associated with a lower total and LDL-cholesterol concentration. All outcomes were corrected for the age and BMI because these are known modulators of innate immune cell function (Ter Horst et al., 2016).
 
-## Circulating inflammatory markers
+**Table 1.**
+ Group characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>Individuals with CAD (n = 13)</th>
+      <th>Individuals without atherosclerosis (n = 13)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>59.8 ± 9.7</td>
+      <td>52.2 ± 10.4</td>
+    </tr>
+    <tr>
+      <td>Sex (% men, n)</td>
+      <td>100 (13)</td>
+      <td>100 (13)</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>27.8 ± 2.8</td>
+      <td>25.8 ± 2.5</td>
+    </tr>
+    <tr>
+      <td>SBP (mm Hg)</td>
+      <td>133 ± 15</td>
+      <td>126 ± 10</td>
+    </tr>
+    <tr>
+      <td>DBP (mm Hg)</td>
+      <td>90 ± 8*</td>
+      <td>84 ± 6</td>
+    </tr>
+    <tr>
+      <td>Hypertension (%, n)</td>
+      <td>93 (12)**</td>
+      <td>31 (4)</td>
+    </tr>
+    <tr>
+      <td>Current smoking (%, n)</td>
+      <td>23 (3)</td>
+      <td>31 (4)</td>
+    </tr>
+    <tr>
+      <td>Calcium score (HU)</td>
+      <td>445 [213-781]**</td>
+      <td>0 [0]</td>
+    </tr>
+    <tr>
+      <td>Total Plaque score (0–16)‡</td>
+      <td>14 [9-15]***</td>
+      <td>0 [0]</td>
+    </tr>
+    <tr>
+      <td>Lipid-lowering therapy (%, n)</td>
+      <td>77 (10)***</td>
+      <td>8 (1)</td>
+    </tr>
+    <tr>
+      <td>Acetylsalicylic acid use (%, n)</td>
+      <td>69 (9)***</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>ACE-inhibitor use (%, n)</td>
+      <td>23 (3)</td>
+      <td>8 (1)</td>
+    </tr>
+    <tr>
+      <td>β-blocker use (%, n)</td>
+      <td>23 (3)</td>
+      <td>8 (1)</td>
+    </tr>
+    <tr>
+      <td>Glucose (mmol/L)</td>
+      <td>5.9 ± 0.8</td>
+      <td>†5.7 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>Creatinine (µmol/L)</td>
+      <td>89 ± 14</td>
+      <td>91 ± 16</td>
+    </tr>
+    <tr>
+      <td>Tchol (mmol/L)</td>
+      <td>4.51 ± 0.86**</td>
+      <td>5.61 ± 0.61</td>
+    </tr>
+    <tr>
+      <td>LDLc (mmol/L)</td>
+      <td>†2.52 ± 0.97**</td>
+      <td>3.56 ± 0.64</td>
+    </tr>
+    <tr>
+      <td>HDLc (mmol/L)</td>
+      <td>1.25 ± 0.31</td>
+      <td>1.51 ± 0.34</td>
+    </tr>
+    <tr>
+      <td>TG (mmol/L)</td>
+      <td>1.98 ± 1.97</td>
+      <td>1.20 ± 0.38</td>
+    </tr>
+    <tr>
+      <td>nHDLc (mmol/L)</td>
+      <td>3.26 ± 1.06*</td>
+      <td>4.11 ± 0.75</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are reported as mean ± SD, as mean (number of participants), or as median [interquartile range] and compared with the appropriate statistical tests. ‡ TPS was calculated for participants with a calcium score of <400 HU (n = 6). † Data is missing for one participant. * indicates p<0.05, **: p<0.01, ***: p<0.001._
+
+### Circulating inflammatory markers
 
 The distribution of immune cells and monocyte subpopulations was similar between groups (Table 2). Integrin CD11b expression on monocytes tended to be higher in patients with CAD (p=0.09). Circulating endothelial dysfunction marker E-selectin was higher in patients with atherosclerosis (p<0.05).
 
-## Cytokine production capacity of circulating PBMCs is higher in atherosclerosis
+**Table 2.**
+ Circulating immune cells and inflammatory markers in patients and controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell types</th>
+      <th>Individuals with CAD</th>
+      <th>Individuals without atherosclerosis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WBC (106/mL)</td>
+      <td>†5.5 [4.9–6.0]</td>
+      <td>5.4 [4.8–6.7]</td>
+    </tr>
+    <tr>
+      <td>Neutrophils (106/mL)</td>
+      <td>†3.2 [2.5–3.6]</td>
+      <td>3.0 [2.6–4.0]</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes (106/mL)</td>
+      <td>1.7 [1.3–1.9]</td>
+      <td>1.8 [1.5–2.5]</td>
+    </tr>
+    <tr>
+      <td>Monocytes (106/mL)</td>
+      <td>0.53 [0.42–0.67]</td>
+      <td>0.55 [0.45–0.66]</td>
+    </tr>
+    <tr>
+      <td>Monocytes (%)</td>
+      <td>9.8 [8.0–11.5]</td>
+      <td>9.3 [7.7–11.1]</td>
+    </tr>
+    <tr>
+      <td>Classical monocytes (%gated)</td>
+      <td>78.1 [72.8–80.3]</td>
+      <td>72.8 [70.1–85.5]</td>
+    </tr>
+    <tr>
+      <td>Intermediate monocytes (%gated)</td>
+      <td>9.8 [8.2–14.2]</td>
+      <td>10.1 [7.6–13.7]</td>
+    </tr>
+    <tr>
+      <td>Nonclassical monocytes (%gated)</td>
+      <td>12.2 [9.3–14.3]</td>
+      <td>13.1 [6.3–18.2]</td>
+    </tr>
+    <tr>
+      <td>CCR2+ monocytes (%gated)</td>
+      <td>80.5 [73.0–82.3]</td>
+      <td>†77.6 [71.4–86.3]</td>
+    </tr>
+    <tr>
+      <td>CD11b expression monocytes (MFI)</td>
+      <td>10490 [7814–12025]^</td>
+      <td>††6978 [6512–10041]</td>
+    </tr>
+    <tr>
+      <td>CD41+ monocytes (%gated)</td>
+      <td>7.8 [6.5–9.7]</td>
+      <td>8.7 [7.6–8.9]</td>
+    </tr>
+    <tr>
+      <td>Inflammatory markers</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IL-1β (pg/mL)</td>
+      <td>†0.12 [0.09–0.17]</td>
+      <td>0.12 [0.06–0.15]</td>
+    </tr>
+    <tr>
+      <td>IL-1Ra (pg/mL)</td>
+      <td>271 [197-338]</td>
+      <td>212 [165-253]</td>
+    </tr>
+    <tr>
+      <td>IL-6 (pg/mL)</td>
+      <td>2.31 [1.37–2.86]</td>
+      <td>†1.61 [1.23–2.19]</td>
+    </tr>
+    <tr>
+      <td>IL-18 (pg/mL)</td>
+      <td>162 [127-227]</td>
+      <td>195 [144-236]</td>
+    </tr>
+    <tr>
+      <td>hsCRP (pg/mL)</td>
+      <td>1.66 [0.83–4.87]</td>
+      <td>1.37 [0.53–3.84]</td>
+    </tr>
+    <tr>
+      <td>E-selectin (ng/mL)</td>
+      <td>†11.74 [7.65–15.10]*</td>
+      <td>8.45 [4.52–14.06]</td>
+    </tr>
+    <tr>
+      <td>VCAM-1 (ng/mL)</td>
+      <td>773 [711-859]^</td>
+      <td>769 [643-844]</td>
+    </tr>
+    <tr>
+      <td>MMP2 (ng/mL)</td>
+      <td>354 [264-434]</td>
+      <td>341 [250-427]</td>
+    </tr>
+  </tbody>
+</table>
+
+_Circulating concentrations of cells and inflammatory markers in individuals with CAD (n = 13) compared to individuals without atherosclerosis (n = 13). Median with [IQR]. P-values are corrected for age and BMI with ANCOVA. Outliers were removed with an SD of >2.5 of Z-scores. † Data is missing for one participant. *p<0.05, **p<0.01. HSPCs: hematopoietic stem and progenitor cells._
+
+### Cytokine production capacity of circulating PBMCs is higher in atherosclerosis
 
 Previously, we showed in a comparable study cohort that the LPS-induced production of IL-6, TNFα, IL-1β, and IL-8 in PBMCs was higher in patients with CAD compared to controls (Bekkering et al., 2016). We could confirm this in the current study for IL-8 (p<0.01), with a similar pattern for IL-6 (p=0.08) and TNFα (p=0.13) (Figure 1A). There were no significant differences in response to TLR2 agonist Pam3Cys stimulation (Figure 1B).
 
@@ -71,11 +307,19 @@ Previously, we showed in a comparable study cohort that the LPS-induced producti
 
 **Figure 1.:** (A) Cytokine production capacity of circulating PBMCs after LPS stimulation in control individuals (white bars, n = 13) and individuals with CAD (gray bars, n = 13). Geometric mean with 95% CI. (B) Table of cytokine/chemokine production (x-axis) after stimulation with LPS or P3C (y-axis) of PBMCs showing statistical differences between groups. The p-values are corrected for age and BMI with ANCOVA. Outliers were removed with an SD of >2.5 of Z-scores. * indicates p<0.05, **: p<0.01.
 
-## HSPC composition is changed in patients with CAD
+### HSPC composition is changed in patients with CAD
 
 We assessed the HSPC composition using flow cytometry. Although the total percentage of HSPCs was similar between groups, the percentage of multipotent progenitors (HSC/MPP, p<0.05) was higher in patients with CAD (Figure 2A,B). Trends for a higher percentage of common myeloid progenitors (CMP, p=0.06) and common lymphoid progenitors (CLP, p=0.08) were observed in patients with CAD (Figure 2C,D). In addition, the percentage of pre-monocytes was higher (p<0.05), which was associated with lower megakaryocyte erythrocyte progenitor percentages (MEP, p<0.05) (Figure 2F,G). Within the bone marrow, no difference in the percentage of monocytes (3.3 [3.1–4.4]% in patients versus 3.4 [3.0–4.6] in controls), and monocyte subpopulations, that is, classical (87 [82–88] % versus 82 [79-89]), intermediate (7.5 [7.1–10.8]% versus 9.3 [6.1–11.5]) and non-classical monocytes (5.1 [4.2–8.1]% versus 8.1 [3.6–11.4]), was observed. Interestingly, the percentage of circulating multipotent progenitors (HSC/MPP) was higher in patients with CAD (p<0.05) (Figure 2I). Similar patterns were found using absolute cell counts of progenitor populations.
 
-## Functional and metabolic reprogramming of bone marrow MNCs in atherosclerosis
+![Figure 2.](https://cdn.elifesciences.org/articles/60939/elife-60939-fig2-v2.jpg)
+
+**Figure 2.:** Control individuals (white bars, n = 13) and individuals with CAD (gray bars, n = 13). HSC and MPP cell populations were combined as the CD90 expression marker was not available for n = 6 in each study group. Geometric mean with 95% CI. The p-values are corrected for age and BMI with ANCOVA. * indicates p<0.05, **: p<0.01. In top-down order: HSC indicates hematopoietic stem cell, MPP: multipotent progenitor, CLP: common lymphoid progenitor, CMP: common myeloid progenitor, GMP: granulocyte-macrophage progenitor, MEP: megakaryocyte erythrocyte progenitor.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60939/elife-60939-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** HSPCs were defined as CD45+CD34+CD38dim cells, after exclusion of dead cells and doublets. Next, the lymphoid lineage was excluded in CD19-CD117+ cells. In CD45RAdimCD38+ cells, CMP, GMP, MEP, and R1-3 progenitor populations were identified using CD123 and CD45RA expression, see Table for details. CD90 expression in CD38-CD45RA- cells determined MPP and HSC populations.
+
+### Functional and metabolic reprogramming of bone marrow MNCs in atherosclerosis
 
 The immune response of BM-MNCs was determined after ex vivo 24-hour stimulation with TLR agonists. TNFα production after LPS stimulation was higher in patients with atherosclerosis (p<0.05), with similar patterns for IL-6 (p=0.12), IL-8 (p=0.10), and IL-1Ra (p=0.11) although these differences did not reach statistical significance (Figure 3A). There were no significant differences in response to Pam3Cys stimulation (Figure 3B).
 
@@ -89,7 +333,7 @@ Seahorse respirometry revealed that both the basal and maximal OCR was higher (p
 
 **Figure 4.:** (A, B) Oxygen consumption and extracellular acidification rates over time using treatment with Oligomycin, FCCP, and Rotenone/Antimycin A. (C, D) Bar graphs of control individuals (white bars, n = 13) and individuals with CAD (gray bars, n = 13). Geometric mean with 95% CI. The p-values are corrected for age and BMI with ANCOVA. * indicates p<0.05, **: p<0.01. IFN-γ+LPS: 2 hr IFN-γ and LPS stimulation.
 
-## Proliferation of BM-MNCs
+### Proliferation of BM-MNCs
 
 Proliferation assays of BM-MNCs did not reveal significant differences in erythroid-, myeloid-, or granulocyte-macrophage progenitor proliferation rates between patients with CAD and healthy controls (Figure 5).
 
@@ -97,17 +341,41 @@ Proliferation assays of BM-MNCs did not reveal significant differences in erythr
 
 **Figure 5.:** Counted colonies per 103 cultured BM-MNCs of control individuals (white bars, n = 13) and individuals with CAD (gray bars, n = 13). Geometric mean with 95% CI. The p-values are corrected for age and BMI with ANCOVA. BFU-E indicates erythroid progenitor population, CFU-GEMM: myeloid progenitor population, CFU-GM: granulocyte-macrophage progenitor population.
 
-## Bone marrow progenitors of patients with CAD are primed to differentiate into an inflammatory myeloid lineage
+### Bone marrow progenitors of patients with CAD are primed to differentiate into an inflammatory myeloid lineage
 
 To further understand the functional changes in HSPCs, we explored the transcriptional signature of HSC, MPP, and GMP cell populations. Differential expression analysis was applied to each population separately and a combined analysis of the populations to identify differentially expressed (DE) genes between patients and control samples. This identified 1747 genes that were differentially regulated in at least one of the cell populations (p≤0.05). A PCA analysis based on DE genes of HSC populations revealed a clear separation between patients and controls (Figure 6A). This was less pronounced for the MPPs and GMPs (Figure 6—figure supplement 1). Among those DE genes, we observed that four genes were significantly upregulated in the patients compared to the controls in a combined analysis of HSCs, MPPs, and GMPs (Figure 6B, padj <0.1), including CCR2, EPB42, FNDC3B, and RBMS1. For individual log fold change (FC) and adjusted p-values, please see Figure 6—source data 1 and the combined and separated heatmaps for the top 50 DE genes for each population (Figure 6—figure supplements 2 and 3). Seven genes were differentially downregulated in the patients, including PFKP, CCDC163P, ARMCX4, PTK7, WDR90, ROBO3, and FAM84B. Within the HSC population, only PROK2 showed a significant upregulation (Figure 6—figure supplement 3), whereas in the MPPs and GMPs no genes showed significantly differential upregulation (Figure 6—figure supplement 3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60939/elife-60939-fig6-v2.jpg)
+
+**Figure 6.:** Control individuals (n = 10) versus individuals with CAD (n = 10) for each cell population. (A) Principle component analysis (PCA) based on differentially expressed (DE) genes of the HSC population; (B) Volcano plot showing differential expressed genes between patients with CAD and individuals without atherosclerosis, controlled for age, in a combined analysis of HSC, MPP, and GMP population. Genes with an FDR <0.1 are named; (C) Gene ontology enrichment analysis of DE genes from HSCs, MPPs, and GMPs, depicting the FDR and enrichment ratio.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60939/elife-60939-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) PCA analysis based on DE genes of the GMP and MPP cell population; (B) Volcano plot showing differential expressed genes between CAD patients and controls, controlled for age, in the HSC, MPP, and GMP cell populations. Genes with an FDR <0.1 are called out.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60939/elife-60939-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Genes with an FDR <0.1 are colored in red and blue for up- and down-regulated, respectively.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/60939/elife-60939-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Genes with an FDR <0.1 are colored in red and blue for up- and down-regulated, respectively.
 
 Subsequently, we performed pathway enrichment analyses on disease-specific DE genes. The differentially upregulated genes of HSCs (p<0.05) showed significant enrichment for neutrophil and monocyte biological processes. These include neutrophil activation pathways, cytokine production pathways, and macrophage activation pathways (FDR <0.05) (Figure 6C). Transcriptional signatures of the genes enriched in the neutrophil-related pathways indicated upregulation of genes involved in the development and activation of neutrophils, such as insulin like growth factor two receptor (IGF2R), S100A11, and TNFRSF1B (Figure 6—source data 2). Additionally, there was an upregulation of signalling genes in the myeloid lineage, such as CCR2, innate immune signal transduction adaptor (MYD88), IL1RN, IL18R1, and Toll-like receptors TLR2 and TLR4. The differentially upregulated genes in the GMPs showed a similar enrichment for neutrophil-related pathways, and pathways related to myeloid cell differentiation and migration (Figure 6C). Upregulated genes in myeloid cell differentiation and regulation of hematopoiesis pathways revealed upregulation of important signalling and transcription factors, such as colony stimulating factor three receptor (CSF3R), NFKB inhibitor alpha (NFKBIA), signal transducer and activator of transcription 1 (STAT1), STAT3, and transforming growth factor beta 1 (TGFB1). Repeating these analyses using p<0.01 showed that the observed enriched terms were robust (FDR <0.05).
 
 RNA-seq data have been deposited in the ArrayExpress database at EMBL-EBI (www.ebi.ac.uk/arrayexpress) under accession number E-MTAB-9399.
 
-## Vascular wall inflammation and hematopoietic tissue activation measured with [18F]FDG PET/CT is not higher in patients with CAD
+### Vascular wall inflammation and hematopoietic tissue activation measured with [18F]FDG PET/CT is not higher in patients with CAD
 
 Vascular wall inflammation and hematopoietic tissue activity, as determined by [18F]FDG PET/CT-scan, was similar between patients with CAD and individuals without atherosclerosis (Figure 7). Correction for age, BMI, and glucose concentrations did not influence the results.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60939/elife-60939-fig7-v2.jpg)
+
+**Figure 7.:** Standard uptake value of each region in control individuals (white bars, n = 13) and individuals with CAD (gray bars, n = 13). Geometric mean with 95% CI. The p-values are corrected for age and BMI with ANCOVA.* indicates p<0.05, **: p<0.01. TBR: target SUV/mean blood pool SUV or mean liver SUV as background.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60939/elife-60939-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Linear regression with 95% CI (n = 26). Spearman correlation coefficient (rs). * indicates p<0.05, **: p<0.01. HSPCs: hematopoietic stem and progenitor cells, GMP: granulocyte macrophage progenitor cells, WBC: white blood cells.
 
 Interestingly, although the splenic activity was not significantly higher in patients with CAD, the splenic [18F]FDG-uptake correlated with HSPCs and with circulating immune cells (Figure 7—figure supplement 1). Splenic [18F]FDG-uptake correlated positively with CCR2 expression on HSPCs (rs = 0.604, p<0.01), with GMPs (rs = 0.405, p<0.05), and with circulating leukocyte (rs = 0.393, p<0.05) and monocyte counts (rs = 0.588, p<0.01).
 
@@ -133,39 +401,491 @@ To summarize, our study is the first to prospectively assess HSPC phenotype in p
 
 ## Materials and methods
 
-## Participant selection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Peripheral blood</td>
+      <td>Through venous puncture</td>
+      <td></td>
+      <td>Freshly isolated from Homo sapiens, men, 18–75 years</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Bone Marrow aspirate</td>
+      <td>From the posterior iliac crest according to standard practice</td>
+      <td></td>
+      <td>Freshly isolated from Homo sapiens</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD45 KO</td>
+      <td>Beckman Coulter</td>
+      <td>Clone J33 Cat# B36294, RRID:AB_2833027</td>
+      <td>(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal HLA-DR PE</td>
+      <td>Beckman Coulter</td>
+      <td>Clone immu-357 Cat# IM1639U RRID:AB_2876782</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD14 PECy7</td>
+      <td>eBioscience</td>
+      <td>Clone 61D3 Cat# 25-0149-42 RRID:AB_1582276</td>
+      <td>(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD16 FITC</td>
+      <td>eBioscience</td>
+      <td>Clone CB16 Cat# 11-0168-42 RRID:AB_10805747</td>
+      <td>(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD3 APC-Alexa750</td>
+      <td>Beckman Coulter</td>
+      <td>Clone UCTH1 Cat# A66329 RRID:AB_2876783</td>
+      <td>(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD56 APC</td>
+      <td>Beckman Coulter</td>
+      <td>Clone N901 Cat# IM2474U RRID:AB_2876784</td>
+      <td>(1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD192 BV421</td>
+      <td>BD Biosciences</td>
+      <td>Clone 48607 Cat# 564067, RRID:AB_2738573</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD11b BV785</td>
+      <td>Biolegend</td>
+      <td>Clone ICRF44 Cat# 301346, RRID:AB_2563794</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD41 PerCP-Cy5.5</td>
+      <td>Biolegend</td>
+      <td>Clone Hip8 Cat# 303719, RRID:AB_2561731</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD90 FITC</td>
+      <td>Biolegend</td>
+      <td>Clone 5E10 Cat# 328107, RRID:AB_893438</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD123 PE</td>
+      <td>BD Biosciences</td>
+      <td>Clone 9F5 Cat# 555644, RRID:AB_396001</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD19 ECD</td>
+      <td>Beckman Coulter</td>
+      <td>Clone J4.119 Cat# IM2708U, RRID:AB_130854</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD38 PC5.5</td>
+      <td>Beckman Coulter</td>
+      <td>Clone LS198-4-3 Cat# IM2651U, RRID:AB_131166</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD117 PEC7</td>
+      <td>Beckman Coulter</td>
+      <td>Clone 104D2D1 Cat# IM3698, RRID:AB_131184</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD45RA APC</td>
+      <td>Beckman Coulter</td>
+      <td>Clone 2H4LDH11LD89 (2H4) Cat# B14807 RRID:AB_2876787</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal CD34-APC A750</td>
+      <td>Beckman Coulter</td>
+      <td>Clone 581 Cat# A89309 RRID:AB_2876786</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DRAQ7</td>
+      <td>Biostatus</td>
+      <td>Live/Dead stain</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Cytokine Magnetic Magpix 25-plex panel</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>MAGPIX platform</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SimplePlex cartridge</td>
+      <td>ProteinSimple</td>
+      <td></td>
+      <td>Ella platform</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Truseq small RNA primers</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>hsCRP ELISA</td>
+      <td>R&amp;D</td>
+      <td>DY1707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VCAM-1 ELISA</td>
+      <td>R&amp;D</td>
+      <td>DY809</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MMP2 ELISA</td>
+      <td>R&amp;D</td>
+      <td>DY902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E-selectin ELISA</td>
+      <td>R&amp;D</td>
+      <td>DY724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pharm Lyse lysing buffer</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutamine</td>
+      <td>Invitrogen</td>
+      <td>2 mmol/L in RPMI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gentamycin</td>
+      <td>Centrafarm</td>
+      <td>10 mg/mL in RPMI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyruvate</td>
+      <td>Invitrogen</td>
+      <td>1 mmol/L in RPMI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methocult GF</td>
+      <td>Stemcell Technologies</td>
+      <td>H84435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hg19 human Refseq transcriptome</td>
+      <td>Li and Durbin, 2010</td>
+      <td></td>
+      <td>To align RNAseq</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Lipopolysaccharide from Escherichia coli</td>
+      <td>Sigma-Aldrich</td>
+      <td>Serotype 055:B5, L2880</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pam3CysK4</td>
+      <td>EMC Microcollections</td>
+      <td>L2000</td>
+      <td>10 ug/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Interferon gamma</td>
+      <td>Immukine, Boehringer Ingelheim BV</td>
+      <td></td>
+      <td>50 ng/mL for Seahorse</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Oligomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>75351</td>
+      <td>1 mM for Seahorse</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FCCP</td>
+      <td>Sigma-Aldrich</td>
+      <td>C2920</td>
+      <td>1 mM for Seahorse</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Rotenone</td>
+      <td>Sigma-Aldrich</td>
+      <td>R8875</td>
+      <td>1.25 mM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Antimycin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>A8674</td>
+      <td>2.5 mM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kaluza</td>
+      <td>Beckman Coulter</td>
+      <td>Version 2.1 RRID:SCR_016182</td>
+      <td>Flow Cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MultiQC</td>
+      <td>Ewels et al., 2016</td>
+      <td>RRID:SCR_014982</td>
+      <td>Quality check RNAseq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DEseq2 v1.22.0</td>
+      <td>Love et al., 2014 BioConductor</td>
+      <td>RRID:SCR_015687</td>
+      <td>Differential gene expression RNAseq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clusterProfiler v3.10.1</td>
+      <td>Yu et al., 2012 BioConductor</td>
+      <td>RRID:SCR_016884</td>
+      <td>RNAseq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R 3.6.1</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrueX algorithm</td>
+      <td>EARL protocols</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Inveon Research Workspace 4.2</td>
+      <td>Preclinical Solutions, Siemens Medical Solutions</td>
+      <td>3D Gaussian filter kernel, 3.0 mm</td>
+      <td>Postprocessing of FDG PET CT scanning</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyRadiomics toolbox</td>
+      <td>van Griethuysen et al., 2017</td>
+      <td></td>
+      <td>Analysis FDG PET CT</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS V25.0</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism v6.0</td>
+      <td>GraphPad software</td>
+      <td>RRID:SCR_002798</td>
+      <td>Figures</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sysmex-XN 450 hematology analyzer</td>
+      <td>Sysmex</td>
+      <td></td>
+      <td>For total blood counts</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CytoFLEX flow cytometer</td>
+      <td>Beckman Coulter</td>
+      <td>13 color on CytExpert RRID:SCR_017217</td>
+      <td>Flow Cytometry Peripheral blood</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Navios flow cytometer</td>
+      <td>Beckman Coulter</td>
+      <td>RRID:SCR_014421</td>
+      <td>Flow Cytometry Bone marrow Progenitors</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>XFp Analyzer</td>
+      <td>Seahorse Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD FACSAria II SORP</td>
+      <td>Becton Dickinson</td>
+      <td>RRID:SCR_018091</td>
+      <td>Flow cytometry sorting</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Illumina Nextseq500 platform</td>
+      <td>Illumina</td>
+      <td>RRID:SCR_014983</td>
+      <td>RNAseq</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Biograph 40 mCT scanner</td>
+      <td>Siemens Healthineers</td>
+      <td>~2.1 MGq/kg FDG i.v.</td>
+      <td>FDG PET CT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Participant selection
 
 Participants (male, 18–75 years) were recruited among patients who were admitted for the evaluation of chest pain and underwent cardiac imaging at the Cardiology department of the Canisius Wilhelmina hospital or the Radboud University Medical Centre, Nijmegen, The Netherlands after January 1, 2015. Severe coronary atherosclerosis was defined as a calcium score >400 HU on computed tomography (CT), or a total plaque score (TPS) >4 on coronary CT angiography (CCTA), according to previously described standards (Bekkering et al., 2016; Pen et al., 2013). Control participants, with a calcium score and TPS of zero, were matched for age, body mass index (BMI), and smoking.
 
 Criteria for exclusion were previous cardiovascular events, malignancies, auto-immune or auto-inflammatory diseases (including diabetes mellitus), chronic immunomodulatory drug use, chronic kidney disease (MDRD <45 mL/min), liver disease (ALAT > 135 U/L), or thrombocytopenia (<50 × 106/mL). Additionally, participants were excluded if they had an infection (>38,5°C or antibiotic treatment), hospital admission, or vaccination within 3 months before study entry. The study protocol was approved by the Institutional Review Board Arnhem/Nijmegen, the Netherlands, and registered at ClinicalTrials.gov (NCT03172507). All individuals gave written informed consent.
 
-## Evaluation of atherosclerotic burden
+### Evaluation of atherosclerotic burden
 
 CCTA total plaque score was calculated as previously described (Pen et al., 2013). Briefly, a 64-slice MDCT scanner (Philips) was used to obtain CAC and MDCT Image acquisition using an ECG-synchronized axial scan protocol and post-processing CT and CAC studies using IntelliSpace Philips software. Before image acquisition, beta-blockers were administered targeting a heart rate of <60 beats per minute, and patients received nitroglycerin 0.8 mg sublingually. Prospective electrocardiographically gated step-and-shoot contrast-enhanced MDCT imaging was performed, initiated from 10 mm above the level of the left main artery to 10 mm below the inferior myocardial apex with scan parameters being 64 × 0.625 mm sections (2.5 mm), collimation tube currents of 350 to 780 mAs and tube voltage of 100 or 120 kV. In the rare event that prospective scanning was not possible, retrospective or helix scanning was used.
 
 Reconstruction of the MDCT scans was performed with reconstructed images obtained, using an ECG-triggered protocol, at 75% from the previous RR-interval, or at 75% and 40% from the previous RR-interval if a helix scan-protocol was used. The TPS was determined by summing the number of evaluable coronary segments with calcific or non-calcific plaque, or mixed plaque, where non-calcified and mixed plaque was assigned with one point and calcified plaque with 0 (maximum score = 16). Two independent experienced operators scored all CT images and both operators were blinded for all clinical information. In case of disagreement, the opinion of a third independent observer was asked.
 
-## Study design
+### Study design
 
 Participants underwent [18F]FDG PET/CT scanning, follow by venepuncture and bone marrow aspiration within 2–14 days. The participants were invited in pairs (1 patient:1 control) for blood sampling and bone marrow aspiration from December 2017 till July 2018.
 
-## Cardiovascular risk assessment
+### Cardiovascular risk assessment
 
 Medical history, smoking status, medication use, BMI, and fasting glucose concentrations were obtained from all individuals. Blood pressure was measured three times by a manual sphygmomanometer after 5 min seated rest according to AHA guidelines. Fasting total cholesterol (Tchol), high-density lipoprotein cholesterol (HDLc), and triglycerides (TG) were measured using standardized methods, and low-density lipoprotein cholesterol (LDLc) was calculated with the Friedewald formula.
 
-## Blood sampling and bone marrow aspiration
+### Blood sampling and bone marrow aspiration
 
 Bone marrow was aspirated from the posterior iliac crest according to standard practice by an experienced physician assistant. Blood was sampled through venous puncture. Sample collection was performed at 8.00–10.00 to avoid interference of circadian rhythms of immune parameters, and sample processing occurred within 2 hours. Plasma and serum were stored at −80°C until further use. Total blood cell counts were determined with an automated Sysmex-XN 450 hematology analyzer (Sysmex, Hamburg, Germany).
 
-## Mononuclear cell enrichment and stimulation
+### Mononuclear cell enrichment and stimulation
 
 Before mononuclear cell (MNC) enrichment, the bone marrow aspirate was filtered and washed with sterile PBS. Thereafter, the same procedures were followed for peripheral blood MNCs (PBMCs) and bone marrow MNCs (BM-MNCs). PBMCs/BM-MNCs were isolated by Ficoll-Paque density gradient centrifugation (GE Healthcare, Chicago, IL). Cell composition was evaluated by Sysmex analyzer (Sysmex) and with flow cytometry (Table 3, see key resource table (KRT) for RRIDs). PBMCs/BM-MNCs were resuspended in Roswell Park Memorial Institute 1640 Dutch-modified culture medium (RPMI) (Life Technologies/Invitrogen, Waltham, USA) supplemented with 2 mmol/L glutamine (Invitrogen), 10 mg/mL gentamicin (Centrafarm, Etten-Leur, The Netherlands) and 1 mmol/L pyruvate (Invitrogen). Per well, 5 × 105 PBMCs/BM-MNCs were stimulated for 24 hours in duplicate in round-bottom 96-well plates (Corning, NY) with the following stimuli: RPMI, 10 ng/mL Escherichia coli lipopolysaccharide (LPS) (serotype 055:B5 Sigma-Aldrich, St. Louis, MO), and 10 μg/mL Pam3CysK4 (P3C) (EMC Microcollections, Tübingen, Germany). After 24-hour incubation, supernatants were stored after plate centrifugation at −80°C until cytokine assessment.
 
-## Cytokine measurements
+**Table 3.**
+ Cell composition of PBMC and BM-MNC fraction.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell types in PBMC fraction</th>
+      <th>Controls</th>
+      <th>Patients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lymphocytes (%)</td>
+      <td>73 [68-79]</td>
+      <td>65 [62-75]*</td>
+    </tr>
+    <tr>
+      <td>Monocytes (%)</td>
+      <td>25 [19-31]</td>
+      <td>32 [23-35]</td>
+    </tr>
+    <tr>
+      <td>Neutrophils (%)</td>
+      <td>0.7 [0.6–1.1]</td>
+      <td>1.2 [0.6–1.7]</td>
+    </tr>
+    <tr>
+      <td>Cell types in BM-MNC fraction</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HSPCs (%)</td>
+      <td>1.6 [1.2–2.0]</td>
+      <td>1.4 [1.2–4.7]</td>
+    </tr>
+  </tbody>
+</table>
+
+_Cellular composition after mononuclear cell enrichment of peripheral blood and bone marrow. Median with [IQR]. Mann-Whitney U test. *: p<0.05, **: p<0.01. HSPCs: hematopoietic stem and progenitor cells._
+
+### Cytokine measurements
 
 Cytokine and chemokine concentrations were determined in supernatants using Human Cytokine Magnetic Magpix 25-plex panel (Invitrogen) on the MAGPIX platform (Luminex, Austin, TX). Circulating IL-1β, IL-1Ra, IL-6, and IL-18 concentrations were measured with the SimplePlex cartridge on the Ella platform (ProteinSimple, San Jose, CA). Additional circulating cytokines/chemokines concentrations were measured using ELISA (see KRT).
 
-## Flow cytometry
+### Flow cytometry
 
 In the circulation, monocyte subpopulations and expression markers were determined with flow cytometry. 50 µL EDTA blood was stained after the lysis-no-wash strategy (BD Pharm Lyse lysing buffer, Becton Dickinson) by monoclonal antibodies CD45 Krome Orange ([KO], clone J33; Beckman Coulter, Cat# B36294, RRID:AB_2833027), HLA-DR PE (clone immu-357; Beckman Coulter, Cat# IM1639U, RRID:AB_2876782), CD14 PC7 (clone 61D3e Bioscience, Cat# 25-0149-42, RRID:AB_1582276), CD16 FITC (clone CB16; eBioscience Cat# 11-0168-42, RRID:AB_10805747), CD3 APC-Alexa750 (clone UCTH1; Beckman Coulter, Cat# AA66329, RRID:AB_2876783), CD56 APC (clone N901; Beckman Coulter, Cat# IM2474U, RRID:AB_2876784), CD192 Brilliant Violet421 ([BV421] clone 48607; Becton Dickinson, Cat#564067, RRID:AB_2738573), CD11b BV785 (clone ICRF44; Biolegend, Cat#301346, RRID:AB_2563794), CD41 PC5.5 (clone Hip8; Biolegend, Cat# 303719, RRID:AB_2561731) and measured with CytoFLEX flow cytometer (Beckman Coulter, RRID:SCR_017217). The gating strategy applied is shown in Supplementary file 1, gates were set with the fluorescence-minus-one method (Weber et al., 2016; Ziegler-Heitbrock et al., 2010). In short, monocytes were selected based on CD45+ HLA-DR+ and monocyte scatter properties, then CD3+ T-lymphocytes and CD56+ NK-cells were excluded, and monocyte subsets were identified in the CD14/CD16 plot as percentage of gated. Data was analyzed with Kaluza 3.1 software (Beckman Coulter, RRID:SCR_016182). Characterization of monocytes subsets is according to current recommendations (Weber et al., 2016; Ziegler-Heitbrock et al., 2010).
 
@@ -173,27 +893,27 @@ Bone marrow progenitors were identified with Navios flow cytometer (Beckman Coul
 
 The gating strategy is displayed in Figure 2—figure supplement 1. In short, HSPCs were defined as CD45+CD34+CD38dim/+ cells, after selecting for singlets and alive cells. Next, the lymphoid lineage was excluded by the gating of CD19-CD117+ cells. In CD45RAdimCD38+ gated cells, CMP, GMP, MEP, and R1-3 progenitor populations were identified using CD123 and CD45RA expression. CD90 expression in CD38-CD45RA- cells determined MPP and HSC populations. Data were analyzed with Kaluza 2.1 software.
 
-## Proliferation assays
+### Proliferation assays
 
 2.5 × 104 BM-MNCs were cultured in methylcellulose medium containing erythropoietin, G(M)-CSF, IL-3 and IL-6 (MethoCult GF H84435, Stemcell technologies, Vancouver, Canada) and 2% fetal bovine serum (Integro B.V., Zaandam, The Netherlands) in Petri dishes for 14 days in 37°C 5% CO2 incubator. After 14 days, erythroid progenitor (BFU-E), common myeloid progenitor (CFU-GEMM), and granulocyte-macrophage progenitor (CFU-GM) cell colonies were counted in duplo by an experienced hematology operator.
 
-## Mitochondrial respiration and glycolysis assays
+### Mitochondrial respiration and glycolysis assays
 
 Using a modified protocol from Shirai et al., 2016, 2 × 106 BM-MNCs were plated per well in fivefold to overnight-calibrated cartridges in assay medium (DMEM with 1 mM L-Glutamine, 11 mM glucose, and 1 mM pyruvate [pH adjusted to 7.4]) and incubated for 1 hr in a non-CO2-corrected incubator at 37°C. In addition, BM-MNCs were stimulated with 50 ng/mL interferon gamma (IFN-γ) (Immukine, Boehringer Ingelheim BV, Alkmaar, The Netherlands) and 10 ng/mL LPS (Sigma-Aldrich) for 2 hr. Oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) were measured via XFp Analyzer (Seahorse Bioscience, North Billerica, MA), with final concentrations of 1 mM oligomycin, 1 mM FCCP, and the combination of 1.25 mM rotenone and 2.5 mM antimycin A.
 
-## RNA sequencing of sorted progenitor populations and circulating monocytes
+### RNA sequencing of sorted progenitor populations and circulating monocytes
 
 HSPCs were sorted by BD FACSAria II SORP flow cytometer sorter (Becton Dickinson, RRID:SCR_018091), using the flow cytometric panel as described above (Figure 2—figure supplement 1). BM-MNCs stored in liquid nitrogen were gently thawed in fetal calf serum (in house) containing 1.25 mM MgCl2 and 0.1 mg/mL DNase I (Sigma). HSCs, MPPs, and GMPs populations were directly sorted in 100 µL TRIzol (ThermoFisher, Waltham, MA) before processing for RNA sequencing.
 
 Total RNA was extracted using the standard TRIzol (ThermoFisher) protocol and used for library preparation and sequencing. mRNA was processed as described previously, following an adapted version of the single-cell mRNA seq protocol of CEL-Seq (Hashimshony et al., 2012; Simmini et al., 2014). In brief, samples were barcoded with CEL-seq primers during reverse transcription and pooled after second strand synthesis. The resulting cDNA was amplified with an overnight in vitro transcription reaction. From this amplified RNA, sequencing libraries were prepared with Illumina Truseq small RNA primers (Illumina, San Diego, CA). Paired-end sequencing was performed on the Illumina Nextseq500 platform (RRID:SCR_014983). Read one was used to identify the Illumina library index and CEL-Seq sample barcode. Read two was aligned to the hg19 human RefSeq transcriptome using BWA (Li and Durbin, 2010). Reads that mapped equally well to multiple locations were discarded. RNA input for all samples was normalized, and libraries for each progenitor population were sequenced in a single run.
 
-## Bioinformatics, differential gene expression, and pathway analysis
+### Bioinformatics, differential gene expression, and pathway analysis
 
 Reads were mapped to hg19 human reference genome using BWA (Li and Durbin, 2010). MultiQC (RRID:SCR_014982) was used to quality check all the samples (Ewels et al., 2016). In total, 107,565,838 reads were mapped in 59 progenitor populations, with one GMP population failed to pass quality control. Raw read counts provided the input for differential gene expression analysis with DESeq2 (RRID:SCR_015687) (Love et al., 2014) after excluding genes with less than 50 reads. Internal variance stabilizing transformation was used for regressing out age and to normalize the data (Benjamini–Hochberg correction was used to adjust p-value for multiple testing correction). In the differential expression analyses within HSC populations, one HSC population was marked as an outlier and further filtered out as it located three standard deviations away from mean values in principle component analysis of this study.
 
 Differential gene expression analysis was carried out after regressing out age with DESeq2 v1.22.0 in R (RRID:SCR_001905) (Love et al., 2014), with internal statistical and normalization method (i.e. correction for multiple testing with Benjamini–Hochberg). The average expression between individuals with atherosclerosis (n = 10) and matched individuals without atherosclerosis (n = 10) was analyzed for each progenitor population. Enrichment analysis was performed using R package clusterProfiler (RRID:SCR_016884) (Yu et al., 2012) with Gene Ontology terms (Ashburner et al., 2000). After BH adjustment, a FDR <0.05 in enrichment analysis was considered significant.
 
-## [18F]FDG PET and low-dose CT scanning
+### [18F]FDG PET and low-dose CT scanning
 
 Participants underwent [18F]FDG PET with low-dose non-contrast-enhanced CT from skull base to the trochanter major on a dedicated Siemens Biograph 40 mCT scanner (Siemens Healthineers, Erlangen, Germany). After adhering to a 24-hour low-carbohydrate diet and 6 hours of fasting,~2.1 MBq/kg [18F]FDG was administered intravenously, as described previously (Bucerius et al., 2016). Glucose concentrations were obtained (5.3 ± 0.5 mmol/L) after injection. Before scanning, participants rested in the supine position for 2 hours.
 
@@ -201,6 +921,6 @@ Images were reconstructed according to EARL protocols; using a TrueX algorithm w
 
 [18F]FDG-uptake in the vascular wall was determined in seven regions of interest (ROI) by a single investigator (MPN); the aorta ascendens, aorta descendens, abdominal aorta, the left and right common carotid arteries, and the left and right iliac arteries. [18F]FDG-uptake in hematopoietic tissue was assessed in the spleen, lumbal vertebrae L2 and L3, and in the left and right medullary bone of the femur. These regions of interest were evaluated using the Inveon Research Workspace 4.2. The standardized uptake value (SUV) was extracted from each ROI after correction for [18F]FDG dose (MBq) and BMI using the PyRadiomics toolbox (van Griethuysen et al., 2017). The SUVs of left and right ROIs (e.g. left and right carotid artery) were averaged. Next, the target-to-background ratio (TBR) was calculated as the ratio of the vascular wall SUV and the mean thoracic arterial blood pool SUV. The TBRs of hematopoietic tissue were expressed as the ratio of the mean liver SUV. The primary outcome is the TBR, as recommended by the European guideline (Bucerius et al., 2016).
 
-## Statistical analysis
+### Statistical analysis
 
 This study is exploratory, hence no sample size calculation is performed. Normal distribution of the data was checked with the Shapiro-Wilk test, when the p-value reached <0.05 this assumption was violated and non-parametric tests were used. Data are reported as mean ± SD with independent samples T-test according to Levene’s test for equality of variances, as mean (number of participants) with Χ2 test for categorical data, and as median [interquartile range] with Mann-Whitney U test for non-parametrical data. Outliers were removed with a standard deviation >± 2.5 of Z-scores. All outcomes were log(10)-transformed and thereafter corrected with ANCOVA for confounding demographics such as age and BMI. SPSS V25.0 (SPSS Inc, Chicago, IL, RRID:SCR_002865) and Graphpad Prism v6.0 (GraphPad software, La Jolla, CA, RRID:SCR_002798) were used for data analysis and visualization. A two-sided p-value<0.05 was considered statistically significant.

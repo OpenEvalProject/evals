@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.33465.001 Non-centrosomal microtubule organizing centers (MTOCs) are important for microtubule organization in many cell types. In fission yeast Schizosaccharomyces pombe , the protein Mto1, together with partner protein Mto2 (Mto1/2 complex), recruits the γ-tubulin complex to multiple non-centrosomal MTOCs, including the nuclear envelope (NE). Here, we develop a comparative-interactome mass spectrometry approach to determine how Mto1 localizes to the NE. Surprisingly, we find that Mto1, a constitutively cytoplasmic protein, docks at nuclear pore complexes (NPCs), via interaction with exportin Crm1 and cytoplasmic FG-nucleoporin Nup146. Although Mto1 is not a nuclear export cargo, it binds Crm1 via a nuclear export signal-like sequence, and docking requires both Ran in the GTP-bound state and Nup146 FG repeats. In addition to determining the mechanism of MTOC formation at the NE, our results reveal a novel role for Crm1 and the nuclear export machinery in the stable docking of a cytoplasmic protein complex at NPCs.
+Non-centrosomal microtubule organizing centers (MTOCs) are important for microtubule organization in many cell types. In fission yeast Schizosaccharomyces pombe, the protein Mto1, together with partner protein Mto2 (Mto1/2 complex), recruits the γ-tubulin complex to multiple non-centrosomal MTOCs, including the nuclear envelope (NE). Here, we develop a comparative-interactome mass spectrometry approach to determine how Mto1 localizes to the NE. Surprisingly, we find that Mto1, a constitutively cytoplasmic protein, docks at nuclear pore complexes (NPCs), via interaction with exportin Crm1 and cytoplasmic FG-nucleoporin Nup146. Although Mto1 is not a nuclear export cargo, it binds Crm1 via a nuclear export signal-like sequence, and docking requires both Ran in the GTP-bound state and Nup146 FG repeats. In addition to determining the mechanism of MTOC formation at the NE, our results reveal a novel role for Crm1 and the nuclear export machinery in the stable docking of a cytoplasmic protein complex at NPCs.
 
 ## Introduction
 
@@ -41,23 +41,173 @@ In fission yeast, all types of MT nucleation in the cytoplasm (i.e. both centr
 
 Because Mto1/2 localizes to prospective MTOC sites independently of interacting with the γ-tubulin complex (Samejima et al., 2008), Mto1/2 localization effectively determines where and when all cytoplasmic MTOCs are generated, and thus understanding Mto1/2 localization is critical to understanding MTOC formation more broadly. Mto1/2 localization is mediated primarily by domains within Mto1 (Figure 1A; [Samejima et al., 2010]), although Mto2 contributes indirectly by helping to multimerize the Mto1/2 complex (Lynch et al., 2014; Samejima et al., 2005). Mto1/2 association with pre-existing MTs depends on a broadly defined region near the Mto1 C-terminus, while localization to the CAR and the SPB is mediated by overlapping modular sequences within the conserved MASC domain at the Mto1 C-terminus (Samejima et al., 2010). Localization to the CAR involves interaction of MASC with the unconventional myosin Myp2, while localization to the SPB involves the Septation Initiation Network protein Cdc11 (Samejima et al., 2010).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram of full-length Mto1 and Mto1-truncation mutants. Asterisk indicates 9A1 mutation, which abolishes interaction with γ-tubulin complex (Samejima et al., 2008). (B) Outline of cross-linking and mass spectrometry approach to identify Mto1 interactors. (C) Localization of GFP-Mto1[9A1-NE]-HTB and GFP-Mto1[9A1-bonsai]-HTB. Numbers below images indicate percent cells with GFP signal on the nuclear envelope (n = total number of cells scored). (D) Anti-Mto1 Western blot of whole-cell lysates from GFP-mto1[9A1-NE]-HTB cells in the absence of cross-linking (-DSS) and after disuccinimidyl suberate cross-linking (+DSS). Dashed line indicates boundary between resolving gel and stacking gel. (E) SDS-PAGE of GFP-Mto1[9A1-NE]-HTB sample and GFP-Mto1[9A1-bonsai]-HTB sample after DSS cross-linking and two-step denaturing purification. Regions marked ‘X-linked’ were analyzed by mass spectrometry (see Materials and methods). (F) Mass spectrometry label-free quantification (LFQ) of 750 proteins from samples as in E. ‘LFQ ratio’ indicates relative enrichment of a given protein in the purified GFP-Mto1[9A1-NE]-HTB sample compared to the purified GFP-Mto1[9A1-bonsai]-HTB sample. ‘LFQ intensity’ indicates total intensity (arbitrary units) of a given protein from the combined purified samples. Data shown represent one of two independent biological replicates. See also Table 1. Complete datasets are in Supplementary file 3. Bar, 5 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Nuclear positioning in strains of the indicated genotypes (see Figure 1A). 100 cells of each genotype were scored. For each cell, distance from nucleus to each cell end was measured. The shorter of the two distances was termed S, and the longer was termed L. Y-axis shows ratio S/L for cells of each genotype, in rank order. Higher S/L ratios indicate more accurate nuclear centering. *p<0.01; **p<0.001 (non-paired t-test, two-tailed); other differences are not significant. Actual p values are: mto1-GFP vs. mto1[NE]-GFP, 0.99; mto1-GFP vs. mto1[∆130]-GFP, 0.0066; mto1-GFP vs. mto1[bonsai]-GFP, 0.0002; mto1[NE]-GFP vs. mto1[∆130]-GFP, 0.0060; mto1[NE]-GFP vs. mto1[bonsai]-GFP, 0.0002; mto1[∆130]-GFP vs. mto1[bonsai]-GFP, 0.29.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Both Mto1[NE]-GFP and Mto1[bonsai]-GFP promote microtubule (MT) nucleation by the γ-tubulin complex, and thus both are present at minus ends of individual MTs within MT bundles, even though neither binds directly to the MT lattice. When the 9A1 mutation is introduced into Mto1, absence of MT nucleation abrogates association with MT minus ends, leading to increased Mto1[9A1-NE]-GFP on the nuclear envelope (previously described by Lynch et al., 2014). Bar, 5 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Localization of Mto1[9A1-NE]-GFP to the nuclear envelope (NE) in wild-type (alp7+) and alp7∆ cells. Numbers below images indicate percent cells with Mto1[9A1-NE]-GFP on the NE (n = total number of cells scored). Bar, 5 µm.
+
 Here, we determine the mechanism of Mto1/2 localization to the NE. Using a comparative-interactome mass spectrometry approach, we find that NE localization depends on the Mto1 N-terminus interacting with exportin Crm1, a nuclear transport receptor, and nucleoporin Nup146, a component of the nuclear pore complex (NPC). We further find that although Mto1 is an exclusively cytoplasmic protein, it becomes stably docked at the NPC by mimicking a nuclear export cargo. In addition to revealing the mechanism of MTOC formation at the fission yeast NE, our work demonstrates a completely novel role for the nuclear export machinery, in which the exportin is repurposed to create NPC-docking sites for cytoplasmic proteins with functions unrelated to nuclear export.
 
 ## Results
 
-## MT nucleation from the NE contributes to nuclear positioning
+### MT nucleation from the NE contributes to nuclear positioning
 
 Mto1 localization to the NE is enhanced in the C-terminal truncation mutant Mto1[NE], which lacks MASC and MT-localization domains ([Lynch et al., 2014]; Figure 1A). Previously, we deleted amino acids 1–130 from Mto1[NE] and from full-length Mto1 to make Mto1[bonsai] and Mto1[∆130], respectively (Figure 1A), and we showed that these deletions lead to loss of Mto1/2 complex from the NE, accompanied by loss of MT nucleation from the NE (Lynch et al., 2014). However, in that work the consequences of this altered MT nucleation were not investigated. In fission yeast, MT-dependent pushing forces are thought to center the interphase nucleus precisely in the cell middle (Tran et al., 2001). Because nuclear position during early mitosis determines the future cell division plane, this ensures equal size of daughter cells after cell division (Daga and Chang, 2005). To investigate whether MT nucleation from the NE contributes to nuclear positioning, we measured interphase nuclear position in mto1-GFP, mto1[NE]-GFP, mto1[∆130-GFP] and mto1[bonsai]-GFP cells (Figure 1A; Figure 1—figure supplement 1). (In these and all subsequent experiments, mto1 mutants replace endogenous wild-type mto1+ at the mto1 locus, and in this particular experiment, all versions of mto1 were GFP-tagged to equalize protein expression levels [Lynch et al., 2014]). Interestingly, nuclear positioning was less accurate in mto1[bonsai]-GFP and mto1[∆130]-GFP cells compared to mto1[NE]-GFP and mto1-GFP cells, indicating that MT nucleation from the NE contributes to nuclear positioning. By contrast, there was no difference in nuclear positioning between wild-type and mto1[NE] cells, or between mto1[131–1115] and mto1[bonsai] cells, indicating that MT nucleation from the SPB is not particularly important for nuclear positioning.
 
-## Identification of proteins interacting with Mto1[NE] but not with Mto1[bonsai]
+### Identification of proteins interacting with Mto1[NE] but not with Mto1[bonsai]
 
 To identify proteins involved in recruiting Mto1 to the NE, we wanted to compare interactomes of Mto1[NE] vs. Mto1[bonsai]. Initially, we attempted to use SILAC mass spectrometry (MS) (Bicho et al., 2010; Ong et al., 2002) to compare anti-GFP immunoprecipitates of Mto1[9A1-NE]-GFP and Mto1[9A1-bonsai]-GFP, which are otherwise identical to Mto1[NE]-GFP and Mto1[bonsai]-GFP except for the additional mutation of nine consecutive amino acids in the CM1 domain to alanine (Samejima et al., 2008), Figure 1A); the 9A1 mutation disrupts interaction with the γ-tubulin complex and thereby enhances localization of Mto1[NE] to the NE ([Lynch et al., 2014]; Figure 1—figure supplement 2). In preliminary experiments, however, we found that the immunoprecipitation approach yielded low peptide counts for many Mto1-interactors of potential interest (Supplementary file 2). We therefore decided to develop a more robust method to capture interactors even when they may be low-abundance and/or low-affinity interactors.
 
 We tagged Mto1[9A1-NE] and Mto1[9A1-bonsai] at their N-termini with GFP and at their C-termini with an HTB (His-TEV-biotin) tag, which allows for two-step purification of a tagged protein under fully denaturing conditions after cross-linking to interactors (Tagwerker et al., 2006) (Figure 1B). As expected, GFP-Mto1[9A1-NE]-HTB localized to the NE in vivo, while GFP-Mto1[9A1-bonsai]-HTB was present only in the cytoplasm (Figure 1C). Disuccinimidyl suberate (DSS) cross-linking of cell cryogrindates shifted a significant proportion of HTB-tagged Mto1 into higher molecular-weight species (Figure 1D). After DSS cross-linking and denaturing purification (Figure 1E; see Materials and methods), we analyzed cross-linked adducts of GFP-Mto1[9A1-NE]-HTB and GFP-Mto1[9A1-bonsai]-HTB by label-free quantification (LFQ) MS ([Cox and Mann, 2008; Tyanova et al., 2016]; Figure 1F; Table 1; Supplementary file 3). Among the proteins significantly enriched in the Mto1[9A1-NE] interactome vs. the Mto1[9A1-bonsai] interactome, we identified nucleoporin Nup146 (Asakawa et al., 2014; Chen et al., 2004), exportin Crm1 (Adachi and Yanagida, 1989; Fung and Chook, 2014; Hutten and Kehlenbach, 2007; Stade et al., 1997), the fission yeast TACC homolog, Alp7 (Sato et al., 2004), and, to a lesser extent, polo kinase Plo1 (Ohkura et al., 1995).
 
+**Table 1.**
+ Data for selected proteins from mass spectrometry comparison of GFP-Mto1[9A1-NE]-HTB and GFP-Mto1[9A1-bonsai]-HTB interactomes.Peptide counts and label-free quantification (LFQ) values for selected proteins shown in Figure 1F. Data from two independent biological replicates are shown. Nsp1 and Nup82 are included as likely representative Nup146 interactors, based on homology to budding yeast (Belgareh et al., 1998). See also Supplementary file 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Protein</th>
+      <th colspan="5">Replicate 1 (E160307)</th>
+      <th colspan="5">Replicate 2 (E161126)</th>
+    </tr>
+    <tr>
+      <th>Peptides from strain KS7611</th>
+      <th>Peptides from strain KS8371</th>
+      <th>LFQ intensity from strain KS7611</th>
+      <th>LFQ intensity from strain KS8371</th>
+      <th>LFQ ratio</th>
+      <th>Peptides from strain KS7611</th>
+      <th>Peptides from strain KS8371</th>
+      <th>LFQ intensity from strain KS7611</th>
+      <th>LFQ intensity from strain KS8371</th>
+      <th>LFQ ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alp7</td>
+      <td>17</td>
+      <td>3</td>
+      <td>2.3e8</td>
+      <td>7.5e6</td>
+      <td>30.5</td>
+      <td>14</td>
+      <td>5</td>
+      <td>1.9e8</td>
+      <td>3.7e7</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <td>Crm1</td>
+      <td>20</td>
+      <td>5</td>
+      <td>2.7e8</td>
+      <td>1.7e7</td>
+      <td>15.6</td>
+      <td>18</td>
+      <td>5</td>
+      <td>2.7e8</td>
+      <td>2.0e7</td>
+      <td>13.7</td>
+    </tr>
+    <tr>
+      <td>Mto1</td>
+      <td>59</td>
+      <td>46</td>
+      <td>2.8e11</td>
+      <td>2.3e11</td>
+      <td>1.2</td>
+      <td>52</td>
+      <td>43</td>
+      <td>2.8e11</td>
+      <td>2.5e11</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Mto2</td>
+      <td>14</td>
+      <td>20</td>
+      <td>6.6e9</td>
+      <td>5.1e9</td>
+      <td>1.3</td>
+      <td>16</td>
+      <td>22</td>
+      <td>6.7e9</td>
+      <td>5.8e9</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Nsp1</td>
+      <td>14</td>
+      <td>11</td>
+      <td>2.5e8</td>
+      <td>1.8e8</td>
+      <td>1.4</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2.2e8</td>
+      <td>1.3e8</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Nup146</td>
+      <td>20</td>
+      <td>2</td>
+      <td>2.1e8</td>
+      <td>7.7e6</td>
+      <td>27.3</td>
+      <td>20</td>
+      <td>1</td>
+      <td>2.1e8</td>
+      <td>NQ</td>
+      <td>NQ</td>
+    </tr>
+    <tr>
+      <td>Nup82</td>
+      <td>13</td>
+      <td>9</td>
+      <td>1.5e8</td>
+      <td>7.3e7</td>
+      <td>2.1</td>
+      <td>9</td>
+      <td>4</td>
+      <td>7.4e7</td>
+      <td>2.2e7</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Plo1</td>
+      <td>28</td>
+      <td>13</td>
+      <td>4.9e8</td>
+      <td>1.1e8</td>
+      <td>4.6</td>
+      <td>20</td>
+      <td>9</td>
+      <td>3.3e8</td>
+      <td>6.3e7</td>
+      <td>5.3</td>
+    </tr>
+  </tbody>
+</table>
+
+_NQ = not quantified, because peptide count in the relevant sample was below threshold for quantification._
+
 Neither Alp7 nor Plo1 is known to localize to the NE, and Plo1 was not investigated further. The interaction of Mto1[NE] with Alp7 was of potential interest because of the role of Alp7 in microtubule organization (Ling et al., 2009; Sato et al., 2009; Zheng et al., 2006), and an interaction between Mto1 and Alp7 has been confirmed independently (M. Sato, Waseda University, personal communication, July 2017). However, we found that in alp7∆ deletion mutants, Mto1[9A1-NE]-GFP was present on the NE just as in wild-type (alp7+) cells (Figure 1—figure supplement 3). This indicates that Alp7 is not required for Mto1 localization to the NE.
 
-## Mto1[NE] associates with the cytoplasmic face of the NPC
+### Mto1[NE] associates with the cytoplasmic face of the NPC
 
 The interaction of Mto1[9A1-NE] with Nup146 suggested that Mto1 may localize to nuclear pore complexes (NPCs) on the NE. We therefore imaged Mto1[9A1-NE]-GFP together with Nup146-3mCherry in a nup132∆ background, in which NPCs can become clustered on the NE (BaiBaï et al., 2004). We observed extensive colocalization of Mto1[9A1-NE]-GFP with Nup146-3mCherry clusters (Figure 2A), indicating specific association with NPCs.
 
@@ -67,11 +217,27 @@ The interaction of Mto1[9A1-NE] with Nup146 suggested that Mto1 may localize to 
 
 We also examined Mto1[9A1-NE]-GFP localization by immunoelectron microscopy. Close homologs of Nup146 in budding yeast (Nup159; referred to here as Sc Nup159) and humans (Nup214; referred to as Hs Nup214) are both located exclusively at the cytoplasmic face of NPCs (Gorsch et al., 1995; Kraemer et al., 1994; Kraemer et al., 1995), and indirect evidence suggests that this is also the case for Nup146 (Lo Presti et al., 2012). Consistent with this, we observed Mto1[9A1-NE]-GFP specifically at the cytoplasmic face of NPCs (Figure 2B).
 
-## Mto1 localization to NPCs requires export cargo-binding activity of exportin Crm1
+### Mto1 localization to NPCs requires export cargo-binding activity of exportin Crm1
 
 The interaction of Mto1[NE] with Crm1 was both surprising and puzzling. As the major transport receptor for nuclear export of proteins (as well as some RNAs), Crm1 normally forms a trimeric complex with export cargo and RanGTP within the nucleus, which facilitates transit of cargo through the permeability barrier of the NPC and into the cytoplasm (Dong et al., 2009; Fung and Chook, 2014; Hutten and Kehlenbach, 2007). However, to date, there is no evidence that Mto1 is a nuclear export cargo or indeed is ever present in the nucleus.
 
 Because deletion of crm1+ is lethal (Adachi and Yanagida, 1989), we investigated the significance of the Mto1-Crm1 interaction by asking whether inhibition of Crm1 cargo-binding activity affects Mto1 localization to NPCs. Nuclear export cargos typically bind to Crm1 via hydrophobic nuclear export signals (NESs) (Dong et al., 2009; Fung and Chook, 2014; Fung et al., 2015; Güttler et al., 2010; Hutten and Kehlenbach, 2007; Kutay and Güttinger, 2005). This can be inhibited by the drug leptomycin B (LMB), which binds within the hydrophobic NES-binding cleft of Crm1 (Dong et al., 2009; Fornerod et al., 1997a; Fukuda et al., 1997; Fung and Chook, 2014; Ossareh-Nazari et al., 1997). As a result, when cells are treated with LMB, nuclear export cargos accumulate within the nucleus. Interestingly, after LMB treatment, we found that Mto1[9A1-NE]-GFP was lost from NPCs (Figure 3A). Strikingly, however, rather than accumulating in the nucleus, Mto1[9A1-NE]-GFP became dispersed in the cytoplasm.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig3-v2.jpg)
+
+**Figure 3.:** (A) Localization of Nup146-3mCherry and Mto1[9A1-NE]-GFP in untreated cells and in cells treated with 1% ethanol (+EtOH) or with 100 nM leptomycin B (+LMB) in ethanol for 15 min. Numbers below images indicate percent cells with Mto1 on NPCs (n = total number of cells scored). (B) Localization of Nup146-3mCherry and Mto1[9A1-NE]-GFP in crm1-C529A cells, which are resistant to LMB. Cells were untreated or treated with 100 nM LMB for 15 or 60 min. (C) Mass spectrometry label-free quantification (LFQ) of 483 proteins from samples of cross-linked, purified GFP-Mto1[9A1-NE]-HTB from untreated (”minusLMB’) vs. LMB-treated (”plusLMB’) cells. ‘LFQ ratio’ indicates relative enrichment of a given protein in the purified minusLMB sample compared to the purified plusLMB sample. ‘LFQ intensity’ indicates total intensity (arbitrary units) of a given protein from the combined purified samples. Data shown represent geometric mean from two independent biological replicates. See also Table 2. Complete datasets are in Supplementary file 4. Bars, 5 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Localization of Nup146-3mCherry and Alp7-3GFP in untreated cells and in cells treated with 1% ethanol (+EtOH; carrier) or with 100 nM leptomycin B (LMB) in ethanol for 15 and 45 min. Numbers below images indicate percent cells with Alp7 in the nucleus (n = total number of cells scored). Arrowheads indicate examples of Alp7-3GFP accumulation in the nucleus. Brackets indicate examples of Alp7-3GFP puncta on an intranuclear microtubule bundle that can form in interphase cells after LMB treatment (Matsuyama et al., 2006). Bar, 5 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Growth of wild-type (crm1+) cells and the crm1 mutants indicated, on plates with and without leptomycin B (LMB). The crm1-C529A, crm1-C529T, and crm1-C529V mutants are essentially completely resistant to LMB, while the crm1-C529S mutant is only partially resistant. (B) Mto1[9A1-NE]-GFP and Nup146-3mCherry localization in the crm1 mutants indicated, in the absence of LMB. In crm1-C529S, crm1-C529T, and crm1-C529V mutants, Mto1[9A1-NE]-GFP fails to localize to nuclear pore complexes (NPCs), although it does localize to NPCs in crm1-C529A mutants (Figure 3). Bar, 5 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Anti-tubulin immunofluorescence of control (ethanol-treated) and leptomycin B (LMB)-treated cells during microtubule (MT) regrowth after cold-induced MT depolymerization, in a strain expressing untagged, full-length wild-type Mto1. Arrowheads indicate examples of MT regrowth from the nuclear envelope, which does not occur in LMB-treated cells. MT regrowth is slightly slower in LMB-treated cells compared to control cells, possibly because LMB leads to increased intranuclear localization of some MT-associated proteins, such as Alp7 (see Figure 3—figure supplement 1). LMB treatment also leads to partial intranuclear localization of tubulin after cold treatment, although this may be only a small proportion of total tubulin, as most MT regrowth in LMB-treated cells still occurs in the cytoplasm.
 
 Given the unusual behavior of Mto1[9A1-NE]-GFP after LMB treatment, we confirmed that LMB was inhibiting nuclear export. We assayed localization of Alp7, which shuttles continuously in and out of the nucleus during interphase, in complex with its partner protein Alp14 (ch-TOG homolog) (Okada and Sato, 2015; Okada et al., 2014)(Figure 3—figure supplement 1). In the absence of LMB, Alp7-3GFP was present in the cytoplasm, primarily as puncta on cytoplasmic MTs. As expected, after LMB treatment, Alp7-3GFP accumulated in the nucleoplasm and on an intranuclear MT bundle that has been described to form upon LMB treatment of fission yeast (Matsuyama et al., 2006)(Figure 3—figure supplement 1).
 
@@ -79,9 +245,141 @@ To rule out the possibility that loss of Mto1[9A1-NE]-GFP from NPCs was due to a
 
 In addition to these experiments, we used immunofluorescence to compare MT regrowth after cold-induced MT depolymerization in control vs. LMB-treated wild-type cells (i.e. cells expressing full-length, untagged Mto1). Previous work showed that cold-induced MT depolymerization causes the pool of Mto1 normally associated with cytoplasmic MTs to redistribute to the NE, and as a result, when cells are rewarmed, nearly all MT regrowth initiates from the NE (Sawin et al., 2004). As expected, we found that in control cells, MT regrowth occurred from the NE. However, in LMB-treated cells, MT regrowth occurred randomly in the cytoplasm, consistent with a failure of Mto1 to localize to the NE after LMB treatment (Figure 3—figure supplement 3).
 
-## Mto1 interacts with Crm1 via a nuclear export signal-like sequence
+### Mto1 interacts with Crm1 via a nuclear export signal-like sequence
 
 How might Crm1 cargo-binding activity be involved in Mto1 localization to the NPC? We hypothesized that Mto1 itself might bind to Crm1 as an unconventional ‘cargo’ and somehow exploit this interaction to localize to the cytoplasmic face of the NPC. To test this, we used LFQ MS to compare GFP-Mto1[9A-NE]-HTB interactomes prepared from untreated vs. LMB-treated cells (Figure 3C; Table 2; Supplementary file 4). Interestingly, only 3–4 out of nearly 500 quantified proteins were significantly enriched in the GFP-Mto1[9A1-NE]-HTB interactome from untreated cells compared to LMB-treated cells. Among these, Crm1 showed the greatest enrichment (~20X). Nup146 also showed enrichment, but to a lesser extent (~2.8X), which may indicate that Mto1 can bind weakly to Nup146 independently of Crm1 (see Discussion). These results demonstrate that, like Mto1 localization to NPCs, Mto1 interaction with Crm1 requires Crm1 cargo-binding activity.
+
+**Table 2.**
+ Data for selected proteins from mass spectrometry comparison of GFP-Mto1[9A1-NE]-HTB interactomes from control cells and after treatment with leptomycin B.Peptide counts and label-free quantification (LFQ) values for selected proteins from the two replicate experiments contributing to the graph in Figure 3C. See also Supplementary file 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Protein</th>
+      <th colspan="5">Replicate 1 (E150924)</th>
+      <th colspan="5">Replicate 2 (E151106)</th>
+    </tr>
+    <tr>
+      <th>Peptides from strain KS7669 -LMB</th>
+      <th>Peptides from strain KS7669 +LMB</th>
+      <th>LFQ intensity from strain KS7669 -LMB</th>
+      <th>LFQ intensity from strain KS7669 + LMB</th>
+      <th>LFQ ratio</th>
+      <th>Peptides from strain KS7669-LMB</th>
+      <th>Peptides from strain KS7669 +LMB</th>
+      <th>LFQ intensity from strain KS7669 -LMB</th>
+      <th>LFQ intensity from strain KS7669 + LMB</th>
+      <th>LFQ ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alp7</td>
+      <td>20</td>
+      <td>13</td>
+      <td>2.5e8</td>
+      <td>1.4e8</td>
+      <td>1.7</td>
+      <td>14</td>
+      <td>15</td>
+      <td>6.3e8</td>
+      <td>4.4e8</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>Crm1</td>
+      <td>17</td>
+      <td>4</td>
+      <td>1.1e8</td>
+      <td>1.3e7</td>
+      <td>9.0</td>
+      <td>19</td>
+      <td>3</td>
+      <td>2.9e8</td>
+      <td>6.8e6</td>
+      <td>43.3</td>
+    </tr>
+    <tr>
+      <td>Mto1</td>
+      <td>59</td>
+      <td>58</td>
+      <td>2.6e11</td>
+      <td>2.9e11</td>
+      <td>0.9</td>
+      <td>58</td>
+      <td>59</td>
+      <td>6.1e11</td>
+      <td>6.7e11</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Mto2</td>
+      <td>7</td>
+      <td>7</td>
+      <td>2.0e8</td>
+      <td>2.2e8</td>
+      <td>0.9</td>
+      <td>5</td>
+      <td>5</td>
+      <td>6.5e8</td>
+      <td>8.4e8</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Nsp1</td>
+      <td>7</td>
+      <td>7</td>
+      <td>6.9e7</td>
+      <td>6.0e7</td>
+      <td>1.2</td>
+      <td>11</td>
+      <td>11</td>
+      <td>3.7e8</td>
+      <td>3.7e8</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Nup146</td>
+      <td>14</td>
+      <td>8</td>
+      <td>7.4e7</td>
+      <td>3.3e7</td>
+      <td>2.3</td>
+      <td>12</td>
+      <td>5</td>
+      <td>1.9e8</td>
+      <td>5.6e7</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Nup82</td>
+      <td>9</td>
+      <td>10</td>
+      <td>4.5e7</td>
+      <td>7.6e7</td>
+      <td>0.6</td>
+      <td>9</td>
+      <td>9</td>
+      <td>1.7e8</td>
+      <td>2.9e8</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>Plo1</td>
+      <td>26</td>
+      <td>26</td>
+      <td>2.4e8</td>
+      <td>2.4e8</td>
+      <td>1.0</td>
+      <td>25</td>
+      <td>27</td>
+      <td>8.5e8</td>
+      <td>7.7e8</td>
+      <td>1.1</td>
+    </tr>
+  </tbody>
+</table>
 
 Based on these findings, we next used the LocNES algorithm (Xu et al., 2015) to search for NES-like sequences within the N-terminal 130 amino acids of Mto1, which are present in Mto1[NE] but absent from Mto1[bonsai]. The sequence spanning Mto1 amino acids 9–25 contained two closely overlapping candidate NESs (Figure 4A). Interestingly, the spacing of hydrophobic amino acids within this NES-like sequence is similar to that of several non-natural high-affinity NESs (Figure 4B; [Engelsma et al., 2004; Güttler et al., 2010]).
 
@@ -91,7 +389,141 @@ Based on these findings, we next used the LocNES algorithm (Xu et al., 2015) to 
 
 To investigate the role of the Mto1 NES-like sequence, we deleted the first 25 amino acids of Mto1 from GFP-Mto1[9A1-NE]-HTB. The truncated protein, termed GFP-Mto1[∆NES-9A1-NE]-HTB, failed to localize to NPCs and instead was present in the cytoplasm (Figure 4C). In parallel, we used LFQ MS to determine how the ∆NES truncation affected the GFP-Mto1[9A1-NE]-HTB interactome. As with LMB treatment, very few proteins were enriched in the GFP-Mto1[9A1-NE]-HTB interactome compared to GFP-Mto1[∆NES-9A1-NE]-HTB interactome (Figure 4D; Table 3; Supplementary file 5). However, we observed strong enrichment of both Crm1 (~85X) and Nup146 (~20X). The importance of the Mto1 NES-like sequence both for localization to NPCs and for interaction with Crm1 strongly suggests that Mto1 is a direct but unconventional cargo for Crm1. Because of the unusual role of the Mto1 NES-like sequence, we will refer to it as a ‘NES-mimic’ (NES-M).
 
-## The Mto1 NES-mimic is sufficient for nuclear envelope localization
+**Table 3.**
+ Data for selected proteins from mass spectrometry comparison of GFP-Mto1[9A1-NE]-HTB and GFP-Mto1[∆NES-9A1-NE]-HTB interactomes.Peptide counts and label-free quantification (LFQ) values for selected proteins shown in Figure 4D. Data from two independent biological replicates are shown. See also Supplementary file 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Protein</th>
+      <th colspan="5">Replicate 1 (E160419)</th>
+      <th colspan="5">Replicate 2 ((E161127)</th>
+    </tr>
+    <tr>
+      <th>Peptides from strain KS7611</th>
+      <th>Peptides from strain KS8573</th>
+      <th>LFQ intensity from strain KS7611</th>
+      <th>LFQ intensity from strain KS8573</th>
+      <th>LFQ ratio</th>
+      <th>Peptides from strain KS7611</th>
+      <th>Peptides from strain KS8573</th>
+      <th>LFQ intensity from strain KS7611</th>
+      <th>LFQ intensity from strain KS8573</th>
+      <th>LFQ ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alp7</td>
+      <td>15</td>
+      <td>14</td>
+      <td>2.2e8</td>
+      <td>1.4e8</td>
+      <td>1.5</td>
+      <td>12</td>
+      <td>9</td>
+      <td>2.1e8</td>
+      <td>1.4e8</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Crm1</td>
+      <td>21</td>
+      <td>2</td>
+      <td>2.9e8</td>
+      <td>3.4e6</td>
+      <td>85.2</td>
+      <td>20</td>
+      <td>2</td>
+      <td>3.5e8</td>
+      <td>5.5e6</td>
+      <td>63.4</td>
+    </tr>
+    <tr>
+      <td>Mto1</td>
+      <td>47</td>
+      <td>47</td>
+      <td>3.1e11</td>
+      <td>3.2e11</td>
+      <td>1.0</td>
+      <td>40</td>
+      <td>40</td>
+      <td>3.1e11</td>
+      <td>3.2e11</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Mto2</td>
+      <td>10</td>
+      <td>10</td>
+      <td>4.8e9</td>
+      <td>4.1e9</td>
+      <td>1.2</td>
+      <td>8</td>
+      <td>8</td>
+      <td>6.3e9</td>
+      <td>5.9e9</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Nsp1</td>
+      <td>10</td>
+      <td>9</td>
+      <td>2.2e8</td>
+      <td>1.2e8</td>
+      <td>1.8</td>
+      <td>10</td>
+      <td>9</td>
+      <td>2.4e8</td>
+      <td>1.0e8</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>Nup146</td>
+      <td>15</td>
+      <td>3</td>
+      <td>2.0e8</td>
+      <td>9.5e6</td>
+      <td>20.7</td>
+      <td>19</td>
+      <td>0</td>
+      <td>1.5e8</td>
+      <td>NQ</td>
+      <td>NQ</td>
+    </tr>
+    <tr>
+      <td>Nup82</td>
+      <td>10</td>
+      <td>7</td>
+      <td>8.1e7</td>
+      <td>2.2e7</td>
+      <td>3.7</td>
+      <td>6</td>
+      <td>2</td>
+      <td>5.1e7</td>
+      <td>NQ</td>
+      <td>NQ</td>
+    </tr>
+    <tr>
+      <td>Plo1</td>
+      <td>17</td>
+      <td>15</td>
+      <td>2.5e8</td>
+      <td>1.6e8</td>
+      <td>1.5</td>
+      <td>17</td>
+      <td>10</td>
+      <td>2.2e8</td>
+      <td>1.8e8</td>
+      <td>1.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_NQ = not quantified, because peptide count and/or LFQ intensity in the relevant samples was below threshold for quantification._
+
+### The Mto1 NES-mimic is sufficient for nuclear envelope localization
 
 We next asked whether the Mto1 NES-M is sufficient to localize a reporter protein to the NPC. We replaced endogenous Mto1 with GFP-Mto1[1-29]-GST, which contains only the first 29 amino acids of Mto1. Strikingly, GFP-Mto1[1-29]-GST localized to puncta on the NE, which we interpret to be NPCs (Figure 4E). By contrast, GFP-Mto1[1-12]-GST, which lacks the NES-M, did not show any specific localization. We further found that after LMB treatment, GFP-Mto1[1-29]-GST was lost from NPCs (Figure 4F); moreover, like Mto1[9A1-NE]-GFP, GFP-Mto1[1-29]-GST was present exclusively in the cytoplasm after LMB treatment.
 
@@ -99,25 +531,185 @@ Compared to GFP fusions with Mto1[NE], GFP-Mto1[1-29]-GST had a weaker punctate 
 
 Collectively, these results indicate the Mto1 NES-M is both necessary and sufficient for localization to NPCs, without ever being present in the nucleus.
 
-## Mto1 NPC localization requires RanGTP
+### Mto1 NPC localization requires RanGTP
 
 To further investigate similarities between the mechanism of Mto1 localization to NPCs and nuclear export, we tested whether Mto1 localization depends on the nucleotide state of Ran. Net directional transport of conventional cargos through the NPC depends on a RanGTP gradient across the NE, generated by Ran GTPase activating protein (RanGAP) in the cytoplasm and Ran guanine-nucleotide exchange factor (RanGEF) in the nucleus (Aitchison and Rout, 2012; Görlich and Kutay, 1999; Wente and Rout, 2010). Importins bind import cargos in the cytoplasm, where RanGTP concentration is low, and release them in the nucleus, where RanGTP concentration is high. By contrast, exportins bind cooperatively to export cargos and RanGTP within the nucleus to form trimeric export complexes, which then dissociate after export, accompanied by RanGTP hydrolysis aided by RanGAP (Fornerod et al., 1997a; Fung and Chook, 2014; Güttler and Görlich, 2011; Koyama and Matsuura, 2012; Monecke et al., 2014). The role of Ran can be addressed by expressing mutant versions of Ran (encoded by the spi1+ gene in fission yeast; [Matsumoto and Beach, 1991]) that mimic either GTP or GDP states (Bischoff et al., 1994; Klebe et al., 1995). Constitutively active Ran (RanQ69L in humans) is defective in GTP hydrolysis and thus ‘locked’ in the RanGTP state, while inactive/dominant-negative Ran (RanT24N in humans) has low affinity for nucleotide and competes with endogenous RanGDP for binding to RanGEF.
 
 We expressed wild-type spi1+, spi1[Q68L] (equivalent to human RanQ69L), and spi1[T23N] (equivalent to human RanT24N) as integrated transgenes from a thiamine-repressible promoter. All cells were viable under repressing conditions, but growth was impaired by expression of spi1[Q68L] or spi1[T23N] (Figure 5—figure supplement 1), consistent with phenotypes of the equivalent mutants in vertebrate cells (Clarke et al., 1995; Dasso et al., 1994; Kornbluth et al., 1994; Ren et al., 1994). To avoid any indirect effects on Mto1[9A1-NE]-GFP localization as a result of growth impairment, we assayed localization as early as possible during expression (Figure 5, Figure 5—figure supplement 2). Expression of spi1+ had no effect on Mto1[9A1-NE]-GFP localization. Expression of spi1[Q68L] impaired import of a nuclear localization signal (NLS) reporter protein, as expected (Figure 5—figure supplement 2), but did not alter Mto1[9A1-NE]-GFP localization to NPCs. Interestingly, expression of spi1[T23N], which had only minor effects on NLS reporter localization, led to strong loss of Mto1[9A1-NE]-GFP from NPCs (Figure 5, Figure 5—figure supplement 2). These results indicate that, like nuclear export, Mto1 localization to NPCs requires RanGTP. Moreover, at least in the short-term, neither RanGDP nor Ran nucleotide cycling is required for Mto1 NPC localization.
 
-## Mto1-Crm1 complex docks at the NPC via Nup146 FG repeats
+![Figure 5.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig5-v2.jpg)
+
+**Figure 5.:** Mto1[9A1-NE]-GFP localization in strains containing different versions of Ran (spi1 in fission yeast) expressed from the thiamine-repressible nmt41 promoter, together with control wild-type cells (spi1+). Cells are shown in the presence of thiamine (+Thi), and 26 and 34 hr after removal of thiamine (-Thi). 26 and 34 hr represent early and later stages of induced expression, respectively (see Figure 5—figure supplement 2). Numbers below images indicate percent cells with Mto1[9A1-NE]-GFP on nuclear pore complexes (n = total number of cells scored). Bar, 5 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Colony formation after 2-day growth in the presence and absence of thiamine, in wild-type control cells (spi1+) and in cells expressing transgenes for wild-type Ran (nmt41:spi1+), dominant-negative Ran (nmt41:spi1[T23N]), or constitutively active Ran (nmt41:spi1[Q68L]), under the control of the medium-strength thiamine-repressible nmt41 promoter.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Localization of Mto1[9A1-NE]-GFP, together with nuclear-localization-signal (NLS) reporter GST-NLS-mCherry, in wild-type control cells (spi1+) and in cells expressing transgenes for wild-type Ran (nmt41:spi1+), dominant-negative Ran (nmt41:spi1[T23N]), or constitutively active Ran (nmt41:spi1[Q68L]), under the control of the medium-strength thiamine-repressible nmt41 promoter. Cells are shown in the presence of thiamine (+Thi), and 26 and 34 hr after removal of thiamine to induce expression (-Thi). GST-NLS-mCherry expression is under control of the low-strength thiamine-repressible nmt81 promoter and is therefore also induced after removal of thiamine. As a result, GST-NLS-mCherry reports both the kinetics of thiamine-regulated expression (e.g. 26 vs. 34 hr) and the effects of different Ran mutants on nuclear transport and/or nuclear morphology. Numbers below images indicate percent cells with Mto1[9A1-NE]-GFP on nuclear pore complexes (NPCs; green), and percent cells with GST-NLS-mCherry in the nucleus (N; red). n = total number of cells scored. Images of GST-NLS-mCherry are sum projections, while images of Mto1[9A1-NE]-GFP are maximum projections. Bar, 5 µm.
+
+### Mto1-Crm1 complex docks at the NPC via Nup146 FG repeats
 
 We next asked whether Nup146 contributes to Mto1 NPC localization. Like approximately one-third of all nucleoporins, Nup146 and its homologs Sc Nup159 and Hs Nup214 contain multiple phenylalanine-glycine (FG) repeats, which bind directly to importins and/or exportins (Figure 6—figure supplement 1A; [Aitchison and Rout, 2012; Wente and Rout, 2010]). Because of their location on the cytoplasmic face of the NPC, these nucleoporins are classified as ‘cytoplasmic FG-Nups’, distinguishing them from the ‘symmetric FG-Nups’ present within the central permeability barrier of the NPC. While FG repeats of symmetric FG-Nups directly facilitate cargo transport through the NPC, FG repeats of cytoplasmic FG-Nups are thought not to be important for transport per se (Adams et al., 2014; Strawn et al., 2004; Zeitler and Weis, 2004), although their other (non-FG) regions recruit proteins for processes linked to transport (e.g. mRNP processing after export (Napetschnig et al., 2007; Schmitt et al., 1999; Weirich et al., 2004); Figure 6—figure supplement 1A). Nevertheless, the FG repeats of Sc Nup159 and Hs Nup214 have been shown to bind to Crm1 with high specificity relative to other importins/exportins. (Allen et al., 2002; Fornerod et al., 1997b; Hutten and Kehlenbach, 2006; Port et al., 2015; Roloff et al., 2013; Zeitler and Weis, 2004). We therefore focused attention on the Nup146 FG repeats.
 
 We deleted the 50-amino-acid region comprising FG repeats 5–12 (out of a total of 16 FG repeats) from the endogenous nup146 coding sequence (Figure 6A). Although complete deletion of nup146 is lethal (Chen et al., 2004), the nup146[∆FG5-12] strain was viable, and Nup146[∆FG5-12]−3mCherry was localized to NPCs. (Figure 6—figure supplement 1B). Strikingly, in nup146[∆FG5-12] cells, Mto1[9A1-NE]-GFP no longer localized to NPCs and instead was present only in the cytoplasm (Figure 6B; Figure 6—figure supplement 1B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig6-v2.jpg)
+
+**Figure 6.:** (A) Diagram of Nup146 and Nup146[∆FG5-12]. (B) Localization of Mto1[9A1-NE]-GFP in wild-type (nup146+) and nup146[∆FG5-12] cells. Numbers below images indicate percent cells with Mto1 on NPCs (n = total number of cells scored). (C) Anti-tubulin immunofluorescence of wild-type (nup146+) and nup146[∆FG5-12] cells during microtubule (MT) regrowth after cold-induced MT depolymerization. Both strains express full-length, wild-type Mto1. Arrowheads in nup146+ cells indicate examples of MT regrowth from the nuclear envelope (NE), which does not occur in nup146[∆FG5-12] cells. (D) GFP-tubulin images from time-lapse video showing MT nucleation in wild-type (nup146+) and nup146[∆FG5-12] cells. Yellow dashed line indicates cell nucleus. Red arrowheads indicate nucleation from the NE region. Blue arrowhead indicates nucleation from non-NE cytoplasmic region. In these cells, Mto1[NE] is also tagged with GFP but is too faint to be seen relative to GFP-tubulin. (E) Quantification of MT nucleation from videos of the type shown in D. Numbers represent total number of events for 90 cells of each strain, imaged for 100 s. Differences between strains were highly significant (p=0.0026; Fisher’s exact test, two-sided). (F) Mass spectrometry label-free quantification (LFQ) of 512 proteins from samples of cross-linked, purified GFP-Mto1[9A1-NE]-HTB from wild-type (nup146+) and from nup146[∆FG5-12] cells. ‘LFQ ratio’ indicates relative enrichment of a given protein in the purified sample from nup146+ cells compared to the purified sample from nup146[∆FG5-12] cells. ‘LFQ intensity’ indicates total intensity (arbitrary units) of a given protein from the combined purified samples. Data shown represent geometric mean from two independent biological replicates. Nup82 and Nsp1 are labeled because they are likely to interact with Nup146, based on homology with budding yeast (Belgareh et al., 1998). See also Table 4. Complete datasets are in Supplementary file 6. Bars, 5 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Diagram of S. pombe Nup146 (see Figure 6), together with homologs S. cerevisiae Nup159 and H. sapiens Nup214. Note rearranged domain organization in Nup214. All FG (Phe-Gly) sequence repeats are numbered, although some (e.g. near N-terminus) may not interact with nuclear transport receptors. Where FG repeats are densely distributed, the corresponding region is labeled. Asterisks in Nup214 indicate structured portion of FG repeats observed in co-crystal with Crm1 (Port et al., 2015). Beta-propeller structures in Sc Nup159 and Hs Nup214 have been experimentally verified (Weirich et al., 2004; Napetschnig et al., 2007) and bind to RNA helicases Sc Dbp5 and Hs Ddx19 (respectively), which are involved in mRNP processing in terminal stages of mRNA export. Beta-propeller structure in Nup146 is predicted (Weirich et al., 2004). Alpha-helical regions were predicted using JPred4 (Drozdetskiy et al., 2015). Thicker lines in alpha-helical regions indicate predicted coiled-coils or amphipathic helices. Alpha-helix at the C-terminus of Sc Nup159 is involved in forming a heterotrimeric complex with Sc Nup82 and Sc Nup116 (Yoshida et al., 2011), whose counterparts in fission yeast are Nup82 and Nup189n, respectively. (B) Localization of Nup146[∆FG5-12]−3mCherry to NPCs, with corresponding localization of Mto1[9A1-NE]-GFP.
+
 We also analyzed MTOC activity at the NE in wild-type (nup146+) cells vs. nup146 [∆FG5-12] cells. First, we assayed MT regrowth after cold-induced depolymerization, in cells expressing full-length, untagged Mto1 (Figure 6C). In wild-type cells, MT regrowth occurred from the NE, while in nup146[∆FG5-12] cells MT regrowth occurred randomly in the cytoplasm (Figure 6C), similar to LMB-treated wild-type cells (Figure 3—figure supplement 3). Second, we used live-cell imaging of GFP-tubulin to assay steady-state MT nucleation, in cells expressing Mto1[NE]-GFP (Figure 6D,E; in these cells, Mto1[NE]-GFP is too faint to be seen relative to GFP-tubulin). In nup146[∆FG 5–12] cells, MT nucleation frequency in the vicinity of the NE was decreased by ~90% relative to wild-type (nup146+) cells, while nucleation frequency away from the NE was unchanged.
 
 Collectively, these results indicate that Nup146 FG repeats 5–12 are essential for Mto1 docking at the NPC and, consequently, for MTOC nucleation from the NE. To our knowledge, this is the first biological function that can be uniquely attributed to the FG repeats of the Nup146/Sc Nup159/Hs Nup214 class of cytoplasmic FG-Nups, in any organism (see Discussion).
 
-## Nup146 FG repeats stabilize the Mto1-Crm1 interaction
+### Nup146 FG repeats stabilize the Mto1-Crm1 interaction
 
 Our results thus far indicate that a RanGTP-dependent Mto1-Crm1 ‘cargo-like’ complex docks at the cytoplasmic face of the NPC via a mechanism involving Nup146 FG repeats (see Figure 7). Interestingly, a subset of FG repeats in Hs Nup214 have been shown to bind to Crm1 in a manner that stabilizes the Crm1-RanGTP-cargo interaction in vitro (Askjaer et al., 1999; Fornerod et al., 1997b; Hutten and Kehlenbach, 2006; Kehlenbach et al., 1999; Port et al., 2015; Roloff et al., 2013). We therefore asked whether Nup146 FG repeats 5–12 are important for Mto1 interaction with Nup146, and whether these repeats contribute to Crm1 association with Mto1 in vivo. We used LFQ MS to compare GFP-Mto1[9A1-NE]-HTB interactomes from wild-type (nup146+) vs. nup146[∆FG5-12] cells. Among more than 500 quantified proteins, only five to six proteins were significantly enriched in the GFP-Mto1[9A1-NE]-HTB interactome from nup146+ cells compared to nup146[∆FG5-12] cells. Nup146 itself showed the greatest enrichment (~11X), while Crm1 was also enriched, although to a lesser extent (~3X) (Figure 6F; Table 4; Supplementary file 6). This suggests that Nup146 FG repeats are essential for interaction of Mto1 with Nup146. In addition, while Nup146 FG repeats may not be absolutely essential for formation of an Mto1-Crm1 complex, they may help to stabilize it.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig7-v2.jpg)
+
+**Figure 7.:** (A) Conventional export cargos form a trimeric complex with Crm1 and RanGTP in the nucleus. Passage through NPC permeability barrier depends on interaction of export complexes with FG repeats of symmetric FG-Nups. While passing through the NPC, some export complexes may also interact with FG repeats of Nup146 (not shown). Once in the cytoplasm, export complexes are disassembled by soluble RanBP1 and RanGAP, and RanGTP is hydrolyzed to RanGDP (here, multiple steps are simplified to a single step). (B) Mto1/2 complex docked at NPC. Mto1/2 is sourced from a cytoplasmic pool rather than a nucleoplasmic pool. The Mto1 NES-M binds Crm1 by mimicking an export cargo, and the docking complex binds to cytoplasmic FG-Nup Nup146. Docking requires RanGTP and FG repeats of Nup146. See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33465/elife-33465-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Speculative model for how a high-affinity NES cargo could become docked at the cytoplasmic face of the nuclear pore complex (NPC). In diagrams, only the FG-repeat region of Nup146 is shown; by analogy to Sc Nup159, Nup146 is assumed to be anchored at the cytoplasmic face of the NPC by interaction of its C-terminal domain with partners Nup82 and Nsp1. Binding of Crm1 to cargo, RanGTP and Nup146 FG repeats all contribute cooperatively to Crm1 compact conformation. Therefore, 1) if cargo has only low affinity for Crm1, then after partial release of Nup146 FG repeats from Crm1, the trimeric export complex (Crm1, cargo and RanGTP) can disassemble, releasing cargo into the cytoplasm. However, 2) if cargo has a high affinity for Crm1, then stabilization of the Crm1 compact conformation by cargo binding allows partially released FG repeats to rebind to Crm1. Increased stability of interaction between trimeric complex and Nup146 FG repeats leads to increased residence time at the cytoplasmic face of the NPC. See main text for further details. (B) ‘Cargo-handover’ as a potential mechanism for incorporating high-affinity NES cargos from the cytoplasm into export-like complexes at the cytoplasmic face of NPCs. First, a conventional nuclear export complex with a low-affinity NES cargo transiently interacts with Nup146 FG repeats during passage through the NPC. Recent integrated structural analysis in budding yeast suggests that FG repeats of Sc Nup159 may be directly adjacent to the symmetric FG-Nups at the centre of the NPC (Fernandez-Martinez et al., 2016); therefore, even though Nup146 FG repeats are not required for export, some proportion of export complexes could be expected to interact with Nup146 during passage through the NPC. Second, low-affinity cargo dissociates from Crm1, while Crm1 remains bound to Nup146 and to RanGTP. Dissociation of low-affinity cargo could be either spontaneous or aided by RanBP1; in both cases, this could occur without dissociation or hydrolysis of RanGTP (Koyama and Matsuura, 2010). In absence of cargo, compact Crm1 conformation (and RanGTP binding) may be partially stabilized by interaction with Nup146 FG repeats, as has been shown for FG repeats of Hs Nup214 (Hutten and Kehlenbach, 2006). Finally, during a ‘window of opportunity’ before dissociation of Crm1 from Nup146, a high-affinity NES cargo such as the Mto1 NES-M can bind to Crm1 to generate the export-like complex.
+
+**Table 4.**
+ Data for selected proteins from mass spectrometry comparison of GFP-Mto1[9A1-NE]-HTB interactomes in wild-type (nup146+) and nup146[∆FG5-12] cells.Peptide counts and label-free quantification (LFQ) values for selected proteins from the two replicate experiments contributing to the graph in Figure 6F. Complete datasets are in Supplementary file 6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Protein</th>
+      <th colspan="5">Replicate 1 (E170214)</th>
+      <th colspan="5">Replicate 2 (E170306)</th>
+    </tr>
+    <tr>
+      <th>Peptides from strain KS9021</th>
+      <th>Peptides from strain KS9077</th>
+      <th>LFQ intensity from strain KS9021</th>
+      <th>LFQ intensity from strain KS9077</th>
+      <th>LFQ ratio</th>
+      <th>Peptides from strain KS9021</th>
+      <th>Peptides from strain KS9077</th>
+      <th>LFQ intensity from strain KS9021</th>
+      <th>LFQ intensity from strain KS9077</th>
+      <th>LFQ ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alp7</td>
+      <td>17</td>
+      <td>15</td>
+      <td>1.4e8</td>
+      <td>1.4e8</td>
+      <td>1.0</td>
+      <td>16</td>
+      <td>16</td>
+      <td>1.0e8</td>
+      <td>8.2e7</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Crm1</td>
+      <td>31</td>
+      <td>17</td>
+      <td>3.4e8</td>
+      <td>9.2e7</td>
+      <td>3.6</td>
+      <td>27</td>
+      <td>18</td>
+      <td>1.7e8</td>
+      <td>6.1e7</td>
+      <td>2.9</td>
+    </tr>
+    <tr>
+      <td>Mto1</td>
+      <td>62</td>
+      <td>61</td>
+      <td>2.7e11</td>
+      <td>2.6e11</td>
+      <td>1.0</td>
+      <td>55</td>
+      <td>54</td>
+      <td>1.7e11</td>
+      <td>1.8e11</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Mto2</td>
+      <td>12</td>
+      <td>12</td>
+      <td>6.0e9</td>
+      <td>5.0e9</td>
+      <td>1.2</td>
+      <td>13</td>
+      <td>13</td>
+      <td>3.8e9</td>
+      <td>3.1e9</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Nsp1</td>
+      <td>11</td>
+      <td>3</td>
+      <td>8.3e7</td>
+      <td>2.7e7</td>
+      <td>3.0</td>
+      <td>9</td>
+      <td>4</td>
+      <td>3.5e7</td>
+      <td>1.7e7</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Nup146</td>
+      <td>29</td>
+      <td>6</td>
+      <td>2.1e8</td>
+      <td>1.5e7</td>
+      <td>13.9</td>
+      <td>31</td>
+      <td>10</td>
+      <td>1.4e8</td>
+      <td>1.5e7</td>
+      <td>9.2</td>
+    </tr>
+    <tr>
+      <td>Nup82</td>
+      <td>13</td>
+      <td>10</td>
+      <td>1.1e8</td>
+      <td>4.0e7</td>
+      <td>2.8</td>
+      <td>12</td>
+      <td>11</td>
+      <td>4.9e7</td>
+      <td>2.5e7</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Plo1</td>
+      <td>17</td>
+      <td>17</td>
+      <td>1.5e8</td>
+      <td>1.3e8</td>
+      <td>1.1</td>
+      <td>17</td>
+      <td>17</td>
+      <td>1.1e8</td>
+      <td>8.1e7</td>
+      <td>1.3</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -129,7 +721,7 @@ The mechanism described here for Mto1 localization to NPCs was entirely unexpect
 
 Nuclear transport receptors and nucleoporins are known to have non-transport-related roles away from NPCs, especially in relation to mitosis and microtubule function. In many cell types, importins play a major role in RanGTP-dependent regulation of mitotic spindle assembly factors, while Crm1 has been described to have roles both at centrosomes and kinetochores (reviewed in (Cavazza and Vernos, 2015; Forbes et al., 2015; Kalab and Heald, 2008). In particular, in mammalian cells, Crm1 is involved in RanGTP-dependent kinetochore targeting of a complex containing RanGAP1 and RanBP2 (a metazoan-specific cytoplasmic FG-Nup, also known as Nup358,), and this is important for the integrity of kinetochore microtubules (Arnaoutov et al., 2005), perhaps because of the SUMO E3 ligase activity of RanBP2 (Ritterhoff et al., 2016). In this context, it is interesting to compare and contrast the role of Crm1 at the kinetochore with our proposed mechanism of Mto1 docking. While the role of Crm1 in Mto1 docking is to recruit a cargo-like molecule (i.e. Mto1) to NPCs, the role of Crm1 at the kinetochore is to recruit specific NPC components to a novel non-NPC site (likely via RanBP2’s FG repeats; [Ritterhoff et al., 2016]). In Crm1-dependent targeting of RanGAP1/RanBP2 to kinetochores, the Crm1 ‘cargo’ remains unknown, and the mechanism by which Crm1 associates with kinetochores appears to be controversial (Platani et al., 2009; Zuccolo et al., 2007). We further note that recruitment of nucleoporins to the kinetochore is not restricted to the RanGAP1/RanBP2 complex. In many cell types, the multi-protein Nup107-160 complex (also known as Y complex; [Kabachinski and Schwartz, 2015]) is also recruited to kinetochores, where it may promote MT nucleation by the γ-tubulin complex (Mishra et al., 2010). This process also depends on RanGTP, but any specific role for nuclear transport receptors here remains unclear.
 
-## Docking at the NPC
+### Docking at the NPC
 
 How does Mto1, a nuclear export cargo ‘mimic’, become docked at the NPC, while conventional export cargos are released into the cytoplasm? Ultimately, a detailed understanding of this issue will require in vitro biochemistry with purified proteins. However, based on previous work in mammalian cells (Engelsma et al., 2004; Port et al., 2015), we speculate that docking may depend on: 1) the Mto1 NES-M acting as a high-affinity NES; and 2) the stability of interaction between Mto1-Crm1 and Nup146 FG repeats.
 
@@ -139,19 +731,246 @@ Assuming that the Mto1 NES-M interacts with Crm1 as a high-affinity NES, clues a
 
 In addition to a ‘high-affinity NES’ mechanism, other factors may also contribute to docking of the Mto1/2 complex at the NPC. For example, if Mto1(or its partner Mto2) were to bind Nup146 independently of binding to Crm1, such multivalent binding would decrease the off-rate from the NPC; currently our MS data cannot distinguish between direct and indirect Mto1 interactors. Interactions between Mto1/2 and the NPC could also be stabilized by avidity effects (Figure 4E). Mto1/2 is multimeric in vivo, containing multiple (>10) copies of both Mto1 and Mto2 (Lynch et al., 2014), while nucleoporins are also present in multiple copies within the NPC, because of its eight-fold symmetry (Aitchison and Rout, 2012; Görlich and Kutay, 1999; Wente and Rout, 2010). As a result, multiple Mto1 molecules in a single Mto1/2 complex could bind to multiple nucleoporins (and/or Crm1) in a single NPC. Interestingly, localization of Mto1/2 to the SPB and the CAR also depends on avidity effects (Samejima et al., 2010).
 
-## Formation of an Crm1-dependent docking complex with a cytoplasmic ‘cargo’
+### Formation of an Crm1-dependent docking complex with a cytoplasmic ‘cargo’
 
 Given that conventional Crm1-dependent export complexes form in the nucleus, where RanGTP concentration is high (Aitchison and Rout, 2012; Görlich and Kutay, 1999; Wente and Rout, 2010), how might an Mto1/2 docking complex form in the cytoplasm, where RanGTP concentration is low? We speculate that if the Mto1 NES-M acts as a high-affinity NES, it may be possible for Mto1/2 to replace a conventional nuclear export cargo at the final stages of export, via a ‘cargo-handover’ mechanism (Figure 7—figure supplement 1B). Alternatively, a docking complex involving Mto1/2, Crm1, Nup146 and RanGTP could in principle form de novo at the cytoplasmic face of the NPC. While the low concentration of RanGTP in the cytoplasm makes this unlikely, it is formally possible that in the immediate vicinity of the NPC, the local concentration of RanGTP is higher than in the cytoplasm in general, because in yeast, RanGAP is freely soluble in the cytoplasm rather than associated with the NPC (Aitchison and Rout, 2012; Hopper et al., 1990). Accordingly, immediately after RanGTP dissociates from export complexes (but prior to GTP hydrolysis), it might be available to cytoplasmic Mto1/2.
 
 Our proposition that an Mto1/2 docking complex includes RanGTP (see Figure 7; Figure 7—figure supplement 1) is based on the observed requirement for RanGTP for docking in vivo and on analogy to the known mechanisms underlying stable NES-dependent binding of conventional nuclear export cargo to Crm1 (Dong et al., 2009; Güttler et al., 2010; Monecke et al., 2009; Monecke et al., 2013; Port et al., 2015; Saito and Matsuura, 2013). We note that in cross-linking MS experiments, we did not observe increased association of Ran with Mto1 that is localized to the NE compared to Mto1 that is not localized to the NE (Supplementary file 3–6. One possible reason for this is that Ran may not be readily cross-linked to Mto1 or to Mto1’s immediate interactors (by analogy to conventional cargo export, Ran would not be expected to bind directly to Mto1). Alternatively, it is possible that the Mto1/2 docking complex does not contain Ran and that the requirement for Ran-GTP for docking is only indirect. This might be the case if the main role of Ran-GTP in Mto1/2 docking is to generate sufficiently high levels of conventional export complexes at the cytoplasmic face NPC such that components of these complexes (e.g. Crm1) can subsequently be used for Mto1/2 docking by an unconventional, Ran-independent mechanism. Further work with purified proteins may help to address this issue.
 
-## A novel function for cytoplasmic FG-Nups?
+### A novel function for cytoplasmic FG-Nups?
 
 In this work, we identified a very specific phenotype associated with deletion of Nup146 FG repeats 5–12: Mto1 is lost from NPCs, with a concomitant loss in MT nucleation from the NE. Moreover, this is correlated with a strong decrease in interaction of Mto1 with Nup146 and, to a lesser extent, with Crm1, consistent with our model of a cargo-like complex of Mto1/2, Crm1 and RanGTP docking at the cytoplasmic face of the NPC. In this context, it is interesting that extensive analysis in budding yeast has shown that the FG regions of cytoplasmic FG-Nups (as well as nucleoplasmic FG-Nups) can be deleted without almost any discernible effects on nuclear transport (Adams et al., 2014; Strawn et al., 2004; Zeitler and Weis, 2004). In human cells, the role of Hs Nup214 in protein export appears to be somewhat controversial (Bernad et al., 2006; Hutten and Kehlenbach, 2006); however, similar to budding yeast, in at least one instance where Hs Nup214 was found to be important for export—namely, export of the 60S pre-ribosome— the FG repeats of Hs Nup214 were found not to be required [Bernad et al., 2006]). Based on these results, and on the conservation of FG repeats in Nup146, Sc Nup159 and Hs Nup214, we propose that an important but previously unrecognized role for cytoplasmic FG-Nups may be to dock cytoplasmic proteins at the NPC for non-export-related functions, as described here for generation of non-centrosomal MTOCs by the Mto1/2 complex. It will be interesting to see how widespread this type of repurposing of the nuclear export machinery is in eukaryotic cells more generally.
 
 ## Materials and methods
 
-## Yeast cultures, strain and plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Schizosaccharomyces  pombe)</td>
+      <td>Mto1</td>
+      <td>NA</td>
+      <td>Pombase:SPCC417.07c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>Mto2</td>
+      <td>NA</td>
+      <td>Pombase:SPBC902.06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>Crm1</td>
+      <td>NA</td>
+      <td>Pombase:SPAC1805.17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>Nup146</td>
+      <td>NA</td>
+      <td>Pombase:SPAC23D3.06c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>Alp7</td>
+      <td>NA</td>
+      <td>Pombase:SPAC890.02c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>Nup132</td>
+      <td>NA</td>
+      <td>Pombase:SPAC1805.04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>Spi1</td>
+      <td>NA</td>
+      <td>Pombase:SPBC1289.03c</td>
+      <td>Spi1 is the S. pombe gene name for Ran GTPase</td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>Plo1</td>
+      <td>NA</td>
+      <td>Pombase:SPAC23C11.16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. pombe)</td>
+      <td>Alp14</td>
+      <td>NA</td>
+      <td>Pombase:SPCC895.07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces  cerevisiae)</td>
+      <td>Nup159</td>
+      <td>NA</td>
+      <td>SGD:S000001377</td>
+      <td>Alternate systematic name YIL115C</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Nup214</td>
+      <td>NA</td>
+      <td>HGNC:8064</td>
+      <td>Alternate name CAN</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TAT1 anti-tubulin (mouse monoclonal)</td>
+      <td>PMID:2606940</td>
+      <td></td>
+      <td>(1:15 of hybridoma supernatant)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 secondary (donkey anti-mouse polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific :A-21202; RRID:AB_141607</td>
+      <td>(1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>Rockland:600-401-215; RRID:AB_828167</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 594 FluoroNanogold Fab’ fragment (goat anti-rabbit polyclonal)</td>
+      <td>Nanoprobes</td>
+      <td>Nanoprobes:7304</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (sheep polyclonal)</td>
+      <td>other</td>
+      <td></td>
+      <td>homemade lab stock; used for immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange II Site Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>Agilent:200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leptomycin B</td>
+      <td>LC Laboratories</td>
+      <td>LC Laboratories: L-6100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_002368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>PMID:19029910</td>
+      <td>RRID:SCR_014485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxLFQ</td>
+      <td>PMID:24942700</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pombase</td>
+      <td>PMID:25361970</td>
+      <td>RRID:SCR_006586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: D1306; RRID:AB_2629482</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G Dynabeads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: 10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fractogel EMD Chelate (M)</td>
+      <td>Merck KGaA</td>
+      <td>Merck:1.10338.0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nanolink streptavidin magnetic beads</td>
+      <td>Trilink</td>
+      <td>Trilink:M-1002</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast cultures, strain and plasmid construction
 
 Fission yeast methods and growth media were as described (Forsburg and Rhind, 2006; Petersen and Russell, 2016). Strains were normally grown in YE5S-rich medium or PMG minimal medium (like EMM2, but using 5 g/L sodium glutamate acid instead of ammonium chloride as nitrogen source). For preliminary experiments using SILAC mass spectrometry, cells were grown in low-nitrogen EMM2 medium (‘LowN’; using 0.3 g/L ammonium chloride as nitrogen source; [Bicho et al., 2010]). For purification of HTB-tagged Mto1 variants for LFQ MS, Mto1 variants were expressed from the nmt81 promoter, and cells were grown in PMG medium, except for experiments involving leptomycin B (Figure 3), in which case Mto1 variants were expressed from the repressed nmt1 promoter, and cells were grown in 4xYE5S medium. For electron microscopy, cells were grown in EMM2 minimal medium. Nutritional supplements were normally used at 175 mg/L, except for arginine and lysine in SILAC experiments, in which unlabeled arginine or L-13C6-arginine (Sigma Isotec, Gillingham, UK) was used at 80 mg/L, and unlabeled lysine or L-13C615N2-lysine (Sigma Isotec) was used at 60 mg/L (Bicho et al., 2010). Solid media contained 2% Bacto agar (Becton Dickinson, Wokingham, UK). For mating, SPA plates containing 45 mg/L each of adenine, leucine, uracil, histidine and lysine were used. For repression of thiamine-regulated promoters, sterile-filtered thiamine was added to media at a final concentration of 15 µM.
 
@@ -159,11 +978,11 @@ Strains used in this study are listed in Supplementary file 1. For experiments p
 
 Genetic crosses used either tetrad dissection or random spore analysis (Ekwall and Thon, 2017). Except for the cases described below, genome manipulations such as gene tagging, truncation and/or deletion were made by homologous recombination of PCR products (Bähler et al., 1998; Hentges et al., 2005; Van Driessche et al., 2005). PCR was performed with either Phusion High-Fidelity polymerase or Q5 High-Fidelity polymerase (NEB, Hitchin, UK). Desired strains were confirmed by yeast colony PCR, western blot and/or fluorescence microscopy as appropriate. For all cloning experiments, E. coli strain DH5alpha was used.
 
-## Leptomycin-resistant crm1 mutants
+### Leptomycin-resistant crm1 mutants
 
 To generate crm1-C529A/S/T/V mutants, a one-step approach was used, in which mto1[9A1-NE]-GFP nup146-3mCherry cells were transformed with mutated crm1 DNA fragments and selected directly for leptomycin (LMB) resistance. Mutant crm1 fragments were designed with the mutation site in the center,~650 base pairs of crm1 sequence on either side of the mutation site, and BstXI sites at each end of fragment. Plasmids containing the mutant fragments were synthesized by GeneArt (plasmids pKS1735, pKS1734, pKS1737, and pKS1738, for crm1-C529A, crm1-C529S, crm1-C529T, and crm1-C529V mutants, respectively). The crm1 fragments were released from plasmids by BstXI digestion, purified and transformed into strain KS7255. Cells from the transformation were plated onto YE5S plates containing 300 nM LMB (LC Laboratories, Woburn, MA), and LMB-resistant colonies were easily identified. A negative-control transformation conducted in parallel did not yield any LMB-resistant colonies. Stable LMB-resistant colonies from each transformation were then used for sequencing to confirm specific mutations in crm1 genomic DNA. The mutant strains were named KS9340 (crm1-C529A), KS9221 (crm1-C529S) KS9338 (crm1-C529T), and KS9336 (crm1-C529V).
 
-## Overexpression of wild-type and mutant spi1
+### Overexpression of wild-type and mutant spi1
 
 Strains overexpressing spi1+, spi1[Q68L] and spi1[T23N] from the nmt41 promoter were generated by targeted integration of transgenes at the hph.171k locus (Fennessy et al., 2014). First, pJET-spi1+/[Q68L]/[T23N] plasmids were constructed. To construct pJET-spi1+, spi1+ genomic DNA was amplified from fission yeast genomic DNA using primer pair OKS3290/OKS3291, and the PCR product was ligated into vector pJET1.2 (Thermo Fisher Scientific, Paisley, UK). The resulting pJET-spi1+ plasmid was confirmed by sequencing and named pKS1603. To construct pJET-spi1[Q68L], the Q68L mutation was introduced into pKS1603 by PCR, using primer pair OKS3139/OKS3140. The PCR product was recircularized using T4 polynucleotide kinase and T4 DNA ligase. The resulting plasmid was confirmed by sequencing and named pKS1596. To construct pJET-spi1[T23N], pKS1603 was used as template to introduce the T23N mutation into the spi1 sequence, using QuikChange II Site-Directed Mutagenesis kit (Agilent, Stockport, UK) and primer pair OKS 3336/OKS3337. After DpnI treatment and transformation, the resulting plasmid was confirmed by sequencing and named pKS1595.
 
@@ -171,7 +990,7 @@ Next, the spi1 inserts from pKS1603, pKS1596, and pKS1595 were each subcloned in
 
 For transformation into fission yeast, pKS1597, pKS1599, and pKS1598 were digested with NotI, and the relevant fragments were purified and used to transform strain KS 7742. Stable nourseothricin-resistant, hygromycin-sensitive integrants were identified, indicating replacement of the hygromycin-resistance marker at the hph.171k locus by the transgene. Colonies were then tested on PMG plates (also containing adenine and uracil) with or without 15 µM thiamine. After two days of growth at 32°C, nmt41:spi1+ colonies were similar with and without thiamine, while nmt41:spi1[Q68L] and nmt41:spi1[T23N] colonies appeared normal on plates with thiamine but formed only very tiny colonies on plates without thiamine. nmt41: spi1+/[Q68L]/[T23N] overexpression strains were named KS8578, KS8581 and KS8580, respectively.
 
-## Internal deletion of nup146 FG repeats
+### Internal deletion of nup146 FG repeats
 
 Strains with internal deletions of nup146 FG repeats were constructed by a two-step approach (Fennessy et al., 2014). For the first step, an rpl42:natMX6 cassette was amplified by PCR using primer pair OKS2460/OKS2461 and the PCR product was used to transform cycloheximide-resistant rpl42.sP56Q strain KS8072. The amplified cassette was at the end of the nup146 coding sequence to generate a nourseothricin-resistant, cycloheximide-sensitive nup146:rpl42:natMX6 rpl42.sP56Q strain, which was named KS8254.
 
@@ -179,9 +998,9 @@ For the second step, a 5.1 kb wild-type nup146 genomic DNA fragment (containing 
 
 DNA sequence of nup146 [∆FG5-12] was amplified from pKS1514 by PCR using primer pair OKS3098/OKS3099. The resulting PCR product was transformed into strain KS8254. Nourseothricin-sensitive, cycloheximide-resistant colonies were selected, and colony PCR using primer pair OKS3154/OKS3155 was used to identify the desired strains. The correct nup146[∆FG5-12] rpl42.sP56Q strains was named KS8305.
 
-## Light microscopy
+### Light microscopy
 
-## General light microscopy conditions
+#### General light microscopy conditions
 
 Unless stated otherwise, for live-cell microscopy, cells were grown in PMG medium supplemented with adenine, leucine and uracil, with glucose added after autoclaving. Before imaging, cells were grown for 2 days at 25°C, with appropriate dilution to maintain exponential growth. To prepare cells for imaging, 0.5–1 mL of cell culture was centrifuged at 13,000 rpm for 30 s to pellet cells, and a small amount of cell pellet was placed on a pad of 2% agarose in PMG medium supplemented with adenine, leucine and uracil, on a microscope slide. The preparation was then sealed with a coverslip and VALAP (Vaseline, lanolin, and paraffin wax in a 1:1:1 ratio). Preparations were used for ~10–40 min before being discarded.
 
@@ -191,27 +1010,27 @@ Images were acquired with a step size 0.6 µm and 11 Z-sections for the full cel
 
 Unless stated otherwise, light-microscopy imaging experiments involved at least two independent biological replicates. We define a biological replicate as growing a fresh culture of a particular strain and taking it through to the end of the experiment. In a few cases, cells were imaged once during strain construction and then once more formally against the appropriate control strain (which itself may have been imaged multiple times). Imaging for Figure 1—figure supplement 1B was done once, as this replicates previous work (Lynch et al., 2014) and is for illustration purposes only.
 
-## Nuclear positioning
+#### Nuclear positioning
 
 For measuring nuclear position, 0.5 mL of exponentially growing cells was centrifuged at 5000 rpm for 30 s, washed in deionized water, and resuspended in deionized water to a final volume of 10 µL. Cells were fixed by heat-denaturation on a coverslip on a 65°C hot block, and 2.5 µl of mounting media containing DAPI stain was added to fixed cells. Fluorescence images of stained nuclei were acquired together with bright-field images to show the entire cell. For analysis, fluorescence and bright-field images were overlaid using ImageJ, and the distance from the center of the nucleus to the nearest cell tip (S) and the furthest cell tip (L) was measured. We report eccentricity of nuclear position as the ratio S/L (i.e. for a perfectly-centered nucleus, S/L = 1). This experiment was done once, measuring S/L for 100 cells for each genotype.
 
-## Leptomycin B (LMB) treatment
+#### Leptomycin B (LMB) treatment
 
 For imaging after LMB treatment, LMB (from 10 µM stock in ethanol) was added to cultures at 100 nM final concentration. For negative controls, ethanol alone was added to an equivalent final concentration (1% v/v). After incubation with or without LMB at 25°C, cells were mounted on medium-agarose pads containing 100 nM LMB and imaged as described above. In Figure 3—figure supplement 1A (Alp7-3GFP ± LMB), imaging was done once with 400 nM LMB and once with 100 nM LMB. In Figure 4F (GFP-Mto1[1-29]-GST + LMB), imaging was done once. In Figure 3—figure supplement 3 (MT regrowth), fixation, processing, and imaging was done once for each time-point, using 200 nM LMB. Because each different time-point was derived from a separate flask, similarities between neighboring time-points indicate reproducibility.
 
-## Spi1 expression
+#### Spi1 expression
 
 For imaging after expression of nmt41:spi1+, nmt41:spi1[Q68L], and nmt41:spi1[T23N], cells were first grown to exponential phase in PMG medium containing adenine, leucine and uracil, plus 15 µM thiamine to repress nmt41:spi1 expression. Cells of each strain, as well as control cells lacking any spi1 transgene, were centrifuged at 4000 rpm for 4 min, washed three times with deionized water, resuspended in medium without thiamine, and grown at 25°C until imaging. Preliminary experiments indicated that at this temperature, expression was first noticeable ~26 hr after washing, and more significant at 30–34 hr after washing. Cells were therefore imaged after 26 hr and 34 hr incubation at 25°C.
 
-## Microtubule re-growth after cold-shock
+#### Microtubule re-growth after cold-shock
 
 For microtubule regrowth experiments, cells were grown in YE5S liquid medium at 25°C. Manipulations before and after cold-shock, including methanol fixation and processing for immunofluorescence, were performed exactly as described previously (Lynch et al., 2014). To assay regrowth after cold-shock, chilled cells were fixed at 34 s, 40 s, 55 s, 70 s, 3 min, and 10 min after being returned to pre-warmed flasks in a 25°C water bath. Cells were stained with TAT1 mouse monoclonal anti-tubulin antibody (1:15 dilution of hybridoma culture supernatant; [Woods et al., 1989]) and Alexa488 Donkey anti-mouse secondary antibody (1:80 dilution; Thermo Fisher Scientific). Centrifugation of stained cells onto coverslips for imaging was as described (Sawin and Nurse, 1998). This experiment was performed once for each time-point. Because each different time-point was derived from a separate flask, similarities between neighboring time-points indicate reproducibility.
 
-## GFP-tubulin live-cell imaging
+#### GFP-tubulin live-cell imaging
 
 For GFP-tubulin live-cell imaging of wild-type (nup146+) and nup146[∆FG5-12] cells, cells were imaged every 5 s for a total time of 100 s. Each culture was grown once. Quantification of MT nucleation in the vicinity of the cell nucleus and away from the cell nucleus was determined manually from videos. A total of 90 cells were scored for each of the two genotypes, and total nucleation events were pooled for each genotype.
 
-## Immunoelectron microscopy
+### Immunoelectron microscopy
 
 Immunoelectron microscopy was carried out as described previously (Tange et al., 2016), with some modifications. Briefly, strain KS5750 (mto1[9A1-NE]-GFP) was cultured in EMM2 medium with supplements. After washing with 0.1 M phosphate buffer (PB, pH7.4), cells were fixed for 20 min at room temperature with 4% formaldehyde and 0.01% glutaraldehyde dissolved in PB, and washed with PB three times for 5 min each. Cells were then treated with 0.5 mg/mL Zymolyase 100T (Seikagaku Co., Tokyo, Japan) in PB for 30 min. Because the cell walls were not removed well, the cells were further treated with 1 mg/mL Zymolyase 100T in PB for 30 min at 30°C, with 0.2 mg/mL Lysing Enzyme for 30 min, and washed with PB three times. After treatment with 100 mM lysine HCl in PB twice for 10 min and subsequent washing with PB, cells were permeabilized for 15 min with PB containing 0.2% saponin and 1% bovine serum albumin (BSA), and incubated at 4°C overnight with primary antibody (rabbit polyclonal anti-GFP antibody; Rockland, Limerick, PA) diluted 1:400 in PB containing 1% BSA and 0.01% saponin. After washing with PB containing 0.005% saponin three times for 10 min each, cells were incubated for 2 hr at room temperature with secondary antibody (goat anti-rabbit Alexa 594 FluoroNanogold Fab’ fragment, Nanoprobes, Yaphank, NY) diluted 1:400 in PB containing 1% BSA and 0.01% saponin, washed with PB containing 0.005% saponin three times for 10 min each, and with PB once. Then, the cells were fixed again with 1% glutaraldehyde in PB for 1 hr, washed with PB once and treated with 100 mM lysine HCl in PB twice for 10 min each. The cells were stored at 4°C until further use.
 
@@ -219,15 +1038,15 @@ Before use, the cells were incubated with 50 mM HEPES (pH5.8) three times for 3 
 
 Cells were dehydrated by sequential incubation in 50% and 100% ethanol for 10 min each, and with acetone for 10 min. For embedding in epoxy resin, cells were incubated sequentially with mixtures of acetone: Epon812 (1:1) for 1 hr, acetone:Epon812 (1:2) for 1 hr, and Epon812 overnight, and then Epon812 again for another 3 hr, and left to stand until solidified. The block containing cells was sectioned with a microtome (Leica Microsystems, Tokyo, Japan), and the ultra-thin sections were doubly stained with 4% uranyl acetate for 20 min and lead citrate (Sigma, Tokyo, Japan) for 1 min as usually treated in EM methods. Images were obtained using a JEM1400 transmission electron microscope (JEOL, Tokyo, Japan) at 120kV. Images shown are taken from one of three independent biological replicate experiments.
 
-## Biochemistry and mass spectrometry
+### Biochemistry and mass spectrometry
 
-## Cell harvesting and cryogrinding
+#### Cell harvesting and cryogrinding
 
 Cell cultures in late exponential growth were collected by centrifugation at 5000 rpm for 15 min at 4°C in a JLA-8.1000 rotor (Beckman Coulter, High Wycombe, UK). Cell pellets were resuspended in one-quarter culture volume of wash buffer (10 mM NaPO4 pH 7.5 and 0.5 mM EDTA) and then washed three times by centrifugation at 5000 rpm for 15 min at 4°C in a JLA-10.500 rotor (Beckman Coulter) and resuspension in the same volume of wash buffer. After the final centrifugation, the cell pellet was weighed and resuspended in wash buffer, using a ratio of 0.3 mL wash buffer per gram of cell pellet. The cell suspension was then quick-frozen by drop-wise addition into liquid nitrogen and stored at −80°C until further use.
 
 Cryogrinding was performed using an RM100 electric mortar grinder with a zirconium oxide mortar and pestle (Retsch, Hope Valley, UK). The mortar and pestle were pre-cooled by filling with liquid nitrogen for 10 min before grinding. Frozen cells were then added into the pre-cooled grinder and ground for 40 min, with regular generous addition of liquid nitrogen to maintain the temperature and prevent cell clumping during the grinding process. Cryogrindate cell powder was recovered and stored at −80°C until further use.
 
-## Anti-GFP immunoprecipitation (for preliminary SILAC interactome analysis)
+#### Anti-GFP immunoprecipitation (for preliminary SILAC interactome analysis)
 
 Large-scale anti-GFP immunoprecipitation was performed using homemade sheep anti-GFP antibody covalently coupled to Protein G Dynabeads (Thermo Fisher Scientific) using dimethylpimelimidate (Borek et al., 2015). Immunoprecipitation (IP) buffer contained 15 mM NaPO4 pH 7.5, 100 mM KCl, 0.5 mM EDTA, 0.2% TX-100, 10 µg/mL CLAAPE protease inhibitors (chymostatin, leupeptin, antipain dihydrochloride, aprotinin, pepstatin, E-64), 2 mM AEBSF, 2 mM PMSF, 1 mM NaF, 50 nM calyculin A, 50 nM okadaic acid, 0.1 mM Na3VO4, and 2 mM benzamidine.
 
@@ -239,11 +1058,11 @@ To elute proteins from beads, a total of 65 µL Laemmli sample buffer (LSB; 2% S
 
 Samples from large-scale immunoprecipitations were processed for SILAC mass spectrometry analysis as described below.
 
-## Cryogrindate cross-linking in vitro
+#### Cryogrindate cross-linking in vitro
 
 A 0.125 M stock solution of disuccinimidyl suberate (DSS; Thermo Fisher Scientific) was made fresh in DMSO. Just before cross-linking, this was diluted to 2.5 mM final concentration in cross-linking buffer (15 mM NaPO4 pH 7.5, 85 mM NaCl, 0.2% Triton X-100, 1 mM PMSF, 10 µg/mL CLAAPE protease inhibitors, 2 mM AEBSF, 1 mM NaF, 50 nM okadaic acid, 0.1 mM Na3VO4 and 2 mM benzamidine). Of cell cryogrindate powder, 6 g was resuspended in 6 mL of cross-linking buffer containing DSS and mixed by vortexing. Cell lysate was then incubated at 4°C for 2 hr with gentle rotation. Then, 1.2 mL of 1.5 M Tris-HCl pH 8.8 was added to the cell lysate to quench the cross-linking reaction, and left at room temperature for 30 min. The cross-linked cell lysate was then used for two-step purification as described below.
 
-## Two-step purification of HTB-tagged Mto1 variants
+#### Two-step purification of HTB-tagged Mto1 variants
 
 HTB-tagged Mto1 variants were purified in two steps, using nickel-charged Fractogel EMD Chelate (M) (Merck, Darmstadt, Germany) resin and Nanolink magnetic streptavidin beads (Trilink, San Diego, CA), under denaturing conditions. The procedure described below was used for purifications after cryogrindate cross-linking in vitro, which was most commonly used. For purifications after cross-linking in vivo, the same approach was used, but all amounts and volumes were doubled (this is because initial purifications were done after cross-linking in vivo, and it was later determined that half as much material was still sufficient for MS analysis)
 
@@ -251,7 +1070,7 @@ For the first-step purification, 12 mL of cross-linked and quenched cell lysate 
 
 For the second-step purification, the stored elution from the first-step purification above was thawed at room temperature, and TX-100 was added to a final concentration of 1%. 30 µL of Nanolink streptavidin beads slurry (as supplied by manufacturer; this corresponds to ~1.2 µL bed volume) was washed twice with 1 mL of LSB containing 1% TX-100, resuspended into 30 µL of LSB containing 1% TX-100 and added to the thawed first-step elution. This suspension was incubated for 1.5 hr at room temperature, then collected with a magnet and washed once with 1 mL of LSB and three times with 1 mL of LSB without glycerol. After transfer to a microfuge tube, beads were resuspended in 15 µL of LSB and heated at 95°C for 5 min. The elution from the beads was collected and DTT and bromophenol blue were added, to final concentrations of 0.1M and 0.01%, respectively. The mixture was boiled again for 5 min and stored at −20°C prior to SDS-PAGE.
 
-## Mass spectrometry (label-free quantification)
+#### Mass spectrometry (label-free quantification)
 
 For label-free quantification mass spectrometry analysis of samples after two-step purification,~18 µL of second-step elution was loaded onto a single lane (~0.5 cm wide) of a 4–20% Tris-glycine polyacrylamide gel (Biorad, Watford, UK). Samples were run at 150V for 12–14 min. The gel was stained with Coomassie Blue at room temperature for 1 hr and destained in 10% acetic acid overnight. On the following day, the gel was washed once in distilled water and the relevant region recovered after excision with a clean scalpel. In general, for all samples, we recovered the region of the gel above, but not including, the non-cross-linked Mto1 band, in order to increase the relative proportion of cross-linked Mto1 species vs. non-crosslinked Mto1.
 
@@ -265,7 +1084,7 @@ All LFQ MS analyses were performed using two complete biological replicates of 
 
 Scatterplots showing LFQ ratio vs. LFQ intensity (Figures 1, 3, 4 and 6) were constructed as follows: In cases where the relevant Mto1-interactors (e.g. Crm1, Nup146) were fully quantified in both conditions of both replicate experiments (i.e. Figure 3 and 6), the values shown in scatterplots represent the geometric mean from the two replicates. The geometric mean was used rather than the arithmetic mean in order to minimize any effects of extreme outliers. In other cases (i.e. Figure 1 and 4), Nup146 was not fully quantified in one of the conditions of one of the replicate experiments, because of low signal intensity or low peptide count. In these cases, it was not possible to calculate mean LFQ values for Nup146 from replicate experiments, and therefore, the values shown in scatterplots are taken from the replicate in which the Nup146 was fully quantified. Tables 1–4 show peptide counts and LFQ values for selected proteins from replicate experiments, and Supplementary file 3–6 contain full datasets, including LFQ values.
 
-## Mass spectrometry (SILAC)
+#### Mass spectrometry (SILAC)
 
 To generate the SILAC data shown in Supplementary file 2 (preliminary results, from anti-GFP immunoprecipitation), sample processing and digestion was performed as described above. LC-MS analyses were performed on a Q Exactive mass spectrometer (Thermo Fisher Scientific) coupled on-line to a Dionex Ultimate 3000 RSLCnano System (Thermo Fisher Scientific). The analytical column with a self-assembled particle frit (Ishihama et al., 2002) and C18 material (ReproSil-Pur C18-AQ 3 μm; Dr. Maisch GmbH, Ammerbuch, Germany) was packed into a spray emitter (75 μm ID, 8 μm opening, 300 mm length; New Objective) using a Proxeon air-pressure pump (Thermo Fisher Scientific). Mobile phase A consisted of 0.1% formic acid in water while mobile phase B consisted of 80% acetonitrile and 0.1% formic acid. Peptides were loaded onto the column at a flow rate of 0.5 μL/min and eluted at a flow rate of 0.2 μL/min according to the following gradient: 2% to 40% in 120 min and then to 95% in 11 min. The settings on the Q Exactive were the same as described above.
 

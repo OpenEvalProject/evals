@@ -46,9 +46,7 @@ To address this same issue for ShH10-CMV-iGluSnFR, we have added the following t
 
 “The iGluSnFR signal is proportional to the amount of glutamate reaching the membrane (Marvin et al., 2013); thus, the lack of fluorescence in the INL where MC cell bodies are located indicates that during early development there is little glutamate release outside of the IPL.”
 
-To clarify this point for reviewers, we transfected GFP in MCs using the same AAV variant (ShH10) to illustrate the uniform expression of GFP along the entire MC, including expression in the soma (see Author response image 1).10.7554/eLife.09590.020Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.09590.020
-
-DOI: http://dx.doi.org/10.7554/eLife.09590.020
+To clarify this point for reviewers, we transfected GFP in MCs using the same AAV variant (ShH10) to illustrate the uniform expression of GFP along the entire MC, including expression in the soma (see Author response image 1).10.7554/eLife.09590.020Author response image 1.
 
 3) The bulk of the Discussion is spent discussing possible connections between MCs, Bergmann glial cells, and astrocytes generally. This commentary is intriguing but is perhaps too long for the current submission. It may be more informative to reduce some of the speculation about Bergmann cells in particular, and add a bit more information about our current understanding of the role of Muller cells, and how activity could moderate or guide their development and function.
 

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.03564.001 Neurotrophin-3 (Ntf3) and brain derived neurotrophic factor (Bdnf) are critical for sensory neuron survival and establishment of neuronal projections to sensory epithelia in the embryonic inner ear, but their postnatal functions remain poorly understood. Using cell-specific inducible gene recombination in mice we found that, in the postnatal inner ear, Bbnf and Ntf3 are required for the formation and maintenance of hair cell ribbon synapses in the vestibular and cochlear epithelia, respectively. We also show that supporting cells in these epithelia are the key endogenous source of the neurotrophins. Using a new hair cell CreER T line with mosaic expression, we also found that Ntf3's effect on cochlear synaptogenesis is highly localized. Moreover, supporting cell-derived Ntf3, but not Bbnf, promoted recovery of cochlear function and ribbon synapse regeneration after acoustic trauma. These results indicate that glial-derived neurotrophins play critical roles in inner ear synapse density and synaptic regeneration after injury. DOI: http://dx.doi.org/10.7554/eLife.03564.001
+Neurotrophin-3 (Ntf3) and brain derived neurotrophic factor (Bdnf) are critical for sensory neuron survival and establishment of neuronal projections to sensory epithelia in the embryonic inner ear, but their postnatal functions remain poorly understood. Using cell-specific inducible gene recombination in mice we found that, in the postnatal inner ear, Bbnf and Ntf3 are required for the formation and maintenance of hair cell ribbon synapses in the vestibular and cochlear epithelia, respectively. We also show that supporting cells in these epithelia are the key endogenous source of the neurotrophins. Using a new hair cell CreERT line with mosaic expression, we also found that Ntf3's effect on cochlear synaptogenesis is highly localized. Moreover, supporting cell-derived Ntf3, but not Bbnf, promoted recovery of cochlear function and ribbon synapse regeneration after acoustic trauma. These results indicate that glial-derived neurotrophins play critical roles in inner ear synapse density and synaptic regeneration after injury.
 
 ## Introduction
 
@@ -30,71 +30,223 @@ In this study, we investigated the roles of postnatal Ntf3 and Bdnf in both norm
 
 ## Results
 
-## Ntf3, but not Bdnf, expression by postnatal supporting cells regulates cochlear function
+### Ntf3, but not Bdnf, expression by postnatal supporting cells regulates cochlear function
 
 To alter neurotrophin expression by supporting cells, we used a mouse line that expresses the tamoxifen-inducible Cre recombinase (CreERT) under the control of the proteolipid protein 1 promoter (Plp1/CreERT). We previously showed that this line can be used to induce effective gene recombination in inner ear supporting cells, when tamoxifen is delivered at early postnatal ages (Gomez-Casati et al., 2010a). We crossed Plp1/CreERT with mice carrying a conditional Ntf3 knockout allele (Ntf3flox) (Bates et al., 1999) or an overexpression transgene (Ntf3stop) to eliminate or increase the expression of Ntf3, respectively.
 
-RT-qPCR showed that Ntf3 expression was significantly reduced in both the cochlea and utricle of
+RT-qPCR showed that Ntf3 expression was significantly reduced in both the cochlea and utricle of Ntf3flox:Plp1/CreERT mice and increased in those of Ntf3stop:Plp1/CreERT mice after tamoxifen treatment (Figure 1A). Mice with either Ntf3 knockout (Ntf3flox:Plp1/CreERT) or overexpression (Ntf3stop:Plp1/CreERT) in supporting cells had normal vestibular evoked potentials (VsEPs, Figure 1B,C), indicating that postnatally, supporting cell-derived Ntf3 is not necessary for vestibular function. This is not the case for the embryonic inner ear, where the loss of Ntf3 results in the loss of a subpopulation of vestibular neurons (Ernfors et al., 1995). In contrast, Ntf3 knockout from supporting cells resulted in elevated thresholds for auditory brainstem responses (ABRs) at high frequencies, while supporting cell Ntf3 overexpression resulted in reduced ABR thresholds at the same frequencies (Figure 1E). Distortion product otoacoustic emissions (DPOAEs) were not affected by the abnormal Ntf3 expression (Figure 1D), suggesting that the ABR changes were due to dysfunction of the inner hair cells (IHCs), the cochlear nerve fibers, or the synapses that connect them. Correspondingly, the amplitude of ABR peak 1 (P1), the summed activity of the cochlear nerve, was reduced by supporting cell Ntf3 knockout and increased by overexpression, also at high frequencies (Figure 1F). The latency of ABR P1 and the width of ABR wave 1 were not altered by the knockout or overexpression (Figure 1G,H), suggesting that altering Ntf3 levels does not affect cochlear nerve myelination. Control mice carrying only the Plp1/CreERT allele showed normal cochlear responses, proving that the phenotype was not due to the expression of the CreERT transgene (Figure 1—figure supplement 1). These results demonstrate that supporting cell derived Ntf3 plays a critical role in normal physiology of the postnatal cochlea, specifically in the basal (high-frequency) regions.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig1-v2.jpg)
 
-**Figure 1.:** (A) RT-qPCR shows that postnatal tamoxifen injection reduces or increases Ntf3 mRNA levels in adult Ntf3flox:Plp1/CreER or TNtf3stop:Plp1/CreER inner ears, respectively; Tn = 5–6. *p < 0.05, **p < 0.01 by two-tailed unpaired t test. (B and C) Postnatal Ntf3 knockout (blue) or overexpression (red) from supporting cells does not alter VsEP thresholds (B) or their peak 1 (P1) amplitudes at 0 dB (C); n = 4–8. (D–F) Postnatal knockout or overexpression of Ntf3 from supporting cells reduces or enhances cochlear function, respectively. Ntf3 knockout (blue) elevates ABR thresholds (E) and decreases ABR P1 amplitudes (F), without changing DPOAE thresholds (D); n = 16–17. Ntf3 overexpression (red) reduces ABR thresholds (E) and increases ABR P1 amplitudes (F), without changing DPOAE thresholds (D); n = 21. ABR P1 amplitudes were assessed at 70 dB SPL. *p < 0.05, **p < 0.01, ***p < 0.001 by two-way ANOVA. (G) ABR P1 latencies are not affected by either Ntf3 knockout (blue) or Ntf3 overexpression (red) at all frequencies examined. Key in C applies to A–G. (H) Mean ABR waveforms from responses to 32 kHz tone pips from Ntf3 knockouts and their controls (upper) and Ntf3 overexpressors and their controls (lower). Gray shading indicates ABR wave 1. Both ABR P1 latencies (G) and waveforms (H) results were assessed at 70 dB SPL; n = 13–17.DOI: http://dx.doi.org/10.7554/eLife.03564.003
+**Figure 1.:** (A) RT-qPCR shows that postnatal tamoxifen injection reduces or increases Ntf3 mRNA levels in adult Ntf3flox:Plp1/CreERT or Ntf3stop:Plp1/CreERT inner ears, respectively; n = 5–6. *p < 0.05, **p < 0.01 by two-tailed unpaired t test. (B and C) Postnatal Ntf3 knockout (blue) or overexpression (red) from supporting cells does not alter VsEP thresholds (B) or their peak 1 (P1) amplitudes at 0 dB (C); n = 4–8. (D–F) Postnatal knockout or overexpression of Ntf3 from supporting cells reduces or enhances cochlear function, respectively. Ntf3 knockout (blue) elevates ABR thresholds (E) and decreases ABR P1 amplitudes (F), without changing DPOAE thresholds (D); n = 16–17. Ntf3 overexpression (red) reduces ABR thresholds (E) and increases ABR P1 amplitudes (F), without changing DPOAE thresholds (D); n = 21. ABR P1 amplitudes were assessed at 70 dB SPL. *p < 0.05, **p < 0.01, ***p < 0.001 by two-way ANOVA. (G) ABR P1 latencies are not affected by either Ntf3 knockout (blue) or Ntf3 overexpression (red) at all frequencies examined. Key in C applies to A–G. (H) Mean ABR waveforms from responses to 32 kHz tone pips from Ntf3 knockouts and their controls (upper) and Ntf3 overexpressors and their controls (lower). Gray shading indicates ABR wave 1. Both ABR P1 latencies (G) and waveforms (H) results were assessed at 70 dB SPL; n = 13–17.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Plp1/CreER allele does not affect the cochlear function.TPlp1/CreERT(+/−) and Plp1/CreERT(−/−) littermates exhibit similar DPOAE thresholds (A), ABR thresholds (B), ABR P1 amplitudes (C), and ABR P1 latencies (D) at all frequencies tested. ABR P1 amplitudes and latencies were assessed at 70 dB SPL. Tamoxifen was injected at P0-1 and physiological tests were performed at P42; n = 4. Key in D applies to all panels.DOI: http://dx.doi.org/10.7554/eLife.03564.004
+**Figure 1—figure supplement 1.:** Plp1/CreERT(+/−) and Plp1/CreERT(−/−) littermates exhibit similar DPOAE thresholds (A), ABR thresholds (B), ABR P1 amplitudes (C), and ABR P1 latencies (D) at all frequencies tested. ABR P1 amplitudes and latencies were assessed at 70 dB SPL. Tamoxifen was injected at P0-1 and physiological tests were performed at P42; n = 4. Key in D applies to all panels.
 
-We then examined the role of supporting cell derived Bdnf in the postnatal inner ear using analogous conditional alleles (
+We then examined the role of supporting cell derived Bdnf in the postnatal inner ear using analogous conditional alleles (Bdnfflox [Rios et al., 2001] and Bdnfstop [Chang et al., 2006]) in combination with the Plp1/CreERT. RT-qPCR showed that inner ear Bdnf expression was significantly altered (Figure 2A). Neonatal knockout of Bdnf in supporting cells resulted in elevated VsEP thresholds and decreased VsEP peak 1 (P1) amplitudes (Figure 2B,C; blue). This phenotype is identical to that seen when supporting cell Bdnf knockout was induced during late embryogenesis (E14.5-17.5) (Gomez-Casati et al., 2010b), demonstrating that the postnatal period is when supporting cell-derived Bdnf plays a critical role in the vestibular epithelium. Surprisingly, vestibular function was unaffected in mice overexpressing Bdnf (Figure 2B,C; red), indicating that Bdnf is expressed at sufficient amounts in the postnatal vestibular epithelium. Cochlear function was unaffected by either increased or reduced Bdnf expression as seen by DPOAE thresholds (Figure 2D), ABR thresholds (Figure 2E), ABR amplitudes (Figure 2F), and ABR latencies (Figure 2G,H), demonstrating that supporting cell-derived Bdnf is not important in the postnatal cochlea. Together, our results show that supporting cell-derived Ntf3 and Bdnf play complementary roles in the postnatal cochlea and vestibular organs.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig2-v2.jpg)
 
-**Figure 2.:** (A) RT-qPCR shows that postnatal tamoxifen injection results is reduced or increased Bdnf mRNA levels in adult Bdnfflox:Plp1/CreER or TBdnfstop:Plp1/CreER inner ears, respectively; Tn = 6. (B and C) Postnatal Bdnf knockout (blue) from supporting cells leads to higher VsEP thresholds (B) and lower VsEP P1 amplitudes (C) at the high stimulus level (0 dB re 1 g/ms). Postnatal Bdnf overexpression (red) does not affect the vestibular function (B and C); n = 6–11. *p < 0.05; **p < 0.01 by two-tailed unpaired t tests. (D–H) Neither Bdnf knockout (blue) nor overexpression (red) from postnatal supporting cells alters cochlear function, as shown by normal DPOAE thresholds (D), ABR thresholds (E), ABR P1 amplitudes (F), ABR P1 latencies (G), and ABR P1 waveforms (H) at 70 dB SPL compared to control littermates; n = 6. Key in C applies to A–G. Gray shading (H) indicates ABR wave 1.DOI: http://dx.doi.org/10.7554/eLife.03564.005
+**Figure 2.:** (A) RT-qPCR shows that postnatal tamoxifen injection results is reduced or increased Bdnf mRNA levels in adult Bdnfflox:Plp1/CreERT or Bdnfstop:Plp1/CreERT inner ears, respectively; n = 6. (B and C) Postnatal Bdnf knockout (blue) from supporting cells leads to higher VsEP thresholds (B) and lower VsEP P1 amplitudes (C) at the high stimulus level (0 dB re 1 g/ms). Postnatal Bdnf overexpression (red) does not affect the vestibular function (B and C); n = 6–11. *p < 0.05; **p < 0.01 by two-tailed unpaired t tests. (D–H) Neither Bdnf knockout (blue) nor overexpression (red) from postnatal supporting cells alters cochlear function, as shown by normal DPOAE thresholds (D), ABR thresholds (E), ABR P1 amplitudes (F), ABR P1 latencies (G), and ABR P1 waveforms (H) at 70 dB SPL compared to control littermates; n = 6. Key in C applies to A–G. Gray shading (H) indicates ABR wave 1.
 
-## Supporting cell-derived Ntf3 regulates ribbon synapse density in postnatal cochlea
+### Supporting cell-derived Ntf3 regulates ribbon synapse density in postnatal cochlea
 
-We then analyzed cochlear histopathology to determine the anatomical basis for the pathophysiology in
+We then analyzed cochlear histopathology to determine the anatomical basis for the pathophysiology in Ntf3 mutants. Examination of plastic sections showed no obvious changes in the organ of Corti, the spiral ganglion, or accessory structures of the cochlear duct such as the stria vascularis, spiral ligament, etc. Quantitative analysis showed normal density of supporting cells and hair cells (Figure 3A,C) as well as peripheral axons of cochlear nerve fibers (Figure 3B,D). In contrast, analysis of immunostained whole-mounts of the organ of Corti revealed alterations in the numbers of synaptic contacts between inner hair cells (IHCs) and cochlear nerve terminals. Immunostaining of pre-synaptic ribbon and post-synaptic receptor patches, using antibodies against CtBP2 and GluA2, respectively (Figure 4A), showed that supporting cell Ntf3 knockout reduced the number of synaptic puncta (Figure 4A; upper panels and Figure 4D; blue), while overexpression increased synapse number (Figure 4A; lower panels and Figure 4D; red). Effects on synaptic counts were restricted to basal (high-frequency) cochlear regions (Figure 4D), as seen for ABR thresholds and amplitudes (Figure 1E,F). Similar results were obtained when separately counting either pre-synaptic ribbons or post-synaptic receptor patches (Figure 4B,C). The strong correlation between the changes in ABR amplitudes and synaptic counts (Figure 4E) suggests that levels of supporting cell-derived Ntf3 influence cochlear function by regulating the number of IHC ribbon synapses. Previous studies have suggested that alterations in ribbon synapses affect ABR responses by changing sound-evoked peak discharge rates (Davies, 1996; Glowatzki et al., 2006; Gomez-Palacio-Schjetnan and Escobar, 2013). Thus, increases (or decreases) in the number of synapses per fiber in Ntf3 overexpressors or knockouts could increase (or decrease) the probability of synchronous EPSPs, thereby increasing (or decreasing) onset spike rate in response to tone pips and ultimately altering the amplitude of ABR P1, the summed activity of the cochlear nerve. The observation that Ntf3 overexpression can increase synapse density indicates that Ntf3 is normally expressed in limited amounts, as expected from the neurotrophic hypothesis (Davies, 1996).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig3-v2.jpg)
 
-**Figure 3.:** (A and B) Photomicrographs of the basal turn of an Ntf3flox:Plp1/CreER cochlea (∼32 kHz region) showing a cross-section of the organ of Corti (TA; scale bar = 100 µm) and a tangential section through the osseous spiral lamina showing peripheral axons of cochlear nerve fibers (B; scale bar = 10 µm). (C) The number of IHCs per 100 µm of organ of Corti is not altered by either Ntf3 knockout (blue) or overexpression (red) at any cochlear regions; n = 5–6. (D) The number of cochlear-nerve peripheral axons per 100 µm of osseous spiral lamina (near the habenula perforata) is not affected by either Ntf3 knockout (blue) or overexpression (red); n = 6. Key in D applies to C and D.DOI: http://dx.doi.org/10.7554/eLife.03564.006
+**Figure 3.:** (A and B) Photomicrographs of the basal turn of an Ntf3flox:Plp1/CreERT cochlea (∼32 kHz region) showing a cross-section of the organ of Corti (A; scale bar = 100 µm) and a tangential section through the osseous spiral lamina showing peripheral axons of cochlear nerve fibers (B; scale bar = 10 µm). (C) The number of IHCs per 100 µm of organ of Corti is not altered by either Ntf3 knockout (blue) or overexpression (red) at any cochlear regions; n = 5–6. (D) The number of cochlear-nerve peripheral axons per 100 µm of osseous spiral lamina (near the habenula perforata) is not affected by either Ntf3 knockout (blue) or overexpression (red); n = 6. Key in D applies to C and D.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig4-v2.jpg)
 
-**Figure 4.:** (A) Representative confocal images (maximal projection from a focal series) of IHC synapses from 32 kHz region of Ntf3, floxNtf3flox:Plp1/CreER, TNtf3, and stopNtf3stop:Plp1/CreER cochleae immunolabeled for pre-synaptic ribbons (CtBP2-red) and post-synaptic receptor patches (GluA2-green) (scale bar = 10 µm). The dashed lines show the approximate outline of one IHC. CtBP2 antibody also weakly stains IHC nuclei. (TB–D) Quantitative data shows that Ntf3 knockout reduces, and overexpression increases, the number of pre-synaptic ribbons (B), post-synaptic GluA2 receptor patches (C), and putative ribbon synapses, defined as juxtaposed CtBP2- and GluA2-positive puncta (D) at high frequency cochlear regions; n = 5–6. *p < 0.05, **p < 0.01, ***p < 0.001 by two-way ANOVA. (E) Relative synaptic counts vs relative ABR P1 amplitudes of Ntf3 knockouts (blue) or overexpressors (red) shows a linear correlation. Data points were obtained by normalizing synaptic counts and ABR P1 amplitudes of Ntf3 mutants to the values of their respective controls at each of the frequency regions analyzed. Key in D applies B–E.DOI: http://dx.doi.org/10.7554/eLife.03564.007
+**Figure 4.:** (A) Representative confocal images (maximal projection from a focal series) of IHC synapses from 32 kHz region of Ntf3flox, Ntf3flox:Plp1/CreERT, Ntf3stop, and Ntf3stop:Plp1/CreERT cochleae immunolabeled for pre-synaptic ribbons (CtBP2-red) and post-synaptic receptor patches (GluA2-green) (scale bar = 10 µm). The dashed lines show the approximate outline of one IHC. CtBP2 antibody also weakly stains IHC nuclei. (B–D) Quantitative data shows that Ntf3 knockout reduces, and overexpression increases, the number of pre-synaptic ribbons (B), post-synaptic GluA2 receptor patches (C), and putative ribbon synapses, defined as juxtaposed CtBP2- and GluA2-positive puncta (D) at high frequency cochlear regions; n = 5–6. *p < 0.05, **p < 0.01, ***p < 0.001 by two-way ANOVA. (E) Relative synaptic counts vs relative ABR P1 amplitudes of Ntf3 knockouts (blue) or overexpressors (red) shows a linear correlation. Data points were obtained by normalizing synaptic counts and ABR P1 amplitudes of Ntf3 mutants to the values of their respective controls at each of the frequency regions analyzed. Key in D applies B–E.
 
-## Roles of hair cell-derived Ntf3 in postnatal cochlea
+### Roles of hair cell-derived Ntf3 in postnatal cochlea
 
-Since both supporting cells and IHCs express Ntf3 in the postnatal organ of Corti (
+Since both supporting cells and IHCs express Ntf3 in the postnatal organ of Corti (Sugawara et al., 2007), it was important to assess the contribution of hair cell-derived Ntf3. We generated a mouse line carrying tamoxifen-inducible Cre under the control of the Pou4f3 promoter (Pou4f3/CreERT), which is active only in hair cells in the postnatal inner ear (Fujioka et al., 2011). Using a Rosa26tdTomato reporter line (Madisen et al., 2010), we found that the Pou4f3/CreERT line drives inducible gene recombination in about 50% of inner and outer hair cells, with similar recombination efficiency at all cochlear regions (Figure 5A), and with a pattern similar to another hair cell promoter, Atoh1/CreERT (Weber et al., 2008). We generated mice with knockout or overexpression of Ntf3 in hair cells by crossing Pou4f3/CreERT with Ntf3flox or Ntf3stop mice and treating them with tamoxifen at early postnatal ages. RT-qPCR analysis showed that Ntf3 expression was significantly reduced and increased in cochleae of Ntf3 knockouts and overexpressors, respectively (Figure 5B). Mice with hair cell-specific Ntf3 knockout had no cochlear phenotype: ABR thresholds and P1 amplitudes were indistinguishable from controls (Figure 5C,D; blue). Thus, hair cell-derived Ntf3 appears to be dispensable in the postnatal cochlea. In contrast, mice overexpressing Ntf3 in postnatal hair cells showed significant reduction in ABR threshold at 32 kHz (Figure 5C; red) as well as increased ABR P1 amplitudes at frequencies ≥16 kHz (Figure 5D; red), similar to the patterns seen for supporting cell specific Ntf3 overexpression (Figure 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig5-v2.jpg)
 
-**Figure 5.:** (A) Pou4f3/CreER allows for hair cells specific inducible gene recombination. TRosa26tdTomato:Pou4f3/CreER mice and their littermate TRosa26 controls were injected with tamoxifen at P1-P3, and the cochleas were collected at P60. Inducible recombination is seen as tdTomato fluorescence co-localized with MyoVIIa immunostaining. Scale bar = 50 µm. (tdTomatoB) RT-qPCR shows that postnatal tamoxifen injection reduced Ntf3 mRNA in Ntf3flox:Pou4f3/CreER cochlea and increased Ntf3 expression in TNtf3stop:Pou4f3/CreER cochlea, compared to their respective controls; Tn = 4–5. *p < 0.05, **p < 0.01 by two-tailed unpaired t tests. (C and D) Postnatal overexpression of Ntf3 in hair cells (red) reduced ABR thresholds (C) and increased ABR P1 amplitudes (D) at high frequencies; n = 9–10. Postnatal knockout of Ntf3 from hair cells (blue) had no effect on these measures; n = 8–11. ABR P1 amplitudes were assessed at 70 dB SPL. *p < 0.05, **p < 0.01, ***p < 0.001 by two-way ANOVA. (E) Confocal maximal projection of 7 adjacent IHCs from the 32 kHz region of a hair cell-specific Ntf3 overexpressor, after immunostaining for synapses as in Figure 4A; tdTomato indicates recombined hair cells. Scale bar = 10 µm. (F) Synaptic counts are increased in recombined (tdTomato+, Ntf3 overexpressing) IHCs compared to neighboring unrecombined cells; n = 6 cochleae, with at least 100 hair cells in each group. *p < 0.05, **p < 0.01 by two-tailed paired t tests. Key in B applies to B–D.DOI: http://dx.doi.org/10.7554/eLife.03564.008
+**Figure 5.:** (A) Pou4f3/CreERT allows for hair cells specific inducible gene recombination. Rosa26tdTomato:Pou4f3/CreERT mice and their littermate Rosa26tdTomato controls were injected with tamoxifen at P1-P3, and the cochleas were collected at P60. Inducible recombination is seen as tdTomato fluorescence co-localized with MyoVIIa immunostaining. Scale bar = 50 µm. (B) RT-qPCR shows that postnatal tamoxifen injection reduced Ntf3 mRNA in Ntf3flox:Pou4f3/CreERT cochlea and increased Ntf3 expression in Ntf3stop:Pou4f3/CreERT cochlea, compared to their respective controls; n = 4–5. *p < 0.05, **p < 0.01 by two-tailed unpaired t tests. (C and D) Postnatal overexpression of Ntf3 in hair cells (red) reduced ABR thresholds (C) and increased ABR P1 amplitudes (D) at high frequencies; n = 9–10. Postnatal knockout of Ntf3 from hair cells (blue) had no effect on these measures; n = 8–11. ABR P1 amplitudes were assessed at 70 dB SPL. *p < 0.05, **p < 0.01, ***p < 0.001 by two-way ANOVA. (E) Confocal maximal projection of 7 adjacent IHCs from the 32 kHz region of a hair cell-specific Ntf3 overexpressor, after immunostaining for synapses as in Figure 4A; tdTomato indicates recombined hair cells. Scale bar = 10 µm. (F) Synaptic counts are increased in recombined (tdTomato+, Ntf3 overexpressing) IHCs compared to neighboring unrecombined cells; n = 6 cochleae, with at least 100 hair cells in each group. *p < 0.05, **p < 0.01 by two-tailed paired t tests. Key in B applies to B–D.
 
 To probe the mechanisms underlying the effects of hair cell-derived Ntf3 overexpression, we analyzed IHC synaptic counts. For this, we generated Ntf3stop:Rosa26tdTomato:Pou4f3/CreERT mice, which allowed identification of hair cells in which the Ntf3 overexpression transgene had been activated, based on tdTomato fluorescence (Figure 5E). Pre-synaptic ribbons and post-synaptic receptor patches were increased specifically in the recombined (tdTomato (+) and Ntf3 overexpressing) IHCs (Figure 5F). This observation suggests that the Ntf3 released by IHCs remains close to its source, possibly because the supporting cells create a diffusion barrier, preventing cross talk between adjacent IHCs. Together, these results show that supporting cells are the key endogenous source of Ntf3 for synaptic survival, but that Ntf3 overexpression in hair cells can increase synaptic density, even in the postnatal cochlea.
 
-## Overexpression of Ntf3, but not Bdnf, by postnatal supporting cells promotes recovery of cochlear responses after acoustic trauma
+### Overexpression of Ntf3, but not Bdnf, by postnatal supporting cells promotes recovery of cochlear responses after acoustic trauma
 
-A significant component of the acute response to acoustic trauma (AT) is the swelling of cochlear nerve terminals at afferent synapses, suggestive of noise-induced glutamate excitotoxicity (
+A significant component of the acute response to acoustic trauma (AT) is the swelling of cochlear nerve terminals at afferent synapses, suggestive of noise-induced glutamate excitotoxicity (Robertson, 1983). Such damage can lead to a permanent loss of IHC synapses and reduction in ABR amplitudes, followed by a slow death of spiral ganglion neurons, despite complete recovery of cochlear thresholds within 1–2 weeks (Kujawa and Liberman, 2009). To determine if Ntf3 overexpression could either prevent, or promote recovery from, this noise-induced synaptic loss and attenuation of cochlear responses, we exposed control and Ntf3 overexpressing mice to noise levels known to cause this type of neuropathy (8–16 kHz at 100 dB SPL for 2 hr) (Kujawa and Liberman, 2009). In Ntf3stop control mice, this exposure caused immediate threshold shifts as large as 50 dB, which recovered partially by 3 days and almost completely (except 32 kHz) by 10 days after exposure (Figure 6A; left panel). However, even after 10 days, ABR P1 amplitudes (at ≥16 kHz) remained significantly lower than before exposure (Figure 6B; left panel). In contrast, in Ntf3 overexpressing mice, ABR thresholds recovered completely by 3 days post-exposure (Figure 6A; right panel and Table 1), and P1 amplitude recovery was significantly enhanced (Figure 6B; right panel and Table 1). In contrast to Ntf3, a parallel set of experiments on mice overexpressing Bdnf in supporting cells showed no effects on the extent or time course of the noise-induced pathophysiology (Figure 6C,D and Table 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig6-v2.jpg)
 
-**Figure 6.:** (A and B) Ntf3 overexpression accelerates the recovery of ABR thresholds (A) and promotes recovery of ABR P1 amplitudes (B) after acoustic trauma (AT); n = 5–7. (C and D) Bdnf overexpression does not affect the recovery of ABR thresholds (A) and ABR P1 amplitudes (B) after acoustic trauma; n = 5–7. *p < 0.05, ***p < 0.001 by two-way ANOVA. Gray shading indicates the noise exposure spectrum. Key in B applies to all panels.DOI: http://dx.doi.org/10.7554/eLife.03564.009
+**Figure 6.:** (A and B) Ntf3 overexpression accelerates the recovery of ABR thresholds (A) and promotes recovery of ABR P1 amplitudes (B) after acoustic trauma (AT); n = 5–7. (C and D) Bdnf overexpression does not affect the recovery of ABR thresholds (A) and ABR P1 amplitudes (B) after acoustic trauma; n = 5–7. *p < 0.05, ***p < 0.001 by two-way ANOVA. Gray shading indicates the noise exposure spectrum. Key in B applies to all panels.
 
-## Overexpression of Ntf3 by postnatal supporting cells promotes synaptic regeneration after acoustic trauma
+**Table 1.**
+ Statistical analysis (two-way ANOVA) of ABR threshold and P1 amplitude changes between control and neurotrophin overexpressing (Plp1/CreERT) mice after acoustic trauma
 
-Analysis of immunostained cochlear epithelia from the noise-exposed ears showed that Ntf3 overexpression does not prevent noise-induced synaptic loss, but rather supports synapse regeneration. Immediately after exposure (AT + 2 hr), control and
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="2">Ntf3 overexpressor vs control</th>
+      <th colspan="2">Bdnf overexpressor vs control</th>
+    </tr>
+    <tr>
+      <th>p Value</th>
+      <th>F Statistic</th>
+      <th>p Value</th>
+      <th>F Statistic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">ABR threshold</td>
+      <td>AT + 1 day</td>
+      <td>0.0051</td>
+      <td>8.469</td>
+      <td>0.6801</td>
+      <td>0.1716</td>
+    </tr>
+    <tr>
+      <td>AT + 3 days</td>
+      <td>&lt;0.0001</td>
+      <td>19.00</td>
+      <td>0.6752</td>
+      <td>0.1774</td>
+    </tr>
+    <tr>
+      <td>AT + 10 days</td>
+      <td>&lt;0.0001</td>
+      <td>17.34</td>
+      <td>0.9862</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ABR P1 amplitude</td>
+      <td>AT + 1 day</td>
+      <td>0.0342</td>
+      <td>4.695</td>
+      <td>0.1899</td>
+      <td>1.7580</td>
+    </tr>
+    <tr>
+      <td>AT + 3 days</td>
+      <td>&lt;0.0001</td>
+      <td>18.08</td>
+      <td>0.5692</td>
+      <td>0.3276</td>
+    </tr>
+    <tr>
+      <td>AT + 10 days</td>
+      <td>&lt;0.0001</td>
+      <td>18.13</td>
+      <td>0.0421</td>
+      <td>4.3160</td>
+    </tr>
+  </tbody>
+</table>
+
+### Overexpression of Ntf3 by postnatal supporting cells promotes synaptic regeneration after acoustic trauma
+
+Analysis of immunostained cochlear epithelia from the noise-exposed ears showed that Ntf3 overexpression does not prevent noise-induced synaptic loss, but rather supports synapse regeneration. Immediately after exposure (AT + 2 hr), control and Ntf3 overexpressing mice had the same degree of synaptic loss (colocalized GluA2–CtBP2 puncta, Figure 7A; upper panels, Figure 7B and Table 2). Similarly, Ntf3 overexpression did not alter the acute loss of pre-synaptic ribbons (Figure 7C and Table 2). However, at 14 days of post-exposure (AT + 14 days), a clear effect of Ntf3 on IHC synapses was observed. Whereas the synaptic loss in control mice remained equal to that in AT + 2 hr, Ntf3 overexpressors showed significant synaptic recovery (Figure 7A; lower panels, Figure 7B and Table 2). In control mice, noise-induced loss of pre-synaptic ribbons was progressive, with further reductions seen between 2 hr and 14 days post-exposure. Remarkably, Ntf3 overexpression prevented the progressive loss of synaptic ribbons (Figure 7C and Table 2).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig7-v2.jpg)
 
-**Figure 7.:** (A) Representative confocal images of IHC synapses from 32 kHz region of Ntf3 and stopNtf3stop:Plp1/CreER cochleae immunolabeled for CtBP2 and GluA2 at 2 hr (upper panels) or 14 days after acoustic trauma (AT); scale bar = 10 µm. (TB and C) Ntf3 overexpression promotes regeneration of IHC synapses (B) and prevents the progressive loss of IHC ribbons (C) between 2 hr (AT + 2 hr) and 14 days (AT + 14 days) after acoustic trauma. n = 3–8. *p < 0.05, ***p < 0.001 by two-way ANOVA. Gray shading indicates the noise exposure spectrum. Key in C applies to B–C.DOI: http://dx.doi.org/10.7554/eLife.03564.011
+**Figure 7.:** (A) Representative confocal images of IHC synapses from 32 kHz region of Ntf3stop and Ntf3stop:Plp1/CreERT cochleae immunolabeled for CtBP2 and GluA2 at 2 hr (upper panels) or 14 days after acoustic trauma (AT); scale bar = 10 µm. (B and C) Ntf3 overexpression promotes regeneration of IHC synapses (B) and prevents the progressive loss of IHC ribbons (C) between 2 hr (AT + 2 hr) and 14 days (AT + 14 days) after acoustic trauma. n = 3–8. *p < 0.05, ***p < 0.001 by two-way ANOVA. Gray shading indicates the noise exposure spectrum. Key in C applies to B–C.
 
-## Overexpression of Ntf3 by adult supporting cells after acoustic trauma promotes recovery of auditory response and regeneration of ribbon synapses
+**Table 2.**
+ Statistical analysis (two-way ANOVA) of synaptic density changes between control and Ntf3 overexpressing (Plp1/CreERT) mice after acoustic trauma
 
-For Ntf3 to be a viable candidate to treat noise-induced hearing loss, it must be effective even if applied after noise exposure. To test if Ntf3 overexpression after noise exposure enhances synaptic regeneration and functional recovery, we could not use the
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>p Value</th>
+      <th>F Statistic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Synapse</td>
+      <td>AT + 2 hr</td>
+      <td>0.9732</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>AT + 14 days</td>
+      <td>0.0065</td>
+      <td>8.358</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ribbon</td>
+      <td>AT + 2 hr</td>
+      <td>0.8134</td>
+      <td>0.056</td>
+    </tr>
+    <tr>
+      <td>AT + 14 days</td>
+      <td>0.0002</td>
+      <td>15.54</td>
+    </tr>
+  </tbody>
+</table>
+
+### Overexpression of Ntf3 by adult supporting cells after acoustic trauma promotes recovery of auditory response and regeneration of ribbon synapses
+
+For Ntf3 to be a viable candidate to treat noise-induced hearing loss, it must be effective even if applied after noise exposure. To test if Ntf3 overexpression after noise exposure enhances synaptic regeneration and functional recovery, we could not use the Plp1/CreERT transgene, as this line does not produce effective recombination in cochlear supporting cells after P15 (data not shown). Therefore, we used a line expressing CreERT under the control of the promoter for the glutamate aspartate transporter Slc1a3 (Slc1a3/CreERT) (Wang et al., 2012). In the adult cochlea, Slc1a3 (GLAST) is expressed by inner phalangeal and inner border cells (Furness and Lawton, 2003; Glowatzki et al., 2006), the same supporting cells that express Plp1 at early postnatal ages (Gomez-Casati et al., 2010a). RT-qPCR showed that tamoxifen treatment in adult Ntf3stop:Slc1a3/CreERT mice significantly increased cochlear Ntf3 expression as compared to controls lacking the Cre (Figure 8A). Ntf3stop:Slc1a3/CreERT mice and control mice were then subjected to acoustic trauma, followed immediately (<1 hr) by tamoxifen treatment (AT/Tmx; Figure 8B). As for mice injected with tamoxifen in the early postnatal period (Figure 6A), controls and Ntf3 overexpressors showed comparable loss and gradual recovery of ABR thresholds when tamoxifen was administered in adult mice immediately after noise exposure (Figure 8C and Table 3). In contrast, the recovery of ABR P1 amplitudes was significantly enhanced by Ntf3 overexpression (Figure 8D). Interestingly, Ntf3 had no significant effects on ABR P1 amplitudes 3 days after noise, but by 14 days after exposure, Ntf3 overexpressors showed significantly higher ABR P1 amplitudes compared to control littermates (Figure 8D and Table 3). The delay in Ntf3's impact on cochlear responses might suggest a slow increase in Ntf3 availability or a delay in the effects of Ntf3 on synapse regeneration.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/03564/elife-03564-fig8-v2.jpg)
 
-**Figure 8.:** (A) RT-qPCR shows that tamoxifen treatments of adult mice increased Ntf3 expression in Ntf3stop:Slc1a3/CreER cochlea; Tn = 6. ***p < 0.001 by two-tailed unpaired t tests. (B) Time line of the experiment showing the ages of mice for ABR measurements, acoustic trauma (AT), tamoxifen inductions (Tmx), and sample collections for synaptic counts. (C–D) The effects of Ntf3 overexpression from adult supporting cells on ABR thresholds (C) and P1 amplitudes (D) after noise exposure; n = 5–9. *p < 0.05, **p < 0.01, ***p < 0.001 by two-way ANOVA. Key in D applies to C–D. (E) Representative confocal images of IHC synapses from 32 kHz region of Ntf3 and stopNtf3stop:Slc1a3/CreER cochleae immunolabeled for CtBP2 and GluA2. The samples were collected from mice without AT/Tmx (Pre-AT/Tmx) or 14 days after AT/Tmx (AT/Tmx + 14 days). Scale bar = 10 µm. (TF) Ntf3 overexpression after acoustic trauma promotes regeneration of IHC ribbon synapses; n = 5–6. **p < 0.01, ***p < 0.001 by two-way ANOVA. Gray shading indicates the noise exposure spectrum.DOI: http://dx.doi.org/10.7554/eLife.03564.013
+**Figure 8.:** (A) RT-qPCR shows that tamoxifen treatments of adult mice increased Ntf3 expression in Ntf3stop:Slc1a3/CreERT cochlea; n = 6. ***p < 0.001 by two-tailed unpaired t tests. (B) Time line of the experiment showing the ages of mice for ABR measurements, acoustic trauma (AT), tamoxifen inductions (Tmx), and sample collections for synaptic counts. (C–D) The effects of Ntf3 overexpression from adult supporting cells on ABR thresholds (C) and P1 amplitudes (D) after noise exposure; n = 5–9. *p < 0.05, **p < 0.01, ***p < 0.001 by two-way ANOVA. Key in D applies to C–D. (E) Representative confocal images of IHC synapses from 32 kHz region of Ntf3stop and Ntf3stop:Slc1a3/CreERT cochleae immunolabeled for CtBP2 and GluA2. The samples were collected from mice without AT/Tmx (Pre-AT/Tmx) or 14 days after AT/Tmx (AT/Tmx + 14 days). Scale bar = 10 µm. (F) Ntf3 overexpression after acoustic trauma promotes regeneration of IHC ribbon synapses; n = 5–6. **p < 0.01, ***p < 0.001 by two-way ANOVA. Gray shading indicates the noise exposure spectrum.
+
+**Table 3.**
+ Statistical analysis (two-way ANOVA) of ABR threshold and P1 amplitude changes between control and Ntf3 overexpressing (Slc1a3/CreERT) mice before and after acoustic trauma and tamoxifen treatments
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>p Value</th>
+      <th>F Statistic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">ABR threshold</td>
+      <td>Pre-AT/Tmx</td>
+      <td>0.7774</td>
+      <td>0.081</td>
+    </tr>
+    <tr>
+      <td>AT/Tmx + 3 days</td>
+      <td>0.1674</td>
+      <td>1.965</td>
+    </tr>
+    <tr>
+      <td>AT/Tmx + 14 days</td>
+      <td>0.5301</td>
+      <td>0.400</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ABR P1 amplitude</td>
+      <td>Pre-AT/Tmx</td>
+      <td>0.2826</td>
+      <td>1.166</td>
+    </tr>
+    <tr>
+      <td>AT/Tmx + 3 days</td>
+      <td>0.3695</td>
+      <td>0.821</td>
+    </tr>
+    <tr>
+      <td>AT/Tmx + 14 days</td>
+      <td>0.0008</td>
+      <td>12.71</td>
+    </tr>
+  </tbody>
+</table>
 
 To define the cellular mechanisms of the Ntf3 effects, we analyzed the density of ribbon synapses before and after noise exposure in these animals. As expected, the basal level of synaptic counts was similar between Cre− and Cre+ mice (Figure 8E, top panels and Figure 8F). Importantly, 14 days after noise exposure and tamoxifen treatment, cochleae from Ntf3 overexpressors had significantly higher density of pre-synaptic ribbons, post-synaptic GluA2 receptor patches, and putative synapses (Figure 8E, bottom panels and Figure 8F). Together with the results from Ntf3stop:Plp1/CreERT mice (Figure 6), our study demonstrates that Ntf3 overexpressed either before or immediately after noise exposure can effectively promote recovery from noise-induced cochlear synaptopathy.
 
@@ -120,7 +272,7 @@ There has been extensive exploration of the use of Bdnf and Ntf3 as therapeutics
 
 ## Materials and methods
 
-## Animals and tamoxifen treatments
+### Animals and tamoxifen treatments
 
 Plp1/CreERT (Doerflinger et al., 2003), Slc1a3/CreERT (Wang et al., 2012), Bdnfflox (Rios et al., 2001), Ntf3flox (Bates et al., 1999), and Rosa26tdTomato reporter mice (Madisen et al., 2010) were obtained from Jackson Laboratory. The Bdnfstop mouse line was provided by Rudolf Jaenisch (Chang et al., 2006). To generate the Ntf3stop mouse, we engineered the conditional Ntf3 overexpression transgene using the mouse Ntf3 cDNA (kindly provided by Barbara Hempstead, Cornell University) under regulation by the synthetic CAGGS promoter/enhancer/intron followed by a loxP-STOP-loxP cassette (kindly provided by Laurie Jackson-Grusby, Children's Hospital Boston). Briefly, a loxP-STOP-loxP cassette was cloned immediately upstream of the Ntf3 cDNA present in a Bluescript plasmid. A SacI/KpnI fragment containing the mouse Ntf3 cDNA and the loxP-STOP-loxP cassette was cut out from the plasmid, blunt-ended, and ligated with an EcoRI cut/blunt-ended pCAGGSTurbo-cre vector to generate pCAGGS-loxP-STOP-loxP Ntf3. A PstI fragment containing an ATG-FRT site was cut out from the pPGK-ATG-FRT (no EcoRI) vector and subcloned into the PstI site, 3′ of the CAGGS-loxP-STOP-loxP Ntf3 construct. The whole pCAGGS-loxP-STOP-loxP Ntf3-ATG-FRT plasmid was targeted downstream of the collagen 1a1 locus by frt/Flpase-mediated site-specific integration. To generate Pou4f3/CreERT mice, an 8.6-kb Pou4f3 (Brn3.1) regulatory sequence (Sage et al., 2006) was cut out from pSP73-Pou4f3-alpha9 plasmid using SalI (kindly provided by Doug Vetter, Tuffs University). The SP73-alpha9 fragment was re-ligated and digested with SmaI to remove alpha9 cDNA from SP73 backbone. The CreERT coding sequence (Feil et al., 1996) was obtained from EcoRI digestion of pCreERt plasmid (kindly provided by Laurie Jackson-Grusby), blunted and ligated to SP73 backbone. SP73-CreERT vector was then cut with SalI and re-ligated with Pou4f3 regulatory region. The final plasmid (14.4-kb) was digested with FspI and SbfI to release the 13-kb fragment containing Pou4f3/CreERT transgene, which is then purified for microinjection. Both Ntf3stop and Pou4f3/CreERT mice were generated at Mouse Gene Manipulation Facility at Children's Hospital Boston.
 
@@ -128,23 +280,23 @@ To knockout Bdnf or Ntf3 from postnatal supporting cells, we crossed Bdnfflox:Pl
 
 For gene expression study, 10-week old mice were gavaged with tamoxifen (200 mg/kg/day) for 3 days. For acoustic trauma studies, 12-week old mice were gavaged with tamoxifen for 3 days with the first dosage given immediately (<1 hr) after noise exposure. In all experiments, Cre negative littermates were used as controls. All ‘Materials and methods’ were performed in compliance with animal protocols approved by the Institutional Animal Care and Use Committee at Children's Hospital Boston.
 
-## RNA isolation and quantitative RT-PCR
+### RNA isolation and quantitative RT-PCR
 
 Mice (8- to 10-week old) were euthanized in a CO2 chamber and the inner ears were extracted. Cochleas (membranous labyrinths) and utricles (sensory epithelia) were dissected from temporal bones, and total RNA was purified using RNeasy spin-columns (Qiagen, Valencia, CA). Total RNA from cochlea (200 ng) or utricle (50 ng) was reverse transcribed (RT) using an iScript cDNA Synthesis Kit (Bio-Rad, Hercules, CA) in 20 µl reaction with a mixture of oligo(dT) and random hexamer primers. The reverse transcription was performed at 42°C for 1 hr followed by 85°C for 5 min. Quantitative PCR was carried out on a CFX96 machine using an iQ SYBR Green Supermix (Bio-Rad). For each well of the 96-well plate (Bio-Rad), the 20 μl reaction contained 10 μl of 2× iQ SYBR Green Supermix, 6 pmol of each forward and reverse primer, and 1 μl of cDNA sample. The cycling conditions were as follows: 95°C for 3 min followed by 40 cycles of 95°C for 30 s, 60°C for 30 s, and 72°C for 30 s. Each sample was loaded in duplicates. The following forward (F) and reverse (R) primers were used: Bdnf, F: GTGTGTGACAGTATTAGCGAGTGG, R: GATACCGGGACTTTCTCTAGGAC, which generates a 101 bp amplicon; Ntf3, F: GCCCCCTCCCTTATACCTAATG, R: CATAGCGTTTCCTCCGTGGT, which generate an 83 bp amplicon; and Rpl19, F: ACCTGGATGAGAAGGATGAG, R: ACCTTCAGGTACAGGCTGTG, which generates a 101 bp amplicon. Expression levels of Bdnf and Ntf3 were normalized to the reference housekeeping gene Rpl19 in the same samples. The relative expression level was calculated by the 2−ΔΔCt method as shown previously (Stankovic and Corfas, 2003).
 
-## Physiological analyses
+### Physiological analyses
 
 Inner ear physiology, including vestibular evoked potentials (VsEPs, the summed activity of the vestibular afferent pathways to sudden head accelerations), auditory brainstem responses (ABRs, the summed activity of auditory afferent pathways to short tone bursts), and distortion product otoacoustic emissions (DPOAEs), was performed on mice anesthetized with xylazine (20 mg/kg, i.p.) and ketamine (100 mg/kg, i.p.). Analysis of animals without noise exposure was performed on 5- to 6-week old mice. For experiments involving noise exposure, the first recording was performed at 14–15 weeks of age, followed by noise exposure at 16 weeks of age and the additional measurements 1, 3, and 10 days post-exposure. For VsEPs and ABRs, needle electrodes were placed into the skin (a) at the dorsal midline close to the neural crest, (b) behind the left pinna, and (c) at the base of the tail (for a ground electrode). For VsEPs, mice were positioned on their backs, with the head coupled securely to a shaker platform. Stimuli were linear acceleration ramps, 2 ms in duration, applied in the earth–vertical axis at 17/s with alternating stimulus polarity. An accelerometer, mounted near the head, was used to calibrate the resultant jerk, which is expressed in dB re 1.0 g/ms. Electrophysiological activity was amplified (10,000×), filtered (0.3–3 kHz), and digitized (125 kHz), and 1024 responses were averaged at each stimulus level. We collected an intensity series in 5 dB steps encompassing stimulus levels above and below threshold. ABR potentials were evoked with 5 ms tone pips (0.5 ms rise-fall, with a cos2 envelope, at 40/s) delivered to the eardrum at log-spaced frequencies from 5.6 to 32 kHz. The response was amplified (10,000×) and filtered (0.3–3 kHz) with an analog-to-digital board in a PC-based data acquisition system. Sound level was raised in 5 dB steps from 10 to 80 dB sound pressure level (SPL). At each level, 1024 responses were averaged (with stimulus polarity alternated) after ‘artifact rejection’. The DPOAEs in response to two primary tones of frequencies f1 and f2 were recorded at (2 × f1)−f2, with f2/f1 = 1.2, and the f2 level 10 dB is lower than the f1 level. The ear-canal sound pressure was amplified and digitally sampled at 4 µs intervals. DPOAE thresholds were defined as the f1 level required to produce a response at 0 dB SPL. These acoustic signals, generated by outer hair cells and measureable in the ear canal, are useful for differential diagnosis: attenuation of ABRs without a change in DPOAEs provides strong evidence for cochlear synaptic or neural dysfunction (Kujawa and Liberman, 2009).
 
-## Noise exposure
+### Noise exposure
 
 Mice (at 12–16 weeks) were placed within small cells in a subdivided cage, suspended in a reverberant noise exposure chamber, and exposed to an octave band of noise (8–16 kHz) at 100 dB for 2 hr. Noise calibration to target SPL was performed immediately before each noise overexposure. Sound pressure levels varied by <1 dB across the cages.
 
-## Cochlear morphology and axonal counts
+### Cochlear morphology and axonal counts
 
 Mice were perfused intracardially with 4% paraformaldehyde in 0.1 M phosphate buffer. Cochleas were extracted, perfused intralabyrinthly, and post-fixed with 1.5% paraformaldehyde and 2.5% glutaraldehyde. The cochleas were then osmicated in 1% osmium tetroxide, decalcified in 5% EDTA, dehydrated and embedded in araldite. Serial sections (20 µm) parallel to the modiolus were cut using a Leica RM2165 microtome and mounted on microscope slides in Permount. Cochlear regions of interest (6, 16, and 32 kHz) were identified based on 3D reconstruction and cochlear mapping (Hirose and Liberman, 2003). Axonal counts were made by imaging tangential sections through the osseous spiral lamina near the habenula perforata. Several fascicles of the cochlear nerve fibers were present in these sections. All myelinated fibers from each section were imaged using 63× DIC optics and counted. The number of axonal fibers was then divided by the cochlear length at specific frequency regions.
 
-## Immunostaining, hair cell and synaptic counts
+### Immunostaining, hair cell and synaptic counts
 
 Analysis of animals without noise exposure was performed at 8–10 weeks. Analysis of noise-exposed animals was performed either immediately (AT + 2 hr) or 2 weeks after noise exposure (AT + 14 days). Cochleae were fixed as described above, post-fixed in 4% paraformaldehyde in 0.1 M phosphate buffer for 2 hr, and decalcified in 5% EDTA. Cochlear tissues were then microdissected and permeabilized by freeze-thawing in 30% sucrose. The microdissected pieces were blocked in 5% normal horse serum with 1% Triton X-100 in phosphate-buffered saline (PBS) for 1 hr, followed by incubation in primary antibodies (diluted in blocking buffer) at 37°C for 16 hr. The primary antibodies used in this study were: anti-myosin VIIa (rabbit anti-MyoVIIa; Proteus Biosciences, Ramona, CA; 1:500), anti-C-terminal binding protein 2 (mouse anti-CtBP2 IgG1; BD Biosciences, San Jose, CA; 1:200), and anti-glutamate receptor 2 (mouse anti-GluA2 IgG2a; Millipore, Billerica, MA; 1:2000). Tissues were then incubated with appropriate Alexa Fluor-conjugated fluorescent secondary antibodies (Invitrogen, Carlsbad, CA; 1:500 in blocking buffer) and 1 μg/ml DAPI (Invitrogen) for 1 hr at room temperature. The tissues were mounted on microscope slides in Vectashield mounting media (Vector laboratories, Burlingame, CA).
 

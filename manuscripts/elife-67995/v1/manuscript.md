@@ -34,19 +34,526 @@ Transparency and sharing therefore contribute to assessment of research reproduc
 
 From 2013 to 2020, as part of the Reproducibility Project: Cancer Biology, we tried to replicate selected results in high-impact preclinical papers in the field of cancer biology (Errington et al., 2014; Table 1). The aim of the project was not to repeat every experiment in each paper: rather it was to repeat a selection of key experiments from each paper. The project also adopted an approach in which a Registered Report describing the experimental protocols and plans for data analysis had to be peer reviewed and accepted for publication before experimental work could begin. The Replication Study reporting the results of the experiments was then peer reviewed to ensure that the experiments had been conducted and analyzed according to the procedures outlined in the Registered Report: crucially, reviewers were asked not to take the ’success' or 'failure' of the experiments into account when reviewing Replication Studies.
 
+**Table 1.**
+ The 53 papers selected for replication in the RP:CB.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Original paper</th>
+      <th>Experiments selected</th>
+      <th>Registered report</th>
+      <th>Experiments registered</th>
+      <th>Replication study*</th>
+      <th>Experiments completed</th>
+      <th>Data, digital materials, and code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Poliseno et al., 2010</td>
+      <td>11</td>
+      <td>Khan et al., 2015</td>
+      <td>6</td>
+      <td>Kerwin et al., 2020</td>
+      <td>5</td>
+      <td>https://osf.io/yyqas/</td>
+    </tr>
+    <tr>
+      <td>Sharma et al., 2010</td>
+      <td>8</td>
+      <td>Haven et al., 2016</td>
+      <td>8</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/xbign/</td>
+    </tr>
+    <tr>
+      <td>Gupta et al., 2010</td>
+      <td>2</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/4bokd/</td>
+    </tr>
+    <tr>
+      <td>Figueroa et al., 2010</td>
+      <td>6</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/xdojz/</td>
+    </tr>
+    <tr>
+      <td>Ricci-Vitiani et al., 2010</td>
+      <td>3</td>
+      <td>Chroscinski et al., 2015b</td>
+      <td>2</td>
+      <td>Errington et al., 2021a</td>
+      <td>1</td>
+      <td>https://osf.io/mpyvx/</td>
+    </tr>
+    <tr>
+      <td>Kan et al., 2010</td>
+      <td>3</td>
+      <td>Sharma et al., 2016a</td>
+      <td>3</td>
+      <td>Errington et al., 2021a</td>
+      <td>1</td>
+      <td>https://osf.io/jpeqg/</td>
+    </tr>
+    <tr>
+      <td>Heidorn et al., 2010</td>
+      <td>8</td>
+      <td>Bhargava et al., 2016a</td>
+      <td>5</td>
+      <td>Errington et al., 2021a</td>
+      <td>1</td>
+      <td>https://osf.io/b1aw6/</td>
+    </tr>
+    <tr>
+      <td>Hatzivassiliou et al., 2010</td>
+      <td>4</td>
+      <td>Bhargava et al., 2016b</td>
+      <td>3</td>
+      <td>Pelech et al., 2021</td>
+      <td>2</td>
+      <td>https://osf.io/0hezb/</td>
+    </tr>
+    <tr>
+      <td>Vermeulen et al., 2010</td>
+      <td>4</td>
+      <td>Evans et al., 2015a</td>
+      <td>3</td>
+      <td>Essex et al., 2019</td>
+      <td>3</td>
+      <td>https://osf.io/pgjhx/</td>
+    </tr>
+    <tr>
+      <td>Carro et al., 2010</td>
+      <td>8</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/mfxpj/</td>
+    </tr>
+    <tr>
+      <td>Nazarian et al., 2010</td>
+      <td>5</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/679uw/</td>
+    </tr>
+    <tr>
+      <td>Johannessen et al., 2010</td>
+      <td>5</td>
+      <td>Sharma et al., 2016b</td>
+      <td>5</td>
+      <td>Errington et al., 2021a</td>
+      <td>2</td>
+      <td>https://osf.io/lmhjg/</td>
+    </tr>
+    <tr>
+      <td>Poulikakos et al., 2010</td>
+      <td>5</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/acpq7/</td>
+    </tr>
+    <tr>
+      <td>Sugahara et al., 2010</td>
+      <td>4</td>
+      <td>Kandela et al., 2015a</td>
+      <td>3</td>
+      <td>Mantis et al., 2017</td>
+      <td>3</td>
+      <td>https://osf.io/xu1g2/</td>
+    </tr>
+    <tr>
+      <td>Ward et al., 2010</td>
+      <td>3</td>
+      <td>Fiehn et al., 2016</td>
+      <td>3</td>
+      <td>Showalter et al., 2017</td>
+      <td>3</td>
+      <td>https://osf.io/8l4ea/</td>
+    </tr>
+    <tr>
+      <td>Ko et al., 2010</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/udw78/</td>
+    </tr>
+    <tr>
+      <td>Zuber et al., 2011</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/devog/</td>
+    </tr>
+    <tr>
+      <td>Delmore et al., 2011</td>
+      <td>2</td>
+      <td>Kandela et al., 2015b</td>
+      <td>2</td>
+      <td>Aird et al., 2017</td>
+      <td>2</td>
+      <td>https://osf.io/7zqxp/</td>
+    </tr>
+    <tr>
+      <td>Goetz et al., 2011</td>
+      <td>2</td>
+      <td>Fiering et al., 2015</td>
+      <td>2</td>
+      <td>Sheen et al., 2019</td>
+      <td>2</td>
+      <td>https://osf.io/7yqmp/</td>
+    </tr>
+    <tr>
+      <td>Sirota et al., 2011</td>
+      <td>1</td>
+      <td>Kandela et al., 2015c</td>
+      <td>1</td>
+      <td>Kandela et al., 2017</td>
+      <td>1</td>
+      <td>https://osf.io/hxrmm/</td>
+    </tr>
+    <tr>
+      <td>Raj et al., 2011</td>
+      <td>4</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/uvapt/</td>
+    </tr>
+    <tr>
+      <td>Possemato et al., 2011</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/u1mfn/</td>
+    </tr>
+    <tr>
+      <td>Tay et al., 2011</td>
+      <td>5</td>
+      <td>Phelps et al., 2016</td>
+      <td>5</td>
+      <td>Wang et al., 2020</td>
+      <td>4</td>
+      <td>https://osf.io/oblj1/</td>
+    </tr>
+    <tr>
+      <td>Xu et al., 2011</td>
+      <td>5</td>
+      <td>Evans et al., 2015b</td>
+      <td>5</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/kvshc/</td>
+    </tr>
+    <tr>
+      <td>DeNicola et al., 2011</td>
+      <td>4</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/i0yka/</td>
+    </tr>
+    <tr>
+      <td>Zhu et al., 2011</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/oi7jj/</td>
+    </tr>
+    <tr>
+      <td>Liu et al., 2011</td>
+      <td>4</td>
+      <td>Li et al., 2015</td>
+      <td>3</td>
+      <td>Yan et al., 2019</td>
+      <td>3</td>
+      <td>https://osf.io/gb7sr/</td>
+    </tr>
+    <tr>
+      <td>Dawson et al., 2011</td>
+      <td>3</td>
+      <td>Fung et al., 2015</td>
+      <td>3</td>
+      <td>Shan et al., 2017</td>
+      <td>3</td>
+      <td>https://osf.io/hcqqy/</td>
+    </tr>
+    <tr>
+      <td>Qian et al., 2011</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/ckpsn/</td>
+    </tr>
+    <tr>
+      <td>Sumazin et al., 2011</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/wcasz/</td>
+    </tr>
+    <tr>
+      <td>Chaffer et al., 2011</td>
+      <td>2</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/u6m4z/</td>
+    </tr>
+    <tr>
+      <td>Opitz et al., 2011</td>
+      <td>5</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/o2xpf/</td>
+    </tr>
+    <tr>
+      <td>Kang et al., 2011</td>
+      <td>2</td>
+      <td>Raouf et al., 2015</td>
+      <td>2</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/82nfe/</td>
+    </tr>
+    <tr>
+      <td>Chen et al., 2012</td>
+      <td>2</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/egoni/</td>
+    </tr>
+    <tr>
+      <td>Driessens et al., 2012</td>
+      <td>2</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/znixv/</td>
+    </tr>
+    <tr>
+      <td>Garnett et al., 2012</td>
+      <td>3</td>
+      <td>Vanden Heuvel et al., 2016</td>
+      <td>3</td>
+      <td>Vanden Heuvel et al., 2018</td>
+      <td>3</td>
+      <td>https://osf.io/nbryi/</td>
+    </tr>
+    <tr>
+      <td>Schepers et al., 2012</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/1ovqn/</td>
+    </tr>
+    <tr>
+      <td>Willingham et al., 2012</td>
+      <td>2</td>
+      <td>Chroscinski et al., 2015a</td>
+      <td>1</td>
+      <td>Horrigan and Reproducibility Project: Cancer Biology, 2017a</td>
+      <td>1</td>
+      <td>https://osf.io/9pbos/</td>
+    </tr>
+    <tr>
+      <td>Straussman et al., 2012</td>
+      <td>4</td>
+      <td>Blum et al., 2014</td>
+      <td>4</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/p4lzc/</td>
+    </tr>
+    <tr>
+      <td>Arthur et al., 2012</td>
+      <td>2</td>
+      <td>Eaton et al., 2015</td>
+      <td>2</td>
+      <td>Eaton et al., 2018</td>
+      <td>2</td>
+      <td>https://osf.io/y4tvd/</td>
+    </tr>
+    <tr>
+      <td>Peinado et al., 2012</td>
+      <td>3</td>
+      <td>Lesnik et al., 2016</td>
+      <td>2</td>
+      <td>Kim et al., 2018</td>
+      <td>2</td>
+      <td>https://osf.io/ewqzf/</td>
+    </tr>
+    <tr>
+      <td>Malanchi et al., 2011</td>
+      <td>3</td>
+      <td>Incardona et al., 2015</td>
+      <td>2</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/vseix/</td>
+    </tr>
+    <tr>
+      <td>Berger et al., 2012</td>
+      <td>1</td>
+      <td>Chroscinski et al., 2014</td>
+      <td>1</td>
+      <td>Horrigan et al., 2017b</td>
+      <td>1</td>
+      <td>https://osf.io/jvpnw/</td>
+    </tr>
+    <tr>
+      <td>Prahallad et al., 2012</td>
+      <td>4</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/ecy85/</td>
+    </tr>
+    <tr>
+      <td>Wilson et al., 2012</td>
+      <td>3</td>
+      <td>Greenfield et al., 2014</td>
+      <td>2</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/h0pnz/</td>
+    </tr>
+    <tr>
+      <td>Lu et al., 2012</td>
+      <td>5</td>
+      <td>Richarson et al., 2016</td>
+      <td>3</td>
+      <td>Errington et al., 2021a</td>
+      <td>2</td>
+      <td>https://osf.io/vfsbo/</td>
+    </tr>
+    <tr>
+      <td>Lin et al., 2012</td>
+      <td>2</td>
+      <td>Blum et al., 2015</td>
+      <td>2</td>
+      <td>Lewis et al., 2018</td>
+      <td>2</td>
+      <td>https://osf.io/mokeb/</td>
+    </tr>
+    <tr>
+      <td>Lee et al., 2012</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/i25y8/</td>
+    </tr>
+    <tr>
+      <td>Castellarin et al., 2012</td>
+      <td>1</td>
+      <td>Repass et al., 2016</td>
+      <td>1</td>
+      <td>Repass and Reproducibility Project: Cancer Biology, 2018</td>
+      <td>1</td>
+      <td>https://osf.io/v4se2/</td>
+    </tr>
+    <tr>
+      <td>Crasta et al., 2012</td>
+      <td>3</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/47xy6/</td>
+    </tr>
+    <tr>
+      <td>Png et al., 2011</td>
+      <td>5</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/tkzme/</td>
+    </tr>
+    <tr>
+      <td>Metallo et al., 2011</td>
+      <td>5</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/isdbh/</td>
+    </tr>
+    <tr>
+      <td>Morin et al., 2010</td>
+      <td>1</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0</td>
+      <td>https://osf.io/6kuy8/</td>
+    </tr>
+  </tbody>
+</table>
+
+_193 experiments in 53 papers were selected for replication. The papers are listed in column 1, and the number of experiments selected from each paper is listed in column 2. Registered Reports for 87 experiments from 29 papers were published in eLife. The Registered Reports are listed in column 3, and the number of experiments included in each Registered Report is listed in column 4. 50 experiments from 23 Registered Reports were completed. 17 Replication Studies reporting the results of 41 experiments were published in eLife; the results of another nine experiments from the six remaining Registered Reports were published in an aggregate paper (Errington et al., 2021a). The Replication Studies are listed in column 5, and the number of experiments included in each study is listed in column 6. Column seven contains a link to data, digital materials, and code._
+
 The initial goal was to repeat 193 experiments from 53 high-impact papers published between 2010 and 2012, but the obstacles we encountered at every phase of the research lifecycle meant that we were only able to repeat 50 experiments from 23 papers. In a separate paper we report a meta-analysis of the results of those 50 experiments (Errington et al., 2021b). In this paper, we describe the challenges we confronted during the different phases of the research lifecycle. A completed replication attempt passed through six phases: designing the experiment (and writing the Registered Report); peer reviewing the Registered Report; preparing the experiments; conducting the experiments; analysing the data (and writing the Replication Study); and peer reviewing the Replication Study.
 
 The next section discusses in detail the challenges faced during the first of these phases. A subsequent section covers the challenges encountered when conducting the experiments and during the peer review of the Replication Studies.
 
 ## The challenges encountered when designing experiments
 
-## Sampling papers
+### Sampling papers
 
 At the start of the project in 2013 we searched various databases to identify basic research papers in cancer biology published between 2010 and 2012 that were having a substantial impact as indexed by citation rates and readership in multiple databases. We selected the highest impact papers from each year that met inclusion criteria (Errington et al., 2014). We excluded papers that reported exclusively genomics, proteomics, and high-throughput assays. This resulted in 50 included papers for which we initiated the process of preparing a replication. During inquiries with original authors, two papers were identified that we determined would be unfeasible to attempt and we decided to halt the effort; for another paper we requested, but did not receive, a key material (i.e., mouse model) so replication was not feasible. We decided to go back to the sampling pool and pull the next available papers, bringing the effective sample to 53 papers. Observing that challenges like this were relatively common, we did not return to the pool for resampling again for the rest of the project. Among the 53 selected papers, 35 were published in the Nature family of journals, 11 in the Cell family of journals, 4 in the Science family of journals, and three in other journals.
 
 From each paper, we identified a subset of experiments for potential replication with an emphasis on those supporting the main conclusions of the paper and attending to resource constraints (Table 1). In total, 193 experiments were identified for replication across the 53 papers for an average of 3.6 per paper (SD = 1.9; range 1–11). Figure 1 illustrates the fate of all the experiments that we attempted to replicate. Below, we summarize the findings by experiment; similar findings are observed when aggregating the data by paper (Figure 1—figure supplement 1).
 
-## Searching for data from the original experiments
+![Figure 1.](https://cdn.elifesciences.org/articles/67995/elife-67995-fig1-v1.jpg)
+
+**Figure 1.:** During the design phase of the project the 193 experiments selected for replication were coded according to six criteria: availability and sharing of data; reporting of statistical analysis (i.e., did the paper describe the tests used in statistical analysis?; if such tests were not used, did the paper report on biological variation (e.g., graph reporting error bars) or representative images?); availability and sharing of analytic code; did the original authors offer to share key reagents?; what level of protocol clarifications were needed from the original authors?; how helpful were the responses to those requests? The 29 Registered Reports published by the project included protocols for 87 experiments, and these experiments were coded according to three criteria: were reagents shared by the original authors?; did the replication authors have to make modifications to the protocol?; were these modifications implemented? A total of 50 experiments were completed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67995/elife-67995-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** This figure is similar to Figure 1, except that the results for the experiments have been combined to give results for the papers that contained the experiments. Experiments from 53 papers were coded during the design phase; experiments from 29 papers were initiated; and results from 23 papers were published. Two methods were used to convert the scores for experiments into scores for papers. For four criteria (protocol clarifications needed; authors helped; modifications needed; modifications implemented) the average of the scores from the experiments was assigned to the paper. For five criteria (data shared; analysis reported; code shared; reagents offered; reagents shared), scoring was conducted with a 'liberal' interpretation for sharing: for example, if data were shared for just one experiment in a paper, the paper was coded as data shared. See main text for further details.
+
+### Searching for data from the original experiments
 
 We planned to conduct replications with at least 0.80 power to detect the effect size reported in the original paper at p < .05 using two-tailed tests. However, in a number of cases only representative images or graphs were reported in the original paper. This occurred for 53 of the 193 experiments (27%). Additionally, it was uncommon for papers to include the summary statistics (such as sample size, means, standard deviations, and inferential statistics) that were needed to calculate the original effect size. We searched the original paper and supplemental files for the original data. When data were not publicly accessible, we requested them from the original authors. At least some data were open or included in the paper for four experiments (2%), raw data were shared for 31 experiments (16%), summary data were shared for 27 experiments (14%), and nothing was shared for 131 experiments (68%).
 
@@ -54,13 +561,13 @@ Failure to report sample size, variability information from sampling, or inferen
 
 Analytic code availability was not common, although, unlike data, we did not explicitly request it for all experiments. Statistical analyses were reported for 78 of the 193 experiments (40%). When the outcome of analyses were reported (e.g., p-value) it was unclear what statistical test was used in 16 of the 78 experiments (21%). Of the experiments that reported an outcome from statistical analyses, at least some analysis code was open for one experiment (1%), code was shared by the original authors for 10 experiments (13%), additional analysis details were shared for four experiments (5%), and nothing was shared for 63 experiments (81%).
 
-## Independent development of replication protocols
+### Independent development of replication protocols
 
 To carry out rigorous replication studies, we needed to understand the original methodology. We read each paper and supplementary information closely to design a protocol. We coded if we requested a key reagent (i.e., cell lines, plasmids, model organisms, antibodies) that was not available commercially or in a repository. We requested key reagents for 136 of the 193 experiments (70%) and for 45 of the 53 papers (85%).
 
 We coded the frequency with which we were able to design a complete protocol for repeating an experiment based on the original paper without having to contact the original authors to clarify some aspect of the original experiment (see Case study in Box 1). Zero experiments needed no clarifications (0%), 17 experiments needed few clarifications (9%), 77 experiments needed some clarifications (40%), 60 experiments needed moderate clarifications (31%), 29 experiments needed strong clarifications (15%), 10 experiments needed extreme clarifications (5%). To illustrate, one experiment needing few clarifications was missing reagent identifying information (e.g., catalog numbers), cell density at time of transfection (or harvest), and some specific details about the gas chromatography-mass spectrometry methodology (e.g., ramping, derivatization volume, injection volume). An experiment needing moderate clarifications was missing reagent identifying information, specific details about the transfection and infection methodologies (e.g., cell density, amount of plasmid/viral titer), and specific details about the flow cytometry methodology (e.g., cell dissociation technique, specific gating strategy). And, an experiment needing extreme clarifications was missing reagent identifying information, specific details about the transfection and infection methodologies, specific details for injecting mice with cells (e.g., number of cells and volume injected, injection methodology), specific details about the bioluminescence imaging (e.g., amount and location of luciferin injected, time post-injection until measurement), and clarification of measurement details (e.g., the exact days post-injection when measurements were taken, how the reported ratio values were calculated).
 
-## Requesting assistance from original authors
+### Requesting assistance from original authors
 
 We sought assistance from original authors to clarify the experimental protocols and to obtain original materials and reagents when necessary. We sent authors the drafted experimental protocols, clarification questions, and requests for materials. Some original authors were helpful and generous with their time providing feedback (see Case study in Box 2), others were not. We coded if original authors were willing to share key reagents. Of the 45 papers for which we requested a key reagent, the authors of 33 papers (73%) offered to share at least one key material. By experiment, of the 136 experiments for which we requested a key reagent, the authors were willing to share for 94 of them (69%).
 
@@ -68,7 +575,19 @@ We also coded the degree to which authors were helpful in providing feedback and
 
 An obvious hypothesis is that the helpfulness of the original authors was determined by the extent of clarifications requested because of the workload. If only minimal clarification were needed, then authors would be helpful. If lots of clarifications were needed, then authors would not be helpful. The correlation between extent of clarifications and helpfulness was –0.24 (95% CI [–0.48, 0.03]) across papers and –0.20 (95% CI [–0.33, –0.06]) across experiments. Larger requests were only modestly associated with less helpfulness. The variability in this relationship is visualized in Figure 2. We also explored whether the extent of clarifications or helpfulness varied by experimental techniques and found the relationship was similar across different categories of experimental techniques (Figure 2—figure supplement 1; Figure 2—figure supplement 2).
 
-## Preparing the Registered Report for peer review
+![Figure 2.](https://cdn.elifesciences.org/articles/67995/elife-67995-fig2-v1.jpg)
+
+**Figure 2.:** Fluctuation plots showing the coded ratings for extent of clarifications needed from original authors and the degree to which authors were helpful in providing feedback and materials for designing the replication experiments. The size of the square shows the number (Freq) of papers/experiments for each combination of extent of clarification needed and helpfulness. (A) To characterize papers (N = 53), coded ratings were averaged across experiments for each paper. The average number of experiments per paper was 3.6 (SD = 1.9; range = 1–11). The Spearman rank-order correlation between extent of clarification needed and helpfulness was –0.24 (95% CI [–0.48, 0.03]) across papers. (B) For experiments (N = 193), the Spearman rank-order correlation between extent of clarification needed and helpfulness was –0.20 (95% CI [–0.33, –0.06]).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67995/elife-67995-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** A total of 820 experimental techniques were identified in the 193 experiments selected for replication at the start of the project. These techniques were coded into 48 sub-categories, which were grouped into four categories (cell assays; immunoassays; animal assays; molecular assays).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67995/elife-67995-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Fluctuation plots showing the coded ratings for the category of techniques used in the original experiments and the extent of clarification needed from the original authors by paper (A) and by experiment (B). Fluctuation plots showing the category of techniques and the helpfulness of the original authors by paper (C) and by experiment (D). The size of the square shows the number (Freq) of papers/experiments for each combination. The average number of categories used in the 193 experiments was 2.2 (SD = 0.7; range = 1–4). To characterize papers (N = 53), coded ratings were averaged across the experiments for each paper; the average number of categories used per paper was 2.9 (SD = 0.7; range = 1–4).
+
+### Preparing the Registered Report for peer review
 
 Depending on feedback and materials received from original authors, some protocols were easier to design than others. To design experiments with at least 0.80 power to detect the effect size reported in the original paper at p < .05 using two-tailed tests, we often needed a larger sample size for the replication than what was reported in the original experiment. As an illustration, the average sample size of animal experiments in the replication protocols (average = 30; SD = 16; median = 26; IQR = 18–41) were 25% higher than the sample size of the original experiments (average = 24; SD = 14; median = 22; IQR = 16–30). Also, some experiments proved challenging to complete, or were discontinued, due to delays and cost increases that emerged when the replications were being designed and/or conducted (e.g., when the original authors declined to share reagents, or it became clear that the material transfer agreement process was going to take a very long time (see Case study in Box 3)). This included discontinuing some viable experiments that were still near the start of the design phase to ensure that experiments that were further along in the process could be completed.
 
@@ -76,7 +595,7 @@ Ultimately, 32 Registered Reports covering 97 experiments were submitted for pee
 
 ## Challenges during experiments and peer review
 
-## The challenges encountered when conducting experiments
+### The challenges encountered when conducting experiments
 
 Once accepted as Registered Reports, experiments could begin in the replication labs. Despite often obtaining original materials and reagents and having fully specified and peer reviewed protocols, it was common that the preregistered procedure had to be modified to complete the experiments (see Case study in Box 4). Sometimes just minor modifications were needed (e.g., changing antibody concentrations or blocking reagents to detect the protein of interest during a Western blot assay). Sometimes moderate modifications were needed. In some cases, for example, despite attempts to adjust the conditions, we were still unable to produce the expected intermediate results (e.g., obtaining the desired transfection efficiency as indicated by a reporter system) and an additional protocol step, different reagent source, or change in instrumentation was needed (e.g., including an enrichment step, such as fluorescence-activated cell sorting [FACS], to increase the number of transfected cells). And in some cases extreme modifications to the preregistered procedure were needed. For example, in one case (Yan et al., 2019) the preregistered protocol did not result in the generation of tumors in mice that were needed for a downstream infection and tumorigenicity assay, so substantial changes had to be made to this protocol to proceed with the experiment (e.g., changing the source of the tumor cells, modifying the timing and technique of infection to achieve the desired transduction efficiency, and using a different technique to detect the molecule of interest).
 
@@ -92,7 +611,7 @@ Having original materials, a fully specified protocol, and peer review from expe
 
 Whatever the reason, all of these factors are barriers to replicability and causes of friction in efficiency of replication and discovery. Failures during implementation leave untested the original claim because the original experiment could not be carried out as described. That does not falsify the original claim because the replication does not test it. But, depending on the reasons for failure in implementation, it could raise doubt about the reliability of the claim if it seems that the original methodology could not have produced the reported outcomes either. For example, if the replication study suggests that the model system does not behave as reported in the original study, it could indicate a flaw in the original study or an unknown feature that is necessary to obtain the original behavior.
 
-## The challenges encountered during peer review of the Replication Studies
+### The challenges encountered during peer review of the Replication Studies
 
 In total, we completed 50 experiments from 23 of the original papers (Table 1). This means that no experiments were completed for six of the original papers for which Registered Reports were published. For 18 of the original papers we were able to complete all experiments described in the Registered Report, so for each of these we prepared and submitted a Replication Study that reported the results of the completed experiments. For five of the original papers we were only able to complete some of the experiments described in the Registered Report: in these cases the results of the completed experiments were reported in an aggregate paper (Errington et al., 2021a).
 
@@ -104,7 +623,7 @@ During peer review of the Replication Study, the authors and reviewers observe t
 
 This mostly occurred as intended in this project. Of the 18 Replication Studies submitted to eLife, 17 were accepted and one was rejected. The rejected Replication Study was posted as a preprint (Pelech et al., 2021). eLife makes reviewer comments and author responses to reviews public with the published papers. Links to all published papers and reviewer comments are in Table 1. With rejection of one completed Replication Study, the Registered Reports model was mostly effective at eliminating publication bias against negative results (Allen and Mehler, 2019; Scheel et al., 2020). With peer review in advance, the Registered Reports model was effective at fostering precommitments among authors and reviewers to the replication experimental designs (Nosek and Errington, 2020b). And, as evidenced by the diversity of reactions in the open reviews and commentaries on the final Replication Studies, the Registered Reports model did not eliminate divergence and disagreement among researchers about the meaning and implications of the replication findings. As long as all outcomes are reported, such divergence after the fact may be productive for stimulating critical inquiry and generating hypotheses even when it is indicative of intransigence or motivated reasoning to preserve prior claims.
 
-## The duration of the different phases in the project
+### The duration of the different phases in the project
 
 On average the gap between paper selection and the submission of a Registered Report was 30 weeks (mean), and the gap between submission and acceptance for publication was 19 weeks (Figure 4). It then took an average of 12 weeks to prepare experiments for data collection. The gap between the start of experimental work and final data delivery was 90 weeks, and another 24 weeks were needed to analyse the data and write the Replication Study. The gap between submission of the Replication Study and acceptance for publication was 22 weeks. On average the process took 197 weeks.
 
@@ -128,13 +647,13 @@ If the published literature were highly credible, and if false starts were effic
 
 Fundamentally, the problem with practical barriers to assessing replicability and reproducibility is that it increases uncertainty in the credibility of scientific claims. Are we building on solid foundations? Do we know what we think we know? Assessing replicability and reproducibility are important mechanisms for identifying whether findings are credible, for clarifying boundary conditions on circumscribed findings, and for generalizing findings to untested circumstances (Nosek and Errington, 2020a). There are open questions about the appropriate distribution of resource investment between innovation and verification efforts. Here, for example, though costs increased because of the unexpected impediments, the final cost per experiment of approximately $53,000 might be seen as comparatively modest compared to the losses incurred by follow-on research for findings that are unreplicable or much more limited than initially believed. DARPA’s Friend or Foe program might be a case in point in which a portion of the program budget is invested in independent verification and validation (Raphael et al., 2020). In any case, an efficient science would not impose unnecessary practical barriers to verification just as it should not impose unnecessary practical barriers to innovation. We can do better. Fortunately, there are mechanisms that could greatly enhance the ability to assess whether reported findings are credible, and reduce the barriers to verification efforts more generally. Moreover, some mechanisms are in practice already demonstrating their feasibility for broad implementation.
 
-## Improving documentation and reporting
+### Improving documentation and reporting
 
 Reading the paper and supplementary materials was sufficient to design the replication study for none of the 193 experiments. Lack of interest or attention to methods, space constraints, and an absence of standards may all contribute to weaknesses in documentation of how the research was done. Better reporting will improve research efficiency by helping authors and peer reviewers identify errors or other potential limitations. Better reporting will also improve research efficiency by helping readers who wish to replicate or extend the research to develop accurate experimental designs. Our sample of papers came from articles published between 2010 and 2012. Since then, some publishers have taken steps to improve reporting and standards have emerged to promote consistency, clarity, and accuracy (Marcus, 2016; Nature, 2013), and a coalition of publishers and other stakeholders are promoting minimum reporting standards for life science (Macleod et al., 2021). Also, increasing frequency of citation of data, materials, reagents, and antibodies highlights improving reporting standards (Han et al., 2017; Macleod, 2017).
 
 There is still a long way to go before strong reporting is normative (Baker et al., 2014; Gulin et al., 2015), but the efforts to establish reporting standards and requirements has positioned the community for significant improvement in making it possible to understand how the research was conducted (Glasziou et al., 2014; Macleod et al., 2014). A potential negative consequence of improving documentation and reporting is additional burden on researchers without compensatory benefits for actually improving research. Regardless of their benefits, implementations of reporting standards should make them easy and efficient to adopt and attentive to diminishing returns. The sweet spot of reporting standards is to provide sufficient structure, specificity, and support to make the research process transparent and simultaneously to avoid turning a good practice into just another bureaucratic burden.
 
-## Improving data, code, and materials transparency and sharing
+### Improving data, code, and materials transparency and sharing
 
 For many of the experiments we examined, we could not determine key details of the original results from the paper such as sample size, effect size, or variability. Data and code were almost never available in public repositories, and requests for sharing the original data mostly failed. It is not possible to assess reproducibility or robustness if data are not available. And, policies that data are to be made available “upon request” are recognized as ineffective (McNutt et al., 2016). One obvious reason is that such requests come long after the original researchers have moved on from the project, making the data difficult, impossible, or time-consuming to recover. Hundreds of journals have strengthened their policies to promote data and code sharing, and the rates of sharing are improving, if slowly (Camerer et al., 2018; Serghiou et al., 2021; Stodden et al., 2013; see journal transparency policies at https://topfactor.org). The infrastructure for sharing and archiving data and code has blossomed with domain-specific repositories for a wide variety of data types such as GenBank, Protein DataBank, and Cancer Imaging Archive, and emergence of metadata standards more generally (Wilkinson et al., 2016). Generalist repositories such as OSF, Zenodo, and Figshare offer archiving solutions for digital data of almost any kind.
 
@@ -142,7 +661,7 @@ Repositories are likewise available for sharing digital materials such as protoc
 
 Potential negative consequences of improved sharing can occur if the scholarly reward systems fail to catch up. At present, some researchers see risk and little reward for sharing because of lack of credit for doing so. Evidence suggests that there is more benefit than cost (McKiernan et al., 2016), but altering reward systems toward treating data, materials, and code as citable scholarly contributions will ease the perceived risks.
 
-## Improving preregistration of experiments and analysis plans
+### Improving preregistration of experiments and analysis plans
 
 Two key factors undermining the credibility and replicability of research are publication bias and questionable research practices like p-hacking. With publication bias, negative findings are much less likely to be reported than positive findings (Greenwald, 1975; Rosenthal, 1979). With questionable research practices, discretion in data analysis and selective reporting of outcomes can lead to intentional or unintentional manufacturing and reporting of positive outcomes that are more favorable for publication (Casadevall and Fang, 2012; Gelman and Loken, 2013; Ioannidis, 2005; John et al., 2012; Kaplan and Irvin, 2015; van der Naald et al., 2020; Simmons et al., 2011). These lead to a biased literature with exaggerated claims and incredible evidence (Begley and Ellis, 2012; Open Science Collaboration, 2015; Prinz et al., 2011; Smaldino and McElreath, 2016).
 
@@ -152,7 +671,7 @@ Preregistration is still relatively rare in basic and preclinical research in th
 
 Like improving reporting standards, a potential risk of preregistration is creating bureaucratic burden that does not exceed the benefits of instituting the process. Technology supporting preregistration can minimize that burden with efficient workflows that researchers perceive as supporting effective research planning rather than imposing reporting burdens. Also, misperceptions that preregistration discourages exploratory or discovery oriented research could interfere with effective adoption and application. As such, education and training are essential components of effective adoption.
 
-## Improving rigor, reporting, and incentives with Registered Reports
+### Improving rigor, reporting, and incentives with Registered Reports
 
 All replication studies were peer reviewed at eLife prior to conducting the research, a publishing model called Registered Reports. With Registered Reports, expert critique improves experimental designs before they are conducted rather than just pointing out the errors and problems after the work is completed. Preregistration is built into the process eliminating publication bias and providing a clear distinction between planned analyses and exploratory discoveries. Publication decisions are made based on the importance of the research question and the quality of the methodology proposed to test the question, not whether the observed outcomes are exciting or as expected. Incentives for exciting findings, regardless of credibility, are removed. Researchers are instead incentivized to ask important questions and design creative and compelling tests of those questions (Chambers, 2019).
 
@@ -160,7 +679,7 @@ As of late 2021, more than 300 journals have adopted Registered Reports as a sub
 
 Some funders and journals are conducting partnerships via Registered Reports in which a single peer review process results in in-principle acceptance of the paper and funding to conduct the experiments such as programs sponsored by the Children’s Tumor Foundation (https://www.ctf.org/research/drug-discovery-initiative-registered-reports-ddirr) and The Flu Lab (https://cos.io/flulab/). This offers a compelling incentive alignment for researchers and opportunity for journals to receive and publish high-quality, funded projects and funders to maximize their return on investment by ensuring that funded studies don’t wind up in the file drawer. Like preregistration, a potential unintended negative consequence of Registered Reports is if the model shifts the culture away from valuing exploratory and discovery-oriented research. Ideally, both practices facilitate clarity of when research is testing versus generating hypotheses without fostering the perception that research progress can occur with one and without the other.
 
-## Improving incentives for replication
+### Improving incentives for replication
 
 With a research culture that prizes innovation and novelty, verification and replication gets pushed aside. Innovation without verification creates a fragile and fragmented evidence base that may slow the pace of knowledge accumulation (Chalmers et al., 2014). Replication is essential for advancing theory because it provides an opportunity to confront and refine current understanding (Nosek and Errington, 2020a). Investigations of the prevalence of replication studies in the published literature yield extremely low estimates in different disciplines (Makel and Plucker, 2014; Makel et al., 2012; Pridemore et al., 2018; Valentine et al., 2011). There is no known systematic investigation of the prevalence of replication studies in cancer biology, but like other fields – with a strong emphasis on innovation and novelty in cancer biology – there is little encouragement by journals or funders for proposing, conducting, or reporting replications. Without reward systems for replication research, it is unlikely that the near exclusive emphasis on innovation will be reduced.
 
@@ -178,17 +697,17 @@ We experienced substantial challenges when designing protocols to replicate expe
 
 ## Materials and methods
 
-## Paper and experiment selection strategy
+### Paper and experiment selection strategy
 
 50 papers published in 2010, 2011 or 2012 were selected as described in Errington et al., 2014. After the project started one paper was replaced because it contained sequencing and proteomic experiments and should not have been selected in the first place. During the course of the project, after contacting the original authors, we determined that it would not be feasible to conduct replications for three papers, so these papers were replaced.
 
 Experiments for replication were identified as described in Errington et al., 2014. Corresponding authors were contacted and shared the drafted replication protocols based on information from the original papers. Specific questions were highlighted including requests for original data, key materials that were identified, and protocol clarifications. We also asked for any additional information that could improve the quality of the replication attempt. Following initial author feedback, we shared replication protocols with research providers from the Science Exchange marketplace, which consists of a database of searchable scientific service providers that have been qualified and contracted under a standard already negotiated master services agreement. On average it took 6 days from placing requests to receiving a quote from replicating labs (median = 2 days; IQR = 1–8). In total 48 providers participated in the project (22 academic shared resource facilities and 26 contract research organizations [CROs]) by reviewing and contributing to replication protocols, including describing deviations from the original study (e.g., different instrumentation), and conducting the replication experiments themselves. Experimental designs and protocols were iterated based on comments and suggestions from original authors, when possible, and the replicating researchers. Experiments were then submitted as a Registered Report to eLife where it underwent peer review and if approved began experimentation. In all, 193 experiments were included in the project: 188 experiments were identified at the start of the project; three were added during peer review of the Registered Reports, and two were added following the exchange of comments and suggestions with original authors. At the same time, 83 experiments were dropped following exchanges with original authors. Of the 110 experiments that continued, 97 were included in Registered Reports that we submitted to eLife. The 29 Registered Reports that were accepted for publication included 87 experiments.
 
-## Coding
+### Coding
 
 Papers were coded for metadata and whether corresponding authors responded to any email requests. Experiments were coded on a number of variables from the papers, requests and input from the original authors, and information about the replication attempt. Experiments were linked to specific figures and tables in the original papers. Variables were coded as described in the data dictionary and figures, figure legends, main text, methods, and supplementary figures/tables were searched for the information. Variables about requests and input from the original authors were coded based on the protocol documents shared with original authors for input and the responses received and were either objective or subjective. Information about the replication attempts were coded based on objective features or our subjective experience of the process. For subjective variables coded responses were given according to a Likert scale with examples given in the main text to provide illustrations of the subjective coding. Data dictionaries describing all of the variables are available at https://osf.io/e5nvr/.
 
-## Statistical analysis and reporting
+### Statistical analysis and reporting
 
 Descriptive and exploratory statistics were used to analyze coded variables in R software (RRID:SCR_001905), version 4.0.3 (R Development Core Team, 2021). Figures 2—4 were generated using the ggplot2 (version 3.3.3) package. Exploratory analysis (Spearman rank-order correlation) was conducted after data were checked to ensure assumptions were met.
 

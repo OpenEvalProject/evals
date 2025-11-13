@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02zhqgq86 School of Biomedical Sciences, Li Ka Shing Faculty of Medicine, University of Hong Kong Hong Kong Hong Kong
+1. School of Biomedical Sciences, Li Ka Shing Faculty of Medicine, University of Hong Kong Hong Kong Hong Kong ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
 
 † Corresponding author
 

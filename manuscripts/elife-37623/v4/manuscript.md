@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.37623.001 Cellular redox status affects diverse cellular functions, including proliferation, protein homeostasis, and aging. Thus, individual differences in redox status can give rise to distinct sub-populations even among cells with identical genetic backgrounds. Here, we have created a novel methodology to track redox status at single cell resolution using the redox-sensitive probe Grx1-roGFP2. Our method allows identification and sorting of sub-populations with different oxidation levels in either the cytosol, mitochondria or peroxisomes. Using this approach, we defined a redox-dependent heterogeneity of yeast cells and characterized growth, as well as proteomic and transcriptomic profiles of distinctive redox subpopulations. We report that, starting in late logarithmic growth, cells of the same age have a bi-modal distribution of oxidation status. A comparative proteomic analysis between these populations identified three key proteins, Hsp30, Dhh1, and Pnc1, which affect basal oxidation levels and may serve as first line of defense proteins in redox homeostasis.
+Cellular redox status affects diverse cellular functions, including proliferation, protein homeostasis, and aging. Thus, individual differences in redox status can give rise to distinct sub-populations even among cells with identical genetic backgrounds. Here, we have created a novel methodology to track redox status at single cell resolution using the redox-sensitive probe Grx1-roGFP2. Our method allows identification and sorting of sub-populations with different oxidation levels in either the cytosol, mitochondria or peroxisomes. Using this approach, we defined a redox-dependent heterogeneity of yeast cells and characterized growth, as well as proteomic and transcriptomic profiles of distinctive redox subpopulations. We report that, starting in late logarithmic growth, cells of the same age have a bi-modal distribution of oxidation status. A comparative proteomic analysis between these populations identified three key proteins, Hsp30, Dhh1, and Pnc1, which affect basal oxidation levels and may serve as first line of defense proteins in redox homeostasis.
 
 ## Introduction
 
@@ -47,25 +47,45 @@ We also demonstrate that although the ratio between the oxidized and reduced yea
 
 ## Results
 
-## Flow cytometry based methodology provides a highly accurate way to monitor the subcellular redox status of individual yeast cells
+### Flow cytometry based methodology provides a highly accurate way to monitor the subcellular redox status of individual yeast cells
 
 Cellular redox status has been suggested to be correlated with cell function and longevity (Reverter-Branchat et al., 2004). Measurements of cellular oxidation levels tend to be based on a global assessment of protein oxidation and the cellular redox status of the entire cellular population (Kojer et al., 2012). Intrigued by the possible heterogeneity of wild type yeast cells’ oxidation levels, we developed a highly sensitive flow cytometry-based methodology to monitor and quantify the cellular redox status and sort out subpopulations of cells based on their oxidation levels.
 
 To do so, we utilized the redox sensitive GFP variant Grx1-roGFP2 (Figure 1A) (Morgan et al., 2011), which has a characteristic fluorescence according to a redox-dependent conformational change (Hanson et al., 2004) that leads to an alternating peak intensity at 405 and 488 nm. In order to verify Grx1-roGFP2 expression patterns in our yeast cells, we measured the fluorescence spectrum of cells between 360 and 495 nm, following emission at 535 nm using plate reader analysis, under either oxidizing or reducing conditions (Figure 1B). In agreement with previous studies, we identified the alternating peak pattern at 405 and 488 nm (Hanson et al., 2004), which indicates the differences in ratio between 405 and 488 nm under oxidizing or reducing conditions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig1-v4.jpg)
+
+**Figure 1.:** (A) Schematic of the Grx1-roGFP2 variant used in this study to monitor oxidation in the cytosol. Cellular GSSG reacts with the catalytic residues of the fused Grx1 which leads to oxidation of the modified GFP protein. (B) Fluorescence excitation spectra of Grx1-roGFP2 in fully reduced (blue) and fully oxidized (red) yeast cells. Emission followed at 510 nm. (C–D) Quantification of redox status of fully reduced (blue) and fully oxidized (red) cells using FACS. (C) Fluorescence of Grx1-roGFP2 at 510 nm obtained using excitation by 405mn and 488 nm lasers. (D) Distribution of the 405/488 nm ratios among fully reduced and fully oxidized cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative data of an unsorted sample after 24 hr growth, plotted by the ratio between excitation at 405 and 488 nm (y and x axis, respectively). ‘GFP’ corresponds with the ‘reduced’ gate, while ‘410’ corresponds with the oxidized. (B–C) Representative data of a fully oxidized or reduced sample (respectively).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig1-figsupp2-v4.jpg)
+
+**Figure 1—figure supplement 2.:** Quantification of the redox status of fully reduced (blue) and fully oxidized (red) cells using FACS, using the peroxisomal and mitochondrial sensors.
+
 To dissect cell-to-cell variation, we applied flow cytometry to quantify the ratiometric fluorescence intensity of individual cells in a population at 405 and 488 nm. First, we determined the degree of probe oxidation expressed in cells by measuring the differential Grx1-roGFP2 fluorescence under oxidative and reducing conditions (15 min treatment with 8 mM Diamide and 40 mM DTT, respectively) (Figure 1C,D), noting that the alternating peak pattern at 405 and 488 nm reflects a modestly different ratio than that identified using a plate reader (Figure 1B) rooted in the differences between the instruments (i.e. sensitivity), mode of measurement and live-cell diversity. To focus on living cells within a wild type (BY4741), untreated population, we gated out the dead cells and identified Grx1-roGFP2 negative cells, leaving only cells that had a fluorescence intensity at both 405 and 488 nm. The advantage of using the ratiometric approach is that the outcome does not depend on probe expression, which can vary with age and/or treatments. The 405/488 nm ratios of reduced and oxidized cells were significantly different and could be characterized using linear fits with a slope of 3.57 for oxidized and 0.6 for reduced cells (the correlation coefficients (R2) were 0.99 and 0.97 for oxidized and reduced cells, respectively) (Figure 1C,D). This approach enabled us to quantitatively determine a normalized value (OxD) which ranges from 0 (reduced) to 1 (oxidized), as described in the Materials and methods section, and to apply it to the quantification of the relative redox status of the cells.
 
 The discrete difference between the oxidized and reduced states enabled us to create gates for oxidized and reduced cells (Figure 1—figure supplement 1), such that we could sort and characterize yeast subpopulations according to their redox status. This approach was also applied to organelle-specific redox sensors, such as the mitochondrial Grx1-roGFP2-Su9 (Kojer et al., 2012) and the peroxisomal Grx1-roGFP2-SKL (Elbaz-Alon et al., 2014), revealing a similar redox sensitivity (Figure 1—figure supplement 2).
 
-## Defining redox-dependent heterogeneity in a chronologically aging population
+### Defining redox-dependent heterogeneity in a chronologically aging population
 
 The association between chronological aging and cellular oxidation has been explored in previous studies, with research indicating that older cells in a culture undergo changes in their cellular redox status (Herker et al., 2004; Brandes et al., 2013). To examine the ability of our flowcytometry-based method to monitor the age-related oxidation in yeast cells, we first used the cytosolic Grx1-roGFP2 redox sensor to evaluate the average glutathione-dependent cellular redox changes of the wild type yeast strain over four days of growth in standard medium enriched with casein digest under aerobic conditions (as described in Materials and methods). As expected, cellular oxidation increased with chronological age (Figure 2A). Interestingly, when using the mitochondrial matrix sensor (Grx1-roGFP2-Su9) on the same wild type strain, we identified a smaller age-dependent difference in mitochondrial versus cytosolic oxidation, suggesting a robustness of mitochondrial antioxidant behavior during chronological aging (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig2-v4.jpg)
+
+**Figure 2.:** Cells expressing cytosolic Grx1-roGFP2 (A) or mitochondrial Grx1-roGFP2-Su9 (B) probes in wild type cells were grown for four days and their oxidation level monitored. In each experiment 10,000 cells were measured. Shown are oxidation changes over four days in both the cytosol and mitochondria. (C) Bi-modal distribution of ratios of fluorescence intensities obtained at 405 and 488 nm in yeast samples of different ages (24, 48, 72, and 96 hr), pursuant to Figure 1D. A peak at ratio ≤1 represents the reduced subpopulation, while ≥6 represents the oxidized subpopulation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** Normalization was calculated using median fluorescence values of 10,000 DTT- and diamide-treated cells. This normalization masks the actual fluorescence of the average population and natural variation between different cells, leading to an imbalanced and non-representative OxD scale. However, the same curve trends may be seen as those displayed in the unbiased 405/488 nm ratios in Figure 2, with a bimodal distribution during chronological aging.
 
 Although the average cytosolic OxD clearly shows an age-dependent increase in oxidation, it does not give an indication of the potential heterogeneity among cells of the same age. When we examined the distribution of the fluorescence intensity ratios of Grx1-roGFP2 (at 405 and 488 nm) over four days of growth under chronological aging conditions (24, 48, 72, 96 hr), we found a clear bi-modal distribution of reduced and oxidized subpopulations (Figure 2C). As the culture aged, the fraction of reduced cells decreased while the fraction of oxidized cells increased. This fraction comprised of higher 405/488 nm ratios as compared to the distribution shown in Figure 1D, reflecting the natural, average signal in an untreated cell which largely corresponds with the ‘oxidized’ gate, yet has a unique expression pattern. Notably, the largest shift from reduction to oxidation occurs after 48 hr of growth. Thus, we were able to monitor the time-dependent shift from reduced to oxidized subpopulations as the yeast cells aged. However, we noted that a majority of cells remained reduced over time, suggesting that despite the culture being in the stationary phase, some cells nonetheless undergo replication and produce reduced cells.
 
 It is important to note that while the average OxD serves as a useful metric by which to analyze yeast populations by flow cytometry, its value diminishes somewhat on an individual, cell-to-cell scale. Unlike whole population averages or microscopy-based individual-cell assessments, the OxD value is not as sensitive to smaller deviations for individual cells within a population (Figure 2—figure supplement 1). This is largely due to the difficulty in normalization of individual cells using fluorescence values derived from an average oxidized/reduced population, rather than comparison to a single cell (which would not be mathematically representative). As a result, this normalization masks cell-to-cell variability, resulting in inflated scales (e.g., 150% oxidation). Despite the limitations of using OxD normalization for individual cells of this kind, the distribution shape remains constant.
 
-## Growth differences between the reduced and oxidized subpopulations
+### Growth differences between the reduced and oxidized subpopulations
 
 Our original expectation, based on the current consensus, was of a gradual increase in the cellular oxidation status of all cells, thus we were intrigued by the observed bi-modal distribution. We decided to characterize in greater detail the reduced and oxidized subpopulations of aging cells, utilizing the previously described predefined flow cytometry gates to isolate these subpopulations by fluorescence activated cell sorting (FACS). The sorted cell subpopulations (reduced and oxidized) were divided into three samples, in order to: monitor growth rate, quantify division events, and conduct proteomic and transcriptomic analyses. This process was repeated at least three times in order to provide biological replicates. Due to the low number of oxidized cells obtained after 24 hr growth, we focused on cultures aged 48, 72 and 96 hr.
 
@@ -79,7 +99,38 @@ The differences in the growth rates were further supported by a difference in th
 
 Furthermore, the oxidized subpopulation displayed a far lower budding rate relative to the reduced subpopulation, in which approximately 30% of cells at 48 hr were observed to be in the process of budding (Table 1). These results suggest a correlation between the degree of cellular oxidation and division events in the stationary stage.
 
-## Reduced subpopulation has an increased oxygen consumption rate
+**Table 1.**
+ Number of budding events
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Growth (h)</th>
+      <th>Oxidized (%)</th>
+      <th>Reduced (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>48</td>
+      <td>10</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>9</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>6</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reduced subpopulation has an increased oxygen consumption rate
 
 To evaluate differences in the metabolic capacity between the reduced and oxidized subpopulations, we measured the oxygen consumption rate (OCR) and extracellular acidification rate (ECAR), a surrogate measure of lactate production, for each isolated subpopulation. The number of cells was equal in each sample and three biological replicates were analyzed. The OCR of the oxidized cells was consistently 1.8–2 fold lower than the reduced population (Figure 4A), while their ECAR rate was 2–2.8 fold higher (Figure 4B), suggesting a strong shift from oxidative phosphorylation to glycolysis reminiscent of the Warburg effect in the oxidized subpopulation. Decreased oxygen consumption is strongly correlated with decreased cell growth of the oxidized subpopulation as compared to the reduced subpopulation.
 
@@ -87,7 +138,7 @@ To evaluate differences in the metabolic capacity between the reduced and oxidiz
 
 **Figure 4.:** (A) Normalized oxygen consumption rate (OCR) of reduced and oxidized yeast populations. (B) Normalized extracellular acidification rate (ECAR) of reduced and oxidized yeast populations. Three biological replicates with an identical number of cells were analyzed for each measurement.
 
-## Cellular oxidation correlates with replicative aging but does not exclusively depend on it
+### Cellular oxidation correlates with replicative aging but does not exclusively depend on it
 
 Intrigued by the differences in replication between the two subpopulations, we sought to investigate the correlation between age and redox status more closely, with a focus on the replicative life span (RLS) aging model. Using this model, we tracked cell division events according to changes in budding scars and compared the redox status of aged cells.
 
@@ -107,13 +158,27 @@ Together, these results strengthen the correlation described earlier between the
 
 Furthermore, we observe a shift in the redox ratio between the subpopulation of highly divided cells at early growth as compared to late growth, while the degree of cell divisions itself (as identified by Texas Red-X intensity) does not change. This points to additional redox changes unrelated to division and replicative events, correlated instead with chronological aging.
 
-## Comparison of proteome profiles of the reduced and oxidized subpopulations
+### Comparison of proteome profiles of the reduced and oxidized subpopulations
 
 In order to further characterize the oxidized and reduced subpopulations of cells, we utilized mass spectrometry to profile the proteome of these subpopulations after 48 and 72 hr of growth. Three biological replicates of each sample group were collected, lysed, trypsin-digested and analyzed by liquid-chromatography-mass spectrometry. Using MaxQuant analysis and a stringent filter, we identified 3389 proteins, of which 1019 were identified in all four subpopulations at least twice (Supplementary file 2). According to the Uniprot-based cellular localization annotation, the majority of our identified proteins were cytosolic (51%), where the remaining proteins were associated with the mitochondria (16%), nucleus (19%), ER (6%), Golgi vesicles (4%), vacuole (3%), stress granules, P-bodies (0.7%) and peroxisomes (1%) (Supplementary file 2, Figure 6—figure supplement 1). This is consistent with general distributions of yeast proteins (47% cytosol, 15% mitochondria and 13% ER and secretory vesicles [Kumar et al., 2002]) suggesting that no dramatic expansion or shrinking of an organelle occurred during the experiment.
 
 To obtain further insights into the global changes in the proteome profile of the oxidized and reduced subpopulations, we utilized label-free quantification (LFQ) (Cox and Mann, 2008) to compare expression of the identified proteins between the sample groups. Clustering of average LFQ intensities for all sample groups revealed that the protein expression profiles were similar between groups with a similar redox status, regardless of the sample age (48 or 72 hr) (Figure 6A and Figure 6—figure supplement 2). The two largest clusters, comprising more than 600 proteins, showed that the differential expression between oxidized and reduced subpopulations remained consistent for over two days (Figure 6A, clusters 3 and 10, Supplementary file 2). Annotation enrichment analysis of the proteins comprising these two clusters suggested that the reduced cells (48 and 72 hr) had an increased presence of proteins involved in energy production, including mitochondrial proteins, protein biogenesis and protein degradation (Figure 6B). This corresponds with our previous finding that the reduced subpopulation had an elevated growth rate and was in the process of division. The oxidized cells had a distinct subset of proteins regulating protein folding and redox homeostasis, alongside oxidoreductases and NAD binding proteins (Figure 6B).
 
-## Differences in the levels of specific proteins between the reduced and oxidized cell subpopulations
+![Figure 6.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig6-v4.jpg)
+
+**Figure 6.:** (A) Hierarchical clustering of proteins identified in cells sorted from cultures at different time points (48 and 72 hr); downregulated proteins are in green, up-regulated are in red. (B) Functional enrichment analysis of the two largest differentially expressed clusters (3 and 10, representing enriched functions in the reduced and oxidized subpopulations, respectively) at 48 and 72 hr (solid fill and slashes, respectively). (C) Volcano plot of differentially expressed proteins between the reduced and oxidized subpopulations. Significantly expressed proteins are labeled in blue (increased expression in reduced) and red (increased expression in oxidized), according to an FDR of 0.05 and a fold change greater than 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig6-figsupp1-v4.jpg)
+
+**Figure 6—figure supplement 1.:** Annotation of all identified proteins, corresponding with the localization as agreed upon in the literature.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig6-figsupp2-v4.jpg)
+
+**Figure 6—figure supplement 2.:** log2 values of the log2 (LFQ) values of proteins identified in each post-sorting samples harvested at 48 and 72 hr (red corresponding to higher expression, green to lower). Median intensities were calculated and clustered in Figure 5A.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig6-figsupp3-v4.jpg)
+
+### Differences in the levels of specific proteins between the reduced and oxidized cell subpopulations
 
 One of the big unanswered questions arising from our data is how cells of the same chronological age co-exist at different oxidation levels. To identify potential key proteins mediating the redox status of cells, we applied a stringent T-test analysis (false detection rate [FDR]=0.05) to compare protein expression in the oxidized and reduced populations of the same age. We identified a subset of 199 proteins showing statistically significant different expression profiles between the reduced and oxidized populations after 48 hr growth and 149 proteins after 72 hr growth (Figure 6C, Supplementary files 3 and 4). Annotation enrichment analysis showed a similar functional classification for clusters 3 and 10 in Figure 6 (Figure 6—figure supplement 3), suggesting that the reduced cells were more metabolically active, expressing higher levels of mitochondrial and carbon metabolism proteins than the oxidized subpopulation. We hypothesized that clustered proteins might belong to a common pathway which would be significantly up- or down-regulated in a redox-dependent manner. Hence, to identify potential protein-protein interactions within the subset of differentially expressed proteins, we used the STRING protein interaction database (Szklarczyk et al., 2017) to characterize the possible interaction networks between these proteins. We obtained numerous clusters of potential interactions between our identified, differentially expressed proteins, associated with protein translation, mitochondrial activity, and stress response (Figure 7—figure supplement 1).
 
@@ -121,13 +186,49 @@ Specifically, the proteome of the oxidized cells contained significant upregulat
 
 Moreover, elevated levels of cytosolic catalase T (Ctt1) and mitochondrial glutaredoxin (Grx2) were detected in the reduced subpopulation, likely preserving the reduced state of these cells. We also identified the upregulation of several proteins that have been linked to increased longevity, such as Dld1 and Gut2 (Easlon et al., 2008), implying that the redox-dependent expression of these proteins may play an active role in cellular lifespans. Intriguingly, the reduced cells showed increased expression levels of proteins associated with stress granules and stress response, such as stress-induced heat shock proteins: Hsp30, Hsp70-type chaperone Ssb1, its ATP exchange factor, Sse2, disaggregase Hsp78, as well as the RNA metabolism proteins: DEAD-box helicase Dhh1, pre-mRNA cleavage protein Hrp1, translational factor Prt1, exonuclease Xrn1 and others (Figure 7—figure supplement 1, Supplementary files 3 and 4). One intriguing possibility is that these proteins serve as a first line of defense against oxidation, such that their expression prevents further cellular oxidation.
 
-## The potential impact of Hsp30, Dhh1 and Pnc1 on cellular redox status
+### The potential impact of Hsp30, Dhh1 and Pnc1 on cellular redox status
 
 To verify our proteomic analysis and identify potential first line of defense redox proteins, we focused on four selected candidates whose expression significantly increased either in the reduced cells – heat shock protein 30 (Hsp30) and helicase Dhh1 - or in the oxidized cells - thioredoxin peroxidase Tsa2 and nicotinamidase Pnc1. All four proteins have been found to be associated (based on the STRING database) with other significantly differentially expressed proteins identified in our proteomic analysis (Figure 7—figure supplement 1A–C).
 
 To examine the contribution of these selected proteins to the average glutathione-dependent cellular redox status during 72 hr growth, we measured redox levels using the cytosolic Grx1-roGFP2 sensor in the wild type strain, as well as in four knockout strains: ∆tsa2, ∆dhh1, ∆pnc1 and ∆hsp30. Notably, we found that ∆dhh1 and ∆hsp30 were significantly more oxidized than the wild type over 72 hr (Figure 7A, p-values of the t-test are in Supplementary file 6). Both proteins were found to be upregulated in the reduced subpopulation, suggesting that they may play a role in redox regulation pathway mediation. Consistent with previously published studies, the Tsa2 knockout had no significant effect on cellular oxidation (Park et al., 2000) (Figure 7A, Supplementary file 6). However, deletion of the nicotinamidase Pnc1, which was found to be upregulated in the oxidized cells, led to a more reduced environment than in wild type cells, specifically after 48 hr of growth (Figure 7A, Supplementary file 6). This corresponds with our proteomic analysis and also suggests that Pnc1 may be a potential effector of redox homeostasis.
 
 In addition to their contribution to the average cellular redox status, we examined the impact Hsp30, Dhh1, and Pnc1 have on individual cell growth. ∆dhh1, ∆pnc1 and ∆hsp30 deletion strains were grown to 48 hr and monitored using confocal microscopy (as described in Materials and methods). Here, we found ∆dhh1 to be under considerable stress from the onset, with a weaker fluorescent expression and a significantly higher rate of apoptosis as compared to the other strains (Mazzoni et al., 2003). Growth rate and replication were similarly stunted in comparison with the other strains (Duan et al., 2013; Marek and Korona, 2013), in addition to differences in the general appearance of the cells (which were larger and more oval) (Tseng-Rogenski et al., 2003) (Figure 7B). Furthermore, we observed a distinct increase in vacuole size in the ∆dhh1 strain, suggesting Dhh1’s role in regulating vacuolar traffic (Chan and Marshall, 2014). In comparison, neither ∆pnc1 nor ∆hsp30 display any change in replication or growth (Figure 6—figure supplement 3), indeed surpassing the wild type in number of cells after 6 hr growth (Videos 1–4). Despite no seemingly beneficial impact on their growth rate, both ∆pnc1 and ∆hsp30 display some phenotypic change in regards to size and texture. ∆pnc1 cells on average present as slightly smaller than the wild type, while ∆hsp30 are on average slightly larger than the wild type, yet reproduce at a similar rate. Both ∆pnc1 and ∆hsp30, meanwhile, display small, granule-like clusters within the cell, which may be identified as yeast lipid droplets (Wang et al., 2014). Together, these results suggest that deletion of the redox-related proteins affects more than just the average redox status, and is worth further investigation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig7-v4.jpg)
+
+**Figure 7.:** (A) Oxidation levels in deletion strains of significantly changed proteins (∆tsa2, ∆dhh1, ∆pnc1, ∆hsp30, and wild type control) at different ages (24, 48, and 72 hr). (B) Differences in cell growth between deletion strains. ∆dhh1 has clearly enlarged vacuoles as compared to other strains (emphasized), while ∆pnc1 is uniquely small in comparison with the wild type. ∆hsp30 presents largely similar to the wild type, with bimodal variation between different cells. (C–F) Distribution of fluorescence intensity ratios obtained at 405 and 488 nm of deletion strains. (C) Distribution of ∆tsa2, which follows a wild type-like gradual shift towards more highly oxidized ratios. (D) Distribution of ∆dhh1, which begins from a slightly higher redox ratio and undergoes a collapse at 72 hr. (E) Distribution of ∆pnc1, a protein upregulated in the oxidized subpopulation, which remains highly reduced as compared to the wild type. (F) Bi-modal distribution of ∆hsp30, with little variation over time.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig7-figsupp1-v4.jpg)
+
+**Figure 7—figure supplement 1.:** Protein associations are based on the STRING database (as of January 2017), under the highest confidence interaction and default active interaction sources. Visualization was done by using Cytoscape. (D) Average OxD values of Hsp30-associated gene deletion strains at 24 and 48 hr.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig7-figsupp2-v4.jpg)
+
+**Figure 7—figure supplement 2.:** Minimal doubling times of wild type and deletion strains (Δdhh1, Δhsp30, Δpnc1) grown for 16 hr in casein supplemented medium, OD600 was measured in plate reader as described in Materials and methods. Hsp30 and Pnc1 deletion did not affect growth of cells relative to the wild type.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig7-figsupp3-v4.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Degree of mitochondrial oxidation (OxD) in yeast samples of different ages (24 and 48 hr), (B-D) Distribution of fluorescence intensity ratios obtained at 405 and 488 nm of wild type (B), Δhsp30 (C) and Δpnc1 (D) strains from different ages (24 and 48 hr). The analysis was done using 4–6 replicates. The Δdhh1 strain showed very low intensity fluorescence, therefore was not analyzed. Moreover, the Su9-GFP florescence deceased dramatically after 48 hr growth, therefore older samples were not analyzed.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig7-figsupp4-v4.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Degree of peroxisomal oxidation (OxD) in yeast samples after growth in standard medium for 24 hr. The analysis was done using 5–6 replicates. (B-E) Distribution of fluorescence intensity ratios obtained at 405 nm and 488 nm of wild type (B), Δdhh1 (C) Δhsp30 (D) and Δpnc1 (E) strains. The analysis was done using three replicates. The Δdhh1 strain showed very low intensity fluorescence, therefore was not analyzed. Moreover, the SKL-GFP florescence reached maximal value after 48 hr growth in all strains, therefore older samples were not analyzed.
+
+![Video 1.](https://cdn.elifesciences.org/articles/37623/elife-37623-video1.mp4.jpg)
+
+**Video 1.:** The wild type cells were grown at 30°C on synthetic media for six hours and images were taken every five minutes using time-lapse confocal microscope as described in the Materials and methods part.
+
+![Video 2.](https://cdn.elifesciences.org/articles/37623/elife-37623-video2.mp4.jpg)
+
+**Video 2.:** The wild type cells were grown at 30°C on synthetic media for six hours and imageswere taken every five minutes using time-lapse confocal microscope as described in the Materials and methods part.
+
+![Video 3.](https://cdn.elifesciences.org/articles/37623/elife-37623-video3.mp4.jpg)
+
+**Video 3.:** The wild type cells were grown at 30°C on synthetic media for six hours and imageswere taken every five minutes using time-lapse confocal microscope as described in the Materials and methods part.
+
+![Video 4.](https://cdn.elifesciences.org/articles/37623/elife-37623-video4.mp4.jpg)
+
+**Video 4.:** The wild type cells were grown at 30°C on synthetic media for six hours and imageswere taken every five minutes using time-lapse confocal microscope as described in the Materials and methods part.
 
 We then examined the distribution of cellular oxidation levels within the knockout strain populations, to evaluate the potential effect of Dhh1, Hsp30 and Pnc1 on redox-dependent heterogeneity during chronological aging (Figure 7C–F). For comparison, we used the ∆tsa2 variant that showed wild type-like OxD levels (Figure 7A). As expected, we observed a gradual shift from the lower (reduced) ratios to more oxidized ratios in the wild type-like ∆tsa2 (Figure 7C). Interestingly, ∆dhh1 displayed a strong shift towards higher, more oxidized 405/488 nm ratios from early growth (24 hr), with a clear collapse at 72 hr alongside a significant decrease in living cells (Figure 7D). Conversely, ∆pnc1 remained largely the same over time, with little change in the dominant fraction of the reduced subpopulation (Figure 7E). Finally, ∆hsp30 displayed a unique bimodal distribution that changed little over time, explaining its relatively unchanged, moderately high OxD values (Figure 7F).
 
@@ -137,11 +238,23 @@ Moreover, mitochondrial and peroxisomal oxidation was characterized for ∆pnc1 
 
 Together, these results point towards the potential different roles some of the identified proteins in our screen may contribute to glutathione-dependent redox homeostasis, suggesting distinct modes of altering cellular redox state. More specifically, we have identified three proteins that, when knocked out, produce unique oxidation distribution patterns as compared to the wild type. Further investigation regarding their GSSG/GSH levels, particularly in ∆dhh1 with its enlarged vacuoles (Morgan et al., 2013), would provide greater insight into the mechanism of oxidation/reduction within each strain.
 
-## A differential transcriptome profile of the reduced and oxidized subpopulations
+### A differential transcriptome profile of the reduced and oxidized subpopulations
 
 To examine coupling between protein and transcript abundance, we conducted a transcriptomic analysis of three biological replicates of the isolated reduced and oxidized subpopulations at 48 and 72 hr. We identified 4949 genes in the reduced sample and 5027 genes in the oxidized samples (Supplementary file 6, 7).
 
 As expected from the proteomic analysis, global changes in the transcriptome were redox- rather than age-dependent (Figure 8A,B, and Figure 7—figure supplement 4). Annotation analysis of the differentially expressed transcripts (defined by an at least two-fold change with FDR < 0.05) (Supplementary files 8–11) showed relatively similar functional distributions across transcripts from samples of the same age, which correlates well with the annotation of the abundant proteins in these samples. Specifically, the reduced cells had upregulated carbon metabolism and TCA cycle activity. Interestingly, the transcriptomic analysis showed that expression of genes involved in lipid biosynthesis and peroxisomal function were upregulated. This function was missing from the proteomic analysis, most probably due to low total abundance of peroxisomal proteins (~1%).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig8-v4.jpg)
+
+**Figure 8.:** (A) Hierarchical clustering of the median expression values of all differentially expressed genes (FDR < 0.05) identified in the post-sorting cells harvested at different time points (48 and 72 hr); downregulated transcripts are in green, up-regulated are in red. Each row was normalized by its median and the log2 value was taken for visualization purposes. The data was clustered using a centered correlation similarity metric. (B) Functional enrichment analysis of the differentially expressed transcripts in the reduced (blue) and oxidized (red) subpopulations harvested after 48 hr (solid bars) and 72 hr (solid fill and slashes, respectively). (C) Correlation plot between mRNA and protein expression at 48 hr. Significantly differentially regulated proteins are emphasized in bold and color according to their coupling status (bright red – coupled upregulation in oxidized subpopulation, dark red – uncoupled protein upregulation in oxidized subpopulation, blue – coupled upregulation in reduced subpopulation, purple – uncoupled protein upregulation in reduced subpopulation). (D) The mean value of normalized counts (log2) is plotted for each gene. Each point is colored according to the adjusted value of the differential expression analysis (Materials amd methods). Hsp30, Yro2 and Tsa2 were significantly upregulated in the oxidized cells.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig8-figsupp1-v4.jpg)
+
+**Figure 8—figure supplement 1.:** Transcripts above the median value of the row are in green, below in red. Each row was normalized by its median and log was taken for visualization purposes. The data was clustered using centered correlation similarity metric.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/37623/elife-37623-fig8-figsupp2-v4.jpg)
+
+**Figure 8—figure supplement 2.:** Significantly differentially regulated proteins are emphasized in bold and color according to their coupling status (bright red – coupled upregulation in oxidized subpopulation, dark red – uncoupled protein upregulation in oxidized subpopulation, blue – coupled upregulation in reduced subpopulation, purple – uncoupled protein upregulation in reduced subpopulation). Values that fall on the axis reflect transcripts that were present in only one population leading to an infinite fold change, here replaced with ‘zero’.
 
 In examining the general correlation between the transcriptomic and proteomic analysis at 48 and 72 hr (Figure 8C, Figure 8—figure supplement 1), we find that while there is a global correlation in the trend (Figure 8C, Figure 8—figure supplement 1), there are multiple examples of uncoupling in significantly differentially regulated protein and mRNA expression (Figure 8C, Figure 8—figure supplement 1, dark red and purple bold circles). While other studies have shown that protein expression typically corresponds with mRNA expression, expression of transcripts involved in regulatory roles (Marguerat et al., 2012) and aging (Janssens et al., 2015; Wei et al., 2015) have been found to partially decouple.
 
@@ -149,7 +262,7 @@ One of the intriguing examples is Hsp30 and its homologue, Yro2. Although protei
 
 As shown previously, Hsp30 is a potential ‘redox keeper’; its deletion leads to a bimodal redox distribution in cells, correlating with high protein levels in the reduced subpopulation. To further investigate the impact of Hsp30 and its associated proteins, Yro2, Hsp78 and Sse2 (Figure 8D), we examined oxidation levels of these protein knockout strains (Figure 7—figure supplement 1, Supplementary file 12). While Hsp30 had a significant impact on the redox status of cells, as we have already shown, its orthologue Yro2 did not. In addition, chaperones Hsp78 and Sse2, which showed no significant redox-dependent change in their transcript levels, had no influence on the cellular oxidation.
 
-## The transition from reduced to oxidized cellular state is a threshold-based event
+### The transition from reduced to oxidized cellular state is a threshold-based event
 
 To better understand the switch from reduced to oxidized, we tracked redox changes within individual cells in an attempt to identify how cells transition between these two distinct states.
 
@@ -167,7 +280,7 @@ Previous research has indicated that in cases of old mother cells with upwards o
 
 ## Discussion
 
-## Dissection of redox-dependent heterogeneity
+### Dissection of redox-dependent heterogeneity
 
 Phenotypic heterogeneity within genetically homogenous cell populations is considered one of the strategies for dealing with fluctuating environments and stress conditions (Elowitz et al., 2002; Maamar et al., 2007; Avery, 2006; Bishop et al., 2007). Studies in bacteria and yeast have revealed that cell-to-cell variation is encoded in the stochasticity of gene and protein expression in a normal or changing environment. Diverse mechanisms have been suggested, ranging from promoter activation and deactivation, the rate of mRNA and protein production, protein and gene modifications, and even metabolic exchange between cells (Campbell et al., 2016). The typical readout of these processes is diversity in protein expression leading to differential growth under standard or stress conditions.
 
@@ -175,7 +288,7 @@ Here, we identified a new type of glutathione-dependent heterogeneity, originati
 
 Our detection of the redox status of aging yeast cells was based on the cytosolic redox-dependent fluorescent probe, Grx1-roGFP2, which depends on GSH/GSSG levels. The roGFP probes are well-established indicators of in-vivo redox potentials in bacteria (van der Heijden and Finlay, 2015), C. elegans (Braeckman et al., 2016), yeast (Morgan et al., 2011), plants (Meyer et al., 2007), and mammals (Dooley et al., 2004), monitoring differences in oxidative stress under a range of diverse conditions. Measurements of roGFP fluorescence are generally based on microscopy imaging, quantifying the OxD values for each independently or, conversely, deriving an average OxD value for the entire population of suspended cells. While the first approach is able to evaluate cell-to-cell variability, it is time-consuming and arduous. In the latter approach, direct fluorescence measurement of a population is fast but not sensitive enough to detect natural variations within a defined population. Our utilization of FACS combines the advantages of fluorescence measurement at the level of the individual cell with a high throughput ability to isolate living cells according to their redox-related properties. Due to the robustness of the Grx1-roGFP2 sensor, the parameters used to define the oxidation gates to quantify the redox levels in the cytosol, mitochondria and peroxisome were very similar. The discrimination between reduced and oxidized cells was clear-cut, enabling rapid and convenient measurements of biologically different samples collected at different days and conditions. These oxidation gates can be applied to any population of yeast cells expressing the roGFP2 variants to define the contribution of a specific gene or condition on cytosolic redox status or in organelles. Measurements of this sort may thus be conducted on a larger scale using knockout-library arrays, ultimately scanning a wide range of mutations and their redox impact across several days. This may contribute to identifying key proteins serving as regulators of redox-dependent heterogeneity or as ‘redox switches’, defining the ability to respond to various forms of oxidative and environmental stress as well. More generally, this approach is not restricted to yeast and may be used in any cell type - from bacteria to mammals.
 
-## Identification of potential positive and negative glutathione-dependent modulators of redox homeostasis: Hsp30, Dhh1, and Pnc1
+### Identification of potential positive and negative glutathione-dependent modulators of redox homeostasis: Hsp30, Dhh1, and Pnc1
 
 In this study, we identified three proteins that had a significant impact on the redox status of yeast at early and late stages of chronological aging: two negative regulators, Hsp30 and Dhh1 that maintain a reducing environment, and one negative regulator, Pnc1, deletion of which decreases cellular oxidation.
 
@@ -189,7 +302,7 @@ In addition to Hsp30, we identified another potential ‘redox keeper’, a high
 
 In contrast to the positive effect of Dhh1 and Hsp30, the nicotinamidase Pnc1 was found to be upregulated in the oxidized cells. The null mutant had lower OxD levels than the wild type, suggesting that Pnc1 deficiency in cells with normal redox status might lead to reducing stress, while in oxidized cells its upregulation might have a different effect. Previous studies have shown that deletion of Pnc1 increases nicotinamide levels, which inhibit the histone deacetylase Sir2 and lead to apoptosis or a decrease in life span (Anderson et al., 2003; Belenky et al., 2007; Gallo et al., 2004). Thus, we propose that Pnc1 might serve as a link between increased reduced stress, nicotinase accumulation, and a decrease in cell viability.
 
-## Threshold-based mechanism and mother-daughter inheritance underline cellular oxidation
+### Threshold-based mechanism and mother-daughter inheritance underline cellular oxidation
 
 Until now it was believed that most oxidative stress comes from age-dependent damage or genetic alterations. However, an intriguing observation of our study is that there were cells with increased OxD values but no division scars in a genetically identical population. To understand the source of oxidation of these ‘newly born’ oxidized cells, we decided to monitor changes in the cellular oxidation utilizing real-time imaging over 12 hr. When examining the distribution of oxidation levels across 12 hr, as expected, we found a clear decrease in the number of reduced cells over time, with the peak shifting towards oxidized, Grx1-roGFP2-negative and damaged cells. Notably, the redox status of cells fluctuated with time, suggesting the activity of a self-repair mechanism until a specific threshold is reached, approximately 70% of maximal oxidation; above this threshold, cells remain permanently oxidized. Analysis of the daughter cells revealed that their oxidation level was identical to that of their mother cells, lasting for several hours ‘after birth’. Since the oxidized state received by the daughter cells from the mother is maintained for several hours, and thus exceeds their duplication time, we suspect it is a regulated mechanism and not simple diffusion of the Grx1-roGFP2 sensor with predefined oxidation.
 
@@ -197,76 +310,88 @@ In the future, it would be interesting to characterize modulators of this intrin
 
 ## Materials and methods
 
-## Yeast strains, growth conditions and Grx1-roGFP2 probes
+### Yeast strains, growth conditions and Grx1-roGFP2 probes
 
 The S. cerevisiae strains used in this study was the haploid wild-type (BY4741; MATα, leu2Δ3 his3Δ1 met15Δ0 ura3-0),as well as BY4741 deletion strains made using the pFA6 KO plasmid (Longtine et al., 1998) provided by the Schuldiner laboratory. Additional strains with Mother Enrichment Program genetic modifications (Lindstrom and Gottschling, 2009) were provided by the Ravid laboratory. The strains were transformed with Grx1-roGFP2, Grx1-Su9-roGFP2, and Grx1-roGFP2-SKL probes (Elbaz-Alon et al., 2014) (kindly provided by Bruce Morgan and Maya Schuldiner, respectively) and grown overnight from plate on 2–4 ml minimal modified casein amino acid (described below) under aerobic conditions, supplemented with amino acids corresponding to plasmid selection. Cultures were then diluted to an OD600 of approximately 0.25 on 4–10 ml to ensure fresh growth and brought to their logarithmic phase of OD600 of approximately 0.75, which marked ‘time zero’. Samples were grown at 30°C under constant agitation. Transformations were refreshed every 2–3 weeks in an adapted version of the protocol from (Morgan et al., 2011).
 
-## Modified casein amino acid medium
+### Modified casein amino acid medium
 
 0.017% yeast nitrogen base (w/o amino acids and ammonium sulfate), 0.5% ammonium sulfate, 2% glucose, 0.2% casamino acid mix, 0.000004% Trp, 0.000005% Thr (amino acids to excess; subject to minor variation), 1% adenine in DDW.
 
-## Calculation of OxD
+### Calculation of OxD
 
-OxD (the degree of oxidation) was calculated directly from six measured intensities:OxDroGFP2=I405∗I488red−I405red∗I488I405∗I488red−I405∗I488ox+I405ox∗I488−I405redI488
+OxD (the degree of oxidation) was calculated directly from six measured intensities:
 
-This same equation can be rewritten using direct wavelength ratios:OxDroGFP2=R−Rred(Rox−R)+(R−Rred)
+$$
+OxD_{roGFP2}=\frac{I405∗I488_{red}−I405_{red}∗I488}{I405∗I488_{red}−I405∗I488_{ox}+I405_{ox}∗I488−I405_{red}I488}
+$$
+
+This same equation can be rewritten using direct wavelength ratios:
+
+$$
+OxD_{roGFP2}=\frac{R−R_{red}}{(R_{ox}−R)+(R−R_{red})}
+$$
 
 Normalization was conducted using the fluorescence intensities of the oxidized/reduced samples measured at 24 hr for all time points.
 
-Calculations of OxD under confocal microscopy was normalized according to surface area rather than total fluorescence. This is referred to as OxD*.OxD∗=Imean of area of cell−IredIox−Ired
+Calculations of OxD under confocal microscopy was normalized according to surface area rather than total fluorescence. This is referred to as OxD*.
 
-## Monitoring yeast growth
+$$
+OxD^{∗}=\frac{I_{mean of area of cell}−I_{red}}{I_{ox}−I_{red}}
+$$
+
+### Monitoring yeast growth
 
 Growth curves were conducted on sorted yeast samples using a TECAN Infinite 200 PRO series, using an adapted version of the protocol from (Morgan et al., 2011). Measurements were initiated using 4.5 million cells sorted according to their redox status. Yeast incubation and OD600 measurements, as well as minimal doubling times, were analyzed using MDTCalc. Minimum doubling time was assessed by first calculating the log10 value of each point during logarithmic growth, and then measuring the slope between each set of consecutive points. The value of this slope was then inverted (representing the minimal time it took the sample point to ‘double’), providing the minimal doubling time value.
 
-## Flow cytometry analysis of redox ratios and sorting
+### Flow cytometry analysis of redox ratios and sorting
 
 Yeast cells transformed with Grx1-roGFP2 probes and treated with 1:250 (1 μl) propidium iodide Sigma p4170 for 15 min (adapted from the protocol described by Ocampo at al [Ocampo and Barrientos, 2011]) were measured during their extended stationary phase every ~24 hr using no more than 1.0 OD600 (10 μl), suspended in 240 μl phosphate buffered saline (PBS x 1). Total oxidation and reduction of the cultures were determined through addition of 10 μl 1M dithiothreitol (DTT) (40 mM) and 10 μl 0.2M diamide (8 mM) to 230 μl PBS x 1. Flow cytometry analysis was performed using a sorting-equipped FACS Aria III flow cytometer, with 405, 488 and 531 nm lasers (BD Biosciences, San Jose, CA) and the flow cytometry data was analyzed using FACSDiva software (BD Biosciences). Voltage settings for the SSC, FSC, 405 nm and GFP channels were kept constant for all experiments. For maximal discrimination between reduced and oxidized Grx1-roGFP2, we used 2D dot plots with linear rather than log scales. Measurements were taken at 405 and 488 nm for OxD calculations and redox ratio, while dead cells were gated out using propidium iodide labeling (excitation at 531 nm and emission detected by a 660 nm filter). Each analyzed population had a sample size of 10,000 standard cells.
 
-## Sample preparation for mass spectrometry
+### Sample preparation for mass spectrometry
 
 Sorting was based on the redox ratio, using 9 million cells suspended in PBS. Cells were then lysed using 300 μl 0.2M NaOH and resuspended using a lysis buffer (100 mM DTT [15.425 mg DTT], 100 μl 1M Tris HCl pH 7.5, 100 μl SDS 20%, complete with DDW to 1 ml). Samples were then diluted using 400 μl of a urea buffer (8M urea in 0.1M Tris HCl pH 8.5), loaded onto a filter, and centrifuged for 10 min at 12,000 g following the standard FASP protocol (Wiśniewski et al., 2009). This process was repeated three times, with flow-through discarded, after which samples were incubated in the dark for 60 min with 0.5M iodoacetamide and urea buffer (final iodoacetamide concentration of 0.05M), under constant agitation (350 rpm, 25°C). Samples were then washed again three times with urea buffer and twice with digestion buffer (10% ACN, 25 mM Tris HCl pH 8.5), then centrifuged at 12,000 g for 8 min. Filters were transferred to a new collection tube, suspended in 300 μl of digestion buffer with 1 μl of trypsin (Promega), mixed for 1 min at 600 rpm, and left overnight at 350 rmp, 37°. Following digestion, samples were centrifuged for 10 min at 12,000 g.
 
 The peptide concentration was determined, after which the peptides were loaded onto stage tips in equal amounts. Stage tips were activated using 100 μl MS-grade methanol (100% MeOH) and centrifuged for 2 min at 2,000 g, after which they were cleaned with 100 μl of elution buffer (80% ACN, 0.1% formic acid) and centrifuged again for 2 min at 2,000 g. The stage tips were returned to their hydrophilic state by suspension in 100 μl of buffer A (0.1% HPLC-grade TFA) and centrifugation at 2,000 g for 2 min, repeated once. 10–30 μg of protein was then loaded per stage tip (as per protein preparation above), and centrifuged at 1,000 g for 2 min. Proteins were then washed twice with 100 μl buffer A at 1,000 g for 2 min and transferred to a new collection tube. Peptides were eluted using 60 μl buffer B (80% ACN, 0.1% HPLC-grade TFA) centrifuged at 250 g for 2 min, and another 30 μl buffer B centrifuged at 250 g for 2 min. Samples were then dried using a SpeedVac for 18 min at 1,300 rpm at 35°, after which they were dissolved in 6–12 μl of buffer A and prepared for tandem mass spectrometry analysis.
 
-## Nano-LC-MS/MS analysis
+### Nano-LC-MS/MS analysis
 
 The peptides were injected into a Nano Trap Column, 100 μm i.d. ×2 cm, packed with Acclaim PepMap100 C18, 5 μm, 100 Å (Thermo Scientific) for 8 min at flow 5 ul/min, and then separated on a C18 reverse-phase column coupled to the Nano electrospray, EASY-spray (PepMap, 75 mm x 50 cm, Thermo Scientific) at flow 300 nl/min using an Dionex Nano-HPLC system (Thermo Scientific) coupled online to Orbitrap Mass spectrometer, Q Exactive Plus (Thermo Scientific). To separate the peptides, the column was applied with a linear gradient with a flow rate of 300 nl/min at 35°C: from 1% to 35% in 100 min, from 35% to 55% in 43 min, from 55% to 90% in 5 min, and held at 90% for an additional 30 min, and then equilibrated at 1% for 20 min (solvent A is 0.1% formic acid, and solvent B is 80% acetonitrile, 0.1% formic acid). The Q Exactive was operated in a data-dependent mode. The survey scan range was set to 200 to 2000 m/z, with a resolution of 70,000 at m/z. Up to the 12 most abundant isotope patterns with a charge of ≥2 and less than seven were subjected to higher-energy collisional dissociation with a normalized collision energy of 28, an isolation window of 1.5 m/z, and a resolution of 17,500 at m/z. To limit repeated sequencing, dynamic exclusion of sequenced peptides was set to 60 s. Thresholds for ion injection time and ion target value were set to 70 ms and 3 × 106 for the survey scans and to 70 ms and 105 for the MS/MS scans. Only ions with ‘peptide preferable’ profile were analyzed for MS/MS. Data was acquired using Xcalibur software (Thermo Scientific). Column wash with 80% ACN for 40 min was carried out between each sample run to avoid potential carryover of the peptides.
 
-## Data analysis and statistics of the proteomic data
+### Data analysis and statistics of the proteomic data
 
 For protein identification and quantification, we used MaxQuant software (Cox and Mann, 2008), version 1.5.3.30. We used Andromeda search incorporated into MaxQuant to search for MS/MS spectra against the UniProtKB database of Saccharomyces cerevisiae proteome, (Uniprot release, Aug 2016). The identification allowed two missed cleavages. Enzyme specificity was set to trypsin, allowing N-terminal to proline cleavage and up to two miscleavages. Peptides had to have a minimum length of seven amino acids to be considered for identification. Carbamidomethylation was set as a fixed modification, and methionine oxidation was set as a variable modification. A false discovery rate (FDR) of 0.05 was applied at the peptide and protein levels. An initial precursor mass deviation of up to 4.5 ppm and fragment mass deviation up to 20 ppm were allowed. Only proteins identified by more than two peptides were considered. To quantify changes in protein expression we used the label-free quantification (LFQ) using the MaxQuant default parameters (Cox and Mann, 2008). For statistical and bioinformatic analysis, as well as for visualization, we used Perseus software (http://141.61.102.17/perseus_doku/doku.php?id = start). For functional enrichment analysis, the DAVID webserver (Huang et al., 2009) was used. The STRING server (http://string-db.org/) (Szklarczyk et al., 2015) was used to define protein interaction networks, which were visualized by using Cytoscape software (Shannon et al., 2003). Proteomic data was uploaded to the PRIDE database (Wang et al., 2012) with the dataset identifier PXD009443.
 
-## RNA purification for the transcriptomic analysis
+### RNA purification for the transcriptomic analysis
 
 Cells were incubated with Proteinase K (Epicentre MPRK092) and 1% SDS at 70°C to release the RNA. Cell debris was precipitated by centrifugation in the presence of KOAc precipitation solution. Finally, the RNA was purified from the supernatant using nucleic acid binding plates (UNIFILTER plates, catalog #7700–2810) and was stored with RNAse-inhibitor (Murine #M0314L) at −80°C.
 
-## 3’ RNA library preparation
+### 3’ RNA library preparation
 
 Total RNA (~20 ng per sample) was incubated with oligo-dT RT primers with a 7 bp barcode and a 8 bp UMI (Unique Molecular Identifier) at 72°C for 3 min and transferred immediately to ice. RT reaction was performed with SmartScribe enzyme (TaKaRa Lot# 1604343A) at 42°C for one hour followed by incubation at 70°C for 15 min. Barcoded samples were then pooled and purified using SPRI beads X1.2 (AMPure XP). DNA-RNA molecules were tagmented using Tn5 transposase (loaded with oligo TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG) and 0.2% SDS was used to strip off the Tn5 from the DNA, followed by a SPRI X2 clean up. NGS sequences were added to the tagmented DNA by PCR (KAPA HiFi HotStart ReadyMix 2X (KAPA Biosystems KM2605), 12 cycles). Finally, DNA was purified using X0.65 SPRI beads followed by X0.8 SPRI beads. The library was sequenced using Illumina NextSeq-500 sequencer.
 
-## RNA sequence analysis
+### RNA sequence analysis
 
 Reads were mapped to the yeast genome (sacCer3) using bowtie2 with default parameters (Langmead et al., 2009). Duplicated reads were filtered using UMI, to remove PCR bias. To estimate the expression level of each gene we counted the number of reads that mapped to the 3’ end of the gene (from 350 bp upstream to 200 bp downstream of TTS). The read counts in each sample were normalized to PPM (divided by the total number of reads and multiplied by 106). The P-value of the differential expression analysis was obtained as described by Anders and Huber (Anders and Huber, 2010), and corrected for multiple hypothesis testing using FDR. Transcriptomic data was uploaded to the GEO database (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE112997).
 
-## Imaging of the yeast cells
+### Imaging of the yeast cells
 
-## Microscopy used for Figure 2
+#### Microscopy used for Figure 2
 
 Yeast strains were grown on synthetic media without uracil for selection. Imaging was performed using ScanR automated inverted fluorescent microscope system (Olympus). Images of cells were obtained in 384-well plates at 24°C using a 60 × air lens (NA 0.9) with an ORCA-ER charge-coupled device camera (Hamamatsu). Images were acquired in the GFP channel (excitation filter 490/20 nm, emission filter 535/50 nm).
 
-## Confocal microscopy used for Figures 8–9
+#### Confocal microscopy used for Figures 8–9
 
 The yeast cells were grown with anti-fluorescent medium, supplemented with casein and amino acids corresponding to plasmid selection and filtered with 0.22 uM filters. Samples were grown overnight on anti-fluorescent medium diluted 1:10 and again 1:3 at OD600 of approximately 0.25. 500 μl of sample was then placed on sterile μ-slides (Ibidi, GmbH, Munich, Germany) coated with Concanavalin A (C2272 SIGMA) and incubated several minutes before taking out excess. Cells were observed using time-lapse confocal microscopy (Olympus FV-1200) with 405 and 488 nm lasers. Images were taken every 5–20 min for 6–12 hr while at 30°C and were analyzed using the ImageJ software.
 
-## Seahorse assay
+### Seahorse assay
 
 Samples were collected after sorting by centrifugation at 3,700 g for 5 min. The pellet was resuspended in synthetic media without uracil, supplemented with 2% glucose (Simpkins et al., 2016), and transferred into an eight welled Seahorse XFp Flux Analyzer Miniplates (Seahorse Bioscience) coated previously with Concanavalin A (Sigma-Aldrich). Each well was loaded with 3*106 cells and miniplates were centrifuged at 50 g for 1 min (Ghosh et al., 2014); the plates were then incubated in 30°C for 20 min without CO2. The Seahorse XFp Extracellular Flux Cartridge was incubated with the XF calibrant overnight at 30°C per manufacturers instruction and was used to calibrate the Seahorse XFp Analyzer. The miniplates were then analyzed with measurement of the basal oxygen consumption rates (OCR) and extracellular acidifications rates (ECAR) that correlate to oxidative - phosphorylation and glycolysis, using the following parameters: initial time 12 min, to allow equilibration of the samples, mixing 3 min, measuring 3 min, the temperature was set to 30°C.
 
-## Scar counting and budding
+### Scar counting and budding
 
 Samples were collected after sorting by centrifuging at 3,700 g for 5 min; the pellet was resuspended with 500 μl of PBS. After transferring liquid to Eppendorfs, samples were centrifuged at max speed for 1 min and the pellet was resuspended with 4% paraformaldehyde and incubated 10 min. Paraformaldehyde was washed with PBS. The pellet was resuspended with 20 μl of PBS and 2 μl of Calcofluor (18909 SIGMA-ALDRICH) and incubated at room temp for 10 min. Samples were washed with PBS before placing on glass slides. Images were taken by confocal microscopy (Olympus FV-1200) and kept at 30c throughout the process. Scars and buds were analyzed using the ImageJ software and manually counted.
 
-## Mother enrichment program system and scar count assessment
+### Mother enrichment program system and scar count assessment
 
 Cells were labeled with Sulfo-N-Hydroxysuccinimide-LC Biotin (Sulfo-NHS-LC Biotin) at a concentration of 2 × 104/mL and stored on glycerol at −80°C until resuspension in filtered minimal modified casein amino acid medium containing 1 μM estradiol. The estradiol is necessary to induce elimination of the daughter cells, according to the Mother Enrichment Program. These samples were incubated for various time periods (0–72 hr) and harvested together. Cells were pelleted by low speed centrifugation, followed by treatment with Texas Red-X conjugate of wheat germ agglutinin (WGA) lectin (W21405, ThermoFisher Scientific) at a concentration of 0.02 mg/mL, which preferentially binds to bud scars (Chen and Contreras, 2004). Cells were then analyzed using flow cytometry with excitation at 405, 488, and 561 nm (as described earlier). Unlike earlier analysis, bud scar assessment was approximated into two groups, ‘high scar count’ and ‘low scar count’. Due to the expanded size of cells following increased division, the range of analyzed cells was enlarged accordingly to more accurately represent the new population. Similarly, detection of the oxidized and reduced subpopulations shifted slightly with the increased size and the corresponding gates were very moderately adjusted.

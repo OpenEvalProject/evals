@@ -16,4 +16,4 @@
 
 ## Abstract
 
-Elephants have significantly reduced their risk of cancer by duplicating an important gene called TP53 .
+Elephants have significantly reduced their risk of cancer by duplicating an important gene called TP53.

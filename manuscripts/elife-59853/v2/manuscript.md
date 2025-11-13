@@ -49,11 +49,11 @@ Previous studies on behavioral responses of Drosophila to ethanol have focused o
 
 ## Materials and methods
 
-## Fly handling
+### Fly handling
 
 All flies were raised on corn meal malt extract food (7.6%) CH Guenther and Son Pioneer Corn Meal (Walmart, Inc), 7.6% Karo syrup (Walmart, Inc), 1.8% Brewer’s yeast (SAF, Milwaukee WI), 0.9% Gelidium agar (Mooragar, Inc, Rocklin, CA), 0.1% nipagin (Fisher Scientific, Inc) in 0.5% ethanol, 11.1% #5888 amber malt extract (Austin Homebrew, Austin, Tx) and 0.5% proprionic acid (Fisher Scientific, Inc). Solids are weight/volume and liquids are volume/volume. Flies were housed a 12:12 light:dark cycle. Flies used in aggression and courtship receptivity behavioral assays were all taken from group housed bottles as pupae and individually raised in vials. Flies used in imaging, immunohistochemistry, and qPCR were group housed.
 
-## Behavioral tests
+### Behavioral tests
 
 Aggression chambers were assembled based on description by Mundiyanapurath et al., 2006. using a fly vial cut one inch high and glued to one petri dish. The top of the chamber has two holes; one large hole is used for loading flies and one other smaller hole is in the center of the top and is used for circulation. Food wells were made by cutting 1.5 mL microfuge tube tops. Fly food was melted and pipetted into the microfuge tube tops. Ethanol was added into the fly food once the food cooled down to roughly 35°C. We added sucrose to the top of each fly food surface and a decapitated virgin female fly. Flies were loaded into the chamber by gentle aspiration and the video camera began recording 5 min after the flies were in the chamber. Aggression tests were conducted between the hours of 9 AM and 4 PM (Lights on 8 AM – 8PM). Flies tested for aggression were between 4 and 6 days old and Canton S.
 
@@ -61,11 +61,11 @@ Line crossing assays were performed in the aggression chambers. Flies were aspir
 
 Olfactory Traps were based on the protocol developed by Woodard et al., 1989 and were constructed using a 1.5-microfuge tube with a hole drilled on the cap. A yellow-tip pipette was then cut to fit in the hole so that the tops were flush against the cap of the microfuge and cut on the bottom so that flies would be able to enter. For the odorants, we cut pieces of Fisherbrand medium porosity filter paper (Hampton, NH, Catalog No. 09-801E) into 2.5 × 2 cm squares. We used Sigma-Aldrich 95% Farnesol (St. Louis, MO) diluted in Paraffin Oil. For the low concentration Farnesol we used 0.1% and for the high concentration of Farnesol we used 10%. For ethanol, we used a 5% (w/v) solution in water. We pipetted 35 µL of each odorant onto the filter paper squares and folded them up into the microfuge tubes. The paper was pushed to the bottom of the tube to prevent obstruction of the yellow tip pipettes. For the tubes with single odorants, we added the solvent in the opposite tube (e.g. Farnesol in Paraffin oil + Ethanol in water vs. Ethanol in water and Paraffin oil). For the no odorant tubes we used both paraffin oil and water. For each test, we used 20 male Canton S flies that were 4–5 days old. We aspirated the flies into the testing arenas and left them for about 12 hr overnight then placed the whole arena in −20°C kill the flies prior to counting the number of flies in each trap.
 
-## Ethanol assay kit
+### Ethanol assay kit
 
 We used a Megazyme Ethanol Assay Kit Cat # K-ETOH (Megazyme, Bray, CO) to measure BACs (limit of detection 0.093 mg/L). About 40 flies were treated with ethanol or air, then homogenized in ddH2O and centrifuged at 10,000 xg for 10 min. The supernatant was taken and used to measure ethanol concentrations. A negative control without fly homogenate was also used. For concentration calculations, all flies were estimated to contain 1 µL of water (calculated from previous data in Park et al., 2018).
 
-## Single sensillum recording electrophysiology
+### Single sensillum recording electrophysiology
 
 Single Sensillum extracellular electrophysiology was conducted according to de Bruyne et al., 1999 using 3–5 days old w1118 flies. Flies were assayed under a constant stream of charcoal filtered air (36 ml/min, 22–25°C) to prevent any contamination from environmental odors. cVa was diluted in paraffin oil (1% dilution); 35 μl was applied to filter paper and inserted into a Pasteur pipette; air was passed over the filter and presented as the stimulus. We used 1% cVa because the responses it evokes is most functionally relevant, as the magnitude of response it evokes is similar to exposing a virgin female to a male fly. Signals were amplified 1000x, fed into a computer via a 16-bit analog-to-digital converter (USB-IDAC system; Syntech), and analyzed offline with AUTOSPIKE software. The low cut-off filter setting was 200 Hz and the high cut-off setting was 3 kHz. Action potentials were recorded by inserting a glass electrode in the base of a sensillum. Data analysis was performed as reported by Xu et al., 2005. Signals were recorded starting 10 s before odorant stimulation. cVa-evoked action potentials were counted by subtracting the number of spikes 1 s before cVa stimulation from the spike number 1 s after cVa stimulation (Spikes/sec). The recordings were performed from separate sensilla with a maximum of two sensilla recorded from any single fly.
 
@@ -73,6 +73,6 @@ Ethanol was delivered by adding it into the conical flask that feeds into the ID
 
 Spontaneous Activity = Total number of spikes 10 s prior to cVa delivery/10 s and ΔSpikes = Evoked activity (1 s during and after cVa delivery) – Spontaneous Activity.
 
-## Statistical methods
+### Statistical methods
 
 For data with multiple comparisons we used a One-way ANOVA with Dunnett’s correction for multiple comparisons. To test for normality of the data we used a Shapiro-Wilk’s test. If one of the datasets contained non-normally distributed data we used a Kruskal-Wallis test with Dunn’s correction.

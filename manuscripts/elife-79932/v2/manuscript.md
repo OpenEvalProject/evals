@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03ydkyb10 Department of Biochemistry, University of Wisconsin-Madison Madison United States
-2. https://ror.org/02866re76 Department of Physics, Boston University Boston United States
-3. https://ror.org/02866re76 Department of Chemistry, Boston University Boston United States
-4. https://ror.org/01y2jtd41 Department of Bacteriology, University of Wisconsin-Madison Madison United States
-5. https://ror.org/01y2jtd41 Department of Chemical and Biological Engineering, University of Wisconsin-Madison Madison United States
+1. Department of Biochemistry, University of Wisconsin-Madison Madison United States ([ROR:03ydkyb10](https://ror.org/03ydkyb10))
+2. Department of Physics, Boston University Boston United States ([ROR:02866re76](https://ror.org/02866re76))
+3. Department of Chemistry, Boston University Boston United States ([ROR:02866re76](https://ror.org/02866re76))
+4. Department of Bacteriology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+5. Department of Chemical and Biological Engineering, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
@@ -31,11 +31,43 @@ In this study, we used DMS to identify allosteric hotspots by systematically dis
 
 ## Results and discussion
 
-## Identifying allosteric hotspots across homologs
+### Identifying allosteric hotspots across homologs
 
 aTF is an ideal model system because of its simple one-component signal transduction mechanism that can be converted into a reporter-based high-throughput screen to measure allosteric activity (Leander et al., 2020; Nishikawa et al., 2021). We chose to study the TetR family of transcription regulators because they are a large and remarkably diverse family of proteins found in almost every bacterial host with diverse ligand and DNA specificities (Cuthbertson and Nodwell, 2013). As a result, the allosteric mechanisms of these proteins have evolved under different selection pressures exerted by their environments. Despite their diversity, all TetR family proteins (>100 in PDB) share a similar protein structure which suggests their structure is versatile and robust to preserve allostery while accommodating diverse sequences (Cuthbertson and Nodwell, 2013; Fukami-Kobayashi et al., 2003). Therefore, the TetR family serves as a good model system to investigate structural properties of allostery common within the family while minimizing sequence-dependent effects. We chose four aTFs – TetR, TtgR, MphR, and RolR – with high structural similarity (between 1 and 3 Å Cα root mean squared distance [RMSD]) but low sequence identity (between 14% and 19%, Supplementary file 1).
 
 To probe the functional impact of mutations on aTFs, we developed a high-throughput pooled screen in Escherichia coli where the activity of mutants can be measured by the expression level of GFP regulated by an aTF-regulated promoter. Allosteric activity was quantified as the fold induction ratio of GFP expression with and without the inducer. Fold induction of wild-type aTFs was TetR: 49-fold (ligand: anhydrotetracycline [aTC]), TtgR: 25-fold (ligand: naringenin [Nar]), MphR: 100-fold (ligand: erythromycin [Ery]), and RolR: 15-fold (ligand: resorcinol [Res]). We mutated each aTF using commercially available chip oligonucleotides to encode a comprehensive library of point mutants by single-site saturation mutagenesis of each residue (~200 residues per aTF × 19 mutants/residue = 3800 mutants per aTF, Figure 1—figure supplement 1). We designate aTF mutations that constitutively lock the protein in an inactive allosteric state as ‘dead variants’. This may occur because the mutation stabilizes the inactive state by increasing the thermodynamic gap between inactive and active states. The dead variants are well-folded proteins that bind to DNA and repress transcription but cannot be induced with the ligand. From each aTF library, we enriched dead variants by sorting low GFP cells after incubation with their corresponding ligand (Figure 1A; Figure 1—figure supplement 1). The sorted populations were deep sequenced in triplicate to identify the allosterically dead variants (Figure 1—figure supplement 2; Supplementary file 2). In other words, we use cell sorting as a binary classifier; that is, does the mutation disrupt allostery or not. We capture the effect size on individual residues, not individual mutations, by counting the number of dead mutations at a residue position. This is an important consideration because it safeguards us from minor inconsistencies that inevitably arise from cell sorting.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig1-v2.jpg)
+
+**Figure 1.:** (A) Nonfluorescent cells in the TetR, TtgR, MphR, and RolR single-mutant library were sorted (gray bar) in the presence (light shade) and absence (dark shade) of 1 µM anhydrotetracycline (aTC), 500 µM naringenin (Nar), 1 mM erythromycin (Ery), and 7.5 mM resorcinol (Res), respectively, and sequenced to identify dead variants. Sorting gates were defined by the wild-type uninduced population for each homolog. (B) Allosteric hotspots (red points) for each aTF is shown with residue numbers along x axis and a weighted score along y axis based on the number of dead mutations at a residue position. Secondary structures of the aTFs are illustrated below and colored according to regions (blue: DBD, orange: hinge helix connecting LBD and DBD, gray: LBD and purple: dimer interface). Residue conservation is shown and colored by conserved residues (green), not conserved (gray) and conserved overlapping with hotspot (red). (C) Allosteric hotspots mapped on to the structure of TetR, TtgR, MphR, and RolR (ligand-contacting residues excluded).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Protein-wide, single-site saturation mutagenesis of four TetR-like family allosteric transcription factors (aTFs) – TetR, TtgR, RolR, and MphR – using reporter-based screening followed by deep sequencing.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Heatmaps detailing the effect of all single mutants at every position in (A) TetR, (B) TtgR, (C) MphR, and (D) RolR are shown. Wild-type residues are black, mutations that do not affect protein function are white, mutants classified as dead in two or all three replicates are orange and blue, respectively. Variants not present in the dataset are gray.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The distribution of weighted scores for every position in (A) TetR, (B) TtgR, (C) MphR, and (D) RolR is shown. Box and whisker plots above each histogram illustrate the spread of the data where outliers are shown as circles (red line) and all positions above Q3 (orange line) were designated allosteric hotspots.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The correlation of weighted scores for every position using a ×5 or ×10 read count threshold is shown for (A) TetR, (B) TtgR, (C) MphR, and (D) RolR. The red and orange lines illustrate the spread of the data using interquartile range where outliers are plotted above the red line and all positions in the top quartile are designated allosteric hotspots.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** The percent of hotspots in the four main structural regions of the TetR homologs. Regions were broken into groups based on the crystal structures of TetR (PDB ID: 4AC0), TtgR (PDB ID: 2UXU), MphR (PDB ID: 3FRQ), and RolR (PDB ID: 3AQT). Potential ligand-binding residues are included in the statistics but are not considered hotspots.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Average conservation score of all positions considered inactive or having no effect in (A) TetR, (B) TtgR, (C) MphR, and (D) RolR. Data show as mean ± SEM.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Allosteric hotspots of TetR, TtgR, MphR, and RolR determined by experiments (A, C, E, G) and the Ohm webserver (B, D, F, H) differ significantly. The Ohm webserver identifies critical residues along the signal propagation pathways between the bound effectors (ligands) to the active sites (DNA-binding residues) as allosteric hotspots. Specifically, in the Ohm calculation, signals are started from effector molecules, which are then propagated through residue contacts, with the active sites as signal sinks. Such signal propagation simulation is repeated for 104 times, and the residues that appear most frequently in pathways connecting effectors and active sites are recognized as hotspots. The number of hotspots identified by Ohm calculation is made equal to experimentally determined hotspots. The accuracy of hotspot identification of Ohm calculation is 0.08 for TetR; 0.12 for TtgR; 0.31 for MphR, and 0.40 for RolR.
 
 Next, we wanted to establish criteria to designate a residue as an allosteric hotspot. The importance of a residue for allosteric signaling is proportional to the number of dead variants at that position. For example, a residue with 15 dead variants is more important than one with five dead variants. We cannot choose an arbitrary threshold for the number of dead variants as this threshold may change for each aTF. Therefore, we created a simple scoring system where each residue was given a score based on the number of dead variants at that position and the confidence a variant is fully dead. The latter criterion captures variants that show weak allosteric activity. A higher positional score indicates the higher importance of a residue in allosteric signaling. We designated residues falling in the highest quartile (top 25% scoring residues) in the interquartile distribution of scores as allosteric hotspots for each aTF. The spread of residue scores varied between aTFs. The highest quartile was well separated for TetR, TtgR, and MphR, and less so for RolR, giving us higher confidence in the assignment of hotspots in the former groups (Figure 1—figure supplement 3). We note that the lower fold induction (dynamic range) of RolR makes it particularly challenging to separate the dead variants from the rest. We designated 53, 51, 48, and 57 residues as hotspots in TetR, TtgR, MphR, and RolR, respectively. To assess the robustness of our classification of hotspots, we determined the number of hotspots at two different sequencing thresholds – ×5 and ×10. At ×5 and ×10, the number of hotspots is – TetR: 53, 51; TtgR: 51, 51; MphR: 48, 48, and RolR: 57, 60, respectively (Figure 1—figure supplement 4). Changing the threshold has a modest impact on the overall number of hotspots and the regions of functional importance are consistent at both thresholds. After excluding ligand-contacting residues from consideration, as mutations at these residues appeared dead likely due to loss of ligand affinity, we were left with 41, 43, 29, and 51 hotspots in TetR, TtgR, MphR, and RolR, respectively. We note that changing the read threshold does not change the identity of the hotspots falling in the top quartile indicating the robustness of our conclusions.
 
@@ -45,7 +77,7 @@ To understand the common structural mechanism in the family, we classified the h
 
 Since residues important for function (e.g., binding, catalysis, etc.) tend to be conserved in sequence, we assessed if allosteric hotspots too are conserved. We compared hotspots to close sequence homologs (>50% sequence identity) and did not find statistically higher sequence conservation in hotspots over non-hotspots (Figure 1—figure supplement 6). This reinforces our earlier conclusion that though the structural mechanism of allosteric signaling may be conserved within this family, the residues participating in signal transduction may be specific for each aTF. In other words, allosteric sites are not necessarily conserved, though allostery itself may be conserved. We also compared the experimental hotspots with predictions made by the Ohm webserver (Wang et al., 2020). The Ohm webserver is an efficient computational tool that analyzes the propagation of structural perturbation in proteins to identify allostery network and hotspot residues. The overlap between predictions and experiments is modest and involves mostly DBD residues while the experimental hotspots are distributed across the protein (Figure 1—figure supplement 7). This highlights the limitation of focusing on the mechanistic model that involves propagation of conformational distortions.
 
-## LRIs reveal similarities in allosteric mechanism
+### LRIs reveal similarities in allosteric mechanism
 
 We investigated what underlying property of protein structure might explain the preference of hotspots for certain sites. We considered the defining characteristic of allostery, that is, cooperative action between spatially distant residues. Cooperative action occurs through molecular forces transmitted between bonded and non-bonded interactions. Forces transmitted through bonded interactions tend to dissipate over short distances. However, non-bonded interactions, particularly between residues farther in primary sequence, likely facilitate transmission of force over longer distances (Miyazawa and Jernigan, 1996). Therefore, we examined the location of allosteric hotspots with respect to residues involved in non-bonded LRI.
 
@@ -53,9 +85,29 @@ We generated contact maps of residue-residue interactions and selected LRIs as r
 
 The 10 clusters of LRIs represented distinct local regions of the protein (Figure 2A). To evaluate the relative importance of different signaling pathways, we ranked the LRI clusters based on the fraction of unique hotspots out of all residues in that cluster (Supplementary file 3). The dimer interface emerged as the first-ranked cluster in TetR, MphR, and RolR (Figure 2B), suggesting that the dimer interface is a dominant signaling pathway. The first-ranked cluster of TtgR was not the dimer interface which is consistent with far fewer hotspots found at the dimer interface of TtgR (Figures 2 and 1C). The second tier of cluster rankings contained regions between helices α4, -5, -6, and -7 of the LBD and the linker helix between LBD and DBD. These clusters likely represent allosteric forces emanating from the LBD upon ligand binding. No cluster stands out as dominant within this tier. LRI clusters within the DBD were ranked near or at the bottom of the rankings for all homologs. LRIs have long been known to play a key role in protein folding and stability. Our results show that LRIs are also critical for the propagation of allosteric signals. These results also show that though allosteric hotspots may not be superimposable across distant homologs, local clusters of LRIs share similar patterns between homologs. As homologs get closer in sequence, regional similarities in allosteric signaling may give way to the superimposability of individual hotspots.
 
-## Physiochemical properties of dead mutations
+![Figure 2.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig2-v2.jpg)
+
+**Figure 2.:** (A) Residue-residue contact map showing LRIs within each homolog. The LRIs are grouped by color, following standard k-means clustering, representing different regions of the protein. Inset shows ranking of LRI clusters based on the percentage of unique hotspots within each cluster. (B) The general location of each LRI cluster on the protein structure (color scheme same as panel A).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The percent of hotspot and non-hotspot residues participating in long-range interactions (LRIs) in each homolog protein.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The optimal number of clusters to use for the k-means clustering of long-range interactions (LRIs) in each homolog was determined by iteratively calculating the variance within clusters for 1–25 clusters.
+
+### Physiochemical properties of dead mutations
 
 We investigated if mutations to certain amino acids were enriched among dead variants over non-dead variants. We computed the percentage of each amino acid among mutations that were dead vs. not-dead from all four aTF datasets (~12,000 mutations). Aromatic amino acids (Phe, Trp, and Tyr) were enriched among dead variants (20%) over the not-dead group (15%) (Figure 3A). Mutations to proline were also enriched, albeit to a lesser degree, among the dead variants (5%) vs. the not-dead group (3.8%). These trends change slightly at the protein level, for example, the branched nonpolar leucine is the most enriched mutation in dead variants of TetR (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig3-v2.jpg)
+
+**Figure 3.:** (A) Percentage of mutations (final mutated state) among dead (red) and not-dead (gray) variants from deep mutational scanning (DMS) data for all four homologs combined. (B) Comparison of physicochemical properties – polarizability, solvent-accessible surface area (SASA), mass, hydrophilicity, hydrophobicity, and polarity – between dead (red) and not-dead variants (gray). Average values aggregated over all four DMS datasets shown. Data represented as mean ± SEM. (C) Structural models of the K199Y (top) and C144F (bottom) mutations in TetR. Residues in the mutant structures are colored teal and the two monomers are colored white and dark gray.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Mutations in (A) TetR, (B) TtgR, (C) MphR, and (D) RolR were separated based on their effect on protein function, dead (red) or no effect (gray), and the proportion of each of the 20 amino acids within each set calculated to identify enrichments in allosterically dead or neutral variants.
 
 Next, we compared differences between both groups in six common physicochemical properties of amino acids. We did not observe any statistically significant differences in hydrophilicity, hydrophobicity, and polarity between both groups (Figure 3B). However, we observed statistically significant differences in polarizability, solvent-accessible surface area (SASA), and mass (Figure 3B). This is consistent with aromatic residues having larger mass and SASA, and greater polarizability due to the π-electron cloud. Although aromatic residues are also hydrophobic, hydrophobicity itself is not a differentiator between dead vs. not-dead groups. The enrichment of aromatic amino acids, and to a lesser extent strongly aliphatic amino acids (Ile and Leu) among the dead variants, hints at a relationship between residue-residue interaction energy and allosteric signaling. These amino acids (Trp, Phe, Tyr, Ile, and Leu) have the highest interaction energies among all amino acids in the PDB of (−4 to –6 RT units) (Chan et al., 2004). At the other end, mutations to small branched amino acids (Ser, Cys, and Ala), which have low interaction energies, were most depleted among dead variants (12%) vs. the not-dead group (18%), suggesting that substitutions to small branched amino acids are least likely to inactivate allosteric signaling.
 
@@ -63,19 +115,75 @@ To understand at an atomic level why aromatic mutations are consistently enriche
 
 We concluded that the interaction energy of the large hydrophobic sidechains provides an enthalpic gain that stabilizes the allosteric OFF state of the protein. The resulting increase in energy gap, relative to wild-type, makes the variant unresponsive to ligand-induced allosteric activation. Thus, evolution of allosteric proteins is constrained to sequence variations that maintain an appropriate energy gap between ON and OFF states. Our results suggest that a few RT units can tip this delicate balance toward the inactive OFF state.
 
-## Discriminative features of allosteric hotspots vary among homologous proteins
+### Discriminative features of allosteric hotspots vary among homologous proteins
 
 While the above analyses revealed several interesting features of hotspot residues, the partial overlap of these features between hotspot and non-hotspot residues suggests that additional features are required to make reliable predictions of allosteric hotspots. Prior to establishing such a predictive model, it is important to first understand what features are most likely to differentiate hotspot from non-hotspot residues. Accordingly, we assembled a comprehensive list of 27 features that are potentially relevant to the classification of a protein site as an allosteric hotspot (see Materials and methods) (Figure 4A). These include eight intrinsic physicochemical properties of amino acids such as charge and hydrophobicity, and eight local structural properties, such as solvent accessibility, local structural entropy (LSE) (Jenik et al., 2012), and frustration index (Chakrabarty and Parekh, 2016). Since allostery is fundamentally about cooperativity between distant sites in a protein, we also included 11 global features that describe long-range structural or dynamical properties; for example, residue centrality (Bahar and Rader, 2005), which measures the degree of connectedness of a residue when the protein is represented as a graph; a residue’s distance to important regions in the protein, such as the DNA/ligand-binding sites and local peaks of residual centralities (see Materials and methods); motional covariance between a residue and the ligand/DNA-binding residues evaluated using an elastic network model (Xia et al., 2010).
 
-To quantify how well these features differentiated hotspots and non-hotspots, we computed two metrics commonly used to estimate feature importance in machine learning – the F score and the Jensen-Shannon divergence (JSD). The F score measures the difference between the average (mean) of the two distributions relative to the widths of these distributions; the F score of feature i is computed as (Pan et al., 2018),(1)Fi= |x¯hi−x¯ni|σhi+σni
+![Figure 4.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-v2.jpg)
 
-in which x¯hi / x¯ni are the average values of hotspots/non-hotspots, and σhi/σni are the corresponding standard deviations. A large F score indicates that a specific feature adopts significantly different values for hotspot and non-hotspot residues. Features with larger F scores better differentiate hotspots from non-hotspots than those with smaller F scores. For all four aTFs, global features have the highest F scores and physicochemical features tend to have the lowest F scores. The confidence of hotspot assignment increases with increasing dynamic range because there is a clearer separation of dead vs. not-dead. Since RolR and TtgR have lower dynamic ranges, this may be a factor in their lower F scores.
+**Figure 4.:** (A) The full list of 27 features is shown at the top. The F scores (measure of importance) of the features for each of the four allosteric transcription factors (aTFs) is shown below. (B) Frequency of appearance of the 27 features in the top ten 1–10 feature combinations ranked by F1 score for each protein. Row 2–28 corresponds to feature 1–27, row 1 is the average F1 score of the top ten 1–10 feature combinations. (C) Predictions made by the model based on the best fivefold cross-validation performance achieved for each aTF (red: true positive; cyan: false positive; black: false negative; rest: true negative). The features used in the best models are 2, 19, 21, 23–26 for TetR; 4, 7, 10, 15, 19, 21, 24, 25 for MphR; 2, 10, 12, 21, 25 for RolR, and 9, 10, 13, 23, 25 for TtgR.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The full list of 27 features is shown at the top. The JSDs (measure of importance) of the features for each of the four allosteric transcription factors (aTFs) is shown below. JSD is a measure of similarity between two probability distributions P and Q, which is bound between 0 (P and Q are the same) and 1 (P and Q have no overlap). The larger the JSD, the more different the two distributions are, and thus the features with larger JSDs are more discriminative for hotspot residues. JSD is a symmetrized and smoothed version of the more familiar Kullback-Liebler divergence defined as JSD(P||Q) = { DKL(P||M)+DKL(Q||M) }/2, where M = (P+Q)/2 is the average of two distributions and DKL is the Kullback-Liebler divergence (KL divergence) which also measures similarity between two distributions. KL divergence is defined as DKL(P||M) = ∑xP(x)*log2[P(x)/M(x)], x are points of the probability space where discrete distributions P and M are defined.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The 27 plots correspond to the distributions of TetR’s hotspots’ (hs) and non-hotspots’ (non-hs) z-scored feature values for feature 1–27 as labeled by figure titles. The distributions of hotspots and non-hotspots are normalized by their populations, thus the y axis of the figures are probabilities. Z-scored feature j value of a residue n (Znj) is defined as the difference between its raw feature j value (Rnj) and the average raw feature j values of all residues (avg_Ri), divided by the standard deviation of raw feature j values of all residues, Znj = (Rnj - avg_Rj)/std_Rj.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The 27 plots correspond to the distributions of MphR’s hotspots’ (hs) and non-hotspots’ (non-hs) z-scored feature values for feature 1–27 as labeled by figure titles. The distributions of hotspots and non-hotspots are normalized by their populations, thus the y axis of the figures are probabilities. Z-scored feature j value of a residue n (Znj) is defined as the difference between its raw feature j value (Rnj) and the average raw feature j values of all residues (avg_Ri), divided by the standard deviation of raw feature j values of all residues, Znj = (Rnj − avg_Rj)/std_Rj.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** The 27 plots correspond to the distributions of TtgR’s hotspots’ (hs) and non-hotspots’ (non-hs) z-scored feature values for feature 1–27 as labeled by figure titles. The distributions of hotspots and non-hotspots are normalized by their populations, thus the y axis of the figures are probabilities. Z-scored feature j value of a residue n (Znj) is defined as the difference between its raw feature j value (Rnj) and the average raw feature j values of all residues (avg_Ri), divided by the standard deviation of raw feature j values of all residues, Znj = (Rnj − avg_Rj)/std_Rj.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** The 27 plots correspond to the distributions of RolR’s hotspots’ (hs) and non-hotspots’ (non-hs) z-scored feature values for feature 1–27 as labeled by figure titles. The distributions of hotspots and non-hotspots are normalized by their populations, thus the y axis of the figures are probabilities. Z-scored feature j value of a residue n (Znj) is defined as the difference between its raw feature j value (Rnj) and the average raw feature j values of all residues (avg_Ri), divided by the standard deviation of raw feature j values of all residues, Znj = (Rnj − avg_Rj)/std_Rj.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** The plots show the average and best F1 scores for 4–10 feature combinations as a function of generation in the genetic algorithm feature selection for the four homologous allosteric transcription factors (aTFs) as labeled by figure titles.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Frequency of appearance of the 27 features in the top ten 1–10 feature combinations ranked by F1 score for each protein (labeled on top). Row 2–28 corresponds to feature 1–27, row 1 is the average F1 score of the top ten 1–10 feature combinations. This is the same data as that of Figure 4B with all the frequencies specified in the heatmap.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** Plots of centrality against residue number of each protein (labeled by the title), with the four red stars label the positions of centrality peaks 1–4 from left to right. The centrality peaks are identified as positions of highest centrality within local sequence while maintaining distances between centrality peaks as large as possible. The centrality peaks 1–4 are located at residue 22, 83, 150, 193 for TetR; residue 26, 59, 104, 155 for MphR; residue 30, 71, 122, 186 for TtgR; and residue 48, 84, 133, 191 for RolR.
+
+To quantify how well these features differentiated hotspots and non-hotspots, we computed two metrics commonly used to estimate feature importance in machine learning – the F score and the Jensen-Shannon divergence (JSD). The F score measures the difference between the average (mean) of the two distributions relative to the widths of these distributions; the F score of feature i is computed as (Pan et al., 2018),
+
+$$
+F_{i}= \frac{|x¯_{hi}−x¯_{ni}|}{\sigma_{hi}+\sigma_{ni}}
+$$
+
+in which $x¯_{hi}$ / $x¯_{ni}$ are the average values of hotspots/non-hotspots, and $\sigma_{hi}/\sigma_{ni}$ are the corresponding standard deviations. A large F score indicates that a specific feature adopts significantly different values for hotspot and non-hotspot residues. Features with larger F scores better differentiate hotspots from non-hotspots than those with smaller F scores. For all four aTFs, global features have the highest F scores and physicochemical features tend to have the lowest F scores. The confidence of hotspot assignment increases with increasing dynamic range because there is a clearer separation of dead vs. not-dead. Since RolR and TtgR have lower dynamic ranges, this may be a factor in their lower F scores.
 
 Since the distributions of the various features are not necessarily mono-modal, we also evaluated feature importance using JSD, which is different from F score in that it measures the overall similarity between two distributions of arbitrary shape rather than only the difference between the averages. A similar trend in the rankings of features was observed with JSD (Figure 4—figure supplements 1–5). These striking differences among the three classes of features clearly show that a residue’s relative location in the protein structure and its motional correlation with other residues are more indicative of its role in allostery, as compared to its molecular features and local environment. In other words, once the protein fold is specified, the contribution of structure is larger than the contribution of sequence in determining the importance of a residue in allostery. On the other hand, substantial variations in the patterns of the F score and JSD among the four proteins highlight that the distinguishing properties of hotspot residues may differ even among homologous proteins, suggesting non-trivial variations in the detailed mechanism among them.
 
-## NN analysis further highlights convergence and divergence in allostery mechanisms among homologous proteins
+### NN analysis further highlights convergence and divergence in allostery mechanisms among homologous proteins
 
-Having established the importance of individual features, we set out to build models by combining these features to reliably classify whether a protein site is an allosteric hotspot because combinations of features tend to perform better than models based on a single feature (Wang et al., 2018; Ofran and Rost, 2007; Demerdash et al., 2009; Pethe et al., 2019; Gelman et al., 2021; So and Karplus, 1996a). We included even the lower-ranked features (Figure 4A) as they may contribute to the discriminative power of a model when used in combination with other features in NNs. To search for the best feature combinations, we coupled the NNs with a genetic algorithm (GA), which has been shown to be efficient at picking out desired feature combinations when the total number of possible combinations is too large for an exhaustive search (So and Karplus, 1996b; Halabi et al., 2009). Specifically, we implemented the evolutionary programming algorithm to search for the best 1–10 feature combinations for NNs for each aTF. The algorithm guarantees that the average and highest fitness of the gene pool increases monotonically with evolutionary time (number of generations iterated), or remains constant upon convergence (see Materials and methods for details); these properties are essential for the convergence and proper termination of the feature optimization process. The fitness during GA optimization is evaluated as the average F1 score (distinct from the F score) of five times of fivefold cross-validation tests. The F1 score is defined in Equations 2–4, where TP, FP, TN, and FN represent true positive rate, false positive rate, true negative rate, and false negative rate, respectively.(2)Recall=TPTP+FN(3)Precision=TPTP+FP(4)F1=2∗Recall∗PrecisionRecall+Precision
+Having established the importance of individual features, we set out to build models by combining these features to reliably classify whether a protein site is an allosteric hotspot because combinations of features tend to perform better than models based on a single feature (Wang et al., 2018; Ofran and Rost, 2007; Demerdash et al., 2009; Pethe et al., 2019; Gelman et al., 2021; So and Karplus, 1996a). We included even the lower-ranked features (Figure 4A) as they may contribute to the discriminative power of a model when used in combination with other features in NNs. To search for the best feature combinations, we coupled the NNs with a genetic algorithm (GA), which has been shown to be efficient at picking out desired feature combinations when the total number of possible combinations is too large for an exhaustive search (So and Karplus, 1996b; Halabi et al., 2009). Specifically, we implemented the evolutionary programming algorithm to search for the best 1–10 feature combinations for NNs for each aTF. The algorithm guarantees that the average and highest fitness of the gene pool increases monotonically with evolutionary time (number of generations iterated), or remains constant upon convergence (see Materials and methods for details); these properties are essential for the convergence and proper termination of the feature optimization process. The fitness during GA optimization is evaluated as the average F1 score (distinct from the F score) of five times of fivefold cross-validation tests. The F1 score is defined in Equations 2–4, where TP, FP, TN, and FN represent true positive rate, false positive rate, true negative rate, and false negative rate, respectively.
+
+$$
+Recall=\frac{TP}{TP+FN}
+$$
+
+
+
+$$
+Precision=\frac{TP}{TP+FP}
+$$
+
+
+
+$$
+F1=2∗Recall∗\frac{Precision}{Recall+Precision}
+$$
 
 Both the average and best fitness scores converge after 10 generations for 4–10 feature combinations (Figure 4—figure supplement 6). As the total numbers of all 1–3 feature combinations are moderate, they are evaluated exhaustively without using the genetic algorithm.
 
@@ -87,7 +195,7 @@ A closer examination of the most frequent features in the optimal models reveals
 
 Therefore, compared to the F score analysis for individual features, the GA-NN analysis has revealed a more nuanced view of properties indicative of allosteric hotspots. To rationalize these observations, we note that all aTFs are structurally divided into LBDs and DBDs, thus allostery relies on both intra-domain properties and inter-domain couplings. While inter-domain couplings dictate the communication between allosteric and active sites, corresponding to a ‘contact relayed signal’ view of allostery (Wang et al., 2020; Motlagh et al., 2014); intra-domain properties affect allostery by shifting the populations of different thermodynamic states, as described by the classical MWC (Monod-Wyman-Changeux) model and its recent variations (Marzen et al., 2013; Hilser et al., 2012; Luo et al., 2021). Thus, an allosteric hotspot might contribute to one of these two types of properties or both (Gandhi et al., 2008). Features indicative of long-range motional correlations are likely discriminative for hotspots important to inter-domain coupling, while features reflecting spatial location of a site (e.g., distance to regions of high centrality) are likely more discriminative for hotspots important to intra-domain properties. Therefore, we speculate that if hotspots of an aTF are mostly important only to inter- or intra-domain properties, global features are highly effective in building high-performing models, like in the case of TetR and MphR. However, if most hotspot residues contribute to both inter- and intra-domain properties, a high level of cooperativity and epistasis is likely essential within the aTF, making hotspot identification intrinsically harder, such as in the case of RolR and TtgR. For these latter cases, global features alone become less effective, and local or intrinsic features like charge, hydrophobicity, LSE, and frustration index, which represent finer description of the local interactions of a site, appear more frequently in the top-performing models.
 
-## Transfer learning improves cross-protein predictions
+### Transfer learning improves cross-protein predictions
 
 Next, we explored the possibility of predicting hotspots on TetR homolog using models trained with data of other TetR homologs (cross-protein prediction [CPP]) with and without transfer learning (TL). For a given train-test combination (e.g., train on TetR and test on MphR), the prediction accuracy is recorded as its CPP performance. Then, the model is further trained with 10% of the data for the test protein and used to predict on the remaining 90% data, and the prediction result is recorded as its CPP_TL performance (see Materials and methods).
 
@@ -99,13 +207,103 @@ CPP_TL significantly outperforms their CPP counterparts as well as the correspon
 
 Only a fraction of the thousands of TetR-like proteins has three-dimensional (3D) structures. TL could be a powerful tool to predict hotspots in proteins with unknown structure but that have limited experimental data. To explore this idea, we repeated TL studies based on homology models rather than the crystal structure for all four aTFs (Figure 6). Specifically, we generated homology models using two different protein templates for each of the four proteins, and recalculated all structure-based features in each case. We observed a general trend of increasing model performance with increasing sequence similarity between template protein and MphR and decreasing model performance with increasing RMSD between template protein and MphR (Figure 6 and Figure 6—figure supplement 1). Nevertheless, all relative performances are above 83%, which is remarkable considering that the lowest sequence identity between a modeled protein and its template is only 15.4% (Supplementary file 4), suggesting that the TL approach can be effective for predicting allostery in a homologous protein even in the absence of high-resolution structural information.
 
-## Comparison with sequence-based featurization
+![Figure 6.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig6-v2.jpg)
+
+**Figure 6.:** (A) Correlation between relative performance and the identity between the template protein and the target protein for modeling. (B) Correlation between relative performance and the root mean squared distance (RMSD) between the template protein and the target protein for modeling. R squared shows the coefficient of determination of the corresponding linear regression (red: templates for TetR; blue: templates for MphR; purple: templates for RolR; orange: templates for TtgR).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79932/elife-79932-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Correlation of sequence identity and RMSD between the four allosteric transcription factors (aTFs) and their corresponding templates used in generating homology models. R squared shows the coefficient of determination of the corresponding linear regression (red: templates for TetR; blue: templates for MphR; purple: templates for RolR; orange: templates for TtgR).
+
+### Comparison with sequence-based featurization
 
 In recent years, deep representation learning has emerged as an effective method for protein featurization. This approach, which generates a representation of a given sequence, is based on information extracted from the known protein sequence universe (So and Karplus, 1996a; Biswas et al., 2021; Garruss et al., 2021; Freschlin et al., 2022; Alley et al., 2019). In contrast, our approach is based on features derived from structural and physicochemical properties of amino acids. We sought to compare the performance of our model and a state-of-the-art sequence-based method, UniRep, which represents a protein sequence by a 1900-dimension vector (see Materials and methods for details) (Werten et al., 2016). Since UniRep features are based on protein sequences, an NN model trained with these features can be used to predict the protein phenotype upon every mutation (Table 1). For the prediction of hotspots (Table 2), we first rank all sites based on the fraction of predicted dead mutations for each site. The top N sites are then identified as hotspots, where N is the number of hotspots determined from DMS experiment for the protein of interest. We then evaluate the performance of the model by comparing the list of predicted hotspots with experimentally identified ones. When the UniRep features are combined with our 27 site features, the model can be used to predict mutation phenotypes and allosteric hotspots with the same procedure.
 
+**Table 1.**
+ Mutation phenotype prediction performancea.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TetR</th>
+      <th>MphR</th>
+      <th>RolR</th>
+      <th>TtgR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UniRep1900</td>
+      <td>0.50±0.01</td>
+      <td>0.65±0.00</td>
+      <td>0.57±0.01</td>
+      <td>0.43±0.01</td>
+    </tr>
+    <tr>
+      <td>feat1927</td>
+      <td>0.53±0.00</td>
+      <td>0.69±0.00</td>
+      <td>0.59±0.02</td>
+      <td>0.44±0.00</td>
+    </tr>
+    <tr>
+      <td>random</td>
+      <td>0.11</td>
+      <td>0.12</td>
+      <td>0.09</td>
+      <td>0.07</td>
+    </tr>
+  </tbody>
+</table>
+
+_a. Performances are evaluated as the average performance of five times of fivefold cross-validation tests; Unirep1900 and feat1927 show best NN performance using only Unirep features and using Unirep features in combination with 27 physical features, respectively. Data are presented as average ± std._
+
+**Table 2.**
+ Hotspot prediction performancea.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TetR</th>
+      <th>MphR</th>
+      <th>RolR</th>
+      <th>TtgR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>feat27</td>
+      <td>0.83±0.02</td>
+      <td>0.82±0.02</td>
+      <td>0.64±0.02</td>
+      <td>0.54±0.03</td>
+    </tr>
+    <tr>
+      <td>UniRep1900</td>
+      <td>0.61±0.07</td>
+      <td>0.50±0.02</td>
+      <td>0.32±0.03</td>
+      <td>0.35±0.03</td>
+    </tr>
+    <tr>
+      <td>random</td>
+      <td>0.19</td>
+      <td>0.16</td>
+      <td>0.26</td>
+      <td>0.21</td>
+    </tr>
+  </tbody>
+</table>
+
+_a. Feat27 represents the fitness of the best-performing feature combination emerged in feature selection with the GA-NN approach. Performances are evaluated as the average performance of five times of fivefold cross-validation tests, and presented as average ± std._
+
 As summarized in Tables 1–2, UniRep feature-based models perform significantly better than the random baselines in both mutation phenotype prediction and hotspot prediction for all four homologous aTFs, highlighting the ability of such models in distilling fundamental features of a protein. However, there is a noticeable gap between hotspot prediction performance using UniRep features and our optimal models. This gap can be understood from the results of our above analysis using F score and JSD that global structure-based features are more indicative of allostery than sequence-based features. While our 27 features provide explicit and comprehensive descriptions of a residues’ physicochemical property, location, motional correlation, and local environment in the context of the entire protein structure, sequence-based featurization attempts to infer such information from the sequence universe in order to establish an interpretable model without using structural information explicitly. When the 1900 UniRep features are combined with the 27 physical features in our model, a marginal yet consistent improvement in mutation phenotype prediction is observed (Table 1). This suggests that combining sequence-based features and features of clearer physical meaning can lead to improved predictive power. TL also proves to be effective in boosting the performance of cross-protein mutation prediction when the UniRep features and the 27 physical features are combined (Supplementary file 5).
 
-## Concluding remarks
+### Concluding remarks
 
 Prediction of residues essential to protein allostery is of great fundamental and biomedical significance. An important question is to what degree allosteric hotspots and, therefore, mechanistic details of allostery, are conserved among homologous proteins. In this study, by combining DMS and machine learning analyses of four homologous aTFs, we have gained new understanding of this question. DMS has enabled a systemic, function-centric, approach to identify allosteric hotspots in proteins. Analysis of the distribution and basic properties of allosteric hotspots in the four aTFs has revealed key insights. First, hotspot residues are distributed across the structure rather than being limited to the specific pathway(s) that connect the inducer and DNA-binding sites as commonly assumed in allostery models. Nonetheless, they are relatively enriched near the dimerization interface and α4 helix at the LBD/DBD interface, highlighting the role of these regions in signal transmission (Jumper et al., 2021). Second, we observe that LRIs (in terms of sequence separation) are more prevalent among hotspots, suggesting that in addition to being important to folding and stability, LRIs are also relevant to propagating allostery signals. Third, a systematic analysis of F scores of a diverse set (Fowler and Fields, 2014) of protein site features suggests that in all four homologs, global structural and dynamic properties such as distance to centrality peaks, motion covariance with inducer/DNA-binding site residues are more useful than local and intrinsic physicochemical properties for differentiating hotspot from non-hotspot residues. The importance of global properties to the identification of hotspots is further confirmed by GA-NN models that optimize the combination of features to best classify whether a protein site is an allosteric hotspot. Fourth, combined with TL, the GA-NN model trained for one protein can lead to a reasonable prediction of hotspots in a homolog. Further, GA-NN models built using homology-modeled structures rather than actual crystal structure also perform well. These results support the idea that a generally similar allostery mechanism is at play in these homologous proteins.
 
@@ -115,55 +313,59 @@ Finally, we acknowledge that the accuracy of the GA-NN model, especially for CPP
 
 ## Materials and methods
 
-## Plasmid construction
+### Plasmid construction
 
 We constructed a sensor plasmid with TtgR (Uniprot #Q88N29) and RolR (Uniprot #Q8NR95) cloned into a low-copy backbone (SC101 origin of replication) carrying spectinomycin resistance. The ttgR gene was driven by a variant of promoter apFAB61 and Bba_J61132 RBS while the apFAB50 promoter and BBa_J61119 RBS expressed rolR (Terán et al., 2003). On a second reporter plasmid, superfolder (sf) GFP was cloned into a high-copy backbone (ColE1 origin of replication) carrying kanamycin resistance. In the TtgR reporter, sfGFP was under the control of the native promoter driving ttgA expression (Li et al., 2012) modified to contain canonical –10 (5’-TATAAT-3’) and –35 (5’-TTGACA-3’) and the g10 RBS. sfGFP in the RolR reporter was driven by the lac operon promoter with rolO (Rogers et al., 2015) upstream of –35 and Bujard RBS. To control for plasmid copy number, red fluorescent protein (RFP) was constitutively expressed with the BBa_J23106 promoter and Plotkin RBS (Terán et al., 2003) in a divergent orientation to sfGFP. Plasmid construction for TetR(B) was previously described (Leander et al., 2020) and pJRK-H-mphR from the Church lab was obtained for MphR (Magoč and Salzberg, 2011).
 
-## Library synthesis
+### Library synthesis
 
 Comprehensive single-mutant libraries of TetR, TtgR, MphR, and RolR were generated by replacing all wild-type residues to all other 19 canonical amino acids starting at position 2 (total mutant sequences – TetR: 3914; TtgR: 3971; MphR: 3667; RolR: 4332). Oligonucleotides encoding each single point mutation were synthesized as single-stranded Oligo Pools from Twist Bioscience and Agilent. Due to limitations in synthesis length, oligonucleotide pools were organized into six to seven subpools spanning the encoding region for each homolog and were encoded and amplified as previously described (Leander et al., 2020). Regions of the sensor plasmids corresponding to the oligonucleotide subpools were amplified with primers linearizing the backbone, adding a BsaI restriction site, and removing the wild-type sequence. Vector backbones were further digested with DpnI, BsaI, and Antarctic phosphatase before library assembly.
 
 We assembled mutant sub-libraries by combining the linearized sensor backbone with each oligo subpool at a molar ratio of 1:5 using Golden Gate Assembly Kit (New England Biolabs; 37°C for 5 min and 60°C for 5 min, repeated ×30). Reactions were dialyzed with water on silica membranes (0.025 μm pores) for 1 hr before transformed into DH10B cells (New England Biolabs). Library sizes of at least 100,000 colony-forming units (CFU) were considered successful. MphR libraries were complete at this point. Cells (New England Biolabs) containing the reporter pColE1_sfGFP_RFP_kanR (DH5α for TetR and RolR, and DH10B for TtgR) were transformed with extracted plasmids to obtain libraries of at least 100,000 CFU.
 
-## Fluorescence-activated cell sorting
+### Fluorescence-activated cell sorting
 
 Library cultures for each subpool were grown in triplicate for 16 hr at 37°C in lysogeny broth (LB) containing 50 µg/mL kanamycin and 100 µg/mL spectinomycin for TetR, TtgR, and RolR; MphR cultures were maintained with 100 µg/mL carbenicillin. Libraries were seeded from a 50 µL aliquot of glycerol stocks and grown to an OD600 ~ 0.2 before being split in two and induced with 1 µM aTC, 500 µM Nar, 1 mM Ery, or 7.5 mM Res, and grown overnight. Saturated (un)induced sub-library cultures were split into two groups and pooled based location in the gene for sorting and sequencing: sub-libraries 1-3 covered the N terminus while sub-libraries 4-6/7 covered the C terminus of the homologs. Pooled sub-libraries were diluted 1:50 in ×1 phosphate buffered saline and fluorescence intensity was measured on an SH800S Cell Sorter (Sony). Remaining uninduced cultures were spun down and plasmids were extracted for next-generation sequencing to represent the presorted library, identifying all variants present in the library. For sorting, we first gated cells to remove debris and doublets and selected for variants constitutively expressing RFP; this gate was skipped for MphR which did not express RFP. The induction profile of each wild-type homolog was used as reference in drawing gates on GFP fluorescence (Figure 1—figure supplement 1). Uninduced and induced pooled sub-libraries were sorted between ~10 and 1000 RFU (based on fluorescence distribution of repressed, DNA-bound wild-type TetR homologs; Figure 1—figure supplement 1) to identify nonfluorescent, inactive variants. A total of 500,000 events were sorted for each gated population and cells were recovered in 5 mL of LB for 1 hr before antibiotics were added and cultures grown for an additional 6 hr until an OD600 ~ 0.2 was reached when cells were spun down and plasmids extracted for sequencing. Each library was grown, sorted, and sequenced in triplicate.
 
-## NGS preparation and analysis
+### NGS preparation and analysis
 
 In total, three conditions were sequenced in triplicate for each homolog sub-library: (1) the presorted population, (2) the sorted nonfluorescent, uninduced population, and (3) the sorted nonfluorescent, induced population. Sub-libraries were prepared for sequencing with plasmids extracted from the each of the three populations, amplified with two primer sets in a two-step PCR, and sequenced using a 2×250 Illumina MiSeq run as previously described (Leander et al., 2020). Paired-end Illumina sequencing reads were merged with FLASH (Fast Length Adjustment of SHort reads) using the default software parameters (Edgar and Flyvbjerg, 2015). Phred quality scores were used to compute the total number of expected errors for each merged read (Potter et al., 2018). Reads exceeding the maximum expected error threshold of 1 were removed.
 
 Before analysis, two separate normalizations were performed on the total sequence reads to compare and draw common thresholds (1) between experimental conditions and replicates and (2) across proteins. First, total sequencing reads were normalized to 200k total (100k for each sub-library) across all three conditions and replicates for each homolog. Next, reads were normalized to account for differences in theoretical size of each protein’s single-mutant library. For example, reads of RolR (4332 possible mutants) increased by ×1.18 relative to MphR (3667 possible mutants) for a total of 236k reads. A read threshold of 5 was then applied across all replicates, conditions, and proteins to reduce sequencing noise; increasing this threshold to 10 reads did not significantly affect final analyses or positions identified as hotspots (Figure 1—figure supplement 5).
 
-Variants that did not have at least 5 reads in all replicates of the presorted population were not considered present in the dataset (gray, Figure 1—figure supplements 2–3). To be classified as ‘dead’ within a single replicate, variants must have at least 5 reads in both the induced and uninduced sorted populations. There was good correlation between replicates in the number of dead variants identified a every position within the protein (Supplementary file 2). Dead variants were then given a score of 0, 1, or 2 based on how many replicates within a protein they were identified as dead in as a measure of confidence in calling these variants dead. These scores were then used to calculate a weighted score for every position in the protein based on the number and confidence of dead variants at that position using Equation 5:(5)(0∗D1x)+(1∗D2x)+(2∗D3x)Totalx
+Variants that did not have at least 5 reads in all replicates of the presorted population were not considered present in the dataset (gray, Figure 1—figure supplements 2–3). To be classified as ‘dead’ within a single replicate, variants must have at least 5 reads in both the induced and uninduced sorted populations. There was good correlation between replicates in the number of dead variants identified a every position within the protein (Supplementary file 2). Dead variants were then given a score of 0, 1, or 2 based on how many replicates within a protein they were identified as dead in as a measure of confidence in calling these variants dead. These scores were then used to calculate a weighted score for every position in the protein based on the number and confidence of dead variants at that position using Equation 5:
+
+$$
+\frac{(0∗D1_{x})+(1∗D2_{x})+(2∗D3_{x})}{Total_{x}}
+$$
 
 At position x, D1 is the number of variants dead in one replicate, D2 is the number dead in two replicates, D3 is the number dead in three replicates, and Total is the total number of variants present in the dataset. Dead variants present in only one replicate were not considered confident enough to include in the weighted score and were discarded. The interquartile range of weighted scores for every protein was calculated and positions with weighted scores above the calculated Q3 were identified as allosteric hotspots (Figure 1—figure supplement 4). Sequencing data uploaded here. https://doi.org/10.5281/zenodo.7020077.
 
-## Sequence conservation
+### Sequence conservation
 
 Sequence conservation of TetR(B) was previously calculated (Leander et al., 2020). Homologs of TtgR, MphR, and RolR were identified using HMM search (https://www.ebi.ac.uk/Tools/hmmer/) (Larkin et al., 2007) against UniProtKB database with individual sequences used as queries. Sequences with alignment coverage less than 95% of full-length TtgR, MphR, and RolR were removed from consideration. The remaining sequences were aligned using Clustal Omega (Waterhouse et al., 2009). After applying a redundancy cutoff of 90%, we were left with 500–6000 which was used to evaluate sequence conservation score within Jalview (Livingstone and Barton, 1993). Conservation score in Jalview is computed by AMAS tool (Vehlow et al., 2011) and positions with a score of 7 or more were termed highly conserved. Two-sample t-tests were used to compare the average conservation score of residues classified as dead or no effect for each homolog. Ligand-contacting residues, defined as contacts within 5 Å of the ligand, were removed when calculating average conservation.
 
-## Mapping, clustering, and ranking LRIs
+### Mapping, clustering, and ranking LRIs
 
 Contact maps of TetR homologs were generated using CMView (Kellogg et al., 2011). Crystal structures of TetR (PDB ID: 4AC0), TtgR (PDB ID: 2UXU), MphR (PDB ID: 3FRQ), and RolR (PDB ID: 3AQT) dimers were obtained and removed from ligands and water molecules. Structures were edited to combine the two monomers and renumber residues to identify intermolecular dimer interactions. Interactions between α carbon atoms within 8 Å of were identified and a minimum sequence separation of 10 residues was set to select for LRIs. For each homolog, k-means clustering was used to identify subgroups of LRIs based on location similarity in the contact map. The elbow method was used to determine the optimal number of clusters in which the within-cluster sum of squares was minimized (Figure 2—figure supplement 2); 10 clusters were chosen for each homolog. Clusters within each contact map were then ranked based on the percent of unique hotspots within the cluster (Supplementary file 3). A paired t-test was used to compare the percentage of hotspot and non-hotspot residues within all four homologs participating in LRIs.
 
-## Amino acid physiochemical properties
+### Amino acid physiochemical properties
 
 Physicochemical properties of mutations were compared by binning all substitutions that were dead or had no effect, removing ligand-contacting residues, across all four TetR homologs and calculating the average hydrophilicity, hydrophobicity, polarity, mass, SASA, and polarizability. A two-sample t-test was used to compare the means of the dead and no effect mutations for each of the six properties.
 
-## ΔΔG calculations and structural models of mutations
+### ΔΔG calculations and structural models of mutations
 
 The crystal structure of TetR(B) with bound [Minocycline:Mg]+ dimer structure was obtained and water molecules removed before calculations run; the bound ligand was also removed from TetR(B). All modeling calculations were performed using the Rosetta molecular modeling suite v3.9. Single-point mutants were generated using the standard ddg_monomer application (Kawashima and Kanehisa, 2000), which enables local conformational to minimize energy. Calculations were run at every position in protein for all 20 amino acids, generating 50 possible mutant and wild-type structural models for each protein variant. Structures with the lowest total energy from the 50 mutant and wild-type models were used to calculate ΔΔG and served as models for structural analysis.
 
-## Calculation of physicochemical features (#1–8)
+### Calculation of physicochemical features (#1–8)
 
 The eight physicochemical properties of wild-type amino acids, molecular weight, number of electrostatic charges, hydrophobicity, aromaticity, number of potential hydrogen bond, polarity, polarizability, and flexibility are obtained from the AAindex database (Waterhouse et al., 2018).
 
-## Calculation of local structural features (#9–16)
+### Calculation of local structural features (#9–16)
 
 The PDB structures or the modeled structures, generated using the SWISS-MODEL webserver (Baxa et al., 2014), of the four homologs were used for the calculation of any structure-based features in the corresponding cases. Local atomic density of a residue R was calculated as the number of atoms from other residues that are within 5 Å to any atom of the residue R. Backbone entropy loss and sidechain entropy loss of a residue, measuring the loss of conformational entropy of a residue upon protein folding, were calculated with the PLOPS webserver based on the crystal structure of the protein (Joosten et al., 2011). SASA was calculated with the DSSP webserver (Kabsch and Sander, 1983; Li et al., 2017). The number of potential hydrogen bonds of a residue was calculated with the WHAT IF webserver maintained by the Vrient group at the Radboud University (The WHAT IF Web Interface (umcn.nl)). The single-residue frustration index was calculated with AWSEM-MD Frustratometer based on the crystal structure of the protein (Chakrabarty and Parekh, 2016). It measures how energetically favorable the wild-type residue is for its position in the 3D structure of the protein, when compared with the other 19 possible amino acid choices. X-ray crystallographic B-factor of a residue was obtained from the ENM webserver (Li et al., 2017). LSE measures the likelihood of the local sequence around the residue to change secondary structure. The calculation of LSE for a residue follows the method described by Hwang et al., which is based on the probability of the four 4-residue sequences that contain the target residue to assume eight different secondary structures as observed in the protein data bank (Jenik et al., 2012).
 
-## Calculation of global structural features (#17–27)
+### Calculation of global structural features (#17–27)
 
 The correlation of motion of a residue with the DNA or ligand region was calculated as the maximum absolute value of correlation it has with any of the 10 residues that are closest to DNA/ligand. Orientational cross-correlations between residue fluctuations are calculated using the ENM server (Li et al., 2017), the values vary from –1 (fully anticorrelated motions) to +1 (fully correlated). Maximum correlation of motion of a residue was calculated as the average of the five largest absolute values of correlation the residue has with any other residue. Distance of a residue to DNA was calculated by first modeling a DNA sequence of 15 nucleotide pairs to the proteins studied through structural alignment with the PDB structure of 1QPI. The distance between the α carbon of a residue and the closest DNA nucleotide, where the position of a nucleotide is represented by the position of its center of mass, was then calculated. Distance of a residue to ligand was calculated as the distance between the α carbon of the residue to the closest center of mass of a ligand.
 
@@ -171,31 +373,31 @@ Centrality scores of each residue were calculated using the Network Analysis of 
 
 Sequence propagation of a residue R was defined as the largest sequence separation between R and all other residues within 5 Å of R, as was measured by the distance between α carbon atoms.
 
-## Machine learning methods
+### Machine learning methods
 
-## Architecture of the NN
+#### Architecture of the NN
 
 We used the Keras machine learning package to build and train fully connected feedforward NNs. All implemented NNs (except those involving UniRep features) have one hidden layer of 10 neurons (with RELU activation) and 2 neurons (with softmax activation) in the output layer. Xavier initialization, Adams optimizer, categorical cross-entropy loss function, and a learning rate of 0.0007 were used in all cases.
 
 NNs using UniRep features alone (labeled as UniRep1900) and NNs using UniRep features in combination with the 27 physical features (labeled as feat1927) have the same architecture as the NNs mentioned above except for an additional batch normalization layer in front of the hidden layer of 10 neurons. Hyperparameters (learning rate, epochs, class weights in the loss function) are tuned in a grid search to maximize performance.
 
-## Evaluation of different feature combinations for a given dataset
+#### Evaluation of different feature combinations for a given dataset
 
 For a given dataset (e.g., data of a single protein), performance of different feature combinations is evaluated through fivefold cross-validation. Specifically, in fivefold cross-validation, the given dataset is randomly divided into five equal partitions. Each partition is used as the test set once, while the other four partitions are used as the training set for the NN. The fivefold cross-validation performance is then evaluated as the average of the five test F1 scores. The fitness of a given feature combination is evaluated as the average performance of five times of fivefold cross-validation.
 
-## Selection of best feature combinations
+#### Selection of best feature combinations
 
 For a given dimension of the feature space (p), we used a genetic algorithm to select the best feature combinations in terms of their fitnesses for a dataset for the given p. Specifically, we start with a randomly generated initial gene pool (generation 1) containing 300 genes, with each gene being a different p-feature combination and its fitness evaluated and recorded. A point mutation (change of 1 feature) is then made to each gene (parent) to generate 300 new genes (sons) that have not been evaluated before. The sons are then evaluated, and the 300 fittest genes are selected from the composite pool (parents plus sons) to form the next generation.
 
-## Cross-protein predictions
+### Cross-protein predictions
 
 When making predictions on a test protein A using NNs trained with data of a different protein B, an NN is trained with all data of protein B using a certain feature combination, and make predictions on all data of protein A to obtain a test F1 score. Such CPP procedure is carried out for five times for a given feature combination, and its performance is evaluated as the five-time-average F1 score. All the top 300 p-feature combinations for protein B (the last generation obtained through the genetic algorithm optimization) are evaluated for CPP on other proteins, with p=1–10.
 
-## CPPs with TL
+### CPPs with TL
 
 Making CPPs with TL contains one more step than the above CPP procedure. Specifically, for a test protein A, its data is randomly partitioned into 10 equal subsets. For each subset, an NN trained with all data of protein B using a certain feature combination is further trained with one subset of data of protein A. The NN is then used to make predictions on the other nine subsets to obtain one test F1 score. The CPP (with TL) performance of the feature combination is then evaluated as the 10-time-average F1 score.
 
-## Mutation phenotype and hotspot prediction using UniRep features
+### Mutation phenotype and hotspot prediction using UniRep features
 
 NNs using UniRep1900 features and feat1927 can be readily used for mutation phenotype prediction as UniRep generates a distinct 1900-dimensional vector to represent each mutant sequence. Feat1927 is generated by concatenating the 1900 UniRep features for a mutant and the 27 features of the mutation site. The performance of mutation phenotype predictions is evaluated as the average performance of five times of fivefold cross-validation tests.
 

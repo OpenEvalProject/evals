@@ -19,11 +19,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Ophthalmology and Visual Sciences, University of Michigan Ann Arbor United States
-2. https://ror.org/01hcyya48 Molecular and Developmental Biology Graduate Program, Cincinnati Children’s Hospital Medical Center Cincinnati United States
-3. https://ror.org/00jmfr291 Department of Molecular & Integrative Physiology, University of Michigan Ann Arbor United States
-4. https://ror.org/00jmfr291 Department of Internal Medicine, Division of Gastroenterology and Hepatology, University of Michigan Ann Arbor United States
-5. https://ror.org/00jmfr291 Rogel Cancer Center, University of Michigan Ann Arbor United States
+1. Department of Ophthalmology and Visual Sciences, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Molecular and Developmental Biology Graduate Program, Cincinnati Children’s Hospital Medical Center Cincinnati United States ([ROR:01hcyya48](https://ror.org/01hcyya48))
+3. Department of Molecular & Integrative Physiology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+4. Department of Internal Medicine, Division of Gastroenterology and Hepatology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+5. Rogel Cancer Center, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -45,13 +45,37 @@ Glutaminolysis via GLS is indispensable to the metabolism of many cancer cells (
 
 ## Results
 
-## Generation of a rod photoreceptor-specific, Gls knockout mouse
+### Generation of a rod photoreceptor-specific, Gls knockout mouse
 
 To confirm the single-cell RNA sequencing data (Macosko et al., 2015; Voigt et al., 2020), we conducted real-time reverse transcription PCR (qRT-PCR) with primers specific for either Gls or Gls2 (Supplementary file 1). These data show that Gls expression is 14 times greater than that of Gls2 in the mouse retina (Figure 1—figure supplement 1A), indicating that GLS is indeed the predominant isoform in murine retina. Furthermore, retinal sections stained for GLS using immunofluorescence showed that GLS is expressed throughout the retina with enrichment in the PR inner segments (Figure 1—figure supplement 1B). It has been shown that GLS activity is at least twofold higher in the PR inner segments, which are rich in mitochondria (Ross et al., 1987). Accordingly, GLS segregated to the mitochondrial-enriched fraction more than the cytosolic fraction in the retina (Figure 1—figure supplement 1C).
 
 We generated a rod PR-specific, Gls conditional knockout mouse to determine the role of GLS activity in PR survival and function. Animals homozygous for a floxed Gls allele and expressing a Cre-recombinase under the control of the rhodopsin promoter (Glsfl/fl;RhoCre+, cKO) as well as animals expressing only the Cre-recombinase (Glswt/wt;RhoCre+, WT) were generated. Total retinal lysate was collected from cKO and WT animals at postnatal day 14 (P14) and GLS expression was measured (Figure 1A). These data show that cKO animals have significantly less GLS expression compared to WT animals. Whole eyes were collected at P14 and stained for GLS using immunofluorescence. Figure 1B shows significant loss of GLS expression in PR inner segments of cKO animals compared to WT animals. The remaining GLS in the inner segment layer is found within cone PRs, as shown in Figure 1B (arrows), confirming the knockout is specific to rod PRs. A lack of compensatory upregulation of Gls2 in the retina was confirmed via qRT-PCR and in PRs using immunofluorescence (Figure 1—figure supplement 1D–E).
 
-## Loss of GLS causes rapid PR degeneration
+![Figure 1.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig1-v1.jpg)
+
+**Figure 1.:** (A) Western blot analysis showing decreased GLS protein levels in the retina of WT and cKO mice at post-natal day 14 (P14). Quantitation of western blot results for N=3–4 animals per group. (B) Representative images for immunofluorescence of P14 mouse retinas (N=3 animals per group) stained for GLS (red), cone opsin (green), and nuclei (DAPI, blue) in WT and cKO mice. White arrows indicate remaining GLS expression in cone photoreceptors. Left and middle panel scale bars are 40 µm. Right image scale bar is 20 µm. (C) OCT images detailing outer retinal changes in cKO mice over time compared to WT. Retinal structures are comparable to WT mice at P14 but rapidly thin with age. (D) Total retinal thickness, (E) ONL thickness and (F) IS/OS thickness as determined by OCT in WT and cKO mice over time. N=4–9 eyes per group. (G) Representative hematoxylin and eosin stained retinal sections from rod photoreceptor-specific Gls conditional knockout (cKO) mice compared to wild-type (WT) mice at P14, P21, and P42. ONL, outer nuclear layer; INL, inner nuclear layer; GCL, ganglion cell layer. Scale bar is 40 µm. (H) ONL cell counts as a percent of WT retinas at P14, P21, and P42. N=5–10 eyes per group. (I) Representative images of WT and cKO retinas stained to detect TUNEL-positive cells (green) at P21. Scale bar is 40 µm. N=3–5 animals per group. (J) Quantitation of percent TUNEL-positive cells at P21 showing an increase in TUNEL-positive cells in cKO animals. N=3–5 animals per group. (K) qRT-PCR of genes related to cell death pathways including apoptosis (Apop.), necroptosis (Nec.), autophagy (Aut.), and ferroptosis (Ferrop) in WT and cKO mice at P14. N=6 animals per group. Statistical differences in (A), (D), (E), (F), (H), (J) and (K) are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± standard error of the mean. OCT: optical coherence tomography, OS: outer segment, IS: inner segment, ONL: outer nuclear layer, INL: inner nuclear layer, GCL: ganglion cell layer, TUNEL: terminal deoxynucleotidyl transferase dUTP nick and labeling.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) qRT-PCR analysis of Gls and Gls2 in P14 mouse retina. Relative expression was analyzed by comparative threshold cycle (2^-ΔΔCT) method. Expression values were represented as fold change over Gls after normalization with β-actin. N=9 animals per group. (B) Representative GLS immunofluorescence in P21 WT animals. Scale bar is 40 µm. (C) Western blot analysis and quantitation of GLS in fractionated wild-type (WT) mouse retinas. TIM23 was used as a mitochondrial fraction marker and HSP90 as a cytosolic fraction marker. WR whole retina extract; C, cytosolic fraction; M, mitochondrial fraction. N=3 animals. (D) qRT-PCR analysis of Gls2 mRNA expression in the retina at P14 demonstrates no change between the rod photoreceptor-specific Gls conditional knockout mouse (cKO) and the wild-type (WT) mouse where both Gls alleles are present. Data are normalized to β-actin. N=5–6 animals per group. (E) Representative GLS2 immunofluorescence (red) images in cKO mice at P21 shows no increase in the expression of GLS2 as compared WT mice. Scale bar is 40 µm. Statistical differences in (A), (B) and (D) are based on an unpaired two-tailed Student’s t-test where **p<0.01 and ***p<0.001. Data are presented as mean ± SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative OCT images from the rod photoreceptor-specific Gls conditional knockout (cKO) mouse compared to wild-type (WT) mice at P21 and P28 housed with 12 hr light/12 hr dark cycles (cyclic-reared) or dark-reared. The white vertical bar represents the thickness of the outer nuclear layer (ONL). (B) Quantitation of ONL thickness as determined by OCT in cKO mice compared to WT mice at P21 and P28 under the different housing conditions. N=4–6 animals per group. Statistical differences in (B) are based on a One-way ANOVA with Tukey’s post hoc test for multiple comparisons where *** p<0.001. Data are presented as mean ± SEM.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Representative images from GFAP staining indicate increased Müller glial cell activation in cKO compared to WT mice at P21 and P42. Scale bar is 40 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Representative immunofluorescence images of rhodopsin (RHO) staining (green) in rod photoreceptor-specific Gls conditional knockout (cKO) mice compared to wild-type (WT) mice at P21. N=3 animals per group. Scale bar is 40 µm. (B) Representative transmission electron microscopy (TEM) images of retinal sections from cKO mice compared to WT mice at P21. Images taken at ×250 magnification and scale bar is 5 µm. (C) TEM images of retinal sections from cKO mice compared to WT mice at P21 taken at ×500 magnification and scale bar is 3 µm. (D) TEM images of retinal sections from cKO and WT mice at P21 taken at ×8000 and ×6000 magnification, respectively, to show ribbon synapses. Intact ribbon synapses in WT rods are shown in yellow boxes. A structurally intact ribbon synapse in cKO rods is denoted by the yellow arrow. Scale bars are 500 nm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Representative retinal sections stained with wheat germ agglutinin (WGA) to label photoreceptor synaptic membranes and non-synaptic membranes in the rod photoreceptor-specific Gls conditional knockout (cKO) mice compared to wild-type (WT) mice at P14. OPL, outer plexiform layer; IPL, inner plexiform layer. N=3 animals per group. Scale bar is 40 µm. (B) Representative retinal sections stained with an antibody against Bassoon to label ribbon synapses of rods and cones in the OPL in cKO and WT mice at P14. N=3 animals per group. Scale bar is 40 µm. (C) Representative retinal sections from WT and cKO animals at P14, P21, and P42 are immunostained with antibodies against major cell-type-specific markers (red): calretinin (amacrine cells), BRN3A (ganglion cells), CHX10 (bipolar cells). ONL, outer nuclear layer; INL, inner nuclear layer; GCL, ganglion cell layer. N=3 animals per group. Scale bars are 40 µm. (D) Inner retinal area as a percent of WT retinas at P14, P21, and P42. N=5–10 eyes per group. Statistical differences in (D) are based on an unpaired two-tailed Student’s t-test where **p<0.01. Data are presented as mean ± SEM.
+
+### Loss of GLS causes rapid PR degeneration
 
 These data clearly show that GLS is significantly downregulated in cKO animals. To determine if loss of GLS effects PR survival, optical coherence tomography (OCT) was used to measure the in vivo thickness of each retinal layer at various timepoints in cKO and WT animals (Figure 1C). At P14, cKO and WT animals are indistinguishable in total retinal and outer nuclear layer (ONL) thickness (Figure 1D and E). However, by P21 a significant loss in total retinal, ONL, and IS/OS thickness is observed (Figure 1D-F) and cKO animals continue to experience loss of retinal, ONL and IS/OS thickness out to P84. Considering mice open their eyes around P14, we assessed if light exposure was contributing to PR degeneration. cKO mice were reared in the dark, but no change in the rate of ONL degeneration was observed when comparing dark-reared mice to those reared in 12 hr light/12 hr dark cyclic lighting conditions (Figure 1—figure supplement 2). Histology at P14, P21, and P42 confirmed loss of PR cell bodies (Figure 1G and H). As has been seen in other models of PR degeneration, glial fibrillary acidic protein (GFAP), which is a marker of stress-induced Müller glial cell activation, was increased in the retina of the cKO mouse at P21 and P42 (Figure 1—figure supplement 3; Grenell et al., 2019).
 
@@ -61,47 +85,87 @@ Retinas were stained for RHO expression using immunofluorescence, which indicate
 
 A deficiency in GLS activity could lead to a significant decrease in Glu, the main neurotransmitter used by PRs. TEM was utilized to assess the ultrastructure of rod PR ribbon synapses, which appear structurally intact in the remaining rod PRs of the cKO retina at P21 (Figure 1—figure supplement 4D). To further evaluate the synaptic connectivity between PRs and the inner retina, retinal sections from cKO and WT mice at P14 were labeled with wheat germ agglutinin (WGA), a plant lectin that binds N-acetylglucosamine and sialic acid residues, to highlight PR synaptic membranes and non-synaptic membranes (McLaughlin et al., 1980). Retinal sections from P14 WT and cKO mice stained with WGA did not demonstrate significant differences in the labeling of PR synaptic membranes in the outer plexiform layer (OPL; Figure 1—figure supplement 5A). Staining of P14 retinal sections from WT and cKO mice with an antibody against Bassoon, which labels the ribbon synapses of rods and cones in the OPL (Kutsyr et al., 2021), did not demonstrate differences in the synaptic connectivity between PRs and second-order neurons (Figure 1—figure supplement 5B). Additionally, retinal sections at P14, P21, and P42 were stained with antibodies against major cell-types in the inner retina, such as amacrine, ganglion, and bipolar cells, and no significant alterations in immunofluorescent patterns to suggest an inner retinal developmental abnormality were observed between cKO and WT animals (Figure 1—figure supplement 5C). Accordingly, inner retinal thinning was not observed until P42 (Figure 1—figure supplement 5D), when approximately 25% of cells remained in the ONL (Figure 1H). This thinning of the inner retinal area is likely secondary to the primary PR degeneration similar to that seen in other mouse models of retinal degeneration (Ueta et al., 2012).
 
-## Loss of Gls in rod photoreceptors impairs retinal function
+### Loss of Gls in rod photoreceptors impairs retinal function
 
 Loss of IS/OS thickness, shorter OSs, and loss of PR cell bodies can result in functional loss. Thus, electroretinography (ERG) analysis was performed on cKO and WT animals at P21 and P42 (Figure 2). As expected, cKO animals show a significant loss in rod-driven scotopic a- and b-wave amplitudes at P21, which are further decreased by P42 (Figure 2A-C). Interestingly, a significant loss in photopic b-wave amplitude was also found at P42, suggesting a cone PR defect (Figure 2D). Immunofluorescent staining found that cone outer segments shorten as rod degeneration progresses from P14 to P42 (Figure 2E) supporting secondary cone degeneration, which is a common phenotype associated with rod-mediated retinal degeneration (Caruso et al., 2020).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig2-v1.jpg)
 
-**Figure 2.:** Gls in rod photoreceptors impairs retinal function.(A) Representative scotopic and photopic electroretinography (ERG) tracings for the rod photoreceptor-specific Gls conditional knockout mice (cKO) compared wild-type (WT) mice at P21 and P42. (B) ERG scotopic a-wave and (C) b-wave amplitudes in cKO mice compared to WT mice at P21 and P42. A flash intensity of 32  cd*s/m2 was utilized. N=3–6 animals per group. (D) ERG photopic b-wave amplitudes in cKO mice compared to WT mice at P21 and P42. A flash intensity of 100  cd*s/m2 was used. N=3–6 animals per group. (E) Representative images from staining of the cone-specific marker peanut agglutinin (PNA, green) and nuclei (DAPI, blue) in retinal sections from cKO mice compared to WT mice at P14, P21, and P42. Scale bars are 40 µm. Statistical differences in (B), (C) and (D) are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± SEM. ONL, outer nuclear layer; IS, inner segments; OS, outer segments. N=3 per group.
+**Figure 2.:** (A) Representative scotopic and photopic electroretinography (ERG) tracings for the rod photoreceptor-specific Gls conditional knockout mice (cKO) compared wild-type (WT) mice at P21 and P42. (B) ERG scotopic a-wave and (C) b-wave amplitudes in cKO mice compared to WT mice at P21 and P42. A flash intensity of 32  cd*s/m2 was utilized. N=3–6 animals per group. (D) ERG photopic b-wave amplitudes in cKO mice compared to WT mice at P21 and P42. A flash intensity of 100  cd*s/m2 was used. N=3–6 animals per group. (E) Representative images from staining of the cone-specific marker peanut agglutinin (PNA, green) and nuclei (DAPI, blue) in retinal sections from cKO mice compared to WT mice at P14, P21, and P42. Scale bars are 40 µm. Statistical differences in (B), (C) and (D) are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± SEM. ONL, outer nuclear layer; IS, inner segments; OS, outer segments. N=3 per group.
 
-## GLS is necessary for maintenance of mature photoreceptors
+### GLS is necessary for maintenance of mature photoreceptors
 
 In mice expressing a Cre-recombinase under the control of the rhodopsin promoter, Cre-mediated excision of floxed genomic DNA has been observed as early as P7 (Le et al., 2006). To ensure the function of GLS is not restricted to this early phase of PR development and maturation and that it is critical to fully developed PRs as well, mice homozygous for a floxed Gls allele (Glsfl/fl) and expressing an inducible Cre-recombinase under the control of the Pde6g promoter (Glsfl/fl;Pde6gCre:ERT2; Koch et al., 2015) as well as animals expressing only the inducible Cre-recombinase (Glswt/wt;Pde6gCre:ERT2) were generated. This allowed for induction of Cre-recombinase activity in fully-mature PRs, specifically, by the administration of tamoxifen (TAM). Animals heterozygous for Pde6gCre:ERT2 and homozygous for either the WT or floxed Gls allele (IND-cKO) were generated, and TAM was administered intraperitoneally for 5 consecutive days starting at P22 (Figure 3) as retinal development is typically considered complete by P21 (Zhou et al., 2021). Significant reduction of GLS in the retina of IND-cKO mice after TAM induction was confirmed via western blot and in PRs with immunofluorescence analysis (Figure 3A and B). Ten days after TAM induction, IND- cKO mice began to show a thinning of the IS/OS layer that preceded and then paralleled the rapid ONL degeneration observed on longitudinal OCT and histology (Figure 3C-G). Hence, GLS is also critical for the survival of fully developed PRs.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig3-v1.jpg)
 
-**Figure 3.:** Gls mice carrying a tamoxifen (TAM)-inducible Cre-recombinase (IND-cKO) under the control of fl/flPde6g (Gls) compared to mice expressing only the inducible Cre-recombinase (fl/fl;Pde6gCre:ERT2Gls; WT). Both IND-cKO and WT were administered tamoxifen for 5 days starting at P22. (wt/wt;Pde6gCre:ERT2A) Quantitation of western blot results showing decreased GLS protein levels in the retina of IND-cKO animals at 10 days after tamoxifen induction compared to WT mice. HSP90 was used as a loading control. N=3–4 animals per group. (B) Representative GLS immunofluorescence (red) in IND-cKO mice compared to the wild-type (WT) mouse 10 days after tamoxifen induction. N=3 animals per group. Scale bar is 40 µm. (C) OCT images detailing outer retinal changes in WT and IND-cKO animals over time. Total retinal thickness (D), outer nuclear layer (ONL) thickness (E) and inner segment/outer segment (IS/OS) thickness (F) as determined by OCT for 38 days post tamoxifen. N=5–10 eyes per group. (G) Representative hematoxylin and eosin-stained retinal sections from IND-cKO mice compared to WT mice at 10 and 38 days after tamoxifen induction. N=3 animals per group. Scale bar is 40 µm. ONL, outer nuclear layer; INL, inner nuclear layer; GCL, ganglion cell layer. Quantitation of scotopic (H) and photopic (I) ERG a- and b-waves in WT and IND-cKO retina 10 days post TAM. N>12 eyes per genotype. Statistical differences in (A), (D), (E), (F), (H), and (I) are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± SEM.Figure 3—source data 1.Figure 3A.Wild-type (WT) and Gls (IND-cKO) 10 days after tamoxifen (TAM) treatment are denoted in the images. Rainbow molecular weight markers were utilized. The red boxes indicate the sections of membrane used in the final image.fl/fl;Pde6gCre:ERT2Figure 3—source data 2.Figure 3A.
+**Figure 3.:** Glsfl/fl mice carrying a tamoxifen (TAM)-inducible Cre-recombinase (IND-cKO) under the control of Pde6g (Glsfl/fl;Pde6gCre:ERT2) compared to mice expressing only the inducible Cre-recombinase (Glswt/wt;Pde6gCre:ERT2; WT). Both IND-cKO and WT were administered tamoxifen for 5 days starting at P22. (A) Quantitation of western blot results showing decreased GLS protein levels in the retina of IND-cKO animals at 10 days after tamoxifen induction compared to WT mice. HSP90 was used as a loading control. N=3–4 animals per group. (B) Representative GLS immunofluorescence (red) in IND-cKO mice compared to the wild-type (WT) mouse 10 days after tamoxifen induction. N=3 animals per group. Scale bar is 40 µm. (C) OCT images detailing outer retinal changes in WT and IND-cKO animals over time. Total retinal thickness (D), outer nuclear layer (ONL) thickness (E) and inner segment/outer segment (IS/OS) thickness (F) as determined by OCT for 38 days post tamoxifen. N=5–10 eyes per group. (G) Representative hematoxylin and eosin-stained retinal sections from IND-cKO mice compared to WT mice at 10 and 38 days after tamoxifen induction. N=3 animals per group. Scale bar is 40 µm. ONL, outer nuclear layer; INL, inner nuclear layer; GCL, ganglion cell layer. Quantitation of scotopic (H) and photopic (I) ERG a- and b-waves in WT and IND-cKO retina 10 days post TAM. N>12 eyes per genotype. Statistical differences in (A), (D), (E), (F), (H), and (I) are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± SEM.
 
 Beyond survival, GLS is also critical for PR function. ERG analyses performed 10 days after TAM induction, a time prior to major structural changes in the outer retina, demonstrated statistically significant reductions in the IND-cKO scotopic a- and b-waves as compared to the WT (Figure 3H). Similarly, photopic ERG demonstrated statistically significant decreases in the b-wave of the IND-cKO retina (Figure 3I). These data suggest that GLS-driven Gln catabolism plays a significant role not only in rod PR survival but their function as well. Additionally, Pde6g is expressed by rods to a significant degree but also by cones (Voigt et al., 2020). Therefore, the IND-cKO likely knocks out GLS from both rods and cones, which is in accordance with the immunofluorescence image in Figure 3B where GLS is not observed in rod or cone inner segments unlike in Figure 1B where GLS remains in cones. Hence, the reduction in IND-cKO photopic b-wave may suggest that GLS-driven Gln catabolism in cones impairs their synaptic transmission.
 
-## GLS knockout does not alter nucleotide metabolism
+### GLS knockout does not alter nucleotide metabolism
 
 Gln, and its breakdown product, Glu, have several fates in cellular metabolism (Figure 4A), which may underly the rapid and significant PR degeneration observed when GLS is knocked out of rod PRs. PRs require nucleotides to support phototransduction as well as transcriptional efforts for the continued synthesis of OSs. The catabolism of Gln to Glu by GLS produces an ammonium ion that can be used for the synthesis of nucleotides (Yoo et al., 2020). Additionally, inhibition of GLS has previously been demonstrated to inhibit pyrimidine and purine biosynthesis (Alkan et al., 2018; Okazaki et al., 2017). To explore the role of GLS-initiated Gln catabolism in nucleotide metabolism, in vivo targeted liquid chromatography-tandem mass spectrometry (LC-MS/MS) metabolomics were performed on P14 retina from WT and cKO animals (Supplementary file 2). No differences in key purine or pyrimidine metabolism intermediates, such as ribose 5-phosphate (R5P), inosine monophosphate (IMP), and uridine monophosphate (UMP), were observed between the WT and cKO retina (Figure 4B), suggesting that GLS-mediated catabolism of Gln is not a critical pathway for nucleotide synthesis in rod PRs.
 
-## Redox balance is altered upon knockout of GLS in rod photoreceptors
+![Figure 4.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic summarizing the biosynthetic and bioenergetic roles of glutamine. (B) Relative abundance of key intermediates in nucleotide metabolism in the retina of WT and cKO mice at P14 as determined by targeted metabolomics. N=6–7 animals per group. Relative abundance is the ion intensity normalized to the WT. (C) The NADP+/NADPH ratio, as determined by bioluminescence assay, is significantly increased in the cKO as compared to WT retina at P14. N=5–6 animals per group. (D) Relative abundance of GSSG in the retina of WT and cKO mice at P14, prior to PR degeneration, as determined by targeted metabolomics. N=6–7 animals per group. (E) qRT-PCR of genes related to redox homeostasis are significantly altered in cKO compared to WT mice. N=6 animals per group. (F) Relative abundance of metabolites in glycolysis and the TCA cycle in WT and cKO retina at P14. N=6–7 animals per group. (G) Mitochondrial stress test carried out on isolated WT and cKO retina at P14 using the BaroFuse. The baseline was established by perifusing the tissue for 90 min and then oligomycin, FCCP, and KCN were injected into the perifusate sequentially as indicated. (H) Comparison of the effects of oligomycin and FCCP on OCR in P14 WT and cKO retina. N=6–8 animals per group. (I) Western blot analysis and quantitation of the mitochondrial electron transport chain complexes show no differences between WT and cKO retina. N=3–4 animals per group. Fold change is in relation to WT. Statistical differences in (B–F), (H) and (I) are based on an unpaired two-tailed Student’s t-test where *p<0.05. Data are presented as mean ± SEM. R5P: ribose 5-phosphate, IMP: inosine monophosphate, UMP: uridine monophosphate, GSSG: glutathione disulfide, F6P: fructose 6-phosphate, DHAP: dihydroxyacetone phosphate, 2 PG: 2-phospho-D-glycerate, PEP: phosphoenolpyruvate, Pyr: pyruvate, Lac: lactate, Cit: citrate, α-KG: alpha-ketoglutarate, Suc: succinate, Mal: malate, Oligo: oligomycin, FCCP: carbonyl cyanide p-trifluoromethoxyphenylhydrazone, KCN: potassium cyanide, CI-NDUFB8: complex 1, NADH:ubiquinone oxidoreductase subunit B8, CII-SDHB: complex 2, succinate dehydrogenase complex iron sulfur subunit B, CIII-UQCRC2: complex 3, ubiquinol-cytochrome c reductase core protein 2, CV-ATP5A: complex 5, ATP synthase F1 subunit alpha, HSP90: heat shock protein 90.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** qRT-PCR analysis of genes related to (A) glycolysis and pyruvate metabolism as well as (B) the TCA cycle in rod photoreceptor-specific Gls conditional knockout mice (cKO) compared to wild-type (WT) mice retina at P14. Expression values are represented as fold change over WT after normalization with β-actin. N=6 animals per group. Statistical differences in (A) and (B) are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** qRT-PCR analysis of genes related to (A) glycolysis and pyruvate metabolism as well as (B) the TCA cycle in rod photoreceptor-specific Gls conditional knockout mice (cKO) eyecups compared to wild-type (WT) mice eyecups at P14. Expression values are represented as fold change over WT after normalization with β-actin. N=3–4 eyecups per group. Statistical differences in (A) and (B) are based on an unpaired two-tailed Student’s t-test where **p<0.01. Data are presented as mean ± SEM.
+
+### Redox balance is altered upon knockout of GLS in rod photoreceptors
 
 Gln can also be used for the generation of the antioxidant molecule glutathione as well as in a non-canonical NADPH generating pathway (Son et al., 2013; Yoo et al., 2020). Glutathione is a tripeptide of glutamate, glycine, and cysteine. Glutamate is a product of the GLS reaction, and previous studies have demonstrated that inhibiting GLS reduces glutathione levels and increases ROS (Li et al., 2015). As such, the NADP+/NADPH ratio was statistically significantly increased by 16% in the P14 cKO retina as compared to WT (Figure 4C), and the relative abundance of oxidized glutathione (GSSG) was decreased in the P14 cKO retina as compared to WT (Figure 4D). While an increased NADP+/NADPH ratio in the cKO retina may imply that the abundance of GSSG should be increased in the cKO retina since reduced glutathione can be recovered from the oxidized form by the conversion of NADPH to NADP+, the levels of GSSG have been seen to be reduced in other models where GLS is pharmacologically inhibited or genetically knocked down (Daemen et al., 2018). The lower levels of GSSG may signal an overall reduction in the biosynthesis of glutathione considering the product of the GLS reaction, glutamate, is directly necessary for its synthesis as well as indirectly responsible for cysteine via the SLC7A11 (xCT) cystine/glutamate antiporter (Yoo et al., 2020). The expression of Slc7a11 was reduced in the P14 cKO retina (Figure 4E). Hence, the biosynthesis of glutathione in rod PRs may be affected directly and indirectly when GLS is knocked out. In accordance with the antioxidants NADPH and glutathione potentially being reduced, the expression of the antioxidant enzymes Sod1 and Sod2, which detoxify superoxide radicals, were increased in the P14 cKO retina (Figure 4E). These data suggest that GLS-mediated Gln catabolism regulates redox balance in rod PRs, and the altered redox balance that is a consequence of its knockout may be one factor contributing to PR degeneration in the GLS cKO mouse.
 
-## Relative abundance of TCA cycle intermediates and mitochondrial function mostly unchanged in Gls cKO retina
+### Relative abundance of TCA cycle intermediates and mitochondrial function mostly unchanged in Gls cKO retina
 
 While the changes in certain redox elements were statistically significant, they were modest alterations and may not account in full for the significant and rapid PR degeneration noted in the GLS cKO mouse. Many cancer cells that utilize aerobic glycolysis rely on Gln to replenish TCA cycle intermediates, which maintain oxidative metabolism and provide biosynthetic precursors. Considering PRs utilize aerobic glycolysis, similar to cancer cells, and have significant bioenergetic demands, we next sought to determine if rod PRs also depend on GLS-initiated glutaminolysis for TCA cycle metabolites and oxidative metabolism. Interestingly, LC-MS/MS-based targeted metabolomics demonstrated very few changes in the relative pool sizes of TCA cycle metabolites in the cKO compared to WT retina at P14 with only malate showing a statistically significant decrease (Figure 4F). Since GLS is enriched in the PR mitochondria (Figure 1—figure supplement 1B) and previous studies demonstrated that inhibiting GLS in certain cell lines reduces mitochondrial function (Alkan et al., 2018), mitochondrial stress tests were also performed on P14 cKO and WT retina, prior to PR loss, using the BaroFuse (Kamat et al., 2023). The basal oxygen consumption rate (OCR) as well as the changes in OCR in response to oligomycin or carbonyl cyanide 4-(trifluoromethoxy)phenylhydrazone (FCCP) were not statistically significantly different between WT and cKO retina (Figure 4G and H). The expression of complexes involved in oxidative phosphorylation were also unchanged between the WT and cKO retina at P14 (Figure 4I).
 
 As stated earlier, a Cre-recombinase under the control of the rhodopsin has been shown to be activated as early as P7 (Li et al., 2005). To circumvent this early knockout of GLS, rod PRs may rewire their metabolism, as has been seen in other conditional knockout mouse models with this Cre-recombinase system (Subramanya et al., 2023; Wubben et al., 2017), to utilize different fuel sources for the maintenance of the TCA cycle and mitochondrial function. To this end, the expression of genes involved in glycolysis, pyruvate metabolism, and the TCA cycle were examined in the P14 cKO and WT retina before PR degeneration. Numerous genes were significantly altered in the cKO retina across the metabolic pathways (Figure 4—figure supplement 1). The expression of multiple genes in glycolysis and pyruvate metabolism were increased (Figure 4—figure supplement 1A), possibly suggesting that rod PRs are stimulating glucose oxidation to maintain the TCA cycle and mitochondrial function similar to that seen in certain cancer cells when GLS is inhibited (Okazaki et al., 2017). In contrast, the only significant change in expression of these genes in eyecup tissue was Pdk4, with a significant decrease in cKO vs WT mice (Figure 4—figure supplement 2). However, targeted metabolomics demonstrated only a minor change in glycolytic intermediates between the cKO and WT retina at P14 (Figure 4F). As targeted metabolomics at the P14 timepoint provides only a snapshot of the pool size, additional analyses with stable isotope tracing metabolomics are necessary to assess nutrient utilization, in this case glucose. Uniformly labeled, 13C6-glucose was intraperitoneally injected in P14 WT and cKO mice, and the retina harvested 45 min later for metabolomic analysis via LC-MS/MS (Yuan et al., 2019). No change in the fractional labeling of glycolytic intermediates was observed between the WT and cKO retina, and more so, an increase in the fractional labeling of TCA cycle intermediates was not observed in the cKO retina (Figure 5A, Figure 5—figure supplement 1). Hence, it is unlikely rod PRs are increasing glucose oxidation to maintain the levels of TCA cycle intermediates and mitochondrial function.
 
-## Gls cKO in rod photoreceptors decreases the utilization of Gln in the TCA cycle
+![Figure 5.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic summarizing 13C6-glucose labeling in glycolytic and TCA cycle intermediates. (B) Fractional labeling of glycolytic and TCA cycle metabolites in the retina following intraperitoneal injection of 13C6-glucose in WT and cKO mice at P14. N=5–6 animals per group. (C) Schematic summarizing 13C5-Gln labeling in the TCA cycle. (D) Fractional labeling of TCA cycle metabolites in the retina following intraperitoneal injection of 13C5-Gln in WT and cKO mice at P14. N=6–11 animals per group. (E) ONL thickness in cKO mice at P22 as assessed by OCT following α-KG supplementation (10 mg/mL) or vehicle (water) in the drinking water from P4-P22. N=5 animals per group. Statistical differences in (B), (D) and (E) are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± standard error of the mean. F6P: fructose 6-phosphate, FBP: fructose 1,6-bisphosphate, DHAP: dihydroxyacetone phosphate, 2 PG: 2-phosphoglycolate, PEP: phosphoenolpyruvate, Pyr: pyruvate, Lac: lactate, Gln: glutamine, Glu: glutamate, α-KG: alpha-ketoglutarate, Suc: succinate, Fum: fumarate, Mal: malate, OAA: oxaloacetate, Cit: citrate, Asp: aspartate.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Fractional labeling of glycolytic and TCA cycle intermediates with uniformly-labeled, 13C6-glucose in retina from rod photoreceptor-specific Gls cKO mice compared to WT mice at P14. Statistical differences are based on an unpaired two-tailed Student’s t-test where *p<0.05 and **p<0.01. Data are presented as mean ± SEM.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Fractional labeling of TCA cycle intermediates with uniformly-labeled, 13C5-Gln in retina from rod photoreceptor-specific Gls cKO mice compared to WT mice at P14. Statistical differences are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± SEM.
+
+### Gls cKO in rod photoreceptors decreases the utilization of Gln in the TCA cycle
 
 We initially anticipated that GLS knockout in rod PRs would significantly alter the relative TCA cycle metabolite pools in the cKO retina, similar to what is seen in Gln-dependent cancer cells (Daemen et al., 2018; Yang et al., 2017), as PRs and cancer cells have common metabolic relationships (Du et al., 2013b; Ng et al., 2015; Rajala, 2020), and previous ex vivo studies demonstrated Gln can supplement the TCA cycle in the retina (Grenell et al., 2019; Tsantilas et al., 2021). However, as observed in Figure 4F, very few changes were observed in the relative pool sizes of TCA cycle metabolites in the cKO compared to WT retina. To delineate how Gln is metabolized, we used LC-MS/MS to trace the metabolic fate of uniformly-labeled 13C5-Gln in the WT and cKO retina in vivo at P14. Uniformly-labeled 13C5-Gln was intraperitoneally injected into the mice and the retina harvested 45 min later. In accordance with GLS being the enzyme that initiates glutaminolysis (Yang et al., 2017), the fractional labeling of glutamate, TCA cycle intermediates, and pyruvate was decreased in the P14 cKO retina as compared to WT (Figure 5C,D, Figure 5—figure supplement 2). Previous ex vivo studies have also observed that isotopically labeled 13C5-Gln can contribute to m+3 pyruvate in the retina possibly via the decarboxylation of m+4 malate by malic enzyme (Grenell et al., 2019).
 
 a-ketoglutarate (α-KG) is the main entry point for Gln into the TCA cycle (Figure 5C) and has been shown to be a key metabolite in Gln metabolism (Yang et al., 2017). In vivo stable isotope tracing demonstrated decreased incorporation of Gln carbons into α-KG in the cKO retina compared to the WT (Figure 5D). Furthermore, supplementation with α-KG has been shown to improve PR survival in mouse models of inherited retinal disease (Wert et al., 2020). So, we attempted to rescue the PR degeneration phenotype in the GLS cKO mouse by supplementing cKO animals with 10 mg/mL of α-KG in the drinking water starting at P4 (Rowe et al., 2021; Wert et al., 2020). A small, but significant increase in ONL thickness was identified in α-KG-treated animals at P22 using OCT (Figure 5E). These data further suggest that Gln’s role in supporting the TCA cycle is not the major mechanism by which PRs utilize Gln to suppress PR apoptosis.
 
-## Gls cKO retina has reduced NEAA levels and an upregulated integrated stress response
+### Gls cKO retina has reduced NEAA levels and an upregulated integrated stress response
 
 Gln and GLS-derived Glu play a central role in the biosynthesis of several NEAAs (Yoo et al., 2020). So, the disruption of GLS-initiated Gln catabolism may be causing a disruption in available NEAAs for biomass production. To this end, targeted metabolomics on the cKO retina at P14 showed a significant increase in the substrate of GLS, Gln, and a significant decrease in its NEAA product Glu, further illustrating loss of GLS function (Figure 6A and B). The NEAA Asp was also significantly reduced (Figure 6A), which is consistent with previous studies that inhibited GLS in cancer cells (Alkan et al., 2018; Okazaki et al., 2017). Notably, similar decreases in Glu and Asp were noted in IND-cKO compared to WT retina at a point prior to PR degeneration (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig6-v1.jpg)
+
+**Figure 6.:** (A) Amino acids significantly altered in the Gls cKO mouse retina at P14. Relative abundance is the ion intensity relative to WT retina. N=6–7 animals per group. (B) Ratio of glutamine to glutamate in WT and cKO retina. N=6–7 animals per group. (C) Western blot of ISR proteins phospho-eIF1αS51 (p-eIF2α), total eIF2α and ATF4 in WT and cKO mice. N=3–4 animals per group. (D) Quantitation of western blot in Panel C. (E) Western blot of protein puromycinylation in the WT and cKO mouse retina at P14 harvested 30 min after systemic puromycin administration. (F) Quantitation of puromycin incorporation in WT and cKO retina. N=4–5 animals per group. (G) ONL thickness at P21 in cKO mice as assessed by OCT following intraperitoneal injection of ISRIB (2.5 mg/kg) or vehicle (50% PEG 400, 43.4% saline, 6.6% DMSO) from P5-P21. N=3–6 animals per group. (H) ONL thickness at P21 in cKO mice as assessed by OCT following intraperitoneal injection of Asn (200 mg/kg) or vehicle (PBS) from P5-P21. N=3–5 animals per group. Statistical differences in (A), (B), (D), (F), (G), and (H) are based on an unpaired two-tailed Student’s t-test where *p<0.05, **p<0.01 and ***p<0.001. Data are presented as mean ± SEM. Gln: glutamine, Glu: glutamate, Asp: aspartate, ONL: outer nuclear layer.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Relative abundance of glutamine (Gln), glutamate (Glu), aspartate (Asp), and asparagine (Asn) in retinal tissue from WT and IND-cKO 10 days post tamoxifen (TAM), which is prior to PR degeneration. N=5 animals per group. Statistical differences are based on an unpaired Student’s t-test where *p<0.05. Data are presented as mean ± SEM.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) ISRIB (2.5 mg/kg) or vehicle (50% PEG 400, 43.4% saline and 6.6% DMSO) was delivered intraperitoneally in WT mice starting at P5. Total retinal (TRT), outer nuclear layer (ONL), and the inner segment/outer segment thickness were measured at P21 by OCT. N=3 animals per group. (B) ONL thickness at P28 in cKO mice as assessed by OCT following intraperitoneal injection of ISRIB (2.5 mg/kg) or vehicle (50% PEG 400, 43.4% saline and 6.6% DMSO) from P5-P28. N=4–5 animals per group. Statistical differences in (A) and (B) are based on an unpaired two-tail Student’s t-test where *p<0.05 and **p<0.01. Data are presented as mean ± SEM.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/100747/elife-100747-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Representative hematoxylin and eosin stained retinal sections from rod photoreceptor-specific Gls conditional knockout (cKO) mice at P21 following intraperitoneal injection with (A) ISRIB (2.5 mg/kg) or vehicle (50% PEG 400, 43.4% saline, 6.6% DMSO) or (B) Asn (200 mg/kg) or vehicle (PBS) from P5-P21. ONL, outer nuclear layer; INL, inner nuclear layer. Asn, asparagine. Scale bar is 50 µm.
 
 Deprivation of amino acids can activate the integrated stress response (ISR), which responds to an array of stressors to maintain cellular homeostasis and particularly, protein homeostasis. Acutely, ISR activation can protect cells by temporarily halting protein synthesis. However, chronic ISR activation and global protein synthesis inhibition can trigger apoptosis (Pakos-Zebrucka et al., 2016). ISR activation leads to phosphorylation of the alpha subunit of eukaryotic translation initiation factor 2 (eIF2α), which reduces global protein synthesis while preferentially allowing for the translation of activating transcription factor 4 (ATF4; Pakos-Zebrucka et al., 2016). Considering the reduced levels of NEAAs Glu and Asp, retinas from P14 GLS cKO animals were assayed for these ISR components using Western blotting (Figure 6C and D), which demonstrated increased levels of both phosphorylated eIF2α and total ATF4, suggesting ISR activation. To determine if global protein synthesis was affected in GLS cKO retinas, we applied the SUnSET (SUrface SEnsing of Translation) method to quantify protein synthesis in WT and cKO retinas at P14 (Fort et al., 2022). These data show a significant decrease of puromycin incorporation into nascent polypeptide chains, indicating a decrease in global protein synthesis consistent with ISR activation (Figure 6E and F). To determine if PR degeneration could be rescued by inhibiting the ISR, ISRIB (2.5 mg/kg) was administered systemically daily starting at P5. In WT mice, ISRIB treatment did not impact retinal anatomy as assessed by OCT at P21 (Figure 6—figure supplement 2A). Notably, at P21, ISRIB treatment in the cKO mouse significantly increased ONL thickness compared to vehicle using OCT (Figure 6G) and histology (Figure 6—figure supplement 3A), and this effect was sustained at P28 (Figure 6—figure supplement 2B). These results suggest that ISR activation is downstream of Gln catabolism and contributes to PR degeneration in the cKO mouse retina.
 
@@ -129,58 +193,320 @@ The ISR is activated with reduced global protein synthesis in the Gls cKO mouse 
 
 Collectively, our results indicate that Gln is critical for maintaining the pools of key biosynthetic precursors, Glu and Asp, in rod PRs and disrupting Gln catabolism results in profound loss of PR function and survival in part secondary to an imbalance in ISR activation and protein synthesis attenuation. Glucose remains central in PR metabolism, but improving our understanding of other metabolic pathways that support PR function and survival and how these metabolic pathways connect with cell death mechanisms could be transformative for preventing PR degeneration and vision loss in a multitude of retinal degenerative diseases.
 
-## Ideas and speculation
+### Ideas and speculation
 
 Beyond glucose, the metabolic pathways integral to photoreceptor health remain largely unknown. This is a critical knowledge gap as identification of these pathways is likely to reveal new strategies for therapeutic intervention. This work demonstrates that rod photoreceptors depend on glutamine catabolism and suggests a metabolic axis where glutamine catabolism in rod photoreceptors supports the production of aspartate and asparagine to promote anabolism and prevent signaling through the pro-apoptotic ISR pathway. Considering activation of the ISR is a hallmark of neurodegenerative diseases and metabolic dysfunction underlies photoreceptor degeneration, defining the pathways by which glutamine catabolism contributes to photoreceptor health is likely to identify nodes that may be targeted to make photoreceptors less vulnerable to stress.
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Glsfl/fl</td>
+      <td>PMID:26778975</td>
+      <td>RRID:IMSR_JAX:017894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>RhoCre</td>
+      <td>PMID:16636658</td>
+      <td>RRID:IMSR_JAX:032909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Glsfl/fl;RhoCre+</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Pde6gCre:ERT2</td>
+      <td>PMID:26301813</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Glswt/wt;Pde6gCre:ERT2</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Glsfl/fl;Pde6gCre:ERT2</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-GLS</td>
+      <td>Proteintech</td>
+      <td>66265–1-Ig</td>
+      <td>1:200; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-GLS2</td>
+      <td>Abcam</td>
+      <td>Ab113509</td>
+      <td>1:200; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-Rhodopsin</td>
+      <td>Abcam</td>
+      <td>Ab5417</td>
+      <td>1:1000; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) anti-OPN1MW/LW</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-22117</td>
+      <td>1:200; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-BRN3A</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-8429</td>
+      <td>1:100; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-calretinin</td>
+      <td>Millipore Sigma</td>
+      <td>C7479</td>
+      <td>1:100; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-GFAP</td>
+      <td>Thermo Fisher</td>
+      <td>13–300</td>
+      <td>1:200; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-Chx10</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-365519</td>
+      <td>1:200; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-Bassoon</td>
+      <td>Enzo</td>
+      <td>SAP7F407</td>
+      <td>1:1000; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) anti-mouse Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>A11001</td>
+      <td>1:1000; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-mouse Alexa 594</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>715-585-151</td>
+      <td>1:500, immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-rabbit Alexa 594</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>711-585-152</td>
+      <td>1:500; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-goat Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>A21447</td>
+      <td>1:2000; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Donkey polyclonal) anti-rat Alexa 594</td>
+      <td>Invitrogen</td>
+      <td>A21209</td>
+      <td>1:500; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Arachis hypogea) Lectin PNA Alexa 594 conjugate</td>
+      <td>Invitrogen</td>
+      <td>L32459</td>
+      <td>1:200; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Wheat germ) Agglutinin (WGA) Alexa 594 conjugate</td>
+      <td>Invitrogen</td>
+      <td>W11262</td>
+      <td>1:1000; immunofluorescence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-KGA-specific GLS</td>
+      <td>Proteintech</td>
+      <td>20170–1-AP</td>
+      <td>1:1000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-GAC-specific GLS</td>
+      <td>Proteintech</td>
+      <td>19959–1-AP</td>
+      <td>1:1000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-GLS</td>
+      <td>Proteintech</td>
+      <td>12855–1-AP</td>
+      <td>1:1000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-VDAC</td>
+      <td>Cell Signaling Technology</td>
+      <td>4866</td>
+      <td>1:1000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) Anti-TIM23</td>
+      <td>BD Biosciences</td>
+      <td>611223</td>
+      <td>1:1000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-HSP90</td>
+      <td>Cell Signaling Technology</td>
+      <td>4877</td>
+      <td>1:2000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Horse polyclonal) anti-mouse-HRP-linked</td>
+      <td>Cell Signaling Technology</td>
+      <td>7076</td>
+      <td>1:5000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) anti-rabbit-HRP-linked</td>
+      <td>Cell Signaling Technology</td>
+      <td>7074</td>
+      <td>1:5000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit monoclonal) anti-eIF2α</td>
+      <td>Cell Signaling Technology</td>
+      <td>5324</td>
+      <td>1:1000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit monoclonal) anti-Phospho-eIF2α</td>
+      <td>Cell Signaling Technology</td>
+      <td>3398</td>
+      <td>1:5000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit polyclonal) anti-ATF4</td>
+      <td>Invitrogen</td>
+      <td>PA5-27576</td>
+      <td>1:1000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) anti-puromycin</td>
+      <td>Biolegend</td>
+      <td>381502</td>
+      <td>1:1000; western</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Mouse monoclonal) Total OXPHOS rodent antibody</td>
+      <td>Abcam</td>
+      <td>Ab110413</td>
+      <td>1:1000; western</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Materials and methods
 
-## Animals
+### Animals
 
 All animals were treated in accordance with the Association for Research in Vision and Ophthalmology Statement for the Use of Animals in Ophthalmic and Vision Research. The protocol was approved by the University Committee on Use and Care of Animals of the University of Michigan (PRO00011133). All animals were housed under standard husbandry conditions at room temperature in 12 hr light/12 hr dark cycles unless explicitly stated in the text. Both male and female mice were used for all experiments. A transgenic mouse where Gls is selectively deleted from rod photoreceptors was created by crossing mice with Lox-P sites flanking exon 1 of the Gls gene (Glsfl/fl, courtesy of Dr. Stephen Rayport, Columbia University) with RhoCre mice, in which Cre-recombinase expression is driven specifically in rod PRs. Glsfl/fl and RhoCre mice have been previously described (Le et al., 2006; Mingote et al., 2015). Animals were screened for the rd8 mutation (Mattapallil et al., 2012). Alpha-ketoglutarate (α-KG, Millipore-Sigma, St. Louis, MO, USA, Cat # K1128) was provided to mice in their drinking water (10 mg/mL) starting at P4. Asparagine (200 mg/kg, Millipore-Sigma, Cat # A4159) or vehicle (PBS) was injected IP starting at P5. ISRIB (2.5 mg/kg, Caymen Chemical, Ann Arbor, MI, USA, Cat # 16258) or vehicle (50% PEG 400, 43.4% saline, 6.6% DMSO) (Halliday et al., 2015) was injected IP starting at P5. For inducible deletion of Gls, Glsfl/fl mice were crossed to Pde6gCre:ERT2 mice (courtesy of Dr. Stephen Tsang, Columbia University) (Koch et al., 2015). The Cre-recombinase was activated via IP injection of tamoxifen (Millipore-Sigma, Cat # T5648) at a concentration of 100 mg/kg bodyweight for 5 consecutive days. Whole retinas were extracted from animals using the ‘cut-and-pick’ method as previously described (Winkler, 1981), being careful to remove any adherent ciliary body or RPE before processing. Total retina was then either snap frozen on dry ice (Western blotting, metabolomics), immersed in RNAlater (QIAGEN, Hilden, Germany, Cat # 76104) for qRT-PCR, or used immediately (BaroFuse or NADP+/NADPH bioluminescent assay).
 
-## In vivo functional and structural assessment
+### In vivo functional and structural assessment
 
 Visual function was assessed as previously described (Weh et al., 2020; Wubben et al., 2017). Mice were anesthetized using a mixture of ketamine/xylazine (90/10 mg/kg) and their pupils were dilated using 1% tropicamide and 2.5% phenylephrine ophthalmic drops. Retinal function was determined using a Diagnosys Celeris ERG system (Diagnosys LLC, Lowell, MA, USA) following overnight dark adaptation. In vivo retinal thickness was measured using the Envisu-R SD-OCT imager (Leica Microsystems Inc, Buffalo Grove, IL, USA). A 1.5 mm horizontal B-scan (1000 A-scans × 100 frames) and a 1.5 mm × 1.5 mm rectangular volume (1000 A-scans × 36 B-scans × 6 frames) were captured, registered and averaged using the built-in software, and analyzed using the Diver 1.0 software suite (Leica Microsystems). Images were segmented manually to determine total retinal, outer nuclear layer, and combined inner segment/outer segment thickness. Measurements were taken at 15 points on a 9 × 9 grid and averaged as previously described (Weh et al., 2022).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Mouse eyes were enucleated and immersed in 4% paraformaldehyde overnight before embedding in paraffin and sectioned at 6 mm thickness. Following standard protocols, sections were de-paraffinized and antigen retrieval performed as previously described (Weh et al., 2020; Wubben et al., 2017). Sections were blocked with 1% bovine serum albumin (BSA, Millipore-Sigma, Cat # A9647) in 1 X phosphate buffered saline (PBS, Thermo Fisher Scientific, Waltham, MA, USA, Cat # BP399) with 0.125% Tween 20 (Thermo Fisher Scientific, Cat # BP337) and 10% normal goat serum prior to incubating with primary antibody in 1% BSA and 1% normal goat serum overnight at 4 °C. Slides were then washed, secondary antibody applied for 1 hr at room temperature before washing, and finally, counterstained with DAPI (Thermo Fisher Scientific, Cat # P36930). Images were obtained on a Leica DM6000 microscope with a 40 X objective. The antibodies used for immunofluorescence are found in the key resources table.
 
-## TUNEL staining and cell counts
+### TUNEL staining and cell counts
 
 TUNEL staining was performed as previously described using the DeadEnd kit (Promega, Madison, WI, USA, Cat # G3250; Wubben et al., 2017; Wubben et al., 2020). TUNEL-positive cells were counted in a masked fashion and normalized to the total number of nuclei using a custom ImageJ macro (Busov and Besirli, 2014; Wubben et al., 2017; Wubben et al., 2020). Tissue sections through the plane of the optic nerve were also stained with hematoxylin and eosin and the total number of nuclei in the ONL were determined after normalization to inner retinal area (Wubben et al., 2020).
 
-## Sub-cellular fractionation
+### Sub-cellular fractionation
 
 Whole retina was fractionated into cytosolic and post-cytosolic (mitochondrial enriched) fractions as previously described (Weh et al., 2020) using the Subcellular Protein Fractionation Kit for Tissues (Thermo Fisher Scientific, Cat # 87790). Both retinas from a single animal were pooled and homogenized with a Dounce homogenizer in cytoplasmic extraction buffer supplemented with protease (Halt Protease Inhibitor Cocktail, Thermo Fisher Scientific, Cat # 87786) and phosphatase (Halt Phosphatase Inhibitor Cocktail, Thermo Fisher Scientific, Cat # 78420) inhibitors. The retinal lysate was then centrifuged at 10,000 x relative centrifugal force (RCF) for 10 min at 4 °C. The resulting supernatant was saved as the cytosolic fraction, and the resulting pellet was resuspended in RIPA lysis buffer (Thermo Fisher Scientific, Cat # 89900) that included protease and phosphatase inhibitors (Cell Signaling Technology, Danvers, MA, USA, Cat # 5872) and sonicated at 20% amplitude with 1 s on/off pulse for 10 s. The lysate was centrifuged for 10 min at 10,000 x RCF at 4 °C. The resulting supernatant was saved as the mitochondrial enriched fraction. The percentage of GLS in each fraction was determined using Western blotting.
 
-## Western blotting
+### Western blotting
 
 Immunoblots were performed as previously described (Weh et al., 2020). Protein estimation was performed using the Pierce BCA kit (Thermo Fisher Scientific, Cat # 23225). Equivalent micrograms of protein from each sample were diluted using 4 X Laemmli buffer (Bio-Rad, Hercules, CA, USA, Cat # 1610747) supplemented with β-mercaptoethanol (Millipore-Sigma, Cat # M6250) before heating at 95 °C for 5 min and finally loaded onto 4–20% polyacrylamide gel (Bio-Rad, Cat # 4561094). Samples were then transferred to a PVDF membrane using the Trans-Blot Turbo Transfer System (Bio-Rad, Cat # 1704150). Membranes were blocked using 5% non-fat milk powder diluted in TBST (Tris-buffered Saline, Bio-Rad, Cat # 1706435, supplemented with 0.1% Tween-20, Thermo Fisher Scientific, Cat # 28320) for 4 hr at room temperature. Primary antibodies were diluted in 5% BSA and added to blots before incubating overnight at 4 °C. Blots were then washed and appropriate secondary antibody was added for 1 hr at room temperature. Chemiluminescence was performed using the SuperSignal West Dura/Femto Extended Duration Substrate (Thermo Fisher Scientific, Cat # 34075 and 34094) and the immunoblots were imaged with an Azure 600 imaging system (Azure Biosystems; Dublin, CA USA). All antibodies and dilutions used are found in the key resources table.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was extracted from whole retina using the RNeasy Mini Kit (QIAGEN, Cat # 74104) following the manufacturer’s protocol. Isolated RNA was assayed for quantity and quality with a Nanodrop 1000 (Thermo Fisher Scientific) and 1 µg of RNA was used as input for cDNA synthesis using the RNA QuantiTect transcription kit (Qiagen, Cat # 205311). Approximately 100 ng of cDNA was used as a template for each qRT-PCR reaction using the PowerTrack SYBR Green supermix (Thermo Fisher Scientific, Cat # 46109) as previously described (Subramanya et al., 2023). The Ct values for Actb were used to determine relative transcript expression levels using the 2-ΔΔCt method with a cycle threshold cutoff of 35 cycles for the presence of transcript. The geometric mean was used to normalize samples. Custom qRT-PCR primers (Supplementary file 1) designed to specifically detect spliced transcripts were used to determine transcript levels following the above protocol.
 
-## Metabolomics
+### Metabolomics
 
 For unlabeled targeted metabolomics, both retinas from a single animal were rinsed in PBS, combined, and snap-frozen on dry ice. Metabolites were extracted using 80% methanol at –80 °C and an OMNI Bead Ruptor (OMNI International, Kennesaw, GA, USA, Cat # 19–050 A). Lysates were centrifuged at 14,000 x RCF for 10 min at 4 °C, and the supernatant stored at –80 °C until being processed in the SpeedVac. The pellet from each sample was saved for protein estimation. To determine the protein concentration for each sample, 150 µL of 0.1 M NaOH was added to the pellet for 24 hr at 37 °C. The sample was then vortexed and centrifuged at 5000 x RCF at room temperature. The protein estimation was performed as described above. The protein concentration of each sample was used to normalize amount of sample for lyophilization with a SpeedVac concentrator (Thermo Fisher Scientific, Cat # 13875355). Dried metabolite pellets were resuspended for liquid chromatography-coupled mass spectrometry (LC/MS) analysis using an Agilent Technologies Triple Quad 6470 instrument (Santa Clara, CA, USA) as previously described (Wubben et al., 2020). Previously published parameters were used for data collection (Yuan et al., 2012). Agilent MassHunter Workstation Quantitative Analysis Software (B0900) was used to process raw data. Additional statistical analyses were performed in Microsoft Excel. Each sample was normalized by the total intensity of all metabolites to reflect sample protein content. To obtain relative metabolites, each metabolite abundance level in each sample was divided by the mean of the abundance levels across all control samples.
 
 To analyze the incorporation of non-radioactive stable isotope carbon-13 (13C) into metabolites in central carbon metabolism and related pathways, mice were intraperitoneally injected with 2 g/kg of uniformly labeled 13C6-glucose (Cambridge Isotope Laboratories, Cat # CLM-1396) or 300 mg/kg of uniformly labeled 13C5-glutamine (Cambridge Isotope Laboratories, Cat # CLM-1822-H) and retinas were harvested 45 min later and snap-frozen as described above. Metabolites were extracted as described above and data collected according to previously published protocols (Yuan et al., 2019).
 
-## SUrface SEnsing of translation (SUnSET) method
+### SUrface SEnsing of translation (SUnSET) method
 
 In vivo protein synthesis in whole retina from P14 WT and cKO mice was measured using the SUnSET protocol as previously described (Fort et al., 2022). Briefly, a stock solution of 40 mg/mL puromycin hydrochloride (Millipore-Sigma, Cat # P7255) was prepared in sterile 0.9% sodium chloride and injected intraperitoneally into mice at a final concentration of 200 mg/kg body weight. Mice were sacrificed after 30 min and fresh retinas were harvested and lysed in RIPA buffer (Thermo Fisher Scientific, Cat # 89900) with protease and phosphatase inhibitors (Cell Signaling Technology, Cat # 5872). Protein quantitation was conducted with the BCA assay as described above and 10 µg of protein was analyzed by western blot analysis using an anti-puromycin antibody.
 
-## BaroFuse
+### BaroFuse
 
 Oxygen consumption rate (OCR) was determine as previously described (Kamat et al., 2023). Briefly, a BaroFuse (Entox Sciences, Mercer Island, WA) was used to determine the OCR of freshly isolated retinas. Single, whole retinas were dissected into Hank’s Balanced salt solution supplemented with 0.1 g/ 100 mL BSA (HBSS, Cytiva, Marlborough, MA, USA, Cat # SH30031FS). Perifusion media consisted of commercial Krebs-Ringer Bicarbonate buffer (KRB, Thermo Fisher Scientific, Cat # J67795.K2) supplemented with 0.1 g /100 mL fatty-acid free BSA (Millipore-Sigma, Cat # A9647) and 4.4 mM glucose, for a final concentration of 5.5 mM glucose (Millipore-Sigma, Cat # G8270). The oxygen and CO2 concentration of the perifusion media is maintained by saturating the solution in a 21% oxygen, 5% CO2 atmosphere, and the temperature was maintained at 37 °C throughout the experiment. At various times throughout the experiment Oligomycin-A (Cayman Chemical, Ann Arbor, MI, USA, Cat # 11342), FCCP (Trifluoromethoxy carbonylcyanide phenylhydrazone, Cayman Chemical, Cat# 15218), and KCN (Potassium Cyanide, Thermo Fisher, Cat # 012136) were added to the perifusion media through an injection port. A chamber without tissue was used as a negative control.
 
-## NAD+/NADH and NADP+/NADPH measurements
+### NAD+/NADH and NADP+/NADPH measurements
 
 The NAD+/NADH and NADP+/NADPH measurements were conducted using the NAD+/NADH-Glo Assay (Promega, Cat # G9071) and NADP+/NADPH-Glo Assay (Promega, Cat # G9081), respectively, following manufacturer’s instructions in whole retina from P14 WT and cKO mice. Briefly, two fresh retina per mouse were harvested for each sample in 150 µL of PBS/Bicarbonate/0.5%dodecyltrimethylammonimum bromide (DTAB) buffer. DTAB is used in the buffer to preserve dinucleotide stability. The samples were sonicated (20% strength and 1 s/10 iterations) to create a uniform suspension and diluted with 150 µL of PBS/Bicarbonate/0.5% DTAB buffer (lysate). For measuring NAD+/NADP+, 150 µL of lysate was mixed with 75 µL of 0.4 N HCl (Thermo Fisher Scientific, Cat # A144) and heated to 60 °C for 15 min. The lysate mixture was cooled to room temperature for 10 min and then neutralized by adding 150 µL 0.5 M Trizma base (Millipore-Sigma, Cat # T1503). For measuring NADH/NADPH, the remaining 150 µL of lysate was heated to 60 °C for 15 min, cooled to room temperature for 10 min and 150 µL 0.5 M Trizma base was added to the sample. Following lysate preparation, 50 µL of lysate was incubated at room temperature for 30 min with 50 µL of either the NAD+/NADP+-Glo or NADH/NAPDH-Glo detection reagent in a 96-well white walled tissue culture plate (Thermo Fisher Scientific, Cat # 3610). Luminescence was recorded using the Omega plate reader (BMG Labtech) and data are reported as a ratio of NAD+/NADH or NADP+/NADPH of N=3 animals in triplicate technical measurements per animal sample.
 
-## Statistical analysis
+### Statistical analysis
 
 All data is presented as mean ± SEM. The significance of the difference between means was determined using a two-tailed student’s t-test or one-way ANOVA in Excel or Prism 9.0. Results with a p-value  ≤ 0.05 were considered significant.

@@ -36,7 +36,7 @@ To determine whether the relative reliability of auditory dimensions in speech p
 
 ## Results
 
-## In-scanner behavior
+### In-scanner behavior
 
 On each trial, participants read one visually presented text sentence, then heard two auditory versions of the sentence, only one of which contained an acoustically conveyed phrase boundary in the same place as in the text sentence (see Figure 1 for schematic and example sentences). Trials were scored as correct if a participant pressed the button associated with the auditory sentence that correctly matched the text sentence. Proportions of correct judgments (Figure 2) were subjected to a repeated-measures analysis of variance. Overall, proportion correct across amusia and control groups was matched (main effect of Group, F(1,84) = 0.16, p=0.69, interaction of Group by Condition, F(2,84) = 0.374, p=0.96). This lack of interaction was predicted based on previous results obtained from a similar paradigm using out-of-scanner data but from the same participants (Jasmin et al., 2020a). There was a main effect of condition (F(2,84) = 3.32, p=0.04). Follow-up post-hoc testing indicated that performance in the Both-Informative condition (with pitch and duration cues simultaneously present) was more accurate than either Pitch-Informative (t(84) = 2.31, p=0.023) or Duration-Informative (t(84) = 2.15, p=0.03), a result that was also predicted and which replicates the behavioral findings in Jasmin et al., 2020a. One outlier control participant’s performance was less than 0.3. Re-analysis of the data without this participant did not change the results pattern.
 
@@ -46,9 +46,9 @@ On each trial, participants read one visually presented text sentence, then hear
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53539/elife-53539-fig2-v2.jpg)
 
-**Figure 2.:** Prosodic categorization performance measured in the scanner (proportion correct); each point represents the performance of a single participant.Figure 2—source data 1.
+**Figure 2.:** Prosodic categorization performance measured in the scanner (proportion correct); each point represents the performance of a single participant.
 
-## Neuroimaging - whole-brain connectedness
+### Neuroimaging - whole-brain connectedness
 
 Results from these analyses are available online (see Data Availability Statement for details). A data-driven approach was taken to identify brain regions with the largest group- and condition-related differences in functional connectivity (see Materials and methods). Comparing whole-brain connectedness values by group (Amusia vs. Controls) revealed four significant locations (where z of peak vertices > 4.61, FDR-corrected p<0.05) that showed greater whole-brain connectedness for the control than for the amusia group (see Figure 3, yellow crosses). All group differences were located in the inferior frontal cortex: two left hemisphere vertices (inferior frontal gyrus p. triangularis and dorsolateral prefrontal cortex) and two right hemisphere vertices (inferior frontal gyrus p. triangularis and p. orbitalis). There were no areas where whole-brain connectedness differed by Condition, or showed an interaction of Group and Condition.
 
@@ -56,33 +56,126 @@ Results from these analyses are available online (see Data Availability Statemen
 
 **Figure 3.:** Inflated surfaces show the locations of False Discovery Rate-corrected group differences (Control > Amusia) in whole-brain connectivity (yellow crosses, minimum Z > 4.61), which were used as seeds in subsequent analyses (minimum Z > 3.57; warm colors indicate greater connectivity in the control than amusia participants). All four seed vertices were located in inferior frontal cortices (left inferior frontal gyrus, left DLPFC, right inferior frontal gyrus p. triangularis, and right inferior frontal gyrus p. orbitalis) (A) Significant group differences (Control > Amusia) in functional connectivity with left hemisphere seeds. The largest decreases in connectivity in the amusia group were located in right superior temporal plane and gyrus, the posterior middle temporal gyrus onto the inferior bank of the superior temporal sulcus, and anterior insula. (B) Significant group differences (control vs amusia) in functional connectivity with right hemisphere seeds. Prominent decreases in connectivity with the right inferior frontal gyrus in individuals with amusia were observed in the superior temporal plane and regions of occipital, frontal, and parietal cortex.
 
-## Follow-up seed-to-whole brain tests
+### Follow-up seed-to-whole brain tests
 
 Follow-up testing was conducted on the four significant regions (Control > Amusia, collapsed across the three conditions) identified above to characterize the specific cortical regions driving these group connectivity differences (Berman et al., 2016; Gotts et al., 2012; Jasmin et al., 2019; Song et al., 2015). Relative to control participants, amusic participants' left inferior frontal gyrus seed region showed particularly notable decreases in connectivity with the right posterior superior temporal and inferior parietal cortex, as well as with the right posterior superior temporal sulcus (Figure 3A). Analysis of subcortical connectivity indicated that there was also weaker connectivity with the right nucleus accumbens (Table 1).
+
+**Table 1.**
+ Significant main effects of Group involving functional connectivity between seed areas and subcortical Structures.All effects are Control > Amusia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Seed</th>
+      <th>Region of interest</th>
+      <th>F(1,87)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L IFG</td>
+      <td>R Accumbens</td>
+      <td>15.43</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>L DLPFC</td>
+      <td>L Putamen</td>
+      <td>15.78</td>
+      <td>0.0001459</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R Putamen</td>
+      <td>17.78</td>
+      <td>0.00006047</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L Caudate</td>
+      <td>25.23</td>
+      <td>0.0000027</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R Caudate</td>
+      <td>11.51</td>
+      <td>0.001044</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L Cerebellum</td>
+      <td>24.47</td>
+      <td>0.00000364</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R Cerebellum</td>
+      <td>16.23</td>
+      <td>0.0001194</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L Pallidum</td>
+      <td>14.60</td>
+      <td>0.0002484</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R Pallidum</td>
+      <td>12.44</td>
+      <td>0.0006739</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L Thalamus</td>
+      <td>14.83</td>
+      <td>0.0002245</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R Thalamus</td>
+      <td>15.72</td>
+      <td>0.0001501</td>
+    </tr>
+    <tr>
+      <td>R IFG (orbit)</td>
+      <td>L Thalamus</td>
+      <td>14.83</td>
+      <td>0.0002245</td>
+    </tr>
+    <tr>
+      <td>R IFG (triang.)</td>
+      <td>L Accumbens</td>
+      <td>10.10</td>
+      <td>0.002054</td>
+    </tr>
+  </tbody>
+</table>
 
 The left dorsolateral prefrontal cortex in amusic participants showed decreased functional connectivity with the mid portions of the right superior temporal gyrus, posterior part of the right middle temporal gyrus extending into the inferior bank of the superior temporal sulcus, and the right anterior insula (Figure 3A). Several subcortical structures - bilateral caudate nucleus and putamen, bilateral pallidum, bilateral cerebellum, and bilateral thalamus - also showed significantly reduced (FDR-corrected) connectivity with the seed in amusics (Table 1).
 
 The right pars triangularis seed showed Control > Amusic connectivity with right dorsolateral prefrontal cortex and left posterior superior temporal gyrus (Figure 3B). It also showed decreased connectivity with left nucleus accumbens. Right pars orbitalis showed decreased connectivity with right dorsolateral prefrontal cortex (Figure 3B). There was also decreased connectivity with the left thalamus (Table 1).
 
-## Correlations between functional connectivity levels and prosodic cue weights
+### Correlations between functional connectivity levels and prosodic cue weights
 
 Of the 30 participants in this study, 21 took part in an experiment that measured the degree to which they relied on pitch versus duration to categorize prosody, that is, their ‘normalized prosodic cue weights’, which ranged from 0 to 1, with values greater than 0.5 indicating greater reliance on pitch than duration, and values less than 0.5 indicating greater reliance on duration than pitch (Experiment 1, Jasmin et al., 2020a). These cue weights were assessed with respect to the functional connectivity results reported above. Across this subset of participants, normalized cue weights were correlated with L-DLPFC <=> R insula connectivity (Spearman R = 0.78, p=0.000037), and L-DLPFC <=> R auditory cortex connectivity (Spearman R = 0.75, p=0.000154; Figure 4). This indicated that participants who relied least on pitch information to process speech had the weakest functional connectivity between these areas, while those who relied most on pitch had the strongest.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/53539/elife-53539-fig4-v2.jpg)
 
-**Figure 4.:** Correlation coefficients are Spearman rho.Figure 4—source data 1.
+**Figure 4.:** Correlation coefficients are Spearman rho.
 
 Although analyzing the control and amusic groups independently results in extremely small sample sizes, this pattern also held (albeit with ‘marginal significance’) within the 11 control participants alone, for both auditory cortex connectivity (R = 0.58, p=0.06) and insular connectivity (R = 0.55, p=0.08). Both these correlations were in the predicted direction, suggesting that even non-amusics may perform dimensional reweighting of acoustic dimensions and functional connectivity. Correlations within the (much more variable) amusic group alone were weaker and non-significant (although again, the group size is very small).
 
-## Comparison with task-free data
+### Comparison with task-free data
 
 To ensure that the pattern of connectivity we observed between groups (decreased right auditory cortex and right insula with L-DLPFC connectivity) was not due to intrinsic, task-irrelevant differences in neural architecture, the data from the language task was compared to that collected during passive listening to tone sequences. Whereas during speech perception amusic subjects showed reduced functional connectivity between left frontal and right insula/auditory ROIs relative to controls (p=0.0001 for both ROIs; in line with the whole-brain imaging analyses), this pattern did not hold during passive listening to tones (Amusia vs Control connectivity, p=0.29, Group (Amusic, Control) by Task (Speech Perception, Passive Tone Listening) interaction p=0.045 for the insula ROI; Amusia vs Control p=0.30, Group by Task interaction p=0.035 for the auditory cortex ROI - see Figure 5). These interactions suggest that our neural connectivity results are specifically linked to speech perception, rather than reflecting an overall connectivity difference between groups regardless of task state.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53539/elife-53539-fig5-v2.jpg)
 
-**Figure 5.:** Figure 5—source data 1.
-
-## Activation results for the speech processing task
+### Activation results for the speech processing task
 
 Although we were concerned with functional connectivity rather than activation, we also tested for differences in activation levels between groups and conditions. False Discovery Rate correction was used to correct for multiple comparisons across both hemispheres for each test (Group, Condition and Group X Condition). No significant differences were detected for the main effects of group and condition, nor the interaction of those factors.
 
@@ -104,45 +197,45 @@ Several other future directions are suggested by our results, particularly for e
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Participants, 15 individuals with amusia (10 F, age = 60.2 ± 9.4, range = 43–74) and 15 controls (10 F, age = 61.3 ± 10.4, range = 38–74), were recruited from the UK and were native British English speakers. The amusic group sample size reflected the maximum number of participants that could be screened and tested during our data collection period. The control group sample size was matched to this. All participants gave informed consent, and ethical approval was obtained from the relevant UCL and Birkbeck ethics committees. Amusia status was obtained using the Montreal Battery for the Evaluation of Amusia (MBEA). Participants with a composite score (summing the Scale, Contour and Interval tests scores) of 65 or less were classified as having amusia (Peretz et al., 2003). We also note that the amusics defined using the MBEA had higher pitch thresholds than controls (Wilcoxon Rank Sum W = 29, p=0.001) but did not differ from controls in tone duration discrimination (W = 129, p=0.74), speech-in-noise threshold (W = 155.5, p=0.17), or audiometric hearing thresholds (t(28) = 1.33, p=0.20; see Jasmin et al., 2020a for detailed methods for these procedures).
 
-## Stimuli
+### Stimuli
 
 The stimuli were 42 compound sentences that consisted of a pre-posed subordinate clause followed by a main clause (see Figure 1 for an example, and Jasmin et al., 2020a, Jasmin et al., 2020b for details). There were two versions of each sentence: (1) an ‘early closure’ version, where the verb of the subordinate clause was used intransitively and the following noun was the subject of a new clause [‘After Jane dusts, the dining table [is clean]”]; and (2), ‘late closure’, where the verb was transitive and took the following noun as its object, moving the phrase boundary to a slightly later position in the sentence [‘After Jane dusts the dining table, [it is clean]”]. The words in both versions of the sentence were identical from the start of the sentence until the end of the second noun (‘After Jane dusts the dining table …”), and only the lexically identical portions of the sentences were presented to participants; thus the two stimuli did not differ in words spoken.
 
 A native British English speaking male (who had previously trained as an actor) recorded early closure and late closure versions of each sentence in a sound-proofed room. The recordings were cropped such that only the portions with the same words remained, and silent pauses after phrase breaks were removed. Synthesized versions of these sentences were created with STRAIGHT voice-morphing software (Kawahara and Irino, 2005). First, the two versions of the sentence were manually time-aligned by marking corresponding ‘anchor points’ in the two recordings. Then, morphed speech was synthesized by varying the degree to which the early closure and late closure recordings contributed duration and pitch information. We synthesized pairs of stimuli in three conditions: (1) In the Pitch-Informative condition, the stimulus pair had exactly the same durational properties (that is, the length of phonemes, syllables, and words was the average between the two original recordings) but the vocal pitch indicated early or late closure at a morphing level of 80%; (2) in the Duration-Informative condition, vocal pitch in the stimulus pair was identical (at 50% between both versions) but the durational characteristics indicated early or late closure at a morphing level of 80%; (3) in the Both-Informative condition, both pitch and time cued early or late closure simultaneously at 80%. The morphed speech varied only in duration and pitch, while all other aspects of the acoustics (such as amplitude and spectral characteristics other than pitch) were the same, held constant at 50% between the two original recordings during morphing. This stimulus set is freely available (Jasmin et al., 2020b). Across all stimuli, F0 (vocal pitch) differences between early and late closure versions were large, with a mean of maximum difference of 7.7 semitones and range of 4.0–12.6 semitones. Thus, even the stimulus pair with the smallest pitch difference (4.0 semitones) exceeded the ~1.5 semitone pitch change detection threshold of the ‘most impaired’ participant in the amusia group (Jasmin et al., 2020a), which increased the chances that the amusia group would not suffer from poor performance, thereby avoiding a performance-related confound with our experimental design (see Church et al., 2010 for discussion).
 
-## MRI data collection
+### MRI data collection
 
 Subjects were scanned with a Siemens Avanto 1.5 Tesla magnetic resonance imaging scanner with a 32-channel head coil, with sounds presented via Sensimetrics S14 earbuds, padded around the ear with NoMoCo memory foam cushions. Functional data were collected using a slow event-related design with sparse temporal sampling to allow presentation of auditory stimuli in quiet. We used an echo planar image sequence, with 40 slices, slice time 85 ms, slab tilted to capture the entire cerebrum and dorsal cerebellum, ascending sequential acquisition; 3 × 3 × 3 mm voxel size; silent stimulus and response period = 8.7 s, volume acquisition time = 3.4 s, total inter-trial interval = 12.1 s, flip angle = 90 degrees, bandwidth = 2298 Hz/pixel, echo time (TE) = 50 ms. After collecting functional runs, a high-resolution T1-weighted structural scan was collected (MPRAGE, 176 slices, sagittal acquisition, 2x GRAPPA acceleration, 1 mm isotropic voxels, acquisition matrix = 224 × 256).
 
-## Procedure (see schematic in Figure 1)
+### Procedure (see schematic in Figure 1)
 
 Each run began with three dummy scans to allow magnetic stabilization. Each trial (repetition time) lasted 12.1 s. The start of each trial was triggered by a pulse corresponding to the start of a volume acquisition (which acquired neural data from the previous trial, at a delay). At t = 1 s into the trial, the sentence appeared on the screen; before scanning participants were instructed to read each sentence silently to themselves. At t = 5 s (plus or minus a random 100 ms jitter) participants heard a spoken version of the first part of the sentence. At t = 7.4 s (plus or minus 100 ms jitter) the second version was presented. The two spoken versions contained the same words but their pitch and/or timing characteristics cued a phrase boundary that occurred earlier or later in the sentence. Following this, there were approximately 2 s of silence during which the participant responded with the button box, before the scanner began acquiring the next volume at t = 12.1 s. Participants performed three blocks of 42 trials (14 each of Pitch-Informative, Duration-Informative, and Both-Informative) with 8 Rest trials interspersed within each block.
 
-## Comparison task - passive listening to tones
+### Comparison task - passive listening to tones
 
 Following data collection for this task and the structural scan, participants took part in two task-free fMRI scanning runs in which they watched a silent film (The General, starring Buster Keaton, or an episode of the Planet Earth series played without sound) while being presented auditorily with semi-random tone sequences. Stimuli consisted of sequences of ‘pips’ - 30 ms 6-harmonic complex tones. The fundamental frequencies of the pips were either 440, 466.16, 493.88 or 523.25 Hz, and the time between tone onsets was 0.075, 0.125, 0.175, or 0.225 s. The transition probabilities (determining whether pip N+1 had the same pitch or duration properties as pitch N) were set at either 0.1 and 0.9 for duration and either 0.3 and 0.7 for pitch. These two transition parameters were ‘crossed’ to create four design cells, and 25 random sequences were generated for each cell. MRI scanning parameters were identical to those used in the active, prosody task, except the time between volume acquisitions was 17.1 s. Participants listened to 100 tone sequences across two runs (50 per run). Matlab code used to create the stimuli can be found online (see Data Availability Statement).
 
-## MRI pre-processing
+### MRI pre-processing
 
 Image preprocessing was performed with FreeSurfer 6.0.0 (Fischl, 2012) and AFNI-SUMA 18.1.18 (Cox, 1996). Anatomical images were registered to the third echo planar image of the first run using Freesurfer’s bbregister and processed with FreeSurfer’s automated pipeline for segmenting tissue types, generating cortical surface models, and parcellating subcortical structures. Masks of inferior colliculi were obtained by manually examining individual subjects’ anatomical images and selecting a single EPI voxel located at its centre, bilaterally. Freesurfer cortical surface models were imported to AFNI with the @SUMA_Make_Spec_FS program. Then a standard pre-processing pipeline using AFNI’s afniproc.py program was used: all echo planar image volumes were aligned to the third repetition time of the first run using AFNI’s 3DAllineate, intersected with the cortical surface with SUMA, smoothed along the surface with a 2D 6-mm-FWHM kernel, and converted to a standard mesh (std.141) for group analyses, separately for each hemisphere, where each vertex in the mesh (198812 per hemisphere) is aligned to the 'same' location in the cortex across subjects, using curvature-based morphing. Preprocessing of the passive listening experiment data was identical.
 
-## Motion
+### Motion
 
 The magnitude of transient head motion was calculated from the six motion parameters obtained during image realignment and aggregated as a single variable using AFNI's @1dDiffMag to calculate a Motion Index (Berman et al., 2016; Gotts et al., 2012; Jasmin et al., 2019). This measure is similar to average Frame Displacement over a scan (Power et al., 2012) and is in units of mm per repetition time. The difference in average motion between the groups was small (amusia group mean motion = 0.31 mm/TR; control group mean = 0.28 mm/TR) and amounted to 32 micrometers (~1/30th of a millimeter) per TR. The mean and distribution of motion did not differ statistically between groups (two sample t-test p=0.70, two-tailed).
 
-## Beta series analysis of context-modulated functional connectivity
+### Beta series analysis of context-modulated functional connectivity
 
 Given the previous reports (described above) of changes in connection strength between unimodal and multimodal areas in response to noise (Beauchamp et al., 2010; Nath and Beauchamp, 2011), we chose a connectivity-based analysis approach for our study. Beta series correlation (Rissman et al., 2004) is a technique for examining functional connectivity and its modulation by task, using correlations in trial-by-trial responses. It has been shown to be more powerful than alternatives such as generalized psycho-physiological interaction (gPPI) for event-related designs (Cisler et al., 2014). In a beta series analysis, one beta weight is calculated for each trial in the experiment (rather than for each condition). All the trial-wise betas associated with a given condition are then serially ordered to form a ‘beta series’. Finally, using the beta series in the same way as a standard BOLD fMRI time series, functional connectivity (measured as Pearson correlations) is calculated between seed regions of interest and the rest of the brain. Differences in functional connectivity can then be examined by comparing groups, comparing conditions, or examining the interaction of these factors.
 
-## Obtaining trial-wise beta weights
+### Obtaining trial-wise beta weights
 
 Our experiment used a slow event-related design with a long repetition time (12.1 s) and sparse temporal sampling (with volume acquisition separated by silent periods). Therefore, the time between acquisitions was long enough for the haemodynamic response to return to baseline, and each echo planar image acquisition corresponded to exactly one trial (Figure 1). For this reason, we did not convolve the echo planar image time series with a basis function during subject-level statistical analysis (Hall et al., 1999). In the design matrix for obtaining trial-wise betas, 126 column regressors were used (one for each non-rest trial). Each column vector was of length 150 (corresponding to all trials, including rest trials) and had a single ‘one’ in the position where the trial associated with that column occurred, while zeros were located in every other position. Polynomials up to second degree were also included in the model, on a run-wise basis, to remove the mean and any linear or quadratic trends. Fitting the trial regressors on a subject-wise basis resulted in cortical surface models of beta weights for each of the 126 trials, at each vertex on the reduced-vertex icosahedral cortical surface, with beta weights reflecting the neural response associated with that trial. As noted above, trial-wise betas were then serially ordered to form beta series separately for each of the three experimental conditions (Pitch-Informative, Duration-Informative, and Both-Informative) (Rissman et al., 2004). Because there were 30 participants, this procedure resulted in a total of 90 beta series (30 participants × 3 conditions=90 beta series). As for the passive tone listening data, because all ‘trials’ were of the same type, it was not necessary to separate them into conditions and perform a first-level model to obtain betas. However, polynomials up to second degree were detrended from the pre-processed data (as was done with the task data).
 
-## Defining seed regions of interest
+### Defining seed regions of interest
 
 Beta series analysis requires initial seed voxels, vertices, or regions to be identified, whose trial-to-trial changes in activity are then compared to those of the rest of the brain. Rather than choose a priori seeds derived from the literature, which used mainly musical tasks or resting state, we used a data-driven approach to search for the largest group and condition differences in functional connectivity (Berman et al., 2016; Cole et al., 2010; Gotts et al., 2012; Jasmin et al., 2019; Meoded et al., 2015; Song et al., 2015; Steel et al., 2016; Stoddard et al., 2016; Watsky et al., 2018). To do this, we first calculated the ‘whole-brain connectedness’ of each cortical vertex (a procedure available in AFNI as the 3dTCorrMap function). The whole-brain connectedness of a given vertex is defined as the Pearson correlation of activity within that vertex/voxel and the average signal across all neural gray matter in the rest of the brain. Mathematically, this is equivalent to calculating thousands of Pearson correlations, of a given vertex/voxel series and every other vertex/voxel series in the brain, and then taking the mean of those correlations (Cole et al., 2010), then repeating the process for every individual voxel/vertex. As such, it represents the global connectedness (or ‘global correlation’) of a vertex/voxel.
 
@@ -150,24 +243,24 @@ To calculate whole-brain connectedness, first, the average of trial-wise betas i
 
 A similar procedure was performed for subcortical structures. Beta series were obtained for each subject, structure, and experimental condition, from their standard Freesurfer subcortical parcellations by masking the EPI data within each structure and calculating the average of the voxels. Each structure’s beta series was then correlated with the whole-brain gray matter beta average, separately for each condition, and the resulting values were subjected to linear mixed effects models with the same factors as above. Tests for Main Effect of Condition, of Group, and the Interaction of these factors was performed. All p-values were greater than p>0.001 and no results survived an FDR-correction calculated over them.
 
-## Follow-up seed-to-whole-brain testing
+### Follow-up seed-to-whole-brain testing
 
 The first analysis step (seed definition, described above) identified which, if any, brain areas showed the largest connectivity differences between groups. However, this step is insufficient to localize the other specific regions driving this pattern. An analogy is in Analysis of Variance, where a significant omnibus test indicates a difference exists, but follow-up testing is required to determine where in the model differences exist (Gotts et al., 2012). Thus, to locate the regions driving this pattern, we undertook a second step: follow-up seed-to-whole-brain testing (Cole et al., 2010; Gotts et al., 2012; Jasmin et al., 2019). Each seed region was examined with respect to its connectivity pattern with every cortical vertex and subcortical structure.
 
 For each of the 90 beta series (30 subjects by three conditions), values within the seed vertices were averaged and then correlated with the beta series for every vertex in the brain. These correlations were Fisher Z-transformed and used as the dependent variables in linear mixed effects models (3dLME) with the same fixed and random effects as above. For each of the seeds, we tested for the group difference (Amusia vs Control) in connectivity. Results were False Discovery Rate corrected to (q < 0.05) across all eight follow-up tests [four seeds × 2 hemispheres] corresponding to a threshold of p<0.00035. Similarly, for the subcortical structures, each seed beta series was correlated with subcortical structure beta series, with resulting values subject to statistical testing. An FDR correction over all tests involving subcortex was applied. For display in figures, the data were converted from SUMA’s standard mesh (std.141) to Freesurfer’s standard surface (fsaverage) using AFNI’s SurfToSurf program and mapping values from the closest nodes (i.e. vertices).
 
-## Correlation between functional connectivity and cue weights
+### Correlation between functional connectivity and cue weights
 
 To determine whether the functional connectivity patterns we observed were related to the importance placed on acoustic dimensions during prosodic categorization (cue weighting), the functional connectivity results were analyzed with respect to previously acquired cue weights obtained behaviorally from a subset of participants (Jasmin et al., 2020a). The right anterior insula and right auditory cortex results were used as ROIs (Figure 3A). The beta series for each ROI (averaged across vertices) was correlated with the beta series within the L-DLPFC seed area, separately for each condition, then averaged and Fisher Z-transformed. For the 21 participants for whom we had prosodic cue weight data (from Jasmin et al., 2020a), these cue weights were analyzed with respect to the functional connectivity between the L-DLPFC seed and the two ROIs using Spearman correlations.
 
-## Comparison between the speech task and passive tone listening
+### Comparison between the speech task and passive tone listening
 
 As described above, functional connectivity between L-DLPFC, and right auditory cortex and right insula was calculated using data from the passive tone listening task, using ROIs derived from the active speech perception task. After pre-processing and de-trending, the averaged value from the tone listening experiment within these ROIs was extracted, as well as the LDLPFC seed, for each experiment. Correlations between signal within the seed and the two ROIs was calculated and Fisher Z-transformed. As mentioned above, because all trials in the tone-listening experiment were analyzed as the same type, it was not necessary to use a first-level model to obtain trial-wise betas. Similarly for the data from the speech task, the average value within the seed region and both ROIs was extracted, separately for each of the 3 Beta series (Pitch-, Time- and Both-Informative), and the seed and ROI series were correlated. The mean of these three correlation coefficients was calculated and Fisher Z-transformed. Finally, statistics were performed using a mixed ANOVA with Experiment (Speech or Tones) as the within-subject factor and Group (Amusia or Control) as the between-subject factor.
 
-## Analysis of activation
+### Analysis of activation
 
 A standard General Linear Model comparing activation strength (rather than connectivity) was also conducted. As in the General Linear Model for obtaining beta weights, no basis function was used, and polynomials up to second degree were included in the models.
 
-## Data availability
+### Data availability
 
 The data that support the findings of this study are openly available in the Birkbeck repository (https://researchdata.bbk.ac.uk/65/), as are the speech stimuli (Jasmin et al., 2020b; https://researchdata.bbk.ac.uk/37/). The speech task can be demoed at the following link: (Gorilla Open Materials; https://gorilla.sc/openmaterials/102786).

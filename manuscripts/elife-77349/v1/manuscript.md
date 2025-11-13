@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05k6m5t95 National Institute of Polar Research Tokyo Japan
-2. https://ror.org/0516ah480 Department of Polar Science, The Graduate University for Advanced Studies, SOKENDAI Tokyo Japan
-3. https://ror.org/02wn5qz54 Centre for Biological Diversity, University of St Andrews St Andrews United Kingdom
+1. National Institute of Polar Research Tokyo Japan ([ROR:05k6m5t95](https://ror.org/05k6m5t95))
+2. Department of Polar Science, The Graduate University for Advanced Studies, SOKENDAI Tokyo Japan ([ROR:0516ah480](https://ror.org/0516ah480))
+3. Centre for Biological Diversity, University of St Andrews St Andrews United Kingdom ([ROR:02wn5qz54](https://ror.org/02wn5qz54))
 
 † Corresponding author
 

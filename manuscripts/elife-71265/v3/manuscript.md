@@ -18,23 +18,23 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States
-2. https://ror.org/02yrq0923 Department of Medicine, Memorial Sloan Kettering Cancer Center New York United States
-3. https://ror.org/03vek6s52 Department of Biostatistics, Harvard T.H. Chan School of Public Health Boston United States
-4. https://ror.org/02jzgtq86 Department of Data Science, Dana-Farber Cancer Institute Boston United States
-5. https://ror.org/04b6nzv94 Channing Division of Network Medicine, Department of Medicine, Brigham and Women’s Hospital and Harvard Medical School Boston United States
-6. https://ror.org/01xf75524 Department of Cancer Epidemiology, Moffitt Cancer Center Tampa United States
-7. https://ror.org/04c6bry31 Department of Pathology, St. James’s Hospital Dublin Ireland
-8. https://ror.org/02tyrky19 Trinity College Dublin Ireland
-9. https://ror.org/00t4vnv68 Pathology Unit, Addarii Institute, S. Orsola-Malpighi Hospital Bologna Italy
+1. Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Department of Medicine, Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))
+3. Department of Biostatistics, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+4. Department of Data Science, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+5. Channing Division of Network Medicine, Department of Medicine, Brigham and Women’s Hospital and Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+6. Department of Cancer Epidemiology, Moffitt Cancer Center Tampa United States ([ROR:01xf75524](https://ror.org/01xf75524))
+7. Department of Pathology, St. James’s Hospital Dublin Ireland ([ROR:04c6bry31](https://ror.org/04c6bry31))
+8. Trinity College Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+9. Pathology Unit, Addarii Institute, S. Orsola-Malpighi Hospital Bologna Italy ([ROR:00t4vnv68](https://ror.org/00t4vnv68))
 10. Department of Pathology, Weill Cornell Medical College New York United States
-11. https://ror.org/037zgn354 Department of Pathology, Johns Hopkins Medical Institutions Baltimore United States
+11. Department of Pathology, Johns Hopkins Medical Institutions Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
 
 † Corresponding author
 
 ## Abstract
 
-Tissue microarrays (TMAs) have been used in thousands of cancer biomarker studies. To what extent batch effects, measurement error in biomarker levels between slides, affects TMA-based studies has not been assessed systematically. We evaluated 20 protein biomarkers on 14 TMAs with prospectively collected tumor tissue from 1448 primary prostate cancers. In half of the biomarkers, more than 10% of biomarker variance was attributable to between-TMA differences (range, 1–48%). We implemented different methods to mitigate batch effects (R package batchtma ), tested in plasmode simulation. Biomarker levels were more similar between mitigation approaches compared to uncorrected values. For some biomarkers, associations with clinical features changed substantially after addressing batch effects. Batch effects and resulting bias are not an error of an individual study but an inherent feature of TMA-based protein biomarker studies. They always need to be considered during study design and addressed analytically in studies using more than one TMA.
+Tissue microarrays (TMAs) have been used in thousands of cancer biomarker studies. To what extent batch effects, measurement error in biomarker levels between slides, affects TMA-based studies has not been assessed systematically. We evaluated 20 protein biomarkers on 14 TMAs with prospectively collected tumor tissue from 1448 primary prostate cancers. In half of the biomarkers, more than 10% of biomarker variance was attributable to between-TMA differences (range, 1–48%). We implemented different methods to mitigate batch effects (R package batchtma), tested in plasmode simulation. Biomarker levels were more similar between mitigation approaches compared to uncorrected values. For some biomarkers, associations with clinical features changed substantially after addressing batch effects. Batch effects and resulting bias are not an error of an individual study but an inherent feature of TMA-based protein biomarker studies. They always need to be considered during study design and addressed analytically in studies using more than one TMA.
 
 ## Introduction
 
@@ -46,7 +46,7 @@ In this study, we assess batch effects in a large set of centrally constructed T
 
 ## Results
 
-## Extent and type of batch effects
+### Extent and type of batch effects
 
 To evaluate the presence of batch effects in studies using TMAs, we studied tumor tissue from 1448 men with primary prostate cancer on 14 TMAs (labeled “A” through “N”), each including multiple tumor cores from 47 to 158 patients per TMA (Figure 1). Multiple cores from the same tumor (usually 3) were always located on the same TMA.
 
@@ -56,13 +56,55 @@ To evaluate the presence of batch effects in studies using TMAs, we studied tumo
 
 TMAs were used to quantify 20 protein biomarkers (Figure 2). Biomarker values showed noticeable between-TMA variation, despite immunohistochemical staining having been conducted at the same time for all 14 TMAs. We estimated that across the 20 biomarkers, between-TMA variation explained between 1% and 48% of the overall variation in biomarker levels (intraclass correlation coefficient, ICC), with half of the biomarkers having ICCs greater than 10% (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig2-v3.jpg)
+
+**Figure 2.:** (A) Tissue microarrays (TMAs) assessed for each marker (dark blue, yes). (B) Approach to staining biomarkers: automated staining system versus manual staining (gray, yes); quantification of biomarkers: software-based scoring versus eye scoring (blue, yes); biomarker quality assessed: staining intensity, proportion of cells positive for the biomarker, area of tissue positive for the biomarker (yellow, yes). (C) Counts of tumors assessed for each biomarker. (D) Between-TMA ICCs (i.e., proportion of variance explained by between-TMA differences) for each biomarker, with 95% confidence intervals. Empty symbols indicate the 97.5th percentile of the null distribution of the ICC obtained by permuting tumor assignments to TMAs; asterisks indicate between-Gleason grade group ICCs. Biomarkers are arranged by descending between-TMA ICC.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** ICC, intraclass correlation coefficient.
+
 In an example biomarker, estrogen receptor alpha in nuclei of stromal cells (Figure 3), the means of the most extreme TMAs differed by 2.2 standard deviations in intensity of expression and variances differed up to 9.3-fold. Other biomarkers showed similar between-TMA variation by magnitude and by which TMAs had the most extreme values (Figure 4A). Likewise, we observed that not only means, but also variances of biomarker levels differed between TMAs, although patterns of heteroskedasticity appeared weaker than for means (Figure 4—figure supplement 1). In contrast, we found little evidence for more complex patterns of batch effects, such that tumors with specific grade, stage, or year of diagnosis would have been particularly affected by between-TMA differences (Supplementary file 1a). Nevertheless, observations from the same TMAs tended to be clustered together when projected onto the first two principal components, capturing 27% of the variance in all biomarkers (Figure 4B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig3-v3.jpg)
+
+**Figure 3.:** (A) The protein biomarker estrogen receptor-alpha was quantified as staining intensity in nuclei of epithelial cells, averaged over all cores of each tumor. Each panel shows processed data for a specific approach to correcting batch effects. Notes in the upper right corner indicate which properties of batch effects were potentially addressed. Each data point represents one tumor. y-axes are standard deviations of the combined data for the specific method. Thick lines indicate medians, boxes interquartile ranges, and whisker length is 1.5 times the interquartile range. (B) Example photographs of TMAs; brown color indicates positive staining.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Symbols and color indicate the tissue microarray.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig4-v3.jpg)
+
+**Figure 4.:** (A), Biomarker mean levels by tissue microarray (TMA), in biomarker-specific standard deviations (y-axis). Each point is one TMA. (B) First two principal components of biomarkers levels on all 14 TMAs, with color/shape denoting TMA. Each point is one tumor. (C) The same first two principal components, with color/shape denoting Gleason score. (D) Per-core biomarker levels for tumors with multiple cores included on two separate TMAs, for estrogen receptor (ER) alpha and beta, both in standard deviations. Each point is one tumor core. (E) Pearson correlation coefficients r between uncorrected and corrected biomarker levels. Entries are averages across all markers.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig4-figsupp1-v3.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig4-figsupp2-v3.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig4-figsupp3-v3.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** Symbol color and shape indicate the TMA.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig4-figsupp5-v3.jpg)
+
+**Figure 4—figure supplement 5.:** Shown are regression coefficients for the 10th, 50th, and 90th percentiles as the outcomes of quantile regression models.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig4-figsupp6-v3.jpg)
+
+**Figure 4—figure supplement 6.:** The plot shows the difference between uncorrected and corrected values per batch, averaged across all biomarkers. IGF1-R was excluded because of missing values for some correction approaches. For batch correction approaches that only address the mean (i.e., that subtract the same correction value from all biomarker values within each batch), only that difference is visible; for correction methods that address individual values within batches differently, batch-specific medians and interquartile ranges of differences between uncorrected and corrected values are visible.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig4-figsupp7-v3.jpg)
+
+**Figure 4—figure supplement 7.:** “Pooled” indicates estimates pooled over batches (TMAs) using inverse-variance weighting. “No stratification” indicates estimates without stratification.
 
 Some biomarkers were stained using automated staining systems, other stains were done manually (Figure 2). Moreover, the method of scoring, including human (eye) scoring and computer-assisted quantification, differed between biomarkers, as did the main quantitative score, typically a measure of staining intensity, a proportion of cells above an intensity threshold, or a combination of both (Figure 2). Notably, between-TMA differences were present with any of these approaches. For example, batch effects were not only present when considering intensities of biomarker staining, as for the estrogen receptor alpha and beta example. Even when setting cutoffs for staining visible by eye and quantifying the number of stain-positive cells, 8% (95% confidence interval [CI], 2–15) of variance in estrogen receptor alpha positivity and 27% (95% CI, 11–42) of estrogen receptor beta positivity were attributable to between-TMA variation (Figure 2—figure supplement 1). Our data do not allow distinguishing which of these approaches, if any, were less prone to batch effects.
 
 In summary, we observed a large and concerning degree of between-TMA variation for several biomarkers that were quantified using different approaches, suggesting that addressing batch effects could significantly impact scientific inference.
 
-## Source of batch effects
+### Source of batch effects
 
 The noticeable proportion of variance attributable to TMAs could have two possibly co-existing explanations. First, that between-TMA differences in biomarkers reflect different patient and tumor characteristics that need to be retained. Second, that between-TMA differences are artifacts due to systematic measurement error that need to be removed (batch effects).
 
@@ -76,7 +118,7 @@ To directly disentangle both hypotheses, we further examined data on 10 tumors w
 
 Collectively, while these observations highlighted moderate differences in clinical and pathological characteristics between TMAs, they suggested that between-TMA differences were largely due to batch effects.
 
-## Mitigation of batch effects
+### Mitigation of batch effects
 
 We implemented six different approaches for batch effects mitigation and compared these to the uncorrected biomarker levels (Figure 3, Figure 3—figure supplement 1). Two mitigation approaches, batch means (approach 2) and quantile normalization (approach 6), assumed no true difference between TMAs is arising from patient and tumor characteristics, while all other approaches attempted to retain such differences between TMAs. It is possible that the choice of mitigation approaches may be optimized using knowledge of the source of the batch effect. This would be the case if each method “specialized” in mitigating effect from specific sources. We have not investigated this possibility here. Overall, correlations between values adjusted by different approaches were higher (mean Pearson r, 0.97–1.00) than between uncorrected values and corrected values (r, 0.90–0.95), regardless of mitigation approach (Figure 4E).
 
@@ -84,11 +126,27 @@ Approaches 2–7 reduced visible separation by batch on plots of the first two p
 
 The differences between uncorrected values and batch effect-corrected values were remarkably similar between the mean-based approaches using approaches 2 (simple means), 3 (standardized batch means), and 4 (inverse probability-weighted batch means; Figure 4—figure supplement 6). Consequently, batch effect-corrected values by approaches 2–4 were highly correlated (Figure 4E). All mean-only batch effect mitigations also gave the same results when fitting outcome models stratified by batch (Figure 4—figure supplement 7). However, batch-specific results differed for approaches that targeted between-batch differences in the variance of biomarkers.
 
-## Validating batch effect mitigation in plasmode simulation
+### Validating batch effect mitigation in plasmode simulation
 
 To compare the performance of the different batch mitigation approaches in a time-to-event analysis, we applied plasmode simulation (Franklin et al., 2014) to fix the expected strength of the biomarker exposure–outcome relationship a priori before artificially introducing batch effects. The correlation structure between biomarker and confounders and between confounders and batches from the actual data (Figure 5—figure supplement 1A, C) was preserved in the plasmode-simulated data. Likewise, across a range of hazard ratios for the biomarker–outcome association, confounder–outcome associations remained unchanged (Figure 5—figure supplement 1B, D).
 
 We first evaluated a setting in which we did not introduce batch effects (Figure 5A). Here, the observed hazard ratios without batch effect mitigation equaled the expected. When performing (unnecessary) batch effect mitigation, observed hazard ratios were still comparable with the expected hazard ratios (Figure 5D; see Supplementary file 1c for CIs).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig5-v3.jpg)
+
+**Figure 5.:** (A–C) Biomarker levels by tissue microarray in three simulation scenarios. (D–F) True versus observed hazard ratios for the biomarker–outcome association after alternative approaches to batch effect correction, with correction methods being numbered as in the Materials and methods section. The solid blue line indicates no correction for batch effects. (A, D) no batch effects; (B, E) means-only batch effects; (C, F) means and variance batch effects.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Gleason scores and lethal prostate cancer (metastasis-free survival) in the actual data. (B) Gleason scores and lethal prostate cancer in an example simulated data set. Shaded areas indicate 95% confidence intervals. (C) Pearson correlation coefficients between biomarker levels and confounders, and between confounders, across all simulated datasets. Correlation coefficients observed in the actual data are noted in the legend. (D) Hazard ratios for the biomarker and the confounders in relation to lethal prostate cancer, pooling all simulated data sets. Confounder–outcome associations were simulated to correspond to their observed values in the actual data; exposure–outcome associations were simulated to a range of hazard ratios (x-axis). Lines indicate medians across simulations with the same exposure–outcome hazard ratio, shaded areas range from the 2.5th to 97.5th percentile.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Tumors with more extreme Gleason scores were set to be more extremely influenced by batch effects in terms of mean and variances.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/71265/elife-71265-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Observed hazard ratios after different approaches to batch effect correction (y-axis) are compared to true (fixed) hazard ratios for the biomarker–outcome association (x-axis; solid blue line: no correction for batch effects). Columns are different batch effects that were added; rows are different data correlation structures.
 
 We then introduced batch effects by adding batch-specific mean differences to the observed biomarker levels, yet without introducing differences in variance by batch (Figure 5B). Without batch effect mitigation, for a true hazard ratio of 3.0, the observed hazard ratio, averaged over simulations, was 2.17 (95% CI, 1.86–2.53), an underestimate by 28% (Figure 5E; Supplementary file 1c). In contrast, all mitigation approaches produced CIs that covered the expected hazard ratio (e.g., approach 6 quantile normalization: hazard ratio, 3.03; 95% CI, 2.48–3.69).
 
@@ -98,7 +156,7 @@ We also included two stratification-based approaches. Fitting survival models se
 
 Scenarios evaluated thus far were based on the actual, modest imbalance of confounders between batches and at most weak associations between the biomarker and confounders, resulting in weak confounding overall. We additionally introduced both modest and strong associations between biomarker and confounders and created more severe imbalance between batches (Figure 5—figure supplement 2). In all scenarios, the ranking of mitigation methods was preserved (Figure 5—figure supplement 3, Supplementary file 1c–d), with the least bias obtained through quantile normalization (approach 6). Bias occurred when using uncorrected biomarker levels in the presence of any batch effects, except if there was no association between biomarker and outcome (i.e., a hazard ratio of 1), and with mean-only approaches 2–4 if variance was also affected by batch effects. In no situation, except possibly with the quantile regression-based approach 5, were estimates after batch effect mitigation farther from the expected values than results based on uncorrected biomarker levels.
 
-## Impact of batch effects
+### Impact of batch effects
 
 To illustrate how batch effect mitigations alter the results of commonly conducted tumor biomarker analyses, we estimated how uncorrected and corrected biomarker levels were associated with Gleason score and with rates of lethal disease. For markers with little between-TMA variability (low ICCs) such as beta-catenin, there were no noticeable differences in associations between using unadjusted and adjusted biomarker levels irrespective of adjustment model, as expected from plasmode simulation. However, for markers with higher between-TMA variability (higher ICC) and stronger associations with the outcome, adjustment approaches led to noticeable differences (Figure 6). For example, uncorrected stathmin expression levels were not associated Gleason score (difference, 0.00 standard deviations per one grade-group increase; 95% CI, –0.05 to 0.05), while the difference in levels corrected according to approach 6 (quantile normalization) was 0.04 (95% CI, 0.00 to 0.07), suggesting a potentially qualitatively different interpretation (Figure 6A; Supplementary file 1e). In models for lethal disease (Figure 6B), the otherwise unadjusted hazard ratio for the highest quartile of the vitamin D receptor, compared to the lowest quartile, was 0.44 (95% CI, 0.23–0.86); after mitigation using approach 6, the hazard ratio was 0.19 (95% CI, 0.09–0.40), suggesting that unadjusted biomarker levels could underestimate the prognostic association by 2.3-fold (Supplementary file 1f–g).
 
@@ -132,7 +190,7 @@ We recommend that researchers openly address batch effects in their TMA-based st
 
 ## Materials and methods
 
-## TMAs and biomarkers
+### TMAs and biomarkers
 
 Tumor tissue in this study was from men who were diagnosed with primary prostate cancer during prospective follow-up of two nationwide cohort studies. The Health Professionals Follow-up Study is an ongoing cohort study that enrolled 51,529 male health professionals across the United States in 1986. The Physicians’ Health Study 1 and 2 were randomized-controlled trials of aspirin and dietary supplements, starting in 1982 with 22,071 male physicians. Participants were diagnosed with and treated for prostate cancer at local health care providers across the United States. The study team collected formalin-fixed paraffin-embedded tissue specimens from radical prostatectomy and transurethral resection of the prostate (TURP), and study genitourinary pathologists performed central re-review, including standardized Gleason grading of full hematoxylin–eosin-stained slides from the tumor blocks (Stark et al., 2009). Written informed consent was obtained from all participants, and the study protocol was approved by the institutional review boards of the Brigham and Women’s Hospital and Harvard T.H. Chan School of Public Health (IRB19-1430), and those of participating registries as required.
 
@@ -140,29 +198,33 @@ TMAs were constructed using 0.6 mm tissue cores of the primary nodule or the nod
 
 Immunostaining was generally performed separately for individual biomarkers yet always for all TMAs at the same time. Detailed immunohistochemistry staining and quantification procedures for each marker have been published (Rider et al., 2015; Flavin et al., 2014; Fiorentino et al., 2008; Ahearn et al., 2016; Ding et al., 2011; Nguyen et al., 2010; Pettersson et al., 2018; Kasperzyk et al., 2013; Dhillon et al., 2009; Hendrickson et al., 2011; Zu et al., 2013; Stopsack et al., 2020) or are in preparation for estrogen receptor alpha (antibody SP1; Thermo Fisher Scientific, Waltham, MA) and an antibody (PPG5/10; Bio-Rad Laboratories, Hercules, CA) widely used to measure estrogen receptor beta. If batch effect mitigation approaches had been applied in the original studies, the uncorrected levels were retrieved. Right-skewed biomarker scores (Ki-67, pS6, TUNEL) were loge transformed. All biomarkers were scaled to mean 0 and standard deviation 1 solely to facilitate comparisons of batch effects across markers; batch effect mitigation does not necessitate scaling and preserves absolute biomarker values.
 
-## Extent and type of batch effects
+### Extent and type of batch effects
 
-To visualize the extent of biomarker variation between TMAs, we plotted uncorrected biomarker values by tumor, biomarker, and TMA. We summarized biomarker variation using the first two principal components (Lê et al., 2008). We calculated between-TMA mean differences and ratios of variances versus the first TMA. We tested if tumors with different clinical/pathological characteristics had higher biomarker levels in TMAs with higher means (i.e., multiplicative effect modification). For each biomarker and each clinical/pathological feature (ordinal Gleason score, ordinal stage, or calendar year of diagnosis), let Zij be the within-TMA z-score (mean 0, standard deviation 1) for tumor i from TMA j; Ai, the clinical/pathological feature of tumor i; Bj, the TMA-specific biomarker mean, rj, the TMA-specific random effect, and eij, residual error. In the regression model Zij=β0+β1Ai+β2Bj+β3AiBj+rj+eij , we evaluated the β3 term to assess for multiplicative effect measure modification.
+To visualize the extent of biomarker variation between TMAs, we plotted uncorrected biomarker values by tumor, biomarker, and TMA. We summarized biomarker variation using the first two principal components (Lê et al., 2008). We calculated between-TMA mean differences and ratios of variances versus the first TMA. We tested if tumors with different clinical/pathological characteristics had higher biomarker levels in TMAs with higher means (i.e., multiplicative effect modification). For each biomarker and each clinical/pathological feature (ordinal Gleason score, ordinal stage, or calendar year of diagnosis), let Zij be the within-TMA z-score (mean 0, standard deviation 1) for tumor i from TMA j; Ai, the clinical/pathological feature of tumor i; Bj, the TMA-specific biomarker mean, rj, the TMA-specific random effect, and eij, residual error. In the regression model $Z_{ij}=\beta_{0}+\beta_{1}A_{i}+\beta_{2}B_{j}+\beta_{3}A_{i}B_{j}+r_{j}+e_{ij}$ , we evaluated the β3 term to assess for multiplicative effect measure modification.
 
-We calculated the proportion of variation in biomarker levels attributable to TMA using intra-class correlations (ICCs, also “repeatability”; Nakagawa and Schielzeth, 2010) based on one-way random effects linear mixed models with an independent variance–covariance structure (Nakagawa and Schielzeth, 2010; Hankinson et al., 1995) for Yij, the biomarker level per tumor i and TMA j; where β0 is the biomarker mean; rj, the random effect for TMA j; and eij, the residual error: Yij=β0+rj+eij . The ICC was defined as the proportion of between-TMA variance in the total variance: ICC=var(r)var(r)+var(e). 95% CIs for ICCs were obtained using parametric bootstrapping using 500 repeats (Stoffel et al., 2017).
+We calculated the proportion of variation in biomarker levels attributable to TMA using intra-class correlations (ICCs, also “repeatability”; Nakagawa and Schielzeth, 2010) based on one-way random effects linear mixed models with an independent variance–covariance structure (Nakagawa and Schielzeth, 2010; Hankinson et al., 1995) for Yij, the biomarker level per tumor i and TMA j; where β0 is the biomarker mean; rj, the random effect for TMA j; and eij, the residual error: $Y_{ij}=\beta_{0}+r_{j}+e_{ij}$ . The ICC was defined as the proportion of between-TMA variance in the total variance: $ICC=\frac{var(r)}{var(r)+var(e)}.$ 95% CIs for ICCs were obtained using parametric bootstrapping using 500 repeats (Stoffel et al., 2017).
 
-## Source of batch effects
+### Source of batch effects
 
-To directly distinguish between-TMA variation caused by batch effects from variation caused by differences in patient and tumor characteristics, we compared ICCs per biomarker overall to ICCs per biomarker when restricting analyses to a subset of tumors with the same clinical features. We also leveraged a small subset of tumors that had cores included on more than one TMA. Here, we used two-way random effects linear mixed models with independent variance–covariance structure (Bates et al., 2015) to separate between-TMA variation from between-core variation (i.e., intratumoral heterogeneity) and residual modeling error: Yijk=β0+rj+si+eijk. Compared to the model described earlier, this model additionally includes tumor-specific random effects si, and thus ICC=var(r)var(r)+var(s)+var(e).
+To directly distinguish between-TMA variation caused by batch effects from variation caused by differences in patient and tumor characteristics, we compared ICCs per biomarker overall to ICCs per biomarker when restricting analyses to a subset of tumors with the same clinical features. We also leveraged a small subset of tumors that had cores included on more than one TMA. Here, we used two-way random effects linear mixed models with independent variance–covariance structure (Bates et al., 2015) to separate between-TMA variation from between-core variation (i.e., intratumoral heterogeneity) and residual modeling error: $Y_{ijk}=\beta_{0}+r_{j}+s_{i}+e_{ijk}$. Compared to the model described earlier, this model additionally includes tumor-specific random effects si, and thus $ICC=\frac{var(r)}{var(r)+var(s)+var(e)}$.
 
-## Mitigation of batch effects
+### Mitigation of batch effects
 
 In addition to (1) using uncorrected values, we implemented eight different approaches to handle between-TMA batch effects:
 
 (2) Simple means. This approach assumes that all TMAs, if not affected by batch effects, would have the same mean biomarker value. Differences in mean biomarker values per batch are corrected by estimating batch-specific mean effects (differences from the overall mean level) using a linear regression model with uncorrected biomarker values as the outcome and batch indicators as predictors. Corrected biomarker values are then obtained by subtracting batch-specific effects from the uncorrected biomarker values. Mean differences can either indicate the difference of each batch mean to the overall mean, as implemented here, or be defined by comparison to a reference batch.
 
-(3) Standardized means. This approach estimates marginal means per batch using model-based standardization (in the epidemiologic sense). It assumes that batches with similar characteristics have the same means if not affected by batch effects. A linear regression model for a specific biomarker is fit, adjusting for tumor variables that differ in distribution between TMAs, similar to an approach described in the epidemiology literature by Rosner et al., 2008. Let Yij indicate the biomarker value for tumor i on TMA j; Bj, TMA j; C1 to Cm, the m covariates to be retained; and eij, the residuals. Then Yij=β0+βjBi+γ1C1+…+γnCn+eij . Batch effect-corrected biomarker values can be obtained by subtracting batch-specific effects βj predicted from the model above from uncorrected biomarker values.
+(3) Standardized means. This approach estimates marginal means per batch using model-based standardization (in the epidemiologic sense). It assumes that batches with similar characteristics have the same means if not affected by batch effects. A linear regression model for a specific biomarker is fit, adjusting for tumor variables that differ in distribution between TMAs, similar to an approach described in the epidemiology literature by Rosner et al., 2008. Let Yij indicate the biomarker value for tumor i on TMA j; Bj, TMA j; C1 to Cm, the m covariates to be retained; and eij, the residuals. Then $Y_{ij}=\beta_{0}+\beta_{j}B_{i}+\gamma_{1}C_{1}+…+\gamma_{n}C_{n}+e_{ij}$ . Batch effect-corrected biomarker values can be obtained by subtracting batch-specific effects $\beta_{j}$ predicted from the model above from uncorrected biomarker values.
 
 We included the following clinical and pathologic variables as plausible sources of real between-TMA differences that should be retained in this approach, as well approaches 4–7: calendar year of diagnosis (linear), Gleason score (categorical: 5–6; 3+4; 4+3; 8; 9–10), and pathologic tumor stage (categorical: pT1/T2, pT3/T3a, pT3b/T4/N1, missing/tissue from transurethral resection of the prostate).
 
 (4) Inverse-probability weighted batch means. Like the preceding approach, this approach assumes that batches with similar characteristics have the same means if not affected by batch effects. While the preceding approach assumes a constant association between covariates and biomarker levels across batches, this approach allows for associations to differ between batches. We first used inverse probability weighting for marginal standardization of the distribution of clinical and pathological features per batch to the distribution in the entire study population. Stabilized weights (Cole and Hernán, 2008), truncated at the 2.5th and 97.5th percentile, were obtained through multinomial regression models, modeling the probability of assignment to a specific batch based on same clinical and pathological variables as in approach 3. In the weighted pseudopopulation, we then used a marginal linear model to estimate batch-specific mean differences, which were further used as in approaches 2 and 3.
 
-(5) Quantile regression. This approach assumes that batches with similar characteristics have the same values for a selected set of batch-specific quantiles, in this application the upper and lower quartile. The lower quartile may be particularly affected by background noise, while the upper quartile may more likely reflect differences in batches due to covariates. A corollary of separately modeling the two differently is that clinical and pathological variables are allowed to have different effects on these quartiles (Bann et al., 2020). These assumptions contrast with approaches 2–4 that focus on mean levels only. We used quantile regression with the Frisch-Newton approach (Portnoy and Koenker, 1997) separately for the first and third quartile of biomarker values with batch indicators to predict adjusted batch-specific quantile values with the same confounders as above. We then used the batch-specific 25th percentiles (yτ=0.25) as the offset and the interquartile range between the 25th and 75th percentiles (yτ=0.75) as the scaling factor when batch-correcting biomarker levels. Let yij indicate the batch effect-corrected biomarker level for tumor i on TMA j; yij , the uncorrected biomarker level for tumor i on TMA j; y^iτ=x , xth quantile of y for batch j (predicted value for yj from unadjusted quantile regression); y^jτ=x,∗ is y^jτ=x with adjustment for confounders (predicted value for yj from adjusted quantile regression); and y´τ=x , the xth quantile of y overall. Then the corrected biomarker level isyij∗=(yij−y^jτ=0.25)(y¯τ=0.75−y¯τ=0.25)(y^jτ=0.75,∗−y^jτ=0.25,∗)+y¯τ=0.25−y^jτ=0.25,∗+y^jτ=0.25
+(5) Quantile regression. This approach assumes that batches with similar characteristics have the same values for a selected set of batch-specific quantiles, in this application the upper and lower quartile. The lower quartile may be particularly affected by background noise, while the upper quartile may more likely reflect differences in batches due to covariates. A corollary of separately modeling the two differently is that clinical and pathological variables are allowed to have different effects on these quartiles (Bann et al., 2020). These assumptions contrast with approaches 2–4 that focus on mean levels only. We used quantile regression with the Frisch-Newton approach (Portnoy and Koenker, 1997) separately for the first and third quartile of biomarker values with batch indicators to predict adjusted batch-specific quantile values with the same confounders as above. We then used the batch-specific 25th percentiles ($y^{\tau=0.25}$) as the offset and the interquartile range between the 25th and 75th percentiles ($y^{\tau=0.75}$) as the scaling factor when batch-correcting biomarker levels. Let $y_{ij}^{}$ indicate the batch effect-corrected biomarker level for tumor i on TMA j; $y_{ij}$ , the uncorrected biomarker level for tumor i on TMA j; $y^_{i}^{\tau=x}$ , xth quantile of y for batch j (predicted value for yj from unadjusted quantile regression); $y^_{j}^{\tau=x,∗}$ is $y^_{j}^{\tau=x}$ with adjustment for confounders (predicted value for yj from adjusted quantile regression); and $y´^{\tau=x}$ , the xth quantile of y overall. Then the corrected biomarker level is
+
+$$
+y_{ij}^{∗}=\frac{(y_{ij}−y^_{j}^{\tau=0.25})(y¯^{\tau=0.75}−y¯^{\tau=0.25})}{(y^_{j}^{\tau=0.75,∗}−y^_{j}^{\tau=0.25,∗})}+y¯^{\tau=0.25}−y^_{j}^{\tau=0.25,∗}+y^_{j}^{\tau=0.25}
+$$
 
 (6) Quantile normalization. This approach assumes that samples on all batches, if not affected by batch effects, would not only have the same mean and variance but also the same distribution of individual biomarker values. Uncorrected biomarker values are ranked within each batch and then ranks are replaced by the mean of values with the same rank across batches. We implemented quantile normalization using limma (Ritchie et al., 2015; Bolstad et al., 2003).
 
@@ -178,7 +240,7 @@ For approaches 1–7, we calculated Pearson correlation coefficients between unc
 
 Approaches 2–6, which result in batch effect-adjusted biomarker levels, are implemented in the R package batchtma, available at https://stopsack.github.io/batchtma and the Comprehensive R Archive Network (CRAN).
 
-## Plasmode simulation
+### Plasmode simulation
 
 We evaluated the impact of batch effect mitigation approaches on known, investigator-determined biomarker–outcome associations using plasmode simulation, an approach used, for example, for evaluating confounding control for binary exposures in pharmacoepidemiology (Franklin et al., 2014). We used observed data from all tumors included on the 14 TMAs to determine covariates (Gleason grade, pathological stage) and outcome (lethal disease), preserving the observed correlation structure (e.g., joint distribution of clinical characteristics across TMAs). The only simulated elements were the biomarker levels and the strengths of biomarker–outcome associations (hazard ratios ranging from 1/3 to 3) that we fixed by simulating event times with flexible parametric survival models (Crowther and Lambert, 2013). Models used a baseline hazard function consisting of cubic splines with three knots (Jackson, 2016). Group differences were based on proportional hazards for the observed confounder–outcome coefficients in the real data and the fixed biomarker (exposure)–outcome hazard ratios.
 
@@ -186,10 +248,10 @@ First, we used plasmode simulation to generate the fixed associations of the bio
 
 In sensitivity analyses, we simulated “moderate” associations between the biomarker and confounders (0.2 standard deviations difference in biomarker levels per Gleason grade group, 0.1 per stage category), “strong” associations (differences of 0.4 and 0.2 standard deviations, respectively; stronger than observed for any biomarker in our study), as well as “strong” associations and additional imbalance in Gleason grade and stage between TMAs (by excluding tumors with low grades from TMAs with higher-than-average means and excluding tumors with high stage from TMAs with low-than-average means), all before the four steps described above.
 
-## Impact of batch effects
+### Impact of batch effects
 
 To quantify the impact of different approaches to batch-effect handling on scientific inference, we focused on two commonly employed types of analyses in biomarker research in prostate cancer: first, a cross-sectional analysis of Gleason score and biomarker levels, using linear regression models; second, a time-to-event analysis of biomarker levels and rates of lethal disease, using Cox proportional hazards regression. Gleason scores were modeled as ordinal variables and biomarkers as linear variables to obtain one single estimate per model. We also categorized biomarkers into four quartiles and compared hazard ratios for lethal disease of the extreme quartiles. Models were designed only for investigating issues of batch effects and not for subject matter inference on specific biomarkers.
 
-## Data availability
+### Data availability
 
 The batchtma R package is available at https://stopsack.github.io/batchtma and the Comprehensive R Archive Network (CRAN). Code used to produce results this manuscript is at https://github.com/stopsack/batchtma_manuscript (copy archived at swh:1:rev:a588f10906f8685b055e5a6f0a487f5f850d13bc, Stopsack, 2022). Data are available for analysis on the Harvard FAS computing cluster through a project proposal for the Health Professionals Follow-up Study (https://sites.sph.harvard.edu/hpfs/for-collaborators).

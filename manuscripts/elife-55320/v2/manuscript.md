@@ -42,21 +42,33 @@ In this paper, we describe and validate an adaptation to the 10x Genomics protoc
 
 ## Results
 
-## Adapting the 10x genomics scRNA-seq technology for yeast cells
+### Adapting the 10x genomics scRNA-seq technology for yeast cells
 
 To investigate the observed heterogeneous phenotypic response in isogenic yeast populations when they transition from glucose to maltose on a transcriptional level, we aimed to adapt the 10x Genomics platform to measure single-cell mRNA concentrations in yeast cells. The 10x Genomics platform is a commercial droplet-based scRNA-seq technology originally developed for mammalian cells (Vickovic et al., 2016). Since the yeast cell wall impairs the current lysis step in the protocol, this technology cannot be readily applied to yeast cells. We hypothesized that adding a cell wall digestion enzyme into the reverse transcription master-mix might overcome the current problem and enable the required in-droplet lysis of the yeast cells.
 
 To examine whether the above-mentioned approach could work, we tested whether zymolyase, a cell-wall digestion enzyme, is effective in lysing cells in a temperature regimen similar to that of the 10x Genomics Chromium Single Cell 3′ v2 protocol (Figure 1A). Herein, cells are initially stored on ice, subsequently brought to room temperature for droplet generation (~6 min), and droplets are then incubated at 53°C (45 min) to accommodate cell lysis and reverse transcription. For this experiment, the cells were grown in glucose-rich medium (YPD) to exponential phase, and 100 μL of the culture was washed into an ice-cold zymolyase solution. The cells were kept on ice for 25 min, mimicking the time needed in the protocol for preparation of the reagents and microfluidic plate. The cells were then transferred to room temperature for 6 min, and finally to 53°C, mimicking the lysis and reverse transcription steps. Cell counts were monitored throughout the transition steps using an automated cell counter (Bio-Rad TC20). Cell count remained constant during the incubation on ice, and dropped only slightly during the 6 min ambient temperature incubation. After 20 min of incubation at 53°C, cell counts dropped 200-fold, and even below detection limit after 40 min, suggesting that cells were lysing (Figure 1A). We confirmed that the heat shock alone will not result in cell lysis, and that zymolyase is necessary for lysis, by comparing the cell lysis efficacy of zymolyase solution to that of PBS during the transition from 0°C to 53°C (Figure 1—figure supplement 1A). Based on these observations, we concluded that the adapted protocol should allow lysing of yeast cells in the micro-droplets, with minimal premature out-of-droplet lysis, suggesting that this adaptation of the protocol may open the 10x Genomics platform to not only yeast cells, but also possibly other cell types that require cell wall lysis.
 
-## Media shift schema for scRNA-seq experiment
+![Figure 1.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig1-v2.jpg)
+
+**Figure 1.:** (A) Zymolyase is required and effective for lysing yeast cells in a temperature treatment regimen similar to the 10x Genomics’ single cell 3’ RNA-seq protocol (see text for details). Cell counts (for biological duplicates) only drop during the incubation at 53°C, showing that cells did not lyse beforehand. (B) Sampling scheme and cell counts for the scRNA-seq experiment. Cells were pre-grown in maltose, transferred to glucose for 12 hr, and finally shifted to maltose where they experience a lag phase. After the initial maltose pre-growth and subsequent wash to glucose, the cells were diluted for inoculation in glucose. Cell count of these two initial time points is scaled to the dilution level. Sampling points for scRNA-seq are represented by an asterisk: after 6 hr in glucose (referred to as ‘glucose-6h’), after 12 hr in glucose (‘glucose-12h’), after 1 hr in lag phase (‘lag-1h’), after 3 hr in lag (‘lag-3h’), and a control sample where cells grown on glucose are mixed in equal parts with cells grown on maltose (grey arrows; ‘mix-glucose-maltose’). (C) Correlation between bulk RNA-seq data and scRNA-seq data from cells in similar conditions, but separate experiments. Bulk RNA-seq data from a similar growth condition (12 hr in glucose) were obtained from a previously published experiment (Cerulus et al., 2018). The expression levels were quantified as fpkm and log-transformed with addition of a pseudo count. UMI counts from single-cell RNA-seq data were summed across the population, a pseudo-count was added, and log-transformed. The R2 is calculated excluding genes that are detected in bulk RNA-seq and not in scRNA-seq (shown in green). (D) Presence or absence of genes expected to be expressed in maltose distinguishes the two subgroups in the mix of cells grown on glucose and cells grown on maltose.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Comparison of cell lysis efficacy of zymolyase solution to that of PBS buffer without zymolyase enzyme. Zymolyase is required and effective for lysing yeast cells in a temperature treatment regimen similar to the 10x Genomics protocol (see text for details). Cells counts per condition were measured in biological duplicate. (B) Transcriptome projection of two samples sharing cells from a common condition, namely glucose-12h and mix-glucose-maltose, are aggregated. Half of the cells from the mix-glucose-maltose sample are sampled from the same condition as the glucose-12h sample. (C) The group of cells from the mix-glucose-maltose condition that does not overlap with glucose-12h condition, expresses the expected maltose-growth specific genes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) UMAP projection of glucose-specific growth markers in the aggregated glucose-12h and mix-glucose-maltose samples. (B) UMI count as a function of per-droplet barcodes. The blue line demonstrates the number of cells identified using the Cell Ranger software. The orange line demonstrates the number of expected cells based on the number of cells loaded. Details on the number of cells loaded and the expected number of cells is provided in the methods section.
+
+### Media shift schema for scRNA-seq experiment
 
 We next tested the adapted scRNA-seq method to study transcriptional heterogeneity in yeast cells transitioning in a maltose-glucose-maltose shift (Figure 1B). After pre-growth in maltose, the cells were transferred to glucose for 12 hr, and then shifted to maltose again. Samples were taken after 6 hr of glucose growth (glucose-6h), after 12 hr of glucose growth, just prior to the shift to maltose (glucose-12h), 1 hr after the shift to maltose (lag-1h), and 3 hr after the shift to maltose (lag-3h). Furthermore, a control sample (mix-glucose-maltose) consisting of a 50–50% mix of cells actively growing on maltose and cells actively growing on glucose (glucose-12h) was added. Since cells growing on maltose show a distinctly different physiology and gene expression pattern compared to cells growing on glucose, we expected to see two clear sub-groups in the control sample, allowing us to verify whether the protocol works and is able to measure transcription in separate cells. As detailed in the methods section, all samples were processed on the 10x Genomics platform and the generated cDNA libraries were sequenced using the Illumina platform. The number of cells analyzed in the glucose-6h, glucose-12h, lag-1h, lag-3h and mix-glucose-maltose samples was 1695, 1096, 1172, 1469 and 686, respectively (see Materials and methods section for further details), and the per-cell median number of transcripts in each condition was 1261, 894, 528, 607 and 975, respectively. The Seurat package (Butler et al., 2018; Stuart et al., 2019) was used to filter out cells with excess mitochondrial reads, possible doublets, and to normalize the data.
 
-## scRNA-seq quantification reproduces bulk RNA-seq data
+### scRNA-seq quantification reproduces bulk RNA-seq data
 
 First, we compared data obtained through the single-cell protocol for cells that are exponentially growing on glucose (glucose-12h) to bulk RNA-seq data from cultures grown in a similar condition (Cerulus et al., 2018). Each unique transcript copy in scRNA-seq data is represented by its unique molecular identifier (UMI), which is a 10 bp randomer oligo in the reverse transcription primer. UMI’s are widely used in scRNA-seq methods to eliminate quantification inaccuracies due to cDNA amplification (Islam et al., 2014). For the purpose of comparing single-cell to bulk data, we summed the UMI count for each gene across the population and log-transformed it after addition of a pseudo-count with a value of 0.1. Expression in bulk RNA-seq was quantified as fragments mapped per kilo-base of gene length and per million reads (fpkm). The fpkm values were log-transformed as well after addition of a pseudo count. After this transformation of the data, we observe that expression for 42 genes was detected with scRNA-seq but not by bulk RNA-seq (Figure 1C), with the majority of these showing a low expression level in the scRNA-seq data. On the other hand, 280 genes were detected only in the bulk RNA-seq. Unlike the first group, expression of these genes reached intermediate to high levels in bulk RNA-seq, while not being detected in scRNA-seq. It is not clear why this set of genes was not detected, as the GC content of these genes is not statistically different from the detected genes (mean %40.6, standard deviation %3.6 vs. mean %40.3, standard deviation %3.5), and they are not enriched for any GO terms. When excluding these 280 genes, the R2 correlation between the single-cell and bulk measurements is 0.7 (Figure 1C).
 
-## Heterogeneity detection, sensitivity, and low batch-to-batch variability
+### Heterogeneity detection, sensitivity, and low batch-to-batch variability
 
 Next, we investigated if we could detect the expected two subgroups in the control sample (mix-glucose-maltose sample) where we mixed cells grown in glucose with cells grown in maltose prior to mRNA extraction. When the transcriptome data of this control sample is projected into the two-dimensional UMAP (Uniform Manifold Approximation and Projection) space, we indeed observe that the cells are divided into two groups, with only one group showing expression of genes indicative of growth on maltose, such as MAL11, MAL12, MAL31, MAL32 and IMA1, or the glucose- repressed gene HXK1 (Figure 1D).
 
@@ -66,15 +78,96 @@ It is less trivial to find markers specific to the cells growing in glucose, sin
 
 The barcode vs UMI count plots can be found in Figure 1—figure supplement 1E, showing that the number of expected cells is close to, but slightly higher than the number of detected cells. The information from which the number of expected cells in each condition was estimated, is provided in Table 1 in the Materials and methods section. Figure 1—figure supplement 1E shows that a droplet called as ‘empty’ can still contain 100 UMIs, while the UMI content of a ‘filled’ droplet is in the range of 1000 to 10,000. Such presence of ambient mRNA in ‘empty’ droplets might be due to premature lysis of some cells before they are trapped in the droplets, which agrees with the slight cell count drop observed during ambient temperature incubation of cells with zymolyase (Figure 1A –green segment).
 
-## A heterogeneous and yet epigenetically heritable phenotype
+**Table 1.**
+ Overview of cell numbers during scRNA-seq experiment
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample name</th>
+      <th>Cell count when sampling</th>
+      <th>Cell count after thaw and wash in PBS</th>
+      <th>TARGET conc. of cells</th>
+      <th>Cell count after extra dilution in PBS</th>
+      <th>Number of cells expected</th>
+      <th>Number of cells identified after sequencing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>glucose-6h</td>
+      <td>1.38E+5</td>
+      <td>2.42E+5</td>
+      <td>2.00E+5</td>
+      <td>2.15E+5</td>
+      <td>2150</td>
+      <td>1695</td>
+    </tr>
+    <tr>
+      <td>glucose-12h</td>
+      <td>1.17E+6</td>
+      <td>4.19E+5</td>
+      <td>2.00E+5</td>
+      <td>2.07E+5</td>
+      <td>2070</td>
+      <td>1096</td>
+    </tr>
+    <tr>
+      <td>lag-1h</td>
+      <td>8.13E+5</td>
+      <td>3.19E+5</td>
+      <td>2.00E+5</td>
+      <td>1.62E+5</td>
+      <td>1620</td>
+      <td>1172</td>
+    </tr>
+    <tr>
+      <td>lag-3h</td>
+      <td>7.34E+5</td>
+      <td>3.72E+5</td>
+      <td>2.00E+5</td>
+      <td>2.09E+5</td>
+      <td>2090</td>
+      <td>1469</td>
+    </tr>
+    <tr>
+      <td>mix-glucose-maltose (glucose-12h + pre-growth maltose)</td>
+      <td>1.91E+6 (pre-growth maltose)</td>
+      <td>3.11E+5</td>
+      <td>1.00E+5 (for glucose-12h and pre-growth maltose)</td>
+      <td>Pre-growth maltose: 6.06E+4 glucose-12h: 1.32E+5 Together: 1.05E+5</td>
+      <td>(606+1320)* 0.5 = 963</td>
+      <td>686</td>
+    </tr>
+  </tbody>
+</table>
+
+### A heterogeneous and yet epigenetically heritable phenotype
 
 After confirming that our method is able to accurately resolve heterogeneous expression, we looked further into the transcriptional heterogeneity in yeast populations throughout a shift from glucose- to maltose-containing medium. When cells are shifted from glucose to maltose, the cells enter growth arrest, the so-called lag phase, during which they adapt to the new carbon source before resuming growth. We previously reported that the duration of the lag phase differs greatly between isogenic cells in a well-mixed, homogeneous population (Cerulus et al., 2018). While some cells are able to resume growth after about 5 hr, others take more than 20 hr, and a fraction of cells even completely fails to resume growth at all. Cells can thus be divided into two main groups, one capable of resuming growth (albeit after different lag times), and another group with cells that fail to make the switch. Our previous results showed that respiratory proteins and maltose-catabolic proteins (MAL genes) are induced in the fraction of cells that resume growth in maltose (Cerulus et al., 2018). However, the molecular source of the heterogeneity remains unclear. For example, no correlation was found between either the replicative age of the cells, nor the level of specific catabolic proteins and the cells’ fate in lag phase (Cerulus et al., 2018).
 
-## Population transcriptome structure during maltose-glucose-maltose shift
+### Population transcriptome structure during maltose-glucose-maltose shift
 
 As the lag phase is a transition phase between two steady states of continuous growth on glucose and continuous growth on maltose, dynamics of this transition can be demonstrated using the UMAP projection of the sampled transcriptomes (Figure 2A and Figure 2—figure supplement 1A). Figure 2A shows this projection for the samples glucose-12h, lag-1h, and lag-3h, which are separated in the UMAP space. Similarly, the dynamics of the complete consecutive maltose-glucose-maltose shift is shown in Figure 2—figure supplement 1A. As expected, cells growing on maltose (extracted from the mixed sample) are clearly separated from both cells growing on glucose as well as cells in the lag phase. The transcriptome of the cells from the glucose-6h and glucose-12h samples shows some overlap in the UMAP projection, whereas the transcriptome during the lag phase appears to be distinctly different from these continuous growth conditions (Figure 2A and Figure 2—figure supplement 1A). Interestingly, in the lag-3h sample, the cells appear to be grouped into two sub-populations. Based on cell count measurements (Figure 1B), we know that the cells have not yet resumed growth in this condition, hence such presence of population structure might correspond to two distinct groups of cells that eventually will or will not resume growth.
 
-## Differences in the transcriptome precede phenotypic differences in the lag phase
+![Figure 2.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig2-v2.jpg)
+
+**Figure 2.:** (A) Samples for scRNA-seq were collected separately at the end of glucose growth and during the lag phase after the glucose-maltose shift. Expression levels of the samples from glucose-12h, lag-1h and lag-3h were aggregated using the Cell Ranger software. The coloring is based on the sample barcode. (B) Clustering based on expression levels to group the glucose-12h, lag-1h and lag-3h samples into four clusters. The number of clusters was determined using the resolution parameter in FindClusters function of Seurat package. The lag-3h sample is grouped into two clusters (clusters 3 and 4). Differential expression analysis between clusters 3 and 4 was performed, of which the list of genes is provided as Supplementary file 1. GO enrichment of the overexpressed genes between these two clusters is provided as Supplementary file 2. (C) Validation of scRNA-seq results using fluorescent protein fusions. Cells carrying fluorescent fusion reporters were pre-grown in maltose, grown in glucose for 6 to 8 hr, then transferred to maltose and prepared for time-lapse microscopy while in maltose medium. The fluorescence intensity was tracked in each cell over time. The plots for cells that eventually managed to resume growth after transfer to maltose are colored orange, whereas plots for cells that failed to escape the lag phase are plotted in blue.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Samples for scRNA-seq were collected separately during glucose growth and during the lag phase after the glucose-maltose shift. The cells labeled as maltose pre-growth in the figure consist of a subset of the mix-glucose-maltose sample, namely those cells that express maltose growth markers. If a cell in mix-glucose-maltose sample had at least a total of two transcripts from MAL11, MAL12, MAL31, MAL32 or HXT1 genes, it was labeled as belonging to the maltose pre-growth condition. (B) Pseudo temporal ordering of the cells in lag phase using Monocle package.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Rows indicate genes expressed in a branch-dependent manner, and columns represent pseudo-time. The middle of x-axis represents the branching point, and progression from middle to right represents the trajectory of cells that grow in lag phase. Progression from middle to left represents the trajectory of the cells that cannot resume growth in lag phase. The list of the genes in each cluster is provided as Supplementary file 3.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Expression of the ribosomal genes from clusters 2, 3, and 4 of Figure 2—figure supplement 2A, over time during the lag phase. The blue lines correspond to the genes in clusters 2, 3, and 4 from Figure 2—figure supplement 2A, while the grey lines represent the rest of the genes.
+
+### Differences in the transcriptome precede phenotypic differences in the lag phase
 
 To further investigate the two subpopulations of the lag-3h sample, we separated the cells from the time series samples of glucose-12h, lag-1h and lag-3h using the FindClusters function of the Seurat package. The number of clusters was tuned to four using the resolution parameter (Figure 2B). The four clusters in Figure 2B represent (I) cells from lag-1h sample (cluster 1), (II) cells from glucose-12h sample (cluster 2), and, importantly, two distinct subgroups of cells in the lag-3h sample (clusters 3 and 4).
 
@@ -84,7 +177,7 @@ Cluster 4 is enriched for GO terms such as oxidation-reduction process, generati
 
 These two clusters comprise genes with opposite induction trends during lag phase. Based on this, we hypothesized that clusters 3 and 4 in Figure 2B correspond to non-growing and growing cells in lag phase, respectively. Moreover, the cells in cluster four show the transcriptional response that would be expected of cells shortly after a switch from glucose to an alternative sugar, such as the induction of genes responsible for ATP production, suggesting that only cells that are able to generate ATP can eventually escape the lag phase (see also further). Pseudo-temporal ordering of the cells in the process of lag phase yields a similar conclusion with regard to the dynamics of gene induction in lag phase, as does analyzing the branch dependent expression of the genes (Figure 2—figure supplement 1B and C, Supplementary file 3). The branched expression analysis modeling functionality of the Monocle package was used to find genes that are regulated in a branch-dependent manner. The two branches here correspond to the cells that will or will not resume growth in lag phase. Cluster eight in this figure shows activation of respiratory genes in one of the two branches, and interestingly clusters 2, 3, and 4, which almost exclusively contain ribosomal genes, show stronger deactivation in the branch that activates respiratory genes. This apparent decreasing level of ribosomal genes is not an artifact of normalization due to changes in total transcript levels, since the total UMI counts of these genes actually decreases during lag phase (Figure 2—figure supplement 1D).
 
-## Single-cell protein measurements confirm scRNA-seq findings
+### Single-cell protein measurements confirm scRNA-seq findings
 
 To test whether the identified differentially expressed genes in the two sub-populations of the lag-3h sample (cluster 3 and 4 in Figure 2B, Supplementary file 1), are indicative of whether or not cells will resume growth in lag phase, we analyzed the expression of a subset of these proteins by fusing the respective genes with a sequence encoding the fluorescent reporter yECitrine (Figure 2C). Specifically, we analyzed a subset of proteins whose expression is upregulated in cluster four relative to cluster 3 (Figure 2B): Qcr7, a subunit of complex III of the electron transport chain, Ssa1 and Hsp12, two stress response proteins, and two high-affinity hexose transporters (Hxt2 and Hxt7). In addition, we tested two low-affinity hexose transporters, Hxt1 and Hxt3 (Yin et al., 2003). HXT3 is upregulated in cluster 3, while HXT1 is not differentially expressed.
 
@@ -92,15 +185,23 @@ Single-cell time-lapse microscopy confirmed that QCR7, SSA1 and HSP12 indeed sho
 
 Together, these data show that cells that eventually escape the lag phase and resume growth on maltose are relieved from glucose repression within about 3 hr of the lag phase. By contrast, in cells that do not escape the lag phase, glucose-repressed genes, including genes related to respiration, stress response, high-affinity glucose transport and metabolism of alternative carbohydrates, remain repressed even after glucose was replaced by maltose.
 
-## Groups of co-expressed genes during glucose growth
+### Groups of co-expressed genes during glucose growth
 
 Next, we investigated if we could observe expression heterogeneity patterns in the population even prior to the shift to maltose (i.e. the glucose-12h sample). Groups of co-expressed genes in the glucose-12h sample were identified by correlating normalized expression levels across all cells within the population (Figure 3A). For this analysis, we employed two filtering criteria. Firstly, the genes should have at least 10 transcript copies across the population, and secondly, the expression of the selected genes must be correlated with at least seven other genes with a minimal Pearson coefficient of 0.1, and a Bonferroni adjusted correlation p-value threshold of 0.05. The groups of co-correlated genes were clustered together using the k-means clustering in Complex Heatmaps R package (Gu et al., 2016). The number of clusters was set to six based on visual inspection of the clusters (Figure 3A) The cluster assignment for the co-expressed genes in the glucose-12h sample is listed in Supplementary file 4. An interactive version of the co-expression heat map of Figure 3A can be found at https://abbasjariani.shinyapps.io/sc_co_expression_glucose_12h/.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig3-v2.jpg)
+
+**Figure 3.:** (A) Co-expression analysis during glucose growth (glucose-12h) and expression dynamics of genes during glucose-to-maltose shift. This figure is composed of three parts. First, a heat map of expression correlation of the genes (blue-red heat map on the left). Second, a single-column heat map of basal expression level during glucose growth (sky blue-yellow-red heat map in the middle), showing log10 of mean expression level per cell in the population. Third, a two-column heat map of expression change during lag phase (black-green-red on the right) which shows log2 fold change of expression in lag-1h and lag-3h samples relative to glucose-12h sample. The color intensity in the expression correlation heat map (left) shows Pearson correlation coefficient of the expression level of gene pairs in the glucose-12h sample. Genes with less than a total of 10 UMI’s across all cells were excluded from the analysis. Expression levels were normalized by NormalizeData function of Seurat package. For each gene pair, Pearson correlation coefficient between the two vectors of expression levels across the cells was calculated. Genes that were not correlated with at least seven other genes with a minimal absolute correlation coefficient of at least 0.1 and Bonferroni adjusted p-value threshold of 0.05, were filtered out. The identity diagonal elements were set to zero. Genes were grouped together using hierarchical clustering function of ComplexHeatmaps package. The lists of genes in each of the clusters are provided as Supplementary file 4. (B) Co-expression analysis during lag phase (lag-3h) and expression dynamic of genes during glucose-to-maltose shift. Similar to A), but for the lag-3h sample instead of glucose-12h. The lists of genes in each of the clusters are provided as Supplementary file 4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Similar to Figure 3A and B but for lag-1h sample. The lists of genes in each of the clusters are provided as Supplementary file 4.
 
 Ribosomal protein-encoding genes appear to be tightly co-expressed in the glucose-12h sample and are grouped together in cluster 6, which agrees with previous findings (Gasch et al., 2017). This cluster contains 94 genes, 87 of which encode ribosomal proteins. Cluster 2 features 116 co-expressed genes including the eight core histone genes, and is enriched for the GO term mitotic cell cycle process (adjusted p-value<10−9). Cluster 5 shows another group of tightly co-expressed genes, the expression of which is inversely correlated with expression of the ribosomal genes in cluster 6 (Figure 3A). Similar to cluster 6 (ribosomal genes) and cluster 2 (histone genes), cluster 5 has a high basal expression level in glucose (Figure 3A, third column from right). The observation that clusters 6 (ribosomal genes), 2 (histone genes) and 5 all have high basal expression levels, and yet expression of cluster 5 is inversely correlated with the genes in cluster 6, might appear counter-intuitive at first glance. However, considering the seemingly necessary nature of these genes, such inverse correlation might be due to the expression of these genes at mutually exclusive stages of cell-cycle. Cluster 5 consists of 63 members and includes several stress related genes such as SSA1, SSA2, SSB1, SSB2, SSE1 and HSC82, ergosterol biosynthesis genes ERG4, ERG5 and ERG6, and iron metabolism genes FET3, FIT1, FIT2 and FIT3. Cluster 5 also includes multiple genes from the glycolytic pathway (TDH2, TDH3, CDC19, ENO1, ADH1, PGI1 and FBA1).
 
 Unlike clusters 6, 2 and 5, cluster 1 shows a low basal expression level in glucose (Figure 3A). It contains 151 genes, including stress and heat shock genes such as SSA3, SSA4, HSP104, HSP12, HSP26, HSP42, HSP78, and HSP82. This cluster also includes CIT1, a key gene from the TCA cycle, and the high-affinity hexose transporter HXT7. We retrieved the transcription factors regulating genes in cluster 1 from Yeastract (Costanzo et al., 2014) using default settings. Interestingly, either the Msn2 or Msn4 transcription factors regulate 91 out of 151 members of this cluster. Both transcription factors are shown to play a key role in stochastic gene expression via stochastic nuclear localization, and play a role in survival during environmental shifts (Hao and O'Shea, 2012; Huh et al., 2003; Raser and O'Shea, 2004). This suggests that the members of cluster 1 show a variable and stochastic expression pattern. Cells that express these genes might have an advantage in certain environmental challenges, possibly including a transition to another carbon source, as was the case in our experiment. These data agree with our previous results showing how activation of the TCA cycle and respiration is vital for an efficient transition from glucose to other carbon sources (Cerulus et al., 2018; Perez-Samper et al., 2018).
 
-## A group of genes stochastically co-expressed during glucose growth, are co-induced in cells resuming growth after a carbon source shift
+### A group of genes stochastically co-expressed during glucose growth, are co-induced in cells resuming growth after a carbon source shift
 
 We carried out a similar co-expression analysis for the samples lag-3h (Figure 3B), and lag-1h (Figure 3—figure supplement 1A). The co-expression cluster assignment for the genes in these samples is listed in Supplementary file 4. Interactive versions of the co-expression heat maps of Figure 3B and Figure 3—figure supplement 1 are provided at: https://abbasjariani.shinyapps.io/inlag3h/ https://abbasjariani.shinyapps.io/inlag1h/.
 
@@ -108,13 +209,21 @@ In the lag-3h and lag-1h samples, similar to the glucose-12h sample, expression 
 
 A closer look at the clusters of co-expressed genes in 3h-lag phase sample (Figure 3B) reveals that cluster 2 contains genes that are induced after the glucose-to-maltose shift. This might suggest that induction and co-expression of these genes occurs in the cells that resume growth in lag phase. Therefore, we compared these genes to the previously identified overexpressed genes in the cells that will resume growth in the lag-3h sample (cluster four in Figure 2B). This comparison reveals that 481 out of the 627 genes that are overexpressed in the subpopulation that will resume growth (cluster four in Figure 2B), are among the 906 genes in cluster 2 of co-expressed genes in the lag-3h sample (Figure 3B). Moreover, 63 out of the 151 genes in cluster 1 of stochastically (co-)expressed genes in the glucose-12h sample (cluster one in Figure 3A) are also present among the 627 genes overexpressed in the cells that resume growth (cluster four in Figure 2B). These observations suggest that a group of genes that are repressed during glucose growth, but show stochastic leaky expression, are relieved from repression in a subpopulation of cells that resumes growth after the glucose-to-maltose shift. Furthermore, in line with previous results (Cerulus et al., 2018; Perez-Samper et al., 2018), these genes play a role in processes such as stress response or respiration.
 
-## Genealogically related cells show more similar behavior
+### Genealogically related cells show more similar behavior
 
 The previous observations suggest that cells growing in glucose show heterogeneous expression of certain genes, and that these differences may affect their ability to resume growth when the carbon source is switched. If this is the case, genealogically related cells, for example a daughter cell that recently budded off a mother cell, might show a similar lag duration, since such cells share a similar chromatin state or a similar concentration of a certain protein or other stochastically fluctuating factor. To test whether the fate of cells upon transfer to maltose is purely stochastic or not, we compared the lag times of genealogical lineages of cells in the population (i.e. different groups of cells that are linked to the same single mother cell) (Figure 4A,B,C). Cells were grown in glucose for 8 hr, after which single cells were trapped in a CellAsic microfluidics chamber and were grown in glucose medium inside the chamber for 1 more hour before the medium was shifted to maltose. During the growth on glucose, the trapped single cells divide and form micro-colonies of two to four cells (i.e. one to two cell divisions). If the outcome of the shift is purely stochastic, the lag time of closely related cells within the same micro-colony should not be more similar to each other compared to the rest of the cells. However, we see that the difference in lag times between closely related cells is significantly smaller (Wilcoxon test p-value<8.68*10−13) than the mean pair-wise difference across the population (Figure 4C). This suggests that genealogically related cells share factors that are stable for at least a few hours, and that the fate of the cell after transfer to maltose is affected by these factors.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig4-v2.jpg)
+
+**Figure 4.:** (A) Histogram of single-cell lag times. Colors represent whether the cells resumed growth within the observed time window (orange) or did not resume growth (blue). (B) Same data as in A) but shown as a cumulative fraction rather than a histogram (C) The lag times of genealogically related cells tend to be more similar to each other compared to the mean pair-wise similarity across the population. Each dot represents the mean pair-wise difference of the lag times within a single micro-colony. The red horizontal line represents the mean pair-wise difference of lag times across the population. The median number of cells within each micro-colony is 3. In total 133 single cells were analyzed. (D) Cells expressing a FRET-based ATP sensor (ATeam) were pre-grown in maltose medium, transferred to glucose for 7 hr, and then (at t = 0) loaded into the CellASIC microfluidic chamber with perfusion of glucose-containing medium. After 30 min in glucose the flow was shifted to maltose medium where cells enter the lag phase. Each line represents the FRET signal in a single cell tracked over time. The orange lines represent cells for which growth resumption was seen in 24 hr, while the blue lines represent cells for which growth resumption was not observed. The dark grey circles represent time of growth resumption.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55320/elife-55320-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sample microscopy images. DIC80 microscopy image (left) is segmented to separate single cells (red boundary). The donut-shaped boundary around the cells (orange) represents the area used for background fluorescent signal subtraction. The image on the right shows the fluorescence signal of JC10 dye. (B) Demonstration of microfluidic control dynamics and single-cell fluorescence intensity tracking. The cells are trapped in the microfluidic device (CellASIC) and are continuously grown on YP-maltose medium. In the first three hours, cells are growing in absence of fluorescent dye. Afterwards, the medium containing JC10 dye is flown for 10 hr, and finally, the flow is switched back to medium without the dye.
+
 To exclude that this observation might be an artifact of uneven flow of media in the microfluidics chamber differentially affecting different micro-colonies, we measured the intracellular signal from a membrane permeable cationic fluorescent dye (JC10, Sigma-Aldrich MAK159) that is flown in combination with maltose media (Figure 4—figure supplement 1). An automated image analysis pipeline based on machine learning was developed to measure the intracellular fluorescent signal in single cells and subtract the background signal from the cell periphery (Figure 4—figure supplement 1A). We observe that the signal inside the cells increases quickly and homogeneously as soon as the medium containing the dye starts flowing, with all micro-colonies showing a similar response, suggesting a well-distributed flow of medium that reaches all cells (Figure 4—figure supplement 1B). Thus, the observed differences between cells in the population are not due to differences in local environments.
 
-## Sustained ATP generation is linked to cell’s fate in lag phase
+### Sustained ATP generation is linked to cell’s fate in lag phase
 
 The scRNA-seq results suggest that one important factor that might determine the efficiency with which cells can escape the lag phase is the internal concentration of ATP just prior to the shift. When cells are shifted from glucose to maltose, glucose flux stops and cells can therefore not generate ATP, until they activate maltose import and/or use other ways of generating energy, for example through breakdown of storage carbohydrates. However, it seems plausible that at the moment of the shift, ATP levels could drop below a critical level, leaving the cells unable to adapt to the new conditions, especially if they are unable to restore ATP levels, for example by uptake of trace amounts of glucose and/or activation of the more efficient respiratory metabolism. We therefore measured the level of ATP in live single-cells during glucose-to-maltose shifts (Figure 4D). We used a genomically integrated cassette of ATeam, a FRET-based sensor for ATP measurements (Imamura et al., 2009; Papagiannakis et al., 2017). As hypothesized, we observed a sharp drop in ATP levels shortly after the shift to maltose, which coincides with the growth arrest. Most of the cells restore normal intracellular ATP levels within 6 hr after the shift to maltose. Remarkably, only cells that eventually resume growth manage to restore and maintain normal ATP levels during the lag phase, while in cells that fail to resume growth, the ATP level does not recover completely, or quickly drops again after a temporary increase.
 
@@ -134,21 +243,136 @@ The scRNA-seq method presented here is widely accessible to yeast researchers an
 
 ## Materials and methods
 
-## Yeast strains and growth media used
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>BY4742</td>
+      <td>PMID:9483801</td>
+      <td></td>
+      <td>S288c MATalpha; his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>KV1156</td>
+      <td>PMID:20471265</td>
+      <td></td>
+      <td>BY4742 MAL13:: HygR-MAL63_c9</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>AN62</td>
+      <td>PMID:24453942</td>
+      <td></td>
+      <td>KV1156 SAL1+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>AN63</td>
+      <td>PMID:24453942</td>
+      <td></td>
+      <td>AN62 MATa</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>AJ78</td>
+      <td>This study</td>
+      <td></td>
+      <td>AN63 TEFp-ATeam1.03-KanMX inserted in YRO2 intergenic locus</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BC73</td>
+      <td>This study</td>
+      <td></td>
+      <td>AN63 HXT1-yECitrine</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BC74</td>
+      <td>This study</td>
+      <td></td>
+      <td>AN63 HXT2-yECitrine</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BC75</td>
+      <td>This study</td>
+      <td></td>
+      <td>AN63 HXT3-yECitrine</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BC79</td>
+      <td>This study</td>
+      <td></td>
+      <td>AN63 HXT7-yECitrine</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>MC1</td>
+      <td>This study</td>
+      <td></td>
+      <td>AN63 HSP12-yECitrine</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>MC8</td>
+      <td>This study</td>
+      <td></td>
+      <td>AN63 SSA1-yECitrine</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>MC23</td>
+      <td>This study</td>
+      <td></td>
+      <td>AN63 QCR7-yECitrine</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKT140</td>
+      <td>RRID:Addgene_8732</td>
+      <td></td>
+      <td>KanMX-yECitrine plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTEF:ATP</td>
+      <td>RRID:Addgene_92179</td>
+      <td></td>
+      <td>TEF1p-ATeam1.03-KanMX4 plasmid</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and growth media used
 
 The wild-type strain used in this study is AN63, which is derived from BY4742 (Brachmann et al., 1998) by making it maltose-prototrophic (Brown et al., 2010), reducing its high-petite frequency (Dimitrov et al., 2009) and finally switching its mating type to MATa. In order to track gene expression, protein fusion constructs with the fluorescent marker yECitrine have been constructed for HXT1, HXT2, HXT3, HXT7, HSP12, SSA1 and QCR7. In order to follow ATP levels, a FRET-based ATP sensor (Imamura et al., 2009; Papagiannakis et al., 2017) was introduced in the YRO2 intergenic locus. All experiments were performed at 30°C using rich media. The media that were used were YP (10 g/L yeast extract, and 20 g/L peptone) supplemented with 5% glucose or 10% maltose.
 
-## Growth conditions for single-cell lag phase experiments
+### Growth conditions for single-cell lag phase experiments
 
 To measure single-cell lag phases, yeast strains were revived from −80°C onto a YPD plate, or a plate with selective media for strains containing a plasmid. To control cell density of the cultures throughout the experiments, cells were inoculated and serially diluted in 150 μL maltose media (YP-MAL10%), then sealed with a plastic seal and incubated at 30°C, 300 rpm for one day (maximally 24 hr). The next day, the cultures with an OD600 ~0.06–0.085 were transferred and again serially diluted to fresh maltose medium and incubated. After pre-growth in maltose, the cells were grown for the desired duration in glucose. For this, cultures with an OD600 between 0.065 and 0.085 were washed twice in glucose medium and subsequently serially diluted. The plate was sealed and incubated at 30°C, 300 rpm for the desired duration. Next, these cultures were transferred to the microscope for time-lapse imaging.
 
-## Time-lapse microscopy single-cell lag time measurements
+### Time-lapse microscopy single-cell lag time measurements
 
 The CellASIC system is a commercial microfluidic system for microscopy, which was used for all time-lapse experiments except for Figure 2C. The experiments for Figure 2C were performed using the previously published gel-based system for time-lapse microscopy (Cerulus et al., 2016; Cerulus et al., 2018; Perez-Samper et al., 2018) because of its higher throughput. The CellASIC system consists of chambers for trapping the cells, a pump for controlling the media flow through these chambers and software (ONIX perfusion system) for defining the flow program. The chambers can be mounted onto an inverted microscope in order to observe the response of the cells to media shifts (Zopf and Maheshri, 2013).
 
 Time-lapse microscopy experiments were carried out according to the CellASIC platform guidelines for yeast (Y04C). When the cultures were ready at the desired growth conditions, we replaced the water in the CellASIC plate with 320 μL of the desired media and loaded 60 μL of cultures with a cell count of ~5*106 cells/mL in well 8 (corresponding to an OD600 ~0.075–0.085 in an automated plate-reader). Time-lapse pictures were acquired periodically and automatically every 15 min by the Metamorph software (version 7.8.0.0; Molecular Device, LLC), in combination with an inverted Nikon Eclipse Ti microscope equipped with a DL-604M-#VP camera (AndorTM technology), and Lambda XL (Sutter Instruments) light source for fluorescent measurements. The microscope is placed in a temperature-controlled incubator (30°C). An automated image analysis pipeline based on machine learning was developed to quantify lag times and measure the intracellular fluorescent signal in single cells with background signal subtraction from the cell periphery.
 
-## scRNA-seq using the 10x genomics platform
+### scRNA-seq using the 10x genomics platform
 
 We used the Chromium Single Cell 3′ kit (v2) of 10x Genomics for scRNA-seq. We modified the protocol to include zymolyase for digestion of the cell wall. The cells were pre-grown in 3 mL maltose media (YPMAL10%) for two overnights in dilute conditions. The media was refreshed after the first overnight and at each step serial dilutions were made to capture cultures with a cell count of ~2*106 cells/mL. At the end of maltose pre-growth, the cells were washed and inoculated into 50 mL glucose media to reach a starting cell density of 104 cells/mL. The cells were then grown in glucose for 12 hr, before being washed to maltose media where they experience a lag phase. Cell counts were monitored continuously.
 

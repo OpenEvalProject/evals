@@ -135,27 +135,27 @@ The multi-analyst approach is still rarely used, but we argue that many discipli
 
 To develop this guidance, we recruited a panel of 50 methodology experts who followed a preregistered ‘reactive-Delphi’ expert consensus procedure (McKenna, 1994). We adopted this procedure to ensure that the resulting guidance represents the shared thinking of relevant experts and that it incorporates their topic-related insights. The applied consensus procedure and its reporting satisfy the recommendations of CREDES (Jünger et al., 2017), a guidance on conducting and reporting Delphi studies. A flowchart of the Delphi expert consensus procedure is available at https://osf.io/pzkcs/.
 
-## Preparation
+### Preparation
 
-## Preregistering the project
+#### Preregistering the project
 
 Before the start of the project, on 11 November 2020, a research plan was compiled and uploaded to a time-stamped repository at https://osf.io/dgrua. During the project, we followed the preregistered plan in all respects except implementing slight changes in the wording of the survey questions to improve comprehension and not using R to analyze our results. We declared that we would share the R code and codebook of our analyses, but the project ultimately did not require us to conduct analyses in R. Instead, we shared our code in Excel and ODS format at https://osf.io/h36qy/.
 
-## Creating the initial multi-analyst guidance draft
+#### Creating the initial multi-analyst guidance draft
 
 Before the expert consensus process, the first three authors and the last author (henceforth: proposers) created an initial multi-analyst guidance draft after brainstorming and reviewing all the previously published multi-analyst-type projects they were aware of Bastiaansen et al., 2020; van Dongen et al., 2019; Salganik et al., 2020; Silberzahn et al., 2018; Botvinik-Nezer et al., 2020a; Dutilh et al., 2018; Fillard et al., 2011; Starns et al., 2019; Maier-Hein et al., 2017; Poline et al., 2006. This initial document is available here: https://osf.io/kv8jt/.
 
-## Recruiting experts
+#### Recruiting experts
 
 The proposers contacted 81 experts to join the project. The contacted experts included all the organizers of previous multi-analyst projects known at the time (Bastiaansen et al., 2020; van Dongen et al., 2019; Salganik et al., 2020; Silberzahn et al., 2018; Botvinik-Nezer et al., 2020a; Dutilh et al., 2018; Fillard et al., 2011; Starns et al., 2019; Maier-Hein et al., 2017; Poline et al., 2006), as well as the members of the expert panel from another methodological consensus project (Aczel et al., 2020). The previous projects were identified by conducting an unsystematic literature search and by surveying researchers in social media. Of the 81 experts, 3 declined our invitation and 50 accepted the invitation and participated in the expert consensus procedure (their names are available at https://osf.io/fwqvp/), while 28 experts did not respond to our call.
 
-## Preparatory rounds
+### Preparatory rounds
 
 Upon joining the project, the experts received a link to the preparatory online survey (available at https://osf.io/kv8jt/) which included the initial Multi-Analyst Guidance draft where they had the option to comment on each of the items and the overall content of the guidance.
 
 Based on the feedback received from the preparatory online survey, the proposers updated and revised the initial Multi-Analyst Guidance. This updated document was uploaded to an online shared document and was sent out to the experts who had the option to edit and comment on the content. Again, based on feedback, the proposers revised the content of the document, and this new version was included in the expert consensus survey.
 
-## Consensus survey
+### Consensus survey
 
 The expert consensus questionnaire was sent out individually to each expert first on 8 February 2021 in the following Qualtrics survey available at https://osf.io/wrpnq/. The consensus survey approach had the advantage of minimizing potential biases in the experts’ judgments: the questions were posed in a neutral way, experts all received the same questions, and experts did not see the responses of the other experts or any reaction of the project organizers. The survey contained the ten recommended practices grouped into the following five stages:( i) recruiting co-analysts; (ii) providing the dataset, research questions, and research tasks; (iii) conducting the independent analyses; (iv) processing the results; (v) reporting the methods and results. The respondents were asked to rate each of the ten recommended practices on a nine-point Likert-type scale (‘I agree with the content and wording of this guidance section’ ranging from “1-Disagree” to “9-Agree”). Following each section, the respondents could leave comments regarding the given item.
 
@@ -163,7 +163,7 @@ The preregistration indicated consensus on the given item if the interquartile r
 
 Each recommended practice found support and consensus from the 48 experts who completed ratings in our first round. For each item, the median rating was eight or higher with an interquartile range of two or lower. Thus, following our preregistration, there was no need to conduct additional consensus-survey rounds; all of the items were eligible to enter the guidance with consensual support. This high level of consensus might have been due to the experts’ involvement in the preparatory round of the project. The summary table of the results is available at https://osf.io/qc7a8/.
 
-## Finalizing the manuscript
+### Finalizing the manuscript
 
 The proposers drafted the manuscript and supplements. All texts and materials were sent to the expert panel members. Each contributor was encouraged to provide feedback on the manuscript, the report, and the suggested final version of the guidance. After all discussions, minor wording changes were implemented, as documented at https://osf.io/e39j4/. No contributor objected to the content and form of the submitted materials and all approved the final item list.
 
@@ -171,37 +171,72 @@ The proposers drafted the manuscript and supplements. All texts and materials we
 
 The final guidance includes ten recommended practices (Table 1) concerning the five main stages of multi-analyst studies. To further assist researchers in documenting multi-analyst projects, we also provide a modifiable reporting template (Supplementary file 1), as well as a reporting checklist (Supplementary file 2).
 
+**Table 1.**
+ Recommended practices for the main stages of the multi-analyst method.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stage</th>
+      <th>Recommended practices</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recruiting co-analysts</td>
+      <td>1. Determine a minimum target number of co-analysts and outline clear eligibility criteria before recruiting co-analysts. We recommend that the final report justifies why these choices are adequate to achieve the study goals.2. When recruiting co-analysts, inform them about (a) their tasks and responsibilities; (b) the project code of conduct (e.g., confidentiality/ non-disclosure agreements); (c) the plans for publishing the research report and presenting the data, analyses, and conclusion; (d) the conditions for an analysis to be included or excluded from the study; (e) whether their names will be publicly linked to the analyses; (f) the co-analysts’ rights to update or revise their analyses; (g) the project time schedule; and (h) the nature and criteria of compensation (e.g., authorship).</td>
+    </tr>
+    <tr>
+      <td>Providing datasets, research questions, and research tasks</td>
+      <td>3. Provide the datasets accompanied with a codebook that contains a comprehensive explanation of the variables and the datafile structure.4. Ensure that co-analysts understand any restrictions on the use of the data, including issues of ethics, privacy, confidentiality, or ownership.5. Provide the research questions (and potential theoretically derived hypotheses that should be tested) without communicating the lead team’s preferred analysis choices or expectations about the conclusions.</td>
+    </tr>
+    <tr>
+      <td>Conducting the independent analyses</td>
+      <td>6. To ensure independence, we recommend that co-analysts should not communicate with each other about their analyses until after all initial reports have been submitted. In general, it should be clearly explained why and at what stage co-analysts are allowed to communicate about the analyses (e.g., to detect errors or call attention to outlying data points).</td>
+    </tr>
+    <tr>
+      <td>Processing the results</td>
+      <td>7. Require co-analysts to share with the lead team their results, the analysis code with explanatory comments (or a detailed description of their point-and-click analyses), their conclusions, and an explanation of how their conclusions follow from their results.8. The lead team makes the commented code, results, and conclusions of all non-withdrawn analyses publicly available before or at the same time as submitting the research report.</td>
+    </tr>
+    <tr>
+      <td>Reporting the methods and results</td>
+      <td>9. The lead team should report the multi-analyst process of the study, including (a) the justification for the number of co-analysts; (b) the eligibility criteria and recruitment of co-analysts; (c) how co-analysts were given the data sets and research questions; (d) how the independence of analyses was ensured; (e) the numbers of and reasons for withdrawals and omissions of analyses; (f) whether the lead team conducted an independent analysis; (g) how the results were processed; (h) the summary of the results of co-analysts; (i) and the limitations and potential biases of the study.10. Data management should follow the FAIR principles (Wilkinson et al., 2016), and the research report should be transparent about access to the data and code for all analyses (Aczel et al., 2020).</td>
+    </tr>
+  </tbody>
+</table>
+
 In addition to the Multi-analyst Guidance and Checklist, we provide practical considerations that can support the organization and execution of multi-analyst projects. This section contains various clarifications, recommendations, practical tools, and optional extensions, covering the five main stages of a multi-analyst project.
 
-## Recruiting co-analysts
+### Recruiting co-analysts
 
-## Choosing co-analysts
+#### Choosing co-analysts
 
 The term co-analyst refers to one researcher or team of researchers working together in a multi-analyst project. Researchers can collaborate on the analyses, but if they do, we recommend that they submit the analyses as one co-analyst team, in order to ensure the independence of the analyses across teams. Researchers from the same lab or close collaborators should be able to submit separate reports in the multi-analyst project as long as they do not discuss their analyses with each other until the project rules allow that. The lead team may conduct an analysis themselves depending on the study goals and the design of the project (e.g., to set a performance baseline for comparing submitted models). Alternatively, the lead team may choose not to conduct an analysis themselves; in any case, they are expected to be transparent about their level of involvement as well as the timing (e.g., whether they conducted their analyses with or without knowing the results of the crowd of analysts).
 
 Researchers should carefully consider both the breadth and depth of statistical and research-area expertise required for their project and should justify their choices about the required qualifications, skills, and credentials for analysts in the project. If the aim of the study is to explore what factors influence researchers’ analytical choices, then it can be useful to seek “natural variation” (representativeness) within an expert community or to maximize diversity of the co-analysts along the dimensions where they might differ the most in their choices (e.g., experience, background, discipline, interest in the findings, intellectual allegiance to different theories, paradigmatic viewpoints).
 
-## Deciding on the number of co-analysts
+#### Deciding on the number of co-analysts
 
 To decide on the desired number of co-analysts, one has to consider which of the two main purposes of the multi-analyst method applies to the given project:
 
-## Checking the robustness of the conclusions
+##### Checking the robustness of the conclusions
 
 The aim here is solely to check whether different analysts obtain the same conclusions. Confidence in the stability of the conclusions decreases with divergent results and increases with convergent results. Many projects can achieve this aim by recruiting only one additional analyst, or a handful of further analysts. For example, the above-mentioned two analyses of the same dataset published in the journal Surgery (Fields et al., 2019; Turner et al., 2019) were sufficient to detect that the analytical space allows for opposite conclusions.
 
-## Assessing the variability of the analyses
+##### Assessing the variability of the analyses
 
 Those who wish to estimate the variability among the different analysis strategies often need to satisfy stricter demands. For example, studies that aim to assess how much the results vary among the analysts will require a larger number of co-analysts. When determining the number of co-analysts in such cases, the same factors need to be taken into consideration as in standard sample size estimation methods. For example, Botvinik-Nezer et al. (Botvinik-Nezer et al., 2020a) presented the analyses of 70 teams to demonstrate the divergence of results when analyzing a functional magnetic resonance imaging dataset.
 
-## Recruiting co-analysts
+### Recruiting co-analysts
 
 Depending on the specific goal of the research, the recruitment of co-analysts can happen in several ways. Co-analysts can be recruited before or after obtaining the dataset. With stricter eligibility criteria, co-analysts can be invited individually from among topic experts or statistical experts. Follow-up open invitations can ask experts to suggest others to be invited. Alternatively, the lead team can open the opportunity to anyone to join the project as a co-analyst within the expert community (e.g., in professional society mailing lists and on social media), where expertise can be defined as the topic requires it.
 
 It is important to note that whenever the co-authors’ behavior is the subject of the study then they should be regarded similarly to human participants respecting ethical and data protection regulations. Useful templates for project advertisement and analyst surveys can be found in Silberzahn et al., 2018; Schweinsberg et al., 2021.
 
-## Providing the dataset, research questions, and research tasks
+### Providing the dataset, research questions, and research tasks
 
-## Providing the dataset
+#### Providing the dataset
 
 The lead team can invite the co-analysts to conduct data preprocessing (in addition to the main analysis). If the lead team decides to conduct the preprocessing themselves, showing their preprocessing methods can be informative to the co-analysts, but also has the potential to influence them if the preprocessing reflects some preference of methods or expectations of outcomes.
 
@@ -209,11 +244,11 @@ Before providing the dataset, the lead team should ensure that data management w
 
 It is important that the co-analysts understand not just the available dataset but also any ancillary information that might affect their analyses (e.g., prior exclusion of outliers or handling of missing data in the blinded dataset). Providing a codebook that is accessible and understandable for researchers with different backgrounds is essential (Kindel et al., 2019).
 
-## Providing the research question
+#### Providing the research question
 
 The provided research question(s) should motivate the analysis conducted by the co-analysts. The research questions should be conveyed without specifying preferred analysis choices or expectations about the conclusions. Depending on the purpose of the project, the research questions can be more or less specific. While more specific research questions limit the analytical freedom of the co-analysts, less specific ones better explore the ways researchers can diverge in their operationalization of their question. A research question (e.g., “Is happiness age-dependent?”) can be more specific when, for example, it is formulated as a directional hypothesis (e.g., “Are young people more happy than old ones?”) or when the constructs are better operationalized (e.g., by defining what counts as young and happy).
 
-## Providing the task
+#### Providing the task
 
 The multi-analyst approach can leave the operationalization of the research question to the co-analysts so that they can translate the theoretical question into the measurement. Taking this approach can reveal the operational variations of a question, but it can also make it difficult to compare the statistical results.
 
@@ -225,15 +260,15 @@ As an extension, the co-analysts can be asked to record considered but rejected 
 
 Robustness, or multiverse analyses (in the sense that each team is free to provide a series of outcomes instead of a single one) can also be part of the task of the co-analysts so that multiple analyses are conducted under alternative data analysis preprocessing choices.
 
-## Communication with co-analysts
+#### Communication with co-analysts
 
 In projects with many co-analysts, keeping contact via a dedicated email address and automating some of the messages (e.g., automated emails when teams finished a stage in the process) can help streamline the communication and make the process less prone to human errors. For co-analyst teams with multiple members, it can be helpful for each team to nominate one member as the representative for communications.
 
 If further information is provided to a co-analyst following specific questions, it can be useful to make sure the same information is provided to all teams, for example via a Q&A section of the project website, hosting weekly office hours where participants could ask questions, or via periodic email with updates.
 
-## Conducting the independent analyses
+### Conducting the independent analyses
 
-## Preregistering the process and statistical analyses
+#### Preregistering the process and statistical analyses
 
 We can distinguish meta- and specific preregistrations. Meta-preregistrations concern the plan of the whole multi-analyst project. It is good practice for the lead team to preregister how they would process, handle, and report the results of the co-analysts in order to prevent result-driven biases. This can be done in the form of a Registered Report at journals that invite such submissions (Chambers, 2013). Any metascientific questions, such as randomization of co-analysts to different conditions with variations in instructions or data, or covariates of interest for studying associations to analytic variability, should be specified.
 
@@ -243,15 +278,15 @@ Requiring specific preregistrations may be misaligned with the goals of the proj
 
 There are alternative solutions to prevent researchers from being biased by their data and results. For example, co-analysts could be provided with blinded datasets (Dutilh et al., 2018; Starns et al., 2019; Gøtzsche, 1996), simulated datasets (Quintana, 2020), or with a subset of the data (e.g., 11).
 
-## Processing the results
+### Processing the results
 
-## Collecting the results
+#### Collecting the results
 
 To facilitate summarizing the co-analysts’ methods, results, and conclusions, the lead team can collect results through provided templates or survey forms that can structure analysts’ reports. It is practical to ask the co-analysts at this stage to acknowledge that they did not communicate or cooperate with other co-analysts regarding the analysis in the project. It can also be helpful for the lead team if the co-analysts explain how their conclusions were derived from the results. In case preregistration was employed for any analyses, the template can also collect any deviations from the preregistered plan for inclusion in an online supplement.
 
 To collect analytic code, it may be useful to require a container image (Boettiger, 2015; Nüst et al., 2020) or a portable version of the code that handles issues like software package availability (Liu and Salganik, 2019) (for a guideline see Elmenreich et al., 2019).
 
-## Validating the results
+#### Validating the results
 
 The lead team is recommended to ensure that each analyst’s codes/procedures reproduce that analyst’s submitted results. Computational reproducibility can be ascertained by running the code or repeating the analytic process by the lead team, but independent experts or the other co-analysts can also be invited to undertake this task (Hurlin and Perignon, 2019; Pérignon et al., 2019).
 
@@ -261,13 +296,13 @@ After all the analyses have been submitted and validated, the co-analysts could 
 
 Importantly, it is a minimum expectation that from the start of the project, the co-analysts should know about the conditions for their analyses to be included in, or omitted from, the study. All withdrawals, omissions, and updates of the results should be transparent in subsequent publications, for example in the supplementary materials.
 
-## Reporting the methods and results
+### Reporting the methods and results
 
-## Recording contributorship
+#### Recording contributorship
 
 Using CRediT taxonomy can transparently record organizers’ and co-analysts’ contributions to the study. Practical tools (e.g., tenzing Holcombe et al., 2020) can make this task easier. Co-analysts can be invited to be co-authors and/or be compensated for their contribution in other ways (e.g., prizes, honorariums). Expectations for contribution and authorship should be communicated clearly at the outset.
 
-## Presenting the methods and results
+#### Presenting the methods and results
 
 Beyond a descriptive presentation of results in a table or graph, the reporting of the results of multi-analyst projects is not straightforward and remains an open area of research. Published reports of multi-analyst projects have adopted several effective methods for presenting results. For binary outcomes, Botvinik-Nezer et al. used a table with color coding (i.e., a binary heat map) to visualize outcomes across all teams (Botvinik-Nezer et al., 2020b). They overlaid each teams’ confidence in their findings and added additional information about analytical paths in adjacent columns (Supplementary file 1, Table 1). For a project with a relatively small number of effect sizes for continuous outcomes, Schweinsberg et al. used interval plots combined with an indication of analytical choices underlying each estimate (Schweinsberg et al., 2021; Figure 3). Olsson Collentine et al. used funnel plots (Figure 2 in Olsson-Collentine et al., 2020), and Patel et al. used volcano plots to depict numerous, diverse outcomes with an intuitive depiction of clustering, akin to a multiverse analysis (Figures 1 and 2 in Patel et al., 2015).
 
@@ -277,7 +312,7 @@ The analytical approach of each co-analyst can be divided into discrete choices 
 
 To support the reporting of Multi-Analyst projects, we provide a freely modifiable Reporting Template available from here: https://osf.io/h9mgy/.
 
-## Limitations
+### Limitations
 
 The present work does not cover all aspects of multi-analyst projects. For instance, the multi-analyst approach outlined here entails the independent analysis of one or more datasets, but it should be acknowledged that other crowd-sourced analysis approaches might not require such independence of the analyses. Some of our practical considerations reflect disagreement and/or uncertainty within our expert panel, so they remain underspecified. Those include how to determine the number or eligibility of co-analysts for a project, how best to assess the validity of each analysis; and how to measure robustness of conclusions. Therefore, we emphasize that this consensus-based guidance is a first step towards the broader adoption of the multi-analyst approach in empirical research, and we hope and expect that our recommendations will be developed further in response to user feedback. Users of this guidance can provide feedback and suggestions for revisions at https://forms.gle/2fVqZAD3KKHVUDKq7.
 

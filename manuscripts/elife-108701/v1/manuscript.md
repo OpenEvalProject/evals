@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02e16g702 Department of Biology, Faculty of Science, Hokkaido University Sapporo Japan
+1. Department of Biology, Faculty of Science, Hokkaido University Sapporo Japan ([ROR:02e16g702](https://ror.org/02e16g702))
 
 † Corresponding author
 

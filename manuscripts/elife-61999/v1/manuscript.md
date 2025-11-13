@@ -34,39 +34,87 @@ Here, we investigated the role of CD300a in tumor development and demonstrate th
 
 ## Results
 
-## CD300a on DCs enhances antitumor immunity
+### CD300a on DCs enhances antitumor immunity
 
 To address whether CD300a is involved in tumor immunity, wild-type and CD300a-deficient (Cd300a−/−) mice were transplanted intradermally with B16 melanoma cells. The Cd300a−/− mice showed larger tumor volume and shorter survival than did wild-type mice (Figure 1A and B), indicating that CD300a suppresses the development of melanoma. In contrast, Rag-deficient (Rag1−/−) and Rag1−/−;Cd300a−/− mice showed comparable levels of tumor development and survival after injection of B16 melanoma cells (Figure 1C and D). These results indicate that the suppressive effect of CD300a on melanoma development is dependent on the adaptive immune response. However, we also observed that CD300a was not expressed on tumor-infiltrating lymphocytes but was broadly expressed on myeloid cells, including populations of Ly6G+ neutrophils, CD11c+~high DCs, and CD11clowCD11b+ macrophages (Figure 1E). These results suggest that CD300a expressed on myeloid cells suppresses melanoma development via adaptive immune responses. To identify the CD300a-expressing myeloid cell population that is involved in melanoma suppression, we used Cd300afl/fl;ItgaxCre and Cd300afl/fl;Lyz2Cre mice. Cd300afl/fl;ItgaxCre mice expressed CD300a on Ly6G+ cells and CD11c− cells, but not on CD11c+~high cells (Figure 1E). In contrast, Cd300afl/fl;Lyz2Cre mice express CD300a on CD11c+~high cells and the subpopulation of CD11clow cells, but not on Ly6G+ cells (Figure 1E). Although tumor growth was comparable between Cd300afl/fl;Lyz2Cre and Cd300afl/fl mice, Cd300afl/fl;ItgaxCre mice showed greater tumor volume than did Cd300afl/fl mice (Figure 1F). These data implicated CD300a on DCs, rather than on neutrophils or macrophages, in inducing the adaptive immune response to inhibit tumor development.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig1-v1.jpg)
 
-**Figure 1.:** (A–D) Tumor growth or survival curves of wild-type (WT, n = 5 in A and B), Cd300a (−/−n = 5 in A and B), Rag1 (−/−n = 11 in C and n = 6 in D), and Rag1 (−/−;Cd300a−/−n = 15 in C and n = 11 in D) that were inoculated with 1 × 105 B16 melanoma cells on day 0. (E) CD300a expression on neutrophils (Ly6G+), macrophages (Ly6G−CD11cloCD11b+), conventional type-1 DC (cDC1; Ly6G−CD11c+CD11b−CD103+XCR1+), and cDC1 (Ly6G−CD11c+hiCD11b+CD103−XCR−) isolated from B16 melanoma tissues of Cd300afl/fl, Cd300a, −/−Cd300afl/fl;ItgaxCre, and Cd300afl/fl;Lys2Cre mice prepared 14 days after inoculation. Data are representative of three mice. (F) Tumor growth of Cd300afl/fl (n = 7), Cd300afl/fl;ItgaxCre (n = 13), and Cd300afl/fl;Lys2Cre mice (n = 15) that were inoculated with 1 × 105 B16 melanoma cells on day 0. Data are given as means ± standard error of the means (SEMs). **p** < 0.01 and ***p < 0.001. p values were obtained by using a two-way analysis of variance (ANOVA) followed by Bonferroni’s post-test (A, C, and F) and the log-rank test (B and D). Data were pooled from two (A– C and E) or three (D and F) independent experiments.Figure 1—source data 1.Figure 1A-D and F.
+**Figure 1.:** (A–D) Tumor growth or survival curves of wild-type (WT, n = 5 in A and B), Cd300a−/− (n = 5 in A and B), Rag1−/− (n = 11 in C and n = 6 in D), and Rag1−/−;Cd300a−/− (n = 15 in C and n = 11 in D) that were inoculated with 1 × 105 B16 melanoma cells on day 0. (E) CD300a expression on neutrophils (Ly6G+), macrophages (Ly6G−CD11cloCD11b+), conventional type-1 DC (cDC1; Ly6G−CD11c+CD11b−CD103+XCR1+), and cDC1 (Ly6G−CD11c+hiCD11b+CD103−XCR−) isolated from B16 melanoma tissues of Cd300afl/fl, Cd300a−/−, Cd300afl/fl;ItgaxCre, and Cd300afl/fl;Lys2Cre mice prepared 14 days after inoculation. Data are representative of three mice. (F) Tumor growth of Cd300afl/fl (n = 7), Cd300afl/fl;ItgaxCre (n = 13), and Cd300afl/fl;Lys2Cre mice (n = 15) that were inoculated with 1 × 105 B16 melanoma cells on day 0. Data are given as means ± standard error of the means (SEMs). **p** < 0.01 and ***p < 0.001. p values were obtained by using a two-way analysis of variance (ANOVA) followed by Bonferroni’s post-test (A, C, and F) and the log-rank test (B and D). Data were pooled from two (A– C and E) or three (D and F) independent experiments.
 
-## CD300a regulates tumor-infiltrating Treg cells
+### CD300a regulates tumor-infiltrating Treg cells
 
 Previous reports have demonstrated that the number of Treg cells in melanoma is correlated with accelerated tumor growth (Mougiakakos et al., 2010). In contrast, depletion of Treg cells leads to less melanoma growth. To elucidate how CD300a on DCs enhances the adaptive immune response against tumor development, we analyzed the population of tumor-infiltrating Treg cells by use of flow cytometry and immunohistochemistry. The Treg cell population was larger in the tumor, but not the draining lymph nodes, of Cd300a−/− mice compared with that of wild-type mice (Figure 2A and B). Likewise, Cd300afl/fl;ItgaxCre mice showed a higher number of tumor-infiltrating Treg cells than did Cd300afl/fl mice (Figure 2C). These Treg cells in Cd300afl/fl;ItgaxCre mice showed higher expression of Ki67 and CTLA-4 than did Cd300afl/fl mice, although the expressions of CD25, GITR, and BCL2 on tumor-infiltrating Treg cells were comparable between two genotypes of mice (Figure 2D and E, Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig2-v1.jpg)
+
+**Figure 2.:** Tumor tissues were harvested 3 weeks after B16 melanoma inoculation. (A) Representative flow cytometry plots of Treg cells in the tumor and draining lymph node (LN) (left). Numbers adjacent to outlined areas indicate the percentage of Foxp3+ (Treg) CD4+ cells. The frequencies of Foxp3+ cells among CD4+ T cells in both wild-type (WT, n = 7) and Cd300a−/− mice (n = 8) are shown (right). (B) Fluorescence microscopy of tumor sections from Foxp3-eGFP WT (n = 4) and Cd300a−/− (n = 7) mice, stained with an anti-GFP monoclonal antibody (green) and the DNA-binding dye 4′,6-diamidino-2-phenylindole (DAPI; left). The number of Foxp3+ cells was quantified from for low-power fields (LPF) (right). White arrow shows Foxp3-positive cells. Scale bar, 200 μm. (C) Flow cytometric analysis of the frequencies of Foxp3+ cells among CD4+ T cells in the tumor (n = 11 in each group) and draining lymph node (n = 8 in each group) in Cd300afl/fl and Cd300afl/fl;ItgaxCre mice. Flow cytometric analysis of Ki67 (D) and CTLA-4 (E) expressions of Treg cells in the tumor in Cd300afl/fl (n = 9 in D, n = 3 in E) and Cd300afl/fl;ItgaxCre mice (n = 10 in D, n = 4 in E). Representative histogram (left), frequency (right), (D), and mean fluorescent intensity (MFI, right, E). (F and G) Tumor growth curve of WT (control mAb, n = 7; anti-CD25 mAb, n = 5), Cd300a−/− (control mAb, n = 8; anti-CD25 mAb, n = 6), Cd300afl/fl (control mAb, n = 4; anti-CD25 mAb, n = 3), and Cd300afl/fl;ItgaxCre (control mAb, n = 3; anti-CD25 mAb, n = 5) mice that were treated with an anti-CD25 mAb or a control antibody three times (days −6, −3, and 0) and then inoculated with B16 melanoma cells. (H) Representative histogram of IFN-γ production from tumor-infiltrating T cells after phorbol 12-myristate 13-acetate (PMA) and ionomycin stimulation (left). The proportion of IFN-γ+ cells is shown (right) (n = 6 in each group). (I–K) Flow cytometric analysis of the expressions of programmed cell death-1(PD-1) (I), PD-1 and Tim3 (J), and CTLA-4 (K) in CD8+ T cells in the tumor of Cd300afl/fl (n = 4 in I, n = 3 in J and K) and Cd300afl/fl;ItgaxCre (n = 6 in I, n = 5 in J, n = 4 in K) mice. Representative histogram (left, I and K) or dot plots (left, J) and MFI (I and K, right) or frequency (J, right). Data are given as means ± standard error of the means (SEMs). N.S.: not significant. *p < 0.05, **p < 0.01, and ***p < 0.001. p values were obtained by using a two-way analysis of variance (ANOVA) followed by Bonferroni’s post-test (A, C, and H) and the Student’s t-test (B, D, E, and I–K). Data were pooled from two (B, H, and F) or three (A, C–E, G, and I–K) independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Flow cytometric analysis of the expressions of CD25, GITR, and BCL2 in Treg cells in the tumor in Cd300afl/fl (n = 3) and Cd300afl/fl;ItgaxCre mice (n = 4). Representative histogram (left) and mean fluorescent intensity (MFI, right). Data are given as means ± standard error of the means (SEMs). N.S.: not significant.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Flow cytometric analysis of Foxp3+ cells in the spleen and inguinal lymph node (iLN) of mice injected with isotype mAb and 300 μg of anti-CD25 mAb on days −6 and −3 prior to analysis. Data are representative of two independent experiments with similar results. Data are representative of three mice.
+
 To determine whether Treg cells were indeed involved in the exacerbated tumor growth of Cd300a−/− mice, we depleted Treg cells by using an anti-CD25 monoclonal antibody (mAb) (Onizuka et al., 1999; Figure 2—figure supplement 2). After Treg cell depletion, the tumor volume of the Cd300a−/− and Cd300afl/fl;ItgaxCre mice decreased to a level comparable to that seen in wild-type and Cd300afl/fl mice, respectively (Figure 2F and G). Tumor-infiltrating CD8+ T cells in Cd300a−/− mice expressed significantly less IFN-γ and significantly higher PD-1 than did those in wild-type mice (Figure 2H and I). Moreover, the number of CD8+ T cells expressing both PD-1 and TIM-3 and those expressing CTLA-4 were significantly increased in Cd300afl/fl;ItgaxCre mice compared to Cd300afl/fl mice (Figure 2J and K), suggesting that tumor-infiltrating CD8+ T cells display more exhausted state in Cd300afl/fl;ItgaxCre mice than in Cd300afl/fl mice (Sawant et al., 2019). These results suggest that CD300a on DCs regulates the number of tumor-infiltrating Treg cells, which suppress tumor immune responses.
 
-## TEVs augment IFN-β production by DCs
+### TEVs augment IFN-β production by DCs
 
 We previously reported that a microbiota-mediated signal induces increased IFN-β production by DCs and increased numbers of Treg cells in the barrier tissues such as the intestine, skin, and airway of Cd300a−/− mice relative to those of wild-type mice (Nakahashi-Oda et al., 2016). In the current study, we found that the expression of Ifnb was also higher in DCs in the tumor tissues of Cd300a−/− and Cd300afl/fl;ItgaxCre mice than in those of wild-type and Cd300afl/fl mice, resepectively (Figure 3A and B). To examine whether the microbiota is also involved in Treg cell levels in the tumor and tumor growth, we used wild-type and Cd300a−/− mice raised under the germ-free (GF) conditions. In contrast to the barrier tissues, Cd300a−/− mice still showed larger numbers of Treg cells and a larger tumor volume than did wild-type mice raised under GF conditions (Figure 3—figure supplement 1). These results suggest that, unlike in the barrier tissues, the microbiota-mediated signal was dispensable for the increased numbers of Treg cells in the tumor and for the enhanced tumor growth in Cd300a−/− mice.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig3-v1.jpg)
+
+**Figure 3.:** (A and B) Quantitative everse transcription PCR (RT-PCR) analysis of mRNA from CD11c+ cells sorted from B16 melanoma in wild-type (WT), Cd300afl/fl (n = 6), Cd300a−/− or Cd300afl/fl;ItgaxCre (n = 6) mice 2 weeks after tumor inoculation. Results are presented relative to those of the control gene encoding β-actin. (C) Quantitative RT-PCR analysis of Ifnb in WT- and Cd300a−/−-derived bone marrow-derived dendritic cells (BMDCs) that received no treatment (0 hr, n = 7) or B16 culture supernatants (2.5 hr, n = 5; 4.0 hr, n = 7). (D) A schematic illustration of EV isolation. (E) The size distribution of isolated B16-derived EVs was analyzed by NTA using NanoSight LM10. (F) Flow cytometric analysis of EVs isolated from B16 melanoma supernatants. Bead-conjugated EVs were analyzed by flow cytometry and characterized by the indicated antibody in the presence of 2 mM CaCl2. (G and H) Quantitative RT-PCR analysis of Ifnb in WT and Cd300a−/− BMDCs that received no treatment (–) (n = 6 in each group) and were treated with high-mobility group Box 1 protein (HMGB-1) (n = 3 in each group) or B16-derived EVs (n = 5 in each group) (G) or cocultured with B16 cultured supernatant with or without the depletion of EVs (n = 5 in each group) (H). (I) Quantitative RT-PCR analysis of Ifnb in WT and Cd300a−/− BMDCs that were treated with EPT (control protein; EPT-MFG-E8, n = 3 in each group) or D89E (D89E-MFG-E8, n = 3 in each group). Data are given as means ± standard error of the means (SEMs). RQ: relative quantification; N.S.: not significant. *p < 0.05 and **p < 0.01. p values were obtained by using a two-way analysis of variance (ANOVA) followed by Bonferroni’s post-test (A–C, G, and H). Data were pooled from three (A–C, G, and H) independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative fluorescence micrographs of tumor sections from germ-free (GF) wild-type (WT) and Cd300a−/− mice and stained with an anti-Foxp3 monoclonal antibody (green) and the DNA-binding dye 4′,6-diamidino-2-phenylindole (DAPI; left). The number of Foxp3+ cells was quantified from four high-power fields (LPF) (right). White arrows show Foxp3-positive cells. Scale bar, 200 μm. (B) Comparison of tumor growth of B16 melanoma between GF WT (n = 5) and Cd300a−/− mice (n = 6). Data are given as means ± standard error of the means (SEMs). *p < 0.05 and **p < 0.01. p values were obtained by using the Student’s t-test (A) and a two-way analysis of variance (ANOVA) followed by Bonferroni’s post-test (B). Data were pooled from two independent experiments (A and B).
+
 Solid tumors lapse into necrosis in the core region under conditions of hypoxia and low pH, resulting in the secretion of several immune stimulators, such as damage-associated molecular patterns (DAMPs), DNA, RNA (Patidar et al., 2018), and EVs (Couto et al., 2018). We examined whether the culture supernatant of B16 melanoma cells containing tumor-derived immune mediators had any effect on Ifnb expression by using cultured bone marrow-derived dendritic cells (BMDCs). Four hours after incubation in the presence of the culture supernatant, Cd300a−/− BMDCs expressed higher levels of Ifnb than did wild-type BMDCs (Figure 3C), suggesting that CD300a suppressed the Ifnb expression induced by a tumor-derived immune mediator in the culture supernatant. Since EVs are the particles released from the cells that are delimited by a lipid bilayer that contains phosphatidylserine (Lima et al., 2009), the ligand for CD300a (Nakahashi-Oda et al., 2012a), and containing functional biomolecules (van Niel et al., 2018). We purified TEVs from the culture supernatants of B16 melanoma cells by centrifugation and phosphatidylserine receptor-conjugated beads (Figure 3D and E), which indeed expressed phosphatidylserine on the surface and bound to a chimeric fusion protein of the extracellular portion of CD300a with human IgG1 (Figure 3F). Stimulation with the purified TEVs induced higher Ifnb expression in Cd300a−/− BMDCs than in wild-type BMDCs (Figure 3G). However, Cd300a−/− BMDCs showed decreased Ifnb expression to a level comparable to wild-type BMDC when these BMMCs were cultured in the culture supernatants of B16 melanoma cells after removal of TEVs by phosphatidylserine receptor-conjugated beads (Figure 3H). In contrast, neither wild-type nor Cd300a−/− BMDCs expressed IFN-β after stimulation high-mobility group box-1 protein (HMGB-1) (Figure 3G) a well-known DAMP, which can be released by damaged tumors. These results suggest that the interaction of CD300a with PS on TEVs suppressed Ifnb expression in BMDCs. Indeed, Ifnb expression in Cd300a−/− BMDCs was decreased to a level comparable to that seen in wild-type BMDCs after stimulation with TEVs whose PS was masked with MFG-E8 protein mutated at residue 89 (D89E-MFG-E8) (Nakahashi-Oda et al., 2012a; Figure 3I). Together, these results indicated that TEVs suppressed Ifnb expression in BMDCs via interaction between CD300a on BMDCs and PS on TEVs.
 
-## TEVs enhanced Treg cell proliferation and consequent tumor development via IFN-β
+### TEVs enhanced Treg cell proliferation and consequent tumor development via IFN-β
 
 To clarify whether IFN-β enhances Treg cell proliferation, we cocultured TEV-stimulated wild-type or Cd300a−/− BMDCs with Treg cells that were generated from naive CD4+ T cells from Foxp3-eGFP+ mice in the presence of anti-CD3 and anti-CD28 mAbs, IL-2, and TGF-β. TEV-stimulated Cd300a−/− BMDCs increased the number of Treg cells to a greater extent than did TEV-stimulated wild-type BMDCs (Figure 4A). However, TEV-stimulated Cd300a−/− BMDCs cocultured with Foxp3-eGFP+ Treg cells rather than naïve CD4+ T cells had the same number of Treg cells as when cocultured with wild-type BMDCs (Figure 4—figure supplement 1). Addition of a neutralizing anti-IFN-β antibody to the coculture of Treg cells and Cd300a−/− BMDCs reduced the Treg cell numbers to a level comparable to that seen in the coculture of Treg cells and wild-type BMDCs (Figure 4A). Moreover, administration of a neutralizing anti-IFN-β antibody showed reduced tumor volume in Cd300afl/fl;ItgaxCre mice to a comparable level of that in Cd300afl/fl mice (Figure 4B), suggesting that IFN-β augmented Treg cell proliferation or survival and promoted tumor progression in Cd300afl/fl;ItgaxCre mice. To investigate the effects of TEVs on Treg cells, we injected an EV-release inhibitor GW4869 (Ikebuchi et al., 2018) into the tumor region on days 10, 14, and 18 after tumor inoculation. Treatment with GW4869, which inhibits EV release from tumors and DCs, led to a significant decrease in the number of tumor-infiltrating Treg cells and the tumor volume in Cd300a−/− and Cd300afl/fl;ItgaxCre mice to a comparable level of those in wild-type and Cd300afl/fl mice, respectively (Figure 4C-E). These results nevertheless indicate that CD300a suppresses TEV-mediated IFN-β production, resulting in a decrease in the Treg cell population and the suppression of tumor development.
 
-## CD300a inhibits the EV-induced TLR3–TRIF signaling for IFN-β production
+![Figure 4.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig4-v1.jpg)
+
+**Figure 4.:** (A) The number of induced Foxp3-eGFP+ cells (iTreg) generated from naive T cells by using anti-CD3, anti-CD28, Interleukin-2 (IL-2), and Transforming growth factor-β (TGF-β). These iTreg cells were cocultured with TEV-stimulated bone marrow-derived dendritic cells (BMDCs) in the presence of IL-2 and TGF-β for 5 days with a control mAb (n = 7) or an anti-interferon-β (IFN-β) mAb (n = 5). (B) Tumor growth curves of Cd300afl/fl and Cd300afl/fl;ItgaxCre mice treated with an anti-IFN-β mAb or a control mAb (control, n = 7; anti-IFN-β, n = 7 for each genotype mouse) three times (days 7, 11, and 14) and after inoculation of B16 melanoma cells. (C) Representative fluorescence micrographs of tumor sections from Foxp3-eGFP wild-type (WT) (phosphate-buffered saline (PBS), n = 4; GW4869, n = 6) and Foxp3-eGFP Cd300a−/−- mice (PBS, n = 5; GW4869, n = 6) in the absence or presence of GW4869, and stained with an anti-GFP mAb (green) and the DNA-binding dye 4′,6-diamidino-2-phenylindole (DAPI, left). The number of Foxp3+ cells was quantified from four high-power fields (LPF) (right). White arrow shows Foxp3-positive cells. Scale bar, 200 μm. Tumor growth curves of WT (PBS, n = 6; GW4869, n = 9) (D) or Cd300afl/fl (n = 4 each) (E) and Cd300a−/− mice (PBS, n = 7; GW4869, n = 9) (D) or Cd300afl/fl;Itgax-Cre (n = 6 each) (E) that were treated with GW4869 or PBS three times (days 14, 18, and 21). Data are given as means ± standard error of the means (SEMs). RQ: relative quantification; N.S.: not significant. **p < 0.01 and ***p < 0.001. p values were obtained by using a one-way analysis of variance (ANOVA) (A and C) and a two-way ANOVA followed by Bonferroni’s post-test (B, D, and E). Data were pooled from two (A and C) or three (B, D, and E) independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Flow cytometric data of the number of Treg cells. Foxp3-eGFP+ cells (nTreg) were isolated from spleen and cocultured with extracellular vesicle (EV)-stimulated BMDCs from wild-type (WT) and Cd300a−/− for 5 days.
+
+### CD300a inhibits the EV-induced TLR3–TRIF signaling for IFN-β production
 
 To further analyze how CD300a regulates TEV-mediated IFN-β production in DCs, we cocultured pHrodo- or PKH-labeled exosomes with wild-type or Cd300a−/− BMDCs and analyzed the localization of the TEVs in BMDCs by using confocal laser scanning microscopy. We found that the TEVs were incorporated into endosomes, as identified by the expression of endosome antigen (EEA)-1, in both genotypes of DCs (Figure 5A). The number of TEVs in the endosomes was comparable between wild-type and Cd300a−/− BMDCs (Figure 5B), suggesting that CD300a did not affect TEV incorporation into the endosomes. Interestingly, we also found that CD300a was internalized from the cell surface into the endosomes, an event that might be mediated by the tyrosine-based sorting motif in the cytoplasmic region of CD300a (Yotsumoto et al., 2003), after coculture of BMDCs with TEVs (Figure 5C and Figure 5—figure supplement 1). As a result, the TEVs colocalized with CD300a at the endosomes (Figure 5A and C). Given that EVs expose phosphatidylserine on their lipid bilayer, which is a CD300a ligand, these results suggest that CD300a was activated via stimulation with TEVs at the endosomes.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative microscopy images of wild-type (WT) and Cd300a−/− bone marrow-derived dendritic cells (BMDCs) treated with pHrodo-labeled extracellular vesicles (EVs) to assess the localization of EVs (red) and early endosome antigen (EEA)-1 (green). Scale bar, 10 μm. Data are representative of two independent experiments. (B) Uptake of PKH-labeled tumor-derived EVs (TEVs) in WT (n = 5) and Cd300a−/− BMDCs (n = 5). (C) Representative microscopy images of WT and Cd300a−/− BMDCs treated with pHrodo-labeled exosomes to assess the localization of exosomes (green), TLR3 (red), and CD300a (blue). Scale bar, 10 μm. Data are representative of two independent experiments. (D) Quantitative RT-PCR analysis of Ifnb in WT and Cd300a−/− BMDCs treated with B16-derived exosomes in the presence of dimethyl sulfoxide (DMSO) (WT, n = 9; Cd300a−/−, n = 10), 100 nM TLR4 inhibitor (n = 7 in each group), and 50 μM TLR3 inhibitor (n = 6 in each group). (E) Quantitative RT-PCR analysis of Ifnb in WT, Cd300a−/−, ticam-1−/−, and ticam-1−/−;Cd300a−/− mice-derived BMDCs treated with B16-derived EVs (n = 5 in all group). (F) Representative immunoassay of WT and Cd300a−/− BMDCs left unstimulated (0 min) or stimulated for the indicated times with B16-derived exosomes, followed by immunoblot analysis of phosphorylated (p-) interferon regulatory factor 3 (IRF3) or total IRF3. Data are representative of two independent experiments. (G and H) Comparison of tumor growth and survival curves of B16 melanoma cells between ticam-1−/− (n = 6) and ticam-1−/−;Cd300a−/− ice (n = 9) after inoculation of B16 melanoma. (I and J) Comparison of tumor growth and survival curves of B16 melanoma between MyD8−/− (n = 9) and MyD88−/−;Cd300a−/− mice (n = 10) after inoculation of B16 melanoma. Data are given as means ± standard error of the means (SEMs). N.S.: not significant. *p < 0.05, **p < 0.01, and ***p < 0.001. p values were obtained by using the Student’s t-test (B), a two-way analysis of variance (ANOVA) followed by Bonferroni’s post-test (D, E, G, and I), and the log-rank test (H and J). Data were pooled from two (B, E, and H) or three (D, I, and J) independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative confocal microscopy images of bone marrow-derived dendritic cells (BMDCs) stained with anti-TLR3 and anti-CD300a mAbs. Data were pooled from two independent experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Quantitative RT-PCR analysis of Ifnb in bone marrow-derived dendritic cells (BMDCs) stimulated with LPS or poly(I:C) in the presence of TLR4 or TLR3 inhibitors (LPS and poly(I:C), n = 12 in each group; TLR4 and TLR3 inhibitors, n = 9 in each group). Data are given as means ± standard error of the means (SEMs). N.S.: not significant. **p < 0.01. p values were obtained by using a one-way analysis of variance (ANOVA) followed by Bonferroni’s post-test. Data were pooled from three independent experiments.
+
 EVs also contain nucleic acids, including structured RNA (Liu et al., 2016; van Niel et al., 2018). TLR3 at the endosomal membrane can recognize RNA and mediates IFN-β production via the TRIF signaling pathway in DCs (Tatematsu et al., 2013). To examine whether CD300a inhibited TLR3-mediated signaling at the endosomes upon stimulation with TEVs, we cocultured wild-type and Cd300a−/− BMDCs with TEVs in the presence of an inhibitor of TLR3 (Cheng et al., 2011). This inhibitor decreased Ifnb expression in Cd300a−/− BMDCs to a level comparable to that in wild-type BMDCs (Figure 5D and Figure 5—figure supplement 2). In contrast, the TLR4 inhibitor TKA-242 did not affect the expression of Ifnb in either BMDC genotype (Figure 5D and Figure 5—figure supplement 2). These results suggest that CD300a inhibits TLR3-mediated signaling for IFN-β production. Moreover, the expression of Ifnb in ticam-1−/−;Cd300a−/− BMDCs was also decreased to the comparable level of that in ticam-1−/− BMDCs after coculture with TEVs (Figure 5E). In addition, we found that the phosphorylation level of interferon regulatory factor 3 (IRF3), a downstream molecule of the TRIF signaling pathway, was increased to a greater extent in EV-stimulated Cd300a−/− BMDCs than in wild-type BMDCs (Figure 5F). In vivo analyses also showed that, although tumor growth was significantly larger and the survival rate was significantly shorter for B16 melanoma-injected Myd88−/−;Cd300a−/− mice compared with B16-injected Myd88−/− mice, tumor development and survival did not differ between ticam-1−/−;Cd300a−/− and ticam-1−/− mice (Figure 5G-J). Taken together, these data suggest that CD300a inhibits the TLR3–TRIF signaling pathway for IFN-β production at the endosomes in DCs, resulting in the suppression of Treg cell activation and tumor development.
 
-## CD300A expression associates with survival times in melanoma patients
+### CD300A expression associates with survival times in melanoma patients
 
 To examine the role of CD300A in tumor development in humans, we analyzed the data on the single-cell RNA sequence (scRNA-seq) of human melanoma tissues, which demonstrated that CD300A is expressed on populations that express HLA-DR, ITGAX (CD11C), ITGAM (CD11B), CD14, and CD163 (Figure 6—figure supplement 1), consistent with the results of mouse melanoma. We further analyzed the database of the Cancer Genome Atlas (TCGA) project and found that skin cutaneous melanoma (SKCM) patients expressing low levels of CD300A mRNA had shorter survival times than did those expressing higher CD300A mRNA levels (Figure 6A). We also found that the expression ratio of CD300A to ITGAX is negatively correlated with that of FOXP3 to CD8A (Figure 6B). These results suggested that CD300A suppressed Treg cell proliferation and/or activation and tumor development. Moreover, we found that patients with melanoma showed strong positive correlation between FOXP3 and IFNB1 expression (Figure 6C). Neutral sphingomyelinase-2 (SMPD3), which is a target of an inhibitor of EV-release GW4869, enhances TEV release from tumor cells (Kosaka et al., 2013; Kosaka et al., 2010). TCGA database of SKCM also showed a strong positive correlation between expressions of SMPD3 and IFNB1 in melanoma tissues (Figure 6D), suggesting that TEVs increased IFN-β expression in human melanoma tissues. These results were consistent with those of mouse models of melanoma development in the current study. Taken together, these results suggested that CD300A might augment tumor immunity via suppression of tumor-infiltrating Treg cells also in humans.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig6-v1.jpg)
+
+**Figure 6.:** (A) Kaplan plot showing low and high CD300A expressions in skin cutaneous melanoma (SKCM) patients obtained by performing a meta-analysis of The Cancer Genome Atlas (TCGA) database. Median values were used as thresholds (numbers of both low and high expression patients = 229). (B–D) Spearman correlation analysis of TCGA skin cutaneous melanoma database by using GEPIA2. FOXP3, IFNB1, and SMPD3 expression were normalized by GAPDH expression (C and D).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61999/elife-61999-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Indicated gene expressions were reanalyzed by using GSE76056. Cell clusters of CD4+ T cells, CD8+ T cells, NK cells, myeloid cells, and CD19+ cells were determined by CD4/CD3E, CD8A/CD3E, NCAM1(CD56)/GZMB, ITGAM(CD11B)/ITGAX(CD11C)/HLA-DR/CD14/CD163, and CD19 expression, respectively.
 
 ## Discussion
 
@@ -84,60 +132,581 @@ We have previously reported that CD300a inhibited the CD14-mediated TLR4 interna
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd300a−/−</td>
+      <td>PMID:26855029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd300afl/fl</td>
+      <td>PMID:26855029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd300afl/fl;Lyz2Cre</td>
+      <td>PMID:26855029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd300afl/fl;ItgaxCre</td>
+      <td>PMID:26855029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ticam1−/−;Cd300a−/−</td>
+      <td>PMID:26855029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>MyD88−/−;Cd300a−/−</td>
+      <td>PMID:26855029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rag1−/−;Cd300a−/−</td>
+      <td>PMID:26855029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ticam1−/−</td>
+      <td>PMID:1285581 Oriental Bio Service</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>MyD88−/−</td>
+      <td>PMID:9697844Oriental Bio Service</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rag1−/−</td>
+      <td>Jackson Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Foxp3eGFP</td>
+      <td>PMID:18209052</td>
+      <td></td>
+      <td>Dr. B. Malissen (UM2 Aix-Marseille Université)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Foxp3eGFP;Cd300a−/−</td>
+      <td>PMID:26855029</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>B16</td>
+      <td>RIKEN Cell Bank</td>
+      <td>RCB1283RRID:CVCL_ F936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD8-PE-Cy7 (53–6.7, mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 552,877RRID:AB_ 394,506</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD4-APC (RM4-5, mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 553,051RRID:AB_398528</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD11b-APC-Cy7 (M1/70, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 557,657RRID:AB_396772</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Armenian hamster anti-CD11c FITC (HL3, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 553,801RRID:AB_553801</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-I-A/I-E BV500 (M5/114.15.2, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 562,366RRID:AB_11153488</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-Ly6G PE (1A8, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 551,461RRID:AB_394208</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD62L PE (MEL-14, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 553151, RRID:AB_394666</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD44 APC (IM7, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 559250, RRID:AB_398661</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD25 PE (PC61, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 553866, RRID:AB_395101</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Ki67 Alexa Fluor 647(B56, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 558615, RRID:AB_647130</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-IFN-g Alexa Fluor 488 (XMG1.2, monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 557724, RRID:AB_396832</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD63 APC-Cy7 (NVG-2, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 143907, RRID:AB_2565497</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Armenian hamster anti-CD103 APC (2E7, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 121,414RRID:AB_1227502</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-XCR1 PE (ZET, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 148,204RRID:AB_2563843</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Bcl-2 PE (BCL/10C4, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 633508, RRID:AB_2290367</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-GITR PE-Cy7 (DTA-1, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 126317, RRID:AB_2563385</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-PD-1 PE-Cy7 (RMP1-30, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 109,109RRID:AB_572016</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-Tim3 PE (RMT3-23, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 119703, RRID:AB_345377</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Armenian hamster anti-CTLA-4 biotin (UC10-4B9, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 106303, RRID:AB_313252</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Foxp3 Alexa Fluor 488 (150D, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 320012, RRID:AB_439748</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-CD45.2 APC (104, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 109814, RRID:AB_389211</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD40 APC (3/23, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 124612, RRID:AB_1134072</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-IFNβ (7F-D3, monoclonal)</td>
+      <td>Yamasa</td>
+      <td>Cat# 7,891</td>
+      <td>Vivo(50 μg/mouse, three times)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PS FITC (1H6, monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat# 16-256, RRID:AB_492616</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD16/CD32 (2.4G2, monoclonal)</td>
+      <td>TONBO Bioscience</td>
+      <td>Cat# 70-0161, RRID:AB_2621487</td>
+      <td>FACS (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-CD300a (EX42, monoclonal)</td>
+      <td>PMID:31155312</td>
+      <td></td>
+      <td>FACS (0.1 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GFP (D5.1, monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>Cat# 2956, RRID:AB_1196615</td>
+      <td>IHC(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-Foxp3 (FJK-16s, monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#14-5773-82RRID:AB_467576</td>
+      <td>IHC(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-EEA-1 (1G11, monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat# 14-9114RRID:AB_2572929</td>
+      <td>ICC(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-TLR3 (11F8, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 141902, RRID:AB_10901162</td>
+      <td>ICC(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-phosphorylated IRF3 (4D4G, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4,947</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-IRF3 (FL-425, polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-9082, RRID:AB_2264929</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster anti-CD3 purified (145–2C11, monoclonal)</td>
+      <td>TONBO Bioscience</td>
+      <td>Cat# 70-0031, RRID:AB_2621472</td>
+      <td>Cell culture(0.33 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Syrian hamster anti-CD28 purified (37.51, monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 102101, RRID:AB_312866</td>
+      <td>Cell culture(2 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifnb_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGCTCCAAGAAAGGACGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifnb_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCAGTGTAACTCTTCTGCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il10_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTGGACAACATACTGCTAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il10_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATTTCCGATAAGGCTTGGCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tgfb_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGACGTCACTGGAGTTGTACGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tgfb_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTTCATGTCATGGATGGTGC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: 434,302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GM-CSF</td>
+      <td>WAKO</td>
+      <td>Cat. #: 434,302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-4</td>
+      <td>WAKO</td>
+      <td>Cat. #: 434,302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-2</td>
+      <td>BD Pharmingen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TGF-β</td>
+      <td>R&amp;D system</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Exosome Isolation Kit</td>
+      <td>WAKO</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tumor dissociation kit</td>
+      <td>Miltenyi Biotec</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Power SYBER Green PCR Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GW4869</td>
+      <td>Cayman Chemial</td>
+      <td>Cat. #: 13,127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TLR3/dsRNA complex inhibitor</td>
+      <td>Merck</td>
+      <td>Cat. #: 614,310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TLR4 inhibitor (TAK-242)</td>
+      <td>Merck</td>
+      <td>Cat. #: 614,316</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>pHrodo Red ester</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>pHrodo STP Green</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HRP-conjugated dextran polymer</td>
+      <td>PerkinElmer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hybrid cell counts software</td>
+      <td>Keyence</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Seurat</td>
+      <td>R: The R Project for Satistical Computing</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>TreeStar</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All gene-edited mice in the C57BL/6J background were previously described (Nakahashi-Oda et al., 2016). C57BL6J mice and GF mice were purchased from Clea Japan and Sankyo Laboratory, respectively. GF mice were bred and maintained in vinyl isolators to maintain GF conditions. Mice were used for the experiments at 8–12 weeks of age. All experiments were performed in accordance with the guidance of the animal ethics committee of the University of Tsukuba Animal Research Center.
 
-## Antibodies, flow cytometry, and reagents
+### Antibodies, flow cytometry, and reagents
 
 The isotype-matched control antibodies rat IgG2a (553928), rat IgG1 (553921), and mouse IgG1 (553445), as well as mAbs to CD4 (RM4-5), CD8 (53–6.7), CD11b (M1/70), CD11c (HL3), I-A/I-E (M5/114.15.2), Ly6C (AL-21), Ly6G (1A8), CD62L (MEL-14), CD44 (IM7), CD25 (PC61), Ki67 (B56), and IFN-γ (XMG1.2) were purchased from BD Bioscience. Mabs to CD63 (NVG-2), CD103 (2E7), XCR1 (ZET), Bcl-2 (BCL/10C4), GITR (DTA-1), PD-1 (RMP1-30), Tim3 (RMT3-23), CTLA-4 (UC10-4B9), Foxp3 (150D), CD45.2 (104), and CD40 (3/23) were purchased from Biolegend. Anti-IFN-β(7F-D3) was from Yamasa; control rat IgG (6130-01) was purchased from Southern Biotechnology. Anti-PS antibody (1H6) was purchased from Merck Millipore. The CD300a-specific mAb (EX42) was generated in our laboratory. Anti-CD25 (PC61) was a gift from E. Nakayama (Okayama University). Cells were treated for 10 min with anti-CD16/CD32 mAb (2.4G2; TONBO Bioscience) to prevent binding to FcγR prior to incubation with the indicated combination of antibodies. All samples were evaluated by using a Fortessa flow cytometer (Becton Dickinson) and analyzed by using FlowJo software (Tree Star).
 
-## Tumor cell maintenance and injection
+### Tumor cell maintenance and injection
 
 The B16 mouse melanoma cell line was obtained from RIKEN Cell Bank (Tsukuba, Japan). Authentication and mycoplasma contamination test (DNA staining method, polymerase chain reaction [PCR method]) were also performed at RIKEN Cell Bank (Tsukuba, Japan). Identification of mouse strain (Simple sequence length polymorphism analysis), identification of animal species (PCR method), morphology, cell viability, and adhesion efficiency had performed for authentication according to ICLAC. Cells were maintained in RPMI-1640 (Sigma) supplemented with 5 % (vol/vol) fetal bovine serum (FBS) (Thermo Fisher). To inoculate the tumor cells into mice, cells were harvested by trypsinization, washed with sterile PBS, and injected intradermally (2 × 105 cells/50 μl sterile PBS/mouse) on the flank of each mouse. Tumor growth was measured every three or 4 days by using a caliper.
 
-## Cell preparations
+### Cell preparations
 
 For tumor-infiltrating Treg cell preparation, tumor tissues were harvested 3 weeks after tumor inoculation. Tumor tissues were cut into small pieces, incubated in 5% FBS RPMI-1640 in the presence of an enzyme mixture (Miltenyi Biotec) at 37℃ for 45 min, and digested by using a gentleMACS Dissociator and tumor dissociation kit (Miltenyi Biotec), according to the manufacturer’s instructions. Cells were filtered through 70 μm nylon mesh and subsequently centrifuged using different concentrations of Percoll (Sigma-Aldrich) to exclude tissue debris and were washed with staining medium.
 
 BMDCs were generated as described previously (Nakahashi-Oda et al., 2016). Briefly, bone marrow cells were cultured in a 10 cm culture dish in complete RPMI-1640 containing 10 % FBS in the presence of 10 ng/ml GM-CSF (WAKO) and 10 ng/ml IL-4 (WAKO) for 7 days. BMDCs were enriched by using CD11c MACS Beads (Miltenyi Biotec) to remove dead cells generated during BMDC development.
 
-## Cytokine production from tumor-infiltrating lymphocytes
+### Cytokine production from tumor-infiltrating lymphocytes
 
 Cells were isolated from tumors in mice 3 weeks after inoculation, and stimulated for 4 hr with 50 ng/ml PMA and 500 ng/ml ionomycin. Brefeldin A (Sigma-Aldrich) was added for the last 3 hr of culture. Cells were treated by using Foxp3 staining kits (eBioscience) and then stained with anti-IFN-γmAb.
 
-## Immunohistochemistry and immunocytochemical staining
+### Immunohistochemistry and immunocytochemical staining
 
 Paraffin-embedded tumor samples were deparaffinized in xylene and a series of graded concentrations of alcohol. To block endogenous horseradish peroxidase (HRP), tissue sections were incubated in 0.3 % hydrogen peroxidase in methanol for 30 min at room temperature. For antigen retrieval, the specimens were preheated in AR6 buffer (PerkinElmer). Samples were incubated with anti-GFP (D5.1) XP (Cell signaling) or Rat anti-Foxp3 (FJK-16s; Thermo Fisher) for 1 hr at room temperature or overnight at 4 °C, respectively, and then incubated with appropriate secondary HRP-conjugated Abs. An HRP-conjugated dextran polymer system (PerkinElmer) was used for detection. After being washed with TBST, sections were mounted with 4′,6-diamidino-2-phenylindole (DAPI; Vector labs). For quantification of Foxp3+ cells in tumor tissues, tissue sections were scanned using BZ-X710 (Keyence). The number of Foxp3+ cells per high-power field in each area was automatically counted with hybrid cell counts software (Keyence). For immunocytochemical staining, 1.0 × 105 BMDCs were cultured in eight-well chamber slides (Thermo Fisher) and were stimulated with pHrodo Red ester or pHrodo STP Green (Thermo Fisher)-labeled exosomes. Cells were then fixed with 10 % paraformaldehyde at 4°C for 20 min, permeabilized with 0.3 % Triton-X, and then stained with a mAb to EEA-1 (1G11; eBioscience) or TLR3 (11F8; Biolegend), followed by Alexa Flor 488-conjugated donkey anti-mouse IgG or Alexa Flor 546-conjugated goat anti-rat IgG (Invitrogen), respectively. Samples were evaluated by use of laser scanning confocal microscopy (FV10i FLOUVIEW; Olympus).
 
-## In vivo depletion of Treg cells
+### In vivo depletion of Treg cells
 
 For in vivo depletion of Treg cells, mice were injected intraperitoneally with 300 μg of an anti-CD25 mAb (PC61) and an isotype control Ab on days −6, −3, and 0 before B16 tumor inoculation.
 
-## EV inhibitor treatment
+### EV inhibitor treatment
 
 To inhibit EV generation, mice were injected with 1.0 mg/kg GW4869 (Ikebuchi et al., 2018; Kosaka et al., 2013) (Cayman Chemical) intratumorally on days 14, 18, and 21 after tumor inoculation. Tumor tissues were harvested on day 25.
 
-## EV isolation and treatment
+### EV isolation and treatment
 
 B16 melanoma cells were cultured in complete RPMI supplemented with or without 2 % bovine serum albumin. The culture medium was harvested and subjected to sequential centrifugation steps (first, 5 min for 2000 G; second, 20 min for 10,000 G). EVs were purified by using an Exosome Isolation Kit (WAKO) according to the manufacturer’s protocol. In brief, streptavidin magnetic beads, bound with biotinylated mouse Tim4-Fc, which is the phosphatidylserine receptors, were added to the culture medium of B16 melanoma containing 2 mM CaCl2, and the mixture was rotated for 3 hr or overnight at 4 °C. The beads were washed three times with washing buffer and exosomes were eluted with elution buffer (Figure 3D). For quantification of the EVs in the elution buffer, the concentration of EV protein was quantified by using a BCA Protein Assay Kit (Novagen). For BMDC stimulation by EVs, 2 × 105 BMDCs were incubated in the presence of 3–5 μg/ml EVs for 2.5 h. To inhibit TLR3 and TLR4 signaling, a TLR3/dsRNA complex inhibitor (Merck) and a TLR4 inhibitor (TAK-242; Merck) were added to the cultures of BMDCs for 15 min before exosome stimulation.
 
-## Coculture of iTreg cells with EV-stimulated BMDCs
+### Coculture of iTreg cells with EV-stimulated BMDCs
 
 CD4+ T cells were enriched from the spleen cells by using mouse CD4 MACS Beads (L3T4, Miltenyi Biotec) and then CD4+CD44loCD62LhighFoxp3-eGFP− naive T cells were purified by sorting with flow cytometry (FACS Aria III, Becton Dickinson). Inducible Treg cells were generated by culture of naive CD4+ T cells in the presence of plate-coated 0.33 μg/ml anti-CD3 Ab (145–2 C11; TONBO), 2.0 μg/ml soluble CD28 (37.51; Biolegend), 20 ng/ml IL-2 (BD Pharmingen), and 2.5 ng/ml TGF-β (R&D system) for 3 days. Inducible Treg cells (5 × 104 cells/well) were cultured with exosome-stimulated BMDCs (5 × 104 cells/well) in 96-well round-bottom plates in the presence of IL-2 and TGF-β for 5 days.
 
-## Quantitative real-time PCR analysis
+### Quantitative real-time PCR analysis
 
 Total RNA was extracted from tumor-infiltrating CD11c + cells and BMDCs. Reverse transcription was performed with a High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems). Quantitative PCR analysis was performed with Power SYBER Green PCR Master Mix (Applied Biosystem) by using an ABI 7500 sequence detector (Applied Biosystems). The PCR primers are as follows: Ifnb fwd, 5′-cagctccaagaaaggacgaac-3′; Ifnb rev, 5′-ggcagtgtaactcttctgcat-3′; Il10 fwd, 5′-gctggacaacatactgctaacc-3′; Il10 rev, 5′- atttccgataaggcttggcaa-3′; and Tgfb fwd, 5′-tgacgtcactggagttgtacgg-3′; Tgfb rev, 5′-ggttcatgtcatggatggtgc-3′; normalization of quantitative real-time PCR was performed based on the gene encoding β-actin.
 
-## Western blots
+### Western blots
 
 BMDCs were stimulated or unstimulated with exosomes for 20 or 40 min and lysed with 1% NP-40. The lysetes of BMDCs were immunoblotted with antibody to phosphorylated IRF3 (4D4G; Cell Signaling Technology) or IRF3 (FL-425; Santa Cruz Biotechnology).
 
-## Bioinformatics
+### Bioinformatics
 
 For analysis of melanoma scRNA-seq, data were downloaded from the database of scRNA-seq analysis of melanoma (accession no. GSE72056). The matrix data were passed to the R software package Seurat. Cells that had unique gene counts of <200 were excluded, as were all genes that were expressed in >3 cells. Counted data were log2-transformed and scaled by Seurat’s Scale Data function. Principal component (PC) analysis was performed on a set of highly variable genes defined by Seurat’s FindVariableGenes function. Genes associated the resulting PCs were then used for dimensionality reduction by using t-distributed stochastic neighbor embedding. Cluster-based marker identification and differential expression were performed using Seurat’s FindAllmarkers. RNA-seq and survival data were obtained from TCGA project and analyzed by using OncoLnc and GEPIA (Anaya, 2016; Tang et al., 2017).
 
-## Statistical analyses
+### Statistical analyses
 
 Comparisons were performed using GraphPad Prism version 5.0 (GraphPad Software) by one- or two-way analysis of variance, followed by Bonferroni’s multiple comparisons test or Student’s unpaired t-test. Data are presented as means ± standard error of the means, and differences are considered significant at p < 0.05.

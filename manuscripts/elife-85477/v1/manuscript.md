@@ -6,9 +6,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05hs6h993 Department of Plant Biology, Michigan State University East Lansing United States
-2. https://ror.org/05hs6h993 Ecology, Evolution, and Behavior Program, Michigan State University East Lansing United States
-3. https://ror.org/02vkce854 W. K. Kellogg Biological Station, Michigan State University Hickory Corners United States
+1. Department of Plant Biology, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
+2. Ecology, Evolution, and Behavior Program, Michigan State University East Lansing United States ([ROR:05hs6h993](https://ror.org/05hs6h993))
+3. W. K. Kellogg Biological Station, Michigan State University Hickory Corners United States ([ROR:02vkce854](https://ror.org/02vkce854))
 
 † Corresponding author
 

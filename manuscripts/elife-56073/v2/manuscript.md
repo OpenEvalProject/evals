@@ -52,9 +52,25 @@ The reaction time (RT) to STEP was subtracted from the RT to RANREG and RANREGr 
 
 Compared with RTs to the emergence of novel regularities (RANREG), we expected progressively faster RTs as regularities reoccur across the experiment (RANREGr), indicating that their representations have become retrievable from memory. We assess overall memory formation of REGr based on RTs averaged over all three reoccurrences within each block. However, we focus on RTs in each intra-block presentation to assess persistence of memory effects across experimental manipulations.
 
-## Experiment 1A: implicit long-lasting memory for three reoccurring patterns
+### Experiment 1A: implicit long-lasting memory for three reoccurring patterns
 
 Figure 2A-D plots the mean and individual results of the regularity detection task performed in three sessions: five blocks on day 1, one block after 24 hr (‘24 hr’) and one block after 7 weeks, (‘7 w’). Participants were highly accurate in detecting regularities (Figure 2A): d’ plateaued at near ceiling performance after the first block. No difference was observed between hit rates for RANREG and RANREGr [no main effect of condition: F(1, 19) = .39, p = 0.539, ηp2 = .02; no main effect of block: F(5, 90) = 0.46, p = 0.804, ηp2 = .02; no interaction between condition and block: F(5, 90) = 1.10, p = 0.367, ηp2 = .06].
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56073/elife-56073-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Exp. 1A (three reoccurring targets). (A) Sensitivity to emergence of regularity (d') across blocks during the first session, as well as after 24 hr and after 7 weeks. Error bars indicate 1 s.e.m. (B) RT to the transition from random to regular pattern in RANREG and RANREGr conditions, across blocks. Error bars indicate 1 s.e.m. ‘Figure 2—figure supplement 1 plots the RT advantage for each intra-block presentation. (C) Correlations between RT advantage at the end of the first day – block 5 – and after 24 hr (upper plot) and after 7 weeks (lower plot). Each data point represents an individual. Note N = 14 in the 7W data due to attrition. (D) The relationship between RTs for the RANREG and RANREGr conditions. Each data point represents an individual participant. Dots below the diagonal reveal faster detection of RANREGr compared with RANREG. These implicit memory effects were not linked to explicit memory. See Figure 2—figure supplement 2 for explicit recognition estimates. (E–G) Exp. 1B (time reversal): (E) Sensitivity to emergence of regularity (d’) across blocks. (F) RT to the transition from random to regular pattern in RANREG and RANREGr conditions, across blocks. The block containing time-reversed REGr is shaded in yellow. The RT advantage dropped when REGr were time reversed, and restored in block 5. Figure 2—figure supplement 3 plots the RT advantage for each intra-block presentation. ﻿(G) The relationship between RTs to the RANREG and RANREGr conditions in block 5.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56073/elife-56073-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The plot depicts the progressive emergence of an RT advantage with each presentation of REGr. Plotted values correspond to the RT advantage of REGr for each intra-block presentation. RTs of 1 st, 2nd or 3rd intra-block presentations were averaged across the different REGr, and RTs to novel REG were averaged across trials which occurred at the beginning (first third), middle or end of each block. There was no significant difference between the last presentation in block 5, and the first presentation after 24 hr, or between the last presentation after 24 hr and the first presentation after 7 weeks, indicating that the formed memory trace was preserved long term. Error bars indicate 1 s.e.m. Note that the RT for REGr is computed based on three trials and the effects are therefore rather noisy.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56073/elife-56073-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** MCC coefficient (refer to Materials and methods) computed for the familiarity task performed after the regularity detection task in Exp. 1A. Each dot represents an individual participant. MCC was low overall, indicating low explicit recognition and did not correlate with the RT advantage (refer to main text).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56073/elife-56073-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Plotted values correspond to the RT advantage of REGr for each intra-block presentation. RTs of 1 st, 2nd or 3rd intra-block presentations were averaged across the different REGr, and RTs to novel REG were averaged across trials which occurred at the beginning (first third), middle or end of each block. The RT advantage dropped when REGr were time reversed and was restored when the original REGr were re-introduced (block 5). Error bars indicate 1 s.e.m. Note that the RT for REGr is computed based on three trials and the effects are therefore rather noisy.
 
 Despite the ceiling effects associated with pattern detection (mean hit rate = 97.3%), faster RTs in RANREGr than in RANREG (‘RT advantage’) were observed in all participants by the end of the first session (block 5; Figure 2D), indicating a clear implicit memory for the reoccurring patterns. A repeated measures ANOVA on RTs with condition (RANREG and RANREGr) and block as factors yielded a main effect of condition [F(1, 18) = 34.09, p < 0.001, ηp2 = .65], main effect of block [F(5, 90) = 9.24, p < 0.001, ηp2 = .3] and an interaction between condition and block [F(5,90) = 6.88, p < 0.001, ηp2 = .28]. Specifically, in the first block of the first session, performance did not differ between RANREG and RANREGr [t(18) = 0.794, p = 1]. By the end of the second block (after 6 REGr reoccurrences), a significant difference (~140 ms; 2.8 tones) between RTs was observed [REG – REGr: t(18) = 3.964, p = 0.006]. This difference grew over the following blocks (all ps < 0.001), plateauing after block 3 (233 ± 0.17 ms; 4.7 tones). The RT advantage on the third block did not differ from the fourth [t(18) = −0.907, p = 1] nor from the fifth block [t(18) = −0.0003, p = 1]). In Experiment S1 (Appendix 1—figure 1), we demonstrate that similar effects are obtained when doubling the number of REGr patterns to be memorised (six different patterns per participant). In Experiments S2A and S2B (Appendix 1—figure 2), we further demonstrate that the memory trace is not abolished by introducing ‘interrupting blocks’ (in which REGr were not presented) between ‘standard blocks’ (in which REGr patterns reoccurred every ~3 min).
 
@@ -62,13 +78,13 @@ Critically, implicit memory for reoccurring regularities persisted after 24 hr a
 
 Further, we examined the correlation of individual participants’ RT advantage across the three sessions (Figure 2C). A robust correlation was found between the end of the first day (block 5) and the measurement taken after 24 hr (spearman’s rho = 0.635, p = 0.004) – participants who exhibited a larger RT advantage at the end of the first day were also those showing a larger advantage 24 hr later. A similar correlation was found with performance after 7 weeks (spearman’s rho = 0.740, p = 0.003). This confirms strong reliability of individual effects.
 
-## The memory effects are not driven by explicit recognition of reoccurring patterns
+### The memory effects are not driven by explicit recognition of reoccurring patterns
 
 Explicit memory for reoccurring regularities was examined at the end of each session by means of a familiarity task. Only regular sequences were presented: REGr (one presentation of each pattern) were intermixed with previously unheard REG patterns. Participants were instructed to indicate which patterns sounded ‘familiar’. Classification was evaluated using the MCC score (see Materials and methods) which ranges between 1 (perfect classification) to −1 (total misclassification). Whilst low overall, the mean MCC on each testing session indicated above chance performance [day 1: mean = 0.231; t(18) = 4.214, p < 0.001; 24 hr: mean = 0.44, t(18) = 7.044, p < 0.001; 7 w: mean = 0.360, t(13) = 5.204, p < 0.001] (see Figure 2—figure supplement 2). An improvement in MCC scores was observed between day 1 and 24 hr later [t(18) = −3.635, p = 0.004], suggesting potential consolidation. There was no change in MCC scores between the 24 hr session and 7 weeks later [t(13) = 0.348, p = 1].
 
 Importantly, MCC scores did not correlate with the RT advantage: MCC on day 1 did not correlate with the RT advantage observed in block 5 (spearman’s Rho = 0.307; p = 0.201; a similar result was also obtained when pooling across participants from Exp. 1A and Exp. S1 (which used 6 REGr patterns, see Appendix 1) (Spearman’s Rho = 0.114; p = 0.493; N = 38). Though a weak correlation between RT advantage and MCC was measured after 24 hr (uncorrected; Spearman’s Rho = 0.459, p=0.048, N = 19), it disappeared after 7 weeks (Spearman’s Rho = −0.024, p = 0.934, N = 14). Therefore, implicit memory for reoccurring patterns, observed in nearly all participants, is not linked to explicit awareness of reoccurrence.
 
-## Experiment 1B: Implicit memory is specific to sequential structure
+### Experiment 1B: Implicit memory is specific to sequential structure
 
 ﻿To confirm that the RT advantage effects are driven by memory of sequential structure, we tested whether implicit memory for reoccurring patterns is tolerant to time reversal of the originally learned patterns (Figure 2E–G). Participants performed the regularity detection task as in Exp. 1A over six experimental blocks. The first four were identical to those in Exp. 1A. In the fifth block, REGr sequences were replaced by time-reversed versions. In block 6, the original REGr were introduced again. Participants were naive to the experimental manipulation. It was expected that, if implicit memory is specific to the sequential structure of regularity, the RT advantage should disappear in the time-reversed block (see also Kang et al., 2017).
 
@@ -78,7 +94,7 @@ Importantly, this RT advantage was abolished in the time-reversed block, but res
 
 ﻿ These results constrain the nature of the observed memory effect to sequential information.
 
-## Experiment 2: Limited formation of memory traces of non-adjacent patterns
+### Experiment 2: Limited formation of memory traces of non-adjacent patterns
 
 We tested whether adjacent repetition of patterns (as is inherently the case for REG sequences) is required for implicit memory to be formed (Figure 3).
 
@@ -104,9 +120,62 @@ As an exploratory analysis, we tested whether higher detection accuracy for non-
 
 Overall, these results suggest the presence of measurable (though small) memory traces for reoccurring, non-adjacent patterns (PATinRANr). However, it is clear that the formation of robust implicit memory traces for sound sequences depends on short-term memory (and hence benefits from immediate repetition of patterns) such that introducing a gap of even 2 s results in substantially weakened storage in memory.
 
-## Modelling
+### Modelling
 
 We constructed a ‘memory constrained’ computational model, based on ‘prediction by partial matching’ (PPM; see Materials and methods) to provide a formal simulation of the psychological mechanisms underlying the process of memory trace formation, as observed in Experiments 1A (Figure 2), 2 (Figure 3) and S2A (Appendix 1—figure 2K). These experiments reflect critical manipulations of the effect of long- and short-term memory decay. Although the existence of memory decay in humans is in general well established, ways of incorporating memory decay into probabilistic computational models of sequences processing is very much an active topic of research. Our PPM model implemented a single set of values (Table 1) that fully accounted for the dynamics of memory formation observed across experiments. As a benchmark, we also report the results for an equivalent unconstrained model (i.e. with perfect memory), as employed in previous research using the same paradigm (Barascud et al., 2016).
+
+**Table 1.**
+ Parameters for the memory-decay PPM model as manually optimized for Experiments 1A, 2, and S2A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Buffer capacity</td>
+      <td>15 items</td>
+    </tr>
+    <tr>
+      <td>Buffer weight</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Short-term memory weight*</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Short-term memory duration*</td>
+      <td>15 s</td>
+    </tr>
+    <tr>
+      <td>Long-term memory weight*</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Long-term memory half life</td>
+      <td>500 s</td>
+    </tr>
+    <tr>
+      <td>Long-term memory asymptote</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Order bound</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The combination of STM weight, STM duration and LTM weight yields a STM half-life of 3.06 s._
 
 The following cognitive hypotheses were instantiated:
 
@@ -128,19 +197,35 @@ Experiment 2 investigated the effect of pattern adjacency on pattern detection a
 
 Overall, the modelling successfully replicated the slow dynamics of memory formation exhibited by human listeners demonstrating that memory constrained transition-probability learning is a plausible computational underpinning of sequential pattern acquisition.
 
-## Experiment 3: Memories of a set of reoccurring regularities are not overwritten by subsequent memorization of another set
+### Experiment 3: Memories of a set of reoccurring regularities are not overwritten by subsequent memorization of another set
 
 Does memorization of a new set of REGr interfere with the representation of a previously memorized set? Participants performed the same transition detection task as in Exp. 1A. They were exposed to a set of three reoccurring patterns (REGr1) in the first three blocks, followed by three blocks in which another set of patterns (REGr2) reoccurred. Blocks 7 and 8 then re-tested memory for the reoccurring regularities of set 1 and set 2, respectively. After 24 hr, memory for the two sets was tested again.
 
 Clear implicit memory for the first set of targets (REGr1), as indicated by an RT advantage, was observed after the 3rd block (Figure 6B) [main effect of condition: F(1, 28) = 41.01, p < 0.001, ηp2 = .59; main effect of block: F(3, 84) = 15.69, p < 0.001, ηp2 = .36; condition by block interaction: F(3, 84) = 6.83, p < 0.001, ηp2 = .20]. As expected, after three blocks of exposure the RT advantage in the RANREGr1 condition (163 ms – 3.3 tones) was similar to that observed in Exp. 1A above. Critically, this RT advantage for RANREGr1 was not perturbed after the presentation of the second set of regularities (REGr2) [RT advantage in block three vs. block 7: t(28) = .877, p = 0.387]. It also lasted after 24 hr [RT advantage in block seven vs. after 24 hr: t(28) = −0.553, p = 0.584], and was similar to the 24 hr RT advantage observed in Exp. 1A [no main effect of experiment: F(1, 50) = .33, p = 0.567, ηp2 = .01]. These results indicate that, once formed, memory traces are neither overwritten nor weakened by ‘interfering’ new sets of reoccurring patterns.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/56073/elife-56073-fig6-v2.jpg)
+
+**Figure 6.:** Participants were exposed to a set of three reoccurring patterns in the first three blocks (REGr1, yellow shading), followed by three blocks in which another set of patterns was reoccurring (REGr2, grey shading). The final blocks (7 and 8) tested memory for set 1 and 2, respectively. After 24 hr, memory for the two sets was tested again. (A) d’ across all blocks on day 1 and after 24 hr. Error bars indicate 1 s.e.m. (B) RT to the transition from random to regular pattern across blocks for RANREG, RANREGr1 and RANREGr2 on day 1 and after 24 hr.﻿ Error bars indicate 1 s.e.m. Figure 6—figure supplement 1A plots the RT advantage for each intra-block presentation. Figure 6—figure supplement 1B shows the RT data with N = 19.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56073/elife-56073-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) RT advantage for each intra-block presentation. Plotted values correspond to the RT advantage of REGr for each intra-block presentation. RTs to the 1st, 2nd or 3rd intra-block presentations were averaged across the different REGr, and RTs to novel REG were averaged across trials which occurred at the beginning (first third), middle or end of each block. The RT advantage for a set of reoccurring patterns (REG1; yellow traces) was not affected by the presentation of another set of REGr (REGr2) in blocks 4–6. Error bars indicate 1 s.e.m. Note that the RT for REGr is computed based on three trials and the effects are therefore rather noisy. (B) RT across blocks with N = 19. The overall pattern was identical to that observed with N = 30 participants (reported in the main text). The RT advantage for the first set of REGr1 observed across the first three blocks [main effect of condition: F(1, 18) = 24.16, p < 0.001, ηp2 = 0.57; main effect of block: F(3, 54) = 11.47, p < 0.001, ηp2 = 0.39; condition by block interaction: F(3, 54) = 3.08, p = 0.035, ηp2 = 0.15] was not perturbed after the presentation of the second set of reoccurring sequences [RT advantage for RANREGr1 in block three vs. block 7: t(18) = .403, p = 0.691].
+
 In blocks 4–6 presenting the second set of reoccurring regularities (REGr2) also showed an RT advantage, as demonstrated by the emerging separation between the RT to novel and reoccurring regularities. A repeated measures ANOVA on the RT advantage with ‘experimental stage’ (blocks 1–3, blocks 4–6) and block number (1st, 2nd or 3rd) showed a main effect of block number [F(2, 56) = 20.13, p < 0.001, ηp2 = 0.42; consistent with a growing RT advantage across blocks], and stage [F(1, 28) = 15.70, p < 0.001, ηp2 = 0.36] with no interactions. The main effect of stage suggests an overall larger RT advantage for the first set (REGr1). The noisier RT pattern observed in blocks 4–6 may be indicative of an order / fatigue effect. Importantly, at the end of day 1 the RT advantage for the two sets of reoccurring regularities did not differ (block seven vs. block 8: t(28) = 1.721, p = 0.096]. The RT advantage for the second set was maintained when tested after 24 hr (RT advantage of last block of day one vs. after 24 hr: t(28) = −0.277, p = 0.784), and did not differ from that of the first set [RT advantage after 24 hr for RANREGr1 vs. RANREGr2 t(28) = 1.848, p = 0.075].
 
-## Experiment 4: Implicit memory is robust to pattern phase shifts
+### Experiment 4: Implicit memory is robust to pattern phase shifts
 
 In all the previous experiments reoccurring regularities were always presented at the same phase of the REG cycle. Here we asked whether the resulting memory trace was anchored to this fixed boundary – that is, whether listeners remembered the pattern as a specific ‘chunk’ (Dehaene et al., 2015; Thiessen, 2017). If so, the RT advantage should reduce when REGr are phase shifted.
 
 Listeners were presented with six reoccurring regularities (REGr) over three blocks. In block 4, identical REGr were presented but each presentation was with a shifted onset relative to the originally presented pattern (see Figure 7A, and Materials and methods).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/56073/elife-56073-fig7-v2.jpg)
+
+**Figure 7.:** (A) In this experiment, six different reoccurring regularities (REGr) per participant were presented. In block 4 (yellow shading in C), these patterns were replaced by versions with shifted onset relative to the originally learned REGr. Two examples of phase shifted REGr and their original REGr version are depicted. The solid red line indicates the transition between RAN and REG (the onset of the regular pattern); the dashed red line denotes one cycle (20 tones) (B) d’ across all blocks. Error bars indicate 1 s.e.m. (C) RT to the transition from RAN to REG pattern across blocks for RANREG and RANREGr.﻿ The bottom plot represents the RT advantage observed in blocks 3 and 4. Error bars indicate 1 s.e.m. Figure 7—figure supplement 1 plots the RT advantage for each intra-block presentation. (D) The individual RT advantage in block three compared with block 4. Each circle represents an individual participant. (E) Plotted is the relationship between RTs to RANREG and RANREGr in block 4. Each circle represents a unique REGr pattern (six per participant), plotted against the mean RT to RANREG for that participant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56073/elife-56073-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Plotted values correspond to the RT advantage of the 6 REGr for each intra-block presentation. RTs of 1st, 2nd or 3rd intra-block presentations were averaged across the different 6 REGr, and RTs to novel REG were averaged across trials which occurred at the beginning (first third), middle or end of each block. The RT advantage was preserved after the introduction of a REGr phase shift. Note that this analysis is based on a small number of trials per ‘intra-block’ presentation condition, and effects are therefore noisy. Error bars indicate 1 s.e.m.
 
 Figure 7C shows the progressive emergence of the RT advantage associated with the memorization of the reoccurring patterns [main effect of condition: F(1, 19) = 21.12, p < 0.001, ηp2 = .53; main effect of block: F(3, 57) = 18.52, p < 0.001, ηp2 = .49; condition by block interaction: F(3, 57) = 10.64, p < 0.001, ηp2 = .36]. Specifically, whilst in the first block performance did not differ between RANREG and RANREGr [t(19) = −0.876, p = 1], a faster RT to the RANREGr condition developed across ensuing blocks. This effect continued into block 4, where phase-shifting was introduced (Figure 7C bottom plot). The RT advantage for phase-shifted RANREGr (167 ms – 3.35 tones) in block 4 was greater than the RT advantage in block 3 (100 ms; 2 tones) [block three vs. block 4: t(19) = −13.111, p < 0.001] in the majority of participants (Figure 7D), demonstrating a strengthening (rather than disappearing) memory effect. The immediate robustness to phase shifting was confirmed by comparing the RT advantage in the first intra-block presentation in block 4, to that in the third (last) intra-block presentation in block 3 (Figure 7—figure supplement 1). No significant difference was observed [t(19) = 1.069, p = 0.298], supporting the conclusion that the RT advantage persisted despite phase shifting.
 
@@ -150,7 +235,7 @@ These results suggest that sequences are not represented as a fixed chunk of seq
 
 As a further probe into the nature of the representation of the pattern in memory, in Experiment S3 (Appendix 1—figure 3) we investigated listeners’ tolerance to small frequency transpositions. We reveal a transfer of the RT advantage to the transposed pattern, suggesting that the formed representation is not of an exact echoic nature. It is possible that tolerance to frequency transposition reflects a ‘fuzzy’ spectral representation, although we note that the spacing in the present pool – 12% – is generally larger than the just noticeable difference (JND) for frequency typically exhibited by non-musically trained listeners (Tervaniemi et al., 2005). Alternatively, the tolerance to transposition may suggest that instead of the specific frequency pattern, the auditory system maintains a representation of the contour, or inter-tone interval within the pattern.
 
-## Experiment 5: Implicit memory can form when sounds are behaviourally irrelevant, but does not immediately transfer to behaviour
+### Experiment 5: Implicit memory can form when sounds are behaviourally irrelevant, but does not immediately transfer to behaviour
 
 We asked whether memories for reoccurring patterns are formed when sequences are not behaviourally relevant. Naïve participants were exposed to three blocks of the same kind as in Exp. 1A, but instructed to detect the STEP changes only, and ignore the other sounds. In the fourth block (‘test’ block), they were instructed to also detect the RANREG transitions.
 
@@ -168,7 +253,7 @@ Overall, these results demonstrate that implicit memory was not present at the o
 
 Explicit memory was poor (mean MCC = 0.064) and did not correlate with the RT advantage measured in the test block [Spearman’s Rho = 0.235; p = 0.347].
 
-## Across-experiment analysis reveals that most patterns are remembered and most participants exhibit implicit memory
+### Across-experiment analysis reveals that most patterns are remembered and most participants exhibit implicit memory
 
 We quantified the robustness of the memory effect for reoccurring patterns across the different experiments reported here. Figure 9A shows the distribution of RTs for RANREG vs. RANREGr pooled from block three data, (i.e. after nine presentations of each REGr; approx. 25 min of listening) where most data from different experiments were available (the pilot experiment, Experiment 1A, 1B, 3, 4, S1, and S3). In Figure 9B each dot represents the mean RT for RANREG vs. RANREGr of an individual participant (N = 147). 88.4% of participants exhibited an RT advantage, which we interpret as revealing implicit memory for REGr.
 
@@ -186,7 +271,7 @@ We used rapid sequences of discrete sounds (Barascud et al., 2016; Southwell et 
 
 Overall the results reveal the brain’s remarkable capacity to implicitly preserve arbitrary sequential information in long-term memory.
 
-## Relationship to ‘noise memory’
+### Relationship to ‘noise memory’
 
 The general behavioural pattern revealed here is reminiscent of the ‘noise memory’ effect first shown by Agus et al., 2010 (see also Agus and Pressnitzer, 2013; Andrillon et al., 2015; Gold et al., 2014; Keller and Sekuler, 2015; Luo et al., 2013). In that study naïve listeners readily remembered reoccurring white-noise snippets presented amongst novel noise bursts. The learning was unsupervised, rapid, implicit and lasted upwards of 2 weeks.
 
@@ -196,7 +281,7 @@ In contrast, here we focus on fast memory formation for sequences of discrete to
 
 An important question for future work will be to determine whether these effects draw on similar or distinct neural systems (discussed further below).
 
-## Memory for auditory sequences
+### Memory for auditory sequences
 
 Signals based on tone-pip patterns have long been used to understand the effect of auditory memory on listeners’ perception of sound sequences (e.g. Watson et al., 1975; Atienza and Cantero, 2001; Näätänen et al., 1993; Schröger et al., 1992; Tervaniemi et al., 2001; Moldwin et al., 2017). However, these paradigms are predominantly based on extensive exposure (in the order of hundreds of consecutive repetitions) to a single pattern.
 
@@ -212,13 +297,13 @@ Overall, we demonstrate that the brain is tuned to retain repeated structure in 
 
 Preserving as much information as possible from the unfolding sensory input is important for an organism because the relevance of any single event is not always immediately apparent, but is rather inferred post-hoc, e.g., through repetition (“I’ve heard this exact pattern twice within 3 min, therefore it might reflect an individual sound source rather than random noise in the forest"; e.g., McDermott et al., 2011; Woods and McDermott, 2018). Our results hint at the heuristics utilized by the brain in determining how representations of statistical structure in the sensory environment are converted from transient to stable forms of memories (Leimer et al., 2018; Li and van Rossum, 2020).
 
-## Reaction time as a measure of memory formation
+### Reaction time as a measure of memory formation
 
 We used reaction time (RT) as a proxy for memory formation. RT allowed us to determine how much information was required for listeners to detect repeating (REG) structure and to compare these measures with formal models of sequence processing. We hypothesized that reoccurrence would increase the weight of sequence components in memory resulting in faster detection of regularity. RT thus provided a sensitive means for tracking the formation and maintenance of such memories over time.
 
 We observed that the RT to REGr steadily shortened with increasing number of reoccurrences, allowing us to measure the dynamics of memory trace establishment. The ‘RT advantage’, defined as the difference in RT between novel and reoccurring REG patterns, grew rapidly over the first three blocks (9 reoccurrences) and then stabilized, though evidence from Figure 9D suggests a continuous slow growth throughout the experimental session. The absence of correlation between the familiarity test and the RT advantage suggests a dissociation between implicit memory and explicit recall abilities.
 
-## Time scales of memory for sequences
+### Time scales of memory for sequences
 
 The basic behavioural task required participants to detect the transitions from RAN to REG – namely the emergence of repeating structure. As such it fundamentally relied on auditory short-term memory: in order to detect REG patterns, the listener must compare incoming tones to those that occurred at least a cycle ago. The effect of reoccurrence suggested that listeners also draw on much longer-term memory whereby information about previously encountered sounds is retained over minutes between successive REGr presentations.
 
@@ -232,7 +317,7 @@ Agus et al. proposed that mechanisms based on spike-timing-dependent plasticity 
 
 On a systems level, accumulating evidence suggests that an interaction between auditory cortex and the hippocampus may play a role in memory formation. Previous work has implicated the hippocampus in sensitivity to sensory patterns across rapid time scales (Aly et al., 2013; Stachenfeld et al., 2017; Yonelinas, 2013) and specifically in the process of discovering RAN-REG transitions (Barascud et al., 2016). There is also some evidence that hints at its possible role in supporting long-term memory for acoustic patterns (Kumar et al., 2014).
 
-## What is being remembered?
+### What is being remembered?
 
 The RT advantage to REGr reflects an implicit memory of sequential structure (Exp. 1B). But what, specifically, is remembered? Clearly participants did not perfectly memorize the full pattern, in that this would have been associated with much faster RTs (e.g. as exhibited by the observer with unconstrained memory, Figure 5A). Instead, by the end of block 3, the distribution of RT to REGr shifted leftwards by about four tones, without otherwise changing (Figure 9A). Modelling suggests that this performance is consistent with a statistical-learning effect whereby the participants retained imperfect memory of patterns presented earlier in the experiment. These memories are not strong enough to prompt immediate recognition of a pattern heard in a past trial, but they are sufficiently strong to speed the recognition of that pattern once it begins repeating in the new trial.
 
@@ -240,7 +325,7 @@ Similar to other models of statistical learning (Bröker et al., 2018; Harrison 
 
 A related question pertains to the generalizability of the present model to natural sounds beyond quantized sequences, such as those used here. In order to relate listeners’ performance to a measure of statistical information within unfolding signals, simplifying assumptions are necessary. This includes the presence of a prior stage of category formation which converts a continuous sound into discrete units that form the model’s ‘alphabet’. Accumulating evidence is indeed revealing that unsupervised segmentation of unfolding sounds into basic elements, perhaps using envelope-based cues, may be an inherent feature of listening (Ding et al., 2017; Doelling et al., 2014; Hickok and Poeppel, 2007; Poeppel, 2003).
 
-## Does sequence memory require attention?
+### Does sequence memory require attention?
 
 The short-term memory mechanisms which allow listeners to discover the emergence of repeating structure (RANREG) in rapid tone sequences have been demonstrated to operate automatically, even when listeners’ attention is directed away from sound: brain activity recorded from naïve, distracted listeners reveals robust responses to RAN-REG transitions with latencies consistent with those expected from an ideal observer (Barascud et al., 2016; Southwell et al., 2017; Southwell and Chait, 2018).
 
@@ -248,13 +333,13 @@ In contrast, in Exp. 5, we demonstrated that longer term memory trace formation 
 
 Importantly, we showed that though implicit memory was not present at the onset of the test block, learning occurred more rapidly in the pre-exposed listeners, hinting at the presence of pre-exposure-related latent traces that may contribute to faster instantiation of representations in memory once the sequences become behaviourally relevant (Frankland et al., 2019).
 
-## Conclusion
+### Conclusion
 
 Uncovering how memory traces are encoded and preserved by the brain is crucial for understanding subsequent learning operations which drive pattern recognition and generalization. We showed that representations of sporadically reoccurring rapid sound patterns are retained in memory, thus facilitating detection when previously encountered patterns reoccur. In spite of the fact that the patterns were relatively featureless and undistinctive compared to real-world stimuli, this memory was robust, implicit, remarkably resistant to interruption, and persisted over long durations, revealing human listeners’ astonishing sensitivity to reoccurring structure in the auditory environment. Important questions for future work include understanding the neurobiological foundations of these behavioural effects, the limits on the capacity of the memory store(s) involved and the factors which might affect subsequent forgetting.
 
 ## Materials and methods
 
-## Stimuli
+### Stimuli
 
 Stimuli were sequences of 50 ms tone-pips of different frequencies generated at a sampling rate of 44.1 kHz and gated on and off with 5 ms raised cosine ramps; the total sequence duration was 7 s (140 tones). Frequencies were drawn from a pool of twenty values logarithmically spaced between 222 and 2000 Hz; 12% steps. The order in which these frequencies were successively distributed defined different conditions that were otherwise identical in their spectral and timing profiles (see Figure 1). RAN sequences consisted of tone-pips arranged in random order, with the constraint that adjacent tones were not of the same frequency. Each frequency occurred equiprobably across the sequence duration. The RANREG condition contained a transition between a random (RAN), and a regularly repeating pattern (REG): sequences with initially randomly ordered tones changed into regularly repeating cycles of 20 frequencies (an overall cycle duration of 1000 ms; new on each trial). The change occurred between 3000 and 4000 ms after sequence onset such that each RANREG sequence contained between 3 to 4 REG cycles (only two in Exp. 2, see below). RAN and RANREG conditions were generated anew for each trial and occurred equiprobably. Thus, each trial contained exactly the same frequency ‘building blocks’, with the same overall distribution, and only varied in the specific order of tone-pips. The inter-trial interval was jittered between 1400 and 1800 ms.
 
@@ -264,11 +349,11 @@ Two control conditions were also included within each block: sequences of tones 
 
 Participants were instructed to respond, by pressing a keyboard button, as soon as possible after detecting a RANREG transition. Feedback about response accuracy and speed was delivered at the end of each trial. Since RT is a key performance measure in these experiments, it was important to motivate the participants to respond as quickly as possible. The feedback was given based on our previous work (Barascud et al., 2016), and consisted of a green circle if the response fell within 2200 ms from the regularity onset in the RANREG conditions, or within 300 ms from the change of tone in the STEP condition. For slower RTs, an orange circle (between 2200 and 2600 ms in the RANREG conditions, and between 300 and 600 ms in the STEP condition) or a red circle were displayed. It was explained to participants that they should strive to obtain as much ‘green’ or ‘orange’ feedback as possible. The experimental session was delivered in ~8 min blocks, separated by brief breaks. Stimuli were presented with PsychToolBox in MATLAB (9.2.0, R2017a) in an acoustically shielded room and at a comfortable listening level (self-adjusted by each listener).
 
-## Participant numbers
+### Participant numbers
 
 We initially ran a pilot experiment (N = 20, 16 females, age 23.5 ± 2.95 years) which consisted of five consecutive blocks as in Exp. 1A. The effect size for the main effect of condition (RANREG vs. RANREGr) was ηp2 = .48 and ηp2 = .79 after the first 3 and 5 blocks respectively. Using ηp2 = 0.48 for a prospective power calculation (beta = 0.8; alpha = 0.05) yielded a required sample size of N = 13. We decided to increase our sample size up to N = 20 to account for possible drop outs due to low accuracy. The research ethics committee of University College London approved the experiment [Project ID Number]: 1490/009, and written informed consent was obtained from each participant.
 
-## Experiment 1a
+### Experiment 1a
 
 The transition detection task was performed in three sessions: five blocks on day one (‘day1’), one block after 24 hr (‘24 hr’) and another block after 7 weeks (‘7 w’). Each block consisted of 60 stimuli (~8 min duration; 3 RANREGr x three reoccurrences per block, 18 RANREG, 27 RAN, 3 STEP, and 3 CONT). Feedback about the response accuracy and speed was delivered after each trial. Before starting, a short training block of 12 trials (with the same conditions as in the main experiment, but no RANREGr) was performed to acquaint participants with the task.
 
@@ -276,13 +361,13 @@ The familiarity task was performed at the end of each session (day1, 24 hr, 7 w)
 
 Participants. Twenty paid individuals (ten females; average age, 24.4 ± 3.03 years) took part in the experiment. Because of poor accuracy (d’ < 2 after the first block), one participant was excluded from the analysis. We were able to test only 14 participants after 7 weeks (eight females; average age, 24.7 ± 3.02 years). No participant reported hearing difficulties.
 
-## Experiment 1b
+### Experiment 1b
 
 Participants performed the transition detection task for six consecutive blocks consisting of the same set of stimuli described for Exp. 1A. In the 5th block, each REGr was time reversed.
 
 Participants. Twenty paid individuals (13 females; average age = 24.25 ± 3.58 years) took part in the experiment. No participant reported hearing difficulties.
 
-## Experiment 2
+### Experiment 2
 
 The stimulus set in the initial four blocks contained RANREG and RANREGr stimuli, as before, except they contained only two repeating cycles after the transition. To understand whether immediate repetition is necessary for memory to be formed two further conditions were used: PATinRAN stimuli contained two identical 20 tone patterns embedded amongst random tones (mean separation of 1.7 s; drawn randomly from a range. 5–2.9; the second appearance always occurred at the end of the sequence as shown in Figure 3A). Similar to REGr, three different PAT were designated as reoccurring across trials (different for each participant; three reoccurrences per block). The embedding RAN sequence and the spacing between the two PAT patterns were randomly set for each reoccurrence. Overall each block contained 82 stimuli (36 RAN, 9 RANREG, 9 RANREGr, 9 PATinRAN, 9 PATinRANr, 5 STEP, 5 CONT), with ISI between 2.4 and 2.8 s. Reoccurrences of RANREGr and PATinRANr occurred approximately every 3.6 min.
 
@@ -292,25 +377,25 @@ In order to quantify any memory effects, in the 5th block (‘test’ block) eac
 
 Participants. Given the task complexity and expectation for a reduced SNR, we increased the number of participants, a-priori, by 50% relative to the previous experiment. Thirty paid individuals (twenty females; average age, 24.26 ± 3.8 years) took part in the experiment. No participants reported hearing difficulties.
 
-## Experiment 3
+### Experiment 3
 
 This experiment consisted of two days of testing. On the first day participants performed a transition detection task as in Exp. 1A, but two different sets of reoccurring patterns (REGr1 and REGr2; three different patterns each) were presented. REGr1 was presented over the first three blocks, and REGr2 over the subsequent three blocks. On day 2 (after 24 hr), participants returned to the lab to perform two test blocks for the two sets of reoccurring regularities, REGr1 and REGr2 (order counterbalanced across participants).
 
 Participants. We initially ran 20 participants (one excluded from analysis), but decided to run an additional 10 participants (+two excluded), to increase the SNR for the memory effects observed for the RANREGr1 and RANREGr2 conditions on day two. The results with N = 19 yielded qualitatively similar results (see Figure 6—figure supplement 1B). Thirty-two paid individuals (twenty females; average age, 24.5 ± 3.8 years) took part in the experiment. No participant reported hearing difficulties. ﻿Because of poor accuracy (d’ < 2 after the first block), three participants were excluded from the analysis.
 
-## Experiment 4
+### Experiment 4
 
 Participants performed the detection task through four consecutive blocks of 82 stimuli each. The stimulus set included the same conditions as described for Exp. 1A, but with six, instead of three, REGr sequences, each presented three times within a block (6 RANREGr x three reoccurrences per block, 18 RANREG, 36 RAN, 5 STEP, and 5 CONT). In block 4, REGr were phase shifted (see examples in Figure 7A). To ensure uniform sampling of possible phase shifts, for each REGr in block 4, each of the three intra-block presentations was subject to pattern phase shift of 2 to 7, 8 to 13, or 14 to 19 tones from the onset of the original pattern. The phase shift was determined independently for each REGr and each intra-block presentation. Stimulus duration was 6.5 s, and the transition time was between 3 and 3.5 s from the sequence onset. Different REGr patterns reoccurred sparsely (every ~3.4 min) across trials and blocks.
 
 Participants. Twenty paid individuals (fourteen females; average age, 23.5 ± 3.2 years) took part in the experiment. No participant reported hearing difficulties.
 
-## Experiment 5
+### Experiment 5
 
 The experiment consisted of four blocks. The stimulus structure was as in Exp. 1A, except that for the first three blocks participants were instructed to respond to STEP changes only. They received no explanation about the regularity structure of the stimuli, and performed no practice. On the fourth block, they were instructed to detect RANREG transitions in addition to STEP transitions. Each block contained 72 stimuli (3 RANREGr x three reoccurrences per block, 18 RANREG, 27 RAN, 9 STEP, and 9 CONT; ISI between 900 and 1300); the number of STEP and CONT trials was increased relative to that in Experiment 1A due to the task change. As in Exp. 1A, participants performed the familiarity task at the end of the session.
 
 Participants. Nineteen paid individuals (14 females; average age, 23.4 ± 3.1 years) took part in the experiment. No participant reported hearing difficulties. One participant was excluded from the analysis ﻿because of poor accuracy (d’ < 1).
 
-## Statistical analysis
+### Statistical analysis
 
 In the transition detection task, two indexes of performance were computed: sensitivity (d’) and reaction time (RT).
 
@@ -324,11 +409,11 @@ Performance was statistically tested with linear analyses of variance (ANOVA) im
 
 As a benchmark (see Figure 9D) across which to compare the effect of various manipulations on the RT advantage (i.e., Figure 8D, Appendix 1—figure 2C-G), we pooled data from several experiments to obtain a distribution of RT advantage values after each block: Pooled data-block1, Pooled data-block2, Pooled data-block3 were formed by pooling block 1, 2 or 3 data, respectively, from Experiments 1A, 1B, 3, 4, S1, S3, and pilot experiment identical to Exp. 1 (total N = 147). Pooled data-block4 was formed by pooling block four data from Experiments 1A, 1B, S1, S3 and the pilot (total N = 98), and Pooled data-block5 by pooling block 5 from Experiments 1A, S1 and the pilot (total N = 58). To obtain distributions of expected RT advantage values, data in each set were subjected to bootstrap resampling (1000 iterations) where, on each iteration, N random participants (N = number of participants in the experiment under examination) were drawn from the full pool, and their mean RT advantage (RANREG- RANREGr) was computed. This procedure yielded a distribution to which the actual data from the experiment under examination were compared. The p values provided (i.e., Figure 8D, Appendix 1—figure 2C-G) reflect the probability of the measured RT advantage (red dots in the relevant figures) relative to the benchmark distribution.
 
-## Analysis of the familiarity task
+### Analysis of the familiarity task
 
-The familiarity measurement required participants to categorize the presented patterns into ‘familiar’ (REGr) or ‘new’ (REG). Each REGr was presented once only, to avoid learning during the testing session and hence the ‘familiar’ category included only three items (six in Exp. S1, see Appendix1). These were presented among a larger set of foils (18 in Exp. 1A and Exp. 5, 36 in Exp. S1). Due to the small number of REGr, standard signal detection approaches are not useable. Instead, we computed the MCC score, which is a measure of the quality of a binary classification, applicable even when classes are of different sizes (Boughorbel et al., 2017; Powers, 2007). The coefficient ranges between 1 (perfect classification) to −1 (total misclassification) and is calculated using the following formula: MCC=TP×TN-FP×FNTP+FPTP+FNTN+FPTN+FN2. Where TP = number of true positives; TN = number of true negatives; FP = number of false positives; FN = number of false negatives. The MCC scores obtained for each participant in Exp. 1A are shown in Figure 2—figure supplement 2.
+The familiarity measurement required participants to categorize the presented patterns into ‘familiar’ (REGr) or ‘new’ (REG). Each REGr was presented once only, to avoid learning during the testing session and hence the ‘familiar’ category included only three items (six in Exp. S1, see Appendix1). These were presented among a larger set of foils (18 in Exp. 1A and Exp. 5, 36 in Exp. S1). Due to the small number of REGr, standard signal detection approaches are not useable. Instead, we computed the MCC score, which is a measure of the quality of a binary classification, applicable even when classes are of different sizes (Boughorbel et al., 2017; Powers, 2007). The coefficient ranges between 1 (perfect classification) to −1 (total misclassification) and is calculated using the following formula: $MCC=\frac{TP\timesTN-FP\timesFN}{\sqrt[2]{TP+FPTP+FNTN+FPTN+FN}}$. Where TP = number of true positives; TN = number of true negatives; FP = number of false positives; FN = number of false negatives. The MCC scores obtained for each participant in Exp. 1A are shown in Figure 2—figure supplement 2.
 
-## PPM-decay model
+### PPM-decay model
 
 Prediction by Partial Matching (PPM) is a Markov modelling technique (Cleary and Witten, 1984) that models statistical structure within symbolic sequences by tabulating occurrences of n-grams within a training dataset. PPM is a variable-order Markov model, meaning that it generates predictions by combining n-gram models of different orders; here we use a model combination technique called ‘interpolated smoothing’ (Bunton, 1996; Bunton, 1997; see also Pearce and Wiggins, 2004; Harrison et al., 2020; for more details). This approach combines the advantages of both the structural specificity afforded by high-order n-gram predictions and the statistical reliability afforded by low-order n-gram predictions.
 

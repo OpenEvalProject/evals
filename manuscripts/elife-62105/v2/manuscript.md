@@ -38,7 +38,7 @@ Surprisingly, new antigenic variants are rarely observed in human seasonal influ
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig1-v2.jpg)
 
-**Figure 1.:** (A, B) meta-analysis of A/H3N2 viruses from next-generation sequencing studies of naturally-infected individuals (Debbink et al., 2017; McCrone et al., 2018). (A) Fraction of infections with one or more observed amino acid polymorphisms in the hemagglutinin (HA) protein, stratified by likelihood of affecting antigenicity: infections with a substitution in the ‘antigenic ridge’ of 7 key amino acid positions found by Koel et al., 2013 in red, infections with a substitution in a classically-defined ‘antigenic site’, (Wiley et al., 1981) in blue, infections with HA substitutions only in non-antigenic regions in gray, infections with no HA substitutions in cream. Infections grouped by whether individuals had been (left) vaccinated in a year that the vaccine matched the circulating strain, (center) vaccinated in a year that the vaccine did not match the circulating strain, or (right) not vaccinated. (B) Distribution of plotted polymorphic sites from (A) by within-host frequency of the minor variant. (C, D) heatmaps showing model probability of new antigenic variant selection to the NGS detection threshold of 1% (C) and to 50% (D) by 3 days post infection given the strength of immune selection , the antibody response time δ and a founding population composed of old variant virions. Probabilities calculated from tMEquation 27 in the Materials and methods. Calculated with , but for cw=1,cm=0, replication selection probabilities are approximately equal for all tM>1 trios that yield a given cw,cm,k (see Materials and methods). Star denotes a plausible influenza-like parameter regime: 25% escape from sterilizing-strength immunity (δ) with a recall response at 2.5 days post infection. Black lines are probability contours. (cw=1,cm=0.75,k=20E–H) example model trajectories. Upper row: absolute counts of virions and target cells. Lower row: variant frequencies for old antigenic variant (blue) and new variant (red). Dashed line shows 1% frequency, the detection limit of NGS. Dotted line shows an analytical prediction for new variant frequency according to Equations 15 and 16 (see Materials and methods). Model scenarios: (E) naive; (F) experienced with ; (tM=0G) experienced with ; (tM=2H) experienced with  and new antigenic variant virion incoulated. Lines faded when infection is below 5% transmission probability—approximately 10tM=27 virions with default parameters. All parameters as in Table 1 unless otherwise stated.
+**Figure 1.:** (A, B) meta-analysis of A/H3N2 viruses from next-generation sequencing studies of naturally-infected individuals (Debbink et al., 2017; McCrone et al., 2018). (A) Fraction of infections with one or more observed amino acid polymorphisms in the hemagglutinin (HA) protein, stratified by likelihood of affecting antigenicity: infections with a substitution in the ‘antigenic ridge’ of 7 key amino acid positions found by Koel et al., 2013 in red, infections with a substitution in a classically-defined ‘antigenic site’, (Wiley et al., 1981) in blue, infections with HA substitutions only in non-antigenic regions in gray, infections with no HA substitutions in cream. Infections grouped by whether individuals had been (left) vaccinated in a year that the vaccine matched the circulating strain, (center) vaccinated in a year that the vaccine did not match the circulating strain, or (right) not vaccinated. (B) Distribution of plotted polymorphic sites from (A) by within-host frequency of the minor variant. (C, D) heatmaps showing model probability of new antigenic variant selection to the NGS detection threshold of 1% (C) and to 50% (D) by 3 days post infection given the strength of immune selection $\delta$, the antibody response time $t_{M}$ and a founding population composed of old variant virions. Probabilities calculated from Equation 27 in the Materials and methods. Calculated with $c_{w}=1,c_{m}=0$, but for $t_{M}>1$, replication selection probabilities are approximately equal for all $c_{w},c_{m},k$ trios that yield a given $\delta$ (see Materials and methods). Star denotes a plausible influenza-like parameter regime: 25% escape from sterilizing-strength immunity ($c_{w}=1,c_{m}=0.75,k=20$) with a recall response at 2.5 days post infection. Black lines are probability contours. (E–H) example model trajectories. Upper row: absolute counts of virions and target cells. Lower row: variant frequencies for old antigenic variant (blue) and new variant (red). Dashed line shows 1% frequency, the detection limit of NGS. Dotted line shows an analytical prediction for new variant frequency according to Equations 15 and 16 (see Materials and methods). Model scenarios: (E) naive; (F) experienced with $t_{M}=0$; (G) experienced with $t_{M}=2$; (H) experienced with $t_{M}=2$ and new antigenic variant virion incoulated. Lines faded when infection is below 5% transmission probability—approximately 107 virions with default parameters. All parameters as in Table 1 unless otherwise stated.
 
 We hypothesized that influenza virus antigenic evolution is limited by asynchrony between virus diversity and antibody-mediated selection pressure. Antibody immunity at the point of transmission in previously-infected or vaccinated individuals should reduce the initial probability of reinfection (Le Sage et al., 2020); secretory IgA antibodies on mucosal surfaces (sIgA) are likely to play a large role (Wang et al., 2017, see Appendix Section A2). But if viruses are not blocked at the point of transmission and successfully infect host cells, an antibody-mediated recall response takes multiple days to mount (Coro et al., 2006; Lam and Baumgarth, 2019, see detailed review in Appendix Section A2). Virus titer—and virus shedding (Lau et al., 2010)—may peak before the production of new antibodies has even begun, leaving limited opportunity for within-host immune selection. If immune selection pressure is strong at the point of transmission but weak during virus exponential growth, new antigenic variants could spread rapidly at the population level without being readily selected during the timecourse of a single infection. Moreover, prior work has established tight population bottlenecks at the point of influenza virus transmission (McCrone et al., 2018; Xue and Bloom, 2019). With a tight transmission bottleneck and weak selection during virus exponential growth, antigenic diversity generated during any particular infection will most likely be lost, slowing the accumulation of population-level antigenic diversity.
 
@@ -46,21 +46,193 @@ We used a mathematical model to investigate our hypothesis that realistically-ti
 
 Our modeling results suggest a plausible mechanism that can explain otherwise poorly-reconciled empirical patterns, and should motivate further experimental investigation of the mechanisms of immune protection and natural selection on influenza virus antigenic phenotypes at the point of transmission.
 
-## Model overview
+### Model overview
 
 Our model reflects the following biological realities: (1) Seasonal influenza virus infections of otherwise healthy individuals typically last 5–7 days (Suess et al., 2012); (2) In influenza virus-naive individuals, it can take up to 7 days for anti-influenza virus antibodies to start being produced (Wrammert et al., 2008), effectively resulting in no selection (Figure 1A); (3) In previously infected (‘experienced’) individuals, sIgA antibodies can neutralize inoculated virions before they can infect host cells; (Wang et al., 2017) (4) However, if an inoculated virion manages to cause an infection in an experienced individual, it takes 2–5 days for the infected host to mount a recall adaptive immune response, including producing new antibodies (Coro et al., 2006; Zuccarino-Catania et al., 2014) (see Appendix Section A2 for further discussion of motivating immunology). Importantly, this contrasts with previous within-host models of virus evolution, which have assumed that antibody-mediated neutralization of virions during virus replication is strong from the point of inoculation onward and is the mechanism of protection against reinfection (Luo et al., 2012; Volkov et al., 2010). It also reflects new animal model evidence of sterilizing antibody immunity (Le Sage et al., 2020). We discuss existing models and hypotheses for the rarity of population-level influenza antigenic variation in Appendix Section A7.
 
-Our model can be parameterized to reflect different hypothesized immune mechanisms, different host immune statuses, and different durations of infection. In the model, virions Vi of antigenic type i infect target cells C, replicate, mutate to a new antigenic type j at a rate μi⁢j, and decay at a rate dv. We model the innate immune response implicitly as depletion of infectible cells. We model the antibody-mediated immune response as an increase k in the virion decay rate in the presence of well-matched antibodies. To model partial antibody cross reactivity, we scale k by a parameter ci∈[0,1]; ci reflects the binding strength of the host’s best-matched antibodies to antigenic type i. So in the presence of an antibody response, virions Vi of type i decay at a rate dv+ci⁢k.
+Our model can be parameterized to reflect different hypothesized immune mechanisms, different host immune statuses, and different durations of infection. In the model, virions $V_{i}$ of antigenic type i infect target cells $C$, replicate, mutate to a new antigenic type j at a rate $\mu_{i⁢j}$, and decay at a rate dv. We model the innate immune response implicitly as depletion of infectible cells. We model the antibody-mediated immune response as an increase k in the virion decay rate in the presence of well-matched antibodies. To model partial antibody cross reactivity, we scale k by a parameter $c_{i}\in[0,1]$; ci reflects the binding strength of the host’s best-matched antibodies to antigenic type i. So in the presence of an antibody response, virions $V_{i}$ of type i decay at a rate $d_{v}+c_{i}⁢k$.
 
-The model can accommodate Nv antigenic variants i=1,2,…⁢Nv linked by an arbitrary network of possible substitutions and corresponding mutation probabilities μi⁢j, but in practice we typically consider two, the new variant m and the old variant w, and neglect back-mutation from new variant to old variant (μw⁢m>0, but μm⁢w=0).
+The model can accommodate $N_{v}$ antigenic variants $i=1,2,…⁢N_{v}$ linked by an arbitrary network of possible substitutions and corresponding mutation probabilities $\mu_{i⁢j}$, but in practice we typically consider two, the new variant m and the old variant w, and neglect back-mutation from new variant to old variant ($\mu_{w⁢m}>0$, but $\mu_{m⁢w}=0$).
 
 To assess the importance of transmission bottlenecks, initial virus diversity, and sIgA antibody neutralization in virus evolution, we model the point of transmission as a series of stochastic events which may ultimately lead to one of more virions invading cells and initiating an infection. The recipient host is inoculated with a random sample of within-host virus diversity from the transmitting host. In experienced hosts, this inoculum is probabilistically thinned by host antibodies. The founding population that initiates the infection is then randomly sampled from among any remaining virions.
 
-Mathematically, we model the number of inoculated virions as Poisson-distributed with a mean v, so if variant i has frequency fi within the transmitting host, the number of variant i virions inoculated is Poisson-distributed with mean v⁢fi. The virions then encounter antibodies, which we interpret as sIgA but can be understood to be any antigen-specific antibody-mediated protection that precedes cell infection; each virion of variant i is independently neutralized with a probability κi. This probability depends upon the strength of protection against homotypic reinfection κ and the sIgA cross immunity between variants σi⁢j, (0≤σi⁢j≤1). So if a host with antibodies to variant j is challenged with variant i, those virions will be neutralized with a probability κi=κ⁢σi⁢j. For simplicity, we assume the same homotypic protection level across all variants and hosts, though in practice there may be variation in the immunogenicity of individual variants and in the strength of responses generated by individual hosts. We typically fix host immune histories to test the effect of host immune history on selective dynamics. When necessary, we can model a novel (non-recall) antibody response to a strain i by designating the host as experienced to i at some time tNi post-infection (see Materials and methods).
+Mathematically, we model the number of inoculated virions as Poisson-distributed with a mean v, so if variant i has frequency fi within the transmitting host, the number of variant i virions inoculated is Poisson-distributed with mean $v⁢f_{i}$. The virions then encounter antibodies, which we interpret as sIgA but can be understood to be any antigen-specific antibody-mediated protection that precedes cell infection; each virion of variant i is independently neutralized with a probability $κ_{i}$. This probability depends upon the strength of protection against homotypic reinfection $κ$ and the sIgA cross immunity between variants $\sigma_{i⁢j}$, ($0\leq\sigma_{i⁢j}\leq1$). So if a host with antibodies to variant j is challenged with variant i, those virions will be neutralized with a probability $κ_{i}=κ⁢\sigma_{i⁢j}$. For simplicity, we assume the same homotypic protection level across all variants and hosts, though in practice there may be variation in the immunogenicity of individual variants and in the strength of responses generated by individual hosts. We typically fix host immune histories to test the effect of host immune history on selective dynamics. When necessary, we can model a novel (non-recall) antibody response to a strain i by designating the host as experienced to i at some time $t_{N}^{i}$ post-infection (see Materials and methods).
 
 The model is continuous-time and stochastic: cell infection, virion production, virus mutation, and virion decay are stochastic events that occur at rates governed by the current state of the system, with exponentially distributed (memoryless) waiting times. The system is approximately well-mixed: we track counts of virions and cells without an explicit account of space within the upper respiratory tract. We treat infected and dead or removed cells implicitly.
 
 Parameterized as in Table 1, the model captures key features of influenza infections: rapid peaks approximately 2 days post-infection and slower declines with clearance approximately a week post-infection, with faster clearance in experienced hosts.
+
+**Table 1.**
+ Model parameters, default values, and sources/justifications.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Meaning</th>
+      <th>Units</th>
+      <th>Value</th>
+      <th>Source or justification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tM</td>
+      <td>time post-infection of antibody response in experienced hosts</td>
+      <td>days</td>
+      <td>2</td>
+      <td>literature (see review in Appendix Section A2)</td>
+    </tr>
+    <tr>
+      <td>tNw</td>
+      <td>time post-infection of a novel immune response to the old antigenic variant</td>
+      <td>days</td>
+      <td>6</td>
+      <td>literature (see review in Appendix Section A2)</td>
+    </tr>
+    <tr>
+      <td>pC</td>
+      <td>per-capita growth rate of target cells at low density</td>
+      <td>1days</td>
+      <td>0</td>
+      <td>ignored on the timescale of a single infection</td>
+    </tr>
+    <tr>
+      <td>Cmax</td>
+      <td>maximum number of target cells</td>
+      <td>cells</td>
+      <td>4 × 108</td>
+      <td>standard in the modeling literature (Baccam et al., 2006; Luo et al., 2012; Hadjichrysanthou et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>ℛ0</td>
+      <td>within-host basic reproduction number for the virus</td>
+      <td>unitless</td>
+      <td>5</td>
+      <td>empirical fits of target cell models (Hadjichrysanthou et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>rw</td>
+      <td>average number of infectious virions produced by a cell infected with old antigenic variant virus</td>
+      <td>virions</td>
+      <td>100</td>
+      <td>literature (Frensing et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>rm</td>
+      <td>average number of infectious virions produced by a cell infected with new antigenic variant virus</td>
+      <td>virions</td>
+      <td>100</td>
+      <td>no within-host deleteriousness for new antigenic variants</td>
+    </tr>
+    <tr>
+      <td>μwm</td>
+      <td>probability of mutation from old variant to new variant</td>
+      <td>unitless</td>
+      <td>0.33 × 10–5</td>
+      <td>literature (Nobusawa and Sato, 2006)</td>
+    </tr>
+    <tr>
+      <td>μmw</td>
+      <td>probability of mutation from new variant to old variant</td>
+      <td>unitless</td>
+      <td>0</td>
+      <td>back-mutation neglected</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>rate of infectious contact between virions and target cells per cell per virion</td>
+      <td>1virions cells days</td>
+      <td>calculated</td>
+      <td>from ℛ0</td>
+    </tr>
+    <tr>
+      <td>ℓ</td>
+      <td>number of target cells lost per infectious contact</td>
+      <td>cells</td>
+      <td>1</td>
+      <td>one cell lost per cell infection</td>
+    </tr>
+    <tr>
+      <td>dv</td>
+      <td>exponential decay rate of infectious virions</td>
+      <td>1days</td>
+      <td>4</td>
+      <td>empirical fits of target cell models (Hadjichrysanthou et al., 2016) and modeling literature (Baccam et al., 2006Luo et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>k</td>
+      <td>additional per-virion neutralization rate in the presence of a well-matched antibody response</td>
+      <td>1days</td>
+      <td>6</td>
+      <td>varied to test hypotheses</td>
+    </tr>
+    <tr>
+      <td>cw</td>
+      <td>fractional cross reactivity during viral replication between host antibodies and the old antigenic variant</td>
+      <td>unitless</td>
+      <td>0 or 1</td>
+      <td>naive or homotypically reinfected hosts</td>
+    </tr>
+    <tr>
+      <td>cm</td>
+      <td>fractional cross reactivity during viral replication between host antibodies and the new antigenic variant</td>
+      <td>unitless</td>
+      <td>0</td>
+      <td>full escape variant</td>
+    </tr>
+    <tr>
+      <td>κw</td>
+      <td>probability that an individual old antigenic variant virion inoculated into an experienced host is neutralized in the respiratory tract mucosa</td>
+      <td>unitless</td>
+      <td>set from zw</td>
+      <td>calculated from Equation 38</td>
+    </tr>
+    <tr>
+      <td>κm</td>
+      <td>probability that an individual new antigenic variant virion inoculated into an experienced host is neutralized in the respiratory tract mucosa</td>
+      <td>unitless</td>
+      <td>σ⁢κw</td>
+      <td>reduced relative to κw by immune escape</td>
+    </tr>
+    <tr>
+      <td>σ</td>
+      <td>fractional cross immunity at the sIgA bottleneck between old antigenic variant and new antigenic variant</td>
+      <td>unitless</td>
+      <td>0</td>
+      <td>full escape variant</td>
+    </tr>
+    <tr>
+      <td>v</td>
+      <td>number of virions encountering sIgA</td>
+      <td>virions</td>
+      <td>10 × b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>size of final/cell infection bottleneck</td>
+      <td>virions</td>
+      <td>1</td>
+      <td>NGS studies (McCrone et al., 2018; Xue and Bloom, 2019)</td>
+    </tr>
+    <tr>
+      <td>V50</td>
+      <td>viral load at which there is a fifty percent transmission probability</td>
+      <td>virions</td>
+      <td>108</td>
+      <td>chosen to give realistic transmission window (Tsang et al., 2015) and based on prior modeling studies (Russell et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>θ</td>
+      <td>transmission threshold for threshold model</td>
+      <td>virions</td>
+      <td>107</td>
+      <td>chosen to be consistent with V50</td>
+    </tr>
+  </tbody>
+</table>
 
 We give a full mathematical description of the model in the Materials and methods.
 
@@ -68,13 +240,13 @@ In addition to analyzing this within-host model, we explored the between-host an
 
 ## Results
 
-## Realistically-timed immune kinetics limit otherwise rapid adaptation during exponential growth
+### Realistically-timed immune kinetics limit otherwise rapid adaptation during exponential growth
 
 In our model, sufficiently strong antibody neutralization during the virus exponential growth period can potentially stop replication and block onward transmission, but this mechanism of protection results in detectable new antigenic variants in each observable homotypic reinfection, since the infection is terminated rapidly unless it generates a new antigenic variant that substantially escapes antibody neutralization (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig2-v2.jpg)
 
-**Figure 2.:** , tM=0, yielding k=20 for the old antigenic variant but ℛw(t=0)<1 for the new antigenic variant, where ℛm(t=0)>1 is the within-host effective reproduction number for variant ℛi⁢(t)i at time t (see Materials and methods). No mucosal antibody neutralization (); protection is only via neutralization during replication. Example timecourses from simulations with founding population (bottleneck) zw=zm=0. Since neutralization during replication takes the place of mucosal sIgA neutralization, b=200b here should be understood as comparable to the parameter v in models with sIgA neutralization. (A–C) Top panels: absolute abundances of target cells (green), old antigenic variant virions (blue), and new antigenic variant virions (red). Bottom panels: frequencies of virion types. Black dotted line is an analytical prediction for the new antigenic variant frequency given the time of first appearance. Black dashed line is the threshold for NGS detection. (D) Frequencies of no infection, de novo new antigenic variant infection, inoculated new antigenic variant infection, and old antigenic variant infection per 105 inoculations of an immune host by a naive host. Circles are frequencies from simulation runs (106 runs for bottlenecks 1–10, 105 runs for bottlenecks 50–200). Plus-signs are analytical model predictions for frequencies (see Appendix Section A3.6), with  set equal to the average from donor-host stochastic simulations for the given bottleneck. Parameters as in fmtTable 1 unless otherwise stated.
+**Figure 2.:** $t_{M}=0$, $k=20$, yielding $ℛ^{w}(t=0)<1$ for the old antigenic variant but $ℛ^{m}(t=0)>1$ for the new antigenic variant, where $ℛ^{i}⁢(t)$ is the within-host effective reproduction number for variant i at time t (see Materials and methods). No mucosal antibody neutralization ($z_{w}=z_{m}=0$); protection is only via neutralization during replication. Example timecourses from simulations with founding population (bottleneck) $b=200$. Since neutralization during replication takes the place of mucosal sIgA neutralization, b here should be understood as comparable to the parameter v in models with sIgA neutralization. (A–C) Top panels: absolute abundances of target cells (green), old antigenic variant virions (blue), and new antigenic variant virions (red). Bottom panels: frequencies of virion types. Black dotted line is an analytical prediction for the new antigenic variant frequency given the time of first appearance. Black dashed line is the threshold for NGS detection. (D) Frequencies of no infection, de novo new antigenic variant infection, inoculated new antigenic variant infection, and old antigenic variant infection per 105 inoculations of an immune host by a naive host. Circles are frequencies from simulation runs (106 runs for bottlenecks 1–10, 105 runs for bottlenecks 50–200). Plus-signs are analytical model predictions for frequencies (see Appendix Section A3.6), with $f_{mt}$ set equal to the average from donor-host stochastic simulations for the given bottleneck. Parameters as in Table 1 unless otherwise stated.
 
 If there is antibody neutralization throughout virus exponential growth and it is not sufficiently strong to control the infection, this facilitates the establishment of new antigenic variants: variants can be generated de novo and then selected to detectable and easily transmissible frequencies (Figure 1C,D,F, sensitivity analysis in Appendix 1—figure 3). We term selection on a replicating within-host virus population ‘replication selection’. Virus phenotypes that directly affect fitness independent of immune system interactions are likely to be subject to replication selection.
 
@@ -82,65 +254,65 @@ Adding a realistic delay to antibody production of two days post-infection (Lam 
 
 We find that replication selection of antigenic novelty to detectable levels becomes likely only if infections are prolonged, and virus antigenic diversity and antibody selection pressure therefore coincide (Figure 1G, see also Figure 7). This can explain existing observations: within-host adaptive antigenic evolution can be seen in prolonged infections of immune-compromised hosts (Xue et al., 2017), and prolonged influenza infections show large within-host effective population sizes (Lumby et al., 2020).
 
-## Neutralization of virions at the point of transmission provides host protection and population-level selection without rapid within-host adaptation
+### Neutralization of virions at the point of transmission provides host protection and population-level selection without rapid within-host adaptation
 
 Adding antibody neutralization of virions at the point of inoculation (e.g. by mucosal sIgA) to our model produces realistic levels of protection against reinfection, and when reinfections do occur, they are overwhelmingly old antigenic variant reinfections. New antigenic variants that arise during these reinfections remain undetectably rare, reproducing observations from natural human infections (Figures 1A–D,G–H, Figure 3B–C; Debbink et al., 2017; Dinis et al., 2016; McCrone et al., 2018; Sobel Leonard et al., 2016). The combination of mucosal sIgA protection and a realistically-timed antibody recall response explains how there can exist immune protection against reinfection—and thus a population-level selective advantage for new antigenic variants—without observable within-host antigenic selection in typical infections of experienced hosts.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic of bottlenecks faced by both old antigenic variant (blue) and new antigenic variant (other colors) virions at the point of virus transmission. Key parameters for inoculation selection are the mucus bottleneck size v—the mean number of virions that encounter sIgA—and the cell infection bottleneck size b. (B–D) Effect of sIgA selection at the point of inoculation with . (b=1B, C) Analytical model distribution of virions inoculated into an immune host immediately before (B) and after (C) mucosal neutralization/the sIgA bottleneck.  set to mean of stochastic simulations. (fmtD) Distribution of founding virion populations (after the cell infection bottleneck) among individuals who developed detectable new antigenic variant infections in stochastic simulations. (E–F) Analytical model probability that a variant survives the final bottleneck. Dashed horizontal lines indicate probability in naive hosts.  (the approximate mean in stochastic simulations for fmt=9×10−5). (b=1E) Variant probability of surviving all bottlenecks, as a function of old antigenic variant neutralization probability  and new antigenic variant mucosal neutralization probability κw. (κmF) New antigenic variant survival probability as a function of the ratio of v to b. (G, H) Effect of host susceptibility model on the appearance of antigenic novelty. Per-inoculation rates of new variants surviving the bottleneck (H) depend on host immune status and on the relationship between virus antigenic phenotype and host susceptibility () (1-zwG). Plotted with , and 25% susceptibility to (75% protection against, fmt=9×10−5) a variant one antigenic cluster away from host memory. Unless noted, parameters for all plots as in z1=0.75Table 1.
+**Figure 3.:** (A) Schematic of bottlenecks faced by both old antigenic variant (blue) and new antigenic variant (other colors) virions at the point of virus transmission. Key parameters for inoculation selection are the mucus bottleneck size v—the mean number of virions that encounter sIgA—and the cell infection bottleneck size b. (B–D) Effect of sIgA selection at the point of inoculation with $b=1$. (B, C) Analytical model distribution of virions inoculated into an immune host immediately before (B) and after (C) mucosal neutralization/the sIgA bottleneck. $f_{mt}$ set to mean of stochastic simulations. (D) Distribution of founding virion populations (after the cell infection bottleneck) among individuals who developed detectable new antigenic variant infections in stochastic simulations. (E–F) Analytical model probability that a variant survives the final bottleneck. Dashed horizontal lines indicate probability in naive hosts. $f_{mt}=9\times10^{−5}$ (the approximate mean in stochastic simulations for $b=1$). (E) Variant probability of surviving all bottlenecks, as a function of old antigenic variant neutralization probability $κ_{w}$ and new antigenic variant mucosal neutralization probability $κ_{m}$. (F) New antigenic variant survival probability as a function of the ratio of v to b. (G, H) Effect of host susceptibility model on the appearance of antigenic novelty. Per-inoculation rates of new variants surviving the bottleneck (H) depend on host immune status and on the relationship between virus antigenic phenotype and host susceptibility ($1-z_{w}$) (G). Plotted with $f_{mt}=9\times10^{−5}$, and 25% susceptibility to (75% protection against, $z_{1}=0.75$) a variant one antigenic cluster away from host memory. Unless noted, parameters for all plots as in Table 1.
 
-## Tight bottlenecks lead to loss of generated diversity and mean new variants reach consensus through founder effects
+### Tight bottlenecks lead to loss of generated diversity and mean new variants reach consensus through founder effects
 
 Regardless of host immune status, an antigenic variant that has been generated de novo within a host must survive a series of population bottlenecks if it is to infect other individuals. To found a new infection, virions must be expelled from a currently infected host (excretion bottleneck), must enter another host (inter-host bottleneck), must escape mucus on the surface of the airway epithelium (mucus bottleneck), must avoid neutralization by sIgA antibodies on mucosal surfaces (sIgA bottleneck), and must infect a cell early enough to form a detectable fraction of the resultant infection (cell infection bottleneck) (Figure 3A). The sum of all of these effects is the net bottleneck and typically results in infections being initiated by a single genomic variant (McCrone et al., 2018; Xue and Bloom, 2019; Ghafari et al., 2020). That said, bottlenecks resulting from direct contact transmission may be substantially wider than those associated with respiratory droplet or aerosol transmission (Varble et al., 2014) and more human studies are required to quantify these differences.
 
 We find that because antigenic variants appear at very low within-host frequencies when generated de novo and undergo minimal or no replication selection, new antigenic variants most commonly reach detectable levels within hosts through founder effects at the point of inter-host transmission: a low-frequency antigenic variant generated in one host survives the net bottleneck to found the infection of a second host (Figure 3D).
 
-Given that influenza bottlenecks are thought to be on the order of a single virion (McCrone et al., 2018), any replication-competent mutant that founds an infection should occur at NGS-detectable levels, and likely at consensus. But for the same reason, these founder effects are rare events. The sampling process that produces these founder effects could be a purely neutral. It is likely quite close to neutral in a truly naive recipient host who does not possess well-matched antibodies to the inoculated old variant: all inoculated virions, regardless of antigenic phenotype, have an equal chance of becoming part of the new infection’s founding population. If there are v virions that compete to found the infection and b=1, then each virion founds the infection with probability 1/v.
+Given that influenza bottlenecks are thought to be on the order of a single virion (McCrone et al., 2018), any replication-competent mutant that founds an infection should occur at NGS-detectable levels, and likely at consensus. But for the same reason, these founder effects are rare events. The sampling process that produces these founder effects could be a purely neutral. It is likely quite close to neutral in a truly naive recipient host who does not possess well-matched antibodies to the inoculated old variant: all inoculated virions, regardless of antigenic phenotype, have an equal chance of becoming part of the new infection’s founding population. If there are v virions that compete to found the infection and $b=1$, then each virion founds the infection with probability $1/v$.
 
-In our model, new antigenic variants therefore survive the transmission bottleneck upon inoculation into a naive host with a probability approximately equal to the donor-host variant frequency fmt times the bottleneck size b (see Materials and methods). New antigenic variant infections of naive hosts should then occur on the order of 1 in 105 or 1 in 104 such infections given biologically plausible parameters (Figure 3E–H).
+In our model, new antigenic variants therefore survive the transmission bottleneck upon inoculation into a naive host with a probability approximately equal to the donor-host variant frequency $f_{mt}$ times the bottleneck size b (see Materials and methods). New antigenic variant infections of naive hosts should then occur on the order of 1 in 105 or 1 in 104 such infections given biologically plausible parameters (Figure 3E–H).
 
 But if different virions have different chances of being neutralized at the point of transmission, the founding process may be selective. Among the virions that encounter antibodies, those that are less likely to be neutralized have a higher than average chance of undergoing stochastic promotion to consensus while those that are more likely to be neutralized have a lower than average chance. A new antigenic variant may then be disproportionately likely to survive the net bottleneck (Figure 3, Appendix Section A4.2). We term this potential selection on inoculated diversity ‘inoculation selection’. Neutralization at the point of transmission thus not only gives new antigenic variant infections their transmission advantage (population-level selection) but may also increase the rate at which these new antigenic variant infections arise (inoculation selection).
 
 There is some suggestive evidence of differential survival of particular (not necessarily antigenic) influenza genetic variants at the point of transmission from experiments in ferrets (Wilker et al., 2013; Moncla et al., 2016). But as Lumby and colleagues (Lumby et al., 2018) point out in a reanalysis of those experiments, it is difficult empirically to distinguish selection that occurs at the point of transmission from selection that occurs during early replication in the recipient host because of the challenges associated with sampling the small virus populations present at the earliest stages of infection. Here we define inoculation selection as selection on the bottlenecked virus population that establishes infection in the recipient host before any virus replication has taken place in that host.
 
-## Inoculation selection depends on degree of founding competition and degree of immune escape
+### Inoculation selection depends on degree of founding competition and degree of immune escape
 
-The strength of inoculation selection depends on the ratio of the number of virions that compete to found an infection in the absence of well-matched sIgA antibodies (the mucus bottleneck size v) to the number of virions that actually found an infection (the final cell infection bottleneck size b). The larger this v/b ratio is, the more inoculation selection in experienced hosts facilitates the survival of new antigenic variants (Figure 3F, Appendix 1—figure 1).
+The strength of inoculation selection depends on the ratio of the number of virions that compete to found an infection in the absence of well-matched sIgA antibodies (the mucus bottleneck size v) to the number of virions that actually found an infection (the final cell infection bottleneck size b). The larger this $v/b$ ratio is, the more inoculation selection in experienced hosts facilitates the survival of new antigenic variants (Figure 3F, Appendix 1—figure 1).
 
 When new antigenic variant immune escape is incomplete due to partial cross-reactivity with previous antigenic variants, increased antibody neutralization is a double-edged sword for new antigenic variant virions. Competition to found the infection from old antigenic variant virions is reduced, but the new antigenic variant is itself at greater risk of being neutralized. The impact of inoculation selection therefore depends on the degree of similarity between previously encountered viruses and the new antigenic variant. An experienced recipient host could facilitate the survival of large-effect antigenic variants (like those seen at antigenic cluster transitions [Smith et al., 2004]) while impeding the survival of variants that provide less substantial immune escape (Figure 3E, Appendix 1—figure 1).
 
-Inoculation selection is limited by the low frequency fmt of new antigenic variants in transmitting donor hosts (due to weak replication selection), the potentially small mucus bottleneck size v, and the fact that some hosts previously infected with the old variant or similar antigenic variants might not possess well-matched antibodies due to original antigenic sin (Davenport and Hennessy, 1956), antigenic seniority (Lessler et al., 2012), immune backboosting (Fonville et al., 2014), or other sources of individual-specific variation in antibody production (Lee et al., 2019). These factors combined make selection and onward transmission of new variants rare.
+Inoculation selection is limited by the low frequency $f_{mt}$ of new antigenic variants in transmitting donor hosts (due to weak replication selection), the potentially small mucus bottleneck size v, and the fact that some hosts previously infected with the old variant or similar antigenic variants might not possess well-matched antibodies due to original antigenic sin (Davenport and Hennessy, 1956), antigenic seniority (Lessler et al., 2012), immune backboosting (Fonville et al., 2014), or other sources of individual-specific variation in antibody production (Lee et al., 2019). These factors combined make selection and onward transmission of new variants rare.
 
-## Immune hosts can facilitate the appearance of new variants without producing rapid diversification
+### Immune hosts can facilitate the appearance of new variants without producing rapid diversification
 
-Onward transmission of new variants can be facilitated by natural selection—replication selection, inoculation selection, or both. The degree of facilitation depends principally on four quantities: (1) δ⁢τ, the product of the replication selection fitness difference δ=k⁢(cw-cm) and the time under replication selection τ. This determines the degree to which the new variant is promoted by replication selection prior to transmission (increasing fmt). (2) κw, the sIgA neutralization probability for the old variant. This must be large enough to reduce competition for the final bottleneck. (3) v/b, the ratio of the number of virions that encounter sIgA v to the cell infection (final) bottleneck size b. This determines the degree of competition to found the infection, and thus sets the maximum potential strength of inoculation selection when κw is large: a vb-fold improvement over drift for small b. (4) 1-κm, how likely the new variant is to avoid neutralization at the sIgA bottleneck; this scales down the maximum inoculation selective strength set by v/b. Inoculation selection can impede new variant survival relative to drift if 1−κm is small enough.
+Onward transmission of new variants can be facilitated by natural selection—replication selection, inoculation selection, or both. The degree of facilitation depends principally on four quantities: (1) $\delta⁢\tau$, the product of the replication selection fitness difference $\delta=k⁢(c_{w}-c_{m})$ and the time under replication selection $\tau$. This determines the degree to which the new variant is promoted by replication selection prior to transmission (increasing $f_{mt}$). (2) $κ_{w}$, the sIgA neutralization probability for the old variant. This must be large enough to reduce competition for the final bottleneck. (3) $v/b$, the ratio of the number of virions that encounter sIgA v to the cell infection (final) bottleneck size b. This determines the degree of competition to found the infection, and thus sets the maximum potential strength of inoculation selection when $κ_{w}$ is large: a $\frac{v}{b}$-fold improvement over drift for small b. (4) $1-κ_{m}$, how likely the new variant is to avoid neutralization at the sIgA bottleneck; this scales down the maximum inoculation selective strength set by $v/b$. Inoculation selection can impede new variant survival relative to drift if $1−κ_{m}$ is small enough.
 
-When δ⁢τ is small and κw, v/b, and 1-κm are large, new variant survival is most facilitated by inoculation selection. When the opposite is true, replication selection is most important. And there are parameter regimes in which both replication and inoculation selection provide a substantial improvement over drift (Figure 4, see Appendix Section A4.6 for mathematical intuition for these results).
+When $\delta⁢\tau$ is small and $κ_{w}$, $v/b$, and $1-κ_{m}$ are large, new variant survival is most facilitated by inoculation selection. When the opposite is true, replication selection is most important. And there are parameter regimes in which both replication and inoculation selection provide a substantial improvement over drift (Figure 4, see Appendix Section A4.6 for mathematical intuition for these results).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig4-v2.jpg)
 
-**Figure 4.:** of a new variant surviving the transmission bottleneck as a function of donor-host replication selection and recipient host inoculation selection.pnvCalculated according to Equation 43, and plotted as a function of degree of replication selection in the donor host , the product of the selection strength δ⁢τ and the time duration δ between the onset of the antibody response at τ=max{0,tt−tM} and the transmission event at tMt. Black dashed line: neutral (drift) expectation, where t in the donor host and the recipient host does not neutralize either the old or the new variant at the point of transmission (δ=0). Purple dotted line: replication selection only: κw=κm=0 as given in the donor host, but a naive recipient host. Green solid line: inoculation selection only: δ⁢τ in the donor host, but a recipient host with well-matched antibodies to the old variant (δ=0), with varying degrees of immune escape (κw=1 as given in the columns). Red dot-dashed line: combination of both replication selection in the donor host as before and inoculation selection in the recipient host as before. Plotted with a final bottleneck of κm and a mean of b=1v virions encountering sIgA as given in the rows. Parameters as in Table 1 unless otherwise noted.
+**Figure 4.:** Probability $p_{nv}$ of a new variant surviving the transmission bottleneck as a function of donor-host replication selection and recipient host inoculation selection.Calculated according to Equation 43, and plotted as a function of degree of replication selection in the donor host $\delta⁢\tau$, the product of the selection strength $\delta$ and the time duration $\tau=max{0,t_{t}−t_{M}}$ between the onset of the antibody response at $t_{M}$ and the transmission event at tt. Black dashed line: neutral (drift) expectation, where $\delta=0$ in the donor host and the recipient host does not neutralize either the old or the new variant at the point of transmission ($κ_{w}=κ_{m}=0$). Purple dotted line: replication selection only: $\delta⁢\tau$ as given in the donor host, but a naive recipient host. Green solid line: inoculation selection only: $\delta=0$ in the donor host, but a recipient host with well-matched antibodies to the old variant ($κ_{w}=1$), with varying degrees of immune escape ($κ_{m}$ as given in the columns). Red dot-dashed line: combination of both replication selection in the donor host as before and inoculation selection in the recipient host as before. Plotted with a final bottleneck of $b=1$ and a mean of v virions encountering sIgA as given in the rows. Parameters as in Table 1 unless otherwise noted.
 
 At realistic parameter values and assuming all individuals develop well-matched antibodies to previously encountered antigenic variants, only ∼1 to 2 in 104 inoculations of an experienced host results in a new antigenic variant surviving the bottleneck (Figure 4E,H, Figure 4). This rate is likely to be an overestimate due to the factors mentioned above. Moreover, it is only about 2- to 3-fold higher than the rate of bottleneck survival in naive hosts, where new antigenic variant infections should occasionally occur via neutral stochastic founder effects. In short, even in the presence of experienced hosts, antigenic selection is inefficient and most generated antigenic diversity is lost at the point of transmission. Because of these inefficiencies, new antigenic variants can be generated in every infected host without producing explosive antigenic diversification at the population level.
 
-## Inoculation selection produces realistically noisy between-host evolution
+### Inoculation selection produces realistically noisy between-host evolution
 
 To investigate the between-host consequences of adaptation given weak replication selection, tight bottlenecks, and possible inoculation selection, we simulated transmission chains according to our within-host model, allowing the virus to evolve in a 1-dimensional antigenic space (Smith et al., 2004; Bedford et al., 2012) until a generated antigenic mutant became the majority within-host variant. When all hosts in a model transmission chain are naive, antigenic evolution is non-directional and recapitulates the distribution of within-host mutations (Figure 5A). When antigenic selection is constant throughout infection and even a moderate fraction of hosts are experienced, antigenic evolution is unrealistically adaptive: the virus evolves directly away from existing immunity and large-effect antigenic changes are observed frequently (Figure 5B,C). When the model incorporates both mucosal antibodies and realistically-timed recall responses, major antigenic variants appear only rarely and the overall distribution of emerged variants better mimics empirical observations (Figure 5D)—most notably, the phenomenon of quasi-neutral diversification within an antigenic cluster seen in Figures 1 and 2 of Smith et al., 2004. A simple analytical model (see Methods) in which generated antigenic mutants fix according to their replication and inoculation-selective advantages also displays this behavior (Figure 5B–H).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig5-v2.jpg)
 
-**Figure 5.:** Distribution of antigenic changes along 1000 simulated transmission chains (A–D) and from an analytical model (E–H). In (A,E) all naive hosts, in other panels a mix of naive hosts and experienced hosts. Antigenic phenotypes are numbers in a 1-dimensional antigenic space and govern both sIgA cross immunity  and replication cross immunity σc. A distance of  corresponds to no cross immunity between phenotypes and a distance of 0 to complete cross immunity. Gray line gives the shape of Gaussian within-host mutation kernel. Histograms show frequency distribution of observed antigenic change events and indicate whether the change took place in a naive (gray) or experienced (green) host. In (≥1B–D) distribution of host immune histories is 20% of individuals previously exposed to phenotype −0.8, 20% to phenotype −0.5, 20% to phenotype 0 and the remaining 40% of hosts naive. In (E), naive hosts inoculate naive hosts. In (F–H) hosts with history −0.8 inoculate hosts with history −0.8. Initial variant has phenotype 0 in all sub-panels. Model parameters as in Table 1, except . Spikes in densities occur at 0.2 as this is the point of full escape in a host previously exposed to phenotype −0.8.k=25
+**Figure 5.:** Distribution of antigenic changes along 1000 simulated transmission chains (A–D) and from an analytical model (E–H). In (A,E) all naive hosts, in other panels a mix of naive hosts and experienced hosts. Antigenic phenotypes are numbers in a 1-dimensional antigenic space and govern both sIgA cross immunity $\sigma$ and replication cross immunity c. A distance of $\geq1$ corresponds to no cross immunity between phenotypes and a distance of 0 to complete cross immunity. Gray line gives the shape of Gaussian within-host mutation kernel. Histograms show frequency distribution of observed antigenic change events and indicate whether the change took place in a naive (gray) or experienced (green) host. In (B–D) distribution of host immune histories is 20% of individuals previously exposed to phenotype −0.8, 20% to phenotype −0.5, 20% to phenotype 0 and the remaining 40% of hosts naive. In (E), naive hosts inoculate naive hosts. In (F–H) hosts with history −0.8 inoculate hosts with history −0.8. Initial variant has phenotype 0 in all sub-panels. Model parameters as in Table 1, except $k=25$. Spikes in densities occur at 0.2 as this is the point of full escape in a host previously exposed to phenotype −0.8.
 
 In particular, we note that whereas an immediate recall response would predict strong near-constant directed evolution of virus antigenic phenotypes away from existing immunity (Figure 5B,C), a realistically-timed recall response predicts that small-effect, drift-like antigenic substitutions will be observed. Even substitutions that move a virus ‘backward’ in antigenic space—﻿so that it is more readily neutralized by existing antibodies than the ancestral variant—can be observed thanks to the large role of stochasticity at the point of transmission. That said, there is a slight bias favoring forward substitutions, especially those of sufficiently large effect to create a substantial selective advantage over the ancestral variant (Figure 5D). Coupled with the plausible assumption that large-effect substitutions are rarer than small-effect substitutions (here captured qualitatively by the Gaussian mutation kernel), this predicts the observed pattern of quasi-neutral diversification within antigenic clusters followed by rarer directional ‘jumps’ in phenotype. Exact rates of antigenic evolution will depend upon how these emergence processes intersect with population-level epidemic dynamics and competition among variants.
 
-## Epidemic dynamics can alter rates of inoculation selection
+### Epidemic dynamics can alter rates of inoculation selection
 
 We used an epidemic-level model to study the consequences of individual-level inoculation selection for population-level antigenic selection. If inoculation selection is efficient, an intermediate initial fraction of immune hosts maximizes the probability that a new antigenic variant infection is created during an epidemic (Figure 6). This is due to a trade-off between the frequency of naive or weakly immune ‘generator’ hosts who can propagate the epidemic and produce new antigenic variants through de novo mutation, and the frequency of strongly immune ‘selector’ hosts who, if inoculated, are unlikely to be infected, but can facilitate the survival of these new antigenic variants at the point of transmission. As selector host frequency increases, epidemics become rarer and smaller, eventually decreasing opportunities for evolution, but moderate numbers of efficient selectors can substantially increase the rate at which new antigenic variants reach within-host consensus (Figure 6B,C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig6-v2.jpg)
 
-**Figure 6.:** Analytical model results (see Materials and methods) for population-level inoculation selection, using parameters in Table 1 and  unless otherwise stated. (fmt=9×10−5A) Probability per inoculation of a new antigenic variant founding an infection, as a function of fraction of hosts previously exposed to the infecting old antigenic variant virus, mucus bottleneck size v and sIgA cross immunity . Red solid lines: σ=κm/κw. Purple dotted lines: v=10. (v=50B) Expected per-capita reinoculations of previously exposed hosts during an epidemic, given the fraction of previously exposed hosts in the population, if all hosts that were previously exposed to the circulating old antigenic variant virus are fully immune to that variant, for varying population-level basic reproduction number . (ℜ0C) Probability per individual host that a new antigenic variant founds an infection in that host during an epidemic, as a function of the fraction of hosts previously exposed to the old antigenic variant. Other hosts naive. . Red solid lines: σ=0.75; purple dotted lines: v=10 (as in v=50A).
+**Figure 6.:** Analytical model results (see Materials and methods) for population-level inoculation selection, using parameters in Table 1 and $f_{mt}=9\times10^{−5}$ unless otherwise stated. (A) Probability per inoculation of a new antigenic variant founding an infection, as a function of fraction of hosts previously exposed to the infecting old antigenic variant virus, mucus bottleneck size v and sIgA cross immunity $\sigma=κ_{m}/κ_{w}$. Red solid lines: $v=10$. Purple dotted lines: $v=50$. (B) Expected per-capita reinoculations of previously exposed hosts during an epidemic, given the fraction of previously exposed hosts in the population, if all hosts that were previously exposed to the circulating old antigenic variant virus are fully immune to that variant, for varying population-level basic reproduction number $ℜ_{0}$. (C) Probability per individual host that a new antigenic variant founds an infection in that host during an epidemic, as a function of the fraction of hosts previously exposed to the old antigenic variant. Other hosts naive. $\sigma=0.75$. Red solid lines: $v=10$; purple dotted lines: $v=50$ (as in A).
 
 ## Discussion
 
@@ -148,7 +320,7 @@ Any explanation of influenza virus antigenic evolution—and why it is not even 
 
 We hypothesized that antibodies present in the respiratory tract mucosa at the time of virus exposure can effectively block transmission, but have only a small effect on viral replication once cells become productively infected. Antigenic selection after successful infection therefore begins with the mounting of a recall response 48–72 hr post infection. In this case, selection pressure can be strong at the point of transmission, but subsequently weak until after the period of virus exponential growth. This mechanistic paradigm reconciles strong but not perfect sterilizing homotypic immunity with rare observations of new antigenic variants in successfully reinfected experienced hosts.
 
-## Alternative explanations for rare new antigenic variants
+### Alternative explanations for rare new antigenic variants
 
 We consider several possible explanations for the observed phenomenon that new antigenic variants are rare within experienced infected hosts and at the population level prior to cluster transitions. But among these candidate hypotheses, only the mechanism of small inocula, transmission-blocking mucosal antibodies, and a slow-to-mount recall adaptive immune response can explain all the aforementioned empirical observations simultaneously.
 
@@ -164,53 +336,53 @@ Finally, it has been hypothesized that antigenic mutants can only proliferate at
 
 We discuss these alternative explanations in more depth in the Appendix (Section A7.4).
 
-## Relationship to prior influenza virus transmission bottleneck literature
+### Relationship to prior influenza virus transmission bottleneck literature
 
 Previous literature on influenza virus transmission mentions a ‘selective bottleneck’ (Wilker et al., 2013; Moncla et al., 2016; Sobel Leonard et al., 2016), but those studies do not refer to antigenic inoculation selection. Rather, a ‘selective bottleneck’ typically refers either to a tight neutral bottleneck that leads to stochastic loss of diversity or to non-antigenic factors that lead to preferential transmission of certain variants (Moncla et al., 2016). An important exception is (Lumby et al., 2018). Those authors studied ferret transmission experiments and partitioned selection for adaptive mutants (not necessarily antigenic) into selection for transmissibility (acting at a potentially tight bottleneck) and selection during exponential growth. Subsequently, several studies have hypothesized that influenza virus antigenic selection might be weak in short-lived infections of individual experienced hosts and might occur at the point of transmission (Petrova and Russell, 2018; Han et al., 2019; Lumby et al., 2020).
 
 To our knowledge, however, ours is the first study to undertake a mechanistic, model-based comparison between the role of antigenic selection at the point of transmission and that of antigenic selection during replication, to show that immunologically plausible mechanisms could make the former more salient than the latter, and to connect that finding to the rarity of observable new antigenic variants in homotypically reinfected human hosts. We discuss the relationship between this paradigm and those put forward in previous modeling studies at further length in Appendix Section A7.
 
-## Limitations and remaining uncertainties
+### Limitations and remaining uncertainties
 
 The study presented here nonetheless has important limitations that suggest opportunities for future investigation. This is a modeling study, and a mainly theoretical one. That is out of necessity. Quality experiments of the kind that are necessary to observe selection at the point of transmission directly and measure its strength have not been published, and we were unable to find any experimental measurements of within-host competition between known antigenic variants. For additional discussion of unmodeled biological realities and mechanistic uncertainties, see Appendix Sections A2 and A5.
 
-## Within-host model
+#### Within-host model
 
 Our within-host model is a simple target cell-limited model, but the decrease in infectible cells as the infection proceeds can be qualitatively interpreted as any and all antigenicity-agnostic limiting factors that come into play as the virion and infected cell populations grow. This could include the action of innate immunity, which acts in part by killing infected cells and by rendering healthy cells difficult to infect via inflammation (see immunological review in Appendix Section A2). The key mechanistic role played by the target cells in our model is to introduce a non-antigenic limiting factor on infections. This prevents an infection from repeatedly evolving out from under successive well-matched antibody responses, as occurs in HIV and in influenza patients with compromised immune systems (Xue et al., 2017). These factors limit the virus regardless of whether the infection remains confined to the upper respiratory tract or also infect the lower respiratory tract, thereby gaining access to additional target cells (Koel et al., 2019). The key is that non-antigenic factors prevent persistent large virus populations.
 
 Similarly, the antibody response we introduce at 48 hours is qualitative—it is modeled simply as an increase in the virion decay rate for antibody-matching virions. This response could represent IgA targeted at HA, but other antigenicity-specific modes of virus control could also be subsumed under the increased virion decay rate, for instance IgG antibodies, antibody dependent cellular cytotoxicity (ADCC), antibodies against the neuraminidase protein, or others. The key point we establish is that none of these mechanisms efficiently replication select because they all emerge once non-antigenic limiting factors have come into play. They speed clearance, but should not substantially alter virus evolution. A corollary to this point is that there are many mechanisms—and interventions—that could reduce the severity of influenza infections without substantially speeding up antigenic evolution, including universal vaccines.
 
-## Point of transmission
+#### Point of transmission
 
 A key proposal of our study is that population-level antigenic selection and homotypic protection are mediated by antibody neutralization (likely sIgA) at the point of transmission. Currently, empirical evidence for antibody protection at the point of transmission is mostly indirect. Most of this evidence comes from human and animal challenge studies (Clements et al., 1986; Memoli et al., 2020; Le Sage et al., 2020). In these studies, individuals who are challenged with the same antigenic variant sometimes display apparent sterilizing immunity, but other times develop detectable infections. The study by Memoli et al., 2020 is notable for having used very large inocula—106 or 107 TCID50. Despite these high doses, two of the challenge subjects had neither detectable virus nor seroconversion. Similarly, ferret experiments (Le Sage et al., 2020) found that many experienced ferrets developed sufficiently sterilizing immunity to prevent the virus from ever being detected, while some experienced ferrets showed briefly detectable infections that were then cleared. While we cannot rule out a powerful immediate cellular response that was differentially evaded in the various subjects, we believe that our model, coupled with existing understanding of the timing of cellular responses and the speed of influenza virus replication, provides a more parsimonious explanation.
 
 Another limitation of our study is that, while we put forward mucosal sIgA as a biologically-documented potential mechanism of immune protection at the point of inoculation that would not lead to strong selection during early viral replication, no modeling study can establish such a mechanism without empirical investigation. Our study reveals that such an empirical investigation would be of substantial scientific value.
 
-We model neutralization at the point of transmission as a binomial process. Each virion is independently neutralized with a probability κi that depends on its antigenic phenotype and the host’s immune history. As we discuss in Appendix Section A5.2, this assumption of independence may be violated in practice. Careful experiments are required to develop a more realistic model of neutralization at the point of transmission.
+We model neutralization at the point of transmission as a binomial process. Each virion is independently neutralized with a probability $κ_{i}$ that depends on its antigenic phenotype and the host’s immune history. As we discuss in Appendix Section A5.2, this assumption of independence may be violated in practice. Careful experiments are required to develop a more realistic model of neutralization at the point of transmission.
 
 Moreover, individual variation in immune system properties and complex effects of host immune history (Fonville et al., 2014; Lee et al., 2019) mean that even a pair of hosts who have both been previously exposed to the currently circulating variant may exert different selection pressures at the point of transmission. Modeling neutralization as a series of independent events that depend only on host history and virus phenotype is a baseline: it allows us to establish that antigenic selection at the point of transmission is possible and to show what its consequences might be. But a more realistic model will be required to predict the selective pressures imposed by real hosts with real immune histories on real virions.
 
 Finally, while we believe neutralization at the point of transmission is a crucial mechanism of protection against detectable reinfection for influenza, this may not be true for all RNA viruses. Some, such as measles and varicella, have long incubation periods even in naive hosts and induce reliable, long-lasting immune protection against detectable reinfection. This may be because they replicate slowly enough that they cannot ‘outrun’ the adaptive response as influenza can. Neither shows influenza virus-like patterns of clocklike immune escape, suggesting that (1) escape mutants may be less available and (2) the adaptive response acts on a small population and is forceful.
 
-## Parameter uncertainties
+#### Parameter uncertainties
 
 We parameterized our models based on estimates from previous studies, but there are not good estimates for several important quantities. There are no high quality estimates of the rate of antibody-mediated neutralization in the presence of a homotypic antibody response or of how much this rate is reduced by particular antigenic substitutions, and there may be substantial inter-individual variation (Lee et al., 2019). Within-host timeseries data from antigenically heterogeneous infections are needed to estimate these quantities. Similarly, there are no good empirical data on the size of the bottlenecks that precede or follow the sIgA bottleneck (Figure 3A). Better estimates of these bottlenecks, and of the probabilities of neutralization for individual virions encountering mucosal sIgA antibodies, would give more certainty about the strength of inoculation selection relative to neutral founder effects.
 
-We also do not have a clear sense of exactly how neutralization probability in the respiratory tract mucosa (parameter κ in our model) and neutralization rate during replication (parameter k in our model) relate. We expect them to be positively related, but the exact strength and shape of this relationship is unknown. Knowing whether major antigenic changes reduce both equally or reduce one more than the other could help us better quantify the potential strength of inoculation selection and replication selection. In short, better mechanistic understanding of mucosal antibody neutralization could be extremely valuable for understanding and potentially predicting influenza virus evolution.
+We also do not have a clear sense of exactly how neutralization probability in the respiratory tract mucosa (parameter $κ$ in our model) and neutralization rate during replication (parameter k in our model) relate. We expect them to be positively related, but the exact strength and shape of this relationship is unknown. Knowing whether major antigenic changes reduce both equally or reduce one more than the other could help us better quantify the potential strength of inoculation selection and replication selection. In short, better mechanistic understanding of mucosal antibody neutralization could be extremely valuable for understanding and potentially predicting influenza virus evolution.
 
-## Scaling up to the population level
+#### Scaling up to the population level
 
-How readily a particular individual host or host population helps new antigenic variants reach within-host consensus depends upon several unknown quantities: (1) how host susceptibility changes with extent of antigenic dissimilarity, (2) the ratio of virions that encounter sIgA to virions that found the infection (v/b), (3) the probability that a single new antigenic variant virion inoculated alongside old antigenic variant virions evades neutralization 1-κm (Figure 3E–H), (4) the duration τ from the onset of the antibody response to the time of transmission. Better empirical estimates of these quantities could shed light on how the distribution of host immunity shapes antigenic evolution. However, over a range of biologically plausible parameter values, our model contradicts the existing hypothesis that antigenic novelty appears when moderately immune hosts fail to block transmission and then select upon a growing virus population (Grenfell et al., 2004; Volkov et al., 2010). For influenza viruses, hosts whose mucosal immunity regularly blocks old antigenic variant transmission may be crucial. Mucosal immunity not only produces a population-level advantage for new variants but may also play a role in their within-host emergence (Figure 3E,H).
+How readily a particular individual host or host population helps new antigenic variants reach within-host consensus depends upon several unknown quantities: (1) how host susceptibility changes with extent of antigenic dissimilarity, (2) the ratio of virions that encounter sIgA to virions that found the infection ($v/b$), (3) the probability that a single new antigenic variant virion inoculated alongside old antigenic variant virions evades neutralization $1-κ_{m}$ (Figure 3E–H), (4) the duration $\tau$ from the onset of the antibody response to the time of transmission. Better empirical estimates of these quantities could shed light on how the distribution of host immunity shapes antigenic evolution. However, over a range of biologically plausible parameter values, our model contradicts the existing hypothesis that antigenic novelty appears when moderately immune hosts fail to block transmission and then select upon a growing virus population (Grenfell et al., 2004; Volkov et al., 2010). For influenza viruses, hosts whose mucosal immunity regularly blocks old antigenic variant transmission may be crucial. Mucosal immunity not only produces a population-level advantage for new variants but may also play a role in their within-host emergence (Figure 3E,H).
 
-## Implications
+### Implications
 
 Our study has a number of implications for the study and control of influenza viruses.
 
-## Importance of host heterogeneity
+#### Importance of host heterogeneity
 
 Experienced hosts are undoubtedly heterogeneous in their immunity to a given influenza variant (Lee et al., 2019), so the overall population average protection against homotypic reinfection with variant i, zi, is in fact an average over experienced hosts. Our model implies that the degree of neutralization difference between ancestral variant virions and new antigenic variant virions at the point of transmission strongly affects the probability of inoculation selection. Hosts with more focused immune responses—highly-specific antibodies that neutralize old antigenic variant virions well and new antigenic variant virions poorly—could be especially good inoculation selectors and important sources of population-level antigenic selection. Hosts who develop less specific memory responses, such as very young children (Neuzil et al., 2006), could be less important. Similarly, immune-compromised hosts are excellent replication selectors (Xue et al., 2017; Lumby et al., 2020), and so their role in the generation of antigenic novelty and their impact on overall population-level diversification rates deserve further study.
 
-## Small-population-like evolution
+#### Small-population-like evolution
 
 Prior modeling has suggested that despite repeated tight bottlenecks at the point of transmission, evolution of influenza viruses should resemble evolution in idealized large populations (Sigal et al., 2018). In large populations, advantageous variants with small selective advantages should gradually fix and weakly deleterious variants should be purged. In Sigal et al., 2018, diversity is rapidly generated and fit variants are selected to frequencies at which they are likely to pass through even a tight bottleneck. This is likely true of the phenotypes modeled, which include receptor-binding avidity and virus budding time (Sigal et al., 2018). These phenotypes affect virus fitness throughout the timecourse of infection, so they can be efficiently replication-selected (where selection is manifest in the direct competition to infect cells rather than the indirect competition to escape antibodies). Indeed, next-generation sequencing studies have found observable adaptative evolution of non-antigenic phenotypes in individual humans infected with avian H5N1 viruses (Welkers et al., 2019).
 
@@ -218,11 +390,11 @@ Seasonal influenza antigenic evolution does not resemble idealized large populat
 
 This noisy jump pattern is easy to explain in light of the weakness of replication selection and the importance of antigenic founder effects. Selection acts on the small sub-sample of donor-host diversity that passes through the excretion, inter-host, and mucus bottlenecks to encounter the sIgA bottleneck. Evolution via inoculation selection is therefore slower and more affected by stochasticity than evolution via replication selection (Figure 3E–F). It resembles evolution in small populations—weakly adaptive and weakly deleterious substitutions become nearly neutral (Kimura, 1968; Ohta, 1992). If influenza virus evolution were not nearly neutral for small-effect substitutions at the within-host scale, it would be surprising to observe ‘backward’ antigenic changes and noisy evolution at higher scales (Figure 5A–D). In fact, there may be analogous ‘neutralizing’ population dynamics at higher scales as well, and those may also be needed to explain population-level noisiness. But whatever happens at higher scales, within-host replication selection creates a strong directional bias in population-level antigenic diversification, introducing many small forward antigenic changes (Figure 5A–D). Inoculation selection does not necessarily do this.
 
-## Population level neutralizing dynamics
+#### Population level neutralizing dynamics
 
 Local influenza virus lineages rarely persist between epidemics (Russell et al., 2008; Bedford et al., 2015), and so new antigenic variants must establish chains of infections in other geographic locations in order to survive. New antigenic variant chains are most often founded when inoculations are common—that is, when existing variants are causing epidemics. Epidemics result in high levels of local competition between extant and new antigenic variant viruses for susceptible hosts (Hartfield and Alizon, 2015) as well as metapopulation-scale competition to found epidemics in other locations. These dynamics could create tight bottlenecks between epidemics similar to those that occur between hosts, resulting in dramatic epidemic-to-epidemic diversity losses. That said, if immune hosts are present at the start of an epidemic, there will not be asynchrony between diversity and selection pressure, so new variants may pass through between-epidemic bottlenecks more readily than through between-host bottlenecks. Further work is needed to elucidate mechanisms at the population and meta-population scales.
 
-## Population immunity sets the clock of antigenic evolution
+#### Population immunity sets the clock of antigenic evolution
 
 Our work suggests a simple mechanism by which accumulating immunity to an antigenic variant could produce punctuated population-level antigenic evolution. Population-level modeling has shown that influenza virus global epidemiological and phylogenetic patterns can be reproduced if new antigenic variants emerge at the population level with increasing frequency the longer an old antigenic variant circulates (Koelle et al., 2009).
 
@@ -238,253 +410,531 @@ The slow rate of antigenic evolution of A/H3N2 viruses in swine lends further su
 
 The population-level emergence of new antigenic variants, in other words, tracks the accumulation of immunity in the population, not the accumulation of genetic diversity. This suggests that A/H3N2 evolution is indeed selection-limited, not diversity-limited. But much generated antigenic diversity is invisible to surveillance: in the absence of positive selection, it is likely to be lost at bottlenecks.
 
-## Implications for other pathogens
+#### Implications for other pathogens
 
 The inoculation and replication selection paradigm has implications for the understanding and management of other pathogens. For example, HIV does not readily evolve resistance to contemporary pre-exposure prophylaxis (PrEP) antiviral drugs, but it can do so when these antivirals are taken by an individual who is already infected with HIV (Partners PrEP Study Team et al., 2016). Developing resistance at the moment of exposure is a difficult problem of inoculation selection for the virus, but developing resistance during an ongoing infection is an easier problem of replication selection. Selection on small un-diverse introduced populations may also be of interest in invasion biology and island biogeography.
 
-## Conclusion
+### Conclusion
 
 The asynchrony between within-host virus diversity and antigenic selection pressure provides a simple mechanistic explanation for the phenomenon of weak within-host selection but strong population-level selection in seasonal influenza virus antigenic evolution. Measuring or even observing antibody selection in natural influenza virus infections is likely to be difficult because it is inefficient and consequently rare. Theoretical studies are therefore essential for understanding these phenomena and for determining which measurable quantities will facilitate influenza virus control. Our study highlights a critical need for new insights into sIgA neutralization and IgA responses to natural influenza virus infection and vaccination. Cross-scale dynamics can decouple selection and diversity, introducing randomness into otherwise strongly adaptive evolution.
 
 ## Materials and methods
 
-## Model notation
+### Model notation
 
-In all model descriptions, X+=y and X-=y denote incrementing and decrementing the state variable X by the quantity y, respectively, and X=y denotes setting the variable X to the value y. X˙ denotes the rate of event X.
+In all model descriptions, $X+=y$ and $X-=y$ denote incrementing and decrementing the state variable $X$ by the quantity $y$, respectively, and $X=y$ denotes setting the variable $X$ to the value $y$. $X˙$ denotes the rate of event $X$.
 
-## Within-host model overview
+### Within-host model overview
 
 The within-host model is a target cell-limited model of within-host influenza virus infection with three classes of state variables:
 
-New virions are produced through infections of target cells by existing virions, at a rate β⁢C⁢Vi. Infection eventually renders a cell unproductive, so target cells decline at a rate ℓβCV¯, where V¯ is the total number of virions of all variants. The model allows mutation: a virion of antigenic variant i has some probability μi⁢j of producing a virion of antigenic variant j when it reproduces.
+New virions are produced through infections of target cells by existing virions, at a rate $\beta⁢C⁢V_{i}$. Infection eventually renders a cell unproductive, so target cells decline at a rate $ℓ\betaCV¯$, where $V¯$ is the total number of virions of all variants. The model allows mutation: a virion of antigenic variant i has some probability $\mu_{i⁢j}$ of producing a virion of antigenic variant j when it reproduces.
 
-Virions have a natural per-capita decay rate dv. A fully active specific antibody-mediated immune response to variant i increases the virion per-capita decay rate for variant i by a factor k (assumed equal for all variants). The degree of activation of the antibody response during an infection is given by a function M⁢(t), where t is the time since inoculation.
+Virions have a natural per-capita decay rate dv. A fully active specific antibody-mediated immune response to variant i increases the virion per-capita decay rate for variant i by a factor k (assumed equal for all variants). The degree of activation of the antibody response during an infection is given by a function $M⁢(t)$, where t is the time since inoculation.
 
-We use a parameter ci⁢j to denote the protective strength of antibodies raised against a strain j against a different strain i. ci⁢i=1 by definition and ci⁢j=0 indicates complete absence of cross-protection. So if host has antibodies against a strain j but not against the infecting strain i, a fully active antibody response raises the virion decay rate for strain i by ci⁢j⁢k. If there are multiple candidate forms of cross protection ci⁢j and ci⁢k, we choose the strongest. We typically assume that ci⁢j=cj⁢i.
+We use a parameter $c_{i⁢j}$ to denote the protective strength of antibodies raised against a strain j against a different strain i. $c_{i⁢i}=1$ by definition and $c_{i⁢j}=0$ indicates complete absence of cross-protection. So if host has antibodies against a strain j but not against the infecting strain i, a fully active antibody response raises the virion decay rate for strain i by $c_{i⁢j}⁢k$. If there are multiple candidate forms of cross protection $c_{i⁢j}$ and $c_{i⁢k}$, we choose the strongest. We typically assume that $c_{i⁢j}=c_{j⁢i}$.
 
-We assume that an antibody immune response is raised whenever the host has experienced a prior infection with a partially cross-reactive strain. For notational ease, we define the host’s strongest cross-reactivity against strain i, ci, by:(1)ci=max{cijEj}
+We assume that an antibody immune response is raised whenever the host has experienced a prior infection with a partially cross-reactive strain. For notational ease, we define the host’s strongest cross-reactivity against strain i, ci, by:
 
-So a recall antibody response is raised during an infection with strains i,j,… whenever one of ci,cj,…>0.
+$$
+c_{i}=max{c_{ij}E_{j}}
+$$
 
-For this study, we consider a two-antigenic variant model with an ancestral ‘old antigenic variant’ virions Vw and novel ‘new antigenic variant’ virions Vm, though the model generalizes to more than two variants. The state variables are charged by the following stochastic events:(2)C+:C+=1C−:C−=1Vw+:Vw+=1Vw−:Vw−=1Vm+:Vm+=1Vm−:Vm−=1
+So a recall antibody response is raised during an infection with strains $i,j,…$ whenever one of $c_{i},c_{j},…>0$.
 
-These events occur at the following rates:(3)C˙−=ℓβC(Vw+Vm)C˙+=pCC(1−C/Cmax)V˙w+=βCVwrw(1−μ)V˙w−=Vw(dv+cwkM(t))V˙m+=βC(Vmrm+Vwrwμ)V˙m−=Vm(dv+cmkM(t))where M⁢(t) is a minimal model of a time-varying antibody response given by:(4)M(t)={1,t>tM0,otherwise
+For this study, we consider a two-antigenic variant model with an ancestral ‘old antigenic variant’ virions $V_{w}$ and novel ‘new antigenic variant’ virions $V_{m}$, though the model generalizes to more than two variants. The state variables are charged by the following stochastic events:
 
-For simplicity, the equations are symmetric between old antigenic variant and new antigenic variant viruses, except that we neglect back mutation, which is expected to be rare during a single infection, particularly before mutants achieve large populations. The parameters rw and rm allow the two variants optionally to have distinct within-host replication fitnesses; for all results shown, we assumed no replication fitness difference (rw=rm=r) unless otherwise stated. A de novo antibody response raised to a not-previously-encountered variant i can be modeled by setting Ei=1 at a time tNi≥tM post-infection. By default, we model such a de novo response only for fully naive hosts, and assume that it is mounted only against the variant that was most common at the start of infection, which is typically w.
+$$
+C^{+}:C+=1C^{−}:C−=1V_{w}^{+}:V_{w}+=1V_{w}^{−}:V_{w}−=1V_{m}^{+}:V_{m}+=1V_{m}^{−}:V_{m}−=1
+$$
 
-We characterize a virus variant i by its within-host basic reproduction number ℛ0i, the mean number of progeny virions produced by a single virion at the start of infection in a naive host:(5)ℛ0i≡β⁢Cmax⁢ridv
+These events occur at the following rates:
 
-When parametrizing our model, we fixed the within-host basic reproduction number ℛ0i, the initial target cell population Cmax, the virus reproduction rate ri, and the shared virion decay rate dv. We then calculated the implied β according to Equation (5).
+$$
+C˙^{−}=ℓ\betaC(V_{w}+V_{m})C˙^{+}=p_{C}C(1−C/C_{max})V˙_{w}^{+}=\betaCV_{w}r_{w}(1−\mu)V˙_{w}^{−}=V_{w}(d_{v}+c_{w}kM(t))V˙_{m}^{+}=\betaC(V_{m}r_{m}+V_{w}r_{w}\mu)V˙_{m}^{−}=V_{m}(d_{v}+c_{m}kM(t))
+$$
 
-Another useful quantity is the within-host effective reproduction number ℛi⁢(t) of variant i at time t: the mean number of progeny virions produced by a single virion of variant i at a given time t post-infection.(6)ℛi⁢(t)≡β⁢C⁢(t)⁢ridv+ci⁢k⁢M⁢(t)
+where $M⁢(t)$ is a minimal model of a time-varying antibody response given by:
 
-Note that ℛ0i is ℛi⁢(0) in a naive host, and that if ℛi<1, the variant i virus population will usually decline.
+$$
+M(t)={1,t>t_{M}0,otherwise
+$$
 
-We denote the frequency of new variant virions at time t by fm(t)=Vm(t)Vw(t)+Vm(t).
+For simplicity, the equations are symmetric between old antigenic variant and new antigenic variant viruses, except that we neglect back mutation, which is expected to be rare during a single infection, particularly before mutants achieve large populations. The parameters rw and rm allow the two variants optionally to have distinct within-host replication fitnesses; for all results shown, we assumed no replication fitness difference ($r_{w}=r_{m}=r$) unless otherwise stated. A de novo antibody response raised to a not-previously-encountered variant i can be modeled by setting $E_{i}=1$ at a time $t_{N}^{i}\geqt_{M}$ post-infection. By default, we model such a de novo response only for fully naive hosts, and assume that it is mounted only against the variant that was most common at the start of infection, which is typically w.
 
-The distribution of virions that encounter sIgA antibody neutralization depends on the mean mucosal bottleneck size v (i.e. the mean number of virions that would pass through the respiratory tract mucosa in the absence of antibodies) and on the frequency of new antigenic variant fmt=fm⁢(tinoc) in the donor host at the time of inoculation tinoc. nw old antigenic variant virions and nm new antigenic variant virions encounter sIgA. The total number of virions ntot=nw+nm is Poisson-distributed with mean v and each virion is independently a new antigenic variant with probability fmt and otherwise an old antigenic variant. The principle of Poisson thinning then implies:(7)nm∼Poisson(vfmt)nw∼Poisson(v(1−fmt))
+We characterize a virus variant i by its within-host basic reproduction number $ℛ_{0}^{i}$, the mean number of progeny virions produced by a single virion at the start of infection in a naive host:
 
-Note that since fmt is typically small, the results should also hold for a binomial model of nw and nm with a fixed total number of virions encountering sIgA antibodies: vtot=v.
+$$
+ℛ_{0}^{i}≡\frac{\beta⁢C_{max}⁢r_{i}}{d_{v}}
+$$
 
-We then model the sIgA bottleneck—neutralization of virions by mucosal sIgA antibodies. Each virion of variant i is independently neutralized with a probability κi. This probability depends upon the strength of protection against homotypic reinfection κ and the sIgA cross immunity between variants σ (0≤σ≤1):(8)κw=κ⁢max⁡{Ew,σ⁢Em}κm=κ⁢max⁡{Em,σ⁢Ew}
+When parametrizing our model, we fixed the within-host basic reproduction number $ℛ_{0}^{i}$, the initial target cell population $C_{max}$, the virus reproduction rate ri, and the shared virion decay rate dv. We then calculated the implied $\beta$ according to Equation (5).
 
-Since each virion of strain i in the inoculum is independently neutralized with probability κi, then given nw and nm, the populations that compete the pass through the cell infection bottleneck xw and xm are binomially distributed:(9)xw∼Binomial(nw,κw)xm∼Binomial(nm,κm)
+Another useful quantity is the within-host effective reproduction number $ℛ^{i}⁢(t)$ of variant i at time t: the mean number of progeny virions produced by a single virion of variant i at a given time t post-infection.
 
-By Poisson thinning, this is equivalent to:(10)xw∼Poisson(v(1−fmt)(1−κw))xm∼Poisson(vfmt(1−κm))
+$$
+ℛ^{i}⁢(t)≡\frac{\beta⁢C⁢(t)⁢r_{i}}{d_{v}+c_{i}⁢k⁢M⁢(t)}
+$$
 
-At this point, the remaining virions are sampled without replacement to determine what passes through the cell infection bottleneck, b, with all virions passing through if xw+xm≤b, so the final founding population is hypergeometrically distributed given xw and xm.
+Note that $ℛ_{0}^{i}$ is $ℛ^{i}⁢(0)$ in a naive host, and that if $ℛ^{i}<1$, the variant i virus population will usually decline.
 
-If κw=κm=0, fmt is small, and v is large, this is approximated by a binomially distributed founding population of size b, in which each virion is independently a new antigenic variant with (low) probability fmt and is otherwise an old antigenic variant. Alternatively, it can be approximated by a Poisson distribution with a small mean: fmt⁢b≪1. So the probability that a new variant survives the bottleneck in the absence of mucosal neutralization is:(11)pdrift≈1-(1-fmt)b≈fmt⁢b
+We denote the frequency of new variant virions at time t by $f_{m}(t)=\frac{V_{m}(t)}{V_{w}(t)+V_{m}(t)}$.
+
+The distribution of virions that encounter sIgA antibody neutralization depends on the mean mucosal bottleneck size v (i.e. the mean number of virions that would pass through the respiratory tract mucosa in the absence of antibodies) and on the frequency of new antigenic variant $f_{mt}=f_{m}⁢(t_{inoc})$ in the donor host at the time of inoculation $t_{inoc}$. nw old antigenic variant virions and nm new antigenic variant virions encounter sIgA. The total number of virions $n_{tot}=n_{w}+n_{m}$ is Poisson-distributed with mean v and each virion is independently a new antigenic variant with probability $f_{mt}$ and otherwise an old antigenic variant. The principle of Poisson thinning then implies:
+
+$$
+n_{m}∼Poisson(vf_{mt})n_{w}∼Poisson(v(1−f_{mt}))
+$$
+
+Note that since $f_{mt}$ is typically small, the results should also hold for a binomial model of nw and nm with a fixed total number of virions encountering sIgA antibodies: $v_{tot}=v$.
+
+We then model the sIgA bottleneck—neutralization of virions by mucosal sIgA antibodies. Each virion of variant i is independently neutralized with a probability $κ_{i}$. This probability depends upon the strength of protection against homotypic reinfection $κ$ and the sIgA cross immunity between variants $\sigma$ ($0\leq\sigma\leq1$):
+
+$$
+κ_{w}=κ⁢max⁡{E_{w},\sigma⁢E_{m}}κ_{m}=κ⁢max⁡{E_{m},\sigma⁢E_{w}}
+$$
+
+Since each virion of strain i in the inoculum is independently neutralized with probability $κ_{i}$, then given nw and nm, the populations that compete the pass through the cell infection bottleneck xw and xm are binomially distributed:
+
+$$
+x_{w}∼Binomial(n_{w},κ_{w})x_{m}∼Binomial(n_{m},κ_{m})
+$$
+
+By Poisson thinning, this is equivalent to:
+
+$$
+x_{w}∼Poisson(v(1−f_{mt})(1−κ_{w}))x_{m}∼Poisson(vf_{mt}(1−κ_{m}))
+$$
+
+At this point, the remaining virions are sampled without replacement to determine what passes through the cell infection bottleneck, b, with all virions passing through if $x_{w}+x_{m}\leqb$, so the final founding population is hypergeometrically distributed given xw and xm.
+
+If $κ_{w}=κ_{m}=0$, $f_{mt}$ is small, and v is large, this is approximated by a binomially distributed founding population of size b, in which each virion is independently a new antigenic variant with (low) probability $f_{mt}$ and is otherwise an old antigenic variant. Alternatively, it can be approximated by a Poisson distribution with a small mean: $f_{mt}⁢b≪1$. So the probability that a new variant survives the bottleneck in the absence of mucosal neutralization is:
+
+$$
+p_{drift}≈1-(1-f_{mt})^{b}≈f_{mt}⁢b
+$$
 
 When there is mucosal antibody neutralization, the variant’s survival probability can be reduced below this (inoculation pruning) or promoted above it (inoculation promotion), depending upon parameters. There can be inoculation pruning even when the new antigenic variant is more fit (neutralized with lower probability, positive inoculation selection) than the old antigenic variant (see Figure 3E).
 
-## Within-host model parameters
+### Within-host model parameters
 
 Default parameter values for the minimal model and sources for them are given in Table 1.
 
-## Selection and drift within hosts
+### Selection and drift within hosts
 
 In this section, we derive analytical expressions for the within-host frequency of the new variant over time in an infected host (Figure 7), the probability distribution for the time of the first de novo mutation to produce a surviving new variant lineage, and the approximate probability of replication selection to frequency x by time t given our parameters.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig7-v2.jpg)
 
-**Figure 7.:** Equations 13, 15).(A, B) Variant frequency over time for an initially present new variant. (A) Selection strength  varied, with initial frequency δf0 equal to the mutation rate . (μ=0.33×10−5B) Initial frequency f0 varied, with . (δ=6C, D) Variant frequency over time when antigenic selections begins at  days after first variant emergence, with ongoing mutation prior to that point. (t=2C)  varied and δf0 fixed as in (A); (D) f0 varied and  fixed as in (δB). Parameters as in Table 1 unless otherwise noted.
+**Figure 7.:** (A, B) Variant frequency over time for an initially present new variant. (A) Selection strength $\delta$ varied, with initial frequency f0 equal to the mutation rate $\mu=0.33\times10^{−5}$. (B) Initial frequency f0 varied, with $\delta=6$. (C, D) Variant frequency over time when antigenic selections begins at $t=2$ days after first variant emergence, with ongoing mutation prior to that point. (C) $\delta$ varied and f0 fixed as in (A); (D) f0 varied and $\delta$ fixed as in (B). Parameters as in Table 1 unless otherwise noted.
 
-## Within-host replicator equation
+#### Within-host replicator equation
 
-The within-host frequency of the new variant, fm, obeys a replicator equation of the form:(12)d⁢fmd⁢t=fm⁢(1-fm)⁢δ⁢(t)where δ⁢(t) is the fitness advantage of the new antigenic variant over the old antigenic variant at time t (see Appendix Section A3 for a derivation).
+The within-host frequency of the new variant, fm, obeys a replicator equation of the form:
 
-If the variant is neutral in the absence of antibodies, then δ⁢(t)=k⁢(cw-cm) if t>tM and δ⁢(t)=0 otherwise. Let te denote the first time during the infection that a de novo mutation produces a surviving new antigenic variant lineage. If te≤tM, then at a time t≥tM:(13)fm⁢(t)=eδ⁢(t-tM)eδ⁢(t-tM)+fM-1-1where δ=k⁢(cw-cm) and fM=fm⁢(tM).
+$$
+\frac{d⁢f_{m}}{d⁢t}=f_{m}⁢(1-f_{m})⁢\delta⁢(t)
+$$
 
-When additional mutations after the first cannot be neglected, we add a correction term to d⁢fmd⁢t for te<t<min⁡{tM,tpeak} (Figure 7), where tpeak is the time of peak virus population:(14)d⁢fmd⁢t=fm⁢(1-fm)⁢δ⁢(t)+μ⁢ℛ0⁢dv⁢(1-2⁢fm+fm2)which for δ≠0 yields:(15)fm(t)≈Aexp⁡(δt)+μg0Aexp⁡(δt)+μg0−δA=f01−f0(μg0−δ)−μg0f0
+where $\delta⁢(t)$ is the fitness advantage of the new antigenic variant over the old antigenic variant at time t (see Appendix Section A3 for a derivation).
 
-And when δ=0:(16)fm(t)≈11−f0+μg0t−111−f0+μg0twhere g0=ℛ0dv and f0=fm(te). See Appendix Section A3.2 for derivations and discussion.
+If the variant is neutral in the absence of antibodies, then $\delta⁢(t)=k⁢(c_{w}-c_{m})$ if $t>t_{M}$ and $\delta⁢(t)=0$ otherwise. Let $t_{e}$ denote the first time during the infection that a de novo mutation produces a surviving new antigenic variant lineage. If $t_{e}\leqt_{M}$, then at a time $t\geqt_{M}$:
 
-## Distribution of first mutation times
+$$
+f_{m}⁢(t)=\frac{e^{\delta⁢(t-t_{M})}}{e^{\delta⁢(t-t_{M})}+f_{M}^{-1}-1}
+$$
 
-In our stochastic model, new variant lineages that survive stochastic extinction are produced by de novo mutation according to a continuous-time, variable-rate Poisson process. The cumulative distribution function for the time of the first successful mutation, te, depends on the mutation rate µ and the per-capita rate at which old antigenic variant virions are produced, gw⁢(t)=rw⁢β⁢C⁢(t). It also depends on psse, the probability that the generated new antigenic variant survives stochastic extinction. Denoting the new variant per-capita virion production rate gm⁢(t)=rm⁢β⁢C⁢(t), we calculate psse using a branching process approximation (Ball et al., 2016).(17)psse=gm⁢(t)gm⁢(t)+dv+k⁢M⁢(t)⁢max⁡{Em,c⁢Ew}
+where $\delta=k⁢(c_{w}-c_{m})$ and $f_{M}=f_{m}⁢(t_{M})$.
 
-Surviving mutants therefore occur at a rate λm⁢(t):(18)λm⁢(t)=μ⁢gw⁢(t)⁢Vw⁢(t)⁢psse
+When additional mutations after the first cannot be neglected, we add a correction term to $\frac{d⁢f_{m}}{d⁢t}$ for $t_{e}<t<min⁡{t_{M},t_{peak}}$ (Figure 7), where $t_{peak}$ is the time of peak virus population:
 
-We define the cumulative rate Λm⁢(x):(19)Λm⁢(x)=∫0xλm⁢(x)⁢𝑑x
+$$
+\frac{d⁢f_{m}}{d⁢t}=f_{m}⁢(1-f_{m})⁢\delta⁢(t)+\mu⁢ℛ_{0}⁢d_{v}⁢(1-2⁢f_{m}+f_{m}^{2})
+$$
 
-It follows that the CDF of the first mutation time te is:(20)P(te<x)=1-e-Λm⁢(x)
+which for $\delta\neq0$ yields:
 
-This expression is exact for any given realization of the stochastic model if the realized values of the random variables Vw⁢(t), C⁢(t), and gw⁢(t) are used. In practice, we mainly use it to get a closed form for the CDF of te by making the approximation that C⁢(t)≈Cmax early in infection. This yields approximations for gw⁢(t), gm⁢(t), and Vw⁢(t):(21)gw⁢(t),gm⁢(t)≈g0≡ℛ0⁢dv(22)Vw(t){bexp⁡((g0−dv)t)t ≤ tMbexp⁡((g0−dv)tM)exp⁡((g0−dv−cwk)(t−tM))t > tM
+$$
+f_{m}(t)≈\frac{Aexp⁡(\deltat)+\mug_{0}}{Aexp⁡(\deltat)+\mug_{0}−\delta}A=\frac{f_{0}}{1−f_{0}}(\mug_{0}−\delta)−\frac{\mug_{0}}{f_{0}}
+$$
+
+And when $\delta=0$:
+
+$$
+f_{m}(t)≈\frac{\frac{1}{1−f_{0}}+\mug_{0}t−1}{\frac{1}{1−f_{0}}+\mug_{0}t}
+$$
+
+where $g_{0}=ℛ_{0}d_{v}$ and $f_{0}=f_{m}(t_{e})$. See Appendix Section A3.2 for derivations and discussion.
+
+#### Distribution of first mutation times
+
+In our stochastic model, new variant lineages that survive stochastic extinction are produced by de novo mutation according to a continuous-time, variable-rate Poisson process. The cumulative distribution function for the time of the first successful mutation, te, depends on the mutation rate µ and the per-capita rate at which old antigenic variant virions are produced, $g_{w}⁢(t)=r_{w}⁢\beta⁢C⁢(t)$. It also depends on $p_{sse}$, the probability that the generated new antigenic variant survives stochastic extinction. Denoting the new variant per-capita virion production rate $g_{m}⁢(t)=r_{m}⁢\beta⁢C⁢(t)$, we calculate $p_{sse}$ using a branching process approximation (Ball et al., 2016).
+
+$$
+p_{sse}=\frac{g_{m}⁢(t)}{g_{m}⁢(t)+d_{v}+k⁢M⁢(t)⁢max⁡{E_{m},c⁢E_{w}}}
+$$
+
+Surviving mutants therefore occur at a rate $\lambda_{m}⁢(t)$:
+
+$$
+\lambda_{m}⁢(t)=\mu⁢g_{w}⁢(t)⁢V_{w}⁢(t)⁢p_{sse}
+$$
+
+We define the cumulative rate $Λ_{m}⁢(x)$:
+
+$$
+Λ_{m}⁢(x)=\int_{0}^{x}\lambda_{m}⁢(x)⁢𝑑x
+$$
+
+It follows that the CDF of the first mutation time $t_{e}$ is:
+
+$$
+P(t_{e}<x)=1-e^{-Λ_{m}⁢(x)}
+$$
+
+This expression is exact for any given realization of the stochastic model if the realized values of the random variables $V_{w}⁢(t)$, $C⁢(t)$, and $g_{w}⁢(t)$ are used. In practice, we mainly use it to get a closed form for the CDF of $t_{e}$ by making the approximation that $C⁢(t)≈C_{max}$ early in infection. This yields approximations for $g_{w}⁢(t)$, $g_{m}⁢(t)$, and $V_{w}⁢(t)$:
+
+$$
+g_{w}⁢(t),g_{m}⁢(t)≈g_{0}≡ℛ_{0}⁢d_{v}
+$$
+
+
+
+$$
+V_{w}(t){bexp⁡((g_{0}−d_{v})t)t \leq t_{M}bexp⁡((g_{0}−d_{v})t_{M})exp⁡((g_{0}−d_{v}−c_{w}k)(t−t_{M}))t > t_{M}
+$$
 
 The resultant approximate solution for the CDF of new variant mutation times agrees well with simulations (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig8-v2.jpg)
 
-**Figure 8.:** Black line shows analytically calculated CDF. Blue cumulative histogram shows distribution of new variant mutation times for 250,000 simulations from the stochastic within-host model with (A) an immediate recall response () and (tM=0B) a realistic recall response at 48 hr post-infection (). Other model parameters as in tM=2Table 1. Note that time of first successful mutation tends to be later with an immediate recall response than with a delayed recall response. This occurs because the cumulative number of viral replication events grows more slowly in time at the start of the infection because of the strong, immediate recall response.
+**Figure 8.:** Black line shows analytically calculated CDF. Blue cumulative histogram shows distribution of new variant mutation times for 250,000 simulations from the stochastic within-host model with (A) an immediate recall response ($t_{M}=0$) and (B) a realistic recall response at 48 hr post-infection ($t_{M}=2$). Other model parameters as in Table 1. Note that time of first successful mutation tends to be later with an immediate recall response than with a delayed recall response. This occurs because the cumulative number of viral replication events grows more slowly in time at the start of the infection because of the strong, immediate recall response.
 
 The slightly earlier simulated mutation times in the immediate recall response case (Figure 8A) would only make replication selection more likely in that case than our analytical approximation suggests.
 
-## Required mutation time for a variant to reach a given frequency
+#### Required mutation time for a variant to reach a given frequency
 
-By inverting the within-host replicator equation, we can also calculate the time t*⁢(x,t) by which a new variant must emerge if it is to reach at least frequency x by time t. We show (see Appendix Section A9.4 for derivation) that there are two candidate values for t*, depending on whether the time that the new variant first emerges (te) is before or after the onset of the antibody response (tM):
+By inverting the within-host replicator equation, we can also calculate the time $t^{*}⁢(x,t)$ by which a new variant must emerge if it is to reach at least frequency x by time t. We show (see Appendix Section A9.4 for derivation) that there are two candidate values for $t^{*}$, depending on whether the time that the new variant first emerges (te) is before or after the onset of the antibody response ($t_{M}$):
 
-If te≤tM:(23)t−∗(x,t)=ln⁡[1−xxexp⁡(δ(t−tM))+1]−ln⁡bg0−dv
+If $t_{e}\leqt_{M}$:
 
-If te>tM:(24)t+*⁢(x,t)≈ln⁡(1-xx)-ln⁡(b)+δ⁢t-cw⁢k⁢tMg0-dv-cw⁢k+δ
+$$
+t_{−}^{∗}(x,t)=\frac{ln⁡[\frac{1−x}{x}exp⁡(\delta(t−t_{M}))+1]−ln⁡b}{g_{0}−d_{v}}
+$$
 
-It may be that t+*⁢(x,t)>t and t-*⁢(x,t)>t. This indicates that the mutant will be at frequency x if it emerges at t itself. In that case, we therefore have t*⁢(x,t)=t. So combining:(25)t∗(x,t)={t−∗(x,t)t−∗(x,t) < t and t−∗(x,t) ≤ tMt+∗(x,t)t+∗(x,t) < t and t−∗(x,t) > tMtotherwise
+If $t_{e}>t_{M}$:
 
-Finally, it is worth noting that in the case of a complete escape mutant (cm=0, δ=cw⁢k), the approximate expression for t+* is exactly equal to the equivalent approximate expression for t-*:(26)t*⁢(x,t)≈ln⁡(1-xx)-ln⁡(b)+cw⁢k⁢(t-tM)g0-dv
+$$
+t_{+}^{*}⁢(x,t)≈\frac{ln⁡(\frac{1-x}{x})-ln⁡(b)+\delta⁢t-c_{w}⁢k⁢t_{M}}{g_{0}-d_{v}-c_{w}⁢k+\delta}
+$$
+
+It may be that $t_{+}^{*}⁢(x,t)>t$ and $t_{-}^{*}⁢(x,t)>t$. This indicates that the mutant will be at frequency x if it emerges at t itself. In that case, we therefore have $t^{*}⁢(x,t)=t$. So combining:
+
+$$
+t^{∗}(x,t)={t_{−}^{∗}(x,t)t_{−}^{∗}(x,t) < t and t_{−}^{∗}(x,t) \leq t_{M}t_{+}^{∗}(x,t)t_{+}^{∗}(x,t) < t and t_{−}^{∗}(x,t) > t_{M}totherwise
+$$
+
+Finally, it is worth noting that in the case of a complete escape mutant ($c_{m}=0$, $\delta=c_{w}⁢k$), the approximate expression for $t_{+}^{*}$ is exactly equal to the equivalent approximate expression for $t_{-}^{*}$:
+
+$$
+t^{*}⁢(x,t)≈\frac{ln⁡(\frac{1-x}{x})-ln⁡(b)+c_{w}⁢k⁢(t-t_{M})}{g_{0}-d_{v}}
+$$
 
 This is a linear function of t.
 
-## Probability of replication selection
+#### Probability of replication selection
 
-Given this and the new variant first mutation time CDF calculated in Equation 20, it is straightforward to calculate the probability of replication selection to a given frequency a by time t, assuming that ℛ0w>1 early in infection:(27)prepl(a,t)=P(te<t*(a,t))=1-e-Λ⁢(t*⁢(a,t))
+Given this and the new variant first mutation time CDF calculated in Equation 20, it is straightforward to calculate the probability of replication selection to a given frequency a by time t, assuming that $ℛ_{0}^{w}>1$ early in infection:
 
-This analytical model agrees well with simulations (Figure 9). We use it used to calculate the heatmaps shown in Figure 1, with the C⁢(t)≈Cmax early infection approximations that give us a closed form for Λm⁢(x).
+$$
+p_{repl}(a,t)=P(t_{e}<t^{*}(a,t))=1-e^{-Λ⁢(t^{*}⁢(a,t))}
+$$
+
+This analytical model agrees well with simulations (Figure 9). We use it used to calculate the heatmaps shown in Figure 1, with the $C⁢(t)≈C_{max}$ early infection approximations that give us a closed form for $Λ_{m}⁢(x)$.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/62105/elife-62105-fig9-v2.jpg)
 
-**Figure 9.:** Probability of replication selection to one percent (left column) or consensus (right column) by  days post-infection as a function of t=3k and  for 250,000 simulations from the stochastic within-host model. tM (so the fitness difference cw=1,cm=0). Other model parameters as parameters in δ=kTable 1. Dashed lines show analytical prediction and dots show simulation outcomes.
+**Figure 9.:** Probability of replication selection to one percent (left column) or consensus (right column) by $t=3$ days post-infection as a function of k and $t_{M}$ for 250,000 simulations from the stochastic within-host model. $c_{w}=1,c_{m}=0$ (so the fitness difference $\delta=k$). Other model parameters as parameters in Table 1. Dashed lines show analytical prediction and dots show simulation outcomes.
 
-When t*>tM, the integral ∫0t*λm⁢(x)⁢𝑑x can be evaluated piecewise, first from 0 to tM, and then from tM to t*. A similar approach can be used to evaluate the probability density function (PDF) of first mutation times, as needed.
+When $t^{*}>t_{M}$, the integral $\int_{0}^{t^{*}}\lambda_{m}⁢(x)⁢𝑑x$ can be evaluated piecewise, first from 0 to $t_{M}$, and then from $t_{M}$ to $t^{*}$. A similar approach can be used to evaluate the probability density function (PDF) of first mutation times, as needed.
 
-Finally, note that for te<tM, the expression for prepl in practice depends only on δ=(cw-cm)⁢k, not on cw, cm and k separately. In the absence of an antibody response, the mutant is generated with near certainty by 1 day post-infection (P(te<1)≈1, Figure 8B). So when tM≥1, values for prepl calculated with cw=1,cm=0, and δ=k—as in (Figure 1C,D)—will in fact hold for any cw, cm, and k that produce that fitness difference δ.
+Finally, note that for $t_{e}<t_{M}$, the expression for $p_{repl}$ in practice depends only on $\delta=(c_{w}-c_{m})⁢k$, not on cw, cm and k separately. In the absence of an antibody response, the mutant is generated with near certainty by 1 day post-infection ($P(t_{e}<1)≈1$, Figure 8B). So when $t_{M}\geq1$, values for $p_{repl}$ calculated with $c_{w}=1,c_{m}=0$, and $\delta=k$—as in (Figure 1C,D)—will in fact hold for any cw, cm, and k that produce that fitness difference $\delta$.
 
-When ℛ0w<1 early in infection, the probability of replication selection depends on the probability of generating an escape mutant before the infection is extinguished:(28)prepl≈ℛw⁢(0)1-ℛw⁢(0)⁢b⁢μ⁢psse
+When $ℛ_{0}^{w}<1$ early in infection, the probability of replication selection depends on the probability of generating an escape mutant before the infection is extinguished:
+
+$$
+p_{repl}≈\frac{ℛ^{w}⁢(0)}{1-ℛ^{w}⁢(0)}⁢b⁢\mu⁢p_{sse}
+$$
 
 See Appendix Section A3.6 for a derivation.
 
-## Point of transmission model
+### Point of transmission model
 
 In this section, we describe our model of the point of transmission, including how sIgA neutralization may impose selection pressure.
 
-## Transmission probability
+#### Transmission probability
 
-Given contact between an infected host and an uninfected host, we assume that a transmission attempt occurs with probability proportional to the current virus population size Vtot in the infected host:(29)P(transmit)=1−exp⁡(log⁡(2)VtotV50)
+Given contact between an infected host and an uninfected host, we assume that a transmission attempt occurs with probability proportional to the current virus population size $V_{tot}$ in the infected host:
 
-The parameter V50 sets the scaling, and reflects virus population size at which there is a 50% chance of successful transmission to a naive host. We used a default value of V50=1×108 virions. In addition to this probabilistic model, we also consider an alternative threshold model in which a transmission attempt occurs with certainty if Vtot is greater than a threshold θ and does not occur otherwise.
+$$
+P(transmit)=1−exp⁡(log⁡(2)\frac{V_{tot}}{V_{50}})
+$$
 
-## Bottleneck survival
+The parameter V50 sets the scaling, and reflects virus population size at which there is a 50% chance of successful transmission to a naive host. We used a default value of $V_{50}=1\times10^{8}$ virions. In addition to this probabilistic model, we also consider an alternative threshold model in which a transmission attempt occurs with certainty if $V_{tot}$ is greater than a threshold $\theta$ and does not occur otherwise.
 
-If there are xw old antigenic variant virions and xm new variant virions competing to pass through the cell infection bottleneck, at least one new variant virion passes through with probability:(30)pcib(xw,xm,b)=1−(xwb)(xw+xmb)
+#### Bottleneck survival
 
-Summing pcib⁢(xw,xm) over the possible values of xw and xm weighted by their joint probabilities yields the new variant’s overall probability of successful onward transmission psurv⁢(fmt,v,b,κ,c):(31)psurv=∑xm,xwP⁢(xm,xw)⁢pcib⁢(xw,xm,b)
+If there are xw old antigenic variant virions and xm new variant virions competing to pass through the cell infection bottleneck, at least one new variant virion passes through with probability:
 
-P⁢(xw,xm) is the product of the probability mass functions for xw and xm:(32)P⁢(xm,xw)=w¯xwxw!⁢m¯xmxm!⁢e-(xw+xm)where w¯=v⁢(1-fmt)⁢(1-κw) and m¯=v⁢fmt⁢(1-κm).
+$$
+p_{cib}(x_{w},x_{m},b)=1−\frac{(x_{w}b)}{(x_{w}+x_{m}b)}
+$$
 
-At low donor-host variant frequencies fmt≪1psurv, psurv can be approximated using the fact that almost all probability is given to xm=0 or xm=1 (0 or 1 new antigenic variant after the sIgA bottleneck).
+Summing $p_{cib}⁢(x_{w},x_{m})$ over the possible values of xw and xm weighted by their joint probabilities yields the new variant’s overall probability of successful onward transmission $p_{surv}⁢(f_{mt},v,b,κ,c)$:
 
-At least one new antigenic variant survives the sIgA bottleneck with probability:(33)pinoc⁢(κm,v,fmt)=1-e-v⁢fmt⁢(1-κm)
+$$
+p_{surv}=\sumx_{m},x_{w}P⁢(x_{m},x_{w})⁢p_{cib}⁢(x_{w},x_{m},b)
+$$
 
-If fmt is small, there will almost always be at most one such virion (xm=1). That new antigenic variant virion’s probability of surviving the cell infection bottleneck depends upon how many old antigenic variant virions are present after neutralization, xw:(34)pcib(xw,1,b)=1−(xwb)(xw+1b)=1−xw−b+1xw+1=bxw+1
+$P⁢(x_{w},x_{m})$ is the product of the probability mass functions for xw and xm:
 
-Summing over the possible xw, we obtain a closed form for the unconditional probability pcib⁢(κw,v,b) (see Appendix Section A9.5 for a derivation):(35)pcib(κw,v,b)=(1−e−w¯)bw¯+e−w¯∑j=0b−1w¯jj!(1−bj+1)where w¯=v⁢(1-fmt)⁢(1-κw) is the mean number of old antigenic variant virions present after sIgA neutralization. If b=1, this reduces the just the first term, and it is approximately equal to just the first term when w¯ is large, since e-w¯ becomes small.
+$$
+P⁢(x_{m},x_{w})=\frac{w¯^{x_{w}}}{x_{w}!}⁢\frac{m¯^{x_{m}}}{x_{m}!}⁢e^{-(x_{w}+x_{m})}
+$$
 
-It follows that there is an approximate closed form for the probability that a new variant survives the final bottleneck:(36)psurv⁢(κm,κw,v,b,fmt)≈pinoc⁢(κm,v,fmt)*pcib⁢(κw,v,b)
+where $w¯=v⁢(1-f_{mt})⁢(1-κ_{w})$ and $m¯=v⁢f_{mt}⁢(1-κ_{m})$.
+
+At low donor-host variant frequencies $f_{mt}≪1p_{surv}$, $p_{surv}$ can be approximated using the fact that almost all probability is given to $x_{m}=0$ or $x_{m}=1$ (0 or 1 new antigenic variant after the sIgA bottleneck).
+
+At least one new antigenic variant survives the sIgA bottleneck with probability:
+
+$$
+p_{inoc}⁢(κ_{m},v,f_{mt})=1-e^{-v⁢f_{mt}⁢(1-κ_{m})}
+$$
+
+If $f_{mt}$ is small, there will almost always be at most one such virion ($x_{m}=1$). That new antigenic variant virion’s probability of surviving the cell infection bottleneck depends upon how many old antigenic variant virions are present after neutralization, xw:
+
+$$
+p_{cib}(x_{w},1,b)=1−\frac{(x_{w}b)}{(x_{w}+1b)}=1−\frac{x_{w}−b+1}{x_{w}+1}=\frac{b}{x_{w}+1}
+$$
+
+Summing over the possible xw, we obtain a closed form for the unconditional probability $p_{cib}⁢(κ_{w},v,b)$ (see Appendix Section A9.5 for a derivation):
+
+$$
+p_{cib}(κ_{w},v,b)=(1−e^{−w¯})\frac{b}{w¯}+e^{−w¯}\sumj=0b−1\frac{w¯^{j}}{j!}(1−\frac{b}{j+1})
+$$
+
+where $w¯=v⁢(1-f_{mt})⁢(1-κ_{w})$ is the mean number of old antigenic variant virions present after sIgA neutralization. If $b=1$, this reduces the just the first term, and it is approximately equal to just the first term when $w¯$ is large, since $e^{-w¯}$ becomes small.
+
+It follows that there is an approximate closed form for the probability that a new variant survives the final bottleneck:
+
+$$
+p_{surv}⁢(κ_{m},κ_{w},v,b,f_{mt})≈p_{inoc}⁢(κ_{m},v,f_{mt})*p_{cib}⁢(κ_{w},v,b)
+$$
 
 We use this expression to calculate the analytical new variant survival probabilities shown in the main text, and to gain conceptual insight into the strength of inoculation selection relative to neutral processes (see Appendix Section A4.5).
 
-## Neutralization probability and probability of no infection
+#### Neutralization probability and probability of no infection
 
-A given per-virion sIgA neutralization probability κi implies a probability zi that a transmission event involving only virions of variant i fails to result in an infected cell.
+A given per-virion sIgA neutralization probability $κ_{i}$ implies a probability zi that a transmission event involving only virions of variant i fails to result in an infected cell.
 
-Some transmissions fail even without sIgA neutralization; this occurs with probability exp⁡(-v). Otherwise, with probability 1-exp⁡(-v), ni virions must be neutralized by sIgA to prevent an infection. We define zi as the probability of no infection given inoculated virions in need of neutralization (i.e. given ni>0).
+Some transmissions fail even without sIgA neutralization; this occurs with probability $exp⁡(-v)$. Otherwise, with probability $1-exp⁡(-v)$, ni virions must be neutralized by sIgA to prevent an infection. We define zi as the probability of no infection given inoculated virions in need of neutralization (i.e. given $n_{i}>0$).
 
-The probability that there are no remaining virions of variant i after mucosal neutralization is exp⁡(-v⁢(1-κi)). So we have:(37)zi=exp⁡(-v⁢(1-κi))-exp⁡(-v)1-exp⁡(-v)
+The probability that there are no remaining virions of variant i after mucosal neutralization is $exp⁡(-v⁢(1-κ_{i}))$. So we have:
 
-This can be solved algebraically for κi in terms of zi, but it is more illuminating to express κi in terms of the overall probability of no infection given inoculation pno and then find pno in terms of zi:(38)pno=exp⁡(−v(1−κi))κi=1+ln⁡(pno)v
+$$
+z_{i}=\frac{exp⁡(-v⁢(1-κ_{i}))-exp⁡(-v)}{1-exp⁡(-v)}
+$$
 
-An infection occurs with probability (1-exp⁡(-v))⁢(1-zi) (the probability of at least one virion needing to be neutralized times the conditional probability that it is not) so pno in terms of zi is:(39)pno=1-(1-exp⁡(-v))⁢(1-zi)
+This can be solved algebraically for $κ_{i}$ in terms of zi, but it is more illuminating to express $κ_{i}$ in terms of the overall probability of no infection given inoculation $p_{no}$ and then find $p_{no}$ in terms of zi:
 
-This yields the same expression for κi in terms of zi as a direct algebraic solution of Equation 37.
+$$
+p_{no}=exp⁡(−v(1−κ_{i}))κ_{i}=1+\frac{ln⁡(p_{no})}{v}
+$$
 
-For moderate to large v, 1-exp⁡(-v) approaches 1, so pno approaches zi and κi approaches 1+ln⁡(zi)v. This reflects the fact that for even moderately large v, it is almost always the case that ni>0: a least one virion must be neutralized to prevent infection. In those cases, zi can be interpreted as the (approximate) probability of no infection given a transmission event (i.e. as pno).
+An infection occurs with probability $(1-exp⁡(-v))⁢(1-z_{i})$ (the probability of at least one virion needing to be neutralized times the conditional probability that it is not) so $p_{no}$ in terms of $z_{i}$ is:
 
-Note also that seeded infections can also go stochastically extinct; this occurs with approximate probability 1ℛ0. At the start of infection, if there is no antibody response and ℛ0 is large (5 to 10), stochastic extinction probabilities should be low (15 to 110), and equal in immune and naive hosts. We have therefore parametrized our model in terms of zi, the probability that no cell is ever infected, as that probability determines to leading order the frequency with which immunity protects against detectable reinfection given challenge.
+$$
+p_{no}=1-(1-exp⁡(-v))⁢(1-z_{i})
+$$
 
-## Susceptibility models
+This yields the same expression for $κ_{i}$ in terms of zi as a direct algebraic solution of Equation 37.
+
+For moderate to large v, $1-exp⁡(-v)$ approaches 1, so $p_{no}$ approaches zi and $κ_{i}$ approaches $1+\frac{ln⁡(z_{i})}{v}$. This reflects the fact that for even moderately large v, it is almost always the case that $n_{i}>0$: a least one virion must be neutralized to prevent infection. In those cases, zi can be interpreted as the (approximate) probability of no infection given a transmission event (i.e. as $p_{no}$).
+
+Note also that seeded infections can also go stochastically extinct; this occurs with approximate probability $\frac{1}{ℛ_{0}}$. At the start of infection, if there is no antibody response and $ℛ_{0}$ is large (5 to 10), stochastic extinction probabilities should be low ($\frac{1}{5}$ to $\frac{1}{10}$), and equal in immune and naive hosts. We have therefore parametrized our model in terms of zi, the probability that no cell is ever infected, as that probability determines to leading order the frequency with which immunity protects against detectable reinfection given challenge.
+
+#### Susceptibility models
 
 Translating host immune histories into old antigenic variant and new antigenic variant neutralization probabilities for the analysis in Figure 3G,H requires a model of how susceptibility decays with antigenic distance, which we measure in terms of the typical distance between two adjacent ‘antigenic clusters’ (Smith et al., 2004). Figure 3 shows results for two candidate models: a multiplicative model used in a prior modeling and empirical studies of influenza evolution (Boni et al., 2006; Asaduzzaman et al., 2018), and a sigmoid model as parametrized from data on empirical HI titer and protection against infection (Coudeville et al., 2010).
 
-In the multiplicative model, the probability z⁢(i,x) of no infection with variant i given that the nearest variant to i in the immune history is variant x is given by:(40)z⁢(i,x)=z0⁢(z1z0)d⁢(i,x)where z0 is the probability of no infection given homotypic reinfection, d⁢(i,x) is the antigenic distance in antigenic clusters between i and x, and z1 is the probability of no infection given d⁢(i,x)=1.
+In the multiplicative model, the probability $z⁢(i,x)$ of no infection with variant i given that the nearest variant to i in the immune history is variant x is given by:
 
-In the sigmoid model:(41)z⁢(i,x)=1-11+eb⁢(ln⁡(T⁢(i,x))-a)where a=2.844 and b=1.299 (α and β estimated in Coudeville et al., 2010) and T⁢(i,x) is the individual’s HI titer against variant i (Coudeville et al., 2010). To convert this into a model in terms of z0 and z1 we calculate the typical homotypic titer T0 implied by z0 and the n-fold-drop D in titer per unit of antigenic distance implied by z1, since units in antigenic space correspond to a n-fold reductions in HI titer for some value n (Smith et al., 2004). We calculate T0 by plugging z0 and T0 into Equation 41 and solving. We calculate D by plugging z1 and T1=T0⁢D-1 into Equation 41 and solving. We can then calculate T⁢(i,x) as:(42)T⁢(i,x)=T0⁢D-d⁢(i,x)
+$$
+z⁢(i,x)=z_{0}⁢(\frac{z_{1}}{z_{0}})^{d⁢(i,x)}
+$$
 
-## Probability of bottleneck survival
+where z0 is the probability of no infection given homotypic reinfection, $d⁢(i,x)$ is the antigenic distance in antigenic clusters between i and x, and z1 is the probability of no infection given $d⁢(i,x)=1$.
 
-With these analyses in hand, it is possible to combine the within-host and the point of transmission processes to calculate an overall probability that a new variant survives the transmission bottleneck. Equation 36 gives the probability of bottleneck survival given fmt and the properties of the recipient host. And given a time of transmission tt, we can calculate the probability distribution of fmt using our expressions for the CDF of successful mutation times te (Equation 20) and for fm⁢(t) (Equations 13, 15). To calculate the overall probability pnv, we average over the possible values of fmt, weighted by their probability:(43)pnv=∫0∞psurv(fm(tt∣te=t))p(te=t)dt
+In the sigmoid model:
 
-## Within-host simulations (Figures 1,4)
+$$
+z⁢(i,x)=1-\frac{1}{1+e^{b⁢(ln⁡(T⁢(i,x))-a)}}
+$$
 
-To evaluate the relative probabilities of replication selection and inoculation selection for antigenic novelty and to check the validity of the analytical results, we simulated 106 transmissions from a naive host to a previously immune host. The transmitting host was simulated for 10 days, which given the selected model parameters is sufficient time for almost all infections to be cleared. Time of transmission was randomly drawn from that period, weighted by transmission probability, and an inoculum was drawn from the within-host virus population at that time. Variant counts in the inoculum were Poisson-distributed with probability equal to the variant frequency within the transmitting host at the time of transmission. We simulated the recipient host until the clearance of infection and found the maximum frequency of transmissible variant: that is, the variant frequencies when the transmission probability was greater than 5×10-2 (probabilistic model) or when the virus population was above the transmission threshold θ (threshold model). For Figure 3D, we defined an infection with an emerged new antigenic variant as an infection with a maximum transmissible new variant frequency of greater than 50%.
+where $a=2.844$ and $b=1.299$ ($\alpha$ and $\beta$ estimated in Coudeville et al., 2010) and $T⁢(i,x)$ is the individual’s HI titer against variant i (Coudeville et al., 2010). To convert this into a model in terms of z0 and z1 we calculate the typical homotypic titer T0 implied by z0 and the n-fold-drop D in titer per unit of antigenic distance implied by z1, since units in antigenic space correspond to a n-fold reductions in HI titer for some value n (Smith et al., 2004). We calculate T0 by plugging z0 and T0 into Equation 41 and solving. We calculate D by plugging z1 and $T_{1}=T_{0}⁢D^{-1}$ into Equation 41 and solving. We can then calculate $T⁢(i,x)$ as:
 
-## Transmission chain model (Figure 5)
+$$
+T⁢(i,x)=T_{0}⁢D^{-d⁢(i,x)}
+$$
 
-To study evolution along transmission chains with mixed host immune statuses, we modeled the virus phenotype as existing in a 1-dimensional antigenic space. Host susceptibility sx to a given phenotype x was sx=min⁡{1,min⁡{|x-yi|}} for all phenotypes yi in the host’s immune history.
+### Probability of bottleneck survival
 
-Within-host cross immunity ci⁢j between two phenotypes yi and yj was equal to max⁡{0,1-|yi-yj|}. When mucosal antibodies were present, protection against infection zx was equal to the strength of homotypic protection zmax scaled by susceptibility: zx=(1−sx)zmax. κx was calculated from zx by exp⁡(-v⁢(1-κx))=zx. We used zmax=0.95. Note that this puts us in the regime in which intermediately immune hosts are the best inoculation selectors (Figure 3H). We set k=25 so that there would be protection against reinfection in the condition with an immediate recall response but without mucosal antibodies.
+With these analyses in hand, it is possible to combine the within-host and the point of transmission processes to calculate an overall probability that a new variant survives the transmission bottleneck. Equation 36 gives the probability of bottleneck survival given $f_{mt}$ and the properties of the recipient host. And given a time of transmission tt, we can calculate the probability distribution of $f_{mt}$ using our expressions for the CDF of successful mutation times te (Equation 20) and for $f_{m}⁢(t)$ (Equations 13, 15). To calculate the overall probability $p_{nv}$, we average over the possible values of $f_{mt}$, weighted by their probability:
+
+$$
+p_{nv}=\int_{0}^{∞}p_{surv}(f_{m}(t_{t}∣t_{e}=t))p(t_{e}=t)dt
+$$
+
+### Within-host simulations (Figures 1,4)
+
+To evaluate the relative probabilities of replication selection and inoculation selection for antigenic novelty and to check the validity of the analytical results, we simulated 106 transmissions from a naive host to a previously immune host. The transmitting host was simulated for 10 days, which given the selected model parameters is sufficient time for almost all infections to be cleared. Time of transmission was randomly drawn from that period, weighted by transmission probability, and an inoculum was drawn from the within-host virus population at that time. Variant counts in the inoculum were Poisson-distributed with probability equal to the variant frequency within the transmitting host at the time of transmission. We simulated the recipient host until the clearance of infection and found the maximum frequency of transmissible variant: that is, the variant frequencies when the transmission probability was greater than $5\times10^{-2}$ (probabilistic model) or when the virus population was above the transmission threshold $\theta$ (threshold model). For Figure 3D, we defined an infection with an emerged new antigenic variant as an infection with a maximum transmissible new variant frequency of greater than 50%.
+
+### Transmission chain model (Figure 5)
+
+To study evolution along transmission chains with mixed host immune statuses, we modeled the virus phenotype as existing in a 1-dimensional antigenic space. Host susceptibility sx to a given phenotype x was $s_{x}=min⁡{1,min⁡{|x-y_{i}|}}$ for all phenotypes yi in the host’s immune history.
+
+Within-host cross immunity $c_{i⁢j}$ between two phenotypes yi and yj was equal to $max⁡{0,1-|y_{i}-y_{j}|}$. When mucosal antibodies were present, protection against infection zx was equal to the strength of homotypic protection $z_{max}$ scaled by susceptibility: $z_{x}=(1−s_{x})z_{max}$. $κ_{x}$ was calculated from zx by $exp⁡(-v⁢(1-κ_{x}))=z_{x}$. We used $z_{max}=0.95$. Note that this puts us in the regime in which intermediately immune hosts are the best inoculation selectors (Figure 3H). We set $k=25$ so that there would be protection against reinfection in the condition with an immediate recall response but without mucosal antibodies.
 
 We then simulated a chain of infections as follows. For each inoculated host, we tracked two virus variants: an initial majority antigenic variant and an initial minority antigenic variant. If there were no minority antigenic variants in the inoculum, a new focal minority variant (representing the first antigenic variant to emerge de novo) was chosen from a Gaussian distribution with mean equal to the majority variant and a given variance, which determined the width of the mutation kernel (for results shown in Figure 5, we used a standard deviation of 0.08). We simulated within-host dynamics in the host according to our within-host stochastic model.
 
 We founded each chain with an individual infected with all virions of phenotype 0, representing the current old antigenic variant.
 
-We simulated contacts at a fixed, memoryless contact rate ρ=1 contacts per day. Given contact, a transmission attempt occurred with a probability proportional to donor-host viral load, as described above. If a transmission attempt occurred, we chose a random immune history for our recipient host according to a pre-specified distribution of host immune histories. We then simulated an inoculation and, if applicable, subsequent infection, according to the within-host model described above. If the recipient host developed a transmissible infection, it became a new donor host. If not, we continued to simulate contacts and possible transmissions for the donor host until recovery. If a donor host recovered without transmitting successfully, the chain was declared extinct and a new chain was founded.
+We simulated contacts at a fixed, memoryless contact rate $ρ=1$ contacts per day. Given contact, a transmission attempt occurred with a probability proportional to donor-host viral load, as described above. If a transmission attempt occurred, we chose a random immune history for our recipient host according to a pre-specified distribution of host immune histories. We then simulated an inoculation and, if applicable, subsequent infection, according to the within-host model described above. If the recipient host developed a transmissible infection, it became a new donor host. If not, we continued to simulate contacts and possible transmissions for the donor host until recovery. If a donor host recovered without transmitting successfully, the chain was declared extinct and a new chain was founded.
 
 We iterated this process until the first phenotypic change event—a generated or transmitted minority phenotype becoming the new majority phenotype. We simulated 1000 such events for each model and examined the observed distribution of phenotypic changes compared to the mutation kernel.
 
 For the results shown in Figure 5, we set the population distribution of immune histories as follows: 20% −0.8, 20% −0.5, 20% 0.0, and the remaining 40% of hosts naive. This qualitatively models the directional pressure that is thought to canalize virus evolution (Bedford et al., 2012) once a cluster has begun to circulate.
 
-## Analytical mutation kernel shift model (Figure 5)
+### Analytical mutation kernel shift model (Figure 5)
 
 To assess the causes of the observed behavior in our transmission chain model, we also studied analytically how replication and inoculation selection determine the distribution of observed fixed antigenic changes given the mutation kernel when a host with one immune history inoculates another host with a different immune history.
 
-We fixed a transmission time t=2 days, roughly corresponding to peak within-host virus titers. For each possible new variant phenotype, we calculated pnv according to Equation 43, with parameters given by the old variant antigenic phenotype, new variant phenotype, and host immune histories. Finally, we multiplied each phenotype’s survival probability by the same Gaussian mutation kernel used in the chain simulations (with mean 0 and s.d. 0.08), and normalized the result to determine the predicted distribution of surviving new variants given the mutation kernel and the differential survival probabilities for different phenotypes.
+We fixed a transmission time $t=2$ days, roughly corresponding to peak within-host virus titers. For each possible new variant phenotype, we calculated $p_{nv}$ according to Equation 43, with parameters given by the old variant antigenic phenotype, new variant phenotype, and host immune histories. Finally, we multiplied each phenotype’s survival probability by the same Gaussian mutation kernel used in the chain simulations (with mean 0 and s.d. 0.08), and normalized the result to determine the predicted distribution of surviving new variants given the mutation kernel and the differential survival probabilities for different phenotypes.
 
-## Population-level model (Figure 6)
+### Population-level model (Figure 6)
 
-To evaluate the probability of variants being selected and proliferating during a local influenza virus epidemic, we first noted that the per-inoculation rate of new antigenic variant infections for a population with ns susceptibility classes (which can range from full susceptibility to full immunity) is:(44)∑i=1nssi(0)psurv(κm(i),κw(i),v,b,fmt)where κw⁢(i) and κm⁢(i) are the mucosal antibody neutralization probabilities for the old antigenic variant and the new antigenic variant associated with susceptibility class i, and si⁢(0)=Si⁢(0)N is the initial fraction of individuals in susceptibility class i.
+To evaluate the probability of variants being selected and proliferating during a local influenza virus epidemic, we first noted that the per-inoculation rate of new antigenic variant infections for a population with ns susceptibility classes (which can range from full susceptibility to full immunity) is:
 
-We then considered a well-mixed population with frequency-dependent transmission, where infected individuals from all susceptibility classes are equally infectious if infected. Using an existing result from epidemic theory (Magal et al., 2018), we calculated R∞, the average fraction of individuals who are infected if an epidemic occurs in such a population. During such an epidemic, each individual will on average be inoculated (challenged) ℜ0⁢R∞ times, where ℜ0 is the population-level basic reproduction number (Miller, 2012). We can then calculate the probability that a new variant transmission chain is started in an arbitrary focal individual:(45)R0R∞∑i=1nssi(0)psurv(κm(i),κw(i),v,b,fmt)
+$$
+\sumi=1n_{s}s_{i}(0)p_{surv}(κ_{m}(i),κ_{w}(i),v,b,f_{mt})
+$$
 
-## Sensitivity analysis (Appendix 1—figure 3)
+where $κ_{w}⁢(i)$ and $κ_{m}⁢(i)$ are the mucosal antibody neutralization probabilities for the old antigenic variant and the new antigenic variant associated with susceptibility class i, and $s_{i}⁢(0)=\frac{S_{i}⁢(0)}{N}$ is the initial fraction of individuals in susceptibility class i.
+
+We then considered a well-mixed population with frequency-dependent transmission, where infected individuals from all susceptibility classes are equally infectious if infected. Using an existing result from epidemic theory (Magal et al., 2018), we calculated $R_{∞}$, the average fraction of individuals who are infected if an epidemic occurs in such a population. During such an epidemic, each individual will on average be inoculated (challenged) $ℜ_{0}⁢R_{∞}$ times, where $ℜ_{0}$ is the population-level basic reproduction number (Miller, 2012). We can then calculate the probability that a new variant transmission chain is started in an arbitrary focal individual:
+
+$$
+R_{0}R_{∞}\sumi=1n_{s}s_{i}(0)p_{surv}(κ_{m}(i),κ_{w}(i),v,b,f_{mt})
+$$
+
+### Sensitivity analysis (Appendix 1—figure 3)
 
 We assessed the sensitivity of our results to parameter choices by re-running our simulation models with randomly generated parameter sets chosen via Latin Hypercube Sampling from across a range of biologically plausible values. Appendix 1—figure 3 gives a summary of the results.
 
-We simulated 50,000 infections of experienced hosts (cw=1) according to each of 10 random parameter sets. We selected parameter sets using Latin Hypercube sampling to maximize coverage of the range of interest without needing to study all possible permutations. We did this for the following bottleneck sizes: 1, 3, 10, 50.
+We simulated 50,000 infections of experienced hosts ($c_{w}=1$) according to each of 10 random parameter sets. We selected parameter sets using Latin Hypercube sampling to maximize coverage of the range of interest without needing to study all possible permutations. We did this for the following bottleneck sizes: 1, 3, 10, 50.
 
-We analyzed two cases: one in which the immune response is unrealistically early and one in which it is realistically timed. In the unrealistically early antibody response model, tM varied between tM=0 and tM=1. In the realistically-timed antibody response model, tM varied between tM=2 and tM=4.5. Other parameter ranges were shared between the two models (Table 2).
+We analyzed two cases: one in which the immune response is unrealistically early and one in which it is realistically timed. In the unrealistically early antibody response model, $t_{M}$ varied between $t_{M}=0$ and $t_{M}=1$. In the realistically-timed antibody response model, $t_{M}$ varied between $t_{M}=2$ and $t_{M}=4.5$. Other parameter ranges were shared between the two models (Table 2).
+
+**Table 2.**
+ Sensitivity analysis parameter ranges shared between models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Minimum value</th>
+      <th>Maximum value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tN</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Cmax</td>
+      <td>108</td>
+      <td>109</td>
+    </tr>
+    <tr>
+      <td>ℛ0</td>
+      <td>5</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>10</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>μwm</td>
+      <td>0.33 × 10−6</td>
+      <td>0.33 × 10−4</td>
+    </tr>
+    <tr>
+      <td>dv</td>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>k</td>
+      <td>3</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>cm</td>
+      <td>0.5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>zw</td>
+      <td>0.70</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>zm/zw</td>
+      <td>0.5</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>V50</td>
+      <td>107</td>
+      <td>109</td>
+    </tr>
+    <tr>
+      <td>v/b</td>
+      <td>1</td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table>
 
 Discussion of sensitivity analysis results can be found in Appendix Section A8.
 
-## Meta-analysis (Figure 1)
+### Meta-analysis (Figure 1)
 
 We downloaded processed variant frequencies and subject metadata from the two NGS studies of immune-competent human subjects naturally infected with A/H3N2 with known vaccination status (Debbink et al., 2017; McCrone et al., 2018) from the study Github repositories and journal websites. We independently verified that reported antigenic site and antigenic ridge amino acid substitutions were correctly indicated, determined the number of subjects with no NGS-detectable antigenic amino acid substitutions, and produced figures from the aggregated data.
 
-## Computational methods
+### Computational methods
 
 For within-host model stochastic simulations, we used the Poisson Random Corrections (PRC) tau-leaping algorithm (Hu and Li, 2009). We used an adaptive step size; we chose step sizes according to the algorithm of Hu and Li, 2009 to ensure that estimated next-step mean values were non-negative, with a maximum step size of 0.01 days. Variables were set to zero if events performed during a timestep would have reduced the variable to a negative value. For the sterilizing immunity simulations in Figure 2, we used a smaller maximum step size of 0.001 days in recipient hosts to better handle mutation dynamics involving very small numbers of replicating virions.
 
 We obtained numerical solutions of equations, including systems of differential equations and final size equations, in Python using solvers provided with SciPy (Jones et al., 2001).
 
-## Data and materials availability
+### Data and materials availability
 
 All code, data, and other materials needed to reproduce the analysis in this paper are provided online on the project Github repository: https://github.com/dylanhmorris/asynchrony-influenza (Morris, 2020; copy archived at swh:1:rev:5a9796fa3ab7b8a86aeccd7c9353542f9409e215).
 

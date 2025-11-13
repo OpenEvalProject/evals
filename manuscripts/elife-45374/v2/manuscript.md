@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.45374.001 A number of studies suggest that scientific papers with women in leading-author positions attract fewer citations than those with men in leading-author positions. We report the results of a matched case-control study of 1,269,542 papers in selected areas of medicine published between 2008 and 2014. We find that papers with female authors are, on average, cited between 6.5 and 12.6% less than papers with male authors. However, the standardized mean differences are very small, and the percentage overlaps between the distributions for male and female authors are extensive. Adjusting for self-citations, number of authors, international collaboration and journal prestige, we find near-identical per-paper citation impact for women and men in first and last author positions, with self-citations and journal prestige accounting for most of the small average differences. Our study demonstrates the importance of focusing greater attention on within-group variability and between-group overlap of distributions when interpreting and reporting results of gender-based comparisons of citation impact.
+A number of studies suggest that scientific papers with women in leading-author positions attract fewer citations than those with men in leading-author positions. We report the results of a matched case-control study of 1,269,542 papers in selected areas of medicine published between 2008 and 2014. We find that papers with female authors are, on average, cited between 6.5 and 12.6% less than papers with male authors. However, the standardized mean differences are very small, and the percentage overlaps between the distributions for male and female authors are extensive. Adjusting for self-citations, number of authors, international collaboration and journal prestige, we find near-identical per-paper citation impact for women and men in first and last author positions, with self-citations and journal prestige accounting for most of the small average differences. Our study demonstrates the importance of focusing greater attention on within-group variability and between-group overlap of distributions when interpreting and reporting results of gender-based comparisons of citation impact.
 
 ## Introduction
 
@@ -37,6 +37,171 @@ Here we report the results of a comprehensive, global analysis of possible gende
 
 Table 1 specifies the gender composition of the unmatched sample (n=1,269,542) by main specialty, institutional prestige and geographic location. Male researchers dominate all five main specialty groupings. Female last authors are underrepresented, in comparison to their representation in the global population, in all five groupings, but most notably in Surgical/Procedural specialties. The proportion of female first and last authors is highest in Latin America and lowest in South East Asia. Note here that numerous countries located in Eastern Asia have been excluded from the analysis due to unreliable gender disambiguation based on first-name and country information (see Methods for more details). In Western Europe and North America the proportions of female first and last authors lie close to the Global averages.
 
+**Table 1.**
+ Women’s share of authorships overall, across five main specialties, institutional prestige, and geocultural area.f_w is the weighted proportion of women per paper, f_first the proportion of female first authorships, f_last the proportion of female last authorships, f_both the proportion of papers where women are both first and last authors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Overall</th>
+      <th>f_w</th>
+      <th>f_first</th>
+      <th>f_last</th>
+      <th>f_both</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>0.35</td>
+      <td>0.40</td>
+      <td>0.26</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Main specialty</td>
+      <td>f_w</td>
+      <td>f_first</td>
+      <td>f_last</td>
+      <td>f_both</td>
+    </tr>
+    <tr>
+      <td>Basic science</td>
+      <td>0.39</td>
+      <td>0.46</td>
+      <td>0.30</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Hospital based</td>
+      <td>0.37</td>
+      <td>0.43</td>
+      <td>0.28</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Medical</td>
+      <td>0.33</td>
+      <td>0.38</td>
+      <td>0.24</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Pediatric</td>
+      <td>0.46</td>
+      <td>0.52</td>
+      <td>0.37</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Surgical/procedural</td>
+      <td>0.29</td>
+      <td>0.32</td>
+      <td>0.21</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Institutional prestige</td>
+      <td>f_w</td>
+      <td>f_first</td>
+      <td>f_last</td>
+      <td>f_both</td>
+    </tr>
+    <tr>
+      <td>Top-100 University</td>
+      <td>0.36</td>
+      <td>0.42</td>
+      <td>0.27</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Other university</td>
+      <td>0.35</td>
+      <td>0.39</td>
+      <td>0.25</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Geographic location</td>
+      <td>f_w</td>
+      <td>f_first</td>
+      <td>f_last</td>
+      <td>f_both</td>
+    </tr>
+    <tr>
+      <td>Arab countries</td>
+      <td>0.33</td>
+      <td>0.34</td>
+      <td>0.27</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Commonwealth of Independent States</td>
+      <td>0.40</td>
+      <td>0.45</td>
+      <td>0.30</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>East Asia</td>
+      <td>0.19</td>
+      <td>0.19</td>
+      <td>0.09</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Latin America</td>
+      <td>0.46</td>
+      <td>0.52</td>
+      <td>0.39</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>North America</td>
+      <td>0.36</td>
+      <td>0.40</td>
+      <td>0.27</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Oceania</td>
+      <td>0.40</td>
+      <td>0.48</td>
+      <td>0.31</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>South and Central Europe</td>
+      <td>0.40</td>
+      <td>0.44</td>
+      <td>0.31</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Sub-Saharan Africa</td>
+      <td>0.36</td>
+      <td>0.39</td>
+      <td>0.31</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>South-West Asia</td>
+      <td>0.29</td>
+      <td>0.31</td>
+      <td>0.24</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Western Europe</td>
+      <td>0.35</td>
+      <td>0.42</td>
+      <td>0.24</td>
+      <td>0.14</td>
+    </tr>
+  </tbody>
+</table>
+
 Citation impact per paper is measured by field-normalized citation scores with a four-year fixed citation window (NCS). Using NCS as the outcome variable strengthens our matched design by adjusting for sub-specialty variations in citation practices. NCS is a continuous outcome variable. It is calculated by dividing the citations accrued by a paper within the first four years after publication with the expected citation score of other papers published in the same year and field (Waltman et al., 2012). Fields are delineated using the same article-level classification system as the Leiden Ranking. This classification system consists of 4,047 micro-level clusters of publications and offers one of the best, current approaches to item-oriented field normalization (Waltman and van Eck, 2012). This item-oriented field normalization procedure allows for comparison of papers published in different sub-fields, with different publication dates.
 
 Figure 1 displays the density distributions of log-transformed citation scores for the matched sets of papers with female first authors and male first authors (Sample 1), female last authors and male last authors (Sample 2), and female first and last authors and other gender combinations of first and last authors (Sample 3). For all distributions, the absolute uncertainty of the mean is between 0.001 and 0.005. On average, papers with female first authors are cited 8.7% less than papers with male first authors (Sample 1. Female first authors: n = 509,330; x̄ = 1.16; σ = 1.83; x̃ =0.73. Male first authors: n = 509.335; x̄ = 1.27; σ = 2.00; x̃ =0.76); however, the overlap between the two distributions is extensive (Cohen's d = −.06; Weitzman's Δ = 95.4%; Weitzman, 1970). Papers with female last authors are cited 6.5% less than papers with male last authors (Sample 2. Female last authors: n = 326,611; x̄ = 1.16; σ = 1.93; x̃ =0.72. Male first authors: n = 326,622; x̄ = 1.24; σ = 1.93; x̃ =0.76); again, the overlap between the two distributions is extensive (Cohen's d = −.04; Weitzman's Δ = 95.6%). Finally, papers in which both the first and last authors are female are cited 12.6% less than papers with other gender combinations (Sample 3. Female first and last authors: n = 184,183; x̄ = 1.11; σ = 1.75; x̃ =0.71. Other combinations: n = 184,191; x̄ = 1.27; σ= 2.28; x̃ =0.76); again, the overlap between the two distributions is extensive (Cohen's d = −.08; Weitzman's Δ = 93.1%).
@@ -55,7 +220,7 @@ Exponentiated beta coefficients and 95% confidence intervals for the three model
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45374/elife-45374-fig2-v2.jpg)
 
-**Figure 2.:** Error bars represent 95% confidence intervals (see Figure 2—source data 1 for estimate specifications and dispersion parameters). All regressions are based on matched samples. Sample 1 compares papers with female first authors to those with male first authors. Sample 2 compares papers with female last authors to those with male last authors. Sample 3 compares papers with female first and last authors to those with other author combinations. Values are on a logarithmic scale. The figure indicates very small residual effects of gender on NCS (case variables: F_First, F_Last and F_Both).10.7554/eLife.45374.005Figure 2—source data 1.10.7554/eLife.45374.006Figure 2—source data 2.10.7554/eLife.45374.007Figure 2—source data 3.10.7554/eLife.45374.008Figure 2—source data 4.
+**Figure 2.:** Error bars represent 95% confidence intervals (see Figure 2—source data 1 for estimate specifications and dispersion parameters). All regressions are based on matched samples. Sample 1 compares papers with female first authors to those with male first authors. Sample 2 compares papers with female last authors to those with male last authors. Sample 3 compares papers with female first and last authors to those with other author combinations. Values are on a logarithmic scale. The figure indicates very small residual effects of gender on NCS (case variables: F_First, F_Last and F_Both).
 
 The numeric input variables have been rescaled by dividing by two standard deviations (Gelman, 2008). We did this to allow the numeric inputs (i.e. MNCS journal, N authors, self-citations) to be interpreted on the same scale as the binary case variables (i.e. F_first, F_last, F_both). The standardized coefficients should be interpreted as two-standard deviation changes on a logit scale, from a low value to a high value (Gelman, 2008). Figure 2—source data 1 summarizes the exponentiated values for both the direct and standardized coefficients.
 
@@ -71,9 +236,87 @@ To examine which of the covariates that vary the most by lead-author gender, we 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45374/elife-45374-fig4-v2.jpg)
 
-**Figure 4.:** Error bars represent 95% confidence intervals (see Figure 4—source data 1 for information on estimates and dispersion parameters). All regressions are based on matched samples. Sample 1 compares papers with female first authors to those with male first authors. Sample 2 compares papers with female last authors to those with male last authors. Sample 3 compares papers with female first and last authors to those with other author combinations. The figure indicates that self-citations is the variable that varies the most along gender lines in all three samples, albeit the effects can be considered small.10.7554/eLife.45374.011Figure 4—source data 1.
+**Figure 4.:** Error bars represent 95% confidence intervals (see Figure 4—source data 1 for information on estimates and dispersion parameters). All regressions are based on matched samples. Sample 1 compares papers with female first authors to those with male first authors. Sample 2 compares papers with female last authors to those with male last authors. Sample 3 compares papers with female first and last authors to those with other author combinations. The figure indicates that self-citations is the variable that varies the most along gender lines in all three samples, albeit the effects can be considered small.
 
 Descriptive analysis indicates larger average gender differences in self-citation rates compared to MNCS journal scores in Samples 1, 2 and 3 (Table 2), but the standardized mean differences for both variables are very small, and the percentage overlaps are extensive.
+
+**Table 2.**
+ Means, standard deviations, medians, Cohen’s d, and Weitzman’s ∆ for case-control comparisons of self-citations and MNCS journal in Samples 1, 2 and 3.Cohen’s d and Weitzman’s ∆ are calculated with two and one decimal respectively. Weitzman’s ∆ is not calculated for self-citations, as it is a discrete count variables. For sample 1, female first authors is the case and male first authors is the control. For Sample 2, female last authors is the case and male last authors is the control. For Sample 3, female first and last authors is the case and other combinations are the control.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>X¯ case (σ)</th>
+      <th>X¯ control (σ)</th>
+      <th>X~ case</th>
+      <th>X~ control</th>
+      <th>d</th>
+      <th>∆</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Sample 1</td>
+      <td>Self-citations</td>
+      <td>1.91 (3.18)</td>
+      <td>2.16 (3.93)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-0.07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MNCS journal</td>
+      <td>1.16 (.90)</td>
+      <td>1.21 (1.04)</td>
+      <td>.99</td>
+      <td>1.00</td>
+      <td>-0.05</td>
+      <td>96.4%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sample 2</td>
+      <td>Self-citations</td>
+      <td>1.84 (3.22)</td>
+      <td>2.08 (3.77)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-0.07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MNCS journal</td>
+      <td>1.14 (.98)</td>
+      <td>1.20 (.99)</td>
+      <td>.98</td>
+      <td>1.00</td>
+      <td>-0.06</td>
+      <td>95.6%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sample 3</td>
+      <td>Self-citations</td>
+      <td>1.74 (2.84)</td>
+      <td>2.13 (3.91)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-0.11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MNCS journal</td>
+      <td>1.12 (.97)</td>
+      <td>1.20 (1.02)</td>
+      <td>.97</td>
+      <td>1.0</td>
+      <td>-0.08</td>
+      <td>93.4%</td>
+    </tr>
+  </tbody>
+</table>
 
 To obtain a closer approximation of the extent to which self-citations may contribute to explain the observed gender variation on the right side of the distribution curves in Figure 1, we plotted the average proportion of per-paper self-citations (number of per-paper self-citations/raw per-paper citation scores) in 5% intervals from the quantile of least cited papers to the quantile of top cited papers in Samples 1, 2 and 3. As displayed in the upper panel of Figure 5, the average proportion of self-citations for papers in the top 5% bin is ~15% in all three samples. This implies that at least part of the gender variation observed on the right side of the curves in Figure 1 may be attributable to average gender differences in self-citation rates per paper. It should also be noted that our citation indicators are calculated with a four-year window, which may contribute to explain the relatively large proportion of self-citations in the samples.
 
@@ -123,6 +366,20 @@ In conclusion, our results demonstrate that adjusting for co-varying factors, me
 
 Figure 7 displays the data-selection process. Peer-reviewed articles published between 2008 and 2014 were collected in PubMed Medline. To target core medical research and enable exact matching based on primary medical specialty, we needed information on the disease-specific Medical Subject Headings assigned to each paper. Hence, the initial sample was limited to records indexed with the broad MeSH descriptor “Diseases Category" (n=2,336,805). Eligible PubMed records were matched to article metadata in Web of Science (WoS) (citation data, author first names and affiliations), using Publication identifiers (PMID, DOI) and a fuzzy matching of reference data (source, volume, pagination, etc.). The matching percentage by journal is given in Figure 7—figure supplement 1. All papers lacking full first-name information for one or more authors were excluded from the sample (n=362,453; 15.5% of the population sample). The name-to-gender assignment algorithm, Gender API (Gender API, 2016), was used to determine the gender of all authors per paper for the remaining sample. This algorithm estimates a given author's likelihood of being a man or a woman based on first name and country affiliation. The accuracy of the algorithm has previously been validated in a random subsample (N=500 authors) drawn from the same dataset (Nielsen et al., 2017), and was recently evaluated as the best-performing service, in a bench-mark of five name-to-gender assignment algorithms (Santamaría and Mihaljević, 2018). Gender API provided valid name-to-gender estimates for 1,434,715 papers (61.4% of the population sample) (for further specification on Gender API, See Figure 7—figure supplement 3). A sensitivity analysis indicated unreliable Gender API estimates for authors from 18 countries, located in Eastern Asia and Sub-Saharan Africa. All documents with first and last authors from these countries were excluded (see Figure 7—figure supplement 2). This reduced the sample by 7.2% (n=165,173), resulting in a final sample of 1,269,542 papers (54.3% of the population sample).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/45374/elife-45374-fig7-v2.jpg)
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45374/elife-45374-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The excluded papers are a combination of missing document types in Web of Science and missing name information. Journals publishing document types which are included in PubMed Medline but not Web of Science (e.g. comments, notes) can account for a large exclusion percentage for many journals. For other journals, first name information is consistently missing for some or all years. Here showing journals with >50 papers only.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/45374/elife-45374-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Gender determination: The online tool Gender-API was used to estimate the gender of all first-name and country pairings. This pairing is important as the gender connotations for some first names vary by language and culture. As an example, the name Kim is typically male in Danish, female in English-speaking countries, and unisex in Korean. Gender-API uses co-occurrences of names and countries on social media to provide a precision score for each assignment, which we use to calculate a probability of an author being female, f. We exclude all authors from this analysis who only have initials registered in Web of Science, or who are from a country with unreliable gender prediction. Country sampling and bias: We calculated a reliability score for each country, by determining the precision score of the Gender-API name assignment for all authors per country. Names with precision scores >= 0.8 are considered reliable, and the reliability for the country is the average reliability hereof. We use the reliability distribution in Figure 7—figure supplement 2 to heuristically set a cut-off at .9 reliability for inclusion in the analysis. The excluded countries are listed in Figure 7—source data 1. For some of the East-Asian countries, the explanation for the low reliability lies in the unisex-naming culture of these countries. For other countries, the probable explanation is the absence of comprehensive social media data from these countries.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/45374/elife-45374-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Reported as function of all sampled papers (p_pubmed) and proportion of all papers matched to Web of Science (p_wos).
+
 In the analysis of citation impact per paper, exact matching covariates were included for institutional prestige, geographical region and medical specialty. All three factors are known to influence citation impact (Judge, 2016; Stremersch et al., 2007; van Eck et al., 2013). In addition, research shows that the participation of women in medical research varies considerably across geographical regions, top and lower-tier research institutions and medical specialties (Lautenberger et al., 2014; Nielsen et al., 2017; Weeden et al., 2017). Matching of institutional prestige was based on a binary variable specifying whether a paper includes authors affiliated with a top-100 university according to the Leiden Ranking [www.leidenranking.com]. The matching of geographical region was based on ten variables specifying the location of the first and last author. The matching of medical specialties was based on 124 specialties identified using the HeTOP MeSH specialty-classification algorithm (Darmoni et al., 2006) (for specifications on country groupings and specialty-disambiguation, see Figure 7—source datas 1–3). We used replacement sampling, resulting in case and control groups of equal sizes.
 
 Five covariates were included in the regression models. Journal prestige is arguably the strongest single predictor of a paper's citation impact (Judge, 2016). Prior work suggest that women are less likely than men to publish in journals with high impact factors (see, for example, González-Álvarez and Cervera-Crespo, 2019; Lerchenmüller et al., 2018). To adjust for this factor, we computed the mean NCS-score per journal (MNCS journal). This indicator is advantageous compared to the journal impact factor, most notably because it corrects for subfield-specific citation characteristics.
@@ -131,7 +388,7 @@ International collaboration is another recognized predictor of citation impact (
 
 Finally, we included two count variables that adjust for the number of authors per paper and the number of per-paper self-citations within the first four years after publication. Extant research demonstrates that per-paper citation impact is positively correlated with author-group size, and that women, on average, have fewer self-citations and fewer collaborators per paper (see e.g. Araújo et al., 2017; King et al., 2017).
 
-A Tweedie distribution was used to estimate the relationship between author gender and NCS (Funk et al., 2010; Jørgensen, 1987). The continuous outcome variable, NCS, is highly right-skewed with a probability mass at zero. Tweedie distributions are a class of mixed compound Poisson-gamma distributions with a discrete mass at zero. This makes them useful for modeling continuous outcome variables with a mixture of zeros and positive values. Tweedie distributions belong to the exponential family of generalized linear models (GLM). The mean and variance for the Tweedie random variable are EY and VarY=φμp, respectively, where φ is the dispersion parameter and p is the parameter controlling the variance of the distribution. Tweedie distributions take variance-power values p in the range >1 and < 2. We estimated three basic GLM-models using link power=0 corresponding to a log-link function and variance power of p=1.65, p=1.72 and p=1.6 for the three models, F_first, F_last and F_both, respectively. Variance power was derived empirically through iterative algorithms seeking an optimal fit. The dispersion parameter was used to test for goodness of fit and examine possible overdispersion. Robustness checks were carried out to examine the sensitivity of the results to alternative model and sample specifications (see Figure 2—source datas 2–4). First, we ran negative binomial regressions with raw per-paper citation scores (with a four-year citation window) (CS) as the outcome variable in Samples 1, 2 and 3. Next, we ran Tweedie regressions with NCS as outcome variable based on the full, un-matched data set. Finally, we ran Tweedie regressions with dummy variables for different levels of MNCS journal (low, medium, and high). This allowed us to examine whether adjusting for journal prestige at different thresholds influenced the case coefficients in Samples 1, 2, and 3. The dummy variables were created based on percentile ranks of MNCS journal. The percentile thresholds were ≥ 95% for the high-category variable, ≥ 50% < 95% for the medium-category variable and < 50% for the low category variable.
+A Tweedie distribution was used to estimate the relationship between author gender and NCS (Funk et al., 2010; Jørgensen, 1987). The continuous outcome variable, NCS, is highly right-skewed with a probability mass at zero. Tweedie distributions are a class of mixed compound Poisson-gamma distributions with a discrete mass at zero. This makes them useful for modeling continuous outcome variables with a mixture of zeros and positive values. Tweedie distributions belong to the exponential family of generalized linear models (GLM). The mean and variance for the Tweedie random variable are $EY$ and $VarY=\phi\mu^{p}$, respectively, where $\phi$ is the dispersion parameter and p is the parameter controlling the variance of the distribution. Tweedie distributions take variance-power values p in the range >1 and < 2. We estimated three basic GLM-models using link power=0 corresponding to a log-link function and variance power of p=1.65, p=1.72 and p=1.6 for the three models, F_first, F_last and F_both, respectively. Variance power was derived empirically through iterative algorithms seeking an optimal fit. The dispersion parameter was used to test for goodness of fit and examine possible overdispersion. Robustness checks were carried out to examine the sensitivity of the results to alternative model and sample specifications (see Figure 2—source datas 2–4). First, we ran negative binomial regressions with raw per-paper citation scores (with a four-year citation window) (CS) as the outcome variable in Samples 1, 2 and 3. Next, we ran Tweedie regressions with NCS as outcome variable based on the full, un-matched data set. Finally, we ran Tweedie regressions with dummy variables for different levels of MNCS journal (low, medium, and high). This allowed us to examine whether adjusting for journal prestige at different thresholds influenced the case coefficients in Samples 1, 2, and 3. The dummy variables were created based on percentile ranks of MNCS journal. The percentile thresholds were ≥ 95% for the high-category variable, ≥ 50% < 95% for the medium-category variable and < 50% for the low category variable.
 
 Logistic regression was used to estimate the relationship between the four covariates (self-citations, N authors, MNCS journal and international collaboration) and the case variable in each sample.
 
@@ -141,6 +398,10 @@ The statistical analyses were conducted in R version 3.4.3. For the matching pro
 
 Information for the calculation of bibliometric indices (CS, NCS, JS, MNCS journal, self-citations and international collaboration) were obtained from the Centre for Science and Technology Studies (CWTS), Leiden University. CWTS hosts a curated, quality-added version of the Web of Science which enables the calculation of field-normalized citation indicators, which is not immediately possible in the standard version available online. Calculation methods are standard operations, as described in Waltman et al. (2012). For clarity, we briefly explain the NCS and MNCS journal indicators here. The purpose of using field-normalized citation indicators is to account for very large differences in citation activity and density across fields, stemming from differences in the referencing behavior and norms for various fields. The operation makes comparison between fields possible, as the score expresses impact relative to the field a given paper is published in, rather than an absolute impact, which may have different meanings across fields. To normalize citation scores, the raw citation count (CS) is divided by the mean citation scores of equivalent papers from the same field. These are papers published in the same year and field, and in this case, with citations counted in the same number of years. This gives us the NCS. Fields are here delimited by an algorithmic approach developed by Waltman and van Eck (2012), where papers are assigned to clusters based on their citing, citation and topical commonalities. These clusters thus define small fields with common referencing cultures, increasing internal consistency when calculating field normalizations. The MNCS journal is simply the mean NCS of all papers published in a given journal in a given year. Like the Journal Impact Factor, the MNCS journal changes from one year to another, and the MNCS journal for a paper is then calculated for the year the paper was published.
 
-Weitzman’s measure, or Δ, is well-defined for density functions. Let f(x) and g(x) be two probability density functions, then:Δ=∫min⁡(fx,gx)dx
+Weitzman’s measure, or Δ, is well-defined for density functions. Let f(x) and g(x) be two probability density functions, then:
+
+$$
+Δ=\intmin⁡(fx,gx)dx
+$$
 
 However, for empirical distributions the solution is not as well-defined. We used the “overlapping” R-package (Pastore, 2018), which divides two empirical density distributions into intervals and calculates the cumulative sum (integral) of minimum values per interval. As both distributions by definition have a cumulative sum of 1, the result is in the range 0 to 1, where 1 implies identical distributions and 0 the complete absence of any overlap. Estimating the overlap empirically heavily depends on the number of bins the distribution is divided into. We tested various bin ranges for our samples and found estimates stabilized around 5,000 bins and upward, and thus used 10,000 bins for the analysis.

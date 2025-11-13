@@ -16,8 +16,8 @@
 ### Affiliations
 
 1. Department of Genetics, Harvard Medical School Boston United States
-2. https://ror.org/04gyf1771 Department of Physiology and Biophysics, University of California, Irvine Irvine United States
-3. https://ror.org/006w34k90 Howard Hughes Medical Institute Boston United States
+2. Department of Physiology and Biophysics, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+3. Howard Hughes Medical Institute Boston United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -27,13 +27,13 @@ The ability to independently control gene expression in two different tissues in
 
 ## Introduction
 
-## Combinatorial binary systems
+### Combinatorial binary systems
 
 Most reagents available for loss-of-function (LOF) and gain-of-function studies using RNAi or CRISPR rely on GAL4/UAS-mediated expression (Brand and Perrimon, 1993; Dietzl et al., 2007; Perkins et al., 2015; Zirin et al., 2020; Port and Boutros, 2022). However, some studies, such as the study of intercellular or inter-organ communication, require the simultaneous use of two independent binary transcriptional systems. For example, dual expression systems have been used to study how a Drosophila insulin-like peptide released from the wing primordium communicates with the brain to control organ growth (Colombani et al., 2015), analyze signaling from olfactory neurons to blood cells (Shim et al., 2013), independently manipulate ligand-producing and ligand receiving cells (Yagi et al., 2010), and visualize interactions between clonal cell populations in tissues (Bosch et al., 2015). Based on the need to simultaneously manipulate different sets of cells in a given tissue, the LexA/LexAop system (Lai and Lee, 2006) and the QF/QUAS system (Potter et al., 2010; Potter and Luo, 2011) have been developed. There have been no systematic studies comparing the two systems, with only anecdotal evidence to support one system over the other.
 
 The numbers of available LexA and QF fly lines with tissue-specific expression domains are far lower than that represented by the thousands of GAL4 enhancer lines, which have been developed using various approaches over the past 25 years. The largest existing set of LexA system driver lines were produced by the Janelia FlyLight Project and Vienna Tiles Project (Jenett et al., 2012; Tirian and Dickson, 2017). However, these lines were developed primarily for nervous system expression. Although they are often expressed in other tissues, they are not well suited for experiments targeting non-neuronal cell types. Furthermore, the FlyLight lines use a p65 transcriptional activation domain and therefore are not compatible with the GAL80 temperature-sensitive GAL4 repression system. A second large collection of ~180 LexA-based enhancer trap fly stocks has been generated (the StanEx collection) (Kockel et al., 2016; Kockel et al., 2019; Kim et al., 2023). On average, each StanEx line expresses LexA activity in five distinct cell types, with only one line showing expression in just one tissue, unfortunately limiting usefulness of these reagents (Kockel et al., 2016). These findings are consistent with prior studies indicating that enhancers very rarely produce expression patterns that are limited to a single cell type in a complex organism (Jenett et al., 2012). Regarding the Q system, there are 101 total QF lines available from the Bloomington Drosophila Stock Center (BDSC). As the original QF can be toxic when expressed at high levels (Potter et al., 2010), second-generation QF2 and QF2w, which are much less toxic and can be expressed broadly in vivo, were generated (Riabinina et al., 2015). Among the 51 QF2 and QF2w lines available at BDSC, most are expressed in the brain, with relatively few of these drivers expressed specifically in other tissues. Thus, there remains an unmet need for more LexA and QF drivers with tissue-specific expression patterns. Furthermore, there are only ~260 LexA driver-compatible LexAop and ~130 QF driver-compatible QUAS stocks available at BDSC. The vast majority of these are to induce expression of fluorescent reporter genes, rather than molecular genetic reagents such as shRNAs for RNAi. This lack of fly stock reagents dramatically slows down studies that require two independent binary transcriptional systems, as custom fly stock reagents must be made by individual groups.
 
-## Rapid and efficient generation of driver lines by CRISPR-Cas9
+### Rapid and efficient generation of driver lines by CRISPR-Cas9
 
 Several methods have been developed to generate new drivers with well-established tissue-specific patterns. However, these methods require either de novo generation of new driver lines, as for the integrase swappable in vivo targeting element (InSITE) system (Gohl et al., 2011), or PhiC31-induced insertion of a transcription factor cassette into an existing minos-mediated integration cassette genomic insertion (Venken et al., 2011; Diao et al., 2015; Gnerer et al., 2015). CRISPR/Cas9 technology now makes it possible to knock-in a transcriptional activator into any locus. Some groups have also recently described tools to swap QF or LexA into the GAL4 coding region of existing GAL4 enhancer trap lines (Lin and Potter, 2016; Chang et al., 2022; Karuparti et al., 2023). The conversion can be performed through genetic crosses; however, the frequency of conversion can vary greatly among different GAL4 lines, and many such swaps do not fully reproduce the original GAL4 expression patterns (Chen et al., 2019).
 
@@ -41,7 +41,7 @@ Despite these techniques, and the growing collection of LexA-GAD and QF2 lines, 
 
 ## Results
 
-## Strategy for CRISPR knock-in of T2A-LexA-GAD and T2A-QF2
+### Strategy for CRISPR knock-in of T2A-LexA-GAD and T2A-QF2
 
 We made each genetic driver line by inserting T2A-LexA-GAD or T2A-QF2 in the coding sequence of a target gene. We have previously reported the CRISPaint method to insert T2A-GAL4 into any gene using homology-independent repair (Bosch et al., 2020). Using this method, we showed robust gene-specific integration of donor plasmids in the fly germ line and successfully generated new driver lines. However, because of the high probability of indels at the insertion site, we opted to use traditional CRISPR homology-directed repair to insert the T2A-LexA-GAD and T2A-QF2 into the genome. We first modified the CRISPaint donor vectors to produce pHDR-T2A-LexA-GAD-Hsp70-3xP3-RFP and pHDR-T2A-QF2-Hsp70-3xP3-RFP, which contain the transcriptional activators followed by Hsp70 terminators. We opted to use the Hsp70 3’UTR, as opposed to SV40 3’UTR, because it is comparatively weaker and may avoid toxicity due to overexpression of LexA-GAD or QF2. We also constructed pHDR-T2A-QF2-T2A-LexA-GAD-3xP3-RFP, which contains both activators flanked by FRT sites followed by SV40 terminator (Figure 1A). All the vectors contain a 3XP3-RFP transformation marker gene flanked by loxP sites. These vectors are compatible with two different cloning methods for making a CRISPR donor plasmid. In the long homology arm (HA) method (Figure 1B), ~1000 bp HAs are amplified from genomic DNA and inserted into the donor plasmid by Gibson assembly. A separate target-gene-specific guide RNA is cloned into a U6 promoter expression vector such as pCFD3 (Port et al., 2014). In the ‘drop-in’ cloning method (Figure 1C; Kanca et al., 2022), a company synthesizes and clones a plasmid that contains all of the necessary features for CRISPR HDR plus a cloning site to allow ligation of T2A-LexA-GAD, T2A-QF, or T2A-LexA-GAD-T2A-QF fragments in a single step to produce the donor plasmid.
 
@@ -51,7 +51,308 @@ We made each genetic driver line by inserting T2A-LexA-GAD or T2A-QF2 in the cod
 
 For our targets, we selected a set of genes with tissue-specific expression patterns encompassing most of the major organs of the fly (Table 1). When possible, we selected genes which had a previously characterized GAL4 insertion, and strong evidence of tissue specificity (e.g. from publicly available scRNAseq, in situ, and immunohistochemistry). Once the donors/guides were cloned, they were injected into Cas9-expressing fly embryos to induce CRISPR-based HDR of the T2A-LexA-GAD or T2A-QF2 (Figure 1D and E). We selected integration sites in the most 5’ coding exon common to all or most isoforms, resulting in expression of the activators under control of the endogenous gene regulatory regions. The knock-in also produces a truncated endogenous protein and thus a predicted strong LOF allele. To verify the knock-ins, we PCR-amplified the genomic regions flanking the insertion sites and confirmed that the insertions were seamless and in-frame. Most of our knock-in stocks were made with the long HA method, but we transitioned to the drop-in method as this technology became available. As Table 1 shows, we were able to successfully generate knock-ins into nearly all the target genes using these methods.
 
-## Specificity of T2A-LexA-GAD and T2A-QF2 knock-in lines
+**Table 1.**
+ T2A-LexA-GAD and T2A-QF2 knock-in lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target tissue</th>
+      <th>Target gene (name)</th>
+      <th>QF2</th>
+      <th>This paper</th>
+      <th>3XP3 removed</th>
+      <th>Others at BDSC</th>
+      <th>LexA-GAD</th>
+      <th>This paper</th>
+      <th>3XP3 removed</th>
+      <th>Others at BDSC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ubiquitous</td>
+      <td>da</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Germline</td>
+      <td>vas*</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Muscle</td>
+      <td>Mef2</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>66469</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>97530</td>
+    </tr>
+    <tr>
+      <td>Muscle</td>
+      <td>bt*</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Pan-neuronal</td>
+      <td>elav†</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>66466</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Glia</td>
+      <td>repo</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>66477</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>97535</td>
+    </tr>
+    <tr>
+      <td>Insulin-producing cells</td>
+      <td>Ilp2 (regulatory region)†</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>N/A</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Fat</td>
+      <td>apolpp</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Trachea</td>
+      <td>btl</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Heart</td>
+      <td>Hand*</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Enocyte</td>
+      <td>CG9458*</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Enocyte</td>
+      <td>CG17560*</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Salivary gland</td>
+      <td>Sgs3*</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Prothoracic gland</td>
+      <td>phtm</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Midgut</td>
+      <td>mex1</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Adult midgut enterocyte</td>
+      <td>Myo31DF</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Hemocyte</td>
+      <td>Hml</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>66468</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Hemocyte</td>
+      <td>He</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Crystal cell</td>
+      <td>PPO1</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Lamellocyte</td>
+      <td>PPO3</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Posterior segment</td>
+      <td>hh†</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>97536</td>
+    </tr>
+    <tr>
+      <td>Wing pouch/hinge</td>
+      <td>nub</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Imaginal disc A/P boundary</td>
+      <td>dpp (regulatory region)†</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>N/A</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>N/A</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Constructs were cloned using the drop-in method. All others were cloned by PCR of long homology arms.†Constructs were cloned into double driver vectors._
+
+### Specificity of T2A-LexA-GAD and T2A-QF2 knock-in lines
 
 Next, we tested the specificity of the knock-in driver lines in the third instar larva (Figure 2). Each T2A-LexA-GAD and T2A-QF2 knock-in line was crossed to a LexAop-GFP and QUAS-GFP reporter, respectively. Note that most of the lines are highly tissue-specific and are comparable between the LexA-GAD and QF2 knock-ins. Insertions in the daughterless gene (da) are an exception, as the T2A-LexA-GAD (Figure 2A), but not the T2A-QF2 (Figure 2B), gives the expected ubiquitous expression pattern. Similarly, for insertions in the nubbin gene (nub) the T2A-LexA-GAD (Figure 2LL), but not the T2A-QF2 (Figure 2MM), gives the expected expression in the wing imaginal disc. In both cases, T2A-QF is expressed in the correct tissues, but incompletely. Even with these exceptions, the patterns are remarkably consistent between the T2A-LexA-GAD and T2A-QF2 knock-in lines overall.
 
@@ -65,27 +366,27 @@ Our donor plasmids contain the transgenesis marker 3XP3-RFP, which expresses red
 
 **Figure 3.:** (A) T2A-QF2-3XP3-RFP in the repo gene crossed to a QUAS-GFP reporter. In third instar larva, the reporter is expressed in the expected glial cells, but also misexpressed in gut and anal pad (yellow asterisk). (B) T2A-QF2 in the repo gene with the 3XP3-RFP removed by Cre-Lox recombination, crossed to a QUAS-GFP reporter. Removal of 3XP3-RFP eliminated gut and anal pad misexpression and did not affect glial cell expression (white arrowheads).
 
-## T2A-QF2-T2A-LexA-GAD double driver lines
+### T2A-QF2-T2A-LexA-GAD double driver lines
 
 To make the T2A-LexA-GAD or T2A-QF2 knock-ins described above, each donor plasmid must be individually cloned and injected into embryos. We reasoned that by combining both drivers into a single construct, we could halve the number of injections, one of the most labor-intensive and expensive parts of the process. For this combined expression of LexA-GAD and QF2 transcription factors, we built two types of vectors: (1) a CRISPR donor version, pHDR-T2A-QF2-T2A-LexA-GAD-3xP3-RFP, which is used to insert the cassette into an endogenous locus of interest (Figure 4A), and (2) a phiC31-attB version, pMCS-T2A-QF2-T2A-LexA-GAD-WALIUM20, which is used to clone an enhancer fragment of interest and is then integrated into an attP site in the fly’s genome (Figure 4B). Note that the phiC31-attB-compatible constructs use mini-white, not 3XP3-RFP, as a marker gene. Using these vectors, we generated CRISPR knock-ins into the elav and hedgehog (hh) genes and enhancer lines for the decapentaplegic (dpp) and insulin-like peptide 2 (Ilp2) (Figure 4F) genes. The elav knock-in (Figure 4C) expressed both T2A-QF2 and T2A-LexA-GAD in the expected pattern in the larval nervous system. However, we did see some weak non-specific expression of T2A-LexA-GAD in the somatic muscles. The hh knock-in (Figure 4D) expressed both T2A-QF2 and T2A-LexA-GAD in the expected pattern in the posterior of the imaginal discs. However, we observed that T2A-QF2, but not T2A-LexA-GAD, was restricted from the wing pouch, similar to the individual nub knock-ins (Figure 4D and Figure 2LL–MM). As expected, the dpp enhancer (Figure 4E) directed expression of both T2A-QF2 and T2A-LexA-GAD along the anterior/posterior margin of the wing imaginal disc. Again, however, T2A-QF was much reduced in the wing pouch. Finally, the Ilp2 enhancer (Figure 4F) directed expression of both T2A-QF2 and T2A-LexA-GAD very specifically in the insulin-producing cells of the larval brain. Taken together, these results show that the double driver constructs can effectively drive expression of both activators simultaneously in the target tissue, with the caveat that T2A-QF2 does not express well in the wing pouch.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94073/elife-94073-fig4-v1.jpg)
 
-**Figure 4.:** (A) CRISPR-based HDR strategy for integration of the T2A-QF2-T2A-LexA-GAD-3XP3 in the most 5’ coding exon common to all or most isoforms, resulting in expression of both activators under control of the endogenous gene regulatory region. The knock-in also produces a truncated endogenous protein and thus a strong loss-of-function allele. If desired, one of the two coding regions can then be excised with Flp, resulting in flies that express only QF2 or LexA-GAD. (B) Alternative strategy allows gene enhancers to be cloned upstream of of T2A-QF2-T2A-LexA-GAD. The vector backbone includes an attB site for phiC31 insertion into attP flies. (C–D) T2A-QF2-T2A-LexA-GAD knock-ins crossed to a QUAS-GFP+LexAop-mCherry double reporter line. (C) The elav knock-in drives both QUAS-GFP and LexAop-mCherry in the larval brain. There is some leakiness of mCherry in the body wall muscle (arrowheads). (T2A-QF2-T2A-LexA-GADD) The hh knock-in drives both QUAS-GFP and LexAop-mCherry in the posterior of the wing imaginal disc. GFP expression is much less than mCherry in the wing pouch (asterisks). (T2A-QF2-T2A-LexA-GADE–F) Enhancer-T2A-QF2-T2A-LexA-GAD lines crossed to a QUAS-GFP+LexAop-mCherry double reporter line. (E) The dpp-blk enhancer-T2A-QF2-T2A-LexA-GAD line drives both QUAS-GFP and LexAop-mCherry along the anterior/posterior boundary of the wing imaginal disc. GFP expression is much less than mCherry in the wing pouch (stars). (F) The Ilp2 enhancer-T2A-QF2-T2A-LexA-GAD line drives both QUAS-GFP and LexAop-mCherry in the insulin-producing cells of the larval brain (arrows). The fat body mCherry expression (yellow arrowhead) is from leakiness of the reporter stock and does not indicate LexA-GAD activity.
+**Figure 4.:** (A) CRISPR-based HDR strategy for integration of the T2A-QF2-T2A-LexA-GAD-3XP3 in the most 5’ coding exon common to all or most isoforms, resulting in expression of both activators under control of the endogenous gene regulatory region. The knock-in also produces a truncated endogenous protein and thus a strong loss-of-function allele. If desired, one of the two coding regions can then be excised with Flp, resulting in flies that express only QF2 or LexA-GAD. (B) Alternative strategy allows gene enhancers to be cloned upstream of of T2A-QF2-T2A-LexA-GAD. The vector backbone includes an attB site for phiC31 insertion into attP flies. (C–D) T2A-QF2-T2A-LexA-GAD knock-ins crossed to a QUAS-GFP+LexAop-mCherry double reporter line. (C) The elavT2A-QF2-T2A-LexA-GAD knock-in drives both QUAS-GFP and LexAop-mCherry in the larval brain. There is some leakiness of mCherry in the body wall muscle (arrowheads). (D) The hhT2A-QF2-T2A-LexA-GAD knock-in drives both QUAS-GFP and LexAop-mCherry in the posterior of the wing imaginal disc. GFP expression is much less than mCherry in the wing pouch (asterisks). (E–F) Enhancer-T2A-QF2-T2A-LexA-GAD lines crossed to a QUAS-GFP+LexAop-mCherry double reporter line. (E) The dpp-blk enhancer-T2A-QF2-T2A-LexA-GAD line drives both QUAS-GFP and LexAop-mCherry along the anterior/posterior boundary of the wing imaginal disc. GFP expression is much less than mCherry in the wing pouch (stars). (F) The Ilp2 enhancer-T2A-QF2-T2A-LexA-GAD line drives both QUAS-GFP and LexAop-mCherry in the insulin-producing cells of the larval brain (arrows). The fat body mCherry expression (yellow arrowhead) is from leakiness of the reporter stock and does not indicate LexA-GAD activity.
 
 Next, we attempted to derive single T2A-QF2 and T2A-LexA-GAD lines from T2A-QF2-T2A-LexA-GAD double drivers. The strategy is outlined in Figure 5A. FRT3 and FRT are mutually incompatible target sites for the Flp recombinase: FRT3 can recombine with another FRT3, and FRT with FRT, but FRT3 cannot recombine with FRT. When recombined in cis, these mutually incompatible FRT target sites randomly excise one of two inserts (see Bosch et al., 2015). Hence, Flp expression will result in the formation of either T2A-FRT3-LexA-GAD-FRT (caused by recombination between FRT3 sites) or T2A-FRT3-QF2-FRT (if recombination occurs between FRT sites). Both recombination products will be stable even in the presence of Flp because they now lack a pair of compatible FRT sites. This enables us to obtain the individual driver lines (QF2 and LexA-GAD) by crossing the double drivers to flies that express Flp in the germline upon heat shock. We tested this with the hh and dpp lines and observed robust generation of both T2A-QF2 and T2A-LexA-GAD from hs-Flp; T2A-QF2-T2A-LexA-GAD parents (Figure 5B). In the case of the hh line, 15 out of 36 heat-shocked parents gave rise to at least one T2A-LexA-GAD progeny, with a mean of 14% recombinant offspring per parent. 20 out of 36 gave rise to at least one T2A-QF2 progeny, with a mean of 9% recombinant offspring per parent. In the case of the dpp line, 31 out of 32 heat-shocked parents gave rise to at least one T2A-LexA-GAD progeny, with a mean of 30% recombinant offspring per parent. 17 out of 32 gave rise to at least one T2A-QF2 progeny, with a mean of 9% recombinant offspring per parent. We verified the recombinants by crossing to a stock containing both LexAop-mCherry and QUAS-GFP. Figure 5C–E shows the wing disc from the hh double driver (Figure 5C), a recombinant which only expresses T2A-QF2 (Figure 5D) and a recombinant which only expresses LexA-GAD (Figure 5E). Recombinants were also independently verified by PCR of the insertions (Figure 5F and G), where we observed the expected smaller band sizes in the derivative T2A-QF2 and T2A-LexA-GAD relative to the parental double driver.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/94073/elife-94073-fig5-v1.jpg)
 
-**Figure 5.:** (A) FLP/FRT recombination scheme. Flies containing both hs-FLP and a T2A-QF2-T2A-LexA-GAD knock-in are heat shocked during larval development to induce one of two mutually exclusive recombination events in their germline between either FRT or FRT3. (B) Heat shock of hsFLP; hh and hsFLP; T2A-QF2-T2A-LexA-GADdpp flies produces frequent recombinants, both T2A-QF2 and T2A-LexA-GAD. The bar graph shows the proportion of heat-shocked animals that produced at least one recombinant offspring. The dot plot shows the proportion of recombinant offspring per heat-shocked parent. Mean ± SD is indicated. (T2A-QF2-T2A-LexA-GADC–D) Validation of individual hh derivatives by immunofluorescence. All panels show third instar larval wing discs dissected from potential T2A-QF2 and hhT2A-LexA-GADhh recombinants crossed to a QUAS-GFP+LexAop-mCherry reporter line. (T2A-QF2-T2A-LexA-GADC) Wing disc from non-recombinant hh showing expression of both GFP and mCherry in the posterior of the wing disc. Note, this is the same image as shown in T2A-QF2-T2A-LexA-GADFigure 4D. (D) Wing disc from recombinant hh showing expression of GFP but not mCherry in the posterior of the wing disc. (T2A-QF2E) Wing disc from recombinant hh showing expression of mCherry but not GFP in the posterior of the wing disc. Validation of (T2A-LexA-GADF) hh derivatives and (T2A-QF2 and hhT2A-LexA-GADG) dpp derivatives by PCR from genomic DNA from individual flies. In all panels, for brevity, T2A-QF2-T2A-LexAop, T2A-QF2, and T2A-LexAop, are notated as Q+L, Q(-L), and L(-Q), respectively.T2A-QF2 and dppT2A-LexA-GADFigure 5—source data 1.Figure 5F and G.Figure 5—source data 2.Figure 5F and G.
+**Figure 5.:** (A) FLP/FRT recombination scheme. Flies containing both hs-FLP and a T2A-QF2-T2A-LexA-GAD knock-in are heat shocked during larval development to induce one of two mutually exclusive recombination events in their germline between either FRT or FRT3. (B) Heat shock of hsFLP; hhT2A-QF2-T2A-LexA-GAD and hsFLP; dppT2A-QF2-T2A-LexA-GAD flies produces frequent recombinants, both T2A-QF2 and T2A-LexA-GAD. The bar graph shows the proportion of heat-shocked animals that produced at least one recombinant offspring. The dot plot shows the proportion of recombinant offspring per heat-shocked parent. Mean ± SD is indicated. (C–D) Validation of individual hhT2A-QF2 and hhT2A-LexA-GAD derivatives by immunofluorescence. All panels show third instar larval wing discs dissected from potential hhT2A-QF2-T2A-LexA-GAD recombinants crossed to a QUAS-GFP+LexAop-mCherry reporter line. (C) Wing disc from non-recombinant hhT2A-QF2-T2A-LexA-GAD showing expression of both GFP and mCherry in the posterior of the wing disc. Note, this is the same image as shown in Figure 4D. (D) Wing disc from recombinant hhT2A-QF2 showing expression of GFP but not mCherry in the posterior of the wing disc. (E) Wing disc from recombinant hhT2A-LexA-GAD showing expression of mCherry but not GFP in the posterior of the wing disc. Validation of (F) hhT2A-QF2 and hhT2A-LexA-GAD derivatives and (G) dppT2A-QF2 and dppT2A-LexA-GAD derivatives by PCR from genomic DNA from individual flies. In all panels, for brevity, T2A-QF2-T2A-LexAop, T2A-QF2, and T2A-LexAop, are notated as Q+L, Q(-L), and L(-Q), respectively.
 
-## TRiP LexAop and QUAS shRNA vectors produce effective gene knockdown
+### TRiP LexAop and QUAS shRNA vectors produce effective gene knockdown
 
 The TRiP has previously generated a QUAS version of our standard shRNA expression vector, pQUAS-WALIUM20 (Perkins et al., 2015), containing the standard five copies of the QF-binding site (Potter et al., 2010). We also generated pLexAop-WALIUM20, containing 13 LexA DNA-binding sites, previously reported to give optimal expression with minimal leakiness (Pfeiffer et al., 2010; Figure 6A). We cloned shRNAs targeting forked (f) and ebony (e) genes into these vectors and assayed their phenotypes when crossed to ubiquitous LexA-GAD and QF2 drivers. The first driver tested was the T2A-LexA-GAD knock-in in the da gene (Figure 2A), generated in this study. This produced 100% penetrant forked bristle and ebony cuticle phenotypes in the adult thorax when crossed to f (Figure 6E) and e (Figure 6H) shRNA lines, respectively. For this experiment, white (w) shRNA was used as a negative control. We did not test the T2A-QF2 knock-in in the da gene, as we have already shown that the expression pattern was not ubiquitous (Figure 2G). Instead, to directly compare the two systems, we used previously described ubiquitous LexA-GAD and ubiquitous QF2 (Lai and Lee, 2006) under the control of αTub84B regulatory sequences. Both Tub-LexA-GAD and Tub-QF2 drivers generated knockdown phenotypes in the thorax when crossed to f and e shRNA lines. However, the Tub-LexA-GAD phenotypes were stronger than those of Tub-QF2 (Figure 6C–D, F–G, I–J). For example, Tub-LexA-GAD produced a fully penetrant f bristle phenotype (Figure 6F) while some wild-type bristles remained on the thoraces of Tub-QF2 f knockdown (Figure 6G). Neither Tub-LexA-GAD nor Tub-QF2 was able to achieve the strength of phenotype generated by the T2A-LexA-GAD da knock-in line (compare the darkness of the cuticle caused by e knockdown in Figure 6H–J).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/94073/elife-94073-fig6-v1.jpg)
 
-**Figure 6.:** (A) shRNAs for knockdown or genes for overexpression were cloned into pLexAop-WALIUM20 and pQUAS-WALIUM20, derived from the TRiP WALIUM20 vector. (B–J) Dorsal view of adult fly thoraces resulting from crosses of LexAop or QUAS shRNAs to da (generated in this study), T2A-LexA-GADTub-LexA-GAD (Bloomington Drosophila Stock Center [BDSC] 66686), or Tub-QF2 (BDSC 51958). (B–C) white shRNA control produced no thoracic phenotypes in any of the crosses. (E–G) forked shRNA produced a forked bristles phenotype (white arrowheads). Note that some bristles retain a more elongated wild-type morphology with the Tub-QF2-driven forked knockdown (G, yellow asterisk). (H–J) ebony shRNA produced a darkened cuticle phenotype. The da driver produced the strongest phenotype (compare panel H to I and J).T2A-LexA-GAD
+**Figure 6.:** (A) shRNAs for knockdown or genes for overexpression were cloned into pLexAop-WALIUM20 and pQUAS-WALIUM20, derived from the TRiP WALIUM20 vector. (B–J) Dorsal view of adult fly thoraces resulting from crosses of LexAop or QUAS shRNAs to daT2A-LexA-GAD (generated in this study), Tub-LexA-GAD (Bloomington Drosophila Stock Center [BDSC] 66686), or Tub-QF2 (BDSC 51958). (B–C) white shRNA control produced no thoracic phenotypes in any of the crosses. (E–G) forked shRNA produced a forked bristles phenotype (white arrowheads). Note that some bristles retain a more elongated wild-type morphology with the Tub-QF2-driven forked knockdown (G, yellow asterisk). (H–J) ebony shRNA produced a darkened cuticle phenotype. The daT2A-LexA-GAD driver produced the strongest phenotype (compare panel H to I and J).
 
 ## Discussion
 
@@ -97,17 +398,17 @@ When we compared the knockdown efficiency of shRNAs targeting forked and ebony a
 
 ## Materials and methods
 
-## Generation of pHDR-T2A-LexA/QF2-Hsp70-3xP3-RFP plasmids
+### Generation of pHDR-T2A-LexA/QF2-Hsp70-3xP3-RFP plasmids
 
 To generate the pHDR-T2A-LexA/QF2-Hsp70-3xP3-RFP plasmids, we replaced the SV40-3’UTR present in the pCRISPaint-T2A-LexA/QF2 vector (Bosch et al., 2020) with the hsp70-3’UTR, using Gibson assembly (Gibson et al., 2009) (NEB E2611). The hsp70-3’UTR was amplified from a pCRISPaint-GAL4-Hsp70 plasmid using the following primers: F: GTCGACTAAAGCCAAATAG, R: AAACGAGTTTTTAAGCAAAC, appended at the 5’ end with appropriate homologous overhangs for Gibson assembly. To remove the two endogenous SacI sites in the QF2 coding sequence, we used Gibson assembly featuring primers that introduce synonymous SNPs which mutate the SacI-binding sites without disrupting the coding sequence (GAGCTC>GAACTC).
 
-## Cloning of T2A-LexA-GAD and T2A-QF2 donor constructs
+### Cloning of T2A-LexA-GAD and T2A-QF2 donor constructs
 
 For the long-HA cloning method, we amplified the HAs by selecting ~1000 kb upstream and downstream of the guide cut site, making sure that the left HA is in frame with the T2A, and that the ends of the primers contain Gibson overhangs matching the pHDR-T2A-LexA/QF2-Hsp70-3xP3-RFP plasmids. Amplification was always from genomic DNA from the nos-Cas9 injection stock. We used Phusion (NEB), Taq (Takara), or Q5 (NEB). In cases where the PCR product was faint, we set up eight PCR samples in parallel, combined them, concentrated them using phenol-chloroform extraction followed by ethanol precipitation, and ran the concentrated sample on a gel to obtain a bright band that was then gel-purified for use in Gibson assembly. Once the HAs were amplified, we performed Gibson assembly with the pHDR-T2A-LexA/QF2-Hsp70-3xP3-RFP plasmids digested with AscI/SacI. Guide RNAs were cloned separately in pCFD3 (Port et al., 2014). We chose previously designed gRNAs from https://www.flyrnai.org/crispr3/web/. Our criteria were: efficiency >5, and no U6 termination site. Primer and guide sequences are in Supplementary file 2. We designed sense and antisense oligos for each gRNA, and then annealed them together to make a ds-oligo with overhangs for cloning: we combined 1.0 µl each 100 µM sense+antisense oligo, 1.0 µl 10× T4 ligase buffer, 0.5 µl T4 polynucleotide kinase (NEB), and 6.5 µl dH2O, and incubated at 37°C 30 min followed by 5 min at 95°C and slowly cooling down to room temperature (–5°C/min). The ds-oligos were then ligated into BbsI-digested pCFD3 vector with T4 ligase (NEB). Following cloning, plasmids were verified by sequencing with primer (GCCGAGCACAATTGTCTAGAATGC).
 
 For the drop-in method, we followed a modified version of the protocol described elsewhere (Kanca et al., 2022). Briefly, homology donor intermediate vectors were ordered from Genewiz in the pUC57 Kan_gw_OK2 vector backbone, containing the gene-specific guide sequence, 200 bp short HAs flanking the genomic cut site, and a BbsI and SacI cloning site. pHDR-T2A-LexA/QF2-Hsp70-3xP3-RFP plasmids were digested with AscI/SacI, producing a 2677 bp fragment for QF2 and the ~4.5 kb fragment for LexA-GAD, each with overhangs compatible with the pUC57 Kan_gw_OK2 BbsI/SacI overhangs. The digested pUC57 Kan_gw_OK2 backbone, containing the HAs and guides, was then ligated with the digested T2A-LexA/QF2-Hsp70-3xP3-RFP with 2.5 µl 10× T4 DNA ligase buffer (NEB B0202S) and 0.5 µl T4 DNA ligase (NEB M0202S). Sequences of the synthesized drop-in fragments are in Supplementary file 3.
 
-## Construction of T2A-QF2-T2A-LexA-GAD double driver constructs
+### Construction of T2A-QF2-T2A-LexA-GAD double driver constructs
 
 For combined expression of LexA-GAD and QF2 transcription factors, we built two different vectors: (1) a CRISPR donor version, which we used to insert the LexA-GAD-QF2 cassette into an endogenous locus of interest, such that the expression of lexA-GAD and QF2 is driven by endogenous regulatory sequences, and (2) a ϕC31-attB version, which is used to clone an enhancer fragment of interest and integrated into an attP site in the fly genome.
 
@@ -125,32 +426,59 @@ We transformed the Gibson assembly reaction into Top10 chemically competent E. c
 
 To make a variant pMCS-QF2-LexA-GAD-alt that lacks the Hsp70 promoter, we did Gibson assembly as above, except we replaced the MCS-WAL20-START with MCS-WAL20-START-new gBlock, which lacks the Hsp70 sequence.
 
-## Cloning HAs into pHDR-T2A-QF2-T2A-LexA-GAD-3XP3-RFP
+### Cloning HAs into pHDR-T2A-QF2-T2A-LexA-GAD-3XP3-RFP
 
 HAs were amplified by PCR as described above. See also Supplementary file 5 for the PCR primers. We then digested pHDR-T2A-QF2-T2A-LexA-GAD-3XP3-RFP separately with AscI+SaCI to release the vector backbone and with NotI+SacI to purify the T2A-QF2-T2A-lexA-GAD-3XP3-RFP fragment. We gel-purified the backbone, T2A-QF2-T2A-lexA-GAD-3XP3-RFP fragment, and the HA PCR products, and we assembled all four fragments using Gibson assembly. We used 50 ng vector backbone, twofold molar excess of T2A-QF2-T2A-lexA-GAD-3XP3-RFP, and threefold molar excess of each HA. We transformed the Gibson assembly product into Top10 chemically competent E. coli, miniprepped (QIAGEN) and verified by sequencing. Guides were cloned into pCFD3 as described above.
 
-## Cloning large enhancer fragments into pMCS-T2A-QF2-T2A-lexA-GAD-WALIUM20
+### Cloning large enhancer fragments into pMCS-T2A-QF2-T2A-lexA-GAD-WALIUM20
 
 Ilp2-GAL4 has been described (Wu et al., 2005). The dpp-blk enhancer was described as a ‘4 kb BamHI fragment’ (Masucci et al., 1990) that is 17 kb 3’ of the dpp transcribed region (Blackman et al., 1987; Blackman et al., 1987). The primers used to PCR these fragments, using fly genomic DNA as template, are in Supplementary file 6. After PCR-amplifying the enhancer fragment with Q5 polymerase (+GC for Ilp2, no GC for dpp), we digested it and the destination vector with the corresponding enzymes (NotI+EcoRI for dpp-blk, PacI+EcoRI for Ilp2). We used pMCS-T2A-QF2-T2A-lexA0GAD-WALIUM20 for dpp-blk and pMCS-T2A-QF2-T2A-lexGAD-WALIUM20-alt (which lacks the hsp70 promoter) for Ilp2, since dpp-blk does not have a basal promoter, but the Ilp2 enhancer does. We ligated the PCR fragments into the vectors using T4 ligase (NEB), transformed into E. coli, miniprepped (QIAGEN) and verified by sequencing.
 
 All vectors described here that are required to produce new driver lines will be made available at Addgene.
 
-## Cloning shRNAs
+### Cloning shRNAs
 
 shRNAs (21 bp) were cloned into pQUAS-WALIUM20 and pLexAop-WALIUM20 vectors digested with EcoRI+XbaI, as described previously (Ni et al., 2011). The oligos were as follows:
 
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Oligo forward</th>
+      <th>Oligo reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>white</td>
+      <td>ctagcagtCAGCGTCGTCCAGGTGCTGAAagttatattcaagcataTTCAGCACCTGGACGACGCTGgcg</td>
+      <td>aattcgcCAGCGTCGTCCAGGTGCTGAAtagttatattcaagcataTTCAGCACCTGGACGACGCTGactg</td>
+    </tr>
+    <tr>
+      <td>ebony</td>
+      <td>ctagcagtTCCGGAGAGGTTCTTGGAGAAtagttatattcaagcataTTCTCCAAGAACCTCTCCGGAgcg</td>
+      <td>aattcgcTCCGGAGAGGTTCTTGGAGAAtagttatattcaagcataTTCTCCAAGAACCTCTCCGGAactg</td>
+    </tr>
+    <tr>
+      <td>forked</td>
+      <td>ctagcagtTCCGACCTAATTGCCGAGCTAtagttatattcaagcataTAGCTCGGCAATTAGGTCGGAgcg</td>
+      <td>aattcgcTCCGACCTAATTGCCGAGCTAtagttatattcaagcataTAGCTCGGCAATTAGGTCGGAactg</td>
+    </tr>
+  </tbody>
+</table>
+
 All transgenic lines were sequenced to confirm the identity of the shRNA.
 
-## Fly injections
+### Fly injections
 
 All CRISPR constructs were injected at 250 ng/µl along with 100 ng/µl gene-specific gRNA(s) where appropriate. 300 embryos from y w; iso18; attP2, nos-Cas9 for genes on the X, second or fourth chromosomes and y w; attP40, nos-Cas9; iso5 for genes on the third chromosome per genotype were injected as described previously (Lee et al., 2018). Knock-in efficiencies were comparable to previous reports (Kanca et al., 2019; Kanca et al., 2022). Resulting G0 males and females were crossed individually to appropriate balancer flies for 3XP3-RFP screening. Positive lines were balanced, and stocks were established. For phiC31-integration, each plasmid was injected at 50 ng/μl into y v nos-phiC31-int; attP40 (for chromosome 2 insertions) or y v nos-phiC31-int; attP2 (for chromosome 3 insertions). Injected male G0 flies were crossed with y w; Gla/CyO or y w; Dr e/TM3, Sb to identify transformants and remove the integrase from the X chromosome, and subsequently balanced.
 
-## PCR validation of knock-ins
+### PCR validation of knock-ins
 
 PCR primers that flank the integration site were designed for each targeted gene. These primers were used in combination with primers that bind within the inserted cassette in both orientations. 500–800 nt amplicons were amplified from genomic DNA from individual insertion lines through single fly PCR using GoTaq green master mix (Promega M7122).
 
 All transgenic fly stocks described here will be made available at the BDSC.
 
-## Imaging
+### Imaging
 
 T2A-LexA-Gad, T2A-QF2, or double driver lines were crossed to y w; Sp/CyO; LexAop-GFP (BDSC 52266), y w; QUAS-GFP/CyO (BDSC 52264), or y w; QUAS-GFP (BDSC 52264)/CyO-GFP; LexAop-RFP (BDSC 52271)/TM3. Larvae were placed in PBS and sandwiched between a slide and coverslip, then live-imaged using a Zeiss (Carl Zeiss, Thornwood, NY, USA) Stemi SVII fluorescence microscope. Wing imaginal discs from third instar larvae were dissected in PBS, fixed in 4% methanol-free formaldehyde, and permeabilized in PBT, mounted on glass slides with vectashield (H-1000; Vector Laboratories) under a coverslip, and imaged on a Zeiss 780 confocal microscope.

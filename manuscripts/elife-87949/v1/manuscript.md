@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 School of Mathematics, University of Bristol Bristol United Kingdom
-2. https://ror.org/0524sp257 School of Biochemistry, University of Bristol Bristol United Kingdom
-3. https://ror.org/01tgyzw49 Mechanobiology Institute, National University of Singapore Singapore Singapore
+1. School of Mathematics, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+2. School of Biochemistry, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+3. Mechanobiology Institute, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
 
 † Corresponding author
 
@@ -40,13 +40,13 @@ Having established an effective mitosis detection model, we proceed to analyse c
 
 ## Results
 
-## A deep learning strategy efficiently identifies dividing epithelial cells in time-lapse imaging data
+### A deep learning strategy efficiently identifies dividing epithelial cells in time-lapse imaging data
 
 We chose to develop, and test the capability of, our model using the epithelium of the Drosophila pupal wing because of the optical translucency and genetic tractability of Drosophila, which makes it easy to generate tissues with fluorescently labelled nuclei and cell boundaries (Etournay et al., 2015; George and Martin, 2022; Mao et al., 2011). The Drosophila pupal wing epithelium undergoes extensive growth through rapid cell divisions early in pupal life (Athilingam et al., 2021; Paci and Mao, 2021), and can be imaged with high spatio-temporal resolution using live confocal microscopy. Drosophila pupae at 18 hr after puparium formation (APF) are removed from their brittle, opaque puparium to reveal the transparent pupal wing (Weavers et al., 2018; Figure 1A). The wing epithelium is a relatively flat 2D cell sheet, composed of two opposing cell layers, each one-cell thick. To analyse the cell behaviours involved in tissue repair, we use an ablation laser to generate sterile and reproducible wounds which heal rapidly within a few hours (Weavers et al., 2016). We further enhance reproducibility by localising our imaging and wounding to a particular region of the wing (Figure 1B–D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87949/elife-87949-fig1-v1.jpg)
 
-**Figure 1.:** Drosophila epithelial tissue dynamics in vivo.(A) Translucent Drosophila pupa with the pupal wing highlighted in magenta. (B) The pupal wing (with magnified inset, B’, on the centre zone of the wing where we consistently image) with cell boundaries labelled using E-cadherin-GFP (green) and nuclei with Histone2Av-mRFP (magenta). (C) Magnified view of the pupal wing epithelium after wounding, with the white dashed line indicating the wound edge. (D) Schematic showing a cross-section through the upper layer of epithelium of the pupal wing, with haemolymph (insect blood containing haemocytes and adipocytes) beneath and rigid cuticle above (E) Multiple cell divisions (arrows) occur in the unwounded pupal wing epithelial tissue over the course of 8 min. (F) A cell division (arrow) occurs in a wounded epithelial tissue with the white dashed line indicating the wound edge.
+**Figure 1.:** (A) Translucent Drosophila pupa with the pupal wing highlighted in magenta. (B) The pupal wing (with magnified inset, B’, on the centre zone of the wing where we consistently image) with cell boundaries labelled using E-cadherin-GFP (green) and nuclei with Histone2Av-mRFP (magenta). (C) Magnified view of the pupal wing epithelium after wounding, with the white dashed line indicating the wound edge. (D) Schematic showing a cross-section through the upper layer of epithelium of the pupal wing, with haemolymph (insect blood containing haemocytes and adipocytes) beneath and rigid cuticle above (E) Multiple cell divisions (arrows) occur in the unwounded pupal wing epithelial tissue over the course of 8 min. (F) A cell division (arrow) occurs in a wounded epithelial tissue with the white dashed line indicating the wound edge.
 
 To gather training data to build an algorithm that can reliably detect cell divisions, we performed time-lapse imaging of unwounded and wounded pupal wings, with each movie lasting 3 hr (Figure 1E, F). We generated a z-stack (with z-steps of 0.75 μm in depth) that encompassed the entire epithelial cell layer at each timepoint, which we then converted to a 2D image using a stack focuser tool (Umorin, 2002). For the wounded imaging data, the wounds generated possessed a mean radius of 20 μm (ranging from 9 to 30 μm), with the smallest wounds closing 20 min after wounding and the largest wounds taking up to 90 min to fully close. Crucially, tissue wounding created several imaging complications that our algorithm needed to accommodate. Firstly, wounding led to the epithelium around the wound edge moving out of the original focal plane which reduced the image quality at the immediate wound edge. This loss of image quality was further exacerbated by a wound-associated reduction in the levels of the Ecadherin-GFP junctional reporter (Figure 1E, F), which might be a consequence of the previously reported loosening of junctions in the migratory wound epithelium (Martin and Nunan, 2015; Razzell et al., 2014; Tetley et al., 2019). Secondly, wounding, by definition, leads to the accumulation of local tissue debris, including bright nuclear material. Motile immune cells and fat body cells, also with Histone2Av-mRFP-positive nuclei, are recruited to the wound and both of these cell lineages engulf tissue debris (Franz et al., 2018; Razzell et al., 2011); these motile and phagocytic (non-epithelial) cell types can be mistaken for dividing epithelial cells providing many opportunities for ‘false positives’. Finally, since pupae are living, developing organisms, they occasionally (and unavoidably) move during imaging, leading to sample drift in-between frames, and this also leads to the generation of false positives.
 
@@ -60,41 +60,149 @@ We have overcome these various image analysis constraints by generating a deep l
 
 U-Nets were developed to segment images by classifying regions into categories. These neural networks have a U-shaped structure, with an encoder side that applies CNNs and other types of layers which decrease the spatial resolution whilst increasing features. The opposite happens on the decoder arm of the U-shaped structure, with the reintroduction of spatial information via skip connections allowing for the classification of individual pixels within the image (Ronneberger et al., 2015). In our system, we classify epithelial cells into ‘dividing’ or ‘non-dividing’ (the latter being the vast majority) and by their location in space. We envisioned a U-Net structured model based on a ResNet that will be able to classify far more accurately than the standard U-Net model. To boost the model’s capacity to segment time-lapse videos, we used the fast.ai libraries Dynamic U-Net class which can create a U-Net structure from an image classifier (see Materials and methods for further details of the model architecture). This final model will therefore combine the properties of both models, enabling the training of high performing deeper networks with the U-Net structure. A key benefit of this method is that deeper/newer image classifier models can be swapped for more difficult tasks or to increase performance.
 
-## Development of Deep Learning Model 1 (U-NetCellDivision3)
+### Development of Deep Learning Model 1 (U-NetCellDivision3)
 
 Both the standard ResNet and U-Net models use three channel RGB images as input. Here, our confocal z-stack images are composed of only two channels (E-cadherin-GFP, green, and Histone2Av-mRFP, red; Figure 1E, F), leaving a spare channel for other potential inputs. The clearest features of a dividing cell occur as the duplicated chromosomes separate and move in opposite directions (observed in the Histone2Av-mRFP channel, arrows, Figure 2A). Hence, we started developing our model by focussing only on the Histone2Av-mRFP channel, and use three sequential time-lapse images of the Histone2Av-mRFP (nuclear) channel (Figure 2A), the first frame being when the cell is still in metaphase (before chromosomal separation, t = 0 min) and the second and third in anaphase (during and after chromosome separation, t = 2 min and t = 4 min, respectively). Representing these three sequential frames in different colours and combining them into a single RGB image reveals a clear pattern with broadly symmetric stripes of red (centrally) followed by green and blue (extending outwards) (Figure 2A). Crucially, there is a dramatic contrast between this triple-coloured division pattern and that of non-dividing cells that are relatively stationary and so appear as a white/grey circular shape (Figure 2A).
 
 Our deep learning model is trained to distinguish between these different RGB patterns and thus to accurately detect and locate cell divisions. To train the model, we first manually identified dividing cells in 20 independent time-lapse videos of unwounded and wounded tissue (this generates ‘labelled’ training data); each training video consisted of 93 time frames (reflecting 186 min of footage). In this training data, we detected 4206 divisions in total across all movies. Next, we generated an ‘output’ that we required the model to be able to reproduce. For this, we generated a ‘mask’ video where every division was marked with a white circle (the same size as a cell about to divide) in the same location and at the correct time. The algorithm was then trained to reproduce this ‘mask’ (Figure 2A).
 
-We trained this deep learning algorithm which we term ‘U-NetCellDivision3’. Next, we tested the model on data it had not previously seen; the results are shown in Table 1; it should be noted that there are no experimental differences between each of the labelled datasets; they are comprised only of different biological repeats. The results (outputs) are categorised into (1) true positives (Tp) where a cell division has correctly been identified, (2) false positives (Fp) where the model has incorrectly detected a cell division where one has not occurred, and (3) false negatives (Fn) where a cell division occurred but the model failed to detect it. We can then compute ‘Dice score’ (F1 score) as a measure of the model’s accuracy, by combining Tp, Fp, and Fn (Carass et al., 2020). The dice score is defined as:Dicescore=2Tp2Tp+Fp+Fn
+We trained this deep learning algorithm which we term ‘U-NetCellDivision3’. Next, we tested the model on data it had not previously seen; the results are shown in Table 1; it should be noted that there are no experimental differences between each of the labelled datasets; they are comprised only of different biological repeats. The results (outputs) are categorised into (1) true positives ($T_{p}$) where a cell division has correctly been identified, (2) false positives ($F_{p}$) where the model has incorrectly detected a cell division where one has not occurred, and (3) false negatives ($F_{n}$) where a cell division occurred but the model failed to detect it. We can then compute ‘Dice score’ (F1 score) as a measure of the model’s accuracy, by combining $T_{p}$, $F_{p}$, and $F_{n}$ (Carass et al., 2020). The dice score is defined as:
+
+$$
+Dicescore=\frac{2T_{p}}{2T_{p}+F_{p}+F_{n}}
+$$
+
+**Table 1.**
+ Dice scores for the deep learning models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>True positives</th>
+      <th>False positive</th>
+      <th>False negative</th>
+      <th>Dice score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>U-NetCellDivision3</td>
+      <td>797</td>
+      <td>216</td>
+      <td>310</td>
+      <td>0.752</td>
+    </tr>
+    <tr>
+      <td>U-NetCellDivision10</td>
+      <td>1057</td>
+      <td>28</td>
+      <td>50</td>
+      <td>0.964</td>
+    </tr>
+  </tbody>
+</table>
 
 A dice score of 1 is a perfect score, whereas scores progressively smaller than 1 indicate a poorer algorithm performance. Dice scores for our algorithm ‘U-NetCellDivision3’ indicate that this model detects only 78.7% of all cell divisions, and it led to many false positives (Table 1).
 
-## Development of Deep Learning Model 2 (U-NetCellDivision10)
+### Development of Deep Learning Model 2 (U-NetCellDivision10)
 
 To overcome the false positives and negatives associated with our initial model, U-NetCellDivision3, we extended the deep learning model beyond a 3-frame input to increase the number of input frames to 10 (Figure 2B). Here, we included an additional timepoint either side of the original 3-frame images, taking our input data to 5 timepoints in total, and extended the analysis to include both the E-cadherin-GFP and Histone2Av-mRFP channels, thus incorporating the dynamics of both cell nuclei and cell boundaries. Consequently, two of these timepoints show the cell in metaphase and three timepoints show the cell moving through anaphase into telophase and cytokinesis (Figure 2B). Although there should be little nuclear movement in these first two frames, including these additional metaphase images will help filter out false positives due to dynamic non-mitotic nuclei. In this algorithm, to be identified as a dividing cell, the cell nuclei will need to be stationary in metaphase for two frames (2 min) before separating in a classical anaphase-like manner. Moreover, we included the E-cadherin-GFP channel to provide additional information on cell boundaries and further enable the model to identify dividing cells. Indeed, it is well documented that cell boundaries change prior to division as cells increase their size and become rounder (Lancaster and Baum, 2014), and indeed this can be observed in the pupal wing tissue (Figure 1B and C and Figure 2B). Inclusion of the E-cadherin-GFP channel should also help rule out false positives (such as nuclear debris within the wound centre), which will lack a clear GFP-positive boundary. Inclusion of the E-cadherin channel is particularly helpful in concert with the additional fifth timepoint, as the cells can be clearly observed to separate as they move through telophase and cytokinesis. A key finding of this study is that using multiple fluorescent channels can increase information about mitotic events which, in turn, leads to higher accuracy (fewer false positives and negatives).
 
 We subsequently trained the model (Model 2) using the same data as previously used to train Model 1. As shown in Table 1, there is now a significant (over 80%) reduction in both false positive and false negatives using the 10-frame model. Most of the errors described previously have largely been resolved; a dice score above 0.95 means we can be far more confident in the results produced by U-NetCellDivision10. Video 1 shows the cell divisions that the algorithm has correctly identified; the orientations of the divisions are also revealed (see later). Now, having established a deep learning algorithm that can accurately (and quickly) identify and quantify cell divisions from our in vivo imaging data, we used the model to explore how (and where) cell divisions occur within a living, developing epithelial tissue in normal conditions, and how this changes following an experimental perturbation such as wounding (Figure 3 and Figure 4). We also later extended this strategy to develop additional deep learning models to study different aspects of cell behaviour (shapes of cell boundaries and identification of cell division orientation planes, Figure 2C–E).
 
-## Cell divisions within unwounded epithelial tissue in vivo exhibit a ‘community effect’
+![Figure 3.](https://cdn.elifesciences.org/articles/87949/elife-87949-fig3-v1.jpg)
+
+**Figure 3.:** (A) The density of cell divisions in the unwounded tissue, with faded blue region showing the standard deviation. The red line is the line of ‘best fit’ of the unwounded data. (B) A heatmap of the division density correlation over distance and time in unwounded epithelial tissue. Red indicates positive, and blue negative correlation. (C) The density of cell divisions in the wounded tissue, with either small or large wounds, with faded regions showing associated standard deviation. The red line is the line of best fit of the unwounded data. The micrographs show representative divisions identified at two different timepoints post-wounding. (D) Diagram of the annular bands around a wound, each 10 m wide (white dashed line); white circles indicate cell divisions. (E, F) Heatmaps of the change in division density for small and large wounds compared with a best fit linear model of unwounded data. Red areas have more divisions, and blue less, than equivalent regions in the unwounded data. The dashed lines highlight areas in which cell divisions decrease and the dotted lines highlight areas in which divisions increase compared to unwounded data. Schematics below the heatmaps in E and F show the radial division densities 100 and 110 min after wounding, respectively (n = 14 unwounded, n = 8 small wounds, and n = 9 large wounds).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87949/elife-87949-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heatmaps of the deviation in division density of unwounded tissue compared with a best fit linear model. The axes are time and distance from a virtual wound. Red areas have more division and blue less. (B, C) Heatmaps of the division density correlation for small and large wounds. Again, red areas have more divisions and blue less. Also see Figure 3.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87949/elife-87949-fig4-v1.jpg)
+
+**Figure 4.:** (A) Distribution of the division orientations with respect to the proximal–distal axis of the pupal wing in unwounded tissue. Cell division orientations of 0° and 90° are illustrated in the micrographs. (B) Distribution of the division orientations with respect to the wing in unwounded tissue (green) and the daughter cell orientations 20 min after dividing (magenta), with examples of the orientation of division before and after cell shuffling (B’). (C) Heatmap of the space–time correlation of division orientation. Red indicates positive correlation, blue negative, and white no correlation. (D) Diagram of cell division orientation with respect to a wound; lower values are dividing towards the wound and higher values away. (E) Mean division orientation towards the wound as a function of distance from wound for small and large wounds. For unwounded tissues an arbitrary point is chosen as a ‘virtual wound’. (F, G) Distribution of the division orientations with respect to small and large wounds. The spectrum of colours (same as in D) indicates the bias in orientation towards the wound. (H, I) Distribution of the division orientations with respect to the wound in small and large wounds (green), and the daughter cell orientation 20 min after dividing (magenta) (n = 14 unwounded, n = 8 small wounds, and n = 9 large wounds).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87949/elife-87949-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Diagram of the output of U-NetOrientation. The oval is elongated in the same direction as the division, thus calculating its q-tensor tells us the orientation of the cell division. (B) The error of the U-NetOrientation model on the test dataset; black line shows median error. Also see Figure 4.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87949/elife-87949-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Distribution of the division orientations for small wounds. (B) Distribution of the division orientations with respect to the wing in small wounds (green), and the daughter cell orientation 20 min after dividing (magenta). (C) Distribution of the division orientations for large wounds. (D) Distribution of the division orientations with respect to the wing in large wounds (green), and the daughter cell orientation 20 min after dividing (magenta). Also see Figure 4.
+
+![Video 1.](https://cdn.elifesciences.org/articles/87949/elife-87949-video1.mp4.jpg)
+
+**Video 1.:** Projected from a 3D stack using the stack focus algorithm with a radius of 5 pixels. Green indicates E-cadherin-GFP and magenta indicates Histone2Av-mRFP. The white circles show the divisions detected by the ‘U-NetCellDivision10’ and the white lines indicate the orientation of divisions determined by ‘U-NetOrientation’. Scale bar: 10 μm. Related to Figure 3.
+
+### Cell divisions within unwounded epithelial tissue in vivo exhibit a ‘community effect’
 
 We first explored whether the ‘U-NetCellDivision10’ algorithm can be used to quantify the numbers and locations of cell divisions within the unwounded pupal wing epithelium of Drosophila. We initially used our algorithm to compute ‘division density’ over space and time, that is, the number of divisions occurring in a given area at a given time (Figure 3A). Interestingly, in the unwounded pupal epithelium, we observed that cells are more likely to divide close to and soon after previous divisions (Figure 3B). To explore this phenomenon and determine whether cell divisions occur randomly across the unwounded tissue or whether they are more likely to occur close to other divisions, we calculated a space–time correlation for the cell divisions (see Methods for details). The space–time correlation is shown as a heatmap (Figure 3B), with more intense red reflecting higher correlation. There is a high correlation close to the origin (within a 30-μm radius and temporally, within 40 min), which implies that cells are more likely to divide close to others in both space and time; this effect reduces with both increasing distance and time between cells. Consistent with previous studies of pupal wing morphogenesis (Etournay et al., 2016; Milan et al., 1996), we also find that the density of cell divisions decreased linearly with time during the developmental process (Figure 3A).
 
-## Epithelial wounding triggers a spatio-temporal reprogramming of cell division
+### Epithelial wounding triggers a spatio-temporal reprogramming of cell division
 
 Analysis of wounded tissues reveals striking differences in cell division behaviour when compared to unwounded tissue (compare Figure 3A with Figure 3C). These altered behaviours are highly dependent on the size of the wound. For larger wounds (15–20 μm radius), there are initially significantly fewer cell divisions (i.e., a lower division density) in the wounded epithelium compared to unwounded tissues (Figure 3C); this wound-associated inhibition of cell division reaches its low point at 60–70 min post-wounding. In contrast, smaller wounds (8–12 μm radius) do not exhibit a similar reduction in cell divisions immediately following wounding (Figure 3C). However, both small and large wounds exhibit a subsequent and dramatic synchronised burst of cell divisions at 100 min post-wounding, double that of unwounded tissue at the peak of this proliferative surge (Figure 3C); after 3 hr post-wounding, the division density of wounded tissue returns to unwounded levels (Figure 3C). We calculated the space–time correlation for the cell divisions in the wounded tissue and found a similar high spatial correlation around the origin with the same range as unwounded tissue (Figure 3—figure supplement 1B, C); nevertheless, the temporal correlation was altered, due to the observed suppression and later synchronisation of divisions caused by wounding.
 
 Since our model also identifies the spatial coordinates of the cell divisions, we can determine their distance from the wound edge, and this enables us to calculate the density of divisions in zones extending out from the wound (Figure 3D). To analyse how the wounded division density varies over space and time, we have compared the wounded division data to that of unwounded tissue (by making a line of best fit for the unwounded data as a linear model and comparing the wounded data to this). This enables us to show the spatial-temporal change in division density in a heatmap, with blue indicating a decrease and red an increase in division density (Figure 3E, F). For small wounds, there is a clear decrease in divisions extending up to 20 μm (approximately 5-cell diameters) back from the wound edge until 70 min post-wounding. In large wounds, this reduction in division density extends much further back from the wound edge, beyond even the field of view (i.e., greater than 100 μm, approximately 25-cell diameters). The subsequent synchronised burst of divisions occurs between 20 and 70 μm back from the edge of small wounds and extends beyond 100 μm across the whole field of view for large wounds (Videos 2 and 3).
 
-## The orientation of cell divisions might be biased by tissue tension but is not influenced by wounding
+![Video 2.](https://cdn.elifesciences.org/articles/87949/elife-87949-video2.mp4.jpg)
 
-In addition to a general analysis of cell division density, we can also use our models to quantify the orientation of cell divisions in an automated manner. To achieve this, we developed a second deep learning model called ‘U-NetOrientation’. Whilst our earlier model reveals the locations of dividing cells, we retrained this algorithm to report division orientation using nuclear positioning. To achieve this, we used the same model architecture as U-NetCellDivision but retrained it to complete this new task. Our new workflow first uses U-NetCellDivision10 to find cell divisions. Secondly, U-NetOrientation is applied locally to determine the division orientation. The same cell divisions from the previous training videos were used to train the U-NetCellDivision model. We initially labelled the cell division orientations by hand and then trained the new deep learning model to extract θ, that is, the orientation of the division (see Figure 4—figure supplement 1A). After training, we tested the model’s accuracy by comparing the hand-labelled orientation with the one from the model. We found that the median difference between these values was 4∘(π/45radians) (Figure 4—figure supplement 1B; Videos 1–3).
+**Video 2.:** Projected from a 3D stack using the stack focus algorithm with a radius of 5 pixels. Green indicates E-cadherin-GFP and magenta indicates Histone2Av-mRFP. The white circles show the divisions detected by the ‘U-NetCellDivision10’ and the white lines indicate the orientation of divisions determined by ‘U-NetOrientation’. Scale bar: 10 μm. Related to Figure 3.
+
+![Video 3.](https://cdn.elifesciences.org/articles/87949/elife-87949-video3.mp4.jpg)
+
+**Video 3.:** Projected from a 3D stack using the stack focus algorithm with a radius of 5 pixels. Green indicates E-cadherin-GFP and magenta indicates Histone2Av-mRFP. The white circles show the divisions detected by the ‘U-NetCellDivision10’ and the white lines indicate the orientation of divisions determined by ‘U-NetOrientation’. Scale bar: 10 μm. Related to Figure 3.
+
+### The orientation of cell divisions might be biased by tissue tension but is not influenced by wounding
+
+In addition to a general analysis of cell division density, we can also use our models to quantify the orientation of cell divisions in an automated manner. To achieve this, we developed a second deep learning model called ‘U-NetOrientation’. Whilst our earlier model reveals the locations of dividing cells, we retrained this algorithm to report division orientation using nuclear positioning. To achieve this, we used the same model architecture as U-NetCellDivision but retrained it to complete this new task. Our new workflow first uses U-NetCellDivision10 to find cell divisions. Secondly, U-NetOrientation is applied locally to determine the division orientation. The same cell divisions from the previous training videos were used to train the U-NetCellDivision model. We initially labelled the cell division orientations by hand and then trained the new deep learning model to extract $\theta$, that is, the orientation of the division (see Figure 4—figure supplement 1A). After training, we tested the model’s accuracy by comparing the hand-labelled orientation with the one from the model. We found that the median difference between these values was $4^{∘}(\pi/45radians)$ (Figure 4—figure supplement 1B; Videos 1–3).
 
 Following this model training and validation, we used the U-NetCellDivision model to quantify division orientation in unwounded and wounded epithelial tissues (Figure 4). In the unwounded pupal epithelium, we measured the division orientation relative to the proximal/distal (P/D) axis of the wing (Figure 4A). Previous work has demonstrated that hinge contraction in the proximal part of the wing causes tension, resulting in cells becoming elongated in the wing along the P/D axis (Athilingam et al., 2021; Etournay et al., 2016) and because of this, we anticipated that a bias of division orientation might occur along this axis. However, surprisingly, we observe a small orientation bias at 45° to this axis (Figure 4A). Interestingly, our subsequent analysis revealed that daughter cells undergo later ‘shuffling’ movements to rearrange their positions after cytokinesis so that the final daughter cell orientations (using centres of the cell shapes) consistently align along with the P/D axis (Figure 4B). To analyse these ‘shuffling’ rearrangements, we needed to segment and track cell boundaries. However, applying traditional tools, such as the ImageJ Tissue Analyzer plugin (Etournay et al., 2016), we found that our samples were too noisy to analyse without time-consuming manual editing of the segmentation. Hence, we automated this cell boundary segmentation by developing an additional (fourth) deep learning model to detect cell boundaries (Figure 2D; Abedalla et al., 2021; Aigouy et al., 2020; Fernandez-Gonzalez et al., 2022; Wolny et al., 2020). Here, we developed a model using multiple focal planes (individual slices of the z-stack) from the confocal imaging data. This allowed us to take advantage of the fact that E-cadherin is visible in the top few (2–3) z-slices of cells. Using this 3D data gives a clear signal in this otherwise noisy wounded tissue data (Wolny et al., 2020). We therefore used a three-focal plane input to increase the amount of information available to the model, which we have called U-NetBoundary (Figure 2D, E). This utilised an algorithm which identifies the most focussed plane, and the planes immediately above and below it (see Materials and methods for further details), to provide sufficiently accurate automated identification of cell boundaries. After training, we tested the U-NetBoundary model on 12 images (12,514 cells) and ran the output through ImageJ’s Tissue Analyzer (Etournay et al., 2016) to utilise the Watershed algorithm. Table 2 shows that using U-NetBoundary leads to a much better dice score and so is more reliable than using a single focal plane without deep learning.
+
+**Table 2.**
+ Dice scores for the segmentation methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Segmentation</th>
+      <th>True positives</th>
+      <th>False positive</th>
+      <th>False negative</th>
+      <th>Dice score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Single focal plane + Tissue Analyzer</td>
+      <td>8197</td>
+      <td>313</td>
+      <td>4317</td>
+      <td>0.780</td>
+    </tr>
+    <tr>
+      <td>U-NetBoundary + Tissue Analyzer</td>
+      <td>11,325</td>
+      <td>501</td>
+      <td>1189</td>
+      <td>0.931</td>
+    </tr>
+  </tbody>
+</table>
 
 Using U-NetBoundary, we are now able to track daughter cells post-division, with the required level of accuracy. Our algorithm automatically filters out any tracks that have large and/or sudden changes in size and shape of daughter cells, which indicates a likely segmentation mistake (see Methods for details). Once these anomalies have been identified and removed, our data is ready for analysis. To determine whether daughter cell orientation relative to one another changed during cell shuffling (in the period immediately after dividing), we measured the angle of a line drawn between the centres of two daughter nuclei 20 min after cell division (Figure 4B’) to find the change in orientation. We found that, on average, post-division shuffling shifted final daughter cell orientations by 14.8°. When we measured the post-shuffling orientation relative to the wing’s P/D axis, we found that the distribution had shifted to acquire a small bias in the direction of the tension in the tissue (Figure 4B), and the mean orientation relative to the P/D axis had shifted by 8.5° to align with the global tension. If cell division orientation is also influenced by local tension in a developing tissue, then one might expect that cells about to divide in close proximity to one another will experience similar local forces and so might divide with the same orientation. To examine if this was the case, we measured the correlation between division orientation within space and time, but found no such correlation (Figure 4C). Therefore, we conclude that (1) global tension has a small influence on division orientation, but only after shuffling (repositioning) of the daughter cells and (2) local tension from the wound does not have a detectable effect. Other predictors of division orientation, such as cell shape, could dominate (Nestor-Bergmann et al., 2019).
 
 Next, we measured division orientation relative to a wound (Figure 4D–G). Here, the possible range of cell division orientations varies from 0° to 90°, with an orientation of 0° indicating that cells divide towards a wound (radially), and an orientation of 90° indicating that cells divide perpendicular to a wound (tangentially). To investigate whether cell division is biased towards the wound, we averaged the orientation of all divisions around the wound. If divisions are biased towards a wound, then their average orientation should be significantly less than 45° (or above 45° if significantly biased away from the wound); conversely, an average bias of 45° would suggest that cells divide in an unbiased manner. From the uniform distribution of division orientations, our data suggest that a rather unbiased orientation of cell divisions occurs in response to wounding (Figure 4D–G, Videos 4 and 5). Whilst these data suggest that there is no initial bias in the orientation of cell divisions in the epithelium following wounding, we wondered whether subsequent ‘shuffling’ of daughter cells might be influenced by tissue tensions within the repairing epithelium. We undertook the same tracking of daughter cell movements as described for unwounded tissue (Figure 4B), but observed no significant shift in the cell orientations post-shuffling; rather, the distribution of post-division orientations is the same as for the divisions themselves (Figure 4H, I), suggesting that the local tension changes triggered by wound healing are not sufficient to have a measurable effect on the orientation of cell divisions, over and above those seen in unwounded tissue (Figure 4—figure supplement 2).
+
+![Video 4.](https://cdn.elifesciences.org/articles/87949/elife-87949-video4.mp4.jpg)
+
+**Video 4.:** Projected from a 3D stack using the stack focus algorithm with a radius of 5 pixels. Greyscale background of epithelium with circles show the divisions detected by the ‘U-NetCellDivision10’, the lines indicate the orientation of divisions determined by ‘U-NetOrientation’ and the colour of labels display the orientations relative to wounds. Blue labelled divisions are orientated towards wounds, red away from wounds and white around 45°. The white dot is the centre of the wound and the closed wound site after closure. Scale bar: 10 μm. Related to Figure 3.
+
+![Video 5.](https://cdn.elifesciences.org/articles/87949/elife-87949-video5.mp4.jpg)
+
+**Video 5.:** Projected from a 3D stack using the stack focus algorithm with a radius of 5 pixels. Greyscale background of epithelium with circles show the divisions detected by the ‘U-NetCellDivision10’, the lines indicate the orientation of divisions determined by ‘U-NetOrientation’ and the colour of labels display the orientations relative to wounds. Blue labelled divisions are orientated towards wounds, red away from wounds and white around 45°. The white dot is the centre of the wound and the closed wound site after closure. Scale bar: 20 μm. Related to Figure 3.
 
 ## Discussion
 
@@ -102,7 +210,7 @@ Deep learning is well suited to detecting variable but specific features in a de
 
 For such dynamic cell behaviours as cell division, there is a clear need to analyse imaging data from high-resolution confocal microscopy movies of living tissue. Because of the vast volume of this data, doing this task manually would not be possible, and so one must develop sophisticated deep learning strategies for the analysis. Our approach has been to generalise techniques currently used in computer vision for static images and adapt them to deal with dynamic data. Previous deep learning approaches have considerably improved the detection accuracy of mitotic indexes in static biopsy sections of clinical tissues for cancer diagnosis (Aubreville et al., 2020; Piansaddhayanaon et al., 2023). We have built on other existing 3D CNN networks (Ji et al., 2013; Nie et al., 2016) by making deeper models which can receive multiple florescent channels. In our study, we successfully applied this type of analysis to very dense in vivo tissues which are undergoing the highly dynamic events involved in tissue development and repair following wounding. Despite these additional difficulties, our model proved to be highly accurate. Furthermore, we could also determine the orientation of cell divisions.
 
-## What are the biological findings so far?
+### What are the biological findings so far?
 
 Our deep learning tools have enabled us to accurately quantify complex cell behaviours – such as cell divisions and subsequent daughter cell rearrangements – from large datasets which, in turn, has revealed trends that are otherwise hidden within the biology. Previous studies of wound healing in mammalian models have suggested that cell migration and cell division largely occur in separate epidermal domains following wounding (Aragona et al., 2017; Park et al., 2017) and our data support this. Our large wounds show a clear reduction in cell divisions, below pre-wound levels, in cells close to the leading epidermal wound edge where cells are actively migrating. Nevertheless, our data suggest that cell migration is not absolutely dependent on this ‘shut down’ in divisions because we see no observable cessation of cell division around small wounds as they are closing. For both large and small wounds, we observe a synchronised proliferative surge of cell divisions commencing 60 min post-wounding (and peaking shortly afterwards), but this is restricted to a domain beginning about 5-cell diameters back from the leading edge. These divisions are unlikely to be a major driver of wound closure because the rate of wound closure is the same before and after the proliferative surge. Indeed, cell divisions at the leading edge have largely halted during the most dramatic closure period. However, these cell divisions are likely to be a consequence of wounding, and the additional cells will help repopulate the tissue to restore near original numbers of epithelial cells and return tissue structure (and tensions) to pre-wound levels. This synchronised surge in cell proliferation in a band of cells back from the leading edge (to levels that are twice background levels for unwounded tissue) is potentially related to our observation of a strong correlation in the timing of cell divisions by close neighbours in unwounded epithelial tissue. Such a ‘community effect’ might be mediated by short-range chemical signals or local mechanical signals that operate locally in unwounded tissues and are recapitulated and expanded following wounding.
 
@@ -110,7 +218,7 @@ Once a cell has received signals driving it to divide, how do tissue tensions in
 
 To further extend these studies and to gain a more comprehensive understanding of how different cell behaviours, particularly beyond those directly related to cell division, coordinate in a repairing tissue, additional development of our deep learning algorithms might be useful to extract more information from the time-lapse imaging data. For example, this might enable us to correlate changes in the density or orientation of cell divisions at the wound site, with other contributing cell behaviours (such as cell shape changes and cell intercalations). Similarly, it would be possible to integrate our analyses of cell behaviour with tools that enable live-imaging of wound-induced signalling (e.g., calcium signalling at the wound edge using calcium sensitive GCaMP transgenic reporters), in order to determine how such signalling pathways might be integrating the various wound repair cell behaviours following injury.
 
-## Future directions for our deep learning approaches
+### Future directions for our deep learning approaches
 
 In this study, we have converted a suite of image classifiers (ResNets) into U-Net via the Dynamic UNET function from the fast.ai library. To analyse cell divisions in Drosophila pupal tissues we extended the dimension of the data being analysed to include multiple time steps to identify the dynamic features associated with individual cell division events. To achieve this, we have modified the architecture of these models by increasing the feature inputs in the first layer. With tweaks, the model can provide us with additional, but related, outputs, for example, detection of defective cell divisions, which might be relevant in studies of oogenesis or cancer. Our algorithms could also be extended further by altering the initial layers of the model; this would enable the generation of models which can identify much more complex dynamical features. Indeed, a major challenge is to generate AI (or deep learning) models that can be adapted to identify cellular (or pathological) features across a broad range of tissue types and in data generated through a range of different imaging modalities. The tissue employed in our current study was a relatively flat 3D epithelium with few other cell lineages present in the microscopy data (only migratory immune cells), but such AI approaches could be expanded to cater for mixed populations of cells existing in larger 3D volumes, for example, gastruloids or even whole embryos as they develop and undergo morphogenesis, or to study other complex cell:cell interactions or movements, for example, immune cell interactions or flagella beating. Incorporating LSTM architectures could also help detect these dynamic and complex behaviours (Mao et al., 2011; Shi et al., 2020). With any such methodology, there will be much interesting work to come, in optimising movie time resolution, fluorescent markers and model depth.
 
@@ -120,11 +228,11 @@ The deep learning models that we present here can identify cell divisions and th
 
 ## Materials and methods
 
-## Drosophila stocks and husbandry
+### Drosophila stocks and husbandry
 
 Drosophila stocks were raised and maintained on Iberian food according to standard protocols (Greenspan, 1997). All crosses were performed at 25°C. The following Drosophila stocks were used: E-cadherin-GFP and Histone2Av-mRFP (BDSC stock numbers #60584 and #23651, respectively, obtained from the Bloomington Drosophila Stock Centre, Indiana).
 
-## Confocal imaging and data processing
+### Confocal imaging and data processing
 
 Drosophila pupae were aged to 18 hr APF at 25°C. Dissection, imaging, and wounding were all performed as previously described (Weavers et al., 2018). The time-lapse movies were generated using a SP8 Leica confocal. Each z-stack slice consisted of a 123.26 × 123.26 μm image (512 × 512 pixels) with a slice taken every 0.75 μm. The z-stacks were converted to 2D using our own Python version of the ImageJ plugin stack focuser (Umorin, 2002). Images were taken every 2 min for 93 timepoints (just over 3 hr of imaging). The data were manually labelled by making a database of the locations in space and time of the divisions and their orientations.
 
@@ -134,68 +242,100 @@ For calculating the orientation of cell divisions, we used the 10-frame video cl
 
 For detecting cell boundaries, we maximise the information supplied to the model by using a modified stack focuser which identifies the most ‘in focus’ pixels in a stack. Our version also outputs the pixels above and below the most in-focus pixel and records this as an RGB image with colours corresponding to above (R), focussed (G), and below (B) pixels; the model will learn to use these upper and lower colours to identify if there is a genuine cell boundary or if focussed pixels are just noise within the image. We also rescaled our images from 512 × 512 pixels to 1024 × 1024 pixels, to increase the width of the boundaries so that they are large enough for the model to learn to detect them. The data was segmented using Tissue Analyzer to apply the Watershed algorithm on the original single focal plane data (then correcting by hand the boundaries on 59 images, finding a total of 58,582 cells). The boundaries are 1 pixel in width in the output labelled masks. To give the model a wider target to reproduce, we eroded the image to make the boundaries 3 pixels wide. As we have increased the scale of the images, this is around the same pixel thickness as the boundaries in the input.
 
-## Network architecture
+### Network architecture
 
 We converted a Resnet34 model into a U-Net architecture via the Dynamic UNET function from the fast.ai library (He et al., 2016; Howard, 2018; Ronneberger et al., 2015). The weights from the Resnet 34 classifier were used to take advantage of transfer learning (Howard and Gugger, 2020). For the second version of the model (U-NetCellDivision10), the first layer of the model was replaced with a Conv2d layer with 10 features in and 64 out. The inputs to the model were 512 × 512 × 3 or 10 × 512 × 512 voxels for U-NetCellDivision3 or U-NetCellDivision10, respectively. U-NetCellDivision3 has 41405589 parameters and both U-NetCellDivision10 and U-NetOrientation have 41,268,871, all have 54 layers. The U-NetOrientation has the same architecture as U-NetCellDivision10, but takes 10 × 120 × 120 videos as inputs. For U-NetBoundary we used the Resnet 101 classifier and converted it into a U-Net with Dynamic UNET function. U-NetBoundary has 318,616,725 parameters and has 121 layers. This model has inputs of 1024 × 1024 × 3. Source code is available at https://github.com/turleyjm/cell-division-dl-plugin (copy archived at Turley, 2024).
 
-## Data augmentation
+### Data augmentation
 
 The data were augmented using the albumentations library (Buslaev et al., 2020). The transforms used were Rotate, HorizontalFlip, VerticalFlip, GaussianBlur, RandomBrightnessContrast, and Sharpen.
 
-## Training models
+### Training models
 
 Training our deep learning models requires that we split the data into three separate groups (Howard and Gugger, 2020): (1) Training data: this is data from which the model directly learns (in this instance, the 11 videos described above); (2) Validation data: this data is used to test the model during the training process, to validate whether the algorithm is learning the patterns correctly and if it can perform on (similar but) unfamiliar videos. This ensures that the model has not simply ‘remembered’ the ‘answer’ in the training data (over-fitting); (3) Testing data: once we have fully trained the model, we run a final dataset through the model as our ultimate test of the algorithm (see Tables 1 and 2). Paperspace’s gradient ML Platform was used for training the models. The machine used was one with NVIDIA Quadra P5000 or P6000 GPU. We trained using an Adam optimisation.
 
-## Detecting divisions from U-NetCellDivision outputs
+### Detecting divisions from U-NetCellDivision outputs
 
 After running a full video through our model in individual video clips, we have output masks with white circles in the same locations as the divisions (see Figure 2A, B). We detect the white circles using a Laplacian of Gaussian Filter (Kong et al., 2013). The deep learning model is very accurate at finding divisions when they occur, but sometimes mistakenly detects them a frame before and/or after the actual division happens. This may be expected as the video clips still look similar after being shifted by one timepoint. The white circles in the frames before and after are normally not as intense as the timepoint of the division, reflecting the weaker confidence of the model in identifying them. To ensure we do not double count divisions, these are suppressed with the brightest circle taken as the timepoint when a cell divides. We have built in some tolerance into our evaluation of the model. When the algorithm detects one of these divisions and has a brighter spot in a timepoint ±1 frame of our labelled data, we still count this as a correctly detected division.
 
-## Orientation from U-NetOrientation outputs
+### Orientation from U-NetOrientation outputs
 
-To determine the orientation of the oval shape produced by the U-NetOrientation deep learning model, we calculated a second-rank tensor (which we call the q-tensor) for the output image that stores information about the orientation of the oval shapes.q=1A2∫A(12(x2−y2)xyxy12(y2−x2)) dA
+To determine the orientation of the oval shape produced by the U-NetOrientation deep learning model, we calculated a second-rank tensor (which we call the q-tensor) for the output image that stores information about the orientation of the oval shapes.
 
-where A is the area of the image and dA=dxdy. q can be rewritten asq=q0cos⁡2θsin⁡2θsin⁡2θ-cos⁡2θ
+$$
+q=\frac{1}{A^{2}}\int_{A}(\frac{1}{2}(x^{2}−y^{2})xyxy\frac{1}{2}(y^{2}−x^{2})) dA
+$$
 
-where θ is the orientation of the shape. To calculate the orientation of a division, we apply these equations to our output image from U-NetOrientation and extract θ.
+where $A$ is the area of the image and $dA=dxdy$. $q$ can be rewritten as
 
-## Using Tissue Analzyer for segmentation
+$$
+q=q_{0}cos⁡2\thetasin⁡2\thetasin⁡2\theta-cos⁡2\theta
+$$
+
+where $\theta$ is the orientation of the shape. To calculate the orientation of a division, we apply these equations to our output image from U-NetOrientation and extract $\theta$.
+
+### Using Tissue Analzyer for segmentation
 
 We use the watershed algorithm from Tissue Analzyer (Etournay et al., 2016), which is a plugin for ImageJ for segmentation both from the single focal plane data and from the output of the deep learning U-NetBoundary model. The ‘Detect bonds V3’ function was used to perform the segmentation. We found individual optimised settings for both single focal plane and U-NetBoundary output images. These were not the same settings, as the images are very different. To track cells after segmentation, we used the ‘Track cell (static tissue)’ algorithm. The U-NetBoundary outputs are resized back to 512 × 512 before being run through Tissue Analyzer.
 
-## How to adapt this method for other cell division datasets
+### How to adapt this method for other cell division datasets
 
 The models we have developed (optimised for Drosophila pupal wing epithelia) can be used on datasets from other systems. To be effective on a new tissue type, retraining will typically be needed. In our GitHub repository, we include the scripts for training new models (https://github.com/turleyjm/cell-division-dl-plugin; Turley, 2024). For best results, the user should load our model and weights, then train the model from this starting point (called transfer learning; Howard and Gugger, 2020). The user will also need to generate labelled data (as done in the ‘Imaging and data processing’ section). Once this has been done, the user can utilise the training scripts to teach the model. Other researchers may wish to vary the number of input channels to use longer/shorter videos or different numbers of fluorescent channels. This can easily be changed in the code for the model, with comments on the GitHub repository highlighting where alterations need to be made. Additionally, the image classifier model, which is currently converted to a U-Net (currently ResNet34), can also be replaced by a different classification network. This allows for different models to be incorporated.
 
-## Wound, division density, and orientation measurements
+### Wound, division density, and orientation measurements
 
 The epithelial wound was located using the 2D focussed E-cadherin channel. The ImageJ plugin Trainable Weka Segmentation (a machine learning algorithm) is trained to find areas of the images that are tissue or non-tissue. Non-tissue could be either a wound or parts of the tissue that are above or below our frame of reference. The tissue/non-tissue binary masks are then hand-edited to remove errors (mostly around the edges of wounds where the images are particularly noisy due to debris). To calculate the division density, we sum the number of cell divisions divided by the area of tissue during a defined time period. We find the number of divisions from our deep learning model, and using the tissue/non-tissue binary masks, we know the area of tissue observed in the video. For measuring division density in relation to a wound, the mask could then be used to extract the wound. We then calculated the distance from the edge of a wound to the divisions using a distance transform (Fabbri and Da, 2008). Now we can find all the divisions in a band of a given radius and width. To quantify the density of divisions, we divide the number of divisions by the area of the band. Using both the distance transform and our tissue mask, we can work out the area of the tissue that is in each band. Once the wound has closed, we can no longer perform a distance transform using the wound edge, so we instead take the centre of the last timepoint before the wound closes. This point is the wound site and is where we take our distance transform from. As the tissue is still developing and moving, we track this point over time.
 
 We track the tissue using the ImageJ plugin TrackMate (Tinevez et al., 2017), which tracks the nuclei of cells as they move together in the tissue. Unlike the mitotic nuclei, these nuclei are slow moving, so trackable using a non-AI algorithm. By calculating the average velocity of the cells around the wound site, we can track this point and use this as our frame of reference to measure the distance from the wound site. The same method is used for unwounded tissue where we chose an arbitrary point as a ‘virtual wound’, which will flow with the local tissue. The starting point for the unwounded tissue is the centre of the image. This gives us our reference point to identify the bands we use for calculating the division density. We measure the orientation of division relative to the centroid of the polygon approximating the boundary of a wound (which we call the wound centre). The difference in angle between the vector from the wound centre to divisions and nomadic division vector is defined as the division orientation. Once the wound had closed, the wound centre point was used, whereas for the unwounded tissue, we used the ‘virtual wound’.
 
-## Division density correlation function
+### Division density correlation function
 
 We calculate the division density in our system as follows: we image a 123.26 × 123.26 µm section of the tissue for 186 min taking an image every 2 min. This video is converted into a 3D (x,y,t) matrix of dimensions 124 × 124 × 89, whose components are 1 where there is a division and 0 otherwise. Thus, each component represents a 1 µm2-2 min space–time slice. We defined the time of division as the moment that anaphase starts. We use only 89 (and not all 93) time slices because we have incomplete information about division at the beginning and end of the video.
 
-We number each of the elements in the matrix i∈[1,…,N] where N=1,368,464 is the number of elements. For the ith element, we define the mean mitosis density, Mi(t,r), to be the division density in a space–time annular tube spatially centred at the point corresponding to the ith element, with spatial radius (r−δr,r]; temporally, the annular tube is of extent (T−t,T−t+δt]. Here, T is the time corresponding to the ith element, δr is 10 µm and δt is 10 min; this is the size of our bins. Consequently, Mi is defined for  t = 10, 20 min, etc. and similarly for  r = 10, 20 µm, etc. When calculating the density of a tube we take the number of divisions in the region and divide by the space–time volume, but we need to take into account the fact that often the annular tube will extend outside the microscope view. Therefore, we divide only by the volume that can be observed using the confocal. It is convenient to extend the definition of mean mitosis density also to  t = 0 and r = 0. When  t = 0, the annular tube has no temporal depth and is concerned only with the time T. Similarly, when  r = 0, the annular tube becomes a line. When both are 0, the annular tube becomes a single point in space time. We define  Mi(0,0) = 1 if theith element is a division and  Mi(0,0) = 0 otherwise.
+We number each of the elements in the matrix $i\in[1,…,N]$ where $N=1,368,464$ is the number of elements. For the ith element, we define the mean mitosis density, $M^{i}(t,r)$, to be the division density in a space–time annular tube spatially centred at the point corresponding to the ith element, with spatial radius $(r−\deltar,r]$; temporally, the annular tube is of extent $(T−t,T−t+\deltat]$. Here, $T$ is the time corresponding to the ith element, $\deltar$ is 10 µm and $\deltat$ is 10 min; this is the size of our bins. Consequently, $M^{i}$ is defined for  $t$ = 10, 20 min, etc. and similarly for  $r$ = 10, 20 µm, etc. When calculating the density of a tube we take the number of divisions in the region and divide by the space–time volume, but we need to take into account the fact that often the annular tube will extend outside the microscope view. Therefore, we divide only by the volume that can be observed using the confocal. It is convenient to extend the definition of mean mitosis density also to  $t$ = 0 and $r$ = 0. When  $t$ = 0, the annular tube has no temporal depth and is concerned only with the time $T$. Similarly, when  $r$ = 0, the annular tube becomes a line. When both are 0, the annular tube becomes a single point in space time. We define  $M^{i}(0,0)$ = 1 if theith element is a division and  $M^{i}(0,0)$ = 0 otherwise.
 
-We define the correlations between the divisions as:⟨M(0,0)M(t,r)⟩c=⟨M(0,0)M(t,r)⟩−⟨M(0,0)⟩⟨M(t,r)⟩.
+We define the correlations between the divisions as:
 
-The first term on the right hand side (RHS) is⟨M(0,0)M(t,r)⟩=1N∑iNMi(0,0)Mi(t,r)=1N∑i∈dMi(t,r),
+$$
+⟨M(0,0)M(t,r)⟩_{c}=⟨M(0,0)M(t,r)⟩−⟨M(0,0)⟩⟨M(t,r)⟩.
+$$
 
-where d is the subset of elements where Mi(0,0)=1, that is, corresponds to a division. This means that this term is looking only at the densities around the divisions. The second term is⟨M(0,0)⟩= 1N ∑iNMi(0,0)= NdN,
+The first term on the right hand side (RHS) is
 
-where Nd is the number of divisions in the video. The last term is⟨M(t,r)⟩= 1N ∑iNMi(t,r)≈1NR ∑i ∈RMi(t,r).
+$$
+⟨M(0,0)M(t,r)⟩=\frac{1}{N}\sumiNM^{i}(0,0)M^{i}(t,r)=\frac{1}{N}\sumi\indM^{i}(t,r),
+$$
 
-Here, since the computation would take an extremely long time as there are N=1,368,464 elements, we approximate it by randomly choosing a subset, R, of  NR = 1000 elements.
+where d is the subset of elements where $M^{i}(0,0)=1$, that is, corresponds to a division. This means that this term is looking only at the densities around the divisions. The second term is
 
-The resulting division density correlation function (Figure 3B) shows that there is a positive correlation in space and time, so ⟨M(0,0)M(t,r)⟩>⟨M(0,0)⟩⟨M(t,r)⟩ for r<40m and t<50. This means that if we find one mitotic event we are more likely to find others nearby and soon afterwards.
+$$
+⟨M(0,0)⟩= \frac{1}{N} \sumiNM^{i}(0,0)= \frac{N_{d}}{N},
+$$
 
-## Division orientation correlation function
+where $N_{d}$ is the number of divisions in the video. The last term is
 
-We compute the orientation angle of each division using U-NetOrientation, and form the orientation vector:p(θ)=(cos⁡2θsin⁡2θ).
+$$
+⟨M(t,r)⟩= \frac{1}{N} \sumiNM^{i}(t,r)≈\frac{1}{N_{R}} \sumi \inRM^{i}(t,r).
+$$
 
-Here, 2θ is used since cell division orientation is nematic and we need p(θ)=p(θ+π). To compare two division orientations, we take the dot product of the orientation vectors: 1 indicates that the divisions are aligned, −1 that they are perpendicular, and 0 that their orientations differ by π4.
+Here, since the computation would take an extremely long time as there are $N=1,368,464$ elements, we approximate it by randomly choosing a subset, $R$, of  $N_{R}$ = 1000 elements.
 
-The division orientation correlation function is defined as,T(t,r)=⟨pi⋅pj⟩
+The resulting division density correlation function (Figure 3B) shows that there is a positive correlation in space and time, so $⟨M(0,0)M(t,r)⟩>⟨M(0,0)⟩⟨M(t,r)⟩$ for $r<40m$ and $t<50$. This means that if we find one mitotic event we are more likely to find others nearby and soon afterwards.
 
-where ⟨pi⋅pj⟩ is the mean dot product comparing the orientation of every pair of divisions within a radius (r−δr,r] and (t−δt,t] time from each other. This is calculated as explained above and shown in Figure 4C. Values of T(t,r) close to 1 indicate highly aligned divisions, 0 no correlation and −1 anti-correlated.
+### Division orientation correlation function
+
+We compute the orientation angle of each division using U-NetOrientation, and form the orientation vector:
+
+$$
+p(\theta)=(\frac{cos⁡2\theta}{sin⁡2\theta}).
+$$
+
+Here, $2\theta$ is used since cell division orientation is nematic and we need $p(\theta)=p(\theta+\pi)$. To compare two division orientations, we take the dot product of the orientation vectors: 1 indicates that the divisions are aligned, −1 that they are perpendicular, and 0 that their orientations differ by $\frac{\pi}{4}$.
+
+The division orientation correlation function is defined as,
+
+$$
+T(t,r)=⟨p_{i}⋅p_{j}⟩
+$$
+
+where $⟨p_{i}⋅p_{j}⟩$ is the mean dot product comparing the orientation of every pair of divisions within a radius $(r−\deltar,r]$ and $(t−\deltat,t]$ time from each other. This is calculated as explained above and shown in Figure 4C. Values of $T(t,r)$ close to 1 indicate highly aligned divisions, 0 no correlation and −1 anti-correlated.

@@ -25,23 +25,49 @@ Tetracycline antibiotics like DOX are thought to kill eukaryotic P. falciparum p
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/60246/elife-60246-fig1-v2.jpg)
 
-**Figure 1.:** P. falciparum parasite depicting doxycycline, its canonical delayed-death mechanism at 1 µM inhibiting apicoplast genome translation, the novel metal-dependent mechanism(s) in the apicoplast explored herein at 10 µM, and off-target activity outside the apicoplast at >20 µM.
-
 ## Results
 
-## First-cycle activity by 10 µM DOX has an apicoplast-specific mechanism
+### First-cycle activity by 10 µM DOX has an apicoplast-specific mechanism
 
 Prior studies have shown that 200 µM isopentenyl pyrophosphate (IPP), an essential apicoplast product, rescues parasites from the delayed-death activity of 1–3 µM DOX, confirming an apicoplast-specific target (Yeh and DeRisi, 2011). To provide a baseline for comparison, we first used continuous-growth and 48 hr growth-inhibition assays to confirm that IPP rescued parasites from 1 µM DOX (Figure 2A) and that DOX concentrations > 5 µM killed parasites with first-cycle activity (Figure 2A-C and Figure 2—figure supplement 1) as previously reported (Dahl et al., 2006). To test the apicoplast specificity of first-cycle DOX activity, we next asked whether 200 µM IPP could rescue parasites from DOX concentrations > 5 µM. We observed that IPP shifted the 48 hr EC50 value of DOX from 5 ± 1 to 12 ± 2 µM (average ± SD of five independent assays, p=0.001 by two-tailed unpaired t-test) (Figure 2C and Figure 2—figure supplement 1), suggesting that first-cycle growth defects from 5 to 10 µM DOX reflect an apicoplast-specific mechanism but that DOX concentrations > 10 µM cause off-target defects outside this organelle. We further tested this conclusion using continuous growth assays performed at constant DOX concentrations. We observed that IPP fully or nearly fully rescued parasites from first-cycle growth inhibition by 10 µM but not 20 or 40 µM Dox (Figure 2A and D and Figure 2—figure supplement 1). On the basis of IPP rescue, we conclude that 10 µM DOX kills P. falciparum with first-cycle activity by an apicoplast-specific mechanism.
 
-## 10 µM DOX blocks apicoplast biogenesis in the first cycle
+![Figure 2.](https://cdn.elifesciences.org/articles/60246/elife-60246-fig2-v2.jpg)
+
+**Figure 2.:** (A) Continuous growth assay of synchronized Dd2 parasites treated with 1 or 10 µM DOX ±200 µM IPP with (B) Giemsa-stained blood smears for days 1–3. (C) 48 hr growth-inhibition curve for DOX-treated Dd2 parasites ± 200 µM IPP. (D) Continuous growth assay of synchronized Dd2 parasites treated with 10–40 µM DOX and 200 µM IPP. (E) Epifluorescence images of synchronized parasites treated as rings with 10 µM DOX ±200 µM IPP and imaged 36 or 65 hr later (green = ACPL GFP, blue = nuclear Hoechst stain). Data points in growth assays are the average ± SD of two to four biological replicates. All growth assays were independently repeated two to four times using different batches of blood (shown in Figure 2—figure supplement 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60246/elife-60246-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Additional continuous growth assays of synchronized Dd2 parasites treated with 1 or 10 µM DOX ±200 µM IPP. (B) Independent 48 hr growth-inhibition assays for DOX-treated Dd2, D10, NF54 parasites in the absence or presence of 200 µM IPP or 50 µM mevalonate. Dd2 and NF54 parasites were synchronized by single treatment with 5% D-sorbitol. D10 parasites were synchronized by magnet purification of schizonts followed by 5 hr incubation with uninfected erythrocytes and treatment with 5% D-sorbitol. Data points in individual plots are the ave ± SD of two to four biological replicates. Each plot reflects an independent assay performed with a different batch of blood. (C) Scatter plot of doxycycline EC50 values from independent assays ± IPP with calculated ave ± SD and analysis by two-tailed unpaired t-test. (D) Independent continuous growth assay of synchronized Dd2 parasites treated with 10–40 µM DOX and 200 µM IPP.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60246/elife-60246-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Magnet plus sorbitol-synchronized parasites were treated as rings with 10 µM DOX ±200 µM IPP and imaged 1 or 3 days later (green = ACPL GFP, blue = nuclear Hoechst stain). Twenty to 40 total parasites were examined for each treatment condition on each given day for duplicate experiments, and data were plotted as the average percentage of parasites in each population that displayed an elongated, punctate, or dispersed apicoplast GFP signal. For clarity, error bars are not displayed but standard errors of the mean were ≤15% in all conditions. Cell-percentage differences were analyzed by two-tailed unpaired t-test (p values in parentheses, ns = not significant).
+
+### 10 µM DOX blocks apicoplast biogenesis in the first cycle
 
 Inhibition of apicoplast biogenesis in the second intraerythrocytic cycle is a hallmark of 1–3 µM DOX-treated P. falciparum, resulting in unviable parasite progeny that fail to inherit the organelle (Dahl et al., 2006). IPP rescues parasite viability after the second cycle without rescuing apicoplast inheritance, such that third-cycle daughter parasites lack the organelle and accumulate apicoplast-targeted proteins in cytoplasmic vesicles (Yeh and DeRisi, 2011). We treated synchronized ring-stage D10 (Waller et al., 2000) or NF54 (Swift et al., 2020) parasites expressing the acyl carrier protein leader sequence fused to GFP (ACPL-GFP) with 10 µM DOX and assessed apicoplast morphology 30–36 hr later in first-cycle schizonts. In contrast to the second-cycle effects of 1–3 µM DOX, the apicoplast in 10 µM DOX-treated parasites failed to elongate in the first cycle. Rescue by 200 µM IPP produced second-cycle parasite progeny with a dispersed GFP signal indicative of apicoplast loss (Figure 2E and Figure 2—figure supplement 2). We conclude that 10 µM DOX blocks apicoplast biogenesis in the first cycle.
 
-## First- and second-cycle effects of DOX on the apicoplast are due to distinct mechanisms
+### First- and second-cycle effects of DOX on the apicoplast are due to distinct mechanisms
 
 What is the molecular mechanism of faster apicoplast-specific activity by 10 µM DOX? We first considered the model that both 1 and 10 µM DOX inhibit apicoplast translation but that 10 µM DOX kills parasites faster due to more stringent translation inhibition at higher drug concentrations. This model predicts that treating parasites simultaneously with multiple distinct apicoplast-translation inhibitors, each added at a delayed death-inducing concentration, will produce additive, accelerated activity that kills parasites in the first cycle. To test this model, we treated synchronized D10 parasites with combinatorial doses of 2 µM DOX, 2 µM clindamycin, and 500 nM azithromycin and monitored growth over three intraerythrocytic cycles. Treatment with each antibiotic alone produced major growth defects at the end of the second cycle, as expected for delayed-death activity at these concentrations (Dahl and Rosenthal, 2007). Two- and three-way drug combinations caused growth defects that were indistinguishable from individual treatments and provided no evidence for additive, first-cycle activity (Figure 3A and Figure 3—figure supplement 1). These results contradict a simple model that 1 and 10 µM DOX act via a common translation-blocking mechanism and suggest that the first-cycle activity of 10 µM DOX is due to a distinct mechanism.
 
-## Exogenous iron rescues parasites from first- but not second-cycle effects of 10 µM DOX
+![Figure 3.](https://cdn.elifesciences.org/articles/60246/elife-60246-fig3-v2.jpg)
+
+**Figure 3.:** Continuous growth assays of synchronized Dd2 parasites treated with (A) DOX, clindamycin (CLI), and/or azithromycin (AZM) and (B) 10 µM DOX and 10 µM ZnCl2 or 500 µM CaCl2. (C) 48 hr growth inhibition assay of D10 parasites treated with DOX without or with 500 µM FeCl3 or CaCl2. (D) Continuous growth assay of synchronized Dd2 parasites treated with 10 µM DOX and 500 µM FeCl3 or MgCl2. (E) Epifluorescence images of synchronized parasites treated as rings with 10 µM DOX ±500 µM FeCl3 or CaCl2 and imaged 36 hr later (green = ACPL GFP, blue = nuclear Hoechst stain). (F) Continuous growth assay of synchronized Dd2 parasites treated with 1 µM DOX and 500 µM FeCl3 or MgCl2. (G) Continuous-growth assay of synchronized Dd2 parasites treated with 20 or 40 µM DOX and 500 µM FeCl3. Data points in growth assays are the average ± SD of two to four biological replicates. All growth assays were independently repeated using different batches of blood (shown in Figure 3—figure supplement 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60246/elife-60246-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Additional continuous growth assays of synchronized Dd2 parasites treated with (A) DOX, clindamycin (CLI), and/or azithromycin (AZM); (B) 500 µM of CaCl2, MgCl2, or FeCl3 alone; (C) 10 µM DOX and 5 µM ZnCl2 or 250 µM CaCl2; (D) 10 µM DOX treated with 50–500 µM FeCl3 or 500 µM MgCl2. Individual data points are the ave ± SD from two to four biological replicates. (E) 96 hr growth-inhibition assays for DOX-treated D10 parasites in the absence or presence of 200 µM IPP, 500 µM FeCl3, or 500 µM CaCl2. Parasites were synchronized by magnet purification of schizonts followed by 5 hr incubation with uninfected erythrocytes and treatment with 5% D-sorbitol. Data points are the ave ± SD of 3 biological replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60246/elife-60246-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Magnet plus sorbitol-synchronized parasites were treated as rings with 10 µM DOX ±500 µM FeCl3 or CaCl2 and imaged 36 hr later (green = ACPL GFP, blue = nuclear Hoechst stain). Twenty to 40 total parasites were examined for each treatment condition on each given day for duplicate experiments, and data were plotted as the average percentage of parasites in each population that displayed an elongated, punctate, or dispersed apicoplast GFP signal. For clarity, error bars are not displayed but standard errors of the mean were ≤15% in all conditions. Cell-percentage differences were analyzed by two-tailed unpaired t-test (p values in parentheses, ns = not significant).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60246/elife-60246-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (Left) Continuous growth assay of sorbitol-synchronized Dd2 parasites cultured without or with 15 µM deferoxamine (DFO), 15 µM FeCl3, or 200 µM IPP. (Right) Fluorescence microscopy of live, synchronized D10 parasites untreated or treated with 15 µM DFO and imaged 36 hr later (green = ACPL GFP, blue = nuclear Hoechst stain). Twenty to 30 total parasites were examined for each treatment condition on each given day for duplicate experiments, and data were plotted as the average percentage of parasites in each population that displayed an elongated, punctate, or dispersed apicoplast GFP signal. For clarity, error bars are not displayed but standard errors of the mean were <15% in all conditions. Cell-percentage differences were analyzed by two-tailed unpaired t-test (p value in parenthesis).
+
+### Exogenous iron rescues parasites from first- but not second-cycle effects of 10 µM DOX
 
 Tetracycline antibiotics like DOX tightly chelate a wide variety of di- and trivalent metal ions via their siderophore-like arrangement of exocyclic hydroxyl and carbonyl oxygen atoms (Figure 1), with a reported affinity series of Fe3+>Fe2+>Zn2+>Mg2+>Ca2+ (Albert and Rees, 1956; Nelson, 1998). Indeed, tetracycline interactions with Ca2+ and Mg2+ ions mediate cellular uptake and binding to biomolecular targets such as the tetracycline repressor and 16S rRNA (Nelson, 1998; Orth et al., 2000). We next considered a model that first-cycle effects of 10 µM DOX reflect a metal-dependent mechanism distinct from ribosomal inhibition causing second-cycle death. To test this model, we investigated whether exogenous metals rescued parasites from 10 µM DOX. We failed to observe growth rescue by 10 µM ZnCl2 (toxicity limit [Marvin et al., 2012]) or 500 µM CaCl2 in continuous-growth (Figure 3B and Figure 3—figure supplement 1) or 48 hr growth-inhibition assays (Figure 3C). In contrast, 500 µM FeCl3 (and to a lesser extent 500 µM MgCl2) fully or nearly fully rescued parasites from first-cycle growth inhibition by 10 µM DOX (Figure 3C and D), although partial rescue was observed at FeCl3 concentrations as low as 50 µM (Figure 3—figure supplement 1). However, parasites treated with 10 µM DOX and 500 µM FeCl3 still succumbed to second-cycle, delayed death (Figure 3D and Figure 3—figure supplement 1), as expected for distinct mechanisms of first- and second-cycle DOX activity.
 
@@ -49,7 +75,7 @@ We also observed that 500 µM FeCl3 but not CaCl2 rescued first-cycle apicoplast
 
 ## Discussion
 
-## Metal-dependent mechanisms of first-cycle activity by 10 µM DOX
+### Metal-dependent mechanisms of first-cycle activity by 10 µM DOX
 
 What is the metal-dependent mechanism of 10 µM DOX, and why is there preferential rescue of parasite growth by FeCl3? Tetracyclines bind iron more tightly than other metals, with an equilibrium association constant of 1010 M−1 for 1:1 chelation of Fe3+ versus 104 M−1 for Mg2+ (Albert and Rees, 1956). Although the 500 µM concentration of exogenous FeCl3 required for maximal rescue of parasite growth in 10 µM DOX is large relative to the ~1 µM labile iron concentration estimated for the parasite cytoplasm (Scholl et al., 2005), the intracellular iron concentration achieved by exogenous addition of 500 µM FeCl3 remains unclear. Indeed, mechanisms of iron uptake and trafficking by blood-stage P. falciparum remain sparsely understood (Scholl et al., 2005; Mabeza et al., 1999), especially uptake across the four membranes that surround the apicoplast.
 
@@ -59,7 +85,7 @@ We propose two distinct models to explain the metal-dependent effects of 10 µM 
 
 In a second model, DOX could bind to additional macromolecular targets within the apicoplast (e.g. a metalloenzyme) via metal-dependent interactions that inhibit essential functions required for organelle biogenesis. Exogenous 500 µM Fe3+ would then rescue parasites by disrupting these inhibitory interactions via competitive binding to DOX. This second model would be mechanistically akin to diketo acid inhibitors of HIV integrase like raltegravir that bind to active site Mg2+ ions to inhibit integrase activity but are displaced by exogenous metals (Grobler et al., 2002; Hare et al., 2010). To test this model, we are developing a DOX-affinity reagent to identify apicoplast targets that interact with doxycycline and whose inhibition may contribute to first-cycle DOX activity.
 
-## Conclusions and implications
+### Conclusions and implications
 
 These results critically expand the paradigm for understanding the fundamental mechanisms of DOX activity against P. falciparum malaria parasites. These mechanisms include a delayed, second-cycle defect at 1–3 µM DOX that likely reflects inhibition of 70S apicoplast ribosomes, a first-cycle iron-dependent defect within the apicoplast that uniquely operates at 8–10 µM DOX, and a first-cycle iron-independent mechanism outside the apicoplast at ≥20 µM DOX (Figure 1). Pharmacokinetic studies indicate that current 100–200 mg doses of DOX achieve peak human serum concentrations of 6–8 µM over the first six hours which then decrease to 1–2 µM over 24 hr (Newton et al., 2005). Although current DOX treatment regimens result in delayed parasite clearance in vivo, both apicoplast-specific mechanisms of DOX likely operate over this concentration range and contribute to parasite death (Dahl et al., 2006). These multiple mechanisms of DOX, together with limited antimalarial use of DOX in the field, may explain why parasites with stable DOX resistance have not emerged (Conrad and Rosenthal, 2019; Gaillard et al., 2015).
 
@@ -69,15 +95,102 @@ Finally, this work suggests the possibility of repurposing DOX as a faster-actin
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>Dd2</td>
+      <td>PMID:1970614</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>D10 ACPL-GFP</td>
+      <td>PMID:10775264</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Plasmodium falciparum)</td>
+      <td>NF54-PfMev ACPL-GFP</td>
+      <td>PMID:32059044</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. D3447</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopentenyl pyrophosphate</td>
+      <td>Isoprenoids</td>
+      <td>Cat. No. IPP001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ferric chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. 236489</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clindamycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. C6427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Azithromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. 75199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deferoxamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. No. D9533</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 All reagents were cell-culture grade and/or of the highest purity available.
 
-## Parasite culture
+### Parasite culture
 
 All experiments were performed using Plasmodium falciparum Dd2 (Wellems et al., 1990), ACPL-GFP D10 (Waller et al., 2000), or ACPL-GFP PfMev NF54 (Swift et al., 2020) parasite strains, which were obtained from colleagues and verified by confirming their expected drug sensitivity and/or sequencing strain-specific genetic markers. Parasite culturing was performed as previously described (Sigala et al., 2015) in Roswell Park Memorial Institute medium (RPMI-1640, Thermo Fisher 23400021) supplemented with 2.5 g/L Albumax I Lipid-Rich BSA (Thermo Fisher 11020039), 15 mg/L hypoxanthine (Sigma H9636), 110 mg/L sodium pyruvate (Sigma P5280), 1.19 g/L HEPES (Sigma H4034), 2.52 g/L sodium bicarbonate (Sigma S5761), 2 g/L glucose (Sigma G7021), and 10 mg/L gentamicin (Invitrogen Life Technologies 15750060). Cultures were maintained at 2% hematocrit in human erythrocytes obtained from the University of Utah Hospital blood bank, at 37°C, and at 5% O2, 5% CO2, 90% N2. Cultures were mycoplasma-free by PCR test.
 
-## Parasite growth assays
+### Parasite growth assays
 
 All growth assays were performed with two to four biological replicates (defined according to Blainey et al., 2014) in distinct sample wells that were set-up and monitored in parallel. Parasites were synchronized to the ring stage either by treatment with 5% D-sorbitol (Sigma S7900) or by first magnet-purifying schizonts and then incubating them with uninfected erythrocytes for 5 hr followed by treatment with 5% D-sorbitol. Results from growth assays using either of these synchronization methods were indistinguishable within error, and 5% sorbitol was used for synchronization unless stated otherwise.
 
@@ -85,6 +198,6 @@ For continuous growth assays, parasite growth was monitored by diluting sorbitol
 
 For EC50 determinations via dose-response assay, synchronous ring-stage parasites were diluted to 1% parasitemia and incubated with variable (serially twofold diluted) DOX concentrations ± 200 µM IPP,±50 µM mevalonate (Cayman 20348), ±500 µM FeCl3, or ±500 µM CaCl2 for 48–120 hr without media changes. Parasitemia was determined by flow cytometry for two to four biological replicates for each untreated or drug-treated condition, normalized to the parasitemia in the absence of drug, plotted as the average ± SD of biological replicates as a function of the log of the drug concentration (in µM), and fit to a four-parameter dose-response model using GraphPad Prism 8.0. All growth assays were independently repeated two to five times on different weeks and in different batches of blood. The 48 hr EC50 values determined from five independent assays for DOX ±IPP were averaged and analyzed by unpaired t-test using GraphPad Prism 8.0.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 For live-cell experiments, parasites samples were collected at 30–36 or 65 hr after synchronization with magnet purification plus sorbitol treatment (see above). Imaging experiments were independently repeated twice. Parasite nuclei were visualized by incubating samples with 1–2 µg/ml Hoechst 33342 (Thermo Scientific Pierce 62249) for 10–20 min at room temperature. The parasite apicoplast was visualized in D10 (Waller et al., 2000) or NF54 mevalonate-bypass (Swift et al., 2020) cells using the ACPleader-GFP expressed by both lines. Images were taken on DIC/brightfield, DAPI, and GFP channels using either a Zeiss Axio Imager or an EVOS M5000 imaging system. Fiji/ImageJ was used to process and analyze images. All image adjustments, including contrast and brightness, were made on a linear scale. For indicated conditions, apicoplast morphologies in 20–40 total parasites were scored as elongated, focal, or dispersed; counted; and plotted by histogram as the fractional population with the indicated morphology. Analysis of replicate samples indicated standard errors of the mean that were ≤15% for all samples in the percentage of parasites displaying a given apicoplast morphology in a given condition. Two-tailed unpaired t-test analysis using GraphPad Prism was used to evaluate the significance of observed population differences.

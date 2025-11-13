@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Transient Receptor Potential Melastatin 3 (TRPM3) is a Ca 2+ permeable non-selective cation channel activated by heat and chemical agonists such as pregnenolone sulfate and CIM0216. TRPM3 mutations in humans were recently reported to be associated with intellectual disability and epilepsy; the functional effects of those mutations, however, were not reported. Here, we show that both disease-associated mutations in the human TRPM3 render the channel overactive, but likely via different mechanisms. The Val to Met substitution in the S4-S5 loop induced a larger increase in basal activity and agonist sensitivity at room temperature than the Pro to Gln substitution in the extracellular segment of S6. In contrast, heat activation was increased more by the S6 mutant than by the S4-S5 segment mutant. Both mutants were inhibited by the TRPM3 antagonist primidone, suggesting a potential therapeutic intervention to treat this disease.
+Transient Receptor Potential Melastatin 3 (TRPM3) is a Ca2+ permeable non-selective cation channel activated by heat and chemical agonists such as pregnenolone sulfate and CIM0216. TRPM3 mutations in humans were recently reported to be associated with intellectual disability and epilepsy; the functional effects of those mutations, however, were not reported. Here, we show that both disease-associated mutations in the human TRPM3 render the channel overactive, but likely via different mechanisms. The Val to Met substitution in the S4-S5 loop induced a larger increase in basal activity and agonist sensitivity at room temperature than the Pro to Gln substitution in the extracellular segment of S6. In contrast, heat activation was increased more by the S6 mutant than by the S4-S5 segment mutant. Both mutants were inhibited by the TRPM3 antagonist primidone, suggesting a potential therapeutic intervention to treat this disease.
 
 ## Introduction
 
@@ -34,6 +34,22 @@ Most alternatively spliced exons are in the cytoplasmic N-terminus; thus, the nu
 
 First, we co-expressed the Ca2+ indicator GCaMP6f (Chen et al., 2013) and the hTRPM3α2 isoform and its mutants in HEK293 cells and performed intracellular Ca2+ measurements in a 96-well plate reader. We found that the concentration-response relationship to PregS (Figure 1A–D) and CIM0216 (Figure 1E–H) were left shifted in the mutant channels; V992M showed a much larger shift than P1092Q for both agonists. The V992M mutant also showed a larger increase in basal Ca2+ levels than P1092Q at room temperature (21°C), and the application of the TRPM3 antagonist primidone decreased basal Ca2+ levels for both mutants in a concentration-dependent manner (Figure 1I–L). Primidone had no effect on basal cytoplasmic Ca2+ levels in cells transfected with the wild type TRPM3 indicating negligible basal activity of the wild type channel at room temperature (Figure 1I). Primidone robustly inhibited Ca2+ signals evoked by EC50 concentrations of PregS both for wild type and mutant channels (Figure 1—figure supplement 2). We also measured PregS responses at 37°C. Consistent with earlier results (Vriens et al., 2011), sensitivity of wild-type TRPM3 to PregS increased at 37°C; the EC50 of activation decreased to 0.99 μM at 37°C compared to 7 μM at room temperature (Figure 1—figure supplement 3A,B). Basal Ca2+ levels at 37°C were substantially elevated in cells expressing wild-type channels, which is consistent with the low temperature threshold of TRPM3 (Vriens et al., 2011). Both mutant channels showed very high basal Ca2+ levels, which were not further increased by PregS, indicating substantial Ca2+ overload when kept at 37°C continuously (Figure 1—figure supplement 3C,D). Primidone (50 μM) reduced basal Ca2+ levels at 37°C in wild type channels and to a smaller extent in the mutant channels (Figure 1M–P).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig1-v2.jpg)
+
+**Figure 1.:** HEK293 cells were transfected with the Ca2+ indicator GCaMP6f and the hTRPM3α2 or its mutants, and fluorescence was measured in a 96-well plate reader (Flexstation-3) as described in the Materials and methods section. (A-C) Fluorescence traces for TRPM3 (A), V992M (B) and P1092Q (C); the applications of various concentrations of PregS and 2 μM ionomycin are indicated by the arrows. Basal fluorescence before the application of PregS was first subtracted, then the traces were normalized to the fluorescence after the application of ionomycin. Each trace shows the average of four replicates from the same 96-well plate. Measurements were performed at 21°C. (D) Hill fits of the concentration dependence of the fluorescence signals evoked by PregS. Symbols represent individual wells from three independent transfections. The EC50 values were 7.01 ± 0.69 μM for wild-type channels, 0.32 ± 0.03 μM for V992M and 1.97 ± 0.08 μM for P1092Q. (E-G) Fluorescence traces for TRPM3 (E), V992M (F) and P1092Q (G), the applications of various concentrations of CIM0216 and 2 μM ionomycin are indicated by the arrows. Basal fluorescence before the application of CIM0216 was first subtracted, then the traces were normalized to the fluorescence after the application of ionomycin. Measurements were performed at 21°C. (H) Hill fits of the concentration dependence of the fluorescence signals evoked by CIM0216. Symbols represent individual wells from two independent transfections. The EC50 values were 2.72 ± 0.17 μM for wild-type channels, 0.17 ± 0.02 μM for V992M and 0.88 ± 0.08 μM for P1092Q. (I-K) Fluorescence traces for TRPM3 (I), V992M (J) and P1092Q (K), the applications of various concentrations of primidone are indicated by the arrows; traces were not normalized and shown as arbitrary fluorescence units (A.U.). Measurements were performed at 21°C. (L) Hill1 fits of the concentration dependence of the inhibition evoked by primidone. Symbols represent mean ± SEM from two independent transfections, five or six wells in each. The IC50 values were 2.41 ± 0.74 μM for V992M and 0.64 ± 0.09 μM for P1092Q. (M-O) Fluorescence traces for TRPM3 (M), V992M (N) and P1092Q (O), the applications of 50 μM primidone are indicated by the arrows; traces show the average of 16 wells from two independent transfections, normalized to the effect of ionomycin. Measurements were performed at 37°C. (P) Summary of the data, Mean ± SEM and scatter plots. Statistical significance was calculated with one-way analysis of variance with Bonferroni post hoc comparison for differences of basal fluorescence values between mutant and wild-type channels. The effect of primidone in wild type and mutant channel was evaluated with paired t-test; the p values for significance are shown above the bars.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top: Sequence alignment of the outer part of S6 in TRPM channels, the P1090/1092 residue in TRPM3 is highlighted blue. Bottom: Sequence alignment of the S4-S5 loop of TRPM channels, the V990/992 residue in TRPM3 is labeled red, yellow highlights indicate residues in contact with the agonists icilin and/or WS12 in the TRPM8 structures (6nr3, 6nr4, 6nr2), the residue highlighted green is in contact with PI(4,5)P2 in TRPM8. (B) The location of residues equivalent to V990/992 and P1090/1092 on the structure of TRPM4 (6bcj); one subunit is hidden for visibility. The V990/992 residue corresponds to V837 in Dyment et al. (2019) while the P1090/1092 corresponds to P937.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** HEK293 cells were transfected with the Ca2+ indicator GCaMP6f and the hTRPM3α2 or its mutants, and fluorescence was measured in a 96-well plate reader (Flexstation-3) at room temperature (~21°C) as described in the Materials and method section. (A-C) Cells were stimulated by PregS at its EC50 concentration for each construct, as indicated by the first arrow, then various concentrations of primidone were applied (second arrow). (D) Hill1 fits of the concentration dependence of primidone; symbols show mean ± SEM from five or six wells, from two independent transfections. The IC50 values were 2.37 ± 0.39 μM for wild-type channels, 8.62 ± 1.42 μM for V992M and 3.52 ± 1.13 μM for P1092Q.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** HEK293 cells were transfected with the Ca2+ indicator GCaMP6f and the hTRPM3α2 or its mutants, and fluorescence was measured in a 96-well plate reader (Flexstation-3) as described in the Materials and method section. (A) Average traces from one plate (four wells for each condition) for stimulation with different concentrations of PregS for cells expressing wild type TRPM3; at the end of the experiment, 2 μM ionomycin was applied as a normalizing stimulus. (B) Hill fit of the PregS concentration response relationship, symbols show values obtained in individual wells n = 8 from two independent transfections. The dashed line shows the fit for the concentration response curve obtained at 21°C from Figure 1D. (C-D) Identical experiments to those shown in panel A, on cells expressing the V992M (C) and the P1092Q (D) mutants.
+
 Next, we transfected HEK293 cells with the mutant and wild-type hTRPM3α2 and used fura-2 Ca2+ imaging to study the effects of acutely increased temperatures (Figure 2). We first increased the temperature to 37°C, followed by 10 μM primidone at room temperature to facilitate return of Ca2+ to baseline. Then we applied 25 μM PregS (in the absence of primidone), and compared the Ca2+ responses induced by 37°C to that induced by PregS. In cells transfected with wild-type TRPM3, the temperature-induced Ca2+ response was, on average, 29.4% of that induced by PregS, for the V992M mutant it was 76.5%, whereas for the P1092Q mutant it was ~122.5% (Figure 2D,E). In cells not expressing TRPM3 increasing temperature to 37°C induced only negligible Ca2+ signals (not shown).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig2-v2.jpg)
@@ -47,6 +63,22 @@ Cytoplasmic Ca2+ is an indirect measure of TRPM3 activity, thus next, we perform
 **Figure 3.:** (A-C) Representative measurements, top panels show temperature recordings, bottom panels show currents at 100 mV and −100 mV. The applications of 100 μM PregS are indicated by the horizontal lines. (D-F) The heat-induced current amplitudes at 100 mV were normalized to the currents induced by PregS and plotted as a function of the temperature from the same data presented in panels A-C. (G) Summary of the slopes of the current increases between 23°C and 33°C determined from linear fits from panels D-F. (H) Summary of current amplitudes at 100 and −100 mV induced by increasing the temperature to 25°C, 30°C and 35°C as well as in response to PregS.
 
 Next, we expressed the wild-type hTRPM31325 and its V990M and P1090Q mutants in Xenopus oocytes and performed full concentration response measurements with the TRPM3 agonist PregS. Consistent with our Ca2+ measurements, the concentration response relationships for PregS were left-shifted for both mutants compared to wild-type, but the effect of the V990M mutation was much more pronounced than that of the P1090Q (Figure 4A–D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig4-v2.jpg)
+
+**Figure 4.:** Two electrode voltage clamp experiments in oocytes expressing the hTRPM31325 splice variant and its mutants were performed as described in the Materials and methods section using a ramp protocol from −100 to 100 mV every 0.5 s. (A-C) Representative measurements for wild-type (A), V990M (B) and P1090Q (C); top traces show currents at +100 mV, bottom traces at −100 mV, dashed line shows zero current. The applications of different concentrations of PregS (μM) are indicated by the horizontal lines. (D) Hill fits of the concentration dependence of the effect of PregS at 100 mV for wild-type and mutant channels. The EC50 values were 17.1 ± 0.9 μM for wild-type channels, 0.63 ± 0.05 μM for V990M and 6.94 ± 0.38 μM for P1090Q. (E-F) Representative traces for measurements in oocytes injected with cRNA for wild type and mutant channels (1:1 ratio). (G) Hill fits of the concentration dependence of the effects of PregS at 100 mV for wild type and mutant channel combinations; symbols represent individual oocytes from two different preparations. The EC50 values were 17.8 ± 1.04 μM for wild-type channels, 3.83 ± 0.27 μM for V990M + WT and 12.2 ± 1.1 μM for P1090Q + WT.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Two electrode voltage clamp experiments in oocytes expressing the hTRPM31325 splice variant and its mutants were performed as described in the Materials and methods section. (A-C) Representative measurements for wild-type (A), V990M (B) and P1090Q (C) top traces show currents at 100 mV, bottom traces at −100 mV, dashed lines show zero currents. The applications of 50 μM primidone and 100 μM PregS are indicted by the horizontal lines. (D) Summary of current inhibition evoked by primidone at 100 mV (left) and −100 mV (right). (E) Summary of current amplitudes evoked by 100 μM PregS at 100 mV (left) and −100 mV (right). Bars represent mean ± SEM and scatter plots for individual oocytes from two independent oocyte preparations. (F) Basal currents are increased in disease-associated mutants of TRPM3. Current amplitudes are plotted at 100 mV (left) and at −100 mV (right) before application of any agonist. Data are pooled from five different oocyte preparations from experiments shown in Figure 4; Figure 4—figure supplement 2; Figure 4—figure supplement 3; bars represent mean ± SEM and scatter plots. Statistical significance was calculated with one-way analysis of variance with Bonferroni post hoc test for panels D-F.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Two electrode voltage clamp experiments in oocytes expressing the hTRPM31325 splice variant and its mutants were performed as described in the Materials and methods section. (A-C) Representative measurements for wild-type (A), V990M (B) P1090Q (C), and non-injected oocytes (D), top traces show currents at +100 mV, bottom traces at −100 mV, dashed line shows zero current. The temperature curves are shown above the current traces, and the applications of 50 μM PregS are indicated by the horizontal lines. (E) Summary of the temperature responses expressed as a fraction of the currents induced by 50 μM PregS in the same measurements. (F) Current amplitudes induced by increased temperatures and by PregS; symbols represent responses in individual oocytes from two different oocyte preparations; lines connect measurements in the same oocytes, bars are mean ± SEM. The current amplitudes induced by 50 μM PregS were, on average, smaller in both mutants than in wild type in these experiments, most likely because oocytes expressing these mutants showed substantially higher rate of death than those injected with wild type TRPM3, therefore the oocytes we used for electrophysiology were selected for lower expression. To be able to compare temperature-induced currents, we normalized current amplitudes to those induced by 50 μM PregS in panel E.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/55634/elife-55634-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Two electrode voltage clamp experiments in oocytes expressing the hTRPM31325 splice variant and its mutants were performed as described in the Materials and methods. (A-D) Representative measurements for wild-type (A), V990M (B,C) and P1090Q (D); top traces show currents at +100 mV, bottom traces at −100 mV, dashed line shows zero current. The applications of 50 μM or 5 μM PregS and 5 μM ACh are indicated by the horizontal lines. (E) Summary of current inhibition in wild type and mutant TRPM3 channels at 100 mV. (F) Summary of current amplitudes at 100 mV. (G-I) Representative traces for the effect of M2 activation of channels stimulated by EC50 concentrations of PregS for wild-type (G), V990M (H) and P1090Q (I). (J) Summary of current inhibition; (K) Summary of current amplitudes. Data are shown as mean ± SEM and scatter plots. Symbols represent individual oocytes from three (A-D) and two (G-H) different preparations.
 
 Both disease-associated mutations are de novo, and all known patients are heterozygous. To mimic heterozygous conditions, we co-injected oocytes with wild type cRNA and either mutant in a 1:1 ratio. The PregS dose response was still markedly left shifted for the V990M:TRPM3 combination, but it was only marginally shifted in the P1090Q:TRPM3 combination compared to WT TRPM3 (Figure 4E–G).
 
@@ -72,24 +104,174 @@ Overall our data show that both disease-associated mutations render TRPM3 overac
 
 ## Materials and methods
 
-## Intracellular Ca2+ assay in 96-well plates
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hTRPM3α2; hTRPM3 variant 10</td>
+      <td>Genescript</td>
+      <td>NM_001366141.2</td>
+      <td>In pCDNA3.1(+); tagged with GFP on its N-terminus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hTRPM3α2-V992M</td>
+      <td>Genescript</td>
+      <td>NM_001366141.2 Modified by V992M mutation</td>
+      <td>In pCDNA3.1(+); tagged with GFP on its N-terminus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hTRPM3α2-P1092Q</td>
+      <td>Genescript</td>
+      <td>NM_001366141.2 Modified by P1092Q mutation</td>
+      <td>In pCDNA3.1(+); tagged with GFP on its N-terminus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hTRPM31325</td>
+      <td>Grimm et al 203 JBC, 278, 21493</td>
+      <td>AJ505026</td>
+      <td>Original clone was subcloned into the pGEMSH oocyte vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GCaMP6f</td>
+      <td>Addgene</td>
+      <td># 40755 RRID:Addgene_40755</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573, RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Xenopus Leavis</td>
+      <td>Nasco</td>
+      <td>LM00535</td>
+      <td>Female frogs to extract oocytes</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage mMachine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalogue # AM1344</td>
+      <td>In vitro transcription kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Effectene</td>
+      <td>Qiagen</td>
+      <td>Catalogue # 301425</td>
+      <td>Transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange II XL</td>
+      <td>Agilent Technologies</td>
+      <td>Catalogue # 200522</td>
+      <td>Site-Directed Mutagenesis Kit</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pregnenolone Sulfate</td>
+      <td>Cayman Chemicals</td>
+      <td>Catalogue # 21004</td>
+      <td>TRPM3 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CIM0126</td>
+      <td>Calbiochem</td>
+      <td>Catalogue # 534359</td>
+      <td>TRPM3 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Primidone</td>
+      <td>Sigma</td>
+      <td>Catalogue # p7295</td>
+      <td>TRPM3 antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Cayman Chemicals</td>
+      <td>Catalogue # 56092-81-0</td>
+      <td>Calcium ionophore</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fura2-AM</td>
+      <td>Invitrogen</td>
+      <td>Catalogue # F1221 RRID:AB_11156243</td>
+      <td>Calcium indicator;</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 2019b</td>
+      <td>Originlab.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp10.6</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Master 5</td>
+      <td>Photon Technology International</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism6</td>
+      <td>www.graphpad.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Intracellular Ca2+ assay in 96-well plates
 
 Intracellular Ca2+ measurements were performed using a Flexstation-3 96‐well plate reader with rapid well injection (Molecular Devices) as described earlier (Hughes et al., 2019) with some modifications. Briefly Human Embryonic Kidney 293 (HEK293) cells were purchased from American Type Culture Collection (ATCC), Manassas, VA, (catalogue number CRL-1573), RRID:CVCL_0045; cell identity was verified by STR analysis by ATCC. HEK293 cells were cultured in MEM supplemented with 10% FBS and 100 IU/ml penicillin plus 100 µg/ml streptomycin in 5% CO2 at 37°C. Additional cell authentication was not performed, but passage number of the cells was monitored, and cells were used up to passage number 25–30 from purchase, when a new batch of cells was thawed with low passage number; cells were tested for the lack of mycoplasma infection. HEK293 cells were transfected with hTRPM3α2-GFP, or its mutants (200 ng) and GCaMP6 (1 μg) using the Effectene reagent (Qiagen). The human orthologue of the mouse splice variant TRPM3α2 in the pCDNA3.1(+) vector (hTRPM3 variant 10; NM_001366141.2) tagged with GFP on its N terminus, and its V992M and P1092Q mutants were purchased from Genescript, GCaMP6f was a kind gift from Dr. Lawrence Gaspers. After 24 hr, transfected cells were plated on poly-D-lysine coated black-wall clear-bottom 96-well plates and measurements were performed 24–48 hr after plating. Before experiments, the MEM media was replaced with a solution containing (in mM) 137 NaCl, 5 KCl, 1 MgCl2, 2 CaCl2, 10 HEPES and 10 glucose, pH 7.4 and the plate was measured at around 21°C. GCaMP6 signal was measured at excitation wavelengths 485 nm and fluorescence emission was detected at 525 nm. Sampling interval was 0.86 s and four parallel reads were performed for each condition. For most experiments, 2 μM ionomycin was applied to determine the maximum response. Primidone was purchased form Sigma, CIM0216 from Calbiochem, ionomycin and PregS from Cayman Chemicals. For measurements at 37°C the MEM medium used to culture the cells was replaced with the measurement solution preheated to 37°C, and the plate was placed in the plate reader warmed to 37°C using its built-in temperature controller.
 
-## Ca2+ imaging experiments
+### Ca2+ imaging experiments
 
 Ca2+ imaging experiments were performed using an Olympus IX-51 inverted microscope equipped with a DeltaRAM excitation light source (Photon Technology International, PTI), as described earlier (Badheka et al., 2017). HEK293 cells were transfected with hTRPM3α2-GFP or its mutants using the Effectene reagent (Qiagen). Cells were loaded with 1 μM fura-2 AM (Invitrogen) for 40 min before the measurements at 37°C, and dual-excitation images at 340 and 380 nm excitation wavelengths were detected at 510 nm with a Roper Cool-Snap digital CCD camera. Measurements were conducted at room temperature in extracellular solution containing 137 mM NaCl, 5 mM KCl, 1 mM MgCl2, 2 mM CaCl2, 10 mM HEPES and 10 mM glucose, pH 7.4. PregS, and primidone were applied with a gravity-driven whole chamber perfusion system. Temperature stimulation was performed using a custom-built system as described earlier (Badheka et al., 2017) by pushing bath solution through a spiral tubing immersed in hot water using a 60 ml syringe while monitoring the temperature of the perfusion chamber using a CL-100 Warner Instruments temperature controller. The analogue signal from the CL-100 unit was fed into the Digidata digitizer and the temperature curve was collected in Clampex. Data analysis was performed using the Image Master 5 software (PTI).
 
-## Whole cell patch clamp experiments
+### Whole cell patch clamp experiments
 
 HEK293 cells were transiently transfected with cDNA encoding the hTRPM3α2-GFP, or its mutants with 0.2 µg of constructs using the Effectene reagent (Qiagen) according manufacturer’s protocol and were used in experiments 48–72 hr later. Measurements were carried out on GFP positive cells, in an extracellular solution containing (in mM) 137 NaCl, 5 KCl, 1 MgCl2, 10 HEPES and 10 glucose, pH 7.4. The intracellular solution contained (in mM) 140 potassium gluconate, 5 EGTA, 1 MgCl2, 10 HEPES, and 2 NaATP, pH 7.3. Patch clamp pipettes were prepared from borosilicate glass capillaries (Sutter Instruments) using a P-97 pipette puller (Sutter Instrument) and had a resistance of 2–4 MΩ. In all experiments after formation of GΩ-resistance seals, the whole-cell configuration was established and currents were recorded using a ramp protocol from −100 mV to +100 mV over 500 ms preceded by a −100 mV step for 100 ms; the holding potential was 0 mV, and this protocol was applied once every 1 s. The currents were measured with an Axopatch 200B amplifier, filtered at 5 kHz, and digitized through Digidata 1440A interface. In all experiments, cells that had a passive leak current over 100 pA were discarded. Data were collected and analyzed with the PClamp10.6 (Clampex) acquisition software (Molecular Devices, Sunnyvale, CA), and further analyzed and plotted with Origin 2019b (OrigiLab, Northampton, MA). Heat stimulation was performed as described for the Ca2+ imaging experiments.
 
-## Two electrode voltage clamp experiments
+### Two electrode voltage clamp experiments
 
 Xenopus laevis oocytes were prepared as described earlier (Badheka et al., 2015). All animal procedures were approved by the Institutional Animal Care and Use Committee at Rutgers New Jersey Medical School. In brief, frogs were anesthetized in 0.25% ethyl 3-aminobenzoate methanesulfonate solution (MS222; Sigma-Aldrich); bags of ovaries were removed surgically from the anesthetized frogs. Individual oocytes were obtained by overnight digestion at 16°C in 0.2–0.3 mg/ml type 1A collagenase (Sigma-Aldrich), dissolved in a solution containing 82.5 mM NaCl, 2 mM KCl, 1 mM MgCl2, and 5 μM HEPES, pH 7.4 (OR2 solution). The next day the collagenase containing solution was discarded and the oocytes were washed multiple times with OR2 solution. The oocytes were maintained in OR2 solution supplemented with 1.8 mM CaCl2, 100 IU/ml penicillin, and 100 μg/ml streptomycin at 16°C. cRNA was transcribed from the linearized human TRPM3 (hTRPM3) cDNA clone (Grimm et al., 2003), or its mutants in the pGEMSH vector using the mMessage mMachine kit (Thermo Fisher Scientific). cRNA (40 ng) was microinjected into individual oocytes, using a nanoliter-injector system (Warner Instruments). For combined injection of wild-type and mutant TRPM3 for Figures 4E–G, 40 μg total cRNA was injected in a 1:1 ratio. The V990M and P1090Q mutants were generated using the QuikChange II XL Site-Directed Mutagenesis Kit (Agilent Technologies). For the GPCR regulation of these mutants, we injected cRNA of human M2 muscarinic receptors together with TRPM3 or mutants at 1:1 ratio. Oocytes were used for electrophysiological measurements 48–72 hr after microinjection. The hTRPM31325 clone in a mammalian expression vector was provided by C. Harteneck (Eberhard Karls University Tübingen, Tübingen, Germany), and it was subcloned into the pGEMSH oocyte vector using standard molecular biology techniques.
 
 Two electrode voltage clamp experiments were performed as described (Badheka et al., 2015). In brief, oocytes were placed in extracellular solution (97 mM NaCl, 2 mM KCl, 1 mM MgCl2, and 5 μM HEPES, pH 7.4), and currents were recorded with thin-wall inner filament– containing glass pipettes (World Precision Instruments) filled with 3 M KCl in 1% agarose. Currents were measured with a ramp protocol from −100 to 100 mV once every 0.5 s with a GeneClamp 500B amplifier and analyzed with the pClamp 9.0 software (Molecular Devices). PregS, ACh and primidone were applied with a gravity driven whole chamber perfusion system. Temperature stimulation was performed the same way as for the whole cell patch clamp and Ca2+ imaging experiments in HEK293 cells.
 
-## Statistics
+### Statistics
 
 Statistical analysis was performed with Origin 2019b and Prism6. Data are plotted as mean ± SEM and scatter plots. No statistical method was used to predetermine sample sizes, but our sample sizes are similar to those generally employed by the field. Experiments were performed in random order. Data were analyzed with t-test, or one-way analysis of variance with Bonferroni’s post hoc test, p values are reported in the figures.

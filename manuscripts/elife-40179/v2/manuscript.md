@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.40179.001 In vertebrates, head and trunk muscles develop from different mesodermal populations and are regulated by distinct genetic networks. Neck muscles at the head-trunk interface remain poorly defined due to their complex morphogenesis and dual mesodermal origins. Here, we use genetically modified mice to establish a 3D model that integrates regulatory genes, cell populations and morphogenetic events that define this transition zone. We show that the evolutionary conserved cucullaris-derived muscles originate from posterior cardiopharyngeal mesoderm, not lateral plate mesoderm, and we define new boundaries for neural crest and mesodermal contributions to neck connective tissue. Furthermore, lineage studies and functional analysis of Tbx1 - and Pax3- null mice reveal a unique developmental program for somitic neck muscles that is distinct from that of somitic trunk muscles. Our findings unveil the embryological and developmental requirements underlying tetrapod neck myogenesis and provide a blueprint to investigate how muscle subsets are selectively affected in some human myopathies.
+In vertebrates, head and trunk muscles develop from different mesodermal populations and are regulated by distinct genetic networks. Neck muscles at the head-trunk interface remain poorly defined due to their complex morphogenesis and dual mesodermal origins. Here, we use genetically modified mice to establish a 3D model that integrates regulatory genes, cell populations and morphogenetic events that define this transition zone. We show that the evolutionary conserved cucullaris-derived muscles originate from posterior cardiopharyngeal mesoderm, not lateral plate mesoderm, and we define new boundaries for neural crest and mesodermal contributions to neck connective tissue. Furthermore, lineage studies and functional analysis of Tbx1- and Pax3-null mice reveal a unique developmental program for somitic neck muscles that is distinct from that of somitic trunk muscles. Our findings unveil the embryological and developmental requirements underlying tetrapod neck myogenesis and provide a blueprint to investigate how muscle subsets are selectively affected in some human myopathies.
 
 ## Introduction
 
@@ -46,9 +46,25 @@ Therefore, the neck region consists of muscle, skeletal and connective tissue el
 
 ## Results
 
-## Distinct myogenic programs define neck muscle morphogenesis
+### Distinct myogenic programs define neck muscle morphogenesis
 
 To investigate the embryological origin of neck muscles in the mouse, we mapped CPM- and somite-derived myogenic cells using lineage-specific Cre drivers including Mef2c-AHF, Islet1, Mesp1 and Pax3 (Figure 1). The Mef2c-AHF (anterior heart field) enhancer is activated in the second heart field and myogenic progenitors of CPM origin (Lescroart et al., 2010; Verzi et al., 2005). Islet1 and Mesp1 genes are both expressed in early CPM and are essential for cardiac development. The Mesp1 lineage also marks some anterior somitic derivatives (Cai et al., 2003; Harel et al., 2009; Saga et al., 2000; Saga et al., 1999). In contrast, Pax3 is activated in all somitic progenitors and is a key actor during trunk and limb muscle formation (Relaix et al., 2005; Tajbakhsh et al., 1997; Tremblay et al., 1998). Given that the majority of Mef2c-AHF derivatives are myogenic cells (Lescroart et al., 2015; Lescroart et al., 2010; Verzi et al., 2005), we analyzed this lineage using Rosa26R-lacZ/+ (R26R) reporter mice. Islet1, Mesp1 and Pax3 genes are also expressed in cells contributing to skeletal components, connective tissues or neurons. To focus on the myogenic lineage, we used Pax7nGFP-stop/nlacZ (Pax7GPL) reporter mice, which mark cells with nuclear β-galactosidase (β-gal) activity following Cre recombination (Sambasivan et al., 2013).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig1-v2.jpg)
+
+**Figure 1.:** Whole-mount X-gal stainings of Mef2c-AHFCre;R26R, Islet1Cre;Pax7GPL, Mesp1Cre;Pax7GPL and Pax3Cre;Pax7GPL mice at E10.5 (A–D), E11.75 (E–H) and E18.5 (I–L’) (n = 3 for each condition). See associated Figure 1—supplements 1–3. (A–H) Note labeling of mesodermal core of pharyngeal arches (PAs) and cucullaris anlage (ccl) by Mef2c-AHF, Islet1 and Mesp1 lineage reporters; β-gal+ cells in anterior somites of Mesp1Cre embryos and in the clp anlagen of Islet1Cre embryos. Pax3 lineage marked somitic mesoderm. (I–L’) Mef2c-AHF, Islet1 and Mesp1 lineages marked branchiomeric (mas, tpr, dg) and cucullaris muscles (stm, atp and stp). Pax3Cre and Mesp1Cre labeled somitic epaxial neck muscles (epm). atp, acromiotrapezius; ccl, cucullaris anlage; clp, cutaneous maximus/latissimus dorsi precursor; dg, digastric; epm, epaxial musculature; h, heart; hc, hypoglossal cord; lbm, limb muscle anlagen and limb muscles; ltd, latissimus dorsi; mas, masseter; nc, nasal capsule; nt, neural tube; PA1-2, pharyngeal arches 1–2; S3, somite 3; stm, sternocleidomastoid; stp, spinotrapezius; tpr; temporal. Scale bars: in D for A-D and in H for E-H, 1000 µm; in L for I-L’, 2000 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–F’) Temporal X-gal stainings of Myf5Cre;Pax7GPL embryos (n = 2–4 each condition). (G–G’’) Immunostaining for GFP and Tuj1 in E10.5 Myf5Cre;R26mTmG embryo (n = 2). Ventral 3D projection of cranial region (G) and two sections 60 µm apart (dorso-ventral direction) in region indicated in (G) are shown. The cucullaris is innervated by the accessory nerve XI. V, trigeminal nerve; VII, facial nerve; IX, glossopharyngeal nerve; X, vagal nerve; XI, accessory nerve; XII, hypoglossal nerve; atp, acromiotrapezius; ccl, cucullaris anlage; clp, cutaneous maximus/latissimus dorsi precursor; dg, digastric muscles; epm, epaxial neck musculature; fmp, facial muscle precursors; h, heart; hc, hypoglossal cord; ifh, infrahyoid muscles; lb, limb bud; lbm, limb muscle anlagen and limb muscles; ltd, latissimus dorsi; lvs, levator scapula; mas, masseter; mmp, masticatory muscle precursor; nlb, nasolabialis muscles; oca, occipito/cervico-auricularis anlagen and muscles; PA1-6, pharyngeal arches 1–6; ptm, pectoralis muscles; S3-S4, somites 3–4; stm, sternocleidomastoid; stp, spinotrapezius; tgp, tongue primordia; tpr; temporal. Scale bars: in A-E’, 1000 µm; in F-F’, 2000 µm, in G for G, 400 µm for G-G’, 200 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–B) Immunostainings for Myod and β-gal reporter on coronal paraffin sections of E11.75 Islet1Cre;Pax7GPL and E12.5 Pax3Cre;Pax7GPL embryos in the cucullaris anlage (n = 2 each condition). (C) Immunostaining for Islet1 and β-gal reporter on coronal paraffin section of a E12.5 Pax3Cre;Pax7GPL embryo in the clp anlage (n = 2). White arrowheads in A-C indicate examples. (D–G’) Immunostainings for β-gal and Tnnt3 on coronal cryosections (n = 2 each condition). ccl, cucullaris anlage; clp, cutaneous maximus/latissimus dorsi precursor; ifh, infrahyoid muscles; lcp, longus capitis; myh, mylohyoid; phm; pharyngeal muscles; ssp, semispinalis; tg, tongue. Scale bars: In G’ for A-C 50 µm, for D-G 200 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–D) Immunostainings for β-gal and Pax7 on coronal cryosections of Mesp1Cre;Pax7GPL and Pax3Cre;Pax7GPL at E18.5 (n = 2 each condition). Note the white/yellow cells indicating colocalization of both markers. epm, epaxial muscle; tg, tongue. Scale bar in D for A-D 100 µm.
 
 We first examined embryos after myogenic specification (E10.5 and E11.75), and fetuses when muscles are patterned (E18.5). In Mef2c-AHFCre;R26R embryos, β-gal-positive cells were observed in the mesodermal core of pharyngeal arches at the origin of branchiomeric muscles, in second heart field derivatives, and in the cucullaris anlage (Figure 1A,E). A spatiotemporal analysis of the cucullaris using Myf5Cre;Pax7GPL and Myf5Cre;R26mTmG embryos (Figure 1—figure supplement 1) showed that Myf5-derived muscle progenitors located at the level of the posterior pharyngeal arches, and adjacent to somites S1-S3 (Figure 1—figure supplement 1A’), were innervated by the accessory nerve XI (Figure 1—figure supplement 1G–G”). These cells gave rise to the trapezius and sternocleidomastoid muscles (Figure 1—figure supplement 1A–F’) thus confirming the identity of the cucullaris anlage in mouse (Tada and Kuratani, 2015).
 
@@ -60,11 +76,83 @@ Analysis of different somite-derived neck muscles on sections showed that Mesp1 
 
 To further investigate the contributions of Mesp1 and Pax3 lineages to neck muscles, we examined sections using the R26tdTomato reporter co-immunostained with the myofibre marker Tnnt3 at three representative levels (A, B and C levels in Figure 1; see also Figure 2—figure supplement 1). At anterior levels, while Pax3 lineage contribution was limited to somite-derived neck muscles, the Mesp1 lineage marked branchiomeric muscles (mylohyoid, pharyngeal, laryngeal, esophagus), cucullaris-derived muscles (acromiotrapezius and sternocleidomastoid) and somite-derived neck muscles (Figure 2A–H, Figure 1—figure supplement 2F–G’, Figure 2—figure supplement 2A–H’). The epaxial and hypaxial neck muscles showed equivalent Tomato expression in both Mesp1Cre;R26tdTomato and Pax3Cre;R26tdTomato mice. These observations further indicate that Mesp1 and Pax3 lineages contribute equivalently to neck muscles derived from anterior somites.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig2-v2.jpg)
+
+**Figure 2.:** Immunostainings on coronal cryosections of E18.5 Mesp1Cre;R26tdTomato and Pax3Cre;R26tdTomato mice for the myofibre Tnnt3 and Tomato markers at levels indicated in Figure 1. Higher magnifications of selected areas in (A–J) are shown in Figure 2—figure supplement 2; (n = 2 for each condition). See also the atlas of neck musculature in Figure 2—figure supplement 1. (A–H) Mesp1Cre labeled all neck muscles including branchiomeric (myh, esm, phm and ilm), cucullaris (stm, atp), somitic epaxial (epm) and hypaxial (tg, lcp, lcl, ifh) muscles. Pax3Cre marked somitic muscles. (I–J) At shoulder level, Mesp1-derived cells did not contribute to posterior somitic myofibres including scapular muscles (scp) compared to that observed in Pax3Cre embryos. ac, arytenoid cartilage; acp, scapular acromion process; atp, acromiotrapezius; cc, cricoid cartilage; epm, epaxial musculature; esm, esophagus striated muscle; hh, humeral head; ifh, infrahyoid muscles; ilm, intrinsic laryngeal muscles; lcl, longus colli; lcp, longus capitis; myh, mylohyoid; ob, occipital bone; oc, otic capsule; phm, pharyngeal muscles; stm, sternocleidomastoid; scp, scapular musculature; tc, thyroid cartilage; tg, tongue. Scale bars: in J for A-B 200 µm, for C-J 400 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** µCT scan analysis shows surface rendering of neck region of a E18.5 control fetus (n = 1). Levels A-C in the neck region (as reference, blue) are examined in Figures 2–5. Structures of interest are shown on virtual µCT sections at levels (A–C); higher magnifications on latero-dorsal (A’–C’) and latero-ventral regions (A”–C”). Neck structures are numbered for muscles in pink; other components in white. ee, external ear; flb, forelimb (distal part removed); md; mandible; sc, scapular region; tg, tongue. Scale bar in upper panel for upper panel and A-C 1000 µm, for A’-C’, A’-C’ 500 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** High magnifications of selected areas of panels in Figure 2 at levels indicated in Figure 1. (A–J’) Immunostainings are indicated (n = 2 each condition). ac, arytenoid cartilage; atp, acromiotrapezius; epm, epaxial musculature; hpm, hypaxial musculature; ilm, intrinsic laryngeal muscles; myh, mylohyoid; phm, pharyngeal muscles; scp, scapular muscles; tc, thyroid cartilage; tg, tongue. Scale bars: in J’ for A-J’ 50 µm.
+
 At the shoulder level, we observed less Mesp1 contribution to more posterior somitic muscles (Figure 2I–J). In contrast to that observed at anterior levels, little or no Tomato expression was detected in myofibres of scapular muscles in Mesp1Cre;R26tdTomato mice (Figure 2—figure supplement 2I–J’). Therefore, Mesp1 lineage contribution was restricted to epaxial and hypaxial neck muscles, in contrast to pectoral and trunk muscles that originate from the Pax3 lineage (Figures 1–2) (Table 1). These observations lead us to propose that three distinct myogenic programs are involved in the formation of neck and pectoral musculature at the head-trunk interface. The branchiomeric and cucullaris-derived muscles depend on a common myogenic program involving Mef2c-AHF, Islet1 and Mesp1 lineages; the somitic neck muscles that originate from anterior somites derive from both Mesp1 and Pax3 lineages; the pectoral muscles derived from more posterior somites depend on the activation of Pax3 only (Table 1).
 
-## Dual neural crest and mesodermal origins of neck connective tissues
+**Table 1.**
+ Contribution of Mef2c-AHF, Islet1, Mesp1 and Pax3 lineages to neck and pectoral musculature.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mef2c/Islet1/Mesp1-derived muscles</th>
+      <th>Mesp1/Pax3-derived muscles</th>
+      <th>Pax3- derived muscles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mylohyoid Digastric muscles    Pharyngeal muscles Intrinsic laryngeal muscles Esophagus striated muscle   Sternocleidomastoid  Acromiotrapezius  Spinotrapezius</td>
+      <td>Epaxial neck muscles (splenius, semispinalis, levator scapula, rhomboid occipitalis, suboccipital and postvertebral muscles)  Hypaxial neck muscles (tongue muscles*, infrahyoid muscles, longus capitis, longus colli)</td>
+      <td>Scapular muscles (supraspinatus, Infraspinatus, subscapularis)  Pectoralis  Latissimus dorsi† Cutaneous maximus†</td>
+    </tr>
+    <tr>
+      <td>Branchiomeric myogenic program</td>
+      <td>Anterior-most somite myogenic program</td>
+      <td>More posterior somite myogenic program</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Including intrinsic and extrinsic tongue muscles of somitic origin†Also derived from an Islet1 lineage_
+
+### Dual neural crest and mesodermal origins of neck connective tissues
 
 To define the cellular origin of neck muscle-associated connective tissue (MCT), we traced the contribution of different embryonic populations using Mesp1Cre;R26tdTomato and Pax3Cre;R26tdTomato mice as well as Wnt1Cre and Prx1Cre reporters that label NCC and postcranial LPM derivatives, respectively (Burke and Nowicki, 2003; Danielian et al., 1998; Durland et al., 2008). Both NCC and LPM populations were reported to contribute to trapezius MCT (Durland et al., 2008; Matsuoka et al., 2005). Moreover, it was suggested that the postcranial LPM is a source for cucullaris-derived muscles (Theis et al., 2010). A direct comparison of NCC and LPM derivatives allowed us to clarify the contribution of these two populations to cucullaris formation (Figures 3–4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig3-v2.jpg)
+
+**Figure 3.:** Immunostainings on coronal cryosections of E18.5 Wnt1Cre;R26tdTomato mice at levels indicated in Figure 1. Tnnt3/Tomato immunostainings are shown in (A–D) and immunostainings for Tuj1/Tomato on selected areas of (A–D) are shown with higher magnifications in (A’–D’). See associated Figure 3—figure supplement 1–4; (n = 2). (A–A’) Note high Wnt1 contribution in the acromiotrapezius but not in epaxial muscles where Wnt1-derived cells marked neuronal cells. (B–C’) Wnt1-derived cells marked differentially the distinct muscles composing the sternocleidomastoid and laryngeal musculatures. (D–D’) At shoulder level, the Wnt1 cells did not contribute to attachment of acromiotrapezius to scapula. ac, arytenoid cartilage; acp, scapular acromion process; atp, acromiotrapezius; cc, cricoid cartilage; clm, cleidomastoid; clo, cleido-occipitalis; ct, cricothyroid; epm, epaxial musculature; hh, humeral head; ifh, infrahyoid muscles; lca, lateral cricoarytenoid; MCT, muscle-associated connective tissue; pca, posterior cricoarytenoid; phm, pharyngeal muscles; scp, scapular musculature; std, sternomastoid; tam, thyroarytenoid muscle; tc, thyroid cartilage; vm, vocal muscle. Scale bars: in D’ for A-D 400 µm for A’-D’ 200 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–H) X-gal stainings in embryos from E10.5-E13.5. Note that the posterior limit of NCC distribution at the head-trunk interface (black arrowheads) corresponds to the acromiotrapezius at anterior edge of forelimb buds (white arrowheads). (I–L) X-gal stainings of embryos at E14.5. Note that the posterior trapezius muscles derived from the Mef2c-AHF lineage develop in a Wnt1-negative/Pax3-positive domain. (n = 2 each condition) atp, acromiotrapezius; ccl, cucullaris anlage; clp, cutaneous maximus/latissimus dorsi precursor; epm, epaxial musculature; hpm, hypaxial musculature; lbm, limb muscle anlagen; S1, somite 1; stp, spinotrapezius. Scale bars: 1000 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Contribution of Wnt1-derived NCCs to connective tissue of branchiomeric (mas, myh, esm) and somitic muscles (tg, ifh, ptm, epm, scp) (refer to Figure 3, n = 2) (A–H). Note that the esophagus (esm) and infrahyoid (thy, ohy, shy) muscles show little or no NCC contribution to connective tissue (C–D’). Only few Wnt1-derived cells are present at connection sites of cucullaris-derived muscles on the pectoral girdle (E–H). atp, acromiotrapezius; cl, clavicle; clm, cleidomastoid; clo, cleido-occipitalis; epm; epaxial neck musculature; esm, esophagus striated muscle; hy, hyoid bone; ifh, infrahyoid muscles; lcl, longus colli; mas, masseter; md; mandible; myh, mylohyoid; nl, nuchal ligament; ohy, omohyoid; ptm, pectoralis muscles; shy, sternohyoid; spn, scapular spine; scp, scapular muscles; st, sternum; std, sternomastoid; tc, thyroid cartilage; thy, thyrohyoid; tg, tongue; tr, tracheal ridge. Scale bars: in H for A-C, H 100 µm, for A’-C’, D-G 200 µm; for D’ 400 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Immunostainings of coronal cryosections (n = 2) show selected muscles analysed in Figure 3 and Figure 3—figure supplement 2 including the masseter (A), acromiotrapezius (B), splenius (epaxial) (C), cleido-occipitalis (D), cleidomastoid (E), tongue (F), thyrohyoid (infrahyoid) (G) and sternohyoid (infrahyoid) (H). Note only little or no NCC contribution to cleidomastoid, infrahyoid and epaxial muscles. atp, acromiotrapezius; clm, cleidomastoid; clo, cleido-occipitalis; mas, masseter; shy, sternohyoid; spl, splenius; tg, tongue; thy, thyrohyoid. Scale bar in H for A-H 20 µm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Immunostainings of coronal cryosections (n = 2 each condition). (A–D) Tcf4+ cells derive from Pax3 but not Mesp1 lineage in the masseter and acromiotrapezius muscles. (E–H) MCT fibroblasts in splenius (epaxial muscle) (E), cleidomastoid (F) and lateral cricoarytenoid (laryngeal muscle) (H) originate from Mesp1 lineage, but little or no contribution is observed in tongue MCT (G). atp, acromiotrapezius; clm, cleidomastoid; lca, lateral cricoarytenoid; mas, masseter; spl, splenius; tg, tongue. Scale bars: in H for A-H 20 µm.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig4-v2.jpg)
+
+**Figure 4.:** See also Figure 4—figure supplement 1, 2. (A–D) X-gal stainings of Prx1Cre;R26R reporter mice at E9.5 (n = 3) (A) and E18.5 (n = 3) (C–D), and immunostaining for GFP and the Pax7/Myod/My32 myogenic markers in Prx1Cre;R26mTmG E12.5 embryo (n = 2) (B). Note Prx1-derived cells in postcranial LPM (A, black arrowheads) and Prx1-derived cells among, but not in, cucullaris myofibres (B–D). (E–F’’) Immunostaining for β-gal, Tnnt3 and Tcf4 on coronal cryosections of E18.5 Prx1Cre;R26R mice (n = 2) showed β-gal+ cells constituting the pectoral girdle (E, level C in Figure 1) and in MCT fibroblasts (F-F’’, white arrowheads), but not in trapezius myofibres. acp, scapular acromion process; atp, acromiotrapezius; ccl, cucullaris anlage; ccp, scapular coracoid process; cl, clavicle; epm, epaxial musculature; hh, humeral head; lb, forelimb bud; lbm, limb muscle anlagen; LPM, lateral plate mesoderm; ltd, latissimus dorsi; PA1-6, pharyngeal arches 1–6; S3, somite 3; scp, scapular muscles; stm, sternocleidomastoid; stp, spinotrapezius. Scale bars: in A for A, B 500 µm; in C for C-D 2000 µm, for E 500 µm; in F’’ for F-F’’ 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** X-gal stainings of E12.5 embryos (n = 3 each condition). Note the Myf5-derived cucullaris (ccl) excluded from the Prx1-derived LPM (A-B, white arrowheads). Scale bars in B for A-B 1000 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) Immunostainings on coronal cryosections (n = 2). Note Prx1-derived cells contributing to a great extent to form MCT, tendons and skeletal components of limb and shoulder (A–B); less β-gal+ cells are seen in acromiotrapezius (B); no contribution in neck epaxial muscles (C). (D–D”) Some Prx1-derived cells contribute to MCT fibroblasts of spinotrapezius, but not to myofibres. acp, scapular acromion process; atp, acromiotrapezius; ccl, cucullaris; epm, epaxial neck musculature; lbm; limb muscles; scp, scapular musculature; stp, spinotrapezius; uln, ulna. Scale bars: in C for A-C 200 µm, for D’ for D-D’ 50 µm.
 
 We first investigated the distribution of neck muscles and NCCs using Myf5nlacZ/+, Mef2c-AHFCre;R26R, Pax3Cre;R26R and Wnt1Cre;R26R embryos (Figure 3—figure supplement 1). At E10.5, the cucullaris anlage was positioned at the level of posterior pharyngeal arches where Wnt1-derived-positive cells were detectable (Figure 1A–C, Figure 1—figure supplement 1A’, Figure 3—figure supplement 1A–B). Subsequently, the cucullaris progenitors expanded caudally from E11.5 to E13.5. The posterior limit of the cranial NCC domain also extended posteriorly; however, the Wnt1-labeled cells did not cover the posterior portion of cucullaris-derived muscles (Figure 3—figure supplement 1C–H). At E14.5, the acromiotrapezius and spinotrapezius attained their definitive position in Myf5nlacZ/+ and Mef2c-AHFCre;R26R embryos (Figure 3—figure supplement 1I–J). Wnt1-derived cells were observed in the anterior acromiotrapezius muscle, but not in the spinotrapezius that was situated in a Pax3-derived domain (Figure 3—figure supplement 1K–L). Analysis of whole-mount embryos indicated that the cranial NCCs did not contribute to connective tissue of posterior cucullaris derivatives, in contrast to what was reported previously (Matsuoka et al., 2005).
 
@@ -80,7 +168,7 @@ To assess the cellular origin of cucullaris connective tissue at posterior attac
 
 Therefore, these observations reveal a dual NCC/LPM origin of trapezius connective tissue, with a decrease of NCC contribution at posterior attachment sites. Moreover, our analysis shows that the postcranial LPM does not give rise to cucullaris myofibres in contrast to what was suggested previously (Theis et al., 2010), thus providing further evidence for a branchiomeric origin of the cucullaris.
 
-## Divergent functions of Tbx1 and Pax3 in neck development
+### Divergent functions of Tbx1 and Pax3 in neck development
 
 Given the key role for Tbx1 and Pax3 genes in the specification of the CPM and somites respectively, we analyzed the effect of inactivation of these genes on neck muscle formation, compared to the muscle phenotypes observed at cranial and trunk levels.
 
@@ -88,13 +176,46 @@ Analysis has been performed by immunostainings on sections and 3D reconstruction
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig5-v2.jpg)
 
-**Figure 5.:** Tbx1 and Pax3 mutants.(A–I) Immunostainings for Tnnt3 on coronal cryosections of control, Tbx1-null and Pax3-null fetuses at E18.5 (n = 3 each condition). Yellow asterisks indicate missing muscles. Note absence of branchiomeric laryngeal (ilm), esophagus (esm) and trapezius (atp) muscles and severe alteration of somitic infrahyoid muscles (ifh) in Tbx1 mutants. Scapular (scp) and pectoral (ptm) muscles are missing in Pax3 mutants. ac, arytenoid cartilage; atp, acromiotrapezius; cc, cricoid cartilage; cl, clavicle; epm, epaxial musculature; esm, esophagus striated muscle; ifh, infrahyoid muscles; ilm, intrinsic laryngeal muscles; lcp, longus capitis; ptm, pectoralis muscles; sc, scapula; scp, scapular muscles; st, sternum; tc, thyroid cartilage; tg, tongue. Scale bars: in A for A-I 500 µm.
+**Figure 5.:** (A–I) Immunostainings for Tnnt3 on coronal cryosections of control, Tbx1-null and Pax3-null fetuses at E18.5 (n = 3 each condition). Yellow asterisks indicate missing muscles. Note absence of branchiomeric laryngeal (ilm), esophagus (esm) and trapezius (atp) muscles and severe alteration of somitic infrahyoid muscles (ifh) in Tbx1 mutants. Scapular (scp) and pectoral (ptm) muscles are missing in Pax3 mutants. ac, arytenoid cartilage; atp, acromiotrapezius; cc, cricoid cartilage; cl, clavicle; epm, epaxial musculature; esm, esophagus striated muscle; ifh, infrahyoid muscles; ilm, intrinsic laryngeal muscles; lcp, longus capitis; ptm, pectoralis muscles; sc, scapula; scp, scapular muscles; st, sternum; tc, thyroid cartilage; tg, tongue. Scale bars: in A for A-I 500 µm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig6-v2.jpg)
 
-**Figure 6.:** Tbx1 and Pax3 mutants.See interactive 3D PDFs in Supplementary file 1–3; control n = 1; mutants n = 2. (A–C) Branchiomeric and cucullaris-derived muscles marked by Mef2c-AHF/Islet1/Mesp1 lineages are indicated in pink. (D–F) Anterior somitic muscles (Mesp1, Pax3 lineages), in red. (G–I) Scapular muscles from more posterior somites (Pax3 lineage), in violet. atp, acromiotrapezius; cc, cricoid cartilage; dg, digastric muscles; epm, epaxial musculature; ifh, infrahyoid muscles; ilm, intrinsic laryngeal muscles; lcl, longus colli; lcp, longus capitis; myh, mylohyoid; sc, scapula; scp, scapular muscles; stm, sternocleidomastoid; tc, thyroid cartilage; tg, tongue.
+**Figure 6.:** See interactive 3D PDFs in Supplementary file 1–3; control n = 1; mutants n = 2. (A–C) Branchiomeric and cucullaris-derived muscles marked by Mef2c-AHF/Islet1/Mesp1 lineages are indicated in pink. (D–F) Anterior somitic muscles (Mesp1, Pax3 lineages), in red. (G–I) Scapular muscles from more posterior somites (Pax3 lineage), in violet. atp, acromiotrapezius; cc, cricoid cartilage; dg, digastric muscles; epm, epaxial musculature; ifh, infrahyoid muscles; ilm, intrinsic laryngeal muscles; lcl, longus colli; lcp, longus capitis; myh, mylohyoid; sc, scapula; scp, scapular muscles; stm, sternocleidomastoid; tc, thyroid cartilage; tg, tongue.
 
 In the early embryo, Tbx1 is expressed in pharyngeal mesoderm and is required for proper branchiomeric muscle formation (Grifone et al., 2008; Kelly et al., 2004). While Tbx1 is expressed in other cranial populations including the pharyngeal ectoderm and endoderm (Arnold et al., 2006; Huynh et al., 2007), the gene is known to be required cell autonomously during CPM myogenesis (Kong et al., 2014; Zhang et al., 2006). Analysis of Tbx1 mutants revealed unexpected features in cucullaris and hypaxial neck muscle formation. As previously described (Gopalakrishnan et al., 2015; Kelly et al., 2004), anterior branchiomeric muscles (digastric and mylohyoid) showed phenotypic variations, whereas posterior branchiomeric muscles (esophagus and intrinsic laryngeal muscles) and the acromiotrapezius were severely affected or undetectable (Figure 5B,E,H; Figure 6B) (Table 2). However, detailed examination of the cucullaris-derived muscles revealed a heterogeneous dependence on Tbx1 function that was not reported previously (Lescroart et al., 2015; Theis et al., 2010). Unexpectedly, the sternocleidomastoid muscle was present bilaterally but smaller (Figure 6B); the different portions (cleido-occipitalis, cleidomastoid and sternomastoid) were unilaterally or bilaterally affected in a stochastic manner. Moreover, while the epaxial neck and scapular muscles were unaffected (Figure 5E, Figure 6E–H), the hypaxial neck muscles derived from anterior somites were altered. Indeed, the tongue and longus capitis were reduced and the infrahyoid and longus colli muscles were severely affected or undetectable (Figure 5B,H, Figure 6E,H; see interactive 3D PDFs in Supplementary file 1–2).
+
+**Table 2.**
+ Summary of the neck muscle phenotype observed in Tbx1- and Pax3-null fetuses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Tbx1-null</th>
+      <th>Pax3-null</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Branchiomeric muscles (Mef2c-AHF/Islet1/Mesp1 lineage) Mylohyoid Digastric muscles Intrinsic laryngeal muscles Esophagus striated muscle Sternocleidomastoid Acromiotrapezius</td>
+      <td>+/- +/- − − +/- −</td>
+      <td>++ ++ + ++ + +</td>
+    </tr>
+    <tr>
+      <td>Anterior-most somite muscles (Mesp1/Pax3 lineage) Epaxial musculature Longus capitis Longus colli Infrahyoid muscles Tongue muscles*</td>
+      <td>++ +/- − − +</td>
+      <td>+ ++ ++ +/- +</td>
+    </tr>
+    <tr>
+      <td>More posterior somite muscles (Pax3 lineage) Scapular muscles Pectoralis</td>
+      <td>++ ++</td>
+      <td>− −</td>
+    </tr>
+  </tbody>
+</table>
+
+_++,normal; +, altered morphology; +/-, affected; -, severely affected or undetectable*Including intrinsic and extrinsic tongue muscles of somitic origin_
 
 Analysis of Pax3 mutants showed that the neck and pectoral muscles were differentially affected. As expected, branchiomeric and epaxial muscles developed normally but displayed morphological differences adapted to malformations noted in some skeletal components (Figure 5C,F; Figure 6C,I). However, whereas hypaxial trunk/limb muscles were severely affected or undetectable in Pax3 mutants (Figure 5F,I; Figure 6F,I) (Tajbakhsh et al., 1997; Tremblay et al., 1998), surprisingly the majority of hypaxial neck muscles derived from both Mesp1 and Pax3 lineages were present. Tongue muscles were reduced in size but patterned, the infrahyoid were hypoplastic, whereas the longus capitis and longus colli were unaffected (Figure 5C; Figure 6F,I; see interactive 3D PDF in Supplementary file 3). The phenotypes of the different muscle groups observed in Tbx1 and Pax3 mutants are summarized in Table 2 (see also Figure 7—figure supplement 1).
 
@@ -104,7 +225,7 @@ Taken together, these observations revealed that hypaxial muscles in the neck we
 
 The embryological origins of neck muscles and connective tissues at the head-trunk interface have been poorly defined largely due to their localization at a transition zone that involves multiple embryonic populations. Using a combination of complementary genetically modified mice and 3D analysis that identifies muscles in the context of their bone attachments, we provide a detailed map of neck tissue morphogenesis and reveal some unexpected features regarding the muscle and connective tissue network.
 
-## Branchiomeric origin of cucullaris-derived muscles
+### Branchiomeric origin of cucullaris-derived muscles
 
 The mammalian neck consists of somitic epaxial/hypaxial muscles, branchiomeric muscles and cucullaris-derived muscles (Table 1). The latter constitute a major innovation in vertebrate history, connecting the head to the pectoral girdle in gnathostomes and allowing head mobility in tetrapods (Ericsson et al., 2013). Recent studies in different organisms including shark, lungfish and amphibians suggest that the cucullaris develops in series with posterior branchial muscles and that its developmental origin and innervation is conserved among gnathostomes (Diogo, 2010; Ericsson et al., 2013; Naumann et al., 2017; Noda et al., 2017; Sefton et al., 2016; Tada and Kuratani, 2015; Ziermann et al., 2018a; Ziermann et al., 2017). However, multiple embryological origins including CPM, LPM and somites have been reported for the cucullaris, underscoring the difficulty in deciphering the morphogenesis of this and other muscles in the head-trunk transition zone (Huang et al., 2000; Nagashima et al., 2016; Sefton et al., 2016; Theis et al., 2010).
 
@@ -112,7 +233,15 @@ Our study shows that the cucullaris anlage is innervated by the accessory nerve 
 
 We also demonstrate that the cucullaris anlage is excluded from the postcranial Prx1-derived expression domain, which delineates the trunk LPM field (Figure 4). The Prx1 lineage instead gives rise to connective tissue, thereby excluding a contribution from LPM to cucullaris-derived myofibres. Thus, our results, combined with innervation studies, retrospective clonal analyses and grafting experiments in chick and axolotl (Lescroart et al., 2015; Nagashima et al., 2016; Sefton et al., 2016; Tada and Kuratani, 2015), suggest that the postcranial extension of the CPM lateral to the first three somites in tetrapod embryos is a source of cucullaris myogenic cells (Figure 7A). The discordance with previous studies regarding the origin of the cucullaris is likely due to its proximity to both anterior somites and LPM (Figure 7A–B), and consequently, to potential contamination of embryonic sources in grafting experiments (Couly et al., 1993; Huang et al., 1997; Huang et al., 2000; Noden, 1983; Piekarski and Olsson, 2007; Theis et al., 2010).
 
-## A unique genetic program for somite-derived neck muscles
+![Figure 7.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig7-v2.jpg)
+
+**Figure 7.:** See also Figure 7—figure supplement 1. (A, C) CPM (pink), anterior somites (red) and more posterior somites (violet) muscles are defined by three distinct myogenic programs. (B) Note that the cucullaris develops in a NC domain (blue dots), but is excluded from the postcranial LPM (yellow dots). (C) Dual NC/LPM origin of trapezius connective tissue is indicated in (a). NC contribution to connective tissue extends to tongue and anterior infrahyoid musculature (b). (D) Mixed origins of muscle connective tissues at the head-trunk-limb interface. Example of representative muscles: (a) masseter, (b) spinalis dorsi, (c) deltoid. atp, acromiotrapezius; ccl, cucullaris; CPM, cardiopharyngeal mesoderm; epm, epaxial neck musculature; hpm, hypaxial neck musculature; hy, hyoid bone; LPM, postcranial lateral plate mesoderm; NC, neural crest; PA1-2, pharyngeal arches 1–2; PM, paraxial mesoderm; stm, sternocleidomastoid; stp, spinotrapezius; tc, thyroid cartilage.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/40179/elife-40179-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** CPM (pink), anterior somites (red) and more posterior somites (violet) muscles are differentially affected (grey and black) in Tbx1 and Pax3 mutants. atp, acromiotrapezius; dg, digastric muscles; epm, epaxial musculature; ifh, infrahyoid muscles; lbm, limb muscles; lcp, longus capitis; ltd, latissimus dorsi; mas, masseter; ptm, pectoral muscles; scp, scapular muscles; stm, sternocleidomastoid; stp, spinotrapezius; tg, tongue; tpr, temporal.
+
+### A unique genetic program for somite-derived neck muscles
 
 Our study also points to a unique Mesp1/Pax3 genetic program in anterior somites for epaxial/hypaxial neck muscle formation (Table 1). While it was shown that the Mesp1 lineage gives rise to tongue muscles (Harel et al., 2009), we demonstrate that it also contributes to all neck muscles. In chordates, Mesp genes appear to play a conserved role in cardiogenesis and axis segmentation. In mouse, Mesp1 inactivation causes early embryonic death from abnormal heart development, and Mesp1/Mesp2 double-knockout embryos lack non-axial mesoderm (Moreno et al., 2008; Saga, 1998; Saga et al., 2000; Satou et al., 2004; Sawada et al., 2000). During early murine development, Mesp1 shows two waves of activation; initially in the nascent mesoderm destined for extraembryonic, cranial and cardiac mesoderm at the onset of gastrulation; later during somitogenesis, transient Mesp1 expression is limited to anterior presomitic mesoderm (Saga, 1998; Saga et al., 1996; Saga et al., 2000; Saga et al., 1999). Our lineage analysis shows that Mesp1 extensively labels the anterior mesoderm, including the CPM and anterior somites 1–6, while contribution decreases in more posterior somites (Figure 1) (Loebel et al., 2012; Saga et al., 2000; Saga et al., 1999). Previous fate mapping experiments have shown that the mesoderm of late-streak stage embryos contributes to both CPM and anterior somites (Parameswaran and Tam, 1995). It appears that the first wave of Mesp1 expression defines not only the CPM field but also includes the mesoderm destined for anterior somites. In contrast, the Mesp1-labeled cells observed in more posterior somites using the sensitive Pax7GPL reporter may result from the transient wave of Mesp1 expression in the presomitic mesoderm during axis segmentation. Furthermore, we show that Mesp1-derived anterior somites give rise to all epaxial/hypaxial neck muscles in contrast to trunk/limb muscles originating from more posterior somites marked by Pax3. The boundary of Mesp1 lineage contribution to muscles corresponds to the neck/pectoral interface. Our findings indicate that the anterior somitic mesoderm employs a specific transition program for neck muscle formation involving both Mesp1 and Pax3 genes implicated in CPM and somitic myogenesis, respectively (Figure 7A–C).
 
@@ -124,7 +253,7 @@ Our detailed analysis of Tbx1- and Pax3-null mice on sections and in 3D reconstr
 
 It has been shown that hypaxial muscles are perturbed to a greater extent than epaxial muscles in Pax3 mutants (Tajbakhsh et al., 1997; Tremblay et al., 1998), suggesting a different requirement for Pax3 in these muscle groups, possibly through differential gene regulation (Brown et al., 2005). An unexpected outcome of our analysis was that hypaxial neck muscles (derived from Mesp1 and Pax3 lineages) are less perturbed in Pax3-null mutants than hypaxial trunk/limb muscles (Pax3 lineage only) that are severely altered or undetectable (Table 2). Our results indicate that Pax3 is not essential for the formation of neck muscles derived from anterior somites in contrast to hypaxial muscles originating from more posterior somites. These observations support our model that a distinct genetic program governs somitic neck muscles compared to more posterior trunk muscles.
 
-## Connectivity network of the neck and shoulders
+### Connectivity network of the neck and shoulders
 
 Assessing the non-muscle contribution to the neck region is a major challenge due to the extensive participation of diverse cell types from different embryological origins. Previous studies in amphibians, chick and mouse reported that branchiomeric and hypobranchial connective tissue originates from NCCs (Hanken and Gross, 2005; Köntges and Lumsden, 1996; Matsuoka et al., 2005; Noden, 1983; Olsson et al., 2001; Ziermann et al., 2018b). It has been shown that the neural crest provides connective tissue for muscles that link the head and shoulders, whereas mesodermal cells give rise to connective tissue for muscles connecting the trunk and limbs (Matsuoka et al., 2005).
 
@@ -134,7 +263,7 @@ Wnt1Cre and Sox10Cre NCC reporter mice were used to show that endochondral cells
 
 Taken together, our findings indicate that the gradient of neural crest and mesodermal contributions to neck connective tissue depends on the embryonic source of attachment sites. Therefore, it reveals that connective tissue composition in the neck region correlates with the cellular origin of associated skeletal components, independently of the myogenic source or ossification mode, forming a strong link between muscles and bones of the head, trunk and limb fields (Figure 7D).
 
-## Evolutionary and clinical perspectives
+### Evolutionary and clinical perspectives
 
 Our findings demonstrate that the hybrid origin of the skeletal, connective tissue and muscle components of the neck is defined during early embryogenesis. The close proximity of neural crest, CPM, LPM and somitic populations is unique along the body plan and underscores the difficulty in defining their relative contributions to structures in the neck (Figure 7A–B). Our results refine the relative contributions of the neural crest and mesodermal derivatives in mouse, thereby providing a coherent view of embryonic components at the head-trunk interface in gnathostomes. Our study highlights the limited NCC contribution to posterior branchiomeric and infrahyoid muscle connective tissue, that is instead of mesodermal origin. This reinforces recent notions suggesting that the cranial NCCs and the postcranial rearrangement of mesodermal populations at the head-trunk interface had been central for the establishment of the neck during gnathostome evolution (Adachi et al., 2018; Kuratani et al., 2018; Lours-Calet et al., 2014; Nagashima et al., 2016; Sefton et al., 2016). The contribution of anterior mesoderm in the origin of the neck needs to be elucidated in future studies of gnathostomes.
 
@@ -142,11 +271,266 @@ Our study reveals that neck muscles develop in a complex domain that is distinct
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6D2F1/JRj</td>
+      <td>Janvier</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mef2c-AHFCre</td>
+      <td>PMID:16188249</td>
+      <td>MGI:3639735</td>
+      <td>Dr. Brian L Black (Cardiovascular Research Institute, University of California, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Islet1Cre</td>
+      <td>PMID:11299042</td>
+      <td>MGI:2447758</td>
+      <td>Dr. Thomas M Jessell (Howard Hughes Medical Institute, Columbia University, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mesp1Cre</td>
+      <td>PMID:10393122</td>
+      <td>MGI:2176467</td>
+      <td>Pr. Yumiko Saga (National Institute of Genetics, Japan)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pax3Cre</td>
+      <td>PMID:22394517</td>
+      <td>MGI:3573783</td>
+      <td>Dr. Jonathan A. Epstein (Perelman Shool of Medicine, University of Pennsylvania, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Myf5Cre</td>
+      <td>PMID:17418413</td>
+      <td>MGI:3710099</td>
+      <td>Dr. Mario R Capecchi (Institute of Human Genetics, University of Utah, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Wnt1Cre</td>
+      <td>PMID:9843687</td>
+      <td>MGI:J:69326</td>
+      <td>Pr. Andrew P. McMahon (Keck School of Medicine of the University of Southern California, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Prx1Cre</td>
+      <td>PMID:12112875</td>
+      <td>MGI: J:77872</td>
+      <td>Dr. Clifford J Tabin (Department of genetics, Harvard Medical School, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pax7GPL</td>
+      <td>PMID:19531352</td>
+      <td>MGI:3850147</td>
+      <td>Dr. Shahragim Tajbakhsh (Department of Developmental and Stem Cell Biology, Institut Pasteur, France)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26R-lacZ</td>
+      <td>PMID:9916792</td>
+      <td>MGI:1861932</td>
+      <td>Pr. Philippe Soriano (Icahn School of Medicine at Mt. Sinai, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26mTmG</td>
+      <td>PMID:17868096</td>
+      <td>MGI:3716464</td>
+      <td>Pr. Philippe Soriano (Icahn School of Medicine at Mt. Sinai, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26tdTomato</td>
+      <td>PMID:20023653</td>
+      <td>MGI:3809524</td>
+      <td>Dr. Hongkui Zeng (Allen Institute for Brain Science, USA)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Myf5nlacZ/+</td>
+      <td>PMID:8918877</td>
+      <td>MGI:1857973</td>
+      <td>Dr. Shahragim Tajbakhsh (Department of Developmental and Stem Cell Biology, Institut Pasteur, France)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tbx1-null</td>
+      <td>PMID:11242110</td>
+      <td>MGI:2179190</td>
+      <td>Dr. Virginia Papaioannou (Department of Genetics and Development, Columbia University Medical Center, USA)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-β-gal</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab9361</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-β-gal</td>
+      <td>MP Biomedicals</td>
+      <td>Cat. #: MP 559761</td>
+      <td>IF (1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Aves Labs</td>
+      <td>Cat. #: 1020</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat. #: 13970</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-Islet1</td>
+      <td>DSHB</td>
+      <td>Cat. #: 40.2D6</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-My32</td>
+      <td>Sigma</td>
+      <td>Cat. #: M4276</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-Myod</td>
+      <td>Dako</td>
+      <td>Cat. #: M3512</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-Pax7</td>
+      <td>DSHB</td>
+      <td>Cat. #: AB_528428</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Tcf4</td>
+      <td>Cell Signalling</td>
+      <td>Cat. #: C48H11</td>
+      <td>IF (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG1 anti-Tnnt3</td>
+      <td>Sigma</td>
+      <td>Cat. #: T6277</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Tomato</td>
+      <td>Clontech</td>
+      <td>Cat. #: 632496</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG2a anti-Pax7</td>
+      <td>Ozyme</td>
+      <td>Cat. #: BLE801202</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GE phoenix datos|x 2.0</td>
+      <td>GE Sensing and Inspection Technologies GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3D PDF maker</td>
+      <td>SolidWorks Corporation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-gal</td>
+      <td>Fisher</td>
+      <td>Cat. #: 10554973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat. #: 15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Cat. #: T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween 20</td>
+      <td>Sigma</td>
+      <td>Cat. #: P1379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histoclear II</td>
+      <td>National Diagnostics</td>
+      <td>Cat. #: HS-202</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Animals were handled as per European Community guidelines and the ethics committee of the Institut Pasteur (CTEA) approved protocols (APAFIS#6354–20160809 l2028839). Males carrying the Cre driver gene, Mef2c-AHFCre (Verzi et al., 2005), Islet1Cre (Srinivas et al., 2001), Mesp1Cre (Saga et al., 1999), Pax3Cre (Engleka et al., 2005), Myf5Cre (Haldar et al., 2007), Wnt1Cre (Danielian et al., 1998), Prx1Cre (Logan et al., 2002), were crossed to reporter females from previously described lines including Pax7GPL (Sambasivan et al., 2013), Rosa26R-lacZ (R26R) (Soriano, 1999), R26mTmG (Muzumdar et al., 2007) and R26tdTomato (Madisen et al., 2010). Myf5nlacZ/+ KI mice and mice carrying the Tbx1tm1pa allele (referred to as Tbx1-null) were previously described (Jerome and Papaioannou, 2001; Kelly et al., 2004; Tajbakhsh et al., 1996). To generate experimental Pax3-null fetuses, Pax3WT/Cre males and females were intercrossed (Engleka et al., 2005) (n = 5 Tbx1 and Pax3 mutants analysed including n = 2 by µCT scanning). Mice were crossed and maintained on a B6D2F1/JRj background and genotyped by PCR. Mouse embryos and fetuses were collected between E9.5 and E18.5, with noon on the day of the vaginal plug considered as E0.5.
 
-## X-gal and immunofluorescence stainings
+### X-gal and immunofluorescence stainings
 
 Whole-mount samples were analysed for beta-galactosidase activity with X-gal (0.6 mg/ml) in 1X PBS buffer (D1408, Sigma, St. Louis, MO) containing 4 mM potassium ferricyanide, 4 mM potassium ferrocyanide, 0.02% NP-40 and 2 mM MgCl2 as previously described (Comai et al., 2014). For immunostaining on cryosections, foetuses were fixed 3 hr in 4% paraformaldehyde (PFA) (15710, Electron Microscopy Sciences, Hatfield, PA) 0.5% Triton X-100 (T8787, Sigma) at 4°C, washed overnight at 4°C in PBS 0.1% Tween 20 (P1379, Sigma), cryopreserved in 30% sucrose in PBS and embedded in OCT for 12–16 µm sectioning with a Leica cryostat (CM3050 S, Leica, Wetzlar, Germany). Cryosections were dried for 30 min and washed in PBS. For immunostaining on paraffin sections, samples were fixed overnight in 4% PFA, dehydrated in graded ethanol series and penetrated with Histoclear II (HS-202, National Diagnostics, Atlanta, GA), embedded in paraffin and oriented in blocks. Paraffin blocks were sectioned at 10–12 µm using a Leica microtome (Reichert-Jung 2035). Sections were then deparaffinized and rehydrated by successive immersions in Histoclear, ethanol and PBS. Samples were then subjected to antigen retrieval with 10 mM Citrate buffer (pH 6.0) using a 2100 Retriever (Aptum Biologics, Rownhams, UK).
 
@@ -154,10 +538,10 @@ Rehydrated sections were blocked for 1 hr in 10% normal goat serum, 3% BSA, 0.5%
 
 For whole-mount immunofluorescence staining, embryos were dissected in PBS, fixed in 4% PFA, washed in PBS and stored at −20°C in 100% methanol. After rehydration in PBS, whole mount immunostainings were performed incubating the primary and secondary antibodies for 3 days each. Samples were cleared using benzyl alcohol/benzyl benzoate (BABB) clarification method (Yokomizo et al., 2012).
 
-## µCT scan analysis
+### µCT scan analysis
 
 For µCT scan analysis, the fetuses were treated with the phosphotungstic acid (PTA) contrast agent to well reveal skeletal and muscle structures. After dissection of the cervical region (including the mandible and scapular components, see Figure 2—figure supplement 1), the fetuses were fixed in 4% PFA for 24 hr at 4°C. Samples were then additionally fixed and dehydrated by exchanging the fixative and washing solutions to incrementally increasing ethanol concentrations (30%, 50%, 70%) with 2 days in each concentration to minimize the shrinkage of tissues. To start the contrasting procedure, the embryos were firstly incubated in ethanol-methanol-water mixture (4:4:3) for 1 hr and then transferred for 1 hr into 80% and 90% methanol solution. The staining procedure was then performed for 10 days in 90% methanol 1.5% PTA solution (changed every day with fresh solution) to ensure optimal penetration of the contrast agent. Staining was followed by rehydration of the samples in methanol-grade series (90%, 80%, 70%, 50% and 30%) and stored in sterile distilled water. The samples were placed in polypropylene tubes and embedded in 1% agarose gel to avoid movement artefacts during measurements. μCT scanning was performed using laboratory system GE Phoenix v|tome|x L 240 (GE Sensing and Inspection Technologies GmbH, Hamburg, Germany), equipped with a nanofocus X-ray tube with maximum power of 180 kV/15 W and a flat panel detector DXR250 with 2048 × 2048 pixel2, 200 × 200 µm2 pixel size. The μCT scan was carried out at 60 kV acceleration voltage and 200 µA tube current with voxel size of 5.7 μm for all samples. The beam was filtered by a 0.2 mm aluminium filter. The 2200 projections were taken over 360° with exposure time of 900 ms. The tomographic reconstructions were done using the software GE phoenix datos|x 2.0 (GE Sensing and Inspection Technologies GmbH) and data segmentations and visualizations were performed by combination of software VG Studio MAX 2.2 (Volume GraphicsGmbH, Heidelberg, Germany) and Avizo 7.1 (Thermo Fisher Scientific, Waltham, MA) according to (Tesařová et al., 2016). The interactive 3D PDFs were set up using 3D PDF maker software.
 
-## Imaging
+### Imaging
 
 Images were acquired using the following systems: a Zeiss Axio-plan equipped with an Apotome, a Zeiss stereo zoom microscope V16 or a Zeiss LSM 700 laser-scanning confocal microscope with ZEN software (Carl Zeiss, Oberkochen, Germany). For whole-mount rendering, acquired Z-stacks were 3D reconstructed using Imaris software. All images were assembled in Adobe Photoshop (Adobe Systems, San Jose, CA).

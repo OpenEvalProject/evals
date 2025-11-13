@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.27396.001 Zippering of SNARE complexes spanning docked membranes is essential for most intracellular fusion events. Here, we explore how SNARE regulators operate on discrete zippering states. The formation of a metastable trans-complex, catalyzed by HOPS and its SM subunit Vps33, is followed by subsequent zippering transitions that increase the probability of fusion. Operating independently of Sec18 (NSF) catalysis, Sec17 (α-SNAP) either inhibits or stimulates SNARE-mediated fusion. If HOPS or Vps33 are absent, Sec17 inhibits fusion at an early stage. Thus, Vps33/HOPS promotes productive SNARE assembly in the presence of otherwise inhibitory Sec17. Once SNAREs are partially zipped, Sec17 promotes fusion in either the presence or absence of HOPS, but with faster kinetics when HOPS is absent, suggesting that ejection of the SM is a rate-limiting step.
+Zippering of SNARE complexes spanning docked membranes is essential for most intracellular fusion events. Here, we explore how SNARE regulators operate on discrete zippering states. The formation of a metastable trans-complex, catalyzed by HOPS and its SM subunit Vps33, is followed by subsequent zippering transitions that increase the probability of fusion. Operating independently of Sec18 (NSF) catalysis, Sec17 (α-SNAP) either inhibits or stimulates SNARE-mediated fusion. If HOPS or Vps33 are absent, Sec17 inhibits fusion at an early stage. Thus, Vps33/HOPS promotes productive SNARE assembly in the presence of otherwise inhibitory Sec17. Once SNAREs are partially zipped, Sec17 promotes fusion in either the presence or absence of HOPS, but with faster kinetics when HOPS is absent, suggesting that ejection of the SM is a rate-limiting step.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ Here, we report parallel experiments in three systems: in vitro assays, with eit
 
 ## Results
 
-## Qc zippering beyond layer +5 drives fusion in vivo
+### Qc zippering beyond layer +5 drives fusion in vivo
 
 The Qc-SNARE Vam7 is essential for fusion of yeast lysosomal vacuoles. Vam7 is soluble and lacks a transmembrane anchor (Cheever et al., 2001; Sato et al., 1998). Previously, we studied Vam7 C-terminal truncation mutants in vitro (Qc-∆ proteins; Figure 1). A subset of the Qc-∆ mutants assembled into partially zipped, stalled trans-SNARE complexes, in a docking reaction that required the vacuole Rab7 homolog Ypt7 (Schwartz and Merz, 2009). To test whether Qc-∆ SNAREs function in vivo as they do in vitro, we studied cells expressing representative Qc-∆ truncation mutants.
 
@@ -60,9 +60,17 @@ In addition to homotypic fusion, Vam7 mediates heterotypic fusion of vesicular c
 
 In VAM7 wild-type cells, Qc-3∆ or Qc-5∆ overproduction caused dominant, partial defects in ALP maturation (Figure 2D, lanes 18 and 19). pALP is carried from the Golgi to the vacuole in vesicles bearing the AP-3 coat complex (Cowles et al., 1997). When docking and fusion at the vacuole are impaired, AP-3 vesicles accumulate (Angers and Merz, 2009; Rehling et al., 1999). In wild-type cells overproducing Qc-5∆, the median number of AP-3 vesicles nearly doubled (Figure 2E,F). Qualitatively similar accumulations of AP-3 vesicles were observed in Qc-3∆ overproducers. Moreover, in Qc-5∆-overproducer cells, AP-3 puncta were observed in clumps at the vacuole-limiting membrane (Figure 2E, arrow), rather than dispersed throughout the cytoplasm as in vam7∆ cells (lacking the vacuolar Qc). This suggests a defect in fusion but not docking. Moreover, it further suggests that the AP-3 vesicle coat does not dissociate until after zippering of the SNARE C-terminal domain, and perhaps following fusion (Angers and Merz, 2009). Taken together, our in vivo results are consistent with previous in vitro studies of Qc-∆ mutants using native vacuoles (Schwartz and Merz, 2009).
 
-## Sec17 interacts with partially zipped SNAREs to control fusion
+### Sec17 interacts with partially zipped SNAREs to control fusion
 
 To see if we could detect additional functional states during SNARE zippering, we characterized additional Qc-∆ truncation mutants using the cell-free assay of vacuole homotypic fusion. This assay employs enzymatic complementation to quantify luminal content mixing when native lysosomal vacuoles fuse with one another (Figure 3—figure supplement 1). We first tested the Qc-∆ mutants in gain-of-function ‘ATP bypass’ assays. In this reaction, configuration (Figure 3—figure supplement 1, reaction ii), unpaired vacuolar Qa, Qb, and R-SNAREs drive Rab- and HOPS-dependent fusion when the recombinant Qc-SNARE is added. There is no requirement for added Sec17, Sec18, or ATP. (Boeddinghaus et al., 2002; Merz and Wickner, 2004; Schwartz and Merz, 2009; Thorngren et al., 2004). Unlike Qc-wt, neither Qc-2∆ nor Qc-4∆ drove fusion, even when added at high concentrations (Figure 3A). To evaluate whether Qc-2∆ and Qc-4∆ entered trans-complexes, like Qc-3∆, or failed to enter trans-complexes, like Qc-1∆, we assayed competitive inhibition of fusion reactions driven by endogenous Qc-wt (Figure 3—figure supplement 1, reaction i). In these assays, Mg·ATP activates Sec17- and Sec18-dependent disassembly of cis-SNARE complexes on the isolated vacuoles, liberating native Qc-wt (Vam7) to drive fusion. Here, added Qc-2∆, like Qc-1∆, was weakly inhibitory, while Qc-4∆, like Qc-3∆, was a potent competitive inhibitor (Figure 3B). We infer that Qc-4∆, like Qc-3∆ (Schwartz and Merz, 2009; Xu et al., 2010), enters into partially zipped but fusion-defective trans-SNARE complexes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/27396/elife-27396-fig3-v2.jpg)
+
+**Figure 3.:** The content-mixing assay and reaction schemes are diagrammed in Figure 3—figure supplement 1. Curves in the dose-response and dose-inhibition experiments are nonlinear fits of the Hill equation. Dashed lines denote data re-plotted from Schwartz and Merz (2009) to facilitate comparison. For all panels, points and bars denote the mean (+or ± s.e.m.) of ≥3 independent experiments. (A) Recombinant Qc-2∆, Qc-3∆, and Qc-4∆ proteins are nonfusogenic in no-ATP ‘bypass’ gain-of-function assays. In these assays no ATP, Sec17, or Sec18 are added to the vacuoles (as shown in Figure 3—figure supplement 1, reaction ii). The approximate concentration of endogenous cytoplasmic Vam7 in vivo is indicated (Thorngren et al., 2004). (B) Qc-3∆ and Qc-4∆ are efficient competitive inhibitors of native Qc-wt. In these ATP-containing reactions, endogenous Sec17 and Sec18 are active and fusion is driven by native Qc-wt (Vam7) liberated from cis-SNARE complexes on isolated vacuoles, as diagrammed in Figure 3—figure supplement 1, reaction i. The approximate concentration of native Vam7 in a standard +ATP vacuole fusion reaction is indicated (~16 nM; Thorngren et al., 2004). (C) Added Sec17 restores fusion activity to Qc-3∆ and −4∆ in no-ATP ‘bypass’ assays. The reactions were set up as in panel A, except that the reactions were supplemented with 300 nM Sec17. (D) Sequence alignment of SNAREs in the layer +4 to+5 region. S.c., Saccharomyces cerevisiae; H.s., Homo sapiens; D.m., Drosophila melanogaster. A conserved arginyl (R) residue is indicated in red. (E) Ability of Qc-5∆ variants to promote fusion in no-ATP ‘bypass’ assays. The reactions were set up as in panel A. (F) Competitive inhibition of fusion by Qc-5∆ variants. The reactions were set up as in panel B. (G) Sec17 rescue in gain of function assays with Qc-2∆, Qc-3∆, and Qc-5∆ variants. The no-ATP ‘bypass’ reactions were set up as in panel A, except that the Qc-∆ proteins were always used at 100 nM, and a subset of the reactions were supplemented with 300 nM Sec17, as indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/27396/elife-27396-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Content mixing assay system. One set of vacuoles is isolated from a yeast strain containing the inactive vacuolar hydrolase proALP. The second set of vacuoles is isolated from a strain containing the maturases PrA and PrB (denoted by scissors). Content mixing causes proteolysis of proALP to mature mALP. The amount of mALP is assayed by lysis of the vacuole and addition of the colorimetric substrate para-nitrophenolphosphate, which is hydrolyzed to a yellow product by mALP. The formation of 4-nitrophenolate (PNP) is measured by spectrophotometry. (B) Fusion assay reaction configurations used in this study. The isolated vacuole bears active Ypt7-GTP, the SM-tether complex HOPS, and small amounts of both Sec17 and Sec18. SNAREs are present in two forms: unpaired SNAREs, and cis-SNARE complexes. In purified vacuole preparations, the Qc Vam7 is present only in the cis-SNARE complexes (Boeddinghaus et al., 2002). Thus, there are two ways to drive fusion of isolated vacuoles. In the standard ‘+ATP’ reaction (i), ATP and Sec18 liberate SNAREs including native Vam7 from cis-complexes, leading to docking and fusion (Boeddinghaus et al., 2002; Mayer et al., 1996). In the ‘ATP bypass’ reaction (ii), purified Vam7 (or Qc-∆) is supplied in the absence of ATP, allowing docking and fusion to proceed.
 
 Sec17 addition restores the ability of Qc-3∆ to drive fusion in the absence of Sec18 or ATP (Schwartz and Merz, 2009; Song et al., 2017). In no-ATP gain-of-function reactions containing added Sec17, Qc-4∆ drove fusion with a dose-response relationship indistinguishable from that of Qc-3∆ (Figure 3C). In marked contrast, Sec17 failed to rescue fusion in reactions containing Qc-2∆ (see Figure 3G).
 
@@ -70,15 +78,23 @@ Taken together, these results and previous work (Schwartz and Merz, 2009) indica
 
 The sharply increased in vitro fusion activity of Qc-5∆ versus Qc-4∆ prompted closer examination of the layer +5 region. Vam7 (Qc-wt) contains two arginyl (R) residues between layers + 4 and+5 (Figure 3D). The second residue is conserved in many Qc-SNAREs (Fasshauer et al., 1998; Sutton et al., 1998). In gain-of-function ‘bypass’ reactions lacking ATP (Figure 3E), mutation of the non-conserved first Arg to Ala (AR) slightly increased fusion versus ‘wild-type’(RR) Qc-5∆. Mutation of the second, conserved Arg (RA) decreased fusion. Mutation of both residues (AA) further impaired fusion. In competition assays containing ATP, where fusion is driven by native Qc-wt, the abilities of the variants to dominantly impair fusion mirrored their activities in the gain-of function assays (Figure 3F; compare to 3E). Hence, these mutants are true partial agonists of fusion. In both assay configurations, the apparent KM (EC50) values for the mutant Qc-5∆s (AR, RA, AA) were indistinguishable from ‘wild-type’ Qc-5∆ (RR). Thus, the ability of these Qc-5∆ mutants to assemble into pre-fusion complexes was unaltered, even as their capacity to drive fusion diverged. Moreover, added Sec17 allowed all Qc-5∆ variants to drive fusion with similar efficiency (Figure 3G). These findings, and results from other systems (Fasshauer et al., 1998; Mohrmann et al., 2010; Sakaba et al., 2005) indicate that Qc layer +5 has a pivotal role in fusion, probably driving C-terminal zippering beyond the ‘half-zipped’ metastable state and through the transition barrier separating partially zipped and C-terminally zipped trans-complexes (Liu et al., 2006; Ma et al., 2016; Min et al., 2013; Zorman et al., 2014). As discussed below, the transition between the partially zipped and C-terminally zipped states likely also results in ejection of the bound SM cofactor Vps33. Our results with intact vacuoles also mirror force spectroscopy studies done in solution, which show that Sec17 (α-SNAP)-binding promotes zippering of the SNARE bundle’s C-terminal domain (Ma et al., 2016).
 
-## Sec17 can rescue partially zipped complexes in the complete absence of Sec18
+### Sec17 can rescue partially zipped complexes in the complete absence of Sec18
 
 To establish minimal requirements for Sec17 rescue of trans-complexes that were zipped to different extents, we used chemically defined reconstituted proteoliposomes (RPLs; (Song et al., 2017; Zick et al., 2014; Zick et al., 2015; Zucchi and Zick, 2011). To negate the requirement for cis-SNARE complex disassembly by ATP and Sec18, the SNAREs were distributed asymmetrically as in the heterotypic fusion configuration (Figure 4—figure supplement 1). One set of RPLs displayed the Qa- and Qb-SNAREs Vam3 and Vti1; the other, the R-SNARE Nyv1. All RPLs displayed a GTP-loaded Rab, Ypt7. The concentrations of Vam7 (Qc), Sec17, and Sec18 were selected based on results obtained with native yeast vacuoles (Figure 3; Schwartz and Merz, 2009; Thorngren et al., 2004; Ungermann et al., 1998). Lipid mixing and luminal aqueous content mixing were simultaneously monitored in each reaction using Förster resonance energy transfer (FRET) probes (Figure 4—figure supplement 1). Both fusion read-outs yielded similar results. We therefore focus on content mixing, the reaction endpoint.
 
 In reactions lacking Sec18, when HOPS and full-length Qc-wt were added to RPLs, fusion was rapid and efficient whether Sec17 was added to the reaction or not (Figure 4A–C). In contrast to Qc-wt, the truncation mutants Qc-3∆, −4∆, and −5∆ were non-fusogenic unless Sec17 was supplied (Figure 4B,C). In the absence of Sec17, Sec18 was unable to rescue Qc truncation mutants (Figure 4A,D,G). However, Sec18 dramatically enhanced Sec17-mediated rescue and allowed fusion with the Qc-∆ proteins, at much lower Sec17 concentrations (Figure 4D–I). Qc-5∆ always had more fusion activity than Qc-3∆ or Qc-4∆, underscoring the interplay between Sec17 stimulation and trans-SNARE zippering.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/27396/elife-27396-fig4-v2.jpg)
+
+**Figure 4.:** The chemically defined RPL fusion system is diagrammed in Figure 4—figure supplement 1. RPLs bearing Ypt7-GTP (Rab), and either the Qa- and Qb-SNARES, or the R-SNARE, were incubated with HOPS (100 nM) and the indicated Qc-SNAREs (250 nM). Reactions were performed in the absence or presence of Sec17 and Sec18, as indicated. 1 mM ATP and HOPS were present under all conditions. The Rab Ypt7 was present on both vesicle populations and was loaded with GTP (Materials and methods). On the vertical axes, 100% fusion indicates complete association of the FRET probes encapsulated within the two vesicle populations, as determined in control reactions. Each data point shows the mean content mixing signal ± s.e.m. for three independent experiments. The lines show nonlinear best-fits of a second-order kinetic model.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27396/elife-27396-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The RPL fusion assay simultaneously monitors lipid and content mixing using orthogonal FRET pairs (Zucchi and Zick, 2011). Lipid mixing is monitored by FRET between phosphatidylethanolamine (PE) lipid derivitized with either NBD or Marine Blue. Content mixing is monitored through the association of encapsulated biotin and avidin conjugates (to phycoerythrin and Cy5 fluorophores, respectively). Although both lipid and content mixing signals were collected in the experiments shown, only content mixing signals are presented because the two signals were highly correlated, and because content mixing is the reaction's biologically relevant endpoint. (B) The RPLs used in this study contained a lipid mixture approximating that of the yeast vacuole membrane (Zick et al., 2014), native purified Ypt7-GTP, and either Qa and Qb, or R-SNAREs. The asymmetric SNARE topology allows docking and fusion without any prior requirement for Sec18-mediated cis-SNARE complex disassembly.
+
 At this point, we can draw several conclusions. First, Sec17 rescue of partially zipped SNARE complexes can occur in the total absence of Sec18. This is consistent with our original vacuole experiments, where Sec17 rescued Qc-3∆ in the absence of ATP, even in the presence of inhibitory Sec18 antibodies or when a Sec17 mutant defective for Sec18 interaction was used (Schwartz and Merz, 2009). In parallel work, we demonstrated that rigor-locked Sec18-ATP can augment the Sec17 rescue of Qc-3∆ without any requirement for ATP hydrolysis (Song et al., 2017). Thus, when present, Sec18 need not disassemble SNARE complexes to facilitate Sec17-mediated triggering of fusion. Second, full-length Vam7 (Qc-wt) might be available in residual quantities on intact vacuoles, but it is not present in the chemically defined Qc-∆ RPL reactions. Thus, Sec17 supports Qc-∆–mediated fusion in the total absence of full-length Qc-wt. Third, no additional vacuolar proteins are needed for Sec17 stimulation of fusion. Importantly, Sec17 stimulation of fusion is observed both with native vacuole membranes and with RPLs, even at physiological or below-physiological SNARE, Rab, and HOPS concentrations (Schwartz and Merz, 2009; Song et al., 2017; Zick et al., 2015).
 
-## Sec17 requirements for stimulation and inhibition of fusion
+### Sec17 requirements for stimulation and inhibition of fusion
 
 In addition to the canonical role of Sec17 in cis-SNARE complex disassembly, and its ability to augment the fusion capacity of SNARE complexes, Sec17/α-SNAP has also been reported to inhibit fusion of yeast vacuoles and dense core secretory vesicles (Park et al., 2014; Wang et al., 2000). To separate these divergent functions of Sec17, we analyzed a panel of Sec17 mutants. Sec17 interacts with SNARE proteins through a large concave binding surface, it interacts with Sec18 through its C-terminal domain, and it interacts with membranes through an N-terminal hydrophobic loop (Barnard et al., 1996; Hanson et al., 1997; Lauer et al., 2006; Marz et al., 2003; Schwartz and Merz, 2009; Winter et al., 2009). Previously, we demonstrated that Sec17-LALA, a mutant impaired in its ability to stimulate Sec18 ATPase activity and SNARE disassembly (Barnard et al., 1996), exhibits enhanced inhibitory activity and stimulates SNARE-mediated fusion about as well as wild-type Sec17 (Schwartz and Merz, 2009; Song et al., 2017; Zick et al., 2014). Here, we focus on the interactions of Sec17 with SNAREs and with membranes.
 
@@ -96,21 +112,33 @@ Sec17 and mammalian α-SNAP contain a flexible N-terminal loop (Figure 5A,B) bea
 
 A notable feature of the Sec17 dose-response curves is a sharp peak in activity followed by a decrease in Qc-3∆ rescue at elevated Sec17 concentrations. High Sec17 concentrations can inhibit vacuole fusion in standard, ATP-driven reactions (Wang et al., 2000). In assays performed under these conditions (Figure 6), wild-type Sec17 inhibited fusion with a dose response similar to that previously reported by Wang et al. The SNARE-interaction mutations K159E, K163E, and the two-site mutant (Sec17-KEKE) had inhibitory activity indistinguishable from wild type Sec17, indicating that inhibition does not require a specific interaction between Sec17 and the SNARE 0-layer. In marked contrast, mutations in the Sec17 hydrophobic loop caused dramatic losses of inhibitory activity, with IC50 values shifted rightward by 40- to 200-fold compared to the wild type. Together, the data show that the apolar loop of Sec17, and hence Sec17 interaction with the membrane, has a large effect on the ability of Sec17 to both inhibit and stimulate fusion.
 
-## Sec17 augments Qc-∆ SNARE function in vivo
+### Sec17 augments Qc-∆ SNARE function in vivo
 
 In vitro, Sec17 addition allows Qc-3∆, −4∆, or −5∆ to fuse vacuoles and RPLs (Figure 3,4,5). However, all Qc-∆ truncation mutants except Qc-7∆ have severe fusion defects in vivo, even when overproduced (Figure 2). Can elevated Sec17 or Sec18 levels suppress the functional defects of Qc-∆ SNAREs in living cells? To answer this question, we overproduced Sec17, Sec18, or both from high-copy plasmids. To verify that overproduced Sec17 and Sec18 are functional, we assayed vacuolar SNARE complex abundance by co-immunoprecipitation (Figure 7A). At steady state, only ~3% of SNARE complexes are in trans, so this approach assays the ~97% of complexes that are in cis. Sec18 overproduction, with or without Sec17 overproduction, decreased cis-complex abundance and decreased Sec17-SNARE association (Figure 7A, compare lanes 2,3 to 4,5). In contrast, Sec17 overproduction alone did not substantially alter either cis-complex abundance or Sec17-SNARE association (Figure 7, compare lanes 2 and 3). Comparable results were reported for experiments with Drosophila (Babcock et al., 2004; Golby et al., 2001).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/27396/elife-27396-fig7-v2.jpg)
+
+**Figure 7.:** (A) Analysis of cis-SNARE complex abundance in lysates of cells overproducing Sec17 and Sec18. The top panel shows immunoblots of cell lysates. In the bottom panel, anti-Vam3 (Qa-SNARE) was immunoprecipitated from detergent lysates from the indicated strains under non-denaturing conditions. The precipitated material was separated by SDS-PAGE and analyzed by immunoblot, as indicated. IP, immunoprecipitate; FT, flow-through. PGK, phosphoglycerate kinase (control). Additional experimental details are provided in the Materials and methods. (B) Vacuoles in the indicated cell lines were labeled by pulse-chase with FM4-64 dye and observed by epifluorescence. (C) Quantification of phenotypes in B. Bars show mean scores from three independent experiments (n = 88–354 cells per genotype per experiment). (D) Vacuoles in the indicated cell lines were labeled by pulse-chase with FM4-64 dye and observed by epifluorescence. (E) Quantification of phenotypes in D. Bars show mean scores as in C.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/27396/elife-27396-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Vacuoles were labeled by pulse-chase with FM4-64 dye and observed by epifluorescence. Representative fields are shown.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/27396/elife-27396-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Liquid cultures were adjusted to equivalent cell densities, serial dilutions were spotted onto synthetic complete agar plates lacking uracil to select for plasmid retention. The plates were incubated at permissive (25°C) or nonpermissive (37°C) temperature for growth of sec17-1 cells, and photographed.
 
 Overproduction of Sec17, Sec18, or both together did not alter vacuole morphology in otherwise wild-type cells, and failed to rescue vacuole morphology in cells expressing Qc-3∆ or Qc-5∆ (Figure 7—figure supplement 1). There is, however, an important difference between the conditions in vivo and in vitro. In vivo, the vacuole-associated kinase Yck3 negatively regulates fusion by phosphorylating HOPS and the Rab GEF Mon1. These phosphorylation events impair both Ypt7 Rab activation and HOPS-membrane association (Brett et al., 2008; LaGrassa and Ungermann, 2005; Lawrence et al., 2014). Our Qc-∆/Sec17 rescue experiments with purified yeast vacuoles (Figure 3,5) are done under ‘bypass’ conditions in the absence of ATP, resulting in Yck3 loss-of-function (Brett et al., 2008; LaGrassa and Ungermann, 2005), and Yck3 is not present in the synthetic RPL reactions. Hence, we tested Qc-∆ function in yck3∆ mutant cells. In yck3∆ cells expressing either Qc-3∆ or Qc-5∆, vacuoles were uniformly fragmented, indicating that elevated HOPS activity does not by itself restore Qc-∆ function. However, overproduction of either Sec17, or Sec17 and Sec18 together, rescued Qc-5∆ vacuole morphology with ~20% penetrance (Figure 7B,C). The partial rescue of Qc-5∆ rescue makes sense. In cell-free assays of homotypic vacuole fusion, Sec17 augments Qc-∆ activity only over a narrow range of Sec17 concentrations (Figure 5). Because the copy number of yeast 2µ plasmids varies from cell to cell, partial rescue probably reflects variation in Sec17 expression. Qc-3∆ mutants exhibited severe defects in vivo under all conditions, consistent with the generally lower fusion activity of Qc-3∆ in vitro, with both vacuoles and RPLs. Sec17 overproduction alone had no influence on cis-SNARE complex abundance, and Sec18 overproduction alone did not rescue Qc-5∆ (Figure 7B,C). Overproduction of Sec17-FSMS failed to rescue vacuole morphology in yck3∆ Qc-5∆ cells (Figure 7D,E), indicating that the Sec17 hydrophobic loop is needed to augment Qc-∆ function in vivo as it is in vitro. Neither the rate of cis-SNARE complex disassembly, nor the steady-state availability of unpaired SNAREs, can explain why Sec17 augments Qc-5∆ function in vivo. The most likely remaining explanation is that Sec17 augments the fusion activity of partially zipped trans-complexes in vivo, just as it does in vitro.
 
 Since SEC17 is an essential gene (Novick et al., 1981), we tested the ability of several Sec17 mutants to support viability. Among these, only Sec17-LALA, which is impaired in its ability to stimulate Sec18 ATPase activity (Barnard et al., 1996; Schwartz and Merz, 2009; Zick et al., 2015), was unable to support viability in sec17-1 temperature-sensitive cells grown at the restrictive temperature of 37°C (Figure 7—figure supplement 2). Mutations in the hydrophobic loop or in the zero-layer-interacting residue K159 did not cause lethality. These results indicate that the Sec17-Sec18 interaction is essential for viability, but also demonstrate that the Sec17-Sec18 system is sufficiently robust that even relatively severe losses of Sec17 activity are tolerated in vivo.
 
-## Sec17 triggers fusion after trans-SNARE complex assembly
+### Sec17 triggers fusion after trans-SNARE complex assembly
 
 In the forward docking and fusion pathway, where does Sec17 act to stimulate fusion? To address this question, we set up staging experiments with intact vacuoles (Figure 8). Two reaction protocols were compared. In control reactions (Figure 8A), vacuoles were allowed to tether for 25 min. Trans-SNARE complex formation and fusion were then initiated by adding full-length Qc-wt. At various times before or after Qc-wt addition, inhibitors were added to the reactions. At all times up to −1 min before Qc addition (red dashed line), antibodies against the Rab, the SM, or the Qa-SNARE still partially or completely inhibited fusion. After Qc-wt addition, the reactions became resistant to these inhibitors within a couple of minutes. In a second set of reactions (Figure 8B), vacuoles were allowed to tether for 10 min. Qc-3∆ was then added and the reactions were incubated a further 15 min to allow trans-SNARE complex assembly. Finally, fusion was triggered by the addition of Sec17 (defined as t = 0). Before Qc-3∆ addition, antibodies against the Rab, the SM, or the Qa-SNARE largely or completely inhibited fusion. However, by −1 min before Sec17 addition (vertical red dashed line), and at subsequent time points, the reactions were insensitive to antibodies against the Rab, the HOPS SM subunit Vps33, and the Qa-SNARE Vam3. Qc-3∆ addition therefore drives the vacuoles into an operationally docked state. In this state, partially zipped trans-SNARE complexes have assembled (Schwartz and Merz, 2009; Xu et al., 2010), and Sec17 efficiently triggers fusion even when inhibitors of the Rab, the SM, or the Qa-SNARE are present. We conclude that once the SNAREs are partially zipped, the Rab, the SM, and the Qa-SNARE either are no longer required, or they are in a state that is efficiently shielded from inhibitory antibodies. The docked, trans-SNARE paired vacuoles could still be prevented from fusing, however, by a peptide inhibitor of fusion, the MARCKS effector domain (MED), up to the moment of Sec17 triggering.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/27396/elife-27396-fig8-v2.jpg)
 
-**Figure 8.:** (A) Master vacuole fusion reactions were assembled under no-ATP ‘bypass’ conditions (Figure 3—figure supplement 1), and pre-incubated for 25 min at 27°C. Fusion was then initiated (t) by adding Qc-wt to 20 nM final concentration. At the indicated time points, an aliquot was withdrawn from the master reaction and added to a tube containing the indicated inhibitor (or placed on ice), and incubated for the duration of the experiment. At t = 70 min, each reaction aliquot was assayed for content mixing. (0B) Fusion reactions assembled under no-ATP ‘bypass’ conditions were pre-incubated for 10 min at 27°C. At t = −15 min, 75 nM Qc-3∆ was added and the reactions were incubated for an additional 15 min. Fusion was initiated by adding Sec17 (300 nM). At the indicated time points, an aliquot was withdrawn from the master reaction and added to a tube containing the indicated inhibitor (or placed on ice), and incubated for the duration of the experiment. At t = 70 min, each reaction aliquot was assayed for content mixing. For both panels, each point indicates mean + s.e.m. for two to six independent experiments.
+**Figure 8.:** (A) Master vacuole fusion reactions were assembled under no-ATP ‘bypass’ conditions (Figure 3—figure supplement 1), and pre-incubated for 25 min at 27°C. Fusion was then initiated (t0) by adding Qc-wt to 20 nM final concentration. At the indicated time points, an aliquot was withdrawn from the master reaction and added to a tube containing the indicated inhibitor (or placed on ice), and incubated for the duration of the experiment. At t = 70 min, each reaction aliquot was assayed for content mixing. (B) Fusion reactions assembled under no-ATP ‘bypass’ conditions were pre-incubated for 10 min at 27°C. At t = −15 min, 75 nM Qc-3∆ was added and the reactions were incubated for an additional 15 min. Fusion was initiated by adding Sec17 (300 nM). At the indicated time points, an aliquot was withdrawn from the master reaction and added to a tube containing the indicated inhibitor (or placed on ice), and incubated for the duration of the experiment. At t = 70 min, each reaction aliquot was assayed for content mixing. For both panels, each point indicates mean + s.e.m. for two to six independent experiments.
 
 We next used co-immunoprecipitations to examine the associations of Vps33/HOPS with SNARE proteins during a Qc-∆3 block/Sec17 rescue reaction like that in Figure 8B. Vacuoles lacking vacuolar protease activity (pep4∆) and bearing functional, GFP-tagged Vps33 were incubated with Qc-3∆ to establish partially zipped trans-SNARE complexes (Figure 9A). The vacuoles, now bearing partially zipped Qc-3∆ complexes, were then triggered by Sec17 addition, incubated for an additional 5 min, dissolved in nonionic detergent, and subjected to immunoprecipitation to retrieve Vps33-GFP and any associated proteins. As expected, Vps33 associated with Vps41, another HOPS subunit, under all conditions tested. Upon Qc-3∆ addition, Vps33/HOPS bound to the Qa- and R-SNAREs (compare lanes 1 and 2). In previous work (Schwartz and Merz, 2009), we demonstrated that inhibition of the Ypt7 Rab by GDI prevents Qc-3–driven trans-SNARE complex assembly. Here, GDI addition 1 min prior to Qc-3∆ addition prevented association of the Qa, Qc, and R-SNAREs with Vps33 (lane 3). In contrast, addition of GDI after Qc-3∆ addition and trans-SNARE assembly did not cause the SNAREs to dissociate from Vps33/HOPS (lane 4). Thus, the Rab is needed both for Vps33/HOPS association with the SNARE proteins, and for assembly of the partially zipped trans-SNARE complex. Triggering of fusion by Sec17 addition (lane 5) caused ejection of Vps33/HOPS from the SNARE complex. This experiment cannot distinguish whether Vps33/HOPS dissociation from the SNAREs occurs prior to, during, or after the fusion event itself. However, structural studies of Vps33 suggest that Vps33 facilitates N-to-C zippering trans-SNARE complexes until they are in a partially zipped state, and imply that Vps33 must then dissociate for the completion of SNARE zippering and fusion (Baker et al., 2015). Such a model is corroborated by laser tweezers experiments with Munc-18 and neuronal SNAREs the absence of membranes (Ma et al., 2015). This model predicts that Vps33 should bind to quaternary SNARE complexes in solution more readily if the Qa and R-SNAREs have splayed C-terminal domains. To test this prediction, we assembled quaternary complexes of vacuolar SNARE cytoplasmic domains with either Qc-wt or Qc-5∆, and tested their ability to bind purified monomeric Vps33. Vps33-bound Qc-5∆ complexes more efficiently than Qc-wt complexes (Figure 9B).
 
@@ -120,7 +148,7 @@ We next used co-immunoprecipitations to examine the associations of Vps33/HOPS w
 
 Together, the findings in Figures 8 and 9 show that Sec17 need not be present during tethering or docking, that it can act to trigger fusion after docking is complete, and that following Sec17 addition, Vps33 dissociates from the SNAREs, likely before or during C-terminal SNARE zippering (and therefore prior to fusion). Moreover, the data imply, but do not prove, that Sec17 might be able to trigger fusion by binding to partially zipped SNARE complexes in the complete absence of HOPS and Vps33. To further test this working model in a system allowing tighter experimental control, we returned to chemically defined RPLs.
 
-## HOPS selects the outcome of Sec17–SNARE interactions
+### HOPS selects the outcome of Sec17–SNARE interactions
 
 HOPS promotes efficient tethering, docking, and trans-SNARE pairing (Baker et al., 2015; Stroupe et al., 2009; Zick et al., 2014). To test how HOPS influences the function of Sec17 during docking and fusion, parallel reactions were initiated with Qab-SNARE RPLs, R-SNARE RPLs, and Qc-wt in the absence or presence of Sec17, as well as in the absence or presence of HOPS. In the absence of HOPS, the normal HOPS/SM requirement in vesicle tethering and trans-SNARE assembly was bypassed by adding 2% polyethylene glycol (PEG; Hickey and Wickner, 2010; Zick et al., 2014). Full-length Qc-wt drove efficient fusion in the presence of HOPS, and this fusion was unaffected or slightly stimulated by Sec17 (Figure 10A). In marked contrast, in no-HOPS reactions containing PEG, Sec17 strongly impaired fusion (Figure 10B). Inhibition of fusion by Sec17, or by Sec17 and Sec18 together, has been reported with native vacuoles, and with both vacuolar and secretory in vitro reconstitution systems (Ma et al., 2013; Park et al., 2014; Wang et al., 2000; Xu et al., 2010). In vivo, moreover, overproduced Sec17 is tolerated in otherwise wild-type cells, but excess Sec17 is toxic when SM function (either Vps33 or Sly1) is partially impaired (Lobingier et al., 2014). Each of these findings supports the interpretation that HOPS, and in particular the SM subunit Vps33, facilitates fusion in the presence of otherwise inhibitory Sec17.
 
@@ -158,26 +186,316 @@ Thus, it is increasingly evident that SM proteins have the properties of true en
 
 ## Materials and methods
 
-## Plasmids and yeast strains
+### Plasmids and yeast strains
 
 Yeast culture and genetic manipulations were done using standard methods (Amberg et al., 2005). Strains and plasmids are listed in Table 1. E. coli expression vectors pMS108-12 were constructed as described (Schwartz and Merz, 2009), with mutations encoded in the primers used to amplify the VAM7 sequence. The VAM7 knock-in plasmid pMS125 was generated by ligating two homology arms encompassing the entire VAM7 coding sequence and surrounding regulatory sequences on either side of the NAT1 cassette in pAG25 (Goldstein and McCusker, 1999). pMS126-9 were generated by oligo-directed mutagenesis of pMS125 to insert early stop codons. VAM7 chromosomal knock-ins were constructed by homologous recombination in vam7∆::KAN yeast directed by linearized pMS125-9 followed by selection on nourseothricin. pMS120 was constructed by cloning a 2.1 kb fragment of yeast genomic DNA encompassing the entire VAM7 coding sequence and surrounding regulatory regions (from −1000 to +1210 relative to the translational start site) into pRS426. pMS121-4 were generated by oligonucleotide-directed mutagenesis of pMS120 to introduce early stop codons. Chromosomal YCK3 loci were ablated via homologous recombination with a PCR product derived from yck3∆ null cells (yck3∆::KAN). pDN368 was generated by sequence overlap extension PCR of a SEC17 template to introduce F21S/M22S point mutations, followed by gap repair cloning of the resulting PCR product into SacI-digested pDN526. Cell viability tests were performed using limited dilution as described (Lobingier et al., 2014).
 
-## Proteins and lipids
+**Table 1.**
+ Strains and plasmids used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain/plasmid</th>
+      <th>Description/genotype</th>
+      <th>Reference/source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">S. cerevisiae strains</td>
+    </tr>
+    <tr>
+      <td>DKY6281</td>
+      <td>MATα pho8∆::TRP1 leu2-3,112 ura3-52 his3-200 trp1-901 lys2-801 suc2-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BJ3505</td>
+      <td>MATα pep4∆::HIS3 prb1-∆1.6R ura3-52 his3-200 trp1-∆101 lys2-801 can1 gal2</td>
+      <td>(Jones, 2002)</td>
+    </tr>
+    <tr>
+      <td>BY4741</td>
+      <td>MATa his3∆one leu2∆0 met15∆0 ura3∆0</td>
+      <td>ATCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BY4741 vam7∆::KAN</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>AMY1018</td>
+      <td>BY4741 VAM7::NAT (Qc-wt knock-in; control wt strain)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMY1022</td>
+      <td>BY4741 vam7(1-289)::NAT (Qc-1∆ knock-in)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMY1021</td>
+      <td>BY4741 vam7(1-295)::NAT (Qc-3∆ knock-in)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMY1020</td>
+      <td>BY4741 vam7(1-302)::NAT (Qc-5∆ knock-in)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMY1019</td>
+      <td>BY4741 vam7(1-309)::NAT (Qc-7∆ knock-in)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>DNY588</td>
+      <td>BY4741 VAM7::NAT yck3∆::KAN</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>DNY591</td>
+      <td>BY4741 vam7(1-289)::NatR yck3∆::KAN</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>DNY589</td>
+      <td>BY4741 vam7(1-295)::NatR yck3∆::KAN</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>DNY590</td>
+      <td>BY4741 vam7(1-302)::NatR yck3∆::KAN</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>GOY23</td>
+      <td>MATα pep4∆::LEU2 prb1∆::LEU2 leu2-3,112 ura3-52 his3-200 trp1-901 lys2-801 suc2-9</td>
+      <td>(Odorizzi et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>AMY87</td>
+      <td>BJ3505 vam3∆</td>
+      <td>Merz Lab collection</td>
+    </tr>
+    <tr>
+      <td>RSY269</td>
+      <td>sec17-1</td>
+      <td>(Novick et al., 1981)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Yeast plasmids</td>
+    </tr>
+    <tr>
+      <td>pDN516</td>
+      <td>ApR 2µ URA3</td>
+      <td>(Nickerson et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>pDN313</td>
+      <td>pDN516::SEC18</td>
+      <td>(Lobingier et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>pDN314</td>
+      <td>pDN516::SEC17</td>
+      <td>(Lobingier et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>pDN315</td>
+      <td>pDN516::SEC17 SEC18</td>
+      <td>(Lobingier et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>pDN365</td>
+      <td>pDN516::sec17-(F21S, M22S — ‘FSMS’)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pDN366</td>
+      <td>pDN516::sec17-(L291A, L292A —‘LALA’)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pRS416</td>
+      <td>ApR CEN URA3</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+    </tr>
+    <tr>
+      <td>pRS426</td>
+      <td>ApR 2µ URA3</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+    </tr>
+    <tr>
+      <td>pMS120</td>
+      <td>VAM7 (pRS426; Qc-wt overproduction)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMS121</td>
+      <td>vam7(1-289) (pRS426; Qc-1∆ overproduction)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMS122</td>
+      <td>vam7(1-295) (pRS426; Qc-3∆ overproduction)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMS123</td>
+      <td>vam7(1-302) (pRS426; Qc-5∆ overproduction)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMS124</td>
+      <td>vam7(1-309) (pRS426; Qc-7∆ overproduction)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pMS125</td>
+      <td>VAM7 (pAG25)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1492</td>
+      <td>pRS416::SEC17</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1774</td>
+      <td>pRS416::sec17-K159E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AMP1774</td>
+      <td>pRS416::sec17-K163E</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1774</td>
+      <td>pRS416::sec17-K159E,K163E (‘KEKE’)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td colspan="3">E. coli plasmids</td>
+    </tr>
+    <tr>
+      <td>AMP356</td>
+      <td>pET41::His6-TEV-VAM7-intein-CBD</td>
+      <td>(Schwartz and Merz, 2009)</td>
+    </tr>
+    <tr>
+      <td>AMP359</td>
+      <td>pET41::His6-TEV-VAM7(1–289, 1∆)-intein-CBD</td>
+      <td>(Schwartz and Merz, 2009)</td>
+    </tr>
+    <tr>
+      <td>AMP1809</td>
+      <td>pET41::His6-TEV-VAM7(1–291, 2∆)-intein-CBD</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP358</td>
+      <td>pET41::His6-TEV-VAM7(1–295, 3∆)-intein-CBD</td>
+      <td>(Schwartz and Merz, 2009)</td>
+    </tr>
+    <tr>
+      <td>AMP1810</td>
+      <td>pET41::His6-TEV-VAM7(1–299, 4∆)-intein-CBD</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP357</td>
+      <td>pET41::His6-TEV-VAM7(1–302, 5∆)-intein-CBD</td>
+      <td>(Schwartz and Merz, 2009)</td>
+    </tr>
+    <tr>
+      <td>AMP1806</td>
+      <td>pET41::His6-TEV-VAM7(1–302, AR-5∆)-intein-CBD</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1807</td>
+      <td>pET41::His6-TEV-VAM7(1–302, RA-5∆)-intein-CBD</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1808</td>
+      <td>pET41::His6-TEV-VAM7(1–302, AA-5∆)-intein-CBD</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP360</td>
+      <td>pET41::His6-TEV-VAM7(1–309, 7∆)-intein-CBD</td>
+      <td>(Schwartz and Merz, 2009)</td>
+    </tr>
+    <tr>
+      <td>AMP1547</td>
+      <td>pTYB12::intein-CBD-SEC17</td>
+      <td>(Schwartz and Merz, 2009)</td>
+    </tr>
+    <tr>
+      <td>AMP1547</td>
+      <td>pTYB12::intein-CBD-SEC17 (F21R, M22S, L24S, F25R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1548</td>
+      <td>pTYB12::intein-CBD-SEC17 (F21R, F25R)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1549</td>
+      <td>pTYB12::intein-CBD-SEC17 (∆21–25)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1550</td>
+      <td>pTYB12::intein-CBD-SEC17 (F21S, M22S — ‘FSMS’)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1551</td>
+      <td>pTYB12::intein-CBD-SEC17 (∆1–26)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1777</td>
+      <td>pTYB12::intein-CBD-SEC17 (K159E)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1778</td>
+      <td>pTYB12::intein-CBD-SEC17 (K163E)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>AMP1779</td>
+      <td>pTYB12::intein-CBD-SEC17 (K159E, K163E — ‘KEKE’)</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Proteins and lipids
 
 Sec17, Sec17FM>SS, and Qc-SNAREs were expressed in E. coli and purified as described (Schwartz and Merz, 2009). A two-tag strategy was employed. An N-terminal polyhistidine tag and a C-terminal, self-cleaving intein and chitin-binding domain tag, allowed retrieval of Qc proteins uncontaminated by N- or C-terminal cleavage products. Sec18 was expressed in E. coli and purified as described (Mayer et al., 1996). Full-length Vam3, Vti1 and Nyv1 were expressed in E. coli and purified as described (Mima et al., 2008; Zick et al., 2015; Zucchi and Zick, 2011). Ypt7 and HOPS were overproduced in yeast and purified as described (Zick and Wickner, 2013). Cy5-strepavidin was purchased from KPL, unlabeled avidin from Thermo Scientific (Bothell, Washington, USA), and R-phycoerythrin-biotin from Life Technologies. Monoclonal antibodies against ALP (Pho8), CPY (Prc1) and PGK1 were purchased from Molecular Probes (Life Technologies, Carlsbad, California, USA). Affinity-purified antibodies against Vam3, Vam7, Nyv1, Vti1, Sec17, Sec18, and Vps33 were prepared as described (Schwartz and Merz, 2009). Lipids were purchased from Avanti Polar Lipids (Alabaster, Alabama, USA), except for ergosterol (Sigma-Aldrich, Saint Louis, Missouri, USA) and fluorescent lipids (Life Technologies).
 
-## Microscopy
+### Microscopy
 
 For fluorescent labeling of yeast vacuoles (Vida and Emr, 1995), cell cultures were shaken at 30°C and grown to early logarithmic phase (OD600 = 0.3 to 0.6). Cells were pelleted and resuspended in synthetic media supplemented with 5 µM FM4-64 (Life Technologies), then incubated ≥20 min at 30°C. Labeled cells were rinsed once in synthetic media before resuspension in synthetic complete or dropout media and shaking at 30°C for 30 to 60 min. Cells were maintained in logarithmic growth phase (OD600 = 0.3 to 0.8) until observation by microscopy. Epifluorescence microscopy was performed as described (Paulsel et al., 2013).
 
-## Vacuole protein sorting analysis
+### Vacuole protein sorting analysis
 
 10 mL of cells were grown to OD600 = 1.0 in synthetic complete media lacking appropriate nutrients to maintain plasmid selection. Cells were retrieved by centrifugation, suspended in 100 µL 1 × SDS loading buffer with 100-µL glass beads, heated to 95°C for 10 min, and vortexed for 5 min to disrupt the cell wall and cell membrane. Cell extracts were separated from glass beads by centrifugation at 1000 × g, and then insoluble material was removed by centrifugation at 20,000 × g. Samples were analyzed by SDS‐PAGE and western blotting.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 For SNARE immunoprecipitations, affinity-purified Vam3 antibodies were covalently coupled to Protein A agarose beads using dimethyl pimelimidate (DMP; Pierce) as described (Harlow and Lane, 1999). Logarithmic phase cultures were harvested and spheroplasted. Briefly, 20 OD600·mL of cells were sedimented then resuspended in 2 mL 0.1 M Tris·Cl pH 9.4, 10 mM DTT for 10 min at room temperature. Cells were sedimented and resuspended in 4 mL spheroplasting buffer (yeast nitrogen base, 2% w/v glucose, 0.05% w/v casamino acids, 1M sorbitol, 50 mM Na·HEPES pH 7.4), then incubated with lyticase (re-purified Zymolyase 20T; Sekigaku USA, Jersey City, New Jersey, USA) at 30°C for 30 min. Spheroplasts were sedimented once in spheroplasting buffer and resuspended in 2 mL ice-cold lysis buffer (20 mM Na·HEPES pH 7.4, 100 mM NaCl, 20% w/v glycerol, 2 mM EDTA, 1 µg/mL aprotinin, 1 µg/mL leupeptin, 1 µg/mL pepstatin, 0.1 mM Pefabloc-SC, 1 mM PMSF, and a protease inhibitor cocktail (Roche, Indianapolis, Indiana, USA)), and lysed by ~30 strokes with an ice-cold dounce homogenizer. Cell lysates were supplemented with 1% (v/v) Anapoe X-100 (Anatrace, Moumee, Ohio, USA) and nutated at 4°C for 15 min. Insoluble debris was removed by centrifugation at 20,000 × g for 15 min at 4°C. Clarified lysate was mixed with anti-Vam3-protein A beads and nutated for 30 min at 4°C. Beads were recovered by low-speed centrifugation and rinsed four times in lysis buffer containing 0.5% (v/v) Anapoe X-100. Bound proteins were eluted by boiling in SDS-PAGE sample buffer (Laemmli, 1970). Unbound proteins remaining in the cell lysates were precipitated by addition of 1/10 vol. 0.15% deoxycholate and 1/10 vol of 100% TCA. The precipitates rinsed twice in acetone and resuspended in sample buffer (40 µL per OD600 × mL equivalent). Samples were separated by SDS-PAGE, electroblotted to nitrocellulose, probed with primary antibodies as indicated in the figures and secondary antibodies as recommended by the manufacturer (LiCor), and analyzed on a LiCor Odyssey imaging system. For Vps33-GFP, anti-GFP immunoprecipitations were conducted as described in Collins et al. (2005), with slight modifications, using vacuoles purified from the strain BJ2168‐Vps33‐GFP (MATα leu2‐3, 112 trp1‐∆101 ura3‐52 prb1‐1122 pep4‐three pcr1‐407 VPS33‐GFP (TRP1). Extracts were clarified at 20,000 × g for 20 min at 4°C. Extracts were incubated for 3 hr with affinity resins and eluted by boiling in SDS sample buffer. The fusion capacity of the vacuole preparations used for the immunoprecipitations was verified in parallel cell-free fusion reactions containing both BJ2168‐Vps33‐GFP reporter and DKY6281 acceptor vacuoles.
 
-## In vitro fusion assays
+### In vitro fusion assays
 
 Vacuole fusion assays were performed as described previously (Schwartz and Merz, 2009). Dose-activity curves were fitted with the Hill single-site model with adjustable slope, using the nonlinear least-squares method (GraphPad Prism). Dose-inhibition curves for Sec17 were fit with the same model but with the slopes locked to unity, after determining that an adjustable slope parameter did not improve the fits. RPLs were formed by dialysis from β-octylglucoside proteolipid mixed micelles as in Zick et al. (2015), in the configurations shown in Figure 4—figure supplement 1, and purified by equilibrium floatation. A defined lipid composition similar to that of the yeast vacuole was employed (vacuolar membrane lipids, (VML; Zick et al., 2014). The protein:lipid ratios were 1:1000 for Qa, Qb, and R SNAREs, and 1:2000 for Ypt7. The RPL fusion assays were set up as described (Zick et al., 2015) but that bovine serum albumin was omitted from all RPL reactions except those shown in Figure 10C,D. 100% fusion was defined as complete association of the FRET probes encapsulated within the two vesicle populations, as determined in control reactions. 0% fusion was defined by control reactions with no added Qc-SNARE. Reaction kinetics were fitted with a second-order association model by the nonlinear least squares method using GraphPad Prism.

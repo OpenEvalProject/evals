@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/022fs9h90 Department of Medicine, University of Fribourg Fribourg Switzerland
-2. https://ror.org/059gcgy73 Department of Neurobiology, School of Basic Medical Sciences, Nanjing Medical University Nanjing China
-3. https://ror.org/000e0be47 Department of Material Science and Engineering, Northwestern University Chicago United States
-4. https://ror.org/000e0be47 Querrey Simpson Institute for Bioelectronics, Northwestern University Evanston United States
+1. Department of Medicine, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))
+2. Department of Neurobiology, School of Basic Medical Sciences, Nanjing Medical University Nanjing China ([ROR:059gcgy73](https://ror.org/059gcgy73))
+3. Department of Material Science and Engineering, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+4. Querrey Simpson Institute for Bioelectronics, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
 
 † Corresponding author
 
@@ -37,31 +37,75 @@ In this study, we focus on the LGN as a potential target of optogenetic restorat
 
 ## Results
 
-## Anatomical and functional validation of viral transfection
+### Anatomical and functional validation of viral transfection
 
 We performed immunohistochemistry for CaMKIIα and show robust staining of cell bodies in all LGN layers (see Figure 1A for an example animal and Figure 1—figure supplement 1 for additional animals), which indicates that this promotor could be a useful target for optogenetic activation of tree shrew LGN neurons. We complemented this with parvalbumin (PV) immunohistochemistry, which is useful for delineating LGN laminar structure (Figure 1A, center panel). We observed that PV expression varied somewhat across LGN layers, with particularly strong expression in layer 4 and weaker expression in layers 3 and 6. These observations are consistent with previous reports in the tree shrew documenting paler parvalbumin staining in layers 3 and 6 (Diamond et al., 1993; Usrey et al., 1992), and support the notion that laminar LGN structure is more readily discernible using PV rather than CamKIIα immunohistochemistry. We injected adeno-associated (AAV2) virus that contained a construct for the light-sensitive ion channel ChR2 and the enhanced red fluorescent protein mCherry under the control of the CamKIIα promotor into the tree shrew LGN of animals used for behavioral or electrophysiological studies. We found robust expression of CamKIIα-ChR2 within LGN layers in the vicinity of the injection site including on cell bodies, for example, targeting inner LGN layers 1, 2, and 3 for a medial LGN injection (Figure 1B, see Figure 1—figure supplement 2 for additional animals). We also observed clear labeling of thalamocortical axons in layers 2/3 and 4 of V1 (see Figure 1C for an example animal and Figure 1—figure supplement 3 for additional animals). In fact, both V1 cortical recipient layers contain axons expressing CamKIIα-ChR2, which highlights that neurons in both LGN layer groups 3/6 as well as 1/2/4/5 robustly express the light-sensitive ion channel as these project respectively to V1 layers 3 and 4 (Van Hooser et al., 2013). Note that in macaques, CamKIIα is expressed mostly in interlaminar LGN layers, which are composed of konio-type relay neurons (Benson et al., 1991; Klein et al., 2016), such that the CamKIIα-positive population activates a more restricted group of thalamocortical projections in macaques compared to tree shrews.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig1-v2.jpg)
+
+**Figure 1.:** (A) Confocal images of tree shrew LGN immunostained for both CaMKIIα (left) and parvalbumin (center), with the merge shown at right. Dashed lines indicate laminar boundaries. Note that CaMKIIα is found throughout LGN laminae as well as in the interlaminar zones. AP coordinates are from the interaural line. (B) Epifluorescent image immunostained for parvalbumin, green, revealing LGN layers, and showing viral expression (mCherry, red) in LGN layers 1–3. (C) Axonal projection patterns in V1 from viral transfected cells in the LGN. Note prominent projections to both granular and superficial layers.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Epifluorescent images showing immunostaining for CaMKIIα (A) and parvalbumin (B) in the LGN, right hemisphere. (C, D) Same as (A, B) but for a different animal and from the left hemisphere. Dashed lines indicate laminar boundaries. AP coordinates are from the interaural line.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (Top left) Epifluorescent image taken from behavioral animal 1809 at AP 3.5 (interaural) showing viral expression and probe track in the ventral aspect of the LGN. (Top right) Zoom of the image at left showing transfected cell bodies. (Bottom left) Same as top left but at AP 3.63 in a different animal, with viral expression restricted to the ventral lateral aspects of the LGN. (Bottom right). Zoom of the image at left. Dashed lines indicate laminar boundaries.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A, B) Epifluorescent images of primary visual cortex taken from two different animals receiving viral injections in dorsal lateral geniculate nucleus (dLGN). Note strong labeling in layer 4 in both animals, with particularly strong labeling also of layers 2/3 in (A). (C) Top and bottom show zoomed images of panels (A) and (B), respectively.
+
 For functional validation, we performed terminal experiments under isoflurane anesthesia using optrodes that allowed simultaneous recording of neural activity and activation of ChR2 using an optic fiber within the LGN. Results for an example recording site are shown in Figure 2A, illustrating entrainment of LGN spiking activity to light transients at several frequencies of stimulation. Frequency analysis of the evoked spike trains reveals clear peaks at the stimulation frequency, as well as harmonics. Note that at the 80 Hz stimulation frequency, the neural response adapts rapidly, and the neuron tends to respond only to the onset of stimulation; a finding that is expected due to ChR2 channel dynamics, but indeed also resembles the activation profile to high-frequency visual flicker (Veit et al., 2011). The LGN can be activated in tonic or burst mode, which favors either stimulus fidelity or detectability respectively (Adams et al., 2002). Action potentials in both cases, however, convey stimulus-specific information to the cortex (Ortuño et al., 2014; Reinagel et al., 1999). We therefore examined to what degree the optogenetic activation triggered bursts in our recordings. We recorded from 120 single units in the LGN and defined a burst as two or more action potentials with inter-spike intervals of <4 ms, and preceded by at least 50 ms without spiking activity. For the example neuron (Figure 2A), bursts were rarely triggered and burst percentage of total spikes amounted to 0.7 ± 0.3%, with other recorded neurons also in this range (n = 7, range: 0.03–3.0%). Optogenetic LGN activation thus elicited mostly tonic spikes, consistent with reports of a moderate propensity for bursting in tree shrew LGN (Wei et al., 2011). In order to assess to what degree LGN neurons were phase-locked to the optogenetic stimulation, we calculated phase-locking vector strength (see ‘Materials and methods’). We found 12 LGN neurons in two animals that were significantly phase-locked (Rayleigh test p<0.05) at least at one of the flicker frequencies and across this population the magnitude of phase locking did not differ significantly over the four frequencies tested (Figure 2B). Tree shrew LGN layers are specialized for ON- and OFF-type visual inputs (see Figure 2—figure supplement 1; Conway and Schiller, 1983), responding to onset of bright and dark targets with respect to background illumination, respectively. Local recordings of LGN neural activity at the site of light stimulation can thus be used to functionally identify the stimulated layer, as illustrated for 1 Hz and 5 Hz full-field bright visual stimulation (Figure 2C). Together, these results suggest robust expression of ChR2 in thalamocortical relay cells across tree shrew LGN layers under the CamKIIα promotor.
 
-## Detection of a phosphene-like visual stimulus
+![Figure 2.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig2-v2.jpg)
+
+**Figure 2.:** (A) Raster plots (top) show 20 trials of responses of a single LGN neuron in animal #111 to different frequencies of 473 nm blue laser activation. Each vertical bar represents a single spike. Peri stimulus time histograms (PSTHs) (5 ms bin size) and Fast Fourier Transforms (FFTs) of the same spike trains are shown at center and bottom, respectively. For this, cell phase locking disappeared at the highest frequency, 80 Hz. (B) Top shows a histogram of the number of significantly phase-locked neurons, as determined by vector strength, at the four flicker frequencies for two animals (#111 blue, #1903 orange). Bottom is the mean vector strength for the phase-locked neurons at the four flicker frequencies; error bars represent SEM. (C) Raster plots (left and center) and PSTHs (right) reveal both ON- and OFF-type visual responses at sites nearby to laser stimulation for both 1 Hz top and 5 Hz bottom, stimulation frequencies. Bars at the top of each plot indicate the contrast condition, with gray being the background illumination.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Epifluorescent image of the tree shrew LGN immunostained for parvalbumin (green) to reveal layers. There are four layers corresponding to the contralateral eye, 2, 3, 4, and 5, and two layers corresponding to the ipsilateral eye, 1 and 5. Layers 1–3 have ON center-type receptive fields, whereas layers 4 and 5 have OFF center receptive fields with antagonistic surrounds. Layer 3 contains cells with both ON- and OFF center receptive fields, and layer 6 contains cells with an ON/OFF center and an OFF surround. Dashed white lines delineate laminar borders.
+
+### Detection of a phosphene-like visual stimulus
 
 To examine whether animals could detect LGN optogenetic activation, we first trained them on a visual detection task, where they had to enter a nose poke on a transparent horizontal platform at the center of a 70-cm-diameter opaque sphere and respond to the onset of a visual stimulus by withdrawing from the nose poke (see ‘Materials and methods,’ Figure 3A). Animals were thus in a defined position before and during visual target presentation, allowing us to assess their visual capacities in different parts of the visual field without the requirement of head fixation. We used a 2° visual stimulus composed of a cloud of moving white dots to facilitate the subsequent transition to the optogenetic stimulation detection task. Although artificial visual percepts can take on a variety of forms, they correspond better to moving clouds of dots rather than oriented bars or grating stimuli (Fernández et al., 2021). Behavioral data for an example tree shrew is shown in Figure 3B for a daily session consisting of 200 trials. It is evident that the animals’ response times are narrowly distributed and largely follow the target onset time marked by the thick oblique line with a median response time of 290 ms and an overall correct performance of 76%. Our task did not contain any signal absent trials to avoid compromising animals’ motivation for task performance, but we nevertheless used signal detection theory to estimate sensitivity and bias (see ‘Materials and methods’). Briefly, trials where animals responded within 500 ms of target onset were designated as ‘hits,’ whereas responses made during an identical time window where no targets occurred were assigned as ‘false alarms,’ with corresponding ‘miss’ and ‘correct rejection’ assignments.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig3-v2.jpg)
+
+**Figure 3.:** (A) Illustration of the experimental setup. Animals were trained to poke their nose into a response port at the center of a sphere and remain there until the appearance of a 2⁰ patch of moving white dots appeared in the field of view. (B) Plotted is the behavior of an animal, #959, that has acquired the task when phosphene stimuli were presented at the center of the field of view. Target onset is indicated by the thick, oblique black line. The light green trapezoid depicts the area during which responses were considered hits, and the orange trapezoid depicts the area of false alarms. H, hit; FA, false alarm; CR, correct rejection; M, miss; Ab, abort. (C) False alarm vs. hit rates are plotted over training days for the same animal as in (B). Note that as learning progresses the hit rate increases as the false alarm rate declines. (D) At top, d' values over training days are plotted for all animals, showing increased sensitivity over training days. Different colors denote different animals, and the color scheme is maintained throughout subsequent figures to facilitate comparison of individual animal performance on different tasks. (Bottom) Bias values for the same animals over training days. Note that bias values below zero indicate more false alarms and those above zero indicate more misses. (E) False alarm vs. hit rates are plotted for all animals for phosphene like moving dot visual stimuli presented at different positions relative to the center of the field of view, indicated by grayscale fill. (F) d’ values as a function of stimulus position for the four animals tested. (G) Bias values for the four animals at the different stimulus locations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Histogram of response latencies for each animal over the course of 7 d of training on the visual detection task. Graphs are stacked for easier visualization, black: day 1; red: day 7. (B) Mean response latencies over training days revealing different trends across animals, e.g., tree shrew 959 showing trend toward reduced latency with training, whereas tree shrew 1111 shows an increase. (C) d’ values shown for reference (same as Figure 3D) documenting successful task acquisition.
+
 The example dataset in Figure 3B yields a d' sensitivity value of 2.6. The hit rate, false alarm rate, and d' values during the learning phase for this animal are shown in Figure 3C, illustrating increasing hit rates as well as decreasing false alarm rates during the 7-day learning period. Group data for the six tree shrews participating in this experiment is shown in Figure 3D, illustrating that all animals showed improved d' sensitivity over the course of learning, reaching d' values between 1 and 2.5 at the end of training. The d' sensitivity over the last four training days was significantly different from zero in all animals (t-test, p<0.01), confirming that all animals had acquired the visual detection task. Details of individual performance and reaction time as a function of training day can be found in Figure 3—figure supplement 1. The bias for these same behavioral sessions reveals considerable individual variation as well as a trend for reduced bias with training. Positive and negative bias values signal preponderance of ‘miss’ and ‘false alarm’ type errors, respectively. Interestingly, animals with similar and high d' values of around 2.0, that is, tree shrews 959 and 1409, exhibited opposite bias values, suggesting individual differences in strategy and decision threshold.
 
-## The effect of eccentricity on visual stimulus detection
+### The effect of eccentricity on visual stimulus detection
 
 Once animals had acquired the detection task when visual targets were presented at visual field center, we proceeded to study how detection performance generalized to target presentations at other visual field locations in a subset of animals. As tree shrews have a wide visual field, we investigated eccentricities of up to 150° in four tree shrews, studying a single eccentricity in a single behavioral session. All animals readily generalized detection performance up to 120° (Figure 3E and F), with performance declining at 150°, the highest eccentricity tested, in all except one animal (959), which detected these peripheral moving dot stimuli without apparent problems. Note that slight differences in head position, estimated at ± 15°, cannot be ruled out in the nose poke task, so eccentricity values are not exact as they would be with head fixation. Eccentricity effects were studied in only a single session per eccentricity value; however, all tree shrews generalized significantly from the center position to eccentric stimulus presentation (t-tests comparing d' at four studied eccentricities against zero, p<0.01). Bias tended to increase with eccentricity (Figure 3G) as animals increasingly missed targets. Taken together, behavioral data on the visual detection task indicates that tree shrews can acquire this task and generalize across the visual field in a freely moving unrestrained behavioral setting, achieving d' values of up to 2.5 within a week of training.
 
-## Detecting optogenetic activation of CaMKIIα neurons in the LGN
+### Detecting optogenetic activation of CaMKIIα neurons in the LGN
 
 We next moved on to study if tree shrews pretrained on visual detection of a moving dot visual stimulus could also detect optogenetic activation in the LGN in the context of the same nose poke task. We initially performed some preliminary tests for detection of optogenetic activation using several frequencies (4, 10, 20, and 50 Hz) and amplitudes (3, 6.5 and 10 mW) in five tree shrews. We used a single combination of frequency and amplitude in each session, presented in randomized order using a wireless, subdermal radiofrequency-powered stimulation probe (Shin et al., 2017). An example of behavioral performance for a tree shrew implanted in the LGN (animal 1111) during a single session is shown in Figure 4A, corresponding to a behavioral performance of 63% correct trials with a median response time of 260 ms and a somewhat broader distribution compared to the visual detection task. Using the same procedure as above, we used signal detection theory to compute sensitivity (d') and bias for the optogenetic stimulation trials. Results for three tree shrews with AAV2 injections and LED implanted in the LGN (tree shrew 959, 1111, and 1409) and two tree shrews injected and implanted in control areas outside of the LGN (globus pallidus and zona incerta brain areas for tree shrews 2009, 6244) are shown in Figure 4B and C for sensitivity and bias. We note that LGN-implanted animals achieved d' sensitivity values around ≥1.0, whereas d' did not surpass 0.5 in control animals implanted outside the LGN (see Figure 4—figure supplement 1 for a comparison of maximum d’ values in visual and optogenetic detection tasks). This suggests that tree shrews can readily detect optogenetic activation of the visual thalamocortical pathway. Generally, higher amplitudes of stimulation tended to be detected most readily, as would be expected. In terms of light stimulation frequency, two animals (1111, 1409) appeared to respond best to 10 Hz stimulation while for one animal (959) the preferred frequency was 50 Hz. While it is possible that these results might be related to individual animal strategy toward interpreting the optogenetic stimulation, as has been reported also for humans in work using electrical stimulation (Erickson-Davis and Korzybska, 2021), they may well result from slight differences in spatial placement of the optic fiber relative to the transfected LGN neurons that can lead to hyperstimulation and reduced responsiveness (Kittelmann et al., 2013). Importantly, tree shrews showed evidence for rapid generalization from the visual to the optogenetic stimulation. This is demonstrated in Figure 4—figure supplement 2A, where the d' values are shown for sessions with different amplitude and frequency combinations in serial order of occurrence; the same order was used in each animal. Figure 4—figure supplement 2B shows the performance during the first day of optogenetic LGN activation (10 Hz frequency at 10 mW) for the three tree shrews, illustrating best generalization from the visual detection task (tree shrew 1111) already early during the session, as well as a trend for within-session behavioral improvement particularly in the other two tree shrews (animals 959 and 1409). To examine variability and reproducibility of optogenetic stimulus detection across sessions in individual tree shrews, we performed multiple sessions in each of the three animals using the preferred stimulation frequency for each animal at 10 mW amplitude, as well as an additional animal (1806) for which we used 10 Hz stimulation. The results, shown in Figure 5, highlight that tree shrews reliably detected optogenetic stimulation as evidenced by significant d' values (two-way ANOVA main effect, p<0.01). A significant effect of bias between animals is apparent (one-way ANOVA, p<0.05), suggestive of differences in strategy during the optogenetic detection task, with tree shrew 1409 showing significantly negative bias. These findings document the reproducibility of tree shrew behavioral detection of optogenetic LGN activation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig4-v2.jpg)
+
+**Figure 4.:** (A) As Figure 2B, but for an animal, #1111, detecting blue LED activation of CaMKIIα neurons in the LGN. Note that while the animal can clearly perform the task, detection performance is more variable than for the visual stimulus. (B) d' values at the three LED intensities used are plotted for each animal at four stimulation frequencies (4, 10, 20, and 40 Hz). Ctrl indicates control animals. (C) Same as (B) but for bias scores.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Shown are the maximum d’ values achieved by animals in the visual detection task vs. the optogenetic detection task. Maximum values consider all frequencies and amplitudes used in the optogenetic detection task.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Behavioral performance on the optogenetic lateral geniculate nucleus (LGN) detection experiment using multiple frequencies and amplitudes, with results shown in serial order as the daily experiments were conducted in each animal. (B) Performance assessment during the first optogenetic LGN detection experiment (frequency 10 Hz at 10 mW) for each animal. The raw proportion of correct and rewarded trials smoothed by 10 trial convolution is shown including aborted trials. The results reveal that animals 1111 and 1409 tended to readily generalize from previous visual to optogenetic detection, whereas animal 959 showed some evidence of within-session improvement in performance.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/90431/elife-90431-fig5-v2.jpg)
 
 **Figure 5.:** (A) Hit vs. false alarm rates for multiple sessions. (B) Mean d' calculated from (A) for each animal; error bars reflect SEM and * indicates p<0.05. (C) Same as (B) but for bias scores; note that animal 1409 showed significant bias for false alarms.
 
-## Electrophysiological correlates of LGN CaMKIIα ChR2 activation
+### Electrophysiological correlates of LGN CaMKIIα ChR2 activation
 
 We proceeded to study neural circuit activity in the visual pathway triggered by LGN CaMKIIα-ChR2 activation, simultaneously targeting both the LGN at a location of the transfected neurons as well as the primary visual cortex (V1) while aiming for maximum spatial overlap in LGN and V1 receptive fields. To achieve this, we first determined the receptive field location of the LGN at the site of virus injection, and then performed a V1 electrode penetration at a position that corresponded to the retinotopic position of LGN activation. We then analyzed neural spiking in terms of multi-unit activity (MUA) in LGN and V1, focusing on the sustained response during the 40 Hz 50% duty cycle optogenetic activation period. We observed significant activation in 22 out of 111 LGN MUA sites, but only in 5 of 111 V1 MUA sites (paired t-tests: p<0.05, Figure 6A). Many of the activated LGN sites showed a robust, short latency response motif to stimulation (see example unit in Figure 6A), while our recordings contained only relatively weakly modulated V1 MUA sites at short latency. We observed that the MUA at some LGN and V1 sites exhibited offset responses following the termination of the light stimulation (LGN: n = 16, V1: n = 8, paired t-tests: p<0.05, Figure 6B). Robust offset responses were evident in both LGN and V1 (see Figure 6B) and had response latencies of around 50 ms following the cessation of stimulation in both areas, consistent with a neural circuit origin of these effects involving recurrent processing and inhibitory modulations. The unit data highlights that LGN optogenetic stimulation robustly drives local units, and while it was more difficult to isolate V1 units directly modulated by optogenetic stimulation, possibly due to incomplete overlap of the stimulated thalamocortical recipient zone with the receptive field of the V1 MUA activity.
 
@@ -101,11 +145,11 @@ In summary, our findings reinforce the idea that the LGN might be a particularly
 
 The local ethical committee on animal experimentation (canton of Fribourg) approved all experimental procedures (license number: 33056).
 
-## Subjects
+### Subjects
 
 Ten male and female tree shrews (Tupaia belangeri) weighing 235 ± 10 g (0.6–2 years old) participated in the experiments, six in the behavioral studies and four in the neurophysiological studies. They were given ad libitum access to food and water and housed in temperature-controlled rooms (ambient temperature: 26 ± 1°C, air humidity: 60 ± 5%) under a 13/11 light/dark cycle with gradual illumination transitions at the beginning and end of the light period.
 
-## Behavioral training
+### Behavioral training
 
 Tree shrews were first shaped to enter a nose poke mounted on a transparent horizontal platform at the center of a 70-cm-diameter opaque sphere for mango juice reward using continuous reinforcement in daily sessions lasting 30 min in the absence of food or water restriction. The mango juice was delivered at a fluid port located on the edge of the platform behind the nose poke and adjacent to the sphere wall.
 
@@ -113,34 +157,217 @@ Visual stimuli were projected onto the sphere using an Optoma GT-1080 E projecto
 
 For the optogenetic detection task, parameters were identical to the visual detection task above, except that the visual stimulation was replaced by laser activation at 50% duty cycle with frequencies of 4, 10, 20, and 50 Hz with a stimulation period of 500 ms at amplitudes of 3, 6.5, or 10 mW. In Table 1, we summarize which tree shrew participated in which task, with serial order from left to right corresponding to the sequence of task participation.
 
+**Table 1.**
+ Summary of participation of tree shrews in behavioral tasks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tree shrew</th>
+      <th>Visual detection</th>
+      <th>Spatial generalization</th>
+      <th>Optogenetic detection multiple parameters</th>
+      <th>Optogenetic detection multiple parameters control animals</th>
+      <th>Optogenetic detection fixed parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure panels</td>
+      <td>Figure 3C and D</td>
+      <td>Figure 3E–G</td>
+      <td>Figure 4B</td>
+      <td>Figure 4B</td>
+      <td>Figure 5A–C</td>
+    </tr>
+    <tr>
+      <td>959</td>
+      <td>x</td>
+      <td>x</td>
+      <td>X</td>
+      <td></td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>1111</td>
+      <td>x</td>
+      <td>x</td>
+      <td>X</td>
+      <td></td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>1409</td>
+      <td>x</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>1806</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6244</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 For the optogenetic stimulation with multiple frequencies and amplitudes, we used the same serial order of conditions in all participant animals (Table 2), and starting with a block of 10 W stimulation to facilitate similar transition from the visual to the optogenetic task in all animals. Thus, the differences in behavioral performance we observed are not attributable to the sequence of amplitude/frequency conditions. For the optogenetic detection experiment with fixed parameters, we used 10 Hz stimulation in animals 1111, 1409, and 1806 and 50 Hz stimulation frequency for animal 959; always at amplitude of 10 mW, 50% duty cycle, and 500 ms duration.
 
-## Behavioral data analysis
+**Table 2.**
+ Serial order of frequency and amplitude values for experiment with multiple parameters.
 
-The use of signal detection theory (Green and Swets, 1966) for our detection task data requires estimation of hits, false alarms, misses, and correct rejections (see Figure 3A). We thus partitioned the trials into two halves depending on target onset time, each of 750 ms duration. For onset times from 250 to 1000 ms, responses that occurred after target onset and before the 500 ms response window were assigned as ‘hits,’ and responses occurring after the response window were assigned as ‘misses.’ We then constructed a time window identical to the ‘hit’ window for the second half of the trials with onset times 1000–1750 ms and used this to estimate ‘false alarms.’ In terms of timing, ‘hit’ and ‘false alarm’ windows are indistinguishable to the animal as these windows cover identical time periods, the only difference being that no target occurs in the ‘false alarm’ window. If animals do not respond during the ‘false alarm’ window, the trial is assigned as ‘correct rejection.’ This procedure permits the computation of sensitivity (d') and bias (b) parameters according to signal detection theory for response times generated in a simple detection task. Note that this procedure was used for analysis only, and animals were always rewarded only for nose poke withdrawal upon stimulus presentation. Responses occurring prior to the ‘hit’ and by extension ‘false alarm’ windows were considered as aborted trials. Rates were computed as follows: Hr=H/H+M+Abort250ms1000ms , FAr=FA/FA+C+Abort1000ms1750ms . Sensitivity: d`=zHr-zFAr , Bias: b=-12zHr+zFAr . Excellent behavioral performance on decision tasks is associated with high sensitivity and low bias.
 
-## Surgical procedures
+<table>
+  <tbody>
+    <tr>
+      <td>Amplitude (mW)</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6.5</td>
+      <td>6.5</td>
+      <td>6.5</td>
+      <td>6.5</td>
+    </tr>
+    <tr>
+      <td>Frequency (Hz)</td>
+      <td>10</td>
+      <td>20</td>
+      <td>4</td>
+      <td>50</td>
+      <td>10</td>
+      <td>20</td>
+      <td>4</td>
+      <td>50</td>
+      <td>10</td>
+      <td>20</td>
+      <td>4</td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table>
+
+### Behavioral data analysis
+
+The use of signal detection theory (Green and Swets, 1966) for our detection task data requires estimation of hits, false alarms, misses, and correct rejections (see Figure 3A). We thus partitioned the trials into two halves depending on target onset time, each of 750 ms duration. For onset times from 250 to 1000 ms, responses that occurred after target onset and before the 500 ms response window were assigned as ‘hits,’ and responses occurring after the response window were assigned as ‘misses.’ We then constructed a time window identical to the ‘hit’ window for the second half of the trials with onset times 1000–1750 ms and used this to estimate ‘false alarms.’ In terms of timing, ‘hit’ and ‘false alarm’ windows are indistinguishable to the animal as these windows cover identical time periods, the only difference being that no target occurs in the ‘false alarm’ window. If animals do not respond during the ‘false alarm’ window, the trial is assigned as ‘correct rejection.’ This procedure permits the computation of sensitivity (d') and bias (b) parameters according to signal detection theory for response times generated in a simple detection task. Note that this procedure was used for analysis only, and animals were always rewarded only for nose poke withdrawal upon stimulus presentation. Responses occurring prior to the ‘hit’ and by extension ‘false alarm’ windows were considered as aborted trials. Rates were computed as follows: $Hr=H/H+M+Abort_{250ms}^{1000ms}$ , $FAr=FA/FA+C+Abort_{1000ms}^{1750ms}$ . Sensitivity: $d^{`}=zHr-zFAr$ , Bias: $b=\frac{-1}{2}zHr+zFAr$ . Excellent behavioral performance on decision tasks is associated with high sensitivity and low bias.
+
+### Surgical procedures
 
 For both viral injections/LED stimulator implantation and neural recordings, general anesthesia was induced by alfaxalone (40 mg/kg, half dose in each leg, intramuscular) (Gehrig and Moens, 2014), and we administered atropine (0.08 mg/kg, intramuscular) to reduce secretions and Baytril (2.5%, 0.3 ml/kg, subcutaneously) to prevent infection. Anesthesia was maintained by isoflurane (0.5–3.5%) in 100% O2 administered using a nose cone for viral injections or an endotracheal intubation for neural recordings. Here, after identifying the vocal cords, a PE50 polyethylene tubing extending 1 cm from an endotracheal tube (Original Perfusor type: IV-standard-PVC, 6 cm, 1.5 × 2.7 mm) was inserted into the trachea under visual inspection using video laryngoscopy (Balzer et al., 2020). We monitored exhaled CO2 (Physiosuite, Kent Scientific) and ventilated animals at 100 bpm (small animal ventilator 683, Harvard Apparatus). Animals were placed in a stereotactic apparatus, skin was shaved, periosteum retracted, cranial bone cleaned (3% H2O2), and craniotomies were drilled to allow access for viral injections or neural recording. Postoperative analgesia was administered before the end of surgical intervention (buprenorphine, 0.05 mg/kg, subcutaneously). We injected the construct AAV2-CamKIIa-hChR2(H134R)-mCherry (1 µl, UNC Vector Core) unilaterally using a microsyringe (34 GA. beveled Needle, 10 μ l NANOFIL syringe, WPI) into the left LGN (AP 3.1, ML 4.8, DV from 5 to 7 dependent on the neural response for 5 Hz full-field flickering stimulus to ensure accurate placement). Following viral injection, in five of the animals a wirelessly powered device containing the μ-LED at the tip end of a freely adjustable needle (NeuroLux, Chicago, IL) was lowered into the LGN, again under stereotactic guidance, and cemented in place with dental acrylic (Paladur). In an additional animal, 1806, a similar but novel device with a longer shank was inserted. This wireless device was fabricated following standard flexible electronics manufacturing. Each device contains an 11-mm-long, 0.4-mm-wide, and 0.1-mm-thick probe, which is reinforced with 50-µm thin tungsten needle to prevent mechanical buckling during implantation. The probes are equipped with blue µ-LEDs (470 nm, 220 µm [w] × 270 µm [l] × 200 µm [th]), each emitting 21 mW/mm2. The devices were encapsulated with a bilayer of parylene-C (14 µm) and polymethyl siloxane (PDMS, ~50 µm at the probe) to create a robust biological fluid barrier (Parylene-C) and increase the mechanical compliance (PDMS).
 
 After viral injections/LED stimulator implantation, the skin was sutured and animals were allowed to recover for 14 d before participating in further behavioral training. We allowed 4–6 wk for viral expression before commencing optogenetic experiments.
 
-## Neural recordings
+### Neural recordings
 
 Neural recordings were performed using resin-coated tungsten electrodes (impedance ~ 300 kΩ, FHC, Bowdoin, ME). Electrodes were attached to a head stage (Cereplex, Blackrock Microsystems, Salt Lake City, UT), then digitized using a Cerebus (Blackrock Microsystems) and stored on a PC for offline analysis. For single and multiunit analysis, the neural signals were band-pass filtered between 300 and 8000 Hz, and the LFP data was low-passed at 300 Hz, spikes were detected using Offline Sorter (Plexon, Dallas, TX), and all data were analyzed using custom routines in MATLAB (MathWorks, Natick, MA). For optogenetic activation of the LGN, we employed an optrode, that is, a 100-μm-diameter optic fiber coupled to the same tungsten electrodes described above for simultaneous monitoring of neural activity close to light stimulation site. The optic fiber was connected to a 473 nm blue laser (Changchun New Industries Optoelectronics, China). Laser intensity was set to 3.5 mW using an optical power meter (PM 100D, Thorlabs Newton, NJ). Stimulation was delivered using a duty cycle of 50% controlled by a pulse generator (Rigol, Beaverton, OR). Visual stimulation was delivered on a video monitor (VPixx, Canada), placed 28.5 cm from the animal and covering the visual field location corresponding to the receptive field of the neurons being recorded, as described previously (Veit et al., 2014). For the functional validation experiments (Figure 2), we analyzed activity of 120 single neurons in the LGN obtained in n = 4 tree shrews. For the functional coupling and decoding analyses in LGN and V1 (6—8), we analyzed simultaneous LFP and MUA recordings obtained at 111 sites in LGN and V1 in n = 4 tree shrews. In both cases, CamKIIα-ChR2 injections were made in the LGN 4–6 wk prior to the experiment. We generally employed 40 Hz light stimulation frequency, and a subset of recordings were made using a range of frequencies (30, 40, 60, and 80 Hz). Details regarding the number of recordings obtained in each animal are provided in Table 3. For V1 LFP spectral signal detection analysis, we extract for each single trial the Fourier spectral amplitude (SA) at the stimulation frequency (fstim Hz) and control values at fstim-3 Hz during baseline and opto-stimulation conditions. We then computed hit rate as the fraction of trials for which SAopto(fstim) > SAopto(fstim-3), that is, hits/(hits +misses) during opto-stimulation, and the false alarm rate as the fraction of trials for the spectral peak at stimulation frequency during baseline exceeded the corresponding value during optical stimulation, that is, SAbaseline(fstim) > SAopto(fstim).
 
-## Spike-triggered average and spike field coherence
+**Table 3.**
+ Summary of electrophysiological recordings.
 
-In order to calculate the STA, we averaged 200 ms epochs of V1 LFPs centered on the LGN spikes. For the SFC, we took the FFT of the STA, and then divided it by the average spectral power calculated from the FFTs of all the epochs used in calculated the STA, P¯ . In this way, the SFC is normalized to the existing power in the cortical LFP. SFCf=STAfftfP¯f , where f is an individual frequency band.
 
-## Vector strength
+<table>
+  <thead>
+    <tr>
+      <th>Tree shrew</th>
+      <th>Total MUA and LFP recordings LGN 40 Hz</th>
+      <th>Significant MUA entrainment at 30/40/60/80 Hz LGN</th>
+      <th>Significant 40 Hz ‘ON’ and ‘OFF’ responses in LGN</th>
+      <th>Significant 40 Hz LFP entrainment in V1</th>
+      <th>Significant LFP entrainment at 30/40/60/80 Hz in V1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure panel</td>
+      <td></td>
+      <td>Figure 2</td>
+      <td>Figure 6A/B</td>
+      <td>Figure 7A</td>
+      <td>Figure 8B</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>17</td>
+      <td>Not studied</td>
+      <td>8/5</td>
+      <td>1</td>
+      <td>Not studied</td>
+    </tr>
+    <tr>
+      <td>1503</td>
+      <td>47</td>
+      <td>Not studied</td>
+      <td>4/2</td>
+      <td>3</td>
+      <td>Not studied</td>
+    </tr>
+    <tr>
+      <td>1903</td>
+      <td>30</td>
+      <td>2/1 / 1/0</td>
+      <td>1/2</td>
+      <td>12</td>
+      <td>1/0/2/3</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>17</td>
+      <td>7/9 / 9/10</td>
+      <td>9/7</td>
+      <td>13</td>
+      <td>2/9/9/10</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>111</td>
+      <td>9/10 / 10/10</td>
+      <td>22/16</td>
+      <td>29</td>
+      <td>3/9/11/13</td>
+    </tr>
+  </tbody>
+</table>
 
-Vector strength was calculated as R=1N∑j=1N1eiθj , where R is the vector strength, N is the number of trials, and θj is the phase angle of the spike in relation to the flicker stimulus being delivered, 30, 40, 60, or 80 Hz (Goldberg and Brown, 1969). Significance was then calculated using the Rayleigh test statistic.
+_LFP, local field potential; LGN, lateral geniculate nucleus; MUA, multi-unit activity._
 
-## Histology
+### Spike-triggered average and spike field coherence
+
+In order to calculate the STA, we averaged 200 ms epochs of V1 LFPs centered on the LGN spikes. For the SFC, we took the FFT of the STA, and then divided it by the average spectral power calculated from the FFTs of all the epochs used in calculated the STA, $P¯$ . In this way, the SFC is normalized to the existing power in the cortical LFP. $SFCf=\frac{STAfftf}{P¯f}$ , where f is an individual frequency band.
+
+### Vector strength
+
+Vector strength was calculated as $R=\frac{1}{N}\sum_{j=1}^{N}1^{e^{i\theta_{j}}}$ , where R is the vector strength, N is the number of trials, and θj is the phase angle of the spike in relation to the flicker stimulus being delivered, 30, 40, 60, or 80 Hz (Goldberg and Brown, 1969). Significance was then calculated using the Rayleigh test statistic.
+
+### Histology
 
 The tree shrew (T. belangeri) was deeply anesthetized with 100 mg/kg pentobarbital, then perfused transcardially with 400 ml 0.1 M phosphate-buffered saline (PBS) (pH 7.4) followed by 400 ml cold 4% paraformaldehyde in 0.1 M PBS. Whole brains were placed in the same fixative overnight at 4°C, then rinsed three times for 20 min in cold 0.1 M PBS and cryoprotected by immersion in a sucrose gradient (15 and 30% w/v sucrose) until it sank. Brains were blocked and fast frozen in dry-ice chilled isopentane and stored at least overnight at –20°C before proceeding with the cryosectioning. At that point, brains were sectioned into 40-μm-thick coronal sections using a sliding microtome (MICROM HM 440E, Microm International GmbH, Walldorf, Germany). Every third section was preserved in a storage solution (30% ethylene glycol and 30% glycerol in 0.1 M phosphate buffer) at –20°C. To visualize the virus-mediated expression of CaMKIIα-Chr2-mCherry by fluorescence, sections were mounted on Superfrost Plus Adhesion slides (Fisher Scientific AG, Reinach, CH), and cover-slipped using an aqueous Vectashield antifade mounting media with Dapi (Vector Laboratories, Inc, Burlingare, CA, H-1200). Virus expression was imaged using a NanoZoomer 2.0-HT slide scanner (Hamamatsu Photonics), with a 2 × 20 0.75 NA air objective and at a resolution of 0.23 µm/pixel. Visualization and analysis were executed with the NDP.view 2 freeware (Hamamatsu Photonics).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 We performed immunohistochemistry for the specific neuronal markers parvalbumin (PV) and CaMKIIα in the LGN. Cryopreserved free-floating sections were previously washed by rinsing in 0.1 M PBS five times for 20 min. Then sections were subjected to heat-induced antigen retrieval (HIER) in a Tris-EDTA-based solution at pH 9.0. Sections were then permeabilized for 110 min with 0.1 M PBS +0.3% Triton X-100, followed by incubation in blocking solution for 2 hr at room temperature, containing 0.1 M PBS-0.05% Triton X-10, 0.3 M glycine, and 15% normal donkey serum (NDS) (Abcam, AB 7475). Next, sections were incubated with goat anti-CamKIIα polyclonal antibody (3.3 µg/ml; Invitrogen, Thermo Fisher Scientific, Inc, Regensburg, DE, PAS-19128) and mouse anti-PV (1:5000; Swant, Switzerland; 235Pur) in 0.05% Tween 20, 7% NDS, and 0.02% NaN3 in 0.1 M PBS for 48 hr at 4°C. Sections were washed in 0.1 M PBS + 0.05% Tween 20 + 1% NDS five times, 20 min each, and then incubated with the different fluorescent secondary antibodies diluted in 0.05% Tween-20, 1% NDS, and 0.1 M PBS for 16 hr at 4°C. The secondary antibodies were Alexa Fluor 488 donkey anti-mouse IgG (H+L) (1:500; Jackson ImmunoResearch, Europe Ltd, UK; Cat# 715-545-151), Alexa Fluor 647 AffiniPure donkey anti-goat IgG (H+L) (1:500; Jackson ImmunoResearch, Cat# 705-605-147). Nuclei were counterstained with DAPI at 0.5 μg/ml for 5 min. Sections were mounted on Superfrost Plus Adhesion slides (Fisher Scientific AG) and cover-slipped with 90% glycerol + 0.5% N-propyl gallate in 20 mM Tris at pH 8.4. Images were collected using a ×20 NA 0.75 mm multi-immersion objective on a Leica STELLARIS SP8 FALCON Laser scanning confocal microscope (Leica Microsystems AG, Switzerland) and analyzed using LAS X software (version 3.3.0, Leica Microsystems). Image processing was executed with the ImageJ/Fiji software (NIH, Bethesda, MD).

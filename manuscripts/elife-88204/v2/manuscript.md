@@ -10,16 +10,16 @@
 
 ### Affiliations
 
-1. https://ror.org/05byvp690 Department of Molecular Genetics, The University of Texas Southwestern Medical Center Dallas United States
-2. https://ror.org/043mz5j54 Department of Microbiology and Immunology, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States
-4. https://ror.org/05byvp690 Department of Biophysics, The University of Texas Southwestern Medical Center Dallas United States
+1. Department of Molecular Genetics, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+2. Department of Microbiology and Immunology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Department of Biophysics, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
 
 † Corresponding author
 
 ## Abstract
 
-The activation of Sphingosine-1-phosphate receptor 1 (S1PR1) by S1P promotes lymphocyte egress from lymphoid organs, a process critical for immune surveillance and T cell effector activity. Multiple drugs that inhibit S1PR1 function are in use clinically for the treatment of autoimmune diseases. Cluster of Differentiation 69 (CD69) is an endogenous negative regulator of lymphocyte egress that interacts with S1PR1 in cis to facilitate internalization and degradation of the receptor. The mechanism by which CD69 causes S1PR1 internalization has been unclear. Moreover, although there are numerous class A GPCR structures determined with different small molecule agonists bound, it remains unknown whether a transmembrane protein per se can act as a class A GPCR agonist. Here, we present the cryo-EM structure of CD69-bound S1PR1 coupled to the heterotrimeric G i complex. The transmembrane helix (TM) of one protomer of CD69 homodimer contacts the S1PR1-TM4. This interaction allosterically induces the movement of S1PR1-TMs 5–6, directly activating the receptor to engage the heterotrimeric G i . Mutations in key residues at the interface affect the interactions between CD69 and S1PR1, as well as reduce the receptor internalization. Thus, our structural findings along with functional analyses demonstrate that CD69 acts in cis as a protein agonist of S1PR1, thereby promoting G i -dependent S1PR1 internalization, loss of S1P gradient sensing, and inhibition of lymphocyte egress.
+The activation of Sphingosine-1-phosphate receptor 1 (S1PR1) by S1P promotes lymphocyte egress from lymphoid organs, a process critical for immune surveillance and T cell effector activity. Multiple drugs that inhibit S1PR1 function are in use clinically for the treatment of autoimmune diseases. Cluster of Differentiation 69 (CD69) is an endogenous negative regulator of lymphocyte egress that interacts with S1PR1 in cis to facilitate internalization and degradation of the receptor. The mechanism by which CD69 causes S1PR1 internalization has been unclear. Moreover, although there are numerous class A GPCR structures determined with different small molecule agonists bound, it remains unknown whether a transmembrane protein per se can act as a class A GPCR agonist. Here, we present the cryo-EM structure of CD69-bound S1PR1 coupled to the heterotrimeric Gi complex. The transmembrane helix (TM) of one protomer of CD69 homodimer contacts the S1PR1-TM4. This interaction allosterically induces the movement of S1PR1-TMs 5–6, directly activating the receptor to engage the heterotrimeric Gi. Mutations in key residues at the interface affect the interactions between CD69 and S1PR1, as well as reduce the receptor internalization. Thus, our structural findings along with functional analyses demonstrate that CD69 acts in cis as a protein agonist of S1PR1, thereby promoting Gi-dependent S1PR1 internalization, loss of S1P gradient sensing, and inhibition of lymphocyte egress.
 
 ## Introduction
 
@@ -33,7 +33,182 @@ Recently, cryogenic electron microscopy (cryo-EM) structures of S1PR1 complexed 
 
 Since serum contains an abundance of lipids including S1P, we expressed human S1PR1 or CD69 in HEK293 cells cultured in a medium with lipid-deficient serum. Then, we purified human S1PR1 protein alone to validate its activation in the presence of S1P using the GTPase-Glo assay (Figure 1A). We then tested the effect on S1PR1 of adding the CD69 homodimer in the absence of S1P. Remarkably, addition of CD69 alone caused a similar amount of Gi activation as addition of S1P indicating that CD69 functions as a protein agonist of S1PR1 (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-v2.jpg)
+
+**Figure 1.:** (A) S1PR1-induced GTP turnover for Gi1 in the presence of purified CD69 or S1P. Luminescence signals were normalized relative to the condition with Gi1 only. Data are mean ± s.e.m. of three independent experiments. One-way ANOVA with Tukey’s test; ****p<0.0001. Experiments were repeated at least three times with similar results. (B) Cryo-EM map of human CD69 bound S1PR1-Gi complex. (C) Cartoon presentation of the complex in the same view and color scheme as shown in (B). Slab view of S1PR1 from the extracellular side showing that the orthosteric binding pocket is vacant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Size exclusion column profile of CD69-S1PR1-Gi complex. Elution fractions of the peak indicated by cyan color were pooled and concentrated for use in grid vitrification. (B) Representative micrograph after motion correction. (C) Data processing workflow of CD69-S1PR1-Gi complex. Representative 2D classes are shown. (D) FSC curve of the final reconstruction in Post-processing of Relion. (E) Local resolution display of the reconstructed map. Local resolution was estimated within Relion. (F) Angular distribution of particles used in the final reconstruction of the complex.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative regions of CD69, S1PR1, and Gαi1 are shown. (B) The cryo-EM density maps of the CD69 residues. (C) The cryo-EM density maps of the S1PR1 residues. The density map is drawn by ChimeraX.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Structures of S1PR1 binding with CD69 and S1P. CD69-bound receptor in blue and S1P-bound S1PR1 (PDB code: 7TD3) in cyan. S1P is shown as balls and sticks in yellow. (B) The flipping of F1614.43 of the structures. (C) A model of 2:2 CD69-S1PR1 complex with Gi heterotrimer. The steric clash between the modeled S1PR1 and the N-helix of Gai is indicated by an arrow.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Overall structures of Gs-protein-coupled CGRP receptor with CGRP. (B) Overall structures of mGlu2 homodimer. (C) mGlu2–mGlu7 heterodimer. (D) the class D GPCR Ste2. Transmembrane helices are labeled and PDB codes are shown in parentheses.
+
 To perform structural studies, we mixed lysates from HEK293 cells that independently expressed human CD69 and human S1PR1. The CD69-S1PR1 complex was then incubated with Gαiβ1γ2 heterotrimer and scFv16 (Maeda et al., 2018) at 1:1.2:1.4 molar ratio. After gel-filtration purification, the resulting complex was concentrated for cryo-EM analysis (Figure 1—figure supplement 1A). We obtained over 1 million particles from ~4000 cryo-EM images. The overall structure of the CD69-bound S1PR1 coupled to heterotrimeric Gi was determined at 3.15 Å resolution by 293,516 particles (Figure 1—figure supplement 1B–F; Table 1). The structure shows that one S1PR1 binds one CD69 homodimer and one Gi heterotrimer. It also revealed well-defined features for the canonical seven transmembrane helices (7-TMs) of S1PR1, the Gαi Ras-like domain, the Gβ and Gγ subunits and scFv16 (Figure 1B, Figure 1—figure supplement 2A). The intracellular loop 3 (ICL3) and the C-terminus of S1PR1 and the intracellular and extracellular domains of CD69 were not found in the cryo-EM map indicating their flexibility in the complex. In contrast, the TMs of the CD69 homodimer were clearly defined in the map owing to their interactions with S1PR1 (Figure 1B, Figure 1—figure supplement 2A; the interacting TM helix is referred to as CD69-a). Because no lipid was supplemented into the protein during the expression and purification, there is no notable lipid ligand in the 7-TM bundle of S1PR1, which is different from the previous structural discoveries on S1PRs (Chen et al., 2022; Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021; Zhao et al., 2022).
+
+**Table 1.**
+ Cryo-EM data collection, processing, and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Structure</th>
+      <th>CD69-S1PR1-Gi-scFv16</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB</td>
+      <td>8G94</td>
+    </tr>
+    <tr>
+      <td>EMDB</td>
+      <td>EMD-29861</td>
+    </tr>
+    <tr>
+      <td>Data collection/ processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>105,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>1.0–2.0</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particles (No.)</td>
+      <td>~1.1 million</td>
+    </tr>
+    <tr>
+      <td>Final particles (No.)</td>
+      <td>293,516</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.14</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>25–3.0</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model Resolution (Å)</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>–60</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>9223</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1187</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>B-factors (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>98.23</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.702</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.64</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>6.49</td>
+    </tr>
+    <tr>
+      <td>Rotamers outliers (%)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>95.87</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>4.13</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
 
 Structural comparison shows that the entire complex and the S1P bound S1PR1-Gi complex share a similar conformation with a root-mean-square deviation (RMSD) of 0.82 Å (Figure 1—figure supplement 3A). The receptors in both complexes can be aligned well; however, the F1614.43 in TM4 presents a notable shift due to CD69 binding (Figure 1—figure supplement 3B). We docked the S1PR1 bound to the other TM of the CD69 homodimer which showed that the modeled receptor would sterically clash with the Giα subunit (Figure 1—figure supplement 3C). This may explain why only one receptor binds one CD69 homodimer in the presence of the heterotrimeric G-protein.
 
@@ -43,15 +218,47 @@ Another type of intramembrane interaction observed for GPCRs is the formation of
 
 The TM of one protomer of CD69 homodimer interacts with the TM4 of S1PR1 (Figure 1C). The interface area between TMs is about 600 Å2. Structural analysis shows that residues V41, V45, V48, V49, T52, I56, I59, A60 of CD69 mediate its extensive interactions with the receptor (Figure 2A, Figure 1—figure supplement 2B). Residues L1604.42, F1614.43, I1644.46, W1684.50, V1694.51, L1724.54, I1734.55, G1764.58, I1794.61 and M1804.62 of S1PR1-TM4 contribute to the interaction with CD69 (Figure 2B, Figure 1—figure supplement 2B). However, the TM of another CD69 does not have any interactions with the receptor and heterotrimeric Gi protein (Figure 1C). Further structural comparison with the S1P-bound S1PR1-Gi complex indicates that the heterotrimeric Gi proteins in both complexes exhibit a similar state with a RMSD of 0.45 Å. Also, the intracellular regions of the heptahelical domain adopt a similar conformation to accommodate the Gi proteins. This finding implies that S1P and CD69 stimulate the receptor to engage the heterotrimeric Gi proteins in an analogous fashion.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig2-v2.jpg)
+
+**Figure 2.:** (A) and (B) Detailed interactions between CD69-a and TM4 of S1PR1. Residues that contribute to complex formation are labeled. CD69 is shown in green and S1PR1 in slate. (C) S1PR1-Flag and CD69-StrepII co-immunoprecipitation assay in transfected HEK293 GnTI- cells from one experiment that is representative of three. (D) Dose-response curves of S1PR1WT, S1PR1V169Y and S1PR1M180Y for the TGFα shedding assay using S1P. Data are mean ± s.d. (n=3). (E) S1PR1-induced GTP turnover for Gi1 in the presence of purified wild-type and mutant CD69. Luminescence signals were normalized relative to the condition with Gi1 only. Data are mean ± s.e.m. of three independent experiments. One-way ANOVA with Tukey’s test; ***p<0.001, ****p<0.0001. Experiments in (C)-(E) were repeated at least twice with similar results. (F) Flow cytometric analysis of S1PR1 surface expression on WEHI231 lymphoma cells transduced with S1PR1 and CD69 wild-type and mutant constructs as indicated. From one experiment that is representative of three.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** CD69 is a dimer in size exclusion buffer, but partially dissociated to be monomer when resolved in SDS-PAGE gel.
+
 To validate our structural observations, we performed the co-immunoprecipitation (co-IP) assay using S1PR1 and CD69 variants. Compared to the wild-type S1PR1, two mutants (V1694.51Y and M1804.62Y) present reduced binding to CD69 (Figure 2C). The TGFα shedding assay showed that these two mutants retained normal activity in response to S1P (Figure 2D). We also tested two CD69 double mutations (V48F/V49F and I56F/I59F) for their association with S1PR1. The co-IP results show that the interaction between S1PR1 and either mutant is considerably attenuated, thus directly supporting the role of CD69-TM in the complex assembly (Figure 2C). Moreover, we have purified CD69(V48F/V49F) and CD69(I56F/I59F) individually and mixed with S1PR1 and Gαiβ1γ2 to conduct a GTPase-Glo assay (Figure 2—figure supplement 1). Consistent with the results of our co-IP assays, the activation of Gi proteins in the presence of either variant was decreased (Figure 2E). To further validate the physiological role of the CD69-S1PR1-Gi complex, we tested the two CD69 variants, for their influence on CD69-mediated S1PR1 internalization in WEHI231 B lymphoma cells. In accord with the biochemical data, CD69(V48F/V49F), and CD69(I56F/I59F) were both reduced in their ability to downregulate S1PR1 (Figure 2F).
 
 The structures of the S1PR1 complex with its small molecule modulators (including S1P, FTY720-P, BAF312, and ML056) uncover that the TMs 3, 5, 6, and 7 contribute to accommodate the modulators in the orthosteric site (Hanson et al., 2012; Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021). In contrast, S1PR1 employs its TM4 to associate with CD69 which functions as a protein agonist for triggering receptor activation. Structural comparison with the inactive state of ML056 bound S1PR1 reveals a unique mechanism of CD69-mediated S1PR1 activation (Figure 3A). The binding of CD69 induces a 4 Å shift at the intracellular end of TM4 causing the residues C1674.49, I1704.52, and L1744.56 in TM4 to face TM3 (Figure 3B). C1674.49 and I1704.52 have hydrophobic contacts with the F1333.41 in TM3, and L1744.56 pushes the F2105.47 in TM5 towards the edge of the receptor to form the hydrophobic interactions with W2696.48 and F2736.52 in TM6 (Figure 3C, Figure 1—figure supplement 2C). These interactions trigger the notable movement of TM5 and TM6 allowing the opening of intracellular regions to engage the heterotrimeric Gi proteins (Figure 3A and D). Residues A1373.45, I1704.52, L1744.56, F2105.47, W2696.48, and F2736.52 are conserved among S1PR1, S1PR2 and S1PR3, but not F1333.41 and C1674.49. Remarkably, further comparison shows that the key residues, which are crucial for the S1P binding and receptor activation, present similar conformations in the structures of S1P-bound S1PR1 and CD69-bound S1PR1, although S1P and CD69 have different structural natures and completely distinct binding sites in the receptor (Figure 3E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overall structures of S1PR1 binding with CD69 and ML056. The CD69-bound S1PR1 structure was aligned to ML056-bound inactive S1PR1 (PDB code: 3V2Y). ML056-bound receptor is shown in brown, CD69-bound receptor in blue, and the TM of CD69 in green. The same color scheme is used (C) and (D). (B) The movements of TM4 and TM6 of CD69-bound S1PR1 compared with ML056-bound inactive S1PR1. (C) Residues involved in the TM movements. (D) TM6 movement around W2696.48 and F2736.52. (E) Comparison between CD69-bound S1PR1 and S1P-bound S1PR1 (PDB code: 7TD3). Residues in the ligand binding pocket are shown. CD69-bound receptor in blue and S1P-bound S1PR1 in cyan. S1P is shown as balls and sticks in yellow.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Co-immunoprecipitation assay in transfected HEK293 GnTI- cells from one experiment that is representative of three. (B) Sequence alignment of S1PR homologues. The different residues among S1PRs which are crucial for CD69 binding are indicated by blue stars.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Structure of GABAB. The BHFF, a positive allosteric modulator (PAM) of GABAB, is shown as magenta sticks. (B) Structure of CB1. The ZCZ011, a PAM of CB1, is shown as magenta sticks. (C) Structure of A1R. The MIPS521, a PAM of A1R, is shown as magenta sticks. Transmembrane helices for PAM binding are labeled and PDB codes are shown in parentheses.
 
 To date, five S1PRs have been identified. These receptors have different tissue distributions, and they also function via distinct kinds of G proteins (including Gi, Gq, and G12/13) (Cartier and Hla, 2019). Previous work showed that CD69 specifically binds to S1PR1, and it does not associate with S1PR2, S1PR3 or S1PR5 (Bankovich et al., 2010; Jenne et al., 2009; Shiow et al., 2006). To dissect the binding specificity of CD69, we carried out the co-IP assays to show a very weak interaction between S1PR2 and CD69 (Figure 3—figure supplement 1A). Although the sequence homology among five S1PRs is high, residues L1574.51 and L1684.62 in S1PR2-TM4 are not conserved with those in S1PR1 and are determinants for specific recognition of CD69 (Figure 3—figure supplement 1B). We speculated that converting these two residues to those in S1PR1 may prompt the interaction between S1PR2 variant and CD69. Our co-IP result clearly shows that S1PR2(L1574.51V/L1684.62M) could interact with CD69 albeit the interactions are weaker than that between S1PR1 and CD69 (Figure 3—figure supplement 1A). This finding further demonstrates the essential role of S1PR1-TM4 in the CD69-mediated S1PR1 signaling.
 
 All the known small molecule S1PR1 agonists or antagonists bind to the orthosteric site in the heptahelical domain (Hanson et al., 2012; Liu et al., 2022; Xu et al., 2022; Yu et al., 2022; Yuan et al., 2021). Interestingly, the CD69 binding site is akin to that of the allosteric agents which attach to receptors (Draper-Joyce et al., 2021; Mao et al., 2020; Yang et al., 2022), although the nature of these agents and CD69 is quite different. The diversity of the allosteric modulator binding sites in GPCRs has been revealed by numerous structures (Figure 3—figure supplement 2). When the orthosteric site is occupied, the positive allosteric modulator attaches to the receptor and then increases agonist affinity and/or efficacy. CD69 binds to the edge of S1PR1, but it acts as a protein agonist to directly activate the receptor in the absence of any agonists in the orthosteric site. Thus, our finding suggests CD69 is different from other S1PR1 agonists in that it functions via a direct binding to the edge of the receptor.
 
 It remains unknown whether the antagonist of S1PR1 bound to the 7-TMs will affect the CD69-mediated regulation of S1PR1. We co-transfected S1PR1-GFP and CD69-mCherry into HEK293 cells in a lipid depleted medium. After 24 hr, the fluorescence images show that substantial receptors (~80%) have been internalized with CD69. However, when we added the Ex26, a potent S1PR1 antagonist (Cahalan et al., 2013), into the cells 6 hr after transfection, the images show that just ~50% receptors have been internalized (Figure 4A and B). This finding indicates that the CD69-mediated S1PR1 activation could be reversed when the 7-TMs pocket is preoccupied by an antagonist.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig4-v2.jpg)
+
+**Figure 4.:** (A) HEK293 cells were treated with 2 μM Ex26 or vehicle for 12 hr and imaged using confocal microscopy. Scale bar, 10 μm. (B) Quantification of intracellular S1PR1 of the cells in (A). (C) HEK293 cells were treated with 20 μM Barbadin for 12 hr and imaged for analysis. Scale bar, 10 μm. (D) Quantification of intracellular S1PR1 of the cells in (C). (E) HEK293 cells were treated with 200 ng/ml pertussis toxin (PTX) for 12 hr and imaged for analysis. Scale bar, 10 μm. (F) Quantification of intracellular S1PR1 of the cells in (E). Data are mean ± s.e.m. Two-sided Welch’s t-test; ns, not significant, **p<0.01, ****p<0.0001. All experiments were repeated at least three times with similar results.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HEK293 cells were treated with 20 mM Barbadin for 2 hr followed by vehicle- or FTY720-P-treatment for 1 hr and imaged using confocal microscopy. Scale bar, 10 mm. (B) Quantification of intracellular S1PR1 of the cells in (A). Data are mean ± s.e.m. Two-sided Welch’s t-test; ****p<0.0001. Experiments were repeated at least twice with similar results.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88204/elife-88204-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Luminescence signals were normalized relative to the condition with Gi1 only. Data are mean ± s.e.m. of three independent experiments. Two-sided Student’s t-test; ns, not significant. Experiments were repeated at least twice with similar results.
 
 It has been known that S1P, FTY720-P and CD69, could promote the internalization of S1PR1. However, the mechanisms of S1P- and FTY720-P-mediated internalization appear to be different. While both S1P and FTY720-P activate Gi-signaling, FTY720-P is considered as a β-arrestin-biased agonist, and FTY720-P-induced S1PR1 internalization is β-arrestin-dependent (Oo et al., 2007; Xu et al., 2022). The pathway of S1P-mediated internalization can be β-arrestin-dependent or independent (Galvani et al., 2015; Reeves et al., 2016). To test the mechanism of how CD69 induces the receptor internalization, we performed a fluorescence imaging assay to check the internalization of S1PR1 in the presence of either Gi inhibitor Pertussis toxin (PTX) or β-arrestin inhibitor Barbadin. The plasmids encoding S1PR1-GFP and CD69-mCherry were co-transfected into HEK293 cells in a lipid depleted medium. After 6 hr, we added PTX or Barbadin. On day 2, we calculated the fraction of internalized S1PR1 in each group by fluorescence imaging. The results show that Barbadin does not interfere with CD69-induced receptor internalization (Figure 4C and D), but PTX could prevent half of the receptors from internalization (Figure 4E and F). Our finding also supports that Barbadin was effective in reducing FTY70-P-induced S1PR1 internalization (Figure 4—figure supplement 1). Thus, CD69 agonism of S1PR1 induces Gi-dependent internalization of the complex.
 
@@ -63,46 +270,46 @@ Previous work has shown the critical importance of correctly distributed S1P and
 
 ## Methods
 
-## Constructs
+### Constructs
 
 For expression and purification, the wild-type human S1PR1 (a.a.1–347, UniProt: P21453) and CD69 (full-length, UniProt: Q07108) were separately cloned into pEZT-BM vector (Morales-Perez et al., 2016) with a C-terminal Flag tag and StrepII tag, respectively. Plasmids of Gαi1, Gβ1/Gγ2 and scFv16 are kind gifts from Brian Kobilka (Stanford University). For co-immunoprecipitation assay, the full-length wild-type human S1PR1 fused with a C-terminal Flag tag and CD69 fused with a C-terminal StrepII tag, were separately cloned into pCAGGS vector (Niwa et al., 1991) with modified multiple cloning sites. For fluorescence microscopy, the plasmids pCAGGS-S1PR1-Flag-GFP and pCAGGS-CD69-StrepII-mCherry were constructed.
 
-## Protein expression and purification
+### Protein expression and purification
 
 S1PR1-Flag and CD69-StrepII were separately expressed using baculovirus-mediated transduction of mammalian HEK293S GnTI− cells (ATCC CRL-3022) in a medium containing FreeStyle 293 (Gibco Cat# 12338018) supplemented with 2% charcoal-dextran stripped fetal bovine serum (Gibco Cat# 12676029), penicillin (100 U/mL), and streptomycin (100 μg/mL) (Corning Cat# 30–002 CI). Baculoviruses were generated in Sf9 cells, and P2 virus was used to infect HEK293S GnTI− cells at 37 °C. At 8 hr after infection, sodium butyrate at a final concentration of 10 mM was added to the culture. After further incubation for 64 hr at 30 °C, cells expressing S1PR1-Flag and CD69-StrepII were mixed together and resuspended in buffer A (20 mM HEPES, pH 7.5, 150 mM NaCl) supplemented with protease inhibitors and then homogenized by sonication. The protein was solubilized with 1% LMNG (lauryl maltose neopentyl glycol) /0.1% CHS (cholesteryl hemisuccinate) for 1 hr at 4 °C. Insoluble material was removed by centrifugation at 40,000 g, 4 °C for 30 min, and the supernatant was incubated with Strep-Tactin XT resin (IBA Cat# 2-5030-025) for batch binding. The resin was washed with 20 column volumes (CV) of buffer A containing 0.01% LMNG/0.001% CHS. The protein complex was eluted with 6 CVs of buffer A containing 0.01% LMNG/0.001% CHS and 50 mM biotin, followed by a second affinity purification by anti-Flag M2 resin (Sigma-Aldrich). The excessive CD69-StrepII was washed off with 20 CVs of buffer A containing 0.01% LMNG/0.001% CHS, and the complex was eluted with 5 CVs of 3×Flag peptide (0.1 mg/ml; ApexBio). The eluted protein was further purified by gel filtration using a Superose 6 Increase 10/300 GL column (Cytiva) with 20 mM HEPES, pH 7.5, 150 mM NaCl, 0.001% L-MNG/0.0001% CHS, and 0.0025% glyco-diosgenin (GDN). The peak fractions were collected for complex assembly.
 
 To assemble the CD69-S1PR1-Gi-scFv16 complex, purified CD69-S1PR1 was mixed with the Gi heterotrimer at a 1:1.2 molar ratio. This mixture was incubated on ice for 1 hr, followed by the addition of apyrase to catalyze the hydrolysis of unbound GDP on ice for 1 hr. Then, scFv16 was added at a 1.4:1 molar ratio (scFv16: CD69-S1PR1) followed by 30 min incubation on ice. The mixture was diluted 10-fold by gel filtration column buffer. To remove excess Gi and scFv16 proteins, the mixture was purified by anti-Flag M2 affinity chromatography. The complex was eluted and concentrated using an Amicon Ultra Centrifugal Filter (molecular weight cutoff 100 kDa). The complex was further purified by gel filtration (Superose 6 Increase 10/300 GL) with buffer 20 mM HEPES, pH 7.5, 150 mM NaCl, 0.001% L-MNG/0.0001% CHS, and 0.0025% GDN. Peak fractions consisting of CD69-S1PR1-Gi complex were concentrated to ~10–12 mg/ml for cryo-EM studies.
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 The freshly purified CD69-S1PR1-Gi-scFv16 complex was added to Quantifoil R1.2/1.3 400-mesh Au holey carbon grids (Quantifoil), blotted using a Vitrobot Mark IV (FEI), and vitrified in liquid ethane. The grids were imaged in a 300-kV Titan Krios (FEI) with a Gatan K3 Summit direct electron detector. Data were collected in super-resolution mode at a pixel size of 0.415 Å with a dose rate of 23 electrons per physical pixel per second. Images were recorded for 5 s exposures in 50 subframes with a total dose of 60 electrons per Å2.
 
-## Imaging processing and 3D reconstruction
+### Imaging processing and 3D reconstruction
 
 A total of 4,239 dose-fractionated image stacks of CD69-S1PR1-Gi complex were collected and subjected to single particle analysis using RELION-3.1 (Zivanov et al., 2018) and cryoSPARC v3.3 (Punjani et al., 2017). MotionCor2 (Zheng et al., 2017) was used for motion correction and dose weighting, CTFFIND-4.1 Rohou and Grigorieff, 2015 for contrast transfer function (CTF) estimation, and crYOLO Wagner et al., 2019 for particle picking with a general model. A total of 1,113,446 particles were extracted with a pixel size of 1.66 Å in RELION and imported to cryoSPARC. The imported particles were subjected to ab initio model reconstruction and several rounds of alternating 2D classification and heterogeneous refinement. Then 336,669 particles from the best class were re-extracted at full pixel size (0.83 Å) in RELION and imported to cryoSPARC again. Two heterogeneous refinements were performed in parallel and the resulting particles from the two best classes were combined with duplicates removed. These 293,516 particles were subjected to CTF refinement and Bayesian polishing followed by masked 3D auto refinement. RELION postprocessing was used for sharpening of the final map.
 
-## Model construction and refinement
+### Model construction and refinement
 
 The cryo-EM structure of the S1PR1-Gi bound to S1P (PDB: 7TD3) (Liu et al., 2022) was used as initial models and manually docked into cryo-EM density map with UCSF Chimera-1.15 (Pettersen et al., 2004). The transmembrane helix of CD69 was manually built using Coot-0.9.6 (Emsley and Cowtan, 2004). Due to the limited local resolution, the TM of CD69-b was built as polyalanine. The resulting model was subjected to iterative rounds of manual adjustment and rebuilding in Coot and real-space refinement in Phenix-1.16 (Adams et al., 2010). MolProbity (Williams et al., 2018) was used to validate the geometries of the model. Structural figures were generated using UCSF Chimera-1.15, ChimeraX-1.5 (Pettersen et al., 2021), and PyMOL-2.3 (https://pymol.org/2/).
 
-## GTP turnover assay
+### GTP turnover assay
 
 GTP turnover was analyzed using GTPase-Glo Assay kit (Promega Cat# V7681). Briefly, the purified S1PR1 was first incubated with purified CD69 and/or S1P followed by mixing with isolated Gi protein in an assay buffer containing 20 mM HEPES, pH7.5, 150 mM NaCl, 0.01% LMNG/0.001% CHS, 10 mM MgCl2, 100 μM TCEP, 10 μM GDP and 5 μM GTP. After incubation for 60 min, the reconstituted GTPase-Glo reagent was added to the sample and incubated for 30 min at room temperature. The amount of remaining GTP was assessed by measuring luminescence after adding and incubation with the detection reagent for 10 min at room temperature. The luminescence signal was normalized in each case to that of G-protein alone. Data were analyzed using GraphPad Prism 9.
 
-## Co-immunoprecipitation and immunoblotting assay
+### Co-immunoprecipitation and immunoblotting assay
 
 HEK293 GnTI- cells were transfected with plasmids encoding CD69-StrepII and S1PR1-Flag using FuGene 6 transfection reagent in 60 mm dishes. Forty-eight hr post transfection, cells were harvested and whole cell lysates were prepared using IP lysis buffer (Thermo Scientific) supplemented with protease inhibitor cocktail (Roche). Lysates were cleared by centrifuging at 20,000 g for 15 min at 4 °C. Supernatants were incubated with anti-Flag M2 affinity beads (MilliporeSigma) with end-over-end rotation for 2 h at 4 °C. Beads were washed three times with lysis buffer for 5 min per wash with end-over-end rotation at 4 °C. Proteins were eluted from beads with lysis buffer supplemented with 0.4 mg/ml 3×Flag peptide. Protein samples were loaded Bolt 4–12% Bis-Tris plus gels (Invitrogen) and transferred to TransBlot Turbo nitrocellulose membranes (Bio-Rad). Membranes were blocked for 1 hr at room temperature with 5% milk in PBS with 0.05% Tween 20 (PBST) followed by primary antibody incubation, three-times wash, secondary antibody incubation, and three-times wash again. Membranes were developed for 2 min at room temperature using SuperSignal West Pico PLUS Chemiluminescent Substrate (Thermo Scientific) and then imaged using the LI-COR Odyssey Fc imaging system. The following primary antibodies were used: Tubulin (D3U1W), Cell Signaling Cat# 86298 (1:3000 dilution); Flag tag (FLA-1), MBL International Cat# M185-3L (1:3000 dilution); StrepII tag, IBA GmbH Cat# 2-1507-001 (1:2000 dilution). Anti-mouse IgG HRP-linked secondary antibody (Cell Signaling Cat# 7076) was used for chemiluminescent detection (1:3000 dilution).
 
-## TGFα shedding assay
+### TGFα shedding assay
 
 The agonist activity of S1P for the mutant S1PR1s was determined by the TGFα shedding assays (Inoue et al., 2012). Briefly, three pCAGGS plasmids encoding the human full-length S1PR1 variant (empty vector as negative control), the chimeric Gαq/i1 subunit and alkaline phosphatase-fused TGFα (AP-TGFα) were co-transfected into HEK293 cells using FuGene 6 transfection reagent in a 12-well plate. After 24 hr, the transfected cells were collected by trypsinization, washed with phosphate-buffered saline (PBS), and resuspended in Hanks’ balanced salt solution (HBSS) with 5 mM HEPES (pH 7.4). Then, the cells were seeded into a 96-well culture plate and treated with S1P, which was serially diluted in HEPES-containing HBSS with 0.01% fatty acid–free bovine serum albumin. After incubation with S1P, the cell plate was spun, and conditioned media was transferred to an empty 96-well plate. AP reaction solution (120 mM Tris-HCl, pH 9.5, 40 mM NaCl, 10 mM MgCl2, and 10 mM p-nitrophenyl phosphate) was added into the cell plates and the conditioned media plates. The absorbance at 405 nm was measured using a microplate reader (Synergy Neo2, BioTek) before and after 2 hr incubation at 37 °C. Ligand-induced AP-TGFα release was calculated as described previously (Inoue et al., 2012). AP-TGFα release signal of empty vector-transfected cells were subtracted from that of S1PR1 cells at the corresponding S1P concentration points. Then, the vehicle-treated AP-TGFα release signal was set as a baseline and ligand-induced AP-TGFα release signals were fitted to a four-parameter sigmoidal concentration–response curve using GraphPad Prism 9 software.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 HEK293 cells were plated in 35 mm glass bottom dishes (Cellvis Cat# D35141.5N) followed by transfection with S1PR1-GFP and/or CD69-mCherry using FuGene 6 reagent on the next day. Twenty-four hr post transfection, the cells were stained with Hoechst 33342 reagent (Thermo Fisher Cat# R37605) and fluorescence images were acquired using a Zeiss LSM 800 microscope system with ZEN imaging software (Zeiss).
 
 For fluorescence quantification of intracellular S1PR1 and CD69, outside and inside of plasma membrane were circled manually in Fiji software (Schindelin et al., 2012). The fluorescence intensities in each circle were measured and regarded as whole-cell and intracellular fluorescence intensity, respectively. The intracellular fluorescence intensity was normalized to its corresponding whole-cell fluorescence intensity. For each data point, ~30 cells were randomly selected for quantification. The data shown in the figures are representative of two or more independent experiments.
 
-## WEHI231 cell retroviral transduction
+### WEHI231 cell retroviral transduction
 
 WEHI231 B lymphoma cells were co-transduced with retroviral constructs encoding OX56 N-terminal tagged human S1PR1 containing an IRES-hCD4 reporter and either empty vector or constructs encoding wildtype, V48F/V49F or I56F/I59F human CD69 and an IRES-GFP reporter using methods previously described (Lu et al., 2019). After 3–5 days, the cells were harvested and rested for 20 min at 37 °C in PBS without serum, then stained to detect OX56, CD69, and hCD4. OX56 (S1PR1) staining on hCD4 +GFP + CD69 + cells were plotted.

@@ -26,15 +26,51 @@ Somatic stem cells divide throughout life to generate progeny that is required f
 
 ## Results
 
-## Iterative 4i immunostaining in complex mouse and human tissues
+### Iterative 4i immunostaining in complex mouse and human tissues
 
 To achieve multiple rounds of 4i on tissue, sections needed to be adequately mounted to minimize loss of samples through detachment without affecting antigenicity. Coating the glass-bottomed well-plates with poly-d-lysine (PDL) was effective to preserve tissue adhesion across multiple cycles of 4i in sections of 3-month-old adult mouse brain (Figure 1A), human embryonic stem cell (hESC)-derived regionalized forebrain organoids (Figure 1B), and embryonic day 14.5 (E14.5) mouse brain (Figure 1C). Thus, using this approach, sequential rounds of conventional antibody stainings in mouse and human tissues becomes achievable (Figure 1A–C, for details of used antibodies refer to the legend of Figure 1). Notably, 4i in tissue sections allows for 3D reconstruction of tissue volumes, facilitating detailed spatial analyses throughout tissue sections (Figure 1D), showcased using antibodies against IBA1-labeled microglia, Nestin- and GFAP-labeled NSC processes, DCX-expressing immature neurons, LaminB1-expressing cells, and CollagenIV-labeled vasculature (Figure 1D). To assess potential effects of cyclic staining and repeated elutions on sample antigenicity, adult brain sections were stained with the 18 antibodies used in the present study, imaged, and subsequently subjected to six rounds of elution prior to restaining. Measured fluorescence intensities between the stainings before and after rounds of elution were strongly correlated (Figure 1E and Figure 1—figure supplement 1), indicating that antigenicity is preserved across repeated cycles of iterative immunostainings for most of the antibodies that we used in tissue sections, similar to the high reproducibility that 4i achieves in cultured cells (Gut et al., 2018). Significant correlation was not achieved for the stem cell marker ID4 and MT3+ cells were poorly correlated between rounds. While staining was impaired for ID4, the quality was improved for MT3, suggesting the elution step may have some efficacy for antigen retrieval.
 
-## Cellular alterations in the DG niche with advancing age
+![Figure 1.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig1-v1.jpg)
+
+**Figure 1.:** (A) Shown is an adult mouse dorsal hippocampal section labeled with 11 antibodies, as indicated in the individual panels, acquired over five rounds of 4i. SOX2/ID4/HOPX astrocytes/NSCs; KI67, proliferation; NeuroD1/DCX, immature neurons; Parvalbumin, interneurons; S100β, astrocytes; NG2, oligodendroglia; IBA1, microglia; and CD13, pericytes. Nuclei were counterstained with DAPI. (B) An hESC-derived, forebrain organoid section fixed at day 40 in vitro and labeled with eight antibodies, as indicated in the individual panels, over four rounds of 4i. SOX2/Nestin, apical progenitors; KI67, proliferation; TBR2, basal progenitors; DCX, immature neurons; cCaspase3, apoptotic cells; and TBR1/TUJ1, neurons. Nuclei were counterstained with DAPI. (C) Shown is a cortical section from an E14.5 mouse embryo labeled with eight antibodies, as indicated in the individual panels, over four rounds of 4i. Phopho-Vimentin, intermediate filaments; IBA1, microglia; SOX2/Nestin, astrocytes/NSCs; TBR2, basal progenitors; CTIP2, neurons; and DCX/TUJ1, immature neurons. Nuclei were counterstained with DAPI. (D) 3D reconstruction of a region in the dorsal DG analyzed with antibodies as indicated, with an arrow highlighting a Nestin+/GFAP+ R cell radial process indicating the spatial fidelity of 4i across cycles. (E) Examples of HOPX, IBA1, and SOX2 labeling in adult mouse brain sections, with proof of elution efficacy and restaining quality. The normalized fluorescent intensities for each stain were correlated between rounds. For details of statistics please refer to Supplementary file 1. Scale bars represent 200 µm (A), 100 µm (B, C), 25 µm (D), and 50 μm (E). 4i, immunofluorescence imaging; DG, dentate gyrus; hESC, human embryonic stem cell.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The normalized fluorescent intensities for each stain were correlated between rounds. For details of statistics please refer to Supplementary file 1. Scale bars represent 50 μm.
+
+### Cellular alterations in the DG niche with advancing age
 
 After establishing a robust protocol for iterative immunostainings in complex tissues, we used 4i to analyze age-associated cellular and molecular alterations in the DG of the hippocampal formation. NSCs generate new neurons throughout life in the DG. However, hippocampal neurogenesis is significantly decreasing during adulthood (Ben Abdallah et al., 2010; Denoth-Lippuner and Jessberger, 2021). To test for 4i’s ability to identify age-related changes within the DG, a panel of commonly used antibodies was applied iteratively on the exact same sections to visualize a number of diverse cell types in 2-, 6-, and 12-month-old brain sections: ‘Stem cells’ were visualized using HOPX, Nestin, GFAP, SOX2, ID4, MT3, and LaminB1; ‘Proliferation’ was assessed using pH3 and KI67, ‘Neurons’ were labeled with DCX, PV, ARC (i.e., expressed after plasticity-inducing activity), and LaminB1, ‘Glial cells’ were stained for NG2, OLIG2, IBA1, S100β, and GFAP, ‘Vasculature’ was analyzed with CD13 and Collagen IV (Figure 2A–D and Figure 2—figure supplements 1–4; Ben Abdallah et al., 2010; Denoth-Lippuner and Jessberger, 2021). Radial glia-like stem cells (R, also referred to as type 1 cells) were phenotyped based on the combinatorial expression of HOPX, SOX2, and the extension of a glial fibrillary acidic protein (GFAP) positive radial process (Denoth-Lippuner and Jessberger, 2021). As HOPX, SOX2, and GFAP are also expressed in astrocytes, only cells that were negative for the astrocytic calcium-binding protein S100β, a marker for mature astrocytes, were considered to be R cells. Proliferating non-radial (NR) cells were identified in the subgranular zone (SGZ) by the expression of KI67 and absence of a GFAP-labeled radial process. Immature neurons were classified based on doublecortin (DCX) expression. Antibodies were used in the same order for all age groups analyzed (Figure 2—figure supplement 1B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig2-v1.jpg)
+
+**Figure 2.:** (A) Images of 18 proteins labeled in the same area of the DG from a 2-month-old mouse. HOPX/Nestin/GFAP/SOX2/ID4/MT3 astrocytes/NSCs; KI67/phospho-Histone 3, proliferation; DCX, immature neurons; ARC, mature neurons; Parvalbumin, interneurons; CD13, pericytes; CollagenIV, vasculature; S100β, astrocytes; IBA1, microglia; OLIG2/NG2, oligodendroglia; and LaminB1, nuclear lamina. (B) shows merged channels for stem cells, proliferation, neurons, vasculature, and glial cells. Nuclei were counterstained with DAPI. (C) Images of 18 proteins labeled in the same area of the DG from a 12-month-old mouse. (D) shows composites grouping markers based on cell type. Note that the same sections were used for Figure 4, highlighting the power of iterative immunostaining using 4i. Scale bars represent 25 μm. DG, dentate gyrus; NSC, neural stem cell.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Close-up images of the 18 proteins labeled in the same area of the DG from a 6-month-old mouse with composites grouping markers based on cell type. (B) Combinations used for iterative immunostaining. Scale bar represents 25 μm. DG, dentate gyrus.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Overview images of the 18 proteins labeled in the same area of the DG from a 2-month-old mouse with composites grouping markers based on cell type. Scale bar represents 100 µm. DG, dentate gyrus.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Overview images of the 18 proteins labeled in the same area of the DG from a 6-month-old mouse with composites grouping markers based on cell type. Scale bar represents 100 µm. DG, dentate gyrus.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Overview images of the 18 proteins labeled in the same area of the DG from a 12-month-old mouse with composites grouping markers based on cell type. Scale bar represents 100 µm. DG, dentate gyrus.
+
 Using the whole panel of antibodies, distinct cell types were quantified in the SGZ and normalized to the volume of the DG granule cell layer (GCL) (Figure 3A–C). As expected, the density of R cells was significantly reduced in animals with advancing age (Figure 3A–B; Denoth-Lippuner and Jessberger, 2021). While the total density of proliferating KI67+ cells decreased with advancing age, KI67+ R cells did not change. Additionally, the density of immature neurons, positive for DCX was strongly reduced at 12 months of age (Figure 3A–B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig3-v1.jpg)
+
+**Figure 3.:** (A) Example overviews of the same DGs from 2- and 12-month-old mice showing the neurogenic and glial markers used to phenotype cells in population density measures. Nuclei were counterstained with DAPI. (B) Density analyses of neurogenic cells in the SGZ, defined as the number of R cells. For details of statistics please refer to Supplementary file 1. (C) Density analyses of microglia, OPCs, and astrocytes in the total sampled area of the DG, in the granule cell layer, the molecular layer, and hilus. For details of statistics please refer to Supplementary file 1. Scale bar represents 100 μm. *p<0.05, **p<0.01. DG, dentate gyrus; OPC, oligodendrocyte precursor cell; SGZ, subgranular zone.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) High-power views of markers for R cells (upper panels, arrowheads) and classical astrocytes (lower panels, arrowhedas). Right lower panel shows merged images with the markers indicated. (B) High-power views of markers for microglial (left panel arrowheads), astroglial (middle panel arrowheads), and oligodendroglial cells (right panel arrowheads). Scale bar represents 25 μm.
 
 In the neurogenic niche, R cells interact with and are regulated by several different cell types that are present within their DG niche (Song et al., 2016; Mosher and Schaffer, 2018). To assess potential changes in the cytoarchitecture of the neurogenic niche, microglia, astrocytes, and oligodendrocytes were counted and normalized to the total tissue volume as well as the sub-regions of the DG, the molecular layer (ML), GCL, and hilus. There were no significant differences in IBA1-labeled microglia, or oligodendrocyte precursor cells (OPCs, expressing OLIG2 and NG2) in the DG or within the analyzed DG sub-regions (Figures 2A–B ,–3C). However, in animals of advanced age, the numbers of astrocytes, expressing S100β, in the whole DG were reduced (Figure 3A and C).
 
@@ -46,7 +82,7 @@ We next used 4i to analyze the expression levels of selected proteins in the sam
 
 To further validate the 4i approach on tissue sections, we analyzed age-related expression of LaminB1 (LB1), one of the four intermediate filaments that make up the nuclear lamina, and where reductions with aging and the premature aging phenotype of progeria have been previously described (Burke and Stewart, 2013). Confirming previous reports, we found reduced levels of LB1 between 2- and 12-month-old animals in R cells and DCX-labeled immature neurons (Bedrosian et al., 2021; Bin Imtiaz et al., 2021). As 4i allows for analyzing expression levels in other cell types within exactly the same sections, we found that microglia, astrocytes, and Parvalbumin (PV)-labeled interneurons in the niche showed no significant changes with age in their LB1 expression levels (Figure 4D and E).
 
-## Decline of vascular network and alterations of BBB composition with age
+### Decline of vascular network and alterations of BBB composition with age
 
 In the DG, both R and NR cells have close relationships with surrounding blood vessels that are the source of regulatory trophic factors, originating from vascular endothelial cells, and connect the neurogenic niche to the circulating blood system. Across species, the hippocampus shows a strong age-related decline in vascularization (Katsimpardi et al., 2014; Boldrini et al., 2018). 4i-based analysis confirmed that vascular density decreases with age, with reductions already visible by 6 months of age (Figure 5A–B). In addition to declining vascular networks, age has been associated with an increase in leakiness of the blood-brain barrier (BBB), potentially permitting molecules into the brain leading to increased inflammation and neurotoxicity (Bell et al., 2010). BBB integrity was estimated by measuring the percent of vasculature covered by other cell types based on signal colocalization. While there was no significant change in the total percentage of vasculature coverage, differences were observed in the contributions of different cell types (Figure 5C–D). Pericytes, expressing CD13 and representing one of the primary cell-types that make up the BBB (Bell et al., 2010), were significantly reduced at 6 months with area covered remaining stable at 12 months. Interestingly, there appeared to be a compensatory increase in coverage by astrocytes labeled by GFAP (Figure 5C–D). GFAP-expressing cells may also include Nestin+ R cells; however, their contribution to increased GFAP vasculature coverage with advancing age appears unlikely given the substantially reduced coverage of Nestin-expressing cells (Figure 5D). Additionally, there was a strong trend for an increase in microglia-blood vessel contact at 6 months that reached significance in 12-month-old mice compared to young adult mice (Figure 5C–D). The contribution of R cells (expressing Nestin) to vasculature coverage significantly decreased with age, likely due to the decrease in population, while OPC (labeled with NG2) contact sites with the vasculature remained consistent at each age point (Figure 5C–D).
 
@@ -54,13 +90,21 @@ In the DG, both R and NR cells have close relationships with surrounding blood v
 
 **Figure 5.:** (A) Images of CollagenIV+ blood vessels in the DGs at 2, 6, and 12 months. Nuclei were counterstained with DAPI. (B) Quantification of vascular density in the DGs of 2-, 6-, and 12-month-old mice. For details of statistics please refer to Supplementary file 1. (C) Representative images showing the interactions of pericytes, glia, and R cells with the vasculature in the DG. (D) Quantification of colocalization of pericytes, astrocytes, R cells, microglia, and OPCs with CollagenIV+ represented a percentage of total vascular volume. For details of statistics please refer to Supplementary file 1. Scale bars represent 100 µm (A), 25 µm (C). **p<0.01, ***p<0.001, ****p<0.0001. DG, dentate gyrus; OPC, oligodendrocyte precursor cell.
 
-## Microniche-based analysis identifies novel age-related characteristics of the DG
+### Microniche-based analysis identifies novel age-related characteristics of the DG
 
 We speculated that within the aging DG neurogenic niche, microenvironments may exist possessing distinct capacities for preservation of neurogenic processes. Spots were randomly distributed across the GCL spaced 50 µm apart. Utilizing the multidimensionality of the data set acquired with 4i, volumes of 11 cell markers were measured within a 50 µm radius of each spot to achieve contiguous sampling of ‘microniches’ in the GCL and bordering areas of the hilus and ML (Figure 6A). The aim of such microniche-based analyses was to identify age-related changes within the immediate proximity of neurogenic cells. Post hoc analysis showed significant differences (in terms of percent of marker expression per randomized microniche volume) in a variety of measured cell types within microniches (Figure 6B). For example, vascular and pericyte densities were similarly decreased at 6 and 12 months compared to 2-month-old mice. While the stem cell marker Nestin was significantly reduced by 6 months, GFAP, which is also present in classical astrocytes, remained stable between each age time point, indicating that classical astrocytes contribute substantially to GFAP-expression volumes in analyzed microniches (Figure 6B). Additionally, SOX2 was reduced at 6 months, and decreased further in 12-month-old animals. For glial cells, IBA1-expressing microglia sequentially increased with age while OPCs showed a temporary increase at 6 months with a trending decrease at 12 months (Figure 6B). Thus, 4i applied to tissue sections allows for the identification of cell-type specific alterations with advancing age.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig6-v1.jpg)
+
+**Figure 6.:** (A) A representative overview of the arrangement of randomized sampling spots, with close-up examples of the cellular contents within a single sampled spot for each age group. (B) Quantification of volumes of cell types within the random sampled spots normalized to the sampled area. For details of statistics please refer to Supplementary file 1. (C) Principle component analysis for dimensional reduction and clustering of the random sampled spots from 2-, 6-, and 12-month groups based on cellular content. (D) Percentage of spots identified as either ‘young’ or ‘old’ separated through k-means analysis. (E) Comparison of cell volumes in spots identified as young and old in the 2-month-old group. (F) Comparison of cell volumes in spots identified as high and low R cell populated as neurogenic classified of age in the 2- (upper graph), 6- (middle graph), and 12-month group (lower graph). Scale bars represent 25 µm (A, lower panels) and 100 µm (upper panel). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68000/elife-68000-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The volume of Nestin-labeled radial processes within the random sampled spots. Spots in red were classified as high Nestin populated while blue represents low Nestin spots. (B–D) Comparison of cell volumes in spots containing and lacking Ki67+ cells in the 2 month (B). For details of statistics please refer to Supplementary file 1. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
 For dimensional reduction, principal component analysis was used to cluster the sample regions based on their cellular contents. The majority of regions from 2-month-old animals formed a cluster that was distinct from 6- and 12-month-old animals, which primarily clustered together (Figure 6C). As the spots were largely segregated into two groups, k-means clustering was performed expecting two populations; one ‘young-like’ and one ‘old-like’ identified based on neurogenic cell content. In the 2-month-old animals, 64.5% of spots were grouped as young while 35.5% were labeled as old (Figure 6D). Comparing the contents of the two classes of spots, ‘young’ spots showed higher volumes of Nestin, SOX2, KI67, DCX, CollagenIV, PV, IBA1, and NG2 (Figure 6E). As such, the development of an ‘aged’ phenotype occurred for select niches already at 2 months of age and became already very pronounced in 6-month-old mice. To explore the potential of microenvironments that may support the persistence of R cells within the DG, spots were split by Nestin radial process content. Spots containing a population of Nestin-labeled R cells were classified as high Nestin-containing areas when they were falling within the top three quartiles of spots identified in young mice (0.4% volumetric coverage) (Figure 6—figure supplement 1a). At 2 months, there were no differences in the volumes of CollagenIV vasculature or IBA1-expressing microglia between high and low Nestin populated spots (Figure 6F). However, in both the 6- and 12-month-old groups, both CollagenIV and IBA1 were robustly elevated in the ‘high’ Nestin spots (Figure 6F). In contrast, spots containing Ki67+ proliferating cells, CollagenIV and IBA1 volumes were comparable to Ki67− spots from middle-aged and aged animals (Figure 6B–D). Thus, 4i identified preferential occupancy of blood vessels and IBA1-labeled cells in Nestin-containing microniches, indicating a potential role for the vasculature and microglial cells in the maintenance of quiescent stem cells.
 
-## Age-dependent dynamics of potential stem cell contact sites in the DG niche
+### Age-dependent dynamics of potential stem cell contact sites in the DG niche
 
 Taking advantage of the ability to analyze 3D cellular interactions using 4i on complex tissues, we next characterized potential contact sites (as judged by proximity) of radial processes extending from R cells (Seri et al., 2001; Kronenberg et al., 2003). While little is still known about the function of the radial processes, they are believed to have a role in receiving regulatory signals from the surrounding niche (Moss et al., 2016). To analyze possible interactions between R cells and other cell types in the niche, areas of niche cell marker colocalization with Nestin+ RGL processes were measured and normalized to the area of RGL processes. While the optical resolution was not sufficient to definitively identify contact points, signal colocalization indicates a proximity of cells within ~1 µm. In general, a greater percentage of radial processes in 12-month-old animals were in close proximity with niche cell markers for vasculature, pericytes, and microglia, than in younger mice (Figure 7A–B). R cell processes were preferentially close to the vasculature in areas with low pericyte coverage (areas that are negative for CD13) (Licht et al., 2020), but colocalization of radial processes with CD13-labeled pericytes was increased at 12 months compared to at 2 months (Figure 7A–B). Further, the number of close proximity potential contact sites with IBA1-labeled microglia increased with age, while proximity between R cells and OPCs remained unchanged (Figure 7A–B).
 
@@ -82,39 +126,504 @@ We here demonstrate the applicability of iterative immunostaining in tissue sect
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological samples (Mus musculus)</td>
+      <td>C57BL/6JRj</td>
+      <td>Janvier Labs</td>
+      <td></td>
+      <td>https://www.janvier-labs.com/en/fiche_produit/c57bl-6jrj_mouse/</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ARC (Guinea pig Polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>RRID:AB_2619853</td>
+      <td>Dilution: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BLBP (Rabbit Polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_880078</td>
+      <td>Dilution: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD13 (Goat Polyclonal)</td>
+      <td>Novus</td>
+      <td>RRID:AB_2227288</td>
+      <td>Dilution: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cleaved Caspase 3 (Rabbit Polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2341188</td>
+      <td>Dilution: (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CollagenIV (Rabbit Polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>RRID:AB_2082660</td>
+      <td>Dilution: (1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CTIP2 (Rat Monoclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2064130</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Doublecortin (Goat Polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_2088491</td>
+      <td>Dilution: (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFAP (Chicken Polyclonal)</td>
+      <td>Novus</td>
+      <td>RRID:AB_1556315</td>
+      <td>Dilution: (1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Histone H3 Phospho S10 (Mouse Monoclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_443110</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HOPX (Mouse Monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_2687966</td>
+      <td>Dilution: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IBA1 (Rabbit Polyclonal)</td>
+      <td>WAKO</td>
+      <td>RRID:AB_839504</td>
+      <td>Dilution: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ID4 (Rabbit Monoclonal)</td>
+      <td>Biocheck</td>
+      <td>RRID:AB_2814978</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>KI67 (Rat Monoclonal)</td>
+      <td>Bioscience</td>
+      <td>RRID:AB_10854564</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LaminB1 (Rabbit Polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_10107828</td>
+      <td>Dilution: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MT3 (Rabbit Monoclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2297959</td>
+      <td>Dilution: (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Nestin (Mouse Monoclonal)</td>
+      <td>BD</td>
+      <td>RRID:AB_396354</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NeuroD1 (Goat Polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_630922</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NG2 (Rabbit Polyclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_11213678</td>
+      <td>Dilution: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OLIG2 (Rabbit Polyclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_570666</td>
+      <td>Dilution: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Parvalbumin (Mouse Monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_477329</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S100β (Rabbit Monoclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_882426</td>
+      <td>Dilution: (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOX2 (Rat Monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_11219471</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken IgY (IgG) 488 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340375</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken IgY (IgG) 647 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340379</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat IgG 488 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2336933</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat IgG 647 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340437</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat IgG Cy3 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2307351</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Guinea pig IgG488 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340472</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Guinea pig IgG647 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340476</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG 488 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2341099</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG 647 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340863</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG Cy3 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2315777</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG 488 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2313584</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG 647 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2492288</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG Cy3 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2307443</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat IgG 488 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340684</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat IgG 647 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340694</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat IgG Cy3 (Donkey Polyclonal)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:AB_2340667</td>
+      <td>Dilution: (1:250)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Donkey serum</td>
+      <td>Millipore</td>
+      <td>Cat#: 530-100 ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylene glycol</td>
+      <td>Sigma-Adrich</td>
+      <td>Cat#: 324558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: G5516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Biosolve</td>
+      <td>Cat#: 071323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guanidinium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: G4505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrochloric acid standard 33% solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 71826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Acetyl-Cysteine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A9165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: S9625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>O.C.T compound TissueTek</td>
+      <td>Sakura</td>
+      <td>Cat#: 4583 OCT 25608-930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 441244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D-Lysine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: P6407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: P9333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium phosphate monobasic</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: P8709</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium hydroxide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: S5881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium phosphate dibasic dehydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 30435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium phosphate monobasic monohydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: S9638</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 84100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCEP-HCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: C4706</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 93443</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urea</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: U1250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>http://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ</td>
+      <td>Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td>http://fiji.sc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN Blue</td>
+      <td>Carl Zeiss AG</td>
+      <td>RRID:SCR_013672</td>
+      <td>http://www.zeiss.com/microscopy/en_us/products/microscope-Software, Algorithm/zen.html#introduction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Past4.03</td>
+      <td>Oyvind Hammer</td>
+      <td>RRID:SCR_019129</td>
+      <td>http://folk.uio.no/ohammer/past/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: D9542</td>
+      <td>Dilution: (1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Animal experiments were approved by the Cantonal Commission for Animal Experimentation of the Canton of Zurich, Switzerland in accordance with national and cantonal regulations (license ZH037/2017; ZH126/2020). In developing the 4i protocol for tissue sections, brain tissue was collected from male and female C57Bl/6 mice ranging between 2 and 4 months of age. To attain embryonic day (E) 14.5 embryonic samples, daily plug checks were used to estimate the date of conception. Embryos were collected 14 days following the observation of a vaginal plug. For the aging study, C57BL/6J males at 2 (n=3), 6 (n=3), and 12 months (n=3) of age were used. All mice were kept in a 12 hr light/dark cycle with food and water provided ad libitum.
 
-## Tissue preparation
+### Tissue preparation
 
 For adult tissues, animals were transcardially perfused using a peristaltic pump with cold 0.9% saline solution followed by 4% paraformaldehyde (PFA) in phosphate buffer. Brains were collected and post-fixed in 4% PFA at 4°C for 8 hr. The brains were then cryo-protected in 30% sucrose for 2 days prior to sectioning. Adult mouse brain tissue was sectioned into 40 μm coronal sections on a cryotome (Leica SM2010R). For E14.5 samples, embryonic heads from C57Bl/6 mice were washed in phosphate-buffered saline (PBS) and fixed with 4% PFA overnight. Cryoprotection occurred in two steps, first for 2 days in 15% sucrose followed by 2 days in 30% sucrose, before being flash-frozen and embedded in OCT Compound (Tissue-Tek) using liquid nitrogen. Sectioning was done coronally at 40 μm using a cryostat. Sections were collected and washed with PBS to remove the remaining OCT before being transferred to cryoprotectant solution (CPS, 25% Ethyleneglycol, 25% Glycerin, and 0.1 M phosphate buffer). Forebrain-specific organoids derived from hESCs (approved by the Kantonale Ethikkomission Zurich and reported to the federal Bundesamt für Gesundheit of Switzerland) were generated as described before (Bowers et al., 2020), and fixed at day 40 in 4% PFA for 15 min, embedded in OCT, and flash-frozen using liquid nitrogen. Organoids were sectioned at 40 μm using a cryostat, sections were collected in PBS. Serial washes with PBS were performed to remove the remaining OCT, before being transferred to CPS.
 
-## Mounting
+### Mounting
 
 Prior to mounting, glass-bottomed 24-well plates (Cellvis P24-1.5H-N) were coated with 1 mg/ml PDL (Sigma-Aldrich P6407). 75 μl of the PDL solution was transferred into the center of each well and brushed to the edges with a fine paintbrush to ensure total coverage. The plates were rocked on a shaker for 5 min, after which the PDL was collected for reuse. Wells were rinsed three times with deionized water and let dry for at least 2 hr. Tissue sections were washed three times in PBS, loaded into wells containing 500 µl 1× PBS, which was subsequently aspirated allowing the tissue to lie flat and dry for approximately 20 min until there was no visible liquid remaining around the edges of the sections. The tissue was then rinsed for 30 s with 4% PFA and washed in PBS three times for 5 min each. Organoids sections were gently aspirated using a P1000 pipet with a trimmed tip and transferred into a well of a glass bottomed well plate. The sections were allowed to settle onto the glass before carefully removing the excess liquid and allowing to dry. Mounted organoid sections were additionally fixed with 4% PFA for 15 min followed by three washes with PBS. Prior to staining, the organoid sections were washed with the elution buffer three times for 5 min as a form of mild antigen retrieval.
 
-## Staining
+### Staining
 
 Once mounted, sections were blocked for 1 hr at room temperature in a blocking solution containing PBS with 3% donkey serum, 0.5% Triton-X, and 0.025% PFA (PBS++). Sections were incubated in the primary antibodies (Supplementary file 1), diluted in the blocking solution, for between two to four nights, depending on the efficacy of the antibodies, shaking at 4°C. Following the primary antibody incubations, the tissue was washed two times with PBS for 5 min and then blocked with PBS++ for 1 hr at room temperature. Sections were incubated with secondary antibodies, diluted at a ratio of 1:250 along with DAPI at 1:1000 in PBS++, for 3 hr shaking at room temperature, after which the tissue was washed three times with PBS for 5 min. Once the secondary antibody solutions were added all liquid handling was conducted in low light until the antibodies were eluted to reduce the chance of fluorophore crosslinking. The imaging buffer was added at least 5 min prior to imaging to ensure the penetrance of the tissue.
 
-## Imaging
+### Imaging
 
 Before imaging, fresh imaging buffer was prepared by dissolving 0.7 M N-Acetyl-Cysteine in 0.2 M phosphate buffer, using 10 M NaOH to adjust the pH to 7.40. Approximately 500 µl of the imaging buffer was added to each well. All 4i images were taken on a Zeiss LSM800 confocal laser-scanning microscope. Images from tile scans were exported using Carl Zeiss ZEN Blue software and stitched using Fiji (Schindelin et al., 2012). For the aging study, DG image stacks were taken with a 20× magnification objective with a 0.8 numerical aperture and composed of tile regions with 10 tiles (5×2), with a pixel resolution of 1024×1024 per tile for a scale of 3.2055 pixels/µm with 16-bit pixel depth. Image stacks consisted of 40 frames acquired with a z-step interval of 1 µm and were used for all quantifications. High-resolution close-ups were acquired with a 40× magnification objective with a 1.1 numerical aperture in a water immersion (Zeiss Immersol W 2010) at a pixel resolution of 2048×2048 with a z-step size of 0.5 µm for 80 frames. These 40× images were used as example images in figures. All acquisitions were done with bi-directional scanning with a pixel dwell time of 2.06 µs. Within each cycle, all samples were labeled with the same antibodies, and imaged with identical microscopy settings for laser power, gain, digital offset, pinhole diameter, and z-step.
 
-## Elution
+### Elution
 
 A stock solution containing 0.5 M L-Glycine, 3 M Urea, and 3 M Guanidine hydrochloride was prepared and kept at 4°C. Prior to elution, 0.07 M (0.02 g/ml) TCEP-HCl was added to a volume of the stock solution determined by multiplying the number of wells by the working volume of 150 µl by three washes. The pH of the buffer was then lowered to 2.5 using 5 M HCl to facilitated denaturation of the antibodies. The tissue was first rinsed with dH2O, then 150 µl of dH2O followed by 150 µl of the elution buffer was added to each well, shaken for 5 min, and repeated for a total of three washes. After elution, the tissue was washed three times for 5 min in PBS, after which the blocking step for the next round of IF could be started.
 
-## Image alignment
+### Image alignment
 
 To achieve accurate alignment between rounds of staining, images were registered using consistent DAPI intensity patterns. At a high digital zoom, the x and y coordinates, as well as the stack position of pixels in DAPI puncta that were recognizable across cycles and were measured. Images were transformed in the x and y planes to align to the image from the first round, with the canvas size being adjust so no image cropped and data was lost. For alignment in the z-plane, blank frames were added or frames lacking positive fluorescent signal were subtracted from the image stack accordingly using the ‘Add Slice’ and ‘Delete Slice’ functions in ImageJ.
 
-## Antigenicity test
+### Antigenicity test
 
 Two brain sections from 2-month-old mice were mounted and stained for all 18 antibodies used in the main study. Regions of the DG were imaged with a Zeiss LSM800 confocal laser-scanning microscope at 20× with the same parameters as in the main study. The sections were then subjected to six rounds of elution washes (3×5 min). The brain sections were incubated with the same secondary antibodies used in the first round and re-imaged to confirm successful antibody removal. A subsequent cycle of staining and imaging was performed with the same primary and secondary antibody combinations as in the first round (Supplementary file 2). Images across cycles were acquired using the same microscope settings (laser power, gain, digital offset, pinhole diameter, and z-step). Regions of interest (ROIs) were drawn around positive cells in images from the first cycle and fluorescent intensities were measured in the same cells from the two rounds of staining as well as following elution and were correlated. For KI67, phosphorylated histone-3, and parvalbumin, too few cells were present in the sections to correlate values.
 
-## Image analysis
+### Image analysis
 
 All quantifications were performed on non-projected 3D z-stack images with cells being sampled throughout the entire thickness of the image. All measures of density and intensity were performed on 16-bit images, while volumetric analyses were performed using 8-bit binary representations of the original images.
 
@@ -130,6 +639,6 @@ Randomized niche mapping: Binary representations of DCX, HOPX, SOX2, PV, ARC, an
 
 Targeted niche mapping: Distance maps were generated around the Nestin+ R cell processes, and proliferating cells, and measured against the binary representations of cells the same as was done for the randomized probing. Nestin-labeled R cell processes were measured as a whole per section. Ki67+ cells were isolated using particle analysis on the maximum intensity z-projection. ROIs were created around the cells and individually applied to the 3D binary to clear signal outside of the cell of interest. Stain volumes were binned at 5 µm intervals and divided by the total measured volume and reported as percent coverage.
 
-## Statistical analyses
+### Statistical analyses
 
 For all analyses, an alpha level was set at 0.05. To assess preservation of antigenicity Pearson correlations were performed on the normalized intensity values of isolated cells or ROIs. Unpaired t-tests were used to compare counted cell densities, as well as quiescent cell marker and LaminB1 intensities of DCX-labeled immature neurons and PV interneurons between the 2- and 12-month groups. The standard deviations between age groups were significantly different for the intensities of LaminB1 in R cells, IBA1-labeled microglia, and S100β+ astrocytes so they were compared using Welch’s t-tests. One-way ANOVAs were performed to assess differences between ages in vascular densities, blood vessel coverage, randomized microniche volumes, and stem cell contact measures. These analyses were followed by post hoc Tukey’s multiple comparisons tests. When data failed the Brown-Forsythe test for equal variances, Welch’s ANOVA tests were run with Dunnett’s T3 multiple comparisons. For the microniche volumetric measures, Games-Howell’s multiple comparisons were used to account for the large group sizes. In comparing spots identified as young and old, Nestin high and low, and KI67 positive and negative, multiple unpaired t-tests were performed with Holms-Sidak correction for multiple comparisons. Microenvironments surrounding radial processes and proliferating cells were analyzed using mixed-effects model analysis and Tukey’s multiple comparisons tests.

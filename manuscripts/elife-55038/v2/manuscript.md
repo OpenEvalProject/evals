@@ -37,9 +37,45 @@ To address this, we aimed to rapidly and selectively manipulate cellular membran
 
 ## Results
 
-## Lipids rapidly insert into the PM of living cells via liposome-mediated membrane fusion
+### Lipids rapidly insert into the PM of living cells via liposome-mediated membrane fusion
 
 As a tool to study the effects of altered lipid composition on caveolae dynamics, we employed fusogenic liposomes. This allowed rapid insertion of lipids into the PM of HeLa cells via membrane fusion (Figure 1A). To assess the effect of specific lipids, Bodipy-labeled analogues of sphingolipids (Cer, SM C5 and SM C12), GSLs [ganglioside GM1 and lactosyl ceramide (LacCer)], Chol and phosphatidyl ethanolamine (PE) (Figure 1—figure supplement 2A) were incorporated into liposomes [DOPE/Dotap/Bodipy-tagged lipid (47.5/47.5/5)] (Csiszár et al., 2010). Liposomes had diameters between 160 and 300 nm (Figure 1—figure supplement 2B) and an average fluorescence per liposome of 600 a.u (Figure 1—figure supplement 2C). The Bodipy fluorophore allowed us to track and quantify lipid incorporation in the PM and study their colocalization with caveolae components. To ensure the observed effects were not significantly influenced by the fluorophore motif, the results were verified with unlabeled lipids. Liposome fusion with the PM of HeLa cells occurred immediately upon contact and the lipids were rapidly distributed throughout the basal membrane, as observed using live cell total internal reflection fluorescence (TIRF) microscopy (Figure 1B and Figure 1—figure supplement 2D, exemplified by LacCer). The total fluorescence attributed to the Bodipy motif increased uniformly in various regions of interest (ROIs) (Figure 1B, line graph). Lipid incorporation was similar for all cells in the population and the even distribution of lipids in the PM was observed for all lipid species (see Figures 1B, F, 2C and 4A–D, Figure 2—figure supplement 2A, Figure 2—videos 1, 2, 3, 4, Figure 3—figure supplement 1A, Figure 4—figure supplement 2A–D). Occasionally, bright stable spots and some enrichment of lipids in cellular protrusions were observed independent of lipid species.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig1-v2.jpg)
+
+**Figure 1.:** (A) Fusogenic liposomes are used to insert Bodipy-labeled lipids into the PM. Their rapid distribution is followed in real time using TIRF microscopy. (B) Image sequence of Bodipy-LacCer distribution throughout basal membrane of HeLa cells. Total Bodipy fluorescence intensity (FI) was measured within ROIs (yellow insert) using Zeiss Zen interface. n = 10, three independent experiments, mean ± SEM. (C) Quantification of endogenous SM(d18:1/16:0) using LC-ESI-MS/MS in control cells or cells treated with SMase or myriocin for 2 hr or 24 hr, respectively. Data are shown as mean ± SD. ***, p≤0.001 vs. control. (D) Quantification of Bodipy- or d7-labeled lipids (black bars) and endogenous lipids (grey bars) in cells following incubation of cells with fusogenic liposomes. Analysis was performed using mass spectrometry. Data are shown as mean + SD. (E) Incorporation rate of Bodipy-lipids into PM of live cells. HeLa cells were treated with fusogenic liposomes (final total lipid concentration 7 nmol/ml). Total Bodipy fluorescence intensity (FI) was measured within circular ROIs (see insert) in a confocal section using spinning disk microscopy. Ten ROIs were analyzed using the Zeiss Zen system software. n ≥ 2, two independent experiments, mean ± SEM. Scale bars, 10 μm. (F) TIRF FRAP of Bodipy-lipids after incorporation into PM of HeLa cells. A circular ROI was photobleached and recovery of Bodipy FI was monitored over 5 min. Bodipy FI was normalized to background and reference. n ≥ 10, mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Scheme illustrating caveolae dynamics at PM. Caveolae formation and coat assembly are primarily driven by the integral membrane protein Cav1 and cavin proteins. EHD2 controls surface association of caveolae.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Chemical structures of lipids used in this study. (B) Hydrodynamic diameter as z-average of DOPE:DOTAP:Bodipy-lipid liposomes. n = 3, three independent experiments, mean ± SD. (C) Total Bodipy FI of liposomes containing Bodipy-LacCer was determined in a single confocal section (0.5 μm) using spinning disk microscopy. Bodipy FI corresponds to the number of liposomes measured in each ROI. n = 22, mean ± SEM. (D) Time-lapse imaging of a vesicle fusing with the PM. A single fusion event highlights the rapid distribution of the fluorophore from the liposome-membrane contact site and subsequent fusion. Distribution of Bodipy fluorescence is intensity‐coded using lookup table (LUT). Scale bars, 10 μm. (E) Analysis of the cell volume before and after addition of Bodipy-LacCer liposomes. Cell surface was segmented with Imaris using mCh fluorescence. Identical symbols in control and Bodipy-LacCer represent the same cell. n = 8, mean ± SD.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A, B) Visualization of chromatography of Bodipy-SM C12. Samples visualized: Bodipy-LacCer treated samples, Bodipy-SM C12 treated samples, DOPE control samples and a negative control of Bodipy-SM C12 (liposomes added to wells without cells). (A) Chromatography of the samples. (B) Integrated area of each individual sample.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Representative immunoblots showing protein expression of EHD2, Cav1-mCh, and Cav1 after induction of Cav1-mCh HeLa cells with different concentrations of Dox. Clathrin HC served as loading control. (B) Representative confocal micrographs of fixed Cav1-mCh HeLa cells stained against Cav1. Top, non-induced cells; bottom, 0.5 ng/ml Dox induced cells. Scale bar, 10 μm. (C) Scatter plot showing number of caveolae per basal membrane from confocal micrographs of cells treated as in (B) or 0.5 ng/ml Dox induced Cav1-mCh cells acquired by live cell TIRF microscopy. Caveolae from at least 10 cells per condition were counted using the Imaris software. mean ± SEM
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig2-v2.jpg)
+
+**Figure 2.:** (A) Scheme showing different dynamic behaviors of caveolae. (B, B’) Distribution of track mean speed among subpopulations of track duration of Cav1-mCh structures (B) and after EHD2 depletion (B’). Five datasets for each condition were analyzed from TIRF live cell movies. (C) Representative images from TIRF movies of Cav1-mCh HeLa cells and after 15 min incubation with liposomes containing Bodipy-lipids. Color-coded trajectories illustrate time that structures can be tracked at PM over 5 min (dotted square). Scale bars, 10 μm. See Figure 2—videos 1, 2, 3, 4. (D,E) Quantification of track duration of Cav1-mCh structures from TIRF movies after incubation with liposomes containing labeled (D) or unlabeled lipids (E). Fold changes are relative to control (Cav1-mCh). (D) n ≥ 8, at least two independent experiments; (E) n ≥ 8, two independent experiments, ***, p≤0.001 vs. control. (F) Quantification of track mean speed of Cav1-mCh structures from TIRF movies (same cells as in (D)). (G) Quantification of track duration of Cav1-mCh structures from TIRF movies following incubation with SMase for 2 h. Fold changes are relative to control (Cav1-mCh). n ≥ 5. All analyses were performed using Imaris software and data are shown as mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Correlation between track duration and track mean speed. TIRF live cell movies of Cav1-mCh structures (A) and cells lacking EHD2 (B) were analyzed. Identical symbols represent tracks from the same cell. (C) Distribution of track mean speed in subpopulations of track duration of Cav1-mCh structures treated with Bodipy-LacCer liposomes. (D) Correlation between track duration and track mean speed of Cav1-mCh structures treated with Bodipy-LacCer liposomes. In (A–D) five datasets were analyzed for each condition using Imaris software.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative images from TIRF live cell movies of Dox-induced Cav1-mCh HeLa cells after incubation with different fusogenic liposomes containing Bodipy-lipids (final total lipid concentration of 7 nmol/ml) for 15 min. Cav1-mCh structures were tracked using Imaris software. Color-coded trajectories illustrate time that structures were tracked at the PM over 5 min (dotted square). Scale bars, 10 μm. (B) Number of Cav1-mCh positive structures at the beginning and at the end of 5 min TIRF movies and the corresponding number of tracks detected. n ≥ 8, three independent experiments, mean ± SEM. (C) Relative number of caveolae at the PM of Cav1-mCh HeLa cells before and after addition of fusogenic liposomes. TIRF live cell movies from Figure 2C and (A) were analyzed. Number of caveolae after lipid treatment was normalized to the number of caveolae in control cells. n ≥ 8, three independent experiments, mean ± SEM.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** To track caveolae dynamics, 5 min TIRF movies of induced Cav1-mCh HeLa cells were recorded with an acquisition time of 3 s. One frame from the movie is depicted (Cav1-mCh). Spot analysis of Cav1-mCh positive structures was performed, and structures were segmented and those with a diameter of 0.4 μm were selected based on a quality of intensity set to 2% as previously described (Mohan et al., 2015) (Cav1-mCh positive spots). The spot tracking algorithm was based on Brownian motion with max distance travelled of 0.8 μm and a max gap size of (Cav1-mch tracks). Track duration time and mean speed data were extracted from the analysis. No data that could distinguish between single caveolae and rosettas could be obtained. Scale bars, 10 μm.
 
 To determine the amounts of lipids that were incorporated in the membrane through liposome fusion, we used quantitative mass spectrometry on whole cells as 90% of these lipids are located in the PM (Lorizate et al., 2013). The method was verified by altering the lipid composition using myriocin (24 h treatment) or sphingomyelinase (SMase, 2 h treatment), which are known to lower the levels of sphingomyelin (Gulshan et al., 2013). Analysis showed that these treatments drastically decreased SM(d18:1/16:0) levels, the major endogenous species of SM (Figure 1C). Next, we incubated cells with fusogenic liposomes containing Bodipy-labeled LacCer or SM C12, and analyzed the lipid composition by liquid chromatography electrospray ionization tandem mass spectrometry (LC-ESI-MS/MS). The detected levels of endogenous LacCer(d18:1/16:0) and SM(d18:1/16:0) in untreated control samples were in agreement with previously reported levels in HeLa cells (Kjellberg et al., 2014). In samples treated with fusogenic liposomes, the incorporated Bodipy-lipids could be specifically detected (Figure 1—figure supplement 3A and B). The incorporated levels of Bodipy-LacCer and Bodipy-SM C12 per 400 000 cells were measured to be 4.2 pmol and 2.7 pmol, respectively, (i.e., 6.3 × 106 and 4.0 × 106 lipids/cell) (Figure 1D). To assess the incorporation efficiency of Chol, deuterium-labeled Chol, d7-Chol, was included in fusogenic liposomes. GC-MS/MS analysis revealed that d7-Chol was incorporated to similar levels as Bodipy-labeled LacCer and SM C12. Given that the PM of these HeLa cells harbor around 7 × 109 lipids/cell (see Materials and methods section for details), the levels of Bodipy- and d7-labeled lipids detected by mass spectrometry led to a 0.02–0.09% increase in specific labeled lipids and a 0.4–1.6% of total lipids.
 
@@ -47,17 +83,37 @@ To determine the rate of incorporation of the different Bodipy-labeled lipid spe
 
 To conclude, the use of fusogenic liposomes enabled rapid incorporation of approximately 4 × 106 specific lipids into the PM per living cell over 10 min. To put this into context, we estimated that each cell contains around 300 caveolae, based on our staining and tracking data (Figure 1—figure supplement 4C), comprising around 0.1% of the surface area. Caveolae are approximately 60 nm in diameter, and each lipid occupies 0.62 Å. Therefore ca. 10 × 106 lipids are contained within the caveolae, of which 50% is Chol. This means that the amount of specific incorporated lipids in our system is about half of the total amount of lipids contained within caveolae. The immediate addition of extra lipids to the PM did not result in a detectable effect on the cell volume (Figure 1—figure supplement 2E).
 
-## Single particle tracking reveals caveolae dynamics in living cells
+### Single particle tracking reveals caveolae dynamics in living cells
 
 We next aimed to elucidate whether lipids are involved in controlling the balance between stable and dynamic caveolae at the PM, and if effects could be attributed to individual lipid species. To visualize caveolae, we generated a stable mammalian Flp-In T-Rex HeLa cell line expressing Cav1-mCherry, hereafter named Cav1-mCh HeLa cells. Expression of Cav1-mCherry was induced by doxycycline (Dox) at endogenous Cav1 levels, resulting in similar caveolae numbers to those without induction (Figure 1—figure supplement 4A–C). Using TIRF microscopy and single-particle tracking, we determined the time each Cav1-mCh positive punctuate structure spent at the PM (track duration) and the speed of an object (track mean speed) in, or close to, the PM (see Materials and method section for detailed tracking parameters and Figure 2—figure supplement 3). Given the previously reported surface dynamics of caveolae (Pelkmans and Zerial, 2005; Boucrot et al., 2011; Mohan et al., 2015), we postulated that stable caveolae will have a long duration and low speed, limited by their lateral diffusion in the PM (Figure 2A, ‘Stable’). Caveolae that scission off or re-fuse with the PM during the recording period will give rise to shorter mean duration and increased mean speed. Caveolae that remain close to the surface and undergo rounds of scission and fusion, will result in an overall increase in tracks (Figure 2A). Caveolae disassembly will give rise to shorter tracks but no increase in mean speed and importantly a major loss of tracks. We did indeed observe a clear correlation between the track duration and track mean speed where, in general, short tracks exhibited higher speeds, whereas long tracks displayed lower speeds (Figure 2B and Figure 2—figure supplement 1A). Although the numbers of caveolae in each cell were similar at the beginning and end of the recording, we found that the number of tracks far exceeded the caveolae numbers (Figure 2—figure supplement 2B). This was expected as surface adjacent caveolae would give rise to several tracks. However, a drop in the fluorescent signal just below the set threshold value, would also contribute to a divided track, resulting in an overestimation of short tracks versus long tracks. Therefore, we did not consider the average duration and speed as absolute, but rather used them to compare between experimental runs with differing conditions. To verify that the tracking was sensitive to differences in caveolae dynamics, we depleted cells of EHD2, which has been shown to stabilize caveolae to the cell surface (Morén et al., 2012; Stoeber et al., 2012). Particle tracking analysis showed that the pool of tracks with high speed increased, while the pool with low speed decreased (Figure 2B’ and Figure 2—figure supplement 1B). When the average track duration was considered, this translated into a 0.65 fold decrease compared to control cells (Figure 3E), proving that the particle tracking was indeed sensitive enough to register caveolae scission induced by removal of EHD2.
 
-## Caveolae surface stability is influenced by distinct lipid composition
+![Figure 3.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative images of maximum projected confocal z-stacks of Cav1-mCh HeLa cells. Untreated cells or cells treated with LacCer-Bodipy liposomes for 1 h, fixed and immunostained for endogenous EHD2. High-magnification images (dotted square) show localization of EHD2 to Cav1-mCh (see scatterplot for quantification). n ≥ 60, two independent experiments, mean ± SEM. ***, p≤0.001 vs. control. (B) Experimental protocols analogous to (A), with exception of endogenous cavin1 immunostaining. n ≥ 60, mean ± SEM. (C) Confocal FRAP of Cav1-mCh HeLa cells treated with either EHD2 siRNA or Bodipy-LacCer liposomes. A ROI was photobleached and recovery of mCherry FI monitored over 5 min. mCherry FI was normalized to background and reference. n ≥ 10, mean ± SEM. (D) Representative time-lapse series showing control Cav1-mCh HeLa cells and cells treated with either EHD2 siRNA or Bodipy-LacCer liposomes. The photobleached area is outlined with white circles. mCherry FI is intensity‐coded using LUT. (E) Effects of lipids on track duration of Cav1-mCh structures were analyzed following siRNA-mediated depletion of EHD2. n ≥ 8, two independent experiments, mean ± SEM. (F) Quantification of track duration of untreated Cav1-mCh HeLa cells or cells transiently expressing EHD2-BFP with or without incubation with liposomes. Changes in track duration are relative to EHD2-BFP control (indicated by dotted line). n ≥ 8, two independent experiments, mean + SEM. ***, p≤0.001 vs. control cells. (G) Representative live cell confocal image of EHD2-647 microinjected into Cav1-mCh HeLa cells. (H) Quantification of track duration of Cav1-mCh cells treated with Bodipy-LacCer and following microinjection of EHD2-647. n = 8, mean + SEM. All scale bars, 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative TIRF micrographs of cavin1-GFP transfected Dox-induced Cav1-mCh HeLa cells. The same cells were imaged before and after incubation with fusogenic liposomes as depicted (final total lipid concentration 7 nmol/ml). Scale bar, 10 μm. (B) Bar graph shows fold change of the percentage of colocalizing spots before and after liposome treatment relative to untreated cells. n ≥ 10, at least two independent experiments, mean ± SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative immunoblots of Cav1-mCh HeLa cells treated with Ctrl siRNA or siRNA against EHD2. Clathrin HC served as loading control. (B) Effect of lipids on track duration of Cav1-mCh structures analyzed following control siRNA-treatment. n ≥ 8, two independent experiments, mean ± SEM. (C) Quantification of track mean speed of Cav1-mCh structures from TIRF movies treated with control siRNA or siRNA against EHD2. Fold changes are relative to untreated cells (Cav1-mCh). n ≥ 8, two independent experiments, ***, p≤0.001 vs. untreated.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative time-lapse images of Cav1-mCh positive for EHD2-BFP (yellow arrows) or lacking EHD2-BFP (white arrows) in double Flp-In EHD2-BFP Cav1-mCh HeLa cells. Dotted box shows higher magnification region. Numbering corresponds to number of frames. Scale bar, 10 μm; inset scale bars, 2 μm. (B) Differences in track duration of Cav1-mCh structures positive for EHD2-BFP or lacking EHD2-BFP in double Flp-In EHD2-BFP Cav1-mCh HeLa cells. Percentage of Cav1-mCh structures positive or lacking EHD2-BFP are indicated. n = 8, mean ± SEM. (C) Representative immunoblots of double Flp-In EHD2-BFP Cav1-mCh HeLa cells induced with 1 ng/ml Dox. (D) FRAP curves of mCh-tagged EHD2 wt or EHD2 I157Q expressing HeLa cells. A ROI was photobleached and recovery of mCherry fluorescence intensity (mCherry FI) was monitored. Intensities were normalized to background and reference. n = 8, mean ± SEM. (E) Cav1-mCh HeLa cells transiently expressing EHD2-I157Q-BFP were incubated with Bodipy-LacCer or Bodipy-Chol liposomes and track duration was analyzed. n ≥ 8, two independent experiments, mean + SEM. Imaris software was used to analyze data. Changes in track duration are relative to EHD2-I157Q-BFP control (indicated by dotted line).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Representative live cell TIRF images of Cav1-mCh HeLa cells untreated or treated with Bodipy-LacCer and with or without microinjection of EHD2-647. (B) Quantification of the colocalization of microinjected EHD2-647 to Cav1-mCh in control cells and cells treated with Bodipy-LacCer liposomes prior to injection. n ≥ 5, mean ± SEM . Scale bar, 10 μm. Imaris software was used to analyze data.
+
+### Caveolae surface stability is influenced by distinct lipid composition
 
 Next, we screened the influence of different lipid species on caveolae mobility at the PM using tracking. To do this, fusogenic liposomes loaded with relevant lipids were added to Cav1-mCh HeLa cells, and TIRF movies were recorded immediately (Figure 2C). PE was used in control liposomes as it is abundant in the PM. Following incorporation of PE, caveolae dynamics remained unchanged, showing that the fusion of liposomes did not obstruct caveolae dynamics (Figure 2D and Figure 2—figure supplement 2A). In comparison to controls, Bodipy-labeled GSLs (GM1 and LacCer) and Chol significantly reduced the lifetime of caveolae at the cell surface as indicated by decreased track duration and increased mean speed (Figure 2C,D,F, Figure 2—figure supplement 2A, Figure 2—videos 1, 2, 3). For example, LacCer treatment increased the number of fast moving and short-lived caveolae versus slow moving and long-lived species, which was comparable to the EHD2 depletion (Figure 2B’, Figure 2—figure supplement 1B–D and Figure 2—figure supplement 2C).
 
 A direct comparison between LacCer and Cer revealed that Cer did not enhance caveolae dynamics in a similar fashion (Figure 2D and F and Figure 2—figure supplement 2A). No difference was observed in the number of caveolae present in the PM before and after the addition of liposomes (Figure 2—figure supplement 2C), showing that caveolae were not disassembled and indicating that most of the scissioned caveolae remained surface adjacent. To verify that the effect was not an artifact of the Bodipy label, we treated cells with liposomes containing either unlabeled LacCer [(LacCer(d18:1/16:0)], unlabeled Chol or unlabeled SM [(SM(d18:1/16:0)] and quantified the track duration. This showed that the unlabeled lipids had the same effect on the caveolae dynamics as the corresponding Bodipy-labeled analogues (Figure 2E). Interestingly, when cells were treated with unlabeled SM or Bodipy-SM C12, most of the caveolae were stable at the PM. This was characterized by a dramatic increase in track duration, and a reduction of the track mean speed (Figure 2D–F). However, incorporation of SM C5 did not significantly alter caveolae dynamics, suggesting that the fatty acid chain length was important for this effect. Even at three times the amount (3x SM C5) to control for incorporation rate, no effect was observed (Figure 2D and Figure 2—figure supplement 2D). To further investigate the role of SM, we analyzed caveolae duration following SMase treatment, and found that this resulted in a decreased track duration, in agreement with a surface-stabilizing role for this lipid (Figure 2G).
 
-## Chol and GSLs induce scission of caveolae via mechanisms that are counteracted by EHD2
+### Chol and GSLs induce scission of caveolae via mechanisms that are counteracted by EHD2
 
 EHD2 normally localizes with the majority of surface associated caveolae (Morén et al., 2012). We aimed to address whether the increased caveolae dynamics induced by either Chol or GSLs were caused by their PM release, as characterized by loss of the stabilizing protein EHD2. Therefore, we treated Cav1-mCh HeLa cells with the fusogenic liposomes and visualized endogenous EHD2 using indirect immunofluorescent labeling (Figure 3A). These experiments revealed that incorporation of GM1, LacCer, or Chol into the PM led to a significantly lower amount of EHD2 that colocalized with Cav1 (Figure 3A, scatter plot). These data suggest that the caveolae release induced by increased PM levels of LacCer and Chol is results from loss of EHD2-mediated stabilization. Conversely, Cer and SM C12, as well as its short chain analogue SM C5, did not appear to have any significant effect on the association of EHD2 with Cav1 (Figure 3A, scatter plot). Furthermore, following lipid treatment, the majority of caveolae remained associated with cavin1 (Figure 3B). To verify that caveolae at the cell surface were not disassembled via detachment of cavin1, we compared the colocalization of Cav1-mCh with cavin1-GFP before and after lipid treatment using TIRF microscopy (Figure 3—figure supplement 1A–B). These data showed that there was no significant change in the number of cavin-decorated caveolae following incorporation of any of the specific lipids, revealing that no disruption of the caveolae coat, and subsequent release of cavin1 occurred.
 
@@ -69,25 +125,53 @@ To test whether EHD2-mediated suppression of the lipid effect relied on multipl
 
 To clarify whether, in order to have a stabilizing role, EHD2 had to be caveolae-associated prior to lipid addition, fluorescently labeled, purified EHD2 (EHD2-647) was microinjected into Cav1-mCh HeLa cells (Figure 3G). Within 20 min, EHD2-647 colocalized with Cav1, confirming that the microinjected protein was indeed recruited to caveolae (Figure 3—figure supplement 4A–B). Next, we tested whether an acute injection of EHD2-647 could rescue the effect on caveolae dynamics caused by LacCer. Strikingly, we found that exogenously added EHD2 stabilized the caveolae to the same extent as the overexpressed EHD2, demonstrating that increased levels of EHD2 can acutely reverse the increased mobility of caveolae induced by lipids (Figure 3H).
 
-## Chol and SM are sequestered within caveolae
+### Chol and SM are sequestered within caveolae
 
 As SM C12 increased the surface stability of caveolae, while GSLs and Chol promoted scission, we investigated whether there was a differential accumulation of these lipids within caveolae at the PM. We treated Cav1-mCh HeLa cells with fusogenic liposomes and followed the distribution of Bodipy-labeled lipids using live cell TIRF microscopy. After 15 min, LacCer, Chol , and SM C12 lipids were found to colocalize with Cav1-mCh positive structures (Figure 4—figure supplement 2A–D and Figure 4—videos 1 and 2). Data analysis was hindered by high caveolae mobility following addition of LacCer and Chol, and the extent of colocalization could not be quantified. To circumvent this, we overexpressed EHD2-BFP to stabilize caveolae at the PM. Interestingly, nearly 80% of caveolae positive for EHD2 were also positive for LacCer, Chol, and SM C12 (Figure 4A–C, Figure 4—figure supplement 1A–B and Figure 4—videos 3 and 4). In comparison, Cer, which had no effect on caveolae dynamics, did not localize to caveolae, even in the presence of EHD2-BFP (Figure 4D, Figure 4—figure supplement 1A and Figure 4—figure supplement 2D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Cav1-mCh HeLa cells transiently expressing EHD2-BFP were incubated with Bodipy-lipids. White lines indicate location of kymograph. TIRF movies were recorded at 3 s intervals for 5 min. Scale bars, 10 μm; kymograph scale bars, 5 μm. See Figure 4—videos 3 and 4. (E) Cav1-mCh HeLa cells transiently expressing EHD2-BFP were incubated with Bodipy-LacCer for 10 min. Following photobleaching (yellow ROI), recovery of Bodipy signal within caveolae (red ROI) and bulk PM (cyan ROI) was monitored over time. White arrows highlight surface connected caveolae with accumulated Bodipy-LacCer. Scale bar, 10 μm. (F) Recovery curves of Bodipy intensities within caveolae ROI (red) and bulk PM ROI (cyan). Bodipy FI was normalized to background and reference.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cav1-mCh HeLa cells transiently expressing EHD2-BFP were incubated with Bodipy-lipid liposomes. White lines shown in Figure 4A–D indicate the location of the kymograph and the corresponding intensity profiles illustrate the colocalization of Bodipy-lipids with Cav1-mCh in the presence of EHD2-BFP. Intensity profiles are relative to the maximum value for each sample. (B) Quantification of EHD2-positive caveolae colocalizing with Bodipy-lipids. n ≥ 8, at least two independent experiments, mean ± SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–D) Cav1-mCh HeLa cells were incubated with Bodipy-lipid liposomes as indicated. White lines indicate the location of the kymograph and the corresponding intensity profiles illustrate the colocalization of Bodipy-lipids with Cav1-mCh. Intensity profiles are relative to the maximum value for each sample. Scale bars, 10 μm; kymograph scale bars, 5 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A, B) Bodipy fluorescence recovery experiments to study the accumulation of lipids in caveolae. Cav1-mCh HeLa cells transiently expressing EHD2-BFP were incubated with liposomes containing either (A) Bodipy-Chol or (B) Bodipy-SM C12 for 10 min. Following photobleaching (yellow ROI), the fluorescence recovery of the Bodipy signal within caveolae (red ROI) and the bulk PM (cyan ROI) was monitored over time. White arrow highlights surface connected caveolae with accumulated Bodipy-lipid. Scale bars, 10 μm. (C) Bodipy signal recovery within caveolae. Cav1-mCh HeLa cells transiently expressing EHD2-BFP were incubated with Bodipy-SM C12 liposomes for 10 min. Representative recovery curve of Bodipy intensities within caveolae ROI is shown following photobleaching. Bodipy FI was normalized to background and reference.
+
 To investigate lipid exchange between the stable caveolae and the surrounding PM, we performed FRAP experiments. The Bodipy-LacCer signal reappeared rapidly at precisely the bleached spot positive for Cav1-mCh, with a close to quantitative fluorescence recovery (Figure 4E–F). This indicated that the lipid diffused freely throughout the PM and, following photobleaching, re-accumulated quickly within caveolae. In comparison, Bodipy-Chol recovered much slower with 60% of the initial signal being restored after 5 min acquisition time (Figure 4F and Figure 4—figure supplement 3A). This showed that there is a large immobile pool of Chol in caveolae that is sequestered from the rest of the PM. The signal from Bodipy-SM C12 was almost exclusively detected in caveolae hampering recovery measurements outside of this domain (Figure 4—figure supplement 3B–C). However, the recovery rate of the SM C12 within caveolae was very low, showing that SM C12 is also sequestered in caveolae in the presence of EHD2. Our data suggest that LacCer, Chol, and SM C12 are highly enriched in caveolae and, while the lateral diffusion of LacCer in and out of caveolae is high, Chol and SM C12 are restrained to this invagination.
 
-## Chol accumulation reduces the caveolae diameter in 3T3-L1 adipocytes
+### Chol accumulation reduces the caveolae diameter in 3T3-L1 adipocytes
 
 To elucidate whether lipid accumulation affected the overall morphology of surface connected caveolae in Cav1-mCh HeLa cells, we analyzed their ultrastructure in cells overexpressing EHD2. As the number of caveolae in the PM of these cells is relatively low, we used correlative light electron microscopy (CLEM) to specifically identify fluorescently tagged caveolae by combining light microscopy with the higher resolution images of transmission electron microscopy (TEM). Fluorescence light microscopy images of Cav1-mCh HeLa cells were superimposed with correlative electron micrographs to find the closest match of fluorescence signal to structure using the nuclear stain as a guide (Figure 5—figure supplement 1A). The surface connected caveolae in cells treated with LacCer, Chol, and SM C12, displayed a similar flask-shaped morphology to that seen in control cells, verifying that lipid addition did not majorly distort caveolae morphology (Figure 5A and Figure 5—figure supplement 1B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative overlays of light microscopy images with corresponding electron micrographs showing localization of caveolae (Cav1-mCh in red) and nuclei (DAPI in cyan) for untreated Cav1-mCh HeLa cells (control) or cells treated with Bodipy-labeled Chol or LacCer. Dotted boxes show regions of higher magnification in corresponding panels below. N, nucleus; PM, plasma membrane. White arrows denote surface connected caveolae and black arrows indicate surface adjacent caveolae. Scale bars, 1 μm; inset scale bars, 100 nm. (B, C) Electron micrographs of control 3T3-L1 adipocytes (B) and 3T3-L1 adipocytes treated with Bodipy-Chol (C). Top and bottom panels show two representative images per sample: one with clear surface connected necks and one without. Cells were chemically fixed, embedded in resin, and processed for electron microscopy. Scale bars, 100 nm. (D, D’) Scatter plots showing the quantification of neck diameter (D) and bulb width (D’) of surface connected caveolae in 3T3-L1 adipocytes. Bulb width and neck diameter are highlighted in (B), upper panel. n ≥ 30, mean ± SEM. (E, E’) Scatter plots showing the quantification of surface area (E) and bulb width (E’) of surface adjacent caveolae in 3T3-L1 adipocytes. n ≥ 120, mean ± SEM. ***, p≤0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cav1-mCh HeLa cells were induced with Dox and transiently expressed EHD2-GFP. Light microscopy image showing localization of caveolae (Cav1-mCh) and nuclei (DAPI) within cells (LM, left panel). Middle panel depicts corresponding EM images. Overlay of LM and EM images shows correlation of fluorescently labeled structures to ultrastructure in same cells (right panel). Scale bar, 2 μm. (B) Representative overlays of light microscopy images with corresponding electron micrographs showing localization of caveolae (Cav1-mCh in red) and nuclei (DAPI in cyan) for Cav1-mCh HeLa cells treated with Bodipy-labeled SM C12. Dotted boxes show regions of higher magnification in corresponding panels below. N, nucleus; PM, plasma membrane. White arrows denote surface connected caveolae and black arrows indicate surface adjacent caveolae. Scale bars, 1 μm; inset scale bars, 100 nm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative immunoblots showing protein expression of EHD2 and Cav1 during 3T3-L1 differentiation. Clathrin HC served as loading control. (B) Representative electron micrographs of 3T3-L1 adipocytes. Caveolae (indicated by arrow) can be clearly distinguished from clathrin-coated pits (indicated by asterisk). Scale bar, 100 nm. (C) Incorporation rate of Bodipy-Chol into the PM of live 3T3-L1 adipocytes. Cells were treated with fusogenic liposomes (final total lipid concentration 7 nmol/ml). Total fluorescence intensity (FI) of the Bodipy signal was measured within circular ROIs in a confocal section using spinning disk microscopy. Ten ROIs were analyzed using the Zeiss Zen system software. n = 2, mean ± SEM.
+
 To quantitatively assess differences in morphology related to caveolae scission in a more physiologically relevant system, we used adipocytes as they are a main source of cholesterol storage and efflux (Krause and Hartman, 1984), but are devoid of LacCer (Ortegren et al., 2004). We differentiated 3T3-L1 cells to adipocytes, which results in upregulation of Cav1 and EHD2 (Figure 5—figure supplement 2A; Morén et al., 2019), and formation of a large number of caveolae (Thorn et al., 2003) that could be clearly distinguished from clathrin-coated pits (Figure 5—figure supplement 2B). Lipid incorporation quantification verified that fusogenic liposomes could be used to insert specific lipids into the PM of these cells (Figure 5—figure supplement 2C). Using TEM, we analyzed the dimensions of caveolae before and after Chol addition (Figure 5B–E). We found that the neck diameter of surface associated caveolae were significantly decreased and more homogeneous following Chol incorporation in comparison to control cells (Figure 5D). Furthermore, the bulb width was also significantly smaller resulting in more drop-shaped caveolae (Figure 5D´). Quantitative analysis of the caveolae population where a clear surface connected neck could not be detected allowed measurement of the surface area of caveolae. Comparison to control cells showed that area, as well as bulb width, decreased following Chol addition (Figure 5E–E´). Furthermore, Chol incorporation resulted in a more homogeneous caveolae population in terms of size and dimensions. These data suggested that an acute increase in Chol levels in the PM of 3T3-adipocytes induced alterations in the caveolae coat architecture, resulting in reduced neck diameter and a smaller more uniform bulb diameter.
 
-## GSLs are internalized to the endosomal system independently of Cav1, while Chol is predominantly trafficked to lipid droplets
+### GSLs are internalized to the endosomal system independently of Cav1, while Chol is predominantly trafficked to lipid droplets
 
 Next, we aimed to address whether caveolae scission significantly contributed to internalization and trafficking of lipids in our system as previously proposed (Puri et al., 2001; Le Lay et al., 2006; Shvets et al., 2015). We used fusogenic liposomes to investigate whether Bodipy-labeled LacCer or Chol were internalized and trafficked through the endosomal pathway following incorporation into the PM. To mark early endosomes (EE), Rab5-BFP was transiently expressed in Cav1-mCh HeLa cells. Cells were incubated with fusogenic liposomes for either 15 min or 3 h, followed by fixation and EE localization was quantified. We observed localization of LacCer to the EE but not to the Golgi, contrasting previous studies using BSA-Bodipy-LacCer (Puri et al., 2001). After 15 min, more than half of the EE were positive for LacCer (55%) compared to only 6% for Chol (Figure 6A–B). After 3 h, the number of LacCer-positive EE remained constant, whereas the EE positive for Chol had increased to 18% (Figure 6B). The amount of caveolae that colocalized with EE was very low, both before and after treatment with lipids (Figure 6C). To test if caveolae were involved in lipid trafficking to the EE, the experiments were repeated in cells depleted of Cav1 (Figure 6D–F). After 15 min incubation time, 55% and 10% of EE were positive for LacCer and Chol, respectively (Figure 6D–E). This suggested that while caveolae did not seem to influence the efficiency of LacCer or Chol trafficking to endosomes, loss of Cav1 resulted in an increased amount of Chol accumulating in this compartment. Our data indicate that caveolae serve as buffers or sensors of GSL and Chol concentrations rather than endocytic vesicles.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/55038/elife-55038-fig6-v2.jpg)
 
-**Figure 6.:** (A) Cav1-mCh HeLa cells expressing Rab5-BFP were incubated with Bodipy-labeled LacCer or Chol for 15 min. Individual channels are shown for selected areas (dotted box). (B) Colocalization of lipids with Rab5-positive structures after indicated time-points. (C) Quantification of Cav1-mCh localization to Rab5-BFP positive structures before (control) and after lipid addition. Statistical analysis: ns - non significant. (D) Cav1 siRNA-treated Cav1-mCh HeLa cells expressing Rab5-BFP after incubation with Bodipy-labeled LacCer or Chol for 15 min. High-magnification images of selected areas (dotted box) for each channel are shown. (E) Quantification of EE positive for lipids in cells treated with siRNA control or against Cav1. Cells were incubated with Bodipy-lipids for 15 min. (F) Representative immunoblots of Cav1-mCh HeLa cells treated with control siRNA or siRNA against Cav1. Clathrin HC served as loading control. (G) Cav1-mCh HeLa cells were incubated with Bodipy-lipids for 15 min, fixed and LDs were stained using LipidTOX-DR. (H) Colocalization of lipids to LDs. (I) Colocalization of lipids with LDs in cells depleted of Cav1 after 15 min. (B, C, E, H, I) n = 10, mean ± SEM. All scale bars, 5 μm.Figure 6—source data 1.Figure 6B,C,E,H and I.
+**Figure 6.:** (A) Cav1-mCh HeLa cells expressing Rab5-BFP were incubated with Bodipy-labeled LacCer or Chol for 15 min. Individual channels are shown for selected areas (dotted box). (B) Colocalization of lipids with Rab5-positive structures after indicated time-points. (C) Quantification of Cav1-mCh localization to Rab5-BFP positive structures before (control) and after lipid addition. Statistical analysis: ns - non significant. (D) Cav1 siRNA-treated Cav1-mCh HeLa cells expressing Rab5-BFP after incubation with Bodipy-labeled LacCer or Chol for 15 min. High-magnification images of selected areas (dotted box) for each channel are shown. (E) Quantification of EE positive for lipids in cells treated with siRNA control or against Cav1. Cells were incubated with Bodipy-lipids for 15 min. (F) Representative immunoblots of Cav1-mCh HeLa cells treated with control siRNA or siRNA against Cav1. Clathrin HC served as loading control. (G) Cav1-mCh HeLa cells were incubated with Bodipy-lipids for 15 min, fixed and LDs were stained using LipidTOX-DR. (H) Colocalization of lipids to LDs. (I) Colocalization of lipids with LDs in cells depleted of Cav1 after 15 min. (B, C, E, H, I) n = 10, mean ± SEM. All scale bars, 5 μm.
 
 During our experiments, we noticed that a large fraction of Chol localized to compartments distinct from the endosomal system. To determine whether Chol localized to lipid droplets (LD) as previously proposed (Le Lay et al., 2006; Shvets et al., 2015), we incubated HeLa cells with fusogenic liposomes and visualized LD using LipidTOX-DR. On average, 85% of LDs were positive for Chol after both 15 min and 3 h (Figure 6G–H), and similar levels of Chol-positive LD were detected in cells lacking Cav1 (Figure 6I). While Chol extensively localized to LD, we did not observe LacCer associated with LD (Figure 6G–I). These data are consistent with the hypothesis that excess Chol in the PM is trafficked directly to LD in a process that does not require caveolae per se, and that the levels of Chol taking an alternative route to EE increase in the absence of caveolae.
 
@@ -111,11 +195,560 @@ Together, our findings indicate that the dynamic behavior of caveolae is highly 
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PTRF (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab48824 RRID:AB_88224</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EHD2 (Rabbit polyclonal)</td>
+      <td>(Morén et al., 2012)</td>
+      <td>RRID:AB_2833022</td>
+      <td>IF (1:500), WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-clathrin heavy chain (clone 23; mouse monoclonal)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>Cat # 610499 RRID:AB_397865</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-caveolin-1 (Rabbit, polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab2910 RRID:AB_303405</td>
+      <td>IF (1:500) WB (1:10 000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG secondary antibody coupled to Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # A21246 RRID:AB_2535814</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn -glycero-3-phosphoethanolamine (DOPE)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat # 850725</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-3-trimethylammonium-propane (chloride salt) (DOTAP)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat # 890890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy FL C5- Ganglioside GM1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # B13950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy FL C5-LacCer</td>
+      <td>This study (Gretskaya and Bezuglov, 2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy FL C5-ceramide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # D3521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy-Cholesterol</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat # 810255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy FL C12-spinghomyelin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # D7711</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy FL C5-spinghomyelin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # D3522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy FL succinimidyl ester (EverFluor FL)</td>
+      <td>Setareh Biotech</td>
+      <td>Cat # 7150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-lactosyl-ß1–1'-D-erythro-sphingosine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat # 860542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-lactosyl-ß−1,1' N-palmitoyl-D-erythro-sphingosine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat # 860576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesterol</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # C3045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Palmitoyl-D-sphingomyelin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 91553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sphingomyelinase (SMase) (from Bacillus cereus)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# S7651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Myriocin (from Mycelia sterilia)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# M1177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde 16%</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat # 15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # PA0095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde 25%</td>
+      <td>Taab Laboratory Equipment Ltd</td>
+      <td>Cat # G011/2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-isobutyl-1-methylxanthine (IBMX)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # I5879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone (Dex)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # D4902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # I0516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>rosiglitazone</td>
+      <td>Cayman Chemicals</td>
+      <td>71740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N-Diisopropylethylamine</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # D125806</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N-Dimethylformamide, anhydrous</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # 227056</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroform</td>
+      <td>VWR</td>
+      <td>Cat # VWRC22711.324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methanol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 15394528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline hyclate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin B</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 10687010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin S HCl</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # R210-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HeLa (cervix)</td>
+      <td>ATCC</td>
+      <td>Cat # CRM-CCL-2 RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>3T3-L1 (Pre-adipocytes)</td>
+      <td>ATCC</td>
+      <td>Cat # ATC-CL-173 RRID:CVCL_0123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HeLa FlpIn T-Rex Caveolin1-mCherry</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HeLa FlpIn T-Rex EHD2pTagBFP-P2A-Caveolin1-mCherry</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to EHD2 (Stealth)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#1299001 Assay ID HSS121265</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Scrambled 353 siRNA (Stealth)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12935300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to Caveolin1 (Stealth)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #1299001 Assay ID HSS141467</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Rab5-TagBFP</td>
+      <td>(Francis et al., 2015)</td>
+      <td></td>
+      <td>under control of PCMV IEpromotor in pTagBFP-N vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EHD2-TagBFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>under control of PCMV IEpromotor in pTagBFP-N vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EHD2 I157Q-TagBFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>under control of PCMV IEpromotor in pTagBFP-N vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EHD2-mCherry</td>
+      <td>(Hoernke et al., 2017)</td>
+      <td></td>
+      <td>under control of PCMV IEpromotor in pmCherry-N1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry-EHD2</td>
+      <td>This study</td>
+      <td></td>
+      <td>under control of PCMV IEpromotor in pmCherry-C1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EHD2 I157Q-mCherry</td>
+      <td>This study</td>
+      <td></td>
+      <td>under control of PCMV IEpromotor in pmCherry-N1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry-EHD2 I157Q</td>
+      <td>This study</td>
+      <td></td>
+      <td>under control of PCMV IEpromotor in pmCherry-C1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA/FRT/TO caveolin1-mCherry</td>
+      <td>This study</td>
+      <td></td>
+      <td>under control of PCMV IE promotor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA/FRT/TO EHD2-pTagBFP-P2A-caveolin1-mCherry</td>
+      <td>This study</td>
+      <td></td>
+      <td>under control of PCMV IE promotor</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/Fiji</td>
+      <td>Fiji (Schindelin et al., 2012)</td>
+      <td>RRID:SCR_002285</td>
+      <td>http://fiji.sc/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris x64 9.1.2</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td>http://www.bitplane.com/imaris</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 5.0</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CS6</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td>https://www.adobe.com/se/products/photoshop.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator CS6</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td>https://www.adobe.com/se/products/photoshop.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Maps 3.3</td>
+      <td>FEI</td>
+      <td></td>
+      <td>https://www.fei.com/software/maps/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen interface 2.3</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td>https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nis Elements 4.3</td>
+      <td>Nikon</td>
+      <td>RRID:SCR_014329</td>
+      <td>https://www.nikoninstruments.com/en_EU/Products/Software</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Aluminum backed silica gel plates (median pore size 60 Å, fluorescent indicator 254 nm)</td>
+      <td>Fisher Scientific</td>
+      <td>Cat # 10517771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chromatography grade silica gel (0.035–0.070 mm, 60 Å)</td>
+      <td>Acros Organic</td>
+      <td>Cat # 240360050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Formvar TEM grids</td>
+      <td>Taab Laboratory Equipment Ltd</td>
+      <td>Cat # F005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CS-25R17 coverlips (TIRF)</td>
+      <td>Warner Instruments</td>
+      <td>Cat # 64–0735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CS-25R15 coverlips</td>
+      <td>Warner Instruments</td>
+      <td>Cat # 64–0715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Precision cover glasses thickness No. 1.5H</td>
+      <td>Paul Marienfeld GmbH and Co. KG</td>
+      <td>Cat # 0117520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PD-10 columns</td>
+      <td>GE Healthcare</td>
+      <td>Cat # 17-0851-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MatTek dishes (35 mm dish, high tolerance 1.5)</td>
+      <td>MatTek Corporation</td>
+      <td>Cat # P35G-0.170–14 C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HCS LipidTOX Deep Red Neutral Lipid Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # H34477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco's Modified Eagle Medium (DMEM)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 41966052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Opti-MEM I Reduced Serum Medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 31985070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco's Modified Eagle Medium (DMEM), no phenol red</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 21063029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sodium pyruvate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 11360039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dako Fluorescent Medium</td>
+      <td>Dako</td>
+      <td>Cat # S3023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 647 C2 Maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # A20347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI (4',6-Diamidino-2-Phenylindole, Dilactate)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # D3571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal bovine serum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # 16000044</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine (DOPE), 1,2-dioleoyl-3-trimethylammonium-propane (chloride salt) (DOTAP), TopFluor-cholesterol (Bodipy-Chol), TopFluor- phosphatidylethanolamine (Bodipy-PE), D-lactosyl-ß−1,1' N-palmitoyl-D-erythro-sphingosine [LacCer(d18:1/16:0)] and Lyso-Lactosylceramide (Lyso-LacCer) were purchased from Avanti Polar Lipids Inc (Alabaster, AL, US). Bodipy FL C5-ganglioside GM1 (Bodipy-GM1), Bodipy FL C5-ceramide (Bodipy-Cer), Bodipy FL C12-spinghomyelin (Bodipy-SM C12), Bodipy FL C5-spinghomyelin (Bodipy-SM C5) were obtained from Thermo Fisher Scientific (Waltham, MA, US). BODIPY Fl-C5 NHS ester (4,4-Difluoro-5,7-dimethyl-4-bora-3a,4a-diaza-s-indacene-3-pentanoic acid, succinimidyl ester) was purchased from Setareh Biotech, LLC (Eugene, OR, US). Sphingomyelin (SM d18:1/16:0), cholesterol (Chol), d7-cholesterol, N,N-diisopropylethylamine, sphingomyelinase (SMase) from Bacillus cereus, myriocin from Mycelia sterilia, anhydrous dimethylforamide (DMF), chloroform (CHCl3), and methanol (MeOH) were purchased from Sigma-Aldrich (St. Louis, MO, US). LC-MS grade formic acid was purchased from VWR Chemicals (Radnor, PA, US). LC-MS grade 2-propanol and acetonitrile were from Merck Millipore (Billerica, MA, US). Milli-Q water (Merck Millipore) was used. All reagents and chemicals were used without further purification.
 
-## Bodipy-LacCer synthesis
+### Bodipy-LacCer synthesis
 
 Thin layer chromatography was performed on aluminum backed silica gel plates (median pore size 60 Å, fluorescent indicator 254 nm, Fisher Scientific, Hampton, NH, US), visualized by exposure to UV light (365 nm), and stained with acidic ethanolic vanillin solution. Flash chromatography was performed using chromatography grade silica gel (0.035–0.070 mm, 60 Å, Thermo Fisher Scientific). NMR spectra were recorded on a Bruker AVANCE (600 MHz) spectrometer. 1H Chemical shifts are reported in δ values relative to tetramethylsilane and referenced to the residual solvent peak (CD3OD: δH = 3.31 ppm, δC = 49.00 ppm). Coupling constants are reported in Hz.
 
@@ -127,66 +760,193 @@ NMR data: 1H-NMR (CD3OD, 600 MHz) δ 7.41 (1H, s), 7.03 (1H, d, J = 4.1 Hz), 6
 
 13C-NMR (CD3OD, 151 MHz) δ 175.7, 160.9, 160.2, 145.0, 136.1, 135.2, 134.9, 131.2, 130.0, 125.6, 120.9, 117.9, 105.1, 104.5, 80.6, 77.1, 76.5, 76.3, 74.8, 74.8, 73.0, 72.5, 70.3, 69.9, 62.5, 61.8, 54.8, 37.1, 33.4, 33.1, 30.8, 30.8, 30.8, 30.8, 30.8, 30.7, 30.5, 30.4, 30.3, 29.5, 29.4, 27.0, 23.7, 14.9, 14.5, 11.2.
 
-## Cell lines and primary cultures
+### Cell lines and primary cultures
 
 HeLa cells (ATCC-CRM-CCL-2, RRID:CVCL_0030) were cultured in Dulbecco's Modified Eagle Medium (DMEM, Thermo Fisher Scientific) supplemented with 10% (v/v) fetal bovine serum (FBS, Thermo Fisher Scientific) at 37°C, 5% CO2. For generation of HeLa Flp-In T-REx Caveolin1-mCherry cells, the pcDNA/FRT/TO/Caveolin1-mCherry construct was generated by exchanging the EGFP-tag in the pcDNA/FRT/TO/Caveolin1-EGFP (Mohan et al., 2015) for a mCherry tag by restriction cloning using enzymes AgeI and NotI (Thermo Fisher Scientific). The HeLa Flp-In T-REx EHD2-BFP-P2A-Caveolin1-mCherry construct was generated by linearizing pcDNA/FRT/TO/Caveolin1-mCh with the restriction enzyme HindIII (Thermo Fisher Scientific). The DNA encoding EHD2-BFP and the P2A peptide was inserted by Gibson assembly using NEBuilder HiFi DNA assembly master mix (New England BioLabs, Ipswich, MA, USA). The Flp-In TRex HeLa cell lines were maintained in DMEM supplemented with 10% (v/v) FBS, 100 μg/ml hygromycin B (Thermo Fisher Scientific), and 5 μg/ml blasticidin S HCl (Thermo Fisher Scientific) for plasmid selection at 37°C, 5% CO2. Expression at endogenous levels was induced by incubation with 0.5 ng/ml (Cav1-mCh) and 1.0 ng/ml (EHD2-BFP-P2A-Cav1mCh) doxycycline hyclate (Dox, Sigma-Aldrich) for 16–24 h. All cell lines tested negative for mycoplasma.
 
 3T3-L1 fibroblasts (ATC-CL-173, RRID:CVCL_0123) were maintained in DMEM supplemented with 10% (v/v) FBS and penicillin-streptomycin (10000 U/ml, 1:100, Thermo Fisher Scientific) at 37°C, 5% CO2, and differentiated to adipocytes as previously described (Zebisch et al., 2012). Briefly, cells were either seeded directly into a six-well plate or on glass coverslips in a six-well plate at 6 × 105 cells/well (day −3 of differentiation). The cells reached confluency the following day and the medium was changed (day −2). After 48 h (day 0) the medium was exchanged for differentiation medium I [supplemented DMEM containing 0.5 mM 3-isobutyl-1-methylxanthine (IBMX, Sigma Aldrich), 0.25 μM dexamethasone (Dex, Sigma Aldrich), 1 μg/ml insulin (Sigma Aldrich) and 2 μM rosiglitazone (Cayman Chemical, Ann Arbor, MI, USA)]. Following incubation for 48 h, the medium was changed to differentiation medium II (supplemented DMEM containing 1 μg/ml insulin) (day 2). Experiments were performed on day 4 of differentiation.
 
-## Fusogenic liposomes
+### Fusogenic liposomes
 
 Liposomes were prepared from a lipid mixture of DOPE, DOTAP, and either Bodipy-tagged lipid or unlabeled lipid at a ratio of 47.5:47.5:5. Lipid blends were in MeOH:CHCl3 (1:3, v/v). Following the generation of a thin film using a stream of nitrogen gas, the vesicles were formed by addition of 20 mM HEPES (VWR, Stockholm, SE, pH 7.5, final lipid concentration 2.8 μmol/ml) and incubated for 1.5 h at room temperature. Glass beads were added to facilitate rehydration. The liposome dispersion was sonicated for 30 min (Transsonic T 310, Elma, Singen, DE). The hydrodynamic diameters (z-average) of the liposomes were measured using dynamic light scattering with a Malvern Zetasizer Nano-S (Malvern Instruments, Worcestershire, UK). Samples were diluted 1:100 in 20 mM HEPES (pH 7.5) and measured using a UV-transparent disposable cuvettes (Sarstedt, Nümbrecht, DE). The measurements were performed at 20°C. The Nano DTS Software 5.0 was used for acquisition and analysis of the data.
 
-## Lipid quantification by LC-ESI-MS/MS
+### Lipid quantification by LC-ESI-MS/MS
 
 One day prior to experiment, cells were seeded in a six-well plate. Cells were left untreated or treated with 11.7 nmol/ml of the different fusogenic liposomes for 10 min at 37°C, 5% CO2. The cells were washed three times with PBS and harvested in 500 μl MeOH by scraping. Counting revealed that approximately 4 × 105 cells were obtained per sample. For myriocin (2.5 μM) and SMase (0.01 U) treatment, cells were incubated for 24 h or 2 h, respectively. Extraction was performed using a mixer mill set to a frequency 30 Hz for 2 min, with one tungsten carbide bead added to each tube. Thereafter the samples were centrifuged at 4°C, 14000 RPM, for 10 min. A volume of 260 μl of the supernatant was transferred to micro vials and evaporated under N2 (g) to dryness. The dried extracts were stored at −80°C until analysis. Calibration curves of Bodipy-labeled standards (Bodipy-SM C12 and Bodipy-LacCer) as well as standards for endogenous LacCer and SM [LacCer(d18:1/16:0) and SM(d18:1/16:0)] were prepared prior to analysis. Stock solutions of each compound were prepared at a concentration of 500 ng/μl and stored at −20°C. A five-point calibration curve (0.025–0.4 ngl/μl) was prepared by serial dilutions [Bodipy-SM C12R2 = 0.9909; LacCer(d18:1/16:0) R2 = 0.9945; Bodipy-LacCer R2 = 0.9983; LacCer(d18:1/14:0) R2 = 0.8742], except for endogenous SM(d18:1/16:0) where 0.025–10.0 ng/μl was used (R2 = 0.9991). Samples and calibration curves were analyzed using a 1290 Infinitely system from Agilent Technologies (Waldbronn, Germany), consisting of a G4220A binary pump, G1316C thermostated column compartment, and G4226A autosampler with G1330B autosampler thermostat coupled to an Agilent 6490 triple quadrupole mass spectrometer equipped with a jet stream electrospray ion source operating in positive ion mode. Separation was achieved injecting 2 μl of each sample (resuspended in 20 μl of MeOH) onto a CSH C182.1 × 50 mm, 1.7 μm column (Waters, Milford, MA, USA) held at 60°C in a column oven. The gradient eluents used were 60:40 acetonitrile:H2O (A) and 89:10.5:0.4 isopropanol:acetonitrile:water (B), both with 10 mM ammonium formate and 0.1% formic acid, with a flow rate of 500 μl/min. The initial conditions consisted of 15% B, and the following gradient was used with linear increments: 0–1.2 min (15–30% B), 1.2–1.5 (30–55% B), 1.5–4.0 (55% B), 4.0–4.8 (55–100% B), 4.8–6.8 (100% B), 7.1–8.0 (15% B). The MS parameters were optimized for each compound (Table 1). The fragmentor voltage was set at 380 V, the cell accelerator voltage at 5 V and the collision energies from 20 to 30 V, nitrogen was used as collision gas.
 
+**Table 1.**
+ Retention times (RT), MRM-transition stages monitored (precursor ion and product ions) and collision energies of analyzed compounds.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Compounds</th>
+      <th colspan="2">MRM transition</th>
+      <th rowspan="2">RT (min)</th>
+      <th rowspan="2">Collision energy (V)</th>
+    </tr>
+    <tr>
+      <th>Precursor ion</th>
+      <th>Product ion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bodipy-LacCer</td>
+      <td>926.5</td>
+      <td>562.4</td>
+      <td>1.48</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>LacCer(d18:1/16:0)</td>
+      <td>862.6</td>
+      <td>520.5</td>
+      <td>2.84</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>LacCer(d18:1/14:0)</td>
+      <td>834.6</td>
+      <td>264.3</td>
+      <td>2.8</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>SM(d18:1/16:0)</td>
+      <td>703.6</td>
+      <td>184.1</td>
+      <td>2.9</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Bodipy-SM C12</td>
+      <td>865.6</td>
+      <td>184.1</td>
+      <td>2.12</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+
 Jet-stream gas temperature was at 150°C with a gas flow of 16 l/min. The sheath gas temperature was kept at 350°C with a gas flow of 11 l/min. The nebulizer pressure was set to 35 psi and the capillary voltage was set at 4 kV. The QqQ was run in Dynamic MRM Mode using a retention time delta of 0.8 min and 500 ms cycle scans. The data were quantified using MassHunter Quantitative Analysis (Agilent Technologies, Atlanta, GA, USA).
 
-## Cholesterol quantification by GC-MS
+### Cholesterol quantification by GC-MS
 
 One day prior to experiment cells were seeded in a six-well plate. Cells were left untreated or treated with 11.7 nmol/ml fusogenic liposomes for 10 min at 37°C, 5% CO2. The cells were washed three times with PBS and harvested in 250 μl MeOH by scraping, and two wells were pooled to generate approximately 8 × 105 cells per 500 μl sample into Eppendorf tubes. Extraction was performed using a mixer mill set to a frequency 30 Hz for 2 min, with one tungsten carbide bead added to each tube. Obtained extracts were centrifuged at 4°C, 14000 RPM for 10 min. A volume of 300 μl of the collected supernatants was transferred to individual micro vials and the extracts were dried under N2 (g) to dryness. Separate calibration curves were prepared for endogenous and d7-Chol. A six-point calibration curve spanning from 0 to 10 ng/μl was prepared for d7-Chol (R2 = 0.9909). For endogenous Chol a six-point calibration curve spanning from 0 to 500 ng/μl was prepared (R2 = 0.9969). Methyl stearate at a final concentration of 5 ng/μl was used as internal standard in both calibration curves. Derivatization was performed according to a previously published method (Gullberg et al., 2004). In detail, 10 μl of methoxyamine (15 μg/μl in pyridine) was added to the dry sample that was shaken vigorously for 10 min before it was left to react at room temperature. After 16 h, 10 μl of MSTFA was added, the sample was shaken and left to react for 1 h at room temperature. A volume of 10 μl of methyl stearate (15 ng/μl in heptane) was added before analysis. For d7-cholesterol quantification, 1 μl of the derivatized sample was injected by an Agilent 7693 autosampler, in splitless mode into an Agilent 7890A gas chromatograph equipped with a multimode inlet (MMI) and 10 m x 0.18 mm fused silica capillary column with a chemically bonded 0.18 μm DB 5 MS UI stationary phase (J and W Scientific). The injector temperature was 250°C. The carrier gas flow rate through the column was 1 ml min−1, the column temperature was held at 60°C for 1 min, then increased by 60°C min-1 to 300°C and held there for 2 min. The column effluent is introduced into the electron impact (EI) ion source of an Agilent 7000C QQQ mass spectrometer. The thermal AUX 2 (transfer line) and the ion source temperatures were 250°C and 230°C, respectively. Ions were generated by a 70 eV electron beam at an emission current of 35 μA and analyzed in dMRM-mode. The solvent delay was set to 3 min. For a list of MRM transitions see Table 2. For endogenous Chol analysis, the samples were reanalyzed in split mode (10:1) together with the Chol calibration curve. The data were quantified using MassHunter Quantitative Analysis (Agilent Technologies, Atlanta, GA, USA).
 
-## Calculations of the number of PM lipids
+**Table 2.**
+ MRM transitions for labeled and endogenous Chol.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compound</th>
+      <th>Comment</th>
+      <th>Precursor ion</th>
+      <th>MS1 resolution</th>
+      <th>Product ion</th>
+      <th>MS2 resolution</th>
+      <th>RT</th>
+      <th>RT delta min (total)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Methyl stearate</td>
+      <td>IS-std</td>
+      <td>298</td>
+      <td>Unit</td>
+      <td>101.1</td>
+      <td>Unit</td>
+      <td>5.6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Chol</td>
+      <td>Quant</td>
+      <td>329</td>
+      <td>Unit</td>
+      <td>95</td>
+      <td>Unit</td>
+      <td>7.8</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Chol</td>
+      <td>Qual</td>
+      <td>368</td>
+      <td>Unit</td>
+      <td>213</td>
+      <td>Unit</td>
+      <td>7.8</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>d7-Chol</td>
+      <td>Quant</td>
+      <td>336</td>
+      <td>Unit</td>
+      <td>95</td>
+      <td>Unit</td>
+      <td>7.8</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>d7- Chol</td>
+      <td>Qual</td>
+      <td>375</td>
+      <td>Unit</td>
+      <td>213</td>
+      <td>Unit</td>
+      <td>7.8</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Calculations of the number of PM lipids
 
 The average PM area of fibroblast is around 3000 μm2 (Sheetz et al., 2006), of which 23% is estimated to be occupied by proteins (Dupuy and Engelman, 2008), which translates into the average PM of a cell containing approximately 7 × 109 lipids (Alberts et al., 2002). Our data are in agreement with these reported values, with our measured values for SM(d18:1/16:0) being 40% of total SM species (Kjellberg et al., 2014), and 21 mol% of PM lipids translating to 9.6 × 109 lipids in the PM.
 
-## Assessment of lipid incorporation into the PM with live cell spinning disk microscopy
+### Assessment of lipid incorporation into the PM with live cell spinning disk microscopy
 
 One day prior to the experiment, non-induced Cav1-mCh HeLa cells or 3T3-L1 adipocytes were seeded on glass coverslips (CS-25R17 or CS-25R15, Warner Instruments, Hamden, CT, US) in a six-well plate at 3 × 105 cells/well (37°C, 5% CO2). Live cell experiments were conducted in phenol red-free DMEM (live cell medium, Thermo Fisher Scientific) supplemented with 10% FBS and 1 mM sodium pyruvate (Thermo Fisher Scientific) at 37°C in 5% CO2. To follow the distribution of Bodipy throughout the PM, a POC mini two chamber (PeCon, Erbach, DE) was used that allowed addition of the fusogenic liposomes during data acquisition. Liposomes were added at a concentration of 7 nmol/ml and movies of confocal stacks were recorded every 30 s over a period of 5 min using a 63X lens and Zeiss Spinning Disk Confocal controlled by ZEN interface (RRID:SCR_013672) with an Axio Observer.Z1 inverted microscope, equipped with a CSU-X1A 5000 Spinning Disk Unit and an EMCCD camera iXon Ultra from ANDOR. For TIRF movies the same system was used but employing a 100X lens and an Axio Observer.Z1 inverted microscope equipped with an EMCCD camera iXonUltra from ANDOR. The increase in fluorescence intensity (FI) of the Bodipy signal was measured within circular ROIs, which were either evenly distributed over the PM seen in the confocal section or over the basal PM in the case of TIRF. The total FI was determined by calculating integrated density (area x FI), which was then background corrected. Ten ROIs per cell were analyzed using Zeiss Zen interface (n = 3, two independent experiments). Based on lipids occupying 65 Å2, which translates to 3.1 × 106 lipid molecules/μm2 (Dopico, 2007), and that mean liposome diameter was 225 nm, corresponding to an area of 0.19 μm2, we calculated that each liposome contained 0.6 × 106 lipids, of which 5% were Bodipy-labeled. To estimate the cell volume, the cell surface was segmented with the surface feature within the Imaris x64 9.1.2 RRID:SCR_007370 (Bitplane, Zurich, CH) using the mCherry fluorescence.
 
-## Constructs, transfections, and cell treatments
+### Constructs, transfections, and cell treatments
 
 pTagBFP-C (Evrogen, Moscow, RU) was used to generate the expression constructs of Rab5 and EHD2 wt or I157Q. The cavin1-GFP construct was a kind gift from Prof. Robert G. Parton. Cav1-mCh HeLa cells were transfected with Lipofectamine 2000 (Thermo Fisher Scientific) using Opti-MEM I reduced serum medium (Thermo Fisher Scientific) for transient protein expression. For EHD2 and Cav1 depletion, Cav1-mCh HeLa cells were transfected with either stealth siRNA, specific against human EHD2 or human Cav1, or scrambled control (all from Thermo Fisher Scientific) using Lipofectamine 2000 and Opti-MEM according to manufacturer’s instructions unless otherwise stated. Cells were transfected twice over a period of 72 h before the experiment. Protein levels were analyzed by SDS-PAGE and immunoblotting using rabbit anti-EHD2, RRID:AB_2833022 (Morén et al., 2012) and rabbit anti-Cav1 antibodies, RRID:AB_303405 (Abcam, Cambridge, UK). Mouse anti-clathrin heavy chain, RRID:AB_397865 (clone 23, BD Transduction Laboratories, San Jose, CA, US) was used as loading control. Cells were treated with 2.5 μM myriocin in complete medium 24 h prior to harvesting. SMase was added to cells to generate a final concentration of 0.01 units in complete medium 2 h prior to harvesting or live cell imaging.
 
-## Analysis of caveolae dynamics
+### Analysis of caveolae dynamics
 
 To track caveolae dynamics, induced Cav1-mCh HeLa cells were treated with fusogenic liposomes (7 nmol/ml) and 5 min TIRF movies were recorded with an acquisition time of 3 s. Imaris software was used for tracking analysis of Cav1-mCh positive structures (no distinction between single caveolae and Rosetta’s are made), which were segmented as spots and structures with a diameter of 0.4 μm and with an intensity quality of 2% were selected (Figure 2—figure supplement 3) as previously described (Mohan et al., 2015). The applied algorithm was based on Brownian motion with max distance travelled of 0.8 μm and a max gap size of 4. Experiments where cavin1-GFP or EHD2 (wt and mutant) was either transiently expressed or depleted were performed and analyzed the same way. Colocalization of cavin1-GFP or EHD2 (wt and mutant) to Cav1-mCh was quantified with Imaris software. Within a ROI, spots were created in one channel (e.g., red channel) and the second channel (e.g., blue channel) was masked. The masked spots show only colocalized red and blue spots and the percentage was correlated to the original channel. Analysis of the dynamic behavior of caveolae positive for or lacking EHD2-BFP was performed using double Flp-In EHD2-BFP Cav1-mCh HeLa cells. The tracking was done as described above and the data from the tracks of Cav1-mCh spots lacking EHD2-BFP were collected and removed from the data of Cav1-mCh spots positive for EHD2-BFP. Statistical analysis was performed on track duration(s) and track mean speed (μm/s) data and data areshown as fold change. All micrographs and acquired movies were prepared with Fiji, RRID:SCR_002285 (Schindelin et al., 2012) and Adobe Photoshop CS6, RRID:SCR_014199.
 
-## Intracellular trafficking of lipids
+### Intracellular trafficking of lipids
 
 Induced Cav1-mCh HeLa cells were seeded on glass coverslips (CS-25R15) in a six-well plate at 3 × 105 cells/well (37°C, 5% CO2). On the following day, the cells were incubated with fusogenic liposomes (7 nmol/ml) for 15 min or 3 h. Rab5-BFP (Francis et al., 2015) was transiently expressed. To analyze the localization of lipids to lipid droplets (LDs), induced Cav1-mCh HeLa cells were treated with lipids for 15 min or 3 h, fixed and stained with HCS LipidTOX Deep Red Neutral Lipid Stain (1:200, Thermo Fisher Scientific). Confocal stacks were acquired on Zeiss Spinning Disk Confocal microscope. The colocalization of lipids to Rab5-positive structures or LD as well as localization of Cav1-mCh to Rab5-positive structures was analyzed as described above using a masking method in Imaris software. Micrographs were prepared with Fiji (RRID:SCR_002285) (Schindelin et al., 2012) and Adobe Photoshop CS6 (RRID:SCR_014199).
 
-## Immunostaining
+### Immunostaining
 
 Induced Cav1-mCh HeLa cells were seeded on precision coverslips (No. 1.5H, Paul Marienfeld GmbH and Co. KG, Lauda-Königshofen, DE) in 24-well plates at 50 × 103 cells/well and incubated overnight (37°C, 5% CO2). Following incubation with fusogenic liposomes (7 nmol/ml) for 1 h, the cells were washed three times with phosphate-buffered saline (PBS, pH 7.4). Cells were fixed with 4% PFA in PBS (Electron Microscopy Sciences, Hatfield, PA, US) and subsequent permeabilization and blocking was carried out simultaneously using PBS containing 5% goat serum and 0.05% saponin. Cells were then immunostained with rabbit anti-EHD2 (Morén et al., 2012) and rabbit anti-PTRF, RRID:AB_88224 (Abcam) followed by goat anti-rabbit IgG secondary antibody coupled to Alexa Fluor 647, RRID:AB_2535814 (Thermo Fisher Scientific) as previously described (Lundmark et al., 2008). Confocal images were acquired using the Zeiss Spinning Disk Confocal microscope (63X lens). Pearson colocalization coefficients were obtained using Imaris software applying the Coloc feature with automatic thresholding. All Pearson coefficients were derived from two independent experiments for the EHD2 stain. Analysis of the colocalization of cavin1 and Cav1-mCh was repeated once. Data from at least 30 images were analyzed with images containing two to three cells on average. For caveolae expression levels, induced (0.5 ng/ml Dox) and non-induced Cav1-mCh HeLa cells were seeded and fixed as described above. Cells were immunostained with rabbit anti-Caveolin1 (Abcam) followed by goat anti-rabbit IgG secondary antibody coupled to Alexa Fluor 488 (Thermo Fisher Scientific). Confocal images were acquired using the Zeiss Spinning Disk Confocal microscope (63X lens). Caveolae spots were counted using the Imaris software with the same preferences as described above. Micrographs were prepared using Fiji (Schindelin et al., 2012) and Adobe Photoshop CS6.
 
-## FRAP experiments
+### FRAP experiments
 
 Induced Cav1-mCh HeLa cells were seeded on glass coverslips (CS-25R15) in a six-well plate at 3 × 105 cells/well and incubated overnight (37°C, 5% CO2). Cells were treated with 7 nmol/ml of Bodipy-labeled liposomes for 10 min followed by two washes with live cell media before imaging using TIRF using a Zeiss Axio Observer.Z1 inverted microscope. Three reference images were recorded before a ROI was photobleached for 1000 ms using maximal laser intensity (488 nm or 561 nm). The fluorescent recovery images were taken every 3 s for 5 min. For the lipid incorporation experiment, a region within the PM with homogeneous fluorescence was chosen. FRAP of the EHD2 mutants was performed the same way. For the Bodipy-LacCer, Bodipy-Chol, and Bodipy-SM C12 accumulated in caveolae, FRAP was performed between 15 and 60 min after lipid addition and regions with structures positive for Cav1-mCh, EHD2-BFP, and Bodipy-lipid were selected and for the bulk PM a region lacking caveolae was selected. For FRAP experiments that quantified the recovery of Cav1-mCh, induced Cav1-mCh HeLa cells were untreated, depleted of EHD2 using siRNA, or incubated with Bodipy-LacCer liposomes. FRAP experiments were performed as described above using the Zeiss Spinning Disk Confocal microscope (63X lens). The signal recovery was monitored in focal plane close to the basal membrane. The intensities of the bleached regions were corrected for background signal and photobleaching of the cell. Data from at least 10 cells were collected per condition and mean FRAP recovery curves were plotted using Prism 5.0 (GraphPad, San Diego, CA, US; RRID:SCR_002798).
 
-## Microinjection
+### Microinjection
 
 Mouse EHD2 cysteine mutant construct (L303C,C96S, C138S, C356S) was expressed as N-terminal His6-tag fusion proteins in Escherichia coli Rosetta (DE3) and purified (Daumke et al., 2007). Dithiothreitol was removed from the protein using PD-10 columns and the protein was labeled with Alexa Fluor 647 C2 Maleimide (Thermo Fisher Scientific) (Hoernke et al., 2017). The protein was diluted to a concentration of 0.5 mg/ml in 150 mM NaCl, 20 mM HEPES pH 7.5, and 1 mM MgCl2. Cav1-mCh HeLa cells were transfected with siRNA and induced as described above. One day prior to the injection experiment, Cav1-mCh HeLa cells were seeded in MatTek dishes (35 mm dish, high tolerance 1.5, MatTek Corporation, Ashland, MA, US) with a cell density of 3 × 105 cells/dish and induced with Dox. In the case of LacCer addition, the cells were treated with 7 nmol/ml of Bodipy-LacCer fusogenic liposomes for 10 min followed by two washes with live cell media before microinjection. Microinjection was performed with Injectman NI2 coupled to the programmable microinjector Femtojet (Eppendorf, Hamburg, DE). The protein was loaded in Femtotips II (Eppendorf) and injection was done with an injection pressure of 1.0 hPa, compensation pressure of 0.5 hPa, and injection time of 0.1 s. Live images were acquired on TIRF every 3 s for a total of 5 min using a Nikon Eclipse Ti-E inverted microscope with a 100X lens (Apochromat 1.49 Oil 0.13–0.20 DIC N2, Nikon) using NIS Elements (RRID:SCR_014329). Z-stacks of injected cells were captured using a 60X lens (Apochromat 1.4o Oil DIC, Nikon). Tracking of Cav1-mCh and colocalization analysis was done with Imaris as previously described.
 
-## Correlative light electron microscopy
+### Correlative light electron microscopy
 
 Cav1-mCh cells transiently expressing EHD2-GFP alone or treated with Bodipy-LacCer, Bodipy-Chol, or Bodipy-SM C12 liposomes were fixed in 2% paraformaldehyde (PFA) and 0.2% glutaraldehyde (Taab Laboratory Equipment Ltd, Aldermaston, UK) in 0.1 M phosphate buffer (pH 7.4) for 1–2 h and then stored in 1% PFA at 4°C. For the grid preparation, the cells were scraped into the fixative solution and washed three times with PBS (pH 7.4) and once with PBS containing 0.1% glycine (pH 7.4, Merck Millipore, Burlington, US). The cell pellet was embedded in 12% gelatin (Dr. Oetker, food grade) in 0.1 M phosphate buffer (pH 7.4). Blocks of around 1 mm2 were cut and cryo-protected by overnight infiltration in 2.3 M sucrose (VWR) in 0.1 M phosphate buffer. Next, the blocks were plunge frozen in liquid nitrogen. The sample block was sectioned at −120°C to obtain 80 nm sections. These were mounted in a drop of in 0.1 M phosphate buffer containing 1:1 of 2% methyl cellulose (Sigma-Aldrich) and 2.3 M sucrose on TEM grids with a carbon-coated Formvar film (Taab Laboratory Equipment Ltd). The grids were incubated with PBS (pH 7.4) at 37°C for 20 min and stained with DAPI (4',6-Diamidino-2-Phenylindole, Dilactate, 1:1000 in PBS, pH 7.4, Thermo Fisher Scientific) before imaging on a Nikon Eclipse Ti-E inverted microscope with a 100X lens (Apochromat 1.49 Oil 0.13–0.20 DIC N2, Nikon). Low magnification images were taken at 20X for orientation on the grid and to aid the overlay of fluorescent microscopy images and the higher resolution images of TEM. Contrasting for TEM was done by embedding the grids in 1.8% methyl cellulose and 0.4% uranyl acetate (Polysciences, Inc, Hirschberg an der Bergstrasse, DE) solution prepared in water (pH 4) for 10 min in the dark. TEM was performed with a Talos 120C transmission electron microscope (FEI, Eindhoven, NL) operating at 120kV. Micrographs were acquired with a Ceta 16M CCD camera (FEI) using Maps 3.3 (FEI, Hillsboro, OR, US). The fluorescent images were overlaid atop TEM images of the same cells collected from the ultrathin section using Adobe Photoshop CS6.
 
-## Electron microscopy
+### Electron microscopy
 
 3T3-L1 cells were seeded on MatTek dishes (35 mm dish, high tolerance 1.5) and differentiated to adipocytes as described above. 3T3-L1 adipocytes were untreated or incubated with Bodipy-Chol liposomes for 45 min, washed with PBS, and fixed as follows. All chemical fixation steps were performed using a microwave (Biowave, TED PELLA, inc) unless stated and solutions were prepared and rinses were performed in 0.1M cacodylate buffer (Sigma-Aldrich) or water. Fixation of the cells was performed in 0.05% malachite green oxalate (Sigma-Aldrich) and 2.5% gluteraldehyde (Taab Laboratory Equipment Ltd, Aldermaston, UK) in cacodylate buffer. The samples were rinsed four times with cacodylate buffer and post-fixed with 0.8% K3Fe(CN)6 (Sigma-Aldrich) and 1% OsO4 (Sigma-Aldrich) in cacodylate buffer and rinsed four times with cacodylate buffer. The samples were then stained with 1% aqueous tannic acid (Sigma-Aldrich). Following two rinses in cacodylate buffer and water, samples were stained with 1% aqueous uranyl acetate (Polysciences, Inc, Hirschberg an der Bergstrasse, DE). After four washes with water, samples were dehydrated in gradients of ethanol (25%, 50%, 75%, 90%, 95%, 100% and 100%) (VWR). The samples were infiltrated with graded series of hard grade spurr resin (Taab Laboratory Equipment Ltd, Aldermaston, UK) in ethanol (1:3, 1:1 and 3:1) and then left in 100% resin for 1 h at room temperature. The samples were later polymerized overnight at 60°, sectioned and imaged with a Talos 120C transmission electron microscope (FEI, Eindhoven, NL) operating at 120kV. To obtain quantitative data, segmentation of caveolae for measurement of bulb width and measurement of neck diameter for surface-connected caveolae was performed with ‘icy’ (de Chaumont et al., 2012). To extract bulb width and surface area, the ‘active cells’ plug-in was used with three points to make an elliptical contour that fitted individual caveolae. The neck diameter was obtained by drawing a ROI across the neck of surface-connected caveolae. The analysis was performed blinded and with randomized sections.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was carried out by two-tailed unpaired Student t-test for comparison with control samples using GraphPad Prism 5.0 software. All experiments were performed at least twice with data representing mean ± SEM unless otherwise stated.

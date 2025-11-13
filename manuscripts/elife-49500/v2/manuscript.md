@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.49500.001 IFI16, an innate immune DNA sensor, recognizes the nuclear episomal herpes viral genomes and induces the inflammasome and interferon-β responses. IFI16 also regulates cellular transcription and act as a DNA virus restriction factor. IFI16 knockdown disrupted the latency of Kaposi’s sarcoma associated herpesvirus (KSHV) and induced lytic transcripts. However, the mechanism of IFI16’s transcription regulation is unknown. Here, we show that IFI16 is in complex with the H3K9 methyltransferase SUV39H1 and GLP and recruits them to the KSHV genome during de novo infection and latency. The resulting depositions of H3K9me2/me3 serve as a docking site for the heterochromatin-inducing HP1α protein leading into the IFI16-dependent epigenetic modifications and silencing of KSHV lytic genes. These studies suggest that IFI16’s interaction with H3K9MTases is one of the potential mechanisms by which IFI16 regulates transcription and establish an important paradigm of an innate immune sensor’s involvement in epigenetic silencing of foreign DNA.
+IFI16, an innate immune DNA sensor, recognizes the nuclear episomal herpes viral genomes and induces the inflammasome and interferon-β responses. IFI16 also regulates cellular transcription and act as a DNA virus restriction factor. IFI16 knockdown disrupted the latency of Kaposi’s sarcoma associated herpesvirus (KSHV) and induced lytic transcripts. However, the mechanism of IFI16’s transcription regulation is unknown. Here, we show that IFI16 is in complex with the H3K9 methyltransferase SUV39H1 and GLP and recruits them to the KSHV genome during de novo infection and latency. The resulting depositions of H3K9me2/me3 serve as a docking site for the heterochromatin-inducing HP1α protein leading into the IFI16-dependent epigenetic modifications and silencing of KSHV lytic genes. These studies suggest that IFI16’s interaction with H3K9MTases is one of the potential mechanisms by which IFI16 regulates transcription and establish an important paradigm of an innate immune sensor’s involvement in epigenetic silencing of foreign DNA.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Although the transcription repression and the possible epigenetic histone mark m
 
 ## Results
 
-## Knockdown of IFI16 causes prominent changes in the deposition of H3 lysine methylation marks and RNA Pol II on KSHV promoters
+### Knockdown of IFI16 causes prominent changes in the deposition of H3 lysine methylation marks and RNA Pol II on KSHV promoters
 
 IFI16 suppresses the transcription from KSHV lytic promoters and KD of IFI16 results in lytic reactivation of latently infected cells (Roy et al., 2016). To investigate the potential mechanism(s) of IFI16-mediated suppression of KSHV lytic transcription, we determined the role of IFI16 in recruiting the five known H3 lysine trimethylation marks (H3Kme3) - H3K4me3, H3K9me3, H3K27me3, H3K36me3 and H3K79me3, on the KSHV genome. Among these, H3K4me3, H3K36me3, and H3K79me3 are known to be associated with transcriptionally permissive euchromatin, whereas H3K9me3 and H3K27me3 are known to be associated with transcriptionally repressive heterochromatin. For this, we depleted IFI16 in latently infected BCBL-1 cells using lentivirus-mediated shRNA (shIFI16) transduction and evaluated the recruitment of the different H3Kme3s and total H3 by chromatin immunoprecipitation (ChIP) after 72 hr of transduction. Compared to control shRNA (shC), we observed ~70% KD of IFI16 as evaluated by qRT-PCR and WB (Figure 1A and B, respectively). Since IFI16 KD results in the induction of KSHV lytic genes (Roy et al., 2016), when we evaluated the levels of lytic ORF50 mRNA by qRT-PCR, we observed a six-fold increase after IFI16 KD (Figure 1A).
 
@@ -52,13 +52,13 @@ To determine the importance of H3 lysine methylations in KSHV latent and lytic c
 
 Together, these observations suggested the following: a) IFI16 is important for the recruitment and maintenance of the repressive H3K9me3 mark and for the exclusion of the permissive H3K4me3 mark on the KSHV genome both, after de novo infection and during prolonged latency; b) IFI16 influences the recruitment of RNA Pol II on KSHV lytic promoters; c) depletion of IFI16 during de novo infection of endothelial cells results in lytic gene expression and failure to establish latency, and d) re-distribution of H3K9me3 along with H3K27me3 and H3K4me3 plays an important role during reactivation from latency.
 
-## H3K9 methylations play an important role in KSHV life cycle and IFI16 interacts with cellular H3K9 methyltransferases (H3K9MTase)
+### H3K9 methylations play an important role in KSHV life cycle and IFI16 interacts with cellular H3K9 methyltransferases (H3K9MTase)
 
 Based on the previous studies of IFI16-mediated transcriptional repression and possible role of IFI16 in the modulation of H3K9me3 on herpesvirus genomes, we next determined the connection of this histone mark with IFI16. To test the importance of H3K9 methylations on KSHV life cycle, we used A-366, a potent and selective inhibitor of H3K9 me2/me3 methylation (Kaniskan et al., 2018). MTT toxicity assays revealed that 100 µM concentration of A366 is non-toxic on BCBL-1 cells for up to 72 hr (Figure 2A). BCBL-1 cells were treated for 72 hr with 10 µM or 100 µM concentrations of A366 or mock treated with DMSO vehicle control and we measured the expression of all four KSHV temporal gene by real-time qRT-PCR (Figure 2B). We observed that although there were no significant changes at 10 µM, treatment with 100 µM A366 induced robust initiation of lytic IE, E, and L gene transcripts. As a control, we also evaluated cellular IFI16 and GAPDH transcripts and found no significant changes after A366 treatment. When we tested the levels of different H3 lysine methylations after 72 hr 100 µM A366 treatment, we observed that A366 specifically inhibited H3K9me2 and H3K9me3 methylations, and the levels of IFI16 did not change significantly (Figure 2C). Recently, Hopcraft et al. (2018) screened a number of H3 MTases in an attempt to identify host chromatin-modifying proteins that are essential for maintaining KSHV latency and found that 1 μM and 10 μM concentrations of A366 were ineffective in inducing KSHV lytic cycle. Although this observation is comparable to our findings, these authors did not test 100 μM concentration of A366.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig2-v2.jpg)
 
-**Figure 2.:** (A) MTT cell viability assay of BCBL-1 cells treated with the H3K9me3 specific chemical inhibitor A366 at different concentrations and different time points. (B) q-RT PCR (two-step, sybr Green) of KSHV mRNAs in BCBL-1 cells treated for 72 hr with either vehicle control DMSO or A366 (10 µM and 100 µM). (C) WB of different H3 methylations and IFI16 after A366 treatment of BCBL-1 cells. (D) H3K9 methyltransferase activity (ng/h/mg) assay. TIME cells were infected with KSHV for 6 or 24 hr followed by isolation of nuclear fraction, benzonase treatment and IP with anti-IFI16 or control IgG in the presence of benzonase using the catch and release method. Elution was performed under non-denaturing conditions to keep the associated H3K9 methyltransferase active. H3K9 methyltransferase activity was assayed in the eluate (Materials and methods). *, p<0.05; **, p<0.01; ***,<0.001; unpaired t-test. () TIME cells were infected with KSHV genome labeled with EdU or unlabeled control KSHV (100 DNA copies/cell) for 24 hr followed by EdU-KSHV genome pulldown using Click chemistry. The inputs and eluates were blotted for different H3K9 MTases. (EF) TIME cells were infected with EdU-labeled KSHV as in (D) and stained using the Click-iT EdU Alexa Fluor 594 Imaging Kit (red). Subsequently, IFA was performed against different H3K9 MTases and colocalization of the IFA signal (green) with KSHV EdU-genome staining (red) resulting in yellow was evaluated (enlarged image, white arrows).
+**Figure 2.:** (A) MTT cell viability assay of BCBL-1 cells treated with the H3K9me3 specific chemical inhibitor A366 at different concentrations and different time points. (B) q-RT PCR (two-step, sybr Green) of KSHV mRNAs in BCBL-1 cells treated for 72 hr with either vehicle control DMSO or A366 (10 µM and 100 µM). (C) WB of different H3 methylations and IFI16 after A366 treatment of BCBL-1 cells. (D) H3K9 methyltransferase activity (ng/h/mg) assay. TIME cells were infected with KSHV for 6 or 24 hr followed by isolation of nuclear fraction, benzonase treatment and IP with anti-IFI16 or control IgG in the presence of benzonase using the catch and release method. Elution was performed under non-denaturing conditions to keep the associated H3K9 methyltransferase active. H3K9 methyltransferase activity was assayed in the eluate (Materials and methods). *, p<0.05; **, p<0.01; ***,<0.001; unpaired t-test. (E) TIME cells were infected with KSHV genome labeled with EdU or unlabeled control KSHV (100 DNA copies/cell) for 24 hr followed by EdU-KSHV genome pulldown using Click chemistry. The inputs and eluates were blotted for different H3K9 MTases. (F) TIME cells were infected with EdU-labeled KSHV as in (D) and stained using the Click-iT EdU Alexa Fluor 594 Imaging Kit (red). Subsequently, IFA was performed against different H3K9 MTases and colocalization of the IFA signal (green) with KSHV EdU-genome staining (red) resulting in yellow was evaluated (enlarged image, white arrows).
 
 We next hypothesized that IFI16 binds, recruits and maintains specific H3K9 MTase(s) on the KSHV genome leading to the observed changes in H3K9me3 occupancy on the KSHV genome. To test this, we infected TIME cells with KSHV (100 DNA copies/cell) for 6 or 24 hr, isolated the nuclear fractions, treated with benzonase to digest all nucleic acids, and immunoprecipitated (IP) with anti-IFI16 antibody or isotype control IgG. The IPs were eluted under non-denaturing conditions to preserve the enzymatic activity of associated H3K9MTase and we performed a H3K9 methyltransferase activity assay (Materials and methods) with the eluate. We observed that IFI16 pulled down significant H3K9 MTase activity compared to the IgG control (Figure 2D) ranging between 0.4 and 0.5 ng/h/mg which were 10-fold lesser compared to the input lysates. KSHV infection did not alter the levels of intracellular MTases or their interaction with IFI16 as both uninfected and infected conditions showed comparable enzymatic activities.
 
@@ -66,7 +66,7 @@ Till date, nine H3K9MTase have been identified in eukaryotes (Li et al., 2016) a
 
 To validate the association of these MTases with the KSHV genome, we performed immunofluorescence assay (IFA) for the six identified MTases on TIME cells infected with EdU-KSHV for 24 hr (Figure 2F). EdU-labeled genomes were detected using Click chemistry-based fluorescent staining (Figure 2F, red). All the six H3K9MTase (Figure 2F, green) colocalized with the EdU-KSHV genome (Figure 2F, yellow, white arrowheads) and thus confirming their association with the KSHV genome during de novo infection. SUV39H1, GLP, and G9A were detected predominantly in the nucleus, while SUV39H2, SETDB1 and SETDB2 were observed both in the nucleus and cytoplasm. IgG used as a negative control did not show any interactions. These results demonstrated that: a) treatment of BCBL-1 cells with A366 confirmed the importance of H3K9 methylations in KSHV gene regulations. b) IFI16 physically interacts with one or multiple H3K9MTases, and c) six different H3K9 MTases are associated with the KSHV genome.
 
-## IFI16 interacts with H3K9 MTase SUV39H1 and GLP in KSHV latently infected cells
+### IFI16 interacts with H3K9 MTase SUV39H1 and GLP in KSHV latently infected cells
 
 To identify the IFI16 interacting H3K9MTases, we performed co-immunoprecipitation (co-IP) experiments with benzonase-treated nuclear fractions from the latently infected BCBL-1 and BC-3 PEL cells and the uninfected BJAB lymphoma cells. IP of IFI16 resulted in efficient co-IP of SUV39H1 and GLP and to a lesser extent, G9A (Figure 3A, left panel, lanes 1–3). In contrast, all the other H3K9 MTases tested did not co-IP with IFI16. The H3K27 methylating PRC2 complex protein EZH2 was also tested but did not co-IP with IFI16. In addition, we also tested IFI16's ability to interact with H3, H3K9me3 and the heterochromatin binding protein HP1α, and none of them co-IPed with IFI16. ASC which is known to interact with IFI16 in PEL cells to form the inflammasome complex (Singh et al., 2013) was used as a positive control (Figure 3A).
 
@@ -78,7 +78,7 @@ LANA1, a KSHV latent protein, has been reported to recruit specific H3 methylati
 
 We validated these findings by conducting reverse co-IP experiments where we pulled down the respective H3K9 MTases and blotted for IFI16, LANA, HP1α and the MTase (Figure 3B). The observed results corroborated with Figure 3A results, and thus confirmed that IFI16 interacts with SUV39H1 and GLP, while LANA1 interacts with SETDB1, SETDB2, and EZH2. However, IP of G9A did not pull-down IFI16. With the exception of RIZ1, all of the H3K9 MTases tested along with EZH2, interacted with HP1α.
 
-## IFI16 interacts with H3K9 MTase SUV39H1 and GLP during de novo KSHV infection
+### IFI16 interacts with H3K9 MTase SUV39H1 and GLP during de novo KSHV infection
 
 During de novo infection, the linear histone-free input herpes viral DNA is circularized in the nucleus, rapidly adopts a chromatin structure, and viral and host epigenetic factors drive a spatially and temporally ordered recruitment of epigenetic marks onto the viral genome leading to selective silencing of lytic gene expression, while allowing expression of the latent genes (Toth et al., 2013b; Renne et al., 1996; Toth et al., 2016). To decipher IFI16’s interactions with H3K9MTases during de novo infection, TIME cells were mock infected or infected with KSHV for 6 or 24 hr, nuclear fractions treated with benzonase and IP-ed with anti-IFI16 antibodies. Confirming our findings in PEL cells (Figure 3), we observed that SUV39H1 and GLP were efficiently pulled-down by IFI16, while G9A showed weak interactions (Figure 4A, left panel). ASC as a positive control interacted with IFI16 while all the other H3K9 MTases, H3, H3K9me3, and HP1α did not interact with IFI16 (Figure 4A). All the corresponding inputs are shown in the right panel (Figure 4A, lanes 4–6). The reverse co-IP experiments using anti-MTase antibodies and IFI16 WBs also substantiated these observations (Figure 4B).
 
@@ -86,13 +86,29 @@ During de novo infection, the linear histone-free input herpes viral DNA is circ
 
 **Figure 4.:** (A) TIME cells either left uninfected or infected with KSHV for 6 or 24 hr were IPed with anti-IFI16 antibodies and western blotted for the indicated proteins. (B) To confirm IFI16’s interaction with H3K9 MTases, TIME cells were infected as in (A) and IPed with antibodies against the MTases and blotted for the corresponding MTase and IFI16. (C) 293 T cells lacking IFI16 transfected with control plasmid or His-IFI16 expressing plasmid for 72 hr were utilized for His-tag pulldown using HisPur cobalt resin. Inputs and elutions were blotted for the indicated proteins. (D) 293 T cells transfected with control plasmid, IFI16 expressing plasmid or LANA expressing plasmid for 72 hr were IPed with anti-IFI16 mAb or LANA mAb. Inputs and elutions were blotted for the indicated proteins.
 
-## Ectopically expressed IFI16 interacts with SUV39H1 and GLP in 293T cells
+### Ectopically expressed IFI16 interacts with SUV39H1 and GLP in 293T cells
 
 To confirm that the observed interactions between IFI16 and SUV39H1/GLP were not due to non-specific interactions of anti-IFI16 antibody, we ectopically expressed His-tagged full-length IFI16 in 293T cells which lack the expression of endogenous IFI16. His-tag IFII6 co-elution assays also pulled down SUV39H1, GLP and G9A and not the other H3K9MTases (Figure 4C). Next, we expressed the untagged IFI16 and LANA1 in 293T cells and IP-ed them with their respective antibodies. Ectopically expressed IFI16 and LANA-1 exhibited similar interactions as observed in PEL cells (Figure 3) namely IFI16 interacts with SUV39H1 and GLP, and LANA1 fails to interact with SUV39H1 but interacts with EZH2 (Figure 4D). These observations in 293T cells proved that IFI16 interactions with SUV39H1 and GLP H3K9 MTases are specific and not due to non-specific pull-downs.
 
-## IFI16 interacts with H3K9MTase SUV39H1 and GLP and recruits them on to the KSHV genome
+### IFI16 interacts with H3K9MTase SUV39H1 and GLP and recruits them on to the KSHV genome
 
 To investigate IFI16's ability to recruit these H3K9MTases onto the incoming KSHV genome during de novo infection, we performed EdU-genome pulldown assay after siRNA-mediated KD of IFI16 in TIME cells. 24 hr post-KSHV infection, we observed that KD of IFI16 resulted in reduced recruitment of SUV39H1, GLP, and G9A, but not the other H3K9MTases tested (Figure 5A). In addition, confirming our ChIP results in Figure 1F, we observed reduced recruitment of H3K9me3 under IFI16 KD conditions. Furthermore, IFI16 KD also resulted in the reduced recruitment of H3K9me2 but not H3K9me1 to the KSHV genome, while the total H3 and H3K27me3 recruitment were unaltered. ChIP experiments in KSHV latently infected BCBL-1 cells confirmed that KD of IFI16 results in reduced recruitment of SUV39H1, GLP and G9A at the KSHV lytic ORFs 63, 25 and 64 promoters (Figure 5B, black arrows). These three promoters were chosen since they fall within the KSHV genome regions where H3K9me3 was found to be highly enriched (Günther et al., 2014; Toth et al., 2010).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig5-v2.jpg)
+
+**Figure 5.:** (A) IFI16 was KD in TIME cells using siRNA and 72 hr later, cells were infected with EdU-KSHV for 24 hr followed by EdU-KSHV genome pulldown using Click chemistry. The inputs and eluates were blotted for different H3K9 MTases and H3K9 methylations. (B) ChIP was performed after shRNA IFI16 KD in BCBL-1 cells and recruitment of different H3K9 MTases on different KSHV promoters (pORF63- L, pORF25- L and pORF64- L) representing promoters where H3K9me3 is most abundantly recruited, were tested by q-PCR. ChIP efficiencies were normalized to input chromatin and are represented as relative to shC control. (C) TIME cells were infected with EdU-KSHV for 24 hr and stained using the Click-iT EdU Alexa Fluor 594 Imaging Kit (red). Subsequently, Proximity Ligation Assay (PLA) was performed to assess the interaction between IFI16 and the indicated H3K9 MTases (green). Colocalization of green (PLA) with red (EdU-KSHV genome) resulting in yellow indicates interaction of IFI16 with the corresponding H3K9 MTases on the KSHV genome (enlarged image, white arrows). Uncropped source PLA data for Figure 5C showing a larger field containing multiple cells are shown in Figure 5—figure supplements 2 and 3. (D) U2OS wt and U2OS 67 (CRISPER Cas-9 IFI16 KO) cells were infected with KSHV (100 DNA copies/cell) for 24 hr, ChIP performed, and the late KSHV promoter pORF63 tested by q-PCR. ChIP efficiencies were normalized to input chromatin and are represented as relative to U2OS wt. WB shows IFI16 KO in U2OS 67 cells. (E) U2OS 67 cells were transfected with either control GFP plasmid or IFI16 plasmid. After 72 hr, cells were infected with KSHV for 24 hr, ChIP performed, and the late KSHV ORF63 promoter was tested by q-PCR. ChIP efficiencies were normalized to input chromatin and are represented as relative to GFP transfected control. The WB shows IFI16 and GFP overexpression in U2OS 67 cells following transfection. Data shown are averages of the results of at least three experiments ± SD (*, p<0.05; **, p<0.01; ***, p<0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** TIME cells were infected with EdU-KSHV for 24 hr and stained using the Click-iT EdU Alexa Fluor 594 Imaging Kit (red). Subsequently, PLA (green) was performed between IgG (rabbit) and IgG (mouse) to assess the specificity of the PLA reaction.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** A larger field containing multiple cells are shown.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** A larger field containing multiple cells are shown.
 
 To visualize the tripartite interaction between IFI16, H3K9 MTase and the KSHV genome in situ, we performed Proximity Ligation Assay (PLA) in TIME cells 24 hr after infection with EdU-labeled KSHV. PLA is a powerful technique which produces a fluorescent signal if the two interacting proteins are within close proximity of ~40 nm or less. Therefore, only physical interaction to IFI16 will result in a positive PLA signal as opposed to IP-based techniques where interacting partners in a multi-protein complex can also be pulled-down. We observed that both SUV39H1 and GLP produced positive PLA dots/spots (Figure 5C, green) with IFI16 confirming their physical interaction. In addition to PLA, these cells were also stained for the EdU-labeled genome using Click chemistry (Figure 5C, red). Colocalization of the green PLA dots of IFI16+GLP and IFI16+SUV39H1 PLA with the red EdU-genome (Figure 5C, yellow indicated by white arrows) confirmed that this is a tripartite complex between the genome, IFI16 and the respective H3K9MTase. This interaction of IFI16 with GLP and SUV39H1 was also observed in the uninfected cells. Interestingly, we failed to find PLA signal between G9A and IFI16. Although we detected G9A in IFI16 pull-down experiments (Figures 3 and 4), failure to detect it in PLA experiments suggest that G9A may not be directly interacting with IFI16 and may have been pulled-down by virtue of its interaction with GLP that has been shown before (Shinkai and Tachibana, 2011). In addition, consistent with previous observations, neither SETDB1 nor the control IgG showed any interaction with IFI16 (Figure 5C). Moreover, an IgG + IgG control PLA (Figure 5—figure supplement 1) also confirm the specificity of the observed PLA signals.
 
@@ -102,9 +118,41 @@ PLA in IFI16 KO cells confirms that IFI16 recruits SUV39H1 and GLP onto the KSHV
 
 To confirm the IFI16-mediated recruitment of heterochromatic factors at a single-cell level, we infected U2OS wt and IFI16 KO U2OS67 cells with BrdU-labeled KSHV and preformed PLA for BrdU and the indicated proteins. The expectation for this was that positive PLA signal using antibody against BrdU and antibodies against the proteins of interest will visually confirm the physical proximity/interaction between the BrdU-labeled KSHV genome and the protein of interest. In addition to PLA (Figure 6, red), we also immunostained for IFI16 (Figure 6, green). We observed numerous BrdU genome + H3K9me3 PLA dots in the U2OS wt cells confirming efficient recruitment of H3K9me3 on the KSHV genome in these cells (Figure 6A, red dots, white arrows). However, the number of PLA dots in U2OS 67 cells were significantly reduced (Figure 6A, blue arrow) confirming the role of IFI16 in the recruitment of H3K9me3. In contrast, we did not observe any reduction in the BrdU genome + H3K27me3 PLA dots in the U2OS 67 cells compared to the wt type cells (Figure 6B, red dots). Similar experiments for BrdU genome + SUV39H1 PLA and BrdU genome + GLP PLA demonstrated significantly reduced PLA dots in the IFI16 KO U2OS 67 cells compared to the wt type cells (Figure 6C and D). The absence of significant PLA dots in the control BrdU+IgG PLA (Figure 6—figure supplement 1) confirmed the specificity of the PLA reaction. Consistent with previous reports (Ansari et al., 2015), we observed IFI16’s redistribution to the cytoplasm after KSHV infection in U2OS wt cells.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig6-v2.jpg)
+
+**Figure 6.:** (A) U2OS wt and U2OS 67 (IFI16 KO) were infected with BrdU genome labeled KSHV for 24 hr and PLA was performed to assess the association between BrdU-KSHV genome DNA and H3K9me3 (red). Following PLA, IFA was performed to stain for IFI16 (green). Colocalization of green (IFA) with red (PLA) resulting in yellow indicates the presence of both, IFI16 and H3K9me3 on the KSHV genome (merged image). In the U2OS 67 panel, as there is no expression of IFI16, yellow colocalization is absent. Boxed areas are enlarged. The number of PLA dots (red) were compared between the U2OS wt (white arrows) and 67 panels (blue arrows). Similar experiments were performed for H3K27me3 (B), GLP(C), and SUV39H1 (D). Uncropped source PLA data for Figure 6 showing a larger field containing multiple cells are shown in Figure 6—figure supplements 2 and 3.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** U2OS wt cells were infected with BrdU genome labeled KSHV for 24 hr and PLA was performed between the BrdU-KSHV genome DNA and IgG (red).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** A larger field containing multiple cells are shown.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** A larger field containing multiple cells are shown.
+
 Next, we performed similar experiments in U2OS 67 cells transfected with either control (pcDNA3.1+) plasmid or IFI16 expressing plasmid (pcDNA3.1+ IFI16) for 72 hr. We included uninfected (UI) condition to assess the specificity of the PLA reactions (Figure 7—figure supplement 1). Upon BrdU-KSHV infection of the U2OS 67 cells transfected with the control plasmid, very few PLA dots were observed between the BrdU-genome and H3K9me3 (Figure 7A, first row panels, white arrows). However, upon rescue with IFI16 plasmid transfection, the number of PLA dots increased significantly in the cells expressing IFI16 (Figure 7A, second row panels, white arrows), but not in cells in which IFI16 expression was minimal or absent (Figure 7A, orange arrow). Similar observations were also made with SUV39H1 (Figure 7B) and GLP (Figure 7C). The absence of significant PLA dots in the UI samples (Figure 7—figure supplement 1) and in the control BrdU+IgG PLA (Figure 6—figure supplement 1) confirmed the specificity of the PLA reaction. Together, these observations confirmed that IFI16 is responsible for the recruitment of SUV39H1 and GLP on the KSHV genome eventually leading to the addition of the H3K9me3 histone mark.
 
-## H3K9 MTase SUV39H1 and GLP are essential for KSHV gene regulation but not G9A
+![Figure 7.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig7-v2.jpg)
+
+**Figure 7.:** (A) U2OS 67 cells were transfected with control plasmid or IFI16 expressing plasmid. After 72 hr, cells were infected with BrdU-KSHV for 24 hr. Following infection, PLA was performed to assess the interaction between the BrdU-KSHV genome DNA and H3K9me3 (red). Subsequently, IFA was performed to stain for IFI16 (green). The number of PLA dots (red) can be compared between the different panels. Boxed areas are enlarged. The white arrows show PLA dots in a cell expressing transfected IFI16, while the orange arrow show a cell that has not been transfected with IFI16 in the same field. A similar experiment was performed for SUV39H1 (B) and GLP (C). Uncropped source PLA data for Figure 7 showing a larger field containing multiple cells are shown in Figure 7—figure supplements 2 and 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) [Supplementary to Figure 7] U2OS 67 cells were transfected with control plasmid or IFI16 expressing plasmid. After 72 hr, cells were mock infected (UI) for 24 hr. Following infection, PLA was performed to assess the specificity of the PLA reaction. Subsequently, IFA was performed to stain for IFI16 (green). The number of PLA dots (red) can be compared between the different panels. Boxed areas are enlarged. Specificity of the PLA reaction can be ascertained by the lack of PLA dots in the mock-infected cells. Similar experiments were performed for SUV39H1 (B) and GLP (C).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** A larger field containing multiple cells are shown.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** A larger field containing multiple cells are shown.
+
+### H3K9 MTase SUV39H1 and GLP are essential for KSHV gene regulation but not G9A
 
 Since our results have demonstrated that IFI16 binds and recruits SUV39H1 and GLP onto the KSHV genome, we examined the dynamics of these two H3K9MTases and IFI16 on the KSHV genome during lytic reactivation of TREXBCBL-1 cells. We observed that the abundance of SUV39H1 on the KSHV genome decreased to about 25% of that of uninduced on day 2 post-induction and remained at that level until day 4. In contrast, a more drastic decrease was observed with GLP which was reduced to less than 10% of the uninduced level by day 1 post-induction. Abundance of IFI16 decreased more gradually and reduced to less than 20% by day 4, which is also probably due to the degradation of IFI16 during lytic reactivation (Roy et al., 2016). Next, we investigated the role of these two H3K9MTases in KSHV life cycle, and included G9A as well in this assay as it is known to exist in a complex with GLP (Shinkai and Tachibana, 2011). These three MTases were knocked down in BCBL-1 cells via lentivirus-mediated shRNA for 48 and 96 hr and the expression of all four temporal KSHV gene classes were measured by real-time qRT-PCR. KD efficiencies for SUV39H1, GLP and G9A were tested by WB (Figure 8B,D and F, respectively). 48 hr post SUV39H1 KD, KSHV gene expression for all lytic genes tested (IE, E, and L) increased significantly and remained elevated at 96 hr post-KD (Figure 8C). However, latent genes increased only marginally at 48 hr while at 96 hr, no increase was observed. KD of GLP had more dramatic outcomes at 96 hr post IFI16 KD. In this case, lytic gene expressions were induced between 25 and 45-fold (Figure 8E). Here too, latent gene expression increased only marginally. However, at 48 hr post-GLP KD, lytic genes were not induced significantly. In contrast to SUV39H1 and GLP, we observed that G9A KD failed to induce lytic gene expressions at both time points (Figure 8G). These results suggested that: a) H3K9MTase SUV39H1 and GLP are important factors for the maintenance of KSHV latency and their depletion induces lytic reactivation, and b) G9A, although in a complex with GLP, has a minimal role in KSHV transcriptional regulations.
 
@@ -116,13 +164,13 @@ We also investigated whether depletion of SUV39H1, GLP and G9A can result in KSH
 
 Next, we examined the effect of SUV39H1 and GLP KD during de novo infection of TIME cells. TIME cells were electroporated with the corresponding siRNA and 72 hr later, infected with KSHV for 48 hr. Efficient KD of SUV39H1 and GLP were confirmed by WB (Figure 8I and K, respectively). We observed that KD of SUV39H1 and GLP MTases results in an increase in the lytic ORF50 transcripts, while latent ORF73 transcripts remained predominantly unaffected (Figure 8J and K, respectively). These observations supported the results observed in PEL cells and confirmed the importance of SUV39H1 and GLP MTases in the establishment of KSHV latency.
 
-## Recruitment of heterochromatin protein 1α (HP1α) on the KSHV genome is dependent on IFI16 mediated H3K9-trimethylation
+### Recruitment of heterochromatin protein 1α (HP1α) on the KSHV genome is dependent on IFI16 mediated H3K9-trimethylation
 
 In eukaryotes, chromatin marked by H3K9me2/me3 serves as a binding site for HP1α, a chromodomain containing heterochromatin protein. Upon binding to the chromatin, HP1α self-oligomerizes and recruits multiple repressive histone modifiers, which ultimately leads to heterochromatin compaction and spread (Eissenberg and Elgin, 2014). We therefore asked whether IFI16-mediated addition of H3K9me2/me3 marks on the KSHV genome results in the recruitment of HP1α on to the viral genome. We first tested if HP1α is recruited onto the KSHV genome during de novo infection. Immunostaining for HP1α (Figure 9A, green) in TIME cells infected with EdU-labeled KSHV showed that HP1α colocalizes (Figure 9A, yellow) with the EdU genome (Figure 9A, red) at 24 and 48 h p.i. (Figure 9A, white arrows).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/49500/elife-49500-fig9-v2.jpg)
 
-**Figure 9.:** (A) TIME cells were infected with EdU-KSHV and stained using the Click-iT EdU Alexa Fluor 594 Imaging Kit (red). Subsequently, IFA was performed against HP1α (green). Colocalization of green (IFA) with red (EdU-KSHV genome) resulting in yellow indicates recruitment of HP1α on the KSHV genome (enlarged image, white arrows). (B) HP1α was KD in BCBL-1 cells by shRNA for 96 hr and KD efficiency assessed by qRT PCR using primers specific for HP1α as well as HP1β and HP1γ. (C) WB to confirm efficient KD. (D) KSHV mRNA levels were assessed by qRT PCR after HP1α KD. IFI16 mRNA was also assessed to confirm that the effect is specific for the KSHV genome only. mRNA levels were normalized against β-tubulin mRNA and expressed as relative amounts compared to shC-treated cells. (E) TIME cells were either infected with EdU-KSHV or control KSHV for 24 hr followed by EdU-KSHV genome pulldown using Click chemistry. The inputs and eluates were blotted for the presence of HP1α. (F) IFI16 was KD in TIME cells using siIFI16. After 72 hr, cells were infected with EdU-KSHV for 24 hr followed by EdU-KSHV genome pulldown using Click chemistry. The inputs and eluates were blotted for the presence of HP1α. () HP1α ChIP was performed 48 hr of de novo infection of TIME cells previously KD of IFI16 for 72 hr. KSHV promoters pORF73- La, pK8- IE, pvIRF2- E, and pORF63- L were tested by q-PCR. ChIP efficiencies have been normalized to input chromatin and are represented as relative to shC control. Data shown are averages of the results of at least three experiments ± SD (*, p<0.05; **, p<0.01; ***, p<0.001. (GH) TREXBCBL1-RTA cells were induced with doxycycline and at 0, 1, 2, 3 and 4 days post-induction, ChIP was performed against HP1α. Deposition of HP1α on the ORF63 promoter was tested by q-PCR. ChIP efficiencies normalized to input chromatin are shown as relative to uninduced (UI) control. (I) Real-time DNA PCR showing KSHV genome copy number 2 and 4 days post KD of HP1α in BCBL-1 cells. Primers specific to the ORF73 gene were used and the level of genomic DNA was normalized against the β-tubulin gene. (J) Schematic model showing the role of IFI16 in recruiting and maintaining H3K9 MTase SUV39H1 and GLP onto the KSHV genome leading to tri-methylation (me3) of H3K9. Establishment of H3K9me3 marks on the KSHV genome leads to the recruitment of heterochromatin protein HP1α which in turn leads to the DNA compaction and transcription silencing.
+**Figure 9.:** (A) TIME cells were infected with EdU-KSHV and stained using the Click-iT EdU Alexa Fluor 594 Imaging Kit (red). Subsequently, IFA was performed against HP1α (green). Colocalization of green (IFA) with red (EdU-KSHV genome) resulting in yellow indicates recruitment of HP1α on the KSHV genome (enlarged image, white arrows). (B) HP1α was KD in BCBL-1 cells by shRNA for 96 hr and KD efficiency assessed by qRT PCR using primers specific for HP1α as well as HP1β and HP1γ. (C) WB to confirm efficient KD. (D) KSHV mRNA levels were assessed by qRT PCR after HP1α KD. IFI16 mRNA was also assessed to confirm that the effect is specific for the KSHV genome only. mRNA levels were normalized against β-tubulin mRNA and expressed as relative amounts compared to shC-treated cells. (E) TIME cells were either infected with EdU-KSHV or control KSHV for 24 hr followed by EdU-KSHV genome pulldown using Click chemistry. The inputs and eluates were blotted for the presence of HP1α. (F) IFI16 was KD in TIME cells using siIFI16. After 72 hr, cells were infected with EdU-KSHV for 24 hr followed by EdU-KSHV genome pulldown using Click chemistry. The inputs and eluates were blotted for the presence of HP1α. (G) HP1α ChIP was performed 48 hr of de novo infection of TIME cells previously KD of IFI16 for 72 hr. KSHV promoters pORF73- La, pK8- IE, pvIRF2- E, and pORF63- L were tested by q-PCR. ChIP efficiencies have been normalized to input chromatin and are represented as relative to shC control. Data shown are averages of the results of at least three experiments ± SD (*, p<0.05; **, p<0.01; ***, p<0.001. (H) TREXBCBL1-RTA cells were induced with doxycycline and at 0, 1, 2, 3 and 4 days post-induction, ChIP was performed against HP1α. Deposition of HP1α on the ORF63 promoter was tested by q-PCR. ChIP efficiencies normalized to input chromatin are shown as relative to uninduced (UI) control. (I) Real-time DNA PCR showing KSHV genome copy number 2 and 4 days post KD of HP1α in BCBL-1 cells. Primers specific to the ORF73 gene were used and the level of genomic DNA was normalized against the β-tubulin gene. (J) Schematic model showing the role of IFI16 in recruiting and maintaining H3K9 MTase SUV39H1 and GLP onto the KSHV genome leading to tri-methylation (me3) of H3K9. Establishment of H3K9me3 marks on the KSHV genome leads to the recruitment of heterochromatin protein HP1α which in turn leads to the DNA compaction and transcription silencing.
 
 To determine if HP1α-mediated heterochromatin formation is essential for KSHV gene regulations, we KD HP1α via lentivirus mediate shRNA in BCBL-1 cells. 96 hr post-KD, efficiency of the KD was assessed by real-time qRT-PCR (Figure 9B) and WB (Figure 9C). Results showed that the shRNA pool specifically KD HP1α and not HP1β and HP1γ, the other two isoforms of HP1α (Figure 9B). When we measured the expression of all four temporal KSHV gene classes by real-time qRT-PCR (Figure 9D), we observed that HP1α KD results in the substantial increase in the expression of all lytic genes (IE, E, and L) with no significant change in the latent gene expression. Expression of IFI16 mRNA which was used as a host gene control did not change significantly. These results confirmed that HP1α is an important factor for the KSHV heterochromatic gene regulations.
 
@@ -152,11 +200,11 @@ Our earlier studies have demonstrated that IFI16 is in association with differen
 
 ## Materials and methods
 
-## Cells
+### Cells
 
 KSHV-positive PEL cell lines BCBL-1 and BC-3 and KSHV-negative BJAB cells were obtained from the AIDS Malignancy Consortium (AMC) and cultured in RPMI 1640 GlutaMAX (Gibco Life Technologies, Grand Island, NY) supplemented with 10% (v/v) FBS (fetal bovine serum: Atlanta Biologicals) and penicillin-streptomycin (Gibco Life Technologies). TREX-BCBL-1-RTA cells (Nakamura et al., 2003) were cultured in the above medium supplemented with hygromycin B (200 μg/ml). TIME (ATCC CRL-4025), a hTERT immortalized dermal microvascular endothelium cell line, was cultured in Vascular Cell Basal Medium (ATCC PCS-100–030), supplemented with Microvascular Endothelial Cell Growth kit-VEGF (ATCC PCS-110–041) and 12.5 ug/ ml blasticidine. U2OS (wt) and U2OS clone 67 - CRISPR IFI16 KO, reported previously by Johnson et al. (2014) were cultured in DMEM (Dulbecco's modified Eagle medium, Gibco Life Technologies), supplemented with 10% (v/v) FBS, penicillin-streptomycin and 2 mM L-glutamine (Gibco Life Technologies). 293 T cells were cultured in DMEM supplemented with 10% (v/v) FBS and penicillin-streptomycin and 2 mM L-glutamine (Gibco Life Technologies). All cells were regularly tested for mycoplasma using the Mycoalert kit (Lonza #LT07-218) and were confirmed to be negative.
 
-## KSHV lytic induction and virus production
+### KSHV lytic induction and virus production
 
 KSHV lytic cycle was induced in BCBL-1 cells using the 12-O-tetradecanoyl phorbol-13-acetate (TPA; 20 ng/ml). Virion productions and purifications were carried out as per our methods described previously (Roy et al., 2016). To quantify the copy number of the virions, KSHV DNA was extracted and quantified by real-time DNA-PCR using primers specific for the KSHV ORF73 gene as described previously (Roy et al., 2016). TREX-BCBL-1-RTA cells were induced with doxycycline (DOX, 1 µg/ml).
 
@@ -164,56 +212,313 @@ For de novo KSHV infection, TIME or U2OS cells were washed twice with phosphate 
 
 For the production of BrdU and EdU labeled KSHV, viral DNA was labeled by adding 5-Bromo-2'-deoxyuridine (BrdU) (Thermo Scientific # B23151) 1:100 v/v or 5-ethynyl-2'-deoxyuridine (EdU) (Thermo Scientific #A10044) 10 µM in DMSO into the culture medium of TPA induced BCBL-1 cells. The viral DNA is metabolically labeled during lytic replication. BrdU/EdU was added twice in the culture medium, once on day 1 of TPA induction and again on day 3. The labeled virus from day 5 culture was purified and genome copy number determined as described earlier.
 
-## Lentiviral mediated knockdown of IFI16, SUV39H1, GLP, G9A and HP1a in BCBL1 cells
+### Lentiviral mediated knockdown of IFI16, SUV39H1, GLP, G9A and HP1a in BCBL1 cells
 
 We used the following human TRC short hairpin RNA (shRNA) constructs (Dharmacon; Horizon Discovery) to co-transfect HEK293T cells along with the lentivirus packaging vectors using the CalPhos mammalian transfection kit (TaKaRa Clontech, Mountain View, CA) as previously described (Dull et al., 1998): IFI16 (clones TRCN0000019080, TRCN0000019082, TRCN0000019083), SUV39H1 (clones TRCN0000150622, TRCN0000157251, TRCN0000157285, TRCN0000158270, TRCN0000158337), GLP (clones TRCN0000036054, TRCN0000036055, TRCN0000036056, TRCN0000036057, TRCN0000036058), G9A (clones TRCN0000115667, TRCN0000115668, TRCN0000115669, TRCN0000115670, TRCN0000115671) and HP1α (clones TRCN0000062238, TRCN0000062239, TRCN0000062240, TRCN0000062241). To avoid off-target effects, pools of three or more shRNA were used as stated above. The pLKO.1 empty vector was used as a control (Dharmacon; Horizon Discovery #RHS4080). Culture media were changed after 16 hr of infection, supernatants containing packaged lentivirus particles collected after 48 hr and filtered through a 0.45 µm filter. Supernatant of all the clones targeting the same gene were pooled together and used to transduce the cells in the presence of polybrene (5 μg/ ml).
 
-## siRNA-mediated knockdown of IFI16, SUV39H1, GLP and G9A in TIME cells
+### siRNA-mediated knockdown of IFI16, SUV39H1, GLP and G9A in TIME cells
 
 siRNA transfection of TIME cells was performed using the Neon Transfection System (Invitrogen) according to the manufacturer’s instructions. Briefly, sub-confluent cells were harvested, washed once with PBS and re-suspended in resuspension buffer R (provided in the kit) at a density of 1 × 107 cells/ml. Ten microliters of cell suspension was mixed with 100 pmol of respective si-RNA and then microporated at room temperature using a single pulse of 1350 V for 30 ms. Microporated cells suspended in complete medium were kept at 37°C in an atmosphere of 5% CO2. Cells were analyzed for knockdown efficiency by western blotting and/or qRT-PCR. For all the genes, a mixture of 4 siRNA provided as a single reagent (siGenome SMARTpool) was used. Human siGENOME SMARTpool against IFI16, SUV39H1, GLP and G9 were purchased from Dharmacon: Horizon Discovery (catalog # M-020004-01-0010, M-009604-02-0010, M-007065-00-0010 and M-006937-01-0010, respectively). As a negative control, siGENOME Non-Targeting siRNA Pool #2 (Dharmacon: Horizon Discovery # D-001206-14-20) was used.
 
-## Overexpression plasmids and transfection
+### Overexpression plasmids and transfection
 
 The IFI16-overexpressing plasmid IFI16-FL (pcDNA3-FLAG) was a gift from Cheryl Arrowsmith (Addgene plasmid 35064) (Liao et al., 2011). TrueORFGold clone encoding a C-terminal His/DDK tagged IFI16 was custom generated by Origene. The LANA-1 overexpressing plasmid pCI-neo full-length LANA-1 was described previously (Paudel et al., 2012). Cells were transfected using the TransIT-X2 Transfection Reagent (Mirus #MIR 6000) according to the manufacturer's instructions.
 
-## Nuclear protein extraction and co-immunoprecipitation (co-IP)
+### Nuclear protein extraction and co-immunoprecipitation (co-IP)
 
 Nuclear fractions were extracted using a nuclear extraction kit (Active motif #40010) following the manufacturer's instruction. Protein concentrations were estimated using the Pierce BCA protein assay kit (Thermo scientific #23225). All nuclear lysates were treated with benzonase (Sigma # E1014-25KU) for 1 hr before co-IP. Equal amounts of clarified nuclear lysates were resuspended in IP Lysis Buffer (Thermo scientific #87788) supplemented with phosphatase inhibitor cocktail (Thermo scientific #78420) and protease inhibitor cocktail (Thermo scientific #78430) and pre-cleared for 1 hr with 15 μl 50/50 slurry of Protein A and G sepharose beads (GE Healthcare Bio-Science # 17-0469-01 and 17-0618-01, respectively) at 4°C. Following this, the pre-cleared lysates were incubated with respective antibodies and 25 μl 50/50 slurry of Protein A/G sepharose beads over-night at 4°C. The captured immune complexes were washed four times with IP wash buffer (10 mM Tris, pH 7.4, 1 mM EDTA, 1 mM EGTA, 150 mM NaCl, 1% Triton X-100, 0.2 mM sodium orthovanadate and protease inhibitor cocktail), boiled with SDS-PAGE sample buffer, resolved on 4–20% SDS-PAGE, and subjected to western blotting.
 
 The ProFoundTM Pull-Down PolyHis Protein-Protein Interaction Kit (Thermo scientific #21277) was used to pulldown His/DDK tagged IFI16 following the manufacturer’s instructions.
 
-## MTT toxicity assays
+### MTT toxicity assays
 
 The MTT cell proliferation assay kit (ATCC# 30–1010K) was used for assessing cellular toxicity following manufacturer’s instruction.
 
-## Western blot
+### Western blot
 
 Nuclear lysates were prepared as mentioned above. Whole cell lysates were prepared using Pierce IP Lysis Buffer supplemented with a protease inhibitor cocktail for 30 min on ice and then sonicated three times at an amplitude setting of 40 with pulses of 15s on and 10s off on a Qsonica Q700 sonicator. The lysates were clarified by centrifugation at 13,000 X g for 12 min at 4°C. Protein concentrations were estimated and equal concentration of proteins resolved on 4–20% SDS PAGE gels. Resolved gels were blotted onto nitrocellulose membranes at 300 mA for 1.5 hr at 4°C, probed with respective primary antibodies (Table 1) overnight at 4°C and then probed with respective HRP-conjugated secondary antibodies for detection. Wherever mentioned, light-chain-specific secondary antibodies were used to avoid heavy chain bands in WB of co-IP experiments (Table 1). The immunoreactive bands were developed using Super Signal West Pico chemiluminescent substrate (Thermo scientific #34078) or Super Signal West Femto chemiluminescent substrate (Thermo scientific #34095) depending on the signal strength. Blots were developed on a Bio-Rad ChemiDoc XRS+ System and analyzed using the Bio-Rad Image Lab software.
 
-## H3K9me3 activity assay
+**Table 1.**
+ List of antibodies used and their dilutions for different applications.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Raised in</th>
+      <th>Company/catalogue#</th>
+      <th>Dilution used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IFI16 (1G7)</td>
+      <td>mouse monoclonal</td>
+      <td>Santa Cruz Biotechnology (#SC-8023)</td>
+      <td>WB: 1:700 IP: 1:30 ChIP: 1:30 IFA: 1:100 PLA: 1:50</td>
+    </tr>
+    <tr>
+      <td>LANA</td>
+      <td>Rabbit polyclonal</td>
+      <td>Raised in-house (Uk183)</td>
+      <td>WB: 1:1000 IP: 1:50</td>
+    </tr>
+    <tr>
+      <td>H3 (D2B12)</td>
+      <td>Rabbit monoclonal</td>
+      <td>Cell Signaling Technology (#4620S)</td>
+      <td>WB: 1:5000 ChIP: 1:50</td>
+    </tr>
+    <tr>
+      <td>H3K9me1</td>
+      <td>Rabbit polyclonal</td>
+      <td>Abcam (#ab8896)</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>H3K9me2 [mAbcam 1220]</td>
+      <td>Mouse monoclonal</td>
+      <td>Abcam (#ab1220)</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>H3K9me3</td>
+      <td>Rabbit polyclonal</td>
+      <td>Active Motif (#39161)</td>
+      <td>WB: 1:2000 IP: 1:50 ChIP: 1:50 PLA: 1:100</td>
+    </tr>
+    <tr>
+      <td>H3K27me3</td>
+      <td>Rabbit polyclonal</td>
+      <td>Active Motif (#39155)</td>
+      <td>WB: 1:2000 IP: 1:50 ChIP: 1:50 PLA: 1:100</td>
+    </tr>
+    <tr>
+      <td>H3K79me3</td>
+      <td>Rabbit polyclonal</td>
+      <td>Abcam (#ab2621)</td>
+      <td>ChIP: 1:30</td>
+    </tr>
+    <tr>
+      <td>H3K4me3</td>
+      <td>Rabbit polyclonal</td>
+      <td>Active Motif (#39159)</td>
+      <td>WB: 1:2000 IP: 1:50 ChIP: 1:50 PLA: 1:100</td>
+    </tr>
+    <tr>
+      <td>H3K36me3</td>
+      <td>Rabbit polyclonal</td>
+      <td>Abcam (#ab9050)</td>
+      <td>ChIP: 1:30</td>
+    </tr>
+    <tr>
+      <td>RNA Pol II CTD [8WG16]</td>
+      <td>Mouse monoclonal</td>
+      <td>Abcam (#ab817)</td>
+      <td>ChIP: 1:50</td>
+    </tr>
+    <tr>
+      <td>SUV39H1 (MG44)</td>
+      <td>Mouse monoclonal</td>
+      <td>Active Motif (# 39785)</td>
+      <td>WB: 1:500 IP: 1:30 ChIP: 1:30 IFA: 1:100 PLA: 1:50</td>
+    </tr>
+    <tr>
+      <td>SUV39H2</td>
+      <td>Goat polyclonal</td>
+      <td>Novus Biologicals (#NB-100–1140)</td>
+      <td>WB: 1:500 IP: 1:30 ChIP: 1:30 IFA: 1:100</td>
+    </tr>
+    <tr>
+      <td>GLP (B0422)</td>
+      <td>Mouse monoclonal</td>
+      <td>Novus Biologicals (# PPB0422-00)</td>
+      <td>WB: 1:1000 IP: 1:50 ChIP: 1:50 IFA: 1:100 PLA: 1:100</td>
+    </tr>
+    <tr>
+      <td>G9A (C-9)</td>
+      <td>Mouse monoclonal</td>
+      <td>Santa Cruz Biotechnology (#sc-515726)</td>
+      <td>WB: 1:500 IP: 1:30 ChIP: 1:30 IFA: 1:70 PLA: 1:50</td>
+    </tr>
+    <tr>
+      <td>SETDB1</td>
+      <td>Rabbit polyclonal</td>
+      <td>Novus Biologicals (#NBP2-20322)</td>
+      <td>WB: 1:500 IP: 1:30 ChIP: 1:30 IFA: 1:70 PLA: 1:50</td>
+    </tr>
+    <tr>
+      <td>SETDB2</td>
+      <td>Goat polyclonal</td>
+      <td>Novus Biologicals (#NB100-1137)</td>
+      <td>WB: 1:500 IP: 1:30 ChIP: 1:30 IFA: 1:70</td>
+    </tr>
+    <tr>
+      <td>RIZ1 (N-terminal)</td>
+      <td>Rabbit polyclonal</td>
+      <td>Abcam (#ab198792)</td>
+      <td>WB: 1:500 IP: 1:30</td>
+    </tr>
+    <tr>
+      <td>HP1α (GA-62)</td>
+      <td>Rabbit polyclonal</td>
+      <td>Cell Signaling Technology (#2616S)</td>
+      <td>WB: 1:1000 IP: 1:50 ChIP: 1:50 IFA: 1:100 PLA: 1:100</td>
+    </tr>
+    <tr>
+      <td>EZH2 (EPR20108)</td>
+      <td>Rabbit monoclonal</td>
+      <td>Abcam (#191250)</td>
+      <td>WB: 1:5000 IP: 1:100</td>
+    </tr>
+    <tr>
+      <td>ASC (TMS1)</td>
+      <td>Mouse monoclonal</td>
+      <td>MBL International Corporation (#D086-3)</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>His-tag (HIS.H8)</td>
+      <td>Mouse monoclonal</td>
+      <td>Thermo Fisher Scientific (#MA1-21315))</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>β-Tubulin (D66)</td>
+      <td>Mouse Monoclonal</td>
+      <td>Sigma-Aldrich (#T0198)</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>β Actin (AC15)</td>
+      <td>Mouse monoclonal</td>
+      <td>Sigma-Aldrich (#A5441)</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>GAPDH</td>
+      <td>Rabbit polyclonal</td>
+      <td>Proteintech (#10494–1-AP)</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>GFP (GF28R)</td>
+      <td>Mouse monoclonal</td>
+      <td>Thermo Fisher Scientific (#MA5-15256)</td>
+      <td>WB: 1:4000</td>
+    </tr>
+    <tr>
+      <td>Lamin B</td>
+      <td>Rabbit polyclonal</td>
+      <td>Abcam (#ab16048)</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Normal IgG Rabbit</td>
+      <td>Rabbit</td>
+      <td>Cell Signaling Technology (#2729)</td>
+      <td>WB: 1:1000 IP: 1:50 ChIP: 1:50 IFA: 1:100</td>
+    </tr>
+    <tr>
+      <td>Mouse IgG2a (MOPC-173)</td>
+      <td>Mouse</td>
+      <td>Abcam (#ab18413)</td>
+      <td>WB: 1:1000 IP: 1:50 ChIP: 1:50 IFA: 1:100</td>
+    </tr>
+    <tr>
+      <td>BrdU</td>
+      <td>Rabbit polyclonal</td>
+      <td>Rockland antibodies and assays (#600–401 C29)</td>
+      <td>PLA: 1:100</td>
+    </tr>
+    <tr>
+      <td>BrdU (MoBU-1)</td>
+      <td>Mouse monoclonal</td>
+      <td>Thermo Fisher Scientific (#B35128)</td>
+      <td>PLA: 1:100</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse HRP</td>
+      <td>Sheep polyclonal</td>
+      <td>GE Healthcare (#NA931V)</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Anti-rabbit HRP</td>
+      <td>Donkey polyclonal</td>
+      <td>GE Healthcare (#NA934V)</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Anti-goat HRP</td>
+      <td>Mouse</td>
+      <td>Santa Cruz Biotechnology (#sc-2354)</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Anti-rabbit IgG Conformation Specific HRP (L27A9)</td>
+      <td>Mouse monoclonal</td>
+      <td>Cell Signaling Technology (#5127S)</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse Light Chain specific HRP</td>
+      <td>Goat polyclonal</td>
+      <td>Jackson ImmunoResearch (#115–035174)</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Anti-rabbit Light Chain specific HRP</td>
+      <td>Mouse monoclonal</td>
+      <td>Jackson ImmunoResearch (#211-032-171)</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse IgG (H+L)-Alexa fluor 488</td>
+      <td>Goat polyclonal</td>
+      <td>Thermo Fisher Scientific (#A11029)</td>
+      <td>IFA: 1:500</td>
+    </tr>
+    <tr>
+      <td>Anti-rabbit IgG (H+L)-Alexa fluor 488</td>
+      <td>Donkey polyclonal</td>
+      <td>Thermo Fisher Scientific (#A21206)</td>
+      <td>IFA: 1:500</td>
+    </tr>
+    <tr>
+      <td>Anti-goat IgG (H+L)-Alexa fluor 488</td>
+      <td>Donkey polyclonal</td>
+      <td>Thermo Fisher Scientific (#A11055)</td>
+      <td>IFA: 1:500</td>
+    </tr>
+  </tbody>
+</table>
+
+### H3K9me3 activity assay
 
 TIME cells were infected with KSHV (100 DNA copies/cell) for 6 or 24 hr followed by isolation of nuclear fraction as described above. The isolated nuclear fraction was treated with benzonase and immunoprecipitated with anti-IFI16 or control IgG antibodies using the Catch and Release v2.0 Reversible Immunoprecipitation System (Millipore Sigma #17–500). Elution was performed under non-denaturing conditions to keep the associated H3K9 methyltransferase active. Subsequently, the EpiQuik Histone Methyltransferase Activity/Inhibition Assay Kit (H3K9) (Epigentek #P-3003–2) was used to measure the H3K9 methyltransferase activity in the IP eluate following manufacturer’s instructions.
 
-## Immunofluorescence assay (IFA)
+### Immunofluorescence assay (IFA)
 
 TIME cells grown on eight-well chamber glass slides were infected with EdU-KSHV (100 DNA copies/cell) for 24 hr, fixed using 4% paraformaldehyde for 15 min, and permeabilized with 0.2% Triton X-100 in PBS for 20 min. Slides were washed, blocked with Image-iT FX signal enhancer (Invitrogen #I36933) for 30 min at 37°C, incubated with primary antibodies for proteins of interest (Table 1) for 1 hr at 37°C, washed three times and incubated with corresponding fluorescent dye-conjugated secondary antibodies (Table 1). To fluorescent stained EdU labeled viral genome, a CLICK chemistry-based reaction was performed using Click-iTTM EdU Alexa FluorTM 594 imaging kit (Invitrogen #C10339) following the manufacturer’s instructions. Slides were mounted using mounting medium containing DAPI and observed either by a Nikon Eclipse 80i microscope or a Keyence BZ-X fluorescence microscope. Images were acquired at 40X magnification and analyzed using image analysis software provided by the respective manufacturers.
 
-## Proximity Ligation Assay (PLA)
+### Proximity Ligation Assay (PLA)
 
 TIME, U2OS Wt and U2OS 67 cells grown on eight well chamber glass slides were infected with either EdU or BrdU KSHV (100 DNA copies/cell), and fixed and permeabilized using the same methods as described for IFA. PLA was performed according to the manufacturer’s instructions using the following kits and reagents: Duolink In Situ PLA Probe Anti-Rabbit PLUS (Sigma-Aldrich # DUO92002), Duolink In Situ PLA Probe Anti-Mouse MINUS (Sigma-Aldrich # DUO92004), Duolink In Situ Detection Reagents Red (Sigma-Aldrich # DUO92008). Primary antibodies used are listed in Table 1. In experiments with anti-BrdU antibodies for PLA, cells were denatured with 4N HCL for 10 min at room temperature after permeabilization with 0.2% Triton X-100. For negative control, isotype matched IgG was used in place of primary antibodies. In experiments where EdU-labeled genome staining was performed along with PLA, slides were subjected to CLICK reaction using Click-iTTM EdU Alexa FluorTM 594 imaging kit as described above immediately after PLA reactions. Experiments where PLA and IFA were performed simultaneously on the same sample, PLA protocol was performed till the ligation step and then the cells were processed for IFA as described above. After binding of the fluorescent dye-conjugated secondary antibodies for IFA, PLA was resumed, and polymerization was performed. Slides were then washed and mounted using a minimal volume of Duolink In Situ Mounting Medium with DAPI (Sigma-Aldrich # DUO82040). PLA signals were detected as distinct fluorescent dots or puncta using either a Nikon Eclipse 80i fluorescence microscope or a Keyence BZ-X fluorescence microscope. Images were acquired at 40X magnification and analyzed using image analysis software provided by the respective manufacturers.
 
-## Edu labeled KSHV chromatin pull down assay
+### Edu labeled KSHV chromatin pull down assay
 
 EdU-labeled genome (chromatin) pull down has been described previously (Dutta et al., 2015). Briefly, 107 TIME cells were infected with unlabeled or EdU-labeled KSHV (100 DNA copies/cell) for 2 hr, washed and cross-linked using 1% formaldehyde for 10 min at RT. For IFI16 KD condition, cells were microporated with either siC or siIFI16 72 hr before infection. Unreacted formaldehyde was quenched using 0.125 M glycine for 10 min at RT. Cells were then harvested by trypsinization and permeabilized with 0.2% (v/v) Triton X-100 in PBS for 10 mins on ice and washed with PBS. Following this, Click chemistry was used to covalently couple biotin azide to the EdU genome. For this, the following reagents were added sequentially: 10 mM (+)-Sodium-L-ascorbate, 0.1 mM biotin-TEG azide and 2 mM copper (II) sulfate. Reactions were incubated in the dark for 30 mins at RT following which, reaction was quenched with 10 volumes of 1% (w/v) BSA and 0.5% (v/v) Tween 20 in PBS for 10 mins. Cells were washed three times with PBS and nuclei isolated by incubating in 500 μl CL lysis buffer (50 mM HEPES, pH 7.8, 150 mM NaCl, 0.5% (v/v) NP-40, 0.25% (v/v) Triton X-100, 10% (v/v) glycerol) with protease inhibitors for 10 min at 4°C. The isolated nuclei were then pelleted, washed with 500 μl wash buffer (10 mM Tris-HCL pH 8.0, 200 mM NaCl, 0.5 mM DTT) for 10 min at 4°C, and lysed by resuspension in 500 μl RIPA buffer (10 mM Tris-HCl, pH 8.0, 140 mM NaCl, 1% (v/v) Triton X-100, 0.1% (v/v) Na-Deoxycholate, 0.1% (w/v) SDS) with protease inhibitor cocktail. These were processed for shearing of the chromatin via sonication on ice at an amplitude setting of 40 with pulses of 15 s on and 10 s off for a total of 10 mins on a Qsonica Q700 sonicator. The extract was then clarified by centrifugation at 15,000 x g for 10 min at 4°C and protein content quantitated by the BCA method. 1 mg of the protein extract was pulled-down for 3 hr at 4°C with 50 μl of Dynabeads MyOne Streptavidin T1 (Thermo scientific #65601) which were previously washed with wash buffer, equilibrated with RIPA buffer and blocked overnight at 4°C with 0.5 mg/ml BSA and 0.4 mg/ml pre-sheared salmon sperm DNA to minimize non-specific binding. Beads with bound complexes were then washed three times with wash buffer and subjected to reverse protein-DNA cross-linking and elution of proteins by incubation with 2X Laemmli sample buffer for 10 min at 95°C before SDS-PAGE and WB.
 
-## Measurement of KSHV gene expression by real-time RT-PCR
+### Measurement of KSHV gene expression by real-time RT-PCR
 
 Total RNA was isolated using the RNeasy minikit (Qiagen #74106) following manufacturer’s instructions. On-column DNase digestion was performed by using an RNase-free DNase set (Qiagen #79254). Concentration of the extracted RNA was estimated using a NanoDrop spectrophotometer (Thermo Scientific), and 1 μg RNA was reverse transcribed by using the High-Capacity cDNA reverse transcription kit (Applied Biosystems #4368814) with random primers, according to the manufacturer's instructions. For real-time quantitative reverse transcription-PCR (qRT-PCR) in PEL cells, the synthesized cDNA was used as a template with Power SYBR Green PCR Master Mix (Applied Biosystems #4367659) on an ABI Prism 7500 detection system (Applied Biosystems). All RNA levels were normalized to β-actin mRNA levels and calculated as the delta-delta threshold cycle (ΔΔCT). All primers used have been described previously (Roy et al., 2016). In KSHV infected TIME cells, ORF 73 and ORF 50 mRNA were quantified by real time RT-PCR using gene-specific TaqMan primers, probes and standards that has been described previously (Krishnan et al., 2004). The TaqManTM RNA-to-CTTM 1-Step Kit (Applied Biosystems #4392938) was used following manufacturer's instructions. Viral mRNA expressions were normalized to cellular internal control, RNaseP using manufacturer’s instruction (Applied Biosystems #4403328).
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Chromatin shearing for ChIP was performed by using the truChIP Chromatin Shearing kit (Covaris #520154) following manufacturer's instructions on a Covaris ME220 focused ultrasonicator. After chromatin shearing, Triton X-100 and NaCl in the sheared lysate were adjusted to final concentrations of 1% and 150 mM, respectively. Shearing efficiencies were evaluated by using a 2100 Bioanalyzer instrument and the Agilent High Sensitivity DNA Kit (Agilent Technologies #5067–4626) following manufacturer's instructions. The fragment size was ensured to be between 200 bps and 500 bps. For immunoprecipitation, 10 μg sheared chromatin was immunoprecipitated with 2 μg desired antibody or ChIP-grade control IgG (Table 1) overnight at 4°C. The chromatin-antibody complex was pulled down with ChIP-grade protein G magnetic beads (Active Motif #104502) for 2 hr at 4°C. The immunoprecipitated complex was then washed three times with low-salt and once with high-salt wash buffers (Cell Signaling Technology #14231S). To elute the chromatin, the beads were incubated in ChIP elution buffer (Cell Signaling Technology #14231S) at 65°C for 30 min on a ThermoMixer (1,200 rpm). Following this step, the eluted chromatin was incubated with NaCl and proteinase K for 2 hr at 65°C to remove all proteins and reverse the cross-linking. DNA was purified by using the ChIP DNA Clean and ConcentratorTM kit (Zymo Research #D5205). The ChIP-enriched DNAs were quantitated by real-time quantitative PCR (qPCR) using Power SYBR green PCR master mix (Applied Biosystems #4367659) and primers described previously (Roy et al., 2016). ChIP enrichment was calculated as relative to input chromatin (% input) and expressed as fold enrichment over control (shC or siC) ChIP.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are expressed as means ± standard deviations (SD) of results from at least three independent experiments (n ≥ 3), and statistical significance was calculated by using the two-tailed Student t test. *=p < 0.05; **=p < 0.01 and ***=p < 0.001.

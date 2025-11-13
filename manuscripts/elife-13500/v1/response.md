@@ -102,9 +102,7 @@ We hope that, taken together, these data convince the referee of a specific role
 
 3) Nucleosome scanning should be included in the analysis of the phenotypes of the htb-K119R mutant.
 
-We have performed the requested experiment, which is difficult in this case due to the slow growth of the mutant. This has technical implications as the time required to digest the cell with zymolyase is critical and affected by many parameters, including the physiological state of the cell. The result is presented below and shows that the H2B K119R mutant behaves very similarly to a wild type, or could even have lower occupancy.10.7554/eLife.13500.015Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.13500.015
-
-DOI: http://dx.doi.org/10.7554/eLife.13500.015
+We have performed the requested experiment, which is difficult in this case due to the slow growth of the mutant. This has technical implications as the time required to digest the cell with zymolyase is critical and affected by many parameters, including the physiological state of the cell. The result is presented below and shows that the H2B K119R mutant behaves very similarly to a wild type, or could even have lower occupancy.10.7554/eLife.13500.015Author response image 1.
 
 4) An important missing gap in the pathway is the relationship of H2B-ub1 to S2-P; for example, does H2B-ub1 affect Lsk1 recruitment to the promoter and subsequent S2-P? Along the same lines, what is responsible for the deposition of H2B-ub1 at the ste11 promoter, for example what is the role of S5-P, and what is the status of Bre1 occupancy at the promoter?
 

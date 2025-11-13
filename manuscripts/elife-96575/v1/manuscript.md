@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0220mzb33 Comprehensive Cancer Centre, School of Cancer & Pharmaceutical Sciences, Faculty of Life Sciences & Medicine, King's College London London United Kingdom
-2. https://ror.org/041kmwe10 MRC LMS, Imperial College London London United Kingdom
+1. Comprehensive Cancer Centre, School of Cancer & Pharmaceutical Sciences, Faculty of Life Sciences & Medicine, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+2. MRC LMS, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
@@ -30,23 +30,67 @@ RTEs are silenced through heterochromatinization and DNA methylation in the earl
 
 Recent studies have documented the relationship between RTE activation and biological age-related (BAR) events, but comprehensive and large-scale studies are lacking, mainly due to the paucity of RNA-seq data for large non-cancerous human cohorts. Most of the existing transcriptomics datasets are microarray-based, where the computational methods to analyze repetitive elements have not been sufficiently developed. By overlapping Illumina microarray expression and methylation probe locations to RTE locations in RepeatMasker (Smit et al., 2013), we were able to identify a sufficient number of probes to calculate the expression and methylation levels of RTE classes and families. Building on this methodology, we explored how RTE expression contributes to biological aging using publicly available transcriptomics microarray data derived from human blood samples. More specifically, we first investigated if RTE expression was correlated with chronological age, and then we analyzed the relationship between RTE and BAR events including cellular senescence, inflammation, and IFN-I response with published gene signatures. Using microarray methylomic data, we also investigated the DNA methylation level of RTEs in blood samples of multiple non-cancerous human cohorts and examined the relation between DNA methylation and RTE expression and aging. Furthermore, with annotated single-cell transcriptomic data of the peripheral blood mononuclear cells (PBMCs) of 21 healthy human samples from a recent study of aging immunity (Mogilenko et al., 2021), we identified cells that could be implicated in the process of RTE reactivation and aging. We also validated our microarray result with a publicly available bulk RNA-seq PBMC data from healthy individuals that was recently published in a new study of aging (Morandini et al., 2024). Lastly, the single-cell transcriptomic data of supercentenarians Hashimoto et al., 2019 was analyzed to examine the interplay between RTE expression and aging as a factor of aging and longevity (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig1-v1.jpg)
+
+**Figure 1.:** We collected published datasets of human blood samples for gene expression, DNA methylation, and single-cell transcriptomic data. The analysis aimed to study the relation between the expression and DNA methylation of retrotransposons (RTEs) versus chronological and biological aging in large human cohorts. The single-cell transcriptomic datasets were employed for cell type-specific analysis of RTEs in peripheral blood mononuclear cell (PBMC) to identify the relation between RTE expression and aging events for annotated cell types within old versus young PBMC samples.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a), The number of microarray probes covering RTE regions in multi-ethnic study of atherosclerosis (MESA), Grady Trauma Project (GTP), and GARP compared to the total number of RTE probes available in Illumina HumanHT-12 V4. (b), The number of microarray probes covering RTE regions in MESA, GMPWAR, SATSA, and BSGS compared to the total number of RTE probes available in Illumina Infinium 450 k array.
+
 ## Results
 
-## Analyzing DNA methylation and expression levels of RTEs using microarray data
+### Analyzing DNA methylation and expression levels of RTEs using microarray data
 
 We collected three published microarray datasets from large-scale human studies, including the peripheral monocyte samples from the Multi-Ethnic Study of Atherosclerosis (Bild et al., 2002) (MESA, aged 44–83, n=1202), the whole blood (WB) samples from Grady Trauma Project (Binder et al., 2008; Gillespie et al., 2009) (GTP, aged 15–77, n=359), and PBMC samples from Genetics, Osteoarthritis and Progression (Riyazi et al., 2005) (GARP, aged 43–79, n=139), which are all non-cancerous human samples (Supplementary file 1). The studies were conducted using either Illumina HumanHT-12 V3 or Illumina HumanHT-12 V4 expression microarray kits. After comparing the probes of the two microarray versions, we adopted the more comprehensive probe list of V4, which contains the full intersection of the two lists. To quantify RTE expression, we mapped the microarray probe locations to RTE locations in RepeatMasker to extract the list of noncoding (intergenic or intronic) probes that cover the RTE regions. We included three main RTE classes: (1) the LINE class, which encompasses the L1 and L2 families; (2) the SINE class, with Alu and MIR as the two main families; and (3) the LTR class which comprises the ERV1, ERVL, ERVL-MaLR, and ERVK families. Most of the RTE-covering probes available on Illumina HumanHT-12 V4 are present in MESA and GARP, while fewer are available in GTP (Figure 1—figure supplement 1a, Supplementary files 2–4).
 
 Four methylation datasets were analysed, including MESA, Swedish Adoption/Twin Study of Aging (Wang et al., 2018) (SATSA, aged 48–98, n=1072), Brisbane Systems Genetics Study (Powell et al., 2012) (BSGS, aged 10–75, n=862), and Genome-wide Methylation Profiles Reveal Quantitative Views of Human Aging Rates (Hannum et al., 2013) (GMPWAR, aged 19–101, n=656). SATSA, BSGS, and GMPWAR include genome-wide DNA methylation of WB samples produced by Illumina Infinium 450 k array (Supplementary file 1). The DNA methylation probes from the Illumina Infinium 450 k array kit were aligned to the locations in RepeatMasker to identify the probes overlapping the RTE regions (Supplementary file 5). More than 90% of the RTE-covering probes are present in MESA and GMPWAR, while fewer, but more than half, are available in SATA and BSGS datasets (Figure 1—figure supplement 1b).
 
-## The chronological age is not linked with RTE expression
+### The chronological age is not linked with RTE expression
 
 Firstly, we examined the relationship between RTE expression and chronological age in the MESA, GARP, and GTP cohorts. The ages of the individuals enrolled in these studies range from 15 to 83 years, with the mean being 70.2 (MESA), 60.1 (GAPR), and 42.5 (GTP) (Supplementary file 1). Strikingly, no significant relationship (p-value < 0.05) is found between chronological age and expressions of the three RTE classes across the datasets (Figure 2a). Similarly, apart from a weak correlation observed between a few RTE families and chronological age, we could not identify any strong relation between chronological age and expression of RTE families across the three cohorts (Figure 2—figure supplement 1a).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-v1.jpg)
+
+**Figure 2.:** (a) No correlation between RTE expression and chronological age versus positive correlations between biological age-related (BAR) gene signature scores and LINE and long terminal repeat (LTR) expressions. Pair-wise correlation coefficients were calculated between the expression of different RTE classes (LTR, LINE, and SINE) and chronological age and six BAR gene signature scores in monocytes (Multi-Ethnic Study of Atherosclerosis, MESA), peripheral blood mononuclear cells (PBMCs) (GARP), and the whole blood (WB) (GTP). (b), Scatter plots displaying a positive correlation between LINE and LTR expressions and inflammaging, senescence associated secretory phenotype (SASP), and senescence gene signature scores in PBMCs. (c), Different families of RTEs were divided into two major groups based on their correlation and inverse correlation with BAR gene signature scores in PBMC samples. (d), Correlation matrix depicting all pair-wise combinations to identify the correlation between chronological age, RTE family expressions, and six age-associated signature scores in PBMCs. **p≤0.01, ***p≤0.001, Pearson’s correlation. MESA, n=1202; GARP, n=139; GTP, n=359.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a), Weak correlation between a few RTE families and chronological age and strong positive correlation between L1, ERVL, ERVK, and MaLR with BAR signature scores in peripheral blood mononuclear cell (PBMC) samples (GARP cohort). (b, c), Correlation matrix depicting all pair-wise combinations to identify the correlation between chronological age, RTE family expressions, and six age-associated gene expressions in monocytes (Multi-Ethnic Study of Atherosclerosis, MESA) and the whole blood (WB) (GTP). *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, Pearson’s correlation.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** No significant difference was observed in any cell type. The young group comprises healthy male donors aged 25–29, n=11; the old groups are healthy male donors aged 62–70, n=10; Wilcoxon test; ns: not significant.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** No significant difference was observed in any cell type. The young group comprises healthy male donors aged 25–29, n=11; the old groups are healthy male donors aged 62–70, n=10—Wilcoxon test; ns: not significant.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** No significant difference was observed in any cell type. The young group comprises healthy male donors aged 25–29, n=11; the old groups are healthy male donors aged 62–70, n=10—Wilcoxon test; ns: not significant.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** No correlation was observed between chronological age and expression of RTE classes or families. Blood samples were acquired from healthy donors of 117 males and 42 females aged 20–74 years. n=159—Pearson’s correlation.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Despite having a significant correlation between the IFN-I signature score and expression of LINE and long terminal repeats (LTR) classes and most of their families (p-value <0.01), such correlation did not exist between the IFN-I score and SINE class and Alu family. Blood samples were acquired from healthy donors of 117 males and 42 females aged 20–74 years. n=159—Pearson’s correlation.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** (a, b) The samples in each cohort were divided into low (first quartile), medium (second and third quartile), and high (fourth quartile) LTR and LINE expression groups, respectively. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, Wilcoxon test.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** (a, b), The samples in each cohort were divided into low (first quartile), medium (second and third quartile), and high (fourth quartile) SINE and Alu expression groups, respectively. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, Wilcoxon test.
 
 A similar correlation analysis was carried out in a scRNA-seq data of the PBMCs of 21 non-obese healthy men annotated into 25 cell types by Mogilenko et al., 2021 (Supplementary file 6). When comparing the RTE expression of the young (aged 25–29, n=11) group with the old (aged 62–70, n=10) group, we could not find any significant difference or trend in any cell types between the two groups (Figure 2—figure supplements 2–4).
 
 To investigate whether our observation is consistent in whole transcriptomic data, we conducted correlation analysis on a set of RNA-seq data on healthy human PBMC (Morandini et al., 2024) (aged 20–74, n=159). We did not observe any statistically significant correlation between chronological age and expression of RTE classes or families (Figure 2—figure supplement 5). Overall, RTE expression did not correlate with chronological aging across the microarray, scRNA-seq, and RNA-seq datasets.
 
-## RTE expression positively correlates with BAR gene signature scores except for SINEs
+### RTE expression positively correlates with BAR gene signature scores except for SINEs
 
 In mammals, aging is characterized by an intricate network of inflammation, IFN-I signaling, and cellular senescence (Gorbunova et al., 2021). To measure the level of biological aging from the transcriptomic data, we focused on six gene sets retrieved from widely cited studies: IFN-I (Ivashkiv and Donlin, 2014), inflammatory cytokines (Mogilenko et al., 2022), inflammatory chemokines (Danaher et al., 2017), inflammaging (Franceschi and Campisi, 2014), SASP (Hudgins et al., 2018), and cellular senescence (Troiani et al., 2022; Supplementary file 7). The scores of these six age-associated gene sets were calculated for each individual in the MESA, GTP, and GARP cohorts by applying the singscore package in Bioconductor (Foroutan et al., 2018). Except for GTP, in which 12 genes were missing from the gene sets in total (Supplementary file 8), MESA and GARP microarray datasets had the expression of all the genes in the gene sets.
 
@@ -54,7 +98,7 @@ We analyzed the relation between RTE expression and the six BAR gene signature s
 
 To study the association between RTE expression and BAR gene signatures, we also split the samples in each cohort based on quartiles of RTE expression into high, low, and medium (top 25%, bottom 25%, and middle 50%) groups and compared the BAR gene signature scores across these three groups. Across the datasets, there is an overall trend of increased scores of BAR gene signatures in high versus low LINE and LTR expression groups (Figure 2—figure supplement 7). In fact, amongst all gene sets, we found the most significant increase for SASP and senescence and to a lesser extent for inflammaging signatures. We observed higher SASP, inflammatory cytokine, senescence, and inflammaging in the peripheral monocytes (MESA) in high SINE- and Alu-expressing groups (Figure 2—figure supplement 8). However, in the PBMC samples of the GARP cohorts, groups of high SINE and Alu expressions demonstrate lower expressions of SASP, inflammatory chemokine, senescence, and inflammaging, that reflects the inverse correlation we observed before (Figure 2c). Interestingly, when we examined RNA-seq PBMC data, we found that there is a significant correlation between IFN-I signature score and expression of LINE and LTR classes and most of their families (p-value <0.01), but such a significant correlation did not exist between IFN-I score and SINE class and Alu family (Figure 2—figure supplement 6). There are also no specific trends for SINE expression in the WB samples from the GTP cohort (Figure 2—figure supplement 6). Taken together, SINEs display different patterns than LINEs and LTRs in terms of the association between their expressions and BAR gene signatures. This prompted us to conduct a gene set variation analysis (GSVA) Hänzelmann et al., 2013 to identify the pathways that are regulated in the high versus low RTE expression groups in the three cohorts.
 
-## Elevated SINE expression is linked with the upregulation of the DNA repair pathways, while elevated LINE and LTR expressions are associated with the inflammatory response
+### Elevated SINE expression is linked with the upregulation of the DNA repair pathways, while elevated LINE and LTR expressions are associated with the inflammatory response
 
 We conducted GSVA for high versus low expression groups of RTE classes and families to identify the pathways that might be affected by RTE expression. We specifically focused on the pathways (gene sets) related to the inflammatory and DNA repair responses retrieved from the Molecular Signatures Database (MSigDB) (Subramanian et al., 2005) with ‘inflammatory’ and ‘dna_repair’ as search keywords.
 
@@ -64,17 +108,57 @@ We found that a significant fraction of gene sets related to DNA repair were dow
 
 **Figure 3.:** (a) Gene set variation analysis (GSVA) demonstrates the increased activity of DNA repair pathways in the group of samples with high vs low SINE expression in the MESA and GARP cohorts. In contrast, the inflammatory response is upregulated in the sample groups highly expressing LINE and LTR classes and families in the MESA and GARP cohorts. The samples in each cohort were divided into low (first quartile), medium (second and third quartile), and high (fourth quartile) expression groups based on the expression of retrotransposon (RTE) classes or families. GSVA was applied on high vs low groups for each class and family of RTEs. The threshold for differential expression is set at |logFC|>0.1 and p<0.05. (b), The Radar plot shows the difference between the number of upregulated versus downregulated gene sets related to DNA repair and inflammatory response in each cohort. While high expression of SINE and Alu is significantly associated with a high number of up-regulated DNA-repair gene sets, LINE and L1 expressions are highly related to the high number of activated gene sets related to inflammatory response in the MESA and GARP cohorts. This result is not highly supported by the GTP cohort, more likely due to the low number of probes in this cohort.
 
-## DNA methylation levels of RTEs are inversely correlated with the chronological age and the RTE expression except for SINE expression
+### DNA methylation levels of RTEs are inversely correlated with the chronological age and the RTE expression except for SINE expression
 
 The demethylation of RTEs is suggested to contribute to aging (Gorbunova et al., 2021; Tsurumi and Li, 2012; Wood et al., 2016). To examine the effect of RTE demethylation on chronological aging, we analyzed DNA methylation data from multiple cohorts including monocytes from the MESA cohort and the WB data from GMPWAR, BSGS, and SATSA. Our analysis showed an inverse correlation between the methylation level of RTEs and chronological age across all RTE classes and families in the WB and monocytes (Figure 4a–b and Figure 4—figure supplement 1). This observed trend is in line with previous reports of demethylation of RTE with age in gene-poor regions (Tsurumi and Li, 2012; Wang et al., 2018; Hannum et al., 2013).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig4-v1.jpg)
+
+**Figure 4.:** (a, b), Methylation levels of RTE classes inversely correlated with chronological age in monocyte (Multi-Ethnic Study of Atherosclerosis, MESA) and whole blood (WB) (BSGS, SATSA, and GMPWAR) samples. Satellite DNA was included as a control group. (c), Methylation levels versus low (first quartile), medium (second and third quartile), and high (fourth quartile) expressions of RTE classes in monocytes (MESA). Wilcoxon test; ns: not significant. (d), Correlation matrix for RTE expressions and methylation levels, and chronological age. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, Pearson’s correlation. MESA, n=1202; BSGS, n=614; GMPWAR, n=656; SATSA, n=1072.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a, b), Methylation levels of long terminal repeats (LTR) and LINE/SINE families negatively correlate with chronological age in monocytes (MESA) and the WB (BSGS, SATSA, and GMPWAR). **p≤0.01, ***p≤0.001, Wilcoxon test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** While LINE families, MIR, and long terminal repeats (LTR) families except ERVK show lower levels of methylation in higher expression groups, this pattern is not seen in Alu, CR1, and ERVl. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, ns: not significant, Wilcoxon test.
+
 To elucidate the relationship between the expression and methylation level of RTEs, we divided the MESA samples, with matched RTE DNA methylation and expression, into three groups based on the level of expression of RTEs in different classes and families: low (first quartile), medium (second and third quartile), and high (fourth quartile) expression groups of monocyte samples from the MESA cohort. The DNA methylation levels of LINEs and LTRs significantly decreased in groups of high LINE and LTR expressions, respectively, but SINEs and the satellite repeats (as negative control) did not display the same pattern (Figure 4c). LINE families, MIR, and LTR families except ERVK displayed lower levels of methylation in higher expression groups, while such patterns was absent in Alu, CR1, and ERVl (Figure 4—figure supplement 2). Although the DNA methylation level of SINEs positively correlated with the methylation levels of LINEs and LTRs, the expression of SINEs was not significantly correlated with the expression levels of other RTE classes (Figure 4d). Overall, we found a distinct pattern for SINEs versus LTRs and LINEs by exploring a relationship between DNA methylation and expression levels of RTEs in monocytes, consistent with our other findings showing different patterns for SINEs versus LTRs and LINEs in PBMCs (see above). This result also suggests a dispensable role of DNA methylation for SINE silencing in monocytes, which is in line with previous studies showing SINEs are not derepressed by deletion of DNA methyltransferases or treatment with DNA demethylating agents and are primarily regulated by histone modifications (Varshney et al., 2015).
 
-## Elevated level of RTEs in plasma cells of healthy PBMC samples is associated with the high SASP and inflammaging gene signature scores
+### Elevated level of RTEs in plasma cells of healthy PBMC samples is associated with the high SASP and inflammaging gene signature scores
 
 As described above, we did not identify any association between RTE expression and chronological aging for any human cohorts we analyzed. However, the positive correlation between LINE and LTR expressions with BAR gene signature scores in the PBMC samples of the GARP cohort prompted us to investigate PBMC samples in more detail using PBMC scRNAseq data of 21 samples annotated into 25 cell types by Mogilenko et al., 2021 (Supplementary file 6). The scRNA-seq samples were divided based on low and high BAR gene signature scores to compare against the expression of RTE classes for each cell type. Among the 25 annotated cell types, plasma cells consistently demonstrate significantly elevated RTE expression in cells of high SASP expression that is not observed in the other cell types (Figure 5a and Figure 5—figure supplements 1–3). Increased LINE and SINE expressions were also observed in the plasma cells of the samples with high inflammatory chemokines and inflammaging gene signature scores (Figure 5b and c). Although not statistically significant, elevated RTE expression was also seen in the groups with high inflammatory cytokines and senescence but not IFN-I scores (Figure 5d–f). Overall, this finding indicates that plasma cells might play an important role in the process in which reactivation of RTEs regulates aging.
 
-## Downregulation of RTE expression in supercentenarians versus normal-aged cases despite high BAR signature scores in NK and T cells of supercentenarians
+![Figure 5.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig5-v1.jpg)
+
+**Figure 5.:** (a-f), Unique increased expression of RTEs in the Plasma B cells of the samples with high biological age-related (BAR) gene signature scores indicates the potential role of plasma B cells in aging. *p≤0.05, **p≤0.01, ns: not significant, Wilcoxon test. n=21. (g) Decreased expressions of RTE classes and increased BAR gene signature scores in multiple annotated cell types obtained from the PBMCs of supercentenarians compared to ordinary elderlies as control. Supercentenarians, n=7; control, n=5, age 50–80. Wilcoxon test was applied to identify the significant changes. NK, Natural killer cell; BC, B-cell; TC1, T-cell 1; TC2, T-cell 2; M14, CD14 + monocyte; M16, CD16 + monocyte; EC, Erythrocytes; MKI, MKI67 + proliferating cell; DC, Dendritic cell; MGK, Megakaryocyte.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Plasma B cells demonstrate significantly elevated SINE expression in samples with high SASP scores. *p≤0.05, ns: not significant, Pearson’s correlation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Plasma B cells demonstrate significantly elevated LINE expression in samples with high SASP scores. *p≤0.05, ns: not significant, Pearson’s correlation.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Plasma B cells demonstrate significantly elevated LTR expression in samples with high SASP scores. *p≤0.05, ns: not significant, Pearson’s correlation.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, ns: not significant, Wilcoxon test.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, ns: not significant, Wilcoxon test.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/96575/elife-96575-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, ns: not significant, Wilcoxon test.
+
+### Downregulation of RTE expression in supercentenarians versus normal-aged cases despite high BAR signature scores in NK and T cells of supercentenarians
 
 Supercentenarians who have reached 110 years of age are an excellent resource for investigating healthy aging. We hypothesized that supercentenarians should express RTEs less than normal-aged people because RTE expression, particularly LINE and LTR expressions, can activate the inflammatory pathways (Figure 3), which would be generally harmful to healthy aging. To understand whether there is any RTE expression change in supercentenarians versus normal-aged people and identify the relationship to BAR gene signatures, we compared the scRNA-seq data of the PBMCs of seven supercentenarians (over 110 years) to five non-centenarian (50–80 years) controls (Hashimoto et al., 2019). We collected the annotated cells of these twelve cases as a Seurat object for which the cells were annotated into ten different cell types. Compared with the control group, the supercentenarians demonstrated decreased RTE expression in the natural killer (NK) cells, B-cells, T-cells, monocytes, and dendritic cells (Figure 5g and Figure 5—figure supplement 4). Both T cell types showed decreased LINE expression, while the noncytotoxic cluster, TC1, showed slightly decreased LTR expression, and the expanding cytotoxic T cells, TC2, showed decreased SINE expression. On the other hand, the cytotoxic T cells also demonstrated an increased level of inflammatory cytokines and inflammaging gene signature scores. In addition, the NK cells displayed higher senescence and SASP scores in the supercentenarians while demonstrating decreased LINE and SINE expressions (Figure 5g and Figure 5—figure supplements 5–6). Overall, this result reveals inflammatory activity in cytotoxic T cells and increased senescence in the NK cells that are not associated with the activation of RTEs in supercentenarians. By contrast, the expression of RTEs is significantly reduced in most of the immune cell types in supercentenarians.
 
@@ -94,23 +178,23 @@ Our exploration of multiple cell types based on a published PBMC scRNA-seq cohor
 
 ## Materials and methods
 
-## Illumina HT12-v4 probes
+### Illumina HT12-v4 probes
 
 The probe lists of Illumina Human HT-12 V3 (29431 probes) and V4 (33963 probes) share 29311 probes in common, which is 99.6% of the list of V3. Therefore, we proceeded with HT-12 V4 probes throughout the analysis to cover all studies that used either V3 or V4. To identify the Illumina probes covering RTE regions, we first selected the Illumina Human HT-12 v4 probes covering intergenic or intronic regions, obtaining a list of 924 unique probes. We then overlapped these probe locations with RepeatMasker (Smit et al., 2013) regions to acquire the probes covering RTE regions. In total, we could find 232 unique probes covering RTE regions.
 
-## Generating gene signature scores using singscore
+### Generating gene signature scores using singscore
 
 For each of the curated gene sets, instead of looking at individual gene expressions, we used singscore (version 1.20.0) (Foroutan et al., 2018), a method that scores gene signatures in single samples using rank-based statistics on their gene expression profiles, to calculate the gene set enrichment scores. We first compiled the microarray expression matrix for average expression values from RPM values using limma (Ritchie et al., 2015) package in R, then we used the rankGenes function from the singscore package to rank each gene sample-wise. Eventually, the multi Score function was used to calculate signature scores for all six gene sets at once.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed in R (version 4.3.0). Pearson correlation test was used to determine the r and p values in correlation analyses. For differential expression analysis, the Wilcoxon test is used to determine the significance. The threshold to determine significance is set at p-value < 0.05.
 
-## Gene set variation analysis (GSVA)
+### Gene set variation analysis (GSVA)
 
 GSVA was performed using the GSVA package (version 1.48.3) Hänzelmann et al., 2013 in R to compare the groups of low and high RTE expression. The gene lists were retrieved from the Molecular Signatures Database (MSigDB) Subramanian et al., 2005 by searching for ‘inflammatory’ and ‘dna_repair’ as keywords. We further removed pathways that ended with ‘_DN’ (as for downregulated) or ‘_UP’ (as for upregulated) to reduce repeat and confusion. Three repetitive gene sets were removed from our analysis (GOBP_POSITIVE_REGULATION_OF_ACUTE_INFLAMMATORY_RESPONSE, GOBP_POSITIVE_REGULATION_OF_CYTOKINE_PRODUCTION_INVOLVED_IN_INFLAMMATORY_RESPONSE, GOBP_POSITIVE_REGULATION_OF_ACUTE_INFLAMMATORY_RESPONSE_TO_ANTIGENIC_STIMULUS). The filtering process generated 50 gene sets for inflammatory response and 21 gene sets for DNA repair. To detect any alterations in gene expression, the log fold change threshold was kept low at |logFC| > 0.1, and a significance threshold of p-value < 0.05 was set.
 
-## ScRNA-seq analysis workflow for RTEs
+### ScRNA-seq analysis workflow for RTEs
 
 Two single-cell transcriptomic datasets of healthy human cohorts were adopted in this study (Supplementary file 6). To obtain the RTE expression in single-cell sequencing (scRNA-seq) data, the scRNA-seq bam files were processed through the scTE (He et al., 2021) pipeline. More specifically, for each cell in each sample, the read counts for different classes and families of RTEs were generated using the scTE method. Subsequently, in each sample, we calculated the cumulative read counts for each RTE class per annotated cell type by adding the number of reads belonging to all the cells of each cell type. This resulted in pseudo-bulk read counts of RTE classes for different cell types in each sample.
 
@@ -118,6 +202,6 @@ In parallel, we also calculated the pseudo-bulk read counts for all genes per ce
 
 To calculate the age-associated gene signature scores, we converted the scRNA-seq read counts to bulk RNA-seq read counts by summing up the number of reads of all cells of the same type for each gene. This resulted in a bulk RNA-seq gene count matrix from which we calculated each sample’s RPM values per gene. Next, the RPM matrix was provided to singscore to calculate gene signature scores. Lastly, we divided the samples into high vs low gene signature scores by using the median as the cut-off.
 
-## Bulk RNA-seq analysis for RTEs
+### Bulk RNA-seq analysis for RTEs
 
 The raw RNA-seq reads were mapped to RepeatMasker to extract the reads covering the RTE regions, and then aggregated and normalised for each class and family of RTEs to generate RPM scores.

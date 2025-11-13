@@ -29,17 +29,83 @@ To address these questions, we recorded spiking activity from optogenetically ta
 
 We recorded spiking activity from optogenetically tagged single units in the LC together with pupil diameter in head-fixed mice during behavior (Figure 1a). To quantify a graded relationship between pupil size changes and LC spiking, we first grouped adjacent spikes into individual clusters (Hahn et al., 2010; Yu et al., 2017) based on each unit’s median interspike interval (Figure 1b, Figure 1—figure supplement 1, Methods). The magnitude of pupil responses following a spike cluster (quantified in a 6-s window from cluster onset) progressively increased with cluster size (the number of spikes in a cluster, Figure 1c, d). The latency of peak pupil diameter did not systematically vary with cluster size and ranged between 2.5 and 4 s (Figure 1—figure supplement 2). This latency is consistent with our previous report (Yang et al., 2021). Overall, we found a positive, monotonic relationship between peak pupil diameter and LC cluster size in the majority of paired recordings (linear regression R2 > 0.6 in 13 out of 19 paired recordings, Figure 1e), in line with previous findings in nonhuman primates (Varazzani et al., 2015; Joshi et al., 2016). Similar relationships held when pupil responses were quantified as % changes from baseline (Cazettes et al., 2021) or the time derivatives of pupil (Reimer et al., 2016; Yang et al., 2021; Figure 1—figure supplement 3). However, substantial variations existed in the relationship (linear slopes ranging from 0.12 to 0.51. 0.24 ± 0.11, mean ± standard deviation [SD], n = 13), indicating variable couplings between pupil and LC neurons.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig1-v1.jpg)
+
+**Figure 1.:** (a) Left: schematic of experimental setup for simultaneous pupil and LC recording/optical stimulation in head-fixed mice. Lightning bolt: light pulse. Right: expression of ChR2 in a DBH;Ai32 mouse (dopamine beta hydroxylase, DBH; ChR2-EYFP: green; tyrosine hydroxylase, TH: red). (b) Example simultaneously recorded LC spike raster and z-scored pupil diameter. Vertical black lines represent individual spikes. Horizontal magenta lines indicate spike clusters. (c) Example LC spike cluster-triggered pupil responses for cluster sizes 1, 4, and 7. (d) Mean LC cluster-triggered pupil responses (± standard error of the mean [SEM]) for cluster sizes 1 through 8 with occurrence (%) indicated in an example recording. (e) Left: the relationship between peak pupil diameter and LC cluster size for each paired recording. Curves with linear regression R2 > 0.6 are in black (n = 13), <0.6 in red (n = 4). Two recordings with limited cluster sizes (<3) were not suitable for linear regression and not included here. Right: histogram of the linear slopes for curves with R2 > 0.6. For f–h, the 13 recordings with R2 > 0.6 were included. (f) Histograms of area under the curve (AUC) values when using peak pupil diameter to predict the associated cluster sizes 1, 4, and 7. Magenta dot: mean. (g) Group mean AUC values when using peak pupil diameter to predict the associated cluster sizes 1 through 8. (h) Replot of (g) by showing the occurrence (abscissa) associated with each cluster size (gray scale).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Distribution of interspike interval, spike waveform (top) and spike sorting diagram (bottom) of three example recordings with median interspike interval (ISI, left to right: 0.20, 0.29, and 0.36 s) and spike duration (left to right: 0.23, 0.84, and 1.25 ms). Spike duration was quantified from trough to peak afterhyperpolarization (AHP). (b) Distribution of median interspike interval for 19 recordings. (c) Distribution of R2 values from linear regressing pupil–LC relationship in Figure 1e (n = 17, two recordings with limited cluster sizes [<3] were not suitable for linear regression and not included).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** c.c., Pearson correlation coefficient.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The relationship between pupil size changes and LC spike cluster when pupil responses were quantified as % changes from baseline (a), time derivative (b), or using a shorter time window (3 s, c). Curves with linear regression R2 > 0.6 are in black, <0.6 are in red. Specifically, 13 recordings were identified with R2 > 0.6 in (a), and all were the same as the 13 recordings with R2 > 0.6 in Figure 1e; 9 recordings were identified with R2 > 0.6 in (b), and 8 out of 9 were from the 13 recordings in Figure 1e; 12 recordings were identified with R2 > 0.6 in (c), and all were from the 13 recordings in Figure 1e. In addition, only in 1 out of the 13 recordings (with R2 > 0.6 in Figure 1e) did the number of spikes occurring after a given cluster (in-between spikes) significantly correlate with LC cluster size or peak pupil diameter, and overall in-between spikes did not strongly correlate with LC cluster size (correlation coefficient = 0.35, p = 0.39) or peak pupil diameter (correlation coefficient = 0.29, p = 0.48). Together, these results strongly suggest that in-between spikes did not significantly contribute to the variability of the pupil–LC relationship.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig1-figsupp4-v1.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig1-figsupp5-v1.jpg)
+
 Although pupil diameter exhibited an overall monotonic relationship with LC spiking, it did not necessarily warrant pupil diameter being an accurate readout of LC activity. We tested the extent to which pupil size changes can be used as a proxy for LC activity, that is, can we use pupil diameter to make accurate inferences of LC spiking on a moment-by-moment basis? We asked how well an ideal observer (Green and Swets, 1966) can predict LC cluster size given the associated peak pupil responses (Methods). Receiver-operating-characteristic (ROC) analysis showed that as cluster size increased, peak pupil diameter can better predict LC activity (Figure 1f, g, Figure 1—figure supplement 4). However, only peak pupil diameter associated with large clusters (≥5–6 spikes) can achieve a performance threshold of d′ = 1 (translates to ~0.75 area under the curve Simpson and Fitter, 1973, Figure 1g). Since larger clusters occurred less frequently (Figure 1d, h, Figure 1—figure supplement 5), our data suggest that pupil dilation cannot accurately represent the majority of LC spiking activity but can serve as a good proxy for the infrequent (<10%) and strong LC activity in real time (Figure 1h).
 
 Perhaps what is more interesting (and useful) is to assess whether we can directly use pupil diameter to infer the ‘ground truth’ – LC activity, without recording from LC. To do so, we first detected pupil dilation events based on zero-crossings of pupil derivatives (Joshi et al., 2016; Figure 2a) and quantified LC spike counts immediately preceding each dilation event (Methods). Compared with the analyses in Figure 1, this method did not require prior knowledge of LC activity for identifying pupil responses and yielded a similar pupil–LC relationship (Figure 2—figure supplement 1). Overall, LC spike counts were monotonically associated with pupil dilation amplitudes (Figure 2b–d). However, a wide range of spike counts preceded pupil events of similar sizes (Figure 2b, c). We asked how well an ideal observer can predict pupil dilation events given the associated LC activity and found that as pupil dilations became larger, LC spike counts could make better predictions on a moment-by-moment basis. However, only LC activity preceding the infrequent (<10%), large dilation events (>1.5–2 SD, Figure 2—figure supplement 2) performed beyond 75% threshold (Figure 2e). Finally, we tested how well we can use the detected pupil dilation events to predict LC activity. Similar to the previous results (Figure 1g), we found that only large pupil events can achieve good predictions (Figure 2f). Taken together, our data show that pupil diameter and LC spiking are well correlated in a graded manner and that the infrequent (<10%) but strong (>1.5–2 SD) pupil dilation events can be used to accurately and reliably predict LC activity in real time.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig2-v1.jpg)
+
+**Figure 2.:** (a) Example pupil–LC traces showing the detected pupil dilation events (blue arrows) based on zero-crossing of pupil derivatives. (b) Probability distributions of LC spike counts associated with pupil dilation events of similar sizes in an example recording. Magenta dot: mean. Pupil dilation events were binned every 0.3 standard deviation (SD). (c) Group mean probability distributions of LC spikes associated with pupil dilation events of similar sizes. Mean occurrences (%) of pupil dilation events were indicated. (d) Group mean relationship between LC spike counts and pupil dilation events binned every 0.3 SD from 0 to 3 SD. (e) Group mean area under the curve (AUC) values when using LC spike counts to predict the associated pupil dilation events binned every 0.3 SD from 0 to 3 SD. (f) Group mean AUC values when using the detected pupil dilation events to predict the associated LC spike counts 1 through 8, similar to Figure 1g.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Group mean relationship between peak pupil diameter and LC spike counts based on (1) clustering LC spikes then identifying the associated peak pupil responses (blue, Figure 1), and (2) detecting pupil dilation events then identifying the preceding LC spike counts (red, Figure 2).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Pupil dilation events were binned every 0.3 standard deviation (SD).
+
 Our data presented so far were based on paired pupil–LC recordings, each consisting of a single opto-tagged LC unit. Next, we sought to test whether pupil size changes better reflect population-level LC activity instead of single neurons. To this end, we optogenetically activated groups of LC neurons and quantified the evoked pupil responses. Based on the stimulation parameters, we estimated an excitable volume on the order of 0.05–0.1 mm3, containing hundreds of LC neurons (Figure 3a, b, Figure 3—figure supplement 1, Methods). In a subset of experiments, the putatively same LC units were tracked (typically 1–5 days), based on opto-tagging, spike clustering, and waveform comparison (Figure 3c, d). Waveforms from the putatively same units were more similar than the waveforms from the putatively different units (Figure 3e–g). These putatively same units responded similarly to optical stimulation in different sessions (Figure 3h), suggesting a consistent transduction of optical stimulation to LC spiking activity. In contrast to stable LC responses, the same pupil exhibited variable dilations to optical stimulation under awake, nontask performing conditions (Figure 4a, b). Importantly, baseline pupil diameters were similar (0.71 vs. 0.75 mm, Figure 4—figure supplement 1) and thus cannot explain the differences in evoked pupil responses. Group data from multiple mice further demonstrated that significant session-to-session fluctuations of pupil responses were prevalent but not directional (solid lines in Figure 4c, d), that is, pupil responses in an earlier session (session 1) were not consistently higher or lower than in a later session (session 2). Therefore, such session-to-session fluctuations were not observable from group comparisons (Figure 4—figure supplement 2, Privitera et al., 2020). To further test whether the variable pupil responses were due to (1) weak LC stimulation with 10 ms pulses, or (2) strong spontaneous pupil fluctuations during wakefulness, we performed the following experiments. First, we evoked pupil responses with stronger stimulation (50 ms pulses instead of 10 ms) in the awake condition. While baseline pupil diameters were similar between sessions, evoked pupil responses still fluctuated significantly (Figure 4e, f). In a subset of experiments, pupil exhibited substantial fluctuations in two sessions just several hours apart (4–6 hr, magenta arrows in Figure 4c–f). Further analysis showed that across-session variability of pupil responses was comparable to within-session variability (Figure 4—figure supplement 3, Methods). In addition, for the paired sessions that exhibited significantly different responses to optical stimulation (solid lines in Figure 4c–f), only a small subset exhibited larger across-session variability than within-session variability (2 pairs out of 12 under 10 ms condition, and 3 pairs out of 11 under 50 ms condition, Methods). Next, we stimulated LC with 10 ms pulses under anesthesia (2% isoflurane) to minimize spontaneous pupil fluctuations (Figure 4—figure supplement 4). Evoked pupil responses were noticeably larger compared with the awake condition in the example recordings, possibly due to a more constricted baseline pupil size under anesthesia (Figure 4g, h, left vs. Figure 4a, b, 0.3 vs. 0.7 mm). Nevertheless, pupil responses to optical stimulation exhibited substantial session-to-session fluctuations (Figure 4g, h). Additional examples of a simultaneously recorded LC unit and pupil diameter in responses to optical stimulation are in Figure 4—figure supplement 5. In summary, pupil responses showed large session-to-session fluctuations to identical LC stimulation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig3-v1.jpg)
+
+**Figure 3.:** (a) Example LC histological section illustrating optical fiber implant and the estimated excitable volume (light gray cone). Estimates were based on 10-mW laser power, 2.5 mW/mm2 excitation threshold, 1.4 refractive index, and a 30° cylindrical cone. (b) Example spiking activity (vertical lines) from an opto-tagged LC unit in response to 10-ms blue pulse trains at different frequencies. (c) Example traces (top, middle) and waveforms (bottom) from a putatively same LC unit in response to optical stimulation (cyan bars) in two different sessions (3 days apart). Black and blue indicate an earlier and a later session (sessions 1 and 2), respectively. Waveforms from the two sessions were highly similar with Pearson correlation coefficient (c.c.) = 0.97. (d) Spike sorting diagrams corresponding to the two sessions shown in (c). The unit was identified in Ch1. (e) Waveforms from another putatively same unit in two sessions (1 day apart, waveform c.c. = 0.95). (f) Waveforms from the 2 units shown in (c) and (e) were less similar (session 1 unit 1 vs. session 1 unit 2, c.c. = 0.75). (g) Among the tracked 5 units, waveforms from the putatively same units in sessions 1 and 2 (Same) were more similar than waveforms from the putatively different units in session 1 (Different. Same vs. Different, Pearson correlation coefficient (c.c.), 0.96 ± 0.02 vs. 0.82 ± 0.07, mean ± standard deviation (SD), p = 6.6e−4, two-tailed rank sum test). Gray dots: individual pair. Black dots: group mean. (h) Responses from the putatively same units to optical stimulation (S1 vs. S2) during awake, nontask performing (4 units, left) and anesthetized (5 units, right) conditions. p > 0.05 for each S1 vs. S2 comparison, permutation test. Evoked spike counts were quantified in response to (1) single 50 ms pulse (solid black line, 4 units); or (2) four 10 ms pulses at 10 Hz (solid gray line, 2 units); or (3) eight 10 ms pulses at 5 Hz (dashed gray line, 2 units).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The number of evoked spikes from an opto-tagged LC unit in response to optical stimulation using different laser power (single 10 ms pulse; left), or different pulse width (single pulse; right). Error bars may be too small to be visible.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig4-v1.jpg)
+
+**Figure 4.:** (a) Example responses from the same pupil to LC stimulation in two awake, baseline pupil-matched sessions (left and right) aligned to the onset of optical stimulation of four 10 ms pulses at 10 Hz. Thin curves: individual responses; thick curves: mean. Baseline pupil diameter S1 vs. S2, 0.71 vs. 0.75 mm. p values were based on permutation test. (b) Same as in (a), except that optical stimulation was eight 10 ms pulses at 10 Hz. (a, b) were from the same recording. (c) Group data showing pupil responses to optical stimulation of four 10 ms pulses at 10 Hz in awake, baseline pupil-matched sessions (12 paired sessions from 6 mice). To aid visualization, pupil responses in session 2 were normalized to session 1. Unnormalized data in Figure 4—figure supplement 2. Dots: mean peak pupil responses. Vertical lines: 95% confidence interval. Solid lines indicate significant difference (p < 0.05, permutation test). Session 1 always preceded session 2. Magenta arrows indicate same-day comparison. (d) Group data showing pupil responses to optical stimulation of eight 10 ms pulses at 10 Hz in awake, baseline pupil-matched sessions (11 paired sessions from 7 mice). Unnormalized data in Figure 4—figure supplement 2. Conventions are as in (c). (e, f) Left: example pupil responses from one recording. Conventions are as in (a, b), except that optical stimulations consisted of 50 ms pulses instead of 10 ms, and that pupil responses from the two sessions were overlaid. Baseline pupil diameter S1 vs. S2, 0.83 vs. 0.80 mm. Right: group pupil responses as in (c, d), except that optical stimulations consisted of 50 ms pulses instead of 10 ms. 9 paired sessions from 7 mice in (e), and 9 paired sessions from 7 mice in (f). Magenta arrows indicate same-day comparison. (g, h) Left: example pupil responses from one recording. Conventions are as in (a, b), except that the mouse was under anesthesia (2% isoflurane), and that pupil responses from the two sessions were overlaid. Baseline pupil diameter S1 vs. S2, 0.31 vs. 0.35 mm. Right: group pupil responses as in (c, d), except that mice were under anesthesia. 7 paired sessions from 3 mice in (g), and 8 paired sessions from 3 mice in (f).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Session-to-session fluctuations were not observable from group comparisons. p = 0.38, n = 12 for (a) and p = 0.63, n = 11 for (b). Magenta arrows indicate same-day comparison.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) p = 0.53, p = 0.58. (b) p = 0.22, p = 0.15. Two-tailed rank sum test. Across-session variability was estimated by resampling pooled trials from all sessions in each condition. The iteration of resampling matched the number of sessions in that condition.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (a) The amplitude of spontaneous pupil dilation events in awake, nontask performing condition was larger than in anesthetized condition (five sessions from three mice in each condition, p = 0.0079, two-tailed rank sum test). Gray dots: individual sessions. Red and black dots: group mean. (b) The frequency of significant spontaneous pupil dilation events (>0.3 standard deviation [SD]) was higher in awake, nontask performing condition than in anesthetized condition (5 sessions from 3 mice in each condition, p = 0.0079, two-tailed rank sum test). Gray dots: individual sessions. Red and black dots: group mean.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Simultaneous recording of an LC unit waveform (a), spike responses (b), and pupil diameter (c) during optogenetic stimulation (10 ms pulse train: four pulses at 10 Hz [top] and eight pulses at 5 Hz [bottom] under anesthesia). Baseline pupil diameter S1 vs. S2, 0.34 vs. 0.32 mm.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (a, b) ISI distribution and spike waveform from all recordings, ranked by increasing median ISI. Pupil–LC relationship with R2 > 0.6 (as in Figure 1e) in (a, n = 13), and the remaining in (b, n = 6). All waveforms were plotted on the same scales as shown in the first panel. Each trial lasted 5–6 s, which likely contributed to the peak on the right side of some ISI distributions (e.g., magenta arrow in the last panel of (b)). (c) Average firing rate vs. spike duration (trough to peak AHP). Black dots represent the group in (a), gray dots represent (b). We note that both narrow and wide waveforms were present, supporting recent work (Totah et al., 2018). We did not quantify the width of four waveforms in (a, indicated by *) as their reversed polarity with prominent initial positive deflection indicated that the recording sites were in the more distal axonal or dendritic regions of neurons where mixed-ion capacitive current became more profound (Barry, 2015; Gold et al., 2006; Rall and Shepherd, 1968; Sun et al., 2021). Their firing rates were between 1 and 3 spikes/s.
 
 What may underlie the variable pupil responses? We found that the variations in the relationship between peak pupil diameter and LC cluster size (as in Figure 1e) were strongly correlated with hit rate and decision bias during task performance (Figure 5a). This effect was not likely due to linear fitting of nonlinear relationships (all linear fits are of R2 > 0.85. 0.92 ± 0.05, mean ± SD, n = 9), and the results held when the analysis of pupil–LC relationship was restricted to nonlicking periods only (Figure 5b, Methods). Therefore, although mice licked more during sessions of higher hit rate and lower decision bias, the results cannot be fully explained by a potentially stronger pupil–LC coupling during licking periods. Based on these findings, we conclude that decision bias-related behavioral variables could explain, at least in part, the variations in the pupil–LC relationship. Since fluctuations of these behavioral variables reflect state changes such as impulsivity, motivation, and task engagement (Dickinson and Balleine, 1994; Mayrhofer et al., 2013; Berditchevskaia et al., 2016; Allen et al., 2019; McBurney-Lin et al., 2020), our results suggest that the coupling between pupil and LC is state dependent.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70510/elife-70510-fig5-v1.jpg)
 
-**Figure 5.:** (a) The variations in the relationship between peak pupil diameter and LC cluster size (linear slopes in Figure 1e) were strongly correlated with Hit rate (left) and decision bias (right, n = 9). c.c., Pearson correlation coefficient. (b) The relationships in (a) held when pupil–LC slopes were quantified in nonlicking periods only.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (a) The variations in the relationship between peak pupil diameter and LC cluster size (linear slopes in Figure 1e) were strongly correlated with Hit rate (left) and decision bias (right, n = 9). c.c., Pearson correlation coefficient. (b) The relationships in (a) held when pupil–LC slopes were quantified in nonlicking periods only.
 
 ## Discussion
 
@@ -60,6 +126,114 @@ How may brain states modulate pupil–LC coupling? Pupil size changes have been 
 Another possibility is that higher engagement states may be intimately associated with more ‘uninstructed’ movements as revealed by recent work (Musall et al., 2019), which can drive robust neuronal activity throughout the brain (Musall et al., 2019; Steinmetz et al., 2019; Stringer et al., 2019; Salkoff et al., 2020). Future studies with comprehensive movement monitoring will determine whether more frequent movements, both task-related and task-unrelated, during periods of high motivation/engagement underlie the stronger pupil–LC coupling.
 
 ## Materials and methods
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>DBH-Cre</td>
+      <td>MMRRC</td>
+      <td>RRID:MMRRC_036778-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ai32</td>
+      <td>JAX</td>
+      <td>RRID:IMSR_JAX:012569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BControl</td>
+      <td>Princeton University</td>
+      <td>https://brodylabwiki.princeton.edu/bcontrol</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WaveSurfer</td>
+      <td>HHMI Janelia</td>
+      <td>http://wavesurfer.janelia.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Janelia eye tracker</td>
+      <td>HHMI Janelia</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StreamPix</td>
+      <td>Norpix</td>
+      <td>RRID:SCR_015773</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Camera</td>
+      <td>PhotonFocus</td>
+      <td>DR1-D1312-200-G2-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Telecentric lens</td>
+      <td>Edmund Optics</td>
+      <td>55–349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tetrode drive</td>
+      <td>Cohen et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TH primary antibody</td>
+      <td>Thermo Fisher</td>
+      <td>OPA104050 RRID:AB_325653</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary antibody</td>
+      <td>Thermo Fisher</td>
+      <td>A11008 RRID:AB_2534079</td>
+      <td>1:500</td>
+    </tr>
+  </tbody>
+</table>
 
 All procedures were performed in accordance with protocols approved by UC Riverside Animal Care and Use Committee. Mice were DBH-Cre (B6.FVB(Cg)-Tg(Dbh-cre) KH212Gsat/Mmucd, 036778-UCD, MMRRC); Ai32 (RCL-ChR2(H134R)/EYFP, 012569, JAX), or DBH-Cre injected with AAV5-EF1α-DIO-hChR2(H134R)-EYFP (UNC Vector Core), singly housed in a vivarium with reverse light–dark cycle (12 hr each phase). Male and female mice of 8–12 weeks were implanted with titanium head posts as described previously (Yang et al., 2016). Procedures for microdrive construction and LC recording have been described previously (Yang et al., 2021). Briefly, custom microdrives with eight tetrodes and an optic fiber (0.39 NA, 200 µm core) were built to make extracellular recordings from LC neurons. Microdrive was implanted in the left LC. LC neurons were identified by optogenetic tagging of DBH+ neurons expressing ChR2, tail pinch response, and post hoc electrolytic lesions (Yang et al., 2021). For Figures 1 and 2, 19 single unit recordings (cluster quality measure Lratio: 0.01 ± 0.005; firing rate: 1.65 ± 0.25 spikes/s; percent ISI <10 ms: 0.11% ± 0.1%) from 7 mice performing the single-whisker detection task (see below) were extracted using MClust (Redish, 2014), among which six recordings were from our previous dataset (Yang et al., 2021). For Figure 3, 5 units from 5 mice were tracked over time (between 1 and 5 days). For Figure 4, 68 pupil sessions (34 baseline pupil-matched session pairs) to LC stimulation were acquired from 8 mice, 4 of which were implanted with an optical fiber only (0.39 NA, 200 µm core), and the time between sessions 1 and 2 was 4.4 ± 0.9 days. At the conclusion of the experiments, brains were perfused with PBS followed by 4% paraformaldehyde, postfixed overnight, then cut into 100-μm coronal sections and stained with anti-tyrosine hydroxylase antibody (Thermo Fisher OPA1-04050).
 

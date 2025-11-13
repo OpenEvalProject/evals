@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.28844.001 Transmission of dengue virus (DENV) requires successful completion of the infection cycle in the Aedes aegypti vector, which is initiated in the midgut tissue after ingestion of an infectious blood meal. While certain Ae. aegypti midgut-associated bacteria influence virus infection, little is known about the midgut-associated fungi (mycobiota), and how its members might influence susceptibility to DENV infection. We show that a Talaromyces ( Tsp_PR ) fungus, isolated from field-caught Ae. aegypti, render the mosquito more permissive to DENV infection. This modulation is attributed to a profound down-regulation of digestive enzyme genes and trypsin activity, upon exposure to Tsp_PR -secreted factors. In conclusion, we show for the first time that a natural mosquito gut-associated fungus can alter Ae. aegypti physiology in a way that facilitates pathogen infection.
+Transmission of dengue virus (DENV) requires successful completion of the infection cycle in the Aedes aegypti vector, which is initiated in the midgut tissue after ingestion of an infectious blood meal. While certain Ae. aegypti midgut-associated bacteria influence virus infection, little is known about the midgut-associated fungi (mycobiota), and how its members might influence susceptibility to DENV infection. We show that a Talaromyces (Tsp_PR) fungus, isolated from field-caught Ae. aegypti, render the mosquito more permissive to DENV infection. This modulation is attributed to a profound down-regulation of digestive enzyme genes and trypsin activity, upon exposure to Tsp_PR-secreted factors. In conclusion, we show for the first time that a natural mosquito gut-associated fungus can alter Ae. aegypti physiology in a way that facilitates pathogen infection.
 
 ## Introduction
 
@@ -32,17 +32,17 @@ In the present study, we have identified a Talaromyces species fungus from Puert
 
 ## Results
 
-## An Ae. aegypti gut-associated Tsp_PR fungus augments DENV infection of the mosquito midgut
+### An Ae. aegypti gut-associated Tsp_PR fungus augments DENV infection of the mosquito midgut
 
 Adult female Aedes sp. mosquitoes were collected in the dengue endemic Maunabo region of southeastern Puerto Rico. After surface sterilization of mosquitoes, the midguts were dissected and plated on agar for fungal growth. Among the isolated fungi, we identified a Talaromyces species fungus and characterized at the microscopic (Figure 1) and molecular levels. Sequence analysis using the rRNA internal transcribed spacer (ITS) showed a 100% similarity to the fungus Talaromyces species and 99% Penicillium species. Talaromyces is often classified as a Penicillium species classification, since in 2011, species in the Penicillium subgenus Biverticillium were reclassified as Talaromyces (Pitt, 2014). To address the ability of Tsp_PR to colonize the mosquito midgut, we fed mosquitoes on fungus spore-laced sugar solution for 2 days, and then monitored the total fungus colony-forming units (CFUs) in the whole mosquito and midguts for 25 days (Figure 2A,B, Figure 2—source data 1). Tsp_PR was detected in the whole fungus-exposed mosquitoes and midguts during the entire time course. The assay also identified a small number of fungi in the control mosquito cohort but not Tsp_PR. We also investigated whether the presence of the fungus in the mosquito gut had any effect on mosquito longevity. Introduction of the live Tsp_PR spores through sugar feeding for 2 days did not affect mosquito survival up to 38 days (p=0.3073) (Figure 2C, Figure 2—source data 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig1-v1.jpg)
 
-**Figure 1.:** Tsp_PR morphology.After isolation, the fungus was grown on Sabouraud agar and characterized macroscopically and microscopically. (A) Top and (B) bottom view of the fungus on Sabouraud agar. (C) Microscopic view of the typical brush-like biverticillated conidiophore of Talaromyces sp. fungi.
+**Figure 1.:** After isolation, the fungus was grown on Sabouraud agar and characterized macroscopically and microscopically. (A) Top and (B) bottom view of the fungus on Sabouraud agar. (C) Microscopic view of the typical brush-like biverticillated conidiophore of Talaromyces sp. fungi.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig2-v1.jpg)
 
-**Figure 2.:** Tsp_PR fungus significantly increases DENV infection in Aedes mosquito midguts.Aedes mosquitoes were mock-fed or fed for 48 hr with 10% sucrose solution containing 1 × 109 Tsp_PR spores. After spore feeding, (A) Fungus colonization in whole mosquitoes or (B) midguts. The presence of Tsp_PR in the mosquito was monitored for 25 days after introduction by enumerating fungal CFUs on Sabouraud agar with antibiotics cocktail from three independent experiments, the line indicates the mean and bars the maximum and minimum ranges. (C) Survival assays. Female mosquitoes fed with Tsp_PR spores or unfed were monitored in a daily basis for 38 days in three independent experiments (N = 80, p=0.3073). Error bars represent ± SE. (D) Rockefeller strain mosquitoes, (Control, N = 123; Tsp_PR, N = 120) or (E) Orlando strain mosquitoes (Control, N = 113; Tsp_PR, N = 99) were infected with a blood meal containing DENV; at 7 days post-infection (dpi), the midguts were dissected. Each dot represents a plaque-forming unit (PFU) transformed to log10 in individual midguts from three independent experiments. The line indicates the mean. Upper right boxes show the prevalence of infected mosquitoes, error bars represent the 95% confidence interval. *p<0.05, ***p<0.001,.10.7554/eLife.28844.004Figure 2—source data 1.Figure 2.
+**Figure 2.:** Aedes mosquitoes were mock-fed or fed for 48 hr with 10% sucrose solution containing 1 × 109 Tsp_PR spores. After spore feeding, (A) Fungus colonization in whole mosquitoes or (B) midguts. The presence of Tsp_PR in the mosquito was monitored for 25 days after introduction by enumerating fungal CFUs on Sabouraud agar with antibiotics cocktail from three independent experiments, the line indicates the mean and bars the maximum and minimum ranges. (C) Survival assays. Female mosquitoes fed with Tsp_PR spores or unfed were monitored in a daily basis for 38 days in three independent experiments (N = 80, p=0.3073). Error bars represent ± SE. (D) Rockefeller strain mosquitoes, (Control, N = 123; Tsp_PR, N = 120) or (E) Orlando strain mosquitoes (Control, N = 113; Tsp_PR, N = 99) were infected with a blood meal containing DENV; at 7 days post-infection (dpi), the midguts were dissected. Each dot represents a plaque-forming unit (PFU) transformed to log10 in individual midguts from three independent experiments. The line indicates the mean. Upper right boxes show the prevalence of infected mosquitoes, error bars represent the 95% confidence interval. *p<0.05, ***p<0.001,.
 
 To investigate whether the presence of Tsp_PR in the mosquito midgut can modulate susceptibility to DENV infection, we introduced whole fungus spores to Ae. aegypti mosquitoes via feeding on a spore-containing sugar solution prior to a DENV-infected blood meal (Figure 2C,D, Figure 2—source data 1). Two mosquito strains were used: the DENV-susceptible Rockefeller strain and the partly resistant Orlando strain (Sim et al., 2013). Seven days after DENV infection, midguts were dissected, and DENV titers were enumerated. Spore ingestion by Rockefeller and Orlando strains females resulted in a significant (p<0.001) increased DENV infection. Upon spore ingestion, both mosquito strains showed an increased DENV infection prevalence, as a measure of the proportion of mosquitoes that were infected, however it was only significantly higher in the Orlando strain. Further studies were performed in the Orlando strain.
 
@@ -50,39 +50,280 @@ Talaromyces sp. and related fungi are known to produce a variety of secondary me
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig3-v1.jpg)
 
-**Figure 3.:** Tsp_PR secreted molecule(s) render mosquitoes more susceptible to DENV infection.DENV titers by plaque assay. Orlando strain mosquitoes were mock-fed or fed for 48 hr with a 10% sucrose solution a Tsp_PR filtered solution, which contained only (A) the fungus-secreted molecules (Control, N = 68; Tsp_PR, N = 68), or (B) a heat-treated Tsp_PR fungus-secreted molecules (Control, N = 60; Tsp_PR, N = 61). Mosquitoes were infected with a blood meal containing DENV, and midguts were dissected at 7 dpi. Each dot represents a log 10 PFU in individual midguts from three independent experiments. The line indicates the mean. Upper right boxes show the prevalence of infected mosquitoes, error bars represent the 95% confidence interval. **p<0.01.10.7554/eLife.28844.006Figure 3—source data 1.Figure 3.
+**Figure 3.:** DENV titers by plaque assay. Orlando strain mosquitoes were mock-fed or fed for 48 hr with a 10% sucrose solution a Tsp_PR filtered solution, which contained only (A) the fungus-secreted molecules (Control, N = 68; Tsp_PR, N = 68), or (B) a heat-treated Tsp_PR fungus-secreted molecules (Control, N = 60; Tsp_PR, N = 61). Mosquitoes were infected with a blood meal containing DENV, and midguts were dissected at 7 dpi. Each dot represents a log 10 PFU in individual midguts from three independent experiments. The line indicates the mean. Upper right boxes show the prevalence of infected mosquitoes, error bars represent the 95% confidence interval. **p<0.01.
 
 Mosquito are exposed to a variety of fungi in nature. In order to test whether the Tsp_PR-mediated increase of DENV infection is fungus-specific, we performed fungus-exposure and DENV infection assays with a Penicillium chrysogenum that had also been isolated from field-caught mosquitoes. Feeding mosquitoes on whole P. chrysogenum conidia, or culture filtrates, did not affect DENV infection (p=0.829, p=0.867, respectively) (Figure 4A,B, Figure 4—source data 1). We have previously associated P. chrysogenum with an enhancement of Plasmodium infection in Anopheles gambiae (Angleró-Rodríguez et al., 2016). To test whether Tsp_PR could influence malaria parasite infection in its vector we provided Tsp_PR to An. gambiae mosquitoes prior to infection with Plasmodium falciparum, and this resulted in increases parasite oocysts numbers on the mosquito gut (p=0.015) (Figure 4C, Figure 4—source data 1). These results show that Tsp_PR can enhance infection of different human pathogens in different mosquito vectors.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig4-v1.jpg)
 
-**Figure 4.:** Penicillium chrysogenum does not modulate DENV infection in Aedes mosquito midguts, while Tsp_PR render An. gambiae more susceptible to Plasmodium infection.Penicillium chrysogenum was isolated from field-caught Anopheles sp. mosquitoes and re-introduced into Aedes mosquitoes to test the modulation of DENV infection. Aedes Orlando strain was mock-fed or fed for 48 hr with a 10% sucrose solution containing (A) 1 × 109 P. chrysogenum spores (Control, N = 61; P. chrysogenum, N = 47) or (B) fungus-secreted molecules (Control, N = 68; P. chrysogenum, N = 53). After fungus feeding, the mosquitoes were infected with a blood meal containing DENV; at 7 days post-infection (dpi), the midguts were dissected. Each dot represents a PFU value in individual midguts from three independent experiments. The line indicates the mean. (C) Influence of Tsp_PR on P. falciparum infection of An. gambiae, as a measured by oocyst numbers 7 days after feeding on a P. falciparum gametocyte culture (infection intensity). The mosquito cohort (N = 79) that had been exposed to a Tsp_PR -laced sucrose solution for 48 hr prior to parasite infection had a significantly higher P. falciparum infection than did the non-fungus-exposed control cohort (N = 76). Graphs show three independent experiments. Each dot represents a single midgut, and bars represent the mean. *p<0.05.10.7554/eLife.28844.008Figure 4—source data 1.Figure 4.
+**Figure 4.:** Penicillium chrysogenum was isolated from field-caught Anopheles sp. mosquitoes and re-introduced into Aedes mosquitoes to test the modulation of DENV infection. Aedes Orlando strain was mock-fed or fed for 48 hr with a 10% sucrose solution containing (A) 1 × 109 P. chrysogenum spores (Control, N = 61; P. chrysogenum, N = 47) or (B) fungus-secreted molecules (Control, N = 68; P. chrysogenum, N = 53). After fungus feeding, the mosquitoes were infected with a blood meal containing DENV; at 7 days post-infection (dpi), the midguts were dissected. Each dot represents a PFU value in individual midguts from three independent experiments. The line indicates the mean. (C) Influence of Tsp_PR on P. falciparum infection of An. gambiae, as a measured by oocyst numbers 7 days after feeding on a P. falciparum gametocyte culture (infection intensity). The mosquito cohort (N = 79) that had been exposed to a Tsp_PR -laced sucrose solution for 48 hr prior to parasite infection had a significantly higher P. falciparum infection than did the non-fungus-exposed control cohort (N = 76). Graphs show three independent experiments. Each dot represents a single midgut, and bars represent the mean. *p<0.05.
 
-## Tsp_PR-secreted factor(s) do not affect the mosquito midgut microbiota or DENV infection of aseptic mosquitoes
+### Tsp_PR-secreted factor(s) do not affect the mosquito midgut microbiota or DENV infection of aseptic mosquitoes
 
 Some species of Tsp_PR and the closely related Penicillium are known to produce bioactive compounds with anti-bacterial activity (Bara et al., 2013; Klitgaard et al., 2014). To investigate whether Tsp_PR produces antibacterial factors, we performed a bacterial growth inhibition assay by a disc diffusion antibiotic sensitivity test (Figure 5A). We examined possible Tsp_PR-mediated growth inhibition of the following bacteria isolated from field-caught mosquito midguts (Ramirez et al., 2012): the three Gram-negative bacteria Serratia marcescens, Chromobacterium haemolyticum, and Enterobacter hormaechei; and the three Gram-positive bacteria Bacillus subtilis, Staphylococcus capprae, and Lactococcus lactis. The disk soaked in the Tsp_PR secretome solution did not show any growth inhibitory activity for any of the six tested bacteria, when compared to an antibiotic control.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig5-v1.jpg)
 
-**Figure 5.:** Tsp_PR secreted molecule(s) do not affect bacterial load or DENV infection in aseptic mosquitoes.(A) Bacterial growth inhibition assay. Six bacterial isolates of field-caught mosquitoes (Ramirez et al., 2012) were independently plated on LB agar and covered with a disk soaked in a Tsp_PR secretome solution or antibiotic cocktail. Three isolates were Gram-negative bacteria: Serratia marcescens (a), Chromobacterium haemolyticum (b), and Enterobacter hormaeche (c). Three were Gram-positive bacteria: Bacillus subtilis (d), Staphilococcus capprae (e), and Lactococcus lactis (f). Bacterial inhibition was indicated by the presence of a bacterial inhibition zone around the disk. (B) Total bacterial loads. Midguts of secretome solution-exposed and unexposed mosquitoes were collected, homogenized, and plated on LB agar. Bacteria were counted as CFU. Error bars represent ± SD of three independent experiments p=0.202. (C) DENV titers in aseptic mosquitoes. Mosquitoes were treated with an antibiotic cocktail via a sugar meal 4 days before the fungal treatment and were mock-fed or fed for 48 hr on a Tsp_PR secretome solution prior to DENV infection. Each dot represents the PFU after 7 dpi in individual midguts from three independent experiments (Control, N = 75; Tsp_PR, N = 78). The line indicates the mean, p=0.867. Upper right box shows the prevalence of infected mosquitoes, error bars represent the 95% confidence interval.10.7554/eLife.28844.010Figure 5—source data 1.Figure 5B,C.
+**Figure 5.:** (A) Bacterial growth inhibition assay. Six bacterial isolates of field-caught mosquitoes (Ramirez et al., 2012) were independently plated on LB agar and covered with a disk soaked in a Tsp_PR secretome solution or antibiotic cocktail. Three isolates were Gram-negative bacteria: Serratia marcescens (a), Chromobacterium haemolyticum (b), and Enterobacter hormaeche (c). Three were Gram-positive bacteria: Bacillus subtilis (d), Staphilococcus capprae (e), and Lactococcus lactis (f). Bacterial inhibition was indicated by the presence of a bacterial inhibition zone around the disk. (B) Total bacterial loads. Midguts of secretome solution-exposed and unexposed mosquitoes were collected, homogenized, and plated on LB agar. Bacteria were counted as CFU. Error bars represent ± SD of three independent experiments p=0.202. (C) DENV titers in aseptic mosquitoes. Mosquitoes were treated with an antibiotic cocktail via a sugar meal 4 days before the fungal treatment and were mock-fed or fed for 48 hr on a Tsp_PR secretome solution prior to DENV infection. Each dot represents the PFU after 7 dpi in individual midguts from three independent experiments (Control, N = 75; Tsp_PR, N = 78). The line indicates the mean, p=0.867. Upper right box shows the prevalence of infected mosquitoes, error bars represent the 95% confidence interval.
 
 To investigate whether Tsp_PR-secreted molecules can influence the mosquito midgut bacterial load, we quantified the total cultivable bacteria of the midguts of fungus secretome-exposed and non-exposed mosquitoes using CFU assays (Figure 5B, Figure 5—source data 1). Exposure to the Tsp_PR secretome did not affect the total bacterial midgut load (p=0.147). Previous studies showed that reduction or elimination of the mosquito midgut microbiota, through antibiotic-treatment, (aseptic mosquitoes) significantly increases susceptibility to DENV in Ae. aegypti (Xi et al., 2008). Next, we tested whether the fungus-secretome would influence DENV infection of aseptic mosquitoes (Figure 5C, Figure 5—source data 1). Tsp_PR secretome-fed aseptic mosquitoes did not differ from the aseptic control cohort with regards to DENV infection intensity (p=0.867), while it showed a slightly higher but non-significant, infection prevalence. These data suggest that a bacteria-related factor may in some way influence the fungus-mediated effect on DENV infection.
 
-## Tsp_PR-secreted factors stimulate down-regulation of genes encoding blood-digesting enzymes
+### Tsp_PR-secreted factors stimulate down-regulation of genes encoding blood-digesting enzymes
 
 Next we explored the influence of the Tsp_PR secreted factors on the mosquito transcriptome, as a measure of its molecular physiology, in order to provide clues to the mechanism that could be responsible for the influence on DENV infection. A genome-wide microarray-based transcriptome comparison between the midguts of fungus-secretome solution-exposed and non-exposed mosquitoes reveled regulation (23 up-regulated and 22 down-regulated) of a variety of genes belonging to different functional classes (Table 1) (Figure 6A). Forty-eight percent (11 genes) displaying increased transcript abundance after exposure to the Tsp_PR secretome belonged to the redox class and are putatively involved in various oxidoreductive processes, including detoxification. As many as 82% (9 genes) of this redox class encoded cytochrome P450 proteins, suggesting that the fungus activates the detoxification machinery in the mosquito midgut. A significant proportion (55%, 12 genes) of the 22 down-regulated genes were functionally related to blood digestion, and predominantly proteolysis (41%) (Table 1) (Figure 6B). Twenty-two percent of the total down-regulated genes encoded trypsins. These results suggest that the Tsp_PR secretome causes an impairment of the mosquito’s ability to digest the blood meal.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig6-v1.jpg)
 
-**Figure 6.:** Tsp_PR secreted-molecule(s) –induced gene regulation.Functional classification in real numbers of the differentially expressed genes in mosquito midguts treated with Tsp_PR secretome for 48 hr, as compared to those of untreated mosquitoes. The fungus treatment-responsive genes are presented in Table 1 and Supplementary file 1.
+**Figure 6.:** Functional classification in real numbers of the differentially expressed genes in mosquito midguts treated with Tsp_PR secretome for 48 hr, as compared to those of untreated mosquitoes. The fungus treatment-responsive genes are presented in Table 1 and Supplementary file 1.
 
-## Fungus-secreted molecules impair trypsin activity of the Ae. aegypti midgut
+**Table 1.**
+ Significantly regulated genes in Tsp_PR secretome-exposed mosquitoes.Log2 values of differential mRNA abundances (Tsp_PR exposed/non-exposed) of genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene description</th>
+      <th>Gene ID</th>
+      <th>Log2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>trypsin</td>
+      <td>AAEL010196</td>
+      <td>−2.33</td>
+    </tr>
+    <tr>
+      <td>trypsin, putative</td>
+      <td>AAEL013714</td>
+      <td>−2.25</td>
+    </tr>
+    <tr>
+      <td>trypsin</td>
+      <td>AAEL010203</td>
+      <td>−2.07</td>
+    </tr>
+    <tr>
+      <td>Catalytic activity, serine-type endopeptidase activity, proteolysis</td>
+      <td>AAEL017520</td>
+      <td>−1.99</td>
+    </tr>
+    <tr>
+      <td>trypsin</td>
+      <td>AAEL013715</td>
+      <td>−1.95</td>
+    </tr>
+    <tr>
+      <td>serine-type enodopeptidase, putative</td>
+      <td>AAEL001690</td>
+      <td>−1.64</td>
+    </tr>
+    <tr>
+      <td>saccharopine dehydrogenase</td>
+      <td>AAEL014734</td>
+      <td>−1.35</td>
+    </tr>
+    <tr>
+      <td>Sialin, Sodium/sialic acid cotransporter, putative</td>
+      <td>AAEL004247</td>
+      <td>−1.25</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL013835</td>
+      <td>−1.22</td>
+    </tr>
+    <tr>
+      <td>alkaline phosphatase</td>
+      <td>AAEL000931</td>
+      <td>−1.19</td>
+    </tr>
+    <tr>
+      <td>trypsin</td>
+      <td>AAEL013707</td>
+      <td>−1.19</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL007591</td>
+      <td>−1.08</td>
+    </tr>
+    <tr>
+      <td>carboxypeptidase</td>
+      <td>AAEL010776</td>
+      <td>−1.07</td>
+    </tr>
+    <tr>
+      <td>triosephosphate isomerase</td>
+      <td>AAEL002542</td>
+      <td>−1.03</td>
+    </tr>
+    <tr>
+      <td>leucinech transmembrane proteins</td>
+      <td>AAEL005762</td>
+      <td>−0.90</td>
+    </tr>
+    <tr>
+      <td>serine-type enodopeptidase, putative</td>
+      <td>AAEL001701</td>
+      <td>−0.90</td>
+    </tr>
+    <tr>
+      <td>Conserved hypothetical protein (chitin-binding domain type 2)</td>
+      <td>AAEL017334</td>
+      <td>−0.89</td>
+    </tr>
+    <tr>
+      <td>sterol carrier protein-2, putative</td>
+      <td>AAEL012697</td>
+      <td>−0.82</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL002875</td>
+      <td>−0.82</td>
+    </tr>
+    <tr>
+      <td>lysosomal acid lipase, putative</td>
+      <td>AAEL004933</td>
+      <td>−0.81</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL002963</td>
+      <td>−0.78</td>
+    </tr>
+    <tr>
+      <td>lysosomal alpha-mannosidase (mannosidase alpha class 2b member)</td>
+      <td>AAEL005763</td>
+      <td>−0.76</td>
+    </tr>
+    <tr>
+      <td>ornithine decarboxylase</td>
+      <td>AAEL000044</td>
+      <td>1.70</td>
+    </tr>
+    <tr>
+      <td>glucosyl/glucuronosyl transferases</td>
+      <td>AAEL003099</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <td>conserved hypothetical protein(salivary protein [Culex])</td>
+      <td>AAEL009985</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <td>cytochrome P450</td>
+      <td>AAEL014607</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>cytochrome P450</td>
+      <td>AAEL014609</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>cytochrome P450</td>
+      <td>AAEL006811</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>cytochrome P450</td>
+      <td>AAEL014616</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>cytochrome P450</td>
+      <td>AAEL014608</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL004317</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL005669</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL002263</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>glucosyl/glucuronosyl transferases</td>
+      <td>AAEL010386</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <td>CRAL/TRIO domain-containing protein</td>
+      <td>AAEL003347</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>alpha-amylase</td>
+      <td>AAEL010537</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL011203</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>glucose dehydrogenase</td>
+      <td>AAEL004027</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>hypothetical protein</td>
+      <td>AAEL009198</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>glutamate decarboxylase</td>
+      <td>AAEL010951</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>cytochrome P450</td>
+      <td>AAEL008846</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>Vanin-like protein 1 precursor, putative</td>
+      <td>AAEL006023</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>cytochrome b5, putative</td>
+      <td>AAEL012636</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>cytochrome P450</td>
+      <td>AAEL009131</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td>cytochrome P450</td>
+      <td>AAEL014893</td>
+      <td>0.75</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fungus-secreted molecules impair trypsin activity of the Ae. aegypti midgut
 
 Earlier studies have shown that mosquito ovary development is correlated with the amount of digested blood and reabsorption of nutrients for egg production (Bryant et al., 2010; Lea et al., 1978). Poor digestion of the blood meal therefore results in decreased ovary development. Hence, ovary development after blood feeding can serve as a proxy assay for blood-digestion efficiency. We performed an assay in which Tsp_PR secretome-exposed and subsequently blood-fed mosquitoes were microscopically evaluated for ovary follicle developmental stage after a non-infectious blood meal. Mosquitoes exposed for 48 hr to the fungus secretome prior to blood feeding showed a significantly decreased in ovary development (p=0.025). Only 9% of the mosquitoes had fully developed ovary follicles (Figure 7A, Figure 7—source data 1); in contrast, untreated mosquitoes had a higher level (29%) of fully ovary follicle development. We also, examined the mosquito body weight at 1 hr and 4 hr after a blood meal. Mosquitoes treated with Tsp_PR secretome were heavier than non-treated mosquitoes at 48 hr post-blood meal, indicating impairment of blood digestion (p=0.001) (Figure 7B, Figure 7—source data 1).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig7-v1.jpg)
 
-**Figure 7.:** Ae.aegypti midgut trypsin activity by Tsp_PR-secreted molecule(s).(A) (left) Ovary development based on an arbitrary score of the ovary size at 6 days after a blood meal, 0 for small round follicles, 1 for intermediate size follicles, and 2 for fully developed follicles, with the elongated shape of normal mature eggs. Control, N = 34; Tsp_PR, N = 34, line represents the median, of three independent experiments. (right) Light microscopy picture of (a) a completely developed ovary follicle, which represents a score 2 (b) small round follicles, represent score 0. (B) Change in mosquito body weight after 1 hr (Control, N = 66; Tsp_PR, N = 74), (p=0.784) and 48 hr (Control, N = 58; Tsp_PR, N = 74) (p=0.001) of a non-infected blood meal (C) Trypsin in vivo enzymatic activity in midguts of mosquitoes treated or mock-treated with Tsp_PR secretome. Error bars represent ± SEM of three independent experiments. (D) Trypsin in vitro enzymatic assays of Tsp_PR’s ability to inhibit commercial trypsin activity. The activity was measured at various concentrations of trypsin. Tsp_PR represents the control group in which the fungus filtrate was added but no trypsin, and the absence of trypsin activity was experimentally confirmed (not shown). Error bars represent ± SEM of three independent experiments. *p<0.05, **p<0.01, ***p<0.01.10.7554/eLife.28844.014Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) (left) Ovary development based on an arbitrary score of the ovary size at 6 days after a blood meal, 0 for small round follicles, 1 for intermediate size follicles, and 2 for fully developed follicles, with the elongated shape of normal mature eggs. Control, N = 34; Tsp_PR, N = 34, line represents the median, of three independent experiments. (right) Light microscopy picture of (a) a completely developed ovary follicle, which represents a score 2 (b) small round follicles, represent score 0. (B) Change in mosquito body weight after 1 hr (Control, N = 66; Tsp_PR, N = 74), (p=0.784) and 48 hr (Control, N = 58; Tsp_PR, N = 74) (p=0.001) of a non-infected blood meal (C) Trypsin in vivo enzymatic activity in midguts of mosquitoes treated or mock-treated with Tsp_PR secretome. Error bars represent ± SEM of three independent experiments. (D) Trypsin in vitro enzymatic assays of Tsp_PR’s ability to inhibit commercial trypsin activity. The activity was measured at various concentrations of trypsin. Tsp_PR represents the control group in which the fungus filtrate was added but no trypsin, and the absence of trypsin activity was experimentally confirmed (not shown). Error bars represent ± SEM of three independent experiments. *p<0.05, **p<0.01, ***p<0.01.
 
 Following blood ingestion, gut epithelial cells synthesize and secrete diverse enzymes to digest the protein-rich meal (Borovsky, 2003). Trypsin activity accounts for most of the proteolytic activity during the mosquito’s digestion of blood (Barillas-Mury et al., 1995; Noriega and Wells, 1999). Our transcriptomic analysis showed a down-regulation of several trypsin genes in fungus-treated mosquitoes in the absence of a blood meal.
 
@@ -92,7 +333,7 @@ The Tsp_PR secretome appeared to stimulate a reduction in trypsin enzymatic acti
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig8-v1.jpg)
 
-**Figure 8.:** (A) Trypsin genes abundance after dsRNA-mediated gene silencing, (AAEL010196 (T196), AAEL013707 (T707), AAEL013714 (T714), AAEL013715 (T715). (B–F) DENV infection intensity of trypsin genes-silenced mosquitoes are compared to GFP dsRNA-treated control mosquitoes (B) T196 (Control, N = 54; T196, N = 54), (C) T707 (Control, N = 71; T707, N = 69), (D) T714 (Control, N = 71; T714, N = 62), (E) T715 (Control, N = 71; T715, N = 72), (F) Simultaneous silencing of all trypsins (Tmix) (Control, N = 71; Tmix, N = 71). The line indicates the mean, each dot represents the log10 PFU after 7 dpi in individual midguts from four independent biological experiments, except T196 which represents three independent experiments. Upper right boxes show the prevalence of infected mosquitoes, error bars represent the 95% confidence interval. *p<0.05, ***p<0.001.10.7554/eLife.28844.016Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Trypsin genes abundance after dsRNA-mediated gene silencing, (AAEL010196 (T196), AAEL013707 (T707), AAEL013714 (T714), AAEL013715 (T715). (B–F) DENV infection intensity of trypsin genes-silenced mosquitoes are compared to GFP dsRNA-treated control mosquitoes (B) T196 (Control, N = 54; T196, N = 54), (C) T707 (Control, N = 71; T707, N = 69), (D) T714 (Control, N = 71; T714, N = 62), (E) T715 (Control, N = 71; T715, N = 72), (F) Simultaneous silencing of all trypsins (Tmix) (Control, N = 71; Tmix, N = 71). The line indicates the mean, each dot represents the log10 PFU after 7 dpi in individual midguts from four independent biological experiments, except T196 which represents three independent experiments. Upper right boxes show the prevalence of infected mosquitoes, error bars represent the 95% confidence interval. *p<0.05, ***p<0.001.
 
 Taken together, these results show that one or more Tsp_PR-secreted factors influence blood digestion through the modulation of trypsin expression and activity, which in turn, affects susceptibility to DENV infection.
 
@@ -122,72 +363,154 @@ In summary, we show how the mosquito mycobiota can influence Ae. aegypti vector 
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/28844/elife-28844-fig10-v1.jpg)
 
-**Figure 10.:** Tsp_PR-mediated increased Ae. aegypti permissiveness to DENV.Tsp_PR secreted factors render Ae. aegypti more permissive to DENV through a mechanism that involves the down-regulation of gut trypsin transcripts and inhibition of enzymatic activity in the midgut epithelium. Trypsins have an antagonistic role in DENV infection. Decrease of trypsins abundance results in increased susceptible to DENV infection. Additional files.
+**Figure 10.:** Tsp_PR secreted factors render Ae. aegypti more permissive to DENV through a mechanism that involves the down-regulation of gut trypsin transcripts and inhibition of enzymatic activity in the midgut epithelium. Trypsins have an antagonistic role in DENV infection. Decrease of trypsins abundance results in increased susceptible to DENV infection. Additional files.
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Aedes aegypti Rockefeller strain)</td>
+      <td>Rock</td>
+      <td>other</td>
+      <td>From Johns Hopkins University</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Aedes aegypti Orlando strain)</td>
+      <td>Orl</td>
+      <td>other</td>
+      <td>From Johns Hopkins University</td>
+    </tr>
+    <tr>
+      <td>cell line (Aedes albopictus C6/36)</td>
+      <td>C6/36</td>
+      <td>ATCC CRL-1660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Baby hamster kidney cells (BHK-21))</td>
+      <td>BHK-21</td>
+      <td>ATCC CCL-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biological sample (Talaromyces sp.)</td>
+      <td>Tsp_PR</td>
+      <td>this paper</td>
+      <td>Collected from a wild-caught mosquito from Naguabo, Puerto Rico</td>
+    </tr>
+    <tr>
+      <td>biological sample (Penicillium chrysogenum)</td>
+      <td>P. chrysogenum</td>
+      <td>PMID 27678168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biological sample (Dengue virus 2 strain New Guinea C (NGC)</td>
+      <td>DENV</td>
+      <td>PMID 18604274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biological sample (Plasmodium falciparum)</td>
+      <td>P. falciparum</td>
+      <td>PMID 27678168</td>
+      <td>From Johns Hopkins Malaria Research Institute</td>
+    </tr>
+    <tr>
+      <td>Low Input Quick Amp Labeling kit</td>
+      <td></td>
+      <td>Agilent Technologies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNeasy Mini Kit</td>
+      <td></td>
+      <td>QIAGEN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MMLV Reverse Transcriptase kit</td>
+      <td></td>
+      <td>Promega</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 This study was carried out in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health and the Animal Care and Use Committee of the Johns Hopkins University (Permit Number: M006H300). Mice were only used for mosquito rearing as a blood source, according to approved protocol. Commercial anonymous human blood was used for DENV infection assays in mosquitoes, and informed consent was therefore not applicable. The Johns Hopkins School of Public Health Ethics Committee approved this protocol.
 
-## Cell culture and mosquito rearing
+### Cell culture and mosquito rearing
 
 The Ae. albopictus cell line C6/36 (ATCC CRL-1660) was maintained in MEM (Gibco) supplemented with 10% FBS, 1% L-glutamine, 1% non-essential amino acids, and 1% penicillin/streptomycin. Baby hamster kidney cells (BHK-21, ATCC CCL-10) were maintained on DMEM (Gibco) supplemented with 10% FBS, 1% L-glutamine, 1% penicillin/streptomycin, and 5 µg/mL plasmocin (Invivogen, San Diego, CA). C6/36 cells and BHK-21 cells were incubated in 5% CO2 at 32°C and 37°C, respectively. Ae. aegypti mosquitoes were maintained on a 10% sucrose solution at 27°C and 80% relative humidity with a 14:10 hr light:dark cycle.
 
-## Fungus treatments
+### Fungus treatments
 
 Tsp_PR was grown on Sabouraud glucose agar (SGA) and identified as described in (Angleró-Rodríguez et al., 2016); spores were collected in PBS, counted, and resuspended in a 10% sucrose solution containing 1 × 109 spores. For fungal filtrate, spores were collected in a 10% sucrose solution and kept in a rocker machine overnight at 4°C. The next day, the solution was centrifuged at 470 rcf to collect the supernatant, which was passed through a 0.2-micron filter to remove fungus mycelia and spores. The heat-inactivated filtrate was treated in the same way, but the supernatant was incubated for 2 hr at 95°C. Adult female Ae. aegypti (3–4 days old) were starved for 6 hr and fed with the appropriate fungal treatment for 48 hr.
 
-## DENV infection
+### DENV infection
 
 DENV2 strain New Guinea C (NGC) was propagated in C6/36 cells, and titers were determined on BHK-21 cells by plaque assay. Mosquito infections with DENV were carried out as previously described (Das et al., 2007). In brief, DENV2-NGC was propagated in C6/36 cells for 6 days. Virus suspension was mixed 1:1 with commercial human blood and supplemented with 10% human serum and 100 µM ATP. Mosquitoes were infected via an artificial membrane feeder at 37°C for 30 min. Midguts were dissected and individually collected at 7 days post-infection.
 
-## Plasmodium infection and oocyst enumeration
+### Plasmodium infection and oocyst enumeration
 
 Plasmodium falciparum infections were performed following a standard protocol (Dong et al., 2006). At 48 hr post-feeding on fungi or filtrate, mosquitoes were fed on an NF54W strain gametocyte culture mixed with human blood, through a membrane feeder at 37°C. Engorged mosquitoes were maintained at 27°C for up to 8 days. P. falciparum-infected mosquito midguts were dissected and stained with 0.1% mercurochrome, and oocyst numbers were determined using a light microscope.
 
-## Plaque assay
+### Plaque assay
 
 BHK-21 cells were seeded in 24-well plates the day before the assay. The next day, individual midguts were homogenized in DMEM with 0.5 mm glass beads using a Bullet Blender (NextAdvance). Homogenates were centrifuged at 18,400 rcf and the virus-containing suspensions were 10-fold serially diluted, and 100 uL of each dilution were inoculated onto 80% confluent BHK-21 plates. Plates were rocked for 15 min at room temperature and then incubated for 45 min at 37°C and 5% CO2. After the incubation, 1 mL of DMEM containing 2% FBS and 0.8% methylcellulose was added to each well, and plates were incubated for 5 days. Plates were fixed and stained for 30 min with a 1:1 methanol/acetone and 1% crystal violet mixture. Then, plates were washed with water and the plaque-forming units counted.
 
-## Microbial enumeration
+### Microbial enumeration
 
 Mosquitoes were surfaced-sterilized for 1 min in 70% ethanol and rinsed twice with 1X PBS. Mosquitoes were dissected, and five midguts were pooled in a microcentrifuge tube containing 150 µl of sterile PBS. Midguts were homogenized with a pestle and plated on LB agar for bacterial enumeration or Sabouraud agar with an antibiotic cocktail of penicillin/streptomycin and gentamicin for fungal enumeration (whole mosquitoes or midguts were collected for this procedure). Plates were incubated at room temperature for 48 hr for bacteria and 4 days for fungus, and then plates were counted as colony-forming units (CFU). Bacterial growth inhibition assay. Was performed using a disc diffusion test, in which a sterile filter paper disk soaked in a fungus secretome solution or an antibiotic cocktail as a control, was placed over a bacterial culture on LB agar medium. Plates were incubated for 24 hr at 32°C and the inhibition zone were evaluated.
 
-## Aseptic mosquitoes
+### Aseptic mosquitoes
 
 Adult female mosquitoes were maintained on 10% sucrose solution containing 75 μg/mL gentamicin sulfate and 100 units (μg)/mL of penicillin-streptomycin. Treatment was carried out for 4 days. To validate the efficiency of antibiotic treatment, midguts from control untreated and antibiotic treated mosquitoes were subjected to CFU assays. Mosquitoes were treated with the bacteria-free fungus secretome for 2 days, and then maintained on antibiotic-treated sucrose after the DENV infection.
 
-## Genome-wide microarray-based transcriptome profiling
+### Genome-wide microarray-based transcriptome profiling
 
 Transcriptome assays were conducted and analyzed as reported previously with a custom-designed full genome Ae. aegypti Agilent-based microarray platform (Sim et al., 2013; Xi et al., 2008). In brief, 200 ng of total RNA per replicate was used to synthesize Cy3 or Cy5-labeled cRNA probes using a Low Input Quick Amp Labeling kit (Agilent Technologies). Probes from midguts of Tsp_PR-treated mosquitoes were individually hybridized against probes from untreated mosquitoes as a control. The arrays were scanned with an Agilent Scanner. Transcription data were processed by beginning with background subtraction of the median fluorescent values, normalized with the LOWESS normalization method. Cy5/Cy3 ratios from replicate assays were subjected to t-tests at a significance level of p<0.05 using TIGR MIDAS and MeV software. Transcript abundance data from all replicate assays were averaged with the GEPAS microarray preprocessing software and transformed to a logarithm (base 2). Self-self hybridizations have previously been used to determine a cutoff value for the significance of gene regulation on these microarrays of 0.75 in log2 scale (Yang et al., 2002). Three independent experiments were performed. Numeric microarray gene expression data are presented in Table 1, Supplementary file 1.
 
-## Oogenesis assays
+### Oogenesis assays
 
 Mosquitoes we exposed or not exposed to the Tsp_PR secretome for 48 hr, after they had received a blood meal. Fully engorged females from both groups were collected and maintained for 6 days; their ovaries were then dissected in PBS, and oogenesis was microscopically evaluated. Through microscopic evaluation of the follicle development in the ovary, we assigned an arbitrary score of 0 for small round follicles, 1 for intermediate size follicles, and 2 for fully developed follicles, with the elongated shape of normal mature eggs.
 
-## Body weight measurements
+### Body weight measurements
 
 Mosquitoes were fed with non-infectious blood for 20 min, then fully-engorged mosquitoes were individually collected and placed in individual round-bottom conical tubes and incubated without sugar or water. The conical tube weight was measured prior to collecting the mosquito. The weight of mosquitoes at 1 hr post-infection was calculated by subtracting the empty tube weight from the total weight. At 48 hr mosquitoes were cold anesthetized and weighted directly to the analytical balance without the tube to avoid accumulated excreta.
 
-## Trypsin activity assay
+### Trypsin activity assay
 
-## Mosquito endogenous trypsin activity assay
+#### Mosquito endogenous trypsin activity assay
 
 Mosquitoes were exposed, or not exposed, to the Tsp_PR secretome for 48 hr, after they were fed an artificial blood meal (40% PBS, 50% FBS, 1 mM ATP, and 2 mg of phenol red) to avoid interference with the assay (Brackney et al., 2008). At 24 hr post-blood meal, 10 midguts per group were dissected, collected in 50 µL of buffer solution (50 mM Tris-HCl, pH 8.0, with 10 mM CaCl2), and homogenized on ice with a pestle. Supernatants were collected after a high-speed centrifugation (18,400 rcf) at 4°C. Trypsin activity assays were performed using the synthetic colorimetric substrate Nα-benzoyl-D,L-arginine-p-nitroanilide hydrochloride (BApNA) (Sigma). The reaction mixtures, each containing 5 μl of midgut extract and 1 mM BApNA, were then incubated at 37°C for 5 min. Absorbance values were measured in a plate reader at A405 nm.
 
-## In vitro trypsin inhibition assay
+#### In vitro trypsin inhibition assay
 
 A reaction mixture was made using equal volumes of Tsp_PR filtrate and commercial trypsin (105 µM) (Gibco). The mixture was incubated at 27°C for 3 hr. The reaction solution was prepared by adding increasing volumes of the 1:1 mixture to the buffer solution and 1 mM BApNA, to a final volume of 200 uL. Absorbance was measured as described above.
 
-## dsRNA-mediated gene silencing
+### dsRNA-mediated gene silencing
 
 The trypsin genes were depleted from adult female mosquitoes using established RNA interference (RNAi) methodology (Sim et al., 2013). Mosquitoes injected with GFP dsRNA were used as a control and RNAi assays were repeated three times. Gene silencing was verified by qRT-PCR at 3 days post-injection using RNA extracted from five whole mosquitoes per independent experiment. The primers to produce PCR Amplicons for dsRNA synthesis and qRT-PCR are presented in Supplementary file 2.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Mosquito samples were collected in RLT buffer (QIAGEN), and then stored at −80°C until extraction. Total RNA was extracted using the RNeasy Mini Kit (QIAGEN); samples were treated with Turbo DNase (Ambion) before reverse transcription with a MMLV Reverse Transcriptase kit (Promega) according to the manufacturer’s instructions. The cDNA was then used to determine gene expression by quantitative PCR using SYBR Green PCR Master Mix (Applied Biosystem). The transcript abundance of trypsin was compared to the expression of the ribosomal protein gene S7 as a normalization control. qPCR primers were designed to amplify the mRNA transcript outside the dsRNA region. However, groups where trypsins were silenced simultaneously the qPCR primers for a given trypsin crossed detected the injected dsRNA of other highly similar trypsins making unable the evaluation of silencing efficiency.
 
-## Statistical analysis
+### Statistical analysis
 
 To compare DENV titers between groups, P-values were calculated using Generalized Linear Regression (GLM) with experiment-clustered robust variance estimates to account for potential within-experiment correlation of outcomes (Rogers, 1993). The models included different link functions for various outcomes: identity link was used to compare DENV PFU and bacteria CFU, log-link with Poisson distribution was used for modeling infections and score 0 to 2 for oogenesis assays and log-link with Negative Binomial distribution was used to model number of Plasmodium falciparum oocysts. The models included an indicator variable for treatment with only two levels or multiple indicator variables for multiple treatment groups. Wald test P-values are reported in the results. Survival was analyzed using the Log-rank (Mantel-Cox) test in Graphpad Prism. See source data file for the summary of the statistics.

@@ -15,7 +15,7 @@
 
 ## Abstract
 
-One of the fundamental gaps in our knowledge of how novel anatomical structures evolve is understanding the origins of the morphogenetic processes that form these features. Here, we traced the cellular development of a recently evolved morphological novelty, the posterior lobe of D. melanogaster . We found that this genital outgrowth forms through extreme increases in epithelial cell height. By examining the apical extracellular matrix (aECM), we also uncovered a vast matrix associated with the developing genitalia of lobed and non-lobed species. Expression of the aECM protein Dumpy is spatially expanded in lobe-forming species, connecting the posterior lobe to the ancestrally derived aECM network. Further analysis demonstrated that Dumpy attachments are necessary for cell height increases during posterior lobe development. We propose that the aECM presents a rich reservoir for generating morphological novelty and highlights a yet unseen role for aECM in regulating extreme cell height.
+One of the fundamental gaps in our knowledge of how novel anatomical structures evolve is understanding the origins of the morphogenetic processes that form these features. Here, we traced the cellular development of a recently evolved morphological novelty, the posterior lobe of D. melanogaster. We found that this genital outgrowth forms through extreme increases in epithelial cell height. By examining the apical extracellular matrix (aECM), we also uncovered a vast matrix associated with the developing genitalia of lobed and non-lobed species. Expression of the aECM protein Dumpy is spatially expanded in lobe-forming species, connecting the posterior lobe to the ancestrally derived aECM network. Further analysis demonstrated that Dumpy attachments are necessary for cell height increases during posterior lobe development. We propose that the aECM presents a rich reservoir for generating morphological novelty and highlights a yet unseen role for aECM in regulating extreme cell height.
 
 ## Introduction
 
@@ -27,15 +27,23 @@ Morphogenesis is the product of both cell intrinsic processes, such as those con
 
 Genital traits represent a particularly advantageous system in which to study the morphogenetic basis of novel structures. The study of morphological novelty is often difficult because most structures of interest evolved in the distant past, rendering it difficult to understand the ancestral ground state from which the novelty emerged. Genitalia are noted for their rapid evolution (Eberhard, 1985), and thus bear traits among closely-related species that have recently evolved in the context of a tissue that is otherwise minimally altered. For example, the posterior lobe, a recently evolved anatomical structure present on the genitalia of male flies of the melanogaster clade (Kopp and True, 2002; Figure 1A), is a three-dimensional outgrowth that is required for genital coupling (Frazee and Masly, 2015; Jagadeeshan and Singh, 2006; LeVasseur-Viens, 2015). Other than the posterior lobe, the genitalia of lobed and non-lobed species are quite similar in composition, providing an excellent comparative context in which to examine the morphogenesis of the ancestral structure from which the posterior lobe emerged.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig1-v2.jpg)
+
+**Figure 1.:** (A) Phylogenetic tree with bright-field images of adult lateral plate cuticles from which the posterior lobe projects (arrow). (B–E) Illustration, (B’–E’) maximum projection, and (B’’–E’’) three-dimensional projection labeled with E-cadherin (Ecad) of early (28 hr APF) and late (52 hr APF) developing genitalia showing the posterior lobe projecting form the lateral plate of D. melanogaster (D’’), but absent in D. biarmipes (E’’). Relevant structures are labeled: posterior lobe (PL), lateral plate (LP), clasper (C), sheath (S), phallus (P), anal plate (AP), and hypandrium (H). All max projections are oriented with ventral side towards to the top and dorsal sides towards the bottom. (F) Zoomed in illustration of posterior lobe and (G) a cross-sectional/lateral view of the posterior lobe. The highest point of the lobe is the distal tip and the invagination between the lobe and the clasper is termed the crevice (G). Scale bar, 20 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Developmental time course of the lobed species D. melanogaster (A–D) and the non-lobed species D. biarmipes (E–H) with E-cadherin (Ecad) label. Location of respective cross sections indicated in yellow for lateral plate and blue for posterior lobe (D. melanogaster) or equivalent location in non-lobed species (D. biarmipes). Relevant structures are labeled: posterior lobe (PL), lateral plate (LP), clasper (C), sheath (S), and phallus (P). Scale bar, 20 μm. At 28 hr APF the genitalia looks relatively similar between D. melanogaster (A–A2) and D. biarmipes (E–E2). At 32 hr APF in D. melanogaster the clasper and lateral plate have fully begun to cleave (B1-2 red arrowhead = cleavage), the lateral plate is lower than the clasper (B1), and the hypandrium, sheath, and phallus have fully everted and are neighboring the clasper and lateral plate (B1-2). D. biarmipes lags behind approximately 4 hr. At 32 hr APF there is slight cleavage near the dorsal side of the lateral plate and clasper (F2 red arrowhead), but no cleavage has occurred at the ventral side (F1). In addition, the sheath, hypandrium, and phallus have not everted yet (F1-2). At 36 hr APF in D. biarmipes, cleavage has begun along the full length of the lateral plate and clasper (G1-2 red arrowhead), the lateral plate is lower than the clasper (G1-2), and the hypandrium, sheath, and phallus have everted and are next to the lateral plate and clasper (G1-2). As development proceeds later at 52 hr APF the lateral plate and clasper fully separate at the ventral side of the genitalia in both D. melanogaster (D1 green arrow) and D. biarmipes (H1 green arrow). Full cleavage does not span the length of the lateral plate and clasper (D2 and H2) and stops right before the posterior lobe forms (D2) and also stops before reaching the very dorsal side of the lateral plate and clasper in D. biarmipes (H2).
+
 Here, we find that the posterior lobe forms through dramatic increases in cell height along the apico-basal axis as it projects out of the plane of its surrounding epithelium. We investigated internal and external factors that might contribute to this cell height increase and discovered a correlation between the aECM protein Dumpy and the height reached by posterior lobe cells. Comparisons to non-lobed species uncovered the presence of a conserved aECM network on the genitalia that has expanded to cells that form the posterior lobe. Overall, our work demonstrates how the formation of a morphological novelty is associated with changes in the aECM, which integrates posterior lobe cells into a larger pre-existing aECM network necessary for its formation.
 
 ## Results
 
-## The posterior lobe grows from the lateral plate epithelium
+### The posterior lobe grows from the lateral plate epithelium
 
 The male genitalia of Drosophila is a bilaterally symmetrical anatomical structure which forms from the genital disc during pupal development. A recent consortium detailed the adult anatomy of Drosophila melanogaster males, establishing naming conventions and boundaries for adult structures (Rice et al., 2019). The posterior lobe (also known as the epandrial posterior lobe) protrudes from a structure called the lateral plate (also known as the epandrial ventral lobe) (Figure 1A,D; Figure 1—video 1). In D. melanogaster, prior to posterior lobe formation, the lateral plate is fully fused to a neighboring structure called the clasper (also known as the surstylus) (Figure 1B; Glassford et al., 2015). The lateral plate begins to separate from the clasper around 32 hr after pupal formation (APF) in D. melanogaster (Figure 1—figure supplement 1). Approximately 4 hr later, the posterior lobe begins to project from the plane of the lateral plate and achieves its final shape by 52 hr APF (Figure 1D; Figure 1—figure supplement 1). During posterior lobe development, cleavage of the lateral plate from the clasper continues, separating both tissues (Figure 1D; Figure 1—figure supplement 1). Full separation of the lateral plate and clasper stops slightly ventral to the posterior lobe (Figure 1—figure supplement 1). By contrast, in the non-lobed species D. biarmipes, the apical surface of the lateral plate remains flat throughout development, not forming a posterior lobe (Figure 1C,E). However, all other morphogenetic events are very similar in D. biarmipes, forming on a schedule that is approximately 4 hr behind D. melanogaster (Figure 1—figure supplement 1).
 
-## The posterior lobe forms through increases in cell height
+### The posterior lobe forms through increases in cell height
 
 To investigate which cellular behaviors are unique to lobed species, we examined how the posterior lobe grows from the lateral plate. First, we monitored cell proliferation, which commonly contributes to morphogenesis through patterned and/or oriented cell division (Heisenberg and Bellaïche, 2013). Staining for phospho-histone H3, which marks actively dividing cells, revealed widespread cell proliferation throughout the entire genital epithelium during early developmental stages prior to posterior lobe morphogenesis (Figure 2—figure supplement 1). However, proliferation declines tissue-wide and all cell proliferation is essentially absent during posterior lobe development (Figure 2—figure supplement 1). Similar dynamics in proliferation are also observed in non-lobed species (Figure 2—figure supplement 1), suggesting that proliferation is not a major contributor to the morphogenesis of the posterior lobe.
 
@@ -43,33 +51,113 @@ Next we tested the possibility that oriented cell intercalation could contribute
 
 Changes to cell shape are quite common during tissue morphogenesis, as classically illustrated by the process of apical constriction which deforms tissues during numerous developmental processes (Lecuit and Lenne, 2007; Martin and Goldstein, 2014). To examine cell shape, we utilized the Raeppli system to label individual cells with a fluorescent marker (mTFP1) (Kanca et al., 2014). We observed that cells within the posterior lobe are tall and thin, spanning from the basal to the apical surface of the epithelium (Figure 2A). Because cells span the full thickness of this tissue, we can approximate the height of the tallest cells in the posterior lobe by measuring tissue thickness in samples double-stained for E-cadherin and Fasciclin III, to label apical cell junctions and lateral membranes respectively. For these measurements, we used the lateral plate as an in-sample comparison, since it represents the tissue from which the posterior lobe protrudes and should differ from the lobe in morphogenetic processes. We observed a pronounced increase in thickness of the posterior lobe compared to the lateral plate (Figure 2B–C,F; Figure 2—figure supplement 2). The posterior lobe more than doubles in thickness with an average increase of 145.3% (+ 47.5 µm), while the lateral plate only increases by 22.6% (+ 7.9 µm) overall. Interestingly, this is a dynamic process during development. During the first 12 hr of posterior lobe development, the lateral plate thickness decreases by 5.1 µm, but the posterior lobe increases in thickness by 16.5 µm on average (Figure 2F). By contrast, during the last 4 hr of development, rapid increases in thickness occur in both the posterior lobe and lateral plate, which increase on average by 31.0 µm and 14.6 µm respectively (Figure 2F). These observations reveal a slow phase of cell height increase during the first 12 hr of posterior lobe development, and a fast phase during the last four hours of posterior lobe development. In contrast, when non-lobed species are examined, no thickness changes are observed in the location where a posterior lobe would form, indicating that this increase in tissue thickness is unique to the posterior lobe (Figure 2B–E,G; Figure 2—figure supplement 2). Together, these data suggest that the cells of the posterior lobe undergo an extreme shape change to increase in length along their apico-basal axes, driving the projection of this structure out of the plane of the lateral plate.
 
-## Cytoskeletal components increase in concentration in posterior lobe cells
+![Figure 2.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig2-v2.jpg)
+
+**Figure 2.:** (A) A single cell in the posterior lobe labeled with Raeppli-mTFP1 (green) spans the height of the tissue labeled with lateral membrane marker Fasciclin III (Fas3; magenta). Apical side of posterior lobe identified with dotted line. Sample is 44 hr after pupal formation (APF), but was heat shocked for 1 hr at 24 hr APF causing it to develop faster and more closely resembles a 48 hr APF sample. Scale bar, 10 μm. n = 10 cells (B–E) Maximum projections of early (36 hr APF) and late (52 hr APF) genital samples labeled with Fas3 (lateral membranes, green) and E-Cadherin (Ecad; apical membranes; magenta). Location of respective cross sections indicated in yellow for lateral plate (B1–E1) and blue for posterior lobe (D. melanogaster) (B2–C2) or equivalent location in non-lobed species (D. biarmipes) (D2–E2). Scale bar, 20 μm. Relevant structures are labeled: posterior lobe (PL), lateral plate (LP), clasper (C). (F) Quantification of tissue thickness of the lateral plate (light blue) and posterior lobe (dark blue). Illustration represents approximate location of cross-section that was used for tissue height measurement. Individual data points are presented; n = 10 per each time point. (G) Quantification of tissue thickness of the posterior lobe in D. melanogaster (dark blue) and equivalent location in non-lobed species D. biarmipes (orange). Illustration represents approximate location of cross-section that was used for tissue thickness measurement. Individual data points are presented; n ≥ 9 per each time point. Statistical significance is indicated (unpaired t-test; ****p≤0.0001; n.s. = not significant p≥0.05). D. melanogaster tissue height measures in (G) are replotted from (F) to facilitate direct comparisons with D. biarmipes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Developmental time course with Phospho-Histone H3 (Ser 10) (PH3; green) labeling actively dividing cells and E-cadherin (Ecad; magenta) labeling the apical membrane of the tissue. Only superficial slices are shown to avoid fat body signals beneath lateral plate and clasper. n ≥ 3 per each time point. Scale bar, 20 μm. In both D. melanogaster and D. biarmipes cell division is widespread at 24 hr APF (A and D). Cell division is decreased by 32 hr APF (B and E). By 40 hr APF no cell division is observed (C and F).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Extended time course for samples quantified in Figure 2F–G. (A–C) Max and cross-section view of 44 hr APF (A and C) and 48 hr APF (B) genital samples with lateral membrane labeled with Fasciclin III (Fas3; green) and apical membrane labeled with E-cadherin (Ecad; magenta). Location of respective cross sections indicated in yellow for lateral plate (A1–C1) and blue for posterior lobe (D. melanogaster) or equivalent location in non-lobed species (D. biarmipes) (A2–C2). n ≥ 9 per experiment. Scale bar, 20 μm.
+
+### Cytoskeletal components increase in concentration in posterior lobe cells
 
 Apico-basal cell elongation appears to be a major contributor to posterior lobe formation. To understand potential internal forces contributing to this cell shape change, we examined the organization of cytoskeletal components. As expected for a polarized epithelium, phalloidin staining of F-actin strongly localized to the apical cortex overlapping with E-cadherin throughout the entire genitalia (Figure 3A). In addition, F-actin is also concentrated along the apico-basal axis of posterior lobe cells (Figure 3A). This lateral F-actin localization was unique to the posterior lobe, as it is less intense in neighboring structures, such as the lateral plate, clasper, and sheath (also known as the aedeagal sheath Rice et al., 2019), as well as in non-lobed species (Figure 3A; Figure 3—figure supplement 1). Next we evaluated microtubules by examining two post-translational modifications of α-tubulin: acetylation of lysine40, a stabilizing modification (Roll-Mecak, 2019; Xu et al., 2017b), and C-terminal tyrosination, which has been associated with rapid microtubule turnover (Roll-Mecak, 2019; Webster et al., 1987). In the posterior lobe, acetylated tubulin levels are highest at the distal tip of the posterior lobe and weaken towards the basal side of the lobe epithelium (Figure 3B–C). Compared to other structures in the genitalia, acetylated tubulin is greatly increased specifically in the posterior lobe (Figure 3B–C). By contrast, the levels of acetylated tubulin in non-lobed species are similar throughout the genitalia (Figure 3—figure supplement 1). We found tyrosinated tubulin has a more consistent signal along the entire apico-basal axis in the posterior lobe (Figure 3B&D). The amount of tyrosinated tubulin in posterior lobe cells is increased compared to neighboring structures but is weaker relative to the observed differences in acetylated tubulin. In non-lobed species, the levels of tyrosinated tubulin are consistent across the entire genitalia (Figure 3—figure supplement 1). Collectively, these results suggest that changes in assembly and/or dynamics of both F-actin and microtubule cytoskeletal networks could be contributing factors in changing the shape of posterior lobe cells to increase its height along the apico-basal axis.
 
-## An apical extracellular matrix associates with posterior lobe cells
+![Figure 3.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Maximum projection, and respective cross-sections of late (48 hr APF) genital samples of the lobed species D. melanogaster labeled with F-actin/phalloidin (actin; green) and E-cadherin (Ecad; magenta) (A), acetylated tubulin (green) (B,C), and tyrosinated tubulin (magenta) (B,D). Location of respective cross sections indicated in yellow for lateral plate (A1–D1) and blue for posterior lobe (A2–D2). Cross-sections are maximum projections of a restricted 5.434 μm thick section to provide a complete view of cytoskeletal components along the apico-basal axis. All cross-sections are oriented with apical side at the top and basal side at the bottom. Asterisk identifies bristles which have high levels of F-actin and tubulin. Bright basal signal in A1 and A2 are fat bodies. Bottom layers were removed in panel A to remove fat body signal which overwhelmed other details. (B–D2) Panels C and D show separate channels of panel B. Relevant structures labeled: Posterior lobe (PL), lateral plate (LP), clasper (C), and sheath (S). Scale bar, 20 μm. n ≥ 3 per experiment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Max projections of late (48 hr APF) genital samples of non-lobed species D. biarmipes labeled with F-actin/phalloidin (green) and E-cadherin (Ecad; magenta) (A), acetylated tubulin (green) (B,C), and tyrosinated tubulin (magenta) (B,D). Location of respective cross sections indicated in blue for presumptive posterior lobe cells (A1–D1). Cross-sections are maximum projection of a restricted 5.434 μm thick section to display the full view of the cytoskeleton along the apico-basal axis. All cross-sections are oriented with apical side at the top and basal side at the bottom. Asterisk identifies bristles which have high levels of F-actin and tubulin. Bright basal signal in A1 is from fat bodies. Bottom layers were removed in panel A to avoid fat body signal which masked other details. Panels C and D show separate channels of panel B. Relevant structures labeled: Lateral plate (LP), clasper (C), and sheath (S) labeled. Scale bar, 20 μm. n ≥ 3 per experiment.
+
+### An apical extracellular matrix associates with posterior lobe cells
 
 In addition to investigating potential cell autonomous mechanisms leading to increases in tissue thickness, we also sought to identify possible sources of external mechanical processes which could play a role in posterior lobe morphogenesis. Extrinsic roles for both the basal and apical extracellular matrix have been established in pupal wing morphogenesis of D. melanogaster (Diaz-de-la-Loza et al., 2018; Etournay et al., 2015; Ray et al., 2015). We first attempted to characterize the basal ECM by analyzing a GFP-tagged version of Collagen IV (Viking:GFP) (Morin et al., 2001). We observed that Viking:GFP, while present at very early stages of genital morphogenesis, is only weakly detected across the entire genitalia as the posterior lobe forms (Figure 4—figure supplement 1), suggesting that minimal basal ECM is present at this time point. To further test for the presence of basal ECM, we examined another basal ECM component, Perlecan (Perlecan:GFP) (Morin et al., 2001), and also observed weak signal (Figure 4—figure supplement 1). Together, these data suggest that the basal ECM is globally reduced in the genitalia during early pupal development, and it thus is unlikely to have specific effects on posterior lobe morphogenesis.
 
 We next sought to determine if an apical ECM (aECM) is associated with the posterior lobe. Dumpy encodes a gigantic (2.5 MDa) zona pellucida domain-containing glycoprotein and is a major component of the aECM in Drosophila (Wilkin et al., 2000). We examined a line in which Dumpy is endogenously tagged with Yellow Fluorescent Protein (Dumpy:YFP) (Lowe et al., 2014; Lye et al., 2014) and found that Dumpy:YFP forms a complex three-dimensional network over the pupal genitalia and is closely associated with cells of the posterior lobe (Figure 4; Figure 4—video 1). The intricate complex morphology of this aECM network is hard to fully appreciate in flattened images due to its three-dimensional shape and spatially varying levels of Dumpy:YFP, making it difficult to see weaker populations of Dumpy without over-saturating more concentrated deposits, and is better viewed in three dimensions (Figure 4—video 1). Remarkably, at certain points in the genitalia, this aECM network of Dumpy can extend up to a mean maximal height of 39.4 μm above the cells, which is taller than the thickness of posterior lobe cells at the beginning of development (Figure 4—figure supplement 2), demonstrating how extensive the genital aECM network is.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Maximum projection and (A’–B’’) respective zoom, indicated with pink box, labeled with Dumpy:YFP (green) and E-cadherin (Ecad; magenta) for each time point. Location of respective cross sections indicated in yellow for lateral plate (A1–D1) and blue for posterior lobe (A2–D2). Arrowhead in (A2) indicates future posterior lobe cells. Cross-sections are oriented with apical side at the top and basal side at the bottom. Relevant structures labeled: Posterior lobe (PL), lateral plate (LP), clasper (C), sheath (S), and phallus (P). Scale bar, 20 μm. n ≥ 4 per experiment. Images were independently brightened to show relevant structures.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Basal ECM markers Collagen IV (Viking:GFP; green)(A and C) and Perlecan (Perlecan:GFP; green) (B and D) in L3 larval genital disc (A and B) and 44 hr APF genitalia (C and D). Apical membrane labeled with E-cadherin (Ecad; cyan) and lateral membrane labeled with Fasciclin III (Fas3; magenta). Image settings were the same for each marker between larval and pupal samples. Sporadic dots observed are fat bodies (white arrows in cross section), which fill the basal lumen of the pupal genital epithelium. Location of respective cross sections indicated in white. Cross-sections for larval samples are oriented basal sides out, as the disc has not yet everted. Pupal samples are oriented with apical side at the top and basal side at the bottom. Higher amounts of basal ECM are observed in larvae compared to 44 hr APF genital samples. Relevant structures labeled: Posterior lobe (PL) and clasper (C). Scale bar, 20 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Projection of Dumpy:YFP (green) and E-cadherin:mCherry (Ecad:mCherry; magenta) imaged live at 48 hr APF. Location of respective cross sections indicated in orange. (A1) Cross section showing extent of Dumpy:YFP observed above the surface of the genitalia. Relevant structures labeled: Posterior lobe (PL), lateral plate (LP), clasper (C), sheath (S), and phallus (P). Scale bar, 20 μm. n = 3.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–B) Live imaging of Dumpy:YFP (green) and Ecadherin:mCherry (Ecad:mCherry; magenta) at respective time points. Location of respective cross sections indicated in orange. (A1–B1) Cross-sections are max projection of a 4.94 μm (A1) and 1.73 μm (B1) thick section to show the full bundle (arrow) and its connection to the cuticle (arrowhead) and anal plate. All cross-sections are oriented with apical side at the top and basal side at the bottom. Relevant structures labeled: Posterior lobe (PL), lateral plate (LP), clasper (C), sheath (S), phallus (P), and anal plate (AP). Scale bar, 20 μm. n = 1 per each time point.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A–D) Brightened images of respective cross sections from Figure 2 of lateral plate (A1–D1) in yellow and posterior lobe in blue (A2–D2). Cross-sections are oriented with apical side at the top and basal side at the bottom. Relevant structure labeled: Posterior lobe (PL), lateral plate (LP), clasper (C), sheath (S), and phallus (P). Scale bar, 20 μm. n ≥ 4 per experiment. Images were overexposed to the same extent to show relevant structures.
+
 In late pupal wing development, Dumpy anchors the wing to the surrounding cuticle, holding this tissue in place, which is important to properly shape the wing (Etournay et al., 2015; Ray et al., 2015). This same mechanism has been hypothesized to also occur in the leg and antennae (Ray et al., 2015), however, in the posterior lobe we do not find discrete anchorage points to the cuticle. Instead, we observed a large bundle of Dumpy emanating from the anal plate (also known as the cercus Rice et al., 2019) and connecting with the pupal cuticle that encases the entire pupa (Figure 4—figure supplement 3, Figure 4—video 2; Bainbridge and Bownes, 1981). This bundle does not come in direct contact with posterior lobe associated Dumpy or other nearby structures such as the lateral plate, clasper, sheath, or phallus, suggesting that if Dumpy is contributing to posterior lobe evolution and morphogenesis, this likely occurs through a mechanism which does not depend on a direct mechanical linkage with the overlying pupal cuticle.
 
 To investigate the role that Dumpy may play in posterior lobe morphogenesis, we examined its localization throughout development. Prior to posterior lobe development, future cells of the lobe lack apically localized Dumpy, and yet an intricate network associated with the presumptive clasper is observed (Figure 4A). However, from the early stages of posterior lobe development, as it first protrudes from the lateral plate, we observe large deposits of Dumpy associated with future lobe cells (Figure 4B). These deposits persist throughout its development (Figure 4), becoming more restricted to the distal tip of the posterior lobe towards the end of its formation (Figure 4 D2). Across all timepoints, the posterior lobe associated Dumpy population is connected to the complex network of Dumpy attached to more medial structures such as the sheath and phallus (Figure 4 A2–D2), indicating that the posterior lobe is interconnected via the aECM with nearby structures (Figure 4). In contrast to the posterior lobe, the lateral plate has minimal Dumpy associated with it (Figure 4 A1–D1). Only when we oversaturate the Dumpy:YFP signal can we observe a weak population of Dumpy associated with the lateral plate (Figure 4—figure supplement 4). Together, this indicates that the cells of the posterior lobe and the lateral plate substantially differ in the levels of associated Dumpy, suggesting a potential role in the morphogenesis of the posterior lobe.
 
-## Expansion of dumpy expression is correlated with the evolution of the posterior lobe
+### Expansion of dumpy expression is correlated with the evolution of the posterior lobe
 
 The association of the posterior lobe with Dumpy suggests that changes in its expression pattern may have occurred during evolution of the lobe. To test if posterior lobe-associated Dumpy is a unique feature of species which produce a posterior lobe, we compared the spatial distribution of its mRNA in D. melanogaster with D. biarmipes, a species which lacks this structure. Early in pupal genital development at 32 hr APF, we observe very similar expression patterns of dumpy between D. melanogaster and D. biarmipes with expression at the base of the presumptive lateral plate-clasper (Figure 5A–B, Figure 5—figure supplement 1). From 36 to 40 hr APF, when the posterior lobe begins to develop, this pattern becomes restricted to a small region at the base of the lateral plate and clasper, near the anal plate in D. biarmipes, but is expanded in D. melanogaster (Figure 5A–B, Figure 5—figure supplement 1). By 44 hr APF, expression of dumpy is reduced in the posterior lobe, as well as in non-lobed species, with strongest expression associated with the clasper in D. biarmipes (Figure 5A–B, Figure 5—figure supplement 1). Overall, these results indicate that expression of dumpy is expanded in a lobed species and correlates with the developmental timing of the posterior lobe’s formation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) in situ hybridization for dumpy mRNA in the lobed species D. melanogaster (A) and the non-lobed species D. biarmipes (B). Pink box outlines location of zoomed in images presented in A1 and B1. Relevant expression highlighted with arrow (purple/white) for strong expression, asterisk for weak expression, and arrowhead for clasper-specific expression. Expression observed in D. melanogaster at 44 hr APF is not present in all samples (see Figure 5—figure supplement 1). (C–D) aECM is labeled with Vicia villosa lectin (VVA; green) and apical membrane labeled with E-cadherin (Ecad; magenta) at 44 hr APF in D. melanogaster (C) and D. biarmipes (D). Location of respective cross sections indicated in yellow for lateral plate (C2–D2) and blue for posterior lobe in D. melanogaster (C1) and corresponding position in D. biarmipes (D1). All cross-sections are oriented with apical side at the top and basal side at the bottom. White arrows highlight the crevice localization between the lateral plate and clasper, which the aECM fills in D. melanogaster (C1), but only a weakly stained strand-like structure of aECM appears in D. biarmipes (D1). Tendrils of aECM can also be observed connecting to the lateral plate in both species (red arrowheads). Relevant structures labeled: Posterior lobe (PL), lateral plate (LP), clasper (C), sheath (S), and phallus (P). Scale bar, 20 μm. n = at least five per experiment.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) Additional in situ hybridization samples for dumpy mRNA in lobed species D. melanogaster (A) and non-lobed species D. biarmipes (B) to show full range of expression observed in experiment. Outlines are approximations as details of structures. Samples without outlines on one side are due to the tissue being damaged on that side. Green circle in first image highlights relevant location at the base of the lateral plate, but not included in the remaining images to leave images unobstructed. Asterisk indicates the expression is deep in the sample and not expressed in lateral plate or clasper cells. n = 4 per experiment.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Dumpy:YFP (green) or (B) VVA (green) localization with apical membrane labeled with E-cadherin (Ecad; magenta) at 44 hr APF in D. melanogaster. Gross similarities in the structure of Dumpy:YFP and VVA can be observed across the genitalia (A’ and B’). In addition, both Dumpy:YFP and VVA can be observed spanning from the clasper to the sheath (arrow), creating an region where neither is present (asterisks). Some tissue deformation occurs in the VVA samples due to treatment with trichloroacetic acid, which is used to help precipitate the sugar molecules attached to the ECM and give a more refined appearance. All cross-sections are oriented with apical side at the top and basal side at the bottom. Relevant structures labeled: Posterior lobe (PL), clasper (C), and sheath (S), Scale bar, 20 μm. n = at least five per experiment.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–B) aECM labeled with VVA (green) and apical membrane labeled with E-cadherin (Ecad; magenta) at 40 hr APF in the lobed species D. sechellia (A) and the non-lobed species D. ananassae (B). Location of respective cross-sections indicated in yellow for lateral plate and blue for posterior lobe. In D. sechellia a ‘strand’ of VVA can be observed connecting the clasper to the lateral plate (A1), in addition to a large accumulation of VVA associated with the poster lobe (A2), similar to what is observed in D. melanogaster. (B1) Top cross-section displayed with normal brightness to show details and bottom cross-section has been brightened to show where all populations of aECM are located. All cross-sections are oriented with apical side at the top and basal side at the bottom. White arrow highlights the ‘crevice’ between the lateral plate and clasper, which is not pronounced at 40 hr APF in D. ananassae. Relevant structures labeled: lateral plate (LP), posterior lobe (PL), and clasper (C). Scale bar, 20 μm. n = at least two per experiment.
+
 Although, it appears that the expression of dumpy has expanded in D. melanogaster, Dumpy is an extracellular protein, and cells expressing its mRNA may not correlate with its ultimate protein abundance or localization. Since an antibody for Dumpy is not available, we adapted lectin staining protocols which can detect glycosylated proteins like Dumpy in order to compare the distribution of aECM in species which lack posterior lobes. We found that fluorescein conjugated Vicia villosa lectin (VVA), which labels N-acetylgalactosamine (Tian and Ten Hagen, 2007), roughly mirrors the complex three-dimensional shape of the Dumpy aECM network covering the center of the genitalia and strongly associates with the posterior lobe (Figure 5C, Figure 5—figure supplement 2). When we examined VVA in the non-lobed species D. biarmipes, we observed strong VVA signal over the center of the genitalia with weak connections to the tip of the lateral plate, similar to what we observe in D. melanogaster (Figure 5C–D). In contrast, where the presumptive posterior lobe would form, we only found a weak strand-like structure emanating from the clasper and connecting to the crevice between the lateral plate and clasper (Figure 5D1). These results correlate with our dumpy in situ hybridization results, where we observe high expression at the center of the genitalia and weak expression at the base between the clasper and lateral plate in D. biarmipes, which may be responsible for forming the weak aECM connection from the clasper to the clasper/lateral plate crevice. Further, we observed similar VVA patterns in non-lobed species D. ananassae (Figure 5—figure supplement 3). In addition, in the lobed species, D. sechellia, we note a similar accumulation of VVA associated with the developing lobe as seen in D. melanogaster (Figure 5—figure supplement 3), suggesting that this mechanism is common to other lobe-bearing species. Collectively, these data suggest that an ancestral aECM network exists on the developing genitalia, associated with the central genital structures, including the phallus, sheath, and clasper, and extends weak connections to the crevice between the lateral plate and clasper. During the course of evolution, expression of dumpy expanded to cells of the posterior lobe, creating prominent associations of the lobe cells with this ancestral aECM network.
 
-## Dumpy is required for proper posterior lobe formation
+### Dumpy is required for proper posterior lobe formation
 
 Thus far, we observed a strong association of the aECM with cells that form the posterior lobe, an attribute which is much less pronounced in non-lobed species. To determine if Dumpy plays a role in posterior lobe formation, we next employed transgenic RNAi to knock down its expression. Previous studies of dumpy characterized a VDRC RNAi line that is effective at reducing its activity (Ray et al., 2015). We used a driver from the Pox neuro gene (Boll and Noll, 2002) to target the RNAi to posterior lobe cells. This resulted in a drastic decrease in the size of the posterior lobe and also caused changes to its shape (Figure 6). In dumpy knockdown, we observe a variable phenotype between the left and right posterior lobes, even within a single individual (Figure 6A; Figure 6—figure supplement 1). Knockdown was completed at both 25°C and 29°C, as higher temperatures increase the efficacy of the Gal4/UAS system (Duffy, 2002). At these higher temperatures, the dumpy knockdown phenotype trended towards more severe defects (Figure 6B). Together, these results suggest that posterior lobe development is sensitive to levels of dumpy, and that dumpy plays a vital role in shaping the posterior lobe.
 
-## Correlation of Dumpy deposition and cell height in the posterior lobe
+![Figure 6.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig6-v2.jpg)
+
+**Figure 6.:** (A) Range of adult posterior lobe phenotypes produced by control (mCherry RNAi) and dumpy RNAi animals. Phenotypic classes defined from wild type (I) to most severe (V). Scale bar, 20 μm. (B) Percentage of posterior lobes in each class for control, dumpy RNAi at 25°C, and dumpy RNAi at 29°C. (C) Quantification of area of adult posterior lobes of mCherry RNAi (control) and dumpy RNAi at 25°C and 29°C. Statistical significance is indicated (unpaired t-test; ****p≤0.0001).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Comparison of dumpy knockdown (purple circles) and control knockdown (green squares) of left and right adult posterior lobes in single individuals grown at 29°C measuring height at the ventral side of the posterior lobe (single individual represented as a single dot or square). Black line represents predicted perfect correlation in height. dumpy knockdown individuals appear less correlated, indicating that the height of the posterior lobe varies more in the dumpy knockdown. (B) Percentage of dumpy knockdown individuals plotted in (A) in which both posterior lobes were categorized into the same or different phenotypes classes (as defined in Figure 6).
+
+### Correlation of Dumpy deposition and cell height in the posterior lobe
 
 We next sought to determine when during development dumpy knockdown influences the morphogenetic progression of the posterior lobe. This was important because the posterior lobe emerges over 16 hr of development (Figure 1F), after which cells of the genital epithelium secrete a rigid cuticle, and any of these phases could represent a critical Dumpy-dependent stage of development. We found that dumpy knockdown individuals manifest phenotypes by the midpoint of posterior lobe development (Figure 7A) and continue to show abnormal lobe development through the end of its formation (Figure 7B). Defects in posterior lobe development may occur earlier, but the exact ventral and dorsal boundaries of the posterior lobe are difficult to define for quantification purposes at early time points. Interestingly, while defects in cell height are observed on the dorsal side, we do not see differences in cell height in the ventral cells of the lobe (Figure 7A–B). This correlates with the phenotypes of adult dumpy knockdown individuals, which usually display a ventral tip of normal height with defects observed towards the dorsal side (Figure 6A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig7-v2.jpg)
+
+**Figure 7.:** (A–B) Comparison of mCherry RNAi (control) and dumpy RNAi at 44 hr APF (A) and 52 hr APF (B). Images are rotated in 3D to visualize the full shape of the posterior lobe labeled with E-cadherin (Ecad). Quantification of tissue height at the ventral tip (dark blue) and dorsal base (light blue) of the posterior lobe. Cartoon represents relative locations of cross-sections used for tissue thickness measurements. Individual data points presented; n = at least 10 per time point. The ventral tip is defined as the location where the posterior lobe is at its maximum height. The base was determined by moving 19.76 μm dorsally from the ventral tip. Statistical significance for each time point is indicated (unpaired t-test; ***p≤0.001; n.s. = not significant p≥0.05). (C–F) Comparison of mCherry RNAi (control) (C and E) and dumpy RNAi (D and F) at 44 hr APF and 52 hr APF labeled with with Dumpy:YFP (Green) and E-cadherin(Ecad; Magenta). GFP antibody was used to increase YFP signal. All cross-sections are oriented with apical side at the top and basal side at the bottom. Relevant structures labeled: Lateral plate (LP) posterior lobe (PL), and clasper (C). Cross-sections are max projections of 5.434 μm sections to show full Dumpy connection. Images were independently brightened to show relevant structures. Scale bar, 20 μm. n = at least five per experiment.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Comparison of mCherry RNAi (control) and dumpy RNAi adults. Quantification of height of cuticle at the ventral side of the posterior lobe. (unpaired t-test; ***p≤0.001; ****p≤0.0001; n ≥ 28).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A and B) dumpy RNAi at 44 hr APF with Dumpy:YFP (green) and apical membrane labeled with E-cadherin (Ecad; magenta) showing strands of Dumpy connecting to the crevice between the lateral plate and clasper (arrow). Relevant structures labeled: Lateral plate (LP) posterior lobe (PL), and clasper (C). Cross-sections are max projection of 5.434 μm section to show full Dumpy connection. Scale bar, 20 μm.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Comparison of mCherry RNAi (control) (A) and dumpy RNAi (B and C) at 44 hr APF with VVA (Green) and E-cadherin (Ecad; Magenta). All cross-sections are oriented with apical side at the top and basal side at the bottom. Relevant structures labeled: posterior lobe (PL) and clasper (C). Cross-sections are max projections of 5.434 μm sections to show full Dumpy connection. Images were independently brightened to show relevant structures. Scale bar, 20 μm. n = 3 per experimental condition.
 
 Why would dorsal cells of the posterior lobe be more affected in a dumpy knockdown? We hypothesized that our posterior lobe specific driver is not strong enough to remove all deposits of Dumpy associated with the posterior lobe. To better understand this, we examined Dumpy:YFP localization in the dumpy knockdown background, in which both dumpy and dumpy:yfp should be targeted by the RNAi treatment. In the dumpy RNAi background, we observed an association of Dumpy:YFP with the tallest cells on the ventral side of the posterior lobe in both mid (Figure 7D n = 5/5 samples) and late (Figure 7F n = 4/5 samples) stages of development compared to control animals. In contrast, no Dumpy was observed in contact with the shorter cells on the dorsal side (Figure 7D and F n = 5/5 samples). In addition, it should be noted that one of our late samples lacks a Dumpy connection to the ventral cells, correlating with our observation that not all adult samples are fully extended on the ventral side (Figure 7—figure supplement 1). Furthermore, we also observed highly variable strands of Dumpy:YFP in the middle of the lobe (between the ventral and dorsal sides) (Figure 7—figure supplement 2). These strands visually resembled the weak strands of VVA observed in D. biarmipes (Figure 5D), in that they emanate from the clasper and connect to the crevice between the posterior lobe and clasper, indicating that this ‘strand’ like connection in the crevice alone is not able to elongate cells.
 
@@ -79,19 +167,27 @@ To further confirm the effect of aECM in the dumpy knockdown background, we exam
 
 Here, we investigated how a morphological novelty forms at the cellular level, and in doing so, revealed distinctive cell and aECM interactions underlying its development and evolution. We identified how an extreme change in the shape of cells in the developing posterior lobe accounts for its novel morphology. While intrinsic cytoskeletal components appear to contribute to this process, our results indicate a critical role played by a vast extrinsic network of ECM on the apical side of the epithelium. It was unexpected that such an elaborate supercellular matrix structure would participate in the evolution of a novel morphological structure. Below, we consider the potential roles played by the aECM in posterior lobe development and diversification, and discuss how studies of morphogenesis can illuminate the simple origins of structures that might otherwise seem impossibly complex to evolve.
 
-## Mechanisms for aECM-mediated control of cell height in the posterior lobe
+### Mechanisms for aECM-mediated control of cell height in the posterior lobe
 
 Our work demonstrates an important role for the aECM protein Dumpy in the development of the posterior lobe, as exhibited by the dramatic phenotypes in the dumpy RNAi background and the strong association of Dumpy:YFP with only the tallest cells in these experiments. The presence of Dumpy:YFP at the ventral tip of the defective posterior lobe in dumpy RNAi individuals indicated that our driver does not supply sufficient RNAi in ventral tip cells to remove all of the Dumpy-YFP, though a strong reduction in florescence is observed at the ventral tip. We hypothesize that this ventral tip would not fully form if Dumpy is completely removed, however, we currently do not have a driver that can test this prediction.
 
 Overall, our data are consistent with three possible mechanisms that could allow Dumpy to regulate cell height. First, Dumpy could serve as a structural support while autonomous cell mechanical processes drive apico-basal elongation, such as by altering the cytoskeleton, which is observed in posterior lobe cells. Second, the cells of the posterior lobe could be pulled mechanically through their connection to the Dumpy aECM. This process could operate passively, deforming cells of the lobe, but could also drive changes in the cytoskeleton in response to external tensions. Finally, the aECM could alter cell signaling dynamics, as has been exhibited by the basal ECM (Kirkpatrick et al., 2004; Kreuger et al., 2004; Wang et al., 2008). Previous research has shown that the JAK/STAT pathway is important for posterior lobe development (Glassford et al., 2015), and the ability for a signal to reach its target cells could be altered in the absence of Dumpy. Of course, these models are not mutually exclusive and some combination of these mechanisms may be integrated to shape the posterior lobe. Our observations of increased cytoskeletal components in posterior lobe cells and the reduced height of cells that lack Dumpy in our knockdown experiments are consistent with all three mechanisms, which are difficult to differentiate experimentally.
 
-## The role of aECM in the diversification of genital structures
+### The role of aECM in the diversification of genital structures
 
 Genitalia represents some of the most rapidly diversifying structures in the animal kingdom, and our results suggest the aECM may participate in the modification of Drosophila genital structures. The shape of the posterior lobe is extremely diverse among species of the melanogaster clade (Coyne, 1989). We confirmed that the extended posterior lobe of D. sechellia is associated with a similar aECM to D. melanogaster (Figure 5—figure supplement 3), confirming that this mechanism is likely common to other lobed species. Our results demonstrate that reducing the levels of Dumpy can affect the shape of the posterior lobe, with extreme knockdown phenotypes approximating the posterior lobe of D. mauritiana. Furthermore, the sheath and phallus show dense deposits of Dumpy, suggesting that the aECM could play important roles in diversifying these remarkably variable structures. During the course of evolution, one could imagine that by altering which cells are connected to the aECM, the physical nature of those connections, and the mechanical properties of those cells and/or their associated ECM could lead to changes in morphological shape. Hence, identifying genes that have evolved to differentiate these structures could uncover novel mechanisms for genetically controlling the behavior of this aECM and behaviors of cells bound to this dynamic scaffold.
 
-## Integrating cells into a pre-existing aECM network to generate morphological novelty
+### Integrating cells into a pre-existing aECM network to generate morphological novelty
 
 Evolution is thought to act through the path of least resistance. When confronted with the remarkable diversity of genital morphologies present in insects, one must wonder how the intricate projections, bumps, and divots form through the action of epithelial rudiments. Traditionally the field of evo-devo research has focused on cell intrinsic processes that contribute to tissue morphogenesis, but here we show that the extrinsic forces from the aECM may be important for the evolution of a novelty. The aECM, while understudied, has been implicated in the morphogenesis of many structures (Bailles et al., 2019; Diaz-de-la-Loza et al., 2018; Dong et al., 2014; Etournay et al., 2015; Fernandes et al., 2010; Heiman and Shaham, 2009; Low et al., 2019; Münster et al., 2019; Ray et al., 2015; Rosa et al., 2018), making it a promising target for evolution. We find a conserved aECM network associated with central genital structures (clasper, sheath, and phallus) in both lobed and non-lobed species. However, on the dorsal side of the lateral plate we observed differences, with lobed species having substantial deposits of aECM that fill this area between the lateral plate and clasper and non-lobed species forming only thin strand-like connections (Figure 8). Because a complex network of aECM already existed on the genitalia to potentially pattern other structures, such as the phallus and its multiple elaborations (Kamimura, 2010; Peluffo et al., 2015; Rice et al., 2019), we hypothesize that this spatial expansion of aECM to the posterior lobe cells allowed them to be integrated into the ancestral aECM network (Figure 8), a step which was likely significant to its evolution. Overall, this suggests that the aECM could be an unexpected target for generating novel anatomical structures. On the other hand, tissues which lack such an ancestral aECM network may be less likely to evolve projections through this mechanism. In addition, while Dumpy may be required for the development of the posterior lobe, additional components of the aECM, including factors that remodel the aECM or receptors that anchor the aECM to the cells, are likely also needed. Furthermore, we envision that additional processes may also be contributing to the full morphogenesis of the posterior lobe, including potential intrinsic processes that may contribute to the cell shape changes we observe, such as the elevated concentrations of cytoskeletal components (Figure 3).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig8-v2.jpg)
+
+**Figure 8.:** (Top) Illustration of non-lobed species, D. biarmipes, with ancestral aECM network covering central genital structures (2B) including the clasper (C), sheath, and phallus. Weak connections of aECM span from the clasper to the lateral plate (LP) during early development (1 and 2A - top). (Bottom) Illustration of lobed species, D. melanogaster. The aECM network has expanded to fill the crevice between the lateral plate and clasper (1-bottom) integrating these cells into the ancestral aECM network (2-bottom). This aECM population is needed for cells to properly project from the lateral plate, forming the posterior lobe.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/55965/elife-55965-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Live imaging of Dumpy:YFP (green) and Armadillo:GFP (ARM:GFP; magenta) in the embryonic posterior spiracles. Posterior spiracle (dotted line) is connected to the cuticle (arrowhead) via a tether of dumpy (arrow). Scale bar, 10 μm. n = 4.
 
 The expanded dumpy expression we discovered caused us to consider how the posterior lobe gained this aECM attachment. Models of gene network co-option have been appealing because they establish pre-existing mechanisms in place that can be rapidly ported to new locations to generate massive changes in a tissue. Interestingly, our previous work uncovered a gene regulatory network (GRN) that regulates development of an ancestral embryonic structure, the posterior spiracles, which was co-opted during the evolution of the posterior lobe and regulates its development (Glassford et al., 2015). Along these lines, dumpy is expressed in the developing posterior spiracles (Wilkin et al., 2000), and we have observed a thin strand of Dumpy:YFP connecting the posterior spiracles to the surrounding embryonic cuticle, known as the vitelline membrane (Figure 8—figure supplement 1; Margaritis et al., 1980). Identification of regulatory elements which activate dumpy in the posterior lobe will be necessary to determine whether its role in the posterior spiracle was relevant to the evolution of expanded genital expression.
 
@@ -99,21 +195,283 @@ Identifying the genetic changes that regulate cellular processes required for th
 
 ## Materials and methods
 
-## Fly stocks and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti-alpha tubulin (tyrosinated)</td>
+      <td>MilliporeSigma</td>
+      <td>Millipore Cat# MAB1864, RRID:AB_2210391</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-alpha tubulin (acetylated)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich Cat# T6793, RRID:AB_477585</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rat anti-Ecadherin</td>
+      <td>DSHB</td>
+      <td>DSHB Cat# DCAD2, RRID:AB_528120</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-Fasciclin III</td>
+      <td>DSHB</td>
+      <td>DSHB Cat# 7G10 anti-Fasciclin III, RRID:AB_528238</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-histone H3 (phospho S10)</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab5176, RRID:AB_304763</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal goat anti-GFP</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab6662, RRID:AB_305635</td>
+      <td>IHC (1:300)</td>
+    </tr>
+    <tr>
+      <td>Lectin</td>
+      <td>fluoresceinVicia Villosa Lectin (VVA)</td>
+      <td>Vector Laboratories</td>
+      <td>Vector Laboratories Cat# FL-1231, RRID:AB_2336856</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>rhodamine phalloidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# R415, RRID:AB_2572408</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>y1w1Drosophila melanogaster</td>
+      <td>BloomingtonDrosophilaStock Center</td>
+      <td>BDSC Cat# 1495, RRID:BDSC_1495</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila biarmipes)</td>
+      <td>wild type</td>
+      <td>NationalDrosophilaSpecies Stock Center (NDSSC)</td>
+      <td>NDSSC Stock #:14023–0361.10 RRID:FlyBase_FBst0203870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila ananassae)</td>
+      <td>wild type</td>
+      <td>NationalDrosophilaSpecies Stock Center (NDSSC)</td>
+      <td>NDSSC Stock #:14024–0371.13 RRID:FlyBase_FBst0201380</td>
+      <td>No longer available</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila pseudoobscura)</td>
+      <td>wild type</td>
+      <td>NationalDrosophilaSpecies Stock Center (NDSSC)</td>
+      <td>NDSSC Stock #:14011–0121.87 RRID:FlyBase_FBst0200074</td>
+      <td>No longer available</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila sechellia)</td>
+      <td>Wild type</td>
+      <td>NationalDrosophilaSpecies Stock Center (NDSSC)</td>
+      <td>NDSSC Stock #: #14021–0248.03 RRID:FlyBase_FBst0201190</td>
+      <td>No longer available</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Raeppli-CAAX</td>
+      <td>Bloomington Drosophila Stock Center (BDSC)</td>
+      <td>BDSC Cat# 55084, RRID:BDSC_55084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Pox neuro-Gal4</td>
+      <td>(Boll and Noll, 2002)</td>
+      <td></td>
+      <td>Construct #13</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>D. simulans Pox neuro-Gal4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Can be obtained from Mark Rebeiz,rebeiz@pitt.edu</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>hs – flippase122</td>
+      <td>Gift from Erika A. Bach</td>
+      <td>Flybase: FBtp0001101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>armadillo-GFP</td>
+      <td>(Huang et al., 2012)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Dumpy:YFP</td>
+      <td>Drosophila Genomics and Genetic Resources</td>
+      <td>DGGR Cat# 115238, RRID:DGGR_115238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Viking:GFP</td>
+      <td>Drosophila Genomics and Genetic Resources</td>
+      <td>DGGR Cat# 110626, RRID:DGGR_110626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Perlecan:GFP</td>
+      <td>Drosophila Genomics and Genetic Resources</td>
+      <td>DGGR Cat# 110807, RRID:DGGR_ 110807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>E-cadherin:mCherry</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>BDSC Cat# 59014, RRID:BDSC_59014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-dumpyRNAi</td>
+      <td>ViennaDrosophilaResource Center</td>
+      <td>VDRC Cat#44029, RRID:FlyBase_FBst0465370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-mCherryRNAi</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>BDSC Cat# 35785, RRID:BDSC_35785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pS3aG4</td>
+      <td>Gift from Benjamin Prud'homme</td>
+      <td></td>
+      <td>Gal4 vector used to make D. simulans Pox neuro gal4 line</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GCCACTAACAATCCATGCGGTT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>dumpy probe forward primer. Obtained from Integrated DNA Technologies.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TAATACGACTCACTATAGGGAGAAATAGCCCTGTCCTTGGAATCC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>dumpy probe reverse primer with T7 primer. Obtained from Integrated DNA Technologies.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TTCCGGGCGCGCCTCGGTGGCTTAACACGCGCATT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>D. simulans Pox neuro forward primer for gal four line. Obtained from Integrated DNA Technologies.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TTGCCCCTGCAGGATCGCTGATTCCATGGCCCAGT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>D. simulans Pox neuro reverse primer for gal four line. Obtained from Integrated DNA Technologies.</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Fiji (ImageJ v2.0)</td>
+      <td>(Schindelin et al., 2012)</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>GenePalette</td>
+      <td>(Rebeiz and Posakony, 2004; Smith et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Leica Application Suite X</td>
+      <td>Leica</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>Microsoft</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>MorphoGraphX</td>
+      <td>(Barbier de Reuille et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and genetics
 
 Fly stocks were reared using standard culture conditions. Wild type species used in this study were obtained from the University of California, San Diego Drosophila Stock Center (now known as The National Drosophila Species Stock Center at Cornell University) (Drosophila biarmipes #14024–0361.10, Drosophila ananassae #14024–0371.13, Drosophila pseudoobscura #14011–0121.87) and from the Bloomington Drosophila Stock Center (Drosophila melanogaster [y1w1] #1495). Pox neuro-Gal4 (construct #13) was obtained from Werner Boll (Boll and Noll, 2002). The following were obtained from the BloomingtonDrosophilastock center: UAS-Raeppli-CAAX (#55084), armadillo-GFP (#8556), Ecadherin:mCherry (#59014), and UAS-mCherryRNAi (control for RNAi experiments, as mCherry is not present in the Drosophila genome) (#35785). UAS-dumpy-RNAi was obtained from the Vienna Drosophila Resource Center (#44029) and Dumpy:YFP was obtained from the Drosophila Genomics and Genetic Resources (#115238).
 
 For the Raeppli experiments, stable lines of hs-flippase;;UAS-Raeppli-CAAX/UAS-Raeppli-CAAX and D. simulans Pox neuro-gal4/D. simulans Pox neuro-Gal4;UAS-Raeppli-CAAX/UAS-Raeppli-CAAX were generated. D. simulans Pox neuro-Gal4 was used as opposed to Pox neuro-Gal4 because a Gal4 driver on the second chromosome was required. Virgin females from the first line were crossed to males from the second line to ensure hs-flippase was inherited by all offspring. Offspring were collected and grown as normal, heat shocked at 37°C for 1 hr around 24 to 28 hr APF, and allowed to finish development at 25°C. Although this system is designed to label cells with multiple colors (Kanca et al., 2014), we could only detect mTFP1 in heat-shocked tissues which we suspect is caused by insufficient activation of the other fluorescent reporters to detectible levels.
 
-## Sample preparation
+### Sample preparation
 
 Pupal samples were prepared following the protocol in Glassford et al. (2015). Briefly, samples were incubated at 25°C unless otherwise noted (Glassford et al., 2015). Dissections were performed in cold PBS, pupae were cut in half, removed from their pupal cases, and fat bodies removed by flushing, leaving the genitalia connected to the surrounding pupal cuticle. Larval samples were dissected in cold PBS by cutting the larva in half, and flipping the posterior end of the larva inside out. All samples were fixed for 30 min at room temperature in PBS with 0.1% Triton X-100% and 4% paraformaldehyde. Samples stained with phalloidin had Triton X-100 concentrations increased to 0.3%. Samples used for VVA staining were removed from pupal cuticle before being fixed in PBS with 0.1% Triton X-100, 4% paraformaldehyde, and 1% trichloroacetic acid on ice for 1 hr followed by 30 min at room temperature. The trichloroacetic acid method causes some slight tissue distortion, as the precipitation treatment utilized to refine the VVA signal causes the posterior lobe to become slightly deformed and curve in towards the clasper. However, similar defects were not observed in the other structures such as the lateral plate or in D. biarmipes. Samples were stored in PBT for immunostaining at 4°C for up to two days. For in situ hybridization, samples were rinsed twice in methanol and rinsed twice in ethanol. Samples were stored at −20°C in ethanol.
 
-## Immunostaining and in situ hybridization
+### Immunostaining and in situ hybridization
 
 For immunostaining, genital samples were removed from the surrounding pupal cuticle and incubated overnight at 4°C with primary antibodies diluted in PBS with 0.1% Triton-X (PBT). VVA and phalloidin samples were placed on a rocker. The following primary antibodies were used: rat anti-alpha tubulin (tyrosinated) 1:500 (MAB 1864-I, MilliporeSigma), mouse anti-alpha tubulin (acetylated) 1:500 (T6793, Sigma-Aldrich), rat anti-Ecadherin 1:500 (DCAD2, DSHB), mouse anti-Fasciclin III 1:500 (7G10, DSHB), rabbit anti-histone H3 (phospho S10) 1:50 (ab5176, Abcam), goat anti-GFP 1:300 (ab6662, Abcam), fluorescein Vicia Villosa Lectin (VVA) 1:200 (FL-1231, Vector Laboratories). The goat anti-GFP was used to increase signal of Dumpy:YFP in the knockdown experiments only. Primary antibody was removed by performing two quick rinses and two long washes (at least 5 min) in PBT. Samples were incubated overnight at 4°C in secondary antibodies diluted in PBT. The following secondary antibodies were used: donkey anti-rat Alexa 594 1:500 (A21209, Invitrogen), donkey anti-mouse Alexa 488 1:500 (A21202, Thermo Fisher Scientific), donkey anti-rat Alexa 488 1:500 (A21208, Thermo Fisher Scientific), goat anti-mouse Alexa 594 1:500 (A-11005, Thermo Fisher Scientific), goat anti-rabbit Alexa 594 1:500 (A-11012, Thermo Fisher Scientific), donkey anti-goat Cy2 1:500 (705-225-147, Jackson ImmunoResearch). Rhodamine phalloidin (R415, Thermo Fisher Scientific) stain was performed with secondary antibody. Samples were washed out of secondary antibody by performing two quick rinses and two long washes (at least 5 min) in PBT. Samples were then incubated in 50% PBT/50% glycerol solution for at least 5 min. Pupal samples were mounted on glass slides coated with Poly-L-Lysine Solution. Glass slides had 1 to 2 layers of double sided tape with a well cut out in which the sample was placed and covered with a cover slip. in situ hybridization was performed following the protocol in Rebeiz et al. (2009) with modifications to perform in situs in the InsituPro VSi robot (Intavis Bioanalytical Instruments) as done by Glassford et al., with the exception that the genital samples were removed from the surrounding pupal cuticle before placing in the InsituPro VSi robot (Glassford et al., 2015; Rebeiz et al., 2009).
 
-## Microscopy and live imaging
+### Microscopy and live imaging
 
 Cuticles of adult posterior lobes and in situ hybridization samples were imaged on a Leica DM2000 microscope with a 40x objective for cuticles and a 10x objective for in situ samples. Samples with fluorescent antibodies and fluorescently tagged proteins were imaged using a Leica TCS SP5 Confocal microscope with either a 40x or 63x oil immersion objective.
 
@@ -121,10 +479,10 @@ To live-image genital development, a 2% agar solution was poured into a small pe
 
 To live-image embryos, Dumpy:YFP flies were grown in egg-laying chamber with grape agar plates (Genesee Scientific). Embryos were removed from plates using forceps and rolled on a piece of double sided tape to remove the chorion. Embryos then were positioned on a glass coverslip coated with embryo glue. A glass slide was covered with double sided tape and a well was made and filled with halocarbon 27 oil. The cover slip with the embryos was then placed on the glass slide, submerging the embryos in halocarbon oil. Embryos were imaged on a Leica TCS SP8 confocal with a 63x oil objective.
 
-## Image analysis
+### Image analysis
 
 Images were processed with Fiji (Schindelin et al., 2012) and Photoshop. Three-dimensional views were rotated and captured in MorphoGraphX (Barbier de Reuille et al., 2015) or Leica Application Suite X. Movies were processed in Fiji and cell rearrangements were tracked using the manual tracking plugin. Tissue thickness/cell height during development was measured in cross-sections by drawing a line centered between the two sides (based on apical membrane) of the lobe until the basal side was reached. Area of adult posterior lobe cuticles and height of the adult lobe were measured by using the lateral plate as a guide for determining the bottom boundary of the posterior lobe. To prevent any possible bias for one lobe vs the other (i.e. left vs right) which lobe was used in statistical analysis was randomly decided, except for Figure 6—figure supplement 1 where both posterior lobes were considered.
 
-## Transgenic constructs
+### Transgenic constructs
 
 To make the D. simulans Pox neuro-Gal4 driver, the posterior lobe enhancer of Pox neuro in D. simulans, identified in Glassford et al. (2015), was cloned using primers listed in the key resources table from genomic DNA purified with the DNeasy Blood and Tissue Kit (QIAGEN). Primers were designed using sequence conservation with the GenePalette software tool (Rebeiz and Posakony, 2004; Smith et al., 2017). The cloned sequence was inserted into the pS3aG4 (Gal4) using AscI and SbfI restriction sites. The final construct was inserted into the 51D landing site on the second chromosome (Bischof et al., 2007).

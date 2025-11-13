@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/026t1zr39 Neuroendocrine Tumor Research Foundation Boston United States
-2. https://ror.org/03wmf1y16 University of Colorado School of Medicine, Anschutz Medical Campus Aurora United States
+1. Neuroendocrine Tumor Research Foundation Boston United States ([ROR:026t1zr39](https://ror.org/026t1zr39))
+2. University of Colorado School of Medicine, Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
 
 † Corresponding author
 

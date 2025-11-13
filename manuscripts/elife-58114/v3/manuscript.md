@@ -37,7 +37,7 @@ In addition to ubiquitin ligases, pathogens also employ DUBs to hijack host cell
 
 ## Results
 
-## Identification of Lem27 as a DUB
+### Identification of Lem27 as a DUB
 
 To identify additional effectors that potentially harbor DUB activity, we analyzed Dot/Icm substrates (Burstein et al., 2009; Zhu et al., 2011) with HHpred (Soding et al., 2005) and found that Lem27 contains a motif remotely resembling active sites associated with the OTU superfamily of DUBs (Balakirev et al., 2003). Sequence alignment produced by the HHpred algorithm suggests that Cys24 and two adjacent residues of Lem27 constitutes a conserved Gly-Asn-Cys tripeptide motif shared among several cysteine proteases involved in the regulation of modifications by ubiquitin or the ubiquitin-like ISG15 from humans or viral pathogens (Figure 1).
 
@@ -49,13 +49,29 @@ To probe the DUB activity of Lem27, we first examined its reactivity with ubiqui
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig2-v3.jpg)
 
-**Figure 2.:** (a) The formation of a covalent conjugate between Lem27 and the DUB inhibitor Ub-PA. A diagram showing the chemical reaction between the reactive end of Ub-PA and the side chain of Cys24 from Lem27 (upper panel). Lem27 or Lem27C24A was incubated with Ub-PA and the products resolved by SDS-PAGE were detected by silver staining (lower panel). Note the molecular weight shift of Lem27 after reacting with Ub-PA and the inability of Lem27C24A to cause such shift. (b) Lem27 interferes with protein ubiquitination in cells. HEK293T cells were transfected to coexpress Flag-Ub and GFP-Lem27, GFP-Lem27C24A , or GFP-SdeA1-200. Proteins modified by Flag-Ub were detected by immunoblotting with a Flag-specific antibody (upper panel). The expression of the DUBs and their mutants were detected with GFP antibodies by immunoblotting. (c) Recombinant Lem27 removes ubiquitin from modified proteins. Ubiquitinated proteins isolated by immunoprecipitation from cells transfected to express Flag-Ub were incubated with His6-Lem27, His6-Lem27C24A, or His. Ubiquitination signals were detected by immunoblotting with a Flag-specific antibody (upper panel); recombinant proteins used in the reactions were detected with a His6-SdeA6-specific antibody (lower panel).
+**Figure 2.:** (a) The formation of a covalent conjugate between Lem27 and the DUB inhibitor Ub-PA. A diagram showing the chemical reaction between the reactive end of Ub-PA and the side chain of Cys24 from Lem27 (upper panel). Lem27 or Lem27C24A was incubated with Ub-PA and the products resolved by SDS-PAGE were detected by silver staining (lower panel). Note the molecular weight shift of Lem27 after reacting with Ub-PA and the inability of Lem27C24A to cause such shift. (b) Lem27 interferes with protein ubiquitination in cells. HEK293T cells were transfected to coexpress Flag-Ub and GFP-Lem27, GFP-Lem27C24A , or GFP-SdeA1-200. Proteins modified by Flag-Ub were detected by immunoblotting with a Flag-specific antibody (upper panel). The expression of the DUBs and their mutants were detected with GFP antibodies by immunoblotting. (c) Recombinant Lem27 removes ubiquitin from modified proteins. Ubiquitinated proteins isolated by immunoprecipitation from cells transfected to express Flag-Ub were incubated with His6-Lem27, His6-Lem27C24A, or His6-SdeA. Ubiquitination signals were detected by immunoblotting with a Flag-specific antibody (upper panel); recombinant proteins used in the reactions were detected with a His6-specific antibody (lower panel).
 
 To further examine the DUB activity of Lem27, we cotransfected HEK293T cells with plasmids that direct the expression of Flag-Ub and GFP-Lem27, respectively, and proteins ubiquitinated by Flag-Ub were probed by immunoblotting with the Flag-specific antibody. SdeADUB, the amino terminal portion of SdeA with canonical DUB activity (Qiu and Luo, 2017b; Sheedlo et al., 2015) was used as a control. In cells coexpressing GFP alone, a robust modification of cellular proteins via ubiquitination by Flag-Ub was detected (Figure 2b). In contrast, although Flag-Ub was expressed at comparable levels, ubiquitinated proteins in cells coexpressing GFP-Lem27 or GFP-SdeADUB were considerably reduced (Figure 2b). In agreement with the DUB activity observed in the cotransfection experiments, purified His6-Lem27 but not its inactive mutant His6-Lem27C24A effectively removed ubiquitin from proteins ubiquitinated by Flag-Ub that were isolated from cells by immunoprecipitation (Figure 2c). Together, these results indicate that Lem27 is a DUB whose activity requires Cys24.
 
-## Lem27 impacts the association of ubiquitinated proteins with the LCV
+### Lem27 impacts the association of ubiquitinated proteins with the LCV
 
 The LCV is enriched with ubiquitinated proteins (Dorer et al., 2006), which likely is dynamically regulated by enzymes involved in ubiquitination from both the host and the pathogen. To explore the potential role of Lem27 in this process, we first determined the cellular localization of Lem27 in macrophages infected with L. pneumophila. To this end, we first constructed a plasmid to express 4xFlag-Lem27 in relevant L. pneumophila strains. Next, we determined the translocation of 4xFlag-Lem27 into host cells by fractionation using U937 cells infected with the bacterial strains after lysis by saponin, a detergent that damages the membranes of mammalian but not bacterial cells (VanRheenen et al., 2006). Flag-Lem27 was detected in the saponin-soluble fraction of U937 cells infected with a strain harboring a functional Dot/Icm system but not a strain lacking an active Dot/Icm transporter (Figure 3a), validating that Lem27 is translocated into host cells by the Dot/Icm transporter during L. pneumophila infection.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig3-v3.jpg)
+
+**Figure 3.:** (a) Lem27 is injected into host cells during L. pneumophila infection. U937 cells infected with bacterial strains expressing 4xFlag-Lem27 were lysed with saponin and detected for the proteins of interest in soluble and insoluble fractions, respectively. Note that the protein was expressed comparably in these two strains but it was detected only in cells infected with the strain harboring a functional Dot/Icm system. (b–c) Quantitation of the association of 4xFlag-Lem27 with the LCV and representative images of ubiquitin decorated phagosomes. U937 macrophages infected with the indicated bacterial strains for 2 hr were subjected to immunostaining and the number of vacuoles stained positive by the Flag antibody was determined (b). At least 150 vacuoles were scored for each sample and similar results were obtained in three independent experiments. Data shown were mean ±s.e. Images (c) were acquired with an Olympus IX-83 fluorescence microscope. Bar: 2 μm. (d–f) Lem27 regulates the association of ubiquitinated proteins on the LCV. Macrophages infected with the indicated L. pneumophila strains were immunostained to identify the bacterial vacuoles followed by staining with the FK1 ubiquitin antibody. The percentage of ubiquitin positive vacuoles was scored by counting at least 150 intracellular bacterial (d) and the intensity of the ubiquitin staining signal of the scored vacuoles was measured (e). Results shown were mean ± s.e. from three independent experiments. Representative images of the association of ubiquitin with LCVs containing relevant bacterial strains (f). Images were acquired with an Olympus IX-83 fluorescence microscope. Bar: 2 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Flag-Lem27 for 2 hr. Samples were fixed and subjected to immunostaining to identify the LCVs and Flag-Lem27. Samples were analyzed by visual inspection under a fluorescence microscope to acquire representative images of the LCV positive or negative for Flag-Lem27 (left panel) and to determine the rates of vacuoles stained positive for the protein (right panel) by counting at least 150 phagosomes each sample. Data shown were from three independent experiments. Bar: 2 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** The L. pneumophila strain Lp02 was grown at 37°C in a shaker, cell growth was monitored by measuring the OD600 and continued for 24 hr. The expression level of lem27 was monitored throughout the culture by withdrawing equal amounts of cells at the indicated times. Total proteins resolved by SDS-PAGE were detected by immunoblotting with Lem27-specific antibodies. The ∆lem27 mutant grown at the post-exponential phase was included to identify the protein band representing Lem27. The band above the target protein recognized nonspecifically by the Lem27 antibodies was used as a loading control.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (a–c) RAW264.7 (a) or D. discoideum (b) cells seeded in 24-well plates were infected with the indicated bacterial strains at an MOI of 0.05, extracellular bacteria were removed by washing 2 hr after uptake. At the indicated time points, samples were lysed with 0.2% saponin and the lysates were plated on CYE plates after proper dilutions. Bacterial colonies were counted to calculate the total CFUs in each sample. Data shown are mean ± s.e. from three samples each strain. Similar results were obtained in three independent experiments. The expression of lem27 in L. pneumophila strains used for intracellular growth experiments. Equal amounts of bacterial cells from strains used for infection in a panel were lysed and proteins resolved by SDS-PAGE was detected by immunoblotting with antibodies specific for Lem27. The metabolic enzyme isocitrate dehydrogenase (ICDH) was probed as a loading control (c). (d) A mutant lacking both lem27 and lotA is not defective in intracellular replication in D. discoideum. The experiments were performed as described in panels a and c with the indicated L. pneumophila strains and the total CFUs in each sample at the indicated time were determined. Data shown are mean ± s.e. from three samples each strain and similar results were obtained in three independent experiments.
 
 To determine the cellular localization of Lem27 in infected cells, we first differentially labeled extracellular and phagocytosed bacteria with antibodies specific for L. pneumophila, followed by immunostaining with the Flag-specific antibody to detect translocated Lem27. Clear staining signals detected by the Flag antibody were concentrated on the LCV (Figure 3b–c). Such association only occurred in cells infected with the L. pneumophila strain harboring a functional Dot/Icm system, with approximately 80% staining positive for the fusion protein (Figure 3b–c). Although 4xFlag-Lem27 was similarly expressed in the dotA- strain, association of the Lem27 with its vacuoles was not detected (Figure 3b–c).
 
@@ -63,7 +79,7 @@ We also infected the protozoan host D. discoideum with these L. pneumophila stra
 
 The localization of Lem27 on the bacterial phagosome prompted us to examine whether it plays a role in the association of ubiquitinated proteins with the LCV. U937 macrophages infected with relevant L. pneumophila strains for 2 hr were subjected to immunostaining with the FK1 antibody specific for ubiquitinated proteins (Kubori et al., 2018). As expected, close to 40% of the vacuoles containing the wild-type strain Lp02 stained positive by the antibody and no staining signal was detected in vacuoles containing the dotA- mutant Lp03 (Figure 3d–e). Importantly, we observed a significant increase in the percentage of vacuoles positive for ubiquitin in infections with the strain lacking the lem27 gene (Figure 3d and f). Furthermore, expression of lem27 but not the catalytically inactive mutant lem27C24A in the mutant strain from a plasmid restored the percentage of association to wild-type levels (Figure 3d and f). Similar results were obtained when the intensity of the ubiquitin staining signal was examined (Figure 3e). These results indicate that Lem27 functions to regulate protein ubiquitination on the LCV.
 
-## Expression of Lem27 is induced at the transmissive phase, and this gene is dispensable for bacterial intracellular replication in macrophages
+### Expression of Lem27 is induced at the transmissive phase, and this gene is dispensable for bacterial intracellular replication in macrophages
 
 To accommodate the need of effector activity at different phases of its interactions with host cells, L. pneumophila temporally regulates the expression of many of its effectors in response to various signals (Segal, 2013). For example, a large number of effector genes are induced at late exponential phase (Isberg et al., 2009), which may allow effective subversion of host processes when the pathogen makes the initial contact with the host cell. We used Lem27-specific antibodies to examine the expression pattern of lem27 by monitoring its protein levels in bacterial cells grown at different phases in bacteriological media. Lem27 was readily detectable in freshly diluted bacteria, which was maintained at similar levels into the exponential phase. The protein level began to increase when the culture entered later exponential phase (12 hr) and peaked at the stationary phase (Figure 3—figure supplement 2). Thus, similar to many Dot/Icm substrates (Nagai et al., 2002; Luo and Isberg, 2004; VanRheenen et al., 2006), lem27 is induced in bacteria of the transmissive state, which may contribute to overcome host defense in the initial phase of infection. In addition, given its relatively high-level expression at other growth phases, including the exponential phase (Figure 3—figure supplement 2), Lem27 likely also plays a role in other stages of the intracellular life cycle of L. pneumophila.
 
@@ -71,23 +87,152 @@ To determine the role of lem27 in intracellular bacterial replication, we infect
 
 A few DUBs have been described in L. pneumophila (Kitao et al., 2020) of which LotA (Kubori et al., 2018) and Ceg23 (Ma et al., 2020) also belong to the OTU superfamily. Furthermore, LotA exhibits preference toward several chain types, including K6-type (Kubori et al., 2018), which is one of the preferred chain types cleaved by Lem27 (see below). We thus examined the potential functional redundancy between lotA and lem27 by constructing a mutant lacking both genes. This strain Lp02∆lotA∆lem27, did not display detectable growth defects in either mammalian macrophages or D. discoideum (Figure 3—figure supplement 3d).
 
-## Lem27 preferentially cleaves diubiquitin linked by K6, K11, or K48
+### Lem27 preferentially cleaves diubiquitin linked by K6, K11, or K48
 
 Polyubiquitin chains of distinct architecture are formed by isopeptide bonds established by one of the seven lysine residues, K6, K11, K27, K29, K33, K48, K63 as well as the amino group of the N-terminal methionine (M1) of a preceding ubiquitin and the carboxylate of Gly76 of the succeeding monomer, resulting in eight types of homotypic polyubiquitin chains (Komander and Rape, 2012). To determine whether Lem27 prefers certain specific chain types, we tested its ability to cleave the eight different types of diubiquitin. In reactions containing 1.5 μM substrate and 1.0 μM His6-Lem27, approximately 50% of the diubiquitin linked at K6, K11 or K48-linked diubiquitin substrates was efficiently cleaved in 10 min. In the same reaction time, approximately 35% of diubiquitins linked at K63 or K33 in the reactions was cleaved and cleavage of diubiquitin linked at K27 or K29 was barely detectable (Figure 4a). When the reactions were allowed to proceed for 2 hr, cleavage of K6-linked diubiquitin was close to 80%, those linked at K63 or K33 were cleaved to about 65% and the cleave of K27-linked diubiquitin was around 15%. Extension of the reaction time to 2 hr only led to negligible cleavage of K29-linked diubiquitin (Figure 4a). Similarly, cleavage of M1-linked linear diubiquitin could not be detected even in reactions that were allowed to proceed for 2 hr (Figure 4b). As expected, the catalytically inactive mutant Lem27C24A has lost the ability to cleave any of these substrates (Figure 4a–b). Thus, Lem27 exhibits certain degree of selectivity toward its substrates, with a preference for polyubiquitin chains linked at K6, K11, or K48, followed by K33- and K63- types. In contrast, diubiquitin linked at K29 and linear diubiquitin cannot be cleaved by Lem27 (Figure 4a–b).
 
-## Lem27 recognizes ubiquitin by six contact sites via multiple hydrogen bonds
+![Figure 4.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig4-v3.jpg)
+
+**Figure 4.:** (a) Diubiquitin linked by K6, K11 or K48 was the preferred substrates for Lem27. A representative image of diubiquitin digestion by Lem27 in which recombinant Lem27 or Lem27C24A was incubated with the indicated diubiquitin for 10 min (left panel) or 2 hr (middle panel). The cleavage of the substrates was detected by Coomassie brilliant blue (CBB) staining after SDS-PAGE. The percentage of cleavage for each tested diubiquitin was calculated from three independent experiments (right panel). (b) Lem27 cannot cleave linear diubiquitin. Recombinant Lem27 or Lem27C24A was incubated with linear diubiquitin for 2 hr and proteins in the reactions were separated by SDS-PAGE and detected by CBB staining. (c) A Lem27 deletion mutant lacking 155 residues from its carboxyl end is active. Reactions containing K6-linked diubiquitin and the indicated amounts of Lem27 or Lem271-417 was allowed to proceed for 10 min prior to SDS-PAGE and CBB staining. The percentage of cleavage shown were from three independent experiments. Data shown were mean ±s.e.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (a–b) The ribbon mode (a) and surface mode (b) of the structure in one asymmetric unit. (c) Superimposition of the two Lem271-417 in one asymmetric cell, an approximate 35o rotation of the DUF1 domain is circled.
+
+### Lem27 recognizes ubiquitin by six contact sites via multiple hydrogen bonds
 
 To understand the molecular details of Ub recognition and catalysis by Lem27, we aimed to determine its crystal structure. We found that the full-length Lem27 construct has the propensity to form aggregates of different sizes in solution, we therefore examined several carboxyl-terminal truncation mutants of which the Lem271-417 construct remained active against diubiquitin (Figure 4c). Furthermore, this truncation mutant produced homogenous samples in its covalent conjugate form with Ub-PA. Upon subjecting the complex formed by selenomethionine-labeled Lem271-417 and Ub-PA to crystallization screening, we obtained crystals and solved the structure to a resolution of 2.43 Å by single-wavelength anomalous diffraction (SAD) phasing (Table 1).
 
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th>SeMet Lem27(1-417)-Ub-PA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9792</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 1 21 1</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>66.75,118.95, 84.28</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.00, 98.28, 90.00</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>31.95–2.43 (2.52–2.43)</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>49000 (4827)</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.116 (0.661)</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>0.049 (0.324)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>9.20 (2.10)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.83 (99.42)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>6.6 (5.10)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>31.950–2.43 (2.52–2.43)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>48979 (4824)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree (%)</td>
+      <td>22.27 (33.48)/22.69 (33.46)</td>
+    </tr>
+    <tr>
+      <td>Total no. of atoms</td>
+      <td>7947</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor (Å)</td>
+      <td>49.28</td>
+    </tr>
+    <tr>
+      <td>Favoured (%)</td>
+      <td>96.03</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.77</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.21</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values in parentheses are for the highest resolution shell._
+
 There are two copies of the Lem271-417-Ub-PA complex in an asymmetric unit (ASU)(Figure 4—figure supplement 1a). However, structural analysis suggests that there is no intermolecular interaction between these two Lem271-417 molecules, which is consistent with the results from PISA analysis (average interface area of 811 Å2 between the two Lem271-147 subunits in the ASU vs 1904 Å2 of average interface area between Ub-PA and Lem271-417 within one complex). The two DUB modules of Lem271-417 molecules in an ASU are almost identical with a root-mean-square deviation (RMSD) of 0.249 Å over Cα atoms of 407 residues (residues 1–417), except that there is an approximate 35o rotation of a domain consisting of a bundle of four α-helices (α-bundles) formed by α13-α16 spanning residues 315–417 (Figure 4—figure supplement 1b). However, these α-bundles collectively behave as a rigid body with an RMSD about 0.51 Å over Cα of 97 residues, implying that the linker between the α-bundles and the DUB domain is flexible (Figure 4—figure supplement 1c). The Lem271-417 molecule is composed of two distinct domains (Figure 5a): a DUB domain spanning the first ~300 amino acids (residues 1–314) and a separate domain consisting of the four α-bundles (residues 315–417) (Figure 5b). The α-bundle, while sharing limited contacts with the DUB domain, appears as an appendage to the DUB domain and may serve as an independent unit, whose function is unclear and was therefore designated as domain of unknown function 1 (DUF1). The DUB module with a bilobal architecture assumes the shape of the right hand with one of the lobes giving the appearance of the thumb and forefinger and the other lobe as palm plus the three other fingers (Figure 5b). One lobe is composed of six α-helices (1–4, 10, and 11) and five β-strands (1-5) where the strands form two separate β-sheets: one comprising of strands 1–3 and the other is an antiparallel β-hairpin (strands 4 and 5) which protrudes out from the rest of the mixed α-β core in this lobe (Figure 5b). The second lobe is composed of five α-helices α5 to α9, which form the fingers part of the hand (finger lobe). The protruding hairpin appears as the thumb with the rest of the structure as the palm. The ubiquitin moiety is being held tightly by the open hand with its carboxyl end being inserted into the catalytic cleft to access the side chain of Cys24. A vinylthioether bond is installed between the side chain of Cys24 from Lem271-417 and the propargylamide reactive end of Ub-PA (Figure 5c). In the structure, His304 is found within 3.8 Å of the S-atom of the catalytic Cys which most likely would constitute the key Cys-His catalytic dyad for Lem27 (Figure 5c). The proximity of His304 and its putative role in the formation of the catalytic center suggested that this residue is critical for the DUB activity of Lem27. Indeed, substitution of His304 with alanine abolishes its enzymatic activity (Figure 5d).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig5-v3.jpg)
+
+**Figure 5.:** (a) Domain organization of full-length Lem27, the DUB module (residues 1–310), the DUF1 (residues 315–417) and the carboxyl terminus domain (CTD, not available in the structure) are shown. (b) Two different views of the overall structure of Lem271-417-Ub-PA. The ribbon mode of Lem271-417-Ub-PA binary complex (upper panel) and surface model (lower panel). Distinct portions of the hand-shaped structure and the S1 and S1' sites were indicated. (c) The configuration of the catalytic center formed by Cys24 and His304 of Lem27. The side chain of Cys24 has formed a chemical bond with Ub-PA. (d) Residues Cys24 and His304 are essential for the enzymatic activity of Lem27. His6-Lem27, His6-Lem27C24A, or His6-Lem27H304A was incubated with K6-type diubiquitin and the protein products were detected by CBB staining after SDS-PAGE. Similar results were obtained in at least three independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Superimposition of the catalytic residues (Cys24 and His304) of Lem27 in grey with the OTU domain-containing proteins listed in Table S1 (upper panel) and the alignment of the indicated sequences around the catalytic Cys residues (lower panel). (b) Superimposition of Lem27 in grey and OTUB1/UbcH5b ~ Ub/Ub (PDB ID: 4DDG) (left panel). Zooming in configuration of the catalytic residues of Lem27 and human OTUB1 in the S1 site (right panel). (c) Superimposition of Lem27 in grey and our previously solved structure of Ceg23 (PDB ID: 6KS5) in green. Note that the insertion domain associated Ceg23 is considerably shorter than that of Lem27.
 
 DALI search against the PDB showed that the overall structure of Lem271-417 possesses a folding (Figure 5—figure supplement 1) that shares some similarity mainly with the core folding unit of Group I OTU DUBs found in OTUB1, OTUD3, OTUD5, and OTULIN (Table S1). Although the sequences of these enzymes vary greatly with only 13% identity at the most, the structures of the cores are similar. Furthermore, in each case positioning of the two catalytic residues (Cys-His) in these structures is highly similar (Figure 5—figure supplement 1a). Lem271-417 displays the highest similarity to OTUB1 (PDB: 4DDG) of humans among the structural homologs, with a Dali Z score of 11.0 and an RMSD of 2.32 Å over a region encompassing 143 amino acids in the core part of the structure (Figure 5—figure supplement 1b). Interestingly, when compared with these OTU-domain containing structures, the finger lobe of Lem271-417 (residues 108–221) appears as an insertion domain (residues 108–221), absent in structures of OTU DUBs of eukaryotic origin. Such an insertion domain, although considerably shorter, is present in Ceg23 (6KS5, residues 123-201aa), a K63-type specific OTU DUB from L. pneumophila identified in our earlier study (Figure 5—figure supplement 1c; Ma et al., 2020). Of note, the insertion domains between Lem27 and Ceg23 lack any similarity in their structures, which may account for their differences in substrate specificity.
 
 Inspection of the Lem271-417-Ub-PA complex reveals that the DUB domain makes extensive contacts with the distal ubiquitin moiety in the S1 site of Lem27 by multiple pairs of hydrogen bonds with a total buried conserved surface area of approximately 1900 Å2 (Figure 5b). A total of six distinct interaction sites can be identified in the interface between Lem271-417 and Ub (Figure 6). PDBsum analysis (Laskowski et al., 2018) reveals that the interactions include 30 hydrogen bonds, five salt bridges and 288 Van der Waals forces (Figure 6—figure supplement 1a). Site-1 is the catalytic pocket which recognizes the carboxyl-terminal tail of ubiquitin via several pairs of hydrogen bonds, including those formed between Lem27E244 and UbL71, Lem27S116,D148 and UbR72, Lem27E151,D148 and UbR42, Lem27E244 and UbL73, Lem27N302,N299 and UbR74, Lem27V303 and UbG75 (Figure 6b and Figure 6—figure supplement 1a). These interactions appear to stabilize the carboxyl tail of ubiquitin in an extended conformation so that the scissile peptide bond is placed next to the catalytic Cys. Site-2 is centered by Lem27Y149, which forms multiple hydrogen bonds with side chains of residues in ubiquitin, including UbF45 and UbK48. In addition, intramolecular hydrogen bonds are formed between the side chain of Ser115 of Lem27 and those of Phe45 and Ala46 (Figure 6c). Tyr149 is engaged in stacking interaction with the Ile44 of ubiquitin. The interactions in this patch are equivalent to the widely observed recognition of eukaryotic DUBs of the Ile44-patch of ubiquitin (Reyes-Turcu et al., 2009). Site-3 features hydrogen bonds between Lem27D209 and UbK48, and those among Lem27D209,R213,N210 and UbN60 (Figure 6d). Site-4 includes a pair of hydrogen bonds between Lem27D110 and UbH68 (Figure 6e). Site-5 involves in hydrogen bonding between Lem27R266,I267 and UbQ2, Lem27E268 and UbT14, Lem27R266 and UbE16, Lem27R261 and UbE64 (Figure 6f). Site-6 is mediated by hydrogen bonds formed among Lem27Q255,I275, L257 and UbK11,T12 (Figure 6g).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig6-v3.jpg)
+
+**Figure 6.:** (a) Ubiquitin shown in ribbon mode binds to Lem27 DUB (shown in surface mode) via the vinylthioether bond formed by Cys24 and Ub-PA. Analysis by the ConSurf Server (http://consurftest.tau.ac.il/) shows that the ubiquitin binding sites on the palm of hand-shaped Lem27 are highly conserved. (b) The carboxyl terminus of ubiquitin inserts into the catalytic cleft of Lem27 DUB, which is mainly stabilized by backbone interactions, Lem27 residues involved in interaction with ubiquitin are shown as sticks. (c) Tyr149 of Lem27 specifically binds Phe45 and the Lys48 backbone of ubiquitin. (d) A hydrogen bond net is formed by Lys148, Asn60 of ubiquitin and Arg213, Asp209 and Asn210 of Lem27. (e) The hydrogen formed by His68 of ubiquitin and Asp110 of ubiquitin. (f) The interaction between the β-hairpin of Lem27 and ubiquitin, Arg266, Ile267, Glu268 of β1 of Lem27 and Arg261 of β2 are shown as sticks, the residues in ubiquitin are also shown as sticks. (g) The interaction between the β core of ubiquitin and Lem27. (h) Several residues involved in binding ubiquitin are important for substrate cleavage by Lem27. Data shown were mean ± s.e. as the percentage of cleavage of K6 diubiquitin by Lem271-147 from three independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58114/elife-58114-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Each oval represents one residues in Lem27 (top) and ubiquitin (bottom), the contact site described in Figure 6 are also indicated. Color codes: positively charged residues (H, His; K, Lys; R, Arg) are colored in blue; negatively charged residues (D, Asp; E, Glu) are colored in red; the neutral residues (S, Ser; T, Thr; N, Asn; Q, Gln) are colored in green; aliphatic residues (A, Ala; V, Val; L, Leu; I, Ile; M, Met) are colored in grey; aromatic residues(F, Phe; Y, Tyr; W, Trp) are colored in magenta, Pro and Gly are colored in orange; cysteine is colored in yellow. (b) Mutagenesis analysis of Lem27 residues involved in interacting with ubiquitin. A series of 14 mutants in the indicated residues were constructed in Lem271-417. Each protein was purified and assayed for the ability to cleave K6-linked diubiquitin. Results shown were the percentage of the activity wild-type protein. Data shown are mean ±s.e. from three independent experiments.
+
 To evaluate the importance of these contact sites in substrate recognition and subsequent isopeptide bond cleavage, we created a total of 14 single substitution mutants in residues belonging to five of the six contact sites (Figure 6—figure supplement 1b). When diubiquitin linked at K6, one of the preferred substrates was used, only mutants N18A, D148A, Y149A, S243A E257A and I275A displayed significant reduction in activity (Figure 6—figure supplement 1b), and activity of other mutants remained comparable to that of wild-type protein (Figure 6—figure supplement 1b). Among these, when the molar ratio between substrate and enzyme was used as 1:1, mutants N18A, Y149A, S243A displayed less than 50% activity of the wild-type protein (Figure 6h and Figure 6—figure supplement 1b). As expected, simultaneous mutations in two independent sites, Tyr149 and Ser243 led to further loss of the activity (Figure 6h). Thus, Lem27 recognizes its substrate by recognizing multiple sites of the ubiquitin moiety and these sites function in concert to ensure proper recognition of its substrates.
 
-## Lem27 and the SidC family of E3 ubiquitin ligases function in concert to regulate protein ubiquitination on bacterial phagosomes
+### Lem27 and the SidC family of E3 ubiquitin ligases function in concert to regulate protein ubiquitination on bacterial phagosomes
 
 L. pneumophila is known to interfere with the function host proteins by effectors of opposite biochemical activity to impose temporal or spatial regulation of their activity (Qiu and Luo, 2017a). Among the many ubiquitin E3 ligases coded for by L. pneumophila, SidC and SdcA anchor on the LCV by binding to PI(4)P (Weber et al., 2006). A recent study revealed that the small GTPase Rab10 is important for maximal L. pneumophila intracellular replication (Jeng et al., 2019). Furthermore, Rab10 is ubiquitinated and recruited to the LCV by the SidC family of E3 ligases (Jeng et al., 2019). Because SidC and its paralog SdcA are known to catalyze the synthesis of several polyubiquitin chains, including K11-type (Hsu et al., 2014), which is one of the chain types preferentially cleaved by Lem27 (Figure 4), we examined the potential interplay between the SidC family E3 ligases and Lem27 in the regulation of protein ubiquitination on the LCV. In biochemical reactions, SidC appeared to mostly induce monoubiquitination of Rab10 and such modification can be effectively reversed by Lem27; this DUB also removed ubiquitin added to the E3 ligase itself by self-ubiquitination (Figure 7a). Consistent with results from the earlier study (Jeng et al., 2019), SidC induced ubiquitination of Rab10 by the L. pneumophila strain ∆sidC∆sdcA(pSidC), which expresses the E3 ligase from a multi-copy plasmid (Figure 7b upper panel). Importantly, infection with strain ∆sidC∆sdcA(pSidC+pLem27), which coexpresses Lem27 led to a clear reduction in ubiquitinated Rab10 (Figure 7b upper panel, lanes 3 and 4). The amounts of SidC translocated into host cells among these samples are similar (Figure 7b lower panel), indicating that such reduction is caused by Lem27. Interestingly, when LotA, another DUB from L. pneumophila (Kubori et al., 2018) was co-expressed with SidC in strain ∆sidC∆sdcA(pSidC), reduction in Rab10 ubiquitination did not occur (Figure 7b lower panel, lane 5). These results suggest that Lem27 but not LotA can counteract the activity of SidC during L. pneumophila infection. To further analyze the potential interplay between Lem27 and the SidC family E3 ligases during bacterial infection, we established a macrophage cell line that stably expresses mCherry-Rab10. Whereas the Rab1-mCherry signal was comparable in these cells (Figure 7c–e), we observed that approximately 60% of vacuoles containing wild-type bacteria recruited mCherry-Rab10 and such recruitment did not occur for vacuoles harboring a mutant defective for the Dot/Icm transporter or lacking sidC and sdcA (Figure 7c–e), which is in agreement with an earlier study (Jeng et al., 2019). Introduction of a plasmid expressing SidC into strain ∆sidC∆sdcA not only restored the association of mCherry-Rab10 with the LCV but also significantly increased the intensity of the fluorescence signals on bacterial phagosomes (Figure 7c,e–f, strain V). Importantly, although not able to eliminate mCherry-Rab10 from the LCV, coexpression of Lem27 in this bacterial strain significantly reduced the percentage of Rab10-positive vacuoles and the intensity of mCherry signals on LCVs (Figure 7e–f, strain VI). Similar to the results of ubiquitinated Rab10 in infected cells probed by immunoblotting, co-expression of LotA with SidC did not significantly reduce the rate Rab10-positive vacuoles or the intensity of Rab10 signals on the vacuoles (Figure 7e–f, strain VII). Taken together, these results suggest that deubiquitination of Rab10 by Lem27 decreased its association with the LCV and that this DUB specifically regulates the activity of SidC and SdcA during L. pneumophila infection.
 
@@ -107,13 +252,296 @@ The identification of additional DUBs from L. pneumophila clearly has added to o
 
 ## Materials and methods
 
-## Bacterial stains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (L. pneumophila Lp02)</td>
+      <td>Lp02∆lem27</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>A lem27 deletion mutant of strain Lp02</td>
+    </tr>
+    <tr>
+      <td>Bacterial strain, strain background (L. pneumophila Lp02)</td>
+      <td>Lp02∆lem27∆lotA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>A lem27 and lotA deletion mutant of strain Lp02</td>
+    </tr>
+    <tr>
+      <td>Bacterial strain, strain background (L. pneumophila Lp02)</td>
+      <td>Lp02∆sidC∆sdcA</td>
+      <td>Hsu et al., 2014</td>
+      <td>N/A</td>
+      <td>A sidC and sdcA deletion mutant of strain Lp02</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (L. pneumophila)</td>
+      <td>Lp02∆sidC∆sdcA(pZL199)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Strain Lp02∆sidC∆sdcA expressing SidC</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (L. pneumophila)</td>
+      <td>Lp02∆sidC∆sdcA(pZL199 and pLem27)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Strain Lp02∆sidC∆sdcA expressing SidC and Lem27</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (L. pneumophila)</td>
+      <td>Lp02∆sidC∆sdcA(pZL199 and pLotA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Strain Lp02∆sidC∆sdcA expressing SidC and LotA</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>Hela</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>RAW264.7</td>
+      <td>ATCC</td>
+      <td>TIB:71</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>U937</td>
+      <td>ATCC</td>
+      <td>CRL-1593.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mouse)</td>
+      <td>MLE</td>
+      <td>ATCC</td>
+      <td>CRL-2110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal ANTI-FLAG antibody M2</td>
+      <td>Sigma</td>
+      <td>Cat. #: F1804</td>
+      <td>WB (1: 3000) IF (1: 200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal ANTI-GFP antibody</td>
+      <td>Sigma</td>
+      <td>Cat. #: SAB5300167</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal ANTI-His antibody</td>
+      <td>Sigma</td>
+      <td>Cat. #: H1029</td>
+      <td>WB (1: 10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Anti-HA antibody</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc-7392</td>
+      <td>WB (1: 1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-ICDH antibody</td>
+      <td>Xu et al., 2010</td>
+      <td>N/A</td>
+      <td>WB (1: 20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Anti-tubulin antibody</td>
+      <td>DSHB</td>
+      <td>E7</td>
+      <td>WB (1: 10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-Lem27 antibodies</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-SidC antibodies</td>
+      <td>Luo and Isberg, 2004</td>
+      <td>N/A</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti- L. pneumophila antibodies</td>
+      <td>Xu et al., 2010</td>
+      <td>N/A</td>
+      <td>IF (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Anti-FKI antibody</td>
+      <td>Enzo Life Science</td>
+      <td>Prod. No. BML-PW8805</td>
+      <td>IF (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3XFlag Peptide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: F4799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quikchange kit</td>
+      <td>Agilent</td>
+      <td>Cat. #: 600670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TransStart Fast Pfu DNA Polymerase</td>
+      <td>TransGen, Beijing, China</td>
+      <td>Cat. #: AP221-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ubiquitin-Propargylamine(Ub-PA)</td>
+      <td>Boston Biochem</td>
+      <td>Cat. #: U-214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AQUApure Di-Ub Chains (K6-linked) Protein, CF</td>
+      <td>Boston Biochem</td>
+      <td>Cat. #: UC-11B-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AQUApure Di-Ub Chains (K11-linked) Protein, CF</td>
+      <td>Boston Biochem</td>
+      <td>Cat. #: UC-40B-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human Di-Ub/Ub2 WT Chains (K27-linked), CF</td>
+      <td>Boston Biochem</td>
+      <td>Cat. #: UC-61B-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AQUApure Di-Ub Chains (K29-linked) Protein, CF</td>
+      <td>Boston Biochem</td>
+      <td>Cat. #: UC-81B-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AQUApure Di-Ub Chains (K33-linked) Protein, CF</td>
+      <td>Boston Biochem</td>
+      <td>Cat. #: UC-101B-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AQUApure Di-Ub Chains (K48-linked) Protein, CF</td>
+      <td>Boston Biochem</td>
+      <td>Cat. #: UC-200B-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AQUApure Di-Ub Chains (K63-linked) Protein, CF</td>
+      <td>Boston Biochem</td>
+      <td>Cat. #: UC-300B-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antibiotic G418</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: G8168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HHpred</td>
+      <td>Soding et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS3 Extended</td>
+      <td>Adobe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad</td>
+      <td>graphpad.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-HA Magnetic Beads</td>
+      <td>MedChemExpress (MCE)</td>
+      <td>Cat. #: HY-K0201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-flag M2 affinity gel</td>
+      <td>Sigma</td>
+      <td>Cat. #: A2220</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial stains and plasmids
 
 Escherichia coli strains, plasmids and primers used in this study are listed in Table S2. Derivatives of E. coli strains DH5α, DH5αλπ or XL1blue were used for molecular cloning. E. coli was grown in LB medium at 37°C. When needed, antibiotics were used at the following concentrations: Ampicillin (100 μg/mL), kanamycin (30 μg/mL), streptomycin (100 μg/mL). Unless otherwise indicated, strain BL21(DE3) was used for the production of recombinant proteins expressed from the pET series of plasmids (Novagen Sigma-Aldrich). All L. pneumophila strains were derived from the Philadelphia one strain Lp02 and the dotA- mutant strain Lp03 (Berger and Isberg, 1993). L. pneumophila was cultured in liquid N-(2-acetamido)−2-aminoethanesulfonic acid (ACES) buffered yeast extract medium (AYE) or on solid charcoal buffered yeast extract medium (CYE). When necessary, thymidine was added at 0.2 g/mL. Plasmids derived from pZL507 (Xu et al., 2010) were maintained in L. pneumophila by thymidine autotrophic. Gene deletion in L. pneumophila was carried out as described previously (Liu and Luo, 2007). Restriction enzymes and T4 DNA ligase were purchased from NEB. Polymerase chain reaction (PCR) amplification was performed using TransStart Fast Pfu DNA polymerase (AP221-03, TransGen, Beijing, China).
 
 Site-directed mutagenesis was performed by the Quikchange kit (Agilent) with primer pairs designed to introduce the desired mutations. The sequences of primers and plasmids made in this study are listed in Table S2. All substitution mutants were verified by double strand DNA sequencing.
 
-## Protein expression and purification
+### Protein expression and purification
 
 E. coli strains for protein production were inoculated in LB medium containing the appropriate antibiotics and grown to saturation at 37°C in a shaker (250 rpm) overnight. The culture was diluted at 1:50 in fresh LB and isopropyl β-D-1-thiogalactopyranoside (IPTG) was added to a final concentration of 0.2 mM when OD600 of the culture reached 0.6. The induction was allowed to proceed in a shaker (180 rpm/min) at 16°C for 16–18 hr. Bacterial cells were then harvested by centrifugation at 4000xg for 15 min.
 
@@ -123,15 +551,15 @@ To purify protein for structural determination, DNA fragments encoding full-leng
 
 Selenomethionine-labeled protein was expressed in M9 medium (M9 salts supplemented with 2 mM MgSO4, 0.1 mM CaCl2, 0.5% w/v glucose, 2 mg/L biotin, 2 mg/L thiamine, 0.03 mg/L FeSO4). At an OD600 of 0.5, 100 mg/mL of phenylalanine, lysine, and threonine, 50 mg/mL of isoleucine, leucine, and valine, as well as 80 mg/mL of selenomethionine (Chemie Brunschwig) were added as solid powder to the cultures, which were further incubated for 30 min. Expression was then induced with 0.2 mM IPTG and cells were further incubated at 16°C on a shaker for 16 hr. Cells were harvested at 5000xg for 15 min, 4°C and pellets were resuspended in the lysis buffer (50 mM Tris pH 8.0, 150 mM NaCl and 5 mM β-mercaptoethanol) and was purified as described above.
 
-## Detection of DUB activity using a suicide probe
+### Detection of DUB activity using a suicide probe
 
 1 μM Ub-PA and 1 μM His6-Lem27 or His6-Lem27C24A was mixed in 20 μL DUB buffer (50 mM Tris-HCl pH 7.5, 50 mM NaCl, 2 mM DTT) and incubated at 23°C for 1 hr. Reaction was terminated by 5 μL 5 × SDS loading buffer. Samples were heated at 95°C for 5 min prior to being resolved by SDS-PAGE and the proteins were detected by silver or Coomassie brilliant blue staining.
 
-## Cleavage of diubiquitin
+### Cleavage of diubiquitin
 
 1.5 μM of linear diubiquitin or diubiquitin (Boston Biochem) linked by each of the seven lysine residues in ubiquitin was mixed with 1.0 μM purified proteins in 20 μL DUB buffer (500 mM Tris-HCl pH 7.5, 1 M NaCl, 10 mM DTT) and incubated at 37°C for 10 min or 2 hr. The reactions were terminated by 5 × SDS loading buffer and samples were boiled for 5 min prior to being separated by SDS-PAGE. Proteins were detected by Coomassie brilliant blue staining or by immunoblotting.
 
-## Cell cultures and transfection
+### Cell cultures and transfection
 
 HEK293T and Hela cells were grown in Dulbecco’s modified minimum Eagle’s medium (DMEM) supplemented with 10% fatal bovine serum (FBS). RAW264.7 and U937 cells were grown in RPMI 1640 medium containing 10% FBS. The medium was supplemented with 100 μg/mL penicillin and 10 μg/mL streptomycin when necessary. The cells were grown at 37°C with 5% CO2. U937 cells were differentiated into macrophages with phorbol-12-myristate-13-acetate (PMA) as described earlier (Tilney et al., 2001). All cell lines were from ATCC and were authenticated by short tandem repeat (STR) analysis and were free of mycoplasma contamination as examined by a PCR-based test (Sigma, cat# MP0025).
 
@@ -139,15 +567,15 @@ To determine the DUB activity in cells, a construct for expressing Flag-Ub (She
 
 To establish a cell line stably expressing mCherry-Rab10, we first replaced the gfp gene in peGFPC1 (Clontech) with a DNA fragment coding for mCherry-Rab10 and the resulting plasmid pmCherry-Rab10 was transfected into MLE cells (ATCC) grown to 20–30% confluence in a 24-well plate. 24 hr after transfection, medium containing 800 μg/mL G418 was used to select for cells harboring integrated pmCherry-Rab10. As a control, the same medium was added to untransfected cells seeded in a 24-well plate. The selective medium containing G418 was replaced every 2–3 days and the cells were visually inspected for toxicity. After one week, cell death began to occur in untransfected samples, the concentration of G418 in medium for transfected samples was switched to 200 μg/mL and the cells were allowed to grow for 2 days. To isolate clones, cells diluted at a density of 1 cell per 100 µL were distributed in 96-well plates and wells that contained only 1 cell were identified under a fluorescence microscope. Several such clones were saved and one was expanded in petri dishes and used for subsequent experiments.
 
-## Immunoprecipitation, antibodies, and immunoblotting
+### Immunoprecipitation, antibodies, and immunoblotting
 
 HEK293T cells were resuspended with 1 ml NP40 lysis buffer for 10 min on ice, and the lysates were then centrifugated at 12,000xg at 4°C for 10 min. Beads coated with Flag- or HA-specific antibody were added to cleared lysates and incubated on a rotatory shaker for 8 hr at 4°C. After washed three times with the NP40 lysis buffer, aliquots of beads were mixed with the purified Lem27 or Lem27C24A in 20 μL DUB buffer at 37°C. At the indicated time points, reactions were stopped by adding 5 μL 5 × SDS loading buffer and were heated at 95°C for 5 min. After SDS-PAGE, proteins were transferred onto nitrocellulose membranes (Pall Life Sciences) for immunoblotting after being blocked in 5% nonfat milk in PBST buffer for 1 hr. Primary antibodies used in this study and their dilutions are as follows: α-Flag(Sigma, Cat# F1804, 1: 3000), α-GFP(Sigma, cat# G7781, 1:5000), α-His(Sigma, cat# H1029, 1: 10,000), α-HA (Santa Cruz, cat# sc-7392, 1: 1000), α-ICDH (1: 20,000) (Xu et al., 2010), α-tubulin (DSHB, E7, 1: 10,000). Antibodies specific for Lem27 were generated by immunization of rabbits with purified His6-Lem27 using a standard procedure (AbMax Biotechnology Co., LTD, Beijing, China) and were used at 1:500. Washed membranes were incubated with appropriate IRDye secondary antibodies and signals were detected and analyzed by an Odyssey CLx system (LI-COR).
 
-## In vitro ubiquitination assays
+### In vitro ubiquitination assays
 
 To determine SidC-induced ubiquitination of Rab10, HEK293T cells transfected to express 4xFlag-Rab10 for 24 hr were lysed with the NP40 lysis buffer and 4xFlag-Rab10 was purified by immunoprecipitation with agarose beads coated with Flag-specific antibody as described above, bound protein was eluted with a ubiquitination buffer (Hsu et al., 2014) containing 100 μg/ml 3xFlag peptide (Sigma). Ubiquitination reactions were established by adding 1.0 μM purified His6-SidC, 2.5 μM ubiquitin and 0.5 mM ATP in 100 μL reactions. The reactions were allowed to proceed for 2 hr at 37°C before the addition of purified 1.0 μM Lem27 or Lem27C27A. After incubation at 37°C for an additional 2 hr. Reactions were terminated by adding 6x SDS sample buffer. After denaturing the proteins by boiling for 5 min, samples were resolved by SDS-PAGE, transferred to nitrocellulose membranes and probed with appropriate antibodies as described above.
 
-## Bacterial infections, immunostaining and image analysis
+### Bacterial infections, immunostaining and image analysis
 
 For infection experiments, L. pneumophila strains grown to the post-exponential growth phase (OD600 = 3.3–3.8) were used for infection at the indicated MOIs. For intracellular growth assays in RAW264.7 cells or in D. discoideum, infections were performed at an MOI of 0.05. Extracellular bacteria were removed by washing infected samples with warm PBS 2 hr after adding the bacteria. At the indicated time points, cells were lysed with 0.2% saponin and appropriate dilutions of the lysates were plated on CYE plates, bacteria colonies were counted after 5 day incubation at 37°C. To determine the impact of the Lem27 on SidC-induced Rab10 ubiquitination in infected cells, HEK293T cells transfected to express 4xFlag-Rab10 and the FcγII receptor (Kagan and Roy, 2002) for 24 hr were infected with the indicated bacterial strains opsonized with Legionella-specific antibodies as described earlier (Qiu et al., 2016).
 
@@ -155,16 +583,16 @@ For immunostaining experiments, macrophages differentiated from U937 cells with 
 
 To quantitate fluorescence signals, images of randomly chosen fields acquired using an Olympus IX-83 with identical parameters were analyzed using Photoshop. To determine the average signal intensity of a given fluorescence signal, at least 150 randomly chosen cells were defined and the signal intensity was determined by measuring the gray value. Average intensity per cell was calculated by dividing the sum of the gray value by the number of cells analyzed. For signal intensity of a given fluorescence signal associated with bacterial phagosomes, an identical rectangular area with a fixed aspect ratio was used to measure signal. In each case, at least 150 vacuoles were analyzed per sample. All image analyses were performed blind by coding the samples from the beginning of the experiments.
 
-## Protein crystallization and data collection
+### Protein crystallization and data collection
 
 To obtain Lem27-Ub-PA, 5 mg Lem271-417 was incubated with ubiquitin-propargylamide (Ub-PA) (UbiQ) at a 1:1.2 molar ratio at 4°C for 30 min. The mixture was loaded onto a Superdex 200 increase column (GE Healthcare) to purify the Lem271-417-Ub-PA conjugate, which was then concentrated using an Amicon Ultra 30 K centrifugal filter (4,000 g, 4°C) to approximately 18 mg/mL.
 
 After screening Lem27 and multiple fragments of the protein for crystallization, only the Lem271-417-Ub-PA conjugate was found to crystallize. For crystallization, Lem271-417-Ub-PA was mixed with the reservoir solution at an equal volume and crystallized by the sitting drop vapor diffusion method at 16°C. Crystals of the Lem271-417-Ub-PA conjugate were obtained within three days in the condition containing 100 mM Magnesium formate, 15% (w/v) PEG3,350. We then used SeMet Lem271-417-Ub-PA for optimization. After extensive attempts, diffraction quality crystals of Lem271-417-Ub-PA were grown in the presence of 100 mM Magnesium formate, 5% (w/v) PEG3,350. Crystals were harvested with 20% (v/v) ethylene glycol as a cryoprotectant before flash freezing them in liquid nitrogen.
 
-## Structure determination and refinement
+### Structure determination and refinement
 
 Diffraction data were collected at the Shanghai Synchrotron Radiation Facility (SSRF) BL-17U1 and a single-wavelength anomalous diffraction (SAD) dataset was obtained and the data were processed with the HKL-2000 package (Otwinowski and Minor, 1997). Autosol program of PHENIX package (Adams et al., 2010) was used for SAD phasing, followed by iterative manual building using Coot (Emsley and Cowtan, 2004) and refinement using PHENIX. The crystals belong to space group P 1 21one with unit-cell dimensions of a = 66.75 Å, b = 118.95 Å, and c = 84.28 Å. The final structure was refined at 2.43 Å resolution (Rfactor and Rfree of 21.43 and 25.52%, respective) (Table 1). Structure quality was analyzed during PHENIX refinements and later validated by the PDB validation server. Molecular graphics were generated using PyMol (Schrödinger, LLC).
 
-## Data quantitation, statistical analyses
+### Data quantitation, statistical analyses
 
 Student’s t-test was used to compare the mean levels between two groups each with at least three independent samples.

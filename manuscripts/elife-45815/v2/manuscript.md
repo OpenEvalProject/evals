@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.45815.001 During the asymmetric divisions of Drosophila neuroblasts, the Par polarity complex cycles between the cytoplasm and an apical cortical domain that restricts differentiation factors to the basal cortex. We used rapid imaging of the full cell volume to uncover the dynamic steps that underlie transitions between neuroblast polarity states. Initially, the Par proteins aPKC and Bazooka form discrete foci at the apical cortex. Foci grow into patches that together comprise a discontinuous, unorganized structure. Coordinated cortical flows that begin near metaphase and are dependent on the actin cytoskeleton rapidly transform the patches into a highly organized apical cap. At anaphase onset, the cap disassembles as the cortical flow reverses direction toward the emerging cleavage furrow. Following division, cortical patches dissipate into the cytoplasm allowing the neuroblast polarity cycle to begin again. Our work demonstrates how neuroblasts use asymmetric recruitment and cortical flows to dynamically polarize during asymmetric division cycles.
+During the asymmetric divisions of Drosophila neuroblasts, the Par polarity complex cycles between the cytoplasm and an apical cortical domain that restricts differentiation factors to the basal cortex. We used rapid imaging of the full cell volume to uncover the dynamic steps that underlie transitions between neuroblast polarity states. Initially, the Par proteins aPKC and Bazooka form discrete foci at the apical cortex. Foci grow into patches that together comprise a discontinuous, unorganized structure. Coordinated cortical flows that begin near metaphase and are dependent on the actin cytoskeleton rapidly transform the patches into a highly organized apical cap. At anaphase onset, the cap disassembles as the cortical flow reverses direction toward the emerging cleavage furrow. Following division, cortical patches dissipate into the cytoplasm allowing the neuroblast polarity cycle to begin again. Our work demonstrates how neuroblasts use asymmetric recruitment and cortical flows to dynamically polarize during asymmetric division cycles.
 
 ## Introduction
 
@@ -23,29 +23,37 @@ Neuroblasts begin asymmetric division with aPKC in the cytoplasm (Hannaford et a
 
 Because neuroblasts repeatedly cycle between polarized (apical aPKC at metaphase) and unpolarized (interphase cytoplasmic aPKC) states, depolarization is a necessary step in the neuroblast polarity cycle (Figure 1A). However, little is known about the events that follow metaphase that regenerate the unpolarized state. These events may be especially important for asymmetric division because the localization of aPKC at metaphase is distant from the site of cleavage furrow formation in anaphase, the exclusion point for basal fate determinants. Understanding how metaphase polarity is disassembled may provide insight into the mechanism by which determinants are prevented from occupying the apical cortex that becomes the self-renewed neuroblast following division.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/45815/elife-45815-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the neuroblast polarity cycle. Neuroblasts transition between unpolarized, cytoplasmic aPKC in interphase, to an apical cortical domain tightly focused around the apical pole in metaphase, the canonical neuroblast polarity state, during repeated asymmetric divisions. (B) Frames from Figure 1—video 1 showing 1.5 µm maximum intensity projections of aPKC-GFP signal along the cortical edge (‘cortical’; top row) and center (‘center’; rows 2–4) of a neuroblast. A maximum intensity project of RFP-Histone H2A signal through the center of the cell, along with a merge of GFP and RFP central projections, are also shown. The outline of the neuroblast is highlighted with a dashed circle in the first column. Time is shown relative to nuclear envelope breakdown. (C) Timeline of the neuroblast polarity cycle with cell cycle hallmarks (NEB, nuclear envelope breakdown; meta, metaphase; ana, anaphase; telo, telophase) marked above the timeline and polarization events below.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45815/elife-45815-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Localization of aPKC in fixed neuroblasts. Cortical patches of aPKC are present in 12 µm maximum intensity projections of three different wild type neuroblasts stained with an anti-aPKC antibody. Cell cycle phases are from DAPI staining (early prophase, late prophase, metaphase; not shown). Scale bar is 5 µm.
+
 We have investigated how neuroblasts transition between polarity states – the neuroblast polarity cycle – to gain insight into the mechanisms by which metaphase polarity is formed and disassembled. We have sought to determine whether neuroblast polarity results from direct recruitment from the cytoplasm, or if the process requires additional steps. Likewise, does depolarization occur simply from direct exchange from the apical cortex into the cytoplasm? Furthermore, we have examined the role of the actin cytoskeleton in neuroblast polarization and depolarization. The dynamic steps in neuroblast polarization that we have discovered provide further insight into the mechanisms underlying animal cell polarity and a new framework for using the neuroblast as a polarity model system.
 
 ## Results
 
-## The neuroblast polarity cycle is a dynamic, multistep process
+### The neuroblast polarity cycle is a dynamic, multistep process
 
 We investigated the divisions of neuroblasts from Drosophila larval brain lobes (Homem and Knoblich, 2012), first focusing on a GFP fusion of aPKC (aPKC-GFP) (Besson et al., 2015), as its catalytic activity is the direct output of the Par complex (Atwood and Prehoda, 2009; Bailey and Prehoda, 2015). We simultaneously imaged an RFP fusion of Histone H2A (RFP-H2A) to assess the cell cycle stage. To identify as much of the dynamics of the neuroblast polarization process as possible, we imaged the process every 20 s or faster, the maximum acquisition frequency that yielded sufficient signal and little photobleaching. Furthermore, we collected optical sections throughout the full volume of the cell to visualize sections in the center along with those at the cortical edge and to allow for full three-dimensional projections at each time point. These data reveal a highly dynamic process that begins with aPKC in the cytoplasm as cells entered mitosis (Figure 1B and C; Figure 1—video 1). Near the time when chromosome condensation became apparent, discrete aPKC foci appeared on the cortex, preferentially in apical hemisphere. We also observed aPKC foci in three dimensional projections of fixed, wild type prophase neuroblasts using an anti-aPKC antibody (Figure 1—figure supplement 1). Near metaphase, the aPKC cortical foci, which by then had grown into larger patches, moved toward the apical pole in a concerted fashion, coalescing into an ‘apical cap’, the metaphase neuroblast polarity state. The aPKC apical cap remained until shortly after anaphase onset at which point the cap disassembled by rapid spreading of cortical patches toward the contracting cleavage furrow. No aPKC signal was detected on the cortex of the basal ganglion mother cell (Figure 1B; Figure 1—video 1). In addition, the cortical aPKC in the newborn neuroblast daughter rapidly dissipated into the cytoplasm at the end of mitosis. The overall polarity cycle, from the initial appearance of cortical foci to dissipation occurred in 28.8 ± 8.2 min (n = 20 neuroblasts from four larvae).
 
 These data reveal previously unrecognized complexity in neuroblast polarization and depolarization processes. We speculate that previous studies failed to observe these dynamics because of their transient nature, and furthermore, the discontinuous nature of the cortical aPKC signal is less visible in central optical sections compared to those along the cortical edge (Figure 1B; Figure 1—video 1). In the following sections we examine the neuroblast polarity cycle in more detail.
 
-## Asymmetric cortical recruitment yields a discontinuous, unorganized structure
+### Asymmetric cortical recruitment yields a discontinuous, unorganized structure
 
 High frame rate projections of the full neuroblast volume revealed that the initial step in aPKC polarization is the formation of discontinuous patches on the apical cortex (Figure 1B; Figure 1—video 1; Figure 2A). Apical targeting begins in early prophase and ends shortly before nuclear envelope breakdown (NEB; as assessed by the appearance of aPKC-GFP in the nucleus) with an overall time of 11.1 ± 6.2 min (n = 20). We observed the first small cortical foci in early prophase when chromosome condensation became apparent. Focus formation was heavily biased toward the apical cortical hemisphere (defined by the hemisphere opposite where the smaller ganglion mother cell eventually formed; Figure 2B). Over time the foci grew into patches, both by fusing with other foci and by the recruitment of additional aPKC from the cytoplasm (Figure 2A). Patches generally remained near the location where they initially appeared, undergoing unbiased diffusive movements (Figure 2A,C,D). Although cortical targeting by focus formation occurred predominantly in the apical hemisphere, occasionally we observed foci in the basal hemisphere. However, these foci either dissipated back into the cytoplasm or became part of the apical cap (see below; Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45815/elife-45815-fig2-v2.jpg)
 
-**Figure 2.:** (A) Example of aPKC-GFP cortical patches during growth and coalescence phases. Scale bar 2 µm. (B) The number of aPKC-GFP cortical patches in the apical and basal hemispheres immediately before cortical flow begins. Each point represents a distinct neuroblast (taken from four larvae). Bars represent one standard deviation from the mean. Data are included in Figure 2—source data 1. (C) Example patch trajectories during coalescence from particle tracking. Cell outline is shown in light blue. (D) Mean square displacement of several different patches identified by particle tracking as a function of time. (E) Frames (3 µm maximum intensity projection) from a time series showing the example fate of an aPKC-GFP cortical focus (dashed circle) that appeared in the basal cortical hemisphere and dissipated before NEB. Scale bar 2 µm.  10.7554/eLife.45815.006Figure 2—source data 1.
+**Figure 2.:** (A) Example of aPKC-GFP cortical patches during growth and coalescence phases. Scale bar 2 µm. (B) The number of aPKC-GFP cortical patches in the apical and basal hemispheres immediately before cortical flow begins. Each point represents a distinct neuroblast (taken from four larvae). Bars represent one standard deviation from the mean. Data are included in Figure 2—source data 1. (C) Example patch trajectories during coalescence from particle tracking. Cell outline is shown in light blue. (D) Mean square displacement of several different patches identified by particle tracking as a function of time. (E) Frames (3 µm maximum intensity projection) from a time series showing the example fate of an aPKC-GFP cortical focus (dashed circle) that appeared in the basal cortical hemisphere and dissipated before NEB. Scale bar 2 µm.
 
-## Coordinated flow of cortical aPKC patches leads to formation of a metaphase apical cap
+### Coordinated flow of cortical aPKC patches leads to formation of a metaphase apical cap
 
 The asymmetric cortical recruitment that occurred in prophase yielded a discontinuous, unorganized apical structure that occupied a large portion of the apical cortical hemisphere. Approximately 90 s before NEB, the aPKC patches on the apical cortex, which had been undergoing uncoordinated, seemingly random movements along the cortex, began to move in a highly coordinated fashion toward the apical pole (Figures 1B and 2A,C; Figure 1—video 1). The coordinated movements transformed the broad, discontinuous network of patches into a continuous cap tightly focused around the apical pole. The cap formation process lasted approximately four minutes (3.9 ± 1.1 min; n = 20), measured from the point at which coordinated movement begins to when the continuous apical cap is formed (Figures 1B and 2C,D) with patches traveling a mean distance of 4.1 ± 1.8 µm at a mean velocity of 0.02 ± 0.01 µm/s (n = 12). We term the patch movements ‘cortical flow’ because they are coordinated, directional, and they occur at the cell periphery, which are characteristics of the motions that take place in the early worm embryo following fertilization when symmetrically cortical aPKC moves toward the anterior cortex (Munro et al., 2004; Wang et al., 2017). Moreover, as described below, these movements require the actin cytoskeleton. Once the cap is formed it is very stable; we observed little change in aPKC localization over an approximately four-minute period that extended from shortly after nuclear envelope breakdown through metaphase (3.9 ± 0.9 min; n = 20).
 
-## Apical cap disassembly during anaphase causes aPKC spreading to the cleavage furrow
+### Apical cap disassembly during anaphase causes aPKC spreading to the cleavage furrow
 
 Shortly after the onset of anaphase, the apical cap underwent a dramatic disassembly event that coincided with the changes in cellular morphology that occur at the end of mitosis (Figure 1B,C; Figure 1—video 1) (Connell et al., 2011; Hickson et al., 2006). The apical cap, which up until this point had remained uniform, began to break apart into individual patches, similar in appearance to those observed before cap formation (Figure 1B and Figure 3; Figure 1—video 1). Cap disassembly coincided with the extension of the apical cortex that occurs during late anaphase and was characterized by spreading of the patches along the cortex toward the site of cleavage furrow formation, with the overall process lasting 3.9 ± 1.0 min (n = 20) with patches traveling a mean distance of 6.5 ± 3.3 µm at a mean velocity of 0.04 ± 0.03 µm/s (n = 12). The spreading process appeared similar to the cortical flows that occur during cap formation, although in the basal rather than apical direction. Moreover, the cortex of the budding basal daughter cell did not contain any detectable cortical aPKC signal (Figure 3A). At the end of telophase, the patches that remained on the cortex of the apical daughter cell (which retains the neuroblast fate) rapidly decreased in intensity until no detectable cortical signal remained, regenerating the cytoplasmic aPKC state present at the start of the neuroblast polarity cycle (Figure 3B; Figure 1—video 1).
 
@@ -53,11 +61,19 @@ Shortly after the onset of anaphase, the apical cap underwent a dramatic disasse
 
 **Figure 3.:** (A) Spreading of aPKC-GFP during cap disassembly and patch dissipation. A 6 µm maximum intensity projection (one hemisphere along the apical-basal axis) is shown in each panel. The time is relative to nuclear envelope breakdown. The position of the budding GMC is shown by a dotted circle as identified from the Histone H2A channel (not shown). Scale bar 5 µm. (B) Cortical and cytoplasmic intensity of aPKC-GFP in the apical and basal hemispheres during cap disassembly measured from four neuroblasts (error bars represent one standard deviation). Time is shown relative to NEB. (C) Example patch trajectories during cap disassembly from particle tracking. Cell outline is shown in light blue. (D) Particle tracking of independent patches reveals their mean square displacement as a function of time (relative to nuclear envelope breakdown).
 
-## Apical retention and cortical flows are mediated by the actin cytoskeleton
+### Apical retention and cortical flows are mediated by the actin cytoskeleton
 
 The dynamic movements of aPKC during the neuroblast polarization and depolarization led us to suspect that the cortical actin cytoskeleton could play important roles in both processes. To investigate whether F-actin participates in the neuroblast polarity cycle, we exposed neuroblasts in various stages of the polarity cycle to the actin depolymerizing drug Latrunculin A (LatA) and imaged the resulting effects on aPKC dynamics.
 
 In neuroblasts treated with LatA during interphase, aPKC appeared in the apical region in early prophase, but in a manner fundamentally different from untreated neuroblasts. In untreated neuroblasts, apical aPKC recruitment occurred primarily via foci appearance and patch growth (Figure 1; Figure 1—video 1) but foci appearance and patch growth in treated neuroblasts were significantly less frequent (Figure 4A and Figure 4—figure supplement 1; Figure 4—video 1). Furthermore, the foci that did appear often failed to grow into larger patches compared to foci from untreated neuroblasts (Figure 4—figure supplement 1). Following NEB, cortical aPKC rapidly spread into the basal region before metaphase, a phenomenon that has been previously observed (Hannaford et al., 2018), and failed to undergo coalescence.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45815/elife-45815-fig4-v2.jpg)
+
+**Figure 4.:** (A) Effect of treating a neuroblast with LatA beginning in interphase (24m20s prior to NEB) on aPKC localization dynamics. Frames from Figure 4—video 1 are shown as 4 µm maximum intensity projections along the cortical edge and center of aPKC-GFP taken from Figure 4—video 1. The cortical projections from an untreated neuroblast at equivalent time points are shown for reference in the top row. The neuroblast is highlighted by a dashed circle in the first column. Time is shown relative to nuclear envelope breakdown (NEB). Scale bar 5 µm. (B) Effect of treating a neuroblast with LatA following the initial cortical recruitment events (7m20s prior to NEB) on aPKC localization dynamics. Frames from Figure 4—video 2 are shown as in panel A. (C) Effect of treating a neuroblast with LatA following cap coalescence (4 m prior to NEB) on aPKC localization dynamics. Frames from Figure 4—video 3 are shown as in panel A.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45815/elife-45815-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Effect of treating an interphase neuroblast with LatA on aPKC localization. Normalized apical and basal cortical intensity is shown from Figure 4—video 1. (A’) The frequency of neuroblasts treated with LatA in interphase that exhibit any aPKC recruitment to the cortex (‘Recruitment’), growth of foci into patches (‘Patch Growth’), coalescence of patches into an apical cap (‘Coalescence’), and cap disassembly, are shown. Frequency is relative to wild type neuroblasts (wild type neuroblasts exhibit each effect with a frequency of 1.0; n = 20). (B) Effect of treating a neuroblast with LatA following the initial cortical recruitment events on normalized apical and basal cortical aPKC intensity (from Figure 4—video 2). (B’) The frequency of neuroblasts treated with LatA following the initial cortical recruitment events that exhibit characteristics of the neuroblast polarity cycle, as in panel A’. (C) Effect of treating a neuroblast with LatA near cap coalescence on normalized apical and basal cortical aPKC intensity (from Figure 4—video 3). (C’) The frequency of neuroblasts treated with LatA near cap coalescence that exhibit characteristics of the neuroblast polarity cycle, as in panel A’ (‘Recruitment’ and ‘Patch Growth’ phases are not shown because they are completed by metaphase). (D) Number of apical aPKC patches in wild type neuroblasts and those treated with LatA either in interphase or prophase. Error bars represent one standard deviation from the mean. Statistical significance was calculated using a two-tailed t-test. Data are included in Figure 4—figure supplement 1—source data 1.
 
 LatA treatment of prophase neuroblasts allowed us to examine the effect of loss of the actin cytoskeleton when apical aPKC patches are present on the apical cortex. Once treated with LatA, apical patches failed to undergo further growth and prophase treated neuroblasts nearly always failed to undergo coalescence into an apical cap (Figure 4B and Figure 4—figure supplement 1; Figure 4—video 2). Similar to interphase treated neuroblasts, aPKC polarity was lost by cortical spreading into the basal domain before metaphase. Interestingly, cortical patches present at the apical cortex before treatment ceased movement following LatA addition (Figure 4B,C; Figure 4—videos 1 and 2) and did not spread into the basal domain, indicating that aPKC depolarization results from spreading of non-patch associated protein.
 
@@ -65,13 +81,25 @@ Neuroblasts treated with LatA near the time at which aPKC patches coalesce into 
 
 Together, these data indicate that the actin cytoskeleton participates in multiple phases of the neuroblast polarity cycle. First, while the actin cytoskeleton is not required for asymmetric recruitment to the apical cortex, it does play a key role in the discontinuous structure of foci and apical patches that normally form in prophase. Furthermore, the actin cytoskeleton is also required to retain aPKC at the apical cortex as LatA treatment causes aPKC to rapidly spread onto the basal cortex before metaphase, although aPKC that had been incorporated into patches did not appear to migrate into the basal domain (Figure 4B; Figure 4—video 2). Finally, the rapid dynamics of the apical cap – both its formation via coalescence and its disassembly during anaphase – depend nearly completely on the presence of the actin cytoskeleton.
 
-## Actin-dependent cortical dynamics of the Par complex regulator Bazooka
+### Actin-dependent cortical dynamics of the Par complex regulator Bazooka
 
 The polarization of aPKC requires the activity of Bazooka (Baz; aka Par-3) (Joberty et al., 2000; Rolls et al., 2003; Tabuse et al., 1998; Wodarz et al., 2000). We analyzed the dynamics of a Baz GFP fusion from a gene trap line (Buszczak et al., 2007) to determine if its polarization utilizes similar steps to those we identified for aPKC. We were not able to obtain adequate brightness and photostability with ‘red’ fluorescent protein variants at the frame rates required to observe aPKC dynamics (except for highly abundant proteins like Histone H2A), precluding simultaneous imaging of both proteins. Imaging of neuroblast asymmetric divisions monitoring Baz-GFP revealed that Baz undergoes dynamics that resemble those of aPKC, but with some noticeable differences (Figure 5A,B; Figure 5—video 1). Like aPKC, Baz appears to form a discontinuous apical cortical structure during prophase that coalesces to form an apical cap at metaphase with subsequent disassembly. Based on maximum intensity projections of fixed preparations stained with anti-Baz and anti-aPKC antibodies, patches of the two proteins colocalize at early phases of mitosis, although some Baz patches do not have a corresponding aPKC signal (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/45815/elife-45815-fig5-v2.jpg)
+
+**Figure 5.:** (A) Frames from Figure 5—video 1 showing 4 µm maximum intensity projections through the cortical edge and center of a larval brain neuroblast expressing Baz-GFP. A central projection of Histone H2A fusion to RFP is shown in the bottom row. The time relative to nuclear envelope breakdown (‘NEB’) is shown. Scale bar 5 µm. (B) Normalized apical and basal cortical intensity (see Materials and methods) of Baz-GFP as a function of time relative to NEB from the divisions of three different neuroblasts with the mean and standard deviation of the signal shown. (C) Localization of Baz and aPKC in fixed neuroblasts at early stages of mitosis (pH3 = phospho histone H3).
 
 While Baz’s dynamics closely resembled aPKC’s, we noticed one significant difference. At mitotic entry aPKC’s localization is exclusively cytoplasmic, and while Baz is also found in the cytoplasm during this phase of the cell cycle, we also observed a significant number of cortical puncta (Figure 5A; Figure 5—video 1). Baz puncta were relatively stationary and many, especially those at the apical cortex, disappeared near mitotic entry. Those with longer lifetimes that persisted into mitosis did not participate in cap coalescence. Shortly after cytokinesis, new puncta often appeared.
 
 We also examined the effect of LatA induced depolymerization of the actin cytoskeleton on Baz’s dynamics. In cells treated before metaphase, the appearance of Baz apical patches was reduced following treatment and those that did appear failed to coalesce in most cases, similar to LatA’s effect on aPKC dynamics (Figure 6A,B and Figure 6—figure supplement 1; Figure 6—videos 1 and 2). However, while LatA treatment induced spreading of apically enriched aPKC onto the basal cortex, apically recruited Baz remained predominantly in the apical hemisphere following treatment. For neuroblasts treated with LatA near the time of apical cap formation, we observed little Baz cap disassembly, similar to the effect on aPKC’s cap (Figure 6C and Figure 6—figure supplement 1; Figure 6—video 3). Our results indicate that the actin cytoskeleton plays a similar role in Baz and aPKC polarization dynamics suggesting that they are polarized by similar mechanisms. However, the actin cytoskeleton appears to be less important for the maintenance of Baz’s polarity early in mitosis than it is for aPKC’s as LatA did not induce Baz spreading onto the basal cortex.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45815/elife-45815-fig6-v2.jpg)
+
+**Figure 6.:** (A) Effect of treating a neuroblast with LatA beginning in interphase (83m20s before NEB) on Baz localization dynamics. Frames from Figure 6—video 1 are shown as 4 µm maximum intensity projections along the cortical edge and center of Baz-GFP taken from Figure 4—video 1. The cortical projections from an untreated neuroblast at equivalent time points are shown for reference in the top row. The neuroblast is highlighted by a dashed circle in the first column. Time is shown relative to nuclear envelope breakdown (NEB). Scale bar 5 µm. (B) Effect of treating a neuroblast with LatA following the initial cortical recruitment events (7m40s prior to NEB) on Baz localization dynamics. Frames from Figure 6—video 2 are shown as in panel A. (C) Effect of treating a neuroblast with LatA following cap coalescence (30 s prior to NEB) on Baz localization dynamics. Frames from Figure 6—video 3 are shown as in panel A.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45815/elife-45815-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Effect of treating an interphase neuroblast with LatA on Baz localization. Normalized apical and basal cortical intensity is shown from Figure 6—video 1. (A’) The frequency of neuroblasts treated with LatA in interphase that exhibit any Baz recruitment to the cortex (‘Recruitment’), growth of foci into patches (‘Patch Growth’), coalescence of patches into an apical cap (‘Coalescence’), and cap disassembly, are shown. Frequency is relative to wild type neuroblasts. (B) Effect of treating a neuroblast with LatA following the initial cortical recruitment events on normalized apical and basal cortical Baz intensity (from Figure 6—video 2). (B’) The frequency of neuroblasts treated with LatA following the initial cortical recruitment events that exhibit Baz cortical dynamics, as in panel A’. (C) Effect of treating a neuroblast with LatA following cap coalescence on normalized apical and basal cortical Baz intensity (from Figure 6—video 3). (C’) The frequency of neuroblasts treated with LatA following cap coalescence that exhibit Baz cortical dynamics, as in panel A’ (‘Recruitment’ and ‘Patch Growth’ phases are not shown because they are completed by metaphase).
 
 ## Discussion
 
@@ -89,26 +117,105 @@ The cycle we have identified here represents a new framework for understanding t
 
 ## Materials and methods
 
-## Fly strains and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>aPKC-GFP</td>
+      <td>François Schweisguth Lab; Besson et al., 2015</td>
+      <td></td>
+      <td>BAC encoded aPKC-GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Baz-GFP</td>
+      <td>Carnegie Protein Trap Library; Buszczak et al., 2007</td>
+      <td></td>
+      <td>protein trap line</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>H2A-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:23650; FLYB:FBst0023650; RRID:BDSC_23650</td>
+      <td>FlyBase symbol: w[*]; P{w[+mC]=His2A-mRFP1}III.1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-aPKC (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz: C-20 (SC-216); RRID:AB_2300359</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Baz (guinea pig polyclonal)</td>
+      <td>Chris Doe lab; Siller et al., 2006</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho Histone H3 (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore:06–570; RRID:AB_310177</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa 405- or 647- secondaries</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa 488- secondary</td>
+      <td>Invitrogen, ThermoFisher Scientific</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains and genetics
 
 Oregon R flies were used for examining the localization of fixed endogenous proteins. For live imagine, BAC-encoded aPKC-GFP flies (Besson et al., 2015) and a Baz GFP gene trap line (Buszczak et al., 2007) were used for assessing aPKC and Baz localization and dynamics, respectively. Each were crossed with a His2A-RFP line (Bloomington stock 23650).
 
-## Live imaging
+### Live imaging
 
 Third instar larvae were dissected to isolate the brain lobes and ventral nerve cord, which were placed in Schneider’s Insect media (SIM). Larval brain explants were placed in lysine-coated 35 mm cover slip dishes (WPI) containing modified minimal hemolymph-like solution (HL3.1). Treated and untreated explants were imaged on a Leica DMi8 microscope (100 × 1.4 NA oil-immersion objective) equipped with a Yokogawa CSU-W1 spinning disk head and dual Andor iXon Ultra camera. Explants expressing aPKC-GFP or Baz-GFP were illuminated with 488 nm and 561 nm laser light throughout 41 optical sections with step size of 0.5 µm and time interval of 20 s. To examine the role of F-actin in aPKC and Baz dynamics, explants were treated with 50 µM LatA (2% DMSO) during imaging.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Intact brain lobes and ventral nerve cord dissected in SIM from third instar Oregon R larvae were fixed in 4% PFA and stained with rabbit anti-PKC ζ primary (C20; 1:1000; Santa Cruz Biotechnology Inc) and 647 anti-rabbit secondary antibodies (Jackson ImmunoResearch Laboratories) to determine native aPKC localization. Native Baz localization was assessed in third instar Oregon R larval brains that were fixed and stained with guinea pig anti-Baz primary (1:1000; Siller et al., 2006) and 488 anti-guinea pig secondary antibodies (Invitrogen). The cell cycle stage was assessed with rabbit anti-phospho Histone H3 primary (1:2000; Millipore) and 405 anti rabbit secondary (Jackson ImmunoResearch Laboratories). Confocal images were acquired on an Olympus Fluoview FV1000 microscope equipped with a 40 × 1.3 NA oil-immersion objective.
 
-## Image processing and visualization
+### Image processing and visualization
 
 Movies were analyzed in ImageJ (using the FIJI package) and in Imaris (Bitplane). Neuroblasts whose apical-basal polarity axis are positioned parallel to the imaging plane were cropped out to generate representative images and movies. Cortical edge and central maximum intensity projections (MIP) were derived from optical slices capturing the surface and center of the cell, respectively. Optical sections capturing the whole of the cell were assembled for 3D rendering and visualization in Imaris. These volumetric representations were used to quantify the time interval of each process within the polarity cycle and the number of patches recruited to the cortex before cortical flow. Patches that were 0.85 µm2 or larger were selected for quantification.
 
-## Intensity measurements
+### Intensity measurements
 
-Intensity profiles were measured in FIJI using a 3 µm line across the apical and basal cortex of 4 µm maximum intensity projections through the center of the neuroblast. Mean signal intensities at time t are normalized using the following equation:Inormalizedt= Imean(t)-IminImax-Iminwhere Imean is the average intensity within the region specified by the line scan at time t, Imin is the minimum mean intensity measured across the entire dataset, and Imax is the maximum mean intensity measured across the entire dataset.
+Intensity profiles were measured in FIJI using a 3 µm line across the apical and basal cortex of 4 µm maximum intensity projections through the center of the neuroblast. Mean signal intensities at time t are normalized using the following equation:
 
-## Particle tracking
+$$
+I_{normalized}t=\frac{I_{mean}(t)-I_{min}}{I_{max}-I_{min}}
+$$
+
+where Imean is the average intensity within the region specified by the line scan at time t, Imin is the minimum mean intensity measured across the entire dataset, and Imax is the maximum mean intensity measured across the entire dataset.
+
+### Particle tracking
 
 The timing of dynamic events within the aPKC polarity cycle was determined using the H2A channel. Cortical patches were tracked through cap formation and cap dissociation using the Imaris Spots module. Tracking was restricted by an intensity threshold set by the average intensity of the apical cap in metaphase to help increase accuracy of the tracking algorithm. Smaller, lower intensity foci that grew into patches were tracked manually and their tracks were linked to that of the corresponding patches to construct a fully assembled, continuous track. Statistical data such as total patch displacement, mean square patch displacement, and relative speed between time points were collected from the final tracking result. Mean patch speed for cap assembly were calculated using a 160 s time window starting at the onset of cortical flow. Mean patch speed for cap disassembly was calculated using a 160 s time window starting at the onset of disassembly.

@@ -21,14 +21,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02kpeqv85 Graduate School of Biostudies, Kyoto University Kyoto Japan
-2. https://ror.org/02kpeqv85 Center for Cancer Immunotherapy and Immunobiology, Kyoto University Kyoto Japan
-3. https://ror.org/02xg1m795 National Institute of Genetics Mishima Japan
-4. https://ror.org/017hkng22 Graduate School of Science and Engineering, Ehime University Matsuyama Japan
-5. https://ror.org/00p4k0j84 Graduate School of Medical Sciences, Kyushu University Fukuoka Japan
-6. https://ror.org/02kpeqv85 Center for Living Systems Information Science, Kyoto University Kyoto Japan
-7. https://ror.org/004rtk039 AMED-CREST Tokyo Japan
-8. https://ror.org/00097mb19 JST FOREST Tokyo Japan
+1. Graduate School of Biostudies, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+2. Center for Cancer Immunotherapy and Immunobiology, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+3. National Institute of Genetics Mishima Japan ([ROR:02xg1m795](https://ror.org/02xg1m795))
+4. Graduate School of Science and Engineering, Ehime University Matsuyama Japan ([ROR:017hkng22](https://ror.org/017hkng22))
+5. Graduate School of Medical Sciences, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
+6. Center for Living Systems Information Science, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+7. AMED-CREST Tokyo Japan ([ROR:004rtk039](https://ror.org/004rtk039))
+8. JST FOREST Tokyo Japan ([ROR:00097mb19](https://ror.org/00097mb19))
 
 † Corresponding author
 
@@ -48,9 +48,21 @@ To address these questions, we sampled fermented bananas that had been fed upon 
 
 ## Results
 
-## The composition of both yeast and bacteria in the food microbiota shifts as fermentation progresses, independently of the presence of larvae
+### The composition of both yeast and bacteria in the food microbiota shifts as fermentation progresses, independently of the presence of larvae
 
 To examine the community structure of the microbiota associated with Drosophila larvae in nature, we collected and analyzed larval foods, fermented bananas, that had been fed on by wild larvae (Figure 1A, Supplementary file 1A, B). Because D. melanogaster and its related species are often found near human settlements, we set traps containing freshly peeled and sliced bananas outside of our residences so that wild flies would lay eggs on the foods. A portion of each food sample was collected as ‘early-stage’ food, while the remaining food was incubated in the laboratory. When the larvae reached the late third instar stage, we collected further fermented ‘late-stage’ food samples (refer to Materials and methods for experimental definitions of early- or late-stage foods). We performed sequencing of the fungal internal transcribed spacer (ITS) region and the bacterial 16S rRNA region to analyze the composition of fungi and bacteria in individual food samples, respectively (Figure 1B and Figure 1—figure supplement 1; Supplementary file 2A, B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig1-v1.jpg)
+
+**Figure 1.:** Sampling designs and results for the analyses of microbial compositions in natural food sources of Drosophila (A, B), effects of larval presence on the microbial composition shift (C, D), or microbial compositions in adult flies, larvae, and their foods (E, F). (A, C, E) Designs of the samplings for microbial analyses. Traps with bananas were set up outdoors near human habitations in order to collect food samples on which wild Drosophila spp. lay eggs. Fermented food samples were collected from the traps at two time points: the early stage (just after trap collection) and the late stage (when larvae in the foods developed into late third instars). Collected samples are indicated in bold letters. (C) In this sampling, the collected early-stage food was crushed in phosphate-buffered saline (PBS), and the liquid portion (microbial suspension) was added to fresh bananas with or without germ-free embryos (Cg-Gal4, UAS-mCD8:GFP). After incubation, late-stage food and surface-sterilized larvae were collected. (E) In addition to the food samples, adult flies in the traps and larvae from the late-stage foods were collected. This sampling was conducted independently from that shown in (C) and (D), although the sampling places were in common (see Supplementary file 1A). Both adults and larvae were surface sterilized. Note that all of the adults in the traps at Places 7 and 8 were collected for the microbial analysis, while 20 out of 37 were collected at Place 9. (B, D, F) The relative abundances of fungi or bacteria in the fermented banana or fly samples. The compositions were analyzed using primer sets amplifying the fungal internal transcribed spacer (ITS) region or bacterial 16S rDNA region. Operational taxonomic units (OTUs) accounting for >1% in any of the samples were grouped by families, as shown. The ratio of those accounting for <1% was summed and is indicated as ‘Others’. The genera belonging to uncertain families (incertae sedis) are indicated by their genus name in parentheses. (B) The result corresponding to the sampling depicted in (A). The numbers on the horizontal axis indicate each numbered sampling location. ‘No-fly’ indicates the food samples from Sampling Place 6, where no fly or larva was found in the trap or the foods, respectively. (D, F) The result corresponding to the sampling depicted in (C) and (E), respectively. E, early-stage food; L, late-stage food; Susp, microbial suspension; w/o L, late-stage food without larvae; w/ L, late-stage food with larvae; Lar, larvae.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Results of microbial composition analysis corresponding to Figure 1B. The relative abundances of fungal (A) or bacterial (B) species in the fermented banana are shown. The compositions were analyzed using primer sets amplifying the fungal internal transcribed spacer (ITS) region or bacterial 16S rDNA region. Operational taxonomic units (OTUs) accounting for >1% in any of the samples were grouped by species, as shown. The ratios of those accounting for <1% or those of unidentified species were summed and indicated as ‘Others’. The genera belonging to uncertain families (incertae sedis) are indicated by their genus name in parentheses. The numbers on the horizontal axis represent each numbered sampling location, corresponding to those indicated in Figure 1B. ‘No-fly’ highlights the food samples from Sampling Place 6, where no fly or larva was found in the trap or the foods, respectively. E, early-stage food; L, late-stage food.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Graphs showing the copy numbers of the fungal internal transcribed spacer (ITS) region (A, C, E) or bacterial 16S rRNA region (B, D, F) in the fermented banana samples shown in Figure 1A, B (A, B), Figure 1C, D (C, D), and Figure 1E, F (E, F).Numbers below each pair of foods indicate the sampling places, which correspond to those indicated in Figure 1. (C, D) Yeast and bacteria were also detected in Blank banana samples, in which sterile phosphate-buffered saline (PBS) instead of microbial suspensions was added. They might have invaded the fruit by passing through wounds on the peel (Oyewole, 2012). E, early-stage food; L, late-stage food.
 
 In most food samples, yeasts consistently accounted for a major proportion of the fungal communities (top of Figure 1B; Figure 1—figure supplement 1A; Supplementary file 2A), as previously reported (Chandler et al., 2012). At the family level, the compositions showed dramatic differences between the early and late stages; while Saccharomycodaceae dominated in most of the early-stage foods, Pichiaceae, Starmerella, and Saccharomycetaceae became dominant in the late-stage foods. The dominant bacteria also differed between the two stages, with Enterobacterales predominating at the early stage and LAB and AAB predominating at the late stage (bottom of Figure 1B; Figure 1—figure supplement 1B; Supplementary file 2B). Henceforth, we refer to the transition from early-to-late stages in microbial composition as the microbial composition shift or simply the composition shift. In this sampling, we obtained, by chance, a ‘no-fly’ trap; no adult flies were caught in the trap, and no eggs, larvae, or pupae were found in the food at either stage (‘No-fly’ in Figure 1B; ‘No-fly trap’ in Supplementary file 2A, B; refer to ‘Collection of fermented bananas and wild Drosophila’ in Materials and methods for further details). We analyzed food samples from this trap for comparison. The microbiota in the foods significantly differed from that of other foods, with a lower percentage of yeast in the fungal community and a consistently high abundance of Enterobacterales in the bacterial community.
 
@@ -60,19 +72,122 @@ Furthermore, we analyzed the microbial composition of adult flies captured in tr
 
 In addition to the community structures, we investigated whether there were alterations in the overall abundance of yeasts and bacteria between the early- and the late-stage foods. For this purpose, we performed quantitative PCR to quantify the copy numbers of fungal and bacterial rDNA in each food sample presented in Figure 1B, D, F (Figure 1—figure supplement 2). The analysis indicated that there were no dramatic increases or decreases in copy numbers in most food samples. Note that measuring rDNA copy numbers in the microbiome does not necessarily reflect actual cell numbers due to variations in the genomic rDNA copy numbers among species (Lofgren et al., 2019; Stoddard et al., 2015). Nonetheless, these results suggest that the quantities of microbes did not undergo substantial changes between the two stages.
 
-## Prominent acceleration of larval development is observed with early-stage-dominant yeast alone, as well as in combination with late-stage-dominant AAB and other microbes
+### Prominent acceleration of larval development is observed with early-stage-dominant yeast alone, as well as in combination with late-stage-dominant AAB and other microbes
 
 As described in the previous section, we documented the presence of various yeast and bacterial species in fermented bananas, the populations of which underwent notable compositional shifts over time. Previous studies suggest that different yeast or bacterial species contribute to larval development to varying degrees (Anagnostou et al., 2010; Consuegra et al., 2020b; Pais et al., 2018; Quan and Eisen, 2018; Solomon et al., 2019). Continuing this line of investigation, we undertook to identify which of the dominating microbial species in the early- or late-stage foods, either individually or as mixtures, promote larval development. To this end, we isolated fungal and bacterial strains from the food samples (refer to Supplementary file 3 and ‘Isolation and species identification of microbes’ in Materials and methods for further details). We subsequently inoculated the isolated strains, either individually or in combinations, into a sterile banana-based food (banana agar), and introduced GF larvae. Thereafter, we evaluated the effects of the microbial species on the percentage and the timing of pupariation (see details in ‘Quantification of larval development’ in Materials and methods). Note that on this food, larval development critically depends on associated microbes, as the larvae failed to pupariate on banana agar without microbes (‘GF’ in Figure 2A and subsequent figures).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig2-v1.jpg)
+
+**Figure 2.:** The percentage and timing of pupariation of larvae feeding on microbes detected in the early-stage food (A, B), or five (C, D) or three (E, F) microbes detected in the late-stage food from Sampling Place 1 in Figure 1B. (A, C, E) Each data point represents the average percentage of individuals per tube that pupariated by each day. n = 3–4. Colored lines are for mixed conditions, while gray lines are for mono-associated or germ-free conditions. The codes for individual species are provided in the chart at the bottom of (B), (D), and (E), respectively. Error bars represent standard error of the mean (SEM). (C) The color coding for the respective foods is as follows: includes yeasts only (orange); includes yeast(s) and lactic acid bacteria (LAB) but no AAB (red); includes LAB and AAB (blue). (B, D, F) Percentage of the larvae pupariated (pupariation ratio; upper) and the timing at which 50% of the pupariation ratio was achieved (lower). Boxes represent upper and lower quartiles, while the central lines indicate the median. Whiskers extend to the most extreme data points, which are no more than 1.5 times the interquartile range. Unique letters indicate significant differences between groups (Tukey–Kramer test, p < 0.05). Pi. kluyveri, Pichia kluyveri; Pa. agglomerans, Pantoea agglomerans; St. bacillaris, Starmerella bacillaris; Le. mesenteroides, Leuconostoc mesenteroides; Entero., Enterobacterales; GF, germ-free; NA, not applicable; days AEL, days after egg laying.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The percentage and timing of pupariation of larvae feeding on (A, B) microbes derived from the early-stage food, or (C, D) five, or (E, F) three microbes derived from the late-stage food. (A, C, E) The codes for individual species are provided in the chart at the bottom of (B), (D), and (F), respectively. (B, D, F) Graphs are presented as in Figure 2. n = 3–4. Pi. kluyveri, Pichia kluyveri; Pa. agglomerans, Pantoea agglomerans; La. plantarum, Lactiplantibacillus plantarum; Entero., Enterobacterales; GF, germ-free; NA, not applicable; days AEL, days after egg laying.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Graphs showing the percentage of larvae that pupariated in the experiments shown in Figure 2A and B (A), Figure 2C and D (B), Figure 2—figure supplement 1A and B (C), or Figure 2—figure supplement 1C, D (D). The mean percentages of the pupariated and eclosed (dark gray) or pupariated and not eclosed (light gray) individuals are shown. n = 3–4. Pi. kluyveri, Pichia kluyveri; Pa. agglomerans, Pantoea agglomerans; St. bacillaris, Starmerella bacillaris; Le. mesenteroides, Leuconostoc mesenteroides; La. plantarum, Lactiplantibacillus plantarum; Entero., Enterobacterales; GF, germ-free; NA, not applicable.
+
 To assess the impact of microbes found in the early-stage foods on larval development, we focused on yeast and bacterial strains belonging to microbial species dominated in the food samples shown in Figure 1B (see also Table 1 and Figure 1—figure supplement 1). The two characteristic microbial species in the early-stage foods were the yeast H. uvarum and the bacteria Pantoea agglomerans (Table 1; Figure 1—figure supplement 1). These two species along with P. kluyveri, the second dominant yeast in most of the early-stage foods, were selected for this experiment (Table 1; Figure 1—figure supplement 1A). We investigated whether each strain or a combination of the strains promotes larval development (Figure 2A, B, Figure 2—figure supplement 1A, B). When inoculated individually, H. uvarum and P. agglomerans effectively promoted larval growth (‘Y2’ and ‘E’ in Figure 2A, B, respectively; ‘Y1’ and ‘E’ in Figure 2—figure supplement 1A,B, respectively), whereas P. kluyveri, another yeast species, had almost no promoting effect (‘Y1’ in Figure 2A, B; ‘Y2’ in Figure 2—figure supplement 1A, B). When the strains were combined, we observed a significantly accelerated larval development in the presence of H. uvarum (‘1: Y1Y2’ and ‘3: Y1Y2E’ in Figure 2A, B) than in its absence (‘2: Y1E’ in Figure 2A, B). Hence, in the early-stage foods, H. uvarum played a critical role in promoting larval development.
+
+**Table 1.**
+ List of microbial species used in the feeding experiments.Percentages indicate the relative abundance of each species in the foods shown in Figure 1B.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Yeast or bacterium</th>
+      <th>Family</th>
+      <th>Species</th>
+      <th>Sampling Place 1 (early stage)</th>
+      <th>Sampling Place 1 (late stage)</th>
+      <th>Sampling Place 2 (early stage)</th>
+      <th>Sampling Place 2 (late stage)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Yeast</td>
+      <td>Saccharomycodaceae</td>
+      <td>Hanseniaspora uvarum</td>
+      <td>20.93%</td>
+      <td></td>
+      <td>79.28%</td>
+      <td>2.11%</td>
+    </tr>
+    <tr>
+      <td>Yeast</td>
+      <td>Pichiaceae</td>
+      <td>Pichia kluyveri</td>
+      <td>40.09%</td>
+      <td>26.26%</td>
+      <td>19.07%</td>
+      <td>97.14%</td>
+    </tr>
+    <tr>
+      <td>Yeast</td>
+      <td>incertae sedis</td>
+      <td>Starmerella bacillaris</td>
+      <td></td>
+      <td>72.97%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bacterium</td>
+      <td>Erwiniaceae</td>
+      <td>Pantoea agglomerans</td>
+      <td>45.31%</td>
+      <td>12.81%</td>
+      <td>90.56%</td>
+      <td>6.17%</td>
+    </tr>
+    <tr>
+      <td>Bacterium</td>
+      <td>Lactobacillaceae</td>
+      <td>Leuconostoc mesenteroides</td>
+      <td></td>
+      <td>54.17%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bacterium</td>
+      <td>Lactobacillaceae</td>
+      <td>Lactiplantibacillus plantarum</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>60.84%</td>
+    </tr>
+    <tr>
+      <td>Bacterium</td>
+      <td>Acetobacteraceae</td>
+      <td>Acetobacter orientalis</td>
+      <td></td>
+      <td>8.25%</td>
+      <td></td>
+      <td>15.48%</td>
+    </tr>
+  </tbody>
+</table>
 
 A similar feeding experiment was conducted using strains of the late-stage microbes (Figure 2C, D and Figure 2—figure supplement 1C and D; Table 1): two dominating late-stage yeast species, the most predominant LAB and AAB species, and P. agglomerans, which persisted from the early stage, albeit in a smaller proportion (Table 1; Figure 1—figure supplement 1). When fed individually, none of the yeast or bacterial species efficiently supported larval growth, except for H. uvarum and P. agglomerans (lines and symbols with different brightness of gray in Figure 2C and Figure 2—figure supplement 1C). Conversely, when larvae were fed mixtures, their development was almost equally efficient as long as LAB and AAB coexisted (color coded in blues in Figure 2C and Figure 2—figure supplement 1C). In this experiment, the coexistence effects of yeast and AAB were not tested. Therefore, we repeated the experiment using only one strain from each of the most dominant yeast, LAB, and AAB species (see the tables in Figure 2F and Figure 2—figure supplement 1F). Larval development, in terms of both the pupariation rate and timing, was promoted when the AAB A. orientalis was inoculated together with either a yeast (S. bacillaris or P. kluyveri) or a LAB (Leuconostoc mesenteroides or Lactiplantibacillus plantarum) (Figure 2E, F and Figure 2—figure supplement 1E, F). This result suggests that, in the late-stage foods, the coexistence of AAB and other microbial species, yeasts or LAB, was critical for larval development. Additionally, we investigated the eclosion of pupae under different microbial conditions and confirmed that a majority of the pupae successfully eclosed, albeit with some variation observed across experiments (Figure 2—figure supplement 2).
 
 To summarize these results, strong promotion of larval development was observed when the larvae were associated with an early-stage yeast H. uvarum, or a combination of A. orientalis and other late-stage microbes.
 
-## During the late stage, AAB play a crucial role in supporting larval development through interspecies interactions among the microbes
+### During the late stage, AAB play a crucial role in supporting larval development through interspecies interactions among the microbes
 
 To investigate how larvae respond to the different microbial conditions, we conducted whole-body RNA-seq of gnotobiotic first instar larvae that were subjected to a 15-hr feeding period on banana agar (Supplementary file 4). The agar was either kept sterile or inoculated with yeast H. uvarum, LAB, or AAB individually, or a combination of LAB and AAB (Figure 3A–D). Remarkably distinct gene expression profiles were observed between the ‘supportive’ conditions, where larvae efficiently pupariated in the previous experiments (‘Yeast’ and ‘LAB + AAB’ in Figure 3A), and the ‘non-supportive’ conditions, where larval development was markedly impaired (‘LAB’ and ‘GF’ in Figure 3A). Notably, a multitude of genes involved in metabolism and cell growth displayed significant upregulation in response to the AAB and LAB mixtures when compared to LAB alone (Figure 3B, C, and Figure 3—figure supplement 1A, B). Moreover, differentially expressed genes under the supportive and the non-supportive conditions exhibited strikingly similar profiles to those reported in a previous investigation of fed and starved conditions (Zinke et al., 2002; Figure 3D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig3-v1.jpg)
+
+**Figure 3.:** (A) Heat map of gene expression values for first instar larvae fed H. uvarum or bacteria. Freshly hatched germ-free larvae were placed on banana agar inoculated with each microbe and collected after 15 hr feeding to examine gene expression of the whole body. The data of the genes that were differentially expressed between ‘LAB’-fed conditions and the respective ‘LAB + AAB’ conditions are shown. Plots showing the result of Gene Ontology (GO) term (B) or Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway (C) enrichment analysis of the RNA-seq data. 10 terms/pathways that showed the smallest false discovery rate (FDR) in each analysis are shown. (D) Heat maps showing the similarity between our RNA-seq data and microarray data in a previous study (Zinke et al., 2002). Zinke et al. used larvae at 47–49 hr AEL and fed them yeast paste or starved them for 12 hr before comparing the gene expression profiles. The data from Zinke et al., 2002 are labeled as ‘Fed/Starved’ in the righthand column of each heat map, which show the fold change value of each gene. Only the genes exhibiting significant differences in their analysis are shown. For our data, log2(fold change) were calculated using TPM of each gene in the larvae on the supportive conditions versus those on the non-supportive conditions. (E, F) The percentage and timing of pupariation of the larvae feeding on AAB on banana agar. Graphs are presented as in Figure 2. n = 3–4. (G, H) AAB load of foods inoculated with AAB, with or without other microbial species. Boxplots are depicted as in Figure 2 (Dunnett’s test, *p < 0.05, **p < 0.01, ***p < 0.001). La. pla, Lactiplantibacillus plantarum; Le. mes, Leuconostoc mesenteroides; A. ori, Acetobacter orientalis; H. uva, Hanseniaspora uvarum; St. bac, Starmerella bacillaris; Pi. klu, Pichia kluyveri; GF, germ-free; NA, not applicable; days AEL, days after egg laying.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Plots showing the result of GO term (A, C) or KEGG pathway (B, D) enrichment analysis of the RNA-seq data shown in Figure 3A (A, B) and Figure 4C (C, D). Plots were generated as described in Figure 3. (E) Images of single yeast colonies grown on banana agar or the nutrient-rich diet. The images were taken after a 2-day incubation at 25°C. La. pla, Lactiplantibacillus plantarum; Le. mes, Leuconostoc mesenteroides; A. ori, Acetobacter orientalis.
 
 Interestingly, although larvae fed on AAB alone largely failed to pupariate (‘A’ in Figure 2C–F), their gene expression profile after the 15-hr feeding period closely resembled that of the supportive conditions (compare ‘AAB’ with ‘Yeast’ and ‘LAB + AAB’ in Figure 3A). This result implies that AAB possessed the ability to induce a growth-promoting response, but the effect likely did not persist until pupariation. We observed that the growth rate of AAB on banana agar was noticeably lower compared to those of other microbes. This led us to speculate that this lower growth rate might result in a shortage of AAB, leading to undernutrition during the later stage of larval development. To test this hypothesis, we investigated whether larval development could recover when AAB was constantly available. Daily supplementation of AAB enabled larvae to pupariate as effectively as the initial co-inoculation of AAB and LAB did (Figure 3E. F), demonstrating that AAB can promote larval growth if it is available throughout the course of development.
 
@@ -80,13 +195,13 @@ The aforementioned observations have prompted us to assume that yeast and LAB co
 
 As described in the previous section, none of AAB, LAB, or the yeast in the late-stage foods strongly promoted larval growth individually, while mixing AAB with LAB or the yeasts did (Figure 2C–F and Figure 2—figure supplement 1C–F). All of our results so far strongly suggest that these interspecies interactions among the microbes underlie the promotion of larval growth by late-stage microbiota.
 
-## The isolated yeast species promote varying degrees of larval development, but all support larval development upon heat killing
+### The isolated yeast species promote varying degrees of larval development, but all support larval development upon heat killing
 
 We found that the early-stage yeast H. uvarum facilitated larval development, whereas the dominant yeasts in the late stage, P. kluyveri and S. bacillaris, did not (Figure 2A–D and Figure 2—figure supplement 1A–D). To elucidate the underlying mechanisms behind these diverse outcomes, we conducted comprehensive comparative analyses with the respective yeasts. We used six yeast species that originated from the fermented bananas (Kazachstania humilis, Martiniozyma asiatica, and Saccharomycopsis crataegensis in addition to the aforementioned three species) and a laboratory strain of the model species S. cerevisiae, which was rarely detected in our food samples (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig4-v1.jpg)
 
-**Figure 4.:** (A, B) The percentage and timing of pupariation of larvae feeding on live yeasts on banana agar. Graphs are presented as in Figure 2. n = 3–4. (C) Heat map of gene expression values for first instar larvae fed on each yeast species. Freshly hatched germ-free larvae were placed on banana agar inoculated with each microbe and collected after 15 hr feeding to examine gene expression of the whole body. The data of the genes that were differentially expressed between the H. uvarum-fed larvae and the Starmerella bacillaris-fed larvae are shown. Plots showing the result of GO term (D) or KEGG pathway (E) enrichment analysis of the RNA-seq data. Genes that showed significantly higher expression on each of the supportive species than on both the non-supportive species were analyzed. 10 terms/pathways that showed the smallest FDR in each analysis are shown. (F) Heat maps showing the similarity between our RNA-seq data and microarray data in Zinke et al., 2002, shown as described in Figure 3. (G–J) The percentage and timing of pupariation of the larvae feeding on heat-killed yeasts on banana agar (G, H) or live yeasts on a nutritionally rich medium (I, J). Graphs are depicted as in Figure 2. n = 3–4. H. uva, Hanseniaspora uvarum; K. hum, Kazachstania humilis; M. asi, Martiniozyma asiatica; Sa. cra, Saccharomycopsis crataegensis; Pi. klu, Pichia kluyveri; St. bac, Starmerella bacillaris; BY4741, Saccharomyces cerevisiae BY4741 strain; GF, germ-free; NA, not applicable; days AEL, days after egg laying.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A, B) The percentage and timing of pupariation of larvae feeding on live yeasts on banana agar. Graphs are presented as in Figure 2. n = 3–4. (C) Heat map of gene expression values for first instar larvae fed on each yeast species. Freshly hatched germ-free larvae were placed on banana agar inoculated with each microbe and collected after 15 hr feeding to examine gene expression of the whole body. The data of the genes that were differentially expressed between the H. uvarum-fed larvae and the Starmerella bacillaris-fed larvae are shown. Plots showing the result of GO term (D) or KEGG pathway (E) enrichment analysis of the RNA-seq data. Genes that showed significantly higher expression on each of the supportive species than on both the non-supportive species were analyzed. 10 terms/pathways that showed the smallest FDR in each analysis are shown. (F) Heat maps showing the similarity between our RNA-seq data and microarray data in Zinke et al., 2002, shown as described in Figure 3. (G–J) The percentage and timing of pupariation of the larvae feeding on heat-killed yeasts on banana agar (G, H) or live yeasts on a nutritionally rich medium (I, J). Graphs are depicted as in Figure 2. n = 3–4. H. uva, Hanseniaspora uvarum; K. hum, Kazachstania humilis; M. asi, Martiniozyma asiatica; Sa. cra, Saccharomycopsis crataegensis; Pi. klu, Pichia kluyveri; St. bac, Starmerella bacillaris; BY4741, Saccharomyces cerevisiae BY4741 strain; GF, germ-free; NA, not applicable; days AEL, days after egg laying.
 
 When we provided each species to GF larvae, the larvae fed on H. uvarum showed the highest percentage of pupariation, while larvae fed on K. humilis or M. asiatica also pupariated at relatively high rates, albeit with a slower timing for M. asiatica (Figure 4A, B). We classified these three species as the ‘supportive’ yeast species. In contrast, larvae fed on P. kluyveri or S. bacillaris, which are the dominant species during the late stage, showed notably low percentage of pupariation, leading to their classification as ‘non-supportive’ (Figure 4A, B). Inoculation with S. crataegensis or a laboratory strain of S. cerevisiae BY4741 resulted in reduced percentages and delayed timing of pupariation compared to the inoculation with the supportive species, thus earning the designation of ‘mild’. These results underscore the variable abilities of individual yeast species to promote larval development.
 
@@ -96,9 +211,17 @@ One potential factor determining the ability of larvae to develop on specific ye
 
 We also considered the possibility that the non-supportive yeasts somehow inhibited the host growth. To test this possibility, we cultured the yeast species on a nutrient-rich sterile medium and fed them to the larvae (Figure 4I, J). This medium contains dry yeast and enables larvae to pupariate even without live yeasts (‘GF’ in Figure 4I, J). Under these conditions, larvae fed with S. bacillaris pupariated as efficiently and nearly as rapidly as those without yeasts or with other yeast species, suggesting that S. bacillaris did not impede larval growth (Figure 4I, J). In contrast, larvae fed with P. kluyveri exhibited a significantly reduced percentage of pupariation compared to larvae grown with the other yeast species or without yeasts. This could be related to the extensive growth of P. kluyveri on this food (Figure 3—figure supplement 1E). Nevertheless, none of these yeast species reproduced the low percentage of pupariation of larvae observed on banana agar. Therefore, the inhibitory effects of P. kluyveri and S. bacillaris are less likely.
 
-## Supportive yeasts facilitate larval growth by producing nutrients, including BCAAs, and releasing them from their cells
+### Supportive yeasts facilitate larval growth by producing nutrients, including BCAAs, and releasing them from their cells
 
 Given that the non-supportive yeast species supported larval growth upon heat killing, we hypothesized that the key distinction between the supportive and the non-supportive species lies in their ability to release nutrients contained within the cells. To test this hypothesis, we conducted a metabolomic analysis of the two supportive species (H. uvarum and K. humilis) and the two non-supportive species (P. kluyveri and S. bacillaris) and analyzed not only the yeast cells but also two additional samples anticipated to contain metabolites released from the cells: yeast-conditioned banana-agar plates and cell suspension supernatants (Figure 5A–F and Figure 5—figure supplement 1, Supplementary file 6).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig5-v1.jpg)
+
+**Figure 5.:** Heat maps displaying all detected metabolites (A, C, E) or only the metabolites included in a chemically defined synthetic (holidic) medium for Drosophila melanogaster (Piper et al., 2014) (B, D, F) detected from the metabolomic analysis of banana-agar plates (A, B), yeast cells (C, D), or yeast-cell suspension supernatants (E, F). Row Z-scores of normalized peak areas are shown. Normalized peak areas of leucine (G) and isoleucine (H) in yeast-cell suspension supernatants. Boxplots are presented as in Figure 2. Unique letters indicate significant differences between groups (Steel–Dwass test, p < 0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Sample preparation process for the metabolomic analysis. We suspected that the supportive live yeast cells may release critical nutrients for larval growth, whereas the non-supportive yeasts may not. To test this possibility, we made three distinct sample preparations of individual yeast strains (yeast cells, yeast-conditioned banana-agar plates, and cell suspension supernatants). Yeast cells were for the analysis of intracellular metabolites, whereas yeast-conditioned banana-agar plates and cell suspension supernatants were for that of extracellular metabolites. The samples were prepared as the following procedures. Yeasts were grown on banana-agar plates for 2 days at 25°C, and then scraped from the plates to obtain ‘yeast cells’. Next, the remaining yeasts on the resultant plates were thoroughly removed, and a portion from each plate was cut out (‘yeast-conditioned banana agar’). In addition, we suspended yeast cells from the agar plates into sterile phosphate-buffered saline (PBS), followed by centrifugation and filtration to eliminate the yeast cells, to prepare ‘cell suspension supernatants’.
 
 The yeast-conditioned banana-agar plates had been expected to contain yeast-derived nutrients. On the contrary, the result revealed a depletion of various metabolites originally present in the sterile banana agar (Figure 5A). This result prompted us to focus on the metabolites in the chemically defined (holidic) medium for D. melanogaster (Piper et al., 2014; Piper et al., 2017). This medium contains ~40 known nutrients, and supports the larval development to pupariation, albeit at the half rate compared to that on a yeast-containing standard laboratory food (Piper et al., 2014; Piper et al., 2017). Therefore, the holidic medium could be considered to contain the minimal essential nutrients required for larval growth. Our analysis indicated a substantial reduction of these known nutrients in the yeast-conditioned plates compared to their original quantities (Figure 5B).
 
@@ -108,7 +231,7 @@ The above finding prompted us to explore whether leucine and isoleucine are supp
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90148/elife-90148-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) Growth of larvae feeding on yeasts on banana agar supplemented with leucine and isoleucine. (A) The mean percentage of the live/dead individuals in each developmental stage. n = 4. (B) The percentage of larvae that developed into second instar or later stages. The ‘Not found’ population in (A) was omitted from the calculation. Each data point represents data from a single tube. Unique letters indicate significant differences between groups (Tukey–Kramer test, p < 0.05). (C) The biosynthetic pathways for leucine and isoleucine with Saccharomyces cerevisiae gene names are shown. The colored dots indicate enzymes that are conserved in the six isolated species, while the white dots indicate those that are not conserved. Abbreviations of genera are given in the key in the upper right corner. LEU2 is deleted in BY4741. (D–G) Representative image of Phloxine B-stained yeasts. The right-side images are expanded images of the boxed areas. The scale bar represents 50 µm. (H) Summary of this study. H. uvarum is predominant in the early-stage food and provides Leu, Ile, and other nutrients that are required for larval growth. In the late-stage food, AAB directly provides nutrients, while lactic acid bacteria (LAB) and yeasts indirectly contribute to larval growth by enabling the stable larva–AAB association. The host larva responds to the nutritional environment by dramatically altering gene expression profiles, which leads to growth and pupariation. H. uva, Hanseniaspora uvarum; K. hum, Kazachstania humilis; Pi. klu, Pichia kluyveri; St. bac, Starmerella bacillaris; GF, germ-free.Figure 6—source data 1.Figure 6.Figure 6—source data 2.Figure 6D–G.
+**Figure 6.:** (A, B) Growth of larvae feeding on yeasts on banana agar supplemented with leucine and isoleucine. (A) The mean percentage of the live/dead individuals in each developmental stage. n = 4. (B) The percentage of larvae that developed into second instar or later stages. The ‘Not found’ population in (A) was omitted from the calculation. Each data point represents data from a single tube. Unique letters indicate significant differences between groups (Tukey–Kramer test, p < 0.05). (C) The biosynthetic pathways for leucine and isoleucine with Saccharomyces cerevisiae gene names are shown. The colored dots indicate enzymes that are conserved in the six isolated species, while the white dots indicate those that are not conserved. Abbreviations of genera are given in the key in the upper right corner. LEU2 is deleted in BY4741. (D–G) Representative image of Phloxine B-stained yeasts. The right-side images are expanded images of the boxed areas. The scale bar represents 50 µm. (H) Summary of this study. H. uvarum is predominant in the early-stage food and provides Leu, Ile, and other nutrients that are required for larval growth. In the late-stage food, AAB directly provides nutrients, while lactic acid bacteria (LAB) and yeasts indirectly contribute to larval growth by enabling the stable larva–AAB association. The host larva responds to the nutritional environment by dramatically altering gene expression profiles, which leads to growth and pupariation. H. uva, Hanseniaspora uvarum; K. hum, Kazachstania humilis; Pi. klu, Pichia kluyveri; St. bac, Starmerella bacillaris; GF, germ-free.
 
 We noted, however, that the supplementation of BCAAs alone did not completely restore the growth of larvae that fed on the non-supportive yeasts. Despite attempts to enhance growth by increasing the BCAA concentration five- or tenfold, no improvement was observed (data not shown). We also supplemented the banana agar with other metabolites, including nicotinic acid and/or lysine and asparagine, which were detected in higher amounts within the suspension supernatants of the supportive yeasts, individually or in combination with the BCAAs. None of these additions had any effect on larval growth (data not shown). These results suggest that other crucial nutrients are provided by the supportive yeasts.
 
@@ -136,17 +259,17 @@ To date, the majority of studies on animal-associated yeasts have focused on a l
 
 ## Materials and methods
 
-## D. melanogaster strains and culture
+### D. melanogaster strains and culture
 
 D. melanogaster Canton-Special (E-10002) strain was obtained from EHIME-Fly Drosophila Stocks of Ehime University. This strain was used for all the experiments unless otherwise noted. Cg-GAL4 was a gift from Asha et al., 2003. The stocks were reared on a laboratory standard diet as previously described (Watanabe et al., 2017).
 
 Yeast-based nutrient-rich diet was prepared following the instructions at Bloomington Stock Center (available here). Reagents used are described in Kanaoka et al., 2023. The preservatives (propionic acid and 10% p-hydroxy-benzoic acid methyl ester) were omitted.
 
-## Generation of GF larvae
+### Generation of GF larvae
 
 GF animals were prepared as previously described (Watanabe et al., 2019) with minor alterations. Briefly, embryos were collected on apple agar plates topped with yeast paste, and were incubated at 25°C for 12–15 or 14.5–17.5 hr. They were subsequently dechorionated in 50% bleach, followed by washes with sterile water, 70% ethanol, and sterile water once more. The embryos were placed on sterile agar plates and incubated at 25°C until newly hatched larvae were obtained.
 
-## Collection of fermented bananas and wild Drosophila
+### Collection of fermented bananas and wild Drosophila
 
 Larval foods, fermented bananas, were collected using traps placed outdoors in human residential areas to collect domestic Drosophila species such as D. melanogaster or D. simulans. The sampling places, near laboratory members’ apartments or houses in Kyoto and Osaka prefectures, Japan, or outside the laboratory at Kyoto University, are listed in Supplementary file 1A. Bananas were selected as bait considering their use in previous Drosophila studies (Anagnostou et al., 2010; Consuegra et al., 2020b; Stamps et al., 2012). They are also affordable and available year-round, which would be advantageous for subsequent analyses requiring large amounts of fruit-based culture media. Peels of ripening bananas were treated with 70% ethanol and then removed carefully so as not to touch the fruit inside to avoid contamination. The bananas were subsequently cut into pieces with an autoclaved sterile spatula, and placed in a sterile 100-ml centrifuge tube (Iwaki). Each trap was made of an empty milk carton, and contained one tube of banana bait.
 
@@ -158,7 +281,7 @@ All the food samples were collected after removing embryos and larvae, and snap-
 
 All tools were sterilized prior to use. Frozen samples were stored at −80°C. Adult or larval samples collected from a single trap or food, respectively, were stored as a pool.
 
-## ITS or 16S rDNA sequencing analysis
+### ITS or 16S rDNA sequencing analysis
 
 Food, larval, or adult samples were freeze-dried for 2–3 days, followed by homogenization with 5 mm stainless beads using Shake Master Neo (Biomedical Science). Microbial DNA was extracted using a QIAamp DNA Stool Mini Kit (QIAGEN). 3 and 0.1 mm zirconium beads were used for the initial lysis step.
 
@@ -166,7 +289,7 @@ Library preparation, sequencing, and data analyses were performed by Macrogen Ja
 
 The paired-end reads were assembled using FLASH (Magoč and Salzberg, 2011), followed by pre-processing and clustering using CD-HIT-OTU (Fu et al., 2012; Li and Godzik, 2006) with a clustering cutoff of 99%. Taxonomy was assigned using QIIME (Caporaso et al., 2010) using the UNITE database (Nilsson et al., 2019) for fungal ITS, and the Ribosomal Database Project (RDP) database (Cole et al., 2014) for bacterial 16S rDNA (outputs can be found in Supplementary file 2F-J), followed by manual correction and reassignment, in which reads originating from Drosophila spp. or banana (including chloroplast) were removed, and fungal and bacterial taxonomy was reassigned by NCBI BLAST search against the Nucleotide collection (nr/nt) database or using the RDP sequence match tool, respectively (Cole et al., 2014; Johnson et al., 2008). Sequences with the highest query cover and identity in blastn, or the highest S_ab score in RDP sequence match were considered as top hits. OTUs that had no top hits with an assigned species name or with top hits that belonged to more than one genus were marked as ‘Unassigned’.
 
-## qPCR of ITS or 16S rDNA
+### qPCR of ITS or 16S rDNA
 
 Quantification of fungal ITS or bacterial 16S rDNA was performed by quantitative real-time PCR with THUNDERBIRD SYBR qPCR Mix (TOYOBO). DNA extracted from fermented bananas was diluted 10- to 100-fold before use. After an initial denaturation at 95°C for 1 min, 45 cycles of PCR were carried out: 95°C for 15 s, 55°C for 30 s, and 72°C for 50 s. ITS or 16S rDNA amplicons derived from H. uvarum or P. agglomerans, respectively, were used for the generation of standard curves. The following primers were used:
 
@@ -176,13 +299,13 @@ For bacterial 16S (Hugerth et al., 2014)
 
 Banana and Drosophila rDNAs were expected to be amplified in this qPCR, as they were in the PCR for the ITS and 16S sequencing analysis. The proportion of microbial rDNA within the total amplification products was assumed to remain consistent between the qPCR and the corresponding sequencing analysis, because the template DNA samples and amplified regions were shared between the analyses. Based on this, the copy number of microbial rDNA was estimated by multiplying the qPCR results with the microbial rDNA ratio observed in the ITS or 16S sequencing analysis of each sample.
 
-## Microbial culture
+### Microbial culture
 
 Microbes were cultured on MRS, YPD, PDA, or banana agar. MRS, YPD, and PDA were prepared using MRS Broth (Merck Millipore), YPD medium (Clontech), and Potato Dextrose Broth (Sigma-Aldrich), respectively, following the manufacturers’ protocol. Banana agar was prepared as previously described (Anagnostou et al., 2010), with the addition of autoclaving after making the banana-agar mixture. Cavendish bananas (Musa acuminata) were used. 10% p-hydroxy-benzoic acid in 70% ethanol (prepared as described in Kanaoka et al., 2023), propionic acid (Nacalai Tesque), cycloheximide (Wako), or ampicillin (Nacalai Tesque) were added after autoclaving. Food-derived microbes were cultured at 25°C for 2 days, while S. cerevisiae was cultured at 30°C for 2 days before use, unless otherwise noted. Images of single colonies were acquired with a digital camera (Visualix STD2) attached to a stereo microscope (Olympus SZX10).
 
 The S. cerevisiae BY4741 strain was obtained from NBRP-Yeast, Japan. To investigate underlying mechanisms of differential growth-promoting ability between AAB and LAB, we attempted to use Lactiplantibacillus plantarumWJL strain and a genetically engineered BCAA-producing LactoBCAA strain (Kim et al., 2021), both of which were kind gifts from W.-J. Lee. However, growth of LactoBCAA strain on our banana agar was too slow, which made it impossible to obtain a sufficient quantity of cells for the feeding experiments.
 
-## Isolation and species identification of microbes
+### Isolation and species identification of microbes
 
 Microbial strains were isolated on MRS, PDA, or banana-agar plates. The fermented bananas were spread on each of these plates. Single colonies were picked and re-streaked on a plate, and after repeating the process once more, uniform colonies were collected, suspended in MRS liquid medium containing 40% glycerol, and stored at −80°C.
 
@@ -194,7 +317,7 @@ Species identification of isolated yeast strains was performed by NCBI BLAST sea
 
 For bacteria, representative sequences of OTUs from the microbial composition analysis were compared with the sequences of isolated strains, and the strain with the closest 16S rDNA sequence was used as the strain corresponding to that OTU. See also Supplementary file 3C.
 
-## Quantification of larval development
+### Quantification of larval development
 
 The microbes were individually grown on banana agar twice before being suspended in PBS (OD600 = 60). To mix multiple species, equal amounts of the suspensions prepared as described were mixed together. 10 µl of each suspension was added to ~1.1 ml of autoclaved banana agar in 1.5-ml tubes. Tubes were incubated at 25°C for 2 days before larvae were added. The following procedure was performed as described in Watanabe et al., 2019, with a few modifications. Briefly, 20 GF larvae were added to each tube, and the tubes were kept in a moisturized incubator (80–90% humidity) at 25°C. Pupariated individuals were removed from the tubes prior to eclosion, and either discarded or transferred to vials for further incubation until eclosion occurred. The number of pupae in each tube was counted until all larvae either pupariated or died. In experiments that require daily addition of AAB, the bacterial cells (a lump of ~3 µl by volume per tube) were added daily. As more individuals pupariated, less bacteria were consumed each day. Therefore, to avoid the excessive accumulation of the bacteria, no AAB was added in a tube where the previously added bacterial lump was visible to the naked eye.
 
@@ -204,7 +327,7 @@ When feeding heat-killed yeasts to larvae, yeasts were added to the banana-agar 
 
 When feeding yeasts on banana agar supplemented with antifungal agents, the yeasts were individually grown on normal banana agar twice before being suspended in PBS at the concentration of 400 mg of yeast cells in 500 µl of PBS. 125 µl of the suspensions was introduced onto the anti-fungal agents (10 ml/l 10% butyl p-hydroxy-benzoate in 70% ethanol and 6 ml/l propionic acid, following the concentration described in Kanaoka et al., 2023)-containing banana agar in 1.5 ml tubes. After centrifugation, the supernatants were removed. The amount of cells in each tube is ~50× compared to that when feeding live yeasts.
 
-## Sequencing and annotation of yeast genomes
+### Sequencing and annotation of yeast genomes
 
 To extract genomic DNA from yeast cells for genome sequencing, yeasts were cultured on MRS plates. Collected cells were treated with Zymolyase-20T (Nacalai Tesque) to remove cell walls, and DNA was extracted using QIAGEN Genomic-tip 20G kit (QIAGEN).
 
@@ -220,11 +343,11 @@ Mitochondrial sequences in each genome assembly were identified by tblastx homol
 
 To determine gene orthology between S. cerevisiae and each of the isolated strains, blastp was performed. S. cerevisiae protein sequence data (GCF_000146045.2_R64_protein.faa) were downloaded from NCBI genome database (https://www.ncbi.nlm.nih.gov/genome). Reciprocal best hits with an e-value <10−10 were defined as orthologs.
 
-## Quantification of AAB
+### Quantification of AAB
 
 Microbes were inoculated onto 200 ml of banana agar in a tube included in a Biomasher II homogenizer kit (NIP). After adding five GF larvae, the tubes were incubated at 25°C for 4 days. 150 µl of PBS was added to the tube, and food was crushed along with the larvae in it. More PBS was subsequently added to bring the total volume of the suspension to 700 µl. 1/5 serial dilutions were made, 50 µl of which were spread onto MRS plates supplemented with antibiotics (10 µg/ml cycloheximide and 10 µg/ml ampicillin to inhibit the growth of yeasts and LAB, respectively). The plates were incubated at 25°C, and 3 days later, colonies were counted to calculate CFU.
 
-## RNA sequencing for gene expression analyses
+### RNA sequencing for gene expression analyses
 
 For larval RNA-seq analysis, microbes were inoculated on banana agar as previously described and freshly hatched GF larvae were added. After 15 hr feeding, 20 larvae were collected and snap-frozen. RNA extraction, sequencing, and data analysis were performed as previously described (Kanaoka et al., 2023).
 
@@ -232,26 +355,26 @@ Yeast RNA was extracted as described above, and sequenced as previously describe
 
 For the heat maps in Figures 3A and 4C, heatmap.2 in the gplots (Warnes et al., 2022) package of R (R Development Core Team, 2020) was used. Database for annotation, visualization and integrated discovery (DAVID) Functional Annotation Chart (Huang et al., 2009; Sherman et al., 2022) was used to find significantly enriched GO terms or KEGG pathways in each analysis. For comparisons with the microarray analysis result of Zinke et al., 2002, their gene expression data (fold change value) of the individuals at 12 hr after feeding or starvation was used. For our data, log2(fold change) of gene expression was calculated for each supportive and non-supportive condition pair. Genes that were represented by more than one probes were omitted. The FlyBase IDs in the data of Zinke et al., 2002 were converted to current IDs using FlyBase ID Validator (https://flybase.org/convert/id). Only the genes that had one-to-one correspondence with current FlyBase IDs were included in the heat maps. The genes that showed significantly different expression between fed (‘normal’ in the cited paper) and starved conditions, that is, those with fold-change values of ≥1 or ≤−1, are shown.
 
-## Preparing samples for LC–MS analysis
+### Preparing samples for LC–MS analysis
 
 The yeasts were individually grown on banana agar three times. 100 mg of cells were scraped from the surface of the plates and snap-frozen. To prepare yeast-conditioned plates, yeasts were grown as described and thoroughly removed by scraping. 22 mm2 chunks of agar from the plates (~100–160 mg) were collected and snap-frozen. 15 g/l agar plates or sterile banana-agar plates were prepared as controls and collected using the same procedure. To prepare cell suspension supernatants,~250 mg of yeast cells were collected as described, and sterile PBS was added at a ratio of 5 µl PBS per 1 mg of yeast cells. After suspending the cells, the suspensions were centrifuged at 2260 × g for 5 min. The supernatants were further filtered using a 0.45-µm Millex-HA filter (Merck) to completely remove any remaining yeast cells. 700 µl of each supernatant was collected and snap-frozen.
 
 Each sample was suspended or diluted to 500µl of methanol containing internal standard; 30 μM 2-Morpholinoethanesulfonic acid and 30 μM L-Methionine. After mixing with 250 µl of water and 400 µl of chloroform, the samples were centrifuged and the upper layer was collected and filtered using an UltrafreeMC-PLHCC for Metabolome Analysis column (Human Metabolome Technologies, #UFC3LCCNB-HMT). The samples were dried completely using nitrogen gas and resuspended in water before injection into the LC–MS system.
 
-## LC–MS/MS measurement
+### LC–MS/MS measurement
 
 Cationic metabolites including amino acids and nucleosides are quantified using a triple-quadrupole mass spectrometer equipped with an electrospray ionization (ESI) ion source (LCMS-8060, Shimadzu Corporation) in the positive and negative-ESI and multiple reaction monitoring (MRM) modes. The samples were resolved on the Discovery HS F5-3 column (2.1 mm ID × 150 mm, 3 μm particle, Sigma-Aldrich), using a step gradient with mobile phase A (0.1% formate/water) and mobile phase B (0.1% formate/acetonitrile) at ratios of 100:0 (0–5 min), 75:25 (5–11 min), 65:35 (11–15 min), 5:95 (15–20 min), and 100:0 (20–25 min), at a flow rate of 0.25 ml min−1 and a column temperature of 40°C. Chromatogram peaks obtained with compound-specific MRM channels were integrated and manually confirmed. If more than one confirmatory MRM channel was available for the target compound, it was set to confirm the identification of the peak compound. Structural isomers were separated either by retention time on the column or by compound-specific MRM signals. Detailed MRM conditions are identical to the previously published study (Oka et al., 2017). To further confirm the signal specificity, sample-derived chromatographic peaks were compared with the corresponding standards to ensure that retention times were consistent. Peak quantification values obtained for each compound were corrected for recovery due to L-Met in the IS. Data are presented as peak area values for each metabolite normalized by the internal standard. Those for the yeast-conditioned plates or cells were further normalized with sample wet weight. Heat maps were generated by MetaboAnalystR 3.3.0 (Pang et al., 2020), using data for all of the detected metabolites or a subset of metabolites that are included in the holidic medium of D. melanogaster (Piper et al., 2014).
 
-## Developmental progression with BCAA supplementation
+### Developmental progression with BCAA supplementation
 
 Yeasts were cultured as described on autoclaved banana agar supplemented with 2.03 g/l of leucine (Nacalai Tesque) and 1.12 g/l of isoleucine (Peptide Institute), both at the concentrations included in the holidic medium with exome-matched FLYAA (Piper et al., 2017). Twenty larvae were added to each tube, and after 11 days of feeding, live or dead individuals in each developmental stage were counted. Larval developmental stages were determined based on tracheal morphology, as previously described (Niwa et al., 2010). The percentage of the larvae that could not be found are indicated as ‘Not found’.
 
 Technically, it was difficult to match the amounts of leucine and isoleucine to be added to the foods to the difference in amounts released by the supportive and non-supportive species. This was because under our experimental condition, quantification of the microbe-derived BCAAs accumulating in the culture medium, which was performed in previous studies (Consuegra et al., 2020a; Henriques et al., 2020), was impractical due to constant absorption of the nutrients by the yeasts themselves. Given this constraint, we opted for the amino acid concentrations in the holidic medium, which concentrations are sufficient to support larval growth under axenic conditions and not detrimental to larval growth (Piper et al., 2014).
 
-## Imaging of dead yeast cells
+### Imaging of dead yeast cells
 
 Microbes were grown on banana-agar plates for 3 days, then collected and suspended in PBS at a concentration of ~1 × 108 cells/ml. The cells were subsequently incubated in 5 µg/ml Phloxine B (Wako) for 10 min at room temperature. The cells were subsequently washed twice with PBS and observed using a Nikon C1 laser scanning confocal microscope coupled to a Nikon Eclipse E-800 microscope. Note that the brightness of the images was adjusted with a gradation to achieve mostly uniform brightness, because the bottom side of the original images was darker due to microscope malfunction.
 
-## Statistical analysis
+### Statistical analysis
 
 R (R Development Core Team, 2020) was used for all statistical analyses. p-values less than 0.05 were considered statistically significant. For statistical analyses of RNA-seq data, see Supplementary file 4, Supplementary file 5, and Supplementary file 8. See Supplementary file 9, Materials and methods, and figure legends for analysis of other experiments.

@@ -14,14 +14,14 @@
 
 ### Affiliations
 
-1. https://ror.org/05td3s095 State Key Laboratory of Agricultural and Forestry Biosecurity, College of Plant Protection, Nanjing Agricultural University Nanjing China
-2. https://ror.org/05td3s095 College of Science, Nanjing Agricultural University Nanjing China
+1. State Key Laboratory of Agricultural and Forestry Biosecurity, College of Plant Protection, Nanjing Agricultural University Nanjing China ([ROR:05td3s095](https://ror.org/05td3s095))
+2. College of Science, Nanjing Agricultural University Nanjing China ([ROR:05td3s095](https://ror.org/05td3s095))
 
 † Corresponding author
 
 ## Abstract
 
-Modern fungicides have made significant contributions to crop disease management, but the development of resistant fungal strains has caused their failure in disease control. Therefore, developing fungicides with novel action mechanisms is the most effective measure to manage resistance. Quinofumelin, a novel quinoline fungicide, exhibits exceptional antifungal activity against phytopathogens. However, there is currently no available information on its mechanism of action. Here, we used transcriptome and metabolome analysis to observe a co-enrichment pattern of differentially expressed genes (DEGs) and differentially accumulated metabolites (DAMs) within pyrimidine biosynthesis pathway (PBP), identifying down-regulation of dihydroorotate dehydrogenase (DHODH). Exogenous uridine monophosphate (UMP), uridine, or uracil (metabolites in PBP) successfully restored quinofumelin-induced inhibition of mycelial growth in Fusarium graminearum and Fusarium asiaticum . Additionally, the deletion of FgDHODHII was determined to be lethal; however, mycelial growth of ΔFgDHODHII mutants could be restored by adding UMP, uridine, or uracil. These findings indicate that the deficiencies in FgDHODHII are functionally equivalent to complete inhibition of its activity by quinofumelin. Finally, molecular docking, surface plasmon resonance (SPR), and microscale thermophoresis (MST) results strongly support the precise interaction between quinofumelin and FgDHODHII. Collectively, these findings provide compelling evidence for the involvement of de novo uracil biosynthesis as a mechanism of action for quinofumelin while identifying FgDHODHII as its specific target.
+Modern fungicides have made significant contributions to crop disease management, but the development of resistant fungal strains has caused their failure in disease control. Therefore, developing fungicides with novel action mechanisms is the most effective measure to manage resistance. Quinofumelin, a novel quinoline fungicide, exhibits exceptional antifungal activity against phytopathogens. However, there is currently no available information on its mechanism of action. Here, we used transcriptome and metabolome analysis to observe a co-enrichment pattern of differentially expressed genes (DEGs) and differentially accumulated metabolites (DAMs) within pyrimidine biosynthesis pathway (PBP), identifying down-regulation of dihydroorotate dehydrogenase (DHODH). Exogenous uridine monophosphate (UMP), uridine, or uracil (metabolites in PBP) successfully restored quinofumelin-induced inhibition of mycelial growth in Fusarium graminearum and Fusarium asiaticum. Additionally, the deletion of FgDHODHII was determined to be lethal; however, mycelial growth of ΔFgDHODHII mutants could be restored by adding UMP, uridine, or uracil. These findings indicate that the deficiencies in FgDHODHII are functionally equivalent to complete inhibition of its activity by quinofumelin. Finally, molecular docking, surface plasmon resonance (SPR), and microscale thermophoresis (MST) results strongly support the precise interaction between quinofumelin and FgDHODHII. Collectively, these findings provide compelling evidence for the involvement of de novo uracil biosynthesis as a mechanism of action for quinofumelin while identifying FgDHODHII as its specific target.
 
 ## Introduction
 
@@ -33,25 +33,47 @@ Quinofumelin (CAS 861647-84-9) is a novel quinoline fungicide developed by Mitsu
 
 ## Results
 
-## Transcriptomic analysis of F. graminearum as affected by quinofumelin
+### Transcriptomic analysis of F. graminearum as affected by quinofumelin
 
 RNA-seq experiments have emerged as the standard approach for quantifying and comparing gene expression levels across a wide range of species and conditions, providing critical insights into cellular phenomena (Pertea et al., 2016). To investigate the impact of quinofumelin on gene expression levels in F. graminearum, we performed an RNA-seq experiment. For quality assessment of the RNA-seq data, we conducted a comprehensive quality control analysis. In the principal component analysis, PC1 and PC2 accounted for 45.59% and 16.98% of the total variance, respectively. The distinct separation observed between the groups indicates significant differences in gene expression between the controls and experimental samples, which could be used for subsequent investigations (Figure 1—figure supplement 1). The clustering heat map effectively categorized the controls and experimental samples into distinct clusters based on their gene expression profiles, demonstrating robust biological replication with minimal intra-group variability and ensuring the reliability of the data. Moreover, notable inter-group dissimilarities highlighted variations among different treatment samples (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig1-v1.jpg)
+
+**Figure 1.:** (A) Bar chart illustrating the comparison of differentially expressed genes between EC90 treatments and the control. (B) Volcano plot depicting up-regulated differentially expressed genes (DEGs) as red scattered dots and down-regulated DEGs as blue scattered dots. (C) Cluster heat maps displaying gene relative expression values using RNA-seq data scale-standardized values. (D) Bubble map presenting the results of Gene Ontology (GO) enrichment analysis for DEGs. (E) Bubble map showcasing the findings of Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis for DEGs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) 3D principal component analysis diagram of EC90, CK, and QC samples in positive ion mode. (B) 3D principal component analysis diagram of EC90, CK, and QC samples in negative ion mode. (C) Heat map of inter-sample correlation analysis in positive ion mode. (D) Heat map of inter-sample correlation analysis in negative ion mode.
+
 The differential analysis unveiled a total of 234 significantly DEGs between the control and experimental samples. Among these findings, there were identified as up-regulated for a count of 97 genes while down-regulation was observed in case of another set comprising around 137 genes (Figure 1A). A graphical representation was employed to depict the statistical distribution pattern exhibited by these DEGs (Figure 1B). To gain deeper insights into gene functionalities, Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses were performed on these DEGs. The results showed that they are notably enriched in seventeen distinct GO terms spanning across two major categories: eleven molecular functions along with six processes (Figure 1D). Furthermore, the enrichment analysis highlighted significant associations with various functional attributes, including transition metal ion binding, oxidoreductase activity, modified amino acid binding, amide binding, monooxygenase activity, and heme binding. Moreover, the enriched biological processes are primarily involved in transcriptional regulation driven by nucleic-enabled mechanisms, as well as monocarboxylic acid metabolism and RNA biosynthesis. Additionally, the KEGG enrichment analysis identified specific pathways associated with thiamine metabolism, tryptophan metabolism, nitrogen metabolism, amino acid sugar and nucleotide sugar metabolism, pantothenic acid and CoA biosynthesis, as well as nucleotide sugar production compound synthesis (Figure 1E). In the GO and KEGG enrichment analyses, the detailed counts of down- and up-regulated DEGs for each metabolic pathway are provided in Supplementary file 1.
 
-## Metabolomic analysis of F. graminearum as affected by quinofumelin
+### Metabolomic analysis of F. graminearum as affected by quinofumelin
 
 According to the findings from the KEGG enrichment analysis of DEGs derived from transcriptomic data, these DEGs are associated with metabolism pathways as above described. To specifically investigate the metabolic pathways involved in the action mechanism of quinofumelin, we performed further metabolomic experiments. In metabolomics principal component analysis, the contribution rate of PC1 was determined to be 76.6% in positive ion mode and 51.2% in negative ion mode, respectively. Moreover, the quality control (QC) samples exhibited highly concentrated results, indicating excellent instrument stability and remarkable data repeatability. Furthermore, a distinct separation between groups was observed, particularly prominent in the positive ion mode, indicating significant variations in metabolites among different groups that warrant further investigation (Figure 1—figure supplement 2A, B). The findings from Pearson correlation analysis were consistent with those obtained from principal component analysis (Figure 1—figure supplement 2C, D). Strong correlations were identified within samples belonging to the same group, while weak correlations were observed between different groups.
 
 Metabolomics analysis revealed a total of 713 differential metabolites, with 14 up-regulated and 699 down-regulated in the positive ion mode, as well as 230 differential metabolites, including 103 up-regulated and 127 down-regulated in the negative ion mode (Figure 1—figure supplement 2A; Figure 2—figure supplement 1A). Based on the classification of the identified 943 different metabolites, it was observed that amino acids and their derivatives accounted for the highest proportion (17%), followed by organic acids and their derivatives (11%), benzene and substituted derivatives (11%), aldehydes, ketones, esters (11%), and heterocyclic compounds (10%) (Figure 2c). The volcano plot visually represents the distribution of statistical differences in metabolite abundance between the two groups (Figure 1—figure supplement 2B; Figure 2—figure supplement 1B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig2-v1.jpg)
+
+**Figure 2.:** (A) Bar chart illustrating the number of differential accumulation metabolites (DAMs) quantity in experimental groups (EC90) and control groups (CK) in positive ion mode. (B) Volcanic map of all metabolites in positive ion mode. The red scatter points represent up-regulated DAMs, while the blue scatter points represent down-regulated DAMs. (C) Classification and proportion of DAMs. (D) Bubble diagram of differential accumulation metabolite Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment pathway. (E) Pyrimidine de novo biosynthesis pathway in Fusarium graminearum. The left box plots represent the relative content of eight metabolite samples, while the right box represents the relative content of six gene samples. The color gradient from navy blue to firebrick red indicates a progression from low to high content.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A bar chart illustrating the number of differentially accumulated metabolite (DAM) quantity in experimental group (EC90) and control group (CK) in the negative ion mode. (B) Volcanic map of all metabolites in the negative ion mode. The red scatter points represent the up-regulated DAMs, and the blue scatter points represent the down-regulated DAMs. (C) Pie diagram of differential metabolite enrichment pathway classification.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** After the strain PH-1 was cultured in Yeast extract peptone dextrose (YEPD) medium for 36 hr, the EC50 (0.035 μg/mL) and EC90 (1 μg/mL) of quinofumelin were added, respectively, followed by an additional 12 hr incubation period. The expression level of the DHODHII gene was subsequently quantified using RT-qPCR. Data represent the mean values and standard errors derived from three independent replicates. Letters above the columns indicate statistically significant differences among treatments (p<0.05, ANOVA, LSD).
+
 KEGG pathways enriched by differential metabolites primarily include arachidonic acid metabolism, pyrimidine metabolism, alanine, aspartate, and glutamate metabolism, purine metabolism, citrate cycle, arginine and proline metabolism, fructose and mannose metabolism, nitrogen metabolism, and metabolic pathways (Figure 2D). The classification of enrichment pathways for differential metabolites revealed that the majority of these metabolites were associated with nucleotide metabolism (25%), amino acid metabolism (25%), carbohydrate metabolism (25%), and energy metabolism (12.5%) (Figure 2—figure supplement 1C).
 
-## Conjoint analysis of transcriptome and metabolome integration
+### Conjoint analysis of transcriptome and metabolome integration
 
 Through transcriptome and metabolome data analysis, we observed a co-enrichment of differentially expressed genes and differentially accumulated metabolites in the pyrimidine metabolism pathway. In the expression calorigrams of metabolites and genes depicting the de novo biosynthesis pathway of pyrimidine, we identified down-regulation of dihydroorotate dehydrogenase (DHODH) in the experimental groups. Through in vitro RT-qPCR verification, it was found that after treating with quinofumelin at EC50 (0.035 μg/mL) and EC90 (1 μg/mL) concentrations, the expression of the DHODH gene was, respectively, decreased by 11.91% and 33.77% (p＜0.05) (Figure 2—figure supplement 2). This down-regulation hinders the conversion of dihydroorotate to orotate, thereby inhibiting the biosynthesis of downstream metabolites orotidine-5P and uracil, leading to their decreased abundance (Figure 2E). Thus, we conclude that the action mechanism of quinofumelin may involve inhibition of the de novo biosynthesis pathway of pyrimidine.
 
-## Identiﬁcation of DHODHII in F. graminearum
+### Identiﬁcation of DHODHII in F. graminearum
 
 The FgDHODHII gene (FGSG_09678) was identified through the integrated analysis of transcriptome and metabolome data. The gene sequence for FgDHODHII was retrieved from the National Center for Biotechnology Information (NCBI) GenBank database. FgDHODHII is a gene consisting of 1419 bp without introns and is predicted to encode a protein consisting of 472 amino acids. Orthologs of FgDHODHII were obtained using the BLAST algorithm. The phylogenetic tree was constructed based on the amino acid sequences of DHODHII homologous proteins with Mega X using the neighbor-joining method. Motif pattern information was generated using the MEME suite (Bailey et al., 2009), while functional domain information and protein coordinates were obtained through CD-search (Marchler-Bauer et al., 2009). TBtools software was used for visualizing the tree representation (Chen et al., 2020). All DHODHII proteins possess the dihydroorotate dehydrogenase domain (Figure 3), indicating high conservation among fungi. Additionally, the amino acid sequence of the FgDHODHII exhibited 551% similarity to that of DHODHII from Pyricularia oryzae, as previously reported (Higashimura et al., 2022).
 
@@ -59,11 +81,19 @@ The FgDHODHII gene (FGSG_09678) was identified through the integrated analysis o
 
 **Figure 3.:** The phylogenetic tree was constructed based on the amino acid sequences of DHODHII homologous proteins with Mega X using the neighbor-joining method. The bootstrap values from 1000 replications are indicated on the branches. Motif pattern information was generated using the MEME suite12, while functional domain information and protein coordinates were obtained through CD-search. The final phylogenetic tree was visualized using TBtools. FgDHODHII was highlighted in red. The amino acid sequence of DHODHII from Alternaria alternata (AA0117_g542), Aspergillus nidulans (ANIA_05909), Aspergillus oryzae (AO1008_05965), Blumeria graminis (BLGH_00861), Botrytis cinerea (Bcin15g04150), Botrytis elliptica (BELL_0162g00150), Colletotrichum asianum (GQ607_007053), Colletotrichum fioriniae (CFIO01_03831), Colletotrichum higginsianum (CH063_10143), Corynespora cassiicola (BS50DRAFT_576390), Erysiphe necator (EV44_g2092), Erysiphe pulchra (EPUL_004094), Fusarium euwallaceae (BHE90_002825), Fusarium floridanum (CEP51_012005), Fusarium fujikuroi (FFMR_05040), Fusarium graminearum (FGSG_09678), Fusarium nygamai (FNYG_10990), Fusarium odoratissimum (FOIG_08270), Fusarium oxysporum (FOXG_08390), Fusarium pseudograminearum (FPSE_04283), Fusarium solani (NechaG15121), Fusarium verticillioides (FVEG_06288), Magnaporthe oryzae (MGG_08814), Neurospora crassa (NCU06532), Oidium neolycopersici (OnM2_089032), Pestalotiopsis fici (PFICI_04984), Podospora anserina (PODANS_6_7920), Puccinia graminis (PGTG_16739), Puccinia triticina (PTTG_02070), Rhizoctonia solani (RSOLAG22IIIB_08327), Schizosaccharomyces pombe (SPAC57A10.12c), Ustilaginoidea virens (UVI_02052880), Verticillium alfalfae (VDBG_01322), Verticillium dahliae (VDAG_07935), and Zymoseptoria tritici (Mycgr3G72548) were accessed in EnsemblFungi database.
 
-## Recovery test of mycelial growth suppressed by quinofumelin in Fusarium genus
+### Recovery test of mycelial growth suppressed by quinofumelin in Fusarium genus
 
 The mycelial growth of F. graminearum PH-1 was significantly inhibited on CZA plates containing quinofumelin at concentrations of 1 μg/mL (Figure 4). To investigate the potential recovery of mycelial growth by exogenous dihydroorotate, uridine monophosphate (UMP), uridine, or uracil, CZA plates supplemented with quinofumelin were treated with these compounds. Despite the addition of exogenous dihydroorotate at 50 μg/mL failing to restore mycelial growth, the addition of exogenous UMP, uridine, or uracil at 50 μg/mL successfully recovered quinofumelin-induced inhibition of mycelial growth. Similar results were observed in other strains of F. graminearum or F. asiaticum (Figure 4; Figure 4—figure supplement 1). Thus, it can be concluded that quinofumelin effectively inhibits the pyrimidine biosynthesis pathways.
 
-## The absence of FgDHODHII is lethal for mycelial growth in F. graminearum
+![Figure 4.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig4-v1.jpg)
+
+**Figure 4.:** All strains were incubated on Czapek Solution Agar (CZA) plates at 25°C for 3 days. F. graminearum strains PH-1, 512E-8, SX2117, XY-4, and R10. The left image shows the colony morphology, while the right image is a bar chart of colony diameters.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** All strains were incubated on Czapek Solution Agar (CZA) plates at 25°C for 3 days. F. asiaticum strains: 2021, HAC2105, 512 F-10, 512 F-2, and 512 F-6. The left image shows the colony morphology, while the right image is a bar chart of colony diameters.
+
+### The absence of FgDHODHII is lethal for mycelial growth in F. graminearum
 
 To further investigate the biological functions of FgDHODHII in F. graminearum, we employed a homologous recombination strategy to generate target gene deletion mutants. Through PCR analysis, two putative FgDHODHII deletion mutants were successfully identified. The ΔFgDHODHII mutants exhibited distinct phenotypic differences compared to the wild-type progenitor PH-1 and the respective complemented strain (Figure 5A). These mutants displayed an inability to grow on CZA plates; however, their mycelial growth was restored when supplemented with 50 μg/mL of exogenous UMP, uridine, or uracil, while no recovery was observed with 50 μg/mL of exogenous dihydroorotate (Figure 5B).
 
@@ -71,15 +101,23 @@ To further investigate the biological functions of FgDHODHII in F. graminearum, 
 
 **Figure 5.:** (A) Mycelial growth of the FgDHODHII deletion mutants and the parental strain was observed in the presence or absence of 50 μg/mL uridine. (B) Recovery of mycelial growth of the FgDHODHII deletion mutants was observed in the presence of 50 μg/mL dihydroorotate, uridine monophosphate (UMP), uridine, or uracil. All strains were incubated at 25°C for 3 days.
 
-## Molecular docking
+### Molecular docking
 
 To facilitate the molecular docking process between FgDHODHII and quinofumelin, ten distinct binding models were generated using AutoDockTools-1.5.7 software, each accompanied by its respective binding energies calculation results. The most favorable conformational arrangement was determined based on its relative ranking in terms of the computed binding energy values and subsequently visualized through PyMOL 2.5.4 software (Figure 6A). Notably, the obtained docking results revealed a robust interaction between FgDHODHII protein and quinofumelin as evidenced by a calculated negative free energy value of –6.8 kcal/mol.
 
-## The precise interaction between FgDHODHII and quinofumelin was verified by surface plasmon resonance analysis
+![Figure 6.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig6-v1.jpg)
+
+**Figure 6.:** (A) Three-dimensional model of the wild-type FgDHODHII are depicted, with an enlarged view highlighting the binding site for quinofumelin on the corresponding FgDHODHII models. (B) The surface plasmon resonance (SPR) response (RU) analysis and fitting results demonstrate the interaction between quinofumelin and FgDHODHII. (C) Microscale thermophoresis (MST) analysis to detect the binding of quinofumelin and FgDHODHII.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/105892/elife-105892-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The purification effect of pCold-9 ×His-MBP-TEV-DHODHII. (B) The purification effect of pET-28a (+)-DHODHII. (C) The purification of pET-28a (+) -DHODHII124-467. The lane M is a protein marker; in a and c, lanes 1–8 were supernatant, precipitate, flow through solution, and eluent containing 5, 20, 50, 100, and 250 mM imidazole, respectively. In b, lanes 1–9 were the whole fungus, supernatant, precipitate, flow-through solution, and eluent containing 5, 20, 50, 100, and 250 mM imidazole.
+
+### The precise interaction between FgDHODHII and quinofumelin was verified by surface plasmon resonance analysis
 
 Surface plasmon resonance (SPR) was utilized to evaluate the interaction affinity between quinofumelin and FgDHODHII in this study. The experiment was conducted using a BIAcore T200 (Cytiva) instrument for biomolecular interaction analysis. FgDHODHII was immobilized as the ligand on the chip surface, while quinofumelin continuously flowed through as the analyte solution. Dilute quinofumelin to different concentration gradients (62.5, 32.15, 15.63, 7.81, 3.91 μM), measure the binding energy, and then fit the binding equilibrium dissociation constant (Kd) value (Figure 6B). The SPR results revealed that quinofumelin exhibited fast-binding and fast-dissociation modes when interacting with the target protein FgDHODHII. The calculated KD value was determined as 6.606 × 10–6 M, indicating specific binding of quinofumelin to FgDHODHII.
 
-## The interaction between FgDHODHII and quinofumelin was confirmed by microscale thermophoresis
+### The interaction between FgDHODHII and quinofumelin was confirmed by microscale thermophoresis
 
 In this study, microscale thermophoresis (MST) was further used to evaluate the interaction affinity between FgDHODHII and quinofumelin. The strength of the binding can be inferred from the Kd value. The experiment was conducted using MO.Control v1.6.1 and data analysis was performed using MO. Affinity Analysis v2.3. By introducing a fluorescent label GFP to the FgDHODHII protein while maintaining its concentration constant, non-fluorescent labeled small molecules were diluted into 16 concentration gradients. Subsequently, the protein solution and small molecule diluent were mixed at a ratio of 19:1 before being loaded into the capillary for further analysis in the machine. The MST assay demonstrated that FgDHODHII exhibited specific binding to quinofumelin in vitro, with a dissociation constant (Kd) of 0.471±0.268 μM, whereas no binding was observed with phenamacril which lacks cross-resistance with quinofumelin (Figure 6C).
 
@@ -99,7 +137,7 @@ Unlike many other dehydrogenases that require NAD or NADP as an electron accepto
 
 ## Materials and methods
 
-## Strains, culture conditions, and fungicides
+### Strains, culture conditions, and fungicides
 
 F. graminearum sensitive strain PH-1 and 9 wild-type strains (F. graminearum and F. asiaticum), and the PH-1 deletion mutants ΔFgDHODHII were maintained in the Fungicide Biology Laboratory, Nanjing Agricultural University.
 
@@ -107,27 +145,115 @@ The media used in this study included potato dextrose agar (PDA) medium, Yeast e
 
 Chemical-grade quinofumelin (Mitsui Agricultural Chemical Company of Japan) was prepared with dimethyl sulfoxide at a concentration of 1 × 104 μg/mL and stored at 4°C.
 
-## Transcriptomic assay of mycelial growth in F. graminearum as affected by quinofumelin
+### Transcriptomic assay of mycelial growth in F. graminearum as affected by quinofumelin
 
 A total of 20 mL of YEPD medium containing 1 mL of conidia suspension (1 × 105 conidia/mL) was incubated with shaking (175 rpm/min) at 25°C. After 24 hr, the medium was added with quinofumelin (EC90) at a concentration of 1 μg/mL, while an equal amount of dimethyl sulfoxide was added as the control (CK). The incubation continued for another 48 hr, followed by ﬁltration and collection of hyphae. Subsequently, Genedenovo Biotechnology Co., Ltd. (Guangzhou, China) performed sequencing on the Illumina platform. Quality control measures were implemented to remove linker sequences and low-quality bases from the original reads in order to obtain clean data readings. The filtered data underwent analysis for base composition and mass distribution to visualize data quality. Based on the gene expression data, we used R (http://www.r-project.org/) for conducting principal component analysis, while the ‘pheatmap’ package was used to generate the clustering heatmap. DESeq2 was applied to analyze group differences based on quantitative expression results. The screening threshold of p-value <0.05 and FC ≥1.5 or FC ≤0.67 was used to identify unigenes with significant differential expression between the two groups using a t-test. Finally, functional enrichment analysis of GO and KEGG pathways was performed on these differentially expressed unigenes.
 
-## Metabonomic assay of mycelial growth in F. graminearum as affected by quinofumelin
+### Metabonomic assay of mycelial growth in F. graminearum as affected by quinofumelin
 
 Transcriptome and metabolome samples were obtained from the same treatment group. The widely targeted metabolome analysis was conducted by Metware Biotechnology Co., Ltd. (Wuhan, China). The frozen sample stored at –80°C was thawed on ice. A 400 μL solution (Methanol: Water = 7:3, v/v) containing an internal standard was added to a 20 mg sample and vortexed for 3 min. Subsequently, the sample was sonicated in an ice bath for 10 min and vortexed for 1 min before being placed at –20°C for 30 min. After centrifugation at 12,000 rpm for 10 min (4°C). The sediment was removed, followed by another centrifugation of the supernatant at 12,000 rpm for 3 min (4°C). A volume of 200 μL aliquots of supernatant was transferred for LC-MS analysis. All samples were acquired using the LC-MS system according to machine orders. The original data file acquired by LC-MS was converted into mzML format using ProteoWizard software. Peak extraction, peak alignment, and retention time correction were performed by XCMS program. The identiﬁed metabolites were analyzed using MBEole2.0 (csbg.cnb.csic.es/mbrole2/index.php) and KEGG (http://www.kegg.jp). PLS-DA analysis was used to identify the differentially accumulated metabolites (DAMs), with a screening threshold of p-value <0.05 and FC ≥1.5 or FC ≤0.67. Each sample was replicated six times for biological consistency.
 
-## Recovery assay of quinofumelin-induced mycelial growth inhibition in F. graminearum
+### Recovery assay of quinofumelin-induced mycelial growth inhibition in F. graminearum
 
 F. graminearum sensitive strain PH-1 and 9 wild-type strains (F. graminearum and F. asiaticum), and the PH-1 deletion mutants ΔFgDHODHII, were preincubated on a PDA plate to form mycelial colonies. Mycelial plugs (5 mm in diameter) from the edge of a 3-day-old colony were removed and inoculated onto a CZA plate containing quinofumelin (1 μg/mL) and dihydroorotate, UMP, uridine, or uracil at 50 μg/mL, followed by measurement of colony diameters. Three replicates were conducted for each concentration.
 
-## Construction of deletion mutant vectors
+### Construction of deletion mutant vectors
 
 The deletion mutant of FgDHODHII was generated through protoplast transformation, as previously described with some modifications in the transformation procedures (Zhang et al., 2016). For the transformation process, washed protoplasts were suspended in 160 μL sorbitol-tris-calcium chloride (STC) solution and 40 μL sorbitol-peg-tris-calcium chloride (SPTC) solution (40% polyethylene glycol 6000 in STC), along with 2 μg of the aforementioned DNA fragments and 10 μL of heparin (5 mg/mL in STC) to form protoplast suspensions. Subsequently, these mixtures were incubated on ice for 30 min, followed by mixing with 1 mL of SPTC and further incubation at room temperature for 20 min. The resulting suspensions were gently mixed into regeneration medium (RM) (100 mL) containing 50 μg/mL uridine and poured into plates. After incubating for 24 hr at 25°C, the plates were overlaid with selective regeneration medium (SRM) containing 50 μg/mL uridine and continuously incubated for an additional 4 days. The putative transformants could be observed growing on SRM. All primers used are listed in Table 1.
 
-## Molecular docking
+**Table 1.**
+ Primers used in the study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence (5’–3’)</th>
+      <th>Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FgDHODHII-UF</td>
+      <td>GGCAGTGAAAGTCTTGTTCAAG</td>
+      <td rowspan="2">PCR primers to amplify FgDHODHII upstream fragment</td>
+    </tr>
+    <tr>
+      <td>FgDHODHII-UR</td>
+      <td>GCTCCTTCAATATCATCTTCTGTGGCTGGGAAGTAATGCTGGG</td>
+    </tr>
+    <tr>
+      <td>FgDHODHII-DF</td>
+      <td>GAGACAATACCGGAAGGAACACATGCTATAGCAAGCAACA</td>
+      <td rowspan="2">PCR primers to amplify FgDHODHII downstream fragment</td>
+    </tr>
+    <tr>
+      <td>FgDHODHII-DR</td>
+      <td>AAACTTAACAAATCATCTTTGCC</td>
+    </tr>
+    <tr>
+      <td>SS-F</td>
+      <td>ACAGAAGATGATATTGAAGGAGC</td>
+      <td rowspan="2">PCR primers to amplify Hph-Hsv-tk fragment</td>
+    </tr>
+    <tr>
+      <td>SS-R</td>
+      <td>GAGACAATACCGGAAGGAA</td>
+    </tr>
+    <tr>
+      <td>FgDHODHII-YZ-F</td>
+      <td>TTTGCCCGATCTCTTGGTCT</td>
+      <td rowspan="2">PCR primers to verify FgDHODHII</td>
+    </tr>
+    <tr>
+      <td>FgDHODHII-YZ-R</td>
+      <td>AACCACCAGTCTCCATGAGG</td>
+    </tr>
+    <tr>
+      <td>FgDHODHII-GFP-F</td>
+      <td>CTCATCACCATCACCATCACATGTCTGCCGCTCTCCTACG</td>
+      <td rowspan="2">Constructed FgDHODHII-GFP fusion vector</td>
+    </tr>
+    <tr>
+      <td>FgDHODHII-GFP-R</td>
+      <td>AGCTCCTCGCCCTTGCTCACCCTCGAATTCTTCACACCAC</td>
+    </tr>
+    <tr>
+      <td>T7</td>
+      <td>TAATACGACTCACTATAGG</td>
+      <td rowspan="2">Amplification of FgDHODHII fragments for sequencing</td>
+    </tr>
+    <tr>
+      <td>T7t</td>
+      <td>CCGCTAGTTATTGCTCAGC</td>
+    </tr>
+    <tr>
+      <td>pET-28a-F</td>
+      <td>CCTGGTGCCGCGCGGCAGCCATATGCTGGCTGTCAATGTTTTTGGAACAG</td>
+      <td rowspan="2">PCR primers to construct pET28a-FgDHODHII expression vector</td>
+    </tr>
+    <tr>
+      <td>pET-28a-R</td>
+      <td>AAGCTTGTCGACGGAGCTCGAATTCCTATTTTAACTCCTGCTTGATCCTG</td>
+    </tr>
+    <tr>
+      <td>pCold-F</td>
+      <td>GTAAAGCACGCCATATCGC</td>
+      <td rowspan="2">PCR primers to construct pCold-FgDHODHII expression vector</td>
+    </tr>
+    <tr>
+      <td>pCold-R</td>
+      <td>CCAAATGGCAGGGATCTTAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular docking
 
 The binding affinity of quinofumelin with FgDHODHII protein was assessed through molecular docking using AutoDockTools-1.5.7 software. The three-dimensional structure of quinofumelin (PubChem CID: 23160856) used for docking was obtained from PubChem database, while the three-dimensional structural model of F. graminearum DHODHII protein predicted by AlphaFold (Jumper et al., 2021) was obtained from the UniProt database (Bateman et al., 2019). In the docking studies, binding energy was employed as a metric to evaluate the strength of protein-ligand interaction, where lower values indicated higher affinity between proteins and ligands. The resulting docking outcomes were visualized using PyMOL software version 2.5.4.
 
-## SPR verification of specific interactions between FgDHODHII and quinofumelin
+### SPR verification of specific interactions between FgDHODHII and quinofumelin
 
 The cDNA sequence of FgDHODHII was analyzed and codon optimization was performed for the E. coli expression system (Kyriakopoulos and Kontoravdi, 2013; Yang et al., 2021). Subsequently, it was ligated into the pCold-9×his MBP plasmid and the pET-28a plasmid at the NdeI and EcoRI sites within the multiple cloning sites to construct recombinant plasmids: pCold-9×his-MBP-TEV-DHODHII (Fang et al., 2018), pET-28a (+)-DHODHII and pET-28a (+)-DHODHII124-467 (with removal of insoluble fragments) (Figure 6—figure supplement 1).
 
@@ -135,10 +261,10 @@ Using primers T7 and T7t for sequencing resulted in the identification of the co
 
 The interaction between FgDHODHII and quinofumelin was evaluated using a Biacore T200 instrument (GE Healthcare). The CM7 sensor chip was employed for immobilizing 50 μg/mL of purified FgDHODHII protein via amino coupling method at a flow rate of 10 μL/min, utilizing 1×PBS-P+containing 5% DMSO as running buffer. The desired coupling amount of FgDHODHII protein on the chip surface was targeted to be within the range of 12,000–24,000 RU. To investigate binding affinity, quinofumelin concentrations were diluted from 3.90625 to 62.5 μM in a constant flow rate running buffer containing 5% DMSO. Following sample injection, a switching buffer was introduced to allow spontaneous dissociation of quinofumelin from FgDHODHII on the chip surface, and this dissociation process was continuously monitored in real time by measuring response values. The affinity value (Kd) was determined through kinetic analysis or steady-state affinity method.
 
-## Identification of specific interactions between FgDHODHII and quinofumelin using MST
+### Identification of specific interactions between FgDHODHII and quinofumelin using MST
 
 To construct the FgDHODHII-GFP cassette, the FgDHODHII fragment containing the native promoter and ORF (without the stop codon) was amplified. Subsequently, the resulting PCR product was co-transformed with XhoI-digested pYF11 into E. coli DH5α as previously reported (Tang et al., 2020). The fusion vector was then used to transform PH-1 to obtain the FgDHODHII-GFP strain. The GFP fusion protein was extracted from mycelia. Two Monolith NT.115 standard capillaries were employed for repeated absorption of a specific protein concentration, and placed in positions 1 and 2 of the sample tray in the MonoTemper Monolith NT.115 instrument. Sixteen PCR tubes were prepared, with 10 μL DMSO added to PCR tubes 2–16 and 20 μL of 5000 μM quinofumelin (or phenamacril) dissolved in DMSO added to PCR tube 1. Then, 10 μL of quinofumelin from PCR tube 1 was transferred and thoroughly mixed with PCR tube 2 using a pipette. These steps were repeated for PCR tubes 3–16. Following mixing with PCR tube 16 (discarding the remaining 10 μL), each PCR tube was thoroughly mixed with 190 μL DHODHII-GFP protein, and incubated at room temperature for 30 min. Monolith NT.115 standard capillaries were inserted into each PCR tube to allow solution entry into the capillary. The capillaries 1–16 were subsequently placed in the sample tray of the device and the program was initiated. All measurements were performed using 80% (Auto-detect) Nano-RED. MonoTemper Monolith NT.115 software was used to evaluate the binding affinity between the target protein and quinofumelin using the Kd values and the signal-to-noise ratio, and the results were combined and analyzed using Mo. Affinity Analysis v2.3 software (Rotem et al., 2016).
 
-## Statistical analysis
+### Statistical analysis
 
 The data in the study were analyzed using analysis of variance (ANOVA) with the SPSS 14.0 software (SPSS Inc, Chicago, IL, USA). When ANOVA yielded a significant result (p=0.05), means were compared using Fisher’s protected least significant difference (PLSD).

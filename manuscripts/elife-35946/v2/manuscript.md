@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.35946.001 The adenosine A 2A receptor (A 2A R) is a prototypical G protein-coupled receptor (GPCR) that couples to the heterotrimeric G protein G S . Here, we determine the structure by electron cryo-microscopy (cryo-EM) of A 2A R at pH 7.5 bound to the small molecule agonist NECA and coupled to an engineered heterotrimeric G protein, which contains mini-G S , the βγ subunits and nanobody Nb35. Most regions of the complex have a resolution of ~3.8 Å or better. Comparison with the 3.4 Å resolution crystal structure shows that the receptor and mini-G S are virtually identical and that the density of the side chains and ligand are of comparable quality. However, the cryo-EM density map also indicates regions that are flexible in comparison to the crystal structures, which unexpectedly includes regions in the ligand binding pocket. In addition, an interaction between intracellular loop 1 of the receptor and the β subunit of the G protein was observed.
+The adenosine A2A receptor (A2AR) is a prototypical G protein-coupled receptor (GPCR) that couples to the heterotrimeric G protein GS. Here, we determine the structure by electron cryo-microscopy (cryo-EM) of A2AR at pH 7.5 bound to the small molecule agonist NECA and coupled to an engineered heterotrimeric G protein, which contains mini-GS, the βγ subunits and nanobody Nb35. Most regions of the complex have a resolution of ~3.8 Å or better. Comparison with the 3.4 Å resolution crystal structure shows that the receptor and mini-GS are virtually identical and that the density of the side chains and ligand are of comparable quality. However, the cryo-EM density map also indicates regions that are flexible in comparison to the crystal structures, which unexpectedly includes regions in the ligand binding pocket. In addition, an interaction between intracellular loop 1 of the receptor and the β subunit of the G protein was observed.
 
 ## Introduction
 
@@ -26,27 +26,27 @@ There are now two choices in how to determine the structure of a GPCR coupled to
 
 ## Results
 
-## Preparation of an A2AR-GS complex
+### Preparation of an A2AR-GS complex
 
 In this work, we used a construct of A2AR that contained thioredoxin at the N-terminus of the receptor (Nehmé et al., 2017). This was originally designed with a rigid linker between the thioredoxin and the receptor to generate a large hydrophilic surface to A2AR to improve crystallisation, although this proved unsuccessful. The presence of thioredoxin did not significantly affect the pharmacology of A2AR, as assessed by determination of its apparent KD for the inverse agonist ZM241385 or in agonist shift assays (Figure 1). It could also be purified to homogeneity and coupled effectively to both mini-GS (Nehmé et al., 2017) and to the heterotrimer containing mini-GS, β1, γ2 and Nb35 (Figure 1). Detergent-solubilised A2AR coupled to the heterotrimer had a molecular weight (excluding the detergent micelle of LMNG) of approximately 135 kDa (Nehmé et al., 2017).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35946/elife-35946-fig1-v2.jpg)
 
-**Figure 1.:** 2AR.(a) Saturation binding of the inverse agonist 3H-ZM241385 to A2AR constructs gave the following apparent KDs: A2AR (circles), 0.5 ± 0.1 nM; TrxA-A2AR (squares), 0.8 ± 0.2 nM. (b) Competition binding curves measuring the displacement of 3H-ZM241385 with increasing concentrations of NECA gave the following Kis for NECA; A2AR (filled circles), 1.0 ± 0.5 µM; A2AR + mini-GS (open circles, dashed line), 2.6 ± 1.8 nM; TrxA-A2AR (filled squares), 1.1 ± 0.4 µM; TrxA-A2AR + mini-GS (open squares, dashed line), 1.8 ± 1.2 nM. Data plotted are the average from two independent experiments performed in duplicate with error bars shown as the SD.10.7554/eLife.35946.003Figure 1—source data 1.
+**Figure 1.:** (a) Saturation binding of the inverse agonist 3H-ZM241385 to A2AR constructs gave the following apparent KDs: A2AR (circles), 0.5 ± 0.1 nM; TrxA-A2AR (squares), 0.8 ± 0.2 nM. (b) Competition binding curves measuring the displacement of 3H-ZM241385 with increasing concentrations of NECA gave the following Kis for NECA; A2AR (filled circles), 1.0 ± 0.5 µM; A2AR + mini-GS (open circles, dashed line), 2.6 ± 1.8 nM; TrxA-A2AR (filled squares), 1.1 ± 0.4 µM; TrxA-A2AR + mini-GS (open squares, dashed line), 1.8 ± 1.2 nM. Data plotted are the average from two independent experiments performed in duplicate with error bars shown as the SD.
 
-## The impact of the Volta Phase Plate on the cryo-EM A2AR-G-protein complex map
+### The impact of the Volta Phase Plate on the cryo-EM A2AR-G-protein complex map
 
 Initial micrographs for the A2AR complex were collected on a FEI Titan Krios microscope using a K2 Summit detector in the absence of a Volta-potential phase plate (VPP) (Figure 2a). Data processing showed the characteristic 2D class averages of a GPCR coupled to a heterotrimeric G protein (Figure 2a). After 3D classification and refinement, the best model (containing 72,486 particles) reached 6.7 Å resolution and showed clearly defined α-helices in both the receptor and G protein (Figure 2a). We then collected data using the VPP on a FEI Titan Krios microscope using either a K2 Summit detector or a Falcon III detector in electron counting mode (Figure 2b and c). The K2 dataset consisted of micrographs pooled from different days and collected with slight variations regarding total dose and doses rates (see Materials and methods for details), while the Falcon III dataset was collected in a single session over 48 hr. Both datasets were processed in an equivalent manner to the non-VPP data, with only few minor exceptions (see Materials and methods). Since images collected with a VPP possess higher contrast (Figure 2b and c), the auto-picking feature in RELION that uses a Gaussian blob as a reference resulted in optimal particle picking without the need for specific ‘auto-picking’ references (Fernandez-Leiro and Scheres, 2017). After 2D and 3D classification (see Materials and methods for details), refinement yielded models with overall resolution of 4.88 Å and 4.45 Å for the K2 Summit and Falcon III detector, respectively (Figure 2b and c). The Falcon III model was later improved to 4.11 Å with further processing (see below) showing details for most amino acid side chains after B factor sharpening. The effect of the VPP for this particular dataset was therefore essential to make ‘side-chain’ resolution accessible. A B-factor plot (assessing the number of particles vs resolution) was used to assess the impact of the VPP (Figure 2e). It is observed that, in the presence of the VPP, the A2AR map not only has a better resolution for the same number of particles, but the B-factor improves significantly from 426 to 170 (when comparing K2 Summit with and without VPP). This becomes essential when trying to reach high-resolution information in a reasonable time scale (especially important for high-throughput structure determination in drug discovery). As an example, to obtain the same resolution of 4.88 Å using the K2 Summit detector without the VPP, one would have needed about 5 million particles, that would require ~65 days of data collection at a Titan Krios electron microscope (in comparison to 145,169 particles collected in 48 hr with a VPP).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35946/elife-35946-fig2-v2.jpg)
 
-**Figure 2.:** 2AR complex in the presence and absence of a VPP.(a-c) Each panel contains three sections, with the left-hand section showing a representative micrograph obtained on a Titan Krios, the central section depicting 2D class averages and the right-hand section the refined 3D reconstruction obtained from the data collected. (a) Data collected without using a VPP on a K2 Summit detector. (b) Data collected using a VPP on a K2 Summit detector. (c) Data collected using a VPP on a Falcon III detector in electron counting (EC) mode. (d) Gold-standard FSC curves for the three 3D reconstructions with resolutions estimated at 0.143. (e) Difference in B-factors between the three datasets.
+**Figure 2.:** (a-c) Each panel contains three sections, with the left-hand section showing a representative micrograph obtained on a Titan Krios, the central section depicting 2D class averages and the right-hand section the refined 3D reconstruction obtained from the data collected. (a) Data collected without using a VPP on a K2 Summit detector. (b) Data collected using a VPP on a K2 Summit detector. (c) Data collected using a VPP on a Falcon III detector in electron counting (EC) mode. (d) Gold-standard FSC curves for the three 3D reconstructions with resolutions estimated at 0.143. (e) Difference in B-factors between the three datasets.
 
 All cryo-EM grids were plunge-frozen from a single batch of A2AR–G protein complex and most of the duplicate grids were made in a single freezing session. Data collection was performed at higher magnification for the non-VPP data (magnification 200,000x and 0.66 Å/pixel) than for the VPP dataset (1.14 Å/pixel and 1.07 Å/pixel for the K2 Summit and Falcon III detectors, respectively), positioning the high-resolution information of the non-VPP data at a better location in the detector DQE range (Nyquist being 1.32 Å vs 2.14 Å/2.28 Å for the non-VPP vs the VPP K2/Falcon III, respectively). The VPP resolution enhancement therefore could potentially be higher if equivalent magnifications were used. Data processing was carried out as equivalent as possible for all datasets in order to make them comparable. We therefore believe that the comparison between the VPP and non-VPP datasets is as fair as possible, although if anything we are favouring the non-VPP data.
 
 Comparisons of data with and without VPP had only been previously been published for samples that readily reached high resolution without VPP. Although in our experience, the improvement is sample dependent, these data show the potential to which the VPP can be useful in certain cases and more comparisons will be needed in order to understand the variability in enhancement between samples. Although we see a significant difference between the K2 and Falcon III performance, data for the K2 with VPP was a result of merging data with different dose rates and total doses. We therefore do not have an absolutely identical comparison of the two detectors.
 
-## Structure determination of the A2AR–GS complex
+### Structure determination of the A2AR–GS complex
 
 The highest resolution data set corresponded to micrographs collected on a Falcon III detector in electron counting mode using a VPP, therefore this map was used for further processing, model building and subsequent analysis. Data collection parameters and processing are described in the Materials and methods section. In summary, 837 movies were collected and corrected for stage drift, beam induced movement and dose weighting with MotionCor2 (Zheng et al., 2017). CTF fitting, defocus and phase estimation were performed with Gctf-v0.1.06 (Zhang, 2016). Particle picking was performed using a Gaussian blob, as implemented by RELION (Scheres, 2012). 3D classification was performed with an ab initio model and refinement of the best classes with clear GPCR-like features (128,002 particles) attained an overall resolution of 4.45 Å (using gold standard FSC of 0.143) (Rosenthal and Henderson, 2003). Attempts to improve the model included further 3D classification, which revealed that around 50% of the particles contained a heterogeneous γ subunit. However, the resolution and quality of the overall model suffered when removing these particles, so we therefore compromised on having poor quality density for the γ subunit, but having higher resolution for the rest of the complex.
 
@@ -60,15 +60,218 @@ Calculation of the local resolution in RELION showed that although the overall r
 
 In order to accurately estimate the resolution of the A2AR complex map and to eliminate noise from refinement, the detergent micelle and thioredoxin moiety needed to be excluded. Excluding the micelle by simply tightening the mask did not yield optimal results with artefacts produced at the interface between the model and the mask. Such a strong signal might be specific to LMNG since, in our experience, the signal from other detergents can be masked out in this manner. We then decided to perform a double signal subtraction protocol where initial coordinates were used to create a tight mask around the protein component excluding thioredoxin (A2AR, mini-GS, β, γ, Nb35), which was then subtracted from the original particles. The resulting particles were used to produce an accurate map of the micelle and thioredoxin, which was then used to perform signal subtraction of the original particles, leaving them devoid of micelle or thioredoxin. Refinement of these particles yielded an improved map at 4.11 Å resolution. However, it appeared that the refinement process focused primarily on the intracellular G protein heterotrimer complex leaving a lower quality map at the receptor region. In order to circumvent this problem, we performed refinement with the original particles and then exchanging them for their signal subtracted equivalent (without micelle and thioredoxin) only in the last iteration of refinement. This resulted in the best overall map at 4.11 Å resolution with quality density throughout (Table 1).
 
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Data collection</th>
+    </tr>
+    <tr>
+      <th>Microscope</th>
+      <th>FEI titan krios</th>
+      <th>FEI titan krios</th>
+      <th>FEI titan krios</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Detector</td>
+      <td>Falcon III + VPP</td>
+      <td>K2 Summit + VPP</td>
+      <td>K2 Summit</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.07</td>
+      <td>1.14</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Total electron dose (e-/Å2)</td>
+      <td>30</td>
+      <td>40/40/30</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Micrographs collected</td>
+      <td>827</td>
+      <td>906</td>
+      <td>2800</td>
+    </tr>
+    <tr>
+      <td>Number of frames</td>
+      <td>75</td>
+      <td>40/23/30</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>60</td>
+      <td>10/4.6/6.5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Electron dose per frame (e-/Å2)</td>
+      <td>0.4</td>
+      <td>1/1.7/1</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>Dose rate (e-/pixel/s)</td>
+      <td>0.5</td>
+      <td>5.2/9/6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Frame exposure (s)</td>
+      <td>0.8</td>
+      <td>0.25/0.115/0.216</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Total number of particles (after 2D classification)</td>
+      <td>232,739</td>
+      <td>313,879</td>
+      <td>166,313</td>
+    </tr>
+    <tr>
+      <td colspan="4">cryo-EM 3D Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>4.11</td>
+      <td>4.88</td>
+      <td>6.71</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>−130</td>
+      <td>−150</td>
+      <td>−529</td>
+    </tr>
+    <tr>
+      <td>Fourier shell correlation criterion</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Particles used in final 3D refinement</td>
+      <td>128,002</td>
+      <td>145,169</td>
+      <td>72,487</td>
+    </tr>
+    <tr>
+      <td>Defocus (μm)</td>
+      <td>−0.2 to −1</td>
+      <td>−0.3 to −1.2</td>
+      <td>−1.2 to −3.5</td>
+    </tr>
+    <tr>
+      <td colspan="4">Coordinate Refinement and Validation</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.07</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Angles (°)</td>
+      <td>0.984</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran Favoured (%)</td>
+      <td>94.6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran Allowed (%)</td>
+      <td>4.89</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran Outliers (%)</td>
+      <td>0.51</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.36</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clashcore, all atoms</td>
+      <td>0.79</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favoured rotamers</td>
+      <td>91.12</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td>1.93</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FSC (model vs map - 0.5 cut-off) (Å)</td>
+      <td>4.08</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">PDB and map deposition</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>6GDG</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EMDB ID</td>
+      <td>4390</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Attempts to remove particles with low phase shift and poor contrast (~22,000 particles with <0.25π) decreased resolution and map quality. We therefore kept low phase shift data in the final model.
 
-## Overall structure of the NECA-bound A2AR mini heterotrimeric G protein complex
+### Overall structure of the NECA-bound A2AR mini heterotrimeric G protein complex
 
 The A2AR cryo-EM complex structure provides insights into its structure in solution, in the absence of crystal contacts and at more physiological conditions (pH 7.5) than the X-ray structure (pH 5.7 or below for inactive structures). The density map of the A2AR–G protein heterotrimer displayed a local resolution varying from 3.3 Å to 6.4 Å (Figure 3). Side chain densities were observed for most amino acid residues (Figure 4), which were of similar quality to those in the X-ray crystallographic map of the A2AR–mini-GS structure (Figure 5). The lowest resolution was found at the C-terminus of the β subunit and most of the γ subunit, which had very poor density. Signal subtraction and 3D classification protocols have been used to isolate different protein conformations of small regions (Bai et al., 2015). Upon implementation of these strategies, we did not find any other discrete conformations of the heterotrimeric G protein, suggesting that the C-terminus of the β subunit and most of the γ subunit region are flexible. Within the cryo-EM structure of A2AR, there are two regions that lack density and are therefore also probably disordered and flexible, namely the N-terminal section of ECL2 (G147 to Q163) and the whole of ICL3 (E212 to S223). These regions are ordered in some crystal structures, but this usually correlates with these regions forming lattice contacts. Sections of the cryo-EM density map for which there is poor quality density and high B-factors of the refined coordinates include TM1, helix 8, the second section of ECL2 that contributes relevant residues for ligand binding (see below), ECL1 and ECL3 (Figures 3 and 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35946/elife-35946-fig4-v2.jpg)
 
-**Figure 4.:** 2AR structure.(a) Amino acid sequence of A2AR used in the cryo-EM structure determination. Residues are coloured according to how they have been modelled: black, good density allows the side chain to be modelled; red, limited density for the side chain present and therefore the side chain has been truncated to Cβ; blue, no density observed and therefore the residue was not modelled. Regions highlighted in grey represent the transmembrane α-helices and amphipathic helix eight is highlighted in yellow. Cys residues involved in the formation of disulphide bonds are in bold. In the cryo-EM structure densities for the disulphide bonds Cys74-Cys146 and Cys77-Cys166 are observed. Densities corresponding to the disulphide bonds Cys71-Cys159 and Cys259-Cys262 are not observed in the cryo-EM data. The sequence of A2AR is from residue 8–316, with the initial Ala residue at position seven being part of the linker between the N-terminal thioredoxin fusion and A2AR. (b) Model of A2AR showing the Cα positions of amino acid residues with poor density (spheres) and regions unmodelled (dotted lines).
+**Figure 4.:** (a) Amino acid sequence of A2AR used in the cryo-EM structure determination. Residues are coloured according to how they have been modelled: black, good density allows the side chain to be modelled; red, limited density for the side chain present and therefore the side chain has been truncated to Cβ; blue, no density observed and therefore the residue was not modelled. Regions highlighted in grey represent the transmembrane α-helices and amphipathic helix eight is highlighted in yellow. Cys residues involved in the formation of disulphide bonds are in bold. In the cryo-EM structure densities for the disulphide bonds Cys74-Cys146 and Cys77-Cys166 are observed. Densities corresponding to the disulphide bonds Cys71-Cys159 and Cys259-Cys262 are not observed in the cryo-EM data. The sequence of A2AR is from residue 8–316, with the initial Ala residue at position seven being part of the linker between the N-terminal thioredoxin fusion and A2AR. (b) Model of A2AR showing the Cα positions of amino acid residues with poor density (spheres) and regions unmodelled (dotted lines).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/35946/elife-35946-fig5-v2.jpg)
 
@@ -76,19 +279,19 @@ The A2AR cryo-EM complex structure provides insights into its structure in solut
 
 The overall architecture of the A2AR–heterotrimeric G protein complex is similar to the heterotrimeric GS-coupled complexes for the β2-adrenergic receptor (Rasmussen et al., 2011), GLP1 (Zhang et al., 2017, Liang et al., 2018) and the calcitonin receptor (Liang et al., 2017). The receptor and mini-Gs portions of the A2AR–G protein complex are very similar to the crystal structure of the A2AR–mini-GS complex, with the RMSD of Cα atoms for the receptor and mini-GS components being 0.5 Å and 0.6 Å, respectively. The largest differences are found at the interface between mini-GS and the β subunit, which have a different conformation when βγ is bound. This may contribute to a minor difference in curvature of the α5 helix in mini-GS when it is in the heterotrimer complex compared to when it is bound to the receptor alone (Figure 5). However, this does not have any major impact on the interface between the receptor and mini-GS, thus further validating the use of mini G proteins as a surrogate for G protein heterotrimers (Carpenter et al., 2016; Carpenter and Tate, 2016; Nehmé et al., 2017).
 
-## Cryo-EM map at the ligand binding pocket
+### Cryo-EM map at the ligand binding pocket
 
 The A2AR orthosteric binding pocket is described by two crystal structures of A2AR bound to NECA, with one structure of A2AR in an active intermediate conformation (PDB code 2ydv) (Lebon et al., 2011) and the other structure in the active state coupled to mini-GS (PDB code 5g53) (Carpenter et al., 2016). The extracellular half of A2AR does not undergo any major structural changes in the transition from the active intermediate to the mini-GS coupled active state, with the volume of the binding pocket remaining constant and the interactions to NECA being identical (Carpenter et al., 2016). The orthosteric binding site in the cryo-EM map has well-defined density, although the map has lower resolution towards the extracellular surface. The density for NECA is of sufficient quality to allow an unambiguous orientation of NECA and the same interactions to the receptor are observed as present in the crystal structures (Figures 5 and 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/35946/elife-35946-fig6-v2.jpg)
 
-**Figure 6.:** 2AR–heterotrimeric GS.(a) Superposition of A2AR (pale green) coupled to mini-Gs (pale blue) with A2AR (dark green) coupled to mini-GS (dark blue), βγ (red) and Nb35 (yellow). (b) Superposition of NECA bound to A2AR in the cryo-EM and X-ray structures after alignment of A2AR (PyMol). (c) The position of His264 in the cryo-EM structure (dark green, density shown by black mesh), differs from its position in the X-ray structure (light green). No density is observed for the side chain of Glu169 in the cryo-EM structure, but when modelled it would be too far away to make a contact with His264. (d) The interface between ICL1 of A2AR (dark green) and the β subunit (red) is depicted, with density shown as a black mesh.
+**Figure 6.:** (a) Superposition of A2AR (pale green) coupled to mini-Gs (pale blue) with A2AR (dark green) coupled to mini-GS (dark blue), βγ (red) and Nb35 (yellow). (b) Superposition of NECA bound to A2AR in the cryo-EM and X-ray structures after alignment of A2AR (PyMol). (c) The position of His264 in the cryo-EM structure (dark green, density shown by black mesh), differs from its position in the X-ray structure (light green). No density is observed for the side chain of Glu169 in the cryo-EM structure, but when modelled it would be too far away to make a contact with His264. (d) The interface between ICL1 of A2AR (dark green) and the β subunit (red) is depicted, with density shown as a black mesh.
 
 Despite the similarities between the orthosteric binding site observed in the cryo-EM and X-ray structures, small differences were found in ECL2 that forms part of the binding pocket. The C-terminal half of ECL2 in the X-ray structures forms a helical turn that caps the pocket and contributes side chains that interact with NECA (Phe168 and Glu169). In the cryo-EM structure this region is more disordered. As a consequence, there is no significant side chain density for Phe168 and Glu169 in the cryo-EM map. The fact that there is clear density for NECA and His264 excludes the possibility that the whole of this region has poor resolution that is the extracellular portion of the receptor is not moving as a rigid body. This is consistent with ECL2 being dynamic.
 
 A second difference between the NECA-bound X-ray structures and the cryo-EM structure is a likely absence of an interaction between Glu169 and His264. This ionic bridge affects small molecule binding kinetics (Segala et al., 2016) and in most of the crystal structures caps the binding pocket. Although the cryo-EM map in the region is poorer than in the rest of the molecule, it suggests a rotamer for the imidazole group of His264 that points away from the orthosteric binding pocket (Figure 6). This might be a consequence of the pH in which the respective structures were determined. The pKa of the histidine side chain is ~6 and most crystal structures have been obtained at lower pH (~pH 5), favouring protonation of His264 and the formation of the ionic bridge. At a more physiological pH of 7.5 that was used for the cryo-EM structure, His264 would be predominantly deprotonated and unable to form the ionic bridge. Although the rotamer for Glu169 cannot be assigned in the cryo-EM map, His264 adopts a similar rotamer as seen in crystal structures obtained at higher pH, such as the complexes with caffeine, XAC and ZM241385 (~pH 8), all showing a broken ionic bridge. Therefore, it is likely that in the physiological state (represented by the cryo-EM map) this ionic bridge is also absent, unless the surrounding pH is momentarily lowered for specific functions (e.g. the release of high concentrations of glutamate in glutamatergic synapses).
 
-## Comparison of the G-protein–receptor interface between the crystal and cryo-EM structures
+### Comparison of the G-protein–receptor interface between the crystal and cryo-EM structures
 
 The interface between mini-GS in the heterotrimeric G protein and A2AR in the cryo-EM structure is very similar to the interface between mini-GS and A2AR in the X-ray structure (PDB code 5g53). The interface in the cryo-EM structure has a buried surface of 1135 Å2 compared to 1048 Å2 for the X-ray structure 5g53; the slight increase is due to interactions between ICL1 of A2AR (residues Leu110 and Asn113) and the N-terminal helix of mini-GS (residues His41 and Arg38). The near full length N-terminal helix was present in the mini-GS construct in the cryo-EM structure, because this is required for the stable interaction between the α subunit and the βγ subunits, whereas it was truncated and disordered in the X-ray structure. The main interactions between A2AR and mini-GS in both the cryo-EM and X-ray structures are made predominantly by the C-terminal α5 helix in mini-GS and amino acid residues in H3, H5, H6, H7, H8 and ICL2 of A2AR (Carpenter et al., 2016). The amino acid residues that make these interactions are identical, but the rotamers sometimes differ between the cryo-EM and X-ray structures. This may be a reflection of the different chemical environments in which the structures were determined or the slight difference in curvature of the α5 helix in mini-GS. In addition, some interactions may be transient and are captured in one structure and not another. For example, Arg291 at the intracellular end of H7 of A2AR adopts a different conformation in the cryo-EM structure compared to the crystal structure. This results in the absence of interactions between the Arg291 side chain and mini-GS, although the backbone carbonyl can still makes potential interactions with Glu392 and the adjacent residues in H8 are still sufficiently close to mini-GS to make interactions. This region is also the main difference to the β2AR-GS complex where the α5 helix in GS does not interact with H7 and H8 of the receptor (Rasmussen et al., 2011).
 
@@ -96,7 +299,7 @@ The major difference between the structure determined by cryo-EM of the A2AR-het
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/35946/elife-35946-fig7-v2.jpg)
 
-**Figure 7.:** 2AR and β2AR coupled to heterotrimeric GS.(a) A2AR (dark green) and β2AR (dark grey) were aligned using regions of the receptors predicted to be within the cytoplasmic leaflet of the lipid bilayer. The position of mini-GS (pale green) coupled to A2AR is compared to the position of the GTPase domain of the α subunit (pale grey) coupled to β2AR. The βγ subunits and Nb35 have been omitted for clarity. (b) Transmembrane region H1 and ECL1 in A2AR (dark green) extends closer to the β subunit (pale green), whereas β2AR (dark grey) is too far away from the β subunit (pale grey) to make extensive contacts.
+**Figure 7.:** (a) A2AR (dark green) and β2AR (dark grey) were aligned using regions of the receptors predicted to be within the cytoplasmic leaflet of the lipid bilayer. The position of mini-GS (pale green) coupled to A2AR is compared to the position of the GTPase domain of the α subunit (pale grey) coupled to β2AR. The βγ subunits and Nb35 have been omitted for clarity. (b) Transmembrane region H1 and ECL1 in A2AR (dark green) extends closer to the β subunit (pale green), whereas β2AR (dark grey) is too far away from the β subunit (pale grey) to make extensive contacts.
 
 ## Discussion
 
@@ -110,23 +313,23 @@ The cryo-EM structure presented here allows for the first time a direct comparis
 
 ## Materials and methods
 
-## Expression and purification of the human adenosine A2A receptor
+### Expression and purification of the human adenosine A2A receptor
 
 Construction of the thioredoxin-A2AR fusion protein and C-terminally truncated A2AR (1-317), both containing the N154A mutation, is described elsewhere (Nehmé et al., 2017). The constructs were expressed using the baculovirus expression system as described previously (Carpenter et al., 2016; Carpenter and Tate, 2017a). Cells were harvested by centrifugation 72 hr post-infection, resuspended in hypotonic buffer (20 mM HEPES pH 7.5, 1 mM EDTA, 1 mM PMSF, cOmplete (Roche) protease inhibitor cocktail), flash-frozen in liquid nitrogen and stored at –80°C until use. The purification of the thioredoxin-A2AR fusion protein was performed in the detergent LMNG in the presence of 100 µM NECA using Ni2+-affinity chromatography followed by SEC as described previously (Carpenter et al., 2016; Carpenter and Tate, 2017a).
 
-## Preparation of mini-Gs heterotrimer
+### Preparation of mini-Gs heterotrimer
 
 The mini-GS construct (399) used in single particle cryo-EM reconstructions is based on the construct 393 that was used in the structure determination of the A2AR- mini-GS crystal structure (Carpenter et al., 2016; Carpenter and Tate, 2016). However, unlike construct 393, mini-GS399 binds βγ (Nehmé et al., 2017). The expression and purification of the respective components and assembly to make the complex containing mini-GS-β1γ2, and the preparation of nanobody Nb35, were all performed following the protocols described previously (Carpenter and Tate, 2016; Rasmussen et al., 2011; Carpenter and Tate, 2017b).
 
-## Preparation of the A2AR-mini-GSβ1γ2-Nb35 complex
+### Preparation of the A2AR-mini-GSβ1γ2-Nb35 complex
 
 Thioredoxin-A2AR, mini-GS-β1γ2 and Nb35 were mixed in a molar ratio of 1:2:4, to yield a final thioredoxin-A2AR concentration of 1 mg/ml. 0.1 U of apyrase was added and the mixture was incubated overnight at 4°C. Excess G protein and nanobody were removed by SEC on a Superdex 200 Increase column (running buffer 20 mM HEPES pH 7.5, 100 mM NaCl, 0.1% LMNG, 100 µM NECA). Peak fractions with an absorbance value at 280 nm of 1.5–2 were used immediately for grid preparation or flash frozen in liquid nitrogen and stored at –80°C until use.
 
-## Radioligand binding assays
+### Radioligand binding assays
 
 Insect cells expressing A2AR were resuspended in 1 ml of assay buffer (25 mM HEPES pH 7.5, 100 mM KCl, 1 mM MgCl2, protease inhibitor cocktail) at a final concentration of 3 × 106 cells/ml. Cells were sheared by 10 passages through a bent 26G syringe needle. Cell membranes were diluted 50-fold to 100-fold in assay buffer and aliquots prepared as appropriate. In saturation binding assays, cell membranes containing A2AR were incubated with 3H-ZM241385 (0.1–40 nM) for 2 hr at 21°C. Non-specific binding was determined in the presence of 10 µM unlabelled ZM241385. In competition binding assays, cell membranes were incubated with NECA (1 nM - 1 µM) for 2 hr at 21°C, in the presence or absence of 25 µM mini-GS393. 5 nM 3H-ZM241385 was added followed by a 2 hr incubation. Assays were terminated by filtering through PEI-treated 96-well glass fibre GF/B filter plates (Merck Millipore, Ireland) and washing with ice-cold assay buffer. Filters were dried, placed into scintillation vials and incubated overnight in 4 ml Ultima Gold scintillant (Perkin Elmer). Radioactivity was quantified by scintillation counting using a Tri-Carb counter (Perkin Elmer). Apparent KD and apparent Ki values were determined using GraphPad Prism version 6.0 (GraphPad Software, San Diego, CA).
 
-## Cryo-EM grid preparation and data collection
+### Cryo-EM grid preparation and data collection
 
 Cryo-EM grids were prepared by applying 3 µl of sample (total protein concentration 1 mg/ml) on glow discharged holey gold grids (Quantifoil Au 1.2/1.3 300 mesh). Excess sample was removed by blotting with filter paper for 4–5 s prior to plunge-freezing in liquid ethane using a FEI Vitrobot Mark IV at 100% humidity and 4°C. In all cases, data was collected on a FEI Titan Krios microscope at 300kV. Data without VPP and initial VPP images were acquired using a Gatan K2-Summit detector and a GIF-quantum energy filter (Gatan) with a 20 eV slit and zero loss mode to remove inelastic scattering. For the initial non-VPP dataset, EPU automatic data collection software (FEI) was used while the VPP date set of the K2-summit detector was collected using SerialEM automatic data collection software (Mastronarde, 2005).
 
@@ -136,7 +339,7 @@ The K2-VPP dataset was the result of merging three datasets with slightly differ
 
 One data set was acquired using a Falcon III detector in electron counting mode by recording 75 movie frames (0.8 s per frame) at a dose rate of 0.5 e-/pixel/s (0.4 e-/Å2 per frame) for a total accumulated dose of 30 e-/Å2 acquired over a period of 60 s. Pixel size at the specimen was calibrated to be 1.07 Å. A total of 827 images were incorporated into the dataset.
 
-## Data processing and model building
+### Data processing and model building
 
 All data processing were performed using RELION-2 (Kimanius et al., 2016). Good quality images were selected manually and drift correction, beam induced motion and dose weighting was performed for each of the datasets with MotionCor2 (Zheng et al., 2017), using 5 × 5 patches and the corresponding dose per frame. CTF fitting and phase shift estimation were performed using Gctf-v0.1.06 (Zhang, 2016). In all cases, auto-picking (Scheres, 2015) was performed with a Gaussian blob as a template (Fernandez-Leiro and Scheres, 2017). Elimination of false positives or ‘bad particles’ was performed over two rounds of reference-free 2D classification. 10,000 random particles were used for ab initio model generation using the Stochastic Deepest Descent (SDG) algorithm incorporated in RELION-2.1. The resulting model was used as input for the initial 3D classification. After a single round of 3D classification, particles in quality models were pooled together for refinement. The Falcon III-VPP data was divided into three classes, where two of them presented clear structural features resembling a GPCR-G-protein heterotrimer complex. During refinement of the Falcon III + VPP data, the low-pass filter effect of the Wiener filter in the regularised likelihood optimisation algorithm was relaxed through the use of a regularisation parameter (T = 5). This allowed the refinement algorithm to consider higher spatial frequencies in the alignment of the individual particles yielding a map of higher quality. Nevertheless, both half-reconstructions were kept completely separately, and the final resolution estimate (at the post-processing stage in RELION) was based on the standard FSC between the two unfiltered half-reconstructions. Signal subtraction of the micelle was performed as described in the results section and were used only in the last iteration of refinement. Application of ‘particle polishing’ in RELION (corrects for beam induced motion and performs experimental dose-weighting) did not improve the quality of the density. Local resolution was calculated with RELION.
 

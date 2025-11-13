@@ -26,117 +26,636 @@
 
 ## Abstract
 
-10.7554/eLife.13571.001 The nucleolus is a membrane-less organelle formed through liquid-liquid phase separation of its components from the surrounding nucleoplasm. Here, we show that nucleophosmin (NPM1) integrates within the nucleolus via a multi-modal mechanism involving multivalent interactions with proteins containing arginine-rich linear motifs (R-motifs) and ribosomal RNA (rRNA). Importantly, these R-motifs are found in canonical nucleolar localization signals. Based on a novel combination of biophysical approaches, we propose a model for the molecular organization within liquid-like droplets formed by the N-terminal domain of NPM1 and R-motif peptides, thus providing insights into the structural organization of the nucleolus. We identify multivalency of acidic tracts and folded nucleic acid binding domains, mediated by N-terminal domain oligomerization, as structural features required for phase separation of NPM1 with other nucleolar components in vitro and for localization within mammalian nucleoli. We propose that one mechanism of nucleolar localization involves phase separation of proteins within the nucleolus. DOI: http://dx.doi.org/10.7554/eLife.13571.001
+The nucleolus is a membrane-less organelle formed through liquid-liquid phase separation of its components from the surrounding nucleoplasm. Here, we show that nucleophosmin (NPM1) integrates within the nucleolus via a multi-modal mechanism involving multivalent interactions with proteins containing arginine-rich linear motifs (R-motifs) and ribosomal RNA (rRNA). Importantly, these R-motifs are found in canonical nucleolar localization signals. Based on a novel combination of biophysical approaches, we propose a model for the molecular organization within liquid-like droplets formed by the N-terminal domain of NPM1 and R-motif peptides, thus providing insights into the structural organization of the nucleolus. We identify multivalency of acidic tracts and folded nucleic acid binding domains, mediated by N-terminal domain oligomerization, as structural features required for phase separation of NPM1 with other nucleolar components in vitro and for localization within mammalian nucleoli. We propose that one mechanism of nucleolar localization involves phase separation of proteins within the nucleolus.
 
 ## Introduction
 
 The nucleolus, a membrane-less organelle, is the site of ribosome biogenesis and a cellular stress sensor (Boisvert et al., 2007). Nucleoli contain three substructures: the fibrillar centers (FCs) and dense fibrillar component (DFC) are engulfed in the granular component (GC) (Boisvert et al., 2007), which exhibits ATP-dependent liquid-like features (Brangwynne et al., 2011). Ribosomal RNA (rRNA) genes are transcribed between the FC and DFC, and rRNAs are processed while migrating into the GC, wherein they assemble with ribosomal proteins to form pre-ribosomal particles (Boisvert et al., 2007). Nucleophosmin (NPM1, also known as B23), a highly abundant marker of the GC, functions as a nucleolar chaperone and plays a role in cellular stress responses (Colombo et al., 2011). While appreciated (Brangwynne et al., 2011; Chen and Huang, 2001; Negi and Olson, 2006; Weber and Brangwynne, 2015), the molecular basis of the GC’s fluidity is unknown.
 
-While
+While Npm1 loss is embryonic lethal in mice, mouse fibroblasts derived from Npm1-/-/Trp53-/- embryos readily proliferate in culture (Colombo et al., 2005), indicating that NPM1 is dispensible for ribosome biogenesis. However, NPM1 is known to influence ribosome biogenesis, genome stability and tumor suppression (Lindstrom, 2011) and to participate in responses to cellular stresses, including DNA damage (Lee et al., 2005), chemotoxicity (Chan, 1992; Yao et al., 2010b), and oxidative stress (Paron et al., 2004). Furthermore, NPM1 depletion is associated with disruption of nucleolar structure (Holmberg Olausson et al., 2014). We propose that NPM1 participates in the organization of the liquid-like structure of the GC and consequently may actively participate in stress signal integration and transmission, thereby explaining its known roles in ribosome biogenesis, tumor suppression and other processes (Lindstrom, 2011). Accordingly, NPM1 interacts with a vast array of partners (http://thebiogrid.org/110929/summary/homo-sapiens/npm1.html), many involved in ribosome biogenesis, and controls the nucleolar localization of ribosomal (Lindstrom, 2012; Rosorius et al., 2000), viral (Duan et al., 2014; Fankhauser et al., 1991), and certain tumor suppressor proteins (Bertwistle et al., 2004), many of which engage the N-terminal oligomerization domain (OD) of NPM1 (Figure 1a) via arginine-rich short linear motifs (R-motifs) (Mitrea et al., 2014). Furthermore, NPM1 binds nucleic acids (e.g., rRNA and DNA) through its C-terminal domain (nucleic acid binding domain, NBD) (Wang et al., 1994). We seek to understand the molecular mechanisms of NPM1’s multifarious functional interactions. Here, we show that NPM1 undergoes liquid-liquid phase separation in the presence of two classes of nucleolar macromolecules: proteins and RNA. Using a multidisciplinary strategy, we identify the structural features that mediate NPM1 phase separation and its nucleoar localization. These results provide a novel perspective on the mechanisms involved in the formation of the liquid-like structure of the nucleolus and in the nucleolar localization of biological macromolecules.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig1-v3.jpg)
 
-**Figure 1.:** (a) Composite model of NPM1 structure; the oligomerization domain (OD, green, PDB ID 4N8M), containing the A1 acidic tract (red), is connected via a disordered region (IDR, grey), containing two additional acidic tracts (A2 & A3, red), to the C-terminal nucleic acid binding domain (NBD, blue, PDB ID 2VXD); (b) Phase separation diagrams for mixtures of N130 and four R-motif containing peptides (bottom dot graphs); phase separation was assessed by the formation of liquid-like droplets detected using light microscopy (grey dot, clear solution observed; green dot, liquid-like droplets observed). Representative examples of liquid-like droplets formed between 50 μM N130 and the lowest peptide concentration associated with phase separation, visualized by DIC (top panel) and Alexa Fluor488 emission of labeled N130 (bottom panel) are illustrated. The composition of the R-motif peptides is given at the top of each pair of images; R is arginine; and X is any other amino acid.DOI: http://dx.doi.org/10.7554/eLife.13571.003
+**Figure 1.:** (a) Composite model of NPM1 structure; the oligomerization domain (OD, green, PDB ID 4N8M), containing the A1 acidic tract (red), is connected via a disordered region (IDR, grey), containing two additional acidic tracts (A2 & A3, red), to the C-terminal nucleic acid binding domain (NBD, blue, PDB ID 2VXD); (b) Phase separation diagrams for mixtures of N130 and four R-motif containing peptides (bottom dot graphs); phase separation was assessed by the formation of liquid-like droplets detected using light microscopy (grey dot, clear solution observed; green dot, liquid-like droplets observed). Representative examples of liquid-like droplets formed between 50 μM N130 and the lowest peptide concentration associated with phase separation, visualized by DIC (top panel) and Alexa Fluor488 emission of labeled N130 (bottom panel) are illustrated. The composition of the R-motif peptides is given at the top of each pair of images; R is arginine; and X is any other amino acid.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig1-figsupp1-v3.jpg)
 
-**Figure 1—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.13571.004
-
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig1-figsupp2-v3.jpg)
 
-**Figure 1—figure supplement 2.:** IUPRED predictions of protein disorder. The location of R-motif peptides is highlighted. rpL5 and rpL23 structures have been resolved in the context of the assembled ribosome, where they adopt helical structures in complex with other ribosomal proteins and rRNA. In isolation, however, these structural features may not be highly populated.DOI: http://dx.doi.org/10.7554/eLife.13571.005
+**Figure 1—figure supplement 2.:** IUPRED predictions of protein disorder. The location of R-motif peptides is highlighted. rpL5 and rpL23 structures have been resolved in the context of the assembled ribosome, where they adopt helical structures in complex with other ribosomal proteins and rRNA. In isolation, however, these structural features may not be highly populated.
 
 ## Results
 
-## NPM1 interacts with proteins displaying multivalent R-rich linear motifs
+### NPM1 interacts with proteins displaying multivalent R-rich linear motifs
 
 We first investigated interactions of R-motif-containing proteins with NPM1 by analyzing the results of a whole cell NPM1 pull-down experiment (see Materials and Methods). Of 132 NPM1-binding proteins, 97% exhibited at least one R-motif (RXn1R, where X is any amino acid and n1 ≤ 2; Supplementary file 1) and 78.8% were annotated with GO terms indicating association with membrane-less organelles (Supplementary file 2). Amongst all 132 NPM1-binding proteins, 73% exhibited multiple R-motifs (Supplementary file 1); in contrast, only 44% of all human proteins exhibited multiple R-motifs (p<0.0001; Supplementary file 3). Thus, multivalent R-motifs are enriched in proteins that bind to NPM1.
 
-## Multivalent R-rich linear motifs mediate phase separation with NPM1
+### Multivalent R-rich linear motifs mediate phase separation with NPM1
 
-R-motifs bind to a region of NPM1 which includes the OD and a short disordered region (residues 1–130; termed N130;
+R-motifs bind to a region of NPM1 which includes the OD and a short disordered region (residues 1–130; termed N130; Figure 2a). The interactions engage two highly conserved acidic tracts, termed A1 (residues 34–39) and A2 (residues 120–130), at the interface between monomer subunits and within the disordered region (Mitrea et al., 2014), respectively (Figure 2a). These A tracts and the pentameric nature create multivalency within N130. Multivalent interactions involving low complexity sequences cause assembly and phase separation of biopolymers within membrane-less organelles (Fromm et al., 2014; Li et al., 2012); therefore, we tested the ability of multivalent N130 and peptides containing multiple R-motifs derived from NPM1-binding proteins to undergo phase separation. Titration of four R-motif-containing peptides (Table 1) caused phase separation into liquid-like droplets (Figure 1b and Videos 1–4) at critical concentrations that varied with R-motif composition and affinity for N130 (Table 2 and Figure 1—figure supplement 1). At 200 µM N130, upon titration of the divalent rpL5 peptide, phase separation was observed when the rpL5:N130 ratio reached ~3:1 (Figure 2b). At the same N130 concentration, phase separation was not observed upon titration of a monovalent R-motif peptide (rpL5-RA; Figure 2b), even though it bound, albeit with lower affinity (Table 2 and Figure 1—figure supplement 1), confirming that R-motif multivalency is required for phase separation with N130. The inability to phase separate was not due to reduced binding affinity (rather than loss of multivalency); a poly-R peptide, containing a single but longer R-motif, with affinity similar to that of rpL5, also failed to phase separate (Figure 2—figure supplement 1). Additionally, phase separation was not observed when an NPM1 construct containing only the OD (N122, residues 1–122; Figure 2a) was titrated with the rpL5 peptide (Figure 2c and Table 2). We thus conclude that the minimal multivalency requirements for phase separation are the acidic A1 and A2 tracts within NPM1 and at least two complementarily charged R-motifs within a polypeptide binding partner.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig2-v3.jpg)
 
-**Figure 2.:** (a) Schematic representation of the NPM1 constructs used in this study; (b) Titrations of rpL5 (blue) or rpL5-RA peptide lacking the second R-motif (red), into 200 μM N130, monitored by light scattering at 340 nm; (c) Titrations of rpL5 peptide into N130 (blue) and N122 (orange).DOI: http://dx.doi.org/10.7554/eLife.13571.006
+**Figure 2.:** (a) Schematic representation of the NPM1 constructs used in this study; (b) Titrations of rpL5 (blue) or rpL5-RA peptide lacking the second R-motif (red), into 200 μM N130, monitored by light scattering at 340 nm; (c) Titrations of rpL5 peptide into N130 (blue) and N122 (orange).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig2-figsupp1-v3.jpg)
 
-**Figure 2—figure supplement 1.:** (a) ITC curve of 6R peptide titrated into N122; (b) Light scattering assays of divalent rpL5 (blue), monovalent rpL5- RA (red) and monovalent, but tighter binding 6R (aqua).DOI: http://dx.doi.org/10.7554/eLife.13571.007
+**Figure 2—figure supplement 1.:** (a) ITC curve of 6R peptide titrated into N122; (b) Light scattering assays of divalent rpL5 (blue), monovalent rpL5- RA (red) and monovalent, but tighter binding 6R (aqua).
 
-## Mutivalent R-peptides mediate inter-pentamer cross-linking in liquid-like droplets
+**Table 1.**
+ Amino acid sequences of the synthetic multivalent R-motif containing peptides.
 
-Next, to understand the mechanism of phase separation, we characterized the structural features of complexes of rpL5 with N130 before and after droplet formation. Fluorescence anisotropy (FA) of a N130
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Peptide Name#</th>
+      <th rowspan="2">Peptide amino acid sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rpL5</td>
+      <td>21RRRREGKTDY10YARKRLV37</td>
+    </tr>
+    <tr>
+      <td>GNL2</td>
+      <td>682RRRAVRQQRP10KKVGVRYYET20HNVKNRNR709</td>
+    </tr>
+    <tr>
+      <td>SURF6</td>
+      <td>299RRAQRQRRWE10KRTAGVVEKM20QQRQDRRR326</td>
+    </tr>
+    <tr>
+      <td>rpL23a</td>
+      <td>47RRPKTLRLRR10QPKYPRKSAP20RR68</td>
+    </tr>
+    <tr>
+      <td>rpL5-RA</td>
+      <td>21RRRREGKTDY10YAAKALV37</td>
+    </tr>
+    <tr>
+      <td>rpL5-2xLinker</td>
+      <td>RRRREGKTDY10YAEGKTDYYA20RKRLV</td>
+    </tr>
+  </tbody>
+</table>
+
+_#The peptides are referred to by the same name as the protein they originate from and the residue numbers of their N- and C-termini are indicated._
+
+![Video 1.](https://cdn.elifesciences.org/articles/13571/elife-13571-media1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/13571/elife-13571-media2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/13571/elife-13571-media3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/13571/elife-13571-media4.mp4.jpg)
+
+**Table 2.**
+ Binding affinities for interactions between N122 (NPM1 residues 1–122, displaying only A1) and N130 (displaying both A1 and A2) and the multivalent R-motif-containing peptides, determined using isothermal titration calorimetry (ITC), at concentrations below the critical phase separation threshold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Peptide</th>
+      <th colspan="2">N122</th>
+      <th colspan="2">N130</th>
+    </tr>
+    <tr>
+      <th>N (sites)</th>
+      <th>KD (μM)</th>
+      <th>N (sites)</th>
+      <th>KD (μM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rpL5</td>
+      <td>0.63 ± 0.09</td>
+      <td>19.0 ± 2.7</td>
+      <td>2.18 ± 0.19</td>
+      <td>20.5 ± 5.0</td>
+    </tr>
+    <tr>
+      <td>GNL2</td>
+      <td>0.66 ± 0.04</td>
+      <td>10.2 ± 1.3</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+    </tr>
+    <tr>
+      <td>SURF6</td>
+      <td>0.55 ± 0.06</td>
+      <td>9.2 ± 0.5</td>
+      <td>1.4 ± 0.02</td>
+      <td>19.0 ± 0.8</td>
+    </tr>
+    <tr>
+      <td>rpL23a</td>
+      <td>n.d.#</td>
+      <td>n.d.#</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+    </tr>
+    <tr>
+      <td>rpL5-RA</td>
+      <td>1.0 ± 0.06</td>
+      <td>50.9 ± 3.18</td>
+      <td>0.84 ± 0.07</td>
+      <td>140.1 ± 9.29</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Not determined due to multiple, unresolved binding events# Heat change was too weak for accurate data analysisAverage values from a minimum of three independent experiments are reported ± SD_
+
+### Mutivalent R-peptides mediate inter-pentamer cross-linking in liquid-like droplets
+
+Next, to understand the mechanism of phase separation, we characterized the structural features of complexes of rpL5 with N130 before and after droplet formation. Fluorescence anisotropy (FA) of a N130S125C mutant, labeled with Alexa Fluor594 within A2, increased in a biphasic manner upon titration of rpL5 (Figure 3a). Results from small-angle neutron scattering (SANS) and analytical ultracentrifugation (AUC) experiments showed that monodisperse, soluble complexes formed at the first FA transition, which occurred at ~1:1 rpL5:N130 stoichiometry (Figure 3a, inset; Figure 3a–c; Figure 3—figure supplement 1; Table 3). Nuclear magnetic resonance (NMR) spectroscopy showed that rpL5 bound to both the A1 and A2 tracts within 15N-N130 (Mitrea et al., 2014) with a global KD of 57 ± 14 µM (see Analysis methods) in agreement with isothermal titration calorimetry measurements (Table 2). Site-specific KD values calculated from chemical shift perturbations of individual N130 peaks upon titration with rpL5 (Figure 4a) are presented in Table 4. We investigated NMR transverse dipole-dipole/CSA cross relaxation and longitudinal relaxation for backbone amide moieties in 2H/15N-N130 titrated with rpL5 to determine their dynamic parameters before phase separation (Figure 4b,c). Residues within the A2 tract of the apo state, analyzed separately from the folded pentameric core (see Analysis methods), experienced fast, local motions [average local correlation time (τc,local), 2.10 ± 0.05 ns; average local order parameter (Sf2), 0.44 ± 0.01]; these motions were slowed when N130 was ~93% saturated with rpL5 (τc,local, 4.56 ± 0.06 ns; Table 5) and were reduced in amplitude (Sf2, 0.76 ± 0.01; Table 5). Furthermore, a comparison of the overall tumbling time for core residues of N130 in the free and 93% rpL5 saturated state indicated 2:1 binding stoichiometry (see Analysis methods).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig3-v3.jpg)
 
-**Figure 3.:** (a) Fluorescence anisotropy of Alexa Fluor594-labeled N130 (at S125C within acidic tract A2; 1 μM) upon titration of the rpL5 peptide; the total [N130] was 200 μM. Insets: light microscopy images of the 1:1 (cyan box), 2:1 (green box) and 3:1 (red box) rpL5:N130 solutions. The same stoichiometry color coding is used in all panels. (b) SANS curves, I(q) versus q, for rpL5:N130 (200 μM) solutions at 0:1, 1:1, 2:1, and 3:1 stoichiometry. The curve for the 0:1 solution is on the absolute I(q) scale (cm-1) with the others shifted in 1, 2 and 4 decade increments for clarity. Fits (solid lines) of the curves to obtain Rg values (0:1 and 1:1 solutions) and correlation distances (2:1 and 3:1 solutions) are shown (See Analysis methods for details on curve fitting). (c) Pair-distribution, P(r), curves for 0:1 and 1:1 rpL5:N130 were calculated from the corresponding SANS curves (fits shown in Figure 3b). For apo N130, the Dmax ~ 78.65 Å with a resulting Rg = 23.04 ± 0.09 Å and I(0) = 0.2344 ± 0.0006 cm-1. From I(0) and using Eq. S1, the estimated molecular mass, M = 76 kDa, was determined; this mass is consistent with the expected five subunits within the pentamer (subunit M = 14.6 kDa). For 1: 1 rpL5:N130, the Dmax ~ 80.32 Å with a resulting Rg = 24.3 ± 0.1 Å and I(0) = 0.2744 ± 0.0009 cm-1. Here, I(0) yields M = 89 kDa, indicative of ~5 rpL5 (M = 2.2 kDa) molecules bound to N130.DOI: http://dx.doi.org/10.7554/eLife.13571.014
+**Figure 3.:** (a) Fluorescence anisotropy of Alexa Fluor594-labeled N130 (at S125C within acidic tract A2; 1 μM) upon titration of the rpL5 peptide; the total [N130] was 200 μM. Insets: light microscopy images of the 1:1 (cyan box), 2:1 (green box) and 3:1 (red box) rpL5:N130 solutions. The same stoichiometry color coding is used in all panels. (b) SANS curves, I(q) versus q, for rpL5:N130 (200 μM) solutions at 0:1, 1:1, 2:1, and 3:1 stoichiometry. The curve for the 0:1 solution is on the absolute I(q) scale (cm-1) with the others shifted in 1, 2 and 4 decade increments for clarity. Fits (solid lines) of the curves to obtain Rg values (0:1 and 1:1 solutions) and correlation distances (2:1 and 3:1 solutions) are shown (See Analysis methods for details on curve fitting). (c) Pair-distribution, P(r), curves for 0:1 and 1:1 rpL5:N130 were calculated from the corresponding SANS curves (fits shown in Figure 3b). For apo N130, the Dmax ~ 78.65 Å with a resulting Rg = 23.04 ± 0.09 Å and I(0) = 0.2344 ± 0.0006 cm-1. From I(0) and using Eq. S1, the estimated molecular mass, M = 76 kDa, was determined; this mass is consistent with the expected five subunits within the pentamer (subunit M = 14.6 kDa). For 1: 1 rpL5:N130, the Dmax ~ 80.32 Å with a resulting Rg = 24.3 ± 0.1 Å and I(0) = 0.2744 ± 0.0009 cm-1. Here, I(0) yields M = 89 kDa, indicative of ~5 rpL5 (M = 2.2 kDa) molecules bound to N130.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig3-figsupp1-v3.jpg)
 
-**Figure 3—figure supplement 1.:** SV-AUC profiles for apo N130 (purple), or N130 with rpL5 at 1:1 (light blue), 2:1 (green) and 3:1 (red) stoichiometric ratio (rpL5:N130).DOI: http://dx.doi.org/10.7554/eLife.13571.015
+**Figure 3—figure supplement 1.:** SV-AUC profiles for apo N130 (purple), or N130 with rpL5 at 1:1 (light blue), 2:1 (green) and 3:1 (red) stoichiometric ratio (rpL5:N130).
+
+**Table 3.**
+ Results of sedimentation velocity analytical centrifugation analysis (SV-AUC) of N130 in the absence or presence of increasing concentrations of the rpL5 peptide.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>rpL5:N130</th>
+      <th>mg/mla</th>
+      <th>s20 (Svedberg)b</th>
+      <th>s20,w (Svedberg)c</th>
+      <th>MW (kDa)d</th>
+      <th>f/f0 e</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0:1</td>
+      <td>2.76</td>
+      <td>4.63 (98.7%)</td>
+      <td>4.82</td>
+      <td>88.9</td>
+      <td>1.53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7.90 (1.20%)</td>
+      <td>8.22</td>
+      <td>198.0</td>
+      <td>1.53</td>
+    </tr>
+    <tr>
+      <td>1:1</td>
+      <td>3.09</td>
+      <td>5.23 (96.3%)</td>
+      <td>5.44</td>
+      <td>99.3</td>
+      <td>1.46</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7.63 (3.7%)</td>
+      <td>7.94</td>
+      <td>175.0</td>
+      <td>1.46</td>
+    </tr>
+    <tr>
+      <td>2:1 (1-300 min)</td>
+      <td>3.63</td>
+      <td>1.07 (2.6%)</td>
+      <td>1.11</td>
+      <td>6.8</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5.80 (48%)</td>
+      <td>6.03</td>
+      <td>86.3</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8.11 (23%)</td>
+      <td>8.44</td>
+      <td>143.0</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12.33 (25%)</td>
+      <td>12.82</td>
+      <td>268.0</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14-19 (7%)</td>
+      <td>14-19</td>
+      <td>300-500</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <td>2:1 (100-300 min)f</td>
+      <td>3.31</td>
+      <td>5.75 (56%)</td>
+      <td>5.98</td>
+      <td>81.1</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5.80 (25%)</td>
+      <td>6.03</td>
+      <td>128.0</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8.11 (17%)</td>
+      <td>8.44</td>
+      <td>182.0</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <td>3:1 (1-300 min)</td>
+      <td>2.01</td>
+      <td>0.95 (17%)</td>
+      <td>0.98</td>
+      <td>7.4</td>
+      <td>1.43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5.80 (31%)</td>
+      <td>6.00</td>
+      <td>112.0</td>
+      <td>1.43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10.32 (32%)</td>
+      <td>10.73</td>
+      <td>266.0</td>
+      <td>1.43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14-27 (21%)</td>
+      <td>14-27</td>
+      <td>500-850</td>
+      <td>1.43</td>
+    </tr>
+    <tr>
+      <td>3:1 (100-300 min)f</td>
+      <td>1.29</td>
+      <td>1.18 (4%)</td>
+      <td>1.22</td>
+      <td>1.1</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5.73 (41%)</td>
+      <td>5.96</td>
+      <td>117.0</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7.41 (20%)</td>
+      <td>7.71</td>
+      <td>173.0</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>9.17 (15%)</td>
+      <td>9.54</td>
+      <td>238.0</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11.33 (15%)</td>
+      <td>11.79</td>
+      <td>266.0</td>
+      <td>1.49</td>
+    </tr>
+  </tbody>
+</table>
+
+_a Total concentration in mg/ml.b Sedimentation coefficient taken from the ordinate maximum of each peak in the best-fit c(s) distribution at 20 °C with percentage protein amount in parenthesis. Sedimentation coefficient (s-value) is a measure of the size and shape of a protein in a solution with a specific density and viscosity at a specific temperature.c Standard sedimentation coefficient (s20,w-value) in water at 20 °C.d Molar mass values (MW) taken from the c(s) distribution that was transformed to the c(M) distribution. The theoretical molar mass is in parenthesis.e Best-fit weight-average frictional ratio values (f/f0)w taken from the c(s) distribution.f Fit of the data in the 100-300 min sedimentation time frame, for the analysis of the lower MW rpL5:N130 complex intermediates. The MW cutoff of ~ 300 kDa corresponds to a tetramer of N130 pentamers._
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig4-v3.jpg)
 
-**Figure 4.:** (a) 1H-15N TROSY-HSQC spectra of apo N130 (magenta), in a soluble complex with rpL5 (2.1:1 rpL5:N130; green) and in the phase separated state (4:1 rpL5:N130; red). (b) Examples of R2,β and R2,α peak intensity decay curves measured at 800 MHz (i) and 1000 MHz (ii), and R1 peak intensity decay curves measured at 800 MHz (iii) for free N130. In (i) and (ii), points and curves in black and red correspond to the R2,β and R2,α experiments, respectively. In (i)–(iii), circles and squares indicate data points for residues Tyr29 (within the folded pentamer core) and Glu121 (within the disordered A2 tract), respectively. Solid lines correspond to fits using a simple exponential decay model from which relaxation rates and intensities at zero time were extracted. (c) (i) Comparison of S2 values for the N-terminus for which data could be collected for apo N130 (magenta bars) and 2.5:1 rpL5:N130 (green bars). Comparison of τc,local (ii) and S2 (iii) values for C-terminal residues in apo N130 (magenta bars) and 2.5:1 rpL5:N130 (green bars). S125 is overlapped in the apo N130 spectrum; therefore, under this condition, these analyses could not be performed.DOI: http://dx.doi.org/10.7554/eLife.13571.017
+**Figure 4.:** (a) 1H-15N TROSY-HSQC spectra of apo N130 (magenta), in a soluble complex with rpL5 (2.1:1 rpL5:N130; green) and in the phase separated state (4:1 rpL5:N130; red). (b) Examples of R2,β and R2,α peak intensity decay curves measured at 800 MHz (i) and 1000 MHz (ii), and R1 peak intensity decay curves measured at 800 MHz (iii) for free N130. In (i) and (ii), points and curves in black and red correspond to the R2,β and R2,α experiments, respectively. In (i)–(iii), circles and squares indicate data points for residues Tyr29 (within the folded pentamer core) and Glu121 (within the disordered A2 tract), respectively. Solid lines correspond to fits using a simple exponential decay model from which relaxation rates and intensities at zero time were extracted. (c) (i) Comparison of S2 values for the N-terminus for which data could be collected for apo N130 (magenta bars) and 2.5:1 rpL5:N130 (green bars). Comparison of $\tau$c,local (ii) and S2 (iii) values for C-terminal residues in apo N130 (magenta bars) and 2.5:1 rpL5:N130 (green bars). S125 is overlapped in the apo N130 spectrum; therefore, under this condition, these analyses could not be performed.
 
-The second transition in the FA curve (starting at ~2.5:1 rpL5:N130) corresponded to phase separation (
+**Table 4.**
+ NMR-derived dissociation constant (KD) values determined by monitoring chemical shift perturbations of individual N130 nitrogen backbone resonances while titrating the rpL5 peptide.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Residue</th>
+      <th>Structural context</th>
+      <th>KD (μM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Met5</td>
+      <td>N-terminus</td>
+      <td>385 ± 108</td>
+    </tr>
+    <tr>
+      <td>Asp6</td>
+      <td>N-terminus</td>
+      <td>116 ± 25</td>
+    </tr>
+    <tr>
+      <td>Met7</td>
+      <td>N-terminus</td>
+      <td>142 ± 30</td>
+    </tr>
+    <tr>
+      <td>Ser10</td>
+      <td>N-terminus</td>
+      <td>56 ± 13</td>
+    </tr>
+    <tr>
+      <td>Leu12</td>
+      <td>N-terminus</td>
+      <td>10 ± 5</td>
+    </tr>
+    <tr>
+      <td>Arg13</td>
+      <td>N-terminus</td>
+      <td>58 ± 13</td>
+    </tr>
+    <tr>
+      <td>Gln15</td>
+      <td>Core</td>
+      <td>36 ± 10</td>
+    </tr>
+    <tr>
+      <td>Tyr17</td>
+      <td>Core</td>
+      <td>19 ± 9</td>
+    </tr>
+    <tr>
+      <td>Leu18</td>
+      <td>Core</td>
+      <td>205 ± 51</td>
+    </tr>
+    <tr>
+      <td>Val33</td>
+      <td>Core</td>
+      <td>1041 ± 649</td>
+    </tr>
+    <tr>
+      <td>Asp36</td>
+      <td>A1 tract</td>
+      <td>329 ± 93</td>
+    </tr>
+    <tr>
+      <td>Glu37</td>
+      <td>A1 tract</td>
+      <td>1549 ± 1168</td>
+    </tr>
+    <tr>
+      <td>Glu39</td>
+      <td>A1 tract</td>
+      <td>115 ± 37</td>
+    </tr>
+    <tr>
+      <td>His40</td>
+      <td>Core</td>
+      <td>123 ± 23</td>
+    </tr>
+    <tr>
+      <td>Leu42</td>
+      <td>Core</td>
+      <td>24 ± 9</td>
+    </tr>
+    <tr>
+      <td>Ser43</td>
+      <td>Core</td>
+      <td>166 ± 38</td>
+    </tr>
+    <tr>
+      <td>Ala64</td>
+      <td>Core</td>
+      <td>1227 ± 562</td>
+    </tr>
+    <tr>
+      <td>Asn66</td>
+      <td>Core</td>
+      <td>1530 ± 958</td>
+    </tr>
+    <tr>
+      <td>Tyr67</td>
+      <td>Core</td>
+      <td>245 ± 58</td>
+    </tr>
+    <tr>
+      <td>Glu68</td>
+      <td>Core</td>
+      <td>147 ± 29</td>
+    </tr>
+    <tr>
+      <td>Val74</td>
+      <td>Core</td>
+      <td>53 ± 14</td>
+    </tr>
+    <tr>
+      <td>Phe92</td>
+      <td>Core</td>
+      <td>14 ± 6</td>
+    </tr>
+    <tr>
+      <td>Glu93</td>
+      <td>Core</td>
+      <td>329 ± 78</td>
+    </tr>
+    <tr>
+      <td>Ile94</td>
+      <td>Core</td>
+      <td>73 ± 17</td>
+    </tr>
+    <tr>
+      <td>Thr95</td>
+      <td>Core</td>
+      <td>34 ± 9</td>
+    </tr>
+    <tr>
+      <td>Leu116</td>
+      <td>Core</td>
+      <td>101 ± 24</td>
+    </tr>
+    <tr>
+      <td>Val117</td>
+      <td>Core</td>
+      <td>61 ± 17</td>
+    </tr>
+    <tr>
+      <td>Ala118</td>
+      <td>Core</td>
+      <td>35 ± 9</td>
+    </tr>
+    <tr>
+      <td>Glu120</td>
+      <td>A2 tract</td>
+      <td>68 ± 16</td>
+    </tr>
+    <tr>
+      <td>Glu121</td>
+      <td>A2 tract</td>
+      <td>101 ± 18</td>
+    </tr>
+    <tr>
+      <td>Asp122</td>
+      <td>A2 tract</td>
+      <td>279 ± 76</td>
+    </tr>
+    <tr>
+      <td>Ala123</td>
+      <td>A2 tract</td>
+      <td>182 ± 50</td>
+    </tr>
+    <tr>
+      <td>Glu124</td>
+      <td>A2 tract</td>
+      <td>614 ± 410</td>
+    </tr>
+    <tr>
+      <td>Glu126</td>
+      <td>A2 tract</td>
+      <td>576 ± 471</td>
+    </tr>
+    <tr>
+      <td>Asp127</td>
+      <td>A2 tract</td>
+      <td>2162 ± 1612</td>
+    </tr>
+    <tr>
+      <td>Glu130</td>
+      <td>A2 tract</td>
+      <td>4258 ± 1986</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ NMR-derived dynamic parameters for monodisperse apo N130 and a 2.5:1 rpL5:N130 soluble complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Apo N130 (N-terminus/A2 tract)</th>
+      <th>2.5:1 rpL5:N130 (N-terminus/A2 tract)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>τc,local(ns)</td>
+      <td>--a / 2.10 ± 0.05</td>
+      <td>--a / 4.56 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>Sf2</td>
+      <td>0.16 ± 0.01a / 0.44 ± 0.01</td>
+      <td>0.26 ± 0.02a / 0.76 ± 0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_aDynamic parameters for the N-terminus were determined using a global τc value; thus, the only residue-specific motional parameter for residues within the N-terminus was Sf2 (see Materials and Methods)._
+
+The second transition in the FA curve (starting at ~2.5:1 rpL5:N130) corresponded to phase separation (Figure 3a). To gain insight into conformational changes associated with phase separation, we performed single-molecule Förster resonance energy transfer ( smFRET) experiments with a mutant of N130, N130Q15C/S125C, that could be dually labeled with Alexa Fluor594 & 680 at sites within the pentamer core (Q15C) and the A2 acidic tract (S125C), respectively. The FRET efficiency (EFRET) for this dye pair within the droplet phase (EFRET ~0.15) was dramatically reduced in comparison with that observed in the absence of rpL5 (EFRET ~0.85; Figure 5), consistent with the extension of the A2 tract from the N130 pentamer core due to interactions with rpL5 molecules upon phase separation (Figure 6a). In contrast to the monodisperse character of the SANS curves for samples of rpL5 and N130 at 0:1 and 1:1 (rpL5:N130) stoichiometry (Figure 3b,c), the curve for the 1:3 sample indicated periodic structural organization within the liquid-like droplets (Figure 3b, red curve). We interpreted these features in terms of inter-molecular correlation distances (55 Å, 77 Å, and 119 Å; see Analysis methods) due to organization of N130 and rpL5 induced by phase separation. Notably, nascent, higher order structural organization was evident in the SANS curve for a solution of rpL5 and N130 with 2:1 stoichiometry (Figure 3b, green curve). Assembly of rpL5 and N130 into higher order, soluble intermediates at and above the 2:1 stoichiometric ratio was also demonstrated using sedimentation velocity analytical ultracentrifugation (SV-AUC; Figure 3—figure supplement 1, Table 3). The appearance of high molecular weight species within the detection range (<1 MDa) was accompanied by a progressive decrease in the total mass detected, likely due to sedimentation of rpL5:N130 droplets in the sample cell during the dead-time of the experiment. Above the phase separation threshold (>3:1 rpL5:N130), resonances for residues within the N130 core broadened beyond detection in 2D 1H-15N TROSY spectra but not those for residues within the A2 tract (Figure 4a). Chemical shift values indicated that these residues remained disordered.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig5-v3.jpg)
 
-**Figure 5.:** smFRET histograms for Alexa Fluor594/680-labeled N130Q15C/S125C (~100 pM; total [N130], 200 μM) at 0:1, 0.5:1, 2.7:1 and 3:1 (phase separated state) rpL5:N130 stoichiometry; the FRET events corresponding to conformational states with similar EFRET values are indicated by the shaded regions. The solid lines are Gaussian fits of the data, from which average EFRET values were determined.DOI: http://dx.doi.org/10.7554/eLife.13571.020
+**Figure 5.:** smFRET histograms for Alexa Fluor594/680-labeled N130Q15C/S125C (~100 pM; total [N130], 200 μM) at 0:1, 0.5:1, 2.7:1 and 3:1 (phase separated state) rpL5:N130 stoichiometry; the FRET events corresponding to conformational states with similar EFRET values are indicated by the shaded regions. The solid lines are Gaussian fits of the data, from which average EFRET values were determined.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig6-v3.jpg)
 
-**Figure 6.:** (a) Structural representation of results from NMR and smFRET that revealed dramatic changes in dynamics and spatial orientation of the A2 track of N130 upon rpL5 peptide binding: apo N130 (top) and N130 in complex with rpL5 (bottom). Residues within the A2 tract of N130 are shown as colored spheres with diameters proportional to the  value for the τc,local15N nucleus of amide group. The sites of fluorescent labeling, Q15C and S125C, are indicated as purple and yellow spheres, respectively (the spheres for Q15C do not encode dynamic information). In the apo state, A2 randomly samples relatively compact conformations, while in liquid-like droplets, these residues extend away from the N130 core. (b) Schematic representation of apo N130 (i) and the proposed structural model of phase separation. Upon saturation of the two principal binding sites within the A1 and A2 tracts on N130 (ii), bound rpL5 peptides extend toward and engage in weak interactions with neighboring N130 pentamers (iii), thus creating 3D, expandable cross-links. In (iii), only a subset of the possible inter-N130 pentamer crosslinks are shown for clarity. We suggest that one of the correlation distances observed using SANS (77 Å) corresponds to the inter-N130 pentamer spacing.DOI: http://dx.doi.org/10.7554/eLife.13571.021
+**Figure 6.:** (a) Structural representation of results from NMR and smFRET that revealed dramatic changes in dynamics and spatial orientation of the A2 track of N130 upon rpL5 peptide binding: apo N130 (top) and N130 in complex with rpL5 (bottom). Residues within the A2 tract of N130 are shown as colored spheres with diameters proportional to the $\tau_{c,local}$ value for the 15N nucleus of amide group. The sites of fluorescent labeling, Q15C and S125C, are indicated as purple and yellow spheres, respectively (the spheres for Q15C do not encode dynamic information). In the apo state, A2 randomly samples relatively compact conformations, while in liquid-like droplets, these residues extend away from the N130 core. (b) Schematic representation of apo N130 (i) and the proposed structural model of phase separation. Upon saturation of the two principal binding sites within the A1 and A2 tracts on N130 (ii), bound rpL5 peptides extend toward and engage in weak interactions with neighboring N130 pentamers (iii), thus creating 3D, expandable cross-links. In (iii), only a subset of the possible inter-N130 pentamer crosslinks are shown for clarity. We suggest that one of the correlation distances observed using SANS (77 Å) corresponds to the inter-N130 pentamer spacing.
 
-Integrating our structural results, we propose a model of rpL5/N130-dependent phase separation, as follows (
+Integrating our structural results, we propose a model of rpL5/N130-dependent phase separation, as follows (Figure 6b). As rpL5 is titrated into N130 up to 2:1 stoichiometry (rpL5:N130), the R1 motifs, comprised of four Arg residues each, bind to acidic residues within the A1 binding groove and disordered A2 tract of N130, with the R2 motif available for interactions. Upon further titration of rpL5, at the critical phase separation concentration, when the higher affinity sites reach a critical saturation threshold, R2 motifs within rpL5 molecules already bound to N130 pentamers transiently engage A tracts of other pentamers, possibly within the longer and disordered A2 tract, establishing inter-N130 pentamer cross-links. Together, our data support the hypothesis that the molecular basis of phase separation is the formation of non-covalent, inter-N130 pentamer interactions via the two R-motifs within the same rpL5 peptide molecule. We propose that these rpL5-mediated interactions establish the inter-pentamer spacing within the droplet phase that was detected by SANS (Figure 3b). In order to validate this model, we synthesized a variant rpL5 peptide in which the eight residue-long linker connecting the two R-motifs (see Table 1) was duplicated. The phase separated sample formed between the peptide with the longer linker (rpL5-2xLinker) exhibited altered inter-molecular spacing, as indicated by altered correlation distances derived from the SANS curve (Figure 7). These shifted to positions corresponding to larger correlation distances, in agreement with the hypothesis that the R-motif peptides establish inter-N130 pentamer spacing in the liquid-like phase. We envision that such cross-links are dynamically formed and broken but that, once phase separation occurs, they dominate the structural organization detected by SANS.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig7-v3.jpg)
 
-**Figure 7.:** (a) SANS curves, I(q) versus q, for 3:1 rpL5:N130 (red) and rpL5-2xLinker:N130 (orange) solutions; the N130 concentration for both was 200 μM. The curve for the droplets containing rpL5 2xLinker is displayed on absolute I(q) scale (cm-1) with the curve corresponding to rpL5 containing droplets shifted in 4 decade increments for clarity. Fits (solid lines) of the curves to obtain correlation distances are shown (See Analysis methods for details on curve fitting). Peak positions for the droplets with the rpL5-2xLinker correspond to correlation distances (d) of 63 Å & 100 Å whereas those observed with the wild-type rpL5 peptide correspond to d values of 56 Å, 79 Å & 119 Å. Inset: wide-field fluorescence microscopy (left) and DIC (right) images of droplets formed from the 3:1 rpL5-2xLinker:N130 solution. Scale bar = 10 μm.DOI: http://dx.doi.org/10.7554/eLife.13571.022
+**Figure 7.:** (a) SANS curves, I(q) versus q, for 3:1 rpL5:N130 (red) and rpL5-2xLinker:N130 (orange) solutions; the N130 concentration for both was 200 μM. The curve for the droplets containing rpL5 2xLinker is displayed on absolute I(q) scale (cm-1) with the curve corresponding to rpL5 containing droplets shifted in 4 decade increments for clarity. Fits (solid lines) of the curves to obtain correlation distances are shown (See Analysis methods for details on curve fitting). Peak positions for the droplets with the rpL5-2xLinker correspond to correlation distances (d) of 63 Å & 100 Å whereas those observed with the wild-type rpL5 peptide correspond to d values of 56 Å, 79 Å & 119 Å. Inset: wide-field fluorescence microscopy (left) and DIC (right) images of droplets formed from the 3:1 rpL5-2xLinker:N130 solution. Scale bar = 10 μm.
 
-## NPM1 incorporates both R-rich peptides and rRNA into multicomponent liquid-like droplets
+### NPM1 incorporates both R-rich peptides and rRNA into multicomponent liquid-like droplets
 
-Our data showed that the minimal construct, N130, supported droplet formation. However, both the OD (
+Our data showed that the minimal construct, N130, supported droplet formation. However, both the OD (Enomoto et al., 2006; Jian et al., 2009) and NBD (Hisaoka et al., 2014; Negi and Olson, 2006) are required for nucleolar localization of transfected NPM1, suggesting that interactions with ribosomal RNA (rRNA) are also involved in integration of NPM1 within the GC matrix. Full length NPM1 also exhibits a central intrinsically disordered region (IDR) that, in addition to the A2 tract, contains a longer acidic tract termed A3 (Figure 1a). We tested and confirmed the ability of full length NPM1 (N294) to phase separate with either wheat germ rRNA or rpL5 using light scattering (Figure 8a & b, respectively) and fluorescence microscopy (Figure 9a, Rows 1 & 2, respectively). Binary mixtures of N294 with either rpL5 or rRNA formed droplets that increased in size over time (Figure 9b); those with rpL5 fused more rapidly and were larger in size than those with rRNA. Furthermore, droplets of NPM1 with rpL5 formed at ~5-fold lower concentrations of both components (Figure 8b) than were required for phase separation with N130 and rpL5 (Figure 1b) due to the higher valency of acidic tracts within the full-length protein. Interestingly, rpL5 (and other R-motif peptides) and rRNA phase separated in the absence of N294 (Figure 8c,d), forming very small puncta (Figure 9a, Row 3). We cannot explain the physical basis for the different dynamics of liquid-like droplets formed by N294 with either rRNA or rpL5 (Figure 9a, Rows 1 and 2, respectively) or the morphology of the punctate structures formed by rRNA and rpL5 (Figure 9a, Rows 3) due to the lack of data on the interaction between NBD of NPM1 or rpL5, and rRNA (i.e., binding affinities, number and location of binding sites, etc.). The size difference between the two types of droplets with N294 (Figure 9a, Rows 1 and 2) may, however, arise from differences in binding affinity between rRNA and NBD versus rpL5 and A tracts within OD/IDR.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig8-v3.jpg)
 
-**Figure 8.:** Titration of (a) N294 into 50 μg/mL rRNA and (b) rpL5 into 40 μM N294; (c) Titrations of rRNA into 50 μM R-motif containing peptides (rpL5, GLN2, SURF6, and rpL23a). (d) Titrations of R-motif containing peptides into 50 μg/mL rRNA (as in c).DOI: http://dx.doi.org/10.7554/eLife.13571.023
+**Figure 8.:** Titration of (a) N294 into 50 μg/mL rRNA and (b) rpL5 into 40 μM N294; (c) Titrations of rRNA into 50 μM R-motif containing peptides (rpL5, GLN2, SURF6, and rpL23a). (d) Titrations of R-motif containing peptides into 50 μg/mL rRNA (as in c).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig9-v3.jpg)
 
-**Figure 9.:** (a) Confocal microscopy images of droplets after 15 min incubation formed between 40 μM N294 and 50 μg/mL rRNA (Row 1), 40 μM N294 and 200 μM rpL5 (Row 2), 200 μM rpL5 and 50 μg/mL rRNA (Row 3) and 40 μM N294 and 50 μg/mL rRNA droplets treated with 40 μM rpL5, a concentration below the critical phase separation threshold for N294/rpL5 binary system (Row 4). rpL5 and N294 were labeled with Alexa Fluor594 and Alexa Fluor488, respectively. Scale bar = 10 μm; (b) Quantitation of droplet size over time for the samples presented in panel a; values plotted are the mean ± SD, n = 4 fields of view.DOI: http://dx.doi.org/10.7554/eLife.13571.024
+**Figure 9.:** (a) Confocal microscopy images of droplets after 15 min incubation formed between 40 μM N294 and 50 μg/mL rRNA (Row 1), 40 μM N294 and 200 μM rpL5 (Row 2), 200 μM rpL5 and 50 μg/mL rRNA (Row 3) and 40 μM N294 and 50 μg/mL rRNA droplets treated with 40 μM rpL5, a concentration below the critical phase separation threshold for N294/rpL5 binary system (Row 4). rpL5 and N294 were labeled with Alexa Fluor594 and Alexa Fluor488, respectively. Scale bar = 10 μm; (b) Quantitation of droplet size over time for the samples presented in panel a; values plotted are the mean ± SD, n = 4 fields of view.
 
 Intrigued by the physical differences between the structures formed by pairwise combinations of N294, rpL5 and rRNA, we next sought to understand the behavior of these three species in ternary mixtures by examining interactions between pre-formed droplets comprised of N294 and rRNA to which freely diffusing rpL5 was added, at a concentration below that which caused phase separation with N294 alone (Figure 9a, Row 4). The peptide accumulated into the rRNA/N294 droplets, highlighting NPM1’s capacity to bind the two fundamental classes of macromolecules present in the nucleolus; these droplets also slowly grew over time (Figure 9b). Importantly, this multi-modal binding mediates the co-assembly of rRNA and rpL5 within a dense, multi-component liquid-like phase. We hypothesize that a similar molecular mechanism is responsible for the phase separation and co-localization of nucleolar components within the GC.
 
-We next examined the roles of the different domains of NPM1 in phase separation to form multi-component liquid-like droplets using two truncation mutants, one lacking the NBD (N240, residues 1–240;
+We next examined the roles of the different domains of NPM1 in phase separation to form multi-component liquid-like droplets using two truncation mutants, one lacking the NBD (N240, residues 1–240; Figure 2a) and another lacking the OD (ΔN, residues 120–294; Figure 2a). In agreement with a mechanistic model wherein multivalent interactions between pentameric A1, A2, and A3 tracts within NPM1 and multivalent R-motifs within its nucleolar protein partners mediate phase separation, the N240, but not the ΔN construct phase separated with rpL5 (Figure 10a). Furthermore, neither of these truncated constructs experienced phase separation in the presence of rRNA, confirming that multivalent display of the NBD is required for the co-localization of rRNA with NPM1 within liquid-like droplets (Figure 10b).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig10-v3.jpg)
 
-**Figure 10.:** Light scattering assays of (a) titrations of rpL5 peptide into 40 μM NPM1 and (b) titrations of NPM1 constructs into 50 μg/mL rRNA. Values plotted are the mean ± SD, n = 3 experiments. The dashed line at 0.1 AU indicates the threshold, above which visible turbidity and microscopic droplets can be detected.DOI: http://dx.doi.org/10.7554/eLife.13571.025
+**Figure 10.:** Light scattering assays of (a) titrations of rpL5 peptide into 40 μM NPM1 and (b) titrations of NPM1 constructs into 50 μg/mL rRNA. Values plotted are the mean ± SD, n = 3 experiments. The dashed line at 0.1 AU indicates the threshold, above which visible turbidity and microscopic droplets can be detected.
 
-Multi-modal binding to two classes of macromolecules, R-motif-containing nucleolar proteins (binding mode 1) and rRNA (binding mode 2), is likely critical for NPM1-dependent formation of multi-component liquid-like droplets. In the absence of NPM1, rRNA and rpL5, representing these two classes, phase separated into small puncta (
+Multi-modal binding to two classes of macromolecules, R-motif-containing nucleolar proteins (binding mode 1) and rRNA (binding mode 2), is likely critical for NPM1-dependent formation of multi-component liquid-like droplets. In the absence of NPM1, rRNA and rpL5, representing these two classes, phase separated into small puncta (Figure 8c,d, Figure 9). Given this result, we next asked whether addition of NPM1 constructs to these puncta would cause reorganization and co-localization of the constituent macromolecules within larger, liquid-like droplets. In order to differentiate between the effects of interactions between the OD/A tracts and rpL5 (mode 1) and OD/NBD and rRNA mode (mode 2) on phase separation, we first formed rRNA/rpL5 puncta at two concentrations of rpL5 and then added the NPM1 constructs and monitored phase separation using confocal-microscopy. At the high rpL5 concentration (rpL5, 200 μM; NPM1 constructs, 30 μM; termed the 'excess' condition), rpL5 and NPM1 could independently phase separate. However, at the low concentration (rpL5, 50 μM; NPM1 constructs, 30 μM; termed the 'limiting' condition), rpL5 and NPM1 could not independently phase separate. The addition of N294 to pre-formed, rpL5/rRNA puncta caused spontaneous formation of large droplets under conditions of both limiting and excess rpL5, whose sizes increased with increasing N294 concentration (Figure 11). In contrast, addition of the N240 deletion construct, lacking the NBD, caused phase separation under conditions of excess rpL5, but not with a limiting amount of rpL5 (Figure 11). Finally, addition of the ΔN construct, lacking the OD and therefore displaying dramatically reduced multivalency, failed to cause phase separation under both excess and limiting rpL5 conditions (Figure 11). Together, these results support a mechanism wherein the high valency associated with the NPM1 OD, together with the multiple acidic tracts and NBD, are required for the dissolution of rpL5/rRNA puncta and co-localization of these molecules within large liquid-like droplets that readily grow in size. We thus propose that, through multi-modal interactions with two major classes of nucleolar macromolecules, NPM1 localizes to the nucleolus and also mediates the co-localization of other protein-binding partners and rRNA within the GC of the nucleolus.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig11-v3.jpg)
 
-**Figure 11.:** Confocal microscopic images 15 min after the addition of the specified NPM1 construct (30 μM) to preformed rpL5/rRNA puncta formed from 50 μg/mL rRNA and 200 μM rpL5 (a) and from 50 μg/mL rRNA and 50 μM rpL5 (b). Scale bar = 10 μm. Quantification of the growth of droplets formed through disassembly of rpL5/rRNA puncta upon addition of individual NPM1 constructs. (c) NPM1 constructs were titrated into puncta formed between 200 μM rpL5 and 50 μg/mL rRNA, where rpL5 is above the threshold for independent phase separation with NPM1. The star at 40 μM N294 indicates that the droplets experienced wetting on the slide surface and expanded above the maximum threshold of 100 μm2 set in the analysis; (d) NPM1 constructs titrated into puncta formed between 50 μM rpL5 and 50 μg/mL rRNA, where rpL5 is below the threshold for independent phase separation with NPM1.DOI: http://dx.doi.org/10.7554/eLife.13571.026
+**Figure 11.:** Confocal microscopic images 15 min after the addition of the specified NPM1 construct (30 μM) to preformed rpL5/rRNA puncta formed from 50 μg/mL rRNA and 200 μM rpL5 (a) and from 50 μg/mL rRNA and 50 μM rpL5 (b). Scale bar = 10 μm. Quantification of the growth of droplets formed through disassembly of rpL5/rRNA puncta upon addition of individual NPM1 constructs. (c) NPM1 constructs were titrated into puncta formed between 200 μM rpL5 and 50 μg/mL rRNA, where rpL5 is above the threshold for independent phase separation with NPM1. The star at 40 μM N294 indicates that the droplets experienced wetting on the slide surface and expanded above the maximum threshold of 100 μm2 set in the analysis; (d) NPM1 constructs titrated into puncta formed between 50 μM rpL5 and 50 μg/mL rRNA, where rpL5 is below the threshold for independent phase separation with NPM1.
 
-## R-motif and nucleic acid binding by pentameric NPM1 are both required for nucleolar localization
+### R-motif and nucleic acid binding by pentameric NPM1 are both required for nucleolar localization
 
-We next explored the relevance of our in vitro findings to nucleolar physiology. First, we monitored the accumulation of a series of recombinant eGFP-fused NPM1 constructs within isolated nucleoli (
+We next explored the relevance of our in vitro findings to nucleolar physiology. First, we monitored the accumulation of a series of recombinant eGFP-fused NPM1 constructs within isolated nucleoli (Figure 12a) using confocal fluorescence microscopy. Consistent with in vitro results showing that all domains of NPM1 were required for the integration of both an R-motif peptide and rRNA into large, liquid-like droplets, the eGFP-N294 fusion protein accumulated within purified nucleoli, even at sub-micromolar concentrations (Figure 12b,c), while constructs lacking either the rRNA binding or oligomerization domains (eGFP-N240 or eGFP-△N, respectively) did not (Figure 12c). These results suggested that the nucleolar localization of NPM1 requires multi-modal interactions with both R-motif-containing nucleolar proteins and rRNA.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig12-v3.jpg)
 
-**Figure 12.:** (a) DIC image of isolated nucleoli; (b) Titrations of recombinant eGFP-N294 into purified nucleoli. Fluorescence intensity over background is quantified. (c) Fluorescence profile through sections of nucleoli treated with 100 μM recombinant eGFP-NPM1 constructs. Values in panels (b) and (c) represent mean ± SD, n = 20 nucleoli; (d) Fluorescence confocal microscopy images of MEF cell lines; DAPI was imaged to identify nuclei, mCherry to identify the NPM1 constructs, and a fluorescently-labeled antibody to NOPP140 to identify the GC of nucleoli. Scale bar = 5μm.DOI: http://dx.doi.org/10.7554/eLife.13571.027
+**Figure 12.:** (a) DIC image of isolated nucleoli; (b) Titrations of recombinant eGFP-N294 into purified nucleoli. Fluorescence intensity over background is quantified. (c) Fluorescence profile through sections of nucleoli treated with 100 μM recombinant eGFP-NPM1 constructs. Values in panels (b) and (c) represent mean ± SD, n = 20 nucleoli; (d) Fluorescence confocal microscopy images of MEF cell lines; DAPI was imaged to identify nuclei, mCherry to identify the NPM1 constructs, and a fluorescently-labeled antibody to NOPP140 to identify the GC of nucleoli. Scale bar = 5μm.
 
 ![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig12-figsupp1-v3.jpg)
 
-**Figure 12—figure supplement 1.:** Confocal fluorescence microscopy images of Trp53-/- and Npm1-/-/p53-/- (DKO) MEF cell lines, and DKO cell lines stably expressing mCherry-fused NPM1 constructs, stained with DAPI to visualize nuclei and with a fluorescent antibody for fibrillarin to visualize nucleoli. NPM1-expressing cells were also imaged for mCherry fluorescence. Scale bar = 5 μm.DOI: http://dx.doi.org/10.7554/eLife.13571.028
+**Figure 12—figure supplement 1.:** Confocal fluorescence microscopy images of Trp53-/- and Npm1-/-/p53-/- (DKO) MEF cell lines, and DKO cell lines stably expressing mCherry-fused NPM1 constructs, stained with DAPI to visualize nuclei and with a fluorescent antibody for fibrillarin to visualize nucleoli. NPM1-expressing cells were also imaged for mCherry fluorescence. Scale bar = 5 μm.
 
 ![Figure 12—figure supplement 2.](https://cdn.elifesciences.org/articles/13571/elife-13571-fig12-figsupp2-v3.jpg)
 
-**Figure 12—figure supplement 2.:** (a) Surface expression of Thy1.1 was analyzed in parental (filled histogram) and DKO MEFs transduced with empty vectors (mock; black curve) or those containing mCherry NPM1 variants: N294 (red), N240 (green) and ΔN (blue). (b) The expression of mCherry was determined in Thy1.1-expressing cells (right panel).DOI: http://dx.doi.org/10.7554/eLife.13571.029
+**Figure 12—figure supplement 2.:** (a) Surface expression of Thy1.1 was analyzed in parental (filled histogram) and DKO MEFs transduced with empty vectors (mock; black curve) or those containing mCherry NPM1 variants: N294 (red), N240 (green) and ΔN (blue). (b) The expression of mCherry was determined in Thy1.1-expressing cells (right panel).
 
 To extend our studies to the cellular setting, we next investigated the domain requirements for nucleolar localization by creating Trp53-/-/Npm1-/- mouse embryonic fibroblasts cell lines (DKO MEFs) that stably expressed a related series of mCherry-fused NPM1 constructs. The parental DKO cell line was created by replacing exons 2–7 of Npm1 with eGFP, and therefore constitutively expresses the fluorescent protein (Grisendi et al., 2005). The stable DKO MEF cell lines were created through infection with retroviruses carrying the Thy1.1 cell surface marker in frame with an internal ribosomal entry site (IRES) and an mCherry-NPM1 variant gene. The two genes are translated from the same bicistronic mRNA transcript at similar levels (Gurtu et al., 1996). Therefore, the Thy1.1 cell surface marker is an unbiased reporter of mCherry-NPM1 variant expression. mCherry is primarily localized to the cytoplasm and is stable in cells (Shaner et al., 2004); therefore, with the constructs under study here, any alteration of its localization and stability can be attributed to its NPM1 variant fusion partner. In agreement with the in vitro and ex cellulo results, full length mCherry-NPM1 accumulated in nucleoli and co-localized with the nucleolar markers NOPP140 (Figure 12d) and fibrillarin (Figure 12—figure supplement 1). Despite the fact that all cell lines expressed comparable levels of the Thy1.1 marker (Figure 12—figure supplement 2), and all NPM1 constructs encode the native bi-partite nuclear localization signal (residues 152–157 and 191–197 [Hingorani et al., 2000]), mCherry fluorescence was undetected in the mCherry-N240 cell lines, while the mCherry-ΔN cell lines exhibited diffuse mCherry fluorescence throughout the nucleus (Figure 12d and Figure 12—figure supplement 1). Notably, Enomoto, et al., previously showed that NPM1 mutants which lacked the ability to accumulate within nucleoli exhibited dramatically reduced half lives in cells (Enomoto et al., 2006), a potential explanation for the undetectable levels of mCherry-N240 in our study. We note that our observations through use of DKO cell lines contrast with those of others (Enomoto et al., 2006; Negi and Olson, 2006) wherein NPM1 constructs lacking the C-terminal domain accumulated within nucleoli. These previous studies are confounded by the possiblility for the formation of heteromeric oligomers comprised of endogenous wild-type and mutant NPM1 proteins. Collectively, these data suggest that nucleolar localization of NPM1 is achieved only when interactions with both R-motif-containing nucleolar proteins and rRNA are possible. Deletion of either the NBD or OD abrogated the ability of NPM1 to simultaneously interact with an R-motif-containing peptide and rRNA within droplets in vitro (Figure 11), suggesting that co-localization of NPM1 with the two types of nucleolar components in dense liquid-like droplets and localization within nucleoli arise through similar mechanisms involving multi-modal, multivalent interactions that promote phase separation.
 
@@ -154,134 +673,138 @@ While the R-motif-rich sequences are recognized to be associated with nucleolar 
 
 ## Materials and methods
 
-## Bioinformatics analysis of NPM1 binding proteins
+### Bioinformatics analysis of NPM1 binding proteins
 
 A list of 132 NPM1 binding partners obtained from BioGRID (deposited by Dr. Steven Gygi, Harvard Medical School; available at http://thebiogrid.org/166968/publication/high-throughput-proteomic-mapping-of-human-interaction-networks-via-affinity-purification-mass-spectrometry.html) was analyzed using the DAVID Bioinformatics Resources (http://david.abcc.ncifcrf.gov) (Huang et al., 2009; 2008) to identify proteins with known involvement in nucleolar structure and/or function. GO terms were available for 125 of the 132 NPM1-binding proteins (Supplementary file 2). To gain insight into the molecular basis for interactions with NPM1, we determined the occurrence of multivalent R-motifs within the sequences of the 132 NPM1-binding proteins. Minimal R-motifs were defined as follows: a minimal, single R-motif as the sequence pattern, RXn1R, where n1≤2, R is arginine and X is any amino acid; a minimal, multivalent R-motif as the sequence pattern, RXn1RXn2RXn3R, where n1, n3≤2, and n2≤20) (Supplementary file 1). In Supplementary file 1, the identified R-motifs were extended if followed by another Arg residue within two or fewer residues. A Python algorithm, available for download at https://github.com/dlaszlo88/eLIFE-NPM_NMRrelaxation was developed to identify proteins exhibiting multivalent R-motifs and was applied to the list of NPM1 binding proteins as well as a list of 20,193 non-redundant human proteins obtained from the UniProtKB/Swiss-Prot database (http://www.uniprot.org/uniprot/) (UniProt, 2014). Of the 132 NPM1 binding partners, 73% exhibited at least one multivalent R-motif; in comparison, only 44% of all human proteins exhibited at least one multivalent R-motif (Supplementary file 3). These data show NPM1 binding partners are enriched in multivalent R motifs, when compared to the majority of the human proteome (p<0.0001).
 
-## Cloning, protein expression and purification
+### Cloning, protein expression and purification
 
 The N130 protein was expressed and purified as described (Mitrea et al., 2014). The eGFP-NPM1 constructs were subcloned in the pET28 vector (Novagen, Darmstadt, Germany), with an N-terminal poly-His tag. eGFP was amplified from pEGFP-C1, a gift from Dr. Douglas Green, and inserted between NdeI and BamHI restriction sites. NPM1 construct genes, derived from human NPM1, were cloned between BamHI and XhoI restriction sites. The original Thrombin cleavage site following the affinity tag was replaced with a PreScission cleavage site. Proteins were expressed in E. Coli strain BL21(DE3) in Luria Broth. Protein expression was induced at OD600 ~0.6 with 100 mg/L IPTG (Goldbio, St. Louis, MO) and the cultures were incubated overnight at 20 °C. Bacterial pellets were harvested by centrifugation and lysed by sonication in 20 mM Tris, 150 mM NaCl, 5 mM β-mercapto-ethanol (BME), pH 7.5, supplemented with protease inhibitors (SigmaFAST, Sigma-Aldrich, St. Louis, MO). eGFP-NPM1 proteins were further purified using Ni-NTA affinity chromatography, using 0.5 M NaCl in the buffers. The eluted proteins were dialysed overnight against 10 mM Tris, 50 mM NaCl, 2 mM DTT pH 7.5 in the presence of HRV3C protease (BioVision, Milpitas, CA) to remove the poly-His tag and further purified on a Mono Q HR 5/5 (GE Healthcare, Pittsburgh, PA) ion exchange column, followed by size exclusion chromatography on HiLoad 26/60 Superdex 200 (GE Healthcare, Pittsburgh, PA) in 10 mM Tris, 150 mM NaCl, 2 mM DTT, pH 7.5. The N122 construct was a gift from Dr. Yuh Min Chook (UT Southwestern, Dallas). The protein was expressed with an N-terminal GST tag as described above. The N122 protein was affinity purified on a reduced glutathione agarose column (Qiagen, Hilden, Germany), followed by GST tag proteolysis with thrombin and finally purified to homogeneity using size exclusion chromatography, as described above.
 
-## Peptide synthesis
+### Peptide synthesis
 
 Peptides were synthesized in house, by the Macromolecular Synthesis resource within the Hartwell Center for Bioinformatics and Biotechnology at St. Jude Children’s Research Hospital, using standard solid phase peptide synthesis chemistry.
 
-## Phase transition assays by light scattering
+### Phase transition assays by light scattering
 
 The samples were incubated at room temperature for 5 min and UV-Vis absorbance spectra were recorded in triplicate on a NanoDrop 2000c spectrophotometer (Thermo Scientific, Waltham, MA).
 
-## Fluorescent labeling
+### Fluorescent labeling
 
 N130 was labeled with Alexa Fluor488 C5 maleimide (Life Technologies, Carlsbad, CA), according to the manufacturer’s protocol. The labeling was performed in 10 Tris, 150 mM NaCl, pH 7.5 buffer to maintain N130 in its folded pentameric state (Mitrea et al., 2014) and ensure selective labeling at solvent exposed Cys104, thereby avoiding labeling the buried Cys21. The rpL5 peptide was N-terminally labeled using Alexa Fluor594 Succinimidyl ester (Life Technologies, Carlsbad, CA) following the manufacturer’s protocol.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 Titrations were performed using a GE Auto-iTC200 instrument (Malvern, Malvern, UK), at 25 °C, with the NPM1 construct in the cell. Proteins and peptides were dialyzed overnight against the reaction buffer, consisting of 10 mM Na phosphate, 150 mM NaCl, 2 mM DTT, pH 7.0. The concentrations were selected to be below the phase separation threshold and were determined from A280nm of the protein or peptide diluted in 6 M guanidine hydrochloride buffer.
 
-## Fluorescence spectroscopy
+### Fluorescence spectroscopy
 
 N130 constructs with Q15C and S125C single and double mutations in the background of a C104T mutation were used. For ensemble fluorescence anisotropy measurements, N130 labeled at C125 with Alexa Fluor594 (C5 maleimide derivative; Life Technologies, Carlsbad, CA) was used. The protein was labeled in 10 mM Na phosphate, 500 mM NaCl, pH 7.5 with 2-fold molar excess of the dye overnight at 4 °C in the dark. For dual labeling of N130 at C15 and C125, the following protocol was used: a 2-fold molar excess of donor dye (Alexa Fluor594 C5-maleimide derivative, Life Technologies, Carlsbad, CA), and a 8-fold molar excess of the acceptor dye (Alexa Fluor680 C2-maleimide derivative, Life Technologies, Carlsbad, CA) were incubated together in 10 mM Na phosphate, 500 mM NaCl, pH 7.5 overnight at 4 °C for in the dark. The excess dye in all labeling reactions was removed by multiple rounds of washing with the labeling buffers using a 3K MWCO centrifugal filter device (Millipore, Darmstadt, Germany). The purity of all the samples was confirmed by ESI-mass spectroscopy (Scripps Center for Mass Spectrometry). Ensemble fluorescence measurements were carried out using an automated temperature controlled PC1 spectrofluorometer (ISS, Champaign, IL) in 10 mM Tris, 150 mM NaCl, pH 7.5. The single-molecule fluorescence measurements were performed on freely diffusing molecules with a 532 nm excitation line (CrystaLaser, Reno, NV) (operating on a 500 µW power) using a home-built instrument. The details of smFRET instrumentation, data collection and data analysis have been described elsewhere (Ferreon et al., 2009; 2013). All experiments were performed at room temperature in 10 mM Tris, 150 mM NaCl, 2 mM DTT, pH 7.5 using a dual-labeled protein concentration of ~100 pM in the presence of 200 µM unlabeled N130. To minimize photobleaching, 0.5% N-propyl gallate (final concentration) was used from a 200x concentrated stock in acetonitrile.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 For all NMR experiments, the N130 construct was used. Samples of perdeuterated, 15N uniformly labeled, N130 were dissolved in 90% H2O/10% D2O containing 10 mM sodium phosphate buffer at pH 7.0 with 150 mM NaCl and 5 mM DTT. All experiments were performed at 298 K. TROSY-HSQC based titration experiments were collected with a Bruker Avance I spectrometer operating at a Larmor frequency of 800 MHz (Bruker, Billerica, MA). 15N backbone relaxation experiments which measured the transverse cross-relaxation and longitudinal relaxation rates were performed on the free and bound N130 at static magnetic fields of 600, 800 and 1000 MHz. For N130 in the droplet state the same experiments were performed, but only at 600 and 800 MHz. Data were processed and visualized using NMRPipe and CARA, respectively. Fits to all NMR data for the extraction of parameters describing the observed motion were performed using in-house written scripts in Python and Mathematica (Wolfram Research, Champaign, IL). All scripts are available for download at available for download at https://github.com/dlaszlo88/eLIFE-NPM_NMRrelaxation. See below for details on all NMR experiments and analysis.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Sedimentation velocity experiments were conducted in a ProteomeLab XL-I analytical ultracentrifuge (Beckman Coulter, Indianapolis, IN) following standard protocols unless mentioned otherwise (Schuck, 2000; Zhao et al., 2013). The samples in a buffer containing 10 mM NaP pH 7.0, 150 mM NaCl, and 2 mM DTT were loaded into a cell assembly comprised of a double sector charcoal-filled centerpiece with a 12 mm path length and sapphire windows. The cell assembly, containing identical sample and reference buffer volumes of 380 µL, was placed in a rotor and temperature equilibrated at rest at 20 °C for 2 hr before it was accelerated from 0 to 40000 rpm. Rayleigh interference optical data were collected continuously for 12 hr, 400 min for 1:0 and 1:1 and 300 min for 1:2 and 1:3 and analyzed. The velocity data were modeled with diffusion-deconvoluted sedimentation coefficient distributions c(s) in SEDFIT (https://sedfitsedphat.nibib.nih.gov/software/default.aspx), using algebraic noise decomposition and with signal-average frictional ratio and meniscus position refined with non-linear regression. The s-value was corrected for time, temperature and radial position and finite acceleration of the rotor was accounted for in the evaluation of Lamm equation solutions (Zhao et al., 2015). Maximum entropy regularization was applied at a confidence level of P-0.68.
 
-## Small-angle neutron scattering
+### Small-angle neutron scattering
 
 SANS experiments were performed on the extended Q-range small-angle neutron scattering (EQ-SANS, BL-6) beam line at the Spallation Neutron Source (SNS) located at Oak Ridge National Laboratory (ORNL). In 30 Hz operation mode, a 4 m sample-to-detector distance with 2.5–6.1 and 9.4–13.4 Å wavelength bands was used (Zhao et al., 2010) to obtain the relevant wavevector transfer, q = 4π sin(θ)/λ, where 2θ is the scattering angle. rpL5:N130 samples at 0:1, 1:1, 2:1, and 3:1 mol ratios were prepared in 10 mM Tris, 150 mM NaCl, 2 mM DTT D2O (pH measured = 7.5). The samples were loaded into 2 mm pathlength circular-shaped quartz cuvettes (Hellma USA, Plainville, NY) and SANS measurements were performed at 25 °C. Data reduction followed standard procedures using MantidPlot (Arnold et al., 2014). The measured scattering intensity was corrected for the detector sensitivity and scattering contribution from the solvent and empty cells, and then placed on absolute scale using a calibrated standard (Wignall and Bates, 1987).
 
-## Light microscopy of in vitrodroplets
+### Light microscopy of in vitrodroplets
 
 Wide field DIC and 488 nm fluorescence images used for phase separation assays with the N130 construct were collected on a Nikon C1Si microscope (Nikon Instruments, Melville, NY) using a 60x 1.45 NA magnification oil objective. 10 µl samples were incubated at room temperature for 5 min prior to analysis. Droplets were defined as having an area greater than 9 squared pixels (0.2 μm/pixel) and circularity 0.5–1. Particles smaller than 9 squared pixels were visible by fluorescence but not DIC at low protein and peptide concentrations; however, these objects were below the threshold to confidently measure circularity. Therefore, droplets formation was not recorded until particles could be observed by DIC.
 
 For ternary mixture assays, the various AlexaFluor488-tagged NPM1 constructs were titrated into the mixtures of rRNA and rpL5 peptide. Confocal images of phase separation droplets were collected on Nikon C1Si (Nikon Instruments, Melville, NY) or Zeiss Axio Observer (Carl Zeiss Microscopy, Jena, Germany) microscopes, using a 60X 1.45 NA or 63X 1.40 NA oil magnification objective, respectively, in μ-slide VI0.4 6 channel flow cells (ibidi, Madison, WI) or CultureWell 16-well chambered coverglass (Grace Biolabs, Bend, OR), coated with PlusOne Repel-Silane ES (GE Healthcare, Pittsburgh, PA). Images of MEFs and isolated nucleoli were recorded on a Zeiss Axio ObserverZ.1 microscope equipped with a CSU-22 spinning disk (Yokagawa, Tokyo, Japan), Delta Evolve EMCCD camera and 100X 1.45 NA oil objective.
 
-## Isolation of nucleoli
+### Isolation of nucleoli
 
 Nucleoli were prepared from Cos7 cells (ATCC number CRL 1651) using an established protocol (Rosner et al., 2013). Briefly, 1 x 107 cells were harvested by trypsin digestion followed by serum inactivation and washing in two exchanges of PBS. Cells were incubated in nucleolar isolation buffer (NIB; 10 mM Tris, 2 mM MgCl2, 0.5 mM EDTA, pH 7.5) for 2 min at room temperature followed by 10 min on ice. The cells were disrupted by the addition of NP-40 to a final concentration of 1%. The mixture was centrifuged for 3 min at 500 x g to collect the nuclear fraction, followed by washing in NIB containing NP-40 prior to resuspension in buffer without additional NP-40. The nuclear suspension was sonicated on ice at 20% power for 12 cycles of 1 s ON / 5 s OFF, using a 1/8’’ tip on a Fisher Scientific Model 505 Sonic Dismembrator (Thermo Fisher Scientific, Waltham, MA). Nucleoli were collected as the pellet by centrifugation at 4 °C, 500 x g, for 3 min and resuspended in NIB. The integrity of purified nucleoli was verified by (i) morphology and (ii) distribution of established nucleolar proteins via immunostaining and confocal microscopy. We note that incubation in the presence of 150 mM NaCl to match the physiological millieu caused isolated nucleoli to dissolve.
 
-## Cell culture
+### Cell culture
 
 Trp53-/- and NPM1-/- / Trp53-/- (DKO) MEF cell lines were a kind gift from Drs. C. Sherr (St. Jude Children’s Research Hospital) and P. Pandolfi (Beth Israel Deaconess Medical Center). Retroviruses were produced by transfecting the Thy1.1-IRES-mCherry-NPM1 variant plasmids or the empty vector into Phoenix cells, using Xfect transfection reagent (Clontech Laboratories, Mountain VIew, CA), in 6 well plates. We note that all Phoenix cells harboring plasmids that encoded for mCherry exhibited red fluorescence under the light microscope. Transfected cells were incubated overnight at 37 °C in a 5% CO2 atmosphere. The supernatant containing viruses was collected, filtered through a 0.45 µm seringe filter, and transferred immediately onto 6 well plates seeded with 8 x 104 DKO MEFs, in the presence of 5 µg/mL polybrene. Infections were carried twice a day, for a total of five infections. Virally transduced cells were sorted based on Thy1.1 expression using FACS; sorted cells were expanded in culture.
 
-## Flow Cytometry
+### Flow Cytometry
 
 MEFs were trypsinized using 0.05% trypsin + EDTA prior to resuspension in PBS containing 1% BSA and 1 mM EDTA. Cells were surface labeled with APC-conjugated anti-Thy1.1 (clone OX-7; Biolegend, San Diego, CA) at [0.4 ng/ml] for 30 min on ice. Following incubation, cells were washed three times prior to resuspension in PBS containing 1 mM EDTA and analysis using a Fortessa cytometer (BD Biosciences, San Jose, CA).
 
-## Image processing
+### Image processing
 
 Enrichment of eGFP-tagged NPM1 constructs in purified nucleoli was determined using Slidebook 6.0 (Intelligent Imaging Innovations, Gottingen, Germany). Briefly, each nucleolus was bisected with a line of 80 pixels in length, based on the DIC image. The resulting fluorescence intensity of each pixel along the line was plotted according to pixel position.
 
 For the quantification of droplet size, the lower and upper limits of fluorescence intensity were matched for all images in Slidebook 6.0 and the particle count was subsequently performed in ImageJ, as follows: 24-bit RGB images were converted into 8-bit images, background subtraction and auto threshold were applied, images were converted to mask and merged objects were separated using the binary watershed operation. Particles were analyzed using Analyze Particles, imposing the size restriction of 5–2500 pixel (~100 µm2) and the circularity restriction 0.2–1. >90% of all observed droplets had areas within the selected window and were included in the analysis, unless otherwise noted; >50 particles were counted per image.
 
-## Immunostaining
+### Immunostaining
 
 Purified nucleoli were allowed to settle onto poly-D-Lysine-coated chambered coverslips prior to fixation for 10 min with 4% paraformaldehyde in PBS. Nucleoli were subsequently treated for 10 min with cold acetone at -20 °C prior to incubation with blocking buffer (20 mM Tris pH 8.0, 100 mM NaCl, 2% bovine serum albumin, 0.05% Tween-20) for 30 min. The samples were stained overnight at 4 °C in blocking buffer containing anti-Fibrillarin (Novus Biologicals, Littleton, CO; NB300-269, 2.5 μg/mL), anti-rpL5 (Santa Cruz Biotech, Dallas, TX; sc-103865, 2 μg/mL) and anti-NPM (Abgent, San Diego, CA; AP2834b, 1:200 dilution) antibodies. The samples were washed in 20 mM Tris pH8.0, 100 mM NaCl and 0.05% Tween-20 prior to detection with fluorescently labeled secondary antibodies (Life Technologies, Carlsbad, CA) and imaged using a Zeiss Axio Observer Z.1 equipped with a CSU-22 spinning disk, Delta evolve EMCCD camera and 100X 1.45NA oil objective, and Slidebook 6.0 (Intelligent Imaging Innovations, Gottingen, Germany).
 
 MEFs were seeded onto 4-well chambers at 40000 cells/well and incubated overnight at 37 °C, in 5% CO2 incubator. Cultured MEFs were fixed in 4% methanol-free paraformaldehyde for 10 min at room temperature, followed by incubation in TBS (20 mM Tris, 100 mM NaCl) containing 0.3 M glycine for 10 min. The cells were permeabilized for 3 min in TBS containing 0.1% Triton-100, followed by 30 min incubation in TBS containing 2% bovine serum albumin. The slides were incubated overnight at 4 ° with anti-Fibrillarin (clone 38F3; Genetex, Irvine, CA) or anti-Nopp140 (sc-28672, Santa Cruz Biotech, Dallas, TX) antibodies each at [1 ng/ml] diluted in TBS + 2% BSA. Primary antibodies were detected with either AF647-labeled goat anti-Mouse (ThermoFisher) or AF647-labeled goat anti-Rabbit (ThermoFisher) secondary antibodies at [1 ug/ml] for 1 hr at room temperature. Samples were post-fixed in 1% PFA after washing, and prior to imaging in TBS containing 1 ug/ml Hoescht (Thermo Fisher Scientific, Walthman, MA). Images were acquired using a Marianas spinning-disk laser scanning confocal (Intelligent Imaging Innovations) comprising a Zeiss AxioObserverZ.1 equipped with a 63x 1.4NA objective and Evolve EMCCD camera (Photometrics, Tucson, AZ).
 
-## Analysis methods
+### Analysis methods
 
-## SANS data analysis
+#### SANS data analysis
 
-## 0:1 and 1:1 rpL5:N130
+##### 0:1 and 1:1 rpL5:N130
 
 Upon verifying a Guinier regime (Guinier and Fournet, 1955) in the rpL5:N130 0:1 and 1:1 SANS profiles, the pair distance distribution function, P(r), was calculated from the scattering intensity, I(q), using the indirect Fourier transform method implemented in the GNOM program (Svergun, 1992) (Figure 3b). The P(r) function was set to zero for r = 0 and r = Dmax, the maximum linear dimension of the scattering object. Dmax was explored to optimize the P(r) solution and excellent quality solutions were found in each case. The real-space radius of gyration, Rg, and scattering intensity at zero angle, I(0), were determined from the P(r) solution to the scattering data. The molecular mass, M, was calculated by
 
-(1)I(0)=cMNA(∆ρ)2ϑ¯
+$$
+I(0)=\frac{cM}{N_{A}}(\Deltaρ)^{2}ϑ¯
+$$
 
-where c = protein concentration (= 3 mg/mL), △ρ = contrast in scattering length density between protein and D2O buffer solution (= ρprot – ρD2O), ϑ¯ = protein partial specific volume (= 0.73 ml/g), and NA = Avogadro’s number. The N130 scattering length density, ρprot, (= 3.0 × 1010 cm-2) was calculated from the sequence using CRYSON (Svergun et al., 1995). The D2O scattering length density used was ρD2O = 6.404 × 1010 cm-2.
+where c = protein concentration (= 3 mg/mL), △ρ = contrast in scattering length density between protein and D2O buffer solution (= ρprot – ρD2O), $ϑ¯$ = protein partial specific volume (= 0.73 ml/g), and NA = Avogadro’s number. The N130 scattering length density, ρprot, (= 3.0 × 1010 cm-2) was calculated from the sequence using CRYSON (Svergun et al., 1995). The D2O scattering length density used was ρD2O = 6.404 × 1010 cm-2.
 
-## 2:1 rpL5:N130
+##### 2:1 rpL5:N130
 
 The rpL5:N130 2:1 SANS curve was fit to an empirical broad peak model implemented in the NCNR SANS package (Kline, 2006) for Igor Pro software where the scattering intensity is:
 
-(2)I(q)=Aqn+C(q−q0ξ)m+B
+$$
+I(q)=\frac{A}{q^{n}}+\frac{C}{(q−q_{0}ξ)^{m}}+B
+$$
 
 to yield the Porod scale, A (= (3.1 ± 0.3) x 10-5), and exponent, n (=2.68 ± 0.02), Lorentzian scale, C (=0.0394 ± 0.0007), peak position, q0 (=0.0740 ± 0.0004 Å-1), screening length, ξ (=36.7 ± 0.5 Å), and exponent, m (=3.46 ± 0.07), and background, B (= (–3 ± 2) x 10-4cm-1). The peak position corresponds to a d-spacing (d0 = 2π/q0) of 85 Å.
 
-## 3:1 rpL5:N130
+##### 3:1 rpL5:N130
 
 A portion of the rpL5:N130 3:1 SANS curve was fit to three Gaussian peaks using the multi-peak fitting routine within Igor Pro software and yielded peak maxima at q1 = 0.0528 Å-1, q2 = 0.0820 Å-1, and q3 = 0.1140 Å-1 with corresponding d-spacings (di = 2π/qi) of d1 = 119 Å, d2 = 77 Å, and d3 = 55 Å, respectively.
 
-## NMR analysis of 2H/15N-N130; apo, bound to rpL5 in the solution phase, and bound to rpL5 in liquid-like droplets
+### NMR analysis of 2H/15N-N130; apo, bound to rpL5 in the solution phase, and bound to rpL5 in liquid-like droplets
 
-## Characterization of rpL5 binding to 2H/15N-N130 in the solution phase state; NMR-based titration
+#### Characterization of rpL5 binding to 2H/15N-N130 in the solution phase state; NMR-based titration
 
 N130 for all NMR samples was maintained at a monomer concentration of 284 μM. NMR-based chemical shift titrations of N130 with rpL5 peptide were performed in a step-wise manner in which a stock of highly concentrated peptide was added incrementally to the N130 samples. A total of nine additions were performed over which the dilution of the N130 was small changing the overall volume of the sample by only 2%. rpL5 was titrated into a sample with N130 up to a [rpL5]:[N130] ratio of 3:1 (maximum concentration of rpL5 was 870 μM). All titration experiments were collected with a Bruker Avance I spectrometer operating at a Larmor frequency of 800 MHz. For apo N130 and with each addition of rpL5 a TROSY type amide proton, nitrogen two-dimensional correlation spectrum was recorded. Spectra were collected with 100 and 1024 complex points in the indirect and direct dimension yielding maximum acquisition times of 12.1 ms and 91.8 ms, respectively. Incremental additions of rpL5 allowed for the extraction of binding isotherms by monitoring the change in the 15N chemical shift (△ω15N) as a function of ligand concentration (Table 4). Binding isotherms were fit to a simple two-state binding model and used to extract the dissociation constant (KD) of the interaction (Cavanagh et al., 2007). Although N130 displayed a range of site-specific KD values (Table 4), we established criteria for the selection of isotherms that were considered for the global determination of the KD, as follows.
 
 First, only nuclei whose △ω15N exceeded 0.15 ppm by the end of the titration were considered. This yielded a total of 36 individual binding isotherms. Second, for each binding isotherm, the last five points were normalized with respect to their final observed △ω15N during the titration (△ω15N at a [rpL5]:[N130] at 3:1) and fit to a straight line. Slopes from these fits that were close to zero indicated flat binding isotherms at the end of the titration and 15N nuclei that had reached saturation (e.g., their chemical shifts do not change significantly at higher [rpL5]:[N130] ratios). 15N nuclei whose slope was less than the average were pooled and used for a global analysis of the KD value. This provided a total of 18 binding isotherms which were fit to a single KD value and to each binding isotherm’s individual maximum △ω15N. The global analysis was implemented in Mathematica (Wolfram Research, Champaign, IL) and yielded a global KD value of 57 ± 14 μM and is similar to the KD value determined using isothermal titration calorimetry (21 ± 5 μM; Table 2). We appreciate that for a given pentamer each monomeric unit consists of two possible binding sites (A1 & A2 tracts; Figure 1a) and the current use of a simple two-state binding model does not distinguish between these two sites. The extension to higher order binding models that represent multiple independent binding sites may be necessary, but the binding isotherms collected here do not display multiple independent binding events and thus only a two-state model was applied (Arai et al., 2012). Error bars for all individual and global fits were determined from Monte-Carlo simulations in which a 10% error in the absolute peptide concentration (effectively shifting points along the abscissa) was considered and 500 random binding isotherms were generated and subsequently refit (Markin and Spyracopoulos, 2012). The standard deviation in parameters from these simulations was used as the error for these measurements.
 
-## Method for analysis of fast pico- to nanosecond motions in apo N130 and solution phase rpL5:N130 complexes
+#### Method for analysis of fast pico- to nanosecond motions in apo N130 and solution phase rpL5:N130 complexes
 
 We sought quantitative, atomic resolution information on the dynamic features of 2H/15N-N130 in three different states: apo form, bound to rpL5 in the solution phase, and bound to rpL5 in liquid-like droplets. Since solution NMR is uniquely suited to probe motions with atomic detail, we exploited a combination of NMR relaxation experiments that report on motions faster than the overall rotational correlation time (τc). Conventional NMR relaxation experiments which probe fast pico- to nanosecond timescale motion can be used to obtain information on internuclear vector flexibility (S2) and molecular time constants related to rotational diffusion processes (Palmer, 2004). These experiments, when combined, can be used to extract τc, S2, and time constants such as the fast lifetimes of internal motion (τf; picoseconds), and in some cases motion in the low nanosecond range if τc is much greater than this additionally 'slow' nanosecond motion (denoted as τs). However, for high molecular weight proteins like N130 (the molecular weight of the pentamer is 73.4 kDa), the study of backbone 15N nuclei dynamics is challenging due to slow molecular tumbling. In order to overcome this, we utilized experiments analogous to Lakomek, et al., (Lakomek et al., 2013) that utilize the TRACT (Lee et al., 2006) concept in which the slowly (β) and fast relaxing (α) transverse components of the 15N doublet were individually queried and their rate of decay measured within conventional TROSY-type HSQC experiments in order to obtain the relaxation rates for both components. Measurement of both R2,β and R2,α permits the calculation of the transverse cross-relaxation rate, ηxy, which reports on motions up to τc and in addition contains no contribution of slow ms-μs motional processes due to chemical exchange (Lee et al., 2006). For the extraction of parameters that define the observed relaxation processes, we also recorded longitudinal relaxation (R1) experiments for backbone 15N nuclei which have small values for large molecular weight proteins to increase the number of observables (Lee and Wand, 1999). The inclusion of R1 values in our analysis was critical because this relaxation rate samples contributions of high frequency motions for backbone 15N nuclei that ηxy does not (Kroenke et al., 1998). The approach described above was necessary because high quality intrinsic relaxation rate (R2,0) and 15N heteronuclear-NOE data could not be recorded due to signal-to-noise limitations.
 
-## NMR relaxation data measurements
+#### NMR relaxation data measurements
 
 The samples of apo N130 were maintained at a monomer concentration of 215 μM and measurements on solution phase, rpL5-bound N130 contained 190 μM N130 and 475 μM rpL5 (2.5:1 rpL5:N130). R2,α and R2,β experiments were performed at three static magnetic fields with Larmor frequencies of 600 (Bruker Avance III), 800 (Bruker Avance I), and 1000 (Bruker Avance III) MHz. This was necessary to have enough independent observables to uniquely determine the parameters that define the relaxation rates. Since N130 consists of a folded pentameric core and disordered N- and C-termini, proper sampling of the relaxation profiles was necessary. Therefore, experiments were recorded with different delay times for resonances from the folded core and the disordered N- and C-termini. For R2,α/β, measurements at 800 and 1000 MHz were subjected to full relaxation delay (Figure 4b,i-ii). All experiments were executed by interleaving the employed delay times. At 600 MHz, R2,α/β rates were measured using a two-point sampling scheme (Jones et al., 1996) at the estimated average value of 1/R2,α/β.
 
 Typical acquisition parameters for the R2,β experiment employed 90 and 1024 complex points in the indirect and direct dimension, respectively. For each point, 128 transients were measured and the total experiment time was 32 hr. For R2,α, the same number of points in both indirect and direct dimensions were taken, but the number of transients per point was increased to 160. A recycle delay of one second was used for all experiments. Additional R2,α/β experiments were also performed with narrowed sweep widths that focused on the residues from the disordered N- and C-termini with 70 and 1024 complex and 16 transients per point increment. We implemented the R1 experiment with TROSY-readout similar to that in Lakomek, et al. (Lakomek et al., 2012), and performed experiments in which 70 and 512 complex points in the indirect and direct dimension, respectively, were acquired with 120 transients per point (Figure 4b,iii). The recycle delay for the R1 experiments was set to two seconds yielding a total experiment run time of 38 hr. All sampled delay lengths were interleaved in a random order throughout the experiment.
 
-## Quantification of NMR relaxation rates
+#### Quantification of NMR relaxation rates
 
 All spectra were processed with the NMRPipe package (Delaglio et al., 1995), visualized with CARA, and analyzed with in-house scripts written in Python using the Scipy computing libraries. Intensity profiles as a function of delay time (Figure 4b,i–iii) were fitted to an exponential decay function in which a single relaxation rate and initial intensity at time zero were extracted. Errors in the measured relaxation rates were determined from Monte-Carlo sampling with 1000 runs where either the base-plane noise or duplicate points were used for the standard deviation in the assumed normal distribution and whose average was placed at the measured intensity value. Errors in R2,α/β data recorded at 600 MHz were propagated from the base-plane noise in each spectrum. From the R2,α and R2,β measurements, ηxy values were calculated as half their difference and the error in ηxy was determined by error propagation.
 
-A total of 477 (84) individual R2,α/β (R1) relaxation rates were quantified for apo N130, and for solution phase, 2.5:1 rpL5:N130, a total of 402 (74) R2,α/β (R1) relaxation rates were collected. From the R2,α/β data, a total of 212 and 183 ηxy values across all static magnetic fields employed here could be calculated for apo N130 and 2.5:1 rpL5:N130, respectively. We note that the static magnetic field dependence of the absolute value of R1 for a protein as large as apo N130 or 2.5:1 rpL5:N130 is small. Although the expected relative difference in R1 from 600 to 800 MHz is 32%, and from 800 MHz to 1000 MHz is 22%, the folded core of N130 can be expected to have values between ~0.1 and 0.3 s-1. Since the average precision in R1 for the free N130 (R1all=0.47±0.07 s-1; R1folded−core=0.32±0.08 s-1) and 2.5:1 rpL5:N130 (R1all=0.44±0.10 s-1; R1folded−core=0.28±0.11 s-1) was 15% and 23% of the average measured rate, respectively, at this level of precision, only R1 data at 800 MHz was utilized in the calculations described below. Ultimately, a total of 296 and 257 independent values could be used for further calculation yielding 60% and 51% coverage of the backbone for apo N130 and 2.5:1 rpL5:N130, respectively, yielding approximately four observables per 15N nucleus. For the 2.5:1 rpL5:N130 sample, which experiences exchange with peptide in the fast regime, the ηxy data represent the population weighted average between the free and the bound states. Regardless, we used the measured ηxy values of 2.5:1 rpL5:N130 because N130 was extensively saturated with the rpL5 peptide (93% bound). Bound rates from the population weighted measured rates were calculated, but were found to be within error, and did not deviate from the observed values because of high degree of N130 saturation with the rpL5 peptide.
+A total of 477 (84) individual R2,α/β (R1) relaxation rates were quantified for apo N130, and for solution phase, 2.5:1 rpL5:N130, a total of 402 (74) R2,α/β (R1) relaxation rates were collected. From the R2,α/β data, a total of 212 and 183 ηxy values across all static magnetic fields employed here could be calculated for apo N130 and 2.5:1 rpL5:N130, respectively. We note that the static magnetic field dependence of the absolute value of R1 for a protein as large as apo N130 or 2.5:1 rpL5:N130 is small. Although the expected relative difference in R1 from 600 to 800 MHz is 32%, and from 800 MHz to 1000 MHz is 22%, the folded core of N130 can be expected to have values between ~0.1 and 0.3 s-1. Since the average precision in R1 for the free N130 ($R_{1}^{all}=0.47\pm0.07$ s-1; $R_{1}^{folded−core}=0.32\pm0.08$ s-1) and 2.5:1 rpL5:N130 ($R_{1}^{all}=0.44\pm0.10$ s-1; $R_{1}^{folded−core}=0.28\pm0.11$ s-1) was 15% and 23% of the average measured rate, respectively, at this level of precision, only R1 data at 800 MHz was utilized in the calculations described below. Ultimately, a total of 296 and 257 independent values could be used for further calculation yielding 60% and 51% coverage of the backbone for apo N130 and 2.5:1 rpL5:N130, respectively, yielding approximately four observables per 15N nucleus. For the 2.5:1 rpL5:N130 sample, which experiences exchange with peptide in the fast regime, the ηxy data represent the population weighted average between the free and the bound states. Regardless, we used the measured ηxy values of 2.5:1 rpL5:N130 because N130 was extensively saturated with the rpL5 peptide (93% bound). Bound rates from the population weighted measured rates were calculated, but were found to be within error, and did not deviate from the observed values because of high degree of N130 saturation with the rpL5 peptide.
 
-## Determination of τc for apo N130 and 2.5:1 rpL5:N130
+#### Determination of τc for apo N130 and 2.5:1 rpL5:N130
 
-ηxy and R1 are composed of a sum of spectral density functions evaluated at particular frequencies (J(ω)) which maintain a Lorentzian shape and particular prefactors whose explicit form have been reported previously (Abragam, 1961; Cavanagh et al., 2007; Palmer, 2004). In all calculations, 15N CSA was set to -162 ppm (Yao et al., 2010a), the 15N-1HN bond length was 1.04 Å (Yao et al., 2008), and the angle between CSA tensor and the unique axis of the N-H bond (Lee et al., 2006) was set to 17°. All other constants that compose the prefactors for ηxy and R1 were set to their known values (Cavanagh et al., 2007). We utilized the Lipari-Szabo Model-Free formalism (Lipari and Szabo, 1982) (LS-MF) to describe the spectral density functions J(ω)=25(S2τC1+(ϖτC)2+(1−S2)τi1+(ϖτi)2);τi=(1τC+1τf) in which S2 and τf correspond to the 1HN-15N internuclear vector flexibility (values less than one indicate increased flexibility) and fast picosecond internal motion for a given internuclear vector, respectively (Lipari and Szabo, 1982). Using these expressions that describe the relaxation rates of each nucleus, residues were initially subjected to a grid search. This initial search consisted of only residues from the folded core of N130 which were identified based on the crystal structure (PDB: 4N8M). This was done to ensure that they would behave as resonances whose expected 1HN-15N NOE would be greater than 0.65 following conventional protocols for establishing residues which can be used to determine τc (Kay et al., 1989). The following method is similar to Lakomek, et al. (Lakomek et al., 2013), and Lorieau, et al. (Lorieau et al., 2011). The grid was evaluated from a range of 0.6 to 1.0 in steps of 0.01 for S2 and 0 to 1 ns in steps of 100 ps for τf. τc was evaluated from 40 to 80 ns in steps of 1 ns. A target function (χ2) comprised of the sum of the error weighted squared difference between the experimental and calculated relaxation rates was minimized. All lowest χ2 values from each residue’s minimization was kept and nuclei with similar τc values and whose τf values were either 0 or 100 ps were grouped together and then globally minimized. This global minimization was not conducted in a grid fashion and the minimized parameters included a single τc and residue specific S2 and τf parameters. The lower limit in τc was constrained based on the ηxy data assuming a rigid rotor spectral density function (Lee et al., 2006) and the error in τc was determined from Monte-Carlo simulations with all calculations performed in Mathematica (Wolfram Research, Champaign, IL). Rotational anisotropy was not considered under the current analysis; however, the disordered N- and C-termini do fluctuate independently from the folded core based on 1D-TRACT (Lee et al., 2006) data in which two overall correlation times could be extracted (data not shown).
+ηxy and R1 are composed of a sum of spectral density functions evaluated at particular frequencies ($J(\omega))$ which maintain a Lorentzian shape and particular prefactors whose explicit form have been reported previously (Abragam, 1961; Cavanagh et al., 2007; Palmer, 2004). In all calculations, 15N CSA was set to -162 ppm (Yao et al., 2010a), the 15N-1HN bond length was 1.04 Å (Yao et al., 2008), and the angle between CSA tensor and the unique axis of the N-H bond (Lee et al., 2006) was set to 17°. All other constants that compose the prefactors for ηxy and R1 were set to their known values (Cavanagh et al., 2007). We utilized the Lipari-Szabo Model-Free formalism (Lipari and Szabo, 1982) (LS-MF) to describe the spectral density functions $J(\omega)=\frac{2}{5}(\frac{S^{2}\tau_{C}}{1+(ϖ\tau_{C})^{2}}+\frac{(1−S^{2})\tau_{i}}{1+(ϖ\tau_{i})^{2}});\tau_{i}=(\frac{1}{\tau_{C}}+\frac{1}{\tau_{f}})$ in which S2 and τf correspond to the 1HN-15N internuclear vector flexibility (values less than one indicate increased flexibility) and fast picosecond internal motion for a given internuclear vector, respectively (Lipari and Szabo, 1982). Using these expressions that describe the relaxation rates of each nucleus, residues were initially subjected to a grid search. This initial search consisted of only residues from the folded core of N130 which were identified based on the crystal structure (PDB: 4N8M). This was done to ensure that they would behave as resonances whose expected 1HN-15N NOE would be greater than 0.65 following conventional protocols for establishing residues which can be used to determine τc (Kay et al., 1989). The following method is similar to Lakomek, et al. (Lakomek et al., 2013), and Lorieau, et al. (Lorieau et al., 2011). The grid was evaluated from a range of 0.6 to 1.0 in steps of 0.01 for S2 and 0 to 1 ns in steps of 100 ps for τf. τc was evaluated from 40 to 80 ns in steps of 1 ns. A target function (χ2) comprised of the sum of the error weighted squared difference between the experimental and calculated relaxation rates was minimized. All lowest χ2 values from each residue’s minimization was kept and nuclei with similar τc values and whose τf values were either 0 or 100 ps were grouped together and then globally minimized. This global minimization was not conducted in a grid fashion and the minimized parameters included a single τc and residue specific S2 and τf parameters. The lower limit in τc was constrained based on the ηxy data assuming a rigid rotor spectral density function (Lee et al., 2006) and the error in τc was determined from Monte-Carlo simulations with all calculations performed in Mathematica (Wolfram Research, Champaign, IL). Rotational anisotropy was not considered under the current analysis; however, the disordered N- and C-termini do fluctuate independently from the folded core based on 1D-TRACT (Lee et al., 2006) data in which two overall correlation times could be extracted (data not shown).
 
-## Determination of binding stoichiometry for 2.5:1 rpL5:N130
+#### Determination of binding stoichiometry for 2.5:1 rpL5:N130
 
-The τc values discussed above were used as a quantitative assessment of the binding stoichiometry for NPM. τcapoN130and τc2.5:1rpL5:N130were found to be 53.6 ± 0.9 and 67.8 ± 1.1 ns, respectively. τc2.5:1rpL5:N130was 27 ± 4% larger than that of τcapoN130. Since τc can be a direct reporter in the change of molecular weight (Mr), we calculated the theoretical τc value for apo N130 (Mr = 73.4 kDa) and 2.5:1 rpL5:N130 using the Stokes-Einstein equation (τc,Stokes−Einstein) (Cavanagh et al., 2007). For 2.5:1 rpL5:N130, we postulated that for each monomeric unit of the pentamer two peptides would bind, one to A1 and A2, yielding a molecular weight of 95.6 kDa. The mass increase in the 2.5:1 rpL5:N130 complex reflects the change in radius of hydration (rH=(3VMr4πNa)13+rw) due to peptide binding, in which V, Na, and rw are the specific volume of the protein, Avogadro’s number, and radius of water (rw = 2 Å), respectively. Formally, τc,Stokes−Einstein2.5:1rpL5:N130/τc,Stokes−EinsteinapoN130=(2rw+(6π)13(VMr,95.6kDaNa)13)3(2rw+(6π)13(VMr,73.4kDaNa)13)3 and upon evaluation an excellent agreement between the experimentally determined ratio (τc2.5:1rpL5:N130/τcapoN130) and the ratio calculated theoretically using the relation above was found. Namely, that τc,Stokes−Einstein2.5:1rpL5:N130 is 28% larger than that of τc,Stokes−EinsteinapoN130 further confirming a 2:1 (rpL5:N130monomer) binding stoichiometry for each monomeric unit within the N130 pentamer. We also further validated the experimentally determined free N130 τc value using hydrodynamic calculations with the software HYDRONMR (Ortega and Garcia de la Torre, 2005) with structures of N130 that had its N- and C-termini modeled into the structure. The calculated value from HYDRONMR was 56.3 ns and is within 5% of the experimentally determined value.
+The τc values discussed above were used as a quantitative assessment of the binding stoichiometry for NPM. $\tau_{c}^{apoN130}$and $\tau_{c}^{2.5:1rpL5:N130}$were found to be 53.6 ± 0.9 and 67.8 ± 1.1 ns, respectively. $\tau_{c}^{2.5:1rpL5:N130}$was 27 ± 4% larger than that of $\tau_{c}^{apoN130}$. Since τc can be a direct reporter in the change of molecular weight (Mr), we calculated the theoretical τc value for apo N130 (Mr = 73.4 kDa) and 2.5:1 rpL5:N130 using the Stokes-Einstein equation ($\tau_{c,Stokes−Einstein}$) (Cavanagh et al., 2007). For 2.5:1 rpL5:N130, we postulated that for each monomeric unit of the pentamer two peptides would bind, one to A1 and A2, yielding a molecular weight of 95.6 kDa. The mass increase in the 2.5:1 rpL5:N130 complex reflects the change in radius of hydration ($r_{H}=(\frac{3VM_{r}}{4\piN_{a}})^{\frac{1}{3}}+r_{w}$) due to peptide binding, in which V, Na, and rw are the specific volume of the protein, Avogadro’s number, and radius of water (rw = 2 Å), respectively. Formally, $\tau_{c,Stokes−Einstein}^{2.5:1rpL5:N130}/\tau_{c,Stokes−Einstein}^{apoN130}=\frac{(2r_{w}+(\frac{6}{\pi})^{\frac{1}{3}}(\frac{VM_{r,95.6kDa}}{N_{a}})^{\frac{1}{3}})^{3}}{(2r_{w}+(\frac{6}{\pi})^{\frac{1}{3}}(\frac{VM_{r,73.4kDa}}{N_{a}})^{\frac{1}{3}})^{3}}$ and upon evaluation an excellent agreement between the experimentally determined ratio ($\tau_{c}^{2.5:1rpL5:N130}/\tau_{c}^{apoN130}$) and the ratio calculated theoretically using the relation above was found. Namely, that $\tau_{c,Stokes−Einstein}^{2.5:1rpL5:N130}$ is 28% larger than that of $\tau_{c,Stokes−Einstein}^{apoN130}$ further confirming a 2:1 (rpL5:N130monomer) binding stoichiometry for each monomeric unit within the N130 pentamer. We also further validated the experimentally determined free N130 τc value using hydrodynamic calculations with the software HYDRONMR (Ortega and Garcia de la Torre, 2005) with structures of N130 that had its N- and C-termini modeled into the structure. The calculated value from HYDRONMR was 56.3 ns and is within 5% of the experimentally determined value.
 
-## Insights into ps to ns motions of the N- and C-termini for apo N130 and 2.5:1 rpL5:N130
+#### Insights into ps to ns motions of the N- and C-termini for apo N130 and 2.5:1 rpL5:N130
 
-Following determination of global τc values, local parameters for each residue were evaluated. Either the LS-MF formalism was used or a local MF (local-MF) formalism in which residues were treated completely locally using a single τc value (τc,local) and S2. Local-MF is one in which τf in LS-MF equals zero. The selection of formalisms was based on fit statistics comparing models with different numbers of parameters with an F-test at 95% confidence interval and on whether minimizations using a particular formalism produced unrealistic values (e.g. S2≥1) (Lee et al., 1997). For residues Asp3 to Asp122, the LS-MF formalism was used with the globally determined τc for the apo and rpL5-bound forms held constant with S2 and τf determined. For residues in the C-terminal A2 tract consisting of Ala123-Glu130, only τc,local and S2 values were determined (local-MF) (Table 5). Back calculation of all data from the determined parameters yielded an excellent correlation with experimental data. The Pearson correlation coefficient between ηxy calculated and observed for all data across all static magnetic fields used here was 0.97 and 0.94 for the apo N130 and 2.5:1 rpL5:N130, respectively. The Pearson correlation coefficient for the R1 data collected for apo and rpL5-bound N130 was 0.99 for both datasets. All errors were assessed using Monte-Carlo simulations. This procedure was performed for all data on apo N130 and 2.5:1 rpL5:N130. We note that there was a distinct lack of precision in determining τf for residues in which LS-MF was used to analyze the data (τfN130=212±272ps,τfrpL5:N130=272±310ps). This is expected because high frequency motions contribute to a greater extent to R1 than to ηxy and, with limited R1 values only measured at a single magnetic field and for resonances whose R1 is larger than the average, error will cause a decrease in precision when determining τf. We note that the average S2 for both apo and rpL5-bound forms of N130 are comparable to what is expected for folded proteins(Lakomek et al., 2013) (SapoN1302=0.73±0.06 and S2.5:1rpL5:N1302=0.71±0.10; average included residues 16–32 and 40–118). Of interest are significant changes to dynamic parameters for residues within the N- and C-termini of N130 due to rpL5 peptide binding (Figure 4c,i–iii).
+Following determination of global τc values, local parameters for each residue were evaluated. Either the LS-MF formalism was used or a local MF (local-MF) formalism in which residues were treated completely locally using a single τc value (τc,local) and S2. Local-MF is one in which τf in LS-MF equals zero. The selection of formalisms was based on fit statistics comparing models with different numbers of parameters with an F-test at 95% confidence interval and on whether minimizations using a particular formalism produced unrealistic values (e.g. S2≥1) (Lee et al., 1997). For residues Asp3 to Asp122, the LS-MF formalism was used with the globally determined τc for the apo and rpL5-bound forms held constant with S2 and τf determined. For residues in the C-terminal A2 tract consisting of Ala123-Glu130, only τc,local and S2 values were determined (local-MF) (Table 5). Back calculation of all data from the determined parameters yielded an excellent correlation with experimental data. The Pearson correlation coefficient between ηxy calculated and observed for all data across all static magnetic fields used here was 0.97 and 0.94 for the apo N130 and 2.5:1 rpL5:N130, respectively. The Pearson correlation coefficient for the R1 data collected for apo and rpL5-bound N130 was 0.99 for both datasets. All errors were assessed using Monte-Carlo simulations. This procedure was performed for all data on apo N130 and 2.5:1 rpL5:N130. We note that there was a distinct lack of precision in determining τf for residues in which LS-MF was used to analyze the data ($\tau_{f}^{N130}=212\pm272ps,\tau_{f}^{rpL5:N130}=272\pm310ps$). This is expected because high frequency motions contribute to a greater extent to R1 than to ηxy and, with limited R1 values only measured at a single magnetic field and for resonances whose R1 is larger than the average, error will cause a decrease in precision when determining τf. We note that the average S2 for both apo and rpL5-bound forms of N130 are comparable to what is expected for folded proteins(Lakomek et al., 2013) ($S_{apoN130}^{2}=0.73\pm0.06$ and $S_{2.5:1rpL5:N130}^{2}=0.71\pm0.10$; average included residues 16–32 and 40–118). Of interest are significant changes to dynamic parameters for residues within the N- and C-termini of N130 due to rpL5 peptide binding (Figure 4c,i–iii).
 
-Although the N- and C-termini remain disordered, the N-terminus exhibits increased rigidity as indicated by the changes in S2 values and whose relaxation behavior was best described using the globally determined τc that was fixed during the LS-MF analysis (Figure 4c,i). Overall, internuclear vector motions were reduced by two-thirds with binding of rpL5 to N130 (SapoN1302=0.16±0.01versus S2.5:1rpL5:N1302=0.26±0.02). The extraction of parameters that define C-terminal A2 tract motion was not well fit when the overall τc was fixed, as in the aforementioned analysis. Instead, for the C-terminal A2 tract (Figure 4c,ii-iii), changes in motion were monitored using S2 and the overall local correlation time (τc,local). For the A2 tract, this is consistent with slowed local motion and increased rigidity due to peptide binding (green bars; Figure 4c,ii). We note that increased rigidity can be seen beginning from residue Val119. However, we focus on the local-MF analysis for the C-terminal A2 tract (Ala123-Glu130). From Figure 4c,ii, we find that the motion is slowed by a factor two (τCapoN130=2.10±0.05ns and τC2.5:1rpL5:N130=4.56±0.06ns) for the C-terminal residues and flexibility (Figure 4c,iii) is reduced by nearly half (SapoN1302=0.44±0.01 and S2.51rpL5:N1302=0.76±0.01). We also note that residues at the beginning of the A2 tract (Val119-Asp122), which were well fit when τc was fixed to the overall tumbling value, also exhibited restricted motion in the 2.5:1 rpL5:N130 state (by about 30%) as compared with apo N130. τc,local for Ser125 in N130 could not be determined because the resonance was overlapped in the apo state.
+Although the N- and C-termini remain disordered, the N-terminus exhibits increased rigidity as indicated by the changes in S2 values and whose relaxation behavior was best described using the globally determined τc that was fixed during the LS-MF analysis (Figure 4c,i). Overall, internuclear vector motions were reduced by two-thirds with binding of rpL5 to N130 ($S_{apoN130}^{2}=0.16\pm0.01$versus $S_{2.5:1rpL5:N130}^{2}=0.26\pm0.02)$. The extraction of parameters that define C-terminal A2 tract motion was not well fit when the overall τc was fixed, as in the aforementioned analysis. Instead, for the C-terminal A2 tract (Figure 4c,ii-iii), changes in motion were monitored using S2 and the overall local correlation time (τc,local). For the A2 tract, this is consistent with slowed local motion and increased rigidity due to peptide binding (green bars; Figure 4c,ii). We note that increased rigidity can be seen beginning from residue Val119. However, we focus on the local-MF analysis for the C-terminal A2 tract (Ala123-Glu130). From Figure 4c,ii, we find that the motion is slowed by a factor two ($\tau_{C}^{apoN130}=2.10\pm0.05ns$ and $\tau_{C}^{2.5:1rpL5:N130}=4.56\pm0.06ns$) for the C-terminal residues and flexibility (Figure 4c,iii) is reduced by nearly half ($S_{apoN130}^{2}=0.44\pm0.01$ and $S_{2.51rpL5:N130}^{2}=0.76\pm0.01$). We also note that residues at the beginning of the A2 tract (Val119-Asp122), which were well fit when τc was fixed to the overall tumbling value, also exhibited restricted motion in the 2.5:1 rpL5:N130 state (by about 30%) as compared with apo N130. τc,local for Ser125 in N130 could not be determined because the resonance was overlapped in the apo state.

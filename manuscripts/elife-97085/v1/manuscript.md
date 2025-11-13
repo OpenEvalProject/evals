@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Department of Bioengineering, Faculty of Engineering, Imperial College London London United Kingdom
-2. https://ror.org/03gnr7b55 Nantes Université, Laboratory 'Movement, Interactions, Performance' Nantes France
+1. Department of Bioengineering, Faculty of Engineering, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. Nantes Université, Laboratory 'Movement, Interactions, Performance' Nantes France ([ROR:03gnr7b55](https://ror.org/03gnr7b55))
 3. Université Côte d'Azur, LAMHESS Nice France
-4. https://ror.org/00rqy9422 The University of Queensland, School of Biomedical Sciences Brisbane Australia
-5. https://ror.org/02ttsq026 Department of Integrative Physiology, University of Colorado Boulder Boulder United States
+4. The University of Queensland, School of Biomedical Sciences Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+5. Department of Integrative Physiology, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
 
 † Corresponding author
 
@@ -36,13 +36,71 @@ Having access to the rate coding of motoneuron pools allowed us to understand ho
 
 ## Results
 
-## Identification and tracking of individual motor units
+### Identification and tracking of individual motor units
 
 16 participants performed either isometric dorsiflexion (n=8) or knee extension tasks (n=8) while we recorded the EMG activity of the tibialis anterior (TA - dorsiflexion) or the vastus lateralis (VL - knee extension) with four arrays of 64 surface electrodes (256 electrodes per muscle). The motoneuron pools of these two muscles of the lower limb receive a large part of common input (Laine et al., 2015; Negro et al., 2016b), constraining the recruitment of their motor units in a fixed order across tasks. They are therefore good candidates for an accurate description of rate coding. Moreover, we wanted to determine whether differences in rate coding observed between proximal and distal muscles in the upper limb (De Luca et al., 1982) were also present in the lower limb.
 
 The experimental tasks comprised isometric contractions with a ramp-up, a plateau, and a ramp-down. The ramp-up and ramp-down phases were performed slowly compared with contractile speeds observed during activities of daily living. They were performed at a constant rate of 5% MVC·s–1 and the force plateau was maintained for either 10 s (70–80% MVC), 15 s (50–60% MVC), or 20 s (10–40% MVC) (Figure 1A). The target during the plateau ranged from 10% to 80% MVC in increments of 10% MVC (randomised order).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97085/elife-97085-fig1-v1.jpg)
+
+**Figure 1.:** (A) We used a blind-source-separation (BSS) algorithm to decompose the overlapping activity of motor units (MU) into spike trains during a force-matching trapezoidal task (red trace). (B) We reconstructed synthetic electromyographic (EMG) signals by summing the trains of action potentials from all the identified motor units and interpreting the remaining EMG signal as the part of the signal not explained by the decomposition. (C) We calculated the ratio between the powers of synthetic and original EMG signals to estimate the proportion of the signal variance explained by the decomposition. Each data point indicates the average value for one participant. (D) We estimated the uniqueness of each identified motor unit within the pool by calculating the root-mean-square error (RMSE) between the distributions of action potentials of the same motor unit across contractions (two panels on the left, reference value in E) and between motor units (left vs. right panels, distribution of RMSE between motor units in yellow in E). (F) Each motor unit was unique within the pool when the RMSE between its distributions of action potentials across target forces (reference value) was less than the 5th percentile of the distribution of RMSE with the rest of the motor units. Motor units considered as outliers in F (red data points) were removed from the analysis due to potential errors in tracking between contractions. Each data point is a motor unit, the box represents 25th–75th percentiles of the distribution of data, and the black line shows the median. The horizontal thick line denotes a statistical difference between reference values and 5th percentiles for each muscle.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97085/elife-97085-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** We used two approaches to validate the electromyographic decomposition. First, we simulated a pool of 150 motor units producing forces from 10% to 80% of the maximal excitation. Electromyographic signals were simulated from either 16 intramuscular electrodes (black horizontal line, top panels) or 64 surface electrodes (dark red curves on the left of top panels). Each of the grey elliptical shapes represents the cross-sectional area of the simulated muscle. We identified motor units using blind source-separation, with their territories displayed in red in the top panels. We then calculated the rate of agreement between the series of discharge times identified from the decomposition and simulated. Each data point is a motor unit, and the horizontal black line depicts the median. After this, we used the two-source validation approach, i.e., the comparison of discharge times identified from intramuscular and surface electromyographic signals. A participant performed trapezoidal isometric contractions with plateaus ranging from 10% to 80% of the maximal force while we recorded surface signals with a grid of 128 electrodes and intramuscular signals with 40 electrodes along a thin film that was inserted into the muscle with a hypodermic needle. Intramuscular and surface electromyographic signals were both decomposed and two motor units were matched between intramuscular and surface signals. We calculated the rate of agreement between the series of discharge times. It is worth noting that we identified the same number of discharge times with both methods. A rate of agreements less than 100% reflects misalignments of some discharge times with the surface signals due to the propagation of the action potentials through the tissue and potential overlapping action potentials at the surface of the skin. Finally, we validated the tracking method using the simulated signals, with high percentages highlighting the high accuracy of our approach.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97085/elife-97085-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** We tracked motor units across contractions using their unique distribution of action potentials within the grid of 256 electrodes. Then, we estimated their recruitment thresholds as the average of force over a window of 10 ms centred around the first discharge time. The recruitment thresholds, estimated for each contraction where the motor unit was identified, are displayed for each participant. A series of data points connected with a line of the same colour is a motor unit. TA, tibialis anterior; VL, vastus lateralis; MVC, maximal voluntary contraction level; P1, participant #1.
+
 A source-separation algorithm (Farina and Holobar, 2016; Negro et al., 2016a) was applied to the EMG signals to extract motor unit pulse trains, from which discharge times were automatically identified. All identified motor unit firings were visually inspected and manually edited when necessary (Avrillon et al., 2024). Because the signal was stationary during the plateau, it was possible to estimate reliable separation vectors for large samples of motor units with source-separation algorithms (Figure 1A; Farina and Holobar, 2016; Negro et al., 2016a). The average number of motor units identified in each contraction per participant was 42 ± 24 (25th–75th percentile: 24–53, up to 95; Table 1) motor units from the TA and 33 ± 15 (25th–75th percentile: 23–47, up to 71; Table 1) motor units from the VL. The datasets from all target forces were merged into a sample of unique motor units per muscle and participant that spanned most of the operating range of recruitment thresholds observed in humans (1st–99th percentile: 0.9–73.4% MVC; see below).
+
+**Table 1.**
+ Mean ± standard deviation (range) for the number of motor units across the eight target forces and two muscles.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>10%</th>
+      <th>20%</th>
+      <th>30%</th>
+      <th>40%</th>
+      <th>50%</th>
+      <th>60%</th>
+      <th>70%</th>
+      <th>80%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TA</td>
+      <td>38 ± 25(1–73)</td>
+      <td>45 ± 24(21–83)</td>
+      <td>50 ± 27(24–95)</td>
+      <td>49 ± 26(24–93)</td>
+      <td>45 ± 27(15–93)</td>
+      <td>40 ± 25(14–80)</td>
+      <td>37 ± 26(14–84)</td>
+      <td>34 ± 19(9–60)</td>
+    </tr>
+    <tr>
+      <td>VL</td>
+      <td>44 ± 17(17–63)</td>
+      <td>46 ± 20(19–71)</td>
+      <td>42 ± 20(10–67)</td>
+      <td>34 ± 18(3–56)</td>
+      <td>32 ± 15(5–53)</td>
+      <td>26 ± 13(3–38)</td>
+      <td>26 ± 14(1–38)</td>
+      <td>20 ± 13(1–37)</td>
+    </tr>
+  </tbody>
+</table>
+
+_TA, tibialis anterior; VL, vastus lateralis._
 
 The proportion of the EMG signal represented by the identified motor units was estimated by reconstructing a synthetic EMG signal from the firing activity. To do so, the discharge times were used as triggers to segment the differentiated EMG signals over a window of 25 ms that yielded averaged action potential waveforms for each motor unit (Figure 1A). The action potentials were then convolved with the discharge times to obtain trains of action potentials, and all the trains of the identified motor units were summed to reconstruct the synthetic EMG signal. The ratio between the powers of synthetic and experimental EMG signals was calculated (Figure 1B): it was 69.3 ± 17.3% (25th–75th percentile: 59.3–83.6%, up to 94.2%) for TA and 55.2 ± 19.5% (25th–75th percentile: 50.0–71.9%, up to 86.5%) for VL (Figure 1C). These values indicate that most of the recorded surface EMG signals were successfully decomposed into motor unit activity.
 
@@ -50,9 +108,17 @@ Motor units were tracked between contractions using their unique spatial distrib
 
 The accuracy of the tracking method was further tested by confirming the uniqueness of each motor unit within the identified sample, assuming that each motor unit had a unique representation across the array of surface electrodes (Farina et al., 2008). This was accomplished by calculating the root-mean-square error (RMSE) between their action potentials across the electrodes relative to those of the rest of the motor units (Figure 1E). The RMSE between the action potentials of the same motor unit tracked across contractions was calculated as a reference and compared with the 5th percentile of the distribution of RMSE between motor units (Figure 1F). The reference value was typically less than the 5th percentile of the RMSE calculated with the action potentials of the other motor units (TA: 5.6 ± 2.4 vs. 8.0 ± 1.5%; p<0.001; VL: 6.2 ± 2.8% vs. 8.5 ± 1.6%; p<0.001). Inspection of the data for each motor unit revealed that 92.1% (TA) and 87.0% (VL) of the motor units had a lower RMSE between target forces compared with the other motor units (<5th percentile). Of note, motor units with the highest reference values (>95th percentile) were considered as outliers due to tracking errors and were excluded from the subsequent analyses (Figure 1F). We excluded 34 motor units from TA and 28 from VL.
 
-## Non-linear rate coding during the ramp-up phase - amplification and rate limiting
+### Non-linear rate coding during the ramp-up phase - amplification and rate limiting
 
 The input-output function for each motoneuron was characterised as the relation between its instantaneous firing rate and the applied force during the ramp-up phase of the contractions (Figure 2A). The linear increase in force was assumed to reflect a proportional increase in the net synaptic excitatory inputs received by the motoneurons, as proposed previously (Fuglevand et al., 1993; Revill and Fuglevand, 2017). Thus, any deviation from a linear increase in firing rate with respect to a linear increase in force presumably reflects the influence of neuromodulatory inputs on motoneuron gain (Johnson et al., 2017; Revill and Fuglevand, 2017; Beauchamp et al., 2023), or a saturation of the motoneuron firing rate (Fuglevand et al., 2015; Revill and Fuglevand, 2017).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/97085/elife-97085-fig2-v1.jpg)
+
+**Figure 2.:** (A) The relation between firing rate (pulses per second, pps) and the applied force during the ramp-up phase of the contraction was determined by concatenating the instantaneous firing rates for each motor unit (grey data points) recorded over all the contractions where it was identified, as shown here for one motor unit (coloured data points for contractions at 20%, 40%, and 60% MVC). The derived relations were then fitted with three different functions: linear (green), rising exponential (dark red), and natural logarithm (yellow), to characterise the input-output function of each motoneuron. (B) The motor units were grouped according to their best fit. The graphs show the distribution of these groups as a function of recruitment thresholds (RT) for each muscle. The inset panels depict the percentage of motor units (MU) in each group. (C) The initial acceleration of firing rate was derived from force-firing rate relation fitted with the natural logarithm (f(force)=a*ln(force)+b; yellow trace) and its first derivative (f(force)=a/force; dark red trace). The right panels show the distribution of initial acceleration values relative to recruitment threshold (RT) for all participants (n=328 motor units for tibialis anterior [TA] and n=393 motor units for vastus lateralis [VL]). Each data point indicates a motor unit. The horizontal thick lines denote a statistical difference between the motor units groups (low-threshold=blue; medium-threshold=grey; high-threshold=pink). The green line depicts the non-linear fits of these relations for the TA and the VL. Similar fits were observed for all the participants (inset panels).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97085/elife-97085-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** We reported the relations between instantaneous motor units firing rates and the applied force. Then, we fitted these relations for each motor unit using a natural logarithm function (left panels). The non-linearities in the relations depict the influence of neuromodulatory inputs to motoneurons on the transformation between the synaptic inputs and the motor unit firing rates. To quantify the impact of the amplification effect of these neuromodulatory inputs, we estimated the acceleration of firing rate as the first derivative of the fitted firing rate/force curves (right panels). The fits are drawn over the range of forces where the motor unit was firing during the ramp-up phases of the contractions. Each line is a motor unit. MVC, maximal voluntary contraction level.
 
 The association between the firing rate and the force was characterised by comparing three curve fits: (i) linear - an increase in firing rate proportional to the increase in the net synaptic excitatory input, (ii) rising exponential - an initial acceleration of firing rates followed by full saturation (De Luca and Contessa, 2012; Fuglevand et al., 2015; Revill and Fuglevand, 2017), and (iii) natural logarithm - an initial acceleration of firing rate followed by a slower constant increase in firing rate that reflects a rate limiting effect (Figure 2A; Bennett et al., 1998a; Lee and Heckman, 2000; Powers et al., 2012). Of note, this analysis was performed on each unique motor unit with the data pooled across all contractions (Figure 2A). The result was that 69.5% of the motor units in TA and 72.3% of those in VL had an input-output function better fitted by a natural logarithm (Figure 2B, inset panels).
 
@@ -70,7 +136,7 @@ The second stage of rate coding involved a linear increase in firing rate after 
 
 The linear functions for each participant are shown in Figure 3. There was a significant positive association between the rate of increase in firing rate and the recruitment threshold for all the participants (Pearson’s r: TA: 0.71 ± 0.14 pps and VL:0.57 ± 0.22 pps; all p<0.022), except in one participant for each muscle (TA: r=0.17; p=0.272; VL: r=0.12; p=0.411). Most motor units (92.0% in TA and 80.9% in VL) increased firing rates by more than one pulse per second between contractions up to the maximal force tested or until tracking was not possible.
 
-## Differences between ramp-up and ramp-down hysteresis
+### Differences between ramp-up and ramp-down hysteresis
 
 Neuromodulatory inputs can prolong excitatory synaptic inputs and produce unequal recruitment and derecruitment thresholds; i.e., a hysteresis. The left columns in Figure 4 show the relation between recruitment and derecruitment thresholds within the motor unit pools (Figure 4). The relation for most participants was better characterised with a non-linear than a linear function (TA: 6 out of 8 participants, adjusted R-squared>0.92; VL: 7 out of 8 participants, adjusted R-squared>0.83). The difference between recruitement and derecruitment thresholds was compared with a linear mixed effect model with muscle (TA; VL) and threshold (low; medium; high) as fixed effects and participant as a random effect. There was a significant effect of threshold (F=83.0; p<0.001) and a significant interaction muscle×threshold (F=30.1; p<0.001), but no effect of muscle (F=2.5; p<0.137). We further tested for each group of motor units whether the difference between the two thresholds was significantly different from 0 (absence of hysteresis). The result was that only medium-threshold motor units had a significant positive hysteresis (derecruitment threshold was lower) in both muscles (TA: –3.8 ± 7.2 pps; p=0.013; VL: –3.1 ± 6.0 pps; p=0.026), whereas low-threshold motor units from both muscles (TA: –1.5 ± 4.8; VL: –1.0 ± 3.2 pps; p>0.221) did not exhibit significant hysteresis. Although high-threshold motor units from TA followed the same trend (–1.7 ± 6.0 pps; p<0.437), high-threshold motor units from VL exhibited a negative hysteresis (VL: +3.2 ± 6.7 pps; p=0.039), which indicated that derecruitment threshold was greater than the recruitment threshold.
 
@@ -100,11 +166,11 @@ Moreover, force generation can be described as the filtering of the cumulative f
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 16 young individuals volunteered to participate either in the experiment on the TA (n=8; age: 27 ± 3) or on the VL (n=8; age: 27 ± 10). They had neither history of lower limb injury in the last 6 months before the experiments nor lower leg pain that would impair their ability to complete the experimental tasks. The study was reviewed and approved by Imperial College London (Study 18IC4685) and Comité de Protection des Personnes Ouest III (Study 23.00453.000166) and followed the standards of the declaration of Helsinki. Participants provided their informed written consent before starting the experimental session.
 
-## Experimental setup
+### Experimental setup
 
 The two experimental sessions consisted of either a series of submaximal isometric ankle dorsiflexions or isometric knee extensions. EMG signals were recorded from either the TA or the VL muscles using four arrays of 64 surface electrodes for a total of 256 electrodes.
 
@@ -114,11 +180,11 @@ For the session of knee extensions, participants sat on an instrumented chair wi
 
 The experimental session began with a warm-up that consisted of submaximal isometric contractions from 50% to 80% of the subjective MVC. Then, participants performed two MVC with 2 min of rest in between. The maximal torque was considered as the highest torque value recorded over an average window of 250 ms. The rest of the session consisted of a series of eight submaximal isometric contractions performed at 10–80% of the MVC with 10% MVC increments. The pattern of the contractions followed a trapezoidal target displayed on a screen in real time with the force trace. Ramp-up and ramp-down phases were performed at a constant pace of 5% MVC·s–1. The force plateaus were maintained for either 10 s (70–80% MVC), 15 s (50–60% MVC), or 20 s (10–40% MVC). The contractions were separated by 90 s of rest and their order was randomised.
 
-## EMG recording
+### EMG recording
 
 Surface EMG signals were recorded from the TA or the VL using 4 two-dimensional arrays of 64 electrodes (GR04MM1305 for the TA; GR08MM1305 for the VL, 13×5 gold-coated electrodes with one electrode absent on a corner; interelectrode distance: 4 and 8 mm, respectively; OT Bioelettronica, Italy). The grids were positioned over the muscle bellies to cover the largest surface while staying away from the boundaries of the muscle identified by manual palpation. Before placing the electrodes, the skin was shaved and cleaned with an abrasive pad and water. A biadhesive foam layer was used to hold each array of electrodes onto the skin, and conductive paste filled the cavities of the adhesive layers to make skin-electrode contact. For two-source validation of the EMG decomposition, an intramuscular linear array of 40 electrodes on a thin-film (platinum coated, interelectrode distance: 1 mm) was inserted into the TA in one participant at an approximate angle of 30°. The insertion was guided with a portable ultrasound probe (Butterfly IQ+, Butterfly Network, USA). Two bands damped with water were placed around the ankle as ground and reference electrodes. EMG signals were recorded in monopolar derivation with a sampling frequency of 2048 Hz for surface electrodes, 10,240 Hz for intramuscular electrodes, amplified (×150), band-pass filtered (10–500 Hz for surface; 100–4400 Hz for intramuscular), and digitised using a 400 channels acquisition system with a 16-bit resolution (EMG-Quattrocento; OT Bioelettronica, Italy).
 
-## HD-EMG decomposition
+### HD-EMG decomposition
 
 The monopolar EMG signals were band-pass filtered between 20 and 500 Hz with a second-order Butterworth filter, and channels with low signal-to-noise ratio or artefacts were discarded after visual inspection. The EMG signals were decomposed into individual motor unit pulse trains using convolutive blind source separation (Negro et al., 2016a). EMG signals were first extended by adding delayed versions of each channel, with an extension factor, i.e., number of delayed versions, adjusted to reach a total of 1000 extended channels. The extended signals were spatially whitened to make them uncorrelated and of equal power. Thereafter, a fixed-point algorithm was applied to identify the sources of the EMG signals, i.e., the motor unit pulse trains. In this algorithm, a contrast function g(x)=log(cosh(x)) and its derivatives were applied to the extended and whitened EMG signals to iteratively optimise a separation vector that skew the distribution of the values of the motor unit pulse trains towards 0, and thus maximise the level of sparsity of the motor unit pulse train. The high level of sparsity matches the physiological properties of motor units, with a relatively small number of discharges, or 1, per second (<50 discharge times·s–1 during submaximal isometric contractions). The convergence was reached once the level of sparsity did not substantially vary (with a tolerance fixed at 10–4) when compared to the previous iteration. At this stage, the motor unit pulse train contained high peaks (i.e. the discharge times of the identified motor unit) and lower values due to the activities of neighbouring motor units and noise. High peaks were separated from lower values using the MATLAB functions findpeaks.m and kmeans.m (with two classes). The peaks from the class with the highest centroid were considered as the discharge times of the identified motor unit.
 
@@ -126,7 +192,7 @@ After this automatic identification of the discharge times, duplicates were auto
 
 At the end of these automatic steps, all the motor unit pulse trains and identified discharge times were visually inspected, and manual editing was performed to correct the false identification of artefacts or the missed discharge times (Del Vecchio et al., 2020; Hug et al., 2021; Avrillon et al., 2024). The manual editing consisted of (i) removing the spikes causing erroneous discharge rates (outliers), (ii) adding the discharge times clearly separated from the noise, (iii) recalculating the separation vector, (iv) reapplying the separation vector on the entire EMG signals, and (v) repeating this procedure until the selection of all the discharge times is achieved. The manual editing of potential missed discharge times and falsely identified discharge times was never immediately accepted. Instead, the procedure was consistently followed by the application of the updated motor unit separation vector on the entire EMG signals to generate a new motor unit pulse train. Then, the manual editing was only accepted when the silhouette value increased or stayed well above the threshold of 0.9 quantified with the silhouette value (Negro et al., 2016a). Only these motor units were retained for further analysis.
 
-## Validation of the decomposition
+### Validation of the decomposition
 
 EMG decomposition was validated using both simulation of EMG signals and two-source validation.
 
@@ -134,41 +200,49 @@ For the simulation, we generated the series of discharge times of a group of 150
 
 For the two-source validation, EMG signals were simultaneously recorded with an intramuscular linear array of 40 electrodes on a thin film and two grids of 64 surface electrodes. After the decomposition of both intramuscular and surface EMG signals, identified motor units were matched following the same procedure as for the elimination of duplicates. In short, the motor unit pulse trains were first aligned using a cross-correlation function. Two motor units identified with intramuscular and surface EMG decompositions were considered as matches when they had at least 30% of their discharge times in common. We calculated the accuracy of the decomposition using the rate of agreements between their series of discharge times.
 
-## Proportion of the EMG signal represented by the decomposition
+### Proportion of the EMG signal represented by the decomposition
 
 A synthetic EMG signal was reconstructed from the cumulative firing activity of the identified motor units. First, EMG signals from the 256 electrodes were differentiated in the column direction to obtain 236 single-differential EMG channels. Second, each differentiated EMG signal was segmented over successive windows of 25 ms centred around the discharge times of a motor unit. All the windows were averaged to estimate the average action potential waveform of that motor unit over the 236 each channel. The action potentials were then convolved with the series of discharge times to obtain trains of action potentials. These steps were repeated for all the identified motor units, and all the trains of action potentials were summed to reconstruct the synthetic EMG signals. At the end of this process, the ratio between the powers of synthetic and original EMG signals was calculated.
 
-## Motor unit tracking
+### Motor unit tracking
 
 As explained in the section that described the decomposition framework and in previous studies (Francic and Holobar, 2021; Škarabot et al., 2023a; Škarabot et al., 2023b), a motor unit pulse train results from the projection of extended and whitened EMG signals onto a separation vector, optimised during a fixed-point algorithm. Discharge times are automatically identified from this motor unit pulse train, before visual inspection and manual editing.
 
 In this study, motor units were tracked by slightly adapting this process. First, EMG signals from two successive contraction levels, say 10% and 20% MVC, were separately decomposed. The motor unit pulse trains, the identified discharge times, and the associated separation vectors were saved for each contraction level. Second, the EMG signals from the highest contraction level (20% MVC) were projected onto the separation vectors identified in the lowest contraction level (10% MVC). A new group of pulse trains was generated, which represented the firing activity of all the motor unit identified at 10% MVC, but during the contraction performed at 20% MVC. When the high peaks were clearly separated from the noise, the discharge times were automatically identified using the MATLAB functions findpeaks.m and kmeans.m. Third, these new series of discharge times were matched with those that have been initially identified at 20% MVC using the same approach as during two-source validation (>30% of common discharge times, see above). This process ended with three groups of motor units: (i) the motor units only identified at 10% MVC, (ii) the motor units identified at 10% and 20% MVC, and (iii) the motor units only identified at 20% MVC. These steps were repeated between all the successive contraction levels, i.e., from between 20% and 30% MVC to between 70% and 80% MVC. At the end of this iterative process, the following data were saved for each motor unit across the contraction levels where they were tracked: the instantaneous firing rates and force during ramp-up and ramp-down phases (Figure 2), the average firing rate during the plateau (Figure 3), the recruitment threshold (Figure 1—figure supplement 2).
 
-## Motor unit uniqueness
+### Motor unit uniqueness
 
 The accuracy of motor unit tracking was further tested by confirming the uniqueness of each motor unit within the entire sample, assuming that each motor unit must have a unique representation of their action potentials across the array of surface electrodes (Figure 1; Farina et al., 2008). This was accomplished by calculating the RMSE between their action potentials across contractions and the action potentials of the rest of the motor units. EMG signals from the 256 electrodes were differentiated in the column direction to obtain 236 single-differential EMG channels. For each motor unit, the single-differential EMG signals were segmented around the discharge times and averaged to identify an average action potential waveforms for each channel. The action potential waveforms were concatenated in a matrix of 236 rows (EMG channels) and 102 columns (time samples; 50 ms). This process was repeated for each contraction level where the motor unit was tracked. A first RMSE was calculated between the concatenated action potentials identified across contractions, and this value was defined as a reference. Then, RMSE was calculated between the concatenated action potentials of that motor unit and the concatenated action potentials of the rest of the motor units. A reference value lower than the 5th percentile of the distribution of RMSE calculated between motor units demonstrated that its distribution of action potentials across contractions were more similar than with the rest of the motor units, proving their uniqueness within the entire sample.
 
-## Input-output function of motoneurons
+### Input-output function of motoneurons
 
 The input-output function of each motor unit was characterised as the relation between its instantaneous firing rate and the muscle force. The instantaneous firing rates and muscle forces recorded during all the ramp-up phases where that motor unit was tracked were pooled. For example, the motor unit displayed in Figure 2A was tracked from 20% to 60% of the MVC. The relation between firing rates and force was characterised by comparing three curve fits:
 
-The parameters of the functions were estimated with the MATLAB functions fittype.m and fit.m using a non-linear least-squares solver with a maximum of 1000 iterations. The best model of the firing rate-force relation during the ramp-up phase was the fit with the lowest Bayesian information criterion (BIC). This criterion assesses the performance of a model by balancing its goodness of fit with its complexity (number of parameters). The BIC was calculated as follows:BIC=n∗ln⁡(sse/n)+p∗ln⁡(n)
+The parameters of the functions were estimated with the MATLAB functions fittype.m and fit.m using a non-linear least-squares solver with a maximum of 1000 iterations. The best model of the firing rate-force relation during the ramp-up phase was the fit with the lowest Bayesian information criterion (BIC). This criterion assesses the performance of a model by balancing its goodness of fit with its complexity (number of parameters). The BIC was calculated as follows:
+
+$$
+BIC=n∗ln⁡(sse/n)+p∗ln⁡(n)
+$$
 
 where n is the number of data samples on which the fit was estimated, sse is the sum of squares error, and p is the number of parameters used in the model.
 
 The input-output functions of motor units during the ramp-down phase were characterised using the same approach, and we reported in the Results whether the best fit changed between the ramp-up and ramp-down phases.
 
-## Rate coding of motor units
+### Rate coding of motor units
 
-Most of motor units input-output functions were better characterised with a natural logarithm function. This function determines two stages in rate coding: a steep acceleration of firing rate followed by a slower linear increase in firing rate. Therefore, these two stages of the firing rate-force relation were further analysed. To estimate the acceleration of firing rate during the ramp-up phase, the first derivative of the firing rate-force relation fitted with a natural logarithm was computed as:Accelerationoffiringrate(Force)=a/Force
+Most of motor units input-output functions were better characterised with a natural logarithm function. This function determines two stages in rate coding: a steep acceleration of firing rate followed by a slower linear increase in firing rate. Therefore, these two stages of the firing rate-force relation were further analysed. To estimate the acceleration of firing rate during the ramp-up phase, the first derivative of the firing rate-force relation fitted with a natural logarithm was computed as:
+
+$$
+Accelerationoffiringrate(Force)=a/Force
+$$
 
 where a is the parameter of the equation of the natural logarithm function. The initial acceleration of firing rate was calculated as the value of the derivative at the recruitment threshold of the motor unit. The relation between the initial acceleration of firing rate and the recruitment threshold of all motor units across the pool was characterised for each muscle and each participant using non-linear least-squares solvers in MATLAB. The slow linear increase in firing rate that followed the initial steep acceleration of firing rate was characterised by comparing the average firing rate of motor units during the plateaus of force between successive contraction levels (Figure 3). Specifically, the rate of increase in firing rate for an increment of 10% MVC were calculated for each motor unit, and the relation between the rate of increase and the recruitment threshold of all motor units across the pool was characterised for each participant and each muscle using a linear fit in MATLAB. Pearson’s r and p-values of these relations were reported in the Results.
 
-## Hysteresis between recruitment and derecruitment thresholds
+### Hysteresis between recruitment and derecruitment thresholds
 
 The relation between recruitment and derecruitment thresholds of all motor units across the pool was characterised for each participant and each muscle using non-linear and linear fits. As for the relations between the firing rate and force of each motor unit, the best fit was selected using the BIC. The differences between the recruitment and derecruitment thresholds (hysteresis) were calculated for each motor unit, with negative values indicating a hysteresis and a positive value indicating a reverse hysteresis.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed with RStudio (USA). Quantile-quantile plots and histograms were displayed to check the normality of the data distribution. If the distribution was determined not to be normal, they were transformed to remove the skew. All statistical analyses were performed using linear mixed effect models implemented in the R package lmerTest with the Kenward-Roger method to estimate the denominator degrees of freedom and the p-values. This method considers the dependence of data points (i.e. individual motor unit) in each participant. When necessary, multiple comparisons were performed using the R package emmeans, which adjusts the p-value using the Tukey or the Bonferroni method. The significance level was set at 0.05. Values are reported as mean ± standard deviation.
 

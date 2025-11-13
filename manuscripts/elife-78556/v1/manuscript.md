@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01swzsf04 Department of Cell Physiology and Metabolism, Faculty of Medicine, Centre Medical Universitaire (CMU), University of Geneva Geneva Switzerland
-2. https://ror.org/01swzsf04 Diabetes center, Faculty of Medicine, University of Geneva Geneva Switzerland
-3. https://ror.org/01swzsf04 Department of Pathology and Immunology, Faculty of Medicine, Centre Medical Universitaire (CMU), University of Geneva Geneva Switzerland
-4. https://ror.org/021ft0n22 NGS- Integrative Genomics Core Unit (NIG), Institute of Human Genetics, University Medical Center Göttingen Germany
+1. Department of Cell Physiology and Metabolism, Faculty of Medicine, Centre Medical Universitaire (CMU), University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+2. Diabetes center, Faculty of Medicine, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+3. Department of Pathology and Immunology, Faculty of Medicine, Centre Medical Universitaire (CMU), University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+4. NGS- Integrative Genomics Core Unit (NIG), Institute of Human Genetics, University Medical Center Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ In this study, we conducted a systematic transcriptomics analysis across 11 mous
 
 ## Results
 
-## Effectiveness of 10°C for activation and recruitment of the thermogenic capacity of brown adipose tissue (BAT)
+### Effectiveness of 10°C for activation and recruitment of the thermogenic capacity of brown adipose tissue (BAT)
 
 We first investigated the effectiveness of a mild cold intervention using 10 °C on the interscapular brown adipose tissue (iBAT) following a gradual decrease of the temperature, to mimic the environmental temperature decrease that typically happens in nature. We combined the iBAT thermogenic biomarkers introduced in the literature (Perdikari et al., 2018) with those genes in the Gene Ontology (GO) database which are annotated to any GO term related to adaptive thermogenesis. This resulted in a list of 148 potential thermogenesis-induced genes, of which 120 genes were significantly differentially expressed in at least one of the seven studies Supplementary file 1. We next compared the regulation of these genes in our study to the six other publicly available transcriptomic datasets, where C57BL/6J male mice were used in a cold exposure intervention and compared to littermates housed either at RT or at 30 °C (Bai et al., 2017; Cheng et al., 2018; Hao et al., 2015; Marcher et al., 2015; Shore et al., 2013; Xu et al., 2019; Figure 1a). Several parameters such as gender, initial temperature, the cold temperature, the duration of the cold exposure, and the nature of the exposure (acute or chronic) are varying across these studies.
 
@@ -50,7 +50,15 @@ We further focused on 292 genes involved in fatty acid metabolism (as annotated 
 
 To better understand BAT physiological changes which are associated with thermal adaptation, we further investigated gene expression changes after 4 weeks exposure to 34 °C compared to 22 °C. 2,126 genes were downregulated and 1118 were upregulated (p<0.05 and |log2FC|>0.6) in BAT from mice kept at 34 °C compared to 22 °C-kept littermates Supplementary file 3. Notably, these changes were more pronounced compared to the 767 upregulated genes and 988 downregulated genes (p<0.05 and |log2FC|>0.6) Supplementary file 4 when comparing 10–22°C, although in both thermal adaptations the temperature change is 12 °C. 76% of the 606 commonly changed genes between 34 °C and 10 °C were regulated in the opposite direction (Supplementary files 5 and 6). A total of 14 thermogenic and 32 fatty acid metabolism biomarkers were found among the 606 genes, with 82% of fatty acid biomarkers and 65% of thermogenic biomarkers showing reverse regulation patterns consistent with the direction of the temperature change (Figure 2, Figure 2—figure supplement 1, Supplementary files 5 and 6). Examples involve Ucp1 with log2FC of 0.87 and –2.27, Sorl1 with log2FC of 2.61 and –2.13, Elovl3 with log2FC of 3.51 and –5.81, Elovl6 with log2FC of 1.57 and –2.41, and Acot11 with log2FC of 2.02 and –2.36 when comparing 22–10°C, and 34–22 °C, respectively. These results suggest that the regulation of the gene expression is largely proportional to the temperature gradient, with more pronounced changes at higher housing temperatures.
 
-## A comprehensive mouse multi-tissue transcriptomic resource at 10°C, 22°C, and 34°C
+![Figure 2.](https://cdn.elifesciences.org/articles/78556/elife-78556-fig2-v1.jpg)
+
+**Figure 2.:** Thermogenic (A) and fatty acid metabolism (B) biomarkers in BAT of mice exposed to 10 °C vs. 22 °C, and 34 °C vs. 22 °C controls. All shown genes are significantly changed (p<0.05) and their Log2FC was calculated based on replicates with p-values listed in Supplementary file 6.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78556/elife-78556-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The color code gradient on the right of each pane shows Log scale values of the significantly changed genes (p<0.05).
+
+### A comprehensive mouse multi-tissue transcriptomic resource at 10°C, 22°C, and 34°C
 
 To identify how thermal adaptation affects the tissue-specific signatures and whether it induces common gene expression changes across various tissues, we performed RNAseq on interscapular BAT (iBAT), bone marrow, brain, hypothalamus, ileum, liver, inguinal SAT (ingSAT), spinal cord, spleen, quadriceps and perigonadal (epididymal) VAT (pgVAT) from mice exposed to 10 °C for 2 weeks after an acclimatization at 18 °C and 14 °C for 5 days each, and compared them to room temperature-kept controls (Figure 3A). We complemented these analyses with the changes in gene expression of ingSAT, pgVAT, iBAT, brain, ileum, liver and quadriceps from mice housed at 34 °C for 4 weeks and compared them to the RT-kept controls.
 
@@ -64,7 +72,7 @@ To understand the propensity of samples from 10 °C or 34 °C to RT control mice
 
 Additionally, biological replicates across all tissues and the relationship between the tissues from 10 °C-kept mice and their RT controls were analyzed using hierarchical clustering with pairwise Pearson correlation. We observed high Pearson correlation (0.92–1) between samples from the same tissue but different mice, suggesting that inter-individual variation has little impact on the transcriptomic profiles and demonstrating high reproducibility of the data (Figure 2—figure supplement 1). Larger clusters, as for instance the one between ingSAT, iBAT, and pgVAT, both at RT and 10 °C, indicate that physiologically close tissues show high similarity in terms of their global gene expression profiles.
 
-## Differentially expressed genes and enriched GO biological terms in tissues of mice exposed to 10°C and 34°C compared to 22°C controls
+### Differentially expressed genes and enriched GO biological terms in tissues of mice exposed to 10°C and 34°C compared to 22°C controls
 
 To further characterize the transcriptional thermal adaptation, we first assessed the number of differentially expressed genes and the magnitude of their changed expression across different tissues (Figure 4, Supplementary file 4), followed by GO gene set enrichment analysis of the identified differentially expressed genes. In the 10 °C exposure scenario, in all 11 tissues collectively we found 4350 genes as up- and 4593 genes as down-regulated (p-value <0.05, |FC|>1.5), while 785 genes were inversely regulated, that is, increased in a given tissue(s) and decreased in others. This inverse regulation may indicate that the regulation of certain genes occurs in a tissue specific manner. Physiologically close tissues that clustered together (Figure 3B) shared similar numbers of differentially expressed genes. IngSAT underwent most transcriptomic changes upon exposure to cold with 2867 significantly differentially expressed genes, followed by iBAT and pgVAT, while brain and hypothalamus showed the least transcriptomic changes with 119 and 113 total differentially expressed genes, respectively (Figure 4A). These results suggest that although adipose tissues are the most affected by cold exposure, all organs undergo changes that are reflected in their tissue-specific transcriptomic profiles.
 
@@ -90,9 +98,107 @@ We next performed GO gene set enrichment analysis on the differentially expresse
 
 **Figure 6.:** (A, B) Visualized are the top ranked 50 up- and down-regulated gene sets at 10 °C (A) and 34 °C (B) exposure. The p-value and the gene ratio (the ratio of differentially expressed genes to annotated genes in each gene set) were used as ranking criteria and the p-value weight is indicated with a gradient. The gene ratios are indicated by size of the dots and the exact values are provided in the supplementary Supplementary file 7. Gene sets that are commonly regulated in more than two tissues are highlighted in bold.
 
+**Table 1.**
+ GO-based gene set enrichment analysis when comparing 10 °C vs 22 °C and 34 °C vs 22 °C.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Significantly enriched GO terms (p-value &lt;0.05)</th>
+    </tr>
+    <tr>
+      <th>Tissue</th>
+      <th># of upregulated GO terms at 10 °C</th>
+      <th># of downregulated GO terms at 10 °C</th>
+      <th># of upregulated GO terms at 34 °C</th>
+      <th># of downregulated GO terms at 34 °C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ingSAT</td>
+      <td>83</td>
+      <td>178</td>
+      <td>264</td>
+      <td>177</td>
+    </tr>
+    <tr>
+      <td>Quadriceps</td>
+      <td>117</td>
+      <td>23</td>
+      <td>14</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>pgVAT</td>
+      <td>42</td>
+      <td>73</td>
+      <td>93</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>iBAT</td>
+      <td>43</td>
+      <td>53</td>
+      <td>175</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>Spleen</td>
+      <td>1</td>
+      <td>55</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Hypothalamus</td>
+      <td>30</td>
+      <td>14</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ileum</td>
+      <td>25</td>
+      <td>12</td>
+      <td>59</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>3</td>
+      <td>27</td>
+      <td>64</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Bone marrow</td>
+      <td>18</td>
+      <td>6</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Brain</td>
+      <td>6</td>
+      <td>11</td>
+      <td>12</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Spinal cord</td>
+      <td>8</td>
+      <td>5</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
 Upon 10 °C exposure, ingSAT showed the highest degree of enrichment (261 GO terms), followed by quadriceps, pgVAT, and iBAT. The least changed tissues were spinal cord and brain with 17 and 13 differentially expressed gene sets, respectively (Table 1). This ordering was similar to the degree of gene expression changes (shown in Figure 3), with an exception of the hypothalamus (which ranked 5th) when the GO terms were used as criteria. Similar to the 10 °C exposure, ingSAT ranked the highest following 34 °C exposure, where in total 441 unique GO terms were regulated. In general, changes at 34 °C were more pronounced compared to the 10°C-induced alterations.
 
-## Tissue-specific and tissue-shared gene and GO term signatures in response to 10°C and 34°C exposure
+### Tissue-specific and tissue-shared gene and GO term signatures in response to 10°C and 34°C exposure
 
 We identified 248 ‘commonly’ regulated GO terms between 10 °C and 34 °C exposures compared to RT, out of which 80 pathways were solely upregulated at 10 °C and downregulated at 34 °C (Supplementary file 8). Examples mostly involve the thermogenic and lipid-associated functions such as ‘mitochondrial respiratory chain complex I assembly’, ‘fatty acid biosynthetic process’, ‘lipid storage’, ‘gluconeogenesis’, ‘fatty acid beta-oxidation’, and ‘lipid droplet organization’.Forty-eight pathways showed opposite behavior being lowered at 10 °C and upregulated at 34 °C such as ‘regulation of ion transmembrane transport’ and ‘fat-soluble vitamin metabolic process’. Twenty-six pathways were mutually downregulated at both 34 °C and 10 °C exposures, linked to ‘muscle contraction’, ‘lipoprotein metabolic process’, ‘collagen fibril organization’, and ‘protein localization to extracellular region’. Twenty-two pathways were mutually increased at both conditions and included ‘regulation of sensory perception of pain’, ‘positive regulation of cell population proliferation’, and ‘cell surface receptor signaling pathway’. The remaining 72 pathways displayed both down- and up-regulation profiles across different tissues and at each condition (Supplementary file 8). Interestingly, in this group were immune system related pathways such as ‘immune response’, ‘adaptive immune response’, ‘regulation of T-helper 17 type immune response’, etc (full list in Supplementary file 8) that were mostly enhanced in adipose tissues and quadriceps in both 10 °C and 34 °C exposures and were reduced in ileum and brain at 34 °C, and in spleen and ileum following 10 °C.
 
@@ -102,13 +208,123 @@ We observed a slightly lower degree of tissue-specific regulated GO terms at the
 
 To gain further insights into the tissue-shared and tissue-specific enriched GO terms in response to 10 °C and 34 °C exposures, we classified the differentially expressed genes into two categories according to the number of tissues wherein they are differentially expressed (Table 2).
 
+**Table 2.**
+ Number of up- and down-regulated genes per tissue shown as tissue-specific up-regulation and down-regulation profiles at both 10 °C and 34 °C exposures.The percentage of tissue-specific changes versus the total number of differentially expressed genes (as in Figure 3) is displayed in parenthesis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Tissue</th>
+      <th colspan="2">Tissue-specific upregulation profiles</th>
+      <th colspan="2">Tissue-specific downregulation profiles</th>
+    </tr>
+    <tr>
+      <th colspan="2"># of genes (% of tissue-specific)</th>
+      <th colspan="2"># of genes (% of tissue-specific)</th>
+    </tr>
+    <tr>
+      <th>10 °C exposure</th>
+      <th>34 °C exposure</th>
+      <th>10 °C exposure</th>
+      <th>34 °C exposure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ingSAT</td>
+      <td>883 (67%)</td>
+      <td>1621 (65%)</td>
+      <td>995 (64%)</td>
+      <td>911 (64%)</td>
+    </tr>
+    <tr>
+      <td>pgVAT</td>
+      <td>719 (75%)</td>
+      <td>139 (27%)</td>
+      <td>570 (58%)</td>
+      <td>144 (41%)</td>
+    </tr>
+    <tr>
+      <td>iBAT</td>
+      <td>376 (49%)</td>
+      <td>269 (74%)</td>
+      <td>300 (74%)</td>
+      <td>526 (54%)</td>
+    </tr>
+    <tr>
+      <td>Quadriceps</td>
+      <td>292 (57%)</td>
+      <td>32 (56%)</td>
+      <td>258 (43%)</td>
+      <td>75 (40%)</td>
+    </tr>
+    <tr>
+      <td>Ileum</td>
+      <td>155 (59%)</td>
+      <td>929 (57%)</td>
+      <td>218 (65%)</td>
+      <td>566 (88%)</td>
+    </tr>
+    <tr>
+      <td>Spleen</td>
+      <td>91 (71%)</td>
+      <td>-</td>
+      <td>212 (56%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>77 (70%)</td>
+      <td>142 (58%)</td>
+      <td>56 (57%)</td>
+      <td>154 (73%)</td>
+    </tr>
+    <tr>
+      <td>Bone marrow</td>
+      <td>51 (65%)</td>
+      <td>-</td>
+      <td>47 (64%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Hypothalamus</td>
+      <td>50 (66%)</td>
+      <td>-</td>
+      <td>27 (63%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Brain</td>
+      <td>43 (57%)</td>
+      <td>6 (67%)</td>
+      <td>25 (68%)</td>
+      <td>17 (68%)</td>
+    </tr>
+    <tr>
+      <td>Spinal cord</td>
+      <td>27 (52%)</td>
+      <td>-</td>
+      <td>22 (27%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>2764 (79%)</td>
+      <td>3132 (59%)</td>
+      <td>2730 (76%)</td>
+      <td>2376 (62%)</td>
+    </tr>
+  </tbody>
+</table>
+
 At the 10 °C exposure, altogether, 2764 genes were upregulated in only one tissue (79% of the total upregulated genes) and were defined as ‘tissue-specific up-regulation profiles’, while 2,730 genes were downregulated in a single tissue (76% of the total downregulated genes) and were identified as ‘tissue-specific down-regulation profiles’ (Table 2, Supplementary file 4). We observed widespread tissue-specific cold response in the adipose tissues where ingSAT ranked highest with 883 up- and 995 and downregulated genes. We further compared the tissue-specific differentially expressed genes with the total number of differentially expressed genes for each tissue, and indicated it as a ratio (Supplementary file 2). The highest percentage of tissue specificity in terms of differentially expressed genes was seen in pgVAT with 74%, iBAT with 74%, and spleen with 71% tissue-specific upregulated genes. Considering the total number of differentially expressed genes (sum of up and downregulated genes), ingSAT, pgVAT and spleen showed the highest specificity with an average of 65 tissue-specific gene expression profiles (Supplementary file 4). Collectively, there was a comparable degree of tissue-specificity in upregulated versus downregulated profiles (79% compared to 76%). Similar to the GO terms results, in the 34 °C exposure experiment we observed a lower degree of tissue-specificity than in cold, with 59% of the upregulated, and 62% of downregulated genes in a tissue-specific manner (Table 2). Across temperatures, Ileum scored the highest with 88% tissue-specific downregulated gene expression profile (at 34 °C), followed by iBAT with 74% (at 10 °C), and liver with 73% of tissue-specific downregulated genes (at 34 °C). In contrast to the 10 °C exposure, 34 °C caused a slightly higher degree of tissue-specificity in downregulated (62%) versus upregulated genes (59%) (Supplementary file 2). Notably, the downregulated genes in 34 °C exposure showed extensive overlap with the upregulated genes at the 10 °C exposure (mostly exhibited in adipose tissues and quadriceps) (Figures 2 and 5, and Supplementary file 5).
 
 We next focused on the genes with shared differential gene expression profiles within several tissues both at 10 °C and 34 °C. Interestingly, there was no overall common gene regulation set between all tissues at neither 10 °C, nor at 34 °C exposure. In the 10 °C exposure, the maximum tissue-shared gene signature was Atp2a1, which was decreased in 7 tissues (all adipose tissues, liver, bone marrow, hypothalamus, and spinal cord). The next top tissue-shared gene signatures were 4 genes that were commonly downregulated (Nnat, Nr1d1) and upregulated (Hspa1b, Thrsp) in 6 tissues. The rest of the tissue-shared genes were shared within groups of five, four, three, and two tissues (Supplementary file 4). In the 34 °C exposure, Cyp26b1 was commonly upregulated in all tissues except brain, Lonrf3 was upregulated in 5 tissues (pgVAT, liver, iBAT, ingSAT, and quadriceps) and Zbtb16 was upregulated in pgVAT, ileum, iBAT, ingSAT, and liver. We further identified 8 genes which were commonly downregulated in 5 out of the 7 tissues, namely Mrap, Orm1, Pnpla3, Scd1, Slc36a2 were downregulated in pgVAT, ileum, iBAT, ingSAT, and quadriceps; Tlcd2 was downregulated in pgVAT, liver, iBAT, ingSAT, and quadriceps; and Pfkfb3 in pgVAT, ileum, iBAT, ingSAT, and liver (Supplementary file 4).
 
 The highest degree of tissue-shared upregulated genes was found within the adipose tissues, where 464 genes at 34 °C and 166 genes at 10 °C were upregulated in both ingSAT and iBAT. Next, 199 genes at 34 °C and 61 genes at 10 °C exposure were commonly upregulated in pgVAT and ingSAT, followed by 53 genes at 34 °C and 42 genes at 10 °C exposures being upregulated in both pgVAT and iBAT (Supplementary files 3 and 4). Likewise, ingSAT, iBAT, and pgVAT shared 69 genes at 34 °C and 32 genes at 10 °C that were commonly upregulated in the three tissues. Apart from the adipose tissues, the top-shared pairwise connections were related to the quadriceps, ileum, and liver. Similarly, the top-shared pairwise connections for downregulated genes were found in adipose tissues, where ingSAT and iBAT shared 263 downregulated genes at 34 °C, and 177 genes at 10 °C exposures. IngSAT and pgVAT had 117 shared downregulated genes at 34 °C and 71 genes at 10 °C exposure; followed by pgVAT and iBAT with 10 at 34 °C, and 33 at 10 °C exposure. Apart from the adipose tissues, quadriceps and ileum demonstrated highest pairwise connections.
 
-## Shared-tissue regulated GO terms involve tissue-specific and tissue-shared genes
+### Shared-tissue regulated GO terms involve tissue-specific and tissue-shared genes
 
 We next investigated whether the tissue-shared GO terms regulation is derived from the shared or the tissue-specific differentially expressed genes. We particularly focused on ingSAT, pgVAT, and iBAT, both at 10 °C and 34 °C. The Venn diagram of the first three most commonly up- and downregulated gene sets upon 10 °C exposure showed that they are largely derived by genes that are differentially expressed in a tissue-specific manner (Figure 7A and B, Supplementary file 9). This tissue specificity is more pronounced in the downregulated gene sets (Figure 7B). For example, in fatty acid biosynthesis process, only 4 genes are shared between the three tissues and the upregulation of the pathway mostly emerges from the tissue-specific genes in ingSAT (13 genes), pgVAT (9 genes) and iBAT (7 genes). This suggests that although different genes are upregulated in the three tissues, they might have a similar function that leads to a common functional response. Interestingly, the degree of tissue-specific gene upregulation is on average higher for pgVAT followed by iBAT and ingSAT. For the 34 °C exposure, we observed a similar trend of less tissue-shared genes and more tissue-specific genes which derived the regulation of tissue-shared pathways. Similar to the previous section, we observed a slightly lower tissue-specificity in response to 34 °C exposure compared to 10 °C exposure. This was more pronounced in the downregulated pathways at 34 °C exposure (lipid metabolism pathways).
 
@@ -116,7 +332,7 @@ We next investigated whether the tissue-shared GO terms regulation is derived fr
 
 **Figure 7.:** (A–D) Venn diagrams (left) showing shared adipose tissue GO gene set enrichment, and dot plot of genes involved in these gene sets (right) that are significantly (p<0.05) up- (A–C), or down-regulated (B–D) across adipose tissues from mice as in Figure 2A. Not all the genes are labeled on the dot plots. Values are Log2FC and p-values are shown in .
 
-## Tissue-specific response to cold is not orchestrated by the gene expression patterns
+### Tissue-specific response to cold is not orchestrated by the gene expression patterns
 
 As the transcriptional response to 10 °C exposure caused higher tissue-specificity, we further scrutinized whether the strong tissue specificity in response to cold exposure is directed by tissue specificity in the overall gene expression patterns. We first accounted for the genes with minimum 5 raw counts as a filtering threshold, and observed that 19,881 genes are expressed at least in one tissue, wherein 10,853 genes (54% of expressed genes) were expressed in all 11 tissues (Figure 8A, Supplementary file 10). From these, 3507 genes (32%) were differentially expressed in at least one tissue (Figure 8B). Looking at these differentially expressed genes, irrespective of the consistency in the direction of change, we found that 2435 genes (over 70%) were altered in only one tissue, 755 (over 21%) in two, and 220 (over 6%) commonly differentially expressed in three tissues. The remaining 2.1% of differentially expressed genes were commonly changed in four or more tissues (Figure 8C). These data demonstrate high tissue-specificity in the transcriptional response to cold also among the commonly expressed genes. Moreover, 1508 genes (8% of expressed genes) were expressed in only one tissue (Figure 8A). Spinal cord with 375 genes showed the most tissue-specificity in term of expressed genes, followed by pgVAT (328 genes), bone marrow (160 genes), ileum (139 genes), spleen (137 genes), liver (93 genes), hypothalamus (78 genes), brain (49 genes), iBAT (7 genes), and ingSAT (9 genes). Interestingly, only 66 genes of the 1623 tissue-specific expressed genes were significantly differentially expressed upon cold exposure (Figure 8B). Together, this indicates that the high degree of tissue-specificity in the transcriptional responses during cold exposure is not orchestrated by the global expression pattern exhibited by the various organs.
 
@@ -132,7 +348,7 @@ To further challenge these conclusions, and given the importance of the thermoge
 
 Out of the 292 fatty acid metabolism biomarkers, 278 genes are expressed (minimum threshold of 5 raw counts) in at least one tissue. Similarly, most of the expressed genes (75 %) were expressed in the 11 tissues and we did not observe a strong tissue specificity on the level of gene expression in fatty acid biomarkers (Figure 9B). 139 genes out of the 278 expressed genes were differentially expressed in at least one tissue. We identified 72 tissue-specific gene expression changes, where within ingSAT we found 32 tissue-specific differentially expressed genes ranking it on the top, followed by iBAT with 15 genes and pgVAT with 14 genes. The spinal cord exhibits no tissue-specific differential expression of fatty acid metabolism biomarkers (Figure 9D, Supplementary file 11). The strong tissue-specificity pattern of differentially expressed genes (Supplementary file 2) was further observed in the thermogenic (Figure 9C) and the lipid metabolism (Figure 9D) biomarkers. Collectively, these results suggest that tissue specificity is dictated in the response to cold (gene regulation level) and not on the gene expression level.
 
-## Tissue-specificity of genes from the same family and with similar functions
+### Tissue-specificity of genes from the same family and with similar functions
 
 By grouping the 19,880 expressed genes of our mouse gene catalog solely based on their gene nomenclature and without considering their specific function, we identified 2827 belonging to a ‘group of genes’ (Supplementary file 12). Members of these groups range from 1084 genes in the biggest group - Olfr (Olfactory receptors), to 2 genes in the smallest group (1273 of these groups have only two members). We found several thermogenic and fatty acid metabolism biomarkers such as Abhd, Abhd, Acsm, Pex, Ppar, Hacd, Elovl, Apoa, etc. as protein families, where we performed comparative analysis of their gene expression and regulation across the 11 tissues (Supplementary file 12). Similar as before, we observed tissue-specificity on the response to cold, but not on the gene expression patterns. As an example, we describe the elongation of very long chain fatty acids (ELOVL) protein family, which plays an important role in fatty acid metabolism in adipose tissues. The ELOVL family includes seven genes named Elovl1 to Elovl7, and catalyzes the first and rate-limiting reaction of the very long-chain fatty acid elongation cycle in the fatty acid biosynthesis pathway (Jump, 2009). The seven members displayed diverse gene expression levels (Figure 9A) and variable rates of differential expression upon cold exposure across the 11 tissues (Figure 10B). Elovl1 and Elovl7 are present at all 10 tissues with particularly high expression in Ileum, but without any significant change upon cold exposure. The liver expresses all genes except Elovl7 and Elovl4 at a very high level, however we found no significant change in the expression levels at cold. The highest average expression value is Elovl6 in iBAT and the highest regulation was seen for Elovl3 in ingSAT. Elovl5 and Elovl6 expression levels were relatively high across all tissues, and showed a pronounced upregulation by cold in the three adipose tissues (Figure 10B). Moreover, we observed a pgVAT-specific increase in Elovl2 expression upon cold. Elovl3 on the other hand was upregulated in iBAT and ingSAT, whereas Elovl4 expression was enhanced in iBAT and pgVAT from the cold-exposed mice compared to their RT-kept controls and the magnitude of upregulation was much higher in pgVAT (Figure 10B). Consistent with our previous analysis, although different members of Elovl gene family were expressed in most of the tissues, their response to cold was tissue specific.
 
@@ -156,22 +372,22 @@ Our work provides a full spectrum of thermal adaptation-induced transcriptional 
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Male 8 weeks old C57BL/6 J mice were obtained from Janvier, France (cold exposed mice and controls) or Charles River, France (warm exposed and control mice). Mice were housed in a specific pathogen-free (SPF) facility in 12 hr day/night cycles with free access to irradiated standard chow diet and water from autoclaved bottles. All mice were housed 2 per cage with a normal use of bedding material, supplemented with aspen wood bars (blocks), but in the absence of nesting material to ensure controlled temperature conditions. Cold exposure was performed in a light- and humidity-controlled climatic chamber (TSE, Germany) under SPF conditions, at 10 °C for 2 weeks with an initial acclimatization period of 5 days at 18 °C and 5 days at 14 °C. Male, 8-week-old C57BL/6J mice were exposed to 34 °C warm (WE) or room temperature (RT) for 4 weeks. All animal experiments were performed at the Universities of Geneva with authorization by the responsible Geneva cantonal, and Swiss federal authorities in accordance with the Swiss law for animal protection (GE44/20, GE134/18, and GE174/19).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 Our study design is summarized in Supplementary file 13. Transcriptome dataset were generated from 11 different tissues interscapular brown adipose tissue (iBAT), bone marrow, brain, hypothalamus, ileum, liver, quadriceps, inguinal subcutaneous adipose tissue (ingSAT), spinal cord, spleen, and perigonadal visceral adipose tissue (pgVAT) of C57BL/6J mice subjected to cold, or kept at RT. For 10 °C samples, two mice were pooled with a total of six mice per group, except for the spinal cord and bone marrow, where individual mouse tissues of 5 and 6 mice were analyzed, respectively. For 34 °C exposure and the respective room temperature controls, 2 mice were pooled for each organ. The summary of mice and tissue sampling is provided in Supplementary file 13.
 
-## RNA extraction for RNA sequencing
+### RNA extraction for RNA sequencing
 
 After collection, all tissues except bone marrow were snap frozen in liquid nitrogen and stored at –80 °C until used. Frozen tissues were mechanically homogenized with 1 stainless steel bead (5 mm) in 1 ml Trizol (Thermo Fisher Scientific) by shaking for 50 s at 30 Hz (TissueLyser, Qiagen). 200 μL chloroform was added to homogenize Trizol samples, followed by 15 s shaking and centrifugation (15 min, 12000 RCF, 4 °C). The chloroform phase was collected, shaken for 15 s with 500 μL isopropanol and centrifuged (50 min, 12,000 RCF, 4 °C). The pellet was washed with 70% ethanol twice (10 min, 8000 RCF, 4 °C) and dissolved in 50 μL PCR-grade water. Bone marrows were flushed immediately after collection from mouse, cells were spun and loaded onto shredder columns (Qiagen). Shredded bone marrow cells were frozen (–80 °C) in RLT buffer (1% beta-mercaptoethanol) until RNA extraction using RNAeasy mini kit (Qiagen). RNA integrity number (RIN) was determined in all samples (Bioanalyzer 2100, Agilent) before sequencing.
 
-## RNAseq sequencing
+### RNAseq sequencing
 
 The mRNA sequencing was done at the iGE3 Genomics Platform at the CMU of the University of Geneva for bone marrow, spinal cord and quadriceps of the 10°C-exposed mice and their RT controls, as well as all the samples from the 34°C-kept mice and their RT controls, while for all other tissues at the Microarray and Deep-Sequencing Core Facility of the University Medical Center Göttingen. Libraries for sequencing of bone marrow, spinal cord and samples from the 34 °C exposure experiments were prepared with the TruSeq stranded mRNA kit and sequenced with read length SR50 (Illumina HiSeq 4000). For all other tissues RNA-seq libraries were prepared using the NEBNext Ultra RNA Library Prep Kit and were pooled and sequenced on an HiSeq 2000 sequencer (Illumina). The sequencing quality control was done with FastQC v.0.11.5 (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). The reads were mapped with STAR aligner v.2.6.0c to the UCSC Mus musculus mm10 reference. The transcriptome metrics were evaluated with the Picard tools v.1.141 (http://picard.sourceforge.net/). The table of counts with the number of reads mapping to each gene feature of the Mus musculus mm10 reference was prepared with HTSeq v0.9.1 (htseq-count, http://www-huber.embl.de/users/anders/HTSeq/).
 
-## Data analysis
+### Data analysis
 
 Raw counts were processed and analyzed by R/Bioconductor package EdgeR v. 3.4.2, for normalization and differential expression analysis. The counts were normalized according to the library size and filtered. Only genes having log count per million reads (cpm) >0 were kept for the further analysis. After normalization of the counts, transcript abundances were compared in pairwise conditions in a modified Fischer exact test (as implemented in edgeR). Two-tailed unpaired Student’s t-test was used for pair-wise comparisons, and p<0.05 was considered statistically significant, unless otherwise specified. Genes were considered significant if they passed a fold change (FC) cutoff of |FC|>1.5 and a p-value ≤0.05, and were further subjected to gene ontology analysis, using R/Bioconductor package topGO (https://bioconductor.org/packages/release/bioc/vignettes/topGO/inst/doc/topGO.pdf), together with Rgraphviz, Pearson correlation similarity analysis, and heatmap visualization. Principal Components Analysis (PCA) and volcano and dot plots were generated in R, and the scripts used for the analysis and generating figures are available at https://github.com/Nhadadi/Mouse_AllTissue_Transcriptomics, (copy archived at swh:1:rev:ee7742cb4bf5e49ee9d90414c36a06b714a42d69; Hadadi, 2021). All generated results are available at https://metlabomics.unige.ch/Search. This online application provides a user-friendly interface to access the data sources, search and filter the results based on several criteria such as significance and fold change, gender, tissue and treatment.

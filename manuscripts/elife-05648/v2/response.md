@@ -66,11 +66,9 @@ Following the reviewers’ suggestion (point [3]), however, we have restructured
 
 Panel B should be quantitated and the three conditions should be run on the same gel, and statistically evaluated. The quantitative analysis could be restricted to the late time point(s).
 
-Following the reviewers’ suggestion, we have repeated the experiment, analyzed these conditions (untreated and treated for 24h with either LPS or LPS+αLTβR or αLTβR) together in the same gel, and quantitated the relevant band intensities. A plot revealing data quantitation and statistical analyses has now been incorporated in the revised manuscript in Figure 4C, while one of the representative immunoblot with all three conditions in the same gel has been provided for the reviewers’ eyes (Author response image 1).10.7554/eLife.05648.030Author response image 1.Comparing p100 and p52 levels in the same gel using immunoblot analysis. The data, representative of three biological replicates, consistently reflects augmented accumulation of p52 protein in the costimulation regime as compared to cell treatment with LPS or αLTβR alone for 24h.DOI: http://dx.doi.org/10.7554/eLife.05648.030
+Following the reviewers’ suggestion, we have repeated the experiment, analyzed these conditions (untreated and treated for 24h with either LPS or LPS+αLTβR or αLTβR) together in the same gel, and quantitated the relevant band intensities. A plot revealing data quantitation and statistical analyses has now been incorporated in the revised manuscript in Figure 4C, while one of the representative immunoblot with all three conditions in the same gel has been provided for the reviewers’ eyes (Author response image 1).10.7554/eLife.05648.030Author response image 1.Comparing p100 and p52 levels in the same gel using immunoblot analysis. The data, representative of three biological replicates, consistently reflects augmented accumulation of p52 protein in the costimulation regime as compared to cell treatment with LPS or αLTβR alone for 24h.
 
 Comparing p100 and p52 levels in the same gel using immunoblot analysis. The data, representative of three biological replicates, consistently reflects augmented accumulation of p52 protein in the costimulation regime as compared to cell treatment with LPS or αLTβR alone for 24h.
-
-DOI: http://dx.doi.org/10.7554/eLife.05648.030
 
 Panels C and D are important, and a quantitation of p50 vs p52 association with RelA should be provided.
 
@@ -82,11 +80,9 @@ In the revised draft, we have included a p50 immunoblot in Figure 4C. Further su
 
 In C, using both p50 and p52 antibodies should result in ablation of the shift but this control is missing.
 
-The reviewers have asked for an important control. Indeed, on a few occasions, we had used both the antibodies that led to complete ablation of DNA binding activities. In the revised draft, we have included a representative panel in Figure 4E to demonstrate complete shift-ablation upon using both the antibodies. The corresponding full EMSA gel panel has been provided for the reviewers’ eyes (Author response image 2).10.7554/eLife.05648.031Author response image 2.Using both p50 and p52 antibodies along with RelB antibody, complete ablation of RelA NF-κB DNA binding activity was achieved in our supershift analyses. The last three lane was used as a panel within Figure 4E.DOI: http://dx.doi.org/10.7554/eLife.05648.031
+The reviewers have asked for an important control. Indeed, on a few occasions, we had used both the antibodies that led to complete ablation of DNA binding activities. In the revised draft, we have included a representative panel in Figure 4E to demonstrate complete shift-ablation upon using both the antibodies. The corresponding full EMSA gel panel has been provided for the reviewers’ eyes (Author response image 2).10.7554/eLife.05648.031Author response image 2.Using both p50 and p52 antibodies along with RelB antibody, complete ablation of RelA NF-κB DNA binding activity was achieved in our supershift analyses. The last three lane was used as a panel within Figure 4E.
 
 Using both p50 and p52 antibodies along with RelB antibody, complete ablation of RelA NF-κB DNA binding activity was achieved in our supershift analyses. The last three lane was used as a panel within Figure 4E.
-
-DOI: http://dx.doi.org/10.7554/eLife.05648.031
 
 Basically, we would expect an experimental counterpart for the computational panel F. Panel G is quantitated but a statistical confidence evaluation should be provided.
 

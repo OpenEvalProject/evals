@@ -34,37 +34,77 @@ In this study, we examined whether metabolic manipulation of acetyl-CoA level co
 
 ## Results
 
-## Administration of 8C at reperfusion elevated acetyl-CoA and improved short-term and long-term cardiac function after I/R
+### Administration of 8C at reperfusion elevated acetyl-CoA and improved short-term and long-term cardiac function after I/R
 
 Myocardial infarction (MI) induces dramatic metabolic and epigenetic changes including decrease of acetyl-CoA synthesis and histone acetylation Bodi et al., 2012; Granger et al., 2008. We reasoned that swift synthesis of acetyl-CoA could rescue heart function by restoring histone acetylation. Based on the major metabolic pathways for acetyl-CoA synthesis (Figure 1A; Pietrocola et al., 2015), we examined the effect of sodium acetate (2C, 500 mg/kg), sodium pyruvate (3C, 500 mg/kg), sodium citrate (6C, 500 mg/kg), sodium octanoate (8C, 160 mg/kg), and sodium nonanoate (9C, 200 mg/kg) on heart function after I/R. Rats were intraperitoneally (i.p.) injected with these metabolites as well as saline for three days and another dose before I/R surgery (Figure 1B). At 24 hr after I/R, the infarct size was measured by Evans blue and tripheyltetrazolium chloride (TTC) staining at 24 hr after I/R. Evans blue staining indicated area at risk (AAR) and TTC staining indicated the infarct size (IS). The ratio of AAR/LV was similar in all groups (Figure 1—figure supplement 1A-B). Interestingly, these metabolites displayed distinct effects on reducing myocardial infarct size. Among the five metabolites examined, 2C, 3C, and 8C significantly reduced the IS/AAR ratio, whereas 6C and 9C treatment did not reduce IS/AAR ratio compared to saline-treated groups (Figure 1C and Figure 1—figure supplement 1A-B). These results indicated a potential beneficial effect of replenishment of acetyl-CoA with specific metabolites for heart repair after I/R.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig1-v2.jpg)
+
+**Figure 1.:** (A) Metabolic pathways of acetyl-CoA synthesis. (B) Schematic diagram of different carbon sources administration prior to I/R surgery. (C) Quantification of IS/AAR ratio in Figure 1—figure supplement 1A by Image J. (D) Schematic diagram of 8C administration post ischemic injury. (E) Representative figures of heart sections at 24 hr after I/R with or without 8C administration at reperfusion after 45 min ischemia. Scale bar: 2.5 mm (F) Quantification of IS/AAR ratio in (E). LV EF (G) and FS (H) at 24 hr after I/R. (I) Quantification of Acetyl-CoA levels in sham and I/R rat hearts at indicated conditions. (J–K) Western blot and quantification of H3K9ac and H3 in rat hearts 24 hr after I/R. (L) Trichrome masson staining of heart section after 4 weeks of I/R. Scale bar: 2.5 mm. (M) Quantification of infarct size in (I). LV EF (N) and FS (O) at 4 weeks after I/R. Error bars represent S.D. n = 5, #p < 0.05, ##p < 0.01 vs Sham group. * p < 0.05, **p < 0.01, vs I/R group. Data were analyzed by one-way ANOVA (C,G,H,K,N and O) or two-way ANOVA (I), followed by post-hoc Tukey test, data in F and M were analyzed by two-tailed student test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative figures of heart sections at 24 hr after I/R in presence of different metabolites. Scale bar: 2.5 mm. (B) Quantification of AAR/LV in Figure 1A by Image J. (C) Quantification of AAR/LV ratio after I/R with or without 8C administration at 45 min after ligation. (D–E) Representative echo image for measurement of heart function in Figure 1G, H, N and O. (F) Quantification of Succinate levels in rat hearts after I/R with saline, 8C or 9C treatment. n = 3, *p < 0.05, **p < 0.01 vs I/R + saline group; ##p < 0.01 vs I/R + 8C group. Data were analyzed by one-way ANOVA (B and E), followed by post-hoc Tukey test, data in C was analyzed by two-tailed student test.
+
 As 8C administration resulted in the most dramatic protection among all the metabolites tested after I/R (Figure 1C), we focused on investigating the role of 8C on heart protection in a more clinically relevant setting. 8C (160 mg/kg) or saline were i.p. injected only once at the time of reperfusion, which was 45 min after LAD ligation. The infarct size was then measured by Evans blue/TTC staining at 24 hr after I/R (Figure 1D). Evans blue/TTC staining showed that 24 hr after reperfusion, 8C administration reduced the IS/AAR ratio from 72% to 52% compared to saline control after I/R (Figure 1E–F and Figure 1—figure supplement 1C). Moreover, 8C also significantly improved the left ventricle function evaluated by echocardiography 24 hr after I/R. Compared to saline treated I/R rats, 8C administration led to increase of EF and FS from 47% to 58% and 24% to 31%, respectively (Figure 1G–H and Figure 1—figure supplement 1D), while the normal rat heart has EF at 72% and FS at 43%. These results indicated that 8C significantly improved cardiac function by approximately 40%. Importantly, we found that there was a significant reduction of acetyl-CoA concentration in hearts after I/R, while 8C administration increased acetyl-CoA level in hearts after I/R (Figure 1I). Moreover, 8C administration elevated H3K9ac level in hearts after I/R (Figure 1J–K). Furthermore, to investigate whether a single dose of 8C administration is beneficial for long-term cardiac function after I/R, we examined the infarct size and heart function at 4 weeks after I/R. Trichrome Masson staining showed that the infarct size was notably reduced after 8C treatment (Figure 1L, M). The left ventricle function was also improved after 8C treatment as evidenced by the increase of EF and FS (Figure 1N, O and Figure 1—figure supplement 1E). Together with the fact that 8C can quickly enter into cells and contribute to around 50% of acetyl-CoA in heart at one hour after administration Walton et al., 2003, our results indicated that 8C administration at the time of reperfusion elevated acetyl-CoA production and histone acetylation level and significantly improved both short-term and long-term cardiac function after I/R.
 
-## 8C attenuated cardiomyocyte apoptosis through alleviating oxidative stress
+### 8C attenuated cardiomyocyte apoptosis through alleviating oxidative stress
 
 Apoptosis is one of the major reasons for cardiac damage after I/R injury MacLellan and Schneider, 1997. To detect the impact of 8C on cardiomyocyte apoptosis, TUNEL staining was performed at the border zone of infarct hearts. 8C treatment dramatically reduced TUNEL-positive cardiomyocytes in border zone (Figure 2A, B). Consistent with the TUNEL assay, the levels of myocardial death marker cTnI, serum CK-MB as well as total CK and LDH were also reduced in I/R rats after 8C administration (Figure 2C, D and Figure 2—figure supplement 1A-B). Moreover, 8C led to reduction in pro-apoptotic regulator Bax and upregulation of anti-apoptotic gene Bcl2 at 24 hr after I/R injury (Figure 2E, F). To study the mechanism of the beneficial effect of 8C administration after I/R, we examined the differential gene expression in the cells at the border zone 24 hr after I/R by RNA-seq (Supplementary file 1). Gene set enrichment analysis (GSEA) Subramanian et al., 2005 showed that genes involved in apoptotic signaling pathways were enriched in saline-treated compared to 8C-treated rats after I/R (Figure 2G). Gene ontology (GO) analysis using differential expressed genes in 8C and saline-treated rats showed that genes related to cellular response to tumor necrosis factor were highly enriched in saline-treated I/R groups, whereas genes related to cardiomyocyte functions were highly expressed in 8C-treated I/R hearts (Figure 2—figure supplement 1C-D). These results suggested that 8C administration reduced the cardiomyocyte death after I/R. Specifically, I/R reduced the expression of anti-oxidative stress enzymes such as SOD1, SOD2, SOD3, CAT, Txnrd2, and Txnrd3, while 8C treatment upregulated the expression of these genes (Figure 2—figure supplement 1E). Since I/R-induced oxidative stress triggers CM apoptosis after reperfusion Hausenloy and Yellon, 2013, it is likely that 8C reduces cell death by activating antioxidant process after I/R injury. To address this, we measured the level of cardiac reactive oxygen species (ROS) after I/R by staining of dihydroethidium (DHE), a chemical that could be oxidized by ROS Griendling et al., 2016. The intensity of DHE signal was significantly lower in the presence of 8C after I/R (Figure 2H, I), indicating that 8C reduced oxidative stress after I/R. Moreover, 8C rescued the myocardial SOD activity after I/R (Figure 2—figure supplement 1F). Altogether, these results showed that one major mechanism through which 8C improved cardiac function after I/R was reduction of the oxidative stress and subsequent cell apoptosis.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative of TUNEL (green) and cTnT (red) double staining at boarder zone at 24 hr post I/R injury. Scale bar: 100 µm (B) Quantification of cardiomyocytes cell death of 12 sections (C–D) Serum cTni and CK-MB level at 24 hr post I/R. (E–F) Western blot and quantification of Bax and Bcl2 at 24 hr after I/R. (G) GSEA analysis of Kegg apoptotic pathways after I/R with and without 8C treatment. (H) ROS levels were measured by DHE staining. Scale bar: 200 µm. (I) Relative mean DHE fluorescence intensity measured by Image J. Error bars represent S.D. n = 3. *p < 0.05, **p < 0.01 vs Sham; #p < 0.05, ##p < 0.01 vs I/R group. Data were analyzed by one-way ANOVA, followed by post-hoc Tukey test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Serum CK and LDH level at 24 hr post I/R. (C) Volcano plot of differential expressed genes in 8C-treated and saline-treated hearts after I/R. Differential expressed genes with abs(Log2Foldchange) > 1, and padj < 0.05 were labelled in red. (D) Top gene set enrichment of differential expressed genes using GO biological process gene sets. (E) Heatmap of antioxidant gene expression. (F) Quantification of myocardial SOD activity after I/R with or without I/R. n = 3, *p < 0.05 vs Sham group; #p < 0.05 vs I/R group. Data were analyzed by one-way ANOVA (B and D), followed by post-hoc Tukey test.
 
 To further investigate the effect of 8C on oxidative stress and apoptosis in cardiomyocytes, neonatal rat ventricle myocytes (NRVMs) were subjected to simulated ischemia reperfusion (sI/R) with or without 8C. 8C or PBS was administered to NRVM culture medium for 12 hr. Then the NRVMs were subjected to 2 hr of simulated ischemia followed by 4 hr of simulated reperfusion. The percentage of apoptotic cells after sI/R was measured by labeling with Annexin V and Propidium iodide (PI). 8C significantly reduced the percentage of apoptotic cells, as evidenced by the lower percentage of Annexin V and PI double positive cells (Figure 3A, B). In addition, combination of CCK8 and LDH release assays were used to measure the total cell death Fukami et al., 2016. 8C administration reduced cell death after sI/R as showed by increased cell viability and decreased LDH release into to culture medium (Figure 3C, D). Moreover, the expression of cleaved PARP, which is a hallmark of apoptosis, was reduced with 8C administration (Figure 3E). Altogether, these results demonstrated that 8C reduced the apoptosis of NRVMs exposed to sI/R. To assess whether 8C reduced the oxidative stress in cardiomyocytes after sI/R, the accumulation of ROS level was measured by the intensity of DHE staining. The ROS level was significantly decreased in NRVMs with 8C treatment after sI/R (Figure 3F-H), indicating a direct effect of 8C in alleviating oxidative stress after sI/R. Thus, our collective in vivo and in vitro results revealed that 8C reduced cardiomyocyte apoptosis through alleviating oxidative stress after sI/R.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig3-v2.jpg)
 
-**Figure 3.:** (A) FACS analysis of Annexin V and PI staining in NRVMs exposed to sI/R with and without 8C treatment. (B) Quantification of percentage of Annexin V + and PI+ cells. Cell viability and cell death measurement in NRVMs with sI/R using CCK8 detection kit (C) and LDH assay kit (D). (E) Western blot of cleaved PARP in NRVMs after sI/R treatment. (F) NRVM cellular ROS levels are indicated by DHE staining after sI/R treatment. Scale bar: 200 µm (G) FACS analysis of NRVM DHE staining after sI/R. (H) Relative mean fluorescence intensity of DHE staining measured by Flowjo. n = 3, **p < 0.01, ***p < 0.001, vs Normoxia + PBS; ## p < 0.01, ###p < 0.001 vs sI/R + PBS. Data were analyzed by two-way ANOVA, followed by post-hoc Tukey test.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.
+**Figure 3.:** (A) FACS analysis of Annexin V and PI staining in NRVMs exposed to sI/R with and without 8C treatment. (B) Quantification of percentage of Annexin V + and PI+ cells. Cell viability and cell death measurement in NRVMs with sI/R using CCK8 detection kit (C) and LDH assay kit (D). (E) Western blot of cleaved PARP in NRVMs after sI/R treatment. (F) NRVM cellular ROS levels are indicated by DHE staining after sI/R treatment. Scale bar: 200 µm (G) FACS analysis of NRVM DHE staining after sI/R. (H) Relative mean fluorescence intensity of DHE staining measured by Flowjo. n = 3, **p < 0.01, ***p < 0.001, vs Normoxia + PBS; ## p < 0.01, ###p < 0.001 vs sI/R + PBS. Data were analyzed by two-way ANOVA, followed by post-hoc Tukey test.
 
-## Increasing acetyl-CoA synthesis by 8C administration stimulated histone acetylation and promoted antioxidative activity after I/R injury
+### Increasing acetyl-CoA synthesis by 8C administration stimulated histone acetylation and promoted antioxidative activity after I/R injury
 
 8C-generated acetyl-CoA contributes to histone acetylation in several cell types McDonnell et al., 2016, and histone acetylation plays an important role in regulating cellular response to oxidative stress Shimazu et al., 2013. To examine whether 8C protected cardiomyocytes against I/R injury through stimulating histone acetylation, we first measured the acetyl-CoA level in NRVMs in vitro under sI/R. Similar to in vivo I/R injury, sI/R reduced acetyl-CoA level in NRVMs and 8C significantly increased the production of acetyl-CoA in NRVMs (Figure 4A). To determine the effect of acetyl-CoA replenishment on histone acetylation, we measured H3K9ac, H3K14ac, H3K27ac, and total H3 acetylation in NRVMs after sI/R. We found that sI/R led to a remarkable decrease of H3K9ac, H3K14ac, H3K27ac, and acH3, and that 8C increased histone acetylation in normal NRVMs and NRVMs under sI/R (Figure 4B–E). To further investigate whether the effects of different metabolites on I/R injury are related to histone acetylation, we examined the H3K9ac and acH3 levels in cardiomyocytes under sI/R in the presence of 2C, 3C, 6C, 8C, and 9C. We found that 2C, 3C, and 8C could lead to upregulation of acH3 and H3K9ac level which was consistent with our in vivo data that 2C, 3C and 8C but not 6C and 9C protected heart after I/R (Figure 4—figure supplement 1B). These results suggest that 8C, as well as 2C and 3C, likely reduced I/R injury through stimulating histone acetylation by acetyl-CoA production.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig4-v2.jpg)
+
+**Figure 4.:** (A) Quantification of Acetyl-CoA concentrations in NRVMs subjected to sI/R. (B–E) 8 C rescues sI/R reduced H3K9ac, H3K27ac, H3K14ac and total acH3 levels. NRVMs were treated with or without 0.5 mM 8 C under sI/R. The histone acetylation levels were determined by western blot. Total H3 in the same blot was used as loading control. (F) Representative MS spectra from NRVMs treated with [U-13C] sodium octanoate indicating isotope distribution on acetyl Histone H3. The mass shifts indicate the incorporation of heavy carbon to the acetyl histone lysines. (G) Enrichment of H3K9ac over H3 at promoters of HO1, NQO1, and SOD2 in NRVMs after sI/R. (H) mRNA expression of HO1, NQO1, and SOD2 in NRVMs after sI/R. *p < 0.05, **p < 0.01, ***p < 0.001, vs Normoxia + PBS; #p < 0.05, ##p < 0.01, ###p < 0.001 vs sI/R + PBS. Data were analyzed by two-way ANOVA, followed by post-hoc Tukey test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A-B) Serum CK and LDH level at 24 hr post I/R. (C) Volcano plot of differential expressed genes in 8C-treated and saline-treated hearts after I/R. Differential expressed genes with abs(Log2Foldchange) >1, and padj < 0.05 were labeled in red. (D) Top gene set enrichment of differential expressed genes using GO biological process gene sets. (E) Heatmap of antioxidant gene expression. (F) Quantification of myocardial SOD activity after I/R with orwithout I/R. n=3, *p < 0.05 vs Sham group; # p < 0.05 vs I/R group. Data were analyzed by oneway ANOVA (B and D), followed by post-hoc Tukey test.
 
 To further examine if 8 C derived acetyl-CoA directly contribute to histone acetylation, we applied C13 tracing experiments. Myocytes were cultured with [U-13C] sodium octanoate for 12 hr, and the histone proteins were purified for post-translational modification analysis using LC-MS/MS. A significant amount of acetyl histones showed mass shifts in MS spectra, indicating that 8 C derived acetyl-CoA contributed to histone acetylation (Figure 4F). To determine if 8 C could directly contribute to histone acetylation in animal heart, we injected mice with 160 mg/kg [U-13C] sodium octanoate before I/R surgery and isolated heart tissue 30 min after reperfusion for acetylation analysis. Indeed, C13 labeled acetyl-histones were detected in in vivo heart after MI (Figure 4—figure supplement 1D).
 
 Acetyl-CoA is the substrate for histone acetyltransferases (HATs) to generate histone acetylation by transferring the acetyl-group from acetyl-CoA to histone lysine residues Henry et al., 2015. Specifically, HATs with low affinity to acetyl-CoA are more sensitive to acetyl-CoA abundance. H3K9ac has been reported as the histone acetylation most sensitive to acetyl-CoA levels Henry et al., 2015. Consistent with this finding, we found that 8 C led to most significant changes in H3K9ac after sI/R. Thus, we reasoned that H3K9ac, which is enriched in promoters for gene activation, is one key epigenetic event for gene regulation after sI/R. To examine the potential epigenetic regulation of 8 C derived acetyl-CoA in antioxidative stress, we performed ChIP to measure H3K9ac at the promoters of antioxidant genes. 8 C elevated H3K9ac level at the promoters of NQO1, HO1, and SOD2 in both normoxia and sI/R conditions, with a more profound increase under sI/R (Figure 4G). 8 C upregulated both mRNA and protein expression of antioxidant genes including HO1, NQO1, and SOD2 after sI/R (Figure 4H and Figure 4—figure supplement 1F), indicating that the histone acetylation increase by 8 C promoted antioxidant response under stress. Collectively, our results suggested that 8C-produced acetyl-CoA contributed to epigenetic regulation of antioxidant genes in response to I/R injury.
 
-## MCAD was required for the conversion of 8C into acetyl-CoA and subsequent histone acetylation increase and heart protection
+### MCAD was required for the conversion of 8C into acetyl-CoA and subsequent histone acetylation increase and heart protection
 
 To ascertain whether 8 C produced acetyl-CoA contributed tothe rescue of histone acetylation after sI/R, we knocked down MCAD (Figure 5—figure supplement 1A), a key enzyme in the generation of acetyl-CoA from 8C Matsubara et al., 1986. Knockdown of MCAD disrupted the metabolism of 8 C, and therefore led to reduction of histone acetylation promoted by 8 C in NRVMs in both normoxia and sI/R condition (Figure 5A). Thus, these data indicated that metabolic production of acetyl-CoA from 8 C was required for the 8C-mediated histone acetylation regulation. To determine whether acetyl-CoA mediated histone acetylation was key to the 8 C heart protective effect after I/R, we examined the cardiomyocyte survival after MCAD knockdown with and without 8 C after sI/R. MCAD knockdown significantly blocked the protective effect of 8 C after sI/R, as evidenced by decreased cell viability and increased LDH release in MCAD knockdown cells in presence of 8 C after sI/R compared to knockdown controls with 8 C treatment after sI/R (Figure 5B and Figure 5—figure supplement 1B). Importantly, MCAD knockdown blocked the 8C-reduced cellular ROS level after sI/R (Figure 5C–D and Figure 5—figure supplement 1C). Specifically, we found that MCAD knockdown reduced 8 C stimulated H3K9ac increase in the promoters of HO1 and NQO1 after sI/R (Figure 5E). Subsequently, MCAD knockdown reduced 8C-elevated expression of HO1 and NQO1 after sI/R (Figure 5F and Figure 5—figure supplement 1D-F). In addition, the treatment of 8 C did not affect the efficiency of MCAD knockdown. Thus, these results demonstrated that MCAD-mediated 8 C metabolism was essential for histone acetylation and attenuating apoptosis through activating antioxidative process.
 
-## HAT enzyme Kat2a was required for 8C-mediated histone acetylation to inhibit oxidative stress in heart protection
+![Figure 5.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig5-v2.jpg)
+
+**Figure 5.:** (A) Western blot of H3K9ac level showed MCAD knockdown reduced 8C-induced H3K9ac increase in NRVMs under both normoxia and sI/R. (B) Measurement of medium LDH levels in NRVMs at indicated condition using LDH assay kit. (C) FACS analysis of DHE staining NRVMs after sI/R. (D) Relative mean fluorescence intensity of DHE staining. (E) Enrichment of H3K9ac over H3 at promoters of HO1 and NQO1 after sI/R at indicated conditions. (F) mRNA expression of HO1, NQO1 and MCAD in NRVMs after sI/R. n = 3, *p < 0.05, **p < 0.01, ***p < 0.001, vs Normoxia + PBS + shCTL; #p < 0.05, ##p < 0.01, ###p < 0.001 vs sI/R + PBS + shCTL. Data were analyzed by two-way ANOVA, followed by post-hoc Tukey test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot showed knockdown of MCAD by adenovirus shRNA. (B) Cell viability measurement in NRVMs at shown condition using CCK8 detection kit. (C) NRVM cellular ROS levels are indicated by DHE staining after sI/R treatment. Scale bar: 200 µm. (D–F) Western blot and quantifications of HO1 and NQO1 in NRVMs after sI/R. n = 3, *p < 0.05, **p < 0.01, vs Normoxia + PBS + shCTL; #p < 0.05, ##p < 0.01 vs sI/R + PBS + shCTL. Data were analyzed by two-way ANOVA, followed by post-hoc Tukey test.
+
+### HAT enzyme Kat2a was required for 8C-mediated histone acetylation to inhibit oxidative stress in heart protection
 
 HATs are the very enzymes that catalyze histone acetylation by transferring the acetyl-group from acetyl-CoA to histone lysine residues. As H3K9ac is most sensitive to physiological acetyl-CoA levels, we then hypothesized that HATs that acetylate H3K9 are the most responsive to physiological acetyl-CoA concentrations would play important roles in the cardioprotection of 8 C. Kat2a and Kat2b are the major HATs that modulate H3K9ac Jin et al., 2011. Kat2a is mostly responsive to acetyl-CoA concentrations at 0–10 µM Wang et al., 2017, while Kat2b is response to acetyl-CoA in the 0–300 µM range Shi et al., 2016. Kat2a expression was upregulated in rat heart after I/R injury, whereas 8 C treatment diminished Kat2a upregulation (Figure 6—figure supplement 1A). Together with the fact that acetyl-CoA levels in NRVMs ranged from 1 to 7 µM under sI/R (Figure 4A), we focused on studying the effect of Kat2a knockdown (Figure 6—figure supplement 1B) on the protective role of 8 C after sI/R. Kat2a knockdown largely abolished the H3K9ac increase caused by 8 C treatment in NRVMs (Figure 6A), indicating that Kat2a was a key HAT to mediate 8C-stimulated histone acetylation. Furthermore, Kat2a knockdown led to a significant decrease of cell viability and increase of LDH release compared to knockdown control group in presence of 8 C after sI/R (Figure 6B and Figure 6—figure supplement 1C), suggesting that Kat2a was required for the protective effect of 8 C. Moreover, knockdown of Kat2a abolished 8 C’s effect on inhibiting the cellular ROS level after sI/R (Figure 6C–D and Figure 6—figure supplement 1D). Specifically, Kat2a knockdown abolished 8C-stimulated H3K9ac increase at the promoters of HO1 and NQO1 after sI/R (Figure 6E). Subsequently, Kat2a knockdown reduced 8C-elevated expression of HO1 and NQO1 after sI/R (Figure 6F and Figure 6—figure supplement 1E-G). These results illustrated that Kat2a was required to execute the rescuing role of 8 C after sI/R by modulating histone acetylation, which in turn activated antioxidant gene expression and attenuated cellular apoptosis after sI/R. Together our investigation revealed an integrated metabolic and epigenetic network comprising 8 C, acetyl-CoA, MCAD, and Kat2a, that likely played an essential role in combating heart injury after I/R (Figure 6G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig6-v2.jpg)
+
+**Figure 6.:** (A) Western blot of H3K9ac level showed Kat2a knockdown reduced 8C-induced H3K9ac increase in NRVMs under both normoxia and sI/R. (B) Measurement of medium LDH levels in NRVMs at indicated condition using LDH assay kit. (C) FACS analysis of DHE staining NRVMs after sI/R. (D) Relative mean fluorescence intensity of DHE staining. (E) Enrichment of H3K9ac over H3 at promoters of HO1 and NQO1 after sI/R at indicated conditions. (F) mRNA expression of HO1,NQO1 and Kat2a in NRVMs after sI/R. (G) Schematic diagram of 8 C metabolism for cardiac repair. n = 3, *p < 0.05, **p < 0.01, ***p < 0.001, vs Normoxia + PBS + shCTL; #p < 0.05, ##p < 0.01, ###p < 0.001 vs sI/R + PBS + shCTL. Data were analyzed by two-way ANOVA, followed by post-hoc Tukey test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60311/elife-60311-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Kat2a was upregulated after I/R based on RNA-seq results. (B) Western blot showed knockdown of Kat2a by adenovirus sh-RNA. (C) Cell viability measurement in NRVMs at indicated condition using CCK8 detection kit. (D) NRVM cellular ROS levels are indicated by DHE staining after sI/R treatment. Scale bar: 200 µm. (E–G) Western blot and quantifications of HO1 and NQO1 in NRVMs after sI/R. n = 3, *p < 0.05, **p < 0.01, vs Normoxia + PBS + shCTL; # p < 0.05 vs sI/R + PBS + shCTL. Data were analyzed by two-way ANOVA, followed by post-hoc Tukey test.
 
 ## Discussion
 
@@ -82,31 +122,468 @@ Our study suggests that increasing histone acetylation by metabolic acetyl-CoA p
 
 ## Materials and methods
 
-## Animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Bcl2 (Rabbit monoclonal antibody)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab182858; RRID: AB_2715467</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bax (Rabbit polyclonal antibody)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2,772 S; RRID: AB_10695870</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Tubulin (mouse monoclonal antibody)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 3,873 S; RRID: AB_1904178</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PARP (Rabbit polyclonal antibody)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 9542; RRID: AB_2160739</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K9ac (Rabbit polyclonal antibody)</td>
+      <td>Sigma</td>
+      <td>Cat#: 06–942; RRID: AB_310308</td>
+      <td>Western blot (1:3000), 1:100 for ChIP (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K14ac (Rabbit polyclonal antibody)</td>
+      <td>Sigma</td>
+      <td>Cat#: 07–353; RRID: AB_310545</td>
+      <td>Western blot (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27ac (Rabbit polyclonal antibody)</td>
+      <td>Millipore</td>
+      <td>Cat#: 07–360; RRID: AB_310550</td>
+      <td>Western blot (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AcH3 (Rabbit polyclonal antibody)</td>
+      <td>Millipore</td>
+      <td>Cat#: 06–599; RRID: AB_2115283</td>
+      <td>Western blot (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Histone H3 (mouse monoclonal antibody)</td>
+      <td>Sigma</td>
+      <td>Cat#: 14,269 S; RRID: AB_2756816</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HO1 (Rabbit polyclonal antibody)</td>
+      <td>Proteintech Group Inc</td>
+      <td>Cat#: 10701–1-AP; RRID: AB_2118685</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NQO1 (Rabbit polyclonal antibody)</td>
+      <td>Proteintech Group Inc</td>
+      <td>Cat#: 11451–1-AP; RRID: AB_2298729</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOD2 (Rabbit polyclonal antibody)</td>
+      <td>Proteintech Group Inc</td>
+      <td>Cat#: 24127–1-AP; RRID:AB_2879437</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MCAD (Rabbit polyclonal antibody)</td>
+      <td>Proteintech Group Inc</td>
+      <td>Cat#: 55210–1-AP; RRID: AB_10837361</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Kat2a (Rabbit recombinant antibody)</td>
+      <td>Abcam</td>
+      <td>Cat#: Ab217876; RRID:AB_2811191</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>cTnT (Rabbit polyclonal antibody)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab45932; RRID: AB_956386</td>
+      <td>IF (1:200), FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>680RD Donkey anti-Mouse IgG (H + L)</td>
+      <td>LI-COR</td>
+      <td>Cat# 926–68072;RRID:AB_10953628</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>800CW Donkey anti-Rabbit IgG (H+ L)</td>
+      <td>LI-COR</td>
+      <td>Cat# 926–32213; RRID:AB_621848</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium acetate</td>
+      <td>Sigma</td>
+      <td>Cat#:S2889-250G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Pyruvate</td>
+      <td>Sigma</td>
+      <td>Cat#:P2265-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Citrate</td>
+      <td>Sigma</td>
+      <td>Cat#: PHR1416-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Octanoate</td>
+      <td>Fisher</td>
+      <td>Cat#: N029125G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Nonanoate</td>
+      <td>TCI America</td>
+      <td>Cat#: N0291-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Evans Blue</td>
+      <td>Fisher</td>
+      <td>Cat#: AC195550250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,3,5-Triphenyltetrazolium chloride</td>
+      <td>Sigma</td>
+      <td>Cat#: T8877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydroethidium (DHE)</td>
+      <td>Cayman</td>
+      <td>Cat#: 12,013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U-13C-Sodium octanoate</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td>Cat#:CLM-9617-PK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Sigma</td>
+      <td>Cat#:118350001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Type II Collagenase</td>
+      <td>WorthingtonBiochemical Co.</td>
+      <td>Cat#: LS004174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-deoxy-D-Glucose</td>
+      <td>Cayman</td>
+      <td>Cat#: 14,325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Micrococcal Nuclease</td>
+      <td>NEB</td>
+      <td>Cat#: M0247S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IHC Zinc Fixative</td>
+      <td>Fisher</td>
+      <td>Cat#: BDB550523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Creatine Kinase Activity Assay Kit</td>
+      <td>Sigma</td>
+      <td>Cat#: MAK116-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lactate Dehydrogenase Activity Assay Kit</td>
+      <td>Sigma</td>
+      <td>Cat#: MAK066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SOD Assay Kit-WST</td>
+      <td>Dojindo</td>
+      <td>Cat#: S311-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp SYBR Green MasterMix</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: A25778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Precision Plus Protein All Blue Prestained</td>
+      <td>Bio-rad</td>
+      <td>Cat#:1610373</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>Bio-rad</td>
+      <td>Cat#:1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AccuPrep PCR Purification Kit</td>
+      <td>Bioneer</td>
+      <td>Cat#: K-3034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trichrome Stain (Masson) Kit</td>
+      <td>Sigma</td>
+      <td>Cat#: HT15-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TUNEL Assay Kit</td>
+      <td>Sigma</td>
+      <td>Cat#:11684795910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cytotoxicity LDH Assay Kit-WST</td>
+      <td>Dojindo</td>
+      <td>Cat#: CK12-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PicoProbeAcetyl-CoAFluorometric Assay Kit</td>
+      <td>Fisher</td>
+      <td>Cat#: NC9976028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Counting Kit-8</td>
+      <td>Dojindo</td>
+      <td>Cat#: CK04-13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BD Annexin V-FITC</td>
+      <td>Fisher</td>
+      <td>Cat#: BDB556420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Succinate Colorimetric Assay Kit</td>
+      <td>Fisher</td>
+      <td>Cat#: NC0541966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol Reagent</td>
+      <td>Sigma</td>
+      <td>Cat#: 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TURBO DNase</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: AM2238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Directional RNA Library Prep Kit for Illumina</td>
+      <td>NEB</td>
+      <td>Cat#: E7760L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Creatine kinase (CK) MB isolenzyme Elisa kit</td>
+      <td>ABclonal</td>
+      <td>RK03571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Troponin I (TnI) Elisa kit</td>
+      <td>Abclonal</td>
+      <td>RK03995</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB stable E-coli</td>
+      <td>NEB</td>
+      <td>Cat#: C3040H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB 10-beta competent E. coli</td>
+      <td>NEB</td>
+      <td>Cat#:C3019H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BLOCK-iT U6 RNAi Entry VectorKit</td>
+      <td>Invitrogen</td>
+      <td>Cat#: K494500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Gateway LR Clonase II Enzyme Mix</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 11791–020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAd/PL-DEST Gateway VectorKit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: V49420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>293 A Cell Line</td>
+      <td>Thermo Fisher</td>
+      <td>R70507</td>
+      <td>For package of Adenovirus</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism (version 7)</td>
+      <td>Graphpad Software</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Odyssey CLx Imaging System</td>
+      <td>LI-COR Biosciences</td>
+      <td>https://www.licor.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>Flowjo</td>
+      <td>https://www.flowjo.com/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments
 
 All experiments were approved by the Institutional Animal Care and Use Committee of the University of Michigan (PRO00009606) and were performed in accordance with the recommendations of the American Association for the Accreditation of Laboratory Animal Care.
 
-## Generation of rat I/R models
+### Generation of rat I/R models
 
 Myocardial ischemia/reperfusion was carried out in rats as described previously Tian et al., 2019. Briefly, 8–9 weeks old male SD rats (Charles River Laboratories) were anesthetized with ketamine (100 mg/kg) and xylazine (10 mg/kg). Myocardial ischemia was performed by occlusion of the left anterior descending coronary artery (LAD) using 6–0 silk sutures. After 45 min of ischemia, the myocardium was reperfused. Sodium acetate (2 C), sodium pyruvate (3 C), sodium citrate(6 C), sodium octanoate (8 C), and sodium nonanoate (9 C) were dissolved in saline at concentrations of 125 mg/mL, 125 mg/mL, 125 mg/mL, 40 mg/mL, and 50 mg/mL, respectively. 2 C (500 mg/kg) (Frost et al., 2014), 3 C (500 mg/kg) (González-Falcón et al., 2003), 6 C (500 mg/kg), 8 C (160 mg/kg) (Vinay et al., 1976), and 9 C (200 mg/kg) (Vinay et al., 1976) were intraperitoneal (i.p.) injected to rats for 3 continuous days and another dose before LAD ligation for screening assay. In a clinically relevant setting, 8 C was i.p. injected at the time of reperfusion, which was 45 min after LAD ligation. For blood sample collection, the animals were anesthetized with ketamine (100 mg/kg) and xylazine (10 mg/kg) then euthanized by injection of pentobarbital at 50 mg/kg for subsequent heart isolation.
 
-## Echocardiography
+### Echocardiography
 
 The rats were anesthetized with 2% isoflurane. Echocardiography (ECG) was performed 1 day and 4 weeks after surgery using Vevo 2,100 system with M model. Left ventricular internal diameter end diastole (LVIDd) and left ventricular internal diameter end systole (LVIDs) were measured perpendicularly to the long axis of the ventricle. Ejection fraction (EF) and fractional shortening (FS) were calculated according to LVIDd and LVIDs.
 
-## Evans blue/triphenyltetrazolium chloride (TTC) staining
+### Evans blue/triphenyltetrazolium chloride (TTC) staining
 
 After 24 hr reperfusion, the LAD was re-occluded and 5% Evans blue was injected into the right ventricle. The heart was then removed, frozen rapidly and sliced into five 2 mm transverse sections. The sections were incubated with 1% TTC in phosphate buffer (pH 7.4) at 37 °C for 10 min and photographed by EPSON scanner. The ischemia area (IS), area at risk (AAR), and left ventricular area, were measured with Image J software.
 
-## Measurement of serum CK, serum LDH, and tissue SOD
+### Measurement of serum CK, serum LDH, and tissue SOD
 
 Blood samples were collected at 24 hr after reperfusion and plasma was isolated. The level of serum troponin I (TnI) and activity of creatine kinase (CK) MB isolenzyme, total CK and lactate dehydrogenase (LDH) in plasma were measured using commercial kits (TnI: Abclonal,RK03995; CK-MB:Abclonal, RK03571; CK:Sigma, MAK116-1KT; LDH: Sigma, MAK066-1KT) according to the manufacturer’s instructions. Ventricles were crushed to a powder using liquid nitrogen and homogenized in saline with the weight/volume ratio of 1:10. After centrifuging for 10 min at 3500 rpm, the supernatants were withdrawn for SOD activity measurement using SOD assay kit-WST (Dojindo) according to the manufacturer’s instructions. Bradford protein assay was performed to determine the protein concentration.
 
-## Histology assay
+### Histology assay
 
 Histological studies were performed as previously described Li et al., 2017. Briefly, animals were sacrificed, and the hearts were perfused with 20% KCl. After being fixed with zinc fixative solution (BD Pharmingen) and dehydrated by alcohol, the samples were embedded by paraffin and sectioned into 5 µm slides. The sections were processed for immunostaining, including Masson’s trichrome, immunofluorescence and TUNEL assay (in situ cell death detection kit, Roche). Images were captured by Aperio (Leica Biosystems, Buffalo Grove, IL, USA) and a confocal microscope (Nikon, Melville, NY, USA) and analyzed by Image J software.
 
-## Cell lines
+### Cell lines
 
 The 293 A cells were pre-authenticated and purchased from Thermo scientific.
 
@@ -114,40 +591,40 @@ NRVMs were isolated from postnatal day 1–3 SD rats as previously described Gao
 
 All cell cultures were examined for mycoplasma every two weeks to make sure no mycoplasma contamination.
 
-## Simulated ischemia reperfusion(sI/R) of NRVMs in vitro
+### Simulated ischemia reperfusion(sI/R) of NRVMs in vitro
 
 NRVMs were cultured in simulated ischemia medium Xie et al., 2014 and subjected to hypoxia in a chamber with 94% N2,1% O2, 5% CO2. After 2 hr of hypoxia, the cells were then reperfused in DMEM for 4 hr in serum free medium at 95% air and 5% CO2.
 
-## Measurement of acetyl-CoA
+### Measurement of acetyl-CoA
 
 Acetyl-CoA was measured using acetyl-CoA assay kit (Biovision) according to the manufacturer’s instructions. For tissues, hearts were weighted and pulverized, then mixed with 400 µL of 1 M perchloric acid per 100 mg tissue. For cell culture, 5 million NRVMs were isolated and lysed in RIPA buffer. The lysate was deproteinized by 1 M perchloric acid. The deproteinized supernatant was neutralized by 3 M KHCO3. The supernatant was then measured acetyl-CoA following the standard kit protocol. The concentration of acetyl-CoA in cells was calculated with the estimation of average NRVM size as 6000 µm3 Yang et al., 2018; Bensley et al., 2016.
 
-## Western blot
+### Western blot
 
 Proteins were extracted in RIPA lysis buffer (NaCl 150 mM, NP-40 1%, Sodium deoxycholate 0.5%, SDS 0.1%, Tris 25 mM) followed by centrifugation at 4 °C for 15 min at 12,000 rpm. Protein concentration was measured by Bradford protein assay and 40 µg of total protein was separated by SDS-PAGE and then transferred to PVDF membranes. The membranes were blocked with 5% nonfat dry milk for 1 hr at room temperature and then incubated with primary antibodies overnight at 4 °C. After three washings with TBST, the membranes were incubated with secondary antibody in TBST solution for 1 hr at room temperature. After three washings, the membranes were scanned and quantified by Odyssey CLx Imaging System (LI-COR Biosciences, USA).
 
-## RNA-Seq
+### RNA-Seq
 
 Total RNA was extracted from the LV tissues using Trizol following manufacture’s protocol. The total RNA was purified with DNAse I to remove genomic DNA. RNA quality was assessed using Agilent Bioanalyzer Nano RNA Chip. One µg of total RNA (RIN > 8) was used to prepare the sequencing library using NEBNext Stranded RNA Kit with mRNA selection module. The library was sequenced on illumina HiSeq 4,000 (single end, 50 base pair) at the Sequencing Core of University of Michigan. The RNA-seq data have been deposited in Gene Expression Omnibus with the accession code GSE132515.
 
-## RNA-Seq data analysis
+### RNA-Seq data analysis
 
 RNA-seq data was quantified using Kallisto (Version 0.43.0) Bray et al., 2016 with parameters: --single -b 100 l 200 s 20 using the Rnor6.0 (ensembl v91). The estimated transcript counts were exported by tximport Soneson et al., 2015 for Deseq2 analysis Love et al., 2014. Differential expression was then calculated using Deseq2 default setting. Gene Ontology analysis was performed using GSEA Subramanian et al., 2005.
 
-## DHE staining
+### DHE staining
 
 For in vitro staining, 5 mM of freshly prepared DHE solution was directly added to medium to final concentration of 5 µM and cultured at 37 °C for 30 min. The cells were washed three times of PBS and observed under microscope or dissociated for FACS analysis.
 
 For in vivo staining, heart tissues were embedded in OCT immediately after harvested. Tissues were then sectioned at 20 µm. 5 µM of DHE solution was directly applied to sections for 30 min at 37 °C. After three washes of PBS, the sections were mounted and observed under the microscope.
 
-## ChIP
+### ChIP
 
 ChIP experiments were performed as previously described Lei et al., 2015. Cells were fixed with 1% formaldehyde for 10 min and quenched with 0.125 M glycine. Nuclei pellets were then harvested and digested with micrococcal nuclease at 37 °C for 2 min. After brief sonication, chromatin solution was incubated with Dynabeads and antibodies against H3K9ac or pan H3 control overnight. Beads were washed four times with LiCl wash buffer (0.25 M LiCl, 1% IGEPAL CA630, 1% sodium deoxycholate, 1 mM EDTA, 10 mM Tris, pH 8.1) and one wash of TE buffer then eluted with elution buffer at 65°C. DNA was purified using Bioneer PCR purification kit. Enrichment of immunoprecipitated DNA was normalized to pan H3 by quantitative PCR.
 
-## Mass spectrometry analysis of C13-labeled histone acetylation
+### Mass spectrometry analysis of C13-labeled histone acetylation
 
 For in vitro analysis, NRVMs were treated with C13-labeled sodium octanoate (0.5 mM) for 12 hr before histone purification. For in vivo study, the C13-labeled sodium octanoate was injected at dose of 160 mg/kg at time of perfusion, the histone proteins were purified using LV tissue 30 min after reperfusion. The purified histones were digested by Arg-C proteinase and followed by a 90-min LC-MS/MS data acquisition for posttranslational modification analysis Anwar et al., 2018.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism Software (version 7) was used for statistical analysis. Data were expressed as the mean ± SD. Statistical comparisons between two groups were performed by Student’s t test, and more than two groups were performed by two-way or one-way ANOVA followed by post-hoc Tukey comparison. Groups were considered significantly different at p < 0.05.

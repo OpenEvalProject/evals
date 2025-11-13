@@ -22,18 +22,18 @@
 
 ### Affiliations
 
-1. https://ror.org/024mrxd33 Astbury Centre for Structural and Molecular Biology, University of Leeds Leeds United Kingdom
-2. https://ror.org/024mrxd33 Leeds Institute of Medical Research, School of Medicine, Faculty of Medicine and Health, University of Leeds, St James’ University Hospital Leeds United Kingdom
-3. https://ror.org/024mrxd33 School of Molecular and Cellular Biology, Faculty of Biological Sciences, University of Leeds Leeds United Kingdom
-4. https://ror.org/024mrxd33 School of Chemistry, Faculty of Maths and Physical Sciences, University of Leeds Leeds United Kingdom
-5. https://ror.org/03vaer060 MRC and University of Glasgow Centre for Virus Research, Sir Michael Stoker Building Glasgow United Kingdom
-6. https://ror.org/024mrxd33 Leeds Institute for Cardiovascular and Metabolic Medicine, Faculty of Medicine and Health, University of Leeds Leeds United Kingdom
+1. Astbury Centre for Structural and Molecular Biology, University of Leeds Leeds United Kingdom ([ROR:024mrxd33](https://ror.org/024mrxd33))
+2. Leeds Institute of Medical Research, School of Medicine, Faculty of Medicine and Health, University of Leeds, St James’ University Hospital Leeds United Kingdom ([ROR:024mrxd33](https://ror.org/024mrxd33))
+3. School of Molecular and Cellular Biology, Faculty of Biological Sciences, University of Leeds Leeds United Kingdom ([ROR:024mrxd33](https://ror.org/024mrxd33))
+4. School of Chemistry, Faculty of Maths and Physical Sciences, University of Leeds Leeds United Kingdom ([ROR:024mrxd33](https://ror.org/024mrxd33))
+5. MRC and University of Glasgow Centre for Virus Research, Sir Michael Stoker Building Glasgow United Kingdom ([ROR:03vaer060](https://ror.org/03vaer060))
+6. Leeds Institute for Cardiovascular and Metabolic Medicine, Faculty of Medicine and Health, University of Leeds Leeds United Kingdom ([ROR:024mrxd33](https://ror.org/024mrxd33))
 
 † Corresponding author
 
 ## Abstract
 
-Flaviviruses , including Zika virus (ZIKV), are a significant global health concern, yet no licensed antivirals exist to treat disease. The small membrane (M) protein plays well-defined roles during viral egress and remains within virion membranes following release and maturation. However, it is unclear whether M plays a functional role in this setting. Here, we show that M forms oligomeric membrane-permeabilising channels in vitro, with increased activity at acidic pH and sensitivity to the prototypic channel-blocker, rimantadine. Accordingly, rimantadine blocked an early stage of ZIKV cell culture infection. Structure-based channel models, comprising hexameric arrangements of two trans -membrane domain protomers were shown to comprise more stable assemblages than other oligomers using molecular dynamics simulations. Models contained a predicted lumenal rimantadine-binding site, as well as a second druggable target region on the membrane-exposed periphery. In silico screening enriched for repurposed drugs/compounds predicted to bind to either one site or the other. Hits displayed superior potency in vitro and in cell culture compared with rimantadine, with efficacy demonstrably linked to virion-resident channels. Finally, rimantadine effectively blocked ZIKV viraemia in preclinical models, supporting that M constitutes a physiologically relevant target. This could be explored by repurposing rimantadine, or development of new M-targeted therapies.
+Flaviviruses, including Zika virus (ZIKV), are a significant global health concern, yet no licensed antivirals exist to treat disease. The small membrane (M) protein plays well-defined roles during viral egress and remains within virion membranes following release and maturation. However, it is unclear whether M plays a functional role in this setting. Here, we show that M forms oligomeric membrane-permeabilising channels in vitro, with increased activity at acidic pH and sensitivity to the prototypic channel-blocker, rimantadine. Accordingly, rimantadine blocked an early stage of ZIKV cell culture infection. Structure-based channel models, comprising hexameric arrangements of two trans-membrane domain protomers were shown to comprise more stable assemblages than other oligomers using molecular dynamics simulations. Models contained a predicted lumenal rimantadine-binding site, as well as a second druggable target region on the membrane-exposed periphery. In silico screening enriched for repurposed drugs/compounds predicted to bind to either one site or the other. Hits displayed superior potency in vitro and in cell culture compared with rimantadine, with efficacy demonstrably linked to virion-resident channels. Finally, rimantadine effectively blocked ZIKV viraemia in preclinical models, supporting that M constitutes a physiologically relevant target. This could be explored by repurposing rimantadine, or development of new M-targeted therapies.
 
 ## Introduction
 
@@ -51,11 +51,21 @@ Here, we provide evidence that ZIKV M forms rimantadine-sensitive, oligomeric me
 
 ## Results
 
-## ZIKV M peptides form channel-like oligomeric complexes within membrane-mimetic environments
+### ZIKV M peptides form channel-like oligomeric complexes within membrane-mimetic environments
 
 M protein resides as a dimeric form resolvable within cryo-EM structures of mature ZIKV, and other Flavivirus particles, in close association with E dimers (Sirohi et al., 2016). Thus, M would be required to form higher-order oligomers to form a putative channel across the membrane. This might conceivably occur during endocytosis where acidic pH induces reconfiguration of E into a trimeric fusion complex, presumably also liberating M dimers to move within the virion membrane (Bressanelli et al., 2004; Stiasny et al., 2004; Modis et al., 2005; Nayak et al., 2009; Zhang et al., 2004). Thus, we hypothesised that M peptides should form channel structures within a lipidic environment in the absence of E protein.
 
 A peptide lacking the disordered N-terminal 20 amino acids was synthesised based upon the M protein sequence from a New World ZIKV isolate (PE243) (Donald et al., 2016). Peptides therefore comprised the three helical regions of the mature M protein, the second and third of which form TMDs within virion membranes (Figure 1A, Figure 1—figure supplements 1 and 2). Peptides were reconstituted using several non-ionic detergents used frequently as membrane-mimetics in structural and/or biophysical studies (OuYang et al., 2013; Pielak and Chou, 2010; Pielak et al., 2009; Schnell and Chou, 2008), as well as in our previous investigations of viroporin oligomerisation (Foster et al., 2011; StGelais et al., 2009; Wetherill et al., 2012; Carter et al., 2010).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig1-v2.jpg)
+
+**Figure 1.:** (A) M sequence showing helical regions and peptide truncation (in vitro synthesis (grey arrow) and molecular dynamics (MD) simulations (black arrow)). (B) Visualisation of M peptide with increasing concentrations of detergent, stained with uranyl acetate. Fields are representative of multiple images with~9000 particles collected in total across all conditions. Insets show zoomed images of particles with accumulation of stain within central cavity, consistent with channel formation. (C) Top panel – examples of particles visualised at 150mM illustrating heterogeneity. 9907 particles from 150mM samples were resolved into two-dimensional (2D) class averages with 25 iterations (bottom panel) yet rotational symmetry could not be determined. (D) Native polyacrylamide gel electrophoresis (PAGE) of M peptide (5μg) reconstituted in DH6PC (300mM).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Prediction of M protein trans-membrane regions, topology and hydrophobic profiles generated in different online server packages where single trans-membrane domain (TMD) topology was supported: TMHMM, TOPCONS, and Phobius. (B) As for A, but dual TMD topology: SPLIT v4.0 and MEMSAT-SVM. (C) M sequence amino acid characteristics visualised using EMBOSS Pepinfo. (D) Alignment of consensus Flavivirus M protein sequences, black – 100% conserved, grey – conserved amino acid properties.
 
 To investigate the nature and stoichiometry of M complexes, dihexanoyl-phosphatidylcholine (DH6PC) solubilised M peptides were first immobilised upon carbon grids and negatively stained using uranyl acetate over a range of detergent concentrations. Unfortunately, use of 300 mM detergent prevented the efficient adhesion of peptides, yet visualisation of M complexes at lower concentrations revealed the formation of circular structures, the majority of which were oriented approximately in parallel with the grid plane (Figure 1B).
 
@@ -63,7 +73,7 @@ Interestingly, complexes exhibited a significant degree of structural heterogene
 
 Visualisation of peptide–detergent complexes using native polyacrylamide gel electrophoresis (PAGE) revealed that DH6PC (300 mM) induced the formation of higher-order oligomers (Figure 1D). A dominant species of ~45–50 kDa formed along with another less abundant assemblage in the region of ~60 kDa, although it is not possible to assign precise molecular weights by this method. However, this was consistent with the potential formation of hexameric and/or heptameric oligomers, confirming that dimers were not the only multimeric conformation adopted by free M protein.
 
-## ZIKV M peptides exhibit acid-enhanced channel activity with sensitivity to rimantadine
+### ZIKV M peptides exhibit acid-enhanced channel activity with sensitivity to rimantadine
 
 Given the formation of higher-order oligomers, we next assessed whether M peptides exhibited membrane permeabilisation using an indirect assay for channel formation, based upon the release and unquenching of fluorescent dye from liposomes. This assay has been used to characterise the activity of several other viroporins and can be adapted to both explore aspects of channel biochemistry as well as identifying small molecule inhibitors of channel activity (Foster et al., 2011; StGelais et al., 2009; Wetherill et al., 2012; Carter et al., 2010; Foster et al., 2014; Griffin et al., 2008; Scott et al., 2020; Shaw et al., 2020; StGelais et al., 2007; Walter et al., 2016).
 
@@ -71,49 +81,733 @@ Dose-dependent dye release occurred using sub-micromolar concentrations of M pep
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig2-v2.jpg)
 
-**Figure 2.:** (A) Titration of Dimethyl Sulphoxide (DMSO)-reconstituted M peptide in endpoint liposome carboxyfluorescein (CF) release assay. Graph represents a single biological repeat representative of at least three others, comprising triplicate technical repeats at each concentration. Error bars show standard deviation. (B) Modified endpoint CF assay undertaken with altered external buffer pH as indicated. CF content of re-buffered clarified assay supernatants were detected as a single endpoint measurement. Data comprise three biological repeats for each condition, error bars show normalised standard error, *p ≤ 0.05, Student’s t-test. (C) Effect of rimantadine (1μM) upon M activity. Results are from three biological repeats normalised to 100% activity for solvent control. Error bars show adjusted % error. *p ≤ 0.05, Student’s t-test. (D) Real-time CF assay data for M peptides in ‘virion-sized’ liposomes, produced by extrusion through a 0.05-μm, rather than a 0.2-μm filter.Figure 2—source data 1.A–C) or real-time (D) fluorescence data for dye release assays.
+**Figure 2.:** (A) Titration of Dimethyl Sulphoxide (DMSO)-reconstituted M peptide in endpoint liposome carboxyfluorescein (CF) release assay. Graph represents a single biological repeat representative of at least three others, comprising triplicate technical repeats at each concentration. Error bars show standard deviation. (B) Modified endpoint CF assay undertaken with altered external buffer pH as indicated. CF content of re-buffered clarified assay supernatants were detected as a single endpoint measurement. Data comprise three biological repeats for each condition, error bars show normalised standard error, *p ≤ 0.05, Student’s t-test. (C) Effect of rimantadine (1μM) upon M activity. Results are from three biological repeats normalised to 100% activity for solvent control. Error bars show adjusted % error. *p ≤ 0.05, Student’s t-test. (D) Real-time CF assay data for M peptides in ‘virion-sized’ liposomes, produced by extrusion through a 0.05-μm, rather than a 0.2-μm filter.
 
 We tested whether M channel activity was sensitive to inhibitory small molecules, indicative of the formation of structurally ordered complexes. Prototypic channel blockers can be used to identify druggable sites within viroporin complexes as a result of their binding promiscuity. Regions so identified are then amenable to the development of improved small molecule inhibitors (Foster et al., 2014; Scott et al., 2020; Shaw et al., 2020). One such prototype, rimantadine (1 μM), caused a significant reduction in M channel activity (Figure 2C), consistent with the presence of a viable binding site within a soluble, folded M channel complex.
 
 Finally, we tested whether M peptides were able to form channels within membranes exhibiting significant curvature, such as that seen within an enveloped virion. Liposomes extruded using a 0.05-μM filter provided a similar level of M-induced dye release, albeit with a slightly reduced kinetic, likely due to the increased molar ratio of resulting liposomes to peptide (Figure 2D).
 
-## Rimantadine inhibits ZIKV infectivity in cell culture
+### Rimantadine inhibits ZIKV infectivity in cell culture
 
 We hypothesised that if M protein-mediated channel activity observed in vitro was relevant during the ZIKV life cycle, then rimantadine would exert an antiviral effect. We therefore tested the ability of rimantadine to inhibit ZIKV infection of Vero cells, adding the drug during infection and for the ensuing 24 hr period prior to analysis. Rimantadine exerted a dose-dependent reduction in ZIKV infection, assessed by both the number of cells infected and ensuing viral protein production (Figure 3A–C). Infected cell numbers underwent statistically significant reductions at rimantadine concentrations of 10 μM and above. Importantly, rimantadine affected neither cell viability, nor the uptake of fluorescently labelled (Epidermal Growth Factor) EGF as a proxy marker for clathrin-mediated endocytosis over the concentration range tested (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig3-v2.jpg)
+
+**Figure 3.:** (A) Vero cells were infected at a multiplicity of infection (MOI) of 0.1 pfu/cell with increasing rimantadine concentrations in 96-well plates. Infectious units were quantified 48hr post-infection using an IncuCyte Zoom to count ZIKV infected cells stained with antibody to ZIKV E and an Alexafluor 488nm secondary antibody. Counts were averaged over four image panels per well and results are from three biological replicates performed in triplicate. Error bars represent standard error of the mean between experiments. *p ≤ 0.01, **p ≤ 0.001, paired Student’s t-test relative to solvent control. (B) Representative anti-E western blot of n = 3 biological repeats of 6-well plate experiments run in parallel to fluorescence-based assays. Infections and timings as for A. (C) Example representative fluorescence images from IncuCyte analysis shown in A, scale bars represent 500μm. (D) Plaque-reduction assay using BHK21 cells infected with 10 pfu/well in the presence of 80μM rimantadine during different stages of infection shown by schematic. N = 2 biological replicates. Error bars represent standard error of the mean between experiments, *p ≤ 0.01, paired Student’s t-test relative to solvent control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Viability of Vero cells measured using (3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide) MTT assay after 48hr incubation with rimantadine or DMSO control for 48hr. Graph summarises a single representative biological repeat with three technical repeats. Error bars represent one standard deviation. (B) Lack of effect of rimantadine upon uptake of fluorescently labelled EGF by endocytosis. Top – experimental schematic. Bottom – endocytic uptake of fluorescently labelled (FITC) EGF in Vero cells pre-treated with 5–80μM rimantadine. Uptake was measured using flow cytometry and quantified in 25,000cells per condition. Data is expressed as median FITC, displayed as a % of maximum fluorescent EGF uptake at 0μM rimantadine. Bafilomycin A1 was used at 1μM as a positive control for blocking endocytic uptake.
+
 We next added rimantadine (80 μM) during different stages of the infection process, measuring drug effects by a (Baby Hamster Kidney) BHK cell plaque-reduction assay, to determine the approximate stage of the ZIKV life cycle affected. Statistically significant reductions of infectivity occurred when rimantadine was present during infection, with more pronounced effects upon pre-incubating cells with the drug (Figure 3D). Measurable, but non-significant reductions also occurred upon adding rimantadine only prior to infection, or during and following infection. Taken together, rimantadine affected an early stage of the virus life cycle, coincident with virus entry.
 
-## MD supports that M protomers adopt a double trans-membrane topology
+### MD supports that M protomers adopt a double trans-membrane topology
 
 The structure of M within mature ZIKV and other Flavivirus virion cryo-EM reconstructions is a dimeric complex of double-TMD protomers, closely associated with the TMDs of adjacent E dimers (Sirohi et al., 2016). The relatively short TMDs within M cause a pinching of the virion membrane bilayer, reducing its thickness by several nm (Sevvana et al., 2018; Kuhn et al., 2002; Mukhopadhyay et al., 2003).
 
 M is highly conserved between ZIKV isolates (Figure 4A), and regions including the linker region between the first and second alpha helices are shared with other Flaviviruses (Figure 1—figure supplement 2). Where sequence conservation is absent, secondary structure and amino acid similarity are maintained. However, four different TMD prediction software packages revealed disparate outputs for the region known to form the second and third helices within cryo-EM reconstructions, with two favouring the formation of an extended single TMD (Figure 1—figure supplement 2). Interestingly, the MEMSAT-SVM package not only predicted a double TMD topology, but also that helix 3 displayed properties consistent with being pore lining (Figure 1—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig4-v2.jpg)
+
+**Figure 4.:** (A) M sequence ‘logo’ (https://weblogo.berkeley.edu/logo.cgi) showing relative conservation at each amino acid position. 929 sequences were retrieved by a Uniprot search for ‘Zika virus’, then aligned using CLUSTAL Omega. Alignments were exported to Jalview where removal of partial/irrelevant sequences resulted in analysis of~700 sequences. Conservation is high (>95%) across the majority of the protein, with the exception of Arg31, Ala45, and Ala47, but even these remain present within>80% sequences. (B) Image of an energy minimised M protomer taken from PDB: 5IRE within a simulated hydrated lipid membrane system (see methods). (C) Straightened, single TM M protomer inserted into a POPC bilayer and subjected to coarse-grained (CG) simulations for 3 μs, running from start (top) to finished (bottom) pose. (root mean square deviation) RMSD over time (five repeat simulations, standard deviations in grey) showed a high degree of movement and flexibility exhibited by this conformation (~1nm throughout), as the protein appears to attempt moving the C-terminal helix (H3) back along the plain of the membrane. Into close proximity of the bilayer. (D) By comparison, the cryo-­EM-­derived conformer structure was simulated in a model bilayer as for C. This conformation remained stable for the duration of the simulation (five repeat simulations, standard deviations in grey).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Root mean square fluctuation (RMSF) per residue for simulations in which the two transmembrane helices were straightened into a membrane-spanning helix containing a small unstructured region between helices 2 and 3, prior to insertion into a POPC membrane; this was designed to emulate secondary structure predictions where a single trans-membrane domain (TMD) was predicted. The different colours represent different simulations. (B) Density profiles along the membrane normal of the POPC headgroup and the POPC tails for the same simulations. The different colours represent different simulations. (C) Normalised average number of contacts between the protein and the POPC lipid headgroup across all repeat simulations of the simulation in which the cryo-EM-derived conformer was inserted in a POPC membrane shown for 1 μs of the simulation ensemble, 2 μs of the simulation ensemble and for all the simulation ensemble (3 μs). For the normalisation the number of contacts of each residue with POPC headgroup was divided by the largest number of contacts.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Root mean square fluctuation (RMSF) per residue for the simulations in which the cryo-EM-derived conformer (i.e. double trans-membrane domain [TMD] monomeric M from PDB: 5IRE) was inserted in a POPC membrane. The different colours represent different simulations. (B) Density profiles along the membrane normal of the POPC headgroup and the POPC tails for the same simulations. The different colours represent different simulations. (C) Normalised average number of contacts between the protein and the POPC lipid headgroup across all repeat simulations of the simulation in which the cryo-EM-derived conformer was inserted in a POPC membrane shown for 1 μs of the simulation ensemble, 2 μs of the simulation ensemble and for all the simulation ensemble (3 μs). For the normalisation, the number of contacts of each residue with POPC headgroup was divided by the largest number of contacts.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Simulations in which the two trans-membrane domains (TMDs) were straightened into a membrane-spanning helix containing a small unstructured region between helices 2 and 3. (B) Simulations with the cryo-EM-derived conformer.
+
 Thus, we undertook MD simulations to address whether M in the absence of potentially stabilising interactions with E dimers might prefer a double, or a single TMD conformation. Monomeric M protein was placed within model POPC bilayers (Figure 4C, D, Figure 4—figure supplements 1 and 2), starting as either the cryo-EM-derived conformer, or one where the two TMDs were straightened into a membrane-spanning helix containing a small unstructured region between helices 2 and 3 (Figure 4C, D, Figure 4—figure supplements 1–3). Simulations of the two species within a POPC lipid bilayer revealed, unsurprisingly, that the double helix remained stable over time consistent with the parental cryo-EM structure (Figure 4D). In contrast, the single helix form rapidly began to fold back towards the membrane, with helix 3 partially overlaying the phosphate groups of one monolayer. Hence, this form of the peptide was clearly unstable compared to the cryo-EM structure and we considered it likely that potential higher-order M oligomers also comprised double-TMD protomers.
 
-## MD simulations favour the formation of compact hexameric channel complexes
+### MD simulations favour the formation of compact hexameric channel complexes
 
 Observations from native PAGE and electron microscopy led us to construct hexameric, and heptameric models of putative M channels with helix 2 or 3 lining the channel lumen (Figure 5, Figure 5—figure supplements 1 and 2, Appendix); helix 3 was predicted to display pore-lining properties based upon MEMSAT-SVM predictions (Figure 1—figure supplement 2), so this class of models was the principal focus. Two different hexameric arrangements were modelled (Figure 5, Figure 5—figure supplements 1–3): in the first arrangement, helix 1 was orientated almost perpendicular to the channel pore with helix 3 facing towards the pore (termed ‘radial’, Figure 5E, Figure 5—figure supplements 1–3). For the second model, the protein was rotated clockwise by 20 degrees to significantly increase the number of inter-protomer contacts within a more compact structure (termed ‘compact’, Figure 5A–E, Figure 5—figure supplements 1–3). The second conformation included interactions between the extra-membranous helix 1. Anti-clockwise rotation was not possible due to stearic hindrance. Accordingly, removal of helix 1 caused the collapse of stable pores within 50 ns in each of three simulations (Figure 5—figure supplement 1), demonstrating its likely importance in the formation of a stable channel complex.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig5-v2.jpg)
+
+**Figure 5.:** (A) Assembly of protomers into compact hexamer model using Maestro. Left – ribbon diagram illustrating position of His28 (red) in helix 1 for orientation; middle – space filling model showing individual protomer (gold); right – space filling model showing pore diameter using HOLE. (B) Cutaway of channel viewed from the side showing pore-lining residues predicted for the compact hexamer from the side. (C) Snapshots of compact hexamers in POPC bilayers from a representative atomistic simulation showing the energy minimised system at t = 0 (top), formation of a conductive water column during early times and eventual closing of the channels. (D) Compact hexameric complex over a 200-ns atomistic simulation overlaying start (white) and endpoint (black) conformations. (E) HOLE profiles for lumenal aperture showing differences between starting configuration (blue line) and final structures over three separate 200 ns atomistic simulations (green, red, and black) at neutral external pH.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Simulation system box for M protein hexamers in hydrated POPC bilayers, visualised from the side (protein: black; lipids: green and silver; water red and silver), or the top (protein: cyan; lipid: grey). (B) Overlay of compact (white) versus radial (black) hexamer conformation at neutral pH. (C) Simulation of M complexes where the N-terminal helix was removed, leading to rapid (<50ns) dissociation of the channel complex. (D) Starting conformations for His28++ compact hexamer with lumenal helix 3, showing high similarity to non-protonated forms. (E) Structures of protonated channels at 200 ns including HOLE profile of channel lumen.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Size (in nm) of the X, Y, and Z sites of the simulation box for the simulations in which helix 1 was orientated almost perpendicular to the channel pore with helix 3 facing towards the pore (radial) of the hexameric channel. (B) Density profiles along the membrane normal of the POPC headgroup, the POPC tails, and of the proteins for the same simulations. In A and B, the different colours represent different simulations. (C) Normalised average number of contacts between the protein and the POPC lipid headgroup across all repeat simulations of the same simulation. For the normalisation, the number of contacts of each residue with POPC headgroup was divided by the largest number of contacts.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Size (in nm) of the X, Y, and Z sites of the simulation box for the simulations with the more compact structure (compact) of the hexameric channel. (B) Density profiles along the membrane normal of the POPC headgroup, the POPC tails, and of the proteins for the same simulations. In A and B, the different colours represent different simulations. (C) Normalised average number of contacts between the protein and the POPC lipid headgroup across all repeat simulations of the same simulation. For the normalisation, the number of contacts of each residue with POPC headgroup was divided by the largest number of contacts.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Compact hexameric His28++ complex over a 200-ns atomistic simulation overlaying start (white) and endpoint (black) conformations. (B) HOLE profiles for lumenal aperture showing differences between starting configuration (blue line) and final structures over three separate 200-ns atomistic simulations (green, red, and black) where His28++ mimickedlow external pH. (C) Repeat of pH experiment in Figure 2B comparing wild-type (green) and His28Ala (blue) peptides. Results support that His28 is not responsible for pH activated increases of in vitro membrane permeability.
 
 We also generated radial and compact hexamer and heptamer models, including with helix 2 lining the pore, ensuring that other potential conformations were explored (see Appendix). However, hexamer models where helix 2 lined the pore collapsed rapidly upon simulation, whereas heptamers lined by either helix showed an inability to close in the majority of simulations (Appendix). Moreover, radial hexamers lined by helix 3 either closed rapidly within the simulation (6, 40 ns) or not at all (>200 ns). In the two channels that closed, one of the subunits moves to the centre of the channel to occupy the pore (Appendix). This again was inconsistent with the formation of a stable channel complex. Notably, no restraints were placed upon secondary structures during atomistic simulations of channel complexes, providing added confidence of their relative stability.
 
 Multiple atomistic simulations for each condition supported that the compact hexameric model with helix 3 lining the lumen comprised the most stable and viable representation of a putative channel structure formed by M protein (Figure 5). The compact channel structure retained a lumen with a radius of 5.23 Å at its narrowest point, lined by Thr57, Val61, Ile62, Val65, Met66, Leu68, and Leu69 (Figure 5B). Upon 200 ns atomistic simulation within a model POPC bilayer, channels initially allowed the formation of a water column, but then closed at Leu64 and Leu68, despite the former not facing the lumen at the beginning of the simulation (Figure 5C–E). Channel closing first occurred at 70, 80, and 176 ns within three separate simulations, with channels remaining closed for the remainder of the simulation (Figure 5C, D). Thus, despite the starting position of this model possessing a relatively wide lumen compared with the diameter of a water column (~1.15 Å), compact M hexamer models lined by helix 3 displayed spontaneous closure, consistent with a reasonable physiological representation of a membrane channel. Interestingly, despite the effect of acidic external pH upon M channel activity in vitro (Figure 2B), mimicking such an environment by protonation of a potential candidate pH sensor, His28 within helix 1, had little appreciable effect upon channel opening during simulations. This was confirmed by His28Ala mutant peptides responding to acid pH identically to wild-type in vitro (Figure 5—figure supplement 4). Thus, other ionisable residues within the M protein likely mediate acid-enhanced activity in vitro.
 
-## Identification of two potential druggable sites within hexameric M complexes
+### Identification of two potential druggable sites within hexameric M complexes
 
 We hypothesised that MD-tested compact hexamer models might be sufficiently accurate to both characterise and improve upon the inhibitory action of rimantadine. Whilst this drug exerted a genuine antiviral effect, its relatively low potency in cell culture was reminiscent of its promiscuous activity against other viroporins (Wetherill et al., 2012; Griffin et al., 2008; Scott et al., 2020). Nevertheless, the action of rimantadine both in vitro and in vivo implied that at least one physiologically relevant druggable binding site exists within the M channel complex.
 
 Docking of rimantadine into the compact M hexamer model revealed an energetically favourable interaction with a lumenal binding site, close in proximity to the region in which channel closure occurred during simulations, termed ‘L1’ (Figure 6A, Figure 6—figure supplement 1). The adamantyl cage of rimantadine made predicted hydrophobic contacts with Val61, Ile62, Leu64, Val65, and Leu68, leaving the methyl group and amine solvent exposed, projecting into the channel lumen (Figure 6—figure supplement 1). The same site also underwent predicted interactions with other adamantyl-containing molecules, including amantadine, which adopted a similar predicted binding mode to rimantadine (Figure 6—figure supplement 1). However, both methyl- and acetyl-rimantadine reversed the orientation of the adamantyl cage such that the polar group interacted with lumenal residues (Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig6-v2.jpg)
+
+**Figure 6.:** (A) Compact M channel complex models were assessed using the SiteMap package within Maestro for cavities corresponding to high druggability scores. Three sites were found within the lumen (L1–L3),with L1 retaining the most favourable score. An additional site upon the membrane-exposed channel periphery was also evident (P1),yet would not score highly in SiteMap due to solvent exposure of compounds during simulated docking. Notably, both L1 and P1 reside within close proximity to the predicted gating region near Leu64. (B) Compounds selected to bind the L1 and P1 sites in silico and screened in vitro (Figure 6—figure supplement 2) were tested for effects in ZIKV culture, using a BHK21 cell plaque-reduction assay. Compounds were used at concentrations shown not to evoke cellular toxicity by MTT assays (Figure 6—figure supplement 3). Experiments are biological triplicates with error bars representing the standard error of the mean. **p ≤ 0.01, *p ≤ 0.05, Student’s t-test. (C) Predicted binding pose of GNF 5837 at L1 site generated using Glide (Maestro, Schrodinger) with associated binding site interactions. (D) As C, but for AA 29504. (E) Example biological repeat with triplicate technical repeats for the two top compounds targeting the L1 and P1 sites, GNF 5837 (L1)and AA 29504 (P1). (F) In vitro dye release assays showing 8-point log2-fold titration of GNF 5837 enabling calculation of 50% effective concentration (EC50). (G) As F, for AA 29504.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Rimantadine and derivatives showed overlapping binding modes at the L1-binding site, but derivatives adopted opposite orientations such that the hydrophobic adamantyl cage was predicted to project into the lumen. (C) Compounds targeting a peripheral site upon the hepatitis C virus (HCV) p7 channel complex were tested using CF release assays to ascertain the potential relevance of the ostensibly similar P1 site and would be unlikely to occupy the lumenal sites as a result; these have a more planar structure compared with rimantadine. Two compounds (JK3/34 and JK3/42) were effective at inhibiting M channel activity, distinct from the HCV series lead (JK3/32), which had no effect. (D) In contrast, a series of adamantane derivatives shown previously to have variable efficacy against both M2 and p7 had no effect upon M channels in dye release assays. *p≤0.05, **p≤0.01 Student's t-test. Error bars represent standard deviations based upon three technical replicates.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig6-figsupp2-v2.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Compound titrations were performed according to remain below cytotoxic doses described in the literature. Results show the average of three biological repeats, with error bars representing the standard error of the mean.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig6-figsupp4-v2.jpg)
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig6-figsupp5-v2.jpg)
+
 Reassuringly, the lumenal rimantadine site (L1) was the most favourable in terms of druggability score for the compact hexamer model, assessed using the SiteMap programme (Maestro, Schrödinger). Two other potential lumenal sites were also identified with lower predicted druggability scores (L2, L3, Figure 6A). However, inspection of the M channel model identified an additional region upon the membrane-exposed periphery that could also undergo interactions with small molecules (P1, Figure 6A). Such binding sites are less likely to be identified computationally due to the high solvent exposure of potential ligands, yet such sites have been successfully targeted for other viroporins, including HCV p7 (Scott et al., 2020; Shaw et al., 2020).
 
 To explore the potential relevance of the P1 site, we exploited a defined series of compounds developed targeting a similar site upon the HCV p7 channel complex. The planar structure of these compounds is more compatible with the shape of the P1 site compared to L1, as supported by the predicted in silico modelling. Encouragingly, two of the seven compounds tested displayed inhibitory effects versus M in dye release assays, with JK3/42 being most active (Figure 6—figure supplement 1). Interestingly, adamantane derivatives with additional R groups were ineffective at targeting M activity (Figure 6—figure supplement 1), potentially due to the limited size of the L1 cavity. Thus, we investigated the possibility that more than one distinct druggable binding site existed within M complexes.
 
-## In silico screening enriches for improved repurposed M channel inhibitors
+### In silico screening enriches for improved repurposed M channel inhibitors
 
 We investigated whether in silico screening could identify and enrich for compounds predicted to interact with L1 and/or P1, with a view to developing two distinct yet complementary inhibitor series. L1 was defined as the site comprising Val61, Leu64, Val65, and Leu68, and P1 by Tyr63, Leu64, Val65, Met66, Ile67, and Leu68. The two sites effectively represented the internal and external face of a single region within the channel complex, which is also involved during channel closing in simulations and centres upon Leu68. The convergence of these three regions was suggestive of their importance in being able to influence channel gating (Figures 5D, E, 6A).
 
 To determine whether compounds with good drug-like properties could target the L1 and P1 sites, we employed a screening library comprised of FDA-approved, generic, and other compounds with proven biological activity. In silico screening of 1280 compounds (TocrisScreen, https://www.tocris.com/product-type/tocriscreen-compound-libraries) was undertaken using Glide (Schrödinger) and a rank-order list generated for each site following attrition and removal of compounds common to both sites. A short list of 50 compounds targeting each site was generated for subsequent validation in vitro using dye release assays (Tables 1 and 2). Note, predicted docking scores are not directly comparable between P1 and L1 owing to binding penalties incurred at the P1 site discussed above.
+
+**Table 1.**
+ Top 50 lumenally targeted compounds from the TOCRIS screen library, ranked by glide score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>‘Rank’</th>
+      <th>Compound name</th>
+      <th>Tocris ID</th>
+      <th>Glide gscore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>FR 139317</td>
+      <td>1210</td>
+      <td>−10.227</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ZCL 278</td>
+      <td>4794</td>
+      <td>−9.294</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Elinogrel</td>
+      <td>5316</td>
+      <td>−8.829</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Taxol</td>
+      <td>1097</td>
+      <td>−8.711</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>UK 356618</td>
+      <td>4187</td>
+      <td>−8.401</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>TC-1 15</td>
+      <td>4527</td>
+      <td>−8.216</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>AS 2034178</td>
+      <td>5035</td>
+      <td>−8.032</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>CP 775146</td>
+      <td>4190</td>
+      <td>−7.963</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>GW 6471</td>
+      <td>4618</td>
+      <td>−9.092</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Pravastatin sodium salt</td>
+      <td>2318</td>
+      <td>−7.825</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Fluvastatin sodium</td>
+      <td>3309</td>
+      <td>−7.717</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>TC NTR1 17</td>
+      <td>5087</td>
+      <td>−7.683</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>VER 155008</td>
+      <td>3803</td>
+      <td>−7.686</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>AMG PERK 44</td>
+      <td>5517</td>
+      <td>−7.618</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Glibenclamide</td>
+      <td>0911</td>
+      <td>−7.537</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Argatroban</td>
+      <td>1637</td>
+      <td>−7.454</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>KB SRC 4</td>
+      <td>4660</td>
+      <td>−7.444</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>GBR 12909 dihydrochloride</td>
+      <td>0421</td>
+      <td>−7.965</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>(±)-NBI 74330</td>
+      <td>4528</td>
+      <td>−7.366</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>CU CPT 4a</td>
+      <td>4883</td>
+      <td>−7.331</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>A 887826</td>
+      <td>4249</td>
+      <td>−7.315</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>SR 2640 hydrochloride</td>
+      <td>1804</td>
+      <td>−7.296</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>NSC 74859</td>
+      <td>4655</td>
+      <td>−7.258</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>RWJ 67657</td>
+      <td>2999</td>
+      <td>−7.217</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Lu AA 47070</td>
+      <td>4783</td>
+      <td>−7.659</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Edaglitazone</td>
+      <td>4784</td>
+      <td>−7.176</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>GSK 1562590 hydrochloride</td>
+      <td>5110</td>
+      <td>−7.11</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Flurizan</td>
+      <td>4495</td>
+      <td>−7.098</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>GW 9508</td>
+      <td>2649</td>
+      <td>−7.096</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>GSK 269962</td>
+      <td>4009</td>
+      <td>−7.051</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>AC 5216</td>
+      <td>5281</td>
+      <td>−6.986</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>DBZ</td>
+      <td>4489</td>
+      <td>−6.973</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>PF 04418948</td>
+      <td>4818</td>
+      <td>−6.957</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>GSK 2837808A</td>
+      <td>5189</td>
+      <td>−6.942</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Sal 003</td>
+      <td>3657</td>
+      <td>−6.935</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>PD 173212</td>
+      <td>3552</td>
+      <td>−7.029</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>NTRC 824</td>
+      <td>5438</td>
+      <td>−9.012</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>ONO AE3 208</td>
+      <td>3565</td>
+      <td>−6.889</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>RS 17053 hydrochloride</td>
+      <td>0985</td>
+      <td>−6.88</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Pitavastatin calcium</td>
+      <td>4942</td>
+      <td>−6.864</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>L-161,982</td>
+      <td>2514</td>
+      <td>−6.858</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>AMN 082 dihydrochloride</td>
+      <td>2385</td>
+      <td>−6.871</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>TC-N 1752</td>
+      <td>4435</td>
+      <td>−6.815</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>PF 431396</td>
+      <td>4278</td>
+      <td>−6.799</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>GNF 5837</td>
+      <td>4559</td>
+      <td>−6.754</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>KS 176</td>
+      <td>4169</td>
+      <td>−6.731</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Sarpogrelate hydrochloride</td>
+      <td>3739</td>
+      <td>−6.769</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>GKA 50</td>
+      <td>5133</td>
+      <td>−6.689</td>
+    </tr>
+    <tr>
+      <td>N1</td>
+      <td>Mifepristone</td>
+      <td>1479</td>
+      <td>0.286</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Top 50 peripherally targeted compounds from the TOCRIS screen library, ranked by glide score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>‘Rank’</th>
+      <th>Compound</th>
+      <th>Cat No</th>
+      <th>Glide gscore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>RWJ 21757</td>
+      <td>2719</td>
+      <td>−6.475</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ferrostatin 1</td>
+      <td>5180</td>
+      <td>−6.309</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>AA 29504</td>
+      <td>3972</td>
+      <td>−6.31</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>L-732,138</td>
+      <td>0868</td>
+      <td>−6.167</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>API-2</td>
+      <td>2151</td>
+      <td>−6.158</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>5-BDBD</td>
+      <td>3579</td>
+      <td>−6.13</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>LY 225910</td>
+      <td>1018</td>
+      <td>−6.082</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Formoterol hemifumarate</td>
+      <td>1448</td>
+      <td>−6.065</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>TC-S 7006</td>
+      <td>5240</td>
+      <td>−5.979</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>TCS 2210</td>
+      <td>3877</td>
+      <td>−6.005</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Sumatriptan succinate</td>
+      <td>3586</td>
+      <td>−5.952</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>MRS 3777 hemioxalate</td>
+      <td>2403</td>
+      <td>−6.964</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Thiamet G</td>
+      <td>4390</td>
+      <td>−6.079</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Abacavir hemisulfate</td>
+      <td>4148</td>
+      <td>−5.894</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>DDR1-IN-1</td>
+      <td>5077</td>
+      <td>−5.99</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Fexofenadine hydrochloride</td>
+      <td>2429</td>
+      <td>−5.859</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>6-Chloromelatonin</td>
+      <td>0443</td>
+      <td>−5.844</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>GSK 0660</td>
+      <td>3433</td>
+      <td>−5.864</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>PCA 4248</td>
+      <td>0571</td>
+      <td>−5.783</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Axtinib</td>
+      <td>4350</td>
+      <td>−5.765</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>DSR 6434</td>
+      <td>4809</td>
+      <td>−5.971</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Necrostatin-1</td>
+      <td>2324</td>
+      <td>−5.756</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Trifluorothymidine</td>
+      <td>4460</td>
+      <td>−5.838</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Cilndipine</td>
+      <td>2629</td>
+      <td>−5.729</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Efondipine hydrochloride monoethanolate</td>
+      <td>3733</td>
+      <td>−5.693</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>ITE</td>
+      <td>1803</td>
+      <td>−5.69</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>L-165,041</td>
+      <td>1856</td>
+      <td>−5.689</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>EB 47</td>
+      <td>4140</td>
+      <td>−6.033</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>GSK 2830371</td>
+      <td>5140</td>
+      <td>−5.657</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>AZD 1480</td>
+      <td>5617</td>
+      <td>−5.738</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Amlodipine besylate</td>
+      <td>2571</td>
+      <td>−5.638</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Melatonin</td>
+      <td>3550</td>
+      <td>−5.628</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Fludarabine</td>
+      <td>3495</td>
+      <td>−5.626</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>PF 06447475</td>
+      <td>5716</td>
+      <td>−5.609</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>SU 6668</td>
+      <td>3335</td>
+      <td>−5.608</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>AZD 5438</td>
+      <td>3968</td>
+      <td>−5.836</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>SU 11274</td>
+      <td>4101</td>
+      <td>−6.145</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>FPL 64176</td>
+      <td>1403</td>
+      <td>−5.543</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Sunitinib malate</td>
+      <td>3768</td>
+      <td>−5.543</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>YK 4-279</td>
+      <td>4067</td>
+      <td>−5.535</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Ralfinamide mesylate</td>
+      <td>4029</td>
+      <td>−5.678</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>ML 298 hydrochloride</td>
+      <td>4895</td>
+      <td>−5.504</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>FH 1</td>
+      <td>5254</td>
+      <td>−5.485</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>PLX 647 dihydrochloride</td>
+      <td>5102</td>
+      <td>−6.23</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>GPi 688</td>
+      <td>3967</td>
+      <td>−5.438</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>CP 94253 hydrochloride</td>
+      <td>1317</td>
+      <td>−5.441</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>CGP 57380</td>
+      <td>2731</td>
+      <td>−5.44</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>BW 723C86 hydrochloride</td>
+      <td>1059</td>
+      <td>−5.433</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>LY 364947</td>
+      <td>2718</td>
+      <td>−5.84</td>
+    </tr>
+  </tbody>
+</table>
 
 Dye release assay screens (96-well format) were conducted using compounds at a concentration of one micromolar, with positive hits defined as compounds exerting a 50 ± 5% decrease in M activity (Figure 6—figure supplement 2). Twenty-four hits were identified from the L1-targeted short list, and 15 for the P1 site.
 
@@ -123,19 +817,27 @@ Two L1-selected compounds, KB SRC 4 and GNF 5837 displayed antiviral efficacy at
 
 The considerable enrichment for potency, compared to rimantadine, seen amongst compounds selected by in silico screening supports the validity and utility of structure-guided models in their potential use as templates for rational drug development.
 
-## M channel inhibitors reduce the specific infectivity of ZIKV virions
+### M channel inhibitors reduce the specific infectivity of ZIKV virions
 
 It was important to establish whether M-targeted compounds might exert off-target effects upon virion stability, or other aspects of virus entry. Frustratingly, the role of (pr)M during virion egress precludes the efficient generation of Flavivirus envelope pseudotype systems in their absence, an otherwise useful tool in this regard. As an alternative, compound-treated ZIKV particles were compared to solvent controls following ultracentrifugation and separation using a continuous iodixinol gradient. This not only allows characterisation of specific infectious species, but also sequesters small molecules at the top, lower-density range of the gradient, preventing incidental exposure of target cells when inoculating with virus-containing fractions, and so minimising potential cell off-target effects.
 
 Interestingly, ZIKV infectivity profiles contained two peaks of infectivity when samples were diluted 1:10 onto target cells: a low-density peak at ~1.11 g/ml, and a high-density peak at 1.13–1.14 g/ml. However, detection of infectivity within the low-density peak diminished upon dilution at 1:100 or 1:1000, and this was not the case for the high-density peak (Figure 7—figure supplement 1). Interestingly, the distribution of the ZIKV E protein was considerably more abundant within lower-density fractions compared to the main infectivity peak at higher density (Figure 7A). Drug treatment specifically reduced infectivity (measured at 1:10 supernatant dilution to maintain both species) within the high-density infectious fraction compared to controls; the lower-density fractions were unaffected (Figure 7A, B). Importantly, as well as a global loss of infectivity, specific infectivity within the high-density fraction normalised by (reverse transcriptase quantitative polymerase chain reaction) RT-qPCR for ZIKV RNA (E gene target) was also significantly reduced (Figure 7C), meaning that intact virions were rendered less infectious following exposure to inhibitors rather than being physically disrupted via non-specific ‘virolysis’. Moreover, based upon previous studies, the concentration of inhibitors added to target cells from high-density fractions would have been negligible, excluding artefactual effects upon cell entry.
 
-## Rimantadine prevents ZIKV viraemia in vivo
+![Figure 7.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig7-v2.jpg)
+
+**Figure 7.:** To exclude the possibility that early effects upon ZIKV infection were due to a directly damaging effect of compounds upon virion integrity, particles were concentrated and purified from Vero cell supernatants by PEG-precipitation and ultracentrifugation through a sucrose cushion. Virions were then dosed with inhibitors prior to ultracentrifugation through a continuous iodixinol gradient. This not only purifies virions according to buoyant density, but separates them from small molecules, precluding off-target effects upon cells during ensuing infection (see methods for details). (A) Infectivity profile from a representative gradient experiment where purified virions were treated with rimantadine (40μM), GNF 5837 (1 μM), or AA 29504 (10 μM) prior to ultracentrifugation (or, DMSO at equivalent concentrations). 10μl from each fraction was then used to infect naive Vero cells in a 96-well plate, representing a 10-fold dilution. Infected cells were detected by immunofluorescence and counted as described elsewhere. A further 15μl was analysed by western blotting for the (E)nvglycoprotein (lower panel). (B) Zoomed in view of gradient in A, with Y-axis capped at 20,000 units to delineate infectivity profiles. (C) Specific infectivity of virions in the presence/absence of inhibitors based upon q-RT-PCR normalisation confirms the reduction of infectivity rather than disrupted virions. p≤0.05, Student's t-test. Error bars represent standard deviations based upon n=3 biological replicates.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Identical gradients were titred upon Vero cells across a 10-fold dilution series. More concentrated innoculae (1:10) resulted in a detectable lower-density peak, whereas further dilution (1:100, 1:1000) led to this diminishing whilst the higher-density peak infectivity remained. Investigations into the composition of the low-density peak are ongoing.
+
+### Rimantadine prevents ZIKV viraemia in vivo
 
 We assessed rimantadine antiviral effects in vivo using a preclinical ZIKV infection model (Pingen et al., 2016) comprising C57BL/6 mice and transient blockade of the interferon alpha receptor type 1 (IFNAR1). This allows the establishment of robust infection within an immunocompetent host and does not lead to the severe sequelae seen within immunodeficient systems. Moreover, the model incorporates improved physiological relevance via concomitant biting at the inoculation site by female A. aegypti mosquitos, which enhances the efficiency of infection (Figure 8A).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/68404/elife-68404-fig8-v2.jpg)
 
-**Figure 8.:** (A) Schematic of preclinical experiments involving transient IFNAR blockade, augmentation of ZIKV infection through mosquito bites and treatment with rimantadine. (B) RT-qPCR for ZIKV E relative to 18S RNA from skin tissue at injection site derived from one of two representative experiments. (C) Infectious titre of serum derived from rimantadine treated or control mice, determined by plaque assay in BHK21 cells. ****p ≤ 0.0001, Student’s t-test.Figure 8—source data 1.
+**Figure 8.:** (A) Schematic of preclinical experiments involving transient IFNAR blockade, augmentation of ZIKV infection through mosquito bites and treatment with rimantadine. (B) RT-qPCR for ZIKV E relative to 18S RNA from skin tissue at injection site derived from one of two representative experiments. (C) Infectious titre of serum derived from rimantadine treated or control mice, determined by plaque assay in BHK21 cells. ****p ≤ 0.0001, Student’s t-test.
 
 Ten C57BL/6 mice received a sub-cutaneous dose of 20 mg/kg rimantadine (or carrier control), 30 min prior to ZIKV infection (103 plaque forming units, pfu) by injection into the dorsal side of one hind foot, immediately following exposure to up to five mosquito bites. A second bolus of rimantadine was administered 5 hr post-infection. Animals were sacrificed and processed 24 hr post-infection, harvesting tissue from the inoculation site as well as blood via cardiac puncture. RT-qPCR analysis confirmed equivalent copies of viral RNA present within tissues at the inoculation site (Figure 8B), whereas viraemia was dramatically reduced within rimantadine-treated animals, measured by BHK cell plaque assay (Figure 8C). Thus, rimantadine exerted an antiviral effect in vivo that prevented dissemination of the virus, consistent with cell culture observations, and supporting the druggability of M in vivo.
 
@@ -163,6 +865,65 @@ Whilst a blunt tool in terms of potency, rimantadine (or other prototypic blocke
 
 Thus, a series of chemically distinct molecules was identified using in silico HTS targeting each binding site, derived from a drug repurposing library. Hits were shortlisted for predicted binding accounting for hydrophobic exposure-induced penalties at the peripheral site, chemical properties (Lipinski), and those predicted to bind both sites were removed from both lists. Screening of shortlisted compounds using dye release assays identified multiple hits targeting both sites, several of which were corroborated by testing for antiviral effects in ZIKV infectious assays. (Table 3).
 
+**Table 3.**
+ Properties of hits taken forward into ZIKV cell culture screens, including effects versus canonical targets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug</th>
+      <th>M-binding site (EC/IC50)</th>
+      <th>Canonical target (Ki/EC/IC50)</th>
+      <th>MTT effect?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rimantadine</td>
+      <td>Lumen (80μM)</td>
+      <td>IAV M2 (variable)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>GNF 5837</td>
+      <td>Lumen (~80nM)</td>
+      <td>Tropomyosin receptor kinases (TrK) A, B, and C (10nM)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>KB SRC 4</td>
+      <td>Lumen (~250nM)</td>
+      <td>c-Src (Ki = 44nM)</td>
+      <td>Yes, 500nM</td>
+    </tr>
+    <tr>
+      <td>GSK 2837808A</td>
+      <td>Lumen (~40μM)</td>
+      <td>Lactate dehydrogenase A and B (LDHA/B), 2.6/43nM</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Formoterol</td>
+      <td>Periphery (~80μM)</td>
+      <td>β2-Adrenergic receptor agonist (pM range)</td>
+      <td>Yes, 100μM</td>
+    </tr>
+    <tr>
+      <td>L-732, 183</td>
+      <td>Periphery (~40μM)</td>
+      <td>Tachykinin NK1 receptor antagonist (IC50 = 2.3nM)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>AA 29504</td>
+      <td>Periphery (~10μM)</td>
+      <td>GABAA receptor agonist (IC50 = 9–13μM)</td>
+      <td>Marginal, 20μM</td>
+    </tr>
+  </tbody>
+</table>
+
 Despite the correlation of anti-M potencies in vitro with antiviral effects, it cannot yet be excluded that antiviral efficacy may result from indirect mechanisms linked to the canonical cellular targets of these repurposed ligands. By far the most potent hit against M was GNF 5837, which was predicted to bind the L1 site. GNF 5837 is a potent inhibitor of TrKs A, B, and C, high-affinity receptors for nerve growth factor that regulate neuronal survival and differentiation (Albaugh et al., 2012). GNF 5837 has an IC50 of ~10 nM against its cognate targets, yet only achieved an antiviral ~EC50 at 80 nM in BHK cell plaque-reduction assays. Importantly, TrK expression is primarily restricted to the (central nervous system) CNS and the thyroid, with only very low expression in kidney tissues according to the human protein atlas. Moreover, we could find no reference to TrK expression in either Vero or BHK cells. Other lumenal hits comprised the c-Src inhibitor, KB SRC 4 (Brandvold et al., 2012) (250 nM), and GSK 2837808A (Billiard et al., 2013) (40 μM), an inhibitor of lactate dehydrogenases A and B (LDHA/B). KB SRC 4 has an in vitro Ki of 44 nM versus c-Src (higher against other Src-related kinases), whilst GSK 2837808A has an IC50 of 2.6 and 43 nM against LDHA/B, respectively; the former impeded cell metabolic activity at 500 nM, whilst the latter had no effect. It will be critical to establish, for example via use of knock-down cell lines, whether compounds such as GSK 2837808A, GNF 5837, and KB SRC 4 are indeed affecting ZIKV replication specifically, as it is eminently conceivable that their effects may be indirect.
 
 The peripheral hits tested in culture comprised Formoterol hemifumarate (80 μM), L-732 183 (40 μM), and AA 29504 (10 μM). Only high concentrations of Formoterol impeded metabolic activity (100 μM). Formoterol is a long-acting β2-adrenergic receptor agonist (IC50 in pM range), used as a bronchodilator in the treatment of chronic obstructive pulmonary disease (Berger and Nadel, 2008). L-732 183 is a potent competitive tachykinin NK1 receptor antagonist (IC50 = 2.3 nM), the receptor for substance P (Quartara and Maggi, 1997), whilst AA 29504 (Vardya et al., 2012) is a positive allosteric modulator of GABAA receptors (IC50 = 9–13 μM). Again, whilst there is a considerable difference in potency for both Formoterol and L-732 183 targeting their canonical targets compared to antiviral effects, it will be critical to establish whether these are independent phenomena. Notably, this is less clear in terms of differential potency of AA 29504, although, much like the case for GNF 5837, GABAA receptors, the target of AA 29504, are not expressed in the kidney. However, it should be emphasised that repurposed compounds provide the structural basis for further bespoke drug development targeting M channels, rather than being used directly as antivirals, providing opportunities to further ensure specificity through the establishment of structure–activity relationships (SARs) and the selection of drug resistant ZIKV.
@@ -177,21 +938,21 @@ In summary, this work supports the formation of membrane channels by the ZIKV M 
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Vero (African Green Monkey kidney (ATCC Cat# CRL-1586, RRID:CVCL_0574)) and BHK-21 (baby hamster kidney (ATCC Cat# CCL-10, RRID:CVCL_1915)) cells were cultured in Dulbecco’s modified essential cell culture media, supplemented with 10% (foetal calf serum) FCS and 100 units/ml penicillin and 0.1 mg/ml streptomycin, at 37°C in 5% CO2 in a humidified culture incubator. Cells were passaged every 2–3 days using trypsin/(Ethylenediaminetetraacetic Acid) EDTA (Sigma), sub-dividing cultures using ratios between 1:5 and 1:10, depending upon confluency. C6/36 cells (derived from A. albopictus mosquitoes (ATCC Cat# CRL-1660, RRID:CVCL_Z230)) were cultured in L-15 media, supplemented with 10% (Triptose phosphate broth) TPB, 10% FCS and 100 units/ml penicillin and 0.1 mg/ml streptomycin, at 28°C with no added CO2.
 
-## Virus stocks
+### Virus stocks
 
 ZIKV/H. sapiens/Brazil/PE243/2015 (PE243) Zika virus (Donald et al., 2016) was obtained from a patient in Recife. It has been sequenced and was supplied (AK laboratory) as a frozen viral stock. This was grown once in BHK-21 cells then passaged once in C6/36 cells, titrated, and stored frozen (−80°C) at 6 × 106 PFU/ml. New stocks for use in cell culture were generated in house at 1.6 × 106 PFU/ml in Vero cells (cell culture assays). C6/36-derived stocks were used for in vivo assays. Briefly, ~6 × 106 Vero cells were seeded into a T75 (Corning) and left to settle over 4 hr. Cells were then washed once in (phosphate buffered saline) PBS, prior to addition of PE243 virus in complete (Dulbecco's Modified Eagle Medium) DMEM media + 10 mM (4-(2-Hydroxyethyl)piperazine-1-ethane-sulfonic acid) HEPES (Gibco), at a multiplicity of infection (MOI) of 0.001 PFU/cell. Infections were allowed to proceed for 1 hr at 37°C, 5% CO2, then supernatants were replaced with fresh media. Development of ~60% cytopathic effect led to harvesting and clarification of supernatants (3184 × g, 20 min, 4°C, in an Eppendorf 5810 R centrifuge). Aliquots were then titred by plaque assay (see below), snap frozen, and stored at −80°C.
 
-## Determination of virus titre and inhibitor assays
+### Determination of virus titre and inhibitor assays
 
 Plaque assays for titration (Vero) or plaque-reduction (BHK21) assays were performed upon cells at 80% confluency in 12-well plates. For titration, 10-fold serial dilutions of viral supernatants were made in 0.75% PBSA (PBS containing 0.75% bovine serum albumin) and 200 μl added to wells for 1 hr with rocking every 15 min. 2 ml overlay media were then added (2× (Minimal Essential Media) MEM medium (Gibco), 4% FCS (Gibco), 200 units/ml penicillin and 0.2 mg/ml streptomycin, mixed with viscous 1.2% Avicel (FMC Biopolymer)) and cells incubated for 5 (Vero) or 3 (BHK21) days at 5% CO2 and 37°C. Supernatants were removed and cells fixed in PBS/10% paraformaldehyde (PFA) for 1 hr at 4°C prior to staining with 0.1% Toludine Blue (Sigma) for 30 min. Plaque-reduction assays comprised duplicate wells per condition with 10 PFU added in the presence of inhibitor or DMSO solvent control (maximum of 0.1% vol/vol).
 
 Single cell infectious assays were conducted upon Vero cells seeded at 2000 cells per well in a 96-well cell culture dish (Greiner Bio-One). After settling for 4 hr, cells were incubated for 1 hr with virus stock diluted in complete medium at an MOI of 1 PFU/cell. Following infection virus-containing media was removed, cells were washed with PBS and replaced with fresh cell culture media, prior to incubating at 37°C and 5% CO2 for 48 hr in a humidified incubator. Cells were then washed three times in PBS, fixed using 4% PFA for 10 min at RT, and stained for ZIKV E. Briefly, cells were permeabilised using 0.1% TX-100 in PBS at (Room temperature) RT for 10 min, then stained using a mouse monoclonal anti-ZIKV E antibody (Aalto Bio Reagents #AZ1176) diluted 1:500 in 10% vol/vol FCS in PBS overnight at 4°C. Cells were washed three times in PBS prior to adding goat anti-mouse Alexa Fluor 488-nm-conjugated secondary antibody (Thermo Fisher Scientific Cat# A-11001, RRID:AB_2534069), diluted 1:500 in 10% vol/vol FCS in PBS at RT for 1 hr. Cells were washed another three times in PBS and left in PBS for imaging. Infectious units (FFU) were determined using an IncuCyte Zoom (Essen Bioscience) to determine numbers of fluorescently labelled cells as well as confluency, as described previously (Stewart et al., 2015). The ×10 objective was used to take four images covering each well, with positive and negative control wells allowing modification of the processing definition parameters for optimal detection.
 
-## Preclinical ZIKV model
+### Preclinical ZIKV model
 
 In vivo animal models were approved by the University of Leeds local ethics review committee. Procedures were carried out in accordance with the United Kingdom Home Office regulations under the authority of the appropriate project and personal license (awarded to CSM, and CSM/DL, respectively). Wild-type C57BL/6j mice (RRID:IMSR_JAX:000664) were bred in-house and maintained under specific pathogen-free conditions. Mice were age and sex matched in all in vivo experiments, and used between 4 and 12 weeks of age.
 
@@ -199,49 +960,53 @@ Mice were dosed with 1.5 mg InVivoMAb anti-mouse IFNAR-1 antibody (Sino Biologic
 
 Mice were culled via a schedule 1 method. Skin from the bitten foot was dissected and placed in 0.5 ml RNAlater (Sigma-Aldrich, USA) in 1.5 ml tubes. Blood was collected from the ventricles by cardiac puncture, and then centrifuged to isolate serum and stored at −80°C.
 
-## Mosquito rearing
+### Mosquito rearing
 
 A. aegypti (Liverpool strain, RRID:NCBITaxon_7159) mosquitoes were reared at 28°C with 80% humidity conditions with a 12-hr light/dark cycle. Eggs were hatched overnight from filter papers in trays containing approximately 1.5 cm depth of water. Larvae were fed Go-cat cat food until pupation. Pupae were placed in water-filled containers inside BugDorm mosquito cages where they were left to emerge. A 10% wt/vol sucrose solution was fed to adult mosquitoes. Mosquitoes were ready for biting experiments from 21 days post-hatching.
 
-## RNA purification and quantification
+### RNA purification and quantification
 
 Skin tissue was lysed in 1 ml Trizol (Invitrogen/Thermo) by shaking with 7 mm stainless steel beads at 50 Hz for 10 min on a Tissue Lyser. 200 μl chloroform was added, and samples mixed by inversion, prior to centrifugation in a microcentrifuge at 12,000 × g for 15 min at 4°C and removal of the top aqueous phase to a fresh tube containing an equal volume of 70% (vol/vol) EtOH. RNA was then extracted using a PureLink RNA Mini kit (Life Technologies) according to the manufacturer’s instructions. cDNA was synthesised from 1 μg of RNA using the ‘Applied Biosystems High-Capacity RNA to cDNA’ kit, according to the manufacturer’s instructions.
 
 cDNA was diluted 1 in 5 in RNAse-free water, then introduced into a master mix comprising cDNA, primers (ZIKV E Fwd: AGGCAAACTGTCGTGGTTCT; ZIKV E Rev: TCAGACCCAACCACATCAGC), water and SYBRÒ green mix. A non-template control comprising RNAse-free water in place of cDNA was also included. Triplicate technical replicates were made for each biological replicate and a standard curve generated by 10-fold serial dilution of the 10−2 PCR standard. (polymerase chain reaction) PCR plates were run on an Applied Biosystems Quantstudio 7 flex machine. Ct value was calculated automatically using the Quantstudio software, which detects the logarithmic phase of the PCR reaction. Samples were quantified according to their position on the standard curve, which was required to have close to 100% efficiency, indicated by R2 ≥ 0.998 and a slope of 3.3. Melt curves were conducted to control for primer specificity. Analysis of qPCR data was done with Microsoft Excel by the use of the median of the technical replicates and normalising them to the median of the technical replicates of the housekeeping genes. GraphPad Prism software was used to generate graphs and the non-parametric Mann–Whitney test was used for comparisons between two groups.
 
-## Western blotting
+### Western blotting
 
 6-well plates seeded with 1 × 105 Vero cells were infected with ZIKV at an MOI of 0.1 PFU/cell as above, then media applied containing increasing concentrations of rimantadine or a DMSO solvent control (0.1% vol/vol). Cells were harvested at 48 hr post-infection by washing three times in 1 ml PBS and scraping into a 1.5-ml Eppendorf tube. Cells were pelleted at 10,000 × g in a microcentrifuge, then whole-cell lysates were made in 200 μl Enriched Broth Culture lysis buffer [50 mM Tris HCl, pH 8.0, 140 mM NaCl, 100 mM NaF, 200 μM Na3VO4, 0.1% (vol/vol) sodium dodecyl sulfate (SDS), 1% Triton X-100, Roche complete ULTRA protease inhibitor cocktail]. Lysates were normalised for protein concentration using a Pierce BCA Protein Assay Kit (Thermo Fisher Scientific), then diluted with an equal volume of 2× Laemmli Buffer (100 mM Tris HCl pH 6.8, 4% (vol/vol) SDS, 20% (vol/vol) glycerol, 10 mM (dithiothreitol) DTT, 0.025% (wt/vol) Bromophenol Blue). Lysates were denatured by heating for 10 min at 95°C prior to separation on hand-cast Tris-glycine polyacrylamide gels. Proteins were resolved by SDS–PAGE (25 mM Tris–Cl, pH 8.0, 250 mM glycine, 0.1% SDS) then transferred to a polyvinylide fluoride (Immunoblot-FL Merck Millipore) membrane, pre-activated in 100% MeOH, using a Hoeffer semi-dry transfer rig, sandwiched in blotting paper soaked in transfer buffer (25 mM Tris–Cl, 250 mM glycine, pH 8.3, 20% vol/vol MeOH). Transfers proceeded for 1–2 hr at 120–240 mA constant current, depending on the number of gels. Membranes were blocked in 5% wt/vol fat-free milk in TBS-T (Tris-buffered saline (50 mM Tris–Cl, pH 7.5, 150 mM NaCl) with 0.1% vol/vol Tween 20, Sigma-Aldrich) for 4 hr at RT with gentle shaking, prior to incubation with primary antibodies diluted in 5% (wt/vol) BSA in TBS-T at 4°C overnight with gentle shaking (Anti-E 1:10,000, mouse monoclonal, Aalto Bio Reagents #AZ1176). Membranes were then washed three times for 10 min in TBS-T, prior to incubation with secondary antibody (1/10,000 goat anti-mouse IgG–horseradish peroxidase conjugate, Sigma #A4416, RRID:AB_258167). Blots were visualised using ECL prime western blotting detection reagent (GE Healthcare Life Sciences) by exposure to X-ray film, with protein sizes determined by comparison with pre-stained molecular weight markers (Seeblue Plus2, Invitrogen).
 
-## Purification and density gradient separation of ZIKV virions
+### Purification and density gradient separation of ZIKV virions
 
 This was undertaken using similar methods to our previous studies of HCV (Shaw et al., 2020). Briefly, 10 ml of infectious ZIKV culture Vero cell supernatants were clarified and concentrated by the addition of PEG-8000/PBS to a final concentration of 10% wt/vol, mixing by several inversions, and incubation overnight at 4°C. Virion concentrates were pelleted at 2000 rpm in a benchtop centrifuge at 4°C and then resuspended in 0.5 ml PBS. This was then layered over a 1-ml 20% wt/vol in PBS sucrose cushion and virions pelleted at 100 K × g in a Beckmann TLS-55 rotor at 4°C for three hr. Pellets were left to resuspend for 1 hr at 4°C in 200 μl PBS, then layered over a 10–40% vol/vol iodixinol/PBS gradient. These were spun in the same conditions as above but for 2 rather than 3 hr. Gradients were fractionated from the top into 24 equal samples by careful pipetting, then 10 μl diluted into media to assess infectivity in Vero cells seeded into 96-well plates as described above. Virion RNA was harvested from samples and quantified as described above. Western blotting was performed upon 15 μl of gradient sample with 5 μl 4× Laemmli sample buffer added followed by boiling for 10 min prior to SDS–PAGE and immunoblotting for E protein as described above.
 
-## Native PAGE
+### Native PAGE
 
 M peptide was solubilised at 37°C for 10 min in 300 mM detergent 1,2-dihexanoyl-sn-glycero-3-phosphocholine (DH6PC), in Liposome Assay Buffer (10 mM HEPES, pH 7.4, 107 mM NaCl). Native-PAGE loading dye (150 mM Tris–Cl pH 7.0, 30% (vol/vol) glycerol, 0.05% (wt/vol) bromophenol blue) was added to samples, which were loaded onto gradient precast gels (4–20%) (TGX, Bio-Rad) and run using Native-PAGE running buffer (250 mM Tris–Cl, pH 8.5, 192 mM glycine) at 140 V for 1 hr. Gels were stained with Coomassie Brilliant Blue (0.1% (wt/vol) Coomassie Blue, 10% acetic acid, 50% MeOH). Unstained SDS-free molecular weight markers (Sigma-Aldrich) were used to estimate protein size.
 
-## Synthetic M peptide
+### Synthetic M peptide
 
 M peptide with an N-terminal truncation (residues 18–75) was manufactured by Alta Bioscience, provided as a lyophilised powder at >95% purity based upon HPLC (Figure 1—figure supplement 1). Peptides contained the sequence:
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 5 μg of M peptide was incubated in 10 mM HEPES, 107 mM NaCl and varying concentrations of DH6PC for 10 min at RT. Sample was added to copper grids with a continuous amorphous carbon film, before washing with water, then stained with 1% uranyl acetate. Grids were examined using a Tecnai F20 at 120 kV on a FEI CETA camera with a sampling of 4.18 Å per pixel. Particles were manually picked and 2D class averaging were carried out using RELION 3 software (Zivanov et al., 2018).
 
-## Liposome dye release assay
+### Liposome dye release assay
 
-L-α-phosphatidic acid (α-PA), L-α-phosphatidyl choline (α-PC), and L-α-phosphatidyl ethanolamine with lissamine rhodamine b labelled headgroups (α-PE) from chicken eggs, supplied at 10 mg/ml in chloroform, were purchased from Avanti Polar Lipids (Cat# 840101, 131601, 810146). Aliquots were made using Hamilton glass syringes in glass vials, then stored at −80°C. Lipids were combined into a glass tube on ice under non-oxygen gas (Nitrogen), as a total of 1 mg (50 μl PA, 50 μl PC, and 5 μl PE). Lipids were dried initially under nitrogen, then overnight using a vacuum desiccator at RT. Lipids were then rehydrated in CF-containing buffer (50 mM CF, 10 mM HEPES–NaOH pH 7.4, 107 mM NaCl) to 2 mg/ml, with vigorous shaking overnight at RT. The following day, liposomes were generated via extrusion (15 passes) using an Avanti mini extruder housing a 0.4-μM filter (Whatmann), at 37°C. Resulting unilamellar liposomes were washed at least three times in liposome assay buffer (10 mM HEPES pH 7.4, 107 mM NaCl) to remove unincorporated CF, pelleting liposomes at 100,000 × g for 15 min at RT using a MLS-50 rotor in a Beckman Coulter TLX ultracentrifuge. Final pellets were resuspended in assay buffer (500 μl) and concentration determined by comparing rhodamine absorbance (OD570 nm) in pre-extrusion (diluted 1:20) and final samples:Liposomeconcentration(mM)={2.75mM(averagelipidmolarity/(OD570pre×20)}×OD570post
+L-α-phosphatidic acid (α-PA), L-α-phosphatidyl choline (α-PC), and L-α-phosphatidyl ethanolamine with lissamine rhodamine b labelled headgroups (α-PE) from chicken eggs, supplied at 10 mg/ml in chloroform, were purchased from Avanti Polar Lipids (Cat# 840101, 131601, 810146). Aliquots were made using Hamilton glass syringes in glass vials, then stored at −80°C. Lipids were combined into a glass tube on ice under non-oxygen gas (Nitrogen), as a total of 1 mg (50 μl PA, 50 μl PC, and 5 μl PE). Lipids were dried initially under nitrogen, then overnight using a vacuum desiccator at RT. Lipids were then rehydrated in CF-containing buffer (50 mM CF, 10 mM HEPES–NaOH pH 7.4, 107 mM NaCl) to 2 mg/ml, with vigorous shaking overnight at RT. The following day, liposomes were generated via extrusion (15 passes) using an Avanti mini extruder housing a 0.4-μM filter (Whatmann), at 37°C. Resulting unilamellar liposomes were washed at least three times in liposome assay buffer (10 mM HEPES pH 7.4, 107 mM NaCl) to remove unincorporated CF, pelleting liposomes at 100,000 × g for 15 min at RT using a MLS-50 rotor in a Beckman Coulter TLX ultracentrifuge. Final pellets were resuspended in assay buffer (500 μl) and concentration determined by comparing rhodamine absorbance (OD570 nm) in pre-extrusion (diluted 1:20) and final samples:
+
+$$
+Liposomeconcentration(mM)={2.75mM(averagelipidmolarity/(OD570pre\times20)}\timesOD570post
+$$
 
 Dye release assays were conducted using up to 800 nM peptide (480 nM standard) in DMSO (maximum of 5% vol/vol DMSO per well), with 50 μM liposomes in a total reaction volume of 100 μl. Inhibitors were pre-incubated with peptide for 5 min in flat-bottomed, black 96-well plates (Greiner Bio-One) at RT, prior to the rapid addition of chilled liposome suspensions in assay buffer. CF release compared to solvent controls and liposomes alone was measured over 30 min at 37°C with initial mixing, using a FLUOstar Galaxy Optima plate-reader BMG Labtech, λex 485 nm/λem 520 nm. Gain adjustment at 90% total fluorescence was set using a pre-measured sample containing 0.5% vol/vol Triton X-100 to lyse all liposomes present. Endpoint values from three technical repeats were calculated for each averaged biological repeat and significance between the latter determined using multiple paired Student’s t-tests. Assays assessing pH dependence utilised assay buffers at stated pH, with endpoint supernatants re-buffered using 2.5 μl 1 M Tris–Cl [pH 7.5] prior to clarifying by ultracentrifugation as above and determining fluorescence.
 
-## In silico analysis of M protein
+### In silico analysis of M protein
 
 Alignment of Flavivirus M sequences was performed using Clustal Omega (https://www.ebi.ac.uk/Tools/msa/clustalo/, RRID:SCR_001591), with outputs visualised using BOXSHADE 3.21 (https://embnet.vital-it.ch/software/BOX_form.html, RRID:SCR_007165), and curated in Jalview (RRID:SCR_006459). Conservation outputs were fed into an online tool WEBLOGO (https://weblogo.berkeley.edu/, RRID:SCR_010236) to generate a protein sequence LOGO to illustrate the high degree of conservation between >700 isolates.
 
 M protein tertiary structures were taken from PDB: 5IRE. Online servers used to determine probability of trans-membrane regions comprised TMHMM v2.0 (http://www.cbs.dtu.dk/services/TMHMM/, RRID:SCR_014935), TOPCONS (https://topcons.cbr.su.se/, RRID:SCR_006977), Phobius (https://phobius.sbc.su.se/, RRID:SCR_015643), SPLIT v4.0 (http://splitbioinf.pmfst.hr/split/4/), and MEMSAT-SVM (https://bio.tools/memsat-svm, RRID:SCR_010248). Amino acid properties were determined using EMBOSS Pepinfo (https://www.ebi.ac.uk/Tools/seqstats/emboss_pepinfo/, RRID:SCR_008493).
 
-## Coarse-grained MD simulations
+### Coarse-grained MD simulations
 
 Raw data for all simulations can be found at https://doi.org/10.5518/1505.
 
@@ -249,20 +1014,148 @@ Coarse-grained (CG) Molecular Dynamic simulations of monomeric M proteins were p
 
 A POPC bilayer was built using INSANE (INSert membrANE) CG tool (Wassenaar et al., 2015). Systems were solvated with CG water particles and ions were added to neutralise the system to a final concentration of 150 mM NaCl. Prior to simulation, systems were energy minimised using the steepest descent algorithm for 500 steps in GROMACS and equilibrated for 10 ns with the protein backbone restrained. The temperature was set at 323 K and controlled by V-rescale thermostat (coupling constant of 1.0) (Bussi et al., 2007). Pressure was controlled by Parrinello–Rahman barostat (coupling constant of 1.0 and a reference pressure of 1 bar) (Parrinello and Rahman, 1981). Integration step was 20 fs (Table 4).
 
-## Atomistic MD simulations
+**Table 4.**
+ Summary of course-grain simulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CG simulation</th>
+      <th>Membrane composition</th>
+      <th>Duration (µs)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 TMD POPC</td>
+      <td>POPC (100)</td>
+      <td>5 × 3</td>
+    </tr>
+    <tr>
+      <td>2 TMD POPC</td>
+      <td>POPC (100)</td>
+      <td>5 × 3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Atomistic MD simulations
 
 The all-atom hexameric and heptameric M protein oligomers were first energy minimised prior to conversion into CG using the Martini 2.2 forcefield and as above inserted into the bilayer system using INSANE. The systems were then equilibrated in CG restraining the protein. The systems were then converted back into atomistic resolution using the Martini backward tool (Wassenaar et al., 2014). Simulations were then energy minimised, equilibrated for 20 ns with the protein Cα atoms restrained and run using the CHARMM36 (RRID:SCR_014892) force field (Huang and MacKerell, 2013). Two or three repeat simulations (see Table 5 for more information) were run for 200 ns for each system. Temperature and pressure were controlled using the v-rescale thermostat (Bussi et al., 2007) and Parrinello–Rahman barostat (Parrinello and Rahman, 1981), respectively. Bond lengths were kept constant using the LINCS algorithm (Hess et al., 1998). The time-step was 2 fs and the temperature set to 323 K.
 
-## Design of hexameric and heptameric M channel structures
+**Table 5.**
+ Summary of all-atom simulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>AA simulation</th>
+      <th>Membrane composition</th>
+      <th>Duration (ns)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Hexamer (lumenal helix; compact vs radial; pH)</td>
+    </tr>
+    <tr>
+      <td>H2 Radial</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H2 Radial protonated</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H2 Compact</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H2 Compact protonated</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H3 Radial</td>
+      <td>POPC (100)</td>
+      <td>3 × 200</td>
+    </tr>
+    <tr>
+      <td>H3 Radial protonated</td>
+      <td>POPC (100)</td>
+      <td>3 × 200</td>
+    </tr>
+    <tr>
+      <td>H3 Compact</td>
+      <td>POPC (100)</td>
+      <td>3 × 200</td>
+    </tr>
+    <tr>
+      <td>H3 Compact protonated</td>
+      <td>POPC (100)</td>
+      <td>3 × 200</td>
+    </tr>
+    <tr>
+      <td colspan="3">Heptamer (lumenal helix; compact vs radial; pH)</td>
+    </tr>
+    <tr>
+      <td>H2 Radial</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H2 Radial protonated</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H2 Compact</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H2 Compact protonated</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H3 Radial</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H3 Radial protonated</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H3 Compact</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+    <tr>
+      <td>H3 Compact protonated</td>
+      <td>POPC (100)</td>
+      <td>2 × 200</td>
+    </tr>
+  </tbody>
+</table>
+
+### Design of hexameric and heptameric M channel structures
 
 A python script (RRID:SCR_008394) was used to calculate the co-ordinates of each monomer within the oligomeric structure, a radius of 1.3 nm was used for hexamer:
 
-## In silico docking and virtual HTS
+### In silico docking and virtual HTS
 
 Maestro (Schrödinger, RRID:SCR_016748) was used for assessing ligand interactions with the compact hexameric M channel structure. This was minimised in a lipid membrane environment using an Optimised Potentials for Liquid Simulations (OPLS) force field and used for docking of unbiased compound analogues. The Maestro SiteMap function was used to assess the druggability score for three potential lumenal binding sites (L1–3), and another on the membrane-exposed periphery was identified manually.
 
 For unbiased screening, a library of 1280 FDA-approved molecules (TOCRIS Screen, Biotechne. https://www.ebi.ac.uk/Tools/seqstats/emboss_pepinfo/) underwent the LigPrep function using Maestro (Schrödinger) software. The in-built SiteMap function was then used on the M Protein structure to generate a Glide (RRID:SCR_000187) grid for the docking of Rimantadine in the lumenal site (under aqueous conditions) using extra precise (XP) Glide setting. This was followed by docking in the same site mimicking membrane conditions. Rimantadine was then docked into the peripheral site under both aqueous and membrane conditions to generate 32 poses in each of the four scenarios. The prepared Tocris library was also docked into the two sites on the M protein structure using the four scenarios and Glide settings established using Rimantadine (lumenal-aqueous, lumenal-membrane, peripheral-aqueous, and peripheral-membrane). Duplicate poses were removed, and a final short list of 50 molecules was generated at each for in vitro testing.
 
-## Availability of materials
+### Availability of materials
 
 ZIKV M peptides can only be provided under an MTA if technical issues are shown to prevent commercial or in-house synthesis, within the limitations of stocks available in the SG laboratory. ZIKV M channel model PDB files are available upon request, again under an MTA. Raw data for MD simulations is available at https://doi.org/10.5518/1505.

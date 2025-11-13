@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02rdhhs90 Department of Mathematics, Emmanuel College Boston United States
+1. Department of Mathematics, Emmanuel College Boston United States ([ROR:02rdhhs90](https://ror.org/02rdhhs90))
 
 † Corresponding author
 

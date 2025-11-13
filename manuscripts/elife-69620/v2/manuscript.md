@@ -23,10 +23,10 @@
 
 ### Affiliations
 
-1. https://ror.org/057qpr032 University of Bordeaux, CNRS, Interdisciplinary Institute for Neuroscience, IINS, UMR 5297 Bordeaux France
-2. https://ror.org/057qpr032 University of Bordeaux, CNRS, INSERM, Bordeaux Imaging Center, BIC, UMS 3420, US 4 Bordeaux France
-3. https://ror.org/057qpr032 University of Bordeaux, Bordeaux Proteome Bordeaux France
-4. https://ror.org/057qpr032 University of Bordeaux, Inserm U1212, CNRS UMR 5320, IECB Pessac France
+1. University of Bordeaux, CNRS, Interdisciplinary Institute for Neuroscience, IINS, UMR 5297 Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+2. University of Bordeaux, CNRS, INSERM, Bordeaux Imaging Center, BIC, UMS 3420, US 4 Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+3. University of Bordeaux, Bordeaux Proteome Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+4. University of Bordeaux, Inserm U1212, CNRS UMR 5320, IECB Pessac France ([ROR:057qpr032](https://ror.org/057qpr032))
 
 † Corresponding author
 
@@ -50,9 +50,25 @@ We describe here the exploitation of specific PSD-95 binders as a platform to de
 
 ## Results
 
-## Impact of Xph15/18/20 on PSD-95 PDZ domains function
+### Impact of Xph15/18/20 on PSD-95 PDZ domains function
 
 We have recently selected and isolated 10FN3-derived clones that bind to the tandem PDZ domains of PSD-95 (Rimbault et al., 2019; Figure 1a). Three of the evolved 10FN3 domains, which displayed specific recognition of the target, were characterized in depth in particular with respect to the identification of their respective epitope. Two monobodies (Xph15 and Xph20) shared a similar epitope situated on PDZ domain 1 on the opposite side of the surface compared to the canonical functional region of the domain. Indeed, as protein–protein interaction modules, the principal function of PDZ domains is to bind the C-terminus of their protein partner via a defined solvent-exposed groove. The third monobody (Xph18) presented an extended epitope that spread on both domains 1 and 2, also in regions distant from the two binding grooves. As the three evolved binders did not directly block the two PDZ domain-binding sites, we envisaged their use as minimally interfering targeting modules.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig1-v2.jpg)
+
+**Figure 1.:** (a) PSD-95 domain organization and binding models of the three clones investigated. (b) Titrations of a monovalent stargazin-derived peptide against PSD-95-12 in the absence or presence of Xph15, Xph18, and Xph20. Surface representations of PSD-95 tandem PDZ domains (PDB ID 3GSL, domain 1 on the left and domain 2 on the right) with ligand modeled in (RTTPV derived from stargazin C-terminus and aligned from PDB ID 3JXT, black sticks) and with location of the residues annotated in the NMR titration spectra in blue: Gly74, Gly103, Thr129, and Gly141 report on stargazin binding to PDZ1; Gly169, Gly198, and Thr235 report on stargazin binding to PDZ2. Selected region of an overlay of 1H,15N-HSQC spectra corresponding to 200 μM of [15N]PSD-95-12 titrated with 0, 40, 80, 120, 160, 200, 240, 280, 320, 360, and 400 μM peptide ligand based on the C-terminus of stargazin (Stg) in the absence of evolved binder or in complex with 240 μM of Xph15, Xph18, or Xph20. Complete spectra can be found in Figure 1—figure supplement 1. (c) Competitive fluorescence polarization titrations between divalent stargazin-derived ligands and PSD-95-12 with or without Xph clones (5 µM each, mean ± SD of three independent titrations). (d) Competitive fluorescence polarization titrations between monovalent stargazin-derived ligands and PSD-95-12 with or without Xph18 (20 µM, mean ± SD of three independent titrations). (e) Lifetime of eGFP inserted in PSD-95 in the presence of stargazin (acceptor-containing protein) and indicated constructs (molar ratio of DNA constructs specified as donor:acceptor:ligand). Violin plots show median, first and third quartile, and all individual data points (each corresponding to a single cell) pooled from at least two independent experiments. Statistical significance determined by one-way ANOVA followed by Dunnett’s multiple-comparison test. (f) Lifetime of eGFP in a PSD-95-12-derived FRET reporter system in the presence of indicated constructs (used at five molar equivalents of DNA compared to the FRET probe). Violin plots show median, first and third quartile, and all individual data points (each corresponding to a single cell) pooled from at least two independent experiments. Statistical significance determined by one-way ANOVA followed by Dunnett’s multiple-comparison test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The region in the box corresponds to the selected regions presented in Figure 1b.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Direct titration of FITC-labeled stargazin-derived divalent ligand (10 nM) against PSD-95 tandem PDZ domains. Each data point represents the average of three measurements ± SD. The dissociation constants obtained by fitting are reported with the calculated SEM. (b) Direct titration of FITC-labeled stargazin-derived monovalent ligand (10 nM) against PSD-95 tandem PDZ domains. Each data point represents a single measurement. The dissociation constants obtained by fitting are reported with the calculated SEM. (c) Competitive titrations with non-fluorescent (acetylated) stargazin monovalent ligand against the complexes between FITC-labeled stargazin divalent ligand, PSD-95 PDZ domains 1 and 2, and either Xph15, Xph20, or no binder (∅). Each data point represents the average of two independent measurements ± SD. The inhibition constants obtained by fitting are reported with the calculated SEM. (d) Competitive titrations with non-fluorescent (acetylated) stargazin divalent ligand against the complexes between FITC-labeled stargazin divalent ligand, PSD-95 PDZ domains 1 and 2, and either Xph15, Xph20, or Xph18. Each data point represents the average of two independent measurements ± SD. The FP values are not normalized and indicate, in the presence of Xph18, an impaired binding of the fluorescent probe.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The system relies on a competition for the expressed probe between binding to its cytosolic target (favored) or preventing further transcription (unfavored until the target is saturated). Xph/X: binding module; FP: fluorescent protein; ZF: zinc finger; tRep/R: transcription repressor. For clarity, the expression regulation system is omitted in the schematic representation of the various probes used in neurons when its presence is not a variable.
 
 In an initial step prior to designing tools that target endogenous PSD-95, we sought to further characterize the binding properties of the three monobodies in the context of the tandem PDZ domains function. We first used in-solution NMR to evaluate whether the PDZ domain-binding properties to cognate ligands were affected by the presence of either of the clones (Figure 1b, Figure 1—figure supplement 1). A peptide derived from the C-terminus of a known PSD-95 PDZ domain binder, the auxiliary AMPA receptor (AMPAR) subunit stargazin (Stg), was titrated against a 15N-labeled PSD-95 tandem construct containing PDZ domains 1 and 2. In addition, the peptide was titrated against the same 15N-labeled PSD-95 construct pre-bound with either Xph15, Xph18, or Xph20. A series of 2D 15N-HSQC spectra were used to follow PSD-95 residues during each titration, and in all cases residues on both PDZ1 and PDZ2 were able to fully interact with the Stg peptide. Qualitatively, each of the reporter residues shown in Figure 1b has similar titration behavior and final crosspeak positions in the 15N-HSQC spectra, and therefore supports the fact that the peptide binding is generally unaffected by the presence of the binders. Conversely, by looking at residues at the PSD-95 and binder interface, the added Stg peptides also did not detectably affect the binding of the Xph monobodies (Figure 1—figure supplement 1). These results confirm the simultaneous binding of both PDZ domain ligand and monobody and indicate that the PDZ domain-binding properties are not detectably modified in the presence of the evolved Xph binders.
 
@@ -62,7 +78,7 @@ Together, the NMR study and the fluorescence polarization assay indicate that th
 
 Next, we investigated whether these properties were preserved in complex cellular environments. We therefore evaluated by a FRET/FLIM assay in cell lines the binding of PSD-95 to its partners (represented here by stargazin) via its PDZ domains in the presence and absence of the monobodies. We used both the recombinant full-length proteins (Figure 1e) as well as a reporter system that focused on interactions mediated by PDZ domains 1 and 2 (Figure 1f). In both cases, even at high molar ratio, we could not detect any significant effect on the measured donor lifetime associated with the binding of either Xph15, Xph18, or Xph20. For the full-length PSD-95 system, the median lifetimes obtained in the presence of the three clones, even at a fivefold molar ratio in the transfected plasmids, were within the variability observed in the presence of a naïve clone (Xph0, between 2.0 and 2.1 ns). On the contrary, co-transfection of a soluble PDZ domain (PSD-95 second PDZ domain, termed here competitor) clearly increased the lifetime to 2.3 ns. Results with the FRET probe based on PDZ domains 1 and 2 were comparable, with an absence of significant modification of the probe lifetime in the presence of the monobodies in comparison to a mutant of the probe in which the PDZ domain-binding motif was deleted (Probe off). A moderate effect was observed by statistical analysis in the case of Xph18, which could be attributed to the constraint imposed by its binding to both PDZ domains 1 and 2. In agreement with the NMR and fluorescence polarization experiments, these results therefore indicate that the primary function of PSD-95 PDZ domains as protein–protein interaction modules is not detectably affected by the interaction with any of the three recombinant binders in a model cellular environment.
 
-## Impact of Xph15/18/20 on PSD-95 function
+### Impact of Xph15/18/20 on PSD-95 function
 
 The main function of PSD-95 is to organize transmembrane receptors such as glutamate receptors at the postsynaptic density and link them to intracellular signaling molecules. Among these, the PSD-95 PDZ domain-mediated interactions with AMPARs through the TARP auxiliary subunits have been particularly well characterized. We and others have previously shown that impairment of the interactions by genetic (Bats et al., 2007) or chemical means (Sainlos et al., 2011) resulted in a reduction of AMPAR synaptic currents and increased lateral mobility.
 
@@ -70,15 +86,37 @@ In order to rule out any possible effect of the monobodies on endogenous PSD-95 
 
 We first investigated whether the AMPAR-mediated synaptic currents were affected by the presence of the various monobodies. Comparison of control eGFP-infected mouse neurons to neurons infected with Xph15, Xph18, or Xph20 did not reveal any significant difference on spontaneous mEPSCs (Figure 2a–e). The mean amplitude values were not modified by the presence of any of the PSD-95 binders (Figure 2b, control: 21.3 ± 2.1 pA [n = 19]; Xph15: 24.9 ± 3.9 pA [n = 15]; Xph18: 21.3 ± 2.0 pA [n = 17]; Xph20: 18.0 ± 2.2 pA [n = 16]; mean ± SEM with p>0.4 for the three clones using nonparametric Kruskal–Wallis test followed by Dunn’s post hoc test). Similarly to the amplitude, nor the frequency (Figure 2c), the decay time (Figure 2d), or the rise time (Figure 2e) were affected as a result of the expression of the monobodies. We note that when similar measurements were performed in transfected rat hippocampal neurons none of the mEPSC parameters that we measured were significantly modified (Figure 2—figure supplement 1). We therefore conclude that expression of the three monobodies does not affect the AMPAR-mediated synaptic currents.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig2-v2.jpg)
+
+**Figure 2.:** (a–e) Synaptic currents in wild-type mouse neurons infected with adeno-associated viruses expressing either eGFP, Xph15, Xph18, or Xph20 (n = 19, 15, 17, and 16, respectively, from three independent cultures). (a) Representative traces of glutamatergic miniature excitatory postsynaptic currents (mEPSCs) recorded from neurons expressing eGFP, Xph15, Xph18, or Xph20, (b) mEPSC amplitude, (c) mEPSC frequency, (d) mEPSC decay time, and (e) mEPSC rise time. Data are expressed as mean ± SEM, statistic significances were tested using the nonparametric Kruskal–Wallis test followed by Dunn’s post hoc test. Each dot represents a recorded cell. (f) Representative images for AMPARs single-particle tracking by uPAINT (left, epifluorescence image of non-transfected control and Xph15-, Xph18-, or Xph20-eGFP expression pattern in transfected rat neuron culture; right, trajectories; scale bar 5 µm). (g) Average distribution of instantaneous diffusion coefficients obtained by uPAINT of synaptic AMPAR with typical bimodal distribution. Error bars indicate cell-to-cell variability. (h) Percentage of mobile AMPARs (mean ± SEM, each dot represents the mean value of mobile AMPAR per cell). Statistical analysis was performed with an ordinary one-way ANOVA. (i) Evaluation of Xph20 expression on PSD-95 interactome. Volcano plot of the proteins identified by mass spectrometry following immunoprecipitation of endogenous PSD-95 in rat hippocampal culture infected by either Xph20-eGFP or eGFP (overlay of two independent experiments, experiment 1, diamonds; experiment 2, circles). Known PSD-95 partners are represented in blue shades while other proteins are represented in purple shades. Protein identity (gene name) is provided for those below a p-value of 0.05 and above an absolute log2(abundance ratio) value of 1.5.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Amplitude (in pA, control: 18.92 ± 2.37 [n = 20]; Xph15: 17.58 ± 1.71 [n = 15]; Xph18: 18.52 ± 2.03 [n = 11]; mean ± SEM with p>0.61 by ordinary one-way ANOVA). (b) Frequency (in Hz, control: 2.95 ± 0.68 [n = 20]; Xph15: 2.36 ± 0.75 [n = 15]; Xph18: 3.44 ± 0.90 [n = 11]; mean ± SEM with p>0.65 by ordinary one-way ANOVA). (c) Decay time (in ms, control: 4.46 ± 0.25 [n = 20]; Xph15: 4.92 ± 0.37 [n = 15]; Xph18: 4.20 ± 0.32 [n = 11]; mean ± SEM with p>0.32 by ordinary one-way ANOVA). (d) Rise time (in ms, control: 1.84 ± 0.16 [n = 20]; Xph15: 1.79 ± 0.14 [n = 15]; Xph18: 1.58 ± 0.17 [n = 11]; mean ± SEM with p>0.53 by ordinary one-way ANOVA).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Error bars indicate cell-to-cell variability.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig2-figsupp3-v2.jpg)
+
 In addition to the electrophysiological measurements as an indicator of the proper synaptic recruitment of AMPARs, we also tested possible interference of the clones on the lateral mobility of surface AMPARs, as PSD-95 is the main AMPAR stabilizer (Bats et al., 2007). Transfected and non-transfected rat culture neurons were sparsely labeled in live condition with an ATTO-647N-conjugated antibody against the GluA2 subunit ectodomain. Single-particle tracking was performed by using the uPAINT method (Giannone et al., 2010) in order to gain insight on the AMPAR dynamics (Figure 2f). In agreement with the absence of modification of excitatory currents, no detectable effect was observed for Xph-expressing neurons vs control non-transfected ones on the lateral mobility of surface AMPARs. The distributions of diffusion coefficients were highly similar for all conditions (Figure 2g, Figure 2—figure supplement 2). Importantly, the percentage of mobile AMPARs was not increased in the presence of any of the clones as could have been expected from a binder that would have perturbed interactions with either of the first two PDZ domains (Figure 2h, control: 34.9 ± 9.5% [n = 26]; Xph15: 36.9 ± 11.9% [n = 27]; Xph18: 34.6 ± 9.9% [n = 18]; Xph20: 32.2 ± 10.5% [n = 7]; mean ± SD with p>0.73 by ordinary one-way ANOVA).
 
 In complement to the assessment of a potential impact of the various Xph monobodies on one of the PSD-95 main partners, we also took a holistic proteomic approach to evaluate their effect on the entire PSD-95 interactome. In this case, we focused our investigation on Xph20, which together with Xph15 recognize the same PSD-95 epitope – but with a stronger affinity for Xph20 – and represent the most promising candidates for binding to PSD-95 with minimal impact on its function. Rat pyramidal neurons were either infected with eGFP or Xph20-eGFP (Figure 2—figure supplement 3) and lysed after 14 d of expression. PSD-95 was immunoprecipitated under mild conditions to preserve protein complexes and each sample was trypsin-digested and analyzed by LC-MS/MS. When comparing the two conditions, eGFP or Xph20-eGFP expression (Figure 2i), the abundance of most identified proteins was globally unaffected (abundance ratio close to 1 and/or low statistical significance with p-values above 0.05). All known PSD-95 partners that were identified in the two independent experiments (~40 identified partners per experiment) fell in that category. Less than 20 proteins showed both a clear change in abundance (absolute log2(abundance ratio) above 1.5) coupled to a significant p-value (below 0.05). None were reported as PSD-95 partner and most were only detected in only one of the two experiments. Only vimentin (Vim) and the glial fibrillary acidic protein (Gfap) were identified in both experiments; however, given their nature and function, the link to PSD-95 seems unlikely. In conclusion, in agreement with absence of detectable effect on AMPA receptors, the PSD-95 interactome appears unaffected by Xph20-eGFP expression.
 
 Altogether, these experiments indicate that the binding of neither Xph15, Xph18, nor Xph20 affects endogenous PSD-95 function in its native environment as judged by the absence of impact on AMPAR properties and conservation of its interactome. These results are therefore consistent with the nature of each clone’s respective epitope, which are found on regions of PSD-95 not involved in the PDZ domain binding of native cellular protein partners.
 
-## Evaluation of Xph15/18/20 as endogenous PSD-95 imaging probes
+### Evaluation of Xph15/18/20 as endogenous PSD-95 imaging probes
 
 The absence of any detectable effect of Xph clone binding on PSD-95 function constituted an obligatory first criterion to consider their use as a non-interfering imaging probe. As the three monobodies comply with this criterion (albeit with some reservation for Xph18), we next focused on confirming their capacity to label endogenous PSD-95 and on evaluating their specific properties as fluorescent probes. First, we assessed the ability of Xph15, 18, and 20 to bind and target a fluorescent protein to PSD-95 in primary hippocampal neuron culture. Neurons were transfected with the previously tested Xph-eGFP fusions (or PSD95.FingR-eGFP [Gross et al., 2013], from which the expression vector was derived, as a comparison) chemically fixed after 23–27 days in vitro (DIV) and immunostained for PSD-95 (Figure 3a). For all the binders tested, the eGFP signal was similarly strongly enriched on dendrites at postsynapse-like structures. The objects we observed presented in all cases a mean intensity enrichment ratio compared to the rest of the dendrite around 7 (Figure 3b; PSD95.FingR: 6.4 ± 3.0; Xph15: 6.4 ± 1.4; Xph18: 7.4 ± 2.1; Xph20: 8.4 ± 2.1; mean ± SD with p>0.72 by ordinary one-way ANOVA followed by Tukey’s multiple-comparison tests). This indicates that the four binders behave similarly in their capacity to address a fluorescent protein reporter to specific regions in neuronal cells. We next analyzed in each case how these objects colocalized with the labeling obtained by immunostaining of endogenous PSD-95 (Figure 3a, c and d). In general, colocalization percentage values ranged from 0 to 100, which we attribute to the inherent differences of the two staining methods being compared (i.e., expressed reporter vs antibody labeling post-fixation and permeabilization). The colocalization of PSD-95-positive objects detected by antibody immunostaining with the puncta revealed by the four investigated probes was overall strong (Figure 3d, PSD95.FingR: 75.4 ± 30.9; Xph15: 98.4 ± 4.8; Xph18: 95.5 ± 11.1; Xph20: 95.2 ± 13.4; mean ± SD with p<0.0001 for PSD95.FingR vs the other binders by ordinary one-way ANOVA followed by Dunnett’s multiple-comparison test), in agreement with reported values for PSD-95.FingR (Cook et al., 2019; Gross et al., 2013). Remarkably, the values obtained for the three Xph clones were significantly higher than for PSD95.FingR. This trend was also visible when considering the colocalization between eGFP and antibody-stained objects, with Xph clones clearly showing a stronger enrichment in high colocalization values compared to PSD95.FingR (Figure 3c, PSD95.FingR: 65.8 ± 38.9; Xph15: 95.7 ± 15.8; Xph18: 92.3 ± 19.2; Xph20: 93.5 ± 16.8; mean ± SD with p<0.0001 for PSD95.FingR vs the other binders by ordinary one-way ANOVA followed by Dunnett’s multiple-comparison test). We interpret this difference as a direct benefit from the specificity of the Xph clones for PSD-95 while PSD95.FingR, which can also bind SAP97 and SAP102, may also report to some extent the presence of these two paralog proteins. Considering the generally strong overlap of the GFP signal with the immunostaining of endogenous PSD-95, we conclude that the three monobodies label PSD-95 efficiently.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig3-v2.jpg)
+
+**Figure 3.:** (a) Representative epifluorescence images of the eGFP-fused binding modules vs immunostaining of endogenous PSD-95 domain. For the zoomed regions, top: binding module; middle: antibody staining; bottom: merge. (b) Enrichment of object vs shaft fluorescence signal. Violin plots show median, first and third quartile, and all individual data points (each corresponding to the analysis of a single acquired image) pooled from at least three independent experiments. (c) Percentage of eGFP vs antibody objects colocalization (obtained by determining the percentage of common pixels within a probe labeled object with PSD-95 immunostaining). Violin plots show median, first and third quartile, and all individual data points (each corresponding to a detected object) pooled from at least three independent experiments. (d) Percentage of PSD-95-positive objects defined as objects with more than 50% pixel in common. Violin plots show median, first and third quartile, and all individual data points (each corresponding to the analysis of a single image) pooled from at least three independent experiments. (e) Representative images for fluorescence recovery after photobleaching (FRAP) experiments with eGFP fusion proteins, the red asterisk indicating the bleached dendritic spine. Scale bars 5 µm. (f) Fluorescence recovery analysis (mean ± SEM with fitted curve, n = 8/73, 10/108, 9/107, 5/77 cells/spines for Xph15, Xph18, Xph20, and PSD-95-eGFP, respectively, from at least two independent experiments). (g) Mobile probe fraction (mean ± SEM, n and color code same as f).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Representative images obtained on neurons transfected with Xph20-eGFP fusion (regulated with a zinc finger and a transcription repressor fusion together with the corresponding zinc finger binding site upstream of the promoter on the expression plasmid). (b) Representative images obtained on neurons from the same dissection as (a), and transfected with Xph20-mScarlet-I fusion (non-regulated). (c) Representative images obtained on neurons transfected with Xph20-Ruby2 fusion (regulated).
 
 In order to evaluate the flexibility/versatility of the labeling system, we considered other fluorescent proteins, and in particular, a red fluorescent protein. We chose the recently described mScarlet-I as one of the brightest red reporters (Bindels et al., 2017). Despite several attempts, we failed at expressing the Xph20-mScarlet-I fusion in transfected cultured neurons as a result of a toxicity not observed for the eGFP constructs. Transfer of the Xph20-mScarlet-I fusion into a non-regulated plasmid resulted in non-toxic expression of the probe, albeit at a higher level compared to PSD-95 endogenous expression levels. It therefore led to a homogeneous filling of the whole neuron volume (Figure 3—figure supplement 1). This indicates that the toxicity is here a consequence of the association of mScarlet-I with the regulation system. Replacement of mScarlet-I with another bright monomeric red fluorescent protein, mRuby2 (Lam et al., 2012), abolished the observed toxic effect and provided a similar staining compared to Xph-eGFP fusions (Figure 3—figure supplement 1).
 
@@ -90,13 +128,13 @@ We have previously shown that the three selected monobodies were specific binder
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig4-v2.jpg)
 
-**Figure 4.:** (a) Representative epifluorescence images showing Xph15-eGFP (top) and Xph20-eGFP (bottom) expressed in pyramidal neuron together with a scramble shRNA or the shRNA against PSD-95 both associated to a mCherry soluble fluorescent reporter (magenta). The neurons are fixed and immunostained for PSD-95 (blue). (b) Comparison of objects average fluorescence intensity (red: immunostaining fluorescence signal; teal: Xph-eGFP signal) on neurons transfected with the scramble shRNA or the shRNA against PSD-95. Normalization was performed by using the median of the scramble shRNA condition. Violin plots show median, first and third quartile, and all individual data points (each corresponding to the analysis of a single detected object) pooled from three independent experiments, statistic significances were tested using the nonparametric Kruskal–Wallis test followed by Dunn’s post hoc test. (c) Comparison of dendrites fluorescence intensity (red: immunostaining fluorescence signal; teal: Xph-eGFP signal; integrated fluorescence signal per area units) on neurons transfected with the scramble shRNA or the shRNA against PSD-95. Normalization was performed by using the median of the scramble shRNA condition. Violin plots show median, first and third quartile, and all individual data points (each corresponding to the analysis of a single dendritic fragment) pooled from two independent experiments, statistic significances were tested using the nonparametric Kruskal–Wallis test followed by Dunn’s post hoc test. (d–f) Correlation of Xph15 and Xp20 intrabodies with PSD-95. (d) Representative immunofluorescent images showing Xph15-eGFP (top), Xph20-eGFP (bottom), and PSD-95-mScarlet-I. The dendritic region within the white box is enlarged below to better illustrate colocalization the eGFP and mScarlet-I signal. Scatter plots showing the correlation between Xph15- (e) or Xph20-eGFP (f) and PSD-95-mScarlet-I normalized fluorescence intensity. Pearson correlation coefficients and slopes (simple linear regression) between eGFP and mScarlet-I fluorescent intensity were calculated using GraphPad Prism 8. Data from 67 dendrites and 8362 synapses for Xph15, and 63 dendrites and 8004 synapses for Xph20 (two independent experiments).Figure 4—source data 1.Figure 4b).Figure 4—source data 2.Figure 4c).Figure 4—source data 3.Figure 4e).Figure 4—source data 4.Figure 4f).
+**Figure 4.:** (a) Representative epifluorescence images showing Xph15-eGFP (top) and Xph20-eGFP (bottom) expressed in pyramidal neuron together with a scramble shRNA or the shRNA against PSD-95 both associated to a mCherry soluble fluorescent reporter (magenta). The neurons are fixed and immunostained for PSD-95 (blue). (b) Comparison of objects average fluorescence intensity (red: immunostaining fluorescence signal; teal: Xph-eGFP signal) on neurons transfected with the scramble shRNA or the shRNA against PSD-95. Normalization was performed by using the median of the scramble shRNA condition. Violin plots show median, first and third quartile, and all individual data points (each corresponding to the analysis of a single detected object) pooled from three independent experiments, statistic significances were tested using the nonparametric Kruskal–Wallis test followed by Dunn’s post hoc test. (c) Comparison of dendrites fluorescence intensity (red: immunostaining fluorescence signal; teal: Xph-eGFP signal; integrated fluorescence signal per area units) on neurons transfected with the scramble shRNA or the shRNA against PSD-95. Normalization was performed by using the median of the scramble shRNA condition. Violin plots show median, first and third quartile, and all individual data points (each corresponding to the analysis of a single dendritic fragment) pooled from two independent experiments, statistic significances were tested using the nonparametric Kruskal–Wallis test followed by Dunn’s post hoc test. (d–f) Correlation of Xph15 and Xp20 intrabodies with PSD-95. (d) Representative immunofluorescent images showing Xph15-eGFP (top), Xph20-eGFP (bottom), and PSD-95-mScarlet-I. The dendritic region within the white box is enlarged below to better illustrate colocalization the eGFP and mScarlet-I signal. Scatter plots showing the correlation between Xph15- (e) or Xph20-eGFP (f) and PSD-95-mScarlet-I normalized fluorescence intensity. Pearson correlation coefficients and slopes (simple linear regression) between eGFP and mScarlet-I fluorescent intensity were calculated using GraphPad Prism 8. Data from 67 dendrites and 8362 synapses for Xph15, and 63 dendrites and 8004 synapses for Xph20 (two independent experiments).
 
 The PSD-95 downregulation experiment led to a clear loss of Xph15 and Xph20 dendritic labeling, suggesting a direct correlation between PSD-95 expression levels and the two intrabodies’ cytosolic distribution. To further characterize this correlation, we co-expressed Xph15-eGFP or Xph20-eGFP with a PSD-95 mScarlet-I fusion (Figure 4d). Systematic analysis of the two fluorescence signals (eGFP and mScarlet-I) indicated strong correlation, with Pearson correlation coefficients of 0.84 and 0.87 for Xph15 (Figure 4e) and Xph20 (Figure 4f), respectively. These results illustrate the combined efficiency of the two Xph and the regulation system to match the intrabodies’ levels to those of PSD-95.
 
 Overall, this ensemble of results demonstrates first that Xph15, Xph18, and Xph20 can be used to efficiently recognize and bind endogenous PSD-95 with minimal impact on its function. In addition, the fusion of a fluorescent protein to the monobodies (together with the use of an expression regulation system) allows in this context to dynamically label PSD-95 in live conditions. The resulting labeling of PSD-95 is clearly specific and correlates strongly with the levels of the target protein, as demonstrated for both Xph15 and Xph20. Considering the large epitope recognized by Xph18, which as we have shown leads to a constrained conformation of the tandem PDZ domains, we chose here to only focus on Xph15 and Xph20 that both recognize a smaller epitope restricted to PDZ 1 to further develop the imaging tools and fully ensure minimal interference of the resulting probes.
 
-## Engineering probes for super-resolution imaging
+### Engineering probes for super-resolution imaging
 
 The previous experiments validated the use of Xph-derived constructs as imaging probes to monitor endogenous PSD-95. The specific recognition properties of the evolved 10FN3 domains coupled to the capacity to match their expression levels to those of PSD-95 therefore provide an ideal platform to further elaborate our clones into more advanced probes, in particular for SRI applications. To this end, we modified the GFP reporter part of the probes with systems better adapted for various SRI modalities.
 
@@ -106,9 +144,25 @@ In comparison to other imaging techniques, one of the main advantages of STED is
 
 For live experiments, we therefore used the fastest exchanging binder, Xph15, to fully benefit from maximal probe replacement. In parallel, the fluorescent protein eGFP was replaced by mNeonGreen (Shaner et al., 2013) for its higher quantum yield and improved photostability. The Xph15-derived probe expressed well and provided a labeling similar to the eGFP construct in live dissociated neurons as judged by confocal microscopy (Figure 5a–c). Despite the improved properties of mNeonGreen, application of a STED illumination invariably led to significant photobleaching of the area investigated (Figure 5b). Nevertheless, the imaged area was repopulated over time with fresh probes as could be anticipated from the FRAP experiments. About 70% of the initial fluorescence was recovered in less than 15 min (Figure 5d), allowing the area to be efficiently imaged repetitively. We note however that while the confocal imaging quality was comparable to the one obtained prior to the STED imaging, in that timescale, the STED quality was still noticeably degraded due to the loss of signal. Avoiding the repeated confocal imaging as well as reducing the area of STED imaging could be simple strategies to further improve the fluorescence recovery by limiting the photobleaching associated with unnecessary light exposition and by locally increasing the pool of intact probes vs photodamaged ones.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig5-v2.jpg)
+
+**Figure 5.:** (a) Schematic representation of fluorescent protein-fused STED probe. (b) Representative confocal images of a neuron transfected with Xph15-mNeonGreen before and after STED. The yellow box corresponds to the STED region. (c) Confocal and STED images of the yellow box region from (b). (d) Evolution of fluorescence intensity over time of fluorescent objects subjected or not to STED (n = 8 and 9 for regions outside and inside of STED area, respectively). Box plots show median, first and third quartile, with whiskers extending to the minimum and maximum and all individual data points (each corresponding to a single object) pooled from at least two independent experiments. (e) Schematic representation of SNAP-tag-fused STED probe with the BG-SiR fluorophore. (f) Confocal and STED images of a neuron transfected with Xph15-SNAP-tag after incubation with BG-SiR. (g) Time course of repeated STED acquisitions with Xph15-SNAP-tag/BG-SiR.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Representative image obtained on fixed neurons transfected with Xph20-eGFP fusion and immunolabeled with an antibody against MAP2 to identify dendritic shaft. Zoom region obtained by confocal and STED modalities. (b) Intensity profiles of Xph20-eGFP from the linescans indicated in the zoom region from (a). (c) Representative images obtained by confocal and STED modalities on live neurons transfected with Xph15-SNAP-tag fusion and cytosolic GFP (blue), labeled with BG-SiR. (d) Intensity profiles of Xph15-SNAP-tag from the linescans indicated in the zoom region from (c).
+
 In order to more efficiently circumvent the loss of signal and enable faster repeated STED acquisitions, for instance, with 3D-stacks or minute-timescale super-resolution investigations, we modified our strategy and opted for the use of brighter and more photoresistant organic dyes. To effectively functionalize our probes with such dyes, we replaced the fluorescent protein by a SNAP-tag (Keppler et al., 2003; Figure 5e) and used a cell-permeant silicon rhodamine fluorophore (SiR) (Lukinavičius et al., 2013) coupled to benzylguanine added prior to the imaging session. The SNAP-tag probe behaved comparably to the eGFP version, and synaptic objects, hallmark of PSD-95 neuronal distribution, could be visualized (Figure 5f). Efficiency of the STED imaging was improved by the use of the brighter SiR dye (Figure 5f and g, Figure 5—figure supplement 1c and d). Photostability and dynamic exchange of the probe allowed to perform timelapse acquisitions at about a 1 min (50 s) frequency with minimal impact on the STED signal (Figure 5g), thereby illustrating the advantage of organic dyes over fluorescent proteins for such applications.
 
 Single-molecule localization microscopy (SMLM) is another strategy used to access spatial resolution below the limit imposed by the diffraction of light (Sauer and Heilemann, 2017). It relies on temporal decorrelation of fluorophore emissions to obtain sparsely located fluorescent entities while keeping the majority of the population in non-emissive states. One strategy to perform SMLM is photoactivation localization microscopy (PALM) based on the use of photoactivatable or photoconvertible fluorescent proteins. To implement this imaging modality, we thus replaced eGFP with the monomeric photoconvertible protein mEos3.2 (Zhang et al., 2012). We considered Xph20 as the binding module for its stronger affinity and slower off-rate kinetics. The photoconvertible probe was expressed in dissociated cultured neurons and provided in its basal green state a labeling similar to the eGFP probe (Figure 6a and b).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic representation of mEos3.2-fused probe. (b) Representative epifluorescence and PALM images of Xph20-mEos3.2 in fixed culture neurons. Left: epifluorescence image obtained from the native non-photoconverted green form of mEos3.2; middle: super-resolution image obtained by PALM from a sequence of 20,000 images of sparse single molecules of the photoconverted red from of mEos3.2 (scale bar 5 µm); right: zoomed region (scale bar 1 µm). (c) Examples of individual synapses showing PSD-95 organization at the postsynaptic density (‘object’) and sub-synaptic domain (‘cluster’). Scale bar 1 µm. (d) Number of detections in ‘objects’ vs ‘clusters’ (mean ± SEM, each data point represents a single neuron). (e) Morphological analysis of ‘objects’ and ‘clusters’ (mean ± SEM, each data point represents a single neuron). (f–h) Representative epifluorescence and spt-PALM images of live culture neurons expressing Xph20-mEos3.2. epifluorescence of the expressed probe (before photoconversion) (f), super-resolution intensity map obtained by sptPALM from a sequence of 4000 images of sparse single molecules of the photoconverted red from of mEos3.2 (g), and trajectories of PSD-95 tagged with Xph20-mEos3.2 (h). Scale bars 5 and 2 µm for top and bottom images, respectively. (i) Average distribution of instantaneous diffusion coefficients obtained by spt-PALM of PSD-95 labeled with Xph20-mEos3.2 (at 0 min, t0, beginning of the imaging session) or after 30 min of imaging (t30). Error bars indicate cell-to-cell variability. Inset: percentage of the mobile fraction of probes at t0 vs t30 (mean ± SEM, each dot represents a single cell, n = 10). (j) Time course of the percentage of mobile probes (mean ± SEM, each dot represents a single cell, n = 10).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a, b) Representative spt-PALM images of fixed culture neurons expressing Xph20-mEos3.2. Super-resolution intensity map obtained by sptPALM from a sequence of 4000 images of sparse single molecules of the photoconverted red from of mEos3.2 (a) and trajectories of Xph20-mEos3.2 (b). (c) Average distribution of instantaneous diffusion coefficients obtained by spt-PALM of Xph20-mEos3.2. Error bars indicate cell-to-cell variability. (d) Percentage of the mobile fraction of probes (mean ± SEM, each dot represents a single cell). (e) Frequency distribution of sequential single Xph20-mEos3.2 detections.
 
 Stochastic photoconversion of mEos3.2 was first performed in fixed neurons, and analysis of the resulting image stacks used to generate super-resolved images (Figure 6b). Efficiency of the fixation step on the probe was assessed by determination of the diffusion coefficients distribution of the detected single emitters. The results confirmed that a large majority of the investigated emitters were immobile (Figure 6—figure supplement 1a–d). The reconstructed maps showed a clear enrichment of the probe at synapses as already observed with diffraction-limited imaging techniques and STED. Further analysis of the synaptic objects using the Tesselation-based segmentation method (Levet et al., 2015) revealed a non-homogeneous distribution with the presence of higher density clusters. The clusters represented about half the number of detections measured for the whole synaptic objects. A tentative estimation of single-emitter contribution (Figure 6d, Figure 6—figure supplement 1e, median ~10 detections) suggests the presence of ~200–300 probe copies per synaptic objects. This value is consistent with reported estimations of PSD-95 synaptic copies (Chen et al., 2005; Sugiyama et al., 2005) and therefore suggests a close to stoichiometric labeling of the endogenous protein. Morphological analysis of the objects and clusters provided dimensions consistent with previous reports for PSD-95-mEos2 fusions with PALM (Nair et al., 2013) or by STORM by labeling endogenous PSD-95 with antibodies (Compans et al., 2019) (length: 434.5 ± 39.9 and 178.0 ± 39.3 nm; width: 251.1 ± 39.2 and 99.1 ± 22.4 nm for the objects and clusters, respectively, Figure 6e). Together, these results indicate that Xph20-mEos3.2 provides an accurate snapshot of PSD-95 nanoscale distribution in fixed samples.
 
@@ -120,13 +174,29 @@ Considering the compatibility of our probes with STED and PALM, we next investig
 
 Each construct was co-transfected with a soluble eGFP marker in dissociated culture hippocampal neurons and used to implement the DNA-PAINT method after chemical fixation. The self-labeling tags were each reacted with the corresponding docking strand and after removal of the excess material, the Cy3B-derived imaging strand was applied to the samples. A control experiment in which no docking strand was added confirmed the very low level of non-specific binding of the imaging strand in our conditions (Figure 7—figure supplement 1a). For the HaloTag fusion, a homogeneous staining of the transfected neurons was observed (Figure 7—figure supplement 1b), suggesting a failure either of the target recognition or of the regulation system with this particular engineered enzyme. The reason for this failure was not investigated further. We note that the larger size of the HaloTag (34 kDa vs 20 or 27 kDa for the SNAP-tag and fluorescent proteins, respectively) might impair efficient nuclear entry of the excess fusion protein product. In contrast, and consistently with the STED experiments, the SNAP-tag fusion allowed an efficient labeling with a clear synaptic enrichment comparable to the ones obtained with the other validated fusions (Figure 7).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig7-v2.jpg)
+
+**Figure 7.:** (a) Probe design and labeling scheme (BG: benzylguanine). (b) Reconstructed DNA-PAINT image (10 Hz, 32,000 frames) of Xph20-SNAP-tag in the dendrites of a 14 day in vitro (DIV) hippocampal primary neuron (inset corresponding to soluble GFP). (c) Magnified views of the regions marked in (b) (scale bars 100 nm).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Representative DNA-PAINT image obtained on neurons co-transfected with a soluble GFP marker and Xph20-SNAP-tag, not incubated with BG-docking strand and in the presence of Cy3-imaging strand. (b) Representative DNA-PAINT image obtained on neurons co-transfected with a soluble GFP marker and Xph20-HaloTag (Cl-Alk: chloroalkane). The reconstructed image shows an evident lack of synaptic enrichment.
+
 Altogether, these results demonstrate that Xph15 and Xph20 constitute robust and valuable modules to engineer SRI probes for endogenous PSD-95. Indeed, by adapting the recognition and the reporting modules together with the use of a system for regulation of the probe production, we show that they can be easily exploited to provide a straightforward access to both the nanoscale mapping and the dynamics of this key synaptic protein.
 
-## Targeting sensors to synapses
+### Targeting sensors to synapses
 
 With the series of fluorescent or self-labeling protein fusions to Xph15 and 20, we have demonstrated the efficiency of the evolved binders to be used as the targeting module to report on the localization of endogenous PSD-95. Considering the highly enriched distribution of PSD-95 at excitatory postsynapses, we sought to expand the scope of application of Xph15/20 by exploiting their binding properties to target sensors or bioactive proteins at the postsynapse.
 
 To validate this strategy, we used the genetically encoded calcium reporter GCaMP (Chen et al., 2013; Dana et al., 2019) with the aim to generate a direct fluorescent indicator of individual synapse activity (Figure 8a). A first attempt with GCaMP6f (Chen et al., 2013) as simple fusion to Xph15 expressed in rat primary culture neurons clearly indicated the feasibility of the approach (Figure 8—figure supplement 1a and b, Figure 8—videos 1 and 2). Indeed, even in the absence of the regulation system, a clear synaptic enrichment of the engineered calcium reporter was observed in comparison to the original sensor expressed alone. Expression levels were consistently low for the engineered construct, which can explain why the regulation system was not needed here to prevent excess probe production. We next attempted to improve the tool by using Xph20 as a stronger binder, GCaMP7f (Dana et al., 2019) as a brighter reporter, a stronger promoter (CAG instead of CMV), as well as the expression regulation system.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig8-v2.jpg)
+
+**Figure 8.:** (a) Schematic representation of calcium signaling probe. (b) Comparison of the expression profile of targeted and regulated (Xph20-GCaMP7f, bottom panel) vs parental calcium sensor (GCaMP7f, top panel) for GCaMP7f synaptic targeting (GCaMP in green and Homer-DsRed in magenta in the merged images). (c) Linescans from (b) comparing the probe repartition between shaft and spine compartments. The linescans show a clear enrichment of the regulated probe in neuronal spines. (d) Probes synaptic enrichment determined using Homer-DsRed staining as a synaptic marker (n = 9 and 7 cells for GCaMP7f and Xph20-GCaMP7f, respectively, from two independent experiments, p=0.0002 by Mann–Whitney test).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/69620/elife-69620-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (a, b) Maximum projection of the fluorescence movies collected for hippocampal neurons expressing GCaMP6f (a) or Xph15-GCaMP6f* (non-regulated) (b). In the insets, the blue arrows indicate individual spines. Scale bars, 10 µm. (c, d) Comparison of the expression profile of regulated (Xph20-GCaMP7f) vs non-regulated probe (Xph20-GCaMP7f*) for GCaMP7f synaptic targeting. (c) Representative images obtained on neurons co-transfected with a Homer-DsRed as a synaptic marker and GCaMP7f fused to Xph20 without the expression regulation system (Xph20-GCaMP7f*). (d) Representative images obtained on neurons co-transfected with a Homer-DsRed as a synaptic marker and GCaMP7f fused to Xph20 with the expression regulation system (Xph20-GCaMP7f). The expression regulation system allows to obtain a robust synaptic enrichment. Scale bars, 5 µm.
 
 The two modified reporters (with and without the expression regulation system) were co-expressed with Homer-DsRed as a synaptic marker. Expression levels of the reporter were higher with the CAG promoter both in the absence and presence of the regulation system. However, in this case, the latter was necessary to allow a clear synaptic enrichment of GCaMP7f (Figure 8b–d) as its absence, combined with higher expression levels, led to a homogeneous distribution of the calcium reporter in the dendrite (Figure 8—figure supplement 1). Altogether, these results demonstrate that both the Xph15 and Xph20 binding modules can also be exploited to target gene-encoded module other than fluorescent proteins to excitatory synapses. In the case of the GCaMP reporter series, we also validate its compatibility with the gene regulation system in order to achieve a clear synaptic enrichment of the probe.
 
@@ -158,7 +228,304 @@ In conclusion, we provide here a set of powerful probes for targeting PSD-95 wit
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 CodonPlus (DE3)-RIPL</td>
+      <td>Agilent</td>
+      <td>Cat# 230280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>T7 Express lysY</td>
+      <td>New England Biolabs</td>
+      <td>Cat# C3010I</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (simian)</td>
+      <td>COS-7</td>
+      <td>ECACC-87021302</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluA2 ATTO-647N (mouse monoclonal)</td>
+      <td>Gift from Eric Gouaux, coupled in lab.</td>
+      <td>PMID:23926273</td>
+      <td>30 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSD-95 (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# MA1-046</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa Fluor 568 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11031</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAP2 (chicken polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 188 006</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-chicken Alexa Fluor 594 (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-11042</td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Numerous</td>
+      <td>See Supplementary file 2</td>
+      <td></td>
+      <td>https://www.addgene.org/Matthieu_Sainlos/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Numerous</td>
+      <td>See Supplementary file 3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PSD-95-12 [61-249]</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Xph20</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td>https://www.addgene.org/Matthieu_Sainlos/</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Xph18</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td>https://www.addgene.org/Matthieu_Sainlos/</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Xph15</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td>https://www.addgene.org/Matthieu_Sainlos/</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Xph0</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td>https://www.addgene.org/Matthieu_Sainlos/</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Stg15 (Ac-YSLHANTANRRTTPV)</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FITC-Stg15 (FITC-PEG-YSLHANTANRRTTPV)</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>[Stg15]2</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FITC-[Stg15]2</td>
+      <td>Rimbault et al., 2019</td>
+      <td>PMID:31586061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>X-treme GENE HP DNA transfection reagent</td>
+      <td>Roche</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Effectene Kit</td>
+      <td>QIAGEN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Cell 647-SiR (BG-SiR)</td>
+      <td>New England Biolabs</td>
+      <td>Cat# S9102S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Warren DeLano</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe Systems</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7.04, 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TopSpin v4.0</td>
+      <td>Bruker</td>
+      <td>RRID:SCR_014227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaMorph v7.8.10.0</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_002368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LI-FLIM v1.2.12</td>
+      <td>Lambert Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>POLARstar Omega v5.11</td>
+      <td>BMG Labtech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NMRPipe v8.6</td>
+      <td>Delaglio et al., 1995</td>
+      <td>PMID:8520220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sparky v3.113</td>
+      <td>D. Goddard and D. G. Kneller, SPARKY 3, University of California, San Francisco</td>
+      <td>RRID:SCR_014228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>POLARstar MARS data analysis software v3.20</td>
+      <td>BMG Labtech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchmaster</td>
+      <td>Heka Elektronik</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SR-Tesseler</td>
+      <td>Levet et al., 2015</td>
+      <td>PMID:26344046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IJ-Macro_FRAP-MM</td>
+      <td>https://github.com/fabricecordelieres/IJ-Macro_FRAP-MM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IJ-Plugin_Metamorph-Companion</td>
+      <td>https://github.com/fabricecordelieres/IJ-Plugin_Metamorph-Companion</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PICASSO</td>
+      <td>Schnitzbauer et al., 2017</td>
+      <td>PMID:28518172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SNAPligand-modified DNA oligomer</td>
+      <td>Schnitzbauer et al., 2017</td>
+      <td>PMID:28518172</td>
+      <td>5' BG-TTATACATCTA 3'</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cy3b-labeled DNA imager strands</td>
+      <td>Schnitzbauer et al., 2017</td>
+      <td>PMID:28518172</td>
+      <td>5' CTAGATGTAT-Cy3b 3'</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 The plasmids generated and the primers used in this study are listed in Supplementary files 2 and 3, respectively. Plasmids for protein production were described previously (Rimbault et al., 2019; Sainlos et al., 2009). Briefly, for bacterial expression, the first two PDZ domains of PSD-95 were subcloned into pET-NO to produce an N-terminal fusion with an octa-His tag and a TEV protease cleavage site. The Xph clones were subcloned into the pIGc vector to generate C-terminal fusions with a deca-His tag. For FRET experiments, PSD-95-eGFP and stargazin-mCherry were described previously (Sainlos et al., 2011). Plasmids for soluble Xph clone expression were obtained by replacing the eGFP-CCR5 ZF-KRAB(A) fragment from the corresponding pCAG vector (gift from Don Arnold, USC, Addgene #46295; Gross et al., 2013) by an octa-His and HA tags using BglII and BsrGI restriction sites. Plasmid for soluble PSD-95 PDZ domain 2 expression was obtained by first replacing eGFP into pEGFP-N1 by mIRFP via BamHI and BsrGI restriction sites (gift from M Davidson, Florida State University, and X Shu, UCSF, Addgene #54620; Yu et al., 2015) and then subcloning the PDZ domain using HindIII and BamHI restriction sites. The PDZ domain-based FRET reporter was obtained as described previously (Rimbault et al., 2019) but here without mutation of the first domain. The plasmid for expression of soluble Xph15 and 18 with a miRFP670 nuclear reporter was generated as described for the one with Xph20 (Rimbault et al., 2019).
 
@@ -170,25 +537,25 @@ PSD-95 shRNA_mCherry construct was obtained by replacing the eGFP by mCherry usi
 
 PSD-95-mScarlet-I was obtained by replacing eGFP into PSD-95-eGFP C-terminal fusion construct (Sainlos et al., 2011) via AgeI and BsRGI restriction sites in a pEGFP-N1 clontech vector backbone.
 
-## Protein production
+### Protein production
 
 Proteins were expressed and purified as described previously (Rimbault et al., 2019). Briefly, His-tagged proteins were either produced in Escherichia coli BL21 CodonPlus (DE3)-RIPL competent cells (Agilent, 230280) using auto-induction protocols (Studier, 2005) at 16°C for 20 hr or in BL21 pLysY (New England Biolabs, C3010I) for isotopically labeled proteins with IPTG induction for 16 hr at 20°C. Proteins were first isolated by IMAC using Ni-charged resins then further purified by size-exclusion chromatography (SEC). An intermediate step of affinity tag removal by incubation with the TEV protease was added before the SEC step for isotopically labeled proteins. The recovered proteins were concentrated, aliquoted, and flash-frozen with liquid nitrogen for conservation at –80°C.
 
-## Peptide synthesis
+### Peptide synthesis
 
 Peptides were synthesized as described previously (Rimbault et al., 2019). Briefly, amino acids were assembled at 0.05 mmol scale by automated solid-phase peptide synthesis on a CEM µwaves Liberty-1 synthesizer (Saclay, France) following standard coupling protocols. The divalent ligand [Stg15]2 was obtained by using copper-catalyzed click chemistry on resin harboring a mix of sequences functionalized by azide and alkyne groups as described previously (Sainlos et al., 2011). Briefly, a 7:3.5 mixture of Fmoc-Lys(N3)-OH and pentynoic acid was manually coupled to the deprotected N-terminal amino group of elongated peptides on resin followed by copper(I)-catalyzed azide-alkyne cycloaddition in DMF/4-methylpiperidine (8:2) with CuI (5 eq), ascorbic acid (10 eq), and aminoguanidine (10 eq). N-free peptide resins were derivatized with acetyl groups or further elongated with a PEG linker (Fmoc-TTDS-OH, 19 atoms, Iris Biotech, FAA1568) and fluorescein isothiocyanate. Peptides were purified by RP-HPLC with a semi-preparative column (YMC C18, ODS-A 5/120, 250 × 20 mm) and characterized by analytical RP-HPLC and MALDI-TOF. Peptides were lyophilized and stored at –80°C until usage.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 NMR spectra were recorded at 298 K using a Bruker Avance III 700 MHz spectrometer equipped with a triple resonance gradient standard probe. Topspin version 4.1 (Bruker BioSpin) was used for data collection. Spectra processing used NMRPipe (Delaglio et al., 1995) with analysis by using Sparky 3 (T. D. Goddard and D. G. Kneller, University of California). Titration of 200 μM 15N-labeled PSD-95 PDZ1-PDZ2 in PBS with a stock solution of 10 mM Stargazin C-terminal peptide (Ac-YSLHANTANRRTTPV) was followed by 1D 1H and 2D 15N-HSQC spectra. Titration points include 0, 40, 80, 120, 160, 200, 240, 280, 320, 360, 400, and 440 μM peptide, corresponding to 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, and 2.2 molar equivalents peptide:protein. The titration was repeated by using pre-assembled 1:1 complexes of 200 μM 15N-labeled PSD-95 PDZ1-PDZ2 with a slight molar excess (240 μM) of natural abundance Xph15, Xph18, or Xph20. Amide 1H,15N chemical shift assignments of unbound and bound [15N]PSD-95-12 were previously reported (Rimbault et al., 2019).
 
-## Fluorescence polarization assay
+### Fluorescence polarization assay
 
 For direct titrations, the fluorescein-labeled stargazin peptide (10 nM) was titrated against a range of increasing concentrations of the different recombinant PDZ domains in a 100 μl final volume. Fluorescence polarization was measured in millipolarization units (mP) at an excitation wavelength of 485 ± 5 nm and an emission wavelength of 520 ± 5 nm using a POLARstar Omega (BMG Labtech) microplate reader. Titrations were conducted at least in duplicate and measured twice. To determine the corresponding affinities (apparent KD), curves were fitted using a nonlinear regression fit formula (Chang et al., 2011) with GraphPad Prism v7.04 after normalizing the values of each protein series between the initial unbound and the saturating states.
 
 For competitive titrations, experiments were designed such that the starting polarization value represents 75% of the maximal shift of the direct titrations. For the divalent stargazin ligand, PSD-95-12 was used at a concentration of 90 nM. Tandem PDZ domains, bound to the fluorescein-labeled stargazin divalent peptide (10 nM), were titrated against a range of increasing concentrations of acetylated stargazin divalent ligand in a 100 μl final volume in the presence of 5 µM of Xph clones. For the monovalent stargazin ligand, PSD-95-12 (at a concentration of 20 µM), bound to the fluorescein-labeled stargazin monovalent peptide (50 nM), was titrated against a range of increasing concentrations of stargazin peptides in a 100 μl final volume in the presence of 20 µM of Xph18. Titrations were conducted as above at least in duplicate and measured three times. To determine the corresponding inhibition constant (KI), curves were fitted using a competition formula (Pazos et al., 2011) with GraphPad Prism v7.04 after normalizing the values of each protein series between the initial unbound and the saturating states.
 
-## FRET/FLIM assays
+### FRET/FLIM assays
 
 FRET/FLIM assays were performed as described previously (Rimbault et al., 2019). Briefly, COS-7 cells (ECACC-87021302) in DMEM medium supplemented with GlutaMAX and 10% FBS were transfected using a 2:1 ratio X-treme GENE HP DNA transfection reagent (Roche) per µg of plasmid DNA with a total of 0.5 µg DNA per well. Experiments were performed after 24 hr of expression. Coverslips were transferred into a ludin chamber filled with 1 ml fresh Tyrode’s buffer (20 mM glucose, 20 mM HEPES, 120 mM NaCl, 3.5 mM KCl, 2 mM MgCl2, 2 mM CaCl2, pH 7.4, osmolarity around 300 mOsm/kg and pre-equilibrated in a CO2 incubator at 37°C).
 
@@ -198,27 +565,27 @@ Experiments with the PSD-95-12-derived FRET reporter system were performed using
 
 Lifetimes were referenced to a 1 µM solution of fluorescein in Tris–HCl (pH 10) or a solution of erythrosin B (1 mg/ml) that was set at 4.00 ns lifetime (for fluorescein) or 0.086 ns (for erythrosin B). For competition experiments, only cells presenting a high level of expression of the competitor or control as measured by mIRFP670 fluorescence were taken into consideration.
 
-## Cell culture
+### Cell culture
 
 All experiments were performed on E18 rat dissociated hippocampal culture except electrophysiology experiments that have been performed in mice P1 hippocampal culture. Banker culture from rat hipppocampal E18 culture neurons were prepared using a previously described protocol (Penn et al., 2017) with the following modifications: neuron cultures were maintained in Neurobasal medium (Cat# 12348017, Thermo Fisher Scientific) supplemented with 2 mM l-glutamine (Thermo Fisher Scientific, Cat# 25030-024) and SM1 Neuronal Supplement (Cat# 05711, STEMCELL Technologies).
 
 The interactomics and knock-down-shRNA interference experiments were performed on rat E18 dissociated culture maintained in Neurobasal Plus medium supplemented with 0.5 mM GlutaMAX and 1× B-27 Plus supplement (Thermo Fisher Scientific).
 
-## Gene delivery
+### Gene delivery
 
 For electrophysiology experiments, rat hippocampal neurons were transfected with Xph15 or Xph18 using Effectene kit (QIAGEN N.V., Venlo, the Netherlands) at 7–9 DIV. For immunostaining, FRAP, correlation, STED, and DNA-PAINT experiments, rat hippocampal neurons from E18 embryos were electroporated at DIV 0 before plating with 1.5 µg of DNA using Nucleofector system (Lonza) in 100 μl Single Nucleocuvette with P3 Primary Cell 4D-Nucleofector X Kit and HV hippocampal neuron program. For DNA-PAINT and PSD-95 knock-down experiments, primary hippocampal neurons were transfected using a standard calcium phosphate protocol at DIV 7–8 with Xph20-SNAP or Xph20-HaloTag and a soluble eGFP (DNA-PAINT) or with PSD-95 shRNA_mCherry or scramble shRNA_mCherry and Xph15-eGFP or Xph20 eGFP (knock-down).
 
-## Electrophysiology
+### Electrophysiology
 
-## Mouse hippocampal mass-culture neuron culture and AAV infection
+#### Mouse hippocampal mass-culture neuron culture and AAV infection
 
 Primary mouse hippocampal cultures were prepared as described previously (Xue et al., 2008). Briefly, hippocampal neurons were prepared from postnatal day 1 mice from both sexes. Hippocampal neurons were plated on continental WT astrocyte feeder layer. The viral production was performed by the Viral Core Facility of the Charité-Universitätsmedizin Berlin. Hippocampal neurons were infected with adenoviruses (AAV2/1) at DIV 2–3 and left at 37°C and 5% CO2 until the electrophysiological experiments were performed.
 
-## Mouse hippocampal mass-culture neurons electrophysiology
+#### Mouse hippocampal mass-culture neurons electrophysiology
 
 Whole-cell voltage clamp experiments were performed on approximately equal numbers of mouse hippocampal mass-culture neurons from each group in parallel on the same day in vitro (11–16 DIV) at room temperature (RT) (23–24°C). Neurons were clamped at −70 mV with an Multiclamp 700B amplifier (Molecular Devices) under the control of Clampex 10.5 software (Molecular Devices). Data were acquired using an Axon Digidata 1550 Digitizer (Axon Instruments) at 10 kHz and low-pass Besser filtered at 3 kHz. Borosilicate glass pipettes with 2–5 MΩ resistance were pulled with a micropipette puller device (Sutter Instruments). Only cells with series resistances below 12 MΩ after break-in were analyzed. The pipettes were filled with intracellular solution (ICS) containing the following (in mM): 136 KCl, 17.8 HEPES, 1 EGTA, 4.6 MgCl2, 4 Na2ATP, 0.3 Na2GTP, 12 creatine phosphate, and 50 U/ml phosphocreatine kinase (∼300 mOsm, pH 7.4). The standard extracellular solution (ECS) contained (in mM) 140 NaCl; 2.4 KCl, 10 HEPES, 10 glucose, 2 CaCl2, 4 MgCl2, 300 mOsm; pH 7.4. mEPSCs were recorded in standard external solution with 0.5 μM tetrodotoxin and 15 μM gabazine. Data were analyzed offline using AxoGraph X (AxoGraph Scientific). To detect mEPSC events, traces were digitally filtered at 1 kHz offline and events were automatically selected with a scaled-template algorithm (Clements and Bekkers, 1997) in AxoGraph X. The template function is a double exponential with a scalable amplitude, a rise time constant of 0.5 ms, a decay time constant of 4 ms, a baseline of 5 ms, and a template length of 10 ms. mEPSC frequencies and amplitudes were determined 2 min after establishing whole-cell configuration and for a period of 120 s time window. Statistic significances were tested using the nonparametric Kruskal–Wallis test followed by Dunn’s post hoc test when at least one group showed a nonparametric distribution. When all groups passed a normality test, we applied a one-way ANOVA followed by Turkey’s post hoc test.
 
-## Electrophysiology in rat primary hippocampal neurons
+### Electrophysiology in rat primary hippocampal neurons
 
 Whole-cell patch clamp recordings were performed on Banker cultures of hippocampal neurons (13–17 DIV) expressing Xph15 or Xph18 fused to eGFP. The experiments were carried out at RT in an ECS containing the following (in mM): 110 NaCl, 5.4 KCl, 10 HEPES, 10 glucose, 1.8 CaCl2, 0.8 MgCl2 (Sigma-Aldrich, St-Louis); 250 mOsm; pH 7.4. To block voltage-gated sodium channels, 1 µM tetrodotoxin (TTX; Tocris Bioscience, Bristol, UK) was added to the ECS. ICS contained the following (in mM): 110 K-gluconate, 1.1 EGTA, 10 HEPES, 3 Na2ATP, 0.3 Na2GTP, 0.1 CaCl2, 5 MgCl2 (Sigma-Aldrich); 240 mOsm; pH 7.2. Patch pipettes were pulled using a horizontal puller (P-97, Sutter Instrument) from borosilicate capillaries (GB150F-8P, Science Products GmbH) to resistances of 3–5 MΩ when filled with ICS. All recordings were performed using an EPC10 patch clamp amplifier operated with Patchmaster software (HEKA Elektronik). Data was acquired at 10 kHz and filtered at 3 kHz. Membrane capacitance was monitored frequently throughout the experiments, and only cells with a series resistance <10 MΩ were analyzed.
 
@@ -226,33 +593,33 @@ Data were collected and stored on computer for offline analysis using a software
 
 Statistical values are given as mean ± SEM. Statistical significances were performed using GraphPad Prism software (San Diego, CA). Normally distributed datasets were tested by Student’s unpaired t-test for two independent groups.
 
-## uPAINT
+### uPAINT
 
 uPAINT was performed as previously reported (Giannone et al., 2010) on dissociated neurons expressing Xph15, Xph18, or Xph20 fused to eGFP. Experiments took place at 13–16 DIV. Cells were imaged at 37°C in an open chamber (Ludin chamber, Life Imaging Services, Switzerland) filled with 1 ml of Tyrode’s solution (in mM): 10 HEPES, 5 KCl, 100 NaCl, 2 MgCl2, 2 CaCl2, 15 glucose (pH 7.4). The chamber was mounted on an inverted microscope (Nikon Ti-Eclipse, Japan) equipped with a high ×100 objective (1.49 NA), a TIRF device, and an EMCCD camera (Evolve camera; Roper Scientific, Princeton Instruments, Trenton, NJ). Dendritic regions of interest (ROIs) were selected based on eGFP signal. To track endogenous GluA2-containing AMPAR, an anti-GluA2 antibody given by E. Gouaux (Portland, OR) coupled to ATTO-647N (Atto-Tec, Siegen, Germany) was used. Stochastic labeling of the targeted protein by dye-coupled antibodies allowed the recording of thousands of trajectories lasting longer than 1 s. Recordings were made at 50 Hz using MetaMorph software (Molecular Devices, USA), and analysis was performed with a homemade software developed under MetaMorph and kindly provided by J.B. Sibarita (Interdisciplinary Institute for Neuroscience).
 
-## Interactomics
+### Interactomics
 
 For proteomic experiments, mixed E18 rat hippocampal cultures were plated at 600k/well on 6-well plates. At 3 DIV, neurons were transduced using AAV2/9 containing Xph20-eGFP or soluble eGFP as a control (MOI 75k). Cultures were fed at 3 DIV and 13 DIV. At 17 DIV, cells were lysed on ice with 100 µl per well of lysis buffer (125 mM NaCl, 25 mM HEPES, 1% NP40, 1× protease inhibitor cocktail [Calbiochem]). Cell lysates were collected, homogenized, and centrifuged at 12,500 rpm for 10 min. Protein concentration of each lysate was quantified using BCA reagent (Thermo Fisher Scientific). For PSD-95 immunoprecipitation, 1 mg of protein per condition was incubated 60 min at 4°C with 80 µl of Dynabeads protein-G (Invitrogen, Cat# 10004D) pre-coated with 30 µg of mouse anti-PSD-95 antibody (Sigma-Aldrich, Cat# MAB1596) during 20 min at RT. The immunoprecipitations were washed three times with PBS-Tween20 0.02% buffer and eluted in 80 µl SDS-PAGE loading buffer. 65 µl was used for proteomic analysis.
 
 Protein samples were solubilized in Laemmli buffer, and samples were deposited in triplicate onto SDS-PAGE gel. After colloidal blue staining, each lane was cut out from the gel and was subsequently cut in 1 mm × 1 mm gel pieces. Gel pieces were destained in 25 mM ammonium bicarbonate 50% ACN (acetonitrile), rinsed twice in ultrapure water, and shrunk in ACN for 10 min. After ACN removal, gel pieces were dried at RT, covered with the trypsin solution (10 ng/µl in 50 mM NH4HCO3), rehydrated at 4°C for 10 min, and finally incubated overnight at 37°C. Spots were then incubated for 15 min in 50 mM NH4HCO3 at RT with rotary shaking. The supernatant was collected, and an H2O/ACN/HCOOH (47.5:47.5:5) extraction solution was added onto gel slices for 15 min. The extraction step was repeated twice. Supernatants were pooled and dried in a vacuum centrifuge. Digests were finally solubilized in 0.1% HCOOH.
 
-## nLC-MS/MS analysis and label-free quantitative data analysis
+#### nLC-MS/MS analysis and label-free quantitative data analysis
 
 Peptide mixture was analyzed on a Ultimate 3000 nanoLC system (Dionex, Amsterdam, the Netherlands) coupled to an Electrospray Orbitrap Fusion Lumos Tribrid Mass Spectrometer (Thermo Fisher Scientific, San Jose). Then, 10 µl of peptide digests were loaded onto a 300-µm-inner diameter × 5 mm C18 PepMap trap column (LC Packings) at a flow rate of 10 µl/min. The peptides were eluted from the trap column onto an analytical 75 mm id × 50 cm C18 Pep-Map column (LC Packings) with a 4–40% linear gradient of solvent B in 91 min (solvent A was 0.1% formic acid and solvent B was 0.1% formic acid in 80% ACN). The separation flow rate was set at 300 nl/min. The mass spectrometer operated in positive ion mode at a 1.9-kV needle voltage. Data were acquired using Xcalibur 4.4 software in a data-dependent mode. MS scans (m/z 375–1500) were recorded in the Orbitrap at a resolution of R = 120,000 (@ m/z 200) and an AGC target of 4 × 105 ions collected within 50 ms. Dynamic exclusion was set to 30 s and top-speed fragmentation in HCD mode was performed over a 3 s cycle. MS/MS scans were collected in the Orbitrap with a resolution of 30,000 and maximum fill time of 54 ms. Only +2 to +6 charged ions were selected for fragmentation. Other settings were as follows: no sheath nor auxiliary gas flow, heated capillary temperature, 275°C; normalized HCD collision energy of 28%, isolation width of 1.6 m/z, AGC target of 5 × 104 and normalized AGC target of 100%. Monoisotopic precursor selection (MIPS) was set to Peptide and an intensity threshold was set to 2.5 × 104.
 
-## Database search and results processing
+#### Database search and results processing
 
 Data were searched by SEQUEST through Proteome Discoverer 2.5 (Thermo Fisher Scientific Inc) against the Rattus norvegicus Reference Proteome Set from UniProt (29,918 entries in v2021-03) and the sequences of Xph20 and eGFP. Spectra from peptides higher than 5000 Da or lower than 350 Da were rejected. Precursor detector node was included. Search parameters were as follows: mass accuracy of the monoisotopic peptide precursor and peptide fragments was set to 10 ppm and 0.02 Da, respectively. Only b- and y-ions were considered for mass calculation. Oxidation of methionines (+16 Da), methionine loss (–131 Da), methionine loss with acetylation (–89 Da), and protein N-terminal acetylation (+42 Da) were considered as variable modifications while carbamidomethylation of cysteines (+57 Da) was considered as fixed modification. Two missed trypsin cleavages were allowed. Peptide validation was performed using Percolator algorithm (Käll et al., 2007) and only ‘high-confidence’ peptides were retained corresponding to a 1% false positive rate at peptide level. Peaks were detected and integrated using the Minora algorithm embedded in Proteome Discoverer. Proteins were quantified based on unique peptides intensities. Normalization was performed based on total human protein amount. Protein ratios are calculated from the group protein abundances. An ANOVA was calculated for each individual protein with Benjamini–Hochberg correction. Quantitative data were considered for proteins quantified by a minimum of two peptides and a p-value lower than 0.05. The list of identified PSD-95 (entry P31016) binding partners (435 entries) was taken from the Molecular INTeraction (MINT) public database (https://mint.bio.uniroma2.it/).
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the dataset identifier PXD045002.
 
-## Immunostaining
+### Immunostaining
 
 At 23–27 DIV, E18 rat Banker cultures expressing individual eGFP-tagged Xph or PSD95.FingR were stained with mouse monoclonal anti-PSD-95 (Thermo Fischer Scientific, Cat# MA1-046) at 1 µg/ml final concentration. Briefly, neurons on coverslips were fixed 10 min using PFA 4%, washed with PBS, permeabilized with PBS-Triton-0.1% during 5 min, and washed again. After blocking with PBS-BSA 0.5%, neurons were stained with the PSD-95 antibody and after three washes with a secondary antibody (goat anti-mouse Alexa 568, Cat# A111031) for 45 min each. Neuron coverslips were mounted on Pro-Long Gold antifade reagent (Thermo Fischer Scientific, Cat# P36934).
 
 Images were acquired on a Leica DM5000 (Leica Microsystems) with a HCX PL APO ×63 oil NA 1.40 objective, a LED SOLA Light (Lumencor, Beaverton) as fluorescence excitation source and a Flash4.0 V2 camera (Hamamatsu Photonics, Massy, France). Image quantifications were performed using tasks automatization with MetaMorph. Following a background subtraction, the images were automatically thresholded to detect the positive objects for the recombinant binders (Xph15, Xph18, Xph20, or PSD95.FingR) and PSD-95. Enrichment was measured by the ratio between the fluorescence intensity of the positive objects for the recombinant binders and the shaft. Object colocalization was evaluated by determining ROIs around positive objects for the recombinant binders and measuring the fluorescence intensity of these regions in the channel of PSD-95.
 
-## FRAP
+### FRAP
 
 Banker cultures (21–23 DIV) in coverslips expressing eGFP fusions of Xph clones or full-length PSD-95 were mounted in a Ludin chamber (Life Imaging Services) and transferred to an inverted microscope (Leica, DMI 6000B) maintained at 37°C. Fluorescence experiments were carried out in an ECS containing (in mM) 120 NaCl, 3.5 KCl, 2 MgCl2, 2 CaCl2, 10 d-glucose, 10 HEPES (pH 7.4, ~270 mOsm), and transfected neurons were observed through a ×63 oil objective (Leica, HC PL APO CS2, NA 1.4). GFP fluorescence was illuminated with 491 nm laser light using a high-speed spinning disk confocal scanner unit (Yokogawa CSU22-W1) and emission was captured with a sCMOS camera (Prime 95B, Photometrics). Microscope hardware was controlled with MetaMorph (Molecular Devices, v7.1.7) and ILAS2 system (Gataca Systems, Massy, France) software.
 
@@ -260,7 +627,7 @@ For FRAP experiments, the following protocol was used: (1) prebleaching (20 imag
 
 FRAP experiments were analyzed using an in-house-developed macro to the ImageJ freeware (http://imagej.nih.gov/ij/). The source code is freely available from GitHub (https://github.com/fabricecordelieres/IJ-Macro_FRAP-MM; Cordelières, 2019a), accompanied by a documentation and an example dataset. Briefly, as part of the macro, the FRAP region for each spine was imported from the MetaMorph software to ImageJ’s ROI Manager using the MetaMorph Companion plugin (https://github.com/fabricecordelieres/IJ-Plugin_Metamorph-Companion; Cordelières, 2019b). From the data extracted by the macro, average intensity within the ROI was collected for each timepoint (Ft), at first timepoint (pre-bleach, Fpb), and immediately after the bleaching (F0). Simple normalization was performed as follows: FRAPt = Ft − F0/Fpb − F0. The mean spine FRAP curve of each cell was subsequently fitted to a monoexponential model using GraphPad Prism software.
 
-## Knock-down (shRNA)
+### Knock-down (shRNA)
 
 Xph15 or Xph20-eGFP-CCR5TC were co-expressed in E18 rat hippocampal cultures with either PSD-95 shRNA_mCherry or scramble shRNA_mcherry (2 µg of each DNA per condition). After 4–5 d (8 DIV to 13 DIV) of expression, banker neuronal cultures were fixed, permeabilized with 0.1 Triton-X-100, and immunolabeled with a mouse monoclonal anti-PSD-95 (Thermo Fisher Scientific, Cat# MA1-046) at 1 µg/ml. The detection was performed using the secondary antibody donkey anti-mouse Alexa 647 (Thermo Fisher Scientific, Cat# A-31571). All steps, from immunolabeling up to imaging and quantification were performed blind.
 
@@ -268,7 +635,7 @@ Images were acquired on an inverted Leica DMi8 microscope (Leica Microsystems) e
 
 Images quantifications were performed using tasks automatization with MetaMorph. Following a background subtraction, the images were automatically thresholded in order to determine several ROIs around the neurons. In these regions, we applied an automatic threshold to determine positive objects for the eGFP (Xph constructs expression) and Cy5 (PSD-95 immunolabeling) channels. We measured the average intensity of these objects. We also measured the integrated fluorescence intensity of the entire regions.
 
-## Correlation
+### Correlation
 
 After nucleofection at 0 DIV of 1.5 µg of Xph15- or Xph20-eGFP with 1.5 µg of PSD-95-mScarlet-I, E18 rat Banker neuronal cultures were fixed using 4% PFA at 16 DIV.
 
@@ -276,7 +643,7 @@ Images were acquired on an inverted Leica DMi8 microscope (Leica Microsystems) e
 
 The quantification of the images was performed using tasks automatization with MetaMorph. Following a background subtraction, the images were automatically thresholded in order to determine several ROIs around the neurons. Then inside these regions, the intensity of the positive objects for the recombinant binders (eGFP for Xph15, Xph20) and PSD-95 (mScarlet-I) was measured and compared in both green and red channels.
 
-## STED
+### STED
 
 Fixed E18 rat neuronal cultures (DIV21) expressing GFP-tagged Xph20 were imaged with a glycerol immersion objective (Plan Apo 93× NA 1.3 motCORR). Cells were immunolabeled with MAP2 (Synaptic Systems 188006 and anti-chicken AF594, Thermo Fisher A11042) to identify dendritic draft. A 660 nm wavelength laser was used for GFP depletion. Acquisition parameters were 20 nm pixel size, four times accumulated average per line and 200 Hz scan speed.
 
@@ -284,23 +651,23 @@ E18 rat Banker cultures expressing mNeonGreen-tagged Xph15 or Xph20 were imaged 
 
 Live neurons were imaged with an inverted Leica SP8 STED microscope equipped with an oil immersion objective (Plan Apo 100× NA 1.4), white light laser 2 (WLL2, 470–670 nm, 80 MHz frequency, ca. 200 ps pulse duration), and internal hybrid detectors. A 775 nm pulsed wavelength laser (80 MHz frequency, ca. 600 ps pulse duration) was used to deplete SiR dye excited by the 647 nm laser line. To preserve neuron health, low STED power was used: time-averaged measurements of STED laser power at the focal plane were showing a value lower than 20 mW (using S120C probe from Thorlabs). Other acquisition parameters were 19 nm pixel size; 16 times average per line; bidirectional 400 Hz scan speed. Final images were processed in ImageJ as follows: gentle convolution using convolve plugin with a 3 × 3 kernel (1 1 1, 1 10 1, 1 1 1), slight chromatic correction to align GFP image with STED capture. Gamma correction of 0.5 was applied on neuron large view image to help seeing small synapses stained with SiR.
 
-## (spt)PALM
+### (spt)PALM
 
 Live or fixed (PFA 4%) cells were mounted in a Ludin chamber filled with 1 ml of Tyrode’s solution (in mM): 10 HEPES, 5 KCl, 100 NaCl, 2 MgCl2, 2 CaCl2, 15 glucose (pH 7.4), and imaged at 37°C. An inverted microscope (DMi8, Leica, Germany) equipped with a TIRF objective (160 × 1.43 NA, Leica), a Ilas² TIRF device, and an Evolve EMCCD camera (Roper Scientific, Evry, France) was used for (spt)PALM recordings. Neurons expressing mEos3.2-tagged constructs were photo-activated using a 405 nm laser, and the resulting photo-converted single-molecule fluorescence signal was excited with a 561 nm laser. The power of the 405 nm laser was adjusted to keep the number of the stochastically activated molecules constant and well separated during the acquisition. Images were acquired by image streaming for up to 4000 frames (sptPALM) or up to 20,000 frames (PALM) at a frame rate of 50 Hz using MetaMorph software (Molecular Devices), and analysis was performed with a homemade software developed under MetaMorph and kindly provided by J.B. Sibarita (Interdisciplinary Institute for Neuroscience).
 
-## SMLM analysis
+### SMLM analysis
 
 Localization and tracking reconnection of ATTO-647N (uPAINT) or mEos3.2 (PALM) signals were performed using homemade software developed as a MetaMorph plugin and kindly provided by J.B. Sibarita (Interdisciplinary Institute for Neuroscience) (Kechkar et al., 2013). Single-molecule fluorescence could be identified by occurrence of fluorescence in the red channel and the defined minimum duration of fluorescence. Trajectories were reconstructed using a simulated annealing algorithm (Racine et al., 2006), taking into account molecule localization and total intensity. Diffusion coefficients were calculated by linear fit of the first four points of the mean square displacement plots.
 
 PALM clusters analysis was performed using SR-Tesseler software as described previously .
 
-## DNA-PAINT
+### DNA-PAINT
 
 E18 rat hippocampal neurons transfected with Xph20-SNAP and cytosolic eGFP were fixed at DIV 14–16 with 4% PFA in PBS for 20 min. Neurons were then quenched with 150 mM glycine for 20 min, followed by simultaneous blocking and permeabilization for 90 min in PBS supplemented with 0.2% Triton-X-100 and 3% BSA. For SNAP labeling, cells were incubated with 1 µM of SNAP-ligand-modified DNA oligomer in PBS supplemented with 0.5% BSA and 1 mM DTT for 1 hr.
 
 Neurons were imaged at 25°C in a Ludin chamber with an inverted motorized microscope (Nikon Ti) equipped with a CFI Apo TIRF 100× oil, NA 1.49 objective and a perfect focus system PFS-2, allowing long acquisition in TIRF illumination mode. For DNA-PAINT nanoscopy, neurons expressing Xph20-SNAP were first incubated for 15 min with 90 nm Gold Nanoparticles (Cytodiagnostics) to serve as fiducial markers. Xph20-SNAP was then visualized with Cy3b-labeled DNA imager strands, added to the Ludin chamber at variable concentrations (2–5 nM), as described previously (Schnitzbauer et al., 2017). Cy3B-labeled strands were visualized with a 561 nm laser (Cobolt Jive). Fluorescence was collected by the combination of a dichroic and emission filters (dichroic: Di01-R561; emission: FF01-617/73, Semrock) and a sensitive sCMOS (scientific CMOS, ORCA-Flash4.0, Hammatasu). The acquisition was steered using MetaMorph software (Molecular Devices) in streaming mode at 6.7 Hz. GFP was imaged using a conventional GFP filter cube (excitation: FF01-472/30; dichroic: FF-495Di02; emission: FF02-520/28, Semrock). Super-resolution DNA-PAINT reconstruction and drift correction were carried out as described before using the software package Picasso (Schnitzbauer et al., 2017).
 
-## Calcium signaling imaging
+### Calcium signaling imaging
 
 Imaging of GCaMP6f and Xph-GCaMP6f was carried out in E18 rat hippocampal-dissociated culture nucleofected with the appropriate DNA on the day of the culture. Neurons were imaged at 13–18 DIV using a Nikon inverted microscope (Ti Eclipse) with an EMCCD camera (Evolve 512, Photometrics) controlled using MetaMorph software (Molecular Devices) and equipped with a ×60/1.49 NA oil-immersion objective (Nikon). Images were acquired at a rate of ∼50 Hz. The imaging chamber (Ludin Chamber, Life Imaging Services) was perfused with extracellular buffer containing (in mM) 130 NaCl, 2.5 KCl, 3 CaCl2, 0.1 MgCl2, 10 glucose, 10 HEPES, 0.001 TTX, 0.05 PTX (pH adjusted to 7.4 with NaOH and osmolarity adjusted to 280 mOsm) at RT. The fluorophores were excited with 488 nm laser lines and imaged with the appropriate filters.
 

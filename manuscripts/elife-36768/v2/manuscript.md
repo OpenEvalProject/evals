@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.36768.001 Alzheimer's and Parkinson's disease are late onset neurodegenerative diseases that will require therapy over decades to mitigate the effects of disease-driving proteins such tau and α-synuclein (α-Syn). Previously we found that TRIM28 regulates the levels and toxicity of α-Syn and tau ( Rousseaux et al., 2016 ). However, it was not clear how TRIM28 regulates α-Syn and it was not known if its chronic inhibition later in life was safe. Here, we show that TRIM28 may regulate α-Syn and tau levels via SUMOylation, and that genetic suppression of Trim28 in adult mice is compatible with life. We were surprised to see that mice lacking Trim28 in adulthood do not exhibit behavioral or pathological phenotypes, and importantly, adult reduction of TRIM28 results in a decrease of α-Syn and tau levels. These results suggest that deleterious effects from TRIM28 depletion are limited to development and that its inhibition adulthood provides a potential path for modulating α-Syn and tau levels.
+Alzheimer's and Parkinson's disease are late onset neurodegenerative diseases that will require therapy over decades to mitigate the effects of disease-driving proteins such tau and α-synuclein (α-Syn). Previously we found that TRIM28 regulates the levels and toxicity of α-Syn and tau (Rousseaux et al., 2016). However, it was not clear how TRIM28 regulates α-Syn and it was not known if its chronic inhibition later in life was safe. Here, we show that TRIM28 may regulate α-Syn and tau levels via SUMOylation, and that genetic suppression of Trim28 in adult mice is compatible with life. We were surprised to see that mice lacking Trim28 in adulthood do not exhibit behavioral or pathological phenotypes, and importantly, adult reduction of TRIM28 results in a decrease of α-Syn and tau levels. These results suggest that deleterious effects from TRIM28 depletion are limited to development and that its inhibition adulthood provides a potential path for modulating α-Syn and tau levels.
 
 ## Introduction
 
@@ -36,17 +36,53 @@ We recently demonstrated that TRIM28 regulates the steady state levels of the ne
 
 We previously found that TRIM28 regulates the post-translational stability of α-Syn and tau and that this effect is mediated by two critical cysteines in its RING domain (C65 and C68; [Rousseaux et al., 2016]). We hypothesized that TRIM28 may act as an E3 SUMO ligase (Liang et al., 2011; Neo et al., 2015; Yang et al., 2013) toward α-Syn and tau via this domain for three reasons: (1) TRIM28 interacts only weakly with α-Syn and tau (Rousseaux et al., 2016) and is therefore unlikely to act solely as a stabilizing factor via these residues; (2) TRIM28 mediates the nuclear localization of α-Syn and tau and SUMOylation is thought to play a critical role in influencing subcellular localization (Hay, 2005); and (3) Given the post-translational stabilization effect of TRIM28 on α-Syn and tau (Rousseaux et al., 2016), we surmised that SUMOylation may help prevent polyubiquitination, thus increasing their overall bioavailability. To test whether SUMOylation itself regulates the levels of α-Syn and tau, we inhibited the sole E2 SUMO ligase, UBC9, via RNAi and pharmacological inhibition (using Viomellein [Hirohama et al., 2013]). We found that both approaches were sufficient to decrease α-Syn and tau, suggesting that SUMOylation indeed regulates their steady state levels (Figure 1A). We next asked whether TRIM28 mediates the SUMOylation of α-Syn and tau. We first tested this in cells and found that knockdown of endogenous TRIM28 decreased native α-Syn and tau SUMOylation whereas ectopic overexpression of TRIM28 increased their SUMOylation (Figure 1B). Interestingly, when we mutated a catalytic RING domain of TRIM28 (C65A/C68A), we could inhibit α-Syn and tau SUMOylation (Figure 1B). This was consistent with our previous findings that mutating this residue impeded α-Syn and tau stabilization and nuclear localization (Rousseaux et al., 2016). However, mutant TRIM28 (C65A/C68A) was less stable than its wildtype form in all assays. Thus, whether these findings are due to decreased SUMOylation or to a change in TRIM28 protein stability is difficult to discern. To further test whether Trim28 regulates α-Syn and tau SUMOylation, we performed SUMOylation assays on endogenous α-Syn and tau from brain lysates (under denaturing conditions) from wild-type and Trim28+/- mice. We found that α-Syn and tau SUMOylation were significantly reduced in Trim28 haploinsufficient mice (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig1-v2.jpg)
+
+**Figure 1.:** (A) Blocking SUMOylation – by either pharmacological inhibition using viomellein or siRNA-mediated suppression of the sole SUMO E2 ligase, UBC9 – decreases α-Syn and tau levels by western blot. (B) SUMO assay in human cells reveals that TRIM28 mediates the formation of SUMO2 adducts on α-Syn and tau. This effect is lost upon mutation of the RING domain of TRIM28 (TRIM28-Mut). (C) In vivo SUMO assay from denatured mouse brain lysates of WT and Trim28+/- mice. Snca-/- and Mapt-/- mice and IP: IgG serve as negative controls. *, **, *** and ns denote p<0.05, p<0.01, p<0.001 and p>0.05, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A), Structural rationale for targeting the RING domain of Trim28. Alignment of human TRIM28 (hsTRIM28) with mouse (mmTrim28) and Drosophila melanogaster (dmTRIM28) TRIM28 in addition to human TRIM32 (hsTRIM32). * denotes the sequence upon which modeling was conducted. Modeling of RING domain disruption in PyMOL using the TRIM32 RING domain (PDB: 5FEY). (B), Approach to mutate endogenous Trim28 catalytic activity and Sanger sequencing confirmation of mutation insertion. (C), Western blot and qPCR analysis of Trim28, Snca and Mapt transcripts in Trim28 E3 mutant heterozygous mice (Trim28E3MT/+) compared to littermate controls. In (C), n = 4–9 mice per genotype. Error bars denote s.e.m. **, **** and ns denote p<0.01, p<0.0001 and p>0.05, respectively.
+
 TRIM28 has several important functions throughout the cell (Cheng et al., 2014; Czerwińska et al., 2017; Dalgaard et al., 2016; Fasching et al., 2015; Liang et al., 2011; Neo et al., 2015; Singh et al., 2015), and its loss of function in mice is embryonic lethal (Cammas et al., 2000). We asked whether one of its domains can be specifically targeted for future therapeutic use without disrupting the others. Given that two conserved critical cysteine residues in its RING domain (Figure 1—figure supplement 1A) regulate TRIM28 function toward α-Syn and tau, we hypothesized that mutating residues critical for its endogenous catalytic activity would be the most promising approach. We therefore generated a knockin mouse carrying mutations in its RING domain (Figure 1—figure supplement 1B). We found that mutating these residues, despite decreasing α-Syn and tau levels significantly, caused a dramatic destabilization of TRIM28 protein (Figure 1—figure supplement 1C–D). Moreover, homozygosity for the these E3 mutant allele caused embryonic lethality, a feature consistent with the effects of a null allele. Thus, mutating the RING domain of TRIM28 decreases α-Syn and tau levels, but does so by disrupting its structure and stability (Figure 1—figure supplement 1D).
 
 Since TRIM28 has critical roles in development, we next asked whether we could bypass these defects by knocking down Trim28 in the postnatal mouse brain (Figure 2—figure supplement 1A). We used an AAV carrying both an shRNA targeting Trim28 and a YFP reporter. We found that the virus was widely expressed throughout the brain (Kim et al., 2013) and that mice receiving an shRNA against Trim28 had a 75% depletion of Trim28 in their brain (Figure 2—figure supplement 1B). Importantly, these mice developed normally until at least 10 weeks of age. We evaluated cortical and hippocampal thickness and astrocytosis in these mice and did not note any significant defects (Figure 2—figure supplement 1C).
 
 Given that synucleinopathies and tauopathies most often occur in the later decades of life, therapeutics should therefore accurately mimic this late-stage disruption. To test whether late stage inhibition of Trim28 is therapeutically tractable, we generated Trim28 adult knockout mice. This was done by crossing a whole body, tamoxifen-inducible Cre (UBC-CreERT2, [Ruzankina et al., 2007]) with mice carrying a floxed Trim28 allele (Cammas et al., 2000). We waited until the animals were 8–12 weeks old before starting a 4 week tamoxifen regimen to ablate Trim28 (Figure 2A). To our surprise, we found that adult depletion did not result in early lethality nor overt phenotypes. Instead, adult knockout mice lived for the duration of the study (over 40 weeks post-tamoxifen injection, Figure 2B). We tested whether Trim28 is effectively ablated in these mice and found that Trim28 levels were reduced by over 75% in each tissue tested (both at the RNA and protein level; Figure 2C,D and Figure 2—figure supplement 2A–C). Importantly, α-Syn and tau levels were also decreased in multiple brain regions, corroborating our previous findings using germline haploinsufficient mice (Rousseaux et al., 2016).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental approach to delete Trim28 from the adult body. (B) Kaplan-Meier survival curve of Adult knockout mice (UBC-CREERT2; Trim28flox/flox + TAM vs littermate controls). No significant differences in survival are observed. (C) qPCR analysis for Trim28 expression in midbrain (MB), cortex (CTX) and hippocampus (HIP) of Trim28 adult knockout mice and control littermates. (D) Western blot analysis of α-Syn, tau and Trim28 levels in hippocampi from Trim28 adult knockout mice and control littermates. In (B), n = 14–33 per group. In (C and D), n = 12–13 per group.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Approach to deplete Trim28 in the postnatal brain via RNAi. (B) Left panel demonstrates widespread expression of AAV across the brain. Epifluorescence of YFP expression in a representative 10-week-old mouse demonstrating widespread expression of the AAV throughout various brain regions. Brain regions depicted: (i) whole forebrain; (ii) caudal cortex; (iii) caudal cortex (zoom); (iv) hippocampus; (v) hippocampal CA1 region (zoom); (vi) Purkinje cells; and (vii) brainstem). Right panel denotes evidence of Trim28 depletion by qPCR from mice harboring AAV-encoded shRNAs against Trim28 (shTrim28) compared to control, shRNAs against Luciferase (shLuci). (C) Histological examination at the level of the cortex (left panel) and hippocampus (right panel) of mice expressing shTrim28 or shLuci. Cortical and CA1 thickness are measured via cresyl violet staining and astrogliosis is measured using GFAP staining. In (B) and (C), n = 4–6. *** and ns denote p<0.001 and p>0.05, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Western blot analysis of α-Syn, tau and Trim28 levels in the midbrain from adult knockout mice and littermate controls. (B) Correlation analysis between normalized Trim28 levels and α-Syn or tau levels in hippocampal or midbrain extracts from Trim28 adult knockout mice and littermate controls (obtained from Western blot analysis in Figure 2D and Figure 2—figure supplement 2A). R2 values are presented for each linear regression. (C) qPCR analysis of Trim28 expression from peripheral organs in adult knockout mice and littermate controls. In (A and B), n = 12–13 per group. In (C), n = 7–8 per group. *, ** and **** denote p<0.05, p<0.01 and p<0.001, respectively.
+
 An important aspect of measurable safety margins in the depletion of a gene is its impact on neuronal function. To assess whether loss of Trim28 in adult mice impacts brain structure and function, we performed a battery of behavioral and histological tests. We found that Trim28 adult knockout mice behaved similarly to their control littermate counterparts in every test assayed. Specifically, no defects were observed in motor behavior, anxiety, perseverative movements and memory (Figure 3A–H). Consistent with this, we could not discern any gross histological defects nor signs of inflammation (as measured by GFAP immunoreactivity) in the brain (Figure 4A–C). We further tested Trim28 levels via immunostaining and found that, while Trim28 was highly expressed in the brain (confirming our western and qPCR results), it was depleted in the adult knockout (Figure 4—figure supplement 1A). A previous study highlighted several gene expression changes in mice lacking Trim28 in forebrain excitatory neurons starting from postnatal day 14 (Jakobsson et al., 2008). We tested the expression of these genes in the hippocampus using qPCR and found that, while the directionality of changes was consistent with the previous study, there was a broad dampening of this effect in the adult knockout mice (Figure 4—figure supplement 1B). This may be due to the later stage depletion of Trim28 or the incomplete deletion of Trim28 (there is 15–20% remaining in most adult knockouts) and may account for the slight behavioral abnormalities observed in the reported juvenile forebrain-specific Trim28 knockouts (Jakobsson et al., 2008) versus the whole-body adult Trim28 knockouts.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig3-v2.jpg)
 
 **Figure 3.:** Adult knockout mice and littermate controls were subjected to: (A) Open field assay where total distance, speed, vertical activity and time in center were measured over a period of 30 min. (B) Parallel rod footslip analysis where number of footslips and time spent immobile were measured on a grid over a period of 10 min. (C) Pole test where the time to turn and descend were measured to a mouse on top (facing upward) of a 18’ pole. (D) Elevated plus maze measured the time spent in open vs. closed arms during a period of 10 min. (E) Pavlovian conditioned fear analysis in both context and cued settings (day 2). (F) Novel object recognition assay showing the discrimination index for identifying the novel vs. familiar object. (G) Hole poke analysis of repetitive behavior measuring the number of sequential nose pokes. (H) Rotarod analysis measuring the motor coordination and learning of mice over a period of four days. For each test, n = 5–33; ns denotes p>0.05.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig4-v2.jpg)
+
+**Figure 4.:** Representative photomicrographs of the cortex, hippocampus and cerebellum stained with (A) H and E and (B) GFAP. (C) Quantification of cortical and hippocampal width as well as normalized GFAP intensity. For each test, n = 3; ns denotes p>0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative photomicrographs of Trim28 staining in the CA1 and dentate gyrus (DG) of the hippocampus, striatum (STR) and cerebellum (CB) in Trim28 adult knockouts (KO) compared to littermate controls (CTRL). (B) qPCR on genes previously reported to be disrupted upon Trim28 loss in the juvenile hippocampus.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Representative photomicrographs of (A) Heart, (B) Liver, and (C) Spleen from Trim28 adult knockouts compared to littermate controls stained for hematoxylin and eosin. Each photomicrograph is representative of three independent animals for both genotypes.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/36768/elife-36768-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Complete blood chemistry of Trim28 adult knockout mice compared to control littermates. Adjusted P-values from multiple t-tests (Holm-Sidak corrected) for each value are presented on the right. Legend for each analyte is presented below.
 
 Given that the adult knockout affects the whole body, we examined regions of the body that could be vulnerable to Trim28 loss-of-function-induced toxicity. We assessed general morphology of the heart, liver and spleen and found no discernable defects in the adult knockout mice compared to littermate controls (Figure 4—figure supplement 2). Moreover, blood chemistry in these mice appeared normal (Figure 4—figure supplement 3).
 
@@ -56,44 +92,446 @@ An important point of consideration moving forward into therapeutics is the mech
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Trim28E3MT (C66A, C69A, R72G)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Pure C57Bl/6J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Trim28flox B6.129S2(SJL)- Trim28tm1.1Ipc/J</td>
+      <td>Jackson laboratory</td>
+      <td>Stock #018552</td>
+      <td>Pure C57Bl/6J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>UBC-CreERT2 B6.Cg-Ndor1 Tg(UBC-cre/ERT2)1Ejb/1J</td>
+      <td>Jackson laboratory</td>
+      <td>Stock #007001</td>
+      <td>Pure C57Bl/6J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>FVB/NCrl</td>
+      <td>Charles River</td>
+      <td>Code #207</td>
+      <td>Pure C57Bl/6J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Trim28+/-</td>
+      <td>Rousseaux et al. (2016); this study</td>
+      <td></td>
+      <td>Crossing Jax stock #018552 to #006054</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Snca-/- B6;129 × 1-Sncatm1 Rosl/J</td>
+      <td>Jackson laboratory</td>
+      <td>Stock #003692</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Mapt-/- B6.129 × 1-Mapttm1 Hnd/J</td>
+      <td>Jackson laboratory</td>
+      <td>Stock #007251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T-shScram</td>
+      <td>This study; shScram from Rousseaux et al. (2016).</td>
+      <td></td>
+      <td>293 T cells infected with retrovirus (pMSCV) harboring shScramble. Selected with 1 µg/mL of puromycin for at least 1 week before commencing experimentation</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T-shTRIM28</td>
+      <td>This study; shTRIM28 from Rousseaux et al. (2016).</td>
+      <td></td>
+      <td>293 T cells infected with retrovirus (pMSCV) harboring shTRIM28. Selected with 1 µg/mL of puromycin for at least 1 week before commencing experimentation</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Flag-SUMO2</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pKH3-HA-TRIM28</td>
+      <td>Addgene</td>
+      <td>#45569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pKH3-HA-TRIM28-C65A/ C68A</td>
+      <td>Rousseaux et al. (2016); Addgene</td>
+      <td>#92199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pKH3</td>
+      <td>Addgene</td>
+      <td>#12555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV8-YFP-shScramble</td>
+      <td>This study</td>
+      <td>accgcctgaagtctctgattaa</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV8-YFP-shTrim28</td>
+      <td>This study</td>
+      <td>ttgttgaactgtttgaacatgc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>alpha-synuclein (C-20), Rabbit polyclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-7011-R</td>
+      <td>This antibody has been discontinued.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>alpha-synuclein (Clone 42), Mouse monoclonal</td>
+      <td>BD Biosciences</td>
+      <td>610786</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tau, Rabbit polyclonal</td>
+      <td>Dako</td>
+      <td>A0024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tau (Tau-5), Mouse monoclonal</td>
+      <td>Abcam</td>
+      <td>ab80579</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Trim28 (20C1), Mouse monoclonal</td>
+      <td>Abcam</td>
+      <td>ab22553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SUMO2/3, Rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>ab3742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag (M2), Mouse monoclonal</td>
+      <td>Sigma Aldrich</td>
+      <td>F1804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>UBC9, Goat polyclonal</td>
+      <td>Novus Biologicals</td>
+      <td>NB300-812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Vinculin (hVIN-1), Mouse monoclonal</td>
+      <td>Sigma Aldrich</td>
+      <td>V9131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFAP (G-A-5), Mouse monoclonal</td>
+      <td>Sigma Aldrich</td>
+      <td>G3893</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Mkrn3-f</td>
+      <td></td>
+      <td>ccatggagaaatatgcgaca</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Mkrn3-r</td>
+      <td></td>
+      <td>ctgagctgcatcccaagg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Tcf5-f</td>
+      <td></td>
+      <td>tgatgcaatccggatcaa</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Tcf5-r</td>
+      <td></td>
+      <td>cacgtgtgttgcgtcagtc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Pcdhb6-f</td>
+      <td></td>
+      <td>gccactagaagggctcgaat</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Pcdhb6-r</td>
+      <td></td>
+      <td>tgtctccacatctagctgcaa</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Klhdc4-f</td>
+      <td></td>
+      <td>cctggacaaaagttgacatcc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Klhdc4-r</td>
+      <td></td>
+      <td>caaactccccaccgaagac</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Stac2-f</td>
+      <td></td>
+      <td>tgtctactagaaatcggtagccaag</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Stac2-r</td>
+      <td></td>
+      <td>agcgtcttgttctccacctg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Smad3-f</td>
+      <td></td>
+      <td>ctcttggagcacatcctggt</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Smad3-r</td>
+      <td></td>
+      <td>gcccagctggaaatatgc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Cdkn1c-f</td>
+      <td></td>
+      <td>caggacgagaatcaagagca</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Cdkn1c-r</td>
+      <td></td>
+      <td>gcttggcgaagaagtcgt</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>C1ql2-f</td>
+      <td></td>
+      <td>tcacgtaccacattctcatgc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>C1ql2-r</td>
+      <td></td>
+      <td>tgttgctggcgtagtcgta</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Snca-f</td>
+      <td></td>
+      <td>gaagacagtggagggagctg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Snca-r</td>
+      <td></td>
+      <td>caggcatgtcttccaggatt</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Mapt-f</td>
+      <td></td>
+      <td>gagaatgccaaagccaagac</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Mapt-r</td>
+      <td></td>
+      <td>gtgagtccaccatgtcgatg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Trim28-f</td>
+      <td></td>
+      <td>gctgctgccctgtctacatt</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>Trim28-r</td>
+      <td></td>
+      <td>cacactggacaatccaccat</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>S16-f</td>
+      <td></td>
+      <td>aggagcgatttgctggtgtgg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (M. musculus), qPCR</td>
+      <td>S16-r</td>
+      <td></td>
+      <td>gctaccagggcctttgagatg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (H. sapiens), siRNA</td>
+      <td>siScramble</td>
+      <td>ThermoFisher Scientific</td>
+      <td>AM4611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (H. sapiens), siRNA</td>
+      <td>siUBC9</td>
+      <td>ThermoFisher Scientific</td>
+      <td>AM16708-120322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Viomeillin</td>
+      <td>BioViotica</td>
+      <td>BVT-0359-C500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-ethylmaleimide (NEM)</td>
+      <td>Sigma Aldrich</td>
+      <td>E3876-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma Aldrich</td>
+      <td>T5648-5G</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Cell culture was performed as previously described (Rousseaux et al., 2016). Briefly, HEK293T cells (ATCC CRL-3216; RRID:CVCL_0063, authenticated by manufacturer but not by researcher) devoid of mycoplasma were cultured in complete DMEM (DMEM +10% FBS+1 x antibiotic/antimycotic). Cells were plated in 6-well or 24-well plates for SUMOylation assays (see below) or siRNA and drug treatment, respectively. For the latter, cells were treated with 20 nM of indicated siRNAs or 10 µm Viomellein (or DMSO control) for 72 hr prior to lysis and western blot.
 
-## SUMOylation assays
+### SUMOylation assays
 
 α-Syn and tau SUMOylation were assayed in cells as follows. Briefly, HEK293T cells were transfected with 3 µg Flag-SUMO2 and TRIM28 variants for 48 hr. Cells were harvested in cold PBS and spun down at 5,000 RPM for five minutes at 4°C. Cells were then lysed in SUMO lysis buffer (1% Triton X-100, 150 mM NaCl, 10 mM Tris pH 8.0, 10% glycerol, 20 mM N-ethyl maleimide and protease inhibitors [Roche]) for 40 min on ice with occasional vortexing. Cell debris were spun down at 15,000 RPM for 20 min at 4°C. Lysates were applied to Dynabeads (Protein G, 15 µL slurry) that were previously washed and then conjugated to 1 µg of antibody (α-Syn, C-20 Santa Cruz Biotechnology; discontinued; tau, tau-5 Abcam; RRID:AB_304171) and incubated with rotation for 2 hr at 4°C. This sub-threshold pull-down allowed us to bypass the regulatory effect of TRIM28 on α-Syn and tau. Bound proteins were vigorously washed (to remove any interactors which themselves may be SUMOylated) four times in 500 µL of SUMO lysis buffer and eluted for 10 min at 95°C for downstream western blot analysis. For each condition, either cell lines stably knocking down TRIM28 (shTRIM28) or non-silencing (shScramble) were used. In addition, TRIM28, TRIM28-Mut and control constructs were co-transfected at 300 ng per well (1:10 ratio to SUMO concentration). Alternatively, Flag-SUMO2 was pulled down using Flag-M2 magnetic beads (20 µl slurry, Sigma; RRID:AB_2637089) under denaturing conditions (first boiling the sample prior to the IP). Each SUMOylation assay was performed three independent times.
 
 For the in vivo SUMOylation assay, mouse brains were harvested in RIPA buffer containing protease and phosphatase inhibitors (GenDepot). Samples were boiled for 5 min at 95°C, following which antibodies (2.5 µg) targeting α-Syn (C-20, SCBT) or Tau (Tau-5, Abcam) were incubated overnight with rotation at 4°C. Antibody-lysate complexes were bound to Dynabeads (25 µl, Protein G) for 2 hr at 4°C with rotation and then washed vigorously 5 × 1 mL in wash buffer (50 mM Tris pH 7.3, 170 mM NaCl, 1 mM EDTA, 0.5 % NP-40). Bound protein was eluted in Laemlli buffer at 85°C for 10 min. Lysates were run on SDS-PAGE followed by Western blot and SUMOylated species were detected by probing for SUMO2/3 (Abcam; RRID:AB_304041).
 
-## Generation of Trim28E3MT mice.
+### Generation of Trim28E3MT mice.
 
 Trim28E3MT mice on a pure C57Bl/6J background were generated via CRISPR/Cas9-mediated gene editing (Wang et al., 2013). Briefly, an sgRNA targeting the 5’ of Trim28 was synthesized by direct PCR from pX330 (gift from Zhang lab, Addgene #42230) and in vitro transcribed with the MEGAshortscript T7 Transcription kit (Invitrogen) using the following two primers (forward: 5’-TTAATACGACTCACTATAGGGCGTGTGTCGCGAGCGCCTGGTTTTAGAGCTAGAAATAGC-3’; reverse: 5’-AAAAGCACCGACTCGGTGCC-3’). A single stranded oligodeoxynucleotide (ssODN) was purchased from IDT for homologous-directed recombination introducing the C66A, C69A and R72G mutations in Trim28 (5’-CTGCAGCCGCGTCGTCCCCTGCGGGGGGCGGTGGCGAGGCGCAGGAGCTTTTAGAACATGCCGGTGTCGCCAGGGAAGGACTCAGACCAGAACGGGATCCTCGGCTGCTGCCCTGTCTACATTCGGCCTGCAGTGCCTGCCTGGGCCCCGCTACACCCGCCGCAGCGAATAATTCGGGGGATGGCGGCTCGG-3’). The PAM (protospacer adjacent motif) and additional adjacent synonymous mutations were introduced to increase editing efficiency and allow for simple genotyping by differential primer hybridization. On the day of injection, Cas9 protein (PNA Bio), sgRNA and repair template (ssODN) were injected (pronuclear) into ova from C57Bl/6 female mice and transferred into oviducts of pseudopregnant females. The following primers were used to distinguish the E3 mutant allele (forward: 5’-TTGGCGGCGAGCGCACTTGC-3’; reverse: 5’-CCCTGGCGACACCGGCATG-3’ or forward: 5’-CATGCCGGTGTCGCCAGGGA-3’; reverse: 5’-TCCCACAGGACATACCTGGTTAGCATCCTGG-3’) from the wildtype allele (forward: 5’-TTGGCGGCGAGCGCACTTGC-3’; reverse: 5’-TCGCGACACACGCCGCAGTG-3’ or 5’-CACTGCGGCGTGTGTCGCGA-3’; reverse: 5’-TCCCACAGGACATACCTGGTTAGCATCCTGG-3’). Founder mice were backcrossed at least three times prior to experimentation to get rid of potential off-target mutations.
 
-## Tamoxifen injections
+### Tamoxifen injections
 
 Tamoxifen injections were performed as previously described (Sztainberg et al., 2015). Briefly, starting at 8–12 weeks of age, tamoxifen or vehicle (peanut oil) was injected intraperitoneally at a dose of 100 mg/kg, three times a week for four weeks. Mice were left to recover for at least two weeks before proceeding with behavioral, biochemical and histological assessment.
 
-## AAV generation and P0 injections
+### AAV generation and P0 injections
 
 An AAV8 vector containing both YFP and a miRE cassette-containing shRNA (Fellmann et al., 2013) under the control of the chicken beta actin (CBA) promoter was generated using Gibson cloning. Individual shRNA sequences were generating using the splaSH algorithm (Pelossof et al., 2017). Each shRNA vector was tested for efficiency in Neuro2A cells prior to virus generation.
 
 AAV delivery was carried out in neonatal (P0) FVB mouse pups as previously described (Kim et al., 2013). Briefly, neonatal pups (<8 hr from birth) were separated from lactating dams and anesthetized on ice. 1 × 1011 viral genomes were injected per ventricle (total of 2 × 1011 genomes per mouse) and mice were left to recover on a heated pad before returning them to their mother. Tissue from the caudal region of the cerebrum (cortex + hippocampus) was harvested ten weeks post injection as this region had the maximal viral expression (YFP positive signal) and offered optimal Trim28 knockdown by qPCR. RNA extraction was performed using the RNeasy mini kit (Qiagen).
 
-## Behavioral analysis
+### Behavioral analysis
 
 Behavioral analysis was performed by an experimenter blind to the treatment and genotype of the animals. Animal behavior was conducted between 10 am and four pm for each test and was carried out when the animals were 14–22 weeks old (6–10 weeks post tamoxifen injection). The open-field analysis (Lu et al., 2017), parallel rod footslip (Ure et al., 2016), pole test (Rousseaux et al., 2012), elevated plus maze (Lu et al., 2017), conditioned fear (Lu et al., 2017), novel object recognition (Antunes and Biala, 2012), hole poke (Ito-Ishida et al., 2015) and rotarod (Lasagna-Reeves et al., 2015) were performed as previously described. For each test, mice were left to habituate in the testing room with ambient white noise for 30–60 min prior to testing.
 
-## Histological analysis
+### Histological analysis
 
 For frozen sections: Free floating sections (25 µm) were mounted and dried on polarized slides (>48 hr). Slides were then stained for Cresyl violet and GFAP (RRID:AB_2314539) as previously described (Rousseaux et al., 2016). For GFAP quantification, photomicrographs were taken using the 10x objective on a Leica DM4000 LED. The percentage of immunoreactive area for GFAP was calculated using ImageJ. Briefly, each DAB-stained image was converted to 8-bit greyscale and made into a binary image using a threshold cutoff of 10% for a representative WT section (after which, the same settings were used for all of the sections in question). Area of interest (Hippocampus or Cortex) was outlined and total area was measured. Within this area, the ‘Analyze particles’ function was used to determine the area of each outlined immunoreactive entity. The sum of these entities was set at the GFAP positive area and the percentage immunoreactive area was presented as GFAP positive area compared to total area (in %). For cresyl violet staining, the relative width of either the caudal cortex or the CA1 region of the hippocampus was measured in four independent sections.
 
 For paraffin-embedded sections: Formalin-fixed tissues were embedded in paraffin and sectioned on a microtome at 5 µm thickness. Sections were deparaffinized in a series of xylene and ethanol washes before being subjected to antigen retrieval for 10 min at 95°C in a buffer containing 10 mM sodium citrate and 0.02% Tween (pH 6.0). Sections were then blocked for one hour at room temperature in PBS + 0.3% Triton X-100 and 5% FBS and stained in blocking buffer containing either 1:400 anti-GFAP (GA5, Sigma) or 1:500 anti-Trim28 (20C1, Abcam) and corresponding secondary antibodies (Vectastain mouse elite ABC kit or Donkey anti-mouse Alexa 488 secondary; RRID:AB_2341099). Fluorescent sections were counterstained using DAPI. Gross morphology was assessed by performing hematoxylin and eosin (H and E) staining using standard protocols.
 
-## Mouse blood collection
+### Mouse blood collection
 
 Mice were anaesthetized with isoflurane and blood was collected from the retro-orbital sinus. A capillary was inserted into the medial canthus of the eye of the anaesthetized mouse. Applying a slight pressure to the capillary allows the blood flow to be directed to a collection tube. After letting the blood coagulate for 30 min, the serum is collected post centrifugation 4 min at 14,000 r.p.m. for analyte analysis with Charles River Laboratories. qPCR analysis qPCR was performed as previously described (Rousseaux et al., 2016). Briefly, 1 µg of RNA isolated from mouse tissue (cortex, hippocampus, midbrain, heart, liver and spleen) was reverse transcribed into cDNA. qPCR primers were designed to span exons to prevent gDNA contamination and can be found in the Key Resources Table. We used the ddCT method as well as S16 as a loading control to calculate relative transcript abundance. Due to the multiple transcript measurements, we used multiple t-tests with an FDR correction of 10% to avoid false discoveries.
 
-## Statistical analysis
+### Statistical analysis
 
 Experimental analysis was performed in a blinded manner when possible. Statistical tests were performed in accordance with the experimental design. For instance, for simple comparisons we used Student’s t-test whereas multi-group analyses we used one- or two-way ANOVA followed by a post-hoc test. For comprehensive statistical coverage of each experiment throughout this manuscript, please see Supplemental file 1. In each case, *, **, ***, **** and ns denote p<0.05, p<0.01, p<0.001, p<0.0001 and p>0.05, respectively.

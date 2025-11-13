@@ -25,24 +25,24 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Department of Epidemiology & Butler Columbia Aging Center, Columbia University New York United States
-2. https://ror.org/00py81415 Center for Genomic and Computational Biology, Duke University Durham United States
-3. https://ror.org/00py81415 Department of Psychology and Neuroscience, Duke University Durham United States
-4. https://ror.org/01jmxt844 Department of Psychology, University of Otago Otago New Zealand
-5. https://ror.org/0220mzb33 Social, Genetic, and Developmental Psychiatry Centre, King's College London London United Kingdom
-6. https://ror.org/00hj8s172 Department of Environmental Health Sciences, Columbia University New York United States
-7. https://ror.org/02v51f717 Department of Occupational and Environmental Health, Peking University Beijing China
-8. https://ror.org/03yghzc09 Complex Disease Epigenetics Group, University of Exeter Exeter United Kingdom
-9. https://ror.org/00hj8s172 Robert N Butler Columbia Aging Center, Columbia University Brooklyn United States
-10. https://ror.org/00hj8s172 Robert N Butler Columbia Aging Center, Columbia University New York United States
-11. https://ror.org/03vek6s52 Department of Environmental Health Sciences, Harvard TH Chan School of Public Health, Harvard University Boston United States
-12. https://ror.org/04v00sg98 Department of Medicine, VA Boston Healthcare System Boston United States
+1. Department of Epidemiology & Butler Columbia Aging Center, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Center for Genomic and Computational Biology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+3. Department of Psychology and Neuroscience, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+4. Department of Psychology, University of Otago Otago New Zealand ([ROR:01jmxt844](https://ror.org/01jmxt844))
+5. Social, Genetic, and Developmental Psychiatry Centre, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+6. Department of Environmental Health Sciences, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+7. Department of Occupational and Environmental Health, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+8. Complex Disease Epigenetics Group, University of Exeter Exeter United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+9. Robert N Butler Columbia Aging Center, Columbia University Brooklyn United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+10. Robert N Butler Columbia Aging Center, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+11. Department of Environmental Health Sciences, Harvard TH Chan School of Public Health, Harvard University Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+12. Department of Medicine, VA Boston Healthcare System Boston United States ([ROR:04v00sg98](https://ror.org/04v00sg98))
 
 † Corresponding author
 
 ## Abstract
 
-Measures to quantify changes in the pace of biological aging in response to intervention are needed to evaluate geroprotective interventions for humans. Previously, we showed that quantification of the pace of biological aging from a DNA-methylation blood test was possible (Belsky et al., 2020). Here, we report a next-generation DNA-methylation biomarker of Pace of Aging, DunedinPACE (for Pace of Aging Calculated from the Epigenome). We used data from the Dunedin Study 1972–1973 birth cohort tracking within-individual decline in 19 indicators of organ-system integrity across four time points spanning two decades to model Pace of Aging. We distilled this two-decade Pace of Aging into a single-time-point DNA-methylation blood-test using elastic-net regression and a DNA-methylation dataset restricted to exclude probes with low test-retest reliability. We evaluated the resulting measure, named DunedinPACE, in five additional datasets. DunedinPACE showed high test-retest reliability, was associated with morbidity, disability, and mortality, and indicated faster aging in young adults with childhood adversity. DunedinPACE effect-sizes were similar to GrimAge Clock effect-sizes. In analysis of incident morbidity, disability, and mortality, DunedinPACE and added incremental prediction beyond GrimAge. DunedinPACE is a novel blood biomarker of the pace of aging for gerontology and geroscience. This research was supported by US-National Institute on Aging grants AG032282, AG061378, AG066887, and UK Medical Research Council grant MR/P005918/1.
+Background:Measures to quantify changes in the pace of biological aging in response to intervention are needed to evaluate geroprotective interventions for humans. Previously, we showed that quantification of the pace of biological aging from a DNA-methylation blood test was possible (Belsky et al., 2020). Here, we report a next-generation DNA-methylation biomarker of Pace of Aging, DunedinPACE (for Pace of Aging Calculated from the Epigenome).Methods:We used data from the Dunedin Study 1972–1973 birth cohort tracking within-individual decline in 19 indicators of organ-system integrity across four time points spanning two decades to model Pace of Aging. We distilled this two-decade Pace of Aging into a single-time-point DNA-methylation blood-test using elastic-net regression and a DNA-methylation dataset restricted to exclude probes with low test-retest reliability. We evaluated the resulting measure, named DunedinPACE, in five additional datasets.Results:DunedinPACE showed high test-retest reliability, was associated with morbidity, disability, and mortality, and indicated faster aging in young adults with childhood adversity. DunedinPACE effect-sizes were similar to GrimAge Clock effect-sizes. In analysis of incident morbidity, disability, and mortality, DunedinPACE and added incremental prediction beyond GrimAge.Conclusions:DunedinPACE is a novel blood biomarker of the pace of aging for gerontology and geroscience.Funding:This research was supported by US-National Institute on Aging grants AG032282, AG061378, AG066887, and UK Medical Research Council grant MR/P005918/1.
 
 ## Introduction
 
@@ -58,13 +58,31 @@ As a new DNA methylation measure of biological aging, DunedinPACE joins a well-e
 
 ## Results
 
-We developed the DunedinPACE measure reported here by analyzing the pace of biological aging in a 1972–1973 birth cohort (N = 1037), the Dunedin Study. This analysis consisted of two parts. The first part of analysis followed our original method (Belsky et al., 2015) to quantify Pace of Aging from two decades of longitudinal organ-system integrity data (Elliott et al., 2021b). First, we measured longitudinal changes in 19 biomarkers assessing cardiovascular, metabolic, renal, hepatic, immune, dental, and pulmonary systems, measured at ages 26, 32, 38 and, most recently in 2019, 45 years (Supplementary file 1A provides measurement details about the tracked biomarkers). Second, linear mixed-effects modeling was used to fit growth models to estimate each study member’s personal rate of change for each of the 19 biomarkers. Third, these 19 personal rates of change were combined across biomarkers to calculate each Study member’s personal Pace of Aging. In line with the geroscience hypothesis (Kaeberlein, 2013; Kennedy et al., 2014), which states that aging represents progressive decline across organ systems, we calculated each Study member’s Pace of Aging as the sum of age-dependent annual changes across all biomarkers: Pace of Agingi = ∑B=119 μ1iB. The resulting Pace of Aging was then scaled to a mean of 1, so that it could be interpreted with reference to an average rate of 1 year of biological aging per year of chronological aging. Study members showed wide variation in their Pace of Aging (Mean = 1 biological year per chronological year, SD = 0.29). Over the two decades that we measured biological aging, the Study member with the slowest Pace of Aging aged by just 0.40 biological years per chronological year, while the Study member with the fastest Pace of Aging accrued 2.44 biological years per chronological year (Elliott et al., 2021b).
+We developed the DunedinPACE measure reported here by analyzing the pace of biological aging in a 1972–1973 birth cohort (N = 1037), the Dunedin Study. This analysis consisted of two parts. The first part of analysis followed our original method (Belsky et al., 2015) to quantify Pace of Aging from two decades of longitudinal organ-system integrity data (Elliott et al., 2021b). First, we measured longitudinal changes in 19 biomarkers assessing cardiovascular, metabolic, renal, hepatic, immune, dental, and pulmonary systems, measured at ages 26, 32, 38 and, most recently in 2019, 45 years (Supplementary file 1A provides measurement details about the tracked biomarkers). Second, linear mixed-effects modeling was used to fit growth models to estimate each study member’s personal rate of change for each of the 19 biomarkers. Third, these 19 personal rates of change were combined across biomarkers to calculate each Study member’s personal Pace of Aging. In line with the geroscience hypothesis (Kaeberlein, 2013; Kennedy et al., 2014), which states that aging represents progressive decline across organ systems, we calculated each Study member’s Pace of Aging as the sum of age-dependent annual changes across all biomarkers: Pace of Agingi = $\sum_{B=1}^{19}$ μ1iB. The resulting Pace of Aging was then scaled to a mean of 1, so that it could be interpreted with reference to an average rate of 1 year of biological aging per year of chronological aging. Study members showed wide variation in their Pace of Aging (Mean = 1 biological year per chronological year, SD = 0.29). Over the two decades that we measured biological aging, the Study member with the slowest Pace of Aging aged by just 0.40 biological years per chronological year, while the Study member with the fastest Pace of Aging accrued 2.44 biological years per chronological year (Elliott et al., 2021b).
 
 The second part of the analysis followed our original method to distill Pace of Aging into a blood test (Belsky et al., 2020). Using Illumina EPIC array DNA methylation data from blood collected at age 45, we developed DunedinPACE to provide a surrogate for the 20-year Pace of Aging. Briefly, we used elastic-net-regression (Zou and Hastie, 2005) to develop a DNA methylation algorithm to predict the 20-year Pace of Aging. Analysis included the subset of probes included on both the Illumina 450 k and EPIC arrays which we previously determined to have acceptable test-retest reliability (ICC >0.4, n = 81,2392) (Sugden et al., 2020). Following the method established by Horvath, 2013 and used in our prior analysis, we fixed the alpha parameter of the elastic net at 0.5. The final lamda value selected by the analysis was 0.042. The resulting algorithm included 173 CpG sites. The CpGs included in DunedinPACE are listed in Supplementary file 1B.
 
-## DunedinPACE distills the 20-year pace of aging into a single-timepoint DNA methylation blood test
+### DunedinPACE distills the 20-year pace of aging into a single-timepoint DNA methylation blood test
 
 DunedinPACE demonstrated a high in-sample correlation with Pace of Aging to age 45 (r = 0.78, Figure 1a). The value indicates improved fit of the DunedinPACE model to the 20-year Pace of Aging as compared to the original DunedinPoAm version’s fit to the 12-year Pace of Aging (in-sample correlation r = 0.6). Correlations among the 12- and 20-year Pace of Aging measures and the DunedinPoAm and DunedinPACE DNA methylation measures are shown in Figure 1—figure supplement 1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig1-v2.jpg)
+
+**Figure 1.:** Panel A shows the association of DunedinPACE with the 20-year Pace of Aging in the Dunedin Study cohort (r = 0.78). Panel B shows effect-sizes for associations of DunedinPACE with measures of physical and cognitive functioning and subjective signs of aging in Dunedin Study members at age 45 years. Colors indicate groupings of measures (physical functions in shades of orange, cognitive functions in shades of yellow, subjective signs of aging in shades of green). Stars next to labels for Physical Limitations and Facial Aging indicate that these meaures were reverse-coded for this analysis. Panel C shows binned scatterplots of associations of DunedinPACE with declines in physical and cognitive function and subjective signs of aging. Plotted points show average values for ‘bins’ of approximately 20 Study members. Regression slopes are estimated from the raw, un-binned data. In Panel C, y-axis scales are denominated in units of standard deviations computed from the baseline measurement for all outcomes except self-rated health, for which the y-axis shows probability of incident fair/poor self-rated health. Changes were calculated over the interval between age-38 and age-45 assessments for all measures except cognition, for which change was calculated over the interval between the age-13 and age-45 assessments. DunedinPACE and DunedinPoAm were developed from analysis of Pace of Aging in the Dunedin cohort; effect-sizes for these measures may be over-estimated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The * indicates measures reverse-coded for analysis.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The * indicates measures reverse-coded for analysis. DunedinPACE and DunedinPoAm were developed from analysis of Pace of Aging in the Dunedin cohort; effect-sizes for these measures may be over-estimated.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The * indicates measures reverse-coded for analysis. DunedinPACE and DunedinPoAm were developed from analysis of Pace of Aging in the Dunedin cohort; effect-sizes for these measures may be over-estimated.
 
 Consistent with the high correlation of DunedinPACE with 20-year Pace of Aging, effect-sizes for associations of DunedinPACE with measures of physical and cognitive functioning and subjective signs of aging measured at age 45 in the Dunedin Study were similar to effect-sizes for the 20-year Pace of Aging. Effect-sizes for DunedinPACE are graphed in Figure 1b. Comparison with effect-sizes for the 20-year Pace of Aging reported previously (Elliott et al., 2021b; Rasmussen et al., 2019) are shown in Figure 1—figure supplement 2.
 
@@ -72,59 +90,103 @@ We also repeated analysis of decline in physical and cognitive functions include
 
 Comparison of DunedinPACE effect-sizes for associations with function tests and subjective signs of aging to effect-sizes for the original DunedinPoAm and the DNA methylation clocks proposed by Horvath, Hannum et al., Levine et al. (PhenoAge Clock), and Lu et al. (GrimAge Clock) are shown in Figure 1—figure supplements 3 and 4. DunedinPACE effect-sizes are similar to or larger than those for DunedinPoAm and the GrimAge clock and larger than those for the other DNA methylation clocks. DunedinPACE and DunedinPoAm were developed from analysis of Pace of Aging in the Dunedin cohort; effect-sizes for these measures may be over-estimated in analyses of Dunedin data. We therefore conducted further validation analysis in four additional cohorts.
 
-## DunedinPACE shows exceptional test-retest reliability
+### DunedinPACE shows exceptional test-retest reliability
 
 A Pace of Aging measure should have high test-retest reliability in order to be able to quantify change from pre-treatment baseline to post-treatment follow-up in intervention studies or exposure-related changes in longitudinal observational studies. We first evaluated test-retest reliability of DunedinPACE using a publicly available database of 36 replicate adult-blood-sample Illumina 450 k datasets (Lehne et al., 2015) (GEO Accession GSE55763). We estimated intraclass correlation coefficients (ICCs) for these replicates using mixed-effects regression. For the original DunedinPoAm, reliability was good (ICC = 0.89 95% CI [0.79–0.94]). For DunedinPACE, reliability was excellent (ICC = 0.96 [0.93–0.98]; Figure 2).We repeated this analysis in two additional databases of replicates reported by Sugden et al., 2020, a database of n = 28 replicate Illumina EPIC-array datasets and a database of n = 350 replicates in which one dataset was generated from the Illumina 450 k array and the other dataset was generated from the Illumina EPIC array. DunedinPACE ICCs were 0.97 [0.94–0.98] in the EPIC-EPIC database and 0.87 [0.82–0.90] in the 450k-EPIC database.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig2-v2.jpg)
+
+**Figure 2.:** The figure graphs DunedinPACE values for replicate Illumnina450k datasets for n = 36 individuals in the dataset published by Lehne and colleagues (Lehne et al., 2015) (GEO Accession GSE55763). The ICC for DunedinPACE in the Lehne dataset is 0.96 95% CI [0.92–0.98].
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The figure plots intraclass correlation coefficients (ICCs) estimated from replicate DNA methylation datasets for DunedinPACE, original DunedinPoAm, and the DNA methylation clocks proposed by Horvath, Hannum et al., Levine et al. (PhenoAge), and Lu et al. (GrimAge). Error bars show 95% confidence intervals. Data are graphed from three datasets, 36 Illumina 450 k technical replicates from GSE55763 (Lehne et al., 2015), and 28 Illumina EPIC array technical replicates and 350 Illumina 450k-EPIC replicates from Sugden et al., 2020. The Sugden et al. EPIC technical replicate dataset (Sugden A) included arrays analyzed as part of the Dunedin Study dataset. The Sugden et al. 450k-EPIC dataset (Sugden B) was used to identify probes for inclusion in the machine learning analysis from which DunedinPACE was derived.
 
 Comparison of DunedinPACE reliability to reliabilities for the original DunedinPoAm and the DNA methylation clocks are shown in Figure 2—figure supplement 1. DunedinPACE is as reliable as the GrimAge clock and more reliable in comparison to the other clocks, although methods have been proposed that may improve reliabilities for the other clocks (Higgins-Chen et al., 2021).
 
 We conducted analysis to evaluate the extent to which improved fit to longitudinal Pace of Aging and better test-retest reliability for DunedinPACE as compared to the original DunedinPoAm might reflect (a) the four-time-point follow-up design of 20-year Pace of Aging and (b) the restriction of elastic net regression to develop DunedinPACE to probes that demonstrated higher test-retest reliabilities in blood in an independent sample. Results suggest that both four-time-points to measure Pace of Aging and restricting machine-learning analysis to CpG sites with higher test-retest reliability contributed to the technical improvement in DunedinPACE over DunedinPoAm (see Appendix 1).
 
-## DunedinPACE is faster in chronologically and biologically older individuals
+### DunedinPACE is faster in chronologically and biologically older individuals
 
 In demography, the pace of biological aging in a population can be estimated from the rate of increase in mortality risk from younger to older chronological ages (Hägg et al., 2019). In humans and many other species, the increase in mortality risk with advancing chronological age is nonlinear, suggesting that the pace of biological aging accelerates as we grow older (Gompertz, 1997; Kirkwood, 2015; Olshansky and Carnes, 1997). We tested if, consistent with this hypothesis, DunedinPACE was faster in chronologically older as compared to younger individuals in data from the Understanding Society Study (n = 1175,, age range 28–95). Chronologically older Understanding Society participants had faster DunedinPACE as compared to younger ones (r = 0.32, Figure 3A). This correlation was threefold larger as compared to the correlation for the original DunedinPoAm (r = 0.11).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig3-v2.jpg)
+
+**Figure 3.:** Panel A shows a scatterplot and fitted slopes illustrating the association between chronological age (x-axis) and DunedinPACE (y-axis) in women and men in the Understanding Society sample. Data for women are plotted with yellow dots (orange slope) and for men with blue crosses (navy slope). The figure illustrates a positive association between chronological age and DunedinPACE (Pearson r = 0.32). Panel B shows a matrix of correlations and association plots among DunedinPACE and age-acceleration residuals of Horvath, Hannum, Levine-PhenoAge and Lu-GrimAge epigenetic clocks. The diagonal cells of the matrix list the DNA methylation measures. The half of the matrix below the diagonal shows scatter plots of associations. For each scatter-plot cell, the y-axis corresponds to the variable named along the matrix diagonal to the right of the plot and the x-axis corresponds to the variable named along the matrix diagonal above the plot. The half of the matrix above the diagonal lists Pearson correlations between the DNA methylation measures. For each correlation cell, the value reflects the correlation of the variables named along the matrix diagonal to the left of the cell and below the cell. Panel C graphs scatterplots of associations of DunedinPACE with three physiology-based measures of biological age (KDM Biological Age Advancement, r = 0.30 [0.24–0.36]; Phenotypic Age Advancement, r = 0.32 95% CI [0.26–0.38]; and Homeostatic Dysregulation r = 0.09 [0.03–0.16]) and a plot of DunedinPACE means and 95% confidence intervals by self-rated health category (r = 0.20 [0.15–0.26]).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Figure shows effect-sizes estimated from the Understanding Society data (n=1,175). Effect-sizes are reported as standardized regression coefficients interpretable as Pearson r values. Error bars show 95% confidence intervals. DNA methylation clocks were residualized for chronological age prior to analysis. Models included covariates for chronological age and sex. Physiology-based measures of biological age were computed from Understanding Society biomarker data (albumin, alkaline phosphatase, creatinine, C-reactive protein, blood urea nitrogen, glycated hemoglobin, systolic blood pressure, and forced expiratory volume in 1second) based on algorithms derived in data from the US NHANES according to the methods developed by Levine et al., 2018, (Klemera and Doubal, 2006), and (Cohen et al., 2013).
 
 Between-individual correlation of older chronological age with faster DunedinPACE could be confounded by differences in exposure histories across birth cohorts, that is not an effect of within-individual aging (Moffitt, 2020). To rule out such confounding, we conducted analysis of within-individual change in DunedinPACE in the US Veterans Administration Normative Aging Study (NAS). Among NAS participants with repeated-measures DNA methylation data (n = 536), DunedinPACE increased by b = 0.021 (SE = 0.003) per 5 years of follow-up, or approximately 0.2 standard deviation units, similar to what we previously reported for the original DunedinPoAm (Belsky et al., 2020).
 
 DunedinPACE is faster in individuals measured to be biologically older using prior measures derived from DNA methylation and physiological data, and who report poorer self-rated health. We compared DunedinPACE with the epigenetic clocks proposed by Hannum et al., 2013; Horvath, 2013; Levine et al., 2018; Lu et al., 2019, with measurements of biological age derived from physiological data and with participants’ subjective perceptions of their own health status in data from the UK-based Understanding Society Study (n = 1175,, mean age = 58, SD = 15, 42% male).
 
-## Epigenetic clock analysis
+#### Epigenetic clock analysis
 
 For each epigenetic clock, we calculated the measure referred to as epigenetic ‘age acceleration’ by regressing participants’ clock-estimated ages on their chronological ages and computing residual values. This measure is often used as an estimate of the aging rate. It quantifies the difference between the amount of aging expected based on a person’s chronological age and the amount of aging observed based on DNA methylation. DunedinPACE was weakly correlated with age acceleration computed from the Horvath clock (r = 0.13) and somewhat more strongly correlated with age acceleration computed from the Hannum and Levine clocks (Hannum r = 0.26; PhenoAge r = 0.36). These correlations were similar to those reported on our 2020 eLife article for the original DunedinPoAm measure. For the GrimAge clock proposed by Lu et al., the correlation with the age-acceleration residuals was stronger (r = 0.58). Correlations are plotted in Figure 3B.
 
-## Physiology-based measurements of biological age
+#### Physiology-based measurements of biological age
 
 We used published methods to measure participants’ biological ages from blood-chemistry, blood-pressure, and lung function data collected at the same time as the DNA methylation data. We computed indices of biological age using three different methods: the Klemera and Doubal method (KDM) Biological Age estimates the age at which a person’s physiology would appear normal in a reference population Klemera and Doubal, 2006; the Phenotypic Age method estimates the age at which a person’s physiology-predicted mortality risk would be approximately normal in a reference population Levine et al., 2018; the homeostatic dysregulation method estimates the extent to which a person’s physiology deviates from a state of health (Cohen et al., 2013). These algorithms generate correlated but distinct estimates conceptually related to biological age (Hastings et al., 2019; Parker et al., 2020). Algorithms were parameterized using a set of biomarkers available in Understanding Society and included in Levine’s original implementation of the Klemera-Doubal Biological Age (Levine, 2013; albumin, alkaline phosphatase, blood urea nitrogen, creatinine, C-reactive protein, HbA1C, systolic blood pressure, forced expiratory volume in one second) and training data from the US National Health and Nutrition Examination Surveys (NHANES) (Kwon and Belsky, 2021). Consistent with analysis of epigenetic age acceleration, participants with more advanced biological aging measured from physiological data also showed faster DunedinPACE (KDM Biological Age Advancement r = 0.30; Phenotypic Age Advancement r = 0.32; Homeostatic Dysregulation r = 0.09; Figure 3C).
 
-## Self-rated health
+#### Self-rated health
 
 Participants who rated themselves as being in worse health also showed faster DunedinPACE. The difference in DunedinPACE between those rating their health as excellent and poor was large (Cohen’s d = 0.74 [0.46–1.03]; Figure 3C).
 
 Comparison of effect-sizes for associations with physiology-based measures of biological age and self-rated health between DunedinPACE and the original DunedinPoAm and the four DNA methylation clocks is shown in Figure 3—figure supplement 1. DunedinPACE effect-sizes are similar effect-sizes for DunedinPoAm and the GrimAge clock and larger in comparison to the other clocks.
 
-## Faster DunedinPACE is associated with morbidity, disability, and mortality
+### Faster DunedinPACE is associated with morbidity, disability, and mortality
 
 We conducted analysis of morbidity and mortality in older men in the VA Normative Aging Study (NAS) and in the Framingham Heart Study Offspring cohort.
 
 NAS analysis was conducted using the same methods reported in our original article (Belsky et al., 2020). Briefly, analysis included n = 771 older men with average age of 77 years (SD = 7) at DNA methylation measurement. Over follow-up from DNA collection in 1999–2013, 46% died and 23% were diagnosed with a new chronic disease, including any of hypertension, type-2 diabetes, cardiovascular disease, chronic obstructive pulmonary disease, chronic kidney disease, and cancer. Participants with faster DunedinPACE were at increased risk for morbidity and mortality (for incident chronic disease morbidity, DunedinPACE HR = 1.23 [1.07–1.42]; for prevalent chronic disease morbidity, DunedinPACE RR = 1.16 [1.12–1.20]; for mortality, DunedinPACE HR = 1.26 95% CI [1.14–1.40], Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig4-v2.jpg)
+
+**Figure 4.:** Panel A shows mortality in the Normative Aging Study (NAS). Panel B shows mortality in the Framingham Heart Study Offspring Cohort. The figure plots Kaplan-Meier curves for three groups of participants in each of the two cohorts: those with DunedinPACE 1 SD or more below the mean (‘slow’ DunedinPACE, blue line); those with DunedinPACE within 1 SD of the mean (‘average’ DunedinPACE, purple line); and those with DunedinPACE 1 SD or more above the mean (‘fast’ DunedinPACE, red line). Censoring of participants prior to death is indicated with a gold hash marks. The table below the figure details the number of participants at risk per 3-year interval and, in parentheses, the number who died during the interval.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Effect-sizes are reported as hazard ratios (HR) per standard deviation increment of the aging measures estimated from Cox proportional hazard regression. All models included covariates for chronological age and sex.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Effect-sizes are reported as relative risks (RR) per standard deviation increment of the aging measures estimated from Poisson regression. All models included covariates for chronological age and sex.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Effect-sizes are reported as hazard ratios (HR) per standard deviation increment of the aging measures estimated from Cox proportional hazard regression. All models included covariates for chronological age and sex.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** For all panels, error bars show 95% confidence intervals. DNA methylation clocks were residualized for chronological age prior to analysis. All models included covariates for chronological age and sex.
+
 Framingham analysis included n = 2471 members of the Offspring cohort (54% women) with average age of 66 years (SD = 9) at DNA methylation measurement during 2005–2008. Over follow-up through 2018, 23% died, 13% were newly diagnosed with cardiovascular disease (CVD), and 6% had a first stroke or transient ischemic attack (TIA). Disability follow-up was conducted through 2015 based on participant reports of limitations to activities of daily living (ADLs) on the Nagi, Katz, and Rosow-Brelsau scales. Participants with faster DunedinPACE at baseline were at increased risk for CVD, stroke/TIA, and mortality (CVD HR = 1.39 [1.26–1.54]; stroke/TIA HR = 1.37 [1.19–1.58]; mortality HR = 1.65 95% CI [1.51–1.79], Figure 4B). They were also more likely to develop disability (Nagi ADL IRR = 1.40 [1.19–1.65]; Katz ADL IRR = 1.33 [1.16–1.53]; Rosow-Breslau ADL IRR = 1.39 [1.24–1.56]).
 
 Comparison of effect-sizes for associations with morbidity, disability, and mortality between DunedinPACE and the original DunedinPoAm and the DNA methylation clocks are shown in Figure 4—figure supplements 1–4. DunedinPACE effect-sizes were similar to those for DunedinPoAm and the GrimAge clock and larger than effect-sizes for the other measures.
 
-## Childhood exposure to poverty and victimization is associated with faster DunedinPACE
+### Childhood exposure to poverty and victimization is associated with faster DunedinPACE
 
 A Pace of Aging measure should be sensitive to histories of exposure associated with earlier onset of morbidity and shorter lifespan and should provide indications of faster aging before clinical signs of aging-related disease develop, in time for prevention. To test if DunedinPACE indicated faster aging in young people with histories of exposure thought to shorten healthy lifespan, we analyzed data from n = 1,658 members of the E-Risk Longitudinal Study. The E-Risk Study follows a 1994–1995 birth cohort of same-sex twins. Blood DNA methylation data were collected when participants were aged 18 years. We analyzed two exposures associated with shorter healthy lifespan, childhood low socioeconomic status and childhood victimization. Socioeconomic status was measured from data on parents’ education, occupation, and income (Trzesniewski et al., 2006). Victimization was measured from exposure dossiers compiled from interviews with the children’s mothers and home-visit assessments conducted when the children were aged 5, 7, 10, and 12 (Fisher et al., 2015). The dossiers recorded children’s exposure to domestic violence, peer bullying, physical and sexual harm by an adult, and neglect. 72% of the analysis sample had no victimization exposure, 21% had one type of victimization exposure, 4% had two types of exposure, and 2% had three or more types of exposure.
 
 E-Risk participants with exposure to childhood poverty and victimization showed faster DunedinPACE (For low as compared to high childhood socioeconomic status, d = 0.38 95% CI [0.25–0.51]; for polyvictimization as compared to no victimization, d = 0.47 [0.17–0.77]; Figure 5).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig5-v2.jpg)
+
+**Figure 5.:** Panel A (left side) plots means and 95% CIs for DunedinPACE measured at age 18 among E-Risk participants who grew up low, middle, and high socioeconomic status households. Panel B (right side) plots means and 95% CIs for DunedinPACE measured at age 18 among E-Risk participants who experienced 0, 1, 2, or 3 or more types of victimization through age 12 years.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73420/elife-73420-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Panel A plots effect-sizes for low socioeconomic status (SES) in childhood (vs. high SES in childhood). Panel B plots effect-sizes for childhood polyvictimization (vs. no childhood victimization). Effect-sizes are reported as Cohen’s d. For both panels, error bars show 95% confidence intervals. DNA methylation clocks were residualized for chronological age prior to analysis. All models included sex as a covariate. (All E-Risk participants are the same chronological age; no age covariate is needed.).
+
 Comparison of effect-sizes for associations with childhood poverty and victimization between DunedinPACE and the original DunedinPoAm and the DNA methylation clocks are shown in Figure 5—figure supplement 1. DunedinPACE effect-sizes were similar to those for DunedinPoAm and the GrimAge clock and larger than effect-sizes for the other clocks.
 
-## Sensitivity analysis
+### Sensitivity analysis
 
 Results for analysis of all studies including covariate adjustment for cell counts and smoking are reported in Supplementary file 2. Covariate adjustment for estimated cell counts and participant reports of smoking history resulted in modest attenuation of some effect-sizes, although DunedinPACE effect-sizes remained statistically different from zero in nearly all cases (associations with declines in balance and cognitive function were attenuated below the alpha = 0.05 threshold in Dunedin Study analysis including smoking as a covariate; differences between un-victimized and those with one type of victimization were attenuated below the alpha = 0.05 threshold in E-Risk Study analysis including smoking as a covariate; differences between high- and middle-SES groups were attenuated below the alpha = 0.05 threshold in E-Risk Study analysis excluding smokers). Compared to the original DunedinPoAm, covariate adjustment for smoking tended to have a smaller impact on effect-size estimates for DunedinPACE. In follow-up analysis of the Understanding Society Study, we found that participant-reported smoking history explained 30% of variance in DunedinPoAm, but only 13% of variance in DunedinPACE. Results were similar in analysis of the Framingham Heart Study Offspring Cohort (R2 = 23% for DunedinPoAm vs. 12% for DunedinPACE).
 
-## Incremental predictive value of DunedinPACE in an analysis of morbidity, disability, and mortality
+### Incremental predictive value of DunedinPACE in an analysis of morbidity, disability, and mortality
 
 DunedinPACE is distinct from DNA methylation clocks in the method of its development and in its interpretation. However, DunedinPACE is moderately correlated with some DNA methylation clocks, in particular GrimAge (see Figure 3B). We therefore conducted analysis to test if DunedinPACE contributed new information about health-span and lifespan over and above existing DNA methylation clocks. We tested if DunedinPACE associations with morbidity, disability, and mortality were statistically independent of each of the DNA methylation clocks within the Framingham Heart Study. In the case of the GrimAge clock, which was developed to predict mortality using this Framingham dataset, this analysis provides an especially rigorous test.
 
@@ -148,95 +210,95 @@ Within the bounds of these limitations, our analysis establishes DunedinPACE as 
 
 ## Materials and methods
 
-## Data sources
+### Data sources
 
 Data were used from five studies: The Dunedin Study, the Understanding Society Study, the Normative Aging Study (NAS), the Framingham Heart Study, and the Environmental Risk (E-Risk) Longitudinal Twin Study. In addition, we accessed the Gene Expression Omnibus dataset GSE55763. The datasets and measures analyzed within each of them are described below.
 
-## The Dunedin Study
+#### The Dunedin Study
 
 The Dunedin Study is a longitudinal investigation of health and behavior in a complete birth cohort. Study members (N = 1037; 91% of eligible births; 52% male) were all individuals born between April 1972 and March 1973 in Dunedin, New Zealand (NZ), who were eligible based on residence in the province and who participated in the first assessment at age 3. The cohort represents the full range of socioeconomic status on NZ’s South Island and matches the NZ National Health and Nutrition Survey on key health indicators (e.g. BMI, smoking, physical activity, GP visits) (Poulton et al., 2015). The cohort is primarily white (93%) (Poulton et al., 2015). Assessments were carried out at birth and ages 3, 5, 7, 9, 11, 13, 15, 18, 21, 26, 32, 38 and, most recently, 45 years, when 94% of the 997 study members still alive took part. At each assessment, each study member is brought to the research unit for a full day of interviews and examinations. Study data may be accessed through agreement with the Study investigators (https://moffittcaspi.trinity.duke.edu/research-topics/dunedin). Dunedin Study measures of physical and cognitive functioning and subjective signs of aging are described in detail in Supplementary file 1D.
 
-## GSE55763
+#### GSE55763
 
 GSE55763 is a publicly available dataset including technical replicate Illumina 450 k DNA methylation array data for 36 adult human samples (Lehne et al., 2015). Data are available from the Gene Expression Omnibus (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE55763).
 
-## Understanding Society
+#### Understanding Society
 
 Understanding Society is an ongoing panel study of the United Kingdom population (https://www.understandingsociety.ac.uk/). During 2010–2012, participants were invited to take part in a nurse’s exam involving a blood draw. Of the roughly 20,000 participants who provided clinical data in this exam, methylation data have been generated for just under 1200. We analyzed data from 1175 participants with available methylation and blood chemistry data. Documentation of the methylation (Yanchun, 2017) and blood chemistry (University of Essex, 2013) data resource is available online (here).
 
-## Physiology-based biological age measures
+##### Physiology-based biological age measures
 
 We measured biological aging from blood chemistry, systolic blood pressure, and lung-function data using the algorithms proposed by Klemera and Doubal, Levine, and Cohen (Cohen et al., 2013; Klemera and Doubal, 2006; Levine, 2013; Levine et al., 2018), trained in data from US National Health and Nutrition Examination Surveys (NHANES; https://wwwn.cdc.gov/nchs/nhanes/Default.aspx) following the methods described by Hastings (Hastings et al., 2019) and using the software developed by Kwon (https://github.com/dayoonkwon/BioAge, copy archived at swh:1:rev:bac0d617f4d04eb76350c0750cc367d8d1fd719e, Kwon, 2022). Following the procedure in our original eLife article (Belsky et al., 2020), we included 8 of 10 biomarkers included in Levine’s original implementation of the Klemera-Doubal method Biological Age (Levine, 2013): albumin, alkaline phosphatase (log), blood urea nitrogen, creatinine (log), C-reactive protein (log), HbA1C, systolic blood pressure, and forced expiratory volume in 1 second (FEV1). We omitted total cholesterol because of evidence this biomarker shows different directions of association with aging in younger and older adults (Arbeev et al., 2016). Cytomegalovirus optical density was not available in the Understanding Society database.
 
-## Self-rated health
+##### Self-rated health
 
 Understanding Society participants rated their health as excellent, very-good, good, fair, or poor. We standardized this measure to have Mean = 0, Standard Deviation = 1 for analysis.
 
-## The Normative Aging Study
+### The Normative Aging Study
 
 The Normative Aging Study (NAS) is an ongoing longitudinal study on aging established by the US Department of Veterans Affairs in 1963. Details of the study have been published previously (Bell et al., 1972). Briefly, the NAS is a closed cohort of 2280 male veterans from the Greater Boston area enrolled after an initial health screening to determine that they were free of known chronic medical conditions. Participants have been re-evaluated every 3–5 years on a continuous rolling basis using detailed on-site physical examinations and questionnaires. DNA from blood samples was collected from 771 participants beginning in 1999. We analyzed blood DNA methylation data from up to four repeated assessments conducted through 2013 (Gao et al., 2019; Panni et al., 2016). Of the 771 participants with DNA methylation data, n = 536 (70%) had data from two repeated assessments and n = 178 (23%) had data from three or four repeated assessments. We restricted the current analysis to participants with at least one DNA methylation data point. The NAS was approved by the Department of Veterans Affairs Boston Healthcare System and written informed consent was obtained from each subject before participation.
 
-## Mortality
+#### Mortality
 
 Regular mailings to study participants have been used to acquire vital-status information and official death certificates were obtained from the appropriate state health department to be reviewed by a physician. Participant deaths are routinely updated by the research team and the last available update was on 31 December 2013. During follow-up, n = 354 (46%) of the 771 NAS participants died.
 
-## Chronic disease morbidity
+#### Chronic disease morbidity
 
 We measured chronic disease morbidity from participants medical histories and prior diagnoses (Gao et al., 2021; Lepeule et al., 2018). We counted the number of chronic diseases to compose an ordinal index with categories of 0, 1, 2, 3, or 4+ of the following comorbidities: hypertension, type-2 diabetes, cardiovascular disease, chronic obstructive pulmonary disease, chronic kidney disease, and cancer.
 
-## The Framingham Heart Study
+### The Framingham Heart Study
 
 The Framingham Heart Study tracks the development of cardiovascular disease in three generations of families recruited in Framingham Massachusetts beginning in 1948 (Tsao and Vasan, 2015). We analyzed data from the Offspring Cohort, the second generation of study participants, who were recruited beginning in 1971. Blood samples used for DNA methylation analysis were collected from Offspring Cohort members at their 8th follow-up visit during 2005–2008. We analyzed data for n = 2471 cohort members with available DNA methylation and mortality data. This sample was 54% women and had an average age of 66 years (SD = 9) at the time blood draws for DNA methylation analysis were conducted. Data for the Framingham Study were obtained from dbGaP (phs000007.v32.p13).
 
-## Mortality
+#### Mortality
 
 Mortality ascertainment in our dataset extended through 2018 (dbGaP accession pht003317.v9.p13, dataset vr_survdth_2018_a_1268 s). Participants contributed a maximum of 14 years of follow-up time. A total of 575 deaths were recorded at an average age of 81 years (SD = 9).
 
-## Cardiovascular disease (CVD)
+#### Cardiovascular disease (CVD)
 
 CVD ascertainment in our dataset extended through 2018 (dbGaP accession pht003316.v9.p13, dataset vr_survcvd_2018_a_1267 s). N = 2,075 participants free of cardiovascular disease at baseline contributed a maximum of 14 years of follow-up time during which 327 incident cases of CVD were recorded at an average age of 77 years (SD = 6).
 
-## Stroke/transient ischemic attack (TIA)
+#### Stroke/transient ischemic attack (TIA)
 
 Stroke/TIA ascertainment in our dataset extended through 2018 (dbGaP accession pht006024.v4.p13, dataset vr_svstktia_2018_a_1270 s). N = 2364 participants with no history of stroke/TIA at baseline contributed a maximum of 14 years of follow-up time during which 149 events were recorded at an average age of 78 years (SD = 8).
 
-## Disability
+#### Disability
 
 Disability was measured from participant reports about limitations to activities of daily living (ADLs) during interviews conducted at the 8th and 9th assessment waves. ADL information was collected using the Nagi, Katz, and Rosow-Breslau scales (Katz et al., 1970; Nagi, 1976; Rosow and Breslau, 1966). Scales are described in Supplementary file 1E. Incident disability was analyzed for participants free of disability at baseline (Nagi n = 1830; Katz n = 1826; Rosow-Breslau n = 1670). Over follow-up, n = 123 participants developed new limitations in Nagi ADLs; n = 181 developed new limitations in Katz ADLs; and n = 224 developed new limitations in Rosow-Breslau ADLs.
 
-## The Environmental Risk Longitudinal Study
+### The Environmental Risk Longitudinal Study
 
 The Environmental Risk Longitudinal Twin Study (E-Risk) tracks the development of a birth cohort of 2232 British participants. The sample was drawn from a larger birth register of twins born in England and Wales in 1994–1995. Full details about the sample are reported elsewhere (Moffitt and Team, 2002). Briefly, the E-Risk sample was constructed in 1999–2000, when 1116 families (93% of those eligible) with same-sex 5-year-old twins participated in home-visit assessments. This sample comprised 56% monozygotic (MZ) and 44% dizygotic (DZ) twin pairs; sex was evenly distributed within zygosity (49% male). Families were recruited to represent the UK population of families with newborns in the 1990s, on the basis of residential location throughout England and Wales and mother’s age. Teenaged mothers with twins were over-selected to replace high-risk families who were selectively lost to the register through non-response. Older mothers having twins via assisted reproduction were under-selected to avoid an excess of well-educated older mothers. The study sample represents the full range of socioeconomic conditions in the UK, as reflected in the families’ distribution on a neighborhood-level socioeconomic index (ACORN [A Classification of Residential Neighborhoods], developed by CACI Inc for commercial use): 25.6% of E-Risk families lived in ‘wealthy achiever’ neighborhoods compared to 25.3% nationwide; 5.3% vs 11.6% lived in ‘urban prosperity’ neighborhoods; 29.6% vs 26.9% lived in ‘comfortably off’ neighborhoods; 13.4% vs 13.9% lived in ‘moderate means’ neighborhoods, and 26.1% vs 20.7% lived in ‘hard-pressed’ neighborhoods. E-Risk underrepresents ‘urban prosperity’ neighborhoods because such households are likely to be childless.
 
 Home-visits assessments took place when participants were aged 5, 7, 10, 12, and 18 years, when 93% of the participants took part. At ages 5, 7, 10, and 12 years, assessments were carried out with participants as well as their mothers (or primary caretakers); the home visit at age 18 included interviews only with participants. Each twin was assessed by a different interviewer. These data are supplemented by searches of official records and by questionnaires that are mailed, as developmentally appropriate, to teachers, and co-informants nominated by participants themselves. The Joint South London and Maudsley and the Institute of Psychiatry Research Ethics Committee approved each phase of the study. Parents gave informed consent and twins gave assent between 5 and 12 years and then informed consent at age 18. Study data may be accessed through the Study investigators (https://moffittcaspi.trinity.duke.edu/research-topics/erisk).
 
-## Childhood Socioeconomic Status
+#### Childhood Socioeconomic Status
 
 Childhood Socioeconomic Status (SES) was defined through a standardized composite of parental income, education, and occupation (Trzesniewski et al., 2006). The three SES indicators were highly correlated (r = 0.57–0.67) and loaded significantly onto one factor. The population-wide distribution of the resulting factor was divided in tertiles for analyses.
 
-## Childhood victimization
+#### Childhood victimization
 
 As previously described (Danese et al., 2017), we assessed exposure to six types of childhood victimization between birth to age 12: exposure to domestic violence between the mother and her partner, frequent bullying by peers, physical and sexual harm by an adult, and neglect.
 
-## DNA methylation data
+### DNA methylation data
 
 DNA methylation was measured from Illumina 450 k Arrays in GSE55763, NAS, Framingham, and E-Risk and from Illumina EPIC 850 k Arrays in the Dunedin Study and Understanding Society. DNA was derived from whole blood samples in all studies. Dunedin Study blood draws were conducted at the cohort’s age-38 assessment during 2010–12 for the prior DunedinPoAm measure, and at the cohort’s age-45 assessment during 2017–2019 for the new DunedinPACE measure. Understanding Society blood draws were conducted in 2012. NAS blood draws were conducted during 1999–2013. Framingham blood draws were conducted during 2005–2008. E-Risk blood draws were conducted at the cohort’s age-18 assessment during 2012–13. Dunedin methylation assays were run by the Molecular Genomics Shared Resource at Duke Molecular Physiology Institute, Duke University (USA). Understanding Society and E-Risk assays were run by the Complex Disease Epigenetics Group at the University of Exeter Medical School (UK) (https://www.epigenomicslab.com). NAS methylation assays were run by the Genome Research Core of the University of Illinois at Chicago. Framingham methylation assays were run by the University of Minnesota and John’s Hopkins University (dbGaP phs000724.v9.p13). Processing protocols for the methylation data from all studies have been described previously (Dai et al., 2017; Hannon et al., 2018; Marzi et al., 2018; Panni et al., 2016).
 
-## DNA methylation clocks
+#### DNA methylation clocks
 
 We computed the methylation clocks proposed by Horvath, 2013, Hannum et al., 2013, Levine et al., 2018, and Lu et al., 2019 using the methylation data provided by the individual studies and the Horvath Lab’s webtool (http://dnamage.genetics.ucla.edu/new).
 
-## DunedinPACE
+#### DunedinPACE
 
 The new Dunedin Pace of Aging methylation algorithm (DunedinPACE) was developed using elastic-net regression analysis carried out in the Dunedin Study, as described in detail in the Results. The criterion variable was 20-year Pace of Aging. Development of the 20-year Pace of Aging is described in detail elsewhere (Elliott et al., 2021b). Briefly, we conducted mixed-effects growth modeling of longitudinal change in 19 biomarkers measuring integrity of the cardiovascular, metabolic, renal, hepatic, pulmonary, periodontal, and immune systems. Biomarkers were measured at the age 26, 32, 38, and 45 assessments. Biomarkers are listed in Supplementary file 1A. For each biomarker, we estimated random slopes quantifying each participant’s own rate of change in that biomarker. We then composited, the 19 slopes across the biomarkers to calculate a participant’s Pace of Aging. Pace of Aging was scaled in units representing the mean trend in the cohort, that is the average physiological change occurring during one calendar year (N = 955, M = 1, SD = 0.29). Of the N = 818 Dunedin Study members with methylation data at age 45, N = 817 had measured Pace of Aging (M = 0.99, SD = 0.30). This group formed the analysis sample to develop DunedinPACE.
 
 To compute DunedinPACE in the GSE55763, Understanding Society, NAS, Framingham, and E-Risk datasets, we applied the scoring algorithm derived from elastic net regression in the Dunedin Study. CpG weights for the scoring algorithm are provided in Supplementary file 2. To apply the scoring algorithm, a panel of 20,000 probes that represent the underlying distribution of all probes included in the analysis to develop DunedinPACE are drawn from the target dataset. This new dataset is then quantile-normalized to match the reference distribution from the Dunedin Study. The set of 20,000 probes is composed of the 173 probes that make up the DunedinPACE algorithm and 19,827 additional probes selected at random from the full set of probes included in analysis to develop DunedinPACE i.e probes passing quality control checks, which are included on Illumina 450 k and EPIC arrays, and which were reliable at an ICC threshold of 0.4 in the analysis by Sugden et al., 2020.
 
-## Statistical analysis
+### Statistical analysis
 
 We conducted analysis of Dunedin, GSE55763, Understanding Society, NAS, Framingham, and E-Risk, data using regression models. We analyzed continuous outcome data using linear regression. We analyzed count outcome data using Poisson and negative binomial regression. We analyzed time-to-event outcome data using Cox proportional hazard regression. To estimate intraclass correlation coefficients for technical replicates in GSE55763, we used mixed-effects regression models. For analysis of repeated-measures longitudinal DNA methylation data in the NAS, we used generalized estimating equations to account for non-independence of repeated observations of individuals (Ballinger, 2016), following the method in previous analysis of those data (Gao et al., 2018), and econometric fixed-effects regression (Wooldridge, 2012) to test within-person change over time. For analysis in E-Risk, which include data on twin siblings, we clustered standard errors at the family level to account for non-independence of data. For regression analysis, methylation measures were adjusted for batch effects by regressing the measure on batch controls and predicting residual values. Dunedin Study, Understanding Society, Framingham, and E-Risk analyses included covariate adjustment for sex (the NAS included only men). Understanding Society, NAS, and Framingham analyses included covariate adjustment for chronological age. (Dunedin and E-Risk are birth-cohort studies and participants are all the same chronological age.) Sensitivity analyses testing covariate adjustment for leukocyte distributions and smoking are reported in Supplementary file 2. Leukocyte distributions were measured from complete blood count data in the Dunedin Cohort and were estimated from DNA methylation data for other cohorts.
 
-## Code for Analysis
+### Code for Analysis
 
 Code is available at https://github.com/danbelsky/DunedinPACE-eLife-2022 (copy archived at swh:1:rev:e38233555b70c34f84f0b73e18f1a6bc4cb0852e, Belsky, 2022a).
 

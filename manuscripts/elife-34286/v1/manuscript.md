@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.34286.001 In pig production, inefficient feed digestion causes excessive nutrients such as phosphorus and nitrogen to be released to the environment. To address the issue of environmental emissions, we established transgenic pigs harboring a single-copy quad-cistronic transgene and simultaneously expressing three microbial enzymes, β-glucanase, xylanase, and phytase in the salivary glands. All the transgenic enzymes were successfully expressed, and the digestion of non-starch polysaccharides (NSPs) and phytate in the feedstuff was enhanced. Fecal nitrogen and phosphorus outputs in the transgenic pigs were reduced by 23.2–45.8%, and growth rate improved by 23.0% (gilts) and 24.4% (boars) compared with that of age-matched wild-type littermates under the same dietary treatment. The transgenic pigs showed an 11.5–14.5% improvement in feed conversion rate compared with the wild-type pigs. These findings indicate that the transgenic pigs are promising resources for improving feed efficiency and reducing environmental impact.
+In pig production, inefficient feed digestion causes excessive nutrients such as phosphorus and nitrogen to be released to the environment. To address the issue of environmental emissions, we established transgenic pigs harboring a single-copy quad-cistronic transgene and simultaneously expressing three microbial enzymes, β-glucanase, xylanase, and phytase in the salivary glands. All the transgenic enzymes were successfully expressed, and the digestion of non-starch polysaccharides (NSPs) and phytate in the feedstuff was enhanced. Fecal nitrogen and phosphorus outputs in the transgenic pigs were reduced by 23.2–45.8%, and growth rate improved by 23.0% (gilts) and 24.4% (boars) compared with that of age-matched wild-type littermates under the same dietary treatment. The transgenic pigs showed an 11.5–14.5% improvement in feed conversion rate compared with the wild-type pigs. These findings indicate that the transgenic pigs are promising resources for improving feed efficiency and reducing environmental impact.
 
 ## Introduction
 
@@ -51,41 +51,251 @@ Various methods have been employed to address the issues of inefficient utilizat
 
 ## Results
 
-## Optimization and construction of a 2A-mediated salivary gland-specific multi-transgene
+### Optimization and construction of a 2A-mediated salivary gland-specific multi-transgene
 
 Through characterization of multiple codon-optimized β-glucanase genes fused with the N-terminal porcine parotid secretory protein (PSP) signal peptide, we have determined that Bispora sp. MEY-1 endo-β-glucanase from (BG17A) and Bacillus licheniformisβ−1,3–1,4-glucanase (EG1314) exhibited optimal activity and stability in porcine cells, and the pH condition is compatible to that of the pig digestive tract (Zhang et al., 2015). We previously reported that the fused BG17A and EG1314, which was linked by a self-cleaving 2A peptide, had a broader optimal pH range and higher stability in an acidic environment than either of them alone (Zhang et al., 2015). After codon optimization and fusion with the pig PSP signal peptide, three xylanases (XYNB, XYL11, and XYF63 (also known as XYN11F63)) were transfected into PK15 cells and subjected to enzymatic activity assay. Among the three xylanases, XYNB presented the highest enzymatic activity (Figure 1—figure supplement 1A) and stability (Figure 1—figure supplement 1B). In addition, XYNB showed greater resistance to peptic and tryptic hydrolysis than the other two xylanases (Figure 1—figure supplement 1C–E). As for the two phytases, Citrobacter freundii APPA (CAPPA) only had two narrow peaks at the optimal pH levels of 2.5 and 5.0, respectively (Figure 1—figure supplement 2A), whereas Escherichia coli APPA (EAPPA) exhibited a broad optimal pH ranging from 1.5 to 5.0 (Figure 1—figure supplement 2B). EAPPA was more tolerant of pepsin and trypsin than CAPPA. There was almost no reduction in activity of EAPPA after a 2 hr pepsin treatment, whereas 52.2% of the biological activity was left for CAPPA after treatment (Figure 1—figure supplement 2C). When treated with trypsin alone, EAPPA and CAPPA retained 98.2% and 39.7% of their activity, respectively; when treated with trypsin +EDTA, EAPPA and CAPPA retained 31.8% and 13.7% of their activity, respectively (Figure 1—figure supplement 2D). Based on these results, two β-glucanases genes (bg17A and eg1314), a xylanase gene (xynB), and a phytase gene (eappA) showed better performance that the other candidate transgenes.
 
 A polycistronic cassette of fusion enzymes was constructed by head-to-tail ligation of four selected genes and flanked on the 3' end by an Hemagglutinin (HA) tag. The DNA sequences of the self-cleaving peptides E2A, T2A, and P2A were used as linkers between the coding DNA sequences of two neighboring enzymes (Figure 1—figure supplement 3A). Before construction of the final TG vector, the fusion enzyme sequences were ligated downstream of the CMV promoter, and the expression level and enzymatic activity of each fusion enzyme were measured in porcine cells. We were able to detect the expression of all the four active enzymes in the PK15 cells, although the expression level and enzymatic activity of each recombinant fusion enzyme was lower than its original monomeric counterpart (Figure 1—figure supplement 3B and C). The lower transfection efficiency of the large transgene construct likely accounted for the observed lower expression and enzymatic activity in cells. We then employed a mouse PSP promoter to replace the CMV promoter to control the salivary gland-specific expression of the fusion gene, and this expression cassette was inserted, together with a CMV promoter-driven neo-EGFP fusion gene, into the piggyBac transposon vector to form a TG vector, namely, pPB-mPSP-BgEgXyAp-neoGFP (Figure 1A).
 
-## Generation of TG pigs
+![Figure 1.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig1-v1.jpg)
+
+**Figure 1.:** (A) DNA construct that was integrated into the pig genome for expression of the transgenic fusion enzyme in saliva. mPSP: Mouse parotid secretory protein promoter. BGH: Bovine growth hormone polyadenylation signal. Total length: 19,886 bp. (B) Expression of EGFP in the whole body of TG pigs. (C) Expression of EGFP in the heart, tongue, kidney, muscle, submandibular gland, spleen, lung, and liver of TG pigs. (D) Southern blot analysis of multi-enzyme transgene integration in TG pigs. 0.5 c, 1 c, 2 c, 3 c, and 5 c represent copy number of transgenic vector used as loading controls. The probe is shown in Figure 1A. Blank: Blank control (ddH2O).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Determination of the optimal pH for the activity of three xylanases. (B) The effect of pH on the stability of three xylanases. (C–E) The effects of pepsin and trypsin treatment on the stability of three xylanases. Data are expressed as the mean ±S.D. (n = 6).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The optimal pH of CAPPA. (B) The optimal pH of EAPPA. (C) The effect of pepsin treatment on the stability of these two phytases. (D) The effect of trypsin treatment (with or without EDTA) on the stability of two phytases. Data are expressed as the mean ± S.D. (n = 3).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Vector construct for the expression of the BgEgXyAp fusion enzyme in PK15 cells. CMV: The promoters of cytomegaloviruses. BGH: Bovine growth hormone polyadenylation signal. (B) The relative expression level of each of the fusion enzymes compared to their respective monomeric enzyme in PK15 cells. The expression level of each monomeric enzyme is normalized to that of the corresponding fusion enzyme. (C) Difference in the activity of β-glucanase, xylanase, and phytase activity detected at the indicated pH between the fusion enzyme and monomeric enzyme in PK15 cells. The activity of each monomeric was normalized to that of the corresponding fusion enzyme. Mo: Monomeric enzyme. Re: Each recombinant enzyme of the fusion enzyme. Data are expressed as the mean ± S.D. (n = 3).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) and (B) PCR analysis of BgEgXyAp transgenic pig founders. AmpR: Ampicillin resistance gene in the TG vector. hyPBase: PiggyBac transposase gene. mPSP: Mouse parotid secretory protein promoter. B: Blank control (ddH2O). (C) Southern blotting analysis of the first batch of BgEgXyAp transgenic pig founders. M: Marker. 6 c, 10 c, and 4 c represent copy number of the transgenic vector that was used as loading control. N: negative control (genomic DNA of wild-type pig).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Blank: ddH2O. Primers for absolute quantitative real-time PCR: Eg1314-F/R, Data are expressed as the mean ± S.D. (3 ≤ n ≤ 9).
+
+### Generation of TG pigs
 
 The resulting TG piggyBac transposon vector (pPB-mPSP-BgEgXyAp-neoGFP) and a piggyBac transposase expression vector (hyPBase) were co-transfected into the porcine fetal fibroblasts (PFFs) of a male Duroc pig. Transfected PFFs were selected with G418 for approximately two weeks, and the resulting EGFP-expressing cell colonies were pooled and identified by PCR for the presence of the transgene. Four colonies with great EGFP expression were used as donor cells for somatic cell nuclear transfer. A total of 4008 reconstructed embryos were generated and transferred to 16 recipient sows (Supplementary file 11). Thirty-three live and two stillborn cloned piglets were born, of which 25 founders were positive for transgene by PCR detection (Figure 1—figure supplement 4A and B). Bright green fluorescence signals were observed in hoof, tongue, heart, muscle, and submandibular gland (Figure 1B and C). Among the 25 TG founders, five piglets (601, 603, 701, 705, and 709) harbored the fragments of the ampicillin-resistance gene of the transgene vector (Figure 1—figure supplement 4A), implying the occurrence of a random, but not transposon-mediated transgene integration into host cell genome. The other 20 piglets harbored the intact transgene expression cassette (total length: 19,886 bp). Southern blotting, quantitative PCR, inverse PCR, and sequencing results further demonstrated that 19 piglets carried a single copy of the transgene (Figure 1D; Figure 1—figure supplement 4C; Figure 1—figure supplement 5; Supplementary file 1), of which two carried a single copy of the transgene that was inserted into intron 1 of Legumain (line 1) (Figure 1—figure supplement 4C; Figure 1—figure supplement 5; Supplementary file 1), 17 carried a single copy of the transgene that was integrated into intron 5 of CEP112 (line 2, of which eight piglets survived) (Figure 1D; Figure 1—figure supplement 5; Supplementary file 1). One (708) carried three copies of the transgene, and the integration site was the intergenic region between LOC100525528 and CXCL2 (Figure 1D; Supplementary file 1). There were a total of 16 piglets survived to weaning. Thirteen of them are positive for transgene, including nine piggyBac-mediated (one of line 1 and 8 of line 2) and four randomly integrated transgenic pigs. Eight of the transgenic pigs survived to sexual maturity.
 
 RT-PCR analysis indicated that the BgEgXyAp, bg17, eg1314, xynB, and eappA transgenes were unambiguously expressed in the parotid, submandibular, and sublingual glands, whereas these were undetectable in the other tissues of the TG founders such as the lungs, heart, liver, stomach, spleen, kidney, duodenum, colon, and muscle (Figure 2A; Figure 2—figure supplement 1A). Quantitative PCR analysis indicated that the highest BgEgXyAp transgene expression levels were observed in the parotid gland, followed by the submandibular and sublingual glands, and trace or undetectable level were observed in the other tissues of the TG founders (Figure 2—figure supplement 1B). Ectopic expression was not observed in this study. Western blot analysis demonstrated the expression of β-glucanase, xylanase, and phytase in the saliva of the TG founders (Figure 2B). During the feeding period, the TG pigs (line 1 and line 2) produced 0.3–2.3 U/mg of β-glucanase, 0.6–2.4 U/mg of xylanase, and 0.5–5.7 U/mg of phytase in the saliva (Figure 2C–E). The total salivary protein concentrations of the TG and WT pigs are shown in Figure 2F.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig2-v1.jpg)
+
+**Figure 2.:** (A) RT-PCR assay for mRNA expression profiles of transgenes in different tissues. Forward primers and reverse primer are bound to the bg17A gene and eappA gene, respectively (arrows are shown in Figure 1A). Mock: Blank control (ddH2O). (B) Western blotting assay demonstrating the expression of BG17A, XYNB, and EAPPA in the saliva of TG pigs. Saliva samples were either incubated with PNGase F (+) or mock (-)-treated prior to western blotting to analyze the glycosylation status of the transgenic enzymes. PNGase F: Peptide N-glycosidase F. (C–E) Salivary β-glucanase, xylanase, and phytase activity assays of the TG pigs. (F) Concentration of total salivary protein of the TG and WT pigs. C1, C2: Age- and body weight-matched WT pigs. The data presented in the ﬁgure (C-E) can be found in Figure 2—source datas 1–4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) RT-PCR assay for mRNA expression profiles of the transgene in different tissues. (B) Quantitative RT-PCR assay for mRNA expression levels of the linked transgenes (BgEgXyAp) in different organs and tissues of the transgenic founder pigs. Primers for relative quantitative real-time PCR: Eg1314-F/R; data are expressed as the mean ± S.D. (n = 6).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Pattern of salivary secretion from parotid gland at different time points. A–d, Data are expressed as the mean ± S.D. (4 ≤ n ≤ 8). Values at the top of the column with different superscript letters indicate statistically significant differences (one-way ANOVA, p<0.05). (B) TG enzyme production in oral and parotid saliva at different time points. Bf, before feeding; Af, after feeding; Rt, rest time; Ft: feeding time. Data are expressed as the mean ± S.D. (n = 6).
+
 Pigs of TG line two that harbored a single-copy transgene within CEP112 intron were used in growth trials and feed evaluations. The TG line two pigs were crossed with WT Duroc pigs, which generated 116 F1 progeny, of which 57 tested positive for transgene. Furthermore, 404 of the F2 progeny were sired, of which 231 were positive for transgene.
 
-## Measurement of enzyme production in TG pigs
+### Measurement of enzyme production in TG pigs
 
 To understand the effect of the three enzymes of the TG pigs on nutrient digestion, we investigated the pattern of salivary secretion and enzyme production in the TG pigs. Saliva was collected from the unilateral parotid glands of the TG pigs and analyzed in terms of enzyme yield. The average β-glucanase, xylanase, and phytase yields were 2,331.8, 2,413.4, and 2,935.2 U per kilogram meal, respectively, in grower pigs, and 920.8, 939.0, and 1,042.2 U per kilogram meal, respectively, in finisher pigs (Table 1). The volume of saliva collected from the parotid gland of the finisher pigs was significantly lower compared to that of the grower pigs, which may be attributable to the shorter feeding time (Ft) in finisher pigs. Furthermore, saliva and enzyme production at different time points were evaluated. The results show that the pigs only secreted saliva from parotid gland during Ft. At the other time points, including 10 min before or after feeding (Bf or Af), insignificant amount of saliva was secreted (Figure 2—figure supplement 2A). The enzymes expressed by the transgene showed high enzymatic activity at Bf, Ft, and Af. At rest time (Rt), the saliva collected from either parotid or mouth showed reduced enzymatic activities. Of note, a significantly lower enzyme activity was observed in the saliva samples collected at Rt (Figure 2—figure supplement 2B).
 
-## Improved feed utilization and reduced nutrient emission in TG founders
+**Table 1.**
+ Salivary secretion and the transgene enzyme activities from the unilateral parotid gland of transgenic (TG) pigs (Line2) during the grower (92–96 days old; estimated body weight: 42–45 kg) and finisher (159–191 days old; estimated body weight: 100–115 kg) phases of growth.Table 1–Source data 1.Salivary secretion from the unilateral parotid gland in the growing transgenic (TG) pigs and wild type (WT) pigs during the grower phase (92–96 days old; estimated body weight of 42–45 kg).Table 1–Source data 2.Salivary secretion from the unilateral parotid gland in the transgenic (TG) pigs during the finisher phase (159–191 days old; estimated body weight of 100–115 kg).Table 1–Source data 3.The transgene enzyme activities from the unilateral parotid gland in the transgenic (TG) pigs during the grower (92–96 days old; estimated body weight of 42–45 kg) and the finisher phases (159–191 days old; estimated body weight of 100–115 kg).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Item</th>
+      <th colspan="3">Growth stages</th>
+      <th rowspan="2">Pooled SEM</th>
+      <th rowspan="2">P values</th>
+    </tr>
+    <tr>
+      <th>Grower</th>
+      <th colspan="2">Finisher</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Saliva secreted * Saliva secretion rate (mL/min·pig)</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8.48</td>
+      <td colspan="2">16.97**</td>
+      <td>0.25</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Saliva secretion volume (mL/kg diet consumed)</td>
+      <td>407.66**</td>
+      <td colspan="2">151.70</td>
+      <td>5.33</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td colspan="6">Enzymes activity secreted (U/mL saliva)†</td>
+    </tr>
+    <tr>
+      <td>β-glucanase</td>
+      <td colspan="2">5.72</td>
+      <td>6.07**</td>
+      <td>0.05</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Xylanase</td>
+      <td colspan="2">5.92</td>
+      <td>6.19**</td>
+      <td>0.05</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>Phytase</td>
+      <td colspan="2">7.2</td>
+      <td>6.87</td>
+      <td>0.14</td>
+      <td>0.1033</td>
+    </tr>
+    <tr>
+      <td colspan="6">Enzyme activity secreted (U/kg diet consumed)†</td>
+    </tr>
+    <tr>
+      <td>β-glucanase</td>
+      <td colspan="2">2,331.84**</td>
+      <td>920.82</td>
+      <td>30.7</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Xylanase</td>
+      <td colspan="2">2,413.38**</td>
+      <td>939.03</td>
+      <td>31.73</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Phytase</td>
+      <td colspan="2">2,935.19**</td>
+      <td>1,042.19</td>
+      <td>38.29</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Saliva samples were collected daily from two transgenic growing pigs and two transgenic finishing pigs at 9:00 and 16:00, respectively, over the four-day period. Values are expressed as the mean and pooled SEM (n = 16 repeated sampling and measurements).†Means and pooled SEM (n = 16) repeated sampling and measurements). Asterisks indicate significant differences between the grower and the finisher phases within the same row (Unpaired t-test, **p<0.01)._
+
+### Improved feed utilization and reduced nutrient emission in TG founders
 
 The grower-finisher founder TG pigs (weight range: 30 kg to 50 kg) were fed corn-soybean (CS) or wheat-corn-soybean-bran (WCSB) diets (Supplementary file 2) to investigate the effects of a salivary cocktail of β-glucanase, xylanase, and phytase on feed utilization. The traditional CS diet contains a low level of NSPs and total P with a high proportion of phytates (70.3%), and the WCSB diet contains a relatively high concentration of NSPs and total P with 63.2% phytates. For each diet, 6 TG pigs and six age-matched and weight-matched non-TG Duroc boars (WTs) were fed; and 6 WTs were fed the same diet with supplementary multi-enzyme preparations of β-glucanase, xylanase, and phytase (namely, WT(+) group). After dietary treatment, nutrient digestion among the experimental groups was measured and compared. For both diets, the apparent total tract digestibility (ATTD) of dry matter (DM), P, N, and calcium (Ca) significantly increased in TG pigs compared with that of WT pigs (Figure 3A). The fecal outputs of N and P, relative to input by feed, were significantly decreased in the TG pigs compared with that of the WT pigs (Figure 3B). Fecal N and P excretion were decreased by 24.9% and 45.8%, respectively, with the CS diet, and 23.2% and 34.8%, respectively, with the WCSB diet. A significant reduction in total P and Ca (feces plus urine) was also observed in the TG pigs with both diets. Almost all tested parameters of the TG pigs showed some improvement compared with that of the WT(+) pigs that were fed the same diets supplemented with multi-enzyme preparations, although the differences were not statistically significant among groups (Supplementary file 3 and Supplementary file 4).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig3-v1.jpg)
 
-**Figure 3.:** (A) Comparison of the apparent total tract nutrient digestibility values (%) of dry matter (DM), crude protein (CP), phosphorus (P), and calcium (ca). (B) Comparison of fecal N, P, and Ca output. WT(+): WT grower pigs fed on the CS and WCSB diets supplemented with an optimal dose of β-glucanase, xylanase, and phytase. Data are expressed as the least square means (Lsmean ± SEM). a,b,c Values on the bar graph with different superscript letters differ significantly (ANCOVA, p<0.05). The source data are presented in Figure 3—source datas 1–6.10.7554/eLife.34286.021Figure 3—source data 1.10.7554/eLife.34286.022Figure 3—source data 2.10.7554/eLife.34286.023Figure 3—source data 3.10.7554/eLife.34286.024Figure 3—source data 4.10.7554/eLife.34286.025Figure 3—source data 5.10.7554/eLife.34286.026Figure 3—source data 6.
+**Figure 3.:** (A) Comparison of the apparent total tract nutrient digestibility values (%) of dry matter (DM), crude protein (CP), phosphorus (P), and calcium (ca). (B) Comparison of fecal N, P, and Ca output. WT(+): WT grower pigs fed on the CS and WCSB diets supplemented with an optimal dose of β-glucanase, xylanase, and phytase. Data are expressed as the least square means (Lsmean ± SEM). a,b,c Values on the bar graph with different superscript letters differ significantly (ANCOVA, p<0.05). The source data are presented in Figure 3—source datas 1–6.
 
 The serum components of the TG pigs fed on a diet in Supplementary file 5 containing a low N level and high proportion of phytates (78.4%) (LNHP) were analyzed. Serum alkaline phosphatase activity in the TG pigs was lower than the WT littermates. Serum P and glucose levels of the TG pigs were greater than that of the WT littermates. The serum D-xylose levels of the TG pigs were slightly higher than the WT littermates. No differences in serum Ca, Zn, urea N, uric acid, and total protein concentrations between TG and WT pigs were observed (Table 2).
 
-## Enhanced growth performance in TG pigs
+**Table 2.**
+ Comparison of the serum biochemical endpoints in the F1 transgenic (TG) grower gilts (Line2) and the wild-type (WT) gilts (50 kg) fed on the LNHP diet in Supplementary file 5.Table 2–Source data 1Comparison of the serum biochemical composition in the F1 transgenic (TG) grower gilts and the wild-type (WT) gilts (50 kg) fed the low non-starch polysaccharide (NSP) diet.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Serum component</th>
+      <th>TG (n = 10)</th>
+      <th>WT (n = 22)</th>
+      <th>Pooled SEM</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alkaline phosphatase (U/L)</td>
+      <td>84.90**</td>
+      <td>155.72</td>
+      <td>12.38</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Total phosphorus (Pi) (mmol/L)</td>
+      <td>3.05**</td>
+      <td>2.09</td>
+      <td>0.13</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Total calcium (Ca) (mmol/L)</td>
+      <td>2.53</td>
+      <td>2.48</td>
+      <td>5.51</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>Urea N (mmol/L)</td>
+      <td>3.27</td>
+      <td>3.78</td>
+      <td>0.39</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>Glucose (mmol/L)</td>
+      <td>4.97**</td>
+      <td>3.78</td>
+      <td>0.21</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Uric acid (µmol/L)</td>
+      <td>6.30</td>
+      <td>7.45</td>
+      <td>0.54</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>D-Xylose (mmol/L)</td>
+      <td>0.39</td>
+      <td>0.35</td>
+      <td>0.01</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Total protein (g/L)</td>
+      <td>59.87</td>
+      <td>56.55</td>
+      <td>2.16</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Zn (µmol/L)</td>
+      <td>4.12</td>
+      <td>5.23</td>
+      <td>0.82</td>
+      <td>0.42</td>
+    </tr>
+  </tbody>
+</table>
+
+_Samples were collected at the end of the experiment.Asterisks (**) indicate significant differences at p<0.01 (unpaired t-test) between TG and WT pigs within the same row._
+
+### Enhanced growth performance in TG pigs
 
 To assess the growth performance, eight F1 TG pigs (females) and 17 WT littermates (females) were fed a LNHP diet (Supplementary file 5) during the growing period from 30 kg to 50 kg weights was measured. The TG pigs exhibited a higher average daily gain (ADG) rate and lower feed conversion rate (FCR) than the WT pigs during this stage (Supplementary file 6). Growth performance of the F2 TG pigs was also measured. A total of 74 F2 TG pigs (23 boars, 51 gilts) and 52 WT littermates (21 boars, 31 gilts) were raised together and fed the same diets shown in Supplementary file 7. In this study, TG boars showed increased average daily feed intake (ADFI) (p=0.077) compared to the WT boars that were fed the same diets (Figure 4A). Similar results were observed in the gilts. Significantly improved ADG rates and lower FCR were observed in the TG boars and gilts compared to the WT gilts during the entire feeding period (Figure 4B and C). It took an average of 110 days for TG boars to grow from 30 kg to 115 kg, whereas the WT boars needed 145 days of feeding on the same diets. Similar results were observed in the gilts. It took 121 days for the TG gilts to grow from 30 kg to 115 kg, whereas the WT females required 150 days (Figure 4D). Taken together, the TG pigs showed a 7.0–7.6% higher ADFI than the WT pigs over the same grower and finisher phases (30 kg to 115 kg), but gained 23.0–24.4% more body weight (BW) daily than the WT pigs over the same grower and finisher phases (30 kg to 115 kg). The time to reach 115 kg BW was shortened by 19.2–21.9% (29.6 days to 35.1 days). The FCR decreased by 11.5–14.5% during the grower and finisher periods.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/34286/elife-34286-fig4-v1.jpg)
 
-**Figure 4.:** (A) Comparison of average daily feed intake (ADFI). (B) Comparison of average daily gain (ADG). (C) Comparison of feed/gain (F/G). (D) Comparison of days to market. Data are expressed as the least square means (Lsmean ± SEM), asterisks indicate significant differences between TG and WT pigs within one line (ANCOVA, **p<0.01). The source data are presented in Figure 4—source datas 1–3.10.7554/eLife.34286.030Figure 4—source data 1.10.7554/eLife.34286.031Figure 4—source data 2.10.7554/eLife.34286.032Figure 4—source data 3.
+**Figure 4.:** (A) Comparison of average daily feed intake (ADFI). (B) Comparison of average daily gain (ADG). (C) Comparison of feed/gain (F/G). (D) Comparison of days to market. Data are expressed as the least square means (Lsmean ± SEM), asterisks indicate significant differences between TG and WT pigs within one line (ANCOVA, **p<0.01). The source data are presented in Figure 4—source datas 1–3.
 
 ## Discussion
 
@@ -103,41 +313,41 @@ In summary, the multi-TG pigs reported in the present study exhibited significan
 
 ## Materials and methods
 
-## Transgene constructs
+### Transgene constructs
 
 The codons of two β-glucanase genes, bgl7A from Bispora sp. MEY-1 (Luo et al., 2010) and eg1314 from Bacillus licheniformis EGW039 (CGMCC 0635) (Teng et al., 2006), three xylanase genes, xyl11, xyn63, and xynB, from Aspergillus niger CBS513.88 (Liu et al., 2010), Penicillium sp. F63 CGMCC1669 (Deng et al., 2006), and Aspergillus niger CGMCC1067 (Guo et al., 2013), (respectively), as well as two phytase genes, eappA (GenBank accession No. AF537219.1) from Escherichia coli and cappA (GenBank accession No. AF537219.1) from Citrobacter freundii were optimized per codon usage bias in pigs. The original signal peptide of these genes were replaced by the signal peptide of the porcine parotid secretory protein (PSP). Optimized genes were synthesized by Genscript (Nanjing, China) and ligated into the eukaryotic expression vectors pCDNA3.1+or pcDNA6.0 (Invitrogen, Carlsbad, CA, USA).
 
 The bgl7A, eg1314, xynB, and eappA genes were fused in a head-to-tail tandem array, with E2A, T2A, and P2A used as linkers between them. Flag-tag and HA-tag were added to the C terminal of Eg1314 and EAPPA, respectively, to facilitate the detection of protein expression. The fusion of the four genes, named BgEgXyAp, was cloned into pCDNA3.1(+) to examine its expression and enzyme activity levels by transient transfection using Lipofectamine 2000 (Invitrogen Carlsbad, CA, USA) in porcine cells. A 12.1 kb upstream genomic sequence of murine PSP, as a promoter to drive the expression of the fusion gene specifically in salivary gland, were cloned and ligated to BgEgXyAp, and then introduced into the transposon piggyBac vector pPB-lox-neoEGFP-loxp (a gift from The Wellcome Trust Sanger Institute, Cambridgeshire, UK) to form the final transgene construct. The final construct was confirmed by sequence analysis.
 
-## Transgenic pigs
+### Transgenic pigs
 
 Primary PFFs were isolated from 35-day-old male fetuses of Duroc pigs. PFFs were cultured in Dulbecco's Modified Eagle Medium (DMEM, Gibco 12491–023) (Thermo Fisher Scientific, Suwanee, GA, USA) supplemented with 12% fetal bovine serum (FBS, Gibco 10100–147) (Thermo Fisher Scientific, Suwanee, GA, USA) and 1% (v:v) penicillin/streptomycin (10,000 U/mL penicillin, 10,000 μg/mL streptomycin; GIBCO-BRL, Grand Island, NY, USA) at 39°C in an incubator with 5% CO2. The transgene was mixed with a transposase, pCMV-hyPBase (a gift from the University of Hawaii, Honolulu, HI), and transfected into PFFs by electroporation (BTX, San Diego, CA). The transfected cells were split 1:6 into fresh culture medium. After 24 hr, 300 μg/mL G418 (Gibco) was added to the medium to select transfected cell colonies, and the plates were incubated in media containing G418 for about 15 days. The surviving cell colonies with EGFP expression were isolated within colony cylinders (Bellco Glass, Vineland, NJ, USA), and propagated in a fresh 24-well plate. Four colonies that proliferated well, with bright fluorescence, were then expanded and screened for the presence of the BgEgXyAp transgene.
 
 SCNT was performed as previously described (Lai et al., 2006). The reconstructed embryos were surgically transferred to the oviduct of the recipient gilts the day after estrus was observed. The pregnancy status of the surrogates was detected using an ultrasound scanner at 26 d after the embryo was transferred. This status was then monitored weekly before the expected due date. The cloned piglets were born by natural birth.
 
-## PCR and quantitative PCR
+### PCR and quantitative PCR
 
 Genomic DNA was isolated from pig ear skin biopsies and used in PCR identification of the transgene. The PCR primes are listed in Supplementary file 8. For RT-PCR, reverse transcription of mRNA was conducted to generate cDNA, which was then used as template for PCR. The RT-PCR primers are listed in Supplementary file 9. Relative quantitative real-time PCR and absolute quantitative real-time PCR used in detecting expression levels and copy numbers of transgene, respectively, were performed as described elsewhere (Wu et al., 2013). The Q-PCR primers are listed in Supplementary file 9.
 
-## Southern blotting
+### Southern blotting
 
 Genomic DNA was isolated from the ears of transgenic founders and wild-type (WT) controls by phenol-chloroform extraction. Fifteen micrograms of DNA were digested with HindIII, fractionated in a 0.8% agarose gel, and transferred onto a nylon membrane (GE Healthcare, Pittsburgh, PA, USA). The membrane was then hybridized with a probe. The probe primers are listed in Supplementary file 8. Hybridization and washing were performed with DIG-High Prime DNA Labeling and Detection Starter Kit II (Roche, Basel, Switzerland). Prehybridization was conducted at 42°C for 30 min, hybridization at 50°C for 8 hr, then incubated for 30 min in blocking solution and further incubated for 30 min in an anti-digoxigenin-AP antibody solution. After incubation, the membrane was exposed for 5–20 min to 1 mL of ready-to-use CSPD, and images were captured with an EC3 imaging system (UVP, LLC, Upland, CA, USA).
 
-## Western blotting
+### Western blotting
 
 Pig saliva was concentrated using an Amicon Ultra 15 mL centrifugal filter (Millipore). After protein quantification, total protein samples were separated on a 10% sodium dodecyl sulfate polyacrylamide gel (SDS-PAGE), and transferred to a polyvinylidene difluoride (PVDF)(Millipore, Temecula, CA, USA) membrane. The membranes were blocked with 5% non-fat dry milk, subsequently incubated with the corresponding antibodies, and then developed with an enhanced chemiluminescence solution (Thermo Fisher Scientific, Suwanee, GA, USA). Chemiluminescent signals were captured by a cooled charged-coupled device (CCD) camera. For the primary antibodies, rabbit polyclonal anti-BG17A and anti-XYNB antibodies, which were prepared by Genscript (Nanjing, China), were respectively used to detect β-glucanases and xylanase. A mouse monoclonal anti-HA antibody (Abcam, Cambridge, UK) was used to detect phytase. Information on the antibodies used in this study is presented in Supplementary file 10. Horseradish peroxidase-conjugated anti-mouse IgG or horseradish peroxidase-conjugated anti-rabbit IgG (Abcam, Cambridge, UK) was used as secondary antibody.
 
-## Saliva collection
+### Saliva collection
 
 Oral saliva was collected by clamping an absorbent cotton into the buccal cavity, and allowing the piglets to soak with saliva and chew. The resulting liquid was squeezed out using an injector, centrifuged, and then used for assays. To collect saliva from the parotid gland, a fistula was surgically installed under anesthesia with propofol at the unilateral (right cheek) parotid duct of each pig. Saliva from the parotid gland was collected using a medical drainage bag during feeding time, before feeding (within 30 min), after feeding (within 30 min) and at selected time points dur
 
-## Enzymatic activity assay
+### Enzymatic activity assay
 
 The supernatants from transfected cells and saliva from transgenic and non-transgenic pigs were used as total protein samples for the enzymatic activity assays. β-glucanase and xylanase activity assays were based on estimating the amount of reducing sugars released from the relevant substrates in the reactions using 3,5-dinitrosalicylic acid (DNS) reagent, as previously described (Liu et al., 2010; Luo et al., 2010). One unit of activity was defined as the quantity of enzyme that releases reducing sugar at the rate of 1 μmol/min.
 
 Phytase activity in saliva was determined by means of vanadium molybdenum yellow spectrophotometry. The reaction was performed in a final volume of 600 μL solution containing 0.25 M of acetate buffer (pH 5.5), 5 mM sodium phytate, and 50 μL enzyme preparation at 39°C for 30 min, followed by termination of reaction by adding 400 mL of an ammonium molybdate-ammonium vanadate-nitric acid mixture. After mixing and centrifugation, the absorbance was measured at a wavelength of 415 nm. One unit of phytase activity was defined as the amount of activity that liberates one micromole of phosphate per minute at 39°C.
 
-## Dietary treatments
+### Dietary treatments
 
 Six TG pigs and 12 age- and body weight-matched non-TG pigs were used in dietary treatment experiments. The TG group and six non-TG pigs were fed a diet (CS or WCSB). The other six non-TG pigs were fed the same diet with exogenous feed enzymes. The pigs were housed in small groups of three to four animals per pen. Each pig was kept in individual metabolic cage (Length × width × height: 1.40 × 0.67 × 1.15 m) with stainless steel mesh floors for collection of urine and feces sample at the indicated time points. The cage was laid side by side for pig to communicate with each other. The facilities were provided with forced ventilation and heat lamp for thermal regulation, and each cage had one feeder and one water nipple for ad libitum access to feed and water. The ingredients of the selected experimental diets are listed in Supplementary file 2. The diets were provided in pellet form.
 
@@ -145,10 +355,10 @@ All pigs were fed on a commercial grower diet for an adaptation period of one we
 
 Fecal samples were collected and processed as previously described (Kim et al., 2005). Feeds and dried feces were ground using a grinder, passed through a 0.425 mm size screen, and analyzed for DM (AOAC, 2005; method 930.15). Gross energy (GE) was analyzed according to ISO: 9831–1998 using a bomb calorimetry (Parr 6300; Parr Instrument Co., Louisville, KY, USA). Other nutrients in the diets and feces were analyzed using the Chinese National Standard analytical method (GB/T). The following methods were used: GB/T 6432–1994 for CP, GB/T 20806–2006 for NDF, GB/T 20805–2006 for ADF, GB/T 6434–2006 for CF, GB/T 18335–2003 for calcium, GB/T 6437–2002 for P, GB/T 6438–2007 for ash, and GB/T 21912–2008 for titanium dioxide. Apparent digestibility coefficients were calculated as described elsewhere (Grela et al., 20112018).
 
-## Growth Performance assessment
+### Growth Performance assessment
 
 The growth of the F2 TG pigs of both genders was compared to that of age-matched WT littermates fed on the same diets listed in Supplementary file 7. A total of 23 TG boars (32.9 ± 3.80 kg) and 21 WT littermates boars (31.5 ± 2.97 kg) were grouped according to weight, and randomly allocated to seven pens ﬁtted with MK3 FIRE feeders (FIRE, Osborne Industries Inc., Osborne, KS, USA). Similarly, 51 TG gilts (31.8 ± 3.55) and 31 WT gilts (30.2 ± 1.64) were randomly allocated to 11 pens that were ﬁtted with MK3 FIRE feeders. Individual feed intake and BW were recorded when a pig with an ear transponder visited the FIRE feeders. All pigs were allowed free access to water throughout the measurement phase.
 
-## Statistical analyses
+### Statistical analyses
 
 The data were analyzed using the GLM procedure (SAS Inst. Inc., Cary, NC, USA). For the apparent total tract nutrient digestibility values, fecal nutrient output, and the growth performance, analysis of covariance (ANCOVA) was used. The BW of the tested pigs at the start of the corresponding experimental period was used as the covariable. Least square means were calculated and the differences between means were tested using Turkey-Kramer adjustment for multiple comparisons when appropriate. For salivary protein and saliva secretion by the parotid gland, one-way ANOVA followed by Duncan's multiple-comparison tests were used. For serum biochemical endpoints and saliva enzymes secretion, an unpaired two-sample t-test (two-tailed) was used. The level of significance was set at p<0.05, and trends were discussed at p<0.1.

@@ -33,7 +33,7 @@ Second, how is material transferred from PVE compartments to the vacuole? Again,
 
 ## Results
 
-## Addition of a tetrapeptide generates a fluorescent biosynthetic vacuolar cargo
+### Addition of a tetrapeptide generates a fluorescent biosynthetic vacuolar cargo
 
 To create a wave of fluorescent vacuolar cargo, we modified a recently developed regulatable fluorescent secretory cargo (Casler and Glick, 2019; Casler et al., 2019). Our secretory cargo consists of the tetrameric red fluorescent protein DsRed-Express2 fused to a dimerizing variant of FKBP, with a cleavable N-terminal signal sequence to direct cotranslational translocation into the ER. The signal sequence is followed by a tripeptide ER export signal (Yin et al., 2018) and a signal for N-linked glycosylation (Figure 1B). This fusion protein forms fluorescent aggregates within the ER lumen, and the aggregates can be dissolved by adding a synthetic ligand of FKBP (SLF) that blocks dimerization of FKBP (Figure 1A). Soluble tetramers then exit the ER in a nearly synchronized wave. Efficient dissolution of the aggregates requires a drug-sensitive yeast strain. Thus, all of our experiments with the regulatable cargoes employed yeast strains containing deletions of the transcription factors Pdr1 and Pdr3, which mediate pleiotropic drug resistance (Barrero et al., 2016; Casler et al., 2019; Coorey et al., 2015; Schüller et al., 2007). We found previously that the regulatable secretory cargo persists in cisternae through the early-to-late transition of Golgi maturation, and that a fraction of the cargo molecules are recycled within the Golgi in an AP-1-dependent manner (Casler et al., 2019). The goal was to perform similar experiments with a modified cargo that was targeted to the vacuole.
 
@@ -45,37 +45,77 @@ Our strategy was to augment the fusion protein with a vacuolar targeting signal.
 
 To test if the QRPL signal worked as intended, we tested non-aggregating (and therefore non-regulatable) versions of the secretory and vacuolar cargoes. The vacuolar membrane was visualized with Vph1-GFP. Compared to the non-aggregating secretory cargo, which accumulated at low levels in the vacuole (Casler et al., 2019), the non-aggregating vacuolar cargo accumulated at high levels in the vacuole in a Vps10-dependent manner (Figure 1D,E). A final control experiment employed the regulatable versions of the cargoes once again. At 30 min after addition of SLF, the regulatable secretory cargo was detected in the culture medium whereas the regulatable vacuolar cargo was not (Figure 1F). These results confirm that the vacuolar cargo traffics efficiently to the vacuole. For convenience, from now on we will refer to the regulatable fluorescent secretory cargo and the regulatable fluorescent vacuolar cargo as the secretory and vacuolar cargoes, respectively.
 
-## Traffic of the vacuolar cargo can be visualized
+### Traffic of the vacuolar cargo can be visualized
 
 We first measured the overall rate of cargo traffic from the ER to the vacuole. A VPS10 wild-type strain and a vps10∆ mutant strain expressed the vacuolar cargo together with the vacuole marker Vph1-GFP. After SLF was added to initiate cargo transport, the cells were imaged by 4D confocal microscopy for 60 min (Figure 2—video 1 and Figure 2A–C). With VPS10 cells, we saw a gradual accumulation of fluorescence in the vacuole. With vps10∆ cells, virtually no fluorescence appeared in the vacuole, presumably because the cargo exited the cell in secretory vesicles (see below, Figure 6—figure supplement 2). In typical VPS10 cells, small amounts of the cargo were detected in the vacuole within 8–15 min after SLF addition, and full delivery to the vacuole required at least 40 min (Figure 2B,C). Individual cells showed significant variations in the timing of cargo traffic. About 35% of the cells required more than 15 min—and in some cases, more than 25 min—before any cargo appeared in the vacuole (Figure 2B,D). On average, the cell population showed a gradual increase in vacuolar fluorescence over a time course of an hour (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig2-v2.jpg)
+
+**Figure 2.:** (A) Visualizing cargo traffic. The vacuolar cargo expressed in VPS10 wild-type or vps10∆ strains was imaged by 4D confocal microscopy. Prior to the video, fluorescence from leaked cargo molecules was bleached by illuminating the vacuole with a 561 nm laser at maximum intensity for 20–30 s. Then SLF was added, and Z-stacks were captured every minute for 60 min. The top panel shows the cargo (magenta) together with the vacuolar membrane marker Vph1-GFP (green), while the bottom panel shows only the cargo. Fluorescence data are superimposed on brightfield images of the cells. Shown are representative frames from Figure 2—video 1. Scale bar, 2 µm. (B) Quantification of the vacuolar fluorescence from each of the four VPS10 cells in (A). The Vph1-GFP signal was used to create a mask for measuring cargo fluorescence in the vacuole. Fluorescence is plotted in arbitrary units (a.u.). (C) Quantification of the average vacuolar fluorescence in VPS10 and vps10∆ cells after addition of SLF. For each strain, at least 39 cells were analyzed from four movies. Quantification was performed as in (B). The shaded borders represent SEM. (D) Quantification of the first appearance of cargo fluorescence in the vacuole. Data are from the same set of VPS10 cells analyzed for (C). Appearance in the vacuole was scored as the first time point at which the vacuolar cargo fluorescence reached at least 5% of its final value.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison of traffic kinetics in the absence or presence of cycloheximide (CHX). Data from Figure 2C were re-plotted with the additional analysis of VPS10 cells that had been pretreated with 200 µg/mL cycloheximide starting 15 min prior to addition of SLF. (B) Control experiment to confirm that cycloheximide potently inhibited protein synthesis. A log-phase culture of VPS10 cells in YPD medium was diluted to an OD600 of 0.2, and growth of the culture was measured over 24 hr with or without addition of cycloheximide at the indicated concentrations.
 
 A potential concern with this analysis is that during the time interval examined, new cargo molecules were being synthesized, and some of those molecules could have become fluorescent and reached the vacuole. We addressed this issue by repeating the experiment after pre-treating the cells with cycloheximide to block protein synthesis. Following SLF addition, untreated and cycloheximide-treated cells showed similar traffic kinetics, with cycloheximide causing only a modest reduction in the amount of cargo accumulating in the vacuole even though cell growth was arrested (Figure 2—figure supplement 1). We conclude that to a close approximation, the kinetics observed in the absence of cycloheximide reflect traffic of the vacuolar cargo molecules that were originally in ER-localized aggregates.
 
 Why is traffic to the vacuole so slow? For comparison, secretory cargo molecules can travel from the ER to the plasma membrane within 5–10 min, and nearly all of them are secreted within 20 min (Casler et al., 2019; Losev et al., 2006). This effect is seen in the vps10∆ cells because in the absence of a sorting receptor, the vacuolar cargo behaves like a secretory cargo (Figure 2A). To understand the slow kinetics of cargo delivery to the vacuole, we set out to track the different steps of this pathway by fluorescence microscopy.
 
-## The vacuolar cargo transits rapidly through the Golgi and accumulates in PVE compartments
+### The vacuolar cargo transits rapidly through the Golgi and accumulates in PVE compartments
 
 Early work suggested that the rate-limiting step in biosynthetic cargo transport to the vacuole is exit from PVE compartments (Vida et al., 1993). To test this idea, we used 4D confocal movies to visualize the vacuolar cargo together with organellar markers. PVE compartments were labeled by tagging Vps8, a subunit of the CORVET tethering complex (Arlt et al., 2015; Markgraf et al., 2009). We showed previously that tagged Vps8 colocalized strongly with a variety of other PVE compartment markers, and that the observed dynamics of PVE compartments were similar when using either tagged Vps8 or other markers (Day et al., 2018). For three-color 4D movies, the red fluorescent vacuolar cargo was visualized together with the early Golgi marker GFP-Vrg4 and the late Golgi marker Sec7-HaloTag, or together with the PVE marker Vps8-GFP and the vacuole marker Vph1-HaloTag (Arlt et al., 2015; Day et al., 2018; Losev et al., 2006). In this and subsequent experiments, HaloTag was conjugated to the far-red dye JF646 (Grimm et al., 2015). After the cargo aggregates were solubilized with SLF, a strain expressing the vacuolar cargo plus the Golgi markers was imaged every 30 s for 29.5 min, and a strain expressing the vacuolar cargo plus the PVE and vacuole markers was imaged every 60 s for 60 min. The results showed cargo accumulation within Golgi compartments 1–5 min after SLF addition, followed by nearly complete transfer of the cargo to PVE compartments by 10 min (Figure 3—video 1 and Figure 3—video 2 and Figure 3A–D). After 10 min, puncta that contained the cargo invariably labeled with Vps8-GFP, confirming that Vps8 is a reliable marker for PVE compartments. The cargo gradually exited the PVE compartments and then accumulated in the vacuole as described above. Interestingly, even though the PVE compartments contained cargo by 10 min, some of them did not immediately begin to transfer cargo to the vacuole (see Figure 2B,D), suggesting that PVE compartments can be temporarily quiescent with regard to cargo delivery. These results verify that the rate-limiting step in traffic to the vacuole is not movement through the Golgi, but rather transfer of the cargo from PVE compartments to the vacuole.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig3-v2.jpg)
+
+**Figure 3.:** (A) Appearance of the vacuolar cargo in early Golgi compartments marked with GFP-Vrg4 and in late Golgi compartments marked with Sec7-HaloTag. Cells were grown to mid-log phase, labeled with JF646, and imaged by 4D confocal microscopy. Prior to beginning the video, fluorescence from leaked cargo molecules in the vacuole was bleached by illuminating with maximum intensity 561 nm laser power for 20–30 s. SLF was added directly to the dish between the first and second Z-stacks, and then additional Z-stacks were captured every 30 s for 29.5 min. Images are representative time points from Figure 3—video 1. The top panel shows the merged images, and the other panels show the individual fluorescence channels for cargo, Vrg4, and Sec7. Scale bar, 2 µm. (B) Appearance of the vacuolar cargo in PVE compartments marked with Vps8-GFP and in the vacuole marked with Vph1-HaloTag. The procedure was as in (A), except that Z-stacks were captured every 60 s for 60 min. Images are representative time points from Figure 3—video 2. The top panel shows the merged images, and the other panels show the individual fluorescence channels for cargo, Vps8, and Vph1. Scale bar 2 µm. (C) Quantification of the percentage of compartments containing detectable cargo from (A) and (B). Confocal movies were average projected and manually scored for the presence of cargo in labeled compartments. For each strain, at least 26 cells were analyzed from four movies. The bars represent SEM. (D) Quantification of the percentage of the total cargo fluorescence present in early Golgi, late Golgi, and PVE compartments 10 min after SLF addition. The fluorescence for a compartment marker was used to generate a mask to quantify the corresponding cargo fluorescence. Data were taken from at least 26 cells from four movies. The bars represent SEM.
+
 Interestingly, although most of the early Golgi cisternae contained detectable vacuolar cargo at early time points, only about half of the late Golgi cisternae ever contained detectable vacuolar cargo (Figure 3C). By contrast, we previously saw that the fluorescent secretory cargo was present in nearly all of the late Golgi cisternae, where it persisted until the final phase of maturation (Casler et al., 2019). A possible explanation is that the vacuolar cargo departed during the late stage of Golgi maturation, so that as late Golgi cisternae became more mature, they no longer contained fluorescent cargo. To test this hypothesis, we next visualized the dynamics of the vacuolar cargo in maturing Golgi cisternae.
 
-## The vacuolar cargo begins to exit the Golgi near the midpoint of cisternal maturation
+### The vacuolar cargo begins to exit the Golgi near the midpoint of cisternal maturation
 
 To determine when the vacuolar cargo departs from maturing cisternae, we performed 4D confocal microscopy of yeast cells expressing the vacuolar cargo, the early Golgi marker GFP-Vrg4, and the late Golgi marker Sec7-HaloTag. As previously described, we readily detected Golgi maturation events in which GFP-Vrg4-labeled cisternae lost the GFP-Vrg4 signal as they acquired Sec7-HaloTag, which they subsequently lost in the final phase of maturation (Casler et al., 2019; Losev et al., 2006). Intriguingly, the vacuolar cargo signal always began to decline near the midpoint of maturation (Figure 4—video 1, Figure 4A,B, and Figure 4—figure supplement 1A–C). The rate of decline varied between cells, and qualitative observations indicated that the decline was slower in cells expressing very high levels of the vacuolar cargo (data not shown), probably because the sorting machinery was saturated. Therefore, we focused the analysis on cells expressing moderate levels of the vacuolar cargo. The average behavior from 21 maturation events is depicted in Figure 4C.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig4-v2.jpg)
+
+**Figure 4.:** (A) Visualizing the vacuolar cargo in a VPS10 wild-type strain. Cells expressing the vacuolar cargo together with the early Golgi marker GFP-Vrg4 and the late Golgi marker Sec7-HaloTag were grown to mid-log phase, labeled with JF646, and imaged by 4D confocal microscopy. SLF was added 1–3 min before imaging. Shown are average projected Z-stacks at representative time points from Figure 4—video 1. The top row shows the complete projection, the second row shows an edited projection that includes only the cisterna being tracked, and the other rows show the individual fluorescence channels from the edited projection. The large red structure is the vacuole, which contained cargo molecules that had escaped from the ER prior to SLF addition as described in Figure 1. Scale bar, 2 µm. (B) Quantification of the fluorescence intensities of the Golgi markers and the vacuolar cargo during a typical maturation event. Depicted are the normalized fluorescence intensities in arbitrary units (a.u.) of the cisterna tracked in (A). (C) Average cargo signal during the early-to-late Golgi transition. For 21 maturation events from 18 movies of cells expressing moderate levels of the vacuolar cargo, fluorescence was quantified over a 90 s window with Z-stacks collected every 2 s. Normalization was performed by defining the maximum value as the average of the first six fluorescence values for the cargo and Vrg4, or of the last six fluorescence values for Sec7. Traces were aligned at the midpoint of the Vrg4-to-Sec7 transition, and the normalized fluorescence signals were averaged. The shaded borders represent SEM. (D) Visualizing the vacuolar cargo in a vps10∆ strain. The experiment was performed as in (A). Shown are average projected Z-stacks at representative time points from Figure 4—video 2. (E) Quantification of the fluorescence intensities of the Golgi markers and the vacuolar cargo during a typical maturation event in the vps10∆ strain. Depicted are the normalized fluorescence intensities in arbitrary units (a.u.) of the cisterna tracked in (D). (F) Average cargo signal during the early-to-late Golgi transition in a vps10∆ strain. The experiment was performed as in (C). Data were collected for 12 maturation events from 12 movies of cells expressing moderate levels of the vacuolar cargo.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Vacuolar cargo traffic in a VPS10 wild-type strain. The experiment was performed as in Figure 4A. Shown are average projected Z-stacks at representative time points from an additional video. The top row shows the complete projection, the second row shows an edited projection that includes only the cisterna being tracked, and the other rows show the individual fluorescence channels from the edited projection. Scale bar, 2 µm. (B) Quantification of the fluorescence intensities of the Golgi markers and the vacuolar cargo during maturation of the cisterna tracked in (A). The procedure was as in Figure 4B. (C) Quantification of a maturation event from an additional video of a VPS10 cell. (D) – (F) Same as (A) – (C), except that the analysis was performed with a vps10∆ strain.
+
 We predicted that removal of the Vps10 sorting receptor would prevent normal exit of the vacuolar cargo, which would then behave like a secretory cargo. This prediction was tested by tracking the vacuolar cargo during Golgi maturation in a vps10∆ mutant. In the absence of Vps10, the vacuolar cargo signal no longer declined during the early-to-late transition (Figure 4—video 2, Figure 4D–F, and Figure 4—figure supplement 1D–F). Instead, vps10∆ cells actually displayed a transient increase in the cargo signal during the early-to-late transition, likely due to AP-1-dependent recycling from older cisternae as previously shown for the fluorescent secretory cargo (Casler et al., 2019). These data indicate that in wild-type cells, the vacuolar cargo begins to exit the Golgi in a Vps10-dependent manner around the time of the early-to-late transition.
 
-## GGAs but not AP-1 are required to sort the vacuolar cargo
+### GGAs but not AP-1 are required to sort the vacuolar cargo
 
 To characterize how the vacuolar cargo exits the Golgi, we tested the roles of the AP-1 clathrin adaptor and of the GGA clathrin adaptors Gga1 and Gga2. AP-1 was originally proposed to mediate transport of proteins from the TGN to endosomes (reviewed in Hinners and Tooze, 2003), but subsequent work implicated GGAs in TGN-to-endosome traffic in both yeast and mammalian cells (Black and Pelham, 2000; Dell'Angelica et al., 2000; Hirst et al., 2000; Zhdankina et al., 2001). In S. cerevisiae, AP-1 localizes exclusively to the late Golgi, and it mediates intra-Golgi recycling of some resident late Golgi proteins and secretory cargoes (Casler and Glick, 2019; Day et al., 2018; Liu et al., 2008; Papanikou et al., 2015; Spang, 2015; Valdivia et al., 2002). It was previously reported that yeast GGAs function upstream of AP-1 and that GGAs display similar kinetics of arrival and departure as the late Golgi reference marker Sec7 (Daboussi et al., 2012). However, a somewhat different conclusion was presented in a more recent study, which reported that GGAs arrived at Golgi cisternae significantly later than Sec7 (Tojima et al., 2019). To clarify the functions of these adaptors in sorting the vacuolar cargo, we combined a kinetic analysis of AP-1 and GGA dynamics with tests of deletion mutants.
 
 If a given adaptor is involved in transporting the vacuolar cargo out of the Golgi, then arrival of that adaptor is expected to coincide with initiation of cargo departure. In a kinetic analysis, we first compared Sec7 with the AP-1 subunit Apl2 and with the major GGA isoform Gga2 (Myers and Payne, 2013). Three-color imaging was performed with Apl2-GFP, Gga2-HaloTag, and Sec7-mScarlet. Gga2 consistently showed arrival and departure kinetics nearly identical to those of Sec7, whereas Apl2 consistently arrived ~20–40 s later and departed ~10–15 s later than Gga2 and Sec7 (Figure 5—video 1, Figure 5A,B, and Figure 5—figure supplement 1A–C). Thus, GGAs arrive at the Golgi at about the same time that the vacuolar cargo begins to depart. Indeed, when the vacuolar cargo was visualized in maturing cisternae together with the early Golgi marker GFP-Vrg4 and with Gga2-HaloTag, the first appearance of Gga2 occurred at about the same time that the vacuolar cargo signal started to decline (Figure 5—video 2, Figure 5C,D, and Figure 5—figure supplement 1D). Interestingly, the cargo signal sometimes began to drop a short time before Gga2 was visible at the Golgi. A potential explanation is that when GGAs are first recruited, they are immediately packaged into vesicles that transport vacuolar cargoes from the Golgi, so the pool of Golgi-associated Gga2 initially remains low. Regardless of whether this interpretation is correct, GGA arrival kinetics closely match the departure kinetics of the vacuolar cargo, whereas AP-1 arrival kinetics do not.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig5-v2.jpg)
+
+**Figure 5.:** (A) Visualizing the dynamics of the GGA and AP-1 adaptors during cisternal maturation. A strain expressing the GGA protein Gga2-HaloTag, the AP-1 subunit Apl2-GFP, and the late Golgi marker Sec7-mScarlet was grown to mid-log phase, labeled with JF646, and imaged by 4D confocal microscopy. Shown are average projected Z-stacks at representative time points from Figure 5—video 1. The top row shows the complete projection, the second row shows an edited projection that includes only the cisterna being tracked, and the other rows show the individual fluorescence channels from the edited projection. Two maturation events are highlighted. Scale bar, 2 µm. (B) Quantification of the fluorescence intensities of the late Golgi marker and the adaptors during typical maturation events. Depicted are the normalized fluorescence intensities in arbitrary units (a.u.) of the two cisternae tracked in (A). (C) Visualizing Vrg4 and Gga2 together with the vacuolar cargo. The experiment was performed as in Figure 4A, except that the Golgi markers were GFP-Vrg4 and Gga2-HaloTag. Shown are average projected Z-stacks at representative time points from Figure 5—video 2. The top row shows the complete projection, the second row shows an edited projection that includes only the cisterna being tracked, and the other rows show the individual fluorescence channels from the edited projection. Scale bar, 2 µm. (D) Quantification of the fluorescence intensities of the Golgi markers together with the vacuolar cargo during a typical maturation event. Depicted are the normalized fluorescence intensities in arbitrary units (a.u.) of the cisterna tracked in (C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Visualizing the dynamics of the GGA and AP-1 adaptors during cisternal maturation. The experiment was performed as in Figure 5A. Shown are average projected Z-stacks at representative time points from an additional video. The top row shows the complete projection, the second row shows an edited projection that includes only the cisterna being tracked, and the other rows show the individual fluorescence channels from the edited projection. Scale bar, 2 µm. (B) Quantification of the fluorescence intensities of the late Golgi marker and the adaptors during a typical maturation event. Depicted are the normalized fluorescence intensities in arbitrary units (a.u.) of the cisterna tracked in (A). (C) Quantification of the fluorescence intensities of the late Golgi marker and the adaptors during three additional maturation events from three additional movies. The analysis was performed as in (B). (D) Quantification of the fluorescence intensities of the Golgi markers GFP-Vrg4 and Gga2-HaloTag together with the vacuolar cargo during three additional maturation events from three additional movies. The analysis was performed as in Figure 5D.
+
 If a given adaptor is involved in transporting the vacuolar cargo out of the Golgi, then loss of that adaptor should disrupt normal sorting. We generated an apl4∆ deletion strain to inactivate AP-1 and a gga1∆ gga2∆ double deletion strain to inactivate GGAs, and then tracked the vacuolar cargo together with the early Golgi marker GFP-Vrg4 and the late Golgi marker Sec7-HaloTag. In the apl4∆ strain, the vacuolar cargo signal began to decline during the early-to-late transition of Golgi maturation in a manner indistinguishable from that seen in wild-type cells (Figure 6—video 1, Figure 6A–C, and Figure 6—figure supplement 1A–C). Strikingly, in the gga1∆ gga2∆ strain, the vacuolar cargo persisted during the early-to-late transition (Figure 6—video 2, Figure 6D–F, and Figure 6—figure supplement 1D-F). In most of the events analyzed for the gga1∆ gga2∆ strain, the vacuolar cargo could be detected within the cisterna until the Sec7 signal disappeared or even afterwards (Figure 6D,E and Figure 6—figure supplement 1D,E). A caveat is that the gga1∆ gga2∆ strain displayed somewhat altered Vrg4 and Sec7 maturation kinetics, as indicated by abnormally shallow slopes for the arrival and departure curves of the Golgi markers (Figure 6F). Nevertheless, maturation events could be readily identified in the gga1∆ gga2∆ strain, and the results strongly suggest that GGAs are needed for the vacuolar cargo to exit the Golgi.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig6-v2.jpg)
+
+**Figure 6.:** (A) Visualizing vacuolar cargo traffic during Golgi maturation in a strain lacking AP-1. The experiment was performed as in Figure 4A, except that an apl4∆ strain was used. Shown are average projected Z-stacks at representative time points from Figure 6—video 1. The top row shows the complete projection, the second row shows an edited projection that includes only the cisterna being tracked, and the other rows show the individual fluorescence channels from the edited projection. Scale bar, 2 µm. (B) Quantification of the fluorescence intensities of the Golgi markers and the vacuolar cargo during a typical maturation event in the apl4∆ strain. Depicted are the normalized fluorescence intensities in arbitrary units (a.u.) of the cisterna tracked in (A). (C) Average cargo signal during the early-to-late Golgi transition in the apl4∆ strain. The analysis was performed as in Figure 4C, based on 17 maturation events from 13 movies of cells expressing moderate levels of the vacuolar cargo. (D) – (F) Same as (A) – (C) except with a gga1∆ gga2∆ strain lacking GGAs. The analysis in (C) was based on 15 maturation events from 12 movies of cells expressing moderate levels of the vacuolar cargo. Shown in (D) are average projected Z-stacks at representative time points from Figure 6—video 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Visualizing vacuolar cargo traffic during Golgi maturation in a strain lacking AP-1. The experiment was performed with an apl4∆ strain as in Figure 6A. Shown are average projected Z-stacks at representative time points from an additional video. The top row shows the complete projection, the second row shows an edited projection that includes only the cisterna being tracked, and the other rows show the individual fluorescence channels from the edited projection. Scale bar, 2 µm. (B) Quantification of the fluorescence intensities of the Golgi markers and the vacuolar cargo during maturation of the cisterna tracked in (A). The procedure was as in Figure 6B. (C) Quantification of a maturation event from an additional video of an apl4∆ cell. (D) – (F) Same as (A) – (C) except with a gga1∆ gga2∆ strain lacking GGAs.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Immunoblot of secreted cargoes after SLF addition in rich medium. Wild-type (WT) cells expressing the secretory cargo and wild-type, vps10∆, apl4∆, and gga1∆ gga2∆ cells expressing the vacuolar cargo were grown to mid-log phase in YPD, washed with fresh YPD, and treated with SLF. After 30 min, the secreted fractions were isolated by centrifugation, treated with endoglycosidase H to trim N-glycans, and analyzed by SDS-PAGE and immunoblotting. Shown is a representative example from four separate experiments. MW, molecular weight markers. The predicted molecular weights for the mature cargoes are ~38–39 kDa. (B) Accumulation of the vacuolar cargo in the vacuole after SLF addition in various genetic backgrounds. The vacuolar cargo was expressed in wild-type, vps10∆, apm3∆, apl4∆, and gga1 gga2∆ cells that also contained the vacuolar membrane marker Vph1-GFP. The experiment was performed as in Figure 2A. (C) Quantification of the amount of cargo reaching the vacuole in (B). The Vph1-GFP signal was used to create a mask for measuring cargo fluorescence in the vacuole. Data are average values from at least 37 cells for each strain. Fluorescence is plotted in arbitrary units (a.u.). Bars represent SEM.
 
 As a further test of this interpretation, we hypothesized that loss of GGAs would cause the vacuolar cargo to be secreted, as is true for native CPY (Dell'Angelica et al., 2000; Hirst et al., 2000; Zhdankina et al., 2001). This prediction was tested by an immunoblot of media samples collected 30 min after solubilizing the vacuolar cargo with SLF in wild-type, vps10∆, apl4∆, and gga1∆ gga2∆ strains. Secreted cargo was consistently observed with the vps10∆ and gga1∆ gga2∆ strains but not with the wild-type or apl4∆ strains (Figure 6—figure supplement 2A). As another readout for mistargeting of the vacuolar cargo, we compared the total amount of cargo present in the vacuole 60 min after solubilizing the cargo with SLF in wild-type, vps10∆, apm3∆, apl4∆, and gga1∆gga2∆ strains. Apm3 serves as an additional control because it is a subunit of the AP-3 adaptor complex, which functions in a parallel pathway that targets certain membrane proteins directly from the Golgi to the vacuole (Myers and Payne, 2013; Odorizzi et al., 1998). The wild-type, apl4∆, and apm3∆ strains all showed similar amounts of vacuolar cargo, while the vps10∆ and gga1∆ gga2∆ strains showed very little vacuolar cargo (Figure 6—figure supplement 2B,C). The combined results indicate that the vacuolar cargo is sorted to PVE compartments after the early-to-late Golgi transition, with the aid of Vps10 and GGAs but with no significant contribution from AP-1.
 
-## Soluble and transmembrane cargoes apparently transit from PVE compartments to the vacuole by kiss-and-run events
+### Soluble and transmembrane cargoes apparently transit from PVE compartments to the vacuole by kiss-and-run events
 
 Based on the observation that PVE compartments are indefinitely long-lived, we have speculated that PVE compartments deliver cargoes to the vacuole via kiss-and-run fusion events that generate transient pores (Day et al., 2018). Such pores would allow the passage of soluble cargoes as well as intraluminal vesicles that carry membrane-bound cargoes (Henne et al., 2011). This type of partial fusion mechanism could explain why the movement of cargoes from PVE compartments to the vacuole is relatively slow.
 
@@ -83,7 +123,23 @@ To test this concept, we developed an assay in which a pool of labeled cargo mol
 
 Traffic of the biosynthetic vacuolar cargo from PVE compartments to the vacuole was visualized by generating a yeast strain expressing the vacuolar cargo together with the PVE marker Vps8-GFP and the vacuole marker Vph1-HaloTag. At 10–15 min after SLF addition, the majority of the cargo molecules had passed through the Golgi and accumulated in PVE compartments (see Figure 3C above). 4D confocal imaging was then performed after photobleaching the signal outside the PVE compartments. As previously documented (Day et al., 2018), the Vps8-GFP-labeled PVE compartments were persistent structures. Meanwhile, cargo fluorescence moved from PVE compartments to the vacuole. This process was examined by capturing 10 min movies. Some PVE compartments were quiescent for cargo delivery as described above, so the analysis focused on PVE compartments that were active throughout the imaging period. During the majority of a typical time course, the fluorescence in a PVE compartment gradually declined, and this decrease was matched by a gradual increase of fluorescence in the vacuole (Figure 7—video 1 and Figure 7A,B). Occasionally, a discrete event rapidly transferred a substantial fraction of the cargo fluorescence to the vacuole (Figure 7—video 2 and Figure 7C,D). Although the Vps8-GFP signal varied, and sometimes dropped after a discrete event, the punctate PVE compartments marked with Vps8-GFP were never seen to disappear. Our interpretation is that the vacuolar cargo moves from long-lived PVE compartments to the vacuole by a series of kiss-and-run events that are frequently small and sometimes large.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig7-v2.jpg)
+
+**Figure 7.:** (A) Gradual movement of the vacuolar cargo from a PVE compartment to the vacuole. A strain expressing the vacuolar membrane marker Vph1-HaloTag, the PVE marker Vps8-GFP, and the vacuolar cargo was grown to mid-log phase, attached to a confocal dish, and treated with SLF for 10–15 min to enable the cargo to reach PVE compartments. Prior to imaging, a region that excluded PVE compartments was photobleached by illumination with maximum intensity 561 nm laser light for 40 s. Shown are frames from Figure 7—video 1. The top row shows the complete projection, the middle row shows the cargo fluorescence, and the bottom row shows the Vps8-GFP fluorescence. Orange arrows indicate sudden transfer of a small amount of cargo from the PVE compartment to the vacuole. Scale bar, 2 µm. (B) Quantification from (A) of the time course of cargo fluorescence in the PVE compartment and the vacuole, and of the Vps8 signal. To quantify the cargo signal at each time point, the Vph1 or Vps8 signal was selected in a 3D volume and then the cargo fluorescence within that volume was measured. Normalized data are plotted in arbitrary units (a.u.). The black arrow points to the same cargo transfer event that is marked by the orange arrows in (A). (C) Example of sudden transfer of a large amount of cargo from a PVE compartment to the vacuole. The experiment was performed as in (A). Shown are frames from Figure 7—video 2. Orange arrows indicate an event in which nearly all of the cargo moved from the PVE compartment to the vacuole. (D) Quantification of (C), performed as in (B).
+
 We wondered whether the putative kiss-and-run events could also deliver transmembrane cargoes that are encapsulated in intraluminal vesicles within PVE compartments (Henne et al., 2011). This experiment employed the methionine permease Mup1 as a model transmembrane cargo (Menant et al., 2006). In the absence of methionine in the culture medium, Mup1 resides in the plasma membrane, and upon addition of methionine, Mup1 is ubiquitinated, internalized, and sent to the vacuole for degradation (Lin et al., 2008). We generated a strain expressing Mup1-mScarlet, together with Vps8-GFP to label PVE compartments and Vph1-HaloTag to label the vacuole. Methionine was added for 10–15 min to redistribute Mup1 to PVE compartments, and then cells were subjected to 4D confocal imaging after photobleaching the signal outside the PVE compartments, as described above for the soluble vacuolar cargo. Once again, apparent kiss-and-run transfer was readily observed. The Mup1 cargo moved from PVE compartments to the vacuole, sometimes gradually and sometimes in discrete bursts (Figure 8—video 1 and Figure 8A,B). Rarely, a dramatic event results in transfer of virtually all of the Mup1 in a single burst (Figure 8—video 2 and Figure 8C,D). We never observed complete loss of Vps8 as would be expected for a full fusion event, although a subset of the larger discrete events led to substantial reduction of the Vps8 signal (Figure 8—video 3 and Figure 8—figure supplement 1).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig8-v2.jpg)
+
+**Figure 8.:** (A) Movement of Mup1 from a PVE compartment to the vacuole. A strain expressing the vacuolar membrane marker Vph1-HaloTag, the PVE marker Vps8-GFP, and Mup1-mScarlet was grown to mid-log phase in NSD lacking methionine, attached to a confocal dish, and exposed to NSD containing methionine for 10–15 min to promote internalization of Mup1 to PVE compartments. Prior to imaging, a region that excluded PVE compartments was photobleached by illumination with maximum intensity 561 nm laser light for 5 s. Shown are frames from Figure 8—video 1, which illustrates a typical example of putative kiss-and-run fusion at about 300 s. The top row shows the complete projection, the middle row shows the Mup1-mScarlet fluorescence, and the bottom row shows the Vps8-GFP fluorescence. Scale bar, 2 µm. (B) Quantification of (A), performed as in Figure 7B. At about 300 s, a significant amount of Mup1 moved from the PVE compartment to the vacuole. (C) Example of an unusually large cargo transfer event. The experiment was performed as in (A), and frames are shown from Figure 8—video 2. Between the 105 s and 110 s time points, virtually all of the Mup1 moved from the PVE compartment to the vacuole. (D) Quantification of (C), performed as in Figure 7B.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Sudden movement of Mup1 from a PVE compartment to the vacuole. The experiment was performed as in Figure 8A, and frames are shown from Figure 8—video 3. Orange arrows indicate the PVE compartment that was tracked. (B) Quantification of (A), performed as in Figure 7B. Between the 115 s and 120 s time points, a large fraction of the Mup1 moved from the PVE compartment to the vacuole, and the Vps8-GFP fluorescence began a steep decline.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/56844/elife-56844-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** This image shows electron tomography of vacuoles and associated PVE compartments in S. cerevisiae. Non-fused PVE compartments are yellow, vacuoles are red, and PVE compartments with tubular connections to the vacuole are also red to reflect the luminal continuity. Intraluminal vesicles are blue. Also shown are a mitochondrion (green) and a piece of ribosome-studded ER (purple). Scale bar, 100 nm.
 
 For both the vacuolar cargo and Mup1, quantification revealed that gradual transfer to the vacuole was punctuated, about once every 5 min on average, by bursts in which > 15% of the remaining cargo moved to the vacuole. The average amount of remaining cargo transferred during a burst was ~35–40%. Individual PVE compartments differed greatly in the total fraction of the cargo that was transferred in bursts, but on average this number was ~75%. These results favor a PVE-to-vacuole traffic mechanism involving repeated kiss-and-run events of varying size.
 
@@ -111,15 +167,204 @@ Cargo transfer from PVE compartments to the vacuole is slow relative to other me
 
 ## Materials and methods
 
-## Yeast growth and strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: 10687010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418</td>
+      <td>Teknova</td>
+      <td>Cat. #: G5001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nourseothricin</td>
+      <td>Neta Scientific</td>
+      <td>Cat. #: RPI-N51200-1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JF646 HaloTag Ligand</td>
+      <td>Dr. Luke Lavis (Janelia Research Campus) Grimm et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SLF</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. #: 10007974–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Neta Scientific</td>
+      <td>Cat. #: RPI-C81040-1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Concanavalin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: C2010-250MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FKBP12 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab2918</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 anti-rabbit (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: A21245</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Insightful Science (https://www.graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene</td>
+      <td>Insightful Science (https://www.snapgene.com)</td>
+      <td>RRID:SCR_015052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (https://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast growth and strain construction
 
 The parental haploid strain was JK9-3da (leu2-3,112 ura3-52 rme1 trp1 his4) (Kunz et al., 1993). Yeast were grown with shaking in baffled flasks at 23°C in nonfluorescent minimal glucose dropout medium (NSD) (Bevis et al., 2002) or in rich glucose medium (YPD) supplemented with adenine and uracil.
 
 Deletion of the PDR1, PDR3, and GGA1 genes was accomplished by replacement with a G418, nourseothricin, or hygromycin resistance cassette from pFA6a-kanMX6, pAG25, or pAG32, respectively (Goldstein and McCusker, 1999; Wach et al., 1994). Deletion of VPS10, APM3, and APL4 was accomplished by using overlap extension PCR to generate a hygromycin resistance cassette, amplified from pAG32, flanked by 500 bp upstream and downstream of the gene. Deletion of GGA2 was accomplished in the same manner, except that the LEU2 gene from K. lactis was amplified from pUG73 (Gueldener et al., 2002). The primers used for these procedures are listed in Table 1.
 
+**Table 1.**
+ Primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Purpose</th>
+      <th>Amplifies</th>
+      <th>Primers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDR1 deletion</td>
+      <td>kanMX resistance cassette</td>
+      <td>5’-CAGCCAAGAATATACAGAAAAGAATCCAAGAAACTGGAAGCGTACGCTGCAGGTCGAC-3’ 5’-GGAAGTTTTTGAGAACTTTTATCTATACAAACGTATACGTATCGATGAATTCGAGCTCG-3’</td>
+    </tr>
+    <tr>
+      <td>PDR3 deletion</td>
+      <td>Nourseothricin resistance cassette</td>
+      <td>5’-ATCAGCAGTTTTATTAATTTTTTCTTATTGCGTGACCGCACGTACGCTGCAGGTCGAC-3’ 5’-TACTATGGTTATGCTCTGCTTCCCTATTTTCTTTGCGTTTATCGATGAATTCGAGCTCG-3’</td>
+    </tr>
+    <tr>
+      <td>GGA1 deletion</td>
+      <td>Hygromycin resistance cassette</td>
+      <td>5’-AGTCACTACTTCAAGTATAACCCAGACAAGAGTCTTTTAAATAGCTTGCCTTGTCCCCGC-3’ 5’-ATGGCATCTACTTTTTTTTCAACTTCTCTACCGAATTTGACGTTTTCGACACTGGATGGC-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="3">VPS10 deletion</td>
+      <td>VPS10 5’ upstream</td>
+      <td>5’-CCCAAACTAAAAAGTATCCGCCTGT-3’ 5’-GACAAGGCAAGCTAACGTGTGATGACTACTGGACACT-3’</td>
+    </tr>
+    <tr>
+      <td>VPS10 3’ downstream</td>
+      <td>5’-GCCATCCAGTGTCGAAGAGATTACTTTACATAGAGTAGATAATTCCATATACTTTTCATA −3’ 5’-AATGAAGTACTATAAATATTAAAGTACGTTAGTAGTTTATTTCTCTTCGG-3’</td>
+    </tr>
+    <tr>
+      <td>Hygromycin resistance cassette</td>
+      <td>5’-TCATCACACGTTAGCTTGCCTTGTCCCCGC-3’ 5’-TGTAAAGTAATCTCTTCGACACTGGATGGCGG-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="3">APM3 deletion</td>
+      <td>APM3 5’ upstream</td>
+      <td>5’-AGGGGTAGAAGTCGCTGATTGAT-3’ 5’-GGGCCTCCATGTCCTATTTTGGTTGGGTTGGTAAGGTTTACAG-3’</td>
+    </tr>
+    <tr>
+      <td>APM3 3’ downstream</td>
+      <td>5’-GCTGGTCGCTATACTGTTATATGTGTACTTGAAATTCCATGCGAAACTAAA-3’ 5’-TGCGGAAGTCTTCCCTAAGACG-3’</td>
+    </tr>
+    <tr>
+      <td>Hygromycin resistance cassette</td>
+      <td>5’-CAACCAAAATAGGACATGGAGGCCCAGAATACCC-3’ 5’-TCAAGTACACATATAACAGTATAGCGACCAGCATTCACA-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="3">APL4 deletion</td>
+      <td>APL4 5’ upstream</td>
+      <td>5’-ATGTATATAATTCCGGAAGTGTGGTCCT-3’ 5’-GACAAGGCAAGCTTATGGTGTTCAGGTCTTTCTCGTTGCT-3’</td>
+    </tr>
+    <tr>
+      <td>APL4 3’ downstream</td>
+      <td>5’-CCATCCAGTGTCGAAAAATGCCTTTAAAATTACAGAACATAACATGATTAATGAC-3’ 5’-GAATTCTGGTCCAAGGCAATTCTATATTTGAT-3’</td>
+    </tr>
+    <tr>
+      <td>Hygromycin resistance cassette</td>
+      <td>5’-CCTGAACACCATAAGCTTGCCTTGTCCCCG-3’ 5’-TTTTAAAGGCATTTTTCGACACTGGATGGCGG-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="3">GGA2 deletion</td>
+      <td>GGA2 5’ upstream</td>
+      <td>5’-GATTTCTACAGTCTTTCTGATGGGTTCTTGG-3’ 5’-ACGATATTCTTAGACATGATGCAGTATCACGATTAGCAAT-3’</td>
+    </tr>
+    <tr>
+      <td>GGA2 3’ downstream</td>
+      <td>5’-AATCTTGGCTTAATCCTCTGGCGTTTCTTATCAATCCTTTCT-3’ 5’-TCTTCCTTTGAAGAAAATTCGTCCTCATCT-3’</td>
+    </tr>
+    <tr>
+      <td>K. lactis LEU2</td>
+      <td>5’-AATCGTGATACTGCATCATGTCTAAGAATATCGTTGTCCTACCGG-3’ 5’-GAAACGCCAGAGGATTAAGCCAAGATTTCCTTGACAGCC-3’</td>
+    </tr>
+    <tr>
+      <td>Integration at TRP1</td>
+      <td>TRP1 locus</td>
+      <td>5’-GTGTACTTTGCAGTTATGACG-3’ 5’-AGTCAACCCCCTGCGATGTATATTTTCCTG-3’</td>
+    </tr>
+  </tbody>
+</table>
+
 Yeast proteins were tagged by gene replacement using the pop-in/pop-out method to maintain endogenous expression levels (Rossanese et al., 1999; Rothstein, 1991). Secretory and vacuolar cargo proteins were expressed using a TRP1 integrating vector with the strong constitutive TPI1 promoter and the CYC1 terminator (Fitzgerald and Glick, 2014). To ensure consistent expression levels, each strain was verified to have a single copy of the integrated plasmid by PCR with the primers listed in Table 1. All plasmids used in this study are documented in the online supplemental material ZIP file, which contains annotated map/sequence files that can be opened with SnapGene Viewer (Insightful Science; https://www.snapgene.com/snapgene-viewer/). Newly generated plasmids have been archived with Addgene (https://www.addgene.org/Benjamin_Glick/, catalog numbers 140149, 140150, 140151, 140152, 140153, 140154).
 
-## Fluorescence microscopy and photobleaching
+### Fluorescence microscopy and photobleaching
 
 For live-cell fluorescence imaging, yeast strains were grown in NSD (pH ∼5.5) at 23°C. Where indicated, SLF was diluted from a 100 mM stock solution in ethanol (Cayman Chemical; 10007974) to a final concentration of 100 µM, and cycloheximide was added from a 100 mg/mL stock solution in DMSO. Cells were attached to a concanavalin A-coated coverglass-bottom dish containing NSD (Losev et al., 2006) for imaging on a Leica SP8 or Leica SP5 confocal microscope equipped with a 1.4 NA/63x oil objective, using a pixel size of 60–80 nm, a Z-step interval of 0.25–0.30 µm, and 20–30 optical sections. The intervals between Z-stacks were based on the requirements for the individual experiments.
 
@@ -129,11 +374,11 @@ For photobleaching prior to 4D imaging of PVE compartments, a region of interest
 
 To quantify the frequency at which bursts of cargo moved from PVE compartments to the vacuole, each 10 min video was examined at 10 s intervals. Bursts were scored as intervals in which more than 15% of the remaining cargo transferred to the vacuole. Six movies for the vacuolar cargo and seven movies for Mup1 were analyzed. The two cargoes displayed similar frequencies of large bursts as well as similar amounts of cargo transferred per burst, so the data were combined to obtain the averaged numbers stated in the text.
 
-## HaloTag labeling
+### HaloTag labeling
 
 Proteins modified with HaloTag were labeled as previously described (Casler et al., 2019). Briefly, 1 µL of a 1 mM stock solution of JF646 ligand (Grimm et al., 2015) in DMSO was diluted in 500 µL NSD and then spun at maximum speed in a microcentrifuge to remove precipitated material, and the supernatant was mixed with a 500 µL aliquot of cells. Labeling was performed for 30 min with shaking at 23°C. To remove excess dye, cells were filter-washed by pushing 3 mL of fresh medium through the filter. Washed cells were resuspended by pipetting on the filter. The resulting cell mixture was diluted to its original density, and the cells were attached to confocal dishes.
 
-## Immunoblotting of yeast cell lysates and secreted proteins
+### Immunoblotting of yeast cell lysates and secreted proteins
 
 Immunoblotting was performed as follows Casler et al., 2019. A 5 mL yeast culture was grown in YPD overnight with shaking in a baffled flask to an OD600 of 0.7–1.0. The cells were collected by a brief spin in a microcentrifuge, washed twice with fresh YPD, and resuspended in the original volume of fresh YPD. Cultures were treated with 100 µM SLF, and 1.6 mL was removed at each time point. The cells were collected by spinning at 2500xg (5000 rpm) for 2 min in a microcentrifuge. The culture medium supernatant was transferred to a fresh microcentrifuge tube on ice, and the cells were washed once with deionized water. Then the cells were resuspended in 100 µL 4% trichloroacetic acid. Glass beads (0.5 mm; BioSpec Products) were added to bring the total volume to ∼200 µL, and the sample was vortexed three times for 1 min each separated by 1 min intervals on ice. Finally, 800 µL of PBS was added, the solution was mixed, and 800 µL of the cell lysate was transferred to a fresh microcentrifuge tube. Supernatant protein samples were precipitated with 4% trichloroacetic acid on ice for 20 min. Precipitated proteins were centrifuged at maximum speed in a microcentrifuge for 15 min at 4°C. Finally, each protein pellet was resuspended in 50 µL SDS-PAGE sample buffer.
 

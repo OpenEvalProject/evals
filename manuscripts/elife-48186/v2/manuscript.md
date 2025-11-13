@@ -28,15 +28,31 @@
 
 ## Abstract
 
-10.7554/eLife.48186.001 Nuclear transport is facilitated by the Nuclear Pore Complex (NPC) and is essential for life in eukaryotes. The NPC is a long-lived and exceptionally large structure. We asked whether NPC quality control is compromised in aging mitotic cells. Our images of single yeast cells during aging, show that the abundance of several NPC components and NPC assembly factors decreases. Additionally, the single-cell life histories reveal that cells that better maintain those components are longer lived. The presence of herniations at the nuclear envelope of aged cells suggests that misassembled NPCs are accumulated in aged cells. Aged cells show decreased dynamics of transcription factor shuttling and increased nuclear compartmentalization. These functional changes are likely caused by the presence of misassembled NPCs, as we find that two NPC assembly mutants show similar transport phenotypes as aged cells. We conclude that NPC interphase assembly is a major challenge for aging mitotic cells.
+Nuclear transport is facilitated by the Nuclear Pore Complex (NPC) and is essential for life in eukaryotes. The NPC is a long-lived and exceptionally large structure. We asked whether NPC quality control is compromised in aging mitotic cells. Our images of single yeast cells during aging, show that the abundance of several NPC components and NPC assembly factors decreases. Additionally, the single-cell life histories reveal that cells that better maintain those components are longer lived. The presence of herniations at the nuclear envelope of aged cells suggests that misassembled NPCs are accumulated in aged cells. Aged cells show decreased dynamics of transcription factor shuttling and increased nuclear compartmentalization. These functional changes are likely caused by the presence of misassembled NPCs, as we find that two NPC assembly mutants show similar transport phenotypes as aged cells. We conclude that NPC interphase assembly is a major challenge for aging mitotic cells.
 
 ## Introduction
 
 Rapid and controlled transport and communication between the nucleus and cytosol are essential for life in eukaryotes and malfunction is linked to cancer and neurodegeneration (reviewed in Fichtman and Harel, 2014). Nucleocytoplasmic transport is exclusively performed by the Nuclear Pore Complex (NPC) and several nuclear transport receptors (NTRs or karyopherins) (reviewed in Fiserova and Goldberg, 2010; Hurt and Beck, 2015). NPCs are large (~52 MDa in yeast and ~120 MDa in humans) and dynamic structures (Alber et al., 2007; Kim et al., 2018; Onischenko et al., 2017; Teimer et al., 2017). Each NPC is composed of ~30 different proteins, called nucleoporins or Nups (Figure 1a). The components of the symmetric core scaffold are long lived both in dividing yeast cells and in postmitotic cells, while several FG-Nups are turned over (D'Angelo et al., 2009; Denoth-Lippuner et al., 2014; Savas et al., 2012; Thayer et al., 2014; Toyama et al., 2013) and dynamically associate with the NPC (Dilworth et al., 2001; Niño et al., 2016; Rabut et al., 2004). Previous studies performed in postmitotic aging cells (chronological aging) showed changes in NPC structure and function (D'Angelo et al., 2009; Toyama et al., 2019), and also in aging mitotic cells (replicative aging) changes in NPCs have been described (Denoth-Lippuner et al., 2014; Lord et al., 2015). To study the fate of NPCs in mitotic aging, we use replicative aging budding yeast cells as a model. Individual yeast cells have a finite lifespan which is defined as the number of divisions that they can go through before they die: their replicative lifespan (reviewed in Longo et al., 2012) (Figure 1b). The divisions are asymmetric and while the mother cell ages the daughter cell is born young. Remarkably, studying the lifespan of this single-cell eukaryote has been paramount for our understanding of aging (reviewed in Denoth Lippuner et al., 2014; Longo et al., 2012; Nyström and Liu, 2014) and many of the changes that characterize aging in yeast are shared with humans (Janssens and Veenhoff, 2016b). In the current study, we address changes to the NPC structure and function during mitotic aging by imaging of single cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig1-v2.jpg)
+
+**Figure 1.:** (a) Cartoon representation of the NPC illustrates different structural regions of the NPC, all FG-Nups are shown in green independently of their localization, the membrane rings in light brown, the inner rings in purple, the outer rings in brown, the mRNA export complex in pink, and the nuclear basket structure in light blue. Adapted with permission from Springer Nature Customer Service Centre GmbH: Springer Nature, Nature, Integrative structure and functional anatomy of a nuclear pore complex, Kim et al. (2018). (b) Schematic presentation of replicative aging yeast cells. (c) Transcript and protein abundance of NPC components (color coded as in Figure 1a) as measured in whole cell extracts of yeast cells of increasing replicative age; after 68 hr of cultivation the average replicative age of the cells is 24. Cells were aged under controlled and constant conditions (Janssens et al., 2015). See also Figure 1—figure supplement 1a. (d) Young cells are trapped in the microfluidic device and bright field images are taken every 20 min to define the cells age and fluorescent images are taken once every 15 hr to detect the protein localization and abundance. Representative images of cells expressing indicated fluorescent protein fusions imaged at the start of the experiment and after 30 hr; their replicative age is indicated. Scale bar represents 5 µm. (e) Heat map representation of the changes in the levels of the indicated GFP- and mCh-tagged Nups at the NE in each yeast cell at increasing age. Each line represents a single cell’s life history showing the change in the ratio of the fluorescence from the GFP-tagged Nup over the fluorescence from the mCh-tagged Nup and normalized to their ratio at time zero. Measurement of the fluorescence ratios are marked with ‘x’; in between two measurements the data was linearly interpolated. The fold changes are color coded on a log 2 scale from −1 to + 1; blue colors indicate decreasing levels of the GFP-fusion relative to mCh. Number of cells in the heatmaps are Nup116-GFP/Nup49-mCh = 67, Nup133-GFP/Nup49-mCh = 94 and Nup100-GFP/Nup49-mCh = 126.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) mRNA abundance of NPC components in replicative aging; a zoom-in of Figure 1A. Changes in abundance are plotted as fold change. Replicative age increases in time. Transcriptome data from Janssens et al. (2015). (b) Protein abundance of the RanGEF Srm1, the RanGap Rna1, the RanBP1 Yrb1, and the transport receptor Cse1 as measured in whole cell extracts of yeast cells of increasing replicative age. Data from Janssens et al. (2015). (c) mRNA abundance of NPC assembly components and NTRs tested in this study in replicative aging. Changes in abundance are plotted as fold change. Replicative age increases in time. Transcriptome data from Janssens et al. (2015). (d) Protein abundances of Nups in extracts of aging yeast cells after first two data processing steps (black squares and circles from two biological replicates) and after final data processing (white circles) (data from Janssens et al., 2015). Black squares and circles represent the abundances of Nups in whole cell extracts of mixed cell samples enriched for replicative aging mother cells (referred to as mix two in Janssens et al., 2015) after the first two data processing steps. These first two data processing steps involve the normalization of the raw abundances to 1 million and the protein-specific correction for bead-related protein losses. The open circles reflect abundances of the Nups after the additional data processing steps of the deconvolution of the mother-cell-specific abundances. Nup49, Mlp2, Nup57 and Nup59 (bottom row) were missing in the final datasets reported in Janssens et al. (2015) as the third data processing step failed. For Nup49 specifically the problem was that the protein specific correction for bead related protein losses yielded negative values as the losses were estimated too high.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) The experimental timeline where young cells are trapped in the microfluidic device and bright-field images are taken every 20 min to define the cell’s age and fluorescent images are taken once every 15 hr to detect the protein localization and abundance. (b) The median number of completed divisions during the first 15 hr in the microfluidic chip of different strains used in this study and grown on glucose. Please see Figure 4—figure supplement 3 for three strains grown on galactose. ^ Pho4NLS and Nab2NLS are reporter strains, where the NLS is fused to a GFP under the control of the conditional TPI1 promotor. The tagging of Nups with GFP reduces the fitness of the cells to various extends. (c) Heat map representation of the changes in the levels of the indicated GFP- and mCh-tagged Nups at the NE in each yeast cell at increasing age. Each line represents a single cell’s life history showing the change in the ratio of the fluorescence from the GFP-tagged Nup over the fluorescence from the mCh-tagged Nup and normalized to their ratio at time zero. Measurement of the fluorescence ratios are marked with ‘x’; in between two measurements, the data was linearly interpolated. The fold changes are color coded on a log 2 scale from −1 to + 1, except for Nup2 where the changes were larger and the scale runs from −2 to 2; blue colors indicate decreasing levels of the GFP-fusion relative to mCh. Number of cells in the heatmaps are Nup133-GFP/Nup49-mCh = 94, Nup49-GFP/Nup133-mCh = 108, Nup2-GFP/Nup49-mCh = 98. Data from Nup133-GFP/Nup49-mCh is repeated from Figure 1b middle panel for easy comparison with the tag-swapped strain Nup49-GFP/Nup133-mCh and illustration of the systematic changes in the fluorescence from GFP and mCh in aging; see also panel e. (d) Normalized GFP/Nup49-mCh ratio representing the average from cells shown in panel b and Figure 1e. The indicated age is the average number of divisions at time points 0 hr, 15 hr, 30 hr. Error bars are SD of the mean. For Nup116-GFP the change in abundance becomes significant after 15 hr, with p<0.001. For Nup2-GFP and Nup100-GFP the change in abundance is significant with p<0.005 after 30 hr. The number of all measurements contributing to the means (N) at the time points 0 hr, 15 hr and 30 hr were for Nup116 = 76, 70 and 32; for Nup100 = 139, 137 and 86; for Nup2 = 112, 116 and 58; and for Nup133 = 102, 109 and 45, respectively. (e) The average fluorescence intensities from GFP and mCh in Nup133-GFP/Nup49-mCh and the tag-swapped strain Nup49-GFP/Nup133-mCh increase in time during replicative aging experiments, but more so for mCh than for GFP. The systematic changes in the fluorescence from GFP and mCh in aging is likely caused by differences in the maturation times of both fluorophores and/or their pH sensitivity. For the strain expressing Nup49-GFP and Nup133-mCh, N = 113, 104 and 50, and for the strains expressing Nup133-GFP and Nup49-mCh, N = 102, 85 and 27 at time points 0 hr, 15 hr and 30 hr, respectively. Error bars are SD of the mean. (f) The abundance of Nup116-GFP (gray) and Nup100 (black) at the NE relative to Nup49-mCh as a function of remaining lifespan. The dotted lines indicate the best linear fit. Total number of cells analysed are Nup116 = 15 and Nup100 = 35 and the total number of measurements are Nup116 = 34 and Nup100 = 108. (g) Additional independent replicate (coming from a different microscope) for Nup100-GFP/Nup49-mCh abundance correlation to lifespan. The cells in f and g were imaged with different filter settings explaining the different ratios. Number of cells analysed are N = 62 and number of measurements are N = 101.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) The time averaged radial density distribution of the 24 constructed models (gray) (see Table 1) based on the FG-Nup abundance data from Figure 1c with the average of the 24 models plotted in blue denoted as ‘Aged proteome’. Each curve in gray represents the radial density averaged over the NPC height that is |z| < 15.4 nm for one of the 24 different models. (b) Time-averaged r-z density of FG-Nups in the ‘Aged proteome’ NPC. .
+
 ## Results
 
-## The cellular abundance of specific NPC components changes in replicative aging
+### The cellular abundance of specific NPC components changes in replicative aging
 
 We previously generated the first comprehensive dynamic proteome and transcriptome map during the replicative lifespan of yeast (Janssens et al., 2015), and identified the NPC as one of the complexes of which the stoichiometry of its components changes strongly with aging. Indeed, the proteome and transcriptome data give a comprehensive image of the cellular abundance of NPC components in aging (Figure 1c). We observe that the cellular levels of NPC components showed loss of stoichiometry during replicative aging, which were not reflected in the more stable transcriptome data (Figure 1c; Figure 1—figure supplement 1a). Clearly in mitotic aging, a posttranscriptional drift of Nup levels is apparent.
 
@@ -46,11 +62,23 @@ Our data contain full life histories of individual cells and, in line with previ
 
 Taken together, we confirmed the loss of specific FG-Nups by quantifying the localization and abundance of fluorescently-tagged Nups in individual cells during their entire lifespan. Single-cell Nup abundances at the NE can be highly variable (Nup2), while for other Nups (Nup100, Nup116) the loss in abundance at the NE was found in almost all aging cells and correlated with the lifespan of the cell. From the joint experiments published by Janssens et al. (2015); Lord et al. (2015) and the current study we can conclude that especially Nup116 and Nsp1 (Nup98 and Nup62 in humans) strongly decrease in aging.
 
-## Mitotic aging is associated with problems in NPC assembly rather than oxidative damage
+### Mitotic aging is associated with problems in NPC assembly rather than oxidative damage
 
 A possible cause for the loss of stoichiometry could be that NPCs are not well maintained in aging. Indeed, in postmitotic cells, oxidative damage was proposed to lead to the appearance of carbonyl groups on Nups inducing more permeable NPCs (D'Angelo et al., 2009). We have limited information on the maintenance of existing NPCs during replicative aging but there is some precedent for the hypothesis that even in the fast dividing yeast cells damage to existing NPCs may accumulate in aged cells. Indeed, NPCs remain intact during multiple divisions (Colombi et al., 2013; Denoth-Lippuner et al., 2014; Khmelinskii et al., 2012; Thayer et al., 2014), and especially in aged mother cells a fraction of the NPCs is inherited asymmetrically to the aging mother cell (Denoth-Lippuner et al., 2014; Shcheprova et al., 2008). Oxidative stress and reactive oxygen species (ROS) production in the cell is a major source of damage and can result in irreversible carbonylation of proteins (Stadtman and Levine, 2003). Protein carbonyls can be formed through several pathways. Here, we focused on the most prominent one, the direct oxidation of the Lysine, Threonine, Arginine and Proline (K, T, R, P) side chains through Metal Catalyzed Oxidation (MCO) (Stadtman and Levine, 2003) by the Fenton reaction (Maisonneuve et al., 2009; Stadtman and Levine, 2003). Despite extensive efforts and using different in vitro and in vivo oxidative conditions and using different carbonyl-detection methods we could not find evidence for oxidative damage of Nsp1, Nup2, Nic96 and Nup133 (Figure 2—figure supplement 1a,b shows negative results for Nsp1 along with a positive control).
 
 Further indication that oxidative damage is unlikely to impact the NPC in aging came from modeling studies. We carried out coarse-grained molecular dynamics simulations using our previously developed one-bead-per-amino-acid model of the disordered phase of the NPC (Ghavami et al., 2013; Ghavami et al., 2014). Earlier studies have shown that this model faithfully predicts the Stokes radii for a range of FG-domains/segments (Ghavami et al., 2014; Yamada et al., 2010), as well as the NPC’s size-dependent permeability barrier (Popken et al., 2015). To model the carbonylated FG-Nups, we incorporated the change in hydrophobicity and charge for carbonylated amino-acids (T, K, R, P) into the coarse-grained force fields (see Materials and methods) and modeled maximally carbonyl-modified FG-Nups and NPCs. Overall, there is a minor impact of carbonylation on the predicted Stokes radius of the individual Nups and the time-averaged density of a wild type and fully oxidized NPC, with average densities around 80 mg/ml and maximum densities reaching 100 mg/ml in the center of the NPC (r < 5 nm) (Figure 2a red line, Figure 2b right panel and see Figure 2—figure supplement 1c–e for individual Nups and additional models dissecting the relative impact of the change in charge and hydrophobicity upon carbonylation).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig2-v2.jpg)
+
+**Figure 2.:** (a) Time-averaged radial density distribution of FG-Nups for different positions along the z-axis separated by 1 nm, in the range −15.4 < z < 15.4 nm, plotted for the wild type (black), the maximally carbonylated NPC (red) (See also Figure 2—figure supplement 1d,e). The dark colored lines represent the density averaged over the range −15.4 < z < 15.4 nm. (b) Time-averaged r-z density of FG-Nups in the wild type NPC (left panel), the oxidized NPC (right panel). (c) Protein abundance of Heh1, Vps4, Rtn1 and Rtn2 as measured in whole cell extracts of yeast cells of increasing replicative age. Data from Janssens et al. (2015). (d) Heatmaps showing single-cell abundance of Heh2-GFP (N = 100), Brl1-GFP (N = 53) and Apq12 (N = 200) at the NE, relative to Nup49-mCh in replicative aging. (e) Heh2-GFP and Apq12-GFP abundance at the NE, relative to Nup49-mCh, as a function of remaining lifespan. The dotted lines indicate best linear fit; Pearson correlations are indicated. Number of cells analyzed are Apq12 = 82, Heh2 = 51 and number of measuring points analyzed are Apq12 = 193 and Heh2 = 102. Data represents single replicates, a second replicate is shown in Figure 2—figure supplement 2. (f) Brl1 abundance at the NE, relative to Nup49-mCh, as a function of remaining lifespan. The dotted lines indicate best linear fit; Pearson correlations are indicated. Number of cells analyzed are 20 and number of measuring points analyzed are 47. (g) Percentage of cells with a Chm7 focus reflecting faulty NPCs at the NE at different ages. Buds were excluded from the analysis. Error bars are weighted SD from the mean, from three independent replicates. p-Values from Student’s t-test **p≤0.01. N = Total number of cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Anti-GFP western blot of Nsp1-GFP immunoprecipitated from extracts of exponentially growing BY4741 cell expressing Nsp1-GFP from the native promoter and treated without or with 1 mM menadione for 90 min to induce high ROS levels (Nsp1-GFP, Nsp1-GFP ox). As positive control in vitro oxidized purified ID protein (namely the ID linker of Heh2 fused to GFP, ID-GFPox) was added to the BY4741 cell extracts before immunoprecipitation. BY4741 cell extract with and without additions of non-oxidized ID-GFP serve as negative controls (ID-GFP and control). (b) Carbonyl detection with ELISA. The immunoprecipitated samples were cleaned from detergents, and serial dilutions were bound to Nunc MaxiSorp ELISA plates and an ELISA with GFP antibodies as well as an oxi-ELISA, essentially as described by Alamdari et al. (2005), were performed. The read outs of both ELISAs represent the amount of protein (anti-GFP, red bars) or carbonyls (oxi-ELISA with anti-DNP, blue bars) on ID-GFP and Nsp1; carbonyl levels on Nsp1-GFP are below the detection level even under these strongly oxidizing conditions. (c) The Stokes radii for FG-Nups and FG-Nup segments for the native and carbonylated state (in Angstrom). The black bar represents the experimental (native) Stokes radii from Yamada et al. (2010), the blue bar represents the prediction for these native FG Nups (Ghavami et al., 2014), the prediction for the carbonylated FG Nups is plotted in red and the results for the carbonylated_HP (see Materials and methods for details) variant is shown in green. The error bar for the simulations represents the standard deviation in time. (d) Time averaged radial density plot for a carbonylated_HP NPC compared with the wild type and carbonylated NPCs at different positions along the z-axis separated by 1 nm in the z-range of −15.4 to 15.4 nm. In the carbonylated_HP NPC only the effect of carbonylation on the hydrophobicity is accounted for. The average over the different z-values is plotted as thick lines for all three cases. (e) Two-dimensional (rz) density map for the carbonylated_HP NPC.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Additional independent replicates (coming from a different microscope) for Apq12-GFP and Heh2-GFP abundance at the NE, relative to Nup49-mCh, as a function of remaining lifespan. The dotted lines indicate best linear fit; Pearson correlations are indicated. Number of cells analysed are Apq12 = 34, Heh2 = 14 and number of measuring points analyzed are Apq12 = 74 and Heh2 = 46.
 
 Altogether, we find no experimental evidence for carbonyl modification of FG-Nups even under strong oxidative conditions and, based on our modeling studies, the carbonylation of FG-Nups is predicted to have little, or no impact on the passive permeability of NPCs, even under the unrealistic condition that all FG-Nups are fully carbonylated. We conclude that oxidative damage is unlikely to be a direct cause of altered NPC stoichiometry in replicative aging, and it is probable that the previously reported increase in permeability of NEs during chronological aging (D'Angelo et al., 2009) is actually caused by factors other than carbonylation.
 
@@ -66,11 +94,31 @@ To get a more direct readout of problems in NPC assembly. we studied Chm7, the n
 
 We conclude that four proteins involved in the assembly of NPCs decrease strongly in abundance in aging (Vps4, Heh2, Brl1 and Apq12) in a manner that correlates with remaining lifespan (Figure 2). Jointly, the decrease in abundance of those proteins, and potentially also the decrease of FG-Nup abundance (Figure 1), likely directly cause the NPC assembly problems, which we observe as an increased Chm7 focus formation frequency (Figure 2g) and an increased number of herniations (Figure 3) in aged cells.
 
-## Increased steady state nuclear compartmentalization in aging is mimicked in NPC assembly mutants
+### Increased steady state nuclear compartmentalization in aging is mimicked in NPC assembly mutants
 
 Next, we experimentally addressed the rates of transport into and from the nucleus with aging. During import and export, NTRs bind their cargoes through a nuclear localization signal (NLS) or nuclear export signal (NES) and shuttle them through the NPC. In addition to facilitating active transport, the NPC is a size dependent diffusion barrier (Popken et al., 2015; Timney et al., 2016). We measured the rate of efflux in single aging cells and find that passive permeability is not altered significantly in aging (Figure 4—figure supplement 1a–c), excluding the possibility that NPCs with compromised permeability barriers (‘leaky’ NPCs) are prevalent in aging cells.
 
 We then looked at classical import facilitated by the importins Kap60 and Kap95, and export facilitated by the exportin Crm1. The cellular abundance of Crm1, Kap60 and Kap95 is relatively stable in aging (Janssens et al., 2015) (Figure 4—figure supplement 2a and Figure 1—figure supplement 1c for transcript levels) as is their abundance at the NE and their localization (Figure 4—figure supplement 2b–d). To test whether their transport changes with aging, we used GFP-tcNLS (GFP with a tandem classical NLS, Kap60 and Kap95 import cargo) (Goldfarb et al., 1986; Wychowski et al., 1985) and GFP-NES (Crm1 export cargo) (Shulga et al., 1999) reporter proteins, and GFP as a control. We carefully quantified the steady-state localization of transport reporters in individual aging cells in the non-invasive microfluidic setup (See Figure 4—figure supplement 3 for lifespan of strains). In the vast majority of cells, we observed that GFP carrying a tcNLS accumulated more strongly in the nucleus at high ages (Figure 4a, middle panel), and, interestingly, the GFP carrying a NES is more strongly depleted from the nucleus in the vast majority of cells (Figure 4a, right panel). For the control, GFP, we find a more stable N/C ratio in aging (Figure 4a, left panel). While the changes in steady state accumulation are observed already early in life when looking at single cells, on the population level the changes become significant only later in the lifespan (Figure 4b). To see whether an increase in nuclear compartmentalization in aging was reproducible across different signal sequences, we further quantified the localization of reporter proteins that carried a Nab2NLS (Kap104 import cargo), or a Pho4NLS (Kap121 import cargo) (Kaffman et al., 1998; Timney et al., 2006; Truant et al., 1998). Also for these two signal sequences, we found that reporter proteins with the respective sequences accumulated more strongly in the nucleus at higher ages (Figure 4c and Figure 4d).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig4-v2.jpg)
+
+**Figure 4.:** (a) Heatmaps showing single-cell changes in localization (N/C ratios) of GFP (N = 49), GFP-NES (N = 75) and GFP-NLS (N = 66) reporter proteins during replicative aging. (b) N/C ratios of GFP-tcNLS, GFP-NES and GFP as the cells age. The line indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. The whiskers extend to the data points, which are closest to 1.5 times above below the inter quartile range, data points above or below this region are plotted individually. Non-overlapping notches indicate that the samples are different with 95% confidence. The number of cells analyzed are GFP = 54, 51, 34; GFP-NLS = 74, 48, 57 and GFP-NES = 75, 41, 66 at time points 0 hr, 15 hr and 30 hr, respectively. (c) Heatmaps showing single-cell changes in localization (N/C ratios) of Nab2NLS-GFP (N = 53) and Pho4NLS-GFP (N = 56) reporter proteins during replicative aging. (d) Median N/C ratios of Nab2NLS-GFP and Pho4NLS-GFP as the cells age. The number of cells analyzed are Nab2NLS-GFP = 55, 52, 29 and Pho4NLS-GFP = 59, 58, 33 at time points 0 hr, 15 hr and 30 hr, respectively. (e) Deletion of apq12 increases nuclear compartmentalization of GFP-NLS and GFP-NES. The number of cells analyzed are GFP-NLS = 42, 48 and GFP-NES = 39, 34 for WT and Δapq12, respectively (f) Increased nuclear compartmentalization of GFP-NLS during early aging (10 hr of aging, median age of 2 divisions) in a Δvps4Δheh2 background. The number of cells analysed are 42 and 33, respectively. (g) Heatmap showing single-cell changes in localization (N/C ratios) of Srm1-GFP (N = 85) during replicative aging. (h) N/C ratios of Srm1-GFP increases as cells age. Numbers of cells analysed are N = 103, 125, 77 at time points 0 hr, 15 hr and 30 hr, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a), (b) Singe-cell measurements of the kinetics of loss of nuclear accumulation of GFP-NLS from young cell and cell with median replicative age 8. Time zero is the time point at which the red colored medium (ponceau red) containing Na-azide and 2-Deoxy-D-glucose reached the cells that are trapped in the device. The measurements are fitted to an exponential decay function and yield the efflux rate constant (kout). Only cells with p<0.05 and R2 > 0.2 (plotted in red) are represented in panel c; poor fits (blue lines) are excluded from the analysis. (c) Efflux rate constant of cells age 0 and cells age 8. The average Kout of old cells is lower than for young cells, but changes are not significant. Number of cells included in the analysis are Age 0–1 = 57 and 8 (Median) = 48.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Protein abundance of Crm1, Kap95, Kap60, Kap104 and Kap121 as measured in whole cell extracts of yeast cells of increasing replicative age. Data from Janssens et al. (2015). (b) (c) Localization of Crm1 (b) and Kap95 (c) during replicative aging to the nucleus relative to the cytosol (N/C ratio). The line indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. The whiskers extend to the most extreme data points not considered outliers, and the outliers are plotted individually. Non-overlapping notches indicate that the samples are different with 95% confidence. The overall changes were thus not significant, although we note that based on a two-tailed Student’s T-test the N/C ratio for Kap95 is significantly increased after 15 hr (p=8.7×10−4). No significant correlation was found with age (Crm1: r = 0.15, p=0.09 and Kap95: r = 0.07, p=0.39), or lifespan (Crm1: r = 0.04, p=0.63 and Kap95: r = 0.11, p=0.16). Number of cells analysed at time points 0 hr, 15 hr, and 30 hr were for Kap95 = 155, 165, 72 and for Crm1 = 156, 138, 87. (d) Heatmap representation of changes in N/C ratio of Crm1-GFP (N = 134) and Kap95-GFP (N = 132). (e) Protein abundance of 507 proteins with the Gene Ontology term ‘nucleus’ as measured in whole cell extracts of yeast cells of increasing replicative age. Data from Janssens et al. (2015). This set of proteins provides an unbiased proxy of changes in total import. The median, average or summed abundance of these nuclear proteins does not change in aging. (f) Protein abundance of 13 known cargos of Kap60, Kap121, Kap104 and Crm1 and 17 additional proteins interacting with Kap121/Kap123 (based on Timney et al., 2006) as measured in whole cell extracts of yeast cells of increasing replicative age. Data from Janssens et al. (2015).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Replicative lifespan curves of strains expressing reporter proteins, in comparison to BY4741; all grown on medium supplemented with raffinose and galactose. The overexpression of GFP alone did not result in any observable growth defect in young cells, but did impact the lifespan of the yeast cells. This impact on lifespan is likely related to a general stress resulting from the additional protein synthesis and is unlikely to be related to nuclear transport. To enable comparison of the three reporter proteins, GFP, GFP-NLS and GFP-NES, in aging, we tuned their expression such that the impact on lifespan was similar for all three. Total number of cells analysed per strain were GFP = 89, GFP-NLS = 96, GFP-NES = 75, BY4741 = 126.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (a) PCR analysis of apq12 mutants confirming the genotype of the heterozygous diploid BY4743 apq12Δ/APQ12 and the haploid W303 apq12Δ. Strains were generated using the PCR toolbox (Janke et al., 2004) replacing the apq12 gene with a hygromycin resistance cassette (hphNT1) and the genotype was confirmed by PCR analysis using primers flanking the apq12 locus. We were not able to obtain transformants of haploid BY4741 with the hphNT1 in the apq12 locus. (b) Haploid W303 apq12Δ is sensitive to growth at 22°C, confirming the phenotype described by Scarcelli et al. (2007). (c) Tetrad dissection of spores generated from BY4743 apq12Δ/APQ12. Spores from the tetrads grew out in colonies with varying sizes, or often did not grow out at all. (d) Genotype of the resulting clones from the tetrad dissection was determined by PCR with primers flanking the apq12 locus, as described above for panel a). The clones that carry the hphNT1 in the apq12 locus also still carry a wildtype copy of APQ12 (clones 1a, 1 c, 2b and 3 c). The heterozygous diploid BY4743 apq12Δ/APQ12 shows genome instability, possibly resulting in an incorrect number of chromosomes after meiosis, enabling spores to carry a WT copy of APQ12 as well as the apq12 deletion.
 
 How should we interpret the increased steady state localization of these 4 GFP reporters in aging? The steady state localization of these GFP-reporter proteins depends on the kinetics of NTR facilitated transport (import or export) and passive permeability (influx and efflux). While we cannot formally exclude that retention mechanisms appear during aging, the efflux experiments in Figure 4—figure supplement 1a–c do confirm that GFP remains mobile in aged cells, and also the stable localization of the control, GFP (Figure 4a), supports that retention mechanisms have little impact. Thus, under the assumption that retention mechanisms play an age-independent and minimal role, we can interpret the steady state ratio’s to report on the balance between the rates of NTR-facilitated-transport (import and export) and passive permeability (influx and efflux). This would mean that the systematic changes in the steady state localization of the reporter proteins that we observe in the aging cells results from a change in the balance between the rates of NTR-facilitated-transport and passive permeability.
 
@@ -82,9 +130,17 @@ A previous report showed a reduction in nuclear accumulation of GFP-NLS in age 6
 
 Next, we addressed the transport of native proteins in aged cells. We studied Srm1, the yeast homologue of Rcc1, as endogenously expressed GFP-tagged protein. Srm1 is the nucleotide exchange factor that exchanges GDP for GTP on Ran and its nuclear localization ensures that Ran-GTP levels inside the nucleus are high. The localization of Srm1 depends on Kap60/Kap95-mediated import and retention inside the nucleus via chromatin binding (Li et al., 2003; Nemergut et al., 2001). While the cellular abundance of Srm1 was stable during aging (Figure 1—figure supplement 1b), we found that the nuclear accumulation of Srm1-GFP increased during replicative aging in most cells (Figure 4g,h). The steady-state localization of Srm1 cannot be directly interpreted in terms of transport as retention plays an important role, but it is striking that the change in localization of Srm1-GFP is in line with the changes observed for GFP-NLS. Interestingly, the human homologue of Srm1, Rcc1, was previously also reported to have an increased nuclear concentration in myonuclei and brain nuclei of aged mice (Cutler et al., 2017).
 
-## Alterations of the nuclear envelope permeability during aging affects transcription factor dynamics
+### Alterations of the nuclear envelope permeability during aging affects transcription factor dynamics
 
 Additionally, we studied Msn2, a transcriptional regulator that responds to various stresses and translocates to the nucleus in pulses, a so-called frequency modulated transcription factor. Msn2 communicates information about the environment by modifying the frequency of pulses (Figure 5a) (Cai et al., 2008; Hao and O'Shea, 2011; Hao et al., 2013). These pulse dynamics are primarily determined by the rates of nuclear import and nuclear export (Hao et al., 2013), but retention mechanisms also apply. By following endogenously tagged Msn2-GFP, we were able to observe the pulse dynamics for individual cells, and quantify specific features of each pulse (Figure 5b). Specifically, for each Msn2 pulse, we determined the peak prominence and the pulse width. To determine how aging affected the import and export kinetics, we imaged mother cells for short periods of time every 10 hr (Figure 5c). We observed that, as predicted by the alterations in NPCs, the average pulse widths for each cell increased consistently from middle-age onwards (Figure 5d). Similarly, by aligning all Msn2 pulses on top of each other for a given age, we determined a mean pulse shape for each age (Figure 5e). These show similar characteristics, where the aging results in both broader and lower Msn2 pulses. As could be expected given the striking age-related changes, both the pulse width and pulse prominence are correlated to the remaining lifespan of the cell (Figure 5—figure supplement 1a,b, r = −0.36, p<0.0001 and r = 0.47, p<0.0001 for pulse prominence and pulse width, respectively). We consider it likely, that the decrease in Msn2 dynamics is a readout for the NPC’s ability to facilitate rapid responses. Aging cells may thus respond more slowly to changes in their environment due to reduced nuclear cytoplasmic transport and communication.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig5-v2.jpg)
+
+**Figure 5.:** (a) Schematic showing pulses of Msn2 translocation to the nucleus and movement back to the cytoplasm. (b) Five randomly selected single cell traces showing Msn2 dynamics. Low values indicate the majority of Msn2 is cytoplasmic, and high values indicate the majority of Msn2 is nuclear localized. Pulses are annotated showing peaks, prominence and the width of the pulse. (c) Experimental protocol for the aging experiment. White boxes indicate brightfield imaging only, and green boxes indicate fluorescence imaging. (d) As cells age, the width of the Msn2 pulses increases reliably. (*** indicates p<0.0001 two-tailed t-test). (e) Msn2 pulses were identified at each age, and then all pulses were averaged together at each age. To correct for changes in baseline localization with age, the mean pre-pulse level was subtracted at each age. Error bars are standard error.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48186/elife-48186-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) The Msn2 pulse prominence is positively correlated with remaining lifespan. (b) The remaining lifespan is negatively correlated with increasing Msn2 pulse width. N value cells = 48, N value for scatter plot = 138.
 
 ## Discussion
 
@@ -100,76 +156,858 @@ Our work also provides the first clear example that the assembly of large protei
 
 ## Materials and methods
 
-## Strains
+### Strains
 
 All Saccharomyces cerevisiae strains used in this study are listed Table 4 and were validated by sequencing. Experiments in this study were performed with BY4741 genetic backgrounds, except the deletion of apq12, which is instable in the BY4741 background. W303 apq12Δ was created by using the PCR-toolbox (Janke et al., 2004). The Nup116-GFPboundary MKY227 from Mattheyses et al. (2010) was converted from its W303 background to BY4741 background by crossing and tetrad dissection for in total 10 times with BY4741. All strains used in the aging experiments are plasmid free as plasmids are not maintained in aging cells. Cells were grown at 30°C, shaking at 200 RPM using Synthetic Complete medium supplemented with 2% Glucose or 2% D-raffinose, unless indicated otherwise. If applicable, expression of reporter proteins was induced with 0.5% Galactose. Cells were induced for 4–7 hr prior to the start of an experiment. The proteomics data within this manuscript previously published in Janssens et al. (2015) is from YSBN6 grown in nitrogen base without amino acids supplemented with 2% glucose.
 
-## Microscopy
+### Microscopy
 
 All microscopy, excluding the experiments for Figure 5, was performed at 30°C on a Delta Vision Deconvolution Microscope (Applied Precision), using InsightSSITM Solid State Illumination of 488 and 594 nm, an Olympus UPLS Apo 60x or 100x oil objective with 1.4NA and softWoRx software (GE lifesciences). Detection was done with a CoolSNAP HQ2 camera. Microscopy to study Msn2 dynamics was performed on a Nikon Ti-E microscope equipped with a Hamamatsu Orca Flash V2 using a 40X oil immersion objective (1.3NA). Fluorescence excitation was performed using an LED illumination system (Excelitas 110-LED) that is triggered by the camera.
 
-## Replicative aging experiments – microfluidic dissection platforms
+### Replicative aging experiments – microfluidic dissection platforms
 
 The microfluidic devices were used as previously detailed (Crane et al., 2014; Lee et al., 2012). Bright-field images of the cells were taken every 20 min to follow all divisions of each cell. Fluorescent images with three or four z-slices of 0.5 or 0.7 μm, were taken at the beginning of the experiment and after 15, 30, 45 and 60 hr. One experiment lasts for a maximum of 80 hr. All lifespans and the N/C ratios of yPP008, yPP009 and yPP011 (Figure 4a,b and Figure 4—figure supplement 3) reflect only cells that stay in the device for a whole lifespan are included into the dataset. All other data presented include all cells that stay in the microfluidic device for at least 15 hr and have at least one image well enough in focus for a ratiometric measurement. Data in Figure 4a,b and Figure 4—figure supplement 3 were obtained using both the microfluidic dissection platform (Lee et al., 2012) and the ALCATRAS (Crane et al., 2014), data in all other experiments were performed using an ALCATRAS chip.
 
-## Poison assay in the microfluidic device
+### Poison assay in the microfluidic device
 
 To measure the passive permeability of NPCs in old cells, the cells were replicatively aged in the microfluidic chip for approximately 21 hr. Subsequently, the medium in the chip was exchanged, as described by Crane et al. (2014), for Synthetic Complete medium supplemented with 10 mM sodium azide and 10 mM 2-deoxy-D-glucose (Shulga et al., 1996). Additionally, the medium was supplemented with some Ponceau S stain, which makes the medium fluoresce in the mCherry channel. The addition of sodium azide and 2-deoxyglucose depletes the cell of energy and destroyes the Ran-GTP/GDP gradient thus abolishing active transport of reporter proteins. We measured the net efflux of reporter proteins by imaging the cells every 30 s.
 
-## Data analysis of Nups and N/C ratios
+### Data analysis of Nups and N/C ratios
 
 Microscopy data was quantified with open source software Fiji (https://imagej.net/Welcome) (Schindelin et al., 2012). Fluorescent intensity measurements were corrected for background fluorescence. To quantify the abundance of proteins at the NE, an outline was made along the NE in the mCherry channel. The outline was used to measure the average fluorescent intensities in the mCherry and GFP channels. To quantify the nuclear localization (N/C ratio), the NE was outlined based on the Nup49-mCherry signal and the average fluorescence intensity at the nucleus was measured. A section in the cytosol devoid of vacuoles (appearing black) was selected for determining the average fluorescence intensity in the cytosol. We note that the average fluorescence of GFP in the cytosol may be underestimated in aged cells as aged cells have many small vacuoles that make it hard to select vacuole-free areas in the cytosol. The extent to which this affects the data can best be judged from the cells expression GFP where the N/C ratio on average increases from 1.2 to 1.25 in 30 hr (Figure 6d). All heatmaps and bee swarm/box plots were generated in MATLAB (Mathworks https://nl.mathworks.com/).
 
-## EM methods
+### EM methods
 
-## Magnetic purification of old cells for electron microscopy
+#### Magnetic purification of old cells for electron microscopy
 
 To evaluate the nuclear envelope ultrastructure of replicatively aged yeast, we cultured BY4741 in 200 mL of YPD to mid log phase. 6 × 108 cells were collected by centrifugation, washed in PBS and then resuspended in 500 μL of 2xPBS. To biotin-label cells, 7 mg of sulfo-NHS-LC-biotin (Pierce) was dissolved in 500 uL of ice-cold H20 and added to the cell suspension, which was subsequently incubated at RT for 20 min. The cells were pelleted by centrifugation and excess free biotin removed by washing in PBS. Biotin-labeled cells were used to inoculate 4 L of YPD and grown for ~10–12 generations. Cells were collected by centrifugation and resuspended in ice-cold PBS. The cell suspension was incubated with 250 μL of streptavidin-coated magnetic beads (Qiagen) for 20 min at 4°C. Magnetic beads with bound biotinylated cells were collected on a magnet and were washed five times with PBS. The unbound cells were used as the mixed-population (young) sample. After the final wash in PBS, cells were resuspended in a small volume of YPD.
 
 Yeast from either the magnetic bead sorted sample (aged) or non-binding yeast (young) were concentrated into a thick slurry by gently pelleting (2,000 rpm) and aspirating off excess media. The slurries were high-pressure frozen in a Leica HMP100. Frozen samples were freeze-substituted in a Leica Freeze AFS with 0.1% uranyl acetate in dry acetone and infiltrated with Lowicryl HM20 resin. The polymerized resin block was cut with a diamond blade into ~100 nm thick sections. Sections were collected onto a formvar/carbon coated nickel grids and stained with 2% uranyl acetate and Reynolds lead citrate for improved membrane contrast. Images were acquired on a FEI Tecnai Biotwin TEM at 80 kV equipped with a Moranda CCD camera using iTEM (Olympus) software.
 
-## Msn2:GFP imaging and quantification
+### Msn2:GFP imaging and quantification
 
 Following introduction of the cells to the microfluidic device, brightfield imaging was begun immediately. The process of introducing cells to the device was found to increase Msn2 activity for the first hour or two following device loading. To ensure that the baseline timecourse in young cells was representative of pulse dynamics and not affected by loading stress, fluorescence imaging was begun after cells had been allowed to acclimate for 3 hr. Brightfield images were acquired at every timepoint, with intervals of 5 min when fluorescence images were not acquired. Fluorescence images were acquired for 2 hr, at intervals of 90 s, with three z-slices of 1.5 μm. Following the fluorescence imaging, bright-field images were acquired for 8 hr to ensure that cells could be tracked and the number of daughter divisions could be scored. Cells were segmented and tracked using previously published software (Bakker et al., 2018).
 
 Nuclear accumulation of Msn2 was quantified using a measure of skewness. Specifically, the ratio of the brightest 2% of the pixels within the cell relative to the median cell fluorescence. By normalizing to the median cell fluorescence, this is measurement is robust to photobleaching or changes in protein concentration. This measurement has been repeatedly validated and used in previous studies of transcription factor translocation dynamics (Cai et al., 2008; Granados et al., 2017). For each single cell, peaks were located and quantified using the findpeaks function in Matlab. At each age, the measurements for all pulses within a single cell were averaged to generate a single value for mean Msn2 pulse properties for that cell, at that age. This value was used for correlations with remaining lifespan and distribution of pulse widths at each age (Figure 5—figure supplement 1). To determine the mean pulse dynamics at each age, all pulses of all cells alive at the age were centered relative to each pulse peak, and averaged.
 
-## Modeling of aged NPCs
+### Modeling of aged NPCs
 
 In order to model the aged NPC with the measured stoichiometry of FG-Nups from the protein abundance data (see Figure 1), we built 24 different models by taking into account the 8-fold symmetry of the NPC. The model details are shown in Table 1. In all 24 models, the two peripheral Nsp1’s along with Nup116 were deleted. Nsp1 in the central channel recruits Nup49 and Nup57 to form a Nsp1-Nup49-Nup57 subcomplex. As a result, deletion of one of the central channel Nsp1’s is accompanied by removal of the corresponding Nup49 and Nup57. We computed the time-averaged radial mass density distribution (density averaged in the circumferential and axial direction) of the FG-Nups for these 24 models along with the wild type (Figure 1—figure supplement 3). The average of the 24 models we refer to as the ‘Aged proteome’ model.
 
-## Force-field parameters of carbonylated amino acids in the 1-bead-per-amino-acid (1BPA) model (Ghavami et al., 2014)
+**Table 1.**
+ Details of the FG-Nup stoichiometry for the 24 constructed models to represent the aged NPC. 0 and 1 represent absence and presence, respectively, of the FG-Nup in 8-fold symmetry.
 
-Among all amino-acids, Threonine (T), Lysine (K), Proline (P) and Arginine (R) can undergo carbonylation. The change in hydrophobicity upon carbonylation of these amino-acids was calculated with the help of five hydrophobicity prediction programs (KOWWIN, ClogP, ChemAxon, ALOGPS and miLogP) (Leo, 1993; Meylan and Howard, 1995; Tetko et al., 2005; Viswanadhan et al., 1989) (Cheminformatics, 2015, www.molinspiration.com). These software programs use the partition coefficient P (ratio of concentrations in a mixture of two immiscible phases at equilibrium, usually water and octanol) as a measure of hydrophobicity. Since the range of the ratio of concentrations is large, the logarithm of the ratio of concentrations is commonly used: log⁡Poctanol/water=log⁡CoctanolCwater.
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>NSP1</td>
+      <td>NSP1</td>
+      <td>NSP1</td>
+      <td>NSP1</td>
+      <td>Nup1</td>
+      <td>Nup42</td>
+      <td>Nup49</td>
+      <td>Nup49</td>
+      <td>Nup57</td>
+      <td>Nup57</td>
+      <td>Nup60</td>
+      <td>Nup100</td>
+      <td>Nup145</td>
+      <td>Nup145</td>
+      <td>Nup159</td>
+      <td>Nup116</td>
+    </tr>
+    <tr>
+      <td>Model 1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 12</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 13</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 14</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 15</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 16</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 17</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 18</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 19</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 20</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 21</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 22</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 23</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Model 24</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Force-field parameters of carbonylated amino acids in the 1-bead-per-amino-acid (1BPA) model (Ghavami et al., 2014)
+
+Among all amino-acids, Threonine (T), Lysine (K), Proline (P) and Arginine (R) can undergo carbonylation. The change in hydrophobicity upon carbonylation of these amino-acids was calculated with the help of five hydrophobicity prediction programs (KOWWIN, ClogP, ChemAxon, ALOGPS and miLogP) (Leo, 1993; Meylan and Howard, 1995; Tetko et al., 2005; Viswanadhan et al., 1989) (Cheminformatics, 2015, www.molinspiration.com). These software programs use the partition coefficient P (ratio of concentrations in a mixture of two immiscible phases at equilibrium, usually water and octanol) as a measure of hydrophobicity. Since the range of the ratio of concentrations is large, the logarithm of the ratio of concentrations is commonly used: $log⁡P_{octanol/water}=log⁡\frac{C_{octanol}}{C_{water}}.$
 
 These programs provide different estimates of the value of log P for a given chemical structure. They use experimental log P values for atoms or small groups of atoms as a basis and their algorithms are ﬁne-tuned by training with experimental values of complete molecules. The molecules are cut into fragments or into atoms, and their contribution adds up to the log P value of the entire molecule based on the concept of structure-additivity (Fujita et al., 1964).
 
-The hydrophobicity scale in the 1BPA force field (Ghavami et al., 2014) is derived from three scales that are based on partition energy measurements. Since the free energy of partition is proportional to log P, the strategy was chosen to ﬁnd log P values for the oxidized amino acids. To obtain a reliable value for each of the chemically modified amino acids, a weighted average scheme is used. Instead of using the predicted hydrophobicity for the entire residue, it is more accurate to use the predicted change in hydrophobicity since the change in molecular structure upon introduction of a functional group due to carbonylation is small. To account for the variation in accuracy of the predictor programs, a weight is assigned to each program based on the deviation of the prediction from our existing force field value for the amino-acids in their native state (Ghavami et al., 2014). The assigned weight (wk,i) for program k for amino acid i is defined as:
+The hydrophobicity scale in the 1BPA force field (Ghavami et al., 2014) is derived from three scales that are based on partition energy measurements. Since the free energy of partition is proportional to log P, the strategy was chosen to ﬁnd log P values for the oxidized amino acids. To obtain a reliable value for each of the chemically modified amino acids, a weighted average scheme is used. Instead of using the predicted hydrophobicity for the entire residue, it is more accurate to use the predicted change in hydrophobicity since the change in molecular structure upon introduction of a functional group due to carbonylation is small. To account for the variation in accuracy of the predictor programs, a weight is assigned to each program based on the deviation of the prediction from our existing force field value for the amino-acids in their native state (Ghavami et al., 2014). The assigned weight ($w_{k,i}$) for program $k$ for amino acid $i$ is defined as:
 
-wk,i=1/∆εk,i2∑k=151/∆εk,i2,
+$w_{k,i}=\frac{1/\Delta\epsilon_{k,i}^{2}}{\sum_{k=1}^{5}1/\Delta\epsilon_{k,i}^{2}}$,
 
-where ∆εk,i=εk,i-εGhavami is the difference between the hydrophobicity for amino acid i in the 1BPA force field (Ghavami et al., 2014) and that predicted by program k. The results are depicted in Table 2, showing that K and R become more hydrophobic, whereas T and P become more hydrophilic, compared to their native state.
+where $\Delta\epsilon_{k,i}=\epsilon_{k,i}-\epsilon_{Ghavami}$ is the difference between the hydrophobicity for amino acid $i$ in the 1BPA force field (Ghavami et al., 2014) and that predicted by program k. The results are depicted in Table 2, showing that K and R become more hydrophobic, whereas T and P become more hydrophilic, compared to their native state.
 
 Carbonylation has additional effects. For instance, the carbonylated form of K and R, that is aminoadipic semialdehyde (Asa) and glutamic semialdehyde (GSA), respectively, loose their positive charge and become neutral, see Table 2 (Petrov and Zagrovic, 2011). In addition, P has a ring structure which opens up during carbonylation making the polypeptide backbone less stiff. We take this into account in our model via the bonded potential (Ghavami et al., 2013). The carbonylated form of P and R are the same (GSA) (Petrov and Zagrovic, 2011). Therefore, we assign the same hydrophobicity to them, that is 0.43, which is the average of the predicted hydrophobicity of 0.44 and 0.42, respectively. The relevant changes in the force field for carbonylation are summarized in Table 2.
 
+**Table 2.**
+ Force field parameters for carbonylated amino acids.Here, $\epsilon_{Ghavami}$ and $\epsilon_{native}$ represent the hydrophobicity of amino acids in their native condition according to Ghavami et al. (2014) and the weighted average scheme, respectively. $\epsilon_{carbonylated}$ denotes the hydrophobicity derived from the weighted average scheme and $q_{nativetocarbonylated}$ stands for the charge modification from the native to the carbonylated state.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>AA</th>
+      <th>εGhavami</th>
+      <th>εnative</th>
+      <th>εcarbonylated</th>
+      <th>qnative to carbonylated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td>0.51</td>
+      <td>0.52</td>
+      <td>0.34</td>
+      <td>0 −&gt;0</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.59</td>
+      <td>1 −&gt;0</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>0.65</td>
+      <td>0.63</td>
+      <td>0.43</td>
+      <td>0 −&gt;0</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>0.00</td>
+      <td>0.07</td>
+      <td>0.43</td>
+      <td>1 −&gt;0</td>
+    </tr>
+  </tbody>
+</table>
+
 To explore the limited effect of carbonylation on the overall distribution of the disordered phase, we analyzed the changes in net hydrophobicity and charge. While the hydrophobicity for T and P is reduced, the hydrophobicity of K and R increases, resulting in only a 5% increase in net hydrophobicity for a maximally carbonylated NPC (see Table 3). Furthermore, carbonylation leads to a negatively charged NPC (−7560e) compared to a weakly positive charged wild-type NPC (+512 e) as all K and R become neutral. To separate the effects of charge and hydrophobicity on the structure, we carried out an additional simulation in which we consider only the change in hydrophobicity caused by carbonylation and leave the charge unaffected (termed ‘Carbonylated_HP’ in Figure 2—figure supplement 1c–e). The results show that the carbonylated_HP NPC is more hydrophobic than the wild type (refer to Table 3), resulting in a denser FG-Nup network with the maximum at a larger r-value. However, when also the charge modification is accounted for in the ‘Carbonylated’ case in Figure 2—figure supplement 1d the Coulombic repulsion leads to a lowering of the density, illustrating that both the change in hydrophobicity and charge affect the distribution of the disordered phase. These changes are small yet noticeable near the scaffold of the NPC, whereas the density at the center (r < 5 nm) is hardly affected.
 
-## Growth of strains for oxidation assays
+**Table 3.**
+ Physical properties of the wild type, carbonylated and carbonylated_HP NPCs.In the carbonylated_HP NPC only the effect of carbonylation on the hydrophobicity is accounted for. For the net hydrophobicity, we added the hydrophobicity values ε of all the residues inside the NPC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Force field</th>
+      <th>+ve Charged AA</th>
+      <th>-ve Charged AA</th>
+      <th>Net charge</th>
+      <th>Net hydrophobicity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild type</td>
+      <td>8072</td>
+      <td>7560</td>
+      <td>+512</td>
+      <td>43373.7</td>
+    </tr>
+    <tr>
+      <td>Carbonylated</td>
+      <td>0</td>
+      <td>7560</td>
+      <td>−7560</td>
+      <td>45549.7</td>
+    </tr>
+    <tr>
+      <td>Carbonylated_HP</td>
+      <td>8072</td>
+      <td>7560</td>
+      <td>+512</td>
+      <td>45549.7</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Strains and plasmids
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Yeast strains</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BY4741 yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0)</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>BY4742 yeast (MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0)</td>
+      <td>Invitrogen</td>
+    </tr>
+    <tr>
+      <td>Apq12Δ; Y01433 (MATa; ura3Δ0; leu2Δ0; his3Δ1; met15Δ0; YIL040w::kanMX4)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>W303 Apq12Δ apq12::hphNTI leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Nup116-GFPboundary MKY227 (W303, ADE2+)</td>
+      <td>Mattheyses et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Nup116-GFPboundary BY4741</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Apq12-GFP yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Apq12-GFP::His3M × 6)</td>
+      <td>ThermoFisher (Huh et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>Nup2-GFP yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup2-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>Nup49-GFP yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup49-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>Nup100-GFP yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup100-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>Nup133-GFP yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup133-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>Heh2-GFP yeast (MATa his3 leu2 met15 ura3Δ0 Heh2-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>Srm1-GFP yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Srm1-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>Kap95-GFP yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Kap95-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>Crm1-GFP yeast (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Crm1-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>Msn2-GFP yeast (MATa his3 leu2 met15 ura3Δ0 Msn2-GFP::His3M × 6)</td>
+      <td>ThermoFisher</td>
+    </tr>
+    <tr>
+      <td>JTY7; Nup49-mCh (MATα Nup49-mCh::CaURA3 can1Δ::STE2pr-LEU2 ura3Δ0 lyp1Δ leu2Δ0 his3Δ1 met15Δ0)</td>
+      <td>Tkach et al., 2012</td>
+    </tr>
+    <tr>
+      <td>yIS010; Nup2-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup2-GFP::His3M × 6 Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS011; Nup100-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup100-GFP::Hi3M × 6 s Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS012; Nup116-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup116-GFPboundary Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS013; Nup133-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup133-GFP::His Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS014; Nup49-GFP Nup133-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Nup49-GFP::His3M × 6 Nup133-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS018; Apq12-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Apq12-GFP::His3M × 6 Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS021; Srm1-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Srm1-GFP::His3M × 6 Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS022; Kap95-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Kap95-GFP::His3M × 6 Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS023; Crm1-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Crm1-GFP::His3M × 6 Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS027; Apq12Δ Nup49-mCh GFP-NLS (MATa; ura3Δ0; leu2Δ0; his3Δ1; met15Δ0; YIL040wΔ::kanMX4; GFP-tcNLS(pGal1)::His Nup49-mCH::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS028; Apq12Δ Nup49-mCh GFP-NES (MATa; ura3Δ0; leu2Δ0; his3Δ1; met15Δ0; YIL040wΔ::kanMX4; GFP-NES(pGal1)::His Nup49-mCH::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS032; Chm7-yeGFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Chm7-yeGFP::His Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yIS035; Heh2-GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 Heh2-GFP::His3M × 6 Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yPP008; GFP-tcNLS Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 GFP-tcNLS(pGal1)::His Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yPP009; GFP Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 GFP(pGal1)::His Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yPP011; GFP-NES Nup49-mCh (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 GFP-NES(pGal1)::His Nup49-mCh::URA)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAA001; Nab2NLS-GFP Nup49-mCh (MATα Nup49-mCh::CaURA3 can1Δ::STE2pr-LEU2 ura3Δ0 lyp1Δ leu2Δ0 his3Δ1:: Nab2NLS(pTpi1)::His met15Δ0)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>yAA002; Pho4NLS-GFP Nup49-mCh (MATα Nup49-mCh::CaURA3 can1Δ::STE2pr-LEU2 ura3Δ0 lyp1Δ leu2Δ0 his3Δ1:: Pho4NLS(pTpi1)::His met15Δ0)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td colspan="2">Oligonucleotides</td>
+    </tr>
+    <tr>
+      <td>Chm7-GFP-S3 fw (GAAAACCACGATAATGAGATAAGAAAAATCATGATGGAAGAACAACCACGTCGTACGCTGCAGGTCGAC)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Chm7-GFP-S2 rv (CATATTTATTTTTTATTTATACATATATATTTATTTATTAGTCACTCAGTTCGATCGATGAATTCGAGCTCG)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td colspan="2">Plasmids</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pYM44 yeGFP-tag</td>
+      <td>Janke et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pYM28 EGFP-tag</td>
+      <td>Janke et al., 2004</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pNZ-h2NLS-L-GFP (ID-GFP)</td>
+      <td>Meinema et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pBT016 pYX242-NAB2NLS-GFP-PRA</td>
+      <td>Timney et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pBT018 pYX242-PHO4NLS-GFP-PRA</td>
+      <td>Timney et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pPP014 mCh-Ura-Cassette</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pPP042 pRS303-GFP-tcNLS</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pPP043 pRS303-GFP</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pPP046 pRS303-GFP-NES</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pAA8 pRS303-Nab2NLS-GFP</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Plasmid: pAA9 pRS303-Pho4NLS-GFP</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth of strains for oxidation assays
 
 100 ml of BY4741 expressing Nsp1-GFP, was grown to an OD600 of 0.8 after which the culture was split in two portions of 50 ml; one portion was stressed by ROS by the addition of menadione (1 ml of 8 mg/ml in ethanol) for 1.5 hr, while to the other only 1 ml of ethanol was added. The cells were then harvested, washed with water and stored at - 80°C until use.
 
-## Purification of ID-GFP
+### Purification of ID-GFP
 
 L.lactis NZ9000 carrying a plasmid from which the yeast Heh2 ID-linker can be expressed as a GFP fusion (ID-GFP)(Meinema et al., 2011) was grown in 1 liter of GM17 medium supplemented with Chloramphenicol (5 µg/ml). When an OD600 of 0.5 was reached protein expression was induced by addition of 1 ml of the supernatant of the nisin producing L. lactis NZ9700. After 2 hr, the cells were harvested by centrifugation, washed once with 50 mM KPi pH7.0 and the pellet was resuspended in 5 ml of the same buffer. Drops of the suspension were frozen in liquid nitrogen and the resulting frozen droplets were pulverized in a cryomill, cooled with liquid nitrogen. 1.5 grams of the resulting powder was resuspended in 10 ml 100 mM NaPi pH7 150 mM NaCl, 10% glycerol, 0.1 mM MgCl2 5 µg/ml DnaseI, 18 mg/ml PMSF and 5 mM DTT and homogenized with a polytron (2 times 30 s at max speed). The suspension was cleared from non-lyzed cells by centrifugation at 20,000 rcf at 4 degrees for 20 min. 1 ml of Ni-sepharose slurry was pre-equilibrated in a polyprep column (BioRad) with 10 ml of ddH2O and subsequently 10 ml of 100 mM NaPi pH7 150 mM NaCl, 10% glycerol, 5 mM DTT. The cleared lysate was mixed with the equilibrated Ni-sepharose and incubated at four degrees under mild agitation in the polyprep column. The column was subsequently drained, washed with 10 ml 10 ml 100 mM NaPi pH7 300 mM NaCl, 10% glycerol, 15 mM imidazole, 5 mM DTT and 10 ml 10 ml 100 mM NaPi pH7 300 mM NaCl, 10% glycerol, 50 mM imidazole, 5 mM DTT. The bound ID-GFP was finally eluted from the column with 100 mM NaPi pH7 300 mM NaCl, 10% glycerol, 300 mM imidazole. The buffer was exchanged to PBS with a Zebaspin desalting column (Thermo Fisher) and the protein concentration was determined using the BCA kit (Pierce). The protein was stored overnight at 4°C.
 
-## Immunoprecipitation of Nsp1-GFP
+### Immunoprecipitation of Nsp1-GFP
 
 Cell lysates were prepared from the cells described above in 0.5 ml lysis buffer (50 mM Kpi pH7, 250 mM NaCl, 1% Triton X100, 0.5% deoxycholate, 1 mM MgCl2, 5 mM DTT and protease inhibitors) with 0.5 mm beads in a Fastprep machine. After bead-beating, the cells were incubated on ice for 15 min, and subsequently centrifuged at 20,000 rcf for 15 min to clear the lysates of beads and unbroken cells. The cell lysates were diluted with lysis buffer to 1 ml and 10 µl of GFP-nanotrap beads (Chromotek) were added. After 1.5 hr of incubation, the beads were washed six times with wash buffer (50 mM Kpi pH7, 250 mM NaCl, 0.1% SDS, 0.05% Triton X100, 0.025% Deoxycholate, protease inhibitors). Bound proteins were subsequently eluted from the beads by adding 20 µl of 10% SDS to the beads and 10 min of incubation at 95°C. As a negative control a cell lysate from BY4741, not expressing any GFP-tagged nucleoporin, was treated as above. As positive controls BY4741 was spiked with 2 µg of purified ID-GFP, or 2 µg of ID-GFP which was first in vitro oxidized with 1 mM CuSO4 and 4 mM H2O2 for 15 min at RT.
 
-## Western blotting and ELISA
+### Western blotting and ELISA
 
 Of the eluate, 4 µl was separated on a 10% SDS-PAGE gel, transferred to PVDF membrane and GFP-tagged proteins were detected with anti-GFP antibodies. Of the eluate, 10 µl from the immunoprecipitations was used for the oxi-ELISA. First, the SDS was removed from the sample using the HIPPR detergent removal kit (Pierce), by diluting the sample to 100 µl with PBS, and following the protocol as provided with the kit. The detergent-free protein was subsequently diluted to 1 ml with PBS and two-fold serial dilutions were prepared in PBS. 96-well Nunc maxisorp plates (Thermo Fischer) were coated with 100 µl of the serial dilutions in duplo, and incubated O/N at 4°C. Protein amounts were determined by detection of GFP-tagged bound protein with anti-GFP antibodies and a standard ELISA protocol. In a separate ELISA plate, the carbonylation state of the proteins was assessed with an Oxi-ELISA using the Oxyblott Protein oxidation detection kit (Millipore), which was essentially performed as described in Alamdari et al. (2005).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical parameters including the definitions and exact values of N, distributions and deviations are reported in the Figures and corresponding Figure legends. Significance of changes were determined with a two tailed Student’s t-test and with non-overlapping notches indicating 95% confidence that two samples are different. Unless mentioned otherwise, the experimental data coming from at least two independent cultures and microfluidic chip experiments were analysed together. In specific cases (Figure 1—figure supplement 2g and Figure 2—figure supplement 2) the datasets deviated due to differences in filter/camera settings and are presented separately.

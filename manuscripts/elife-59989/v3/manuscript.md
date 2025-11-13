@@ -35,9 +35,17 @@ Here we set out to determine which subcellular compartment serves as the pacemak
 
 ## Results
 
-## Cell cycles in thin layers of extract
+### Cell cycles in thin layers of extract
 
 To characterize mitosis in egg cytoplasm, we placed small volumes (3 µl) of egg extract in wells of a 96-well plate under mineral oil (Figure 1A). Cell-cycle dynamics in the resulting thin (~200 µm) layers of extract were monitored by time-lapse video microscopy. With this approach, up to 16 samples could be documented in the same imaging session while maintaining an acquisition frequency that was adequate to trace mitotic dynamics. Initially we included small concentrations (<10 sperm/mm2) of demembranated sperm in the extracts. The sperm provided centrosomes, which promote microtubule organization, and chromatin, which recruits membranes from the extract and forms functional nuclei (Lemaitre et al., 1998; Forbes et al., 1983).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59989/elife-59989-fig1-v3.jpg)
+
+**Figure 1.:** (A) Experimental scheme. (B–E) Analysis of a typical cycling extract. (B) Comparison of NLS-mCherry (green) and SiR-tubulin (red) fluorescence through two cycles. Fluorescence was measured in a small region centered on where mitosis 2 first initiated. (C) Time course of the cycling extract. Snapshots of the first 10 interphases are shown together with montages of mitosis 1 and mitosis 2. Nuclei (NLS-mCherry) are shown in green and microtubules (SiR-tubulin) in red. The advancing fronts of mitosis are depicted in blue and the advancing fronts of interphase in cyan. (D) The number of nuclei (green) and cell-like compartments (red) as a function of cycle number. For cycle 1, we have included only the six large cell-like compartments. (E) A kymograph (right) from a cross section of an extract over 14 mitotic cycles. The dashed white line shows linear spread of microtubule depolymerization at the onset of mitosis, with a speed of 65 µm/min, and aster growth during the transition back to interphase, with a speed of 40 µm/min. The snapshot on the left depicts the region where the kymograph was calculated (yellow vertical line). Note that the data for panels B–E all came from the same experiment. (F) Radial kymograph from 33 mitoses from different experiments. The average speed of the front of microtubule depolymerization at mitotic entry was 54 ± 13 μm/min, and speed of the front of microtubule polymerization during mitotic exit was 32 ± 6 μm/min (mean ± S.D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59989/elife-59989-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The fluorescence images are identical to the interphase snapshots shown in Figure 1C and are included for comparison. The dark regions in the heat maps are the areas where mitosis occurred earliest.
 
 We used two probes to monitor cell-cycle progression: mCherry fused to a nuclear localization sequence (NLS-mCherry) and SiR-tubulin. During interphase, the NLS-mCherry accumulates in the reconstituted nuclei, and it disperses when the nuclear envelope breaks down at the onset of mitosis. SiR-tubulin is a docetaxel derivative that increases in fluorescence when bound to microtubules (Lukinavičius et al., 2014), allowing visualization of the oscillation between interphase (high microtubules) and mitotic (low microtubules) arrays. Oscillations in microtubule fluorescence were temporally coupled with the cycles of NLS-mCherry accumulation and dispersion, as expected (Figure 1B, Figure 1—video 1).
 
@@ -45,7 +53,7 @@ After warming to room temperature, the extract began to self-organize into cell-
 
 Once nuclei could be seen, they and their associated cell-like compartments generally divided during each mitosis and therefore exponentially increased in number (Figure 1D). The fold-increase in the number of nuclei per cycle was typically less than a full doubling—1.71 ± 0.01 fold, mean ± S.D., for the experiment shown here. Notably, only sperm-associated compartments, with their centrosomes, divided.
 
-## Spatial dynamics of mitotic initiation
+### Spatial dynamics of mitotic initiation
 
 The first mitosis in the extract shown in Figure 1 and Figure 1—video 1 occurred in a nearly concerted manner (Figure 1C, top row), with mitosis spreading quickly and irregularly through the whole well. Similar results were reported for extracts imaged in Teflon tubes (Chang and Ferrell, 2013). This spread most likely represents a phase wave—a type of wave that arises from differences (in this case small differences) in intrinsic timing rather than spatial coupling, like the waves of flashing lights on a movie marquee (Tyson and Keener, 1988; Winfree, 1974). Mitotic waves in the Drosophila embryo have also been attributed to phase waves of Cdk1 activity, and theory predicts a switch from phase waves to trigger waves as the cell cycle slows down (Deneke et al., 2016; Vergassola et al., 2018).
 
@@ -57,13 +65,21 @@ As the nuclei and their associated centrosomes divided and separated, so did the
 
 The qualitative behavior present here was commonly seen in other replicates, but not in all. Replicates that did not follow this general pattern typically either ceased cycling after a few cycles, possibly due to apoptosis, failed to form nuclei until later cycles, or showed trigger waves only during later cycles. Data from all experiments used for this study have been deposited in the Stanford Digital Repository and are available for examination.
 
-## Trigger wave sources
+### Trigger wave sources
 
 In the experiment shown in Figure 1, Figure 1—video 1, and Figure 1—video 2, mitosis initiated primarily from where nuclei and their associated centrosomes were located. However, this was not always the case. For example, sometimes mitosis began at a location at the edge of the well, with no nearby nucleus present (Figure 2—figure supplement 1). This phenomenon has been noted previously in studies of mitotic trigger waves and apoptotic trigger waves in Xenopus extracts (Cheng and Ferrell, 2018; Forbes et al., 1983), and it is seen in mathematical models of trigger waves as well (Nolet et al., 2020). Thus, there are at least two types of sources: nuclear sources and edge sources. Both nuclear and edge sources generally produced well-defined, circular or semicircular, respectively, trigger wave fronts.
 
 Mitosis also sometimes initiated from locations that were neither close to a nucleus nor to the edge of the well (denoted ‘other’ in Figure 2B). These ‘other’ sources were often seen in the first mitosis (before the extract was fully organized) and late in subsequent mitoses, and they usually did not generate well-defined circular waves. Examples of all three types of mitotic sources are shown in Figure 2—video 1.
 
-## Automated identification and analysis of mitotic sources
+![Figure 2.](https://cdn.elifesciences.org/articles/59989/elife-59989-fig2-v3.jpg)
+
+**Figure 2.:** (A) Typical sperm-mediated mitotic trigger waves. Nuclei (NLS-mCherry) are shown in green and microtubules (SiR-tubulin) in red. The advancing fronts of mitosis are depicted in blue and the advancing fronts of interphase in cyan. (B) The trigger wave sources for the same cell cycle shown in (A), identified and characterized automatically. The time at which the various locations entered mitosis is depicted by a color scale, ranging from 46 min (dark) to 64 min (light). The latest 15% of the cytoplasm to enter mitosis is color-coded green. The trigger wave sources are plotted as filled circles of various colors: orange for sources associated with nuclei/centrosomes, red for sources at the edge of the well, and blue for others. (C) Montage showing changes in the pattern of mitotic sources from cycle 1 to 9. The coloring denotes the time at which each pixel entered mitosis relative to the earliest pixels in that cycle. (D) The distance of the trigger wave sources to the nearest nucleus (orange), compared to a mock distribution (gray). Data are from 107 cell cycles from 25 experiments and include 3140 sources. The inset shows the probabilities (p-values) of obtaining the observed number of mitotic sources (or more than the observed number) that are close (<100 µm) to nuclei for the 107 cell cycles analyzed individually. p-values were calculated by bootstrapping with 105 randomized source positions for each individual cycle. (E) The fraction of the mitotic sources classified as associated with nuclei/centrosomes (orange), edges (red), or others (blue) as a function of cycle number. The data points are mean fractions from 13 experiments where the extracts cycled at least 10 times, and the shaded regions show the ± SEM. (F) The average fraction of ‘best’ sources (the earliest 10% of the sources) that were associated with nuclei/centrosomes (orange), edges (red), or others (blue) as a function of cycle number for the same experiments shown in panel E. (G) Time courses of microtubule fluorescence intensity, normalized to the maximum and minimum fluorescence in that cycle and time-aligned to make mitotic initiation occur at t = 0. The initiation of mitosis was taken as the time when the microtubule fluorescence first showed a significant decline. (H) Acceleration of the cell cycle, as measured by Δcycle time, at the different cell-cycle sources relative to the slowest 15% of the pixels for the experiment shown in (G). The Δcycle times were calculated as the time between the onset of the mitosis after nuclei appeared and the onset of the preceding mitosis, relative to the slowest 15% of the well. (I) Histograms of Δcycle times relative to the slowest 15% of the pixels for mitotic sources from 22 experiments. The total numbers of sources are 195 nucleus/centrosome sources, 182 edge sources, and 367 others.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59989/elife-59989-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** In this cycle, the first place at which mitosis occurred was a point on the edge of the well with no obvious nucleus nearby. Ten minutes later, mitosis began initiating at several nuclei at once.
+
+### Automated identification and analysis of mitotic sources
 
 To get a comprehensive view of where and when mitosis initiated, we used an automated approach to identify, map, and characterize mitotic sources from time-lapse video data from 25 experiments. Mitotic waves were taken to be fronts of microtubule depolymerization that expanded from one frame to the next. By this definition, for the experiment shown in Figure 2A, there were 11 mitotic waves by the 38 min time point. Note that initially (at 35 min) there had been numerous microtubule-depleted areas that superficially resembled mitotic regions but did not expand with time, and so these were not classified as mitotic. The centroid of a mitotic region in its first frame was generally taken to be the mitotic source. There were a few instances where the region was dumbbell-shaped; in these cases we considered mitosis to have originated nearly simultaneously from two distinct sources.
 
@@ -71,13 +87,13 @@ We then constructed heat maps to show when mitosis began at different locations 
 
 We identified mitotic sources for each cycle and sorted them into three classes—nuclear sources (Figure 2B, orange), edge sources, (Figure 2B, red), and other sources (Figure 2B, blue). We also identified the last 15% of the pixels to enter mitosis, which often were regions that appeared not to have been entrained by a trigger wave (Figure 2B, green). We used these late pixels as a benchmark and expressed the time at which mitotic entry was advanced at the various trigger wave sources relative to these late regions.
 
-## Mitotic sources are often associated with nuclei and/or centrosomes
+### Mitotic sources are often associated with nuclei and/or centrosomes
 
 Figure 2—video 2 and Figure 2C show how the sources evolved through the first 9 cycles of the experiment used for Figure 2A and B. In the first cycle, most of the extract entered mitosis at about the same time. Numerous mitotic sources were identified, mostly in the ‘other’ (blue) category, and the sources tended to have entered mitosis only slightly earlier than the surrounding cytoplasm. By the third cycle, nuclei had appeared, and many of them acted as sources for trigger waves. These nuclear sources did not appear to generally be positioned where the ‘other’ sources had been in the initial cycle; they were new sources rather than stronger versions of the initial sources. By the ninth cycle, the strongest nuclear trigger wave sources entrained large areas, whereas most of ‘other’ sources had disappeared.
 
 We repeated the automated procedure for 107 cycles from 25 different experiments. Overall, 717/3140 (23%) of the sources were close (<100 µm) to nuclei and their accompanying centrosomes. This proportion was ~5 times higher than would be expected by random chance (Figure 2D). To further test the robustness of this association, we calculated p-values by bootstrapping for each of the cycles individually. In 69/107 of the cycles, the number of trigger wave sources found to be close (<100 µm) to a nucleus was greater than would be expected by chance (p<0.05) (inset, Figure 2D), supporting the significance of the association between trigger wave sources and nuclei/centrosomes. As the cell cycles proceeded, the proportion of trigger waves that emanated from nuclei/centrosomes rose (as did the number of nuclei), and the proportion not associated with any obvious structure fell (Figure 2E). The ‘best’ trigger wave sources (those that were in the earliest 10% of sources to appear in a cycle, which were also the sources that controlled the largest areas of cytoplasm) were generally associated with nuclei (Figure 2F).
 
-## The cell cycle is accelerated by ~20% in the vicinity of nuclear sources
+### The cell cycle is accelerated by ~20% in the vicinity of nuclear sources
 
 By definition, mitotic sources are regions where the cell cycle is faster than it is in the surrounding cytoplasm. One way to estimate how much faster the cycles are is to look at early cycles where trigger waves are present in some of the well, but have not taken over the whole well, and compare the timing of the cell cycle at the trigger wave sources to that at the slower, unentrained regions. For example, in the kymograph shown in Figure 1E, at the onset of mitosis 2 there are two trigger wave sources, one near the top of the kymograph and one approximately 800 µm below the middle of the kymograph. The time from the start of M1 to the start of M2 at the two trigger wave sources was 35 and 39 min, respectively, whereas the slowest regions in the middle and at the bottom of the kymograph had cycles of 46 and 48 min, indicating that the cell cycle is on the order of ~10 min or ~20% faster at the nuclear trigger wave sources than in these slowest region.
 
@@ -87,15 +103,27 @@ The same trend was seen in the aggregated data from 22 experiments (Figure 2I), 
 
 In summary, trigger waves that arise in the vicinity of nuclei and their associated centrosomes accelerate the cell cycle by approximately 10 min or 20%.
 
-## Edge-associated sources are accelerated to a lesser extent
+### Edge-associated sources are accelerated to a lesser extent
 
 We next compared the behavior of these sperm-containing extracts to extracts with no added sperm chromatin, to determine where, in the absence of nuclei and centrosomes, mitosis was likely to originate. A typical experiment is shown in Figure 3—video 1 and in montage form in Figure 3A. No cell-like compartments were formed during interphase 1, and the first mitosis occurred at all locations nearly simultaneously, although a few relatively shallow edge-associated sources and other sources were identified (Figure 3A). During the second interphase, cell-like compartments appeared, and two relatively strong edge sources emerged (at positions 12:00 and 1:00 on the heat map). These two edge sources grew to dominate the mitotic dynamics over the next several cycles; the self-organizing character of trigger waves (Gelens et al., 2014) is particularly apparent in these experiments where new sources are not being generated from nuclear division. A kymograph bisecting the stronger of the two sources showed a wave of microtubule depolymerization spreading at a constant speed of 60 µm/min (Figure 3B). For 28 different experiments the wave speed was 67 ± 17 μm/min (mean ± S.D.), similar to the speeds seen in the presence of sperm.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/59989/elife-59989-fig3-v3.jpg)
+
+**Figure 3.:** (A) Montage from a typical experiment showing the microtubules (top) and the heat map representation of the mitotic dynamics (bottom) for the first five cycles. Edge-associated sources are shown in red; other sources—that is, those not associated with edges or nuclei—are shown in blue (other). The greenish circle in the upper right-hand quadrant of the first three frames of the microtubule montage is a bubble, not a nucleus. The coloring of the heat map representation denotes the time at which each pixel entered mitosis relative to the earliest pixels in that cycle. See also Figure 3—video 1. (B) Kymograph based on Figure 3—video 1. The kymograph was calculated for a slice beginning at the edge source at 1:00 in (A) and transecting the well. The trigger wave speed at the entrance to M3 was 60 µm/min (dashed white line). (C) Mean fraction of the mitotic sources originating from edges, nuclei, and other locations as a function of cycle number. Data are from six experiments. (D) Acceleration of the cell cycle at edge sources and other sources relative to the slowest 15% of the well. Data are from 24 experiments and include 176 edge sources and 393 other sources.
+
 From six independent experiments with at least 10 cycles, most of the sources were either associated with the edge of the well or with no obvious structure (Figure 3C). In some experiments, nuclei began to appear and replicate in the later cycles even though no sperm had been added (Figure 3C), presumably as a result of replication of small amounts of egg DNA present in the extracts. Most of the sources appeared to accelerate the cell cycle by very little; for the edge sources the average Δcycle time was −3.1 ± 5.3 min, with 10/569 (1.8%) of the edge sources, including the two dominating sources in Figure 3A, having Δcycle times of 10 min or more (Figure 3D). Overall the ‘other’ sources had an average Δcycle time of −2.4 ± 2.2 min, with only 1/569 (0.2%) having Δcycle times of 10 min or more (Figure 3D). Thus, extracts containing no nuclei or centrosomes cycled and generated mitotic trigger waves, but their mitotic sources were generally weaker than nucleus/centrosome-associated sources.
 
-## Centrosomes promote cytoplasmic organization and division, but do not measurably accelerate mitosis
+### Centrosomes promote cytoplasmic organization and division, but do not measurably accelerate mitosis
 
 Sperm provide the extract with two plausible mitotic sources, centrosomes and nuclei. To determine whether centrosomes are sufficient to pace the cytoplasm, we added purified HeLa cell centrosomes to the extracts at concentrations of up to eight centrosomes/mm2 and assessed their effect on mitotic dynamics. The added centrosomes produced foci of microtubules during interphase that promoted the rapid organization of cell-like compartments (Figure 4A,B). The extracts then cycled (shown in montage in Figure 4C and in Figure 4—video 1), with the centrosomes increasing in number during each cell cycle (Figure 4C) and the cell-like compartments dividing as they did in the presence of sperm (Figure 4B). Boiled centrosomes did not promote the organization of cell-like compartments, did not replicate, and did not promote the division of the cell-like compartments (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59989/elife-59989-fig4-v3.jpg)
+
+**Figure 4.:** (A) Identification of centrosomes in an extract supplemented with purified HeLa cell centrosomes. (B) Montage showing that centrosomes duplicate and promote the division of cell-like compartments. SiR-Tubulin fluorescence is shown in red. (C) Montage showing SiR-tubulin fluorescence (red), NLS-mCherry fluorescence (green), and centrosome positions (cyan) (top), and heat maps of the mitotic sources (bottom), as a function of cycle number from a typical experiment. The coloring of the heat map denotes the time at which each pixel entered mitosis relative to the earliest pixels in that cycle. See also Figure 4—video 1. (D) The number of centrosomes and adventitiously-produced nuclei per cell cycle for the experiment shown in (C). (E) Suppression of nucleus formation by aphidicolin. (F) The fraction of the mitotic sources associated with nuclei/centrosomes (orange), edges (red), centrosomes (cyan) or others (blue) as a function of cycle number. The data points are mean fractions from 18 experiments where the extracts cycled at least 10 times, and the shaded regions show the ± SEM. (G, H) The distribution of distances from mitotic sources to the nearest centrosome (G, cyan), from 19 cycles, 11 experiments, and 494 sources, and from mitotic sources to the nearest nucleus (H, orange), from 149 cycles, 21 experiments, and 3993 sources. Only those cycles with fewer than 100 centrosomes or nuclei were included in G or H, respectively. The expected random distributions (mock distribution) of distances are shown in gray. The insets show probabilities (p-values) of obtaining the observed number of mitotic sources (or more than the observed number) that are close (<100 µm) to centrosomes (G) or nuclei for the individual analyzed cycles. p-values were calculated by bootstrapping with 105 randomized source positions for each individual cycle. (I) Acceleration of the cell cycle (measured as Δcycle times) relative to the slowest 15% of the cytoplasm. These Δcycle times were calculated for the first cell cycle after the appearance of centrosomes. Data are from 17 experiments and include 74 centrosome-, five nucleus-, 103 edge-associated sources and 167 other sources. (J) Acceleration of the cell cycle (measured as Δcycle times) relative to the slowest 15% of the cytoplasm, calculated for the first cell cycle after the appearance of nuclei (for those experiments where nuclei appeared). Data are from 19 experiments and include 369 centrosome-, 28 nucleus-, 132 edge-associated and 123 other sources. (K) Montage showing SiR-tubulin (red), NLS-mCherry (green), and centrosomes (cyan) for a centrosome-supplemented extract treated with 15 µM aphidicolin. (L) The fraction of the mitotic sources associated with centrosomes (cyan), edges (red) or others (blue) as a function of cycle number for aphidicolin-treated (15 to 60 µM), centrosome-supplemented extracts. From 11 experiments where the extracts cycled at least 10 times. (M) The Δcycle times for the three classes of mitotic sources. Data are from 14 experiments and include 82 centrosome-, 121 edge-associated sources and 169 other sources.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59989/elife-59989-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Note there appears to be one functional centrosome in interphase 1 in (A), which subsequently replicates and divides, versus numerous functional centrosomes in (B).
 
 Nuclei sometimes eventually appeared in centrosome-supplemented extracts, even though no sperm chromatin had been added, and once they appeared, they replicated just as the centrosomes did (Figure 4C,D). The appearance of nuclei was inhibited by the DNA polymerase inhibitor aphidicolin in a dose-dependent fashion (Figure 4E), consistent with the hypothesis that they arose from the replication of small quantities of Xenopus egg DNA present in the egg extracts, or of HeLa cell DNA present in the purified centrosomes. The proportion of sources associated with nuclei increased with the cycle number (Figure 4F).
 
@@ -105,9 +133,13 @@ Adding aphidicolin to centrosome-supplemented extracts did not alter the organiz
 
 Thus, although HeLa cell centrosomes promoted microtubule organization and allowed the cell-like compartments to divide, they acted as relatively weak mitotic sources; they did not accelerate the cell cycle to a greater extent than edge-associated sources or sources not associated with particular structures.
 
-## Phage DNA forms nuclei that accelerate mitosis in the absence or presence of centrosomes, alike
+### Phage DNA forms nuclei that accelerate mitosis in the absence or presence of centrosomes, alike
 
 To determine whether nuclei could substantially accelerate mitotic entry in the absence of centrosomes, we examined mitotic initiation in centrosome-less extracts that were supplemented with λ-bacteriophage DNA (Figure 5A and Figure 5—video 1). The phage DNA (nominally 5 µg/ml) formed nuclei, as previously reported (Forbes et al., 1983), and the nuclei replicated, but generally the cell-like compartments did not divide. This indicates that centrosomes are required for compartment division and that the production of nuclei from the phage DNA did not result in the de novo production of centrosomes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59989/elife-59989-fig5-v3.jpg)
+
+**Figure 5.:** (A) Montage from a typical experiment showing the microtubules (top) and the heat map representation of the microtubule sources (bottom) for cycles 2, 4, 6, 8, and 10. Nucleus-associated sources are shown in orange; edge-associated sources are shown in red; and other sources—that is, those not associated with edges or nuclei—are shown in blue (other). The top panels show the extracts in interphase, with SiR-tubulin fluorescence in red and NLS-mCherry in green. The bottom panels are the heat maps of the mitotic sources. The coloring of the heat map denotes the time at which each pixel entered mitosis relative to the earliest pixels in that cycle. (B) Fraction of the mitotic sources associated with nuclei, edges, or no obvious structures as a function of cycle number. The data points are mean fractions from eight experiments where the extracts cycled at least 10 times, and the shaded regions show the means ± SEM. (C) The distance of the trigger wave sources to the nearest nucleus (orange), compared to a mock distribution (gray). Data are from 44 cell cycles from 11 experiments and include 419 sources. The inset shows probabilities (p-values) of obtaining the observed number of mitotic sources (or more than the observed number) that are close (<100 µm) to nuclei for the 44 cell cycles individually, calculated by bootstrapping with 105 randomized source positions for each individual cycle. (D) The duration of the cell cycle at nucleus-associated sources, edge sources, and other sources relative to the slowest 15% of the well. Data are from 15 experiments and include 205 nucleus-associated sources, 102 edge sources and 201 other sources. (E) Montage from an experiment with added phage DNA plus centrosomes. (F) The duration of the cell cycle at nucleus-associated sources, edge sources, and other sources relative to the slowest 15% of the well, for extracts with added phage DNA plus centrosomes. Data are from 12 experiments and include 123 nucleus-associated sources, 79 edge sources and 209 other sources.
 
 Many, but not all, of the nuclei became mitotic sources, and the initially strong sources became more dominant (deeper wells on the heat map) with time (Figure 5A–B). Analysis of 44 cycles from 11 experiments showed that there were far more sources in proximity to nuclei than what would be expected by chance (Figure 5C). Out of the 44 cycles, 29 had more sources in close proximity (<100 µm) to nuclei than would be expected by chance (p<0.05).
 
@@ -129,18 +161,91 @@ While this manuscript was in preparation, Nolet and colleagues published a paper
 
 ## Materials and methods
 
-## Extract preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Xenopus laevis</td>
+      <td>NASCO</td>
+      <td>LM00535MX</td>
+      <td>female</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>HeLa centrin-GFP</td>
+      <td>Tsou and Stearns, 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-NLS-mCherry</td>
+      <td>Chang and Ferrell, 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SiR-tubulin</td>
+      <td>Spirochrome</td>
+      <td>CY-SC002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>aphidicolin</td>
+      <td>Calbiochem</td>
+      <td>CAS 38966-21-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>λ-DNA</td>
+      <td>New England Biolabs</td>
+      <td>N3011S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>custom-made Matlab scripts</td>
+      <td>available at https://purl.stanford.edu/fm814ch0699</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>demembranated sperm</td>
+      <td>Murray, 1991</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Extract preparation
 
 Frog handling and egg extract preparation is as described in Chang and Ferrell, 2018, except that the extract was typically clarified 3 times for 8 min at 16,000 g to improve optical transparency. To prevent the over-dilution of the extract, the addition of probes, cell components, or drugs, was typically done at a ratio of 1:100. SiR-Tubulin (Spirochrome, dissolved in DMSO) was used at 0.3 μM (0.3% final DMSO concentration). Aphidicolin (Calbiochem; dissolved in DMSO) was applied as indicated in text (0.16% final concentration of DMSO for every 10 μM of aphidicolin). GST-NLS-mCherry was purified and used as described in the Methods section of reference (Cheng and Ferrell, 2018). λ-DNA (New England Biolabs) was used at 0.5 μg per 100 μl of extract. Centrosomes were purified following Mitchison and Kirschner, 1984, and were typically applied at 30–1000 centrosomes per 100 μl of extract. Demembranated sperm was prepared as described (Murray, 1991), and was typically used at 30–1000 sperm per 100 μl of extract.
 
-## Imaging
+### Imaging
 
 For imaging, 3 μl of extract was spread on the bottom of a well of a Corning 96-well polystyrene plate (#3368) and covered with 200 μl of heavy mineral oil (Sigma). The extract was imaged in time-lapse using a Leica epifluorescence microscope and a 5x objective. Acquisition frequency varied between 30 s to 2 min per frame.
 
-## Image analysis
+### Image analysis
 
 Images were automatically stitched, segmented, and analyzed using a custom-made pipeline scripted in Matlab. The code, as well as videos of all experiments analyzed and the original microscopy image stacks, are available from the Stanford Digital Repository (https://purl.stanford.edu/fm814ch0699). Mitotic sources and nuclei were located automatically and were checked manually. Centrosome positions were determined manually. Because the initiation time for the interphase of the first cycle was unknown, all of the analysis was performed starting from the first mitosis.
 
-## Bootstrapping calculation
+### Bootstrapping calculation
 
 Bootstrapping was performed by randomizing the locations of mitotic initiation for a cycle, determining how many of these randomized sources were within 100 µm of a nucleus or a centrosome, and then repeating the procedure 100,000 times. The p-value for that cycle was calculated as the number of iterations in which there were as many or more sources in proximity by random, divided by 100,000.

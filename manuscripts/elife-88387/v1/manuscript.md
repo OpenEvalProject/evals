@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0445phv87 Laboratory of Molecular and Cellular Biology, Graduate School of Science and Engineering for Education, University of Toyama Toyama Japan
-2. https://ror.org/00a3bx267 Department of Virology, Toyama Institute of Health Toyama Japan
-3. https://ror.org/0445phv87 Department of Microbiology, Toyama University Graduate School of Medicine and Pharmaceutical Sciences Toyama Japan
-4. https://ror.org/0445phv87 Center for Advanced Antibody Drug Development, University of Toyama Toyama Japan
-5. https://ror.org/0445phv87 Laboratory of Molecular and Cellular Biology, Graduate School of Innovative Life Science, University of Toyama Toyama Japan
+1. Laboratory of Molecular and Cellular Biology, Graduate School of Science and Engineering for Education, University of Toyama Toyama Japan ([ROR:0445phv87](https://ror.org/0445phv87))
+2. Department of Virology, Toyama Institute of Health Toyama Japan ([ROR:00a3bx267](https://ror.org/00a3bx267))
+3. Department of Microbiology, Toyama University Graduate School of Medicine and Pharmaceutical Sciences Toyama Japan ([ROR:0445phv87](https://ror.org/0445phv87))
+4. Center for Advanced Antibody Drug Development, University of Toyama Toyama Japan ([ROR:0445phv87](https://ror.org/0445phv87))
+5. Laboratory of Molecular and Cellular Biology, Graduate School of Innovative Life Science, University of Toyama Toyama Japan ([ROR:0445phv87](https://ror.org/0445phv87))
 
 † Corresponding author
 
@@ -39,19 +39,35 @@ Our group has established robust protocols for isolating single antigen-specific
 
 ## Results
 
-## Development of anti-spike monoclonal M-IgAs from plasma cells localized in nasal mucosa
+### Development of anti-spike monoclonal M-IgAs from plasma cells localized in nasal mucosa
 
 To evaluate the immune response after the intranasal administration of the SARS-CoV-2 spike protein of the Wuhan-Hu-1/D614G strain (SpikeWuhan), nasal lavage fluids and serum were collected from the mice 1 week after the last immunization. The intranasal administration of SpikeWuhan induced high levels of antigen-specific IgA but not IgG in nasal lavage fluids compared with those of the phosphate-buffered saline (PBS) control (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88387/elife-88387-fig1-v1.jpg)
+
+**Figure 1.:** (A) Mice were inoculated intranasally with 10 μg of SpikeWuhan and 1 μg of cholera toxin as an adjuvant in 10 μl of phosphate-buffered saline (PBS), delivering the fluid dropwise into the nostril a total of three times at 3-week intervals. Nasal lavage fluid and serum were collected from the mice 1 week after the last immunization, and antibody responses were evaluated using enzyme-linked immunosorbent assay (ELISA) (n=5) (∗∗∗p<0.001) . The antibody titers are expressed as optical density (OD450) value per total protein in nasal lavage fluids or serum. (B) Fluorescence-activated cell sorting (FACS) gating strategy for the isolation of S1-specific plasma cells from mice. Plots represent the sequential gating strategy. Lymphocytes (R1 gate) were stained with anti-CD138 and ER-Tracker to enrich plasma cells (CD138+ ER-TrackerHigh fraction, R2 gate). IgA+ plasma cells gated in R3 were selected from the R2-gated plasma cell fraction by staining with anti-IgA antibody. The antigen-specific plasma cells gated in R4 were further selected from the R3-gated Ig A+ plasma cell fraction by staining with S1 domain of Wuhan severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) spike protein (S1). The numbers indicate the percentages of cells in the gated area. A total of 100,000 events were recorded. Representative data from the No. 1 mouse are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88387/elife-88387-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The plots illustrate the sequential gating strategy used to identify SRS-S1-specific IgA-positive plasma cells in a control mouse’s nasal mucosa and spleen. (B) The plots depict the sequential gating strategy for isolating SRS-S1-specific IgA-positive plasma cells in the immunized mouse’s bone marrow and Peyer’s patches.
 
 Elevated levels of antigen-specific IgA and IgG responses were detected in serum from the immunized mice, consistent with a prior study demonstrating that intranasal vaccinations induce both nasal and serum IgA levels (Sterlin et al., 2021; Maltseva et al., 2022). We selected three immunized mice with high nasal IgA titers and isolated antigen-specific plasma cells from the nasal mucosa, spleen, lung, and blood. Cells isolated from these tissues were stained with fluorescently labeled anti-CD138, ER-Tracker Blue-White DPX (ER-Tracker), anti-IgA, and S1 domain of SpikeWuhan (S1), and then antigen-specific plasma cells defined as anti-CD138+, ER-Trackerhigh, anti-IgA+, and S1+ were isolated by fluorescence-activated cell sorting (FACS). ER-Tracker is a fluorescent dye that is highly selective for the endoplasmic reticulum of living cells. Because plasma cells have an expanded endoplasmic reticulum for properly folding and secreting large quantities of antibodies, using ER-Tracker along with anti-CD138 facilitates the isolation of plasma cells from lymphocytes without the need for additional antibodies (Kurosawa et al., 2012). Consistent with the pattern of the IgA response observed in nasal lavage fluid, the proportions of antigen-specific IgA+ plasma cells in the nasal mucosa of immunized mice were significantly higher than those of control mice (Figure 1B, Figure 1—figure supplement 1).
 
 Cognate pairs of immunoglobulin heavy chain variable (VH) and kappa light chain variable (VL) genes were amplified by rapid amplification of 5' cDNA ends PCR from the single-sorted cells. After constructing full-length immunoglobulin heavy and kappa light chain genes, antibodies were expressed by DNA transfection into CHO-S cells. Antigen-specific antibody clones were identified by enzyme-linked immunosorbent assay (ELISA) with immobilized SpikeWuhan. After sequencing the entire coding region of heavy and light chain genes, the antibodies sharing the same V-(D)-J genes were grouped (Supplementary file 1). Then, representative antibody clones from each group were analyzed for their binding to the spike protein RBD of Wuhan, Beta, Kappa, and Delta variants and an NTD of SpikeWuhan. The antibodies were also analyzed for their ability to block ACE2 binding to RBDs and to neutralize the Wuhan pseudotyped virus. Based on their properties, each group of antibodies was arbitrarily categorized into five types. Type 1: anti-RBD, ACE2 blocking neutralizing antibody; Type 2: anti-RBD, ACE2 blocking non-neutralizing antibody; Type 3: anti-RBD, non-ACE2 blocking non-neutralizing antibody; Type 4: anti-NTD, non-ACE-2 blocking non-neutralizing antibody; and Type 5: non-ACE-2 blocking non-neutralizing antibody targeting epitopes other than RBD and NTD.
 
-## Intranasal immunization induces functionally diverse IgA in the nasal mucosa and spleen
+### Intranasal immunization induces functionally diverse IgA in the nasal mucosa and spleen
 
 We conducted a detailed characterization of antibodies obtained from the No. 1 mouse, as many antigen-specific M-IgA clones were obtained. Of the 51 nasal M-IgA clones analyzed, they were classified into 11 groups based on their V-(D)-J usage, with the majority (83%) clonally expanding into four major clusters (G2, G3, G4, and G10) and the remainder (17%) scattered across branches (Figure 2A and B).
 
-## Intranasal immunization induces potentially nasal-derived antibodies in the spleen, lung, and blood
+![Figure 2.](https://cdn.elifesciences.org/articles/88387/elife-88387-fig2-v1.jpg)
+
+**Figure 2.:** (A) Characterization of S1-specific monoclonal antibodies obtained from No. 1 mouse. The heatmap represents the relative intensity of antibody binding to receptor binding domains (RBDs) and blocking of the RBD-angiotensin-converting enzyme-2 (ACE2) interaction. Blue (0–25%), green (25–50%), orange (50–75%), and red (>75%). N-terminal domain (NTD) binding was considered positive (+) when the OD at 405 nm was >0.3 after the background was subtracted. Neutralizing activity was considered positive (+) when the antibody suppressed Wuhan pseudotyped virus infection by 50%. The figure reports values from a single experiment. UN, antibody type not determined. ND, antibody activity not determined. (B) Maximum-likelihood phylogenetic tree of the VH and VL chains of the S1-specific antibodies. Different colored fonts indicate antibodies obtained from the nose (red), spleen (blue), and lung (green). Bands on the outer ring indicate antibody groups. The color of the ring indicates antibody types: Type 1 (red), Type 2 (orange), Type 3 (green), Type 4 (blue), and Type 5 (gray). The antibody group is defined as clones using the same V-(D)-J usage and having an overall sequence identity of at least 95% from the signal peptide to framework 4 (FR4). The prefixes N, S, and L in the antibody clone numbers refer to antibodies derived from the nose, spleen, and lung, respectively. The suffixes A, G, and K in the antibody clone numbers refer to alpha, gamma, and kappa chains, respectively. (C) Nucleotide sequence alignment of VH and VL genes in the G2 and G3 antibodies from No. 1 mouse. The VH and VL sequences from the beginning of the signal peptide through the end of FR4 are shown as horizontal lines. Nucleotide changes relative to S632A and N109A are depicted as vertical bars across the horizontal lines. Different colored fonts indicate antibodies derived from the nose (red) and spleen (blue). Antibody phylogenetic trees based on VH/VK paired sequences are depicted. Gray circles represent the hypothetical germline configuration. White circles represent hypothetical ancestors. Colors indicate nasal (red) and splenic (blue) antibodies. Circles and squares indicate IgA and IgG, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88387/elife-88387-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The VH and VL sequences from the beginning of the signal peptide through the end of FR4 are shown as horizontal lines. Nucleotide changes relative to N220A are depicted as vertical bars across the horizontal lines. Different colored fonts indicate antibodies derived from the nose (red) and spleen (blue). Antibody phylogenetic trees based on VH/VK paired sequences are depicted. Gray circles represent the hypothetical germline configuration. White circles represent hypothetical ancestors. Colors indicate nasal (red), splenic (blue), and lung (green) antibodies. Circles and squares indicate IgA and IgG, respectively. The antibodies in the G1-G4 clusters were categorized as Type 1. The G1 antibody appeared only once. This clone displayed potent binding to the Wuhan, Kappa, and Delta RBD, and moderately to the Beta RBD. It also blocked ACE2 binding to all RBDs except the Beta RBD. The antibodies in G2-4 clusters bound to Wuhan and Delta RBD but not Beta and Kappa RBD. They were able to block ACE2 binding to the RBD of Wuhan and Delta but not to the RBD of Beta and Kappa. The antibodies in G5-G9 clusters were categorized as Type 2, bound to all four RBD variants, and uniformly blocked ACE2 binding to the RBDs of all four strains. G10 antibodies were classified as Type 3, accounting for 38% of the nasal IgA repertoire. They bound to the RBDs of all four strains but did not prevent ACE2 binding to the RBDs of any of the strains. The G11 antibody, classified as Type 4, was an anti-NTD antibody that did not prevent ACE2 binding to the RBDs of any strains.
+
+### Intranasal immunization induces potentially nasal-derived antibodies in the spleen, lung, and blood
 
 Previous reports suggest that class-switched, affinity-matured B cells selected by NALT migrate to the regional lymph node and then return to the nasal mucosa and nonmucosal tissues to differentiate into plasma cells (Shimoda et al., 2001). If this is the case, a fraction of S1-specific plasma cells differentiated from nose-originated B cells may reside in the spleen and produce antibodies. To directly evaluate the cellular origin of the anti-S1 antibodies in nonmucosal tissues, we analyzed the presence of S1-specific plasma cells in the spleen, lung, bone marrow, and Peyer’s patches. FACS analysis of splenocytes harvested from No. 1 mice showed the presence of S1-specific IgA+ plasma cells, but the splenocytes harvested from control mice did not exhibit S1-specific IgA+ plasma cells (Figure 1B, Figure 1—figure supplement 1). Single-cell-based immunoglobulin gene cloning from the splenocytes of No. 1 mouse resulted in the successful production of 57 S1-specific monoclonal IgAs. DNA sequence analysis of these clones revealed significant clonal overlap between the nose and spleen (Figure 2A and B). Clonal overlap was found in the G2-G3, G5, G6, and G10 clusters, in which G10 possessed the most expanded splenic clones, as in the case of nasal IgA. Further investigation was conducted to determine if plasma cells expressing S1-specific IgG+ antibody, which share V-(D)-J with nasal IgA, could be identified in the spleen. Although the number of antigen-specific IgG+ plasma cells was limited, eight IgG clones specific for S1 were isolated, among which five were potentially nasal-derived. When we attempted to isolate antigen-specific IgA+ plasma cells from the lung, nine S1-specific IgA clones were obtained, among which three were potentially nasal-derived. The gut mucosa and bone marrow possessed a large population of IgA+ plasma cells. However, we could not detect S1-specific IgA+ plasma cells in Peyer’s patches and bone marrow (Figure 1B).
 
@@ -59,17 +75,29 @@ Next, we focused on the expanded antibody groups G2, G3, and G10 to analyze the 
 
 In No. 2 mice, we obtained 29 nasal IgAs, 15 splenic antibodies (13 IgAs and 2 IgGs), 5 lung IgAs, and 6 blood IgAs. They were classified into 17 groups based on their V-(D)-J usage, and each group was categorized as either Type 1, 2, 3, 4, or 5 based on antibody properties (Figure 3). Potentially nasal-derived clones were found in the spleen, lung, and blood (G5, -6, and -8). These clones also showed a complex pattern of shared and unique SHM with nasal clones throughout the full length of the VH and VL genes. In mouse No. 3, we cloned 19 nasal IgAs and 22 splenic antibodies (17 IgAs and 5 IgGs). They were classified into 10 groups, and each group was categorized as either Type 1, 3, 4, or 5. A high degree of clonal overlap between the nose and spleen was found, in which 13 out of 22 splenic antibodies were potentially nasal-derived clones (Figure 3, Figure 3—figure supplement 1). Analysis of the VH and VL repertoires of the three mice revealed that the expanded clones constituted varying fractions of the antibody repertoire among different mice despite having received the same antigen, and no group of antibodies stood out across mice, suggesting that individual mice had immunologically distinct responses (Figure 3—figure supplement 2). In all mice, only a few bound to the NTD, and most of them were RBD-directed. Approximately 30% of M-IgAs categorized as Type 1 showed neutralizing activity. Taken together, regarding the mutation frequency and the pattern of SHM, it can be assumed that B cells stimulated by nasal challenges were the major precursor of antigen-specific plasma cells in the spleen, lung, and blood, which may contribute to antibody production in the lower respiratory tract and systemic circulation.
 
-## Multimerization of M-IgA enhances antigen-binding activity
+![Figure 3.](https://cdn.elifesciences.org/articles/88387/elife-88387-fig3-v1.jpg)
+
+**Figure 3.:** (A) A total of 51 S1-reactive antibodies were analyzed for their properties as in Figure 2A. UN, antibody type not determined. ND, antibody activity not determined. (B) Maximum-likelihood phylogenetic tree of the VH and VL chains of the S1-specific antibodies. Different colored fonts indicate antibodies obtained from the nose (red), spleen (blue), lung (green), and blood (magenta). Bands on the outer ring indicate antibody groups. The color of the band indicates antibody types: Type 1 (red), Type 2 (orange), Type 3 (green), Type 4 (blue), and Type 5 (gray). The prefixes N, S, and L in the antibody clone numbers refer to antibodies derived from the nose, spleen, and lung, respectively. The suffixes A, G, and K in the antibody clone numbers refer to alpha, gamma, and kappa chains, respectively. (C) Nucleotide sequence alignment of VH and VL genes in the G6 and G8 antibodies from No. 2 mouse. The nucleotide changes relative to N5120A and N5105A are depicted as vertical bars across the horizontal lines. Different colored fonts indicate antibodies derived from the nose (red), spleen (blue), lung (green), and blood (magenta). Antibody phylogenetic trees based on VH/VK paired sequences are depicted. Gray circles represent the hypothetical germline configuration. White circles represent hypothetical ancestors. Colors indicate nasal (red), splenic (blue), lung (green), and blood (magenta) antibodies.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88387/elife-88387-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A total of 41 S1-reactive antibodies were analyzed for their properties. UN, antibody type not determined. ND, antibody activity not determined. (B) Maximum-likelihood phylogenetic tree of the VH and VL chains of the S1-specific antibodies. Different colored fonts indicate antibodies obtained from the nose (red) and spleen (blue). Bands on the outer ring indicate antibody groups. The color of the band indicates antibody types: Type 1 (red), Type 2 (orange), Type 3 (green), Type 4 (blue), and Type 5 (gray). The prefixes N and S in the antibody clone numbers refer to antibodies derived from the nose and spleen, respectively. The suffixes A, G, and K in the antibody clone numbers refer to alpha, gamma, and kappa chains, respectively. (C) Nucleotide sequence alignment of VH and VL genes in the G1 and G3 antibodies from No. 3 mouse. The nucleotide changes relative to N26A and N29A are depicted as vertical bars across the horizontal lines. Different colored fonts indicate antibodies derived from the nose (red) and spleen (blue). Antibody phylogenetic trees based on VH/VK paired sequences are depicted. Gray circles represent the hypothetical germline configuration. White circles represent hypothetical ancestors. Colors indicate nasal (red) and splenic (blue) antibodies.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88387/elife-88387-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) V genes are plotted numerically, with heights indicating the expression rate between VH or VL clusters. (B) Pie charts show the distribution of mAb obtained from three immunized mice. The number inside each circle denotes the number of mAb of each type. The pie size is proportional to the number of antibody clones. Pie charts show the distribution of mAb obtained from three immunized mice. The number inside each circle denotes the number of mAb of each type. The pie size is proportional to the number of antibody clones obtained from each mouse.
+
+### Multimerization of M-IgA enhances antigen-binding activity
 
 To examine how IgA multimerization affects antigen-binding activity, four representative clones (N5203, N142, N114, and N217) were selected from each type of antibody, and S-IgAs were expressed by cotransfecting alpha heavy chain, kappa light chain, J-chain, and secretory component into CHO-S cells. Analysis of the purified S-IgAs by polyacrylamide gel electrophoresis (SDS-PAGE) revealed a band corresponding to the alpha heavy chain, kappa light chain, and secretory component. Native-PAGE analysis revealed that the antibodies comprised three quaternary structures, including a dimer (~400 kDa), a trimer (~550 kDa), and a tetramer (~750 kDa) at a molar ratio of 5:1:3 (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88387/elife-88387-fig4-v1.jpg)
 
-**Figure 4.:** (A) Production of recombinant monomeric IgAs (M-IgAs) and secretory IgAs (S-IgAs). Recombinant M-IgA and S-IgA purified from the culture supernatant of CHO cells were subjected to SDS-PAGE and Blue native-PAGE analysis. Bands corresponding to a monomer (M), dimer (Di), trimer (Ti), and tetramer (Te) are shown. H, α heavy chain; L, light chain; J, J-chain; SC, secretory component; M, M-IgA; S, S-IgA. (B) Binding dynamics of M-IgAs and S-IgAs to Wuhan, Delta, or Omicron spike protein by surface plasmon resonance (SPR). The S-IgAs used are a mixture of dimers, trimers, and tetramers. The observed values reflect the average affinity of the S-IgAs. The curves shown are representative of two or three determinations. RU, resonance units. Representative data from two independent experiments are shown. (C) The table shows the association (ka) (M–1s–1), dissociation (kd) (s–1) rate constants and apparent equilibrium dissociation constants (KD) expressed as the mean of two or three determinations (lower panel).Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Production of recombinant monomeric IgAs (M-IgAs) and secretory IgAs (S-IgAs). Recombinant M-IgA and S-IgA purified from the culture supernatant of CHO cells were subjected to SDS-PAGE and Blue native-PAGE analysis. Bands corresponding to a monomer (M), dimer (Di), trimer (Ti), and tetramer (Te) are shown. H, α heavy chain; L, light chain; J, J-chain; SC, secretory component; M, M-IgA; S, S-IgA. (B) Binding dynamics of M-IgAs and S-IgAs to Wuhan, Delta, or Omicron spike protein by surface plasmon resonance (SPR). The S-IgAs used are a mixture of dimers, trimers, and tetramers. The observed values reflect the average affinity of the S-IgAs. The curves shown are representative of two or three determinations. RU, resonance units. Representative data from two independent experiments are shown. (C) The table shows the association (ka) (M–1s–1), dissociation (kd) (s–1) rate constants and apparent equilibrium dissociation constants (KD) expressed as the mean of two or three determinations (lower panel).
 
 Then, we compared the binding kinetics of each pair of M-IgA/S-IgA by surface plasmon resonance (SPR) with immobilized SpikeWuhan, SpikeDelta, or SpikeOmicron. As shown in Figure 4, N5203 M-IgA, which has a moderate binding affinity to SpikeWuhan (apparent equilibrium constant, KD = 5.2E-9), acquired dramatic enhancement of the binding activity to SpikeWuhan after multimerization (KD = 1.3E-13). However, multimerization did not enhance the binding activity to SpikeDelta (KD = 2.1E-9). N142 M-IgA, which has a high affinity for SpikeWuhan (KD = 4.5E-11) and SpikeDelta (KD = 7.8E-11), did not show enhanced binding activity to them after multimerization. Almost the same phenomenon was found for N114 M-IgA, which has a high affinity for SpikeWuhan (KD = 6.8E-11) and SpikeDelta (KD = 9.7E-11). N142 M-IgA, which has the lowest affinity to SpikeWuhan (KD = 2.1E-8), also acquired dramatic enhancement of the binding activity to SpikeWuhan after multimerization (KD = 6.4E-11) but not to SpikeDelta. All antibodies showed little or marginal levels of binding to SpikeOmicron. These results suggest that the degree of avidity of S-IgAs depends on the affinity of the parent monomeric antibody: antibodies with low or intermediate affinity in the monomeric state (N5203 and N217) can increase their avidity by multimerization but not antibodies with high affinity in the monomeric state (N142 and N114). These results are consistent with recent work by Saito et al., who examined the function of multimerized IgA against influenza viruses (Saito et al., 2019).
 
-## Multimerization facilitates stronger neutralization activity in non-neutralizing M-IgA
+### Multimerization facilitates stronger neutralization activity in non-neutralizing M-IgA
 
 Since ACE2-blocking activity is one indicator for evaluating the neutralizing activity of anti-SARS-CoV-2 antibodies, we next examined whether the multimerization of IgAs influences the RBD-ACE2 interaction by competitive ELISA (Figure 5A).
 
@@ -105,66 +133,363 @@ Intranasal delivery of monoclonal antibodies was shown to confer viral protectio
 
 Our study has limitations, including that the number of antigen-specific plasma cells isolated from the nasal mucosa of immunized mice was insufficient for a comprehensive analysis of systemic and mucosal immune responses. In this study, antibodies that did not share V-(D)-J with nasal clones were found in the spleen, lungs, and blood of immunized mice. This finding was probably due to the limited number of clones that were isolated from the nose. However, we cannot exclude the possibility that these clones differentiated from local naïve B cells. While S-IgA has many possible advantages in antibody therapy, S-IgA has the property of aggregating. Therefore, it encounters challenges in expression and stabilization. Addressing these issues is crucial for large-scale production for in vivo experiments.
 
-## Study approval
+### Study approval
 
 All experiments were performed in accordance with relevant guidelines and regulations. The Committee on Animal Experimentation at the University of Toyama approved the animal experimental protocols, which were conducted using project license A2017eng-1. All experiments involving live SARS-CoV-2 followed the approved standard operating procedures in the Biosafety Level 3 facility at the University of Toyama and Toyama Institute of Health.
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 The materials used in this study can be found in the Key resources table. VeroE6/TMPRSS2 cells were purchased from the Japanese Collection of Research Bioresources (JCRB) Cell Bank (the National Institute of Biomedical Innovation, Health, and Nutrition, Osaka, Japan) (JCRB1819). CHO-S cells were purchased from Thermo Fisher Scientific (A29127). All cell lines tested negative for mycoplasma contamination, and the suppliers verified their authenticity through STR profiling. Female ICR mice (SLC:ICR) and female Syrian golden hamsters (SLC:Syrian) were purchased from Japan SLC, Inc (Tokyo, Japan).
 
-## Immunization
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>IgHa</td>
+      <td>NCBI</td>
+      <td>AK136471</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>IGHA2</td>
+      <td>NCBI</td>
+      <td>AL389978</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>JCHAIN</td>
+      <td>NCBI</td>
+      <td>NM_144646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>PIGR</td>
+      <td>NCBI</td>
+      <td>NM_002644.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>ICR</td>
+      <td>SLC</td>
+      <td>SLC:ICR</td>
+      <td>Six-week-old female</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Syrian hamster</td>
+      <td>SLC</td>
+      <td>SLC:Syrian</td>
+      <td>Six-week-old female</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>VeroE6/TMPRSS2</td>
+      <td>JCRB, RRID:CVCL_YQ49</td>
+      <td>JCRB1819</td>
+      <td>Infection</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-S</td>
+      <td>Thermo Fisher, RRID:CVCL_5J31</td>
+      <td>A29127</td>
+      <td>Antibody expression</td>
+    </tr>
+    <tr>
+      <td>Biological sample (virus)</td>
+      <td>SARS-CoV-2 virus</td>
+      <td>NIID</td>
+      <td>2019-nCoV/Japan/TY/WK-521/2020</td>
+      <td>Wuhan</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight488-labeled goat anti-mouse IgA alpha chain</td>
+      <td>Abcam</td>
+      <td>ab97011</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-mouse CD138</td>
+      <td>BioLegend, RRID:AB_10915989</td>
+      <td>142503</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight488-labeled goat anti-mouse IgG H&amp;L</td>
+      <td>Abcam</td>
+      <td>ab96871</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Biotinylated SARS-CoV-2 S1 protein NTD, His, Avitag</td>
+      <td>Acro Biosystems</td>
+      <td>S1D-C52E2</td>
+      <td>Wuhan</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>SARS-CoV-2 (COVID-19) S protein RBD, His Tag</td>
+      <td>Acro Biosystems</td>
+      <td>SPD-C52H3</td>
+      <td>Wuhan</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>SARS-CoV-2 S protein RBD (K417N, E484K, N501Y), His Tag</td>
+      <td>Acro Biosystems</td>
+      <td>SPD-C52Hp</td>
+      <td>B.1.351/Beta Variant</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>SARS-CoV-2 Spike RBD (L452R, E484Q), His Tag</td>
+      <td>Acro Biosystems</td>
+      <td>SPD-C52Hv</td>
+      <td>B.1.617.1 (Kappa)</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>SARS-CoV-2 (COVID-19) S protein RBD (L452R, T478K), His Tag</td>
+      <td>Acro Biosystems</td>
+      <td>SPD-C52Hh</td>
+      <td>B.1.617.2/Delta</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Biotinylated Human ACE2</td>
+      <td>Sino Biological</td>
+      <td>10108-H08H-B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>SARS-CoV-2 S protein, His Tag, Super stable trimer</td>
+      <td>Acro Biosystems</td>
+      <td>SPN-C52H9</td>
+      <td>Wuhan</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Biotinylated SARS-CoV-2 S protein (D614G), His, Avitag, Super stable trimer</td>
+      <td>Acro Biosystems</td>
+      <td>SPN-C82E3</td>
+      <td>Wuhan</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Biotinylated SARS-CoV-2 Spike Trimer, His, Avitag (B.1.1.529/Omicron)</td>
+      <td>Acro Biosystems</td>
+      <td>SPNC82EE</td>
+      <td>B.1.1.529/Omicron</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Biotinylated SARS-CoV-2 (COVID-19) S1 protein (D614G), His, Avitag</td>
+      <td>Acro Biosystems</td>
+      <td>S1N-C82E3</td>
+      <td>Wuhan</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Streptavidin Protein, DyLight 650</td>
+      <td>Thermo Fisher</td>
+      <td>84547</td>
+      <td>Plasma cell isolation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-mIgA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Antibody expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-mIgK</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Antibody expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>THUNDERBIRD Probe One-step qRT-PCR Kit</td>
+      <td>TOYOBO</td>
+      <td>QRZ-101</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SureBlue/TMB peroxidase substrate</td>
+      <td>Sera care</td>
+      <td>5120-0059</td>
+      <td>ELISA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>N2 primer/probe set</td>
+      <td>Nihon Gene Research Laboratories</td>
+      <td>283-34201</td>
+      <td>qPCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CHOgro High Yield Expression System</td>
+      <td>TakaraBaio/Mirus BIo</td>
+      <td>MIR 6260</td>
+      <td>Antibody expression</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads mRNA Purification kit</td>
+      <td>Veritas</td>
+      <td>DB61006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NativePAGE Bis-Tris Gel System</td>
+      <td>Thermo Fisher</td>
+      <td>BN1001BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ER-Tracker BlueWhite DPX</td>
+      <td>Thermo Fisher</td>
+      <td>E12353</td>
+      <td>Plasma cell isolation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera toxin</td>
+      <td>Fujifilm</td>
+      <td>030-20621</td>
+      <td>Adjuvant</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GENETYX</td>
+      <td>NIHON SERVER</td>
+      <td></td>
+      <td>Antibody sequence analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sequencher</td>
+      <td>Gene Codes</td>
+      <td>Version 5.4.6</td>
+      <td>Antibody sequence analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>posit</td>
+      <td>Version 2022.12.0+353</td>
+      <td>Antibody lineage analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Alakazam</td>
+      <td>https://www.rdocumentation.org/packages/alakazam/</td>
+      <td>Versions/1.2.1</td>
+      <td>Antibody lineage analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Peptide M Agarose</td>
+      <td>Thermo Fisher</td>
+      <td>gel-pdm-2</td>
+      <td>IgA purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TiterMax adjuvants</td>
+      <td>Merck Sigma-Aldrich</td>
+      <td>12352203</td>
+      <td>Immunization</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgA alpha chain (HRP)</td>
+      <td>abcam</td>
+      <td>ab97235</td>
+      <td>ELISA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Immunization
 
 Anesthetized 6-week-old female ICR mice were intranasally immunized with 10 μg of SpikeWuhan or PBS with 1 μg of cholera toxin in 10 μl of PBS by using a pipette to deliver the fluid dropwise into each nostril a total of three times at 3-week intervals. One week after the final immunization, mice were sacrificed by CO2 inhalation, and blood samples were collected from the inferior vena cava. To avoid contamination with circulating blood lymphocytes, the mice were perfused with 2 ml of PBS via the heart. Then, the lungs, the spleen, bone marrow, and Peyer’s patches were dissected, and single-cell suspensions were obtained by mincing the tissue using a 100 μm nylon mesh. The mice were decapitated at the larynx. After the removal of the facial skin from the head, the nose was separated from the rest of the head. A pipette tip was inserted through the pharyngeal opening into the choana, and then two consecutive volumes of 250 µl of PBS were gently perfused, and the nostril fluid was collected in a tube. The nasal lavage fluids were centrifuged, and supernatants were stored at −80°C until assayed. The isolated nose was cut into two along the midline; the layer of epithelium was mechanically removed from the nasal septum by gently rubbing the sample with a needle under a stereoscopic microscope, and the tissues were then mechanically shredded. Single-cell suspensions containing lymphocytes were isolated by using Lympholyte-M (Cedarlane, Ontario, Canada).
 
-## ELISA
+### ELISA
 
 ELISA to evaluate antibody binding to the Spike Trimer, RBDs, or NTD was performed by coating Nunc MaxiSorp flat-bottom high-binding 96-half-well plates (Thermo Fisher Scientific, MS, USA) with 50 μl per well of a 0.1 μg/ml protein solution in PBS overnight at 4°C. Plates were washed three times with PBS and incubated with 170 μl per well Blocking One solution (Nakarai, Tokyo, Japan) for 1 hr at room temperature. Serially diluted antibody, serum, or nasal lavage fluid was added to PBST (1× PBS with 0.1% Tween-20) and incubated for 1 hr at room temperature. The plates were washed three times with PBST and then incubated with anti-mouse IgG or IgA secondary antibody conjugated to horseradish peroxidase (HRP) (Abcam, Cambridge, UK) in PBST for 1 hr at room temperature. After washing with PBST three times, the plates were developed by the addition of the SureBlue/TMB peroxidase substrate and stop solution (KPL, MS, USA). Absorbance was measured at 450 nm with an ELISA microplate reader. Protein concentration in serum and nasal lavage fluid is determined by the BCA Protein Assay Kit (TaKaRa, Tokyo, Japan).
 
-## ACE2 blocking assay
+### ACE2 blocking assay
 
 Nunc MaxiSorp plates were coated with SARS-CoV-2 RBD at 50 ng per well and incubated overnight at 4°C. After blocking with Blocking One solution for 1 hr at room temperature, the serially diluted antibody mixed with 5 ng of biotinylated ACE2 in 100 µl of PBST was transferred to the plate in triplicate. After incubation for 1 hr at room temperature, the assay plate was washed with PBST three times, and 100 µl of streptavidin-HRP (Abcam, Cambridge, UK) diluted 1:5000 in PBST was transferred to each well and incubated for 30 min. After three washes, the plate was developed with streptavidin-HRP and SureBlue/TMB peroxidase substrate.
 
-## Plasmid construction
+### Plasmid construction
 
 The DNA fragments encoding the human IgA2 constant region, human J-chain, and extracellular domain of human pIgR were amplified by PCR. The IgA2 constant region was replaced with the IgG1 constant region of pJON-mIgG or pETmIgA to make pJON-hIgA and pET-hIgA, respectively (Kurosawa et al., 2012). The human J-chain was replaced with the DsRed2 gene of pDsRedN1 (Takara Bio, Shiga, Japan). The pIgR gene was inserted into the pEF-Myc-His vector (Thermo Fisher Scientific, MS, USA).
 
-## Isolation of antigen-specific plasma cells
+### Isolation of antigen-specific plasma cells
 
 Isolation of antigen-specific plasma cells was performed as described previously with slight modifications (Kurosawa et al., 2012). Cells were stained with PE-labeled anti-mouse CD138, DyLight-650-labeled S1, and DyLight488-labeled anti-mouse IgA or anti-mouse IgG at 4°C for 30 min with gentle agitation. After washing with PBS, the cells were suspended in PBS containing ER-Tracker Blue-White DPX (ER-Tracker) and subsequently analyzed by FACS. The forward-versus-side-scatter lymphocyte gate (R1) was applied to exclude dead cells. The plasma cells (IgA+ or IgG+, CD138+, ER-Trackerhigh, R2 gate) were further subdivided into fractions according to their binding of DyLight-650-labeled S1 domain of SARS-CoV-2 Spike protein to define antigen-specific plasma cells (IgA+, ER-Trackerhigh, S1+). Single-cell sorting was performed using a JSAN Cell Sorter that was equipped with an automatic cell deposition unit (JSAN, Kobe, Japan) with DyLight488-labeled antibodies against IgA or IgA monitored in the FL-l channel, PE-labeled CD138 in the FL-2 channel, ER-Tracker in the FL-7 channel, and DyLight650-labeled S1 in the FL-6 channel.
 
-## Monoclonal antibody generation
+### Monoclonal antibody generation
 
 Molecular cloning of VH and VL genes from single cells was performed by 5’-RACE PCR as previously described. For the first antibody screening, the PCR-amplified VHa and VL genes were joined to pJON-hIgA and pJON-mIgK to make full-length immunoglobulin alpha heavy and kappa light chain genes by TS-jPCR, respectively (Yoshioka et al., 2011). M-IgA was expressed by transfecting a pair of alpha heavy and kappa light chain genes into FreeStyle CHO-S cells that were grown in a 24-well plate according to the manufacturer’s protocol (CHOgro High Yield Expression System, Takara Bio, Shiga, Japan). For large-scale antibody production, the PCR-amplified alpha heavy and kappa light chain genes were inserted into pET-hIgA and pET-mIgK by TS-HR, respectively (Kurosawa et al., 2011).
 
 M-IgA was expressed by cotransfecting plasmids encoding the IgA gene (5 μg) and IgK gene (5 μg) into FreeStyle CHO-S cells (2.0×105 cells/10 ml). S-IgA was expressed by cotransfecting plasmids encoding the IgA gene (5 μg), IgK gene (5 μg), J-chain (1 μg), and pIgR gene (1 μg) into FreeStyle CHO-S cells (2.0×105 cells/10 ml). M-IgA was purified by using Peptide M Agarose (Thermo Fisher Scientific). S-IgA was purified by two-step chromatography using the Capturem His-Tagged Purification Kit (Takara Bio, Shiga, Japan) followed by size exclusion chromatography (Cytiva, AKTA go, MS, USA). The purified antibodies were analyzed by SDS-PAGE and native polyacrylamide gel electrophoresis on NuPAGE 4–12% Bis-Tris gels (Thermo Fisher Scientific MS, USA).
 
-## Antibody binding kinetics by SPR
+### Antibody binding kinetics by SPR
 
 The binding kinetics and affinity of monoclonal antibodies to the SARS-CoV-2 spike trimer were analyzed by SPR (Biacore T100, GE Healthcare). Specifically, a biotinylated spike trimer was covalently immobilized to an SA Sensor Chip for a final RU of approximately 200 and interacted with S-IgA containing a mixture of dimers, trimers, and tetramers or M-IgA at various concentrations (0.3, 1.0, 3.0, 9.0, and 27 nM of each antibody). SPR assays were run at a 30 µl/min flow rate in HEPES buffer. The dissociation phase was monitored for 5 min. The sensograms were fitted into a two-component model with BIAevaluation software (GE Healthcare).
 
-## Neutralization activity of monoclonal antibodies against the pseudotyped SARS-CoV-2 virus
+### Neutralization activity of monoclonal antibodies against the pseudotyped SARS-CoV-2 virus
 
 VeroE6/TMPRSS2 cells were incubated with serially diluted antibodies and pseudotyped virus possessing the spike protein of the Wuhan, Delta, Omicron strains or vesicular stomatitis virus and cultured for 48 hr at 37°C. After exposure to the virus-antibody mixture, the infectivity of the pseudotyped viruses was determined by measuring the luciferase activities using a PicaGene Luminescence Kit (Fujifilm Wako, Osaka, Japan) with a GloMax Navigator Microplate Luminometer (Promega, WI, USA).
 
-## Neutralization assay using an authentic virus strain
+### Neutralization assay using an authentic virus strain
 
 The neutralizing activity of monoclonal antibodies against an authentic Wuhan SARS-CoV-2 strain was determined by a neutralization test in a biosafety level 3 laboratory at the Toyama Institute of Health as previously described (Ozawa et al., 2022). VeroE6/TMPRSS2 cells plated at 2×104 cells in each well of 96-well plates were infected with the Wuhan SARS-CoV-2 strain at a multiplicity of infection of 0.001 per cell in the presence of serially twofold diluted monoclonal antibodies for 1 hr. After discarding the culture supernatants, cells were cultured for 24 hr with DMEM containing 10% FBS in the presence of the indicated concentration of monoclonal antibodies. The viral infectious dose was determined by the level of viral genomic RNA in the culture supernatant, which was measured using a real-time PCR assay with a SARS-CoV-2 direct detection RT-qPCR kit (Takara Bio, Siga, Japan). The IC50 was calculated by IC50 Calculator (https://www.aatbio.com/tools/ic50-calculator) and represented the neutralization titer.
 
-## Hamster models
+### Hamster models
 
 Six-week-old female Syrian hamsters were purchased from Japan SLC Inc (Shizuoka, Japan). The hamsters were maintained under a 12 hr light-dark cycle and had unrestricted access to food and water in the Division of Animal Resources and Development at the University of Toyama. All animal procedures were approved by the Animal Experiment Committee of the University of Toyama (protocol number: A2023MED-10). Hamsters were intranasally administered 1 mg/kg of IgA in 100 µl of PBS (50 µl to each nostril) under anesthesia 3 hr before intranasal inoculation of 6.0× 105 TCID50 in 100 µl of PBS (50 µl to each nostril) of SARS-CoV-2 (2019-nCoV/Japan/TY/WK-521/2020) under anesthesia. At 24 and 48 hr after SARS-CoV-2 inoculation, 1 mg/kg of IgA was administered intranasally under anesthesia. Both SARS-CoV-2 inoculation and IgA administration were performed under anesthesia with a mixture of midazolam (2.4 mg/kg) (Maruishi Pharmaceutical Co., Ltd., Osaka, Japan), butorphanol tartrate (3 mg/kg) (Meiji, Tokyo, Japan), and medetomidine hydrochloride (0.18 mg/kg) (ZENOAQ, Fukushima, Japan), and the hamsters were awakened from anesthesia with atipamezole hydrochloride (0.18 mg/kg) (ZENOAQ) after the inoculation or administration. The hamsters were anesthetized and euthanized 72 hr after inoculation with SARS-CoV-2.
 
-## RNA extraction and real-time RT-PCR
+### RNA extraction and real-time RT-PCR
 
 The nasal turbinates and lungs were collected in ISOGEN (Nippon Gene, Tokyo, Japan) and homogenized with 1.4 mm Ceramic Beads (Thermo Fisher Scientific, Hampton, NH, USA) using BeadMill 24 (Thermo Fisher Scientific) at a speed of 4 m/s for 3 min and stored at −80°C until subsequent use. Total RNA was extracted using ISOGEN according to the manufacturer’s instructions. Real-time reverse transcription polymerase chain reaction (RT-PCR) was performed by amplifying the SARS-CoV-2 N2 gene using QuantStudio 6 Pro Real-Time PCR System (Thermo Fisher Scientific) and THUNDERBIRD Probe One-step qRT-PCR Kit (TOYOBO, Osaka, Japan) with the N2 primer/probe set (Nihon Gene Research Laboratories, Miyagi, Japan). The absolute copy number of the SARS-CoV-2 N2 gene was determined by serial dilution of RNA control (Nihon Gene Research Laboratories).
 
-## Gene family and phylogenetic analysis of monoclonal antibodies
+### Gene family and phylogenetic analysis of monoclonal antibodies
 
 The antibody sequences were annotated against the IMGT mouse heavy and light chain gene database using NCBI IgBlast to determine IGHV, IGHD, IGLV, IGHJ, IGLV, and IGLJ gene annotations. Antibody clones were assigned to clonal groups using Sequencher software. The heavy and light chain variable gene arrangement and phylogenetic analyses were performed using MAFFT, a multiple alignment program, in the GENETYX sequence analysis package (https://www.genetyx.co.jp). For SHM, IGHV and IGLV sequences were aligned against representative clones of each group. Antibody clones consisting of pairs of heavy and light chain variable genes (signal sequence to FW4) were used to generate an antibody phylogenetic tree. Full-length germline sequences were reconstructed, with nucleotide additions/deletions in the junction between V-(D)-J adjusted to match the sequence of each antibody group. Within these groups, if the combined sequence of the heavy and light chains differed by more than five bases from each other, they were defined as separate clones. The sequence alignment tool Clustal Omega (https://www.ebi.ac.uk/Tools/msa/clustalo/) was used to identify deletions and insertions and to align the length of the sequence. The nucleotide lengths were aligned by adding ‘-’ to the missing bases. The data file required by Alakazam was created in RStudio (version 2022.12.0+353), and a phylogenetic tree was created by Alakazam (https://www.rdocumentation.org/packages/alakazam/versions/1.2.1 and https://alakazam.readthedocs.io/en/stable/). The R script was as follows: https://www.rdocumentation.org/packages/alakazam/versions/1.2.1/topics/buildPhylipLineage.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using JMP statistical software (JMP Statistical Discovery, NC, USA). Unpaired Student’s t-tests were used to analyze each dataset. The threshold for statistical significance was set at p<0.01 (**).

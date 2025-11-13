@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.46339.001 Viral infection is usually studied at the population level by averaging over millions of cells. However, infection at the single-cell level is highly heterogeneous, with most infected cells giving rise to no or few viral progeny while some cells produce thousands. Analysis of Herpes Simplex virus 1 (HSV-1) infection by population-averaged measurements has taught us a lot about the course of viral infection, but has also produced contradictory results, such as the concurrent activation and inhibition of type I interferon signaling during infection. Here, we combine live-cell imaging and single-cell RNA sequencing to characterize viral and host transcriptional heterogeneity during HSV-1 infection of primary human cells. We find extreme variability in the level of viral gene expression among individually infected cells and show that these cells cluster into transcriptionally distinct sub-populations. We find that anti-viral signaling is initiated in a rare group of abortively infected cells, while highly infected cells undergo cellular reprogramming to an embryonic-like transcriptional state. This reprogramming involves the recruitment of β-catenin to the host nucleus and viral replication compartments, and is required for late viral gene expression and progeny production. These findings uncover the transcriptional differences in cells with variable infection outcomes and shed new light on the manipulation of host pathways by HSV-1.
+Viral infection is usually studied at the population level by averaging over millions of cells. However, infection at the single-cell level is highly heterogeneous, with most infected cells giving rise to no or few viral progeny while some cells produce thousands. Analysis of Herpes Simplex virus 1 (HSV-1) infection by population-averaged measurements has taught us a lot about the course of viral infection, but has also produced contradictory results, such as the concurrent activation and inhibition of type I interferon signaling during infection. Here, we combine live-cell imaging and single-cell RNA sequencing to characterize viral and host transcriptional heterogeneity during HSV-1 infection of primary human cells. We find extreme variability in the level of viral gene expression among individually infected cells and show that these cells cluster into transcriptionally distinct sub-populations. We find that anti-viral signaling is initiated in a rare group of abortively infected cells, while highly infected cells undergo cellular reprogramming to an embryonic-like transcriptional state. This reprogramming involves the recruitment of β-catenin to the host nucleus and viral replication compartments, and is required for late viral gene expression and progeny production. These findings uncover the transcriptional differences in cells with variable infection outcomes and shed new light on the manipulation of host pathways by HSV-1.
 
 ## Introduction
 
@@ -36,9 +36,25 @@ Here, we apply a combination of live-cell time-lapse fluorescent imaging, scRNA-
 
 ## Results
 
-## Viral infection dynamics vary among individual cells
+### Viral infection dynamics vary among individual cells
 
 We began by studying the temporal variability in viral gene expression initiation. To do so, we employed a wildtype HSV-1 (strain 17) that was genetically modified to express ICP4-YFP (Everett et al., 2003). Primary human fibroblasts (HDFn) were infected and monitored by time-lapse fluorescent microscopy (Figure 1A, Figure 1—video 1). HDFn were infected at an MOI of 2 (calculated on the basis of virus titration on Vero cells, which are ~2-fold more susceptible to HSV-1 infection than HDFn). This MOI was chosen because we found empirically that it resulted in ~50% of HDFn becoming ICP4-positive during primary infection. Note that we determined the genome:PFU ratio for our viral stock and found it to be 36 ± 4, suggesting that all the cells in the culture have probably encountered numerous virus particles.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig1-v2.jpg)
+
+**Figure 1.:** (A) HDFn cells were infected with HSV-1 expressing ICP4-YFP and analyzed by time-lapse fluorescent imaging and scRNA-seq. (B) Distribution of the initial time of ICP4 expression. The black line denotes the average and the gray shadowing denotes the standard error of the time of ICP4 expression by single cells. n = 970 cells from three fields of view. (C) Violin plots showing the distribution of ICP4 nuclear intensity at 5 hr post infection of mock (n = 1648) or HSV-1 infected cells, either ICP4– (n = 818) or ICP4+ (n = 996). The smaller inset shows a zoomed-in view of the mock and ICP4– cells. Values of single cells are shown as circles. (D) Schematic diagram of the different localization phenotypes of ICP4 (left) and a representative single cell showing these phenotypes at different time points following infection. (E) Violin plots showing the distribution of the % of viral transcripts (out of the total transcripts) for individual cells that were mock-infected (n = 4500), infected with wt (n = 807) or infected with ΔICP0 (n = 1613) HSV-1. The y-axis is logarithmic. (F) T-distributed stochastic neighbor embedding (tSNE) plot based on viral gene expression in wt HSV-1 infection. Each dot represents a single cell and is colored according to the % of viral transcripts from blue (low) to red (high). The color bar is logarithmic. Gini is the Gini coefficient. (G) The relative abundance of the four viral gene classes: immediate-early (blue), early (orange), late γ1 (yellow) and late γ2 (purple) in highly infected single cells (highlighted by the gray oval in panel (F)). Single cells are ordered by their % of viral transcripts from low (left) to high (right), which are denoted by the black line. (H) Scatter plots of single cells showing the % of viral transcripts on the x-axis and the relative abundance of each viral gene class on the Y-axis. r and p are the Pearson correlation coefficients and p-values, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Flow chart describing the generation of a DGE (digital expression matrix) from raw sequencing data and the filtering criteria applied at different stages to the generation of the final DGE. Note that the threshold for mitochondrial gene expression is different for ΔICP0-infected cells (>40% rather than 20% for mock and wt-infected), because ΔICP0 infection caused an increase in mitochondrial gene expression. (B) Distribution of read depth (number of unique molecular identifiers (# UMI)) per cell. (C) Distribution of read depth (# genes) per cell. (D) Distribution of mitochondrial gene expression (note that the scale of the x-axis is different for ΔICP0).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The left panel shows the identity of the cells (blue = mock, purple = wt infected) and the right panel shows the level of HSV-1 gene expression (blue = low, red = high). Highly infected cells cluster separately from the mock-infected and low-infected cells, which are intermingled.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) tSNE plot based on viral gene expression. Each dot represents a single cell and is colored according to the % of viral transcripts from blue (low) to red (high). The color bar is logarithmic. Gini is the Gini coefficient. (B) The relative abundance of the four viral gene classes: immediate-early (blue), early (orange), late γ1 (yellow) and late γ2 (purple) in highly infected single cells (highlighted by the gray oval in panel (A)). Single cells are ordered by their % of viral transcripts from low (left) to high (right), which are denoted by the black line. (C) Scatter plots of single cells showing the % of viral transcripts on the x-axis and the relative abundance of each viral gene class on the y-axis. r and p are the Pearson correlation coefficients and p-values, respectively.
 
 Initiation of ICP4 expression was observed to occur mostly between 1 hr and 4 hr post-infection (Figure 1B). Almost no new infections were observed between 4 hr and 6 hr post-infection, but two infection peaks were later seen at 8 and 11 hr. These peaks are probably the result of secondary infections, as new viral progeny can be detected in infected cells starting at 6 hr post-infection (Pomeranz and Blaho, 2000; Ikeda et al., 2011; Drayman et al., 2017). Given that the majority of infected cells have initiated viral gene expression by 5 hr, we chose this time point for further analyses. HDFn were infected as described above, fixed and stained with DAPI at 5 hr post-infection (to allow automated cell segmentation and quantification). This allowed the distinction of two cellular populations: cells that successfully initiated viral gene expression (ICP4+) and cells that did not (ICP4–). Of 1814 cells exposed to HSV-1, 996 cells (55%) were ICP4+ and 818 (45%) were ICP4–. Cells were classified as ICP4-negative or -positive on the basis of a threshold calculated from mock-infected cells (mean +3 standard deviations).
 
@@ -46,7 +62,7 @@ Among the ICP4+ cells, nuclear levels of ICP4 varied by ~100 fold, ranging from
 
 Taken together, we find that not all cells that are exposed to HSV-1 successfully initiate viral gene expression under these experimental conditions. Those that do initiate viral gene expression show variation in the timing of initial gene expression, in the rate of infection progression and in the level and localization of the immediate-early protein ICP4. These results prompted us to explore cellular heterogeneity on a larger scale by applying single-cell RNA-sequencing (scRNA-seq) to infected cells.
 
-## Viral gene expression is extremely variable among individual cells
+### Viral gene expression is extremely variable among individual cells
 
 HDFn were mock-infected or infected with wildtype HSV-1 (MOI 2, equivalent to ~70 genomes per cell, see 'Materials and methods') or a ΔICP0 HSV-1 mutant (MOI 0.5, equivalent to ~700 genomes per cell) and harvested for scRNA-seq at 5 hr post-infection. We chose to include the ΔICP0 mutant because it results in a relatively high number of abortive infections and in a robust activation of anti-viral responses. For scRNA-seq, we applied the Drop-seq protocol (see 'Materials and methods' and Macosko et al., 2015). Briefly, a microfluidic device was used to encapsulate individual cells in a water-in-oil droplet in which cell lysis, mRNA-capture and barcoding took place. The barcoded mRNA was then recovered from the droplets, reverse-transcribed, amplified and sequenced. As each cDNA was barcoded with a cell and transcript ID, the sequencing data allow the reliable quantification of the number of transcripts in individual cells. Technical data on sequencing depth and filtering criteria are presented in Figure 1—figure supplement 1.
 
@@ -58,15 +74,27 @@ To further explore cell-to-cell variability in viral gene expression, we analyze
 
 Our scRNA-seq data indicate a wide and uneven distribution of viral gene expression during HSV-1 infection, with most cells expressing no or low levels of viral gene transcripts and a smaller group expressing much higher levels (in agreement with the ICP4 expression levels presented above). The vast majority of cells exposed to HSV-1, either wildtype or ΔICP0, had some level of viral gene expression, suggesting that the fraction of lowly expressing cells (and the ICP4– population noted above) are indeed abortively infected cells, rather than cells that did not encounter a virus. We note that significant cell-to-cell differences are seen even within the group of highly infected cells, with viral gene expression ranging from 1% to >30%, and that this ‘viral expression load’ is correlated with late gene expression.
 
-## The cell-cycle affects HSV-1 gene expression
+### The cell-cycle affects HSV-1 gene expression
 
 We have previously shown that the cell-cycle stage at the time of infection is a cellular determinant of successful HSV-1 infection in the H1299 cell line (Drayman et al., 2017). In that study, we found that cells that were infected in the G2 phase were less likely to initiate viral gene expression and that cellular escape from viral-enforced mitotic arrest is highly detrimental to HSV-1 infection. To evaluate the effect of the cell-cycle in HDFn infection, we calculated a cell-cycle score for each cell in our dataset (see 'Materials and methods' section and Tirosh et al., 2016) and measured the correlation between HSV-1 gene expression and the cell-cycle score (Figure 2—figure supplement 1). We found that viral gene expression was negatively correlated with the cell-cycle score, with cells in the later parts of the cell-cycle expressing ~10-fold fewer viral genes than those in the early part of the cycle, in agreement with our previous finding in the H1299 cell-line.
 
 As the cell-cycle is both a major source of cell-to-cell variability and negatively correlated with viral gene expression, it was crucial to regress out the cell-cycle effect before analyzing the host response (Figure 2—figure supplement 1). We could now turn to analyzing the host genes that are differentially expressed among HSV-1-infected cells, starting with the anti-viral response.
 
-## The anti-viral program is initiated by a rare sub-population of abortively infected cells
+### The anti-viral program is initiated by a rare sub-population of abortively infected cells
 
 Previous population-level studies reported the activation of anti-viral genes during wildtype HSV-1 infection, so we hypothesized that highly infected cells (Figure 2A,B, cluster 1) should be enriched for anti-viral genes. To our surprise, differential gene expression analysis of the two clusters did not indicate upregulation of the anti-viral response in cluster 1 (Supplementary file 1a). In fact, canonical anti-viral genes such as IFIT2 and IFIT3 were only detected in 2–3% of the cells from both clusters 1 and 2 (Figure 2C). When comparing a larger panel of interferon-stimulated genes (ISGs) in high- vs low-infected cells (Figure 2—figure supplement 2), most ISGs are in fact more highly expressed in cells with low HSV-1 gene expression.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig2-v2.jpg)
+
+**Figure 2.:** (A) tSNE plot based on viral and host gene expression. Cells are colored according to their clustering. Cluster one is colored green and cluster two is colored purple. (B) tSNE plot as in panel (A). Cells are colored according to their % of viral transcript expression. (C) tSNE plot as in panel (A). Cells are colored according to their expression (red) or lack of expression (gray) of IFIT2 (left) or IFIT3 (right). (D) Heat-map of genes that are significantly upregulated in ICP4– cells, as compared to both mock and ICP4+ cells. RNA-sequencing was performed in duplicates denoted by the numbers 1 and 2 on the top row. Each row shows the normalized (z-score) expression of a single gene, colored from low (blue) to high (red). (E) Validation of selected genes by quantitative PCR. Bar plots show the expression levels of the viral genes ICP4 and gB (top) and the anti-viral genes IFIT1 and IFIT2 (bottom). Values are mean ± s.e. of three independent biological repeats. Individual measurements are shown as circles. p-values were calculated using a one-tailed t-test. (F) Immunoflorescent staining of IRF3 in mock-infected (bottom) or HSV-1 infected (top) cells at 5 hr post infection. The arrowhead points to an ICP4-negative cell that shows nuclear IRF3 staining (nucleus border denoted by a dashed white line). The arrows point to aggregations of IRF3 outside the nucleus in ICP4-positive cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) tSNE plots based on viral and host gene expression (wildtype infection). (Left) Cells are colored according to their clustering. Cluster one is colored green, cluster two is colored blue and cluster three is colored brown. (Middle) Cells are colored on the basis of the % of viral transcripts they express from blue (low) to red (high). The color bar is logarithmic. (Right) Cells are colored on the basis of their cell-cycle score, from blue (low) to red (high). (B) tSNE plots as in panel (A), showing cell clustering (left), viral gene expression (middle) and cell-cycle score (right) after regressing out the cell-cycle effect on gene expression. (C,D) Cell-cycle score is anti-correlated with wildtype (C) and ΔICP0 (D) viral transcription. r and p are the Pearson correlation coefficient and the associated p-value, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Here we compare the expression of interferon-stimulated genes (ISGs) in the top (orange) and bottom (blue) 25% of cells, sorted according to the level of HSV-1 gene expression. The top left panel shows the % expression of HSV-1 genes in individual cells in each group (n = 202 cells in each). The remaining panels show the % of cells that express a given ISG in each group. p-values were calculated using the Chi-square test and false discovery rate (FDR)-corrected for multiple comparisons. Note that two ISGs (IFIT3 and TRIM21) have p-values >0.05.
 
 One possible explanation is that anti-viral genes are indeed expressed in highly infected cells but were not detected by scRNA-seq because of technical limitations. To investigate this, infected cells were sorted by fluorescence-activated cell sorting (FACS) into two populations based on ICP4-YFP expression (ICP4+ and ICP4–), and each population was sequenced. In agreement with the scRNA-seq data, the expression of canonical anti-viral genes was not significantly different between mock-infected and ICP4+ cells. Rather, our analysis indicated that a small group of genes, including the anti-viral genes IFIT1 and IFIT2, were specifically upregulated in the ICP4– population (Figure 2D, Supplementary file 2a). The Gene Ontology (GO) biological processes associated with these upregulated genes included terms such as ‘response to type I interferon’ and ‘immune response’ (Supplementary file 2b). Validation of selected transcripts by quantitative PCR (QPCR) is shown in Figure 2E.
 
@@ -74,13 +102,29 @@ ISGs are usually expressed after interferon stimulation, but we failed to dete
 
 We next evaluated the anti-viral response in cells infected by ΔICP0 HSV-1. ICP0 is a multifunctional viral protein, which blocks IRF3 signaling (Lin et al., 2004). Cells infected with ΔICP0 clustered into four groups (Figure 3A). Cluster 1 consists of cells with very few viral transcripts. Clusters 2 and 3 have slightly higher viral gene expression, and the small cluster 4 consists of highly infected cells (Figure 3B,D). Although the magnitude of the anti-viral response in ΔICP0-infected cells was much greater than that in the wildtype-infected cells (Figure 2), it was still only observed in a small population of cells, with ~8% of the cells expressing IFIT1, MX2 or OASL (compared to none of the mock-infected cells). These cells had low viral gene expression levels and mostly belonged to clusters 1–3 (Figure 3C,D). Anti-viral signaling was not seen in the highly infected cells of cluster 4, with the exception of two cells expressing IFIT1 (Figure 3C,D). As described above for the wildtype infected cells, we also compared a larger panel of ISGs in highly vs lowly infected cells (Figure 3—figure supplement 1), with similar results.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig3-v2.jpg)
+
+**Figure 3.:** (A) tSNE plot based on viral and host gene expression. Cells are colored according to their clustering. (B) tSNE plot as in panel (A), with cells colored according to the % expressed transcripts that are viral. (C) tSNE plots as in panel (A). Cells are colored according to expression (red) or lack of expression (gray) of IFIT1 (left), MX2 (middle) or OASL (right). (D) Scatter plots showing the expression of HSV-1 transcripts (top left) and the expression of the anti-viral genes IFIT1, MX2 and OASL in mock-infected cells (first column) and in each cluster of cells infected by ΔICP0. p-values were calculated by a Chi-square test, comparing cluster 4 to clusters 1–3. (E) Heat-map of genes that are significantly upregulated in ΔICP0-infected ICP4– cells, as compared to both mock and ICP4+ cells. RNA-sequencing was performed in duplicates, as denoted by the numbers 1 and 2 on the top row. Each row shows the normalized (z-score) expression of a single gene, colored from low (blue) to high (red). (F) Gene Ontology (GO) terms for the enriched genes identified in panel (E). The term is written on the bar, and the value next to each bar is the FDR-corrected p-value for its enrichment. Bar length shows the % of upregulated genes annotated to the GO term. Highlighted in yellow are GO terms that are associated with anti-viral signaling. (G) Transcription factor binding sites that are enriched in the promoters of genes identified in panel (E). (H) QPCR validation of selected genes. The bar plots show the expression level of the viral genes ICP4 and gB and of the anti-viral genes IFIT1 and IFIT2. Values are means ± s.e. of three independent biological repeats. Individual measurements are shown as circles. p-values were calculated using a one-tailed t-test. (I) Immunoflorescent staining of IRF3 in mock-infected (bottom) or ΔICP0-infected (top) cells at 5 hr post infection. The arrowheads point to ICP4-negative cells that contain nuclear IRF3. Asterisks denote ICP4-positive cells that contain nuclear IRF3. The arrow points to a cell in the late stages of infection, in which IRF3 is aggregated in the nuclear periphery.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Here we compare the expression of interferon-stimulated genes) (ISGs) in the top (orange) and bottom (blue) 25% of cells, sorted according to the level of HSV-1 gene expression. The top left panel shows the % expression of HSV-1 genes in individual cells in each group (n = 403 cells in each). The remaining panels show the % of cells expressing a given ISG in each group. p-values were calculated using the Chi-square test and FDR-corrected for multiple comparisons. Note that two ISGs (IFI44L and STAT1) have p-values >0.05.
+
 RNA-sequencing of sorted cells that were infected with ΔICP0 identified ~80 genes that are significantly upregulated in ICP4– cells compared to mock and ICP4+ cells (Figure 3E, Supplementary file 2c). These genes were enriched for functional annotations of anti-viral signaling (Figure 3F, Supplementary file 2d) and for binding sites of the transcription factors IRF1, IRF7 and STAT5 (Figure 3G, Supplementary file 2e). An important difference from wildtype infection is that, although enriched in the ICP4– population, these anti-viral genes are also activated in the ICP4+ population, albeit to a lesser extent (Figure 3H). We confirmed this observation through immunofluorescent staining of IRF3 (Figure 3I). The staining showed that a higher proportion of ΔICP0-infected cells showed nuclear IRF3 localization when compared to wildtype-infected cells. The majority of cells with nuclear IRF3 were ICP4– but some ICP4+ cells also showed nuclear IRF3 staining. These ICP4+ cells showed diffuse nuclear localization of ICP4, indicating that their infection was aborted prior to the generation of replication compartments (Figure 1D). The few cells that were able to proceed to the later stages of infection (as indicated by the appearance of replication compartments and cytoplasmic ICP4 foci) showed the same peri-nuclear aggregation of IRF3 as wildtype-infected cells (Figure 3I and Figure 2F).
 
 Altogether, the sequencing of both single cells and sorted cell populations, as well as immuno-fluorescence staining of IRF3, suggests that the anti-viral program is initiated in a small subset of abortively infected cells but is blocked in highly infected cells, even in the absence of ICP0. This behavior explains the apparent discrepancy in previous population-level measurements that showed both activation and inhibition of type I interferon signaling during HSV-1 infection.
 
-## HSV-1 infection results in transcriptional reprogramming of the host to an embryonic-like state
+### HSV-1 infection results in transcriptional reprogramming of the host to an embryonic-like state
 
 We next focused on genes that are upregulated during HSV-1 infection, in either the scRNA-seq or sorted cell population experiments. A total of 977 genes were significantly upregulated in wildtype ICP4+ cells as compared to both ICP4– and mock-infected cells in the bulk RNA-sequencing (Figure 4A, Supplementary file 3a). In the single-cell RNA-sequencing, 21 genes were significantly upregulated in highly infected single cells (Figure 4B, Supplementary file 1a). Remarkably, we found that a major portion of these upregulated genes are associated with GO terms that concern the regulation of RNA transcription and developmental processes (Figure 4C,D and Supplementary files 1b and 3b). Similar results were observed in cells infected with ΔICP0 (Figure 4—figure supplement 1 and Supplementary files 1d-f and 3d-f).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig4-v2.jpg)
+
+**Figure 4.:** (A) Heat-map of genes that are significantly upregulated in ICP4+ cells, as compared to both mock-infected and ICP4– cells. RNA-sequencing was performed in duplicates denoted by the numbers 1 and 2 on the top row. Each row shows the normalized (z-score) expression of a single gene, colored from low expression (blue) to high expression (red). (B) Heat-map of genes that are significantly upregulated in cluster 1 (highly infected) compared to cluster 2 (lowly infected) single cells. Each row shows the normalized (z-score) expression of a single gene, colored from low expression (blue) to high expression (red) in 80 single cells (40 from cluster 1 and 40 from cluster 2). The color bar is shared for both panels (A) and (B). (C,D) GO terms enriched for genes identified in panels (A) and (B), respectively. The GO term is written on the bar and the value next to each bar is the FDR-corrected p-value for its enrichment. Bar length shows the % of upregulated genes annotated to the GO term. GO terms that are associated with development and gene regulation are highlighted in yellow. (E,F) Transcription-factor-binding sites that are enriched in the promoters of genes identified in panels (A) and (B), respectively. The value next to each bar is the FDR-corrected p-value for the enrichment of the corresponding transcription-factor-binding site. Bar length shows the % of upregulated genes that contain binding sites for each transcription factor. Highlighted in yellow are the LEF1, TCF3, MYC and NMYC transcription factors, which are part of the WNT/β-catenin pathway. (G) A simplified diagram of the WNT/ β-catenin signaling pathway that controls LEF/TCF transcriptional activity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Heat-map of genes that are significantly upregulated in ICP4+ cells, as compared to both mock-infected and ICP4– cells. RNA-sequencing was performed in duplicates denoted by the numbers 1 and 2 on the top row. Each row shows the normalized (z-score) expression of a single gene, colored from low expression (blue) to high expression (red). (B) Heat-map of genes that are significantly upregulated in cluster 4 (highly infected) compared to cluster 1 (lowly infected) single cells. Each row shows the normalized (z-score) expression of a single gene, colored from low expression (blue) to high expression (red) in 80 single cells (40 from cluster 4 and 40 from cluster 1). (C,D) GO terms enriched for genes identified in panels (A) and (B), respectively. The GO term is written on the bar and the value next to each bar is the FDR-corrected p-value for its enrichment. Bar length shows the % of upregulated genes annotated to the GO term. GO terms associated with development and gene regulation are highlighted in yellow. (E,F) Transcription-factor-binding sites that are enriched in the promoters of genes identified in panels (A) and (B), respectively. The value next to each bar is the FDR-corrected p-value for the enrichment of the corresponding transcription-factor-binding site. Bar length shows the % of upregulated genes that contain binding sites for each transcription factor. Highlighted in yellow are the LEF1 and TCF3 transcription factors, which are part of the WNT/β-catenin pathway.
 
 The promoters of these upregulated genes are enriched for the binding sites of several transcription factors, including LEF1, TCF3 and MYC (Figure 4E,F and Supplementary files 1c and 3c). 23% of the promoters of the upregulated genes in ICP4+ cells contained a binding site for the TCF/LEF transcription factors, which are activated by the WNT/β-catenin pathway (Sokol, 2011) (Figure 4G). Note that LEF1 itself is a WNT target gene that is upregulated during HSV-1 infection (Figure 5A).
 
@@ -92,9 +136,17 @@ Examples of upregulated genes are shown in Figure 5A and include canonical WNT t
 
 We conclude that cells that are highly infected by HSV-1 undergo de-repression of embryonic and developmental genetic programs, including the WNT/β-catenin pathway.
 
-## β-catenin translocates to the nucleus and concentrates in the viral replication compartments
+### β-catenin translocates to the nucleus and concentrates in the viral replication compartments
 
 As many of the upregulated genes in infected cells are known WNT target genes and/or contain LEF/TCF-binding sites in their promoters, we investigated the state of β-catenin in these cells. Infected cells were fixed and stained for β-catenin at 5 hr post-infection (Figure 6A). As expected, β-catenin was mainly cytoplasmic/membrane-bound in mock-infected cells. In HSV-1-infected cells, β-catenin showed three distinct localization patterns: un-perturbed (cytoplasmic), diffuse nuclear or aggregated in nuclear foci (Figure 6A,B). Similar results were obtained for cells infected by ΔICP0 (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig6-v2.jpg)
+
+**Figure 6.:** (A) Immunoflorescent staining of β-catenin in mock-infected (top) or HSV-1 infected (bottom) HDFn cells at 5 hr post infection. (B) Magnified images of the four cells denoted by dashed white boxes in panel (A), showing representative images of cells with different ICP4 and β-catenin localizations. (C) Quantification of the relative abundances of the different ICP4 localizations (n = 204 cells). (D,E) Violin plots showing the distributions of ICP4 (D) and β-catenin (E) nuclear levels in cells showing the four ICP4 localization phenotypes. p-values were calculated by a two-tailed two-sample t-test and corrected for multiple comparisons by the Bonferroni correction. (F,G) Immunofluorsence as in panels (A) and (B) for A549 and Mel624 cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46339/elife-46339-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunofluorescent staining of β-catenin in ΔICP0-infected HDFn cells at 5 hr post infection. (B) Magnified images of the four cells denoted by dashed white boxes in panel (A), showing representative images of cells with different ICP4 and β-catenin localizations. Note that ΔICP0 infection results in more abortive infections than does wildtype infection, manifesting in the presence of many ICP4+ cells that show diffused nuclear localizationand are unable to form replication compartments.
 
 At 5 hr post-infection, 37% of the cells were ICP4 negative, 14% were at the earliest stage of infection (diffuse nuclear ICP4), 31% had assembled viral replication compartments and 18% had progressed to show cytoplasmic foci of ICP4 (Figure 6C). ICP4 levels increased from one group to the next, in accordance with the temporal progression of infection (Figure 6D).
 
@@ -102,7 +154,7 @@ At 5 hr post-infection, 37% of the cells were ICP4 negative, 14% were at the ear
 
 This analysis indicates that β-catenin is indeed co-opted by HSV-1. Cell-to-cell variability in the progression of infection results in heterogeneity of β-catenin localization, with recruitment of β-catenin to the viral replication compartments occurring during the later stages of infection.
 
-## β-catenin activation is necessary for late viral gene expression and progeny production
+### β-catenin activation is necessary for late viral gene expression and progeny production
 
 As β-catenin target genes are activated by the virus, and because β-catenin is recruited to the viral replication centers, we hypothesized that β-catenin activity is required for the completion of the viral life cycle. We infected cells treated with an inhibitor of β-catenin activity, iCRT14 (Gonsalves et al., 2011), and measured viral gene expression at 5 hr post-infection (Figure 7A–D). Our results indicate that β-catenin inhibition had no or minimal impact on immediate-early gene expression (Figure 7A) but significantly inhibited early and late gene expression (Figure 7B–D). These observations are in agreement with the late recruitment of β-catenin to the viral RCs described above.
 
@@ -128,52 +180,265 @@ How HSV-1 infection causes this massive reprogramming of the host cell state is 
 
 ## Materials and methods
 
-## Cells, viruses and inhibitors
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HDFn, primary human dermal fibrobalsts</td>
+      <td>Cascade Biologics</td>
+      <td>cat #C0045C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat #86012804-1VL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Mel624</td>
+      <td></td>
+      <td></td>
+      <td>Mel624 is a patient-derived melanoma cell-line, generated by the lab of Professor Thomas Gajewski at the Univeristy of Chicago</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>Vero</td>
+      <td>Obtained from the lab of Matthew D Weitzman, University of Pennsylvania</td>
+      <td></td>
+      <td>Used to grow wildtype HSV-1 and for plaque assay</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>Obtained from the lab of Matthew D Weitzman, University of Pennsylvania</td>
+      <td></td>
+      <td>Used to grow δICP0 HSV-1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HSV-1)</td>
+      <td>Wild-type strain 17, ICP4-YFP</td>
+      <td>Everett et al., 2003</td>
+      <td></td>
+      <td>Obtained from the lab of Matthew D Weitzman, University of Pennsylvania</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HSV-1)</td>
+      <td>δICP0 strain 17, ICP4-YFP</td>
+      <td>Everett et al., 2003</td>
+      <td></td>
+      <td>Obtained from the lab of Matthew D Weitzman, University of Pennsylvania</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-catenin (mouse monoclonal)</td>
+      <td>R and D systems</td>
+      <td>MAB13291-SP</td>
+      <td>Used for IF 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRF3 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>cat #11904</td>
+      <td>Used for IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer ICP4 Fwd</td>
+      <td>IDT</td>
+      <td>GCGTCGTCGAGGTCGT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer ICP4 Rev</td>
+      <td>IDT</td>
+      <td>CGCGGAGACGGAGGAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer ICP8 Fwd</td>
+      <td>IDT</td>
+      <td>CGACAGTAACGCCAGAAGCTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer ICP8 Rev</td>
+      <td>IDT</td>
+      <td>GGAGACAAAGCCCAAGACGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer gB Fwd</td>
+      <td>IDT</td>
+      <td>CACCGCTACTCCCAGTTTATGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer gB Rev</td>
+      <td>IDT</td>
+      <td>CCCTTGGCGTTGATCTTGTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer UL36 Fwd</td>
+      <td>IDT</td>
+      <td>CGGGTCAAAAAGGTATGCGGTGT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer UL36 Rev</td>
+      <td>IDT</td>
+      <td>TGTCGTACACGCTCCTAACCATTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer IFIT1 Fwd</td>
+      <td>IDT</td>
+      <td>CCT CCT TGG GTT CGT CTA CA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>QPCR primer IFIT1 Rev</td>
+      <td>IDT</td>
+      <td>GAA ATG AAA TGT GAA AGT GGC TGA T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>QPCR primer IFIT2 Fwd</td>
+      <td>IDT</td>
+      <td>GCTGAATCCTGACAACCAGTACC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>QPCR primer IFIT2 Rev</td>
+      <td>IDT</td>
+      <td>CACCTTCCTCTTCACCTTCTTCAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer CTNNB1 Fwd</td>
+      <td>IDT</td>
+      <td>GAGATGGCCCAGAATGCAGTT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>QPCR primer CTNNB1 Rev</td>
+      <td>IDT</td>
+      <td>GGTGCATGATTTGCGGGAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA againstβ-catenin</td>
+      <td>Dharmacon</td>
+      <td>M-003482-00-0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA non-targeting</td>
+      <td>Dharmacon</td>
+      <td>D-001206-13-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNEasy PLUS minikit</td>
+      <td>QIAGEN</td>
+      <td>cat #74134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>iCRT14</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat ##SML0203</td>
+      <td>Stock made in DMSO - 20 mM. Used at 20 micromolar final concentration</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Single cell RNA seq analysis</td>
+      <td>This paper</td>
+      <td>https://github.com/nirdrayman/single-cell-RNAseq-HSV1.git</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells, viruses and inhibitors
 
 Primary neonatal human dermal fibroblasts (HDFn) were purchased from Cascade Biologics (cat #C0045C), grown and maintained in medium 106 (Cascade Biologics, cat #M106500) supplemented with Low Serum Growth Supplement (Cascade Biologics, cat #S00310). Cells were maintained for upto eight passages, and experiments were performed on cells between passages 4 and 7. A549 cells were purchased from Sigma-Aldrich and maintained in DMEM supplemented with 10% fetal bovine serum. Mel624, a patient-derived melanoma cell-line, was obtained from the lab of Professor Thomas Gajewski at the Univeristy of Chicago and maintained in RPMI supplemented with HEPES, NEAA, Pen/Strep and 10% fetal bovine serum. Vero and U2OS cells (obtained from the laboratory of Matthew D. Weitzman, University of Pennsylvania) were grown in DMEM supplemented with 10% fetal bovine serum and were used for viral propagation and titration. All of the cells that were used were routinely subjected to mycoplasma testing by PCR and found negative.
 
 Wildtype and ΔICP0 HSV-1 (strain 17) viruses expressing ICP4-YFP were generated by Roger Everett (Everett et al., 2003) and were a kind gift from Matthew D. Weitzman. Viral stocks were prepared by infecting Vero cells (for wildtype virus) or U2OS cells (for ΔICP0) at an MOI of 0.01. Viral progeny were harvested 2–3 days later using three cycles of freezing and thawing. Viral stocks were titrated by plaque assays on Vero cells, aliquoted and stored at −80°C. iCRT14, a β-catenin inhibitor, was purchased from Sigma-Aldrich (cat #SML0203) and dissolved in DMSO to make a 20 mM stock solution. iCRT14 stock solution (or DMSO alone as a control) was diluted 1:1000 in growth medium for cell treatment (20 µM final concentration).
 
-## Measuring genomes to plaque-forming unit (PFU) ratio and determining MOI for experiments
+### Measuring genomes to plaque-forming unit (PFU) ratio and determining MOI for experiments
 
 We determined the amount of viral genomes in our viral stocks using digital droplet PCR (ddPCR), a method that allows absolute quantification of nucleic acids. 10 µl of viral stock was combined with 90 µl of lysis solution (0.6% SDS, 400 µg/ml Proteinase K) and incubated over night at 37°C. The solution was then boiled (at 95°C) for 10 min and 10-fold serial dilutions were made in H2O. Three primer sets (detecting the viral DNA of the TK, gB or UL36 genes) were used to quantify the amount of viral DNA. PFU were counted by plaque assay on Vero cells. These measurements revealed a genomes:PFU ratio of 36 ± 4 for wildtype HSV-1 and 1,422 ± 34 for ΔICP0. The MOI for experiments was determined empirically, to achieve ~50% ICP4+ cells at 5 hr post infection of HDFn. This corresponded to an MOI of 2 for wild-type virus and an MOI of 0.5 for ΔICP0. Note that, assuming a Poisson distribution, it is unlikely that any of the cells in our experiment did not encounter at least one viral genome (p=4×10−31 for wildtype and 1 × 10−304 for ΔICP0).
 
-## Time-lapse fluorescent imaging
+### Time-lapse fluorescent imaging
 
 HDFn cells were seeded on 6-well plates and allowed to attach and grow for one day. On the day of the experiment, cells were counted and infected with HSV-1 at an MOI of 2. Cells were washed once with 106 medium without supplements, and virus was added in the same serum-free media at a final volume of 300 μl per well. Virus was allowed to adsorb to cells for one hour at 37°C with occasional agitation to avoid cell drying. The inoculum was aspirated and 2 ml of full- growth medium was added: this point was considered as ‘time zero'. Cells were imaged on a Nikon Ti-Eclipse, which was equipped with a humidity and temperature control chamber. Images were acquired every 15 min for 24 hr from multiple fields of view. Image analysis was performed with ImageJ and MATLAB.
 
-## Single-cell RNA-sequencing
+### Single-cell RNA-sequencing
 
 HDFn infected with wildtype HSV-1 at an MOI of 2 or ΔICP0 at an MOI of 0.5 were harvested at 5 hr post-infection and washed three times in PBS containing 0.01% BSA. Cells were counted and processed according to the Drop-seq protocol (Macosko et al., 2015) in the Genomics facility core at the University of Chicago. Sequencing was performed on the Illumina NextSeq500 platform. Preliminary data analysis (quality control, trimming of adaptor sequences, UMI and cell barcode extraction) was performed on a Linux platform using the Drop-seq Tools (Version 1.13) and the Drop-seq Alignment Cookbook (Version 1.2), which are available at https://github.com/broadinstitute/Drop-seq/releases. Alignment of reads was performed using the STAR aligner (Version 2.5.4b) (Dobin et al., 2013) to a concatenated version of the human GRCh38 primary assembly (Gencode release 27) and HSV-1 genomes (Genbank accession: JN555585). The HSV-1 genome annotation file was kindly provided by Moriah Szpara (Pennsylvannia State University). Following the generation of the DGE (digital gene expression) file, further analyses were performed in MATLAB, these included quality control, cell clustering, correlation and differential gene expression analyses and data visualization. All the of the scripts used for data analysis have been deposited in Github (Drayman, 2019; copy archived at https://github.com/elifesciences-publications/single-cell-RNAseq-HSV1). Key points in the analysis are expanded on below.
 
-## Cell filtering
+#### Cell filtering
 
 Following the construction of the initial DGEs (digital expression matrices), we filtered out cells with low (below 2000) and high (above 10,000) Unique Molecular Identifier (UMI) counts. We then assessed the fraction of mitochondrial genes in individual cells and filtered out cells with high mitochondrial fraction (above 0.2 for mock- and wildtype-infected cells, above 0.4 for ΔICP0-infected cells). The distributions of the number of UMI, total genes and mitochondrial genes are presented in Figure 1—figure supplement 1. This resulted in three DGEs, one for each condition (mock-infected, wildtype-infected and ΔICP0-infected) containing 4500, 807 and 1613 cells, respectively.
 
-## Normalization and UMI regression
+#### Normalization and UMI regression
 
 The DGEs were log-normalized by dividing gene expression by the total number of UMI for each cell, multiplying by 10,000, adding one and taking the log of the value. We then regressed out the effect of the number of UMI on gene expression, by constructing a linear model for each gene’s expression as a function of total number of UMI. The expected value from the model was subtracted from the gene’s expression and the residual kept. We then performed Z-scoring, by subtracting the gene’s mean expression and dividing by the gene’s standard deviation.
 
-## Cell-cycle regression
+#### Cell-cycle regression
 
 A list of 14 G2/M marker genes (HMGB2, CDK1, NUSAP1, UBE2C, BIRC5, TPX2, TOP2A, NDC80, CKS2, NUF2, CKS1B, MKI67, TMPO, and CENPF) was used to construct a cell-cycle score (for every gene from the list expressed by the cell, +1 was added to the score). Regression of the cell-cycle score was done as described above for UMI regression (keeping the residual after linear model fitting).
 
-## Clustering and differential gene expression analysis
+#### Clustering and differential gene expression analysis
 
 Cell were clustered using k-means clustering. For clustering wild-type-infected cells, we used all the host and viral genes. For ΔICP0-infected cells, we used the viral genes as well as the top host genes that correlated with viral gene expression (top 100 correlated and top 100 anti-correlated). Genes that are differentially expressed between clusters were then identified by a two-sided Wilcoxon rank sum test, followed by Benjamini and Hochberg false-detection rate (FDR) correction. A gene was considered differentially expressed if the FDR-corrected p-value was below 0.05.
 
-## RNA-sequencing of sorted cells
+### RNA-sequencing of sorted cells
 
 HDFn cells were mock infected or HSV-1 infected as described above, trypsinized, washed and re-suspended in full growth media. Cells were filtered through a 100 μm mesh into FACS sorting tubes and kept on ice. HSV-1 infected cells were sorted into two populations based on their ICP4-YFP expression. 0.5 million cells were collected from each population. Mock-infected cells were similarly sorted. ICP4-negative cells had the same level of YFP fluorescence at mock-infected cells. For ICP4-positive cells, we collected cells that were in the top 30% of YFP expression. The two populations were clearly separated from each other. Sorting was performed on an AriaFusion FACS machine (BD) at the University of Chicago flow-cytometry core facility. Total RNA was extracted from cells using the RNeasy Plus Mini Kit (QIAGEN) and submitted to The University of Chicago Genomics core for library preparation and sequencing on a HiSeq4000 platform (Illumina). Reads were mapped to a concatenated version of the human and HSV-1 genomes with STAR aligner (see single-cell RNA-sequencing above for details). Reads were counted using the featureCounts command, which is a part of the Subread package (Liao et al., 2013). Further analyses were performed in MATLAB and these included differential gene expression analyses and data visualization.
 
-## Data availability
+### Data availability
 
 All sequencing data have been deposited in the Gene Expression Omnibus (GEO) under accession number GSE126042. All of the scripts used for data analysis and visualization are available through GitHub at: https://github.com/nirdrayman/single-cell-RNAseq-HSV1.git.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 HDFn were seeded in 24-well plates and allowed to attach and grow for one day. Cells were infected as described above and fixed using a 4% paraformaldehyde solution at 5 hr post-infection. Cells were fixed for 15 min at room temperature and washed, blocked and permeabilized with a 10% BSA, 0.5% Triton-X solution in PBS for one hour. Cells were then incubated with primary antibodies in a staining solution (2% BSA, 0.1% Triton-X in PBS) overnight at 4°C. Cells were washed three times with PBS, incubated with secondary antibodies in staining solution for 1 hr at room temperature, washed three times with PBS and covered with 1 ml PBS containing a 1:10,000 dilution of Hoechst 33342 (Invitrogen, cat #H3570). Cells were imaged on a Nikon Ti-Eclipse inverted epi-fluorescent microscope. Primary antibodies were mouse monoclonal anti-β-catenin (R and D systems, cat #MAB13291, used at 1:200 dilution) and rabbit monoclonal anti-IRF3 (Cell Signaling Technologies, Cat #11904S, used at 1:400 dilution). Secondary antibodies were AlexaFluor 555 conjugated anti-mouse and anti-rabbit F(ab’)two fragments (Cell Signaling Technologies, cat #4409S, #4413S, used at 1:1000 dilution).
 
-## siRNA nucleofection
+### siRNA nucleofection
 
 5 × 105 HDFn cells were washed once in PBS and nucleofected with 1 µM siRNA against β-catenin (Dharmacon, siGENOME Human CTNNB1, cat #M-003482-00-0005) or with a scrambled siRNA control (Dharmacon siGENOME Non-Targeting siRNA Pool #1, cat #D-001206-13-05) using the Human Dermal Fibroblast Nucleofector Kit (Lonza, cat #VPD-1001). β-catenin expression was assayed 3 days later by Q-PCR.

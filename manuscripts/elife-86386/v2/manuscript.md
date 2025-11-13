@@ -15,21 +15,21 @@
 
 ### Affiliations
 
-1. https://ror.org/01xtthb56 RITMO Centre for Interdisciplinary Studies in Rhythm, Time and Motion, Department of Psychology, University of Oslo Oslo Norway
-2. https://ror.org/01xtthb56 RITMO Centre for Interdisciplinary Studies in Rhythm, Time and Motion, Department of Musicology, University of Oslo Oslo Norway
-3. https://ror.org/01an7q238 Helen Wills Neuroscience Institute and Department of Psychology, University of California, Berkeley Berkeley United States
-4. https://ror.org/03pcc9z86 Université de Franche-Comté, SUPMICROTECH, CNRS, Institut FEMTO-ST Besançon France
-5. https://ror.org/02g40zn06 Université Paris Cité, Institute of Psychiatry and Neuroscience of Paris (IPNP), INSERM U1266, Team TURC Paris France
+1. RITMO Centre for Interdisciplinary Studies in Rhythm, Time and Motion, Department of Psychology, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+2. RITMO Centre for Interdisciplinary Studies in Rhythm, Time and Motion, Department of Musicology, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+3. Helen Wills Neuroscience Institute and Department of Psychology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+4. Université de Franche-Comté, SUPMICROTECH, CNRS, Institut FEMTO-ST Besançon France ([ROR:03pcc9z86](https://ror.org/03pcc9z86))
+5. Université Paris Cité, Institute of Psychiatry and Neuroscience of Paris (IPNP), INSERM U1266, Team TURC Paris France ([ROR:02g40zn06](https://ror.org/02g40zn06))
 6. Department of Neuropsychology, Helgeland Hospital Mosjøen Norway
-7. https://ror.org/00j9c2840 Regional Department of Eating Disorders, Oslo University Hospital Oslo Norway
+7. Regional Department of Eating Disorders, Oslo University Hospital Oslo Norway ([ROR:00j9c2840](https://ror.org/00j9c2840))
 8. Department of Neurosurgery, National Hospital Copenhagen Denmark
-9. https://ror.org/00j9c2840 Department of Neurosurgery, Oslo University Hospital Oslo Norway
+9. Department of Neurosurgery, Oslo University Hospital Oslo Norway ([ROR:00j9c2840](https://ror.org/00j9c2840))
 
 † Corresponding author
 
 ## Abstract
 
-Orbitofrontal cortex (OFC) is classically linked to inhibitory control, emotion regulation, and reward processing. Recent perspectives propose that the OFC also generates predictions about perceptual events, actions, and their outcomes. We tested the role of the OFC in detecting violations of prediction at two levels of abstraction (i.e., hierarchical predictive processing) by studying the event-related potentials (ERPs) of patients with focal OFC lesions (n = 12) and healthy controls (n = 14) while they detected deviant sequences of tones in a local–global paradigm. The structural regularities of the tones were controlled at two hierarchical levels by rules defined at a local (i.e., between tones within sequences ) and at a global (i.e., between sequences ) level. In OFC patients, ERPs elicited by standard tones were unaffected at both local and global levels compared to controls. However, patients showed an attenuated mismatch negativity (MMN) and P3a to local prediction violation, as well as a diminished MMN followed by a delayed P3a to the combined local and global level prediction violation. The subsequent P3b component to conditions involving violations of prediction at the level of global rules was preserved in the OFC group. Comparable effects were absent in patients with lesions restricted to the lateral PFC, which lends a degree of anatomical specificity to the altered predictive processing resulting from OFC lesion. Overall, the altered magnitudes and time courses of MMN/P3a responses after lesions to the OFC indicate that the neural correlates of detection of auditory regularity violation are impacted at two hierarchical levels of rule abstraction.
+Orbitofrontal cortex (OFC) is classically linked to inhibitory control, emotion regulation, and reward processing. Recent perspectives propose that the OFC also generates predictions about perceptual events, actions, and their outcomes. We tested the role of the OFC in detecting violations of prediction at two levels of abstraction (i.e., hierarchical predictive processing) by studying the event-related potentials (ERPs) of patients with focal OFC lesions (n = 12) and healthy controls (n = 14) while they detected deviant sequences of tones in a local–global paradigm. The structural regularities of the tones were controlled at two hierarchical levels by rules defined at a local (i.e., between tones within sequences) and at a global (i.e., between sequences) level. In OFC patients, ERPs elicited by standard tones were unaffected at both local and global levels compared to controls. However, patients showed an attenuated mismatch negativity (MMN) and P3a to local prediction violation, as well as a diminished MMN followed by a delayed P3a to the combined local and global level prediction violation. The subsequent P3b component to conditions involving violations of prediction at the level of global rules was preserved in the OFC group. Comparable effects were absent in patients with lesions restricted to the lateral PFC, which lends a degree of anatomical specificity to the altered predictive processing resulting from OFC lesion. Overall, the altered magnitudes and time courses of MMN/P3a responses after lesions to the OFC indicate that the neural correlates of detection of auditory regularity violation are impacted at two hierarchical levels of rule abstraction.
 
 ## Introduction
 
@@ -47,37 +47,182 @@ Given the suggested involvement of OFC in predicting perceptual events and notic
 
 Scalp EEG recordings were obtained during an auditory local–global paradigm from a control group of healthy adults, a group of patients with lesions to the OFC (Figure 1) and a lesion control group of patients with lesions to the LPFC (Figure 1—figure supplements 2 and 3). The experiment had regular and irregular blocks, where the most common sequence could be either regular (xxxxx) or irregular (xxxxy), building up global expectations (i.e., predictions). When the last tone in the sequence is different from the previous, it constitutes a local deviant. On rare occasions, deviant sequences were introduced, violating the global rule. Participants were asked to detect these global violations, which might simultaneously conform or not the local rules. In total, four key conditions were generated: control (predictable tones at both local and global levels), local deviant (local rule violations), global deviant (global rule violations), and local + global deviant (combined local and global rule violations). EEG-derived ERPs for the four conditions were analyzed and three condition contrasts were conducted to assess neuronal markers of deviance processing and isolate low- and high-level prediction violations: Control vs. local deviant, control vs. global deviant, and control vs. local + global deviant (see details in Figure 2). Behavioral data were collected through written reports of the number of rare sequences detected per task block. Amplitude and latency of time-locked responses to pairs of experimental conditions and group differences were compared using nonparametric cluster-based permutation tests and independent samples t-tests (see details in ‘Materials and methods’).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig1-v2.jpg)
+
+**Figure 1.:** (A) Aggregate lesion overlay maps in axial view. The color code (from 0 to 100%) for the group overlay indicates the percentage of shared lesion coverage across patients. The redder the color, the greater the lesion overlap. Neurological convention: the right side of the brain is depicted on the right side of the image and vice versa. (B) Average percentage of damaged tissue within each Brodmann area (BA) per hemisphere. BAs with less than 2% damage are not presented.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Individual patients (1–12) and group overlay (bottom row). The color code for the group overlay indicates the number of patients with damaged tissue in that area.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Individual patients (1–6) and group overlay (bottom row). The color code for the group overlay indicates the number of patients with damaged tissue in that area.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Individual patients (1–4) and group overlay (bottom row). The color code for the group overlay indicates the number of patients with damaged tissue in that area.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Average percentage of damaged tissue within each BA per hemisphere. BAs with less than 2% damage are not presented.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig2-v2.jpg)
 
 **Figure 2.:** (A) On each trial, five or four complex tones of 50 ms duration each were presented with a fixed SOA of 150 ms. Two types of tones were used to generate these trials: tone A (composed of 440, 880, and 1760 Hz sinusoidal tones) and tone B (composed of 622, 1244, and 2488 Hz sinusoidal tones). (B) Each block started with 20 frequent sequences of tones to establish the block’s global rule. In regular xX blocks, standard sequences (75%) consisted of five repetitions of the same tone (i.e., xx│xX or control trials). These were interspersed with rare local deviant sequences (12.5% each) where the fifth sound was either different in frequency type (i.e., xy│xX or local + global deviant trials), or was omitted. The irregular xY blocks were similar, except that the standard sequences (75%) had a fifth sound differing in frequency type (i.e., xy│xY or local deviant trials), interspersed with rare (12.5%) local standard sequences (i.e., xx│xY or global deviant trials), or omission sequences. (C) By contrasting control (xx│xX) trials with local deviant (xy│xY), global deviant (xx│xY), and local + global deviant (xy│xX) trials, we isolated low-level, high-level, and combined low- and high-level prediction error (PE) responses, respectively. dur., duration; ITI, inter-trial interval; SOA, stimulus onset asynchrony.
 
-## Behavioral performance
+### Behavioral performance
 
 Participants performed the task properly with an average error rate of 9.54% (SD 8.97) for the healthy control participants, 10.55% (SD 6.18) for the OFC lesion group, and 6.37% (SD 5.79) for the LPFC lesion group. There was no statistically significant difference between the counts of rare tone sequences of the CTR group compared to the OFC group [F(1, 24) = 0.11, p=0.75], or the LPFC group [F(1, 22) = 0.96, p=0.34]. Participants from the CTR and OFC groups had a trend-level lower error rate in the irregular block (CTR: 8.39 ± 8.24%; OFC: 7.50 ± 7.34%) compared to regular block (CTR: 10.69 ± 11.36%; OFC: 13.60 ± 10.97%) [F(1, 24) = 3.55, p=0.07]. There was no block × group (CTR vs. OFC) interaction effect [F(1, 24) = 0.73, p=0.40]. This was not the case when contrasting the LPFC with the CTR group for the two blocks (LPFC; irregular block: 6.56 ± 7.73%; regular block: 6.18 ± 6.24%). There was no block [F(1, 22) = 0.31, p=0.58], or block × group interaction effect [F(1, 22) = 0.61, p=0.44].
 
-## EEG results
+### EEG results
 
-## Local deviance response: MMN and P3a components
+#### Local deviance response: MMN and P3a components
 
 Analysis of the local deviance response revealed that ERPs to local-level unpredicted tones (xy│xY trials) differed significantly from local-level predicted tones (xx│xX trials). Both groups showed condition differences corresponding to a negative cluster in the data at 67–128 ms (i.e., MMN) for the CTR group [t(13) = –6633.65, p=0.012, 61/64 channels] and at 73–131 ms for the OFC group [t(11) = –3734.49, p=0.035, 41/64 channels]. This was followed by a positive cluster at 143–313 ms (i.e., P3a) for the CTR group [t(13) = 24808.43, p<0.001, 60/64 channels], which extended from 145 to 344 ms for the OFC group [t(11) = 21796.75, p<0.001, 58/64 channels].
 
 Testing for group differences was done in the time range of the MMN (i.e., 50–150 ms, based on the statistical analysis of the CTR and OFC group condition contrasts). Analysis of the response to local-level unpredicted tones (xy│xY trials) revealed a reduced MMN for the OFC patients compared to the CTR participants in a time window from 73 to 110 ms [positive cluster: t(25) = 1396.79, p=0.028, 39/64 channels]. Group differences in the condition difference waveforms (i.e., xy│xY minus xx│xX trials) yielded similar results [t(25) = –1090.62, p=0.02]. However, the groups did not differ significantly in the time range (i.e., 140–350 ms) of the P3a (positive cluster: p=0.22, negative cluster: p=0.53). Latency analysis for the MMN and P3a did not show statistically significant differences between the two groups. See Figure 3 for a visual representation of the ERP waveforms of the CTR and OFC groups.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig3-v2.jpg)
+
+**Figure 3.:** (A) Local deviance response CTR group. To the left are the healthy control participants’ grand average ERP waveforms at midline electrodes (from top to bottom: Fz, Cz, and Pz). ERPs from the processing of (standard) tones predicted at both levels (control: xx│xX trials) are in blue, and ERPs from the processing of (deviant) tones unpredicted at the local level (local deviant: xy│xY trials) are in red. Gray shaded bars indicate times when the electrode was part of a cluster showing significant within-group condition differences. At the bottom, the topographic scalp maps represent the statistical difference values for the t-contrast of the two experimental conditions computed for the time window corresponding to the cluster with significant differences. (B) Group differences (CTR vs. OFC). To the right are the CTR and OFC grand average ERP waveforms at the same midline electrodes. ERPs from the processing of tones unpredicted at the local level (local deviant: xy│xY trials) are in red for CTR and in green for OFC. Orange shaded bars indicate times when the electrode was part of a cluster showing significant differences between the groups. At the bottom, the topographic scalp map represents the statistical difference values for the t-contrast of the two groups computed for the time window corresponding to the cluster showing differences. MMN and P3a latencies did not show statistically significant differences between groups. Dashed lines at −600, –450, −300,–150, and 0 ms depict tone onsets. Shaded areas around the waveforms represent the standard error of the mean (SEM). OFC, orbitofrontal cortex.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Group differences (CTR vs. OFC). CTR and OFC grand average ERP waveforms at the Fz and Pz electrodes. ERPs from the processing of tones predicted at both local and global levels (control: xx | xX trials) are in blue for the CTR group and in green for the OFC lesion group. (B) Group differences (CTR vs. LPFC). CTR and LPFC grand average ERP waveforms at the Fz and Pz electrodes. ERPs from the processing of tones predicted at both local and global levels (control: xx | xX trials) are in blue for the CTR group and in purple for the LPFC lesion group. Dashed lines at −600, –450, −300, –150, and 0 ms depict tone onsets. Shaded areas around the waveforms represent the standard error of the mean (SEM). OFC, orbitofrontal cortex; ERP, event-related potential; LPFC, lateral prefrontal cortex.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** CTR and LPFC grand average ERP waveforms at the Fz and Pz electrodes. ERPs from the processing of tones unpredicted at the local level (local deviant: xy | xY trials) are in red for the CTR group and in light purple for the LPFC group. Dashed lines at −600, –450, −300, –150, and 0 ms depict tone onsets. Shaded areas around the waveforms represent the standard error of the mean (SEM). ERP, event-related potential; LPFC, lateral prefrontal cortex.
+
 To better understand the nature of the ERP group differences revealed by the cluster-based permutation tests, complementary analysis on the mean amplitudes of the MMN and P3a components was conducted. The MMN was defined as the most negative peak in a post-stimulus window of 50–150 ms, and the P3a as the most positive peak in a post-stimulus window of 130–310 ms. The mean amplitude was calculated centered ±25 ms around individual peaks. The independent samples t-tests comparing the distinct components mean amplitudes between the two groups for the midline sensors revealed amplitude differences for the MMN [AFz (p=0.021), Fz (p=0.008), CPz (p=0.015), and Pz (p<0.001)] and for the P3a [AFz (p<0.001), Fz (p<0.001), FCz (p<0.001), and Cz (p=0.002)] (Supplementary file 1a*).
 
 Interestingly, responses to the standard tones predicted at both levels (xx│xX trials) did not diverge significantly between the OFC and the CTR group (positive cluster: p=0.79, negative cluster: p=0.51), or between the LPFC and the CTR group (positive cluster: p=1) (Figure 3—figure supplement 1). Analysis of the local deviance response in the time ranges of the MMN (i.e., 50–150 ms) and P3a (i.e., 140–350 ms) for the LPFC lesion control group did not reveal statistically significant differences between the LPFC and the CTR group (MMN, negative cluster: p=0.85; P3a, negative cluster: p=0.99) (Figure 3—figure supplement 2).
 
-## Global deviance response: P3b component
+#### Global deviance response: P3b component
 
 We examined the presence of only a high-level deviance response, that is, global deviance, by comparing globally unpredicted tones (global deviant: xx│xY trials) with globally predicted ones (control: xx│xX trials), while keeping the local-level predictions fulfilled. Results revealed a significant condition effect captured by a positive cluster at posterior electrodes, which lasted from 381 to 714 ms for the CTR group [t(13) = 10521.05, p=0.009, 33/64 channels], and from 419 to 799 ms for the OFC group [t(11) = 13120.99, p=0.01, 51/64 channels]. This response was long-lasting with no well-defined peak and had the classical posterior maximum scalp topography and latency of the P3b (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig4-v2.jpg)
+
+**Figure 4.:** (A) Global deviance response CTR group. To the left are the healthy control participants’ grand average ERP waveforms at three midline electrodes (from top to bottom: Fz, Cz, and Pz). ERPs from the processing of (standard) tones predicted at both local and global levels (control: xx│xX trials) are in blue, and ERPs from the processing of (standard) tones unpredicted only at the global level (global deviant: xx│xY trials) are in red. Gray shaded bars indicate times when the electrode was part of a cluster showing significant within-group condition differences. At the bottom, the topographic scalp map represents the statistical difference values for the t-contrast of the two experimental conditions computed for the time window corresponding to the cluster showing significant differences. (B) Group differences (CTR vs. OFC). To the right are the CTR and OFC grand average ERP waveforms at the same midline electrodes. ERPs from the processing of standard tones unpredicted at the global level (global deviant: xx│xY trials) are in red for the CTR group and green for the OFC group. P3b latency did not show statistically significant differences between groups. Dashed lines at −600, –450, −300, –150, and 0 ms depict tone onsets. Shaded areas around the waveforms represent the standard error of the mean (SEM). OFC, orbitofrontal cortex.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** CTR and LPFC grand average ERP waveforms at the Fz and Pz electrodes. ERPs from the processing of standard tones unpredicted at the global level (global deviant: xx | xY trials) are in red for the CTR group and light purple for the LPFC group. Dashed lines at −600, –450, −300, –150, and 0 ms depict tone onsets. Shaded areas around the waveforms represent the standard error of the mean (SEM). ERP, event-related potential; LPFC, lateral prefrontal cortex.
+
 No statistically significant differences between the two groups were found in the time window (i.e., 380–800 ms, based on CTR and OFC group condition contrasts) of the P3b (positive cluster: p=0.61, no significant negative cluster was detected) (Figure 4B). Latency analysis for the P3b did not show statistically significant differences between the two groups. No significant differences were found between the LPFC and CTR groups in the time window of the P3b (i.e., 380–800 ms) (negative cluster: p=0.77) (Figure 4—figure supplement 1).
 
-## Local + global deviance response: MMN, P3a, and P3b components
+#### Local + global deviance response: MMN, P3a, and P3b components
 
 The analysis of the local + global deviance response resulting from the comparison of tones unpredicted at both local and global levels (local + global deviant: xy│xX trials) with tones predicted at both levels (control: xx│xX trials) revealed a condition effect for both groups. The CTR group showed a deviance response (i.e., two-peak and long-lasting MMN) induced by a deviant tone that is also unpredicted by the global rule, as indexed by a negative cluster with a frontal scalp distribution at 71–186 ms [t(13) = –7229.33, p=0.016, 59/64 channels]. Moreover, the OFC patients showed a similar MMN to unpredicted deviant tones at 67–139 ms, which did not reach significance when comparing with predicted standard tones [negative cluster: t(11) = –3690.11, p=0.068]. Following the MMN, a P3 complex (composed of a frontally distributed P3a and a posteriorly distributed P3b response) was observed in CTRs, as indexed by a positive cluster extending from around 188–684 ms [t(13) = 42019.65, p<0.001, 63/64 channels]. A similar P3 complex was found for the OFC patients as indexed by a positive cluster from 217 to 710 ms [t(11) = 33590.81, p<0.001, 64/64 channels].
 
 Group-level statistics performed on the MMN time window (i.e., 70–185 ms, based on CTR and OFC group condition contrasts) showed a trend-level reduced MMN for OFC patients compared to controls in a time window between 81 and 106 ms [positive cluster: t(25) = 588.31, p=0.066, 34/64 channels]. Group differences in the difference waveforms (i.e., xy│xX minus xx│xX trials) yielded similar results [t(25) = –314.64, p=0.068]. Latency analysis showed that the MMN was not significantly delayed at midline electrodes [only a trend-level effect at FCz: t(24) = 2.26, p=0.033; and Cz: t(24) = 1.78, p=0.088 electrodes, which did not survive the false discovery rate (FDR) correction]. Group-level statistics in the time window of P3a (i.e., 180–485 ms) revealed an attenuated P3a for OFC patients compared to CTR participants in a time window from 184 to 274 ms [negative cluster: t(25) = –3730.34, p=0.024, 59/64 channels], and from 329 to 479 ms [positive cluster: t(25) = 3063.91, p=0.03, 36/64 channels]. Latency analysis showed that the P3a emerged 60.82 ms later, on average, in the OFC compared to the CTR group. The latency difference was significant for all the midline electrodes [Fz: t(24) = 4.91, p<0.001; FCz: t(24) = 4.64, p<0.001; Cz: t(24) = 4.75, p<0.001; CPz: t(24) = 3.46, p=0.002; Pz: t(24) = 4.34, p<0.001]. Table 1 shows the 50% area latencies for MMN and P3a. No statistically significant differences between the two groups were found in the time window of the P3b (i.e., 450–710 ms) for both amplitude and latency analysis. Figure 5 illustrates these results.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig5-v2.jpg)
+
+**Figure 5.:** (A) Local + global deviance response CTR group. To the left are the healthy control participants’ grand average ERP waveforms at midline electrodes (from top to bottom: Fz, Cz, and Pz). ERPs from the processing of (standard) tones predicted at both local and global levels (control: xx│xX trials) are in blue, and ERPs from the processing of (deviant) tones unpredicted at both levels (local + global deviant: xy│xX trials) are in red. Gray shaded bars indicate times when the electrode was part of a cluster showing significant within-group condition differences. At the bottom, the topographic scalp maps reflect the statistical difference values for the t-contrast of the two experimental conditions computed for the time window corresponding to the cluster with significant differences. (B) Group differences (CTR vs. OFC). To the right are the CTR and OFC grand average ERP waveforms at the same midline electrodes. ERPs from the processing of (deviant) tones unpredicted at both local and global level (local + global deviant: xy│xX trials) are in red for CTR and in green for OFC. Orange shaded bars indicate times when the electrode was part of a cluster showing significant differences between the groups. Vertical red lines indicate the 50% area latency for the CTR group while vertical green lines indicate the latency for the OFC group for the corresponding components (i.e., MMN and P3a). Asterisks (*) denote significant latency differences. At the bottom, the topographic scalp maps represent the statistical difference values for the t-contrast of the two groups computed for the time window corresponding to the cluster with observed differences. Dashed lines at −600, –450, −300, –150, and 0 ms depict tone onsets. Shaded areas around the waveforms represent the standard error of the mean (SEM). OFC,orbitofrontal cortex; MMN, mismatch negativity.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** CTR and LPFC grand average ERP waveforms at the Fz and Pz electrodes. ERPs from the processing of (deviant) tones unpredicted at both levels (local + global deviant: xy | xX trials) are in red for the CTR group and light purple for the LPFC group. Dashed lines at −600, –450, −300, –150, and 0 ms depict tone onsets. Shaded areas around the waveforms represent the standard error of the mean (SEM). ERP, event-related potential; LPFC, lateral prefrontal cortex.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/86386/elife-86386-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Local vs. local + global deviance response CTR group. To the left, healthy control participants’ grand average ERP waveforms at midline electrodes (from top to bottom: Fz, Cz, and Pz). ERPs from the processing of deviant tones predicted at the global level (local deviant: xy│xY trials) are in blue, and ERPs from the processing of deviant tones unpredicted at the global level (local + global deviant: xy│xX trials) are in red. Gray shaded bars indicate times when the electrode was part of a cluster showing significant within-group condition differences. At the bottom, the topographic scalp maps reflect the statistical difference values for the t-contrast of the two experimental conditions computed for the time window corresponding to the cluster with significant differences. (B) Group differences (CTR vs. OFC difference waves). To the right, CTR and OFC grand average ERP waveforms at the same midline electrodes. Difference wave ERPs from the processing of local deviant tones minus the processing of local + global deviant tones (xy│xX minus xy│xY trials) are in red for the CTR group and in green for the OFC group. Orange shaded bars indicate times when the electrode was part of a cluster showing significant differences between the two groups. At the bottom, the topographic scalp maps represent the statistical difference values for the t-contrast of the two groups computed for the time window corresponding to the cluster with observed group differences. Dashed lines at −600, –450, −300, –150, and 0 ms depict tone onsets. Shaded areas around the waveforms represent the standard error of the mean (SEM). OFC, orbitofrontal cortex.
+
+**Table 1.**
+ 50% area latency of MMN and P3a for the local + global deviance response.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">MMN</th>
+      <th colspan="4">P3a</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">Latency (SD)</td>
+      <td>Diff. (ms)</td>
+      <td>p-Value</td>
+      <td colspan="2">Latency (SD)</td>
+      <td>Diff. (ms)</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CTR</td>
+      <td>OFC</td>
+      <td></td>
+      <td></td>
+      <td>CTR</td>
+      <td>OFC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fz</td>
+      <td>127.40 (20.09)</td>
+      <td>138.28 (26.14)</td>
+      <td>10.88</td>
+      <td>0.242</td>
+      <td>279.88 (21.37)</td>
+      <td>334.90 (35.13)</td>
+      <td>55.01</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>FCz</td>
+      <td>127.54 (20.07)</td>
+      <td>148.21 (26.54)</td>
+      <td>20.67</td>
+      <td>0.033</td>
+      <td>280.02 (26.27)</td>
+      <td>332.78 (31.74)</td>
+      <td>52.76</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Cz</td>
+      <td>128.38 (19.57)</td>
+      <td>147.07 (33.21)</td>
+      <td>18.69</td>
+      <td>0.088</td>
+      <td>282.95 (28.77)</td>
+      <td>352.47 (45.17)</td>
+      <td>69.52</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>CPz</td>
+      <td>129.07 (23.87)</td>
+      <td>139.67 (30.96)</td>
+      <td>10.89</td>
+      <td>0.330</td>
+      <td>283.79 (24.57)</td>
+      <td>347.59 (63.79)</td>
+      <td>63.80</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Pz</td>
+      <td>130.61 (22.36)</td>
+      <td>149.19 (33.54)</td>
+      <td>18.58</td>
+      <td>0.105</td>
+      <td>292.58 (33.90)</td>
+      <td>355.57 (40.10)</td>
+      <td>62.99</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_50% area latency measures in milliseconds (ms) from the onset of the fifth tone of the sequence for the MMN and the P3a components, separately for the healthy control participants (CTR) and the OFC lesion patients (OFC). Diff. is the latency difference between the two groups (OFC vs. CTR) given in ms; p-values as a result of independent samples t-tests comparing the component’s 50% area latency between the two groups. Standard deviation (SD) is given in brackets.OFC, orbitofrontal cortex; MMN, mismatch negativity._
 
 To provide clarity regarding whether the MMN and P3a group differences revealed by the cluster-based permutation tests are amplitude differences or outcomes of latency variations, complementary analysis of the mean amplitudes of the MMN and P3a components was conducted. The MMN was defined as the most negative peak in a post-stimulus window of 50–250 ms and the P3a as the most positive peak in a post-stimulus window of 150–350 ms. The mean amplitude was calculated centered ±40 ms around individual peaks. The independent samples t-tests comparing the distinct components mean amplitudes between the two groups for the midline sensors revealed amplitude differences for the MMN [AFz (p=0.007), FCz (p=0.051), Cz (p=0.004), CPz (p=0.002), and Pz (p<0.001)], but not for the P3a (Supplementary file 1b). Thus, the group differences for the P3a elicited by the local + global deviance seem to be a by-product of latency differences.
 
@@ -91,11 +236,11 @@ In summary, in both groups, local-level deviant tones produced an early MMN foll
 
 We aimed to delineate the involvement of the OFC in detecting violations of predictions (i.e., PE) at the two hierarchical levels of the local–global paradigm. To this end, we studied the neurophysiological markers of auditory deviance processing in patients with focal OFC lesions and healthy controls while occasionally violating their predictions at a local (i.e., between tones within sequences) and at a global (i.e., between sequences) timescale. By attending to tone sequences and counting any rare sequences, we expected that participants would extract the global rule that characterized deviant sequences. The reported counts suggest that patients accomplished the counting properly despite their brain damage. Moreover, their general intellectual ability and scores on standardized neuropsychological tests did not differ significantly from the control group and were well within the normal range compared to normative data. This indicates that they did not have deficits in the types of learning, memory, psychomotor speed, and cognitive executive functioning tested (see Table 3). However, the ERP findings showed that processing of auditory stimuli that violated predictions at the local level was affected by the OFC lesion. OFC lesions also impacted processing of stimuli that violated predictions at both the local and global levels. On the other hand, processing of predicted stimuli at the local level (i.e., standard tones), even when these were unpredicted by the global rule, was preserved. Comparable effects were absent in patients with lesions restricted to the LPFC, which lends a degree of anatomical specificity to the altered predictive processing resulting from OFC lesions. These findings indicate that the OFC plays a role in the detection of local and local + global auditory PEs, thus providing a novel perspective on the involvement of this region in predictive processing.
 
-## OFC lesions affect the processing of local-level deviants
+### OFC lesions affect the processing of local-level deviants
 
 At the local level (xy│xY), deviant auditory stimuli generated a low-level PE response indexed by two successive ERP components within an early 70–310 ms window, an MMN followed by a P3a. The ERP responses were comparable to those reported in previous studies using a similar experimental design (Chennu et al., 2016; Chennu et al., 2013; Doricchi et al., 2021; Wacongne et al., 2011; Bekinschtein et al., 2009). These studies have traditionally interpreted the short-term (i.e., local level) MMN as a bottom-up PE signal, which indexes the amount of information in each deviant event that is not explained away by top-down prediction signals. The P3a, which is sensitive to the local status of the deviant tone, has also been reported in previous scalp- (Chennu et al., 2016, Doricchi et al., 2021, Kompus et al., 2020, Bekinschtein et al., 2009) and intracranial (El Karoui et al., 2015) EEG studies. It has been associated with the orienting of attention towards the unexpected local deviant stimulus, or the evaluation of its contextual novelty, that is, how novel the tone is when considered in a global context (Escera and Corral, 2007). The OFC patients had ERPs with similar morphology and scalp distribution as the controls, but the MMN amplitude was significantly attenuated. This dampening of the MMN elicited by local-level deviants shows for the first time that the OFC is involved in low-level sensory processing of prediction violation.
 
-## OFC lesions affect the processing of local- and global-level deviants
+### OFC lesions affect the processing of local- and global-level deviants
 
 Most studies using the local–global paradigm tested the global violation by pooling over all rare sequences of tones (i.e., xx | xY and xy | xX trials), which, as per our assumptions, contains two different types of PE signals. We split this classical global condition into local + global and global deviance (see ‘Materials and methods’). The former requires detection of a deviant following a sequence of four identical tones (i.e., low-level PE) and concurrently identifying this rare sequence as a global deviant (i.e., high-level PE). The latter requires detection of a rare sequence of five identical tones as a global deviant (i.e., only high-level PE). The detection of local + global deviance evoked patterns of brain activity comprised of a ‘two-peak’ and long-lasting MMN (70–185 ms) followed by a sustained positive polarity ERP, consisting of a frontally distributed P3a and a posteriorly distributed P3b response. The ‘two-peak’ appearance of the MMN, which was not present in response to the local deviance, may suggest overlapping of an ‘early MMN’ with a succeeding N2b component. The N2b has been associated with voluntary attention (Näätänen et al., 1978), contrary to the ‘early MMN,’ which is thought to reflect automatic and short-term processing of novelty (Pegado et al., 2010). In our study, the ‘early MMN’ would reflect accumulation of evidence based on short-lived echoic memory representation or, in predictive coding terms, an automatic, low-level PE response. On the other hand, the N2b, along with P3a, may indicate a stronger influence of voluntary attentional resources engaged in the local + global deviance processing (i.e., low- and high-level PE), where an accumulation of evidence on longer timescales is required.
 
@@ -103,15 +248,15 @@ Previous research showed that auditory sequences containing infrequent pitch dev
 
 The OFC patients showed the same pattern of ERP responses as the healthy controls, but the MMN amplitude was attenuated, while the latency of P3a was prolonged by ≈ 60 ms. Consequently, the OFC lesions affect not only the neural responses elicited by the local-level violation, but also the responses elicited by violations which are unpredicted at the global level, and therefore require integration of information over longer timescales and at a higher level of abstraction. To our knowledge, only one previous study has reported reduced P3a amplitudes in OFC patients performing an auditory novelty oddball task (Løvstad et al., 2012) and no studies have reported latency effects. A larger number of studies have found reduced MMN to local-level auditory deviants after damage to the dlPFC, (Alho et al., 1994; Alain et al., 1998) while P3 reduction has been found in LPFC patients, indicating a deficit in the orienting response to unexpected and novel stimuli (Knight, 1984; Daffner et al., 2000; Daffner et al., 2003).
 
-## Preserved processing of global-level deviants
+### Preserved processing of global-level deviants
 
 The detection of global deviance elicited a late posterior P3b and no earlier ERP responses. Another study using the same paradigm demonstrated only P3b-like responses elicited by sequences of five identical tones unpredicted by the global rule (Wacongne et al., 2011). A sequence of five identical tones eliciting a novelty signal when participants expected a different sequence was seen by the authors as suggestive that the brain operates as a multilevel predictive system with P3b reflecting a high-level PE. Although we expected that OFC lesions would affect the P3b as well, our results showed unaffected P3b responses for both global and local + global deviance detection. One possible explanation is that P3b is elicited by target detection and not deviance detection per se, that is, specifically linked to the detection of events that are salient or important to the current goal and memory-related processes (Polich, 2007; Polich and Criado, 2006; Walentowska et al., 2016). Note that as participants were instructed to count the total number of global deviations, these violations (i.e., xx│xY and xy│xX) were also the targets in the present study. Indeed, in oddball tasks, targets, but not other deviants, elicit large amplitude P3b responses associated with voluntary detection of infrequent and task-relevant stimuli (Soltani and Knight, 2000). Interestingly, when the same paradigm was used in patients suffering from disorders of consciousness, the P3 response to global novelty was only observed in patients who showed signs of consciousness (Bekinschtein et al., 2009; Faugeras et al., 2012; Faugeras et al., 2011). The P3b response in this task could thus reflect downstream processes related to conscious access per se (Sergent and Naccache, 2012; Aru et al., 2012) and not a high-level deviance detection signal. Moreover, lesions in the lPFC (Knight, 1984; Knight and Scabini, 1998; Løvstad et al., 2012) and the OFC (Løvstad et al., 2012) have been found to reduce the amplitude of the P3a but not the P3b, supporting normal target detection and suggesting that the OFC is not critical for P3b generation. Besides P3 potentials, early PE responses (60–220 ms) to global unexpected sequences have been observed using sequences of tones in scale (Volehaugen, 2021). Here, the response to global deviance (i.e., sequence of repetitive tones) is attenuated, and therefore, early effects of top-down prediction modulations might not be observable.
 
-## Lack of findings in the LPFC lesion group
+### Lack of findings in the LPFC lesion group
 
 Intracranial studies examining local- and global-level PE detection have pointed to the role of the inferior frontal gyrus (IFG) as a frontal source supporting top-down predictions in MMN generation (Phillips et al., 2016; Nourski et al., 2018; Dürschmid et al., 2016; Rosburg et al., 2005). Responses to global deviants but not local deviants (i.e., no MMN) have been observed in the LPFC, but not the IFG (El Karoui et al., 2015). Additionally, studies employing dynamic causal modeling of MMN have frequently modeled frontal sources encompassing the IFG (Garrido et al., 2009a; Phillips et al., 2015). A review study highlighted the potential contributions of both IFG and middle frontal gyrus to MMN generation, suggesting that the specific source might vary depending on deviant characteristics, such as pitch or duration (Deouell, 2007). Based on these findings, which implicate the LPFC in predictive processing and the generation of MMN, we expected to find altered neural responses following LPFC lesions. In an early LPFC lesion study (Alho et al., 1994), diminished MMN to local-level deviants was reported, with the lesion cohort exhibiting a hemisphere ratio of 7/3 for left and right hemispheres, which is different from our cohort’s ratio of 4/6. Furthermore, all individuals in that study had infarcts in the middle cerebral artery, resulting in a more uniform lesion location compared to our cohort. Notably, the lesions observed in our LPFC group appeared to be situated in more superior brain regions and toward the MFG compared to the predominantly reported involvement of the IFG in previous studies. Another factor that might contribute to no effects is the heterogeneity of the lesions in our LPFC group (see Figure 1—figure supplements 1–4). Especially for the left hemisphere cohort, the individual lesions did not share a consistent anatomical location. The right hemisphere cohort showed a higher degree of lesion overlap, but overall, the lesions were not centered in the IFG area, with the highest overlap being in the MFG area. This variation in lesion location could potentially explain the lack of effects observed in the present study.
 
-## OFC and hierarchical predictive processing
+### OFC and hierarchical predictive processing
 
 In the context of predictive coding, the MMN is explained in terms of perceptual learning under hierarchical generative models of auditory input (Friston, 2005; Baldeweg, 2006). MMN is viewed as a cortical driven PE signal, which can only be accounted for by postulating a top-down predictive contribution (Friston, 2005; Garrido et al., 2009a; Garrido et al., 2007; Parmentier et al., 2011; Winkler, 2007). Numerous studies have identified MMN generators in both the superior temporal planes and the PFC, (Opitz et al., 2002; Doeller et al., 2003; Liebenthal et al., 2003; Molholm et al., 2005; Shalgi and Deouell, 2007; Deouell, 2007; Jemel et al., 2002), suggesting that it emerges from the deviant-induced suspension of neural adaptation within the primary auditory cortices, coupled with changes in temporo-frontal connections (Garrido et al., 2008; Garrido et al., 2009a; Phillips et al., 2015; Phillips et al., 2016; Garrido et al., 2009c). This perspective on the MMN supports the existence of a hierarchy of internal models, wherein predictions are transmitted in a top-down manner to lower sensory areas. Within this framework, the observed changes in MMN responses following OFC damage show the role of this brain region in the neural circuitry underlying MMN generation and its contribution to the top-down process that modulates the deviance detection system in lower sensory areas. Specifically, the reduction in MMN amplitude in response to local prediction violations implicates a lesion-induced effect on sensory predictive signaling, possibly stemming from weaker formation of top-down predictions at the local level, that is, the weaker the prediction the lesser the mismatch reflected in the MMN response. Furthermore, the OFC lesion-related modulations extended to the processing of global regularities, as evidenced by the reduced MMN response accompanied by the delayed P3a response to violations involving both local and global predictions. The influence on ERPs indexing detection and attention to global-level violations might reflect a disturbance in the recurrent interactions between cortical regions (i.e., temporo-frontal connections), leading to weakened predictions in OFC patients. It could possibly reflect a reduced connection between PEs at lower hierarchical areas and predictions at higher areas.
 
@@ -123,7 +268,7 @@ Although experimental evidence, reinterpreted with predictive coding, suggests P
 
 The OFC is unique among areas in the PFC, connecting with all five sensory modalities and relevant memory and decision-making areas such as the hippocampus and striatum (Du et al., 2020). It might therefore be in a privileged position to generate predictions based on contextual and temporal structure in the environment, allowing quick adaptation to new rules (Stalnaker et al., 2015; Wilson et al., 2014). Moreover, studies on time perception (Solbakk et al., 2021; Berlin et al., 2004) support the importance of an intact OFC in maintaining temporal information needed to sustain a stable map of task context for longer periods, ultimately optimizing predictions (Schuck et al., 2016; Schuck et al., 2018). Our findings align with these reports, highlighting the OFC’s role in maintaining internal representations of auditory sequences and generating robust PE signals when deviations occur.
 
-## Limitations and future directions
+### Limitations and future directions
 
 There are special challenges in interpreting ERP findings in brain lesion populations (e.g., Kutas et al., 2012; Jaeger and Parente, 2008). Structural brain pathology linked to post-lesion changes in neural tissue and anatomy can introduce variations in electrical activity conduction and alter current flow patterns (Jaeger and Parente, 2008; Løvstad and Cawley, 2011; Voytek et al., 2010). To conclude that ERP differences between patient and control groups reflect functional disturbance in particular cognitive processes, and not primarily effects of structural brain damage, it is useful to demonstrate that they are specific to certain ERP components/stages of information processing and task conditions (Kutas et al., 2012; Swaab, 1998). The altered ERP responses in the present study were limited to specific task conditions and did not manifest uniformly across all data. This condition-dependent pattern suggests that the observed group differences are related to the specific cognitive processes engaged during those task conditions, rather than being a global artifact of volume conduction. Additionally, the latency differences in scalp potentials observed particularly during the processing of local + global prediction violation further support the notion that these variations reflect genuine differences in cognitive processing (Hämäläinen et al., 1993).
 
@@ -131,19 +276,399 @@ Another constraint of our study is the heterogeneity of the LPFC lesion control 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 In total, 12 patients with lesions in the OFC and 14 healthy control participants (CTR) were enrolled in the experiment. We also included a lesion control group, which consisted of 10 patients with unilateral lesions to the LPFC; four in the left and six in the right hemisphere (see Figure 1—figure supplements 2 and 3 for LPFC lesion reconstructions). Among the OFC group, 10 had bilateral damage and 2 had unilateral damage. All patients were in the chronic phase of recovery, that is, at least 2 years’ post-tumor resection or trauma. Details about the OFC lesions are provided in Table 2 and Figure 1—figure supplement 1, while details about the LPFC lesions are available in Figure 1—figure supplement 4 and Supplementary file 1e. CTRs were recruited by advertisement and personal contact, whereas patients were recruited through the Department of Neurosurgery at Oslo University Hospital. Inclusion of patients was based on the presence of focal frontal lobe lesions as indicated on pre-existing structural CT and/or MRI scans.
 
+**Table 2.**
+ Characteristics of lesions to the orbitofrontal cortex (OFC).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Etiology</th>
+      <th colspan="3">Lesion size (cm3)</th>
+      <th>BA (left hemisphere)</th>
+      <th>BA (right hemisphere)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OFC</td>
+      <td></td>
+      <td>Total</td>
+      <td>L</td>
+      <td>R</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Olfactory meningioma</td>
+      <td>43.0</td>
+      <td>23.2</td>
+      <td>19.8</td>
+      <td>10, 11</td>
+      <td>10, 11</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Traumatic brain injury</td>
+      <td>24.9</td>
+      <td>6.4</td>
+      <td>18.5</td>
+      <td>11</td>
+      <td>10, 11, 47</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Traumatic brain injury</td>
+      <td>157.4</td>
+      <td>59.8</td>
+      <td>97.6</td>
+      <td>8–11, 32, 45–48</td>
+      <td>6, 8–11, 24, 32, 44–48</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Olfactory meningioma</td>
+      <td>117.9</td>
+      <td>56.4</td>
+      <td>61.5</td>
+      <td>9–11, 32, 46, 47</td>
+      <td>10, 11, 32, 45–47</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Olfactory meningioma</td>
+      <td>6.6</td>
+      <td>3.2</td>
+      <td>3.4</td>
+      <td>11</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Olfactory meningioma</td>
+      <td>8.6</td>
+      <td>3.1</td>
+      <td>5.4</td>
+      <td>11</td>
+      <td>10, 11</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Olfactory meningioma</td>
+      <td>8.8</td>
+      <td>1.3</td>
+      <td>7.5</td>
+      <td>11</td>
+      <td>11, 47</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Olfactory meningioma</td>
+      <td>3.7</td>
+      <td>3.7</td>
+      <td>0</td>
+      <td>10, 11</td>
+      <td>_</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Olfactory meningioma</td>
+      <td>85.7</td>
+      <td>55.1</td>
+      <td>30.6</td>
+      <td>9–11, 25, 32, 46, 47</td>
+      <td>10, 11, 47</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Olfactory meningioma</td>
+      <td>109.0</td>
+      <td>48.8</td>
+      <td>60.3</td>
+      <td>10, 11, 32, 46, 47</td>
+      <td>9–11, 32, 45–47</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Low-grade glioma</td>
+      <td>6.4</td>
+      <td>0</td>
+      <td>6.4</td>
+      <td>_</td>
+      <td>10, 11</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Olfactory meningioma</td>
+      <td>32.6</td>
+      <td>10.1</td>
+      <td>22.5</td>
+      <td>11</td>
+      <td>10, 11, 25</td>
+    </tr>
+  </tbody>
+</table>
+
+_Etiology, size (L, left; and R, right hemisphere), and affected Brodmann areas (BA) for each hemisphere. The sign ‘_’ is used when no lesion was present in a given hemisphere. Lesions that comprise <0.2 cm3 in any given BA are not reported._
+
 The two study groups did not differ significantly regarding sex, age, or years of education. IQ was estimated based on the Verbal Comprehension and Matrices subtests of the Wechsler Abbreviated Scale of Intelligence (WASI) (Wechsler, 1999). The Digit Span test from the Wechsler Adult Intelligence Scale Third Edition (WAIS-III) (Wechsler and Psychological Corporation, 1997) was included as a measure of auditory memory span and WM. Verbal learning and memory were assessed with the California Verbal Learning Test Second Edition (CVLT-II) (Delis et al., 2000). Two tests from the Delis-Kaplan Executive Function System (D-KEFS) (Delis, 2001) were included: the Trail Making Test (TMT), which involves visual scanning, processing speed, and WM, and the Color-Word Interference Test (CWIT), which measures processing speed, inhibition of cognitive interference (i.e., the classical Stroop effect), and mental switching. Group means and statistical comparisons on neuropsychological test measures are reported in Table 3. The OFC group did not differ significantly from controls on any of the neuropsychological measures. The lesion control group (i.e., LPFC) also did not differ significantly from the control group regarding sex, age, years of education, or any of the neuropsychological measures (Supplementary file 1f).
+
+**Table 3.**
+ Demographics and neuropsychological performance measures per group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Demographics</th>
+      <th>CTR</th>
+      <th>SD</th>
+      <th>OFC</th>
+      <th>SD</th>
+      <th>F-value</th>
+      <th>p-value</th>
+      <th>Stat.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>14</td>
+      <td></td>
+      <td>12</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gender (females: males)</td>
+      <td>8:6</td>
+      <td></td>
+      <td>8:4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age years (range)</td>
+      <td>47.6 (34–66)</td>
+      <td>10.3</td>
+      <td>47.9 (27–61)</td>
+      <td>11.7</td>
+      <td>0.002</td>
+      <td>0.96</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Education years (range)</td>
+      <td>16.1 (13-21)</td>
+      <td>2.0</td>
+      <td>15 (9–21)</td>
+      <td>3.1</td>
+      <td>1.30</td>
+      <td>0.27</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Neuropsychological tests</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total IQ</td>
+      <td>115.4</td>
+      <td>10.3</td>
+      <td>112.2</td>
+      <td>8.5</td>
+      <td>0.73</td>
+      <td>0.40</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Digit Span total</td>
+      <td>14.8</td>
+      <td>2.9</td>
+      <td>15</td>
+      <td>3.8</td>
+      <td>0.013</td>
+      <td>0.91</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Digit Span – forward</td>
+      <td>8.5</td>
+      <td>1.5</td>
+      <td>8.8</td>
+      <td>2.1</td>
+      <td>0.09</td>
+      <td>0.77</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Digit Span – backward</td>
+      <td>6.3</td>
+      <td>1.8</td>
+      <td>6.3</td>
+      <td>2.2</td>
+      <td>0.005</td>
+      <td>0.94</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Trail Making Test (TMT)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>U-value</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TMT 2 – number sequencing</td>
+      <td>30.6</td>
+      <td>10.1</td>
+      <td>33.8</td>
+      <td>14.6</td>
+      <td>92.00</td>
+      <td>0.71</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>TMT 3 – letter sequencing</td>
+      <td>27.9</td>
+      <td>10.5</td>
+      <td>30.3</td>
+      <td>9.9</td>
+      <td>97.50</td>
+      <td>0.49</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>TMT 4 – number-letter switching</td>
+      <td>73.8</td>
+      <td>27.1</td>
+      <td>72.9</td>
+      <td>35.4</td>
+      <td>72.00</td>
+      <td>0.56</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Color-Word Interference Test (CWIT)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CWIT 1 – color naming</td>
+      <td>31.2</td>
+      <td>6.1</td>
+      <td>30.3</td>
+      <td>4.4</td>
+      <td>75.00</td>
+      <td>0.89</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>CWIT 2 – word reading</td>
+      <td>22.4</td>
+      <td>3.3</td>
+      <td>22.1</td>
+      <td>3.7</td>
+      <td>69.00</td>
+      <td>0.65</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>CWIT 3 – inhibition</td>
+      <td>52.0</td>
+      <td>9.0</td>
+      <td>52.3</td>
+      <td>11.0</td>
+      <td>76.50</td>
+      <td>0.94</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>CWIT 4 – inhibition/switching</td>
+      <td>58.2</td>
+      <td>11.9</td>
+      <td>60.8</td>
+      <td>18.3</td>
+      <td>74.50</td>
+      <td>0.85</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>California Verbal Learning Test (CVLT-II)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total learning trial 1–5</td>
+      <td>57.7</td>
+      <td>12.4</td>
+      <td>51.6</td>
+      <td>8.5</td>
+      <td>49.50</td>
+      <td>0.12</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Short-term free recall</td>
+      <td>15.2</td>
+      <td>1.2</td>
+      <td>14.8</td>
+      <td>1.4</td>
+      <td>66.50</td>
+      <td>0.54</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Long-term free recall</td>
+      <td>13.7</td>
+      <td>2.6</td>
+      <td>13.1</td>
+      <td>2.2</td>
+      <td>66.00</td>
+      <td>0.54</td>
+      <td>ns</td>
+    </tr>
+  </tbody>
+</table>
+
+_Comparison of the age, years of education, IQ, and Digit Span Test between the two groups (one-way ANOVA). Comparison of the non-normally distributed raw test scores, Trail Making Test (TMT), Color-Word Interference Test (CWIT) and the California Verbal Learning Test 2nd Edition (CVLT-II) between the two groups (non-parametric independent samples Mann–Whitney U-test). Values given are means, with standard deviation (SD).CTR, healthy control group; OFC, group with lesion to the orbitofrontal cortex; ns, the statistical test was not significant._
 
 All participants gave written informed consent before participating in the study. Healthy controls received 400 NOK (approximately 50 USD) for participation in the entire research project (neuropsychological assessment, EEG recording, and MRI scanning). Patients participated in conjunction with clinical follow-ups at the hospital’s outpatient clinic. Their travel and accommodation expenses were covered. The study design and protocol were approved by the Regional Committees for Medical and Health Research Ethics, South-East Norway, as part of a larger study. The study was conducted in accordance with the principles stated in the Declaration of Helsinki.
 
-## Lesion mapping
+### Lesion mapping
 
 Lesion mappings were based on structural MRI scans obtained after study inclusion and verified by the neurologist and the neurosurgeon in the research group (RTK and TRM). Lesions were manually outlined on fluid-attenuated inversion recovery (FLAIR) sequence images (1 × 1 × 1 mm3 resolution) for each participant’s brain using MRIcron2 (https://www.mccauslandcenter.sc.edu/mricro/mricron/). High-resolution T1-weighted images were used to help determine the borders of the lesions when required. Each participant’s brain was extracted from the T1 image using the FSL Bet algorithm (FSL3) and then normalized to the Montreal Neurological Institute MNI-152 template space using the Statistical Parametric Mapping software (SPM12: https://www.fil.ion.ucl.ac.uk/spm/) unified segmentation and normalization procedures, while including the drawn lesions as masks. In addition, the transformation matrix was applied to the individual participant’s FLAIR and lesion mask images. Figure 1 depicts the aggregate lesion reconstructions for the OFC group and the average percentage of damaged tissue within each Brodmann area (BA) per hemisphere (see Figure 1—figure supplement 1 for individual lesion reconstructions).
 
-## The local–global paradigm and procedures
+### The local–global paradigm and procedures
 
 Two tones composed of three sinusoidal tones (tone A: 440, 880, and 1760 Hz; tone B: 622, 1244, and 2488 Hz) were synthesized. Each tone was 50 ms long, with 7 ms rise and fall times. Sequences of four or five such tones were delivered with a fixed stimulus onset asynchrony (SOA) of 150 ms. Each sequence’s SOA was randomly drawn from a uniform distribution between 1350 and 1650 ms. Three different types of sequences were presented: (i) sequences comprised by five identical tones AAAAA or BBBBB (jointly denoted by xx), (ii) sequences comprised by four identical tones and a fifth different tone AAAAB or BBBBA (jointly denoted by xy), or (iii) sequences comprised by four identical tones AAAA_ or BBBB_ (jointly denoted by xo). Two block types were defined in the present set of analyses: regular (xX) and irregular (xY). Each block of trials started with the repetition of 20 identical sequences of tones to establish the block’s global rule, followed by 100 test trials. Block xX: 75% xx sequences referred to as xx│xX trials and 12,5% xy sequences referred to as xy│xX trials. Block xY: 75% xy sequences referred to as xy│xY trials and 12,5% xx sequences referred to as xx│xY trials. 12.5% of xo sequences were included in Block xX and Xy (see Figure 2B).
 
@@ -151,7 +676,7 @@ The experiment included two experimental sessions with 12 blocks in total (six b
 
 Participants were seated comfortably in a Faraday-shielded room in front of an LCD monitor with a 60 Hz refresh rate placed at a distance of ~70 cm from the participant while presented with auditory stimuli. Stimuli were delivered through speakers on the side of the screen at a comfortable volume. Participants were instructed to attend to the auditory stimuli and count any rare/uncommon sequences. At the end of each block, participants reported this count in a data sheet before continuing the experiment. Hence, we expected participants to attend to and extract the global rule that characterized deviant sequences.
 
-## EEG acquisition and preprocessing
+### EEG acquisition and preprocessing
 
 EEG was recorded at a 1024 Hz sampling rate using a 64-channel Active Two system (BioSemi, Amsterdam, Netherlands) with active electrodes placed in accordance with the International 10–20 system (Chatrian et al., 1985). In addition, six external electrodes were used, including two electrodes placed above and below the right eye and two placed at the right and left outer canthus (vertical and horizontal EOG channels, respectively). The last two electrodes were placed on the right and left earlobes for offline re-referencing.
 
@@ -159,13 +684,13 @@ We used the FieldTrip toolbox (Oostenveld et al., 2011) for MATLAB (R2018a, Math
 
 To ensure the validity of the neural data analysis, potential sources of bias were assessed between the healthy control participants and the OFC lesion group. Specifically, no significant differences were observed between the two groups in terms of the number of noisy channels, the number of clean trials (i.e., trials remaining after removing the noisy segments from the data), or the number of blinks across the task blocks and the experimental conditions (see Supplementary file 1g).
 
-## Data analysis
+### Data analysis
 
-## Behavioral analysis
+#### Behavioral analysis
 
 Behavioral data were collected in the form of a written report of the number of rare/uncommon sequences of tones detected (i.e., global deviants) per block. For each participant, we computed and reported the average percentage of errors over blocks, which is the deviation (positive or negative) relative to the actual number of presented global deviants.
 
-## Statistical analysis of ERPs
+#### Statistical analysis of ERPs
 
 The preprocessed data were segmented into epochs of –2400 ms to 1800 ms relative to the onset of the last tone presentation and used for further analyses. Epochs in the habituation phase (i.e., first 20 trials) of all blocks were excluded from further analysis. ERPs were calculated by averaging the stimulus-locked epochs for each condition. Prior to averaging, epochs were downsampled to 512 Hz and baseline corrected relative to the mean activity –600 to –150 ms before the onset of the last tone.
 
@@ -179,6 +704,6 @@ We estimated component latencies using the 50% area latency method (Luck, 2014; 
 
 To provide clarity regarding the nature of the observed ERP group differences (i.e., whether they are amplitude differences or outcomes of latency variations), we conducted complementary analyses on mean amplitudes of the ERP components for the conditions where significant group differences were observed. The mean amplitudes were calculated centered around the individual peaks for each component (see Supplementary file 1d and e ).
 
-## Conclusion
+### Conclusion
 
 We tested the role of the OFC in detecting violations of prediction (i.e., PEs) at two hierarchical levels of task structural complexity. Our critical finding is that low-level PEs (i.e., processing of stimuli that are unpredicted at the local level) and combined low- and high-level PEs (i.e., processing of stimuli that are unpredicted at both the local and global levels) were impacted by the OFC lesion as reflected in the altered MMN and P3a components. We suggest that the OFC likely contributes to a top-down predictive process that modulates the deviance detection system in lower sensory areas. The study sheds new light on the poorly explored involvement of the OFC in hierarchical auditory predictive processing.

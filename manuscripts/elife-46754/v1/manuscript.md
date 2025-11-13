@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.46754.001 Gene duplication is a driver of the evolution of new functions. The duplication of genes encoding homomeric proteins leads to the formation of homomers and heteromers of paralogs, creating new complexes after a single duplication event. The loss of these heteromers may be required for the two paralogs to evolve independent functions. Using yeast as a model, we find that heteromerization is frequent among duplicated homomers and correlates with functional similarity between paralogs. Using in silico evolution, we show that for homomers and heteromers sharing binding interfaces, mutations in one paralog can have structural pleiotropic effects on both interactions, resulting in highly correlated responses of the complexes to selection. Therefore, heteromerization could be preserved indirectly due to selection for the maintenance of homomers, thus slowing down functional divergence between paralogs. We suggest that paralogs can overcome the obstacle of structural pleiotropy by regulatory evolution at the transcriptional and post-translational levels.
+Gene duplication is a driver of the evolution of new functions. The duplication of genes encoding homomeric proteins leads to the formation of homomers and heteromers of paralogs, creating new complexes after a single duplication event. The loss of these heteromers may be required for the two paralogs to evolve independent functions. Using yeast as a model, we find that heteromerization is frequent among duplicated homomers and correlates with functional similarity between paralogs. Using in silico evolution, we show that for homomers and heteromers sharing binding interfaces, mutations in one paralog can have structural pleiotropic effects on both interactions, resulting in highly correlated responses of the complexes to selection. Therefore, heteromerization could be preserved indirectly due to selection for the maintenance of homomers, thus slowing down functional divergence between paralogs. We suggest that paralogs can overcome the obstacle of structural pleiotropy by regulatory evolution at the transcriptional and post-translational levels.
 
 ## Introduction
 
@@ -50,15 +50,51 @@ Previous studies have shown that HMs are enriched in eukaryotic PPI networks (Ly
 
 ## Results
 
-## Homomers among singletons and paralogs in the yeast PPI network
+### Homomers among singletons and paralogs in the yeast PPI network
 
 We first examined the extent of homomerization across the yeast proteome (see dataset in Materials and methods and the supplementary text) for two classes of paralogs, those that are small-scale duplicates (SSDs) and those that are whole-genome duplicates (WGDs). We considered these two sets separately because they may have been retained through different mechanisms (see below). The dataset for this analysis, which includes previously reported PPIs and novel DHFR Protein-fragment Complementation Assay experiments (referred to as PCA, see Materials and methods and supplementary text), covers 2521 singletons, 2547 SSDs, 866 WGDs and 136 genes that are both SSDs and WGDs (henceforth referred to as 2D) (Supplementary file 2 Tables S1 and S2). We find that among the 6070 tested yeast proteins, 1944 (32%) form HMs, which agrees with previous estimates from crystal structures (Lynch, 2012). The proportion of HMs among singletons (n = 630, 25%) is lower than for all duplicates: SSDs (n = 980, 38%, p-value<2.0e-16), WGDs (n = 283, 33%, p-value=1.6e-05) and 2D (n = 51, 38%, p-value=1.7e-03) (Figure 2A Supplementary file 2 Tables S1 and S2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-v1.jpg)
+
+**Figure 2.:** (A) The percentage of homomeric proteins in S. cerevisiae varies among singletons (S, n = 2521 tested), small-scale duplicates (SSDs, n = 2547 tested), whole-genome duplicates (WGDs, n = 866 tested) and genes duplicated by the two types of duplication (2D, n = 136 tested) (global Chi-square test: p-value<2.2e-16). Each category is compared with the singletons using a Fisher’s exact test. P-values are reported on the graph. (B and C) Interactions between S. cerevisiae paralogs and pre-whole-genome duplication orthologs using DHFR PCA. The gray tone shows the PCA signal intensity converted to z-scores. Experiments were performed in S. cerevisiae. Interactions are tested among: (B) S. cerevisiae (Scer) paralogs Tom70 (P1) and Tom71 (P2) and their orthologs in Lachancea kluyveri (Lkluy, SAKL0E10956g) and in Zygosaccharomyces rouxii (Zrou, ZYRO0G06512g) and (C) S. cerevisiae paralogs Tal1 (P1) and Nqm1 (P2) and their orthologs in L. kluyveri (Lkluy, SAKL0B04642g) and in Z. rouxii (Zrou, ZYRO0A12914g). (D) Paralogs show six interaction motifs that we grouped in four categories according to their patterns. HET pairs show heteromers only. HM pairs show at least one homomer (one for 1HM or two for 2HM). HM&HET pairs show at least one homomer (one for 1HM&HET or two for 2HM&HET) and the heteromer. NI (non-interacting) pairs show no interaction. We focused our analysis on pairs derived from an ancestral HM, which we assume are pairs showing the HM and HM&HET motifs. (E) Percentage of HM and HM&HET among SSDs (202 pairs considered, yellow) and WGDs (260 pairs considered, blue) (left panel), homeologs that originated from inter-species hybridization (47 pairs annotated and considered, dark blue) (right panel) and true ohnologs from the whole-genome duplication (82 pairs annotated and considered, light blue). P-values are from Fisher’s exact tests. (F) Percentage of pairwise amino acid sequence identity between paralogs for HM and HM&HET motifs for SSDs and WGDs. P-values are from Wilcoxon tests. (G) Pairwise amino acid sequence identity for the full sequences of paralogs and their binding interfaces for the two motifs HM and HM&HET. P-values are from paired Wilcoxon tests. (H) Relative conservation scores for the two motifs of paralogs. Conservation scores are the percentage of sequence identity at the binding interface divided by the percentage of sequence identity outside the interface. Data shown include 30 interfaces for the HM group and 28 interfaces for the HM&HET group (22 homomers and 3 heterodimers of paralogs) (Supplementary file 2 Table S13). P-value is from a Wilcoxon test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The probability that PCA detects a HM is correlated with expression level, as estimated by RNAseq. The plot shows the detection probability of HMs as a function of mRNA abundance for previously reported HMs. Kernel regression of the HM detection (one for detected, 0 for not detected) on the number of mapped reads per gene (log10). (B) Difference in HM formation between paralogs results in part from their differential mRNA abundance. The PCA score of paralog 1 (P1) is compared to the PCA score of paralog 2 (P2). PCA scores are median colony sizes from the PCA experiments performed in this study. The total mRNA abundance of paralogs is shown by the size of the points and the difference of expression levels is represented by a color gradient (red for overexpression of P2 compared to P1 and blue overexpression of P1 compared to P2). Red points tend to be above the diagonal, blue points, below the diagonal. (C) Comparison of expression levels of previously reported HMs for HMs undetected and detected in the PCA experiments performed in this study. P-value from a Wilcoxon test is shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Comparison of mRNA abundance of genes as a function of whether they rare duplicated and of their type of duplication. (B) Comparison of the protein abundance as a function of whether they rare duplicated and their type of duplication. (S: singleton, SSD: Small-Scale Duplicates, WGD: Whole-Genome Duplicates). Numbers indicate p-values from Wilcoxon tests.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Colony size (estimated as the integrated pixel intensity) in the PCA experiment as a function of the number of times the corresponding interaction is reported in BioGRID version BIOGRID-3.5.166 (Chatr-Aryamontri et al., 2013; Chatr-Aryamontri et al., 2017). (B) Correlation between colony size of the study of Stynen et al. (2018) on homomers and of the PCA experiment performed in this study. (C) Correlation between colony size of Tarassov et al. (2008) and of the PCA experiment performed in this study.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) and HETs (B) from this study and previously reported HMs and HETs. We considered HMs and HETs reported in crystal structures from the Protein Data Bank on September 21st, 2017 (Berman et al., 2000) and by PCA based on fluorescent proteins (BiFC) (Kim et al., 2019). We also include HMs and HETs reported in BioGRID (BIOGRID-3.5.166; Chatr-Aryamontri et al., 2013; Chatr-Aryamontri et al., 2017) with these methods: Affinity Capture-MS, Affinity Capture-Western, Reconstituted Complex, Two-hybrid, Biochemical Activity, Co-crystal Structure, Far Western, FRET, Protein-peptide, Affinity Capture-Luminescence and PCA. We added data from Stynen et al. (2018) to the BioGRID PCA data. Results of the PCA experiments from this study are highlighted in red. Turquoise-blue bars show HMs and HETs detected in this study and previously observed. The intersections were computed and plotted using the R package UpSetR (Lex et al., 2014).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Pairs of paralogs were clustered in six pairwise amino acid sequence identity groups and the distribution (in percentage) of these groups were compared between SSD and WGD. P-values are from Fisher’s exact tests. (B) The percentage of paralog pairs forming HM&HET among the total number of paralog pairs forming at least one HM (HM and HM&HET) is shown as a function of the percentage of pairwise amino acid sequence identity (SSDs in yellow and WGDs in blue). For each group, the number of HM&HET pairs and the total number are indicated above the bars. (C) Percentage of pairwise amino acid sequence identity between paralogs for each motif. 1HM: shows one homomer only, 2HM: shows both homomers, 1HM&HET: shows one homomer and the heteromer, and 2HM&HET: shows both homomers and the heteromer. P-values are from Wilcoxon tests. (D) The percentage of pairwise amino acid sequence identity among homeologs (dark blue) and true onhologs (light blue). P-value is from a Wilcoxon test. (E) Percentage of pairwise amino acid sequence identity between paralogs for HM and HM&HET motifs for homeologs and true ohnologs. P-values are from Wilcoxon tests.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Pairwise amino acid sequence identity for the full sequences of paralogs and their interfaces are shown for the two motifs). P-values from paired Wilcoxon tests are shown. (B) Relative conservation scores are shown for the two motifs of paralogs. Relative conservation scores are calculated based on the protein regions solved by crystallography as the percentage of sequence identity at the binding interface divided by the percentage of sequence identity outside the interface. Paralog pairs were classified as HM or HM&HET according to the dataset compiled in Supplementary file 2 Table S14. Homologous interfaces were identified in alignments of the paralogous sequences. Supplementary file 2 Table S13 contains the list of PDB IDs used for these analyses, which include 40 interfaces from homomeric structures for the HM group and 25 interfaces for the HM&HET group (24 homomers and 1 heterodimer of paralogs). P-value is from a Wilcoxon test.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** On the haploid arrays (MATa and MATα), each plate has two rows and two columns of control strains at the border (blue lines). Paralogs of a pair are positioned in blocks of four strains. A given pair (example here of pair X) occupies the same position in the MATa and MATα plates. Inside a square, paralogs are positioned horizontally in MATa DHFR F[1,2] plates (P1 are at the top and P2 at the bottom of the square) while they are vertically positioned in MATα DHFR F[3] plates (P1 are at the left and P2 at the right of the square). The two haploid plates were printed on top of each other on a mating plate, generating the following crosses: P1-DHFR F[1,2]/P1 DHFR F[3] at top left, P1-DHFR F[1,2]/P2 DHFR F[3] at top right, P2-DHFR F[1,2]/P1 DHFR F[3] at bottom left and P2-DHFR F[1,2]/P2 DHFR F[3] at bottom right. Two diploid selections and two replications on MTX medium were performed.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** Colony sizes from the PCA experiment of this study were converted to z-score using the mean (μb) and standard deviation (sdb) of the background distribution (Zs = (Is - μb)/sdb)). The density of z-scores is shown in black. A protein-protein interaction was considered as detected if the corresponding z-score was larger than 2.5 (red dashed line).
 
 Although a large number of PPIs have been previously reported in Saccharomyces cerevisiae, it is possible that the frequency of HMs is slightly underestimated because they were not systematically and comprehensively tested (see Materials and methods). Another reason could be that some interactions were not detected due to low expression levels. We measured mRNA abundance in cells grown in PCA conditions and used available yeast protein abundance data (Wang et al., 2012) to test this possibility (Supplementary file 2 Tables S3, S4, S5 and S6). As previously observed (Celaj et al., 2017; Freschi et al., 2013), we found a correlation between PCA signal and expression level, both at the level of mRNA and protein abundance (Spearman's r = 0.33, p-value=3.5e-13 and Spearman's r = 0.46, p-value<2.2e-16 respectively). When focusing only on previously reported HMs, we also observed both correlations (Spearman's r = 0.37, p-value=3.9e-08 and Spearman's r = 0.38, p-value=6.0e-08 respectively). The association between PCA signal and expression translates into a roughly two-fold increase in the probability of HM detection when mRNA levels change by one order of magnitude (Figure 2—figure supplement 1A). We also generally detected stronger PCA signal for the HM of the most expressed paralog of a pair, confirming the effect of expression on our ability to detect PPIs (Figure 2—figure supplement 1B). Finally, we found that HMs reported in the literature but not detected by PCA have on average lower expression levels (Figure 2—figure supplement 1B-C). We therefore conclude that some HMs (and also HETs) remain undetected because of low expression levels.
 
 The overrepresentation of HMs among duplicates was initially observed for human paralogs (Pérez-Bercoff et al., 2010). One potential mechanism to explain this finding is that homomeric proteins are more likely to be maintained as pairs after duplication because they might become dependent on each other for their stability that is enhanced through the formation of HET (Diss et al., 2017). Another explanation is that proteins forming HMs could be expressed at higher levels and thus more easily detected, as shown above. High expression levels are also associated with a greater long term probability of genes to persist after duplication (Paramecium Post-Genomics Consortium et al., 2010; Gout and Lynch, 2015). We indeed observed that both SSDs and WGDs are more expressed than singletons at the mRNA and protein levels, with WGDs being more expressed than SSDs at the mRNA level (Figure 2—figure supplement 2A-B). However, expression level (and thus PPI detectability) does not explain completely the enrichment of HMs among duplicated proteins. Both factors, expression and duplication, have significant effects on the probability of proteins to form HMs (Supplementary file 2 Table S7. A). It is therefore likely that the overrepresentation of HMs among paralogs is linked to their higher expression along with other factors.
 
-## Paralogs that form heteromers tend to have higher sequence identity
+### Paralogs that form heteromers tend to have higher sequence identity
 
 The model presented in Figure 1 assumes that the ancestral protein leading to HET formed a HM before duplication. Under the principle of parsimony, we can assume that when at least one paralog forms a HM, the ancestral protein was also a HM. This was shown to be true in general by Diss et al. (2017), who compared yeast WGDs to their orthologs from Schizosaccharomyces pombe. To further support this observation, we used PCA to test for HM formation for orthologs from species that diverged prior to the whole-genome duplication event (Lachancea kluyveri and Zygosaccharomyces rouxii). We looked at paralogs of the mitochondrial translocon complex and the transaldolase, which show HETs according to previous studies (see Materials and methods). We confirm that when one HM was observed in S. cerevisiae, at least one ortholog from pre-whole-genome duplication species formed a HM (Figure 2B-C). We also detected interactions between orthologs, suggesting that the ability to interact has been preserved despite the millions of years of evolution separating these species. The absence of interactions for some of these orthologous proteins may be due to the incompatibility of their expression in S. cerevisiae or the use of a non-endogenous promoter for these experiments.
 
@@ -72,15 +108,55 @@ Amino acid sequence conservation could also have a direct effect on the retentio
 
 Considering that stable interactions are often mediated by protein domains, we looked at the domain composition of paralogs using the Protein Families Database (Pfam) (El-Gebali et al., 2019). We tested if differences in domain composition could explain the frequency of different interaction motifs. We found that 367 of 448 pairs of paralogs (82%) shared all their domain annotations (Supplementary file 2 Table S3). Additionally, HM&HET paralogs tend to have more domains in common but the differences are non-significant and appear to be caused by overall sequence divergence (Figure 3—figure supplement 1A-B). Domain gains and losses are therefore unlikely to contribute to the loss of HET complexes following the duplication of homomers.
 
-## Heteromer formation correlates with functional conservation
+### Heteromer formation correlates with functional conservation
 
 To test if the retention of HETs correlates with the functional similarity of HM and HM&HET paralogs, we used the similarity of Gene Ontology (GO) terms, reported growth phenotypes of loss-of-function mutants and patterns of genome-wide genetic interactions. These features represent the relationship of genes with cell growth and the gene-gene relationships underlying cell growth. The use of GO terms could bias the analysis because they are often predicted based on sequence features. However, phenotypes and genetic interactions are derived from unbiased experiments because interactions are tested without a priori consideration of a protein's functions (Costanzo et al., 2016). We found that HM&HET pairs are more similar than HM for SSDs (Figure 3 and Figure 3—figure supplement 2). We observed the same trends for WGDs, although some of the comparisons are either marginally significant or non-significant (Figure 3, comparison between true ohnologs and homeologs in Figure 3—figure supplement 3). The higher functional similarity observed for HM&HET pairs could be the result of the higher sequence identity described above. However, for a similar level of sequence identity, HM&HET pairs have higher correlation of genetic interaction profiles, higher GO molecular function (for SSDs) and higher GO biological process similarity (for both SSDs and WGDs) than HM pairs (Figure 3—figure supplement 4 and GLM test in Supplementary file 2 Table S7. B). Overall, the retention of HETs after the duplication of HMs appears to correlate with functional similarity, independently from sequence conservation.
 
-## Pleiotropy contributes to the maintenance of heteromers
+![Figure 3.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig3-v1.jpg)
+
+**Figure 3.:** The similarity score is the average proportion of shared terms (100% * Jaccard's index) across pairs of paralogs for GO molecular functions, GO biological processes and gene deletion phenotypes. The mean values of similarity scores and of the correlation of genetic interaction profiles are compared between HM and HM&HET pairs for SSDs and WGDs. P-values are from Wilcoxon tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Pfam domain composition similarity (Jaccard’s index) between SSDs (yellow) and WGDs (blue) for each interaction motif (HM or HM&HET). (B) Pfam domain composition similarity as a function of pairwise amino acid sequence identity for HM motifs (pink) and HM&HET motifs (purple). Regression lines were smoothed using the GLM function with the quasibinomial family.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The similarity of function (100% * Jaccard’s index) between SSDs (yellow) and WGDs (blue) was estimated using GO terms for (A) molecular functions and for (B) biological processes. The similarity of function was also estimated using (C) growth phenotypes and (D) the correlation of genetic interaction profiles. P-values are from Wilcoxon tests.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The similarity of function (100% * Jaccard’s index) between homeologs (dark blue) and true ohnologs (light blue) was estimated using GO terms for (A) molecular functions and for (B) biological processes. The similarity of functions was also estimated using (C) growth phenotypes and (D) the correlation of genetic interaction profiles. P-values are from Wilcoxon tests.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The similarity of function (100% * Jaccard’s index) between paralogs for HM (pink) and HM&HET (purple) as a function of pairwise amino acid sequence identity for SSDs and WGDs. Similarity of function was estimated using (A) molecular functions and (B) biological processes GO terms, (C) growth phenotypes and (D) the correlation of genetic interaction profiles. The regression lines were smoothed using the R geom_smooth function.
+
+### Pleiotropy contributes to the maintenance of heteromers
 
 Since molecular interactions between paralogs predate their functional divergence, it is likely that physical association by itself affects the retention of functional similarity among paralogs. Any feature of paralogs that contributes to the maintenance of the HET state could therefore have a strong impact on the fate of new genes emerging from the duplication of HMs. A large fraction of HMs and HETs use the same binding interface (Bergendahl and Marsh, 2017), so mutations at the interface may have pleiotropic effects on both HMs and HETs (Figure 1), which would lead to correlated responses to selection. If we assume that HMs need to self-interact in order to perform their function, it is expected that natural selection would favor the maintenance of self-assembly. Negative selection on HM interfaces would act on their pleiotropic residues and thus also preserve HET interfaces, preventing the loss of HETs as a correlated response.
 
 We tested this correlated selection model using in silico evolution of HM and HET protein complexes (Figure 4A). We used a set of six representative high-quality structures of HMs (Dey et al., 2018). We evolved these HM complexes by duplicating them and following the binding energies of the resulting two HMs and HET. We let mutations occur at the binding interface 1) in the absence of selection (neutral model), 2) in the presence of negative selection maintaining only one HM, and 3) with negative selection retaining both HMs. In these three cases, we applied no selection on binding energy of the HET. In the fourth scenario, we applied selection on the HET but not on the HMs to examine if selection maintaining the HET could also favor the retention of HMs. Mutations that have deleterious effects on the complex under selection were lost or allowed to fix with exponentially decaying probability depending on the fitness effect (see Materials and methods) (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig4-v1.jpg)
+
+**Figure 4.:** (A) The duplication of a gene encoding a homomeric protein and the evolution of the complexes is simulated by applying mutations to the corresponding subunits A and B. Only mutations that would require a single nucleotide change are allowed. Stop codons are disallowed. After introducing mutations, the selection model is applied to complexes and mutations are fixed or lost. (B to F) The binding energy of the HMs and the HET resulting from the duplication of a HM (PDB: 1M38) is followed through time under different selection regimes applied on protein stability and binding energy. More positive values indicate less favorable binding and more negative values indicate more favorable binding. (B) Accumulation and neutral fixation of mutations. (C) Selection on both HMs while the HET evolves neutrally. (D) Selection on HM AA or (E) HM BB: selection maintains one HM while the HET and the other HM evolve neutrally. (F) Selection on HET while the HMs evolve neutrally. (E) Selection on HM AA or (F) HM BB: selection maintains one HM while the HET and the other HM evolve neutrally. Mean binding energies among replicates are shown in thick lines and the individual replicates are shown with thin lines. Fifty replicate populations are monitored in each case and followed for 200 substitutions. PDB structure 1M38 was visualized with PyMOL (Schrödinger LLC, 2015). The number of substitutions that are fixed on average during the simulations are shown in Supplementary file 2 Table S8.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The data is the same as shown in Figure 2 but all four possible HM and HM&HET motifs are shown. 1HM: shows one homomer only, 2HM: shows both homomers, 1HM&HET: shows one homomer and the heteromer and 2HM&HET: shows both homomers and the heteromer. The percentage of motifs of interaction for SSDs (yellow) and WGDs (blue) (left panel) and for homeologs (dark blue) and true ohnologs (light blue) (right panel). P-values are from Fisher’s exact tests.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The binding energy of six HMs and HETs is followed through time under the same scenarios as shown in Figure 4. Panels shown in Figure 4 are highlighted with a gray background here.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Simulations were run for different combinations of parameters controlling the efficiency of selection ($\beta$ and $N$) and the length of the simulations for PDB structure 1M38.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** The observed effects of sampled single mutants on the HET are compared with their effects on HMs. Pearson's correlation coefficients are shown. Parameters used for $\beta$ and $N$ were 10 and 1000, respectively.
 
 We find that neutral evolution leads to the destabilization of all complexes derived from the simulated duplication of a HM (PDB: 1M38) (Figure 4B), as is expected given that there are more destabilizing mutations than stabilizing ones (Brender and Zhang, 2015; Guerois et al., 2002). Selection to maintain one HM or both HMs significantly slows down the loss of the HET with respect to the neutral scenario (Figure 4C-E). Interestingly, the HET is being destabilized more slowly than the second HM when only one HM is under negative selection. The difficulty of losing the HET in the simulations could explain why for some paralog pairs, only one HM and the HET are preserved, as well as why there are few pairs of paralogs that specifically lose the HET (Figure 4—figure supplement 1). The reciprocal situation is also true, i.e. negative selection on HET significantly decelerates the loss of stability of both HMs (Figure 4F). These observations hold when simulating the evolution of duplication of five other structures (Figure 4—figure supplement 2) and when simulating evolution under different combinations of the parameters that control the efficiency of selection and the length of the simulations (Figure 4—figure supplement 3). By examining the effects that single mutants (only one of the loci gets a nonsynonymous mutation) have on HMs and HET, we find that, as expected, their effects are strongly correlated and thus highly pleiotropic (Pearson’s r between 0.64 and 0.9 (Figure 4—figure supplement 4)). We observe strong pleiotropic effects of mutations for the six structures tested, which explains the correlated responses to selection in the in silico evolution. Additionally, mutations tend to have greater effects on the HM than on the HET (Figure 4—figure supplement 4, Figure 5—figure supplement 1), which agrees with observations on HMs having a greater variance of binding energies than HETs (André et al., 2008; Lukatsky et al., 2007; Lukatsky et al., 2006). As a consequence, HMs that are not under selection in our simulations show higher variability in their binding energy than HETs.
 
@@ -88,9 +164,45 @@ We examined the effects of double mutants (the two loci get a non-synonymous mut
 
 Regardless of the selection scenario, the mutations sampled are slightly enriched for positive epistasis, since the slope values of regression models are smaller than one (0.91 and 0.89 under selection on HMs and HET respectively). When the HMs are maintained by selection, this slightly positive epistasis is also visible in the mutations that are fixed because the epistatic effects are not selected upon. This results in a similar slope for the selected mutations as for the rejected ones. Positive epistasis may therefore contribute to the maintenance of the HET (Figure 5A). On the other hand, selection on the HET results in a further enrichment of mutations with positive epistasis (slope = 0.51, Figure 5B). In this case, mutations tolerated in the HETs and thus fixed are more destabilizing to the HMs. This is also visible in the higher number of fixed substitutions (Supplementary file 2 Table S8) when selection acts on the HET than when it acts on both HMs, particularly for mutations having opposite effects on the HMs (Figure 5—figure supplement 2). This is also manifested in significantly stronger positive epistasis among fixed pairs of mutations when the HET is under negative selection (t-test, p-value=0.009). These observations suggest that epistasis may make HETs more robust to mutations than HMs with respect to protein complex assembly, contributing to their maintenance when the HMs are under selection and contributing to the loss of HMs when the HET is under negative selection. This effect is visible in our simulations since selection on the HET results in a slow destabilization of the two HMs (Figure 4, Figure 4—figure supplement 2), especially when more mutations are attempted (Figure 4—figure supplement 3), and is observed for all six structures tested (Figure 5—figure supplement 3).
 
-## Regulatory evolution may break down molecular pleiotropy
+![Figure 5.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig5-v1.jpg)
+
+**Figure 5.:** (A and B) Observed effects of double mutants on HET (y-axis) are compared to their expected effects (x-axis) based on the average of their effects on the HMs when selection is applied on both HMs (n = 6777 pairs of mutations) (A) or on the HET (n = 6760 pairs of mutations) (B). Dashed lines indicate the diagonal for perfect agreement between observations and expectations (no epistasis), black regression lines indicate the best fit for the lost mutants, and red regression lines indicate the best fit for the fixed mutants. Data were obtained from simulations with PDB structure 1M38. The regression coefficients, intercepts and R2 values are indicated on the figure for fixed and lost mutations. A regression coefficient lower than one means that pairs of mutations have a less destabilizing effects on the HET than expected based on their average effects on the HMs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Effects of single mutants on the binding energy of HMs and HETs. Mutants were classified (x-axis) according to their effects on the binding energy of HMs and HETs, depending on whether they stabilize or destabilize both the HM and the HET or they only destabilized one of them. Mutations that destabilize one of the complexes have smaller effect sizes on binding energy than mutations that destabilize or stabilize both. (A) Mutations sampled when negatively selecting for the stability of both HMs. (B) Mutations sampled when negatively selecting for the stability of the HET. Parameters used for $\beta$ and $N$ were 10 and 1000, respectively.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Fixation rates of double mutants classified based on their effect on the two HMs and the complexes (both HMs or HET) under selection. Clopper-Pearson 95% confidence intervals are shown. P-values were calculated with a two proportion z-test. Parameters used for $\beta$ and $N$ were 10 and 1000, respectively.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The observed effects of double mutants on the HET are compared with their expected effects based on the effects on the HMs throughout the simulations. Simulations were run under the same scenarios shown in Figure 5. Panels shown in Figure 5 are highlighted with a gray background. Red points are for mutations that were fixed, gray ones those that were eliminated by selection. The regression equations are shown for fixed and lost mutations separately. Parameters used for $\beta$ and $N$ were 10 and 1000, respectively.
+
+### Regulatory evolution may break down molecular pleiotropy
 
 The results from simulations show that the loss of HET after the duplication of a HM occurs at a slow rate if HMs are maintained by selection and that specific rare mutations may be required for HETs to be destabilized. However, the simulations only consider the evolution of binding interfaces, which limits the modification of interactions to a subset of all mutations that can ultimately affect PPIs (Hochberg et al., 2018). Other mechanisms that would lead to the loss of HETs could involve transcriptional regulation or cell compartment localization such that paralogs are not present at the same time or in the same cell compartment. To test how regulatory evolution affects interactions, we measured the correlation coefficient of expression profiles of paralogs using mRNA microarray measurements across more than 1000 growth conditions (Ihmels et al., 2004). These expression profiles are more correlated for both SSD and WGD paralogs forming HM&HET than for those forming only HM (p-value=6.5e-03 and 6.1e-03 respectively, Figure 6A). This result holds using available single-cell RNAseq data (Gasch et al., 2017) although the trend is not significant for WGDs (Figure 6—figure supplement 1A). Because we found that sequence identity was correlated with both the probability of observing HM&HET and the co-expression of paralogs, we tested if co-expression had an effect on HET formation when controlling for sequence identity. For SSDs, co-expression shows significant effects on HM&HET formation (Figure 6C, Figure 6—figure supplement 1B. and Supplementary file 2 Table S7. B) but not for WGDs (Figure 6C, Figure 6—figure supplement 1B. and Supplementary file 2 Table S7. B). This is true also when considering the two origins of WGDs separately (Figure 6—figure supplement 2A-F). The differences of expression correlation between HM and HM&HET could be caused by cis regulatory divergence, for instance, HM&HET pairs might have more similar transcription factor binding sites. While we do observe a marginally higher transcription factor binding site similarity for HM&HET pairs than for HM pairs, the tendency is not significant, suggesting other causes for the divergence and similarity of expression profiles (Figure 6B, Figure 6—figure supplement 3 and Supplementary file 2 Table S7. B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig6-v1.jpg)
+
+**Figure 6.:** (A) Correlation coefficients (Spearman’s r) between the expression profiles of paralogs. The data derives from mRNA relative expression across 1000 growth conditions (Ihmels et al., 2004). HM and HM&HET are compared for SSDs (yellow) and WGDs (blue). P-values are from t-tests. (B) Correlation of expression profiles between paralogs forming only HM (pink) or HM&HET (purple) as a function of their amino acid sequence identity. The data was binned into six equal categories for representation only. (C) Similarity of GO cellular component, GFP-based localization, and transcription factor binding sites (100% * Jaccard’s index) are compared between HM and HM and HET for SSDs and WGDs. P-values are from Wilcoxon tests.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Correlation (Spearman's r) between the expression profile of paralogs are compared among the different interaction motifs for SSDs (yellow) and WGDs (blue). P-values are from t-tests. (B) Correlation of expression profiles between paralogs forming only HM (pink) or HM&HET (purple) as a function of their pairwise amino acid sequence identity.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Correlation coefficients (Spearman’s r) between the expression profiles of paralogs (A) from mRNA relative expression across 1000 growth conditions (Ihmels et al., 2004) and (B) from single-cell RNAseq (Gasch et al., 2017) are compared between homeologs and true ohnologs. Correlation coefficients (Spearman’s r) (C) across growth conditions and (D) from single-cell RNAseq data (Gasch et al., 2017) are compared among the different interaction motifs for homeologs and true ohnologs. Correlation coefficients (E) across growth conditions and (F) from single-cell RNAseq as a function of the percentage of pairwise amino acid sequence identity between paralogs forming only HM or HM&HET. (G) Similarity of transcription factor binding sites (100% * Jaccard’s index). (H) Similarity of GO cellular components. (I) Similarity of localization. P-values are from Wilcoxon tests.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** The similarity of regulation (100% * Jaccard’s index) for (A) transcription factor binding sites, (B) GO cellular components and (C) localization. P-values are from Wilcoxon tests.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/46754/elife-46754-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The similarity of co-expression of HM (pink) and HM&HET (purple) pairs was compared while controlling for pairwise amino acid sequence identity for both SSD and WGD. Similarity of co-expression was estimated using (A) cellular component similarity GO term, (B) similarity of localization and (C) similarity of transcription factor binding sites. The regression lines were smoothed using glm method with quasibinomial family.
 
 Finally, we find that HM&HET paralogs are more similar than HM for both SSDs and WGDs in terms of cellular compartments (GO) and cellular localization derived from experimental data (Figure 6C, Figure 6—figure supplement 3B C). For a similar level of sequence identity, HM&HET pairs have higher cellular compartment and cellular localization similarity (for both SSDs and WGDs) than HM pairs (Figure 6—figure supplement 4 and GLM test in Supplementary file 2 Table S7. B). The same tendencies are observed when considering the two classes of WGDs separately (Figure 6—figure supplement 2G-I).
 
@@ -116,25 +228,553 @@ Overall, our analyses show that duplication of self-interacting proteins creates
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Yeast Protein Interactome Collection - DHFR F[1,2] and DHFR F[3] strains, BY4741 and BY4742 (MATa and MATα)</td>
+      <td>GE Healthcare Dharmacon Inc, Tarassov et al., 2008</td>
+      <td>Cat. #YSC5849</td>
+      <td>See Supplementary file 2 Tables S9 and S10 for the complete list of strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>DHFR F[1,2] strains, BY4741 (MATa)</td>
+      <td>Diss et al., 2017 and this paper</td>
+      <td></td>
+      <td>See Supplementary file 2 Tables S9 and S10 for the complete list of strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>DHFR F[3] strains, BY4742 (MATα)</td>
+      <td>Diss et al., 2017 and this paper</td>
+      <td></td>
+      <td>See Supplementary file 2 Tables S9 and S10 for the complete list of strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>RY1010, PJ69-4A (MATa)</td>
+      <td>Yachie et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>RY1030, PJ69-4alpha (MATα)</td>
+      <td>Yachie et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YY3094, PJ69-4A (MATa)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>YY3095, PJ69-4alpha (MATα)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lachancea kluyveri)</td>
+      <td>Lachancea kluyveri, CBS 3082</td>
+      <td>Kurtzman, 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zygosaccharomyces rouxii)</td>
+      <td>Zygosaccharomyces rouxii, CBS 732</td>
+      <td>Pribylova et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MC1061</td>
+      <td>CGSC</td>
+      <td>Cat. #6649</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAG25-linker-F[1,2]-ADHterm (plasmid)</td>
+      <td>Tarassov et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAG32-linker-F[3]-ADHterm (plasmid)</td>
+      <td>Tarassov et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST-AD (TRP1) (plasmid)</td>
+      <td>Rual et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST-DB (LEU2) (plasmid)</td>
+      <td>Rual et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDN0501 (TRP1) (plasmid)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDN0502 (LEU2) (plasmid)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHMA1001 (TRP1)(plasmid)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHMA1003 (LEU2) (plasmid)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST-DHFR F[1,2] (TRP1) (plasmid)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST-DHFR F[1,2] (LEU2) (plasmid)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST-DHFR F[3] (TRP1) (plasmid)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST-DHFR F[3] (LEU2) (plasmid)</td>
+      <td>This paper – available from Christian Landry upon request</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR201 (plasmid)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #11798–014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PacI</td>
+      <td>New England BioLabs Inc</td>
+      <td>Cat. #R0547S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SacI</td>
+      <td>New England BioLabs Inc</td>
+      <td>Cat. #R0156S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SpeI</td>
+      <td>New England BioLabs Inc</td>
+      <td>Cat. #R0133S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PI-PspI</td>
+      <td>New England BioLabs Inc</td>
+      <td>Cat. #R0695S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligonucleotides</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>See Supplementary file 2 Table S12 for the complete list</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DEY011</td>
+      <td>Integrated DNA Technologies, Inc</td>
+      <td>gBlock</td>
+      <td>See Supplementary file 2 Table S12 for the sequence</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Presto Mini Plasmid Kit</td>
+      <td>Geneaid Biotech Ltd</td>
+      <td>Cat. #PDH300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lexogen Quantseq 3’ mRNA kit</td>
+      <td>D-Mark Biosciences</td>
+      <td>Cat. #012.24A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway BP Clonase II enzyme mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #11789020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase II enzyme mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England BioLabs Inc</td>
+      <td>Cat. # E2611L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kanamycin</td>
+      <td>BioShop Canada, Inc</td>
+      <td>Cat. #KAN201.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>BioShop Canada, Inc</td>
+      <td>Cat. #AMP201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nourseothricin (NAT)</td>
+      <td>WERNER BioAgents GmbH</td>
+      <td>Cat. #5.010.000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin B (HygB)</td>
+      <td>BioShop Canada, Inc</td>
+      <td>Cat. #HYG003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methotrexate (MTX)</td>
+      <td>BioShop Canada, Inc</td>
+      <td>Cat. #MTX440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MUSCLE v 3.8.31</td>
+      <td>Edgar, 2004</td>
+      <td>RRID:SCR_011812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>gitter (R package version 1.1.1)</td>
+      <td>Wagih and Parts, 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>normalmixEM function (R mixtools package)</td>
+      <td>Benaglia et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Andrews, 2010</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt</td>
+      <td>Martin, 2011</td>
+      <td>RRID:SCR_011841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bwa</td>
+      <td>Li and Durbin, 2009</td>
+      <td>RRID:SCR_010910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTSeq (Python package)</td>
+      <td>Anders et al., 2015</td>
+      <td>RRID:SCR_005514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLASTP (version 2.6.0+)</td>
+      <td>Camacho et al., 2009</td>
+      <td>RRID:SCR_001010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FoldX suite version 4</td>
+      <td>Guerois et al., 2002 and Schymkowitz et al., 2005</td>
+      <td>RRID:SCR_008522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FreeSASA</td>
+      <td>Mitternacht, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Biopython</td>
+      <td>Cock et al., 2009</td>
+      <td>RRID:SCR_007173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>IntAct</td>
+      <td>Orchard et al., 2014</td>
+      <td>RRID:SCR_006944</td>
+      <td>https://www.ebi.ac.uk/intact/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>Yeast Gene Order Browser (YGOB)</td>
+      <td>Byrne and Wolfe, 2005</td>
+      <td></td>
+      <td>http://ygob.ucd.ie/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>PhylomeDB</td>
+      <td>Huerta-Cepas et al., 2008</td>
+      <td>RRID:SCR_007850</td>
+      <td>http://phylomedb.org/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>Protein Data Bank (PDB)</td>
+      <td>Berman et al., 2000</td>
+      <td>RRID:SCR_012820</td>
+      <td>https://www.rcsb.org/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>Ensembl</td>
+      <td>Zerbino et al., 2018</td>
+      <td>RRID:SCR_002344</td>
+      <td>http://useast.ensembl.org/info/data/ftp/index.html</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>TheCellMap (version of March 2016)</td>
+      <td>Usaj et al., 2017</td>
+      <td></td>
+      <td>http://thecellmap.org/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>Saccharomyces Genome Database (SGD)</td>
+      <td>Cherry et al., 2012</td>
+      <td>RRID:SCR_004694</td>
+      <td>https://www.yeastgenome.org/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>Complex Portal</td>
+      <td>Meldal et al., 2015</td>
+      <td>RRID:SCR_015038</td>
+      <td>https://www.ebi.ac.uk/complexportal/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>CYC2008 catalog</td>
+      <td>Pu et al., 2009Pu et al., 2007</td>
+      <td></td>
+      <td>http://wodaklab.org/cyc2008/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>YEASTRACT</td>
+      <td>Teixeira et al., 2018, Teixeira et al., 2006</td>
+      <td>RRID:SCR_006076</td>
+      <td>http://www.yeastract.com/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>Yeast GFP Fusion Localization Database (YeastGFP)</td>
+      <td>Huh et al., 2003</td>
+      <td></td>
+      <td>https://yeastgfp.yeastgenome.org/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>The Protein Families Database (Pfam)</td>
+      <td>El-Gebali et al., 2019</td>
+      <td>RRID:SCR_004726</td>
+      <td>https://pfam.xfam.org/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>UniprotKB database</td>
+      <td>The UniProt Consortium, 2019</td>
+      <td>RRID:SCR_004426</td>
+      <td>https://www.uniprot.org/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>BIOGRID-3.5.166</td>
+      <td>Chatr-Aryamontri et al., 2017, Chatr-Aryamontri et al., 2013</td>
+      <td>RRID:SCR_007393</td>
+      <td>https://thebiogrid.org/</td>
+    </tr>
+    <tr>
+      <td>Other, database</td>
+      <td>Ohnologs</td>
+      <td>Singh et al., 2015</td>
+      <td></td>
+      <td>http://ohnologs.curie.fr/</td>
+    </tr>
+    <tr>
+      <td>Other, dataset</td>
+      <td>Supplementary materials of Benschop et al. (2010)</td>
+      <td>Benschop et al., 2010</td>
+      <td></td>
+      <td>https://doi.org/10.1016/j.molcel.2010.06.002</td>
+    </tr>
+    <tr>
+      <td>Other, dataset</td>
+      <td>Supplementary materials of Kim et al. (2019)</td>
+      <td>Kim et al., 2019</td>
+      <td></td>
+      <td>https://doi.org/10.1101/gr.231860.117</td>
+    </tr>
+    <tr>
+      <td>Other, dataset</td>
+      <td>Supplementary materials of Ihmels et al. (2004)</td>
+      <td>Ihmels et al., 2004</td>
+      <td></td>
+      <td>https://doi.org/10.1093/bioinformatics/bth166</td>
+    </tr>
+    <tr>
+      <td>Other, dataset</td>
+      <td>Supplementary materials of Gasch et al. (2017)</td>
+      <td>Gasch et al., 2017</td>
+      <td></td>
+      <td>https://doi.org/10.1371/journal.pbio.2004050</td>
+    </tr>
+    <tr>
+      <td>Other, dataset</td>
+      <td>Supplementary materials of Guan et al. (2007)</td>
+      <td>Guan et al., 2007</td>
+      <td></td>
+      <td>https://doi.org/10.1534/genetics.106.064329</td>
+    </tr>
+    <tr>
+      <td>Other, dataset</td>
+      <td>Supplementary materials of Tarassov et al. (2008)</td>
+      <td>Tarassov et al., 2008</td>
+      <td></td>
+      <td>https://doi.org/10.1126/science.1153878</td>
+    </tr>
+    <tr>
+      <td>Other, dataset</td>
+      <td>Supplementary materials of Stynen et al. (2018)</td>
+      <td>Stynen et al., 2018</td>
+      <td></td>
+      <td>https://doi.org/10.1016/j.cell.2018.09.050</td>
+    </tr>
+    <tr>
+      <td>Other, dataset</td>
+      <td>Supplementary materials of Lan and Pritchard (2016)</td>
+      <td>Lan and Pritchard, 2016</td>
+      <td></td>
+      <td>https://doi.org/10.1126/science.aad8411</td>
+    </tr>
+  </tbody>
+</table>
+
 The protein-protein interactions identified in this publication have been submitted to the IMEx (http://www.imexconsortium.org) consortium through IntAct (Orchard et al., 2014) and are assigned the identifier IM-26944. All scripts used to analyze the data are available at https://github.com/landrylaboratory/Gene_duplication_2019 (Marchant, 2019; copy archived at https://github.com/elifesciences-publications/Gene_duplication_2019).
 
-## Characterization of paralogs in S. cerevisiae genome
+### Characterization of paralogs in S. cerevisiae genome
 
-## Classification of paralogs by mechanism of duplication
+#### Classification of paralogs by mechanism of duplication
 
 We classified duplicated genes in three categories according to their mechanism of duplication: small-scale duplicates (SSDs); whole-genome duplicates (WGDs) (Byrne and Wolfe, 2005); and doubly duplicated (2D, SSDs and WGDs). We removed WGDs from the paralogs defined in Guan et al. (2007) to generate the list of SSDs. Among paralog pairs with less than 20% of sequence identity in the multiple sequence alignments (Edgar, 2004), we kept only those sharing the same phylome (PhylomeDB; Huerta-Cepas et al., 2008) to make sure they were true paralogs. If one of the two paralogs of an SSD pair was associated to another paralog in a WGD pair, this paralog was considered a 2D (Supplementary file 2 Tables S1 and S2). To decrease the potential bias from multiple duplication events, we removed the 2Ds and paralogs from successive small-scale genome duplications from the data on interaction motifs. We used data from Marcet-Houben and Gabaldón (2015) to identify WGDs that are likely true ohnologs or that originated from allopolyploidization (homeologs).
 
-## Sequence similarity
+#### Sequence similarity
 
 Conversion tables between PhylomeDB IDs and systematic yeast IDs were downloaded from ftp://phylomedb.org/phylomedb/all_id_conversion.txt.gz on May 15th, 2019. Sequence identity was calculated from multiple sequence alignments from phylome 0003 from PhylomeDB (Huerta-Cepas et al., 2008). The yeast phylome consists of 60 completely sequenced fungal species, with Homo sapiens and Arabidopsis thaliana as outgroups. Sequences in these phylomes were aligned with MUSCLE v 3.6. When two paralogs were not found in the same multiple sequence alignment from PhylomeDB (32 pairs out of 462 pairs), the sequences were taken from the reference proteome of S. cerevisiae assembly R64-1-1 downloaded on April 16th, 2018 from the Ensembl database at (http://useast.ensembl.org/info/data/ftp/index.html) (Zerbino et al., 2018) and realigned to the rest of the phylome with MUSCLE version 3.8.31 (Edgar, 2004). For six pairs of paralogs that did not have phylomeDB IDs assigned to them, pairwise alignments of their sequences with MUSCLE version 3.8.31 (Edgar, 2004) were used.
 
-## Function, transcription factor binding sites, localization of protein complexes, and Pfam annotations
+#### Function, transcription factor binding sites, localization of protein complexes, and Pfam annotations
 
 We obtained GO terms (GO slim) from SGD (Cherry et al., 2012) in September 2018. We removed terms corresponding to missing data and created a list of annotations for each SSD and WGD. Annotations were compared to measure the extent of similarity between two members of a pair of duplicates. We calculated the similarity of molecular function, cellular component and biological process taking the number of GO terms in common divided by the total number of unique GO terms of the two paralogs combined (Jaccard index). We compared the same way transcription factor binding sites using YEASTRACT data (Teixeira et al., 2018; Teixeira et al., 2006), cellular localizations extracted from the YeastGFP database (Huh et al., 2003) and many phenotypes associated with the deletion of paralogs (data from SGD in September 2018). For the deletion phenotypes, we kept only information with specific changes (a feature observed and a direction of change relative to wild type). We compared the pairwise correlation of genetic interaction profiles using the genetic interaction profile similarity (measured by Pearson’s correlation coefficient) of non-essential genes available in TheCellMap database (version of March 2016) (Usaj et al., 2017). We used the median of correlation coefficients if more than one value was available for a given pair. Non-redundant set of protein complexes was derived from the Complex Portal (Meldal et al., 2015), the CYC2008 catalog (Pu et al., 2009; Pu et al., 2007) and (Benschop et al., 2010).
 
 We downloaded Pfam domain annotations (El-Gebali et al., 2019) for the whole S. cerevisiae reference proteome on May 2nd, 2019 from the UniprotKB database (The UniProt Consortium, 2019). We removed pairs of paralogs for which at least one of the proteins had no annotated domains and calculated the Jaccard index (Supplementary file 2 Table S3).
 
-## Homomers and heteromers identified from databases
+### Homomers and heteromers identified from databases
 
 To complement our experimental data, we extracted HMs and HETs published in BioGRID version BIOGRID-3.5.166 (Chatr-Aryamontri et al., 2017; Chatr-Aryamontri et al., 2013). We used data derived from the following detection methods: Affinity Capture-MS, Affinity Capture-Western, Reconstituted Complex, Two-hybrid, Biochemical Activity, Co-crystal Structure, Far Western, FRET, Protein-peptide, PCA and Affinity Capture-Luminescence.
 
@@ -144,11 +784,11 @@ We also considered data from crystal structures. If a HM was detected in the Pro
 
 Data on genome-wide HM screens was obtained from Kim et al. (2019) and Stynen et al. (2018). The two experiments used Protein-fragment complementation assays (PCA), the first one using the dihydrofolate reductase (DHFR) enzyme as a reporter and the second one, a fluorescent protein (also known as Bimolecular fluorescence complementation (BiFC)). We discarded proteins from Stynen et al. (2018) flagged as problematic by Rochette et al. (2014); Stynen et al. (2018); Tarassov et al. (2008) and false positives identified by Kim et al. (2019). All discarded data was considered as missing data. We examined all proteins tested and considered them as HM if they were reported as positive and as non-HM if tested but not reported as positive.
 
-## Experimental Protein-fragment complementation assay
+### Experimental Protein-fragment complementation assay
 
 We performed a screen using PCA based on DHFR (Tarassov et al., 2008) following standard procedures (Rochette et al., 2015; Tarassov et al., 2008). The composition of all following media used in this study is described in Supplementary file 2 Table S11.
 
-## DHFR strains
+#### DHFR strains
 
 We identified 485 pairs of SSDs and 156 pairs of WGDs present in the Yeast Protein Interactome Collection (Tarassov et al., 2008) and another set of 155 strains constructed by Diss et al. (2017). We retrieved strains from the collection (Tarassov et al., 2008) and we grew them on NAT (DHFR F[1,2] strains) and HygB (DHFR F[3] strains) media. We confirmed the insertion of the DHFR fragments at the correct location by colony PCR using a specific forward Oligo-C targeting a few hundred base pairs upstream of the fusion and a reverse complement oligonucleotide ADHterm_R located in the ADH terminator after the DHFR fragment sequence (Supplementary file 2 Table S12). Cells from colonies were lysed in 40 µL of 20 mM NaOH for 20 min at 95°C. Tubes were centrifuged for 5 min at 1800 g and 2.5 µL of supernatant was added to a PCR mix composed of 16.85 µL of DNAse free water, 2.5 µL of 10X Taq buffer (BioShop Canada Inc, Canada), 1.5 µL of 25 mM MgCl2, 0.5 µL of 10 mM dNTP (Bio Basic Inc, Canada), 0.15 µL of 5 U/µL Taq DNA polymerase (BioShop Canada Inc, Canada), 0.5 µL of 10 µM Oligo-C and 0.5 µL of 10 µM ADHterm_R. The initial denaturation was performed for 5 min at 95°C and was followed by 35 cycles of 30 s of denaturation at 94°C, 30 s of annealing at 55°C, 1 min of extension at 72°C and by a 3 min final extension at 72°C. We confirmed by PCR 2025 strains from the DHFR collection and 126 strains out of the 154 from Diss et al. (2017) (Supplementary file 2 Tables S9, S10, and S12).
 
@@ -156,7 +796,7 @@ The missing or non-validated strains were constructed de novo using the standard
 
 We performed strain construction in BY4741 (MATa his3Δ leu2Δ met15Δ ura3Δ) and BY4742 (MATα his3Δ leu2Δ lys2Δ ura3Δ) competent cells prepared as in Gagnon-Arsenault et al. (2013) for the DHFR F[1,2] and DHFR F[3] fusions, respectively. Competent cells (20 µL) were combined with 8 µL of PCR product (~0.5–1 µg/µL) and 100 µL of Plate Mixture (PEG3350 40%, 100 mM of LiOAc, 10 mM of Tris-Cl pH 7.5 and 1 mM of EDTA). Cells were vortexed and incubated at room temperature without agitation for 30 min. After adding 15 µL of DMSO and mixing thoroughly, heat shock was performed by incubating in a water bath at 42°C for 15–20 min. Following the heat shock, cells were spun down at 400 g for 3 min. Supernatant was removed by aspiration and cell pellets were resuspended in 100 µL of YPD. Cells were allowed to recover from heat shock for 4 hr at 30°C before being plated on NAT (DHFR F[1,2] strains) or HygB (DHFR F[3] strains) plates. Cells were incubated at 30°C for 3 days. The correct integration of DHFR fragments was confirmed by colony PCR as described above and later by sequencing (Plateforme de séquençage et de génotypage des génomes, CRCHUL, Canada) for specific cases where the interaction patterns suggested a construction problem, for instance when the HET was observed in one direction only or when one HM was missing for a given pair. At the end, we reconstructed and validated 146 new strains (Supplementary file 2 Tables S9 and S10). From all available strains, we selected pairs of paralogs for which we had both proteins tagged with both DHFR fragments (four different strains per pair). This resulted in 1172 strains corresponding to 293 pairs of paralogs (Supplementary file 2 Tables S9 and S10). We finally discarded pairs considered as leading to false positives by Tarassov et al. (2008), which resulted in 235 pairs.
 
-## Construction of DHFR plasmids for orthologous gene expression
+#### Construction of DHFR plasmids for orthologous gene expression
 
 For the plasmid-based PCA, Gateway cloning-compatible destination plasmids pDEST-DHFR F[1,2] (TRP1 and LEU2) and pDEST-DHFR F[3] (TRP1 and LEU2) were constructed based on the CEN/ARS low-copy yeast two-hybrid (Y2H) destination plasmids pDEST-AD (TRP1) and pDEST-DB (LEU2) (Rual et al., 2005). A DNA fragment having I-CeuI restriction site was amplified using DEY001 and DEY002 primers (Supplementary file 2 Table S12) without template and another fragment having PI-PspI/I-SceI restriction site was amplified using DEY003 and DEY004 primers (Supplementary file 2 Table S12) without template. pDEST-AD and pDEST-DB plasmids were each digested by PacI and SacI and mixed with the I-CeuI fragment (destined to the PacI locus) and PI-PspI/I-SceI fragment (destined to the SacI locus) for Gibson DNA assembly (Gibson et al., 2009) to generate pDN0501 (TRP1) and pDN0502 (LEU2). Four DNA fragments were then prepared to construct the pDEST-DHFR F[1,2] vectors: (i) a fragment containing the ADH1 promoter; (ii) a fragment containing a Gateway destination site; (iii) a DHFR F[1,2] fragment; and (iv) a backbone plasmid fragment. The ADH1 promoter fragment was amplified from pDN0501 using DEY005 and DEY006 primers (Supplementary file 2 Table S12) and the Gateway destination site fragment was amplified from pDN0501 using DEY007 and DEY008 primers (Supplementary file 2 Table S12). The DHFR-F[1,2] fragment was amplified from pAG25-linker-F[1,2]-ADHterm (Tarassov et al., 2008) using DEY009 and DEY010 primers (Supplementary file 2 Table S12).
 
@@ -166,82 +806,98 @@ We obtained the orthologous gene sequences for the mitochondrial translocon comp
 
 LRII reactions were performed by mixing 150 ng of the Entry Clone and 150 ng of expression plasmids (pDEST-DHFR F[1,2]-TRP1 or pDEST-DHFR F[3]-LEU2) according to manufacturer’s instructions (Invitrogen, USA). The reactions were incubated overnight at 25°C and inactivated with proteinase K. We used the whole reaction to transform MC1061 competent E. coli cells, followed by selection on solid 2YT medium supplemented with 100 mg/L ampicillin (BioShop Inc, Canada) at 37°C. Positive clones were confirmed by PCR using a ORF specific primer and a plasmid universal primer. The sequence-verified expression plasmids bearing the orthologous fusions with DHFR F[1,2] and DHFR F[3] fragments were used to transform the yeast strains YY3094 (MATa leu2-3,112 trp1-901 his3-200 ura3-52 gal4Δ gal80Δ LYS2::PGAL1-HIS3 MET2::PGAL7-lacZ cyh2R can1Δ::PCMV-rtTA-KanMX4) and YY3095 (MATα leu2-3,112 trp1-901 his3-200 ura3-52 gal4Δ gal80Δ LYS2::PGAL1-HIS3 MET2::PGAL7-lacZ cyh2R can1Δ::TADH1-PtetO2-Cre-TCYC1-KanMX4), respectively. Selection was done on SC -trp -ade (YY3094) or on SC -leu -ade (YY3095). The strains YY3094 and YY3095 were generated from BFG-Y2H toolkit strains RY1010 and RY1030 (Yachie et al., 2016), respectively, by restoring their wild type ADE2 genes. The ADE2 gene was restored by homologous recombination of the wild type sequence cassette amplified from the laboratory strain BY4741 using primers DEY014 and DEY015 (Supplementary file 2 Table S12). SC -ade plates were used to obtain successful transformants.
 
-## DHFR PCA experiments
+#### DHFR PCA experiments
 
 Three DHFR PCA experiments were performed, hereafter referred to as PCA1, PCA2 and PCA3. The configuration of strains on plates and the screenings were performed using robotically manipulated pin tools (BM5-SC1, S&P Robotics Inc, Toronto, Canada; Rochette et al., 2015). We first organized haploid strains in 384 colony arrays containing a border of control strains using a cherry-picking 96-pin tool (Figure 2—figure supplement 7). We constructed four haploid arrays corresponding to paralog 1 and 2 (P1 and P2) and mating type: MATa P1-DHFR F[1,2]; MATa P2-DHFR F[1,2] (on NAT medium); MATα P1-DHFR F[3]; MATα P2-DHFR F[3] (on HygB medium). Border control strains known to show interaction by PCA (MATa LSM8-DHFR F[1-2] and MATα CDC39-DHFR F[3]) were incorporated respectively in all MATa DHFR F[1,2] and MATα DHFR F[3] plates in the first and last columns and rows. The strains were organized as described in Figure 2—figure supplement 7. The two haploid P1 and P2 384 plates of the same mating type were condensed into a 1536 colony array using a 384-pintool. The two 1536 arrays (one MATa DHFR F[1,2], one MATα DHFR F[3]) were crossed on YPD to systematically test P1-DHFR F[1,2]/P1 DHFR F[3], P1-DHFR F[1,2]/P2-DHFR F[3], P2-DHFR F[1,2]/P1-DHFR F[3] and P2-DHFR F[1,2]/P2-DHFR F[3] interactions in adjacent positions. We performed two rounds of diploid selection (S1 to S2) by replicating the YPD plates onto NAT + HygB and growing for 48 hr. The resulting 1536 diploid plates were replicated twice for 96 hr on DMSO -ade -lys -met control plates (for PCA1 and PCA2) and twice for 96 hr on the selective MTX -ade -lys -met medium (for all runs). Five 1536 PCA plates (PCA1-plate1, PCA1-plate2, PCA2, PCA3-plate1 and PCA3-plate2) were generated this way. We tested the interactions between 277 pairs in five to twenty replicates each (Supplementary file 2 Table S3).
 
 We also used the robotic platform to generate three bait and three prey 1536 arrays for the DHFR plasmid-based PCA, testing each pairwise interaction at least four times. We mated all MATa DHFR F[1,2] and MATα DHFR F[3] strains on YPD medium at room temperature for 24 hr. We performed two successive steps of diploid selection (SC -leu -trp -ade) followed by two steps on DMSO and MTX media (DMSO -leu -trp -ade and MTX -leu -trp -ade). We incubated the plates of diploid selection at 30°C for 48 hr. Finally, plates from both MTX steps were incubated and monitored for 96 hr at 30°C.
 
-## Analysis of DHFR PCA results
+#### Analysis of DHFR PCA results
 
-## Image analysis and colony size quantification
+##### Image analysis and colony size quantification
 
 All images were analysed the same way, including images from Stynen et al. (2018). Images of plates were taken with a EOS Rebel T5i camera (Canon, Tokyo, Japan) every two hours during the entire course of the PCA experiments. Incubation and imaging were performed in a spImager custom platform (S&P Robotics Inc, Toronto, Canada). We considered images after two days of growth for diploid selection plates and after four days of growth for DMSO and MTX plates. Images were analysed using gitter (R package version 1.1.1; Wagih and Parts, 2014) to quantify colony sizes by defining a square around the colony center and measuring the foreground pixel intensity minus the background pixel intensity.
 
-## Data filtering
+##### Data filtering
 
 For the images from Stynen et al. (2018), we filtered data based on the diploid selection plates. Colonies smaller than 200 pixels were considered as missing data rather than as non-interacting strains. For PCA1, PCA2 and PCA3, colonies flagged as irregular by gitter (as S (colony spill or edge interference) or S, C (low colony circularity) flags) or that did not grow on the last diploid selection step or on DMSO medium (smaller than quantile 25 minus the interquartile range) were considered as missing data. We considered only bait-prey pairs with at least four replicates and used the median of colony sizes as PCA signal. The data was finally filtered based on the completeness of paralogous pairs so we could test HMs and HETs systematically. Thus, we finally obtained results for 241 paralogous pairs (Supplementary file 2 Tables S3 and S4). Median colony sizes were log2 transformed after adding a value of 1 to all data to obtain PCA scores. The results of Stynen et al. (2018) and PCA1, PCA2 and PCA3 were strongly correlated (Figure 2—figure supplement 3B). Similarly, the results correlate well with those reported by Tarassov et al. (2008) (Figure 2—figure supplement 3C).
 
-## Detection of protein-protein interactions
+##### Detection of protein-protein interactions
 
 The distribution of PCA scores was modeled per duplication type (SSD and WGD) and per interaction tested (HM or HET) as in Diss et al. (2017) with the normalmixEM function (default parameters) available in the R mixtools package (Benaglia et al., 2009). The background signal on MTX was used as a null distribution to which interactions were compared. The size of colonies (PCA scores (PCAs)) were converted to z-scores (Zs) using the mean (μb) and standard deviation (sdb) of the background distribution (Zs = (PCAs - μb)/sdb). PPI were considered detected if Zs of the bait-prey pair was greater than 2.5 (Figure 2—figure supplement 8) (Chrétien et al., 2018).
 
 We observed 24 cases in which only one of the two possible HET interactions was detected (P1-DHFR F[1,2] x P2-DHFR F[3] or P2-DHFR F[1,2] x P1-DHFR F[3]). It is typical for PCA assays to detect interactions in only one orientation or the other (See Tarassov et al. (2008)). However, this could also be caused by one of the four strains having an abnormal fusion sequence. We verified by PCR and sequenced the fusion sequences to make sure this was not the case. The correct strains were conserved and the other ones were re-constructed and retested. No cases of unidirectional HET were observed in our final results. For all 71 pairs after reconstruction, both reciprocal interactions were detected.
 
-## Dataset integration
+##### Dataset integration
 
 The PCA data was integrated with other data obtained from databases. The overlaps among the different datasets and the results of our PCA experiments are shown in Figure 2—figure supplement 4.
 
-## Gene expression in MTX condition
+### Gene expression in MTX condition
 
-## Cell cultures for RNAseq
+#### Cell cultures for RNAseq
 
 We used the border control diploid strain from the DHFR PCA experiment (MATa/α LSM8-DHFR F[1,2]/LSM8 CDC39/CDC39-DHFR F[3]) to measure expression profile in MTX condition. Three overnight pre-cultures were grown separately in 5 ml of NAT + HygB at 30°C with shaking at 250 rpm. A second set of pre-cultures were grown starting from a dilution at OD600 = 0.01 in 50 ml in the same condition to an OD600 of 0.8 to 1. Final cultures were started at OD600 = 0.03 in 250 ml of synthetic media supplemented with MTX or DMSO (MTX -ade -trp -leu or DMSO -ade -trp -leu) at 30°C with shaking at 250 rpm. These cultures were transferred to 5 × 50 ml tubes when they reached an OD600 of 0.6 to 0.7 and centrifuged at 1008 g at 4°C for 1 min. The supernatant was discarded and cell pellets were frozen in liquid nitrogen and stored at −80°C until processing. RNA extractions and library generation and amplification were performed as described in Eberlein et al. (2019). Briefly, the Quantseq 3’ mRNA kit (Lexogen, Vienna, Austria) was used for library preparation (Moll et al., 2014) following the manufacturer's protocol. The PCR cycles number during library amplification was adjusted to 16. The six libraries were pooled and sequenced on a single Ion Torrent chip (ThermoFisher Scientific, Waltham, United States) for a total of 7,784,644 reads on average per library. Barcodes associated to the samples in this study are listed in Supplementary file 2 Table S5.
 
-## RNAseq analysis
+#### RNAseq analysis
 
 Read quality statistics were retrieved from the program FastQC (Andrews, 2010). Reads were cleaned using cutadapt (Martin, 2011). We removed the first 12 bp, trimmed the poly-A tail from the 3’ end, trimmed low-quality ends using a cutoff of 15 (phred quality +33) and discarded reads shorter than 30 bp. The number of reads before and after cleaning can be found in Supplementary file 2 Table S5. Raw sequences can be downloaded under the NCBI BioProject ID PRJNA494421.
 
 Cleaned reads were aligned on the reference genome of S288c from SGD (S288C_reference_genome_R64-2-1_20150113.fsa version) using bwa (Li and Durbin, 2009). Because we used a 3’mRNA-Seq Library, reads mapped largely to 3’UTRs. We increased the window of annotated genes in the SGD annotation (saccharomyces_cerevisiae_R64-2-1_20150113.gff version) using the UTR annotation from Nagalakshmi et al. (2008). Based on this reference genes-UTR annotation, the number of mapped reads per genes was estimated using htseq-count of the Python package HTSeq (Anders et al., 2015) and reported in Supplementary file 2 Table S6.
 
-## Correlation of gene expression profiles
+#### Correlation of gene expression profiles
 
 The correlation of expression profiles for paralogs was calculated using Spearman’s correlation from large-scale microarray data (Ihmels et al., 2004) over 1000 mRNA expression profiles from different conditions and different cell cycle phases. These results were compared and confirmed with a large-scale expression data from normalized single-cell RNAseq of S. cerevisiae grown in normal or stressful conditions (0.7 M NaCl) and from different cell cycle phases (Gasch et al., 2017).
 
-## Structural analyses
+### Structural analyses
 
-## Sequence conservation in binding interfaces of yeast complexes
+#### Sequence conservation in binding interfaces of yeast complexes
 
-## Identification of crystal structures
+##### Identification of crystal structures
 
 The sequences of paralogs classified as SSDs or WGDs (Byrne and Wolfe, 2005; Guan et al., 2007) were taken from the reference proteome of Saccharomyces cerevisiae assembly R64-1-1 and searched using BLASTP (version 2.6.0+) (Camacho et al., 2009) to all the protein sequences contained in the Protein Data Bank (PDB) downloaded on September 21st, 2017 (Berman et al., 2000). Due to the high sequence identity of some paralogs (up to 95%), their structures were assigned as protein subunits from the PDB that had a match with 100% sequence identity and an E-value lower than 1e-6. Only crystal structures that spanned more than 50% of the full protein length were kept for the following analyses. The same method was used to retrieve PDB structures for human paralogous proteins. The human reference proteome Homo_sapiens.GRCh38.pep.all.fa was downloaded on May 16th, 2019 from the Ensembl database (http://useast.ensembl.org/info/data/ftp/index.html) (Zerbino et al., 2018). Pairs of paralogs were retrieved from two different datasets (Lan and Pritchard, 2016; Singh et al., 2015). Protein interactions for those proteins were taken from a merged dataset from the BioGRID (Chatr-Aryamontri et al., 2017) and IntAct (Orchard et al., 2014) databases. The longest protein isoforms for each gene in the dataset were aligned using BLASTP to the set of sequences from the PDB. Matches with 100% sequence identity and E-values below 1e-6 were assigned to the subunits from the PDB structures.
 
-## Identification of interfaces
+##### Identification of interfaces
 
 Residue positions involved in protein binding interfaces were defined based on the distance of residues to the other subunit (Tsai et al., 1996). Contacting residues were defined as those whose two closest non-hydrogen atoms are separated by a distance smaller than the sum of their van der Waals radii plus 0.5 Å. Reference van der Waals radii were obtained with FreeSASA version 2.0.1 (Mitternacht, 2016). Nearby residues are those whose alpha carbons are located at a distance smaller than 6 Å. All distances were measured using the Biopython library (version 1.70) (Cock et al., 2009).
 
-## Sequence conservation within interfaces
+##### Sequence conservation within interfaces
 
 The dataset of PDB files was filtered to include only the crystallographic structures with the highest resolution available for each complex involving direct contacts between subunits of paralogs. Full-length protein sequences from the reference proteome were then aligned to their matching subunits from the PDB with MUSCLE version 3.8.31 (Edgar, 2004) to assign the structural data to the residues in the full-length protein sequence. These full-length sequences were then aligned to their paralogs and sequences from PhylomeDB (phylome 0003) (Huerta-Cepas et al., 2008) with MUSCLE version 3.8.31. Only three pairs of paralogs that needed realignment were included in this analysis. Sequence identity was calculated within interface regions, which considered the contacting and nearby residues. Paralogs were classified as HM or HM&HET based on the data shown in Supplementary file 2 Table S3. PDB identifiers for structures included in this analysis are shown in Supplementary file 2 Table S13. Pairs of paralogs for which the crystallized domain was only present in one of the proteins were not considered for this analysis.
 
 A similar procedure was applied to the human proteins, with sequences aligned to their corresponding PhylomeDB phylogenies from phylome 0076 resulting from forward and reverse alignments obtained with MUSCLE 3.8, MAFFT v6.712b and DIALIGN-TX, and merged with M-COFFEE (Huerta-Cepas et al., 2008). Considering that human genes code for multiple isoforms, we took the isoforms from the two paralogs that had the highest sequence identity with respect to the PDB structure. When a gene coded for multiple isoforms that were annotated with identical protein sequence in the human reference proteome, we only kept one of them. This resulted in a set of 40 HM interfaces and 25 HM&HET interfaces for a total of 54 different pairs (35 HM pairs and 19 HM&HET). Pairs of paralogs were classified as HM or HM&HET based on the data in Supplementary file 2 Tables S14 and S15.
 
-## Simulations of coevolution of protein complexes
+#### Simulations of coevolution of protein complexes
 
-## Mutation sampling during evolution of protein binding interfaces
+##### Mutation sampling during evolution of protein binding interfaces
 
 Simulations were carried out with high-quality crystal structures of homodimeric proteins from PDB (Berman et al., 2000). Four of them (PDB: 1M38, 2JKY, 3D8X, 4FGW) were taken from the above data set of structures that matched yeast paralogs and two others from the same tier of high-quality structures (PDB: 1A82, 2O1V). The simulations model the duplication of the gene encoding the homodimer, giving rise to separate copies that can accumulate different mutations, leading to the formation of HMs and HETs as in Figure 1.
 
 Mutations were introduced using a transition matrix whose substitution probabilities consider the genetic code and allow only substitutions that would require a single base change in the underlying codons (Thorvaldsen, 2016). Due to the degenerate nature of the genetic code, the model also allows synonymous mutations. Thus, the model explores the effects of amino acid substitutions in both loci, as well as in one locus only. The framework assumes equal mutation rates at both loci, as it proposes a mutation at each locus after every step in the simulation, with 50 replicate populations of 200 steps of substitution in each simulation. Restricting the mutations to the interface maintains sequence identity above 40%, which has been described previously as the threshold at which protein fold remains similar (Addou et al., 2009; Todd et al., 2001; Wilson et al., 2000).
 
-## Implementation of selection
+##### Implementation of selection
 
-Simulations were carried out using the FoldX suite version 4 (Guerois et al., 2002; Schymkowitz et al., 2005). Starting structures were repaired with the RepairPDB function, mutations were simulated with BuildModel followed by the Optimize function, and estimations of protein stability and binding energy of the complex were done with the Stability and Analyse Complex functions, respectively. Effects of mutations on complex fitness were calculated using methods previously described (Kachroo et al., 2015). The fitness of a complex was calculated from three components based on the stability of protein subunits and the binding energy of the complex using Equation 1:(1)xik=−log⁡[eβ(ΔGik−ΔGthresholdk)+1]where i is the index of the current substitution, k is the index of one of the model’s three energetic parameters (stability of subunit A, stability of subunit B, or binding energy of the complex), xik is the fitness component of the kth parameter for the ith substitution, β is a parameter that determines the smoothness of the fitness curve, ΔGik is the free energy value of the kth free energy parameter (stability of subunit A, stability of subunit B, or binding energy of the complex) for the ith substitution, and ΔGthresholdk is a threshold around which the fitness component starts to decrease. The total fitness of the complex after the ith mutation was calculated as the sum of the three computed values for xik, as shown in Equation 2:(2)xi=∑k=13xik
+Simulations were carried out using the FoldX suite version 4 (Guerois et al., 2002; Schymkowitz et al., 2005). Starting structures were repaired with the RepairPDB function, mutations were simulated with BuildModel followed by the Optimize function, and estimations of protein stability and binding energy of the complex were done with the Stability and Analyse Complex functions, respectively. Effects of mutations on complex fitness were calculated using methods previously described (Kachroo et al., 2015). The fitness of a complex was calculated from three components based on the stability of protein subunits and the binding energy of the complex using Equation 1:
 
-The fitness values of complexes were then used to calculate the probability of fixation (pfix) or rejection of the substitutions using the Metropolis criterion, as in Equation 3:(3)pfix={1,ifxj>xie−2N(xi−xj),ifxj≤xiwhere pfix is the probability of fixation, xi is the total fitness value for the complex after i substitutions; xj is the total fitness value for the complex after j substitutions, with j=i+1; and N is the population size, which influences the efficiency of selection.
+$$
+x_{i}^{k}=−log⁡[e^{\beta(ΔG_{i}^{k}−ΔG_{threshold}^{k})}+1]
+$$
 
-Different selection scenarios were examined depending on the complexes whose binding energy and subunit stabilities were under selection: neutral evolution (no selection applied on subunit stability and on the binding energy of the complex), selection on one homodimer, selection on the two homodimers, and selection on the heterodimer. β was set to 10, N was set to 1000 and the ΔGthresholdk were set to 99.9% of the starting values for each complex, following the parameters described in Kachroo et al. (2015). For the simulations with neutral evolution, β was set to 0. For simulations with other combinations of parameters, we varied β and N, one at a time, with β taking values of 1 and 20 and N taking values of 100 and 10000. The simulations with 500 substitutions were carried out with β set to 10, and N set to 1000.
+where i is the index of the current substitution, k is the index of one of the model’s three energetic parameters (stability of subunit A, stability of subunit B, or binding energy of the complex), $x_{i}^{k}$ is the fitness component of the kth parameter for the ith substitution, $\beta$ is a parameter that determines the smoothness of the fitness curve, $ΔG_{i}^{k}$ is the free energy value of the kth free energy parameter (stability of subunit A, stability of subunit B, or binding energy of the complex) for the ith substitution, and $ΔG_{threshold}^{k}$ is a threshold around which the fitness component starts to decrease. The total fitness of the complex after the ith mutation was calculated as the sum of the three computed values for $x_{i}^{k}$, as shown in Equation 2:
 
-## Analyses of simulations
+$$
+x_{i}=\sumk=13x_{i}^{k}
+$$
+
+The fitness values of complexes were then used to calculate the probability of fixation (pfix) or rejection of the substitutions using the Metropolis criterion, as in Equation 3:
+
+$$
+p_{fix}={1,ifx_{j}>x_{i}e^{−2N(x_{i}−x_{j})},ifx_{j}\leqx_{i}
+$$
+
+where $p_{fix}$ is the probability of fixation, $x_{i}$ is the total fitness value for the complex after $i$ substitutions; $x_{j}$ is the total fitness value for the complex after $j$ substitutions, with $j=i+1$; and $N$ is the population size, which influences the efficiency of selection.
+
+Different selection scenarios were examined depending on the complexes whose binding energy and subunit stabilities were under selection: neutral evolution (no selection applied on subunit stability and on the binding energy of the complex), selection on one homodimer, selection on the two homodimers, and selection on the heterodimer. $\beta$ was set to 10, $N$ was set to 1000 and the $ΔG_{threshold}^{k}$ were set to 99.9% of the starting values for each complex, following the parameters described in Kachroo et al. (2015). For the simulations with neutral evolution, $\beta$ was set to 0. For simulations with other combinations of parameters, we varied $\beta$ and $N$, one at a time, with $\beta$ taking values of 1 and 20 and $N$ taking values of 100 and 10000. The simulations with 500 substitutions were carried out with $\beta$ set to 10, and $N$ set to 1000.
+
+##### Analyses of simulations
 
 The results from the simulations were then analyzed by distinguishing mutational steps with only one non-synonymous mutation (single mutants, between 29% and 34% of the steps in the simulations) from steps with two non-synonymous mutations (double mutants, between 61% and 68% of the steps). The global data was used to follow the evolution of binding energies of the complexes over time, which are shown in Figure 4. The effects of mutations in HM and HET were compared using the single mutants (Figure 5—figure supplement 1). The double mutants were used to analyze epistatic and pleiotropic effects (Figure 5, Figure 5—figure supplement 3) and to compare the rates of mutation fixation based on their effects on the HMs (Figure 5—figure supplement 2).

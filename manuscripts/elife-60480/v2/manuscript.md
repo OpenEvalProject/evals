@@ -39,9 +39,17 @@ In this study, we combine chemical genetics, proximity labeling, and proteome-wi
 
 ## Results
 
-## Optimization of a chemical genetic strategy for identifying the direct targets of PARP-7
+### Optimization of a chemical genetic strategy for identifying the direct targets of PARP-7
 
 Identifying the protein targets of PARP-7 is a critical first step toward unraveling its function in cells. In previous work we have developed an engineered enzyme—modified substrate strategy for identifying relevant targets of individual PARP family members (Carter-O'Connell et al., 2014; Carter-O'Connell et al., 2016; Carter-O'Connell and Cohen, 2015; Carter-O'Connell et al., 2018). This chemical genetic (CG) method uses engineered PARPs and an orthogonal NAD+ analogue that contains a clickable handle (e.g. an alkyne) that is located at the N-6 position of the adenine ring (5-Bn-6-a-NAD+). We showed that 5-Bn-6-a-NAD+ is an excellent substrate for engineered PARPs in which a hydrophobic amino acid (isoleucine or leucine) at the floor position (so named because it sits at the floor of the nicotinamide subsite in the NAD+ binding pocket) is mutated to a glycine. Importantly, 5-Bn-6-a-NAD+ is not used by wild-type (WT) PARPs and in this way is orthogonal to native NAD+. While 5-Bn-6-a-NAD+ is a very good substrate for many floor position engineered PARPs (e.g. L1782G, LG-PARP-14), we found that it is a poor substrate for several other floor position PARP mutants, including PARP-7. We therefore sought a new orthogonal NAD+ analogue that would serve as an efficient substrate for floor position engineered PARP-7, I631G PARP-7 (IG-PARP-7) (Figure 1a).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of chemical genetic approach for identifying direct targets of PARP-7. (b) Crystal structure of human PARP1 bound to the non-hydrolyzable NAD+ analog benzamide adenine dinucleotide (BAD). PDB: 6bhv. The structure shows that the C-2 position of BAD is pointed out of the ADP-ribose pocket. (c) Chemical structure of the clickable, orthogonal NAD+ analogs. 5-Bn-2-e-NAD+ is the optimized substrate for the floor position engineered PARP-7, IG-PARP-7. 5-Bn-6-a-NAD+ was used in our previous studies by other floor position engineered PARPs (e.g. PARP14). (d) 5-Bn-2-e-NAD+ is an efficient substrate for IG-PARP-7. HEK293T cells were transfected with either GFP-WT-PARP-7 (control) or GFP-IG-PARP-7. Cell lysates were prepared and incubated with either 5-Bn-2-e-NAD+ or 5-Bn-6-a-NAD+ (100 µM). Following copper-catalyzed click chemistry with biotin-azide, proteins were resolved by SDS-PAGE and biotinylated proteins were detected by Western blot detection using Streptavidin-HRP. Biotinylated proteins represent direct MARylation targets of PARP-7.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Labeling of PARP-7 MARylation targets was performed as described in Figure 1. Neutravidin agarose was used to enrich biotinylated proteins (i.e. MARylation targets). Proteins were resolved by SDS-PAGE and were detected by Western blot using Strep-HRP (biotin) and an antibody against GFP. The two biological replicates collected in this study are represented here. (b) Labeling of PARP-12 MARylation targets was performed as described in Figure 1. PARP-12 I660G mutant was used. Proteins were resolved by SDS-PAGE and were detected by Western blot using Strep-HRP (biotin) and an antibody against GFP. Representative figure of data collected over two biological replicates.
 
 We focused our efforts on changing the position of the clickable handle. Recently, Pascal and colleagues reported a crystal structure of a non-hydrolyzable analogue of NAD+, benzamide adenine dinucleotide (BAD), bound to PARP-1 (Langelier et al., 2018). This is the first crystal structure of a PARP bound to an NAD+ biomimetic and it shows how the adenine ring of NAD+ binds in the NAD+-binding pocket. Based on this structure, it is evident that the C-2 position of the adenine ring of BAD is more solvent exposed than the N-6 position of the adenine ring (Figure 1b). Indeed, work from Marx and colleagues showed that C-2 modified NAD+ analogues were better PARP1 substrates than N-6 modified NAD+ analogues (Wallrodt et al., 2017). Given the high degree of conservation in the NAD+-binding pocket between PARP family members, we hypothesized that placing the clickable handle at the C-2 rather the N-6 position of 5-Bn-NAD+ would yield a better substrate for IG-PARP-7. We therefore designed and synthesized 5-Bn-2-e-NAD+, which has an ethynyl group at the C-2 position for Cu(I)-catalyzed Huisgen chemistry with an azide reporter (Figure 1c and Methods Supplement).
 
@@ -49,19 +57,43 @@ Compared to 5-Bn-6-a-NAD+, we found that 5-Bn-2-e-NAD+ is a much better substrat
 
 We next sought to identify the targets of PARP-7 using GFP-IG-PARP-7 and its optimized substrate, 5-Bn-2-e-NAD+. Following incubation of HEK 293T lysates with 5-Bn-2-e-NAD+ and subsequent conjugation with biotin-azide, we enriched biotinylated proteins (e.g. MARylation targets) using NeutrAvidin agarose (Figure 1—figure supplement 1a). We then proteolyzed enriched proteins and eluted peptides were subjected to tandem mass spectrometry (LC-MS/MS). We identified a total of 250 direct targets of PARP-7, many of which are RNA binding and RNA regulatory proteins (Supplementary file 1).
 
-## Identification of the PARP-7 interactome using BioID proximity labeling
+### Identification of the PARP-7 interactome using BioID proximity labeling
 
 To obtain a more holistic view of PARP-7 function in cells we used a proximity labeling approach—commonly referred to as BioID—for identifying intracellular PARP-7 interactors (Figure 2—figure supplement 1a). In the BioID approach, a protein of interest is fused to a promiscuous biotin ligase (BirA*) (Roux et al., 2012; Roux et al., 2013). Upon addition of biotin to cultured cells, BirA* uses biotin as a substrate to generate a lysine-reactive adenylate-biotin that reacts with proteins proximal to the fusion protein. In this way, intracellular interactors can be identified. We generated a WT PARP-7 chimeric construct in which a Myc-tagged promiscuous biotin ligase (BirA*) was fused to the N-terminus of PARP-7 (Myc-BirA*-WT-PARP-7). We observed robust biotinylation of proteins across the full molecular weight range in HEK 293 T cells expressing Myc-BirA*-WT-PARP-7, but not GFP-WT-PARP-7 (Figure 2—figure supplement 1b). Biotinylated proteins were enriched using NeutrAvidin agarose (Figure 2—figure supplement 1b). In the Myc-BirA*-PARP-7 NeutrAvidin pulldown sample we found an enrichment of auto-MARylated Myc-BirA*-PARP-7 as well as trans-MARylated proteins, demonstrating that Myc-BirA*-PARP-7 is catalytically active and that MARylated targets are enriched (Figure 2—figure supplement 1b). Enriched proteins were proteolyzed, and eluted peptides were subjected to LC-MS/MS. We identified a total of 189 interacting proteins of PARP-7 (Supplementary file 1). We found that a subset of these PARP-7 interactors overlapped with targets identified using our CG approach (Figure 2a), suggesting that these interactors could be intracellular MARylation targets of PARP-7.
 
-## Gene ontology enrichment analysis of PARP-7 targets
+![Figure 2.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig2-v2.jpg)
+
+**Figure 2.:** (a) Venn diagram comparing the 252 total PARP-7 targets identified by LC-MS/MS runs in comparison to the 181 PARP-7 interacting proteins identified using Myc-BirA–PARP-7. Data shown are the additive combined targets of two biological replicates for each type of strategy. (b) Scatterplot depicting enriched gene ontology (GO) terms attached to the 439 total PARP-7 MARylation targets (chemical genetics) and PARP-7 interactors (BioID proximity labeling). GO term enrichment was performed using the PANTHER toolkit. Significantly enriched GO terms (p<0.05) were condensed using ReviGO and similar terms were nested based on similarity. Terms are organized by −log10(p-value). Significance ranges from −58.2 (most significant) to −2.8 (least significant). Selected terms are indicated. (c) ‘Protein-protein Interaction Enrichment Analysis’ of the 439 total PARP-7 MARylation targets and PARP-7 interactors. Images were created using Metascape.org. The Molecular Complex Detection (MCODE) algorithm has been applied to identify densely connected network components. The MCODE networks identified for individual gene lists have been gathered and are shown here.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Schematic of proximity labeling approach (referred to as BioID) for identifying interacting proteins of PARP-7 in cells. (b) Proximity labeling of PARP-7 interactors in cells. Myc-BirA*-WT-PARP-7 or GFP-WT-PARP-7 were expressed in HEK 293 T cells (GFP-WT-PARP-7 is used as a negative control). Cells were treated with media supplemented with 50 μM biotin overnight. Neutravidin agarose was used to enrich biotinylated proteins (bound). Proteins were resolved by SDS-PAGE and were detected by Western blot using Strep-HRP (biotin) and an antibody against GFP.
+
+### Gene ontology enrichment analysis of PARP-7 targets
 
 To gain insight into the cellular functions of PARP-7, we performed gene ontology (GO) analysis using both the direct MARylation targets (CG approach) and the intracellular PARP-7 interactors (BioID approach). We performed GO biological process term enrichment using PANTHER and visualized terms using ReviGO (Figure 2b). We found a significant enrichment of terms related to viral processes, RNA regulation, and the innate immune response (Figure 2b, Supplementary file 1). The enrichment of these terms is consistent with the known role of PARP-7 in the regulation of the innate immune response during viral infection (Yamada et al., 2016; Kozaki et al., 2017; Grunewald et al., 2020).
 
 We also performed protein-protein interaction (PPI) analysis using the list of MARylation targets and intracellular interactors of PARP-7 using the Metascape tool (Zhou et al., 2019). To identify densely connected PPI network components, the Molecular Complex Detection (MCODE) algorithm was applied to the Uniprot IDs of all the proteins within our CG and BioID lists. These protein networks show clusters of interactions most abundantly related to mRNA translational silencing, mRNA splicing and metabolism, protein folding and localization to Cajal bodies (Figure 2c, Supplementary file 1). Taken together, these analyses support the notion that PARP-7 regulates various aspects of RNA regulation, including regulation of RNA localization, RNA splicing, and mRNA translation.
 
-## Validation of PARP-13 as a target of PARP-7 in cells
+### Validation of PARP-13 as a target of PARP-7 in cells
 
 We next sought to validate candidate proteins as MARylation targets of PARP-7 in intact cells. We focused our attention on PARP-13 (also known as ZAP and ZC3HAV1) as it was a top candidate in both proteomics datasets (Supplementary file 1) and because it is a well-known RNA binding protein (Todorova et al., 2015; Guo et al., 2004). PARP-13 is unique among PARP family members for two main reasons: i. it exists as two major isoforms, the full-length protein known as PARP-13.1 (ZAPL) and truncated variant known as PARP-13.2 (ZAPS) that is devoid of the catalytic domain, and ii. despite having the catalytic domain, PARP-13.1 is catalytically inactive. PARP-13.1 is constitutively expressed in most cells and PARP-13.2 is induced by interferons (e.g. IFN-β) as well as viral infection (Schwerk et al., 2019). In HEK 293 T cells, PARP-13.1 and PARP-13.2 are expressed, but PARP-13.1 is the major isoform (Li et al., 2019). Indeed, we confirmed that PARP-13.1 is the major endogenous isoform that interacts with Myc-BirA*-PARP-7 in HEK 293 T cells (Figure 3a). Similar to PARP-7, both isoforms of PARP-13 are important regulators of innate immunity and the response to viral infection. This functional connection motivated us to determine if both PARP-13.1 and PARP-13.2 are intracellular targets of PARP-7.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig3-v2.jpg)
+
+**Figure 3.:** (a) PARP-7 interacts with endogenous PARP-13 (constitutive isoform PARP-13.1) in cells as shown by proximity labeling. HEK 293 T cells were transfected with Myc-BirA*-PARP-7. Biotin (50 μM) was added to induce biotinylation of Myc-BirA*-PARP-7 interactors. Biotinylated proteins were enriched using Neutravidin agarose. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against GFP, Myc, PARP-13, and actin. Representative figure of data collected over three biological replicates. (b) PARP-7 MARylates PARP-13.2 in cells. GFP-PARP-7 and MycX2-PARP-13.2 were co-expressed in HEK293T cells. Cells were treated overnight either with DMSO or with Phthal01 (1 μM). Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADP-ribose (ADPr), GFP, Myc, and actin. Representative figure of data collected over three biological replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) PARP-7 MARylates PARP-13.1 and PARP-13.2 in cells. MARylation of PARP-13.1 and 13.2 by PARP-7. GFP-PARP-7 and PARP-13.1 and PARP-13.2 tagged variants were transfected in HEK 293 T cells. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, HA, Myc, RFP (mCherry), and actin. Representative figure of data collected over three biological replicates. (b) PARP-7 MARylates PARP-13.2 in vitro. GST-PARP-7 (or His6-SUMO-PARP-10) was incubated with His6-SUMO-PARP-13.2 in the presence of NAD+ (100 μM). MARylation reactions were stopped at indicted time points and proteins were resolved by SDS-PAGE and were detected by Coomassie stain and Western blot using the antibody against ADPr. (c) The interaction between PARP-7 and PARP-13.2 is independent of PARP-7 catalytic activity. Recombinant GST-PARP-7 and His6-SUMO-PARP-13.2 were incubated for 1 hr and then subjected to GST pulldown following conditions described in the figure. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, His6, and GST.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) HEK 293 T cells expressing GFP-PARP-7 were treated with increasing concentrations of Phthal01 for 16 hr. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, and actin. (b) HEK 293 T cells expressing GFP-PARP-10 were treated with increasing concentrations of Phthal01 for 16 hr. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, and actin.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Phthal01 (6-(4-(2-fluoro-5-((4-oxo-3,4-dihydrophthalazin-1-yl)methyl)benzoyl)piperazin-1-yl)nicotinonitrile) was tested against all active PARP family members using an ADP-ribosylation plate assay developed in our lab (Li et al., 2019). IC50 Data represents ± SEM from at least two biological replicates.
 
 To determine if PARP-13.1 and PARP-13.2 are MARylated by PARP-7 in cells, we co-expressed GFP-PARP-7 with MycX2- or HA-tagged PARP-13.1 or PARP-13.2. We found that both PARP-13.1 and PARP-13.2 are MARylated by GFP-PARP-7 (Figure 3b, Figure 3—figure supplement 1a). Myc-BirA*-PARP-7 MARylated both PARP-13.1 and PARP-13.2 to a similar extent as GFP-PARP-7, indicating that the tag on PARP-7 does not impact PARP-13 MARylation (Figure 3—figure supplement 1a). In the absence of PARP-7, we do not detect MARylation of PARP-13.1 or PARP-13.2 (Figure 3b, Figure 3—figure supplement 1a). Because the similar molecular weights of GFP-PARP-7 and PARP-13.1 made it challenging to distinguish trans-MARylation of PARP-13.1 from auto-MARylation of PARP-7, we focused all of our subsequent studies on PARP-13.2.
 
@@ -71,13 +103,25 @@ We sought to further validate PARP-13.2 as a direct MARylation target of PARP-7 
 
 Having demonstrated that PARP-13.2 is a MARylation target of PARP-7 we next asked if PARP-7 catalytic activity is required for its interaction with PARP-13.2. Using recombinantly expressed GST-PARP-7 and His6-SUMO-PARP-13.2 we performed co-immunoprecipitation experiments under the following conditions: No NAD+, 100 μM NAD+, or 100 μM NAD+ + Phthal01 (Figure 3—figure supplement 1c). GST-PARP-7 co-immunoprecipitated with His6-SUMO-PARP-13.2 under all conditions, demonstrating that the interaction between PARP-7 and PARP-13.2 is independent of PARP-7 catalytic activity.
 
-## Cys residues are the major sites of PARP-7-mediated MARylation in PARP-13
+### Cys residues are the major sites of PARP-7-mediated MARylation in PARP-13
 
 We next sought to identify the amino acid ADPr acceptors in PARP-13 that are MARylated by PARP-7 using chemical stability studies. NH2OH cleaves the ester bond between Glu/Asp and ADPr whereas HgCl2 cleaves the thioether bond between Cys and ADPr (Figure 4a; Hsia et al., 1985). We co-expressed HA-PARP-13.2 with either GFP-PARP-7 or GFP-PARP-10 in HEK 293 T cells and evaluated MARylation by Western blot analysis using an ADPr-specific antibody. In lysates from HEK 293 T cells expressing GFP-PARP-7 and HA-tagged PARP-13.2, we found that HgCl2 (2 mM) reduces substantially (~90%) the ADPr signal on HA-PARP-13.2, whereas neutral NH2OH (0.4 M) only partially reduces (~30%) this signal (Figure 4b). In contrast, in lysates from HEK 293 T cells expressing GFP-PARP-10 and HA-tagged PARP-13.2, we found that neutral NH2OH reduces substantially (~90%) the ADPr-signal on PARP-10 whereas HgCl2 has no effect (Figure 4b). The latter result is consistent with previous studies from our lab and others showing that PARP-10 is auto-MARylated predominately on Glu/Asp (Morgan and Cohen, 2015), (Kleine et al., 2008). Despite the strong auto-MARylation activity of PARP-10 in cells, we did not detect trans-MARylation of PARP-13.2 when these two constructs were co-expressed (Figure 4b). Treatment with either neutral NH2OH or HgCl2 equally reduces PARP-7 auto-MARylation suggesting it may be modified on both cysteine and acidic residues (Figure 4b). Although it is formally possible that another PARP modifies PARP-7 on acidic amino acids, the observation that PARP-7 MARylation is completely inhibited by Phthal01 (1 μM), but not veliparib (1 μM), suggests that these acid amino acids ADPr acceptor residues are auto-MARylation sites (Figure 4b, Figure 4—figure supplement 1f). Taken together, these results show PARP-13.2 is a selective target of PARP-7 that it is MARylated predominately on Cys residues.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic of chemical stability studies for analyzing the amino acid-ADPr linkage. Neutral hydroxylamine (NH2OH) removes ADPr from acid residues to generate a hydroxamic acid, while mercuric chloride (HgCl2) removes ADPr from Cys residues. (b) PARP-7 MARylates predominately on Cys residues whereas PARP-10 MARylates predominately on Glu/Asp residues. GFP-PARP-7/HA-PARP-13.2 or GFP-PARP-10 alone were expressed in HEK 293 T cells. Lysates were prepared and treated with either water control, HgCl2 (2 mM), or NH2OH (0.4 M). Following treatment, proteins were precipitated with ice cold methanol, and resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, HA, and actin. Representative figure of data collected over three biological replicates. (c) The Glu/Asp selective ADPr hydrolase MacroD2 efficiently removes ADPr from PARP-10, but only partially removes ADPr from PARP-7 and PARP-13. GFP-PARP-7/MycX2-PARP-13.2 or GFP-PARP-10 was co-expressed with either HA-MacroD2 or mCherry (negative control) in HEK 293 T cells. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, Myc, and actin. Representative figure of data collected over three biological replicates. (d) Time course of Cys MARylation in cells. GFP-PARP-7 and MycX2-PARP-13.2 were co-expressed in HEK 293 T cells. Cells were treated with either DMSO or Phthal01 (1 µM) to stop PARP-7 MARylation. Cells were harvested at indicated time points and proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, Myc, and actin. Representative figure of data collected over three biological replicates. (e) Time course of Glu/Asp MARylation in cells. GFP-PARP-10 was expressed in HEK 293 T cells. Cells were treated with either DMSO or Phthal01 (20 µM) to stop PARP-10 MARylation. Cells were harvested at indicated time points and proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, and actin. Representative figure of data collected over five biological replicates. (f) Quantification of replicate data from (d) and (e). ADPr signal is normalized to either GFP-PARP-10 or MycX2-PARP-13.2. Data are ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a–d) Biological replicates of time course inhibition post in-cell (HEK 293T) expression of GFP-PARP-10 using Phthal01 (20 μM). (e–f) Biological replicates of time course inhibition post in-cell (HEK 293T) expression of PARP-7 using Phthal01 (1 μM). See legend of Figure 4D–F.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Chemical stability of ADPr modification. The chemical stability of PARP-7 and PARP-10 mediated ADPr was assessed by performing a time course post denaturation of HEK293T cellular lysates. Cells we transfected with GFP-PARP-7 and MycX2-PARP-13.2 or GFP-PARP-10, lysed, heat denatured in SDS and allowed to sit at room temperature for the indicated times. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, and actin (b) Validation of PARP-7 (TIPARP) antibody in MEF cells (+/+) and (-/-) PARP-7 cells. Cells were treated with TCDD (2,3,7,8 -Tetrachlorodibenzo-p-dioxin) was used to induce PARP-7 and Phthal01 (24 hr treatment) used to inhibit PARP-7. Proteins from the resulting lysates were resolved by SDS-PAGE and were detected by Western blot using antibodies against novel PARP-7 (TIPARP), commercially available Anti-PARP-7 antibody (ab84664), and Actin. (c) Further investigation of endogenous PARP-7 and PARP-13 response to Phthal 01 PARP-7 inhibitor. Cells treated with TCDD (2,3,7,8 -Tetrachlorodibenzo-p-dioxin) was used to induce PARP-7 and Phthal 01 (24hr treatment) was used to inhibit PARP-7. Proteins from the resulting lysates were resolved by SDS-PAGE and were detected by western blot using antibodies against novel PARP-7 (TIPARP), commercially available Anti-PARP-7 antibody (ab84664), Invitrogen PARP-13 (ZC3HAV1 Antibody PA5-31650), GeneTex PARP-13 antibody (ZC3HAV1 antibody [N3C2]), and Actin.
+
 To further evaluate the ADPr acceptor residues in PARP-13, we took an enzymatic approach. Previous studies demonstrate that the macrodomain containing enzyme macroD2 removes ADPr attached to Glu/Asp, thereby reversing Glu/Asp-directed MARylation (Glowacki et al., 2009; Jankevicius et al., 2013; Rosenthal et al., 2013). While it is not known if macroD2 removes ADPr attached to Cys, it does not remove ADPr attached to Ser (Fontana et al., 2017). We co-expressed HA-macroD2 with either GFP-PARP-7 and MycX2-PARP-13.2 or GFP-PARP-10 and MycX2-PARP-13.2 in HEK 293 T cells and evaluated MARylation by western blot analysis using an ADPr-specific antibody. We found that while macroD2 efficiently reverses auto-MARylation of PARP-10, macroD2 only partially reverses both auto-MARylation of PARP-7 and trans-MARylation of PARP-13.2 (Figure 4c). These results are consistent with the chemical stability studies and further support the notion that PARP-7 predominately MARylates Cys residues in PARP-13.2.
 
-## Intracellular MARylation stability is dependent on the chemical nature of the amino acid-ADPr bond
+### Intracellular MARylation stability is dependent on the chemical nature of the amino acid-ADPr bond
 
 For many PTMs involved in cell signaling (e.g. phosphorylation), the rate of reversal is the major determinant of signal duration. It is unknown if disparate amino acid-ADPr bonds exhibit different cellular stabilities, which could impact the signal duration of MARylation. We measured the decay of PARP-7-mediated PARP-13 MARylation, which occurs predominately on Cys, and PARP-10 auto-MARylation, which occurs predominately on Glu/Asp. We used Phthal01 to stop the forward MARylation reaction: 1 μM for PARP-7 and 20 μM for PARP-10. We then harvested cells at different time points to measure the decay of PARP-7-mediated MARylation of PARP-13.2 and auto-MARylation of PARP-10 by western blot using an ADPr-specific antibody. We found that the half-life (t1/2) of ADPr in PARP-10 is 15 min whereas the t1/2 of ADPr in PARP-13.2 is 189 min (Figure 4d–f, Figure 4—figure supplement 1). Importantly, the PARP-1/2 inhibitor veliparib does not lead to the decay of PARP-7-mediated MARylation of PARP-13.2 (Figure 4—figure supplement 1f). The longer t1/2 of MARylated PARP-13.2 versus MARylated PARP-10 suggests that the Cys-ADPr bond is more stable in HEK 293 T cells than the Glu/Asp-ADPr bond.
 
@@ -85,15 +129,51 @@ We next determined if the longer t1/2 for Cys-ADPr compared to Glu/Asp-ADPr was 
 
 This result shows that Cys-ADPr is more stable than Glu/Asp-ADPr in HEK 293 T cells.
 
-## Inhibition of PARP-7 catalytic activity increases its protein levels
+### Inhibition of PARP-7 catalytic activity increases its protein levels
 
 The HEK 293 T cell time course experiments revealed that Phthal01 increased the protein levels of ectopically expressed GFP-PARP-7 and MycX2-PARP-13.2 (Figure 4, Figure 4—figure supplement 1). To test if endogenous PARP-7 and PARP-13 protein levels are similarly affected by inhibition of PARP-7 catalytic activity, we treated A549 cells, which express endogenously both PARP-7 and PARP-13, with Phthal01. PARP-13 was detected using two commercially available PARP-13 antibodies, whereas PARP-7 was detected using a recently developed PARP-7 antibody (manuscript in preparation, J. Matthews). The specificity of the PARP-7 antibody was validated using PARP-7+/+ and PARP-7-/- mouse embryonic fibroblasts (Figure 4—figure supplement 2b; MacPherson et al., 2013). We found that endogenous PARP-7 protein levels increase substantially upon treatment with Phthal01; however, the levels of endogenous PARP-13.1 did not change (Figure 4—figure supplement 2c). PARP-13.1 is the major endogenously expressed isoform under basal conditions. These results suggest that while endogenous PARP-7 levels are regulated by its catalytic activity, endogenous PARP-13.1 levels are not regulated by PARP-7 catalytic activity under these conditions.
 
-## PARP-7 predominately MARylates Cys residues in the CCCH zinc finger domains of PARP-13
+### PARP-7 predominately MARylates Cys residues in the CCCH zinc finger domains of PARP-13
 
 The chemical stability and enzymatic removal studies point to Cys residues as the predominate amino acids in PARP-13 that are MARylated by PARP-7. However, we sought direct evidence for PARP-7-mediated Cys MARylation in PARP-13, and perhaps other targets. Recently, Nielsen and colleagues established an unbiased MS platform for confidently identifying and localizing the amino acid ADPr acceptors in proteins on a proteome-wide scale (Hendriks et al., 2019; Larsen et al., 2018). This strategy involves the enrichment of ADP-ribosylated peptides (generated post trypsin digest) using the macrodomain Af1521, which binds with high affinity to ADPr-modified peptides. Enriched peptides containing ADPr are subjected to MS-based analysis using electron-transfer higher energy collisional dissociation (EThcD), a fragmentation technique that can localize the ADPr moiety to any nucleophilic amino acid acceptor with high confidence (Hendriks et al., 2019; Larsen et al., 2018). We used this MS platform to search for amino-acid-ADPr sites across the proteome in HEK 293 T cells under three experimental conditions: i. GFP-PARP-7 overexpressing cells, ii. MycX2-PARP-13.2 overexpressing cells, or iii. GFP-PARP-7 and MycX2-PARP-13.2 overexpressing cells. We identified a total of 1712 ADPr sites with a localization probability of >90% in all three conditions (Supplementary file 1). There is a low degree of variance between biological replicates, especially for the GFP-PARP-7 alone and the MycX2-PARP-13.2 alone conditions (Figure 5—figure supplement 1). As expected, there was a greater degree of overlap between the GFP-PARP-7 alone condition and the GFP-PARP-7/ MycX2-PARP-13.2 condition compared to the MycX2-PARP-13.2 condition (Figure 5—figure supplement 2). We identified amino acid-ADPr sites on all known ADPr acceptor residues, including Cys, Glu, Asp, His, Lys, Arg, Ser, Thr, and Tyr (Supplementary file 1).
 
 Initially, we focused on analyzing the amino acid-ADPr sites in PARP-13. In the GFP-PARP-7 alone condition, endogenous PARP-13 (likely representing the two major isoforms PARP-13.1 and PARP-13.2) is MARylated exclusively on Cys residues (Figure 5a, Figure 5—figure supplements 2–4, Supplementary file 1). Intriguingly, all but one of the seven identified Cys-ADPr sites in endogenous PARP-13 are located in the four N-terminal zinc-finger (ZnF 1–4) domains; one Cys-ADPr (Cys721) is located in the inactive, catalytic domain of PARP-13.1 (Figure 5b,c, Figure 5—figure supplements 2–4, Supplementary file 1). Five out of the six ZnF Cys-ADPr sites are Zn-coordinating Cys residues (Figure 5c). Despite the relatively low conservation of PARP-13 across species, all of the endogenous PARP-13 Cys-ADPr sites in the ZnF domains are conserved between human, mouse, and rat (Figure 5—figure supplement 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-v2.jpg)
+
+**Figure 5.:** (a) Pie-charts showing of the amino acid residue distribution of all ADP-ribosylation sites identified on PARP-13 using EThcD fragmentation. Experiments were performed under three conditions: MycX2-PARP-13.2 overexpressing cells, GFP-PARP-7 overexpressing cells, GFP-PARP-7 and MycX2-PARP-13.2 overexpressing cells. One letter code used for amino acids. (b) Domain architecture of PARP-13.1 and PARP-13.2 showing positions of Cys ADPr sites. (c) Crystal structure of the N-terminal ZnF domains of PARP-13highlighting Cys ADPr sites (cyan). ZnF domains are highlighted (purple). PDB: 6UEI. (d) Mutation of the Cys to Ala in the ZnF domains of PARP-13 decreased PARP-7-mediated PARP-13 MARylation. GFP-PARP-7 was co-expressed with either WT- or CtoA ZnF all, CtoA ZnF1-2, or CtoA ZnF3-4 in HEK 293 T cells. GFP-PARP-7 or GFP-empty vector control co-expressed in HEK293T cells with MycX2-PARP-13.2 WT and mutants. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, Myc, and actin. Representative figure of data collected over three biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Principal component analysis (PCA) based upon unnormalized data. Blue; PARP-7 overexpressing replicates, red; PARP-13.2 overexpressing replicates, purple; PARP-7 and PARP-13.2 overexpressing replicates. (b) Unsupervised hierarchical clustering analysis of z-scored log2-transformed intensities of ADPr sites. (c) Pearson correlations of identified ADPr sites (localization probability >0.90).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Scaled Venn diagram visualizing distribution of all identified ADP-ribosylation sites (localization probability >0.90) in GFP-PARP-7 overexpressing cells compared to PARP-13.2 overexpressing cells and PARP-7 and PARP-13.2 overexpressing cells. (b) Scaled Venn diagram visualizing distribution of ADP-ribosylation sites (localization probability >0.90) identified in duplicate in PARP-7 overexpressing cells compared to PARP-13.2 overexpressing cells and PARP-7 and PARP-13.2 overexpressing cells.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a) Annotated domain architecture of PARP-13.1 and PARP-13.2. (b) ADPr sites identified in duplicate on PARP-13in GFP-PARP-7 overexpressing cells. (c) ADPr sites identified in duplicate on PARP-13 in the GFP-PARP-7 and MycX2-PARP-13.2 overexpressing cells. (d) ADPr sites identified in duplicate on PARP-13 in the MycX2-PARP-13.2 overexpressing cells.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** ADP-ribosylation of cysteine residues on PARP-13. Blue; c-ions, red; y-ions and z-ions, grey; unassigned.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** ADPr sites identified on PARP-13 by EThcD indicated by a black box. All sites identified within the ZnF regions are conserved between species. Only one site identified, within the catalytic domain of PARP-13, C721, is not conserved between species.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** (a) Annotated domain architecture of PARP-7 (b) ADPr sites identified in duplicate on PARP-7 in the GFP-PARP-7 overexpressing cells. (c) ADPr sites identified in duplicate on PARP-7 in the GFP-PARP-7 and MycX2-PARP-13.2 overexpressing cells (d) ADPr sites identified in duplicate on PARP-7 in the MycX2-PARP-13.2 overexpressing cells.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** (a) Wild-type PARP-13.2. (b) PARP-13.2 CtoA ZnF 1–2 mutant, sequence verified. (c) PARP-13.2 CtoA ZnF 3–4 mutant, sequence verified. (d) PARP-13.2 CtoA ZnF all mutant, sequence verified.
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/60480/elife-60480-fig5-figsupp8-v2.jpg)
+
+**Figure 5—figure supplement 8.:** MycX2 PARP-13.2 WT or ZnF domain mutants were co-expressed with GFP empty vector or GFP PARP-7 in HEK 293 T cells. Proteins were resolved by SDS-PAGE and were detected by Western blot using antibodies against ADPr, GFP, Myc, and actin. GFP-PARP-7 was immunoprecipitated using GFP-nanobody magnetic beads (Chromotek). Representative figure of data collected over two biological replicates.
 
 When PARP-13.2 was co-expressed with PARP-7, we identified additional Cys-ADPr sites in the ZnF in PARP-13. In this condition, other amino acid-ADPr sites are identified, most prominently on Arg and Tyr; however, the intensities for Arg-ADPr and Tyr-ADPr are at least an order of magnitude lower than the intensities found for Cys-ADPr (Figure 5a, Figure 5—figure supplement 3). Cys MARylation in PARP-13.2 is dependent on the co-expression of PARP-7 since we only detect Ser-ADPr (three sites) and Arg-ADPr (one site) in the PARP-13.2 alone condition (Figure 5a, Figure 5—figure supplement 3). The intensity for Ser-ADPr is substantially higher than Arg-ADPr (Figure 5a, Figure 5—figure supplement 3).
 
@@ -101,7 +181,7 @@ In addition to identifying Cys-ADPr sites in PARP-13, we also found that GFP-PAR
 
 Using EThcD fragmentation, we confidently identified Cys residues as major PARP-7-mediated MARylation sites in PARP-13. Nevertheless, we sought to confirm the MS results using mutagenesis studies. We focused on the Cys residues in the ZnF domains since we found that they are the major sites of Cys MARylation in PARP-13 (Figure 5, Figure 5—figure supplement 3, Supplementary file 1). In HEK 293 T cells expressing both GFP-PARP-7 and MycX2-PARP-13.2, we found that mutation of all of the Cys residues to alanine (Ala) residues in the ZnF domains of PARP-13.2 (CtoA ZnF all) substantially reduces PARP-13.2 MARylation compared to WT PARP-13.2 (Figure 5d, Figure 5—figure supplement 7). Mutation of the Cys residues to Ala residues in either ZnF domains 1–2 (CtoA ZnF 1–2) or 3–4 (CtoA ZnF 3–4) modestly reduces PARP-13.2 MARylation (Figure 5d, Figure 5—figure supplement 7). The reduction in PARP-7-mediated MARylation of PARP-13.2 in the Cys mutants is not due to a loss in the interaction between PARP-13 and PARP-7 as shown by co-immunoprecipitation experiments (Figure 5—figure supplement 8). Together these data support that the primary sites of MARylation by PARP-7 on PARP-13.2 are the ZnF cysteine residues.
 
-## Proteome-wide analysis reveals Cys residues as major ADPr acceptors in PARP-7 targets
+### Proteome-wide analysis reveals Cys residues as major ADPr acceptors in PARP-7 targets
 
 Having validated Cys as the major PARP-7-mediated MARylation site in PARP-13, we broadened our analysis across the proteome in HEK 293 T cells and focused on amino acid-ADPr sites that were either unique or enriched (at least 5-fold) in the GFP-PARP-7 alone condition compared to the MycX2-PARP-13.2 alone condition. We reasoned that these amino acid-ADPr sites are likely targets of PARP-7. Using the above criteria, we identified a total of 939 unique amino acid-ADPr sites on a total of 490 proteins (Figure 6a) as putative PARP-7 targets. Of these sites, the majority (471 Cys-ADPr sites on 374 proteins) were on Cys residues (Figure 6a). When we compared the PARP-7-targeted, Cys-ADPr modified proteins to the direct PARP-7 targets identified using our CG strategy, we found 48 overlapping protein targets (Figure 6b). Among these 48 overlapping proteins, PARP-13 was a top target. We next asked how many Cys-ADPr sites there are per protein target. We found that the vast majority of proteins are MARylated on a single Cys (Figure 6c and Supplementary file 1). Intriguingly, PARP-13, with 11 sites identified, stands out as the only target with >4 Cys-ADPr sites (Figure 6c).
 
@@ -129,39 +209,343 @@ Until recently, PARP drug discovery efforts over the past 20 years have focused 
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ADP-ribose, E6F6A (Rabbit monoclonal)</td>
+      <td>Cell signaling technology</td>
+      <td>83732: RRID:AB_2749858</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP, PABG1 (Rabbit polyclonal)</td>
+      <td>Chromotek</td>
+      <td>PABG1-100; RRID:AB_2749857</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA.11, 16B12 (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>901502; RRID:AB_2565007</td>
+      <td>WB(1: 2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc, 9B11 (Mouse monoclonal)</td>
+      <td>Cell signaling technology</td>
+      <td>2276S; RRID:AB_331783</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Actin, C-4 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-47778; RRID:AB_2714189</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZC3HAV1/PARP-13 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>16820–1-AP; RRID:AB_2728733</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG, HRP linked</td>
+      <td>Jackson Immuno Research Lab</td>
+      <td>20402–1 mL</td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti rabbit IgG, HRP linked</td>
+      <td>Cell signaling technology</td>
+      <td>7074S</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG (H+L), HRP linked</td>
+      <td>Invitrogen</td>
+      <td>62–6520</td>
+      <td>WB(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZC3HAV1/PARP-13 (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>PA5-106389; RRID:AB_2854063</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZC3HAV1, N3C2 (Mouse monoclonal)</td>
+      <td>GeneTex</td>
+      <td>GTX120134; AB_10721153</td>
+      <td>WB(1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- TIPARP/PARP-7 (mouse monoclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin HRP (Peroxidase Streptavidin 1.0 mg)</td>
+      <td>Jackson Immuno Research Lab</td>
+      <td>NC9705430</td>
+      <td>WB(1:2500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GFP-Trap Magnetic Agarose</td>
+      <td>Chromotek</td>
+      <td>gtma-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Myc-trap magnetic agarose</td>
+      <td>Chromotek</td>
+      <td>ytma-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce NeutrAvidin Agarose</td>
+      <td>Thermo Scientific</td>
+      <td>29201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cytiva (Formerly GE Healthcare Life Sciences) Glutathione Sepharose 4B Media</td>
+      <td>Fisher Scientific</td>
+      <td>45-000-139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-Peg3-Azide</td>
+      <td>Click Chemistry Tools</td>
+      <td>AZ104-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris(3-hydroxypropyltriazolylmethyl)amine (THPTA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>762342–100 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxylamine solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>438227–50 ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>TMS-013-B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibco DMEM- high glucose</td>
+      <td>Fisher Scientific</td>
+      <td>11965092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibco GlutaMAX supplement</td>
+      <td>Fisher Scientific</td>
+      <td>35050061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5bn-6a-NAD+</td>
+      <td>JACS, 136, 5201 (2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5bn-2e-NAD+</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Methods Supplement</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phthal01</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Methods Supplement</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Myc-BirA*-PARP-7</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cloned form Myc-BirA*-PARP-14 described in ACS Chem. Biol., 13, 2841 (2018)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-WT-PARP-7</td>
+      <td>This paper</td>
+      <td></td>
+      <td>WT-PARP-7 gene (gBlock gene fragment) was cloned into pEGFP-C1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-IG-PARP-7</td>
+      <td>This paper</td>
+      <td></td>
+      <td>IG-PARP-7 gene (gBlock gene fragment) was cloned into pEGFP-C1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-PARP-13.1</td>
+      <td>ACS Chem. Biol.,13, 2841 (2018)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-PARP-13.2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>WT-HA-PARP-13.2 gene (gBlock gene fragment) was cloned into CMV vector using standard restriction enzyme methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MycX2-PARP-13.2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>WT-MycX2-PARP-13.2 gene (gBlock gene fragment) was cloned into CMV vector using standard restriction enzyme methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MycX2-PARP-13.2 CtoA ZnF all mutant</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant MycX2-PARP-13.2 gene (gBlock gene fragment) was cloned into CMV vector using standard restriction enzyme methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MycX2-PARP-13.2 CtoA ZnF 1–2 mutant</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant MycX2-PARP-13.2 gene (gBlock gene fragment) was cloned into CMV vector using standard restriction enzyme methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MycX2-PARP-13.2 CtoA ZnF 3–4 mutant</td>
+      <td>This paper</td>
+      <td></td>
+      <td>mutant MycX2-PARP-13.2 gene (gBlock gene fragment) was cloned into CMV vector using standard restriction enzyme methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-MacroD2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HA-MacroD2 gene (gBlock gene fragment) was cloned into CMV vector using standard restriction enzyme methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-PARP-10</td>
+      <td>Cell Reports, 25, 4770 (2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry</td>
+      <td>gift plasmid from RY Tsien</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-PARP-7</td>
+      <td>Gomez et al., Biochemical Journal,475, 3827 (2018)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-SUMO-PARP-13.2</td>
+      <td>gift plasmid from I. Carter-O'Connell</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 HEK 293T and A549 (ATCC CCL-185) cells were grown in DMEM (Gibco) supplemented with 10% fetal bovine serum (FBS, Millipore Sigma), and glutamax (Gibco) at 37 °C and 5% CO2. Mouse embryonic fibroblasts (MEFs) derived from WT or KO PARP-7 mice were cultured as previously described (Yamada et al., 2016). HEK 293T and A549 cells were authenticated using STR and were found to be mycoplasma free. Transient transfections of HEK 293 T cells with 15 μg of expression vectors per 10 cm dish (70% confluency) were performed using the CalPhos system (Clontech) according to manufacturer’s instructions. Cells were lysed in HEPES buffer supplemented with 1% Triton X-100, 100 µM fresh TCEP-HCl (Thermo Scientific), cOmplete EDTA-free protease inhibitor (Roche), phosphatase inhibitor cocktail 2 (Sigma-Aldrich), and phosphatase inhibitor cocktail 2 (Sigma-Aldrich). Cell debris was cleared by centrifugation at 10,000 X g for 5 min at 4C.
 
-## PARP-7 MARylation target labeling and neutravidin enrichment for LC-MS/MS analysis
+### PARP-7 MARylation target labeling and neutravidin enrichment for LC-MS/MS analysis
 
 Lysates from HEK 293 T cells expressing WT- or IG-PARP-7 (1.169 mg) were diluted to a volume of 336 μl in lysis buffer (25 mM HEPES pH 7.4, 50 mM NaCl, 5 mM MgCl2, 1% NP-40, 1X cOmplete EDTA-free protease inhibitor (Roche), 0.5 mM TCEP). The lysates were then split into six tubes of 48 µl. To each tube, 12 µl of 5X concentration (0.5 mM) 5-Bn-2e-NAD+ was added for a final concentration of 100 µM in each tube. The samples were then incubated for 2 hr shaking at 30 °C. Following incubation, the samples were precipitated with 1 ml 4:1 cold MeOH: CHCl3 for 1 hr at −20°C to remove excess 5-Bn-2e-NAD+. This step was essential before proceeding to the click reaction. The protein was then pelleted at 6000 g at 4°C for 30 min. Methanol supernatant was completely removed and the pellet was allowed to dry for approximately 15 min. The pellet was resuspended in 30 µl of 2% SDS and 30 µl of PBS was added. To this 30 µl of 3X concentration click buffer was added (15.8 mM THPTA in PBS, 3.15 mM CuSO4 made fresh in 1X PBS, 0.75 mM Biotin-peg3-azide (Click Chemistry Tools) in DMSO, 15.8 mM sodium ascorbate in PBS, diluted to respective concentrations with 1X PBS). Click conjugation to biotin−peg3-azide was performed for 1 hr at RT. Following click conjugation, WT-PARP-7 samples were pooled and IG-PARP-7 samples were pooled and precipitated overnight with 8 mL cold MeOH at 20°C. The next day, samples were pelleted at 6000 g 4°C. Importantly, the samples were pelleted, sonicated for 5 s, resuspended in cold methanol and pelleted again. This process was repeated three times with cold methanol and once with cold acetone. This step was essential to remove excess biotin-Peg3-azide before enrichment. The protein was then re-dissolved in 2% SDS and subjected to enrichment using NeutrAvidin agarose (Pierce) and proteolysis as previously described (Carter-O'Connell et al., 2014; Carter-O'Connell et al., 2016; Carter-O'Connell and Cohen, 2015; Carter-O'Connell et al., 2018).
 
-## CG and BioID proteomics methods
+### CG and BioID proteomics methods
 
 All MS methods and data analysis were followed as previously reported (Carter-O'Connell et al., 2014; Carter-O'Connell et al., 2016; Carter-O'Connell and Cohen, 2015; Carter-O'Connell et al., 2018). For both the CG method or BioID method, a protein was considered a ‘valid’ target (CG) or interactor (BioID) if the unique peptide count of the identified protein was at least twice as abundant in the IG-PARP-7 or Myc-BirA*-PARP-7 sample in comparison to the control sample (GFP-PARP-7).
 
-## In cell MARylation of MycX2-PARP-13.2 by GFP-PARP-7
+### In cell MARylation of MycX2-PARP-13.2 by GFP-PARP-7
 
 HEK293T cells were seeded and grown overnight to ~60% confluency on a six-well plate. The next morning the cells were transfected using CalPhos Mammalian Transfection kit. A total of 1.5 µg of each plasmid (for co-transfection) were used in each well of the six-well plate and transfection protocol according to manufacturer was followed. After 4–6 hr transfection, the media was swapped with fresh warm media. The cells were allowed to grow overnight and typically reached ~90% confluency. The following morning, media was aspirated and cells were washed with 2 ml cold PBS/ well. All PBS were aspirated and the cell plate was frozen in the −80 °C until ready to lyse. Cell plates from −80 °C were taken out onto ice and 75 µl of LysB (50 mM HEPES pH7.4, 150 mM NaCl, 1 mM MgCl2, 1% tritonX-100, 1X protease inhibitor, 1X phosphatase inhibitors, 1 µM veliparib, 100 µM TCEP) added to the frozen wells of the plate. The plates were allowed to thaw for about 10 min on ice and the cells were removed from the plate by pipetting up and down in the wells to collect cell lysates. Lysates were transferred to Eppendorf tubes and centrifuged 10,000 g for 5 min at 4°C. The supernatant was transferred to a fresh tube and the protein concentration was determined by the Bradford assay (Biorad). The lysates were brought to 200 µg/60 µl and then 20 µl of 4X sample buffer was added for a final concentration of 2.5 µg/ul. The samples were boiled and 15 µl (37.5 µg) of total proteins were separated by 10% SDS-PAGE. Proteins were then transferred to nitrocellulose, blocked with milk and probed for ADPr (CST) 1:1000, GFP (Chromotek, 1:1000), actin (Santa Cruz Biotechnology, 1:1000), and Myc (CST, 1:1000).
 
-## In vitro MARylation with bacterially expressed PARPs
+### In vitro MARylation with bacterially expressed PARPs
 
 GST-PARP-7, His6-SUMO-PARP-13.2, and His6-SUMO-PARP-10 were expressed (E. coli) and purified as previously described (Kirby et al., 2018). MARylation reaction conditions: 10 nM PARP-10 or PARP-7, 30 nM PARP-13.2, and 100 μM NAD+ in HEPES reaction buffer (HRB: 50 mM HEPES, 100 mM NaCl, 10 mM MgCl2, and 0.5 mM TCEP). The MARylation reactions were allowed to proceed at 30°C and stopped at various time intervals by the addition of sample buffer. The samples were boiled and proteins were separated by 10% SDS-PAGE. Proteins were transferred to nitrocellulose, blocked with milk and probed for ADPr (CST, 1:1000). Coomassie stain was used as a protein loading control.
 
-## GST pulldown of recombinant PARP-13.2 by recombinant PARP-7
+### GST pulldown of recombinant PARP-13.2 by recombinant PARP-7
 
 His6-SUMO-PARP-13.2 (100 nM) and GST-PARP-7 (100 nM) were incubated in HRB for 1 hr at 4°C. The above mixture was then incubated with either vehicle control, NAD+ (100 μM), Phthal01 (1 μM), or NAD+ together with Phthal01 (100 μl/sample). After 2 hr at 30°C, protein complexes were enriched using GSH-Sepharose (Cytiva) (50 μl 50% slurry, rotation, 1 hr at 4°C). The beads were washed with HRB containing 1 mM EDTA (3x). The proteins were eluted with 1.5x Sample buffer (80 μl) and boiled for 10 min at 95°C. Proteins were resolved by 7.5% SDS-PAGE, transferred to nitrocellulose, blocked with milk and probed for ADPr, GST (Proteintech, 1:2000), or His6 (Fisher Scientific, 1:1000).
 
-## Chemical treatment with HgCl2 and NH2OH
+### Chemical treatment with HgCl2 and NH2OH
 
 HEK293T cells co-expressing either GFP-PARP-7 and mycX2-PARP-13.2 or GFP-PARP-10 and mycX2-PARP-13.2 were lysed and protein was quantified by Bradford assay and brought to a concentration of ~3 mg/ml. Lysates were then treated with 1% SDS to prior to lysis to prevent to inactivate enzymes. Lysates were then treated either with H2O (control), 2 mM HgCl2 in H2O (1.5 hr) in ddH2O, 0.4 M neutral NH2OH in H2O (15 min). Following treatment, proteins were precipitated by adding cold methanol and incubating samples at −20°C. Following precipitation with cold methanol, proteins were centrifuged at 6000 g. The methanol was removed and protein pellets were allowed to dry for ~10 min at RT. The protein was resuspended in 1.5X sample buffer containing βME and boiled for 10 min at 95°C. Proteins were separated by 10% SDS-PAGE, transferred to nitrocellulose, and western blot analysis was performed to detect ADPr, GFP-PARPs, mycX2-PARP-13.2, and actin.
 
-## PARP-7 antibody validation and effects of Phthal01 on endogenous PARP-7 levels in cell culture
+### PARP-7 antibody validation and effects of Phthal01 on endogenous PARP-7 levels in cell culture
 
 A549 cells or WT or KO MEFs PARP-7 were plated at a density of 2.0 × 105 cell per ml in six-well plates. The following day, the cells were treated for 4 hr with DMSO, 10 nM TCDD, 1 μM Phthal01, or co-treated with TCDD and Phthal01. Cell pellets were collected and lysed in RIPA buffer (20 mM Tris-HCl (pH 7.5), 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% NP-40, 1% sodium deoxycholate) supplemented with 1X protease inhibitor cocktail (Roche). Samples were sonicated at a low intensity for two cycles of 30 s on/off two times using a Bioruptor and rotated for 30 min at 4°C. After centrifugation, the protein concentration was determined by BCA assay (Bio-Rad). 40 μg of total protein was separated by SDS-PAGE and transferred to a PVDF membrane. Membranes were incubated with in house generated anti-PARP-7 (1:1000) or anti-α-actin in 5% milk overnight. Membranes were stripped, blocked, and re-blotted with anti-PARP-13 (Invitrogen PA5-106389; 1:1000) or with anti-PARP-7 (Abcam 84664 lot# GR3304056-5; 1:1000).
 
-## Sample preparation for EThcD MS analysis
+### Sample preparation for EThcD MS analysis
 
 Samples were overall prepared as previously described (Hendriks et al., 2019; Larsen et al., 2018). Cell pellets were lysed in guanidinium (6 M guanidine-HCl, 50 mM TRIS, pH 8.5) by alternating vigorous vortexing and vigorous shaking of the samples, after which lysates were snap frozen in liquid nitrogen. Cell lysates were thawed at room temperature, reduced and alkylated by incubation with 5 mM TCEP and 5 mM chloroacetamide (CAA) for 30 min, followed by sonication for 15 s at an amplitude of 90%. Protein concentration was measured using Bradford assay (Bio-Rad). Proteins were digested for 3 hr at room temperature using Lysyl Endopeptidase (Lys-C, 1:100 w/w; Wako Chemicals). After initial digestion, samples were diluted with three volumes of 50 mM ammonium bicarbonate (ABC), after which they were digested using modified sequencing grade Trypsin (1:100 w/w; Sigma Aldrich) overnight at room temperature.
 
@@ -171,16 +555,16 @@ Lyophilized peptides were dissolved in AP buffer (50 mM TRIS pH 8.0, 50 mM NaCl,
 
 Samples were basified by addition of ammonium hydroxide to a final concentration of 20 mM. All StageTips were prepared essentially as described previously (Rappsilber et al., 2003) but were assembled using four layers of C18 disc material (punch-outs from 47mm C18 3M extraction discs, Empore). StageTips were activated using 100 μL methanol, and re-activated using 100 μl of 80% ACN in 50 mM ammonium hydroxide. StageTips were equilibrated using 2 × 100 μl of 20 mM ammonium hydroxide, after which samples were loaded. The flow-through was collected at this stage (F0). Subsequently, StageTips were washed twice with 100 μl of 20 mM ammonium hydroxide, of which the first wash was collected (F0). Samples were eluted of the StageTips using 80 μl of 30% of ACN in 20 mM ammonium hydroxide (F1). Flow-through from loading of the samples were acidified to a final concentration of 1% TFA (v/v), and then processed as above except using 0.1% formic acid instead of ammonium hydroxide. All samples were vacuum dried to completion in a SpeedVac at 60°C. Dried purified ADP-ribosylated peptides were dissolved by addition of 10 μl 0.1% formic acid, and stored at −20°C until MS analysis.
 
-## EThcD MS data acquisition
+### EThcD MS data acquisition
 
 All MS samples were measured using a Fusion Lumos Orbitrap mass spectrometer (Thermo). Samples were analyzed on 15 cm long analytical column, packed in-house using ReproSil-Pur 120 C18-AQ 1.9 µm beads (Dr. Maisch), with an internal diameter of 75 μm. On-line reversed-phase liquid chromatography to separate peptides was performed using an EASY-nLC 1200 system (Thermo). The analytical column was heated to 40°C using a column oven, and peptides were eluted from the column using a gradient of Buffer A (0.1% formic acid) and Buffer B (80% can in 0.1% formic acid). For the main samples (F1), the gradient ranged from 3% buffer B to 40% buffer B over 62 min, followed by a washing block of 18 min. For the flow-through samples (F0), the gradient ranged from 5% buffer B to 30% buffer B over 35 min, followed by a washing block of 15 min. Electrospray ionization (ESI) was achieved using a Nanospray Flex Ion Source (Thermo). Spray voltage was set to 2 kV, capillary temperature to 275°C, and RF level to 30%. For F1 samples, full scans were performed at a resolution of 60,000, with a scan range of 300–1750 m/z, a maximum injection time of 60 ms, and an automatic gain control (AGC) target of 600,000 charges. Precursors were isolated with a width of 1.3 m/z, with an AGC target of 200,000 charges, and precursor fragmentation was accomplished using electron transfer disassociation with supplemental higher collisional disassociation (EThcD) with a supplemental activation energy of 20. Precursors with charge state 3–5 were isolated for MS/MS analysis, and prioritized from charge 3 (highest) to charge 5 (lowest), using the decision tree algorithm. Selected precursors were excluded from repeated sequencing by setting a dynamic exclusion of 60 s. MS/MS spectra were measured in the Orbitrap, with a loop count setting of 5, a maximum precursor injection time of 120 ms, and a scan resolution of 60,000. The F0 samples were measured as described above with the following exceptions. Full scans were performed at a resolution of 120,000, with a maximum injection time of 250 ms, and MS/MS spectra were measured at a resolution of 60,000, with a maximum precursor injection time of 500 ms.
 
-## EThCD data analysis
+### EThCD data analysis
 
 All raw data analysis was performed using MaxQuant software (version 1.5.3.30) supported by the Andromeda search engine (Rappsilber et al., 2003; Cox and Mann, 2008) Default MaxQuant settings were used, with the following exceptions. Methionine oxidation, N-terminal acetylation, cysteine carbamidomethylation, and ADP-ribosylation on C, D, E, H, K, R, S, T, and Y, were included as variable modifications. Up to six missed cleavages were allowed, and a maximum allowance of 4 variable modifications per peptide was used. Second peptide search was enabled (default), and matching between runs was enabled with a match time window of 0.7 min and an alignment time window of 20 min. Mass tolerance for precursors was set to 20 ppm in the first MS/MS search and 4.5 ppm in the main MS/MS search after mass recalibration. For fragment ion masses, a tolerance of 20 ppm was used. Modified peptides were filtered to have an Andromeda score of >40 (default), and a delta score of >20. Data was automatically filtered by posterior error probability to achieve a false discovery rate of <1% (default), at the peptide-spectrum match, the protein assignment, and the site-specific levels.
 
 In addition to the FDR control applied by MaxQuant, the data was manually filtered using the Perseus software (Tyanova et al., 2016) in order to ensure proper identification and localization of ADP-ribosylation. As default MaxQuant intensity assignments to modification sites also include non-localized or poorly localized evidences, intensities were manually mapped back to the sites table based on localized PSMs only (>0.90 best-case,>0.75 for further evidences). The iceLogo web application was used for sequence motif analysis (Colaert et al., 2009), and for sequence comparisons, background sequences were extracted from the same proteins and flanking the same amino acid residue type using an in-house Python script.
 
-## Chemical synthesis
+### Chemical synthesis
 
 For the synthesis of 5-Bn-2-e-NAD+ and Phthal01 see Supplementary files. Synthesis of 5-Bn-6-a-NAD+ was described previously (Carter-O'Connell et al., 2014).

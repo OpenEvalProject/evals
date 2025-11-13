@@ -35,35 +35,79 @@ Here, we performed a proteomic screen for new termination factors by searching f
 
 ## Results
 
-## The effect of CPSF30 depletion on the Pol II-proximal proteome
+### The effect of CPSF30 depletion on the Pol II-proximal proteome
 
 The first step of PAS recognition involves the binding of CPSF30 to the AAUAAA signal (Chan et al., 2014; Clerici et al., 2018; Sun et al., 2018). We reasoned that elimination of CPSF30 would impede PAS-dependent remodelling of Pol II elongation complexes and cause the retention or exclusion of potentially undiscovered transcriptional termination factors. We used CRISPR/Cas9 genome editing to tag CPSF30 with a mini auxin-inducible degron (mAID) (Figure 1A). The integration was performed in HCT116 cells where we had previously introduced the plant F-box gene, TIR1, required for the AID system to work (Eaton et al., 2018; Natsume et al., 2016). CPSF30-mAID is eliminated by 3 hr of indol-3-acetic acid (auxin/IAA) treatment (Figure 1B). This results in profound and general transcriptional read-through downstream of protein-coding genes (Figure 1C and Figure 1—figure supplement 1A) demonstrating widespread impairment of PAS function.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of the strategy used to tag CPSF30 with the mini auxin-inducible degron (mAID). Guide RNA-expressing Cas9 plasmid and homology-directed repair (HDR) plasmids are shown and the resulting modification to CPSF30 is represented with each inserted element labelled. (b) Western blot demonstrating CPSF30 depletion. Parental HCT116-TIR1, or CPSF30-mAID cells, were treated ±auxin for 3 hr, then blotted. CPSF30 protein is indicated together with a non-specific product, marked by an asterisk, used as a proxy for protein loading. (c) Metagene analysis of 1795 protein-coding genes demonstrating increased downstream transcription, derived from sequencing nuclear RNA, following auxin treatment (3 hr) of CPSF30-mAID cells. TSS = transcription start site, TES = transcription end site (PAS), read-through signal is normalised against gene body. RPKM is reads per kilobase of transcript, per million mapped reads. Positive and negative signals represent sense and antisense reads, respectively. (d) Schematic of our strategy to identify new factors involved in transcription termination. CPSF30-mAID cells were edited to express Rpb1-mTurbo (blue circle on Pol II). The addition of biotin induces mTurbo-mediated biotinylation (orange haze) of factors proximal to Pol II. CPSF complex is shown as an example of what might be captured by this experiment. (e) Western blot showing streptavidin horseradish peroxidase (HRP) probing of extracts from CPSF30-mAID: RPB1-mTurbo cells. Prior treatment with auxin (3 hr)/biotin (10 min) is indicated. The high molecular weight species in the +biotin samples corresponds in size to Rpb1-mTurbo (*). (f) Heat map detailing proteins with the largest decrease in Pol II interaction. Data underpinning heat map are from mass spectrometry analysis of streptavidin sequestered peptides (±CPSF30) performed in triplicate. Labelling was for 10 min.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Integrated genomics viewer (IGV) track views of the transcription termination defect at PCBP1, PSMC2, LSM8, and CAV2 genes in the presence (CPSF30-IAA) or absence of (CPSF30+IAA) CPSF30 in CPSF30-mAID cells. Signal is RPKM. (b) Western blot demonstrating bi-allelic modification of RPB1 (Pol II) with mTurbo. The clone employed in Figure 1 is shown against parental HCT116 cells, unmodified at RBP1. The upshift of Pol II signal shows the bi-allelic modification of RPB1. EXOSC10 serves as a loading control. (c) Quantitative reverse transcription and PCR (qRT-PCR) of total RNA isolated from CPSF30-mAID: RPB1- mTurbo cells treated or not with auxin (3 hr). An amplicon located ~10 kb downstream of the HMGA2 PAS was used to assay transcriptional read-through presented as a fold change versus minus auxin after normalising to spliced actin mRNA. n = 2. Individual data points are shown. RPKM = reads per kilobase of transcript, per million mapped reads.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Schematic of ZC3H4 and ZC3H6 showing the three CCCH zinc finger domains. A predictor of natural disordered region (PONDR) analysis shows that the only ordered region of ZC3H4 coincides with these domains. Graph generated via PONDR.com, set to VSL2. (b) STRING analysis of ZC3H4 and ZC3H6 indicates interactors with 3’ end processing complex members. Image was taken from string.db.org, confidence value was set to medium (0.4). The thickness of lines between nodes is indicative of the confidence in interaction. (c) Proteins that are co-regulated with ZC3H4 according to ProteomeHD (https://www.proteomehd.net/) using a score cut-off set to 0.998. Table shows Gene Ontology (GO) term analysis of the potentially co-regulated factors. (d) Co-immunoprecipitation of WDR82 using ZC3H4-GFP as bait. Blot shows input (5%) and immunoprecpitated material probed with antibodies to WDR82 or GFP. Cells untransfected with ZC3H4-GFP act as a negative control.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Maximum-likelihood phylogenetic tree of zinc finger CCCH-domains (1513 sequences; 795 parsimony informative sites) inferred under the JTT + R8 model. Clades of ZC3H4-like and ZC3H6-like domains are delimited by dashed lines. CCCH-domains identified using the PANTHER hidden Markov model PTHR13119 against the UniProtKB protein database (non-redundant version: UniRef100; external node size represents protein cluster size). Branch support values ≥90% (based on 1000 ultrafast bootstraps) are indicated by grey circles. Red stars show SwissProt reviewed protein sequences; external nodes are colour-coded according to their taxonomic lineage. Scale bar represents the number of estimated substitutions per site. Virtually all recovered sequences were from metazoan organisms – except for a group of fungal sequences from ascomycetes. The resulting phylogenetic tree shows the dichotomy between the ZC3H4 and ZC3H6 domains, which are found in the same set of organisms. This indicates that they are paralogues and have likely diverged their function following gene duplication. The ancestral gene coding for ZC3H4/6 was likely lost from the non-vertebrates and subsequently underwent a duplication event leading to the ZC3H4- and ZC3H6-like paralogues in vertebrates. Primary data are available in Supplementary file 2 and deposited at Zenodo (https://doi.org/10.5281/zenodo.4637127). (b) Multiple sequence alignment of ZC3H4 and ZC3H6 homologues. PTHR13119 domains from human and mouse SwissProt sequences were aligned using structural information (PDB structure: 2CQE; zinc finger domain; helices are displayed as coils) using TCoffee (Expresso mode). Conserved regions are indicated by blue boxes; identical and similar residues (based on physicochemical properties) are marked in red and yellow, respectively. Sequence identifiers correspond to UniProt/SwissProt accession numbers and to boundaries of identified PTHR13119 domains. Alignment figure was rendered with ESPscript.
 
 To identify Pol II interactions sensitive to CPSF30, we further modified CPSF30-mAID cells to homozygously tag the largest subunit of Pol II, Rpb1, with mini(m)-Turbo (Figure 1D and Figure 1—figure supplement 1B). mTurbo is an engineered ligase that biotinylates proximal proteins when cells are exposed to biotin (Branon et al., 2018). This occurs within minutes of biotin addition to culture media, which is advantageous for analysing dynamic proteins such as Pol II. We chose this approach rather than immunoprecipitation (IP) because it allows isolation of weak/transient interactions (potentially disrupted during conventional IP) and may identify relevant proximal proteins that do not interact with Pol II directly. Importantly, CPSF30-mAID depletion still induced strong read-through in this cell line (Figure 1—figure supplement 1C).
 
 CPSF30-mAID:RPB1-mTurbo cells were exposed to biotin before western blotting with streptavidin horseradish peroxidase (HRP). This revealed multiple bands with a prominent one corresponding in size to Rpb1-mTurbo and indicating the biotinylation of its proximal proteome (Figure 1E). A small number of endogenously biotinylated factors were observed in the absence of biotin. Biotin-exposed samples were subject to tandem mass tagging (TMT) with mass spectrometry. We focused on proteins with reduced abundance after auxin treatment (Supplementary file 1). The factor most depleted was CPSF30, confirming that its auxin-dependent depletion is reflected in the data (Figure 1F). As expected, Rpb1 was the most abundant factor in all samples consistent with its self-biotinylation seen by western blotting. After CPSF30, the most depleted factors were Fip1, CPSF100, and WDR33, which are in the CPSF complex. Otherwise, surprisingly few proteins showed reduced signal following auxin treatment. This implies that the major effect of CPSF30 depletion on the Pol II-proximal interactome is to prevent the recruitment/assembly of the CPSF complex.
 
-## ZC3H4 is a candidate transcription termination factor that is metazoan-enriched
+### ZC3H4 is a candidate transcription termination factor that is metazoan-enriched
 
 Two poorly characterised factors, ZC3H4 and ZC3H6, were the next most depleted. They contain CCCH zinc finger motifs flanked by intrinsically disordered regions (Figure 1—figure supplement 2A). Their potential relationship to canonical 3’ end formation factors is suggested via known/predicted protein-protein interactions that are collated by the STRING database (Jensen et al., 2009; Figure 1—figure supplement 2B). ZC3H4 is also co-regulated with mRNA processing factors suggesting a role in RNA biogenesis (Figure 1—figure supplement 2C; Kustatscher et al., 2019). Although little is reported on ZC3H4, two independent studies uncovered it as an interaction partner of WDR82 using mass spectrometry (Lee et al., 2010; van Nuland et al., 2013). WDR82 plays a key role in transcriptional termination in yeast, trypanosomes, and mice (Austenaa et al., 2015; Kieft et al., 2020; Nedea et al., 2003). To verify this interaction, we tagged ZC3H4 with GFP and performed a ‘GFP trap’ whereby ZC3H4-GFP is captured from whole cell lysates using GFP nanobody-coupled beads (Figure 1—figure supplement 2D). WDR82 robustly co-precipitated with ZC3H4-GFP, confirming them as interacting partners. Although WDR82 is conserved between human and budding yeast, our phylogenetic analysis suggested that ZC3H4 and ZC3H6 are largely restricted to metazoans and are paralogues (Figure 1—figure supplement 3A and B).
 
-## ZC3H4 restricts non-coding transcription events
+### ZC3H4 restricts non-coding transcription events
 
 To assess any function of ZC3H4 and/or ZC3H6 in RNA biogenesis, we depleted either or both from HCT116 cells using RNA interference (RNAi) (Figure 2—figure supplement 1A), then deep sequenced nuclear transcripts. Comparison of these datasets shows that ZC3H4 loss has a more noticeable impact than ZC3H6 depletion (Figure 2—figure supplement 1B). Specifically, ZC3H6 depleted samples are more similar to control than those deriving from ZC3H4 loss and ZC3H4/ZC3H6 co-depletion resembles a knockdown of just ZC3H4. This was also evident from closer inspection of the data (Figure 2—figure supplement 1C), supporting the phylogenetic prediction of their separate functions. Accordingly, subsequent analyses focus on ZC3H4.
 
 Due to its links with CPSF30 and WDR82, we anticipated that ZC3H4 might affect transcriptional termination. We first checked protein-coding genes and found a small number with longer read-through beyond the PAS when ZC3H4 is depleted (Figure 2A). However, broader analysis suggests that this is not widespread and far fewer genes exhibit increased read-through following ZC3H4 loss compared to when CPSF30 is absent (Figure 2B and Figure 2—figure supplement 2A–D). Interestingly, the metagene in Figure 2B revealed slightly more signal antisense of promoters when ZC3H4 is depleted. This indicates an effect on non-coding RNA, which is interesting in light of a previously described function for WDR82 in restricting intragenic transcription (Austenaa et al., 2015). These PROMPT transcripts are normally rapidly degraded 3’→5’ by the exosome (Preker et al., 2008). Figure 2C shows an example PROMPT, upstream of MYC, which is undetectable in control siRNA-treated cells, but abundant following ZC3H4 depletion. Loss of ZC3H4 also leads to the extension of this transcript by more than 100 kilobases. This is made clearer by comparing the loss of ZC3H4 to AID-mediated depletion of the catalytic exosome (DIS3) (Davidson et al., 2019). DIS3 depletion stabilises the usual extent of PROMPT RNA, which is much shorter than when ZC3H4 is absent. Importantly, meta-analysis reveals similar effects at many other PROMPTs (Figure 2D). These data strongly suggest that PROMPT transcripts are stabilised and extended in the absence of ZC3H4, presumably because its normal function restricts their transcription.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig2-v2.jpg)
+
+**Figure 2.:** (a) Integrative Genomics Viewer (IGV) track of the transcription read-through defect at PTPN11 following CPSF30 or ZC3H4 depletion. Blue and red tracks indicate sense/antisense transcripts respectively, grey bar indicates a change in y-axis scale so that comparatively weaker read-through signals can be visualised next to the gene body (left scale for upstream of TES; right for downstream). Y-axis scale is RPKM. (b) Metagene comparison of transcription upstream, across, and downstream of, protein-coding genes in nuclear RNA from CPSF30-mAID cells treated or not with auxin and from HCT116 cells transfected with control or ZC3H4 siRNAs. CPSF30 traces are from the same samples presented in Figure 1C. Positive and negative signals represent sense and antisense reads, respectively. (c) IGV track view of transcription at the MYC PROMPT in RNA-seq samples obtained from control or ZC3H4 siRNA-treated HCT116 cells. We also show a track from HCT116 cells acutely depleted of DIS3-AID (DIS3 + IAA) (Davidson et al., 2019) to highlight the normal extent of this unstable transcript. Y-axis scale is RPKM. (d) Log2 fold change of siZC3H4 vs. siControl or DIS3+ vs. - auxin for RNA upstream of 6057 non-neighbouring, actively transcribed genes, plotted as heat maps. Line graphs are an XY depiction of heat map data. Log2 fold changes are smaller in siZC3H4 samples versus DIS3 depletion because this is an average of all genes in the heat map, a smaller fraction of which are affected by ZC3H4. (e) IGV plot of a known SE upstream of MYC (the location is shown by blue bar under trace). Samples are shown from HCT116 cells treated with control or ZC3H4 siRNAs as well as DIS3-AID cells treated with auxin (the latter from Davidson et al., 2019) to show the normal extent of unstable eRNAs over this region. Y-axis scale is RPKM. (f) Log2 fold change of RNA signal for siZC3H4 vs. siControl or DIS3+ vs. - auxin for 111 SEs. The bed file detailing super-enhancer coordinates in HCT116 cells was taken from dbSUPER.org.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) qRT-PCR and western blotting evidence of the effectiveness of ZC3H6 and ZC3H4 depletion, respectively. Graph shows fold reduction of ZC3H6 mRNA in cells treated with ZC3H6 siRNAs versus those transfected with control siRNA. N = 3, error bars are SEM. ** is p<0.01. Western blotting of ZC3H4 in HCT116 cells treated with control siRNAs or ZC3H4-targeting siRNAs. The blot was probed with a ZC3H4 antibody revealing strong depletion versus the EXOSC10 loading control. (b) Pearson’s correlation of siControl, siZC3H4, siZC3H6 and their co-depletion (siZC3H4/ZC3H6) from RNAseq BAM files performed by DEEPTOOLS. (c) IGV traces exemplifying two genomic regions with clear RNA accumulation following ZC3H4 depletion. While this is also seen following ZC3H4/ZC3H6 co-depletion, it is not evident following the depletion of ZC3H6 alone. This was generally seen, supporting the correlation analysis in (b). Y-axis scale is RPKM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Heat maps showing the effects of CPSF30-mAID or ZC3H4 depletion on read-through beyond protein-coding genes. Coloured scale bar indicates the magnitude of effect (log2 scale). Read-through was scored as a ratio of reads upstream (500 bp) and downstream (1 kb) of the PAS. The lists associated with this heat map are provided in Supplementary file 3. (b) Graph showing the number of protein-coding genes with read-through enhancements of greater than 0.5, 1, 2 or three on a log2 fold scale. This illustrates that the effects of CPSF30-mAID loss are both wider spread and larger than those associated with depletion of ZC3H4. (c) Venn diagram showing the number of genes bioinformatically scored as having increased read-through (log2 fold of 1 or more) following CPSF30-mAID or ZC3H4 loss and those that are common between the two conditions. (d) IGV tracks of individual genes (MAGED1 and DLG3) to exemplify the lack of 3’ termination defect following ZC3H4 depletion. As a control for bone fide read-through, the same tracks are shown in samples obtained from CPSF30-mAID cells treated or not (3 hr) with auxin. Grey bar indicates a change in scale (left scale for upstream of PAS; right for downstream) so that comparatively weaker read-through signals can be visualised next to the gene body. Y-axis scale is RPKM. (e) CPSF30 depletion shows little effect at super-enhancers and PROMPTs. IGV track view of the MYC super-enhancer and PROMPT in RNA-seq data obtained from CPSF30-mAID cells treated or not (3 hr) with auxin. Y-axis scale is RPKM. (f) Plot showing the density of PAS sequences (AWTAAA) in PROMPTs upregulated or unaffected by ZC3H4 loss. Y-axis plots number of PAS sequences/kb.
+
 The finding that PROMPTs are affected by ZC3H4 suggested a role in the transcription/metabolism of antisense/non-coding RNAs. We therefore extended our search for potential ZC3H4 regulated transcription to enhancer regions since they also produce short RNAs that are degraded by the exosome (Andersson et al., 2014). eRNAs can be found in isolation and in clusters called super-enhancers (SEs) (Pott and Lieb, 2015). SEs are thought to be important for controlling key developmental genes with strong relevance to disease (Hnisz et al., 2013). ZC3H4 depletion has a clear effect over SE regions exemplified by the MYC SE where upregulation and extension of eRNAs is obvious (Figure 2E). Acute depletion of DIS3 illustrates the normally restricted range of individual eRNAs within the cluster. This effect is general for other SEs as demonstrated by the metaplots in Figure 2F. We also checked the effect of CPSF30 depletion on example PROMPT and SE transcription, which are very modest and consistent with the lack of antisense effect seen by metagene in Figure 1C (Figure 2—figure supplement 2E). Consistently, PROMPTs susceptible to ZC3H4 were not enriched in PASs compared to those unaffected by it and harbour a slightly lower density (Figure 2—figure supplement 2F). Overall, these data strongly suggest that ZC3H4 is important for regulating transcription across many PROMPTs and SEs.
 
-## Comparison of ZC3H4 and Integrator effects
+### Comparison of ZC3H4 and Integrator effects
 
 ZC3H4 has some functions in common with the Integrator complex. This is a metazoan-specific assembly with regulatory functions at non-coding loci (Lai et al., 2015; Mendoza-Figueroa et al., 2020; Nojima et al., 2018). We previously sequenced chromatin-associated RNA derived from HCT116 cells RNAi depleted of the Integrator backbone component INTS1 (Davidson et al., 2020). Chromatin-associated RNA is purified via urea/detergent extraction and is enriched in nascent RNAs (Wuarin and Schibler, 1994). Metagene analysis of this data at protein-coding genes shows a mild effect of Integrator depletion over PROMPT regions (Figure 3A). It also reveals an accumulation of promoter-proximal RNAs in the coding direction consistent with a recent report on its function as an attenuator of protein-coding transcription (Lykke-Andersen et al., 2020). Because of this function, Integrator depletion can lead to increased expression of a subset of mRNAs (Elrod et al., 2019; Lykke-Andersen et al., 2020; Tatomer et al., 2019). HAP1 is an example of a gene where this is seen (Figure 3B). Similarly, we saw evidence for increased mRNA expression on some genes when ZC3H4 was depleted (Figure 3C). Interestingly, these two genes are selectively effected by Integrator or ZC3H4, respectively, and additional examples of this are shown in Figure 3—figure supplement 1A. Bioinformatic analysis revealed around 1000 genes affected by INTS1 or ZC3H4 depletion with little overlap between the two conditions (Figure 3D, Supplementary file 4). Indeed, analysis of recently published metabolically labelled RNA-seq data from HeLa cells depleted of the catalytic Integrator subunit or ZC3H4 reveals many upregulated mRNAs – also with minimal overlap (Austenaa et al., 2021; Lykke-Andersen et al., 2020; Figure 3—figure supplement 1B). When searching for characteristics of these targets in our own RNA-seq data, we found that transcripts upregulated following either ZC3H4 or INTS1 loss are normally expressed at lower levels than those from unaffected genes (Figure 3E). This is consistent with the idea that they are subject to repression by these two factors under these experimental conditions.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig3-v2.jpg)
+
+**Figure 3.:** (a) Metagene analysis of chromatin-associated RNA-seq performed on cells treated with control or INTS1-specific siRNA. The plot shows signals upstream, across, and downstream of protein-coding genes. Y-axis scale is RPKM. Positive and negative values represent sense and antisense reads, respectively. (b, c) IGV traces of HAP1 and NWD1 genes derived from chromatin-associated RNA-seq in control and INTS1 siRNA treated samples and nuclear RNA-seq from control or ZC3H4 siRNA treatment. NWD1 transcripts are affected by ZC3H4 but not INTS1, whereas the opposite is true for HAP1 RNAs. Y-axes scales are RPKM. (d) Venn diagram showing the number of mRNAs upregulated ≥2-fold, padj ≤0.05 following ZC3H4 depletion versus INTS1 loss and the overlap between the two sets. Genes that showed increased expression due to transcription read-through from an upstream gene were filtered by assessing coverage over a 1 kb region preceding the TSS, relative to untreated cells. (e) Graphs demonstrating the expression level of mRNA transcripts upregulated (log2FC >1) following ZC3H4 or INTS1 depletion by comparison with transcripts unaffected by loss of either factor. Y-axis shows normalised gene counts (i.e. expression level). (f) Comparison of chromatin-associated RNA-seq in control and INTS1 siRNA treated samples with nuclear RNA-seq derived from control or ZC3H4 siRNA treatment. The ITPRID2 PROMPT is displayed and y-axes are RPKM (note the different scales between ZC3H4 and INTS1 samples). (g) Comparison of chromatin-associated RNA-seq in control and INTS1 siRNA treated samples with nuclear RNA-seq derived from control or ZC3H4 siRNA treatment. The MSRB3 SE is displayed and y-axes are RPKM (note the different scales between INTS1 and ZC3H4 samples). (h) Metaplot of RNA-seq profile over super-enhancers following INTS1 depletion (log2 fold depletion/control over 111 super-enhancer as line graphs). The bed file detailing super-enhancer coordinates in HCT116 cells was taken from dbSUPER.org. RPKM = reads per kilobase of transcript, per million mapped reads, TSS = transcription start site.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) IGV snapshots showing examples of protein-coding genes selectively upregulated by ZC3H4 (PJVK and ENO3) or Integrator (TM7SF2 and GFPT2). Y-axis represents RPKM. (b) Venn diagram representing the number of protein-coding transcripts (determined by DESEQ2) that show increased levels in previously published 4sU labelling experiments performed on HeLa cells depleted of INTS11 or ZC3H4 (Austenaa et al., 2021; Lykke-Andersen et al., 2020). Gene lists are provided in Supplementary file 5. Notably, manual curation of this list revealed the presence of false positive hits, especially in the INTS11 data, due to DESEQ2 scoring interference of transcription from neighbouring genes as upregulation. (c) Venn diagram showing the number of PROMPTs showing upregulation (log2 fold of 1 or more) following ZC3H4 or INTS1 loss from HCT116 cells and those that are common between the two conditions. (d) Graph showing the number of PROMPTs enhanced by greater than 0.5, 1, 2, or 3 on a log2 fold scale following the loss of ZC3H4 or INTS1. This illustrates that the effects of ZC3H4 loss are both widely spread and larger than those associated with depletion of INTS1. The list of targets in each case is provided in Supplementary file 6. RPKM = reads per kilobase of transcript, per million mapped reads, PROMPT = promoter upstream transcripts.
+
 The most prominent effects of ZC3H4 were observed at PROMPT and SE regions where, again, Integrator is implicated (Lai et al., 2015; Nojima et al., 2018). Where ZC3H4 effects are evident over PROMPT regions, they are generally more substantial than those seen after Integrator loss, exemplified by the ITPRID2 PROMPT in Figure 3F and via meta-analyses (Figure 3—figure supplement 1C and D). At SEs, ZC3H4 depletion generally results in a greater stabilisation and elongation of eRNA, compared to INTS1 knockdown, exemplified at the MSRB3 SE (Figure 3G). Meta-analysis confirms less effect of INTS1 depletion at SEs versus the impact of ZC3H4 (compare Figures 3H and 2F). We note that these INTS1 data are on chromatin-associated RNA whereas ZC3H4 images are obtained from nuclear RNA. However, as chromatin-associated RNA is more enriched in nascent transcripts, this would be expected to capture more extended non-coding transcription and not less as is the case here. Moreover, previously published analyses of Integrator effects on transcription do not report the long extended non-coding (PROMPT/eRNA) transcripts that we observe when ZC3H4 is depleted (Beckedorff et al., 2020; Lykke-Andersen et al., 2020).
 
-## Rapid ZC3H4 depletion and re-expression confirms the functions found by RNA-seq
+### Rapid ZC3H4 depletion and re-expression confirms the functions found by RNA-seq
 
 ZC3H4 RNAi suggests its widespread involvement in non-coding RNA synthesis and the regulation of a subset of protein-coding transcripts. However, RNAi depletion was performed using a 72 hr protocol and might result in indirect or compensatory effects. To assess whether these effects are a more direct consequence of ZC3H4 loss, we engineered HCT116 cells for its rapid and inducible depletion. CRISPR/Cas9 was used to tag ZC3H4 with an E. coli derived DHFR degron preceded by 3xHA epitopes (Figure 4A; Sheridan and Bentley, 2016). In this system, cells are maintained in trimethoprim (TMP) to stabilise the degron, removal of which causes protein depletion. Western blotting demonstrates homozygous tagging of ZC3H4 and that ZC3H4-DHFR is depleted following TMP removal (Figure 4B). Depletion was complete after overnight growth without TMP but substantial protein loss was already observed after 4 hr allowing us to assess the consequences of more rapid ZC3H4 depletion.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic detailing how the dihydrofolate reductase (DHFR) degron works. E. coli dihydrofolate reductase (DHFR) is fused to the C-terminus of ZC3H4, which is stabilised by trimethoprim (TMP). When TMP is removed, ZC3H4-DHFR is degraded. (b) Western blot of HCT116 parental and HCT116 ZC3H4-DHFR cells ± TMP. TMP was withdrawn for 4 hr or overnight (o/n), EXOCS10 is used as a loading control, αHA recognises a HA peptide before the DHFR tag, while αZC3H4 recognises native protein. (c) Western blot of ZC3H4-DHFR cells grown under the following conditions: +TMP, –TMP (4 hr), –TMP (4 hr) followed by +TMP (4 hr). ZC3H4-DHFR is detected using αHA, and EXOSC10 is shown as a loading control. (d) qRT-PCR analysis of PROMPT and SE transcripts in ZC3H4-DHFR cells grown under the conditions represented in (c) (rescue refers to –TMP then +TMP for re-establishing ZC3H4). Graph shows fold change versus +TMP following normalisation to spliced actin. N = 3. Error bars are SEM. *, **, and *** denote p<0.05, 0.01, and 0.001, respectively. ITPRID2 5’ and 3’ primers are at approximately −500 bp and −7 kb relative to its TSS. HMGA2 5’ and 3’ primers are at approximately −1.8 kb and −7.1 kb relative to its TSS. (e) qRT-PCR analysis of spliced PJVK, ENO3 and NWD1 mRNAs and RNU1-1 read-through (RT) in ZC3H4-DHFR cells grown with or without (4 hr) TMP and INTS11-SMASh cells grown with or without asunaprevir (ASN; 36 hr to deplete INTS11-SMASh). Graph shows fold change versus control (+TMP for ZC3H4-DHFR samples and –ASN for INTS11-SMASh samples), following normalisation to spliced actin. N = 3. Error bars are SEM. * and ** denote p<0.05 and 0.01, respectively. (f) Western blot of extracts derived from HCT116 cells transfected with control or WDR82-specific siRNAs. The blot shows WDR82 and, as a loading control, EXOSC10. (g) qRT-PCR of PROMPT and SE transcripts in ZC3H4-DHFR cells transfected with control or WDR82 siRNAs before withdrawal, or not, of TMP (14 hr). Graph shows fold change by comparison with control siRNA transfected ZC3H4-DHFR cells maintained in TMP following normalisation to spliced actin transcripts. N = 3. Error bars are SEM. * and ** denote p<0.05 and 0.01, respectively. PROMPT = promoter upstream transcript.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Pol II ChIP over ITPRID2 and MYC PROMPT regions. Graphs plot Pol II occupancy as a percentage of input at amplicons ~2, 4, and 8 kb upstream of each gene. N = 4. Error bars are SEM. * denotes p<0.05. The schematic illustrates the approximate location of each primer pair. (b) qRT-PCR analysis of extended ITPRID2 and MYC PROMPTs (−8 kb amplicons) in chromatin-associated RNA isolated from ZC3H4-DHFR cells grown with or without (4 hr) TMP. Y-axis displays fold change versus +TMP following normalisation to spliced actin levels. n = 3. Error bars are SEM. * and ** denote p<0.05 and 0.01, respectively. (c) Western blot showing acute depletion of PNUTS (the nuclear targeting subunit of PP1 phosphatase), tagged with an auxin-inducible degron (PNUTS-AID). Blot shows extracts from unmodified HCT116 cells and PNUTS-AID cells that were treated or not with auxin (3 hr). WDR82 is used as a loading control. (d) qRT-PCR of PROMPT and SE transcripts in PNUTS-AID cells treated or not with auxin (3 hr). Graph shows fold change by comparison with non-auxin treated cells following normalisation to spliced actin transcripts. N = 3. Error bars are SEM. * and ** denote p<0.05 and 0.01, respectively. (e) qRT-PCR analysis of PROMPT and SE transcripts in HCT116 cells treated with control siRNAs or siRNAs against both SETD1A and B. Quantitation shows fold change versus cells transfected with control siRNAs following normalisation to spliced actin levels. Note that the PROMPT and SE targets that are increased following ZC3H4 loss show relatively little change following depletion of SETD1A and B. The success of the RNAi is indicated by the strong reduction of SETD1A and B mRNAs. N = 3. Error bars show SEM. ** denotes p<0.01. PROMPT = promoter upstream transcript TMP = trimethoprim.
 
 TMP-mediated depletion can also be reversed by its re-administration facilitating a test of whether ZC3H4 effects are reversed by its re-appearance. The western blot in Figure 4C illustrates this by showing that TMP withdrawal depletes ZC3H4-DHFR, which re-appears following 4 hr TMP addition. To ask whether ZC3H4 effects are an immediate consequence of its loss and if they are reversed following its re-appearance, RNA was isolated from the three conditions shown in the western blot. This was analysed by quantitative reverse transcription and PCR (qRT-PCR) to assess the levels of extended PROMPT (HMGA2, ITPRID2) and SE (MSRB3, DLGAP1) RNAs (Figure 4D). All were increased following ZC3H4 loss, suggesting that the effects that we observed by RNAi are not due to compensatory pathways. Although 4 hr TMP re-administration does not restore ZC3H4 to full levels, it was sufficient to reverse the effects of its depletion at all tested amplicons. The timescale over which the effect can be reversed suggests that transcripts induced by ZC3H4 loss remain relatively unstable. Rapid ZC3H4 depletion also confirmed the prediction, from our RNA-seq, that the extended PROMPT transcripts result from the aberrant transcription of these loci (Figure 4—figure supplement 1A and B).
 
@@ -71,17 +115,33 @@ Another key observation from our nuclear RNA-seq was the potential for ZC3H4 to 
 
 We next asked whether the ZC3H4 interactor, WDR82, impacts the levels of PROMPT and SE transcripts. Accordingly, ZC3H4-DHFR cells were treated with control or WDR82-specific siRNAs (Figure 4F). We also co-depleted ZC3H4 and WDR82 by removing TMP from cells first transfected with WDR82 siRNAs. WDR82 depletion enhanced the level of all tested transcripts suggesting that it functionally overlaps with ZC3H4 (Figure 4G). There was no synergistic effect of their co-depletion, implying that WDR82 and ZC3H4 do not act redundantly at the tested loci. WDR82 is found in complexes containing protein phosphatase 1 (PP1) and the SETD1A/B methyl transferases (Lee et al., 2010; van Nuland et al., 2013). We found that the former but not the latter is implicated in the stability of the non-coding transcripts selected for this experiment (Figure 4—figure supplement 1C–E).
 
-## ZC3H4 occupies a broad region at a subset of promoters
+### ZC3H4 occupies a broad region at a subset of promoters
 
 We have demonstrated that depletion of ZC3H4 causes widespread defects in non-coding transcription and supresses a subset of protein-coding RNAs. As these effects are seen following rapid ZC3H4 depletion, we hypothesised that they may be directly mediated by its recruitment to relevant loci. Consistently, its capture in our mTurbo experiment supports its proximity to chromatin, and the presence of CCCH zinc finger domains predicts nucleic acid binding capability. Therefore, its genomic occupancy was globally investigated by performing ZC3H4 chromatin immunoprecipitation and sequencing (ChIP-seq) alongside that of Pol II.
 
 ZC3H4 occupies genes with binding broadly resembling that of Pol II and showing the greatest enrichment over promoter regions (Figure 5A). However, many genes that are occupied by Pol II do not recruit ZC3H4 (Figure 5B). This might result from low affinity of the ZC3H4 antibody or that its recruitment to chromatin is bridged since ZC3H4 also directly crosslinks to RNA in cells (Figure 5—figure supplement 1A). The differential occupancy of genes by ZC3H4 is consistent with the selective effects of its depletion. Interestingly, ZC3H4 occupies a broader promoter region than Pol II, suggesting that its function is not restricted to the precise transcriptional start site. The width of this peak often corresponds to the normal extent of PROMPT and eRNA transcription, which is elongated in its absence. RPL13 is shown as an example of recruitment of ZC3H4 upstream of the promoter, where its loss causes stabilisation and extension of the antisense transcript (Figure 5C). ZC3H4 is also strongly recruited to SEs consistent with the RNA effects observed on them following its loss (Figure 5D). This is exemplified by the MSRB3 region and generalised by metaplots in Figure 5E. Although our analyses of eRNA and PROMPTs were guided by our RNA-seq findings, an unbiased search for peaks of ZC3H4 and Pol II signal confirmed proportionally greater ZC3H4 occupancy at distal intergenic regions (encompassing SEs) (Figure 5F).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig5-v2.jpg)
+
+**Figure 5.:** (a) ZC3H4 ChIP profile over protein-coding genes is similar to Pol II. Heat map representation of ZC3H4 and Pol II ChIP-seq occupancy over the gene body ±3 kb. (b) ZC3H4 occupies fewer promoters than Pol II. IGV track view of ZC3H4 and Pol II occupancy over KAZALD1 and FABP5 genes, Pol II is present at both genes, while ZC3H4 is only present at KAZALD1. Scale is counts per million (CPM). Shaded blue box shows peak of Pol II and ZC3H4 at KAZALD1 and of Pol II over FABP5. (c) RNA-seq (HCT116 cells treated with control or ZC3H4 siRNA) and ChIP-seq (Pol II, ZC3H4 and input) profiles at RPL13. ZC3H4 occupancy is focused more on the PROMPT transcript region (blue box) than the TSS where, in contrast, the Pol II signal is maximal. RNA-seq scale is RPKM and ChIP-seq is CPM. (d) ZC3H4 ChIP occupancy mirrors Pol II at super-enhancers. IGV track view of ZC3H4 and Pol II occupancy over the SE at the MSRB3 locus. HCT116 super-enhancer gene track is from dbSUPER and depicted as blue bars. (e) Log2 fold change of ZC3H4 and Pol II vs. input at SEs shown as a line graph. Halo denotes 95% confidence level. (f) ChIPseeker analysis of peak distribution of ZC3H4 and Pol II. Occupancy regions are colour-coded and the number of ChIP peaks expressed as a proportion of 100%. (g) Heat map showing Pol II and ZC3H4 ChIP occupancy in HEPG2 cells obtained via the ENCODE consortium. Occupancy ±2 kb of the TSS is shown. RPKM = reads per kilobase of transcript, per million mapped reads, ChIP-seq = chromatin immunoprecipitation and sequencing, CPM = counts per million, TSS = transcription start site.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) XRNAX analysis of ZC3H4 RNA binding in HCT116 cells. Samples show input and those isolated following UV treatment or not. Bands representing each protein are labelled accordingly. ZC3H4 is recovered in a UV-dependent manner indicating that it is directly bound to RNA in cells. The same is true of EXOSC10 that, as an exoribonuclease, acts as a positive control. TCF4 is a DNA binding transcription factor and acts as a negative control. (b) ZC3H4 only marks transcribed super-enhancers. IGV track view of ZC3H4 and Pol II occupancy at two different super-enhancers, DLAGAP1 present in both HEPG2 and HCT116 (top tracks) and the MYC super-enhancer (bottom tracks) that is only present in HCT116 cells. HEPG2 and HCT116 super-enhancer annotation is under each track as blue bars and was obtained from dbSUPER. Y-axis shows CPM. CPM = counts per million.
+
 Overall, the HCT116 ChIP-seq demonstrates direct recruitment of ZC3H4 to potential targets. One mentioned caveat is the low ChIP efficiency of the ZC3H4 antibody; however, a ZC3H4 ChIP-seq experiment was recently made available by the ENCODE consortium (Partridge et al., 2020). This used a flag-tagged construct and was performed in HEPG2 cells allowing a comparison of our data to that obtained with a high-affinity antibody and in different cells. Consistent with our findings, flag-ZC3H4 occupies a subset of Pol II-bound regions and shows broader distribution than Pol II around promoters (Figure 5G). Although HEPG2 cells express fewer SEs than HCT116 cells, the transcribed DLGAP1 example confirms its occupancy of these regions in both cell types (Figure 5—figure supplement 1B). In contrast, the MYC SE is only expressed in HCT116 cells and is not occupied by ZC3H4 in HEPG2 cells. In further agreement with our data, bioinformatics assignment of flag-ZC3H4 binding sites yielded ‘promoter and enhancer-like’ as the most enriched terms (Partridge et al., 2020).
 
-## Engineered recruitment of ZC3H4 suppresses transcription
+### Engineered recruitment of ZC3H4 suppresses transcription
 
 The consequences of ZC3H4 recruitment to targets are predicted to be their early termination and subsequent degradation by the exosome, based on the known fate of PROMPTs and eRNAs. To test whether ZC3H4 recruitment can promote these effects, we established a tethered function assay. ZC3H4 was tagged with bacteriophage MS2 coat protein to engineer its recruitment to a reporter containing MS2 hairpin binding sites (MS2hp-IRES-GFP; Figure 6A). Importantly, RNA from this reporter is unaffected by endogenous ZC3H4 (Figure 6—figure supplement 1A). HCT116 cells were transfected with either of these three constructs together with MS2hp-IRES-GFP and reporter expression assayed by qRT-PCR. Compared to the two controls, tethered ZC3H4-MS2 significantly reduced reporter RNA expression (Figure 6B). ZC3H4-MS2 expression does not affect the same reporter lacking MS2 hairpins (Figure 6—figure supplement 1B). This directly demonstrates that ZC3H4 recruitment is sufficient to negatively regulate RNA expression, mirroring the upregulation of its endogenous targets seen when it is depleted.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic of the MS2 system. A reporter plasmid (MS2hp-IRES-GFP) expressing a GFP transcript with 6 x MS2 hairpins upstream of an IRES and GFP gene. ZC3H4-MS2 or MS2-GFP can be specifically tethered to the MS2 hairpins to assess consequent effects on transcription/RNA output. Positions of primer pairs used in qRT-PCR experiments elsewhere in the figure are indicated by labelled horizontal lines under reporter. POI is protein of interest. (b) qRT-PCR analysis of total RNA isolated from MS2hp-IRES-GFP transfected cells co-transfected with MS2-GFP, ZC3H4-GFP, or ZC3H4-MS2. The level of reporter RNA is plotted (‘UP’ amplicon) as a percentage of that obtained in the MS2-GFP sample following normalisation to spliced actin. N = 3. Error bars are SEM. * denotes p<0.05. (c) qRT-PCR analysis of chromatin-associated RNA isolated from MS2hp-IRES-GFP transfected cells co-transfected with either MS2-GFP or ZC3H4-MS2. The level of reporter RNA upstream of the MS2 hairpins (UP) and transcripts yet to be cleaved at the BGH poly(A) site (BGH UC) are plotted as a percentage of that obtained in the MS2-GFP sample following normalisation to spliced actin. N = 3. Error bars are SEM. * denotes p<0.05. (d) qRT-PCR analysis of total RNA isolated from MS2hp-IRES-GFP transfected DIS3-AID cells co-transfected with either MS2-GFP or ZC3H4-MS2 – simultaneously treated or not with auxin to deplete DIS3 (14 hr in total). The graph shows the ratio of RNA species recovered upstream (UP) versus downstream (DOWN) of the MS2 hairpins. N = 4. Error bars are SEM. * denotes p<0.05. (e) Schematic detailing an interplay between ZC3H4 and DIS3 that sees transcription stop and nascent RNA degraded (f) Colony formation assay of ZC3H4-DHFR cells grown in the presence or absence of TMP. Cells were grown for 10 days before crystal violet staining.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67305/elife-67305-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) qRT-PCR of ZC3H4-DHFR cells transfected with MS2-IRES-GFP before growth in the presence or, to deplete ZC3H4, absence of TMP (4 hr). Graph shows percentage of each amplicon following TMP removal relative to that found in the presence of TMP following normalisation to spliced actin transcripts. N = 3. Error bars show SEM. * denotes p<0.05. (b) qRT-PCR of HCT116 cells transfected with IRES-GFP and either a control beta-globin plasmid (NTC) or ZC3H4-MS2. The graph shows the percentage of GFP RNA versus control following normalisation to spliced actin transcripts. N = 3. Error bars show SEM. TMP = trimethoprim, UP = upstream, BGH = bovine growth hormone.
 
 PROMPTs and eRNAs are degraded on chromatin and we wanted to test whether ZC3H4-MS2 affected these nascent RNAs. The reporter experiments above are on total RNA so whether ZC3H4-MS2 exerted its effect at the gene (plasmid) or following its release was uncertain. Therefore, we purified chromatin-associated RNA (Wuarin and Schibler, 1994). As mentioned previously, this fractionation enriches nascent endogenous RNAs. However, nascent RNAs associated with transfected plasmids also co-purify within this fraction (Dye et al., 2006). Accordingly, cells were transfected with MS2hp-IRES-GFP and either ZC3H4-MS2 or MS2-GFP. We included an additional primer set to detect RNA uncleaved at the bovine growth hormone (BGH) poly(A) site. Because poly(A) site cleavage is co-transcriptional, this primer set should robustly detect Pol II-associated transcripts. This amplicon and that upstream of the MS2 hairpins were reduced in this chromatin fraction, strongly suggesting that tethered ZC3H4 acts on nascent RNA (Figure 6C).
 
@@ -105,106 +165,487 @@ In conclusion, we have uncovered ZC3H4 as a factor with a function in restrictin
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT116- CPSF30-mAID</td>
+      <td>In-house</td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT116- CPSF30-mAID:RPB1-mTurbo</td>
+      <td>In-house</td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT116- ZC3H4-HA-DHFR</td>
+      <td>In-house</td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT116- DIS3-AID</td>
+      <td>In-house</td>
+      <td>PMID:30840897</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT116-PNUTS-AID</td>
+      <td>In-house</td>
+      <td>This paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT116-INTS11-SMASh</td>
+      <td>In-house</td>
+      <td>PMID:33113359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>3xHA-mTurbo-NLS_pCDNA3</td>
+      <td>Addgene</td>
+      <td>RRID #:Addgene_107172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>px300</td>
+      <td>Addgene</td>
+      <td>RRID #:Addgene_42230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ZC3H4- pcDNA3.1(+)-C-eGFP</td>
+      <td>Genscript</td>
+      <td>Custom synthesis</td>
+      <td>ENTS00000253048</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSL-MS2-6x</td>
+      <td>Addgene</td>
+      <td>RRID #:Addgene_27118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1(+)IRES GFP</td>
+      <td>Addgene</td>
+      <td>RRID #:Addgene_51406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CPSF30</td>
+      <td>Bethyl</td>
+      <td>RRID #:AB_2780000 Cat #: A301-585A-T</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RNA Pol II</td>
+      <td>Abcam</td>
+      <td>RRID #:AB_306327 Cat #: ab817</td>
+      <td>Now discontinued at abcam (1:1000 for western blot. 4–5 ug used for ChIP qPCR and –seq, respectively)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PNUTS</td>
+      <td>Bethyl</td>
+      <td>RRID #:AB_2779219 Cat #: A300-439A-T</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>WDR82</td>
+      <td>Cell Signalling</td>
+      <td>RRID #:AB_2800319 Clone: D2I3B Cat #: 99715</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EXOSC10</td>
+      <td>Santa Cruz</td>
+      <td>RRID #:AB_10990273 Cat #: sc-374595</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ZC3H4</td>
+      <td>Atlas Antibodies</td>
+      <td>RRID #:AB_10795495 Cat #: HPA040934</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA tag</td>
+      <td>Roche</td>
+      <td>RRID #:AB_390918 Clone: 3f10 Cat #: 11867423001</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP</td>
+      <td>Chromotek</td>
+      <td>Clone: PABG1 Cat #: PABG1-100 RRID #:AB_2749857</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TCF4/TCF7L2</td>
+      <td>Cell Signalling</td>
+      <td>RRID #:AB_2199816 Clone: C48H11 Cat #: 2569</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>TMP</td>
+      <td>Sigma</td>
+      <td>Cat #: T7883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound drug</td>
+      <td>IAA</td>
+      <td>Sigma</td>
+      <td>Cat #: 12886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Lipofectamine RNAiMax</td>
+      <td>Life Technologies</td>
+      <td>Cat #: 13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>JetPRIME</td>
+      <td>PolyPlus</td>
+      <td>Cat #: 114–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Streptavidin Sepharose High Performance slurry</td>
+      <td>GE Healthcare</td>
+      <td>Cat #: GE28-9857-38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GFP TRAP magnetic agarose</td>
+      <td>Chromotek</td>
+      <td>RRID #:AB_2827592 Cat #: gtd-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dynabeads α-mouse</td>
+      <td>Life Technologies</td>
+      <td>RRID #:AB_2783640 Cat #: 11201D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dynabeads α-rabbit</td>
+      <td>Life Technologies</td>
+      <td>RRID #:AB_2783009 Cat #: 11203D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SimpleChIP Plus Enzymatic Chromatin kit</td>
+      <td>Cell Signalling</td>
+      <td>Cat #: 9005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TruSeq Stranded Total RNA Library Prep Kit</td>
+      <td>Illumina</td>
+      <td>Cat #: 20020596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBNext Ultra II DNA Library Prep Kit for Illumina</td>
+      <td>NEB</td>
+      <td>Cat #: E7645S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Ribo-Zero Gold rRNA removal kit</td>
+      <td>Illumina</td>
+      <td>Cat #: 20040526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Ampure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat #: A63880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNAClean XP Beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat #: A63987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BamTools</td>
+      <td>Barnett et al., 2011</td>
+      <td>RRID #:SCR_015987</td>
+      <td>v2.4.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDtools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td>RRID #:SCR_006646</td>
+      <td>v2.26.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bioconductor</td>
+      <td>https://bioconductor.org/</td>
+      <td>RRID #:SCR_006442</td>
+      <td>v3.11</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepTools</td>
+      <td>Ramírez et al., 2014</td>
+      <td>RRID #:SCR_016366</td>
+      <td>v3.3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td>RRID #:SCR_015687</td>
+      <td>v1.28.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featureCounts</td>
+      <td>Liao et al., 2013; Liao et al., 2014</td>
+      <td>RRID #:SCR_012919</td>
+      <td>v2.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIMO</td>
+      <td>Grant et al., 2011</td>
+      <td>RRID #:SCR_001783</td>
+      <td>v5.3.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>genomicRanges</td>
+      <td>http://bioconductor.org/packages/release/bioc/html/GenomicRanges</td>
+      <td>RRID #:SCR_000025</td>
+      <td>v1.40.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>https://cran.r-project.org/web/packages/ggplot2</td>
+      <td>RRID #:SCR_014601</td>
+      <td>v3.3.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hisat2</td>
+      <td>Kim et al., 2015</td>
+      <td>RRID #:SCR_015530</td>
+      <td>v2.1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGV</td>
+      <td>Robinson et al., 2011</td>
+      <td>RRID #:SCR_011793</td>
+      <td>v2.8.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>Zhang et al., 2008</td>
+      <td>RRID #:SCR_013291</td>
+      <td>v2.2.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pheatmap</td>
+      <td>https://cran.r-project.org/web/packages/pheatmap</td>
+      <td>RRID #:SCR_016418</td>
+      <td>v1.0.12</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://cran.r-project.org/</td>
+      <td>NA</td>
+      <td>v4.0.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rstudio</td>
+      <td>https://rstudio.com/</td>
+      <td>RRID #:SCR_000432</td>
+      <td>v1.3.1093</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>rtracklayer</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/rtracklayer</td>
+      <td>NA</td>
+      <td>v1.48.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMTools</td>
+      <td>Li et al., 2009</td>
+      <td>RRID #:SCR_002105</td>
+      <td>v.1.11</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trim_galore!</td>
+      <td>https://github.com/FelixKrueger/TrimGalore/</td>
+      <td>RRID #:SCR_011847</td>
+      <td>v.0.6.5dev</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 HCT116 parental cells and engineered cell lines were tested negative for mycoplasma and cultured in Dulbecco modified eagle medium, supplemented with 10% foetal calf serum and penicillin streptomycin (Gibco). For RNAi, 6 or 24-well dishes were transfected with siRNA using Lipofectamine RNAiMax (Life Technologies) following the manufacturers’ guidelines. The transfection was repeated 24 hr later and, 48 hr after the second transfection, RNA was isolated. For MS2 assays, cells were seeded in 24-well dishes overnight, then transfected with 50 ng MS2hp-IRES-GFP and 100 ng of MS2-GFP, ZC3H4-MS2 or ZC3H4-GFP using JetPRIME (PolyPlus) for 24 hr. To deplete DIS3-AID or PNUTS-AID, auxin was used at a final concentration of 500 uM. To deplete ZC3H4-DHFR, cells were washed twice in PBS and grown in media with or without TMP (30 uM).
 
-## Cell line generation and cloning
+### Cell line generation and cloning
 
 CPSF30-mAID and CPSF30-mAID:RPB1-mTurbo cells were generated using CRISPR/Cas9-mediated homology-directed repair (HDR). CPSF30 and RPB1 homology arms and gRNA sequences are detailed in Supplementary file 7. The mTurbo insert derives from 3xHA-mTurbo-NLS_pCDNA3 (#107172, Addgene). For ZC3H4 degron cells, 3xHA-DHFR was amplified from existing CPSF73-HA-DHFR constructs (published in Eaton et al., 2018) using non-homologous end-joining (NHEJ) as described in Manna et al., 2019. PNUTS-AID cells were constructed using the protocol described in Davidson et al., 2019. In general, 6 cm dishes of cells were transfected with 1 ug of guide RNA expressing px300 plasmid (#42230, Addgene) and 1 ug of each HDR template/NHEJ PCR product. Three days later, cells were seeded, as appropriate, into hygromycin (30 µg/ml, final); neomycin (800 µg/ml, final); or puromycin (1 µg/ml, final). ZC3H4 cDNA was purchased from Genscript in a pcDNA3.1(+)-C-eGFP vector. The MS2hp-IRES-GFP reporter was made by inserting a BamH1/EcoRV restriction fragment from pSL-MS2-6x (#27118, Addgene) into pcDNA3.1(+)IRES GFP (#51406, Addgene) also digested with BamH1/EcoRV.
 
-## Turbo sample preparation
+### Turbo sample preparation
 
 10 cm dishes at ~80% confluency were labelled with 500 µM biotin for 10 min and the labelling reaction quenched immediately by washing cells in ice cold PBS. Cells were lysed in RIPA buffer (150 mM NaCl, 1% NP40, 0.5% sodium deoxycholate, 0.1% SDS, 50 mM Tris-HCl at pH 8, 5 mM EDTA at pH 8) containing protease inhibitors (cOmplete mini EDTA-free tablets, Roche) for 30 min on ice, then clarified via centrifugation. 350 uL of washed Streptavidin Sepharose High Performance slurry (GE Healthcare) was incubated with biotinylated or control lysates with inversion at room temperature for 1 hr. Samples were then washed twice with RIPA buffer, twice with Urea buffer (2 M urea, 50 mM Tris HCl pH 8), twice with 100 mM sodium carbonate, and once with 20 mM Tris HCl (pH 8), 2 mM CaCl2. Residual final wash buffer was used to resuspend the beads, which were then flash frozen in liquid nitrogen and sent for tandem mass spectrometry at the University of Bristol Proteomics Facility.
 
-## Identifying mass spectrometry candidates
+### Identifying mass spectrometry candidates
 
 First, contaminant proteins (e.g. keratin) or those that are known to be preferentially biotinylated in ligase assays (e.g. AHNAK) were excluded. Samples with an average abundance ratio <0.70 were classified as having a decreased interaction with RNA polymerase II following CPSF30 depletion. Finally, proteins with <5 peptides were discarded. Remaining candidates were plotted in Figure 1F.
 
-## qRT-PCR
+### qRT-PCR
 
 1 µg of total RNA (DNase treated) was reversed transcribed using random hexamers according to manufacturer’s instructions (Protoscript II, NEB); cDNA diluted to 50 uL. qPCR was performed using LUNA SYBR (NEB) on a Rotorgene (Qiagen). Fold changes were calculated using Qiagen’s software based on delta CT values. Graphs were plotted using Prism (GraphPad). Numbers underpinning qPCR-derived bar graphs are provided in Source data 1.
 
-## Antibodies
+### Antibodies
 
 CPSF30 (A301-585A-T, Bethyl), RNA Pol II (ab817, Abcam), PNUTS (A300-439A-T, Bethyl), WDR82 (D2I3B, Cell Signalling), EXOSC10 (sc-374595, Santa Cruz), ZC3H4 (HPA040934, Atlas Antibodies), HA tag (clone 3f10, 11867423001, Roche), GFP (PABG1, Chromotek), TCF4/TCF7L2 (C48H11, Cell Signalling). Uncropped western blots are provided in Source data 2.
 
-## GFP trap
+### GFP trap
 
 10 cm dishes were transfected (5 ug plasmid, 24 hr), washed with PBS, and lysed for 30 min on ice in 1 mL lysis buffer (150 mM NaCl, 2.5 mM MgCl2, 20 mM Tris HCl pH 7.5, 1% Triton X-100, 250 units Benzonase [Sigma]). Samples were then clarified through centrifugation (12000xg, 10 mins), split in two and incubated with 25 ul of GFP TRAP magnetic agarose (Chromotek) for 1 hr with rotation at 4°C. Beads were washed 5x with lysis buffer and samples eluted by boiling in 2x SDS buffer (100 mM Tris-Cl pH 6.8, 4% (w/v) SDS (sodium dodecyl sulfate), 0.2% (w/v) bromophenol blue, 20% (v/v) glycerol, 200 mM β-mercaptoethanol) before analysis by western blotting.
 
-## Nuclear RNA-Seq
+### Nuclear RNA-Seq
 
 Nuclei were extracted from 1 × 30 mm dish of cells per condition using hypotonic lysis buffer (10 mM Tris pH5.5, 10 mM NaCl, 2.5 mM MgCl2, 0.5% NP40) with a 10% sucrose cushion and RNA was isolated using Tri-reagent. Following DNase treatment, RNA was phenol chloroform-extracted and ethanol-precipitated. After assaying quality control using a Tapestation (Agilent), 1 μg RNA was rRNA-depleted using Ribo-Zero Gold rRNA removal kit (Illumina), then cleaned and purified using RNAClean XP Beads (Beckman Coulter). Libraries were prepared using TruSeq Stranded Total RNA Library Prep Kit (Illumina) and purified using Ampure XP beads (Beckman Coulter). A final Tapestation screen was used to determine cDNA fragment size and concentration before pooling and sequencing using Hiseq2500 (Illumina).
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 Cells were cross-linked for 10 min at room temperature (1% formaldehyde) and quenched for 5 mins (125 mM glycine). Cells were washed in PBS, pelleted (500xg), and resuspended in 400 ul RIPA buffer (150 mM NaCl, 1% NP40, 0.5% sodium deoxycholate, 0.1% SDS, 50 mM Tris-HCl at pH 8, 5 mM EDTA at pH 8). Sonication was then performed in a Bioruptor (30 s on/30 s off x10 on high setting) and debris pelleted (13000 rpm x 10 min). Supernatants were then incubated for 2 hr at 4°C with 40 ul of sheep anti-mouse dynabeads to which 4 ug of anti-Pol II (or, as a control, nothing) was pre-bound. Beads were washed 6x with RIPA buffer and then bound chromatin was eluted by 30 min incubation at room temperature with rotation (500 ul 0.1 M NaHCO3 +1% SDS). Cross-links were reversed overnight at 65°C with the addition of 20 ul 5M NaCl. Following phenol chloroform extraction and ethanol precipitation, chromatin was resuspended in 100 ul water of which 1 ul was used per qPCR reaction.
 
-## ChIP-Seq
+### ChIP-Seq
 
 ChIP libraries were prepared using SimpleChIP Plus Enzymatic Chromatin kit (9005, Cell Signalling) according to manufacturer’s instructions. 5 µg of RNA Pol II (abcam, 8WG16) or ZC3H4 (HPA040934, Atlas Antibodies) were used for immunoprecipitation, Dynabeads α-mouse/α-rabbit (Life Technologies) were used for capture.
 
-## Chromatin RNA isolation
+### Chromatin RNA isolation
 
 HCT116 cells were scraped into PBS, pelleted, incubated in hypotonic lysis buffer (HLB; 10 mM Tris.HCl at pH 7.5, 10 mM NaCl, 2.5 mM MgCl2, 0.5% NP40), underlayered with 10% sucrose (w/v in HLB) on ice for 5 min, then spun at 500xg to isolate nuclei. Supernatant and sucrose were removed and nuclei resuspended in 100 μL of NUN1 (20 mM Tris-HCl at pH 7.9, 75 mM NaCl, 0.5 mM EDTA, 50% glycerol, 0.85 mM DTT), before being incubated with 1 mL NUN2 (20 mM HEPES at pH 7.6, 1 mM DTT, 7.5 mM MgCl2, 0.2 mM EDTA. 0.3 M NaCl, 1 M urea, 1% NP40) on ice for 15 min. Samples were spun at 13,000xg to pellet chromatin, this was dissolved in Trizol and RNA extracted.
 
-## Colony formation assays
+### Colony formation assays
 
 ZC3H4-DHFR cells were seeded into 100 mm dishes and maintained in the presence or absence of TMP for 10 days, with media replaced every 3 days. Colonies were fixed in ice cold methanol for 10 min and then stained with 0.5% crystal violet (in 25% methanol) for 10 min.
 
-## XRNAX
+### XRNAX
 
 We essentially followed the protocol of Trendel et al., 2019. HCT116 cells were grown overnight in the presence or absence of doxycycline in 10 cm dishes. 24 hr later, dishes were washed with PBS, UV cross-linked (Stratalinker 1800 150 mJ/cm2), or not, then resuspended in 4.5 mL Trizol (Sigma). 300 uL of chloroform was added, samples agitated on a ThermoMixer (Eppendorf) for 5 min, spun at 12,000xg for 15 min, then the interphase carefully aspirated into fresh tubes. The interphase was washed thrice with Tris-SDS (10 mM Tris-HCL pH 7.5, 1 mM EDTA, 0.1% SDS), before being dissolved in 1 mL Tris-SDS. 1 uL glycogen, 60 uL of 5M NaCl, and 1 mL isopropanol were added and samples precipitated at −20°C for 10 min, then pelleted at 18,000xg for 15 mins. Precipitated protein was washed with 70% ethanol, air dried, resuspended in 180 uL water and pellets dissolved on ice. DNA was removed via TurboDNase (ThermoFisher) treatment, before samples were repelleted, redissolved in RNase buffer (150 mM NaCl, 20 mM Tris-HCL pH 7.5, 2.5 mM MgCl2) and RNA-digested with RNase A (NEB) and 1 uL of RNase T1 (Roche). 4x SDS loading buffer was added before gel electrophoresis and western blotting.
 
-## Computational analysis
+### Computational analysis
 
 All sequencing data were uploaded to the Galaxy web platform and processed as detailed below; usegalaxy.org and usegalaxy.eu servers were used.
 
-## Datasets (GEO accessions)
+### Datasets (GEO accessions)
 
 Data newly generated in this paper (GSE163015); Pol II HEPG2 ChIP-seq (GSE32883); ZC3H4 HEPG2 ChIP-seq (GSE104247); DIS3-AID HCT116 RNA-seq (GSE120574); INTS1 RNAi Chromatin-associated RNA-seq (GSE150238). 4sU labelled RNA differential expression in HeLa cells depleted of INTS11 or ZC3H4 (GSE133109, GSE151919).
 
-## RNA-Seq alignment
+### RNA-Seq alignment
 
 FASTA files were trimmed using Trim Galore! and mapped to GRCh38 using HISAT2 using default parameters (Kim et al., 2015). Reads with a MAPQ score <20 were removed from alignment files using SAMtools (Li et al., 2009). Finally, BigWig files were generated using DeepTools and visualised using IGV (Ramírez et al., 2014).
 
-## ChIP alignment and visualisation
+### ChIP alignment and visualisation
 
 All samples were mapped against GRCh38 using BWA, default settings. Reads with a MAPQ score <20 were removed along with PCR duplicates from alignment files using SAMtools. Processed BAM files were converted to BigWig files using DeepTools: all samples were normalised to RPKM with a bin size of 1. Aligned files were visualised using IGV.
 
-## ChIP peak calling
+### ChIP peak calling
 
 For ZC3H4 and INPUT, broad peaks were called separately using MACS2 with a changed ‘lower mfold’ (2) and default settings. For each experiment, bedtools was used to establish common peaks from individual reps (Intersect Intervals), creating a bed file of high confidence peaks. For ZC3H4, peaks called in the INPUT sample were subtracted via bedtools. All bed files were annotated and plotted in R using ChipSeeker (Yu et al., 2015).
 
-## Gene heat maps
+### Gene heat maps
 
 For ChIP heat maps, computematrix (DeepTools) was used to generate score files from ChIP bigwig files using an hg38 bed file; parameters used for each heat map are detailed in figure legends. Plots were redrawn in R. Transcription read-through analysis was calculated for each condition by comparing the first 1 kb downstream of the TES to a 500 bp region directly preceding the TES (PAS). A log2 ratio (depletion/control) was then applied to identify increased read-through.
 
-## SE metaplots
+### SE metaplots
 
 A bed file with the coordinates of SE locations from dbSUPER in HCT116 cells was used as a basis (Khan and Zhang, 2016). All regions that had clusters of MED1, Pol II, and H3K27ac ChIP signal were retained as bone fide regions of interest, those without were discarded. A log2 ratio of experiment vs. input was prepared using BamCompare of DeepTools – for RNAseq metaplots, BAM files were split by strand. A score file for the regions in the amended SE bed file was generated via the computematrix function of DeepTools using the log2 BamCompare output file. Results were plotted in R-studio using ggplot2.
 
-## Gene plots and metaplots
+### Gene plots and metaplots
 
 Split strand metagene plots were generated using RPKM normalised sense and antisense (scaled to −1) bigwig coverage files separately with further graphical processing performed in R. For identifying ZC3H4 PROMPT regions, ncRNA genes were filtered from hg38 refgene gtf file to give protein-coding genes that were used with feature counts on siCont RNAseq (Liao et al., 2014), to gain read count and gene length. Transcripts per million (TPM) were calculated for each gene and genes with an expression <5 were filtered out to give a list of expressed genes. Next, divergent promoters, or genes with neighbours within 5 kb of their promoter, were excluded to minimise background. Finally, this gene list was converted to a bed file, then computematrix (DeepTools) used to generate a score file from log2 siCont Vs condition bigwigs; results were plotted in R.
 
-## Differential gene expression
+### Differential gene expression
 
 FeatureCounts was used to count mapped reads over exons and differential expression was performed using DESeq2 (Liao et al., 2014; Love et al., 2014).
 
-## PROMPT poly-A site detection
+### PROMPT poly-A site detection
 
 For PROMPT analysis, we used a catalogue of 961 PROMPTs generated by de novo assembly following acute DIS3 depletion (Davidson et al., 2019). Due to the variable length of each PROMPT, we searched for the two consensus poly-A site motifs (AWTAAA) across the full transcript sequence using FIMO (online). We then calculated the total occurrence of poly-A sites across each PROMPT transcript per kb and separated them into two groups: those that show upregulation (log2FC ≥ 1) in the absence of ZC3H4 and those with no change of downregulated expression. Plots were drawn in R.
 
-## ZC3H4 homologue identification
+### ZC3H4 homologue identification
 
 To identify ZC3H4 homologue protein sequences, sequences from UniRef100 (UniProt Consortium, 2014) were searched using a profile HMM search: ‘hmmsearch’, part of HMMer V3.2.1 (Eddy, 2011), with PANTHER (Mi et al., 2019) hidden Markov model PTHR13119, corresponding to zinc finger CCCH-domain containing proteins. Profile HMM search hits were filtered using a 1e-100 e-value threshold; this search identified 1513 UniRef100 sequences with PTHR13119 domains (representing a total of 1646 UniProtKB sequences). PTHR13119 domains from human and mouse were aligned using TCoffee Expresso mode (Armougom et al., 2006), and multiple sequence alignment figure (Figure 1—figure supplement 3B) was rendered with ESPscript (Robert and Gouet, 2014).
 
-## Phylogenetic tree reconstruction
+### Phylogenetic tree reconstruction
 
 Identified PTHR13119 domains were aligned using MAFFT v7.4 Katoh and Standley, 2013; sites composed of more than 75% of gaps were removed from the multiple sequence alignment with trimAl Capella-Gutiérrez et al., 2009. The PTHR13119 domain phylogeny was reconstructed under maximum likelihood with IQ-TREE v1.6.9 (Nguyen et al., 2015). The best-fitting substitution matrix was determined by ModelFinder (Kalyaanamoorthy et al., 2017), as implemented in IQ-TREE. Branch support values were based on 1000 ultrafast bootstraps (Minh et al., 2013). Phylogenetic Tree figure was rendered with iToL (Letunic and Bork, 2019). Multiple sequence alignment and phylogenetic tree files are deposited on Zenodo (https://doi.org/10.5281/zenodo.4637127).
 
-## Primers, siRNAs, and other nucleic acid sequences
+### Primers, siRNAs, and other nucleic acid sequences
 
 Sequences are provided in Supplementary file 7.

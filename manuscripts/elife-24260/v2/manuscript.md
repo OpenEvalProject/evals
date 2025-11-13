@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.24260.001 Meta-analyses are increasingly used for synthesis of evidence from biomedical research, and often include an assessment of publication bias based on visual or analytical detection of asymmetry in funnel plots. We studied the influence of different normalisation approaches, sample size and intervention effects on funnel plot asymmetry, using empirical datasets and illustrative simulations. We found that funnel plots of the Standardized Mean Difference (SMD) plotted against the standard error (SE) are susceptible to distortion, leading to overestimation of the existence and extent of publication bias. Distortion was more severe when the primary studies had a small sample size and when an intervention effect was present. We show that using the Normalised Mean Difference measure as effect size (when possible), or plotting the SMD against a sample size-based precision estimate, are more reliable alternatives. We conclude that funnel plots using the SMD in combination with the SE are unsuitable for publication bias assessments and can lead to false-positive results.
+Meta-analyses are increasingly used for synthesis of evidence from biomedical research, and often include an assessment of publication bias based on visual or analytical detection of asymmetry in funnel plots. We studied the influence of different normalisation approaches, sample size and intervention effects on funnel plot asymmetry, using empirical datasets and illustrative simulations. We found that funnel plots of the Standardized Mean Difference (SMD) plotted against the standard error (SE) are susceptible to distortion, leading to overestimation of the existence and extent of publication bias. Distortion was more severe when the primary studies had a small sample size and when an intervention effect was present. We show that using the Normalised Mean Difference measure as effect size (when possible), or plotting the SMD against a sample size-based precision estimate, are more reliable alternatives. We conclude that funnel plots using the SMD in combination with the SE are unsuitable for publication bias assessments and can lead to false-positive results.
 
 ## Introduction
 
@@ -35,43 +35,71 @@ Systematic reviews are literature reviews intended to answer a particular resear
 
 This calls for methodological research to ascertain whether approaches to data analysis routinely used in the clinical domain are appropriate in the pre-clinical domain and for resources that guide and inform researchers, reviewers and readers on best practice. In this light, we present findings which show that the use of the standardized mean difference (SMD) measure of effect size in funnel plots can introduce a risk of incorrect assessment of publication bias, particularly in meta-analyses of preclinical data characterised by a large number of individually small studies with large observed effects.
 
-## Formulation of raw mean difference, standardized mean difference and normalized mean difference
+### Formulation of raw mean difference, standardized mean difference and normalized mean difference
 
 To combine data statistically on e.g. the effects of an intervention which has been tested in several studies, outcome measures first need to be expressed on a common scale. Such scales include (for binary outcomes) the risk or odds ratios; and for continuous data a raw mean difference (RMD), SMD or normalized mean difference (NMD).
 
-The RMD can be used when all outcome data are in the same measurement unit, and the interpretation of the outcome is the same in all settings (i.e. the reported measurement unit of the change in outcome has the same meaning in all studies). The RMD is calculated by subtracting the mean outcome value in the control group (Mctrl) from the mean in the intervention group (Mint):(1)RMD= Mint − Mctrl.
+The RMD can be used when all outcome data are in the same measurement unit, and the interpretation of the outcome is the same in all settings (i.e. the reported measurement unit of the change in outcome has the same meaning in all studies). The RMD is calculated by subtracting the mean outcome value in the control group (Mctrl) from the mean in the intervention group (Mint):
 
-The observed standard deviation (SD) is likely to differ between experimental groups, and therefore the standard error (SE) of the RMD is calculated as:(2)SERMD= SDint2nint+SDctrl2nctrl,
+$$
+RMD= M_{int }− M_{ctrl}.
+$$
+
+The observed standard deviation (SD) is likely to differ between experimental groups, and therefore the standard error (SE) of the RMD is calculated as:
+
+$$
+SE_{RMD}= \sqrt{\frac{SD_{int}^{2}}{n_{int}}+\frac{SD_{ctrl}^{2}}{n_{ctrl}}},
+$$
 
 where n is the sample size per group.
 
-In cases where the measurement unit, or the interpretation of the outcome, or both differ between studies (e.g. a given change in infarct size measured in mm3 has a different consequence in the mouse brain than in the rat brain), the intervention effect may be expressed as an SMD. For each study the SMD is obtained by dividing the RMD by that study’s pooled standard deviation (SDpooled) to create an effect estimate that is comparable across studies:(3)SMD = d = Mint- MctrlSDpooled
+In cases where the measurement unit, or the interpretation of the outcome, or both differ between studies (e.g. a given change in infarct size measured in mm3 has a different consequence in the mouse brain than in the rat brain), the intervention effect may be expressed as an SMD. For each study the SMD is obtained by dividing the RMD by that study’s pooled standard deviation (SDpooled) to create an effect estimate that is comparable across studies:
 
-, where SDpooled is:(4)SDpooled= nctrl-1 SDctrl2+ nint-1 SDint2nctrl+ nint-2
+$$
+SMD=d=\frac{M_{int}-M_{ctrl}}{SD_{pooled}}
+$$
+
+, where SDpooled is:
+
+$$
+SD_{pooled}=\sqrt{\frac{n_{ctrl}-1SD_{ctrl}^{2}+n_{int}-1SD_{int}^{2}}{n_{ctrl}+n_{int}-2}}
+$$
 
 Thus, the SMD expresses the intervention effect in all studies in the same new unit: the SD.
 
-For each study, the standard error (SE) of the SMD can be approximated using the sample sizes (n) and the effect estimate (SMD):(5)SESMD= nctrl+nint nctrl* nint+SMD22*nctrl+nint
+For each study, the standard error (SE) of the SMD can be approximated using the sample sizes (n) and the effect estimate (SMD):
+
+$$
+SE_{SMD}=\sqrt{\frac{n_{ctrl}+n_{int}}{n_{ctrl}*n_{int}}+\frac{SMD^{2}}{2*n_{ctrl}+n_{int}}}
+$$
 
 Of note, Equations 3 and 5 estimate the SMD using the approach of Cohen (Cohen, 1988); this estimate is therefore termed Cohen’s d. However, Cohen’s d tends to overestimate the ‘true’ SMD and its variance when the sample sizes in the primary studies are small (e.g. <10). This bias can be corrected using the approach of Hedges (Hedges, 1981), which adjusts both the SMD estimate and its variance by a correction factor based on the total sample size. The resulting estimate is the unbiased SMD known as Hedges’ g (see Supplementary file 2 for full equations). In many clinical meta-analyses, Hedges’ g will be almost identical to Cohen’s d, but the difference between the estimates can be larger in preclinical meta-analyses, where small sample sizes are more common.
 
-A third effect measure commonly used for continuous data in preclinical meta-analyses is the normalised mean difference (NMD), which relates the magnitude of effect in the intervention group to that seen in untreated animals, with reference to the outcome in a normal, healthy animal (Vesterinen et al., 2014). A condition for using the NMD is that the baseline measurement in an untreated, unlesioned ‘sham’ animal is known, or can be inferred. For each study, the NMD is calculated as:NMD=100%×Mint-Msham-Mctrl-MshamMctrl-Msham
+A third effect measure commonly used for continuous data in preclinical meta-analyses is the normalised mean difference (NMD), which relates the magnitude of effect in the intervention group to that seen in untreated animals, with reference to the outcome in a normal, healthy animal (Vesterinen et al., 2014). A condition for using the NMD is that the baseline measurement in an untreated, unlesioned ‘sham’ animal is known, or can be inferred. For each study, the NMD is calculated as:
 
-where Msham is the mean score for normal, unlesioned and untreated subjects. The corresponding SE is calculated as:SENMD=(100∗SDctrlMctrl−Msham)2nctrl + (100∗SDintMctrl−Msham)2nint
+$$
+NMD=100%\times\frac{M_{int}-M_{sham}-M_{ctrl}-M_{sham}}{M_{ctrl}-M_{sham}}
+$$
+
+where Msham is the mean score for normal, unlesioned and untreated subjects. The corresponding SE is calculated as:
+
+$$
+SE_{NMD}=\sqrt{\frac{(100∗\frac{SD_{ctrl}}{M_{ctrl}−M_{sham}})^{2}}{n_{ctrl}} + \frac{(100∗\frac{SD_{int}}{M_{ctrl}−M_{sham}})^{2}}{n_{int}}}
+$$
 
 (see Supplementary file 2 for additional equations and (Vesterinen et al., 2014) for a comprehensive overview of (preclinical) meta-analysis methodology).
 
 Note that Equation 5 dictates that the SESMD is correlated to the SMD effect size, whereas the SEs of the RMD (Equation 2) and NMD (Equation 7) are independent of the corresponding effect sizes.
 
-## Funnel plots and publication bias
+### Funnel plots and publication bias
 
 Funnel plots are scatter plots of the effect sizes of the included studies versus a measure of their precision, usually the SE or 1/SE. In the absence of bias and heterogeneity, funnel plots should be funnel-shaped and symmetrically centred around the summary effect estimate of the analysis, since 1) imprecise (smaller) studies will deviate further from the summary effect compared to precise (larger) studies and 2) studies are equally likely to overestimate or underestimate the true effect (Figure 1A). Assessment of the possible presence of publication bias frequently relies on a visual or analytical evaluation of funnel plot asymmetry. If studies showing small, neutral or controversial effects are more likely to remain unpublished, publication bias may occur. As a result, the funnel plot will become asymmetrical, and the summary effect estimate will shift accordingly (Figure 1B). Importantly, there are other causes of asymmetry in funnel plots. For instance, the true effect size in smaller (and therefore less precise) studies may be genuinely different from that in large studies (for instance because the intensity of the intervention was higher in small studies). For this reason, funnel plot asymmetry is often referred to as a method to detect small study effects, rather than being a definitive test for publication bias (Rothstein et al., 2005). In addition, artefacts and chance may cause asymmetry (as shown e.g. in this study).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24260/elife-24260-fig1-v2.jpg)
 
-**Figure 1.:** A) and presence (B) of bias.The precision estimate used is the standard error (SE). Dashed lines indicate the summary effect estimate.
+**Figure 1.:** The precision estimate used is the standard error (SE). Dashed lines indicate the summary effect estimate.
 
-## Theoretical explanation of SMD funnel plot distortion
+### Theoretical explanation of SMD funnel plot distortion
 
 In a meta-analysis using the SMD as effect measure, in the absence of publication bias, observed SMDs in a funnel plot will be scattered around the true underlying SMD. However, the dependency of the SESMD on the observed SMD will impact the appearance of the funnel plot. When we review the equation for the SESMD, (Equation 5) the first component on the right of the ‘=' sign reflects the variance of the difference between the two group means, rescaled into pooled standard deviation units. Consequently, in this first part only nctrl and nint play a role. The second component includes the squared SMD, and reflects the variation in the within-groups standard deviation as measured by SDpooled (Equation 4).
 
@@ -83,13 +111,13 @@ If there is no intervention effect, the SMD (and the second component) will be z
 
 In summary, a funnel plot using both the SMD and its SE may become asymmetrical in the absence of publication bias. When funnel plot distortion is assessed by visual inspection, this skewing might cause the plot to be interpreted as being asymmetrical and lead the observer to erroneously conclude that publication bias is present. Furthermore, funnel plot asymmetry is often tested statistically using Egger’s regression (Egger et al., 1997) or Duval and Tweedie’s trim and fill analysis (Duval and Tweedie, 2000), but neither of these analyses take the phenomenon described above into account, and their use may lead to erroneous conclusions that publication bias is present.
 
-## Aim of this study
+### Aim of this study
 
 We investigated the reliability of RMD, SMD and NMD-based funnel plots for the assessment of publication bias in meta-analyses, using both empirical datasets and data simulations. We investigate the effect on the severity of funnel plot distortion of the study sample size, the number of studies in the meta-analysis and the magnitude of the intervention effect. We assess whether distortion can be avoided by using a precision estimate based on the sample size of the primary studies, as previously suggested for mean difference outcome measurements (Sterne et al., 2011). We then use this alternative approach to reanalyse published funnel plots, and show that these systematic reviews may have overestimated the severity of publication bias in their body of evidence. Our findings have important implications for the meta-research field, since authors may have reached incorrect conclusions regarding the existence of publication bias based on funnel plots using the SMD measure of effect size.
 
 ## Results
 
-## Publication bias assessment using RMD versus SMD funnel plots of two preclinical RMD datasets
+### Publication bias assessment using RMD versus SMD funnel plots of two preclinical RMD datasets
 
 Dataset 1 (ischaemic preconditioning) contains 785 individual effect sizes (Wever et al., 2015). In the original analysis using the RMD as effect measure, funnel plot asymmetry was detected by Egger’s regression (p=1.7×10−5), but no additional studies were imputed in trim and fill analysis (Figure 3A). When expressing the same data as SMD, funnel plot asymmetry increased substantially (Figure 3B; p<1.0×10−15, Egger regression) and 196 missing studies were imputed by trim and fill analysis, leading to adjustment of the estimated SMD effect size from 2.8 to 1.9.
 
@@ -99,9 +127,400 @@ Dataset 1 (ischaemic preconditioning) contains 785 individual effect sizes (Wev
 
 Dataset 2 (stem cell treatments) contained 95 individual effect sizes (Zwetsloot et al., 2016). Funnel plot asymmetry was detected in the original analysis using RMD (p=0.02) and trim and fill analysis suggested a reduction in effect estimate of 0.1% after filling two additional studies (Figure 3C). In contrast, a funnel plot of the same data expressed as SMD showed asymmetry at a higher level of statistical significance (p=3.4×10−10, Egger regression), but no missing studies were imputed (Figure 3D).
 
-## Data simulation results
+### Data simulation results
 
 Results of our first simulation (in the absence of publication bias) are shown in Table 1, and representative funnel plots of these simulations in Figure 4 (small study sample size) and Figure 4—figure supplement 1 (large study sample size). When we simulated no intervention effect, neither Egger’s regression nor trim and fill analysis gave different results for the RMD vs. SE and SMD vs. SE analyses (Table 1, Figure 4A,B,E and F and Figure 4—figure supplement 1, panel A, B, E and F) and in ~95% of cases there was no evidence of asymmetry. Most simulated funnel plots were assessed as symmetrical, however, as expected, around 5% of the cases were considered asymmetrical by chance.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/24260/elife-24260-fig4-v2.jpg)
+
+**Figure 4.:** Simulations were performed without an intervention effect (Δμ = 0; A–B and E–F), or with an intervention effect (Δμ = 10; C–D and G–H). Δμ = difference in normally distributed means between control and intervention group. Representative funnel plots for studies with a large sample size (total study n = 60–320) are shown in Figure 4—figure supplement 1. Representative funnel plots for the comparison between Hedges’ g and Cohen’s d are shown in Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/24260/elife-24260-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/24260/elife-24260-fig4-figsupp2-v2.jpg)
+
+**Table 1.**
+ Study characteristics in relation to publication bias assessment in simulation of unbiased meta-analyses (simulation 1)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Total study N</th>
+      <th>Δμ</th>
+      <th>No. of studies in MA</th>
+      <th>Effect measure</th>
+      <th>% of simulations with Egger’s p&lt;0.05</th>
+      <th>No. of studies filled by T&amp;F (mean(min - max))</th>
+      <th>Overall effect size (mean(min - max))</th>
+      <th>Overall effect size after T&amp;F (mean(min - max))</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12–30</td>
+      <td>0</td>
+      <td>30</td>
+      <td>RMD</td>
+      <td>6.2%</td>
+      <td>2.1 (0–11)</td>
+      <td>0.74(−12.2–11.3)</td>
+      <td>0.0(−3.8–3.6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>9.3%</td>
+      <td>1.6 (0–10)</td>
+      <td>0.1(−1.1–1.4)</td>
+      <td>0.0(−0.36–0.33)</td>
+    </tr>
+    <tr>
+      <td>12–30</td>
+      <td>5</td>
+      <td>30</td>
+      <td>RMD</td>
+      <td>4.9%</td>
+      <td>2.1 (0–10)</td>
+      <td>5.3(−3.4–19.1)</td>
+      <td>5.0 (1.2–9.6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>19.5%</td>
+      <td>2.4 (0–10)</td>
+      <td>0.55(−0.4–2.2)</td>
+      <td>0.43 (0.11–0.74)</td>
+    </tr>
+    <tr>
+      <td>12–30</td>
+      <td>10</td>
+      <td>30</td>
+      <td>RMD</td>
+      <td>4.6%</td>
+      <td>2.0 (0–10)</td>
+      <td>11.2 (1.2–20.4)</td>
+      <td>10.0 (5.4–13.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>67.2%</td>
+      <td>4.4 (0–10)</td>
+      <td>1.16 (0.2–2.4)</td>
+      <td>0.85 (0.5–1.2)</td>
+    </tr>
+    <tr>
+      <td>12–30</td>
+      <td>0</td>
+      <td>300</td>
+      <td>RMD</td>
+      <td>4.8%</td>
+      <td>25.4 (0–62)</td>
+      <td>0.0(−15.2–12.3)</td>
+      <td>0.0(−2.1–2.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>9.8%</td>
+      <td>18.8 (0–57)</td>
+      <td>0.0(−1.9–1.6)</td>
+      <td>0.0(−0.2–0.2)</td>
+    </tr>
+    <tr>
+      <td>12–30</td>
+      <td>5</td>
+      <td>300</td>
+      <td>RMD</td>
+      <td>5.5%</td>
+      <td>25.1 (0–65)</td>
+      <td>5.5(−10.2–23.7)</td>
+      <td>5.0 (3.0–6.8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>96.0%</td>
+      <td>47.3 (0–70)</td>
+      <td>0.55(−1.1–2.3)</td>
+      <td>0.37 (0.28–0.50)</td>
+    </tr>
+    <tr>
+      <td>12–30</td>
+      <td>10</td>
+      <td>300</td>
+      <td>RMD</td>
+      <td>5.9%</td>
+      <td>25.8 (0–61)</td>
+      <td>10.3(−11.1–29.0)</td>
+      <td>10.0 (7.9–12.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>100%</td>
+      <td>61.5 (40–76)</td>
+      <td>1.0(−1.4–3.1)</td>
+      <td>0.80 (0.70–0.89)</td>
+    </tr>
+    <tr>
+      <td>12–30</td>
+      <td>0</td>
+      <td>3000</td>
+      <td>RMD</td>
+      <td>5.4%</td>
+      <td>249 (0–453)</td>
+      <td>0.0(−18.6–17.9)</td>
+      <td>0.0(−1.4–1.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>8.7%</td>
+      <td>175.1 (0–386)</td>
+      <td>0.0(−2.1–2.6)</td>
+      <td>0.0(−0.1–0.1)</td>
+    </tr>
+    <tr>
+      <td>12–30</td>
+      <td>5</td>
+      <td>3000</td>
+      <td>RMD</td>
+      <td>4.4%</td>
+      <td>252 (0–475)</td>
+      <td>4.9(−13.0–21.1)</td>
+      <td>5.0 (3.7–6.4)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>100%</td>
+      <td>492(417 - 565)</td>
+      <td>0.49(−1.7–2.9)</td>
+      <td>0.36 (0.33–0.39)</td>
+    </tr>
+    <tr>
+      <td>12–30</td>
+      <td>10</td>
+      <td>3000</td>
+      <td>RMD</td>
+      <td>5.0%</td>
+      <td>250 (0–456)</td>
+      <td>10.0(−7–27)</td>
+      <td>10.0 (8.6–11.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>100%</td>
+      <td>620(568 - 669)</td>
+      <td>1.0(−0.7–4.5)</td>
+      <td>0.79 (0.8–0.8)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>0</td>
+      <td>30</td>
+      <td>RMD</td>
+      <td>4.7%</td>
+      <td>2.4 (0–10)</td>
+      <td>−0.2(−3.8–3.3)</td>
+      <td>0.0(−1.3–1.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>5.0%</td>
+      <td>2.4 (0–10)</td>
+      <td>0.0(−0.4–0.4)</td>
+      <td>0.0(−0.1–0.1)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>5</td>
+      <td>30</td>
+      <td>RMD</td>
+      <td>3.8%</td>
+      <td>2.2 (0–10)</td>
+      <td>4.8 (1.9–7.6)</td>
+      <td>5.0 (3.8–6.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>5.2%</td>
+      <td>2.4 (0–13)</td>
+      <td>0.48 (0.2–0.8)</td>
+      <td>0.5 (0.4–0.6)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>10</td>
+      <td>30</td>
+      <td>RMD</td>
+      <td>5.9%</td>
+      <td>2.4 (0–10)</td>
+      <td>10.0 (6.7–14.0)</td>
+      <td>10.0 (8.7–11.2)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>7.9%</td>
+      <td>2.6 (0–10)</td>
+      <td>1.0 (0.6–1.3)</td>
+      <td>1.0 (0.8–1.1)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>0</td>
+      <td>300</td>
+      <td>RMD</td>
+      <td>4.4%</td>
+      <td>18.9 (0–58)</td>
+      <td>0.1(−3.7–5.5)</td>
+      <td>0.0(−0.5–0.6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>4.6%</td>
+      <td>17.3 (0–58)</td>
+      <td>0.0(−0.4–0.5)</td>
+      <td>0.0(−0.1–0.1)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>5</td>
+      <td>300</td>
+      <td>RMD</td>
+      <td>4.7%</td>
+      <td>17.8 (0–63)</td>
+      <td>4.9 (0.0–9.7)</td>
+      <td>5.0 (4.4–5.6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>11.8%</td>
+      <td>20.7 (0–60)</td>
+      <td>0.49 (0.0–0.9)</td>
+      <td>0.49 (0.4–0.5)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>10</td>
+      <td>300</td>
+      <td>RMD</td>
+      <td>6.2%</td>
+      <td>18.4 (0–63)</td>
+      <td>10.1 (4.8–16.5)</td>
+      <td>10.0 (9.4–10.6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>33.9%</td>
+      <td>29.5 (0–71)</td>
+      <td>1.0 (0.5–1.7)</td>
+      <td>0.97 (0.9–1.0)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>0</td>
+      <td>3000</td>
+      <td>RMD</td>
+      <td>5.3%</td>
+      <td>140.0 (0–367)</td>
+      <td>0.0(−6.5–5.6)</td>
+      <td>0.0(−0.3–0.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>5.4%</td>
+      <td>136.6 (0–348)</td>
+      <td>0.0(−0.7–0.6)</td>
+      <td>0.0 (0.0–0.0)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>5</td>
+      <td>3000</td>
+      <td>RMD</td>
+      <td>4.7%</td>
+      <td>143 (0–331)</td>
+      <td>5.0(−1.4–11.3)</td>
+      <td>5.0 (4.7–5.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>69.0%</td>
+      <td>243 (0–391)</td>
+      <td>0.5(−0.1–1.2)</td>
+      <td>0.48 (0.46–0.51)</td>
+    </tr>
+    <tr>
+      <td>60–320</td>
+      <td>10</td>
+      <td>3000</td>
+      <td>RMD</td>
+      <td>5.0%</td>
+      <td>135.8 (0–340)</td>
+      <td>10.0 (4.6–16.2)</td>
+      <td>10.0 (9.7–10.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SMD(g)</td>
+      <td>99.7%</td>
+      <td>334.5(168–464)</td>
+      <td>1.0 (0.47–1.61)</td>
+      <td>0.97 (0.95–0.98)</td>
+    </tr>
+  </tbody>
+</table>
+
+_n = sample size; Δμ = difference in normally distributed means between intervention and control group; no. = number; MA = meta analysis; T and F = trim and fill analysis; RMD = raw mean difference; SMD(g)=Hedges’ g standardized mean difference; SD = standard deviation_
 
 When we simulated the presence of an intervention effect (Δμ = 10; RMD = 10 and SMD = 1 or Δμ = 5; RMD = 5 and SMD = 0.5), again around 5% of the RMD funnel plot analyses were judged asymmetrical (Table 1, Figure 4C and G, and Figure 4—figure supplement 1, panel C and G). In contrast, when using the SMD, funnel plot asymmetry was detected in over 60% of the simulated funnel plots with Δμ = 10, where the size of contributing studies was small (Figure 4D and H and Figure 4—figure supplement 1, panel D and H), increasing as the number of individual studies contributing to the meta-analysis increased. When we modelled larger individual contributing studies (n = 60–320 subjects), respectively 9%, 34% and 100% of the SMD funnel plots with 30, 300 or 3000 studies were assessed as asymmetrical (Table 1, Figure 4—figure supplement 1). Trim and fill analysis resulted in on average 7% extra studies filled in preclinical simulation scenarios using the RMD. Adjusting the overall effect estimate based on these filled data points improved the estimation of the simulated RMD in all scenarios. However, when using the SMD, the number of filled studies was much higher in many scenarios (up to 21% extra studies filled). As a result, the adjusted overall effect estimate after trim and fill in SMD funnel plots tended to be an underestimation of the true effect size. Finally, through visual inspection, distortion could be seen in all SMD funnel plots that incorporated a true effect, most prominent in the preclinical (small study) scenarios (Figure 4 and Figure 4—figure supplement 1).
 
@@ -109,9 +528,84 @@ When repeating the simulations using Cohen’s d SMD instead of Hedges’ g, or 
 
 Next, we assessed the impact of censoring non-significant simulated experiments (to simulate publication bias) and the performance of SMD vs. 1/√n funnel plots and NMD funnel plots in the presence of an intervention effect as alternatives to the SMD vs. SE funnel plot. As in simulation 1, SMD vs. SE funnel plots of unbiased simulations were identified as asymmetrical by Egger’s test (Table 2). However, when the precision estimate was changed from SE to 1/√n, the prevalence of false positive results fell to the expected 5% (Table 2). For the NMD, Egger’s test performed correctly when using either the SE or 1/√n as precision estimate. In all scenario’s, approximately 50 out of 1000 simulated funnel plots appeared to be asymmetrical by chance (Table 2). The results of Egger’s test are supported by visual inspection of funnel plots of these unbiased scenario’s (Figure 5). The typical left-upward shift of the small SMD datapoints and right-downward shift of the large SMD data points is clearly visible in the SMD vs. SE plot (Figure 5B), but not in the RMD, SMD vs. 1/√n or NMD plots.
 
+**Table 2.**
+ publication bias assessments in unbiased and biased simulations using the RMD, SMD or NMD in combination with an SE or sample size-based precision estimate (simulation 3).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Precision estimate SE</th>
+      <th colspan="2">Precision estimate 1/√n</th>
+    </tr>
+    <tr>
+      <th>Effect measure</th>
+      <th>Bias?</th>
+      <th>% of sims with Egger’s p&lt;0.05</th>
+      <th>Median p-value (range)</th>
+      <th>% of sims with Egger’s p&lt;0.05</th>
+      <th>Median p-value (range)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RMD</td>
+      <td>No</td>
+      <td>5.1</td>
+      <td>0.51 (0.001–1.0)</td>
+      <td>5.1%</td>
+      <td>0.50 (0.001–1.0)</td>
+    </tr>
+    <tr>
+      <td>RMD</td>
+      <td>Yes</td>
+      <td>69.1%</td>
+      <td>0.01 (2.7*10−8 - 0.99)</td>
+      <td>69.6%</td>
+      <td>0.01 (1.6*10−8 - 0.97)</td>
+    </tr>
+    <tr>
+      <td>SMD</td>
+      <td>No</td>
+      <td>100%</td>
+      <td>2.9*10−13(0–8.1*10−6)</td>
+      <td>4.3%</td>
+      <td>0.51 (0.001–1.0)</td>
+    </tr>
+    <tr>
+      <td>SMD</td>
+      <td>Yes</td>
+      <td>100%</td>
+      <td>4.4*10−16(0–1.8*10−6)</td>
+      <td>72.4%</td>
+      <td>0.01 (5.4*10−10 - 0.99)</td>
+    </tr>
+    <tr>
+      <td>NMD</td>
+      <td>No</td>
+      <td>6.4%</td>
+      <td>0.51 (0.001–1.0)</td>
+      <td>6.4%</td>
+      <td>0.50 (0.001–1.0)</td>
+    </tr>
+    <tr>
+      <td>NMD</td>
+      <td>Yes</td>
+      <td>60.5%</td>
+      <td>0.02 (7.1*10−8 - 0.99)</td>
+      <td>60.4%</td>
+      <td>0.02 (8.0*10−8 - 0.98)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Simulated meta-analyses contained 300 studies (total study n = 12–30 subjects) and the difference in normally distributed means between control and intervention group was 10. Publication bias was introduced stepwise, by removing 10% of primary studies in which the difference between the intervention and control group means was significant at p<0.05, 50% of studies where the significance level was p≥0.05 to p<0.10, and 90% of studies where the significance level was p≥0.10. SE = standard error; RMD = raw mean difference; SMD = standardized mean difference (Hedges’ g); NMD = normalized mean difference; sims = simulations._
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/24260/elife-24260-fig5-v2.jpg)
 
-**Figure 5.:** A), standardized mean difference (SMD; B), normalized mean difference (NMD; C) with SE as precision estimate, and SMD funnel plots using 1/√n as precision estimate (D).All plots show the same simulated meta-analysis containing 3000 studies with small sample sizes (n = 12–30) and an overall intervention effect of Δμ = 10. Δμ = difference in normally distributed means between control and intervention group.
+**Figure 5.:** All plots show the same simulated meta-analysis containing 3000 studies with small sample sizes (n = 12–30) and an overall intervention effect of Δμ = 10. Δμ = difference in normally distributed means between control and intervention group.
 
 In our final simulation we tested the performance of these different approaches in the presence of simulated publication bias. In the majority of these simulations of meta-analyses of individually small studies, asymmetry was detected both visually (Figure 6), and using Egger’s regression (Supplementary file 1). When the size of individual studies was small, SMD vs.1/√n funnel plots performed as well as the RMD vs. SE funnel plots, in both biased and unbiased simulations (Table 2). The NMD also behaved similar to the RMD with either an SE or 1/√n precision estimate.
 
@@ -119,9 +613,101 @@ In our final simulation we tested the performance of these different approaches 
 
 **Figure 6.:** Representative funnel plots of simulated biased meta-analyses using a raw mean difference (RMD; A–B), a standardized mean difference (SMD; C–D), or a normalised mean difference (NMD; E–F) effect measure. The present example contains 3000 studies with a small study sample size (n = 12–30) and an intervention effect present (difference in normal distribution means between control and intervention group = 10). Publication bias was introduced stepwise, by removing 10% of primary studies in which the difference between the intervention and control group means was significant at p<0.05, 50% of studies where the significance level was p≥0.05 to p<0.10, and 90% of studies where the significance level was p≥0.10. Precision estimates are standard error (A, C, E) or sample size-based (B, D, F), where n = total primary study sample size.
 
-## Re-analyses of SMD funnel plots from published meta-analyses
+### Re-analyses of SMD funnel plots from published meta-analyses
 
 Since a sample size-based precision estimate might be more suitable for asymmetry analysis, we used data from five previously published meta-analyses which used an SMD vs. SE funnel plot and claimed funnel plot asymmetry as a result of publication bias. In the original publications, all five of these funnel plots were asymmetrical according to Egger’s regression test. In three out of five cases, this asymmetry was not present in funnel plots using 1/√n as a precision estimate (Table 3 and Figure 7). Furthermore, three out of five papers reported several missing data points, as detected by trim and fill analysis. Missing data points were not detected when using SMD vs. 1/√n funnel plots for trim and fill analysis (Table 3 and Figure 7).
+
+**Table 3.**
+ Re-analysis of published preclinical meta-analyses using SMD
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="6">Precision estimate</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">Standard Error</th>
+      <th colspan="3">1/√n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Study</td>
+      <td>n</td>
+      <td>Observed SMD[95% CI]</td>
+      <td>Egger’s p</td>
+      <td>filled</td>
+      <td>Adjusted SMD</td>
+      <td>Egger’s p</td>
+      <td>filled</td>
+      <td>Adjusted SMD</td>
+    </tr>
+    <tr>
+      <td>Egan et al. (2016)</td>
+      <td>1392</td>
+      <td>0.75 [0.70, 0.80]</td>
+      <td>&lt;2.2×10−16</td>
+      <td>252</td>
+      <td>0.42 [0.37,0.47]</td>
+      <td>2.2 × 10−11</td>
+      <td>0</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Groenink et al. (2015)</td>
+      <td>43</td>
+      <td>−1.99[−2.33,–1.64]</td>
+      <td>8.5 × 10−10</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0.68</td>
+      <td>0</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Kleikers et al. (2015)</td>
+      <td>20</td>
+      <td>−1.15[−1.67; −0.63]</td>
+      <td>3.5 × 10−4</td>
+      <td>6</td>
+      <td>?</td>
+      <td>2.9 × 10−3</td>
+      <td>0</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Wever et al. (2012)</td>
+      <td>62</td>
+      <td>1.54 [1.16, 1.93]</td>
+      <td>7.8 × 10−6</td>
+      <td>3</td>
+      <td>?</td>
+      <td>0.62</td>
+      <td>0</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Yan et al. (2015)</td>
+      <td>60</td>
+      <td>1.58 [1.19, 1.97]</td>
+      <td>6.5 × 10−6</td>
+      <td>0</td>
+      <td>N/A</td>
+      <td>0.19</td>
+      <td>0</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+_n = number of studies; SMD = standardized mean difference; CI = confidence interval; Egger’s p=p value for Egger’s regression; adjusted SMD = SMD after trim and fill analysis; N/A = not applicable._
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/24260/elife-24260-fig7-v2.jpg)
 
@@ -141,11 +727,11 @@ Taken with the increased distortion seen when contributing studies are individua
 
 Of note, trim and fill analysis may not always be reliable when the number of studies in a meta-analysis is large; in half of the cases of our unbiased simulations with 300 and 3000 studies, many studies were deemed missing, even if no intervention effect was introduced. Still, the SMD simulations were always more susceptible to the addition of imputed studies if a true effect was introduced, and the effect size reduction was larger compared to RMD measurements.
 
-## Limitations of this study
+### Limitations of this study
 
 We designed our data simulations to closely resemble empirical data in terms of the range of sample sizes, effect sizes and numbers of studies in a meta-analyses. We acknowledge that our current range of simulation scenarios does not enable us to predict the impact of funnel plot distortion in every possible scenario, but we present those scenarios which most clearly illustrate the causes and consequences of funnel plot distortion. Furthermore, our simulations may still be improved by e.g. studying the effects of unequal variances between treatment groups, sampling data from a non-normal distribution, or introducing various degrees of heterogeneity into the simulation. However, research on how to optimally simulate these parameters is first needed, and was beyond the scope of this study. instead, we used re-analyses of empirical data to test our proposed solutions on a number of real-life meta-analyses which include all of the aforementioned aspects.
 
-## Recommendations
+### Recommendations
 
 We recommend that, where possible, investigators use RMD or NMD instead of SMD when seeking evidence of publication bias in meta-analyses. Where it is necessary to use SMD, assessment for publication bias should use a sample size-based precision estimate such as 1/√n. In a given analysis it may be possible to calculate an NMD effect size for some but not all studies. In these circumstances there is a trade-off between the reduced number of included studies and an improved estimation of publication bias, and sensitivity analysis may be used to compare the meta-analysis outcome using the NMD versus the SMD. Of note, other methods to investigate publication bias in a dataset may be used in addition to funnel plots (e.g. fail-safe N, Excess Significance Test [Ioannidis and Trikalinos, 2007], or selection method / weight funcion model approaches [Peters et al., 2006]), but the performance of these approaches in the context of SMD, RMD and NMD estimates of effect size is not known.
 
@@ -155,13 +741,106 @@ In conclusion, funnel plots based on SMDs and their SE should be interpreted wit
 
 We performed data simulations and re-analyses of empirical data using R statistical software (version 3.1.2; RRID:SCR_001905) and the most recent MBESS, xlsx, meta and metafor packages (Rothstein et al., 2005; Kelley, 2016; Schwarzer, 2016; Viechtbauer, 2010; Dragulescu, 2014) (See Supplementary file 3 for all R scripts). For all analyses involving RMD and SMD the primary outcome of interest was the number of asymmetrical funnel plots as detected by Egger's regression (Egger et al., 1997). As a secondary outcome, we assessed the number of missing studies as imputed by Duval and Tweedie’s trim and fill analysis (Duval and Tweedie, 2000). This method provides an estimate of the number of missing studies in a meta-analysis, and the effect that these missing studies may have had on its outcome. In brief, the funnel plot is mirrored around the axis represented by the overall effect estimate. Excess studies (often small, imprecise studies with a neutral or negative effect size) which have no counterpart on the opposite side of the plot are temporarily removed (trimmed). The trimmed plot is then used to re-estimate the overall effect estimate. The trimmed data points are placed back into the plot, and then a paired study is imputed with the same precision but reflected to have an effect size reflected around the adjusted overall estimate, and plotted in a different color or symbol from the observed data points. The analysis is re-run and repeated until no further asymmetry is observed. We used trim and fill analysis and a random effects model in R to seek evidence for publication bias overstating the effectiveness of the interventions, based on the proposed direction of the intervention effect. Because of its superior performance in studies with small sample sizes, Hedges’ g was used in the main analyses throughout this manuscript. We considered a p-value of <0.05 to be significant for Egger’s regression in individual simulations.
 
-## Empirical data published as RMD re-analyzed as SMD
+### Empirical data published as RMD re-analyzed as SMD
 
 In our first re-analysis of empirical data from published preclinical meta-analyses (Wever et al., 2015; Zwetsloot et al., 2016), we constructed funnel plots using the unbiased SMD (Hedges’ g [Hedges, 1981]) vs. SE, and compared these to funnel plots using the RMD vs. SE (as in the original publication).
 
-## Data simulation methods
+### Data simulation methods
 
 In our first simulation, we tested the estimation of publication bias using the unbiased SMD (Hedges’ g) in simulated data where there was no publication bias. As a sensitivity analysis, all scenarios of simulation 1 were also performed using Cohen’s d. We generated simulated meta-analyses by simulating the desired number of individual studies, each with a control group and an intervention group. The control groups were simulated by randomly sampling individual subject data from a normal distribution with a mean (Mctrl) of 30 and an SD of 10 (Table 4); these values were based on outcome data for functional imaging in myocardial infarction studies (Zwetsloot et al., 2016). Individual subject data for the intervention group was sampled from a normal distribution with mean Mctr +ES (effect size). To assess the effect of differences in overall intervention effects on funnel plot distortion, we simulated meta-analyses for an ES of respectively 0, 5, or 10 (Table 4). To assess the effect of study sample size on funnel plot distortion, we simulated two types of study sizes: small (12–30 subjects per study), as is more common in animal studies, and large (60–320 subjects per study), as is more common in human studies. For each simulated study, we determined the number of subjects by sampling the group sizes from the uniform distribution within the ranges of study sizes given (Table 4). Of note, an intervention effect of SMD = 1 may appear large to those experienced in meta-analyses of clinical data, but is typical of those observed in animal studies, as are the group sizes reported (see e.g. Figure 2 and Table 3).
+
+**Table 4.**
+ Simulation characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Small studies</th>
+      <th colspan="3">Large studies</th>
+      <th>RMD</th>
+      <th>SMD</th>
+      <th>NMD</th>
+    </tr>
+    <tr>
+      <th>Experimental groups</th>
+      <th>N</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>N</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intervention 1 (no effect)</td>
+      <td>7–14</td>
+      <td>30</td>
+      <td>10</td>
+      <td>40–150</td>
+      <td>30</td>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Intervention 2 (RMD = 5)</td>
+      <td>7–14</td>
+      <td>35</td>
+      <td>10</td>
+      <td>40–150</td>
+      <td>35</td>
+      <td>10</td>
+      <td>5</td>
+      <td>0.5</td>
+      <td>0.125</td>
+    </tr>
+    <tr>
+      <td>Intervention 3 (RMD = 10)</td>
+      <td>7–14</td>
+      <td>40</td>
+      <td>10</td>
+      <td>40–150</td>
+      <td>40</td>
+      <td>10</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>5–16*</td>
+      <td>30</td>
+      <td>10</td>
+      <td>20–170*</td>
+      <td>30</td>
+      <td>10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sham</td>
+      <td>4–6</td>
+      <td>70</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_n = sample size; ND = normal distribution; SD = standard deviation; *control group sample size = intervention group sample size ±≤2 (small studies) or ±≤20 (large studies)._
 
 Simulation and aggregation of individual subject data into study-level data was repeated until the desired number of studies to be included in the meta-analysis was obtained. We assessed the influence of the number of included studies on funnel plot distortion by simulating meta-analyses containing either 30, 300, or 3000 studies. Although there is no consensus on the minimal number of studies required for publication bias analysis, 30 has been previously proposed as the minimal number to obtain sufficient power for asymmetry testing (Lau et al., 2006). We chose 3000 studies for the largest meta-analysis as this is substantially larger than any meta-analysis of which we know, and any effects of study number are likely to be saturated at that number of studies. Importantly, we did not introduce publication bias to any of these datasets and the funnel plots should therefore be symmetrical. We repeated each simulation 1000 times, and we compared the effects of expressing the meta-analysis results as RMD or SMD, and used funnel plots with the effects size plotted on the x-axis and the SE as precision estimate plotted on the y-axis (RMD vs. SE and SMD vs. SE plots). As a second sensitivity analysis, we assessed the robustness of our findings using Egger’s test by re-testing all scenario’s of simulation 1 using Begg and Mazumdar’s test (Begg and Mazumdar, 1994).
 
@@ -169,6 +848,6 @@ Informed by the outcomes of simulation 1, in our second simulation we selected t
 
 In our final simulation we investigated the effects of a modelled publication bias on the performance of the SMD vs. SE and alternative approaches. We simulated meta-analyses containing 300 and 3000 studies with a small individual sample size and an intervention effect present (Δμ = difference in means between control and intervention group = 10; see Table 4). RMD vs. SE, RMD vs. 1/√n, SMD vs. SE, SMD vs. 1/√n and NMD vs. SE funnel plots were constructed and tested for asymmetry using Egger’s regression. We then introduced publication bias in these meta-analyses using a stepwise method, Publication bias was introduced stepwise, by removing 10% of primary studies in which the difference between the intervention and control group means was significant at p<0.05 (Student-t test), 50% of studies where the significance level was p≥0.05 to p<0.10, and 90% of studies where the significance level was p≥0.10. Funnel plot asymmetry testing was performed as above, and the results were compared to the unbiased simulations and between different funnel plot types. All simulations were repeated 1000 times. Of note, this simulation was not performed for meta-analyses of studies with a large sample size, since pilot data showed that the large sample size will cause only very few studies to be removed from the ‘biased’ meta-analysis.
 
-## Re-analysis of empirical data using an n-based precision estimate
+### Re-analysis of empirical data using an n-based precision estimate
 
 Finally, to assess the usefulness and impact of using a sample size-based precision estimate in SMD funnel plots of empirical data, we re-analysed data from five published preclinical meta-analyses that used SMD vs. SE funnel plots to assess publication bias. The selected datasets were from our own groups, or from recent collaborations, which allowed for easy identification of meta-analyses using SMD vs. SE funnel plots, and easy access to the data. There were no selection criteria in terms of e.g. the number of studies in the analysis, or the outcome of the publication bias assessment. The distribution of the total number of subjects per data point in the selected studies is (in median (min-max): 11.7 (6–38) for Wever et al. (2012), 20(12-46) for Groenink et al. (2015), 11(4-24) for Yan et al., 2015, 14.5 (6–35) for Kleikers et al. (2015) and 12(4-66) for Egan et al. (2016). For these data sets, we compared the outcome of Egger’s regression and trim and fill analysis when using SMD vs. SE funnel plots to that of SMD vs. 1/√n funnel plots. We obtained the corresponding author’s consent for re-analysis.

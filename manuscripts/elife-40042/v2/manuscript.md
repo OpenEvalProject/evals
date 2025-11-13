@@ -34,7 +34,7 @@
 
 ## Abstract
 
-10.7554/eLife.40042.001 Understanding the connectivity architecture of entire vertebrate brains is a fundamental but difficult task. Here we present an integrated neuro-histological pipeline as well as a grid-based tracer injection strategy for systematic mesoscale connectivity mapping in the common marmoset ( Callithrix jacchus ). Individual brains are sectioned into ~1700 20 µm sections using the tape transfer technique, permitting high quality 3D reconstruction of a series of histochemical stains (Nissl, myelin) interleaved with tracer labeled sections. Systematic in-vivo MRI of the individual animals facilitates injection placement into reference-atlas defined anatomical compartments. Further, by combining the resulting 3D volumes, containing informative cytoarchitectonic markers, with in-vivo and ex-vivo MRI, and using an integrated computational pipeline, we are able to accurately map individual brains into a common reference atlas despite the significant individual variation. This approach will facilitate the systematic assembly of a mesoscale connectivity matrix together with unprecedented 3D reconstructions of brain-wide projection patterns in a primate brain.
+Understanding the connectivity architecture of entire vertebrate brains is a fundamental but difficult task. Here we present an integrated neuro-histological pipeline as well as a grid-based tracer injection strategy for systematic mesoscale connectivity mapping in the common marmoset (Callithrix jacchus). Individual brains are sectioned into ~1700 20 µm sections using the tape transfer technique, permitting high quality 3D reconstruction of a series of histochemical stains (Nissl, myelin) interleaved with tracer labeled sections. Systematic in-vivo MRI of the individual animals facilitates injection placement into reference-atlas defined anatomical compartments. Further, by combining the resulting 3D volumes, containing informative cytoarchitectonic markers, with in-vivo and ex-vivo MRI, and using an integrated computational pipeline, we are able to accurately map individual brains into a common reference atlas despite the significant individual variation. This approach will facilitate the systematic assembly of a mesoscale connectivity matrix together with unprecedented 3D reconstructions of brain-wide projection patterns in a primate brain.
 
 ## Introduction
 
@@ -44,17 +44,96 @@ There has been an increase in the usage of the common marmoset (Callithrix jacch
 
 Marmosets are New World monkeys, in contrast with the Old World macaque monkeys which are the pre-eminent NHP models used in basic and pre-clinical neuroscience research. As depicted in Figure 1a, New World monkeys, together with Old World monkeys, apes and humans, form the simian primates (order Primates, infraorder Simiiformes). Simians diverged from prosimians such as lemurs and lorises approximately 85 million years ago (Mya). Among the simians, New World monkeys have evolved in isolation from Old World monkeys, apes and humans for at least 40 million years. Prima facie this seems to indicate a relative weakness in using marmosets as NHP models in contrast with the macaques. Nevertheless, a good case can be made for marmosets as NHP models of humans, despite the earlier evolutionary divergence.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40042/elife-40042-fig1-v2.jpg)
+
+**Figure 1.:** (a) Phylogenetic tree (Benton et al., 2009; dos Reis et al., 2014; dos Reis et al., 2012; Janecka et al., 2007; O'Leary et al., 2013; Mitchell and Leopold, 2015; Springer et al., 2011; Wilkinson et al., 2011) showing the ancestral history of extinct and extant primates, after divergence from the common ancestor with rodents (top right inset box) ca. 75 million years (Myr) ago. The bottom bar shows geological eras. Thickness of spindle shaped areas in the evolutionary tree indicate prosperity (estimated population and numbers of species) of the group along the history in extinct (gray) prosimian (red) and simian (blue) primates. Each bifurcation represents the species divergence, although the divergence time typically has a wide range and remains controversial. Primates diverged into platyrrhini, the New World Monkey, and catarrini, around 38.9–56.5 million years ago. Catarrini further evolved into Ape, including humans, and Old World Monkey as well as macaque monkeys 25.1–37.7 million years ago. Sketches of the brain in each species are shown on the right, next to their species name. The colored areas in the various brain illustrations indicate the primary visual area as green, somatosensory as purple, and auditory areas as red; each represents an extant primate (bottom right row) and rodent (top inset box) species’ body weight (first numbers in brackets) and brain weight (last numbers in brackets) sizes (Buckner and Krienen, 2013; Krubitzer and Dooley, 2013; Krubitzer and Seelke, 2012). Phylogenetic tree adapted from Masanaru Takai (Takai, 2002). (b) Fractional brain region volumes, and numbers of injection sites used in grid- based injection plans for marmoset (Woodward et al., 2018) and mouse (Allen institute for brain science, 2017). Bar plots show the number of grid-injection sites within the displayed compartment in each species, assuming a spacing between injection sites of ~1 mm isometric in mice, and ~2–3 mm isometric in marmosets.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40042/elife-40042-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Marmoset brain research articles increase 1980–2017 compared with mouse and macaque brain research listed on PubMed (www.ncbi.nlm.nih.gov/pubmed). Number of articles are plotted in logarithmic scale for results returned from searching the keywords of ‘mouse brain’, ‘macaque brain’, or ‘marmoset brain’.
+
 Marmosets exhibit more developed social behavior (Miller et al., 2016) and vocal communication (Marx, 2016) traits, thus social-vocal human traits (and corresponding dysfunctions) might be better modeled in marmosets than in macaques. Marmoset brains are smaller than macaque brains and are comparable in size to some rodents (cf. squirrels and capybara, both species of rodents, have brain volumes comparable to marmosets and macaques). However marmosets are phylogenetically closer to humans than rodents, and thus have more commonality in terms of brain architecture (proportionately larger and more differentiated higher order cortical areas, as opposed to primary cortical areas (Krubitzer and Dooley, 2013) (Figure 1).
 
 Following the BRAIN (Brain Research through Advancing Innovative Neurotechnologies) Initiative in the U.S. and the HBP (Human Brain Project) in Europe in 2013, Japan launched the Brain/MINDS project (Brain Mapping by Integrated Neurotechnologies of Disease Studies) with a focus on the common marmoset (Callithrix jacchus) as an NHP model (Okano and Mitra, 2015) (http://www.brainminds.jp/). As part of Brain/MINDS, a combined histological/computational pipeline was established at RIKEN to develop a mesoscopic whole-brain connectivity map in the marmoset. The corresponding methodology is described in this manuscript.
 
 Tract-tracing methods remain the gold standard for studying neural circuit structure at the whole brain level (Bakker et al., 2012). Previous brain-wide connectivity mapping for non-human primates have been based on literature curation and meta-analyses. A pioneering survey by Felleman and Van Essen, 1991 reviewed 52 studies, including both anterograde and retrograde tracing results, to generate a connectivity matrix of 33 brain regions in the visual system of macaque monkeys (Table 1). Building upon Felleman and Van Essen (1991), a more comprehensive database of macaque brain connectivity, CoCoMac (Collation of Connectivity data on the macaque brain, cocomac.g-node.org) (Bakker et al., 2012; Kötter, 2004; Stephan et al., 2001), surveyed over 400 tracing studies with ~3300 injections and established a connectivity matrix of 58 brain regions (Modha and Singh, 2010; Stephan, 2013) (Table 1). While the historical tracing studies mostly contain qualitative information, more recent studies have aimed at building a quantitative connectivity database of the macaque brain (Falchier et al., 2002; Markov et al., 2014; Markov et al., 2011) (core-nets.org; Table 1).
 
+**Table 1.**
+ Past and present summary of historical tract-tracing studies in macaque and marmoset monkeys.Three resources of macaque monkey brain connectivity are shown. Felleman and Van Essen (Felleman and Van Essen, 1991) and CoCoMac each surveyed a set of studies to generate the connectivity matrix (full reference list in Supplementary file 2). Note that CoCoMac is inclusive of the work collected in Felleman and Van Essen (Felleman and Van Essen, 1991). Around 235 injections lack tracer direction information. Markov et al. (2014) was a single study using only the retrograde tracer to generate the connectivity matrix as well as quantifying the connection strengths. We have surveyed 35 marmoset brain tracing studies that contain 428 tracer injections including both anterograde and retrograde tracers. A complete connectivity matrix is not yet available for the marmoset brain. To date, the most comprehensive marmoset brain connectivity resource available online (http://monash.marmoset.brainarchitecture.org) includes 143 retrograde tracing studies. As part of the current pipeline, we have placed over 188 tracer injections including both anterograde and retrograde tracers. For both macaque and marmoset brain injections, bidirectional tracer injections were double counted as one anterograde and one retrograde tracer injection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Data</th>
+      <th>Species</th>
+      <th>Injections</th>
+      <th>Anterograde tracer</th>
+      <th>Retrograde tracer</th>
+      <th>Connectivity matrix</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Journal papers</td>
+      <td rowspan="4">No whole-brain image data</td>
+      <td rowspan="3">Macaque</td>
+      <td>370</td>
+      <td>153</td>
+      <td>217</td>
+      <td>33 × 33</td>
+      <td>Felleman and Van Essen, 1991 (52 studies)</td>
+    </tr>
+    <tr>
+      <td>3279</td>
+      <td>1429</td>
+      <td>1873</td>
+      <td>58 × 58</td>
+      <td>CoCoMac (459 studies)</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>0</td>
+      <td>39</td>
+      <td>29 × 91</td>
+      <td>Markov et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Marmoset</td>
+      <td>428</td>
+      <td>93</td>
+      <td>395</td>
+      <td>-</td>
+      <td>35 studies (Bibliography in supplement)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Whole-brain image data</td>
+      <td>Nissl images overlaid with cell locations (Rosa Lab data set)</td>
+      <td rowspan="2">Marmoset</td>
+      <td>143</td>
+      <td>0</td>
+      <td>143</td>
+      <td>-</td>
+      <td>Online</td>
+    </tr>
+    <tr>
+      <td>This paper: Whole-brain set of cross-modal serial sections (Nissl,Myelin, IHC, Fluoro)+MRI</td>
+      <td>188</td>
+      <td>94</td>
+      <td>94</td>
+      <td>-</td>
+      <td>This paper</td>
+    </tr>
+  </tbody>
+</table>
+
 For the marmoset, an online database of >140 retrograde tracer injection studies in about 50 cortical areas is available online (http://monash.marmoset.brainarchitecture.org) (Majka et al., 2016). By surveying 35 tract tracing studies (Supplementary file 2) in marmosets since the 1970s, we have collected data from over 400 injections, but much of this knowledge cannot be easily integrated with current efforts given the use of older nomenclatures, and the lack of access to primary data. A full connectivity matrix is yet to be established (Table 1). Nevertheless existing knowledge about the marmoset visual, auditory, and motor systems indicate strong similarities between marmoset and macaque brain circuitry, suggesting a preserved brain connectivity plan across primates (Bakola et al., 2015; de la Mothe et al., 2012; Solomon and Rosa, 2014). Comparing two NHP brain architectures (marmoset, macaque) will help to better contextualize human brain circuit architecture.
 
 None of these earlier studies in NHPs have used a single, consistent methodology employing a unified experimental-computational workflow, dedicated to systematic mesoscale connectivity mapping. In addition, an automated throughput image analysis is required for the whole-brain circuit reconstruction and mapping (Hua et al., 2015). This became the goal of the pipeline described in this paper. Importantly, brain-wide data sets are already available for grid-based tracer mapping projects in the mouse. A corresponding data set generated using similar techniques will allow us to gain a more unified view of primate brain connectivity architecture, and also permit an unprecedented comparative analysis of mesoscale connectivity in rodents and primates.
 
-## The injection-grid approach to whole-brain mesoscale connectivity mapping
+### The injection-grid approach to whole-brain mesoscale connectivity mapping
 
 Mapping the brain-wide neural circuitry in large vertebrate brains remains one of the most important tasks in neuroscience, yet raises tremendous practical and theoretical challenges. The ideal data set would contain the position, morphology, synaptic connectivity together with transmitter/receptor identities at each synapse, and also spatial maps of the diffuse neuromodulatory transmitters and receptors of every neuron. This is clearly not achievable in practical terms. For example, EM based mapping of individual synaptic connectivity and morphology of every neuron remains impractical for a brain as large as the marmoset.
 
@@ -62,7 +141,7 @@ Even if comprehensive mapping was performed in one brain, there would remain the
 
 Within the broad approach, some questions need to be addressed: treatment of individual variation across brains, relation to classical neuroanatomical approaches based on atlas-parcellations, and technical sources of variation, being the difficulty in controlling the locations and sizes of injections, and most importantly the total number of injections. We briefly comment on these inter-related considerations here as they pertain to the design of our injection grid-plan. In the later discussion section, we present some analysis of the degree of individual variation in the data set gathered for this project, and considerations related to completing whole-brain coverage. Further information may be found in Appendix 9 and 10.
 
-## Planning the grid
+### Planning the grid
 
 Classical neuroanatomical reference atlases list hundreds of individual gray-matter regions or cell groups (including cortical regions and subcortical nuclei), separated by more or less well-defined boundaries. Within regions, continuous gradients may be present. These atlases were developed largely based on the spatial distributions of morphologies and chemo-architectures of the neuronal somata, and to a lesser extent on the connection architecture. As new information becomes available from modern techniques, these atlases are likely to change, also the atlases do not provide prima facie information about individual variation, as they are based on an individual brain (or more recently on averages across brains). It is important to take into account the accumulated knowledge represented by these atlases in planning a grid; on the other hand, the atlases themselves represent imperfect knowledge, and sampling brain-space on a regular grid could itself reveal the necessary meso-architecture.
 
@@ -70,7 +149,7 @@ We adopt a compromise, by starting from a roughly regular grid, working backward
 
 We inject each site with an anterograde and a retrograde tracer (in separate animals). To maximize utilization of animals we place four injections/animal, 2 anterograde and two retrograde. Our approach is conservative: better availability and utilization of colors in the tracers could permit more injections per animal. Notably, we are able to process significantly more injections per animal than is possible with single-color 2-photon light microscopy, which is important for a primate species such as the marmoset to minimize the number of animals used.
 
-## Individual variation
+### Individual variation
 
 Classical neuroanatomical studies may place multiple injections in separate animals at a single target to address biological variation. This is impractical for the current approach, it would require too many animals. Nevertheless, we achieve an effective N = 2 per long range projection when combining the results of anterograde and retrograde tracing. Additionally, we tailor injections to the individual variations in animals when using in-vivo MRI guidance to target specific sub-cortical nuclei and using landmarks in injecting cortical sites. Finally, results from different animals are mapped onto a common reference atlas using diffeomorphic mapping utilizing the cytoarchitectonic contrast present in the multimodal histological data gathered in the pipeline. In these ways the grid-approach addresses the issues of individual variation. An analysis of brain compartment size variations across animals, as well as of the injection-size variations, is presented in Appendix 10.
 
@@ -78,25 +157,33 @@ Classical neuroanatomical studies may place multiple injections in separate anim
 
 A high throughput neurohistological pipeline was established at the RIKEN Center for Brain Science, based on the pipeline developed for the MBA project (Pinskiy et al., 2015) at CSHL. The pipeline employed a customized tape transfer assisted cryo-sectioning technique to preserve the geometry of individual sections. Each brain was sectioned serially into a successive series of four 20 μm sections: a Nissl stained section, a silver (Gallyas) myelin stained section, a section stained (ABC-DAB) for the injected cholera toxin subunit B (CTB) tracer and an unstained section imaged using epifluorescence microscopy to visualize the results of fluorescent tracer injections. Three types of fluorescent neural tracers were injected into the brain to reveal the mesoscale neural connectivity. The four sets of sections: Nissl, myelin, CTB and fluorescent sections were processed and imaged separately, and later re-assembled computationally. A computational pipeline was established to perform high-throughput image processing. A common reference atlas (Hashikawa et al., 2015; Paxinos et al., 2012) was registered to each individually reconstructed brain series and the projection strengths were suitably quantified.
 
-## Experimental pipeline
+### Experimental pipeline
 
 All experimental procedures were approved by the Institutional Animal Care and Use Committee at RIKEN and a field work license from Monash University, and conducted in accordance with the Guidelines for Conducting Animal Experiments at RIKEN Center for Brain Science and the Australian Code of Practice for the Care and Use of Animals for Scientific Purposes. Female marmosets (Callithrix jacchus), 4 to 8 years old, 330 g - 440 g in weight, were acquired from the Japanese Central Institute for Experimental Animals.
 
-## In-vivo MRI
+#### In-vivo MRI
 
 Upon habituation, the marmosets promptly went through magnetic resonance (MR) imaging. MR scans were performed using a 9.4T BioSpec 94/30 US/R MRI scanner (Bruker, Biospin, Ettlingen, Germany) with actively shielded gradients that had a maximum strength of 660 mT/m. Several MRI protocols were carried out for each individual marmoset. T1 mapping and T2-weighted images (T2WI) were used in in-vivo MR imaging. More details of the scan protocol can be found in Appendix 1.
 
-## Neuronal tracer injections
+#### Neuronal tracer injections
 
 To conserve animals, four tracers were placed in the right hemisphere of each marmoset, including two anterograde tracers: AAV-TRE3-tdTomato (AAV-tdTOM) and AAV-TRE3-Clover (AAV-GFP), and two retrograde tracers: Fast Blue (FB) and CTB. Surgical procedures for tracer injections were adapted from the previously established protocols (Reser et al., 2009; Reser et al., 2013; Reser et al., 2017). Tracers were delivered at the injection sites using Nanoject II (Drummond, USA), with dosage controlled by Micro4 (WPI, USA). For cortical injections, each tracer was delivered with depths of 1200 µm, 800 µm, and 400 µm sequentially perpendicular to the cortical sheet, with equal volumes. The planning for tracer injections approximately followed a uniform 2×2×2 mm grid spacing, intended to cover the entire brain cortical and subcortical regions (Grange and Mitra, 2011) (Appendix 2). The current data set used to validate the method presented here includes 118 injections. At each injection site, one retrograde and one anterograde tracer was injected separately to cover the efferent and afferent projections of that site. Figure 2a,b shows currently covered injection sites.
 
-## Ex-vivo MRI and cryo-sectioning
+![Figure 2.](https://cdn.elifesciences.org/articles/40042/elife-40042-fig2-v2.jpg)
+
+**Figure 2.:** (a, b) Current successful injection sites using 2×2×2 mm grid spacing in the marmoset cortex in (a) 3D and (b) 2D dorsal view, in stereotaxic coordinates (Paxinos et al., 2012). (b) Current successful injection sites. Each tracer is represented with a different color of marker: blue: Fast Blue; green: AAV-GFP; red: AAV-tdTOM; brown: CTB. Two tracers, one anterograde and one retrograde, are injected at each site. (c–h) Sample coronal brain section images of four series. (c) A coronal section after Nissl staining is shown with increasing magnification. Around Area 3a (magnification box), six cortical layers and the white matter are clearly differentiable based on cell body density. (d) A coronal section of the left hemisphere after silver staining showing myelin. Around Visual area V4T (Middle Temporal) crescent; magnification box), layers I-VI can be clearly characterized based on the myelin fiber density. Heavy myelination can be seen in layer three and continues into layer 4–6 with clear inner and outer bands of Baillarger. (e) Partial coronal section after immunohistochemistry treatment for CTB. After injection into Area 10, CTB labeled neurons were found in the claustrum (magnification box). The arrows indicate CTB- labeled cells at 0.125 mm. (f–h) Coronal sections in different parts of the brain showing fluorescent tracers including (f) retrograde tracer Fast Blue (g) anterograde tracer AAV-GFP, and (h) anterograde tracer AAV-tdTOM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40042/elife-40042-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** We have obtained each coronal section in 0.46 µm per pixel with 20 µm section thickness. The mesoscale level image (high magnification on the right) shows clear projections in the thalamus with labeled cells/axons in representative subcortical regions.
+
+#### Ex-vivo MRI and cryo-sectioning
 
 After tracer injection and a 4 week incubation period, the marmoset brain was perfused with a 0.1M phosphate buffer (PB) flush solution followed by 4% paraformaldehyde (PFA) in 0.1M PB fixation solution. The same MR scan protocol for in-vivo MRI was used for ex-vivo Diffusion Tensor Imaging (DTI) scanning. Additional high-resolution (300 μm) T2-weighted images (T2WI) were carried out for ex-vivo MR imaging (Appendix 1). Following fixation, the brain was transferred to 0.1M PB to take an ex-vivo MRI. It was then immersed in 10% then 30% sucrose solution over a 48 hr period to safeguard against thermal damage. The brain was embedded in freezing agent (Neg-50, Thermo Scientific 6505 Richard-Allan Scientific) using a custom developed apparatus and a negative cast mold of the brain profile. The apparatus was submerged in an optimal cutting temperature compound to expedite the freezing process (Pinskiy et al., 2013). More details can be found in Appendix 3.
 
 Cryo-sectioning of the brain was performed using a Leica CM3050 S Cryostat in a humidity chamber set at 18°C and 80% humidity. The cryostat specimen temperature was set to −15 to −17°C while the chamber temperature was set to −24°C. This temperature differential was used to make certain the tissue was never in danger of being heated unnecessarily. Brains were cryo-sectioned coronally on a custom made cryostat stage using the tape transfer and UV exposure method (Pinskiy et al., 2015) (Appendix 4). Every four consecutive sections were separately transferred to four adjacent slides, to establish the four series of brain sections to be stained for different methods. Each section was 20 μm in thickness, hence the spacing between every two consecutive sections in the same series was 80 μm. The four slides were transferred and cured for 12 seconds(s) in a UV-LED station within the cryostat. All cured slides were placed inside a 4°C refrigerator for 24 hrs to allow thermal equilibrium.
 
-## Histological staining
+#### Histological staining
 
 Separate histological staining processes were performed on the different series of brain sections (Appendix 5). High-throughput Nissl staining of neuron somata was performed in an automated staining machine (Sakura Tissue-Tek Prisma, DRS-Prisma-J0S) (Figure 2c). The myelin staining technique used a modified ammoniacal silver stain originally developed by Gallyas (Gallyas, 1979). The present modification provided higher resolution of fiber details that could be used for myeloarchitecture identification. A representative magnified image of myelin staining in the V4 (middle temporal crescent) visual cortex is shown in Figure 2d. Using a modified protocol developed for the MBA project at CSHL, the staining of retrograde and anterograde CTB labels were successfully attained (Britto, 2000) (Figure 2e). Finally, retrograde fluorescent tracers revealed originating somata while the anterograde tracers revealed projecting axons from fluorescent imaging. Figure 2(f–h) shows simultaneous fluorescent tract tracing using AAV-GFP, AAV-tdTOM and FB within the same brain. More detailed high-magnification images can be found in Figure 2—figure supplement 1.
 
@@ -108,7 +195,7 @@ The pipeline adopted the Sakura Tissue-Tek Prisma system for high-throughput sta
 
 Including imaging, one full Nissl brain series can be completed in 6 days. The myelin series including imaging requires 6.4 days using a limited 60-slide staining rack. The CTB series took a total of 7.9 days to complete due to batch limitations (3.5 batches with 120 slides/batch in total). The time for completion for the fluorescent brain series was 8 days; the slide scanning time on the Nanozoomer used in the project is approximately twice the brightfield scanning time. Overall, the four separate series of one brain could completed in two weeks (a pipeline processing rate can be found in Appendix 8). The digitized brains are then passed onto the computational pipeline including atlas registration, cell and process detection and online presentation.
 
-## Computational pipeline
+### Computational pipeline
 
 All the prepared slides were scanned by series with a Nanozoomer 2.0 HT (Hamamatsu, Japan) using a 20x objective (0.46 μm/pixel in plane) at 12-bit depth and saved in an uncompressed RAW format. Nissl, myelin and CTB series were brightfield scanned. Fluorescence series were scanned using a tri-pass filter cube (FITC/TX-RED/DAPI) to acquire the 3 RGB color channels for each slide. A Lumen Dynamics X-Cite exacte light source was used to produce the excitation fluorescence.
 
@@ -132,7 +219,7 @@ The brain outline of Brain/MINDs atlas (Woodward et al., 2018) was applied to th
 
 Injection volume was estimated by measuring the tracer spread at the injection site. Automatic cell and process detection was applied to individual registered sections in order to compute a draft whole-brain connectivity matrix. As an integral part of the computational pipeline, a data portal was developed to allow for viewing and interpreting high-resolution images online (http://marmoset.brainarchitecture.org). By incorporating an Openlayer 3.0 image server with a custom image viewer, the data portal allows fully interactive zoom and pan, supports online adjustment of RGB dynamic range and contrast, as well as gamma adjustment (Figure 4). The data portal also provides visualization of cell detection results and an interactive tool for injection volume measurement.
 
-## Successful re-assembly of 3D volumes
+#### Successful re-assembly of 3D volumes
 
 In order to evaluate the quality of the image registration pipeline, we applied computational approaches to separately register series acquired for individual data modalities into separate volumes. Both high-quality and low-quality section images with staining issues, image variation, or artefacts were considered in the process. Adoption of the tape transfer method allowed us to maintain the geometry of the brain sections in the high-quality 20 μm section images. This allowed successful section-to-section (2D) alignment using only rigid-body transformations. Poor-quality sections such as sections with folding, tears, artefacts and discoloration missed from the previous QC stage were selected by visual inspection and excluded from the 2D alignment step. Less than one percent of total sections were excluded. Figure 6 (left) shows one marmoset brain with different staining procedures in coronal, sagittal and transverse planes after image reconstruction. It also shows the results of how the geometry of the brain has been maintained in each series.
 
@@ -140,7 +227,7 @@ In order to evaluate the quality of the image registration pipeline, we applied 
 
 **Figure 6.:** (left) Views of one marmoset brain after each experimental protocol. (a) in-vivo MRI (b) ex-vivo MRI (c) CTB staining (d) myelin staining (e) Nissl staining (f) fluorescence imaging. Coronal, sagittal and transverse planes at the same (MRI) or consecutive sections (staining series) are shown with 3D registration and reconstruction. (middle) A 3D visualization of the fluorescent tracer projection. Simultaneous anterograde (red, green) and retrograde (blue) tracing reveals a reciprocal connection between the dorsal medial visual area (injection site) and the thalamus (anterograde projection and retrograde cell labeled sites) especially lateral posterior nucleus and lateral pulvinar. The connectivity can be observed with this 3D visualization which shows the pathway of tracers in through the brain volume. (right) Comparison of MRI-guided reconstruction with unguided reconstruction. I: the target Nissl stack reconstruction by unguided piecewise neighbor-to-neighbor alignment. II: the MRI-guided reconstruction. III: same- subject T2-weighted MRI.
 
-## Atlas registration
+#### Atlas registration
 
 Using external references such as the same-subject ex-vivo MRI or the population-typical reference atlas (Woodward et al., 2018), we aimed to reconstruct the true shape of the subject brain and to avoid the classical curvature recoverability problem of sectioned objects. This atlas-informed reconstruction (Lee et al., 2018) improved reconstruction accuracy compared to the atlas-uninformed neighbor-to-neighbor method, as well as reduced the deformable metric cost. The impact of the ex-vivo MRI constraint on the 3D reconstruction is shown in Figure 6 (right). A visible distortion is present in the MRI-unguided reconstruction. The degree of shrinkage is 7% from in- to ex-vivo MRI and 1% from ex-vivo MRI to histology. This distortion is corrected by a MRI-guided method using a reference atlas. The MRI-constrained alignment of the Nissl sections produces a Nissl volume which closely resembles the convex hull of the same-subject MRI, leading to accurate parcellation of the brains in question.
 
@@ -148,9 +235,13 @@ Using external references such as the same-subject ex-vivo MRI or the population
 
 Brain volumes generated by the combined pipeline were further subjected to automated cross-modal registration and atlas segmentation, to obtain a regional connectivity matrix.
 
-## Connectivity mapping
+### Connectivity mapping
 
 The registration process permitted brain surface reconstruction (Video 1), 3D visualizations of projections, and virtual cuts in other planes of section than the original coronal sections (Figure 6; right). After segmentation and registration, we derived quantitative values of tracer signals within each region. We developed an image processing method for detecting axonal and dendritic fragments in images, and applied it to each high resolution section (0.46 μm) to segment the anterograde projections. The segmented pixels were appropriately weighted to create an isotropic 3D summary of the projections (Markov et al., 2014). We developed an automatic cell detection method (Pahariya et al., 2018) to segment somata labeled by the retrograde label Fast Blue throughout the entire brain. Injection sites were separated out from the rest of the brain. The projection strength between each target and source region was quantified as the fractional number of voxels containing tracer labels.
+
+![Video 1.](https://cdn.elifesciences.org/articles/40042/elife-40042-video1.mp4.jpg)
+
+**Video 1.:** A brain fully reconstructed using MRI guided registration with process and cell detection. A clear pathway is seen from the tracer traveling from region to region in this 3d visualization of projections. Virtual cuts in planes of sections other than the original coronal sections are also shown.
 
 The registration process together with process and cell detection methods allowed us to obtain intermediate resolution, annotated images for each tracer and to review the atlas parcellation. Figure 7 shows the result of three fluorescent tracer injections in the same animal and their origin/projections, resulting in one column and two rows in the putative connectivity matrix. In this example, Fast Blue, AAV-GFP and AAV-TdTOM were injected in V6, V1, and V6 visual cortex respectively. Automatic process detection identified projection targets from V1 to various regions, including the most prominent projections detected in V5 and dorsal lateral geniculate nucleus (DLG). Projection targets from V6 included the lateral pulvinar (LPul) and medial pulvinar (MPul) among other targets. Automatic cell detection for the Fast Blue tracer identified the regions projecting to V6 including prominent projections from A6DC, A31, and inferior pulvinar (IPul).
 
@@ -164,24 +255,24 @@ We have described a high throughput, standardized pipeline integrating experimen
 
 It is important to compare with other microscopic methods that have become established in recent years for light-microscope based anatomy, including serial block-face two photon scanning microscopy (Denk and Horstmann, 2004; Osten and Margrie, 2013; Svoboda and Yasuda, 2006) and light sheet microscopy (Glaser et al., 2018; Nikon, 2018), as well as knife-edge scanning microscopy (Mayerich et al., 2008). While these methods have important advantages, particularly the reduced need for section-to-section registration to produce the initial 3D volumes for further analysis, the classical methods have the important advantage of carrying through conventional histochemistry without major protocol alterations, producing long-lasting stains and precipitates that can be imaged using brightfield microscopy. Classical Nissl and myelin stains remain the gold standard for cytoarchitectonic texture-based determination of precise brain region location and delineation. These series are produced routinely with ease in the pipeline. The thin physical sections can be imaged rapidly in whole-slide imaging scanners and at relatively high numerical aperture (resolution in light sheet microscopy is comparatively limited due to reduced NA in the bulk of the sample).
 
-## Individual variation in brain anatomy in the marmoset
+### Individual variation in brain anatomy in the marmoset
 
 Previous studies aimed at generating population based atlases on non-human primates (Black et al., 2001b; Black et al., 2001b; Feng et al., 2017; Hikishima et al., 2011; Quallo et al., 2010) have focused on mapping individual brains to a common mean template. Individual variations were addressed in terms of variation in stereotaxic coordinates of major landmarks such as sulci (Black et al., 2001a; Black et al., 2001b; Hikishima et al., 2011). A few studies have explicitly reported variations in brain sizes (Hikishima et al., 2011) but we did not find an analysis of variations of individual regions, or co-variations across regions.
 
 The data gathered in the project permits an a-posteriori analysis of individual variations in brain anatomy and cytoarchitecture. While a comprehensive analysis has to be left for a future study using this data, we summarize a few observations based on a partial analysis. Within a sample of 26 cases, the whole brain volume had a median of 8222.5 mm3 with a median absolute deviation (MAD) of 319.4 mm3. In comparison to the Paxinos/Hasikawa (Brain/MINDS) template (Hashikawa et al., 2015; Hikishima et al., 2011; Woodward et al., 2018), our animals were older and mostly heavier than the template brain animal. Yet the brain sizes were similar to the template brain. We did not find a significant relationship between whole brain volume and age or body weight (see Appendix 10) within our data set. Nevertheless, some individual compartment sizes significantly departed from the template brain (e.g. the Hippocampal formation showed a consistently smaller size), indicating that the template brain may not be representative of a population average. Quantitative analysis of the covariation of cytoarchitectonic structure across the whole marmoset brain, in a significantly sized sample, is possible with the data gathered in the current study and will be carried out in the near future. We expect that the reference atlas may need to be revised based on the results of such a study.
 
-## Injection size variations and localization within compartments
+### Injection size variations and localization within compartments
 
 Based on a preliminary analysis, 73% of the injections placed are localized within atlas-determined anatomical compartments, whereas 27% showed some spread across boundaries. Manual analysis of a subset of 15 injections showed diameters in the range 0.8 mm-2.5mm, indicating rough correspondence with the desired grid spacing. Among these 15 injections, six had tracer spread beyond the compartment boundary. On average, for these six injections, about 68% of the volume was restrained within the same region as the injection center, while about 32% of the volume leaked outside to adjacent regions.
 
-## Combining injections with those from previous studies to increase sample size
+### Combining injections with those from previous studies to increase sample size
 
 We were able to combine subsets of the injections placed in this study with injections in previous studies, as well as data gathered in collaborating laboratories, to generate and test specific hypotheses, indicating the utility of the data gathered in the project (Lee et al., 2018; Majka et al., 2018). In addition, analysis of injection centers show proximity/overlap of injections from a previous data set from the Rosa laboratory for which 3D spatial information is available (Appendix 10). This should permit virtually increasing N for this project.
 
-## Completion of Brain-wide coverage in the marmoset
+### Completion of Brain-wide coverage in the marmoset
 
 An estimate of the total number of injections that will provide brain-wide coverage, in the hybrid grid-approach adopted in the paper depends on the lower cutoff placed on atlas compartments to be injected. To obtain an upper bound, we assume a cutoff of 0.8 mm^3 (corresponding to the smallest injections we placed so far), which corresponds to 356 sites (712 injections). So far, 190 injections have been placed in 49 brains. To cover the rest of the brain, 264 more injections would be placed in the cortex, and 258 injections in subcortical regions and cerebellum. This would require 131 brains. The current pipeline has achieved a maximum capacity of 2 brains/month. At this rate, a complete marmoset mesoscale connectivity map would be available by 2024. However, we expect that the process can be sped up considerably by multiple groups working together in a collaborative manner using similar methods. Such a project would necessarily need to have international scope and can be expected to be transformative for our understanding of primate brain architecture.
 
-## Larger brains
+### Larger brains
 
 The pipeline described here is for 1 × 3 inch glass slides that fortunately are large enough to accommodate marmoset brains in coronal section. The pipeline can be generalized in the future to 2 × 3 inch slides, which can handle larger brains (such as that of macaque), with a few technical innovations, importantly in stainers/coverslippers for the larger format slides. This should allow the easy and economical neurohistological processing of larger sized vertebrate brains, opening up the possibilities of applying modern computational neuroanatomical techniques to a significantly broader taxonomic range of species, allowing for the study of comparative neuroanatomical questions with unprecedented computational depth.

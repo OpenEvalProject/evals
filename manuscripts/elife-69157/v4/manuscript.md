@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/03f9nc143 Skolkovo Institute of Science and Technology Moscow Russian Federation
-2. https://ror.org/03r493e52 Department of Genomics of Adaptive Immunity, Shemyakin-Ovchinnikov Institute of Bioorganic Chemistry Moscow Russian Federation
-3. https://ror.org/02h8dsx08 Dmitry Rogachev National Medical Research Center of Pediatric Hematology, Oncology and Immunology Moscow Russian Federation
-4. https://ror.org/018159086 Pirogov Russian National Research Medical University Moscow Russian Federation
+1. Skolkovo Institute of Science and Technology Moscow Russian Federation ([ROR:03f9nc143](https://ror.org/03f9nc143))
+2. Department of Genomics of Adaptive Immunity, Shemyakin-Ovchinnikov Institute of Bioorganic Chemistry Moscow Russian Federation ([ROR:03r493e52](https://ror.org/03r493e52))
+3. Dmitry Rogachev National Medical Research Center of Pediatric Hematology, Oncology and Immunology Moscow Russian Federation ([ROR:02h8dsx08](https://ror.org/02h8dsx08))
+4. Pirogov Russian National Research Medical University Moscow Russian Federation ([ROR:018159086](https://ror.org/018159086))
 5. Abu Dhabi Stem Cells Center Abu Dhabi United Arab Emirates
 
 † Corresponding author
 
 ## Abstract
 
-High-throughput sequencing of adaptive immune receptor repertoires is a valuable tool for receiving insights in adaptive immunity studies. Several powerful TCR/BCR repertoire reconstruction and analysis methods have been developed in the past decade. However, detecting and correcting the discrepancy between real and experimentally observed lymphocyte clone frequencies are still challenging. Here, we discovered a hallmark anomaly in the ratio between read count and clone count-based frequencies of non-functional clonotypes in multiplex PCR-based immune repertoires. Calculating this anomaly, we formulated a quantitative measure of V- and J-genes frequency bias driven by multiplex PCR during library preparation called Over Amplification Rate (OAR). Based on the OAR concept, we developed an original software for multiplex PCR-specific bias evaluation and correction named iROAR: immune Repertoire Over Amplification Removal ( https://github.com/smiranast/iROAR ). The iROAR algorithm was successfully tested on previously published TCR repertoires obtained using both 5’ RACE (Rapid Amplification of cDNA Ends)-based and multiplex PCR-based approaches and compared with a biological spike-in-based method for PCR bias evaluation. The developed approach can increase the accuracy and consistency of repertoires reconstructed by different methods making them more applicable for comparative analysis.
+High-throughput sequencing of adaptive immune receptor repertoires is a valuable tool for receiving insights in adaptive immunity studies. Several powerful TCR/BCR repertoire reconstruction and analysis methods have been developed in the past decade. However, detecting and correcting the discrepancy between real and experimentally observed lymphocyte clone frequencies are still challenging. Here, we discovered a hallmark anomaly in the ratio between read count and clone count-based frequencies of non-functional clonotypes in multiplex PCR-based immune repertoires. Calculating this anomaly, we formulated a quantitative measure of V- and J-genes frequency bias driven by multiplex PCR during library preparation called Over Amplification Rate (OAR). Based on the OAR concept, we developed an original software for multiplex PCR-specific bias evaluation and correction named iROAR: immune Repertoire Over Amplification Removal (https://github.com/smiranast/iROAR). The iROAR algorithm was successfully tested on previously published TCR repertoires obtained using both 5’ RACE (Rapid Amplification of cDNA Ends)-based and multiplex PCR-based approaches and compared with a biological spike-in-based method for PCR bias evaluation. The developed approach can increase the accuracy and consistency of repertoires reconstructed by different methods making them more applicable for comparative analysis.
 
 ## Introduction
 
@@ -33,25 +33,43 @@ High-throughput sequencing (HTS) of adaptive immune receptor repertoires is wide
 
 ## Results
 
-## The rationale for the Over Amplification Rate measure
+### The rationale for the Over Amplification Rate measure
 
 Since out-of-frame TCR/BCR rearrangements do not form a functional receptor, they are not subjected to any specific clonal expansions and selection (Murugan et al., 2012). Being a passenger genomic variation, they change their initial (recombinational) clonal frequencies just randomly following the frequency changes of the second functional (in-frame) TCR/BCR allele present in the same T/B cell clone. According to the TCR/BCR loci rearrangement mechanism, the formation of in-frame and out-of-frame allele combinations in the same cell is also a stochastic and independent process in terms of V- and J-genes frequency. It leads to the conclusion that V- and J-gene frequencies among out-of-frame rearrangements must be sufficiently stable and must be equal to the initial recombination frequencies despite repertoire changes caused by various immune challenges (Figure 1). Thus, reproducible deviation of out-of-frame V- and J-gene frequencies (for the same multiplex PCR primer set) from the initial recombinational frequencies observed in the sequenced repertoire dataset is a result of artificial aberration caused by PCR amplification rather than immune repertoire evolution. Thus out-of-frame clonotypes can be considered a natural calibrator that can be used to measure amplification bias and quantitatively correct immune repertoire data.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig1-v4.jpg)
 
-**Figure 1.:** Out-of-frame clonotypes for frequencies calculation were extracted from low-biased 5’ Rapid Amplification of cDNA Ends (RACE) TRB repertoires of PBMC (peripheral blood mononuclear cells) samples obtained in two replicates for six time points: 0, 5, 10, 15, 21, and 45 d after YFV (Yellow Fever Vaccine) injection (donor M1, SRA accession number PRJNA577794 Minervina et al., 2020).Figure 1—source data 1.TRB V and J frequencies for plots in Figure 1.
+**Figure 1.:** Out-of-frame clonotypes for frequencies calculation were extracted from low-biased 5’ Rapid Amplification of cDNA Ends (RACE) TRB repertoires of PBMC (peripheral blood mononuclear cells) samples obtained in two replicates for six time points: 0, 5, 10, 15, 21, and 45 d after YFV (Yellow Fever Vaccine) injection (donor M1, SRA accession number PRJNA577794 Minervina et al., 2020).
 
-Formulating this observation, we developed the Over Amplification Rate (OAR) measure, which we define as a ratio of the observed and expected frequency of a V- (OAR[Vi]) or a J-gene (OAR[Ji]) among identified out-of-frame rearrangements. Observed frequency represents a value calculated as read counts (RCs) for each V- and J-gene (related to out-of-frames) divided by the sum of all out-of-frame clones RC in the obtained repertoire sequencing dataset. The expected frequency is a value before amplification calculated as a number of unique out-of-frame clones (UCN) having each V- or J-gene divided by the total number of unique out-of-frame clones in the repertoire. At the final stage, each OAR is normalized by dividing by the average OAR.OARVi= RC(Vi)∑1NRC(Vi)UCN(Vi)∑1NUCN(Vi)OAR(Ji)= RC(Ji)∑1NRC(Ji)UCN(Ji)∑1NUCN(Ji)
+Formulating this observation, we developed the Over Amplification Rate (OAR) measure, which we define as a ratio of the observed and expected frequency of a V- (OAR[Vi]) or a J-gene (OAR[Ji]) among identified out-of-frame rearrangements. Observed frequency represents a value calculated as read counts (RCs) for each V- and J-gene (related to out-of-frames) divided by the sum of all out-of-frame clones RC in the obtained repertoire sequencing dataset. The expected frequency is a value before amplification calculated as a number of unique out-of-frame clones (UCN) having each V- or J-gene divided by the total number of unique out-of-frame clones in the repertoire. At the final stage, each OAR is normalized by dividing by the average OAR.
+
+$$
+OARVi= \frac{\frac{RC(Vi)}{\sum1NRC(Vi)}}{\frac{UCN(Vi)}{\sum1NUCN(Vi)}}
+$$
+
+
+
+$$
+OAR(Ji)= \frac{\frac{RC(Ji)}{\sum1NRC(Ji)}}{\frac{UCN(Ji)}{\sum1NUCN(Ji)}}
+$$
 
 OAR value tends to be equal to 1 under ideal conditions (low or no amplification bias). It deviates from 1 as amplification bias increases in line: 5’-RACE with a single universal primer pair, one-side multiplex PCR (VMPlex), and two-side multiplex PCR (VJMPlex; Figure 2).
 
-## The versatility of OAR measure
+![Figure 2.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig2-v4.jpg)
+
+**Figure 2.:** (a) Comparison of Over Amplification Rate (OAR) values variances for TRB repertoires obtained with 5’-Rapid Amplification of cDNA Ends (RACE), one-side multiplex (VMPlex), and two-side multiplex (VJMPlex) PCR. The Levene’s test was performed to compare OAR variances: ****p<0.0001 and ***p<0.001. The bar and whiskers indicate a mean and SD. (b) Average (bold lines) OAR values for TRBV and TRBJ genes in repertoires obtained with 5’-RACE, one-side multiplex (VMPlex), and two-side multiplex (VJMPlex) PCR. Pale lines illustrate OARs of individual repertoires. Datasets: six repertoires for RACE from PRJNA847436 (Sycheva et al., 2022), six repertoires for VMPlex from PRJNA427746 (Ma et al., 2018), and six repertoires for VJMPlex from 27483#.XpCuQ1MzZQI (zenodo.org; Weinberger et al., 2015).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** V- and J-gene frequencies among unique out-of-frame rearrangements calculated using biased (two-side multiplex, empty circles) and low-biased (Rapid Amplification of cDNA Ends [RACE], filled circles) are compared to average population frequencies (violin plot). Significantly biased V- and J-genes are highlighted pink. Paired (the same starting RNA samples) two-side multiplex and RACE data: SRA accession number PRJNA309577, population frequencies were calculated using a series of RACE TCR and single-cell TCRseq data (see Supplementary file 1).
+
+### The versatility of OAR measure
 
 OAR measurement is a universal approach and can be applied to different types of immune repertoire data. To demonstrate this versatility, we calculated OAR values for low-biased (5’ RACE) repertoires of different adaptive immune receptor chains obtained from bulk human PBMC: TCR alpha (TRA), TCR beta (TRB), and BCR heavy chains (Figure 3a). The results show that OARs for both TCR and BCR repertoires obtained by 5’ RACE are close to 1 and stay within the range of 0.5–2, which is much narrower than OAR for multiplex PCR-based repertoires (see main text Figure 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig3-v4.jpg)
 
-**Figure 3.:** (a) Distribution of Over Amplification Rates of V- and J-genes in Rapid Amplification of cDNA Ends (RACE)-based repertoires of TCR and BCR (the empty dots represent average OARs among TCR repertoires: SRA accession numbers: PRJNA577794, PRJNA316572, PRJEB27352, and BCR repertoires: SRA accession number: PRJNA297771 and PRJNA494572). (b) Over Amplification Rates of V- and J-genes of TCR alpha chains in RACE-based repertoires of different types of T-cells (donors M1 and P30, 45 d after booster vaccination, SRA accession number PRJNA577794; Minervina et al., 2020). The bar and whiskers indicate a mean and SD.Figure 3—source data 1.Over Amplification Rate (OAR) values used for the plots in Figure 3.
+**Figure 3.:** (a) Distribution of Over Amplification Rates of V- and J-genes in Rapid Amplification of cDNA Ends (RACE)-based repertoires of TCR and BCR (the empty dots represent average OARs among TCR repertoires: SRA accession numbers: PRJNA577794, PRJNA316572, PRJEB27352, and BCR repertoires: SRA accession number: PRJNA297771 and PRJNA494572). (b) Over Amplification Rates of V- and J-genes of TCR alpha chains in RACE-based repertoires of different types of T-cells (donors M1 and P30, 45 d after booster vaccination, SRA accession number PRJNA577794; Minervina et al., 2020). The bar and whiskers indicate a mean and SD.
 
 We also analyzed OARs for low-biased (5’ RACE) TCR repertoires of different T cell subpopulations, including T-helper, cytotoxic, central memory, effector memory, and naïve T cells. As shown in Figure 3, the OAR values demonstrate much less differences between analyzed T cell types then between RACE and multiplex PCR and are close enough to 1 similarly to the repertoire of bulk T cell mix obtained from PBMC.
 
@@ -59,7 +77,7 @@ Herewith, the variance of IGHV’s OARs compared TCRs’ and the variance of TCR
 
 Despite it, our results demonstrate that OAR is a sufficiently universal measure of repertoires and can be applied to most adaptive immune receptors and cell types.
 
-## Factors affecting OAR measure accuracy
+### Factors affecting OAR measure accuracy
 
 In the case of insufficient sequencing coverage, high-PCR bias can lead to the dramatic loss of clones and thus an incorrect measurement of V- and J-genes frequencies. In this instance, for the majority of V- and J-genes, the population frequencies can approximate the real frequencies better than multiplex repertoire-based ones (Figure 2—figure supplement 1). If upon comparison samples’ UCN-based frequencies significantly differ from the average frequencies calculated for the population (i.e. exceeds 99% CI), OAR calculation should be based on the latter.
 
@@ -67,51 +85,115 @@ Also, the balance of V- and J-genes frequencies can be disrupted by accidentally
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig4-v4.jpg)
 
-**Figure 4.:** (a) Impact of highly proliferated top non-functional clonotype on OAR calculation accuracy in low-biased Rapid Amplification of cDNA Ends (RACE)-based TRB repertoire (Data: SRR19594184). (b) Impact of sequencing depth on OARs calculation error. (c) PCR bias independent changes of TRB V-genes OARs as a function of sequencing depth. Data: two-sided multiplex-based TRB repertoire (Data: RACE - SRR3129976, VJMPlex – SRR3129972).Figure 4—source data 1.Over Amplification Rate (OAR) values used for the plots in Figure 4.
+**Figure 4.:** (a) Impact of highly proliferated top non-functional clonotype on OAR calculation accuracy in low-biased Rapid Amplification of cDNA Ends (RACE)-based TRB repertoire (Data: SRR19594184). (b) Impact of sequencing depth on OARs calculation error. (c) PCR bias independent changes of TRB V-genes OARs as a function of sequencing depth. Data: two-sided multiplex-based TRB repertoire (Data: RACE - SRR3129976, VJMPlex – SRR3129972).
 
 Another aspect impacting the accuracy of OAR calculation is the low-sequencing coverage of the TCR/BCR repertoire. The ratio of total RCs and the sum of unique clone counts can affect OAR value despite PCR bias solely because of the mathematical properties of the OAR formula. In the extreme case, the OAR value (OAR = 1) for V- and J-genes represented in a single out-of-frame clone with only one read will not reflect the real amplification bias. To address this issue, we analyzed the OAR calculation error as a function of the number of reads per clone used for the OARs evaluation (Figure 4b). For this purpose, we performed a serial down-sampling of TCR datasets generated by RACE and two-side multiplex PCR and calculated OAR measurement error for each dataset portion. OAR calculated for the entire dataset was taken as a benchmark. The result shows that 1.8 (for MPlex) and 2.5 (for RACE) reads per out-of-frame clonotype are a minimal sufficient sequencing coverage to get adequate OAR values with an acceptable error rate of ~10%.
 
 It is also important to note that errors in nucleotide sequences occurring during library preparation and sequencing could lead to an artificial increase in both in-frame and out-of-frame clone diversity. Single nucleotide substitutions generate artificial clones as a branch of real most abundant clones inside of each in-frame and out-of-frame group independently. Single nucleotide indels lead to cross-generation artificial clones between groups: real in-frame clones generate false out-of-frame clones and vice versa. Artificial clones compromise the accuracy of both repertoire itself and OAR value. To eliminate such clones generated by single-nucleotide substitutions, we filtered them out by the VDJTOOLS software (see Methods section). To eliminate artificial clones produced by indels, we searched for in-frame and out-of-frame clone pairs which differ by one indel (Levenshtein distance = 1). If their ratio is less than 1:500, the smaller clone in pair is discarded, and its count is added to the count of the larger clone (this procedure guarantees to discard most sequencing errors present in 1 per 1000 nucleotides average).
 
-## OAR-index
+### OAR-index
 
-To estimate the value of immune repertoire structure disruption by amplification bias, we proposed the OAR-index, which represents the mean square deviation of OARs for each V- and J-gene from the value characteristic for repertoire with no bias (OAR = 1). OAR-index is directly proportional to the amplification bias and thus can be used for rapid estimation and comparison of immune repertoire bias. The less OAR-index is, the less PCR bias is with an ideally unbiased repertoire having OAR-index=0.OAR-index= ∑0n(OARi-1)2n2
+To estimate the value of immune repertoire structure disruption by amplification bias, we proposed the OAR-index, which represents the mean square deviation of OARs for each V- and J-gene from the value characteristic for repertoire with no bias (OAR = 1). OAR-index is directly proportional to the amplification bias and thus can be used for rapid estimation and comparison of immune repertoire bias. The less OAR-index is, the less PCR bias is with an ideally unbiased repertoire having OAR-index=0.
 
-## Using OAR for the removal of amplification bias
+$$
+OAR-index= \sqrt[2]{\frac{\sum0n(OARi-1)^{2}}{n}}
+$$
+
+### Using OAR for the removal of amplification bias
 
 Normalization coefficients for each VJ combination are estimated by multiplication of corresponding V- and J-gene OARs for two-side multiplex and V-gene OAR for one-side multiplex (Figure 2a). The corrected RC for each clonotype with the particular V-J gene combination is obtained simply by dividing the observed RC by the corresponding normalization coefficient. OAR of V- and J-genes could be co-dependent, which can be a reason for overcorrection. To avoid this issue, the procedure can be recursively repeated with a modified normalization coefficient defined as described coefficient raised to the power of a number in the range from 0 to 1 (parameter ‘mt’). The corrected RCs are used to estimate the real percentage of each clonotype in the repertoire. However, the all multiplex-based repertoires analyzed in actual study required just one iteration with mt = 1. A detailed flowchart of the OAR-based amplification bias correction algorithm named iROAR is shown in Figure 5a.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig5-v4.jpg)
 
-**Figure 5.:** (a) Flowchart of iROAR (immune Repertoire Over Amplification Removal) algorithm. UCF – Frequency calculated using unique clones counts (denominator of Over Amplification Rate [OAR]), pUCF – population UCF, RC – read count, RCn – normalized RC, RCo – observed RC, and mt – the number in the range from 0 to 1 for the iterative procedure. (b) Clone frequencies in the low biased 5’-Rapid Amplification of cDNA Ends (RACE)-based repertoire (ENA database, accession number ERR2869430) vs. the same repertoire with introduced artificial bias: before and after iROAR processing. (c) Out-of-frame (non-functional) clone frequencies in low biased 5’-RACE-based repertoire vs. two-side multiplex (VJMPlex)-based repertoire obtained for the same RNA sample (SRA database, accession numbers SRR3129976 and SRR3129972): before and after iROAR processing. (d) In-frame (functional) clone frequencies in low biased 5’-RACE-based repertoire vs. two-side multiplex (VJMPlex)-based repertoire obtained for the same RNA sample: before and after iROAR processing. SRA database, accession numbers SRR3129976 and SRR3129970. R2 is the squared Pearson correlation coefficient. iROAR was applied only for biased repertoires: artificially biased RACE and VJMPlex. (e) OARV and OARJ of test 5’-RACE-based TRB repertoire (b) before artificial bias introduction (green dots and line), biased one (red dots and line) and corrected one by iROAR (blue dots and line).Figure 5—source data 1.Clonal frequencies used for the plots in Figure 5.
+**Figure 5.:** (a) Flowchart of iROAR (immune Repertoire Over Amplification Removal) algorithm. UCF – Frequency calculated using unique clones counts (denominator of Over Amplification Rate [OAR]), pUCF – population UCF, RC – read count, RCn – normalized RC, RCo – observed RC, and mt – the number in the range from 0 to 1 for the iterative procedure. (b) Clone frequencies in the low biased 5’-Rapid Amplification of cDNA Ends (RACE)-based repertoire (ENA database, accession number ERR2869430) vs. the same repertoire with introduced artificial bias: before and after iROAR processing. (c) Out-of-frame (non-functional) clone frequencies in low biased 5’-RACE-based repertoire vs. two-side multiplex (VJMPlex)-based repertoire obtained for the same RNA sample (SRA database, accession numbers SRR3129976 and SRR3129972): before and after iROAR processing. (d) In-frame (functional) clone frequencies in low biased 5’-RACE-based repertoire vs. two-side multiplex (VJMPlex)-based repertoire obtained for the same RNA sample: before and after iROAR processing. SRA database, accession numbers SRR3129976 and SRR3129970. R2 is the squared Pearson correlation coefficient. iROAR was applied only for biased repertoires: artificially biased RACE and VJMPlex. (e) OARV and OARJ of test 5’-RACE-based TRB repertoire (b) before artificial bias introduction (green dots and line), biased one (red dots and line) and corrected one by iROAR (blue dots and line).
 
-## OAR-based approach validation
+### OAR-based approach validation
 
 The validation of OAR-based amplification bias correction was performed on the TRB dataset with in silico introduced bias generated from real (experimental) low-biased (5’-RACE) repertoire (Figure 5b). After correction, the OAR-index indicating general repertoire bias expectedly decreased from 1.81 to 0.76. Interestingly, the OAR independent measure R2 value of in silico biased and original repertoire correlation raised from 0.5350 to 0.8915, confirming the substantial reduction of in silico introduced quantitative bias. Afterward, we tested our approach on real paired experimental datasets obtained from the same RNA sample by two different method types: 5’-RACE and multiplex PCR (Barennes et al., 2020; Liu et al., 2016; Figure 5c–d, Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig6-v4.jpg)
 
-**Figure 6.:** (a) Pearson correlation coefficient; (b) R2 measure; (c) Morisita-Horn similarity index. **** p<0.0001 (two-tailed Wilcoxon matched-pairs signed rank test, CI = 0.95). Dataset: PRJNA548335 three different RACE (RACE-2, RACE-3, and RACE-4 in six replicates each) protocols vs. RNA-based MPlex (Multiplex-3) protocol for Donor1 and Donor2 (100 ng RNA input): total 36 points; PRJNA309577 (one RACE protocol vs. one MPlex protocol) for Donors S01 (four MPlex replicates vs. two RACE replicates), S02 (two MPlex replicates vs. four RACE replicates), and donor S03 (one MPlex replicate vs. one RACE replicate): total 17 points.Figure 6—source data 1.Pearson R, R2, and Morisita-Horn index values used for the plots in Figure 6.
+**Figure 6.:** (a) Pearson correlation coefficient; (b) R2 measure; (c) Morisita-Horn similarity index. **** p<0.0001 (two-tailed Wilcoxon matched-pairs signed rank test, CI = 0.95). Dataset: PRJNA548335 three different RACE (RACE-2, RACE-3, and RACE-4 in six replicates each) protocols vs. RNA-based MPlex (Multiplex-3) protocol for Donor1 and Donor2 (100 ng RNA input): total 36 points; PRJNA309577 (one RACE protocol vs. one MPlex protocol) for Donors S01 (four MPlex replicates vs. two RACE replicates), S02 (two MPlex replicates vs. four RACE replicates), and donor S03 (one MPlex replicate vs. one RACE replicate): total 17 points.
 
 As a result of amplification bias correction, OAR-index for multiplex-based repertoire decreased 1.5-fold average. At the exact time, the correlation of clonal frequencies obtained with RACE and multiplex significantly increased (Pearson correlation measure and R2 value increased 1.5-fold average each) with a significant rise of repertoires similarity (Morisita-Horn index increased 1.7-fold average; Figure 6). Importantly, amplification bias decreased in both out-of-frame and in-frame clone sets, although normalization coefficients were calculated using out-of-frame ones only.
 
-## Comparison of iROAR and spike-in-based approach for amplification bias detection
+### Comparison of iROAR and spike-in-based approach for amplification bias detection
 
 Biological spike-in is considered a classical technique for multiplex PCR bias evaluation. Several options for this technique including synthetic repertoire (Carlson et al., 2013; Wu et al., 2020), lymphoid cell lines DNA mix, and DNA from human blood, tonsil, and thymus (Kallemeijn et al., 2018; Knecht et al., 2019) were established to measure V- and J-segment specific primers performance during TCR/BCR rearrangements amplification in multiplex PCR. In this study, we compared iROAR-based amplification bias evaluation with a spike-in-based approach. Similarly to Kallemeijn et al., 2018; Knecht et al., 2019, we were using natural thymic cell-derived spike-ins rather than synthetic ones. Human CD8 T-cells derived DNA was used as a target input for the libraries’ preparation. TRA rearrangements library of thymocytes were used as a source of spike-ins. Two different random mixes of TRAV- and TRAJ-specific primers (0.18–4.7 μM each) were used for multiplex PCR amplification of target DNA with spike-in added. Each test library was prepared in two replicas (four test libraries total). The obtained libraries were sequenced with an average coverage of 9.88 reads per clonotype and contained 35,818–40,209 target and 2298–3571 spike-in clonotypes after pseudogenes removal (Table 1).
+
+**Table 1.**
+ The number of spike-in and target clonotypes in test TRA libraries.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Sample</th>
+      <th colspan="3">Spike-in clonotypes</th>
+      <th colspan="3">Target clonotypes</th>
+    </tr>
+    <tr>
+      <th>Number</th>
+      <th>Read count</th>
+      <th>Coverage</th>
+      <th>Number</th>
+      <th>Read count</th>
+      <th>Coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primer mix 1 Replica 1</td>
+      <td>3571</td>
+      <td>30,474</td>
+      <td>8.53</td>
+      <td>39,911</td>
+      <td>348,792</td>
+      <td>8.74</td>
+    </tr>
+    <tr>
+      <td>Primer mix 1 Replica 2</td>
+      <td>2698</td>
+      <td>19,420</td>
+      <td>7.20</td>
+      <td>35,818</td>
+      <td>303,494</td>
+      <td>8.47</td>
+    </tr>
+    <tr>
+      <td>Primer mix 2 Replica 1</td>
+      <td>3439</td>
+      <td>34,717</td>
+      <td>10.10</td>
+      <td>40,209</td>
+      <td>425,508</td>
+      <td>10.58</td>
+    </tr>
+    <tr>
+      <td>Primer mix 2 Replica 2</td>
+      <td>2298</td>
+      <td>24,823</td>
+      <td>10.80</td>
+      <td>33,406</td>
+      <td>383,615</td>
+      <td>11.48</td>
+    </tr>
+  </tbody>
+</table>
 
 Multiplex PCR bias of each separate V- and J-gene was calculated using both iROAR and biological spike-in approaches demonstrating the high-correlation level (Figure 7a and b) for the matched OAR/spike-in pairs (Pearson’s r=0.78 average) in contrast to mismatched ones (Pearson’s r=0.46 average). VJ combination bias for both approaches was calculated by multiplying V- and J-segment biases and compared using correlation analysis (Figure 7c–e). iROAR and spike-in detected VJ biases showed a strong positive correlation (Pearson’s r=0.7182 average) for all four test TRA libraries (Figure 7c). Based on replicas comparison, the reproducibility of iROAR detected VJ bias was higher than one detected using spike-in control (Figure 7d and e).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig7-v4.jpg)
 
-**Figure 7.:** Pearson’s correlation coefficient for V-segments bias measure (a) and J-segments bias measure (b). Column and row titles: PM = Primer mix, R=replica. (c) Correlation of VJ combination bias calculated by iROAR (immune Repertoire Over Amplification Removal) and biological spike-ins. (d) Reproducibility of iROAR-based VJ combination bias detection. (e) Reproducibility of spike-in-based VJ combination bias detection. Data: PRJNA825832.Figure 7—source data 1.iROAR (immune Repertoire Over Amplification Removal)-based and spike-in-based PCR bias measures used for the plots in Figure 7.
+**Figure 7.:** Pearson’s correlation coefficient for V-segments bias measure (a) and J-segments bias measure (b). Column and row titles: PM = Primer mix, R=replica. (c) Correlation of VJ combination bias calculated by iROAR (immune Repertoire Over Amplification Removal) and biological spike-ins. (d) Reproducibility of iROAR-based VJ combination bias detection. (e) Reproducibility of spike-in-based VJ combination bias detection. Data: PRJNA825832.
 
-## Impact of iROAR on a similarity of repertoires prepared by different multiplex PCR systems
+### Impact of iROAR on a similarity of repertoires prepared by different multiplex PCR systems
 
 To further test the iROAR approach’s ability to raise the uniformity of repertoires by reducing multiplex PCR-specific bias, we analyzed changes in the similarity of repertoires prepared for the same individual but using different multiplex methods. For this purpose, we compared OARs, V/J, and clonotype frequencies before and after bias correction using iROAR in test TRA libraries prepared with Primer mix 1 and Primer mix 2 (after spike-in removal). As a result of iROAR-based bias correction, the difference between OARs for these two library types significantly decreases, and OARs themselves approach a value of one. By default, iROAR does not affect the diversity of repertoires and does not remove any clonotypes. Meanwhile, V and J frequencies are subject to substantial changes (Figure 8b) depending on the initial bias level. These changes occur in both biased repertoires (Primer mix 1 and Primer mix 2) and lead to an increase its convergence (Figure 8d). Herewith, R2 measure increased 1.31-fold and 1.5-fold for V- and J-gene frequencies, respectively. Moreover, bias correction using iROAR also increases similarities of clone frequencies (Figure 8c). In this case, both the Morisita-Horn index and Pearson correlation coefficient increase twofold and R2 measure increases 1.5-fold.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/69157/elife-69157-fig8-v4.jpg)
 
-**Figure 8.:** (a) OAR values changes in four test TRA libraries after PCR bias correction using iROAR. (b) TRAV and TRAJ frequency changes after PCR bias correction using iROAR (Sample: Primer mix 1 Replica 1). (c) Correlation of clonal frequencies of two different types of test TRA repertoires before and after iROAR-based PCR bias correction. (d) Correlation of V- and J-gene frequencies of test TRA repertoires before and after iROAR-based PCR bias correction.Figure 8—source data 1.Clonal frequencies, TRB V and J frequencies and Over Amplification Rate (OAR) values used for the plots in Figure 8.
+**Figure 8.:** (a) OAR values changes in four test TRA libraries after PCR bias correction using iROAR. (b) TRAV and TRAJ frequency changes after PCR bias correction using iROAR (Sample: Primer mix 1 Replica 1). (c) Correlation of clonal frequencies of two different types of test TRA repertoires before and after iROAR-based PCR bias correction. (d) Correlation of V- and J-gene frequencies of test TRA repertoires before and after iROAR-based PCR bias correction.
 
 It is important to note that OARs calculation and bias correction for each of the analyzed test TRA repertoires was performed entirely independently without the involvement of any common normalization coefficients or spike-in controls. Therefore, each repertoire contains enough information to correct it adequately, increasing the consistencies of interrogated repertoires obtained even by different multiplex PCR protocols.
 
@@ -125,29 +207,29 @@ In contrast to cell-line mix spike-in (Knecht et al., 2019) or synthetic reperto
 
 ## Methods
 
-## Raw-data processing and immune repertoires reconstruction
+### Raw-data processing and immune repertoires reconstruction
 
 All sequencing data used in this study represent human TCR and BCR repertoires. The repertoires (see Supplementary file 1) were reconstructed from fastq data using MiXCR v2 software (Bolotin et al., 2017; Bolotin et al., 2015) after primers and adapters trimming using FASTP software (Chen et al., 2018). All obtained repertoires were converted to VDJTOOLS (Shugay et al., 2015) format for unification. Erroneous clones generated by single nucleotide substitution were removed from the repertoire using the ‘Correct’ function from the VDJTOOLS software package. Erroneous clones generated by single nucleotide indels were removed from repertoires using the ‘Filter’ function from developed iROAR software. V and J pseudogenes were removed from repertoires using the ‘FilterBySegment’ function of VDJTOOLS.
 
-## TRA repertoires preparation
+### TRA repertoires preparation
 
 The peripheral blood was collected from a healthy volunteer from the article’s co-authors with informed consent in a certified clinical lab. PBMC was separated from whole blood using the Ficoll-Paque approach. CD8+ T cells were isolated using Dynabeads CD8 Positive Isolation Kit (Invitrogen). DNA for library preparation was extracted from CD8+ T cells using FlexiGene DNA Kit (Qiagen). 150 ng aliquots of obtained DNA were used as input to prepare each out of four TRA libraries. Each DNA aliquot was premixed with 0.1 pg of serial diluted low-biased TRA library (prepared using MiLaboratories Human TCR kit) of thymic cells (spike-in matrix) as biological spike-ins. Two pools of previously designed (Komkov et al., 2020) TRAV- and TRAJ-specific primers (MiLaboratories LLC) with randomly selected concentrations (0.18–4.7 μM each) were generated to produce two types of TRA libraries with different quantitative bias status simulating libraries produced by different multiplex PCR methods. Library preparation was performed according to the protocol from Komkov et al., 2020. Both types of TRA libraries were prepared in two replicas and sequenced along with a spike-in matrix library on the MiSeq Illumina instrument (SE 150 nt) with moderate coverage 480,000 reads per library.
 
-## Biological spike-in detection and analysis
+### Biological spike-in detection and analysis
 
 TRA repertoires were extracted from FASTQ files using MIXCR software. All obtained MIXCR output files were converted to VDJTOOLS format as described above. Extraction of the spike-in sequences and spike-in-free repertoires from sequenced libraries was performed using the VDJTOOLS function ‘ApplySampleAsFilter’ and the sequenced spike-in library as a filter. Spike-in-based amplification bias was calculated as the quotient of V- and J-frequency in spike-ins extracted from target libraries and corresponding V- and J-frequency in the spike-in matrix, which was not subjected to multiplex amplification. OARs for obtained TRA libraries were calculated using iROAR software and spike-in-free repertoires as input. VJ bias values were calculated by multiplying V- to J-segment-specific biases. Correlation analysis of iROAR and spike-in VJ bias values was performed using GraphPad Prism9 software.
 
-## Step-by-step pipeline for the OAR evaluation used in this study
+### Step-by-step pipeline for the OAR evaluation used in this study
 
-## OAR evaluation and statistical analysis
+### OAR evaluation and statistical analysis
 
 For the OAR and OAR-index calculation and amplification bias removal, we used the command-line-based iROAR software designed in this study and freely available for non-profit use at GitHub (https://github.com/smiranast/iROAR; Komkov, 2023; copy archived at swh:1:rev:2362c4f41d40519154e1c2dc6ce7af619f15fb4b). For the OAR comparison between 5’-RACE, one-side, and two-side multiplex PCRs, an equal number of out-of-frame clones (50,000) was randomly selected from TCR repertoires of 15 healthy individuals (for each approach). Average population V- and J-gene frequencies (unweighted) were calculated based on out-of-frame clones from 105 TRB repertoires obtained by two methods: 5’-RACE (95 repertoires) and single-cell TCR profiling (10× Genomics; 10 repertoires; Supplementary file 1) using the ‘CalcSegmentUsage’ function with ‘-u’ parameter of VDJTOOLS. All statistical tests were performed using Prism9 GraphPad software (https://www.graphpad.com/).
 
-## iROAR software requirement
+### iROAR software requirement
 
 Recommended system configuration for iROAR running: Linux or MacOS, 2 CPU, 8 GB RAM, programming language: python = 3.7.3, required Python packages: matplotlib = 3.0.3, numpy = 1.16.2, pandas = 0.24.2, and requests = 2.21.0. Starting iROAR package includes list of average populational frequencies with SDs of TRB and TRA V- and J-genes related to the European population. iROAR run command: iroar Count (optional parameters) <input> <output>. Recommended parameters for most tasks: -min_outframe 15r -z 1 -iter 1 -mt 1. Full list of available parameters is deposited in project directory at github (https://github.com/smiranast/iROAR).
 
-## Data access
+### Data access
 
 All analyzed datasets were downloaded from open-source databases: NCBI SRA (https://www.ncbi.nlm.nih.gov/sra), ENA (https://www.ebi.ac.uk/ena), and Zenodo project (https://zenodo.org/). A complete list of web links and accession numbers is summarized in Supplementary file 1. TRA repertoire dataset generated in this study for iROAR validation is available under access number PRJNA825832.
 

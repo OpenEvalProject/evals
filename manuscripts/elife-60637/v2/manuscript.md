@@ -14,7 +14,7 @@
 
 ## Abstract
 
-It is being increasingly appreciated that the immunomodulatory functions of PARP1 inhibitors (PARPi) underlie their clinical activities in various BRCA -mutated tumors. PARPi possess both PARP1 inhibition and PARP1 trapping activities. The relative contribution of these two mechanisms toward PARPi-induced innate immune signaling, however, is poorly understood. We find that the presence of the PARP1 protein with uncompromised DNA-binding activities is required for PARPi-induced innate immune response. The activation of cGAS-STING signaling induced by various PARPi closely depends on their PARP1 trapping activities. Finally, we show that a small molecule PARP1 degrader blocks the enzymatic activity of PARP1 without eliciting PARP1 trapping or cGAS-STING activation. Our findings thus identify PARP1 trapping as a major contributor of the immunomodulatory functions of PARPi. Although PARPi-induced innate immunity is highly desirable in human malignancies, the ability of ‘non-trapping’ PARP1 degraders to avoid the activation of innate immune response could be useful in non-oncological diseases.
+It is being increasingly appreciated that the immunomodulatory functions of PARP1 inhibitors (PARPi) underlie their clinical activities in various BRCA-mutated tumors. PARPi possess both PARP1 inhibition and PARP1 trapping activities. The relative contribution of these two mechanisms toward PARPi-induced innate immune signaling, however, is poorly understood. We find that the presence of the PARP1 protein with uncompromised DNA-binding activities is required for PARPi-induced innate immune response. The activation of cGAS-STING signaling induced by various PARPi closely depends on their PARP1 trapping activities. Finally, we show that a small molecule PARP1 degrader blocks the enzymatic activity of PARP1 without eliciting PARP1 trapping or cGAS-STING activation. Our findings thus identify PARP1 trapping as a major contributor of the immunomodulatory functions of PARPi. Although PARPi-induced innate immunity is highly desirable in human malignancies, the ability of ‘non-trapping’ PARP1 degraders to avoid the activation of innate immune response could be useful in non-oncological diseases.
 
 ## Introduction
 
@@ -28,23 +28,59 @@ In this study, we show that PARPi treatment induces the antitumor immune respons
 
 ## Results
 
-## PARPi activates innate immune signaling via the cGAS-STING pathway
+### PARPi activates innate immune signaling via the cGAS-STING pathway
 
 It is being increasingly appreciated that chemo- and radiation-therapy cause the formation of cytosolic dsDNA and micronuclei, which, in turn, lead to the activation of the cGAS-STING signaling pathway and inflammatory responses in tumors (Vanpouille-Box et al., 2018; Liang and Peng, 2016; Harding et al., 2017; Mackenzie et al., 2017; Dou et al., 2017; Glück et al., 2017; Vanpouille-Box et al., 2017; Yum et al., 2019). We explored the immunomodulatory functions of PARPi using Talazoparib, which is an FDA-approved PARP1 inhibitor that is known to potently inhibit and trap PARP1 (Figure 1A). We found that Talazoparib treatment was able to induce the formation of cytosolic dsDNA (Figure 1B) as well as γH2AX (a marker for DNA double strand breaks) (Figure 1C). To evaluate the innate immune response, we examined the phosphorylation of TBK1 (pS172 TBK1) and IRF3 (pS396 IRF3), two critical components in the cGAS-STING pathway (Motwani et al., 2019; Kato et al., 2017). Indeed, Talazoparib treatment dramatically increased both phosphorylation events (Figure 1D and E). Talazoparib treatment also remarkably induced the nuclear translocation of phospho-IRF3 (Figure 1E, right), which is a critical step for IRF3-mediated gene transcription (Kato et al., 2017; Motwani et al., 2019). We then examined the mRNA expression level of a number of known downstream target genes of the cGAS-STING pathway. Consistent with the previous studies (Sun et al., 2013; Parkes et al., 2017; Fu et al., 2020), Talazoparib treatment greatly upregulated the expression of type I interferons (IFN; Inf-α and Inf-β), pro-inflammatory cytokines (Ccl5 and Cxcl10), and interferon-stimulated genes (ISGs; Isg15, Mx1, Mx2, and Ifit3) (Figure 1F, Figure 1—figure supplement 1A). To examine whether the cGAS-STING pathway is necessary for the PARPi-induced innate immune signaling, we depleted cGAS using two independent short hairpin RNAs (shRNAs) (Figure 1G). Knock-down (KD) of cGAS did not interfere with PARP1 trapping (Figure 1—figure supplement 1B) or the subsequent DDR (Figure 1—figure supplement 1C). However, the activation of the innate immune response, as assessed by the level of pS172 TBK1 and the cGAS-STING target genes, was dramatically reduced in cGAS-depleted cells (Figure 1H and I, Figure 1—figure supplement 1D). Taken together, these results demonstrate that PARPi treatment induces the innate immune response via the cGAS-STING pathway.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig1-v2.jpg)
+
+**Figure 1.:** (A) The level of trapped PARP1 in HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means ± SD from three biological replicates. Significance was determined with unpaired Student’s t-test. ***p < 0.001. (B) Staining of cytosolic dsDNA in HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Left, representative image of PicoGreen (green) staining. DAPI (blue) was used to visualize the nucleus. Scale bars represent 10 μm. Right, the graph shows the quantification of the number of cells with cytosolic dsDNA. Values were presented as means ± SEM from three biological replicates (n = 3 fields,≥100 cells counted per condition). Significance was determined with unpaired Student’s t-test. ****p < 0.0001. (C) The extent of DNA damage in HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of γH2AX levels. Values were presented as means ± SD from three biological replicates. Significance was determined with unpaired Student’s t-test. **p < 0.01. (D) The level of pS172 TBK1 in HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means ± SD from three biological replicates. Significance was determined with unpaired Student’s t-test. **p < 0.01. (E) The level of pS396 IRF3 in HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Left, representative image of pS396 IRF3 levels (green). DAPI (blue) was used to visualize the nucleus. Scale bars represent 20 μm. Right, the graph shows the quantification of the number of cells stained positive for pS396 IRF3 in nucleus. Values were presented as means ± SEM from three biological replicates (n = 3 fields,≥100 cells counted per condition). Significance was determined with unpaired Student’s t-test. ***p < 0.001. (F) RT-qPCR of type I interferons levels in HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Values of Inf-α and Inf-β were presented as means ± SEM from three biological replicates. Significance was determined with unpaired Student’s t-test. *p < 0.05, **p < 0.01. (G) Knock-down of cGAS. HeLa cells expressing the control shRNA (shScramble) or shcGAS (shcGAS #1 or #2) were probed using the indicated antibodies. Right, the graph shows the ratio of cGAS depletion. Values were presented as means ± SD from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001. (H) Depletion of cGAS abolishes PARPi-induced activation of innate immune signaling. HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) were treated with or without Talazoparib (10 µM for 72 hr). The cells were lysed and were immunoblotted using the indicated antibodies. Values were presented as means ± SD from three biological replicates. Significance was determined with two-way ANOVA. ****p < 0.0001, n.s., not significant. (I) RT-qPCR analyses of type I interferons. HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) were treated with or without Talazoparib (10 µM for 72 hr). Values of Inf-α and Inf-β mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with unpaired Student’s t-test. ****p < 0.0001, n.s., not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) RT-qPCR analyses of cGAS-STING target gene expression in HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Values of cytokines and ISGs mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with unpaired Student’s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (B) The levels of trapped PARP1 in HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) that were treated with or without Talazoparib (10 µM for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the levels of PARP1 trapping. Values were presented as means ± SD from three biological replicates. Significance was determined with two-way ANOVA. ***p < 0.001, n.s., not significant. (C) The extent of DNA damage in HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) that were treated with or without Talazoparib (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of γH2AX levels. Values were presented as means ± SD from three biological replicates. Significance was determined with two-way ANOVA. ***p < 0.001, n.s., not significant. (D) RT-qPCR analyses of cGAS-STING target gene expression in HeLa cells expressing shRNA against control (shScramble) or cGAS (shcGAS #1 or #2) that were treated with or without Talazoparib (10 µM for 72 hr). Values of cytokines and ISGs mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with two-way ANOVA. ***p < 0.001, ****p < 0.0001, n.s., not significant.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (E) The levels of trapped PARP1 in MHH-ES-1 cells treated with or without Talazoparib (1 µM for 24 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means ± SD from three biological replicates. Significance was determined with unpaired Student’s t-test. **p < 0.01. (F) The extent of DNA damage in MHH-ES-1 cells treated with or without Talazoparib (1 µM for 24 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of γH2AX levels. Values were presented as means ± SD from three biological replicates. Significance was determined with unpaired Student’s t-test. **p < 0.01. (G) The level of pS172 TBK1 in MHH-ES-1 cells treated with or without Talazoparib (1 µM for 24 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means ± SD from three biological replicates. Significance was determined with unpaired Student’s t-test. **p < 0.01. (H) Reproducibility of the TMT experiments. The signal-to-noise (SN) values of the corresponding TMT channels for each protein was extracted from the two biological replicate experiments. (I) Quantification of protein expression in MHH-ES-1 cells treated with Talazoparib 1 µM for 24 hr (Supplementary file 1). Top, the graph shows the log2 value of total protein expression in Talazoparib-treated vs. DMSO control. Bottom, the heatmap shows quantification reproducibility of the up- and down-regulated protein. Red: up-regulated proteins; Green: down-regulated proteins. (J) GO analysis of the up-regulated proteins as shown in (I). The list shows the top 10 enriched biological processes of the up-regulated proteins. (K) RT-qPCR analyses of the cGAS-STING target gene expression in MHH-ES-1 cells treated with or without Talazoparib (1 µM for 24 hr). Values of type I interferons, cytokines, and ISGs mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with unpaired Student’s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
 To examine the immunomodulatory effects of PARPi in an unbiased manner, we performed isobaric labeling-based, global protein expression analysis in Talazoparib-treated MHH-ES-1 cells (an Ewing’s sarcoma cell line that is highly sensitive to PARPi) (Gill et al., 2015). Talazoparib treatment was able to induce potent PARP1 trapping, γH2AX formation and TBK1 phosphorylation in this cell line (Figure 1—figure supplement 2E–G). Cells treated with DMSO or Talazoparib were lysed, and the proteins were digested with the resulting peptides labeled with the corresponding tandem mass tag (TMT) reagents. From this dataset, we were able to identify and quantify a total of 9545 proteins (protein false-discovery rate (FDR) < 1%) (Supplementary file 1). Correlation analysis revealed an excellent reproducibility between the biological replicate samples (Figure 1—figure supplement 2H). Compared to control, a total of 270 and 395 proteins were up- and down-regulated by at least two-fold, respectively, in Talazoparib-treated cells (Figure 1—figure supplement 2I). Intriguingly, gene ontology (GO) analyses of the up-regulated proteins showed that these proteins were highly enriched with biological processes connected to innate immune signaling (e.g., type I interferon signaling pathway, p=2.79 × 10−5 and immune response p=8.04 × 10−5), which we validated using independent RT-qPCR assays (Figure 1—figure supplement 2J and K, Supplementary file 2). For example, we identified Interleukin 1α (IL1A) as one of the Talazoparib-induced, up-regulated cytokines in our quantitative proteomic dataset. Furthermore, Talazoparib treatment also induced the coordinated upregulation of several immune signaling proteins, including ISG15, IFIT3, MX1 and MX2 (Supplementary file 1).
 
-## PARP1 trapping is required for the PARPi-induced innate immune signaling
+### PARP1 trapping is required for the PARPi-induced innate immune signaling
 
 Because all FDA-approved PARPi possess both PARP1 trapping and PARP inhibition activities, we used a genetic method to assess their relative contribution to PARPi-induced activation of the cGAS-STING pathway. Specifically, we generated PARP1 knock-out (KO) HeLa cells (Figure 2—figure supplement 1A) and found that Talazoparib treatment only induced PARP1 trapping in the wild-type (WT) cells, but not in PARP1 KO cells (Figure 2A). Accordingly, DDR, as detected by γH2AX, was also only elevated in the PARP1 WT cells (Figure 2B). Next, we evaluated whether the deletion of the PARP1 protein affects the PARPi-induced activation of the cGAS-STING pathway. As we expected, Talazoparib treatment led to a dramatic increase of pS172 TBK1 only in the PARP1 WT cells, but not PARP1 KO cells (Figure 2C). Talazoparib-induced IRF3 phosphorylation and its nuclear translocation were also blocked by PARP1 deletion (Figure 2D). Finally, PARP1 deletion also greatly diminished Talazoparib-induced expression of cGAS-STING target genes (Figure 2E, Figure 2—figure supplement 1B). These data indicate that the PARP1 protein is required for the PARPi-mediated activation of innate immune signaling.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig2-v2.jpg)
+
+**Figure 2.:** (A) PARPi-induced PARP1 trapping in wild-type (WT) and PARP1 knockout (KO) HeLa cells. Cell were also treated with or without Talazoparib (10 µM for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means ± SD from three biological replicates. Significance was determined with two-way ANOVA. ****p < 0.001, n.s., not significant. (B) DDR in WT and PARP1 KO HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of γH2AX levels. Values were presented as means ± SD from three biological replicates. Significance was determined with two-way ANOVA. ***p < 0.001, n.s., not significant. (C) The level of pS172 TBK1 in WT and PARP1 KO HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means ± SD from three biological replicates. Significance was determined with two-way ANOVA. ****p < 0.0001, n.s., not significant. (D) Staining of pS396 IRF3 levels in WT and PARP1 KO HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Left, a representative image of pS396 IRF3 levels (green). DAPI (blue) was used to visualize the nucleus. Right, the graph shows the quantification of the number of cells stained positive for pS396 IRF3 in the nucleus. Values were presented as means ± SEM from three biological replicates. Significance was determined with two-way ANOVA. ****p < 0.0001, n.s., not significant. (E) RT-qPCR analyses of type I interferons in WT and PARP1 KO HeLa cells treated with or without Talazoparib (10 µM for 72 hr). Values of Inf-α and Inf-β mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with two-way ANOVA. *p < 0.05, **p < 0.01, n.s., not significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The level of PARP1 in WT and PARP1 KO HeLa cells. Whole cell lysates were probed using the indicated antibodies. GAPDH used as the loading control. (B) RT-qPCR analyses of cGAS-STING target gene expression in WT and PARP1 KO HeLa cells that were treated with or without Talazoparib (10 µM for 72 hr). Values of cytokines and ISGs mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with two-way ANOVA. **p < 0.01, ***p < 0.001, ****p < 0.001, n.s., not significant.
+
 We surveyed a series of clinically relevant PARPi, including Talazoparib, Niraparib, Rucaparib, Olaparib, and Veliparib. Consistent with previous studies, these compounds all potently blocked the enzymatic activity of PARP1 (Figure 3—figure supplement 1A). However, these compounds were able to induce different levels of PARP1 trapping (PARP1 trapping levels: Talazoparib > Niraparib > Rucaparib ≈ Olaparib > Veliparib) (Figure 3A). Interestingly, DDR as measured by γH2AX was correlative with respect to the level of PARP1 trapping elicited by these PARPi (DNA damage levels: Talazoparib > Niraparib > Rucaparib ≈ Olaparib > Veliparib) (Figure 3B). Accordingly, the cytotoxicity of these compounds also positively correlated with their PARP1 trapping activities (Figure 3—figure supplement 1D). Finally, the activation of the cGAS-STING pathway, as measured by the pS172 TBK level, also correlated with PARP1 trapping (Figure 3C). As an example, compared to Rucaparib, Talazoparib was able to induce a much stronger activation of the cGAS-STING pathway (Figure 3—figure supplement 1B). Taken together, these results showed that the level of PARP1 trapping, DNA damage, cytotoxicity and cGAS-STING activation was all positively correlated for the various PARPi (Figure 3D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig3-v2.jpg)
+
+**Figure 3.:** (A) The level of trapped PARP1 in HeLa cells treated with or without the indicated PARPi (10 µM for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means ± SD from three biological replicates. Significance was determined with one-way ANOVA. *p < 0.05, ***p < 0.001. (B) The extent of DNA damage in HeLa cells treated with or without the indicated PARPi (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of γH2AX levels. Values were presented as means ± SD from three biological replicates. Significance was determined with one-way ANOVA. **p < 0.01, ***p < 0.001. (C) The level of pS172 TBK1 in HeLa cells treated with or without the indicated PARPi (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means ± SD from three biological replicates. Significance was determined with one-way ANOVA. *p < 0.05, ***p < 0.001. (D) Heatmap of PARP1 trapping, DNA damage, and pS172 TBK1 levels for each PARPi. The normalized levels of PARP1 trapping (A), γH2AX (B), and pS172 TBK1 (C) are shown. (E) PARPi does not induce the trapping of a PARP1 mutant with defective DNA binding. Top, HeLa PARP1 KO cells expressing WT PARP1 or R138C mutant PARP1 (R138C) were treated with or without Talazoparib (10 µM for 72 hr). Chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the levels of PARP1 trapping. Values were presented as means ± SD from three biological replicates. Significance was determined with two-way ANOVA. **p < 0.01, ***p < 0.001. (F) The extent of DNA damage in HeLa PARP1 KO cells expressing WT PARP1 or R138C PARP1 that were treated with or without Talazoparib (10 µM for 72 hr). Left, whole cell lysates were probed using the indicated antibodies. Right, the graph shows the quantification of γH2AX and pS172 TBK1 levels. Values were presented as means ± SD from three biological replicates. Significance was determined with two-way ANOVA. **p < 0.01, ***p < 0.001. (G) RT-qPCR analyses of type I interferons in HeLa PARP1 KO cells expressing WT or R138C PARP1 that were treated with or without Talazoparib (10 µM for 72 hr). Values of Inf-α and Inf-β mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with two-way ANOVA. **p < 0.01, ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The levels of PAR signals in HeLa cells treated with the indicated PARPi (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of PAR levels. GAPDH was used as the loading control. Values were presented as means ± SD from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001. (B) RT-qPCR analyses of cGAS-STING target gene expression in HeLa cells treated with Talazoparib or Rucaparib (10 µM for 72 hr). Values of type I interferons, cytokines, and ISGs mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with one-way ANOVA. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (C) RT-qPCR analyses of cGAS-STING target gene expression in HeLa PARP1 KO cells expressing PARP1 WT or R138C that were treated with or without Talazoparib (10 µM for 72 hr). Values of cytokines and ISGs mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with one-way ANOVA. **p < 0.01, ***p < 0.001. (D) Cell death analyses. MHH-ES-1 cells were treated with the PARP inhibitors as indicated (1 µM for 24 hr). Cell viability was measured by CellTiter-Glo assays. Cell survival is presented as means ± SEM from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001, ****p < 0.0001.
 
 To further explore the role of PARP1 trapping in mediating the innate immune response of the PARPi, we employed a PARP1 mutant (R138C) that was identified from a chemical-induced mutagenesis screen performed in mouse embryonic stem cells (mESCs) (Herzog et al., 2018). This PARP1 mutant bears a significantly reduced DNA binding capability, and as a result, it cannot be trapped on the chromatin upon the treatment of PARPi. We generated PARP1 KO cells, and reconstituted these cells using either WT PARP1 or the PARP1 R138C mutant. Talazoparib treatment dramatically elevated the levels of PARP1 trapping in WT PARP1-reconsistuted cells, but not in cells reconstituted with the PARP1 R138C mutant (Figure 3E). Cells expressing the PARP1 R138C mutant also had greatly reduced DDR, upon Talazoparib treatment (Figure 3F). Finally, the expression of the PARP1 R138C mutant also prevented Talazoparib-induced activation of the cGAS-STING pathway (Figure 3F and G, Figure 3—figure supplement 1C). These results strongly supported the notion that PARP1 trapping is a prerequisite for the PARPi-induced activation of innate immune signaling.
 
-## PARP1 degraders block PARP1 without eliciting PARP1 trapping or the subsequent innate immune signaling
+### PARP1 degraders block PARP1 without eliciting PARP1 trapping or the subsequent innate immune signaling
 
 Using the Proteolysis Targeting Chimera (PROTAC) strategy, we recently developed a series of small molecule compounds that selectively degrade PARP1 (Wang et al., 2019). These compounds were derived by linking a PARPi (e.g., Rucaparib) and an E3 binder (e.g., pomalidomide) by a covalent chemical linker. Unlike regular PARPi, these compounds block both the enzymatic and scaffolding effects of PARP1, and thereby could dissect PARP1 inhibition vs. PARP1 trapping. Consistent with the notion that PARP1 trapping is a major contributor of the PARPi-induced cytotoxicity (Wang et al., 2019), the treatment of HeLa cells using one such compound (iRucaparib-AP6) led to robust downregulation of PARP1 in HeLa cells. In contrast, the parent compound (Rucaparib) only induced the cleavage, but not the degradation of PARP1, presumably because of its toxicity in these cells (Figure 4A). Using a different cell line system (i.e., MHH-ES-1), we also showed that Rucaparib, but not iRucaparib-AP6, strongly promoted cell death (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig4-v2.jpg)
+
+**Figure 4.:** (A) The level of PARP1 in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 µM for 72 hr). Whole cell lysates were probed using the indicated antibodies. GAPDH was used as the loading control. (B) The level of trapped PARP1 in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 µM for 72 hr). Top, chromatin-bound fractions were isolated and were probed using the indicated antibodies. Histone H3 was used as the loading control. Bottom, the graph shows the quantification of the level of PARP1 trapping. Values were presented as means ± SD from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001. (C) The extent of DNA damage in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of γH2AX levels. Values were presented as means ± SD from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001. (D) The level of pS172 TBK1 in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 µM for 72 hr). Top, whole cell lysates were probed using the indicated antibodies. Bottom, the graph shows the quantification of pS172 TBK1 levels. Values were presented as means ± SD from three biological replicates. Significance was determined with one-way ANOVA. **p < 0.01. (E) RT-qPCR analyses of the cGAS-STING target gene expression in HeLa cells treated with either Rucaparib or iRucaparib-AP6 (10 µM for 72 hr). Values of type I interferons, cytokines, and ISGs mRNA levels were presented as means ± SEM from three biological replicates. Significance was determined with one-way ANOVA. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (F) The model of the activation of innate immune response via PARPi-induced PARP1 trapping.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60637/elife-60637-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cell death analyses. MHH-ES-1 cells were treated with Rucaparib or iRucaparib-AP6 as indicated (1 µM for 24 hr). Cell viability was measured by CellTiter-Glo assays. Cell survival is presented as means ± SEM from three biological replicates. Significance was determined with one-way ANOVA. ***p < 0.001, ****p < 0.0001.
 
 Consistent with the diminished pool of total PARP1, iRucaparib-AP6 treatment resulted in minimal PARP1 trapping and γH2AX formation (Figure 4B and C). Accordingly, the level of pS172 TBK1 were dramatically increased in Rucaparib-treated, but not in iRucaparib-AP6-treated cells (Figure 4D). We examined the expression of cGAS-STING target genes in these cells, and found that Rucaparib, but not iRucaparib-AP6, treatment significantly elevated the mRNA levels of type I IFNs, pro-inflammatory cytokines and ISGs (Figure 4E).
 
@@ -60,54 +96,498 @@ In conclusion, we have identified a direct mechanism of the antitumor immune res
 
 ## Materials and methods
 
-## Cell lines and culture procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PAR (Mouse monoclonal)</td>
+      <td>Trevigen</td>
+      <td>Cat# 4335-MC-100, RRID:AB_2572318</td>
+      <td>IB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PARP1 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9542, RRID:AB_2160739</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γH2AX (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9718, RRID:AB_2118009</td>
+      <td>IB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4499, RRID:AB_10544537</td>
+      <td>IB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-32233, RRID:AB_627679</td>
+      <td>IB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-TBK1/NAK (pS172 TBK1) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5483, RRID:AB_10693472</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TBK1/NAK (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3504, RRID:AB_2255663</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (Rabbit polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# F7425, RRID:AB_439687</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cGAS (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 15102, RRID:AB_2732795</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-IRF-3 (pS396 IRF3) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4947, RRID:AB_823547</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-conjugated goat anti-rabbit IgG (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A32731, RRID:AB_2633280</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG Antibody, HRP conjugate, Species Adsorbed (Goat polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# AP181P, RRID:AB_11214094</td>
+      <td>IB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ECL Rabbit IgG, HRP-linked fragment (Donkey polyclonal)</td>
+      <td>GE Healthcare life sciences</td>
+      <td>Cat# NA9340, RRID:AB_772191</td>
+      <td>IB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Talazoparib</td>
+      <td>Selleck</td>
+      <td>Cat# S7048</td>
+      <td>PARP1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Niraparib</td>
+      <td>Selleck</td>
+      <td>Cat# S2741</td>
+      <td>PARP1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rucaparib</td>
+      <td>Selleck</td>
+      <td>Cat# S1098</td>
+      <td>PARP1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Olaparib</td>
+      <td>Selleck</td>
+      <td>Cat# S1060</td>
+      <td>PARP1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Veliparib</td>
+      <td>Selleck</td>
+      <td>Cat# S1004</td>
+      <td>PARP1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>iRucaparib-AP6</td>
+      <td>Our laboratory</td>
+      <td>N/A</td>
+      <td>PARP1 degrader</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene (Hexadimethrine bromide)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# H9268; CAS 28728-55-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# P7255; CAS 58-58-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-2, RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa PARP1 KO</td>
+      <td>In this study</td>
+      <td>N/A</td>
+      <td>PARP1 deficient HeLa</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>MHH-ES-1</td>
+      <td>DSMZ</td>
+      <td>Cat# ACC 167, RRID:CVCL_1411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-hPARP1-3xFlag-WT</td>
+      <td>Addgene</td>
+      <td>Cat# 11157</td>
+      <td>In pCMV; tagged with 3XFlag on its N-terminus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-hPARP1-3xFlag-R138C</td>
+      <td>In this study</td>
+      <td>Modified by R138C mutation</td>
+      <td>In pCMV; tagged with 3XFlag on its N-terminus</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5alpha</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18258012</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Stbl3 Competent E. coli</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C737303</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-iT PicoGreen dsDNA Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# P7581</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Subcellular Protein Fractionation Kit for Cultured Cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 78840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep Spin Miniprep Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 27106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>e-Myco PLUS Mycoplasma PCR Detection Kit</td>
+      <td>BOCA SCIENTIFIC</td>
+      <td>Cat# 25237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMT6plex Mass Tag Labeling Kits</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 90110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTiter-Glo Luminescent Cell Viability Assay</td>
+      <td>Promega</td>
+      <td>Cat# G7571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ 1.49 v</td>
+      <td>NIH</td>
+      <td>https://imagej.net/ImageJ2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID Bioinformatics Resources v6.8</td>
+      <td>DAVID</td>
+      <td>https://david.ncifcrf.gov/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM v8.2.0</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>human protein sequences (Uniprot)</td>
+      <td>UniProt</td>
+      <td>https://www.uniprot.org/UniProt database (2019_07,560,537 sequences;taxonomy, Homo sapiens, 20,431 )</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>human IPI protein database v3.60</td>
+      <td>EMBL-EBI</td>
+      <td>ftp://ftp.ebi.ac.uk/pub/databases/IPI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>The Sequest algorithm v28</td>
+      <td>Cell. 2010 Dec 3;143(7):1174–89</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>DAPI</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# D9542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP231-1; CAS 67-68-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11668500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Dulbecco’s Modified Eagle’s Medium (DMEM)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# D5796</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>RPMI1640</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# R8758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 12303C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Lysyl Endopeptidase (Lys-C)</td>
+      <td>Wako</td>
+      <td>Cat# 129–02541; CAS 123175-82-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Gen5</td>
+      <td>BioTek</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>BCA reagents</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 23224/23228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>0.45 μm filter</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 05-713-387</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Synergy HT Multi-Detection Microplate Reader.</td>
+      <td>BioTek</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18080044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>CFX384 Touch Real-Time PCR Detection System</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1855484</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Applied Biosystems Power SYBR Green PCR Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 43-676-59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Oasis HLB solid-phase extraction (SPE) cartridges</td>
+      <td>Waters</td>
+      <td>Cat# 186000383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>3M Empore C18 Extraction Disk</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 14-386-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>ZORBAX 300Extend-C18 HPLC column</td>
+      <td>Agilent</td>
+      <td>Cat# 761775–902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Q Exactive Hybrid Quadrupole-Orbitrap Mass Spectrometer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# IQLAAEGAAPFALGMAZR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>PicoFrit nanospray columns</td>
+      <td>New Objective</td>
+      <td>PF360-75-15-N-5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and culture procedures
 
 Human cervical carcinoma cells (HeLa, from ATCC) were maintained in high glucose Dulbecco’s Modified Eagle’s Medium (DMEM) (MilliporeSigma), supplemented with 10% Fetal bovine serum (FBS) (MilliporeSigma) at 37°C in 5% CO2. Human Ewing's Sarcoma cells (MHH-ES-1, from DSMZ) were maintained in RPMI1640 (MilliporeSigma), supplemented with 10% Fetal bovine serum (FBS) (MilliporeSigma) at 37°C in 5% CO2. All cell lines have been DNA fingerprinted using the PowerPlex 1.2 kit (Promega) and are found to be mycoplasma free using the e-Myco kit (Boca Scientific). The concentrations and times of each chemical treatment are indicated in the figure legends.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 Antibodies against the following proteins were used. Cell Signaling Technology: PARP1 (#9542), γH2AX (#9718), Histone H3 (#4499), Phospho-TBK1/NAK (pS172 TBK1; #5483), TBK1/NAK (#3504), cGAS (#15102), STING (#13647), Phospho-IRF-3 (pS396 IRF3; #4947); Santa Cruz Biotechnology: GAPDH (#sc-32233); Trevigen: PAR (#4335-MC-100); MilliporeSigma: Flag (#F7425). Thermo Fisher: Alexa Fluor 488-conjugated goat anti-rabbit IgG (Cat# A32731). The following reagents were used: Talazoparib, Niraparib, Rucaparib, Olaparib, and Veliparib were all purchased from Selleck; iRucaparib-AP6 was synthesized in previous our report (Wang et al., 2019). Dimethyl sulfoxide (DMSO), and Lipofectamine 2000 were all purchased from Thermo Fisher Scientific; Polybrene (Hexadimethrine bromide) and Puromycin were purchased from MilliporeSigma.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Cellular lysates were prepared using a 1% SDS lysis buffer containing 10 mM HEPES, pH 7.0, 2 mM MgCl2, 20 U/mL universal nuclease. Cellular lysates were clarified by centrifugation at 14,000 × g at 4°C for 15 min. Protein concentrations were determined with the BCA assay (Thermo Fisher Scientific). The resulting supernatants were subjected to immunoblot analysis with the corresponding antibodies. Enhanced chemiluminescence was used to detect specific bands using standard methods as previously described (Kim et al., 2016). The relative band intensity was measured using the Image J imaging software.
 
-## Immunofluorescence
+### Immunofluorescence
 
 For immunofluorescence localization of the target molecules, HeLa PARP1 WT and KO cells were cultured on the cover glasses. Cells were fixed with 4% paraformaldehyde (Electron Microscopy Sciences, Hatfield, PA, USA) and blocked for 1 hr at RT in PBS (Lonza, Basel, Switzerland) containing 5% FBS and 0.2% Triton X-100. Cells were then incubated with a Rabbit monoclonal anti-pS396 IRF3 antibody overnight at 4°C, followed by incubation with an Alexa Fluor 488-conjugated goat anti-rabbit IgG (Thermo Fisher). For PicoGreen staining, cells were incubated with the Quant-iT PicoGreen dsDNA reagent (Thermo Fisher) overnight at 4°C. Fluorescence images were observed under an LSM 510 META confocal laser scanning microscope equipped with epifluorescence and an LSM digital image analyzer (Carl Zeiss, Zana, Germany). DAPI (Molecular Probes, Eugene, OR, USA) was used as a counter staining probe to mark the nuclei.
 
-## Cellular fractionation
+### Cellular fractionation
 
 Cells were biochemically fractionated using a subcellular protein fractionation kit (Thermo Fisher Scientific, USA) according to the manufacturer’s instructions. Briefly, cells were harvested with trypsin-EDTA, centrifuged at 500 × g for 5 min and washed with ice-cold PBS. After adding the CEB buffer to the cell pellet, the tube was incubated at 4°C for 10 min with gentle mixing. Following centrifugation at 500 × g for 5 min, the supernatant (the cytoplasmic extract) was transferred to a clean pre-chilled tube on ice. Next, the MEB buffer was added to the pellet. The tube was briefly vortexed and was incubated at 4°C for 10 min with gentle mixing. The tube was then centrifuged at 3000 × g for 5 min and the supernatant (the membrane extract) was transferred to a clean pre-chilled tube on ice. An ice-cold NEB buffer was added to the pellet, and the tube was vortexed using the highest setting for 15 s. Following incubation at 4°C for 30 min with gentle mixing, the tube was centrifuged at 5000 × g for 5 min and the supernatant (the soluble nuclear extract) was transferred to a clean pre-chilled tube on ice. Lastly, the room temperature NEB buffer containing Micrococcal Nuclease and CaCl2 was added to the pellet. The tube was vortexed for 15 s and incubated at room temperature for 15 min. After incubation, the tube was centrifuged at 16,000 × g for 5 min and the supernatant (the chromatin-bound nuclear extract) was transferred to a clean pre-chilled tube on ice.
 
-## Plasmids and mutagenesis
+### Plasmids and mutagenesis
 
 Flag-tagged PAPR1 WT (PARP1-Flag; #111575) was purchased from Addgene. The Flag-tagged PARP1 R138C mutant was generated by the site-directed mutagenesis Kit (Agilent, La Jolla, CA, USA) according to the manufacturer’s instructions. The plasmids were subjected to DNA sequencing for verification.
 
-## CRISPR/Cas9-mediated PARP1 knockout (KO)
+### CRISPR/Cas9-mediated PARP1 knockout (KO)
 
 In order to knock out PARP1 via the CRISPR/Cas9 system, sgRNAs of PARP1 were designed using the CRISPR design website (http://crispr.mit.edu/) and were incorporated into the lentiCRISPR_v2 plasmid. Cells were then plated in 6-well plates and were transfected with these plasmids. After 24 hr of culture and puromycin selection (1 μg/ml), single cells were sorted into 96-well plates. After a 2 week culture period, protein lysates were extracted and PARP1 KO was confirmed by immunoblot analysis. The sgRNAs were listed (See also Supplementary file 3).
 
-## Cell viability measurement
+### Cell viability measurement
 
 MHH-ES-1 cells were plated into 96-well plates at densities of 1000 cells/well. One day later, cells were treated with various PARP inhibitors and iRucaparib-AP6 as indicated. Cell viability was measured using the CellTiter-Glo assay (Promega) according to the manufacturer’s instructions. Briefly, after incubation, room temperature CellTiter-Glo reagent was added 1:1 to each well and the plates were incubated at room temperature for 2 min. Luminescence was measured with the Synergy HT Multi-Detection Microplate Reader and was normalized against control cells treated with DMSO.
 
-## RNA interference and transfection
+### RNA interference and transfection
 
 To produce the lentiviruses, shRNA plasmids were co-transfected into HEK293TD cells along with packaging (Δ8.9) and envelope (VSVG) expression plasmids using the Lipofectamine 2000 reagent (Invitrogen) according to the manufacturer’s instructions. The next day, the media was refreshed. After two days, viral supernatants were collected and filtered using a 0.45 μm filter. Recipient cells were infected in the presence of a serum-containing medium supplemented with 8 μg/ml Polybrene. Two days after infection, cells were used for the indicated experiments. Lipofectamine 2000 reagents were also used to transiently knock-down or over-express the target genes, according to the manufacturer’s instructions. Two days after infection or transfection, the cells were used for the indicated experiments. The knock-down or over-expression of target genes was validated by immunoblot assays. The following shRNA constructs and over-expression plasmids were used (See also Supplementary file 3). The cGAS knockdown for RNA interference was achieved using Mission shRNA-encoding lentivirus directed to human cGAS mRNA (Sigma; GenBank/EMBL/DDBJ accession no. NM_138441) as recommended by the manufacturer’s protocols. Briefly, lentiviral vectors (in pLKO.1) containing cGAS shRNA sequences (shcGAS #1, TRCN0000428336; shcGAS #2, TRCN0000149811) and non-target shRNA control vector (shScramble, SHC016) were purchased from Sigma.
 
-## Real-time quantitative polymerase chain reaction (RT-qPCR)
+### Real-time quantitative polymerase chain reaction (RT-qPCR)
 
 The mRNA extraction was performed using the RNeasy Mini Kit (QIAGEN) according to the manufacturer’s instructions. Subsequently, total RNAs were converted into cDNA using the SuperScript III Reverse Transcriptase (Thermo Fisher Scientific) following the manual for first-strand cDNA synthesis. qPCR reactions were performed on a CFX384 Touch Real-Time PCR Detection System using 2X Power SYBR Green PCR Master Mix (Thermo Fisher Scientific). For each condition, technical triplicates were prepared and the quantitation cycle (Cq) was calculated. For normalization, GAPDH levels were used as an internal reference and the relative expression levels were presented. The primers used in qPCR were listed (See also Supplementary file 3).
 
-## Sample preparation for mass spectrometry
+### Sample preparation for mass spectrometry
 
 MHH-ES-1 cells were treated with or without Talazoparib (0.1 or 1 µM) for 24 hr. Cells were lysed with 1% SDS lysis buffer containing 10 mM HEPES, pH 7.0, 2 mM MgCl2, 20 U/mL universal nuclease. Protein concentrations were determined with the BCA assay (Thermo Fisher Scientific). Samples from two biological replicates were reduced with 3 mM dithiothreitol (DTT) for 20 min and were alkylated with 25 mM iodoacetamide (IDA) for 30 min at room temperature (RT) in dark. The detergents were removed by methanol/chloroform precipitation. The proteins were re-solubilized in 8 M urea and digested by Lys-C at a 1:100 (w/w) enzyme/protein ratio for 2 hr, followed by trypsin digestion at a 1:100 (w/w) enzyme/protein ratio overnight at RT in 2 M urea. The peptides were desalted using Oasis HLB solid-phase extraction (SPE) cartridges (Waters) (Erickson et al., 2015) and approximately 100 μg of peptides from each sample were re-suspended in 200 mM HEPES, pH 8.5. The peptides were then labeled with the amine-based TMT 6-plex reagents (Thermo Fisher) for 1 hr at RT. Hydroxylamine solution was added to quench the reaction and the labeled peptide samples were combined. The TMT samples were lyophilized and reconstituted in buffer A (10 mM Ammonium formate, pH 10.0). Samples were centrifuged at 10,000 × g for 3 min using spin-X centrifuge tube filters (Thermo Fisher Scientific) prior to loading onto a ZORBAX 300Extend-C18 HPLC column (Agilent, Narrow Bore RR 2.1 mm x 100 mm, 3.5 μm particle size, 300 Å pore size). Peptides were fractionated by bRPLC (basic pH reversed phase HPLC) at a 0.2 mL/min flow rate using a gradient from 0% to 70% buffer B (1% Ammonium formate, pH 10.0% and 90% Acetonitrile). A total of seventeen fractions were collected, which were lyophilized, desalted, and analyzed by LC-MS/MS experiments.
 
-## Quantitative proteomic analysis by LC-MS/MS
+### Quantitative proteomic analysis by LC-MS/MS
 
 The TMT samples were analyzed on a Q-Exactive HF Mass Spectrometer (Thermo Fisher Scientific). MS/MS spectra were searched against a composite database of human protein sequences (Uniprot) and their reversed complement using the Sequest algorithm (Ver28) embedded in an in-house-developed software suite (Huttlin et al., 2010). MS1 and MS2 mass tolerances were set to be 50 ppm and 0.05 Da, respectively. Search parameters allowed for full tryptic peptides (two missed cleavage sites) with a static modification of 57.02146 Da on cystine (Carbamidomethyl), a variable modiﬁcation of 15.994915 Da on methionine (oxidation), and a static modification of TMT labels (229.16293 Da) on peptide N-terminus and lysine. Search results were filtered to include <1% matches (both peptide and protein level filtering) to the reverse database by the linear discriminator function using parameters including Xcorr, dCN, missed cleavage, charge state (exclude 1+ peptides), mass accuracy, peptide length, and fraction of ions matched to MS/MS spectra. Peptide quantification was performed by using the CoreQuant algorithm implemented in an in-house-developed software suite (Erickson et al., 2017). The labeling scheme for the TMT experiments is: 126: DMSO; 127: Talazoparib (0.1 µM); 128: Talazoparib (1 µM), 129: Talazoparib (1 µM); 130: Talazoparib (0.1 µM); 131: DMSO. For TMT quantification, a 0.03 Th window was scanned around the theoretical m/z of each reporter ion (126: 126.127726; 127: 127.124761; 128: 128.134436; 129: 129.131471; 130: 130.141145; 131: 131.138180) to detect the presence of these ions. The maximum intensity of each ion was extracted, and the signal-to-noise (SN) value of each protein is calculated by summing the reporter ion counts across all identified peptides. Because the same amount of peptides was used for each TMT channel, the total reporter ion intensity of each channel was summed across all quantified proteins, and was then normalized and reported. Data were exported to Excel for further analysis.
 
-## Statistics
+### Statistics
 
 All statistical analyses including unpaired Student’s t-tests, one- and two-way ANOVA tests were performed using the GraphPad Prism software (v8.2.0). The type of statistical analyses, parameters, and number of replicates are indicated for each experiment in the figure legends. Data were calculated as mean ± SEM or SD. The following indications of significance were used throughout the manuscript: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, n.s, not significant.

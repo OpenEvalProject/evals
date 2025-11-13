@@ -68,21 +68,21 @@ While these may be some steps in the right direction, we recognize that there is
 
 Below we give our thoughts and responses to these five points.
 
-## 1: Bias-awareness training
+### 1: Bias-awareness training
 
 This training may help and has been in process for some time, but frankly, it will not fix the problems being discussed here. There are already academic works appearing that show that anti-bias training does not result in changes to biased behavior (Chang et al., 2019; Glasman and Albarracín, 2006; Kaste, 2020) and more general reviews emphasize a profound lack of empirical support for success (Paluck and Green, 2009). The NIH should not rely (solely) on this strategy to create substantive change.
 
-## 2: Decouple the science/idea aspects of peer review from the person-based aspects
+### 2: Decouple the science/idea aspects of peer review from the person-based aspects
 
 This strategy is unlikely to be workable in practice (see below) but, more importantly, there is reason to believe it would not fix the grant award disparity even if it were possible to accomplish. Data from the NIH show that scores from the initial peer review process are most strongly correlated with Approach and Significance, somewhat less so with Innovation, and are correlated most weakly with Investigator and Environment (Berg, 2010; Rockey, 2011). Therefore, the grant review criterion most closely aligned with the person-based aspects of the application is a weak contributor to the final ranking, and therefore likelihood of funding, of grants.
 
-## 3: Anonymizing applications
+### 3: Anonymizing applications
 
 Anonymization is also unlikely to fix the issues being discussed here. In a recent study conducted by CSR (and described in CSR, 2020a), 1200 applications were anonymized according to PI name, but redaction was only partially successful (i.e., some reviewers figured out which applications came from which PIs), and scores for applications from African-American/Black scientists did not improve. This undetected breakdown in the anonymization is likely to persist if this strategy is implemented for all applications because PIs work on incredibly niche areas that are easily recognizable according to preliminary data and study design, and because PIs frequently cite their own work in grant applications.
 
 The difficulty of anonymization was further evident in a study in which researchers at the University of Wisconsin-Madison and the University of Arkansas attempted to detect implicit bias by changing the names of PIs in grant applications and having them reviewed by different reviewers in parallel (Forscher et al., 2019). The PIs on the applications were altered with 'white names', such as Greg Murphy and Anne Kelly, and with 'Black names', such as Darnell Washington and Latonya Jackson. The authors of this study, which was funded by the NIH in the wake of Ginther et al., 2011, reported that they "find little to no race or gender bias in initial R01 evaluations". However, they did not systematically determine if reviewers divined the true purpose of the study, and thus did not allow for the possibility that detection of the experimental manipulation of PI race might have influenced how the reviewers scored the applications. Indeed, the study did indicate that some reviewers caught on to their purpose, which makes it difficult or impossible to quantify the role of implicit bias, which was the target being studied.
 
-## 4: Broadening of the pool of reviewers with respect to career-stage
+### 4: Broadening of the pool of reviewers with respect to career-stage
 
 This proposal has some hope of addressing the racial disparities observed in the grant funding process. According to one study, 2.4% of study section members in the period FY 2011–2015 were African-American/Black (compared with 77.8% who were white; figures based on reviewers with reported demographic data; Hoppe et al., 2019). However, in the 2010 census, 14% of US citizens identified themselves as African-American, or mixed race including African-American.
 
@@ -96,19 +96,19 @@ It is clear that a lower target is a recipe for continuing the disparities of th
 
 It is encouraging that the CSR wants to broaden its pool of reviewers, but it is perplexing that it proposes to achieve this only by recruiting younger reviewers. They say they will use this strategy because “these cohorts are more diverse in both gender and race/ethnicity”. However, it is not clear why the policy does not simply instruct the Scientific Review Officers who oversee the peer-review process to recruit more African-American/Black reviewers. It is unlikely that all the mid- and late-career African-American/Black PIs with grants are already reviewing applications for the NIH. One strategy that could be employed is to ask African-American/Black researchers who have submitted proposals that scored in the top half of applications, but were not funded, to review applications. However, no matter what form such an initiative or program would take, it would undoubtedly have positive effects on the funding rates for African-American/Black applicants. It would also give a greater number of African-American/Black scientists much-needed insight into the peer review process, thereby increasing the likelihood that their own applications will be competitive for funding.
 
-## 5: Identify and take action against those who manipulate the review process
+### 5: Identify and take action against those who manipulate the review process
 
 This point sounds admirable, and has been of concern across the NIH recently (Lauer and Amero, 2019), but one wonders why this hasn’t always been the case. Moreover, it is not clear how it is related to the review of grant applications with African-American/Black PIs: if the CSR thinks that the peer review process has been manipulated to advantage or disadvantage racial groups, it should be transparent about these concerns.
 
 ## Recommendations to address racial disparities in grant funding
 
-## 1: The need for increased data transparency
+### 1: The need for increased data transparency
 
 The work of Ginther et al. and Hoppe et al. show that it is long past time for the NIH to publish relevant review statistics that pertain to race and ethnicity on a regular basis. The NIH already publishes success rates based on grant mechanism, type code (new grants versus competing continuations), the gender of the PI and the stage of investigator (see https://reporter.nih.gov/). The NIH has more recently issued statistics on per-investigator success over, say, a five-year interval which is a welcome addition. Importantly, the data for success rates for R01 grants across the NIH which are reported in the papers by Ginther et al. and Hoppe et al. should be reported for each Institute and Center, and also for other grant mechanisms. Rationales that too few applications are available and would somehow violate 'privacy' of applicants should not be tolerated as legitimate excuses. If this is perceived to be a problem, the simple fix would be to obtain consent from those applicants to include their de-identified applications in the dataset. We are confident that African-American/Black PIs would be happy to do this, but even if they are not, that should be their decision to make.
 
 The CSR should also publish race and ethnicity data for each standing study section on at least an annual basis. This should be accompanied by statistics on reviewer gender, geographic location, career stage and funding status. In order to ensure full transparency and the ability to analyze data over time, longitudinal data reaching back to the creation of specific study sections should be recovered, published and continued to be published with each update. The CSR should also publish success rates for applications and applicants to each study section disaggregated by race and ethnicity. Finally, the CSR should analyze and report the racial composition of special emphasis panels.
 
-## 2: Using paylines to reduce disparities
+### 2: Using paylines to reduce disparities
 
 As mentioned above, it is the director of the relevant NIH Institute or Center who makes the final decision about which grants are funded: the study sections and advisory councils or boards are only advisory. Some Institutes and Centers fund grants primarily in the order that they are ranked by peer review, whereas others do not. In this latter scenario, although applications with, say, a 25th percentile rank are more likely to be funded than applications with a 30th percentile rank, the Institute or Center might decide to fund one or more applications with a rank of 30th percentile and not fund one or more with a rank of 25th percentile (Kienholz and Berg, 2013). Such 'exception pay' decisions can have a significant impact on which applications are funded and which are not. As mentioned in Box 1, for the sample of applications studied by Hoppe et al., one of the present authors (MAT) estimated that approximately 119 applications with white PIs in the 35th–59th percentile range were funded, whereas zero applications from African-American/Black PIs with scores in this range were funded (Drugmonkey, 2020a).
 
@@ -116,7 +116,7 @@ It is important to note that only ~1.5% of total applications are submitted by 
 
 Based on statistical approaches that parse percentile scores into small ranges, then analyze funding rates for white and Black PIs, Hoppe et al. conclude that "final funding decisions by ICs, whether based on impact scores or discretionary funding decisions, do not contribute to the funding gap” (Hoppe et al., 2019). This conclusion is at clear odds with the reality that ~ 119 grants with white PIs were funded with percentile ranks worse than any application funded with a Black PI.
 
-## 3: Using a top-down approach previously used to help early-stage investigators
+### 3: Using a top-down approach previously used to help early-stage investigators
 
 The NIH has a long history of concern about the low success rates of grant applications from early-career researchers, and initiatives to fix a perceived bias against such researchers date back to at least 1977 (NIH, 2020). In 2007, for example, policies were put in place to enhance the funding of applications with Early Stage Investigator (ESI) PIs, including exhortation of reviewers to be lenient and a relaxed payline that applied only to these applications. It is critical to note that the NIH did not engage in any investigations into the 'real source' of the ESI funding disparity, that it did not propose anti-bias training of reviewers, and that it did not propose that improvements to the training pipeline would somehow solve the problem many years in the future. The NIH simply declared the funding disparity an inappropriate bias in the review process and put in place a set of top-down quota-based affirmative action procedures to redress the funding disparity.
 

@@ -40,49 +40,113 @@ Our study reveals a new mechanism by which pathogens attenuate the host defense 
 
 ## Results
 
-## NleE attenuates autophagosome formation in host cells
+### NleE attenuates autophagosome formation in host cells
 
 Gram-negative bacterial cell wall-derived lipopolysaccharide (LPS) is a potent proinflammatory pathogen-associated molecule. LPS treatment significantly induced autophagy in HeLa cells, as measured by increases in the numbers of LC3-positive puncta and the levels of lipidated LC3 (LC3-II) (Figure 1A,B; Lapaquette et al., 2010). We found that LPS-induced autophagy was partially suppressed by the T3SS effector NleE (Figure 1A,B). The NleE-mediated suppression phenotype was also observed in starvation-induced autophagy and basel-level autophagy (Figure 1C,D). We next examined whether NleE affects another LC3-mediated process. Mammalian cells were transfected with polystyrene beads to mimic bacterial infection, and LC3 signaling was efficiently induced around the beads (Figure 1E; Xu et al., 2019; Kobayashi et al., 2010). Beads entrapment by LC3-positive compartments were partially suppressed by NleE (Figure 1E). Furthermore, live EPEC, but not EPEC ΔNleE, attenuated autophagy in macrophages derived from THP-1 cells, as indicated by decreased LC3-positive puncta (Figure 1F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) NleE attenuates LPS-induced autophagy in HeLa cells. (A) HeLa cells expressing GFP-LC3 were transiently transfected with NleE-Flag. Representative images are shown. Scale bars, 20 μm. GFP-LC3 puncta per cell were quantified (N = 25). (B) Immunoblotting analysis of endogenous LC3 lipidation (LC3-II) in HeLa cells. Shown are the LC3–I (cytosolic) and LC3–II (lipid conjugated) forms as detected with antibodies to LC3. Experiments were repeated three times and quantified. (C, D) Starvation-induced autophagy and basel-level autophagy were partially suppressed by NleE in HeLa cells. Representative images are shown for each condition. Scale bars, 20 μm. GFP-LC3 puncta per cell were quantified (N = 24 for C and N ≥ 30 for D). (E) The LC3-mediated process was partially suppressed by NleE in HeLa cells. Arrowheads indicate internalized beads entrapped by LC3. Scale bars, 10 μm. The percentages of LC3 positive beads per cell were quantified (N = 21). (F) Live EPEC attenuates host autophagy dependent on NleE. WT EPEC and EPEC ΔNleE were cocultured with THP-1-induced macrophages. Cells were stained with anti-LC3 antibody. Scale bars, 5 μm. LC3 puncta per cell were quantified (N = 28). (G–H) NleE interferes with the autophagosome formation, but not the autophagosome fusion step. (G) HeLa cells were transfected with mCherry-GFP-LC3 or mCherry-GFP-LC3 and NleE. Representative images are shown. Scale bars, 10 μm. The ratio of autolysosomes (red) to the total autophagic vesicles (red+yellow) was quantified (N = 24). (H) NleE attenuates autophagy in choroquine (CQ)-treated host cells. Scale bars, 10 μm. GFP-LC3 puncta per cell were quantified (N = 26). All puncta quantification was performed in cells from three independent experiments. All quantification data represent the mean ± SD of three independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) EPEC suppresses IL-6 production of macrophages in a NleE-dependent manner. (B) NleE affects IL-6 production independent of TAB2/TAB3-mediated NF-κB suppression. (A, B) THP-1 cells were induced with 200 ng/ml PMA for 48 hr and infected with EPEC WT or EPEC ΔNleE for 4 hr. IL-6 secretion into supernatants was collected and measured by ELISA. (C) Autophagy affects host responses toward EPEC. THP-1 cells were induced with 200 ng/ml PMA for 48 hr and treated with 1 uM Wortmannin for 2 hr before EPEC WT infection.
 
 To determine which stage of autophagy was affected by NleE, we examined the mCherry-GFP-LC3 reporter (Figure 1G). The GFP signal of the mCherry-GFP-LC3 reporter is quenched in acidified compartments. The red signal represents functional autolysosomes (AL), while yellow puncta indicate autophagic structures (AP) prior to the formation of acidified AP such as phagophores (autophagosomal precursors), nascent autophagosomes, and unacidified amphisomes (fused vesicles between autophagosomes and endocytic vesicles). The total number of autophagic vesicles (sum of AL + AP) decreased in cells expressing NleE (Figure 1G). However, the ratio of AL to the total autophagic vesicles was not affected by NleE, indicating that NleE interferes with autophagosome formation (Figure 1G). Consistently, GFP-LC3 puncta also decreased in NleE-expressing cells treated with the lysosome inhibitor chloroquine (CQ), which further indicated that NleE functions in inhibiting autophagosome formation (Figure 1H). Collectively, NleE blocks autophagosome formation in host cells.
 
 To test whether NleE inhibition of autophagy affects host responses toward EPEC, we examined IL-6 production in host cells. IL-6 production in macrophages increased during EPEC ΔNleE infection, compared with WT EPEC infection (Figure 1—figure supplement 1A). Since NleE suppressed NF-κB pathway which is also involved in cytokine regulation (Zhang et al., 2012; Zhang et al., 2008), we constitutively actived the NF-κB pathway by expressing IKKbCA (S177E/S181E) in macrophages. NleE still suppressed IL-6 production during EPEC infection in macrophages expressing IKKbCA, which indicated that NleE affects IL-6 production independent of TAB2/TAB3-mediated NF-κB suppression (Figure 1—figure supplement 1B). Furthermore, autophagy inhibitor treatment partially suppressed IL-6 production of macrophages during EPEC infection (Figure 1—figure supplement 1C).
 
-## Genetically incorporated Uaas identified PSMD10 as an interaction partner of NleE
+### Genetically incorporated Uaas identified PSMD10 as an interaction partner of NleE
 
 To explore the molecular mechanism by which NleE suppresses host autophagy, we sought to identify potential NleE interaction partners in living cells. Using the Tyrosine tRNA synthetase pair derived from E. coli, the photocrosslinking Uaa p-azido-phenylalanine (Azi, Figure 2A) was genetically incorporated into specific positions (X) of NleE-Flag. The expression level of NleE-Azi protein was ~50–100% of wild-type (WT) protein at 90% positions (Figure 2—figure supplement 1A). The reactive Uaas form crosslinking moieties upon UV irradiation and covalently capture proximal natural amino acids of the interaction partners only if the XUaa is located at the protein interaction surface (Figure 2B). Azi was incorporated into NleE at 63 residues located in the substrate binding domain and the active center (Figure 2—figure supplement 1B). The covalent complexes were found to correspond to the adduct molecular weight (MW) on denaturing SDS–PAGE gels (Figure 2B). The most robust ultraviolet (UV)-dependent adduct band (~55 kDa) was detected in cells expressing NleE-K219Azi-Flag (Figure 2C). The covalent capture was site-specific, as we failed to detect the adduct band when Azi was introduced into positions near K219, such as N218 (Figure 2C). No crosslinking bands were found in the WT NleE samples and non-UV-treated NleE-K219Azi-Flag-negative controls (Figure 2D). Moreover, incorporation of another photocrosslinking Uaa (DiZPK, Figure 2A) at K219 of NleE also resulted in capture of covalent complexes of the same size (Figure 2—figure supplement 1C). Together, we found that the potential partners of NleE could be crosslinked by NleE-K219Uaa-Flag in live cells.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig2-v2.jpg)
+
+**Figure 2.:** (A) Photocrosslinking Uaas used in this study. (B) Schematic diagram of genetically incorporated Uaas covalent capture interaction partners. (C) Photocrosslinking experiments map of NleE sites involved in covalent capture of interaction partners. Residues replaced by Azi are indicated in the upper row. Cell lysates were separated on SDS-PAGE gels and analyzed by immunoblotting using anti-Flag antibodies. (D) The photocrosslinking is Uaas and UV dependent. No crosslink band was identified in the WT NleE sample and NleE-K219Azi sample without UV treatment. (E) Validation of PSMD10 as a NleE interaction partner in living cells. Covalent complexes were detected with antibodies to HA, PSMD10, and Flag.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Incorporation efficiency of Azi into NleE in HEK293T cells. (B) Structure of NleE with Uaa incorporation domains colored. The substrate binding domain was labeled with red, and the active center was colored blue. The subdivision of the domain is based on the crystal structure of NleE (PDB ID: 4R29). (C) The NleE-K219DiZPK-Flag mutant captures the covalent complex.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Flow chart of identification of NleE binding partners. (B) List of NleE interaction candidates in cells. Proteins existing in the NleE-K219Azi-Flag-His samples, but absent or present at lower levels in the control samples were selected as candidates. (C) Screen NleE interaction partners from candidates. Shown are western blot bands detected with antibodies to HA and Flag. Arrowheads indicate NleE-PSMD10 crosslinking complexes. (D) Fusion of NleE to GFP resulted in upshifting of the covalent complexes. The GFP-NleE protein runs at MW of ~53 kDa. The GFP-NleE-PSMD10 covalent complexes run an apparent band at ~80 kDa dependent on UV treatment. Arrowheads indicate GFP-NleE-PSMD10 crosslinking complexes. (E) NleE and PSMD10 crosslinking occurs in the cytoplasm. Cytoplasmic and nuclear proteins were purified and analyzed by immunoblotting using anti-Flag antibodies. (F–G) NleE mutants with Azi incorporation fail to crosslink PSMD10 in living cells. PSMD10 was transiently transfected with NleE△209IDSYMK214 mutant(F), NleE49AAAA52 mutant and NleER107A-K219Azi mutant (G) individually into 293 T cells. Samples were treated with UV (365 nm). Shown are western blot bands detected with antibodies to HA and Flag.
+
 Next, the crosslinked NleE-K219Azi-Flag-His complexes were purified with anti-Flag beads, followed by nickel beads purification under denaturing condition to eliminate most of the noncovalent binding partners (Figure 2—figure supplement 2A). MS was used and identified 18 candidates (referred to as Y) that were present in NleE-K219Azi samples but absent or present at lower level in WT NleE samples (Figure 2—figure supplement 2B). All HA-tagged candidates were individually coexpressed with NleE-K219Azi-Flag in living cells for further screening. A clear crosslinking band was detected only in UV-treated NleE-K219Azi and PSMD10-HA coexpressing sample during anti-HA immunoblotting (Figure 2—figure supplement 2C). No other bands was detected in WT and non-UV-treated NleE-K219Azi controls, suggesting that PSMD10 crosslinked with NleE (Figure 2E). Western blots using anti-PSMD10 antibody also detected the covalent complex bands (Figure 2E). Fusion of NleE to GFP resulted in upshifting of the crosslink band to ~80 kDa on SDS–PAGE gels (Figure 2—figure supplement 2D). Although NleE is present in the cytoplasm and nucleus, we detected NleE and PSMD10 crosslinking only in the cytoplasm (Figure 2—figure supplement 2E). The NleE△209IDSYMK214 mutant with Azi incorporated did not crosslink with PSMD10 (Figure 2—figure supplement 2F). The NleER107A mutant that loss the SAM binding ability and NleE49AAAA52 mutant that lack 49GITR52 substrate binding motif also failed to crosslink with PSMD10 (Figure 2—figure supplement 2G). These results indicated that the interaction between NleE and PSMD10 is specific. Thus, the PSMD10 protein interacts with NleE in living cells.
 
-## PSMD10 is essential for NleE suppression of host autophagy
+### PSMD10 is essential for NleE suppression of host autophagy
 
 PSMD10 is a non-ATPase subunit of the 26S proteasome. Given that PSMD10 usually functions as a chaperone and interacts with target proteins to promote their degradation by the proteasome (Lu et al., 2017; Hori et al., 1998; Dawson et al., 2002), we evaluated the effect of PSMD10 on NleE protein degradation. We did not find obvious differences in NleE protein levels and ubiquitination levels in WT and PSMD10 KO cells (Figure 3—figure supplement 1A), suggesting that PSMD10 may not be involved in regulating NleE protein levels. Consistent with this finding, immunoprecipitation and pulldown experiments showed that PSMD10 interaction with 26S proteasome AAA-ATPase subunit Rpt3 was not affected by NleE (Figure 3—figure supplement 1B–C).
 
 To determine whether the interaction of PSMD10 with NleE plays a role in regulating autophagy, we examined the effect of NleE on starvation and LPS-induced autophagy in PSMD10-deficient cells. Both LPS and starvation-induced autophagy reduced in PSMD10 KO cells as indicated by the number of GFP-LC3 puncta (Figure 3A–D). While NleE failed to further suppress autophagy in LPS-treated (Figure 3A,B) and starved-treated PSMD10 KO cells (Figure 3C,D). Consistently, the LC3-II/I level in PSMD10 KO cells was not altered by NleE (Figure 3E,F). Expression of full-length PSMD10 restored the autophagy suppression phenotype caused by NleE in LPS-treated (Figure 3G,H) and starved PSMD10-deficient cells (Figure 3I,J). In addition, EPEC infection failed to suppress autophagy in the PSMD10 KD macrophages (Figure 3K). Thus, the bacterial effector NleE regulates starvation and LPS-induced autophagy in host cells in a PSMD10-dependent manner.
 
-## NleE interacts with the N-terminus of PSMD10
+![Figure 3.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) NleE fails to suppress host autophagy in PSMD10 KO cells. Representative images are shown. Scale bars, 20 μm. GFP-LC3 puncta per cell were quantified for LPS (B) and starvation-induced conditions (D) (N ≥ 24). (E, F) NleE does not affect the endogenous LC3-II/I ratio in PSMD10 KO cells. Shown are the LC3–I (cytosolic) and LC3–II (lipid conjugated) forms detected with anti-LC3 antibodies. Experiments were repeated three times. (G–J) WT PSMD10 restores the NleE suppression of autophagy in PSMD10 KO cells. Representative images are shown. Scale bars, 20 μm. LC3 puncta per cell were quantified for LPS (H) and starvation-induced conditions (J) (N≥27). (K, L) EPEC suppresses autophagy in a PSMD10 dependent mammer. PSMD10 KD THP-1 cells were induced with 200 ng/ml PMA for 48 hr and infected with EPEC WT or EPEC ΔNleE for 3 hr. Representative images are shown. Scale bars, 5 μm. (L) LC3 puncta per cell were quantified (N=25). All quantification was performed in cells from three independent experiments. All quantification data represent the mean ± SD of three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) NleE protein levels and ubiquitination levels were not affected by PSMD10. Shown are immunoblots of Flag IP and total cell lysates (Input). (B, C) PSMD10 interaction with Rpt3 was not affected by NleE. (B) Immunoblots of Flag IP and total cell lysates (Input) are shown. (C) GST-pulldown assay monitors the interaction between PSMD10 and Rpt3 in the presence or absence of NleE. (D) The C4S mutation did not affect PSMD10 interaction with Rpt3.
+
+### NleE interacts with the N-terminus of PSMD10
 
 NleE was the first identified member of a class of SAM-dependent methyltransferases in EPEC. The methylated NleE substrate TAB2 showed a size shift in native gel (Zhang et al., 2012). However, NleE treatment did not result in a PSMD10 size shift in native gel, suggesting that PSMD10 was not methylated (Figure 4—figure supplement 1A). MS analyses failed to identify methylated Cys residues on PSMD10 either in living cells or in vitro, regardless the presence of SAM (Figure 4—figure supplement 1B,C). NleE-K219Azi crosslinking with PSMD10 was also not affected by SAM (Figure 4—figure supplement 1D). These results indicated that PSMD10 maybe not a substrate of NleE. Although the methylation activity of NleE may not necessary for its effect on PSMD10, the related mutations may cause slight changes of NleE structure and affect its crosslinking with PSMD10.
 
 We next investigated the intermolecular interactions of residue pairs of NleE-PSMD10 complexes in living cells using proximity-enabled crosslinking Uaas. The proximity-enabled Uaa BetY, which selectively reacts with Cys, was incorporated into several sites of NleE individually (Figure 4—figure supplement 2A, Figure 4A; Xiang et al., 2013; Xiang et al., 2014; Chen et al., 2014; Wang et al., 2018; Cigler et al., 2017; Xuan et al., 2017). These NleE-XBetY mutants were coexpressed with wild-type (WT) PSMD10, which contains five Cys. NleE-XBetY-PSMD10 crosslinking bands were identified at multiple sites, all of which were located at the entrance of the active center (Figure 4B,C). Mutation of PSMD10 Cys residues that reacted with NleE-BetY prevented the formation of the covalent bond, allowing determination of the interacting amino acid pairs in the NleE-PSMD10 complexes (Figure 4—figure supplement 2B). We individually mutated all five Cys residues (C4, C11, C48, C107, and C180) in PSMD10. Photocrosslinking experiments showed that all PSMD10 Cys mutants retained NleE binding activity (Figure 4—figure supplement 2C). However, the C4S mutation in PSMD10 disrupted BetY-mediated covalent interaction between PSMD10 and NleE (Figure 4D). In summary, these results indicate that NleE interacts with the N-terminus of PSMD10.
 
-## NleE blocks PSMD10 homodimerization
+![Figure 4.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig4-v2.jpg)
+
+**Figure 4.:** (A) Covalent crosslinking between cysteine (Cys) in PSMD10 and Uaa (BetY) in NleE. BetY was genetically incorporated in the substrate binding domain (colored red) and active center (colored blue) of NleE. (B) NleE-XBetY mutants covalent capture PSMD10. Residues X replaced by BetY are indicated in the upper row. (C) NleE structure with BetY positions crosslinked with PSMD10 colored in magenta. The NleE structure was downloaded from the Protein Data Bank with the accession code 4R29. (D) Cys4 mutation of PSMD10 disrupts covalent crosslinking with NleE-N141BetY. The mutated Cys in PSMD10 are indicated in the upper row.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) PSMD10 was not methylated by NleE. (A, B) PSMD10 was not methylated by NleE in vitro. (A) Samples were subjected to native page analysis. (B) MS analysis of purified PSMD10 protein. (C) PSMD10 is not methylated by NleE in living cells. Cells were subjected to anti-Flag immunoprecipitation followed by MS analysis. (D) Interaction between NleE and PSMD10 is not affected by SAM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Incorporation efficiency of BetY into NleE in HEK293T cells. The working concentration of BetY is 0.5 mM in DMEM. (B) Schematic representation of pinpointing interaction residue pairs. (C) PSMD10 Cys mutants maintain binding activity with NleE. PSMD10 Cys mutants were coexpressed with NleE-K219Azi. Samples were treated with UV (365 nm). Shown are western blot bands detected with antibodies to HA and Flag.
+
+### NleE blocks PSMD10 homodimerization
 
 We found that purified PSMD10 was separated into two peaks by size-exclusion chromatography (SEC) (Figure 5A). Based on the multiangle laser light scattering analysis, the two peaks corresponded to the PSMD10 dimer and PSMD10 monomer (Figure 5A). The dimer fraction was analyzed on a denaturing gel and found to have an MW corresponding to that of the PSMD10 monomer (Figure 5A). PSMD10 homodimerization was also detected in live mammalian cells, as revealed by native gel electrophoresis and capture by multiple PSMD10-X-Azi mutants (Figure 5B, Figure 5—figure supplement 1A). Furthermore, both in living cells and in vitro, the PSMD10 homodimer disappeared in the presence of reducing agents (DTT and β-mercaptoethanol [β-Me]), indicating that disulfide bond-mediated dimerization (Figure 5C, Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig5-v2.jpg)
+
+**Figure 5.:** (A) C4S mutation suppresses homodimerization of purified PSMD10 protein in vitro. Protein from the dimer fraction of WT PSMD10 shows MW corresponding to the PSMD10 monomer on SDS–PAGE analysis. (B) Covalent capture of PSMD10 homodimers in living cells. (C) Disulfide bonds stabilize the PSMD10 homodimer in vitro. The dimer and monomer PSMD10 were analyzed on native gel in the absence and presence of 100 mM DTT or 1% β-Me. (D) The disulfide bond of Cys4 stabilizes the PSMD10 homodimer in vitro. (E) Disulfide bonds at the N-terminus stabilize homodimer of PSMD10. (F) NleE suppresses PSMD10 homodimerization in living cells. (G–H) NleE partially suppresses PSMD10 homodimer crosslinking by Uaas in living cells. Crosslinking efficiency were quantified (H). Quantification data represent the mean ± SD of independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Disulfide bonds stabilize the PSMD10 homodimer in living cells. HEK293T cells expressing Flag-PSMD10 were analyzed on native gel in the absence and presence of DTT. (B) The disulfide bond of Cys4 stabilizes the PSMD10 homodimer in living cells. PSMD10 KO cells were transiently transfected with WT PSMD10 or PSMD10 Cys mutants. Cells were collected and subjected to native page analysis followed by immunoblotting. (C, D) Covalent capture of PSMD10 C4S homodimer. (C) Purified PSMD10-WT/C4S/C11S proteins were crosslinked with 1 mM dithiobis succinimidyl propionate (DSP) or disuccinimidyl suberate (DSS). The reaction products were separated on SDS–PAGE. (D) PSMD10 KO cells were transiently transfected with PSMD10-N7/I219Azi or PSMD10-C4S-N7/I219Azi and irradiated with UV (365 nm).
 
 To identify the Cys residues in PSMD10 involved in dimerization, we mutated all five Cys residues individually. We failed to detect PSMD10 C4S homodimers both in vitro and in living cells on native gels (Figure 5D, Figure 5—figure supplement 1B). Consistently, the purified PSMD10 C4S protein resulted in only one peak corresponding to the PSMD10 monomer in SEC (Figure 5A). However, crosslinking with disuccinimidyl suberate (DSS) and genetically incorporated Azi allowed capture of homodimerized PSMD10 C4S mutants (Figure 5—figure supplement 1C,D), which indicate that Cys4 is involved in stabilization of the PSMD10 homodimer, but not in dimerization of PSMD10. Introduction of a disulfide bond at the N-terminus via mutation of M1/G3/V5/N7 to Cys stabilized the Flag-PSMD10 C4S homodimer (Figure 5E). These results together demonstrate that the disulfide bond at the N-terminus of PSMD10 plays a vital role in stabilization of the PSMD10 homodimer.
 
 NleE affects the N-terminus of PSMD10, which is involved in stabilization of the PSMD10 homodimer. Therefore, we determined whether NleE mediated suppression of PSMD10 homodimerization. Native gel electrophoresis showed that NleE suppressed PSMD10 homodimerization in cells (Figure 5F). The PSMD10 homodimers that captured by Azi were partially impaired by NleE (Figure 5G–H). The results together indicate that NleE affecting on N-terminus of PSMD10 attenuates PSMD10 homodimerization.
 
-## NleE attenuates autophagy by inhibiting the interaction of PSMD10 homodimer with ATG7
+### NleE attenuates autophagy by inhibiting the interaction of PSMD10 homodimer with ATG7
 
 PSMD10 has been reported to promote starvation-induced autophagy by interacting with ATG7 to elevate LC3-II formation and by interacting with HSF1 to activate ATG7 transcription (Luo et al., 2016). We next examined the binding activity of PSMD10 with ATG7 and HSF1 in the presence of NleE. Immunoprecipitation assays demonstrated that NleE dramatically suppressed the interaction of PSMD10 with ATG7 in living cells (Figure 6A), but not the interaction of PSMD10 with HSF1 (Figure 6B; Dawson et al., 2002; Luo et al., 2016; Wang and Cheng, 2017). As expected, the mRNA and protein levels of ATG7 were not affected by NleE (Figure 6C,D). ATG7 acts as an E1-like enzyme to catalyze the conjugation of LC3 with lipid phosphatidylethanolamine (PE). The colocalization of ATG7 with LC3 puncta was partially suppressed by NleE (Figure 6E). Importantly, PSMD10 interaction with ATG7 was suppressed by EPEC in a NleE-dependent manner (Figure 6F). Thus, NleE attenuates host autophagy by blocking the interaction of PSMD10 with ATG7.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig6-v2.jpg)
 
-**Figure 6.:** (A,B) NleE suppresses the PSMD10 interaction with ATG7, but not the interaction with HSF1. Immunoblots of anti-Flag immunoprecipitates (Flag IP) and total cell lysates (Input) are shown. (C) Transcription of ATG7 is not affected by NleE in HeLa cells. Real-time PCR was performed to detect mRNA level of ATG7. Data represent the mean ± SD of three independent experiments. Each sample performs three times technical repeats. (D) NleE does not affect the protein level of ATG7 in HeLa cells. Cells were treated with 10 µg/ml LPS for 12 hr and analyzed by immunoblotting using anti-Flag and anti-ATG7 antibodies. (E) NleE suppresses ATG7 colocalization with LC3. Representative images are shown. Scale bars, 10 μm. (F) PSMD10 interaction with ATG7 was suppressed by EPEC in a NleE dependent manner. HEK293T cells were transiently transfected with PSMD10 or PSMD10 and ATG7. 24 hr later, the cells were infected with EPEC or EPEC ΔNleE for 4 hr. Shown are immunoblots of Flag IP and total cell lysates (Input).Figure 6—source data 1.Figure 6C.Figure 6—source data 2.Figure 6.
+**Figure 6.:** (A,B) NleE suppresses the PSMD10 interaction with ATG7, but not the interaction with HSF1. Immunoblots of anti-Flag immunoprecipitates (Flag IP) and total cell lysates (Input) are shown. (C) Transcription of ATG7 is not affected by NleE in HeLa cells. Real-time PCR was performed to detect mRNA level of ATG7. Data represent the mean ± SD of three independent experiments. Each sample performs three times technical repeats. (D) NleE does not affect the protein level of ATG7 in HeLa cells. Cells were treated with 10 µg/ml LPS for 12 hr and analyzed by immunoblotting using anti-Flag and anti-ATG7 antibodies. (E) NleE suppresses ATG7 colocalization with LC3. Representative images are shown. Scale bars, 10 μm. (F) PSMD10 interaction with ATG7 was suppressed by EPEC in a NleE dependent manner. HEK293T cells were transiently transfected with PSMD10 or PSMD10 and ATG7. 24 hr later, the cells were infected with EPEC or EPEC ΔNleE for 4 hr. Shown are immunoblots of Flag IP and total cell lysates (Input).
 
 In addition, we demonstrated that PSMD10 also coimmunoprecipitates with ATG10 and ATG12 in living cells (Figure 7—figure supplement 1A). Interestingly, deleting the first ankyrin repeat prevented PSMD10 interaction with ATG7 and ATG10 (Figure 7A), but not its interaction with ATG12 in living cells (Figure 7B). Photocrosslinking demonstrated that the last three ankyrin repeats of PSMD10 directly interact with ATG7 (Figure 7—figure supplement 1B,C). Three to five ankyrin repeats of PSMD10 were found to be responsible for binding with ATG12 (Figure 7—figure supplement 1D). Consistently, PSMD10 C4S mutant failed to interact with ATG7 and ATG10 (Figure 7—figure supplement 1E,F), while interacted with Rpt3 (Figure 3—figure supplement 1D). Thus, PSMD10 homodimerization may play important roles in autophagy, but not in proteasome. As expected, PSMD10 C4S failed to enhance starvation and LPS-induced autophagy in PSMD10 KO cells (Figure 7C, Figure 7—figure supplement 2A,B). Moreover, PSMD10 C4S also failed to rescue the colocalization defect of ATG7 and LC3 in PSMD10 KO cells (Figure 7D). Nevertheless, Uaa-mediated chemical crosslinking stabilized the PSMD10 C4S homodimer and restored its binding activity with ATG7 (Figure 7E). Disulfide bonds in PSMD10 C4S mutant restored its binding activity with ATG7 (Figure 7F) and enhanced autophagy in PSMD10 KO HeLa cells (Figure 7G, Figure 7—figure supplement 2C). Furthermore, PSMD10 C11S, but not PSMD10 C4S, rescued the NleE-mediated autophagy suppression phenotype in PSMD10 KO cells (Figure 7H, Figure 7—figure supplement 2D–E). Altogether, our data indicate that stabilization of the PSMD10 homodimer is essential for its interaction with ATG7 and autophagy promotion. Therefore, NleE-mediated monomeric PSMD10 fails to interact with ATG proteins and promote autophagy.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig7-v2.jpg)
+
+**Figure 7.:** (A) The N-terminus of PSMD10 is indispensable for interacting with ATG7 and ATG10. Shown are immunoblots of anti-Flag immunoprecipitates (Flag IP) and total cell lysates (Input). (B) Deletion of the PSMD10 N-terminus does not affect its interaction with ATG12. (C) The PSMD10 C4S mutant failed to enhance LPS and starve-induced autophagy in PSMD10 KO cells. Scale bars, 10 μm. (D) ATG7 and LC3 were not colocalized in PSMD10 KO cells expressing the PSMD10 C4S mutant. Representative images are shown. Scale bars, 10 μm. (E, F) Stabilized PSMD10 C4S homodimers restore its interaction with ATG7 in living cells. Shown are immunoblots of anti-Flag immunoprecipitates (Flag IP) and total cell lysates (Input). PSMD10 C4S homodimers stabilized by chemical crosslinking (E) and disulfide bonds (F). (G) The stabilized PSMD10 C4S homodimer functions in enhancing autophagy in PSMD10 KO cells. Scale bars, 10 μm. (H) NleE attenuates host autophagy in a PSMD10 homodimer-dependent manner. The PSMD10 C11S mutant, but not the PSMD10 C4S mutant, rescued the NleE functions in regulating host autophagy in PSMD10 KO cells. Scale bars, 10 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) PSMD10 interacts with ATG10 and ATG12 in living cells. Shown are immunoblots of anti-Flag immunoprecipitates (Flag IP) and total cell lysates (Input). (B, C) Photocrosslinking experiments map of the PSMD10 interaction surface with ATG7. Residues X replaced by DiZPK are indicated in the upper row. (D) Three to five ankyrin repeats of PSMD10 are indispensable for interacting with ATG12. Shown are immunoblots of anti-Flag immunoprecipitates (Flag IP) and total cell lysates (Input). (E, F) The PSMD10 C4S mutation destroyed its interaction with ATG7 (E) and ATG10 (F).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A, B) The PSMD10 C4S mutant was unable to enhance autophagy in PSMD10 KO HeLa cells. Autophagy was induced by EBSS (A) or 10 µg/ml LPS (B). LC3 puncta per cell were quantified. (A) N = 20 and (B) N = 35. (C) The stabilized PSMD10 C4S homodimer enhances autophagy in PSMD10 KO HeLa cells. LC3 puncta per cell were quantified (N = 29). (D–E) NleE attenuates host autophagy in PSMD10 KO cells in a PSMD10 homodimer dependent manner. The PSMD10 C11S homodimer (E), but not the PSMD10 C4S mutant (E), rescued the NleE functions in regulating host autophagy in PSMD10 KO cells. LC3 puncta per cell were quantified (N = 23). All quantification was performed in cells from three independent experiments. All quantification data represent the mean ± SD of three independent experiments.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/69047/elife-69047-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A, B) PSMD10 binds with AD of ATG7 in living cells. Shown are immunoblots of Flag IP and total cell lysates (Input). (C) PSMD10 dimerization and NleE did not affect the dimerization of ATG7 in living cells. PSMD10 KO cells were transiently transfected with plasmids indicated in the upper rows. Shown are immunoblots of Flag IP and total cell lysates (Input). (D, E) ATG7 interaction with LC3 and ATG3 was not affected by the C4S mutation. PSMD10 KO cells were transiently transfected with Flag-ATG3(D)/LC3(E), HA-ATG7, and PSMD10 WT/C4S/C11S. Shown are immunoblots of Flag IP and total cell lysates (Input).
 
 To determine which region of ATG7 is required for its interaction with PSMD10, a series of ATG7 deletion mutants containing different domains was used (Figure 7—figure supplement 3A). The adenylation domain (AD) that mediates ATG7 homodimerization (Noda et al., 2011) was found to be responsible for the binding of ATG7 with PSMD10 (Figure 7—figure supplement 3B). Notably, homodimerization of ATG7 is thought to play an essential role in LC3 modification (Noda et al., 2011). LC3 is initially recognized by the C-terminal tail of ATG7 and transferred to AD (Noda et al., 2011). LC3 is then transferred to Atg3, which binds to the opposite protomer of the ATG7 homodimer with much higher efficiency (Noda et al., 2011). However, the dimerization of ATG7 was not affected by WT PSMD10, PSMD10 C4S mutant, or NleE (Figure 7—figure supplement 3C). The ATG7/LC3 and ATG7/ATG3 interactions were not affected by either WT PSMD10 or PSMD10 C4S mutant (Figure 7—figure supplement 3D,E). Therefore, the PSMD10 homodimer enhances autophagy through an unidentified mechanism, rather than through the effects of ATG7 dimerization or ATG7 interaction with LC3 and ATG3.
 
@@ -100,33 +164,435 @@ Collectively, our research demonstrated that EPEC has evolved strategies to bloc
 
 ## Materials and methods
 
-## Plasmids and antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ATG7</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 10533</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>PSMD10</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 5716</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ATG3</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 64422</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>LC3B</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 81631</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ATG10</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 83734</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ATG12</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 9140</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Rpt3</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 5704</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>TAB2</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 23118</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>HSF1</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 3297</td>
+    </tr>
+    <tr>
+      <td>Gene (Escherichia coli)</td>
+      <td>NleE</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: NC_011601.1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>EPEC E2348/69</td>
+      <td>National Institute of Biological Sciences</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>Tsingke Biotechnology</td>
+      <td>Catalog # TSV-A07</td>
+      <td>Chemically Competent Cell</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21</td>
+      <td>Tsingke Biotechnology</td>
+      <td>Catalog # TSV-A09</td>
+      <td>Chemically Competent Cell</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>National Collection of Authenticated Cell Cultures</td>
+      <td>Catalog # TCHu187</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>THP-1</td>
+      <td>National Collection of Authenticated Cell Cultures</td>
+      <td>Catalog # TCHu57</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>National Collection of Authenticated Cell Cultures</td>
+      <td>Catalog # GNHu17</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DYKDDDDK-Tag (3B9) Mouse monoclonal antibody</td>
+      <td>Abmart</td>
+      <td>RRID:AB_2713960; Catalog # M20008</td>
+      <td>Western blot (1:2000); Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LC3A/B (D3U4C) XP Rabbit monoclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2617131; Catalog # 12741S</td>
+      <td>Western blot (1:2000); Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ACTB Rabbit monoclonal antibody</td>
+      <td>ABclonal</td>
+      <td>RRID:AB_2768234; Catalog # AC026</td>
+      <td>Western blot (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>V5 tag Rabbit monoclonal antibody</td>
+      <td>Abmart</td>
+      <td>RRID:AB_2864358; Catalog # T40006</td>
+      <td>Western blot (1:2000); Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA-Tag(26D11) Mouse monoclonal antibody</td>
+      <td>Abmart</td>
+      <td>RRID:AB_2864345; Catalog # M20003</td>
+      <td>Western blot (1:2000); Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA tag Rabbit monoclonal antibody</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2864361; Catalog # ab236632</td>
+      <td>Western blot (1:2000); Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP Anti-DDDDK tag Goat polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>RRID:AB_299061; Catalog # ab1238</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L), HRP conjugate polyclonal antibody</td>
+      <td>Proteintech</td>
+      <td>RRID:AB_2722564; Catalog # SA00001-2</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG7 Rabbit monoclonal antibody</td>
+      <td>Abcam</td>
+      <td>RRID:AB_867756; Catalog # ab52472</td>
+      <td>Western blot (1:2000); Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gankyrin Rabbit monoclonal antibody</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2864359; Catalog # ab188315</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ub (P4D1) Mouse monoclonal antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_628423; Catalog # sc-8017</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gankyrin (A-8) Mouse monoclonal antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_2172940; Catalog # sc-166376</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GST-Tag(12G8) Mouse monoclonal antibody</td>
+      <td>Abmart</td>
+      <td>RRID:AB_2864360; Catalog # M20007</td>
+      <td>Western blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td>Described in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1(+) and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td>Described in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLKO.1 and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td>Described in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>px330 and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td>Described in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCVD442 and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td>Described in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a(+) and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td>Described in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-1 and derivatives (plasmids)</td>
+      <td>This paper</td>
+      <td>Described in Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Total RNA Isolation Kit</td>
+      <td>FOREGENE</td>
+      <td>Catalog # RE-03113</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiScript II Q RT SuperMix (+gDNA wiper)</td>
+      <td>Vazyme</td>
+      <td>Catalog # R223-01</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AceQ Universal SYBR qPCR Master Mix</td>
+      <td>Vazyme</td>
+      <td>Catalog # Q511-02</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IL-6 ELISA Kit</td>
+      <td>ABclonal</td>
+      <td>Catalog # RK00004</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Apoptosis and Necrosis Assay Kit</td>
+      <td>Beyotime Biotechnology</td>
+      <td>Catalog # C1056</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # L3024</td>
+      <td>10 ug/ml for HeLa cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate(PMA)</td>
+      <td>MedChemExpress</td>
+      <td>Catalog # HY-18739</td>
+      <td>200 ng/ml for THP-1 cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine(CQ)</td>
+      <td>MedChemExpress</td>
+      <td>Catalog # HY-17589</td>
+      <td>50 uM for HeLa cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Azi</td>
+      <td>SustGreen Tech</td>
+      <td>CAS # 33173-53-4</td>
+      <td>1 mM for HEK293T cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiZPK</td>
+      <td>SustGreen Tech</td>
+      <td>Catalog # HBC-066</td>
+      <td>1 mM for HEK293T cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BetY</td>
+      <td>SustGreen Tech</td>
+      <td>CAS # 481052-60-2</td>
+      <td>0.5 mM for HEK293T cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG132</td>
+      <td>MedChemExpress</td>
+      <td>Catalog # HY-13259</td>
+      <td>10 uM for HEK293T cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SAM</td>
+      <td>Sangon Biotech</td>
+      <td>Catalog # A506555-0005</td>
+      <td>0.8 mM for in vitro methylation assay</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSS</td>
+      <td>Sangon Biotech</td>
+      <td>Catalog # C100015-0100</td>
+      <td>1 mM for extracellular protein crosslinking</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSP</td>
+      <td>Sangon Biotech</td>
+      <td>Catalog # C110213-0100</td>
+      <td>1 mM for extracellular protein crosslinking</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wortmannin</td>
+      <td>selleck</td>
+      <td>Catalog # S2758</td>
+      <td>1 uM for THP-1 cell</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 5</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798; http://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChemDraw</td>
+      <td>ChemDraw</td>
+      <td>RRID:SCR_016768; http://www.perkinelmer.co.uk/category/chemdraw</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 9</td>
+      <td>Originlab</td>
+      <td>https://www.originlab.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070; https://imagej.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>PyMOL</td>
+      <td>RRID:SCR_000305; http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-DYKDDDDK-Tag Mouse Antibody (Agarose Conjugated)</td>
+      <td>Abmart</td>
+      <td>Catalog # M20018L</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mounting Medium With DAPI Aqueous, Fluoroshield</td>
+      <td>Abcam</td>
+      <td>Catalog # ab104139</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluoresbrite BB Carboxylate Microspheres1.75 µm</td>
+      <td>Polysciences</td>
+      <td>Catalog # 17686–5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids and antibodies
 
 The mammalian expression vectors for NleE and pHY-XYRS were synthesized by GENERAL BIOSYSTEMS. The pHY-XYRS plasmid contains three copies of the suppressor tRNA driven by the human U6 promoter and one copy of XYRS driven by a PGK promoter (Wang et al., 2007). pIRE4-Azi was purchased from addgene. cDNAs for LC3, PSMD10, ATG7, HSF1, ATG3, TAB2 NZF domain (residues 665–693) and Rpt3 were amplified from HEK293T cDNA library. Genes were inserted into pET-28a (+) or pGEX-6P-1 for bacterial expression and inserted into pcDNA3.1(+) or pCMV-HA/Flag for mammalian expression. pLKO.1-CMV, pMD2.G, and psPAX2 plasmids were used for lentiviral production. PX330 and PUC19 plasmids were used to construct knockout cells. All point mutations were generated using the Mut Express MultiS Fast Mutagenesis Kit V2. All plasmids were assembled by standard cloning methods and confirmed by DNA sequencing.
 
 Antibodies against PSMD10(sc-166376) and ubiquitin(sc-8017) were purchased from Santa Cruz. Antibodies against Flag-tag(M20008), HA-tag(M20003), V5-tag(T40006), and GST-tag(M20007) were purchased from Abmart. Antibodies against ATG7(ab52472), PSMD10(ab188315), Flag-tag (HRP) (ab1238), and goat anti-mouse IgG H and L (HRP) (ab6789) were purchased from Abcam. Anti-LC3A/B (4108) antibody was purchased from CST. Anti-ACTB(AC026) antibody was purchased from ABclonal. Anti-HA (D110004) antibody was from Sangon Biotech. HRP-conjugated goat anti-rabbit IgG(H+L) (SA00001-2) was purchased from Proteintech. All secondary antibodies for immunofluorescence staining were purchased from Thermo Fisher Scientific.
 
-## Cell culture, transfection, and immunoblotting
+### Cell culture, transfection, and immunoblotting
 
 HEK293T, THP-1, and HeLa cells were originally obtained from National Collection of Authenticated Cell Cultures. THP-1 cells were cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum (FBS) and maintained at 37°C under humidified conditions with 5% CO2. Other cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% fetal bovine serum (FBS) and maintained at 37°C under humidified conditions with 5% CO2. Transient transfection was performed using Lipofectamine 2000 following the manufacturer’s instructions. All cell lines tested negative for mycoplasma contamination regularly based on PCR assays.
 
 For immunoblotting analysis, cells were lysed in lysis buffer (25 mM Tris–HCl pH 7.4, 150 mM NaCl, 0.5% Triton X-100, 5% glycerin) supplemented with 1% protease inhibitor cocktail. Samples were separated on 10% SDS–PAGE gels and transferred onto PVDF membranes. Membranes were blocked with 5% milk in TBST, incubated with primary antibody, and then incubated with HRP-conjugated secondary antibodies. Proteins were visualized using Clarity Western ECL Substrate on a Clinx ChemiScope 5300 Imaging System.
 
-## EPEC knockout, culture, and infection
+### EPEC knockout, culture, and infection
 
 EPEC E. coli E2348/69 was used as the wild-type strain. NleE deletion was constructed by homologous recombination using the positive-selection suicide vector pCVD442. The 600 bp 5′ and 600 bp 3′ flanking sequences of the NleE open-reading frame were cloned into the pCVD442 plasmid. The vector was introduced into SM10(λπ) and transferred into EPEC E2348/69 by filter mating, with selection for nalidixic acid and ampicillin resistance. The positive colonies were further counterselected on LB plates (without NaCl) supplemented with 20% sucrose. Sucrose-resistant colonies were picked and tested for the loss of the intact NleE gene by PCR and DNA sequencing.
 
 Infection was performed with macrophage. THP-1 cells were treated with 200 ng/ml phorbol 12-myristate 13-acetate (PMA) for 48 hr to induce macrophages. Bacteria were grown overnight in LB medium with shaking at 37 °C at 220 rpm and then subcultured (1:30) in fresh RPMI 1640 medium for 2–3 hr. Bacterial culture was added to macrophage cells at an MOI = 100 and incubated for 3 hr. Cells were fixed in 4% paraformaldehyde and immunostained with anti-LC3 antibody.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were fixed in 4% paraformaldehyde for 30 min and permeabilized with 0.5% Triton X-100 for 30 min at room temperature. Samples blocked with 10% normal goat serum in PBS were incubated with the indicated primary antibodies overnight at 4℃. Corresponding secondary antibodies were incubated for 1 hr at room temperature. Coverslips were mounted onto microscope slides with mounting medium containing DAPI. Images were acquired using a confocal laser scanning microscope (ZEISS LSM 880).
 
-## Autophagy induction
+### Autophagy induction
 
 Cells were treated with EBSS for 6 hr or 10 μg/ml LPS for 12 hr for autophagy induction. Polystyrene beads transfection was performed to induce xenophagy (Xu et al., 2019). Fluoresbrite BB carboxylate microspheres (1.75 µm) were washed three times with PBS and resuspended in PBS. Approximately 8.5 × 106 beads were transfected into cells in 12-well plates using Lipofectamine 2000. Four hours after transfection, the cells were washed three times with PBS and then fixed in 4% paraformaldehyde for further analysis.
 
-## Immunoprecipitation and pulldown assays
+### Immunoprecipitation and pulldown assays
 
 For anti-Flag immunoprecipitation, cells were collected 48 hr after transfection and lysed in lysis buffer (25 mM Tris–HCl pH 7.4, 150 mM NaCl, 0.5% Triton X-100, 5% glycerin) supplemented with 1% protease inhibitor cocktail for 30 min on ice. Anti-FLAG afﬁnity beads were added to the supernatant and incubated for 6 hr at 4°C with constant rotation. The anti-FLAG afﬁnity b hed four times with lysis buffer and then denatured by SDS loading buffer for subsequent immunoblotting.
 
@@ -134,35 +600,35 @@ For MS identiﬁcation of NleE crosslinked proteins, four 10 cm dishes of HEK293
 
 For pulldown assays, the GST-tagged proteins were immobilized with glutathione resin in binding buffer (50 mM Tris–HCl pH 7.4, 150 mM NaCl, 0.5% NP-40) and then incubated with binding proteins for 4 hr at 4°C. Beads were washed four times with binding buffer and denatured by SDS loading buffer. Samples were analyzed using immunoblotting.
 
-## Stable cell line construction
+### Stable cell line construction
 
 To generate stably expressed cells, the pLKO.1-CMV vector together with pSPAX2 and pMD2.G vectors was transfected into HEK293T cells. The supernatants containing lentiviral particles were collected 24 hr and 48 hr after transfection and filtered through a 0.45 µm filter. Then, lentiviral particles were added to the infected cells (70% confluence) in six-well plates. Cells were incubated overnight at 37°C in a 5% CO2 incubator. The solution was changed to fresh media, and the cells were cultured for another 24 hr. Then, 2 μg/ml puromycin was added for selection. One week later, the cells were lifted and tested for expression of the transgene.
 
-## CRISPR/Cas9 knockout cell lines
+### CRISPR/Cas9 knockout cell lines
 
 Construction of knockout cells by CRISPR/Cas9 was performed as described (Cong et al., 2013). The guide RNA (gRNA) target sequences used for PSMD10 were TATTCTGGCCGATAAATCCC and CTTCATATTGCGGCTTCTGC. The PX330 and HR template vectors were cotransfected into cells. Forty-eight hours after transfection, cells were subcultured into complete DMEM with 2 μg/ml puromycin. Two weeks later, the cells were lifted, diluted, and seeded in 96-well plates. Single-cell clones were sequenced, and the expression of endogenous PSMD10 was tested by immunoblotting analysis.
 
-## In vitro methylation assay
+### In vitro methylation assay
 
 In vitro methylation assay was performed as described (Zhang et al., 2012). 4 µg of NleE was incubated with 2 µg of GST-PSMD10 or GST-TAB2-NZF for 30 min at 37°C in 20 µl methylation buffer (50 mM Tris–HCl pH 7.4, 150 mM NaCl, 5 mM DTT, 0.1% NP-40, and 0.8 mM S-adenosylmethionine). The reaction mixtures were separated on a 15% Native–PAGE gels or 12% SDS–PAGE gels, followed by Coomassie blue staining and MS analysis.
 
-## Uaa incorporation and crosslinking
+### Uaa incorporation and crosslinking
 
 pIRE4-Azi, pCMV-MbPylRS(DiZPK) or pHY-XYRS plasmids were cotransfected with the pcDNA3.1-NleE-XTAG-Flag vector into HEK293T cells. The final concentration of Uaas in culture medium was 1 mM for Azi, 1 mM for DiZPK, and 0.5 mM for BetY. Forty-eight hours after transfection, cells were harvested and irradiated with a UVP crosslinker for 20 min on ice for Azi and DiZPK. The cells were lysed in lysis buffer C (50 mM Tris–HCl pH 7.4, 150 mM NaCl, 0.5% Triton X-100) and denatured by SDS loading buffer. Samples were then analyzed using anti-FLAG immunoblotting.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was isolated using a Cell Total RNA Isolation Kit according to the manufacturer’s protocol. Total RNA was subjected to reverse transcription into cDNA by using HiScript II Q RT SuperMix (+gDNA wiper). Quantitative real-time PCR was performed using AceQ Universal SYBR qPCR Master Mix on a Bio-Rad CFX96 PCR System. The housekeeping gene, ACTB, was used as controls. The sequences of the primer sets were 5-CTGGCCGGGATGAGATTGTAAAAG-3 and 5-CGGTGCATTGCTGTAGCCTCATAA-3 for PSMD10; 5-CCCAAGGCCAACCGCGAGAAGATG-3 and 5-GTCCCGGCCAGCCAGGTCCAGA-3 for ACTB; and 5-TGCTATCCTGCCCTCTGTCTT-3 and 5-TGCCTCCTTTC TGGTTCTTTT-3 for ATG7.
 
-## Protein expression and purification
+### Protein expression and purification
 
 All proteins were expressed in E. coli BL21 (DE3) cells harboring expressing plasmids. Protein expression was induced with 0.5 mM IPTG for 16 hr at 18°C. Affinity purification of GST-tagged proteins and His-tagged proteins was performed using glutathione resin and Ni-NTA resin, respectively. Purified proteins were concentrated using Millipore Amicon Ultra.
 
-## Size exclusion chromatography
+### Size exclusion chromatography
 
 Ten milligrams of purified PSMD10 protein was loaded onto a SuperdexTM 200 Increase 10/300 GL column that was pre-equilibrated with equilibrium buffer (50 mM Tris–HCl pH 7.4, 150 mM NaCl). Chromatography was performed on an NGC Quest 10 Chromatography System at a flow rate of 0.5 ml/min at 4℃.
 
-## Mass spectrometry
+### Mass spectrometry
 
 For MS identification of NleE crosslinked proteins, LC–MS/MS analysis was executed using an EASY-NLC 1000 nanoflow LC instrument coupled to a Q Exactive quadrupole-Orbitrap mass spectrometer (Thermo Fisher Scientific). MS spectra were acquired from 350 m/z to 1600 m/z with a resolution of 70,000 at m/z = 200. The automatic gain control (AGC) value was set at 3e6, with a maximum fill time of 20 ms. For MS/MS scans, the top 20 most intense precursors were selected with a 1.6 m/z isolation window and fragmented with a normalized collision energy of 27%. The AGC value for MS/MS was set to a target value of 5e4, with a maximum fill time of 100 ms. Raw files were analyzed against the Swiss-Prot human protein sequence database (20413 entries, 2017/01/14) in MaxQuant (version 1.6) with a reverse decoy database with a false discovery rate (FDR) < 1%. Searches were carried out with a precursor peptide mass tolerance of 10 ppm and a fragment ion mass tolerance of 0.02 Da. Two missed trypsin cleavages were allowed in these searches. Cysteine carbamidomethylation was set as a fixed modification. Oxidation of methionine, acetylation on lysine, and protein N-terminal acetylation were set as variable modifications.
 
@@ -170,10 +636,10 @@ For the in vitro methylation assay, the samples were sent to Bio-Tech Pack Techn
 
 For the living cell methylation assay, the immunoprecipitated proteins were sent to Shanghai Bioprofile Technology for MS analysis. The samples were digested with trypsin for 16–18 hr at 37°C. The digested peptides were loaded onto an EASY-NLC 1200 UHPLC system. The eluted peptides were sprayed into the Q Exactive Plus LC-MS system. The mass spectrometer was operated in data-dependent mode with one MS scan followed by 20 HCD (high-energy collisional dissociation) MS/MS scans for each cycle. MS spectra were acquired from 300 m/z to 1800 m/z with a resolution of 70,000 at m/z = 200. The AGC value was set at 1e6, with a maximum fill time of 50 ms. For MS/MS scans, the top 20 most intense precursors were selected. The AGC value for MS/MS was set to a target value of 1e5, with maximum fill time of 50 ms. Database searches were performed by MaxQuant 1.6.0.16 against the UniProt Homo sapiens Protein Database with a false discovery rate (FDR) < 1%. Searches were carried out with a precursor peptide mass tolerance of 20 ppm. Two missed trypsin cleavages were allowed in these searches. Carbamidomethylation and methylation on cysteine residues were set as variable modifications.
 
-## IL-6 secretion assay
+### IL-6 secretion assay
 
 THP-1 cells were treated with 200 ng/ml Phorbol 12-myristate 13-acetate (PMA) for 48 hr. Macrophages were treated with 1 µM Wortmannin for 2 hr to inhibit autophagy. Bacteria were grown overnight in LB medium with shaking at 37°C at 220 rpm and then subcultured (1:30) into fresh RPMI 1640 medium for 2–3 hr. Bacterial culture was added to cells at an MOI = 100 and incubated for 4 hr. Cell culture supernatant was collected andIL-6 secretion was measured by ELISA. Cells were harvested in 1× SDS loading buffer for subsequent immunoblotting.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were performed in at least three triplicates. Quantitative results are reported as the mean ± SD. Statistical significance between samples was determined by two-way ANOVA followed by multiple comparisons using GraphPad Prism 6.0 software.

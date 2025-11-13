@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.05375.001 Bacterial small RNAs (sRNAs) are key elements of regulatory networks that modulate gene expression. The sRNA RydC of Salmonella sp . and Escherichia coli is an example of this class of riboregulators. Like many other sRNAs, RydC bears a ‘seed’ region that recognises specific transcripts through base-pairing, and its activities are facilitated by the RNA chaperone Hfq. The crystal structure of RydC in complex with E. coli Hfq at a 3.48 Å resolution illuminates how the protein interacts with and presents the sRNA for target recognition. Consolidating the protein–RNA complex is a host of distributed interactions mediated by the natively unstructured termini of Hfq. Based on the structure and other data, we propose a model for a dynamic effector complex comprising Hfq, small RNA, and the cognate mRNA target. DOI: http://dx.doi.org/10.7554/eLife.05375.001
+Bacterial small RNAs (sRNAs) are key elements of regulatory networks that modulate gene expression. The sRNA RydC of Salmonella sp. and Escherichia coli is an example of this class of riboregulators. Like many other sRNAs, RydC bears a ‘seed’ region that recognises specific transcripts through base-pairing, and its activities are facilitated by the RNA chaperone Hfq. The crystal structure of RydC in complex with E. coli Hfq at a 3.48 Å resolution illuminates how the protein interacts with and presents the sRNA for target recognition. Consolidating the protein–RNA complex is a host of distributed interactions mediated by the natively unstructured termini of Hfq. Based on the structure and other data, we propose a model for a dynamic effector complex comprising Hfq, small RNA, and the cognate mRNA target.
 
 ## Introduction
 
@@ -34,87 +34,83 @@ In this study, we describe the structure of the sRNA RydC in complex with the fu
 
 ## Results
 
-## RydC interaction with Hfq and pseudoknot structure is essential for its stability in vivo
+### RydC interaction with Hfq and pseudoknot structure is essential for its stability in vivo
 
-Despite its low abundance in comparison with other sRNAs under standard growth conditions, RydC has been repeatedly recovered with the Hfq protein in pull-down assays (
+Despite its low abundance in comparison with other sRNAs under standard growth conditions, RydC has been repeatedly recovered with the Hfq protein in pull-down assays (Zhang et al., 2003; Sittka et al., 2008; Chao et al., 2012). A distinctive feature of RydC is its predicted pseudoknot fold which is highly conserved and whose disruption by point mutations renders the RNA unstable in vivo (Fröhlich et al., 2013). A double mutant of RydC (G37C and G39C within helix 1; hereafter, RydC-S1) was predicted computationally to form a distinct structure with one short stem-loop at the 5′-end and a strong terminator hairpin at the 3′-end (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig1-v2.jpg)
 
-**Figure 1.:** (A) Secondary structure of the RydC pseudoknot and the predicted alternative structure are formed by the double mutant RydC-SI. Substitutions G37C and G39C are indicated with asterisks. (B, C) Stabilities of RydC and RydC-SI were determined by Northern blot analyses. Total RNA samples were extracted prior to and at indicated time-points after inhibition of transcription by rifampicin in late exponential phase (OD600 of 1) from Salmonella strains ΔrydC (JVS-0291) or Δhfq (JVS-0584), carrying plasmids expressing RydC (pKF42-1) or RydC-SI (pKF60-1) from the constitutive PL promoter. Error bars represent standard deviation calculated from three biological replicates. (D) Predicted duplex formed between the RydC 5′-end (nts 2–11) and the longer isoform cfa mRNA (nts −99 to −109 relative to the translational start site) originating at transcriptional start site 1 (TSS1).DOI: http://dx.doi.org/10.7554/eLife.05375.003
+**Figure 1.:** (A) Secondary structure of the RydC pseudoknot and the predicted alternative structure are formed by the double mutant RydC-SI. Substitutions G37C and G39C are indicated with asterisks. (B, C) Stabilities of RydC and RydC-SI were determined by Northern blot analyses. Total RNA samples were extracted prior to and at indicated time-points after inhibition of transcription by rifampicin in late exponential phase (OD600 of 1) from Salmonella strains ΔrydC (JVS-0291) or Δhfq (JVS-0584), carrying plasmids expressing RydC (pKF42-1) or RydC-SI (pKF60-1) from the constitutive PL promoter. Error bars represent standard deviation calculated from three biological replicates. (D) Predicted duplex formed between the RydC 5′-end (nts 2–11) and the longer isoform cfa mRNA (nts −99 to −109 relative to the translational start site) originating at transcriptional start site 1 (TSS1).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Electrophoretic mobility shift assay (EMSA) with in vitro synthesized 5′-end-labelled RydC and RydC-S1 RNAs (RydC* and RydC-S1*, 4 nM) in the presence of increasing concentrations of Hfq protein as indicated. (B) Preformed Hfq/RNA*(RydC* and RydC-S1*, 4 nM) complexes were incubated with increasing concentrations of cold competitor RNA (RydC-S1 for RydC*; RydC for RydC-S1).DOI: http://dx.doi.org/10.7554/eLife.05375.004
+**Figure 1—figure supplement 1.:** (A) Electrophoretic mobility shift assay (EMSA) with in vitro synthesized 5′-end-labelled RydC and RydC-S1 RNAs (RydC* and RydC-S1*, 4 nM) in the presence of increasing concentrations of Hfq protein as indicated. (B) Preformed Hfq/RNA*(RydC* and RydC-S1*, 4 nM) complexes were incubated with increasing concentrations of cold competitor RNA (RydC-S1 for RydC*; RydC for RydC-S1).
 
 To assess the molecular mechanism underlying the intrinsic instability of the RydC-S1 mutant, we compared its turnover rate to the wild-type RNA in the presence and absence of the chaperone Hfq (Figure 1B/C). To this end, both RydC and RydC-S1 were expressed in Salmonella under the control of the constitutive PL promoter from high-copy plasmids. At exponential growth (OD600 of 1), transcription was stopped by the addition of rifampicin, and RNA levels were monitored at various time-points after treatment. As previously shown (Fröhlich et al., 2013), RydC is very stable in wild-type cells (half-life (t1/2) >32 min), while RydC-S1 decayed rapidly (t1/2 ∼2 min). In contrast, the half-life of RydC is already markedly reduced in hfq mutant cells (t1/2 ∼4 min) and there is some further acceleration of the decay rate for RydC-S1, matching that of RydC in the absence of Hfq. This observation led us to assume that RydC stability depends on both the integrity of the pseudoknot fold and the ability to associate with the Hfq protein. Both the wild-type RydC and RydC-S1 mutant bind Hfq in electrophoretic mobility shift assays with in vitro synthesized RNA although the affinity of the mutant is lower than for the wild-type RydC (Figure 1—figure supplement 1A). Competition experiments suggest that the binding sites for the RydC and RydC-S1 overlap at least partially (Figure 1—figure supplement 1B). This suggests that the destabilisation in vivo might result mostly from the integrity of the pseudoknot fold, but to some degree, the Hfq binding alone may inhibit the degradation of RydC from initiating in single-stranded regions as suggested for other sRNAs (Moll et al., 2003; Saramago et al., 2014).
 
-## Overview of the structure of the RydC–Hfq complex
+### Overview of the structure of the RydC–Hfq complex
 
-The strong association of RydC with Hfq both in vivo and in vitro as well as its highly compact structure made it an ideal candidate for co-crystallizations. Co-crystals of full length
+The strong association of RydC with Hfq both in vivo and in vitro as well as its highly compact structure made it an ideal candidate for co-crystallizations. Co-crystals of full length E. coli Hfq and Salmonella RydC were obtained that diffracted to 3.48 Å resolution, and the crystal structure of the RydC–Hfq complex was solved by molecular replacement using a model of the structured hexameric core of E. coli Hfq (i.e., lacking the C-terminal residues beyond amino acid 65). Unbiased, interpretable density for the RNA was apparent in the early maps calculated from the positioned protein hexamer, and a model for most of RydC could be fitted into the electron density (Figure 2—figure supplement 1 shows a map in which the RNA was omitted from the refinement and phase calculations). As the crystal structure is limited to a resolution of 3.48 Å, the map does not provide unequivocal alignment of RydC sequence with structure; however, the path of the majority of the RNA and the duplex regions could be modelled confidently. The asymmetric unit of the crystal comprises one full Hfq hexamer and one RydC (Figure 2). The fold of the RydC is consistent with the pseudoknot structure predicted from solution studies and sequence alignments (Antal et al., 2005; Fröhlich et al., 2013). The RNA bridges two adjacent Hfq hexamers in the crystal lattice, effectively forming a distorted sandwich with a wedge-shape (Figure 3A). The 3′-end of the RNA interacts with the proximal face of the principle hexamer, while the 5′-end interacts with the upper portion of the lateral surface of another hexamer in the asymmetric unit (see below for details, paragraph ‘Interactions of RydC with the lateral surface of Hfq’).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig2-v2.jpg)
 
-**Figure 2.:** The content of the asymmetric unit is shown. The left panel presents a view along the molecular sixfold axis of the Hfq ring core (roughly encompassing residues 3–72), while the right panel is viewed along the perpendicular direction. The 3′-end poly-U tail of RydC is inserted in a groove on the proximal face of the hexamer. The N- and C-terminal regions are indicated with letters (cyan and blue for different Hfq protomers); these are natively unstructured and in multiple conformations, but some portions could be modelled. The RydC phosphate backbone is shown as an orange cartoon, bases are shown as sticks. Nucleotides 20–21 are disordered, but the backbone was modelled to help view the RNA structure and is indicated in grey cartoon style, as is also the last modelled phosphate at the 5′-end of RydC.DOI: http://dx.doi.org/10.7554/eLife.05375.005
+**Figure 2.:** The content of the asymmetric unit is shown. The left panel presents a view along the molecular sixfold axis of the Hfq ring core (roughly encompassing residues 3–72), while the right panel is viewed along the perpendicular direction. The 3′-end poly-U tail of RydC is inserted in a groove on the proximal face of the hexamer. The N- and C-terminal regions are indicated with letters (cyan and blue for different Hfq protomers); these are natively unstructured and in multiple conformations, but some portions could be modelled. The RydC phosphate backbone is shown as an orange cartoon, bases are shown as sticks. Nucleotides 20–21 are disordered, but the backbone was modelled to help view the RNA structure and is indicated in grey cartoon style, as is also the last modelled phosphate at the 5′-end of RydC.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** The model was refined with REFMAC for 10 cycles and a Fo–Fc map calculated. The difference map is shown in green and is contoured at 3σ. The refined position of the RNA is superimposed on the map. The omitted RydC is shown in orange stick representation, while the rest of RydC and Hfq are coloured grey.DOI: http://dx.doi.org/10.7554/eLife.05375.006
+**Figure 2—figure supplement 1.:** The model was refined with REFMAC for 10 cycles and a Fo–Fc map calculated. The difference map is shown in green and is contoured at 3σ. The refined position of the RNA is superimposed on the map. The omitted RydC is shown in orange stick representation, while the rest of RydC and Hfq are coloured grey.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** A 1:1 complex of RydC:Hfq6 can be detected (yellow trace) when the two components are mixed in a 1:1 ratio, but at higher ratios of RydC:Hfq, a 1:2 RydC:Hfq6 can form as well. Protein–RNA mixtures containing different molar ratios (1:1, 1:2, 1:10) of RydC to Hfq hexamer were incubated at room temperature for 30 min in 10 mM Tris–HCl, 20 mM NaCl, 10 mM EDTA, 5 mM DTT. The concentration of RydC in each experiment was 1.5 μM. Hfq alone was also run at a concentration of 173 μM. The sedimentation of the different species was followed both at 260 nm and 275 nm, corresponding respectively to the maximum absorbance of RNA and Hfq. The program Sedfit was used to extrapolate the sedimentation coefficients (S) for RydC, Hfq, and the protein–RNA complexes and their observed mass, after assuming that vHfq = 0.7248, vRydC = 0.5500 and after calculating the vcomplex with the following equation: vcomplex = (MWprotein × vprotein + MWRNA × vRNA)/(MWprotein + MWRNA) = 0.6835.DOI: http://dx.doi.org/10.7554/eLife.05375.007
+**Figure 2—figure supplement 2.:** A 1:1 complex of RydC:Hfq6 can be detected (yellow trace) when the two components are mixed in a 1:1 ratio, but at higher ratios of RydC:Hfq, a 1:2 RydC:Hfq6 can form as well. Protein–RNA mixtures containing different molar ratios (1:1, 1:2, 1:10) of RydC to Hfq hexamer were incubated at room temperature for 30 min in 10 mM Tris–HCl, 20 mM NaCl, 10 mM EDTA, 5 mM DTT. The concentration of RydC in each experiment was 1.5 μM. Hfq alone was also run at a concentration of 173 μM. The sedimentation of the different species was followed both at 260 nm and 275 nm, corresponding respectively to the maximum absorbance of RNA and Hfq. The program Sedfit was used to extrapolate the sedimentation coefficients (S) for RydC, Hfq, and the protein–RNA complexes and their observed mass, after assuming that vHfq = 0.7248, vRydC = 0.5500 and after calculating the vcomplex with the following equation: vcomplex = (MWprotein × vprotein + MWRNA × vRNA)/(MWprotein + MWRNA) = 0.6835.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** (A) Elution profile for the RydC:Hfq complex from a Superdex 200 column superimposed on the estimated molecular masses. Fractions over the peak were analysed with a denaturing protein gel (B) and a denaturing RNA gel (C), confirming that both RydC and Hfq are present in the peak. The table in the lower panel summarises the results of the SEC-MALS data evaluations. SEC-MALS measurements were made with a Superdex 200 10/300 column connected to a miniDAWN TREOS multi-angle static Light Scattering and an Optilab T-rEX (refractometer with EXtended range) detector (Wyatt Technology Corporation, Santa Barbara CA, USA). Mixtures of protein and RNA in different molar ratios were run through an S200 10/300 size exclusion chromatography column equilibrated in buffer A (50 mM Tris, pH 7.5, 50 mM NaCl, 50 mM KCl, 5 mM MgCl2, 2 mM DTT). Both RydC and Hfq were diluted in buffer A. The RNA was first annealed (90°C for 2 min, 30 min at room temperature) before mixing it with an equal molar amount of Hfq6. The final concentrations of RydC and Hfq6 in the mixture were equal to 30 μM; Hfq alone was at a molar concentration of 50 μM. BSA (2 mg/ml) was run as positive control. Predicted and observed molecular weights for Hfq and Hfq/RydC complex are listed below.SamplePredicted molecular weightObserved molecular weight*PolydispersityHfq66,996 Da64,070 Da (±0.101%)1.000 (±0.142%)Hfq:RydC 1:188,895 Da91,650 Da (±0.218%)1.000 (±0.308%)DOI: http://dx.doi.org/10.7554/eLife.05375.008
+**Figure 2—figure supplement 3.:** (A) Elution profile for the RydC:Hfq complex from a Superdex 200 column superimposed on the estimated molecular masses. Fractions over the peak were analysed with a denaturing protein gel (B) and a denaturing RNA gel (C), confirming that both RydC and Hfq are present in the peak. The table in the lower panel summarises the results of the SEC-MALS data evaluations. SEC-MALS measurements were made with a Superdex 200 10/300 column connected to a miniDAWN TREOS multi-angle static Light Scattering and an Optilab T-rEX (refractometer with EXtended range) detector (Wyatt Technology Corporation, Santa Barbara CA, USA). Mixtures of protein and RNA in different molar ratios were run through an S200 10/300 size exclusion chromatography column equilibrated in buffer A (50 mM Tris, pH 7.5, 50 mM NaCl, 50 mM KCl, 5 mM MgCl2, 2 mM DTT). Both RydC and Hfq were diluted in buffer A. The RNA was first annealed (90°C for 2 min, 30 min at room temperature) before mixing it with an equal molar amount of Hfq6. The final concentrations of RydC and Hfq6 in the mixture were equal to 30 μM; Hfq alone was at a molar concentration of 50 μM. BSA (2 mg/ml) was run as positive control. Predicted and observed molecular weights for Hfq and Hfq/RydC complex are listed below.SamplePredicted molecular weightObserved molecular weight*PolydispersityHfq66,996 Da64,070 Da (±0.101%)1.000 (±0.142%)Hfq:RydC 1:188,895 Da91,650 Da (±0.218%)1.000 (±0.308%)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig3-v2.jpg)
 
-**Figure 3.:** (A) RydC is sandwiched between two Hfq hexamers in the crystal lattice. Two asymmetric units are shown with the RydC in the centre (coloured in orange) bridging two Hfq hexamers. The symmetry-related Hfq molecule is labelled with an asterisk (*). The 3′-end region of RydC in the main asymmetric unit is pointed by an arrow and contacts the proximal face of the principal Hfq hexamer, another arrow indicates the position of the 5′-end of RydC, interacting with a portion of the rim of the Hfq hexamer in the neighbouring asymmetric unit. Two black rectangles define the 5′-end and 3′-end RydC–Hfq contact regions, which are enlarged in panels B and C respectively. (B) Contacts established between the 5′-end seed region of RydC and the rim of a symmetry related Hfq molecule. The main interactions at this interface involve the following amino acid–nucleotide pairs: R17-G8, H71-G8, R16-U9, N13-U9, F39-U9, Q5-G11, P10-A10. Residues belonging to the symmetry related Hfq molecules are labelled with an asterisk (*). (C) Interactions of the poly-U 3′-end of RydC with the recessed groove of the proximal face of Hfq. The uridines and cytosine stack on F42; this and other interactions are similar to those seen in the U6/Hfq crystal structure (Sauer and Weichenrieder, 2011). The side chains of critical residues that contribute to keep RydC in the channel are shown in stick representation. The adjacent protomers of Hfq are coloured in blue and cyan, RydC is shown in orange. Side chains are shown for all residues, main chains are shown for Q41 in order to highlight the position of atoms involved in interactions with neighbouring residues. The RNA used in the crystallisations has a guanine on the 3′-end originating from the template for in vitro transcription, but this base may be in multiple conformations.DOI: http://dx.doi.org/10.7554/eLife.05375.009
+**Figure 3.:** (A) RydC is sandwiched between two Hfq hexamers in the crystal lattice. Two asymmetric units are shown with the RydC in the centre (coloured in orange) bridging two Hfq hexamers. The symmetry-related Hfq molecule is labelled with an asterisk (*). The 3′-end region of RydC in the main asymmetric unit is pointed by an arrow and contacts the proximal face of the principal Hfq hexamer, another arrow indicates the position of the 5′-end of RydC, interacting with a portion of the rim of the Hfq hexamer in the neighbouring asymmetric unit. Two black rectangles define the 5′-end and 3′-end RydC–Hfq contact regions, which are enlarged in panels B and C respectively. (B) Contacts established between the 5′-end seed region of RydC and the rim of a symmetry related Hfq molecule. The main interactions at this interface involve the following amino acid–nucleotide pairs: R17-G8, H71-G8, R16-U9, N13-U9, F39-U9, Q5-G11, P10-A10. Residues belonging to the symmetry related Hfq molecules are labelled with an asterisk (*). (C) Interactions of the poly-U 3′-end of RydC with the recessed groove of the proximal face of Hfq. The uridines and cytosine stack on F42; this and other interactions are similar to those seen in the U6/Hfq crystal structure (Sauer and Weichenrieder, 2011). The side chains of critical residues that contribute to keep RydC in the channel are shown in stick representation. The adjacent protomers of Hfq are coloured in blue and cyan, RydC is shown in orange. Side chains are shown for all residues, main chains are shown for Q41 in order to highlight the position of atoms involved in interactions with neighbouring residues. The RNA used in the crystallisations has a guanine on the 3′-end originating from the template for in vitro transcription, but this base may be in multiple conformations.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.05375.010
-
 The organisation of the RNA in the crystal would suggest that a single RydC molecule could form a closed complex with two sandwiching Hfq hexamers. However, solution studies using analytical ultracentrifugation (AUC) and multi-angle laser light scattering (SEC-MALS) indicate that the RydC can form a stable 1:1 complex with the Hfq hexamer under various buffer conditions when the components are present in unitary stoichiometry (Figure 2—figure supplements 2–3). When Hfq is present at twice the concentration of RydC under low ionic strength conditions, some 2:1 Hfq:RydC species can be identified; moreover, a higher order complex can be observed by electrophoretic mobility shifts when Hfq is in excess over RNA (results not shown). These observations suggest that the stoichiometry of Hfq/RNA complexes is very sensitive to solution conditions. In vivo, it seems unlikely that one RydC can find two Hfq hexamers when the protein is limiting to total RNA (Wagner, 2013), and we suggest that the 1:1 complex is likely to represent the physiologically relevant species. We propose that the 2:1 sandwiching complex we observe in the crystal is not the biologically relevant species, but that it encompasses the full set of interactions that would form in a closed 1:1 RydC:Hfq complex. We suggest that the contacts made by RydC with the neighbouring Hfq hexamers can form on the proximal face of the same, single hexamer to form an idealised 1:1 complex. This hypothetical model will be elaborated on further below.
 
-## Interactions of the U-rich tail of RydC with the proximal face of Hfq
+### Interactions of the U-rich tail of RydC with the proximal face of Hfq
 
 The 3′-end of RydC has a U-rich tail that - together with a strong hairpin structure - facilitates Rho-independent transcription termination and which is an important determinant for recognition of many sRNAs (Otaka et al., 2011; Sauer and Weichenrieder, 2011; Ishikawa et al., 2012). The RydC/Hfq structure reveals that the U-rich tail is bound in a recessed channel on the proximal face of Hfq. The electron density is not well defined in this region, and there may be disorder or multiple conformations of the polyU tail, but the features do show that uridines U61, U62, and U64 (as well as C63) each forms an aromatic base stacking interaction with the ring of F42 (Figure 3C; distances provided in Figure 3—figure supplement 1). K56 forms hydrogen bonds with the O2 group of the uracils, consistent with the importance of this residue in binding RNA on the proximal face (Mikulecky et al., 2004). The model indicates that there are likely to be hydrogen bonds between the uridine bases and Q41 and Q8, as well as between the furanose 2′ OH group with the imidazole group of H57. These interactions are consistent with the crystal structure of Salmonella Typhimurium Hfq/polyU (Sauer and Weichenrieder, 2011; PDB code 2YLC) and with fluorescence quenching experiments for binding U6 (Robinson et al., 2013). Similar interactions are seen in the crystal structure of Staphylococcus aureus Hfq in complex with AUUUUUG (Schumacher et al., 2002; PDB code 1KQ2) and E. coli Hfq in complex with AUUUUUA (Wang et al., 2011, 2013; PDB code 4HT9). In principle, the RNA can visit each of the uridine pockets following a clockwise or counter-clockwise path, but the polarity seems to be consistently clockwise in the reference frame that views the proximal face. The RNA exits the groove to engage on the rim of the proximal face of Hfq through numerous interactions with protein side- and main-chain atoms, as we describe further below.
 
-## Interactions of RydC with the lateral surface of Hfq
+### Interactions of RydC with the lateral surface of Hfq
 
-On the exposed rim of the proximal face, U24 stacks onto F39 and U23 packs onto U24 (
+On the exposed rim of the proximal face, U24 stacks onto F39 and U23 packs onto U24 (Figure 4A). The U46/U47 bases form similar interactions with the rim of Hfq in a neighbouring asymmetric unit (Figure 4B). U24 and U47 contact N13 and likely make a hydrogen bonding interaction. Both U23/U24 and U46/U47 pairs are highly conserved in an alignment of the available RydC sequences (Fröhlich et al., 2013). The U24/U25 and U46/U47 interactions with the rim are consolidated by the N-terminal residues G4 and Q5 and likely include amide backbone and lysine side chain interactions (Figure 4A,B; distances provided in Figure 4—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig4-v2.jpg)
 
-**Figure 4.:** (A) The U23/U24 pair interacts with F39, R16, R17, and N13 on the convex rim of Hfq. The U23/U24 interactions with the rim are consolidated by the N-terminal residues G4 and Q5 of a neighbouring Hfq protomer (coloured in cyan). (B) The U46/U47 pair makes similar interactions with Hfq in a neighbouring asymmetric unit. Residues belonging to the symmetry related Hfq molecule are labelled with an asterisk (*) in panel B. Side chains are shown for all residues, main chain is shown for G4 in both panels to help visualize the residue position.DOI: http://dx.doi.org/10.7554/eLife.05375.011
+**Figure 4.:** (A) The U23/U24 pair interacts with F39, R16, R17, and N13 on the convex rim of Hfq. The U23/U24 interactions with the rim are consolidated by the N-terminal residues G4 and Q5 of a neighbouring Hfq protomer (coloured in cyan). (B) The U46/U47 pair makes similar interactions with Hfq in a neighbouring asymmetric unit. Residues belonging to the symmetry related Hfq molecule are labelled with an asterisk (*) in panel B. Side chains are shown for all residues, main chain is shown for G4 in both panels to help visualize the residue position.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.05375.012
-
-Although highly conserved, the U23/U24 and U46/U47 pairs are not required for the base-pairing to the RydC target,
+Although highly conserved, the U23/U24 and U46/U47 pairs are not required for the base-pairing to the RydC target, cfa mRNA, because a chimeric RNA assembled from the RydC 5′-end (nt. 1 to 13) and the 3′-end of the sRNA MicA is as efficient in target gene regulation as the wild-type RydC (Fröhlich et al., 2013). To address the function of the highly conserved U residues, three mutant variants of RydC were constructed (Figure 5A). RydC-LI (U23G U24C), RydC-LII (U46C U47G), as well as RydC-LI/II (U23G U24C U46C U47G) were expressed from a constitutive promoter in wild-type Salmonella cells, and RNA stability was assessed by rifampicin treatment (Figure 5B). Compared to wild-type RydC (t1/2 ∼32 min), mutant RydC-LII had a reduced half-life (t1/2 ∼11 min). Both variants RydC-LI and the double mutant RydC-LI/LII were even less stable (t1/2 ∼2 min) and especially the RydC-LI and RydC-LI/LII variants were less potent than the wild-type to regulate the reporter target Cfa–GFP (Figure 5C). The discrepancy between steady-state levels and regulatory potential observed between the different RydC variants could be the result of alternative binding patterns via LI and LII leading to changes in RNA orientation on Hfq. Thus, while functional conclusions may be limited at this point, our in vivo data suggest a requirement of the conserved U pairs in the loops of the RydC pseudoknot structure for RNA stability and indicate a functional importance for the interactions observed in the crystal structure of the complex.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig5-v2.jpg)
 
-**Figure 5.:** (A) Schematic of RydC pseudoknot fold with substitutions of U23G and U24G (RydC-LI) and U46G and U47G (RydC-LII). (B) Stabilities of RydC and its variants RydC-LI, RydC-LII, and RydC-LI/LII. RNA levels were determined by Northern blot analyses. Total RNA samples were extracted prior to and at indicated time-points after inhibition of transcription by rifampicin in late exponential phase (OD600 of 1) from Salmonella strain ΔrydC (JVS-0291) carrying plasmids expressing RydC (pKF42-1), RydC-LI (pKF224-9), RydC-LII (pKF223), or RydC-LI/II (pKF225) from the constitutive PL promoter. Error bars represent standard deviation calculated from three biological replicates. (C) Target regulation by RydC loop mutants. Salmonella ΔrydC (JVS-0291) express a plasmid-borne translational fusion of the RydC target cfa to the green fluorescent protein (Cfa–GFP; pKF31-1) in the presence of either a control (pJV300) or plasmids expressing RydC (pKF42-1), RydC-LI (pKF224-9), RydC-LII (pKF223), or RydC-LI/II (pKF225) from the constitutive PL promoter. Bacteria were grown to late exponential phase (OD600 of 1) and Cfa–GFP and GroEL proteins were detected by Western blot (upper two panels). RydC variants as well as 5S RNA were detected by Northern blot (lower two panels).DOI: http://dx.doi.org/10.7554/eLife.05375.013
+**Figure 5.:** (A) Schematic of RydC pseudoknot fold with substitutions of U23G and U24G (RydC-LI) and U46G and U47G (RydC-LII). (B) Stabilities of RydC and its variants RydC-LI, RydC-LII, and RydC-LI/LII. RNA levels were determined by Northern blot analyses. Total RNA samples were extracted prior to and at indicated time-points after inhibition of transcription by rifampicin in late exponential phase (OD600 of 1) from Salmonella strain ΔrydC (JVS-0291) carrying plasmids expressing RydC (pKF42-1), RydC-LI (pKF224-9), RydC-LII (pKF223), or RydC-LI/II (pKF225) from the constitutive PL promoter. Error bars represent standard deviation calculated from three biological replicates. (C) Target regulation by RydC loop mutants. Salmonella ΔrydC (JVS-0291) express a plasmid-borne translational fusion of the RydC target cfa to the green fluorescent protein (Cfa–GFP; pKF31-1) in the presence of either a control (pJV300) or plasmids expressing RydC (pKF42-1), RydC-LI (pKF224-9), RydC-LII (pKF223), or RydC-LI/II (pKF225) from the constitutive PL promoter. Bacteria were grown to late exponential phase (OD600 of 1) and Cfa–GFP and GroEL proteins were detected by Western blot (upper two panels). RydC variants as well as 5S RNA were detected by Northern blot (lower two panels).
 
 The observed U23/U24 and U46/U47 interactions with the rim region may account for the findings from solution studies that E. coli Hfq has greater affinity for 16-mer polyU compared to the 6-mer U6, because the longer polymer could form the contacts in the recessed core with the U-rich 3′-end and simultaneously interact with the rim through F39 and N13. The U23/U24 and U46/U47 interactions may also account for the partial fluorescence quenching observed for F39 in the presence of U6 (Robinson et al., 2013), because excess U6 may bind to the rim and interact with F39 in a similar way to the contacts observed for U23/U24 and U46/47 pairs of RydC.
 
-Earlier studies identified residues R16, R17, R19, and K47 as forming a lateral RNA binding surface in
+Earlier studies identified residues R16, R17, R19, and K47 as forming a lateral RNA binding surface in Salmonella Hfq (Sauer et al., 2012; highlighted in cyan in Figure 6C). These residues are part of an arginine patch that is proposed to interact with both the sRNA and the mRNA molecules (Sauer et al., 2012). In our structure, R16 and R17 make phosphate backbone contacts near U23 and U24 (Figure 4A), while R19 and K47 are not interacting with the RNA. Residues R16 and R17 belonging to Hfq in the neighbouring crystal unit cell are also involved in the binding of the 5′-end of RydC (Figure 3B). The nucleotide stretch 8–12, representing the last portion of the RydC seed region, is in fact kept in an extended conformation by the interaction with helical region 8–17 from a symmetry related Hfq molecule (Figure 3B). This may account for observations from previous studies showing that mutations on this region of the rim do not impact on the ability of Hfq to bind sRNA sequences but rather on its capacity to stimulate annealing of sRNA with an mRNA target (Panja et al., 2013).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig6-v2.jpg)
 
-**Figure 6.:** (A) Interaction between a duplex region of RydC and the rim surface of an Hfq molecule belonging to the neighbouring asymmetric unit in the crystal. Symmetry related RydC and Hfq are labelled with an asterisk (*). (B) A detailed view into the interaction site, showing the main protein residues making contacts with the duplex RNA. The side chain of R66 is not shown as it is disordered in the structure. (C) A surface representation of the RydC/Hfq complex, highlighting in colour in one protomer, the residues of the proposed extended rim that recognises RNA. The residues coloured cyan are from earlier studies that identified the rim as an RNA binding region (R16, R17, R19, K46; Sauer et al., 2012), and the yellow residues include an extended surface proposed here to engage duplex RNA (P21, Q33, Q35, T49, R66). Also labelled are the residues of this extended surface that engage the U–U steps in RydC (N13, R16, R17, F39; F39 and N13 are not visible in this view). (D) Rates and equilibrium constants for binding of Hfq and Hfq/RydC to cfa for wild-type (HfqWT) and rim-mutant protein (HfqRim; R19A, P21A, Q33A, Q35A, T49A, R66A). The measurements were performed by fitting the averaged responses from three independent experiments. It was not possible to fit the weaker binding response of HfqRim binding RydC.DOI: http://dx.doi.org/10.7554/eLife.05375.014
+**Figure 6.:** (A) Interaction between a duplex region of RydC and the rim surface of an Hfq molecule belonging to the neighbouring asymmetric unit in the crystal. Symmetry related RydC and Hfq are labelled with an asterisk (*). (B) A detailed view into the interaction site, showing the main protein residues making contacts with the duplex RNA. The side chain of R66 is not shown as it is disordered in the structure. (C) A surface representation of the RydC/Hfq complex, highlighting in colour in one protomer, the residues of the proposed extended rim that recognises RNA. The residues coloured cyan are from earlier studies that identified the rim as an RNA binding region (R16, R17, R19, K46; Sauer et al., 2012), and the yellow residues include an extended surface proposed here to engage duplex RNA (P21, Q33, Q35, T49, R66). Also labelled are the residues of this extended surface that engage the U–U steps in RydC (N13, R16, R17, F39; F39 and N13 are not visible in this view). (D) Rates and equilibrium constants for binding of Hfq and Hfq/RydC to cfa for wild-type (HfqWT) and rim-mutant protein (HfqRim; R19A, P21A, Q33A, Q35A, T49A, R66A). The measurements were performed by fitting the averaged responses from three independent experiments. It was not possible to fit the weaker binding response of HfqRim binding RydC.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Hfq belonging to a neighbouring asymmetric unit is shown at the top right with the RNA contacting its distal face. (B) An expanded view into the distal face showing nucleotides A6 and C42 bound to the two pockets formed by residues I30 and Y25. Crystallographic and solution binding studies show that E. coli Hfq has preferences to bind an A-A-N motif on the distal face (Robinson et al., 2013). The contacts observed for RydC A6 and C42 with the distal are fortuitous lattice interactions, but they mimic interactions of the A-A-N repeats on the distal face.DOI: http://dx.doi.org/10.7554/eLife.05375.015
+**Figure 6—figure supplement 1.:** (A) Hfq belonging to a neighbouring asymmetric unit is shown at the top right with the RNA contacting its distal face. (B) An expanded view into the distal face showing nucleotides A6 and C42 bound to the two pockets formed by residues I30 and Y25. Crystallographic and solution binding studies show that E. coli Hfq has preferences to bind an A-A-N motif on the distal face (Robinson et al., 2013). The contacts observed for RydC A6 and C42 with the distal are fortuitous lattice interactions, but they mimic interactions of the A-A-N repeats on the distal face.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** 66 and Hfq66/RydC to immobilized cfa.The measurements were performed by fitting the response from three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.05375.016
+**Figure 6—figure supplement 2.:** The measurements were performed by fitting the response from three independent experiments.
 
 The RNA mediates numerous other interactions with neighbouring Hfq hexamers. One of the contacts mimics interactions of the A-A-N repeats on the distal face (Figure 6—figure supplement 1). A more extensive and potentially more interesting interaction occurs between the duplex region of RydC and the rim surface of an Hfq hexamer in a neighbouring asymmetric unit (Figure 6A). The residues mediating this interaction are R19, R66, P21, T49, Q33, and Q35 (Figure 6B).
 
@@ -122,15 +118,15 @@ To explore the contribution of the potential rim contacts to mediate the interac
 
 In the presence of RydC, the association of Hfq with cfa changes. The binding affinity of HfqWT for cfa decreases by a factor of roughly 5, suggesting that the formation of the Hfq–sRNA complex affects the Hfq affinity for the mRNA fragment. Moreover, the presence of RydC decreases by an order of magnitude the association rate constant of Hfq for cfa. This could result from cfa being bound in a slightly different way in the Hfq/cfa complex as compared to the Hfq/RydC/cfa ternary complex. Strikingly, in the presence of RydC, the HfqRim mutant no longer has detectable binding to cfa. This finding suggests that the RydC interacts differently with HfqWT and the HfqRim lateral surface mutant in a way that perturbs cfa binding. Thus, the rim interactions shown in Figure 6A,B,C are crucial for forming a productive sRNA:Hfq:mRNA assembly.
 
-## The N- and C-termini of Hfq interact distributively with RydC
+### The N- and C-termini of Hfq interact distributively with RydC
 
 The C-terminal regions of Hfq, beyond residue 70, are generally disordered, but density could be observed for some of the protomers into which the model could be partially extended. Although poorly ordered, the C-terminal tails appear to be making distributive contacts over the surface of RydC. The N-terminal regions of three Hfq protomers, exposed on the proximal face of the protein, also interact with RydC, mainly in the vicinity of nucleotides 23–25, 51–52, and 59.
 
-To explore if the observed interactions between the Hfq C-termini and RydC might be important in vivo, we compared the stabilities of the sRNA in the presence of wild-type Hfq and an Hfq mutant truncated at residue 70 (
+To explore if the observed interactions between the Hfq C-termini and RydC might be important in vivo, we compared the stabilities of the sRNA in the presence of wild-type Hfq and an Hfq mutant truncated at residue 70 (Figure 7). We observed that the half-life of RydC was greatly reduced in the absence of the C-terminal end (t1/2 ∼5 min) and was comparable with the half-life observed for an hfq null mutant (t1/2 ∼4 min). However, upon initial decay of a subfraction of RydC, the remaining population appears to be more stable and is only degraded at a rate comparable to RNA in the wild-type background. In vitro binding experiments show that the affinity of purified Hfq truncated at residue 66 (Hfq66) for binding cfa is similar to that of the wild-type protein; however, the presence of RydC decreases substantially the binding of Hfq66 (Figure 6—figure supplement 2). The curve for Hfq66/RydC binding to cfa could not be modelled, but the affinity is likely to be reduced by two orders of magnitude compared with the binding of Hfq66 alone to cfa. This reduction is much greater than the fivefold decrease in affinity when comparing the mRNA binding of the wild-type Hfq and its Hfq/RydC complex (Figure 6D). These observations suggest that the C-terminal tails are important for facilitating the formation of the sRNA:mRNA:Hfq ternary complex.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig7-v2.jpg)
 
-**Figure 7.:** Stabilities of RydC were determined by Northern blot analyses in Salmonella strains ΔrydC (WT; JVS-0291), ΔrydC Δhfq (Δhfq; JVS-10665), and ΔrydC hfq70 (hfq70; JVS-11150) expressing RydC from the constitutive PL promoter (pKF42-1). Total RNA samples were extracted prior to and at indicated time-points after inhibition of transcription by rifampicin in late exponential phase (OD600 of 1). Error bars represent standard deviations calculated from three biological replicates.DOI: http://dx.doi.org/10.7554/eLife.05375.017
+**Figure 7.:** Stabilities of RydC were determined by Northern blot analyses in Salmonella strains ΔrydC (WT; JVS-0291), ΔrydC Δhfq (Δhfq; JVS-10665), and ΔrydC hfq70 (hfq70; JVS-11150) expressing RydC from the constitutive PL promoter (pKF42-1). Total RNA samples were extracted prior to and at indicated time-points after inhibition of transcription by rifampicin in late exponential phase (OD600 of 1). Error bars represent standard deviations calculated from three biological replicates.
 
 The C-terminal tails appear to influence the rate of Hfq–RNA complex formation, as indicated by the order-of-magnitude lower on-rate of Hfq66 compared to HfqWT for binding cfa (Figure 6D and Figure 6—figure supplement 2). Moreover, the interactions of the tails with sRNA may explain the puzzling observation that the HfqWT–RydC has a lower kon than HfqWT for association with cfa. In this case, we envisage that the tails, sequestered with the sRNA, are no longer available to ‘fish’ for and accelerate association with the mRNA partner.
 
@@ -138,11 +134,11 @@ The C-terminal tails appear to influence the rate of Hfq–RNA complex formation
 
 The crystal structure of RydC/Hfq suggests key elements of molecular recognition of this effector complex. We observe interactions of the 3′ polyU tract with the recessed pore in the Hfq proximal face and interactions of U–U dinucleotide steps in single-stranded regions with the surface near the rim. Based on results from in vivo crosslinking and RNA sequencing from enterohemorrhagic E. coli, it has been proposed that the consensus Hfq binding site on many sRNAs includes a U–U dinucleotide associated with an unpaired region (Tree et al., 2014). Our results are consistent with this prediction and provide a structural rationalisation: the unpaired region is required to engage the U–U step on the rim. Interactions with the rim may account for the capacity of longer U-tracts to bind Hfq more strongly (Murina et al., 2013; Panja et al., 2013), since these are anticipated to bridge between the rim and the 3′-polyU-binding pore. The rim might also be the binding site for the internal U-rich region in SgrS that is required for stable association with Hfq (Ishikawa et al., 2012).
 
-The crystal structure suggests that one RydC can be sandwiched between two Hfq hexamers, and a similar model has been proposed for interaction of Hfq with the sRNA DsrA (
+The crystal structure suggests that one RydC can be sandwiched between two Hfq hexamers, and a similar model has been proposed for interaction of Hfq with the sRNA DsrA (Wang et al., 2011). However, solution data indicate that the stoichiometry of the complex is sensitive to buffer conditions and that a 1:1 complex is preferred at higher salt concentrations, but a 2:1 Hfq hexamer:RydC complex can be formed in lower ionic strength buffer (Figure 2—figure supplement 2). We propose that the 1:1 complex is the physiologically relevant species in vivo and that the sandwiching complex we observe in the crystal is likely to mimic a folding intermediate en route to forming a closed 1:1 RydC:Hfq complex. Accordingly, the contacts formed by the RydC with the neighbouring Hfq hexamers can both occur on the proximal face of the same, single hexamer to form the 1:1 complex (shown schematically in Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/05375/elife-05375-fig8-v2.jpg)
 
-**Figure 8.:** Portions of the protomers forming the Hfq core have been represented with six spheres, from which the disordered C-terminal tails extend radially. RydC (orange) sits on the proximal face of Hfq, with the 3′-end U-rich tail interacting with the central channel and the two conserved U–U pairs (U23/U24 and U46/U47) making contacts with the lateral face of the hexamer. The two double strands conferring the pseudoknot structure to RydC are indicated as S I and S II. The target mRNA cfa, depicted in yellow, associates with the distal face of Hfq, and it is proposed to form a duplex with the 5′-end ‘seed’ region of RydC that is recognised by the circumferential rim of Hfq. The six long C-termini are depicted in the cartoon, and the shorter N-termini are not shown for clarity. The association of the two RNA partners is aided by the C-terminal tails of Hfq, which extend towards the RNA molecules, embracing them and stabilizing the seed/target pairing. The natively unstructured termini make distributed interactions with the RNA, visiting dynamically multiple points on the nucleic acid.DOI: http://dx.doi.org/10.7554/eLife.05375.018
+**Figure 8.:** Portions of the protomers forming the Hfq core have been represented with six spheres, from which the disordered C-terminal tails extend radially. RydC (orange) sits on the proximal face of Hfq, with the 3′-end U-rich tail interacting with the central channel and the two conserved U–U pairs (U23/U24 and U46/U47) making contacts with the lateral face of the hexamer. The two double strands conferring the pseudoknot structure to RydC are indicated as S I and S II. The target mRNA cfa, depicted in yellow, associates with the distal face of Hfq, and it is proposed to form a duplex with the 5′-end ‘seed’ region of RydC that is recognised by the circumferential rim of Hfq. The six long C-termini are depicted in the cartoon, and the shorter N-termini are not shown for clarity. The association of the two RNA partners is aided by the C-terminal tails of Hfq, which extend towards the RNA molecules, embracing them and stabilizing the seed/target pairing. The natively unstructured termini make distributed interactions with the RNA, visiting dynamically multiple points on the nucleic acid.
 
 Solution studies indicate that the C-termini of Vibrio cholerae and E. coli Hfq are natively unstructured (Beich-Frandsen et al., 2011; Vincent et al., 2012). For most of the Hfq subunits in the crystal structure studied here, the C-terminal regions beyond residue 77 are disordered, but broken density in the vicinity is likely to be due to multiple conformations of the C-terminal region. These regions make consolidating interactions with the RNA and appear to be distributed over the exposed surfaces of the nucleic acid. A structural condensation of the C-terminal domains with sRNA binding is also consistent with data from X-ray and neutron solution scattering (Henderson et al., 2013). Both the structural data as well as in vivo experiments suggest that the C-terminal end of Hfq contributes to the association with RydC. The distributive interactions of the C-terminal domain are not expected to provide specificity to the recognition but may enhance the stability of equilibrium complexes as well as boosting the association rates by increasing the effective molecular encounter radius. The distributive interaction may account for the finding that deletion of the C-terminal extension decreases binding to mRNAs (Večerek et al., 2008) and that the C-terminal tail can bind to some RNA species (Robinson et al., 2013). The same might be true for yeast Lsm1 mutants with C-terminal truncations that have reduced affinity for RNA (Chowdhury et al., 2012).
 
@@ -154,27 +150,219 @@ Based on the current crystal structure, including the lattice interactions obser
 
 ## Materials and methods
 
-## Expression and purification of Hfq
+### Expression and purification of Hfq
 
 Wild-type E. coli Hfq was expressed and purified as previously described by Bandyra et al. (2012). Hfq mutants were expressed from pBAD vector in Top10 Δhfq strain (JVS-02001) to avoid hetero-hexamer formation. The mutant proteins were purified with the same protocol used for the wild-type Hfq, with a HiTrap Heparin purification step added (buffer A: 50 mM Tris, pH 8.0, 100 mM NaCl, 100 mM KCl; buffer B: buffer A + 1 M NaCl). The presence of mutations or truncations was confirmed by mass spectrometry analyses.
 
-## Preparation of RydC RNA
+### Preparation of RydC RNA
 
-For Salmonella RydC RNA in vitro transcription (IVT), a DNA template was amplified by PCR from pKF42-1 using primers RydC_T7_fwd and RydC_T7_rev (Table 1).10.7554/eLife.05375.019Table 1.OligonucleotidesDOI: http://dx.doi.org/10.7554/eLife.05375.019NameSequence 5′-3′RydC_T7_fwdGTTTTTTTTTTAATACGACTCACTATAGGCTTCCGATGTAGACCCGTRydC_T7_revCAGAAAACGCCTGCGTCTAACCAGGACCCGJVO-0322CTACGGCGTTTCACTTCTGAGTTCJVO-4363AGAAAACGCCTGCGTCJVO-4558GTTTTTTTTAATACGACTCACTATAGGTTGTTTATATTACGATAATT JVO-4721GTTTTTTTTTTAATACGACTCACTATAGGTTCCGATGTAGACCCGTCCJVO-4722AGAAAACGCCTGCGTCTAACJVO-5165GTTTTTTTTTTAATACGACTCACTATAGGTTCCGATGTAGAGCGGTCCJVO-9044CCCACGGACAATTCCGTJVO-10909CAGCAACAATGCCGGTGGCGGCGCCAGCAATAACTACCATTAAGGTCCATATGAATATCCTCCTTAGJVO-10910ATTATCCGACGCCCCCGACATGGATAAACAGCGCGTGAACGTGTAGGCTGGAGCTGCTTCJVO-10913CGAGACGCAGGCGTTTTCJVO-10914P-CCAGGACCCGTGACGJVO-10915GCCGCCTGCGTCACGGJVO-10916P-GGAGGACGGGTCTACATCP: 5′ phosphorylation
+For Salmonella RydC RNA in vitro transcription (IVT), a DNA template was amplified by PCR from pKF42-1 using primers RydC_T7_fwd and RydC_T7_rev (Table 1).
+
+**Table 1.**
+ Oligonucleotides
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence 5′-3′</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RydC_T7_fwd</td>
+      <td>GTTTTTTTTTTAATACGACTCACTATAGGCTTCCGATGTAGACCCGT</td>
+    </tr>
+    <tr>
+      <td>RydC_T7_rev</td>
+      <td>CAGAAAACGCCTGCGTCTAACCAGGACCCG</td>
+    </tr>
+    <tr>
+      <td>JVO-0322</td>
+      <td>CTACGGCGTTTCACTTCTGAGTTC</td>
+    </tr>
+    <tr>
+      <td>JVO-4363</td>
+      <td>AGAAAACGCCTGCGTC</td>
+    </tr>
+    <tr>
+      <td>JVO-4558</td>
+      <td>GTTTTTTTTAATACGACTCACTATAGGTTGTTTATATTACGATAATT</td>
+    </tr>
+    <tr>
+      <td>JVO-4721</td>
+      <td>GTTTTTTTTTTAATACGACTCACTATAGGTTCCGATGTAGACCCGTCC</td>
+    </tr>
+    <tr>
+      <td>JVO-4722</td>
+      <td>AGAAAACGCCTGCGTCTAAC</td>
+    </tr>
+    <tr>
+      <td>JVO-5165</td>
+      <td>GTTTTTTTTTTAATACGACTCACTATAGGTTCCGATGTAGAGCGGTCC</td>
+    </tr>
+    <tr>
+      <td>JVO-9044</td>
+      <td>CCCACGGACAATTCCGT</td>
+    </tr>
+    <tr>
+      <td>JVO-10909</td>
+      <td>CAGCAACAATGCCGGTGGCGGCGCCAGCAATAACTACCATTAAGGTCCATATGAATATCCTCCTTAG</td>
+    </tr>
+    <tr>
+      <td>JVO-10910</td>
+      <td>ATTATCCGACGCCCCCGACATGGATAAACAGCGCGTGAACGTGTAGGCTGGAGCTGCTTC</td>
+    </tr>
+    <tr>
+      <td>JVO-10913</td>
+      <td>CGAGACGCAGGCGTTTTC</td>
+    </tr>
+    <tr>
+      <td>JVO-10914</td>
+      <td>P-CCAGGACCCGTGACG</td>
+    </tr>
+    <tr>
+      <td>JVO-10915</td>
+      <td>GCCGCCTGCGTCACGG</td>
+    </tr>
+    <tr>
+      <td>JVO-10916</td>
+      <td>P-GGAGGACGGGTCTACATC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P: 5′ phosphorylation</td>
+    </tr>
+  </tbody>
+</table>
 
 Transcription mixtures containing DNA-template, ribonucleotides (rNTPs), T7 RNA polymerase, DTT (dithiothreitol), and RNase Out (Invitrogen, UK) were incubated in transcription buffer (400 mM Tris (pH 7.9/8.0), 250 mM MgCl2, 20 mM spermidine) for 4 hr at 37°C, and then Turbo DNase (Ambion) was added to digest the template. The IVT product was separated on a 10% polyacrylamide gel containing 7 M urea. The band corresponding to the transcribed RydC was visualized by UV-shadowing, excised from the gel, and the RNA was electro-eluted overnight using an EluTrap system (Whatman, UK). The RNA sample was concentrated by ultrafiltration through a Vivaspin 500 concentrator (5 kDa cut-off).
 
-## Crystallization of Hfq–RydC complex
+### Crystallization of Hfq–RydC complex
 
 The RNA–protein complex was prepared by mixing purified Hfq6 and RydC in a ratio of 2:1, the Hfq hexamer concentration being 15 mg/ml. Crystals of the Hfq–RydC complex were grown by sitting drop vapour diffusion after adding an equal volume of crystallization buffer (0.2 M trisodium citrate, 0.1 M sodium cacodylate (pH 6.5), 15% vol/vol isopropanol) to the protein–RNA mixture. Crystals were harvested using 25% PEG400 as cryoprotectant and flash frozen in liquid nitrogen. X-ray data were collected on station I24 at Diamond Light source. Data were collected at 100 K at a wavelength of 0.9778 Å.
 
 Images obtained from the two best crystals having the same space group and cell dimensions were merged and scaled together, before proceeding with the structure determination.
 
-## Crystal structure determination
+### Crystal structure determination
 
-The structure was solved by molecular replacement with PHASER (McCoy et al., 2007) using residues 5–66 of E. coli Hfq as the search model. Electron density for RNA was apparent in the early maps. Maps were improved with density modification with PARROT using histogram matching with tRNA/aminoacyl-tRNA synthase experimental structure factors as the reference distribution. This structure has a similar solvent content and RNA/protein mass ratio as the RydC/Hfq crystals, and density modification with this method improved the map and visualisation of the RNA. The structure was refined using BUSTER (Bricogne et al., 2011) and with jelly body restraints in refinement with REFMAC (Murshudov et al., 2011). The model was built using COOT (Emsley et al., 2010). The protein and RNA stereochemistry were validated by using both Coot validation tools and Procheck from the CCP4 suite (Laskowski et al., 1993; Emsley et al., 2010). The Ramachandran plot of the model places 92.9% of residues in most favoured regions, 5.4% in additional allowed regions, 1.6% in generously allowed regions, and none in disallowed regions. X-ray data collection and refinement statistics are summarized in Table 2. Figures were prepared using PYMOL (DeLano, 2006). The coordinates and structure factors have been deposited in the PDB with accession code 4v2s.10.7554/eLife.05375.020Table 2.X-ray data collection and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.05375.020Data collection Space groupP212121 Cell dimensions a, b, c (Å)71.94, 73.36, 137.95 α, β, γ (°)90, 90, 90 Resolution (Å)24.47–3.48 (3.69–3.48)* Rmerge0.152 (0.886) I/σI9.6 (2.3) Completeness (%)99.1 (99.4) Multiplicity5.8 (5.9)Refinement Resolution (Å)24.32 (3.48) No. reflections9190 Rwork/Rfree0.22/0.28 No. atoms4470 Protein3238 RNA1187 Water45 B-factors Overall94.69 Protein93.36 RNA122.60 Water54.90 R.m.s. deviations Bond lengths (Å)0.010 Bond angles (°)1.475*Values in parentheses are for the highest-resolution shell.
+The structure was solved by molecular replacement with PHASER (McCoy et al., 2007) using residues 5–66 of E. coli Hfq as the search model. Electron density for RNA was apparent in the early maps. Maps were improved with density modification with PARROT using histogram matching with tRNA/aminoacyl-tRNA synthase experimental structure factors as the reference distribution. This structure has a similar solvent content and RNA/protein mass ratio as the RydC/Hfq crystals, and density modification with this method improved the map and visualisation of the RNA. The structure was refined using BUSTER (Bricogne et al., 2011) and with jelly body restraints in refinement with REFMAC (Murshudov et al., 2011). The model was built using COOT (Emsley et al., 2010). The protein and RNA stereochemistry were validated by using both Coot validation tools and Procheck from the CCP4 suite (Laskowski et al., 1993; Emsley et al., 2010). The Ramachandran plot of the model places 92.9% of residues in most favoured regions, 5.4% in additional allowed regions, 1.6% in generously allowed regions, and none in disallowed regions. X-ray data collection and refinement statistics are summarized in Table 2. Figures were prepared using PYMOL (DeLano, 2006). The coordinates and structure factors have been deposited in the PDB with accession code 4v2s.
 
-## Binding rates and affinity measurements
+**Table 2.**
+ X-ray data collection and refinement statistics
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>71.94, 73.36, 137.95</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>24.47–3.48 (3.69–3.48)*</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.152 (0.886)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>9.6 (2.3)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.1 (99.4)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>5.8 (5.9)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>24.32 (3.48)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>9190</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.22/0.28</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>4470</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>3238</td>
+    </tr>
+    <tr>
+      <td>RNA</td>
+      <td>1187</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Overall</td>
+      <td>94.69</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>93.36</td>
+    </tr>
+    <tr>
+      <td>RNA</td>
+      <td>122.60</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>54.90</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.475</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for the highest-resolution shell._
+
+### Binding rates and affinity measurements
 
 Kinetic measurements with Bio-Layer Interferometry were performed using an Octet RED96 equipped with Streptavidin sensors (ForteBio, UK) on 96-well plates. The experiment was performed in the binding buffer (25 mM Tris, pH 7.5, 50 mM NaCl, 50 mM KCl, 1 mM MgCl2, 1 mM DTT), which was also used to prepare all dilutions, for dissociation and neutralisation. A fragment of cfa mRNA (cfa1, nucleotides from TSS1 to −72 relative to the AUG, 139 nts, Fröhlich et al., 2013) was in vitro transcribed from a PCR template (JVO-4558*JVO-9044 on pKF31-1) and labelled with biotin in an IVT reaction using fivefold excess of GMP-biotin (TriLink Biotechnologies, San Diego CA, USA) over GTP. 5′ biotin labelled cfa fragment was immobilised on the biosensor that was subsequently submerged into 10 μM solution of maltose binding protein (MBP) labelled with biotin. The binding of wild-type and mutant Hfq were assayed at 0, 5, 10, 25, 75, 150, 250, and 500 nM protein over 400 s, in the absence or presence of 1 μM chemically synthesized RydC (Dharmacon, GE Healthcare, UK). The dissociation was monitored over 300 s and was followed by regeneration of the sensors using 1 M MgCl2. Another set of tips was saturated with MBP-biotin and the measurements were then repeated for all Hfq and Hfq–RNA concentration series. The data were fitted with Data Analysis software (ForteBio) with a 1:1 binding model. The plots were prepared with Profit (Quantum Soft, Switzerland) using the following equation for response fit:
 
@@ -182,26 +370,236 @@ Y = Rm × Xn/(Kdn + Xn),
 
 where Y is the observed binding, X is the molar concentration of the ligand, Rm is the maximum specific binding, and n is the Hill’s coefficient.
 
-## DNA/RNA oligonucleotides and plasmids
+### DNA/RNA oligonucleotides and plasmids
 
-Sequences of all oligonucleotides employed in this study are listed in Table 1. All plasmids used in this study are summarized in Table 3.10.7554/eLife.05375.021Table 3.PlasmidsDOI: http://dx.doi.org/10.7554/eLife.05375.021Plasmid trivial namePlasmid stock nameRelevant fragmentCommentOrigin, markerReferenceUsed in Figurectrl.pJV300pPL control plasmid, expresses an ∼50 nt nonsense transcript derived from rrnB terminatorColE1, AmpR(Sittka et al., 2007)5CpPL-RydCpKF42-1RydCExpresses Salmonella RydC from constitutive PLlacO promoterColE1, AmpR(Fröhlich et al., 2013)1B/C; 5B/C; 7pPL-RydC-SIpKF60-1RydC-SIExpresses Salmonella RydC-SI (SNEs G37C; G39C) from constitutive PLlacO promoterColE1, AmpR(Fröhlich et al., 2013)1B/CpPL-RydC-LIpKF224-9RydC-LIExpresses Salmonella RydC-LI (SNEs U23G; U24C) from constitutive PLlacO promoterColE1, AmpRThis study5B/CpPL-RydC-LIIpKF223RydC-LIIExpresses Salmonella RydC-LII (SNEs U46C; U47G) from constitutive PLlacO promoterColE1, AmpRThis study5B/CpPL-RydC-LI/LIIpKF225RydC-LI/LIIexpresses Salmonella RydC-LI/LII (SNEs U23G; U24C and U46C; U47G) from constitutive PLlacO promoterColE1, AmpRThis study5B/Ccfa::gfppKF31-1cfa::gfpexpresses cfa::gfp translational fusion (−210 rel. to AUG + 15 codons of cfa) from constitutive PLtetO-1 promoterpSC101*, CmR(Fröhlich et al., 2013)5CpKD4Template plasmid for KmR mutant constructionoriRγ, AmpR(Datsenko and Wanner, 2000)pKD46γ-β-exotemperature-sensitive plasmid to express λRED-recombinase from arabinose-inducible ParaB promoteroriR101, AmpR(Datsenko and Wanner, 2000)pCP20FLP–ci857Temperature-sensitive Flp recombinase expression plasmidpSC101, AmpR, CamR(Cherepanov and Wackernagel, 1995)Hfq wild-typepEH–10–(hfq)HfqExpresses wild-type Hfq protein without tagsAmpRKind gift of I. Moll (Max F. Perutz Laboratories, University of Vienna, Austria)2, 3, 4, 6HfqRimpBAD-RimHfq R19A,P21A,Q33A,Q35A,T49A,R66AExpresses mutant of Hfq protein without tagspMB1, AmpRThis study6Hfq66pBAD-66Hfq amino aids 1-66Expresses truncated Hfq protein without tagspMB1, AmpRThis studyS5
+Sequences of all oligonucleotides employed in this study are listed in Table 1. All plasmids used in this study are summarized in Table 3.
+
+**Table 3.**
+ Plasmids
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid trivial name</th>
+      <th>Plasmid stock name</th>
+      <th>Relevant fragment</th>
+      <th>Comment</th>
+      <th>Origin, marker</th>
+      <th>Reference</th>
+      <th>Used in Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ctrl.</td>
+      <td>pJV300</td>
+      <td></td>
+      <td>pPL control plasmid, expresses an ∼50 nt nonsense transcript derived from rrnB terminator</td>
+      <td>ColE1, AmpR</td>
+      <td>(Sittka et al., 2007)</td>
+      <td>5C</td>
+    </tr>
+    <tr>
+      <td>pPL-RydC</td>
+      <td>pKF42-1</td>
+      <td>RydC</td>
+      <td>Expresses Salmonella RydC from constitutive PLlacO promoter</td>
+      <td>ColE1, AmpR</td>
+      <td>(Fröhlich et al., 2013)</td>
+      <td>1B/C; 5B/C; 7</td>
+    </tr>
+    <tr>
+      <td>pPL-RydC-SI</td>
+      <td>pKF60-1</td>
+      <td>RydC-SI</td>
+      <td>Expresses Salmonella RydC-SI (SNEs G37C; G39C) from constitutive PLlacO promoter</td>
+      <td>ColE1, AmpR</td>
+      <td>(Fröhlich et al., 2013)</td>
+      <td>1B/C</td>
+    </tr>
+    <tr>
+      <td>pPL-RydC-LI</td>
+      <td>pKF224-9</td>
+      <td>RydC-LI</td>
+      <td>Expresses Salmonella RydC-LI (SNEs U23G; U24C) from constitutive PLlacO promoter</td>
+      <td>ColE1, AmpR</td>
+      <td>This study</td>
+      <td>5B/C</td>
+    </tr>
+    <tr>
+      <td>pPL-RydC-LII</td>
+      <td>pKF223</td>
+      <td>RydC-LII</td>
+      <td>Expresses Salmonella RydC-LII (SNEs U46C; U47G) from constitutive PLlacO promoter</td>
+      <td>ColE1, AmpR</td>
+      <td>This study</td>
+      <td>5B/C</td>
+    </tr>
+    <tr>
+      <td>pPL-RydC-LI/LII</td>
+      <td>pKF225</td>
+      <td>RydC-LI/LII</td>
+      <td>expresses Salmonella RydC-LI/LII (SNEs U23G; U24C and U46C; U47G) from constitutive PLlacO promoter</td>
+      <td>ColE1, AmpR</td>
+      <td>This study</td>
+      <td>5B/C</td>
+    </tr>
+    <tr>
+      <td>cfa::gfp</td>
+      <td>pKF31-1</td>
+      <td>cfa::gfp</td>
+      <td>expresses cfa::gfp translational fusion (−210 rel. to AUG + 15 codons of cfa) from constitutive PLtetO-1 promoter</td>
+      <td>pSC101*, CmR</td>
+      <td>(Fröhlich et al., 2013)</td>
+      <td>5C</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pKD4</td>
+      <td></td>
+      <td>Template plasmid for KmR mutant construction</td>
+      <td>oriRγ, AmpR</td>
+      <td>(Datsenko and Wanner, 2000)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pKD46</td>
+      <td>γ-β-exo</td>
+      <td>temperature-sensitive plasmid to express λRED-recombinase from arabinose-inducible ParaB promoter</td>
+      <td>oriR101, AmpR</td>
+      <td>(Datsenko and Wanner, 2000)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCP20</td>
+      <td>FLP–ci857</td>
+      <td>Temperature-sensitive Flp recombinase expression plasmid</td>
+      <td>pSC101, AmpR, CamR</td>
+      <td>(Cherepanov and Wackernagel, 1995)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hfq wild-type</td>
+      <td>pEH–10–(hfq)</td>
+      <td>Hfq</td>
+      <td>Expresses wild-type Hfq protein without tags</td>
+      <td>AmpR</td>
+      <td>Kind gift of I. Moll (Max F. Perutz Laboratories, University of Vienna, Austria)</td>
+      <td>2, 3, 4, 6</td>
+    </tr>
+    <tr>
+      <td>HfqRim</td>
+      <td>pBAD-Rim</td>
+      <td>Hfq R19A,P21A,Q33A,Q35A,T49A,R66A</td>
+      <td>Expresses mutant of Hfq protein without tags</td>
+      <td>pMB1, AmpR</td>
+      <td>This study</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Hfq66</td>
+      <td>pBAD-66</td>
+      <td>Hfq amino aids 1-66</td>
+      <td>Expresses truncated Hfq protein without tags</td>
+      <td>pMB1, AmpR</td>
+      <td>This study</td>
+      <td>S5</td>
+    </tr>
+  </tbody>
+</table>
 
 For plasmids expressing loop mutants of RydC from the PL-promoter, plasmid pKF42-1 served as template for PCR amplification with primer pairs JVO-10915/JVO-10916 (pPL-RydC-LI; pKF224-9), JVO-10913/JVO-10914 (pPL-RydC-LII; pKF223), and the linear fragments were purified and self-ligated. Similarly, pPL-RydC-LI/LII (pKF225) was constructed by self-ligation of a PCR product of JVO-10915/10,916 using pKF223 as template. Competent E. coli TOP10 were used for all cloning purposes.
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 For the in vivo analyses, bacteria were grown aerobically in L-Broth (LB) medium at 37°C. Where appropriate, liquid and solid media were supplemented with antibiotics at the following concentrations: 100 µg/ml ampicillin, 50 µg/ml kanamycin, and 20 µg/ml chloramphenicol.
 
-A complete list of bacterial strains employed in this study is provided in Table 4. Salmonella enterica serovar Typhimurium strain SL1344 (JVS-0007) is referred to as wild-type strain and was used for mutant construction. Single mutant derivatives were constructed by the λRed recombinase one-step inactivation method. To obtain JVS-10701 (SL1344 hfq70::STOP), Salmonella cells carrying the pKD46 helper plasmid were transformed with a DNA fragment amplified from pKD4 using JVO-10909/JVO-10910. Subsequently, the KanR cassette of λRed-derived mutants was eliminated by transformation with the FLP recombinase expression plasmid pCP20 (Datsenko and Wanner, 2000). Phage P22 transduction was used to transfer chromosomal modifications to a fresh Salmonella wild-type background as well as to obtain strains carrying multiple mutations.10.7554/eLife.05375.022Table 4.StrainsDOI: http://dx.doi.org/10.7554/eLife.05375.022Trivial nameStockGenotype; relevant markersSource/referenceUsed in FigureSalmonellaJVS-0007SL1344; StrR hisG rpsL xylLaboratory stockΔrydCJVS-0291ΔrydC::KanR(Papenfort et al., 2008)1B/C; 5B/C; 7ΔhfqJVS-0584Δhfq(Sittka et al., 2007)1B/CΔrydC ΔhfqJVS-10665ΔrydC::KanR Δhfq(Fröhlich et al., 2013)7JVS-10701hfq70::STOPThis studyΔrydC hfq70JVS-11150hfq70::STOP ΔrydC::KanRThis study7E. coliTOP10JVS-2000F− mcrA Δ(mrr-hsdRMS-mcrBC) Φ80lacZΔM15 ΔlacX74 recA1 araD139 Δ(ara-leu)7697 galU galK rpsL endA1 nupG λ−Invitrogen
+A complete list of bacterial strains employed in this study is provided in Table 4. Salmonella enterica serovar Typhimurium strain SL1344 (JVS-0007) is referred to as wild-type strain and was used for mutant construction. Single mutant derivatives were constructed by the λRed recombinase one-step inactivation method. To obtain JVS-10701 (SL1344 hfq70::STOP), Salmonella cells carrying the pKD46 helper plasmid were transformed with a DNA fragment amplified from pKD4 using JVO-10909/JVO-10910. Subsequently, the KanR cassette of λRed-derived mutants was eliminated by transformation with the FLP recombinase expression plasmid pCP20 (Datsenko and Wanner, 2000). Phage P22 transduction was used to transfer chromosomal modifications to a fresh Salmonella wild-type background as well as to obtain strains carrying multiple mutations.
 
-## Protein sample analysis
+**Table 4.**
+ Strains
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trivial name</th>
+      <th>Stock</th>
+      <th>Genotype; relevant markers</th>
+      <th>Source/reference</th>
+      <th>Used in Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Salmonella</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>JVS-0007</td>
+      <td>SL1344; StrR hisG rpsL xyl</td>
+      <td>Laboratory stock</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ΔrydC</td>
+      <td>JVS-0291</td>
+      <td>ΔrydC::KanR</td>
+      <td>(Papenfort et al., 2008)</td>
+      <td>1B/C; 5B/C; 7</td>
+    </tr>
+    <tr>
+      <td>Δhfq</td>
+      <td>JVS-0584</td>
+      <td>Δhfq</td>
+      <td>(Sittka et al., 2007)</td>
+      <td>1B/C</td>
+    </tr>
+    <tr>
+      <td>ΔrydC Δhfq</td>
+      <td>JVS-10665</td>
+      <td>ΔrydC::KanR Δhfq</td>
+      <td>(Fröhlich et al., 2013)</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>JVS-10701</td>
+      <td>hfq70::STOP</td>
+      <td>This study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ΔrydC hfq70</td>
+      <td>JVS-11150</td>
+      <td>hfq70::STOP ΔrydC::KanR</td>
+      <td>This study</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td colspan="5">E. coli</td>
+    </tr>
+    <tr>
+      <td>TOP10</td>
+      <td>JVS-2000</td>
+      <td>F− mcrA Δ(mrr-hsdRMS-mcrBC) Φ80lacZΔM15 ΔlacX74 recA1 araD139 Δ(ara-leu)7697 galU galK rpsL endA1 nupG λ−</td>
+      <td>Invitrogen</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein sample analysis
 
 To prepare whole-cell samples for Western blot analyses, bacteria were collected by centrifugation (16,000×g; 2 min; 4°C), and pellets were resuspended in 1X protein loading buffer (Fermentas, UK) to a final concentration of 0.01 OD/µl. Samples corresponding to 0.1 OD were loaded per lane and resolved by SDS-PAGE, after which proteins were transferred to PVDF membranes as described in Sittka et al. (2007). GFP fusion proteins and GroEL were detected using commercially available antibodies (GFP: 1:5000; mouse; Roche # 11814460001 and GroEL: 1:10,000; rabbit; Sigma-Aldrich G6532). Anti-mouse or anti-rabbit secondary antibodies conjugated with horseradish peroxidase (1:10,000; GE Healthcare) were used in all cases. Signals were visualized using the Western Lightning reagent (PerkinElmer, Waltham MA, USA) and an ImageQuant LAS 4000 CCD camera (GE Healthcare).
 
-## Determination of RNA half-life
+### Determination of RNA half-life
 
 To monitor RNA half-life of RydC mutant variants, cells were grown to an OD600 of 1 and treated with rifampicin (final concentration: 500 µg/ml) to abrogate transcription. RNA samples were withdrawn at indicated time-points, and RNA decay was determined by Northern blot analysis as previously described (Urban and Vogel, 2007; Fröhlich et al., 2012). RydC and its variants were detected with the universal oligo JVO-4364; 5S RNA served as loading control (JVO-0322).
 
-## Electrophoretic mobility shift assay (EMSA)
+### Electrophoretic mobility shift assay (EMSA)
 
 Formation of complexes between sRNAs and Hfq in vitro was analysed by gel shift assays. For RNA in vitro synthesis, ∼200 ng of template DNA carrying a T7 promoter sequence was amplified by PCR (RydC: JVO-4721*JVO-4722 on pKF42-1; RydC-S1: JVO-5165*JVO-4722 on pKF60-1) and reverse transcribed and 5′-end-labelled as described previously (Fröhlich et al., 2013). Labelled RNA RydC or RydC-S1 (4 pmol) was denatured (95°C, 2 min), chilled on ice for 5 min, and supplemented with 1× structure buffer and 1 μg yeast RNA. Upon addition of purified Hfq (concentration as indicated in the figure legends) or Hfq dilution buffer (control; 1× structure buffer, 1% (vol/vol) glycerol, 0.1% Triton X-100), samples were incubated at 37°C for 10 min. Unlabelled competitor RNA was added at the indicated concentrations, and samples were incubated for additional 10 min. Prior to loading, reactions were mixed with native loading buffer (50% glycerol, 0.5× TBE, 0.02% (wt/vol) bromophenol blue) and separated by native PAGE (6% PAA). Gels were dried and signals were determined on a Typhoon FLA 7000 phosphorimager.

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.29494.001 Low and disturbed blood flow drives the progression of arterial diseases including atherosclerosis and aneurysms. The endothelial response to flow and its interactions with recruited platelets and leukocytes determine disease progression. Here, we report widespread changes in alternative splicing of pre-mRNA in the flow-activated murine arterial endothelium in vivo. Alternative splicing was suppressed by depletion of platelets and macrophages recruited to the arterial endothelium under low and disturbed flow. Binding motifs for the Rbfox-family are enriched adjacent to many of the regulated exons. Endothelial deletion of Rbfox2 , the only family member expressed in arterial endothelium, suppresses a subset of the changes in transcription and RNA splicing induced by low flow. Our data reveal an alternative splicing program activated by Rbfox2 in the endothelium on recruitment of platelets and macrophages and demonstrate its relevance in transcriptional responses during flow-driven vascular inflammation.
+Low and disturbed blood flow drives the progression of arterial diseases including atherosclerosis and aneurysms. The endothelial response to flow and its interactions with recruited platelets and leukocytes determine disease progression. Here, we report widespread changes in alternative splicing of pre-mRNA in the flow-activated murine arterial endothelium in vivo. Alternative splicing was suppressed by depletion of platelets and macrophages recruited to the arterial endothelium under low and disturbed flow. Binding motifs for the Rbfox-family are enriched adjacent to many of the regulated exons. Endothelial deletion of Rbfox2, the only family member expressed in arterial endothelium, suppresses a subset of the changes in transcription and RNA splicing induced by low flow. Our data reveal an alternative splicing program activated by Rbfox2 in the endothelium on recruitment of platelets and macrophages and demonstrate its relevance in transcriptional responses during flow-driven vascular inflammation.
 
 ## Introduction
 
@@ -36,23 +36,63 @@ Here, we test the possibility that alternative splicing is broadly regulated in 
 
 ## Results
 
-## Low flow induces a program of alternative splicing in the arterial intima
+### Low flow induces a program of alternative splicing in the arterial intima
 
 To determine the extent of alternative splicing changes in the arterial intima under low-flow conditions, we prepared pools of intimal RNA from the carotid arteries of mice exposed to low flow for 48 hr (Figure 1A). Control pools of RNA were prepared from mice subjected to a sham operation, or from the contralateral arteries of ligated mice, which were exposed to high flow. We detected 4766 differentially expressed genes between the low-flow carotid and the contralateral high-flow carotid (Padj <0.05 by DEseq2, N = 3 per group), which overlapped and extended previous experiments in this system and in vitro (Dai et al., 2004; Ni et al., 2010) (Figure 1B). We observed excellent correlation in Log2 fold-change between biological replicates (Pearson correlation of 0.82 for all genes, and 0.98 for genes found to be significantly regulated by low flow). Low flow, rather than high flow in the contralateral artery, was responsible for the majority of changes in mRNA levels, relative to the normal-flow, sham-operated controls (Figure 1—figure supplement 1). The flow-responsive signature included reduction in expression of the canonical flow-responsive genes Klf2 and Klf4 and we also detected an increase in signal from innate immune cells (CD45, F4/80, CD11b, Cxcr2; Figure 1—figure supplement 2), suggesting that such cells are recruited as early as 48 hr after the change in flow. However, transcripts from recruited or other contaminating cells represented a small portion of the total signal. This was assessed by the amount of eGFP (endothelial) mRNA copies versus tdTomato (all other cells) in Cdh5(PAC)Cre-ERT2; mT/mG mice, in which eGFP or tdTomato are driven from the same constitutive actin promoter in a cell-specific manner (Figure 1—figure supplement 3). By this measure, contaminating transcripts represented <1.5% of RNA analyzed.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig1-v2.jpg)
+
+**Figure 1.:** RNA from the arterial endothelium was isolated 48 hr after partial carotid ligation; from the low-flow side, the high-flow side, or sham-operated vessels. (A) Outline of splicing analysis. Three pools of mRNA from each condition were isolated by polyA and sequenced. (B) Plot showing the consistency of changes in gene expression in two independent biological comparisons of low-flow versus high-flow isolations. (C) Number of RNA splicing events of each category detected by MISO analysis as significantly different in two independent biological comparisons. Events were drawn from annotated databases (Burge, Tian) or from custom annotation of mapped splice junctions (novel). (D) Plot showing the changes in skipped-exon inclusion level (deltaPsi) between low-flow and high-flow isolations. The plot also indicates changes in transcription, highlighting exons in genes with a change in FPKM of more than 2-fold up or down. (E) Processes enriched in the genes with regulated skipped exons, relative to the entire set of genes expressed in the tissue with annotated skipped exons which were not significantly regulated. Padj = Adjusted P-value, BF = Bayes Factor; FPKM = Fragments Per Kilobase of transcript per Million mapped reads; CCDS = Consensus Coding DNA Sequence.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Alterations in transcript level for the 2535 genes with p-values<0.0001 in the comparison of low versus high flow. Most of the changes seen in the low vs high flow comparison (X-axis) were stronger in the low vs sham comparison than in the high vs sham comparison (Y-axis). All changes are shown as log2-fold.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Comparison of RNA-seq data from carotid intima 48 hr after the induction of low and disturbed flow. Canonical flow-responsive genes (Klf2 and Klf4) and markers of recruited immune cells (CD45, Cd68, F4/80, Cxcr2 and Il19a) are shown. Each point represents pooled RNA from multiple intimal preparations. In vitro is a single isolated and sorted cell line from aortic endothelium based on eGFP expression (Cdh5(PAC)-CreERT2; mTmG).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The mT/mG mice constitutively express tdTomato in all cells from a CMV enhancer/chicken beta-actin core promoter (pCA). Upon Cre activity, in this case driven by the endothelial-specific Cdh5(PAC)-CreERT2, the tdTomato is excised, and a downstream eGFP is expressed instead. Since tdTomato is expressed in all non-endothelial cells and eGFP is expressed in all endothelial cells, the ratio may be used as an indicator of endothelial to non-endothelial mRNA levels in the isolate. The comparison of RNA-seq reads assigned to eGFP or tdTomato from Cdh5(PAC)-CreERT2; Rbfox2 ff; mT/mG (N = 2 pools) mice or Rbfox2 ff; mT/mG mice (N = 2 pools) is shown. Cultured and FACs-purified eGFP +cells from Cdh5(PAC)-CreERT2; Rbfox2 ff; mT/mG mouse aorta is also shown (N = 1).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Comparison of the change in inclusion frequency by MISO for individual splicing events of the SE, MXE, A3SS, A5SS and RI classes. In green are the events presented in Figure 1C. In blue are all other events with BF >5 in two independent biological comparisons of low flow versus sham, or with BF >5 in two independent biological comparisons of high flow versus sham. Then Venn diagram shows the overlap in these events found to be significant in each of the independent comparisons.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Comparison of the change in inclusion frequency by MISO for individual splicing events of the classes shown (by color code on bottom), relative to high-flow arterial endothelium in vivo. Other splice events include A3SS, A5SS, MXE and RI. Only flow-regulated alternative splicing events are shown. In vitro cells are primary Cdh5(PAC)-CreERT2; mT/mG cells from the aorta, isolated as described in Materials and methods, cultured in static conditions and sorted by FACs for eGFP+ before RNA isolation. Splicing events in these cells were compared to high-flow carotid artery intimal isolate. In vivo low-flow is the comparison of the low-flow intimal isolate to the high-flow intimal isolate. Pearson correlation indicates the correlation between the change in inclusion observed in low-flow activated endothelial cells in vivo versus low-flow activation of endothelial cells in vitro.
 
 Having established endothelial enriched RNA pools from the various flow conditions, we then asked whether alternative splicing in intimal endothelial cells was regulated by flow. We assessed levels of alternative exon inclusion, expressed as ‘percentage spliced in’ (Psi), in each condition and their differences using the MISO Bayesian statistical framework (Katz et al., 2010). We examined annotated events as well as novel events (see Materials and methods). Setting a threshold of significance at Bayes factor five in two biologically independent comparisons of low flow to high flow, we identified 768 regulated splicing events between known exons (skipped or mutually exclusive exons, retained introns, or alternative 5’ or 3’ splice sites) and over a thousand regulated changes to the last exon or 3’UTR (Figure 1C). As with the transcript level changes, the vast majority of the splicing changes were induced by low flow, rather than high flow, in comparison with sham-operated vessels (Figure 1—figure supplement 4). Approximately, 90% of the splicing changes observed in vivo were recapitulated (at least 50% in the same direction) in purified endothelial cells in vitro, supporting the endothelial regulation of these splicing events (Figure 1—figure supplement 5). It is not clear whether the 10% of events not similarly regulated in vitro reflect differences in the in vitro system or transcript variants from the ~1.5% contaminating mRNA.
 
 Because the mechanisms of regulation of skipped exons are best understood, and because we are interested in alternative splicing events similar to the skipped exons in Fn, we focused on this subclass of alternative splicing events (Murphy and Hynes, 2014). Changes in skipped exons were consistent between completely independent biological sets, and not obviously correlated with increased or decreased abundance in the transcriptional levels of these genes between conditions (Figure 1D, each point indicates a regulated splicing event, colored points indicate events in genes with altered transcript levels). The majority of the skipped exons were as strongly conserved evolutionarily as constitutive exons in placental mammals, and much more so than introns (data not shown). Genes with regulated skipped exons had annotated functions in several categories (Figure 1E). Thus, altered flow results in changes in RNA splicing of exons coincident with, but independent of, transcriptional changes.
 
-## Platelets are required for regulation of a subset of flow-regulated skipped exons
+### Platelets are required for regulation of a subset of flow-regulated skipped exons
 
 We previously observed that monocyte recruitment was required for increased inclusion of Fn-EIIIA and EIIIB exons after 48 hr of low flow (Murphy and Hynes, 2014). Platelets and granulocytes are also recruited to arterial endothelium in regions of low and disturbed flow (Chèvre et al., 2014; Huo et al., 2003; Massberg et al., 2002). We depleted each of these recruited cell types using clodronate liposomes for macrophages (Murphy and Hynes, 2014), anti-GPIbα for platelets and anti-Gr1 for neutrophils (Labelle et al., 2014). Platelets were essential for the recruitment of both macrophages and neutrophils in our system (Figure 2—figure supplement 1). Platelet depletion resulted in suppression of Fn-EIIIA and –EIIIB relative to control treatments, and in widespread changes in a large number of other flow-regulated skipped exons (Figure 2—figure supplement 2). For the platelet-regulated skipped exons (about 1/3 of all flow-regulated skipped exons), platelet depletion causes low-flow arteries to cluster with high-flow arteries in their splicing profile rather than with IgG or untreated low-flow arteries (Figure 2A). Thus, platelets are necessary for the regulation of many of the low-flow regulated skipped exons we observed.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig2-v2.jpg)
+
+**Figure 2.:** (A) Effects of platelet depletion on splicing patterns in vivo (see also 2–2). Clustered heat map showing the change in skipped-exon inclusion frequency relative to high-flow contralateral arteries in biological replicates of untreated arteries (from data set created in Figure 1) or platelet-depleted (anti-GPIbα) or IgG control-treated (IgG) arteries. The data shown are for the platelet-dependent subset of all flow-regulated skipped exons (SE; 80/292). IgG and anti-GPIbα (low flow) are relative to average IgG (high flow). No antibody treatment in vitro and in vivo low flow are relative to average in vivo high flow. (B) Effects of platelet, macrophage and plasma addition to endothelial cells in vitro. (B1) Bar graphs showing in vitro changes in EIIIA inclusion frequency and Cd68 macrophage marker expression with the different treatments of conditionally immortalized aortic endothelial cells, relative to in vivo low-flow and high-flow samples. (B2) Plot showing the in vitro regulation of platelet-regulated skipped-exon events (40/80), in isolated and conditionally immortalized aortic endothelial cells. (B3) Clustered heat map, showing the change in skipped exon inclusion frequency in in vivo biological replicates of low-flow arteries with or without platelet depletion (in vivo low-flow+ IgG control, +GPIba) or conditionally immortalized aortic endothelial cells with the addition of the indicated cells or 10% plasma.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Comparison of RNA-seq data from carotid intima 48 hr after induction of low and disturbed flow, or in the contralateral arteries. Each point represents pooled RNA from multiple intimal preparations (N = 2 pools per condition, each a pool of 3–5 arteries). IgG is a non-specific antibody control for platelet (Plt.) and granulocyte (Gr1)-depleting antibodies. PBS liposome (Lip.) is a control for macrophage-depleting clodronate liposomes (Clod.).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Quantitative PCR results of low-flow carotid arteries isolated from mice treated with anti-Gr1 (granulocytes), anti-GPIbα (platelets), clodronate liposomes (macrophages), or controls (IgG for antibody treatments and PBS liposomes for clodronate liposomes). Change in inclusion frequency is shown as fold change relative to sham-operated control contralateral artery at 48 hr. Significance of the differences by Sidak’s multiple comparison test are shown (**p<0.01, ***p<0.001, ****p<0.0001). Venn Diagram shows the low-flow events significantly regulated in vivo by platelets, macrophages or granulocytes, as defined in methods.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Endothelial cells were marked by induction of the mT/mG reporter in Cdh5(PAC)-CreERT2; mT/mG mice (A), isolated by collagenase flush and cultured (B), sorted on the mT/mG markers (C) and then immortalized by TetOn-SV40T (D).
 
 In vivo experiments were unable to discriminate between the effects of platelets and macrophages on the splicing response of endothelium, since platelet depletion suppressed macrophage recruitment. To address more directly the specific requirement for each blood cell type, we prepared a murine aortic endothelial cell line for in vitro co-culture experiments (Figure 2—figure supplement 3). We first examined EIIIA inclusion levels (Figure 2B1). Cultured cells in static conditions had higher baseline levels of EIIIA than high-flow arteries in vivo (compare bars 2 and 3). Co-culture with monocyte-derived macrophages, at similar stoichiometric ratios with the endothelial cells to those observed in vivo in low-flow arteries, did not further increase EIIIA inclusion. However, both platelets and plasma independently induced increased EIIIA inclusion, and exerted combinatorial effects, resulting in inclusion levels approximately 6-fold higher than in vivo levels when all three were added [EIIIA (from 15% to 80%) and EIIIB (from 11% to 60%)]. A broader examination of splicing changes, by RNA-seq, revealed that half (40 of 80) of the splicing events regulated by platelets in vivo were similarly regulated by a combination of platelets, macrophages and plasma in vitro (Figure 2B2). For this set of events, the addition of plasma, macrophages and platelets to cultured endothelial cells induced a low-flow-like change in splicing but the individual components - platelets, macrophages or plasma proteins - were unable to entirely recapitulate the potent effects of their combination (Figure 2B3). Thus, platelets alone were insufficient to induce low-flow regulated skipped exons, despite static in vitro conditions, and required both macrophages and plasma for maximal effect.
 
 Together our results suggest that recruitment of both platelets and macrophages to the arterial endothelium is required for the flow-responsive splicing pattern in a large set of genes, including the Fn-EIIIA and EIIIB exons.
 
-## Binding motif for the splicing factor Rbfox2 is enriched in regulated vascular splicing events
+### Binding motif for the splicing factor Rbfox2 is enriched in regulated vascular splicing events
 
 We were particularly interested in the set of skipped exons induced in the endothelium in a platelet and macrophage-dependent manner, along with Fn-EIIIA and –EIIIB, and asked whether there might be a common upstream regulatory factor. Although analysis of transcriptional levels did not reveal obvious candidate splicing factors (Figure 3—figure supplement 1), the identity of relevant splicing regulators can in some cases be deduced by looking for enrichment of their RNA-binding motifs adjacent to regulated exons, where they typically bind to exert their effects (Shapiro et al., 2011).
 
@@ -60,15 +100,43 @@ To take an unbiased approach to the identification of regulatory splicing factor
 
 Having confirmed our pipeline, we then applied it to assess the regulation of skipped exons in the increasingly narrowly defined group regulated in vivo and in vitro by recruited platelets and macrophages (Figure 3A and B). Enrichment was judged relative to background sets created from known skipped exons expressed but not regulated in endothelial cells (see Materials and methods for details). The Rbfox family, of which Rbfox2 is known to regulate EIIIB (Underwood et al., 2005), stood out among this group, being enriched especially on the downstream side of exons with decreased inclusion and, to a lesser extent, on both the upstream and downstream side of exons with increased inclusion (Figure 3C–E).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig3-v2.jpg)
+
+**Figure 3.:** (A) Motif analysis pipeline, showing the number of potentially regulated skipped-exon events, and those passing each filter. (B) Events were separated into those with increased or decreased inclusion, and then the sequences of the upstream and downstream 200 bp flanking regions were isolated, resulting in four regions of analysis. 6-mer motifs in each region were assessed for enrichment relative to exons expressed in six matched background sets of skipped exons not regulated by flow. GSEA was used to identify splicing factor ‘fingerprints’ among these enriched motifs, using the motif-binding preference defined by the CisBP-RNA database (Ray et al.). (C) Example of enrichment of Rbfox binding motif in GSEA analysis of 85-unique RNA-binding protein signatures against flanking intron sequences of flow-regulated exons. Plot shows enrichment of Rbfox family motifs among the motifs most enriched above background in the downstream flanking region of exons regulated in vivo and in vitro (set iii). (D) Enrichment of the Rbfox2 motif in each of the sets of biologically defined regulated exons (i-iii) within the upstream and downstream flanking regions of exons with either increased or decreased inclusion. (E) Plot showing the average z-score enrichment of the top 5 Rbfox in vitro defined motifs in the flanking regions of the in vivo regulated exon set (80 SE) and the in vitro regulated subset (40 SE), relative to the six matched background sets (N = 6 per bar). (F) Transcript levels of Rbfox family of proteins in the carotid artery in vivo and in isolated aortic endothelial cells in vitro, with or without the deletion of Rbfox2 by Cdh5(PAC)-CreER (EC-KO). FPKM = Fragments Per Kilobase of transcript per Million mapped reads. FDR; false-discovery rate; n.f.; not found. p<0.0001 (****), p<0.01 (**).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Differential expression of RNA-binding proteins under conditions with altered splicing. Factors highlighted had consistent differences of <−0.5 or >0.5 in both sets of data. Only Dcn (decorin) showed differences of <-1 in both. RNA-binding proteins with FPKM <0.5 in the in vivo data sets were filtered out.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** GSEA plots showing enrichment of top CisBP-RNA motifs for the indicated splice factors near the skipped exons of the events regulated in the published gene sets (Rbfox2 shRNA in ES cells in vitro from Jiangi M et al; Mbnl1 in heart of KO mice from Wang ET et al.).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Plot showing the average conservation score (y-axis) and z-score (x-axis) for individual motifs near induced skipped exons in the published positive-control set (Rbfox2 regulated, Jangi et al. Genes and Development 2015) and the flow-induced set of skipped exon described here. Rbfox Motifs and Other Motifs are defined by Rbfox2 binding in vitro in the CisBP-RNA database (z-score >1 in CisBP-RNA). Mean conservation score on the Y-axis is derived from PhyloP vertebrate score at for each nucleotide in the given 7-mer motif adjacent to the regulated skipped exons. Z-score enrichment on the X-axis bins motifs into strongly (z-score >3), moderately (z-score 1 to 3) and weakly (z-score <1) enriched in the downstream region (5’ss) of induced skipped exons, relative to background sets of unregulated skipped exons. Number of motifs in each column are shown at the bottom of the bar. Motifs are shown for the far-right column of flow-induced (Rbfox2 motif z-score >1 in CisBP-RNA, and z-score enrichment >3 downstream of flow induced skipped exons).
+
 Rbfox2 motifs in the flanking regions of the regulated events were conserved, consistent with the conservation of the exons themselves (Figure 3—figure supplement 3). The Rbfox family contains three members, Rbfox1-3, with conserved RNA-binding motifs. To determine which of these might be most important in regulation of the EIIIA and EIIIB cohort of events, we examined their expression in vivo, and in in vitro purified endothelial cells. We found that only Rbfox2 was significantly expressed in arterial endothelial cells (Figure 3F).
 
 Thus, bioinformatics analysis suggests Rbfox2 as a particularly important regulator of the skipped exon changes induced by platelet and macrophage recruitment to the arterial endothelium under low flow conditions.
 
-## Endothelial-specific deletion of Rbfox2 partially reverts flow-responsive skipping of vascular skipped exons induced by low flow in vivo
+### Endothelial-specific deletion of Rbfox2 partially reverts flow-responsive skipping of vascular skipped exons induced by low flow in vivo
 
 To test whether Rbfox2 is involved in the splicing response of the arterial endothelium to low flow, we genetically removed Rbfox2 in mice using an endothelial-specific and inducible Cre (Cdh5(PAC)-CreERT2) in combination with floxed Rbfox2 alleles (Gehman et al., 2012; Sörensen et al., 2009). This strategy resulted in efficient deletion of Rbfox2 without an increase in expression of the other Rbfox family members, 1 and 3 (Figure 3F; EC-KO).
 
 To allow us to assess both the low-flow-responsive splicing patterns and the chronic transcriptional response of the flow-activated intima, we examined the effect of Rbfox2 deletion 7 days after the reduction in flow. Consistent with our previous observations on Fn-EIIIA and –EIIIB, we found that most splicing changes observed at 48 hr were also observed at 7 days (Murphy and Hynes, 2014). We found that Rbfox2 was important in the flow-responsive splicing change of many of the previously defined skipped exons, including Fn-EIIIB and –EIIIA to a lesser extent (Figure 4A, and Figure 4—source data 1). Altogether, Rbfox2 deletion suppressed flow-induced splicing changes of ~25% the skipped exons (Figure 4A, blue bars, right hand panel and 4B). This set of genes encodes extracellular matrix proteins (e.g. Fn1, Fbln2, Mfge8) and immune-regulatory proteins (e.g. Ikbkg, Gpr116, Ceacam1). Analysis of inclusion of specific exons is shown in Figure 4C demonstrating the loss of flow-responsive exons of Fbln2 on endothelial deletion of Rbfox2.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig4-v2.jpg)
+
+**Figure 4.:** (A) Showing the percentage of each group of skipped exons regulated by endothelial deletion of Rbfox2 (BF >5) in any comparison and regulated similarly in both comparisons of Rbfox2 wt low-flow vs. Rbfox2 EC-KO low-flow – either consistent with the flow-induced change in splicing (red, ‘same’) or against the direction of the flow-induced change in splicing (blue, ‘reverted’). (B) Heat map showing the clustering of flow-regulated splicing events reverted by Rbfox2 deletion (67 of the 273 events consistently regulated between 48 hr and 7 days). 1 = C57 wild-type mice, 48 hr data set; 2 = C57 wild-type mice, IgG control 48 hr data set; 3 = Rbfox2 wt control (i.e. no Cre), 7 days data set; Rb EC-KO = Rbfox2 EC-KO 7 days data set. (C) Effect of endothelial Rbfox2 deletion on flow-mediated regulation of inclusion of Fbln2 alternative exons. (D) Plot shows the change in splicing of skipped exons (SE) following Rbfox2 deletion from carotid artery intima in vivo (under low flow) or in isolated primary aortic endothelial cells in vitro. SE from the Rbfox2 regulated set of events, in genes expressed >FPKM 1 in in vitro and in vivo sets. SE also regulated by a change in flow are highlighted.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Results of RNA-seq analysis of selected transcripts of intimal flush of the ligated low-flow side or the contralateral high-flow side at 7 days in Rbfox2 EC-KO mice or littermate controls.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Immunofluorescence staining for Rbfox2 protein in aortic endothelial cells in culture under conditions (high density + FBS) which induce EIIIA and EIIIB inclusion versus conditions which do not (high density no FBS).
 
 Since suppression of flow-responsive splicing was also impaired by depletion of platelets and macrophages, we asked whether recruitment of these cells was affected. However, we observed similar levels of macrophage markers (Cd68, F4/80) in the low-flow intimal flushes in the presence and absence of endothelial Rbfox2 (Figure 4—figure supplement 1), suggesting that recruitment of macrophages, and by extension the platelets that we had previously found to be required for macrophage recruitment, were not detectably affected by deletion of Rbfox2.
 
@@ -76,9 +144,17 @@ Consistent with a direct effect of Rbfox2 depletion on endothelial cells, we fou
 
 Thus, Rbfox2 deletion in the endothelium prior to the induction of low flow suppresses a large portion of flow-responsive alternative splicing in endothelial cells, downstream of platelet and macrophage recruitment.
 
-## Endothelial deletion of Rbfox2 alters the intimal response to low flow
+### Endothelial deletion of Rbfox2 alters the intimal response to low flow
 
 We predicted that changes in the splicing response of the arterial intima caused by Rbfox2 deletion would affect the response to low flow. To test this, we examined gene expression at the whole transcript level 7 days after the induction of low flow in Rbfox2 EC-KO mice and littermate controls, and in the isolated endothelial cells. We found that endothelial deletion of Rbfox2 significantly affected 641 genes in the carotid intima under low flow (DESeq2 p-adj <0.05) (Figure 5A). Of these 641 genes, 507 are part of the 4766 gene low-flow signature previously described (Figure 1). Clustering of expression changes in the Rbfox2-regulated subset of genes, relative to the contralateral artery of control mice, shows that deletion of Rbfox2 causes the low-flow arterial intima to resemble more closely the high-flow arterial intima (Figure 5A). Processes of cell proliferation and of antigen presentation were enriched among the differentially regulated genes (Figure 5B). RNA-seq was performed on pooled arteries, and quantitative PCR analysis of selected regulated genes in individual carotid arteries confirmed expression changes in individual animals (Figure 5C and D). These results indicate that Rbfox2 is essential for a portion of the endothelial response to low flow, regulating ~10% of the transcriptional response to low flow.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig5-v2.jpg)
+
+**Figure 5.:** (A) Clustered heat map of the genes with adjusted p-values<0.05 shows the change in expression relative to contralateral controls at 7 days after the change in flow in the indicated genotypes (N = 641). (B) Enriched terms among the genes regulated by Rbfox2 deletion. (C) Volcano plot showing DESeq2 calculated p-values and log2 fold changes in genes expressed in the arterial intima at 7 days of arteries exposed to low and disturbed flow, with or without deletion of Rbfox2. Genes selected for qPCR in single arteries are shown. (D) Results of individual carotid artery qPCR for the genes indicated. Log2 fold-changes are relative to control, p values are from Mann-Whitney test (N = 14 control and N = 18 Rbfox2 EC-KO).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29494/elife-29494-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Change in expression in the low-flow intima of Rbfox2 EC-KO mice versus littermate control mice (X-axis) plotted against the Y-axis showing (A) a biological replicate of the same comparison, (B) a comparison of isolated and cultured (7 days) aortic endothelial cells from Rbfox2 EC-KO mice versus littermate control mice, or (C) a comparison of the contralateral high- flow intima of Rbfox2 EC-KO mice versus littermate control mice. Gene expression (pme FPKM) was calculated by RSEM, and only genes with p-values of <0.05 (DESeq2) between Rbfox2 EC-KO and control under low-flow conditions are shown.
 
 In contrast with our observation of correlations between splicing patterns in vivo and in vitro, most transcriptional changes induced in the low-flow arterial intima were specific to the in vivo environment and were not observed in a comparison of isolated aortic endothelial cells or in the contralateral artery (Figure 5—figure supplement 1). In other systems, cytoplasmic Rbfox has been shown to have an important role in the regulation of transcript stability through the 3’UTR (Damianov et al., 2016; Lee et al., 2016). However, transcript levels regulated by Rbfox2 were not any more associated with characterized 3’ UTR binding by iClip-Seq (Lee et al., 2016) than those not regulated by Rbfox2 (iClip-Seq binding sites in 54/638 of the Rbfox2-regulated transcripts versus 1166/17130 of the transcripts not regulated by Rbfox2). Together, these data suggest that the consequences of endothelial Rbfox2 deletion on transcriptional changes involved cross-talk among cell types (e.g. effects of altered endothelial splicing on recruited immune cells) or other microenvironmental effects in the flow-activated intima in vivo not replicated in vitro.
 
@@ -88,21 +164,21 @@ Thus, Rbfox2 deletion affects skipped exon splicing patterns in endothelial cell
 
 Here, we report that recruitment of circulating hematopoietic cells to the arterial endothelium under low flow initiates an alternative splicing response regulated in part by Rbfox2. Profiling global transcriptional changes induced in the arterial endothelium by experimentally induced low flow, we show that hundreds of transcripts are regulated by alternative splicing. Focusing on skipped exons in particular, we find that one third of those affected by altered flow are dependent on recruited hematopoietic cells in vivo, particularly platelets. Rbfox-binding motifs are significantly enriched adjacent to these exons. Mechanistically, deletion of endothelial Rbfox2 reverts many of the flow-induced changes in splicing and suppresses ~10% of the flow-induced changes in transcription. Processes related to genes with changes in either splicing or transcription included cytoskeleton, cell adhesion, proliferation and antigen presentation suggesting that Rbfox2 may regulate these biological processes in the aortic intima downstream of hematopoietic cell recruitment.
 
-## Broad regulation of alternative splicing by flow in the arterial endothelium
+### Broad regulation of alternative splicing by flow in the arterial endothelium
 
 Low flow exerts potent effects on the vasculature through the endothelium, which are achieved by effects on endothelial transcription, epigenetic regulation, and post-translational protein modifications and reorganization (Gimbrone and GarciaGarcía-CardenaCardeña, 2016). Our work reveals widespread changes in alternative splicing affecting a number of genes known to be critical in the pathways already implicated in the response to altered flow, inflammation, remodeling and flow-driven vascular disease. Examples include Pecam1, a component of the shear-sensing mechanism in the endothelium (Tzima et al., 2005), Yap1, a regulator of mechanical activation (Dupont et al., 2011) and Ikbkg (Nemo), a regulator of NFkappa-B signaling (Li et al., 1999). In previous work, differential splicing of Vcam1 was detected in IL-1-stimulated HUVECs (Cybulsky et al., 1991) and of Fn in TGFβ-induced liver sinusoidal endothelium (Chang et al., 2004). Exon arrays have also shown differential exon usage in HUVECs in response to hypoxia (Hang et al., 2009; Weigand et al., 2012). However, this hypoxic response appears to be very different from the responses we have observed, and less then 2% of the genes in which we detected alternative splicing overlap with those found in the hypoxic signature of HUVECs. It is possible that this is due to methods used (exon arrays versus our sequencing approach), cell type (HUVECs versus murine aortic endothelial cells), or pathway-specific responses. The latter is likely, since we observed no consistent regulation of hypoxia-induced genes (e.g. Vegfa) in the flow-responsive signature. Alternative splicing responses are distinct, similar to transcriptional responses (Graveley et al., 2011). Indeed, even within the alternative-splicing response to altered flow, we are able to detect a distinct response dependent on the recruitment of circulating hematopoietic cells.
 
-## Biological consequences of alternative splicing programs induced by low flow
+### Biological consequences of alternative splicing programs induced by low flow
 
 We do not yet know the function of most of the splicing changes we have observed. Unlike mice deficient in both EIIIA and EIIIB, which exhibit an increased risk of arterial rupture under low flow, Rbfox2 EC-KO mice do not. This may be due to the lesser effect of Rbfox2 deletion on EIIIA than EIIIB in the Rbfox2 mutant mice (EIIIA inclusion was 50% in Rbfox2 EC-KO low-flow artery, versus 60% in WT low-flow artery, compared with 20% in high flow artery; while EIIIB inclusion was absent in all Rbfox2 EC-KO conditions). In previous work, we found that EIIIA-/- replicated much of the effect of the EIIIAB-/- mice; loss of EIIIB may have other consequences than loss of EIIIA (Murphy and Hynes, 2014).
 
 Nevertheless, we have reason to believe that these splicing changes are biologically important. First, the alternatively spliced exons comprising this response, including Fn-EIIIA and -EIIIB, are highly conserved among all placental mammals. In fact ~80% of the flow-regulated skipped exons are as well conserved as consensus coding exons (CCDS). Conservation of sequence is not necessarily the same as conservation of regulation (Kalsotra et al., 2008; Li et al., 2015; Merkin et al., 2012; Pai et al., 2016; Yeo et al., 2005). Nevertheless, the conservation of regulatory regions, specifically the Rbfox2 motif, surrounding the skipped exons support conserved regulation as well. Second, deletion of a regulator of this splicing program, Rbfox2, affects the transcriptional response of the intima to low flow. Notably, both genes with Rbfox2-regulated transcript levels, and those with Rbfox2-regulated skipped exons were enriched in functions related to cytoskeletal remodeling, cell adhesion, and antigen presentation (Figure 1 and Figure 5). The particular genes regulated in each way (transcript abundance and splicing) did not directly overlap, suggesting that similar biological processes may be targeted through both transcriptional and post-transcriptional mechanisms in Rbfox2 EC-KO mice. Given the known activation of TLR4 signaling by EIIIA (Okamura et al., 2001), a key player in adaptive immunity, the potential impact on antigen presentation and the adaptive response warrants further research.
 
-## Regulation of alternative splicing in the aortic endothelium by platelets and macrophages
+### Regulation of alternative splicing in the aortic endothelium by platelets and macrophages
 
 Much of the work to date on flow-induced changes in gene expression in the arterial endothelium has focused on the initial response to flow, which increases the transcriptional expression of adhesion receptors and chemokines involved in the recruitment of circulating immune cells (Conway and Schwartz, 2013; Ley et al., 2007). This has been a consequence of efforts to identify the first events leading to endothelial dysfunction under low flow. However, once circulating hematopoietic cells are recruited, they initiate ongoing interactions in the arterial wall likely to affect the ultimate outcome of flow-induced arterial injury (Pober and Sessa, 2007). Flow-driven vascular inflammation occurs as a chronic process, involving components of the innate and adaptive immune systems (Galkina and Ley, 2009; Pober and Sessa, 2007). Here, we show that recruitment of platelets and monocytes/macrophages in particular potently regulate alternative splicing in the arterial endothelium. Within this response, we observed alterations in a number of pathways that may impact ongoing interactions at the arterial wall. Thus, subsequent to the well-studied events leading to recruitment of immune cells, their interactions with the arterial endothelium appear to be affecting pathways that may help to shape the chronic inflammatory response.
 
-## Endothelial functions of Rbfox2
+### Endothelial functions of Rbfox2
 
 Rbfox2 is one of three Rbfox family members (Rbfox-1,-2 and -3). The Rbfox family of splice factors and the motif recognized by their RNA-binding domain are conserved throughout the vertebrates examined and also in C. elegans (Underwood et al., 2005). The motif which the Rbfox family recognizes was first identified adjacent to Fn-EIIIB (Huh and Hynes, 1993, 1994), which we find to be dependent on Rbfox2 in our system, consistent with previous work in other systems (Jangi et al., 2014). The Rbfox family has been shown to have important functions in heart (Gao et al., 2016), muscle (Singh et al., 2014), and brain development (Gehman et al., 2012) and EMT in cancer (Shapiro et al., 2011). De novo mutations in Rbfox2 have also been identified in congenital heart disease (Homsy et al., 2015), and alterations in Rbfox2 activity may be an early event in diabetes-induced heart pathology (Nutter et al., 2016). In both heart and brain, Rbfox2 has been shown to have a requirement in maintenance of tissue functions (Gao et al., 2016; Gehman et al., 2012). In contrast to the other tissues mentioned, Rbfox2 is the only member of the Rbfox family expressed in the arterial endothelium.
 
@@ -114,15 +190,121 @@ In conclusion, we report that hundreds of splicing changes are regulated in endo
 
 ## Materials and methods
 
-## Flow alterations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GP1bα</td>
+      <td>Emfret</td>
+      <td>RRID:AB_2721041</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Gr1</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_467731</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Rbfox2</td>
+      <td>Bethyl Labs</td>
+      <td>RRID:AB_609476</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>SMARTer Universal Low Input RNA Kit</td>
+      <td>Clontech</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>RNAeasy microcolumns</td>
+      <td>Qiagen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>RSEM v.1.2.15</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_013027</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MISO v.0.4.9</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_003124</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>STAR 2.5.1b</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_015899</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Tophat 2.0.6</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_013035</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Bowtie2 v. 2.0.5</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_005476</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GSEA</td>
+      <td>http://www.gsea-msigdb.org/gsea/index.jsp</td>
+      <td>RRID:SCR_003199</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>Rbfox2lox/lox</td>
+      <td>Jackson Lab</td>
+      <td>RRID:IMSR_JAX:014090</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>Rosa26-mTmG</td>
+      <td>Jackson Lab</td>
+      <td>RRID:IMSR_JAX:007676</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>Cdh5(PAC)-CreERT2</td>
+      <td>Jackson Lab</td>
+      <td>RRID:IMSR_TAC:13073</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Lab</td>
+      <td>RRID:IMSR_JAX:000664</td>
+    </tr>
+  </tbody>
+</table>
+
+### Flow alterations
 
 Partial carotid ligations were performed as previously described (Ni et al., 2010), with minor modifications (Murphy and Hynes, 2014). Briefly, the distal branches of the left carotid artery were identified in mice anesthetized with isoflurane. The left external carotid, internal carotid, and occipital artery were ligated with 9–0 Ethilon suture, leaving only the superior thyroid artery intact. Sham operations consisted of the same carotid dissection and encircling with suture, except that the vessels were not tied off. High-resolution ultrasound, using the VisualSonics Vevo 770, was performed at the experimental endpoint (2–7 days after partial carotid ligation) to confirm vessel patency.
 
-## RNA-isolation and sequencing
+### RNA-isolation and sequencing
 
 Isolation of intimal RNA was performed as previously described from the carotid intima (Murphy and Hynes, 2014; Ni et al., 2010). Briefly, vessels were isolated and imaged from euthanized mice, flushed with PBS solution and then 150 µL Trizol. RNA from cultured aortic endothelial cells was isolated after one week in culture by sorting 1–2K endothelial cells (by CD31+ and Icam2+) from BD Aria directly into cold Trizol solution. RNA from all samples was isolated with Qiagen RNAeasy microcolumns. Pools of RNA were created and then DNAse-treated in solution, before concentrating on RNAeasy columns with elution in minimal volume. RNA quality was assessed by Agilent Bioanalyzer or Advanced Analytical, library preparation was performed using the Clontech SMARTer Universal Low Input RNA Kit, and samples were sequenced on Illumina HiSeq 2000 or NextSeq 500 using 80 bp paired-end (PE) reads (triplicates of low-flow, sham and high-flow), 100 bp PE reads (re-sequencing of triplicates of low-flow, sham and high-flow, and cultured aortic endothelial cells) or 150 bp PE reads (hematopoeitic cell depletions with controls and endothelial Rbfox2 deletion with controls in vivo and in vitro). Base calls were performed using the Offline Base Caller (Illumina) v. 1.9.4 and reads mapping to different genomic features were tallied and read densities were compared for each sample.
 
-## Read-mapping and transcript analysis
+### Read-mapping and transcript analysis
 
 For experiments with alteration of flow (triplicates of low-flow, sham and high-flow), reads were trimmed to 80 bp and mapped with Tophat 2.0.6 and Bowtie2 v. 2.0.5, allowing the detection of novel junctions, with options -p 8 --read-edit-dist 4 --min-intron-length 10 --read-mismatches 4 --max-intron-length 1000000 --read-realign-edit-dist 0 --mate-std-dev 30 --segment-length 20 --library-type fr-firststrand -r 50, guided (-G) by an mm9-based refseq gtf file [https://www.ncbi.nlm.nih.gov/pubmed/23618408].
 
@@ -132,43 +314,43 @@ RSEM v.1.2.15 (options --paired-end --calc-ci -bam -p 8 ) was used to calculate 
 
 For eGFP and Tomato analysis, a custom index containing eGFP and tdTomato sequences was created, and bowtie was used to align reads to this index using options --best --strata -m 1 –q. The number of reads mapping to eGFP and to tdTomato were counted, and % tdTomato reads determined [tdTomato reads / (tdTomato+ eGFP reads) *100%].
 
-## Splicing analysis
+### Splicing analysis
 
 Positive control data sets for regulation of splicing by Rbfox2 in vitro or by Mbnl in vivo were taken from published data, and run through our own informatics pipeline (Jangi et al., 2014; Wang et al., 2015).
 
 MISO v.0.4.9 was used to determine differential splicing regulation. The SE, A3SS, A5SS, RI and MXE event index was derived from the MISO splicing events database (mm9 version 2). Briefly, this set of events was derived by considering all transcripts annotated in Ensembl genes, knownGenes (UCSC) and RefSeq genes (as of June 2013). The ALE and TandemUTR events index was derived from the MISO database compiled from published data, made available on the MISO website (Hoque et al., 2013). Additional novel SE, A3SS, A5SS and MXE events were detected using a method developed by Paul Boutz. Identification and classification of novel alternative splicing events was performed as described in Boutz et al. (2015). Briefly, mapped splice junctions were filtered for minimal transcript level and classified as SE, A3SS, A5SS, or MXE without reference to annotated exonic loci. This set of novel events was then used to generate a novel index, which was passed through the same MISO pipeline as all other indices.
 
-## Selection of subgroups of regulated exons
+### Selection of subgroups of regulated exons
 
 Flow-regulated: BF >5 in two completely independent biological comparisons of low flow versus high flow, where the difference between high flow and low flow is >2 x the difference between replicate high-flow conditions.
 
-## Flow-regulated and endothelial
+#### Flow-regulated and endothelial
 
 Of the events above, at least 50% of the difference between low-flow in vivo and high flow in vivo must be recapitulated in differences between FACs-purified mouse arterial cells in culture and high-flow cells in vivo.
 
-## Flow-regulated and endothelial and platelet-regulated
+#### Flow-regulated and endothelial and platelet-regulated
 
 Of the events above, if platelet depletion reverted flow-induced splicing changes by >50% in two completely independent biological comparisons.
 
-## Flow-regulated and endothelial and platelet-regulated and in vitro regulated
+#### Flow-regulated and endothelial and platelet-regulated and in vitro regulated
 
 Of the events above, if the change in splicing induced in isolated aortic endothelial cells by the addition of platelets, macrophages and plasma was >50% of the flow-regulated change in splicing.
 
-## Rbfox2-regulated
+#### Rbfox2-regulated
 
 If change in inclusion with Rbfox2 deletion was BF >5 in any of three comparisons, in vivo low-flow Rbfox2 control vs. Rbfox2 EC-KO artery at 7 days, in vivo high-flow Rbfox2 control vs. Rbfox2 EC-KO artery at 7 days, or in vitro Rbfox2 control vs. Rbfox2-deleted aortic endothelial cells, and consistently changed in the same direction in all in vivo comparisons under low flow between Rbfox2 control and Rbfox2 EC-KO arteries. In this set, Rbfox2 control arteries have floxed alleles but no Cre activity.
 
-## Identification of enriched splice factor motifs adjacent to regulated skipped exons
+### Identification of enriched splice factor motifs adjacent to regulated skipped exons
 
 To perform motif enrichment analysis, we compared endothelial alternative skipped exons regulated by blood cells in vivo and in vitro (the foreground) with skipped exons expressed by endothelial cells, but not consistently regulated under the same conditions (the background). In general, the foreground events were more often poised at an intermediate Psi level (neither complete inclusion or exclusion). They also tended to be expressed at a higher level than background events. Thus, we created background sets in which we normalized each of these parameters independently (data not shown). We looked for motifs enriched either upstream (3’splice site, or 3’SS) or downstream (5’ splice site, or 5’SS) of the regulated exons. Since the direction of change in exon inclusion, increased dPsi or decreased dPsi, has been correlated with the location of splice factor binding, we further separated the foreground into exons with increased (+dPsi) or decreased (-dPsi) inclusion. Intronic sequences adjacent to the 3’SS and the 5’SS of skipped exons with increased or decreased inclusion were isolated from mm9 sequence data using Bedtools 2.16.1 (getfasta –s), and enrichment was calculated based on enrichment of 6-mer or 7-mer motifs in the foreground versus the background sets, split across 10 GC-normalized bins, iterated multiple times.
 
 From the lists of enriched motifs we obtained, we aimed to identify the likely RNA-binding proteins. To do this in an unbiased manner, we used the CisBP-RNA data set, which includes 154 unique motifs and 373 total murine RNA-binding proteins (Ray et al., 2013). We modified the ranking algorithm GSEA, typically used to identify transcriptional signatures, to identify RNA-binding protein signatures. A Kolmogorov-Smirnov statistic embedded in GSEA was used to identify which of these RNA-binding-protein motif sets was most abundant at the leading edge of the ranked enrichment set (Subramanian et al., 2005).
 
-## Depletion of innate immune cells
+### Depletion of innate immune cells
 
 For platelet depletion experiments, mice were injected intraperitoneally with a single dose of platelet-depleting antibody (anti-GP1bα; 50 µg per mouse; R300; Emfret; RRID:AB_2721041) or IgG control at the time of partial carotid ligation. To deplete Ly6G+ cells, anti-Gr1 (RB6-8C5; BioLegend; RRID:AB_467731) or IgG controls were administered by intraperitoneal injection (25 µg per mouse) 24 hr prior to partial carotid ligation. To deplete macrophages, mice were injected by tail vein with 150 µL clodronate liposomes or PBS liposome controls at the time of partial carotid ligation. Clodronate liposomes or PBS liposomes were purchased from ClodronateLiposomes.com (Kruisweg 59, 2011 LB Haarlem, The Netherlands).
 
-## Mice
+### Mice
 
 Male C57BL/6J mice from Jackson Laboratories were used at 6–7 weeks of age for experiments on the regulation of transcription and splicing in the carotid intima in wild-type mice, or in wild-type mice with the depletion of various hematopoietic cells.
 
@@ -176,20 +358,20 @@ For the endothelial deletion of Rbfox2, Cdh5(PAC)-CreERT2, Rosa26-mTmG and Rbfox
 
 All mice were housed and handled in accordance with protocols approved by the Massachusetts Institute of Technology Division of Comparative Medicine.
 
-## Aortic endothelial cell isolation
+### Aortic endothelial cell isolation
 
 Mouse aortic endothelial cells were isolated following previously described methods (Kobayashi et al., 2005), with modifications. Briefly, mice were perfused via the left ventricle with PBS, the aorta was isolated and filled with 2% collagenase II (Worthington) in serum-free DMEM, and then closed at the ends with 7–0 suture. The vessel was digested for 30–45 min in 10% FBS at 37C, and endothelial cells were flushed out into EC culture medium, and onto a collagen I-coated plate. EC culture medium consisted of DMEM with 10% FBS and 10 mg/mL endothelial growth supplement (ECGS, Biomedical Technologies) with primocin (InvivoGen). Typical isolations of ~1000 cells expanded to ~10,000–50,000 cells. Cells were then FACs-sorted (BD Aria) on endothelial markers, eGFP for Cdh5(PAC)-CreERT2; Rosa26-mTmG on Pecam+ and Icam2+ for Cdh5(PAC)-CreERT2; Rosa26-mTmG; Rbfox2lox/lox mice and littermate controls.
 
-## Aortic endothelial cell immortalization
+### Aortic endothelial cell immortalization
 
 After purification by FACs, endothelial cells were immortalized by lentiviral TetOn-Sv40T. The construct was developed from a version of pTRIPZ (Clontech) with removal of the puro-selection cassette. SV40 T antigen was inserted into the tet-regulated region of the lentivirus from pBabe-SV40T (Zhao et al., 2003). After infection, cells were expanded in EC media with 2 µg/mL Doxycycline (Dox).
 
-## Aortic endothelial cell co-culture
+### Aortic endothelial cell co-culture
 
 Cells derived from Cdh5(PAC)-CreERT2; Rosa26-mTmG, tamoxifen-treated in vivo, and then isolated by FACs purification on eGFP, expanded and immortalized by TetOn-SV40T were trypsinized and split in DMEM into new dishes, without Dox to turn off SV40T. After culture for 24 hr in DMEM, combinations of platelets, bone-marrow-derived monocytes, and/or 10% plasma were added for 48 hr. Cells in plate were then imaged and lysed with Trizol for RNA extraction.
 
 Platelets were isolated from the platelet-rich plasma (PRP) of C57BL/6J mouse blood by collection in ACD buffer. They were spun down at 500xG for 7 min with isolation of the upper PRP, from which a platelet pellet was isolated after being spun down at 2800xG for 5 min and resuspended in PIPES buffer. ~20 million platelets (in 6 µL PIPES) were added to each confluent well of endothelial cells in the 24-well plate. Plasma was taken from C57BL/6J mouse blood collected in EDTA and spun down at 2000xG for 15 min at 4°C. 10% plasma was added to DMEM in 24-well plates. Bone-marrow-derived monocytes were isolated from the femurs of C57BL/6J mice, flushed with 10% FBS DMEM (+2 mM EDTA) into collection tube with 10 mL syringe and 25Ga needle, and then purified using an EasySep Mouse Monocyte Isolation Kit (by negative selection, depleting Cd3+, Cd45R+, Cd117+, Ly6G+, Nk1.1+, Siglec F+ cells). ~10K monocytes were added to each well of the 24-well plate.
 
-## Aortic endothelial cell immunofluorescence
+### Aortic endothelial cell immunofluorescence
 
 Cells (TetOn-Sv40, eGFP+ from Cdh5(PAC)CreERT2; mT/mG mice were cultured on poly-L-lysine treated coverslips and treated or not with 10% serum (FBS) for 48 hr. Coverslips and cells were washed with phosphate buffered saline (PBS) and fixed with ice cold methanol. Rbfox2 protein was stained by anti-Rbfox2 (Bethyl Labs A300-864A, 1:1000; RRID:AB_609476), with goat anti-rabbit Alexa594 secondary. Block was 10% normal goat serum in PBS with 0.1% tritonX-100.

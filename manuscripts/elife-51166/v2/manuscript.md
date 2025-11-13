@@ -30,11 +30,27 @@ In this study, we show that global conditional knockout of Ttbk2 during adulthoo
 
 ## Results
 
-## Loss of Ttbk2 from the adult brain causes SCA-like cerebellar phenotypes
+### Loss of Ttbk2 from the adult brain causes SCA-like cerebellar phenotypes
 
 Mutations within TTBK2 cause the adult-onset, neurodegenerative disease SCA11. However, the etiology of SCA11 is poorly defined. SCA11 is somewhat unusual among SCAs, in part because the reported causal mutations are base pair insertions or deletions within the coding region of TTBK2 (Houlden et al., 2007; Johnson et al., 2008; Lindquist et al., 2017), rather than the expansion of CAG repeats, which is the genetic cause of most SCA subtypes (Hersheson et al., 2012). To test the requirements for TTBK2 in maintaining neural function within the adult brain, we obtained a conditional allele of Ttbk2 (Ttbk2tm1c(EUCOMM)Hmgu) from the European Mutant Mouse Cell Repository, (referred to from here as Ttbk2fl). We then crossed Ttbk2fl mice to a mouse line expressing tamoxifen-inducible Cre recombinase driven by a ubiquitously expressed promoter, Ubc-Cre-ERT2 (Ruzankina et al., 2007). Using this model, we induce recombination of Ttbk2 in all tissues of the mouse, including the brain, upon injection with tamoxifen (TMX). Because morphogenesis of the mouse cerebellum is complete by P21 (Marzban et al., 2014), we chose this time to begin our TMX injections. For all of our experiments, Control animals are either siblings with the same genotype (Ttbk2fl/fl;Ubc-Cre-ERT2+) injected with oil vehicle only, or Ttbk2fl/fl;Ubc-Cre-ERT2- sibling mice injected with the same dose of TMX. We found no phenotypic differences between Control condition animals or pre-induction Ttbk2fl/fl;Ubc-Cre-ERT2+ animals at P21 (Figure 1—figure supplement 1A-C). Consistent with other conditional mutants where cilia are globally removed in adulthood (Davenport et al., 2007), 4-month-old Ttbk2c.mut mice exhibit obesity (Figure 1—figure supplement 1D, D’, E: 32.29 g ± 1.86 for Control vs. 46.33 g ± 2.04 for Ttbk2c.mut) as well as cystic kidneys (Figure 1—figure supplement 1F). Loss of TTBK2 protein was confirmed with western blot analysis on cerebellum lysates from Ttbk2c.mut animals and littermate Controls (Figure 1—figure supplement 2G).
 
 Because the cerebellum is critical for motor coordination and SCA11 is associated with motor deficits, we evaluated locomotor behavior in the Ttbk2fl/fl;Ubc-Cre-ERT2+,TMX treated animals (referred to from here as Ttbk2c.mut) relative to littermate Controls. Within 3 weeks following induction of recombination with TMX, Ttbk2c.mut mice exhibited apparent locomotor deficiencies when observed in their cage (Figure 1—video 1 ). To further examine motor coordination in Ttbk2c.mut mice, we employed a rotarod performance test. Ttbk2c.mut mice exhibited a shorter latency to fall compared to the littermate Controls in each trial, for both the accelerating rotarod analysis as well as the steady speed rotarod analysis (Figure 1A,B). These results indicate that Ttbk2c.mut mice are impaired in their motor coordination, consistent with motor deficits observed in multiple mouse models of SCA (Lalonde and Strazielle, 2019; Klockgether et al., 2019).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Accelerating and steady speed rotarod performance test between Ttbk2c.mut and littermate Controls. Ttbk2c.mut animals have a shorter latency to fall time in both tests, indicative of impaired motor ability (a two-way ANOVA with Bonferroni’s multiple comparison test was used for calculating significance. p<0.0001 for accelerating rotarod test, and p=0.0001 for steady speed. n = 9 animals for Control, n = 8 animals for Ttbk2c.mut). (C) Cerebellar tissue from Control and Ttbk2c.mut mice at 3 months after loss of Ttbk2, immunostained for Calbindin to label Purkinje cells (red) and VGLUT2 to show climbing fiber synapses (green). Ttbk2c.mut animals show a reduction in VGLUT2 positive synapses throughout the cerebellum 3 months after loss of TTBK2. Scale bar = 50 μm. (D) Quantification of molecular layer length in Ttbk2c.mut cerebellar tissue (each point represents one measurement, 75 measurements overall. n = 3 animals. p=0.0011 by student’s unpaired t-test, error bars indicate SEM). (E) Quantification of VGLUT2+ puncta throughout PC dendrites. Ttbk2c.mut animals show a significant reduction in these VGLUT2+ synapse terminals (each point represents one measurement, 15 measurements per genotype, n = 3 animals. p<0.0001 by student’s unpaired t-test, error bars indicate SEM). (F) Golgi stain showing spines on proximal dendrites of PCs in Control and Ttbk2c.mut animals. Scale bar = 2 μm. (G) Quantification of number of spines per micron of dendrite. Ttbk2c.mut PCs do not lose spine density on proximal dendrites at 4 months of age. Each point represents a measurement taken from a singular dendrite, n = 3 animals. (H) Immunostaining for IP3R (red) and nuclei (blue). Loss of IP3R expression is seen as early as P45 in Ttbk2c.mut cerebellum. By 3 months after TMX injection, IP3R expression is no longer localized to secondary dendrites throughout the dendritic tree of PCs in Ttbk2c.mut animals. Scale bar = 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Quantification of cilia abundance (A), molecular layer thickness (B), and VGLUT2 puncta (C) across various Controls. There is no significant difference between Control genotypes compared to each other for any of these metrics using a one-way ANOVA with Tukey’s correction In (A), each point represents a field counted, 16 fields were counted in total. In (B), each point represents a singular measurement, three distinct primary fissures were included per group, 25 measurements were counted per animal. In (C), each point represents puncta quantified from a 10 μm z-stack on the caudal side of the primary fissure. n = 1 animal per genotype for (A–C), error bars indicate SEM. (D–D’) Representative images of Control (D) and Ttbk2c.mut (D’) mice. Scale bar = 2.5 cm. (E) Quantification of weight gain in Ttbk2c.mut mice compared to Controls. (n = 7 animals, p=0.0003). (F) H and E staining of kidneys from Control and Ttbk2c.mut mice. Ttbk2c.mut mice have polycystic kidneys. Scale bar = 100 μm. (G) Western blot analysis of cerebellum lysate from Ttbk2c.mut animals showing no TTBK2 expressed 3 months after tamoxifen injection. (H) Representative images of Control and Ttbk2c.mut brains 3 months after tamoxifen treatment. Scale bar = 1 mm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representative images of Golgi stained PCs throughout the cerebellum of Control (A) and Ttbk2c.mut (B) mice. Dendritic trees are nearly indistinguishable between Controls and Ttbk2c.mut mice.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative images of 4-month-old Control and Ttbk2c.mut cerebella injected at P45 showing VGLUT2+ synapses in green. Scale bar = 30 μm. (B) Quantification of the loss of VGLUT2 puncta in P45-injected, 4-month-old Ttbk2c.mut compared to Control. Each point represents one measurement. n = 3 animals, p<0.0001 by unpaired student’s t-test, error bars represent SEM.
 
 To assess whether the motor behavioral changes we observed in the Ttbk2c.mut animals are a consequence of changes to neuronal architecture in the adult brain, we examined Ttbk2c.mut mice at 4 months of age (3 months post TMX). The brains of Ttbk2c.mut mice have slightly smaller olfactory bulbs, but the overall gross morphology of the cortex and cerebellum was unchanged (Figure 1—figure supplement 1H). SCA11 pathology is associated with degeneration of the cerebellar neurons. We therefore examined the architecture and connectivity of neurons within the cerebellum to assess whether the Ttbk2c.mut animals exhibited phenotypes similar to those described for mouse models of other subtypes of SCA. Within the cerebellum, PCs are the major source of functional neuronal output, and receive excitatory inputs primarily from parallel fibers and climbing fibers. Parallel fibers extend from the granule neurons, a population of densely packed neurons found directly beneath PCs (Ichikawa et al., 2016). Climbing fibers extend from neurons of the Inferior Olivary Nuclei (ION) in the medulla (Kano et al., 2018). These connections are essential for PC function, and dysfunction or loss of these connections, particularly the VGLUT2+ excitatory synapses from the climbing fibers, has been shown in various mouse models of SCA to be linked to pathology and disease progression (Duvick et al., 2010; Ebner et al., 2013; Furrer et al., 2013; Smeets and Verbeek, 2016; Smeets et al., 2015).
 
@@ -42,37 +58,73 @@ To assess the changes throughout Ttbk2c.mut cerebella, we looked at the differen
 
 To further explore the role of TTBK2 in PC function, we examined calcium receptor abundance in these neurons. PCs require an intracellular calcium modulation network as a means of signaling function. Within this network inositol 1,4,5-trisphosphate receptors (IP3Rs) are key calcium channel regulators needed for calcium release from the surrounding endoplasmic reticulum (ER) throughout the PC (Sarkisov and Wang, 2008). Precise regulation of IP3R activity is critical, and a balance of calcium channel release is imperative to the overall function of the cerebellum. Mutations in the IP3R1 gene have been linked to SCA15 and SCA29, while overexpression of IP3R1 underlies phenotypes within SCA2 and SCA3 (Tada et al., 2016). Because of these links to other SCA-related phenotypes, we therefore examined IP3R expression throughout the Ttbk2c.mut animals. We found that levels of IP3R in PCs are reduced in Ttbk2c.mut compared to Controls starting at P45, with expression strongly reduced throughout the PCs 3 months after TMX (Figure 1H). Thus, like mouse models of other SCA subtypes, the PCs of Ttbk2c.mut animals exhibit defects in calcium modulation consistent with dysfunction of these cells.
 
-## Loss of Ttbk2 causes changes to ION neurons and BG
+### Loss of Ttbk2 causes changes to ION neurons and BG
 
 Next, we tested whether loss of Ttbk2 affects other cell types linked to the pathology of SCA, in addition to the PCs. Climbing fibers extend from neurons of the inferior olivary nucleus (ION) in the medulla. These fibers traverse the brain stem, enter the cerebellar cortex, and innervate the PC dendrites (Watanabe and Kano, 2011). As we saw a reduction of the VGLUT2+ synaptic terminals between these climbing fibers and PC dendrites, we examined the soma of the ION neurons from which these climbing fibers extend. In several subtypes of SCA, including SCA1, 2, 3, 6, and 7 (Seidel et al., 2012), the pathology of the disorder is characterized in part by the loss of ION soma; a characteristic also observed in mouse models of these diseases. Neurons within the ION can be identified by dual expression of Calbindin and NeuN in the medial ventral region of the medulla (Figure 2—figure supplement 1A,B). When we looked at this population of neurons, we did not notice a loss of these cells. However, we did find that the perikarya of the neurons within the ION were smaller in Ttbk2c.mut animals compared to Controls. We therefore used NeuN to label the perikarya of neurons within the ION and measured the area of the somata of ION neurons, and found a significant reduction in the area of ION neuron soma in Ttbk2c.mut mice at 4 months of age compared to Controls (Figure 2A,B; 180.4 μm2 ± 1.93 for Control vs. 109 μm2 ± 1.01 for Ttbk2c.mut). Neuronal shrinkage is a phenotype that has been noted in patients with SCA1 as well as Friedrich’s ataxia, and is thought to precede neuronal apoptosis (Nagaoka, 2003; Dell'Orco et al., 2015; Kemp et al., 2016). This implies that, in addition to the PCs themselves, the neurons sending critical inputs to the PCs are perturbed in Ttbk2c.mut mice.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative images of neurons in the inferior olivary nucleus (ION) located in the medulla. Neural somata are immunostained with NeuN (green). Insets show how the area was measured. Scale bar = 50 μm (20 μm inset). (B) Quantification of NeuN area. ION neurons have reduced area in Ttbk2c.mut animals compared to Control (each point represents a single cell measurement of which > 150 measurements were made per animal. n = 3 animals, p<0.0001 by unpaired student’s t-test, error bars indicate SEM). (C) Glial fibrillary acidic protein (GFAP) staining showing BG fibers throughout the molecular layer. In Ttbk2c.mut animals, density of these fibers is reduced. Quantification was made as previously described (Furrer et al., 2011), in which a 50 μm line was drawn from the pial surface of the folia, and a 100 μm line across. Glial fibers that fully crossed the 100 μm line were scored. Scale bar = 20 μm. (D) Quantification of GFAP+ glial fibers that crossed the 100 μm line (each point represents an image quantified, 36 images quantified per genotype across n = 3 animals. p<0.0001 by unpaired student’s t-test, error bars indicate SEM).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The location of the mouse inferior olivary nucleus (ION, dotted outline) within the medulla oblongata of the brain stem. Scale bar = 10 mm. (B) Neurons within the ION are stained for Calbindin (red), NeuN (green), and 4′,6-diamidino-2-phenylindole (DAPI) (blue) with separate channels shown (right panel). The ION is found at the medial ventral part of the medulla oblongata, below the superior olivary nucleus. Scale bar = 100 μm.
+
 Throughout the brain, astrocytes and glia also play important roles in maintaining synaptic connectivity and strength. In the cerebellum, the processes of the BG are interspersed with PC dendrites in the molecular layer, with BGs enwrapping the excitatory synapses of the PCs (Leung and Li, 2018). As defects in BG morphology have been linked to the etiology of SCA7 (Furrer et al., 2011), we examined the BGs in Ttbk2c.mut. To assess the morphology of BGs in the Ttbk2c.mut animals and evaluate whether defects in these cells may contribute to the phenotype, we used GFAP to visualize BG fibers that extend throughout the cerebellar folia. We found that the numbers of glial fibers were moderately reduced in Ttbk2cmut cerebellar folia compared to littermate Controls (Figure 2C,D; 11.44 BG fibers ± 0.29 for Control vs. 7.64 BG fibers ± 0.22 for Ttbk2cmut), suggesting that loss of Ttbk2 has modest effects on the morphology of BGs. Taken together, these data suggest that loss of Ttbk2 affects several cell types in the cerebellum and medulla, underscoring the widespread importance of Ttbk2 within these tissues.
 
-## TTBK2 is required cell-autonomously in PCs to maintain their connectivity
+### TTBK2 is required cell-autonomously in PCs to maintain their connectivity
 
 Dysfunction and eventual atrophy of the PCs in the cerebellum is the primary pathology underlying SCA11 in human patients (Houlden et al., 2007). In our conditional Ttbk2 mutant mice, the most prominent phenotype is altered connectivity of the PCs with additional cellular changes seen in the BGs as well as ION neurons. To determine the degree to which these defects are the result of cell autonomous vs. non-cell-autonomous requirements for Ttbk2 in the PCs, we used the PC-specific Cre line Pcp2-Cre, which drives recombination specifically in PCs within the cerebellum beginning at P6 (Zhang et al., 2004). At P30, Ttbk2fl/fl;Pcp2-Cre+ (referred to from here as Ttbk2Pcp2) animals have normal cerebellar structure throughout, with molecular layer thickness comparable to that of littermate Control animals (Figure 3A,C. 202.7 μm ± 3.51 in P30 Control vs. 191.5 μm ± 3.21 in P30 Ttbk2Pcp2). The VGLUT2+ synapses between climbing fibers and PCs are not significantly changed between P30 Control and Ttbk2Pcp2 animals (Figure 3A,D; 548.2 puncta ± 13.36 in P30 Control vs. 538.9 puncta ± 18.14 in P30 Ttbk2Pcp2). This indicates that despite postnatal loss of Ttbk2, initial connections between PCs and climbing fibers are established normally. By P90, however, Ttbk2Pcp2 animals exhibited phenotypes largely recapitulating those observed in the Ttbk2c.mut animals. At P90, numbers of primary cilia are significantly reduced on PCs of Ttbk2Pcp2 animals (Figure 3—figure supplement 1A,B; 48.93 ± 7.86 percent PCs ciliated in Control vs. 18.67 ± 11.07 percent PCs ciliated in P90 Ttbk2Pcp2). While molecular layer thickness between the P90 Control and Ttbk2Pcp2 was not changed (Figure 3B,C; 202.9 μm ± 2.11 in P90 Control vs. 197.4 μm ± 4.18 in P90 Ttbk2Pcp2), we see a significant decrease in VGLUT2 puncta throughout the cerebellum (Figure 3B,D; 549.9 puncta ± 15.47 in P90 Control vs. 476.9 puncta ± 15.82 in P90 Ttbk2Pcp2), indicating that PCs have started to lose these important connections from the climbing fiber synapses.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig3-v2.jpg)
+
+**Figure 3.:** (A,B) Representative images of Control and Ttbk2f/f;Pcp2Cre+ (Ttbk2Pcp2) animals at age P30 (A) and P90 (B), immunostained for Calbindin to label PCs (red), VGLUT2 to label synapses (green), and nuclei (blue). VGLUT2 terminals are reduced in P90 Ttbk2Pcp2 animals compared to P30 Ttbk2Pcp2 animals. Scale bar = 20 μm. (C) Quantification of molecular layer thickness in P30 and P90 Ttbk2Pcp2 and Control animals (each point represents one measurement, 75 measurements per genotype. n = 3 animals. No significant difference reported by one-way ANOVA with Tukey correction, error bars indicate SEM. (D) Quantification of VGLUT2+ puncta analysis in P30 and P90 Ttbk2Pcp2 and Control animals. There are no differences in the number of puncta at P30; however these are significantly reduced by P90 (each point represents one field analyzed, five fields analyzed per animal, n = 3 animals. p=0.0098 by one-way ANOVA with Tukey correction, error bars indicate SEM). (E) Accelerating rotarod performance test of Ttbk2Pcp2and littermate Controls from P30 to P90. Ttbk2Pcp2 animals have a significantly shorter latency to fall time at P90 compared to P30 (a two-way ANOVA with Bonferroni’s multiple comparison test was used for calculating significance. p=0.1051 for P30 accelerating rotarod test, and p=0.0161 for P90 accelerating rotarod test). (F) Steady speed rotarod performance test of Ttbk2Pcp2 and littermate Controls aging from P30 to P90. At P30 Ttbk2Pcp2 animals do not have a shorter latency to fall time compared to Controls on the steady speed rotarod. However, by P90 there is a drastic reduction in latency to fall time for Ttbk2Pcp2 animals compared to Controls, indicative of impaired motor ability with age (a two-way ANOVA with Bonferroni’s multiple comparison test was used for calculating significance. p=0.7819 for P30 steady speed rotarod test, and p=0.0023 for P90 steady speed rotarod test. n = 6 animals for Control, n = 4 animals for Ttbk2Pcp2). (G) Representative images of Control and Ttbk2fl/fl;Slc1a3-CreER (Ttbk2Slc1a3) animals at 4 months of age (3 months post TMX) treatment, immunostained for Calbindin to label PCs (red), VGLUT2 to label synapses (green) and nuclei (blue). Unlike Ttbk2c.mut and Ttbk2Pcp2 mice, there is no loss of VGLUT2 synapses throughout the PC dendrites of Ttbk2Slc1a3 mice relative to Controls. (H) Quantification of molecular layer length in Ttbk2Slc1a3 and Control animals (each point represents one measurement, 75 measurements per genotype. n = 3 animals. No significance reported by student’s unpaired t-test, error bars indicate SEM). (I) Quantification of VGLUT2+ puncta analysis in Ttbk2Slc1a3 and Control animals. There is no difference in the numbers of puncta between these conditions (each point represents a field analyzed, five images analyzed per animal, n = 3 animals. No significance reported by student’s unpaired t-test, error bars indicate SEM).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Images showing cilia localized to PCs soma in Control, and a centrosome lacking a primary cilium (arrowhead) in Ttbk2Pcp2 PCs. PCs are stained for Calbindin (magenta), cilia are stained for ARL13B (red), and centrosomes are stained for γ-tubulin (green). Scale bar = 15 μm. (B) Quantification of cilia loss on PCs. Each point represents a 10 μm z-stack image of Purkinje cell layer (PCL )counted using a 63x objective. Control = 120 PCs counted, Ttbk2Pcp2 = 84 PCs counted. n = 3 animals. p<0.0001 by unpaired student’s t-test, error bars represent SEM.
 
 We then assessed motor coordination of P30 and P90 Ttbk2Pcp2 animals using the rotarod performance test and did not observe significant changes in P30 animals. However, by P90, the Ttbk2Pcp2 animals consistently exhibited reduced latency to fall on both the accelerating rotarod as well as the steady speed rotarod performance tests (Figure 3E and F). These data show that loss of Ttbk2, specifically from PCs, causes neurodegenerative phenotypes.
 
 Our data from the Ttbk2 global conditional knockouts revealed that the morphology of BGs was modestly perturbed (Figure 2C,D). As defects in BGs have been shown to non-cell autonomously contribute to the degenerative phenotypes observed in SCA7 (Furrer et al., 2011), we tested whether deletion of TTBK2 specifically from these cells could also result in loss of synapses and other degenerative changes to the PCs. We crossed Ttbk2fl/fl animals to a Slc1a3-CreER mouse (Wang et al., 2012) to produce Ttbk2fl/fl; Slc1a3-CreER+ mice to induce recombination of the Ttbk2 allele specifically within glial cells. Following the same TMX injection protocol used for the Ttbk2c.mut experiments, we did not see changes to the VGLUT2+ synapses on PC dendrites (Figure 3G–I). These data indicate that the PC phenotypes observed in the Ttbk2c.mut mice are primarily cell autonomous.
 
-## Conditional knockout of Ttbk2 recapitulates SCA11 phenotypes
+### Conditional knockout of Ttbk2 recapitulates SCA11 phenotypes
 
 In the first 3 months following TMX injections, the phenotypes exhibited by the Ttbk2c.mut mice consisted mainly of altered synaptic connectivity between PC and ION climbing fibers, and accompanying deficits in motor coordination (Figure 1). However, when we assessed the cerebellar phenotypes of animals at 6 months of age (5 months following TMX injection), we found gaps in the molecular layer where PCs appear to be absent (Figure 4A). We quantified this observation by counting PC soma within a defined region of the primary fissure, and confirmed that the number of PCs is reduced in 6-month-old Ttbk2c.mut mice compared to littermate Controls of the same age, as well as compared to 4-month-old Ttbk2c.mut mice (Figure 4B; 18.5 ± 0.29 PCs per 500 μm for 4-month Control vs. 18.42 PCs ± 0.34 for 4-month Ttbk2c.mut; 18.67 PCs ± 0.43 for 6-month Control vs. 11.92 PCs ± 0.74 for 6-month Ttbk2c.mut). We found more PC gaps in folia of 6-month-old Ttbk2c.mut animals compared to Controls, and that most gaps are enriched at the inner folia. PC gaps were not found on folia X, which is consistent with data showing folia X being resistant to neurodegeneration (Figure 4C and Figure 4—figure supplement 1A) (Tolbert et al., 1995).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative images showing folia of 4-month-old Ttbk2c.mut (top) and 6-month-old Ttbk2c.mut animals (bottom) with respective littermate Controls. Cerebellum tissue is stained for Calbindin to show PC. 6-month-old Ttbk2c.mut have large stretches of folia missing Calbindin+ PC soma compared to 4-month-old Ttbk2c.mut. Scale bar 50 μm. (B) Quantification of the loss of PC soma along 500 μm stretch of the primary fissure (n = 36 measurements across three animals. p<0.0001 by student’s unpaired t-test, error bars indicate SEM). (C) Quantification of location of PC gaps in Ttbk2c.mut animals. PC gaps are present throughout folia I-IX in Ttbk2c.mut animals but are not seen in Controls. A threshhold of more than two cell spaces was used to define a PC gap. 10 cerebellar slices were quantified, n = 3 animals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative images of Calbindin staining (red) throughout the cerebellum of 6-month-old Control and Ttbk2c.mut animals. Arrowheads denote gaps in folia present in Ttbk2c.mut animals. Scale bar = 200 μm. Inset shows typical PC gap at higher magnification.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative images of neurons in the cortex of 6-month-old Control, 4-month-old Ttbk2c.mut, 6-month-old Ttbk2c.mut and 55-week-old JNPL3(P301L) (B) animals showing AT8 phosphorylated Tau in red. JNPL3(P301L) mice express mutated Tau and were used as a positive Control for Tau accumulation. We did not detect any phosphorylated Tau in 4-month-old Ttbk2c.mut animals; however, some neurons in the cortex of 6-month-old Ttbk2c.mut have mild accumulation of phosphorylated Tau. Scale bar = 10 μm.
+
 A postmortem examination of a SCA11 affected individual revealed Tau aggregates in regions of the brain outside of the cerebellum (Houlden et al., 2007). We therefore looked for pathological Tau aggregates in the cortex in both the 4-month-old and 6-month-old Ttbk2c.mut animals. We could not detect the accumulation of phosphorylated Tau in the Control or 4-month-old Ttbk2c.mut cortex. However, in the cortex of the 6-month-old Ttbk2c.mut animals, we noticed a small number of neurons with some accumulation of phosphorylated Tau, recognized by an antibody specific to Ser202 and Thr205 phosphorylated tau (Figure 4—figure supplement 2A). This mild accumulation is compared to neurons in a mouse model of Alzheimer’s, JNPL3(P301L), which expresses a mutated form of Tau (Lewis et al., 2000) and is therefore positive for accumulation of phosphorylated Tau (Figure 4—figure supplement 2B). Thus, dysfunction of PCs after loss of Ttbk2, accompanied by Tau accumulation outside of the cerebellum, recapitulates currently described SCA11 phenotypes.
 
-## Ttbk2c.mut animals lose neuronal primary cilia prior to the onset of neurodegenerative phenotypes
+### Ttbk2c.mut animals lose neuronal primary cilia prior to the onset of neurodegenerative phenotypes
 
 Our prior work demonstrated that mutations associated with SCA11, which result in the production of a truncated protein, interfere with the function of full-length TTBK2. In particular, these mutations dominantly interfere with cilia formation in embryos and cultured cells (Bowie et al., 2018). Throughout the adult cerebellum and other regions of the hindbrain, neurons possess primary cilia (Figure 5A–C). Within 20 days following administration of TMX to induce recombination (P45), the number of ciliated cells in the cerebellum declined dramatically in Ttbk2c.mut mice: from a mean of 22.46 cilia per 32 mm2 field ± 0.7626 in Control animals to 2.36 cilia per 32 mm2 field ± 0.3103 in Ttbk2c.mut animals (Figure 5D,E). This loss of cilia was observed throughout the cerebellum, brain stem, and other areas of the brain such as the hippocampus and the cortex (Figure 5—figure supplement 1A,B). Thus, loss of cilia coincides with the behavioral changes we identified in Ttbk2c.mut mice, yet precedes the cellular changes ocurring throughout the cerebellum of Ttbk2c.mut mice as they age.
 
-## Loss of the cilium assembly gene Ift88 recapitulates Ttbk2c.mut phenotypes
+![Figure 5.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) Representative images of cilia on indicated cell types throughout parts of the cerebellum and medulla. Sections from a mouse expressing an ARL13B-mCherry transgene (green) (Bangs et al., 2015) immunostained for γ-Tubulin to label centrosomes (white), and various cell specific markers such as Calbindin to label Purkinje cells (A), NeuN to label granule neurons (B), and FoxP2 to label neurons within the inferior olivary nucleus (C). Insets show boxed areas. Scale bar = 50 μm, 10 μm for insets. (D) Representative images illustrating cilia loss in the cerebellum 20 days after TMX treatment. Sections were immunostained for ARL13B to label cilia (red) and γ-Tubulin to label centrosomes (green). For quantification purposes images were taken at the nexus between the molecular layer (ML) and granule layer (GL) with the r PCL in the middle of the imaging field where there is an abundance of cilia. Scale bar = 50 μm. (E) Quantification of cilia loss after TMX treatment (n = 36 images counted, three animals, p<0.0001 student’s unpaired t-test, error bars indicate SEM).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A,B) Sagittal sections of Ttbk2c.mut brains stained for AC3 to label cilia (red) and DAPI for nuclei. Neurons in the hippocampus (A) and the cortex (B) have lost cilia 3 months after tamoxifen injections in Ttbk2c.mut animals. Scale bar = 20 μm.
+
+### Loss of the cilium assembly gene Ift88 recapitulates Ttbk2c.mut phenotypes
 
 Ttbk2 is essential both for the initiation of cilium assembly as well as the structure and stability of cilia (Bowie et al., 2018; Goetz et al., 2012). Given this critical link between TTBK2 and primary cilia in all cell types examined in both developing and adult tissues, we tested whether loss or dysfunction of cilia via a different genetic mechanism causes convergent phenotypes to those of the Ttbk2c.mut mice. For these studies we turned to conditional mutants of another key ciliary protein, Intraflagellar Transport Protein 88 (IFT88). IFT88 is a component of the IFTB particle required for assembly of the ciliary axoneme as well as anterograde trafficking within the cilium (Pazour et al., 2000). Our previous work shows that IFT88 functions downstream of TTBK2 in cilium initiation (Goetz et al., 2012), with TTBK2 being required for IFT recruitment. In the developing and postnatal brain, IFT88 is important for cilia structure in the hippocampus and cortex (Willaredt et al., 2008) and when knocked out in these specific neuron populations results in memory deficits (Berbari et al., 2014). Additionally, Ift88 null mutants exhibit nearly identical embryonic phenotypes to those of Ttbk2 null mutants (Murcia et al., 2000). When we knocked out Ift88 using the same approach described for Ttbk2c.mut animals, we observed that the numbers of cilia were significantly reduced in Ift88c.mut cerebella at 3 months post TMX treatment, although more cilia remain in Ift88c.mut cerebella compared to the Ttbk2c.mut animals with the same treatment (Figure 6A,C; 17.31 cilia per 32 mm2 field ± 0.65 for Control vs. 12.13 cilia per 32 mm2 field ± 0.50 for Ift88c.mut). Western blot analysis of cerebellar tissue from Ift88c.mut mice reveals that a small amount of IFT88 protein perdures in brain tissue (Figure 6B). This could, in part, help to explain why we do not see a full loss of cilia throughout the cerebellum similar to that observed in the Ttbk2c.mut mice. Regardless, the cilia that do remain in Ift88c.mut animals are shorter in length than Controls (Figure 6D; 2.31 μm ± 0.10 for Control vs. 1.70 μm ± 0.08 for Ift88c.mut).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig6-v2.jpg)
 
-**Figure 6.:** c.mut have fewer, shorter cilia throughout the cerebellum and mislocalization of ciliary membrane markers.(A) Representative images illustrating cilia loss in the cerebellum of Ift88c.mut animals, immunostained for ARL13B to label cilia (red), Pericentrin (PCNT) to label centrosomes (green) and nuclei (blue) Scale bar = 20 μm. (B) Western blot analysis of IFT88 in cerebellum lysate 3 months after TMX injections in Ift88c.mut animals. (C) Quantification of cilia loss. Compared to Ttbk2c.mut mice, cilia loss is less dramatic in the cerebellum of Ift88c.mut animals (each point represents a field scored, 45 fields scored per genotype. n = 3 animals. p<0.0001 by student's unpaired t-test, error bars indicate SEM). (D) Quantification of cilia length between Control and Ift88c.mut. Cilia in Ift88c.mut cerebellum are shorter (each point represents a single cilium, 80 cilia were measured for each genotype. n = 3 animals, p<0.0001 by student’s unpaired t-test, error bars indicate SEM). (E,F) Cilia from 6-month-old Control and Ift88c.mut stained for γ-Tubulin to label centrosomes (magenta), ARL13B to label cilia membrane (red), AC3 to label cilia membrane (green) and DAPI (blue). Ift88c.mut lose AC3+ cilia. (E) The arrow indicates a cilium that is AC3+/ARL13B-. Scale bar = 5 μm (E) and 1 μm (F). (G) Quantification of AC3+ cilia throughout the cerebellum. Ift88c.mut animals have a strong reduction in AC3+ cilia localization (each point represents a field scored, 36 field scored per genotype. n = 3 animals. p<0.0001 by student’s unpaired t-test, error bars indicate SEM).
+**Figure 6.:** (A) Representative images illustrating cilia loss in the cerebellum of Ift88c.mut animals, immunostained for ARL13B to label cilia (red), Pericentrin (PCNT) to label centrosomes (green) and nuclei (blue) Scale bar = 20 μm. (B) Western blot analysis of IFT88 in cerebellum lysate 3 months after TMX injections in Ift88c.mut animals. (C) Quantification of cilia loss. Compared to Ttbk2c.mut mice, cilia loss is less dramatic in the cerebellum of Ift88c.mut animals (each point represents a field scored, 45 fields scored per genotype. n = 3 animals. p<0.0001 by student's unpaired t-test, error bars indicate SEM). (D) Quantification of cilia length between Control and Ift88c.mut. Cilia in Ift88c.mut cerebellum are shorter (each point represents a single cilium, 80 cilia were measured for each genotype. n = 3 animals, p<0.0001 by student’s unpaired t-test, error bars indicate SEM). (E,F) Cilia from 6-month-old Control and Ift88c.mut stained for γ-Tubulin to label centrosomes (magenta), ARL13B to label cilia membrane (red), AC3 to label cilia membrane (green) and DAPI (blue). Ift88c.mut lose AC3+ cilia. (E) The arrow indicates a cilium that is AC3+/ARL13B-. Scale bar = 5 μm (E) and 1 μm (F). (G) Quantification of AC3+ cilia throughout the cerebellum. Ift88c.mut animals have a strong reduction in AC3+ cilia localization (each point represents a field scored, 36 field scored per genotype. n = 3 animals. p<0.0001 by student’s unpaired t-test, error bars indicate SEM).
 
 To further characterize the remaining cilia in the brains of Ift88c.mut mice, we examined additional markers of the ciliary membrane, including adenylate cyclase 3 (AC3) (Guadiana et al., 2016). We observed that within the WT cerebellum, there exist cilia that are AC3+ as well as AC3+/ARL13B+ (Figure 6E, arrowhead, Figure 6F). In our Ift88c.mut animals, we observed that the numbers of AC3+ cilia were strongly reduced (Figure 6G: 7.47 AC3+ cilia per 32 mm2 field ± 0.41 in Control vs. 2.17 AC3+ cilia per 32 mm2 field ± 0.22 in Ift88c.mut). This analysis suggests that IFT88 is required forlocalization of specific signaling molecules such as AC3 to neuronal primary cilia throughout the cerebellum.
 
@@ -80,13 +132,13 @@ We then examined cerebellar structure and circuitry in Ift88c.mut animals. Simil
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig7-v2.jpg)
 
-**Figure 7.:** c.mut animals.(A) Cerebellar tissue from Control and Ift88c.mut mice at 3 months after loss of Ift88, immunostained for Calbindin to label Purkinje cells (red) and VGLUT2 to show climbing fiber synapses (green). Ift88c.mut animals show a reduction in VGLUT2 positive synapses throughout the cerebellum 3 months after loss of IFT88. Scale bar = 50 μm. (B) Molecular layer length quantification of Ift88c.mut animals compared to littermate Controls. Each point represents one measurement, >75 measurements taken per genotype. n = 3 animals. p=0.0037 by unpaired student’s t-test, error bars indicate SEM. (C) Quantification of loss of VGLUT2 synapses along PC dendrites in Ift88c.mut animals. Each point represents a field analyzed, with five images analyzed per animal, n = 3 animals. p<0.0001 by unpaired student’s t-test, error bars indicate SEM. (D, E) Accelerating and steady speed rotarod performance test between Ift88c.mut and littermate Controls. Ift88c.mut animals do not have a significance difference in latency to fall time on the accelerating rotarod; however, the steady speed rotarod test showed a significantly shorter latency to fall time compared to Controls (a two-way ANOVA with Bonferroni’s multiple comparison test was used for calculating significance. p=0.8343 for accelerating rotarod test, and p=0.0005 for steady speed. n = 6 animals for Control, n = 4 animals for Ift88c.mut).
+**Figure 7.:** (A) Cerebellar tissue from Control and Ift88c.mut mice at 3 months after loss of Ift88, immunostained for Calbindin to label Purkinje cells (red) and VGLUT2 to show climbing fiber synapses (green). Ift88c.mut animals show a reduction in VGLUT2 positive synapses throughout the cerebellum 3 months after loss of IFT88. Scale bar = 50 μm. (B) Molecular layer length quantification of Ift88c.mut animals compared to littermate Controls. Each point represents one measurement, >75 measurements taken per genotype. n = 3 animals. p=0.0037 by unpaired student’s t-test, error bars indicate SEM. (C) Quantification of loss of VGLUT2 synapses along PC dendrites in Ift88c.mut animals. Each point represents a field analyzed, with five images analyzed per animal, n = 3 animals. p<0.0001 by unpaired student’s t-test, error bars indicate SEM. (D, E) Accelerating and steady speed rotarod performance test between Ift88c.mut and littermate Controls. Ift88c.mut animals do not have a significance difference in latency to fall time on the accelerating rotarod; however, the steady speed rotarod test showed a significantly shorter latency to fall time compared to Controls (a two-way ANOVA with Bonferroni’s multiple comparison test was used for calculating significance. p=0.8343 for accelerating rotarod test, and p=0.0005 for steady speed. n = 6 animals for Control, n = 4 animals for Ift88c.mut).
 
 We further assessed whether the Ift88c.mut animals also lose PCs as they age, as was the case for the Ttbk2c.mut mice (Figure 4). 6-month-old Ift88c.mut animals show gaps throughout the PC layer, and have reduced numbers of PC soma (Figure 8A,B; 17.5 ± 0.44 per 500 μm in 4-month-old Control vs. 16.92 PC soma ± 0.31 in 4-month-old Ift88c.mut. 17.17 PC soma ± 0.55 in 6-month-old Control vs. 12.67 PC soma ± 0.43 in 6-month-old Ift88c.mut). Coupled with these findings, the molecular layer thickness is further reduced in 6-month-old Ift88c.mut animals (Figure 8C–E; 173.9 μm ± 2.28 in 6-month-old Control vs. 158.0 μm ± 1.63 in 6-month-old Ift88c.mut), as well as VGLUT2 puncta counts being diminished in 6-month-old Ift88c.mut (Figure 8C,D,F; 645.9 puncta ± 26.83 in 6-month-old Control vs. 461.4 puncta ± 25.42 in 6-month-old Ift88c.mut).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/51166/elife-51166-fig8-v2.jpg)
 
-**Figure 8.:** c.mut mice by 6 months of age.(A) Cerebellar folia from Control and Ift88c.mut at 6 months of age, 5 months after loss of Ift88, stained for Calbindin (red) and DAPI (blue). 6-month-old Ift88c.mut mice begin to show PC gaps throughout cerebellar folia indicating loss of PC. Scale bar = 50 μm. (B) Quantification of number of PC soma per 500 μm stretch of folia on the primary fissure between Control and Ift88c.mut at 4 months and 6 months of age. 6-month-old Ift88c.mut show a reduced number of PC soma throughout the cerebellum (each point represents one measurement, 12 measurements were made per condition. n = 3 animals per condition. p<0.0001 by one-way ANOVA between all conditions, error bars indicate SEM). (C, D) 6-month-old cerebellar tissue from Control and Ift88c.mut mice immunostained for Calbindin to label PC (red) and VGLUT2 to show climbing fiber synapses (green) and DAPI (blue). Ift88c.mut animals show a reduction in VGLUT2 positive synapses throughout the cerebellum. Scale bar = 50 μm. (E) Quantification of molecular layer thickness between 6-month-old Control and Ift88c.mut animals. Ift88c.mut have shorter folia compared to littermate Controls (each point represents one measurement, >75 measurements taken per genotype. n = 3 animals. p<0.0001 by unpaired student’s t-test, error bars indicate SEM). (F) Quantification of loss of VGLUT2 synapses along PC dendrites in 6-month-old Ift88c.mut animals. Ift88c.mutshow a loss similar to the loss seen in 4-month-old Ift88c.mut animals (each point represents a field analyzed, with 5 images analyzed per animal, n = 3 animals. p<0.0001 by unpaired student’s t-test, error bars indicate SEM).
+**Figure 8.:** (A) Cerebellar folia from Control and Ift88c.mut at 6 months of age, 5 months after loss of Ift88, stained for Calbindin (red) and DAPI (blue). 6-month-old Ift88c.mut mice begin to show PC gaps throughout cerebellar folia indicating loss of PC. Scale bar = 50 μm. (B) Quantification of number of PC soma per 500 μm stretch of folia on the primary fissure between Control and Ift88c.mut at 4 months and 6 months of age. 6-month-old Ift88c.mut show a reduced number of PC soma throughout the cerebellum (each point represents one measurement, 12 measurements were made per condition. n = 3 animals per condition. p<0.0001 by one-way ANOVA between all conditions, error bars indicate SEM). (C, D) 6-month-old cerebellar tissue from Control and Ift88c.mut mice immunostained for Calbindin to label PC (red) and VGLUT2 to show climbing fiber synapses (green) and DAPI (blue). Ift88c.mut animals show a reduction in VGLUT2 positive synapses throughout the cerebellum. Scale bar = 50 μm. (E) Quantification of molecular layer thickness between 6-month-old Control and Ift88c.mut animals. Ift88c.mut have shorter folia compared to littermate Controls (each point represents one measurement, >75 measurements taken per genotype. n = 3 animals. p<0.0001 by unpaired student’s t-test, error bars indicate SEM). (F) Quantification of loss of VGLUT2 synapses along PC dendrites in 6-month-old Ift88c.mut animals. Ift88c.mutshow a loss similar to the loss seen in 4-month-old Ift88c.mut animals (each point represents a field analyzed, with 5 images analyzed per animal, n = 3 animals. p<0.0001 by unpaired student’s t-test, error bars indicate SEM).
 
 ## Discussion
 
@@ -108,60 +160,238 @@ In this work, we present evidence that loss or impaired function of TTBK2 within
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ttbk2tm1a(EUCOMM)Hmgu</td>
+      <td>International Mouse Strain Resource</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Actb:FLPe</td>
+      <td>The Jackson Laboratory</td>
+      <td>#003800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ift88flox</td>
+      <td>The Jackson Laboratory</td>
+      <td>#022409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ubc-CreER</td>
+      <td>The Jackson Laboratory</td>
+      <td>#007001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Slc1a3-CreER</td>
+      <td>The Jackson Laboratory</td>
+      <td>#012586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pcp2-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>#010536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>T5648</td>
+      <td>Working concentration: 20 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-ARL13B (monoclonal)</td>
+      <td>NeuroMabs</td>
+      <td>N295B/66</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-ARL13B (polyclonal)</td>
+      <td>Proteintech</td>
+      <td>17711–1-AP</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-gamma-tubulin (monoclonal)</td>
+      <td>Sigma</td>
+      <td>T6557</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- Calbindin D28K (monoclonal)</td>
+      <td>Cell signalling technologies</td>
+      <td>13176S</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-VGLUT2 (polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>AB2251</td>
+      <td>1:2500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-NeuN (monoclonal)</td>
+      <td>Abcam</td>
+      <td>Ab177487</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-AC3 (polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>SC-588</td>
+      <td>1:10, discontinued</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-AC3 (polyclonal)</td>
+      <td>Abeomics</td>
+      <td>34–1003</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-GFAP (polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>AB5541</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-IP3 (monoclonal)</td>
+      <td>Abcam</td>
+      <td>AB108517</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-FoxP2 (polyclonal)</td>
+      <td>Abcam</td>
+      <td>AB16046</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-AT8 (monoclonal)</td>
+      <td>Thermo</td>
+      <td>MN1020</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>ImageJ: https://imagej.nih.gov/ij/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism: https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FD Rapid Golgistain Kit</td>
+      <td>FD Neurotechnologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BSA Protein Assay Kit</td>
+      <td>Thermo</td>
+      <td>#23227</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 The use and care of mice as described in this study was approved by the Institutional Animal Care and Use Committees of Duke University (Approval Number A218-17-09). All animal studies were performed in compliance with internationally accepted standards.
 
-## Mouse strains
+### Mouse strains
 
 Ttbk2c.mut mice were produced by crossing Ttbk2tm1a(EUCOMM)Hmgu mice to ACTB:FLPe (Jax stock #003800). The following mice were purchased from Jackson Laboratories: Ift88flox (stock #022409), Ubc-CreER (stock #007001), Slc1a3-CreER (stock #012586) and Pcp2-Cre (Jax stock #010536). Slides used from JNPL3(P301L) mice were a gift from Dr. Carol Colton at Duke University.
 
-## Genotyping
+### Genotyping
 
 PCR genotyping was performed on all mice before experiments to confirm the presence of floxed alleles and Cre. Ttbk2-floxed allele, primers used: 5’ ATACGGTTGAGATTCTTCTCCA, 3’ AGGCTGTACTGTAACTCACAAT (WT band 978 bp, floxed band 1241 bp). Ift88-floxed allele, primers used: 5’ GCCTCCTGTTTCTTGACAACAGTG, 3’ GGTCCTAACAAGTAAGCCCAGTGTT (WT band 350 bp, floxed band 370 bp). Universal Cre (Ubc-CreER, Pcp2-Cre), primers used: 5’ GATCTCCGGTATTGAAACTCCAGC, 3’ GCTAAACATGCTTCATCGTCGG (transgene band 650 bp).
 
-## Tamoxifen preparation and injection
+### Tamoxifen preparation and injection
 
 Tamoxifen powder (Sigma T5648) was dissolved in corn oil (Sigma C8267) to a desired concentration of 20 mg/mL. Mice were given five consecutive 100 μL intraperitoneal injections of 20 mg/mL tamoxifen starting at P21. Control mice were given corn oil vehicle only.
 
-## Mouse dissections
+### Mouse dissections
 
 To harvest tissues from adult mice, animals were deeply anesthetized with 12.5 mg/mL avertin and transcardially perfused with 10 mL of phosphate buffered saline (PBS) followed by 20 mL of 4% paraformaldehyde (PFA). Whole brains were dissected out and left to incubate for 24 h in 4% PFA at 4°C. For cryosectioning, tissue was cryoprotected in 30% sucrose overnight and embedded in Tissue Freezing Medium (General Data TFM-5). Cerebella were then cut sagittally down the middle, and embedded in Tissue Freezing Medium (General Data TFM-5). Tissue was sectioned at 20–30 μm thickness on a Leica Cyrostat (model CM3050S).
 
-## Western blotting
+### Western blotting
 
 Western blot methods were done as previously described (Bouskila et al., 2011) (Bowie et al., 2018). Briefly, for tissue which was being used to quantify levels of TTBK2, a buffer containing 50 mM Tris/HCl, pH 7.5, 1 mM EGTA, 1 mM EDTA, 1 mM sodium orthovanadate, 10 mM sodium-2-glycerophosphate, 50 mM sodium fluoride, 5 mM sodium pyrophosphate, 0.27 M sucrose, 1 mM benzamidine and 2 mM PMSF, supplemented with 0.5% NP-40 and 150 mM NaCl was used. For other tissue samples a buffer containing 10 mM Tris/Cl pH 7.5, 150 mM NaCl, 0.5 mM EDTA, 1% Triton, 1 mM protease inhibitors (Sigma #11836170001) and 25 mM β-glycerol phosphate (Sigma 50020) was used. Total protein concentration was determined using a BSA Protein Assay Kit (Thermo Fisher #23227). For western blots, 15 μg of protein lysate was used for detection.
 
-## Cilia quantification
+### Cilia quantification
 
 All quantification of cerebellar tissue was done using ImageJ software. Images taken for quantification of cilia abundance were 10 μm z-stacks taken at 63x in four distinct folia regions of the cerebellum, two rostral and two caudal (specifically, the outer edge of folia I/II, the internal zone between folia III and IV, the tip of folia VI, and the outer edge of folia IX on a sagittal section were imaged for cilia quantification). The Purkinje cell layer was placed into the middle of the image with equal distance above and below for quantification. Per animal, four sections were scored each and three animals were included in all quantifications. These cilia were the same population taken for cilia length measurements as well.
 
-## Molecular layer thickness and VGLUT2 puncta quantification
+### Molecular layer thickness and VGLUT2 puncta quantification
 
 For the molecular layer thickness, images were taken at 20x along the entirety of a primary fissure. A line was drawn from the base of the molecular layer to the pial surface, and a measurement was recorded. For this same line, the top of the line measurement was then brought down to the distal extent of the VGLUT2 synapse area, and a measurement recorded. For consistency, only the caudal side of the folia was measured. For the VGLUT2 puncta analysis, the ‘Analyze Particles’ function in ImageJ was used. Each image for the VGLUT2 puncta analysis was taken at 63x on the caudal side of the primary fissure, a 10 μm z-stack was made, and the image quantified. For the quantification, each stack was made into a black and white image, where the VGLUT2 puncta were black against a white background. Thresholding was performed, and the Analyze Particle function used. These measurements were routinely tested against user ROI counting to confirm accuracy. Four cerebellar slices were imaged per animal, and three animals were included in the analysis.
 
-## Inferior olivary nuclei quantification
+### Inferior olivary nuclei quantification
 
 For the area measurements of the ION nuclei, the ION was identified by cells that were positive for both NeuN and Calbindin as well as location within ventral medulla in which these cells reside. Images used for the NeuN area analysis were taken at 20x. A 10 μm z-stack image was made, and using the line tool, outlines were carefully drawn around the NeuN positive neuron and the area recorded. Per animal, over 150 cells were measured and three animals were included in the quantification.
 
-## Glial fiber quantification
+### Glial fiber quantification
 
 Glial fibers were assessed as previously described (Furrer et al., 2011). Briefly, a 100 μm horizontal line was drawn 50 μm below the pial surface of the primary fissure folia. Glial fibers which crossed this 100 μm were scored. Per animal, 36 measurements were made and three animals were included in the quantification.
 
-## Immunostaining
+### Immunostaining
 
 The following antibodies and dilutions were used in this study: mouse anti-ARL13B (NeuroMabs N295B/66, 1:500), rabbit anti-ARL13B (gift from Tamara Caspary, 1:500, and Proteintech 17711–1-AP, 1:500), mouse anti-gamma-Tubulin (Sigma T6557, 1:1000), rabbit anti-Calbindin D28K (Cell Signaling Technologies 13176S, 1:250), guinea pig anti-Calbindin D28K (Synaptic Systems 214–004, 1:200), guinea pig anti-VGLUT2 (EMD Millipore AB2251, 1:2500), rabbit anti-NeuN (Abcam ab177487, 1:1000), DAPI (Sigma D9542, 1x), rabbit anti-AC3 (Santa Cruz SC-588, 1:10 - discontinued), rabbit anti-AC3 (Abeomics 34–1003, 1:100), chicken anti-GFAP (EMD Millipore AB5541, 1:500), rabbit anti-FoxP2 (Abcam, ab106046, 1:400), rabbit anti-IP3 (Abcam, ab108517, 1:200), and mouse anti-AT8 (Thermo Scientific MN1020, 1:100).
 
 For immunostaining cerebellar tissue, sections were rinsed in 1xPBS to remove OCT and permeabilized in 0.2% PBS-T (PBS + 0.2% Triton X-100) for 10 min, and then rinsed 3 × 5 min in PBS before the blocking step. Blocking solution contained 5% serum, 1% BSA made up in 0.1% PBS-T, and sections were incubated at room temperature in blocking solution for 1 h. Primary antibodies were used at indicated dilutions and incubated at 4°C overnight. Following primary antibody incubation, slides were rinsed 3 × 5 min in 1xPBS and secondary antibodies were used to detect epitopes. All secondary antibodies were supplied from Life Technologies. Secondary antibodies incubated for 1–3 h at room temperature. Following secondary antibody incubation, slides were rinsed 3 × 5 min in 1xPBS and mounted with either ProLong Gold antifade reagent (Invitrogen P23930).
 
-## Golgi staining
+### Golgi staining
 
 For Golgi staining of cerebellar tissue, FD Rapid Golgistain kit (FD Neurotechnologies) was used, according to manufacturer’s instructions. 100 μm sections were made after staining. Imaging of Golgi stained PCs was completed using a Zeiss Axio Imager with a 40x objective. Z-stacks containing entire PCs were used for quantification, and proximal dendrites were chosen that did not intersect with other dendrites for clear quantification. Using ImageJ software, spines were counted per length of measurement and reported as number of spines per micron.
 
-## Behavioral testing
+### Behavioral testing
 
 A rotarod performance test was completed with help from the Duke University Mouse Behavioral and Neuroendocrine Core Facility. Testers were blind to mouse genotype before beginning any experiments. The accelerating rotarod testing was performed the day before steady state rotarod testing. All accelerating tests were conducted at a speed that increased from 4 RPM to 40 RPM over 5 min. All steady speed tests were conducted at 32 RPM. Four trials were conducted per test. A trial was stopped after 300 s maximum time had elapsed for mice that did not fall off the rotarod during testing. Mice were aborted from the trial run if they held onto the rotarod for three full rotations. Mice were given 30 min between trials to rest, and four trials were completed per test.
 
-## Statistics
+### Statistics
 
 Statistical analyses, p-values, and experimental numbers for all experiments are outlined in respective figure legends. Analyses were performed using Graph Pad Prism 8.

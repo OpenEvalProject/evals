@@ -18,16 +18,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Johns Hopkins University School of Medicine, Division of Rheumatology Baltimore United States
-2. https://ror.org/02k7wn190 Nephrology Unit, Parma University Hospital, Department of Medicine and Surgery Parma Italy
-3. https://ror.org/00za53h95 Johns Hopkins University School of Medicine, Division of Pathology Baltimore United States
-4. https://ror.org/00za53h95 Johns Hopkins University School of Medicine, Department of Biophysics and Biophysical Chemistry Baltimore United States
+1. Johns Hopkins University School of Medicine, Division of Rheumatology Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Nephrology Unit, Parma University Hospital, Department of Medicine and Surgery Parma Italy ([ROR:02k7wn190](https://ror.org/02k7wn190))
+3. Johns Hopkins University School of Medicine, Division of Pathology Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+4. Johns Hopkins University School of Medicine, Department of Biophysics and Biophysical Chemistry Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
 ## Abstract
 
-Nucleic acid binding proteins are frequently targeted as autoantigens in systemic lupus erythematosus (SLE) and other interferon (IFN)-linked rheumatic diseases. The AIM-like receptors (ALRs) are IFN-inducible innate sensors that form supramolecular assemblies along double-stranded (ds)DNA of various origins. Here, we investigate the ALR absent in melanoma 2 (AIM2) as a novel autoantigen in SLE, with similar properties to the established ALR autoantigen interferon-inducible protein 16 (IFI16). We examined neutrophil extracellular traps (NETs) as DNA scaffolds on which these antigens might interact in a pro-immune context. AIM2 autoantibodies were measured by immunoprecipitation in SLE and control subjects. Neutrophil extracellular traps were induced in control neutrophils and combined with purified ALR proteins in immunofluorescence and DNase protection assays. SLE renal tissues were examined for ALR-containing NETs by confocal microscopy. AIM2 autoantibodies were detected in 41/131 (31.3%) SLE patients and 2/49 (4.1%) controls. Our SLE cohort revealed a frequent co-occurrence of anti-AIM2, anti-IFI16, and anti-DNA antibodies, and higher clinical measures of disease activity in patients positive for antibodies against these ALRs. We found that both ALRs bind NETs in vitro and in SLE renal tissues. We demonstrate that ALR binding causes NETs to resist degradation by DNase I, suggesting a mechanism whereby extracellular ALR-NET interactions may promote sustained IFN signaling. Our work suggests that extracellular ALRs bind NETs, leading to DNase resistant nucleoprotein fibers that are targeted as autoantigens in SLE. These studies were funded by NIH R01 DE12354 (AR), P30 AR070254, R01 GM 129342 (JS), K23AR075898 (CM), K08AR077100 (BA), the Jerome L. Greene Foundation and the Rheumatology Research Foundation. Dr. Antiochos and Dr. Mecoli are Jerome L. Greene Scholars. The Hopkins Lupus Cohort is supported by NIH grant R01 AR069572. Confocal imaging performed at the Johns Hopkins Microscopy Facility was supported by NIH Grant S10 OD016374.
+Background:Nucleic acid binding proteins are frequently targeted as autoantigens in systemic lupus erythematosus (SLE) and other interferon (IFN)-linked rheumatic diseases. The AIM-like receptors (ALRs) are IFN-inducible innate sensors that form supramolecular assemblies along double-stranded (ds)DNA of various origins. Here, we investigate the ALR absent in melanoma 2 (AIM2) as a novel autoantigen in SLE, with similar properties to the established ALR autoantigen interferon-inducible protein 16 (IFI16). We examined neutrophil extracellular traps (NETs) as DNA scaffolds on which these antigens might interact in a pro-immune context.Methods:AIM2 autoantibodies were measured by immunoprecipitation in SLE and control subjects. Neutrophil extracellular traps were induced in control neutrophils and combined with purified ALR proteins in immunofluorescence and DNase protection assays. SLE renal tissues were examined for ALR-containing NETs by confocal microscopy.Results:AIM2 autoantibodies were detected in 41/131 (31.3%) SLE patients and 2/49 (4.1%) controls. Our SLE cohort revealed a frequent co-occurrence of anti-AIM2, anti-IFI16, and anti-DNA antibodies, and higher clinical measures of disease activity in patients positive for antibodies against these ALRs. We found that both ALRs bind NETs in vitro and in SLE renal tissues. We demonstrate that ALR binding causes NETs to resist degradation by DNase I, suggesting a mechanism whereby extracellular ALR-NET interactions may promote sustained IFN signaling.Conclusions:Our work suggests that extracellular ALRs bind NETs, leading to DNase resistant nucleoprotein fibers that are targeted as autoantigens in SLE.Funding:These studies were funded by NIH R01 DE12354 (AR), P30 AR070254, R01 GM 129342 (JS), K23AR075898 (CM), K08AR077100 (BA), the Jerome L. Greene Foundation and the Rheumatology Research Foundation. Dr. Antiochos and Dr. Mecoli are Jerome L. Greene Scholars. The Hopkins Lupus Cohort is supported by NIH grant R01 AR069572. Confocal imaging performed at the Johns Hopkins Microscopy Facility was supported by NIH Grant S10 OD016374.
 
 ## Introduction
 
@@ -39,35 +39,110 @@ Anti-IFI16 antibodies occur in both SLE and Sjogren’s Syndrome (SS), but we ha
 
 ## Materials and methods
 
-## Patients
+### Patients
 
 Plasma from 131 SLE patients (defined by the SLICC criteria Petri et al., 2012) in the Hopkins Lupus Cohort was studied for autoantibodies. Sera from 49 healthy controls were analyzed to establish a threshold for assay positivity. 133 primary was analyzed to establish a threshold for assay positivity. 133 primary Sjögren’s Syndrome (SS) patients (defined by ACR/EULAR criteria Shiboski et al., 2017) were included as disease controls. All patients and healthy controls gave informed consent for blood used in research, and all work involving human subjects was approved by the Johns Hopkins Institutional Review Board. Paraffin sections from SLE renal biopsies were obtained for immunostaining and are detailed in the Supplementary file 1c.
 
-## ALR autoantibody assays
+### ALR autoantibody assays
 
 Full length AIM2 cDNA was subcloned into the pET28 vector (Novagen) and used to generate 35S-methionine labeled AIM2 protein by in vitro transcription and translation (IVTT) (Promega). Immunoprecipitations (IP) were performed using IVTT product diluted in Lysis Buffer (20 mM Tris pH 7.4, 150 mM NaCl, 1 mM EDTA pH 7.4, 1% NP40) and 1 microliter of serum (90 min, 4 °C). 20 microliters of Protein G Dynabeads (Thermo Fisher) were then added to each IP and incubated for 60 min. Beads were magnetically isolated, washed, and boiled in gel application buffer. IP products were electrophorezed on SDS-polyacrylamide gels and visualized by fluorography. Films were scanned and AIM2 bands quantified using Quantity One software (Bio- Rad). IP products were normalized to the same positive reference serum included on each gel. The cutoff for antibody positivity was set at 2 standard deviations above the mean control serum value. To test anti-AIM2 antibody binding in the absence of DNA, TURBO DNase (Life Technologies) was incubated with human sera and AIM2 IVTT products separately at a concentration of 10 U/mL for 20 min at RT prior to the IP reaction being performed. IFI16 antibodies were assayed by ELISA as described (Matyszewski et al., 2021). To test antibody binding of the PYRIN domain in the absence of the DNA binding domain, AIM2-PYD was cloned into eGFP expression vector and transiently expressed in 293T cells. Human sera were then used to immunoprecipitate the AIM2 PYD-GFP fusion protein using Protein G Dyna Beads as with the full length AIM2 assay. MNDA was expressed and purified from E. coli as previously described (Matyszewski et al., 2021) and analyzed by Western blotting using a commercial anti-MNDA antibody (3C1, Cell Signaling). The MNDA ELISA was developed similar to prior ELISA assays (Antiochos et al., 2021), and utilized 50 ng of protein per well, blocked with 5% milk in PBS-Tween, and human sera applied at 1:2000 dilution for 2 hr.
 
-## NET assays
+### NET assays
 
 Neutrophils were isolated from healthy control PBMCs using Ficoll-Paque density gradient followed by RBC lysis using ACK buffer (Quality Biological). NET formation was induced using PMA at 100 nM for 3 hr. For immunofluorescence studies, neutrophils were plated on glass coverslips for 15 minprior to PMA treatment. For quantitative DNAse protection assays, NETs were induced with PMA in 96 well plates, incubated with or without purified ALRs, then treated with DNAse I at room temperature (RT) prior to incubation with 5 µM Sytox Green (Thermo Fisher) and quantification via fluorimetry using a Perkin Elmer plate reader. Experiments were performed twice.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Neutrophil samples were stained with anti-MPO-FITC antibody and mounted in DAPI-containing ProLong Gold Antifade Mountant (Thermo Fisher Scientific). AIM2 and IFI16 proteins were expressed, purified, and fluorescently labeled as previously described (Morrone et al., 2014; Morrone et al., 2015). SLE renal biopsies were stained as previously described (Antiochos et al., 2018) using anti-MPO rabbit polyclonal (ThermoFisher), anti-MPO mouse monoclonal (ThermoFisher), anti-IFI16 mouse monoclonal (Sigma), anti-AIM2 rabbit polyclonal (Sigma), and Hoechst 33,342 (ThermoFisher). Confocal imaging was performed with a Zeiss AxioObserver with 780-Quasar confocal module.
 
-## Fluorescence anisotropy
+### Fluorescence anisotropy
 
 Fluorescence anisotropy (FA) experiments were performed as in Matyszewski et al., 2018 to compare DNase shielding of IFI16 versus the catalytic domain of cGAS (cGAS-CD). 150 nM (binding site normalized for each protein) FAM-labeled 72bps dsDNA derived from VACV was pre-incubated for 30 min with 300 nM IFI16 or 500 nM cGAS-CD. DNase I was added at time 0, then the fraction of bound dsDNA was monitored via the FA of dsDNA•protein complex.
 
-## Statistics
+### Statistics
 
 Features of patients with and without AIM2 antibodies were compared using Fisher’s exact test for categorical variables and the Mann-Whitney test for continuous variables. Multivariable logistic regression was utilized to determine associations between variables. P values less than 0.05 were considered statistically significant.
 
 ## Results
 
-## AIM2 autoantibodies are present in SLE, and frequently co-occur with anti-IFI16 and anti-dsDNA antibodies
+### AIM2 autoantibodies are present in SLE, and frequently co-occur with anti-IFI16 and anti-dsDNA antibodies
 
 To determine whether AIM2 was a target of the humoral immune response in SLE, we developed an IP assay to screen for anti-AIM2 antibodies. 41/131 (31.3%) of SLE versus 2/49 (4.1%) of healthy controls were anti-AIM2-positive (P < 0.001) (Figure 1A). Interestingly, anti-AIM2 antibodies were strongly associated with both anti-IFI16 and anti-DNA antibodies in the SLE samples measured on the day of visit (Figure 1B and Table 1). We found that anti-AIM2 antibodies were associated with higher measures of SLEDAI (2.29 ± 2.3 vs 1.05 ± 1.61, P = 0.0026, Table 1), which was largely driven by the immunology component. Anti-AIM2 antibodies were associated with the presence of disease activity in the skin domain of the SLEDAI index at the date of blood draw: 11/41 (26.8%) of anti-AIM2 positive patients had scores > 0 in this domain, compared to 11/90 (12.2%) of anti-AIM2 negative patients (P = 0.0463). Anti-AIM2 antibodies were also associated with a small but significant increase (0.63 ± 0.55 vs 0.43 ± 0.51, P = 0.0333) in the SLE Physician Global Disease Activity score, which is based solely on clinical estimation of SLE activity, rather than serologic indices. A multivariable analysis correcting for SLEDAI, anti-dsDNA, and C4 results demonstrated that anti-AIM2 antibodies were significantly associated with anti-IFI16 antibodies with an OR of 3.7 (P = 0.007, 95% CI 1.44–9.7). A subset of SLE patients (n = 9) demonstrated particularly high levels of anti-AIM2 antibodies with normalized OD >20 (Figure 1A). These patients had higher SLEDAI values than both lower level anti-AIM2-positive and anti-AIM2-negative patients (Supplementary file 1a). Among all anti-AIM2 positive patients, we found a higher prevalence of positivity for anti–Ro (18/41, 44% vs 19/90, 21%, P = 0.0114) and anti–La (10/41, 24% vs 7/90, 8%, P = 0.0125) antibodies (Supplementary file 1b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig1-v1.jpg)
+
+**Figure 1.:** AIM2 antibodies were detected using immunoprecipitation (IP) of 35S-methionine labeled, in vitro transcribed and translated protein. Data are presented as OD units calibrated to a known positive reference serum. Dotted line indicates positive threshold value determined as the mean + 2 standard deviations of control serum samples. AIM2 autoantibodies were identified in 2/49 controls and 41/131 SLE patients. Statistical significance was determined using the Mann-Whitney test for nonparametric values (A). Relationship between anti-AIM2, -IFI16, and –DNA antibodies in the SLE cohort (B). Anti-AIM2 +SLE and control (CT) sera and AIM2 protein were each treated with or without DNase prior to being combined in the IP reaction. Coomassie stain of IgG heavy chain (HC) is shown below each IP result (C). 1 µg of Poly(dA:dT) was treated with DNase as in (C) and analyzed by SYBR Green staining in agarose gel (D). 293T cells were transfected with AIM2-PYD-GFP expression plasmid, and lysate was used in IP reaction with anti-AIM2 +SLE and CT sera (E). IP products and 293T lysates were blotted for AIM2 using anti-N terminal antibody (Cell Signaling D5X7K).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Anti-MNDA antibodies were analyzed by ELISA using 59 healthy control (HC) and 137 SLE sera. (A). MNDA protein utilized in ELISA analyzed by Coommasie staining (left) and Western botting (right) (B). AU = arbitrary units.
+
+**Table 1.**
+ Day of visit phenotypic characteristics of SLE patients related to AIM2 autoantibody status.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Autoantibody</th>
+      <th>Anti-AIM2+n = 41</th>
+      <th>Anti-AIM2-n = 90</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IFI16 Positive</td>
+      <td>19/41 (46%)</td>
+      <td>12/90 (13%)</td>
+      <td>&lt; 0.0001</td>
+    </tr>
+    <tr>
+      <td>DNA Positive</td>
+      <td>12/41 (29%)</td>
+      <td>7/89 (8%)</td>
+      <td>0.0026</td>
+    </tr>
+    <tr>
+      <td>Disease Activity Feature</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Physician Global Disease Activity</td>
+      <td>0.63 ± 0.55</td>
+      <td>0.43 ± 0.51</td>
+      <td>0.0333</td>
+    </tr>
+    <tr>
+      <td>SLEDAI</td>
+      <td>2.29 ± 2.3</td>
+      <td>1.05 ± 1.61</td>
+      <td>0.0026</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>114.7 ± 36.9</td>
+      <td>121.4 ± 29.0</td>
+      <td>0.1352</td>
+    </tr>
+    <tr>
+      <td>C4</td>
+      <td>19.5 ± 8.2</td>
+      <td>25 ± 9.3</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>Urine Protein/Creatinine ratio</td>
+      <td>0.134 ± 0.15</td>
+      <td>0.107 ± 0.11</td>
+      <td>0.4372</td>
+    </tr>
+  </tbody>
+</table>
+
+_Numerators correspond to number of patients with indicated feature positive and denominators to total number of patients with indicated feature recorded in the cohort, followed by percent (%) positive._
 
 SS shares several phenotypic features with SLE, including the presence of an IFN signature and B cell dysregulation (Yao et al., 2013), but anti-DNA antibodies are not characteristic of SS. We therefore analyzed SS sera for the presence of anti-AIM2 antibodiesand found that 46/133 (34.6%) of SS sera were positive. In contrast to SLE, anti-IFI16 was not enriched in patients with anti-AIM2 antibodies in SS (35% anti-AIM2-positive and anti-IFI16-positive versus 28% anti-AIM2-negative and anti-IFI16-positive in SS, P = 0.4324), showing that the association between anti-IFI16 and anti-AIM2 antibodies is specific to SLE, where these immune responses are also associated with anti-dsDNA antibodies.
 
@@ -75,7 +150,7 @@ Because AIM2 binds dsDNA of any sort, we considered whether the IP reaction obse
 
 The identification of anti-AIM2 autoantibodies raises the question of whether additional ALR proteins might be SLE autoantigens. To address this point, we developed an ELISA against MNDA – a third member of the ALR dsDNA sensor family. Despite the fact that antibodies against peptides derived from MNDA had been reported in some patients with SLE and other rheumatic diseases (van Beers et al., 2013), we did not identify any difference in anti-MNDA reactivity between healthy control and SLE sera (median AU HC = 1.279, median AU SLE = 1.228, P = 0.9319) (Figure 1—figure supplement 1).
 
-## AIM2 and IFI16 bind to neutrophil extracellular traps and inhibit their degradation by DNase I
+### AIM2 and IFI16 bind to neutrophil extracellular traps and inhibit their degradation by DNase I
 
 The close relationship between anti-AIM2, anti-IFI16, and anti-dsDNA antibodies in the SLE cohort led us to consider scenarios in which ALR-DNA complexes could be generated and promote the development of autoantibodies against these three antigens. Neutrophil extracellular traps (NETs) have been implicated as important sources of extracellular DNA in SLE and are linked to the IFN signature as well as autoantibody generation in this disease (Gupta and Kaplan, 2016). ALRs are IFN-induced, bind to dsDNA of many origins in a sequence-independent manner, and AIM2 has been identified as a protein constituent of SLE NETs in a proteomics analysis (Bruschi et al., 2019). IFI16 is released from epithelial cells undergoing apoptosis (Antiochos et al., 2018; Costa et al., 2011), and extracellular IFI16 is quantifiable in the sera of SLE patients (Gugliesi et al., 2013). Considering these observations, we reasoned that when ALRs are generated in the setting of IFN exposure and subsequently released from cells, they might encounter and bind to extracellular NETs, accumulating on this extracellular platform and creating a hub for amplification similar to that observed in the complement and coagulation pathways (de Bont et al., 2019).
 
@@ -89,9 +164,17 @@ IFI16 and AIM2 nucleoprotein filaments are highly stable and persist even after 
 
 To test the specificity of this observation, we utilized a fluorescence anisotropy assay to compare IFI16 against the catalytic domain of cGAS (cGAS-CD), to determine whether the property of DNA binding alone confers proteins with the ability to shield bound dsDNA from DNAse I (Figure 2F). In this second assay, we again observed that IFI16 blocked dsDNA degradation, while cGAS-CD did not. Thus, the ability to shield dsDNA from nuclease does not appear to be a universal property of all DNA-binding proteins, and other factors (such as the ability to oligomerize) may be required for this behavior.
 
-## IFI16-NETs are present in lupus nephritis
+### IFI16-NETs are present in lupus nephritis
 
 Prior studies have presented evidence of in vivo NET formation within the renal tissues of SLE patients, supporting the notion that dysregulated neutrophil function contributes to immune pathology in this disease (Villanueva et al., 2011). We therefore sought to determine whether ALR-NET interactions could be identified among NETs present in lupus nephritis biopsies. Considering that patients with diffuse proliferative lupus nephritis are known to harbor netting neutrophils in renal tissue (Villanueva et al., 2011), we identified patients with diffuse proliferative lupus nephritis, then selected 5 samples whose biopsies demonstrated neutrophilic infiltrates or karyorrhectic debris (Supplementary file 1c). We found that AIM2 was highly expressed in MPO-positive infiltrating cells (Figure 3A), while IFI16 was expressed more broadly throughout renal cell types (Figure 3B). We detected NETs containing both AIM2 and IFI16 in glomerular and interstitial infiltrates (Figure 3C and D). High magnification, z-stack imaging (Figure 3—figure supplement 1) confirmed that these structures represented extracellular DNA that co-stained for MPO and AIM2 or IFI16, consistent with ALR-bound NETs, rather than adjacent or overlapping cell nuclei. In summary, our immunostaining experiments provide evidence that AIM2 and IFI16 bind NETs in the setting of diffuse proliferative lupus nephritis, establishing AIM2 and IFI16 as NET-bound SLE autoantigens.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig3-v1.jpg)
+
+**Figure 3.:** Representative images of ALR expression and ALR-NETs identified in patients with class IV lupus nephritis. AIM2 (A) expression was largely detected in MPO expressing neutrophils, while IFI16 (B) was more broadly distributed. NETs (arrows) demonstrating co-localizing staining for DNA, MPO, and AIM2 (C) or IFI16 (D) visualized by confocal microscopy. Scale bars: 50 µm (A, B) 5 µm (C), 2 µm (D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72103/elife-72103-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Renal biopsy paraffin section stained for DNA, MPO, and IFI16/AIM2 and imaged using z-stacking to identify extracellular DNA-containing structures containing MPO and IFI16 or AIM2. Individual squares within each panel represent adjacent focal planes, proceeding sequentially from top left to bottom right in each area imaged.
 
 ## Discussion
 

@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/032e6b942 Ecological Chemistry, Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung Bremerhaven Germany
-2. https://ror.org/04z8jg394 GFZ German Research Centre for Geosciences, Telegrafenberg Potsdam Germany
-3. https://ror.org/039bjqg32 Faculty of Geology, University of Warsaw Warsaw Poland
-4. https://ror.org/01dr6c206 Research Centre in Kraków, Institute of Geological Sciences, Polish Academy of Sciences Kraków Poland
-5. https://ror.org/032e6b942 Marine Biogeosciences, Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung Bremerhaven Germany
+1. Ecological Chemistry, Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung Bremerhaven Germany ([ROR:032e6b942](https://ror.org/032e6b942))
+2. GFZ German Research Centre for Geosciences, Telegrafenberg Potsdam Germany ([ROR:04z8jg394](https://ror.org/04z8jg394))
+3. Faculty of Geology, University of Warsaw Warsaw Poland ([ROR:039bjqg32](https://ror.org/039bjqg32))
+4. Research Centre in Kraków, Institute of Geological Sciences, Polish Academy of Sciences Kraków Poland ([ROR:01dr6c206](https://ror.org/01dr6c206))
+5. Marine Biogeosciences, Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung Bremerhaven Germany ([ROR:032e6b942](https://ror.org/032e6b942))
 6. Burgers’ Ocean, Royal Burgers’ Zoo Arnhem Netherlands
 
 † Corresponding author
@@ -36,11 +36,15 @@ Our goal is to test whether the miliolid shell is produced by ‘agglutination�
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig1-v1.jpg)
 
-**Figure 1.:** P. eburnea (d’Orbigny), used for experimental studies.(A, B) Scanning electron microscopy (SEM), (C, D) transmitted light microscope, and (E, F) stereomicroscope images. White arrows show the outer organic sheath of a new chamber during its gradual calcification expressed by its gradual appearance from complete transparency to milky and opaque aspect (E, F). Black arrows indicate a small mass of cytoplasm extruded from the aperture of the existing chamber. Green arrows point to incorporated algae.
+**Figure 1.:** (A, B) Scanning electron microscopy (SEM), (C, D) transmitted light microscope, and (E, F) stereomicroscope images. White arrows show the outer organic sheath of a new chamber during its gradual calcification expressed by its gradual appearance from complete transparency to milky and opaque aspect (E, F). Black arrows indicate a small mass of cytoplasm extruded from the aperture of the existing chamber. Green arrows point to incorporated algae.
 
 ## Results
 
 All replicated in vivo experiments on P. eburnea facilitated by CLSM imaging with the application of membrane-impermeable Calcein and FM1-43 membrane dyes (performed in separate experiments) showed intravesicular fluorescence signals from groups of moving vesicles (1–5 µm in size) inside the cytosol (Figure 2A and B, Figure 2—video 1 and Figure 2—video 2). The fluorescent vesicles inside the cytosol contained seawater, as documented by fluorescence of membrane-impermeable Calcein. These vesicles were taken up by endocytosis indicated by FM1-43 staining. This dye stains the cell membranes and indicates all endocytic vesicles by fluorescence, whereas the other intracellular vesicles remain unstained (Amaral et al., 2011). Both dyes demonstrate the uptake of seawater via the endocytosis of vesicles that are approximately 1–4 µm in diameter and move through the entire cell.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig2-v1.jpg)
+
+**Figure 2.:** (A) Cell-impermeable Calcein (cyan) indicating endocytotic seawater vesicles, see Figure 2—video 1. (B) FM1-43 membrane dye indicating endocytotic vesicles (red), see Figure 2—video 2. (C) LysoGlow84 indicating acidic vesicles (navy blue), autofluorescence of chloroplasts (green), and Mg-ACC pools (red), see Figure 2—videos 3 and 4 (note the overlap of ACC and acidic vesicles is marked in lilac). (D) Autofluorescence image with reduced threshold of the studied Miliolida species (exc. 405 nm) showing algal chlorophyll (blue) and CaCO3 (red), both ACC and calcite shell.
 
 Additional LysoGlow84 staining revealed numerous acidic vesicles in the cytosol (Figure 2C, Figure 2—video 3 and Figure 2—video 4). Acidic vesicles were accompanied by other vesicles (approximately 1–2 µm in size) that show autofluorescence upon multiphoton excitation at 405 nm (emission 420–480 nm), shown in red in Figure 2C. This wavelength partly permeates the shell to excite autofluorescence interpreted as associated with ACCs (see Dubicka et al., 2023). The autofluorescence of the shell itself is also present (Figure 2D), however, it is not clearly visible because the fluorescence of ACCs is much stronger. The intensity of the laser light is reduced because the multiphoton light has to pass through a thick three-dimensional carbonate wall of the foraminiferal shell. Further experimental studies are needed to confirm the ACC source of this autofluorescence and thus definitively eliminate potential organic sources of AF emissions.
 
@@ -48,27 +52,49 @@ In addition, typical chlorophyll autofluorescence (excitation at 405 or 633 nm, 
 
 FE-SEM observations of the fully mineralized test walls displayed the porcelaneous structures (see Parker, 2017; Dubicka et al., 2018), which are made of three mineralized zones, i.e., (1) extrados that represents an outer mineralized surface (approximately 200–300 nm in thickness; Figure 3—figure supplements 1C and 2C); (2) porcelain that denotes the main body of the wall constructed from randomly oriented needle-shaped crystals (up to 1–2 μm in length and approximately 0.2 μm in width). No gel-like matter was observed between the needles of the porcelain structures that appeared in the early stages of wall formation (Figure 3E, E1; Figure 3—figure supplements 2C and 3A); and (3) intrados that represents an inner mineralized surface (approximately 200–300 nm in thickness) made of needle-shaped crystallites (Figure 3E, E1 and Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig3-v1.jpg)
+
+**Figure 3.:** Test cross-section showing: (A, B) carbonate nanograins within organic matrix, (C, D) nanograins merging into needle-like mesocrystals, (E) fully developed needle-shaped elements; pn – nanograins partly transformed to short needles.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** SEM images of broken specimen of P. eburnea (d’Orbigny) showing the test wall made of calcite nanograins (A–E) within organic gel-like fluids in-between, and cytoplasmic structures below a newly created chamber (G), and diatoms (white arrows) inside the test (G, H).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** SEM images of broken specimen of P. eburnea (d’Orbigny) showing a cross-section of the mineralized outer organic sheath of the last chamber (A, B) and the fully mineralized test wall of the former chamber (C).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** SEM images of different parts of the broken test of the P. eburnea (d’Orbigny) specimen showing (A) a fully developed test wall made of randomly oriented calcite needle-shaped crystals with planar faces; (B) test inside of newly built chamber wall made of calcite nanograins and some organic matter between the needles; (C) test inside of newly built chamber wall covered with an outer organic sheath; (D) rudiments of needles of extrados composed of rows of calcite nanograins and attached to the former chamber (fr); (E) outer organic sheath.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Scanning electron microscopy (SEM) images (A) and EDS spectra (A1–A3) of P. eburnea fixed cytosol (A1, A2) and newly created chamber (A3) indicating the chemical composition of both structures. cps/eV: counts per second per electron-volt.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig3-figsupp5-v1.jpg)
+
 Growing chambers, captured at the various successive stages of chamber formation in different specimens, have revealed the following morphological features: (1) a solitary, thin organic sheath (approximately 200–300 nm thick) that represents the most distal part of the new chamber and is anchored to the older, underlying solid calcified chamber (Figure 4A); (2) a solitary, outer organic sheath (OOS) filled with spread calcifying nanograins (Figure 4B; Figure 3—figure supplement 2); (3) a gel-like matter (4–5 µm in thickness) with a granular texture, bounded on two sides by intrados and extrados, and containing relatively widely spaced, randomly dispersed carbonate nanograins (Figure 3A, B; Figure 4C; Figure 3—figure supplement 1A–D); (4) the test inside made of chaotic meshwork of carbonate nanograins partly transformed to short needles with a small amount of gel-like OM in-between (Figures 3C, D, 4D); (5) the test inside composed of needle-shaped crystals with planar faces and no apparent remaining gel-like matter (Figures 3E, E1, 4E). Carbonate nanograins at the shell construction site were well documented in our SEM-EDS studies (Figure 3—figure supplement 4). Both fixation methods (see Materials and methods) yielded highly consistent results.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig4-v1.jpg)
 
-**Figure 4.:** P. eburnea.(A) Outer organic sheath, (B) mineralized outer organic sheath, (C) calcite nanograins within a gel-like organic matrix, (D) needle-shaped mesocrystal growth, (E) needle-like calcite building elements, (F) nanogranular shell (interval view).Figure 4—source data 1.P. eburnea.
+**Figure 4.:** (A) Outer organic sheath, (B) mineralized outer organic sheath, (C) calcite nanograins within a gel-like organic matrix, (D) needle-shaped mesocrystal growth, (E) needle-like calcite building elements, (F) nanogranular shell (interval view).
 
 ## Discussion
 
-## Porcelaneous shell formation
+### Porcelaneous shell formation
 
 Comparative analysis of the nanostructures of the newly built chambers combined with the elemental composition obtained from SEM-EDS, as well as the data from CLSM, allowed us to identify important steps in the accretive formation of P. eburnea shells. The formation of a new chamber begins with the construction of a thin OOS that pre-shapes the new chamber (Figures 4A and 5). The OOS is made by pseudopodial structures supported by the cytoskeleton immediately after the extrusion of a small mass of cytoplasm from the aperture (Figure 1E and F). Once the OOS is constructed, the first calcium carbonate accumulation takes place inside in the form of carbonate nanograins (Figures 4B and 5, Figure 3—figure supplement 2A and B), creating the extrados. The extrados stabilizes the final chamber morphology relatively quickly. Subsequently, the wall gradually thickens through the primary accumulation of hydrated and amorphous Mg-rich CaCO3 (Figures 4B and 5). We suppose that the carbonate content is successively deposited by exocytosis of Mg-ACC-rich vesicles that most likely represent the vesicles converted from seawater stained with Calcein (Figure 5). The characteristic autofluorescence inside foraminiferal cell excited at 405 nm (Figure 2; Figure 2—video 3 and Figure 2—video 4) most likely indicates the carbonate content of the vesicles, which are considered to be Mg-ACCs (see Dubicka et al., 2023). Mg-ACC is an unstable, amorphous and hydrated form of CaCO3 with a significantly high concentration of Mg (Raz et al., 2000; Weiner et al., 2003; Bentov and Erez, 2006; Kahil et al., 2021) and is commonly regarded as a resource for most biocalcification processes. ACCs have been found in many calcifying marine organisms, such as echinoderms, mollusks, coccolithophorid algae, cyanobacteria, crustaceans, and rotaliid foraminifera, where they are typically interpreted as pre-material phases for the production of calcite skeletons (Hasse et al., 2000; Weiss et al., 2002; Sviben et al., 2016; Dubicka et al., 2018; Kahil et al., 2021). Research suggests that a high-Mg content not only makes ACC unstable but also facilitates the transport of ACC to the crystallization site, where it is initially transformed into carbonate nanograins (Cölfen and Qi, 2001; Addadi et al., 2003; Raz et al., 2003; Dubicka et al., 2023). The existence of intracellular, vesicular intermediate amorphous phase (Mg-ACC pools), which supplies successive doses of carbonate material to shell production, might be supported not only by autofluorescence (excitation at 405 nm; Figure 2; Figure 2—video 3 and Figure 2—video 4; see Dubicka et al., 2023) but also by a high content of Ca and Mg analyzed in the cytoplasmic area by SEM-EDS analysis (Figure 3—figure supplement 4). In the future, more precise higher resolution elemental measurements are needed for better documentation of miliolid ACC-bearing vesicles. However, the small size of carbonate-bearing vesicles (approximately 1–2 µm) may make this difficult.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/91568/elife-91568-fig5-v1.jpg)
 
-**Figure 5.:** P. eburnea.White spots labeled as Mg-ACC represent vesicles with Mg-rich amorphous calcium carbonates.
+**Figure 5.:** White spots labeled as Mg-ACC represent vesicles with Mg-rich amorphous calcium carbonates.
 
 Mg2+ and Ca2+ ions for intravesicular production of Mg-ACCs are obtained from seawater and taken up by endocytosis, as independently indicated by membrane-impermeable Calcein, as well as by the FM1-43 probe selectively labeling membranes of endocytic vesicles (Figure 2A and B, Figure 2—video 1 and Figure 2—video 2). We hypothesize that vesicles are carried along cytoskeletal structures to the OM, as observed in rotaliid foraminifera (Dubicka et al., 2023), where they dock and release their contents (Figure 4). The nanograins then precipitate within the gelatinous matter that consists of amorphous carbonates and OM released from the vesicles (Figure 3A–C; Figure 4C; Figure 5). Nanograins immersed in the gel-like matter gradually grow into needle-shaped elements, precipitating in situ within the final wall structure (Figure 3C, D; Figure 4D). The gel-like matter appears to be involved in needle formation; however, the OM seems to disappear (Figures 3E and 4E) when the needle-shaped crystals are created. We suspect that the gel-like matter consists of pre-formed liquid amorphous mineral phase (Mg-ACC) within the extracellular OM that is suggested by the EDS spectra of the early stage of the wall calcification (Figure 3—figure supplement 4: A3 area). The calcification of extrados and intrados occurs before the interior of the wall crystallizes, providing stability to the new chamber at both edges of the wall (Figure 4D).
 
 The protruding cytoplasm appears to immediately form a chamber wall by secreting OM and crystals from the vesicles (Angell, 1980). As calcite secretion continues along the leading edge, the newly formed segment remains covered by a thin, moving sheet of cytoplasm that is called by Angell, 1980, the ‘active sheet’. This thin active sheet of cytoplasm may represent a lamellipodium that is a pseudopodial structure known to be involved in the biomineralization of Rotaliida (Tyszka et al., 2019). It is also likely that reticulopodial structures (that do not coat the whole calcification site) are responsible for the distribution and shape of the internal surface of the chamber wall. That occurs by successive accumulation of ACC and OM as identified on TEM images by Angell, 1980. His results suggest that crystallization of calcite needles is ‘limited to a confined space controlled by active cytoplasmic structures’ that are strictly separated by the membranes from the cytosol.
 
-## Formation of shell crystallites: a paradigm shift
+### Formation of shell crystallites: a paradigm shift
 
 Miliolids were thought to share a similar, intracellular, crystallization pathway as the coccolith formation in coccolithophorids (Weiner and Addadi, 2011) that evolved in the Triassic, i.e., ca. 210 Myr ago (Gardin et al., 2012). Coccoliths are produced within intracellular Golgi-derived vesicles and then exported to the surface of the extracellular coccosphere (Borman et al., 1986). Miliolids, with their unique fibrillar calcitic microstructures, evolved much earlier, i.e., ca. 300 Myr ago in the late Paleozoic (Figure 3—figure supplement 5). Until now, it was generally considered that calcite crystals in miliolids also precipitate within vesicles immersed in the cytoplasm and are then transported to the location of the wall construction, where they are released by exocytosis (Berthold, 1976; Angell, 1980; de Nooijer et al., 2009; Weiner and Addadi, 2011). Our FE-SEM study of P. eburnea shows the lack of premade needle-like crystallites of calcite at the early stages (I–IV) of the wall formation. In contrast, we can clearly infer the in situ calcification front with a progressive sequence of crystal growth behind the leading edge of the forming chamber (Figures 4 and 5). Therefore, this miliolid species apparently does not produce shells by ‘agglutination’ of premade needle-like crystallites of calcite, in contrast to the traditional miliolid calcification model (Berthold, 1976; Angell, 1980).
 
@@ -95,5 +121,64 @@ Our biomineralization model further explains the random orientation pattern of t
 Living foraminifera, collected from the coral reef aquarium in the Burgers’ Zoo (Arnhem, Netherlands), were cultured in a 10 L aquarium containing seawater with a salinity of 32 psu, pH of 8.2, and a temperature of 24°C. Specimens of P. eburnea (d’Orbigny) were placed in 4 mL Petri dishes 1 day prior to CLSM studies, incubated without food for 18–24 hr, and then individuals that underwent chamber formation were observed under a Zeiss Stemi SV8 stereomikroscope for selection of individuals.
 
 These selected individuals were studied in vivo using a Leica SP5 Confocal Laser Scanning Microscope equipped with an argon, helium-neon, neon, diode, and multiphoton Mai Tai laser (Spectra-Physics) at the Alfred-Wegener-Institut, Bremerhaven, Germany. In vivo experiments were performed by labeling samples with different fluorescent dyes (Table 1) just before imaging using pH-sensitive LysoGlow84 (50 µM exc. MP 720 nm exc./em. 380–415 nm and 450–470 nm, Marnas Biochemicals Bremerhaven, incubation time: 2 hr), FM1-43 membrane stain (1 µM, exc. 488 nm em. 580–620 nm, Invitrogen, incubation time: 24 hr), and membrane-impermeable Calcein (0.7 mg/10 mL, exc. 488 nm, em. 510–555 nm, incubation time: 24 hr). The foraminifera were removed from the Petri dish with clean water using a pipette. In addition, the autofluorescence of specific foraminiferal structures at the chosen excitation/emission wavelength was detected. All experiments were replicated with at least several individuals of the same species. All fluorescence probe experiments were performed with appropriate controls.
+
+**Table 1.**
+ Wavelengths and dyes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dye</th>
+      <th>Concentration</th>
+      <th>Excitation nm</th>
+      <th>Emission nm</th>
+      <th>Source</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LysoGlow84</td>
+      <td>50 µM</td>
+      <td>Multiphoton 730</td>
+      <td>380–415/450–470</td>
+      <td>Marnas Biochemicals</td>
+      <td>pH, membranepermeable</td>
+    </tr>
+    <tr>
+      <td>FM1-43</td>
+      <td>1 µM</td>
+      <td>Argon 488 or Multiphoton 1000 nm</td>
+      <td>580–620</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Membrane staining</td>
+    </tr>
+    <tr>
+      <td>Calcein</td>
+      <td>0,7 mg/10 mL</td>
+      <td>Argon 488</td>
+      <td>510–555</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Membrane-impermeable water soluble dye</td>
+    </tr>
+    <tr>
+      <td>Autofluorescence</td>
+      <td></td>
+      <td>Diode 405MP 800</td>
+      <td>420–490</td>
+      <td></td>
+      <td>CaCO3, ACC</td>
+    </tr>
+    <tr>
+      <td>Autofluorescence</td>
+      <td></td>
+      <td>Diode 405/HeNe 633</td>
+      <td>650–700</td>
+      <td></td>
+      <td>Chlorophyll of algae</td>
+    </tr>
+  </tbody>
+</table>
 
 Additional foraminifera individuals that had been studied by CLSM were fixed for further analysis. The fixation process followed two different methods: (1) 60 individuals were transferred to 3% glutaraldehyde for 5 s and then dehydrated stepwise for a few seconds with an ethanol/distilled water mixture with increasing concentrations (30%, 50%, 70%, and 99%). (2) The seawater was removed from 50 individuals by pipetting and applying a small piece of Kimtech lab wipe (without any rinsing), followed by quick drying in warm air (30–35°C). This method stops the dissolution of the amorphous mineral phase because there is no contact with other liquids. Fixed foraminifers of both procedures were gently broken using a fine needle to coat the cross-sectional surfaces and tested inside with a few nanometers of either gold or carbon. Foraminifera were then studied using a Zeiss Sigma variable-pressure FE-SEM equipped with EDS at the Faculty of Geology, University of Warsaw.

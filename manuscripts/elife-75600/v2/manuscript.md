@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02dxx6824 Scripps Research Translational Institute, Scripps Research Institute La Jolla United States
+1. Scripps Research Translational Institute, Scripps Research Institute La Jolla United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
 2. Department of Integrative Structural and Computational Biology, Scripps Research La Jolla United States
-3. https://ror.org/02y3ad647 Department of Microbiology and Cell Science, University of Florida Gainesville United States
+3. Department of Microbiology and Cell Science, University of Florida Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ Here, we present a generalized approach to unphased human genotype imputation us
 
 ## Materials and methods
 
-## Overview
+### Overview
 
 Sparse, de-noising autoencoders spanning all bi-allelic SNPs observed in the Haplotype Reference Consortium were developed and optimized. Each autoencoder receives masked data as input and is trained to predict the original uncorrupted data as the output. Each bi-allelic SNP was encoded as two binary input nodes, representing the presence or absence of each allele (Figure 1B, E). This encoding allows for the straightforward extension to multi-allelic architectures and non-binary allele presence probabilities. A data augmentation approach using modeled recombination events and offspring formation coupled with random masking at an escalating rate drove our autoencoder training strategy (Figure 1C). Because of the extreme skew of the allele frequency distribution for rarely present alleles (Auton et al., 2015), a focal-loss-based approach was essential to genotype imputation performance. The basic architecture of the template fully-connected autoencoder before optimization to each genomic segment is depicted in Figure 1D. Individual autoencoders were designed to span genomic segments with boundaries defined by computationally identified recombination hotspots (Figure 1A). The starting point for model hyperparameters were randomly selected from a grid of possible combinations and were further tuned from a battery of features describing the complexity of the linkage-disequilibrium structure of each genomic segment.
 
@@ -42,47 +42,126 @@ Sparse, de-noising autoencoders spanning all bi-allelic SNPs observed in the Hap
 
 **Figure 1.:** (A) Tiling of autoencoders across the genome is achieved by (A.1) calculating a n x n matrix of pairwise SNP correlations, thresholding them at 0.45 (selected values are shown in red background, excluded values in gray), (A.2) quantifying the overall local LD strength centered at each SNP by computing their local correlation box counts and splitting the genome into approximately independent segments by identifying local minima (recombination hotspots). The red arrow illustrates minima between strong LD regions. For reducing computational complexity, we calculated the correlations in a fixed sliding box size of 500x500 common variants (MAF ≥ 0.5%). Thus, the memory utilization for calculating correlations will be the same regardless of genomic density. (B) Ground truth whole genome sequencing data is encoded as binary values representing the presence (1) or absence (0) of the reference allele (blue) and alternative allele (red). (C) Variant masking (setting both alleles as absent, represented by 0, corrupts data inputs at a gradually increasing masking rate). Example masked variants are outlined. (D) Fully-connected autoencoders spanning segments defined as shown in panel (A), are then trained to reconstruct the original uncorrupted data from corrupted inputs; (E) the reconstructed outputs (imputed data) are compared to the ground truth states for loss calculation and are decoded back to genotypes.
 
-## Genotype encoding
+### Genotype encoding
 
-Genotypes for all bi-allelic SNPs were converted to binary values representing the presence (1) or absence (0) of the reference allele A and alternative allele B, respectively, as shown in Equation 1.(1)xi=ifGi=[A,A]:                       xi=[1,0]ifGi=A,B:                       xi=1,1ifGi=B,A:                       xi=1,1ifGi=B,B:                       xi=0,1ifGi=null:                       xi=0,0
+Genotypes for all bi-allelic SNPs were converted to binary values representing the presence (1) or absence (0) of the reference allele A and alternative allele B, respectively, as shown in Equation 1.
+
+$$
+x_{i}=ifG_{i}=[A,A]:                       x_{i}=[1,0]ifG_{i}=A,B:                       x_{i}=1,1ifG_{i}=B,A:                       x_{i}=1,1ifG_{i}=B,B:                       x_{i}=0,1ifG_{i}=null:                       x_{i}=0,0
+$$
 
 where x is a vector containing the two allele presence input nodes to the autoencoder and their encoded allele presence values derived from the original genotype, G, of variant i. The output nodes of the autoencoder are similarly rescaled to 0–1 by a sigmoid function, split into three genotype outputs (homozygous reference, homozygous alternate, and heterozygous), and normalized using the Softmax function. The normalized outputs can also be regarded as probabilities and can be combined for the calculation of alternative allele dosage and as a measure of imputation quality. This representation is extensible to other classes of genetic variation, and allows for the use of probabilistic loss functions.
 
-## Training data, masking, and data augmentation
+### Training data, masking, and data augmentation
 
-## Training data
+#### Training data
 
 Whole-genome sequence data from the Haplotype Reference Consortium (HRC) was used for training and as the reference panel for comparison to HMM-based imputation (McCarthy et al., 2016). The dataset consists of 27,165 samples and 39,235,157 biallelic SNPs generated using whole-genome sequence data from 20 studies of predominantly European ancestry (HRC Release 1.1): 83.92% European, 2.33% East Asian, 1.63% Native American, 2.17% South Asian, 2.96% African, and 6.99% admixed ancestry individuals. Genetic ancestry was determined using continental population classification from the 1000 Genomes Phase3 v5 (1000 G) reference panel and a 95% cutoff using Admixture software (Alexander et al., 2009). Genotype imputation autoencoders were trained for all 510,442 unique SNPs observed in HRC on human chromosome 22. For additional comparisons, whole-genome sequence data from 31 studies available through the NHLBI Trans-Omics for Precision Medicine (TOPMed) program were used as an alternative reference panel for HMM-based imputation tools (Taliun et al., 2021). We downloaded Freeze 8 of TOPMed, which is the latest version with all consent groups genotyped across the same set of jointly called variants. GRCh38 TOPMed cohorts were converted to hg19 with Picard 2.25 (‘Picard toolkit’, 2019), and multi allelic SNPs removed with bcftools v.1.10.2 (Danecek et al., 2021). Any variants with missing genotypes were excluded as well, yielding a final reference panel for chr22 consisting of 73,586 samples and 11,089,826 biallelic SNPs. Since the ARIC and MESA cohorts are used for model selection and validation, they were excluded from the TOPMed reference panel. Relatedness analysis using the KING robust kinship estimator revealed significant data leakage boosting HMM-based imputation performance through individuals directly participating in the MESA and other TOPMed cohorts, as well as through numerous first- and second-degree familial relationships spanning MESA individuals and individuals in other TOPMed cohorts.
 
-## Validation and testing data
+#### Validation and testing data
 
 A balanced (50%:50% European and African genetic ancestry) subset of 796 whole genome sequences from the Atherosclerosis Risk in Communities cohort (ARIC) (Mou et al., 2018), was used for model validation and selection. The Wellderly (Erikson et al., 2016), Human Genome Diversity Panel (HGDP) (Cann et al., 2002), and Multi-Ethnic Study of Atherosclerosis (MESA) (Bild et al., 2002 ) cohorts were used for model testing. The Wellderly cohort consisted of 961 whole genomes of predominantly European genetic ancestry. HGDP consisted of 929 individuals across multiple ancestries: 11.84% European, 14.64% East Asian, 6.57% Native American, 10.98% African, and 55.97% admixed. MESA consisted of 5370 whole genomes across multiple ancestries: 27.62% European, 11.25% East Asian, 4.99% Native American, 5.53% African, and 50.61% admixed. MESA, Wellderly, and HGDP are all independent datasets, not used for autoencoder training, nor model selection, whereas HRC and ARIC were utilized for training and model selection, respectively.
 
 GRCh38 mapped cohorts (HGDP and MESA) were converted to hg19 using Picard v2.25 (Broad Institute, 2022). All other datasets were originally mapped and called against hg19. Multi-allelic SNPs, SNPS with >10% missingness, and SNPs not observed in HRC were removed with bcftools v1.10.2 (Danecek et al., 2021). Mock genotype array data was generated from these WGS cohorts by restricting genotypes to those present on commonly used genotyping arrays (Affymetrix 6.0, UKB Axiom, and Omni 1.5 M). For chromosome 22, intersection with HRC and this array-like masking respectively resulted in: 9025, 10,615, and 14,453 out of 306,812 SNPs observed in ARIC; 8630, 10,325, and 12,969 out of 195,148 SNPs observed in the Wellderly; 10,176, 11,086, and 14,693 out of 341,819 SNPs observed in HGDP; 9237, 10,428, and 13,677 out of 445,839 SNPs observed in MESA. All input genotypes from all datasets utilized in this work are unphased, and no pre-phasing was performed.
 
-## Data augmentation
+#### Data augmentation
 
 We employed two strategies for data augmentation – random variant masking and simulating further recombination with offspring formation. During training, random masking of input genotypes was performed at escalating rates, starting with a relatively low masking rate (80% of variants) that is gradually incremented in subsequent training rounds until up to only five variants remain unmasked per autoencoder. Masked variants are encoded as the null case in Equation 1. During finetuning we used sim1000G (Dimitromanolakis et al., 2019) to simulate of offspring formation using the default genetic map and HRC genomes as parents. A total of 30,000 offspring genomes were generated and merged with the original HRC dataset, for a total of 57,165 genomes.
 
-## Loss function
+### Loss function
 
-In order to account for the overwhelming abundance of rare variants, the accuracy of allele presence reconstruction was scored using an adapted version of focal loss (FL) (Lin et al., 2017), shown in Equation 2.(2)FL=-αt1-ptγ [xtlog⁡pt+1-xtlog⁡1-pt]
+In order to account for the overwhelming abundance of rare variants, the accuracy of allele presence reconstruction was scored using an adapted version of focal loss (FL) (Lin et al., 2017), shown in Equation 2.
+
+$$
+FL=-\alpha_{t}1-p_{t}^{\gamma} [x_{t}log⁡p_{t}+1-x_{t}log⁡1-p_{t}]
+$$
 
 where the classic cross entropy (shown as binary log loss in brackets) of the truth class (xt) predicted probability (pt) is weighted by the class imbalance factor αt and a modulating factor (1 - pt)γ. t represents the index of each allele in a genomic segment. The modulating factor is the standard focal loss factor with hyperparameter, γ, which amplifies the focal loss effect by down-weighting the contributions of well-classified alleles to the overall loss (especially abundant reference alleles for rare variant sites)(Lin et al., 2017). αt is an additional balancing hyperparameter set to the truth class frequency.
 
-This base focal loss function is further penalized and regularized to encourage simple and sparse models in terms of edge-weight and hidden layer activation complexity. These additional penalties result in our final loss function as shown in Equation 3.(3)SFL=−αt(1−pt)γ[xtlog⁡(pt)+(1−xt)log⁡(1−pt)]+βS(ρ||ρ^)+λ1‖W‖1+λ2‖W‖2
+This base focal loss function is further penalized and regularized to encourage simple and sparse models in terms of edge-weight and hidden layer activation complexity. These additional penalties result in our final loss function as shown in Equation 3.
 
-where W1 and W2 are the standard L1 and L2 norms of the autoencoder weight matrix (W), with their contributions mediated by the hyperparameters λ1 and λ2. S is a sparsity penalty, with its contribution mediated by the hyperparameter β, which penalizes deviation from a target hidden node activation set by the hyperparameter vs the observed mean activation ρ^ over a training batch j summed over total batches n, as shown in Equation 4:(4)S(ρ||ρ^)=∑j=1nρ∗log(ρρ^j)+(1−ρ)∗log(1−ρ1−ρ^j)
+$$
+SFL=−\alpha_{t}(1−p_{t})^{\gamma}[x_{t}log⁡(p_{t})+(1−x_{t})log⁡(1−p_{t})]+\betaS_{(ρ||ρ^)}+\lambda_{1}‖W‖_{1}+\lambda_{2}‖W‖_{2}
+$$
 
-## Genome tiling
+where $W_{1}$ and $W_{2}$ are the standard L1 and L2 norms of the autoencoder weight matrix (W), with their contributions mediated by the hyperparameters λ1 and λ2. S is a sparsity penalty, with its contribution mediated by the hyperparameter β, which penalizes deviation from a target hidden node activation set by the hyperparameter vs the observed mean activation $ρ^$ over a training batch j summed over total batches n, as shown in Equation 4:
+
+$$
+S_{(ρ||ρ^)}=\sum_{j=1}^{n}ρ∗log(\frac{ρ}{ρ^_{j}})+(1−ρ)∗log(\frac{1−ρ}{1−ρ^_{j}})
+$$
+
+### Genome tiling
 
 All model training tasks were distributed across a diversified set of NVIDIA graphical processing units (GPUs) with different video memory limits: 5 x Titan Vs (12 GB), 8x A100s (40 GB), 60x V100s (32 GB). Given computational complexity and GPU memory limitations, individual autoencoders were designed to span approximately independent genomic segments with boundaries defined by computationally identified recombination hotspots (Figure 1E). These segments were defined using an adaptation of the LDetect algorithm (Berisa and Pickrell, 2016). First, we calculated a n x n matrix of pairwise SNP correlations using all common genetic variation (≥0.5% minor allele frequency) from HRC. Correlation values were thresholded at 0.45, which is the threshold that returns the minimum number of segments spanning chromosome 22 with an average size per segment that fits into the video memory of GPUs. While developing the tiling algorithm, we tested lower thresholds, which made the segments smaller and more abundant, and thus made the GPU memory workload less efficient (e.g. many tiles resulted in many autoencoders per GPU, which thus caused a CPU-GPU communication overhead). Due to the obstacles related to computational inefficiency, CPU-GPU communication overhangs, and GPU memory limits, we did not proceed with model training on segments generated with other correlation thresholds. For each SNP, we calculated a box count of all pairwise SNP correlations spanning 500 common SNPs upstream and downstream of the index SNP. This moving box count quantifies the overall local LD strength centered at each SNP. Local minima in this moving box count were used to split the genome into approximately independent genomic segments of two types – large segments of high LD interlaced with short segments of weak LD corresponding to recombination hotspot regions. Individual autoencoders were designed to span the entirety of a single high LD segment plus its adjacent upstream and downstream weak LD regions. Thus, adjacent autoencoders overlap at their weak LD ends. If an independent genomic segment exceeded the threshold number of SNPs amenable to deep learning given GPU memory limitations, internal local minima within the high LD regions were used to split the genomic segments further to a maximum of 6000 SNPs per autoencoder. Any remaining genomic segments still exceeding 6000 SNPs were further split into 6000 SNP segments with large overlaps of 2500 SNPs given the high degree of informative LD split across these regions. This tiling process resulted in 256 genomic segments spanning chromosome 22: 188 independent LD segments, 32 high LD segments resulting from internal local minima splits, and 36 segments further split due to GPU memory limitations.
 
-## Hyperparameter initialization and grid search
+### Hyperparameter initialization and grid search
 
 We first used a random grid search approach to define initial hyperparameter combinations producing generally accurate genotype imputation results. The hyperparameters and their potential starting values are listed in Table 1. This coarse-grain grid search was performed on all genomic segments of chromosome 22 (256 genomic segments), each tested with 100 randomly selected hyperparameter combinations per genomic segment, with a batch size of 256 samples, training for 500 epochs without any stop criteria, and validating on an independent dataset (ARIC). To evaluate the performance of each hyperparameter combination, we calculated the average coefficient of determination (r-squared) comparing the predicted and observed alternative allele dosages per variant. Concordance and F1-score were also calculated to screen for anomalies but were not ultimately used for model selection.
 
-## Hyperparameter tuning
+**Table 1.**
+ Description and values of hyperparameters tested in grid search.λ1: scaling factor for Least Absolute Shrinkage and Selection Operator (LASSO or L1) regularization; λ2: scaling factor for Ridge (L2) regularization; β: scaling factor for sparsity penalty described in Equation 4; ρ: target hidden layer activation described in Equation 4; Activation function type: defines how the output of a hidden neuron will be computed given a set of inputs; Learning rate: step size at each learning iteration while moving toward the minimum of the loss function; γ: amplifying factor for focal loss described in Equation 3; Optimizer type: algorithms utilized to minimize the loss function and update the model weights in backpropagation; Loss type: algorithms utilized to calculate the model error (Equation 2); Number of hidden layers: how many layers of artificial neurons to be implemented between input layer and output layer; Hidden layer size ratio: scaling factor to resize the next hidden layer with reference to the size of Its previous layer; Learning rate decay ratio: scaling factor for updating the learning rate value on every 500 epochs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Hyperparameter description</th>
+      <th>Tested values (coarse-grid search)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>λ1 for L1 regularization</td>
+      <td>[1e-3, 1e-4, 1e-5, 1e-6, 1e-1, 1e-2, 1e-7, 1e-8]</td>
+    </tr>
+    <tr>
+      <td>λ2 for L2 regularization</td>
+      <td>[1e-3, 1e-4, 1e-5, 1e-6, 1e-1, 1e-2, 1e-7, 1e-8]</td>
+    </tr>
+    <tr>
+      <td>Sparsity scaling factor (β)</td>
+      <td>[0, 0.001, 0.01, 0.05, 1, 5, 10]</td>
+    </tr>
+    <tr>
+      <td>Target average hidden layer activation (ρ)</td>
+      <td>[0.001, 0.004, 0.007, 0.01, 0.04, 0.07, 0.1, 0.4, 0.7, 1.0]</td>
+    </tr>
+    <tr>
+      <td>Activation function type</td>
+      <td>[‘sigmoid’, ‘tanh’, ‘relu’, ‘softplus’]</td>
+    </tr>
+    <tr>
+      <td>Learning rate</td>
+      <td>[0.000001, 0.00001, 0.0001, 0.001, 0.01, 0.1, 1, 10, 100]</td>
+    </tr>
+    <tr>
+      <td>Amplifying factor for focal loss (γ)</td>
+      <td>[0, 0.5, 1, 2, 3, 5]</td>
+    </tr>
+    <tr>
+      <td>Optimizer type</td>
+      <td>[‘Adam’, ‘RMS Propagation’, ‘Gradient Descent’]</td>
+    </tr>
+    <tr>
+      <td>Loss type</td>
+      <td>[‘Binary Cross Entropy’, ‘Custom Focal Loss’]</td>
+    </tr>
+    <tr>
+      <td>Number of hidden layers</td>
+      <td>[1, 2, 4, 6, 8]</td>
+    </tr>
+    <tr>
+      <td>Hidden layer size ratio</td>
+      <td>[0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]</td>
+    </tr>
+    <tr>
+      <td>Learning rate decay ratio</td>
+      <td>[ 0.0, 0.25, 0.5, 0.75, 0.95, 0.99, 0.999, 0.9999]</td>
+    </tr>
+  </tbody>
+</table>
+
+### Hyperparameter tuning
 
 In order to avoid local optimal solutions and reduce the hyperparameter search space, we used an ensemble-based machine learning approach (Extreme Gradient Boosting–XGBoost) to predict the expected performance (r-squared) of each hyperparameter combination per genomic segment using the results of the coarse-grid search and predictive features calculated for each genomic segment. These features include the number of variants, average recombination rate and average pairwise Pearson correlation across all SNPs, proportion of rare and common variants across multiple minor allele frequency (MAF) bins, number of principal components necessary to explain at least 90% of variance, and the total variance explained by the first two principal components. The observed accuracies of the coarse-grid search, numbering 25,600 training inputs, were used to predict the accuracy of 500,000 new hyperparameter combinations selected from Table 1 without training. All categorical predictors (activation function name, optimizer type, loss function type) were one-hot encoded. The model was implemented using XGBoost package v1.4.1 in Python v3.8.3 with 10-fold cross-validation and default settings.
 
@@ -90,53 +169,510 @@ We then ranked all hyperparameter combinations by their predicted performance an
 
 This process results in 256 unique autoencoders spanning the genomic segments of chromosome 22. Each genomic segment consists of a different number of input variables (genetic variants), sparsity, and correlation structure. Thus, 256 unique autoencoder models span the entirety of chromosome 22 (e.g.: each autoencoder has different edge weights, number of layers, loss function, as well as regularization and optimization parameters).
 
-## Performance testing and comparisons
+### Performance testing and comparisons
 
 Performance was compared to Minimac4 (Das et al., 2016), Beagle5 (Browning et al., 2018), and Impute5 (Rubinacci et al., 2020) using default parameters. We utilized HRC as reference panel for the HMM-based imputation tools, which is the same dataset used for training the autoencoders, and we applied the same quality control standards for both HMM-based and autoencoder-based imputation. We also provide additional comparisons to HMM-based imputation using the TOPMed cohort. No post-imputation quality control was applied. Population level reconstruction accuracy is quantified by measuring r-squared across multiple strata of data: per genomic segment, at whole chromosome level, and stratified across multiple minor allele frequency bins: [0.001–0.005], [0.005–0.01], [0.01–0.05], [0.05–0.1], [0.1–0.2], [0.2–0.3], [0.3–0.4], [0.4–0.5]. While r-squared is our primary comparison metric, sample-level and population-level model performance is also evaluated with concordance and the F1-score. Wilcoxon rank-sum testing was used to assess the significance of accuracy differences observed. Spearman correlations were used to evaluate the relationships between genomic segment features and observed imputation accuracy differences. Standard errors for per variant imputation accuracy r-squared is equal or less than 0.001 where not specified. Performance is reported only for the independent test datasets (Wellderly, MESA, and HGDP). Note that MESA ultimately is not independent of the TOPMed cohort when used for HMM-based imputation.
 
 We used the MESA cohort for inference runtime comparisons. Runtime was determined using the average and standard error of three imputation replicates. Two hardware configurations were used for the tests: (1) a low-end environment: 16-core Intel Xeon CPU (E5-2640 v2 2.00 GHz), 250 GB RAM, and one GPU (NVIDIA GTX 1080); (2) a high-end environment: 24-Core AMD CPU (EPYC 7352 2.3 GHz), 250 GB RAM, using one NVIDIA A100 GPU. We report computation time only, input/output (I/O) reading/writing times are excluded as separately optimized functions. Since the computational burden of training the models remains on the developer side, the runtime results refer to the task of imputing the missing genotypes given a pre-trained autoencoder set.
 
-## Data availability
+### Data availability
 
 The data that support the findings of this study are available from dbGAP and European Genome-phenome Archive (EGA), but restrictions apply to the availability of these data, which were used under ethics approval for the current study, and so are not openly available to the public. The computational pipeline for autoencoder training and validation is available at https://github.com/TorkamaniLab/Imputation_Autoencoder/tree/master/autoencoder_tuning_pipeline; Dias et al., 2022. The python script for calculating imputation accuracy is available at https://github.com/TorkamaniLab/imputation_accuracy_calculator; Dias, 2021. Instructions on how to access the unique information on the parameters and hyperparameters of each one of the 256 autoencoders is shared through our source code repository at https://github.com/TorkamaniLab/imputator_inference, copy archived at swh:1:rev:2fbd203acf8aaf320a520c6374d6f4d57f068a7c; Dias, 2022. We also shared the pre-trained autoencoders and instructions on how to use them for imputation at https://github.com/TorkamaniLab/imputator_inference; Dias, 2022.
 
-## Imputation data format
+### Imputation data format
 
 The imputation results are exported in variant calling format (VCF) containing the imputed genotypes and imputation quality scores in the form of class probabilities for each one of the three possible genotypes (homozygous reference, heterozygous, and homozygous alternate allele). The probabilities can be used for quality control of the imputation results.
 
 ## Results
 
-## Untuned performance and model optimization
+### Untuned performance and model optimization
 
 A preliminary comparison of the best performing autoencoder per genomic segment vs HMM-based imputation was made after the initial grid search (Minimac4: Figure 2, Beagle5 and Eagle5: Figure 2—figure supplements 1–2). Untuned autoencoder performance was generally inferior to all tested HMM-based methods except when tested on the European ancestry-rich Wellderly dataset when masked using the Affymetrix 6.0 and UKB Axiom marker sets, but not Omni 1.5 M markers. HMM-based imputation was consistently superior across the more ancestrally diverse test datasets (MESA and HGDP) (two proportion test, p≤8.77 × 10–6). Overall, when performance across genomic segments, test datasets, and test array marker sets was combined, the autoencoders exhibited an average r-squared per variant of 0.352±0.008 in reconstruction of WGS ground truth genotypes versus an average r-squared per variant of 0.374±0.007, 0.364±0.007, and 0.357±0.007 for HMM-based imputation methods (Minimac4, Beagle5, and Impute5, respectively) (Table 2). This difference was statistically significant only relative to Minimac4 (Minimac4: Wilcoxon rank-sum test p=0.037, Beagle5 and Eagle5: p≥0.66).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig2-v2.jpg)
+
+**Figure 2.:** Minimac4 and untuned autoencoders were tested across three independent datasets–- MESA (top), Wellderly (middle), and HGDP (bottom) and across three genotyping array platforms–- Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (average r-squared per variant) for an individual genomic segment relative to its WGS-based ground truth. The numerical values presented on the left side and below the identity line (dashed line) indicate the number of genomic segments in which Minimac4 outperformed the untuned autoencoder (left of identity line) and the number of genomic segments in which the untuned autoencoder surpassed Minimac4 (below the identity line). Statistical significance was assessed through two-proportion Z-test p-values.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Beagle5 and untuned autoencoders were tested across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (average r-squared per variant) for an individual genomic segment relative to its WGS-based ground truth. The numerical values presented on the left side and below the identity line (dashed line) indicate the number of genomic segments in which Beagle5 outperformed the untuned autoencoder (left of identity line) and the number of genomic segments in which the untuned autoencoder surpassed Beagle5 (below the identity line). Statistical significance was assessed through two-proportion Z-test p-values.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Impute5 and untuned autoencoders were tested across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (average r-squared per variant) for an individual genomic segment relative to its WGS-based ground truth. The numerical values presented on the left side and below the identity line (dashed line) indicate the number of genomic segments in which Impute5 outperformed the untuned autoencoder (left of identity line) and the number of genomic segments in which the untuned autoencoder surpassed Impute5 (below the identity line). Statistical significance was assessed through two-proportion Z-test p-values.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Spearman correlations (ρ) between genomic segment features and autoencoder performance metrics are presented. An “X” denotes Spearman correlations that are not statistically significant (p>0.05). The performance metrics include the mean validation accuracy of Minimac4 and autoencoder (R2_AE_MINUS_MINIMAC), the autoencoder’s improvement in accuracy observed after offspring formation (AE_IMPROVEMENT_SIM) and the autoencoder’s improvement in accuracy after fine tuning of hyperparameters (AE_IMPROVEMENT_TUNING). The genomic features include the total number of variants per genomic segment in HRC (NVAR_HRC), proportion of rare variants at MAF ≤0.5% threshold (RARE_VAR_PROP), proportion of common variants at MAF >0.5% threshold (COMMON_VAR_PROP), number of components needed to explain at least 90% of variance after running Principal Component Analysis (NCOMP), proportion of heterozygous genotypes (PROP_HET), proportion of unique haplotypes (PROP_UNIQUE_HAP) and diplotypes (PROP_UNIQUE_DIP), sum of ratios of explained variance from first two (EXP_RATIO_C1_C2) and three (EXP_RATIO_C1_C2_C3) components from Principal Component Analysis, recombination per variant per variant (REC_PER_SITE), mean pairwise correlation across all variants in each genomic segment (MEAN_LD), mean MAF (MEAN_MAF), GC content of reference alleles (GC_CONT_REF), GC content of alternate alleles (GC_CONT_ALT).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** We developed an ensemble-based machine learning approach (Extreme Gradient Boosting - XGBoost) to predict the expected performance (r-squared) of each hyperparameter combination per genomic segment using the results of the coarse-grid search and predictive features calculated for each genomic segment (see Materials and methods). We plot the observed accuracy of trained autoencoders versus the accuracy predicted by the XGBoost model after 10-fold cross-validation. Each subplot shows one iteration of the 10-fold validation process and its respective Pearson correlation between the predicted and observed accuracy values in the ARIC validation dataset.
+
+**Table 2.**
+ Performance comparisons between untuned autoencoder (AE) and HMM-based imputation tools (Minimac4, Beagle5, and Impute5).Average r-squared per variant was extracted from each genomic segment of chromosome 22. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the reference tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MESA</th>
+      <th>Wellderly</th>
+      <th>HGDP</th>
+      <th>Affymetrix 6.0</th>
+      <th>UKB Axiom</th>
+      <th>Omni 1.5 M</th>
+      <th>Combined</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AE (untuned)</td>
+      <td>0.303±0.008</td>
+      <td>0.470±0.009</td>
+      <td>0.285±0.006</td>
+      <td>0.339±0.008</td>
+      <td>0.356±0.007</td>
+      <td>0.362±0.008</td>
+      <td>0.352±0.008</td>
+    </tr>
+    <tr>
+      <td>Minimac4</td>
+      <td>0.337±0.007*</td>
+      <td>0.471±0.008</td>
+      <td>0.314±0.006**</td>
+      <td>0.352±0.008</td>
+      <td>0.370±0.006</td>
+      <td>0.400±0.007**</td>
+      <td>0.374±0.007*</td>
+    </tr>
+    <tr>
+      <td>Beagle5</td>
+      <td>0.336±0.007*</td>
+      <td>0.460±0.008</td>
+      <td>0.296±0.005</td>
+      <td>0.342±0.007</td>
+      <td>0.367±0.006</td>
+      <td>0.384±0.007*</td>
+      <td>0.364±0.007</td>
+    </tr>
+    <tr>
+      <td>Impute5</td>
+      <td>0.326±0.007*</td>
+      <td>0.458±0.008</td>
+      <td>0.289±0.006</td>
+      <td>0.336±0.008</td>
+      <td>0.354±0.006</td>
+      <td>0.383±0.008*</td>
+      <td>0.358±0.007</td>
+    </tr>
+  </tbody>
+</table>
 
 In order to understand the relationship between genomic segment features, hyperparameter values, and imputation performance, we calculated predictive features (see Materials and methods) for each genomic segment and determined their Spearman correlation with the differences in r-squared observed for the autoencoder vs Minimac4 (Figure 2—figure supplement 3). We observed that the autoencoder had superior performance when applied to the genomic segments with the most complex LD structures: those with larger numbers of observed unique haplotypes, unique diplotypes, and heterozygosity, as well as high average MAF, and low average pairwise Pearson correlation across all SNPs (average LD) (Spearman correlation ρ≥0.22, p≤9.8 × 10–04). Similarly, we quantified genomic segment complexity by the proportion of variance explained by the first two principal components as well as the number of principal components needed to explain at least 90% of the variance of HRC genotypes from each genomic segment. Concordantly, superior autoencoder performance was associated with a low proportion explained by the first two components and positively correlated with the number of components required to explained 90% of variance (Spearman ρ≥0.22, p≤8.3 × 10–04). These observations, with predictive features determined in the HRC training dataset and performance determined in the ARIC validation dataset, informed our tuning strategy.
 
 We then used the genomic features significantly correlated with imputation performance in the ARIC validation dataset to predict the performance of and select the hyperparameter values to advance to fine-tuning. An ensemble model inference approach was able to predict the genomic segment-specific performance of hyperparameter combinations with high accuracy (Figure 2—figure supplement 4, mean r-squared=0.935 ± 0.002 of predicted vs observed autoencoders accuracies via 10-fold cross validation). The top 10 best performing hyperparameter combinations were advanced to fine-tuning (Table 3). Autoencoder tuning with simulated offspring formation was then executed as described in Materials and methods.
 
-## Tuned performance
+**Table 3.**
+ Top 10 best performing hyperparameter combinations that advanced to fine-tuning.See Materials and methods and Table 1 for a detailed description of the hyperparameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>λ1</th>
+      <th>λ2</th>
+      <th>β</th>
+      <th>ρ</th>
+      <th>Activation</th>
+      <th>Learn rate</th>
+      <th>γ</th>
+      <th>Optimizer</th>
+      <th>Loss type</th>
+      <th>Hidden layers</th>
+      <th>Size ratio</th>
+      <th>Decay</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>tanh</td>
+      <td>1.0*10–4</td>
+      <td>0</td>
+      <td>adam</td>
+      <td>CE</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>sigmoid</td>
+      <td>1.0*10–4</td>
+      <td>1</td>
+      <td>adam</td>
+      <td>CE</td>
+      <td>2</td>
+      <td>0.9</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0.5</td>
+      <td>sigmoid</td>
+      <td>1.0*10–1</td>
+      <td>4</td>
+      <td>adam</td>
+      <td>CE</td>
+      <td>2</td>
+      <td>0.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.005</td>
+      <td>relu</td>
+      <td>1.0*10–1</td>
+      <td>4</td>
+      <td>adam</td>
+      <td>FL</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0.01</td>
+      <td>relu</td>
+      <td>1.0*10–5</td>
+      <td>5</td>
+      <td>adam</td>
+      <td>FL</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0.01</td>
+      <td>0.1</td>
+      <td>leakyrelu</td>
+      <td>1.0*10–5</td>
+      <td>0</td>
+      <td>adam</td>
+      <td>FL</td>
+      <td>8</td>
+      <td>0.9</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>tanh</td>
+      <td>1.0*10–4</td>
+      <td>0</td>
+      <td>adam</td>
+      <td>CE</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1.0*10–8</td>
+      <td>0.001</td>
+      <td>0.05</td>
+      <td>relu</td>
+      <td>1.0*10–5</td>
+      <td>4</td>
+      <td>adam</td>
+      <td>CE</td>
+      <td>8</td>
+      <td>0.6</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.01</td>
+      <td>relu</td>
+      <td>1.0*10–1</td>
+      <td>5</td>
+      <td>adam</td>
+      <td>FL</td>
+      <td>8</td>
+      <td>0.9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>tanh</td>
+      <td>1.0*10–3</td>
+      <td>5</td>
+      <td>adam</td>
+      <td>CE</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.95</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tuned performance
 
 After tuning, autoencoder performance surpassed HMM-based imputation performance across all imputation methods, independent test datasets, and genotyping array marker sets. At a minimum, autoencoders surpassed HMM-based imputation performance in >62% of chromosome 22 genomic segments (two proportion test p=1.02 × 10–11) (Minimac4: Figure 3, Beagle5 and Eagle5: Figure 3—figure supplements 1–2). Overall, the optimized autoencoders exhibited superior performance with an average r-squared of 0.395±0.007 vs 0.374±0.007 for Minimac4 (Wilcoxon rank sum test p=0.007), 0.364±0.007 for Beagle5 (Wilcoxon rank sum test p=1.53*10–4), and 0.358±0.007 for Impute5 (Wilcoxon rank sum test p=2.01*10–5) (Table 4). This superiority was robust to the marker sets tested, with the mean r-squared per genomic segment for autoencoders being 0.373±0.008, 0.399±0.007, and 0.414±0.008 vs 0.352±0.008, 0.370±0.006, and 0.400±0.007 for Minimac4 using Affymetrix 6.0, UKB Axiom, and Omni 1.5 M marker sets (Wilcoxon rank-sums test P-value = 0.029, 1.99*10–4, and 0.087, respectively). Detailed comparisons to Beagle5 and Eagle5 are presented in Figure 3—figure supplements 1–2.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig3-v2.jpg)
+
+**Figure 3.:** Minimac4 and tuned autoencoders were validated across three independent datasets–- MESA (top), Wellderly (middle), and HGDP (bottom) and across three genotyping array platforms–- Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (average r-squared per variant) for an individual genomic segment relative to its WGS-based ground truth. The numerical values presented on the left side and below the identity line (dashed line) indicate the number of genomic segments in which Minimac4 outperformed the untuned autoencoder (left of identity line) and the number of genomic segments in which the untuned autoencoder surpassed Minimac4 (below the identity line). Statistical significance was assessed through two-proportion Z-test p-values.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Beagle5 and tuned autoencoders were validated across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (average r-squared per variant) for an individual genomic segment relative to its WGS-based ground truth. The numerical values presented on the left side and below the identity line (dashed line) indicate the number of genomic segments in which Beagle5 outperformed the untuned autoencoder (left of identity line) and the number of genomic segments in which the untuned autoencoder surpassed Beagle5 (below the identity line). Statistical significance was assessed through two-proportion Z-test p-values.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Impute5 and tuned autoencoders were validated across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (average r-squared per variant) for an individual genomic segment relative to its WGS-based ground truth. The numerical values presented on the left side and below the identity line (dashed line) indicate the number of genomic segments in which Impute5 outperformed the untuned autoencoder (left of identity line) and the number of genomic segments in which the untuned autoencoder surpassed Impute5 (below the identity line). Statistical significance was assessed through two-proportion Z-test p-values.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Minimac4 and tuned and untuned autoencoders (AE) were tested across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). ‘Many’ vs ‘Few’ haplotypes are defined by splitting genomic segments into those with greater than vs less than the median number of unique haplotypes per genomic segment. We applied Wilcoxon rank-sum tests to compare the untuned and tuned autoencoder to Minimac4. The validation datasets consist of: (A) MESA Affymetrix 6.0; (B) MESA UKB Axiom; (C) MESA Omni 1.5 M; (D) Wellderly Affymetrix 6.0; (E) Wellderly UKB Axiom; (F) Wellderly Omni 1.5 M; (G) HGDP Affymetrix 6.0; (H) HGDP UKB Axiom; (I) HGDP Omni 1.5 M.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Minimac4 and tuned and untuned autoencoders (AE) were tested across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) - and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). ‘Many’ vs ‘Few’ diplotypes are defined by splitting genomic segments into those with greater than vs less than the median number of unique diplotypes per genomic segment. We applied Wilcoxon rank-sum tests to compare the untuned and tuned autoencoder to Minimac4. The validation datasets consist of: (A) MESA Affymetrix 6.0; (B) MESA UKB Axiom; (C) MESA Omni 1.5 M; (D) Wellderly Affymetrix 6.0; (E) Wellderly UKB Axiom; (F) Wellderly Omni 1.5 M; (G) HGDP Affymetrix 6.0; (H) HGDP UKB Axiom; (I) HGDP Omni 1.5 M.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Minimac4 and tuned and untuned autoencoders (AE) were tested across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) - and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). ‘High’ vs ‘Low’ LD is defined by splitting genomic segments into those with greater than vs less than the average pairwise LD strength per genomic segment. We applied Wilcoxon rank-sum tests to compare the untuned and tuned autoencoder to Minimac4. The validation datasets consist of: (A) MESA Affymetrix 6.0; (B) MESA UKB Axiom; (C) MESA Omni 1.5 M; (D) Wellderly Affymetrix 6.0; (E) Wellderly UKB Axiom; (F) Wellderly Omni 1.5 M; (G) HGDP Affymetrix 6.0; (H) HGDP UKB Axiom; (I) HGDP Omni 1.5 M.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Minimac4 and tuned and untuned autoencoders (AE) were tested across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) - and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). ‘High’ vs ‘Low’ data complexity is defined by splitting genomic segments into those with greater than vs less than the median proportion of variance explained by first two components of Principal Component Analysis per genomic segment (PCA C1+C2). We applied Wilcoxon rank-sum tests to compare the untuned and tuned autoencoder to Minimac4. The validation datasets consist of: (A) MESA Affymetrix 6.0; (B) MESA UKB Axiom; (C) MESA Omni 1.5 M; (D) Wellderly Affymetrix 6.0; (E) Wellderly UKB Axiom; (F) Wellderly Omni 1.5 M; (G) HGDP Affymetrix 6.0; (H) HGDP UKB Axiom; (I) HGDP Omni 1.5 M.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Minimac4 and tuned and untuned autoencoders (AE) were tested across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) - and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). ‘High’ vs ‘Low’ recombination rate is defined by splitting genomic segments in those with greater than vs less than the median recombination rate per variant per genomic segment. We applied Wilcoxon rank-sum tests to compare the untuned and tuned autoencoder to Minimac4. The validation datasets consist of: (A) MESA Affymetrix 6.0; (B) MESA UKB Axiom; (C) MESA Omni 1.5 M; (D) Wellderly Affymetrix 6.0; (E) Wellderly UKB Axiom; (F) Wellderly Omni 1.5 M; (G) HGDP Affymetrix 6.0; (H) HGDP UKB Axiom; (I) HGDP Omni 1.5 M.
+
+**Table 4.**
+ Performance comparisons between tuned autoencoder (AE) and HMM-based imputation tools (Minimac4, Beagle5, and Impute5).Average r-squared per variant was extracted from each genomic segment of chromosome 22. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the reference untuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MESA</th>
+      <th>Wellderly</th>
+      <th>HGDP</th>
+      <th>Affymetrix 6.0</th>
+      <th>UKB Axiom</th>
+      <th>Omni 1.5 M</th>
+      <th>Combined</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AE (tuned)</td>
+      <td>0.355±0.007</td>
+      <td>0.505±0.008</td>
+      <td>0.327±0.006</td>
+      <td>0.373±0.008</td>
+      <td>0.399±0.007</td>
+      <td>0.414±0.008</td>
+      <td>0.396±0.007</td>
+    </tr>
+    <tr>
+      <td>AE (untuned)</td>
+      <td>0.303±0.008***</td>
+      <td>0.470±0.009*</td>
+      <td>0.285±0.006***</td>
+      <td>0.339±0.008*</td>
+      <td>0.356±0.007***</td>
+      <td>0.362±0.008***</td>
+      <td>0.352±0.008***</td>
+    </tr>
+    <tr>
+      <td>Minimac4</td>
+      <td>0.337±0.007*</td>
+      <td>0.471±0.008**</td>
+      <td>0.314±0.006</td>
+      <td>0.352±0.008*</td>
+      <td>0.370±0.006**</td>
+      <td>0.400±0.007</td>
+      <td>0.374±0.007*</td>
+    </tr>
+    <tr>
+      <td>Beagle5</td>
+      <td>0.336±0.007*</td>
+      <td>0.460±0.008***</td>
+      <td>0.296±0.005***</td>
+      <td>0.342±0.007**</td>
+      <td>0.367±0.006***</td>
+      <td>0.384±0.007**</td>
+      <td>0.364±0.007**</td>
+    </tr>
+    <tr>
+      <td>Impute5</td>
+      <td>0.326±0.007*</td>
+      <td>0.458±0.008***</td>
+      <td>0.289±0.006***</td>
+      <td>0.336±0.008**</td>
+      <td>0.354±0.006***</td>
+      <td>0.383±0.008**</td>
+      <td>0.358±0.007***</td>
+    </tr>
+  </tbody>
+</table>
+
 Tuning improved performance of the autoencoders across all genomic segments, generally improving the superiority of autoencoders relative to HMM-based approaches in genomic segments with complex haplotype structures while equalizing performance relative to HMM-based approaches in genomic segments with more simple LD structures (as described in Materials and methods, by the number of unique haplotypes: Figure 3—figure supplement 3, diplotypes: Figure 3—figure supplement 4, average pairwise LD: Figure 3—figure supplement 5, proportion variance explained: Figure 3—figure supplement 6). Concordantly, genomic segments with higher recombination rates exhibited the largest degree of improvement with tuning (Figure 3—figure supplement 7). Use of the augmented reference panel did not improve HMM-based imputation, having no influence on Minimac4 performance (original overall r-squared of 0.374±0.007 vs 0.363±0.007 after augmentation, Wilcoxon rank-sum test p=0.0917), and significantly degrading performance of Beagle5 and Impute5 (original r-squared of 0.364±0.007 and 0.358±0.007 vs 0.349±0.006 and 0.324±0.007 after augmentation, p=0.026 and p=1.26*10–4, respectively). Summary statistics for these comparisons are available in Supplementary file 1.
 
-## Overall chromosome 22 imputation accuracy
+### Overall chromosome 22 imputation accuracy
 
 After merging the results from all genomic segments, the whole chromosome accuracy of autoencoder-based imputation remained superior to all HMM-based imputation tools, across all independent test datasets, and all genotyping array marker sets (Wilcoxon rank-sums test p≤5.55 × 10–67). The autoencoder’s mean r-squared per variant ranged from 0.363 for HGDP to 0.605 for the Wellderly vs 0.340–0.557 for Minimac4, 0.326–0.549 for Beagle5, and 0.314–0.547 for Eagle5, respectively. Detailed comparisons are presented in in Table 5 and Supplementary file 2.
 
+**Table 5.**
+ Whole chromosome level comparisons between autoencoder (AE) and HMM-based imputation tools (Minimac4, Beagle5, and Impute5).Average r-squared per variant was extracted at whole chromosome level. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the reference tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001. Standard errors that are equal or less than 0.001 are not shown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">MESA</th>
+      <th colspan="3">Wellderly</th>
+      <th colspan="3">HGDP</th>
+    </tr>
+    <tr>
+      <th>Affymetrix 6.0</th>
+      <th>UKB Axiom</th>
+      <th>Omni 1.5 M</th>
+      <th>Affymetrix 6.0</th>
+      <th>UKB Axiom</th>
+      <th>Omni 1.5 M</th>
+      <th>Affymetrix 6.0</th>
+      <th>UKB Axiom</th>
+      <th>Omni 1.5 M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AE (tuned)</td>
+      <td>0.410</td>
+      <td>0.395</td>
+      <td>0.452</td>
+      <td>0.537</td>
+      <td>0.605</td>
+      <td>0.586</td>
+      <td>0.363</td>
+      <td>0.364</td>
+      <td>0.392</td>
+    </tr>
+    <tr>
+      <td>Minimac4</td>
+      <td>0.390***</td>
+      <td>0.364***</td>
+      <td>0.436***</td>
+      <td>0.500***</td>
+      <td>0.557***</td>
+      <td>0.551***</td>
+      <td>0.350***</td>
+      <td>0.340***</td>
+      <td>0.385***</td>
+    </tr>
+    <tr>
+      <td>Beagle5</td>
+      <td>0.383***</td>
+      <td>0.379***</td>
+      <td>0.420***</td>
+      <td>0.484***</td>
+      <td>0.549***</td>
+      <td>0.534***</td>
+      <td>0.326***</td>
+      <td>0.328***</td>
+      <td>0.353***</td>
+    </tr>
+    <tr>
+      <td>Impute5</td>
+      <td>0.384***</td>
+      <td>0.356***</td>
+      <td>0.429***</td>
+      <td>0.485***</td>
+      <td>0.547***</td>
+      <td>0.539***</td>
+      <td>0.328***</td>
+      <td>0.314***</td>
+      <td>0.359***</td>
+    </tr>
+  </tbody>
+</table>
+
 Further, when imputation accuracy is stratified by MAF bins, the autoencoders maintain superiority across all MAF bins by nearly all test dataset and genotyping array marker sets (Figure 4, and Supplementary file 3). Concordantly, autoencoder imputation accuracy is similarly superior when measured with F1-scores (Figure 4—figure supplement 1) and concordance (Figure 4—figure supplement 2), though these metrics are less sensitive at capturing differences in rare variant imputation accuracy.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig4-v2.jpg)
+
+**Figure 4.:** Autoencoder-based (red) and HMM-based (Minimac4 (blue), Beagle5 (green), and Impute5 (purple)) imputation accuracy was validated across three independent datasets–- MESA (top), Wellderly (middle), and HGDP (bottom) and across three genotyping array platforms–- Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (average r-squared per variant) relative to WGS-based ground truth across MAF bins. Error bars represent standard errors. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001, ns represents non-significant p-values.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Autoencoder-based (red) and HMM-based (Minimac4 (blue), Beagle5 (green), and Impute5 (purple)) imputation accuracy was validated across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) - and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (mean F1-score per variant) relative to WGS-based ground truth across MAF bins. Error bars represent standard errors. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001, ns represents non-significant p-values. Please note that F1 scores are high for rare variations given the high degree of class imbalance, most alternative alleles are not present for rare variants, leading to high accuracy in the negative class. R-squared depicted in Figure 4 provides a more accurate picture of balanced class accuracy.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Autoencoder-based (red) and HMM-based (Minimac4 (blue), Beagle5 (green), and Impute5 (purple)) imputation accuracy was validated across three independent datasets - MESA (top), Wellderly (middle), and HGDP (bottom) - and across three genotyping array platforms - Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (mean concordance per variant) relative to WGS-based ground truth across MAF bins. Error bars represent standard errors. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001, ns represents non-significant p-values. Please note that F1 scores are high for rare variations given the high degree of class imbalance, most alternative alleles are not present for rare variants, leading to high accuracy in the negative class. R-squared depicted in Figure 4 provides a more accurate picture of balanced class accuracy.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Autoencoder-based imputation using the HRC reference panel (red) was compared to HMM-based (Minimac4 (blue), Beagle5 (green), and Impute5 (purple)) imputation accuracy using the upgraded TOPMed cohort. Accuracy was determined across three datasets–- MESA (top – not independent), Wellderly (middle - independent), and HGDP (bottom - independent) and across three genotyping array platforms–- Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right). Each data point represents the imputation accuracy (average r-squared per variant) relative to WGS-based ground truth across MAF bins. Error bars represent standard errors. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001, ns represents non-significant p-values.
 
 When we upgraded the reference panel of the HMM-based tools with the more expansive TOPMed cohort, the superior performance of the HRC-trained autoencoder was still sustained across all datasets except for MESA (Figure 4—figure supplement 3). Given that MESA is a sub-cohort of the TOPMed cohort, we evaluated the possibility of residual data leakage after the removal of MESA from the TOPMed cohort and found that 44 MESA individuals were duplicated in other TOPMed cohorts, 182 MESA individuals had a first degree relative in other TOPMed cohorts, and >92% of MESA individuals had at least one second degree relative in other TOPMed cohorts, resulting in improved imputation performance. Notably, across the most diverse and truly independent HGDP validation dataset, the autoencoder displays superior performance despite only being exposed to training on the less diverse HRC reference cohort.
 
-## Ancestry-specific chromosome 22 imputation accuracy
+### Ancestry-specific chromosome 22 imputation accuracy
 
 Finally, we evaluated ancestry-specific imputation accuracy. As before, overall autoencoder-based imputation maintains superiority across all continental populations present in MESA (Figure 5, Wilcoxon rank-sums test p=5.39 × 10–19). The autoencoders’ mean r-squared ranged from 0.357 for African ancestry to 0.614 for East Asian ancestry vs 0.328–0.593 for Minimac4, 0.330–0.544 for Beagle5, and 0.324–0.586 for Impute5, respectively. Note, East Asian ancestry exhibits a slightly higher overall imputation accuracy relative to European ancestry due to improved rare variant imputation. Autoencoder superiority replicates when HGDP is split into continental populations (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig5-v2.jpg)
+
+**Figure 5.:** Autoencoder-based (red) and HMM-based (Minimac4 (blue), Beagle5 (green), and Impute5 (purple)) imputation accuracy was validated across individuals of diverse ancestry from MESA cohort (EUR: European (top); EAS: East Asian (2nd row); AMR: Native American (3rd row); AFR: African (bottom)) and multiple genotype array platforms (Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right)). Each data point represents the imputation accuracy (average r-squared per variant) relative to WGS-based ground truth across MAF bins. Error bars represent standard errors. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001, ns represents non-significant p-values.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Autoencoder-based (red) and HMM-based (Minimac4 (blue), Beagle5 (green), and Impute5 (purple)) imputation accuracy was validated across individuals of diverse ancestry from HGDP cohort (EUR: European (top); EAS: East Asian (2nd row); AMR: Native American (3rd row); AFR: African (bottom)) and multiple genotype array platforms (Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right)). Each data point represents the imputation accuracy (average r-squared per variant) relative to WGS-based ground truth across MAF bins. Error bars represent standard errors. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001, ns represents non-significant p-values.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Autoencoder-based imputation using the HRC reference panel (red) was compared to HMM-based (Minimac4 (blue), Beagle5 (green), and Impute5 (purple)) imputation using the TOPMed reference panel. Accuracy was determined across individuals of diverse ancestry from the HGDP cohort (EUR: European (top); EAS: East Asian (2nd row); AMR: Native American (3rd row); AFR: African (bottom)) and multiple genotype array platforms (Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right)). Each data point represents the imputation accuracy (average r-squared per variant) relative to WGS-based ground truth across MAF bins. Error bars represent standard errors. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001, ns represents non-significant p-values.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/75600/elife-75600-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Autoencoder-based imputation using the HRC reference panel (red) was compared to HMM-based (Minimac4 (blue), Beagle5 (green), and Impute5 (purple)) imputation using the TOPMed reference panel. Accuracy was determined across individuals of diverse ancestry from the MESA cohort (EUR: European (top); EAS: East Asian (2nd row); AMR: Native American (3rd row); AFR: African (bottom)) and multiple genotype array platforms (Affymetrix 6.0 (left), UKB Axiom (middle), Omni1.5M (right)). Each data point represents the imputation accuracy (average r-squared per variant) relative to WGS-based ground truth across MAF bins. Error bars represent standard errors. We applied Wilcoxon rank-sum tests to compare the HMM-based tools to the tuned autoencoder (AE). * represents p-values ≤0.05, ** indicates p-values ≤0.001, and *** indicates p-values ≤0.0001, ns represents non-significant p-values.
 
 Further stratification of ancestry-specific imputation accuracy results by MAF continues to support autoencoder superiority across all ancestries, MAF bins, and nearly all test datasets, and genotyping array marker sets (Figure 5, Figure 5—figure supplement 1). Minimum and maximum accuracies across MAF by ancestry bins ranged between 0.177–0.937 for the autoencoder, 0.132–0.907 for Minimac4, 0.147–0.909 for Beagle5, and 0.115–0.903 for Impute5, with a maximum standard error of ±0.004.
 
 Thus, with training on equivalent reference cohorts, autoencoder performance was superior across all variant allele frequencies and ancestries with the primary source of superiority arising from hard to impute regions with complex LD structures. When the reference panel of the HMM-based tools is upgraded to the more diverse TOPMed dataset, the HRC-trained autoencoder remains superior across all ancestry groups of HGDP (Figure 5—figure supplement 2), as well as in the MESA ancestries well represented in HRC (European and East Asian) but not in MESA ancestries where representation is significantly enhanced by the TOPMed reference panel (American and African) with additional imputation performance deriving from a significant degree of familial relationships spanning the TOPMed reference panel and MESA test cohort (Figure 5—figure supplement 3).
 
-## Inference speed
+### Inference speed
 
 Inference runtimes for the autoencoder vs HMM-based methods were compared in a low-end and high-end computational environment as described in Methods. In the low-end environment, the autoencoder’s inference time is at least ~4 X faster than all HMM-based inference times (summing all inference times from all genomic segments of chromosome 22, the inference time for the autoencoder was 2.4±1.1*10–3 seconds versus 1,754±3.2, 583.3±0.01, and 8.4±4.3*10–3 s for Minimac4, Beagle5, and Impute5, respectively (Figure 6A)). In the high-end environment, this difference narrows to a~3 X advantage of the autoencoder vs HMM-based methods (2.1±8.0*10–4 versus 374.3±1.2, 414.3±0.01, and 6.1±2.1*10–4) seconds for Minimac4, Beagle5, and Impute5, respectively (Figure 6B). These unoptimized results indicate that autoencoder-based imputation can be executed rapidly, without a reference cohort, and without the need for a high-end server or high-performance computing (HPC) infrastructure. However, we must note that to deploy the autoencoder-based imputation to production, the autoencoders must be pre-trained separately across all segments of all chromosomes in the human genome. This initial pre-training can require months of computation time, depending upon the GPU resources available, whereas HMM-based imputation does not require any pre-training after initial parameters are defined. Thus, the HMM-based approach is more flexible to the de-novo use of alternative reference panels – though recent cohorts have revealed scaling limitations. On the other hand, unlike HMM-based imputation tools, pre-trained autoencoders retain the information learned from pre-training and can be continuously fine-tuned with additional genomes and reference panels as they become available. Thus, once pre-trained, autoencoders may be incrementally upgraded using newly available reference panels.
 
@@ -152,6 +688,6 @@ Superior imputation accuracy is expected to improve GWAS power, enable more comp
 
 HMM-based imputation tools depend on end-user access to large reference panels or datasets to impute a single genome whereas pre-trained autoencoder models eliminate that dependency. However, further development is required to actualize this approach in practice for broad adoption. Autoencoders must be pre-trained and validated across all segments of the human genome – a computationally expensive task. Here we performed training only for chromosome 22. Autoencoder training is computationally intensive, shifting the computational burden to model trainers, and driving performance gains for end-users. As a result, inference time scales only with the number of variants to be imputed, whereas HMM-based inference time depends on both reference panel and the number of variants to be imputed. This allows for autoencoder-based imputation to extend to millions of genomes but introduces some challenges in the continuous re-training and fine-tuning of the pre-trained models as larger reference panels are made available. In addition, our current encoding approach lacks phasing information and no pre-phasing was performed. Pre-phasing can lead to substantial improvements in imputation accuracy. Future models will need to address the need for phasing and continuous fine-tuning of models for application to modern, ever-growing, genomic datasets.
 
-## Ideas and speculation
+### Ideas and speculation
 
 After expanding this approach across the whole genome, our work will provide a more efficient genotype imputation platform on whole genome scale and thus benefit genomic research especially in contexts where the computational power required for modern HMM-based imputation is not accessible. In addition to the speed, cost, and accuracy benefits, our proposed approach can potentially improve automation for downstream analyses. The autoencoder naturally generates a hidden encoding with latent features representative of the original data. This latent representation of the original data acts as an automatic feature extraction and dimensionality reduction technique for downstream tasks such as genetic risk prediction. Moreover, the autoencoder-based imputation approach only requires a reference panel during training – only the neural network needs to be distributed for implementation. Thus, the neural network is portable and avoids privacy issues associated with standard statistical imputation. This privacy-preserving feature will allow developers to deploy real-time data-driven algorithms on personal devices (edge computing). These new features will expand the clinical applications of genomic imputation, as well as its role in preventive healthcare. Another point related to data privacy is that the autoencoders segment the genome, making reconstruction of an individual genome impossible even if reference data were somehow recoverable from the neural networks. Nevertheless, while there are no official data sharing restrictions on deep learning model weights generated from genomic data, future privacy risks may be discovered, necessitating further research into privacy concerns and differential privacy techniques for autoencoder-based genotype imputation.

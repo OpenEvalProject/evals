@@ -14,9 +14,9 @@
 
 ### Affiliations
 
-1. https://ror.org/017zqws13 Hubbard School of Journalism and Mass Communication, University of Minnesota Minneapolis United States
-2. https://ror.org/017zqws13 Division of Epidemiology and Community Health, University of Minnesota School of Public Health Minneapolis United States
-3. https://ror.org/017zqws13 Department of Computer Science and Engineering, College of Science and Engineering, University of Minnesota Minneapolis United States
+1. Hubbard School of Journalism and Mass Communication, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+2. Division of Epidemiology and Community Health, University of Minnesota School of Public Health Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+3. Department of Computer Science and Engineering, College of Science and Engineering, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
 
 † Corresponding author
 
@@ -52,13 +52,13 @@ Our research suggests that there is a dearth of published peer-reviewed research
 
 Additionally, there were no peer-reviewed studies that explored the empirical association between exposure to COVID-19 misinformation on social media and HPV and HBV hesitancy, intention, or uptake (RQ2). This lack of research is very concerning, especially since so much of the populace relies on social media as a primary information source (Pew, 2022), and social media use is associated with vaccine hesitancy for multiple vaccines (Dunn et al., 2017; Jennings et al., 2021). This area is prime for new empirical research, and such findings can inform policymaking and regulations to ensure that social media platform policies address health information to promote public health. In addition, previous research in other domains (e.g., climate change) has found that there can be a reinforcing spiral between science skepticism and information consumption behaviors over time (Feldman et al., 2014). Thus, those who are skeptical of vaccines may seek confirmation of their (inaccurate) beliefs and become even more skeptical over time, as predicted by the ideological health spirals model (Young and Bleakley, 2020).
 
-## Future research directions based on the systematic review
+### Future research directions based on the systematic review
 
 Based on the literature reviewed, there are a number of questions that need to be answered regarding the potential for spillover effects across vaccines in terms of hesitancy, intention, or uptake. Given scholarly and public concerns that COVID vaccine attitudes are impacting uptake for other vaccines (Larson et al., 2022; Messerly and Mahr, 2022) and alarms about the rising polarization in the United States surrounding other vaccines (Frankovic, 2021), solid empirical research is necessary to validate a potential link between hesitancy, intention, and especially uptake across vaccines.
 
 Our systematic review also points to the need for innovative work to explore the impact of social media exposure to COVID-19 misinformation on HPV and HBV vaccine attitudes. Existing research is often limited to documenting the prevalence of vaccine misinformation on social media (e.g., Suarez-Lledo and Alvarez-Galvez, 2021; Wang et al., 2019) or looking at the association between social media use and vaccine attitudes (Dunn et al., 2017; Jennings et al., 2021). Our review found no studies that attempted to empirically relate COVID-19 vaccine misinformation with HPV or HBV vaccine hesitancy, intention, or uptake. Explicitly linking social media misinformation exposure to individual vaccine beliefs and behaviors will require sophisticated efforts to link online exposure to offline health outcomes.
 
-## Additional research directions
+### Additional research directions
 
 Innovative, ongoing work in computational methods, epidemiology, and communication research can be leveraged to understand vaccine spillover effects (e.g., COVID-19 vaccine hesitancy leading to HPV hesitancy) and how social media misinformation may contribute to such spillover. For example, we need more sophisticated methods to map how misinformation, refutation of misinformation, and accurate information about different vaccines propagates through a social network. One method is to form a tree structure with an initial source of information depicted as the root (Figure 1; Ma et al., 2017; Wu et al., 2015). Individuals who share misinformation, refutation of misinformation, and accurate information are depicted through different colors throughout the tree structure. Different actors within the social networks may choose to further spread misinformation, refute misinformation, or deliver accurate information. Those who refute misinformation are of particular interest. These are the individuals who may be able to interrupt the spread of misinformation within a network.
 
@@ -74,7 +74,78 @@ In conclusion, our systematic review underscores the need for longitudinal resea
 
 A systematic literature review was conducted via the Ovid Medline and APA PsychInfo databases. These public databases cover published studies associated with biomedicine and health (Ovid Medline) and psychological, social, and behavioral sciences (PsychInfo). We developed a multistep search strategy (see Table 1) to identify the articles that potentially met the criteria to answer two research questions: (1) Is COVID-19 vaccine hesitancy, intention, or uptake associated with HPV or HBV vaccine hesitancy, intention, or uptake? (2) Is exposure to COVID-19 vaccine misinformation on social media associated with HPV or HBV vaccine hesitancy, intention, or uptake? Search steps #1–5 each consisted of keywords for one dimension of the research questions (e.g., mis-/disinformation; social media). The bottom two rows of Table 1 show how steps #1–5 were used in combination to address the research questions. Two members of the research team independently completed the multistep search in each database and achieved consistent results on October 22, 2022. A bridge search was performed in June 2023 to incorporate all published articles through May 31, 2023. Search steps for the first research question yielded 398 total records (PsychInfo, n = 314; Medline, n = 84); search steps for the second research question yielded 95 total records (PsychInfo, n = 88, Medline: n = 7) (see Table 1).
 
+**Table 1.**
+ Search strategy and number of identified records.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Search terms</th>
+      <th>Medline</th>
+      <th>PsychInfo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>(Misinformation or disinformation or conspiracy theory or rumor or fake news)</td>
+      <td>7168</td>
+      <td>14,611</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>(Social media) or (social network and online) or (social network and digital) or (social network and internet)</td>
+      <td>35,371</td>
+      <td>72,558</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>(COVID) or (SARS-CoV-2)</td>
+      <td>359,988</td>
+      <td>48,996</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Vaccine and (hesitancy or uptake or intention)</td>
+      <td>16,311</td>
+      <td>5661</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>HPV or HBV</td>
+      <td>101,348</td>
+      <td>6873</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Research question 1: searches 3, 4, and 5 combined with the Boolean term “and”</td>
+      <td>84</td>
+      <td>314</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Research question 2: searches 1, 2, 3, 4, and 5 combined with the Boolean term “and”</td>
+      <td>7</td>
+      <td>88</td>
+    </tr>
+  </tbody>
+</table>
+
 Figure 2 summarizes the process of identifying relevant peer-reviewed articles using terminology from the 2020 PRISMA guidelines. Record refers to the title and/or abstract of an article indexed in a database, whereas report refers to the electronic document containing detailed information about a study (e.g., a journal article, dissertation, etc.) (Page et al., 2021).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85743/elife-85743-fig2-v1.jpg)
+
+**Figure 2.:** Note: includes articles made available in the databases through May 31, 2023. Record refers to the title or abstract of a report indexed in the Medline or PsychInfo database. Report refers to an electronic document providing information about a study, such as a journal article or conference abstract (Page et al., 2021).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85743/elife-85743-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Note: conducted on October 22, 2022. Includes records that were available in the databases through October 22, 2022.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85743/elife-85743-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Note: conducted on June 6, 2023. Includes records that were made available in the databases from October 22, 2022, to May 31, 2023.
 
 For the first research question, 380 reports were eligible for assessment after removing duplicate (n = 8) or incomplete (n = 9) records and one report that was unable to be retrieved. To meet the criteria for inclusion, the full paper was reviewed to ensure that the study was an empirical study published in an academic journal and (1) measured COVID-19 vaccine hesitancy, intention, or uptake; (2) measured HPV or HBV vaccine hesitancy, intention, or uptake; and (3) tested the statistical association between both measures. For the purposes of this review, we defined an empirical study as one that had measures of observable data. Based on these criteria, a further 56 reports were excluded that were commentaries, reviews, opinion pieces, book chapters, simulation modeling, meta-analyses, or animal studies. Two additional studies were removed that were non-English-language reports, leaving a total of 322 articles classified as eligible for full review. The reports were divided among seven members of the research team to code independently after first meeting to discuss assessment criteria and reaching consensus on the first 16 reports.
 

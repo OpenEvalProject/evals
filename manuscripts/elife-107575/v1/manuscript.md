@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05kxtq558 Gene Regulation in Evolution, Institute for Molecular Biology gGmbH Mainz Germany
-2. https://ror.org/00fbnyb24 Theodor-Boveri-Institute, University of Würzburg Würzburg Germany
+1. Gene Regulation in Evolution, Institute for Molecular Biology gGmbH Mainz Germany ([ROR:05kxtq558](https://ror.org/05kxtq558))
+2. Theodor-Boveri-Institute, University of Würzburg Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
 
 † Corresponding author
 

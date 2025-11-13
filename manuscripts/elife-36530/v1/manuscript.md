@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.36530.001 We describe Ribo Mega-SEC, a powerful approach for the separation and biochemical analysis of mammalian polysomes and ribosomal subunits using Size Exclusion Chromatography and uHPLC. Using extracts from either cells, or tissues, polysomes can be separated within 15 min from sample injection to fraction collection. Ribo Mega-SEC shows translating ribosomes exist predominantly in polysome complexes in human cell lines and mouse liver tissue. Changes in polysomes are easily quantified between treatments, such as the cellular response to amino acid starvation. Ribo Mega-SEC is shown to provide an efficient, convenient and highly reproducible method for studying functional translation complexes. We show that Ribo Mega-SEC is readily combined with high-throughput MS-based proteomics to characterize proteins associated with polysomes and ribosomal subunits. It also facilitates isolation of complexes for electron microscopy and structural studies.
+We describe Ribo Mega-SEC, a powerful approach for the separation and biochemical analysis of mammalian polysomes and ribosomal subunits using Size Exclusion Chromatography and uHPLC. Using extracts from either cells, or tissues, polysomes can be separated within 15 min from sample injection to fraction collection. Ribo Mega-SEC shows translating ribosomes exist predominantly in polysome complexes in human cell lines and mouse liver tissue. Changes in polysomes are easily quantified between treatments, such as the cellular response to amino acid starvation. Ribo Mega-SEC is shown to provide an efficient, convenient and highly reproducible method for studying functional translation complexes. We show that Ribo Mega-SEC is readily combined with high-throughput MS-based proteomics to characterize proteins associated with polysomes and ribosomal subunits. It also facilitates isolation of complexes for electron microscopy and structural studies.
 
 ## Introduction
 
@@ -44,6 +44,30 @@ We therefore compared polysome profiles using SDG of lysates prepared in a buffe
 
 To efficiently resolve polysomes and ribosomal subunits from cell extracts by SEC, we next optimized the choice of pore size for the SEC column and the maximum flow rate. First, we compared the SEC chromatograms of HeLa cell lysates separated using three different SEC columns with pore sizes of either 300, 1,000, or 2,000 Å, respectively, but with the same flow rate and salt concentration. This showed that only the largest pore size, that is 2,000 Å SEC column, successfully resolved complexes in the polysome size range (Figure 1—figure supplement 2). To characterize the fractionation profile of the 2,000 Å SEC column and assign the resulting peaks, we injected onto the SEC column either ribosomal subunits, or polysomes, that had been previously isolated by SDG (Figure 1A). Using a column flow rate of 0.2 ml/min, the 40S subunit, 60S subunit, 80S monosome and a mixture of polysomes elute separately at ~50 min, 46 min, 43 min and between 33 and 41 min, respectively (Figure 1B and C). This showed that the first peak eluted from the SEC column contained a mixture of different n-mer polysomes, the second peak contained 80S ribosomes, the third peak contained 60S subunits, the fourth peak contained 40S subunits and the bulk of smaller protein complexes eluted in a broad peak at the end of chromatogram (Figure 1D). This also showed that the peak corresponding to di-somes (two ribosomes per mRNA) was also detectable (Figure 1D). As the 80S peak was clearly separated from the polysome peak, a P/M ratio can be calculated, similar to that achieved by SDG (Figure 1D). We note that the use of a 1,000 Å SEC column provided a higher resolution separation between 60S and 40S ribosomal subunits, as well as between the 40S subunit and smaller protein complexes, but resulted in the 80S peak almost overlapping the polysome peak (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig1-v1.jpg)
+
+**Figure 1.:** (a) The HeLa cell lysate containing 100 μg of RNA was separated into 22 fractions by ultracentrifugation with a 10–45% sucrose density gradient with continuous monitoring of absorbance at 254 nm. (b) Fractions highlighted in blue in (a) were analyzed by SEC with a flow rate of 0.2 ml/min using the 2,000 Å SEC column. The chromatogram of smaller RNPs, 40S, 60S, or 80S monosome is shown. (c) Fractions highlighted in pink in (a) were analyzed by SEC with a flow rate of 0.2 ml/min using the 2,000 Å SEC column. The chromatogram of each polysome fraction is shown. (d) HeLa cell lysate containing 20 μg of RNA was analyzed by SEC using a flow rate of 0.2 ml/min on the 2,000 Å SEC column. The line in the chromatogram is the mean profile and the surrounding ribbon shows the standard deviation across the three technical replicates. The retention time is indicated on the x-axis and the UV absorbance at 260 nm is indicated on the y-axis. The P/M ratio from three technical replicates was also calculated and indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The lysate prepared either by Triton X-100 or CHAPS from HeLa cells was analyzed by ultracentrifugation with 10–45% sucrose density gradient. The absorbance at 254 nm was monitored continuously. The mean of polysome to monosome ratio with standard deviation from two biological replicates is indicated at the left of each chart.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The lysate extracted from HCT116 p53+/+ cells was injected onto three different pore size (300, 1,000, or 2,000 Å) SEC columns. The retention time is indicated on x-axis and the UV absorbance of 260 nm is indicated on y-axis. The area of chromatogram of void volume is highlighted on blue.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** HeLa cell lysate containing either 80 μg of RNA (a) or 50 μg of RNA (b) was analysed by SEC with the sequential columns; that is (a) two 2,000 Å columns or (b) a 2,000 Å column and a 1,000 Å column, by a flow rate of 0.2 ml/min. The retention time is indicated on x-axis and the UV absorbance of 260 nm is indicated on y-axis. The area of chromatogram of void volume is highlighted on blue.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** HeLa cell lysate containing 20 μg of RNAs was injected onto the 2,000 Å SEC column and the separation profiles of ribosomes were compared among four different flow rate. Green dash line indicated the time to finish the separation.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** The equal amount of the lysate from HeLa, U2OS, HCT116 p53+/+, and HCT116 p53-/- cells was individually injected onto the 2,000 Å SEC column. The retention time is indicated on x-axis and the UV absorbance of 260 nm is indicated on y-axis.
+
 To achieve a higher resolution separation, extending from larger polysomes to smaller protein complexes, in a single shot analysis, we tested the use of two SEC columns connected in series using a column flow rate of 0.2 ml/min (Figure 1—figure supplement 3). This showed increased resolution of di-some and tri-some peaks, along with higher, n-mer polysome complexes and improved separation of both ribosomal subunits using two 2,000 Å SEC columns in series (Figure 1—figure supplement 3A). A similar improved separation of polysomes was achieved by the combination of a 1,000 Å SEC column and 2,000 Å SEC column in series, while this combination also provided more effective separation in the size range from 80S to smaller protein complexes (Figure 1—figure supplement 3B). Fractionation of extracts using two SEC columns run in series thus provides a flexible system for efficient separation across a large range of complexes of different sizes.
 
 Next, we optimized the column flow rate using a single 2,000 Å SEC column to minimize the total elution time required, while maintaining resolution. To do this, we chose to focus on the separation of the 80S peak from the polysome peak, given their close proximity. Using a column flow rate of 0.2 ml/min and a separation time of 60 min, the polysome peak and the 80S peak were clearly resolved (Figure 1D and Figure 1—figure supplement 4). However, at a flow rate of 1.0 ml/min, the 80S peak overlapped the polysome peak. As a compromise between analysis time and resolution, we therefore selected a flow rate of 0.8 ml/min for all subsequent experiments (Figure 1—figure supplement 4). Importantly, this SEC-based analysis was achieved in only 15 min, which contrasts with the hours required for SDG analysis. We also analyzed lysates individually extracted from four human cell lines (i.e. HeLa, U2OS, HCT116 p53+/+ and HCT116 p53 -/- cells) and showed that the elution profiles from the 2,000 Å SEC column were similar (Figure 1—figure supplement 5). We term this SEC-based uHPLC polysome fractionation method, ‘Ribo Mega-SEC’.
@@ -52,9 +76,37 @@ To confirm that the first SEC peak contained polysomes, we compared the Ribo Meg
 
 We analyzed these lysates by Ribo Mega-SEC, which showed that the polysome and 80S ribosome peaks both disappeared specifically from the EDTA-treated cell lysates. There was a simultaneous appearance of two new peaks, corresponding to the 60S and 40S subunits, respectively (Figure 2A). These fractions elute at slightly earlier times in the presence of EDTA, given that the density of each ribosomal subunit was decreased, and their effective size increased, following EDTA treatment, as noted above (Gesteland, 1966).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig2-v1.jpg)
+
+**Figure 2.:** (a) The UV chromatogram of HeLa cell lysates either untreated or treated with 30 mM EDTA (EDTA-treated) is shown. The line is the mean profile and the surrounding ribbon shows the standard deviation across the three biological replicates. The collected fractions (Fr.) are highlighted and numbered. The retention time is indicated on the x-axis and the UV absorbance of 260 nm is indicated on the y-axis. (b) The fractions were analyzed either by western blotting (WB) with the indicated primary antibodies, or by northern blotting with the probes indicated at the left. Methylene blue staining visualized rRNAs. Input: 20 μg of protein and 2 μg of RNA for Methylene blue staining and detecting ACTB mRNA or 250 ng of RNA for detecting polyA(+) mRNA, loaded for WB and NB, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** HeLa cell lysate containing 100 μg of RNA treated with or without EDTA was separated into 21 fractions by ultracentrifugation with a 10–45% sucrose density gradient. The absorbance at 254 nm was monitored continuously. Proteins in each fraction were analyzed by western blotting with the antibodies indicated at the left. RNAs in each fraction were also separated by agarose gel electrophoresis, transferred to a membrane, and hybridized with the biotin-labelled probes indicated at the left. Input: 20 μg of protein and 2 μg of RNA were loaded for western and northern blotting, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The UV chromatogram of HeLa cell lysate either untreated or treated with 30 mM EDTA (EDTA-treated) from one of three biological replicates was shown. 48 fractions numbered at the top of chromatogram were collected from polysomes to smaller protein complexes and the fractions analysed by western and northern blotting shown in Figure 2B were highlighted and numbered at the bottom of chromatogram. The retention time is indicated on x-axis and the UV absorbance of 260 nm is indicated on y-axis.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** HeLa cell lysate treated with EDTA was separated into 24 fractions by Ribo Mega-SEC and the fractions were analyzed by western blotting with anti-eS10 antibody. Input: 20 μg of protein was loaded.
+
 We next collected 48 fractions, ranging from polysomes to smaller protein complexes (Figure 2—figure supplement 2) and characterized the SEC peaks further, using both western and northern blotting to compare the compositions of specific fractions (Figure 2A and Figure 2—figure supplement 2). The polysome fractions (fractions 1–6) in the untreated control lysate contained RPs, that is, uL10 (RPLP0) and eS10 (RPS10), and 28S and 18S rRNAs. The polysome peak was also highly enriched in PolyA(+) mRNA. For example, beta actin mRNA (ACTB) was enriched specifically in the polysome peak (Figure 2B). Moreover, the 60S and 40S subunit peak fractions were also enriched in the corresponding 60S and 40S-specific RPs and rRNAs. As expected, these RP, rRNA and mRNA signals were significantly reduced in the peak polysome fractions from EDTA-treated cell lysates (Figure 2B). Following EDTA treatment, uL10 accumulated in two fractions; that is, a dissociated 60S subunit fraction (fraction 7) and the fraction not co-eluted with 28S rRNA (fraction A). eS10 was neither detected in the dissociated 40S subunit in the fractions analysed by Ribo Mega-SEC, nor in the dissociated 40S fractions analysed by SDG, but was detected instead in the fractions containing smaller protein complexes (Figure 2B and Figure 2—figure supplements 1 and 3). This suggests that eS10 is one of the RPs released from ribosomal subunits after EDTA treatment, as reported previously for the 5S RNP (Blobel, 1971; Steitz et al., 1988).
 
 We next examined the stability and activity of polysomes obtained by Ribo Mega-SEC, during sequential separations and high salt treatment. First, we tested polysome stability over time by taking three fractions in the polysome peak (highlighted fractions 1–3 in Figure 3A) and analyzing each fraction individually, both by a second round of Ribo Mega-SEC and by SDG analysis (Figure 3B). Earlier SEC fractions migrated in the heavier polysome region (>5 ribosomes per polysome) by SDG, and later SEC fractions migrated in the lighter polysome region (~3 ribosomes per polysome) by SDG. In addition, no dissociated ribosomal subunits from the Ribo Mega-SEC purified polysomes were detected by either the SEC, or SDG approaches. This demonstrates that the polysomes separated by Ribo Mega-SEC are stable and remain intact (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig3-v1.jpg)
+
+**Figure 3.:** (a) Fractions analyzed by the subsequent SDG analysis are numbered and highlighted in colors (yellow, blue, and green) in the Ribo Mega-SEC profile of HeLa cell lysate. Fractions analyzed by the subsequent EM analysis are termed as ‘EM a’ and ‘EM b’. The retention time is indicated on the x-axis and the UV absorbance of 260 nm is indicated on the y-axis. (b) Each fraction in (a) was analyzed by ultracentrifugation with a 10% to 45% sucrose density gradient. The regions where ribosomal subunits (40S, 60S and 80S) and the number of ribosomes (2 s, 3 s, 4 s, 5 s and >6 s) in polysomes sediment are labeled. (c) Fractions labeled as ‘EM a’ and ‘EM b’ in (a) were analyzed by EM analysis. Scale bar showing 100 nm is indicated at the bottom left in each image. (d) Each fraction in Figure 3—figure supplement 2 was incubated with either unlabelled puromycin (Negative control), or biotin-labelled puromycin. The biotin-puromycylated nascent polypeptide chains and eL28 (RPL28) were detected by WB with streptavidin and anti-RPL28 antibody. *endogenous biotinylated proteins. Input: 20 μg of protein in lysates incubated with either unlabeled puromycin, or biotin-labeled puromycin was loaded.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** HeLa cell lysate extracted by normal salt or by high-salt containing buffer was analyzed by SDG (a) or by SEC (b).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** 10 fractions from polysomes to 60S subunits highlighted in green were collected by the flow rate of 0.5 ml/min of Ribo Mega-SEC HPLC run and subjected to in vitro puromycylation. The retention time is indicated on x-axis and the UV absorbance of 260 nm is indicated on y-axis.
 
 We also analyzed two sets of polysome fractions isolated by Ribo Mega-SEC using electron microscopy (EM); that is (a) material from earlier eluting polysome fractions (EM: a in Figure 3A) and (b) material from an intermediate eluting polysome fraction (EM: b in Figure 3A). The complexes from each fraction were applied directly onto an EM grid, without dialysis, and viewed in a JEOL 2010F with FEG (Field Emission Gun) electron microscope in TEM mode at a nominal magnification of 40,000X. This EM analysis showed that earlier eluting SEC fractions contain larger polysomes, with elongated and heterogeneous shapes (Figure 3C). These may correspond to ‘HMW and/or [HMW]n (n = 2) polysomes (i.e. assemblies of polysomes)’ (Viero et al., 2015). In contrast, polysomes composed of four ribosomes accounted for a major portion of the intermediate eluting SEC fraction and their shapes were more round and homogeneous (Figure 3B and C). These may correspond to ‘rounded’ polysomes (Viero et al., 2015). In addition, some larger polysomes were also found in this fraction, which is consistent with the data obtained by SDG analyses above (Figure 3B and C).
 
@@ -63,6 +115,14 @@ In a second round of stability tests, we examined SDG and SEC profiles of HeLa c
 Next, we examined whether the ribosomes in polysome fractions separated by Ribo Mega-SEC retained peptidyl transferase activity, which would provide a clear indicator of stability and retention of function after fractionation. To do this, we employed in vitro puromycin labeling (Figure 3D and Figure 3—figure supplement 2) (Aviner et al., 2013). As was true for all experiments in this study, we used lysates from cells treated with cycloheximide for this analysis. This was possible because short-term treatment of cells with cycloheximide has no significant effect on nascent polypeptide chain puromycylation (David et al., 2012). We detected nascent polypeptide chains linked with biotin-labeled puromycin specifically in the polysome fractions (Figure 3D). A streptavidin-HRP signal was not observed in the 60S subunit fractions, or when extracts were treated with unlabeled-puromycin (negative control) (Figure 3D). These data show that, using Ribo Mega-SEC, both intact and translation-active polysomes can be resolved from cell extracts efficiently (~11 min after injection).
 
 An important distinction between density-gradient-based fractionation and uHPLC-based separation is the inherent improvement in reproducibility through the use of automated injection and fraction-collection systems. Many fields, including biochemistry and pharmacology, rely on the reproducible retention times and quantitation provided by automated uHPLC systems. We have evaluated reproducibility here for Ribo Mega-SEC through the analysis of three biological replicates of either untreated, or EDTA-treated, cell lysates. Statistical comparison of these chromatograms showed very high Pearson correlation coefficients of ~0.99 across the biological replicates (Figure 4A and Figure 4—figure supplement 1). Polysome profiles generated by SDG analysis from three biological replicates of untreated cell lysates also showed high Pearson correlation coefficients, but consistently lower than those from Ribo Mega-SEC (Figure 4B). Moreover, we found an ~5 to 10 s difference (equivalent to 80 μl to 160 μl difference) between the SDG replicates in the polysome region, possibly due to the variability in density of the sucrose gradients in each tube (Figure 4C). These data show that the Ribo Mega-SEC approach is highly reproducible and compares favourably in this regard with polysome isolation using SDG.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig4-v1.jpg)
+
+**Figure 4.:** (a) The UV chromatograms of Ribo Mega-SEC from the three biological replicates of untreated cell lysates were showed. The retention time is indicated on the x-axis and the UV absorbance of 260 nm is indicated on the y-axis. The Pearson correlation coefficient calculated for the three biological replicates between 8.0 min and 16.1 min (replicate 1 versus replicate 2, replicate 1 versus replicate 3, and replicate 2 versus replicate 3) was also indicated at the right. (b) The polysome profiles of SDG analysis from the three biological replicates of untreated cell lysates are shown. The time is indicated on the x-axis and the UV absorbance of 254 nm is indicated on the y-axis. The Pearson correlation coefficient calculated for the three biological replicates between 2.0 min and 10.0 min (replicate 1 versus replicate 2, replicate 1 versus replicate 3, and replicate 2 versus replicate 3) is also indicated at the right. (c) The polysome region from 6.0 min to 10.0 min in (b) was expanded and the Pearson correlation coefficient was calculated between these time points.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The UV chromatograms from the three biological replicates of EDTA-treated cell lysate were showed. The retention time is indicated on x-axis and the UV absorbance of 260 nm is indicated on y-axis. The Pearson correlation coefficient calculated for the three biological replicates between 8.0 min and 16.1 min (replicate 1 versus replicate 2, replicate 1 versus replicate 3, and replicate 2 versus replicate 3) was also indicated at the bottom of chromatogram.
 
 We next took advantage of the optimized Ribo Mega-SEC method to examine whether we detect differences in the relative levels of polysomes and ribosomal subunits when extracts are analyzed from HeLa cells responding to growth under conditions of amino acid starvation. This showed dramatically decreased polysome levels in the lysates from amino acid starved cells, with a corresponding distinct increase in the peaks for 80S ribosome, and 60S and 40S subunits, consistent with previous reports (Caldarola et al., 2004) (Figure 5A). Quantitation of the peak areas and the P/M ratio confirmed the expected global reduction of translation in response to amino acid starvation (Figure 5B).
 
@@ -75,6 +135,22 @@ Translation of 5’ TOP mRNAs has been reported to be repressed by amino acid st
 The previous examples involved analysis of polysomes in extracts isolated from human cell lines. We also evaluated how effectively Ribo Mega-SEC can be used to analyse polysomes in extracts prepared from mammalian tissue samples. In addition, we wished to test whether this approach can be used to perform MS-based proteomic analyses on the isolated polysome fractions. To do this, we applied Ribo Mega-SEC to analyze the proteins associated with polysomes and ribosomal subunits in mouse liver tissue. Extracts were prepared from mouse liver and fractionated by SEC, which showed a similar pattern of polysome separation as seen with extracts prepared from HeLa cells, also with very high Pearson correlation coefficients (~0.99) across biological replicates (Figure 6—figure supplement 1). This showed that translation complexes in liver tissue are mostly associated with polysomes, rather than 80S monosomes.
 
 Next, we optimized the SEC running buffer to facilitate downstream proteomic analysis of the fractionated polysomes. For this, we found it was important to omit heparin from the SEC running buffer, as it interferes with MS analysis and is difficult to remove after SEC fractionation using conventional proteomics sample preparation techniques. We confirmed that the separation profiles were similar using SEC running buffer either with, or without, heparin, and also confirmed that polysomes and ribosomal subunits remained intact under both conditions (Figure 6—figure supplement 2). We then collected 24 SEC fractions, spanning the separation range from polysomes to smaller complexes (Figure 6A and B). Each fraction was digested with trypsin and the resulting peptides cleaned to remove the buffer components, prior to LC-MS/MS analysis on a QExactive plus mass spectrometer (Figure 6A) (Larance et al., 2016; Larance et al., 2015; Ly et al., 2015; Ly et al., 2017).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig6-v1.jpg)
+
+**Figure 6.:** (a) Workflow for Ribo Mega-SEC analysis of mouse liver tissue and LC-MS/MS methodology. (b) Ribo Mega-SEC profile of mouse liver tissue. The collected fractions are highlighted and numbered at the top of the chromatogram. The retention time is indicated on the x-axis and the UV absorbance of 260 nm is indicated on the y-axis. (c) Ribo Mega-SEC elution profiles for all proteins identified in example cluster 197 were displayed as line graphs with the mean iBAQ intensity (y-axis) plotted against each elution fraction (x-axis). (d) STRING interaction network for proteins identified in example cluster 197. (e) Ribo Mega-SEC elution profiles for all proteins identified in example cluster 454 were displayed as line graphs with the mean iBAQ intensity (y-axis) plotted against each elution fraction (x-axis). (f) STRING interaction network for proteins identified in example cluster 454.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The UV chromatograms from the three biological replicates of the extract from mouse liver tissue were showed. The retention time is indicated on x-axis and the UV absorbance of 260 nm is indicated on y-axis. The Pearson correlation coefficient calculated for the three biological replicates between 8.0 min and 16.1 min (replicate 1 versus replicate 2, replicate 1 versus replicate 3, and replicate 2 versus replicate 3) was also indicated at the bottom of chromatogram.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Mouse liver tissue extracts were analyzed by Ribo Mega-SEC using mobile phase with or without heparin. The retention time is indicated on x-axis and the UV absorbance of 260 nm is indicated on y-axis.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/36530/elife-36530-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (a) Optimum hierarchical cluster number was calculated and the average Pearson correlation coefficient (y-axis) was plotted over a range of cluster numbers between 50 and 2,000 (x-axis). (b) All 5158 proteins were clustered on the basis of their normalized elution profiles across 24 Ribo Mega-SEC fractions, and the results were presented as a heat map. The dendrogram cut-offs for 400 clusters were illustrated to the left of the heat map.
 
 The data from two biological replicates yielded >58,800 unique peptides, which were mapped to 5,158 protein groups, each identified with two or more peptides per protein. We used iBAQ intensity for label-free quantitation to estimate protein abundance and compare protein abundance across the fractions (Figure 6C and E and Figure 7) (Larance et al., 2016).
 
@@ -112,66 +188,167 @@ In summary, we have demonstrated that the Ribo Mega-SEC method provides an effic
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0030</td>
+      <td>Tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0042</td>
+      <td>Tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT116 p53 +/+</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0291</td>
+      <td>Tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCT116 p53 -/-</td>
+      <td>Horizon</td>
+      <td>RRID:CVCL_S744</td>
+      <td>Tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Australian BioResources</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ribosomal protein S10 antibody [EPR8545]</td>
+      <td>Abcam Cat# ab151550</td>
+      <td>RRID:AB_2714147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ribosomal Protein L28 (A-16) antibody</td>
+      <td>Santa Cruz Biotechnology Cat# sc-14151</td>
+      <td>RRID:AB_2181749</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RPL14/Ribosomal Protein L14 Antibody</td>
+      <td>Bethyl Cat# A305-052A</td>
+      <td>RRID:AB_2621246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RPLP0 antibody</td>
+      <td>Abcam Cat# ab88872</td>
+      <td>RRID:AB_2042838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-linked Antibody</td>
+      <td>Cell Signaling Technology Cat# 7076</td>
+      <td>RRID:AB_330924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked Antibody</td>
+      <td>Cell Signaling Technology Cat# 7074</td>
+      <td>RRID:AB_2099233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat IgG (whole molecule) -Peroxidase antibody produced in rabbit</td>
+      <td>Sigma-Aldrich Cat# A5420</td>
+      <td>RRID:AB_258242</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 BioBasic SEC-300, SEC-1,000 and SEC-2,000 LC Columns were from Thermo Fisher Scientific (We note that the SEC-2,000 LC Column was not commercially available when these experiments were carried out). Agilent Bio SEC-5 2,000 Å was from Agilent. CHAPS (Sol-Grade) was from Anatrace. DMEM (high glucose, pyruvate; 41966–029), Fetal bovine serum (FBS), dialyzed FBS, EBSS (with calcium, magnesium and phenol red), MEM amino acids solution (50X), MEM non-essential amino acids solution (100X), MEM vitamin solution (100X), l-glutamine (200 mM), Penicillin-Streptomycin, SUPERase In RNase inhibitor, TRIzolLS reagent, BCA protein assay kit, EZQ protein quantitation kit, CBQCA protein quantitation kit, and Chemiluminescent Nucleic Acid Detection Module kit were from Thermo Fisher Scientific. Complete EDTA-free Protease inhibitor was from Roche. 0.45 μm Ultrafree-MC HV centrifugal filter units and Stericup filter units were from Merck Millipore. PVDF membrane and Hybond-N +nylon membrane were from GE Healthcare Life Sciences. IMMUNO SHOT was from Cosmo Bio. Biotin-dC-Puromycin was from Jena Bioscience. Any other standard laboratory chemicals were obtained from either Sigma, or VWR.
 
-## Cell culture
+### Cell culture
 
 HeLa (RRID: CVCL_0030), HCT116 p53+/+ (RRID: CVCL_0291), and U2OS (RRID: CVCL_0042) cells were purchased from ATCC. HCT116 p53-/- cells (RRID: CVCL_S744) was purchased from Horizon. Cell lines were tested negative for mycoplasma contamination.
 
 Cells were maintained in DMEM supplemented with 10% FBS, penicillin (100 U/ml) and streptomycin (0.1 mg/ml) at 37°C and 5% CO2. For the starvation experiments, HeLa cells were washed twice with PBS and incubated for 2 hr in EBSS supplemented with 10% dialyzed FBS, vitamins, glucose (4.5 g/L) and sodium pyruvate, either with, or without, a mixture of amino acids (MEM amino acids solution, NEAA, and glutamine), at almost the same concentration of DMEM. Cells were treated with 50 μg/ml cycloheximide to maintain polysome stability for 5 min under 37°C and 5% CO2 before harvest.
 
-## Mice
+### Mice
 
 C57BL/6J male mice were purchased from Australian BioResources (Moss Vale, Australia) at 7 weeks of age and kept at 22°C on a 12 hr light/dark cycle with free access to food (CHOW - 13% calories from fat, 22% calories from protein, and 65% calories from carbohydrate, 3.1 kcal/g; Gordon's Specialty Stock Feeds, Yanderra, Australia) and water. Mice were sacrificed in the fed state (9am) at 10–12 weeks of age by cervical dislocation, and the liver tissues were quickly excised and freeze-clamped in liquid nitrogen. The tissues were stored at −80°C before analysis. All experiments were carried out with the approval of the University of Sydney Animal Ethics Committee (2016/1096), following guidelines issued by the National Health and Medical Research Council of Australia.
 
-## Preparation of cell/tissue lysates for SEC
+### Preparation of cell/tissue lysates for SEC
 
 Cells in two 10 cm dishes (80% confluency) were grown as described above, washed with ice-cold PBS containing 50 μg/ml cycloheximide, scraped on ice, collected by centrifugation, lysed by vortexing for 10 s in 300 μl of polysome extraction buffer (20 mM Hepes-NaOH (pH 7.4), 130 mM NaCl, 10 mM MgCl2, 1% CHAPS, 0.2 mg/ml heparin, 2.5 mM DTT, 50 μg/ml cycloheximide, 20 U SUPERase In RNase inhibitor, cOmplete EDTA-free Protease inhibitor) or in polysome extraction buffer containing 0.5 M NaCl, incubated for 15 min on ice, and centrifuged at 17,000 g for 10 min (all centrifugations at 4°C). Frozen liver (typically 100 mg wet weight) was homogenized in 2 ml of polysome extraction buffer using a glass dounce tissue grinder with 10 strokes. After clarification by 2,500 g for 10 min followed by removal of the lipid layer on the top of the supernatants, the lysates were mixed with heparin (1 mg/ml) and centrifuged at 16,000 g for 10 min. Supernatants from either cells, or liver tissue, were filtered through 0.45 μm Ultrafree-MC HV centrifugal filter units by 12,000 g for 2 min, and protein and RNA amounts in the filtrates were quantified by BCA protein assays and BioPhotometer (Eppendorf), respectively. To dissociate ribosomes, the filtrates were treated with 30 mM EDTA and filtered again before injecting to SEC.
 
-## SEC
+### SEC
 
 Columns employed were all of dimensions 7.8 × 300 mm with 5 μm particles and included Thermo BioBasic SEC 300 Å, 1,000 Å, or 2,000 Å columns, or Agilent Bio SEC-5 2,000 Å columns. Using a Dionex Ultimate 3,000 Bio-RS uHPLC system (Thermo Fisher Scientific), each SEC column was equilibrated with two column volumes (CV) of filtered SEC buffer (20 mM Hepes-NaOH (pH 7.4), 60 mM NaCl, 10 mM MgCl2, 0.3% CHAPS, 0.2 mg/ml heparin, 2.5 mM DTT) (all column conditioning and separation at 5°C) and 100 μl of 10 mg/ ml of filtered bovine serum albumin (BSA) solution diluted by PBS was injected once to block the sites for non-specific interactions. After monitoring the column condition by injecting standards, including 10 μl of 10 mg/ml BSA solution and 25 μl of HyperLadder 1 kb (BIOLINE), cell lysates were injected onto a column. For the separation of EDTA-treated cell lysates, SEC buffer containing 30 mM EDTA instead of 10 mM MgCl2 was used. For the separation of the high salt-extracted lysates, SEC buffer containing 0.5 M NaCl instead of 60 mM NaCl was used. For the comparison of the polysome profile from the cells treated either with, or without, EDTA or amino acids, 150 μl of cell lysate containing 50 μg of RNA from each sample was injected. For the separation of polysomes from liver tissue, 180 μl of tissue lysate containing 150 μg of RNA was injected for the check of reproducibility and 200 μl of tissue lysate containing 2 mg of protein was injected and separated with SEC buffer not containing heparin for the proteomic analysis. The chromatogram was monitored by measuring UV absorbance at 215, 260 and 280 nm with 1 Hz of data collection rate by the Diode Array Detector. The flow rate was 0.8 ml/min and either 48 × 100 μl fractions, 24 × 200 μl fractions or 16 × 300 μl fractions were collected from 9 min to 14.6 min using a low-protein binding 96-deep-well plate 1 mL (Eppendorf) at 4°C. The peaks were quantified using the Chromeleon 6.8 Chromatography Data System (Thermo Fisher Scientific). Proteins in each fraction were precipitated with 10% trichloroacetic acid (TCA) and 10 μg of BSA for western blotting. Preparation for the proteomic analysis was described below. RNAs in each fraction were extracted either by TRIzol LS reagent, or by treating the samples with 0.1 mg/ml proteinase K, 1% SDS and 15 mM EDTA for 1 hr at 42°C followed by phenol-chloroform extraction, and precipitated with isopropanol containing 5 μl of 0.25% linear acrylamide.
 
 For the column cleanup, after flushing water for at least 10 CV at room temperature, the column was first filled with the pepsin solution (20 μg/ml pepsin, 0.1 M acetic acid, 0.5 M NaCl) by running for at least 6 CV and incubated for 1 hr at 37°C without flow. Next, the RNase A solution (20 μg/ml RNase A, 10 mM Tris-HCl (pH 7.4), 0.5 M NaCl) was filled as above and the column was incubated for 1 hr at 37°C without flow. Then, the column was flushed by 1% SDS, 2 x SSC (0.3 M NaCl, 30 mM trisodium citrate dehydrate) solution for 10 CV at 50°C. After rinsing with 10 CV dH2O at room temperature, the column was equilibrated with the SEC buffer.
 
-## Protein digestion, peptide clean-up and LC-MS/MS analysis
+### Protein digestion, peptide clean-up and LC-MS/MS analysis
 
 Proteins in each fraction were reduced and alkylated with TCEP and NEM then were cleaned up using the SP3 method (Hughes et al., 2014) and ‘on-beads’ digestion to peptides performed using trypsin, added at a ratio of 1:50 by weight, based upon an EZQ protein assay of the fractions, then incubated for 18 hr at 37°C. Peptides were then recovered by SP3 and further purified with SDB-RPS Stagetips (Rappsilber et al., 2007). SDB-RPS StageTips were generated by punching double-stacked SDB-RPS discs (Sigma, Cat#66886 U) with an 18-gauge needle and mounted in 200 μl tips (Eppendorf). Each tip was wetted with 100 μL of 100% acetonitrile and centrifuged at 1,000 x g for 1 min. Following wetting, each StageTip was equilibrated with 100 μL of 30% methanol/1% TFA and 0.1% TFA in H2O, with centrifugation for each at 1,000 x g for 3 min. Each StageTip was then loaded with the equivalent of ~5 μg peptide in 1% TFA and centrifuged as above. The peptides were washed once with 100 μl of 0.2% TFA in water, which was followed by one wash with 100 μl of 99% isopropanol/1% TFA with and centrifuged after each step as above. To elute, 100 μL of 5% ammonium hydroxide/80% acetonitrile was added to each tip and centrifuged as above for 5 min. Eluted peptides were dried using a GeneVac EZ-2 using the ammonia setting at 35°C for 1 hr. Dried peptides were resuspended in 20 μL of 5% formic acid and stored at 4°C until analysed by LC-MS. Peptide concentrations were determined using a CBQCA assay.
 
 Peptides were analyzed by a Dionex RSLCnano HPLC-coupled Q-Exactive Plus mass spectrometer (Thermo Fisher Scientific). Using a Thermo Fisher Dionex RSLCnano UHPLC, peptides in 5% (vol/vol) formic acid (injection volume 3 μL) were directly injected onto a 45 cm x 75 um C18 (Dr. Maisch, Ammerbuch, Germany, 1.9 μm) fused silica analytical column with a ~10 μm pulled tip, coupled online to a nanospray ESI source. Peptides were resolved over gradient from 5% acetonitrile to 40% acetonitrile over 60 min with a flow rate of 300 nL min−1. Peptides were ionized by electrospray ionization at 2.3 kV. Tandem mass spectrometry analysis was carried out on a Q-Exactive Plus mass spectrometer using HCD fragmentation. The data-dependent acquisition method used acquired MS/MS spectra on the top 30 most abundant ions at any one point during the gradient. Briefly, the primary mass spectrometry scan (MS1) was performed in the Orbitrap at 70,000 resolution. Then, the top 30 most abundant m/z signals were chosen from the MS1 for collision-induced dissociation in the HCD cell and MS2 analysis in the Orbitrap at 17,500 resolution. Precursor ion charge state screening was enabled and all unassigned charge state, or single charge, were rejected.
 
-## MS data analysis
+### MS data analysis
 
 The RAW data produced by the mass spectrometer were analyzed using the MaxQuant quantitative software package (Version 1.5.1.3) (Cox and Mann, 2008). This version of MaxQuant includes an integrated search engine, Andromeda (Cox et al., 2011). Peptide and Protein level identification were both set to a false discovery rate of 1% using a target-decoy based strategy. The database supplied to the search engine for peptide identifications was the Mouse Swissprot database. The mass tolerance was set to 4.5 ppm for precursor ions and MS/MS mass tolerance was set at 20 ppm. Enzyme was set to trypsin (cleavage C-terminal to lysine and arginine) with up to two missed cleavages. Deamidation of Asn and Gln, oxidation of Met, pyro-Glu (with peptide N-term Gln), protein N-terminal acetylation were set as variable modifications. N-ethylmaleimide on Cys was searched as a fixed modification. The output from MaxQuant provided peptide level data as well as protein group level data. We used the protein groups as defined by the Maxquant package. iBAQ (Intensity Based Absolute Quantification) algorithm in MaxQuant was used for protein quantitation. All the RAW MS data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the data set identifier PXD008913. The MaxQuant output has also been uploaded to the ProteomeXchange Consortium under the same identifier given above.
 
 MaxQuant output was analyzed in RStudio v1.0.136 with R language (version 3.3.2). The iBAQ intensity profile for each replicate was smoothed using a three-fraction sliding mean and the minima and maxima of each profile was normalized within the limits 0 and 1, respectively. The mean and range for each protein, across two biological replicates, was calculated for subsequent plotting using the ggplot2 package (http://ggplot2.org/), correlation analysis, and basic clustering. Proteins labeled as either contaminants, or reverse hits, were removed from the analysis. The mean profiles for each protein were hierarchically clustered. The basic hierarchical clustering was performed using the Euclidean distance measurement and a ‘complete’ agglomeration method. The tree calculated for each data set was cut to generate clusters with a mean Pearson correlation coefficient of 0.95.
 
-## Western blotting
+### Western blotting
 
 Proteins were separated by SDS-PAGE and electrophoretically transferred to a PVDF membrane. The membrane was blocked with 3% non-fat dried skim milk in TBS containing 0.1% (w/v) Tween 20 (TBST) for 1 hr at room temperature, washed twice with TBST for 5 min and incubated with the appropriate primary antibody, using IMMUNO SHOT, at 4°C overnight. After washing three times 10 min with TBST, the membranes were incubated with a secondary antibody, conjugated with horseradish peroxidase (HRP), using IMMUNO SHOT for 1 hr at room temperature and then washed a further three times 10 min with TBST. Chemiluminescent-stained proteins were detected by LAS4000 image analyzer (Fujifilm).
 
-## Antibodies
+### Antibodies
 
 The antibody sources and dilution ratios used for western blotting in this study were as follows: rabbit polyclonal anti-RPS10 (Abcam, ab151550; 1:3,000), goat polyclonal anti-RPL28 (A-16) (Santa Cruz Biotechnology, sc-14151; 1:500), rabbit polyclonal anti-RPL14 (Bethyl, A305-052A; 1:5,000), mouse polyclonal anti-RPLP0 antibody (Abcam, ab88872; 1:2,000), HRP-conjugated anti-mouse IgG (Cell Signaling Technology, #7076; 1:10,000), HRP-conjugated anti-rabbit IgG (Cell Signaling Technology, #7074; 1:10,000), HRP-conjugated anti-goat IgG (Sigma, A5420; 1:10,000).
 
-## In vitro puromycylation
+### In vitro puromycylation
 
 In vitro puromycylation was performed as previously reported with a slight modification (Aviner et al., 2013; Aviner et al., 2014). Each fraction separated by SEC was equally divided into two and 100 pmol of puromycin was added to the one and 100 pmol of Biotin-dC-puromycin was added to the other. After incubation for 15 min at 37°C, the samples were precipitated by TCA, separated by SDS-PAGE and transferred to a PVDF membrane. The membrane was blocked with 3% non-fat dried skimmed milk in TBST for 1 hr at room temperature, washed with TBST for 10 min twice, and incubated with HRP-conjugated streptavidin in TBST for 15 min at room temperature. After washing 3 × 10 min with TBST, biotin-puromycin conjugated nascent polypeptide chains were detected using a LAS4000 image analyzer.
 
-## Northern blotting
+### Northern blotting
 
 Northern blotting was performed as previously reported with a slight modification (Yoshikawa et al., 2015). Briefly, RNAs were electrophoresed on a 1% agarose gel including 1.2% formaldehyde and 1 x TT buffer (Mansour and Pestov, 2013; Preti et al., 2013) and transferred to a Hybond-N+ nylon membrane, which was subsequently dried and then UV cross-linked. After staining with methylene blue, RNAs were hybridized, either to biotin-labeled DNA oligonucleotide probes at 50°C, or to biotin-labeled oligo dT probe (iba) at 42°C, overnight in PerfectHyb Plus hybridization buffer (Sigma). The hybridized membrane was washed sequentially with 2 x SSC containing 0.1% SDS for 5 min at room temperature, 0.5 x SSC containing 0.1% SDS for 20 min at 50°C or 42°C and 0.1 x SSC containing 0.1% SDS for 20 min at room temperature. The hybridized RNA was detected using a Chemiluminescent Nucleic Acid Detection Module kit and a LAS4000 image analyzer. The sequences of oligonucleotides used as probe were follows: for ACTB mRNA, 5'-CTCCTTAATGTCACGCACGAT-3'; for RPL23a mRNA, 5'- GTTGACCTTGGCCACATCAATGTC-3'; for 18S rRNA, 5’- GGCGACTACCATCGAAAGTTGATAG −3’; for 28S rRNA, 5’- TTCGGAGGGAACCAGCTACTAGAT −3’. 3’-end biotin-labeled oligonucleotides were synthesized by Eurofins Genomics.
 
-## Sucrose density gradient (SDG) analysis
+### Sucrose density gradient (SDG) analysis
 
 SDG analysis was performed as previously reported with a slight modification (Ishikawa et al., 2017; Strezoska et al., 2000). Briefly, the supernatants containing 100 or 200 μg RNAs in 500 μl, prepared as above, were layered on 10 ml of 10%–45% (wt/wt) SDGs in 20 mM Hepes-NaOH (pH 7.4), 60 mM NaCl, 10 mM MgCl2, 1 mM DTT and 0.1 mg/ml heparin, which were prepared by a simple-diffusion-based method (Pestov et al., 2008), then centrifuged at 36,000 rpm for 3 hr at 4°C in a Beckman SW41Ti rotor. The samples were fractionated into 21 fractions (each ~500 μl) using Density Gradient Fractionation Systems (TELEDYNE ISCO), with continuous measurement of the absorbance at 254 nm. Proteins and RNAs in each fraction were extracted as described above.
 
-## Electron microscopy analysis
+### Electron microscopy analysis
 
 Samples were negatively stained with 2% uranyl acetate. In a typical experiment, a freshly glow discharged carbon coated grid was first soaked on a 5 μl drop of respective sample for 3 min, excess solvent removed and quickly stained with uranyl acetate for 1 min. Subsequently, the grid was washed four times with a 5 μl water drop to remove any excessive stain and air dried. The grid was then mounted on a JEOL side entry room temperature probe and loaded on to the electron microscope for subsequent viewing and imaging, using a JEOL 2010F with FEG (Field Emission Gun) electron microscope operating at 200kV. The imaging was carried out in TEM mode at a nominal magnification of 40,000X and the micrographs were recorded on a 4K × 4K Gatan CCD camera.
 
-## Statistical analysis
+### Statistical analysis
 
 To analyze reproducibility between replicates, either the UV absorbance at 260 nm between the times indicated for each replicate for SEC profiles, or the UV absorbance at 254 nm between the times indicated for each replicate for SDG profiles, was correlated between replicates. Image Studio Lite Ver 5.2 (LICOR) was used to quantify the band intensity. The standard deviation for the three biological replicates was calculated and used to provide either standard error bars on the graphs, or error ribbons on the UV chromatograms. An unpaired t-test was used to decide significant differences.

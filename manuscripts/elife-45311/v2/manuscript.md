@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.45311.001 After Salmonella is phagocytosed, it resides in an acidic vacuole. Its cytoplasm acidifies to pH 5.6; acidification activates pathogenicity island 2 (SPI-2). SPI-2 encodes a type three secretion system whose effectors modify the vacuole, driving endosomal tubulation. Using super-resolution imaging in single bacterial cells, we show that low pH induces expression of the SPI-2 SsrA/B signaling system. Single particle tracking, atomic force microscopy, and single molecule unzipping assays identified pH-dependent stimulation of DNA binding by SsrB. A so-called phosphomimetic form (D56E) was unable to bind to DNA in live cells. Acid-dependent DNA binding was not intrinsic to regulators, as PhoP and OmpR binding was not pH-sensitive. The low level of SPI-2 injectisomes observed in single cells is not due to fluctuating SsrB levels. This work highlights the surprising role that acid pH plays in virulence and intracellular lifestyles of Salmonella ; modifying acid survival pathways represents a target for inhibiting Salmonella .
+After Salmonella is phagocytosed, it resides in an acidic vacuole. Its cytoplasm acidifies to pH 5.6; acidification activates pathogenicity island 2 (SPI-2). SPI-2 encodes a type three secretion system whose effectors modify the vacuole, driving endosomal tubulation. Using super-resolution imaging in single bacterial cells, we show that low pH induces expression of the SPI-2 SsrA/B signaling system. Single particle tracking, atomic force microscopy, and single molecule unzipping assays identified pH-dependent stimulation of DNA binding by SsrB. A so-called phosphomimetic form (D56E) was unable to bind to DNA in live cells. Acid-dependent DNA binding was not intrinsic to regulators, as PhoP and OmpR binding was not pH-sensitive. The low level of SPI-2 injectisomes observed in single cells is not due to fluctuating SsrB levels. This work highlights the surprising role that acid pH plays in virulence and intracellular lifestyles of Salmonella; modifying acid survival pathways represents a target for inhibiting Salmonella.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ Regulation of the SPI-2 pathogenicity island is complex and involves silencing b
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig2-v2.jpg)
 
-**Figure 2.:** (A) The ssrA/B gene structure. OmpR binds upstream of ssrA, PhoP binds upstream of ssrB. The transcription start sites are noted by the bent arrows and the untranslated regions are denoted by the cross-hatchings. See Feng et al. (2003) for more details. (B) The ability of N-terminal fusions of SsrB linked via a 4XGGSG or 10XGGSG linker to PAmCherry (PAmCherry-4-SsrB and PAmCherry-10-SsrB) or C-terminal fusions (SsrB-4-PAmCherry and SsrB-10-PAmCherry) to activate transcription of a SPI-2-linked promoter PsseI-lacZ, was measured by a β-galactosidase assay. Both N-terminal SsrB fusions activated sseI transcription, indicating that the N-terminal fusions were functionally active. In contrast, the activity of SsrB C-terminal fusions was similar to a ΔssrB strain, indicating that they were not functionally active. (C) A C-terminal fusion of SsrA linked via a 10XGGSG linker to PAmCherry (SsrA-10-PAmCherry) had higher activation of sseI-lacZ compared to the wild-type, but showed a similar fold induction between acid and neutral pH (3.4-fold and 5-fold). Error bars represent standard deviations obtained from three, independent experiments, each measurement was in triplicate.10.7554/eLife.45311.005Figure 2—source data 1.10.7554/eLife.45311.006Figure 2—source data 2.
+**Figure 2.:** (A) The ssrA/B gene structure. OmpR binds upstream of ssrA, PhoP binds upstream of ssrB. The transcription start sites are noted by the bent arrows and the untranslated regions are denoted by the cross-hatchings. See Feng et al. (2003) for more details. (B) The ability of N-terminal fusions of SsrB linked via a 4XGGSG or 10XGGSG linker to PAmCherry (PAmCherry-4-SsrB and PAmCherry-10-SsrB) or C-terminal fusions (SsrB-4-PAmCherry and SsrB-10-PAmCherry) to activate transcription of a SPI-2-linked promoter PsseI-lacZ, was measured by a β-galactosidase assay. Both N-terminal SsrB fusions activated sseI transcription, indicating that the N-terminal fusions were functionally active. In contrast, the activity of SsrB C-terminal fusions was similar to a ΔssrB strain, indicating that they were not functionally active. (C) A C-terminal fusion of SsrA linked via a 10XGGSG linker to PAmCherry (SsrA-10-PAmCherry) had higher activation of sseI-lacZ compared to the wild-type, but showed a similar fold induction between acid and neutral pH (3.4-fold and 5-fold). Error bars represent standard deviations obtained from three, independent experiments, each measurement was in triplicate.
 
 Upon encountering the acidic environment of the SCV, Salmonella acidifies its cytoplasm in an OmpR-dependent manner through repression of the cadC/BA system (Chakraborty et al., 2015). Intracellular acidification provides an important signal for expression and secretion of SPI-2 effectors. There is now increasing evidence that this change in intracellular pH is important for pathogenesis (Chakraborty et al., 2015; Chakraborty et al., 2017; Choi and Groisman, 2016), although little is known as to how cytoplasmic acidification leads to SPI-2 gene activation. In particular, the effect of acidification on SsrA and SsrB has not been thoroughly investigated.
 
@@ -41,49 +41,281 @@ We therefore sought to characterize the response of SsrA and SsrB to acid pH in 
 
 ## Results
 
-## Construction of active SsrA and SsrB photoactivatable fusions
+### Construction of active SsrA and SsrB photoactivatable fusions
 
 In order to characterize the effect of acid pH on SsrB and SsrA function, we determined the number of SsrB and SsrA molecules using PALM imaging of Salmonella grown under SPI-2-inducing (pH 5.6) and SPI-2 non-inducing conditions (pH 7.2). We used a photoactivatable (PA) fluorescent protein, PAmCherry, which has minimal blinking (Durisic et al., 2014). During PALM imaging, proteins tagged with PAmCherry undergo photoactivation events. Each individual photoactivation event ideally represents a single molecule, which allows the counting of cellular proteins (Endesfelder et al., 2013; Uphoff et al., 2013). We constructed C-terminal and N-terminal fusions of SsrB and SsrA with PAmCherry (see Materials and methods for more details). To establish that the SsrB and SsrA fusions were functional, we examined the ability of the fusions to activate transcription of sseI-lacZ, an SsrB-dependent gene (Feng et al., 2004). We measured the β-galactosidase activity of sseI-lacZ under SPI-2-inducing and non-inducing conditions in various Salmonella strains containing SsrB- and SsrA-PAmCherry fusions. Salmonella cells containing C-terminal SsrB fusions exhibited very low β-galactosidase activity during acid induction, similar to the ΔssrB strain, indicating that these fusions were inactive (Figure 2B). In contrast, the N-terminal fusions displayed comparable, albeit slightly higher activity (~1.5–1.6 fold), compared to wildtype. Importantly, these fusions showed similarly low β-galactosidase activity compared to wildtype cells when grown in neutral pH, consistent with previous reports that acid pH was required for transcription of SPI-2 genes (Chakraborty et al., 2015; Feng et al., 2004; Beuzón et al., 1999).
 
 sseI promoter activity was also dependent on the kinase ssrA, as apparent by the low β-galactosidase activity of an ssrA::tetRA mutant (Figure 2C). The β-galactosidase activity of the C-terminal SsrA fusion was higher than the wildtype strain in both acid and neutral pH (4.2-fold and 6.5-fold, respectively, Figure 2C). Despite its higher activity, both the SsrA fusion and the wildtype protein exhibited a similar fold-induction when grown in acid compared to neutral pH (5.1- and 3.4-fold, respectively). These results indicate that the SsrA fusion responds to acid pH and activates sseI transcription in a similar manner as the wildtype strain. Taken together, our results from the sseI-lacZ assay indicate that N-terminal SsrB fusions and C-terminal SsrA fusions were functionally active and capable of activating SPI-2 gene transcription during acid induction.
 
-## Acid pH increases SsrB and SsrA levels
+### Acid pH increases SsrB and SsrA levels
 
 Having shown that the SsrB and SsrA fusions could activate transcription of an SsrB-dependent promoter, we visualized the localization of both proteins when Salmonella cells were grown in acid or neutral pH using PALM imaging (Figure 3A, Figure 3—figure supplement 1). To quantify the number of molecules within each cell, we employed the LocAlization Microscopy Analyzer (LAMA) program to convert PALM localizations into copy numbers (Malkusch and Heilemann, 2016) (Figure 3B). SsrB and SsrA levels were, on average, about 3-fold higher during acid induction when compared to cells grown at neutral pH (84 ± 38 molecules/μm2 vs 28 ± 13 molecules/μm2 for SsrB), and SsrA levels were always substantially lower than SsrB (49 ± 17 molecules/μm2 vs 16 ± 8 molecules/μm2 for SsrA). The increase in both the SsrB RR and the SsrA HK suggested that increasing the concentration of both components of this two-component regulatory system was an important requirement for transcriptional activation of SPI-2 genes during acid stress (Feng et al., 2003).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig3-v2.jpg)
+
+**Figure 3.:** (A) PALM-Brightfield overlay images of PAmCherry-SsrB (top panel) and SsrA-PAmCherry (bottom panel) grown in MgM at acid pH 5.6 or neutral pH 7.2. Asterisk highlights cells that are oriented axially to the glass coverslip. Scale bar = 2 µm. (B) Boxplot quantification of the number of SsrB (red) and SsrA (blue) molecules in individual cells. SsrB and SsrA PAmCherry levels were 3-fold higher during acid pH induction (triangles) compared to neutral pH (circles). The number of molecules/µm2 was calculated by normalizing the total number of localizations within individual cells to its corresponding cell area (µm2). Results were combined from two, independent experiments. The total number of cells analyzed for SsrB at pH 5.6 = 120, SsrB at pH 7.2 = 92, SsrA at pH 5.6 = 117 and SsrA at pH 7.2 = 125. Statistical significance was determined by a two-tailed t-test (unpaired, unequal variances) using Microsoft Excel. **** Denotes p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Nile red staining is more heterogeneous at neutral pH. Scale bar = 2 μm.
 
 We also observed differences in the levels of SsrB compared to SsrA (Figure 3A). For example, during acid induction, SsrB levels were slightly higher than SsrA (1.7-fold) and the variation in the levels of SsrB between individual cells was greater as compared to SsrA levels. This was reflected in the larger standard deviation of SsrB compared to SsrA at pH 5.6 (e.g. 38 vs 17). These differences were also consistent with previous reports that ssrA and ssrB transcription was uncoupled from one another (Feng et al., 2004).
 
 We next examined the role of PhoP and OmpR in regulating SsrB levels, as binding sites for both proteins have been shown to be present upstream of the ssrB open reading frame (Feng et al., 2003; Bijlsma and Groisman, 2005). SsrB levels were reduced in the absence of phoP and ompR (Figure 4), consistent with a role for both regulatory proteins in controlling SsrB expression at acid pH. SsrB levels were reduced 5.3-fold (84 vs 16) in the phoP::kan mutant compared to wild-type, while in the ompR::kan mutant, SsrB was reduced only 1.8-fold (84 vs 47). These results suggest that PhoP plays a greater role than OmpR in regulating SsrB expression from the ssrB promoter during SPI-2 induction in vitro (see Discussion). In previous studies, SsrB-FLAG levels were not detected by Western blot in a phoP null background using a FLAG antibody (Bijlsma and Groisman, 2005). Our results demonstrate that super-resolution imaging is more sensitive than immunoblotting, because we could observe and count SsrB molecules in a phoP null background. This level of SsrB was 4-fold above the background limit determined in an ssrB null strain with no PAmCherry present (Figure 4—figure supplement 1). Expressing phoP or ompR in trans restored SsrB levels as well as acid induction (Figure 4—figure supplement 2).
 
-## The low number of SPI-2 injectisomes on the cell surface is not due to single cell variation in SsrB levels
+![Figure 4.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig4-v2.jpg)
+
+**Figure 4.:** (A) PALM-Brightfield overlay images of cells expressing PAmCherry-SsrB in phoP::kan (top) or ompR::kan (bottom) strains. Cells were grown in MgM media in acid (pH 5.6) and neutral pH (pH 7.2). Scale bar is 2 µm. (B) Boxplot showing quantification of the number of PAmCherry-SsrB molecules in the phoP::kan and ompR::kan mutants when grown in acid pH or neutral pH. The # molecules/µm2 was calculated by normalizing the total number of localizations within individual cells to its corresponding cell area (µm2). Results were combined from two, independent experiments. The total number of cells analyzed for wild-type at pH 5.6 = 120, at pH 7.2 = 92, phoP::kan at pH 5.6 = 131, at pH 7.2 = 140, ompR::kan at pH 5.6 = 131, at pH 7.2 = 117 cells. To determine the background level, we imaged an ssrB null strain lacking PAmCherry. The average localization counts for the strain lacking PAmCherry was four localizations/μm2 (n = 66 cells), while there were 16 localizations/μm2 in the PAmCherry-SsrB phoP::kan strain. Thus, SsrB is detectible above the background. Statistical significance was determined by a two-tailed t-test (unpaired, unequal variances) using Microsoft Excel. The line above the bar graph indicates statistical significance between pairwise group comparisons of all groups. **** Denotes p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The average localization counts for the strain lacking PAmCherry was four localizations/μm2 (n = 66 cells). The number of localizations in the PAmCherry-SsrB phoP::kan strain was 16/μm2 (Figure 4). Thus, it is apparent that we can detect SsrB molecules in the phoP null background. It is worth noting that it was difficult to image the strain, as the extremely low levels of fluorescence made it especially difficult to identify the correct imaging plane. Thus, some of the background signals might be coming from the coverglass itself.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** A boxplot shows the quantification of the number of PAmCherry-SsrB molecules in the p-ompR and p-phoP complemented strains when grown in acid pH or neutral pH. The # molecules/µm2 was calculated by normalizing the total number of localizations within individual cells to its corresponding cell area (µm2). Results were combined from two, independent experiments. The total number of cells analyzed for p-phoP at pH 5.6 = 188, at pH 7.2 = 109, p-ompR at pH 5.6 = 144, at pH 7.2 = 101 cells. Statistical significance was determined by a two-tailed t-test (unpaired, unequal variances) using Microsoft Excel. **** Denotes p<0.0001.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** In contrast to many two-component systems, transcription of ssrA and ssrB is uncoupled and differentially regulated. In vitro transcription assays using supercoiled ssrB (A) and ssrA (B) templates and phosphorylated PhoP~P and OmpR~P, respectively, were employed to confirm previous genetic and biochemical evidence suggesting a direct role for each regulator in activation of transcription. The activator-specific ssrB or ssrA transcripts and 110 nt RNA1 control are indicated by arrows. From left to right in 2-fold increments, reactions contained from 12.5 to 200 nM PhoP~P or OmpR~P. The levels of phosphoprotein for PhoP and OmpR and were 70% and 90%, respectively under the reaction conditions used. In the absence of phosphorylation, neither protein was able to activate transcription of its respective target promoter.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Wild type, ΔphoP, PhoP-PAmCherry and PhoP-PAmCherry strains containing PssrB-lacZ were grown in acid MgM media and assayed for β-galactosidase activity. The mean and standard deviations from two independent experiments was plotted, n = 3. (B) Wild type, ΔompR and OmpR-PAmCherry strains containing (PompF-gfp) were grown in low osmolality A media and imaged under a wide-field microscope for GFP intensity. (C) Wild type, ΔompR and OmpR-PAmCherry strains containing (PompC-gfp) were grown at high osmolality in A media supplemented with 15% sucrose and imaged under a wide-field microscope for GFP intensity in each cell. The mean and standard deviations were obtained from individual bacterial cells and the n is listed above the column.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) PALM-Brightfield overlay images of PhoP-PAmCherry grown in MgM media at acid pH (left panel) or neutral pH (right panel). Scale bar = 2 µm. (B) Boxplot shows the quantification of the number of PhoP molecules in individual cells. The number of molecules/µm2 was calculated by normalizing the total number of localizations within individual cells to its corresponding cell area (µm2). The total number of cells analyzed for PhoP-PAmCherry at pH 5.6 = 122, at pH 7.2 = 140 cells. Statistical analysis was performed by using an unpaired two-tailed t-test (Microsoft Excel). **** Denotes p<0.0001. (C) The fraction of bound and free PhoP-PAmCherry molecules obtained from Spt-PALM during growth in MgM media at acid or neutral pH. The bound fraction (F1) does not change significantly in the two different growth conditions. (D) PALM-Brightfield overlay images of OmpR-PAmCherry when grown in MgM media in acid pH (left panel) or neutral pH (right panel). Scale bar = 2 µm. (E) Boxplot quantifies the number of OmpR molecules in individual cells. The total number of cells analyzed for OmpR-PAmCherry at pH 5.6 = 75, at pH 7.2 = 75 cells. Statistical analysis was performed by using an unpaired two-tailed t-test (Microsoft Excel). **** Denotes p<0.0001. (F) The fraction of bound and free OmpR-PAmCherry molecules obtained from Spt-PALM during growth in MgM media in acid or neutral pH. The bound fraction (F1) was higher in acid (21.9 ± 1.4) compared to neutral pH (16.4 ± 1.0), indicating a 5% increase in the number of OmpR molecules bound to DNA in acid pH.
+
+### The low number of SPI-2 injectisomes on the cell surface is not due to single cell variation in SsrB levels
 
 Unlike many other T3SSs, the Salmonella SPI-2 T3SS is not abundant, and is often localized to the cell pole (Chakraborty et al., 2015; Chakravortty et al., 2005). We visualized these SPI-2 appendages with immunofluorescence microscopy using rabbit antibodies raised against the translocon protein SseB and anti-rabbit antibodies conjugated with an Alexa-488 fluorophore in wild-type cells. The SPI-2 injectisome was only present on 17% of cells under optimal in vitro SPI-2 inducing conditions (Figure 5A upper panels), consistent with previous observations (Chakraborty et al., 2015). Translocons were even less prevalent (~5%) in a ΔssrB mutant (Figure 5A, lower panels), indicating that SsrB is an important regulator of SPI-2 translocon production (Beuzón et al., 1999). The reason for injectisome heterogeneity is unknown, but we wondered whether it might result from single cell variation in SsrB levels, since we had observed heterogeneity in the levels of SsrB in individual cells under SPI-2 inducing conditions using PALM imaging (Figures 3 and 4). Previous observations of bistability of SPI-1 transcriptional regulators (Saini et al., 2010) led us to question whether there was a correlation between the presence of SseB translocons and higher levels of SsrB in individual cells. To address this, we grew cells containing the PAmCherry-SsrB fusion in MgM at acid pH and labeled them with anti-SseB antibody (Figure 5B) to distinguish between cells that were SseB plus (injectisome positive) from cells that lacked SseB (injectisome negative). We then quantified SsrB molecules in cells from both populations to determine if the SseB plus cells contained a higher number of SsrB molecules (Figure 5BC). On average, the number of SsrB molecules in the SseB plus cells was slightly higher than the SseB minus cells (134 vs 112 molecules/μm2), but there was significant overlap in the distribution of SsrB levels in both populations. In other words, most of the SseB plus cells contained similar levels of SsrB as the SseB minus cells. Our results thus suggest that in vitro, SsrB levels do not exclusively determine translocon (injectisome) numbers and other processes must contribute to the variability.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig5-v2.jpg)
 
-**Figure 5.:** (A) SseB production requires SsrB. Immunofluorescence using rabbit anti-SseB antibody (green) of wild-type (top panels) and ΔssrB cells (lower panels). In the wildtype, 17% of the population possessed injectisomes (of 276 cells examined), but only 5% of ΔssrB cells (277 cells) were stained with SseB antibody. Two different images for each strain are shown. A and B are results combined from two, independent experiments. (B) PALM-SseB immunofluorescence overlay image of PAmCherry-SsrB. Arrows indicate cells that produce SseB on their surface. Scale bar is 2 µm. (C) Boxplot shows quantification of the number of PAmCherry-SsrB molecules in cells containing SseB on their surface (SseB plus) or without (SseB minus) (total = 227 cells). Salmonella was grown in MgM media at acid pH. The # molecules/µm2 was calculated by normalizing the total number of localizations within individual cells to its corresponding cell area (µm2). Results from two, independent experiments were combined. Statistical analysis was performed using an unpaired two-tailed t-test (Microsoft Excel). * Denotes p<0.05.10.7554/eLife.45311.023Figure 5—source data 1.10.7554/eLife.45311.024Figure 5—source data 2.
+**Figure 5.:** (A) SseB production requires SsrB. Immunofluorescence using rabbit anti-SseB antibody (green) of wild-type (top panels) and ΔssrB cells (lower panels). In the wildtype, 17% of the population possessed injectisomes (of 276 cells examined), but only 5% of ΔssrB cells (277 cells) were stained with SseB antibody. Two different images for each strain are shown. A and B are results combined from two, independent experiments. (B) PALM-SseB immunofluorescence overlay image of PAmCherry-SsrB. Arrows indicate cells that produce SseB on their surface. Scale bar is 2 µm. (C) Boxplot shows quantification of the number of PAmCherry-SsrB molecules in cells containing SseB on their surface (SseB plus) or without (SseB minus) (total = 227 cells). Salmonella was grown in MgM media at acid pH. The # molecules/µm2 was calculated by normalizing the total number of localizations within individual cells to its corresponding cell area (µm2). Results from two, independent experiments were combined. Statistical analysis was performed using an unpaired two-tailed t-test (Microsoft Excel). * Denotes p<0.05.
 
-## SsrB binding to DNA is acid-dependent
+### SsrB binding to DNA is acid-dependent
 
 Because SPI-2 genes were acid-induced (Chakraborty et al., 2015; Feng et al., 2004; Chakraborty et al., 2017), we reasoned that acid pH might be an important factor in regulating the DNA binding dynamics of SsrB. To examine this, we used Spt-PALM to quantify DNA binding of SsrB under different growth conditions in live bacterial cells (Figure 6). We first grew Salmonella containing the PAmCherry-SsrB fusion in acid and neutral pH, and then placed these cells on agarose pads reconstituted with media at the appropriate pH. The power of the 405 nm activation laser was controlled such that only a single molecule was activated per cell. The 561 nm excitation laser tracked the single molecule. The location of single PAmCherry-SsrB molecules were followed until they photobleached and then they were linked to form tracks (Figure 6A). The apparent diffusion coefficients, D, were obtained from the distribution of displacement r (the distance moved by the molecule in subsequent camera frames) plotted as a cumulative distribution function (CDF) (see Figure 6—figure supplement 1) (Yang et al., 2016; Schütz et al., 1997). A three-component diffusion model best fit our data (Figure 6—figure supplement 1 and Table 1) (Gao et al., 2017). From the CDF fits, apparent D values fell into three categories, (i) < 0.1 µm2s−1, (ii) 0.1–0.4 µm2s−1 and (iii) > 1.2 µm2s−1, representing (i) bound, (ii) transiently bound and (iii) free SsrB molecules (Gao et al., 2017; Elf et al., 2007; Sanamrad et al., 2014; Stracy et al., 2015). D values of fixed cells expressing PAmCherry-SsrB grown in acid were less than <0.1 µm2s−1, further validating a low D of immobile (bound) molecules. A significantly higher population of SsrB molecules was bound in acidic conditions compared to neutral pH (F1 = 28.1% vs 11.3%). It was also interesting to note that the diffusion coefficient for the ‘transiently bound’ SsrB population (D2) was significantly slower in acid compared to neutral pH, with values of D2 = 0.14 µm2s−1 (F2 = 34.5%) vs 0.25 µm2s−1 (22.2%), indicating that acidic conditions increased the affinity of SsrB for DNA (see Figures 7 and 8).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig6-v2.jpg)
+
+**Figure 6.:** (A) The left panel contains two representative fluorescence signals of a mobile and immobile molecule. Images were acquired at 17 ms intervals. The right panel contains the tracks of the signals from the left panel. The yellow dotted line is the outline of the bacterial cell obtained from brightfield imaging segmentation. Displacement r is the distance travelled in adjacent frames by a molecule. (B) The values of the displacement r, were plotted as a CDF. The CDF fits of various SsrB mutants and wild-type SsrB grown in different pH are shown. A shift in the curve to the right indicates an increase in D. The fitted values can be found in Table 1. (C) Values obtained from the CDF are represented onto the PDF histogram of r to display the distribution of r values responsible for the corresponding D. The red curve indicates the distribution for D1, the green curve indicates the distribution for D2 and the blue curve indicates the distribution for D3. r values below the red dotted line are threshold values indicative of the bound fraction obtained from fixed cells expressing SsrB (see Table 1 for the number of tracks for each experiment and the number of cells analyzed). The distribution of D2 extends past this threshold, suggesting that D2 is a transient, weaker binding fraction. (D) Values of F1, F2 and F3 of the SsrB mutants. An increase in the values of F1 and F2 for WT grown in pH 5.6 illustrates increased SsrB binding to DNA. The dotted line indicates the basal bound F1 value (5.4%) obtained from PAmCherry alone, which is not bound to DNA. (E) SsrBD56A-, SsrBK179A-, and SsrBD56E-PAmCherry fusions do not activate SPI-2 gene transcription. Wild-type, ΔssrB and strains expressing the corresponding PAmCherry-SsrB fusions containing sseI-lacZ were grown in acid MgM media and β-galactosidase activity was measured. The mean and standard deviations were obtained from two, independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Work flow of Spt-PALM. The distance moved by a molecule in subsequent camera frames, termed displacement r, can be plotted as a probability distribution function (PDF), which contains r from all the tracks obtained. Obtaining the apparent diffusion coefficient D from a fit of the PDF depends on the binning. Thus, the PDF is converted into a cumulative distribution function (CDF) and fitted with Equation 3 (see Materials and methods). The values obtained from the fit are then plotted back into the PDF for presentation. (B) Data fitted with a two-component diffusion model equation vs (C) data fitted with three-component diffusion model (Equation 3). From the residuals of the fits, a three-component diffusion model best fit our data and was used throughout.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The nucleoids were stained with DRAQ5. The nucleoid area of cells grown at pH 7.2 was 0.62 ± 0.15 µm2, n = 161. At pH 5.6, the nucleoid area was 0.50 ± 0.22 µm2, n = 182 (a ratio of 0.81). The intensity of the DRAQ5 signal in cells grown at pH 7.2 was 80553 ± 25446, while at pH 5.6 it was 66410 ± 20727 (ratio of 0.82).
+
 ![Figure 7.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig7-v2.jpg)
 
-**Figure 7.:** (A) AFM image of sifA DNA in the absence of SsrB, or in the presence of 30 nM SsrB or 30 nM SsrBK179A at pH 6.8 (lower panels) and pH 6.1 (upper panels). The AFM images of 704sifA DNA were identical at pH 6.8 and pH 6.1 (left panels). When 30 nM SsrB was added, binding and bending of DNA was apparent in a minor percentage of the population at pH 6.8, whereas binding and DNA condensation was significantly increased at pH 6.1. The pH values were selected based on the previously measured pH values in response to acid stress (704Chakraborty et al., 2017). The K179A mutant did not bind to DNA (Carroll et al., 2009). Scale bar, 100 nm. (B) A relative height distribution histogram of the sifA promoter complexed with 30 nM SsrB at pH 6.8 (blue bars) compared to pH 6.1 (red bars). The apparent height of naked DNA peaks at ~0.5 nm (black columns), while above 1 nm, the probability of the height decreases to near zero (704Gao et al., 2017). Therefore, the height detected at above 1 nm corresponds to SsrB binding. SsrB shows an extended height distribution at pH 6.1 (up to 5 nm), reflecting its enhanced ability to bind, bend, and condense DNA at acid pH (Desai et al., 2016).10.7554/eLife.45311.031Figure 7—source data 1.
+**Figure 7.:** (A) AFM image of sifA704 DNA in the absence of SsrB, or in the presence of 30 nM SsrB or 30 nM SsrBK179A at pH 6.8 (lower panels) and pH 6.1 (upper panels). The AFM images of sifA704 DNA were identical at pH 6.8 and pH 6.1 (left panels). When 30 nM SsrB was added, binding and bending of DNA was apparent in a minor percentage of the population at pH 6.8, whereas binding and DNA condensation was significantly increased at pH 6.1. The pH values were selected based on the previously measured pH values in response to acid stress (Chakraborty et al., 2017). The K179A mutant did not bind to DNA (Carroll et al., 2009). Scale bar, 100 nm. (B) A relative height distribution histogram of the sifA704 promoter complexed with 30 nM SsrB at pH 6.8 (blue bars) compared to pH 6.1 (red bars). The apparent height of naked DNA peaks at ~0.5 nm (black columns), while above 1 nm, the probability of the height decreases to near zero (Gao et al., 2017). Therefore, the height detected at above 1 nm corresponds to SsrB binding. SsrB shows an extended height distribution at pH 6.1 (up to 5 nm), reflecting its enhanced ability to bind, bend, and condense DNA at acid pH (Desai et al., 2016).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic of the principle of the measurement (see Gulvady et al., 2018 for more details). A force is applied to the hairpin using a pair of permanent magnets shown in gray (N: north pole, S: south pole). At a force slightly greater than the critical force, Fc, the naked DNA hairpin has a short lifetime of τ1, while the hairpin bound with SsrB has a much longer lifetime of τ2. This delayed unzipping indicates SsrB binding. See Figure 8—figure supplement 1 for the binding traces. (B) The equilibrium binding probability as a function of SsrB concentration was plotted at pH 6.1 and (C) pH 7.4. These were the measured intracellular pH values of Salmonella in response to acid or neutral pH (Chakraborty et al., 2015; Chakraborty et al., 2017). The solid curves are the fitted curves to the Hill equation, the error bars represent the S.E.M. At pH 6.1 the KD was 47.4 ± 4.2 nM and the Hill coefficient (n) was 3.15 ± 0.82 nM. At pH 7.4, the KD increased to 239.1 ± 28.2 nM and the Hill coefficient (n) was still cooperative at 2.14 ± 0.5. Three to five independent tethers were analyzed for each point of the curves, and at least three independent probability values were determined at each SsrB concentration.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The measurements were recorded at three forces: the binding force (∼3 pN, gray, 2 min), at which the SsrB-hairpin complex reaches equilibrium, the probing force (∼12 pN, blue, 30 s), slightly greater than Fc, to observe the binding signals, if any, and the displacing force (∼30 pN, magenta, 5 s), to rapidly displace bound SsrB. The black arrows indicate the cycles at which SsrB-DNA binding was observed.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/45311/elife-45311-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Purified SsrB was resuspended in acid buffer (20 mM MES pH 6.1, 50 mM KCl, 2 mM MgCl2, 2 mM DTT, 5% glycerol) or neutral buffer (20 mM Hepes pH 7.4, 50 mM KCl, 2 mM MgCl2, 2 mM DTT, 5% glycerol) and then separated on a gel filtration column using an AKTA FPLC system. The nearly identical elution profiles of SsrB indicate that SsrB is a monomer at both acid and neutral pH.
+
+**Table 1.**
+ Apparent diffusion coefficient D obtained from SptPALM of SsrB mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>No. of cells</th>
+      <th>No. of tracks</th>
+      <th>F1 (%)</th>
+      <th>F2 (%)</th>
+      <th>F3 (%)</th>
+      <th>D1 (µm2s−1)</th>
+      <th>D2 (µm2s−1)</th>
+      <th>D3 (µm2s−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fixed</td>
+      <td>41</td>
+      <td>496</td>
+      <td>26.9 ± 4.0</td>
+      <td>65.0 ± 3.7</td>
+      <td>8.1 ± 0.6</td>
+      <td>0.020 ± 0.002</td>
+      <td>0.066 ± 0.003</td>
+      <td>0.88 ± 0.08</td>
+    </tr>
+    <tr>
+      <td>WT pH5.6</td>
+      <td>89</td>
+      <td>2618</td>
+      <td>28.1 ± 2.6</td>
+      <td>34.5 ± 2.3</td>
+      <td>37.3 ± 0.5</td>
+      <td>0.041 ± 0.002</td>
+      <td>0.14 ± 0.01</td>
+      <td>1.49 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>WT pH7.2</td>
+      <td>71</td>
+      <td>569</td>
+      <td>11.3 ± 1.1</td>
+      <td>22.2 ± 1.0</td>
+      <td>66.5 ± 1.2</td>
+      <td>0.037 ± 0.004</td>
+      <td>0.25 ± 0.03</td>
+      <td>1.53 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>K179A pH5.6</td>
+      <td>113</td>
+      <td>1038</td>
+      <td>11.3 ± 1.3</td>
+      <td>18.7 ± 1.2</td>
+      <td>69.9 ± 1.5</td>
+      <td>0.056 ± 0.006</td>
+      <td>0.32 ± 0.05</td>
+      <td>1.70 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>D56A pH5.6</td>
+      <td>109</td>
+      <td>1345</td>
+      <td>20.5 ± 1.4</td>
+      <td>24.0 ± 1.1</td>
+      <td>55.5 ± 1.2</td>
+      <td>0.045 ± 0.003</td>
+      <td>0.26 ± 0.03</td>
+      <td>1.61 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>D56A pH7.2</td>
+      <td>74</td>
+      <td>384</td>
+      <td>13.0 ± 1.5</td>
+      <td>27.3 ± 1.4</td>
+      <td>59.8 ± 1.9</td>
+      <td>0.050 ± 0.005</td>
+      <td>0.31 ± 0.04</td>
+      <td>1.66 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>D56E pH5.6</td>
+      <td>111</td>
+      <td>796</td>
+      <td>11.1 ± 0.8</td>
+      <td>16.2 ± 1.7</td>
+      <td>72.8 ± 2.2</td>
+      <td>0.053 ± 0.004</td>
+      <td>0.39 ± 0.06</td>
+      <td>1.52 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>PAmCherry pH5.6</td>
+      <td>53</td>
+      <td>715</td>
+      <td>5.4 ± 0.3</td>
+      <td>27.8 ± 1.3</td>
+      <td>66.7 ± 1.4</td>
+      <td>0.029 ± 0.004</td>
+      <td>0.67 ± 0.04</td>
+      <td>3.61 ± 0.07</td>
+    </tr>
+    <tr>
+      <td>PhoP pH 5.6</td>
+      <td>81</td>
+      <td>3665</td>
+      <td>9.8 ± 1.5</td>
+      <td>23.7 ± 1.3</td>
+      <td>66.4 ± 0.4</td>
+      <td>0.033 ± 0.004</td>
+      <td>0.14 ± 0.01</td>
+      <td>1.54 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>PhoP pH 7.2</td>
+      <td>103</td>
+      <td>2930</td>
+      <td>10.6 ± 0.6</td>
+      <td>18.8 ± 1.5</td>
+      <td>70.6 ± 1.8</td>
+      <td>0.043 ± 0.003</td>
+      <td>0.40 ± 0.04</td>
+      <td>1.58 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>OmpR pH 5.6</td>
+      <td>43</td>
+      <td>1610</td>
+      <td>21.9 ± 1.4</td>
+      <td>20.9 ± 1.0</td>
+      <td>57.0 ± 1.3</td>
+      <td>0.054 ± 0.003</td>
+      <td>0.26 ± 0.03</td>
+      <td>1.34 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>OmpR pH 7.2</td>
+      <td>55</td>
+      <td>2119</td>
+      <td>16.4 ± 1.0</td>
+      <td>28.0 ± 0.9</td>
+      <td>55.6 ± 1.0</td>
+      <td>0.045 ± 0.003</td>
+      <td>0.25 ± 0.02</td>
+      <td>1.45 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>OmpR pH 5.6 (E.coli)</td>
+      <td>23</td>
+      <td>1644</td>
+      <td>24.3 ± 0.9</td>
+      <td>39.4 ± 3.7</td>
+      <td>36.2 ± 4.2</td>
+      <td>0.066 ± 0.003</td>
+      <td>0.55 ± 0.06</td>
+      <td>2.06 ± 0.14</td>
+    </tr>
+    <tr>
+      <td>OmpR pH 7.2 (E.coli)</td>
+      <td>22</td>
+      <td>478</td>
+      <td>15.3 ± 1.2</td>
+      <td>45 ± 1.8</td>
+      <td>39.7 ± 2.4</td>
+      <td>0.057 ± 0.005</td>
+      <td>0.40 ± 0.03</td>
+      <td>2.06 ± 0.09</td>
+    </tr>
+  </tbody>
+</table>
 
 Using Spt-PALM, we also characterized the effect of different SsrB substitutions on DNA binding. K179A, a DNA-binding mutant of SsrB (Carroll et al., 2009) demonstrated significantly reduced binding to DNA compared to the wild-type (F1 = 11.3% vs 28.1%) in acid pH (see Figure 6). This level of binding by K179A was identical to the level of wildtype SsrB bound under non-inducing conditions and defined a background limit. DNA binding was slightly above background with the phosphorylation site mutant D56A (F1 = 20.5% in acid vs 13.0% in neutral pH). Neither the D56A nor the K179A SsrB mutant was able to activate transcription of sseI-lacZ, a SPI-2 co-induced transcriptional fusion (Figure 6E), indicating that while the D56A mutant was not able to activate SPI-2 transcription, its elevated levels of DNA binding compared to K179A was most likely due to its binding to sites that do not require SsrB phosphorylation (Desai et al., 2016). This result illustrates that DNA binding alone by SsrB was insufficient for activating transcription.
 
-## A ‘constitutively active’ SsrB phosphomimetic (D56E) does not bind DNA in live cells
+### A ‘constitutively active’ SsrB phosphomimetic (D56E) does not bind DNA in live cells
 
 Interestingly, we also examined the DNA binding ability of a ‘constitutively active’ SsrB variant (D56E), which was previously reported to repress hilA expression in a mouse infection model (Pérez-Morales et al., 2017). In acidic pH, the binding of the D56E mutant was F1 = 11.1% compared to wild-type SsrB (28.1%). This level of binding was similar to the background level of binding observed with the wildtype at neutral pH and the DNA binding mutant K179A (Figure 6B). In addition, the D56E mutant was unable to activate transcription of sseI-lacZ when grown in acid pH (Figure 6E). This result indicates that the presumed phospho-mimicry was not effective in supporting high affinity DNA binding by SsrB, and the effects on hilA in the mouse studies were likely the result of over-expression of SsrBD56E (Pérez-Morales et al., 2017) (see Discussion). Overall, our Spt-PALM results reveal that acid pH increases the binding of SsrB to DNA in live cells, and binding does not require phosphorylation. Furthermore, a substitution that was reported to mimic the phosphorylated state does not increase SsrB binding to DNA above background.
 
-## Acid pH increases SsrB binding to DNA
+### Acid pH increases SsrB binding to DNA
 
 Based on the Spt-PALM results, we considered the possibility that an increase in SsrB binding might be due to an intrinsic change in protein conformation, since Salmonella encounters an acid environment (pH 5.6) in the vacuole (Chakraborty et al., 2015). To test this possibility, we purified full length wild-type SsrB and examined binding to a 704 bp DNA fragment containing the promoter and regulatory region of the SPI-2 effector sifA using AFM. The naked DNA in the absence of protein is shown in Figure 7A (left panels). Consistent with previous reports (Desai et al., 2016), we observed that, even at low protein concentrations (30 nM), at pH 6.8, unphosphorylated SsrB could bind and bend at specific sites of the DNA (Figure 7A, lower panels), although at this concentration, only a low level of binding was evident (see below). At acid pH (pH 6.1, the intracellular pH we measured previously [Chakraborty et al., 2017]), a significant increase in SsrB binding to the sifA promoter was evident both in the AFM images (Figure 7A, upper panels) and was reflected in the extensive relative height distribution histogram compared to pH 6.8 (Figure 7B). This widespread condensation and cooperative binding of SsrB to DNA at acid pH was consistent with the increased binding observed in our Spt-PALM experiments (Figure 6), and also indicated that SsrB undergoes a conformational change in acid pH, which increases its affinity for DNA. As expected, the DNA binding mutant K179A (Carroll et al., 2009) was unable to bind to DNA at either pH (Figure 7A).
 
 We were able to measure the change in binding affinity produced by acid pH using a highly sensitive single molecule counting assay (Gulvady et al., 2018). In this assay, a DNA hairpin was created that contained an SsrB binding site (Figure 8A). Delayed hairpin unzipping was observed in the presence of SsrB (Figure 8—figure supplement 1). At neutral pH, the KD for SsrB binding was 239 nM (Figure 8B), whereas at pH 6.1, the KD was reduced by 5-fold to 47 nM (Figure 8B). Thus, acid pH not only increases the number of SsrB molecules in the cell, but it also leads to higher affinity binding to DNA. Elution of SsrB by size exclusion chromatography was identical at acid and neutral pH, indicating that SsrB dimerization was not pH-dependent (Figure 8—figure supplement 2).
 
-## Is acid-dependent DNA binding an intrinsic property of RRs?
+### Is acid-dependent DNA binding an intrinsic property of RRs?
 
 We were interested in determining whether acid-dependent DNA binding might be an hitherto unrecognized intrinsic property of RRs. An increase in DNA binding affinity in acid pH was observed with the RR OmpR, but the amount of OmpR bound to DNA was not determined (Chakraborty et al., 2017). We therefore used PALM and Spt-PALM to compare the localization and dynamics of OmpR and PhoP, two RRs that regulate SPI-2 (Figure 4), after growth in acid or neutral pH. Previous experiments have shown that OmpR (Feng et al., 2003) and PhoP (Bijlsma and Groisman, 2005) directly bind to the promoter region of ssrB, stimulating its transcription, and the phosphoproteins bind and activate transcription in vitro (Figure 4—figure supplement 3).
 
@@ -93,7 +325,7 @@ Using PALM, we visualized the PhoP-PAmCherry fusion and observed that overall le
 
 In contrast, OmpR levels in acidic media increased only 1.2-fold compared to neutral pH (183 ± 50 vs 153 ± 43 molecules/µm2) (Figure 4—figure supplement 4D–E), but there was a slight increase in the DNA-bound fraction F1 (21.9 ± 1.4) compared to neutral pH (16.4 ± 1.0) (Figure 4—figure supplement 4F). Thus, SsrB binding to DNA was exquisitely acid-sensitive, increasing ~60% (Figures 5 and 6 and Table 1), whereas OmpR binding only increased 5% and PhoP binding did not change. These results suggest that increased DNA binding in acid pH is not an intrinsic property of RRs, but rather is due to an acid-dependent conformational change in SsrB.
 
-## Acid pH does not relax the nucleoid
+### Acid pH does not relax the nucleoid
 
 What is the stimulus during acid stress that increases SPI-2 gene expression? One model proposed that acid pH led to chromosome relaxation, exposing sites for OmpR that were not normally available (Quinn et al., 2014). That model was based on studies of plasmid DNA in the presence of novobiocin. To measure chromosome compaction directly, we imaged the area of the Salmonella nucleoid (Gao et al., 2017) stained with DRAQ5 after growth at different pH values. The area of the nucleoid in acid was actually smaller (0.50 ± 0.22 µm2) than when grown at neutral pH (0.62 ± 0.15 µm2). The ratio of the two was 0.81 (Figure 6—figure supplement 2). Thus, the nucleoid was more compact at acid pH, in keeping with previous observations (Gao et al., 2017; Foo et al., 2015). To eliminate the possibility that this difference was affected by the DNA replication rate, we compared the fluorescence intensity of the DRAQ5 stained nucleoid, which is proportional to the amount of DNA/cell. The average intensity/cell in acid pH was 66410, while in neutral pH it was 80553. The ratio was 0.82, that is similar to the ratios of nucleoid area. Thus, DNA relaxation in acid pH was not apparent. The method was capable of discerning relaxation, because addition of the gyrase inhibitor novobiocin increased nucleoid area by 20% (Gao et al., 2017).
 
@@ -101,13 +333,13 @@ What is the stimulus during acid stress that increases SPI-2 gene expression? On
 
 The system used to construct the photoactivatable fusion proteins employed in this study will be useful for future studies of transcriptional regulators in Salmonella and E. coli. In particular, PALM localization studies combined with Spt-PALM to track protein dynamics under different environmental conditions will enhance our understanding of the signaling repertoire in bacteria.
 
-## Acid pH increased SsrA/B levels and SsrB affinity for DNA
+### Acid pH increased SsrA/B levels and SsrB affinity for DNA
 
 Upon encountering the acidic environment of the SCV, S. Typhimurium undergoes intracellular acidification via repression of the cadC/BA system by OmpR (Chakraborty et al., 2015). This acidification step is essential for secretion of SPI-2 effectors such as SseJ (Chakraborty et al., 2015). However, how cytoplasmic acidification led to SPI-2 gene activation remained unclear. In this study, we used super-resolution microscopy and determined that acid pH led to up-regulation of SsrA and SsrB, the main regulators of SPI-2 gene expression. Higher levels of ssrB transcripts have been previously observed using RT-PCR and microarrays comparing Salmonellae grown at different pH values (Chakraborty et al., 2017). SsrB levels were higher and showed larger intercellular variability compared to SsrA during acid induction, corroborating previous reports that expression of ssrA and ssrB were uncoupled (Feng et al., 2004). Our observations that ssrA and ssrB were driven by separate promoters and their transcription was dependent on different global regulators, EnvZ/OmpR and PhoP/Q, further illustrates this point (Figure 4—figure supplement 3). This differential regulation is in contrast to many other two-component systems (e.g., OmpR/EnvZ) where the RR and the HK are translationally coupled (Comeau et al., 1985). Higher levels of SsrB, in the near absence of its kinase SsrA at neutral pH allows SsrB to drive a lifestyle switch (Figure 1, right), which up-regulates biofilm formation and establishes the carrier state (Desai et al., 2016). This asymptomatic state, in which Salmonella forms biofilms on gallstones in the gallbladder, allows Salmonella to persist in the environment and further transmit disease.
 
 SsrB protein levels increased in response to acid pH, and SsrB binding to DNA in live S. Typhimurium cells also increased. SsrB binding was not clustered to specific regions of the chromosome (e.g the SPI-2 locus), but was distributed across the length of the cell (Figure 3), supporting the view that SsrB regulates many other genes that reside outside the SPI-2 locus (Desai et al., 2016). The SsrB-D56A non-phosphorylatable mutant maintained a low level of DNA binding above that of the K179A DNA binding mutant (Carroll et al., 2009), further supporting a role for unphosphorylated SsrB as a lifestyle switch in promoting biofilm formation (Desai et al., 2016). Acid-dependent DNA binding by SsrB was not a conserved feature of response regulators, because PhoP binding was not higher at acidic pH (Figure 4—figure supplement 5C) and OmpR binding only increased by 5% (Figure 4—figure supplement 5F), although the affinity of OmpR for DNA was acid-sensitive (Chakraborty et al., 2017). Even though PhoP protein levels increased during acid induction, higher levels of protein alone were not sufficient to drive DNA binding. Instead, our data suggests that PhoP is structurally less sensitive to changes in pH and is more reliant on phosphorylation by PhoQ to increase its affinity for DNA (Lejona et al., 2004). OmpR and PhoP are both members of the OmpR subfamily of response regulators with a winged-helix-turn-helix DNA binding domain (Rhee et al., 2008), indicating that structural homology does not necessarily determine functional homology. In contrast, SsrB is in the NarL/FixJ subfamily and its binding affinity was extremely pH-sensitive. Dimerization of SsrB was not pH-sensitive, according to size exclusion chromatography (Figure 8—figure supplement 2), thus understanding the effect of pH on SsrB will require more extensive analysis. NMR experiments are in progress to determine the precise molecular location of this pH-sensitivity switch. However, an examination of the pIs of NarL subfamily members indicates a range from 5.42 to 7.34 and suggests that SsrB (pI 7.34) is likely to be the most acid-sensitive compared to NarL (pI 5.6), for example. In response to in vitro acid stress, the Salmonella cytoplasm acidified to pH 6.1 (22). At this pH, SsrB would be positively charged, and this increase in positive charge would promote an interaction with negatively charged DNA. RcsB, with a pI of 6.85, is closest to SsrB; it may possess some acid-dependence. In our structural analysis, RcsB shared one DNA contact residue with SsrB, whereas NarL did not share any (Carroll et al., 2009). RcsB, like SsrB, can also act non-canonically in the absence of its cognate kinase (reviewed in Desai and Kenney, 2017).
 
-## A caution regarding ‘phosphomimetics’
+### A caution regarding ‘phosphomimetics’
 
 Phosphoamino acids in proteins act as separate entities that diversify the chemical nature of protein surfaces. The phosphate group has a large hydrated shell and greater negative charge compared to Asp or Glu, whose carboxyl side chains have only a single negative charge and a smaller hydrated sphere (Hunter, 2012). However, a glutamic acid substitution is often used to replace aspartic acid with a claim that substitution produces a constitutively active protein. We examined the behavior of a ‘constitutively active’ SsrB variant (D56E), which was reported to be active in a mouse infection model (Pérez-Morales et al., 2017). Surprisingly, the D56E mutant was not able to activate sseI transcription (Figure 6E), nor was it capable of DNA binding in live cells (Figure 6D). One plausible explanation for the previous claim of SsrB ‘activation’ was that plasmid-expression of SsrB D56E (Pérez-Morales et al., 2017) led to inappropriate regulation (see Haldimann and Wanner, 2001). A vicinal pair of Glu residues might serve as a better phophomimetic than a single Glu, since this would generate a local double negative charge (Pearlman et al., 2011).
 
@@ -115,27 +347,289 @@ In summary, we have shown that acid pH is an important signal that regulates Ssr
 
 ## Materials and methods
 
-## Bacterial strains, media and culture conditions
+### Bacterial strains, media and culture conditions
 
 Bacterial strains and plasmids used in this study are listed in Table 2. Overnight cultures of bacteria were grown in Luria-Bertani (Bacto, USA) broth at 37°C or 30°C, where appropriate, with shaking at 250 rpm. For antibiotic selection, the following antibiotics were used: Tetracycline (12.5 µg/ml), Ampicillin (100 µg/ml), Kanamycin (60 µg/ml) and Chloramphenicol (10 µg/ml). All antibiotics were purchased from Sigma (USA). Growth in MgM media was based on previously published protocols (8,15). First, 1 ml of overnight culture was pelleted (6800 x g, 3 min), washed once with 1 ml of PBS and resuspended in 50 µl of PBS. Then, 3 ml of fresh MgM media pH 5.6 or pH 7.2 (8) was inoculated with 6 µl of the cell suspension. Cultures were then grown at 37°C with shaking at 250 rpm until OD600 reached between 0.5-0.8.
 
-## Molecular biology techniques
+### Molecular biology techniques
 
 DNA manipulation techniques were performed as previously described (Sambrook et al., 1989) using appropriate restriction enzymes and DNA ligase (Thermofisher, USA). Gel extractions and plasmid extractions were performed using the QIAGEN Gel extraction and QIAGEN Miniprep kits, respectively, according to the manufacturer’s instructions. Polymerase chain reaction (PCR) was performed using Q5 High-Fidelity DNA polymerase (NEB, USA) with primers (IDT, Singapore) listed in Table 2 according to the manufacturer’s instructions. PAGE purification was used for primers with lengths of more than 100 bps. Sanger sequencing was used to check the integrity of the DNA constructs used in this study (AIT Biotech, Singapore). Transformation of Salmonella strains was performed by standard electroporation protocols (Sambrook et al., 1989).
 
-## Construction of phoP and ompR mutants
+**Table 2.**
+ Strains and plasmid used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain number/plasmid</th>
+      <th>Description/genotype</th>
+      <th>Reference/Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Salmonella strains</td>
+    </tr>
+    <tr>
+      <td>AL63</td>
+      <td>Wild-type Salmonella Typhimurium 14028 s</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>AL142</td>
+      <td>ssrA::tetRA (TetRA)</td>
+      <td>(Winardhi et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>AL160</td>
+      <td>ssrA::tetRA attB:: ssrA-PAmCherry (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL123</td>
+      <td>ssrB::ssrB-4-PAmCherry (TetRA)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL125</td>
+      <td>ssrB::ssrB-10-PAmCherry (TetRA)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL159</td>
+      <td>attB:: PssrB-PAmCherry (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL60</td>
+      <td>ΔssrB</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>AL89</td>
+      <td>ΔssrB attB::PAmCherry-4-ssrB (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL92</td>
+      <td>ΔssrB attB::PAmCherry-10-ssrB (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL286</td>
+      <td>ΔssrB attB::PAmCherry-4-ssrB D56A (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL489</td>
+      <td>ΔssrB attB::PAmCherry-4-ssrB D56E (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL289</td>
+      <td>ΔssrB attB::PAmCherry-4-ssrB K179A (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL518</td>
+      <td>phop::kanR</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL522</td>
+      <td>phop::kanR attB::PAmCherry-4-ssrB (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL325</td>
+      <td>ΔphoP</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL391</td>
+      <td>ΔphoP attB::phoP-4-PAmCherry (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL394</td>
+      <td>ΔphoP attB::phoP-10-PAmCherry (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL520</td>
+      <td>ompR::kanR</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL524</td>
+      <td>ompR::kanR attB::PAmCherry-4-ssrB (CmR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>AL525</td>
+      <td>ΔompR</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td colspan="3">E. coli strains</td>
+    </tr>
+    <tr>
+      <td>AL53</td>
+      <td>BW25141 pir+</td>
+      <td>(Bijlsma and Groisman, 2005)</td>
+    </tr>
+    <tr>
+      <td>AL217</td>
+      <td>BL21 (DE3)</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td colspan="3">Plasmids vectors</td>
+    </tr>
+    <tr>
+      <td>pKD46</td>
+      <td>λ-Red recombinase expression plasmid (AmpR).</td>
+      <td>(Kenney, 2018)</td>
+    </tr>
+    <tr>
+      <td>pCP20</td>
+      <td>Plasmid containing FLP recombinase for removal of CmR resistance marker flanked by FRT sites (AmpR).</td>
+      <td>(Kenney, 2018)</td>
+    </tr>
+    <tr>
+      <td>pKD3</td>
+      <td>Plasmid used as a template for amplifying the CmR resistance cassette for constructing gene knockouts in Salmonella (CmR).</td>
+      <td>(Kenney, 2018)</td>
+    </tr>
+    <tr>
+      <td>pINT-ts</td>
+      <td>CRIM helper plasmid (AmpR).</td>
+      <td>(Bijlsma and Groisman, 2005)</td>
+    </tr>
+    <tr>
+      <td>pCAH63</td>
+      <td>CRIM cloning vector (CmR).</td>
+      <td>(Bijlsma and Groisman, 2005)</td>
+    </tr>
+    <tr>
+      <td>pAL-4-PAmCherry</td>
+      <td>CRIM cloning vector containing the 4XGGSG linker upstream of PAmCherry (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-10-PAmCherry</td>
+      <td>CRIM cloning vector containing the 10XGGSG linker upstream of PAmCherry (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-PAmCherry-4-SsrB</td>
+      <td>CRIM plasmid containing the N-terminal PAmCherry-4XGGSG-ssrB fusion (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-PAmCherry-4-SsrB D56A</td>
+      <td>CRIM plasmid containing the N-terminal PAmCherry-4XGGSG-ssrB D56A fusion (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-PAmCherry-4-SsrB D56E</td>
+      <td>CRIM plasmid containing the N-terminal PAmCherry-4XGGSG-ssrB D56E fusion (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-PAmCherry-4-SsrB K179A</td>
+      <td>CRIM plasmid containing the N-terminal PAmCherry-4XGGSG-ssrB K179A fusion (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-PssrB-PAmCherry</td>
+      <td>CRIM plasmid with a 500 bps 5’UTR fragment containing the ssrB promoter cloned upstream of PAmCherry.</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-PAmCherry-10-SsrB</td>
+      <td>CRIM plasmid containing the N-terminal PAmCherry-10XGGSG-ssrB fusion (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-SsrA-10-PAmCherry</td>
+      <td>CRIM plasmid containing the C-terminal ssrA-10XGGSG-PAmCherry fusion (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-PhoP-4-PAmCherry</td>
+      <td>CRIM plasmid containing the C-terminal phoP-4XGGSG-PAmCherry fusion (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pAL-PhoP-10-PAmCherry</td>
+      <td>CRIM plasmid containing the C-terminal phoP-10XGGSG-PAmCherry fusion (CmR).</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMPM-A5Ω</td>
+      <td>pBR322 ori araC PBAD promoter Ω-interposon MCS (AmpR)</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>pMPM-A5Ω-his-ssrB</td>
+      <td>pMPM-A5Ω plasmid cloned with 6xhis-ssrB (AmpR)</td>
+      <td>(Arnoldini et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>pMPM-A5Ω-his-ssrB-D56A</td>
+      <td>pMPM-A5Ω plasmid cloned with 6xhis-ssrB D56A (AmpR)</td>
+      <td>(Arnoldini et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>pMPM-A5Ω-his-ssrB-D56E</td>
+      <td>pMPM-A5Ω plasmid cloned with 6xhis-ssrB D56E (AmpR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pMPM-A5Ω-his-ssrB-K179A</td>
+      <td>pMPM-A5Ω plasmid cloned with 6xhis-ssrB K179A (AmpR)</td>
+      <td>(Chakraborty et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>pMPM-A5Ω-his-ssrBc</td>
+      <td>pMPM-A5Ω plasmid cloned with 6xhis-ssrBc (AmpR)</td>
+      <td>(Arnoldini et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>pMPM-A5Ω-his-phoP</td>
+      <td>pMPM-A5Ω plasmid cloned with 6xhis-phoP (AmpR)</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>pKF61</td>
+      <td>Plasmid pKLC-II containing the promoter fragment of sseI fused to lacZ (AmpR)</td>
+      <td>(Arnoldini et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>pKF8A</td>
+      <td>Plasmid pMC1871 containing the promoter fragment of ssrB fused to lacZ (TetRA)</td>
+      <td>(Gao et al., 2017)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Antibiotic resistance markers are expressed as follows: TetRA; tetracycline resistance, AmpR; ampicillin resistance, CmR; chloramphenicol resistance, KanR: Kanamycin resistance._
+
+### Construction of phoP and ompR mutants
 
 λ-Red recombination was used to construct the ΔphoP and the phoP::kan mutants in Salmonella (Datsenko and Wanner, 2000). Using plasmid pKD3 or pKD4 as the DNA template, a fragment containing the CmR or Kan resistance cassette flanked by 50 bps of DNA homologous to the regions immediately upstream and downstream of the phoP open reading frame was amplified by PCR using primers 110 and 111 and purified using the DNA gel extraction kit (Qiagen, USA). 1.5 µg of purified PCR product was then used to electroporate wild-type Salmonella containing plasmid pKD46. Electroporated cells were then recovered in 1 ml of LB broth at 30°C overnight with shaking before being plated onto LB plates containing 10 µg/ml of Chloramphenicol or 60 µg/ml of Kanamycin for overnight incubation at 37°C. To remove the CmR cassette from the phoP::cmR mutant, plasmid pCP20 was first introduced via electroporation into the mutant strain, cultured overnight in LB broth without antibiotics at 42°C then plated onto LB plates and grown overnight 37°C. Colonies that had lost the resistance cassette were identified by PCR and by the lack of growth in media containing chloramphenicol.
 
 The ompR::kan strain was generated using primers pORed-H1-P1-f and EZed-H2-P2-r to generate the linear PCR fragment from pKD4 to be used for homologous recombination at the ompB locus. The plasmid pCP20 was used to remove the Kan resistance cassette to generate the ΔompR strain.
 
-## Construction of a C-terminal SsrB-PAmCherry fusion at its native chromosomal locus
+### Construction of a C-terminal SsrB-PAmCherry fusion at its native chromosomal locus
 
 λ-Red recombination (Datsenko and Wanner, 2000) was used to replace the native stop codon of ssrB open reading frames with a flexible linker-PAmCherry-TetRA fragment to generate the C-terminal SsrB-PAmCherry fusion at the native chromosomal locus in Salmonella. The SsrB-4-PAmCherry strain was constructed in two steps. First, a fragment containing the flexible 4XGGSG linker and PAmCherry open reading frame was amplified by PCR from genomic DNA isolated from the E. coli OmpR-4XGGSG-PAmCherry strain (Foo et al., 2015) using primers 1 and 3. Second, a fragment containing the tetRA resistance cassette was amplified by PCR from purified genomic DNA isolated from the ssrA::tetRA Salmonella strain (Desai et al., 2016) using primers 4 and 5. These two fragments were equally mixed and used as a template to amplify the 4XGGSG-PAmCherry-TetRA fragment which was flanked by 50 bps of DNA homologous to the regions immediately upstream and downstream of the ssrB stop codon. This PCR fragment was then purified and 2 µg of DNA was used for electroporation of wild-type Salmonella containing plasmid pKD46.
 
 A similar strategy was used to construct the SsrB-10-PAmCherry strain with the exception that primer two was used for the first PCR amplification step to introduce the 10XGGSG linker. PCR and sequencing was used to confirm the correct integration of all the constructs at the appropriate chromosomal loci.
 
-## Construction of N-terminal SsrB fusions at the chromosomal λattB site using a modified CRIM vector
+### Construction of N-terminal SsrB fusions at the chromosomal λattB site using a modified CRIM vector
 
 Initial attempts to construct an N-terminal fusion at the native ssrB locus via the λ-Red counter-selection method (Bochner et al., 1980) were unsuccessful. To overcome this, we constructed two new CRIM vectors (pAL-4-PAmCherry and pAL-10-PAmCherry) for constructing C- or N-terminal PAmCherry fusions at the λattB site in Salmonella. Both plasmids contain a multiple cloning site (EcoRI, KpnI, SalI, SphI and BamHI) upstream of a 4XGGSG or 10XGGSG flexible linker sequence that was linked with a PAmCherry fluorescent tag for creating C-terminal fusions. Additional restriction sites located immediately upstream (NdeI) and downstream (SacI, SpeI and SmaI) of the PAmCherry open reading frame can be used to construct N-terminal fluorescent fusions.
 
@@ -145,23 +639,23 @@ Construction of the N-terminal PAmCherry-4-SsrB fusion was performed in two step
 
 To construct plasmids expressing the N-terminal PAmCherry-SsrB D56A and K179A mutants, we amplified the entire his-ssrB orf containing the corresponding mutations from plasmids pMPM-A5Ω-his-ssrB-D56A (Feng et al., 2004) and pMPM-A5Ω-his-ssrB-K179A (Carroll et al., 2009) using primers 38 and 59 by PCR. After digesting the PCR fragments with SacI and SpeI, both fragments were cloned into plasmid pAL-PssrB-PAmCherry digested with the same enzymes creating plasmids pAL-PAmCherry-4-SsrB D56A and pAL-PAmCherry-4-SsrB K179A, respectively. pAL-PAmCherry-4-SsrB D56E was constructed by first introducing the D56E mutation to wild-type ssrB with overlap-extension PCR using primers 38, 59, 202 and 203. The ssrB D56E-containing fragment was then cloned into plasmid pAL-PssrB-PAmCherry using the SacI and SpeI restriction enzymes. All CRIM vector inserts were confirmed by sequencing and plasmids were maintained in E. coli BW25141, which encodes the pir gene required for CRIM plasmid replication (Haldimann and Wanner, 2001).
 
-## Construction of the OmpR, PhoP and SsrA-PAmCherry C-terminal fusions at the chromosomal λattB site using modified CRIM vectors
+### Construction of the OmpR, PhoP and SsrA-PAmCherry C-terminal fusions at the chromosomal λattB site using modified CRIM vectors
 
 Construction of the various C-terminal PAmCherry fusions was as follows: For the OmpR-4-PAmCherry construct, a fragment containing 225 bp of 5’UTR and the entire ompR open reading frame was PCR amplified using primers pORst-E-f and PAmC_nt-B-r2and placed upstream of the 4XGGSG linker in plasmid pAL-4-PAmCherry using the EcoRI and BamHI restriction sites. PhoP-4-PAmCherry and PhoP-10-PAmCherry fusions were constructed in a similar manner. A fragment containing 270 bp of 5’UTR and the entire phoP orf was amplified by PCR using primers 114 and 115, digested with EcoRI and BamHI, and cloned upstream of the 4XGGSG or 10XGGSG linkers of plasmid pAL-4-PAmCherry or pAL-10-PamCherry, respectively. For the SsrA-10-PAmCherry fusion, we PCR amplified a fragment containing 500 bps of 5’UTR and the entire ssrA orf using primers 41 and 42, digested the fragment with EcoRI and SphI and cloned the fragment upstream of the 10XGGSG linker of plasmid pAL-10-PAmCherry digested with the same enzymes. All CRIM vector inserts were confirmed by sequencing and plasmids were maintained in E. coli BW25141 which encodes the pir gene required for CRIM plasmid replication (Haldimann and Wanner, 2001).
 
-## CRIM vector integration
+### CRIM vector integration
 
 The protocol used for CRIM vector integration in Salmonella was modified from the E. coli integration protocol (Zhou et al., 2004). Overnight cultures of Salmonella strains containing the pINT-ts plasmid were first grown in LB media containing 100 ug/ml Ampicillin (Sigma, USA) at 30°C overnight with shaking at 250 rpm. The next day, 500 μl of overnight culture was added to 50 ml of fresh LB containing 100 µg/ml of Ampicillin in a 250 ml culture flask and grown for approximately 2.5 hr. The flask was then shifted to 42°C and grown for a further 30 min at the same shaking speed. Cells were then harvested by centrifugation (5000 x g 5 min) and washed three times with 20 ml of ice-cold sterile milliQ water. After the final wash, cells were resuspended in ~300 µl of ice-cold sterile milliQ water and 50 µl of the cell suspension was incubated with 2 µg of CRIM plasmid on ice for 5 mins. The cell-DNA suspension was then transferred into a pre-chilled 0.2 cm Micropulser electroporation cuvette (Biorad, USA) and electroporated with a voltage of 2.5 kV according to manufacturer’s instructions. After electroporation, 1 ml of pre-warmed LB media was added to the cells and the cell suspension was then incubated at 42°C with shaking at 250 rpm for 40 mins to ensure efficient expression of the integrase gene and to simultaneously promote the loss of the pINT-ts plasmid. The cell suspension was further incubated overnight at 37°C and the next day, 200 µl of cells was plated onto LB agar containing 10 µg/ml of chloramphenicol (Sigma, USA) for overnight incubation at 37°C. Colonies that were present on plates were screened via PCR to ensure single-copy plasmid integration at the lambda attB site using primers 63, 64, 67 and 68 (Haldimann and Wanner, 2001). To avoid the co-expression of the native gene together with PAmCherry fusions from the integrated plasmid, corresponding CRIM plasmids were introduced into the appropriate ssrB, ompR, phoP and ssrA::tetRA deletion mutants in Salmonella.
 
-## β-galactosidase activity measurement
+### β-galactosidase activity measurement
 
 β-galatosidase activity of the sseI and ssrB promoters was determined using previously published protocols (Feng et al., 2003; Desai et al., 2016). Bacterial strains containing plasmid pKF61 (sseI-lacZ) or pKF8A (ssrB-lacZ) were grown overnight in LB with appropriate antibiotics and then grown at 37°C in MgM pH 5.6 or pH 7.2 media until the OD600 reached between 0.5–0.8. At this stage, 10–15 µl of culture was removed and placed into a well of a 96-well microtiter plate (ThermoFisher, China) containing 20 µl of chloroform (Sigma, USA) and 145 µl of lysis buffer (0.01% SDS, 50 mM β-mercaptoethanol in Z buffer) as described previously (Feng et al., 2003). To initiate color development, 30 µl of a 4 mg/ml ONPG (Sigma, USA) solution was added into each well. The β-galactosidase activity was represented in Miller Units and calculated as 1000 x [(OD420-1.75 x OD550)]/t (min) x volume (ml) x OD600). Measurements were made in a Tecan Infinite M200 plate reader and repeated at least twice in triplicates.
 
-## Phage transduction
+### Phage transduction
 
 Phage transduction was performed as described previously (Thierauf et al., 2009) to introduce the PAmCherry constructs into different Salmonella deletion mutants. Briefly, 1 ml of an overnight culture of the donor strain was first lysed in 4 ml of phage broth (LB broth containing P22 phage, 0.2% glucose, 9.5 mM Citric acid, 0.78 mM MgSO4,75 mM K2HPO4, 26 mM NaNH4HPO4) at 37°C with shaking at 250 rpm. The supernatant was then collected using centrifugation (8000 x g 10 min) and mixed with 500 µl of chloroform (Sigma, USA). For transduction, 50 µl of phage lysate was mixed with 100 µl of overnight culture of the recipient strain for 1 hr at 37°C and plated onto LB plates containing 12.5 µg/ml Tetracycline. To confirm loss of the P22 phage, colonies were screened using green plates.
 
-## Super-resolution microscopy (PALM)
+### Super-resolution microscopy (PALM)
 
 Super-resolution imaging (PALM) was performed as previously described (Foo et al., 2015) with several modifications. Briefly, cells were first grown in MgM media to an OD600 of 0.5–0.8 and fixed with 1.5% methanol-free paraformaldehyde (Wako Pure Chemicals, Japan) for 30 min. Cells were pelleted (6800 x g, 3 min), washed twice with PBS and then resuspended in 50 mM NH4Cl (BrightChem, Malaysia) in PBS for 2 hr to reduce excess paraformaldehyde. Cells were permeabilized with 1 mM EDTA (Sigma, USA) and 0.1% Triton X-100 (Sigma, USA) in PBS for 30 min followed by two PBS washes. Permeabilized cells were incubated with a 1:500 rabbit anti-Salmonella LPS (Abcam, USA) antibody-PBS solution for 1 hr to increase adherence of Salmonella to glass surfaces. Antibody-coated cells were then immobilized for 1.5 hr on 0.1% poly-L-lysine (Sigma, USA) coated-8-well glass chamber slides (Sarstedt, Germany) that were pre-cleaned with 3M KOH (Sigma, USA).
 
@@ -169,34 +663,50 @@ Imaging was performed on a Nikon N-STORM Super-Resolution microscope. Highly inc
 
 To quantify levels of PAmCherry tagged molecules within cells, we first used the LocAlization Microscopy Analyzer (LAMA) program (Malkusch and Heilemann, 2016) to compute a localization-based image from the PALM coordinate list generated with rapidSTORM using a desired pixel size of 10 nm and a 255 maximum intensity value. Thus, one gray scale is added to the respective pixel for each localization. Brightfield images were manually analyzed with ImageJ and used to define cell boundaries (cell area in µm2). To obtain the number of localizations (# of molecules) for individual cells, the integrated intensity (RawIntDen) within the determined cell boundaries of each cell was measured in the localization-based LAMA image using ImageJ. Because pH affects cell length, and the number of molecules per cell is affected by cell length, a more appropriate representation of our data involved normalizing the number of molecules by area. Hence, the number of molecules/µm2 value was calculated by normalizing the integrated intensity to the respective cross-sectional cell area. Box plots, averages and standard deviations were obtained using OriginPro software (OriginLab, USA).
 
-## Spt-PALM
+### Spt-PALM
 
 Cells were grown in MgM media to an OD600 of 0.5–0.8, concentrated by centrifugation (6800 x g, 3 min), then placed onto a 2% agarose pad containing MgM pH 7.2 or pH 5.6 media and subsequently sealed with a clean glass coverslip. Agarose pads were prepared by pipetting 60 µl of the molten agarose solution into the center of a 65 µl gene frame (Thermofisher, USA) adhered onto a 76 × 26×1 mm glass slide (Marienfeld, Germany) and immediately covering the agarose surface with a clean 22 × 22 mm glass coverslip (High Precision, Germany). Coverslips were cleaned overnight in 3M KOH (Sigma, USA) solution, followed by two 30 min cycles of sonication in a S60H ElmaSonic waterbath sonicator (Elma, USA). After drying the coverslips overnight, the coverslips were finally plasma-cleaned for 30 min in a plasma cleaner (Harrick plasma, USA) to reduce background fluorescence prior to use.
 
 Spt-PALM experiments were performed using similar settings as SMLM, except that 50,000 frames were acquired at an exposure time of 15 ms, resulting in ~17 ms per frame. Single molecule signals (spots) were detected and connected using the Fiji tracking plugin TrackMate. Spots were linked to form a track using a maximum linking distance of 0.7 µm. Only tracks with more than five spots were used for data analysis. Tracks were then further analysed as described (Gao et al., 2017).
 
-The displacement r can be calculated as the distance the molecule travelled in one camera frame. The distribution of r across all tracks can be plotted as a histogram with the probability distribution function (PDF) given as (Yang et al., 2016):(1)PDF(r,τ)=r2Dτexp(−r24Dτ)where D is the diffusion coefficient of the molecule and τ the time between each frame. In theory, fitting the histogram of displacement r with Equation 1 will give the value of D. However, the fitting depends on the bin size of the histogram, which can affect the fitting result. Hence, the cumulative distribution function (CDF) of displacement r is used instead:(2)CDF(r,τ)=∫orPDF(r,τ)dr=1−exp(−r24Dτ)
+The displacement r can be calculated as the distance the molecule travelled in one camera frame. The distribution of r across all tracks can be plotted as a histogram with the probability distribution function (PDF) given as (Yang et al., 2016):
 
-For molecules undergoing multiple diffusion states, a linear combination of CDF with multiple D can be used (Yang et al., 2016; Chen et al., 2015; Gebhardt et al., 2013). A three-component diffusion model best fitted our data (Figure 6—figure supplement 1):(3)CDF(r,τ)= 1−[F1exp⁡(−r24D1τ)+F2 exp⁡(−r24D2τ)+F3 exp⁡(−r24D3τ)]where Fn is the relative frequency of the different diffusion states Dn.
+$$
+PDF(r,\tau)=\frac{r}{2D\tau}exp(−\frac{r^{2}}{4D\tau})
+$$
+
+where D is the diffusion coefficient of the molecule and τ the time between each frame. In theory, fitting the histogram of displacement r with Equation 1 will give the value of D. However, the fitting depends on the bin size of the histogram, which can affect the fitting result. Hence, the cumulative distribution function (CDF) of displacement r is used instead:
+
+$$
+CDF(r,\tau)=\int_{o}^{r}PDF(r,\tau)dr=1−exp(−\frac{r^{2}}{4D\tau})
+$$
+
+For molecules undergoing multiple diffusion states, a linear combination of CDF with multiple D can be used (Yang et al., 2016; Chen et al., 2015; Gebhardt et al., 2013). A three-component diffusion model best fitted our data (Figure 6—figure supplement 1):
+
+$$
+CDF(r,\tau)= 1−[F_{1}exp⁡(−\frac{r^{2}}{4D_{1}\tau})+F_{2} exp⁡(−\frac{r^{2}}{4D_{2}\tau})+F_{3} exp⁡(−\frac{r^{2}}{4D_{3}\tau})]
+$$
+
+where Fn is the relative frequency of the different diffusion states Dn.
 
 We performed Spt-PALM on fixed cells expressing SsrB-PAmCherry (cells grown in pH 5.6, fixed with 1.5% PFA). Due to the localization error of each spot, the immobile molecule is apparently moving. The CDF was fitted with Equation 3 to obtain D1 = 0.020 ± 0.002 µm2s−1 (F1 = 26.9 ± 4.0%), D2 = 0.066 ± 0.003 µm2s−1 (F2 = 65.0 ± 4.0%) and D3 = 0.88 ± 0.08 µm2s−1 (F3 = 8.1 ± 0.6%). The values of D1 and D2 were very small and represented 91.9% of the population. The presence of two low D1 and D2 values was most likely due to the different population of immobile spots with a different signal to noise ratio, leading to different localization precisions. Sometimes during the linking of the spots to form a track, a spot belonging to one molecule can be linked to a different molecule. This happens when the final spot from the first molecule photobleaches, and a spot from another molecule appears at a different location, but still within our maximum linking distance. The 8.1% that has a higher D3 is due to such linking errors. We then set a displacement threshold r0 = 0.127 µm, below which 91.9% of the population (from F1 and F2) were included. Thus, 91.9% of the population has a value of D1 and D2 with an r value less than 0.127 µm. This was used to assign D2 to a transient weaker binding form of SsrB (see Figure 6).
 
-## SseB immunofluorescence
+### SseB immunofluorescence
 
 Visualization of the SseB translocon was based on a previously published protocol (Chakraborty et al., 2015). Salmonella wild-type, ΔssrB and the PAmCherry-4-SsrB expressing strains were first grown in acid pH MgM media and prepared as described for PALM imaging. Then, the cells were incubated with a 1:500 dilution of rabbit anti-SseB primary antibody in PBS buffer containing 2% BSA and 0.1% Tween for 1 hr. After washing the cells five times by centrifugation with PBS, the cells were incubated with a 1:500 dilution of donkey anti-rabbit Alexa 488 conjugated secondary antibody (Thermofisher scientific, USA) in the same PBS buffer. Cells were then washed five times with PBS before being placed on 2% agarose pads and sealed with KOH-cleaned coverslips for microscopy. A 470 nm laser line was used to first image SseB fluorescence before acquiring the SsrB-PAmCherry signal using PALM.
 
-## Overexpression and purification of proteins
+### Overexpression and purification of proteins
 
 E. coli BL21 (DE3) was used as a host for overproduction of SsrB, OmpR and PhoP proteins used for Atomic force microscopy and in vitro transcription assays. Detailed procedures for their purification have been previously described (Desai et al., 2016; Feng et al., 2004; Walthers et al., 2007; Chakraborty et al., 2017; Carroll et al., 2009; Castelli et al., 2000). (Feng et al., 2004. The PhoP-His expressing plasmid was constructed by PCR amplification of Salmonella genomic DNA using primer pair DW772 and DW773, TOPO cloning into pCR2.1 as described by the manufacturer (Invitrogen) and subsequent cloning into pMPMA5Ω using EcoRI and XbaI restriction sites.
 
-## Atomic force microscopy
+### Atomic force microscopy
 
 The DNA used for AFM was generated by amplifying a 704 bp fragment containing the sifA promoter by PCR (primers 195 and 196) from purified genomic DNA prepared from wild-type 14028 s S. Typhimurium and gel purified. The AFM experiments were performed on glutaraldehyde-coated mica surfaces according to the previously described method (Desai et al., 2016) with slight modifications. 20 ng DNA was mixed with an appropriate concentration of SsrB in a 100 µl reaction and incubated for 15 min at room temperature in either neutral (50 mM KCl, 50 mM Tris-HCl pH 6.8) or acidic buffer (50 mM KCl, mM MES pH 6.1). The DNA:protein mixture was deposited on the glutaraldehyde- modified mica for 15 min. The sample was gently washed with deionized water, and then dried with N2 gas. 2 × 2 micron images were acquired with a resolution of 1024 × 1024 on a Bruker Dimension FastScan AFM system using the tapping mode with a silicon nitride cantilever (FastScan A, Bruker). Raw AFM images were processed using Gwyddion software (http://gwyddion.net/). After background subtraction (contributed by the mica surface), the color range of images was set from 0 to 1.5 nm, the images were then saved. The relative height values were exported as an ASCII file. The relative height distribution histogram of sifA promoter complexes was plotted using >8 images, each image contains approximately 100 DNA molecules. The values were exported as an excel file and plotted by GraphPad Prism. The experiments were prepared in duplicate (i.e., 16 images total/sample).
 
-## Single molecule unzipping assay
+### Single molecule unzipping assay
 
-The DNA hairpin assay was prepared as described (24). The hairpin consisted of a 20 basepair stem of a 2X repeat of the high-affinity SsrB binding site in the csgD promoter (15). Using magnetic tweezers, a controlled force was applied on the hairpin such that it instantly transitioned from a closed, double-stranded (ds) DNA state to an open, single-stranded (ss) DNA state (See Figure 8-figure supplement 1). A delay in the opening of the hairpin was observed when SsrB was bound. By quantifying this delay, we assess the strength of SsrB binding to the hairpin for a range of SsrB concentrations and calculated the dissociation constant (KD) of binding. Three to five tethers were analyzed for each point of the binding curves.
+The DNA hairpin assay was prepared as described (24). The hairpin consisted of a 20 basepair stem of a 2X repeat of the high-affinity SsrB binding site in the csgD promoter (15). Using magnetic tweezers, a controlled force was applied on the hairpin such that it instantly transitioned from a closed, double-stranded (ds) DNA state to an open, single-stranded (ss) DNA state (See Figure 8-figure supplement 1). A delay in the opening of the hairpin was observed when SsrB was bound. By quantifying this delay, we assess the strength of SsrB binding to the hairpin for a range of SsrB concentrations and calculated the dissociation constant $(K_{D})$ of binding. Three to five tethers were analyzed for each point of the binding curves.
 
-## Nucleoid size measurement
+### Nucleoid size measurement
 
 Cells were grown in MgM pH 5.6 or pH 7.2 and fixed with 1.5% PFA for 30 mins. They were then pelleted and permeabilized with 0.1% Triton X100 in PBS for 30 mins. The cells were washed three times with PBS via centrifugation, followed by staining with DRAQ5 for 15 mins. They were then washed 3 times with PBS and placed onto a 2% agarose pad and subsequently sealed with a clean glass coverslip. Imaging was performed using structured-illumination microscopy (SIM) on a W1 spinning Disk microscope (CSU-W1 Nikon, Japan) combined with the Live-SR system (Roper scientific) and equipped with a Plan-Apo λ 100x oil objective (1.45 NA, Nikon, Japan) as previously described (Gao et al., 2017). The area of the nucleoid per cell was quantified as previously described (Gao et al., 2017).

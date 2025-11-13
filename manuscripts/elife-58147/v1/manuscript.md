@@ -40,7 +40,7 @@ If unintended intestinal daptomycin exposure drives resistance evolution in E. f
 
 ## Results
 
-## Generation of daptomycin-resistant VR E. faecium in the mouse GI tract
+### Generation of daptomycin-resistant VR E. faecium in the mouse GI tract
 
 To directly test the proposition that systemic daptomycin treatment could select for resistance in the GI tract, and to generate daptomycin-resistant VR E. faecium mutants for subsequent experiments, we inoculated mice orally with daptomycin-susceptible VR E. faecium strains. Beginning one day after E. faecium inoculation, mice received daily doses of either subcutaneous daptomycin (50, 100, or 400 mg/kg), oral daptomycin (5, 50, 100, or 400 mg/kg), or a control mock injection for 5 days. We used a range of doses and routes of administration to maximize the likelihood of observing resistance emergence in at least one of the mice. The 50 and 100 mg/kg subcutaneous doses were selected to generate pharmacokinetics similar to clinical human doses (Mortin et al., 2007; Samonis et al., 2008), and the 5 mg/kg oral approximates the 5–10% of a daptomycin dose that is secreted into the intestines during standard intravenous treatment (Woodworth et al., 1992). We used two susceptible VR E. faecium strains, BL00239-1 (MICc = 2.0 (Minimum Inhibitory Concentration computed, see Methods)) and PR00708-14 (MICc = 2.7), which were originally isolated at the University of Michigan Hospital from a clinical bloodstream infection and a different patient’s clinical perirectal swab, respectively. Mouse fecal samples were collected to quantify VR E. faecium shedding and determine daptomycin susceptibility of isolated E. faecium clones.
 
@@ -48,11 +48,19 @@ Only very high daptomycin doses (400 mg/kg subcutaneous, ≥50 mg/kg oral) cons
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig1-v1.jpg)
 
-**Figure 1.:** E. faecium in mouse GI tracts following subcutaneous daptomycin treatment.(A) VR E. faecium densities in fecal samples during and after daptomycin treatment (strain BL00239-1). Each line represents VR E. faecium densities from an individual mouse (N = 3 per treatment). The pink shaded region indicates days of daptomycin therapy. The dotted line marks the detection limit. Red dots indicate time points where clones were isolated for analysis shown in Panel B. The 400 mg/kg subcutaneous treatment was discontinued after 4 days due to apparent toxicity, and one mouse in this treatment was euthanized at Day 4. (B) Following daptomycin treatment, three VR E. faecium clones were isolated from the feces of each mouse. Filled points show the mean of triplicate daptomycin susceptibility (MICC) measurements for each clone, and open points show the individual measurements. Point shape indicates the mouse of origin. The dashed line marks the clinical breakpoint for daptomycin susceptibility. The ancestral clone (BL00239-1) used to inoculate mice is also shown. (C) For the 100 mg/kg subcutaneous treatment, VR E. faecium clones were isolated from each mouse at multiple time points. Filled points show the mean of triplicate daptomycin susceptibility (MICC) measurements for each clone, and open points show individual measurements. Color indicates mouse of origin. The dotted line marks the clinical breakpoint for daptomycin susceptibility. The resistant clone used in subsequent experiments (BL00239-1-R) is circled in red.Figure 1—source data 1.E. faecium fecal density data (Figure 1A).Figure 1—source data 2.Figure 1B–C).
+**Figure 1.:** (A) VR E. faecium densities in fecal samples during and after daptomycin treatment (strain BL00239-1). Each line represents VR E. faecium densities from an individual mouse (N = 3 per treatment). The pink shaded region indicates days of daptomycin therapy. The dotted line marks the detection limit. Red dots indicate time points where clones were isolated for analysis shown in Panel B. The 400 mg/kg subcutaneous treatment was discontinued after 4 days due to apparent toxicity, and one mouse in this treatment was euthanized at Day 4. (B) Following daptomycin treatment, three VR E. faecium clones were isolated from the feces of each mouse. Filled points show the mean of triplicate daptomycin susceptibility (MICC) measurements for each clone, and open points show the individual measurements. Point shape indicates the mouse of origin. The dashed line marks the clinical breakpoint for daptomycin susceptibility. The ancestral clone (BL00239-1) used to inoculate mice is also shown. (C) For the 100 mg/kg subcutaneous treatment, VR E. faecium clones were isolated from each mouse at multiple time points. Filled points show the mean of triplicate daptomycin susceptibility (MICC) measurements for each clone, and open points show individual measurements. Color indicates mouse of origin. The dotted line marks the clinical breakpoint for daptomycin susceptibility. The resistant clone used in subsequent experiments (BL00239-1-R) is circled in red.
 
-## Daptomycin treatment enriches for daptomycin-resistant VR E. faecium in the GI tract
+### Daptomycin treatment enriches for daptomycin-resistant VR E. faecium in the GI tract
 
 We used the de novo resistant mutants isolated above (Figure 1) to test whether daptomycin therapy selects for daptomycin-resistance in intestinal VR E. faecium populations when a resistant mutant is already present. We orally inoculated mice with a 1:20 mixture of the experimentally generated daptomycin-resistant and susceptible VR E. faecium strains (BL00239-1-R and BL00239-1). Note that this approach – seeding inocula with known numbers of resistant bacteria – allows the response to selection to be measured while avoiding the experimental noise introduced by mutation waiting times. Mice were treated with subcutaneous daptomycin (50, 75, 100, or 200 mg/kg) for five or ten days after VRE inoculation. Control mice received either a mock saline injection or no injection. Fecal samples from Days 8 and 14 post-inoculation were plated in triplicate to quantify total VR E. faecium density, and samples were also plated on daptomycin-supplemented agar to estimate the proportion of VR E. faecium that were daptomycin-resistant. Control populations remained susceptible to daptomycin, but all doses and durations of daptomycin dramatically enriched for resistance in the GI tract (Figure 2A–B). At both time points, controls had significantly lower proportions of resistant bacteria than daptomycin-treated mice (Figure 2A–B; mixed effects negative binomial regression, p<0.01, see Model one in Supplementary file 1). The effect sizes (Cohen’s d) at Days 8 and 14 were 5.90 (95% CI 4.94, 6.86) and 2.34 (95% CI 1.82, 2.87), respectively. The absolute numbers of VRE enumerated in fecal samples did not vary significantly between treatments (mixed effects negative binomial regression, Model two in Supplementary file 1; Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig2-v1.jpg)
+
+**Figure 2.:** (A-B) Mouse fecal suspensions were plated on Enterococcus-selective plates with daptomycin (+ DAP) and without daptomycin (- DAP) at Day 8 (A) and Day 14 (B). Each filled point represents the mean of triplicate measures from a single mouse sample, and open points show individual measurements. Mice were treated with daptomycin for 5 days (triangles) or 10 days (squares) at the doses listed at times denoted (gray crosses in C; N = 5 mice per treatment). Samples with VR E. faecium density <3×103 CFU/10 mg feces were not plated for this assay due to insufficient bacterial density. (C) Recovered fecal daptomycin measured by LC-MS for a subset of mice. Each line tracks daptomycin measurements from a single mouse sampled at Days 2, 6, and 8. (D) For the subset of fecal samples analyzed by LC-MS, fecal daptomycin plotted against fecal VR E. faecium densities (samples from all available treatments and time points plotted together). Dotted line indicates the MIC of the susceptible strain BL00239-1 (MIC = 2 µg/mL or 2 µg/g).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Subcutaneous daptomycin dose and treatment durations are listed above each panel. Each line represents VRE densities from an individual mouse (N = 5 per treatment). The pink shaded region indicates days of daptomycin therapy. The horizontal line marks the detection limit.
 
 The dramatic enrichment for daptomycin-resistant VR E. faecium in treated mice showed that subcutaneously-administered daptomycin produced GI tract concentrations high enough to select for resistance. To quantify fecal daptomycin concentrations, we analyzed fecal samples from a subset of daptomycin-treated mice by liquid chromatography-mass spectrometry (LC-MS) (Figure 2C). Samples from all time points tested (Days 2, 6, and 8) contained detectable daptomycin, and concentrations generally peaked at the end of treatment (Day 6). Higher daptomycin doses generally corresponded to higher fecal concentrations, but concentrations were highly variable and overlapped between treatments. While fecal VR E. faecium densities correlated poorly with the daptomycin dose administered (Figure 2—figure supplement 1), fecal VR E. faecium densities correlated with the amount of daptomycin recovered in feces (Figure 2D). These data confirmed that subcutaneously-administered daptomycin at our experimental doses generated a range of daptomycin concentrations in the GI tract that included inhibitory concentrations for the susceptible VR E. faecium strain.
 
@@ -60,11 +68,11 @@ We ran two additional experiments to further investigate the competitive dynamic
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig3-v1.jpg)
 
-**Figure 3.:** faecium.(A) Each panel shows VR E. faecium counts on plates with daptomycin (+DAP, red line) and without daptomycin (-DAP, blue line) for a single mouse over time. Labels show initial inocula. Red shading indicates days of daptomycin treatment (100 mg/kg daily subcutaneous injections). (B) In a second experiment, mice were inoculated with a mix of susceptible and resistant bacteria (S+R, 20% R), resistant bacteria only (R), or susceptible bacteria only (S). Mice received no drug treatment. At Day 14, fecal suspensions were plated on plates with daptomycin (+DAP) and without daptomycin (-DAP) to determine whether the resistant strain had decreased in frequency. The starting inoculum dose is shown in red, and Day 14 samples from each mouse are shown in gray. Filled points show means of replicate measurements for a sample, and open circles show individual measurements. Note that resistant bacteria do not form colonies at 100% efficiency on +DAP plates.Figure 3—source data 1.E. faecium density data (Figure 3A).Figure 3—source data 2.E. faecium daptomycin susceptibility data (Figure 3B).
+**Figure 3.:** (A) Each panel shows VR E. faecium counts on plates with daptomycin (+DAP, red line) and without daptomycin (-DAP, blue line) for a single mouse over time. Labels show initial inocula. Red shading indicates days of daptomycin treatment (100 mg/kg daily subcutaneous injections). (B) In a second experiment, mice were inoculated with a mix of susceptible and resistant bacteria (S+R, 20% R), resistant bacteria only (R), or susceptible bacteria only (S). Mice received no drug treatment. At Day 14, fecal suspensions were plated on plates with daptomycin (+DAP) and without daptomycin (-DAP) to determine whether the resistant strain had decreased in frequency. The starting inoculum dose is shown in red, and Day 14 samples from each mouse are shown in gray. Filled points show means of replicate measurements for a sample, and open circles show individual measurements. Note that resistant bacteria do not form colonies at 100% efficiency on +DAP plates.
 
 Next, we tested whether the frequency of daptomycin-resistant VR E. faecium would decrease over time in the absence of daptomycin treatment, potentially indicating that daptomycin-resistance comes at a fitness cost. We inoculated mice with a 1:5 mixture of daptomycin-resistant and susceptible VR E. faecium. Mice received no daptomycin treatment. After 14 days, the proportion of resistant bacteria had declined (one sample t-test, t = −22.42, df = 9, p<0.01, Cohen’s d = 7.09), consistent with a competitive disadvantage (fitness cost) to the daptomycin-resistance mutation (Figure 3B). Control mice inoculated with only resistant or only susceptible bacteria did not have significantly different proportions of resistance between days 0 and 14 (resistant: t = −3.73, df = 2, p=0.06; susceptible: t = 1, df = 2, p=0.42).
 
-## In vitro characterization of cholestyramine as a potential adjuvant
+### In vitro characterization of cholestyramine as a potential adjuvant
 
 If an orally-administered adjuvant could reduce daptomycin activity in the GI tract, this could prevent the emergence of daptomycin-resistant E. faecium in the gut, potentially reducing transmission of resistant bacteria without impacting the effectiveness of intravenous daptomycin therapy. We identified cholestyramine, an FDA-approved bile-acid sequestrant, as a potential adjuvant for daptomycin therapy. Cholestyramine is a high-molecular weight anion exchange resin that binds with bile acids, forming an insoluble complex that is excreted in the feces (Jacobson et al., 2007). Cholestyramine is known to interact with a number of co-administered drugs through the same mechanism, reducing their bioactivity (Jacobson et al., 2007). We hypothesized that cholestyramine would bind daptomycin based on their chemical structures.
 
@@ -72,11 +80,35 @@ In vitro tests were consistent with cholestyramine binding daptomycin. Daptomyci
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig4-v1.jpg)
 
-**Figure 4.:** (A) Calibration curve (best fit linear regression) showing that daptomycin concentration can be measured by UV absorption at 364 nm (N = 3 per concentration). (B) Daptomycin concentration was reduced in solutions treated with cholestyramine (N = 3 per concentration). (C) Daptomycin solutions treated with cholestyramine had reduced biological activity against VRE in broth microdilutions (N = 3 per antibiotic treatment). Bacterial densities (OD600) following growth in the presence of daptomycin (DAP), daptomycin solution treated with cholestyramine (DAP + CHOL), or saline solution treated with cholestyramine (saline + CHOL) are shown. Concentrations are shown as the initial concentration of daptomycin in solution prior to cholestyramine treatment. Saline controls were constant across all listed concentrations. Horizontal line shows detection threshold.Figure 4—source data 1.Figure 4A).Figure 4—source data 2.Figure 4B).Figure 4—source data 3.600 readings from 96-well plate (Figure 4C).
+**Figure 4.:** (A) Calibration curve (best fit linear regression) showing that daptomycin concentration can be measured by UV absorption at 364 nm (N = 3 per concentration). (B) Daptomycin concentration was reduced in solutions treated with cholestyramine (N = 3 per concentration). (C) Daptomycin solutions treated with cholestyramine had reduced biological activity against VRE in broth microdilutions (N = 3 per antibiotic treatment). Bacterial densities (OD600) following growth in the presence of daptomycin (DAP), daptomycin solution treated with cholestyramine (DAP + CHOL), or saline solution treated with cholestyramine (saline + CHOL) are shown. Concentrations are shown as the initial concentration of daptomycin in solution prior to cholestyramine treatment. Saline controls were constant across all listed concentrations. Horizontal line shows detection threshold.
 
-## Adjunctive cholestyramine therapy prevents emergence of daptomycin-resistance
+### Adjunctive cholestyramine therapy prevents emergence of daptomycin-resistance
 
 We conducted four experiments to test whether adjunctive therapy with cholestyramine could prevent the emergence of daptomycin-resistant VR E. faecium in the mouse GI tract. In each experiment, mice were orally inoculated with a 1:20 mixture of daptomycin-resistant and susceptible VR E. faecium and then treated with subcutaneous daptomycin injections for 5 days. Densities of total VR E. faecium and daptomycin-resistant VR E. faecium were determined by plating (Figure 5, Figure 5—figure supplements 1–5). The experiments tested the evolutionary impact of oral cholestyramine in different mouse strains, with different VR E. faecium strains, and with different timing of cholestyramine administration. The design of the four experiments was as follows: (A) Swiss Webster mice with E. faecium strains BL00239-1 and BL00239-1-R, with cholestyramine started one day before daptomycin (Figure 5—figure supplement 1), (B) C57BL/6 mice with E. faecium strains BL00239-1 and BL00239-1-R, with cholestyramine started one day before daptomycin (Figure 5—figure supplement 2), (C) Swiss Webster mice with E. faecium strains PR00708-14 and PR00708-14-R, with cholestyramine started one day before daptomycin (Figure 5—figure supplement 3), and (D) Swiss Webster mice with E. faecium strains BL00239-1 and BL00239-1-R, with cholestyramine started the same day as daptomycin (Figure 5—figure supplement 4). Data from these experiments were analyzed together, with a block effect included in the models. Because bacterial densities were found not to correlate to daptomycin dose (Figure 2—figure supplement 1), all daptomycin doses were combined into a single group for analysis. Figure 5—figure supplements 1–4 show these data broken down by experiment and by daptomycin dose. For daptomycin-treated mice shedding detectable levels of VR E. faecium by our plating assay (at least 20 CFU/10 mg feces at a given time point), the cholestyramine-supplemented diet reduced the proportion of daptomycin-resistant VR E. faecium (mixed effects binomial regression, p<0.01, Model three in Supplementary file 1). The effect size (Cohen’s d) of cholestyramine diet on the proportion of resistant bacteria in daptomycin-treated mice was 0.41 (95% CI 0.01, 0.82) at Day 2, 0.56 (95% CI 0.13, 1.00) at Day 4, 0.90 (95% CI 0.45, 1.35) at Day 6, 1.08 (95% CI 0.63, 1.53) at Day 8, and 0.63 (95% CI 0.21, 1.05) at Day 14. In addition, to more accurately determine resistance proportions for Days 8 and 14, we plated an estimated 200 CFU from each sample in triplicate on plates with and without daptomycin (Figure 5—figure supplement 5). This second assay confirmed that cholestyramine reduced the proportion of resistant VR E. faecium at these time points (mixed effects binomial regression, p<0.01, Model four in Supplementary file 1; Cohen’s d 1.25 (95% CI 0.97, 1.53) at Day 8, 0.73 (95% CI 0.48, 0.98) at Day 14).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig5-v1.jpg)
+
+**Figure 5.:** (A) The proportion of fecal VR E. faecium that were daptomycin-resistant over time in mice. Proportions were determined by plating on agar with daptomycin (+DAP) and without daptomycin (-DAP). Data shown were combined from four experiments (for each diet N = 20 controls and N = 50 daptomycin-treated, mean + SEM shown). Proportions were not determined for samples with <20 CFU VR E. faecium per 10 mg feces, as these densities were below the limit of detection for this plating assay, and these samples were not included in Panel A. The pink shaded region indicates days of daptomycin therapy. (B) Total VR E. faecium densities corresponding to data shown in Panel A (for each diet N = 20 controls and N = 50 daptomycin-treated, mean + SEM shown). Dotted line shows total density (-DAP) and solid line shows the density of daptomycin-resistant VR E. faecium (+DAP). All samples, including those with low densities, were included in Panel B.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The proportion of fecal VR E. faecium that were daptomycin-resistant over time in mice. Proportions were determined by plating on agar with daptomycin (+DAP) and without daptomycin (-DAP). Lines show means, and open points show values for individual mice (N = 5). Proportions were not determined for samples with <20 CFU VR E. faecium per 10 mg feces, as these densities were below the limit of detection for this plating assay, and these samples were not included in Panel A. The pink shaded region indicates days of daptomycin therapy. (B) Total VR E. faecium densities corresponding to data shown in Panel A (N = 5, mean shown). Dotted line shows total density (-DAP) and solid line shows the density of daptomycin-resistant VR E. faecium (+DAP). All samples, including those with low densities, were included in Panel B. (C) Total VR E. faecium densities (-DAP) for individual mice in this experiment. Each line tracks values for one mouse. (D) Daptomycin-resistant VR E. faecium densities (+DAP) for individual mice in this experiment. Each line tracks values for one mouse.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The proportion of fecal VR E. faecium that were daptomycin-resistant over time in mice. Proportions were determined by plating on agar with daptomycin (+DAP) and without daptomycin (-DAP). Lines show means, and open points show values for individual mice (N = 5). Proportions were not determined for samples with <20 CFU VR E. faecium per 10 mg feces, as these densities were below the limit of detection for this plating assay,and these samples were not included in Panel A. The pink shaded region indicates days of daptomycin therapy. (B) Total VR E. faecium densities corresponding to data shown in Panel A (N = 5, mean shown). Dotted line shows total density (-DAP) and solid line shows the density of daptomycin-resistant VR E. faecium (+DAP). All samples, including those with low densities, were included in Panel B. (C) Total VR E. faecium densities (-DAP) for individual mice in this experiment. Each line tracks values for one mouse. (D) Daptomycin-resistant VR E. faecium densities (+DAP) for individual mice in this experiment. Each line tracks values for one mouse.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) The proportion of fecal VR E. faecium that were daptomycin-resistant over time in mice. Proportions were determined by plating on agar with daptomycin (+DAP) and without daptomycin (-DAP). Lines show means, and open points show values for individual mice (N = 5). Proportions were not determined for samples with <20 CFU VR E. faecium per 10 mg feces, as these densities were below the limit of detection for this plating assay, and these samples were not included in Panel A. The pink shaded region indicates days of daptomycin therapy. (B) Total VR E. faecium densities corresponding to data shown in Panel A (N = 5, mean shown). Dotted line shows total density (-DAP) and solid line shows the density of daptomycin-resistant VR E. faecium (+DAP). All samples, including those with low densities, were included in Panel B. (C) Total VR E. faecium densities (-DAP) for individual mice in this experiment. Each line tracks values for one mouse. (D) Daptomycin-resistant VR E. faecium densities (+DAP) for individual mice in this experiment. Each line tracks values for one mouse.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) The proportion of fecal VR E. faecium that were daptomycin-resistant over time in mice. Proportions were determined by plating on agar with daptomycin (+DAP) and without daptomycin (-DAP). Lines show means, and open points show values for individual mice (N = 5). Proportions were not determined for samples with <20 CFU VR E. faecium per 10 mg feces, as these densities were below the limit of detection for this plating assay, and these samples were not included in Panel A. The pink shaded region indicates days of daptomycin therapy. (B) Total VR E. faecium densities corresponding to data shown in Panel A (N = 5, mean shown). Dotted line shows total density (-DAP) and solid line shows the density of daptomycin-resistant VR E. faecium (+DAP). All samples, including those with low densities, were included in Panel B. (C) Total VR E. faecium densities (-DAP) for individual mice in this experiment. Each line tracks values for one mouse. (D) Daptomycin-resistant VR E. faecium densities (+DAP) for individual mice in this experiment. Each line tracks values for one mouse.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/58147/elife-58147-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Mouse fecal suspensions were plated on Enterococcus-selective plates with daptomycin (+ DAP) and without daptomycin (-DAP) at Day eight and Day 14 at an estimated 200 CFU per plate (based on previously determined densities). Each filled point represents the mean of triplicate measures from a single mouse sample, and open points show individual measurements. Blue points represent mice fed on a standard diet and red points represent mice fed a cholestyramine-supplemented diet. Mice were treated with daptomycin or saline (controls) for 5 days at the doses listed (N = 5 mice per treatment). Samples with VR E. faecium density <3×103 CFU/10 mg feces had insufficient bacterial density to perform this assay, and were not included. Data for three experiments are shown. Values > 1 are consistent with sampling variation. (A–B) Experiment A. Swiss-Webster mice colonized with strains BL00239-1 + BL00239-1-R, cholestyramine started one day prior to daptomycin. (C–D) Experiment B. C57BL/6 mice colonized with strains BL00239-1 + BL00239-1-R, cholestyramine started one day prior to daptomycin. (E–F) Experiment C. Swiss-Webster mice colonized with strains PR00708-14 and PR00708-14-R, cholestyramine started one day prior to daptomycin. (G–H) Experiment D. Swiss-Webster mice colonized with strains BL00239-1 + BL00239-1-R, cholestyramine started same day as daptomycin.
 
 We also quantified absolute densities of daptomycin-resistant and susceptible VR E. faecium over time by plating samples from Days 0, 1, 2, 4, 6, 8, and 14 (Figure 5). These data showed that the cholestyramine-supplemented diet reduced fecal shedding of daptomycin-resistant VR E. faecium in daptomycin-treated mice (Antibiotic*Diet*Day interaction p<0.01, Model five in Supplementary file 1). The effect size was greatest in the days after daptomycin treatment. The effect size (Cohen’s d) of cholestyramine diet on shedding of resistant bacteria in daptomycin-treated mice was 0.43 (95% CI 0.02, 0.83) at Day 2, 0.08 (95% CI −0.32, 0.48) at Day 4, 0.12 (95% CI −0.28, 0.51) at Day 6, 0.36 (95% CI −0.04, 0.76) at Day 8, and 0.57 (95% CI 0.16, 0.98) at Day 14.
 
@@ -98,36 +130,102 @@ While adjunctive therapies have potential to be used for a variety of pathogens,
 
 ## Materials and methods
 
-## Mice and bacterial strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse, female)</td>
+      <td>Swiss Webster (CFW)</td>
+      <td>Charles River</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse, female)</td>
+      <td>C57BL/6</td>
+      <td>Charles River</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cholestyramine</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat #: C4650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. faecium)</td>
+      <td>BL00239-1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>clinical bloodstream isolate, R. Woods lab, University of Michigan</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. faecium)</td>
+      <td>PR00708-14</td>
+      <td>This paper</td>
+      <td></td>
+      <td>clinical perirectal swab isolate, R. Woods lab, University of Michigan</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. faecium)</td>
+      <td>BL00239-1-R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>derived from evolution in mouse gut</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. faecium)</td>
+      <td>PR00708-14-R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>derived from evolution in mouse gut</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and bacterial strains
 
 Unless otherwise specified, mice in all experiments were female Swiss Webster. In one experiment, inbred female C57BL/6 mice were used to ensure the results were not specific to one mouse strain. Mice were fed a standard diet (5001 Laboratory Rodent Diet) or a standard diet supplemented with 2% w/w cholestyramine resin. All mice were housed individually during experiments.
 
 Daptomycin-susceptible VR E. faecium strains were isolated from different patients at the University of Michigan Hospital. Strain BL00239-1 was isolated from a bloodstream infection, and strain PR00708-14 was isolated from a perirectal swab. Additional strains were isolated during these experiments from mouse fecal samples (including BL00239-1-R and PR00708-14-R). These strains were isolated by streaking on agar plates for two rounds of clonal purification.
 
-## Daptomycin treatment experiments
+### Daptomycin treatment experiments
 
 All mice were pretreated with ampicillin (0.5 g/L in drinking water) for 7 days before E. faecium inoculation. Ampicillin disrupts the natural gut flora and facilitates Enterococcus colonization (McKenney et al., 2019). Sample sizes for mouse experiments were chosen based on previous experience with similar experiments. Mice that were co-housed during ampicillin pre-treatment were evenly allocated among experimental treatment groups. E. faecium strains were plated from glycerol stocks and then grown overnight in liquid culture in Brain Heart Infusion broth. Mice were inoculated via oral gavage with 108 CFU E. faecium suspended in saline. E. faecium inoculum counts were confirmed by plating. Following E. faecium inoculation, mice were split into individual cages with untreated water and any experimental diets. Daptomycin doses were administered daily starting one day post-inoculation via subcutaneous injection or oral gavage. Daptomycin doses were based on an average mouse weight for each experiment. In some experiments, a cholestyramine-supplemented diet (2% w/w) was provided to mice starting one day prior to the first daptomycin dose (Experiments A-C) or starting the same day as the first daptomycin dose (Experiment D). Once started, mice were maintained on the cholestyramine diet for the duration of the experiment. For stool collection, mice were placed in clean plastic cups, and fresh stool was collected using a sterile toothpick. Stool samples were suspended in PBS (25 uL PBS/mg stool) and frozen with glycerol at −80°C for subsequent analysis.
 
-## In vitro tests of daptomycin interaction with cholestyramine
+### In vitro tests of daptomycin interaction with cholestyramine
 
 For measurements of UV absorbance, solutions of 5 mg/mL daptomycin in phosphate-buffered saline (PBS) were combined with various concentrations of cholestyramine. These mixtures were vortexed for 30 s, then allowed to incubate for 5 min at room temperature. Following incubation, cholestyramine was removed by centrifugation. Supernatants were analyzed for absorbance at 364 nm on a NanoVue Plus Spectrophotometer. A calibration curve was used to determine daptomycin concentrations from A364 values.
 
 For tests of daptomycin bioactivity, solutions of 1 mg/mL daptomycin were incubated with or without 12 mg/mL cholestyramine for 45 min at 37°C with shaking (N = 3 per treatment). The cholestyramine was removed by centrifugation, and the supernatant was used in broth microdilutions with E. faecium. Saline solution incubated with cholestyramine run as a control had no effect on cell growth.
 
-## Analysis of VRE in stool samples
+### Analysis of VRE in stool samples
 
 VR E. faecium were enumerated by plating diluted fecal suspensions on selective plates (Enterococcosel agar supplemented with 16 µg/mL vancomycin). Plates were incubated at 35°C for 40–48 hr, and colonies were counted. To quantify the proportion of these bacteria that were daptomycin-resistant, fecal suspensions were plated on calcium-supplemented Enterococcosel plates with 16 µg/mL vancomycin and 10 µg/mL daptomycin. Plates were incubated at 35°C for 40–48 hr, and colonies were counted. Serially-diluted fecal suspensions were each plated once on plates without daptomycin and once on plates containing daptomycin to estimate the proportion of daptomycin-resistant bacteria. An additional plating assay was performed to more accurately determine proportions of resistant bacteria for Days 8 and 14 in each experiment. For this assay, known sample densities were used to plate an estimated 200 CFU on plates with and without daptomycin in triplicate. This assay only included samples with high enough initial bacterial density to generate 200 CFU on each plate (3 × 103 CFU/10 mg in initial sample). Counters were not blinded to treatment groups.
 
 In some experiments, E. faecium clones were isolated from fecal samples and analyzed by broth microdilution. Clones were purified by streaking twice on Enterococcosel agar with 16 µg/mL vancomycin, and were then stored in glycerol stocks at −80°C. Broth microdilutions were performed according to Clinical and Laboratory Standards Institute (CLSI) guidelines (CLSI, 2017). After incubation, cell densities were measured by OD600 absorbance in a plate reader. OD values were fitted to a Hill function curve to determine the computed MIC (MICc) as described previously (Kinnear et al., 2020).
 
-## Genome sequencing
+### Genome sequencing
 
 Whole genomic DNA preparations were submitted to the University of Michigan sequencing core for Illumina library preparation and paired end sequencing with Illumina NovaSeq 6000 (isolates PR00708-14 and PR00708-14-R) or Illumina HiSeq (isolates BL00239-1 and BL00239-1-R). Long read data was additionally generated for strain BL00239-1 using the Oxford Nanopore MinION. The nanopore library were prepared using the Nanopore Ligation Sequencing Kit (SQK-LSK109). Quality control of sequencing reads was performed using Trimmomatic (Bolger et al., 2014). De novo genome assembly was performed using SPAdes (Bankevich et al., 2012) and genomes were annotated using Prokka (Seemann, 2014). Trimmed reads from resistant isolates were mapped against corresponding susceptible reference genomes using Burrows-Wheeler Aligner (BWA) (Li and Durbin, 2009), and candidate variants were identified with The Genome Analysis Toolkit (GATK) (McKenna et al., 2010) or breseq (Deatherage and Barrick, 2014). Reads from the reference sample were aligned to the reference genome (aligned to self) to generate a list of background variants; these background variants were filtered out during variant calling. Remaining candidate variants were screened by visual inspection of alignments in Integrative Genomics Viewer (IGV) (Thorvaldsdottir et al., 2013).
 
-## Analysis of daptomycin concentrations
+### Analysis of daptomycin concentrations
 
 Fecal daptomycin concentrations were measured via LC-MS at the University of Michigan Pharmacokinetics Core. A labeled daptomycin-d5 internal standard was used to generate calibration curves.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were run in R v1.2.1335 (Brooks et al., 2017) using the packages ‘nlme’ (Pinheiro et al., 2016) and ‘glmmTMB’ (Brooks et al., 2017). To analyze proportions of resistant bacteria, samples were plated on agar with and without daptomycin, resulting in a count of resistant bacteria and a count of total bacteria. Due to sampling, these proportions were not bounded by zero and one, so proportion data were normalized by dividing each value by the maximum value in the data set. Proportions of resistant bacteria were analyzed using mixed binomial regression models. Absolute VRE densities were analyzed using mixed models with an autoregressive error structure as previously described (Pollitt et al., 2012). Full model structures and output are shown in Supplementary file 1.

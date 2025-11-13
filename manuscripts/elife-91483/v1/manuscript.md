@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02pttbw34 Department of Pathology & Immunology, Baylor College of Medicine Houston United States
-2. https://ror.org/05cz92x43 Jan and Dan Duncan Neurological Research Institute at Texas Children’s Hospital Houston United States
-3. https://ror.org/02pttbw34 Department of Pediatrics, Baylor College of Medicine Houston United States
-4. https://ror.org/02pttbw34 Development, Disease Models & Therapeutics Graduate Program, Baylor College of Medicine Houston United States
-5. https://ror.org/02pttbw34 Department of Neuroscience, Baylor College of Medicine Houston United States
+1. Department of Pathology & Immunology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+2. Jan and Dan Duncan Neurological Research Institute at Texas Children’s Hospital Houston United States ([ROR:05cz92x43](https://ror.org/05cz92x43))
+3. Department of Pediatrics, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+4. Development, Disease Models & Therapeutics Graduate Program, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+5. Department of Neuroscience, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
 
 † Corresponding author
 
@@ -29,11 +29,29 @@ Consistent with the outcomes of removing or lesioning the cerebellum in pigeons,
 
 To begin addressing how cerebellar circuits generate behavioral diversity in disease, we used an intersectional genetics approach to mark, map, and manipulate specific types of synapses in the cerebellum. Our approach silences genetically defined populations of synapses by selectively deleting the genes that encode the vesicular GABA transporter, SLC32A1 (also known as VGAT), or the type 2 vesicular glutamate transporter, SLC17A6 (also known as VGLUT2), from genetically targeted populations of cells. Loss of GABAergic neurotransmission from Purkinje cells, which provide the sole output of the cerebellar cortex, caused uncoordinated movements and disequilibrium that were indicative of ataxia (Figure 1A; White et al., 2014). In contrast, eliminating glutamatergic neurotransmission from climbing fibers, which synapse onto Purkinje cells, caused twisting postures and hyperextended limbs that are consistent with dystonia (Figure 1A; White and Sillitoe, 2017). In addition, systemic injection of the β-carboline alkaloid drug harmaline caused hyperactivation of climbing fibers and rhythmic bursting spike activity in Purkinje cells as well as a severe tremor (Figure 1A). Optogenetically modulating Purkinje cell projections to cerebellar nuclei cells in a bursting pattern induced oscillatory tremor movements (Stratton and Lorden, 1991; Brown et al., 2020b). Together, these studies established that different manipulations of Purkinje cell inputs or outputs, and consequently Purkinje cell and nuclei neuron spike signals, can cause diverse behavioral deficits as they relate to disease (White and Sillitoe, 2017; Brown et al., 2020b; van der Heijden and Sillitoe, 2023). Given the heterogeneity and even comorbidity of these behaviors in a single disease model (White et al., 2016a), the main question that arises is, do these cerebellar neural signals represent unique pathophysiological signatures that can drive the predominant behavioral defects used to characterize different motor diseases? Here, we aim to resolve this question to provide insight into the origin of cerebellar movement disorder presentation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of network changes causing motor impairments in mouse models for ataxia, dystonia, and tremor. Dotted lines indicate lack of neurotransmission. Color-coded lines indicate primary affected cell type. (B) Example of spike firing rate averaged over previous 50 ms at each occurring spike for the 5 s spike train in (B’). (B’’) 1 s spike train for the duration indicated in the square box in (B’). (C) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train used in the classification model. We indicate the firing rate (spikes/s), median ISI–1, skewness, and ISI>25 for all for example cells. (D) Classifier model based on training data set (control: n = 25 cells; ataxia: n = 20; dystonia: n = 20; tremor: n = 20). (E) Assigned spike signature based on spike properties in complete data set (control: n = 33 cells, N = 9 mice; ataxia: n = 24, N = 5; dystonia: n = 24, N = 9; tremor: n = 24, N = 6). Categories on x-axis indicate the origin of the recorded neurons. (F, G) Scatterplot of spike train parameters used to classify neural signatures. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons. PC = Purkinje cell; CN = cerebellar nuclei; IO/CF = inferior olive/climbing fiber.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Values and group differences in spike train rate (A firing rate; B mean ISI–1; C median ISI–1), irregularity (D CV; E CV2; F skewness), pauses (G ISI25; H ISI100; I inter burst pause), and rhythmicity (J kurtosis; K rhythmicity index; L oscillation peak number) (see ‘Materials and methods’ for parameter definitions). The coarse classifier model identified the orange highlighted parameters and dotted lines as parameters and threshold values that best differentiated between the groups of cells. Boxplots indicate 25th, 50th, and 75th percentile. Each circle is the parameter value for one neuron in the training set for the coarse classifier model. * = p<0.05, ** = p<0.01, *** = p<0.001, **** = p<0.0001. For (A–K), differences were tested using one-way ANOVA followed by Tukey post hoc analyses. For (L), differences were tested using a Kolmogorov test followed by Tukey post hoc analyses. Control mice = healthy mice; ataxia model = Pcp2Cre;Slc32a1fl/fl; dystonia model = Ptf1aCre;Slc17a6fl/fl; tremor model = harmaline injection (see also Supplementary file 1). Control: n = 33 cells, N = 9 mice; ataxia: n = 24, N = 5; dystonia: n = 24, N = 9; tremor: n = 24, N = 6.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** We calculated the correlation coefficients in the Z-scored (based on total population of neurons) parameter values in control, ataxic, dystonic, and tremor mice. We find high correlation coefficients (correlation index >0.8) between many parameters. The three parameter values identified by our top performing classifier model (indicated with white box) had qualitatively different correlation indexes between the four groups of mice, indicating that they may hold different information for each group of neurons.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** We trained 12 coarse classifier models based on 12 datasets with training data and non-overlapping validation sets. We ordered the classifier models based on best performance in correctly assigning a spike signature to the neuron’s recording origin. We found that models 10 and 9 had the best performances, respectively, based on the same set of parameters and parameter cutoffs.
+
 ## Results
 
-## Spike signatures are different between archetypal ataxia, dystonia, and tremor models
+### Spike signatures are different between archetypal ataxia, dystonia, and tremor models
 
 We first compared the spike train activity between mouse models for ataxia (Pcp2Cre;Slc32a1fl/fl, White et al., 2014; Brown et al., 2020b), dystonia (Ptf1aCre;Slc17a6fl/fl, White and Sillitoe, 2017; Brown et al., 2023), and tremor (harmaline injection, Brown et al., 2020b; Handforth, 2012; Figure 1A). We identified these three mouse models as archetypal representations of their respective cerebellar motor disease phenotypes because their overt behavioral motor abnormalities are caused by cerebellum-specific manipulations that do not cause changes in the gross anatomy, cell morphology, or cell survival of the adult cerebellum. These models also exhibit remarkably reliable, severe, and penetrant ataxic, dystonic, and tremor symptoms within each respective group. Video 1 provides examples of the varied and overt motor abnormalities of the mouse models used. Supplementary file 1 summarizes the reported behavioral impairments from prior characterization of these archetypal mouse models.
+
+![Video 1.](https://cdn.elifesciences.org/articles/91483/elife-91483-video1.mp4.jpg)
 
 We hypothesized that these differences in behavioral abnormalities were accompanied by specific changes in the spike train patterns in the cerebellum. We analyzed in vivo electrophysiology recordings of the spike activity in cerebellar nuclei neurons of the interposed nucleus (Figure 1B and C), in awake, head-fixed mice with overt motor phenotypes and control animals. We focused our recordings on the interposed nucleus based on the hypothesis that the cerebellum communicates ongoing motor signals to other brain regions through this nucleus (Low et al., 2018) and deep brain stimulation (DBS) of this region successfully reduces motor impairments in mouse models of ataxia (Miterko et al., 2021), dystonia (White and Sillitoe, 2017), and tremor (Brown et al., 2020b). We described the spike train firing features using 12 parameters that summarized the spike train rate (Figure 1—figure supplement 1A–C), irregularity (Figure 1—figure supplement 1D–F), pauses (Figure 1—figure supplement 1G–I), and rhythmicity (Figure 1—figure supplement 1J–L). In agreement with our hypothesis, we found a significant difference between at least two archetypal groups for each of the 12 spike train parameters. However, none of the 12 parameters showed a statistical difference between all four groups (control, ataxia, dystonia, and tremor), suggesting that the difference between spike train signatures relied on a combination of multiple spike train parameters.
 
@@ -43,45 +61,69 @@ The classifier model identified ‘skewness’ (Figure 1D) as the best different
 
 We assessed whether this classifier model correctly assigns the spike signature corresponding to the behavioral phenotypes of the archetypal mouse models based solely on the spiking activity of single cerebellar nuclei neurons. We tested this by assigning a signature based on skewness, CV2, and ISI>25 values. We found that the classifier model indeed assigned the signature that aligned with different predominant phenotypes of each archetypal mouse model correctly for the majority of neurons (control: 85% of neurons recorded in a control mouse had a control signature; ataxia: 79%; dystonia: 88%; tremor: 54%) (Figure 1E). Our analyses also showed that most neurons of a specific signature were recorded from the mouse model with that phenotype (control: 63% of neurons with a control signature were recorded in a control mouse; ataxia: 93%; dystonia: 74%; tremor: 88%) (Figure 1E–G). Furthermore, the relative proportion of neurons with a control signature was significantly enriched in the control population relative to the entire population (chi-square: p<0.0001) (Figure 1E), and we also found this enrichment for the ataxia signature in the ataxia neurons (p<0.0001), dystonia signature in the dystonia neurons (p<0.0001), and tremor signature in the tremor neurons (p<0.0001). These data support the hypothesis that spike signatures are reliably different between archetypal mouse models of distinct motor behaviors that mimic human disease symptoms.
 
-## Multiple spike train signatures can lead to ataxic motor impairments
+### Multiple spike train signatures can lead to ataxic motor impairments
 
 Next, we set out to identify whether the spike train signatures for the archetypal mouse models are shared across mouse models with different manipulations but similar phenotypes. We started by classifying the spike train parameters in a mouse model of ataxia caused by a poly-glutamate expansion in the Atxn1 gene, Atxn1154Q/+ mice, that causes spinocerebellar ataxia type 1 (SCA1). We measured the spike train patterns early in the disease progression (Coffin et al., 2023; Figure 2A and B). Despite the presence of an ataxic phenotype at this age (Supplementary file 1), we observed that most Atxn1154Q/+ neurons exhibited a control signature (22/34) and that the second most numerous spike train signature was a dystonia signature (10/24).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig2-v1.jpg)
 
-**Figure 2.:** (A) 5 s example spike trains (and 1 s inset) of representative cerebellar nuclei neurons recorded in each mutant mouse model. Left: example cell from early disease progression (4-month-old) ataxic Atxn1 mouse. Right: example cell from late disease progression (11-month-old) ataxic 154Q/+Pcp2 mouse. (Cre;Ank1fl/flB) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train of the example cells in (A). We indicate the firing rate (spikes/s), median ISI–1, skewness, and ISI>25. (C) Proportion of predicted spike signatures in each of the mouse models. (D, E) Scatterplot of spike train parameters used to classify neural signatures. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons. Control: n = 27 cells, N = 5 mice; Atxn1: n = 34, N = 4; 154Q/+Pcp2: n = 14, N = 3. (Cre;Ank1fl/flC–E) are based on the classifier model in Figure 1D.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) 5 s example spike trains (and 1 s inset) of representative cerebellar nuclei neurons recorded in each mutant mouse model. Left: example cell from early disease progression (4-month-old) ataxic Atxn1154Q/+ mouse. Right: example cell from late disease progression (11-month-old) ataxic Pcp2Cre;Ank1fl/fl mouse. (B) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train of the example cells in (A). We indicate the firing rate (spikes/s), median ISI–1, skewness, and ISI>25. (C) Proportion of predicted spike signatures in each of the mouse models. (D, E) Scatterplot of spike train parameters used to classify neural signatures. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons. Control: n = 27 cells, N = 5 mice; Atxn1154Q/+: n = 34, N = 4; Pcp2Cre;Ank1fl/fl: n = 14, N = 3. (C–E) are based on the classifier model in Figure 1D.
 
 We reasoned that the high proportion of cells exhibiting a control signature in Atxn1154Q/+ mice might be because the disease-causing genetic abnormality affects the whole body and, consequently, the ataxic symptoms may result from dysfunction in multiple nodes in the motor circuit. We therefore also investigated a mouse model with a cerebellum-specific loss of the gene Ank1 (10 to 12-month-old Pcp2Cre;Ank1fl/fl mice, Figure 2A), which causes an adult-onset degenerative ataxia (Stevens et al., 2022). In this mouse model, we found that half of the neurons exhibited an abnormal spike train signature, with the majority classified with the dystonia spike train signature (6/14).
 
 Our classifier model differentiates the control and dystonia signatures from each other based on the skewness parameter. Previous studies have suggested that the difference between ataxia and dystonia symptoms may be caused by the relative difference in ISI regularity (Snell et al., 2022; Shakkottai et al., 2017; Shakkottai, 2014), which can be measured by our skewness parameter. Indeed, the population distribution of skewness values was lower in the ataxic Atxn1154Q/+ (0.14 ± 0.02 [mean ± SEM]) and Pcp2Cre;Ank1fl/fl (0.17 ± 0.03) mouse models (Figure 2D and E) than in our archetypal dystonia model (0.42 ± 0.05) (Ptf1aCre;Slc17a6fl/fl, Figure 1F and G). We used a one-way ANOVA followed by Tukey post hoc analyses and found that the difference in skewness between the ataxia models and the dystonia models was statistically significant (Atxn1154Q/+ vs. Ptf1aCre;Slc17a6fl/fl: p<0.0001; Pcp2Cre;Ank1fl/fl vs. Ptf1aCre;Slc17a6fl/fl: p = 0.0025), but we did not observe a difference in skewness between the two ataxia models (Atxn1154Q/+ vs. Pcp2Cre;Ank1fl/fl: p = 0.9961). Together, these findings suggest that there are multiple cerebellar spike train signatures that can lead to ataxic symptoms that both differ from the dystonia signature in their relative level of regularity; unusually regular spike train patterns are seen in Pcp2Cre;Slc32a1fl/fl mice (Figure 1) and intermediate irregular spike train patterns are observed in Atxn1154Q/+ and Pcp2Cre;Ank1fl/fl mouse models (Figure 2).
 
-## Dystonic spike train signatures are shared across etiologically distinct dystonia models
+### Dystonic spike train signatures are shared across etiologically distinct dystonia models
 
 Next, we set out to identify whether the dystonia signature was shared across mice with overt dystonic phenotypes. We included two dystonia models in our analyses; Pdx1Cre;Slc17a6fl/fl mice exhibit mild dystonic symptoms only in response to a stressful event (Lackey, 2021; Leon and Sillitoe, 2023; Figure 3A and B), whereas mice that receive ouabain applied to the surface of the cerebellum exhibit continuous severe dystonic features (Fremont et al., 2014; Calderon et al., 2011; Figure 3A and B). We found that the proportion of neurons that exhibited the control signature was greater in Pdx1Cre;Slc17a6fl/fl mice than in ouabain infusion mice (7/23 vs. 13/21, z = −2.094, p = 0.0366; Figure 3C). Moreover, the proportion of neurons with a dystonia signature was lower in Pdx1Cre;Slc17a6fl/fl mice than in ouabain infusion mice (15/23 vs. 7/21, z = 2.1128, p = 0.0349; Figure 3C). Therefore, the mice with a more severe dystonia phenotype had a smaller proportion of cells matching the control signature and a greater proportion of cells matching the dystonia signature. In addition to the proportional differences in cells with a control and dystonia signature, we found that the distribution of skewness values differed between the Pdx1Cre;Slc17a6fl/fl (0.12 ± 0.05) and ouabain infusion mice (0.36 ± 0.8) (Figure 3D and E). We quantified this difference by comparing these two mouse models to each other and the archetypal dystonic model (Ptf1aCre;Slc17a6fl/fl) using a one-way ANOVA followed by Tukey post hoc analysis. We found that the skewness was lower in Pdx1Cre;Slc17a6fl/fl mice with mild dystonic features compared to the ouabain infusion mice (p = 0.0012) and Ptf1aCre;Slc17a6fl/fl mice (p<0.0001) with severe dystonic features. There was no significant difference between the two models with severe dystonic features (p = 0.9274). These findings show that the dystonia signature is shared across etiologically distinct dystonia models and that the relative severity of symptoms may be explained by the proportion of neurons with a dystonia and control signature (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig3-v1.jpg)
 
-**Figure 3.:** (A) 5 s example spike trains (and 1 s inset) of representative cerebellar nuclei neurons recorded in each mutant mouse model. Left: example cell from mildly dystonic Pdx1 mouse. Right: example cell from severely dystonic cerebellum ouabain infusion mouse. (Cre;Slc17a6fl/flB) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train of the example cells in (A). We indicate the firing rate (spikes/s), median ISI–1, skewness, and ISI>25. (C) Proportion of predicted spike signatures in each of the mouse models. (D, E) Scatterplot of spike train parameters used to classify neural signatures. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons. Control: n = 28 cells, N = 6 mice; Pdx1: n = 23, N = 5; cerebellum ouabain infusion: n = 21, N = 4. (Cre;Slc17a6fl/flC–E) are based on the classifier model in Figure 1D.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) 5 s example spike trains (and 1 s inset) of representative cerebellar nuclei neurons recorded in each mutant mouse model. Left: example cell from mildly dystonic Pdx1Cre;Slc17a6fl/fl mouse. Right: example cell from severely dystonic cerebellum ouabain infusion mouse. (B) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train of the example cells in (A). We indicate the firing rate (spikes/s), median ISI–1, skewness, and ISI>25. (C) Proportion of predicted spike signatures in each of the mouse models. (D, E) Scatterplot of spike train parameters used to classify neural signatures. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons. Control: n = 28 cells, N = 6 mice; Pdx1Cre;Slc17a6fl/fl: n = 23, N = 5; cerebellum ouabain infusion: n = 21, N = 4. (C–E) are based on the classifier model in Figure 1D.
 
-## Tremor spike train signatures are shared across etiologically distinct tremor models
+### Tremor spike train signatures are shared across etiologically distinct tremor models
 
 Next, we set out to identify whether the tremor signature is shared across mice that exhibit severe oscillatory tremors. To test this, we used Car8wdl/wdl mice. We previously showed that Car8wdl/wdl mice exhibit a severe oscillatory tremor that can be reduced to control levels by treatment with the β-blocker drug propranolol (Zhou et al., 2022), which is used to treat tremor in human patients. Car8wdl/wdl mice also exhibit ataxia and dystonia, which are not normalized by propranolol (Jiao et al., 2005; White et al., 2016a; Miterko et al., 2021; Zhou et al., 2022). We found that, before treatment, Car8wdl/wdl mice exhibited a large proportion of neurons with the tremor signature (8/13). However, in propranolol-treated Car8wdl/wdl mice the proportion of neurons with the tremor signature was diminished while control (6/15) and dystonia (6/15) signatures were the most common signatures (Figure 4C). The classifier model differentiates between the dystonia and tremor signature based on the ISI>25 value, and, indeed, we find a shift toward higher ISI>25 values in propranolol-treated Car8wdl/wdl mice compared to untreated Car8wdl/wdl mice (Figure 4D and E). Together, these findings suggest that the tremor signature is shared across etiologically distinct mouse models of tremor and that the tremor-reducing drug propranolol also reduces specific spike train features contributing to the tremor signature (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig4-v1.jpg)
 
-**Figure 4.:** (A) 5 s example spike trains (and 1 s inset) of representative cerebellar nuclei neurons recorded in each mutant mouse model. Left: example cell from Car8 mouse with complex phenotype including severe tremor. Right: example cell from wdl/wdlCar8 mouse with complex phenotype treated with propranolol to treat tremor. (wdl/wdlB) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train of the example cells in (A). We indicate the firing rate (spikes/s), median ISI–1, skewness, and ISI>25. (C) Proportion of predicted spike signatures in each of the mouse models. (D, E) Scatterplot of spike train parameters used to classify neural signatures. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons. Control: n = 14 cells, N = 4 mice; Car8: n = 13, N = 6; wdl/wdlCar8 + propranolol: n = 15, N = 6. (wdl/wdlC–E) are based on the classifier model in Figure 1D.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) 5 s example spike trains (and 1 s inset) of representative cerebellar nuclei neurons recorded in each mutant mouse model. Left: example cell from Car8wdl/wdl mouse with complex phenotype including severe tremor. Right: example cell from Car8wdl/wdl mouse with complex phenotype treated with propranolol to treat tremor. (B) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train of the example cells in (A). We indicate the firing rate (spikes/s), median ISI–1, skewness, and ISI>25. (C) Proportion of predicted spike signatures in each of the mouse models. (D, E) Scatterplot of spike train parameters used to classify neural signatures. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons. Control: n = 14 cells, N = 4 mice; Car8wdl/wdl: n = 13, N = 6; Car8wdl/wdl + propranolol: n = 15, N = 6. (C–E) are based on the classifier model in Figure 1D.
 
-## Different spike signatures can be generated by the same canonical cerebellar circuit
+### Different spike signatures can be generated by the same canonical cerebellar circuit
 
 Thus far, the observed spike train signatures have been dependent on developmental changes in circuit connectivity (Pcp2Cre;Slc32a1fl/fl; Ptf1aCre;Slc17a6fl/fl; Pdx1Cre;Slc17a6fl/fl), neurodegeneration (Atxn1154Q/+; Pcp2Cre;Ank1fl/fl), the effects of transgene expression (Atxn1154Q/+) or frameshifting (Car8wdl/wdl), or drug effects on the nervous system outside of the cerebellum (harmaline, ouabain, propranolol). Therefore, to determine whether the distinctive features of spike activity could be generated by the same, otherwise healthy circuit, we expressed a light-sensitive cation channel opsin, channelrhodopsin (ChR2), in Purkinje cells (Pcp2Cre;ROSA26loxP-STOP-loxP-EYFP-ChR2 mice, hereon referred to as Pcp2Cre;ROSA26ChR2 mice). Upon light activation, Purkinje cell firing rate increases (Figure 5—figure supplement 1) and nuclei neurons are inhibited via the GABAergic neurotransmission from Purkinje cells (Figure 5A–C). We leveraged this circuit connectivity and optogenetic strategy to stimulate Purkinje cell terminals in the interposed nucleus to induce distinct spike signatures in those downstream interposed nucleus neurons (Figure 5). We chose three stimulation paradigms. The ataxia stimulation was a continuous 50 Hz square pulse stimulation (mimicking the lack of modulation by Purkinje cells in our degenerative and genetically silenced ataxia models); the dystonia stimulation was a 50 Hz square pulse stimulation that was on for at least 1 s with a 75% chance of a 250 ms pause between periods of stimulation (to induce the slow and irregular spike train features of our defined dystonia signature); and the tremor stimulation was a 10 Hz sinusoidal stimulation (to induce the fast, irregular, and rhythmic spike train features of our defined tremor signature). We performed in vivo recordings in awake, head-fixed mice, and confirmed that each of the optogenetic stimulation paradigms caused distinct changes in Purkinje cell spiking activity (Figure 5—figure supplement 1). We then directed stimulation toward Purkinje cell terminals surrounding interposed nucleus neurons. The stimulation paradigms induced distinct changes in the spike train features of interposed nuclei neurons using this method (Figure 5D). We then compared the resultant spike train features to the defined thresholds of our classifier model. We found that the ataxia stimulation paradigm induced cells to develop a response similar to the Atxn1154Q/+ and Pcp2Cre;Ank1fl/fl ataxia model mice (Figure 3, Figure 5—figure supplement 2), with about half of the cells remaining within the control signature (7/16), and half shifting into the dystonia signature (8/16) (Figure 5F). Also akin to these models, when we used a one-way ANOVA followed by Tukey post hoc analysis to compare the ataxia and dystonia stimulation responses, we found the ataxia stimulation resulted in significantly lower skewness than the dystonia stimulation (ataxia stimulation versus dystonia stimulation: p = 0.0287). Additionally, we found that the dystonia and tremor stimulation induced the majority of cells to produce spike signatures that our classifier model defined as dystonic (9/16 cells) or as tremor signatures (11/16 cells), respectively (Figure 5F). These data indicate that spike signatures associated with ataxia, dystonia, and tremor can be generated by the same, otherwise healthy, cerebellar circuit.
 
-## Spike signatures can induce distinct motor phenotypes that mimic disease-related behaviors
+![Figure 5.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of experimental setup with recordings in awake, head-fixed mice. (B) Optopatcher recordings of cerebellar nuclei neurons. The opsin is expressed in Purkinje cells (pink) and recordings of nuclei neurons are performed. PC = Purkinje cell; CN = cerebellar nuclei; IO/CF = inferior olive/climbing fiber. (C) Example validation that light stimulation of inhibitory Purkinje cells (blue bars) inhibits nuclei neurons during light stimulation. The lower trace is a blown-up view of the boxed area in the upper trace. (D) Example of spike firing rate averaged over previous 50 ms at each occurring spike for the 5 s spike train in (D’). (D’’) 1 s spike train for the duration indicated in the square box in (D’). Blue bars indicate light stimulation and are specific for ataxia, dystonia, and tremor (see ‘Materials and methods’ for light stimulation parameters). All example traces originate from the same nuclei neuron, indicating that the cell’s spike signature can change depending on the light stimulation paradigm. (E) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train, observe the shift in distribution from baseline during the different stimulation paradigms. (F) Proportion of cells of each predicted spike signature during each of the light stimulations based on classifier model in Figure 1D. Control: n = 26 cells, N = 7 mice; ataxia: n = 16, N = 6; dystonia: n = 16, N = 5; tremor n = 16, N = 5. (G, H) Scatterplot of spike train parameters used to classify neural signatures. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic representation of optopatcher recordings of a Purkinje cell. The opsin is expressed in Purkinje cells (pink). (B) Example validation that light stimulation (blue bars) excites Purkinje cells. The pink lines indicate climbing fiber induced complex spikes, further confirming that these recordings are from a Purkinje cell. The lower trace is a blown-up view of the boxed area in the upper trace. (C) Example of spike firing rate averaged over previous 50 ms at each occurring spike for 5 s spike train in (C’). (C’’) 1 s spike train for the duration indicated in the square box in (C’). Blue bars indicate light stimulation and are specific for ataxia, dystonia, and tremor (see ‘Materials and methods’ for light stimulation parameters). (D) Histograms of instantaneous firing rate (ISI–1) of the full 30 s spike train of the example cells in (C) All example traces originate from the same Purkinje neuron, indicating that the cell’s spike signature can change depending on the light stimulation paradigm. PC = Purkinje cell; CN = cerebellar nuclei; IO/CF = inferior olive/climbing fiber. Representative recording for n = 7 cells, N = 5 mice.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Scatterplots of spike train parameters used to classify neural signatures arranged from top to bottom to represent the averages of the groups plotted in Figures 1—5, respectively. Each graph replots the archetypal group averages for reference. Colored boxes indicate the predicted phenotype, colors of circles indicate the origin of the recorded neurons.
+
+### Spike signatures can induce distinct motor phenotypes that mimic disease-related behaviors
 
 During the head-fixed stimulation experiments, we observed subtle behavioral responses during unilateral cell-targeted optogenetic stimulation that suggested the different spike signatures might drive unique motor behaviors (Video 2). To explore this further in freely moving mice, we investigated whether the different spike signatures directly drive unique motor disturbances when a population of cells are induced to produce our defined spike signatures. To this end, Pcp2Cre;ROSA26ChR2 mice were implanted with optical fibers that were bilaterally targeted to the interposed cerebellar nuclei (Figure 6A–C). This allowed for the targeting of Purkinje cell terminals in the cerebellar nuclei, as was done during our in vivo recordings in Figure 5, but with a larger population of cells affected by the stimulation. This also allowed the mice to move freely during stimulation, making a series of behavioral assays during stimulation possible (Figure 6D). Changes in behavior were immediate and severe as soon as the stimulation began. Each stimulation paradigm resulted in a different constellation of behaviors, with the ataxia stimulation paradigm resulting in imprecise movements, the dystonia stimulation paradigm resulting in prominent dystonic posturing, and the tremor stimulation paradigm resulting in severe tremor (Video 3). Therefore, we assessed the mice for changes in gait, presence of dystonic movements, and severity of tremor. No single measurement can perfectly encapsulate the complexity of ataxia, dystonia, and tremor – all of which can appear in combination with the others (Pandey and Sarma, 2016; Nibbeling et al., 2017; Hagerman and Hagerman, 2015). Additionally, each phenotype may affect the measurement of others. This was particularly apparent with measurements of gait. We found that all stimulation paradigms affected gait, resulting in visibly different foot placement (Figure 6E-H) and movement down the footprinting corridor (Video 4). Quantitatively, this was evident in shorter steps and less precision of fore and hindpaw placement (Figure 6I–K). We also considered the behavior of the mice in an open, flat, plexiglass arena for signs of dystonic movements (Figure 6L, Video 3). The dystonia stimulation paradigm resulted in the most frequent and strongest dystonic movements, while we also observed dystonic movements with the ataxia paradigm and abnormal movement – namely severe tremor – was noted with the tremor stimulation paradigm (Figure 6M). Mice were also placed in a custom-made tremor monitor (Brown et al., 2020b) where they could freely ambulate during stimulation while an accelerometer mounted under the arena detected changes in acceleration (Figure 6D). While the ataxia stimulation paradigm did not significantly increase tremor from baseline, both the dystonia and tremor stimulation paradigms resulted in a significantly increased tremor at 10 Hz (Figure 6N–P). Though dystonia is often observed with tremor, it is possible that the detection of tremor in these animals was due to the jerkiness of their dystonic movements rather than an increase in smooth, rhythmic tremor that is more often associated with tremor disorders. Indeed, the tremor paradigm resulted in the most severe tremor of all stimulation conditions, producing a tremor severity that was more than tenfold greater than that of the dystonia stimulation paradigm. Together, these measurements produced a complex representation of the underlying phenotypes. All three stimulation parameters resulted in a behavioral repertoire that was significantly different from baseline and, while there was some overlap of features, each stimulation paradigm produced the distinct and predicted respective motor phenotype (Figure 6Q–T). Together these data suggest that our classifier model’s defined spike signatures of disease-associated cerebellar nuclei spike trains are sufficient to produce the predicted corresponding abnormal motor phenotypes in mice.
 
+![Video 2.](https://cdn.elifesciences.org/articles/91483/elife-91483-video2.mp4.jpg)
+
+**Video 2.:** Subtle features of ataxia, dystonia, and tremor can be induced in head-fixed mice by initiating each specific spike signature. In this experiment, the optopatcher recording and stimulation allowed for tracking the inductions of spike signatures in single units and the subsequent presentation of the disease-associated behaviors. In this video, we show behavioral responses to all stimulation paradigms with their paired recordings of spike activity. All responses and paired spike recordings were from a single recording of the same cell and mouse. Voltage of the spike trace is played as audio.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/91483/elife-91483-fig6-v1.jpg)
 
-**Figure 6.:** (A) Schematic of external view of bilateral optical fiber implant. (B) Schematic of a coronal section from a mouse cerebellum with bilateral optic fiber implants directed towards the cerebellar nuclei. FN = fastigial nucleus; IN = interposed nucleus; DN = dentate nucleus. (C) Photomicrograph of a Nissl-stained coronal section from a mouse cerebellum that had been implanted with optic fibers. Arrows = optic fiber tracks. Dotted lines surround the cerebellar nuclei indicated in (B). Scale = 1 cm. (D) Schematic of a mouse with bilateral optic fiber implants freely moving in a tremor monitor. (E–K) Data associated with gait measurements. (E–H) Example footprints from a single mouse before stimulation (baseline, E) and during ataxia (F), dystonia (G), and tremor stimulation (H). Scale = 1 cm. (I–K) Measurements of gait including the length of the hindpaw stride (I), forepaw stride (J), and distance between the hind and forepaws (K). N = 8 mice. * = p≤0.05; ** = p≤0.01. (L) Example images of phenotypes associated with dystonia. 1 = erect tail; 2 = high stepping; 3 = kinked tail; 4 = hyperextension of the limbs; 5 = splayed toes. (M) Dystonia rating of mice before stimulation and during stimulation with each paradigm. N = 8 mice. * = p≤0.05. (N) Tremor signals detected via tremor monitor from a mouse before and during stimulation with each paradigm. Horizontal scale = 1 s. Vertical scale = 50 mV. (O) Population average power spectrums of tremor. Solid line = mean power. Shaded region = SEM. (P) Peak tremor power of mice before and during stimulation with each paradigm. N = 8 mice. * = p≤0.05; ** = p≤0.01. (Q–S) 2-dimensional comparisons of gait (hind to fore distance), dystonia (rating), and tremor (peak power) measurements from all mice. N = 8 mice. (T) 3-dimensional plot of data in (Q–S).Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Schematic of external view of bilateral optical fiber implant. (B) Schematic of a coronal section from a mouse cerebellum with bilateral optic fiber implants directed towards the cerebellar nuclei. FN = fastigial nucleus; IN = interposed nucleus; DN = dentate nucleus. (C) Photomicrograph of a Nissl-stained coronal section from a mouse cerebellum that had been implanted with optic fibers. Arrows = optic fiber tracks. Dotted lines surround the cerebellar nuclei indicated in (B). Scale = 1 cm. (D) Schematic of a mouse with bilateral optic fiber implants freely moving in a tremor monitor. (E–K) Data associated with gait measurements. (E–H) Example footprints from a single mouse before stimulation (baseline, E) and during ataxia (F), dystonia (G), and tremor stimulation (H). Scale = 1 cm. (I–K) Measurements of gait including the length of the hindpaw stride (I), forepaw stride (J), and distance between the hind and forepaws (K). N = 8 mice. * = p≤0.05; ** = p≤0.01. (L) Example images of phenotypes associated with dystonia. 1 = erect tail; 2 = high stepping; 3 = kinked tail; 4 = hyperextension of the limbs; 5 = splayed toes. (M) Dystonia rating of mice before stimulation and during stimulation with each paradigm. N = 8 mice. * = p≤0.05. (N) Tremor signals detected via tremor monitor from a mouse before and during stimulation with each paradigm. Horizontal scale = 1 s. Vertical scale = 50 mV. (O) Population average power spectrums of tremor. Solid line = mean power. Shaded region = SEM. (P) Peak tremor power of mice before and during stimulation with each paradigm. N = 8 mice. * = p≤0.05; ** = p≤0.01. (Q–S) 2-dimensional comparisons of gait (hind to fore distance), dystonia (rating), and tremor (peak power) measurements from all mice. N = 8 mice. (T) 3-dimensional plot of data in (Q–S).
+
+![Video 3.](https://cdn.elifesciences.org/articles/91483/elife-91483-video3.mp4.jpg)
+
+**Video 3.:** Examples of a single freely moving mouse’s behavior at baseline and in response to bilateral induction of spike signatures.
+
+![Video 4.](https://cdn.elifesciences.org/articles/91483/elife-91483-video4.mp4.jpg)
+
+**Video 4.:** Examples of a single mouse’s gait within a footprinting corridor at baseline and in response to bilateral induction of spike signatures.
 
 ## Discussion
 
@@ -101,25 +143,252 @@ A parallel motivation has fueled rodent studies to define the anatomical targets
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female and male)</td>
+      <td>Pcp2Cre</td>
+      <td>Lewis et al., 2004;DOI:10.1016/j.ydbio.2004.03.007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female and male)</td>
+      <td>Ptf1aCre</td>
+      <td>Kawaguchi et al., 2002;DOI:10.1038/ng959</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female and male)</td>
+      <td>Slc32a1fl</td>
+      <td>JAX</td>
+      <td>#012897</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female and male)</td>
+      <td>Slc17a6fl</td>
+      <td>JAX</td>
+      <td>#012898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female and male)</td>
+      <td>Pdx1Cre</td>
+      <td>Gu et al., 2002;DOI:10.1242/dev.129.10.2447</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female and male)</td>
+      <td>Car8wdl/wdl</td>
+      <td>JAX</td>
+      <td>#004625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female and male)</td>
+      <td>Atxn1154Q</td>
+      <td>JAX</td>
+      <td>#005601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female and male)</td>
+      <td>Ank1fl</td>
+      <td>JAX</td>
+      <td>#036512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female and male)</td>
+      <td>Rosa26lsl-ChR2-eYFP</td>
+      <td>JAX</td>
+      <td>#024109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Harmaline</td>
+      <td>Sigma-Aldrich</td>
+      <td>#H1392</td>
+      <td>30 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,2,2-Tribromoethanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>#T48402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spike2</td>
+      <td>CED</td>
+      <td>RRID:SCR_000903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite X (LAS X)</td>
+      <td>Leica Microsystems</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tissue-Tek O.C.T. Compound</td>
+      <td>VWR</td>
+      <td>#25608-930</td>
+      <td>Specimen embedding compound for cryostat sectioning</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cresyl violet acetate 0.1% aqueous</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>#26089-01</td>
+      <td>Tissue staining solution</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cytoseal XYL</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>#18009</td>
+      <td>Mounting media</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Mice were housed in a level 3, AALAS-certified vivarium. The Institutional Animal Care and Use Committee of Baylor College of Medicine reviewed and approved all experimental procedures that involved mice. We used the following transgenic mouse lines: Pcp2Cre (also known as L7Cre) (Lewis et al., 2004), Slc32a1fl (also known as Vgatfl; JAX:012897) (Tong et al., 2008), Ptf1aCre (gift from Dr. Chris Wright) (Kawaguchi et al., 2002), Slc17a6fl (also known as Vglut2fl; JAX:012898) (Tong et al., 2007), Pdx1Cre (gift from Dr. Qingchun Tong) (Gu et al., 2002), Car8wdl/wdl (JAX:004625) (Jiao et al., 2005), Atxn1154Q (JAX:005601) (Watase et al., 2002), Ank1fl (JAX:036512) (Stevens et al., 2021), and Ai32 (Rosa26lsl-ChR2-eYFP, JAX:024109) (Madisen et al., 2012). We included mice from both sexes. We used ear punches from pre-weaned pups for PCR genotyping to identify the different transgenic alleles. Mating strategies ensured only heterozygous expression of Cre.
 
-## Headplate and craniotomy surgery for electrophysiology recordings
+#### Headplate and craniotomy surgery for electrophysiology recordings
 
 Prior to all recordings, we performed a surgery to attach a headplate over Bregma and make a craniotomy over the interposed nucleus. This allowed us to collect stable recordings of cerebellar neuron activity while the mouse was awake and with or without a severe motor phenotype. This surgery was detailed in our previous publication (White et al., 2016b). In short, mice were given preemptive analgesics, including a subcutaneous injection of buprenorphine and meloxicam. Anesthesia was induced using inhaled isoflurane. During the surgery, the mice were kept on a heating blanket to maintain body temperature. Fur was removed from the surgery site using depilatory cream (Nair) and a small incision in the skin was made over the skull. Next, we used a dental drill to make an ~2-mm-diameter craniotomy over the interposed nucleus (6.4 mm posterior and 1.3 mm lateral to Bregma). The craniotomy was surrounded by a round chamber and filled with antibiotic ointment until the day of the recording. The recording chamber was closed with a screw top or silicone cap. We also placed a headplate with a hole over Bregma. A small piece of wire was placed vertically over Bregma to identify this anatomical marker on the day of recording. The recording chamber and headplate were attached to the skull using a combination of C and B Metabond Adhesive Luting Cement (Parkell) and methyl methacrylate dental cement (A-M Systems). Mice were allowed to recover from the surgery for at least 3 days before we began conducting the in vivo electrophysiological recordings.
 
-## Standard in vivo electrophysiological recordings in awake mice
+#### Standard in vivo electrophysiological recordings in awake mice
 
 We performed in vivo electrophysiology recordings according to experimental procedures detailed in our previous publications (Brown et al., 2020b; White et al., 2016b; van der Heijden et al., 2021a). In brief, we placed mice on a rotating foam wheel and stabilized their heads by screwing the implanted headplates to the recording rig. We removed the antibiotic ointment from the recording chamber and replaced it with sterile physiological saline solution (unless otherwise specified). We measured the coordinates of Bregma to determine the coordinates where the electrode would penetrate the surface of the cerebellum. We used tungsten electrodes (2–8 MΩ, Thomas Recording) attached to a preamplifier head stage (NPI Electronic instruments) for our recordings. The position of the recording electrode was controlled using a motorized micromanipulator (MP-255; Sutter Instrument Co). Neural signals were amplified and bandpass filtered (0.3–13 kHz) using an ELC-03XS amplifier (NPI Electronics) before being digitized using a CED board. All signals were recorded using Spike2 software (CED). We only included neurons recorded between 2.5 and 3.5 mm from the surface that did not exhibit complex spikes (characteristic for Purkinje cell firing) in our analyses of cerebellar nuclei neuron firing patterns. This article includes reanalyzed data from previously reported studies (White and Sillitoe, 2017; Brown et al., 2020b; Stevens et al., 2022; van der Heijden et al., 2021a).
 
-## Spike sorting and analyses
+#### Spike sorting and analyses
 
-We previously showed that recording duration influences the estimation of neural firing parameters (van der Heijden et al., 2022b). Therefore, all parameter estimates in this article are based on 30-s-long recordings. We used Spike2 software to sort out spikes from electrophysiological recordings. Information about spike timing was imported and saved in MATLAB databases using custom written code. We described the spike analyses using 12 parameters investigating the properties of ISIs within the recording:(1)firing rate=spikess; (2)meaninstantaneousfiringrate=mean(ISI−1);(3)medianinstantaneousfiringrate=median(ISI−1); (4)CV=stdev(ISI)mean(ISI); (5)CV2=mean(2×|ISIn−ISIn−1ISIn+ISIn−1|); (6)skewness=2∗ median instantaneous firing rate−firing ratemedian instantaneous firing rate+ firing rate; (7)ISI25=%ISI>25ms; (8)ISI100=%ISI>100ms; (9)interburstpause=mean(ISI>(5∗mean(ISI))); (10)kurtosis=%ISIatmode(ISI);(11)rhythmicityindex=a1z+b1z+a2z+b2z+…; (12)oscillationpeaks=numberofpeaks“a”.
+We previously showed that recording duration influences the estimation of neural firing parameters (van der Heijden et al., 2022b). Therefore, all parameter estimates in this article are based on 30-s-long recordings. We used Spike2 software to sort out spikes from electrophysiological recordings. Information about spike timing was imported and saved in MATLAB databases using custom written code. We described the spike analyses using 12 parameters investigating the properties of ISIs within the recording:
+
+$$
+firing rate=\frac{spikes}{s};
+$$
+
+
+
+$$
+meaninstantaneousfiringrate=mean(ISI^{−1});
+$$
+
+
+
+$$
+medianinstantaneousfiringrate=median(ISI^{−1});
+$$
+
+
+
+$$
+CV=\frac{stdev(ISI)}{mean(ISI)};
+$$
+
+
+
+$$
+CV2=mean(2\times|\frac{ISI_{n}−ISI_{n−1}}{ISI_{n}+ISI_{n−1}}|);
+$$
+
+
+
+$$
+skewness=2∗\frac{ median instantaneous firing rate−firing rate}{median instantaneous firing rate+ firing rate};
+$$
+
+
+
+$$
+ISI_{25}=%ISI>25ms;
+$$
+
+
+
+$$
+ISI_{100}=%ISI>100ms;
+$$
+
+
+
+$$
+interburstpause=mean(ISI>(5∗mean(ISI)));
+$$
+
+
+
+$$
+kurtosis=%ISIatmode(ISI);
+$$
+
+
+
+$$
+rhythmicityindex=\frac{a_{1}}{z}+\frac{b_{1}}{z}+\frac{a_{2}}{z}+\frac{b_{2}}{z}+…;
+$$
+
+
+
+$$
+oscillationpeaks=numberofpeaks“a”.
+$$
 
 For the calculation of Equation 11 and Equation 12, we performed an autocorrelation analysis for all spikes in the 30 s recording, calculated the rhythmicity index, and found oscillation peaks as previously described (Lang et al., 1997; van der Heijden et al., 2021b). We used a bin width of 5 ms. The first oscillation peak was determined as the highest bin between 10 ms and 1.5 times the mean ISI for a given neuron. The difference between the baseline level and the height of the peak is denoted as a1, the difference between baseline and the depth of the trough is denoted as b1, and z is the difference between baseline and the total number of spikes included in the analyses. Each subsequent peak was determined as the highest bin between the delay time of the previous trough and an + a1 + 10 ms, where an is the time of the previous peak. The first trough was determined as the lowest bin between the first peak (a1) and an + a1. Peaks and troughs were only accepted if their sum was higher than four times the standard deviation of autocorrelation between 0.96 and 1 s lag-time or if the peak was higher than baseline plus two times the standard deviation and the trough was lower than baseline minus two times the standard deviation.
 
-## Supervised classifier learner
+#### Supervised classifier learner
 
 We trained our classifier learner using cerebellar nuclei neuron recordings from mixed background control mice (control), Pcp2Cre;Slc32a1fl/fl mice (ataxia), Ptf1aCre;Slc17a6fl/fl mice (dystonia), and harmaline-injected mice (tremor). We have previously tested these models and consider them as reliable archetypical models for cerebellar movement disorders (White et al., 2014; White and Sillitoe, 2017; Brown et al., 2020b). For the analyses, we reanalyzed previous recordings (White and Sillitoe, 2017; Brown et al., 2020b; Stevens et al., 2022; Zhou et al., 2022; van der Heijden et al., 2021a) in addition to newly acquired ones. We previously found that the recording duration used for parameter analyses influences the presentation of spike properties. Therefore, we only included recordings with a duration of exactly 30 s and calculated parameter estimates as described above (van der Heijden et al., 2022b). Our previous study also showed that cerebellar nuclei neurons recorded in the same mouse had equal parameter variability as nuclei neurons recorded in different mice. Therefore, we treated all single-nuclei neuron recordings as independent datapoints (van der Heijden et al., 2022b).
 
@@ -127,30 +396,30 @@ We used the built-in supervised machine learning, MATLAB Classification Learner 
 
 We trained 12 classifier models based on training sets of control (n = 25), ataxia (n = 20), dystonia (n = 20), and tremor (n = 20) neurons, and 12 distinct validation sets of control (n = 8), ataxia (n = 4), dystonia (n = 4), and tremor (n = 4) neurons. We validated how the classifier models (see Figure 1—figure supplement 3) performed and used the classifier with the best performance throughout the article to assign signatures to nuclei cell spike patterns.
 
-## Optopatcher in vivo electrophysiology recordings in awake mice
+#### Optopatcher in vivo electrophysiology recordings in awake mice
 
 Optopatcher experiments were performed as previously described (van der Heijden et al., 2022a). We prepared the mice for recording by performing a headplate and craniotomy surgery as described above. The electrophysiology rig and setup were the same as described above with the following differences: we used an optopatcher device (ALA Scientific Instruments Inc) that allows for the placement of a custom-made optical fiber (ThorLabs, #FT200UMT) within a glass recording electrode (Harvard Apparatus, #30-0057). The tip of the optical fiber was placed near the tip of the recording electrode and was illuminated via a 465 nm LED light source (ALA Scientific Instruments Inc). On the day of the recording, we pulled glass electrodes (Sutter Instruments, #P-1000), filled the electrodes with physiological saline, and measured their impedance using an ELC-03XS amplifier (NPI Electronics) before recording. Only electrodes with 2–15 MΩ impedance were used. Light stimulation was triggered using custom Spike2 scripts paired with a CED board (CED). All optopatcher recordings were performed in Pcp2Cre;Ai32 mice that express channelrhodopsin in Purkinje cells. Nuclei neurons included in our analyses were cell recordings between 2.5–3.5 mm from the surface of the cerebellum and were inhibited by brief light stimulation at 465 nm. After we found and isolated a cell, we slowly ramped up the brightness of this brief stimulation until we found the minimal light power that modulated the spiking activity. This minimal power was then used to stimulate the cell with the various test parameters during the recording session. Only cells with a ‘control’ spike signature at baseline were considered for further analysis.
 
-## Optogenetic light stimulation paradigms for optopatcher recordings and behavioral assays
+#### Optogenetic light stimulation paradigms for optopatcher recordings and behavioral assays
 
 We used the following stimulation parameters to measure signature-specific responses; ataxia: 50 Hz (10 ms light on/10 ms light off) square pulses; dystonia: at least 1 s of 50 Hz (10 ms light on/10 ms light off) square pulses interspersed with at 75% chance of 250 ms pauses in stimulation; tremor: 100 Hz pulses (5 ms light on/5 ms light off) overlaid with a 10 Hz sinusoid (50 ms parabolic increase and decrease of light power followed by 50 ms light off).
 
-## Bilateral optic fiber implant surgery for in vivo behavioral assays
+#### Bilateral optic fiber implant surgery for in vivo behavioral assays
 
 We implanted mice with optical fibers (ThorLabs, #FT200UMT) targeted bilaterally to the interposed cerebellar nuclei to assess the motor phenotypes that result from our stimulation parameters. We previously described this surgical procedure (Brown et al., 2020b). Briefly, the mice were given subcutaneous injections of sustained-release buprenorphine and meloxicam as preemptive analgesics. Anesthesia was induced with 3% isoflurane gas and the anesthetic plane was maintained with 2% isoflurane gas. The mice were placed on a heating blanket and the head was stabilized in a stereotaxic frame (David Kopf Instruments). Fur was removed from the top of the head using depilatory cream (Nair). The surgical site was cleaned using alternating applications of betadine scrub and alcohol. An incision was made in the skin to expose the skull from anterior to Bregma to the posterior aspect of the occipital plate. The fascia was removed from the top of the skull and a scalpel was used to etch fine grooves into the top of the skull. A small craniotomy was made in the parietal plate with a dental drill in order to attach a skull screw (00–90 × 1/16 flat point stainless steel machine screw) to anchor the implant to the skull. The skull screw was advanced only until the point that it was stable in the skull and care was taken to ensure it did not contact the brain. The implant sites were determined by measuring 6.4 mm posterior and ±1.5 mm lateral to Bregma. Small craniotomies were made at these sites using a dental drill. The base of the fibers were placed on the surface of the cerebellum and was advanced ventrally for 2 mm. A small amount of antibiotic ointment was placed around each fiber to prevent Metabond or dental cement from entering the craniotomy. Metabond was applied over the entire exposed area of skull and around the skull screw and fibers. Two short segments of wire were embedded in the Metabond to allow the experimenter to hold the mouse’s head while attaching and removing the fiber patch cables from the implant. Dental cement was placed over the Metabond. The mice were allowed to recover for at least 3 days before any behavioral assessments were made. Subcutaneous injections of meloxicam were provided every 24 hr during the recovery period. Eight mice (number of mice, N) were implanted and tested with all three behavioral assays.
 
-## Gait analysis
+#### Gait analysis
 
 Measurements of gait were made for all mice both before (baseline) and during each stimulation parameter. To do this, the mice were briefly scruffed and then contrasting colored non-toxic paints were applied to the soles of their forepaws and hindpaws (blue paint for forepaws and red paint for hindpaws). The mice were then gently set down on a piece of blank white paper positioned between two parallel plexiglass barriers with a dark enclosed area at the end of the corridor. Adult mice are naturally inclined to walk toward the dark enclosed area, meanwhile depositing paint on the paper with each footstep. The stimulation, if present, was extinguished once the mice entered the enclosed area. The mice were allowed to rest for at least 2 min between each trial. A trial was considered successful if there were at least four hind and forepaw prints for both the left and right feet that were visible, steady (the mouse was neither running or stopping midway through the series of footsteps), and in as straight of a line as possible (the mouse was not actively turning during the trial). Optic patch cables were connected to the implant during every trial (including baseline runs when stimulation was not present). At least two successful trails were collected per stimulation parameter. For analysis, measurements from two trials of the same type were averaged to determine the values for each mouse. These measurements were stride, the distance from one footprint to the next from the same foot and hind-to-fore distance, the distance from one hindpaw placement from a corresponding forepaw placement on the same side of the body. Three of each measurement were made per footprint and were averaged to determine the measurements per foot, per trial. These trials were then averaged to determine the final measurements for each mouse. A repeated-measures one-way ANOVA with a Tukey multiple comparison adjustment was performed using GraphPad Prism software (GraphPad Software, La Jolla, CA) to determine significance. Significance values are indicated as not significant (ns) if p>0.05, * = p≤0.05, ** = p≤0.01.
 
-## Dystonia rating scale
+#### Dystonia rating scale
 
 Mice were placed in a rectangular plexiglass arena in order to phenotypically rate the frequency and severity of dystonic behavior as described previously (Jinnah et al., 2000; Pizoli et al., 2002). The videos were captured to include the animals’ behavior before (baseline) and during each stimulation paradigm (ataxia, dystonia, and tremor). Each stimulation period lasted 2 min, during which the mouse was allowed to ambulate freely as well as in response to disturbance by the experimenter. The rating period excluded the first 10 s after stimulation was initiated to avoid including behavior in response to the sudden application of stimulation. Mice were given a score of 0 if no motor abnormalities were identified, 1 if there was abnormal motor behavior that was not obviously dystonic (such as severe tremor), 2 if there was a mild motor phenotype that included dystonic behaviors that may occur only in response to being disturbed by the experimenter or unprovoked (such as brief hyperextension of the limbs or extension of the neck and/or back), 3 if there was moderate severity or frequent unprovoked dystonic behaviors, 4 if there were severe unprovoked dystonic behaviors, and 5 if there were severe unprovoked dystonic behaviors that made goal-directed ambulation extremely difficult or impossible for an extended time. A detailed description of dystonic phenotypes in mice can be found in Brown et al., 2023. Wilcoxon matched-pairs signed rank tests were performed with a post hoc Holm–Sidak method for p-value adjustment in order to determine significance using GraphPad Prism software (GraphPad Software). Significance values are indicated as not significant (ns) if p>0.05, * = p≤0.05, ** = p≤0.01.
 
-## Tremor analysis
+#### Tremor analysis
 
 The amplitude and frequency of tremor before (baseline) and during optogenetic stimulation were measured using a custom-made tremor monitor as previously described (Brown et al., 2020b; Zhou et al., 2022; van der Heijden et al., 2021a). The mice were implanted with optical fibers targeted to the interposed nucleus as described above. LED drivers were connected to the implant via optical patch cables and placed above the tremor monitor chamber. The tremor monitor chamber is a clear plexiglass box that is suspended by elastic cords that are connected to each corner of the box. An accelerometer is securely mounted to the bottom of the box to detect the tremor of the mouse within the box. The mice were placed in the chamber and were able to freely ambulate while in the box. They were given 2 min to acclimate to the novel tremor monitor environment before 2 min duration baseline recordings were made. The mice were then stimulated with the ataxia, dystonia, and tremor stimulation parameters for 2 min per stimulation period. At least 2 min were allowed to elapse between stimulation periods. Mice were encouraged to ambulate a similar amount during all recording periods. The output from the tremor monitor was amplified and lowpass filtered at 5 kHz (Brownlee Precision, Model 410) before being digitized by a CED board and analyzed using Spike2 scripts. Tremor monitor recordings were centered on zero and downsampled using the Spike2 interpolate function. A power spectrum analysis with a Hanning window was performed on each recording period. The peak power was calculated as the maximum power between 0 and 30 Hz, which is consistent with the range that we typically observe for physiological and pathological tremor in mice (Brown et al., 2020b). A repeated-measures one-way ANOVA with Tukey multiple comparison adjustment was performed using GraphPad Prism software (GraphPad Software) to determine significance. Significance values are indicated as not significant (ns) if p>0.05, * = p≤0.05, ** = p≤0.01.
 
-## Histology
+#### Histology
 
 After electrophysiology and behavior experimentation, mice were heavily anesthetized with avertin (2,2,2-tribromoethanol, Sigma-Aldrich, St. Louis, MO; #T48402) and transcardially perfused with ice-cold phosphate buffered saline (PBS, 1×) followed by ice-cold 4% paraformaldehyde (PFA). The implants were removed, and then the brains were dissected out of the skull. The brains were post-fixed in PFA at 4°C for at least 24 hr. They were then cryoprotected via a sucrose gradient, starting at 15% sucrose in PBS followed by 30% sucrose in PBS. The brains were imbedded in Tissue-Tek O.C.T. Compound (Sakura, Torrance, CA), frozen, and then sliced on a cryostat to produce 40 µm thickness sections. The tissue sections were washed in PBS, mounted onto slides, and allowed to dry on the slide for at least 2 hr. The sections were put in a xylene and ethanol series with ~2 min per submersion in the following order: 100% xylene, 100% xylene, 100% ethanol, 100% ethanol, 90% ethanol, 70% ethanol. The sections were then placed in water for ~2 min and then submerged in cresyl violet solution until the stain was sufficiently dark. They were then dehydrated by reversing the series with ~30 s per submersion. Finally, Cytoseal XYL mounting media (Thermo Scientific, Waltham, MA, #22-050-262) and a cover slip were placed on the slides. The slides were allowed to dry in a fume hood before imaging. Photomicrographs were obtained using a Leica DM4000 B LED microscope equipped with a Leica DMC 2900 camera and Leica Application Suite X (LAS X) software. Images were corrected for brightness and contrast using Adobe Photoshop (Adobe Systems, San Jose, CA). Figure panels were made using Adobe Illustrator software.

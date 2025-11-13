@@ -16,15 +16,15 @@
 
 ## Abstract
 
-10.7554/eLife.12435.001 The Ras-superfamily GTPases are central controllers of cell proliferation and morphology. Ras signaling is mediated by a system of interacting molecules: upstream enzymes (GEF/GAP) regulate Ras’s ability to recruit multiple competing downstream effectors. We developed a multiplexed, multi-turnover assay for measuring the dynamic signaling behavior of in vitro reconstituted H-Ras signaling systems. By including both upstream regulators and downstream effectors, we can systematically map how different network configurations shape the dynamic system response. The concentration and identity of both upstream and downstream signaling components strongly impacted the timing, duration, shape, and amplitude of effector outputs. The distorted output of oncogenic alleles of Ras was highly dependent on the balance of positive (GAP) and negative (GEF) regulators in the system. We found that different effectors interpreted the same inputs with distinct output dynamics, enabling a Ras system to encode multiple unique temporal outputs in response to a single input. We also found that different Ras-to-GEF positive feedback mechanisms could reshape output dynamics in distinct ways, such as signal amplification or overshoot minimization. Mapping of the space of output behaviors accessible to Ras provides a design manual for programming Ras circuits, and reveals how these systems are readily adapted to produce an array of dynamic signaling behaviors. Nonetheless, this versatility comes with a trade-off of fragility, as there exist numerous paths to altered signaling behaviors that could cause disease. DOI: http://dx.doi.org/10.7554/eLife.12435.001
+The Ras-superfamily GTPases are central controllers of cell proliferation and morphology. Ras signaling is mediated by a system of interacting molecules: upstream enzymes (GEF/GAP) regulate Ras’s ability to recruit multiple competing downstream effectors. We developed a multiplexed, multi-turnover assay for measuring the dynamic signaling behavior of in vitro reconstituted H-Ras signaling systems. By including both upstream regulators and downstream effectors, we can systematically map how different network configurations shape the dynamic system response. The concentration and identity of both upstream and downstream signaling components strongly impacted the timing, duration, shape, and amplitude of effector outputs. The distorted output of oncogenic alleles of Ras was highly dependent on the balance of positive (GAP) and negative (GEF) regulators in the system. We found that different effectors interpreted the same inputs with distinct output dynamics, enabling a Ras system to encode multiple unique temporal outputs in response to a single input. We also found that different Ras-to-GEF positive feedback mechanisms could reshape output dynamics in distinct ways, such as signal amplification or overshoot minimization. Mapping of the space of output behaviors accessible to Ras provides a design manual for programming Ras circuits, and reveals how these systems are readily adapted to produce an array of dynamic signaling behaviors. Nonetheless, this versatility comes with a trade-off of fragility, as there exist numerous paths to altered signaling behaviors that could cause disease.
 
 ## Introduction
 
-Many dynamic processes in the cell such as proliferation, differentiation, or morphological change are regulated by signaling through members of the Ras superfamily of small GTPases (
+Many dynamic processes in the cell such as proliferation, differentiation, or morphological change are regulated by signaling through members of the Ras superfamily of small GTPases (Chang et al., 2003; Sjölander et al., 1991; Hofer et al., 1994; Vojtek and Der, 1998; Bourne et al., 1990). Mutations in these important molecules are often associated with cancer or other diseases (Bos, 1989; Schubbert et al., 2007). These small GTPases act as macromolecular 'switches' at cell membranes, cycling between an ON state when bound to GTP and an OFF state when bound to GDP (Bourne et al., 1990) (Figure 1A). This notion of an ON and OFF state of the GTPase is manifest in differences in the conformation of the protein such that, in most cases, only the GTP-bound state is able to interact with downstream effector molecules and assemble signaling complexes (Krengel et al., 1990; Milburn et al., 1990; Nassar et al., 1995; Herrmann, 2003).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig1-v2.jpg)
 
-**Figure 1.:** (A) Depiction of the proximal architecture of Ras signaling systems. Ras is activated by guanine exchange factors (GEFs) that exchange GDP for GTP and is inactivated by GTPase-activating proteins (GAPs) that accelerate the hydrolysis of GTP. Activated Ras interacts with downstream effectors such as Raf or PI3 Kinase to assemble signaling complexes and elicit signaling outputs. (B) Abstraction of the proximal biochemical machinery underlying Ras processing of inputs into outputs, raising the question as to how the network configuration shapes signaling to multiple effector outputs.DOI: http://dx.doi.org/10.7554/eLife.12435.003
+**Figure 1.:** (A) Depiction of the proximal architecture of Ras signaling systems. Ras is activated by guanine exchange factors (GEFs) that exchange GDP for GTP and is inactivated by GTPase-activating proteins (GAPs) that accelerate the hydrolysis of GTP. Activated Ras interacts with downstream effectors such as Raf or PI3 Kinase to assemble signaling complexes and elicit signaling outputs. (B) Abstraction of the proximal biochemical machinery underlying Ras processing of inputs into outputs, raising the question as to how the network configuration shapes signaling to multiple effector outputs.
 
 As enzymes, these GTPases are formally capable of binding GTP, hydrolyzing it to GDP+Pi, and releasing product to complete the catalytic cycle on their own, but, in practice, the GTPase is incredibly slow at each stage of this cycle except for the initial binding of nucleotide (Neal et al., 1988; Gibbs et al., 1984; McGrath et al., 1984). As such, molecules that can accelerate these slow steps in the catalytic cycle function as essential regulators of GTPase activity during signaling events: guanine exchange factors (GEFs), which promote product release by emptying the nucleotide pocket of the GTPase and allowing subsequent reloading of the GTPase with nucleotide (OFF->ON transition); and GTPase-activating proteins (GAPs) which accelerate the hydrolysis of GTP to GDP+Pi (ON->OFF transition) (Figure 1A) (Boguski and McCormick, 1993; Trahey and McCormick, 1987; Bos et al., 2007; McCormick et al., 1991). How Ras processes information, then, is not determined by Ras alone, but rather is also highly dependent on a system of molecules comprising the upstream GEFs and GAPs that regulate its activity, and the downstream effector molecules that are engaged and regulated by the activated GTPase (Figure 1B).
 
@@ -40,17 +40,17 @@ Using this system, we have explored how Ras signaling changes in response to net
 
 ## Results
 
-## Systems-level reconstitution of Ras signal processing in vitro: tracking effector output dynamics across multiple GTPase turnovers
+### Systems-level reconstitution of Ras signal processing in vitro: tracking effector output dynamics across multiple GTPase turnovers
 
-To gain insight into the dynamics of how Ras transmits signals to downstream effectors under different network configurations or perturbations, we sought a dynamic in vitro reconstitution of Ras signal processing that would allow us to track effector outputs across multiple Ras turnovers. We reasoned that a microsphere surface charged with Ras could serve as a platform for the assembly and disassembly of fluorescent effector molecules from solution in response to inputs, much like the native Ras system (bound to the plasma membrane) functions in cells (
+To gain insight into the dynamics of how Ras transmits signals to downstream effectors under different network configurations or perturbations, we sought a dynamic in vitro reconstitution of Ras signal processing that would allow us to track effector outputs across multiple Ras turnovers. We reasoned that a microsphere surface charged with Ras could serve as a platform for the assembly and disassembly of fluorescent effector molecules from solution in response to inputs, much like the native Ras system (bound to the plasma membrane) functions in cells (Figure 2A). Signaling networks of defined composition could then be prepared from recombinant proteins and robust measurements of the dynamic output behavior could be determined by tracking the amount of effector on the surface over time for many individual beads and averaging their responses. Although such a system would not fully capture all biophysical features of cellular Ras signaling, such as GTPase diffusion in a fluid plasma membrane, partitioning between membrane microdomains, or GTPase exchange from the membrane, it serves as an excellent starting point to understand how these systems behave with fixed Ras molecules in a highly controlled setting (Tian et al., 2007; Silvius et al., 2006). Moreover, although the signaling activity of most Ras effectors is more complex than binding alone (see, for example: Jelinek et al., 1996; Stokoe et al., 1994), the regulated interaction of effectors with GTPase is the foundation on which any other complex signaling mechanisms will unfold, and thus represents a universal and fundamental feature of all Ras signaling systems that demands our understanding.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig2-v2.jpg)
 
-**Figure 2.:** (A) Bead-based approach used to study how Ras systems assemble effector complexes in response to inputs. By incubating Ni-NTA microspheres that have been loaded with Ras in solutions containing GEFs, GAPs, and fluorescent effectors, system outputs can be observed by monitoring the accumulation of effector on the bead-bound Ras. (B) Example of GEF-catalyzed GTP-dependent translocation of fluorescent effector to Ras-loaded bead. The amount of fluorescent effector bound to an individual bead before or after (10 min) addition of 2 μM GEF +/- 5 mM GDP or GTP is shown. (C) Schematic depicting multiplexed assay workflow in which the output dynamics for many different system configurations can be measured by microscopy. (D) Dose-dependent signaling response of effector translocation in response to increasing amounts of indicating RasGRF GEF activity. (E) Dose-dependent turn-off of output in the presence of saturating effector and increasing amounts of indicated NF1 GAP activity. (F) Combined turn on and turn off behavior of effector response when the system was activated with 2 μM RasGRF GEF and after 30 min NF1-GAP was added. GAPs, GTPase-activating proteins; GEFs, guanine exchange factors.DOI: http://dx.doi.org/10.7554/eLife.12435.004
+**Figure 2.:** (A) Bead-based approach used to study how Ras systems assemble effector complexes in response to inputs. By incubating Ni-NTA microspheres that have been loaded with Ras in solutions containing GEFs, GAPs, and fluorescent effectors, system outputs can be observed by monitoring the accumulation of effector on the bead-bound Ras. (B) Example of GEF-catalyzed GTP-dependent translocation of fluorescent effector to Ras-loaded bead. The amount of fluorescent effector bound to an individual bead before or after (10 min) addition of 2 μM GEF +/- 5 mM GDP or GTP is shown. (C) Schematic depicting multiplexed assay workflow in which the output dynamics for many different system configurations can be measured by microscopy. (D) Dose-dependent signaling response of effector translocation in response to increasing amounts of indicating RasGRF GEF activity. (E) Dose-dependent turn-off of output in the presence of saturating effector and increasing amounts of indicated NF1 GAP activity. (F) Combined turn on and turn off behavior of effector response when the system was activated with 2 μM RasGRF GEF and after 30 min NF1-GAP was added. GAPs, GTPase-activating proteins; GEFs, guanine exchange factors.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Dose-dependent effect of increasing RasGRF GEF concentratiosn on initial rates of the c-Raf RBD effector to Ras-loaded beads. (B) Dose-dependent effect of increasing RasGRF GEF concentrations on steady state levels of the c-Raf RBD effector on Ras-loaded beads. (C) Dose-dependent effect of increasing NF1 GAP concentrations on disappearance of c-Raf RBD effecro from Ras•GTP-loaded beads. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domain.DOI: http://dx.doi.org/10.7554/eLife.12435.005
+**Figure 2—figure supplement 1.:** (A) Dose-dependent effect of increasing RasGRF GEF concentratiosn on initial rates of the c-Raf RBD effector to Ras-loaded beads. (B) Dose-dependent effect of increasing RasGRF GEF concentrations on steady state levels of the c-Raf RBD effector on Ras-loaded beads. (C) Dose-dependent effect of increasing NF1 GAP concentrations on disappearance of c-Raf RBD effecro from Ras•GTP-loaded beads. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domain.
 
 We first asked whether we could observe GTP-dependent translocation of an effector molecule to a Ras-coated bead catalyzed by a guanine nucleotide exchange factor (GEF). For our initial studies, we chose to use the catalytic domain from the RasGRF GEF, which is constitutively active and, unlike other GEFs, contains no allosteric feedback sites (Freedman, 2006). Ni-NTA microspheres were charged with a 16x-histidine tagged H-Ras•GDP (OFF state) that could not dissociate from the bead and incubated in the presence of 50 nM (~KD) of a model effector: a fluorescently tagged Ras-binding domain (RBD) from the C-Raf kinase (Block et al., 1996). Under these basal conditions, the amount of fluorescence on the bead was comparable to the background levels of fluorescence from the effector in solution. We then added as input 2 μM of the catalytic domain of the RasGRF GEF and 5 mM of either GDP or GTP and monitored the output of effector fluorescence on the bead (Figure 2B). This amount of nucleotide in solution is in vast excess of the small amount of bead-bound Ras present in the reactions, providing essentially an infinite supply of nucleotide for these reactions on the timescale we examine (detailed in 'Materials and methods'). Upon GEF and nucleotide addition, there was noticeable accumulation of fluorescent effector on the bead surface of the GTP containing reactions within seconds, and considerable fluorescent signal was observed by 10 min. In contrast, no fluorescent effector accumulated on the surface of reactions containing GDP, indicating that GEF-catalyzed translocation of the effector was dependent on Ras becoming GTP loaded. Having seen GTP-dependent GEF-catalyzed translocation of an effector to a Ras-charged bead surface, we were now in position to prepare signaling networks of arbitrary configuration and assay their output dynamics in multiplex using our microscopy-based assay (Figure 2C).
 
@@ -62,33 +62,41 @@ Having found that our system can produce effector outputs that are turned on by 
 
 Taken together, these data imply that our on bead reconstitution of H-Ras signal processing can semi-quantitatively track dynamic effector outputs across multiple cycles of Ras activation and deactivation during signaling. This system now puts us in position to explore how different mutational states, network configurations, protein identities, or feedback mechanisms affect signal processing by Ras GTPase systems.
 
-## Distortion of signaling by oncogenic Ras alleles depends on balance of positive and negative regulatory activities in the network
+### Distortion of signaling by oncogenic Ras alleles depends on balance of positive and negative regulatory activities in the network
 
-Mutations of Ras (especially at the G12, G13, or Q61 positions) are frequently associated with cancer or other diseases (
+Mutations of Ras (especially at the G12, G13, or Q61 positions) are frequently associated with cancer or other diseases (Barbacid, 1987). These alleles are primarily thought to impact Ras signaling through three mechanisms: 1) decreasing the intrinsic hydrolysis rate of the GTPase, 2) blocking GAP-mediated hydrolysis of the GTPase, and 3) potentially altering the interaction and preference of the GTPase for downstream effectors (Figure 3A) (Trahey and McCormick, 1987; Barbacid, 1987; Rajalingam et al., 2007; Smith and Ikura, 2014). The same mutant allele of Ras can elicit different phenotypes in different cell types and tissues. Thus, we wanted to use our in vitro systems reconstitution assay to determine which system configurations are most sensitive to these oncogenic perturbations.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig3-v2.jpg)
 
-**Figure 3.:** (A) Depiction of wild-type (WT) Ras and oncogenic G12V Ras, illustrating the modes by which mutation is thought to impact the network behavior: changing intrinsic hydrolysis rate, blocking GAP-mediated hydrolysis, and modulating effector interactions. (B) Absolute and normalized effector responses to a 2 μM RasGRF GEF step input in the absence of any GAP activity. (C) Absolute and normalized responses of the same step input as in (B), but with 1 μM NF1 GAP activity present in the network. (D) Experimentally determined phase diagram derived from 16 output responses showing the magnitude of signal distortion caused by G12V substitution (defined as fold-change in integrated signal of G12V relative to WT) in different GEF and GAP network configurations. GAP, GTPase-activating protein; GEF, guanine exchange factor.DOI: http://dx.doi.org/10.7554/eLife.12435.006
+**Figure 3.:** (A) Depiction of wild-type (WT) Ras and oncogenic G12V Ras, illustrating the modes by which mutation is thought to impact the network behavior: changing intrinsic hydrolysis rate, blocking GAP-mediated hydrolysis, and modulating effector interactions. (B) Absolute and normalized effector responses to a 2 μM RasGRF GEF step input in the absence of any GAP activity. (C) Absolute and normalized responses of the same step input as in (B), but with 1 μM NF1 GAP activity present in the network. (D) Experimentally determined phase diagram derived from 16 output responses showing the magnitude of signal distortion caused by G12V substitution (defined as fold-change in integrated signal of G12V relative to WT) in different GEF and GAP network configurations. GAP, GTPase-activating protein; GEF, guanine exchange factor.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Depiction of wild-type Ras and oncogenic G12C/Q61L Ras illustrating the modes by which mutation is thought to impact the network behavior: changing in intrinsic hydrolysis rate, blocking GAP-mediated hydrolysis, and modulating effector interactions. (B) Absolute effector responses for G12C and WT Ras in response to a 2 μM RasGRF GEF step input in the absence of any GAP activity. (C) As in (B) but with 1 μM NF1 GAP activity present in the network. (D) Absolute effector responses for Q61L and WT Ras in response to a 2 μM RasGRF GEF step input in the absence of any GAP activity. (E) As in (D) but with 1 μM NF1 GAP activity present in the network. GAP, GTPase-activating protein; GEF, guanine exchange factor; WT, wild type.DOI: http://dx.doi.org/10.7554/eLife.12435.007
+**Figure 3—figure supplement 1.:** (A) Depiction of wild-type Ras and oncogenic G12C/Q61L Ras illustrating the modes by which mutation is thought to impact the network behavior: changing in intrinsic hydrolysis rate, blocking GAP-mediated hydrolysis, and modulating effector interactions. (B) Absolute effector responses for G12C and WT Ras in response to a 2 μM RasGRF GEF step input in the absence of any GAP activity. (C) As in (B) but with 1 μM NF1 GAP activity present in the network. (D) Absolute effector responses for Q61L and WT Ras in response to a 2 μM RasGRF GEF step input in the absence of any GAP activity. (E) As in (D) but with 1 μM NF1 GAP activity present in the network. GAP, GTPase-activating protein; GEF, guanine exchange factor; WT, wild type.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Kintek simulations for a variety of models. Each simulation contains initial conditions of 50 nM effector, 10 nM GDP bound Ras, a GEF activity of ~1 υM, and an 'infinite' supply of nucleotide (100000 nM). (A) Output of Kintek simulation based on the simplest two-state model described in the main text methods. [GAP] is titrated by varying the hydrolysis rate constant over 5 orders of magnitude. (B) Output of Kintek simulation based on extending the simplest two-state model to include competition between GAP and effectors as described in the main text methods. The output from six different GAP concentrations are shown for two different GAP parameter choices. Overshoot is observed for the non-physiologic GAP parameter set (koff = 0.0001 s-1 and kcat = 0.0001 s-1). However, this is not observed when physiologic GAP parameters are used (koff = 0.01 s-1, kcat = 1s-1). (C) Output from a three-state GTPase model that includes competition between GAP and effector, as described in the main text methods. The output from six different GAP concentrations are shown for a physiologic choice of GAP parameters (koff = 0.01 s-1, kcat = 1 s-1). Transient overshoot behavior mirroring the experimentally obtained data in Figure 3 are obtained in this simulation. GAP, GTPase-activating protein; GEF, guanine exchange factor.DOI: http://dx.doi.org/10.7554/eLife.12435.008
+**Figure 3—figure supplement 2.:** Kintek simulations for a variety of models. Each simulation contains initial conditions of 50 nM effector, 10 nM GDP bound Ras, a GEF activity of ~1 υM, and an 'infinite' supply of nucleotide (100000 nM). (A) Output of Kintek simulation based on the simplest two-state model described in the main text methods. [GAP] is titrated by varying the hydrolysis rate constant over 5 orders of magnitude. (B) Output of Kintek simulation based on extending the simplest two-state model to include competition between GAP and effectors as described in the main text methods. The output from six different GAP concentrations are shown for two different GAP parameter choices. Overshoot is observed for the non-physiologic GAP parameter set (koff = 0.0001 s-1 and kcat = 0.0001 s-1). However, this is not observed when physiologic GAP parameters are used (koff = 0.01 s-1, kcat = 1s-1). (C) Output from a three-state GTPase model that includes competition between GAP and effector, as described in the main text methods. The output from six different GAP concentrations are shown for a physiologic choice of GAP parameters (koff = 0.01 s-1, kcat = 1 s-1). Transient overshoot behavior mirroring the experimentally obtained data in Figure 3 are obtained in this simulation. GAP, GTPase-activating protein; GEF, guanine exchange factor.
 
 Using our dynamic, multi-turnover reconstitution of Ras signal processing, we examined how signaling networks bearing the G12V allele of the Ras GTPase distorted effector outputs relative to the wild-type Ras GTPase. By labeling wild type and G12V Ras GTPases with different fluorophores, we could distinguish beads loaded with each variant in a common solution of network components to see differences in effector outputs from each system side-by-side.
 
 For these and future experiments, we display the output response data in two ways: (1) we show the absolute response, which conveys information about both the amplitude and the shape of the output response, and (2) we show the responses after normalizing to the maximum value of the response, which conveys information only about the shape or dynamic profile of the output. The latter is particularly useful for seeing how the shape of two responses differs when the amplitudes are substantially different.
 
-With this approach, we first examined the output of 50 nM C-Raf RBD effector from G12V or wild-type Ras networks without GAP activity in response to a step input of 2 μM of the GEF RasGRF (Figure 3B, Video 1). Under this network configuration, wild type and G12V Ras systems produced very similar outputs with almost no difference in the total integrated effector output and only small differences in the overall dynamics of their responses. This suggests that neither the intrinsic hydrolysis nor changes in C-Raf RBD effector interactions of the G12V substitution is particularly perturbative to the output of the signaling system under this GAP-free network configuration.10.7554/eLife.12435.009Video 1.Response of wild type and G12V Ras systems in GAP-free network context.The effector output (red) from a representative bead loaded with wild-type Ras (blue) or G12V Ras (green) is shown. 2 μM RasGRF was provided as an activating input. Time-steps are separated by 15 min. Associated with data in main-text Figure 3B.DOI: http://dx.doi.org/10.7554/eLife.12435.009
+With this approach, we first examined the output of 50 nM C-Raf RBD effector from G12V or wild-type Ras networks without GAP activity in response to a step input of 2 μM of the GEF RasGRF (Figure 3B, Video 1). Under this network configuration, wild type and G12V Ras systems produced very similar outputs with almost no difference in the total integrated effector output and only small differences in the overall dynamics of their responses. This suggests that neither the intrinsic hydrolysis nor changes in C-Raf RBD effector interactions of the G12V substitution is particularly perturbative to the output of the signaling system under this GAP-free network configuration.
 
-We then looked at the system responses of wild type and G12V Ras systems to the exact same step-input (2 μM RasGRF GEF) but in networks that now included 1 μM basal NF1-GAP (Figure 3C, Video 2). Unlike in the GEF-only networks, both the dynamics and amplitude of the effector output were substantially distorted by the Ras-G12V allele. In this network configuration, wild-type Ras produced a transient response that peaked within an hour and declined to a steady state less than 20% its maximum value. In contrast, outputs from G12V were sustained and increased in magnitude for over 6 hr before settling at a steady state more than 40 times higher than wild-type Ras. Thus, the G12V mutation is significantly perturbative in a high-GAP network context.10.7554/eLife.12435.010Video 2.Response of wild type and G12V Ras systems in high-GAP network context.The effector output (red) from a representative bead loaded with wild-type Ras (blue) or G12V Ras (green) is shown. 2 μM RasGRF was provided as an activating input and the system contained 1 μM NF1-GAP. Time-steps are separated by 15 min. Associated with data in main-text Figure 3C.DOI: http://dx.doi.org/10.7554/eLife.12435.010
+![Video 1.](https://cdn.elifesciences.org/articles/12435/elife-12435-media1.mp4.jpg)
+
+**Video 1.:** The effector output (red) from a representative bead loaded with wild-type Ras (blue) or G12V Ras (green) is shown. 2 μM RasGRF was provided as an activating input. Time-steps are separated by 15 min. Associated with data in main-text Figure 3B.
+
+We then looked at the system responses of wild type and G12V Ras systems to the exact same step-input (2 μM RasGRF GEF) but in networks that now included 1 μM basal NF1-GAP (Figure 3C, Video 2). Unlike in the GEF-only networks, both the dynamics and amplitude of the effector output were substantially distorted by the Ras-G12V allele. In this network configuration, wild-type Ras produced a transient response that peaked within an hour and declined to a steady state less than 20% its maximum value. In contrast, outputs from G12V were sustained and increased in magnitude for over 6 hr before settling at a steady state more than 40 times higher than wild-type Ras. Thus, the G12V mutation is significantly perturbative in a high-GAP network context.
+
+![Video 2.](https://cdn.elifesciences.org/articles/12435/elife-12435-media2.mp4.jpg)
+
+**Video 2.:** The effector output (red) from a representative bead loaded with wild-type Ras (blue) or G12V Ras (green) is shown. 2 μM RasGRF was provided as an activating input and the system contained 1 μM NF1-GAP. Time-steps are separated by 15 min. Associated with data in main-text Figure 3C.
 
 Together these data and model imply that the balance of positive and negative regulatory activities in a signaling network impacts the severity by which Ras-G12V distorts signals. Similar results were also observed for G12C and Q61L alleles (Figure 3—figure supplement 1). To determine which particular configurations are most distorted by the G12V allele, we measured the effector output response across four different input strengths ([GEF] activity) and four different NF1-GAP levels. We then calculated a distortion score as the fold-change integrated output from Ras-G12V relative to wild-type Ras and interpolated the responses from these 16 configurations to produce a phase diagram of signal distortion by G12V under different network conditions (Figure 3D). This revealed that G12V alleles were most perturbative with low-GEF inputs and a high-GAP network context, conditions in which the GAP activity would, for wild-type Ras, completely dominate over the small amount of activating GEF input. These observations are consistent with models of oncogenic Ras signaling in which low-level inputs or noise from the environment that would normally be filtered out by basal GAP-activity are misinterpreted by the cell as bona fide activating signals.
 
-## Modeling suggests competition and intermediates contribute to transient signaling dynamics of wild-type Ras-GTPase systems in contrast to oncogenic variants
+#### Modeling suggests competition and intermediates contribute to transient signaling dynamics of wild-type Ras-GTPase systems in contrast to oncogenic variants
 
 The transient response of the wild-type GTPase in the high-GAP network context was unanticipated, as this phenomenon cannot be explained by the simplest model of effector/GTPase binding in which the GTPase toggles ON and OFF with rates directly proportional to [GAP] and [GEF] (Figure 3—figure supplement 2). Indeed, this is consistent with analytic results that state that two-state systems cannot show overshoot behavior (Jia et al., 2014). However, transient overshoot could be easily introduced into the system by two non-mutually exclusive mechanisms: (1) competition between effectors and GAP molecules; and (2) the existence of a post-hydrolysis GTPase state that is refractory to GEF stimulation.
 
@@ -96,15 +104,15 @@ We found that extending the two-state model to include competition could produce
 
 In contrast, the introduction of a refractory GTPase state to the model produced overshoot that captured the key features of the observed data within physiological parameters: a monotonic response to inputs in low-GAP networks but a transient response in high-GAP networks (Figure 3—figure supplement 2). It also is consistent with the differences in dynamics that we observed between G12V and wild-type Ras. While the exact molecular nature of this intermediate GTPase state is not clear at present, this does not hinder our ability to study its consequences for signal processing.
 
-## Concentration and identity of Ras network components modulates timing, duration, shape, and amplitude of effector outputs
+### Concentration and identity of Ras network components modulates timing, duration, shape, and amplitude of effector outputs
 
-Our comparison of wild type and G12V Ras signaling systems and our associated model illustrated the importance of the network composition in shaping signal processing outputs. Each individual network component is, in essence, a separate 'dial' of the Ras signaling system that can be turned by adjusting the concentration of that component (
+Our comparison of wild type and G12V Ras signaling systems and our associated model illustrated the importance of the network composition in shaping signal processing outputs. Each individual network component is, in essence, a separate 'dial' of the Ras signaling system that can be turned by adjusting the concentration of that component (Figure 4A). Because expression levels of signaling components vary across different cell types and are often different in oncogenic states, we wondered how the level of each network component impacted signal processing wild-type Ras signaling networks. To this end, we fixed a particular input (2 μM RasGRF GEF) and, starting from a particular initial system configuration (~2500 Ras molecules × μm2, 50 nM C-Raf effector, no GAP activity) with an associated output response, asked how titration of individual system components modulated the effector output.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig4-v2.jpg)
 
-**Figure 4.:** (A) Depiction of the experimental setup: a fixed step-input is applied to a panel of Ras signaling systems in which the concentration of a single network component is varied to determine how each network component individually modulates system output. (B) Absolute and normalized effector responses to step-input in the presence of increasing amounts of the NF1 gap. (C) Absolute and normalized effector responses to step-input in the presence of increasing amounts of the p120 GAP. (D) Absolute and normalized responses to step-input in the presence of different densities of Ras on the bead surface. (E) Absolute and normalized responses to step-input in the presence of increasing amounts of the C-Raf RBD effector. GAP, GTPase-activating protein; RBD, Ras-binding domain.DOI: http://dx.doi.org/10.7554/eLife.12435.011
+**Figure 4.:** (A) Depiction of the experimental setup: a fixed step-input is applied to a panel of Ras signaling systems in which the concentration of a single network component is varied to determine how each network component individually modulates system output. (B) Absolute and normalized effector responses to step-input in the presence of increasing amounts of the NF1 gap. (C) Absolute and normalized effector responses to step-input in the presence of increasing amounts of the p120 GAP. (D) Absolute and normalized responses to step-input in the presence of different densities of Ras on the bead surface. (E) Absolute and normalized responses to step-input in the presence of increasing amounts of the C-Raf RBD effector. GAP, GTPase-activating protein; RBD, Ras-binding domain.
 
-## Effects of GAP activity: the properties of distinct GAP species
+#### Effects of GAP activity: the properties of distinct GAP species
 
 Having seen dramatic effects of negative regulatory activities in our distortion analysis of G12V Ras, we first looked more generally at how GAP activity sculpted signal processing dynamics in wild-type Ras networks. We considered two distinct GAPs domains with different biochemical properties and expression patterns: the NF1-GAP and the p120-GAP. NF1-GAP, which is expressed somewhat ubiquitously but highest in neuronal cells and leukocytes, has a tight KM for Ras (0.3 μM) and modest kcat (1.4 s-1) (Wiesmüller and Wittinghofer, 1992). In contrast, p120GAP has a higher KM (9.7 μM) for Ras, but also a higher kcat (19 s-1), and shows a much more ubiquitous expression profile (Wiesmüller and Wittinghofer, 1992).
 
@@ -114,7 +122,7 @@ As discussed previously in the context of our initial kinetic model, overshoot d
 
 We repeated this analysis using the catalytic domain of p120GAP in our networks instead of NF1-GAP. Compared to the NF1-GAP, the impact of the p120GAP on the end-point effector output of the system was much less substantial (Figure 4C). This may in part be owing to the much higher KM of p120GAP compared to NF1-GAP, leading to much lower effective GAP activity in the concentration regimes we could readily explore. Nonetheless, increasing amounts of p120GAP levels did lead to a marked change in the output dynamics of Ras signal processing in a manner similar to that of NF1-GAP and is consistent with the consequences of altering the KM and kcat of the GAP in our kinetic model (Figure 5—figure supplement 3). As with NF1-GAP, transient behaviors emerged when p120GAP was present, and the pulse-width and peak-time of effector outputs were inversely correlated with the concentration of p120GAP. Thus, like NF1-GAP, p120GAP shapes the dynamics and steady-state behavior of signal processing by Ras, but with a different dose-dependent behavior owing to its unique biochemical characteristics.
 
-## Effects of Ras density: how expression level and clustering can alter signaling
+#### Effects of Ras density: how expression level and clustering can alter signaling
 
 Given that Ras expression level can vary among different cell types and that Ras distribution in the plasma membrane can be both free as well as packed into high-density nanoclusters (Janosi et al., 2012; Plowman et al., 2005), the next system parameter we considered was the density of Ras. We made a dilution series of Ras, loaded beads with each dilution, and then mixed these beads together to assay the responses of different Ras densities side-by-side in the exact same network solution. Because the Ras was fluorescently labeled, we could estimate the Ras density from the intensity of each bead and bin the responses from similar density beads together to obtain average behaviors for different density classes.
 
@@ -122,7 +130,7 @@ Applying this approach to our fixed step-input, we found that the Ras density wa
 
 At lower Ras densities, however, effector output responses were increasingly transient in character. These outputs peaked early in the response and then decreased significantly to a lower value over the time-course. These differences likely reflect a switch from a network configuration in which Ras is in excess of the GEF to one in which the GEF is in excess of Ras, and this idea is supported by our kinetic model (Figure 5—figure supplement 3). Intuitively, these differences will cause a change the initial fraction of the Ras population that is activated, such that a much larger synchronous cohort is formed at lower Ras densities.
 
-## Effects of C-Raf RBD effector concentration: active roles for downstream components
+#### Effects of C-Raf RBD effector concentration: active roles for downstream components
 
 Finally, we considered the impact of the concentration of effectors, the molecules that are used by cells to perceive and interpret Ras•GTP dynamics in the cell, on signal processing. For these experiments, we fixed the amount of fluorescent C-Raf RBD effector at 50 nM and added additional unlabeled C-Raf RBD to achieve a target final concentration of effector. We could then normalize the observed fluorescent effector output by its proportion in the total effector population to infer the true magnitude of the output.
 
@@ -130,45 +138,45 @@ When we measured the system step-response in the presence of increasing amounts 
 
 When we increased effector concentrations, both the amplitude and the dynamics of the output response changed markedly. At 250 nM effector concentration, output increased to a level 20 times that of the 50 nM effector system (measured at 120 min) at that time, before decaying down to its final steady state level. At even higher effector concentrations (500 nM, 1000 nM), system output peaked quickly within 20 min and then decayed monotonically over several hours to the final steady state level. These data demonstrate that higher effector concentrations not only increase output amplitudes but also enable the output to capture more transient features of the upstream Ras•GTP signal. This idea is supported by our kinetic model (Figure 5—figure supplement 3) and makes sense intuitively because higher effector concentrations decrease the time needed to equilibrate against a fixed concentration of Ras•GTP; if this process is too slow, transient aspects of the GTPase activation/deactivation dynamics that occur on a faster timescale will be missed in the effector output. This implies that effectors are not merely passive conduits for transmitting upstream Ras dynamics, but instead play an active role in interpreting and perceiving what features of those dynamics to pass downstream during signaling. A corollary of this observation is that erroneous overexpression of effector molecules not only can lead to higher amplitude outputs, but also can drastically alter the overall dynamics of the system behavior as well.
 
-## Diverse dynamic outputs achieved by titration of components
+#### Diverse dynamic outputs achieved by titration of components
 
-Our data show that the identity and concentration of each component in a Ras signaling network can have a profound impact on the timing, duration, shape, or amplitude of effector outputs. This implies by tuning the abundance and identity of network components and controlling the strength of inputs, a variety of diverse dynamic effector output programs can be realized by Ras signaling system (
+Our data show that the identity and concentration of each component in a Ras signaling network can have a profound impact on the timing, duration, shape, or amplitude of effector outputs. This implies by tuning the abundance and identity of network components and controlling the strength of inputs, a variety of diverse dynamic effector output programs can be realized by Ras signaling system (Figure 5A). To explore this space of output programs more thoroughly, we fixed a particular effector concentration (50 nM, ~KD) and measured system output from different Ras densities, p120GAP concentrations, and input strengths ([GEF]). In total, we experimentally measured output responses for 96 configurations corresponding to four different input strengths, four different GAP concentrations, and six different Ras densities (Figure 5B, normalized responses in Figure 5—figure supplement 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig5-v2.jpg)
 
-**Figure 5.:** (A) Depiction of the experimental setup: four different inputs (changes in apparent GEF activity) are applied to a panel of Ras signaling systems sampling four different p120GAP concentrations, and six different Ras densities resulting in experimentally determined output responses for 96 different system configurations. (B) Experimentally determined absolute effector OUTPUT responses across 96 different system configurations. Each graph corresponds to a particular GEF/GAP configuration, and each of the curves within that plot corresponds to a different Ras density as indicated by the color of the curve. GAP, GTPase-activating protein; GEF, guanine exchange factor.DOI: http://dx.doi.org/10.7554/eLife.12435.012
+**Figure 5.:** (A) Depiction of the experimental setup: four different inputs (changes in apparent GEF activity) are applied to a panel of Ras signaling systems sampling four different p120GAP concentrations, and six different Ras densities resulting in experimentally determined output responses for 96 different system configurations. (B) Experimentally determined absolute effector OUTPUT responses across 96 different system configurations. Each graph corresponds to a particular GEF/GAP configuration, and each of the curves within that plot corresponds to a different Ras density as indicated by the color of the curve. GAP, GTPase-activating protein; GEF, guanine exchange factor.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Normalized (to the maximum output value of the response) signaling responses for different network GEF/GAP/Ras density configurations. The RasGRF catalytic domain was used as the activating GEF in these experiments. The p120GAP catalytic domain was used as the GAP in these experiments; 50 nM cRaf-RBD was used as the effector in these experiments. The response for differing densities of Ras in each GEF/GAP configuration is shown by different color lines in each plot, with estimated densities indicated in the key. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domain.DOI: http://dx.doi.org/10.7554/eLife.12435.013
+**Figure 5—figure supplement 1.:** Normalized (to the maximum output value of the response) signaling responses for different network GEF/GAP/Ras density configurations. The RasGRF catalytic domain was used as the activating GEF in these experiments. The p120GAP catalytic domain was used as the GAP in these experiments; 50 nM cRaf-RBD was used as the effector in these experiments. The response for differing densities of Ras in each GEF/GAP configuration is shown by different color lines in each plot, with estimated densities indicated in the key. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domain.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** Phase diagrams for three different output features – integrated signal, initial rate of response, and overshoot behavior – at three different Ras density levels, constructed by interpolating these output features from the 96 responses shown in Figure 5B.DOI: http://dx.doi.org/10.7554/eLife.12435.014
+**Figure 5—figure supplement 2.:** Phase diagrams for three different output features – integrated signal, initial rate of response, and overshoot behavior – at three different Ras density levels, constructed by interpolating these output features from the 96 responses shown in Figure 5B.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig5-figsupp3-v2.jpg)
 
-**Figure 5—figure supplement 3.:** (A) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text 'Materials and methods', in which the Ras density (i.e. concentration in this model) is varied over four orders of magnitude as indicated. Initial conditions were 50 nM effector, 1 μM GEF, no GAP, and 'infinite' nucleotide (100000 nM). The model recovers the observation that at low densities, more transient behavior is observed than at high Ras densities, which show a more associative response. (B) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text 'Materials and methods', in which GAP parameter choices that resemble the NF1-GAP (koff = 0.01 s-1, kcat = 0.1 s-1) or p120GAP (koff = 0.25 s-1, kcat = 0.4 s-1) are used. Initial conditions were 50 nM effector, 10 nM Ras, 1 μM GEF, 1 μM GAP, and 'infinite' nucleotide (100000 nM). This model recovers the observation that differences in Km and kcat can result in equivalent amounts of NF1gap and p120GAP producing different transient behaviors in the system output. (C) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text Materials and methods, in which effector concentrationsare varied over 5 orders of magnitude. Initial conditions were 10 nM Ras, 1 μM GEF, no GAP, and 'infinite' nucleotide (100000 nM). This model recovers the observation that higher effector concentrations allow more transient features of the time-varying GTPase signal to be captured in the system output. GAP, GTPase-activating protein; GEF, guanine exchange factor.DOI: http://dx.doi.org/10.7554/eLife.12435.015
+**Figure 5—figure supplement 3.:** (A) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text 'Materials and methods', in which the Ras density (i.e. concentration in this model) is varied over four orders of magnitude as indicated. Initial conditions were 50 nM effector, 1 μM GEF, no GAP, and 'infinite' nucleotide (100000 nM). The model recovers the observation that at low densities, more transient behavior is observed than at high Ras densities, which show a more associative response. (B) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text 'Materials and methods', in which GAP parameter choices that resemble the NF1-GAP (koff = 0.01 s-1, kcat = 0.1 s-1) or p120GAP (koff = 0.25 s-1, kcat = 0.4 s-1) are used. Initial conditions were 50 nM effector, 10 nM Ras, 1 μM GEF, 1 μM GAP, and 'infinite' nucleotide (100000 nM). This model recovers the observation that differences in Km and kcat can result in equivalent amounts of NF1gap and p120GAP producing different transient behaviors in the system output. (C) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text Materials and methods, in which effector concentrationsare varied over 5 orders of magnitude. Initial conditions were 10 nM Ras, 1 μM GEF, no GAP, and 'infinite' nucleotide (100000 nM). This model recovers the observation that higher effector concentrations allow more transient features of the time-varying GTPase signal to be captured in the system output. GAP, GTPase-activating protein; GEF, guanine exchange factor.
 
 The diversity of dynamic output responses we observe highlights the versatility and tunability of the Ras signaling system: sustained responses of arbitrary amplitudes can be produced as well as transient responses with different peak times and magnitudes of overshoot, all by simply by co-varying the levels of different system parameters. Because the number of output responses we measured is large, we extracted three features from each output response trace that describe the behavior – integrated signal intensity, initial rate of activation, and a transient score that reflect the amount of overshoot in the response – and interpolated these values for three different Ras density bins to create an experimentally determined signal processing phase diagram for each output feature as a function of the network configuration (Figure 5—figure supplement 2).
 
 These phase-diagrams not only summarize the output responses we measure but also clarify the structure of the space of Ras signaling behaviors. This provides a roadmap for understanding how output responses change as we alter system parameters and helps predict the impact of perturbations that move the system from one region of the space to another. The isoclines in these diagrams also highlight the existence of different network configurations with equivalent signaling behaviors. These correspond to neutral paths in network-space that the signaling system can drift along without immediate consequence to signaling output.
 
-## Different Ras effectors perceive the same input uniquely, enabling multiple distinct temporal outputs to be encoded in multi-effector networks
+### Different Ras effectors perceive the same input uniquely, enabling multiple distinct temporal outputs to be encoded in multi-effector networks
 
-So far, our characterization of Ras signal processing has used the C-Raf RBD as the sole downstream effector, but in living cells these networks typically contain
+So far, our characterization of Ras signal processing has used the C-Raf RBD as the sole downstream effector, but in living cells these networks typically contain multiple effectors targeting different output responses that are in competition with one another for access to activated Ras, with each of these effectors possessing its own affinity for Ras•GTP and expression level in the cell (Herrmann, 2003; Smith and Ikura, 2014). Indeed, our kinetic modeling implied that competition was another important source of dynamic complexity in these systems (Figure 3—figure supplement 2). Because our reconstituted signal processing is microscopy based, we can track the behavior of multiple distinct competing effectors processing signals on the same bead simultaneously by labeling each effector with a different color fluorophore (Figure 6A). To this end, we purified and labeled RBDs from the A-Raf and B-Raf kinases, which have lower (koff = 5.52x10-4 s-1, kon = 7.20x103 M-1s-1) and higher (koff = 1.48x10-4 s-1, kon = 1.32x104 M-1s-1) affinities for Ras•GTP than C-Raf (koff = 2.15x10-4 s-1, kon = 1.02x104 M-1s-1), respectively (Fischer et al., 2007), to examine the signal processing behavior of two-effector systems in either GAP-free or high NF1-GAP networks.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig6-v2.jpg)
 
-**Figure 6.:** (A) Depiction of the experimental design: a fixed step-input is applied to a particular network configurations in which more than one effector molecule is, resulting in multiple simultaneous system outputs that are measured. (B) Absolute and normalized responses to step-input of C-Raf RBD and B-Raf RBD in the absence of any GAP activity. (C) as in (B) but with 1 μM NF1-GAP present in the signaling network. (D) Absolute and normalized responses to step-input of C-Raf RBD and A-Raf RBD with 1 μM NF1-GAP present in the signaling network. (E) Absolute and normalized responses to step-input of C-Raf RBD and the C-RafN64A mutant RBD with 1 μM NF1-GAP present in the signaling network. RBD, Ras-binding domainDOI: http://dx.doi.org/10.7554/eLife.12435.016
+**Figure 6.:** (A) Depiction of the experimental design: a fixed step-input is applied to a particular network configurations in which more than one effector molecule is, resulting in multiple simultaneous system outputs that are measured. (B) Absolute and normalized responses to step-input of C-Raf RBD and B-Raf RBD in the absence of any GAP activity. (C) as in (B) but with 1 μM NF1-GAP present in the signaling network. (D) Absolute and normalized responses to step-input of C-Raf RBD and A-Raf RBD with 1 μM NF1-GAP present in the signaling network. (E) Absolute and normalized responses to step-input of C-Raf RBD and the C-RafN64A mutant RBD with 1 μM NF1-GAP present in the signaling network. RBD, Ras-binding domain
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Depiction of the experimental design: a fixed step-input is applied to a particular network configurations in which more than one effector molecule is, resulting in multiple simultaneous system outputs that are measured. (B) Absolute and normalized responses to step-input of C-Raf RBD and A-Raf RBD in the absence of any GAP activity. (C) Absolute and normalized responses to step-input of C-Raf RBD and C-RafN64A RBD in the absence of any GAP activity. RBD, Ras-binding domainDOI: http://dx.doi.org/10.7554/eLife.12435.017
+**Figure 6—figure supplement 1.:** (A) Depiction of the experimental design: a fixed step-input is applied to a particular network configurations in which more than one effector molecule is, resulting in multiple simultaneous system outputs that are measured. (B) Absolute and normalized responses to step-input of C-Raf RBD and A-Raf RBD in the absence of any GAP activity. (C) Absolute and normalized responses to step-input of C-Raf RBD and C-RafN64A RBD in the absence of any GAP activity. RBD, Ras-binding domain
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** (A) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text 'Materials and methods', in which two effectors (one c-Raf like (koff = 0.001 s-1), one B-Raf like (koff = 0.00025 s-1) are present in the system at 50 nM. Other initial conditions were 50 nM effector, 1 μM GEF, 1 μM GAP, and 'infinite' nucleotide (100000 nM). This simulation recovers the observation that B-Raf can respond in a sustained way while C-Raf can respond in a transient way. (B) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text Materials and methods, in which two effectors have very similar concentrations and parameters (as indicated on the figure). Other initial conditions were 50 nM effector, 1 μM GEF, 1 μM GAP, and 'infinite' nucleotide (100000 nM). This simulation recovers the observation that small parameter differences between effector can alter the timing and duration of transient signaling outputs. (C) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text 'Materials and methods', in which three effectors with different parameters and concentrations (as indicated in the figure) are present in the system. Other initial conditions were 50 nM effector, 1 μM GEF, 1 μM GAP, and 'infinite' nucleotide (100000 nM). This simulation shows that a complex sequence of effector outputs can be produced (3 THEN 2 THEN 1) in response to a step input simply by titration of levels and altering effector parameters. GAP, GTPase-activating protein; GEF, guanine exchange factor.DOI: http://dx.doi.org/10.7554/eLife.12435.018
+**Figure 6—figure supplement 2.:** (A) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text 'Materials and methods', in which two effectors (one c-Raf like (koff = 0.001 s-1), one B-Raf like (koff = 0.00025 s-1) are present in the system at 50 nM. Other initial conditions were 50 nM effector, 1 μM GEF, 1 μM GAP, and 'infinite' nucleotide (100000 nM). This simulation recovers the observation that B-Raf can respond in a sustained way while C-Raf can respond in a transient way. (B) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text Materials and methods, in which two effectors have very similar concentrations and parameters (as indicated on the figure). Other initial conditions were 50 nM effector, 1 μM GEF, 1 μM GAP, and 'infinite' nucleotide (100000 nM). This simulation recovers the observation that small parameter differences between effector can alter the timing and duration of transient signaling outputs. (C) Output of Kintek simulation using a three-state GTPase model with competition between GAP and effectors as described in the main-text 'Materials and methods', in which three effectors with different parameters and concentrations (as indicated in the figure) are present in the system. Other initial conditions were 50 nM effector, 1 μM GEF, 1 μM GAP, and 'infinite' nucleotide (100000 nM). This simulation shows that a complex sequence of effector outputs can be produced (3 THEN 2 THEN 1) in response to a step input simply by titration of levels and altering effector parameters. GAP, GTPase-activating protein; GEF, guanine exchange factor.
 
 We first considered networks containing equivalent, physiological amounts of C-Raf and B-Raf effectors, which both have high affinity for Ras•GTP (Smith and Ikura, 2014). In response to a 2 μM RasGRF GEF step input in a GAP-free network, C-Raf and B-Raf processed these signals with different amplitudes and completely different dynamics (Figure 6B). Initially, C-Raf and B-Raf outputs assembled at comparable rates, but within 1 hr C-Raf output peaked and began to decrease while B-Raf continued to increase in output monotonically over the entire time course. When these step-responses were re-examined in a high NF1-GAP network context, we continued to see different effector responses between C-Raf and B-Raf: C-Raf output peaked within 30 min before sharply declining to a steady state value 25% of its maximum. In contrast, B-Raf output peaked later at 1 hr, and declined to a 75% its peak maximum, a much higher steady state compared to C-Raf (Figure 6C). Thus, in this case, one effector (B-Raf) produces a transient response while a different effector (C-Raf) produces a more sustained output.
 
@@ -180,23 +188,23 @@ Clearly, effector molecules with distinct identities result in differential inte
 
 Taken together, this analysis shows that distinct effector molecules can perceive the same input to a Ras signaling system with different dynamics and amplitudes depending on their affinities and biochemical properties. Consequently, a single-step input can be in principle be used encode multiple classes of temporally distinct outputs that peak and decline out of phase with one another, allowing for a sequence of different activities to be organized during signal processing. For example, we were able to produce a three-wave activation response of three distinct effectors in our kinetic model by simply modifying concentrations and off-rates (Figure 6—figure supplement 2). Furthermore, the context of other regulators (e.g. extent of GAP activity in the network) can influence how these different dynamic responses unfold, magnifying temporal distinctions in some cases while restricting the ability of certain effectors to assemble productively at all in other cases. Finally, because even simple point mutations to an effector can dramatically alter its output dynamics, new dynamic patterns are not difficult to produce and can be easily accessed during evolution.
 
-## Positive feedback (GTPaseON→GEF) in Ras networks alters signal processing behavior in different ways depending on how the feedback mechanism is implemented
+### Positive feedback (GTPaseON→GEF) in Ras networks alters signal processing behavior in different ways depending on how the feedback mechanism is implemented
 
 The signaling networks we have examined thus far are solely the product of constitutive enzymatic activities and effector assembly processes unfolding in the simplest possible Ras GTPase signaling circuit. Our analysis found that in high-GAP systems, the 'ground state' output for a step-response will transiently overshoot the final steady state. In some instances, this behavior could be useful for the cell, for example to create an adaptive response or to produce distinct temporal phases in multiple downstream effector outputs; in other instances this overshoot behavior could prove undesirable, for example if the overshoot provoked a proliferative response to non-proliferative level of input.
 
 Many cellular circuits modulate intrinsic behaviors of a signaling system by including additional layers of regulation and feedback control that could alter the signaling properties of the system. To gain insight into how such regulation might alter the ground state signaling behavior of Ras GTPase systems, we examined the effect of introducing two different modes of GTPase→GEF positive feedback (defined as active Ras promoting more activation of Ras) on system signaling behavior.
 
-## Recruitment-based feedback mechanism (GTPaseON → GEF localization) amplifies weak inputs
+#### Recruitment-based feedback mechanism (GTPaseON → GEF localization) amplifies weak inputs
 
-One common mode of generating positive feedback in signaling is through recruitment. For example, in yeast, the GTPase Cdc42, when activated, recruits its own GEF Cdc24 (via the scaffold Bem1), thus leading to further Cdc42 activation (
+One common mode of generating positive feedback in signaling is through recruitment. For example, in yeast, the GTPase Cdc42, when activated, recruits its own GEF Cdc24 (via the scaffold Bem1), thus leading to further Cdc42 activation (Butty et al., 2002). Similar positive feedback GEF recruitment could occur in Ras signaling networks. To explore the effects of recruitment-based positive feedback, we made a synthetic GEF in which we fused the C-Raf RBD effector domain to the RasGRF GEF to produce 'RasGRF-RBD'. In this case, the catalytic activity of RasGRF-RBD is always constitutive, but activated Ras will assemble the synthetic GEF on the bead surface to provide a higher effective concentration of GEF and potentially increase the apparent GEF activity (Figure 7A). Thus, this feedback mechanism takes an ON GEF molecule and makes it MORE ON as Ras•GTP levels increase. We experimentally measured output responses for this feedback-containing system in 96 system configurations corresponding to four different input strengths, four different GAP concentrations, and six different Ras densities (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig7-v2.jpg)
 
-**Figure 7.:** (A) Illustration of Ras system that now includes recruitment-based positive feedback and the synthetic GEF (RasGRF-RBD) that was used to implement the feedback. (B) Experimentally determined absolute effector OUTPUT responses across 96 different system configurations. Each graph corresponds to a particular GEF/GAP configuration, and each of the curves within that plot corresponds to a different Ras density as indicated by the color of the curve. (C) Examples of output responses for systems under equivalent network configurations (Position 1 of Figure 7D) that do (purple line) or do not (grey line) contain recruitment-based feedback. (D) Phase diagram depicting the gain provided by recruitment-based feedback (defined as fold-increase in integrated signaling output) in different network configurations. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domainDOI: http://dx.doi.org/10.7554/eLife.12435.019
+**Figure 7.:** (A) Illustration of Ras system that now includes recruitment-based positive feedback and the synthetic GEF (RasGRF-RBD) that was used to implement the feedback. (B) Experimentally determined absolute effector OUTPUT responses across 96 different system configurations. Each graph corresponds to a particular GEF/GAP configuration, and each of the curves within that plot corresponds to a different Ras density as indicated by the color of the curve. (C) Examples of output responses for systems under equivalent network configurations (Position 1 of Figure 7D) that do (purple line) or do not (grey line) contain recruitment-based feedback. (D) Phase diagram depicting the gain provided by recruitment-based feedback (defined as fold-increase in integrated signaling output) in different network configurations. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domain
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** Normalized (to the maximum output value of the response) signaling responses for different network GEF/GAP/Ras density configurations. The recruitment-based positive feedback GEF RasGRF-RBD was used as the activating GEF in these experiments. The p120GAP catalytic domain was used as the GAP in these experiments. 50 nM cRaf-RBD was used as the effector in these experiments. The response for differing densities of Ras in each GEF/GAP configuration is shown by different color lines in each plot, with estimated densities indicated in the key. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domain.DOI: http://dx.doi.org/10.7554/eLife.12435.020
+**Figure 7—figure supplement 1.:** Normalized (to the maximum output value of the response) signaling responses for different network GEF/GAP/Ras density configurations. The recruitment-based positive feedback GEF RasGRF-RBD was used as the activating GEF in these experiments. The p120GAP catalytic domain was used as the GAP in these experiments. 50 nM cRaf-RBD was used as the effector in these experiments. The response for differing densities of Ras in each GEF/GAP configuration is shown by different color lines in each plot, with estimated densities indicated in the key. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domain.
 
 The inclusion of recruitment-based positive feedback in the system had considerable consequence for both the dynamics and amplitude of the effector output’s we observed. For example, in high GEF / high GAP regimes, multiple local maxima in the output dynamics were observed (Figure 7—figure supplement 1). Interesting behaviors were also observed for the output amplitudes. For example, because the fluorescent output-effector and the feedback-effector-GEF compete with one another, signaling amplitude did not increase monotonically with increasing INPUT strength: at the highest level of GEF INPUT will examined (2000 nM), signal was substantially lower than at 1000 nM GEF INPUT, and more comparable in amplitude to the 200 nM GEF INPUT.
 
@@ -204,21 +212,21 @@ How do these differences alter the signaling properties of the system compared t
 
 These data imply that this type of feedback mechanism can produce strong effects in certain network configurations but have little to no effect in other configurations. In particular, networks that contained high amounts of basal GAP-activity but only small amounts of input GEF showed the strongest differences in signal. These correspond to regimes in which the amount of GAP activity in the system dominates the small amount of intrinsic catalytic activity of the GEF, but does not overcome the small amount of localized GEF activity arising from the RasGRF-RBD feedback GEF (Figure 7C). In contrast, the behaviors of the wild type and feedback systems were most similar under high GEF, low GAP network configurations. In this regime, the GEF activity from the catalytic domain is sufficient to provide strong activation, and any additional boost in activity for localizing the GEF provides only marginal gains (Figure 7D). Thus, this type of feedback mechanism seems most powerful for amplifying signals arising from weak inputs in a high turnover background.
 
-## Allosteric positive feedback mechanism dampens system overshoot
+#### Allosteric positive feedback mechanism dampens system overshoot
 
-For the second feedback mode, we replaced the RasGRF GEF with SOScat, the catalytic domain from the Son of Sevenless GEF. SOScat has an intrinsic feedback mechanism built in, such that the molecule has very low GEF activity in the absence of Ras•GTP, but Ras•GTP binding to a distal site on SOScat allosterically stimulates GEF activity to very high levels (
+For the second feedback mode, we replaced the RasGRF GEF with SOScat, the catalytic domain from the Son of Sevenless GEF. SOScat has an intrinsic feedback mechanism built in, such that the molecule has very low GEF activity in the absence of Ras•GTP, but Ras•GTP binding to a distal site on SOScat allosterically stimulates GEF activity to very high levels (Margarit et al., 2003; Freedman, 2006). Thus, in contrast to the synthetic RasGRF effector fusion (which is always ON), this feedback mechanism takes an OFF GEF molecule and makes it ON in response to Ras•GTP (Figure 8A). We experimentally measured output responses for this feedback-containing system in 96 system configurations corresponding to four different input strengths, four different GAP concentrations, and six different Ras densities (Figure 8B, normalized responses in Figure 8—figure supplement 1).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig8-v2.jpg)
 
-**Figure 8.:** (A) Illustration of Ras system that now includes allosteric-based positive feedback and the naturally occurring GEF (SOScat) that was used to implement the feedback. (B) Experimentally determined absolute effector OUTPUT responses across 96 different system configurations. Each graph corresponds to a particular GEF/GAP configuration, and each of the curves within that plot corresponds to a different Ras density as indicated by the color of the curve. (C) Examples of output responses for systems under equivalent network configurations (high GEF, high GAP) that do (green line) or do not (grey line) contain allosteric feedback. (D) Schematic depiction of how an OFF->ON feedback mechanisms converts a step input in SOScat levels into a ramp input in SOScat activity. GAP, GTPase-activating protein; GEF, guanine exchange factorDOI: http://dx.doi.org/10.7554/eLife.12435.021
+**Figure 8.:** (A) Illustration of Ras system that now includes allosteric-based positive feedback and the naturally occurring GEF (SOScat) that was used to implement the feedback. (B) Experimentally determined absolute effector OUTPUT responses across 96 different system configurations. Each graph corresponds to a particular GEF/GAP configuration, and each of the curves within that plot corresponds to a different Ras density as indicated by the color of the curve. (C) Examples of output responses for systems under equivalent network configurations (high GEF, high GAP) that do (green line) or do not (grey line) contain allosteric feedback. (D) Schematic depiction of how an OFF->ON feedback mechanisms converts a step input in SOScat levels into a ramp input in SOScat activity. GAP, GTPase-activating protein; GEF, guanine exchange factor
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig8-figsupp1-v2.jpg)
 
-**Figure 8—figure supplement 1.:** Normalized (to the maximum output value of the response) signaling responses for different network GEF/GAP/Ras density configurations. The allosteric-based positive feedback GEF SOScat was used as the activating GEF in these experiments. The p120GAP catalytic domain was used as the GAP in these experiments. 50 nM cRaf-RBD was used as the effector in these experiments. The response for differing densities of Ras in each GEF/GAP configuration is shown by different color lines in each plot, with estimated densities indicated in the key. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domainDOI: http://dx.doi.org/10.7554/eLife.12435.022
+**Figure 8—figure supplement 1.:** Normalized (to the maximum output value of the response) signaling responses for different network GEF/GAP/Ras density configurations. The allosteric-based positive feedback GEF SOScat was used as the activating GEF in these experiments. The p120GAP catalytic domain was used as the GAP in these experiments. 50 nM cRaf-RBD was used as the effector in these experiments. The response for differing densities of Ras in each GEF/GAP configuration is shown by different color lines in each plot, with estimated densities indicated in the key. GAP, GTPase-activating protein; GEF, guanine exchange factor; RBD, Ras-binding domain
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/12435/elife-12435-fig9-v2.jpg)
 
-**Figure 9.:** (A) Illustration of direct and indirect diversity that exists in Ras network configurations. In the direct case, the distribution of p120GAP, H-Ras, and Raf gene expression levels across a variety of human cell types are shown, synthesized from Genevestigator data (see associated Figure 9–source data 1). Each orange point corresponds to a cell type and its position in the space indicates its associated expression level in each coordinate. A 'shadow' of each point is projected onto each two-dimensional sub-plane to further clarify the distribution. In the indirect case, a schematic of two receptors that both activate Ras are indicated. One receptor results in strong recruitment of both GEF and GAP, while another only strongly recruits GEF. (B) Illustration depicting the versatility of Ras GTPase signaling systems. A simple step-input can be processed into a variety of different dynamic outputs depending on 1416 the network configuration. The way in which each network component shapes signaling is illustrated. (C) Illustration depicting the fragility of Ras GTPase signaling systems. Given a particular signaling output and a higher level disease output, there exist many paths by which the network configuration can change to produce the diseased output. GAP, GTPase-activating protein; GEF, guanine exchange factor.DOI: http://dx.doi.org/10.7554/eLife.12435.02310.7554/eLife.12435.024Figure 9—source data 1.Figure 8A.This table contains the relative expression-level data that was used to prepare the plot in  Figure 9A. These data were obtained from Genevestigator as outlined in the main-text 'Materials and methods'.DOI: http://dx.doi.org/10.7554/eLife.12435.024
+**Figure 9.:** (A) Illustration of direct and indirect diversity that exists in Ras network configurations. In the direct case, the distribution of p120GAP, H-Ras, and Raf gene expression levels across a variety of human cell types are shown, synthesized from Genevestigator data (see associated Figure 9–source data 1). Each orange point corresponds to a cell type and its position in the space indicates its associated expression level in each coordinate. A 'shadow' of each point is projected onto each two-dimensional sub-plane to further clarify the distribution. In the indirect case, a schematic of two receptors that both activate Ras are indicated. One receptor results in strong recruitment of both GEF and GAP, while another only strongly recruits GEF. (B) Illustration depicting the versatility of Ras GTPase signaling systems. A simple step-input can be processed into a variety of different dynamic outputs depending on 1416 the network configuration. The way in which each network component shapes signaling is illustrated. (C) Illustration depicting the fragility of Ras GTPase signaling systems. Given a particular signaling output and a higher level disease output, there exist many paths by which the network configuration can change to produce the diseased output. GAP, GTPase-activating protein; GEF, guanine exchange factor.
 
 These data show a very different effect of the allosteric SOScat feedback on signaling outcomes than was observed for the recruitment-based feedback of the RasGRF-RBD fusion. Unlike with recruitment-based feedback, allosteric-feedback did not provide large gains in output amplitudes in any of the regimes we looked like. However, we did observe that transient overshoot behavior was almost completely absent in the output responses of the SOScat system, even in the highest p120GAP condition we inspected. Indeed, the output dynamics from allosteric-feedback networks appeared much more stable and monotonic than those from RasGRF networks that contained no feedback. These effects were most dramatic in high GAP network contexts in which RasGRF produced a large transient overshoot phase, whereas SOScat produced a monotonic approach to the steady state (Figure 8C). However, this increased stability was still noticeable even for low GAP high GEF networks in which RasGRF produces a sustained response (Figure 8C).
 
@@ -226,11 +234,114 @@ These differences in comparison to the RasGRF-RBD positive feedback system can b
 
 ## Discussion
 
-## One system, many behaviors: a design manual for the diverse signaling behaviors that can be constructed with Ras GTPase systems
+### One system, many behaviors: a design manual for the diverse signaling behaviors that can be constructed with Ras GTPase systems
 
 In this work, we developed a multi-turnover reconstitution of Ras signaling to explore the space of dynamic output behaviors that could be produced by Ras GTPase systems and to characterize how each network component contributes to these behaviors. Using these assays explored how different perturbations such as oncogenic mutation, component levels, inclusion of additional effector molecules, or introducing positive feedback altered the landscape of available outputs.
 
-Our experiments imply that, much in the same way that a single genome can encode multiple cell types that are regulated through differential gene expression, a single signaling system like Ras can encode multiple dynamic signal processing behaviors by regulating the concentration and identity of network components. This regulation can be direct by acting at the level of gene expression. For example, a simple survey of published p120GAP, Ras, and c-Raf mRNA expression levels across a variety of tissue types reveals a staggering amount of diversity in what types of network configurations are present in different cell types and tissues (Figure 9A, Table 1). The true diversity in these configurations is likely even greater given the plethora of additional GEFs, GAPs, Ras variants and effectors that cells can deploy. Regulating the concentration of these activities can also be achieved indirectly by the differential recruitment of these molecules by the receptors that initiate Ras signaling, which changes their effective concentration at the plasma membrane. Indeed, many of the catalytic domains that we looked at in this study show regulated interaction dynamics with the plasma membrane in response to extracellular signals (Gureasko et al., 2010). Thus, different cells can position their signaling systems at different points in the space of available Ras network configurations and modulate these configurations in response to extracellular cues to provide versatile top-level control of the amplitude and duration of proximal signal processing events (Figure 9B).10.7554/eLife.12435.025Table 1.List of plasmids used this study. A description of each construct used in this study, the bacterial antibiotic resistance associated with that plasmid, and a pSC reference index to facilitate any plasmid requests.DOI: http://dx.doi.org/10.7554/eLife.12435.025  DescriptionBacteria MarkerpSC353pMal-H.s.SOS1cat-StrepIIamppSC354pMal-H.s.p120GAP(RASA)-StrepIIamppSC369pMalStrep-RasGRF(MusGRF1cat )amppSC427pSNAP-Mal-cRaf-RBD-StrepIIamppSC451pSNAP_Mal_H-Ras_2xHis(6xHis-linker-10xHis)amppSC465pMalStrep-RasGRF-30xGAGS-RBDamppSC485pMalStrep-NF1 Ras GAPamppSC486pSNAP-Mal-H-rasG12v-2xHisamppSC488pSNAP-Mal-RafRBD(N64A)-StrepIIamppSC490pSNAP-Mal-H-RasG12C-2xHisamppSC492pSNAP-Mal-H-RasQ61L-2xHisamppSC501pSNAP-Mal-ARafRBD-StrepIIamppSC502pSNAP-Mal-BRafRBD-StrepIIamp
+Our experiments imply that, much in the same way that a single genome can encode multiple cell types that are regulated through differential gene expression, a single signaling system like Ras can encode multiple dynamic signal processing behaviors by regulating the concentration and identity of network components. This regulation can be direct by acting at the level of gene expression. For example, a simple survey of published p120GAP, Ras, and c-Raf mRNA expression levels across a variety of tissue types reveals a staggering amount of diversity in what types of network configurations are present in different cell types and tissues (Figure 9A, Table 1). The true diversity in these configurations is likely even greater given the plethora of additional GEFs, GAPs, Ras variants and effectors that cells can deploy. Regulating the concentration of these activities can also be achieved indirectly by the differential recruitment of these molecules by the receptors that initiate Ras signaling, which changes their effective concentration at the plasma membrane. Indeed, many of the catalytic domains that we looked at in this study show regulated interaction dynamics with the plasma membrane in response to extracellular signals (Gureasko et al., 2010). Thus, different cells can position their signaling systems at different points in the space of available Ras network configurations and modulate these configurations in response to extracellular cues to provide versatile top-level control of the amplitude and duration of proximal signal processing events (Figure 9B).
+
+**Table 1.**
+ List of plasmids used this study. A description of each construct used in this study, the bacterial antibiotic resistance associated with that plasmid, and a pSC reference index to facilitate any plasmid requests.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Description</th>
+      <th>Bacteria Marker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pSC</td>
+      <td>353</td>
+      <td>pMal-H.s.SOS1cat-StrepII</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>354</td>
+      <td>pMal-H.s.p120GAP(RASA)-StrepII</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>369</td>
+      <td>pMalStrep-RasGRF(MusGRF1cat )</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>427</td>
+      <td>pSNAP-Mal-cRaf-RBD-StrepII</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>451</td>
+      <td>pSNAP_Mal_H-Ras_2xHis(6xHis-linker-10xHis)</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>465</td>
+      <td>pMalStrep-RasGRF-30xGAGS-RBD</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>485</td>
+      <td>pMalStrep-NF1 Ras GAP</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>486</td>
+      <td>pSNAP-Mal-H-rasG12v-2xHis</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>488</td>
+      <td>pSNAP-Mal-RafRBD(N64A)-StrepII</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>490</td>
+      <td>pSNAP-Mal-H-RasG12C-2xHis</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>492</td>
+      <td>pSNAP-Mal-H-RasQ61L-2xHis</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>501</td>
+      <td>pSNAP-Mal-ARafRBD-StrepII</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td>pSC</td>
+      <td>502</td>
+      <td>pSNAP-Mal-BRafRBD-StrepII</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 This versatility is not without trade-offs, however. In particular, we observed many different paths in network-space from one signaling processing behavior to another with much higher or sustained amplitude (Figure 9C). These paths include classic oncogenic substitutions like G12V in Ras, but can also be realized by increased GEF activity, decreased GAP activity, or inclusion of high-affinity effectors that increase, extend and sustain signaling responses. While some of these perturbations have not been definitively recognized as drivers of cancer, many are associated with other RASopathies in humans, like Noonan syndrome or type 1 Neurofibromatosis (Schubbert et al., 2007; Bollag et al., 1996). Thus, the same flexibility that allows Ras systems to realize many different signaling behaviors creates many opportunities for misregulation in response to perturbation.
 
@@ -240,7 +351,7 @@ The dependence of a perturbation on network configuration can also afford cells 
 
 By interrogating the space of available behaviors to a signaling system in an unbiased way as we have in the present work, we learn not only what the behavior of any particular system configuration is, but also how systems respond to change and what paths exist to travel to new configurations with new behaviors. For Ras, this space appears rich with dynamic possibilities and sufficient neutral network structure to provide evolution with ample fodder to facilitate the use of Ras for the wide array of diverse signaling roles at it plays across different cell types and species, but at the risk of harmful perturbation by diseased alleles or expression states.
 
-## Building distinct signaling output programs by coupling Ras to multiple effectors
+### Building distinct signaling output programs by coupling Ras to multiple effectors
 
 One striking observation from this work was the importance of effector molecules in determining how a dynamic Ras•GTP signal is interpreted. This is, in fact, a critical aspect of how these particular signaling systems work as activated Ras itself has no enzymatic activity toward other molecules, but instead serves only as a platform for the recruitment of many possible competing effector molecules within the cell. Moreover, activated Ras cannot engage more than one effector simultaneously and thus competition between effectors as well as upstream regulators like GAPs contributes to the system’s output dynamics.
 
@@ -250,13 +361,13 @@ The importance of this property of effectors was even more apparent in two-effec
 
 An interesting consequence of these different effector behaviors and dynamics is that it can naturally result in the temporal partitioning of distinct activities during a signaling response. This can allow some effector outputs to be restricted to early phases of signaling, only to decline and be displaced by other more dominant effectors at later stages. These observations extend recent observations of hierarchies of binding by different effectors to Ras under equilibrium conditions with non-hydrolyzable analogs (Smith and Ikura, 2014). Thus, the differential perception of Ras•GTP signals by distinct effectors may not be a flaw in the method by which cells make measurements, but a useful feature by which cells can use a single upstream signaling molecule like Ras to dictate a complex temporal program of multiple downstream outputs.
 
-## Additional signal processing mechanisms operate in the context of complex Ras effector binding dynamics
+### Additional signal processing mechanisms operate in the context of complex Ras effector binding dynamics
 
 Binding to activated Ras is only the first step in signal propagation for many effectors. For example, binding of Raf kinases we used in this study to Ras primarily serves to deliver the kinase to the plasma membrane where its interaction with lipids (Ghosh and Bell, 1997), other Raf kinases (Freeman et al., 2013), scaffolds (Brennan et al., 2011; Ritt et al., 2006) and other macromolecules alters its kinase activity and thus how it sends out signals downstream (REF). In fact, Raf can even activate downstream signaling in the absence of Ras by artificial membrane recruitment (Stokoe et al., 1994; Leevers et al., 1994). However, this only further emphasizes the importance of effector binding dynamics in the context of cellular signal processing, as binding to Ras is a physiological prerequisite for these other mechanisms to take place. Moreover, different Ras effectors such as PI3 Kinase or Ral-GDS will have their own molecule-specific layers of regulation that take place upon interaction with Ras at the plasma membrane. These processes will be influenced by the underlying effector-binding dynamics in different ways depending on the kinetics of these downstream steps. Our work demonstrates that cells have simple systems for modulating and controlling these fundamental binding dynamics and further indicates that known control mechanisms should be analyzed in this complex dynamic context.
 
 Another layer of dynamic and regulatory complexity is also likely to arise as more classes of Ras GTPases are included in the signaling networks. Indeed, our present study has only investigated effector interaction with H-Ras, but there exist many additional Ras isoforms such as K-Ras and N-Ras, K4A-Ras, and K4B-Ras that may engage these effectors in different ways to produce different dynamics. Additionally, there exist related GTPases such as Rap which can serve as platform for Ras effectors but that do not necessarily promote signal propagation (Wynne et al., 2012; Cook et al., 1993). Understanding how the underlying distribution of GTPase isoforms dictates signal processing behavior is another critical component of cellular signaling and we hope to extend our in vitro system to explore these fundamental questions in the future.
 
-## Systems-level reconstitution as tool to probe the mechanism of biochemical signal processing networks
+### Systems-level reconstitution as tool to probe the mechanism of biochemical signal processing networks
 
 The network level biochemical approach to interrogating signaling systems we employed in this study occupies a relatively underexplored area in our understanding of cellular decision making systems, but is similar to approaches used to understand dynamic mechanical systems in cells like microtubules. Indeed, because additional complexities can emerge when multiple energetically driven processes are coupled together to promote the dynamic assembly and disassembly of competing effectors, exploring how these systems behave in vitro under different configurations sheds new light on the phenomenology of how biochemical signaling devices function and respond to perturbation.
 
@@ -266,9 +377,9 @@ More generally, the simplicity of the approach we present here paves the way for
 
 ## Materials and methods
 
-## Protein purification
+### Protein purification
 
-## Purification, labeling, and nucleotide loading of GTPases
+#### Purification, labeling, and nucleotide loading of GTPases
 
 Full-length H-Ras, H-Ras(G12V), H-Ras (G12C), and H-Ras(Q61L) were expressed as N-terminal SNAPtag-(GAGS)2x-MBP C-terminal DoubleHisTag (10xHis-(GAGS)3x-6xHis) fusion proteins using custom expression plasmids (see plasmids table). The SNAP-tag facilitated labeling with high-performance inorganic dyes for imaging, and the DoubleHisTag on the C-terminus allowed Ni-NTA supports to be loaded stably (t1/2 >24 hr) with GTPase in a configuration resembling the native C-terminal attachment mode.
 
@@ -278,7 +389,7 @@ Labeling of the SNAPtag on the GTPases was performed per the manufacturer’s in
 
 The labeled GTPases were loaded with nucleotide using established protocols (Eberth and Ahmadian, 2001). Briefly, GTPases were exchanged into Nucelotide Exchange Buffer using a zebra desalting column and incubated with a 20-fold molar excess of nucleotide (typically GDP) for thirty minutes at room temperature. The loading reaction was quenched by the addition of MgCl2 to 10 mM. Unloaded nucleotide was removed by passing the sample through 4 zebra desalting columns. Samples were finally exchanged into GTPase storage buffer (20 mM Tris, 50 mM NaCl, 10 mM MgCl2, 5% glycerol, pH 7.5), concentrated to ~100 μM, alliquotted, flash-frozen, and stored at -80°C.
 
-## Purification and labeling of effectors
+#### Purification and labeling of effectors
 
 The RBD effector domains of A-Raf, B-Raf, C-Raf, and any associated mutants were expressed as N-terminal SNAPtag-(GAGS)2x-MBP C-terminal Strep-II tag fusions. The SNAP-tag facilitated labeling with high-performance inorganic dyes for imaging, and the Strep-II tag provided a handle for affinity chromatography that did not interact with Ni-NTA supports.
 
@@ -286,19 +397,19 @@ To express protein BL21(T1R) E. coli cells were grown to an OD of 0.8 from a fre
 
 Labeling of the SNAPtag on the effectors was performed per the manufacturer’s instructions. Briefly, samples were incubated with 5 mM DTT at 37°C for 20 min. SNAP-Surface 488 or SNAP-Surface 549 were added at a 1.1:1 dye:protein molar ratio and incubated for 1 hr at 37°C or overnight at 4°C. Unlabeled dye was removed by passing the sample through 4 zebra desalting columns. Samples were concentrated to 100 μM, exchanged into storage buffer (150 mM NaCl, 25 mM Tris pH 7.5, 5% glycerol), aliquotted, flash frozen, and stored at -80°C.
 
-## Purification of GEFs, GAPs, and synthetic effector-GEF fusions
+#### Purification of GEFs, GAPs, and synthetic effector-GEF fusions
 
 The catalytic domains of RasGRF, p120GAP, NF1-GAP, SOS, and RBD-RasGRF were expressed as N-terminal MBP C-terminal Strep-II tag fusions. The Strep-II tag provided a handle for affinity chromatography that did not interact with Ni-NTA supports.
 
 To express protein BL21(T1R) E. coli cells were grown to an OD of 0.4 from a fresh transformation, chilled to 18°C, induced with 0.8 mM IPTG, and allowed to express overnight. The proteins were purified by Streptactin-affinity chromatography and then amylose-affinity chromatography, per the manufacturer’s instructions. Proteins were concentrated to ~0.5 mL and purified by gel-filtration chromatography on a Superdex S200 10/300 equilibrated in standard protein storage buffer (150 mM NaCl, 25 mM Tris pH 7.5, 5% glycerol). Proteins were concentrated, aliquotted, flash frozen, and stored at -80°C
 
-## In vitro signal processing assays
+### In vitro signal processing assays
 
-## Preparation of GTPase-loaded beads
+#### Preparation of GTPase-loaded beads
 
 Here, 50 μL of NiSepharose High-Performance beads (GE Healthcare) were washed twice with 1 mL water, twice with GTPase assay buffer (GAB: 20 mM Tris, 50 mM NaCl, 10 mM MgCl2, 30 mM Imidazole), and resuspended in a final volume of 1 mL GAB. To load the beads, 7.5 μL of this bead slurry was mixed with 7.5 μL of GTPase in a PCR tube and incubated on ice for 1 hr with occasional flicking. The amount of GTPase used to load the beads depending on the desired density for the specific experiments being performed downstream, but a typical bead-loading used 7.5 μL of 30 μM GTPase and typically resulted in Ras densities crudely estimated at 2500 molecules × μm-2 (see calculation below). Following incubation, the beads were spun in a table-top minifuge, the supernatant removed, and washed thrice with GAB. The washed beads were resuspended in ~100 μL GAB, transferred to an Eppendorf tube, shielded from light, and stored on ice. The exact amount of final GAB the beads were in was adjusted for any particular experiment such that 2 μL of bead slurry contained roughly 25–100 total beads when placed in a 384-well microscopy plate.
 
-## Preparation of signal processing reactions and data collection
+#### Preparation of signal processing reactions and data collection
 
 Signal processing reactions were set up in two stages. First, a 'bead-mix' was prepared that contained fluorescent effector at the desired concentration (typically 50 nM) and beads in GAB. It should be noted that the inclusion of 20 mM Imidazole was critical for eliminating non-specific background effector staining on the bead surface and improved reproducibility dramatically. A 20 μL volume of this bead mix was dispensed into the wells of a 384-well Costar microscopy plate. Second, an 'initiation-mix' was prepared that contained fluorescent effector at the desired concentration, 5 mM GTP (or other nucleotide if used) and GEFs and GAPs at the desired concentration, all in GAB. 10 μl of this reaction mix was gently added to the 20 μL bead mix in the 384-well plate to initiate reaction. The large volume of the initiation mix was critical for getting sufficient mixing without the need to pipette up and down and disrupt the beads and improved reproducibility. Once signal processing reactions were initiated, they wells were sealed with PCR plate sealant to prevent evaporation.
 
@@ -306,7 +417,7 @@ All data were collected using a Nikon Eclipse TI inverted microscope equipped wi
 
 For typical experiments, 5–10 x-y positions within a given well were used to collect signal processing behaviors from 20–100 individual beads. Timepoints varied depending on the experiment, but for typical large matrix experiments of 24–60 different GEF/GAP/effector conditions, we typically imaged every 15 min for 6–12 hr. MicroManager software was used to design the imaging protocols and collect the actual data.
 
-## Image analysis, data processing, and statistics
+### Image analysis, data processing, and statistics
 
 A combination of standard and custom ImageJ macros were used to prepare the primary image data for further analysis. First, drift in the stage was corrected using a macro based around the MultiStackReg plugin. Two or three color multi-tiff timecourses were split into separate channels. Matrix transformations to register timecourses were obtained using the constant GTPase fluorescence on every bead from the blue channel. These matrices were then used to register the timecourses of the red or green channels. The three channels were then recombined to produce the properly registered multi-tiff used for analysis of the beads. The ImageJ macro code was tweaked depending on the particular experiment, but a representative example of the code is shown below:
 
@@ -524,7 +635,7 @@ The output of this macro is a file that contains a list of every single bead tra
 
 Once in Excel, data were typically further analyzed as follows: (i) intensity measurements were normalized to perimeter instead of area, (ii) the time-series data for a given bead was normalized such that the time-zero effector measurement was zero, and (iii) single bead traces were binned based on total GTPase levels to obtain statistics on the signaling behavior. Beads were assigned to the nearest of the 6 Ras density beads: 150 molecules / μm2, 300 molecules / μm2, 600 molecules / μm2, 1200 molecules / μm2, 2500 molecules / μm2, 10,000 molecules / μm2. The individual bead traces within a given bin were then averaged together to produce an average response for the associated density bin and network configuration. Each trace was typically the average of 15–80 beads from the combination of two independent experiments. The standard error of the mean for a given trace was typically <15%.
 
-## Estimation of Ras density
+#### Estimation of Ras density
 
 We estimated the approximate Ras density of a bead in molecules × μm-2 in the following manner. First, we determined the correspondence between the concentration of labeled Ras and its fluorescence intensity by imaging serial dilutions of known concentrations of SNAP-Cell 430 labeled Ras in solution. From this, we could associate a particular fluorescence intensity with a three-dimensional concentration in μM. For our imaging conditions, this relationships was:
 
@@ -540,24 +651,154 @@ For any individual bead then, there is some maximum fluorescence intensity on th
 
 We stress that this is only an estimate of the Ras density and should not be taken as a highly accurate assessment of the Ras density. Nonetheless, it provides a crude estimation that indicates that our experiments are not operating in a highly non-physiologic regime. Importantly, for our analysis the exact number of Ras molecules on the bead surface is not critical. Indeed, the relative abundances of Ras on different beads is more important as it enables us to compare behaviors between beads as Ras densities change.
 
-## Kinetic modeling and simulation
+### Kinetic modeling and simulation
 
 Kintek Student Explorer (Johnson et al., 2009) was used to simulate the dynamic behavior of a variety of models for GTPase activation. Time was modeled in seconds and concentrations in nanomoles. Rate constants for association and dissociation of molecules from the GTPase were based on published Biacore measurements (Fischer et al., 2007), and catalytic rate constants for GEF and GAP activities were based published solution measurements (Bollag and McCormick, 1991; Freedman, 2006). GEF was not modeled explicitly but rather directly incorporated in the rate constant for nucleotide release. Each simulation was allowed to run for 42000 s (~700 min).
 
 Three models were initially explored. The first model was a two-state GTPase model that did not account for competition between GAP and effector. This was modeled in Kintek using the following equations and parameters:
 
-k-k+G + T = GT10GT = GD0.0001*[GAP]0GD = G + D0.050GT + EFF = GT_EFF0.00010.001GT_EFF = GD + EFF0.00010
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>k-</th>
+      <th>k+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G + T = GT</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GT = GD</td>
+      <td>0.0001*[GAP]</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GD = G + D</td>
+      <td>0.05</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GT + EFF = GT_EFF</td>
+      <td>0.0001</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>GT_EFF = GD + EFF</td>
+      <td>0.0001</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 The second model was a two-state GTPase model that explicitly modeled competition between GAP and effector. This was modeled in Kintek using the following equations and (physiological) parameters:
 
-k+k-G + T = GT10GT = GD0.00010GD = G + D0.005050GT + EFF = GT_EFF0.00010.001GT_EFF = GD + EFF0.00010GT + GAP = GT_GAP0.00010.01GT_GAP = GD + GAP10
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>k+</th>
+      <th>k-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G + T = GT</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GT = GD</td>
+      <td>0.0001</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GD = G + D</td>
+      <td>0.00505</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GT + EFF = GT_EFF</td>
+      <td>0.0001</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>GT_EFF = GD + EFF</td>
+      <td>0.0001</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GT + GAP = GT_GAP</td>
+      <td>0.0001</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>GT_GAP = GD + GAP</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 The third model was a three-state GTPase model that included an additional post-hydrolysis GTPase state (GI) which was refractory to GEF activation. This state converts to the GDP form on a slow timescale. This was modeled in Kintek as:
 
-k+k-G + T = GT10GT = GD0.00010GI = GD0.00010GD = G + D0.0050GT + EFF = GT_EFF0.00010.001GT_EFF = GD + EFF0.00010GT + GAP = GT_GAP0.00010.01GT_GAP = GD + GAP10
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>k+</th>
+      <th>k-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>G + T = GT</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GT = GD</td>
+      <td>0.0001</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GI = GD</td>
+      <td>0.0001</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GD = G + D</td>
+      <td>0.005</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GT + EFF = GT_EFF</td>
+      <td>0.0001</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>GT_EFF = GD + EFF</td>
+      <td>0.0001</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GT + GAP = GT_GAP</td>
+      <td>0.0001</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>GT_GAP = GD + GAP</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 The third model was the best at explaining the transient behaviors of the system that we observed as well as the differences between WT and G12V Ras, and thus was used as the basis of all subsequent modeling and simulations. For any given simulation in the text, the initial conditions and any changes to associated rate-constants are indicated in the figure legend.
 
-## Comparison of network configurations across cell and tissue types
+### Comparison of network configurations across cell and tissue types
 
 Relative log-transformed expression levels for p120GAP, C-Raf, and H-Ras across a variety of cell-types and tissue-types were obtained from data contained within the Genevestigator software package (see data in Table 1). The three-dimensional phenotypes associated with each cell or tissue type was plotted as a 3D scatterplot using Matlab.

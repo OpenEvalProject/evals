@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/002pd6e78 Edwin L Steele Laboratories, Department of Radiation Oncology, Massachusetts General Hospital Cancer Center, Massachusetts General Hospital Boston United States
+1. Edwin L Steele Laboratories, Department of Radiation Oncology, Massachusetts General Hospital Cancer Center, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
 2. Harvard Medical School Boston United States
 
 † Corresponding author

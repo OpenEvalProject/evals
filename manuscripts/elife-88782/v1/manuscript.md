@@ -14,16 +14,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01c2cjg59 Sorbonne Université, CNRS UMR8246, Inserm U1130, Institut de Biologie Paris Seine (IBPS), Neuroscience Paris Seine (NPS) Paris France
-2. https://ror.org/00afp2z80 Laboratory of Molecular Regulation of Neurogenesis, GIGA-Stem Cells and GIGA-Neurosciences, University of Liège, CHU Sart Tilman Liège Belgium
-3. https://ror.org/04t0gwh46 Institut Curie Paris France
-4. https://ror.org/05f82e368 Université de Paris Paris France
+1. Sorbonne Université, CNRS UMR8246, Inserm U1130, Institut de Biologie Paris Seine (IBPS), Neuroscience Paris Seine (NPS) Paris France ([ROR:01c2cjg59](https://ror.org/01c2cjg59))
+2. Laboratory of Molecular Regulation of Neurogenesis, GIGA-Stem Cells and GIGA-Neurosciences, University of Liège, CHU Sart Tilman Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
+3. Institut Curie Paris France ([ROR:04t0gwh46](https://ror.org/04t0gwh46))
+4. Université de Paris Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
 
 † Corresponding author
 
 ## Abstract
 
-The fragile X syndrome (FXS) represents the most prevalent form of inherited intellectual disability and is the first monogenic cause of autism spectrum disorder. FXS results from the absence of the RNA-binding protein FMRP (fragile X messenger ribonucleoprotein). Neuronal migration is an essential step of brain development allowing displacement of neurons from their germinal niches to their final integration site. The precise role of FMRP in neuronal migration remains largely unexplored. Using live imaging of postnatal rostral migratory stream (RMS) neurons in Fmr1 -null mice, we observed that the absence of FMRP leads to delayed neuronal migration and altered trajectory, associated with defects of centrosomal movement. RNA-interference-induced knockdown of Fmr1 shows that these migratory defects are cell-autonomous. Notably, the primary Fmrp mRNA target implicated in these migratory defects is microtubule-associated protein 1B (MAP1B). Knocking down MAP1B expression effectively rescued most of the observed migratory defects. Finally, we elucidate the molecular mechanisms at play by demonstrating that the absence of FMRP induces defects in the cage of microtubules surrounding the nucleus of migrating neurons, which is rescued by MAP1B knockdown. Our findings reveal a novel neurodevelopmental role for FMRP in collaboration with MAP1B, jointly orchestrating neuronal migration by influencing the microtubular cytoskeleton.
+The fragile X syndrome (FXS) represents the most prevalent form of inherited intellectual disability and is the first monogenic cause of autism spectrum disorder. FXS results from the absence of the RNA-binding protein FMRP (fragile X messenger ribonucleoprotein). Neuronal migration is an essential step of brain development allowing displacement of neurons from their germinal niches to their final integration site. The precise role of FMRP in neuronal migration remains largely unexplored. Using live imaging of postnatal rostral migratory stream (RMS) neurons in Fmr1-null mice, we observed that the absence of FMRP leads to delayed neuronal migration and altered trajectory, associated with defects of centrosomal movement. RNA-interference-induced knockdown of Fmr1 shows that these migratory defects are cell-autonomous. Notably, the primary Fmrp mRNA target implicated in these migratory defects is microtubule-associated protein 1B (MAP1B). Knocking down MAP1B expression effectively rescued most of the observed migratory defects. Finally, we elucidate the molecular mechanisms at play by demonstrating that the absence of FMRP induces defects in the cage of microtubules surrounding the nucleus of migrating neurons, which is rescued by MAP1B knockdown. Our findings reveal a novel neurodevelopmental role for FMRP in collaboration with MAP1B, jointly orchestrating neuronal migration by influencing the microtubular cytoskeleton.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ MAP1B is a microtubule-associated protein that plays a crucial role in the regul
 
 ## Results
 
-## FMRP is expressed in migrating neurons of the postnatal RMS
+### FMRP is expressed in migrating neurons of the postnatal RMS
 
 A massive number of neuroblasts are constantly produced in the ventricular/subventricular zone (V/SVZ) and migrate over a long distance along the RMS to the olfactory bulb (OB) (Lim and Alvarez-Buylla, 2016; Figure 1A). They display a cyclic saltatory mode of migration, in which the nucleus and centrosome move forward in a ‘two-stroke’ cycle (Bellion et al., 2005). The centrosome moves first within a swelling in the leading process, termed here centrokinesis (CK) followed by movement of the nucleus, referred to as nucleokinesis (NK) (Figure 1B). The neurons then pause and the cycle can reinitiate.
 
@@ -49,31 +49,59 @@ After an in vivo intraventricular electroporation of a GFP-expressing plasmid in
 
 FMRP is expressed in most neurons of the brain (Gholizadeh et al., 2015). Accordingly, immunostaining for FMRP reveals that FMRP is strongly expressed in the RMS, where most neurons appear labeled (Figure 1D). In individual GFP-positive neurons, FMRP labeling appears as a discrete and punctate staining visible mainly in the cytoplasm both at the rear of the neuron and in the leading process (Figure 1E). In order to more precisely localize FMRP at the subcellular level in migrating neurons, we performed culture of V/SVZ explants in Matrigel as described (Wichterle et al., 1997) followed by FMRP immunostaining (Figure 1F). FMRP labeling appeared as a granular staining similarly visible around the nucleus, in the swelling and in the leading process.
 
-## FMRP cell-autonomously regulates neuronal migration
+### FMRP cell-autonomously regulates neuronal migration
 
 To investigate the involvement of FMRP in RMS migration, we used the Fmr1-null mouse line (Bakker et al., 1994). Time-lapse imaging of GFP-positive neurons was performed in the control and Fmr1-null RMS (Figure 2—video 1, Figure 2—video 2 from https://osf.io/eqhzx).
 
 Fmr1-null neurons display a slowed-down migration, an increased pausing time, a more sinuous trajectory, and a defective directionality (Figure 2A–D from https://osf.io/eqhzx). Additionally, the NK is less frequent and the mean distance per NK is reduced (Figure 2E and F from https://osf.io/eqhzx).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88782/elife-88782-fig2-v1.jpg)
+
+**Figure 2.:** (A) Migration speed of control (Ctrl) and Fmr1-null neurons. Ctrl: 70.62 (43.32) μm/hr; Fmr1-null: 43.34 (25.97) μm/hr (Kruskall-Wallis test: Chi2=91.92, p-value <0.001, df = 3; followed by Dunn’s post hoc test). (B) Percentage of pausing time of control and Fmr1-null neurons. Ctrl: 82 (21.50); Fmr1-null: 93 (9.25) (Kruskall-Wallis test: Chi2=130.61, p-value <0.001, df = 3; followed by Dunn’s post hoc test). (C) Sinuosity index of control and Fmr1-null neurons. Ctrl: 1.15 (0.26); Fmr1-null: 1.35 (0.66) (Kruskall-Wallis test: Chi2=65.19, p-value <0.001, df = 3; followed by Dunn’s post hoc test). (D) Migration directionality radar represented in four spatial dials. Percentage of cells migrating in each spatial direction in control and Fmr1-null neurons, relatively to the vector going straight from the subventricular zone (SVZ) to the olfactory bulb (OB) (Fisher’s exact test, p-value <0.001). (E) Nucleokinesis (NK) mean distance of control and Fmr1-null neurons. Ctrl: 11.46 (6.27) μm; Fmr1-null: 9.34 (4.16) μm (Kruskall-Wallis test: Chi2=53.45, p-value <0.001, df = 3; followed by Dunn’s post hoc test). (F) NK frequency of control and Fmr1-null neurons. Ctrl: 2.5 (2.23) NK/hr; Fmr1-null: 1.21 (1.45) NK/hr (Kruskall-Wallis test: Chi2=111.53, p-value <0.001, df = 3; followed by Dunn’s post hoc test). The black line represents the median. Ctrl: N=3, n=275; Fmr1-null: N=3, n=184. Median (IQR). ***p-value <0.001. Source videos, tracking data (NK frequency, pausing time, sinuosity, speed, NK distance, directionality), and statistical analysis of migrating control and Fmr1-null neurons are available at https://osf.io/eqhzx.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88782/elife-88782-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Migration speed of neurons expressing MiRNEG and MiRFmr1. MiRNEG: 72.94 (36.67) μm/hr; MiRFmr1: 48.8 (30.78) μm/hr (Kruskall-Wallis test: Chi2=91.92, p-value <0.001, df = 3; followed by Dunn’s post hoc test). (B) Percentage of pausing time of neurons expressing MiRNEG and MiRFmr1. MiRNEG: 80.62 (16.70); MiRFmr1: 92.31 (12.98) (Kruskall-Wallis test: Chi2=130.61, p-value <0.001, df = 3; followed by Dunn’s post hoc test). (C) Sinuosity index of neurons expressing MiRNEG and MiRFmr1. MiRNEG: 1.20 (0.31); MiRFmr1: 1.36 (0.61) (Kruskall-Wallis test: Chi2=65.19, p-value <0.001, df = 3; followed by Dunn’s post hoc test). (D) Migration directionality radar represented in four spatial dials. Percentage of cells migrating in each spatial direction in neurons expressing MiRNEG and MiRFmr1, relatively to the vector going straight from the subventricular zone (SVZ) to the olfactory bulb (OB) (Fisher’s exact test, p-value = 0.019). (E) Nucleokinesis (NK) mean distance of neurons expressing MiRNEG and MiRFmr1. MiRNEG: 12.34 (5.65) μm; MiRFmr1: 9.16 (3.61) μm (Kruskall-Wallis test: Chi2=53.45, p-value <0.001, df = 3; followed by Dunn’s post hoc test). (F) NK frequency of neurons expressing MiRNEG and MiRFmr1. MiRNEG: 2.55 (2.18) NK/hr; MiRFmr1: 1.48 (1.95) NK/hr (Kruskall-Wallis test: Chi2=111.53, p-value <0.001, df = 3; followed by Dunn’s post hoc test). The black line represents the median. MiRNEG: N=3, n=86; MiRFmr1: N=3, n=79. Median (IQR). *p-value <0.05; **p-value <0.005; ***p-value <0.001. Source videos, tracking data (NK frequency, pausing time, sinuosity, speed, NK distance, directionality), and statistical analysis of migrating control and miRFMR1 neurons are available at https://osf.io/eqhzx.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88782/elife-88782-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) CK speed of neurons expressing MiRNEG and MiRFmr1. MiRNEG: 89.71 (55.06) μm/hr; MiRFmr1: 64.72 (33.89) μm/hr (Mann-Whitney test, p-value <0.001). (B) CK frequency of neurons expressing MiRNEG and MiRFmr1. MiRNEG: 3.18 (1.50) CK/hr; MiRFmr1: 2.50 (1.64) CK/hr (Mann-Whitney test, p-value = 0.011). (C) Percentage of efficient CKs in neurons expressing MiRNEG and MiRFmr1. MiRNEG: 57%; MiRFmr1: 41% (Chi2=17.999, p-value = 0.0012). The black line represents the median. MiRNEG: N=3, n=96; MiRFmr1: N=3, n=81. Median (IQR). *p-value <0.05; **p-value <0.005; ***p-value <0.001. Source videos, tracking data (CK speed and efficiency and frequency), and statistical analysis of migrating control and miRFMR1 neurons are available at https://osf.io/eqhzx.
+
 Given the crucial role of the centrosome in neuronal migration (Higginbotham and Gleeson, 2007), we analyzed its dynamics by performing co-electroporation of GFP and centrin-RFP in Fmr1-null and control neonate mice in order to co-label migrating neurons and their centrosome (Figure 3—video 1 from https://osf.io/eqhzx). The CK is slowed down and less frequent in Fmr1-null neurons, as compared to controls (Figure 3A and B from https://osf.io/eqhzx). A CK leading to a subsequent NK was defined as an efficient CK, as opposed to a CK not leading to an NK. CK efficiency is reduced in Fmr1-null neurons as compared to controls (Figure 3C from https://osf.io/eqhzx).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88782/elife-88782-fig3-v1.jpg)
+
+**Figure 3.:** (A) CK speed of control and Fmr1-null neurons. Ctrl: 76.90 (46.46) μm/h; Fmr1-null: 49.45 (33.66) μm/hr (Mann-Whitney test, p-value <0.001). (B) CK frequency of control and Fmr1-null neurons. Ctrl: 3.33 (1.71) CK/hr; Fmr1-null: 2.33 (1.71) CK/hr (Mann-Whitney test, p-value <0.001). (C) Percentage of efficient CKs in control and Fmr1-null neurons. Ctrl: 54%; Fmr1-null: 33% (Chi2=57.611, p-value <0.001). The black line represents the median. Ctrl: N=3, n=178; Fmr1-null: N=3, n=216. Median (IQR). ***p-value <0.001. Source videos, tracking data (CK speed and efficiency and frequency), and statistical analysis of migrating control and Fmr1-null neurons are available at https://osf.io/eqhzx.
 
 To determine whether the observed migration defects are cell-autonomous, we designed an interfering RNA coupled to GFP to cell-autonomously knock down Fmr1 mRNA in RMS neurons, similar to Scotto-Lomassese et al., 2011. Its efficiency was assessed by FMRP immunostaining on electroporated SVZ explants in Matrigel. While all neurons electroporated by the control miRNeg-GFP were FMRP immunoreactive, this was reduced to 36% in miRFmr1-GFP electroporated neurons (Chi2 test, p-value = 0.01; miRNeg condition: N=3, n=15; miRFmr1 condition: N=3, n=14). The interfering miRFmr1-GFP was thus co-electroporated with centrin-RFP to perform live imaging. Analysis of migration and centrosome dynamics (Figure 2—figure supplements 1 and 2 from https://osf.io/eqhzx) showed that Fmr1 KD is sufficient to mostly recapitulate the migratory phenotype described in Fmr1-null mutants, revealing that FMRP cell-autonomously regulates neuronal migration (Kruskal-Wallis followed by Dunn’s post hoc analysis on the four genotypes). The only discernible difference lies in the directionality parameter, where defects are exacerbated in KD neurons compared to Fmr1-null mutants (Fisher’s exact test p<0.001). This suggests that this defect might not be cell-autonomous in Fmr1-null mutants but rather a consequence of the mutated environment. This more pronounced directionality defect in the KD could be indicative of a lack of compensation in the acute KD context.
 
 Together, these data demonstrate that FMRP is cell-autonomously necessary for the proper neuronal migration of RMS neurons.
 
-## FMRP regulates neuronal migration through MAP1B
+### FMRP regulates neuronal migration through MAP1B
 
 MAP1B is a neuron-specific microtubule-associated protein widely expressed in the developing CNS with crucial roles in diverse steps of neural development including neuronal migration (Yang et al., 2012; González-Billault et al., 2005; Gonzalez-Billault et al., 2004).
 
 Immunostaining of the RMS revealed MAP1B expression, with most neurons appearing labeled (Figure 4A). MAP1B subcellular staining is consistent with labeling of microtubules both around the nucleus and in the leading process (Figure 4A). Immunostaining of individualized neurons migrating in Matrigel similarly showed a labeling around the nucleus and in the leading process, with occasional microtubule bundles (Figure 4B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88782/elife-88782-fig4-v1.jpg)
+
+**Figure 4.:** (A) Immunohistochemistry of the RMS showing MAP1B expression (magenta) along the stream. The RMS is delineated with dotted lines. Scale bar: 50 μm. (B) Immunostaining for MAP1B of a neuroblast migrating away from a ventricular/subventricular zone (V/SVZ) explant in Matrigel. The labeling is located around the nucleus and in the leading process with occasional bundles of potential microtubules (arrow). Scale bar: 10 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88782/elife-88782-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunoblot analysis revealing the expression of MAP1B in control and Fmr1-null micro-dissected RMS. (B) Quantification of MAP1B signal was performed with NIH IMAGE software and normalized to Vinculin house-keeping gene signal. MAP1B level in Fmr1-null RMS was statistically compared and normalized to MAP1B level in control RMS (Student’s t test, p-value = 0.004) (Ctrl: N=3; MAP1B KD: N=3. **p-value <0.005.). Original and labelled files for the western blot revealing the expression of MAP1B in control and Fmr1-null micro-dissected RMS, with quantifications and statistical analysis, are available at https://osf.io/eqhzx.
+
 MAP1B is a well-described Fmrp mRNA target (Zhang et al., 2001; Darnell et al., 2001; Brown et al., 2001). Given its expression in RMS migrating neurons, it emerged as an interesting target for further investigation. As FMRP is a repressor of Map1b mRNA translation (Brown et al., 2001; Darnell et al., 2001; Lu et al., 2004), the overall level of MAP1B typically appears increased in an Fmr1-null context (Lu et al., 2004; Hou et al., 2006). Accordingly, the quantification of three independent western blots showed that MAP1B expression is increased on average by 1.6× in the RMS of Fmr1-null mice compared to controls (Figure 4—figure supplement 1 from https://osf.io/eqhzx).
 
 To investigate whether the observed migratory phenotype in Fmr1-null neurons is influenced by the upregulation of MAP1B, we cell-autonomously knocked down Map1b in RMS neurons with an interfering RNA. Its efficiency was assessed by MAP1B immunostaining on electroporated SVZ explants in Matrigel, similar to the miRFmr1-GFP. While all neurons electroporated by the control miRNeg-GFP were MAP1B immunoreactive, this was reduced to 46% in miRMAP1B-GFP electroporated neurons (Chi2 test, p-value <0.001. miRNeg condition: N=4, n=103; miRMap1b condition: N=3, n=113). The miRMap1b-GFP plasmid was electroporated in Fmr1-null neonate mice and time-lapse imaging was conducted on acute sections of the RMS (Figure 5—video 1 from https://osf.io/eqhzx). Fmr1-null neurons expressing miRMap1b-GFP exhibited a complete restoration of migration speed, pausing time, NK distance, and frequency, making them comparable to miRNeg-GFP control neurons (Figure 5A, B, D, E from https://osf.io/eqhzx). Notably, the sinuosity of Fmr1-null neurons expressing miRMap1b-GFP was not rescued (Figure 5C from https://osf.io/eqhzx), suggesting that this parameter is MAP1B-independent.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88782/elife-88782-fig5-v1.jpg)
+
+**Figure 5.:** (A) Migration speed of Fmr1-null neurons expressing miRNEG and miRMap1b and control neurons expressing miRNEG. Fmr1-null neurons + miRNEG: 45.23 (23.25) μm/hr; Fmr1-null neurons + miRMap1b: 65.72 (24.31) μm/hr; control neurons + miRNEG: 64.54 (21.99) μm/hr (Kruskall-Wallis test: Chi2=61.168, p-value <0.001, df = 2; followed by Dunn’s post hoc test). (B) Percentage of pausing time of Fmr1-null neurons expressing miRNEG and miRMap1b and control neurons expressing miRNEG. Fmr1-null neurons + miRNEG: 93 (7); Fmr1-null neurons + miRMap1b: 86 (14); control neurons + miRNEG: 87.50 (15.67) (Kruskall-Wallis test: Chi2=45.716, p-value <0.001, df = 2; followed by Dunn’s post hoc test). (C) Sinuosity index of Fmr1-null neurons expressing miRNEG and miRMap1b and control neurons expressing miRNEG. Fmr1-null neurons + miRNEG: 1.30 (0.45); Fmr1-null neurons + miRMap1b: 1.28 (0.55); control neurons + miRNEG: 1.13 (0.16) (Kruskall-Wallis test: Chi2=39.807, p-value <0.001, df = 2; followed by Dunn’s post hoc test). (D) Nucleokinesis (NK) mean distance of Fmr1-null neurons expressing miRNEG and miRMap1b and control neurons expressing miRNEG. Fmr1-null neurons + miRNEG: 8.93 (3.64) μm; Fmr1-null neurons + miRMap1b: 9.89 (3.85) μm; control neurons + miRNEG: 10.23 (3.9) μm (Kruskall-Wallis test: Chi2=11.573, p-value = 0.003, df = 2; followed by Dunn’s post hoc test). (E) NK frequency of Fmr1-null neurons expressing miRNEG and miRMap1b and control neurons expressing miRNEG. Fmr1-null neurons + miRNEG: 1.18 (1.11) NK/hr; Fmr1-null neurons + miRMap1b:: 2.22 (1.95) NK/hr; control neurons + miRNEG1.65(2) NK/hr (Kruskall-Wallis test: Chi2=39.272, p-value <0.001, df = 2; followed by Dunn’s post hoc test). The black line represents the median. Fmr1-null neurons + miRNEG: N=6, n=102; Fmr1- null neurons + miRMap1b: N=3, n=101; control neurons + miRNEG: N=3, n=78. Median (IQR). *p-value <0.05; ***p-value <0.001; n.s. Source videos, tracking data (NK frequency, pausing time, sinuosity, speed, NK distance), and statistical analysis of migrating contro, Fmr1-null neurons and FMR1-null neurons with miRMAP1B are available at https://osf.io/eqhzx.
+
 In conclusion, our results demonstrate that MAP1B is the primary Fmrp mRNA target responsible for regulating neuronal migration.
 
-## The FMRP/MAP1B duo acts on the microtubular cage of RMS neurons
+### The FMRP/MAP1B duo acts on the microtubular cage of RMS neurons
 
 Considering the microtubule-associated functions of MAP1B, we investigated whether the migratory phenotype observed in Fmr1 mutants could be linked to a compromised microtubular cytoskeleton. To test this, we employed intraventricular electroporation of a plasmid expressing doublecortin (DCX) fused to RFP for labeling the microtubules of RMS neurons (Koizumi et al., 2006).
 
@@ -105,33 +133,33 @@ In conclusion, our findings unveil a novel facet of FMRP, highlighting its role 
 
 ## Materials and methods
 
-## Mouse lines
+### Mouse lines
 
 Mice were housed in a 12 hr light/dark cycle, in cages containing one or two females and one male. The postnatal mice were housed in their parents’ cage. Animal care was conducted in accordance with standard ethical guidelines (National Institutes of Health [NIH] publication no. 85-23, revised 1985 and European Committee Guidelines on the Care and Use of Laboratory Animals 86/609/EEC). The experiments were approved by the local ethics committee (Comité d’Ethique en Expérimentation Animale Charles Darwin C2EA-05 and the French Ministère de l’Education Nationale, de l’Enseignement Supérieur et de la Recherche APAFIS#13624-2018021915046521_v5). We strictly performed this approved procedure. The mice used were in a C57BL6-J background. Fmr1-null mice were genotyped according to the original protocol (Bakker et al., 1994).
 
-## miRNA production
+### miRNA production
 
 Silencing of Fmr1 and Map1b has been performed using BLOCK-iT Pol II miR RNAi Expression Vector Kits (Invitrogen) and the RNAi Designer (Invitrogen). The sequences of the single-stranded oligos are:
 
 The double-stranded oligos were inserted in a pcDNA 6.2-GW/EmGFP-miR. The resulting constructions were sequenced before use.
 
-## Plasmids
+### Plasmids
 
 The plasmids used for that study, in addition to the mir plasmids described above (Invitrogen BLOCK-iT kit), were pCAGGS-GFP (gift from S Garel) and pCMV-centrinRFP (Addgene #26753).
 
-## Postnatal electroporation
+### Postnatal electroporation
 
 Postnatal injection and electroporation were performed at postnatal day 2 (P2). Postnatal mice were anesthetized by hypothermia. Pseudo-stereotaxic injection (from lambda medial-lateral [M/L]: 0.9; anterior-posterior [A/P]: 1.1; dorsal-ventral [D/V]: 2) using a glass micropipette (Drummond Scientific Company, Wiretrol I, 5-000-1050) was performed, and 2 µl of plasmid (between 5 and 8 μg/ml) was injected. Animals were subjected to 5 pulses of 99.9 V during 50 ms separated by 950 ms using the CUY21 SC Electroporator and 10 mm tweezer electrodes (Harvard Apparatus, Tweezertrode, 10 mm, 45-0119). The animals were placed on 37°C plates to restore their body temperature before returning in their parents’ cage. Animals were considered as fully recovered when moving naturally and their skin color had returned to pink.
 
-## Postnatal acute brain slices
+### Postnatal acute brain slices
 
 Brain slices of mice aged from P6 to P10 were prepared as previously described in Stoufflet et al., 2020. Pups were sacrificed by decapitation and the brain was removed from the skull. Sagittal brain sections (250 μm) were cut with a VT1200S vibratome (Leica). Slices were prepared in an ice-cold cutting solution of the following composition: 125 mM NaCl, 0.4 mM CaCl2, 1 mM MgCl2, 1.25 mM NaH2PO4, 26 mM NaHCO3, 5 mM sodium pyruvate, 20 mM glucose, and 1 mM kynurenic acid, saturated with 5% CO2 and 95% O2. Slices were incubated in this solution for 30 min at room temperature and then placed in recording solution (identical to the cutting solution, except that the CaCl2 concentration is 2 mM and kynurenic acid is absent) for at least 30 min at 32°C before image acquisition.
 
-## Time-lapse video microscopy of postnatal slices
+### Time-lapse video microscopy of postnatal slices
 
 To analyze neuronal migration and centrosome dynamics, images were obtained with an inverted SP5D confocal microscope (Leica) using a 40×/1.25-numerical aperture (N.A.) objective with 1.5 optical zoom or an upright SP5 MPII two-photon microscope (Leica) using a 25×/0.95 N.A. objective with 1.86 optical zoom. Images were acquired every 3 min for 2–3 hr. The temperature in the microscope chamber was maintained at 32°C during imaging and brain slices were continuously perfused with heated recording solution (see above) saturated with 5% CO2 and 95% O2.
 
-## Analyses of neuronal migration and centrosome movement
+### Analyses of neuronal migration and centrosome movement
 
 Analyses were performed using ImageJ (NIH Image; National Institutes of Health, Bethesda, MD, USA) software and MTrackJ plugin. The nucleus and the centrosome (when centrin-RFP was co-injected) were tracked manually on each time frame during the whole movie. We considered a NK as a movement superior to 6 μm between two consecutive time points (3 min interval). For cell migration, calculation of speed, percentage of pausing time, sinuosity, directionality, NK distance, and frequency was performed using the x,y,t coordinates of the nucleus of each cell. Cells tracked for less than 30 min and cells that did not perform any NK during the whole tracking were excluded. A CK was defined as a forward movement superior to 2 μm followed by a backward movement superior to 2 μm. For centrosome movement, calculation of CK speed, frequency, and efficiency was performed using the x,y,t coordinates of the centrosome of each cell and the x,y,t coordinates of each corresponding nucleus.
 
@@ -145,18 +173,18 @@ The assessment of directionality involves calculating a migration angle (θ), de
 
 An efficient CK was defined as a forward movement of the centrosome greater than 2 μm followed by a backward movement greater than 2 μm, associated to a subsequent NK (movement of the nucleus greater than 6 μm). An inefficient CK was defined by the same centrosomal movement not followed by an NK.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 P7 to P10 mice were lethally anesthetized using Euthasol. Intracardiac perfusion with 4% paraformaldehyde was performed. The brain was post-fixed overnight in 4% paraformaldehyde and then rinsed three times with phosphate-buffered saline (PBS) 1× (Gibco, 1400-067). 50 μm sagittal sections were made with VT1200S microtome (Leica). Slices were placed 1 hr in a saturation solution (10% fetal bovine serum; 0.5% Triton X-100 in PBS). Primary antibodies used in this study are: GFP (Aves; GFP-1020; 1/1000), FMRP (Developmental Studies Hybridoma Bank; 2F5-1; 1/200), MAP1B (Santa Cruz Biotechnology; sc-365668; 1/300). The antibodies were diluted in saturation solution. Slices were incubated for 48–72 hr at 4°C under agitation with the antibodies and then rinsed three times with PBS 1×. Secondary antibodies used are: anti-chicken immunoglobulin Y (IgY) Alexa Fluor 488 (1/1000; Jackson ImmunoResearch; 703-545-155) against anti-GFP, anti-mouse immunoglobulin G2b (IgG2b) Alexa Fluor 555 (1/2000; Jackson ImmunoResearch; 703-545-155) against anti-FMRP and anti-MAP1B. The antibodies were diluted in saturation solution. Slices were incubated with secondary antibodies for 1 hr at room temperature under agitation, protected from light. After rinsing three times with PBS 1×, slices were counter-colored with Hoechst and mounted in Mowiol.
 
-## Immunostaining on SVZ explants in Matrigel
+### Immunostaining on SVZ explants in Matrigel
 
 For the quantification of mirFmr1 and miRMap1b efficiency, the SVZ of electroporated mice were dissected as described. SVZ explants were placed on glass-bottom culture dishes (MatTek Corporation; P35G-0-20C) within 10 ml of 60% Matrigel (Corning; 356237). After Matrigel solidification (15 min at 37°C, 5% CO2), culture medium was added and the dishes were incubated for 4–5 days at 37°C, 5% CO2. For FMRP and MAP1B immunostaining, SVZ cultures were fixed in 2% paraformaldehyde for 30 min and then rinsed three times with PBS 1×. Immunostaining was then performed as for sections (see above). To quantify Fmr1 and Map1b KD, a cell was considered MAP1B or FMRP negative when it was clearly immunonegative at high magnification.
 
-## Tissue collection and western blotting
+### Tissue collection and western blotting
 
 RMS were manually micro-dissected from five to six postnatal mouse brains and pooled in a PBS 1× (0.5% glucose) solution. After centrifugation, protein extraction was performed on the tissue pellet. Samples were homogenized in a lysis buffer 25 mM Tris HCl pH 7.5, 150 mM NaCl, 1% NP40, 0.5% Na deoxycholate, 1 mM EDTA, 5% glycerol, 1× EDTA-free protease inhibitor cocktail (Sigma, 4693132001). After centrifugation, samples were loaded and run on NuPAGE 3–8% Tris-Acetate Gel (Invitrogen, EA0378BOX) at 120 V for 15 min then 180 V for 40 min. Transfer to nitrocellulose Immobilon-PVDF-P membrane (Millipore, IPVH00010) was performed at 40 V overnight at 4°C. The membrane was then saturated for 1 hr in TBST containing 5% powder milk. Primary antibodies used are: MAP1B (Santa Cruz Biotechnology, sc-365668, 1/100), Vinculin (Cell Signaling Technology, 13901 S, 1/1000). The antibodies were diluted in TBST containing 5% powder milk. Secondary antibodies used are: ECL anti-mouse immunoglobulin G (IgG) horseradish peroxidase linked whole antibody (1/10,000; Fisher Scientific; NXA931V) for anti-MAP1B, Peroxidase-conjuguated AffiniPure F(ab’)2 Fragment Donkey Anti-Rabbit IgG (H+L) (1/5000; Jackson ImmunoResearch; 711-036-152) for anti-Vinculin. The antibodies were diluted in TBST containing 5% powder milk. Labeling was visualized using Pierce ECL Western Blotting Substrate (Thermo Scientific; 32209) and luminescent image analyzer LAS-3000.
 
-## Statistics
+### Statistics
 
 All manipulations and statistical analyses were implemented with R (4.2.1, R Foundation for Statistical Computing, Vienna, Austria). Normality in the variable distributions was assessed by the Shapiro-Wilk test. Furthermore, the Levene test was performed to probe homogeneity of variances across groups. Variables that failed the Shapiro-Wilk or the Levene test were analyzed with non-parametric statistics using the one-way Kruskal-Wallis analysis of variance on ranks followed by Dunn’s post hoc test and Mann-Whitney rank sum tests for pairwise multiple comparisons. Variables that passed the normality test were analyzed by means of one-way ANOVA followed by Tukey’s post hoc test for multiple comparisons or by Student’s t test for comparing two groups. Categorical variables were compared using Pearson’s Chi2 test or Fisher’s exact test. A p-value of <0.05 was used as a cutoff for statistical significance. Results are presented as the median (interquartile range [IQR]). The statistical tests are described in each figure legend.

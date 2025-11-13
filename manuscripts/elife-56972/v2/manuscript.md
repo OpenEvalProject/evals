@@ -33,25 +33,249 @@ We here capitalise on this functional differentiation of cerebral speech represe
 
 ## Results
 
-## Behavioural performance
+### Behavioural performance
 
 On each trial, the 20 participants viewed or listened to visually or acoustically presented sentences (presented in blocks), and performed a comprehension task on a specific target word (4-alternative forced-choice identification of word identity). The 18 target words, which always occurred in the third or second last position of the sentence, each appeared in 10 different auditory and visual sentences to facilitate the use of classification-based data analysis (see table in Supplementary file 1 for all used target words). Acoustic sentences were presented mixed with background noise, to equalise performance between visual and auditory trials. On average, participants perceived the correct target word in approximately 70% of trials across auditory and visual conditions (chance level was 25%). The behavioural performance did not differ significantly between these conditions (Mauditory = 69.7%, SD = 7.1%, Mvisual = 71.7%, SD = 20.0%; t(19) = −0.42, p=0.68; Figure 1), demonstrating that the addition of acoustic background noise indeed equalised performance between conditions. Still, the between-subject variability in performance was larger in the visual condition (between 31.7% and 98.3%), in line with the notion that lip reading abilities vary considerably across individuals (Bernstein and Liebenthal, 2014; Summerfield, 1992; Tye-Murray et al., 2014). Due to the near ceiling performance (above 95% correct), the data from three participants in the visual condition had to be excluded from the neuro-behavioural analysis. Participants also performed the task with auditory and visual stimuli presented at the same time (audiovisual condition), but because performance in this condition was near ceiling (Maudiovisual = 96.4%, SD = 3.3%), we present the corresponding data only in the supplementary material (Figure 2—figure supplement 2A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig1-v2.jpg)
+
+**Figure 1.:** (A) Trial structure was identical in the auditory and visual conditions. Participants listened to stereotypical sentences while a fixation dot was presented (auditory condition) or watched videos of a speaker saying sentences (visual condition). The face of the speaker is obscured for visualisation here only. After each trial, a prompt on the screen asked which adjective (or number) appeared in the sentence and participants chose one of four alternatives by pressing a corresponding button. Target words (here ‘beautiful’) occupied the 2nd or 3rd last position in the sentence. (B) Participants’ behavioural performance in auditory (blue) and visual (orange) conditions, and their individual SNR values (grey) used for the auditory condition. Dots represent individual participants (n = 20), boxes denote median and interquartile ranges, whiskers denote minima and maxima (no outliers present). MEG data of two participants (shaded in a lighter colour) were not included in neural analyses due to excessive artefacts. Participants exceeding a performance of 95% correct (grey line) were excluded from the neuro-behavioural analysis (which was the case for three participants in the visual condition). (C) Example sentence with target adjective marked in blue.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Density plots show the distribution of within-participant correlations between behavioural representational dissimilarity matrices (RDMs) and RDMs obtained from phonological and semantic representations of the 18 target words (medians, interquartile ranges and densities). Behavioural RDMs were obtained by computing the confusion matrix from participants’ behavioural responses. Pairwise phonological distances for the stimulus material were computed using Phonological Corpus Tools (V1.4.0), and semantic distances were computed using fastText vector representations (see Materials and methods for details). Representational similarity was computed using Spearman rank correlations. Overall, phonological and semantic features both influenced participants’ responses. A repeated-measurements ANOVA (2 (conditions) x 2 (features)) yielded a main effect of condition (F(1,19) = 7.53, p=0.013; mean correlations: Mauditory = 0.38, SEM = 0.01; Mvisual = 0.43, SEM = 0.02) and a main effect of features (F(1,19) = 20.98, p = <0.001, Mphon = 0.43, SEM = 0.01; Msem = 0.37, SEM = 0.01). A post-hoc comparison revealed that in both conditions phonological features influenced behaviour stronger than semantic features (Wilcoxon Signed-ranks test; Zauditory = 151, p=0.037, Zvisual = 189, p=0.002). Examples for close phonological and semantic relationships between two words are given in image.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Data preparation: Raw data were first de-noised and SQUID jumps were removed (preprocessing). Eye and heart artefacts and noisy channels were removed via visual inspection and ICA. Clean data were then down-sampled to 100 Hz and bandpass-filtered for further analysis. Data were projected into source space using an LCMV beamformer after a semi-automatic co-registration of MEG and individual anatomical MRIs. In source space, data were spatially smoothed (FWHM = 3 mm) and the time series for each grid point and trial was z-scored. Classification: Neural activity during hearing/seeing the target words was extracted for each grid point, using a 500-ms windows aligned to the onset of the target word. For each trial, this activity (during hearing “beautiful” in the above example) was compared with activity to the same target word in other trials (within-target distances), and with the activity to the three alternative words in other trials (between-target distances). Distances were quantified using Pearson correlations of the spatio-temporal searchlight activity and were averaged across repetitions of a word ($r-$). The target word was then classified as that word for which the average correlation was strongest.
+
 An explorative representational similarity analysis (RSA) (Evans and Davis, 2015; Kriegeskorte et al., 2008) indicated that participants’ behavioural responses were influenced by both semantic and phonological features in both conditions (see Materials and methods, and Figure 1—figure supplement 1). A repeated-measurements ANOVA yielded a main effect of condition (F(1,19) = 7.53, p=0.013; mean correlations: Mauditory = 0.38, SEM = 0.01; Mvisual = 0.43, SEM = 0.02) and a main effect of features (F(1,19) = 20.98, p<0.001, Mphon = .43, SEM = 0.01; Msem = 0.37, SEM = 0.01). A post-hoc comparison revealed that in both conditions phonological features influenced behaviour stronger than semantic features (Wilcoxon Signed-ranks test; Zauditory = 151, p=0.037, Zvisual = 189, p=0.002). While the small number of distinct word identities used here (n = 9 in two categories) precludes a clear link between these features and the underlying brain activity, these results suggest that participants’ performance was also driven by non-semantic information.
 
-## Decoding word identity from MEG source activity
+### Decoding word identity from MEG source activity
 
 Using multivariate classification, we quantified how well the single-trial identity of the target words (18 target words, each repeated 10 times) could be correctly predicted from source-localised brain activity (‘stimulus classifier’). Classification was computed in source space at the single-subject level in a 500 ms window aligned to the onset of the respective target word. Importantly, for each trial we computed classification performance within the subset of the four presented alternative words in each trial, on which participants performed their behavioural judgement. We did this to be able to directly link neural representations of word identity with perception in a later analysis. We first quantified how well brain activity encoded the word identity regardless of behaviour (‘stimulus-classification’; c.f. Materials and methods). The group-level analysis (n = 18 participants with usable MEG, cluster-based permutation statistics, corrected at p=0.001 FWE) revealed significant stimulus classification performance in both conditions within a widespread network of temporal, occipital and frontal regions (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig2-v2.jpg)
+
+**Figure 2.:** Surface projections show areas with significant classification performance at the group level (n = 18; cluster-based permutation statistics, corrected at p<0.001 FWE). Results show strongest classification in temporal regions for the auditory condition (A) and occipital areas for the visual condition (B). Cluster peaks are marked with dots. Panel (C) overlays the significant effects from both conditions, with the overlap shown in green. The overlap contains bilateral regions in middle and inferior temporal gyrus, the inferior frontal cortex and dorsal regions of the postcentral and supramarginal gyrus (SMG). The peak of the overlap is in the postcentral gyrus. (D) Grid point-wise Bayes factors for a difference between auditory and visual word classification performance for all grid points in the ROIs characterised by a significant contribution to word classification in at least one modality in panel A or B (red: evidence for a difference between conditions, that is in favour of H1 [alternative hypothesis]; blue: evidence for no difference between conditions, that is in favour of H0 [null hypothesis]. RO – Rolandic Operculum; POST – postcentral gyrus; IFG – inferior frontal gyrus; OCC – occipital gyrus).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Results of a cluster-based permutation analysis (n = 18; 3000 within-subject permutations, corrected at p<0.05 FWE). Shown are only those grid points that exhibit significant word classification in at least one condition. Auditory classification was significantly stronger in frontotemporal cortex (left: Tsum = 348.47, p<0.001; right: Tsum = 269.62, p<0.001). Visual classification was significantly stronger in a large bilateral occipital cluster (Tsum = −1755.58, p<0.001). Not shown are two clusters in which visual classification was stronger than auditory classification but which themselves did not exhibit significant classification versus baseline (a right frontopolar region: Tsum = −156.86, p<0.001; a left precentral region: Tsum = −31.50, p=0.002). (B) Results of a Bayes factor analysis derived from a comparison of the auditory and visual word classification (n = 18; red: evidence for significant modality difference, that is in favour of H1 [alternative hypothesis]; blue: evidence for no modality difference, that is in favour of H0 [null hypothesis]). The resulting Bayes factors show that for many grid points there was either substantial evidence for no difference between conditions, or inconclusive evidence. There was substantial or strong evidence for a modality difference in auditory and visual cortices and some frontal grid points.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Behavioural performance of all 20 participants. Scaling of the figure is identical to Figure 2. Dots represent individual participants, boxes denote median and interquartile ranges, whiskers denote minimum and maximum (no outliers present). MEG data of two participants (shaded in a lighter colour) were not included in neural analyses due to excessive artifacts. (B) Word classification regardless of behavioural performance (‘stimulus classification’, n = 18). Surface projections show areas with significant classification performance at the group level (surface projection of the cluster-based permutation statistics, corrected at p<0.001 FWE). Strongest classification performance was observed in right auditory and bilateral visual sensory areas, with performance ranging from 25.63% to 33.43% (with a chance level of 25%). Statistical analysis yielded two clusters: a large bilateral cluster covering occipital and temporal regions that peaked in the right inferior occipital gyrus (right OCC; Tsum = 461.36, p<0.001) and a left-hemispheric cluster that peaked in the middle temporal pole (left TP; Tsum = 12.62, p<0.001). Cluster peaks are marked with dots TP – temporal pole; OCC – occipital gyrus.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Results of a group-level t-test based on cluster-based permutation. Left panel: No significant cross-classification performance between the auditory and visual conditions was found (n = 18; neither at p<0.001, nor at a more lenient p<0.05), supporting the notion that auditory and visual word identities are largely represented in different networks. Right panel: Areas where word identity in the auditory (upper panel) or visual (lower panel) conditions can be predicted significantly based on word representations obtained from the audiovisual condition. Auditory word identities can be significantly classified from audiovisual word representations in a small region in right temporal and supramarginal gyrus (Tsum = 2.61, p<0.001). Visual word identities can be classified from audiovisual word presentations in a large cluster in bilateral occipital cortex (Tsum = 224.62, p<0.001) and a small left-hemispheric cluster in the left inferior temporal gyrus (Tsum = 7.05, p<0.001). Colour scale is adapted from Figure 2, to allow a comparison of results. (B) Results of a Bayes factor analysis derived from a comparison of the actual cross-classification performance to a distribution of performance values after data randomisation (red: evidence for significant cross-decoding, that is in favour of H1 [alternative hypothesis]; blue: evidence for no significant cross-decoding, that is in favour of H0 [null hypothesis]). The resulting Bayes factors show that for most grid points there was substantial evidence for no cross-classification between the auditory and visual conditions, while there was substantial or strong evidence for cross-classification between the auditory (visual) and the audiovisual condition.
+
 Auditory speech was represented bilaterally in fronto-temporal areas, extending into intra-parietal regions within the left hemisphere (Figure 2A; Table 1). Cluster-based permutation statistics yielded two large clusters: a left-lateralised cluster peaking in inferior postcentral gyrus (left POST; Tsum = 230.42, p<0.001), and a right-lateralised cluster peaking in the Rolandic operculum (right RO; Tsum = 111.17, p<0.001). Visual speech was represented bilaterally in occipital areas, as well as in left parietal and frontal areas (Figure 2B), with classification performance between 25.9% and 33.9%. There were three clusters: a large bilateral posterior cluster that peaked in the left calcarine gyrus (left OCC; Tsum = 321.78, p<0.001), a left-hemispheric cluster that peaked in the inferior frontal gyrus (left IFG; Tsum = 10.98, p<0.001), and a left-hemispheric cluster that peaked in the postcentral gyrus (left POST; Tsum = 35.83, p<0.001). The regions representing word identity in both visual and auditory conditions overlapped in the middle and inferior temporal gyrus, the postcentral and supramarginal gyri, and the left inferior frontal gyrus (Figure 2C; overlap in green). MNI coordinates of cluster peaks and the corresponding classification values are given in Table 1. Results for the audiovisual condition essentially mirror the unimodal findings and exhibit significant stimulus classification in bilateral temporal and occipital regions (Figure 2—figure supplement 2B).
+
+**Table 1.**
+ Peak effects of stimulus classification performance based on MEG activity.Labels are taken from the AAL atlas (Tzourio-Mazoyer et al., 2002). For each peak, MNI coordinates, and classification performance (mean and SEM) are presented. Chance level for classification was 25%. Abbreviations as used in Figure 2 are given in parentheses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Atlas label</th>
+      <th colspan="3">MNI coordinates</th>
+      <th rowspan="2">Classification % (SEM)</th>
+    </tr>
+    <tr>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Auditory peaks</td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rolandic Oper R (RO)</td>
+      <td>41</td>
+      <td>–14</td>
+      <td>20</td>
+      <td>28.89 (0.78)</td>
+    </tr>
+    <tr>
+      <td>Postcentral L (POST)</td>
+      <td>−48</td>
+      <td>–21</td>
+      <td>25</td>
+      <td>29.04 (1.00)</td>
+    </tr>
+    <tr>
+      <td>Visual peaks</td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Calcarine L (OCC)</td>
+      <td>−5</td>
+      <td>–101</td>
+      <td>−7</td>
+      <td>33.92 (1.53)</td>
+    </tr>
+    <tr>
+      <td>Frontal Inf Tri L (IFG)</td>
+      <td>−48</td>
+      <td>23</td>
+      <td>1</td>
+      <td>26.70 (0.83)</td>
+    </tr>
+    <tr>
+      <td>Postcentral L (POST)</td>
+      <td>−51</td>
+      <td>–24</td>
+      <td>47</td>
+      <td>26.85 (1.02)</td>
+    </tr>
+    <tr>
+      <td>Peak of overlap</td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Postcentral L (POST)</td>
+      <td>−47</td>
+      <td>–15</td>
+      <td>52</td>
+      <td>26.50 (0.67)</td>
+    </tr>
+  </tbody>
+</table>
 
 To directly investigate whether regions differed in their classification performance between visual and auditory conditions, we performed two analyses. First, we investigated the evidence for or against the null hypothesis of no condition difference for all grid points contributing to word classification in at least one modality (i.e. the combined clusters derived from Figure 2A,B). The respective Bayes factors for each ROI (from a group-level t-test) are shown in Figure 2D. These revealed no conclusive evidence for many grid points within these clusters (1∕3 < bf10<3). However, both auditory clusters and the occipital visual cluster contained grid points with substantial or strong (bf10 > 3 and bf10 > 10, respectively) evidence for a significant modality difference. In contrast, the visual postcentral region (POST), the IFG and the overlap region contained many grid points with substantial evidence for no difference between modalities (1∕10 < bf10<1∕3). Second, we performed a full-brain cluster-based permutation test for a modality difference. The respective results, masked by the requirement of significant word classification in at least one modality, are shown in Figure 2—figure supplement 1A. Auditory classification was significantly better in clusters covering left and right auditory cortices, while visual classification was significantly better in bilateral visual sensory areas. Full-brain Bayes factors confirm that, apart from sensory areas exhibiting strong evidence for a modality difference, many grid points show substantial evidence for no modality difference, or inconclusive evidence (Figure 2—figure supplement 1B).
 
 Given that most clusters were found in only one hemisphere, we performed a direct test on whether these effects are indeed lateralised in a statistical sense (c.f. Materials and methods). We found evidence for a statistically significant lateralisation for both auditory clusters (left cluster peaking in POST: t(17) = 5.15, pFDR <0.001; right cluster peaking in RO: t(17) = 4.26, pFDR <0.01). In the visual condition, the lateralisation test for the two left clusters reached only marginal significance (left cluster peaking in IFG: t(17) = 2.19, pFDR = 0.058; left cluster peaking in POST: t(17) = 1.87, pFDR = 0.078). Note that the large occipital cluster in the visual condition is bilateral and we therefore did not test this for a lateralisation effect. Collectively, these analyses provide evidence that distinct frontal, occipital and temporal regions represent word identity specifically for visual and acoustic speech, while also providing evidence that regions within inferior temporal and frontal cortex, the SMG and dorsal post-central cortex reflect word identities in both modalities.
 
-## Cerebral speech representations that are predictive of comprehension
+### Cerebral speech representations that are predictive of comprehension
 
 The above analysis leaves it unclear which of these cerebral representations of word identity are actually relevant for single-trial word comprehension. That is, it remains unclear, which cerebral activations reflect the word identity in a manner that directly contributes to, or at least correlates with, participants' performance on the task. To directly address this, we computed an index of how strongly the evidence for a specific word identity in the neural single-trial word representations is predictive of the participant’s response. We regressed the evidence in the cerebral classifier for word identity against the participants’ behaviour (see Materials and methods). The resulting neuro-behavioural weights (regression betas) were converted into t-values for group-level analysis. The results in Figure 3 (two-sided cluster-based permutation statistics, corrected at p=0.05 FWE) reveal several distinct regions in which neural representations of word identity are predictive of behaviour. In the auditory condition, we found five distinct clusters. Three were in the left hemisphere, peaking in the left inferior temporal gyrus (left ITG; Tsum = 469.55, p<0.001), the inferior frontal gyrus (left IFG; Tsum = 138.70, p<0.001), and the middle occipital gyrus (left MOG; Tsum = 58.44, p<0.001). In the right hemisphere, the two significant clusters were in the supplementary motor area (right SMA; Tsum = 312.48, p<0.001) and in the angular gyrus (right AG; Tsum = 68.59, p<0.001; Figure 3A). In the visual condition, we found four clusters: A left-hemispheric cluster in the inferior frontal gyrus (left IFG; Tsum = 144.15, p<0.001) and three clusters with right-hemispheric peaks, in the superior temporal gyrus (right STG; Tsum = 168.68, p<0.001), the superior frontal gyrus (right SFG; Tsum = 158.39, p<0.001) and the angular gyrus (right AG; Tsum = 37.42, p<0.001; Figure 3B). MNI coordinates of cluster peaks and the corresponding beta and t-values are given in Table 2. Interestingly, these perception-relevant (i.e. predictive) auditory and visual representations did not overlap (Figure 3C), although some of them occurred in adjacent regions in the IFG and AG.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig3-v2.jpg)
+
+**Figure 3.:** Coloured areas denote significant group-level effects (surface projection of the cluster-based permutation statistics, corrected at p<0.05 FWE). (A) In the auditory condition (n = 18), we found five clusters (cluster peaks are marked with dots). Three were in left ventral regions, in the inferior frontal gyrus, the inferior temporal gyrus, and the occipital gyrus, the other two were in the right hemisphere, in the angular gyrus and the supplementary motor area. (B) In the visual condition (n = 15; three participants were excluded due to near ceiling performance), we found four clusters: In the left (dorsal) inferior frontal gyrus, the right anterior cingulum stretching to left dorsal frontal regions, in the right angular gyrus and the right superior temporal gyrus (all peaks are marked with dots). Panel (C) overlays the significant effects from both conditions. There was no overlap. However, both auditory and visual effects were found in adjacent regions within the left IFG and the right AG. Panel (D) shows distributions of grid point-wise Bayes factors for a difference between auditory and visual conditions for these clusters (red: evidence for differences between conditions, that is in favour of H1 [alternative hypothesis]; blue: evidence for no difference between conditions, that is in favour of H0 [null hypothesis]).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Results of a cluster-based permutation analysis (n = 18; 3000 within-subject permutations, corrected at p<0.05 FWE). Shown are only those grid points that exhibit significant word classification in at least one condition. Behavioural prediction was statistically stronger in the auditory condition in left middle occipital gyrus (Tsum = 114.57, p<0.001), left calcarine gyrus (Tsum = 47.45, p<0.001), right posterior angular gyrus (Tsum = 31.02, p=0.006), and bilateral supplementary motor area (Tsum = 75.98, p<0.001, not visible due to medial location). Not shown is a cluster in which prediction in the visual condition was stronger than in the auditory condition but that did not show significant prediction versus baseline (a right middle frontal cluster: Tsum = −35.78, p=0.001). (B) Results of a Bayes factor analysis derived from a comparison of the auditory and visual neurobehavioural prediction (n = 15; red: evidence for significant modality difference, that is in favour of H1 [alternative hypothesis]; blue: evidence for no modality difference, that is in favour of H0 [null hypothesis]). The resulting Bayes factors show that for most grid points there was either substantial evidence for no difference between the auditory and visual conditions, or inconclusive evidence. There was substantial or strong evidence for a modality difference in left middle occipital and calcarine gyrus, as well as in right angular gyrus.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56972/elife-56972-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Surface projection of rho-values from correlations between neural classification and behaviour. No significant clusters were found at an alpha-level of 0.05, supporting that stimulus classification performance alone does not predict behaviour. Upper panel: Correlation between auditory (visual) word classification and participants’ performance in the auditory (visual) conditions. Lower panel: Correlation between auditory (visual) word classification and participant-specific SNR values used for the auditory condition. (B) Results of a Bayes factor analysis for correlation coefficients (red: evidence for significant correlation, that is in favour of H1 [alternative hypothesis]; blue: evidence for no significant correlation, that is in favour of H0 [null hypothesis]). For the large majority of brain regions, there is substantial evidence for no correlation. Exceptions are scattered grid points, most notably in right occipital regions for a (negative) correlation between visual word classification and individual auditory SNR values across participants.
+
+**Table 2.**
+ Peak effects for the neuro-behavioural analysis.Labels are taken from the AAL atlas (Tzourio-Mazoyer et al., 2002). For each local peak, MNI coordinates, regression beta (mean and SEM across participants) and corresponding t-value are presented. Abbreviations as used in Figure 3 are given in parentheses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Atlas label</th>
+      <th colspan="3">MNI coordinates</th>
+      <th rowspan="2">Beta (SEM)</th>
+      <th rowspan="2">t-value</th>
+    </tr>
+    <tr>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Auditory</td>
+      <td colspan="3"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Temporal Inf L (ITG)</td>
+      <td>−41</td>
+      <td>– 23</td>
+      <td>−26</td>
+      <td>0.106 (0.024)</td>
+      <td>4.40</td>
+    </tr>
+    <tr>
+      <td>Frontal Inf Orb L (IFG)</td>
+      <td>−28</td>
+      <td>25</td>
+      <td>–9</td>
+      <td>0.082 (0.031)</td>
+      <td>2.66</td>
+    </tr>
+    <tr>
+      <td>Occipital Mid L, Occipital Inf L (MOG)</td>
+      <td>−46</td>
+      <td>–83</td>
+      <td>−4</td>
+      <td>0.079 (0.029)</td>
+      <td>2.75</td>
+    </tr>
+    <tr>
+      <td>Supp Motor Area R (SMA)</td>
+      <td>3</td>
+      <td>11</td>
+      <td>52</td>
+      <td>0.089 (0.027)</td>
+      <td>3.33</td>
+    </tr>
+    <tr>
+      <td>Angular R (AG)</td>
+      <td>49</td>
+      <td>–67</td>
+      <td>40</td>
+      <td>0.079 (0.027)</td>
+      <td>2.87</td>
+    </tr>
+    <tr>
+      <td>Visual</td>
+      <td colspan="3"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Frontal Inf Tri L (IFG)</td>
+      <td>−57</td>
+      <td>30</td>
+      <td>4</td>
+      <td>0.075 (0.017)</td>
+      <td>4.34</td>
+    </tr>
+    <tr>
+      <td>Frontal Sup Medial R, Cingulum Ant R (SFG)</td>
+      <td>9</td>
+      <td>47</td>
+      <td>15</td>
+      <td>0.080 (0.028)</td>
+      <td>2.86</td>
+    </tr>
+    <tr>
+      <td>Temporal Sup R (STG)</td>
+      <td>38</td>
+      <td>–30</td>
+      <td>10</td>
+      <td>0.086 (0.023)</td>
+      <td>3.77</td>
+    </tr>
+    <tr>
+      <td>Angular R (AG)</td>
+      <td>60</td>
+      <td>–55</td>
+      <td>34</td>
+      <td>0.073 (0.020)</td>
+      <td>3.55</td>
+    </tr>
+  </tbody>
+</table>
 
 IFG – inferior frontal gyrus; MOG – middle occipital gyrus; AG – angular gyrus; SMA – supplementary motor area; ITG – inferior temporal gyrus; IFG – inferior frontal gyrus; STG – superior temporal gyrus; SFG – superior frontal gyrus.
 
@@ -59,7 +283,7 @@ Again, we asked whether the behavioural relevance of these regions exhibit a sig
 
 To further investigate whether perception-relevant auditory and visual representations are largely distinct, we performed a cross-decoding analysis, in which we directly quantified whether the activity patterns of local speech representations are the same across modalities. At the whole-brain level, we found no evidence for significant cross-classification (two-sided cluster-based permutation statistics, neither at a corrected p=0.001 nor a more lenient p=0.05; Figure 2—figure supplement 3A, left panel). That significant cross-classification is possible in principle from the data, is shown by the significant results for the audiovisual condition (Figure 2—figure supplement 3A, right panel). An analysis of the Bayes factors for this cross-classification test confirmed that most grid points contained substantial evidence for no cross-classification between the auditory and visual conditions (Figure 2—figure supplement 3B, left panel). On the other hand, there was strong evidence for significant cross-classification between the uni- and multisensory conditions in temporal and occipital regions (Figure 2—figure supplement 3B, right panel).
 
-## Strong sensory representations do not necessarily predict behaviour
+### Strong sensory representations do not necessarily predict behaviour
 
 The above results suggest that the brain regions in which sensory representations shape speech comprehension are mostly distinct from those allowing the best prediction of the actual stimulus (see Figure 4 for direct visualisation of the results from both analyses). Only parts of the left inferior temporal gyrus (auditory condition), the right superior temporal gyrus (visual condition) and the left inferior frontal gyrus (both conditions) feature high stimulus classification and a driving role for comprehension. In other words, the accuracy by which local activity reflects the physical stimulus is generally not predictive of the impact of this local word representation on behaviour. To test this formally, we performed within-participant robust regression analyses between the overall stimulus classification performance and the perceptual weight of each local representation across all grid points. Group-level statistics of the participant-specific beta values provided no support for a consistent relationship between these (auditory condition: b = 0.05 ± 0.11 [M ± SEM], t(17) = 0.50, pFDR = 0.81; visual condition: b = 0.03 ± 0.11 [M ± SEM], t(14) = 0.25, pFDR = 0.81; participant-specific regression slopes are depicted in Figure 4B). A Bayes factor analysis also provided substantial evidence for no consistent relationship (bf10 = 0.27 and bf10 = 0.27, for auditory and visual conditions, respectively).
 
@@ -71,7 +295,7 @@ Still, this leaves it unclear whether variations in the strength of neural speec
 
 ## Discussion
 
-## Acoustic and visual speech are represented in distinct brain regions
+### Acoustic and visual speech are represented in distinct brain regions
 
 Our results show that the cerebral representations of auditory and visual speech are mediated by both modality-specific and overlapping (potentially amodal) representations. While several parietal, temporal and frontal regions were engaged in the encoding of both acoustically and visually conveyed word identities (‘stimulus classification’), comprehension in both sensory modalities was driven mostly by distinct networks. Only the inferior frontal and anterior angular gyrus contained adjacent regions that contributed to both auditory and visual comprehension.
 
@@ -81,7 +305,7 @@ The inability to cross-classify auditory and visual speech from local activity f
 
 While we found strongest word classification performance in sensory areas, significant classification also extended into central, frontal and parietal regions. This suggests that the stimulus-domain classifier used here may also capture processes potentially related to attention or motor preparation. While we cannot rule out that levels of attention differed between conditions, we ensured by experimental design that comprehension performance did not differ between modalities. In addition, the relevant target words were placed not at the end of the sentence to prevent motor planning and preparation during their presentation (see Stimuli).
 
-## The encoding of visual speech
+### The encoding of visual speech
 
 The segregation of comprehension-relevant auditory and visual representations provides a possible explanation for the finding that auditory or verbal skills and visual lip reading are uncorrelated in normal-hearing adults (Jeffers and Barley, 1980; Mohammed et al., 2006; Summerfield, 1992). Indeed, it has been suggested that individual differences in lip reading represent something other than normal variation in speech perceptual abilities (Summerfield, 1992). For example, lip reading skills are unrelated to reading abilities in the typical adult population (Arnold and Köpsel, 1996; Mohammed et al., 2006), although a relationship is sometimes found in deaf or dyslexic children (Arnold and Köpsel, 1996; de Gelder and Vroomen, 1998; Kyle et al., 2016).
 
@@ -91,11 +315,11 @@ Our results suggest that visual speech comprehension is mediated by parietal and
 
 Two specific regions mediating lip-reading comprehension were the IFG and the anterior angular gyrus. Our results suggest that these facilitate both auditory and visual speech comprehension, in line with previous suggestions (Simanova et al., 2014). Previous work has also implicated these regions in the visual facilitation of auditory speech-in-noise perception (Giordano et al., 2017) and lip-reading itself (Bourguignon et al., 2020). Behavioural studies have shown that lip-reading drives the improvement of speech perception in noise (Macleod and Summerfield, 1987), hence suggesting that the representations of visual speech in these regions may be central for hearing in noisy environments. Interestingly, these regions resemble the left-lateralised dorsal pathway activated in deaf signers when seeing signed verbs (Emmorey et al., 2011). Our results cannot directly address whether these auditory and visual speech representations are the same as those that mediate the multisensory facilitation of speech comprehension in adverse environments (Bishop and Miller, 2009; Giordano et al., 2017). Future work needs to directly contrast the degree of which multisensory speech representations overlap locally to the ability of these regions to directly fuse this information.
 
-## Cross-modal activations in visual cortex
+### Cross-modal activations in visual cortex
 
 We also found that acoustic comprehension was related to occipital brain activity (c.f. Figure 3). Previous work has shown that salient sounds activate visual cortices (Feng et al., 2014; McDonald et al., 2013), with top-down projections providing visual regions with semantic information, for example about object categories (Petro et al., 2017; Revina et al., 2018). The acoustic speech in the present study was presented in noise, and performing the task hence required attentional effort. Attention may therefore have automatically facilitated the entrance of top-down semantic information into occipital regions that, in a multisensory context, would encode the lip-movement trajectory, in order to maximise task performance (McDonald et al., 2013). The lack of significant cross-classification performance suggests that the nature of this top-down induced representation differs from that induced by direct lip-movement information.
 
-## Sub-optimal sensory representations contribute critically to behaviour
+### Sub-optimal sensory representations contribute critically to behaviour
 
 To understand which cerebral representations of sensory information guide behaviour, it is important to dissociate those that mainly correlate with the stimulus from those that encode sensory information and guide behavioural choice. At the single neuron level some studies have proposed that only those neurons encoding the specific stimulus optimally are driving behaviour (Britten et al., 1996; Pitkow et al., 2015; Purushothaman and Bradley, 2005; Tsunada et al., 2016), while others suggest that ‘plain’ sensory information and sensory information predictive of choice can be decoupled across neurons (Runyan et al., 2017). Theoretically, these different types of neural representations can be dissected by considering the intersection of brain activity predictive of stimulus and choice (Panzeri et al., 2017), that is, the neural representations that are informative about the sensory environment and are used to guide behaviour. While theoretically attractive, this intersection is difficult to quantify for high-dimensional data, in part as direct estimates of this intersection, for example based on information-theoretic approaches, are computationally costly (Pica et al., 2017). Hence, in the past most studies, also on speech, have focused on either studying sensory encoding (e.g. by classifying stimuli), or behaviourally predictive activity only (e.g. by classifying responses). However, the former type of cerebral representation may not guide behaviour at all, while the latter may also capture brain activity that drives perceptual errors due to intrinsic fluctuations in sensory pathways, the decision process, or even noise in the motor system (Grootswagers et al., 2018).
 
@@ -105,7 +329,7 @@ On a technical level, it is important to keep in mind that the insights derived 
 
 One factor that may shape the behavioural relevance of local sensory representations is the specific task imposed (Hickok and Poeppel, 2007). In studies showing the perceptual relevance of optimally encoding neurons, the tasks were mostly dependent on low-level features (Pitkow et al., 2015; Tsunada et al., 2016), while studies pointing to a behavioural relevance of high level regions were relying on high-level information such as semantics or visual object categories (Grootswagers et al., 2018; Keitel et al., 2018). One prediction from our results is therefore that if the nature of the task was changed from speech comprehension to an acoustic task, the perceptual relevance of word representations would shift from left anterior regions to strongly word encoding regions in the temporal and supramarginal regions. Similarly, if the task would concern detecting basic kinematic features of the visual lip trajectory, activity within early visual cortices tracking the stimulus dynamics should be more predictive of behavioural performance (Di Russo et al., 2007; Keitel et al., 2019; Tabarelli et al., 2020). This suggests that a discussion of the relevant networks underlying speech perception should always be task-focused.
 
-## Conclusion
+### Conclusion
 
 These results suggest that cerebral representations of acoustic and visual speech might be more modality-specific than often assumed and provide a neural explanation for why acoustic speech comprehension is a poor predictor of lip-reading skills. Our results also suggest that those cerebral speech representations that directly drive comprehension are largely distinct from those best representing the physical stimulus, strengthening the notion that neuroimaging studies need to more specifically quantify the cerebral mechanisms driving single-trial behaviour.
 
@@ -113,39 +337,39 @@ These results suggest that cerebral representations of acoustic and visual speec
 
 Part of the dataset analysed in the present study has been used in a previous publication (Keitel et al., 2018). The data analysis performed here is entirely different from the previous work and includes unpublished data.
 
-## Participants and data acquisition
+### Participants and data acquisition
 
 Twenty healthy, native volunteers participated in this study (nine female, age 23.6 ± 5.8 y [M ± SD]). The sample size was set based on previous recommendations (Bieniek et al., 2016; Poldrack et al., 2017; Simmons et al., 2011). MEG data of two participants had to be excluded due to excessive artefacts. Analysis of MEG data therefore included 18 participants (seven female), whereas the analysis of behavioural data included 20 participants. An exception to this is the neurobehavioral analysis in the visual condition, where three participants performed at ceiling and had to be excluded (resulting in n = 15 participants in Figure 3B). All participants were right-handed (Edinburgh Handedness Inventory; Oldfield, 1971), had normal hearing (Quick Hearing Check; Koike et al., 1994), and normal or corrected-to-normal vision. Participants had no self-reported history of neurological or language disorders. All participants provided written informed consent prior to testing and received monetary compensation of £10/h. The experiment was approved by the ethics committee of the College of Science and Engineering, University of Glasgow (approval number 300140078), and conducted in compliance with the Declaration of Helsinki.
 
 MEG was recorded with a 248-magnetometers, whole-head MEG system (MAGNES 3600 WH, 4-D Neuroimaging) at a sampling rate of 1 KHz. Head positions were measured at the beginning and end of each run, using five coils placed on the participants’ head. Coil positions were co-digitised with the head-shape (FASTRAK, Polhemus Inc, VT, USA). Participants sat upright and fixated a fixation point projected centrally on a screen. Visual stimuli were displayed with a DLP projector at 25 frames/second, a resolution of 1280 × 720 pixels, and covered a visual field of 25 × 19 degrees. Sounds were transmitted binaurally through plastic earpieces and 370 cm long plastic tubes connected to a sound pressure transducer and were presented stereophonically at a sampling rate of 22,050 Hz. Stimulus presentation was controlled with Psychophysics toolbox (Brainard, 1997) for MATLAB (The MathWorks, Inc) on a Linux PC.
 
-## Stimuli
+### Stimuli
 
 The experiment featured three conditions: auditory only (A), visual only (V), and a third condition in which the same stimulus material was presented audiovisually (AV). This condition could not be used for the main analyses as participants performed near ceiling level in the behavioural task (correct trials: M = 96.5%, SD = 3.4%; see Figure 2—figure supplement 2A for results). The stimulus material consisted of 180 sentences, based on a set of 18 target words derived from two categories (nine numbers and nine adjectives), each repeated 10 times in a different sentence. Sentences were spoken by a trained, male, native British actor. Sentences were recorded with a high-performance camcorder (Sony PMW-EX1) and external microphone. The speaker was instructed to speak clearly and naturally. Each sentence had the same linguistic structure (Keitel et al., 2018). An example is: ‘Did you notice (filler phase), on Sunday night (time phrase) Graham (name) offered (verb) ten (number) fantastic (adjective) books (noun)”. In total, 18 possible names, verbs, numbers, adjectives, and nouns were each repeated ten times. Sentence elements were re-combined within a set of 180 sentences. As a result, sentences made sense, but no element could be semantically predicted from the previous material. To measure comprehension performance, a target word was selected that was either the adjective in one set of sentences (‘fantastic’ in the above example) or the number in the other set (for example, ‘thirty-two’). These were always the second or third last word in a sentence, ensuring that the cerebral processes encoding these words were independent from the behavioural (motor) response. All adjective target words had a positive valence (Scott et al., 2019; see table in Supplementary file 1 for all possible target words). The duration of sentences ranged from 4.2 s to 6.5 s (5.4 ± 0.4 s [M ± SD]). Noise/video onset and offset was approximately 1 s before and after the speech, resulting in stimulus lengths of 6.4 s to 8.2 s (Figure 1). The durations of target words ranged from 419 ms to 1,038 ms (679 ± 120 ms [M ± SD]). After the offset of the target words, the stimulus continued for 1.48 s to 2.81 s (1.98 ± 0.31 s [M ± SD]) before the end of the sentence.
 
 The acoustic speech was embedded in noise to match performance between auditory and visual conditions. The noise consisted of ecologically valid, environmental sounds (traffic, car horns, talking), combined into a uniform mixture of 50 different background noises. The individual noise level for each participant was determined with a one-up-three-down (3D1U) staircase procedure that targets the 79.4% probability correct level (Karmali et al., 2016). For the staircase procedure, only the 18 possible target words (i.e. adjectives and numbers) were used instead of whole sentences. Participants were presented with a single target word embedded in noise and had to choose between two alternatives. Note that due to the necessary differences between staircase procedure (single words and two-alternative-forced-choice) and behavioural experiment (sentences and four-alternative forced-choice), the performance in the behavioural task was lower than 79.4%. The signal-to-noise ratio across participants ranged from −7.75 dB to −3.97 dB (−5.96 ± 1.06 dB [M ± SD]; see Figure 1B).
 
-## Experimental design
+### Experimental design
 
 The 180 sentences were each presented in three conditions (A, V, AV), each consisting of four blocks with 45 sentences each. In each block, participants either reported the comprehended adjective or number, resulting in two ‘adjective blocks’ and two ‘number blocks’. The order of sentences and blocks was randomised for each participant. The first trial of each block was a ‘dummy’ trial that was discarded for subsequent analysis; this trial was repeated at the end of the block.
 
 During the presentation of the sentence, participants fixated either a dot (auditory condition) or a small cross on the speaker’s mouth (see Figure 1 for depiction of trial structure). After each sentence, participants were presented with four target words (either adjectives or written numbers) on the screen and had to indicate which one they perceived by pressing one of four buttons on a button box. After 2 s, the next trial started automatically. Each block lasted approximately 10 min. The two separate sessions were completed within one week.
 
-## MEG pre-processing
+### MEG pre-processing
 
 Pre-processing of MEG data was carried out in MATLAB (The MathWorks, Inc) using the Fieldtrip toolbox (Oostenveld et al., 2011). All experimental blocks were pre-processed separately. Single trials were extracted from continuous data starting 2 s before sound/video onset and until 10 s after onset. MEG data were denoised using a reference signal. Known faulty channels (N = 7) were removed before further pre-processing. Trials with SQUID jumps (on average 3.86% of trials) were detected and removed using Fieldtrip procedures with a cut-off z-value of 30. Before further artifact rejection, data were filtered between 0.2 and 150 Hz (fourth order Butterworth filters, forward and reverse) and down-sampled to 300 Hz. Data were visually inspected to find noisy channels (4.95 ± 5.74 on average across blocks and participants) and trials (0.60 ± 1.24 on average across blocks and participants). There was no indication for a statistical difference between the number of rejected channels or trials between conditions (two-sided t-tests; p>0.48 for channels, p>0.40 for trials). Finally, heart and eye movement artifacts were removed by performing an independent component analysis with 30 principal components (2.5 components removed on average). Data were further down-sampled to 150 Hz and bandpass-filtered between 0.8 and 30 Hz (fourth order Butterworth filters, forward and reverse).
 
-## Source reconstruction
+### Source reconstruction
 
 Source reconstruction was performed using Fieldtrip, SPM8, and the Freesurfer toolbox. We acquired T1-weighted structural magnetic resonance images (MRIs) for each participant. These were co-registered to the MEG coordinate system using a semi-automatic procedure (Gross et al., 2013; Keitel et al., 2017). MRIs were then segmented and linearly normalised to a template brain (MNI space). A forward solution was computed using a single-shell model (Nolte, 2003). We projected sensor-level timeseries into source space using a frequency-specific linear constraint minimum variance (LCMV) beamformer (Van Veen et al., 1997) with a regularisation parameter of 7% and optimal dipole orientation (singular value decomposition method). Covariance matrices for source were based on the whole length of trials (Brookes et al., 2008). Grid points had a spacing of 6 mm, resulting in 12,337 points covering the whole brain. For subsequent analyses, we selected grid points that corresponded to cortical regions only (parcellated using the AAL atlas; Tzourio-Mazoyer et al., 2002). This resulted in 6490 grid points in total.
 
 Neural time series were spatially smoothed (Gross et al., 2013) and normalised in source space. For this, the band-pass filtered time series for the whole trial (i.e. the whole sentence) were projected into source space and smoothed using SPM8 routines with a Full-Width Half Max (FWHM) value of 3 mm. The time series for each grid point and trial was then z-scored.
 
-## Classification analysis
+### Classification analysis
 
 We used multi-variate single-trial classification to localise cerebral representations of the target words in source activity (Grootswagers et al., 2017; Guggenmos et al., 2018). Each target word was presented in ten different trials per condition. We extracted the 500 ms of activity following the onset of each target word and re-binned the source activity at 20 ms resolution. This choice of the analysis time window as made based on the typical duration of target words (M = 679 ms length, see Stimuli). Because the words following the target word differed in each sentence, choosing a longer window would have contaminated the specific classification of target word identity. We therefore settled on a 500 ms window, which has been shown to be sufficient for word decoding (Chan et al., 2011) and does not include the beginning of the following word in most sentences (94%). Importantly, this analysis window did not capture post-sentence or repose periods. Classification was performed on spatial searchlights of 1.2 cm radius. The typical searchlight contained 31 neighbours (median value), with 95% of searchlights containing 17 to 33 grid points. The (leave-one-trial-out) classifier computed, for a given trial, the Pearson correlation of the spatio-temporal searchlight activity in this test-trial with the activities for the same word in all other trials (within-target distances), and with the activities of the three alternative words in all trials (between-target distances). That is, each trial was classified within the sub-set of words that was available to the participant as potential behavioural choices (see Figure 1—figure supplement 2 for illustration). We then averaged correlations within the four candidate words and decoded the target trial as the word identity with the strongest average correlation (that is, smallest classifier distance). This classification measure is comparable to previous studies probing how well speech can be discriminated based on patterns of dynamic brain activity (Luo and Poeppel, 2007; Rimmele et al., 2015). Classification performance was averaged across blocks with numbers and adjectives as task-relevant words. For cross-condition classification (Figure 2—figure supplement 3), we classified the single-trial activity from the auditory (visual) condition against all trials with the same word alternatives from the other condition, or from the audiovisual condition.
 
-## Selection of parameters and classifier procedures
+### Selection of parameters and classifier procedures
 
 We initially tested a number of different classifiers, including linear-discriminant and diagonal-linear classifiers, and then selected a correlation-based nearest-neighbour classifier as this performed slightly better than the others (although we note that the difference in peak classification performance was only on the range of 2–3% between different classifiers). We focussed on linear classifiers here because these have been shown to often perform equally well than more complex non-linear classifiers, while also offering insights that are more readily interpretable (Haxby et al., 2014; Kamitani and Tong, 2005; Ritchie et al., 2019).
 
@@ -155,15 +379,15 @@ We also probed the influence of the spatial searchlight by (i) including each ne
 
 For the main analysis, we therefore opted for a classifier based on the MEG source data represented as spatial searchlight including each grid point within a 1.2 cm radius, and binned at 20 ms resolution.
 
-## Quantifying the behavioural relevance of speech representations
+### Quantifying the behavioural relevance of speech representations
 
 To quantify the degree to which the classifier evidence obtained from local speech representations in favour of a specific word identity is predictive of participants' comprehension, we extracted an index of how well the classifier separated the correct word identity from the three false alternatives: the distance of the single trial classifier evidence to a decision bound (Cichy et al., 2017; Grootswagers et al., 2018; Ritchie et al., 2015). This representational distance was defined as the average correlation with trials of the same (within-target distances) word identity minus the mean of the correlation with the three alternatives (between-target distances; see Figure 1—figure supplement 2). If a local cerebral representation allows a clear and robust classification of a specific word identity, this representational distance would be large, while if a representation allows only for poor classification, or mis-classifies a trial, this distance will be small or negative. We then quantified the statistical relation between participants performance (accuracy) and these single-trial representational distances (Cichy et al., 2017; Grootswagers et al., 2018; Panzeri et al., 2017; Pica et al., 2017; Ritchie et al., 2015). This analysis was based on a regularised logistic regression (Parra et al., 2005), which was computed across all trials per participant. To avoid biasing, the regression model was computed across randomly selected subsets of trials with equal numbers of correct and wrong responses, averaging betas across 50 randomly selected trials. The resulting beta values were averaged across blocks with numbers and adjectives as targets and were entered into a group-level analysis. Given the design of the task (four response options, around 70% correct performance), this analysis capitalises on the relation between correctly encoded words (positive representational distance) and their relation to performance. Conversely, it is not directly able to capture how a wrongly encoded word identity relates to performance.
 
-## Quantifying the role of phonological and semantic features to perception
+### Quantifying the role of phonological and semantic features to perception
 
 For each pair of words we computed their phonological distance using the Phonological Corpus Tools (V1.4.0) based on the phonetic string similarity (’phonological edit distance’) derived from the transcription tier, using the Irvine Phonotactic Online Dictionary (Vaden et al., 2009). We also computed pairwise semantic distances using the fastTExt vector representation of English words trained on Common Crawl and Wikipedia obtained online (file cc.en.300.vec) (Grave et al., 2018). The individual word vectors (300 dimensions) were length-normalised and cosine distances were computed. For each participant, we obtained a behavioural representational dissimilarity matrix (RDM) as the pair-wise behavioural confusion matrix from their behavioural data. We then implemented a representational similarity analysis (RSA) (Kriegeskorte et al., 2008) between phonological (semantic) representations and participants’ performance. Specifically, behavioural and semantic (phonetic) RDMs were compared using Spearman’s rank correlation. The resulting correlations were z-scored and averaged across adjectives and numbers (see Figure 1—figure supplement 1).
 
-## Statistical analyses
+### Statistical analyses
 
 To test the overall stimulus classification performance, we averaged the performance per grid point across participants and compared this group-averaged value to a group-average permutation distribution obtained from 3000 within-subject permutations derived with random trial labels. Cluster-based permutation was used to correct for multiple comparisons (Maris and Oostenveld, 2007). Significant clusters were identified based on a first-level significance derived from the 99.95th percentile of the permuted distribution (family-wise error [FWE] of p=0.001), using the summed statistics (Tsum) across grid points within a cluster, and by requiring a minimal cluster size of 10 grid points. The resulting clusters were considered if they reached a p-value smaller than 0.05.
 

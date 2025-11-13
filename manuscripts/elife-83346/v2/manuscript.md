@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 National Center for Complementary and Integrative Health, National Institutes of Health Bethesda United States
-2. https://ror.org/02dxx6824 Department of Neuroscience, Howard Hughes Medical Institute, Dorris Neuroscience Center, Scripps Research Institute San Diego United States
+1. National Center for Complementary and Integrative Health, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Department of Neuroscience, Howard Hughes Medical Institute, Dorris Neuroscience Center, Scripps Research Institute San Diego United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ A recent study provided the first evidence of endogenous ligands for Piezo chann
 
 ## Results
 
-## ssRNA40 does not alter calcium activity or mechanotransduction in N2a cells
+### ssRNA40 does not alter calcium activity or mechanotransduction in N2a cells
 
 ssRNA40 is a synthetic 20-mer ssRNA oligonucleotide derived from the human immunodeficiency virus (HIV) genome (Heil et al., 2004). ssRNA40 is classically known as an agonist for the immune surveillance toll-like receptors 7 and 8 in mice and humans, respectively (Heil et al., 2004; Zhang et al., 2018). However, it was recently reported that ssRNA40 also shows agonist activity toward the mechanosensitive ion channel Piezo1 (Sugisawa et al., 2020). To test this finding, we first used the Neuro-2a (N2a) mouse neuroblastoma cell line since these cells natively express Piezo1 (Coste et al., 2010) and were reported to conduct a Piezo1-dependent current in the presence of ssRNA40 (Sugisawa et al., 2020).
 
@@ -41,23 +41,55 @@ For measuring Piezo1 activity during exposure to ssRNA40, we performed in vitro 
 
 **Figure 1.:** (A) Fluo-4 calcium imaging of N2a cells during exposure to different treatments, representative of ≥3 independent recordings for each condition. The magnitude of the change in fluorescence (ΔF) is represented on a fire color scale and is superimposed on a grayscale baseline fluorescence image. Cells were exposed to buffer only (vehicle) or 10 µg/mL ssRNA40 or ssRNA41 for up to 3 min, followed by 30 µM Yoda1 and 10 µM ionomycin. Scale bar is 200 µm. (B) Example calcium imaging traces of vehicle, ssRNA40, or ssRNA41, as well as Yoda1 and ionomycin control treatments. Fluorescence values are shown as ΔF normalized to the initial fluorescence (ΔF/F0). n = 50 cells plotted as mean ± 95% CI. (C) Quantification of calcium responses to different treatments. n = 50 cells per condition. Error bars indicate mean ± 95% CI. One-way ANOVA with Bonferroni correction: not significant (n.s.) p≥0.05, **** p<0.0001. (D) Example whole-cell voltage-clamp recordings of N2a cells during mechanical stimulation. Top traces indicate the magnitude of plasma membrane indentation in 1 µm steps, and bottom traces show whole-cell currents elicited by the stimuli. Vehicle, 10 µg/mL ssRNA40, or 30 µM Yoda1 were bath-applied 10 min prior to recording. (E) Piezo1 current versus membrane indentation to illustrate stimulus–response relationships. n = 7–10 cells per condition are plotted to show the mean current per level of indentation, with error bars indicating the standard error of the mean (SEM). (F) Quantification of mechanically evoked current amplitude, threshold, and inactivation. n = 7–10 cells per condition. Error bars represent mean ± 95% CI. One-way ANOVA with Bonferroni correction: n.s. p≥0.05, *p<0.05, ***p<0.001, ****p<0.0001.
 
+![Video 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-video1.mp4.jpg)
+
+**Video 1.:** 5 min time-lapse recording of fluo-4 AM fluorescence in N2a cells during sequential exposure to 10 µg/mL ssRNA40, 30 µM Yoda1, and 10 µM ionomycin. 1 s of video is equivalent to 30 s of real time.
+
 In addition to directly activating Piezo1, ssRNA40 was reported to delay the inactivation of Piezo1 mechanically evoked currents (Sugisawa et al., 2020), similar to Yoda1 (Syeda et al., 2015). We tested this claim by whole-cell voltage-clamp recordings of N2a cells during simultaneous mechanical stimulation of the plasma membrane. Mechanical stimuli were administered with a nanomotor probe to indent the cell surface in 1 µm increments (Video 2). The stimulation elicited a rapidly inactivating inward current, which is characteristic of the Piezo family of ion channels (Figure 1D). As expected, including 30 µM Yoda1 in the external bath solution resulted in a reduced apparent mechanical activation threshold and a prolonged inactivation phase of the currents (Figure 1D–F). By contrast, 10 µg/mL ssRNA40 in the bath solution showed no measurable change from the vehicle control on the amplitude, activation threshold, or inactivation rate of mechanically evoked currents (Figure 1D–F).
 
-## ssRNA40 does not activate Piezo1-transfected HEK293 cells
+![Video 2.](https://cdn.elifesciences.org/articles/83346/elife-83346-video2.mp4.jpg)
+
+**Video 2.:** A HEK293 cell during simultaneous mechanical stimulation and whole-cell current recording. The patch pipette (left) is sealed onto the plasma membrane, and the mechanical probe (right) indents the cell membrane to evoke Piezo1 activity. The video depicts a single 5 µm indentation as part of a larger train of step-wise indentations from 1 to 10 µm.
+
+### ssRNA40 does not activate Piezo1-transfected HEK293 cells
 
 Compared to the Piezo1 agonist activity of Yoda1, ssRNA40 was reported to have a relatively small effect size (Sugisawa et al., 2020). We were concerned that such a small effect size could have been overlooked in our initial experiments, given the relatively low functional expression of Piezo1 in N2a cells. Therefore, we also examined the effects of ssRNA on Piezo1 channels expressed at high levels via transient transfection of human embryonic kidney 293 (HEK293) cells. We performed calcium imaging to compare the responses of native versus Piezo1-transfected HEK293 cells during exposure to vehicle, ssRNA40, or ssRNA41 (Figure 2A and B). Each imaging trial was followed by stimulation with Yoda1 and ionomycin as positive controls for Piezo1 response and maximal response, respectively. There was a noticeable but nonsignificant calcium response of untransfected cells to Yoda1 (Figure 2C), consistent with a previous report that HEK293 cells express very low but detectable levels of human Piezo1 (Dubin et al., 2017). However, in both untransfected and Piezo1-transfected conditions, we found no significant calcium activity between vehicle, ssRNA40, and ssRNA41 (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig2-v2.jpg)
+
+**Figure 2.:** (A) Fluo-4 calcium imaging of HEK293 cells, with or without transfection of mouse Piezo1, representative of ≥3 independent recordings for each condition. Treatment concentrations are 10 µg/mL ssRNA40 or ssRNA41, 30 µM Yoda1, and 10 µM ionomycin. Scale bar is 200 µm. (B) Example calcium imaging traces of Piezo1-transfected HEK293 cells during different treatments. Yoda1 was applied 90 s after any given RNA sample, and only cells that responded to Yoda1 (presumably Piezo1-transfected) were analyzed. Transfection efficiency was generally >60% of the cell culture. n = 50 cells plotted as mean ± 95% CI. (C) Quantification of HEK293 cell calcium responses. n = 50 cells per condition plotted as mean ± 95% CI. One-way ANOVA with Bonferroni correction: n.s. p≥0.05, ****p<0.0001. (D) Dose–response curve of ssRNA40 treatment on Piezo1-transfected GCaMP6s-expressing HEK293 cells. After 1 min of baseline measurement, ssRNA40 was administered for 3 min followed by ionomycin for 1 min. A random selection of cells was analyzed from each recording. The responses are normalized, with the ionomycin response being ΔF/F0 = 1. n = 25 cells per dose plotted as mean ± 95% CI. One-way ANOVA with Bonferroni correction: n.s. p≥0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fluorescence imaging plate reader (FLIPR) assay on HEK293 Piezo1-KO cells, with or without transfection of human Piezo1. Treatment concentrations are 5 µg/mL ssRNA40 and 5 µM Yoda1. n = 4 wells per condition plotted as mean ± SEM. (B) Quantification of FLIPR calcium recordings of ssRNA40 dose–response and its effect on Yoda1 response. n = 4 wells per condition plotted as mean ± SEM. Pairwise comparisons between untransfected and transfected recordings using multiple unpaired t-tests with 5% false discovery rate: n.s. p≥0.05, ****p<0.0001.
 
 Prior studies used between 5 and 20 µg/mL ssRNA40 in their experiments (Heil et al., 2004; Lehmann et al., 2012; Shibata et al., 2016; Sugisawa et al., 2020). For that reason, our above experiments used 10 µg/mL ssRNA40. However, to explore whether ssRNA40 has a dose–response effect on Piezo1, we performed calcium imaging on Piezo1-transfected HEK293 cells during exposure to different concentrations of ssRNA40. Using a log scale range from 0.05 to 50 µg/mL, we did not observe significant calcium influx triggered by ssRNA40 at any concentration (Figure 2D).
 
 An inability to replicate a finding could reflect unappreciated nuances in how two groups conduct the experiments. To address this possibility, we tested whether ssRNA40 could activate Piezo1 in a completely independent laboratory using a distinct cell line, a different methodology, and separately sourced reagents. For these studies, we used a Piezo1-knockout (Piezo1-KO) genetic background HEK293 cell line (Dubin et al., 2017). Importantly, this is the identical cell line used in the originally published ssRNA experiments on Piezo1 (Sugisawa et al., 2020). We recorded the calcium response to ssRNA40 with or without Piezo1 transfection using a fluorescence imaging plate reader (FLIPR) calcium flux screening platform. Several ssRNA40 concentrations were tested from 0.312 to 5 µg/mL followed by Yoda1 as a positive control. We compared untransfected cells to cells transfected with either mouse Piezo1 or human Piezo1 (Figure 2—figure supplement 1). No increase in calcium was detected throughout exposure to ssRNA40, and there were no significant differences between transfected and untransfected cells or across the various ssRNA40 concentrations (Figure 2—figure supplement 1). To examine whether ssRNA40 might more subtly potentiate Piezo1 activity, we checked whether the response to 5 µM Yoda1 was increased after exposure to ssRNA40. However, we found no change in the Yoda1 response following treatment with vehicle or different ssRNA40 concentrations (Figure 2—figure supplement 1). Together, these data independently corroborate our previous observations that ssRNA40 does not activate Piezo1 directly or modulate its mechanotransduction in either N2a cells or HEK293 cells.
 
-## Fecal and dietary extracts activate HEK293 cells independently of Piezo1
+### Fecal and dietary extracts activate HEK293 cells independently of Piezo1
 
 The concept that ssRNA can activate Piezo1 originally arose from screening components of mouse feces and led to the hypothesis that compounds produced by the gut microbiome directly influence Piezo1 function. It was reported that both crude fecal extracts and purified fecal RNA elicit a calcium influx in Piezo1-transfected HEK293 cells (Sugisawa et al., 2020). Although the synthetic ssRNA40 molecule did not activate Piezo1 in our hands, it remained possible that fecal preparations could show agonist activity. We homogenized and diluted mouse fecal matter to 100 mg/mL and filtered it through a 0.45 µm mesh to eliminate any undissolved sample. Pipetting this solution onto cells resulted in extremely high autofluorescence that precluded calcium imaging. However, we found that the autofluorescence was mostly eliminated if the feces were diluted to at least 5 mg/mL – we refer to this diluted filtered sample as ‘fecal extract.’ Applying fecal extract to Piezo1-transfected HEK293 cells triggered a substantial calcium response (Figure 3A and Video 3). More dilute preparations of extract yielded little or no calcium influx. Interestingly, across several imaging trials, we noticed that the response to 5 mg/mL fecal extract was variable; not all cells in the field of view would necessarily respond, and the response onset was often 30–60 s after the fecal extract was first added (Figure 3A and B). Notably, however, we also found that untransfected HEK293 cells had a similar calcium response to fecal extract, suggesting that fecal extracts may trigger calcium influx via a Piezo1-independent mechanism (Figure 3A and B). This was confirmed by applying fecal extract to Piezo1-KO HEK293 cells, which still responded despite the complete absence of Piezo1 (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig3-v2.jpg)
+
+**Figure 3.:** (A) GCaMP6s calcium imaging of HEK293 cells during exposure to 5 mg/mL fecal extract, with or without Piezo1 transfection, representative of ≥3 independent recordings for each condition. Scale bar is 200 µm. (B) Example calcium imaging traces of HEK293 cell responses to fecal extract. n = 50 cells per condition plotted as mean ± 95% CI. (C) Agarose gel showing the nucleic acid content of 50 µg/mL purified fecal RNA and 100 mg/mL crude fecal extract. 50 µg/mL of ssRNA40 and ssRNA41 were used as positive controls since they are pure RNA samples of a defined mass and sequence. Ringer’s solution was used as vehicle negative control. Treating the samples with RNase A eliminated the low-molecular-weight nucleic acid (<500 bp). The crude fecal extract additionally had a high-molecular-weight smear (500–5000 bp) that was unaffected by RNase A treatment, which is likely DNA. (D) Quantification of Piezo1-transfected HEK293 cell responses to 5 mg/mL fecal extracts that were untreated (control), heat-treated (mock), or heat + RNase A-treated (RNase), as well as 10 µg/mL fecal RNA. The ΔF/F0 values are normalized, with the ionomycin response being ΔF/F0 = 1. n = 50 cells per condition plotted as mean ± 95% CI. Kruskal–Wallis with Dunn’s multiple-comparisons test: n.s. p≥0.05, ****p<0.0001. (E) GCaMP6s calcium imaging of HEK293 cells during exposure to 5 mg/mL dietary extract, with or without Piezo1 transfection, representative of ≥2 independent recordings for each condition Scale bar is 200 µm. (F) Example calcium imaging traces of HEK293 cell responses to dietary extract. n = 50 cells per condition plotted as mean ± 95% CI.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fluorescence imaging plate reader (FLIPR) assays on HEK293 Piezo1-KO cells, with or without transfection of human Piezo1. Each treatment condition was followed up with ionomycin to elicit maximum response for normalization (not shown). Treatment concentrations are 5 mg/mL fecal or dietary extract, 5 µM Yoda1, and 10 µM ionomycin. n = 4 wells per condition plotted as mean ± SEM. (B) Quantification of FLIPR calcium recordings for different treatments. n = 4 wells per condition plotted as mean ± SEM. Kruskal–Wallis with Dunn’s multiple-comparisons test: n.s. p≥0.05, **p<0.01.
+
+![Video 3.](https://cdn.elifesciences.org/articles/83346/elife-83346-video3.mp4.jpg)
+
+**Video 3.:** 5 min time lapse of GCaMP6s fluorescence in HEK293 cells during exposure to 5 mg/mL fecal extract and then 10 µM ionomycin. 1 s of video is equivalent to 30 s of real time.
 
 Crude fecal extracts are complex biochemical mixtures that include products from the microbiome. To test the contribution of bacterial RNA in the calcium response of HEK293 cells to fecal extract, we purified these nucleic acids (Figure 3C) from our samples and tested whether they activated Piezo1. In contrast to the total extract, we did not observe a detectable calcium influx with 10 µg/mL fecal RNA – the same concentration used in other studies (Figure 3D; Sugisawa et al., 2020). We additionally extracted fecal RNA using the same kit and procedure as prior studies (Sugisawa et al., 2020), but this sample likewise failed to induce any activity (see ‘Materials and methods’). We then performed the reciprocal experiment by treating fecal extracts with the ssRNA-degrading enzyme RNase A. Both RNase-treated and untreated fecal extracts activated Piezo1-transfected HEK293 cells to a similar degree (Figure 3D). Together, these experiments demonstrate that fecal extracts can stimulate calcium influx in HEK293 cells, but this effect is unlikely to be mediated by RNA and, regardless, the activity does not depend on Piezo1.
 
 To disentangle possible sources of activation in our fecal extracts, we evaluated whether anything in the mouse diet might stimulate HEK293 cell calcium influx. We reasoned that separately testing the food input would eliminate host and microbial factors found in the fecal output. Mouse chow pellets were dissolved and filtered to prepare a dietary extract by the same method as the previous fecal extracts. Surprisingly, applying 5 mg/mL dietary extract to HEK293 cells produced a substantial calcium response (Figure 3E). This activation occurred in both untransfected and Piezo1-transfected cells. Similar to fecal extract, the dietary extract often activated only a subset of cells (Figure 3E and Video 4). The timing of the response onset was also variable but tended to occur earlier compared to fecal extract (Figure 3F). Dietary extract also activated Piezo1-KO HEK293 cells, confirming that Piezo1 is dispensable for the response to the extract (Figure 3—figure supplement 1). To verify that the dietary and fecal extracts were not activating cells in a nonspecific way by changing the osmolality or pH, we confirmed that these properties were not substantially altered between control solutions and the crude extracts (see ‘Materials and methods’). These results suggest that an element of the mouse diet, if present in fecal matter, could be a confounding factor when studying active compounds derived from the host gut or resident microbiota in calcium imaging assays.
+
+![Video 4.](https://cdn.elifesciences.org/articles/83346/elife-83346-video4.mp4.jpg)
+
+**Video 4.:** 5 min time lapse of GCaMP6s fluorescence in HEK293 cells during exposure to 5 mg/mL dietary extract and then 10 µM ionomycin. 1 s of video is equivalent to 30 s of real time.
 
 Piezo1 is a nonselective ion channel that inactivates quickly (within 10–30 ms) (Coste et al., 2010). Therefore, calcium imaging is not the most sensitive readout of channel gating. To more definitively confirm that fecal extracts and ssRNA are not affecting Piezo1 activity, we carried out a series of whole-cell voltage-clamp recordings on Piezo1-transfected HEK293 cells. The cells were mechanically stimulated in the presence of ssRNA40 or fecal extract (Figure 4A). As negative and positive controls for Piezo1 agonism, vehicle solution and Yoda1 were used, respectively. Across all conditions, the maximum whole-cell Piezo1 current evoked by mechanical stimulation was not substantially different. By contrast, Yoda1 significantly lowered the apparent mechanical threshold for Piezo1 activation and delayed channel inactivation as expected (Figure 4B and C; Syeda et al., 2015). Together, our results do not provide evidence for even a limited effect of either ssRNA40 or fecal extracts on the biophysical properties of Piezo1.
 
@@ -65,7 +97,7 @@ Piezo1 is a nonselective ion channel that inactivates quickly (within 10–30 ms
 
 **Figure 4.:** (A) Example whole-cell voltage-clamp recordings of Piezo1-transfected HEK293 cells during mechanical stimulation. Top traces indicate the magnitude of plasma membrane indentation in 1 µm steps, and bottom traces show whole-cell currents elicited by the stimuli. Vehicle, 10 µg/mL ssRNA40, 5 mg/mL fecal extract, or 30 µM Yoda1 were bath-applied 5 min prior to recording. (B) Piezo1 current versus membrane indentation demonstrates the stimulus–response relationships across conditions. n = 8–19 cells per condition are shown as mean ± SEM. (C) Quantification of mechanically evoked current amplitude, threshold, and inactivation. Individual cell responses are plotted: n = 14 vehicle, n = 8 ssRNA40, n = 19 fecal extract, and n = 10 Yoda1. Error bars represent mean ± 95% CI. One-way ANOVA with Bonferroni correction: n.s. p≥0.05, *p<0.05.
 
-## Calcium response to fecal and dietary extracts is cell line-specific
+### Calcium response to fecal and dietary extracts is cell line-specific
 
 We were concerned about the potential confounding effects of fecal/dietary extract-induced activation of HEK293 cells and wondered whether this effect extended to other commonly used cell lines in the field. Piezo1 was originally discovered in N2a cells (Coste et al., 2010), and this cell line continues to be frequently used for in vitro work on Piezo1 (Geng et al., 2020; Ridone et al., 2020; Romero et al., 2019). Therefore, we compared N2a and HEK293 cells, with or without Piezo1 transfection, during treatment with fecal/dietary extracts. Since Piezo1 is endogenously expressed in wildtype N2a cells, we performed these experiments on a Piezo1-KO N2a cell line (Moroni et al., 2018).
 
@@ -75,15 +107,300 @@ The untransfected N2a Piezo1-KO cells showed no calcium response to Yoda1 treatm
 
 **Figure 5.:** (A) Calcium imaging of N2a Piezo1-KO cells and HEK293 cells, with or without Piezo1 transfection, representative of ≥2 independent recordings for each condition. Fluo-4 or GCaMP6s were used to image the N2a cells or HEK293 cells, respectively. Treatment concentrations are 5 mg/mL fecal or dietary extract, 30 µM Yoda1, or 10 µM ionomycin. Scale bar is 200 µm. (B) Quantification of calcium responses. n = 25 cells per condition plotted as mean ± 95% CI. Pairwise comparisons between untransfected and transfected recordings using Kruskal–Wallis with Dunn’s multiple-comparisons test: n.s. p≥0.05, **** p<0.0001.
 
-## RNA activates RIN14B cells independently of Piezo1
+### RNA activates RIN14B cells independently of Piezo1
 
 Considering that RNA-sensing by Piezo1 was originally investigated in the gut (Sugisawa et al., 2020), we sought to continue our exploration of the effect of ssRNAs in a physiologically relevant cell line, RIN14B. This pancreatic endocrine cell line is commonly used to model gut enterochromaffin cell function and natively expresses Piezo1 (Nozawa et al., 2009; Sugisawa et al., 2020). To examine the effect of ssRNAs on these cells, we performed calcium imaging in RIN14B cells transfected with GCaMP6s. We measured the change in fluorescence following addition of vehicle, ssRNA40, ssRNA41, fecal RNA, or Yoda1. Each imaging trial was followed by application of ionomycin to determine maximal fluorescence. As expected from previous experiments, the vehicle caused no significant change (Figure 6A-C). However, ssRNA40 and ssRNA41 elicited a noticeable calcium response in RIN14B cells, unlike in N2a or HEK293 cells (Figure 6—figure supplement 1). Fecal RNA also elicited a calcium response, similar in magnitude to that caused by ssRNA40 and ssRNA41 (Figure 6D-F and Video 5). In comparison, Yoda1 led to a significantly larger increase in fluorescence, consistent with endogenous expression of Piezo1 in RIN14B cells (Figure 6G-I).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) Calcium imaging of RIN14B cell activity during application of negative control vehicle with and without gadolinium inhibition of Piezo1. Gadolinium visibly reduced spontaneous calcium transients. (D–F) RIN14B cell calcium influx in response to fecal RNA, with and without gadolinium. (G–I) RIN14B cell calcium influx in response to the positive control Piezo1 agonist Yoda1, which is blocked by gadolinium. The calcium imaging was performed on GCaMP6s-transfected cells. GCaMP6s calcium responses were measured during stimulation with 25 µg/mL fecal RNA, 15 µM Yoda1, and 10 µM ionomycin. To block Piezo1, 30 µM gadolinium was preincubated on the cells for 5 min and included throughout the calcium imaging recording. Line graphs represent mean ± 95% CI of a single recording each of n = 50 cells. Bar graphs represent n = 100–150 cells from ≥2 independent recordings for each condition, with fluorescence values normalized to the response to ionomycin = 1.0, and the bars indicate mean ± 95% CI. Pairwise comparisons between untreated and gadolinium (Gd3+)-treated recordings using Kruskal–Wallis with Dunn’s multiple-comparisons test: *p<0.05, ****p<0.0001. The scale bar for the microscope images is 100 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83346/elife-83346-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Calcium imaging of ssRNA40 and ssRNA41 responses in RIN14B cells loaded with Fluo-4 AM, representative of ≥3 independent recordings for each condition. Cells were stimulated with 25 µg/mL ssRNA40 or ssRNA41 and 10 µM ionomycin. The mean ΔF/F0 ± 95% CI is shown for a single recording each of n = 50 cells. (B) To block Trpa1, 10 µM A-967079 was preincubated on the cells for 5 min and included throughout the calcium imaging recording. 10 µM AITC was used as a positive control for Trpa1 activation. Bar graphs represent n = 50–200 cells from 1 to 4 independent recordings for each condition, with fluorescence values normalized to the response to ionomycin = 1.0, and the bars indicate mean ± 95% CI. Pairwise comparisons between untreated and A-967079-treated recordings using Kruskal–Wallis with Dunn’s multiple–comparisons test: n.s. p≥0.05, ****p<0.0001.
+
+![Video 5.](https://cdn.elifesciences.org/articles/83346/elife-83346-video5.mp4.jpg)
+
+**Video 5.:** 5 min time lapse of GCaMP6s fluorescence in RIN14B cells during exposure to 25 µg/mL fecal RNA and then 10 µM ionomycin. 1 s of video is equivalent to 30 s of real time.
 
 To investigate the dependency between the RNA-evoked response and Piezo1 function in these cells, we performed calcium imaging on RIN14B cells in the presence of gadolinium. Gadolinium is a broad inhibitor of stretch-activated cation channels including Piezo1 (Coste et al., 2010). Cells were exposed first to gadolinium and then to either vehicle, fecal RNA, or Yoda1. At baseline, we noticed general effects of gadolinium on the excitability of RIN14B cells, evident by reduced spontaneous calcium transients during vehicle application (Figure 6B and C). Notably, gadolinium did not diminish the response to fecal RNA, but it seemed to have a nonspecific effect on the decay rate of the calcium signal (Figure 6E and F). Gadolinium completely abolished the Yoda1 response, confirming successful Piezo1 inhibition (Figure 6H and I). Together, these experiments demonstrate that while RIN14B cells do respond to a variety of ssRNAs, their response is not dependent on Piezo1.
 
 In addition to Piezo1, RIN14B cells and gut enterochromaffin cells express the electrophile receptor Trpa1 (Bellono et al., 2017; Nozawa et al., 2009). We speculated that Trpa1 may be responsible for the RNA-induced calcium response, considering that Trpa1 has been reported to respond to extracellular microRNAs (Park et al., 2014). To test this, we performed calcium imaging on RIN14B cells in the presence of a Trpa1 inhibitor, A-967079. As expected, the Trpa1 inhibitor blocked the calcium response following addition of allyl isothiocyanate (AITC), an electrophilic Trpa1 agonist (Figure 6—figure supplement 1). However, the Trpa1 inhibitor did not significantly diminish the calcium response following addition of ssRNA40 or ssRNA41 (Figure 6—figure supplement 1), indicating that the RNA-induced response is not dependent on Trpa1.
 
 To facilitate a better understanding of the molecular basis for extracellular ssRNA-sensing, we performed single-nuclei RNA sequencing on RIN14B cells. Algorithmic clustering of individual nuclear transcriptomes did not reveal any clear transcriptomic subpopulations. However, there is clearly heterogeneity when examining the prevalence of individual transcripts from cell to cell, which may stem from true biological heterogeneity within the cell line or from technical limitations in our sequencing approach (Supplementary file 1). As a starting point for identifying candidate ssRNA receptors, we compiled a gene list based on gene ontology annotations for ion channels, cation transmembrane transporters, and G protein-coupled receptors (Table 1). The rough expression prevalence of each gene is conveyed as the fraction of cells in which that gene’s transcripts were detected. Additionally, we have made the entire sequencing dataset available as an open resource for investigating RIN14B cell gene expression (Gene Expression Omnibus [GEO], GSE213903). We anticipate these data will be useful for more deeply assessing the fidelity of the RIN14B line as a model of gut enterochromaffin cells.
+
+**Table 1.**
+ Ion channels and G protein-coupled receptors (GPCRs) in RIN14B cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>‘Ion channel activity’ genes</th>
+      <th>Percent of cells expressing gene</th>
+      <th></th>
+      <th>‘GPCR activity’ genes</th>
+      <th>Percent of cells expressing gene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Asic1</td>
+      <td>19.5</td>
+      <td></td>
+      <td>Adgra2</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td>Asic2</td>
+      <td>42.7</td>
+      <td></td>
+      <td>Adgra3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Chrna7</td>
+      <td>7.7</td>
+      <td></td>
+      <td>Adgrb2</td>
+      <td>9.2</td>
+    </tr>
+    <tr>
+      <td>Clcn3</td>
+      <td>42.1</td>
+      <td></td>
+      <td>Adgrb3</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>Gabrb3</td>
+      <td>16</td>
+      <td></td>
+      <td>Adgrg1</td>
+      <td>16.9</td>
+    </tr>
+    <tr>
+      <td>Kcnd3</td>
+      <td>13.5</td>
+      <td></td>
+      <td>Adgrg4</td>
+      <td>15.8</td>
+    </tr>
+    <tr>
+      <td>Kcnh2</td>
+      <td>8.6</td>
+      <td></td>
+      <td>Adgrl1</td>
+      <td>22.1</td>
+    </tr>
+    <tr>
+      <td>Kcnk3</td>
+      <td>12.3</td>
+      <td></td>
+      <td>Adgrl2</td>
+      <td>37.2</td>
+    </tr>
+    <tr>
+      <td>Mcub</td>
+      <td>37.5</td>
+      <td></td>
+      <td>Adgrl3</td>
+      <td>61.3</td>
+    </tr>
+    <tr>
+      <td>Tmem120a</td>
+      <td>16.3</td>
+      <td></td>
+      <td>Adgrv1</td>
+      <td>9.2</td>
+    </tr>
+    <tr>
+      <td>Trpa1</td>
+      <td>15.2</td>
+      <td></td>
+      <td>Celsr2</td>
+      <td>9.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Celsr3</td>
+      <td>10.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Glp1r</td>
+      <td>56.4</td>
+    </tr>
+    <tr>
+      <td rowspan="3">‘Cation transmembrane transport’ genes</td>
+      <td rowspan="3">Percent of cells expressing gene</td>
+      <td></td>
+      <td>Gpr146</td>
+      <td>10.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gpr158</td>
+      <td>53.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gpr176</td>
+      <td>9.7</td>
+    </tr>
+    <tr>
+      <td>Ano10</td>
+      <td>10.6</td>
+      <td></td>
+      <td>Gpr6</td>
+      <td>28.7</td>
+    </tr>
+    <tr>
+      <td>Atp13a1</td>
+      <td>18.6</td>
+      <td></td>
+      <td>Gprc5b</td>
+      <td>14.3</td>
+    </tr>
+    <tr>
+      <td>Atp13a3</td>
+      <td>30.7</td>
+      <td></td>
+      <td>Gprc5c</td>
+      <td>19.8</td>
+    </tr>
+    <tr>
+      <td>Atp1b1</td>
+      <td>17.2</td>
+      <td></td>
+      <td>Grm1</td>
+      <td>23.5</td>
+    </tr>
+    <tr>
+      <td>Cnga1</td>
+      <td>8.9</td>
+      <td></td>
+      <td>Lgr4</td>
+      <td>19.8</td>
+    </tr>
+    <tr>
+      <td>Grina</td>
+      <td>10.6</td>
+      <td></td>
+      <td>Lpar6</td>
+      <td>9.7</td>
+    </tr>
+    <tr>
+      <td>Mcoln1</td>
+      <td>16.9</td>
+      <td></td>
+      <td>Oxtr</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Nalcn</td>
+      <td>9.5</td>
+      <td></td>
+      <td>Tas1r2</td>
+      <td>20.6</td>
+    </tr>
+    <tr>
+      <td>Pex5l</td>
+      <td>63</td>
+      <td></td>
+      <td>Tm2d1</td>
+      <td>22.9</td>
+    </tr>
+    <tr>
+      <td>Piezo1</td>
+      <td>9.2</td>
+      <td></td>
+      <td>Tpra1</td>
+      <td>9.2</td>
+    </tr>
+    <tr>
+      <td>Slc29a4</td>
+      <td>9.2</td>
+      <td></td>
+      <td>Vom2r44</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td>Slc30a7</td>
+      <td>38.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Slc30a9</td>
+      <td>71.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Slc41a2</td>
+      <td>16.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tmem63a</td>
+      <td>13.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tmem63b</td>
+      <td>35.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tmem63c</td>
+      <td>36.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tomm40</td>
+      <td>11.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Trpm3</td>
+      <td>49.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Trpm7</td>
+      <td>65.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unc80</td>
+      <td>41.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -93,23 +410,201 @@ Our data leave open questions regarding the sources of Piezo1 activation and pos
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>Jax</td>
+      <td>Strain # 000664</td>
+      <td>Maintained in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Other (rodent chow)</td>
+      <td>Dietary extract</td>
+      <td>LabDiet</td>
+      <td>Prolab RMH 1800 5LL2</td>
+      <td>Autoclaved in Chesler lab and used in Chesler and Patapoutian labs</td>
+    </tr>
+    <tr>
+      <td>Biological sample (rodent feces)</td>
+      <td>Fecal extract</td>
+      <td>This study</td>
+      <td>Derived from C57BL/6 mice</td>
+      <td>Freshly isolated in Chesler lab and used in Chesler and Patapoutian labs</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Neuro-2a cells</td>
+      <td>ATCC</td>
+      <td>CCL-131</td>
+      <td>Maintained in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Piezo1-KO Neuro-2a cells</td>
+      <td>Max Delbrück Center for Molecular Medicine; Moroni et al., 2018</td>
+      <td></td>
+      <td>Maintained in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293 cells</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td>Maintained in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>PIEZO1-KO HEK293 cells</td>
+      <td>Scripps Research; Dubin et al., 2017</td>
+      <td></td>
+      <td>Maintained in Patapoutian lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>GCaMP6s HEK293 cells</td>
+      <td>This study</td>
+      <td>Derived from the Flp-In T-Rex 293 cell line (Thermo Fisher, R78007)</td>
+      <td>Maintained in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>RIN14B cells</td>
+      <td>ATCC</td>
+      <td>CRL-2059</td>
+      <td>Maintained in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CMV-mPiezo1-IRES-eGFP</td>
+      <td>Addgene</td>
+      <td>80925</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CMV-mPiezo1</td>
+      <td>This study</td>
+      <td>Derived from pcDNA5-FRT (Thermo Fisher, V601020)</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CMV-hPIEZO1</td>
+      <td>This study</td>
+      <td>Derived in A. Patapoutian lab</td>
+      <td>Used in Patapoutian lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CMV-GCaMP6s</td>
+      <td>Addgene</td>
+      <td>40753</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-CMV-GCaMP6s-PGK-Hyg</td>
+      <td>This study</td>
+      <td>Derived from pLV-CMV-PGK-Hyg (Cellomics Technology, LVR-1046)</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ssRNA40</td>
+      <td>Invivogen</td>
+      <td>A40-41-02</td>
+      <td>Used in Chesler and Patapoutian labs</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ssRNA41</td>
+      <td>Invivogen</td>
+      <td>A41-41-02</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yoda1</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML558-5MG</td>
+      <td>Used in Chesler and Patapoutian labs</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>I0634</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gadolinium (III) chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>439770</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AITC</td>
+      <td>Sigma-Aldrich</td>
+      <td>377430</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A-967979</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML0085</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluo-4 AM dye</td>
+      <td>Fisher Scientific</td>
+      <td>F14201</td>
+      <td>Used in Chesler lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluo-8 AM dye</td>
+      <td>AAT Bioquest</td>
+      <td>21080</td>
+      <td>Used in Patapoutian lab</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All experiments involving mice adhered to the animal usage guidelines set by the National Institutes of Health (NIH) and were first approved by the National Institute of Neurological Disorders and Stroke (NINDS) Animal Care and Use Committee. Equal numbers of male/female wildtype C57BL/6J mice between the ages of 6 weeks and 1 year were used. The mice were housed in an AAALAC International accredited pathogen-free facility with ad libitum access to food and water. Water was purified by reverse osmosis and then UV-treated and chlorinated at 15–18 ppm such that after 2 weeks the chlorine concentration was ≥2 ppm. The diet consisted purely of the chemically defined Prolab RMH 1800 (LabDiet, 5LL2) autoclaved rodent chow.
 
-## Cell lines
+### Cell lines
 
 Cell lines were purchased from the ATCC biobank, acquired by MTA through their origin laboratory, or generated in this study. The following cell lines were used in the study: wildtype N2a cells (ATCC, CCL-131), Piezo1-KO N2a cells (Moroni et al., 2018), wildtype HEK293 cells (ATCC, CRL-1573), PIEZO1-KO HEK293 cells (Dubin et al., 2017), GCaMP6s HEK293 cells (this study), and RIN14B cells (ATCC, CRL-2059) (Nozawa et al., 2009). Cell lines were authenticated by morphological and functional testing (i.e., electrophysiology and calcium imaging). The cells were confirmed to be mycoplasma-free prior to using them in experiments. All cell lines were maintained on polystyrene culture plates (Fisher Scientific, 07-200-80) in a 5% CO2 humidified incubator at 37°C. The growth medium was changed every 2–3 days and consisted of RPMI-1640 (for the RIN14B cells) (Fisher Scientific, 11-875-093) or otherwise DMEM/F12 (Fisher Scientific, 11330032) supplemented with 10% fetal bovine serum (Fisher Scientific, 26140079). Cells were passaged when they reached confluence, which was roughly twice per week, and all cultures that were used for experiments were not propagated beyond 20 passages. For passaging, cells were rinsed in PBS (Fisher Scientific, 10010023) and then incubated in Accutase (Fisher Scientific, 00-4555-56) for ~5 min at 37°C to detach. Cells were collected in a 15 mL tube (Fisher Scientific, 12-565-268) and centrifuged at 300 rcf for 3 min to pellet. The supernatant was aspirated, and cells were resuspended in growth medium followed by plating in new polystyrene plates. Typical dilution ratios for passaging were between 1:3 and 1:20.
 
-## Generating GCaMP6s stable HEK293 cells
+### Generating GCaMP6s stable HEK293 cells
 
 GCaMP6s was generated by a custom gene synthesis service (Epoch Life Science) and subcloned into a pLV-CMV-PGK-Hyg lentiviral vector (Cellomics Technology, LVR-1046) to make pLV-CMV-GCaMP6s-PGK-Hyg. This vector was used to produce lentiviral particles (Vigene Biosciences). Then, wildtype HEK293 cells (ATCC, CRL-1573) were infected in regular growth medium with 5 µg/mL polybrene (Sigma-Aldrich, TR-1003-G) and the lentivirus at a multiplicity of infection of five viral particles per cell. Transduction was allowed to occur overnight. The cells were then replated, and 48 hr later 100 µg/mL Hygromycin B was added to initiate antibiotic selection. After 2 weeks of culture and passaging, a hygromycin-resistant polyclonal GCaMP6s stable HEK293 cell line was isolated.
 
-## Plasmid transfection
+### Plasmid transfection
 
 Wildtype HEK293, GCaMP6s HEK293, Piezo1-KO N2a, and RIN14B cells were used in transfection experiments. Other cell lines were used untransfected to examine endogenously expressed Piezo1 (wildtype N2a cells) or were used in FLIPR experiments described further below (PIEZO1-KO HEK293 cells). Cells were seeded in 24-well plates 24–72 hr before transfection. Transfection was performed when the cells were at ~70% confluence using 500 ng plasmid DNA and the Lipofectamine 3000 kit (Fisher Scientific, L3000001) following the manufacturer’s instructions. The following plasmids were used in the study: CMV-mPiezo1-IRES-eGFP, CMV-mPiezo1, and CMV-GCaMP6s. CMV-mPiezo1-IRES-eGFP was a gift from Ardem Patapoutian (Addgene plasmid #80925; http://n2t.net/addgene:80925) and was used for all electrophysiological recordings. CMV-mPiezo1 was previously generated in-house by subcloning mouse Piezo1 into the pcDNA5/FRT expression vector (Fisher Scientific, V601020) – this plasmid was used for all calcium imaging of Piezo1 activity. CMV-GCaMP6s was a gift from Douglas Kim and the GENIE Project (Addgene plasmid #40753; http://n2t.net/addgene:40753) and was used for calcium imaging of RIN14B cells.
 
-## Calcium imaging
+### Calcium imaging
 
 Ringer’s solution was used for all physiological assays, consisting of 133 mM NaCl, 3 mM KCl, 2.5 mM CaCl2, 1 mM MgCl2, 10 mM glucose, 10 mM HEPES, and 40.9 mM sucrose (all from Sigma-Aldrich) dissolved in water. The pH was adjusted to 7.3 with 1 M NaOH, and the osmolality was ~330 mmol/kg. Calcium influx was visualized in N2a cells and HEK293 cells using Fluo-4 AM dye (Fisher Scientific, F14201) or the GCaMP6s HEK293 cell line described above. For Fluo-4 AM imaging, 50 µg Fluo-4 AM was dissolved in 44 µL DMSO (Sigma-Aldrich, D2650) and mixed with 9 µL Pluronic F-127 (Fisher Scientific, P-3000MP) by vortexing. Then, 50 µL of this mixture was diluted in 14.3 mL Ringer’s solution to make the ‘loading solution.’ Cells cultured in eight-chamber slides (Fisher Scientific, 177445PK) were first rinsed with Ringer’s solution and then incubated in loading solution for 1 hr light-protected at room temperature. After 1 hr, the loading solution was removed, the cells were rinsed with Ringer’s solution, and then immediately imaged in Ringer’s solution using a pco.panda sCMOS back-illuminated camera at 3 frames/s with an Olympus IX73 inverted microscope and ×10 air objective. Videos were recorded and saved using pco.camware software. Solutions containing different compounds were added and removed via micropipette during video recording while maintaining the same volume (150 µL) in the chamber. Stock solutions of all compounds were dissolved and prepared following the manufacturer’s instructions, and the final concentration used in each experiment can be found in each figure legend. The following commercially available compounds were used in the study: ssRNA40 (Invivogen, A40-41-02), ssRNA41 (Invivogen, A41-41-02), Yoda1 (Sigma-Aldrich, SML558-5MG), AITC (Sigma-Aldrich, 377430), gadolinium(III) chloride (Sigma-Aldrich, 439770), A-967979 (Sigma-Aldrich, SML0085), and ionomycin (Sigma-Aldrich, I0634).
 
@@ -119,17 +614,17 @@ For quantifying responses, cellular regions of interest (ROIs) were drawn around
 
 To quantify the maximal response to different treatments, the peak ΔF/F0 from within the treatment exposure timeframe was selected for each cell. All recordings ended with ionomycin treatment to elicit maximum calcium influx for normalization purposes. In cases where two different recordings showed significantly different ionomycin responses, the ΔF/F0 for experimental treatments was normalized a percentage of the peak ionomycin response. ΔF/F0 values were exported to GraphPad 8.0 (Prism) for visualization and graphing. An n = 25–50 cells was analyzed for each calcium imaging recording and are representative of at least three independently performed transfections and recording sessions per condition.
 
-## Electrophysiology
+### Electrophysiology
 
 N2a cells and HEK293 cells were plated in 35 mm dishes (Fisher Scientific, 353001) ~24 hr prior to recording, and the next day they were rinsed once in Ringer’s solution before recording in Ringer’s solution. Patch-clamp recordings were performed in whole-cell voltage-clamp mode by glass micropipette electrodes that were pulled and polished to 2–6 MΩ resistance. The pipette was filled with internal solution consisting of 133 mM CsCl, 1 mM CaCl2, 1 mM MgCl2, 5 mM EGTA, 10 mM HEPES, 4 mM Mg-ATP, 0.4 mM Na2-GTP, 43.8 mM sucrose (all from Sigma-Aldrich). Internal solution pH was adjusted to 7.3 with 1 M CsOH, and the osmolality was ~320 mmol/kg. After establishing a GΩ seal with the patch pipette on a cell membrane and breaking into whole-cell configuration, cells were held at –80 mV and mechanically stimulated with a separate glass-polished probe to elicit Piezo1 currents. The probe was a micropipette that was heat-polished to seal the tip until rounded with a width of 3–5 µm. The probe was attached to a piezoelectric translator (Physik Instrumente, P841.20) and mounted on a micromanipulator (Sutter Instrument, MP-225) at 45° angle to the cell surface. To stimulate the cells, the probe was maneuvered to rest ~1 µm above the cell surface and then sequentially indented for 200 ms in 1 µm increments from 1 to 10 µm with a 2 ms ramp time. Each indentation was separated by 2 s. Whole-cell currents were measured by a Multiclamp 700b amplifier (Molecular Devices) and digitized by a Digidata 1550 (Molecular Devices) at 100 kHz and then low-pass filtered at 10 kHz. The signals were saved digitally using Clampex 11.1 software (Molecular Devices).
 
 Clampfit 11.1 software (Molecular Devices) was used to analyze the electrophysiological recordings. Any whole-cell recording showing a static leak current >200 pA was discarded from analysis due to poor patch seal quality. Additionally, cells with a peak mechanically evoked current <30 pA were considered nonresponders and discarded since these currents are near the baseline noise level and their kinetics could not be reliably analyzed. Additionally, cells with a peak current >4000 pA were discarded due to the abnormally high values and generally unhealthy swelled morphology of such cells. Finally, recordings were discarded if the patch pipette seal broke before three consecutive mechanically evoked responses because low indentation responses have distinct kinetics that bias analysis. In the end, an equal number of recordings (5–7) were discarded from each condition (from a total of 15–25 attempted cells/condition), with no apparent systematic bias toward any of the control or ssRNA conditions. The remaining recordings (one per cell) were filtered at 1 kHz and thresholded to 0 pA. The maximal current was measured by the largest amplitude response before patch breakage or by reaching 10 µm membrane indentation, whichever came first. This same response was then used to approximate the time constant of inactivation (tau) by calculating the time taken to decay 63.2% back to baseline. The mechanical activation threshold was determined by the level of membrane indentation (µm) to elicit the first current response peak (pA) above the baseline level of noise. No systematic differences were observed for baseline noise level or maximum membrane indentation between conditions. Values were exported from Clampfit 11.1 to GraphPad 8.0 (Prism) for visualization and graphing. A minimum of n = 7 cells were analyzed per recording condition.
 
-## FLIPR assay
+### FLIPR assay
 
 PIEZO1-KO HEK293 or wildtype HEK293 cells were grown in Dulbecco’s modified Eagle’s medium containing 4.5 mg/mL glucose, 10% fetal bovine serum, and 1× pen/strep. Cells were plated in 6-well plates and transfected using Lipofectamine 2000 (Thermo Fisher Scientific) according to the manufacturer’s instructions. Human PIEZO1 fused to IRES-TdTomato or mouse Piezo1 fused to IRES-GFP was transfected at 2 µg per well (6-well plate) for FLIPR. One day after transfection, the cells were dissociated from 6-well plates with trypsin and re-seeded into a 384-well plate, at 20,000 cells per well. The plate was then cultured for 1 day before washing with assay buffer (1× HBSS, 10 mM HEPES, pH 7.4) in a ELx405 CW plate washer (BioTek Instruments). The cells were then incubated with 1.25 µM calcium indicator Fluo-8 AM (AAT Bioquest) in the assay buffer at 37°C for 1 hr. After washing out excess dye, fluorescence was measured on a FLIPR Tetra upon treatment with various reagents. A 1 mM stock solution of Yoda1 in dimethyl sulfoxide (DMSO) was used, resulting in a final concentration of 5 µM Yoda1 and 0.5% DMSO in the assay. The effect of ssRNA40 was tested at concentrations of 5, 2.5, 1.25, and 0.625 µg/mL. Ionomycin was added to 10 µM concentration as a final normalization. All measurements were taken from four biological replicates (four different wells in 384-well plate).
 
-## Crude extract preparations
+### Crude extract preparations
 
 Fresh mouse feces were gathered by gently holding the mouse over a sterile 1.5 mL tube and collecting the fecal matter directly into the tube as it was excreted. Feces from 10 to 20 adult mice were pooled together, diluted to 0.1 g/mL in Ringer’s solution, and homogenized using a sterile mortar and pestle. The sample was then centrifuged at 300 rcf for 3 min to pellet any remaining undissolved fecal matter and then sequentially filtered through 100, 40, and finally 0.45 µm mesh membranes (Fisher Scientific, SLHAR33SS) to produce the ‘fecal extract.’ Because this extract was strongly autofluorescent during calcium imaging, the fecal extract was further diluted 1:20 in Ringer’s solution from its original 0.1 g/mL to a final concentration of 5 mg/mL when applying it to cell cultures. Dietary extracts were prepared in identical fashion to fecal extracts, with the exception that mouse food pellets were first crushed in a dry state using mortar and pestle and then transferred to Ringer’s solution (0.1 g/mL).
 
@@ -137,16 +632,16 @@ Four different fecal extract preparations and three different dietary extract pr
 
 To check whether the fecal and dietary extracts were nonspecifically activating cells due to changes in osmolality or pH, these properties were examined in extracts that were diluted to the working concentration of 5 mg/mL in Ringer’s solution. The control Ringer’s solution that was tested had an osmolality of ~336 mmol/kg and 7.5 pH. In comparison, fecal extract was ~332 mmol/kg and 7.5 pH, and dietary extract was ~334 mmol/kg and 7.5 pH. These measurements indicate that the extracts did not substantially affect the osmolality or pH of the solutions.
 
-## Fecal RNA purification
+### Fecal RNA purification
 
 RNA was extracted from mouse feces by a standard phenol/chloroform protocol. Then, 500 µL TRIzol (Fisher Scientific, 15596026) was added per 50 mg feces and homogenized using an RNase-free tube and plunger (Takara, 9791A). Also, 100 µL chloroform (Sigma-Aldrich) was then added per 500 µL TRIzol, vortexed vigorously followed by 3 min incubation at room temperature, and centrifuged at 12,000 rcf for 10 min at 4°C. The aqueous layer was transferred to a clean tube and the RNA was extracted using the miRNeasy kit (QIAGEN, 217004) following the manufacturer’s instructions. The RNA content of the samples was measured using a NanoDrop (Fisher Scientific, ND-2000), confirming an ~2.0 ratio of 260/280 nm absorbance. These purified RNA samples yielded ~300 ng/µL RNA, while RNA in the crude fecal extracts was below the detection range of the NanoDrop. The samples were separated on an agarose gel and examined for nucleic acid content. The purified fecal RNA manifested as a smear, ranging from short oligonucleotides tens of base pairs (bp) in size up to 300 bp (Figure 3C). To confirm that the samples were in fact RNA and not DNA, fecal extracts and purified fecal RNA were treated with 500 µg/mL RNase A (Fisher Scientific, EN0531) for 30 min at 37°C before running on an agarose gel (Figure 3C). The fecal RNA was then tested on Piezo1-transfected HEK293 cells at a final concentration of 10 µg/mL, which was the same concentration used in the Sugisawa study (Figure 3D).
 
 Additionally, fecal RNA was purified using the same methodology and NucleoSpin TriPrep kit (Macherey-Nagel, 740966.10) as in the Sugisawa study, following the manufacturer’s instructions. Then, 350 µL buffer RP1 was added per 50 mg feces, and the samples were homogenized using an RNase-free tube and plunger (Takara, 9791A) and vortexed for 5 s. A wide-bore pipette was then used to transfer the samples to a NucleoSpin filter, and the RNA was washed and extracted following the TriPrep protocol. RNA concentration was 100–200 ng/µL, and the purity was confirmed by an ~2.0 ratio of 260/280 nm absorbance via NanoDrop. Applying these purified fecal RNA samples at a final concentration of 10 µg/mL did not elicit calcium influx in Piezo1-transfected HEK293 cells.
 
-## Single-nuclei RNA sequencing
+### Single-nuclei RNA sequencing
 
 RIN14B cells were put on ice, washed with chilled PBS, and then lysed with chilled Nuclei EZ lysis buffer (Sigma-Aldrich, NUC-101). Single cells were isolated with a 40 µm filter and pelleted in a centrifuge for 8 min, 800 rcf, 4°C. The nuclei were resuspended using PBS with 1% BSA and counted using a hemocytometer with trypan blue viability dye. The nuclei were centrifuged and resuspended at an appropriate volume for the 10X Chromium system (10X Genomics). The nuclei were counted once more to check the number and quality before proceeding with 10X Chromium processing and library construction as per the manufacturer’s instructions. Next Gen sequencing with a Chromium V2 chemistry was carried out on an Illumina NextSeq 500. Illumina NextSeq 500 pre-mRNA sequencing data were aligned to the Rattus norvegicus genome using CellRanger. The data were then analyzed with Seurat V3.0 as described previously (Butler et al., 2018).
 
-## Statistical analysis
+### Statistical analysis
 
 All data were first tested for normality using the Shapiro–Wilk test. Normally distributed data were analyzed by one-way ANOVA with Bonferroni multiple-comparisons correction, and non-normally distributed data were analyzed by Kruskal–Wallis test with Dunn’s multiple-comparisons correction. Statistical significance was determined by a p-value<0.05. The degree of statistical significance is indicated in each figure legend using asterisks. One cell equals one biological replicate for calcium imaging and electrophysiology experiments. The n number of biological replicates for each condition are representative of at least three separately run experiments. The n and error bar definitions are reported in each figure legend. No power analyses were done to determine sample sizes a priori, but our sample sizes adhere to those reported in similar previous studies (Sugisawa et al., 2020). All graphing and statistical testing was performed using GraphPad 8.0 software (Prism), and figures were assembled using Adobe Illustrator 2021.

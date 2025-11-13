@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04xpsrn94 Institute of Molecular and Cell Biology Singapore Singapore
-2. https://ror.org/0494jpz02 Centre de Recherche en Cancérologie de Marseille, Aix Marseille Université, Inserm, CNRS, Institut Paoli-Calmettes, Equipe Leader Fondation ARC 2021 Marseille France
+1. Institute of Molecular and Cell Biology Singapore Singapore ([ROR:04xpsrn94](https://ror.org/04xpsrn94))
+2. Centre de Recherche en Cancérologie de Marseille, Aix Marseille Université, Inserm, CNRS, Institut Paoli-Calmettes, Equipe Leader Fondation ARC 2021 Marseille France ([ROR:0494jpz02](https://ror.org/0494jpz02))
 3. Ipsen Bioinnovation London United Kingdom
 4. Ipsen Innovation Les Ulis France
 
@@ -45,17 +45,25 @@ In this study, we present a novel assay based on genetically modified human prog
 
 ## Results
 
-## ReD SNAPR: Neuronal cells expressing a BoNT/A reporter derived from SNAP25
+### ReD SNAPR: Neuronal cells expressing a BoNT/A reporter derived from SNAP25
 
 To establish a high-throughput assay for BoNT/A activity, we selected an abundant and consistent source of neuronal cells, the ReNcell VM, a v-myc-transformed human neuronal stem cell line. This cell line has the ability to differentiate into neurons in about two weeks after withdrawal of EGF and bFGF from the culture medium. Over this period, neurites are formed and the neuronal markers, beta3-tubulin, and MAP2 increase significantly in differentiated cells (Figure 1—figure supplement 1A). In parallel, the low levels of the oligodendrocyte marker CNPase expressed in the stem cells are further diminished.
 
 To detect BoNT/A activity, we generated a chimeric reporter protein composed of SNAP25 flanked by the red fluorescent protein called tagRFP (tRFP) and the green fluorescent protein tagGFP (tGFP) at its N-terminus and C-terminus, respectively (Shaner et al., 2008). The construct was named SNAPR (SNAP25 tagged with RFP and GFP). Using lentiviral transduction, we generated ReNcell VM cells stably expressing SNAPR (Figure 1A). We coined this cell line Red-SNAPR for ReNcell-derived, expressing SNAPR. After BoNT/A cleaves the SNAP25 moiety at Q197R, the C-terminal tGFP-containing moiety is rapidly degraded while the rest of the construct is preserved (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92806/elife-92806-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the BoNT/A reporter construct, SNAPR. Representative images of ReNcell VM cell line, Red SNAPR, stably expressing SNAPR and incubated with 100 nM BoNT/A for 48 hr. (B) Western blot of cell lysates from (A) probed with tRFP and tGFP antibodies. (C) Schematic diagram of the BoNT/A intoxication assay. (D) Red SNAPR differentiated in normal or ReDS medium, then incubated with 0, 10, and 100 nM BoNT/A for 48 hr. (E) Quantification of EC50 dose response of BoNT/A in ReD SNAPR cells incubated with 0–100 nM BoNT/A in normal and ReDS medium using GFP/RFP ratio readout. Mean + SEM with n = 3 experiments with at least 200 cells from each experiment. (F) Western blot of cell lysates from (D) probed with tRFP and tGFP antibodies. Scale bars 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92806/elife-92806-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ReNcell VM differentiated for 2 weeks with staining for nuclei (in blue) and neuronal markers b3-tubulin MAP2 (green) and for oligodendrocyte marker CNPase (2',3'-Cyclic-Nucleotide3'-Phosphodiesterase). Scale bars 20 μm. (B) ReD SNAPR cell line differentiated for 2 weeks with staining of b3-tubulin (white). Expression of SNAPR construct is detected in the RFP and GFP channels. Scale bars 50 μm. (C) Undifferentiated and differentiated ReNcell VM transfected with siNT3 (Non Targeting 3) siRNA or siRNA against thioredoxin reductase 1 (TXNRD1) for 3 and 5 days showing persistent TXNRD1 protein depletion. Scale bars 50 μm. (D) Undifferentiated and differentiated ReD SNAPR cells transfected with siNT3 or SNAP25 siRNA for 3 and 5 days showing reduction of the SNAPR reporter. Scale bars 20 μm. Mean + SEM with n = 3 experiments with at least 200 cells from each experiment.
+
 After incubation with 100 nM BoNT/A for 48 hr, tGFP fluorescence was noticeably diminished compared to tRFP, whose signal remains stable. By western blot, a ~75 kDa SNAPR construct was detected by both tRFP and tGFP antibodies, and cleaved to a 50 kDa product only detected by the tRFP antibody, while the expected ~25 kDa tGFP fragment was undetectable (Figure 1B). This stable cell line has unaltered differentiation potential (Figure 1—figure supplement 1B).
 
 To test whether BoNT/A intoxication was dependent on neuronal activity, we used the neurotrophic factors GDNF and BDNF to enhance neuronal differentiation. We further supplemented the medium with high salt (KCl and CaCl) for neuronal stimulation (Harper et al., 2011; Pellett et al., 2015a). This differentiation and stimulation media (ReDS media) resulted in an improvement of sensitivity by an order of magnitude in the imaging assay (Figure 1D and E). This increased sensitivity was confirmed by the western blot in which the EC50 of BoNT/A intoxication improved from 43 nM to 6 nM (Figure 1F). This strongly suggests that toxin binding and uptake occur at the level of active synapses, as is the case in vivo.
 
-## BoNT/A activity is first detected in the soma of neurons
+### BoNT/A activity is first detected in the soma of neurons
 
 During the initial experiments, we noticed that optimal degradation of the reporter required 48 hr after adding the toxin. This delay was surprising considering the model of rapid translocation after internalization. As the reporter allows live detection of BoNT/A proteolytic activity, we were curious to observe the distribution of BoNT/A activity within the neurons over time. We thus imaged cells at 24, 48, and 72 hr after intoxication. To facilitate the imaging of individual neurites, a co-culture of Red-SNAPR to ReNcell VM cells (1:4 ratio) was implemented (Figure 2A). Surprisingly, at 24 hr. there was no loss of GFP signal in the terminal part of neurites but visible degradation at the neurite hillock. At 36 hr, tGFP degradation progressed towards the axon terminals and most of the tGFP signal was eliminated by 48 hr. The pattern suggests a slow distribution of BoNT/A from the cell body to the terminus of axons (i.e. ~16 µm/hr) (Figure 2B).
 
@@ -63,7 +71,7 @@ During the initial experiments, we noticed that optimal degradation of the repor
 
 **Figure 2.:** (A) Red SNAPR cells co-cultivated at ¼ with ¾ of unlabeled Ren-VM were imaged for 48 hr the after addition of BoNT/A. The GFP color-coded intensity signal is displayed in the second column. (B) Quantification of GFP/RFP signal along the length of individual neurites (Axon 1, 2, 3) at various time points. (C) Schematic diagram of split-mNG (NeonGreen Fluorescent Protein) detection system, consisting of ReNcell VM expressing cytosolic mNG1-10 and mNG11-tagged BoNT/A. Fluorescence occurs after binding of mNG11-tagged BoNT/A to mNG1-10. (D) Time-course of fluorescence reconstitution after exposure to mNG11-tagged BoNT/A and quantification of Mean Fluorescence Intensity in the soma and neurites of cells. Scale bars 20 μm. Mean + SEM with n = 3 experiments with at least 20 cells from each experiment.
 
-## BoNT/A protein is also detected first in neuronal soma
+### BoNT/A protein is also detected first in neuronal soma
 
 SNAPR reports on BoNT activity and it is conceivable that BoNT/A might not be active immediately after translocation, thus potentially affecting the spatiotemporal pattern of proteolytic activity. To directly detect BoNT protein in the cytosol, we generated a ReNcell VM cell line expressing an HA-tagged split monomeric NeonGreen (mNG) protein targeted to the cytosol (Cyt-mNG1-10) (Feng et al., 2017). We verified that Cyt-mNG1-10 was expressed using the HA tag, the expression was homogeneously distributed in differentiated neurons and we observed no mNG signal (Figure 2C). We also generated and produced the complementary mNG11 fused to BoNT/A (BoNT/A-mNG11) with three beta-strands of mNG in tandem (Figure 2C).
 
@@ -71,7 +79,7 @@ We next imaged the neurons after different intoxication times (Figure 2D). After
 
 Altogether, the data indicates that BoNT/A translocates into the cytosol at the level of the soma. Based on the dependency of the toxin on neuronal activity and current knowledge of BoNT/A receptors, it is likely that BoNT/A is internalized at the tip of neurites, where synapses form. Thus, the data would suggest that BoNT/A requires retrograde trafficking before it can translocate.
 
-## A genome-wide RNAi screen reveals numerous positive and negative regulators of BoNT intoxication
+### A genome-wide RNAi screen reveals numerous positive and negative regulators of BoNT intoxication
 
 To elucidate the molecular mechanisms required for BoNT/A intoxication and understand the surprising pattern of appearance, we decided to systematically survey the genes required for BoNT/A translocation.
 
@@ -79,13 +87,21 @@ We first optimized the liposome-mediated delivery of siRNA in the Red-SNAPR cell
 
 As neurons cannot be passaged after differentiation, a forward siRNA transfection pipeline was developed (Figure 3A). The genome-wide screen was carried out in duplicate using pools of 4 siRNAs per gene and targeting 21,121 human genes in total. Differentiated Red-SNAPR cells on laminin-coated 384-well imaging plates were incubated with siRNA complexes for 3 days and intoxicated with BoNT/A for 2 days before imaging. The positive control siTXNRD1 rescued the tGFP signal reproducibly (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92806/elife-92806-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic diagram of assay pipeline. (B) Cells treated with non-targeting control siRNA (siNT3) and positive control siRNA (siTXNRD1), then incubated with BoNT/A for 48 hr. Cells were stained with DAPI and TXNRD1 antibody post-fixation. Scale bars 50 μm. (C) ScreenSifter Z-score analysis of GFP/RFP ratio index of whole genome siRNA library plates. (D) R-squared analysis of both genome-wide RNAi screen replicates. Blue dots = No toxin control, Red dots = Toxin control, Green dots = Positive control (siTXNRD1). (E) Descending Z-score of control-normalized and averaged GFP/RFP ratio of genome-wide screen to determine cut-off values of +1.5 for positive regulators and –3 for negative regulators (Column ‘Zscore_Log10_CtrlNorm’ in Figure 3—source data 1). (F) Chronological order of genome-wide control-normalized screen reflecting the positive regulators (red) and negative regulators (blue) derived from (E).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92806/elife-92806-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Genome-wide siRNA library plate replicates (Exp1 and Exp2) from Figure 2C (B) Individual replicates from Figure 2D. (C) Averaged nuclei count for each siRNA, 289 genes result in cell number below the cut-off of 4000 nuclei per well. Gene targets of siRNA most affecting cell survival are annotated in the graph. (D) The 289 genes from C are over-imposed on the SNAPR reporter results, 80 genes fall within the positive regulators and 8 genes with the negative regulators. All 88 genes were excluded from further analysis (E) Targeted siRNA deconvolution screen with positive and negative hits and siRNA control either non-toxin treated (NT3-) or toxin-treated (NT3+). Positive controls (TXNRD1+) replicates. The GFP/RFP threshold was set at 1.9 for positive regulators and 1.0 for negative regulators. Green data points are individual siRNAs that do not pass the threshold and do not confirm the pool result. Averaged GFP/RFP ratio for genes below or above threshold lines for positive and negative regulators that were removed from the hit lists. (F) RNA sequencing data from ReD SNAPR cells represented as log2CPM (counts per million) with an exclusion threshold set at CPM = 0.25 (log2CPM = –2, genes below are deemed as unexpressed).
+
 We analyzed the two replicates of the whole genome-wide screen using the ScreenSifter software (Kumar et al., 2013; Figure 3—figure supplement 1A). The data was converted to average plate Z-score, revealing low plate-to-plate variations (Figure 3C). The controls such as the BoNT/A-treated, siNT3 (NT3+), non BoNT/A-treated siNT3 (NT3-) and BoNT/A-treated, siTXNRD1 (TXNRD +in figure) were tightly grouped (Figure 3D). The assay had a robust Z-factor of 0.81. The two replicates were correlated with an R-value of 0.74. Genome-wide plots for individual replicates are shown in Figure 3—figure supplement 1B. The tight clustering of the controls demonstrates high reproducibility between experiments. The data was ranked to establish cut-offs for hits selection (Figure 3E).
 
 Most hits (363) were genes required for BoNT/A intoxication (red dots); interestingly a significant fraction of hits (76) resulted in enhanced intoxication (blue dots) (Figure 3F). Many of the positive regulators resulted in higher rescue than the siTXNRD1 control, suggesting that previously unidentified molecular processes are critical for BoNT/A intoxication.
 
 To exclude potential indirect effects, we first used nuclei counts and identified 289 genes that significantly affect neuronal survival (Figure 3—figure supplement 1C). 80 positive and eight negative genes were sifted out of the hit list (Figure 3—figure supplement 1D). Next, we carried out a duplicate deconvoluted siRNA screen on the hit list to exclude potential off-target siRNAs (Jackson and Linsley, 2010; Figure 3—figure supplement 1E). Using this approach, 35 genes could not be confirmed by two independent siRNAs and thus were sifted out. To ensure the hit list only contains genes significantly expressed in neurons, we carried out RNA sequencing analysis on differentiated Red SNAPR cells (Figure 3—figure supplement 1F). A cut-off threshold of counts-per-million (CPM) at 0.25 (log2CPM = –2) was used (gray bars) and 31 more genes (18 positive, 13 negative) were excluded.
 
-## The surface expression of BoNT/A receptor, SV2, is highly regulated
+### The surface expression of BoNT/A receptor, SV2, is highly regulated
 
 We next focused on genes influencing BoNT/A cell surface binding by studying the surface expression of SV2, the BoNT/A receptor. We incubated fixed and non-permeabilized cells with an antibody against the extracellular domain of SV2A to quantify cell surface exposure (Figure 4A). Depletion of VAMP2, a known regulator of synaptic vesicle fusion and SV2 trafficking (Pennuto et al., 2003), resulted in a 60% reduction of surface SV2 levels relative to non-targeting control (siNT3) (Figure 4B). By contrast, siTXNRD1 did not affect the SV2 surface signal (Figure 4B).
 
@@ -97,9 +113,17 @@ We screened a library of hits identified in Figure 3F and identified 105 genes t
 
 For instance, the depletion of the clathrin light chain (siCTLC), a known regulator of endocytosis, increased the surface staining of SV2 (Yao et al., 2010). By contrast, the depletion of Rab11b decreased surface SV2 which could be due to a block in the recycling of SV2 from endosomes to the cell surface (Giorgini and Steinert, 2013). Using STRINGS analysis on ‘surface SV2 repressors’, we identified a closely associated network of genes related to clathrin-mediated endocytosis such as AP2M1, CTLC, and TDRD1. In addition, distinct subunits of the V-ATPase were identified which can function as adaptins to facilitate endocytosis (Geyer et al., 2002; Figure 4D). The majority of the surface SV2 enhancers are associated with G-protein signaling, which controls neuronal excitation (Figure 4E). This agrees with earlier findings (Figure 1D) where increased neuronal activity favors intoxication as observed when K+/Ca+ are spiked in the medium. Endocytic signaling and membrane trafficking gene families such as Rabs, Arfs, and SNAREs were also revealed, congruent with a role in SV2 exocytosis (Figure 4E).
 
-## Network analysis reveals regulators of signaling, membrane trafficking and thioreductase redox state involved in BoNT/A intoxication
+### Network analysis reveals regulators of signaling, membrane trafficking and thioreductase redox state involved in BoNT/A intoxication
 
 Among the positive regulators of the screen, 135 hits did not influence significantly surface SV2 levels and are thus likely to function in post-endocytic processes (Supplementary file 2). However, we cannot formally exclude that they could affect the binding of BoNT/A to the cell surface independently of SV2. 92 positive regulators (required for intoxication, in red) and 43 negative regulators (reducing intoxication, blue) were mapped to their intracellular localities (Figure 5A). Several gene products were localized to endosomes and 16 were associated with the Golgi and ER. At the Golgi, one hit was the glycosylation enzyme B4GALT4, known to be involved in the biosynthesis of the ganglioside co-receptor of BoNT/A, GT1b. Using the STRING database, a protein-protein interaction network of hits was generated (Figure 5B; Szklarczyk et al., 2021). A subnetwork was constituted of heat-shock protein (HSP) chaperones of the HSP70 family (HSPA4 and HSPA14). Another chaperone, HSP90, has been linked to the translocation of the clostridial toxins C2 toxin and BoNT/A into the cytosol (Azarnia Tehran et al., 2017; Haug et al., 2003). As HSP90 and HSP70 act in a sequential cascade for protein folding (Genest et al., 2019), our results suggest that such a chaperone cascade might help BoNT/A LC refold in the cytosol after translocation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92806/elife-92806-fig5-v1.jpg)
+
+**Figure 5.:** (A) Summary diagram of all positive and negative hits mapped to their intracellular localities. (B) STRINGS network analysis of connected hits (non-connected hits are excluded). Associated genes tied to respective cellular molecular complexes/processes are bounded and annotated. ScreenSifter analysis revealed (C) Src-associated genes (D) TXNRD1-associated genes (E) Translocon-associated genes (F) Retromer-associated genes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92806/elife-92806-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cellular component (B) Molecular function (C) Biological Processes.
 
 A large subnetwork of signaling and GPCR-related genes was identified, centered on the SRC tyrosine kinase (Figure 5B). Depletion of SRC resulted in one of the most stringent intoxication blocks (Figure 5C). Interestingly, the tyrosine phosphatase PTPN6 was also one of the strongest negative regulators (Chong and Maiese, 2007; Figure 5C). It has been proposed that SRC directly phosphorylates and regulates the BoNT LC catalytic domain (Ferrer-Montiel et al., 1996; Ibañez et al., 2004; Kiris et al., 2015). On the other hand, SRC and its partners are crucial for retrograde membrane trafficking and might influence post-endocytic BoNT/A trafficking (Chia et al., 2021; Sandilands and Frame, 2008). The screen identified TXNRD1, consistent with previous literature, but also several genes involved in thioredoxin reduction, including Methionine sulfoxide reductase A (MsrA), Thioredoxin domain-containing protein 17 (TXNDC17), Nucleoredoxin (NXN) and Selenoprotein N (SEPN1) (Figure 5D). It suggests that these proteins either interact directly with BoNT/A or are required for TXNRD1 function.
 
@@ -107,7 +131,7 @@ A set of genes linked to the translocon (SEC61G, SEC61B, TRAM1, SERP1) were iden
 
 Interestingly, genes for the retromer were also identified, VPS35, VPS26A, SNX1, and SNX27, with a high level of enrichment in gene ontology analysis (Figure 5F, Figure 5—figure supplement 1B). These genes did not significantly affect surface SV2 levels. The retromer has been linked to endosomes to Golgi traffic, suggesting the toxin might need to traffic between these organelles.
 
-## Retro-axonal traffic of the BoNT/A receptor SV2 requires the retromer
+### Retro-axonal traffic of the BoNT/A receptor SV2 requires the retromer
 
 We next analyzed the effect of VPS35 depletion on the kinetics of BoNT/A-mNG11 arrival in the cytosol. The control siNT3-treated cells showed a progressive increase in signal from 12 to 48 hr, with a progressive appearance of signal in the neurites (Figure 6A). By contrast, siVPS35-treated cells only displayed some soma-localized signal after 48 hr (Figure 6A).
 
@@ -119,7 +143,7 @@ To test directly the trafficking of BoNT/A intracellularly proved difficult as t
 
 Next, we depleted cells of VPS35 and found that Dendra-SV2 accumulated in bulbous structures at the neurite tips. To quantify this phenomenon, we compared the number and size of SV2 puncta in neurites in control and siVPS35-treated cells. Using ImageJ to threshold and select for particles of interest, we measured the number of particles along every 50 μm segment of the neurite, starting from the neurite tips (Figure 6C). In control cells, SV2 punctas were homogeneously spread throughout the neurites. However, in VPS35-depleted cells, SV2 punctas were enriched at the neurite tip (1–50 μm) and were significantly reduced with the rest of the neurite (Figure 6D). These puncta were also much larger than in control cells. This evidence indicates that SV2 is trafficked retro-axonally in a retromer-dependent fashion, thus consistent with the notion of BoNT/A retrogradaly to the neuronal body bound to its receptor.
 
-## BoNT/A trafficks through the Golgi apparatus
+### BoNT/A trafficks through the Golgi apparatus
 
 The implication of the retromer suggested that BoNT/A transits through the Golgi apparatus. To test this hypothesis, we sought a method to detect BoNT/A in different intracellular compartments. We decided to exploit the split-monomeric Neon Green (mNG) fluorescence reconstitution approach (Luong et al., 2020). This approach relies on having the 10 beta strands of Neon Green fluorescent protein (mNG1-10) and the 11th beta-strand in different proteins. When the two proteins can interact, fluorescence is reconstituted. We generated a ReNcell VM cell line stably expressing mNG1-10 fused with an HA tag and a fragment of β1,4-galactosyltransferase 1 for targeting to the Golgi (Golgi-mNG1-10) (Luong et al., 2020; Figure 7A). We verified by immunofluorescence that the construct was strictly localized at the Golgi by the HA antibody staining and that no GFP fluorescence was detectable (Figure 7B).
 
@@ -129,7 +153,7 @@ The implication of the retromer suggested that BoNT/A transits through the Golgi
 
 Upon incubation for 48 hr with BoNT/A-mNG11, we observed reconstitution of mNG fluorescence at the Golgi (Figure 7B). In addition, there was mNG fluorescence in the cell soma with a reticulated pattern, which could correspond to the ER. Interestingly, the HA pattern was also partially looking like ER in these cells. Thus the reconstituted mNG was not only restricted to the Golgi, which could be due to retrograde trafficking after complementation. Nonetheless, the Golgi pattern clearly indicates that BoNT/A traverses this organelle before translocation. In ReNcell VM cells, the Golgi apparatus is located almost exclusively in the soma of neurons.
 
-## BoNT/A trafficks to the ER and translocates through the Sec61 complex
+### BoNT/A trafficks to the ER and translocates through the Sec61 complex
 
 To test whether BoNT/A can reach the ER, we next developed a chimera of mNG1-10 localized to the ER, based on the soluble, ER-resident BiP protein (ER-mNG1-10) (Luong et al., 2020). As for the Golgi construct, there was no fluorescence in the absence of BoNT/A and the construct had the typical pattern of an ER protein (Figure 7C). 48 hr after intoxication with BoNT/A-mNG11, we could detect mNG in the ER (Figure 7C). To further confirm that BoNT/A can reach a Sec61-enriched compartment, we also developed ReNcell VM cell lines stably expressing a split-mNG1-10 construct fused with the transmembrane protein Sec61G (Figure 7A). As for the BiP-based construct, the Sec61 staining pattern before the addition of the toxin was consistent with the ER. After intoxication, the reconstituted mNG fluorescence had a typical ER pattern (Figure 7D). Quantification of fluorescence per cell confirmed that the three reporters were equally accessible to BoNT/A, indicating that the toxin traffics through the Golgi and ER in neurons (Figure 7E).
 
@@ -171,7 +195,7 @@ By contrast, our model proposes a mechanism without a thermodynamic problem, is 
 
 ## Materials and methods
 
-## Material availability and commercial reagents
+### Material availability and commercial reagents
 
 The reagents used in this study are summarized in Figure 9A. BoNT/A was synthesized by IPSEN scientists as previously described (Stancombe et al., 2012). The cell lines and DNA constructs are available from IMCB (@ F. Tay) upon request.
 
@@ -179,36 +203,36 @@ The reagents used in this study are summarized in Figure 9A. BoNT/A was synthesi
 
 **Figure 9.:** (A) Reagents used in this study. (B) Genetic constructs used in this study.
 
-## Constructs
+### Constructs
 
 Constructs used in this study are depicted in Figure 9B and were generated using gene synthesis and cloned into the pDONR221 entry vector (GeneArt, Thermo Fisher Scientific). The entry clones were subcloned into pLenti6.3-V5 destination vectors using gateway LR cloning (ThermoFisher Scientific). In the split-mNG fluorescence reconstitution system, the first 10 β-barrel helices of monomeric Neon Green (mNG) are fused with or without target proteins while the last beta-strand is fused with the protein of interest. Interaction of the two partners will reconstitute fluorescence (Luong et al., 2020). BoNT/A-mNG11x3 was synthesized by the addition of 3 mNG11 tags flanked with GSGSG (Gly-Ser) linkers at the N-termini of BoNT/A. siGENOME Human siRNA libraries were purchased from Dharmacon (Horizon Discovery).
 
-## Cell lines
+### Cell lines
 
 ReNcellVM human neural progenitor cell line (Sigma Aldrich) was maintained in ReNcell NSC Maintenance medium supplemented with 20 ng/mL of epidermal growth factor, EGF and basic fibroblast growth factor, bFGF at 37 °C with 5% CO2. Cells were differentiated in differentiation medium (maintenance medium without EGF and bFGF); and addition of 10 ng/mL of both glial-derived nerve factor (GDNF) and brain-derived nerve factor (BDNF) for 2 weeks with a change of media every 3 days. Cells were seeded on culture flasks or plates precoated overnight at 4 °C with 20 ug/mL laminin in DPBS. The cells were subcultured approximately every 5 days (90% confluence) by detaching them with Accutase. Mycoplasma testing was conducted every other week to insure all experiments were conducted with mycoplasma-free cells.
 
-## Stable cell line generation
+### Stable cell line generation
 
 Stable cell lines were generated using ViraPower Lentiviral Packaging Mix together with the following lentiviral constructs containing SNAP25 were cotransfected into HEK293FT cells using Lipofectamine 3000 reagent. Following the incubation of cells, a supernatant containing lentivirus was harvested and cellular debris was removed by centrifugation. The virus was transduced in ReNcell VM with polybrene reagent (8 mg/ml) and removed after 24 hr. Fresh complete growth medium was added and transduced cells were sorted using fluorescence-activated cell sorting using tGFP signal and selected using 10 ug/mL blasticidin in maintenance medium.
 
-## High-throughput siRNA and BoNT/A intoxication screen assay
+### High-throughput siRNA and BoNT/A intoxication screen assay
 
 The siRNA library was spotted in 384-well black μClear plates (Greiner). siRNAs were transiently transfected at a final concentration of 25 nM per well using 0.25 μl Lipofectamine RNAiMAX reagent in 7.25 μl of OptiMEM medium, according to the manufacturer’s protocol. siNT3 (Non-targeting 3) was chosen as a control siRNA due to its least toxic properties in ReNcell VM. After 20 min of complex formation, complexes were dispensed to the differentiated cells per well using a Multidrop Combi dispenser (Thermo Fisher Scientific). Medium was removed at 72 hr post-transfection using Integra VIAFLO 384 (Integra Biosciences AG, Switzerland), and cells were washed with phosphate-buffered saline (PBS) twice before incubated with 6 nM BoNT/A in differentiation medium with 58 mM KCl and 2.2 mM CaCl2 for 48 hr. siRNA screening was performed in duplicate.
 
-## Immunofluoresence
+### Immunofluoresence
 
 After 48 hr of BoNT/A intoxication, cells were fixed with 4% paraformaldehyde and 2% sucrose in PBS for 30 min and permeabilized with 0.2% Triton X-100 for a further 10 min. The cells were then stained with primary antibody diluted in 2%FBS in PBS for 2 hr. Cells were subsequently washed three times for 5 min with 2%FBS in PBS and stained for 1 hr with a secondary antibody conjugated with fluorophore and Hoechst 33342 diluted in 2% FBS in PBS. The cells were then washed three times for 5 min with PBS before imaging. We tested the following antibodies to follow BonT intracellular trafficking: BoNT/A LC polyclonal: R&D Systems (AF44839), BoNT/A LC monoclonal: R&D systems (MAB4489), BoNT/A polyclonal: Novus (G20717), and BoNT/A monoclonal: abcam (ab40786). Unfortunately, we were not able to obtain satisfactory staining with any of these reagents.
 
-## Imaging and image analysis
+### Imaging and image analysis
 
 High-throughput imaging was carried out using an automation-enabled Opera Phenix system with a 20 X objective (Revvity). GFP, RFP, and Hoechst channels were imaged and image analysis was done using Harmony and Columbus software (Revvity). In brief, nuclei counts were generated using the Hoechst channel while cell masks were obtained using the RFP channel. The nucleus region was excluded from the RFP cell mask to derive the cytoplasm region. The GFP Mean Fluorescent Intensity (MFI) was measured in the cytoplasm region and the ratio of GFP: RFP MFIs was calculated using Formula Output (A/B).
 
-## Data formatting and normalization
+### Data formatting and normalization
 
 Genome-wide RNAi screen data was imported from Columbus software and analyzed in ScreenSifter software as previously described (Kumar et al., 2013). GFP/RFP ratio was normalized to controls and Z-score graphs were plotted (Figure 3—source data 1).
 
-## Statistical analysis
+### Statistical analysis
 
-## Western blot analysis
+#### Western blot analysis
 
 Rencell VM cells were transfected with siRNAs in a 10 cm dish for 3 days. On the third day, Cells were washed twice using ice-cold PBS before scraping in PBS. Cells were centrifuged at 300 g for 5 min at 4 °C and were lysed with ice-cold lysis buffer (50 mM Tris [pH 8.0, 4 °C], 200 mM NaCl), 0.5% NP-40 alternative, 1 mM DTT, and Complete Protease Inhibitor (Roche) for 30 min with gradual agitation before clarification of samples by centrifugation at 10,000 g for 10 min at 4 °C. Samples were diluted in lysis buffer with 2 X SDS loading buffer and boiled at 95 °C for 2 min. They were then resolved by SDS-PAGE electrophoresis using bis-tris NuPage gels as per manufacturer’s instructions (Invitrogen) and transferred to PVDF membranes which was blocked using 3% BSA dissolved in TBST (50 mM Tris [pH8.0, 4 °C], 150 mM NaCl, and 0.1% Tween 20) at room temperature for 1 hr before incubation with antibodies as manufacturer’s instructions.

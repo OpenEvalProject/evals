@@ -16,12 +16,12 @@
 
 ### Affiliations
 
-1. https://ror.org/042nb2s44 Picower Institute of Learning and Memory, Massachusetts Institute of Technology Cambridge United States
-2. https://ror.org/03xjacd83 Department of Neuroscience, Cleveland Clinic Lerner Research Institute Cleveland United States
-3. https://ror.org/042nb2s44 Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology Cambridge United States
-4. https://ror.org/00t33hh48 School of Biomedical Sciences, The Chinese University of Hong Kong Hong Kong China
-5. https://ror.org/00b30xv10 Department of Neuroscience and Mahoney Institute for Neurosciences, Institute for Regenerative Medicine, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-6. https://ror.org/042nb2s44 Deparment of Mechanical Engineering, Massachusetts Institute of Technology Cambridge United States
+1. Picower Institute of Learning and Memory, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+2. Department of Neuroscience, Cleveland Clinic Lerner Research Institute Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
+3. Department of Brain and Cognitive Sciences, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+4. School of Biomedical Sciences, The Chinese University of Hong Kong Hong Kong China ([ROR:00t33hh48](https://ror.org/00t33hh48))
+5. Department of Neuroscience and Mahoney Institute for Neurosciences, Institute for Regenerative Medicine, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+6. Deparment of Mechanical Engineering, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
 
 † Corresponding author
 
@@ -43,15 +43,59 @@ Here, we describe a custom-made three-photon microscope with optimized laser and
 
 ## Results
 
-## Optimized system for label-free THG imaging of intact cerebral organoids
+### Optimized system for label-free THG imaging of intact cerebral organoids
 
 We developed a three-photon microscope (Yildirim et al., 2019) and modified it (Figure 1A–C, see Materials and methods) to perform label free THG imaging of intact, uncleared, fixed and live organoids. Since low average laser power is essential for live cell imaging, we focused on optimizing laser and microscopy parameters to reduce the average power requirement for intact organoid imaging. First, we utilized moderate repetition rate (<1 MHz) to maximize the energy per pulse and reduce the average laser power requirement for THG imaging. Second, we minimized the pulse width on the sample by building an external pulse compressor. The pulse width on the sample was reduced to 27 fs in the deepest part of the organoids (see Materials and methods) enabling us to further reduce the average power requirement by two- to threefold compared to other three-photon studies in the literature (Yildirim et al., 2019; Ouzounov et al., 2017; Weisenburger et al., 2019; Figure 1—figure supplements 1 and 2). Finally, we designed all intermediate optics in the excitation and emission path to maximize the generation and collection efficiency of THG signal (Figure 1—figure supplement 3). This optical design procedure enabled us to reduce the spherical aberration in the system and increase the collected signal by twofold compared to off-the shelf optics (Ouzounov et al., 2017; Figure 1—figure supplement 4).
 
-## THG signals from intact cerebral organoids reveal distinct zones
+![Figure 1.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig1-v1.jpg)
+
+**Figure 1.:** (A) Femtosecond laser pulses from a pump laser (1045 nm) were pumped through a noncollinear optical parametric amplifier (NOPA) to obtain 1300 nm excitation wavelength. Power control of these laser pulses was performed using a combination of a half-wave plate (HWP) and polarizing cube beam splitter (PCBS). A quarter-wave plate (QWP) was used to control the polarization state of the laser pulses to maximize the third harmonic generation (THG) signal. Laser beams were scanned by a pair of galvanometric scanning mirrors (SM), and passed through a scan lens (SL) and a tube lens (TL) on the back aperture of a 1.05 NA, 25×objective. The sample (S) was placed on a two-axis motorized stage, while the objective (OL) was placed on a one-axis motorized stage for nonlinear imaging. Emitted light was collected by a dichroic mirror (CM1), collection optics (CO), laser blocking filters (BF), and nonlinear imaging filters (F) and corresponding collection optics (COA, COB, and COC) for each photomultiplier tube (PMT A, PMT B, and PMT C). (B) Fixed intact organoids were placed inside imaging chamber gaskets on top of the bottom glass. Gaskets were filled with Hprotos and covered with a cover glass. (C) Live organoids were placed on top of the bottom plate of the incubator. Imaging gaskets were placed to secure organoids and cell medium was applied to fill the gaskets. Top plate was placed on top of the gaskets and the microincubator closed with 6 screws. Cell medium mixed with 5% CO2, 5%O2, and balanced N2 was pumped to the chamber; incubator temperature was set to 37 °C.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The gaussian pulse width becomes 58 fs after travelling the whole organoid without chirping the pulse width further. (B) After chirping the pulse, we can bring back the pulse width to 27 fs after the laser exits from the whole organoid.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) A representative three-dimensional reconstruction of THG images of a fixed cerebral organoid. (B) Comparison of THG images with three different pulse widths corresponding to our current study (left column), our previous study (middle column), and Ouzounov et al., 2017 (right column) at two different depths (250 µm depth [top], 500 µm depth [bottom]). (C) Comparison of THG signals in the five different regions of interest in the same field of view in these three different studies at two different depths (250 µm [left], and 500 µm [right]). (D) Ratio of THG signal acquired between the current study and previous study or between the current study and ( Ouzounov et al., 2017) at two different depths (250 µm [left], and 500 µm [right]). Scale bar is 50 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic of the experimental setup modification. (B) Imaging of axonal tracts in the white matter via THG microscopy with one-inch size iris (left), and with two-inch size iris (right). (C) Ratio of THG signal acquired with two-inch size iris and with one-inch iris. Scale bar is 50 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) 3D rendering of 3 p imaging of retrobeads in a 200 µm column within deep cortex, spanning L6 and extending into L5 and the top of WM. Lateral and axial PSF profile for 200 µm above WM (B), 100 um above WM (C) and at the boundary of WM and L6 (D). Lateral and axial point spread function values are given in the inset of panels B, C, and D.
+
+### THG signals from intact cerebral organoids reveal distinct zones
 
 Cerebral organoids were derived from two pairs of isogenic iPSC clonal lines (see Materials and methods). One pair (Line 1) was produced as previously described (Mellios et al., 2011) from one individual with RTT harboring a heterozygous single nucleotide deletion (frameshift 705delG) in the transcriptional repression domain of MeCP2. Because of the monoallelic expression of X-chromosome genes and clonal selection of iPSCs, the ‘RTT-WT’ line expressed exclusively the wild-type allele of MECP2, while the “RTT-MT” line expressed exclusively the mutated allele. The second pair of isogenic iPSC clonal lines (Line 2), produced as previously described (Nott et al., 2016), was from another individual with RTT harboring a heterozygous single nucleotide mutation MECP2R306C located in the transcriptional repression domain (TRD) or more specifically NCoR/SMRT interaction domain (NID) of MeCP2, which selectively blocks its interaction with the NCoR/SMRT complex (Lyst and Bird, 2015; Lyst et al., 2013). Because the MECP2R306C-derived iPSCs had skewed X-inactivation, and expressed only the MECP2R306C allele, the MECP2R306C RTT-WT line was generated from the MECP2R306C iPSCs using CRISPR/Cas9-mediated gene editing to correct the R306C mutation (Nott et al., 2016).
 
 First, we established that cortex-like substructures could be distinguished in the organoids by cell density differences. In accordance with previous studies (Lancaster et al., 2013; Qian et al., 2016; Velasco et al., 2019), after 35 days of culture, the cerebral organoids demonstrated formation of well-organized structures composed of a ventricular zone (VZ)-like layer (KI67-positive proliferative cells) around a ventricle-like cavity and a surrounding cortical plate (CP)-like structure (Tuj1 or DCX-positive neurons) (Figure 2A–B, see details of the generation of organoids in Materials and methods). Notably, CP and VZ substructures demonstrated distinct cell density and morphology as shown by nuclear (7AAD) stain and plasma membrane specific dye (WGA) (Figure 2C). The VZ region, densely populated by neural progenitor cells and few immature neurons, could be markedly distinguished from the CP substructure with a less dense population of neurons. Thus, we subsequently used the cell density to localize the CP structures in three-photon fluorescence/THG imaging experiments.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig2-v1.jpg)
+
+**Figure 2.:** (A-B) Confocal imaging of immunolabeled 2D cerebral organoid slices where cerebral organoids present well-organized spherical structures located around ventricle-like cavities. Around these cavities the ventricular zone-like substructure (VZ), densely populated with progenitors (KI67 + cells) and young migrating neurons (TUJ1 + cells), can be distinguished from the cortical plate-like substructure (CP) with a less dense population of neurons (Line 1, TUJ1, DCX + cells). (C) Cortical plate and ventricular zone substructures presented distinct cell density and morphology (Line 2) as shown by nuclear (7AAD dye) and plasma membrane labeling (WGA dye). (D–E). Label-free THG imaging from intact fixed 3D cerebral organoids (Line 2) show distinct signals from the cortical plate and ventricular zone, as confirmed by the nuclear labeling (7AAD dye) observed with the same setting but using three-photon epifluorescence (3PEF). THG signal seems to occur at the plasma membranes in the VZ and to be brighter in the CP substructure. Scale bars are 100 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (Left) Virtual section of an intact organoid (line 1) where THG signal (white) is mostly populated in the cortical plate (CP)-like zone but not populated in the ventricular zone (VZ). (Right) Staining of the same field of view on the left shows that cells with high THG signal also possess DCX (yellow) signal. The dashed blue line represents the boundary between CP-like region and VZ region. Scale bar is 50 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) 3D reconstruction of label-free THG signal (blue) from an intact fixed organoid (line 1) show clear overlap with electroporated cells with GFP (green) as well as nuclear labeling (red). THG allows imaging of deep structures (here, till 2 mm). Representative images at depths of 776 µm (B) and 1670 µm (C) show that most of the fluorescent signal (green) from the electroporated cells overlapped with the label free intrinsic THG signal (blue) as well as with the nuclear labeling in both overlapped and inset views (D and E). Scale bars are 50 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) GFP signal overlap with THG and 7AAD signals with respect to depth of imaging in a wild-type organoid (line 1). (B) Overall overlap between GFP, THG, and 7AAD signals in a wild-type organoid. (C) GFP signal overlap with THG and 7AAD signals with respect to depth of imaging in a mutant organoid. (D) Overall overlap between GFP, THG, and 7AAD signals in a mutant organoid.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Time-lapse THG and GFP-positive images of representative migrating cells in the ventricular zone in a RTT-WT organoid. (B) Comparison between THG (left) and GFP-positive (middle) signals identified with three-photon epifluorescence (TPEF). THG and GFP-positive cells overlap (right, arrows). (C) Tracking speed over time of GFP-labeled neurons in mutant (RTT-MT) and control (RTT-WT) organoids. (D) Average speed of cells in control and mutant organoids. N=3 for both WT and MT organoids from Line 1. n=25 cells for WT, 30 for MT. Scale bar is 50 µm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) 23/25 GFP-positive cells have also THG signals in WT organoids (line 1). (B) 27/30 GFP-positive cells have also THG signals in MT organoids (line 1).
 
 Next, we demonstrated that high-resolution label-free THG signal could be collected from intact cerebral organoids. Nuclear stain was used as a control to localize the high cell density VZ from the low cell density CP (Figure 2D). Strikingly, THG imaging provided a clean delineation between VZ and CP as THG signal intensity was lower in the former area than the latter (Figure 2C–D). The intrinsic THG signal mostly arose distinctly from cell membranes. Consequently, the THG signal nicely revealed the typical radially elongated and bipolar radial glia cell morphology as well as the round-shaped somata of neurons (Figure 2D–E). Additionally, neurons in the CP and newborn neurons inside the VZ showed high intensity somatic signals (Figure 2D–E). Finally, we performed THG imaging of an intact organoid and then stained it with neuronal marker DCX. We were able to find the same field of view in our stained organoids and compare it with our THG imaging results (Figure 2—figure supplement 1). Our results confirmed that strong THG signal is mostly detected in the CP (DCX-rich, low cell density), rather than the VZ (DCX-negative, high cell density) (Figure 2—figure supplement 1).
 
@@ -59,17 +103,77 @@ To further validate that the intrinsic THG signal arose from neurons, we express
 
 Three-dimensional rendering of a~450-image z-stack with 2 µm increments revealed our system’s ability to perform high-resolution imaging (Figure 3—videos 1–2; Figure 3A–B, left). We performed depth-resolved imaging of a 250 × 250 × 900 µm3 region selected to include a cortex-like structure, centered around the ventricle-like cavity, for both RTT-WT (Figure 3A) and RTT-MT organoids (Figure 3B). The strong THG signal produced at the interface between an organoid’ssurface and the cover glass helped us determine boundaries of the intact organoids. Since our field of view (FOV) was 250 µm, serial imaging of multiple sites was necessary to delineate individual CP regions. Notably, we were able to collect high-resolution THG signal from the entire 900 µm-deep regions, highlighting the performance of three-photon fluorescence and THG detection for deep-tissue imaging, and in particular, intact uncleared whole organoid imaging. The maximum imaging depth was only limited by the working distance of the objective, which was approximately 2 mm in our experiments (Figure 3—video 3).
 
-## Label-free imaging of fixed cerebral organoids reveals differences between RTT and isogenic control organoids
+![Figure 3.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) 3D reconstruction of label-free THG signal from ventricular regions highlighted in Figure 2D–E. THG allows imaging of deep structures (here, till 900 µm). Scale bars represent 100 µm. (C–D) Characterization of the extinction lengths of a WT and a MT fixed organoid at 1300 nm excitation wavelength. Semi-logarithmic plot for ratio of PMT signal and cube of laser power with respect to imaging depth for third harmonic generation (THG) imaging. Slope of these curves result in 162.5 µm and 148.2 µm extinction lengths for the WT and MT fixed organoids, respectively. (E) Comparison of the extinction lengths of six WT and MT fixed organoids (Lines 1 and 2) at 1300 nm excitation wavelength. The average extinction length of wild-type (WT) organoids is significantly higher than that of mutant (MT) organoids (n=6 organoids, p<0.05, t-test, error bars are standard error of the mean [SEM]).
+
+### Label-free imaging of fixed cerebral organoids reveals differences between RTT and isogenic control organoids
 
 First, we characterized the extinction (combined scattering and absorption) lengths of WT and MT organoids. Our label-free THG imaging characterization shows that the extinction lengths of a fixed WT and a MT organoid are 162.5 µm and 148.2 µm, respectively which are approximately half of the extinction length of a primary visual cortex of an awake mouse brain (Yildirim et al., 2019; Yildirim et al., 2020; Figure 3C–D). In other words, fixed WT and MT organoids are at least two times more scattering than the mouse visual cortex at 1300 nm excitation wavelength. We also examined different WT and MT organoids for comparison (Figure 3E). Our results show that average extinction length of WT organoids (152.1±3.5 µm) is significantly higher than that of MT organoids (125.9±4.9 µm, p<0.005, n=6 organoids, t-test).
 
 To study the 3D organization of VZ structures in RTT-WT and RTT-MT organoids, depth-resolved serial imaging of whole organoids was performed automatically with a custom algorithm to reduce the total imaging duration (see Materials and methods). We acquired both 7AAD three-photon fluorescence and THG signal from RTT-WT (Figure 4A) and RTT-MT (Figure 4B) organoids. Then, we determined the boundaries of individual VZ structures using THG signal and rendered individual cortical regions in both RTT-WT (Figure 4A) and RTT-MT (Figure 4B) organoids (see Materials and methods, see Figure 4—video 1, see Figure 4—figure supplement 1). First, we quantified the total volume of each region of interest and found slightly (but not significantly) higher volumes in mutant organoids than in control ones (1.13±0.18 × 107 µm3 for RTT-WT, and 1.39±0.15 × 107 µm3 for RTT-MT organoids, p=0.3013; n=10 organoids, t-test; Figure 4C). However, the surface area of the VZ region in RTT-MT organoids was significantly higher than that in RTT-WT organoids (5.70±0.75 × 105 µm2 for RTT-WT, and 11.0±0.71 × 105 µm2 for RTT-MT organoids, p<0.0001; n=10 organoids, t-test; Figure 4C). In addition, the ratio of volume to area was used as a relative measure of the VZ thickness. The progenitor-rich structures in the RTT-MT organoids had significantly lower unit thickness relative to RTT-WT organoids (23.11±4.12 µm for RTT-WT, and 9.99±0.27 µm for RTT-MT organoids, p<0.0001, n=10 organoids, t-test; Figure 4C). Finally, the number of ventricles was significantly higher in RTT-MT organoids (12.3±0.7 for RTT-WT, and 22.0±1.3 for RTT-MT organoids, p<0.0001, n=10 organoids, t-test; Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig4-v1.jpg)
+
+**Figure 4.:** (A, B). THG signal acquired from the whole RTT-WT (A) and RTT-MT (B) organoids (Line 1) (left) was segmented into individual ventricular regions (right). (C) (left; top) RTT-MT organoids showed slightly higher VZ volume than those in RTT-WT organoids (1.13±0.18 × 107 µm3 for RTT-WT, and 1.39±0.15 × 107 µm3 for RTT-MT organoids, p=0.3013; n=10 organoids, t-test). (left; bottom) The surface area of the VZ region in RTT-MT organoids was significantly higher than that in RTT-WT organoids (5.70±0.75 × 105 µm2 for RTT-WT, and 11.0±0.71 × 105 µm2 for RTT-MT organoids, p<0.0001; n=10 organoids, t-test). (right; top) The VZ thickness (V/A ratio) in RTT-MT organoids was significantly lower than that in RTT-WT organoids (23.11±4.12 µm for RTT-WT, and 9.99±0.27 µm for RTT-MT organoids, p<0.0001, n=10 organoids, t-test). (right; bottom) The number of ventricles was significantly higher in RTT-MT organoids than that in RTT-WT organoids (12.3±0.7 for RTT-WT, and 22.0±1.3 for RTT-MT organoids, p<0.0001, n=10 organoids, t-test). The data are collected from two lines (Line 1 and Line 2, see Figure 4—figure supplements 2–5). Error bars are 90% of the confidence interval (CI).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** VZ area segmentation in opaque (A) and transparent (C) modes in control organoids (line 1). VZ area segmentation in opaque (B) and transparent (D) modes in mutant organoids (line 1).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The average volume of ventricles per organoid of WT and MT organoids in Line 1 are 1.07±0.25 × 107 µm3 and 1.43±0.20 × 107 µm3, respectively (n=5 organoids, p=0.3056, t-test). (B) The average volume of ventricles per organoid of WT and MT organoids in Line 2 are 1.19±0.28 × 107 µm3 and 1.36±0.22 × 107, respectively (n=5 organoids, p=0.6506, t-test).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) The average surface area of ventricles per organoid of WT and MT organoids in Line 1 are 6.01±1.13 × 105 µm2 and 11.5±1.02 × 105 µm2, respectively (n=5 organoids, p=0.0017, t-test). (B) The average volume of ventricles per organoid of WT and MT organoids in Line 2 are 5.39±0.98 × 105 µm2 and 10.6±1.0 × 105 µm2, respectively (n=5 organoids, p=0.0021, t-test).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) The average volume per unit area of ventricles per organoid of WT and MT organoids in Line 1 are 24.45±6.01 µm and 10.53±0.40 µm, respectively (n=5 organoids, p=0.0006, t-test). (B) The average volume of ventricles per organoid of WT and MT organoids in Line 2 are 21.76±5.68 µm and 9.45±0.37 µm, respectively (n=5 organoids, p=0.0013, t-test).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) The average number of ventricles per organoid of WT and MT organoids in Line 1 are 9.9±0.4 and 19.1±0.8, respectively (n=5 organoids, N=50 ventricles for WT and N=100 for MT organoids, p<0.0001, t-test). (B) The average number of ventricles per organoid of WT and MT organoids in Line 2 are 15.2±0.8 and 24.2±1.5, respectively (n=5 organoids, N=75 ventricles for WT and N=120 for MT organoids, p<0.0001, t-test).
+
 In summary, using label-free intrinsic THG imaging we show that RTT-MT organoids contain an increased number of VZ structures with larger surface area and volume, but lower VZ thickness, compared to RTT-WT organoids (values for each line separately are shown in Figure 4—figure supplements 2–5).
 
-## Label-free imaging of live cerebral organoids captures lower migration speed and displacement in RTT organoids
+### Label-free imaging of live cerebral organoids captures lower migration speed and displacement in RTT organoids
 
 Direct visualization and time-lapse characterization of neuronal migration dynamics with label-free methods have not been examined so far. Thus, we tracked migrating neurons in real time using THG microscopy. We performed live imaging of RTT-WT and RTT-MT organoids at 35 days in vitro (DIV) for 12–96 hr, with a volumetric acquisition interval of 20 min (Figure 5—figure supplement 1, see Materials and methods). Given the sparseness and high signal to noise ratio, we were able to track cells harboring a bright somatic THG signal in both RTT-WT and RTT-MT organoids (Figure 5A, see Figure 5—video 1Figure 5—videos 1; 2, see Materials and methods). Although the tracked cells in both RTT-WT and RTT-MT organoids migrated radially from the inner VZ to the outer VZ, RTT-MT cells showed decreased displacement, more tortuous trajectories, and reduced linear speed than RTT-WT cells (Figure 5B and C, also see Figure 6). Specifically, we observed in RTT-WT organoids an average migration speed of 23.4±0.2 µm/hr (n=6 organoids, N=208 cells). The average speed for each line was 20.5±0.1 µm/hr for Line 1 and 25.6±0.2 µm/hr for Line 2 (Figure 5—figure supplement 2). These average speed values are comparable to the speed recorded in neurons migrating off a human wild-type cerebral organoid onto a Matrigel-coated surface (Bershteyn et al., 2017) and in ferret cortical explants (Gertz and Kriegstein, 2015). In contrast, RTT-MT cells had a reduced average speed of 13.3±0.1 µm/hour (n=6 organoids, N=217 cells). The average speed for each line was 11.4±0.1 µm/hour for Line 1 and 14.5±0.1 µm/hr for Line 2 (Figure 5—figure supplement 2). Collectively, the average speed in WT organoids was significantly higher than the average speed in MT organoids (Figure 5C). In addition, we compared migration speeds of individual cells with respect to their location in each organoid as well as between organoids (Figure 5—figure supplement 3). In conclusion, we did not find any statistically significant difference in migration speeds of individual cells at different locations in the same organoid (Figure 5—figure supplement 3A-B) as well as between organoids of the same type (Figure 5—figure supplement 3C-D). We also quantified the straightness of trajectory by taking the ratio of displacement and total trajectory length. With a straightness value close to 1, RTT-WT cells (straightness value of 0.881±0.004) had significantly more straight trajectories than RTT-MT cells (0.658±0.006) which showed much more nonlinear migrating patterns (Figure 5A and C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative time-lapse THG images of migrating cells in the ventricular zone in RTT-WT (top) and RTT-MT (bottom) organoids (Line 1) in every 2 hr. The migrating trajectory of each representative cells is shown on the right panel to the time-lapse images. Color bar represents the instantaneous speed of these cells. (B) Representative track speed over time for cells in RTT-WT (left) and RTT-MT (right) organoids. (C) Summary of displacement, average migration speed and straightness of the migration trajectory (n=6 RTT-WT and 6 RTT-MT organoids, 200 cells for WT and 210 cells for MT. Scale bar is 50 µm. **, p<0.01; ***, p<0.001; ****, p<0.0001, t-test). Error bars are 90% of the confidence interval (CI).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) (Top) Long-term THG imaging of RTT-MT organoids (line 1) for 4 days. THG signal is acquired homogenously in an intact organoid. (Bottom) Long-term TPEF imaging of RTT-MT organoid for 4 days. TPEF signal is mostly confined to the periphery of the organoid. This signal is generated by labeling neurons through GFP electroporation. Scale bar is 1 mm. (B) Long term imaging of RTT-MT organoids in the field of view highlighted in blue square in part A. Four cells are highlighted with arrows in different colors. Dashed green lines represent the apical surfaces of the ventricular regions. Scale bar is 200 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The average speeds of WT and MT organoids in Line 1 are 20.5±0.1 µm/hour and 11.4±0.1 µm/hr, respectively (n=3 organoids, N=94 cells for WT and N=100 for MT organoids, p<0.0001, t-test). (B) The average speeds of WT and MT organoids in Line 2 are 25.6±0.2 µm/hr and 14.5±0.1 µm/hur, respectively (n=3 organoids, N=102 cells for WT and N=107 for MT organoids, p<0.0001, t-test).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Collective representation of migration speeds with respect to depth of imaging in WT organoids. (B) Collective representation of migration speeds with respect to depth of imaging in MT organoids. (C) Representation of migration speeds of each organoid with respect to depth of imaging in WT organoids. (D) Representation of migration speeds of each organoid with respect to depth of imaging in MT organoids. Organoids #1,#3, and #5 correspond to Line 1, and organoids #2, #4, and #6 correspond to Line 2.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) The straightness of the migration trajectory of WT and MT organoids in Line 1 are 0.826±0.004 and 0.577±0.005, respectively (n=3 organoids, N=94 cells for WT and N=100 for MT organoids, p<0.0001, t-test). (B) The straightness of the migration trajectory of WT and MT organoids in Line 2 are 0.921±0.004 and 0.711±0.005, respectively (n=3 organoids, N=102 cells for WT and N=107 for MT organoids, p<0.0001, t-test).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) The displacement of WT and MT organoids in Line 1 are 196.8±2.3 µm and 100.6±1.6 µm, respectively (n=3 organoids, N=94 cells for WT and N=100 for MT organoids, p<0.0001, t-test). (B) The displacement of WT and MT organoids in Line 2 are 277.7±3.2 µm and 155.4±1.9 µm, respectively (n=3 organoids, N=102 cells for WT and N=107 for MT organoids, p<0.0001, t-test).
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** (A) Representative images of a control (left) and an imaged (right) wild type organoids (line 1). (B) Representative images of a control (left) and an imaged (right) mutant type organoids. (C) Representative image of a 90-day-old organoid as a positive control which has significant Caspase3-positive cells (left) and quantification of percentage of Caspase3-positive cells in each condition (right). The 90-day-old organoid has high percentage of Caspase3-positive cells (>10%), whereas both control and imaged WT and MT organoids (0 hr and 18 hr, respectively) have low percentages of Caspase3 positive cells (<2%). Graphs represent mean +/-SEM.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig5-figsupp7-v1.jpg)
+
+**Figure 5—figure supplement 7.:** There is a 25–50% increase in the imaging depth for 40% (4/10) of all organoids that were imaged. Half of these organoids belong to Line 1 and other half to Line 2. We did not apply refractive index-matching gel to the remaining organoids (60%=6/10) that were imaged.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/78079/elife-78079-fig6-v1.jpg)
 
@@ -91,52 +195,52 @@ Our study demonstrates the promise of three-photon and label-free THG imaging fo
 
 ## Materials and methods
 
-## Custom microscope for three-photon and THG imaging
+### Custom microscope for three-photon and THG imaging
 
 To obtain an excitation wavelength of 1300 nm required for label-free THG imaging deep within intact organoids, ultrashort laser pulses (300 fs, 400 kHz,16W) at 1045 nm from a pump laser (Spirit, Spectra Physics) were sent to a noncollinear optical parametric amplifier (NOPA, Spectra Physics). In order to shorten the pulse width on the sample to maximize the generated THG signal, we built a two-prism based external compressor to prechirp the pulse before sending it to the microscope. The internal compressor in NOPA could compress the Gaussian pulse width to 22 fs (which was the transform limited pulse width for 110 nm spectral full width half maximum bandwidth). Due to the dispersion in the microscope, the Gaussian pulse width on the sample was ~250 fs. After dispersing the pulse with 65 cm long prism-pair, and silicon broadband window (Thorlabs, WG81050) the pulse width on the sample was reduced to 27 fs in the deepest part of the organoids (pulse widths <30 fs obtained, to our knowledge, for the first time). To measure the pulse width inside the organoids, we placed a live organoid (<1 mm thickness) on the external sensor of the autocorrelator (CARPE). Then, we measured the pulse width of the laser after it exits from the thick organoid. In addition, we built a delay line to double the repetition rate thereby increasing the frame rate of THG imaging. Subsequently, the frame rate at 512 × 512 pixel resolution was increased up to 2 Hz. Power control was performed with a combination of half-wave plate (AHWP05M-1600, Thorlabs) and low-GDD ultrafast beamsplitter (UFBS2080, Thorlabs) with 100:1 extinction ratio. The laser beams were scanned by a pair of galvonometric mirrors (6215 H, Cambridge Technologies) to image the laser spot on the back aperture of the objective using a pair of custom-designed scan and tube lenses. A pair of collection lenses for three photon-multiplying tubes (PMT) collected the emitted signal from the cerebral organoids. To maximize the signal detected in PMTs, optics in both excitation and emission paths were optimized considering the objective lens using Zemax software. Fluorescent signals from immunostaining labels (7AAD) were detected using GaAsP photomultiplier tubes (H7422A-40, Hamamatsu, Japan) and a bandpass filter (Semrock, 650/70 nm), and THG signal was detected using bialkali (BA) photomultiplier tube (R7600U-200) and a narrow-bandwidth bandpass filter (430/20 nm). A custom designed objective lens (25 x, 1.05 N.A., Olympus) was used. Automated image acquisition, control of scanners, and sample stage were carried out using ScanImage (Vidrio) (Pologruto et al., 2003). Imaged cells were located at a depth of 0–2000 μm below the surface of cerebral organoids. The images were taken with 2 µm and 5 µm axial increments in fixed and live organoids, respectively. In live cell imaging, we acquired 50–100 z-stack images to make a volumetric acquisition. This volumetric imaging took approximately 3–6 min and we repeated it every 20 min. Laser power ranged from 0.5 to 5 mW at the sample depending on depth and fluorescence expression levels. Both fixed and live organoids were placed on a two-axis motorized stage (MMBP, Scientifica) and the objective lens was placed on a single-axis motorized stage (MMBP, Scientifica) to move it in the axial direction.
 
-## Methods for fixed and live organoid imaging
+### Methods for fixed and live organoid imaging
 
 For fixed organoid imaging, five-week-old cerebral organoids were placed into an imaging chamber gasket (C18161, ThermoFisher) filled with index-matching medium Hprotos (Murray et al., 2015). Top and bottom parts of the imaging chamber gasket were sandwiched between a glass slide (48311–703, VWR) and a cover glass (48366–227, VWR) (Figure 1B). To perform whole fixed organoid imaging, automatic serial imaging of multiple sites was performed via determining the coordinates of four corners of the entire field of view. A Matlab-based algorithm moved the stage in the required x and y axis locations to image the full field of view and then moved the focal plane in the z direction.
 
 For live organoid imaging, we increased the imaging field of view from 250 µm to 320 µm. The 5-week-old live organoids were placed in a microincubator (RC-30, Warner Instruments). The microincubator temperature was controlled and maintained at 37 °C with a pair of resistive heater elements. A peristaltic pump was connected to the microincubator to provide continuous flow of cell medium supplemented with 5% CO2, 5%O2, and balanced N2 (Airgas) (Figure 1C). We performed Caspase3 immunostaining to check whether our imaging system induced any significant cell death. Compared with healthy and not-imaged organoids, the organoids which were imaged up to 18 hr in our imaging system did not show any increased cell death (Figure 5—figure supplement 6).
 
-## iPSC generation and colony maintenance
+### iPSC generation and colony maintenance
 
 Induced pluripotent stem cells (iPSC) were reprogrammed from Rett Syndrome patient samples obtained from the Coriell cell line repository (Mellios et al., 2011; Nott et al., 2016). These lines were derived from: (1) a patient carrying a MECP2 V247X mutation (Coriell Institute biobank GM07982); (2) a patient with MECP2 R306C mutation (Coriell Institute biobank GM23298). All iPSC lines were primarily and routinely quality-controlled by karyotyping (G-band), mycoplasma testing and pluripotency testing (initially by teratoma test then routinely by immunostaining for pluripotency markers such as Sox2 and Oct4). We examined allele-specific transcription of the MECP2 gene in all the iPSC lines by performing RNA extraction, reverse transcription, PCR and Sanger sequencing of the amplified fragments. In all lines we were able to detect transcription of either the wildtype or the mutant alleles of the MECP2 gene, but not both, confirming the clonality and X inactivation status. We confirmed that the X inactivation profile is maintained at all stages of the organoid differentiation. Cell culture quality check and authentication were performed every ten iPSC passages. iPSC colonies were grown in iPSC media, consisting of 20% Knock-out Serum Replacement (KOSR) (Invitrogen), 1% penicillin/streptomycin (Invitrogen), 1% non-essential amino acids (Invitrogen), 0.5% L-glutamine (Invitrogen), 100 µM 2-mercaptoethanol (Bio-Rad), DMEM/F-12 (Invitrogen), supplemented with 10 ng/mL bFGF (Stemgent). Culture media was changed daily. iPSC colonies were passaged weekly onto 6-well plates coated with 0.1% gelatin (EMD Millipore) and pre-seeded with a feeder layer of irradiated mouse embryonic fibroblasts (MEFs) (GlobalStem), which were plated at a density of 200,000 cells/well. Passaging entailed lifting colonies with 2.5 mg/ml Collagenase, Type IV (ThermoFisher) for 1 hr and dissociation into smaller pieces through manual tritulation before seeding onto feeder layer of MEFs.
 
-## Cerebral organoid generation
+### Cerebral organoid generation
 
 iPSCs were detached from irradiated MEFs and plated at 9 × 104 cells per well of an ultralow attachment 96-well plate (Corning) in iPSC media supplemented with bFGF (10 ng/mL) and ROCK inhibitor (50 µM; Y-27632, Tocris) (Day 0). Embryoid bodies (EBs) were subsequently transferred (Day 6) in an ultra-low attachment 24-well plate (Corning) to neural induction media: 1% N2 supplement (Invitrogen), 1% Glutamax (Invitrogen), 1% non-essential amino acids (Invitrogen), 5 µg/mL heparin (Sigma), DMEM/F12 (Invitrogen), supplemented with 10 µM SB431542 (Tocris Bioscience) and 1 µM dorsomorphin (Stemgent). EBs were embedded in Matrigel (Corning) droplets on Day 11 and transferred to neural differentiation media: DMEM/F12: Neurobasal (Invitrogen), 0.5% N2 supplement, 1% Glutamax, 0.5% non-essential amino acids, 100 µM 2-mercaptoethanol, insulin, 1% Pen/Strep (Invitrogen) supplemented with 1% B27 without vitamin A (Gibco, Life Technologies). On Day 15, embedded EBs were transferred to a shaker and grown in neural differentiation media supplemented with B27 with vitamin A (Gibco, Life Technologies). Organoids were either fixed on Day 35 by a 3-hr incubation in 4% paraformaldehyde solution or imaged under the microscope for live cell characterization.
 
-## Cryosectioning and immunostaining
+### Cryosectioning and immunostaining
 
 For cryosectioning, fixed organoids were incubated in sucrose solution overnight at 4 °C before embedding and freezing in O.C.T medium. Frozen organoid tissue was sliced into 20 μm sections using a cryostat. Permeabilization/blocking was performed using 3% BSA/0.1% TX100 in TBS. Incubation of sections from cerebral organoids in primary antibodies solution was performed overnight at 4 °C and in secondary antibodies solution at room temperature for 1 hr (Alexa Fluor, Molecular Probes). The following primary antibodies were used: DCX (Aves Labs, 1:200); PAX6 (Millipore; 1:200); TBR1 (Abcam 1:400); Cleaved capsase-3 (Cell Signaling, 1:500). Coverslips were affixed with ProLong Gold antifade reagent with DAPI (Life Technologies) and z-stacks were acquired using either a Leica TCS SP8 confocal microscope.
 
-## Intact organoid staining
+### Intact organoid staining
 
 For 3D imaging of whole organoids, intact fixed organoids were incubated with a 1:50 solution of the nuclear dye 7-Aminoactinomycin D (7AAD, MolecularProbes) in PBS for 1 hr at room temperature. Before imaging, organoids were transferred to a shaker and immersed twice for 3 hr in index matching solution (Murray et al., 2015). Z-stacks were acquired with the three-photon microscope described above.
 
-## Electroporation
+### Electroporation
 
 Organoids (specifically, the ‘ventricles’ or progenitor zones) were electroporated with a GFP construct (pCAG-GFP) at 7 weeks post-EB formation. Plasmids were maxi-prepared using Qiagen Maxi kit. DNA solution (0.5 μg/μl) was mixed with Fast Green dye (0.1%) and injected into the organoids using a pulled-glass capillary microelectrode. Successful injection was confirmed by the visualization of Fast Green dye inside the injected organoid. Immediately after DNA injection, four 50 ms electrical pulses (40 V) were applied at 1 s intervals using a 5 mm electrode and an electroporator (EM830, BTX). The organoids were returned to the incubator after electroporation. After 3–4 days, the electroporated organoids were subjected to the three-photon microscope for imaging.
 
-## Statistical analysis
+### Statistical analysis
 
 All the statistical comparisons presented in the figures and figure supplements (Figure 3E, Figure 4C, Figure 5C, Figure 6F, Figure 4—figure supplements 2–5, and Figure 5—figure supplement 2; Figure 5—figure supplement 4; Figure 5—figure supplement 5) are based on t-test method where the error bars are 90% of the confidence interval (CI). Points below and above this confidence interval are drawn as individual dots.
 
-## Area segmentation and rendering
+### Area segmentation and rendering
 
 The area segmentation was performed manually for individual 2-D THG images and confirmed with 7AAD images which are taken as ground truth (Figure 4A–B). Then, Surface function of Imaris software was used to render these 2-D segmented areas into a 3-D volume. We used both opaque (Figure 4A–B) and transparent modes (Figure 4—figure supplement 1C-D) of this function in order to represent 3-D structure of ventricular zones.
 
-## Live cell tracking
+### Live cell tracking
 
 The three-dimensional THG images were used to characterize the speed, straightness, and displacement of cells in control and mutant organoids. To quantify these features of control and mutant cells, Spots function of Imaris software was used. This function first identifies the location of the individual cell, and tracks them in time-lapse images.
 
-## Colocalization of GFP, THG, and 7AAD signals
+### Colocalization of GFP, THG, and 7AAD signals
 
 The colocalization of GFP, THG, and 7AAD signals were performed through Coloc module of Imaris software. We used our z-stack 2-D images (~1,000 images) to form three-channel three-dimensional data sets (Figure 2—figure supplement 2). Then, Coloc module quantified the percentage of overlapping between each channel.
 
-## Incubation of fixed organoids in index-matching solution
+### Incubation of fixed organoids in index-matching solution
 
 For imaging some of the fixed organoids, we incubated organoids in the H-protos index- matching solution for 3 hr. With this incubation, we observed improvement in maximum imaging depth up to 50% compared to the condition without the incubation (Figure 5—figure supplement 7).

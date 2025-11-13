@@ -15,15 +15,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05ejpqr48 Electrical & Computer Eng. Dept, Worcester Polytechnic Institute Worcester United States
-2. https://ror.org/05cf5b117 Ansys Canonsburg United States
-3. https://ror.org/01mw2b749 Dassault Systèmes Deutschland GmbH Darmstadt Germany
+1. Electrical & Computer Eng. Dept, Worcester Polytechnic Institute Worcester United States ([ROR:05ejpqr48](https://ror.org/05ejpqr48))
+2. Ansys Canonsburg United States ([ROR:05cf5b117](https://ror.org/05cf5b117))
+3. Dassault Systèmes Deutschland GmbH Darmstadt Germany ([ROR:01mw2b749](https://ror.org/01mw2b749))
 4. Neva Electromagnetics, LLC Holden United States
 5. GE HealthCare Chicago United States
-6. https://ror.org/00fgrre84 Micro Systems Enigineering, Inc, an affiliate of Biotronik Lake Oswego United States
-7. https://ror.org/04drvxt59 Musculoskeletal Translational Innovation Initiative, Department of Orthopedic Surgery, Beth Israel Deaconess Medical Center and Harvard Medical School Boston United States
+6. Micro Systems Enigineering, Inc, an affiliate of Biotronik Lake Oswego United States ([ROR:00fgrre84](https://ror.org/00fgrre84))
+7. Musculoskeletal Translational Innovation Initiative, Department of Orthopedic Surgery, Beth Israel Deaconess Medical Center and Harvard Medical School Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
 8. Harvard Medical School Boston United States
-9. https://ror.org/002pd6e78 Athinoula A Martinos Center for Biomed. Imaging, Massachusetts General Hospital Charlestown United States
+9. Athinoula A Martinos Center for Biomed. Imaging, Massachusetts General Hospital Charlestown United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
 
 † Corresponding author
 
@@ -53,7 +53,7 @@ The in silico VHP-Female model (250 anatomical structures with an additional 40 
 
 ## Materials and methods
 
-## In silico human model and implant embedding procedure
+### In silico human model and implant embedding procedure
 
 Figure 1 shows surface CAD meshes for the VHP-Female model (Makarov et al., 2017; Noetscher et al., 2021) (with some muscles removed for clarity) and examples of passive femoral implants embedded into the model. The corresponding physical femoral implants are shown on the top right of the figure.
 
@@ -63,7 +63,7 @@ Figure 1 shows surface CAD meshes for the VHP-Female model (Makarov et al., 2017
 
 The implant registration enforces an anatomically correct implant position, and a certain part of the bone matter (cortical and/or trabecular) to be removed as necessary. A semiautomatic implant registration algorithm requiring limited user intervention has been employed based on the principal idea to use at least two anchor nodes per implant: a fixed node and a floating node. The floating anchor node is a vertex of the implant mesh belonging to a certain curve, say, the long axis of the bone. The fixed anchor node is a joint coincident vertex of the femur mesh and the implant mesh. These nodes define the proper implant position given the bone model and a cost function, with a ‘best fit’ based on a mesh intersection check and the signed normal distances between implant/bone boundaries. An additional criterion involves the minimum required thickness of the cortical bone matter with an embedded implant.
 
-## Computation of heat sources due to microwave absorption in MR RF coils
+### Computation of heat sources due to microwave absorption in MR RF coils
 
 A generic, parameterized, and tunable MR RF birdcage two-port coil model (high-, low-, or bandpass), at 64 MHz (1.5 T) with a variable number of rungs was implemented in Ansys Electronics Desktop (Ansys HFSS, Figure 2a). This model is used to compute heat sources – either specific absorption rate (SAR) in W/kg or power loss density in W/m3 at any point in the body, including on the surface of the implants (Figure 2b, c; Kozlov et al., 2015). The in silico model with the implant(s) can be positioned at any appropriate landmark.
 
@@ -71,7 +71,7 @@ A generic, parameterized, and tunable MR RF birdcage two-port coil model (high-,
 
 **Figure 2.:** Right – power loss density in W/m3 in the coil for the (b) Austin Moore and (c) femoral nail implants.
 
-## Determination of implant temperature rise as a function of scan time
+### Determination of implant temperature rise as a function of scan time
 
 An Ansys FEM transient thermal solver was employed to determine tissue temperature rise close to the implant caused by the heat sources. It requires knowing the relevant thermal properties of the tissues. The solver may approximately model blood perfusion, which is less important for bone, but is important for cardiac implants and other soft tissue implants (Winter et al., 2021).
 
@@ -85,15 +85,15 @@ In this way, the output of the electromagnetic solver (Figure 3A and B) is the i
 
 ## Results
 
-## What is heating-related MR labeling of implants?
+### What is heating-related MR labeling of implants?
 
-For the implantable devices that are categorized as MR conditional, the labeling includes scan and rest times at a given whole-body SAR or B1, rms+ (‘root mean square’ value of B1+ averaged over a period of 10 s). This is described in the FDA’s guidance document (US Department of Health and Human Services et al., 2021) (cf. also examples in Shellock et al., 2009) where devices are to be labeled for a 1 hr MR session, including both scan and rest times. The guidance states a certain interleaving combination of scan (e.g., 5 min) and rest (e.g., 15 min) times that guarantees implant heating is less than 5°C or another specified number (US Department of Health and Human Services et al., 2021). The FDA-required procedure is a measurement test in an ASTM gel-based homogeneous phantom (US Department of Health and Human Services et al., 2021; Song et al., 2018). When performing relevant numerical modeling, the pulse sequences and scan times should be converted to equivalent CW (continuous wave) operation, which is easier to model.
+For the implantable devices that are categorized as MR conditional, the labeling includes scan and rest times at a given whole-body SAR or $B_{1, rms}^{+}$ (‘root mean square’ value of $B_{1}^{+}$ averaged over a period of 10 s). This is described in the FDA’s guidance document (US Department of Health and Human Services et al., 2021) (cf. also examples in Shellock et al., 2009) where devices are to be labeled for a 1 hr MR session, including both scan and rest times. The guidance states a certain interleaving combination of scan (e.g., 5 min) and rest (e.g., 15 min) times that guarantees implant heating is less than 5°C or another specified number (US Department of Health and Human Services et al., 2021). The FDA-required procedure is a measurement test in an ASTM gel-based homogeneous phantom (US Department of Health and Human Services et al., 2021; Song et al., 2018). When performing relevant numerical modeling, the pulse sequences and scan times should be converted to equivalent CW (continuous wave) operation, which is easier to model.
 
 However, the response of the ASTM phantom is quite different from that of a real body, which includes bones and other tissues of varying electrical and thermal conductivities, as well as blood circulation and perfusion. In several test cases, our testbed prototype predicted a higher maximum temperature rise (up to 40% higher) at the implant tips versus in vitro experiments with a simplified gel phantom. In other cases, and for other implants, however, the heating was substantially lower (by 50% or so). Therefore, the in silico testbed will augment the ASTM measurements with accurate multiphysics modeling. Additionally, this modeling can assist with implant design in an efficient manner.
 
 We note that this work is solely focused on the RF safety aspects of MR labeling. The results expressed herein should be considered supplemental to existing published guidelines.
 
-## Example: labeling long femoral titanium nail
+### Example: labeling long femoral titanium nail
 
 Figure 4 shows an example of testing results for a long titanium femoral nail subject to three cycles of 15 min with a 2.3 W/kg average equivalent SAR exposure followed by 5 min of rest, resulting in a 1 hr total exposure in a 1.5 T MRI coil. The model predicts that the temperature near the implant reaches 41°C after the first exposure with its final value approaching 45°C, a total increase of about 10°C which is clearly unacceptable! Further simulations show that 4 min exposures followed by 16 min of rest would be a safe solution. In the testbed, the exposure time is arbitrary and can be rapidly tested and adjusted (within 5–7 min) to meet the FDA requirements (US Department of Health and Human Services et al., 2021) and construct the proper MR exposure protocol.
 
@@ -101,7 +101,7 @@ Figure 4 shows an example of testing results for a long titanium femoral nail su
 
 **Figure 4.:** Center – temperature contour plot in a cut plane roughly bisecting the embedded femoral implant at the end of the last heating cycle. Bottom – temperature rise profile at the temperature probe. Only the bone is shown but the computations are performed for the entire model.
 
-## Comparison with experiment for a long resonant metal conductor with a sharp tip
+### Comparison with experiment for a long resonant metal conductor with a sharp tip
 
 The most challenging and important cases correspond to testing large and potentially resonant metal implants (Song et al., 2018) with relatively sharp tips or terminations since detecting resonance requires accurate high-frequency modeling. One extreme example was studied in Hue et al., 2018, where a simulated percutaneous RF ablation surgical procedure using MR heating was performed in ex vivo bovine liver in a 1.5 T scanner. The device under study was a bent long wire ‘antenna’ made resonant at the scanner Larmor frequency with an adjustable series capacitor. The antenna, a 26 AWG (0.40 mm) Teflon-insulated silver-plated copper wire taped around the edge of the patient table, was terminated in a simulated RF ablation needle (a 15 cm long 16 AWG/1.30 mm diameter bare copper wire), the tip of which was embedded into the liver to simulate the percutaneous ablation of a solid hepatic tumor. The parameterized testbed coil model was used to replicate the RF antenna and needle geometry of Hue et al., 2018, using standard electrical properties of human liver tissue. The peak tissue temperature increase imaged in Hue et al., 2018, by the proton resonance frequency shift method (20°C) and a 22°C increase recorded by a fiber optic temperature sensor at the needle tip agreed well with our modeled prediction of a 23°C increase using the modeling testbed.
 

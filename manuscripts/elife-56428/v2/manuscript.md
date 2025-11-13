@@ -50,7 +50,7 @@ Telomerase extension reactions in the presence of individual nucleotides demonst
 
 ## Results
 
-## Human telomerase binds, unfolds and extends intramolecular parallel G-quadruplexes
+### Human telomerase binds, unfolds and extends intramolecular parallel G-quadruplexes
 
 Parallel, intermolecular G4 are substrates for telomerase, whereas intramolecular antiparallel or hybrid conformations are not (Hwang et al., 2014; Lee et al., 2017; Moye et al., 2015; Oganesian et al., 2006; Zahler et al., 1991; Zaug et al., 2005). Determining whether it is the parallel or intermolecular nature of G4 structures that allows their recognition by telomerase has been difficult, since a 4-repeat human telomeric oligonucleotide does not readily fold into stable parallel intramolecular G4 at the concentrations used in in vitro assays, and instead exists as a mixture of topologies under most conditions (Dai et al., 2007; Long and Stone, 2013; Palacký et al., 2013; Petraccone et al., 2012). For this reason, we made use of the modified nucleotide 2'-fluoro-arabinoguanosine (2'F-araG), which induces parallel propeller-type G4 conformations (Peng and Damha, 2007). We have previously demonstrated that substitution of six guanosines in the telomeric sequence AGGG(TTAGGG)3 with 2'F-araG leads to a 15°C increase in Tm of the resulting intramolecular G4, and a shift from the usual antiparallel or hybrid topology of this sequence in potassium solution (Lim et al., 2009; Renciuk et al., 2009) to a parallel conformation (Figure 1A; Abou Assi et al., 2017). Here, we demonstrate that G4 formed from the unmodified sequence (22G0) in KCl is a poor telomerase substrate, leading to the previously-observed stuttering pattern (Zaug et al., 2005) in a direct telomerase extension assay involving incorporation of radiolabeled α32P-dGTP (Figure 1B, lane 3). Substitution with 2'F-araG (22G3; see Supplementary file 1 for sequence) restored the expected 6-nt repeat pattern of telomerase extension (Figure 1B, lane 2), despite the increase in thermal stability of this G4. Thus, telomerase is able to extend parallel G4 structures, whether they are inter- or intramolecular.
 
@@ -62,6 +62,26 @@ To determine the mechanism of extension of intramolecular G4, we designed a vers
 
 We predicted that this structure would yield a high FRET ratio as the donor and acceptor fluorophores would be in close proximity (Figure 1C), but when unfolded the strands would move apart and a low FRET ratio would be expected. We carried out smFRET experiments using the modified F-22G3 construct in KCl by tethering it on pegylated coverslips via a biotin-streptavidin-biotin linkage. Surface-immobilized G4s were excited using a 532 nm laser and signals emitted from both the donor and acceptor fluorophores were collected and their intensities measured over time (Figure 2A, top panel); both dyes provided a constant fluorescence signal over several minutes. The apparent FRET values between these two fluorophores were calculated by dividing the acceptor intensity by the sum of the donor and acceptor intensities (Figure 2A, bottom panel). Individual F-22G3 molecules all displayed a constant FRET ratio of ~0.5 over time, indicating that they did not undergo any detectable conformational changes in the experimental time window. Given a Förster radius between AF555 and AF647 of 51 Å, the calculated FRET efficiency for this distance is 0.44, which is close to our experimental FRET value of 0.5. To confirm that this FRET value represents a G4 structure, we substituted the KCl-containing buffer for a LiCl solution, since Li+ does not support G4 formation; in a majority of molecules, the FRET signal decreased from ~0.5 to~0.14 and remained at the low FRET state during the entire observation window (Figure 2—figure supplement 1). Using ~100 smFRET trajectories pooled from multiple independent experiments in KCl (sample sizes for each condition indicated in figure panels), a FRET heat map was constructed, showing the distribution of average FRET values (Figure 2B). The heat map showed that the mean FRET value (0.53 ± 0.05) remained unchanged over time; an alternative histogram representation of the same data grouped into 15 s bins confirms this conclusion (Figure 2—figure supplement 2A). These data demonstrate that the F-22G3 G-quadruplex is stable over time.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig2-v2.jpg)
+
+**Figure 2.:** (A), (D), (G) Representative single-molecule acceptor (purple) and donor (blue) intensities of F-22G3 molecules over time (top panels), and the FRET traces (bottom panels) representing the ratio of acceptor intensity to the sum of acceptor and donor intensities, of either F-22G3 alone (A), in the presence of telomerase (D), or in the presence of telomerase and dNTPs (G). (B), (E), (H) Heat maps of the distribution of FRET intensities over 0–150 s of F-22G3, either alone (n = 99) (B), in the presence of telomerase (n = 125) (E), or in the presence of telomerase and dNTPs (n = 90) (H). All plots include molecules collected in 4–6 independent experiments. For color key, see panel (H). (F), (I) Transition density plots (TDPs) showing the change in FRET value of molecules from experiments in (E) and (H) (n = 90 and 75, respectively). Schematics in (I) show assignment of each TDP peak to one of the two steps of FRET reduction observed in single molecule traces. (C) Plot of the percentage of molecules showing no change in FRET, a single FRET drop, or a two-step FRET drop, in the experiments shown in (A) to (I); error bars represent sample size/√total population.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Representative FRET trace (A) and heat map of the distribution of FRET intensities (B, n = 50) of F-22G3, surface immobilized in KCl-containing buffer, which was replaced with LiCl-containing buffer after 5 s.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Histograms showing changes in FRET values of a population of F-22G3 molecules under different experimental conditions over 150 s, binned into 15–60 s time intervals. (D) Histogram showing three different FRET populations in the presence of telomerase and dNTPs; a multiple Gaussian fit was applied to obtain the mean FRET peaks of these populations, with errors representing the curve fitting errorstandard deviation of the data. n = 99 (A), 125 (B) and 90 (C), (D) molecules, collected in 2–4 independent experiments.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Histograms showing changes in FRET values of a population of F-22G3 molecules in the presence of dNTPs but absence of telomerase over 150 s, binned into 15–60 s time intervals. n = 44 molecules.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** N represents the number of kinetic steps in the best-fitting equation; fitting parameters (Chi-square and associated p-value) are shown in the table.
+
 Next, we tested whether telomerase presence affects the F-22G3 structure. To this end, we imaged F-22G3 in the presence of catalytically active telomerase, but in the absence of deoxynucleotide triphosphates (dNTPs). Approximately 65% of F-22G3 molecules showed an abrupt drop in FRET value, from 0.53 ± 0.05 to 0.3 ± 0.1, during the 160 s after telomerase was injected into the microscopic channel containing immobilized F-22G3 (Figure 2C and D). The remaining 35% of molecules did not show any change in FRET signal over the observed time; it is possible that the binding reaction had not proceeded to completion within this time period, or that a subpopulation of enzyme or DNA molecules are incompetent for binding. We collected 125 molecules showing a step-wise change in FRET value and plotted the data in a FRET heat map and a histogram plot as a function of time; both plots showed a drop in mean FRET value from ~0.53 to~0.3 FRET over this time (Figure 2E and Figure 2—figure supplement 2B). We interpret this to represent telomerase binding to F-22G3 and partially opening the structure, which then remained stable in its new conformation.
 
 We confirmed this conclusion by quantitatively analyzing the FRET changes during the transitions. For all molecules that showed a change in FRET signal over time, the frequency with which molecules transitioned between states was determined using state finding algorithm vbFRET (https://sourceforge.net/projects/vbfret/; Bronson et al., 2013). Then, the transition frequencies were plotted as a function of initial and final FRET states to obtain transition density plots (TDP) (Figure 2F). In the presence of telomerase, the TDP showed a single cluster of transitions at initial FRET ~ 0.5 and final FRET ~ 0.3, consistent with the shift in mean FRET in the heat map.
@@ -70,45 +90,147 @@ To examine changes in F-22G3 structure during its extension by telomerase, we pe
 
 The rate of F-22G3 unfolding upon telomerase binding in the presence of dNTPs was measured by measuring the dwell time distribution at the 0.3 FRET state (τunfolding; Figure 2G) and fitting the distribution to a gamma distribution (Figure 2—figure supplement 4). F-22G3 molecules exhibited telomerase-mediated unfolding with a rate constant of kunfolding = 0.120 ± 0.013 s−1 (mean ± SEM). This unfolding rate is comparable with the rate of unfolding of parallel G4 by Pif1 helicase (0.11 s−1) (Byrd and Raney, 2015). Gamma distributions also provide information about the number of rate-limiting steps within a complex kinetic process (Floyd et al., 2010); in this case, the number of steps (N) is 2.8 (Figure 2—figure supplement 4), suggesting that unfolding is a complex process involving at least 2–3 kinetic steps.
 
-## Human telomerase also binds, unfolds and extends intermolecular parallel G-quadruplexes
+### Human telomerase also binds, unfolds and extends intermolecular parallel G-quadruplexes
 
 We have previously demonstrated that a tetrameric, parallel G4 (Gavathiotis and Searle, 2003) formed from four copies of the 7-mer telomeric sequence TTAGGGT in K+ is highly stable but can be extended by human telomerase (Moye et al., 2015). This sequence provides the advantage that the conformation of its G4 topology is unambiguous; the sequence is too short to form intramolecular G4 structures, and can only exist as a parallel tetramer. To examine whether this tetramer is extended by telomerase using the same mechanism as an intramolecular G4, we prepared a version of this quadruplex labeled with a pair of FRET dyes and a biotin with which to immobilize the DNA. Four different strands, each consisting of the sequence TTAGGGT (here called 7GGT) and a hexa-ethylene glycol spacer, were annealed in an equimolar mixture in KCl solution. Three of these strands were 5' modified with either AlexaFluor 555 (donor dye), AlexaFluor 647 (acceptor dye) or biotin, and the remaining strand was unmodified (Figure 3A). We assembled an equimolar mixture of each of these modified oligonucleotides to produce G4s with different combinations of modifications. The resulting mixture of G4s were all parallel-stranded, as confirmed using CD spectroscopy, and had an average melting temperature similar to that of the unmodified G4 ([7GGT]4; Figure 3—figure supplement 1). Direct telomerase activity assays demonstrated that human telomerase can extend the FRET-modified G4 construct (which we refer to as F-[7GGT]4) as efficiently as the unmodified [7GGT]4 (Figure 3B). In single-molecule microscopy analyses, we analyzed only G4 structures containing a single copy of each of the four strands, through selection during post-image processing and data analysis (see Methods for details). Note that there are two possible orientations of the positions of the two dyes (on adjacent strands or on diagonally opposite strands, as depicted in Figure 3A), but it is unlikely that the distance between the dyes in these two conformations is sufficiently different to resolve by FRET. We note that reliable distance estimates obtained from FRET are extremely challenging, with the FRET efficiency depending upon several factors beyond distance: 1) The length of linkers that are used to attach each fluorescent dye (in our case a C6 carbon linker) will affect dye mobility and increase the distance between dyes (Sindbert et al., 2011), 2) the quenching of emission due to the presence of Gs in the dye’s vicinity (Sindbert et al., 2011), and 3) solvent polarity (Ishikawa-Ankerhold et al., 2012). smFRET experiments showed that most F-[7GGT]4 molecules exhibit a steady FRET signal at a ratio of ~0.6, and the FRET signal did not change over time (Figure 4A and B, Figure 4—figure supplement 1A), indicating formation of a stable parallel intermolecular G4. Substitution of the K+-containing buffer for one containing Li+ resulted in a drop to a stable FRET value of ~0.2, followed by complete loss of the signal from both dyes, likely representing G4 unwinding followed by loss of the non-biotinylated dye-bearing strands (Figure 4—figure supplement 2). Telomerase alone was sufficient for partial unwinding of parallel F-[7GGT]4, as demonstrated by a drop in FRET state from ~0.6 to~0.4 with time (Figure 4D–F, Figure 4—figure supplement 1B). About 60% of molecules showed this one-step drop in FRET signal upon injection of telomerase (Figure 4C). Note that the distribution of initial FRET values of those molecules that show a change in FRET value is not as broad as the FRET distribution of the whole population of molecules (compare the spread at 0 time in Figure 4E to that in Figure 4B), supporting the interpretation that those G-quadruplexes that do not bind to telomerase have folded improperly or are folding intermediates, and thus show a high level of dynamic behaviour that is too fast to resolve and results in a broadening of the FRET peak. In the case of the 60% of molecules that do show a drop in FRET signal, we interpret this to demonstrate that telomerase results in a partial separation of the FRET dyes upon binding to one strand of the tetrameric G4.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of F-[7GGT]4 used in smFRET studies. Blue star: AlexaFluor 555 (donor dye); purple star: AlexaFluor 647 (acceptor dye); red circle: biotin; yellow square: Neutravidin. (B) Telomerase extension assays using either 1 µM of unmodified [7GGT]4 or the version containing the FRET pair dyes (F-[7GGT]4); radiolabeled extension products were electrophoresed on a denaturing polyacrylamide gel (* indicates the position of n+3 products in the gel). LC: 5´-32P-labeled synthetic 100 nt DNA used as a recovery/loading control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Circular dichroism (CD) spectra of 10 µM fluorophore-modified F-[7GGT]4 and unmodified [7GGT]4. (B) Thermal stability of modified and unmodified [7GGT]4, measured using CD at 260 nm. Since intermolecular G-quadruplexes reform very slowly and are therefore not at equilibrium during the measurement, we refer to this value as T½ rather than Tm, which is the true thermodynamic parameter at equilibrium. Mean ± SD of 3 independent experiments.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig4-v2.jpg)
+
+**Figure 4.:** (A), (D), (G) Representative single-molecule acceptor (purple) and donor (blue) intensities of F-[7GGT]4 molecules over time (top panels), and the corresponding FRET traces (bottom panels). (B), (E), (H) Heat maps of the distribution of FRET intensities over 0–150 s. For color key, see panel (H). Panels (A) and (B) represent F-[7GGT]4 alone (n = 105 molecules), (D) and (E) show F-[7GGT]4 in the presence of telomerase (n = 87), and (G and H) Show F-[7GGT]4 in the presence of telomerase and dNTPs (n = 81). All plots include molecules collected in 4–6 independent experiments. (C) Plot of the percentage of molecules showing no change in FRET, a single FRET drop, or a two-step FRET drop, in the experiments shown above; error bars represent sample size/√total population. (F), (I) TDPs depicting initial and final FRET states of all molecules that showed a change in FRET value, in the presence of telomerase (n = 65) (F) or telomerase and dNTPs (n = 75) (I). For color key, see panel (I).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Histograms showing changes in FRET values of a population of molecules under different experimental conditions over 160 s, binned into 15–85 s time intervals. (D) Histogram showing three different FRET populations in the presence of telomerase and dNTPs; a multiple Gaussian fit was applied to obtain the mean FRET peaks of these populations, with errors representing the curve fitting errorstandard deviation of the data. n = 105 (A), 87 (B) and 81 (C), (D) molecules, collected in 4–6 independent experiments.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Representative FRET trace (A) and heat map of the distribution of FRET intensities (B), n = 52) of F-[7GGT]4, surface immobilized in KCl-containing buffer, which was replaced with LiCl-containing buffer after 5 s.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Histograms showing changes in FRET values of a population of F-[7GGT]4 molecules in the presence of dNTPs but absence of telomerase over 150 s, binned into 15–85 s time intervals. n = 110 molecules.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A to C) The unfolding rates were calculated by fitting the dwell time distributions of the intermediate FRET state (see center schematic, left panel) to a gamma distribution, for F-[7GGT]4 in the presence of telomerase and either 0.5 mM of all dNTPs (A) or 0.5 mM dATP, 0.5 mM dTTP and 5 µM dGTP (C). A representative FRET trace under the latter conditions is shown in (B), illustrating the gradual reduction from ~0.4 to~0.2 FRET. (D) Gamma distribution of the approximate transition times from ~0.4 to~0.2 FRET (τunfolding-2; see center schematic, right panel) of F-[7GGT]4 in the presence of telomerase and 0.5 mM dATP, 0.5 mM dTTP and 5 µM dGTP. N represents the number of kinetic steps in the best-fitting equation; fitting parameters (Chi-square, number of molecules and associated p-value) are shown in the table.
 
 In the presence of telomerase and dNTPs, most F-[7GGT]4 molecules experienced a two-step drop in FRET, from 0.57 ± 0.05 to 0.36 ± 0.04, and then to 0.19 ± 0.05 (Figure 4C and G–I, Figure 4—figure supplement 1C and D); this transition did not occur in the presence of dNTPs alone (Figure 4—figure supplement 3). The two FRET transition clusters observed by TDP analysis (Figure 4I) suggest that telomerase unfolds parallel intermolecular G4 irreversibly. The low FRET state of ~0.2 is consistent with the low FRET state observed during Li+-mediated G4 unfolding (Figure 4—figure supplement 2); surprisingly, however, we did not observe complete loss of FRET signal (i.e. disappearance of both dyes simultaneously), as we had seen in the presence of Li+. Instead, the majority of molecules exhibited a stable FRET signal of ~0.2, followed by acceptor dye photobleaching then later photobleaching of the donor dye. This suggests that while telomerase extension results in G4 disruption, the presence of the enzyme keeps the four strands in proximity of each other, rather than allowing them to completely diffuse apart.
 
 The rate of unfolding of F-[7GGT]4 by telomerase in the presence of dNTPs was measured by plotting the dwell times of the intermediate transition states (FRET value of 0.4) and fitting them to a gamma distribution that yielded kunfolding = 0.073 ± 0.013 s−1 (mean ± SEM; Figure 4—figure supplement 4A), with N = 2.3 ± 0.1. Thus, the rate of unfolding of [7GGT]4 by telomerase in the presence of dNTPs is comparable to that of F-22G3. The gamma distribution also suggested that 2–3 rate-limiting steps contribute to this rate. Since the transitions between FRET states were very abrupt for both G4s (see Figure 2G and Figure 4G), it was possible that further rate-limiting steps occur during these transitions, which are too fast to resolve. To explore this, we carried out smFRET analyses of [7GGT]4 in the presence of a 100-fold lower concentration of dGTP; this resulted in ~40% of traces that showed a plateau at FRET ~ 0.4 followed by a gradual transition to ~0.2 (example in Figure 4—figure supplement 4B). Quantitation of the dwell times at FRET 0.4 showed a kunfolding of 0.040 ± 0.006 s−1 (mean ± SEM; Figure 4—figure supplement 4C), which is ~1.8 fold slower than the rate at a high dGTP concentration, and N = 2.10 ± 0.03. Approximation of the times taken for the gradual transition to FRET 0.2 (that we refer to as τunfolding-2) yielded a rate of 0.44 ± 0.14 s−1, with 3–4 rate-limiting steps revealed by the gamma distribution (Figure 4—figure supplement 4D). Together, these data suggest that the process of G4 unfolding by telomerase is complex and involves at least five independent steps, whose rates are influenced by dNTP concentration.
 
-## Complete G-quadruplex unwinding by telomerase requires its catalytic activity
+### Complete G-quadruplex unwinding by telomerase requires its catalytic activity
 
 Next, we asked if either of the two step-wise drops in FRET values are dependent upon the nucleotide incorporation activity of telomerase. Synthesis activity requires three conserved aspartate residues in the reverse transcriptase domain of the TERT protein (Counter et al., 1997; Harrington et al., 1997; Lingner et al., 1997; Weinrich et al., 1997). Mutation of any one of these aspartates results in loss of telomerase catalytic activity but retention of its ability to bind to a DNA primer (Wyatt et al., 2007). We introduced an aspartate-to-alanine mutation at hTERT amino acid 712 and confirmed that this mutant telomerase (D712A) lost all primer extension activity (Figure 5—figure supplement 1). smFRET experiments with F-[7GGT]4 demonstrated an initial drop in FRET after addition of D712A telomerase, but no further drop in FRET was observed upon addition of dNTPs (Figure 5A–E). This result suggests that binding of telomerase to F-[7GGT]4, resulting in partial G4 unwinding, is independent of telomerase catalytic activity, but full unwinding of the G4 requires its extension by telomerase.
 
-## The RNA template sequence is involved in partial unfolding of G-quadruplex structure
+![Figure 5.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig5-v2.jpg)
+
+**Figure 5.:** (A), (C), (F), (H) Examples of individual F-[7GGT]4 FRET traces under the indicated experimental conditions over 160 s. (B), (D), (G), (I) Heat maps of the distribution of FRET trajectories over 0–150 s using 80, 75, 95 and 129 molecules, respectively, under the indicated experimental conditions. All plots include molecules collected in 4–6 independent experiments. For color key, see panel (I). (E), (J) Plots of the percentage of molecules showing no change in FRET, a single FRET drop, or a two-step FRET drop, in the experiments shown above; error bars represent sample size/√total population.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Upper gel shows products of telomerase extension of oligonucleotide Bio-L-18GGG (1 µM; Supplementary file 1); lower panel shows a northern blot of the amount of hTR in each telomerase preparation, to control for equal amounts of enzyme.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Histograms (A, B) and representative traces (C, D) of the FRET values of a population of F-[7GGT]4 molecules, in the presence of the indicated concentrations of oligonucleotide RNA.10C; n = 84 (A) and 129 (B) molecules, collected in 4–6 independent experiments.
+
+### The RNA template sequence is involved in partial unfolding of G-quadruplex structure
 
 It is known that the RNA template of telomerase plays an important role in recognizing and binding the telomeric end by canonical base paring. We have previously demonstrated that [7GGT]4 is extended by the nucleotides that would be predicted from canonical base-pairing with the RNA template (Moye et al., 2015). Therefore, we hypothesized that the RNA template binds to the G4, facilitating the opening of the structure. To test this, we performed smFRET experiments in the presence of a 10-nt RNA oligonucleotide mimicking the human telomerase template sequence, RNA.10C (Supplementary file 1). At a high concentration of RNA.10C (500 μM), a majority of F-[7GGT]4 molecules executed a single-step drop in FRET from 0.57 to 0.36 (Figure 5F,G and J); thus, a short oligonucleotide resembling the telomerase template induces G4 unfolding in a similar manner to the whole telomerase enzyme. The fraction of the G4 population that showed a drop in FRET signal was dependent on the concentration of RNA.10C (Figure 5—figure supplement 2A and B), and at both concentrations ~ 20% of the molecules showed dynamic behaviour during the observation window, transiently returning to the high FRET state (examples in Figure 5—figure supplement 2C and D), which was not observed in experiments with the whole telomerase enzyme. This indicates that the affinity of the RNA oligonucleotide for the G4 is lower than that of telomerase, which is not unexpected given the multiple protein-DNA contacts that can occur in the presence of hTERT. Nevertheless, the effect of an oligonucleotide on G4 structure was very specific to RNA; the presence of 500 µM of a 10-nt DNA oligonucleotide of identical sequence (DNA.10C) did not stimulate any change in the FRET signal of F-[7GGT]4 over the same time period (Figure 5H–J). These data suggest that the hTR template is specifically involved in binding to the G4, leading to partial opening of the structure.
 
-## Telomerase translocation leads to complete unfolding of G-quadruplex structure
+### Telomerase translocation leads to complete unfolding of G-quadruplex structure
 
 The second step of telomerase-mediated unfolding of G4 DNA requires telomerase catalytic activity (Figure 5C–E). To probe the mechanism for this, we incubated telomerase with F-22G3 in the presence of subsets of dNTPs. The first three nucleotides that are incorporated by telomerase at the 3' end of F-22G3 are dTTP, dATP and dGTP, as dictated by the telomerase RNA template sequence (see Figure 6A,E and I). We first carried out extension reactions in the presence of only ddTTP, a chain terminator that inhibits further elongation of the 3' end after its incorporation, and no other nucleotides (Figure 6A). Under these conditions, F-22G3 exhibited a FRET drop from ~0.5 to~0.3 and remained in the ~0.3 FRET state over the remainder of the observation time window (Figure 6B–D and Figure 6—figure supplement 1). A similar change in FRET from ~0.5 to~0.3 was observed when the only nucleotides in the reaction were dTTP and ddATP (Figure 6F–H and Figure 6—figure supplement 1). However, in the presence of dTTP, dATP and ddGTP, a second step-wise drop in FRET was exhibited by F-22G3, from ~0.3 to~0.15 (Figure 6J–L and Figure 6—figure supplement 1). These data demonstrate that complete G4 unfolding occurs after the addition of three nucleotides complementary to the template; at this point, the template boundary is reached and translocation of the DNA to the 3' region of the template is likely to occur (Figure 6I).
 
-## Stable intermolecular, parallel G4 is unfolded and extended by telomerase using a similar mechanism
+![Figure 6.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig6-v2.jpg)
+
+**Figure 6.:** (A), (E), (I) Schematic diagrams showing alignment of the telomerase template RNA with 22G3 DNA and template-directed incorporation of ddTTP (A), dTTP followed by ddATP (E) or dTTP, dATP and ddGTP (I). (B), (F), (J) Examples of individual F-22G3 FRET trajectories in the presence of telomerase and the indicated combinations of nucleotides. (C), (G), (K) Heat maps of the distribution of FRET intensities over 0–150 s in 80, 90 and 82 molecules, respectively, in the presence of telomerase and the indicated combinations of nucleotides. All plots include molecules collected in 4–6 independent experiments. For color key, see panel (K). (D), (H), (L) TDPs showing the changes between the initial and final FRET values of F-22G3 in the presence of telomerase and the indicated combinations of nucleotides (n = 80, 90 and 82 molecules, respectively). For color key, see panel (L).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Plot of the percentage of molecules showing no change in FRET, a single FRET drop, or a two-step FRET drop, during telomerase extension of F-22G3 in the presence of the indicated combinations of nucleotides; error bars represent sample size/√total population.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A), (D), (G) Examples of individual F-[7GGT]4 FRET trajectories in the presence of telomerase and the indicated combinations of nucleotides. (B), (E), (H) Heat maps of the distribution of FRET intensities over 0–150 s in 69, 73 and 80 molecules, respectively, in the presence of telomerase and the indicated combinations of nucleotides. All plots include molecules collected in 4–6 independent experiments. For color key, see panel (H). (C), (F), (I) TDPs showing the changes between the initial and final FRET values of F-[7GGT]4 in the presence of telomerase and the indicated combinations of nucleotides (n = 69, 73 and 80 molecules, respectively). For color key, see panel (I).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Plot of the percentage of molecules showing no change in FRET, a single FRET drop, or a two-step FRET drop, during telomerase extension of F-[7GGT]4 in the presence of the indicated combinations of nucleotides; error bars represent sample size/√total population.
+
+### Stable intermolecular, parallel G4 is unfolded and extended by telomerase using a similar mechanism
 
 We next asked whether telomerase-mediated unfolding of intermolecular G4 occurs via a similar mechanism to that of intramolecular G4. To address this, we performed smFRET experiments in the presence of subsets of dNTPs and observed the change in FRET signal displayed by F-[7GGT]4 over time (Figure 6—figure supplement 2). The FRET signal dropped in a single step, from ~0.6 to~0.4, in the presence of telomerase and either ddTTP alone or dTTP and ddATP. However, in the presence of telomerase and dTTP, dATP and ddGTP, a two-step decrease was observed, from a high FRET state (~0.6) to ~0.4 and then to the lowest FRET state (~0.2) (Figure 6—figure supplements 2 and 3). Overall, these data demonstrate that telomerase binds and unfolds parallel G4 using a similar mechanism, whether the strand topology is intramolecular or intermolecular.
 
-## Ligand stabilization of intramolecular parallel G4 partially inhibits but does not prevent G4 unwinding by telomerase
+### Ligand stabilization of intramolecular parallel G4 partially inhibits but does not prevent G4 unwinding by telomerase
 
 Antiparallel or hybrid telomeric G4 are not efficiently used as substrates by telomerase, and their stabilization with small molecule G4-binding ligands can further decrease the ability of telomerase to extend them (De Cian et al., 2007a; Zahler et al., 1991; Zaug et al., 2005). We therefore sought to determine whether a ligand-mediated increase in stability of parallel G4 affects their extension by telomerase. To this end, we used three different G4-stabilizing compounds: the porphyrin N-methyl mesoporphyrin IX (NMM) (Arthanari et al., 1998; Nicoludis et al., 2012a), the berberine derivative SST16 (Samosorn, 2016; Samosorn et al., 2009) and the bisquinolinium compound PhenDC3 (Chung et al., 2014; De Cian et al., 2007b; Figure 7—figure supplement 1). CD spectroscopy confirmed that none of the ligands substantially changed the overall parallel G4 conformation of F-22G3 (Figure 7—figure supplement 2A–C), and melting assays showed dramatic thermal stabilization of this G4 upon binding by all three ligands (ΔTm of >25°C (NMM), +11°C (SST16) and >25°C (PhenDC3), under the conditions detailed in Figure 7—figure supplement 2D–F). SST16 caused a decrease in signal of the peak at 260 nm that may be attributable to the association between the ligand and the G-quartets, resulting in slight changes in stacking interactions without a change in overall topology (Ghosh et al., 2013; Gray et al., 2008). The ligands did not change the steady smFRET signal of F-22G3 in the absence of telomerase (Figure 7—figure supplement 3). In the presence of telomerase, dNTPs and each of the three ligands, the number of molecules experiencing a two-step FRET decrease was reduced by about 2-fold, and the number of molecules with no FRET changes doubled (Figure 7A–J). This suggests that the ligands reduce binding of telomerase to this G4, preventing induction of the first step of FRET decrease. Nevertheless, 25–30% of molecules showed the same FRET decrease from ~0.5 to~0.3 and then to ~0.15 as in the absence of ligands (Figure 7A–J). The rates of telomerase-mediated unfolding of NMM-, SST16- and PhenDC3-stabilized F-22G3 were 0.071 ± 0.014 s−1 (N = 2.50 ± 0.04), 0.096 ± 0.01 s−1 (N = 2.6 ± 0.1), and 0.098 ± 0.015 s−1 (N = 2.60 ± 0.05), respectively (mean ± SEM; Figure 7K, Figure 7—figure supplement 4); in the case of NMM, this was significantly slower (p=0.0118; Student’s t-test) than in the absence of ligands (0.12 ± 0.013 s−1). At least in the case of NMM, the reduced rate of G4 unfolding provides evidence that most or all of these molecules were bound by ligands, but that ligand presence slowed the rate of their unfolding by telomerase. The very dramatic thermal stabilization of the G4 in the presence of PhenDC3 (Figure 7—figure supplement 2F) also suggests that a majority of molecules were bound by this compound. However, we cannot rule out that some of the molecules unwound by telomerase were not bound by the ligands.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig7-v2.jpg)
+
+**Figure 7.:** (A – I) Representative FRET trajectories, heat maps and transition density plots of F-22G3 in the presence of NMM (A – C; 800 μM in folding reaction), SST16 (D – F; 5 μM) or PhenDC3 (G – I; 1 μM), in the presence of telomerase and dNTPs; n = 84 (B,C), 60 (E,F), and 77 (H,I) molecules, collected in 2–4 independent experiments. (J) Plot of the percentage of F-22G3 molecules showing no change in FRET, a single FRET drop, or a two-step FRET drop, when incubated with telomerase, dNTPs and the indicated ligands at the concentrations shown in (A – I); error bars represent sample size/√total population. (K) The unfolding rate of F-22G3 in the presence of the above concentrations of NMM, SST16, PhenDC3 or no ligand, calculated by fitting the dwell time distributions of the intermediate FRET state to a gamma distribution. Rates and curve fitting parameters are in Figure 7—figure supplement 4.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A – C) CD spectra and (D – F) melting curves measured by CD at 260 nm of 250 nM F-22G3 in the presence or absence of 40 μM NMM, 5 μM SST16 or 1 μM PhenDC3. NMM was incubated with F-22G3 during G4 folding at 20-fold higher concentrations, and the G4-ligand complex diluted for CD measurement.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Representative FRET trajectories and heat maps of F-22G3 in the presence of NMM (A, B); 800 μM in folding reaction), SST16 (C, D); 5 μM) or PhenDC3 (E, F); 1 μM); n = 110 (B), n = 96 (D), n = 103 (F), collected in 2–3 independent experiments.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig7-figsupp4-v2.jpg)
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** (A) Direct extension assays using 250 nM of F-22G3 or linear Bio-L-18GGG control, in the presence or absence of NMM (800 μM in folding reaction), SST16 (5 μM) or PhenDC3 (1 μM). For the reactions with NMM, linear DNA strands (10 μM) were incubated with 800 μM NMM prior to G4 folding, and the G4-ligand complex diluted 20-fold for the activity assay. LC: 5´-32P-labeled synthetic 30 nt DNA used as a recovery/loading control. (B) Quantitation of activity in (A), normalized to the solvent (DMSO) control for each reaction. Graph shows mean ± SEM, n = 3 independent experiments. *p=0.0492 (SST16, F-22G3) or 0.0154 (PhenDC3, 18GGG), ***p=0.0002 (one-way t-tests on difference with 100%).
 
 Consistent with these data, all three ligands partially inhibited telomerase extension of F-22G3 when incubated at the same concentrations in ensemble telomerase activity assays (Figure 7—figure supplement 5). PhenDC3 resulted in a more dramatic decrease in activity than in G4 unfolding measured by smFRET, but it also caused a substantial loss of activity on a linear DNA substrate, consistent with its previously-described effects on telomerase in a manner independent of G4 (De Cian et al., 2007a).
 
 Together, these data suggest that telomerase unfolding and extension of an intramolecular parallel G4 are partially inhibited by ligand stabilization; nevertheless, telomerase is able to overcome this stabilization and unwind a substantial proportion (25–30%) of molecules (Figure 7J).
 
-## Ligand stabilization of intermolecular parallel G4 does not inhibit telomerase activity or telomerase-mediated G4 unfolding
+### Ligand stabilization of intermolecular parallel G4 does not inhibit telomerase activity or telomerase-mediated G4 unfolding
 
 To determine the generality of the ability of telomerase to extend G4 in the presence of stabilizing ligands, we also incubated [7GGT]4 with the same three G4 ligands. CD spectroscopy confirmed that none of the ligands substantially changed the parallel G4 conformation of [7GGT]4 (Figure 8—figure supplement 1A–C). Melting assays showed dramatic thermal stabilization of [7GGT]4 upon binding by all three ligands (ΔTm of +13°C (NMM), +21°C (SST16) and +26°C (PhenDC3), under the conditions detailed in Figure 8—figure supplement 1D–F). Telomerase activity assays were carried out at the same concentrations of [7GGT]4 and each ligand as used in CD analyses; surprisingly, stabilization of the G-quadruplex did not inhibit its extension by telomerase (Figure 8A–D). As previously described (De Cian et al., 2007a), PhenDC3 caused a decrease in enzyme processivity after the addition of 4 telomeric repeats to either a linear or a G4 substrate (Figure 8C), most likely resulting from stabilization of the G-quadruplexes that have been demonstrated to occur within telomerase product DNA (Jansson et al., 2019; Patrick et al., 2020). Concentrations of PhenDC3 higher than 1 µM caused dramatic inhibition of activity (Figure 8—figure supplement 2C), but again this effect was observed with both linear and G4 substrates, indicating G4-independent direct inhibition of telomerase by PhenDC3, as previously described (De Cian et al., 2007a). Neither NMM nor SST16 inhibited extension of linear or G4 substrates at any concentration used (Figure 8—figure supplement 2A and B). Thus, substantial stabilization of a parallel intermolecular G4 by three different ligands did not inhibit the ability of telomerase to use the G4 as a substrate.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig8-v2.jpg)
+
+**Figure 8.:** (A), (B), (C) Telomerase extension assays using 1 µM of [7GGT]4 or a linear 7-mer control (or 250 nM in the reactions with PhenDC3), in the presence or absence of 40 µM NMM (A), 100 μM SST16 (B) or 1 μM PhenDC3 (C). For the reactions with NMM, linear 7GGT (1 mM) was incubated with 10 mM NMM prior to G4 folding, and the G4-ligand complex diluted 250-fold for the activity assay. n+3 indicates the position of the product with the first three nucleotides incorporated. LC: 5´-32P-labeled synthetic 100 nt DNA used as a recovery/loading control. (D) Quantitation of activity in (A–C), normalized to the solvent (DMSO) control for each reaction. Graph shows mean ± SEM, n = 2–5 independent experiments.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A – C) CD spectra and (D – F) melting curves measured by CD at 260 nm of 1 mM [7GGT]4 in the presence or absence of 40 μM NMM, 100 μM SST16 or 1 μM PhenDC3.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Telomerase extension assays in the presence of either (A) NMM (0, 4 μM, 20 μM, 40 μM, 80 μM, 160 μM), (B) SST16 (0, 10 μM, 25 μM, 50 μM, 75 μM, 100 μM) or (C) PhenDC3 (0, 0, 0.5 μM, 1 μM, 2.5 μM, 5 μM, 10 μM). DNA concentrations were 1 μM (A, B) or 250 nM (C). NMM was incubated with 7GGT during G4 folding at 250-fold higher concentrations, and the G4-ligand complex diluted for the assay. LC is a 100 nt loading control and n+3 indicates the product with the first three nucleotides incorporated.
+
 To further understand this effect at the molecular level we performed smFRET experiments to visualize F-[7GGT]4 stabilized by NMM, SST16 or PhenDC3 in the presence of telomerase, with or without dNTPs. Ligand-stabilized F-[7GGT]4 exhibited a constant FRET signal at 0.57 (Figure 9—figure supplement 1), but in the presence of telomerase, a single-step FRET decrease from 0.57 to 0.36 was observed in a majority of single-molecule traces (Figure 9J, Figure 9—figure supplement 2). These data suggest that ligand binding to F-[7GGT]4 did not prevent telomerase from inducing a conformational change in the G4, as occurs in the absence of ligand. When F-[7GGT]4 was incubated with both telomerase and dNTPs in the presence of each ligand, most molecules showed a unidirectional two-step decrease in FRET value, from 0.57 to 0.36, and then to 0.19 (Figure 9A–J). We assessed the F-[7GGT]4 unfolding rate in the presence of the ligands by measuring the dwell time of each molecule in the transient intermediate state (0.36 FRET) and fitting time distributions with a gamma distribution (Figure 9K, Figure 9—figure supplement 3). The rates of telomerase-mediated unfolding of NMM-, SST16- and PhenDC3-stabilized G4 were 0.090 ± 0.017 s−1 (N = 2.40 ± 0.04), 0.28 ± 0.07 s−1 (N = 3.7 ± 0.1), and 0.15 ± 0.05 s−1 (N = 2.9 ± 0.1), respectively (mean ± SEM). Thus, while neither PhenDC3 nor NMM resulted in a significant change in the unfolding rate of this G-quadruplex, in the presence of SST16 unfolding occurred significantly faster (p=0.021; Student’s t-test) than in the absence of ligands (0.073 ± 0.013 s−1). Together, these data demonstrate that neither unwinding nor extension of parallel intermolecular G4 by telomerase were inhibited by ligand-mediated stabilization of the G4.
 
-## Telomerase can potentially accommodate a G4 substrate after protein conformational changes
+![Figure 9.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig9-v2.jpg)
+
+**Figure 9.:** (A), (D), (G) Representative single-molecule FRET trajectories of NMM-stabilized (A; 10 mM in folding reaction), SST16-stabilized (D; 100 µM) or PhenDC3-stabilized (G; 1 µM) F-[7GGT]4 in the presence of telomerase and dNTPs. (B), (E), (H) Heat maps of the distribution of FRET intensities over 0–150 s in the presence of telomerase, dNTPs and either NMM (n = 63) (B), SST16 (n = 90) (E) or PhenDC3 (n = 76) (H). All plots include molecules collected in 4–6 independent experiments. For color key, see panel (H). (C), (F), (I) TDPs showing the changes in FRET value of 70, 80 and 58 molecules from the experiments in (A) to (I). (J) Plot of the percentage of F-[7GGT]4 molecules showing no change in FRET, a single FRET drop, or a two-step FRET drop, when incubated with telomerase and the indicated ligands at the concentrations shown in (A) – (I); error bars represent sample size/√total population. (K) The unfolding rate of F-[7GGT]4 in the presence of the above concentrations of NMM, SST16, PhenDC3 or no ligand, calculated by fitting the dwell time distributions of the intermediate FRET state to a gamma distribution. Rates and curve fitting parameters are in Figure 9—figure supplement 3.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Representative FRET trajectories (A, C, E) and heat maps (B, D, F) of F-[7GGT]4 in the presence of NMM (10 mM in folding reaction), SST16 (100 µM) or PhenDC3 (1 µM), without telomerase; n = 120 (B), 73 (D), 111 (F), molecules, collected in 4–6 independent experiments. For color key, see panel (F).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Representative FRET trajectories (A, C, E) and heat maps (B, D, F) of F-[7GGT]4 in the presence of NMM (10 mM in folding reaction), SST16 (100 µM) or PhenDC3 (1 µM), with telomerase; n = 80 (B), 60 (D), 74 (F) molecules, collected in 4–6 independent experiments. For color key, see panel (F).
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/56428/elife-56428-fig9-figsupp3-v2.jpg)
+
+### Telomerase can potentially accommodate a G4 substrate after protein conformational changes
 
 Our data demonstrate that telomerase extends G4 substrates while they are partially structured (data herein, and Moye et al., 2015); however, they are bulkier than their single-stranded DNA counterparts, so how the active site of telomerase accommodates G4 has been an open question. To address this, we performed molecular modeling of binding of the tetrameric G4 [7GGT]4 to human telomerase.
 
@@ -140,7 +262,129 @@ There is growing evidence for G4 formation at telomeres (Biffi et al., 2013; Moy
 
 ## Materials and methods
 
-## Oligonucleotides and G-quadruplex preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T (embryonic kidney, immortalized with adenovirus)</td>
+      <td>American Type Tissue Collection</td>
+      <td>Cat#: ATCC CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-hTERT (sheep polyclonal)</td>
+      <td>Abbexa Ltd.</td>
+      <td>Cat#: abx120550</td>
+      <td>IP (40 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pApex-CMV-hTERT (plasmid)</td>
+      <td>PMID:26158869</td>
+      <td></td>
+      <td>Dr Tracy Bryan, Dr Scott Cohen</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pApex-CMV-dyskerin-U3-hTR (plasmid)</td>
+      <td>PMID:26158869</td>
+      <td></td>
+      <td>Dr Tracy Bryan, Dr Scott Cohen</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hTERT amino acids 276–294 (peptide)</td>
+      <td>Abbexa Ltd.</td>
+      <td>Cat#: abx069990</td>
+      <td>Sequence: ARPAEEATSLEGALSGTRH</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads M-280 Streptavidin</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat#: 11206D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NeutrAvidin Protein</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat#: 31050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Unylinker CPG solid support</td>
+      <td>ChemGenes</td>
+      <td>Cat#: N-4000–05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gel-Pak 2.5 Desalting Column</td>
+      <td>Glen Research</td>
+      <td>Cat#: 61-5025-25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AlexaFluor 555 NHS Ester</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat#: A20009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(3-Aminopropyl)triethoxy silane</td>
+      <td>Alfa Aesar</td>
+      <td>Cat#: A10668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-PEG-SVA and mPEG-SVA</td>
+      <td>Laysan Bio</td>
+      <td>Cat#: BIO-PEG-SVA-5K-100MG and MPEG-SVA-5K-1g</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Methyl Mesoporphyrin IX (NMM)</td>
+      <td>Frontier Scientific</td>
+      <td>Cat#: NMM580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhenDC3</td>
+      <td>PMID:17260991</td>
+      <td></td>
+      <td>Dr Marie-Paule Teulade-Fichou</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SST16</td>
+      <td>PMID:19419877</td>
+      <td></td>
+      <td>Dr Siritron Samosorn</td>
+    </tr>
+  </tbody>
+</table>
+
+### Oligonucleotides and G-quadruplex preparation
 
 Most DNA oligonucleotides (Supplementary file 1) were purchased from Integrated DNA Technologies and RNA oligonucleotides from Dharmacon, with purification by high performance liquid chromatography (HPLC). Oligonucleotides 22G0, 22G3, and 22G0+tail were synthesized as previously described (Abou Assi et al., 2017). Synthesis of (C5-alkylamino)-dT-41G3 (the equivalent of 22G3+tail prior to AlexaFluor 555 conjugation) was performed on an ABI 3400 DNA synthesizer (Applied Biosystems) at 1 μmol scale on Unylinker CPG solid support. Conjugation of (C5-alkylamino)-dT-41G3 to AlexaFluor 555 NHS Ester to produce the desired 22G3+tail oligonucleotide was achieved following the standard protocol by Sigma-Aldrich (Protocol for Conjugating NHS-Ester Modifications to Amino-Labeled Oligonucleotides). Briefly, a solution of (C5-alkylamino)-dT-41G3 (200 μL, 0.3 mM) in sodium tetraborate decahydrate buffer (0.091 M, pH 8.5) was combined with a solution of AlexaFluor 555 in anhydrous DMSO (50 μL, 8 mM) and the reaction mixture was left shaking at room temperature for 2.5 hr. Samples were evaporated to dryness and the 22G3+tail product was purified by anion exchange HPLC as described (Abou Assi et al., 2017). The peak of (C5-alkylamino)-dT-41G3 eluted between 24 and 26 min, while the desired product peak of 22G3+tail eluted between 27 and 28.5 min. Based on the area of the two peaks, the yield of the conjugation reaction is approximately 25%. The collected sample of 22G3+tail was desalted on Gel-Pak 2.5 Desalting Columns according to the manufacturer’s protocol. The maximum absorbance of AlexaFluor 555 (555 nm) in the purified 22G3+tail was verified with UV-Vis spectroscopy. The mass of 22G3+tail was verified by high resolution liquid chromatography–mass spectrometry (LC–MS; 14,000.23 m/z).
 
@@ -148,43 +392,49 @@ Intramolecular G4 formation using 22G0 and derivatives (Supplementary file 1) wa
 
 7GGT and its labeled derivatives were combined at a final concentration of 1 mM in K+ hTel buffer (50 mM Tris-HCl, pH 8, 1 mM MgCl2, 150 mM KCl) and heat denatured for 5 min at 95°C. They were allowed to cool slowly (~1 hr) to 25°C and left to equilibrate at this temperature for 72 hr. Intermolecular G4 formation was confirmed by native gel electrophoresis followed by staining with SYBR Gold (Life Technologies), as described (Moye et al., 2015). DNA concentrations were determined by UV absorbance at 260 nm (extinction coefficients in Supplementary file 1). Concentrations of G-quadruplexes are given as the concentration of assembled complexes (i.e. taking strand stoichiometry into account). Folded G-quadruplexes were stored at 4°C until use.
 
-## Circular dichroism
+### Circular dichroism
 
 Circular dichroism (CD) spectra were recorded at 25°C on either an Aviv 215S or a JASCO J-810 CD spectrometer equipped with Peltier temperature controllers. G-quadruplex samples of the desired conformation were prepared at 250 nM - 20 µM in their folding buffers. Three to four scans were accumulated over the indicated wavelength ranges in a 0.1 cm or 1 cm path length cell. Parameters used with the Aviv CD spectrometer included a time constant of 100 ms, averaging time 1 s, sampling every 1 nm, and bandwidth 1 nm, while the JASCO CD spectrometer was used with a scan rate of 100 nm/min and a response time of 2.0 s. Buffers alone were also scanned and these spectra subtracted from the average scans for each sample. CD spectra were collected in units of millidegrees, normalized to the total species concentrations and expressed as molar ellipticity units (deg × cm2 dmol−1). Data were smoothed using the Savitzky-Golay function within the JASCO graphing software, or the smoothing function within GraphPad Prism. For thermal stability analysis, the samples were scanned using the above parameters, but with a fixed wavelength (260 nm) over increasing temperature (25°C to 100°C), at a rate of ~1 °C/min. For reactions including SST16 or PhenDC3 (prepared as described; De Cian et al., 2007b; Samosorn et al., 2009), the ligand was incubated with the folded DNA substrate at 25°C for 30 min prior to CD spectroscopy. For reactions including NMM (Frontier Scientific, USA), the ligand was incubated with the DNA prior to G-quadruplex folding and the G4-ligand complex diluted prior to CD spectroscopy. Concentrations of ligands and G4 DNA used for each experiment are given in the figure legends.
 
-## Preparation of telomerase
+### Preparation of telomerase
 
 Human telomerase was overexpressed in HEK293T cells (identity verified by STR profiling, certified mycoplasma-free) and purified as described (Moye et al., 2015; Tomlinson et al., 2017). Briefly, plasmids encoding hTERT, hTR and dyskerin (available from the authors with an accompanying Materials Transfer Agreement) were transiently transfected into HEK293T cells growing in 20 L bioreactors using polyethylenimine and cells harvested 4 days later. Cell lysates were clarified, ribonucleoprotein complexes enriched with MgCl2, and telomerase immunoprecipitated with a sheep polyclonal hTERT antibody, raised against hTERT amino acids 276–294 (ARPAEEATSLEGALSGTRH) (Cohen and Reddel, 2008). Telomerase was eluted by competitive elution with the same peptide in 20 mM HEPES-KOH (pH 8), 300 mM KCl, 2 mM MgCl2, 0.1% v/v Triton X-100% and 10% v/v glycerol. Fractions were assayed for telomerase concentration by dot-blot northern against hTR (Tomlinson et al., 2017), and equal amounts of enzyme (~1.5 nM) used in each activity assay.
 
-## Telomerase activity assays
+### Telomerase activity assays
 
 The following reaction was prepared to give 20 µL per sample: 250 nM - 2 µM of the specified oligonucleotide (concentrations given in figure legends), 20 mM HEPES-KOH (pH 8), 2 mM MgCl2, 150 mM KCl, 5 mM dithiothreitol, 1 mM spermidine-HCl, 0.1% v/v Triton X-100, 0.5 mM dTTP, 0.5 mM dATP, 4.6 µM nonradioactive dGTP and 0.33 µM [α-32P]dGTP at 20 mCi mL−1, 6000 Ci mmol−1 (PerkinElmer Life Sciences). For reactions including SST16 or PhenDC3, the ligand was incubated with the folded DNA substrate at 25°C for 30 min prior to adding other components. For reactions including NMM, the ligand was incubated with the DNA prior to G-quadruplex folding; concentrations are given in figure legends. Telomerase activity assays were initiated by adding purified human telomerase to ~1.5 nM, and incubating at 37°C for 1 hr. The reaction was quenched by the addition of 20 mM EDTA and 1–2 × 103 cpm of a 5'-32P-labeled synthetic 100-mer, 30-mer or 12-mer DNA (as indicated in figure legends) as an internal recovery standard. Products of telomerase extension were recovered as described, either with phenol/chloroform extraction followed by ethanol precipitation (Moye et al., 2015), or, for biotinylated substrates, by recovery with magnetic streptavidin beads (Tomlinson et al., 2017). The solution was heated at 90°C for 5 min, and 3 μL was electrophoresed over a 10% polyacrylamide sequencing gel (0.2 mm thick x 40 cm length x 35 cm width, 32-well comb) run in 1 × TBE/8 M urea at 85 W. The gel was transferred to filter paper, dried for 30 min at 80°C, exposed to a PhosphorImager screen, visualized on a Typhoon FLA9500 scanner (GE Healthcare Lifesciences) and analyzed using ImageQuant software.
 
-## Single-molecule fluorescence imaging and data analysis
+### Single-molecule fluorescence imaging and data analysis
 
-## Microscope setup for FRET imaging
+#### Microscope setup for FRET imaging
 
 A home-built objective-type total internal reflection fluorescence (TIRF) microscope based on an Olympus IX-71 model was used to record single-molecule movies. A Coherent Sapphire green (532 nm) laser was used to excite donor molecules at an angle of TIRF by focusing on a 100X oil immersed objective. FRET was measured by excitation with a 532 nm laser and the emissions at 565 and 665 nm were collected using a band pass filter at 560–600 nm and a long pass filter at 650 nm. Scattered light was removed by using a 560 nm long pass filter. AlexaFluor 555 and AlexaFluor 647 signals were separated by 638 nm dichroic using photometrics dual view (DV-2) and both signals were focused onto a charge-coupled device (CCD) camera (Hamamatsu C9 100–13), simultaneously. Data were collected at five frames per second.
 
-## Sample preparation for FRET experiments
+#### Sample preparation for FRET experiments
 
 Quartz coverslips were treated with 100% ethanol and 1 mM KOH. Then, aminosilanization of coverslips was carried out in a 1% v/v (3-Aminopropyl)triethoxy silane solution in acetone. PEGylation was carried out by incubating a mixture of biotin-PEG-SVA and mPEG-SVA at a ratio of 1:20 prepared in 0.1 M NaHCO3 solution on the top of a silanized coverslip for at least 3–4 hr. Finally, PEGylated coverslips were stored under dry nitrogen gas at −20°C.
 
-## Single-molecule experiments
+#### Single-molecule experiments
 
 NeutrAvidin Protein solution was prepared in K+ buffer (10 mM Tris-HCl (pH 8), 1 mM MgCl2 and 150 mM KCl) and spread on the top of a dry PEGylated coverslip followed by a 10 min incubation. Sample flow chambers were created by sandwiching polydimentylsiloxane (PDMS) on top of the neutravidin coated coverslip. Then, blocking buffer (K+ buffer with 1% Tween-20) was injected into the channel in order to reduce non-specific binding of proteins on the surface, followed by 10–15 min incubation. A 50 pM solution of biotinylated FRET G-quadruplex substrate was prepared in K+ buffer and 200 µL injected into the flow chamber using a syringe pump (ProSense B.V.) followed by incubation for 10 min. Unbound sample was washed off in K+ buffer. Movies were recorded at room temperature (20 ± 1°C) for 3–5 min in oxygen-scavenging system (OSS) consisting of protocatechuic acid (PCA, 2.5 mM) and protocatechuate-3,4-dioxigenase (PCD, 50 nM) to reduce photo-bleaching of the fluorophores, and 2 mM Trolox to reduce photo-blinking of dyes. For the Li+ buffer substitution reactions, either inter- or intramolecular G4 substrates were immobilized on the coverslip surface in K+ buffer followed by washing off excess of unbound molecules using K+ buffer containing OSS. Then, Li+ buffer (10 mM Tris-HCl (pH 8), 1 mM MgCl2 and 150 mM LiCl) containing OSS was introduced into the flow cell to replace the K+-buffer while monitoring the change in FRET experienced by G4 molecules in real time; movies were acquired until all acceptor molecules disappeared from the field of view. For experiments in the presence of enzyme, 200 µL of telomerase (0.5 nM; expressed and purified as described above) and/or dNTPs or ddNTPs (0.5 mM) were injected into the microscopic channel containing immobilized G4 DNA while the movie was recorded continuously. The buffer reached the microscopic channel at ~10 s and the movie was collected until all acceptor molecules photobleached. For reactions including SST16 or PhenDC3, the ligands were incubated with the folded DNA substrate at 25°C for 30 min prior to dilution for sample injection. For reactions including NMM, the ligand was incubated with the DNA prior to G-quadruplex folding, and the G4-ligand complex diluted to 50 pM G4 prior to injection. Concentrations of DNA and ligands combined for each experiment are given in the figure legends.
 
-## Data analysis
+#### Data analysis
 
 Single-molecule intensity time trajectories were generated in IDL and analyzed in MATLAB using custom-written scripts (software available at https://cplc.illinois.edu/research/tools). Approximate FRET value is measured as the ratio of acceptor intensity to the sum of the donor and acceptor intensities after correcting cross talk between donor and acceptor channels for both inter- and intramolecular G4s. Briefly, FRET pairs were identified through aligning the red (acceptor) and green (donor) channels by using highly fluorescent beads and subsequent co-localization of the donor/acceptor fluorescence spots using IDL software. Then, raw intensity data were analyzed using MATLAB script. Those molecules were selected that displayed donor and/or acceptor photobleaching, or showed clear dynamics with anti-correlated donor-acceptor fluorescence for further analysis. The number of photobleaching steps was then used to determine how many donor and/or acceptor dyes were present, with only molecules containing one donor and one acceptor used for further analysis. Intramolecular G4 was designed in such a way that it contains one donor and one acceptor, therefore pre-selection of molecules was not required. In contrast, an intermolecular G4 has many possible combinations of donor and acceptor molecules because of its design, so pre-selection of molecules that contain one donor and one acceptor was necessary. Typically, in a field of view we observed ~29% molecules containing one donor and one acceptor fluorophore showing ~0.6 FRET,~6% molecules showing above 0.75 FRET and the rest of the molecules either had one donor (~50%) or two donor molecules and no acceptors (~15%). The collected FRET traces were further analyzed using the vbFRET algorithm (https://sourceforge.net/projects/vbfret/; Bronson et al., 2013) to find possible FRET states and transition frequencies among these FRET states with a Hidden Markov Model (HMM). All graphs were generated and fitted using Igor software.
 
-To measure rate constants for G4 unfolding, dwell time histograms were constructed and fitted to a gamma function of the form:ft= τN-1exp⁡(-kτ)where τ is the dwell time, k is the observed rate constant of the transition between FRET states, and N is the number of hidden steps (Floyd et al., 2010; Syed et al., 2014). Chi-square values represent the goodness of fit of the above curves, and p-values were calculated using the chi-square values and their corresponding degree of freedom (n-1, where n is the number of bins used to construct a particular histogram). SEMs of the rate constants were calculated by dividing the standard deviation of the reciprocal of the mean of the dwell time values (τ) by the square root of the number of molecules in that data set.
+To measure rate constants for G4 unfolding, dwell time histograms were constructed and fitted to a gamma function of the form:
 
-## Gaussian fitting of the cumulative FRET histograms
+$$
+ft=\tau^{N-1}exp⁡(-k\tau)
+$$
+
+where τ is the dwell time, k is the observed rate constant of the transition between FRET states, and N is the number of hidden steps (Floyd et al., 2010; Syed et al., 2014). Chi-square values represent the goodness of fit of the above curves, and p-values were calculated using the chi-square values and their corresponding degree of freedom (n-1, where n is the number of bins used to construct a particular histogram). SEMs of the rate constants were calculated by dividing the standard deviation of the reciprocal of the mean of the dwell time values (τ) by the square root of the number of molecules in that data set.
+
+#### Gaussian fitting of the cumulative FRET histograms
 
 A multiple-Gaussian fit model was applied to FRET histograms generated by binning many FRET trajectories, to obtain mean FRET values. Errors represent the curve-fitting errorstandard deviation of the data.
 
-## Telomerase molecular modeling
+### Telomerase molecular modeling
 
 The fasta sequence of the human Telomerase Reverse Transcriptase (TERT) was obtained from Uniprot (ID:O14746). Swiss-model (Waterhouse et al., 2018) was used to create a homology model using all possible templates. The highest quality model (based upon a combination of the best Q-Mean (−7.33) and Mol Probability (2.08) scores, and the amino acid properties (>82% Ramachandran favoured)) was chosen. This model utilized the cryo-EM structure of Tetrahymena thermophila TERT as a template, which has 19.03% sequence identity to human TERT (PDB code: 6D6V Jiang et al., 2018).
 

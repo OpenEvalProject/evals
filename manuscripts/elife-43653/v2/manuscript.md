@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.43653.001 Over half of breast-cancer-related deaths are due to recurrence 5 or more years after initial diagnosis and treatment. This latency suggests that a population of residual tumor cells can survive treatment and persist in a dormant state for many years. The role of the microenvironment in regulating the survival and proliferation of residual cells following therapy remains unexplored. Using a conditional mouse model for Her2-driven breast cancer, we identify interactions between residual tumor cells and their microenvironment as critical for promoting tumor recurrence. Her2 downregulation leads to an inflammatory program driven by TNFα/NFκB signaling, which promotes immune cell infiltration in regressing and residual tumors. The cytokine CCL5 is elevated following Her2 downregulation and remains high in residual tumors. CCL5 promotes tumor recurrence by recruiting CCR5-expressing macrophages, which may contribute to collagen deposition in residual tumors. Blocking this TNFα-CCL5-macrophage axis may be efficacious in preventing breast cancer recurrence.
+Over half of breast-cancer-related deaths are due to recurrence 5 or more years after initial diagnosis and treatment. This latency suggests that a population of residual tumor cells can survive treatment and persist in a dormant state for many years. The role of the microenvironment in regulating the survival and proliferation of residual cells following therapy remains unexplored. Using a conditional mouse model for Her2-driven breast cancer, we identify interactions between residual tumor cells and their microenvironment as critical for promoting tumor recurrence. Her2 downregulation leads to an inflammatory program driven by TNFα/NFκB signaling, which promotes immune cell infiltration in regressing and residual tumors. The cytokine CCL5 is elevated following Her2 downregulation and remains high in residual tumors. CCL5 promotes tumor recurrence by recruiting CCR5-expressing macrophages, which may contribute to collagen deposition in residual tumors. Blocking this TNFα-CCL5-macrophage axis may be efficacious in preventing breast cancer recurrence.
 
 ## Introduction
 
@@ -29,27 +29,51 @@ We used a conditional mouse model of Her2-driven breast cancer to examine intera
 
 ## Results
 
-## Her2 downregulation induces an inflammatory gene expression program driven by the TNFα/IKK pathway
+### Her2 downregulation induces an inflammatory gene expression program driven by the TNFα/IKK pathway
 
 To understand how interactions between tumor cells and their environment change in response to therapy, we first examined gene expression changes following Her2 downregulation in Her2-driven tumor cells. Two independent cell lines derived from primary Her2-driven tumors (Alvarez et al., 2013; Moody et al., 2002) were cultured in the presence of dox to maintain Her2 expression, or removed from dox for 2 days to turn off Her2 expression. Changes in Her2 expression following dox withdrawal were confirmed by qPCR analysis (Figure 1—figure supplement 1A). Changes in gene expression were measured by RNA sequencing. Her2 downregulation led to widespread changes in gene expression in both cell lines (Figure 1A). Gene set enrichment analysis showed that an E2F signature was the most highly enriched gene set in cells with Her2 signaling on (+dox; Figure 1—figure supplement 1B), consistent with previous literature and the observation that Her2 is required for the proliferation of these cells (Lee et al., 2000). Interestingly, the gene sets most significantly enriched in cells following Her2 downregulation (-dox) were an inflammatory gene signature and a TNFα/NFκB gene signature (Figure 1B). These gene sets comprised genes encoding chemokines in the CCL family (CCL2, CCL5, and CCL20) and CXCL family (CXCL1, CXCL2, CXCL3, CXCL5, and CXCL10), proteins that mediate cell-cell interactions (TLR2, ICAM1, and CSF1) as well as signaling components of the NFκB pathway (NFΚBIA and NFΚBIE). All these genes were upregulated following Her2 downregulation (Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig1-v2.jpg)
+
+**Figure 1.:** (a) RNA-seq analysis of two independent primary Her2-driven tumor cell lines in the presence of Her2 expression (+dox) or 2 days following Her2 downregulation (-dox). The heatmap shows the top 100 differentially expressed genes between +dox and -dox conditions. R1 and R2 are biological replicates. (b) Gene set enrichment analysis (GSEA) of RNA-seq data showing enrichment of an inflammatory response signature and a TNFα/NF-κB signature in cells following Her2 downregulation. p-Values and normalized enrichment scores (NES) are shown. (c) Heatmap showing expression of select genes from the TNFα/NF-κB signature in the presence of Her2 expression (+dox) or following Her2 deinduction (-dox). (d) qRT-PCR analysis of CCL5 expression following 1- or 2-day treatment with conditioned media harvested from primary cells following Her2 downregulation. Dox was added to conditioned media prior to treatment to maintain Her2 expression in target cells. Results shown are representative of two independent experiments. (e) qRT-PCR of TNFα expression in primary cells in the presence of Her2 expression (+dox) or 2 and 4 days following Her2 downregulation. Results shown are representative of two independent experiments. (f) Primary tumor cells were treated with conditioned media as described in (d), and activation of the NF-κB pathway was assessed by Western blot analysis of total and phospho-p65. Results show three biological replicates per time point. (g) qRT-PCR analysis of the indicated genes in primary tumor cells in the presence of Her2 expression (+dox) or 1 and 2 days following Her2 downregulation (-dox). At the time of Her2 downregulation, cells were treated with the pan-IKK inhibitor IKK16 (100 nM) or vehicle control. Results show the average of 3 biological replicates per condition. Error bars denote mean ± SEM. Significance was determined using a two-tailed Student’s t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) qRT-PCR analysis of Erbb2 expression in primary cells with Her2 on (+dox) or Her2 off (-dox). (b) Gene set enrichment analysis (GSEA) of RNA-seq data showing an E2F gene signature is enriched in cells with Her2 signaling on. p-Values and normalized enrichment scores (NES) are shown. (c) Western blot showing p65 phosphorylation in primary tumor cells treated with the indicated concentration of Neratinib for 24 hr, or 24 hr following dox withdrawal. (d–f) qRT-PCR analysis of TNFα, CCL5, and CXCL5 expression 24 hr after treatment with 0.1 μM Neratinib. (g) qRT-PCR analysis of CCL2, CCL5, and CXCL5 expression in NIH-3T3 treated with 2 μg/mL dox, 10 ng/mL TNFα, or both for 24 hr. (h) qRT-PCR analysis of Erbb2 expression of cells treated with -dox conditioned media with dox supplementation. (i) Primary tumor cells were treated with +dox conditioned media and activation of the NF-κB pathway was assessed by Western blot analysis of total and phospho-p65. Results show two biological replicates per time point.
 
 At high concentrations (>40 μg/ml) doxycycline itself can inhibit the NFκB pathway (Alexander-Savino et al., 2016; Santa-Cecília et al., 2016). Although the concentrations of dox (2 μg/ml) we use to culture primary tumor cells are well below these levels, we wanted to confirmed that the NFκB pathway activation observed following dox withdrawal was due to loss of Her2 signaling. To do this, we treated primary tumor cells with Neratinib, a small-molecule inhibitor of Her2, to inhibit Her2 signaling without removal of dox. Neratinib treatment led to an increase in phospho-p65 (Figure 1—figure supplement 1C), increased expression of TNFα (Figure 1—figure supplement 1D), and increased expression of the NFκB targets CXCL5 and CCL5 (Figure 1—figure supplement 1E and F). To further confirm that the low concentrations of dox used to culture primary tumor cells do not directly inhibit the NFκB pathway we treated NIH3T3 cells with TNFα in the presence or absence of 2 μg/ml dox and measured NFκB target genes. Dox treatment had no effect on the induction of NFκB target genes following TNFα treatment (Figure 1—figure supplement 1G). Taken together, these results demonstrate that Her2 inhibition leads to activation of the NFκB pathway.
 
 Given the coordinated upregulation of these NFκB target genes, we reasoned that their expression may be induced by a common upstream secreted factor acting in an autocrine manner. To test this, we collected conditioned media from primary tumor cells grown in the absence of dox for 2 days. This conditioned media was supplemented with dox to maintain Her2 expression and added to naive primary tumor cells. Treatment with conditioned media led to a time-dependent upregulation of the pro-inflammatory chemokine CCL5 (Figure 1D). One common upstream mediator of this cytokine response is tumor necrosis factor alpha (TNFα), and we found that TNFα expression is increased between 10-fold and 100-fold following Her2 downregulation (Figure 1E). To test whether this is sufficient to activate downstream signaling pathways, we examined activation of the NFκB pathway following treatment with conditioned media from cells following Her2 downregulation. Indeed, we found that treatment of naive cells with Her2-off (–dox) conditioned media led to rapid, robust, and prolonged activation of the NFκB pathway as assessed by phosphorylation of p65 (Figure 1F). Importantly, Her2 levels remained high in these target cells (Figure 1—figure supplement 1H), indicating that Her2-off (–dox) conditioned media can activate the NFκB pathway even in the presence of Her2 signaling. In contrast, conditioned media from Her2-on (+dox) cells had no effect on p65 phosphorylation (Figure 1—figure supplement 1I). Finally, we tested whether the induction of chemokine genes following Her2 downregulation was dependent upon the NFκB pathway by treating cells with the IKK inhibitor, IKK16. We found that blocking IKK activity blunted the induction of all chemokine genes following dox withdrawal (Figure 1G). Taken together, these results suggest that Her2 downregulation leads to the induction of a pro-inflammatory gene expression program, likely driven by autocrine-acting TNFα and mediated through the IKK-NFκB pathway.
 
-## Immune cell infiltration during tumor regression and residual disease
+### Immune cell infiltration during tumor regression and residual disease
 
 Her2 downregulation in Her2-driven tumors in vivo induces apoptosis and growth arrest, ultimately leading to tumor regression (Moody et al., 2002). However, a small population of tumor cells can survive Her2 downregulation and persist for up to 6 months before resuming growth to form recurrent tumors. These residual tumors can be identified histologically (Figure 2A). Many of the cytokines and chemokines induced shortly after Her2 downregulation function as chemoattractants for various immune cells (Binnewies et al., 2018; López et al., 2017). This led us to speculate that Her2 downregulation in vivo may promote infiltration of immune cells into the tumor. We therefore asked whether the immune cell composition of tumors changed during tumor regression and in residual tumors. CD45 staining showed that leukocyte infiltration increased dramatically following Her2 downregulation as compared to primary tumors (Figure 2B–C, Figure 2—figure supplement 1A). Surprisingly, leukocytes remained high in residual tumors (Figure 2D, Figure 2—figure supplement 1A). Masson’s trichrome staining revealed prominent collagen deposition in residual tumors (Figure 2D), consistent with a desmoplastic response in residual tumors. Staining for the macrophage marker F4/80 showed a dramatic increase in macrophage abundance during tumor regression (Figure 2C, Figure 2—figure supplement 1A), and macrophage levels remained elevated in residual tumors (Figure 2D, Figure 2—figure supplement 1A). CD3 staining showed increased T cell infiltration in regressing and residual tumors (Figure 2—figure supplement 1A,B). Taken together, these results indicate that Her2 downregulation leads to the infiltration of CD45+ leukocytes, and specifically F4/80+ macrophages. Residual tumors contain high numbers of macrophages and abundant collagen deposition, consistent with a desmoplastic response.
 
-## Cytokine profiling of residual tumors
+![Figure 2.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig2-v2.jpg)
+
+**Figure 2.:** (a) H and E-stained section of a representative residual tumor from a previously tumor-bearing MTB/TAN mouse. Insets show higher magnification view of residual tumor cells (left) and staining for CK8 (right). (b–d) Representative images of a primary tumor (b), regressing tumor (5 days -dox) (c), and residual tumor (d), stained with H and E, Masson’s Trichome (MT), CD45, or F4/80. Primary tumors show little collagen deposition and only modest leukocyte infiltration. Her2 downregulation leads to infiltration of CD45+ cells, predominantly F4/80+ macrophages. Residual tumors have abundant collagen deposition and leukocyte infiltration.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) CD3 staining of representative MTB;TAN primary, 5 days -dox, and residual tumors. (b) Bright-field and fluorescent images of a representative GFP-labeled orthotopic residual tumor in the context of a non-fluorescent mammary gland. (c) Quantification of IHC and MT staining of primary, regressing, and residual tumors from the MTB;TAN model. (d–f) F4/80 staining of representative orthotopic primary, 5 days -dox, and residual tumors showing macrophage infiltration.
+
+### Cytokine profiling of residual tumors
 
 Immune cells can influence tumor cell survival and function (Flores-Borja et al., 2016; Pollard, 2004). The large number of immune cells present in residual tumors suggests that these cells may function to regulate the behavior of residual tumor cells. To begin to address this, we sought to identify secreted factors that are expressed in residual tumors. Residual tumor cells in the autochthonous MTB;TAN model are unlabeled and are diffusely scattered throughout the mammary gland, precluding their isolation. Therefore, we used an orthotopic model in which residual tumors can be easily isolated. In this model, primary Her2-driven tumors are digested, cultured, and infected with GFP. Cells are then injected into the mammary fat pad of recipient mice on dox to generate an orthotopic primary tumor. Following dox withdrawal, the fluorescently labeled residual tumors can be easily microdissected (Figure 2—figure supplement 1C). We first confirmed that the orthotopic model exhibited similar patterns of immune cell infiltration as the autochthonous model. Indeed, we found that macrophage staining increased dramatically during tumor regression and in residual tumors (Figure 2—figure supplement 1D–F), suggesting the orthotopic model is appropriate for identifying secreted proteins present in these residual tumors.
 
 We generated a cohort of orthotopic primary tumors (n = 4) and residual tumors at 28 days (n = 6) and 56 days (n = 6) following dox withdrawal. Residual tumors were microdissected using a fluorescent dissecting microscope. We then made protein lysates from all samples and measured the expression of cytokines and chemokines using antibody-based protein arrays. Four primary tumors and four 28 day residual tumors were profiled using a commercially available cytokine array, which measures the expression of 20 secreted factors. We then used a second commercially available cytokine array, which measures 40 cytokines and chemokines, to measure cytokine expression in the whole cohort of tumors. This analysis identified eight cytokines that were upregulated in residual tumors as compared to primary tumors (Figure 3A; fold change >2, p < 0.1, Figure 3—source data 1), including CCL5, osteoprotegerin (OPG), and Vascular cell adhesion protein 1 (VCAM-1) (Figure 3B). Interestingly, VCAM-1 has been shown to regulate breast cancer dormancy (Lu et al., 2011), while OPG can regulate the survival of breast cancer cells (Neville-Webbe et al., 2004).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig3-v2.jpg)
+
+**Figure 3.:** (a) Volcano plot showing differential cytokine expression between primary and residual tumors. Antibody-based cytokine arrays were used to measure cytokine expression in orthotopic primary tumors or microdissected residual tumors. Cytokines that are upregulated (fold change >2, p-value < 0.1) in dormant tumors are in red, and downregulated cytokines (fold change <-2, p-value < 0.1) are in blue. Significance was determined using a two-tailed Student’s t-test. (b) Quantification of CCL5, IL-13, IGFBP6, VCAM-1, OPG, HGF, Resistin, and P-Selectin expression in primary tumors and residual tumors. Values were derived from the cytokine arrays shown in (a). Significance was determined using a two-tailed Student’s t-test. (c) CCL5 expression in 18 matched pre- and post-treatment samples from GSE10281. Red lines show tumors in which CCL5 expression increased following treatment (>1.5 fold change), and blue lines show tumors with decreased CCL5 expression (<1.5 fold change). (d) Average CCL5 expression in pre- and post-treatment samples from (e). Significance was determined using a two-tailed paired Student’s t-test. Error bars denote mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Heatmap showing expression of selected cytokine and chemokine genes from 18 matched human breast tumors prior to treatment, or in residual tumors following neoadjuvant Letrozole treatment (GSE10281). Gene expression values were log2 transformed and median centered. (b–m) Average expression of CCL2, CXCL1, CXCL2, CXCL5, SELE, HGF, IGFBP6, IL-13, TNFRSF11B, SELP, RETN, and VCAM-1 in 18 matched pre- and post-treatment samples following neoadjuvant Letrozole treatment (GSE10281). Two-tailed paired t-test was performed between pre- and post-treatment samples. (n) Average CCL5 expression in 25 matched pre- and post-treatment samples from human breast tumors treated with neoadjuvant chemotherapy (GSE21974). Two-tailed paired t-test was performed between pre- and post-treatment samples.
+
 We next asked whether any cytokines were both induced acutely following Her2 downregulation and remained elevated in residual tumors. We found that only two cytokines, CCL5 and OPG, fulfilled these criteria. Given that OPG has previously been associated with dormancy, we focused our attention on CCL5. We then wanted to determine if CCL5 expression was elevated in human residual breast tumors following treatment. We analyzed a gene expression dataset of residual breast tumors that remain following neoadjuvant targeted therapy. A number of secreted factors were upregulated in residual tumors as compared to primary tumors, and CCL5 was one of the most significantly upregulated cytokines in this group (Figure 3C–D and Figure 3—figure supplement 1A–M). To confirm these results, we examined an independent gene expression data set from breast cancer patients treated with neoadjuvant chemotherapy. We found that CCL5 expression was also increased in residual tumors in this dataset (Figure 3—figure supplement 1N). These results suggest that CCL5 upregulation is a common feature of residual tumors cells that survive both conventional and targeted therapy in mice and humans, suggesting it may be functionally important in mediating the survival of these cells.
 
-## CCL5 expression promotes recurrence following Her2 downregulation
+### CCL5 expression promotes recurrence following Her2 downregulation
 
 We next wanted to directly assess whether CCL5 plays a functional role in regulating residual cell survival or recurrence. We first used an ELISA to measure CCL5 levels in orthotopic primary tumors, residual tumors, and recurrent tumors. CCL5 expression was elevated in residual tumors, confirming results from the cytokine array, and increased further in recurrent tumors (Figure 4A). We next engineered primary tumor cells to overexpress CCL5 or GFP as a control (Figure 4B) and used these cells in an orthotopic recurrence assay to test the effect of CCL5 expression on tumor recurrence. Control or CCL5-expressing cells were injected orthotopically into recipient mice on doxycycline to maintain Her2 expression. Primary tumors formed with similar kinetics following injection of control and CCL5-expressing cells, indicating that CCL5 expression had no effect on the growth of primary tumors (data not shown). Following primary tumor formation, mice were removed from dox to induce Her2 downregulation and tumor regression. Mice with residual tumors were palpated biweekly to monitor the formation of recurrent tumors. Tumors expressing CCL5 recurred significantly earlier than control tumors, indicating that CCL5 expression is sufficient to accelerate tumor recurrence (Figure 4C; p = 0.023; HR = 2.14).
 
@@ -59,15 +83,35 @@ We next wanted to directly assess whether CCL5 plays a functional role in regula
 
 We next asked if tumor-derived CCL5 is necessary for recurrence. To this end, we used CRISPR-Cas9 to knock out CCL5 in primary tumor cells (Figure 4D), and tested the effect of CCL5 knockout on recurrence using the orthotopic recurrence assay described above. The growth of CCL5 knockout tumors was not different from control tumors expressing a non-targeting sgRNA (data not shown). Mice were removed from dox, and the latency of recurrence between control and CCL5 knockout tumors was compared. We found that CCL5 knockout had no effect on the latency of recurrence (Figure 4E). Taken together, these results suggest that CCL5 expression is sufficient to accelerate recurrence, but tumor-derived CCL5 is not necessary for recurrence following Her2 downregulation.
 
-## CCL5 promotes macrophage infiltration in residual tumors
+### CCL5 promotes macrophage infiltration in residual tumors
 
 CCL5 is a chemoattractant for various cell types, including T cells, B cells, eosinophils, basophils, neutrophils, macrophages, and fibroblasts (Dembic, 2015; Lacy, 2017; Lee et al., 2017). We observe an increase in CCL5 levels during tumor regression and in residual tumors that is concomitant with immune cell infiltration. We therefore reasoned that the effect of CCL5 overexpression on recurrence may be mediated through its ability to recruit one or more of these cell types to residual lesions and recurrent tumors. CCL5 can signal through multiple receptors, including CCR1, CCR3, and CCR5, but it predominately acts through CCR5 (Soria and Ben-Baruch, 2008). We therefore examined CCR5 expression on various immune and stromal cells in primary tumors (+dox), regressing tumors (5 days –dox), residual tumors (69 days –dox), and recurrent tumors by flow cytometry. As expected, Her2 was downregulated following dox withdrawal in all tumors (Figure 5—figure supplement 1A). For each cell type, we measured the median fluorescence intensity (MFI) of CCR5 staining in CCR5+ cells. Interestingly, the level of CCR5 expressed on macrophages increased in residual tumors (Figure 5A and Figure 5—figure supplement 2). In contrast, CCR5 expression on CD4+ T cells CD8+ T cells increased in regressing tumors, but returned to baseline in residual tumors (Figure 5B and C, Figure 5—figure supplement 2). Similar to macrophages, the expression of CCR5 on fibroblasts was elevated in residual tumors (Figure 5D, Figure 5—figure supplement 2). We were also interested in examining CCR5 expression on CD45– tumor cells. We observed a slight increase in CCR5 expression in residual tumor cells, but otherwise there was no change in CCR5 expression on these cells (Figure 5E). To directly compare the expression of CCR5 in macrophages and tumor cells, we sorted these two populations from primary, regressing, residual, and recurrent tumors from MTB;TAN mice and performed qPCR analysis. CCR5 was expressed at higher levels on macrophages than tumor cells at each stage, and its expression was especially high on residual tumor macrophages (Figure 5—figure supplement 1B). Overall, these results identify several cell types – notably macrophages and fibroblasts – that express high levels of CCR5 and so are poised to respond to CCL5 in residual tumors.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig5-v2.jpg)
+
+**Figure 5.:** (a–d) Flow cytometry of immune cells in primary (n = 6), regressing (5 days -dox; n = 3), residual (n = 3), and recurrent (n = 3) tumors from autochthonous MTB;TAN mice. Immune cell populations analyzed include CD11b+/F4/80+ macrophages (a), CD4+ T cells (b), CD8+ T cells (c), PDGFRα fibroblasts (d), and tumor cells (e). Each immune cell population was divided into CCR5- or CCR5+ cells, and the median fluorescence intensity (MFI) of the CCR5+ population was calculated. (f) Flow cytometry of CD45-/PDGFRα+ fibroblasts in control residual tumors (n = 4) or residual tumors expressing CCL5 (n = 4). (g) Flow cytometry of CD11b+/F4/80+ macrophages in control residual tumors (n = 4) or residual tumors expressing CCL5 (n = 4). Error bars denote mean ± SEM. Significance was determined using a two-tailed Student’s t-test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) qRT-PCR analysis of Erbb2 in primary, 5 days – dox, residual, and recurrent tumors from the MTB;TAN model cohort used for flow cytometry analysis of CCR5 expression. (b) qRT-PCR analysis of CCR5 on sorted tumor cells and macrophages from primary, 5 days -dox, residual, and recurrent tumors from the MTB;TAN model. (c) Flow plots of CD45-/PDGFRα+ fibroblasts in control (n = 4) and CCL5-expressing (n = 4) residual tumors (d) Flow plots of CD11b+/F4/80+ macrophages in control (n = 4) and CCL5-expressing (n = 4) residual tumors.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Histograms showing CCR5 staining in macrophages, PDGFRα fibroblasts, CD4+ T cells, CD8+ T cells, and tumor cells from primary tumors (n = 6), regressing tumors (5 days -dox; n = 3), residual tumors (n = 3), and recurrent tumors (n = 3).
+
 To determine whether these cell types are recruited by CCL5 in residual tumors, we generated primary and residual tumors overexpressing CCL5 and analyzed the abundance of macrophages and fibroblasts by flow cytometry. Fibroblast levels were not significantly different between control and CCL5-expressing tumors (Figure 5F, Figure 5—figure supplement 1C). In contrast, CCL5-expressing tumors exhibited a modest but consistent increase in macrophage infiltration (Figure 5G, Figure 5—figure supplement 1D). Taken together, these results suggest that CCL5 expression in residual tumors can recruit CCR5-positive macrophages, and suggest that CCL5 may subsequently signal through CCR5 on these cells to modulate macrophage function.
 
-## Macrophages express and secrete collagen and collagen deposition factors
+### Macrophages express and secrete collagen and collagen deposition factors
 
 We next considered the possibility that CCL5 recruitment of macrophages to residual tumors may promote recurrence through macrophage-tumor cell crosstalk. To address this, we sorted CD45+/CD11b+/F4/80+ macrophages from primary, residual and recurrent tumors from the autochthonous MTB;TAN model by fluorescence activated cell sorting (FACS), and then isolated RNA from the sorted cell populations for RNAseq. Residual tumor-associated macrophages did not yield sufficient RNA for RNAseq, but we were able to sequence RNA from primary, regressing, and recurrent tumor-associated macrophages (TAMs). Examination of differentially expressed genes between primary and recurrent TAMs suggested that FACS-sorted TAMs may have been partially contaminated with tumor cells. For instance, we detected Her2 expression at high levels in primary TAMs and low levels in recurrent TAMs. Therefore, we used a gene expression dataset of primary and recurrent tumor cells cultured in vitro to filter the TAM expression list (Figure 6—source data 1). After filtering, we were left with approximately 200 genes that were differentially expressed between primary and recurrent tumor macrophages (Figure 6A, Figure 6—source data 2). Interestingly, genes encoding fibrillar collagen and collagen deposition proteins were more highly expressed in the recurrent TAMs than the primary TAMs or regressing tumor TAMs (Figure 6B). These genes include Collagen alpha-1(V) chain (COL5A1), Collagen type XXIV alpha 1 (COL24A1), Procollagen C-endopeptidase enhancer 1 (PCOLCE), and Asporin (ASPN). COL5A1 and COL24A1 encode fibrillar collagens, PCOLCE encodes a glycoprotein that binds and drives the cleavage of type one fibrillar procollagen, and ASPN encodes a protein that binds to fibrillar collagens to regulate mineralization. We next sought to validate these findings by performing qPCR analysis on primary, regressing, residual, and recurrent TAMs. This analysis showed that the expression of these genes progressively increased during tumor regression, residual disease, and recurrence (Figure 6C). Additionally, qPCR on RNA isolated from bulk tumors showed higher expression of COL5A1 and COL24A1 in recurrent tumors, while a subset of recurrent tumors had high expression of ASPN and PCOLCE (Figure 6D). Consistent with this, Masson’s trichrome staining showed increased collagen deposition in residual and recurrent tumors (Figure 6E, middle and bottom). In order to see if similar gene expression patterns are observed in residual disease in breast cancer patients, we examined gene expression data from residual tumors after neoadjuvant targeted therapy. Indeed, expression of these four collagen genes increased in residual tumors following therapy (Figure 6—figure supplement 1A). Finally, we asked whether CCL5 regulates collagen deposition by comparing collagen levels in control and CCL5-expressing recurrent tumors. While control recurrent tumors had uniform levels of collagen deposition (Figure 6F and Figure 6—figure supplement 1B–C), a subset of CCL5-expressing tumors had very high levels of collagen deposition (Figure 6F and Figure 6—figure supplement 1B–C). Taken together, these results suggest that CCL5 promotes macrophage infiltration and collagen deposition. Given the importance of collagen for regulating tumor cell function, this may be one mechanism by which CCL5 expression accelerates recurrence. This is reminiscent of findings in colorectal cancer, where collagen deposition can be mediated in part through CCR2+ macrophages, and depletion of these macrophages inhibits tumor growth (Afik et al., 2016).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig6-v2.jpg)
+
+**Figure 6.:** (a) RNA-seq analysis of tumor-associated macrophages from primary (n = 3), regressing (5 days -dox; n = 3), and recurrent (n = 3) tumors. The heatmap shows differentially expressed genes (p<0.01, Student’s t-test) between primary and recurrent TAMs. (b) Heatmap showing expression of specific collagen genes from RNA-seq analysis in (a). (c) qRT-PCR analysis of COL5A1, ASPN, COL24A1, and PCOLCE expression in the cohort in (a) along with sorted macrophages from residual tumors. ND = not detected (d) qRT-PCR analysis of COL5A1, ASPN, COL24A1, and PCOLCE expression in unsorted MTB;TAN primary (n = 5) and recurrent (n = 5) tumors. (e) Masson’s trichrome staining showing collagen deposition in primary (n = 3), residual (n = 3), and recurrent (n = 3) tumors from the MTB;TAN model. Collagen is stained in blue, and higher collagen staining is present in residual and recurrent tumors. (f) Masson’s trichrome staining in a subset of control and CCL5-expressing orthotopic recurrent tumors. The entire cohort of tumors is shown in Figure 6—figure supplement 1. Error bars denote mean ± SEM. Significance was determined using a two-tailed Student’s t-test. *p < 0.05, ***p < 0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43653/elife-43653-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Average expression of ASPN, COL5A1, COL24A1, and PCOLCE in 18 matched pre- and post-treatment samples from human breast tumors treated with neoadjuvant Letrozole (GSE10281). Two-tailed paired t-test was performed between pre- and post-treatment samples. (b) Masson’s trichrome staining showing collagen deposition in control (n = 4) and CCL5-expressing (n = 4) recurrent tumors. (c) Quantification of (b).
 
 ## Discussion
 
@@ -89,35 +133,688 @@ The survival and recurrence of residual tumor cells is a critical clinical probl
 
 ## Materials and methods
 
-## Orthotopic recurrence assays
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Souce or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti CMV GFP Neo</td>
+      <td>Addgene</td>
+      <td>Plasmid # 17447 RRID:Addgene_17447</td>
+      <td>Campeau et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>lentiCas9- Blast</td>
+      <td>Addgene</td>
+      <td>Plasmid # 52962 RRID:Addgene_ 52962</td>
+      <td>Sanjana et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>lentiGuide- Puro</td>
+      <td>Addgene</td>
+      <td>Plasmid # 52963 RRID:Addgene_ 52963</td>
+      <td>Sanjana et al., 2014</td>
+    </tr>
+    <tr>
+      <td>RecombinantDNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>Plasmid # 12260 RRID:Addgene_ 12260</td>
+      <td>Trono Lab Packing and Envelope Plasmids</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>Plasmid# 12259 RRID:Addgene_ 12259</td>
+      <td>Trono Lab Packing and Envelope Plasmids</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NIH-3T3</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat# CRL-1658 RRID:CVCL_0594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>54074</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Derived from MTB;TAN model</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>99142</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Derived from MTB;TAN model</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T Ampho</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat# CRL-3213 RRID:CVCL_ H716</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T Eco</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat# CRL-3214 RRID:CVCL_ H717</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti- NFκB p65</td>
+      <td>Cell Signaling</td>
+      <td>D14E12 RRID:AB_ 10859369</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-p- NFκB p65</td>
+      <td>Cell Signaling</td>
+      <td>93H1 RRID:AB_ 10827881</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti- Tubulin</td>
+      <td>Santa Cruz</td>
+      <td>TU-02 RRID:AB_ 628408</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit HRP</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 7074 RRID:AB_ 2099233</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse HRP</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 7076 RRID:AB_ 330924</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa Flour 680</td>
+      <td>Life Technologies</td>
+      <td>Cat# A21076 RRID:AB_141386</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDYE 800CW Goat anti-mouse</td>
+      <td>LI-COR</td>
+      <td>Cat# 926–32210 RRID:AB_ 621842</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD45R/B220, APC conjugated</td>
+      <td>Invitrogen/ eBioscience (Carlsbad, CA)</td>
+      <td>RA3-6B2 RRID:AB_ 469395</td>
+      <td>1:50 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster monoclonal anti-CD49b, AF488 conjugated</td>
+      <td>BioLegend</td>
+      <td>HMα2 RRID:AB_ 492851</td>
+      <td>1:200 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster monoclonal anti-FcεRIα, PE conjugated</td>
+      <td>BioLegend</td>
+      <td>1-Mar RRID:AB_ 1626104</td>
+      <td>1:50 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Siglec-F/CD170, PE conjugated</td>
+      <td>BD</td>
+      <td>E50-2440 RRID:AB_ 10896143</td>
+      <td>1:200 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-PDGFRα/CD140a, PE conjugated</td>
+      <td>Invitrogen/ eBioscience</td>
+      <td>APA5 RRID:AB_ 657615</td>
+      <td>1:100 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD45, PECy5 conjugated</td>
+      <td>BD</td>
+      <td>30-F11 RRID:AB_ 394612</td>
+      <td>1:200 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD45, APC conjugated</td>
+      <td>BD</td>
+      <td>30-F11 RRID:AB_ 1645215</td>
+      <td>1:200 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-CD45, V50 conjugated</td>
+      <td>BD</td>
+      <td>30-F11 RRID:AB_ 1645275</td>
+      <td>1:200 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-F4/80, AF647 conjugated</td>
+      <td>BD</td>
+      <td>T45-2342 RRID:AB_ 2744474</td>
+      <td>1:50 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD11b, PE conjugated</td>
+      <td>BD</td>
+      <td>M1/70 RRID:AB_ 394775</td>
+      <td>1:50 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD11b, PECy7 conjugated</td>
+      <td>BD</td>
+      <td>M1/70 RRID:AB_ 2033994</td>
+      <td>1:100 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-Ly6G, APC conjugated</td>
+      <td>BD</td>
+      <td>1A8 RRID:AB_ 1727560</td>
+      <td>1:200 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster monoclonal anti-CD3e, PE conjugated</td>
+      <td>BD</td>
+      <td>145–2 C11 RRID:AB_ 394460</td>
+      <td>1:100 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD4, APCC7y conjugated</td>
+      <td>BD</td>
+      <td>GK1.5 RRID:AB_ 394331</td>
+      <td>1:100 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD8a, APC conjugated</td>
+      <td>BD</td>
+      <td>53–6.7 RRID:AB_ 398527</td>
+      <td>1:200 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD16/CD32 Fc Blocker</td>
+      <td>BD</td>
+      <td>2.4G2 RRID:AB_ 394659</td>
+      <td>1:50 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CCR5/CD195, BV421 conjugated</td>
+      <td>BD</td>
+      <td>C34-3448 RRID:AB_ 2741677</td>
+      <td>1:100 (FC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Cytokertin 8</td>
+      <td>Troma 1, Brulet, P, Kemler, R Institut Pasteur, Paris, France</td>
+      <td>Troma 1 RRID:AB_ 531826</td>
+      <td>1:50 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD45</td>
+      <td>BD Biosciences</td>
+      <td>30-F11 RRID:AB_ 394606</td>
+      <td>1:200 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-CD3</td>
+      <td>Themo</td>
+      <td>SP7 RRID:AB_ 1956722</td>
+      <td>1:100 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-F4/80</td>
+      <td>Bio-Rad</td>
+      <td>Cl:A3-1 RRID:AB_ 1102558</td>
+      <td>1:1000 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TNFα, mouse</td>
+      <td>BioLegend</td>
+      <td>Cat# 575202</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trichrome stain</td>
+      <td>Abcam</td>
+      <td>ab150686</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vectastain ABC Kit (Rabbit IgG)</td>
+      <td>Vector Labs</td>
+      <td>Cat# PK-6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vectastain ABC Kit (Rat IgG)</td>
+      <td>Vector Labs</td>
+      <td>Cat# PK-4004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen:74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAshredder</td>
+      <td>Qiagen</td>
+      <td>Qiagen:79656</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commerical assay or kit</td>
+      <td>Quantibody Mouse Cytokine Array Q1</td>
+      <td>RayBiotech</td>
+      <td>Cat# QAM-CYT-1–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quantibody Mouse Cytokine Array Q4</td>
+      <td>RayBiotech</td>
+      <td>Cat# QAM-CYT-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IKK16</td>
+      <td>Selleckchem</td>
+      <td>Cat# S2882</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Life Technologies</td>
+      <td>Cat# 11668019</td>
+      <td>60 µL per reaction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Sigma</td>
+      <td>Cat# 107689</td>
+      <td>6 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2x Cell Lysis Buffer</td>
+      <td>RayBiotech</td>
+      <td>Cat# AA-LYS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Luminata Classico/Crescendo Western HRP Substrate</td>
+      <td>Millipore</td>
+      <td>Cat#WBLUC0500 Cat# WBLUR0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>RPI</td>
+      <td>Cat# D43020-100.0</td>
+      <td>2 mg/kg in vivo and 2 µg/mL in vitro</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-PCR primers</td>
+      <td>This paper</td>
+      <td>CCL5 cDNA into pK1 plasmid</td>
+      <td>Forward: TAACCTCGAGATGAAGATCTCTGCAGCTG, Reverse: TAACGCGGCCGCCAGGGTCAGAATCAAGAAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RT-PCR primers</td>
+      <td>This paper</td>
+      <td>CCL5 cDNA into pLenti CMV plasmid</td>
+      <td>Forward: TAACTCTAGAATGAAGATCTCTGCAGCTG, Reverse: TAACGTCGACCAGGGTCAGAATCAAGAAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNAs</td>
+      <td>This paper</td>
+      <td>Targeting CCL5</td>
+      <td>CCL5_1 (TGTAGAAATACTCCTTGACG), CCL5_2 (TACTCCTTGACGTGGGCACG), CCL5_3 (TGCAGAGGGCGGCTGCAGTG)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCL5</td>
+      <td>Thermo</td>
+      <td>Mm01302427_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CXCL1</td>
+      <td>Thermo</td>
+      <td>Mm04207460_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CXCL2</td>
+      <td>Thermo</td>
+      <td>Mm00436450_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CXCL5</td>
+      <td>Thermo</td>
+      <td>Mm00436451_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCL2</td>
+      <td>Thermo</td>
+      <td>Mm00441242_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actin</td>
+      <td>Thermo</td>
+      <td>Mm02619580_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ASPN</td>
+      <td>Thermo</td>
+      <td>Mm00445945_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCOLCE</td>
+      <td>Thermo</td>
+      <td>Mm00476608_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>COL5A1</td>
+      <td>Thermo</td>
+      <td>Mm00489299_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>COL24A1</td>
+      <td>Thermo</td>
+      <td>Mm01323744_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JMP Pro</td>
+      <td>SAS Institute Inc, Cary, NC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>TreeStar</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Fiji (http://fiji.nih.gov/</td>
+      <td>RRID:SCR_002285</td>
+      <td>Schindelin et al., 2012</td>
+    </tr>
+  </tbody>
+</table>
+
+_WB = Western blot, FC = flow cytometry, IHC = immunohistochemistry_
+
+### Orthotopic recurrence assays
 
 Orthotopic tumor recurrence assays were performed as described (Alvarez et al., 2013). Briefly, cohorts of 6-week-old recipient mice (nu/nu or TAN) on doxycycline were injected bilaterally in the #4 inguinal mammary fat pad with 1 × 106 primary tumor cells (expressing either a control sgRNA, a sgRNA targeting CCL5, CCL5 cDNA, or GFP cDNA). Once tumors reached 5 mm (2–3 weeks), doxycycline was removed to initiate oncogene down-regulation and tumor regression. Mice were palpated biweekly to monitor tumor recurrence, and sacrificed when recurrent tumors reached 10 mm. Differences in recurrence-free survival between control and experimental cohorts were compared using Kaplan-Meier survival curves (Kaplan and Meier, 1958) and evaluated by the p-value from a log-rank test and the hazard ratio from the Cox proportional hazard regression, as described previously (Alvarez et al., 2013).
 
 Power calculations were used to determine cohort size for each in vivo experiment. Briefly, in order to detect a 2.5-fold difference in recurrence-free survival between control and experimental groups, given a median recurrence-free survival of 60 days for the control group and a 300 day follow-up, we estimated we would need to enroll 22 tumors per group (80% power, p<0.05). We enrolled extra mice in each cohort to account for tumor take rates and unexpected mortality. Final cohort sizes were: GFP tumors, 17 mice (34 tumors); CCL5 tumors, 18 mice (36 tumors); sgControl tumors, 20 mice (40 tumors); sgCCL5 tumors, 20 mice (40 tumors).
 
-## Tissue culture and reagents
+### Tissue culture and reagents
 
 Cell lines derived from primary MTB;TAN tumors were grown as previously described in media containing 2 μg/ml dox (Alvarez et al., 2013). For conditioned media experiments, primary tumor cell lines were plated on 10 cm plates. 24 hr later, media was changed to media without dox, and conditioned media was collected 1 or 2 days later. Media was centrifuged to remove cells, supplemented with 2 μg/ml dox, and applied to naive primary tumor cells. Cells treated with conditioned media were harvested 1 or 2 days later for qPCR or Western blot analysis. For dox withdrawal experiments, primary tumor cell lines were plated 10 cm plates. 24 hr later, media was changed to media without dox and cells were collected 1 or 2 days later for qPCR or western blot analysis. IKK16 (Selleckchem, Houston, TX) was used at 100 nM, TNFα (BioLegend, San Diego, CA) was used at 10 ng/ml.
 
 Primary cells derived from MTB;TAN tumors (54074 and 99142 cells) were generated by our lab, are used at early passages, and as a result have not been authenticated. NIH3T3 cells were tested by the Duke Cell Culture Facility for mycoplasma contamination and tested negative. The facility was not able to perform STR authentication on these mouse cells.
 
-## Flow cytometry
+### Flow cytometry
 
 Tumors were harvested and digested as previously described (Mabe et al., 2018). Cells were aliquoted at 1 × 106 cells per 5 mL falcon tube. CD16/CD32 Fc Block antibody was added for 10 min at 4°C (2 μL/1 × 106 cells). Tumors were then stained with antibody cocktails listed below for 30 min at 4°C, and then washed three times with FACs buffer (BD Biosciences, Billerica, MA).
 
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>Antibody</th>
+      <th>Fluorophore</th>
+      <th>Clone</th>
+      <th>Vendor</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B Cell</td>
+      <td>CD45R/B220</td>
+      <td>APC</td>
+      <td>RA3-6B2</td>
+      <td>Invitrogen/eBioscience (Carlsbad, CA)</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Basophil</td>
+      <td>CD49b</td>
+      <td>AF488</td>
+      <td>HMα2</td>
+      <td>BioLegend</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Basophil</td>
+      <td>FcεRIα</td>
+      <td>PE</td>
+      <td>MAR-1</td>
+      <td>BioLegend</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Eosinophil</td>
+      <td>Siglec-F/CD170</td>
+      <td>PE</td>
+      <td>E50-2440</td>
+      <td>BD</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Fibroblast</td>
+      <td>PDGFRα/CD140a</td>
+      <td>PE</td>
+      <td>APA5</td>
+      <td>Invitrogen/eBioscience</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Leukocyte</td>
+      <td>CD45</td>
+      <td>PECy5</td>
+      <td>30-F11</td>
+      <td>BD</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Leukocyte</td>
+      <td>CD45</td>
+      <td>APC</td>
+      <td>30-F11</td>
+      <td>BD</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Leukocyte</td>
+      <td>CD45</td>
+      <td>V450</td>
+      <td>30-F11</td>
+      <td>BD</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Macrophage</td>
+      <td>F4/80</td>
+      <td>AF647</td>
+      <td>T45-2342</td>
+      <td>BD</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Monocyte/Granulocyte</td>
+      <td>CD11b</td>
+      <td>PE</td>
+      <td>M1/70</td>
+      <td>BD</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Monocyte/Granulocyte</td>
+      <td>CD11b</td>
+      <td>PECy7</td>
+      <td>M1/70</td>
+      <td>BD</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Neutrophil</td>
+      <td>Ly6G</td>
+      <td>APC</td>
+      <td>1A8</td>
+      <td>BD</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>T Cell</td>
+      <td>CD3e</td>
+      <td>PE</td>
+      <td>145–2 C11</td>
+      <td>BD</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>T Cell</td>
+      <td>CD4</td>
+      <td>APCCy7</td>
+      <td>GK1.5</td>
+      <td>BD</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>T Cell</td>
+      <td>CD8a</td>
+      <td>APC</td>
+      <td>53–6.7</td>
+      <td>BD</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Fc Blocker</td>
+      <td>-</td>
+      <td>2.4G2</td>
+      <td>BD</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>CCR5/CD195</td>
+      <td>BV421</td>
+      <td>C34-3448</td>
+      <td>BD</td>
+      <td>1:100</td>
+    </tr>
+  </tbody>
+</table>
+
 Cells were analyzed using a FACSCanto analyzer (BD Biosciences) and data were analyzed using FlowJo software (TreeStar, Ashland, OR). Gating of the CCR5-high population was determined by using a fluorescence minus one (FMO; cells stained with antibodies for cell type markers, lacking the CCR5 antibody) histogram in the fluorescence channel for the CCR5 antibody as a negative control. The FMO negative control histogram was plotted with a positive control of the single stain (cells stained only with CCR5 antibody) from the same tumor. Percent of CCR5+ cells were gated according to the positive control.
 
-## qPCR
+### qPCR
 
 RNA was isolated from tumors and cells using RNeasy columns (Qiagen, Hilden, Germany). 1 μg of RNA was reversed transcribed using cDNA synthesis reagents (Promega, Madison, WI). qPCR was performed using 6-carboxyfluorescein labeled TaqMan probes (Thermo, Waltham, MA): CCL5 (Mm01302427_m1), CXCL1 (Mm04207460_m1), CXCL2 (Mm00436450_m1), CXCL5 (Mm00436451_g1), CCL2 (Mm00441242_m1), Actin (Mm02619580_g1), ASPN (Mm00445945_m1), PCOLCE (Mm00476608_m1), COL5A1 (Mm00489299_m1), COL24A1 (Mm01323744_m1), and read on a Bio-Rad (Hercules, CA) CFX qPCR machine.
 
-## Western blotting and cytokine arrays
+### Western blotting and cytokine arrays
 
 Western blotting was performed as described (Alvarez et al., 2013) using the following antibodies: NFκB p65 (D14E12, Cell Signaling, Danvers, MA), p-NFκB p65 (93H1, Cell Signaling), and tubulin (TU-02, Santa Cruz, Dallas, TX), all at a 1:1000 dilution. Secondary antibodies conjugated to Alexa Flour 680 (Life Technologies, Carlsbad, CA) or 800 (LI-COR Biosciences, Lincoln, NE) were detected with the Odyssey detection system (LI-COR Biosciences). For p-p65 detection, secondary antibodies conjugated to HRP were used and blots were developed using Classico or Crescendo reagent (Millipore, Burlington, MA) and exposed to film (VWR, Radnor, PA). Secondary antibodies were used at a 1:5000 dilution.
 
 For cytokine array analysis, tumor lysates were made in 2X lysis buffer (RayBiotech, Norcross, GA) and diluted to 50 μg per 100 μL in diluent provided. Tumor lysates and standards were run on both Quantibody Mouse Cytokine Array Q1 and Q4 (RayBiotech). Slides were scanned and quantified by RayBiotech.
 
-## Plasmids and CRISPR/Cas9
+### Plasmids and CRISPR/Cas9
 
 pLenti CMV GFP Puro was purchased from Addgene (Watertown, MA).
 
@@ -131,15 +828,15 @@ Retrovirus was produced by transfecting the packaging lines 293T Ampho and 293T 
 
 Lentivirus was produced by transfecting 293 T cells with the packaging plasmids psPAX2 and pMD2.G and lentiviral construct pLenti CMV GFP or CCL5 using Lipofectamine 2000. Lentiviral supernatant was collected 48 hr post-transfection, filtered, and used to transduce cells in the presence of 6 μg/mL polybrene (Sigma).
 
-## RNA sequencing
+### RNA sequencing
 
 RNA was isolated from tumors or tumor cells using RNeasy columns (Qiagen). For TAM sequencing, macrophages were isolated by FACS using the antibody panel described above, and RNA was isolated using RNeasy columns (Qiagen). RNA was sequenced using the Illumina HiSeq 4000 libraries and sequencing platform with 50 base pair single end reads by the Duke GCB Sequencing and Genomic Technologies Shared Resource (Durham, NC). Sequencing data have been deposited in SRA as PRJNA506006 for cell line data and PRJNA505845 for macrophage data.
 
-## Human breast cancer microarray data
+### Human breast cancer microarray data
 
 Publicly available microarray data from human primary and residual breast cancer datasets GSE10281 and GSE21974 and their corresponding clinical annotation were downloaded, converted to log2 scale, and median centered. Heatmaps were created using R (R Development Core Team, 2013).
 
-## Immunohistochemistry and staining
+### Immunohistochemistry and staining
 
 Tumor sections were fixed in 10% normal formalin for 16 hr, then washed twice with PBS and transferred to 70% ethanol for storage. Stored tumor sections were paraffin imbedded and cut on the microtome in 5 μm sections. Sections were stained using a regressive H and E protocol, immunohistochemistry, or Masson’s Trichrome.
 
@@ -149,11 +846,11 @@ For cytokeratin eight staining (Troma 1, Brulet, P., Kemler, R. Institut Pasteur
 
 Trichrome stain was performed using a staining kit from Abcam (Cambridge, UK) (ab150686).
 
-## Quantifying IHC and Masson’s Trichrome in Fiji
+### Quantifying IHC and Masson’s Trichrome in Fiji
 
 To quantify the amount of positive staining for CD3, CD45, and F4/80 and for Masson’s Trichrome, we used Fiji (Schindelin et al., 2012). The ‘Color Deconvolution’ function was used to separate the colors into positive staining and hematoxylin for normalization. We then converted each image to 8-bit and applied a threshold of positive staining to each image and used this same threshold across all images. We then measured the pixel area of the positive staining and normalized this to the hematoxylin staining for each image. For the primary tumors and 5 day -dox tumors, the whole image was used for quantification. For residual tumors, we manually selected regions-of-interest to exclude adipose tissue from the quantification.
 
-## Statistical reporting
+### Statistical reporting
 
 For GSEA, the normalized enrichment score (NES) is reported. The normalized enrichment score accounts for differences in gene set size and in correlations between gene sets. The NES is based on all dataset permutations, to correct for multiple hypothesis testing. The nominal p value is also reported and is the statistical significance of the enrichment score, without adjustment for gene set size or multiple hypothesis testing. A reported p value of zero (0.0) indicates an actual p-value of less than 1/number-of-permutations. (Subramanian et al., 2005).
 
@@ -161,6 +858,6 @@ Two-tailed unpaired t-tests were used to analyze significance between primary tu
 
 Outliers were never excluded except for in flow cytometry experiments. Tumors that were >90% CD45+ were excluded from analysis to avoid analyzing tumors with potential contamination from the inguinal lymph node. For all other experiments where no power analysis was used, sample size was chosen based upon previous experience (Alvarez et al., 2013).
 
-## Study approval
+### Study approval
 
 Animal care and all animal experiments were performed with the approval of and in accordance with Duke University IACUC guidelines. Mice were housed under barrier conditions.

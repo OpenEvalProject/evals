@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.21422.001 Two-component systems (TCS) are protein machineries that enable cells to respond to input signals. Histidine kinases (HK) are the sensory component, transferring information toward downstream response regulators (RR). HKs transfer phosphoryl groups to their specific RRs, but also dephosphorylate them, overall ensuring proper signaling. The mechanisms by which HKs discriminate between such disparate directions, are yet unknown. We now disclose crystal structures of the HK:RR complex DesK:DesR from Bacillus subtilis , comprising snapshots of the phosphotransfer and the dephosphorylation reactions. The HK dictates the reactional outcome through conformational rearrangements that include the reactive histidine. The phosphotransfer center is asymmetric, poised for dissociative nucleophilic substitution. The structural bases of HK phosphatase/phosphotransferase control are uncovered, and the unexpected discovery of a dissociative reactional center, sheds light on the evolution of TCS phosphotransfer reversibility. Our findings should be applicable to a broad range of signaling systems and instrumental in synthetic TCS rewiring. DOI: http://dx.doi.org/10.7554/eLife.21422.001
+Two-component systems (TCS) are protein machineries that enable cells to respond to input signals. Histidine kinases (HK) are the sensory component, transferring information toward downstream response regulators (RR). HKs transfer phosphoryl groups to their specific RRs, but also dephosphorylate them, overall ensuring proper signaling. The mechanisms by which HKs discriminate between such disparate directions, are yet unknown. We now disclose crystal structures of the HK:RR complex DesK:DesR from Bacillus subtilis, comprising snapshots of the phosphotransfer and the dephosphorylation reactions. The HK dictates the reactional outcome through conformational rearrangements that include the reactive histidine. The phosphotransfer center is asymmetric, poised for dissociative nucleophilic substitution. The structural bases of HK phosphatase/phosphotransferase control are uncovered, and the unexpected discovery of a dissociative reactional center, sheds light on the evolution of TCS phosphotransfer reversibility. Our findings should be applicable to a broad range of signaling systems and instrumental in synthetic TCS rewiring.
 
 ## Introduction
 
@@ -37,81 +37,585 @@ To address this question we have used the TCS DesK-DesR from B. subtilis as a mo
 
 ## Results
 
-## Two crystal structures of the DesKC:DesR complex represent snapshots of the dephosphorylation and the phosphotransfer reactions
+### Two crystal structures of the DesKC:DesR complex represent snapshots of the dephosphorylation and the phosphotransfer reactions
 
-To grasp the molecular determinants of unidirectional TCS signaling, the crystal structures of DesKC in complex with DesR were determined in two functional states (
+To grasp the molecular determinants of unidirectional TCS signaling, the crystal structures of DesKC in complex with DesR were determined in two functional states (Figure 1, Table 1). One using the phosphatase-constitutive mutant DesKCSTAB, and the other with DesKCH188E carrying a phosphomimetic substitution (Albanesi et al., 2009), both in complex with the REC domain of DesR. DesKCSTAB includes amino acid replacements Ser150Ile, Ser153Leu and Arg157Ile in the DHp domain (Figure 1—figure supplement 1A), designed to stabilize the coiled-coil region (Saita et al., 2015).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig1-v2.jpg)
 
-**Figure 1.:** (A) Cartoon representation of the DesKCSTAB:DesR-REC (phosphatase) complex, along two orthogonal views (left and right subpanels). The two chains within the DesKCSTAB dimer are depicted in green and yellow, and the two DesR-REC molecules, in magenta and orange. Solvent exposed surfaces are shown in transparent gray. (B) Isothermal titration calorimetry (ITC) of the phosphatase DesKCH188V:DesR-REC binding reaction, top panel showing the raw heat flow data; in the bottom, integrated heat exchange as a function of RR(monomer):HK(dimer) molar ratio. ITC was performed with the mutant DesKCH188V, equivalently trapped in the phosphatase state (Albanesi et al., 2009), because DesKCSTAB was insoluble when not co-expressed with DesR-REC. (C) X ray scattering curve for the DesKCSTAB:DesR-REC complex. Experimental data are plotted as gray dots, with theoretical curves overlaid as colored lines, revealing best fitting for the AB+ABCD mixture (see Table 4). Letters distinguish protomer chains: DesKCSTAB dimers AB and EE’ (primed labels distinguish crystallographically related partners) and DesR-REC monomers C, D, F and F’. (D) Cartoon representation of the DesKCH188E:DesR-REC (phosphotransferase) complex, along two orthogonal views (left and right subpanels). Coloring scheme and solvent exposed surface displayed as in (A). (E) ITC of the DesKCH188E:DesR-REC binding reaction, details as in (B). (F) SAXS curve for the DesKCH188E:DesR-REC complex, details as in (C). Note best fitting with a one dimer DesKCH188E (chains AB) to one monomer DesR-REC (chain C) model (see Table 4).DOI: http://dx.doi.org/10.7554/eLife.21422.002
+**Figure 1.:** (A) Cartoon representation of the DesKCSTAB:DesR-REC (phosphatase) complex, along two orthogonal views (left and right subpanels). The two chains within the DesKCSTAB dimer are depicted in green and yellow, and the two DesR-REC molecules, in magenta and orange. Solvent exposed surfaces are shown in transparent gray. (B) Isothermal titration calorimetry (ITC) of the phosphatase DesKCH188V:DesR-REC binding reaction, top panel showing the raw heat flow data; in the bottom, integrated heat exchange as a function of RR(monomer):HK(dimer) molar ratio. ITC was performed with the mutant DesKCH188V, equivalently trapped in the phosphatase state (Albanesi et al., 2009), because DesKCSTAB was insoluble when not co-expressed with DesR-REC. (C) X ray scattering curve for the DesKCSTAB:DesR-REC complex. Experimental data are plotted as gray dots, with theoretical curves overlaid as colored lines, revealing best fitting for the AB+ABCD mixture (see Table 4). Letters distinguish protomer chains: DesKCSTAB dimers AB and EE’ (primed labels distinguish crystallographically related partners) and DesR-REC monomers C, D, F and F’. (D) Cartoon representation of the DesKCH188E:DesR-REC (phosphotransferase) complex, along two orthogonal views (left and right subpanels). Coloring scheme and solvent exposed surface displayed as in (A). (E) ITC of the DesKCH188E:DesR-REC binding reaction, details as in (B). (F) SAXS curve for the DesKCH188E:DesR-REC complex, details as in (C). Note best fitting with a one dimer DesKCH188E (chains AB) to one monomer DesR-REC (chain C) model (see Table 4).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Schematic representation of the DesKCSTAB sequence, indicating the position of the point-mutations designed to stabilize the N-terminal coiled-coil, with secondary structure elements and domains labeled as a positional reference. (B) Crystal structure of the phosphatase complex depicting the contents of the asymmetric unit (one whole 2:2 HK:RR complex and half of a second one) and the crystallographically related moieties that complete the second complex. Solid cartoon representation is used for the ASU components, whereas the half-complex generated by the two-fold symmetry operator is highlighted in transparent colors. The two-fold axis is marked in black. Two orthogonal views are displayed (left and right panels). The N-terminal coiled-coil is formed in one of the complexes present in the asymmetric unit (in green and purple). The second complex shows two alternative conformations towards this N-terminal end, only one of which allowed for confident modeling, revealing a disrupted coiled-coil (in red and yellow). The alternate conformation appears to be forming the coiled-coil structure, but was not included given the weak electron density map. The N-terminal ends of both complexes are establishing crystal contacts with neighboring molecules, and different dehydration treatment of the crystals appear to force this alternative conformation (data not shown). Fitting analysis of the SAXS curves suggests that the closed conformation of the N-terminal end is the most abundant species in solution (see Table 4). (C) SigmaA-weighted 2mFobs-DFcalc Fourier map (blue mesh contoured at 1σ) of the refined phosphatase complex model (ribbon representation, the two protomers are depicted with different colors). The illustration shows the full complex in the ASU, the remaining half-complex is not shown. (D) Close-up of the coiled-coil region within the DHp domain as observed in the phosphatase complex. The structure is represented in cartoons, with the two protomers depicted in green and yellow, and solvent exposed surface in transparent. Special a and d positions within the coiled-coil heptad repeats are labeled. Note that the three engineered mutations of DesKCSTAB (labeled in bold) are contained within the buried core of the α1:α1 coiled-coil, stabilizing it as per design. (E) The DesKCSTAB partner (in pink) was extracted from the phosphatase complex (PDB 5IUN, this report) and superimposed onto previously reported free DesKCH188V structures trapped in the phosphatase-competent state: PDB 3EHH in red (rmsd 1.4 Å on 136 DHp Cα, 2.1 Å on 370 all Cα); and 3EHJ in blue (rmsd 1.7 Å on 154 DHp Cα, 2.5 Å on 390 all Cα). (F) The DesKCH188E partner (in pink) was extracted from the phosphotransferase complex (PDB 5IUK, this report), and superimposed onto wt P~DesKC (PDB 3GIG, in red), resulting in a root mean square deviation of ~0.8 Å (aligning all 920 atoms of the DHp domains). Free DesKCH188E (PDB 3GIF, in blue), previously reported, also reveals an identical conformation.DOI: http://dx.doi.org/10.7554/eLife.21422.003
+**Figure 1—figure supplement 1.:** (A) Schematic representation of the DesKCSTAB sequence, indicating the position of the point-mutations designed to stabilize the N-terminal coiled-coil, with secondary structure elements and domains labeled as a positional reference. (B) Crystal structure of the phosphatase complex depicting the contents of the asymmetric unit (one whole 2:2 HK:RR complex and half of a second one) and the crystallographically related moieties that complete the second complex. Solid cartoon representation is used for the ASU components, whereas the half-complex generated by the two-fold symmetry operator is highlighted in transparent colors. The two-fold axis is marked in black. Two orthogonal views are displayed (left and right panels). The N-terminal coiled-coil is formed in one of the complexes present in the asymmetric unit (in green and purple). The second complex shows two alternative conformations towards this N-terminal end, only one of which allowed for confident modeling, revealing a disrupted coiled-coil (in red and yellow). The alternate conformation appears to be forming the coiled-coil structure, but was not included given the weak electron density map. The N-terminal ends of both complexes are establishing crystal contacts with neighboring molecules, and different dehydration treatment of the crystals appear to force this alternative conformation (data not shown). Fitting analysis of the SAXS curves suggests that the closed conformation of the N-terminal end is the most abundant species in solution (see Table 4). (C) SigmaA-weighted 2mFobs-DFcalc Fourier map (blue mesh contoured at 1σ) of the refined phosphatase complex model (ribbon representation, the two protomers are depicted with different colors). The illustration shows the full complex in the ASU, the remaining half-complex is not shown. (D) Close-up of the coiled-coil region within the DHp domain as observed in the phosphatase complex. The structure is represented in cartoons, with the two protomers depicted in green and yellow, and solvent exposed surface in transparent. Special a and d positions within the coiled-coil heptad repeats are labeled. Note that the three engineered mutations of DesKCSTAB (labeled in bold) are contained within the buried core of the α1:α1 coiled-coil, stabilizing it as per design. (E) The DesKCSTAB partner (in pink) was extracted from the phosphatase complex (PDB 5IUN, this report) and superimposed onto previously reported free DesKCH188V structures trapped in the phosphatase-competent state: PDB 3EHH in red (rmsd 1.4 Å on 136 DHp Cα, 2.1 Å on 370 all Cα); and 3EHJ in blue (rmsd 1.7 Å on 154 DHp Cα, 2.5 Å on 390 all Cα). (F) The DesKCH188E partner (in pink) was extracted from the phosphotransferase complex (PDB 5IUK, this report), and superimposed onto wt P~DesKC (PDB 3GIG, in red), resulting in a root mean square deviation of ~0.8 Å (aligning all 920 atoms of the DHp domains). Free DesKCH188E (PDB 3GIF, in blue), previously reported, also reveals an identical conformation.
 
-## The DesKCSTAB:DesR-REC complex
+**Table 1.**
+ X ray diffraction data collection and refinement statistics.
 
-The asymmetric unit (ASU) of this crystal structure shows one full complex and half of a second one, which is completed through the crystallographic two-fold symmetry operator (Figure 1—figure supplement 1B). Several features indicate that this complex represents a snapshot of the phosphatase reaction, hereafter denominated the ‘phosphatase complex’. Symmetric organizations are a hallmark of HKs in the ‘auto-kinase off / phosphatase on’ states (Albanesi et al., 2009; Casino et al., 2009; Yamada et al., 2009). The phosphatase complex we have now crystallized indeed displays high symmetry, both in the way the REC domains associate to the HK dimer, as well as between HK monomers. The two independently refined phosphatase complexes show one dimer of DesKCSTAB bound to two molecules of DesR-REC (Figure 1A and Figure 1—figure supplement 1C), with the latter occupying equivalent positions on either side of the HK core. The 2:2 HK:RR stoichiometry was confirmed in solution by isothermal titration calorimetry (ITC) (Figure 1B, Table 2), revealing an entropy-driven, endothermic association reaction. Size exclusion chromatography-coupled small-angle X ray scattering (SEC-SAXS) further supported the 2:2 stoichiometry (Figure 1C; Tables 3 and 4). There is also a high internal symmetry between both HK monomers, with CA domains rigidly fixed onto the central DHp and a resulting butterfly-like shape of the whole molecule. A second feature consistent with a phosphatase-competent configuration, is that one AMP-PCP (ATP analogue) moiety is bound to each CA domain, far (>27 Å) from the His188(HK) phosphorylation sites on the central DHp, precluding auto-kinase activity (subscripts HK and RR highlight the protein to which the indicated residues belong). Finally, the structural rearrangements triggered at high temperatures (Saita et al., 2015), driving DesK to its phosphatase state, have been linked to the stabilization of an N-terminal coiled-coil (Albanesi et al., 2009). The three point-mutations engineered within DesK helix α1, are indeed observed to stabilize a coiled-coil structure toward the N-terminus in the phosphatase complex (Figure 1—figure supplement 1D). Coiled-coil stabilization was devised according to previous structures of free DesKCH188V (Albanesi et al., 2009), a mutant version that maintains normal P~DesR-specific phosphatase activities in vitro and in vivo (Albanesi et al., 2004). Free DesKCH188V structures superimpose extremely well onto the HK partner of the phosphatase complex (Figure 1—figure supplement 1E). SEC-SAXS data further suggest that the coiled-coil conformation in the phosphatase complex was the most abundant species in solution (Figure 1C and Figure 1—figure supplement 1B; Table 4), involving a large α1:α1 dimerization interface of ~2100 Å2 (Figure 1A and Figure 1—figure supplement 1D and E). Regarding the RR component within the phosphatase complex, the three DesR-REC molecules in the ASU display identical ‘active-like’ structures (Trajtenberg et al., 2014). BeF3– moieties mimicking phosphoryl groups are observed bonded to each phosphorylatable Asp54(RR), and coordinated to Mg2+ cations, consistent with this crystal form being a snapshot of the phosphatase reaction at its pre-dephosphorylation step.10.7554/eLife.21422.005Table 2.Isothermal titration calorimetry parameters. For details on the two different titration procedures, see Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.21422.005HK:RR complexesKa (M −1)ΔG (x103 kcal.mol−1)ΔH (x104 kcal.mol−1)TΔS (x104 kcal.mol−1)DesKCH188V:DesR-REC7.7×105 −7.8 1.52.39.5×104 −6.5 1.42.1DesKCH188E:DesR-REC1.7×106 −8.2 2.23.03.0×104 −5.9 2.12.710.7554/eLife.21422.006Table 3.Small angle X ray scattering and derived molecular size parameters. Data derived from experiments performed by SEC-coupled SAXS. Figures for the phosphatase-trapped species DesKH188V, are to be compared with those corresponding to HK:RR species.Full details in Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.21422.006Protein speciesI(0)I(0) realRg (Guinier)Rg (real)VcMMVc (Da)MMseq (Da)Dmax (Å)DesKCH188V4.47×10−24.26×10−231.2531.21442.94640044780100DesKCSTAB:DesR-REC1.16×10−11.11×10−131.4831.42494.85840077110103DesKCH188E:DesR-REC1.05×10−19.76×10−232.8432.18486.2518006179010310.7554/eLife.21422.007Table 4.Fitting figures (χ2) comparing alternative theoretical SAXS curves to the experimentally collected scattering data.DOI: http://dx.doi.org/10.7554/eLife.21422.007Experimental Data Structural modelsχ2DesKCSTAB:DesR-RECAB+ABCDmixture6.1ABCD(folded coiled-coil)8.9EE’FF’(disrupted coiled-coil)11.6DesKCH188E:DesR-RECABC8AB24.9
 
-## The DesKCH188E:DesR-REC complex
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Phosphatase complex</th>
+      <th>Phosphotransferase complex I (low [Mg2+])</th>
+      <th>Phosphotransferase complex II (high [Mg2+])</th>
+      <th>Phosphotransferase complex III (high [Mg2+] + BeF3-)</th>
+      <th>wt P~DesKC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P3121</td>
+      <td>P21</td>
+      <td>P21</td>
+      <td>P21</td>
+      <td>P3121</td>
+    </tr>
+    <tr>
+      <td colspan="6">Cell dimensions</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>94.3, 94.3, 239.9</td>
+      <td>87.8, 114.6, 91.6</td>
+      <td>87.9, 115.6, 91.6</td>
+      <td>88.2, 116.7, 91.9</td>
+      <td>94.4, 94.4, 161.8</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 120</td>
+      <td>90, 116.4, 90</td>
+      <td>90, 116.7, 90</td>
+      <td>90, 117.1, 90</td>
+      <td>90, 90, 120</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.35–2.79 (2.94–2.79)*</td>
+      <td>66.70–3.2 (3.37–3.2)</td>
+      <td>66.78–2.9 (3.06–2.9)</td>
+      <td>38.59–3.15 (3.32–3.15)</td>
+      <td>36.5–3.16 (3.33–3.16)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>31510 (4385)</td>
+      <td>26369 (3906)</td>
+      <td>36132 (5279)</td>
+      <td>28033 (3944)</td>
+      <td>14829 (2109)</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>0.1 (2.07)</td>
+      <td>0.14 (0.98)</td>
+      <td>0.13 (1.61)</td>
+      <td>0.1 (0.57)</td>
+      <td>0.07 (1.18)</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>0.03 (0.63)</td>
+      <td>0.09 (0.62)</td>
+      <td>0.05 (0.65)</td>
+      <td>0.05 (0.29)</td>
+      <td>0.03 (0.43)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>1.00 (0.56)</td>
+      <td>0.99 (0.55)</td>
+      <td>0.99 (0.67)</td>
+      <td>1.00 (0.83)</td>
+      <td>1.00 (0.77)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>15.6 (1.5)</td>
+      <td>7.7 (1.7)</td>
+      <td>12.5 (2.4)</td>
+      <td>11.8 (2.7)</td>
+      <td>23.8 (1.9)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.5 (96.7)</td>
+      <td>97.8 (98.8)</td>
+      <td>99.1 (99.2)</td>
+      <td>98 (95.6)</td>
+      <td>99.9 (99.6)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>10.8 (10.3)</td>
+      <td>2.4 (2.4)</td>
+      <td>5.8 (6.0)</td>
+      <td>3.8 (3.8)</td>
+      <td>7.2 (7.2)</td>
+    </tr>
+    <tr>
+      <td colspan="6">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.35–2.79</td>
+      <td>66.70–3.2</td>
+      <td>39.27–2.9</td>
+      <td>38.59–3.15</td>
+      <td>36.5–3.16</td>
+    </tr>
+    <tr>
+      <td>Number of refls used(N in the free set)</td>
+      <td>31454 (1568)</td>
+      <td>26231 (1320)</td>
+      <td>35374 (1720)</td>
+      <td>28015 (1361)</td>
+      <td>14787 (791)</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree</td>
+      <td>0.214/0.249</td>
+      <td>0.187/0.24</td>
+      <td>0.195/0.239</td>
+      <td>0.19/0.231</td>
+      <td>0.257/0.295</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>7972</td>
+      <td>8869</td>
+      <td>8702</td>
+      <td>8709</td>
+      <td>3151</td>
+    </tr>
+    <tr>
+      <td>Ligands + ions</td>
+      <td>93 (AMP-PCP)/6 (Mg2+)/12 (MES)/12 (BeF3-)/5 (SO42-)</td>
+      <td>124 (AMP-PCP)/4 (Mg2+)/2 (K+)</td>
+      <td>124 (AMP-PCP)/5 (Mg2+)/2 (K+)</td>
+      <td>124 (AMP-PCP)/6 (Mg2+)/2 (K+)</td>
+      <td>62 (AMP-PCP)/2 (Mg2+)/6 (glycerol)</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>12</td>
+      <td>15</td>
+      <td>9</td>
+      <td>18</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>B-factors (Å2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wilson plot</td>
+      <td>98.3</td>
+      <td>91.4</td>
+      <td>95.9</td>
+      <td>84.1</td>
+      <td>128.9</td>
+    </tr>
+    <tr>
+      <td>Mean (overall)</td>
+      <td>118.7 ‡</td>
+      <td>93.1 ‡</td>
+      <td>102.5 ‡</td>
+      <td>89.6 ‡</td>
+      <td>123.8 ‡</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.2</td>
+      <td>1.3</td>
+      <td>1.25</td>
+      <td>1.25</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Number of residues in Ramachandran plot § (favored / outliers)</td>
+      <td>1025/1</td>
+      <td>1099/3</td>
+      <td>1074/2</td>
+      <td>1073/5</td>
+      <td>382/4</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>5IUN</td>
+      <td>5IUJ</td>
+      <td>5IUK</td>
+      <td>5IUL</td>
+      <td>5IUM</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses correspond to the highest-resolution shell.‡ Including TLS contribution.§ Calculated with Molprobity (Chen et al., 2010)_
+
+#### The DesKCSTAB:DesR-REC complex
+
+The asymmetric unit (ASU) of this crystal structure shows one full complex and half of a second one, which is completed through the crystallographic two-fold symmetry operator (Figure 1—figure supplement 1B). Several features indicate that this complex represents a snapshot of the phosphatase reaction, hereafter denominated the ‘phosphatase complex’. Symmetric organizations are a hallmark of HKs in the ‘auto-kinase off / phosphatase on’ states (Albanesi et al., 2009; Casino et al., 2009; Yamada et al., 2009). The phosphatase complex we have now crystallized indeed displays high symmetry, both in the way the REC domains associate to the HK dimer, as well as between HK monomers. The two independently refined phosphatase complexes show one dimer of DesKCSTAB bound to two molecules of DesR-REC (Figure 1A and Figure 1—figure supplement 1C), with the latter occupying equivalent positions on either side of the HK core. The 2:2 HK:RR stoichiometry was confirmed in solution by isothermal titration calorimetry (ITC) (Figure 1B, Table 2), revealing an entropy-driven, endothermic association reaction. Size exclusion chromatography-coupled small-angle X ray scattering (SEC-SAXS) further supported the 2:2 stoichiometry (Figure 1C; Tables 3 and 4). There is also a high internal symmetry between both HK monomers, with CA domains rigidly fixed onto the central DHp and a resulting butterfly-like shape of the whole molecule. A second feature consistent with a phosphatase-competent configuration, is that one AMP-PCP (ATP analogue) moiety is bound to each CA domain, far (>27 Å) from the His188(HK) phosphorylation sites on the central DHp, precluding auto-kinase activity (subscripts HK and RR highlight the protein to which the indicated residues belong). Finally, the structural rearrangements triggered at high temperatures (Saita et al., 2015), driving DesK to its phosphatase state, have been linked to the stabilization of an N-terminal coiled-coil (Albanesi et al., 2009). The three point-mutations engineered within DesK helix α1, are indeed observed to stabilize a coiled-coil structure toward the N-terminus in the phosphatase complex (Figure 1—figure supplement 1D). Coiled-coil stabilization was devised according to previous structures of free DesKCH188V (Albanesi et al., 2009), a mutant version that maintains normal P~DesR-specific phosphatase activities in vitro and in vivo (Albanesi et al., 2004). Free DesKCH188V structures superimpose extremely well onto the HK partner of the phosphatase complex (Figure 1—figure supplement 1E). SEC-SAXS data further suggest that the coiled-coil conformation in the phosphatase complex was the most abundant species in solution (Figure 1C and Figure 1—figure supplement 1B; Table 4), involving a large α1:α1 dimerization interface of ~2100 Å2 (Figure 1A and Figure 1—figure supplement 1D and E). Regarding the RR component within the phosphatase complex, the three DesR-REC molecules in the ASU display identical ‘active-like’ structures (Trajtenberg et al., 2014). BeF3– moieties mimicking phosphoryl groups are observed bonded to each phosphorylatable Asp54(RR), and coordinated to Mg2+ cations, consistent with this crystal form being a snapshot of the phosphatase reaction at its pre-dephosphorylation step.
+
+**Table 2.**
+ Isothermal titration calorimetry parameters. For details on the two different titration procedures, see Materials and methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>HK:RR complexes</th>
+      <th>Ka (M −1)</th>
+      <th>ΔG (x103 kcal.mol−1)</th>
+      <th>ΔH (x104 kcal.mol−1)</th>
+      <th>TΔS (x104 kcal.mol−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">DesKCH188V:DesR-REC</td>
+      <td>7.7×105</td>
+      <td>−7.8</td>
+      <td>1.5</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>9.5×104</td>
+      <td>−6.5</td>
+      <td>1.4</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DesKCH188E:DesR-REC</td>
+      <td>1.7×106</td>
+      <td>−8.2</td>
+      <td>2.2</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>3.0×104</td>
+      <td>−5.9</td>
+      <td>2.1</td>
+      <td>2.7</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Small angle X ray scattering and derived molecular size parameters. Data derived from experiments performed by SEC-coupled SAXS. Figures for the phosphatase-trapped species DesKH188V, are to be compared with those corresponding to HK:RR species.Full details in Materials and methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein species</th>
+      <th>I(0)</th>
+      <th>I(0) real</th>
+      <th>Rg (Guinier)</th>
+      <th>Rg (real)</th>
+      <th>Vc</th>
+      <th>MMVc (Da)</th>
+      <th>MMseq (Da)</th>
+      <th>Dmax (Å)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DesKCH188V</td>
+      <td>4.47×10−2</td>
+      <td>4.26×10−2</td>
+      <td>31.25</td>
+      <td>31.21</td>
+      <td>442.9</td>
+      <td>46400</td>
+      <td>44780</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>DesKCSTAB:DesR-REC</td>
+      <td>1.16×10−1</td>
+      <td>1.11×10−1</td>
+      <td>31.48</td>
+      <td>31.42</td>
+      <td>494.8</td>
+      <td>58400</td>
+      <td>77110</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>DesKCH188E:DesR-REC</td>
+      <td>1.05×10−1</td>
+      <td>9.76×10−2</td>
+      <td>32.84</td>
+      <td>32.18</td>
+      <td>486.2</td>
+      <td>51800</td>
+      <td>61790</td>
+      <td>103</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Fitting figures (χ2) comparing alternative theoretical SAXS curves to the experimentally collected scattering data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experimental Data</th>
+      <th>Structural models</th>
+      <th>χ2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">DesKCSTAB:DesR-REC</td>
+      <td>AB+ABCDmixture</td>
+      <td>6.1</td>
+    </tr>
+    <tr>
+      <td>ABCD(folded coiled-coil)</td>
+      <td>8.9</td>
+    </tr>
+    <tr>
+      <td>EE’FF’(disrupted coiled-coil)</td>
+      <td>11.6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DesKCH188E:DesR-REC</td>
+      <td>ABC</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>AB</td>
+      <td>24.9</td>
+    </tr>
+  </tbody>
+</table>
+
+#### The DesKCH188E:DesR-REC complex
 
 Wild-type phosphorylated DesKC (wt P~DesKC) in complex with DesR variants resisted crystallization. The crystal structure was eventually solved by using the phosphomimetic DesKCH188E mutant in complex with DesR-REC. Three X ray diffraction datasets were obtained from DesKCH188E:DesR-REC crystals soaked with different concentrations of MgCl2 and BeF3– (Table 1). The three structures are similar, showing two DesKCH188E:DesR-REC complexes in the ASU (Figure 1D). A number of observations readily distinguish this complex from the phosphatase one, supporting it has captured a ground state of the P~HK→RR phosphoryl-transfer reaction, hereafter referred to as the ‘phosphotransferase complex’. In the first place, the phosphotransferase complex is highly asymmetric, a typical feature of phosphorylated and kinase-active forms of HKs (Albanesi et al., 2009; Mechaly et al., 2014; Casino et al., 2014). One DesKCH188E dimer was observed bound to one DesR-REC monomer in the crystal. This 2:1 stoichiometry was further supported by ITC (Figure 1E and Table 2) and SEC-SAXS (Figure 1F; Tables 3 and 4) in solution. The symmetry is also broken within the HK dimer, with one of the two CAs interacting with the DHp helix α1 of the other protomer (Figure 1D). The second CA domain is free, visible in the structure due to fortuitous crystal packing contacts. Such arrangement leaves only one RR-binding site available on the HK in the phosphotransferase state, explaining the asymmetric stoichiometry. Secondly, structural superposition of the HK partner extracted from the phosphotransferase complex, with the available structure of free phosphorylated DesK (wt P~DesKC [PDB 3GIG]), reveals closely similar conformations (Figure 1—figure supplement 1F), confirming that the structure of DesKCH188E in complex is a reliable model of the wt phosphorylated species. Finally, BeF3– was not observed bonded to Asp54(RR) in any of the DesKCH188E:DesR-REC complex structures, despite testing elevated soaking concentrations. Yet, the phosphorylation sites of the RR partners are very similar compared to the phosphatase complex, allowing for the Mg2+ cation to bind alike (the cation was observed bound only in phosphotransferase complex structures soaked with high Mg2+ concentrations). The absence of BeF3- in the phosphotransferase state, even though Mg2+ was eventually bound, is consistent with phosphorylated HKs not interacting with phosphorylated RR species. The molecular basis for a decreased BeF3- affinity in the phosphotransferase became clear later by comparing both states’ reaction centers (see below). Taken together, the evidence indicates the phosphotransferase complex represents a snapshot of the transfer reaction, prior to the P~His→Asp phosphoryl group migration.
 
-## DesK and DesR interact through a ‘slippery’ interface
+### DesK and DesR interact through a ‘slippery’ interface
 
-Both phosphatase and phosphotransferase complexes show that the REC domain of DesR interacts with DesK through its α1
+Both phosphatase and phosphotransferase complexes show that the REC domain of DesR interacts with DesK through its α1(RR) helix and the β5α5(RR) loop, with a few additional contacts from the N-terminal portion of helix α5(RR) and the beginning of loop β4α4(RR). On the HK side, the main element engaged in the interface is helix α1(HK) on the DHp domain from one DesK protomer, and minor contacts with helix α2’(HK) from the second protomer. This interface broadly resembles the one found in other TCS complexes (Casino et al., 2009; Willett et al., 2015; Yamada et al., 2009; Zapf et al., 2000) (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig2-v2.jpg)
 
-**Figure 2.:** (A) Structural superposition of the DesK:DesR phosphatase complex (this study, PDB 5IUN) with HK853:RR468 from Thermotoga maritima (PDB 3DGE). Only selected structural elements from both partners are shown as cartoons for clarity. The DesK:DesR phosphotransferase complex is overall similar (not shown here). DesK and DesR are illustrated with the same color code as in Figure 1. Superposed T. maritima RR468 helix α1 is shown in gray, and HK853 protomers in cyan and blue. Primed labels distinguish DHp helices from each HK protomer. (B) Close-up of the phosphatase complex DesK:DesR interface showing only a few selected interactions for clarity (see text for detailed description). Coloring scheme as in (A). Note Leu200(HK) inserted into a hydrophobic pocket of DesR, and several other hydrophobic residues completing the interface (not labeled, shown as sticks). Among the polar contacts surrounding the hydrophobic core, Arg235(HK):Asp103(RR) and Gln193(HK):BeF3--modified Asp54(RR), are highlighted. (C) Solvent accessible surface of DesKCSTAB indicating the interaction footprint (in magenta) with DesR in the phosphatase complex. DesK domains are highlighted in green (DHp) and blue (CAs); these domains participate differently in DesR interaction, depicted in light magenta (DHp) and dark magenta (CA). Note the ATP analogue (AMP-PCP, in sticks colored by atom) bound to the CA domains, visible in this view on the rightmost one. (D) Same as (C), but for the phosphotransferase complex, illustrating the DesR-binding surface of DesKCH188E. (E) The variable position of the REC(RR) domain with respect to the DHp(HK) is illustrated, superimposing the structurally invariant region of the DHp (including the nine independently refined DesK:DesR complexes). The coloring scheme is the same as in (A), with light and dark colors distinguishing phosphotransferase and phosphatase complexes, respectively. (F) The solid volume corresponds to DesR-REC, which is shown sliced to highlight its outline, revealing unfilled cavities at the protein:protein interface. The relative position of interfacing amino acids is roughly indicated with residue labels. DesK DHp helices are shown in cartoon representation, with its superposed molecular surface on top. Two key residues on the HK partner are shown as sticks.DOI: http://dx.doi.org/10.7554/eLife.21422.008
+**Figure 2.:** (A) Structural superposition of the DesK:DesR phosphatase complex (this study, PDB 5IUN) with HK853:RR468 from Thermotoga maritima (PDB 3DGE). Only selected structural elements from both partners are shown as cartoons for clarity. The DesK:DesR phosphotransferase complex is overall similar (not shown here). DesK and DesR are illustrated with the same color code as in Figure 1. Superposed T. maritima RR468 helix α1 is shown in gray, and HK853 protomers in cyan and blue. Primed labels distinguish DHp helices from each HK protomer. (B) Close-up of the phosphatase complex DesK:DesR interface showing only a few selected interactions for clarity (see text for detailed description). Coloring scheme as in (A). Note Leu200(HK) inserted into a hydrophobic pocket of DesR, and several other hydrophobic residues completing the interface (not labeled, shown as sticks). Among the polar contacts surrounding the hydrophobic core, Arg235(HK):Asp103(RR) and Gln193(HK):BeF3--modified Asp54(RR), are highlighted. (C) Solvent accessible surface of DesKCSTAB indicating the interaction footprint (in magenta) with DesR in the phosphatase complex. DesK domains are highlighted in green (DHp) and blue (CAs); these domains participate differently in DesR interaction, depicted in light magenta (DHp) and dark magenta (CA). Note the ATP analogue (AMP-PCP, in sticks colored by atom) bound to the CA domains, visible in this view on the rightmost one. (D) Same as (C), but for the phosphotransferase complex, illustrating the DesR-binding surface of DesKCH188E. (E) The variable position of the REC(RR) domain with respect to the DHp(HK) is illustrated, superimposing the structurally invariant region of the DHp (including the nine independently refined DesK:DesR complexes). The coloring scheme is the same as in (A), with light and dark colors distinguishing phosphotransferase and phosphatase complexes, respectively. (F) The solid volume corresponds to DesR-REC, which is shown sliced to highlight its outline, revealing unfilled cavities at the protein:protein interface. The relative position of interfacing amino acids is roughly indicated with residue labels. DesK DHp helices are shown in cartoon representation, with its superposed molecular surface on top. Two key residues on the HK partner are shown as sticks.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Sequence covariance among HK:RR pairs measured by direct coupling analysis. Included HK sequences belong to family HisKA_3, and RRs to family NarL/LuxR (see Materials and methods section for full details). The Table on the right, shows the actual Mutual Information (MI) and Direct Information (DI) figures ranking the highest 15 inter-protein pairs of residues (intra-protein pairs are not shown). The cartoon representation on the left, highlights those 15 pairs as spheres (colored red for DesR and orange for DesK) within the 3D structure of the DesK:DesR phosphotransferase complex shown in cartoon representation (same color scheme as Figure 2B). (B) DesK:DesR interface observed from a different perspective compared to Figure 2B, following the same color scheme. The phosphotransferase complex is shown, with the solvent-exposed surface of DesR shown in semi-transparent gray. The surface highlights the RR pocket that lodges Leu200(HK), further extended into a groove to the right of the figure. This groove ends in the reaction center, referenced by Asp54(RR) and P~His188(HK) (modeled in place after in silico substitution of Glu188(HK)). (C) Complementing Figure 2 (panels C and D), solvent-exposed surface representations of the phosphatase and phosphotransferase complexes, are shown in two orientations (top and bottom panels). The distinct interaction of DesR with the CA domains is evident.DOI: http://dx.doi.org/10.7554/eLife.21422.009
+**Figure 2—figure supplement 1.:** (A) Sequence covariance among HK:RR pairs measured by direct coupling analysis. Included HK sequences belong to family HisKA_3, and RRs to family NarL/LuxR (see Materials and methods section for full details). The Table on the right, shows the actual Mutual Information (MI) and Direct Information (DI) figures ranking the highest 15 inter-protein pairs of residues (intra-protein pairs are not shown). The cartoon representation on the left, highlights those 15 pairs as spheres (colored red for DesR and orange for DesK) within the 3D structure of the DesK:DesR phosphotransferase complex shown in cartoon representation (same color scheme as Figure 2B). (B) DesK:DesR interface observed from a different perspective compared to Figure 2B, following the same color scheme. The phosphotransferase complex is shown, with the solvent-exposed surface of DesR shown in semi-transparent gray. The surface highlights the RR pocket that lodges Leu200(HK), further extended into a groove to the right of the figure. This groove ends in the reaction center, referenced by Asp54(RR) and P~His188(HK) (modeled in place after in silico substitution of Glu188(HK)). (C) Complementing Figure 2 (panels C and D), solvent-exposed surface representations of the phosphatase and phosphotransferase complexes, are shown in two orientations (top and bottom panels). The distinct interaction of DesR with the CA domains is evident.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Molecular representations of the movements of DesR-REC on the DesK:DesR interface. Two orthogonal views are displayed (left and right). The initial conformation of DesK's chains is represented as cartoons in green and yellow, with ATP moieties (orange) and P~His188(HK) residues (colored by atom) shown as spheres. To represent the different structures adopted by DesR-REC during the simulation, a conformation was selected every 5 ns of trajectory, and depicted as tubes. The DesR-REC coloring scheme follows a red-to-blue gradient according to the accumulated simulation time of each model. The system was previously fitted to the invariant region of DesK DHp domain (residues 190–234) and oriented according to the inertial tensor matrix of this domain (XYZ axes are shown at the bottom of each representation). (B) On top, a time-dependent (x-axis) heat-map illustrating the variation of RMSDs of DesR-REC domains of the nine independently refined DesK:DesR complexes (y-axis; P = phosphatase complex, PT = phosphotransferase complex) with respect to the crystallographic starting structure, along the MD trajectories illustrated in panel (A). The RMSDs were always calculated after fitting the MD frames to the invariant region of DesK DHp domain (residues 190–234). Bottom part, minimum RMSD values taken from the heat-map matrix on top. (C) Further quantitative analysis of panel (A), here the relative movement of the DesR-REC domain is revealed plotting its center of mass as displaced from the initial structure (after fitting to the invariant region of DesK DHp domain). The reference XYZ system of coordinates is shown in panel (A).DOI: http://dx.doi.org/10.7554/eLife.21422.010
+**Figure 2—figure supplement 2.:** (A) Molecular representations of the movements of DesR-REC on the DesK:DesR interface. Two orthogonal views are displayed (left and right). The initial conformation of DesK's chains is represented as cartoons in green and yellow, with ATP moieties (orange) and P~His188(HK) residues (colored by atom) shown as spheres. To represent the different structures adopted by DesR-REC during the simulation, a conformation was selected every 5 ns of trajectory, and depicted as tubes. The DesR-REC coloring scheme follows a red-to-blue gradient according to the accumulated simulation time of each model. The system was previously fitted to the invariant region of DesK DHp domain (residues 190–234) and oriented according to the inertial tensor matrix of this domain (XYZ axes are shown at the bottom of each representation). (B) On top, a time-dependent (x-axis) heat-map illustrating the variation of RMSDs of DesR-REC domains of the nine independently refined DesK:DesR complexes (y-axis; P = phosphatase complex, PT = phosphotransferase complex) with respect to the crystallographic starting structure, along the MD trajectories illustrated in panel (A). The RMSDs were always calculated after fitting the MD frames to the invariant region of DesK DHp domain (residues 190–234). Bottom part, minimum RMSD values taken from the heat-map matrix on top. (C) Further quantitative analysis of panel (A), here the relative movement of the DesR-REC domain is revealed plotting its center of mass as displaced from the initial structure (after fitting to the invariant region of DesK DHp domain). The reference XYZ system of coordinates is shown in panel (A).
 
 The DHp:REC interface engages van der Waals contacts almost exclusively, including several hydrophobic residues (Figure 2B), which clustered among the few HK:RR covariant residue pairs (Figure 2—figure supplement 1A) found to be conserved in other HK and RR families (Skerker et al., 2008). Leu200(HK) plays a central role by inserting its side chain into a hydrophobic pocket within DesR, delimited by the side chains of Leu13(RR), Ala16(RR), Leu17(RR) and Leu20(RR) on one side, and the main chain atoms of the loop spanning residues 102–106(RR), on the other (Figure 2—figure supplement 1B). Ser196(HK) and Gln193(HK), located on the same face of α1(HK) as Leu200(HK), establish additional van der Waals contacts within a groove on the RR’s surface, extending the Leu200(HK)-lodging pocket all the way to the reaction center, which is rather open (Figure 2—figure supplement 1B). Very few polar contacts are observed surrounding the hydrophobic core, on both ends of the interface patch: Asp203(HK)/Arg206(HK) with Ser106(RR)/Glu107(RR), and a salt bridge between Arg235(HK) and Asp103(RR) on the other end. The buried surface is ~1400 Å2 in the phosphatase state, the DHp:REC interface being the major contributor (~1000 Å2) (Figure 2C and Figure 2—figure supplement 1C), although the CA domain adds a buried area of >400 Å2. On the other hand, the phosphotransferase complex shows a slightly smaller interface (~1000 Å2), dominated by the DHp:REC interaction (~900 Å2) (Figure 2D and Figure 2—figure supplement 1C).
 
-Superposing the Cα atoms of the DHp region involved in DesR-binding (DesK residues 190–235) among the nine independently refined DesKC:DesR interfaces, reveals large variability in the relative positioning of the REC domains, with rmsd as high as 2.4 Å for the RECs’ 129 Cα atoms (Figure 2E, Table 5). These significant movements engage corresponding shifts in the positions of interacting residues, albeit preserving the contacts, reminiscent of a ‘slippery’ interface. The slippery nature of the interface is consistent with its planarity, a low number of mainly hydrophobic contacts, leading to low shape complementarity and unfilled cavities within the RR partner (Figure 2F).10.7554/eLife.21422.011Table 5.Square matrix of all possible pair-wise structural superpositions. Superpositions were calculated using the nine independently refined DesKC:DesR-REC pairs, taken from the 1.5 complexes in the phosphatase asymmetric unit (named STAB1, STAB2 and STAB3) and the 2 complexes present in the ASU of each of the three different phosphotransferase structures (named as E188[1–6]). Below the main diagonal the structurally invariant region of DesK DHp domains (residues 190–234(HK)) were superposed, whereas above the diagonal, the DesR REC domains (residues 1–129(RR)) were superposed instead. Resulting root mean squared deviations (in Å) were calculated, for both matrix halves, between all Cα atoms of the REC domains (residues 1–129(RR)) after superposition, as indicated in each individual matrix cell. Font colors highlight the two different alignment procedures performed. The significant differences between corresponding blue- and red-colored values, indicate that the REC domains do not change within, but rather ‘slip’ with respect to the kinase DHp domain.DOI: http://dx.doi.org/10.7554/eLife.21422.011STAB1 STAB2 STAB3 E1881 E1882E1883 E1884 E1885 E1886 STAB1 0.229 0.158 0.414 0.349 0.442 0.361 0.344 0.343 STAB2 0.826 0.188 0.496 0.459 0.512 0.334 0.343 0.333 STAB3 1.362 1.917 0.393 0.343 0.414 0.292 0.287 0.277 E18811.168 1.133 1.682 0.275 0.146 0.305 0.301 0.301 E1882 0.909 1.140 1.224 0.584 0.301 0.351 0.309 0.341 E1883 1.085 1.110 1.530 0.233 0.459 0.346 0.315 0.313 E1884 1.548 1.140 2.453 0.893 1.316 1.040 0.175 0.117 E1885 1.295 0.978 2.096 0.593 0.969 0.716 0.449 0.140 E1886 1.424 1.058 2.300 0.770 1.182 0.905 0.193 0.306
+Superposing the Cα atoms of the DHp region involved in DesR-binding (DesK residues 190–235) among the nine independently refined DesKC:DesR interfaces, reveals large variability in the relative positioning of the REC domains, with rmsd as high as 2.4 Å for the RECs’ 129 Cα atoms (Figure 2E, Table 5). These significant movements engage corresponding shifts in the positions of interacting residues, albeit preserving the contacts, reminiscent of a ‘slippery’ interface. The slippery nature of the interface is consistent with its planarity, a low number of mainly hydrophobic contacts, leading to low shape complementarity and unfilled cavities within the RR partner (Figure 2F).
 
-## A single response regulator conformation is selected by the two functional states of the kinase
+**Table 5.**
+ Square matrix of all possible pair-wise structural superpositions. Superpositions were calculated using the nine independently refined DesKC:DesR-REC pairs, taken from the 1.5 complexes in the phosphatase asymmetric unit (named STAB1, STAB2 and STAB3) and the 2 complexes present in the ASU of each of the three different phosphotransferase structures (named as E188[1–6]). Below the main diagonal the structurally invariant region of DesK DHp domains (residues 190–234(HK)) were superposed, whereas above the diagonal, the DesR REC domains (residues 1–129(RR)) were superposed instead. Resulting root mean squared deviations (in Å) were calculated, for both matrix halves, between all Cα atoms of the REC domains (residues 1–129(RR)) after superposition, as indicated in each individual matrix cell. Font colors highlight the two different alignment procedures performed. The significant differences between corresponding blue- and red-colored values, indicate that the REC domains do not change within, but rather ‘slip’ with respect to the kinase DHp domain.
 
-Comparing the phosphatase
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>STAB1</td>
+      <td>STAB2</td>
+      <td>STAB3</td>
+      <td>E1881</td>
+      <td>E1882</td>
+      <td>E1883</td>
+      <td>E1884</td>
+      <td>E1885</td>
+      <td>E1886</td>
+    </tr>
+    <tr>
+      <td>STAB1</td>
+      <td></td>
+      <td>0.229</td>
+      <td>0.158</td>
+      <td>0.414</td>
+      <td>0.349</td>
+      <td>0.442</td>
+      <td>0.361</td>
+      <td>0.344</td>
+      <td>0.343</td>
+    </tr>
+    <tr>
+      <td>STAB2</td>
+      <td>0.826</td>
+      <td></td>
+      <td>0.188</td>
+      <td>0.496</td>
+      <td>0.459</td>
+      <td>0.512</td>
+      <td>0.334</td>
+      <td>0.343</td>
+      <td>0.333</td>
+    </tr>
+    <tr>
+      <td>STAB3</td>
+      <td>1.362</td>
+      <td>1.917</td>
+      <td></td>
+      <td>0.393</td>
+      <td>0.343</td>
+      <td>0.414</td>
+      <td>0.292</td>
+      <td>0.287</td>
+      <td>0.277</td>
+    </tr>
+    <tr>
+      <td>E1881</td>
+      <td>1.168</td>
+      <td>1.133</td>
+      <td>1.682</td>
+      <td></td>
+      <td>0.275</td>
+      <td>0.146</td>
+      <td>0.305</td>
+      <td>0.301</td>
+      <td>0.301</td>
+    </tr>
+    <tr>
+      <td>E1882</td>
+      <td>0.909</td>
+      <td>1.140</td>
+      <td>1.224</td>
+      <td>0.584</td>
+      <td></td>
+      <td>0.301</td>
+      <td>0.351</td>
+      <td>0.309</td>
+      <td>0.341</td>
+    </tr>
+    <tr>
+      <td>E1883</td>
+      <td>1.085</td>
+      <td>1.110</td>
+      <td>1.530</td>
+      <td>0.233</td>
+      <td>0.459</td>
+      <td></td>
+      <td>0.346</td>
+      <td>0.315</td>
+      <td>0.313</td>
+    </tr>
+    <tr>
+      <td>E1884</td>
+      <td>1.548</td>
+      <td>1.140</td>
+      <td>2.453</td>
+      <td>0.893</td>
+      <td>1.316</td>
+      <td>1.040</td>
+      <td></td>
+      <td>0.175</td>
+      <td>0.117</td>
+    </tr>
+    <tr>
+      <td>E1885</td>
+      <td>1.295</td>
+      <td>0.978</td>
+      <td>2.096</td>
+      <td>0.593</td>
+      <td>0.969</td>
+      <td>0.716</td>
+      <td>0.449</td>
+      <td></td>
+      <td>0.140</td>
+    </tr>
+    <tr>
+      <td>E1886</td>
+      <td>1.424</td>
+      <td>1.058</td>
+      <td>2.300</td>
+      <td>0.770</td>
+      <td>1.182</td>
+      <td>0.905</td>
+      <td>0.193</td>
+      <td>0.306</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### A single response regulator conformation is selected by the two functional states of the kinase
+
+Comparing the phosphatase vs phosphotransferase complexes, the HK partner reveals substantial rearrangements. Concerning the DHp domain, a large rotational shift is observed on the membrane-proximal side of the phosphorylation site (Figure 3—figure supplement 1A), in contrast to the distal RR-binding site, which remains essentially invariant. The relative orientation of the CA domains is also dramatically changed (Figure 3—figure supplement 1B). On the other hand, the RR REC domain adopts a unique conformation in both complexes, with an average rmsd of 0.3 Å aligning all Cα atoms, and no significant contrast clustering phosphatase vs phosphotransferase structures (Table 5). Interestingly, this conformation adopted by the REC domain in complex with the kinase, combines structural features of both active and inactive states as seen in the free forms of RRs (Gao and Stock, 2009; Trajtenberg et al., 2014) (Figure 3). Namely, the β4α4 loop and β5 strand emulate the inactive RR, while the rest of the protein resembles the free phosphorylated species. The β4α4 loop is closed in phosphorylated RRs (e.g. PDB 4LE0), coupled to a fully wound first turn of helix α4 (Pro85(RR) displays a dihedral ψ angle near −40°, allowing for α-helicity). The REC molecules in both phosphatase and phosphotransferase complexes, show instead this β4α4 loop open (with Pro85(RR) ψ angles of respectively 126° and 130°, and the first turn of α4 unwound, as observed in the inactive state of the Mg2+-free protein [PDB 4LE1]). Thus acting as a ‘phosphate lid’, the β4α4 loop opens and closes to control phosphoryl-transfer chemistry on Asp54(RR) (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig3-v2.jpg)
 
-**Figure 3.:** The phosphotransferase complex (this study, PDB 5IUK) is shown in cartoon representation, following the same coloring scheme as in Figure 2. REC domains from reported free DesR species are shown superposed, in gray the inactive Mg2+-free RR (PDB 4LE1) and the active species in cyan (PDB 4LE0). Note that the complexed form of the regulator (in magenta) is mainly similar to the active species, including in the β1α1 loop and α1 helix (that play key roles in the structuring of the RR’s active site), even though the RR is not phosphorylated on the reactive Asp54(RR). Dashed outlines highlight the regions that most resemble each functional state. Note that the inactive-like region essentially involves the end of β4 and the β4α4 loop, which closes in as a phosphate lid in P~DesR. Phe82(RR) (shown in transparent sticks for clarity) interacts with the HK, playing a role in phosphate lid opening in both phosphatase and phosphotransferase complexes. Tyr99(RR) on strand β5 (the strand is not visible below α4), typically forming a H-bond with the main chain O of Phe82(RR) in activated RRs, is observed farther away in both DesK:DesR complexes, yet another feature of inactive states. Inset: a close-up of the N-terminal tip of helix α4 is shown. The dihedral ψ angle of Pro85(RR) is linked to the active/inactive shift of the β4α4 loop.DOI: http://dx.doi.org/10.7554/eLife.21422.012
+**Figure 3.:** The phosphotransferase complex (this study, PDB 5IUK) is shown in cartoon representation, following the same coloring scheme as in Figure 2. REC domains from reported free DesR species are shown superposed, in gray the inactive Mg2+-free RR (PDB 4LE1) and the active species in cyan (PDB 4LE0). Note that the complexed form of the regulator (in magenta) is mainly similar to the active species, including in the β1α1 loop and α1 helix (that play key roles in the structuring of the RR’s active site), even though the RR is not phosphorylated on the reactive Asp54(RR). Dashed outlines highlight the regions that most resemble each functional state. Note that the inactive-like region essentially involves the end of β4 and the β4α4 loop, which closes in as a phosphate lid in P~DesR. Phe82(RR) (shown in transparent sticks for clarity) interacts with the HK, playing a role in phosphate lid opening in both phosphatase and phosphotransferase complexes. Tyr99(RR) on strand β5 (the strand is not visible below α4), typically forming a H-bond with the main chain O of Phe82(RR) in activated RRs, is observed farther away in both DesK:DesR complexes, yet another feature of inactive states. Inset: a close-up of the N-terminal tip of helix α4 is shown. The dihedral ψ angle of Pro85(RR) is linked to the active/inactive shift of the β4α4 loop.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Structural superposition of the phosphatase (red) and phosphotransferase (green) complexes, using the invariant region of the DHp domains (residues 190–234). The DHp domains are represented as cartoons, the CA domains are not shown for clarity. The REC domain of DesR is represented in transparent surface representations (magenta), as a reference for the HK:RR interface location. (B) Same superposition and coloring scheme as in (A), except that CA domains are shown, highlighting their dramatic rearrangement in the phosphatase-phosphotransferase transition. Three orthogonal orientations are viewed in the left, central and right panels.DOI: http://dx.doi.org/10.7554/eLife.21422.013
+**Figure 3—figure supplement 1.:** (A) Structural superposition of the phosphatase (red) and phosphotransferase (green) complexes, using the invariant region of the DHp domains (residues 190–234). The DHp domains are represented as cartoons, the CA domains are not shown for clarity. The REC domain of DesR is represented in transparent surface representations (magenta), as a reference for the HK:RR interface location. (B) Same superposition and coloring scheme as in (A), except that CA domains are shown, highlighting their dramatic rearrangement in the phosphatase-phosphotransferase transition. Three orthogonal orientations are viewed in the left, central and right panels.
 
 Regarding the positions of the phosphorylatable Asp, as well those of the β1α1 loop and contiguous helix α1, HK-binding triggers RR ‘activation’, as we had previously predicted based on functional readouts and in silico modeling (Trajtenberg et al., 2014). The shift of loop β1α1 locates key acidic residues in place to coordinate the essential Mg2+ cation within the RR’s reaction center.
 
 Taken together, the RR adopts a single intermediate pre-activated conformation, instrumental for both dephosphorylation and phosphotransfer reactions, due to increased exposure of the phosphorylation site and stabilized configuration of the pocket poised for reaction.
 
-## The phosphatase to phosphotransferase transition: reconfiguring the reaction center for catalysis
+### The phosphatase to phosphotransferase transition: reconfiguring the reaction center for catalysis
 
-The crystal structure of
+The crystal structure of wt P~DesKC was determined (Table 1), improving previous resolution limits (Albanesi et al., 2009). The reactive His188(HK) was observed to be phosphorylated on its Nε2 atom (Figure 4—figure supplement 1A), and superposition of this model onto the HK partner of the phosphotransferase complex (PDB 5IUK) revealed very similar structures, with 1.2 Å rmsd aligning all 1994 atoms that comprise the DHp domain and the fixed CA (Figure 4—figure supplement 1B). Substituting the DesKCH188E component in the crystal complex by the superposed wt P~DesKC, revealed surprisingly good geometry between P~DesKC and DesR-REC (Figure 4—figure supplement 1C). Energy minimization easily fixed minor interatomic bumping, rendering a model with P~His188(HK) well oriented toward Asp54(RR), poised for phosphotransfer (Figure 4A). The P~His188(HK)Nε2, phosphorus and Asp54(RR)Oδ1 atoms describe a~180° angle, with the phosphoryl group at H-bonding distance to the side chain oxygens of Thr80(RR) and Thr81(RR). The model proved to be stable in molecular dynamics simulations (Figure 4B), overall making chemical and biological sense. We shall thus use the minimized wt P~DesKC:DesR-REC model to perform further structural analyses of the phosphotransferase complex reaction center.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig4-v2.jpg)
 
-**Figure 4.:** (A) Cartoon model of the phosphotransferase reaction center prior to DesR phosphorylation (see model construction details the Materials and methods section). DesK protomers (orange and blue) and DesR (cyan, transparent for clarity) are displayed with selected key residues in sticks colored by atom. Mg2+ (green sphere) is already in place, coordinated by the two shown Asp residues and water molecules (not included). Phosphoryl moiety interactions with DesR, and the reactive Asp-His distance are indicated. (B) Evolution of the atomic coordinates of the phosphotransferase complex along molecular dynamics (MD) calculations. Selected HK or RR domains were structurally aligned (marked with orange subscripts on each curve’s label on top), to thereafter compare the evolving MD model with the initial experimental structure (calculating rmsds of chosen domains as marked in black fonts on each curve’s label on top). Resulting rmsds for all Cα atoms of chosen domains are plotted (colored curves) as a function of time. Note that the time lapse is enough to detect large CA mobility (gray curve) whereas the DHp:REC complex remains attached and stable (pink curve). (C) Cartoon illustration of the HK DHp domains of the phosphatase complex (P), with its two HK protomers in green and yellow, superposed onto the phosphotransferase (PT) in orange and blue. Residue His188(HK) (in sticks) reveals the rotational rearrangement between both states. (D) Similar phosphatase vs phosphotransferase illustration as in (C), along a different view. The RR partner is now shown (magenta for the phosphatase complex [P], cyan for the phosphotransferase [PT]). The Arg84(RR):Asp189(HK) salt bridge is disrupted in the PT complex due to the DHp rotational shift (red arrow). Note the shift of the RR β4α4 loop, including Phe82(RR), propagating toward Thr80(RR). The latter is positioned at H-bonding distance to the phosphoryl group either on the P~His or on the P~Asp residue (the BeF3- moiety in the P complex is transparent), with a shift of 1.5 Å of its side chain O atom. (E) Phosphotransfer kinetics comparing wt DesR-REC (top panel) with phosphate lid mutant DesRF82A-REC (bottom panel), revealed by Phos-tag SDS-PAGE.DOI: http://dx.doi.org/10.7554/eLife.21422.014
+**Figure 4.:** (A) Cartoon model of the phosphotransferase reaction center prior to DesR phosphorylation (see model construction details the Materials and methods section). DesK protomers (orange and blue) and DesR (cyan, transparent for clarity) are displayed with selected key residues in sticks colored by atom. Mg2+ (green sphere) is already in place, coordinated by the two shown Asp residues and water molecules (not included). Phosphoryl moiety interactions with DesR, and the reactive Asp-His distance are indicated. (B) Evolution of the atomic coordinates of the phosphotransferase complex along molecular dynamics (MD) calculations. Selected HK or RR domains were structurally aligned (marked with orange subscripts on each curve’s label on top), to thereafter compare the evolving MD model with the initial experimental structure (calculating rmsds of chosen domains as marked in black fonts on each curve’s label on top). Resulting rmsds for all Cα atoms of chosen domains are plotted (colored curves) as a function of time. Note that the time lapse is enough to detect large CA mobility (gray curve) whereas the DHp:REC complex remains attached and stable (pink curve). (C) Cartoon illustration of the HK DHp domains of the phosphatase complex (P), with its two HK protomers in green and yellow, superposed onto the phosphotransferase (PT) in orange and blue. Residue His188(HK) (in sticks) reveals the rotational rearrangement between both states. (D) Similar phosphatase vs phosphotransferase illustration as in (C), along a different view. The RR partner is now shown (magenta for the phosphatase complex [P], cyan for the phosphotransferase [PT]). The Arg84(RR):Asp189(HK) salt bridge is disrupted in the PT complex due to the DHp rotational shift (red arrow). Note the shift of the RR β4α4 loop, including Phe82(RR), propagating toward Thr80(RR). The latter is positioned at H-bonding distance to the phosphoryl group either on the P~His or on the P~Asp residue (the BeF3- moiety in the P complex is transparent), with a shift of 1.5 Å of its side chain O atom. (E) Phosphotransfer kinetics comparing wt DesR-REC (top panel) with phosphate lid mutant DesRF82A-REC (bottom panel), revealed by Phos-tag SDS-PAGE.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** H188E in the phosphotransferase complex.(A) Fourier maps are shown with the final wt P~DesKC refined model (cartoon representation only showing DHp helix α1, and the P~His188(HK) in sticks). Maps were calculated with sigmaA-weighted coefficients 2mFobs-DFcalc (blue mesh) and mFobs-DFcalc (green mesh), generated after convergent refinement excluding the phosphoryl moiety. The Fourier difference peak has an rmsd of 5. (B) The DesKCH188E partner (in gray) was extracted from the phosphotransferase complex (labeled PT, chains A and B from PDB 5IUK, this report), and superimposed onto wt P~DesKC (in pink, PDB 5IUM, this report) revealing high global structural similarity (see main text). The P~His188(HK) residue is highlighted in spheres as a spatial reference. (C) Same view and coloring scheme as Figure 4A, highlighting the crystal structure of the phosphotransferase complex (PDB 5IUK, this report). The RR is rendered semi-transparent to allow for better visualization of selected residues (in solid sticks). The model whereby the DesKCH188E partner (from PDB 5IUK) has been substituted by the superposed wt P~DesKC (from PDB 5IUM), is shown as a transparent cartoon. The P~His188(HK) residue is shown in transparent sticks representation. This model was minimized to adjust minor clashes (full details in Materials and methods) and thereafter used for structural analyses of the phosphotransferase reaction center (see Figure 4A). (D) Representative sigmaA-weighted 2mFobs-DFcalc Fourier map (contoured at 1σ) of the refined phosphatase complex model, centered on the DHp domain at the level of the reactive His188(HK) (shown as sticks), other residues have been excluded from the illustration for greater clarity. The DHp helices are shown as cartoons (the two HK protomers depicted in green and yellow). The HK CA domains and the associated DesR-REC domains in the complex are not shown for clarity.DOI: http://dx.doi.org/10.7554/eLife.21422.015
+**Figure 4—figure supplement 1.:** (A) Fourier maps are shown with the final wt P~DesKC refined model (cartoon representation only showing DHp helix α1, and the P~His188(HK) in sticks). Maps were calculated with sigmaA-weighted coefficients 2mFobs-DFcalc (blue mesh) and mFobs-DFcalc (green mesh), generated after convergent refinement excluding the phosphoryl moiety. The Fourier difference peak has an rmsd of 5. (B) The DesKCH188E partner (in gray) was extracted from the phosphotransferase complex (labeled PT, chains A and B from PDB 5IUK, this report), and superimposed onto wt P~DesKC (in pink, PDB 5IUM, this report) revealing high global structural similarity (see main text). The P~His188(HK) residue is highlighted in spheres as a spatial reference. (C) Same view and coloring scheme as Figure 4A, highlighting the crystal structure of the phosphotransferase complex (PDB 5IUK, this report). The RR is rendered semi-transparent to allow for better visualization of selected residues (in solid sticks). The model whereby the DesKCH188E partner (from PDB 5IUK) has been substituted by the superposed wt P~DesKC (from PDB 5IUM), is shown as a transparent cartoon. The P~His188(HK) residue is shown in transparent sticks representation. This model was minimized to adjust minor clashes (full details in Materials and methods) and thereafter used for structural analyses of the phosphotransferase reaction center (see Figure 4A). (D) Representative sigmaA-weighted 2mFobs-DFcalc Fourier map (contoured at 1σ) of the refined phosphatase complex model, centered on the DHp domain at the level of the reactive His188(HK) (shown as sticks), other residues have been excluded from the illustration for greater clarity. The DHp helices are shown as cartoons (the two HK protomers depicted in green and yellow). The HK CA domains and the associated DesR-REC domains in the complex are not shown for clarity.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Active site for the dephosphorylation reaction, according to the phosphatase complex structure (this study, PDB 5IUN). For clarity only the relevant residues’ side chains are shown (in stick representation, with carbon atoms in green for the kinase, and purple for the regulator). The magnesium atom is shown as a green sphere within its coordination site in the regulator, with five of the six coordination bonds depicted as dashed lines: two water molecules (small red spheres), the side chain oxygens of aspartates 9 and 54, and an oxygen of the phosphoryl group bonded to the reactive Asp54(RR) (the phosphoryl group in the structure is actually a BeF3- mimicking the ortho-phosphoryl moiety, so that the Mg2+-chelating atom is fluorine, in light blue). The sixth Mg2+-coordinating atom is the main chain oxygen of Glu56(RR), not shown here for clarity. The water molecule (gray sphere) was not observed in the structure, it is here modeled after superposition of the CheX:CheY3 complex (PDB 3HZH). The figure shows the side chain nitrogen from Gln193(HK) positioning the catalytic water (this Gln rotamer was chosen according to H-bonds with Lys102(RR) and one of the Mg2+-coordinating water molecules, as observed in the structure, but the Gln193(HK) side chain could easily flip so that the amide oxygen eventually assists the catalytic water as a nucleophile to attack the phosphorus atom). The H-bond between the side chain oxygen of Thr80(RR) and the phosphoryl group is also highlighted with a dashed line, to be compared with panel (B). (B) Active site for the phosphoryl-transfer reaction, according to the phosphotransferase complex structure (this study, PDB 5IUK). Similar orientation view and coloring scheme as in panel (A). Glu188(HK) is shown here as a P~His after superposition of the wt P~DesKC structure (this study, PDB 5IUM) and substitution of the Glu188(HK) residue by the P~His188(HK) (full details in Materials and methods). Predicted distance separating the Nε2 atom on His188(HK) and the receiver oxygen on Asp54(RR) is labeled. Also highlighted with a dashed line is the expected H-bond between the phosphoryl-group on the reactive His and the side chain of the ultraconserved residue Thr80(RR). The magnesium atom (green sphere) displays a full octahedral coordination sphere, for clarity one equatorial and one axial coordination bonds are not shown here: respectively with the main chain oxygen of Glu56(RR), and with a water molecule that replaces the phosphoryl group coordination observed in panel (A).DOI: http://dx.doi.org/10.7554/eLife.21422.016
+**Figure 4—figure supplement 2.:** (A) Active site for the dephosphorylation reaction, according to the phosphatase complex structure (this study, PDB 5IUN). For clarity only the relevant residues’ side chains are shown (in stick representation, with carbon atoms in green for the kinase, and purple for the regulator). The magnesium atom is shown as a green sphere within its coordination site in the regulator, with five of the six coordination bonds depicted as dashed lines: two water molecules (small red spheres), the side chain oxygens of aspartates 9 and 54, and an oxygen of the phosphoryl group bonded to the reactive Asp54(RR) (the phosphoryl group in the structure is actually a BeF3- mimicking the ortho-phosphoryl moiety, so that the Mg2+-chelating atom is fluorine, in light blue). The sixth Mg2+-coordinating atom is the main chain oxygen of Glu56(RR), not shown here for clarity. The water molecule (gray sphere) was not observed in the structure, it is here modeled after superposition of the CheX:CheY3 complex (PDB 3HZH). The figure shows the side chain nitrogen from Gln193(HK) positioning the catalytic water (this Gln rotamer was chosen according to H-bonds with Lys102(RR) and one of the Mg2+-coordinating water molecules, as observed in the structure, but the Gln193(HK) side chain could easily flip so that the amide oxygen eventually assists the catalytic water as a nucleophile to attack the phosphorus atom). The H-bond between the side chain oxygen of Thr80(RR) and the phosphoryl group is also highlighted with a dashed line, to be compared with panel (B). (B) Active site for the phosphoryl-transfer reaction, according to the phosphotransferase complex structure (this study, PDB 5IUK). Similar orientation view and coloring scheme as in panel (A). Glu188(HK) is shown here as a P~His after superposition of the wt P~DesKC structure (this study, PDB 5IUM) and substitution of the Glu188(HK) residue by the P~His188(HK) (full details in Materials and methods). Predicted distance separating the Nε2 atom on His188(HK) and the receiver oxygen on Asp54(RR) is labeled. Also highlighted with a dashed line is the expected H-bond between the phosphoryl-group on the reactive His and the side chain of the ultraconserved residue Thr80(RR). The magnesium atom (green sphere) displays a full octahedral coordination sphere, for clarity one equatorial and one axial coordination bonds are not shown here: respectively with the main chain oxygen of Glu56(RR), and with a water molecule that replaces the phosphoryl group coordination observed in panel (A).
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** Superposition of DesR-REC in its free active form with BeF3- (PDB 4LE0, in gray), onto the DesR-REC domain of the phosphatase complex (with DesK in green and yellow, and DesR in magenta). The solvent-exposed surface of DesK is shown in transparent representation. Red arrows indicate major conformational shifts associated with the interaction between both proteins. Such shifts result in the opening of the phosphate lid, making enough space for a water molecule to enter into the reaction center and perform the nucleophilic attack onto the P atom. The water molecule was not observed in our phosphatase complex, likely due to limited resolution; here a water molecule was modeled (red sphere) using as a template the structure of the CheX:CheY3 complex (PDB 3HZH) superimposable onto ours.DOI: http://dx.doi.org/10.7554/eLife.21422.017
+**Figure 4—figure supplement 3.:** Superposition of DesR-REC in its free active form with BeF3- (PDB 4LE0, in gray), onto the DesR-REC domain of the phosphatase complex (with DesK in green and yellow, and DesR in magenta). The solvent-exposed surface of DesK is shown in transparent representation. Red arrows indicate major conformational shifts associated with the interaction between both proteins. Such shifts result in the opening of the phosphate lid, making enough space for a water molecule to enter into the reaction center and perform the nucleophilic attack onto the P atom. The water molecule was not observed in our phosphatase complex, likely due to limited resolution; here a water molecule was modeled (red sphere) using as a template the structure of the CheX:CheY3 complex (PDB 3HZH) superimposable onto ours.
 
 The phosphatase→phosphotransferase switch engages major rearrangements. An ~80° rotation of helix α1 is coupled to a cogwheel-like shift of helix α2, at the level of the phosphorylation site within the DHp domain (Albanesi et al., 2009). This rotation includes the phosphorylatable His188(HK) (Figure 4C), which had not been previously observed. Due to this shift, the side chain of His188(HK) ends up buried in the phosphatase state, establishing a H-bond with the same residue of the other protomer (Figure 4C and Figure 4—figure supplement 1D), displaced away from the reaction center as compared to the phosphotransferase (Figure 4D). Asp189(HK) right next to the phosphorylation site, follows a similarly dramatic rearrangement, well positioned only in the phosphatase complex to make a salt bridge with Arg84(RR). Neighboring Phe82(RR) thus inserts its aromatic side chain into a hydrophobic pocket formed between DHp α1 of one HK protomer and α2’ of the other (Figure 4D). That the reactive histidine moves away from the catalytic site in the phosphatase state is consistent with its marginal role in P~RR dephosphorylation catalysis in HisKA_3 HKs. Indeed, the phosphorylatable His was proved nonessential for NarX-mediated P~NarL dephosphorylation (Huynh et al., 2010). His has been implicated in EnvZ-mediated phosphatase catalysis (Zhu et al., 2000) in which case its imidazole would act as a base assisting the attack of water on the P~aspartyl group (Bhate et al., 2015). But contradictory results cast doubts on such a direct role (Hsing and Silhavy, 1997; Skarphol et al., 1997). Instead, a Gln in HisKA_3 (Huynh et al., 2010), corresponding to Gln193(HK) in DesK, or a Thr/Asn in HisKA HKs (Willett and Kirby, 2012), equivalently positioned one helical turn C-terminal to the phosphorylatable His, play a key role in the phosphatase reaction, positioning a catalytic water molecule. Such water or hydroxide molecule is well located to perform the nucleophilic attack on the phosphoryl group, as observed in the P~CheY3 phosphatase CheX (Pazy et al., 2010), a shared geometry among phosphatases and HKs as we now observe in the DesKC:DesR-REC phosphatase complex (Figure 4—figure supplement 2).
 
@@ -119,15 +623,136 @@ The rotational phosphatase→phosphotransferase rearrangement disrupts the Asp18
 
 Thus, the phosphatase and phosphotransferase catalytic activities depend upon modifications in the position of a subset of residues in both partners. Both complexes share a common RR intermediate conformation, and the reaction outcome is dictated by the HK switch of helices α1 and α2.
 
-## Dissociative phosphotransfer is linked to unidirectional signaling
+### Dissociative phosphotransfer is linked to unidirectional signaling
 
-DesK:DesR-catalyzed phosphotransfer occurred essentially in the forward, P~DesK→DesR direction (
+DesK:DesR-catalyzed phosphotransfer occurred essentially in the forward, P~DesK→DesR direction (Figure 5A), extending earlier suggestions (Albanesi et al., 2004) into quantitative figures, and indicating that back-transfer is minimal. How is immediate P~RR dephosphorylation prevented once the phosphate has been transferred? The side chain of Thr80(RR) at the end of β4 strand, appears to drive the whole phosphate lid to a closed configuration, escorting the phosphoryl group during P~His→Asp migration (Figures 3 and 4D). To test whether a closed phosphate lid indeed plays a role in minimizing P~RR dephosphorylation, as a means to ensuring phosphotransfer unidirectionality, Phe82(RR) was substituted by alanine. Phe82(RR) covers the P~Asp54(RR) in active free DesR, while exposing it to bulk solvent through phosphate lid-opening when bound to DesK (Figure 4—figure supplement 2). The half-life of P~DesRF82A was significantly reduced when compared to wt P~DesR (Figure 5B), confirming that the phosphate lid is a key structural element to avoid otherwise futile P~RR dephosphorylation after phosphotransfer.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig5-v2.jpg)
 
-**Figure 5.:** (A) Phosphoryl-transfer reactions were analyzed in vitro using Phos-tag SDS-PAGE. Band intensities corresponding to unphosphorylated and phosphorylated species were quantified by densitometry. Forward- and back-transfer directions were compared, with bars representing the amount of phosphotransfer in each direction, plotted as the percentage of phosphorylated DesKC with respect to its total initial amount (100%). Forward phosphotransfer (black bar) was measured by incubating pre-phosphorylated P~DesKC and DesR-REC. Back-transfer (gray bar) was assayed by incubating pre-phosphorylated P~DesR and DesKC. The standard deviation for triplicate replicas are shown as error bars. (B) Stabilization of the phosphorylated DesR species by the phosphorylation lid. The intrinsic dephosphorylation velocities of P~DesR-REC and P~DesRF82A-REC were compared using Phos-tag SDS-PAGE. One of three similar replicas is shown. (C) Structural superposition of the DesK:DesR phosphotransferase complex (colored in green:magenta) onto the B. subtilis Spo0B:Spo0F complex (PDB 2FTK, depicted in cyan:white), aligning the DesR and Spo0F REC domains. Selected key residues are labeled and numbered according to DesR's sequence. Note the strictly conserved position of the divalent cation (green sphere). The relative shift in the position of the phosphorylatable histidine (His188 in DesK corresponds to His30 in Spo0B), is highlighted by depicting the His(Nε2)-Asp(Oδ1) distances, not including the phosphoryl group for clarity. Note that besides the His shift, the overall DHp:REC binding interface is otherwise preserved. (D) Plot of His(Nε2)-Asp(Oδ1) distance vs degree of asymmetry in the position of the Mg2+ cation, comparing independently refined TCS complexes (color-labeled). The inset shows the two interatomic distances used to calculate the ratio plotted in the x-axis. Note the clustering in two groups, which discriminate complexes catalyzing reversible (yellow-to-brown range of points) vs irreversible (blue range of points) phosphotransfer reactions.DOI: http://dx.doi.org/10.7554/eLife.21422.018
+**Figure 5.:** (A) Phosphoryl-transfer reactions were analyzed in vitro using Phos-tag SDS-PAGE. Band intensities corresponding to unphosphorylated and phosphorylated species were quantified by densitometry. Forward- and back-transfer directions were compared, with bars representing the amount of phosphotransfer in each direction, plotted as the percentage of phosphorylated DesKC with respect to its total initial amount (100%). Forward phosphotransfer (black bar) was measured by incubating pre-phosphorylated P~DesKC and DesR-REC. Back-transfer (gray bar) was assayed by incubating pre-phosphorylated P~DesR and DesKC. The standard deviation for triplicate replicas are shown as error bars. (B) Stabilization of the phosphorylated DesR species by the phosphorylation lid. The intrinsic dephosphorylation velocities of P~DesR-REC and P~DesRF82A-REC were compared using Phos-tag SDS-PAGE. One of three similar replicas is shown. (C) Structural superposition of the DesK:DesR phosphotransferase complex (colored in green:magenta) onto the B. subtilis Spo0B:Spo0F complex (PDB 2FTK, depicted in cyan:white), aligning the DesR and Spo0F REC domains. Selected key residues are labeled and numbered according to DesR's sequence. Note the strictly conserved position of the divalent cation (green sphere). The relative shift in the position of the phosphorylatable histidine (His188 in DesK corresponds to His30 in Spo0B), is highlighted by depicting the His(Nε2)-Asp(Oδ1) distances, not including the phosphoryl group for clarity. Note that besides the His shift, the overall DHp:REC binding interface is otherwise preserved. (D) Plot of His(Nε2)-Asp(Oδ1) distance vs degree of asymmetry in the position of the Mg2+ cation, comparing independently refined TCS complexes (color-labeled). The inset shows the two interatomic distances used to calculate the ratio plotted in the x-axis. Note the clustering in two groups, which discriminate complexes catalyzing reversible (yellow-to-brown range of points) vs irreversible (blue range of points) phosphotransfer reactions.
 
-Then how is P~RR→HK back-transfer inhibited? The phosphate lid could also play a role. Yet, comparing wt P~DesR with point-mutants P~DesRF82A or P~DesRR84A, no change was detected in their marginal abilities to transfer the phosphoryl group back to DesK (data not shown). There is however a parameter that was found to discriminate irreversible phosphotransfer systems from others that reveal appreciable reversibility: the reactional His-Asp distance. The distance between P~His188(HK)Nε2 and Asp54(RR)Oδ1 in the phosphotransferase complex is ~7.6 Å (Figures 4A and 5C), strongly suggesting that the phosphotransfer reaction occurs through a loose (or predominantly dissociative) nucleophilic substitution mechanism. This is in contrast to what has been observed in reversible complexes (Figure 5C), which efficiently catalyze phosphotransfer also in the opposite, P~Asp→His direction. The latter display significantly shorter Nε2-to-Oδ1 distances, consistent with an associative nucleophilic mechanism (Table 6). Examples include several phosphorelay protein pairs (Bauer et al., 2013; Zapf et al., 2000; Zhao et al., 2008) as well as Escherichia coli CheY variants in complex with imidazole (Page et al., 2015), or yet two autophosphorylating HKs where the phosphoryl group is poised to migrate from ATP to the reactive histidine (Casino et al., 2014; Mechaly et al., 2014). In contrast, HK:RR TCSs with unidirectional P~His→Asp transfer, such as B. subtilis DesK:DesR (this study), Thermotoga maritima HK853:RR469 (Casino et al., 2009) and Rhodobacter sphaeroides CheA3:CheY6 (Bell et al., 2010), consistently show >6.6 Å HisNε2-AspOδ1 distances and correlated large reaction coordinate distances when these could be measured (Table 6). It will be interesting to test whether the phosphorelay pair ChpT:CtrA from Brucella abortus (Willett et al., 2015) displays reversible transfer, as anticipated on the basis of the reported 5.9 Å HisNε2-AspOδ1 distance.10.7554/eLife.21422.019Table 6.Summary of reactive His(HK)-to-Asp(RR) distances in reported TCS protein complexes.DOI: http://dx.doi.org/10.7554/eLife.21422.019Group (based on distance discriminants*)Complex partners (N° complexes per ASU†)Distance his(Nε2)-Asp(Oδ1) (Å)‡Reaction coordinate distance (Å)§Distance ratio [Mg2+-Asp(Oδ1)/Mg2+-His(Nε2)] Pdb (ID)Phosphotransfer reaction direction Remarks Phosphorelays I Spo0F:Spo0B¶(4)5.7; 5.3; 5.1; 5.14.1; 3.8; 3.6; 3.50.82; 0.74; 0.65; 0.672FTKP~Asp(Spo0F)→ His(Spo0B)Spo0B bears a DHp domainSLN1:YPD1**(1)4.93.20.672R25P~Asp(SLN1)→ His(YPD1)YPD1 bears an HPt domainAHK5:AHP1††(1)6.4ND[8]0.724EUKP~Asp(AHK5-REC)→ His(AHP1)AHP1 bears an HPt domainChpT:CtrA§§(2)5.9¶¶ND‡‡0.64***4QPJP~His(ChptA)→ Asp(CtrA)ChpT bears a DHp domainP~Asp(CtrA)→His(ChptA) remains to be confirmedHKs undergoing auto-phosphorylation I CpxA:ATP †††(1)5.0‡‡‡3.40.824BIWATP→His(CpxA)AMP-PCP was used as non-hydrolizable ATP analogs (between phosphates β and γ there is a C atom substituting the O)HK853/EnvZ chimera:ATP14 (1)5.3‡‡‡3.60.724KP4ATP→His(HK853)RR-mediated phosphorylation of imidazole I Imidazole:CheY¶¶¶(2)5.1; 5.13.3; 3.30.71; 0.735DKFP~AspCheY) → imidazoleIn vitro engineering of a phosphorelaying system from CheY to PhoR, using imidazole as a rudimentary HPtHK:RR complexes II HK853:RR468****(2)7.6; 8.0††††5.7; 6.1 ††††0.51; 0.48†††† 3DGEP~His(HK853)→ Asp(RR468)HK:RR complex, snapshot of the phosphatase state according to the authors.DesK:DesR‡‡‡‡(2)7.6§§§§5.8§§§§0.47§§§§5IUKP~His(DesK)→ Asp(DesR)HK:RR complex in the phosphotransferase stateCheA3:CheY6¶¶¶¶(1)7.3ND‡‡0.52*****3KYJP~His(CheA3)→ Asp(CheY6)3KYJ is not phosphorylated on either partner; 3KYI with P-His on CheA3 displays an unproductive P~His rotamer, otherwise confirming 3KYJ’s 3D organization* Distance between reactive His(Nε2)-Asp(Oδ1) less than or greater than 6.5Å, and distance ratio [Mg2+-Asp(Oδ1) / Mg2+-His(Nε2)] less than or greater than 0.6† ASU = asymmetric unit‡ Each distance corresponds to the one measured in each one of the independently refined complexes in the ASU.§ Distances are reported in the same order as in the previous column, with correspondence among same individual complexes.¶ Bacillus subtilis (Varughese et al.,2006)** Saccharomyces cerevisiae (Zhao et al., 2008)††Arabidopsis thaliana (Bauer et al., 2013)‡‡ Not determined : no phosphoryl group or phosphoryl-mimetic present in the structure.§§ Brucella abortus (Willett et al., 2015)¶¶ Only one of the two complexes in the ASU (ChpTchainA:CtrAchainC, display the reactive His and Asp properly oriented poised for reacting. Only one distance is thus recorded.*** No Mg2+ cation was actually bound on CtrA. A metal atom was modeled by superimposing the structure of RR468 with bound BeF3 (PDB 3GL9), one of the top ranking structures in multiple structural alignments with CtrA (DALI Z score 12.9, rmsd 0.8Å superimposing 98 αCs).††† Escherichia coli (Mechaly et al., 2014)‡‡‡ In the autophosphorylation complexes the distance is recorded between His(Nε2) and the position of the O between phosphates β and γ.§§§ Thermotoga maritima (HK853) / E. coli (EnvZ) (Casino et al., 2014)¶¶¶ E. coli (Page et al., 2015)**** Thermotoga maritima (Casino et al., 2009)†††† These distances have been calculated by superimposing the phosphorylation-mimetic structure of RR468 alone with bound BeF3 (PDB 3GL9), onto 3DGE, in order to use better estimations of the receiver Asp position as well as of the phosphorus atom.‡‡‡‡B. subtilis, this report.§§§§ Glu188 present in the crystal structure was substituted by wt P~His following superposition of wt phosphorylated DesKC (PDB 5IUM) onto one of the phosphotransferase DesKCH188E:DesR-REC complexes in the ASU (chains A-B:E). Distances are reported after energy minimization. See Materials and methods.¶¶¶¶ Rhodobacter sphaeroides (Bell et al., 2010)***** The position of Mg2+ cation was modeled using PDB 4TMY as template.
+Then how is P~RR→HK back-transfer inhibited? The phosphate lid could also play a role. Yet, comparing wt P~DesR with point-mutants P~DesRF82A or P~DesRR84A, no change was detected in their marginal abilities to transfer the phosphoryl group back to DesK (data not shown). There is however a parameter that was found to discriminate irreversible phosphotransfer systems from others that reveal appreciable reversibility: the reactional His-Asp distance. The distance between P~His188(HK)Nε2 and Asp54(RR)Oδ1 in the phosphotransferase complex is ~7.6 Å (Figures 4A and 5C), strongly suggesting that the phosphotransfer reaction occurs through a loose (or predominantly dissociative) nucleophilic substitution mechanism. This is in contrast to what has been observed in reversible complexes (Figure 5C), which efficiently catalyze phosphotransfer also in the opposite, P~Asp→His direction. The latter display significantly shorter Nε2-to-Oδ1 distances, consistent with an associative nucleophilic mechanism (Table 6). Examples include several phosphorelay protein pairs (Bauer et al., 2013; Zapf et al., 2000; Zhao et al., 2008) as well as Escherichia coli CheY variants in complex with imidazole (Page et al., 2015), or yet two autophosphorylating HKs where the phosphoryl group is poised to migrate from ATP to the reactive histidine (Casino et al., 2014; Mechaly et al., 2014). In contrast, HK:RR TCSs with unidirectional P~His→Asp transfer, such as B. subtilis DesK:DesR (this study), Thermotoga maritima HK853:RR469 (Casino et al., 2009) and Rhodobacter sphaeroides CheA3:CheY6 (Bell et al., 2010), consistently show >6.6 Å HisNε2-AspOδ1 distances and correlated large reaction coordinate distances when these could be measured (Table 6). It will be interesting to test whether the phosphorelay pair ChpT:CtrA from Brucella abortus (Willett et al., 2015) displays reversible transfer, as anticipated on the basis of the reported 5.9 Å HisNε2-AspOδ1 distance.
+
+**Table 6.**
+ Summary of reactive His(HK)-to-Asp(RR) distances in reported TCS protein complexes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Group (based on distance discriminants*)</th>
+      <th>Complex partners (N° complexes per ASU†)</th>
+      <th>Distance his(Nε2)-Asp(Oδ1) (Å)‡</th>
+      <th>Reaction coordinate distance (Å)§</th>
+      <th>Distance ratio [Mg2+-Asp(Oδ1)/Mg2+-His(Nε2)]</th>
+      <th>Pdb (ID)</th>
+      <th>Phosphotransfer reaction direction</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Phosphorelays</td>
+      <td rowspan="4">I</td>
+      <td>Spo0F:Spo0B¶(4)</td>
+      <td>5.7; 5.3; 5.1; 5.1</td>
+      <td>4.1; 3.8; 3.6; 3.5</td>
+      <td>0.82; 0.74; 0.65; 0.67</td>
+      <td>2FTK</td>
+      <td>P~Asp(Spo0F)→ His(Spo0B)</td>
+      <td>Spo0B bears a DHp domain</td>
+    </tr>
+    <tr>
+      <td>SLN1:YPD1**(1)</td>
+      <td>4.9</td>
+      <td>3.2</td>
+      <td>0.67</td>
+      <td>2R25</td>
+      <td>P~Asp(SLN1)→ His(YPD1)</td>
+      <td>YPD1 bears an HPt domain</td>
+    </tr>
+    <tr>
+      <td>AHK5:AHP1††(1)</td>
+      <td>6.4</td>
+      <td>ND[8]</td>
+      <td>0.72</td>
+      <td>4EUK</td>
+      <td>P~Asp(AHK5-REC)→ His(AHP1)</td>
+      <td>AHP1 bears an HPt domain</td>
+    </tr>
+    <tr>
+      <td>ChpT:CtrA§§(2)</td>
+      <td>5.9¶¶</td>
+      <td>ND‡‡</td>
+      <td>0.64***</td>
+      <td>4QPJ</td>
+      <td>P~His(ChptA)→ Asp(CtrA)</td>
+      <td>ChpT bears a DHp domainP~Asp(CtrA)→His(ChptA) remains to be confirmed</td>
+    </tr>
+    <tr>
+      <td rowspan="2">HKs undergoing auto-phosphorylation</td>
+      <td rowspan="2">I</td>
+      <td>CpxA:ATP †††(1)</td>
+      <td>5.0‡‡‡</td>
+      <td>3.4</td>
+      <td>0.82</td>
+      <td>4BIW</td>
+      <td>ATP→His(CpxA)</td>
+      <td rowspan="2">AMP-PCP was used as non-hydrolizable ATP analogs (between phosphates β and γ there is a C atom substituting the O)</td>
+    </tr>
+    <tr>
+      <td>HK853/EnvZ chimera:ATP14 (1)</td>
+      <td>5.3‡‡‡</td>
+      <td>3.6</td>
+      <td>0.72</td>
+      <td>4KP4</td>
+      <td>ATP→His(HK853)</td>
+    </tr>
+    <tr>
+      <td>RR-mediated phosphorylation of imidazole</td>
+      <td>I</td>
+      <td>Imidazole:CheY¶¶¶(2)</td>
+      <td>5.1; 5.1</td>
+      <td>3.3; 3.3</td>
+      <td>0.71; 0.73</td>
+      <td>5DKF</td>
+      <td>P~AspCheY) → imidazole</td>
+      <td>In vitro engineering of a phosphorelaying system from CheY to PhoR, using imidazole as a rudimentary HPt</td>
+    </tr>
+    <tr>
+      <td rowspan="3">HK:RR complexes</td>
+      <td rowspan="3">II</td>
+      <td>HK853:RR468****(2)</td>
+      <td>7.6; 8.0††††</td>
+      <td>5.7; 6.1 ††††</td>
+      <td>0.51; 0.48††††</td>
+      <td>3DGE</td>
+      <td>P~His(HK853)→ Asp(RR468)</td>
+      <td>HK:RR complex, snapshot of the phosphatase state according to the authors.</td>
+    </tr>
+    <tr>
+      <td>DesK:DesR‡‡‡‡(2)</td>
+      <td>7.6§§§§</td>
+      <td>5.8§§§§</td>
+      <td>0.47§§§§</td>
+      <td>5IUK</td>
+      <td>P~His(DesK)→ Asp(DesR)</td>
+      <td>HK:RR complex in the phosphotransferase state</td>
+    </tr>
+    <tr>
+      <td>CheA3:CheY6¶¶¶¶(1)</td>
+      <td>7.3</td>
+      <td>ND‡‡</td>
+      <td>0.52*****</td>
+      <td>3KYJ</td>
+      <td>P~His(CheA3)→ Asp(CheY6)</td>
+      <td>3KYJ is not phosphorylated on either partner; 3KYI with P-His on CheA3 displays an unproductive P~His rotamer, otherwise confirming 3KYJ’s 3D organization</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Distance between reactive His(Nε2)-Asp(Oδ1) less than or greater than 6.5Å, and distance ratio [Mg2+-Asp(Oδ1) / Mg2+-His(Nε2)] less than or greater than 0.6† ASU = asymmetric unit‡ Each distance corresponds to the one measured in each one of the independently refined complexes in the ASU.§ Distances are reported in the same order as in the previous column, with correspondence among same individual complexes.¶ Bacillus subtilis (Varughese et al.,2006)** Saccharomyces cerevisiae (Zhao et al., 2008)††Arabidopsis thaliana (Bauer et al., 2013)‡‡ Not determined : no phosphoryl group or phosphoryl-mimetic present in the structure.§§ Brucella abortus (Willett et al., 2015)¶¶ Only one of the two complexes in the ASU (ChpTchainA:CtrAchainC, display the reactive His and Asp properly oriented poised for reacting. Only one distance is thus recorded.*** No Mg2+ cation was actually bound on CtrA. A metal atom was modeled by superimposing the structure of RR468 with bound BeF3 (PDB 3GL9), one of the top ranking structures in multiple structural alignments with CtrA (DALI Z score 12.9, rmsd 0.8Å superimposing 98 αCs).††† Escherichia coli (Mechaly et al., 2014)‡‡‡ In the autophosphorylation complexes the distance is recorded between His(Nε2) and the position of the O between phosphates β and γ.§§§ Thermotoga maritima (HK853) / E. coli (EnvZ) (Casino et al., 2014)¶¶¶ E. coli (Page et al., 2015)**** Thermotoga maritima (Casino et al., 2009)†††† These distances have been calculated by superimposing the phosphorylation-mimetic structure of RR468 alone with bound BeF3 (PDB 3GL9), onto 3DGE, in order to use better estimations of the receiver Asp position as well as of the phosphorus atom.‡‡‡‡B. subtilis, this report.§§§§ Glu188 present in the crystal structure was substituted by wt P~His following superposition of wt phosphorylated DesKC (PDB 5IUM) onto one of the phosphotransferase DesKCH188E:DesR-REC complexes in the ASU (chains A-B:E). Distances are reported after energy minimization. See Materials and methods.¶¶¶¶ Rhodobacter sphaeroides (Bell et al., 2010)***** The position of Mg2+ cation was modeled using PDB 4TMY as template._
 
 In a loose reaction center like that of DesK:DesR, a largely dissociated meta-phosphate intermediate would be stabilized migrating toward the positive charges of the Mg2+ cation and the conserved Lys102(RR) in the RR partner. The position of these positive charges, next to the RR phosphorylation site, introduces an intrinsic asymmetry within the reaction center, which must translate into unequal likelihood for phosphoryl-transfer directions. As the Mg2+ position becomes more asymmetric, the P~Asp→His back-transfer would be less favorable, explaining unidirectionality. The ratio between the Mg2+-Asp(Oδ1) and the Mg2+-His(Nε2) distances, can be used to quantitate such asymmetry within reaction centers. This ratio was calculated for different TCS complexes (Table 6), indeed clustering those complexes that catalyze reversible P~Asp→His/P~His→Asp reactions, apart from the ones that carry out P~His→Asp unidirectional transfer (Figure 5D). Signaling pathways appear to have evolved associative or dissociative mechanisms, corresponding respectively to more reversible or irreversible reactions, such that they are fit to drive a defined directionality in the flow of information.
 
@@ -137,23 +762,27 @@ Signaling requires specificity, to ensure that a given stimulus is linked to a d
 
 By solving the crystal structures of a bona fide HK in complex with its cognate RR in two distinct functional states, such molecular mechanisms of TCS unidirectional signal transmission are being uncovered. These structures correspond to snapshots of the phosphotransferase reaction just prior of actual phosphoryl migration, and of the phosphatase reaction in a pre-dephosphorylation complex.
 
-## Specificity determinants within a loose and slippery interface
+### Specificity determinants within a loose and slippery interface
 
 The small number of interactions and low surface complementarity that we observe in the several DesKC:DesR complexes (Figure 2F) are consistent with the observed ‘slippery’ nature of the protein:protein interface, displaying significant shifts in the relative positions of both partners. Further supporting that this ensemble of conformations is functionally relevant, molecular dynamics simulations of the phosphotransferase complex (Figure 2—figure supplement 2) recapitulated the gliding shifts of one partner with respect to the other, reaching the different arrangements observed in the crystal structures at different moments of the simulations (Figure 2—figure supplement 2B). Loose HK:RR association architectures can actually be observed in other TCS-related complexes (Zapf et al., 2000; Casino et al., 2009; Willett et al., 2015), suggesting it is a universal feature. This explains the considerable promiscuity reported in different TCSs in in vitro assays, if long enough incubation times are allowed for a given HK to phosphotransfer to different RRs, including surrogate partners (Skerker et al., 2005). HK:RR interactions thus ensure high specificity, but also avoiding exceedingly high stability, which would hinder proper functional modulation and, ultimately, signal transmission altogether. Evolutionarily selected to be loose, slippery interfaces are inherently tolerant for substantial sequence variation of protein:protein contacting residues. Such tolerance is consistent with the extensive degeneracy found in TCS pairs (Podgornaia and Laub, 2015), likely a general feature of HK:RR interactions. However, a permissive tendency for substitutions would appear to be contradictory with the high protein:protein specificity requirements of these systems. The DesK:DesR structures now provide with molecular details explaining why epistasis is found as a key property of HK:RR interfaces (Podgornaia and Laub, 2015). Epistatic amino acid changes are those that depend on the presence of other substitutions, leading to different effects in combination than individually. While interfacing residue replacements on any one of the TCS components can easily be accommodated due to the loose character of the protein:protein association, epistatic substitutions in the same component and/or in the other partner, are called to play essential stabilizing or destabilizing compensatory roles. Epistatic substitutions are thus selected, such that partner recognition and non-cognate discrimination are maintained, but without leading to overstable, non-functional complexes.
 
-## A novel conformation of the response regulator when complexed with the histidine kinase
+### A novel conformation of the response regulator when complexed with the histidine kinase
 
 Our data indicate that the HK is largely unable to discriminate binding to RR or P~RR on the basis of structural determinants. The structures show the RR REC domain adopting identical conformations in both phosphatase and phosphotransferase complexes, presenting active- and inactive–like features in different regions of the protein, arranging the RR’s active site for phosphoryl group migration (Figure 3). The two complexes also show equivalent HK:RR interfacing surfaces, with all major contacts preserved. Among the few differential contacts, they mainly implicate the HK’s CA domain, but unlikely to grant discrimination ability given the highly similar conformation of the RR in those regions.
 
 Calorimetry data are consistent with the crystallographic evidence, revealing only modest differences between DesR-REC:DesKCH188Vand DesR-REC:DesKCH188E binding affinities (Figure 1 and Table 2), further supporting that both HK functional states interact with DesR-REC with similar strengths. Collecting calorimetric data by titrating DesKC with P~DesR-REC would be interesting to directly compare with the unphosphorylated form, but binding confounds with simultaneous P~RR dephosphorylation, and the addition of BeF3-/Mg2+ to mimic RR phosphorylation resulted in protein aggregation. We did succeed in engineering a different phosphatase-trapped DesKC mutant, by insertion of additional heptad repeats in the coiled-coil segment (to be published elsewhere), indeed displaying equivalent DesR-REC-binding KD figures compared to DesKCH188E. HK:RR binding data in other TCSs are scarce, particularly exploring differential affinities according to the proteins’ phosphorylation status. The few cases dealing with HKs that switch between phosphatase/phosphotransferase-competent states, do provide further evidence in support of non-discrimination. EnvZ binds OmpR and P~OmpR with equivalent affinities (Yoshida et al., 2002), as well as PhoQ binding to PhoP or P~PhoP (Castelli et al., 2003). Future studies shall uncover the relevance of additional mechanisms at the cell level that might favor particular HK:RR pairs to form, such as absolute and relative TCS protein concentrations, stability of non-phosphorylated HK:RR species in complex, subcellular spatial dynamics of each partner, and precise time-courses for HK and RR phosphorylated species to appear/disappear.
 
-## A HK:RR concerted switch controls efficiency along the signaling pathway
+### A HK:RR concerted switch controls efficiency along the signaling pathway
 
-Considering all the evidence, we can now propose a conceptual model explaining the molecular workings of the DesK/DesR signaling pathway (
+Considering all the evidence, we can now propose a conceptual model explaining the molecular workings of the DesK/DesR signaling pathway (Figure 6). When the pathway is turned off, HK autophosphorylation is inhibited by: 1) hindering CA domains mobility, holding ATP substrates far from the His188(HK) phosphorylation site; and, 2) DHp helical rotation, making the His188(HK) side chains inaccessible (Figures 4D and 6A, Video 1). This ‘open’ autokinase-off configuration is linked to a folded N-terminal coiled-coil, in which DesK can bind P~DesR and trigger phosphatase catalysis. Linked to P~DesR phosphate lid opening, Asp189(HK) binds to Arg84(RR), and Phe82(RR) becomes inserted into a DHp pocket (Figure 6A, Video 1). Phe82(RR) is thus removed from the closed position, which would otherwise clash with an incoming nucleophilic water molecule (Figure 4—figure supplements 2 and 3) that brings about dephosphorylation (Pazy et al., 2010). DesK Gln193(HK) is well located to position the catalytic water to perform dephosphorylation, consistent with the essential role of the homologous Gln residues in the phosphatase reactions mediated by the phosphatase CheZ (Zhao et al., 2002) or by the HK NarX (Huynh et al., 2010). The rotational movement of His188(HK), placing it at >18 Å away from the reactive Asp54(RR), makes phosphoryl back-transfer P~DesR→DesK impossible (Figure 4E). Although sequence divergence makes the DHp rotational shift unlikely in HisKA HKs (Marina et al., 2005), DHp kinking by means of a conserved proline (Casino et al., 2014; Mechaly et al., 2014) could regulate the separation of the phosphorylatable His from the reaction center, analogously to the HisKA_3 rotational switch. Additional mechanisms that stabilize an ‘open’ state of HisKA HKs via extensive CA-DHp interfaces, have been reported to favor the phosphatase reaction (Dubey et al., 2016) further supporting our hypotheses.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/21422/elife-21422-fig6-v2.jpg)
 
-**Figure 6.:** (A) P~DesR dephosphorylation catalysis is favored by the opening of the RR phosphorylation lid, via Phe82(RR) insertion into an HK hydrophobic pocket, and an ionic interaction between Asp189(HK) and Arg84(RR). The Phe82(RR) movement allows for entry of a nucleophilic water (yellow sphere) positioned by Gln193(HK). In the phosphatase state the phosphorylatable His188(HK) is buried within the DHp domain core, avoiding autophosphorylation and phosphoryl back-transfer reactions. (B) Signal-mediated pathway activation triggers the cogwheel rotation of the HK DHp α-helices, via coiled-coil disruption. The His188(HK) becomes exposed to the solvent, CA domains are released, and autophosphorylation thus enabled. Binding to unphosphorylated RR positions the P~His188(HK) into a suitable orientation for phosphoryl-transfer to occur through a loose (dissociative) nucleophilic substitution. Movement of Thr80(RR) is coupled with phosphoryl group migration, triggering RR’s phosphate lid closure and P~RR release. (C) Reaction scheme summarizing the autophosphorylation and phosphotransfer reactions. Stabilization of a protonated Nδ1 tautomer of the reactive histidine, is required in autophosphorylation. In keeping with the imidazole aromaticity, the nucleophilicity of Nε2 is thus finely regulated, allowing for phospho-acceptor/donor roles of the His.DOI: http://dx.doi.org/10.7554/eLife.21422.020
+**Figure 6.:** (A) P~DesR dephosphorylation catalysis is favored by the opening of the RR phosphorylation lid, via Phe82(RR) insertion into an HK hydrophobic pocket, and an ionic interaction between Asp189(HK) and Arg84(RR). The Phe82(RR) movement allows for entry of a nucleophilic water (yellow sphere) positioned by Gln193(HK). In the phosphatase state the phosphorylatable His188(HK) is buried within the DHp domain core, avoiding autophosphorylation and phosphoryl back-transfer reactions. (B) Signal-mediated pathway activation triggers the cogwheel rotation of the HK DHp α-helices, via coiled-coil disruption. The His188(HK) becomes exposed to the solvent, CA domains are released, and autophosphorylation thus enabled. Binding to unphosphorylated RR positions the P~His188(HK) into a suitable orientation for phosphoryl-transfer to occur through a loose (dissociative) nucleophilic substitution. Movement of Thr80(RR) is coupled with phosphoryl group migration, triggering RR’s phosphate lid closure and P~RR release. (C) Reaction scheme summarizing the autophosphorylation and phosphotransfer reactions. Stabilization of a protonated Nδ1 tautomer of the reactive histidine, is required in autophosphorylation. In keeping with the imidazole aromaticity, the nucleophilicity of Nε2 is thus finely regulated, allowing for phospho-acceptor/donor roles of the His.
+
+![Video 1.](https://cdn.elifesciences.org/articles/21422/elife-21422-media1.mp4.jpg)
+
+**Video 1.:** As an animated support to main Figure 6, the fixed ground states correspond to crystal structures, and the moving intermediates in between obtained by linearly interpolated morphing, as implemented in Pymol v 1.8.2 (Schrodinger, LLC, 2015). This animation does not include the kinase’s auto-phosphorylation step, shown at the beginning of Figure 6B. Structures of phosphorylated (‘active’) and non-phosphorylated (‘inactive’) DesR, when shown separate from the HK DesK, correspond respectively to PDB structures 4LE0 and 4LE1 (Trajtenberg et al., 2014). On the other hand, the fixed positions of P~DesK in complex with DesR (phosphotransferase state), and of DesK in complex with P~DesR (phosphatase state), correspond to the structures reported in this work (PDBs 5IUK and 5IUN, respectively). The reactive His188(HK) on DesK is depicted as spheres, as well as the active Asp54(RR) and Phe82(RR) on DesR. The rest of the proteins are rendered as cartoons. Chains A and B of DesK are colored in green and yellow, respectively. DesR is blue when not phosphorylated, and magenta once activated by phosphorylation. The P~His was modeled into DesK as explained in the text and Materials and methods. P~DesR corresponds to the phosphomimetic BeF3- bonded to Asp54(RR).
 
 This DHp helical switch is thus coupled to signal sensing, such that sensory domain rearrangements lead to intra-cytoplasmic HK coiled-coil disruption. Possibly implying trans-membrane helix tilting, or other signal-triggered helical reconfigurations, a direct connection of sensory to intracytoplasmic α-helices can be posited. This switch can be readily understood as an order-disorder transition, which has been observed in HKs and other modular proteins, to work as an intraprotein signaling mechanism (Schultz and Natarajan, 2013). Helical rotational shifts have also been uncovered in structural elements within chemotaxis and TCSs, such as in HAMP domains, likely revealing common underlying transduction mechanisms eventually controlling their physiologic directionality (Airola et al., 2013).
 
@@ -163,7 +792,7 @@ Our model predicts an important role of the highly conserved Thr80(RR) in stabil
 
 The β4α4 loop amino acid sequence is not well conserved among different RRs and RR families (Page et al., 2016), despite its direct implication in forming the HK:RR interface. Conspicuous examples of variable residues can be mapped to Thr81(RR), well positioned to interact with the phosphoryl group of P~DesK, or yet Phe82(RR) and Arg84(RR), key players in the open/closure switch of DesR’s phosphate lid. Some of these positions had already been pinpointed as highly variable, yet functionally relevant (Thomas et al., 2013; Immormino et al., 2016; Page et al., 2016), recognizing positions T + 1 and T + 2 (starting from T, the conserved position Thr80(RR)) among others, as important modulators of RRs’ catalytic activities. Particular sequence signatures of these variable motifs, have been found to correlate with RR families, in turn connected to the distinct physiological constraints of each family’s signaling functions (Page et al., 2016). Our data now illustrate an additional selective pressure dimension to such variable positions, linked to the evolution of the HK:RR interface. Beyond sequence variability, the RR β4α4 loop is bound to play functional roles, as it is always located at the HK:RR interface in available structures. Mutagenesis studies with functional readouts including HK-mediated activities are needed, together with a larger number of 3D structures of HK:RR complexes from different TCS families, in order to delimit universal TCS mechanisms and system-dependent variations.
 
-## Associative vs dissociative phosphotransfer: evolution of signaling directionality
+### Associative vs dissociative phosphotransfer: evolution of signaling directionality
 
 Regulating the direction of information flow is central to signaling performance. The energies of P-N and P-O bonds engaged in phosphoryl-transfer reactions among histidine and aspartate, appear to be equivalent, explaining a few known reversible systems (Burbulys et al., 1991). However, and except for such systems where P~Asp→His phosphorylation has been selected (such as in phosphorelays), phosphoryl back-transfer (P~RR→HK) is typically minimized. Alternative sources of reactional asymmetry, other than bonding energetics, must be at play. Taking into account that phosphotransfer is a nucleophilic substitution at phosphorus, the reaction coordinate distance (i.e. between phosphorus and the entering atom, before the transfer reaction has begun) strongly suggests that P~DesK→DesR phosphotransfer occurs through a largely dissociative, or ‘loose’ mechanism (Lassila et al., 2011): a reaction coordinate distance of ≥4.9 Å provides room for a fully dissociated metaphosphate intermediate (Mildvan, 1997). This distance is directly correlated with the one separating side chain N and O atoms, respectively on the reactive His and Asp residues. Considering van der Waals radii, full dissociation of the phosphate intermediate is predicted for N-O distances of ≥6.6 Å. This threshold distance classifying phosphotransfer reactions into loose vs tight nucleophilic substitutions, nicely discriminates signaling complexes involved in, respectively, phosphorylations from the histidine imidazole group, or towards it (Figure 5D, Table 6). The His-Asp distance thus correlates with associative vs dissociative phosphotransfer, but also with the symmetry of the Mg2+ cation with respect to the entering and leaving atoms (Figure 5C and D). Increased back-transfer has been observed when the cation is removed (Albanesi et al., 2004; Lukat et al., 1990; Shi et al., 1999), further supporting that Mg2+ asymmetry favors irreversible P~His→Asp transfer reactions. Furthermore, mutations that likely increase the distance between TCS partners, without impeding their association, have been reported to affect differentially the forward- and back-transfer directions in otherwise reversible phosphoryl-transfer steps (Janiak-Spens et al., 2005).
 
@@ -171,35 +800,35 @@ The DesK:DesR structures disclose the catalytic centers for TCS-mediated dephosp
 
 ## Materials and methods
 
-## Cloning and mutagenesis
+### Cloning and mutagenesis
 
 For protein crystallization purposes, recombinant protein expression plasmid pACYC-DesKCSTAB:DesR-REC was generated by sub-cloning DesKCSTAB from pHPKS/Pxyl-desKSTA (Saita et al., 2015) into pACYC-DesKCH188E:DesR-REC (Trajtenberg et al., 2014) using RF cloning (Unger et al., 2010) with primers STAB_F (5’-CCTGTATTTTCAGGGATCC GGTATTATAAAACTTCGCAAG-3’) and STAB_R (5’-GTCAGACACTGTAATCACAACTTCCTTCCAG-3’). The two expression cassettes present in the pACYC-DesKCSTAB:DesR-REC encode the two recombinant proteins each fused to a His-tag and a TEV protease cleavage site.
 
 For phosphotransfer assays, two DesR point mutants Phe82Ala and Arg84Ala were designed by mutagenesis of pQE80-DesR-REC (Trajtenberg et al., 2014), using mutagenic primers DesR_Fw (5’-GATTAGTATATTTATTGCAGAAGATCAGCAAATGC-3’), F82A_Rev (5’-CGGGTCTGGCGGCGGTGGTTAAG ATGATAATTTTG-3’) and DesR_R84A_Rev (5’-GAAAGTAACCGGGTGCGGCGAAGGTGGTTAAG-3’), resulting in plasmids pQE80-DesR-RECF82A and pQE80-DesR-RECR84A.
 
-## Protein expression, purification and crystallization
+### Protein expression, purification and crystallization
 
 Recombinant proteins to be used in crystallization were co-expressed from pACYC-DesKCSTAB:DesR-REC and pACYC-DesKCH188E:DesR-REC plasmids, transformed in Escherichia coli strain BL21(DE3) (Novagen). For functional assays proteins were expressed from plasmids pQE32-DesKC (Albanesi et al., 2009), pQE80-DesR-REC (Trajtenberg et al., 2014), pQE80-DesR-RECF82A and pQE80-DesR-RECR84A, in E. coli TOP10F’ (Invitrogen). Proteins were expressed and purified as previously described (Albanesi et al., 2009; Trajtenberg et al., 2014). For the DesK-DesR complexes the last size exclusion chromatography step (HiLoad 16/60 Superdex 75 preparation grade column; GE Healthcare) was used to select those fractions corresponding to the complex only.
 
 Hanging-drop crystallizations were performed at 20°C in Linbro plates. The DesKCSTAB:DesR-REC complex (10 mg/mL protein prepared in 5 mM AMP-PCP, 10 mM MgCl2) crystallized in 1 mL mother liquor [30% (w/v) PEG 4000, 0.1 M Tris.HCl pH 8.5, 0.2 M Li2SO4]. Protein drops were set up by mixing 0.8 μL mother liquor + 2 μL protein solution + 1.2 μL additive solution [27% (v/v) PEG 600, 0.1 M MES pH 6.5, 0.15 M MgSO4, 5% (v/v) glycerol]. Initial crystals were optimized by microseeding. Cryo-protection was achieved by slowly adding 4 μl of cryoprotection solution [32% (w/v) PEG 4000, 0.1 M Tris.HCl pH 8, 0.2 M Li2SO4, 20 mM MgCl2, 18 mM BeF3–, 5 mM AMP-PCP, 15% (v/v) glycerol], then soaked in 100% cryoprotection solution and frozen in liquid N2. The DesKCH188E:DesR-REC complex (8.3 mg/mL protein prepared in 5 mM AMP-PCP, 20 mM MgCl2) crystallized in mother liquor 18% (w/v) PEG 3350, 0.3 M tri-potassium citrate. Protein drops were set up by mixing 2 μL protein + 2 μL mother liquor. Cryo-protection was achieved by quick soaking in 20% (w/v) PEG 3350, 0.3 M tri-potassium citrate, 5 mM AMP-PCP, 25% (v/v) glycerol, and 20 to 150 mM MgCl2 + 0 to 5 mM BeF3–. wt P~DesKC was crystallized as described (Albanesi et al., 2009), except that 5 mM ATP was used throughout instead of AMP-PCP.
 
-## X ray diffraction data processing, crystal structure solution, refinement and analysis
+### X ray diffraction data processing, crystal structure solution, refinement and analysis
 
 Single crystal X ray diffraction was performed with a copper rotating anode home-source (Protein Crystallography Facility, Institut Pasteur de Montevideo) or synchrotron radiation (Soleil, France). Data processing was performed with autoPROC (Vonrhein et al., 2011). Structures were solved by molecular replacement (McCoy et al., 2007), using an in silico-generated model of a DesKC:DesR complex (Trajtenberg et al., 2014) as search probe. The other domains were then manually located in the electron density maps, and complete models were rebuilt using Coot (Emsley et al., 2010) and refined with Buster (Bricogne et al., 2009). Validation was done throughout and towards the end of refinement, using MolProbity tools (Chen et al., 2010). DesKC:DesR-REC surface complementarity was calculated according to (Lawrence and Colman, 1993), resulting in figures of ~0.6. Visualization of protein models and structural analyses, figure rendering and morphing for animation were performed with Pymol (Schrodinger, LLC, 2015). Software for data processing, structure determination and analysis was provided by the SBGrid Consortium (Morin et al., 2013).
 
-## Small angle X-ray scattering data acquisition and analysis
+### Small angle X-ray scattering data acquisition and analysis
 
 SEC-SAXS experiments were carried out at beamline SWING (Soleil synchrotron, France). Purified DesK-DesR complexes samples were brought to 10 mg/mL in 50 mM Tris.HCl pH 8.0, 300 mM NaCl, and injected into a Superdex 75 5/150 GL column (GE Healthcare Biosciences) equilibrated in the same buffer. Samples were eluted at constant flow (0.15 mL/min) and loaded into capillary cell for X-ray exposure. Recorded frames were processed with Foxtrot (David and Pérez, 2009) following standard procedures. Subsequent analyses of the scattering data were performed with tools from the ATSAS (Konarev et al., 2006). Forward scattering I(0) and the particle’s radius of gyration (Rg) were estimated using the Guinier approximation. I(0) real was calculated as the extrapolated intensity at zero scattering angle. Pair-distance distribution functions were calculated from the scattering patterns with GNOM, which also provides maximum particle dimension (Dmax) and Rg (real) values. Molecular mass (MM) of particles was estimated from the volume-of-correlation (Vc) values (Rambo and Tainer, 2013). Theoretical scattering patterns from atomic models were calculated and fitted to experimental curves using CRYSOL. Mixture analysis was performed with OLIGOMER.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 Isothermal titration calorimetry (ITC) assays were performed on a VP-ITC (MicroCal Inc., Northampton, MA). Titrations consisted of an initial injection (1 μL), followed by 25–30 injections of 10 μL of DesR-REC (ligand) on the cell containing the different DesKC variants (partner). Assays were carried out at 15°C in a buffer containing 20 mM Tris.HCl pH 8, 0.3 M NaCl, 10 mM MgCl2 and 0.5 mM AMP-PNP. The heat released by the dilution of the ligand was determined injecting the ligand, on the cell containing the working solution without partner, using the same sequence of injections. The concentrations used for the experiments were between 25–30 µM for DesKC and 350–400 µM of DesR-REC and each titration was done in duplicate. The data were analyzed with MicroCal Origin version 7 software (MicroCal Software Inc.), after manual baseline correction, and subtraction of heat due to ligand dilution. Binding isotherms were fitted to a two independent sequential site model.
 
-## Sequence-based direct coupling analysis of the HK:RR complex
+### Sequence-based direct coupling analysis of the HK:RR complex
 
 Sequences of HK and RR pairs, with the same architecture as DesK and DesR (families HisKA_3 and NarL, respectively), belonging to the same operon, were selected from the Uniprot database using hmmsearch (Eddy, 1998). Hidden Markov model-profiles for each domain were obtained from Pfam (Finn et al., 2016). Redundancy was filtered using a cutoff of 90% (Li and Godzik, 2006) resulting in a total of 3318 sequences including HKs (DHp+CA) and RRs (REC+HTH). The concatenated HK:RR sequences were aligned with hmmalign (Eddy, 1998) and manually curated, removing sequences with large insertions. DI (direct information) of each pair of residues of the alignment was calculated using mfDCA matlab script (Morcos et al., 2011) and we only take in consideration coevolving pairs of residues farther than five positions apart in sequence. The same procedure was followed for the HisKA and PhoB families for comparison purposes. A similar trend in equivalent 3D positions for covariant residue pairs among different HK and RR families was thus confirmed (Podgornaia et al., 2013; Skerker et al., 2008; Weigt et al., 2009).
 
-## In silico modeling and molecular dynamics simulations
+### In silico modeling and molecular dynamics simulations
 
 The phosphotransferase complex was built by replacing the DesKCH188E dimer of 5IUK with wt P~DesKC (PDB 5IUM). This replacement resulted in model with barely no clashes, except for P~His188(HK) slightly bumping into Phe82(RR) and Arg84(RR). Energy minimization was then performed on such constructed complex with all-atom constraints in Rosetta (Das and Baker, 2008), strongly restraining shifts to maintain the experimental coordinates. A final wt P~DesKC:DesR-REC model was thus obtained, with optimal stereochemical geometry and no clashes (0.09 rmsd between the energy minimized model and the pdb 5IUM experimental structure, aligning all 1930 DesK atoms). To further evaluate the minimized wt P~DesKC:DesR-REC model (see Figure 4A), molecular dynamics simulations were performed, observing that its conformation is stable throughout the trajectory (see Figure 4B), especially considering the positions of His188(HK), Asp54(RR) and Thr80(RR) in contact with the phosphate.
 
@@ -211,7 +840,7 @@ Acetyl and N-methylamide capping groups were added to N- and C- terminal residue
 
 All calculations were performed with the GPU version of AMBER14 (Salomon‐Ferrer et al., 2013). Initially, the whole system was relaxed by energy minimization, then it was equilibrated for 0.2 ns in the NVT ensemble imposing harmonic positional restrains of 10 kcal mol−1 Å−2 on the protein atoms. A reference temperature of 300 K was set by coupling the system to the Langevin thermostat (Pastor et al., 1988; Wu and Brooks, 2003) with a friction constant of 50 ps−1, which approximates the physical collision frequency for liquid water (Izaguirre et al., 2001). A 10 Å cut-off was used for non-bonded interactions, while long-range electrostatics were evaluated using Particle Mesh Ewald (PME) (Darden et al., 1993; Essmann et al., 1995). A time step of 2 fs was used and all bonds involving hydrogen atoms were restrained using the SHAKE algorithm (Miyamoto and Kollman, 1992; Ryckaert et al., 1977). Production simulations were performed in the NPT ensemble. The pressure was kept at 1 atm by means of the Berendsen barostat (Berendsen et al., 1984). Snapshots were recorded every 5 ps for analysis.
 
-## Autodephosphorylation and phosphotransfer assays
+### Autodephosphorylation and phosphotransfer assays
 
 To purify the phosphorylated species of DesR-REC and DesR-RECF82A, 600 μM of both recombinant proteins were auto-phosphorylated using 50 mM acetyl phosphate in a buffer containing 25 mM Tris.HCl pH 8, 300 mM NaCl and 30 mM MgCl2, at room temperature. Reactions were stopped by adding EDTA to a final concentration of 50 mM, and buffer exchanged by using a PD Minitrap G-25 (GE Healthcare) desalting column. Auto-dephosphorylation assays of P~DesR-REC variants were performed at 30 μM of protein concentration and incubated in the presence of 30 mM MgCl2. At different time points the reactions were stopped by adding SDS-PAGE sample buffer. For each time point DTT was added to a final concentration of 25 mM and incubated for 5 min. DTT in excess was blocked with 40 mM iodo-acetamide and loaded in a Phos-tag acrylamide SDS-PAGE, as described before (Trajtenberg et al., 2014), Coomassie blue-stained gels were scanned and quantification of all reactions was done by densitometry using ImageJ (Schneider et al., 2012).
 
@@ -219,7 +848,7 @@ To perform phosphotransfer assays (Figure 4E), DesKC was phosphorylated by incub
 
 In order to assess unidirectionality (Figure 5A), the reverse and forward reactions were analyzed. The forward reaction was prepared as described above using P~DesKC as phosphodonor for 1 min. On the other hand, the reverse of the reaction was measured by incubating 30 μM of P~DesR-REC (wild type or point mutants DesR-RECF82A or DesR-RECR84A) with 30 μM DesKC, 50 mM acetyl phosphate and 30 mM MgCl2, for 1 min at room temperature. Reactions were stopped as described above and samples analyzed by Phos-tag SDS-PAGE and quantified by densitometry.
 
-## Accession numbers
+### Accession numbers
 
 The X ray structures presented have been deposited in the wwPDB with accession codes 5IUJ (DesK-DesR complex in the phosphotransfer state with low Mg2+ [20 mM]), 5IUK (DesK-DesR complex in the phosphotransfer state with high Mg2+ [150 mM]), 5IUL (DesK-DesR complex in the phosphotransfer state with high Mg2+ [150 mM] and BeF3-), 5IUM (phosphorylated wild type DesKC) and 5IUN (DesK-DesR complex in the phosphatase state).
 

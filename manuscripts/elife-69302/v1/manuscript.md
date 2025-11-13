@@ -27,7 +27,7 @@
 
 ## Abstract
 
-The relationship between SARS-CoV-2 viral load and infectiousness is poorly known. Using data from a cohort of cases and high-risk contacts, we reconstructed viral load at the time of contact and inferred the probability of infection. The effect of viral load was larger in household contacts than in non-household contacts, with a transmission probability as large as 48% when the viral load was greater than 10 10 copies per mL. The transmission probability peaked at symptom onset, with a mean probability of transmission of 29%, with large individual variations. The model also projects the effects of variants on disease transmission. Based on the current knowledge that viral load is increased by two- to eightfold with variants of concern and assuming no changes in the pattern of contacts across variants, the model predicts that larger viral load levels could lead to a relative increase in the probability of transmission of 24% to 58% in household contacts, and of 15% to 39% in non-household contacts.
+The relationship between SARS-CoV-2 viral load and infectiousness is poorly known. Using data from a cohort of cases and high-risk contacts, we reconstructed viral load at the time of contact and inferred the probability of infection. The effect of viral load was larger in household contacts than in non-household contacts, with a transmission probability as large as 48% when the viral load was greater than 1010 copies per mL. The transmission probability peaked at symptom onset, with a mean probability of transmission of 29%, with large individual variations. The model also projects the effects of variants on disease transmission. Based on the current knowledge that viral load is increased by two- to eightfold with variants of concern and assuming no changes in the pattern of contacts across variants, the model predicts that larger viral load levels could lead to a relative increase in the probability of transmission of 24% to 58% in household contacts, and of 15% to 39% in non-household contacts.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ In order to study in detail the role of viral load on the probability of transmi
 
 ## Results
 
-## Baseline characteristics
+### Baseline characteristics
 
 A total of 259 index cases and their 582 high-risk contacts (simply called contacts in the following) were included in our analysis (Figure 1—figure supplement 1).
 
@@ -49,9 +49,19 @@ The majority of contacts were female (56%) with a median age of 41 (90% IQR: [20
 
 Overall, 87 household contact led to an infection (proportion of transmission of 24.9%) and 29 non-household contacts led to an infection (proportion of transmission of 12.4%). The majority of contacts (65%) and of infection events (65%) occurred ±1 day from symptom onset of the index cases (Figure 1—figure supplement 2).
 
-## Viral dynamic model
+### Viral dynamic model
 
-We used a target cell limited model to reconstruct the viral load kinetics of the index cases over time, assuming that the incubation period has a log-normal distribution with a mean value of 5 days (Néant et al., 2021; Lauer et al., 2020). Although several models relating viral load to infectiousness were evaluated (see below), they all provided nearly identical fits to the viral load data predicted in the index cases (Figure 1). Additionally, we tested several models with a fixed incubation period ranging from 4 to 7 days, and they all yielded similar results (Supplementary file 1). In the best model (Model M2, see below), the basic within-host reproductive number, R0, quantifying the number of cell infections that occur from a single infected cell at the beginning, was estimated at 13.6, the loss rate of productively infected cells, δ, at 0.84 d−1 (corresponding to a half-life of 20 hr) and viral production p, at 2.8×105cells-1 d−1 (Table 1). When reconstructing the viral load profiles, the model predicted that the median peak viral load coincided with symptom onset, with a median peak value of 9.4 log10 copies per mL (90% IQR: [8.0, 10.0]).
+We used a target cell limited model to reconstruct the viral load kinetics of the index cases over time, assuming that the incubation period has a log-normal distribution with a mean value of 5 days (Néant et al., 2021; Lauer et al., 2020). Although several models relating viral load to infectiousness were evaluated (see below), they all provided nearly identical fits to the viral load data predicted in the index cases (Figure 1). Additionally, we tested several models with a fixed incubation period ranging from 4 to 7 days, and they all yielded similar results (Supplementary file 1). In the best model (Model M2, see below), the basic within-host reproductive number, $R_{0}$, quantifying the number of cell infections that occur from a single infected cell at the beginning, was estimated at 13.6, the loss rate of productively infected cells, $\delta$, at 0.84 d−1 (corresponding to a half-life of 20 hr) and viral production $p$, at $2.8\times10^{5}cells^{-1}$ d−1 (Table 1). When reconstructing the viral load profiles, the model predicted that the median peak viral load coincided with symptom onset, with a median peak value of 9.4 log10 copies per mL (90% IQR: [8.0, 10.0]).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig1-v1.jpg)
+
+**Figure 1.:** Black dots represent the measured viral load. Squares indicate documented high-risk contacts, with empty squares representing contacts without transmission, and red squares representing contacts with a subsequent infection. Results obtained in the 41 index cases having three viral load measurements.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Distribution of the times at which a high-risk contact occurred between an index and a contact, with reference to the time of symptom onset of the index case. This indicates that most contacts reported in the study occurred at the time of symptom onset of the index, and that many contacts occurred during the pre-symptomatic period of the index. All contacts (Left). Household contacts (Middle). Non-household contacts (Right).
 
 We tested several models of probability transmission (see Materials and methods) and estimated the parameters of both viral dynamics and probability of transmission simultaneously. The two model assuming an effect of viral load on the probability of transmission (Model M2 and M3) provided an improvement in BIC as compared to the model M1, supporting an effect of viral load on the probability of infection. In both models, viral load was significantly associated with the probability of transmission after household contact (p<0.01, Wald test on γ1); however, the effect was lower after non-household transmission (p<0.05, Wald test on γ2). Because we fixed the probability of transmission to 5% for viral load levels below six log10 copies/mL, which is generally the threshold for virus culture in vitro (Jones et al., 2021; Néant et al., 2021; van Kampen et al., 2021; Mollan et al., 2021), we tested models with threshold values ranging from 4 to 8 log10 copies/mL and they all yielded similar results (Supplementary file 2).
 
@@ -61,17 +71,29 @@ As a mean to evaluate the model adjustment to data, we also used simulations to 
 
 **Figure 2.:** Bars represent the mean predicted probability of transmission obtained from 1000 simulations of the model M2 and stratified by viral load level at the time of contact. Black dots are the proportion of transmission events observed in the data stratified by the predicted viral load of the index cases at the time of contact (along with their 95% confidence intervals). Household contacts (Left). Non-household contacts (Right).
 
-The model considers two levels of individual variability, one on the viral load dynamics (Chen et al., 2021) (as measured by the standard deviation of the associated random effects, ωR0,ωδ and ωp), and another one on the probability of transmission (with a standard deviation ωβ). Of note, ωβ was equal to 85%, indicating that several other factors are involved in the transmission probability, even after adjustment for viral load levels (see Supplementary file 3 for the results obtained with a model assuming a similar value for β in all individuals). This variability is shown on Figure 3, where 1000 individuals were sampled in the population distribution to obtain the probability of transmission over time and across individuals. Over the time of infection, the median probability of transmission peaked at the time of symptom onset with a mean value of 29% in household contacts. However, there was large inter-individual variabilities due to both viral load levels and individual characteristics, with a 90% inter quantile range of 6-96% (Figure 3). The peak of transmission was much lower in non-household contacts, with a mean value of 13% (90% IQR: [5, 38]). As a consequence of our assumption that the probability of transmission after a high-risk contact returned to baseline level when viral load dropped below 6 log10 copies per mL, the window for infection was shorter than the duration of viral shedding. The probability of transmission was above 5% for a median duration of 12 days (90% IQR: [9, 15]).
+The model considers two levels of individual variability, one on the viral load dynamics (Chen et al., 2021) (as measured by the standard deviation of the associated random effects, $\omega_{R_{0}},\omega_{\delta}$ and $\omega_{p}$), and another one on the probability of transmission (with a standard deviation $\omega_{\beta}$). Of note, $\omega_{\beta}$ was equal to 85%, indicating that several other factors are involved in the transmission probability, even after adjustment for viral load levels (see Supplementary file 3 for the results obtained with a model assuming a similar value for $\beta$ in all individuals). This variability is shown on Figure 3, where 1000 individuals were sampled in the population distribution to obtain the probability of transmission over time and across individuals. Over the time of infection, the median probability of transmission peaked at the time of symptom onset with a mean value of 29% in household contacts. However, there was large inter-individual variabilities due to both viral load levels and individual characteristics, with a 90% inter quantile range of 6-96% (Figure 3). The peak of transmission was much lower in non-household contacts, with a mean value of 13% (90% IQR: [5, 38]). As a consequence of our assumption that the probability of transmission after a high-risk contact returned to baseline level when viral load dropped below 6 log10 copies per mL, the window for infection was shorter than the duration of viral shedding. The probability of transmission was above 5% for a median duration of 12 days (90% IQR: [9, 15]).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig3-v1.jpg)
 
 **Figure 3.:** Prediction interval of the viral load (black) and the probability of transmission over time after a high-risk contact obtained from 1000 simulations of the model. The shaded area represents the 90% inter quantile range. Household contacts (Left). Non-household contacts (Right).
 
-## Sampling the generation interval
+### Sampling the generation interval
 
 As a mean to validate the model prediction, we also calculated the generation interval, that is the time elapsed between the infection of an individual and the infection of a contact. We considered two potential distributions of contact times, one in which the rate of contacts is constant during the whole considered period, and one in which the rate of contacts decreases rapidly after 5 days, reflecting self-isolation and/or diagnosis (Figure 4A). The median generation interval was estimated to be 5.1 days (90% IQR: [1, 10]) and 4.8 days (90% IQR: [1, 11]) for household and non-household contacts respectively, when a time-varying rate of contacts was used. Those estimates are close, albeit with higher variability, to what has been found in other studies (Cereda et al., 2020; Bi et al., 2020). When using a constant contact rate, we obtained larger estimates of 7.7 days (90% IQR: [2.4, 17]) and 8.2 (90% IQR: [1.6, 18]) in household contacts and non-household contacts, respectively (Figure 4B). Because the time varying contact rate was more realistic (Cereda et al., 2020; Bi et al., 2020; Ferretti et al., 2020; Wu et al., 2020), we used it as our central scenario in what follows.
 
-## Impact of variants of concern and vaccination on the probability of transmission
+![Figure 4.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig4-v1.jpg)
+
+**Figure 4.:** (A) We considered a rate of contacts that could either decline after 5 days (top) or remain constant for the whole considered period (bottom). (B) Distribution of the generation interval using model M2 under each scenario. (C) Impact of changes in viral production on the average probability of transmission. (D) Impact of changes in viral production on the relative change from the baseline scenario in model M2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Effect of variants of concern (Top). Effect of vaccination rollout (Bottom). We only displayed the median trajectories over the simulated individuals. Viral load (Black). Transmission probability for household contacts (Blue). Transmission probability for non-household contacts (Orange).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69302/elife-69302-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Using a time-varying distribution of contacts (Top) or a constant distribution of contacts (Bottom).
+
+### Impact of variants of concern and vaccination on the probability of transmission
 
 We used the model to characterize the effects of changes of viral load dynamics due to infection with variants of concern. For that purpose, we evaluated the impact of a change in the viral production rate, p, by a fold 2–100, which corresponds to an average increase in viral load of 1–7 cycle thresholds (Ct), at each time point (Figure 4—figure supplement 1). As a metrics of comparison, we calculated in each scenario the average probability of transmission after a high-risk contact in the 20 days following infection (see methods).
 
@@ -79,7 +101,7 @@ For the baseline scenario using the parameters estimated in our population, the 
 
 With an increased value of viral production, p, by a factor 2, which corresponds to the viral load increase caused by B1.1.7 strain in large-scale epidemiological studies (Golubchik et al., 2021; Roquebert et al., 2021; Kidd et al., 2021), the average probability of transmission would increase to 22% and 11% for household and non-household contacts respectively. With a fourfold increase, as suggested elsewhere (Teyssou et al., 2021), the average probability of transmission would increase to 26% and 12% for household and non-household contacts, respectively (Figure 4C). The estimates for the P1 and B1.1.351 variants are less established, with values ranging from a twofold (Teyssou et al., 2021) to a 10-fold increase (Naveca et al., 2021). Assuming an increase by eightfold of the viral load, the average probability of transmission would increase to 29% and 13% for household and non-household contacts, respectively. As compared to the results observed with the historical virus a two-, four-, or eightfold increase in viral production rate would therefore lead to a relative increase in the average transmission probability of 24, 42, or 58% for household contacts, and of 15, 27, or 39% for non-household contacts (Figure 4D). Because increasing the production rate mostly impacts the early viral dynamics and less the post-peak dynamics (Figure 4—figure supplement 1), the effects of VOC is lower when a uniform distribution is used. In other words, self-isolation after symptoms or a positive test implies that more transmission happens early in infection, thus amplifies the impact of the viral production rate on transmission. In this case, we estimated a relative increase in the average transmission probability of 6, 15, or 24% for household contacts, and of 4, 10, or 16% for non-household contacts.
 
-Conversely, we studied the effects of lower levels of viral load, as expected from a partial protection conferred by vaccination. Epidemiological studies in Israel reported a 3-5-fold lower viral load in infected vaccinated individuals as compared to unvaccinated individuals (Levine-Tiefenbrun et al., 2021). Assuming a reduction by a factor 4 of the viral production rate, p, would lead to an average probability of transmission of 7% and 6% for household and non-household contacts respectively (Figure 4). In other studies relying on systematic repeated viral testing in both symptomatic and asymptomatic individuals, the effect of vaccine was much more dramatic, with a 30-100-fold reduction in viral load levels (McEllistrem et al., 2021; Thompson et al., 2021; Bailly et al., 2021). Assuming a reduction of 16-fold (~4 Ct) of the viral load, the average probability of transmission would decrease to its nominal value of 5% for both household and non-household contacts. As compared to the results observed with the historical virus, a 4- or 16-fold reduction in viral production rate would lead to a relative decrease in the average transmission probability of 61% or 72% for household contacts and of 38 or 47% for non-household contacts. The effect of vaccination is lower if a uniform distribution of contact is used, with a relative decrease in the average transmission probability of 23 or 66% for household-contacts and of 11 or 38% for non-household contacts (Figure 4).
+Conversely, we studied the effects of lower levels of viral load, as expected from a partial protection conferred by vaccination. Epidemiological studies in Israel reported a 3-5-fold lower viral load in infected vaccinated individuals as compared to unvaccinated individuals (Levine-Tiefenbrun et al., 2021). Assuming a reduction by a factor 4 of the viral production rate, $p$, would lead to an average probability of transmission of 7% and 6% for household and non-household contacts respectively (Figure 4). In other studies relying on systematic repeated viral testing in both symptomatic and asymptomatic individuals, the effect of vaccine was much more dramatic, with a 30-100-fold reduction in viral load levels (McEllistrem et al., 2021; Thompson et al., 2021; Bailly et al., 2021). Assuming a reduction of 16-fold (~4 Ct) of the viral load, the average probability of transmission would decrease to its nominal value of 5% for both household and non-household contacts. As compared to the results observed with the historical virus, a 4- or 16-fold reduction in viral production rate would lead to a relative decrease in the average transmission probability of 61% or 72% for household contacts and of 38 or 47% for non-household contacts. The effect of vaccination is lower if a uniform distribution of contact is used, with a relative decrease in the average transmission probability of 23 or 66% for household-contacts and of 11 or 38% for non-household contacts (Figure 4).
 
 Results obtained with model M3 were largely consistent and are given in Figure 4—figure supplement 2.
 
@@ -93,70 +115,209 @@ Conversely, vaccination rollout is expected to confer a large level of protectio
 
 Our study has important limitations. First, the reporting of high-risk contacts is prone to several biases. One of them is the fact that at the time where the study was conducted, the role of pre-symptomatic transmission was not known. This could explain why a large number of high-risk household contact were reported to occur the day of symptom onset (Figure 1—figure supplement 2). Also, it is possible that recollection bias leads to an overestimation of contacts reporting on the day of symptom onset. Because this will equally affect contacts that resulted in a transmission event and those that did not lead to a transmission event, it is unlikely that our estimates of transmission will be affected by this bias. To address a potential overestimation of the contacts occurring at symptom onset, we used two theoretical distributions of contacts in our simulations, assuming either a constant distribution of contact during the infectious period, or a more realistic scenario in which most contacts occurred during the first 5 days after infection. Also, we assumed the same patterns of contacts in our different scenarios. Although there are no data on these aspects yet, it is possible that larger levels of viral shedding could lead to a more severe infection or, inversely, that lower viral load could produce milder infections, thereby modifying the incubation period and more generally the patterns of contact. Another important limitation is that household contacts may not be unique and could occur multiple times. Because we had no information on these contacts, we did not conduct specific analyses on repeated contacts, but this is something that future epidemiological studies will need to investigate. Finally, it is always possible that infection observed in contacts individuals did not originate from the identified index case. In most infected contacts, we did not have data on the time of symptom onset, making it difficult to detect unplausible transmission event. However, the temporality of symptoms would not be sufficient to bring a decisive information on the infection event. Indeed, the study was conducted during the first epidemic wave in Spain, where most individuals, including in hospital settings, had not yet applied social distancing and masking, causing dozens of thousands of individuals infected every day. Both the possibility of repeated contacts in household and infection of contacts outside the identified contact network may have led us to overestimate the difference in the probability of transmission between household and non-household contacts. Specifically, infections outside of the identified probability contact would flatten the estimated relationship between viral load and transmission compared to the true relationship. It is also important to note that viral load data in index cases were collected on average 3–4 days after symptom onset, in the declining phase of viral load, several days after most of the contacts had occurred. Although our population parameters were estimated with a reasonable precision (Table 1), it nonetheless brings uncertainty on the predictions of individual trajectories. This limitation is inherent to the nature of SARS-CoV-2, where the peak viral load coincides with symptom onset, making difficult to obtain data during the replicating phase of the virus where individuals are largely asymptomatic.
 
-Beside viral load, several factors are associated with a transmission event. One important one is face masking, for both the index and the contact. In the original analysis of Marks et al., 2021, the use of face mask by contacts was not found associated with a decreased viral load, but this probably reflects the lack of more detailed data on the type of mask, the use of other personal protective equipment and infection control practices. It is also important to recall that face masking was poorly reported and was missing in about 35% of contacts, limiting statistical power (Supplementary file 4). The use of face mask by index cases was not collected in the original study. This information might be of a greater importance as it has a far more substantial effect on viral shedding and thus on transmission. Collecting this information in future studies should probably contribute to a reduction in the variance of the random effect parameter associated with transmission (ωβ).
+**Table 1.**
+ Parameters estimates of the three candidate models.$R_{0}$, within-host basic reproductive number; $\delta$, loss rate of infected cells; $p$, rate of viral production; $\gamma_{1}$ represents the effect of household contacts on the transmission probability; $\gamma_{0}$ represents the effect of non-household contacts on the transmission probability. M1 assumes that transmission probability does not depend on the viral load. M2 and M3 use different parametric functions to relate the transmission probability to viral load at the time of contact. The distribution of the incubation period was fixed to values from the literature (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">Parameter estimates (RSE %)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">No effect of viral load (M1)</th>
+      <th colspan="2">Logit-Linear (M2)</th>
+      <th colspan="3">Log-Linear model (M3)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Fixed effect</th>
+      <th>Random effect SD</th>
+      <th>Fixed effect</th>
+      <th>Random effect SD</th>
+      <th>Fixed effect</th>
+      <th>Random effect SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Incubation period (d)</td>
+      <td>5</td>
+      <td>0.125</td>
+      <td>5</td>
+      <td>0.125</td>
+      <td>5</td>
+      <td colspan="2">0.125</td>
+    </tr>
+    <tr>
+      <td>R0</td>
+      <td>12.20 (14)</td>
+      <td>0.32 (34)</td>
+      <td>13.60 (15)</td>
+      <td>0.38 (21)</td>
+      <td>13.40 (22)</td>
+      <td colspan="2">0.423 (35)</td>
+    </tr>
+    <tr>
+      <td>δ(d-1)</td>
+      <td>0.83 (1)</td>
+      <td>0.019 (47)</td>
+      <td>0.84 (4)</td>
+      <td>0.037 (77)</td>
+      <td>0.832 (100)</td>
+      <td colspan="2">0.023 (74)</td>
+    </tr>
+    <tr>
+      <td>p (cells−1.d−1)</td>
+      <td>1.97 × 105 (41)</td>
+      <td>2.38 (9)</td>
+      <td>2.8 × 105 (50)</td>
+      <td>2.35 (8)</td>
+      <td>2.40 × 105 (47)</td>
+      <td colspan="2">2.3 (9)</td>
+    </tr>
+    <tr>
+      <td>γ1</td>
+      <td>1.28 (38)</td>
+      <td rowspan="2">0.82 (55)</td>
+      <td>0.49 (20)</td>
+      <td rowspan="2">0.85 (32)</td>
+      <td>0.47 (6)</td>
+      <td rowspan="2" colspan="2">0.545 (23)</td>
+    </tr>
+    <tr>
+      <td>γ2</td>
+      <td>0.57 (62)</td>
+      <td>0.21 (44)</td>
+      <td>0.25 (17)</td>
+    </tr>
+    <tr>
+      <td>BIC</td>
+      <td colspan="2">2502</td>
+      <td colspan="2">2497</td>
+      <td colspan="3">2500</td>
+    </tr>
+  </tbody>
+</table>
+
+Beside viral load, several factors are associated with a transmission event. One important one is face masking, for both the index and the contact. In the original analysis of Marks et al., 2021, the use of face mask by contacts was not found associated with a decreased viral load, but this probably reflects the lack of more detailed data on the type of mask, the use of other personal protective equipment and infection control practices. It is also important to recall that face masking was poorly reported and was missing in about 35% of contacts, limiting statistical power (Supplementary file 4). The use of face mask by index cases was not collected in the original study. This information might be of a greater importance as it has a far more substantial effect on viral shedding and thus on transmission. Collecting this information in future studies should probably contribute to a reduction in the variance of the random effect parameter associated with transmission ($\omega_{\beta}$).
 
 To conclude, our study quantifies the probability of infection according to viral load level after a high-risk contact. This relationship can be used to predict the effects of changes in virus paradigm, caused by the emergence of new variants and/or the rollout of vaccination. We estimate that two- to eightfold increase in viral load level observed with variants of concern could lead to an increase in the probability of transmission by 24–58% in household contacts.
 
 ## Materials and methods
 
-## Data collection
+### Data collection
 
 Data used come from a cluster-randomised trial which included individuals with PCR-confirmed COVID-19 and their close contacts, and evaluated the efficacy of hydroxychloroquine as a pre- or post-exposure prophylaxis. The trial was conducted between March, 17 and April 28, 2020 in three out of nine health-care area in Catalonia, Spain. More details on the study protocol and main results can be found in the original publication (Mitjà et al., 2021).
 
-## Study participants
+### Study participants
 
 All index cases were individuals aged 18 years or older, identified by the Catalan epidemiological surveillance system, with no hospitalisation, nasopharyngeal PCR positive results at baseline and mild symptoms onset within 5 days of inclusion and had no reported symptoms of SARS-CoV-2 infections in their accommodation or workplace within the 14 days before enrolment. High-risk contacts were adults with a recent history of exposure (i.e. >15 min within 2 m up to 7 days before enrolment) and absence of COVID-19 like symptoms within the 14 days preceding enrolment, and who had an increased risk of infection (e.g. health care worker a household contact, a nursing-home worker, or a nursing-home resident). Contacts were quarantined upon enrolment to the study. In the original study, 282 index cases and the resulting 753 contacts were enrolled (Marks et al., 2021); here we did not include three index individuals (and their corresponding 25 contacts) for which no viral load data was available, eight index individuals (19 contacts) for which no viral load was detected at any time point, and 12 index cases (127 contacts) for which no date of contact was available. Thus, our analysis was performed on 259 index and 582 contacts (Figure 1—figure supplement 1). In 12 index cases, the date of symptoms onset was not known and was imputed to 4 days before their first swab sampling, which corresponds to the median value observed in the population study. Type of contact was considered as household or non-household, the latter included nursing home contacts, health-care worker and other undefined contacts.
 
-## Reconstructing viral load in index cases using a viral kinetic model
+### Reconstructing viral load in index cases using a viral kinetic model
 
-We used a target cell-limited model to reconstruct nasopharyngeal viral kinetics in index cases (Néant et al., 2021; Madelain et al., 2018; Baccam et al., 2006). The model includes three populations of cells, namely Target cells (T), infected cells in their eclipse phase (I1) and productively infected cells (I2). Target cells (T) are infected at a constant rate β by infectious virus (VI). Infected cells enter an eclipse phase at a rate k before becoming productively infected cells (I2). We assumed productively infected cells have a constant loss rate δ. Virions are released from productively infected cells at a rate p and are loss at a rate c. A proportion µ of produced viruses are infectious (VI) and the remaining (1-μ) are non-infectious viruses (VNI), both are cleared at a rate c. The model can be written as follows:(1)dTdt=−βTVI(2)dI1dt=βTVI–kI1(3)dI2dt=kI1−δxI2(4)dVIdt=pμI2−cVI(5)dVNIdt=p(1−μ)I2−cVNI
+We used a target cell-limited model to reconstruct nasopharyngeal viral kinetics in index cases (Néant et al., 2021; Madelain et al., 2018; Baccam et al., 2006). The model includes three populations of cells, namely Target cells $(T)$, infected cells in their eclipse phase $(I_{1})$ and productively infected cells $(I_{2})$. Target cells $(T)$ are infected at a constant rate $\beta$ by infectious virus $(V_{I})$. Infected cells enter an eclipse phase at a rate $k$ before becoming productively infected cells $(I_{2})$. We assumed productively infected cells have a constant loss rate $\delta$. Virions are released from productively infected cells at a rate $p$ and are loss at a rate $c$. A proportion µ of produced viruses are infectious $(V_{I})$ and the remaining $(1-\mu)$ are non-infectious viruses $(V_{NI})$, both are cleared at a rate $c$. The model can be written as follows:
 
-Based on this model, the basic reproduction number, R0, defined as the number of newly infected cells by one infected cell at the beginning of the infection (Best et al., 2017) is, R0=pβT0μcδ. Given the absence of any antiviral effect of hydroxychloroquine against SARS-CoV-2 (Mitjà et al., 2021; Maisonnasse et al., 2020; Boulware et al., 2020), we did not consider any effect of hydroxychloquine in the model.
+$$
+\frac{dT}{dt}=−\betaTV_{I}
+$$
 
-## Assumptions on parameter values
 
-Some parameters were fixed to ensure identifiability. The clearance rate c was fixed at 10d-1 and the eclipse phase k to 4d-1 based on previous work (Néant et al., 2021; Gonçalves et al., 2020; Gonçalves et al., 2021). The proportion of infectious virus µ was assumed constant over time and was fixed to 10−4 as observed in animal model (Gonçalves et al., 2021). The initial number of target cells, T0, was fixed to T0=1.33×105cells.mL-1 (more details in Néant et al., 2021). We assumed that at the moment of infection there was exactly one productively infected cell in the upper respiratory tract. Hence, at t=tinf,T=T0;I1=0;I2=130;VI=0 and VNI=0.
+
+$$
+\frac{dI_{1}}{dt}=\betaTV_{I}–kI_{1}
+$$
+
+
+
+$$
+\frac{dI_{2}}{dt}=kI_{1}−\delta_{x}I_{2}
+$$
+
+
+
+$$
+\frac{dV_{I}}{dt}=p\muI_{2}−cV_{I}
+$$
+
+
+
+$$
+\frac{dV_{NI}}{dt}=p(1−\mu)I_{2}−cV_{NI}
+$$
+
+Based on this model, the basic reproduction number, $R_{0}$, defined as the number of newly infected cells by one infected cell at the beginning of the infection (Best et al., 2017) is, $R_{0}=\frac{p\betaT_{0}\mu}{c\delta}$. Given the absence of any antiviral effect of hydroxychloroquine against SARS-CoV-2 (Mitjà et al., 2021; Maisonnasse et al., 2020; Boulware et al., 2020), we did not consider any effect of hydroxychloquine in the model.
+
+### Assumptions on parameter values
+
+Some parameters were fixed to ensure identifiability. The clearance rate $c$ was fixed at $10d^{-1}$ and the eclipse phase $k$ to $4d^{-1}$ based on previous work (Néant et al., 2021; Gonçalves et al., 2020; Gonçalves et al., 2021). The proportion of infectious virus µ was assumed constant over time and was fixed to 10−4 as observed in animal model (Gonçalves et al., 2021). The initial number of target cells, $T_{0}$, was fixed to $T_{0}=1.33\times10^{5}cells.mL^{-1}$ (more details in Néant et al., 2021). We assumed that at the moment of infection there was exactly one productively infected cell in the upper respiratory tract. Hence, at $t=t_{inf}$,$T=T_{0};I_{1}=0;I_{2}=\frac{1}{30};V_{I}=0 and V_{NI}=0$.
 
 We assumed that the incubation period was lognormally distributed around 5 days before symptoms onset with a standard deviation of 0.125 days, corresponding to 90% of individuals having an incubation period varying between 4 and 6 days (Jones et al., 2021; Lauer et al., 2020).
 
-## Statistical model for viral kinetics
+### Statistical model for viral kinetics
 
-Parameter estimations were performed using non-linear mixed-effect model. The structural model used to describe the observed log10 viral load is yi,j=log10Vti,j,ΨiV+ei,j, where yi,j is the jth observation of index i at time ti,j with iϵ1,…,N and jϵ1,…,ni with N the number of index and ni is the number of observations for index i. Vti,j,ΨiV is the function describing the total viral load dynamics VIti,j+VNI(ti,j) predicted by the model at time ti,j. The vector of viral kinetic parameters for index i is noted ΨiV and ei,j is the additive residual Gaussian error term of constant standard deviation σ. The vector of individual parameters depends on a fixed effects vector and on an individual random effects vector, which follows a normal centred distribution with a diagonal variance-covariance matrix Ω. To ensure positivity, the individual parameters follow a lognormal distribution.
+Parameter estimations were performed using non-linear mixed-effect model. The structural model used to describe the observed $log_{10}$ viral load is $y_{i,j}=log_{10}Vt_{i,j},Ψ_{i}^{V}+e_{i,j}$, where $y_{i,j}$ is the $j^{th}$ observation of index $i$ at time $t_{i,j}$ with $iϵ1,…,N$ and $jϵ1,…,n_{i}$ with $N$ the number of index and $n_{i}$ is the number of observations for index $i$. $Vt_{i,j},Ψ_{i}^{V}$ is the function describing the total viral load dynamics $V_{I}t_{i,j}+V_{NI}(t_{i,j})$ predicted by the model at time $t_{i,j}$. The vector of viral kinetic parameters for index $i$ is noted $Ψ_{i}^{V}$ and $e_{i,j}$ is the additive residual Gaussian error term of constant standard deviation $\sigma$. The vector of individual parameters depends on a fixed effects vector and on an individual random effects vector, which follows a normal centred distribution with a diagonal variance-covariance matrix $Ω$. To ensure positivity, the individual parameters follow a lognormal distribution.
 
-## Probability of transmission
+### Probability of transmission
 
-We noted xic the outcome of the cth contact of index case i (i.e. xic=1 if the contact resulted in transmission and 0 otherwise) and cϵ1,…,Ci, with Ci the number of contacts of index i. The probability of transmission depends on the time of contact tic, the nature of contact, namely household (hic=1) or not (hic=0), and the vector of individual parameters Ψi, which contains the viral parameters ΨiV and individual transmission parameters βi. Three models of transmission were tested (M1-M3), described as follows:
+We noted $x_{i}^{c}$ the outcome of the $c^{th}$ contact of index case $i$ (i.e. $x_{i}^{c}=1$ if the contact resulted in transmission and 0 otherwise) and $cϵ1,…,C_{i}$, with $C_{i}$ the number of contacts of index $i$. The probability of transmission depends on the time of contact $t_{i}^{c}$, the nature of contact, namely household $(h_{i}^{c}=1)$ or not $(h_{i}^{c}=0)$, and the vector of individual parameters $Ψ_{i}$, which contains the viral parameters $Ψ_{i}^{V}$ and individual transmission parameters $\beta_{i}$. Three models of transmission were tested (M1-M3), described as follows:
 
-## Model M1
+#### Model M1
 
-No effect of viral load.logit P(xic=1|tic,Ψi,hic)=α+βiwhere: βi=(γ1hic+γ01-hic)×exp⁡(bi) with γ1 (resp. γ0) the effect of household contact (resp. non-household) on the probability of transmission, and bi is an individual random effect assumed to follow a Gaussian distribution of variance ωβ2. The baseline probability of transmission was fixed to 5% (α=-2.94).
+No effect of viral load.
 
-## Model M2
+$$
+logit P(x_{i}^{c}=1|t_{i}^{c},Ψ_{i},h_{i}^{c})=\alpha+\beta_{i}
+$$
 
-Logit-linear effect of viral load.logit P(xic=1|tic,Ψi,hic)={α iflog10⁡V(tic,ΨiV)≤6α+βi×(log10⁡V(tic,ΨiV)−6)iflog10⁡V(tic,ΨiV)>6where: βi=(γ1hic+γ01-hic)×exp⁡(bi) with γ1 (resp. γ0) the effect of viral load on the probability of transmission in household contact (resp. non-household), and bi a Gaussian individual random effect with variance ωβ2. The baseline probability of transmission was fixed to 5% (α=-2.94) for viral load lower than 6 log10 copies per mL, which corresponds to the threshold for viral culture (Néant et al., 2021; Ke et al., 2020) (see Supplementary file 2 for additional scenarios with different threshold values).
+where: $\beta_{i}=(\gamma_{1}h_{i}^{c}+\gamma_{0}1-h_{i}^{c})\timesexp⁡(b_{i})$ with $\gamma_{1}$ (resp. $\gamma_{0}$) the effect of household contact (resp. non-household) on the probability of transmission, and $b_{i}$ is an individual random effect assumed to follow a Gaussian distribution of variance $\omega_{\beta}^{2}.$ The baseline probability of transmission was fixed to 5% ($\alpha=-2.94$).
 
-## Model M3
+#### Model M2
 
-Log-linear effect of viral load.log⁡ P(xic=1|tic,Ψi,hic)={α if log10⁡V(tic,ΨiV)≤6α+βi×(log10⁡V(tic,ΨiV)−6)iflog10⁡V(tic,ΨiV)>6where: βi=(γ1hic+γ0(1−hic))×exp(bi)with γ1(resp.γ0) the effect of viral load on the probability of transmission in household contact (resp. non-household), and bi a Gaussian individual random effect with variance ωβ2. The baseline probability of transmission was fixed to 5% (α=-2.99) and the probability was bounded to 1.
+Logit-linear effect of viral load.
 
-## Parameter estimation
+$$
+logit P(x_{i}^{c}=1|t_{i}^{c},Ψ_{i},h_{i}^{c})={\alpha iflog_{10}⁡V(t_{i}^{c},Ψ_{i}^{V})\leq6\alpha+\beta_{i}\times(log_{10}⁡V(t_{i}^{c},Ψ_{i}^{V})−6)iflog_{10}⁡V(t_{i}^{c},Ψ_{i}^{V})>6
+$$
 
-For each model, we estimated simultaneously the vector of individual parameter Ψi, which depends on both the parameters of the viral kinetic model (R0,δ,p,ωR0,ωδ,ωp) and the parameters of the transmission model β,ωβ. The model providing the lowest BIC was retained. All parameters were estimated by computing the maximum-likelihood estimator using the stochastic approximation expectation-maximization (SAEM) algorithm implemented in Monolix Software 2020R1 (http://www.lixoft.eu/) (Comets et al., 2017; Delyon et al., 1999; Monolix version 2020R1, 2019).
+where: $\beta_{i}=(\gamma_{1}h_{i}^{c}+\gamma_{0}1-h_{i}^{c})\timesexp⁡(b_{i})$ with $\gamma_{1}$ (resp. $\gamma_{0}$) the effect of viral load on the probability of transmission in household contact (resp. non-household), and $b_{i}$ a Gaussian individual random effect with variance $\omega_{\beta}^{2}$. The baseline probability of transmission was fixed to 5% ($\alpha=-2.94$) for viral load lower than 6 log10 copies per mL, which corresponds to the threshold for viral culture (Néant et al., 2021; Ke et al., 2020) (see Supplementary file 2 for additional scenarios with different threshold values).
 
-## Simulations settings
+#### Model M3
 
-We provided prediction intervals for viral load and transmission probability over time, depending on the nature of contact, namely household (h=1) or not (h=0). We sampled M=1,000 individual from the estimated population distribution and we calculated the predicted viral load V(t,ΨmV) and the predicted transmission probability according to the type of contact Pxm|t,Ψm,h for all M individuals. We derived the mean transmission probability over the M simulated individuals at all times, as well as the 90% inter quantile range to provide prediction intervals.
+Log-linear effect of viral load.
+
+$$
+log⁡ P(x_{i}^{c}=1|t_{i}^{c},Ψ_{i},h_{i}^{c})={\alpha if log_{10}⁡V(t_{i}^{c},Ψ_{i}^{V})\leq6\alpha+\beta_{i}\times(log_{10}⁡V(t_{i}^{c},Ψ_{i}^{V})−6)iflog_{10}⁡V(t_{i}^{c},Ψ_{i}^{V})>6
+$$
+
+where: $\beta_{i}=(\gamma_{1}h_{i}^{c}+\gamma_{0}(1−h_{i}^{c}))\timesexp(b_{i})with \gamma_{1}(resp.\gamma_{0})$ the effect of viral load on the probability of transmission in household contact (resp. non-household), and $b_{i}$ a Gaussian individual random effect with variance $\omega_{\beta}^{2}$. The baseline probability of transmission was fixed to 5% ($\alpha=-2.99$) and the probability was bounded to 1.
+
+### Parameter estimation
+
+For each model, we estimated simultaneously the vector of individual parameter $Ψ_{i}$, which depends on both the parameters of the viral kinetic model $(R_{0},\delta,p,\omega_{R_{0}},\omega_{\delta},\omega_{p})$ and the parameters of the transmission model $\beta,\omega_{\beta}$. The model providing the lowest BIC was retained. All parameters were estimated by computing the maximum-likelihood estimator using the stochastic approximation expectation-maximization (SAEM) algorithm implemented in Monolix Software 2020R1 (http://www.lixoft.eu/) (Comets et al., 2017; Delyon et al., 1999; Monolix version 2020R1, 2019).
+
+### Simulations settings
+
+We provided prediction intervals for viral load and transmission probability over time, depending on the nature of contact, namely household $(h=1)$ or not $(h=0)$. We sampled $M=1,000$ individual from the estimated population distribution and we calculated the predicted viral load $V(t,Ψ_{m}^{V})$ and the predicted transmission probability according to the type of contact $Px_{m}|t,Ψ_{m},h$ for all $M$ individuals. We derived the mean transmission probability over the $M$ simulated individuals at all times, as well as the 90% inter quantile range to provide prediction intervals.
 
 All simulations were performed using the Simulx package on R.3.6.0.
 
-## Calculating the average probability of transmission
+### Calculating the average probability of transmission
 
-Using our model, we also aimed to visualise the impact of a therapeutic intervention or a virus mutation on the probability of transmission. To this purpose, we defined several scenarios of simulation by modifying the corresponding parameters in the viral dynamic model. First, we increased the viral production parameter, p, by a factor of 2 to 100 corresponding to observed increases of 1-7 Ct value for different variants (Teyssou et al., 2021; Roquebert et al., 2021; Kidd et al., 2021). Second, we decreased the production parameters p by a factor of 2, 4, 8, and 16 as well (Liu et al., 2021) to emulate the impact of vaccination (Levine-Tiefenbrun et al., 2021; McEllistrem et al., 2021; Figure 4—figure supplement 1).
+Using our model, we also aimed to visualise the impact of a therapeutic intervention or a virus mutation on the probability of transmission. To this purpose, we defined several scenarios of simulation by modifying the corresponding parameters in the viral dynamic model. First, we increased the viral production parameter, $p$, by a factor of 2 to 100 corresponding to observed increases of 1-7 $C_{t}$ value for different variants (Teyssou et al., 2021; Roquebert et al., 2021; Kidd et al., 2021). Second, we decreased the production parameters $p$ by a factor of 2, 4, 8, and 16 as well (Liu et al., 2021) to emulate the impact of vaccination (Levine-Tiefenbrun et al., 2021; McEllistrem et al., 2021; Figure 4—figure supplement 1).
 
-We used as a metrics of the effect of variants the average probability of transmission during the contact period, defined asPh¯=∫m,tP(xm=1|t,Ψm,h)g(t)dΨmdtwhere Ph-=∫m,tPxm=1|t,Ψm,hg(t)dΨmdt is the probability of infection after a high-risk contact occurring at time Pxm=1|t,Ψm,h given the parameters of individual t. We considered two possible distributions of contacts m, (i) a constant function during the first five days following infection, followed by a decreasing function afterwards, reflecting the time-decreasing likelihood of contacts due to detection and/or symptom onset; (ii) a constant function during the first 20 days following infection (e.g. uniform distribution of the contact).
+We used as a metrics of the effect of variants the average probability of transmission during the contact period, defined as
 
-## Generation interval
+$$
+P_{h}¯=\int_{m,t}^{}P(x_{m}=1|t,Ψ_{m},h)g(t)dΨ_{m}dt
+$$
+
+where $P_{h}-=\int_{m,t}^{}Px_{m}=1|t,Ψ_{m},hg(t)dΨ_{m}dt$ is the probability of infection after a high-risk contact occurring at time $Px_{m}=1|t,Ψ_{m},h$ given the parameters of individual $t$. We considered two possible distributions of contacts $m$, (i) a constant function during the first five days following infection, followed by a decreasing function afterwards, reflecting the time-decreasing likelihood of contacts due to detection and/or symptom onset; (ii) a constant function during the first 20 days following infection (e.g. uniform distribution of the contact).
+
+### Generation interval
 
 As a means to validate the model predictions, we also calculated the generation interval, defined as the time between the infection of the index and the infection of the contact. Given the difficulty to account for random effects, the generation time was calculated by simulations as follows.
 
-We first sampled a vector of individual parameter g(t) in the simulated population distribution. We then sampled a time of contact Ψm in the contact distribution. Finally, the contact outcome (i.e. infection or not) was obtained by drawing in the binomial distribution of parameter tc. We repeated these steps 500,000 times to obtain the distribution of the generation time.
+We first sampled a vector of individual parameter $g(t)$ in the simulated population distribution. We then sampled a time of contact $Ψ_{m}$ in the contact distribution. Finally, the contact outcome (i.e. infection or not) was obtained by drawing in the binomial distribution of parameter $t_{c}$. We repeated these steps 500,000 times to obtain the distribution of the generation time.

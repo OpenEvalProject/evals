@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.30543.001 Cells deficient in the pro-death Bcl-2 family members Bax and Bak are known to be resistant to apoptotic cell death, and previous we have shown that these two effectors are also needed for mitochondrial-dependent cellular necrosis (Karch et al., 2013). Here we show that mouse embryonic fibroblasts deficient in Bax/Bak1 are resistant to the third major form of cell death associated with autophagy through a mechanism involving lysosome permeability. Indeed, specifically targeting Bax only to the lysosome restores autophagic cell death in Bax/Bak1 null cells. Moreover, a monomeric-only mutant form of Bax is sufficient to increase lysosomal membrane permeability and restore autophagic cell death in Bax/Bak1 double-deleted mouse embryonic fibroblasts. Finally, increasing lysosomal permeability through a lysomotropic detergent in cells devoid of Bax/Bak1 restores autophagic cell death, collectively indicting that Bax/Bak integrate all major forms of cell death through direct effects on membrane permeability of multiple intracellular organelles.
+Cells deficient in the pro-death Bcl-2 family members Bax and Bak are known to be resistant to apoptotic cell death, and previous we have shown that these two effectors are also needed for mitochondrial-dependent cellular necrosis (Karch et al., 2013). Here we show that mouse embryonic fibroblasts deficient in Bax/Bak1 are resistant to the third major form of cell death associated with autophagy through a mechanism involving lysosome permeability. Indeed, specifically targeting Bax only to the lysosome restores autophagic cell death in Bax/Bak1 null cells. Moreover, a monomeric-only mutant form of Bax is sufficient to increase lysosomal membrane permeability and restore autophagic cell death in Bax/Bak1 double-deleted mouse embryonic fibroblasts. Finally, increasing lysosomal permeability through a lysomotropic detergent in cells devoid of Bax/Bak1 restores autophagic cell death, collectively indicting that Bax/Bak integrate all major forms of cell death through direct effects on membrane permeability of multiple intracellular organelles.
 
 ## Introduction
 
@@ -29,45 +29,61 @@ A distinct mechanistic feature that separates autophagic cell death from the oth
 
 ## Results
 
-## Bax and Bak are required for autophagic cell death
+### Bax and Bak are required for autophagic cell death
 
 Bax/Bak1 DKO MEFs are highly resistant to serum starvation-induced cell death (Wei et al., 2001). We confirmed this previous result and also examined whether reconstitution with either Bax or Bak was sufficient to restore this type of cell death in DKO MEFs (Figure 1A). We also observed a similar level of protection in DKO MEFs subjected to amino acid-free media when compared to WT MEFs (Figure 1—figure supplement 1A). Indeed, expressing either Bax or Bak1 in the DKO background was sufficient to restore serum starvation-induced cell death, suggesting a role in autophagic killing (Figure 1A). We confirmed that serum starvation elicited an autophagic response with an LC3-GFP marker expressed by adenoviral-based transduction into WT and DKO MEFs (Figure 1B). LC3-GFP showed a punctate expression pattern after 24 hr serum starvation in both WT and DKO cell lines (Figure 1B ). Western blot analysis of autophagy related proteins also showed induction over 4 days of serum starvation, such as a shift from LC3-I to LC3-II, greater Lamp1 levels and cleavage of cathepsin D into its active form (Figure 1C). Transmission electron microscopy (EM) showed an accumulation of autophagy vacuoles and expanded lysosomes after two days of starvation in WT and DKO MEFs. However vacuoles in the DKO MEFs were smaller and less frequent compared with WT MEFs, andDKO MEFs with starvation uniquely showed dark punctate bodies in the cytoplasm (Figure 1D). Following four days of starvation WT MEFs broadly displayed loss of plasma membrane integrity whereas the plasma membrane of the DKO MEFs remained intact (Figure 1D).
 
-## Autophagic cell death is a unique form of death
+![Figure 1.](https://cdn.elifesciences.org/articles/30543/elife-30543-fig1-v3.jpg)
+
+**Figure 1.:** (A) Wild type (WT) mouse embryonic fibroblasts (MEFs), Bax/Bak1 double knockout (DKO) MEFs, and DKO MEFs stably expressing Bax or Bak1 were subjected to serum starvation for the indicated time points and cell death was measured by loss of membrane integrity. (B) Confocal images of WT and DKO MEFs that were infected with an LC3-GFP (green fluorescence) adenovirus and were untreated (0) or subjected to serum starvation for 1 day. The figure shows punctate LC3 at 1 day in both types of MEFs. Scale bars = 5 μm. (C) Western blot analysis of Bax, Bak, Bcl-2, LC3, Lamp1, Cathepsin D (Ctsd), and GAPDH (control) in WT and DKO MEFs during serum starvation for the indicated time points in days. (D) Transmission electron microscopic (EM) images (10,000x) of WT and DKO MEFs at baseline or serum starved up to 4 days. Black arrows highlight autophagic-like vacuoles and lysosomes. White Arrows show punctate bodies that are specific to the DKO cells with starvation. Scale bars = 2.5 μm. All assays are representative of three independent experiments. Averages are shown and error bars represent the standard error of the mean. *p<0.05 vs 0 time point. Statistical significance was determined by students t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30543/elife-30543-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) WT and DKO MEFs were subjected to amino acid-free media for 4 days and cell death was measured by loss of membrane integrity. (B) Confocal images of LysoTracker red fluorescence in amino acid-starved WT and DKO MEFs for 0 (untreated) and 2 days. Scale bars = 5 μm. Similar results were observed across three independent experiments in all panels.
+
+### Autophagic cell death is a unique form of death
 
 To determine if autophagic cell death is dependent upon the apoptotic process or mitochondrial-dependent necrotic cell death we examined how serum starvation-induced cell death is affected by caspase inhibitors or by desensitization of the mitochondrial permeability transition pore (MPTP), respectively. During apoptosis Bax/Bak oligomerize to form large pores in the outer mitochondrial membrane to enable cytochrome-c release and formation of the apoptosome, which mediates caspase activation and apoptotic cell killing (Korsmeyer et al., 2000). Here, WT MEFs treated with a pan-caspase inhibitor (Z-VAD-FMK) showed no resistance to serum starvation-induced cell death, suggesting that this form of autophagic-regulated killing was caspase independent (Figure 2A). Bax/Bak are also critical regulators of MPTP-dependent necrosis (Karch et al., 2013). To determine if serum starvation-induced cell death also requires a regulated necrotic process through the MPTP we subjected Ppif null MEFs (Ppif encodes the gene for cyclophilin D) to serum starvation, although no change in levels of cell death were observed suggesting that autophagic cell death proceeds in a manner independent of the MPTP (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/30543/elife-30543-fig2-v3.jpg)
+
+**Figure 2.:** (A) WT MEFs treated with or without a pan caspase inhibitor (zVad) and subjected to serum starvation for 1 or 2 days. Cell death was measured by plasma membrane rupture. (B) WT and Ppif null MEFs were subjected to serum starvation and cell death was assessed as in ‘A’. (C) WT MEFs and DKO MEFs stably expressing oligomeric dead mutants of Bax (Bax63-65A or Bax 92-94A) or WT Bax were subjected to serum starvation and cell death was measured by loss of plasma membrane integrity for the days shown. (D) WT and DKO MEFs were treated with or without BH3-mimtics (ABT-737 or Gossypol) and were subjected to serum starvation. Cell death was assessed as in ‘A’. All assays are an average three independent experiments. The error bars represent the standard error of the mean. #p<0.05 vs WT Bax. *p<0.05 vs 0 time point. §p<0.05 vs vehicle. Statistical significance was determined by students t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30543/elife-30543-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blots for Bax and α-tubulin on cell lysates from WT, DKO and DKO MEFs stably reconstituted with WT and the indicated mutant versions of GFP-Bax. (B) Confocal images of WT MEFs labeled with an activation-specific Bax antibody (Bax6A7) (green) and DAPI (blue nuclear stain). WT MEFs were treated with 200 nM staurosporine (Staur.) and 20 μM zVAD for 24 hr as an apoptotic control. Serum starvation was for 48 hr or MEFs were left untreated prior to fixation. Scale bars = 5 μm. (C) Western blot for Bak from WT MEFs treated as in ‘B’ (Staurosporine (St.) and Serum Free (SF)). Cell lysates were collected in non-reducing conditions and the protein lysates were incubated in NativePage sample buffer to maintain Bak oligomers. (D) Confocal images of DKO MEFs reconstituted with GFP-Bax that were subjected to the same treatments as in ‘B’ and then labeled with either TOM20 (red) to visualize mitochondria or Lamp-1 (red) to visualize lysosomes. Scale bars = 5 μm. Similar results were observed across three independent experiments in all panels.
 
 Bax/Bak oligomerization is indispensable for apoptotic and necroptotic forms of regulated cell death (Antonsson et al., 2000; Karch et al., 2015). However, we previously showed that the monomeric states of Bax or Bak are sufficient to mediate increased permeability of the outer mitochondrial membrane to permit MPTP-dependent, regulated necrotic killing of cells (Karch et al., 2013). Here we used two different oligomerization-deficient mutant versions of Bax reconstituted at a similar level to the WT control line within the background of DKO MEFs (Figure 2—figure supplement 1A) (Hoppins et al., 2011). Remarkably, while DKO MEFs were resistant to serum starvation-induced cell death, reconstitution with Bax 63-65A or Bax 92-94A restored autophagic cell death to levels observed with WT Bax reconstitution (Figure 2C). However, using an active-Bax specific antibody showed that this factor was not directly activated in serum-depleted WT MEFs, and Bax translocation was also undetectable in serum-starved DKO MEFs expressing a Bax-GFP fusion protein, although as a control apoptosis induction with staurosporine caused abundant translocation and Bax activation (Figure 2—figure supplement 1B,D). Finally, Bak oligomerization was not detected in serum starved WT MEFs but it was with staurosporine (Figure 2—figure supplement 1C). These results indicate that Bax/Bak activation and oligomerization are not required for serum starvation-induced cell death.
 
 WT and DKO MEFs were also treated with the BH3-memtic compounds gossypol and ABT-737 to further explore the mechanism of Bax/Bak-dependent cell death with serum starvation. Both of these compounds antagonize and inhibit the anti-apoptotic Bcl-2 family members (such as Bcl-2 and Bcl-xl). However, gossypol is unique in that it elicits a conformational change in Bcl-2 that makes it pro-apoptotic like Bax/Bak, while ABT-737 simply blocks the activity of the anti-apoptotic Bcl-2 family members (van Delft et al., 2006; Lei et al., 2006). Here, treatment with either of these agents enhanced the kinetics of cell death in WT MEFs, but only gossypol was able to restore autophagic killing in DKO MEFs (Figure 2D). The observed effect on WT MEFs simply indicates that augmenting the activity of Bax/Bak, or artificially creating more ‘Bax/Bak-like’ activity can augment autophagic programmed killing. However, because gossypol but not ABT-737 restored autophagic killing in DKO MEFs, it further indicates that this form of cell death requires the expression of Bax/Bak.
 
-## DKO MEFs have increased lysosomal acidity and decreased permeability
+### DKO MEFs have increased lysosomal acidity and decreased permeability
 
 Closer inspection of serum-starved WT and DKO MEFs by transmission EM showed greater intracellular vesicular fragmentation in WTs with 1 and 2 days of starvation along with the appearance of electron dense vesicles in the DKOs (Figure 3A). To assess the identity of these vesicles live cell imaging was performed with LysoTracker red (lysosomes) and rhodamine-123 to assess mitochondrial membrane potential. We observed little to no difference in the mitochondria membrane potential between starved WT and DKO MEFs (green stain) but there was a dramatic difference in the fluorescence intensity of LysoTracker red (Figure 3B). LysoTracker red partitions to acidic vacuoles and its fluorescent intensity reflects accumulation in such structures, which are typically lysosomes or autolysosomes (Wubbolts et al., 1996). After 2 days of serum starvation DKO MEFs showed 3-fold greater LysoTracker red intensity than comparably starved WT MEFs (Figure 3C), which was also observed in DKO MEFs subjected to amino acid free media (Figure 1—figure supplement 1B). To measure LMP directly we treated starved and LysoTracker red loaded WT and DKO MEFs with bafilomycin A1 to inhibit the vacuolar-type H+-ATPase, which is responsible for the acidification of the lysosome and autolysosome (Figure 3D,E). If there is ongoing LMP, bafilomycin A1 treatment will lead to loss of accumulated LysoTracker red signal, but if LMP is very low, fluorescence will remain high. Indeed, bafilomyocin A1 treatment showed loss of red fluorescence in WT MEFs while DKO MEFs retained fluorescence indicating that loss of Bax/Bak no longer permits LMP (Figure 3D,E). Together these data suggest that Bax/Bak are required for LMP during autophagic stress.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/30543/elife-30543-fig3-v3.jpg)
 
-**Figure 3.:** Bax and Bak1 maintains lysosomal integrity.(A) Transmission EM images (30,000x) of WT and DKO MEFs subjected to serum starvation for the specified time points. Autolysosomes and translucent vesicles are noticeable in the serum-starved WT MEFs but not in the DKO MEFs. Scale bars = 1 μm. (B) Confocal images of WT and DKO MEFs subjected to serum starvation for the indicated times and labeled with Rhodamine 123 (green) to measure mitochondrial membrane potential and LysoTracker red (red) to label lysosomes. Scale bars = 5 μm. (C) Time course of LysoTracker red fluorescence intensity in serum starved WT vs. DKO MEFs for the indicated time points. (D) Representative trace for LysoTracker red fluorescence in WT and DKO MEFs serum-starved for 12 hr and treated with or without bafilomycin A1. Fluorescent intensity was continually measured for 40 min following the bafilomycin A1 addition. (E) Confocal images of WT and DKO MEFs treated the same as in panel ‘D’. Scale bars = 10 μm. (F) Graph of cytosolic pH in WT and DKO MEFs in control serum-replete conditions (black) or serum-starved (red) conditions. (G) Confocal images of active cathepsin B (red) in WT and DKO MEFs in control or serum-starved state. Scale bars = 5 μm. All assays are an average, or are representative of three independent experiments. The error bars represent the standard error of the mean. *p<0.05 vs 0 serum-replete. Statistical significance was determined by student's t-test.
+**Figure 3.:** (A) Transmission EM images (30,000x) of WT and DKO MEFs subjected to serum starvation for the specified time points. Autolysosomes and translucent vesicles are noticeable in the serum-starved WT MEFs but not in the DKO MEFs. Scale bars = 1 μm. (B) Confocal images of WT and DKO MEFs subjected to serum starvation for the indicated times and labeled with Rhodamine 123 (green) to measure mitochondrial membrane potential and LysoTracker red (red) to label lysosomes. Scale bars = 5 μm. (C) Time course of LysoTracker red fluorescence intensity in serum starved WT vs. DKO MEFs for the indicated time points. (D) Representative trace for LysoTracker red fluorescence in WT and DKO MEFs serum-starved for 12 hr and treated with or without bafilomycin A1. Fluorescent intensity was continually measured for 40 min following the bafilomycin A1 addition. (E) Confocal images of WT and DKO MEFs treated the same as in panel ‘D’. Scale bars = 10 μm. (F) Graph of cytosolic pH in WT and DKO MEFs in control serum-replete conditions (black) or serum-starved (red) conditions. (G) Confocal images of active cathepsin B (red) in WT and DKO MEFs in control or serum-starved state. Scale bars = 5 μm. All assays are an average, or are representative of three independent experiments. The error bars represent the standard error of the mean. *p<0.05 vs 0 serum-replete. Statistical significance was determined by student's t-test.
 
 To further investigate the mechanism of autophagic cell death due to Bax and Bak, cytosolic pH and total cathepsin B activity were measured during serum starvation. Twenty-four hours of serum starvation in WT MEFs significantly lowered cytosolic pH compared with unstarved, suggesting that LMP and lysosomal rupture was occurring during autophagic conditions (Figure 3F). However, serum starvation in DKO MEFs showed no reduction in cytosolic pH suggesting inhibition of LMP and lysosomal rupture in the absence of Bax and Bak (Figure 3F). Associated with reduced cytosolic pH is an aggregation of activated cathepsin B, as seen in serum starved WT MEFs over 3 days but not in DKO MEFs (Figure 3G). These results suggest that in the absence of Bax and Bak the cytosol remains neutral pH, likely because lysosomes and autolysosomes remained intact.
 
-## Lysosomal-only Bax is sufficient to restore autophagic cell death in DKO MEFs
+### Lysosomal-only Bax is sufficient to restore autophagic cell death in DKO MEFs
 
 Bax and Bak regulate cell death, in part, by localization to the mitochondria where they generate either apoptotic pores or increase the general permeability characteristics of the outer membrane for MPTP-dependent necrotic cell death (Wei et al., 2001; Karch et al., 2013). However, Bax and Bak can also localize to the lysosome where they can further enhance apoptotic cell death through an unknown mechanism (Kågedal et al., 2005; Feldstein et al., 2006; Oberle et al., 2010). Indeed, sub-cellular fractionation of WT MEFs both in the fed and starved state, showed increased Bax and Bak within the lysosome compartment that was coincident with lysosomal-associated membrane protein 1 (Lamp1) and devoid of mitochondrial proteins for oxidative phosphorylation (Figure 4A). To better visualize lysosomes at the ultrastructural level we generated a fusion construct between Bax and mini-singlet oxygen generator (miniSOG). MiniSOG-EM provides visualization of a protein by transmission EM without the loss of visualization of some membrane-based structures that can plague Immuno-gold antibody based imaging (Shu et al., 2011a). For this experiment DKO MEFs were infected with a recombinant adenovirus expressing a miniSOG-Bax fusion protein and 24 hr later imaged for SOG activity to show localization of Bax. As expected, miniSOG-Bax protein was found in the cytoplasm and was also associated with the mitochondrial membrane (yellow arrows), as well as within lysosomal/autophagosomal membranes (Figure 4B, pink arrowheads). These results suggest that exogenous expression of Bax does not target exclusively to mitochondrial membranes but that some targets lysosomes and associated downstream vesicles.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/30543/elife-30543-fig4-v3.jpg)
 
-**Figure 4.:** (A) Western blot analysis of the indicated protein fractions from starved and control WT MEFs for Bax, Bak, Lamp1 and the oxidative phosphorylation mitochondrial proteins UQCRC2 (upper band) and MTCO1 (lower band). (B) Transmission EM image of DKO MEFs treated with an adenovirus for mini SOG-Bax. The yellow arrows show electron dense mini-SOG-Bax within the mitochondrial membranes while the pink arrow heads show electron dense regions within the autolysosomes and lysosomes. Scale bar = 1 μm. (C) DKO MEFs infected with a Dox-inducible adenovirus for Bax containing the lysosomal targeting sequence of Lamp1 on its C-terminus. The infected cells were then treated with or without Dox to induce expression and then subjected to serum starvation to induce autophagic cell death, or treated with 200 nM staurosporine to induce apoptotic cell death. Cell death was determined by plasma membrane rupture. All assays are an average or are representative of three independent experiments. The error bars represent the standard error of the mean. *p<0.05 vs no Dox with students t-test.10.7554/eLife.30543.010Figure 4—source data 1.Figure 4A.
+**Figure 4.:** (A) Western blot analysis of the indicated protein fractions from starved and control WT MEFs for Bax, Bak, Lamp1 and the oxidative phosphorylation mitochondrial proteins UQCRC2 (upper band) and MTCO1 (lower band). (B) Transmission EM image of DKO MEFs treated with an adenovirus for mini SOG-Bax. The yellow arrows show electron dense mini-SOG-Bax within the mitochondrial membranes while the pink arrow heads show electron dense regions within the autolysosomes and lysosomes. Scale bar = 1 μm. (C) DKO MEFs infected with a Dox-inducible adenovirus for Bax containing the lysosomal targeting sequence of Lamp1 on its C-terminus. The infected cells were then treated with or without Dox to induce expression and then subjected to serum starvation to induce autophagic cell death, or treated with 200 nM staurosporine to induce apoptotic cell death. Cell death was determined by plasma membrane rupture. All assays are an average or are representative of three independent experiments. The error bars represent the standard error of the mean. *p<0.05 vs no Dox with students t-test.
 
 To more definitively determine if autophagic cell death is dependent on the localization of Bax to the lysosome we generated a lysosomal-targeted Bax construct consisting of full-length Bax fused to a targeting sequence from Lamp1. DKO MEFs were infected with a doxycycline (Dox)-inducible adenovirus containing this construct and then subjected to serum starvation or staurosporine, with and without Dox treatment. Cell death was significantly restored in the Dox treated, serum-starved DKO MEFs, but not in the Dox treated staurosporine treated DKO MEFs (Figure 4C). Staurosporine-induced apoptotic cell death requires mitochondrial Bax or Bak for cell death, and the fact that the lysosomal targeted Bax did not restore killing with this treatment indicates that the fusion protein successful targeted Bax to the lysosome but not the mitochondria. Together these data strongly support a mitochondrial-independent, lysosome-dependent role for Bax and Bak as a requisite mechanism underlying autophagic cell death.
 
-## Lysosomal permeabilization restores autophagic cell death in Bax/Bak1 DKO MEFs
+### Lysosomal permeabilization restores autophagic cell death in Bax/Bak1 DKO MEFs
 
 To further investigate the mechanistic basis for Bax/Bak-mediated autophagic cell death through lysosomal permeability we employed the lysosomotropic detergent O-methyl-serine dodecylamide hydrochloride (MSDH) that induces lysosomal membrane destabilization (Li et al., 2000). Serum-starved DKO MEFs loaded with LysoTracker red were shown to be resistant to loss of lysosomal permeability and loss of red fluorescence over 40 min of vehicle treatment, while addition of MSDH induced permeability and loss of fluorescence (Figure 5A). More importantly, restoration of LMP by MSDH treatment now rendered the DKO MEFs susceptible to serum starvation-induced autophagic cell death (Figure 5B,C). More specifically, pre-starvation for 24 hr in DKO MEFs followed by MSDH treatment for 12 hr restored killing yet MSDH alone had no effect in serum-replete medium (Figure 5B). In addition, simultaneous treatment with serum starvation and MSDH over 24 hr restored killing in DKO MEFs (Figure 5C). Upon ultrastructural analysis by transmission EM, lysosomal morphology in the starved DKO MEFs treated with MSDH was reminiscent of lysosomes from serum-starved WT MEFs (Figure 5D, arrows show large lysosomes/autolysosomes). Collectively these results suggest that autophagic cell death requires Bax or Bak to induce lysosomal membrane permeability in a process that is independent of the previously recognized apoptotic and regulated necrotic modes of action for these effectors at the level of the mitochondria.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/30543/elife-30543-fig5-v3.jpg)
 
-**Figure 5.:** Bax/Bak1 DKO MEFs.(A) A time course of confocal images of DKO MEFs that were serum starved for 24 hr and then loaded with LysoTracker red, treated with or without 30 µM MSDH for the indicated times. Scale bars = 10 μm. (B) DKO MEFs with 24 hr serum starvation or control were treated with 30 µM MSDH and cell death was measured by loss of plasma membrane integrity 12 hr later. (C) Time course of serum-starved DKO MEFs treated with or without 30 µM MSDH for the indicated times. Cell death was measured as in panel ‘B’. (D) Transmission EM images (magnification = 30,000 x) of 24 hr serum-starved DKO MEFs treated with or without 30 µM MSDH for 4 hr. Scale bars = 5 μm. All assays are an average or are representative of three independent experiments. The error bars represent the standard error of the mean. *p<0.05 vs untreated or time 0 with students t-test.
+**Figure 5.:** (A) A time course of confocal images of DKO MEFs that were serum starved for 24 hr and then loaded with LysoTracker red, treated with or without 30 µM MSDH for the indicated times. Scale bars = 10 μm. (B) DKO MEFs with 24 hr serum starvation or control were treated with 30 µM MSDH and cell death was measured by loss of plasma membrane integrity 12 hr later. (C) Time course of serum-starved DKO MEFs treated with or without 30 µM MSDH for the indicated times. Cell death was measured as in panel ‘B’. (D) Transmission EM images (magnification = 30,000 x) of 24 hr serum-starved DKO MEFs treated with or without 30 µM MSDH for 4 hr. Scale bars = 5 μm. All assays are an average or are representative of three independent experiments. The error bars represent the standard error of the mean. *p<0.05 vs untreated or time 0 with students t-test.
 
 ## Discussion
 
@@ -81,28 +97,304 @@ Our results collectively place Bax and Bak at the nodal intersection between all
 
 ## Materials and methods
 
-## Tissue culture, cell lines, treatments, and analysis of cell death
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Mus Musculus)</td>
+      <td>Bak1</td>
+      <td>N/A</td>
+      <td>ID: 12018</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>gene (Mus Musculus)</td>
+      <td>Bax</td>
+      <td>N/A</td>
+      <td>ID: 12028</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (Mus Musculus)</td>
+      <td>Wild Type SV40 Mouse Embryonic Fibroblasts; WT MEFs</td>
+      <td>PMID: 11326099</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (Mus Musculus)</td>
+      <td>Bax Bak1 double knockout SV40Mouse Embryonic Fibroblasts; DKO MEFs</td>
+      <td>PMID: 11326099</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (Mus Musculus)</td>
+      <td>DKO MEFs stably reconstitutied with wild type Bax; DKO-WT-Bax</td>
+      <td>PMID: 21255726</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (Mus Musculus)</td>
+      <td>DKO MEFs stably reconstitutied with 92-94A mutant Bax; DKO-92-94A-Bax</td>
+      <td>PMID: 21255726</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>cell line (Mus Musculus)</td>
+      <td>DKO MEFs stably reconstitutied with 63-65A mutant Bax; DKO-63-65A-Bax</td>
+      <td>PMID: 21255726</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Bax6A7</td>
+      <td>Thermo Fisher Scinentific</td>
+      <td>MA5-14003</td>
+      <td>1 to 100</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>TOM20</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-11415</td>
+      <td>1 to 100</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Lamp-1</td>
+      <td>DSHB-University of Iowa</td>
+      <td>1D4B</td>
+      <td>1 to 200 and 1 to 1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Bax</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>sc-493</td>
+      <td>1 to 300</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Bak</td>
+      <td>Millipore</td>
+      <td>06–536</td>
+      <td>1 to 1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>LC3I/II</td>
+      <td>Abcam</td>
+      <td>ab58610</td>
+      <td>1 to 500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Bcl-2</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>sc-7382</td>
+      <td>1 to 300</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Lamp1</td>
+      <td>Abcam</td>
+      <td>ab24170</td>
+      <td>1 to 500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Cathepsin D</td>
+      <td>Novus</td>
+      <td>AF1029</td>
+      <td>1 to 800</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>GAPDH</td>
+      <td>Fitzgerald</td>
+      <td>10R-G109A</td>
+      <td>1 to 25,000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Total OXPHOS Rodent WB Antibody Cocktail</td>
+      <td>Abcam</td>
+      <td>ab110413</td>
+      <td>1 to 10,000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>αTubulin</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>sc-8035</td>
+      <td>1 to 250</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Lysosomal targeted Bax; Lyso-Bax</td>
+      <td>Bio Basic</td>
+      <td>N/A</td>
+      <td>special order</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>MiniSOG-Bax</td>
+      <td>Bio Basic</td>
+      <td>N/A</td>
+      <td>special order</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Lysosome Isolation Kit</td>
+      <td>Sigma</td>
+      <td>LYSISO1 Sigma</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>intracellular pH detection kit</td>
+      <td>Invitrogen</td>
+      <td>P35379</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Muse Count and Viability assay</td>
+      <td>EMD Millipore</td>
+      <td>MCH100102</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>ABT-737</td>
+      <td>Selleck Chemicals</td>
+      <td>S1002</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Gossypol</td>
+      <td>Tocris</td>
+      <td>1964</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>caspase inhibitor zVAD-fmk</td>
+      <td>Promega</td>
+      <td>G7232</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>(S)-O-methyl-serine dodecylamide hydrochloride; MSDH</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850546</td>
+      <td>30 μM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>staurosporine</td>
+      <td>Sigma-Aldrich</td>
+      <td>S6942</td>
+      <td>200 nM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>LysoTracker Red DND-99</td>
+      <td>ThermoFisher Scientific</td>
+      <td>L7528</td>
+      <td>50 nM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Rhodamine-123</td>
+      <td>ThermoFisher Scientific</td>
+      <td>R-302</td>
+      <td>25 μM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>pHrodo Red AM Intracellular pH Indicator</td>
+      <td>ThermoFisher Scientific</td>
+      <td>P35372</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>ThermoFisher Scientific</td>
+      <td>88666</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Excel 2013</td>
+      <td>Microsoft Office</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Power Point 2013</td>
+      <td>Microsoft Office</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tissue culture, cell lines, treatments, and analysis of cell death
 
 All MEFs were cultured in IMDM medium (ThermoFisher Scientific, Waltham, MA. SH3022801) supplemented with 10% bovine growth serum (BGS, Fisher Scientific, SH3054103) and in the presence of penicillin-streptomycin (ThermoFisher Scientific, 30–002 CI), and nonessential amino acids (Invitrogen, Carlsbad CA. 11140–050). DKO MEFs stably expressing WT Bax or Bak or mutant Bax were previously described (Hoppins et al., 2011; Kim et al., 2009). At 80% confluency cells were subjected to serum starvation or amino acid depletion by replacing the 10% BGS-IMDM with 0% BGS-IMDM with the same supplements or replacing the media with DMEM lacking L-Arginine, L-Glutamine, and L-Lysine (Fisher Scientific, A1443101) supplemented with only penicillin-streptomycin. Before media was replaced, the cells were thoroughly washed three times with phosphate buffered saline (PBS). In addition to starvation a portion of cells were treated with 20 μM ABT-737 (Selleck Chemicals, Houston, TX. S1002), 10 μM Gossypol (Tocris, Bristol, United Kingdom. 1964), 20 μM caspase inhibitor zVAD-fmk (Promega, Madison, WI. G7232), or with 30 μM (S)-O-methyl-serine dodecylamide hydrochloride MSDH (Avanti Polar Lipids, Alabaster, AL.850546). As a positive control for apoptotic cell death MEFs were also treated with 200 nM staurosporine (Sigma-Aldrich, St Louis, MO. S6942) for 24 hr. A portion of MEFs were also infected with a previously described adenovirus for LC3-GFP (Matsui et al., 2007), a Lyso-Bax DOX inducible adenovirus, or mini SOG-Bax adenovirus. Cell death was determined by the Muse Count and Viability assay (EMD Millipore, Burlington, MA. MCH100102). Briefly, cells were trypsinized and washed twice and incubated with Muse Count and Viability reagent. The Muse Count and Viability Reagent is a two dye system where one dye labels all cells dead or alive while the other only labels dead cells due to loss of plasma membrane integrity. The cells were then quantified on a Muse cell analyzer (EMD Millipore) at 5000 counts per sample. All cell lines used were authenticated by western blot analysis for the proposed recombinant constructs by western blotting, or MEFs were confirmed to be absent of Bax/Bak1 by western blotting, as well as blotting for the oligomerization dead mutants of Bax as authentication. No mycoplasma contamination was observed.
 
-## Generation of adenoviral constructs
+### Generation of adenoviral constructs
 
 Lysosomal Bax (Lyso-Bax) was commercially generated (Bio Basic) by adding the lysosomal targeting sequence of Lamp1, GYQTI (ggc tat cag acc atc), to the C-terminal end of a full length Bax cDNA prior to the stop codon. The construct was then cloned into the Adeno-X Tet-On 3G Vector (Clontech, Moutnain View, CA. 631180) to produce purified adenovirus. The mini SOG-Bax construct was commercially generated (Bio Basic) by adding the mini SOG tag (Shu et al., 2011b) to the N-terminus of the full-length Bax cDNA minus the start codon. The construct was then cloned into the pShuttle-CMV vector to produce purified adenovirus.
 
-## Electron and confocal microscopy
+### Electron and confocal microscopy
 
 Electron microscopy was performed on fed and serum-starved WT and DKO MEFs. Prior to fixation, some cells were subjected to 1–4 days of serum starvation and/or treated with 30 μM MSDH for 4 hr. Samples were then fixed in glutaraldehyde and cacodylate, embedded in epoxy resin, sectioned, and counterstained with uranyl acetate and lead citrate. The sample preparation for mini-singlet oxygen generator (SOG) imaging by EM was a modified version of the protocol originally described by the Tsien lab (Shu et al., 2011b). Briefly, DKO MEFs were fixed with 1% glutaraldehyde in a 0.1 M phosphate buffer made with Na2HPO4 dibasic anhydrous (1.15 g/100 ml), pH 7.4, for 30–60 min on ice, then rinsed several times with 0.1 M phosphate buffer, pH 7.4. MEFs were then blocked with a buffer containing 50 mM glycine, 10 mM KCN, and 5 mM aminotriazole for 30 min on ice. Blocking buffer was then removed and replaced with 1 mg/mL 3,3′ diaminobenzidine (DAB) in 0.1 M phosphate buffer and incubated on ice for 15 min. Photooxidation was performed with a FITC filter set under illumination from a SOLA Light Engine (Lumencor, Beaverton, OR.) for 4 min with pure oxygen flow directly onto the cells until a light brown precipitate appeared. Cells were then washed with ice cold 0.1 M phosphate buffer for 2 min, five times. Cells were post-fixed with 1% OsO4 in 0.1 M phosphate buffer for 30 min on ice, washed two times withice cold 0.1 M phosphate buffer, and one time with distilled water. Cells were then stained with 2% aqueous uranyl acetate for 1 hr to overnight, before dehydration through an ethanol series (20%, 50%, 70%, 90%, 100%, 100%) for 2 min each, before a final rinse in anhydrous ethanol, followed by infiltration into a 1:1 ratio of epon and anhydrous ethanol for 30 min, then in 100% epon twice for 1 hr each, then into fresh resin and vacuum polymerized.
 
 Live cell fluorescent microscopy was performed on WT and DKO MEFs. MEFs were plated on 14 mm glass bottom dishes (MatTek Corporation, Ashland, MA. p35G-0–10 C). At 80% confluency MEFs were subjected to serum starvation for the indicated time points. Prior to imaging, cells were loaded with LysoTracker red DND-99 (ThermoFisher Scientific, L7528) and/or Rhodamine-123 (ThermoFisher Scientific, R-302). 50 nM LysoTraker red and/or 25 μM Rhodamine-123, the latter of which was imaged with green channel settings, was added to the cells for 10 min followed by two washes with Hank's Balanced Salt Solution (HBSS) and then fresh media, minus the phenol red, either containing 10% or 0% BGS, was added. For the immunocytochemistry experiments, cells were plated on 2–well glass chamber slides and treated with the indicated treatment. Following treatment the cells were fixed in 4% PFA at room temperature for 20 min. Cells were then incubated in blocking buffer (5% goat serum, 2% BSA, and 0.1% Triton X-100 in PBS) for 20 min followed by overnight primary antibody incubation at 4°C. The cells were then washed 3 times with PBS and incubated at room temperature for 2 hr with the appropriate secondary antibodies. Cell images were obtained using an inverted Nikon A1R confocal microscope. The following antibodies were used: Bax6A7 (Thermo Fisher Scinentific, MA5-14003, 1:100), TOM20 (Santa Cruz Biotechnology, Santa Cruz, CA. sc-11415, 1:100), and Lamp-1 (DSHB-University of Iowa, Iowa City, IA. 1D4B, 1:100).
 
-## Determination of intracellular pH
+### Determination of intracellular pH
 
 Intracellular pH was quantified in WT and DKO MEFs with and without serum starvation using the intracellular pH detection kit (Invitrogen, P35379) according to the manufacturer’s instructions. Briefly, MEFs were plated on 96-well dishes under normal conditions and the next day they were given fresh media with or without 10% BGS. 24 hr later, cells were washed with HBSS, loaded with pHrodo Red AM Intracellular pH Indicator (Thermo Fisher Scientific, P35372) in HBSS, then washed two times with HBSS and incubated at 37°C for 15 min and then read on a plate reader (BioTek, Winooski, VA.) with excitation at 560 nm and emission detection at 580 nm. The intracellular pH calibration buffer kit was used to by performing the assay as above with pH 4.5, 5.5, 6.5, or 7.5 calibration buffers to generate a standard curve of pHrodo Red fluorescence versus pH.
 
-## Lysosomal fractionation and western blotting
+### Lysosomal fractionation and western blotting
 
 Lysosomal fractionation was performed using the Lysosome Isolation Kit (Sigma, LYSISO1). Briefly, WT MEFs were plated on six large bioassay dishes (ThermoFisher Scientific, 166508). Half of the plates were subjected to serum starvation for 24 hr. Cells were then washed, trypsinized and pelleted. Following an additional wash, cells were suspended in extraction buffer and subjected to Dounce homogenization (Pestle B) followed by centrifugation (1000 x g for 10 min). The supernatant was collected and then centrifuged at 20,000 x g for 20 min, which generated a pelleted crude lysosomal fraction, from which an aliquot of both the pellet and supernatant was collected for western blot analysis. The remaining crude lysosomal fraction was placed on an Optiprep step gradient and ultra-centrifuged at 150,000 x g for 4 hr. The lysosomal fractions werecollected and treated with 8 mM CaCl2 for 15 min to further purify the lysosomes from the remaining mitochondria or ER. Finally the samples were centrifuged at 5000 x g for 15 min and both the pellet and supernatant (purest lysosomal fraction) were collected for western blot analysis. Protease inhibitor cocktail (Thermo Fisher Scientific, 88666) was added to all samples. The MEFs and collected lysosomal pellets were homogenized in RadioImmunoPrecipitation Assay (RIPA) buffer containing protease inhibitor cocktails. After protein concentration was determined, SDS sample buffer was added to all samples and western blots were performed. For the Bak oligomerization assay WT MEFs were serum-starved for 48 hr or treated with 200 nM staurosporine and 20 μM zVAD-FMK for 24 hr, or left untreated and then homogenized in tris-buffered saline containing 1% n-Dodecyl-β-D-Maltoside and 1% digitonin. After the protein concentration was assessed NativePAGE sample buffer was added and a Western blot was performed. The following antibodies were used: Bax (Santa Cruz Biotechnologies, sc-493, 1:300), Bak (Millipore, Burlington, MA. 06–536, 1:1000), LC3I/II (Abcam, Cambridge, UK. ab58610, 1:500), Bcl-2 (Santa Cruz Biotechnologies, sc-7382, 1:300), Lamp1 (Abcam, ab24170, 1:500), Lamp-1 (DSHB-University of Iowa, 1D4B, 1:1000), Cathepsin D (Novus, Uppsala, Sweden. AF1029, 1:800), GAPDH (Fitzgerald, Acton, MA. 10R-G109A, 1:25,000), Total OXPHOS Rodent WB Antibody Cocktail (Abcam, ab110413, 1:10,000) αtubulin (Santa Cruz Biotechnologies, sc-8035, 1:250).
 
-## Statistics
+### Statistics
 
 All results are presented as the mean ± SEM and all data were normally distributed. The statistical analysis performed was an unpaired two-tailed Student’s t test using Excel 2013 and values were considered statistically significant when p<0.05. No statistical analysis was used to predetermine sample size. The sample number of biological replicates for each experiment is indicated in the figure legends and no outlier data were excluded. The experiments were not generally blinded except for the data acquisition for the following figures: Figure 1D, Figure 3A, and Figure 5D (which were blinded).

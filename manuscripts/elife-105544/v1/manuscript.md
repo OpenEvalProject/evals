@@ -12,7 +12,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05cy4wa09 Genomic Surveillance Unit, Wellcome Sanger Institute Hinxton United Kingdom
+1. Genomic Surveillance Unit, Wellcome Sanger Institute Hinxton United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))
 
 † Corresponding author
 
@@ -28,7 +28,7 @@ Given their critical role in malaria treatment, preventing resistance to ACTs re
 
 After emerging on the Thai-Cambodia border in 2008, ART-R then spread across the Greater Mekong Subregion into Myanmar, Vietnam, and Laos throughout the early 2010s (Ashley et al., 2014; Tun et al., 2015). As with resistance to previous antimalarials chloroquine and sulfadoxine–pyrimethamine (Roux et al., 2021; Mita et al., 2009), Southeast Asia had become the initial hotspot for artemisinin resistance. With those drugs, resistant parasites then spread westwards to East Africa, before dispersing widely across the continent and causing a major public health crisis with effects still felt decades later (Trape, 2001; Murray et al., 2012). Now, a major concern is whether ART-R will follow the same trajectory. As Africa carries 94% of the global malaria burden, with over 233 million cases annually, if a decline in artemisinin efficacy caused widespread ACT failure, the consequences could be catastrophic (Dhorda et al., 2024; Duffey et al., 2021; World Health Organization, 2023). Alarmingly, reports of reduced therapeutic efficacy have been increasing in East and Northeast Africa since 2019 (Balikagala et al., 2021; Assefa et al., 2024; Conrad et al., 2023; Uwimana et al., 2020). Although ACTs remain largely effective, several countries have reported efficacies below 90%, including Angola, the DRC, Burkina Faso, Uganda, and Tanzania (Ishengoma et al., 2024; Moriarty et al., 2021; Dimbu et al., 2021; Ebong et al., 2021; Gansané et al., 2021). Monitoring and preventing the spread of ART-R is therefore a major global health priority.
 
-## Monitoring ART-R
+### Monitoring ART-R
 
 ART-R can be monitored using several methods, each of which has their own costs and benefits (Nsanzabana et al., 2018). These can include therapeutic efficacy studies (TES), randomised clinical trials which assess treatment outcomes for ACTs in patients over several weeks and provide crucial evidence for shaping antimalarial policies (Nsanzabana et al., 2018; World Health Organization, 2009). Notably, TES assesses the efficacy of both artemisinin derivatives and their partner drugs, with parasite clearance half-life serving as a specific measure for ART-R (Rosenthal, 2021). Surveillance of ART-R can also involve in vitro assays to test for phenotypic resistance, by exposing parasites to varying concentrations of antimalarials to assess their susceptibility (World Health Organization, 2009). Alongside these methods, genomic surveillance has emerged as a key strategy for monitoring ART-R.
 
@@ -42,33 +42,39 @@ In this review, we offer a global perspective on the emergence, spread, and pote
 
 We compiled a global dataset of publicly available kelch13 mutation data for 112,933 samples collected between 1980 and 2023, from 73 countries (see Methods). These data and metadata were compiled from three sources: the MalariaGEN Pf7 release (Abdel Hamid et al., 2023), the Worldwide Antimalarial Resistance Network (WWARN) Artemisinin Resistance Molecular Surveyor, and a literature search. Mutations were annotated based on their artemisinin resistance status using the most recent WHO guidelines: either ‘validated’, ‘candidate’, or ‘no status’ (Supplementary file 1). Parasites with the 3D7 reference kelch13 sequence or the A578S mutation were classified as artemisinin-susceptible (World Health Organization, 2022b). Throughout this work, we refer to all BTB/POZ and propeller mutations (codons 349–726) as ‘propeller mutations’. Samples from each country were assigned to one of thirteen broader populations, allowing us to assess trends at continental scales (see Methods). These populations included: South America, West Africa, Central Africa, North Africa, Northeast Africa, East Africa, Southern Africa, Western Asia, Eastern South Asia, Far-Eastern South Asia, Western Southeast Asia, Eastern Southeast Asia, and Oceania.
 
-## Global geographic overview
+### Global geographic overview
 
 Across the samples, we observed 492 unique, non-synonymous mutations in the BTB/POZ and propeller domains of kelch13 (Supp. Dataset S2). Most samples had the 3D7 reference sequence (85.5%, n=96,574), with the most common mutation being the WHO validated marker C580Y (6.5%, n=7,307). The other most common mutations were all WHO validated/candidate markers: F446I (1.5%), R561H (0.7%), P441L (0.7%), and R539T (0.4%). Southeast Asia had the highest proportion of samples with a kelch13 propeller mutation (Figure 1A). For example, over half of samples from Eastern Southeast Asia (52%) had a kelch13 propeller mutation, with over 98% of these having a WHO validated/candidate marker. Similarly, in Western Southeast Asia, 35% of samples had a kelch13 propeller domain mutation, with 94% of these having a WHO validated/candidate mutation (Figure 1A). These populations also showed the highest diversity of WHO validated/candidate markers relative to unique kelch13 propeller mutations (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig1-v1.jpg)
 
-**Figure 1.:** kelch13 propeller mutations over time.Panel A shows the distribution of kelch13 mutations globally for samples collected between 1980 and 2023. Countries from which samples were included are coloured according to their geographic population assignment. All populations are labelled with a fraction, denoting the number of samples with any kelch13 propeller mutation (excluding A578S, which is known to be artemisinin susceptible) over the total number of samples from each population. No WHO mutations were detected in the North African samples. For each population, pie charts show the proportion of samples with a WHO validated/candidate mutation in red, the proportion of any other propeller domain mutation in blue, and the proportion of samples with a 3D7 reference kelch13 sequence or A578S mutation in white. Proportions of each category at 25% or more are labelled. Panel B shows the number of unique kelch13 propeller domain markers for each population against their total number of unique WHO validated/candidate mutations. Populations are labelled with their ratio of WHO validated/candidate markers to the total number of unique propeller domain markers. Populations falling in the blue shaded area have fewer WHO validated/candidate markers relative to their total count of kelch13 mutations than populations falling in red areas. The upper plot of panel C shows the total number of samples over time. Grey areas denote years with fewer than 25 samples. The bottom panel shows the proportion of samples from each population for each year, with years with no samples coloured white. Note the limited number of samples from Southeast Asia after 2019, which coincided with an increased proportion of resistant samples in East and Northeast Africa. Panel D illustrates a schematic representation of the kelch13 protein (residues 1–726), with functional domains—including N-terminal, coiled-coil, BTB/POZ, and six-blade kelch13 repeat propeller (KREP) domains—annotated using InterProScan (version 5.73). WHO-validated (green) and candidate markers (blue) are mapped to their respective amino acid positions.Figure 1—source data 1.kelch13 genotypes and sample metadata for 112,933 Plasmodium falciparum isolates.
+**Figure 1.:** Panel A shows the distribution of kelch13 mutations globally for samples collected between 1980 and 2023. Countries from which samples were included are coloured according to their geographic population assignment. All populations are labelled with a fraction, denoting the number of samples with any kelch13 propeller mutation (excluding A578S, which is known to be artemisinin susceptible) over the total number of samples from each population. No WHO mutations were detected in the North African samples. For each population, pie charts show the proportion of samples with a WHO validated/candidate mutation in red, the proportion of any other propeller domain mutation in blue, and the proportion of samples with a 3D7 reference kelch13 sequence or A578S mutation in white. Proportions of each category at 25% or more are labelled. Panel B shows the number of unique kelch13 propeller domain markers for each population against their total number of unique WHO validated/candidate mutations. Populations are labelled with their ratio of WHO validated/candidate markers to the total number of unique propeller domain markers. Populations falling in the blue shaded area have fewer WHO validated/candidate markers relative to their total count of kelch13 mutations than populations falling in red areas. The upper plot of panel C shows the total number of samples over time. Grey areas denote years with fewer than 25 samples. The bottom panel shows the proportion of samples from each population for each year, with years with no samples coloured white. Note the limited number of samples from Southeast Asia after 2019, which coincided with an increased proportion of resistant samples in East and Northeast Africa. Panel D illustrates a schematic representation of the kelch13 protein (residues 1–726), with functional domains—including N-terminal, coiled-coil, BTB/POZ, and six-blade kelch13 repeat propeller (KREP) domains—annotated using InterProScan (version 5.73). WHO-validated (green) and candidate markers (blue) are mapped to their respective amino acid positions.
 
 The East and Northeast African populations had an increased frequency of WHO validated/candidate markers (Figure 1A). For example, 10% of Northeast African samples had a kelch13 propeller mutation, ~80% of which were WHO validated/candidate markers. Similarly, in East Africa, 4% of samples had a kelch13 propeller mutation, and ~25% of these were WHO validated/candidate markers for ART-R (Supplementary file 3). The East and Northeast regions of Africa also had a high number of WHO validated/candidate mutations relative to unique kelch13 propeller mutations (Figure 1B, Supplementary file 3). In contrast, the proportion of mutant samples was low in other areas of Africa (Figure 1A). In West and Central Africa, for example, mutant samples made up just 2% of the total samples, and this was even lower in Southern Africa (~1%). Similarly, the proportion of samples with a WHO validated/candidate mutation in West, Central, and Southern Africa was also low, typically below 0.13% (Supplementary file 3). Even though West Africa was the largest study population and had the largest number of unique kelch13 propeller mutations (n=185), only five unique WHO validated/candidate mutations were observed there (Supplementary file 3). Together with lower overall frequencies of WHO mutations, this may imply that there is weaker selective pressure for WHO validated/candidate mutations in West Africa.
 
 Other global populations had low frequencies of kelch13 mutations and low mutational diversity (Figure 1A). For example, only 0.45% of South American samples had a kelch13 propeller mutation, and only three unique mutations were reported in the region (Supplementary file 3). One of these was a WHO validated/candidate mutation (C580Y), which was found in 0.41% of all South American samples (Supplementary file 3). Similarly, in Western Asia (the second smallest population), only 0.64% of samples had mutations, none of which had WHO validated/candidate status (Figure 1A). In Eastern South Asia, 3% of all samples had a kelch13 propeller mutation. In this region, only 13 unique mutations were observed, four of which were WHO validated/candidate mutations, accounting for 0.54% of samples (Figure 1A). In Far-Eastern South Asia, levels of kelch13 mutation diversity were also very low. Only 0.52% of samples had a kelch13 propeller mutation, and no WHO validated/candidate mutations were recorded. In Oceania, ~2% of all samples had a mutation in the kelch13 propeller domain (Figure 1A). While 24 unique kelch13 propeller mutations were observed in Oceania, only one had WHO validated/candidate status (Figure 1A). For a complete list of mutation metrics in all populations, see (Supplementary file 3).
 
-## Global temporal overview
+### Global temporal overview
 
 The first documented kelch13 propeller domain mutation observed in the dataset was from 1991, with the first WHO validated/candidate mutation identified in Thailand in 1997 (R359T). No other ART-R markers were detected before 2000, likely due to limited sampling of kelch13 propeller mutations pre-2000, with an average of just 138 samples per year (Supplementary file 4). After 2000, sample numbers increased, reaching up to 17,980 in 2014, coinciding with an increase in global ACT use (Figure 1C, Supplementary file 4). The total number of unique kelch13 mutations and validated/candidate mutations also both rose throughout the 2000s (Figure 2—figure supplement 1). By the time ACTs were introduced as first-line treatments in 2006, over half of the currently known WHO validated/candidate mutations had been observed, predominantly in Southeast Asia (Figure 2). By this time, artemisinin derivatives were already widely used in the region, likely creating an evolutionary pressure for these mutations to emerge and spread (see Section ‘Southeast Asia’). As of the most recent observed years, ART-R-associated mutations have reached high frequency throughout Southeast Asia (Figures 3 and 4).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig2-v1.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Global overview of unique mutations (B) Unique mutations over time split by population. Darker hue = WHO-validated/candidate mutations, lighter hue = other propeller domain mutations. Bars represent stacked mutation counts. North Africa is not shown as no mutations were reported there.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig3-v1.jpg)
 
-**Figure 3.:** kelch13 mutations over time from 2000 to 2024 for ten populations, with African populations in the left-hand column.Years with fewer than 25 samples are shaded in grey with white stripes. Three populations (North Africa, Western Asia, Far-Eastern South Asia) are not displayed due to lack of data. Several of the most common WHO validated/candidate markers are highlighted. Other WHO validated/candidate markers are denoted by ‘Other WHO-V/C’. Mutations in the kelch13 BTB/POZ or propeller domain without validated/candidate status are categorised as ‘Other’. The 3D7 reference kelch13 sequence and the A578S mutation are known to not confer ART-R, so are categorised together as ‘Susceptible’. The high percentage of ‘Other’ mutations in East Africa in 2000 is due to our aggregation of samples from 1996 to 2003 to the median year of 2000 from a single study by de Laurent et al., 2018. Similarly, the percentages of ‘Other’ mutations in West Africa (2005) and Central Africa (2007) result from single studies (Ouattara et al., 2015; Taylor et al., 2015) where multiple different mutations were identified.
+**Figure 3.:** Years with fewer than 25 samples are shaded in grey with white stripes. Three populations (North Africa, Western Asia, Far-Eastern South Asia) are not displayed due to lack of data. Several of the most common WHO validated/candidate markers are highlighted. Other WHO validated/candidate markers are denoted by ‘Other WHO-V/C’. Mutations in the kelch13 BTB/POZ or propeller domain without validated/candidate status are categorised as ‘Other’. The 3D7 reference kelch13 sequence and the A578S mutation are known to not confer ART-R, so are categorised together as ‘Susceptible’. The high percentage of ‘Other’ mutations in East Africa in 2000 is due to our aggregation of samples from 1996 to 2003 to the median year of 2000 from a single study by de Laurent et al., 2018. Similarly, the percentages of ‘Other’ mutations in West Africa (2005) and Central Africa (2007) result from single studies (Ouattara et al., 2015; Taylor et al., 2015) where multiple different mutations were identified.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig4-v1.jpg)
 
-**Figure 4.:** kelch13 mutation (red) or other kelch13 mutation in the BTB/POZ or propeller domain (blue).Bars show the weighted average percentage of samples from the three most recent observed years with at least 25 samples. Averages were weighted by the total number of samples observed between the years. Date ranges show the range of years for the three most recent years, with at least 25 samples each. Countries with fewer than 3 years with at least 25 samples are marked with an asterisk.
+**Figure 4.:** Bars show the weighted average percentage of samples from the three most recent observed years with at least 25 samples. Averages were weighted by the total number of samples observed between the years. Date ranges show the range of years for the three most recent years, with at least 25 samples each. Countries with fewer than 3 years with at least 25 samples are marked with an asterisk.
 
 In contrast, ART-R mutations were uncommon in Africa before 2010, with only three unique WHO mutations observed in just two samples each (Figure 2). Several WHO validated/candidate markers then increased in frequency in East and Northeast Africa after 2018 (Figures 3 and 4). For example, seven unique mutations increased in prevalence in Northeast Africa after 2020 (Figure 3), with the WHO-validated mutations A675V and C469Y increasing in frequency between 2020–2022 (from 4.7% to 9.4% and 6.9% to 9%, respectively). Another mutation, C469F, almost tripled in frequency, although overall frequency remained low, increasing from 0.9% in 2020 to 2.5% by 2022. Three WHO validated/candidate mutations were detected in East Africa in 2023: C469F (2.8%), A675V (5.6%), and R561H (declined from 22.5% in 2021 to 8.9% in 2023). In Central Africa, validated/candidate markers P441L, R561H, and C469Y were each detected in single years, although all occurred in fewer than 0.5% of samples. These data support the growing concern that ART-R has begun to emerge in Africa (see Section ‘East and Northeast Africa’).
 
-## Data limitations
+### Data limitations
 
 While aggregating such a large dataset allowed us to identify trends in the spread of kelch13 mutations, it also highlighted biases in the available data. For example, sampling has consistently declined in the past decade (Figure 1C). Between 2020 and 2023, the average number of samples was just 1,513–a tenfold decrease compared to 2014 (Figure 1C, Supplementary file 4). Strikingly, there were no data from Southeast Asia in our dataset after 2019, despite the high proportion of mutant samples and variety of kelch13 mutations in the region before this time. Therefore, trends in ART-R described in this decade are most relevant to Africa. A similar decrease occurred in Southeast Asian samples between 2014 and 2019, although sampling continued. This drop in sample sizes may be explained by a lag in publication of samples after 2019, combined with difficulties in sample collection during the COVID-19 pandemic, although this does not explain the decrease before this time. According to the 2023 world malaria report, total funding of malaria control in 2022 was US$3.7 billion, below the estimated total required to meet global technical strategy targets for malaria control and elimination (World Health Organization, 2023). It is possible that this inadequate funding contributed to reduced sampling; however, more evidence would be needed to establish this.
 
@@ -82,17 +88,180 @@ Sampling biases can arise from various sources, including the variation in locat
 
 In the previous section, we highlighted how markers of ART-R have been found across the globe, but until recently, had been mostly localised in Southeast Asia. Concerningly, several WHO validated/candidate mutations have now emerged in parts of Africa, with potentially widespread consequences for human health. Here, we provide detailed case studies for Southeast Asia and East/Northeast Africa, focusing on how resistance-associated kelch13 markers emerged and spread, summarising their current frequencies, and highlighting key questions on their geographical distributions. We then discuss kelch13 substitutions observed in other regions, including West and Central Africa, South America, and Oceania.
 
-## Southeast Asia
+### Southeast Asia
 
-## How did kelch13 mutants initially emerge and spread in Southeast Asia?
+#### How did kelch13 mutants initially emerge and spread in Southeast Asia?
 
 Artemisinin combination therapies have been used extensively across Southeast Asia since the mid-1990s, where they were quickly adopted by national governments seeking alternatives to drugs such as chloroquine, which had developed widespread resistance. Thailand, for example, adopted ACTs in 1995, shortly followed by Cambodia in 2000, Myanmar in 2002 and Vietnam in 2003 (Hassett and Roepe, 2019; Satimai et al., 2012). While ART-R was only discovered in Southeast Asia in 2008, the proportion of samples with a validated/candidate mutation had in fact already been high by 2006 (Figure 5; Kagoro et al., 2022). ART-R associated kelch13 mutations then emerged independently across several locations in Southeast Asia, before a hard selective sweep drove a multidrug resistant co-lineage to dominance across the region (KEL1/PLA1, containing the C580Y kelch13 mutation) (Takala-Harrison et al., 2015; Imwong et al., 2017; Imwong et al., 2020; Amato et al., 2018; Hamilton et al., 2019). Analysis of genomic regions flanking the kelch13 gene suggested this migration occurred several times, with the C580Y mutation initially spreading eastward from Cambodia to Vietnam, and later, from Cambodia to Thailand and Laos around 2013–15 (Takala-Harrison et al., 2015; Imwong et al., 2017). Over the next 10–12 years, the C580Y mutation reached near-fixation frequencies in several of these countries (Figure 5). In contrast, in Myanmar, C580Y emerged and spread independently on a different parasite genetic background (Imwong et al., 2017). This pattern of identical kelch13 mutations arising independently, alongside migration events between countries, would become a repeated occurrence across Southeast Asia, with several of the most common kelch13 mutations spreading via both mechanisms (Takala-Harrison et al., 2015; Imwong et al., 2017; Imwong et al., 2020; Hamilton et al., 2019).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig5-v1.jpg)
+
+**Figure 5.:** Panel (A) shows the distribution of kelch13 propeller mutations across Southeast Asia. The percentage of samples with any kelch13 propeller mutation are included in the country labels, above the number of samples with any kelch13 propeller mutation and the total number of samples collected for each country, respectively. Among only the samples with any observed kelch13 propeller mutation, pie charts show the proportions with markers of interest, where proportions above 25% are labelled accordingly. ‘Other’ denotes low-frequency mutations in the propeller domain which are not WHO validated/candidate markers, aggregated into a single category. Samples with the 3D7 reference sequence for kelch13 or A578S are denoted as ‘Susceptible’ (World Health Organization, 2022b). Panel (B) shows all samples collected over time for each country as a stacked bar chart, where the proportion of samples with each marker is coloured. Years with fewer than 25 samples are highlighted with grey dashed lines.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The x-axis represents delayed clearance, while the y-axis represents treatment failure rates. Scattered data points are colour-coded by region. Red dashed lines indicate the 10% threshold established by the WHO for policy change.
+
 Genomic epidemiology played a critical role in identifying these patterns of emergence and migration in Southeast Asia. While it was initially thought there had been a single emergence of ART-R in the region, comparison of parasite genetic backgrounds revealed it had in fact emerged independently across several countries (Neafsey et al., 2021; Amato et al., 2018; Verity et al., 2020). This enabled policy makers to focus on slowing local resistance through improved surveillance and access to malaria prevention, rather than focusing solely on preventing parasite migration across borders (World Health Organization, 2015b; Manzoni et al., 2024). Data from these surveillance efforts then became a cornerstone for developing mitigation strategies in the region. One such strategy, the ‘WHO Strategy for Malaria Elimination in the Greater Mekong Subregion’ (2015–2030), leveraged this evidence to achieve significant reductions in overall malaria burden of 77% (World Health Organization, 2015b; Manzoni et al., 2024). This underscores the importance of accurate and consistent molecular surveillance data in formulating effective public health policies and interventions.
 
-## What is the current distribution and frequency of kelch13 mutations across Southeast Asia?
+#### What is the current distribution and frequency of kelch13 mutations across Southeast Asia?
 
 The proportion of samples with a WHO validated or candidate kelch13 substitution remained high as of 2019. Based on the latest data, between 37.9–75.8% of samples had a validated/candidate mutation in most Southeast Asian countries (Figure 5). For example, the proportion of samples with a WHO validated/candidate mutation in Vietnam (2019) and Thailand (2017) was 75.8% and 67.5%, respectively (Supplementary file 5). Similarly, in Cambodia, these frequencies fluctuated between 80% and –90% from 2016 to 2018. In 2019, 52.1% of Cambodian samples had a WHO validated/candidate mutation; however, data for this year were limited to three sites from a single study (Peto et al., 2022). Laos showed a slightly lower frequency of 37.9% (2018), although it exhibited significant year-to-year variability, with a peak of 89% in 2014 (based on 111 samples). In contrast, Myanmar showed both a lower frequency and slower increase in the proportion of samples with a kelch13 mutation between 2004 and 2019 (Supplementary file 5), although frequencies were still high as of the most recent year (51.5%). Between 1993 and 2019, there were 117 unique kelch13 mutations present across Southeast Asia, although only 22 of these were observed in more than 25 samples (Table 1). While the C580Y mutation, a WHO-validated marker, was initially only one of several markers to emerge, it later rose to high frequency in many countries, such as Thailand, Laos, Cambodia, and Vietnam.
+
+**Table 1.**
+ Most common kelch13 mutations across Southeast Asia, where mutations occur in at least 25 samples across the two populations (western and eastern Southeast Asia).Countries represented in this summary are Myanmar, China, Thailand, Cambodia, Laos, and Vietnam. Total refers to the total number of samples from these countries with each marker.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Marker</th>
+      <th>WHO status</th>
+      <th>Total</th>
+      <th>Proportion (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3D7 reference sequence</td>
+      <td>-</td>
+      <td>18,958</td>
+      <td>58.08</td>
+    </tr>
+    <tr>
+      <td>C580Y</td>
+      <td>validated</td>
+      <td>7,271</td>
+      <td>22.27</td>
+    </tr>
+    <tr>
+      <td>F446I</td>
+      <td>validated</td>
+      <td>1,644</td>
+      <td>5.04</td>
+    </tr>
+    <tr>
+      <td>P441L</td>
+      <td>candidate</td>
+      <td>672</td>
+      <td>2.06</td>
+    </tr>
+    <tr>
+      <td>R561H</td>
+      <td>validated</td>
+      <td>666</td>
+      <td>2.04</td>
+    </tr>
+    <tr>
+      <td>R539T</td>
+      <td>validated</td>
+      <td>478</td>
+      <td>1.46</td>
+    </tr>
+    <tr>
+      <td>Y493H</td>
+      <td>validated</td>
+      <td>437</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <td>I543T</td>
+      <td>validated</td>
+      <td>391</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <td>G449A</td>
+      <td>candidate</td>
+      <td>355</td>
+      <td>1.09</td>
+    </tr>
+    <tr>
+      <td>P574L</td>
+      <td>validated</td>
+      <td>292</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>P553L</td>
+      <td>validated</td>
+      <td>226</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>M476I</td>
+      <td>validated</td>
+      <td>173</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>N458Y</td>
+      <td>validated</td>
+      <td>140</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>G538V</td>
+      <td>candidate</td>
+      <td>126</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>A675V</td>
+      <td>validated</td>
+      <td>95</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>G533S</td>
+      <td>no status</td>
+      <td>86</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>N537I</td>
+      <td>candidate</td>
+      <td>49</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>A676D</td>
+      <td>no status</td>
+      <td>44</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>V568G</td>
+      <td>candidate</td>
+      <td>38</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>M562I</td>
+      <td>no status</td>
+      <td>35</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>T474I</td>
+      <td>no status</td>
+      <td>31</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>C469F</td>
+      <td>candidate</td>
+      <td>30</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>E461G</td>
+      <td>no status</td>
+      <td>27</td>
+      <td>0.08</td>
+    </tr>
+  </tbody>
+</table>
 
 As of 2019, C580Y remains dominant, with the majority of samples with any kelch13 mutation showing this marker. For instance, 83% of all samples from Cambodia with a kelch13 mutation had C580Y. A similar trend was observed in Thailand (54%) and Vietnam (65%). While other kelch13 substitutions were circulating in these countries, such as R539T and R561H, these were at much lower frequencies. Notably, Thailand showed a larger diversity of other markers than Cambodia, Vietnam, or Laos. This is most likely due to the malaria-free corridor which separates parasite populations in east and west Thailand. Eastern Thailand tends to have higher proportions of C580Y, while western Thailand more closely reflects the diversity in bordering Myanmar (Kobasa et al., 2018). In Myanmar, several unique kelch13 mutations were circulating at moderate frequencies in 2019, with no single substitution reaching fixation. C580Y is not the dominant mutation in Myanmar, where mutations such as F446I, R561H, and P441L have all continued circulating (Bonnington et al., 2017). This pattern of several circulating markers has remained consistent between 2004 and 2019, whereas countries such as Thailand and Laos saw C580Y overtake others during the same time period. In total, of the 22 most common kelch13 mutations, 8 of these were unique to Myanmar and China within Southeast Asia, including: E461G, A675V, M562I, F446I, A676D, G538V, R561H, P441L.
 
@@ -100,7 +269,7 @@ The high frequency of kelch13 mutations in Southeast Asia has translated into in
 
 These findings underscore the need for ongoing genomic surveillance to establish the composition and frequencies of circulating parasite populations in Southeast Asia. However, data from the region are limited by the lack of systematic, longitudinal sampling, without which it is difficult to properly estimate the frequencies of resistance (Mayor et al., 2023). For example, in our data, no information was available for Southeast Asian countries after 2019. Additionally, many countries showed considerable between-year variation in the proportion of samples with kelch13 mutations, which may be due to a disproportionately large number of samples from a single study or region and inconsistent sampling. One major challenge for surveillance is that it becomes more challenging to collect samples as overall numbers are driven down, as is the case in Southeast Asia. While systematic genomic surveillance is still key to interpreting the frequencies of kelch13 mutations, going forwards, additional strategies may also be required to account for lower case numbers. These could include enhanced collaborations and data sharing to pool data, and compensatory statistical techniques like time-aggregated sampling.
 
-## Did fitness costs affect the spread of kelch13 mutations across Southeast Asia?
+#### Did fitness costs affect the spread of kelch13 mutations across Southeast Asia?
 
 Experimental studies have assessed the fitness costs of kelch13 mutations using various methods, including growth and competition assays, as well as measurements of metabolic and transcriptional responses (see Box 1 for an overview). Although validated and candidate mutations have so far been described in this review as conferring a unified ‘resistant’ phenotype, in reality, individual mutations can differ in their effects on both parasite fitness and clearance rate, and these effects may vary further depending on the context in which the parasite is treated with artemisinin (Behrens et al., 2023; WWARN K13 Genotype-Phenotype Study Group, 2019).
 
@@ -110,33 +279,104 @@ Notably, individual kelch13 substitutions have been shown to not only have diffe
 
 As novel kelch13 mutations emerge and spread, understanding their fitness costs across different geographical regions and in relation to parasite genetic backgrounds may be crucial. This understanding will require assessing fitness costs through in vitro assays and integrating these findings with genomic surveillance to reveal broader patterns. Genomic surveillance may aid in generating models which can predict the spread of resistance given the frequency of certain genetic backgrounds. These patterns also highlight the advantages of whole genome sequencing over targeted amplicon sequencing, as this additional information can be used to inform models using the genetic background of resistant parasites.
 
-## East and Northeast Africa
+### East and Northeast Africa
 
-## How did kelch13 mutants initially emerge and spread in East and Northeast Africa?
+#### How did kelch13 mutants initially emerge and spread in East and Northeast Africa?
 
 ACTs have been used extensively across Africa, particularly after 2006 (Newton et al., 2006Supplementary files 6 and 7). By 2008, almost all African countries had implemented ACTs as the primary treatment for malaria, meaning the emergence and spread of ART-R in Southeast Asia around 2008 occurred in tandem with a growing reliance on ACTs in Africa (World Health Organization, 2009). This led to fears that similar mutations could not only arise in Africa, but would result in a wave of resistant parasites. In the last 5 years, those fears are beginning to be realised, with reports of WHO validated/candidate kelch13 mutations in several countries across East and Northeast Africa. This started with the identification of the R561H mutation in Rwanda in 2019. This mutation was shown to have been circulating in the region since 2013–2015, before increasing to ~13% in 2019, with demonstrated effects on parasite clearance rate (Uwimana et al., 2020; Uwimana et al., 2021). This was then mirrored by the dramatic increase in both A675V and C469Y mutations in Uganda between 2 015 and 2019, which were also associated with delayed parasite clearance (Balikagala et al., 2021). Given the extent of ACT use in Africa over the past two decades, it is unclear why ART-R has only emerged now, around 10–15 years behind Southeast Asia, although it is most likely due to the slower initial rollout of ACTs in Africa, combined with differences in case-by-case drug exposure (Hassett and Roepe, 2019). Other factors, such as higher immunity, intra-host competition, or differences in effective population sizes in Africa may have also slowed ART-R (see Section ‘Scenario 3: Lower frequency and slower spread of ART-R in Africa than Southeast Asia’).
 
 After detecting ART-R associated kelch13 mutations in Africa, an initial concern was that these mutations had been introduced via gene flow from Southeast Asian parasites, as was the case with resistance to chloroquine and sulfadoxine–pyrimethamine (Wellems and Plowe, 2001; Gregson and Plowe, 2005). However, evidence from genomic surveillance suggests that the kelch13 mutations observed so far in Africa have emerged independently. For example, ART-R parasites from Uganda are genetically more similar to African parasites than those from Southeast Asia, suggesting an independent African emergence (Ikeda et al., 2018). Similarly, analysis of kelch13 flanking microsatellites and genome-wide single-nucleotide polymorphisms suggests Ugandan parasites with C469F, C469Y, and A675V form a clade distinct from Southeast Asian parasites, implying a single evolutionary origin and clonal expansion within Africa (Conrad et al., 2023). A further example is A675V, C469Y, and R561H mutants from Uganda, Rwanda, and Tanzania, which have different kelch13 flanking haplotypes to parasites with these mutations from Southeast Asia, again pointing to a single evolutionary origin which arose independently in Africa (Balikagala et al., 2021; Uwimana et al., 2020; Ishengoma et al., 2024). Together, these analyses show clear evidence of independent emergence of kelch13 markers in Africa, suggesting local conditions are prompting the emergence and selection of ART-R. Nevertheless, ongoing genomic surveillance will be needed to identify migratory pathways between continents should they occur.
 
-## What is the current distribution and frequency of kelch13 mutations in East and Northeast Africa?
+#### What is the current distribution and frequency of kelch13 mutations in East and Northeast Africa?
 
 As of 2024, WHO validated/candidate mutations have been identified in several countries across East and Northeast Africa, including Uganda, Rwanda, Sudan, Eritrea, Tanzania, Kenya, and Ethiopia (Fola et al., 2023; Figure 6). Concerningly, the frequency of these mutations has increased dramatically since 2018, particularly in Uganda, Rwanda, Tanzania, and Eritrea. In 2022, 26% of samples from Uganda had a WHO validated/candidate mutation, an increase from ~1% in 2013. Similarly, 17% and 15% of samples from Rwanda and Eritrea had a WHO mutation in 2023 and 2019, respectively. Tanzania also had a high proportion of parasites with WHO mutations in 2021 (23%), increasing from ~0.1% to 0.2% between 2017 and 2019. However, Tanzanian samples from 2021 were all from close to the borders with Uganda and Rwanda, which have high levels of ART-R, suggesting a possible geographic sampling bias. Sudan showed a small proportion of parasites with a WHO mutation, reaching 2.2% in 2020. Similarly, Kenya, DRC, Zambia, and Mozambique each showed a small proportion of samples with a WHO mutation, although the total frequencies of samples with any propeller domain mutation in these countries remained ~4% or less. Concerningly, these trends are strikingly similar to those observed in Southeast Asia around 2008, where the initial emergence of validated/candidate mutations was followed by exponential increases in the frequency of resistant parasites over a decade.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig6-v1.jpg)
 
-**Figure 6.:** kelch13 propeller mutations in East and Northeast Africa.Panel (A) shows the distribution of kelch13 propeller mutations across East and Northeast Africa. The percentage of samples with any kelch13 propeller mutation is included in the country labels, above the number of samples with any kelch13 propeller mutation and the total number of samples collected for each country, respectively. Among only the samples with any observed kelch13 propeller mutation, pie charts show the proportions with markers of interest, where proportions above 25% are labelled accordingly. ‘Other’ denotes low-frequency mutations in the propeller domain which are not WHO validated/candidate markers, pooled into a single category. Samples with the 3D7 reference sequence for kelch13 or A578S are denoted as ‘Susceptible’ (World Health Organization, 2022b). Panel (B) shows all samples collected over time for each country as a stacked bar chart, where the proportion of samples with each marker is coloured. Years with fewer than 25 samples are highlighted with grey dashed lines. Notably, Uganda and Rwanda have shown a consistent increase in diversity among kelch13 mutations between 2016–2023. (C) shows all mutations with at least 25 samples across Africa and Southeast Asia on the x axis. Coloured bars show which subpopulation these samples came from across Africa and Southeast Asia. WHO validated or candidate mutations are suffixed with an asterisk.
+**Figure 6.:** Panel (A) shows the distribution of kelch13 propeller mutations across East and Northeast Africa. The percentage of samples with any kelch13 propeller mutation is included in the country labels, above the number of samples with any kelch13 propeller mutation and the total number of samples collected for each country, respectively. Among only the samples with any observed kelch13 propeller mutation, pie charts show the proportions with markers of interest, where proportions above 25% are labelled accordingly. ‘Other’ denotes low-frequency mutations in the propeller domain which are not WHO validated/candidate markers, pooled into a single category. Samples with the 3D7 reference sequence for kelch13 or A578S are denoted as ‘Susceptible’ (World Health Organization, 2022b). Panel (B) shows all samples collected over time for each country as a stacked bar chart, where the proportion of samples with each marker is coloured. Years with fewer than 25 samples are highlighted with grey dashed lines. Notably, Uganda and Rwanda have shown a consistent increase in diversity among kelch13 mutations between 2016–2023. (C) shows all mutations with at least 25 samples across Africa and Southeast Asia on the x axis. Coloured bars show which subpopulation these samples came from across Africa and Southeast Asia. WHO validated or candidate mutations are suffixed with an asterisk.
 
 Alongside an increase in WHO validated/candidate mutations, many East and Northeast African countries also had an increase in frequency of propeller domain kelch13 mutations which are not assigned WHO validated/candidate status. These countries included Kenya, Rwanda, Tanzania, Eritrea, South Sudan, Sudan, and Uganda. The phenotypic effects of these mutations are unclear, but in some cases, in vitro evidence suggests they could have phenotypic effects on artemisinin clearance rates (WWARN K13 Genotype-Phenotype Study Group, 2019; Mukherjee et al., 2017). Tracking the changes in frequency of these mutations is important, as they may in fact provide some degree of ART-R.
 
 As of 2024, we have not seen any single WHO validated/candidate mutation rise to prominence in East or Northeast Africa, although this may occur in coming years - as with C580Y in Southeast Asia. In the past 5 years, several WHO validated/candidate markers have circulated simultaneously, with individual mutations mostly localised to specific countries within the region, similar to patterns seen in the early period of ART-R in Southeast Asia (Figure 6 and Table 2). For example, the most common WHO validated/candidate mutation, A675V, has risen to high frequencies in Uganda and Rwanda (9.4% in 2022 and 5.6% in 2023, respectively), but has not been observed in neighbouring countries. Similarly, Rwanda, and Tanzania have a high frequency of parasites with the R561H mutation (8.9% in 2023 and 22.5% in 2021), but this mutation is uncommon elsewhere. A third example is R622I, which was the most common mutation in Eritrea (15.2% in 2019) and Sudan (2% in 2020), but rare outside Northeast Africa. Several of these mutations have increased in frequency over the past 5 years, with A675V, C459Y and P441L all increasing in frequency in Uganda since 2018. A similar situation occurred in Rwanda, where three validated/candidate mutations increased in frequency between 2019 and 2023; A675V from 1.5% to 5.6%, C469F from 1.5% to 2.8%, and R561H from 4.5% to 8.9%. The emergence and spread of different kelch13 mutations in separate regions of East and Northeast Africa suggests they are emerging independently in response to local conditions, rather than migrating between areas (Assefa et al., 2024; Abera et al., 2021).
 
+**Table 2.**
+ Most common kelch13 mutations across East and Northeast Africa, where mutations occur in at least 25 samples.Countries represented in these populations are Burundi, Comoros, Kenya, Madagascar, Malawi, Rwanda, Somalia, Tanzania, Eritrea, Ethiopia, Saudi Arabia, South Sudan, Sudan, Uganda, and Yemen. Note A578S is not associated with ART-R (World Health Organization, 2022b). Total refers to the total number of samples from these countries with each marker.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Marker</th>
+      <th>WHO status</th>
+      <th>Total</th>
+      <th>Proportion (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3D7 reference sequence</td>
+      <td>-</td>
+      <td>22,219</td>
+      <td>92.95</td>
+    </tr>
+    <tr>
+      <td>A675V</td>
+      <td>validated</td>
+      <td>306</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <td>C469Y</td>
+      <td>validated</td>
+      <td>301</td>
+      <td>1.26</td>
+    </tr>
+    <tr>
+      <td>R622I</td>
+      <td>validated</td>
+      <td>184</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>R561H</td>
+      <td>validated</td>
+      <td>158</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>A578S</td>
+      <td>not associated</td>
+      <td>149</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>C469F</td>
+      <td>candidate</td>
+      <td>97</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>P441L</td>
+      <td>candidate</td>
+      <td>65</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>V555A</td>
+      <td>no status</td>
+      <td>29</td>
+      <td>0.12</td>
+    </tr>
+  </tbody>
+</table>
+
 Interestingly, the WHO validated/candidate kelch13 mutations which have arisen in East and Northeast Africa are different to those found in Southeast Asia (Figure 6C). For example, the most common kelch13 mutations in Southeast Asia are C580Y and F446I, but these are uncommon in Africa, with C580Y only observed in seven samples across the entire continent. Other common substitutions in Southeast Asia were also rare in Africa, including R539T, P574L, F446I, and G449A, all with fewer than five samples. Similarly, of the most common WHO validated/candidate markers in Africa (A675V, C469Y, R622I, R561H, and C469F), only R561H was found regularly in Southeast Asia. This could be due to differences in ACT use between continents. For example, artemether-lumefantrine is the most common treatment for malaria in Africa, but in Southeast Asia, dihydroartemisinin-piperaquine and artesunate-mefloquine are used more often (Tun et al., 2018; World Health Organization, 2022a; Supplementary file 7). Theoretically, these differences could promote different kelch13 mutations, because their partner drugs are associated with selection for different genetic backgrounds with differing resistance mutations. For example, R539T has been associated with mefloquine-resistant parasites, whereas C580Y has been associated with piperaquine-resistant parasites, because changes in mdr1 and plasmepsin2/3, respectively, alter the fitness costs of kelch13 mutations in the presence of these different drugs (Parobek et al., 2017). It is also possible that differences in the phenotypic effects of the substitutions, alongside variation in transmission rates, fitness costs or genetic backgrounds in Africa, have selected for different kelch13 mutations relative to Southeast Asia, although this remains speculative.
 
-## Why is ART-R centred in Eastern and Northeastern Africa?
+#### Why is ART-R centred in Eastern and Northeastern Africa?
 
 It is unclear why WHO validated/candidate mutations have arisen in Northeast and East Africa first, or why we have not seen a wider spread of these mutations across Africa, despite extensive ACT use. One possibility is higher drug pressure in the region. For example, household survey data from 2003 to 2015 suggests ACT use among symptomatic children was significantly higher in Eastern Africa compared to Central or West Africa, particularly around 2015 (Bennett et al., 2017). During this time in Uganda, 70.2% of symptomatic children received an ACT, compared to an average of 19.7% across the continent (Bennett et al., 2017). Inappropriate use of artemisinin monotherapies has also been observed in some areas of Uganda, with inadequate dosing of artemether-lumefantrine observed in ~12% of children and ~16% of adults in some districts (Wang et al., 2018). However, anecdotal reports also suggest this issue occurs more widely across Africa. Another possibility is that unstable transmission rates of parasites in East and Northeast Africa have promoted the development of ART-R, because when there is a switch from low to high malaria incidence in an area, host immunity is temporarily weakened and drugs need to be used more frequently (Rosenthal et al., 2024). This is relevant in East and Northeast Africa, as there are many highland regions which are known to be centres of unstable transmission (Rodó et al., 2021) and in particular may have been a factor in northern Uganda, where the discontinuation of an effective indoor residual spraying program could have contributed to a sudden resurgence in malaria cases and an increase in drug pressure (Conrad et al., 2023). Indeed, Uganda accounted for 5% of all global malaria cases in 2022, with higher transmission rates relative to many other African countries (only Nigeria and the DRC had more cases in that year; World Health Organization, 2023).
 
-## Could fitness costs, genetic backgrounds, or ecological factors slow the emergence of ART-R in Africa?
+#### Could fitness costs, genetic backgrounds, or ecological factors slow the emergence of ART-R in Africa?
 
 Although fitness costs of kelch13 mutations are interesting conceptually, what potential do they have to slow the emergence of ART-R in Africa? Despite WHO validated/candidate kelch13 mutations having arisen several times in East and Northeast Africa, so far there does not seem to be strong selective pressure for resistant parasites across the continent (Section ‘Rest of the World’; Rosenthal, 2021; Balikagala et al., 2021; Uwimana et al., 2020; Rosenthal et al., 2024). This suggests these mutants are being outcompeted in many areas, possibly due to a combination of higher fitness costs and different genetic backgrounds, alongside differences in competition between parasites (Cohen et al., 2012; Wasakul et al., 2023). For example, elevated transmission rates, combined with lower levels of drug pressure, may increase the disadvantage generated by fitness costs (Abebaw et al., 2022; Agaba et al., 2022; Bylicka-Szczepanowska and Korzeniewski, 2022). This is reflected in African countries where ART-R is relatively more common, such as Eritrea. In some cases, these are areas which have made substantial reductions in total malaria burden and reduced transmission, both of which may mean the fitness costs of resistance mutations are less important, giving resistant genotypes a larger advantage (Fola et al., 2023). Although local-context specific, this could slow the emergence and spread of ART-R in some areas of Africa.
 
@@ -146,13 +386,13 @@ In addition to parasite-specific factors, ecological and epidemiological differe
 
 Future studies should work toward combining genomic surveillance of parasites with in vitro and population level estimates of effects on both transmission and fitness, as this may allow for improved modelling of epidemiological dynamics. This should be combined with whole-genome sequencing, as this would allow improved understanding of the role of these factors on ART-R dynamics. If their relative importance could be quantified, it could be crucial for genomic surveillance, as it could affect the relative priority given to tracking cases of specific mutations/genetic backgrounds and their spread between areas (Mayor et al., 2023).
 
-## Rest of the world
+### Rest of the world
 
 We identified many kelch13 mutations circulating across the rest of Africa, in particular West and Central Africa (Figure 7). For example, WHO validated/candidate mutations were detected at very low frequencies in Ghana, Mali, Nigeria, Equatorial Guinea, and the DRC (Figure 7). However, most mutations in West and Central Africa did not have WHO-validated/candidate status and therefore have unknown phenotypic effects. For instance, non-WHO validated/candidate kelch13 mutations were detected in Benin and Burkina Faso in West Africa, and in the Central African Republic, Chad, the DRC, and Equatorial Guinea in Central Africa (Figure 7). While the phenotypic effects of these mutations are unclear, some may affect phenotypic resistance. For example, we observed a mutation, R539I, at the same kelch13 position as the WHO-validated R539T in Togo, Ghana, Mali, and the DRC (Figure 7). This mutation should be surveyed closely and assessed in phenotypic assays of ART-R due to its position at a known resistance locus in kelch13.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig7-v1.jpg)
 
-**Figure 7.:** kelch13 propeller domain markers across West and Central Africa (A), South America (B) and Oceania (C).The percentage of samples with any kelch13 mutation is included in the country labels, above the number of samples with any kelch13 mutation, and the total number of samples collected for each country, respectively. Among only the samples with any observed kelch13 propeller domain mutation, pie charts show the proportions with markers of interest, where proportions above 25% are labelled accordingly. ‘Other’ denotes several low-frequency mutations in the propeller domain which are not WHO validated/candidate markers, pooled into a single category.
+**Figure 7.:** The percentage of samples with any kelch13 mutation is included in the country labels, above the number of samples with any kelch13 mutation, and the total number of samples collected for each country, respectively. Among only the samples with any observed kelch13 propeller domain mutation, pie charts show the proportions with markers of interest, where proportions above 25% are labelled accordingly. ‘Other’ denotes several low-frequency mutations in the propeller domain which are not WHO validated/candidate markers, pooled into a single category.
 
 WHO validated/candidate mutations were uncommon in other populations. In South America, one WHO mutation, C580Y, was detected in 19 samples from Guyana (Figure 7). Aside from this, only two other mutations were detected in South America, each in one sample (A617S in Peru in 2016 and A504T in Colombia in 2018; Figure 7). In Oceania, kelch13 mutations were present in Indonesia, Papua New Guinea, the Solomon Islands, and Vanuatu. Evidence of ART-R was found in Papua New Guinea, where C580Y was present in 10 samples. The T474A was also circulating in Oceania, predominantly in Indonesia. From 1998 to 2020, 25 non-WHO validated or candidate mutations were detected in Oceania. A675V, F446I, R539T, and R561H were also present in India (Figure 5). These markers are also seen across Southeast Asia (Figures 5 and 6), highlighting the potential for ART-R in India. In contrast, in Far-East South Asia, non-validated/candidate mutations were detected in only five samples (0.002% of population). Similarly, Afghanistan, Iran, and Pakistan all showed very low proportions of mutant samples (<0.2% of samples), none of which had WHO validated/candidate status.
 
@@ -160,17 +400,25 @@ WHO validated/candidate mutations were uncommon in other populations. In South A
 
 Given the emergence of ART-R in Africa, one obvious question is: what are the most likely scenarios for its spread? With the lessons learned from ART-R in Southeast Asia, it is useful to consider potential future scenarios on how ART-R might emerge and spread in Africa within the near future. Here, we articulate three possible scenarios regarding the frequency of kelch13 mutations in Africa: a spread of similar magnitude to that of Southeast Asia, and two more optimistic scenarios. We then discuss broader trends we might observe going forwards, including the human cost of ART-R in Africa, the effect of mitigation efforts, regional variation in ART-R and its dynamics over the next few years. In doing so, we hope this will inform long-term strategic thinking on mitigation strategies, and in properly allocating resources for future surveillance. It is important to note that these scenarios are largely speculative and need to be continually updated with new data as the situation progresses.
 
-## Scenario 1: Continued or increased spread of ART-R across Africa, similar to that seen in Southeast Asia
+### Scenario 1: Continued or increased spread of ART-R across Africa, similar to that seen in Southeast Asia
 
 The emergence and spread of ART-R throughout Southeast Asia provides an example of how the situation might develop in Africa. In Southeast Asia, ART-R emerged in several independent locations, before a single drug-resistant lineage spread across the region (Hamilton et al., 2019; Imwong et al., 2017). The C580Y mutation then reached near-fixation (~86%) in parts of Cambodia within a period of around 12–16 years (Figure 5; Noedl et al., 2008; Dondorp et al., 2009; Kagoro et al., 2022). This offers one plausible scenario as to how ART-R might progress in Africa, although it does not preclude the possibility that it could spread even faster than in Southeast Asia. It should also be noted that a worse possible scenario would be the spread of ‘full’ (as opposed to ‘partial’) artemisinin resistance, but since this has not been reported in the field, a more likely scenario is the continued spread of ART-R.
 
 As of 2024, this ‘partial’ resistance has now emerged independently in at least Uganda, Tanzania, Rwanda, Sudan, and Eritrea (Conrad et al., 2023; Uwimana et al., 2020; World Health Organization, 2022a). Importantly, there is evidence of an increase in the proportion of samples with mutant kelch13 markers in several of these countries since 2014, with similar increases in frequency to those observed in Southeast Asia around 10–15 years ago (Figure 8). If these areas were to follow a similar trajectory to Cambodia, we could see frequencies of over 54% delayed clearance under ACT treatment by around 2030 (Slater et al., 2016). However, we stress that the trends presented here are illustrative rather than predictive and do not represent model-based projections (Figure 8). Additionally, the most recent data for Southeast Asia were from 2019, so these increases may not reflect more recent trajectories of ART-R in the region.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig8-v1.jpg)
+
+**Figure 8.:** Each country is shown using a logistic regression curve fitted to the observed data (see Figure 8—figure supplement 1 for model fits). Timepoints with no line indicate years with no available data. The black dashed line highlights 2006 - the year in which the WHO recommended ACT therapy as a first-line treatment measure in Africa (World Health Organization, 2006). Notably, the rapid increase in prevalence of WHO kelch13 markers in East and Northeast African countries is similar to that observed in Southeast Asian countries between 2007 and 2016. However, it is also important to note these trends have so far only been observed in a few countries in East/Northeast Africa and are based on smaller sample sizes (Assefa et al., 2024). While these curves indicate the frequency of resistance has increased, we have deliberately avoided quantitative extrapolation beyond the most recent observed time range. This analysis should therefore not be interpreted as a predictive model.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/105544/elife-105544-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** The observed data for each country is shown as a dashed line, coloured by population. The black line is the curve of a logistic model fitted to the observed data, which is forced to begin at 0 and end at 100%. The size of each point represents the number of samples collected in that country for each year. Time points with no line or value indicate years with no available data. Countries with fewer than 3 years with at least 25 samples each were excluded. Countries which showed no clear increase during this time were also excluded (Mali, Guyana, India, Ethiopia, China, and Equatorial Guinea). The grey dashed line highlights the year in which the fitted curve reached its steepest point - that is the year with the fastest increase in frequency. The goodness-of-fit of the logistic curves varied substantially across countries (R2=0.22–1.00). Notably, Tanzania had a very high growth rate, although this was based on a single year where the frequency was above 2%. To assess the robustness of the descriptive fits, we performed sensitivity analyses using bootstrap resampling within country-year groupings and a jackknife procedure where each individual year was excluded and the curve refit accomplished. These consistently reproduced the overall pattern of rising ART-R frequencies. While exact slopes and inflection points varied, the trend of increased ART-R prevalence in East and Northeast Africa remained robust. We emphasise that these are descriptive summaries of observed data and are not intended as predictive models.
+
 Nevertheless, this scenario is further supported by estimates of selection coefficients in Uganda, which suggest current selective pressures are comparable to those observed in Southeast Asia between 2003 and 2018. These estimates imply the frequency of mutant kelch13 parasites could reach as high as 95% between 2028 and 2033 (Meier-Scherling et al., 2024). Modelling also suggests that under the continued use of ACT therapies, kelch13 mutations could become established in some areas (up to 57–88% frequency depending on model assumptions), although this will depend on their initial frequency and could be reduced using TACT strategies (see Box 2; Nguyen et al., 2023b).
 
 These increases in ART-R would in turn increase selective pressure for resistance to partner drugs, raising the likelihood of overall treatment failure. Indeed, there is evidence of treatment failure potentially occurring in some areas of Angola and the Democratic Republic of the Congo (Dimbu et al., 2024;Moriarty et al., 2021; Dimbu et al., 2021; World Health Organization, 2022a). Were such failures to become widespread, the human and economic consequences for the region would be disastrous (see Section ‘Widespread ART-R in Africa would be associated with significant human and economic costs’). Alarmingly, the observed increases in ART-R across East and Northeast Africa in recent years suggest this scenario is fast becoming a reality.
 
-## Scenario 2: ART-R is limited in Africa by additional control interventions
+### Scenario 2: ART-R is limited in Africa by additional control interventions
 
 It is clear that a massive and coordinated effort is urgently required to prevent the worst effects of ART-R from being realised (Dhorda et al., 2024). This will require several mitigation strategies to be implemented to reduce the emergence and spread of ART-R. These strategies include the wide-scale implementation of Triple Artemisinin Combination Therapies (TACT), or possibly Multiple Frontline Treatment (MFT) strategies (see Box 2), which modelling suggests could reduce treatment failure by 49–92% over a period of 5 years (Nguyen et al., 2015; Zupko et al., 2023; Li et al., 2024). If these strategies were implemented quickly and effectively, it may be possible to limit mutant kelch13 to low frequencies in most areas, although regions where ART-R has already increased in frequency, such as Uganda, may see smaller reductions. These strategies could be combined with the recently approved RTS,S and R21/Matrix-M vaccines, which in addition to improved vector control and case management, could reduce transmission chains in regions of high ART-R (Manzoni et al., 2024; World Health Organization, 2022a; Datoo et al., 2024). This could provide much-needed time to develop additional antimalarial treatments. However, while these strategies will likely reduce overall malaria burden, it should be noted they may actually promote resistance in the short term (see Section ‘The drive towards malaria elimination may promote resistance in the short term’; Wasakul et al., 2023).
 
@@ -178,7 +426,7 @@ However, whether TACTs/MFTs could be implemented quickly and effectively is depe
 
 The success of these strategies may also depend on the speed with which they are implemented. For example, introducing TACTs after ACT-resistant parasites have reached even low frequency would likely have less of a preventative effect, with Nguyen et al., 2015 estimating this frequency could be as low as ~1%. Moreover, the size and scale of parasite populations in Africa means any interventions will be complex and time-consuming, giving ART-R mutations a chance to rise to high frequency before mitigations are in place (World Health Organization, 2022a). It is therefore a race against time to implement these strategies as quickly and effectively as possible, both to minimise the spread of ART-R and reduce overall malaria burden (Dhorda et al., 2024). Given progress in reducing malaria burden in Africa has mostly plateaued since 2015, any single strategy is unlikely to reduce incidence to a level where widespread ART-R would not have dire consequences (Dhorda et al., 2024). It will therefore be crucial to combine mitigation strategies with careful genomic surveillance of parasite populations, as it may be possible to minimise the short-term spread of ART-R by tailoring interventions to local conditions.
 
-## Scenario 3: Lower frequency and slower spread of ART-R in Africa than Southeast Asia
+### Scenario 3: Lower frequency and slower spread of ART-R in Africa than Southeast Asia
 
 While Scenario 1 and 2 are more likely scenarios, there are some reasons to think ART-R in Africa may not reach as high frequencies as Southeast Asia, or that if it were to, it may at least occur more slowly (Rasmussen et al., 2022). For example, some areas of Southeast Asia, such as Myanmar, showed a slightly lower overall frequency and slower spread of ART-R than Cambodia and Thailand, with several mutations reaching high frequency (Figure 5; Tun et al., 2015; Kagoro et al., 2022). One possibility is that differences in the phenotypic effects of kelch13 mutations (e.g. clearance rate or fitness costs), or genetic backgrounds, slowed the spread of ART-R in these regions. Another possibility is that ecological factors have limited or slowed the spread of ART-R in Africa. For example, many African populations have higher rates of asymptomatic infection, stronger population immunity and greater parasite diversity than Southeast Asia (Wasakul et al., 2023; Abebaw et al., 2022; Agaba et al., 2022; Bylicka-Szczepanowska and Korzeniewski, 2022). These factors are likely to increase within-host competition, which may reduce the chance that resistant parasites increase to fixation (Bushman et al., 2018). Regional differences in vector ecology may also play a role. Variation in mosquito species, biting behaviour, or transmission patterns could influence how quickly resistant parasites are able to spread (Churcher et al., 2015; Sinka et al., 2010). While the role of these factors remains speculative, if they do play a role, their combined effects may be larger in African contexts, both because the effects of immunity and competition are more pronounced, and because the parasite population and geographical area in which resistance needs to spread are much larger, slowing its relative spread.
 
@@ -186,23 +434,23 @@ Differences in both drug policy and treatment quality may also affect the spread
 
 While it is difficult to estimate the precise effect these combined factors might have, one scenario could be ART-R frequencies in Africa will be similar to regions of Southeast Asia which have lower prevalence, such as Western and South Myanmar (Kagoro et al., 2022). In this case, we may regularly see moderate frequencies of resistant kelch13 markers, but these could reach much higher frequencies in some regions, depending on the success of mitigation efforts (World Health Organization, 2022a). This would result in ART-R being relatively common, although it may not be the norm across the continent. Nevertheless, this would still put increased pressure on partner drugs, increasing selection for resistance and increasing the likelihood of treatment failure. These factors could also interact with mitigation strategies, which in some cases could negatively affect their rollout or overall effectiveness. It will be necessary to conduct careful genomic surveillance to estimate the effects of these trends on ART-R.
 
-## Broader trends and likely trajectories of ART-R in Africa
+### Broader trends and likely trajectories of ART-R in Africa
 
-## Widespread ART-R in Africa would be associated with significant human and economic costs
+#### Widespread ART-R in Africa would be associated with significant human and economic costs
 
 Given limited alternatives to ACT treatment, any increase in ART-R which led to increased partner drug failure would be catastrophic for human mortality in the region (Conrad and Rosenthal, 2019). While the scale of the problem has been widely acknowledged, few studies have quantified the human and economic impacts of widespread ACT resistance (World Health Organization, 2022a; Slater et al., 2016; Lubell et al., 2014). Modelling work suggests highly negative outcomes, depending on the frequency of artemisinin/partner-drug resistance. For example, Lubell et al., 2014 found widespread ART-R (a conservative estimate of ~30% ACT failure rate) could cause an additional 116,000 deaths annually, with medical costs of US$32 million. Moreover, decreased productivity could be over US$385 million annually during the remaining lifetime of ACTs as the first-line treatment (Lubell et al., 2014). A second model considered several possible scenarios for ART-R and partner drug resistance in Africa, if resistance reached similar prevalence to various provinces in Southeast Asia (Slater et al., 2016). This model suggested if ART-R and partner drug resistance in Africa reached levels seen in Oddar Meanchey province in Cambodia (~54%), this could result in around 16 million additional cases per year (~7% overall increase) due to delayed parasite clearance and parasite recrudescence (Slater et al., 2016). Were this to take place, this could mean an additional 20,000 deaths and an economic impact of US$1.1 billion per year due to increased morbidity and mortality (World Health Organization, 2022a; Slater et al., 2016; Hailu et al., 2017). Unfortunately, these models offer conservative estimates and may even underestimate the true severity of the situation. The impact could be significantly worse if additional factors, such as diminished economic growth or lower educational outcomes, were taken into account (World Health Organization, 2022a; Slater et al., 2016; Lubell et al., 2014).
 
-## The drive towards malaria elimination may promote resistance in the short term
+#### The drive towards malaria elimination may promote resistance in the short term
 
 Given the potential scale of the problem, national and international public health agencies have developed extensive plans to reduce total malaria burden (World Health Organization, 2021; World Health Organization, 2022a). For example, the WHO has a stated goal to eliminate malaria in 35 countries by 2030 (World Health Organization, 2021; World Health Organization, 2022a). While their success so far has been debated (World Health Organization, 2022a; Rosenthal et al., 2019), as the total number of cases decreases, it is likely the proportion of drug-resistant parasites will increase (White, 2004; Scott et al., 2018). This is for two reasons; firstly, since ACTs are a main strategy in treating infection, and ACT use selects for resistant parasites, resistant parasites are more likely to increase in the population (White, 2004). Secondly, as the overall parasite population and rate of infection are reduced, this will decrease immunity within the human population (Agaba et al., 2022). As this occurs, the rate of asymptomatic infections–currently the most common kind of infection in many parts of Africa–may decrease, meaning more need for drug treatment and a further increase in selection for resistance (Bylicka-Szczepanowska and Korzeniewski, 2022).
 
 This process is already being observed in some countries in Africa, such as Eritrea (Fola et al., 2023; Abebaw et al., 2022; Mihreteab et al., 2023; Jeang et al., 2024). Over the past two decades, concerted public health efforts, such as vector control, ACT treatment, and case management, have reduced infections in this region. However, some evidence suggests the success of these strategies means the proportion of ART-R parasites has increased, despite a reduction in overall burden (Fola et al., 2023). This trend has also been observed in several parts of Southeast Asia, such as Myanmar (Manzoni et al., 2024; Imwong et al., 2017; Imwong et al., 2020). This underscores the importance of careful genomic surveillance, as it can be used to identify patterns of selection on resistant parasites (Meier-Scherling et al., 2024). This would, in turn, inform mitigation strategies and help ensure that as overall parasite numbers are reduced, they are not replaced by resistant parasites.
 
-## The prevalence of ART-R is likely to vary substantially between regions
+#### The prevalence of ART-R is likely to vary substantially between regions
 
 A consequence of variation in reducing malaria burden is that the frequency of ART-R is also likely to be highly variable across the African continent, particularly over the next 1–5 years. This is not only because different African countries currently have very different malaria burdens, but are likely to have different rates of success in eliminating the disease (World Health Organization, 2022a). This variable distribution is observed in Southeast Asia, where some regions, such as districts of Cambodia, show near fixation of mutant kelch13 haplotypes, while others, such as West and South Myanmar, have less than 20% prevalence (Kagoro et al., 2022). Unfortunately, the consequence of this is that some regions could become hubs for the spread of ART-R into other areas (Ashley et al., 2014; Tun et al., 2017). A similar effect was also observed in other regions of Southeast Asia, where waves of selection assisted in spreading resistant lineages across the region (Ashley et al., 2014; World Health Organization, 2016; Tun et al., 2017). There are concerns these patterns could re-occur among African countries, as resistance-associated kelch13 markers have so far only been observed in specific regions, such as Uganda, Rwanda, and Eritrea (Conrad et al., 2023; Uwimana et al., 2020; Agaba et al., 2022). So far, it is not possible to determine whether a clonal spread of resistant genotypes is spreading in all of these countries due to the limited number of samples, although evidence suggests that so far these instances have emerged independently (Conrad et al., 2023; Uwimana et al., 2020; Abdel Hamid et al., 2023; Agaba et al., 2022). This again highlights the importance of genomic surveillance and rapid data sharing, as when migration routes do arise, these can only be identified by monitoring and sequencing parasite populations, and used to inform mitigation strategies (Tun et al., 2017).
 
-## The dynamics we observe in the next few years will determine the prevalence of ART-R in 10 years’ time
+#### The dynamics we observe in the next few years will determine the prevalence of ART-R in 10 years’ time
 
 The patterns of resistance we see over the next 1–5 years will be crucial in determining the patterns we observe over the next decade. This is for four main reasons; firstly, the areas in which resistance first emerges indicate areas where resistance is currently under strong selection and therefore likely to reach higher frequencies. This effect was observed in Southeast Asia, where the regions in which resistant parasites initially emerged gave a strong indication as to where they would later reach high frequency, such as Cambodia and Thailand (Kagoro et al., 2022; Imwong et al., 2017). Secondly, resistance frequencies may reach critical thresholds in some areas within the next 1–5 years, beyond which mitigation strategies will be more difficult. For example, modelling studies suggest MFTs and TACTs are less likely to be effective if they are implemented only when the initial frequency of resistance is already high, with efficacy decreasing substantially when this frequency exceeds 1%. Thirdly, these years will give a strong indication whether fitness costs and genetic background have a slowing effect on the spread of resistance in Africa, and this could assist in making predictive models for further spread. Lastly, we may see the initial effects of RTS,S and R21/Matrix-M vaccines during the next 1–5 years, and we can observe how this might affect selective pressures on the parasite (Datoo et al., 2024).
 
@@ -212,7 +460,7 @@ Unfortunately, this period is also the time in which it is most difficult to alt
 
 Throughout this review, we have highlighted the vital role genomic surveillance has played in understanding the global emergence and spread of ART-R in P. falciparum. In Southeast Asia, genomic surveillance helped to identify instances of migration of resistant parasites between countries and quantify the frequencies of resistance in different areas (see Section ‘Spread of Artemisinin Partial Resistance’). Now, in East and Northeast Africa, genomic surveillance continues to demonstrate its usefulness, by identifying the independent emergence and spread of kelch13 mutations in Sudan, Uganda, Eritrea, and Rwanda (Conrad et al., 2023; Uwimana et al., 2020; Mihreteab et al., 2023; Mohamed et al., 2020; Owoloye et al., 2021; Jalei et al., 2023). These discoveries were only possible due to the enhanced sensitivity of genomic surveillance in detecting low-frequency genetic variants - as several TES from the region suggested treatment efficacy remained high (>95%) (Assefa et al., 2024). However, TES primarily aids in understanding treatment failure due to partner drug resistance, so is not expected to inform on ART-R in the same way as genomic surveillance is able to do. Moving forward, it is essential to use the information gathered from both genomic surveillance and TES, along with lessons learned from ART-R in South-East Asia, to develop and implement mitigation strategies, such as properly allocating healthcare resources (Assefa et al., 2024; World Health Organization, 2015b; World Health Organization, 2021).
 
-## The need for a more systematic approach to genomic surveillance
+### The need for a more systematic approach to genomic surveillance
 
 Genomic surveillance of ART-R in Africa is at a crucial inflection point. As of 2024, limitations on resources, time, and training, alongside the scale of parasite populations in Africa, mean surveillance efforts remain localised, often with limited numbers of samples from key areas (World Health Organization, 2022a; Nsanzabana, 2021). This is a problem because surveillance is most valuable as a warning system when it is detailed enough to identify low-frequency variants (e.g. less than 1%), and these can easily be missed if not enough samples have been analysed (Uwimana et al., 2020; Mayor et al., 2023; Asua et al., 2019; Boni, 2022). This highlights a fundamental challenge for the surveillance of ART-R, in that if resistance is circulating at lower frequencies, it is simply harder to detect using any method, and quantifying changes in those frequencies can be difficult without detailed sampling over time within the same areas (Mayor et al., 2023). While identifying resistance mutations at frequencies of around 5% or more is still very valuable, detecting mutations at lower frequencies gives more time to delay the establishment of resistant parasites or reduce their spread to neighbouring regions. These issues mean increases in resistance mutation frequencies may only be identified when they have effects on clinical efficacy (Zupko et al., 2023).
 
@@ -222,11 +470,11 @@ More generally, the complementary use of whole genome sequencing and amplicon se
 
 Lastly, a major focus should be on building sequencing and data processing capabilities in malaria endemic countries, particularly in the African continent. Currently, the substantive cost of reagents and issues with supply chain logistics can hinder efforts for in-country data generation (Neafsey et al., 2021; Hamilton et al., 2023). Additionally, training of local scientists in specialist fields such as bioinformatics, genomics, and data science would further enable the ability to turn sequencing data into interpretable findings (Ishengoma et al., 2019). Challenges exist around obtaining sustained funding for long and short-term data storage, while the difficulties of data compartmentalisation, standardisation, and administrative burdens will also need to be addressed to best leverage ongoing genomic surveillance efforts. Moving forwards, it will be critical to expand surveillance by enabling the use of sequencing more widely in Africa (Ishengoma et al., 2019). These improvements could include nanopore long-read technology, which has been demonstrated to be well-suited to surveillance needs through its increased portability, lower up-front costs, and real-time data output (Hamilton et al., 2023). Several combined strategies could vastly enhance the region’s ability to respond to future outbreaks, both for Plasmodium and other pathogens. These strategies include the systematic investment in local surveillance infrastructure and workflows, changes in sampling strategy (towards a framework informed by genomic surveillance), and a focus on building a critical mass of expertise in areas where gaps have been identified.
 
-## Improved models to analyse large spatiotemporal datasets
+### Improved models to analyse large spatiotemporal datasets
 
 In addition to enhanced genomic surveillance, developing new models to analyse increasingly large spatiotemporal datasets is crucial. Improved epidemiological models could characterise outbreaks as they unfold or even forecast how they may progress. For example, models which can estimate identity-by-descent among large numbers of parasites would enable inferences on population scale changes in genetic diversity (Miotto et al., 2013; Henden et al., 2018; Amambua-Ngwa et al., 2019). This capability would enhance quantification of selective pressures for ART-R, identify migration pathways between regions, and help categorise population diversity (Amato et al., 2018; Meier-Scherling et al., 2024; Amambua-Ngwa et al., 2019). Improved models could also study changes in the frequency of drug-resistant lineages and facilitate the interpretation of these changes in relation to other factors, such as drug use, vector populations, or climate change (Datoo et al., 2024; Ryan et al., 2020; Sherrard-Smith et al., 2022; Redding et al., 2024). Moreover, developing methods to identify novel resistance markers is crucial—not only for kelch13 and partner drug resistance genes, but also for other genomic loci that may contribute to ART-R through complementary or polygenic mechanisms (Demas et al., 2018; Miotto et al., 2015; Nayak et al., 2024). For example, linkage disequilibrium has been identified between non-propeller mutations R255K, K189N, and K189T in kelch13, as well as between these mutations and other drug resistance linked genes such as mdr1 in Mali (Coulibaly et al., 2022). While not validated or candidate mutations, K189T and R255K were recently associated with delayed parasite clearance in one study from Nigeria (Amusan et al., 2025). Initially, the search for novel resistance mechanisms could include polymorphisms in the N-terminal region of the kelch13 protein, but should then extend to those outside the kelch13 gene. This is especially important in African parasite populations, where resistance-conferring mutations beyond kelch13 have already been identified and may interact with genetic backgrounds in ways that influence their emergence and spread (Miotto et al., 2015; Demas et al., 2018; Tumwebaze et al., 2022). This will be particularly important during the rollout of MFT or TACT strategies, as any triply resistant mutants which arise can be more easily identified using genomic surveillance, and this information could inform optimal timing to rotate drugs (Zupko et al., 2023; Kokori et al., 2024; Boni, 2022).
 
-## Improved data sharing, public access to data and training opportunities
+### Improved data sharing, public access to data and training opportunities
 
 Ensuring that surveillance data and analysis methods are publicly available is crucial for the malaria community, as these resources are essential in building skills and capacity for bioinformatic analysis. Public access to large surveillance datasets has repeatedly empowered novel analyses on the basic biology of Plasmodium, possible only because of the open nature of these datasets and the willingness of the community to share data (Abdel Hamid et al., 2023). For example, recent analysis of the Pf7 open dataset of whole genome sequencing samples led to the identification of a novel ‘cryptotype’ of P. falciparum, present in 13 countries across Africa (Miotto et al., 2024). Additionally, making the outputs of genomic surveillance data available through centralised platforms like MalariaGEN, WWARN, and WHO’s malaria threat maps has provided the malaria community with invaluable resources to study the distribution, migration and spread of ART-R (Abdel Hamid et al., 2023; Sibley et al., 2007). Similarly, web applications like Pf-HaploAtlas have been developed to leverage these resources, facilitating analysis of genomic surveillance data without the need for specialised technical knowledge (Lee et al., 2024). It is imperative to continue this work by ensuring these tools and resources are accessible and user-friendly, particularly for those with limited training, and to support the malaria community in making their data publicly available as soon as possible after collection. This approach will enhance contributions and coordination within the community, and help in informing strategies to mitigate the spread of ART-R.
 
@@ -236,7 +484,7 @@ Given the emergence of ART-R associated with kelch13 markers in Africa, it is li
 
 ## Methods
 
-## Data aggregation
+### Data aggregation
 
 We compiled publicly available kelch13 mutation data for 112,933 samples collected between 1980 and 2023, across 73 countries (Supplementary file 2, Source Data S1). This dataset, along with associated metadata, was sourced from the MalariaGEN Pf7 release (Abdel Hamid et al., 2023), the Worldwide Antimalarial Resistance Network (WWARN) Artemisinin Resistance Molecular Surveyor, and our own literature search. For the purposes of this study, all BTB/POZ and propeller mutations (codons 349–726) are collectively referred to as ‘propeller mutations’. Mutations were classified according to their status for association with ART-R from the latest WHO guidelines - either ‘validated’, ‘candidate’, or ‘no status’ (Supplementary file 1). Parasites with the 3D7 reference kelch13 sequence, or the mutation A578S, were considered susceptible to artemisinin (World Health Organization, 2022b). As only non-synonymous mutations were included in this study, samples with synonymous amino acid mutations only were classified as having the 3D7 reference sequence.
 
@@ -246,16 +494,16 @@ Mutations were recorded alongside sample ID, continent, country, collection year
 
 In analysing and visualising these data, we applied a multi-level aggregation approach: while we provide the dataset at the sample level, our analysis and visualisations aggregate prevalences either at country, subpopulation or continent levels. This structure enables broader geographic insights and facilitates interpretation of large-scale trends. Of the two kelch13 molecular surveyor databases, the WHO Threats Map presents figures at the district level (World Health Organization, Global Malaria Programme, 2024), and WWARN provides both data and visualisations at the study level. Our decision to use country- and region-level aggregation was driven by the need for comparability across heterogeneous data sources and to maximise sample sizes. This approach is particularly suited for identifying geographic and temporal patterns at a global scale, whereas study-level and site-specific surveillance—such as that offered by WWARN and WHO Threats Map—is useful for ongoing monitoring efforts and intervention planning.
 
-## Source-specific data processing
+### Source-specific data processing
 
-## Pf7
+#### Pf7
 
 Whole genome data from 16,203 QC-passed Pf7 samples were processed using custom Python scripts to generate haplotypes for kelch13. During QC, duplicate samples were removed. For each sample, we applied nucleotide variants from the GT field of the sample’s VCF file to the 3D7 reference sequence. These sequences were translated into amino acids, and mutations were identified. We excluded any sample with a missing genotype call (n=1,056). After removal of heterozygous samples (n=2,292), 12,855 samples from Pf7 were included in the final dataset.
 
-## WWARN database
+#### WWARN database
 
 All kelch13 data from WWARN’s Artemisinin Molecular Surveyor were downloaded. We reviewed 63 studies where only a range of years, rather than a single year, was provided. If we were not able to gather single-year data for all samples from the original publication, we recorded the median year of the range for the study. In cases where the year range was 2 years, we selected the year with the largest number of samples. We investigated potential duplicate or missing data in the full texts of 34 WWARN publications that had different total numbers of recorded mutations and tested samples. Of these, 17 studies were included after correcting a mismatch between the publication and the WWARN data file and one was included after being flagged as containing multiple propeller mutations per sample. The remainder were excluded for containing heterozygous samples, or due to missing data for most samples, or because the publication was inaccessible. We assumed no other duplicate samples were included within the WWARN dataset. Ultimately, we included data from 291 WWARN publications covering 86,870 samples.
 
-## Literature search
+#### Literature search
 
 To ensure our database was as comprehensive and up to date as possible, we performed an additional literature search for relevant papers published after 2020 to supplement the WWARN database. We searched the Web of Science and PubMed using: ‘K13 OR kelch OR kelch13 OR pfkelch13 AND (half-life OR parasite clearance OR resistance)’, restricting results to articles only. We also searched ‘kelch13 mutations falciparum artemisinin’ in Google Scholar for articles published between 2023 and 2024. We excluded articles which genotyped kelch13 after ACT treatment (i.e. not day 0 patients) or in cultured lab strains, articles which did not provide country-level information or sample size information, articles which only provided genotypes for a subset of samples tested, articles already included in the WWARN database, and articles not available in English or not accessible. We yielded 28 additional unique studies after reviewing full texts and applying both the article and mutation inclusion criteria. We ensured that no missing data were present by checking that the total number of ‘tested’ samples and the number of samples with a reported kelch13 genotype were equal. In any instance where wildtype genotypes were not reported and the number of samples with a kelch13 mutation was below the total number of tested samples, we added wildtype counts to complete the study data. A further 13,208 samples were collected from this search.

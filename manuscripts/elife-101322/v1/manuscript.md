@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04pp8hn57 Biomolecular Mass Spectrometry and Proteomics, Bijvoet Center for Biomolecular Research and Utrecht Institute of Pharmaceutical Sciences, Utrecht University, Padualaan Utrecht Netherlands
-2. https://ror.org/026vcq606 Science for Life Laboratory, School of Engineering Sciences in Chemistry, Biotechnology and Health, Royal Institute of Technology – KTH Solna Sweden
+1. Biomolecular Mass Spectrometry and Proteomics, Bijvoet Center for Biomolecular Research and Utrecht Institute of Pharmaceutical Sciences, Utrecht University, Padualaan Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+2. Science for Life Laboratory, School of Engineering Sciences in Chemistry, Biotechnology and Health, Royal Institute of Technology – KTH Solna Sweden ([ROR:026vcq606](https://ror.org/026vcq606))
 
 † Corresponding author
 
@@ -56,7 +56,7 @@ For each of the 152 maps, we compared the pairwise sequence identity between the
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/101322/elife-101322-fig5-v1.jpg)
 
-**Figure 5.:** A) or inferred V-gene identity (B).The non-parametric Spearman correlation coefficient is indicated for heavy and light chain.
+**Figure 5.:** The non-parametric Spearman correlation coefficient is indicated for heavy and light chain.
 
 In the context of polyclonal antibody mixtures, this analysis suggests that cryoEM densities of antigen-antibody complexes from EMPEM experiments can be leveraged to guide sequence assembly from complementary proteomics-based profiling of the same sample (see Figure 1). In such an experiment, reconstructed cryoEM densities would be used as input data for ModelAngelo, from which the sequences are extracted and run through Stitch to select the top-scoring V-gene and construct a placeholder sequence for CDR3 of both the heavy and light chain. These reconstructed variable domains may then act as templates to guide the assembly of de novo peptides from LC-MS/MS data to improve the accuracy of the candidate sequence.
 
@@ -88,18 +88,18 @@ Next steps in our efforts are to bring together the EMPEM work and MS-based poly
 
 ## Materials and methods
 
-## Benchmark of monoclonal antibody-antigen pairs and EMPEM maps from EMDB
+### Benchmark of monoclonal antibody-antigen pairs and EMPEM maps from EMDB
 
 We searched the EMDB for published maps containing antigen-binding fragments (Fabs) of any species, at nominal resolutions of ≤4 Ångström, released after the training data for ModelAngelo was obtained (April 1st 2022). The search was performed on February 11th 2023 at https://www.ebi.ac.uk/emdb/ using the search term ‘antibody fab resolution:[* TO 4] AND release_date:[2022-03-31T00:00:00Z TO 2023-11-02T00:00:00Z] sample_name:*fab* fitted_pdbs:[* TO *]’. These results were filtered for maps that included a deposited atomic model and which contained only a single unique monoclonal Fab (of which multiple copies may be bound in the reconstructed antigen complex). When multiple redundant maps from the same study were included, we selected the single representative map of the highest quality, based on manual inspection. Global FSC resolution was not a good indicator as the maps were often dominated by the bound antigen, which may be better resolved than the bound antibody. Typically, the selected map was the focused/local refinement around the epitope-paratope region, despite its lower nominal resolution. A full overview of the selected maps is provided in Supplementary file 1. The EMPEM maps were compiled based on a literature survey, complemented with a search of the EMDB using the term ‘polyclonal’. A full overview of the selected EMPEM maps is provided in Supplementary file 2.
 
-## Changes made to Stitch to take CIF input
+### Changes made to Stitch to take CIF input
 
 Stitch was extended to allow mmCIF files as input. From these files all chains were extracted as separate amino acid sequences to align in Stitch. ModelAngelo outputs a confidence score per residue in the B-factor column of the mmCIF input, which was used as a local confidence for the sequence. First, each polypeptide gets assigned an Average Local Confidence (ALC) score based on the average across all residues, which can be used as an input filter on the data (along with polypeptide length). Second, the local confidence is used as weight in determining the consensus sequence of overlapping polypeptides, following assembly in Stitch.
 
-## Analysis of monoclonal antigen-antibody and EMPEM benchmarks
+### Analysis of monoclonal antigen-antibody and EMPEM benchmarks
 
 Software used in this project was curated by SBGrid (Morin et al., 2013). The deposited model mmCIF and EM maps for the full benchmark were downloaded and ran with ModelAngelo (version 1.01) in ‘build_no_seq’ mode. For each entry in the benchmark the deposited mmCIF was run with Stitch (version 1.5.0-rc.1+6d3b540) using CutoffALC 80, minimum length 5 and TemplateMatching CutoffScore 8. The same was done for each mmCIF file produced by ModelAngelo but with an additional segment containing the antigen and Ig constant domain template sequences. From these runs, the consensus sequence and highest scoring germline for IGHV and IGLV (lambda +kappa) were retrieved. For each consensus sequence, the CDR3 was determined if the flanking cysteine on the V gene and the tryptophan or phenylalanine on the J gene were present. As these conserved residues were not all positioned correctly in the IMGT database, the data was manually fixed based on the same rules. The data from the deposited and produced Stitch runs was compared to produce the identity between the consensus sequences, distance between the inferred germlines, and identity between the CDR3s. The script used for this analysis is deposited as Supplementary Data. The results generated by this analysis is included in Supplementary file 1. The EMPEM benchmark was downloaded, ran through ModelAngelo and subsequently Stitch with identical parameters as above. In contrast to the benchmark detailed before, the ground-truth sequences of these antibodies is not known.
 
-## Analysis of CR3022 data
+### Analysis of CR3022 data
 
 The EM data for CR3022 was downloaded from EMDB (EMD-11648) and run with ModelAngelo (version 1.01) in ‘build_no_seq’ mode. The raw data for monoclonal antibodies CR3022, 107, 1028, 2771, 3576, and 3634 from PRIDE PXD030094 was downloaded and analyzed with PEAKS 10+. These listed monoclonal antibodies were chosen because these are the five most distant sequences from CR3022 and therefore present the biggest challenge to sequence assembly in Stitch (version 1.5.0-rc.1+6d3b540). The PEAKS analysis for the COVID-19 data from PRIDE PXD031941 was downloaded. Three sets of input were prepared: ‘no background’ consisting of only the CR3022 data, ‘+whole IgG’ consisting of the CR3022 and the COVID-19 data, and ‘+5 mAbs’ which consists of all mAbs from the CR3022 study. Three Stitch configurations where prepared: ‘True’ using the known CR3022 sequence as template as retrieved from PDB 7A5R, ‘IMGT’ using the conventional configuration of Stitch with all IMGT germlines as templates, and ‘MA’ using the closest V gene germline to the ModelAngelo consensus sequence of CR3022 together with the CDR3 sequence present. Each of these configurations were run with Stitch Recombine Decoy off and on, with this on for ‘True’ and ‘MA’ the full IMGT germline database was added and for ‘IMGT’ the Stitch parameter Decoy in Recombine was set allowing any unused germline from the Template Matching step to matched in the Recombine step. For all Stitch runs, the CutoffALC was 90 and the TemplateMatching CutoffScore 10. The resulting consensus sequences from these 18 Stitch runs were then compared with the known CR3022 sequence to determine the identity. The full script used for this analysis is included in the deposited Supplementary Data.

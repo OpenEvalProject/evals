@@ -51,13 +51,13 @@ In this study, we set out to build a multitask network that would perform two di
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig1-v2.jpg)
 
-**Figure 1.:** Comparison of cellular APs in the baseline model of (A) iPSC-CMs and (B) adult-CMs at a matched cycle length of 982 ms. (C, D) Simulated ionic current (I) profiles during (CaL, IKr, IKs, Ito, IK1C) iPSC-CM and (D) adult-CM APs. (E) APs of spontaneously beating iPSC-CM cells (n = 208) and (F) adult-CM APs at matched cycle lengths were simulated after incorporating physiological noise currents as drug-free (blue) and drugged I modeled as simple KrG reduction by 1–50% KrI block (green) and a complex model of conformation-state dependent KrIKr block in the presence of 2.72 ng/mL dofetilide (purple). (G) Comparison between iPSC-CM and adult-CM drug-free and drugged models with simple and complex Iblock model schemes (as indicated in the right column), including upstroke velocity (VKrmax), maximum diastolic potential (MDP), and action potential duration (APD).
+**Figure 1.:** Comparison of cellular APs in the baseline model of (A) iPSC-CMs and (B) adult-CMs at a matched cycle length of 982 ms. (C, D) Simulated ionic current (ICaL, IKr, IKs, Ito, IK1) profiles during (C) iPSC-CM and (D) adult-CM APs. (E) APs of spontaneously beating iPSC-CM cells (n = 208) and (F) adult-CM APs at matched cycle lengths were simulated after incorporating physiological noise currents as drug-free (blue) and drugged IKr modeled as simple GKr reduction by 1–50% IKr block (green) and a complex model of conformation-state dependent IKr block in the presence of 2.72 ng/mL dofetilide (purple). (G) Comparison between iPSC-CM and adult-CM drug-free and drugged models with simple and complex IKrblock model schemes (as indicated in the right column), including upstroke velocity (Vmax), maximum diastolic potential (MDP), and action potential duration (APD).
 
 Next, we applied a digital forward and backward data filtering technique (Gustafsson, 1996) to the simulated iPSC-CM and adult-CM AP traces (Figure 2, left panels). Since we applied physiological noise to introduce a source of variability (as observed in human populations) in our model simulations, we assessed the possible phase distortion for AP waveforms following noise filtering. In Figure 2 (right panels), the distribution of iPSC-CM and adult-CM AP duration at 90% repolarization (APD90) values is shown. The near superimposition of the histogram distributions assures that noise filtering does not change the AP waveform morphology or time course and primarily removes existing vertical noises. Figure 2A, B shows simulated drug-free iPSC-CM and adult-CM APs and corresponding APD90 distribution with physiological noise in blue and after applying the noise filtering technique in black for iPSC-CM APs and red for adult-CM APs. The same plots are illustrated for drugged AP traces with simple 1–50% IKr block (Figure 2C, D) and with complex IKr block model in the presence of 2.72 ng/mL dofetilide (Figure 2E, F). Next, we normalized drug-free and drugged noise-filtered iPSC-CM APs and adult-CM APs to use them as input and output, respectively, for training the multitask network.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig2-v2.jpg)
 
-**Figure 2.:** 90 value distributions (right panels).(A) drug-free iPSC-CM APs with physiological noise in blue and after applying the noise filtering technique in black; (B) drug-free adult-CM APs – blue and red traces; (C) drugged iPSC-CM APs with 1–50% I block – green and black traces; (KrD) drugged adult-CM APs with 1–50% I block – green and red traces; (KrE) drugged iPSC-CM APs with 2.72 ng/mL dofetilide – purple and black traces; and (F) drugged adult-CM APs with 2.72 ng/mL dofetilide –purple and red traces.
+**Figure 2.:** (A) drug-free iPSC-CM APs with physiological noise in blue and after applying the noise filtering technique in black; (B) drug-free adult-CM APs – blue and red traces; (C) drugged iPSC-CM APs with 1–50% IKr block – green and black traces; (D) drugged adult-CM APs with 1–50% IKr block – green and red traces; (E) drugged iPSC-CM APs with 2.72 ng/mL dofetilide – purple and black traces; and (F) drugged adult-CM APs with 2.72 ng/mL dofetilide –purple and red traces.
 
 The building blocks of the multitask network are illustrated in Figure 3A. The multitask network receives preprocessed simulation-generated iPSC-CM AP waveforms (noise-filtered and normalized) as input and scans whole AP time-series values through two stacked LSTM layers (Figure 3A, D). The LSTM layers remember the most important iPSC-CM AP values (features) they need to perform the translation and classification tasks and pass the information to two fully connected layers (Figure 3A, E), one for the translation task to predict the corresponding adult-CM AP waveform (Figure 3B) and one for the classification task to classify iPSC-CM APs into drug-free and drugged categories (Figure 3C).
 
@@ -77,13 +77,89 @@ Figure 5 and Table 1 illustrate the overall multitask network performance for tr
 
 **Figure 5.:** (A) The iPSC-CM APs used for training the multitask network contained a variety of drug-free and drugged action potential morphologies (training set). (B) Comparison between simulated (red) and translated adult-CM APs (cyan) in the training set. (C) Comparison between the histogram distribution of APD90 values for simulated and translated adult-CM APs in the training set. (D) Dedicated iPSC-CM APs for testing the performance of the multitask network (test set). (E) Comparison between simulated (red) and translated adult-CM APs (cyan) in the test set. (F) Comparison between histogram distribution of APD90 values for simulated and translated adult-CM APs in the test set.
 
+**Table 1.**
+ Statistical measures for evaluating the performance of the multitask network for both iPSC-CM AP trace classification into drug-free and drugged categories and their translation into adult-CM APs for training and test datasets as well as the effect of removing LSTM layers and classification task on the network performance.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="8">Translation</td>
+    </tr>
+    <tr>
+      <td colspan="2">Performance metrics</td>
+      <td colspan="2">MSE</td>
+      <td colspan="2">R2 score</td>
+      <td colspan="2">Error in APD90 prediction</td>
+    </tr>
+    <tr>
+      <td colspan="2">Training dataset</td>
+      <td colspan="2">0.0027</td>
+      <td colspan="2">0.992</td>
+      <td colspan="2">3.41%</td>
+    </tr>
+    <tr>
+      <td colspan="2">Test dataset</td>
+      <td colspan="2">0.0029</td>
+      <td colspan="2">0.991</td>
+      <td colspan="2">3.60%</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove LSTM layers test dataset</td>
+      <td colspan="2">0.0031</td>
+      <td colspan="2">0.991</td>
+      <td colspan="2">3.78%</td>
+    </tr>
+    <tr>
+      <td colspan="2">Remove classification task test dataset</td>
+      <td colspan="2">0.0034</td>
+      <td colspan="2">0.990</td>
+      <td colspan="2">4.33%</td>
+    </tr>
+    <tr>
+      <td colspan="8">Classification</td>
+    </tr>
+    <tr>
+      <td>Performance metrics</td>
+      <td colspan="2">AUROC</td>
+      <td colspan="2">Accuracy</td>
+      <td colspan="2">Recall</td>
+      <td>Precision</td>
+    </tr>
+    <tr>
+      <td>Training dataset</td>
+      <td colspan="2">0.93</td>
+      <td colspan="2">92%</td>
+      <td colspan="2">0.92</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td>Test dataset</td>
+      <td colspan="2">0.91</td>
+      <td colspan="2">92%</td>
+      <td colspan="2">0.92</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Remove LSTM layers test dataset</td>
+      <td colspan="2">0.90</td>
+      <td colspan="2">92%</td>
+      <td colspan="2">0.90</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td colspan="8">iPSC-CM: induced pluripotent stem cell-derived cardiomyocyte; AP: action potential; adult-CM: adult cardiomyocyte; AP: action potential; AUROC: area under the receiver operating characteristic curve; LSTM: long-short-term-memory.</td>
+    </tr>
+  </tbody>
+</table>
+
 The performance evaluation metrics for both the translation and classification tasks are listed in Table 1. The multitask network exhibits high accuracy in performing translation, despite large variability in APDs and regardless of the underlying model form. The network is able to translate iPSC-CM APs into adult-CM APs with less than 0.003 mean-squared error (MSE), 0.99 R2 score, and <4% error in APD90 prediction for both training and test datasets. To evaluate the network performance for the classification task, we compared the AUROC, prediction accuracy, recall, and precision for both training and test datasets. The multitask network proved to perform well in categorizing iPSC-CM APs into drug-free and drugged waveforms with approximately 90% accuracy (Table 1). Finally, we performed a type of network component dissection by sequentially eliminating individual LSTM layers or the classification task to determine if all elements of the network are important to the overall performance. The impact of removing these elements of the network on the network performance is shown in Table 1.
 
 Next, we performed a ‘computational’ ablation study as a correlate to the types of physiological ablations that are used to examine the roles and functions of a physiological system (LeCun et al., 1989; Reale et al., 1987). We tested how the performance of the multitask network would change by removing various information contained within specified time frames as shown in Figure 6A, B. To reveal the most important iPSC-CM AP information for classifying iPSC-CM APs into drug-free and drugged traces and translation into adult-CM APs, we did not allow the network to process data from within designated time frames from the iPSC-CM APs (feature ablation). We then retrained the multitask network by setting the missing information equal to zero and compared the calculated AUROC for classification task and MSE in adult-CM APs translation (red bars) with the recorded corresponding values for multitask network (green line) when it was provided full access to the complete iPSC-CM AP data. We observed that the network is extremely sensitive to information contained within the 400–500 ms time frame (blacked dashed bar in Figure 6A, B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig6-v2.jpg)
 
-**Figure 6.:** The largest effect (most important information) is observed at 400–500 ms interval (dotted black line). (A) Comparison between intact multitask network area under the receiver operating characteristic curve (AUROC) and obtained AUROC values for drug-free and drugged iPSC-CM AP classification during removal of indicated time frames within iPSC-CM APs. (B) Comparison between intact multitask network mean-squared error (MSE) (cyan line) and obtained MSE values for adult-CM AP translation during removal of indicated time frames within iPSC-CM APs (red bars). (C) AP trace (green) and membrane resistance (red) as a function of simulation time indicating very high values (as dI → 0, dV/dI → ∞) for the latter at 400–500 ms. (D) Total current density, Itotal, demonstrates a plateau followed by a rapid decline at 400–500 ms. (E) Individual current densities indicate a period of inward and outward current balance followed by rapid changes in Iand other repolarizing components at 400–500 ms time interval.Kr
+**Figure 6.:** The largest effect (most important information) is observed at 400–500 ms interval (dotted black line). (A) Comparison between intact multitask network area under the receiver operating characteristic curve (AUROC) and obtained AUROC values for drug-free and drugged iPSC-CM AP classification during removal of indicated time frames within iPSC-CM APs. (B) Comparison between intact multitask network mean-squared error (MSE) (cyan line) and obtained MSE values for adult-CM AP translation during removal of indicated time frames within iPSC-CM APs (red bars). (C) AP trace (green) and membrane resistance (red) as a function of simulation time indicating very high values (as dI → 0, dV/dI → ∞) for the latter at 400–500 ms. (D) Total current density, Itotal, demonstrates a plateau followed by a rapid decline at 400–500 ms. (E) Individual current densities indicate a period of inward and outward current balance followed by rapid changes in IKrand other repolarizing components at 400–500 ms time interval.
 
 This result suggests that the most important information needed to classify iPSC-CM APs into drug-free and drugged traces and distinguish adult-CM AP signals from iPSC-CM AP signals is contained in a particular region of the AP plateau. The time frame of the AP between 400 and 500 ms (Figure 6A, B) corresponds to a phase of exquisite sensitivity to perturbation. We have identified this particular AP range in an earlier study as the phase when the membrane resistance of the myocyte increases markedly (Figure 6C; Yang et al., 2015). This occurs as the inward and outward currents balance each other, leading to a net whole cell current that is nearly constant so that dI → 0, dV/dI → ∞ (Figure 6D), followed by a rapid reduction in outward current. Figure 6E demonstrates that individual current densities have a period of inward and outward current balance followed by rapid changes in IKr and other repolarizing currents at 400–500 ms time interval.
 
@@ -91,7 +167,7 @@ We next set out to demonstrate the real-world utility of the multitask classific
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/68335/elife-68335-fig7-v2.jpg)
 
-**Figure 7.:** (A) Experimentally recorded iPSC-CM APs from the Kurokawa lab. (B) Translated adult-CM APs from experimentally recorded iPSC-CM APs via the multitask network. (C) Comparing translated adult-CM APD90 values with 50% Iblock from spontaneously beating simulated iPSC-CMs around 1000 ms beating frequency (turquoise asterisks) with previously published simulated (red curve for drugged and black for drug-free control) and experimental (blue squares) values from the O’Hara–Rudy study (KrShaheen et al., 2018) indicates that predictions fall within the range of experimentally reported values at 1 Hz.
+**Figure 7.:** (A) Experimentally recorded iPSC-CM APs from the Kurokawa lab. (B) Translated adult-CM APs from experimentally recorded iPSC-CM APs via the multitask network. (C) Comparing translated adult-CM APD90 values with 50% IKrblock from spontaneously beating simulated iPSC-CMs around 1000 ms beating frequency (turquoise asterisks) with previously published simulated (red curve for drugged and black for drug-free control) and experimental (blue squares) values from the O’Hara–Rudy study (Shaheen et al., 2018) indicates that predictions fall within the range of experimentally reported values at 1 Hz.
 
 ## Discussion
 
@@ -113,62 +189,174 @@ In this study, we show that a deep learning network can be applied to classify c
 
 ## Materials and methods
 
-## Simulated data for training and testing the multitask network
+### Simulated data for training and testing the multitask network
 
-## The drug-free iPSC-CM and adult-CM APs
+#### The drug-free iPSC-CM and adult-CM APs
 
 The Kernik in silico iPSC-CM baseline cells were paced from resting steady state. The O’Hara–Rudy in silico endocardial cell model was used for the baseline adult-CMs (O'Hara et al., 2011). The control adult-CMs were paced at the cycle length of 982 ms to match the cycle length of the last beat of the spontaneously depolarizing iPSC-CM AP. The iPSC-CM AP populations (n = 208) were generated by incorporating physiological noise (see Simulated physiological noise currents section below). The adult-CMs were paced with noise for 100 beats after reaching steady state at the matching cycle length of the last beat of iPSC-CM AP populations. The numerical method used for updating the voltage was Forward Euler method (Atkinson, 2008).
 
-## A simple drug-induced 1–50% IKr block model through GKr reduction
+### A simple drug-induced 1–50% IKr block model through GKr reduction
 
 The iPSC-CMs and the adult-CMs populations were paced with 1–50% IKr block with 1% increments. This was accomplished by scaling down hERG channel (IKr) conduction, GKr, by the fraction of the block, GKrscale, in the 0.50–0.99 range with 0.01 decrements (see central rows in Figure 1G). The adult-CM model was simulated at five varying beating rates for each percentage of block that matches to the last beat of iPSC-CMs with 1–50% IKr block (n = 250). For example, one drugged adult-CM (50% IKr inhibition) was paced at cycle length of 1047 ms to match the cycle length of the last beat of iPSC-CMs AP with 50% IKr block.
 
-## Complex model of conformation-state dependent IKr block in the presence of 2.72 ng/mL dofetilide
+### Complex model of conformation-state dependent IKr block in the presence of 2.72 ng/mL dofetilide
 
 The IKr channel Hodgkin–Huxley model in both iPSC-CM and adult-CM AP models was replaced with a drug–hERG channel interaction Markov model (see bottom rows in Figure 1G) that we have previously published (Yang et al., 2020). iPSC-CM (n = 300) and adult-CM AP populations (n = 300) were generated with physiological noise in the presence of 2.72 ng/mL dofetilide, a potent hERG channel blocker. The adult-CM populations were paced with dofetilide for 100 beats after reaching steady state at the matching cycle length of the last beat of iPSC-CM AP populations with dofetilide as described above. The simulated drugged and drug-free iPSC-CM and adult-CM AP data used for training and testing the multitask network have been made publicly available at Clancy lab GitHub. (https://github.com/ClancyLabUCD/Multitask_network/tree/master/data, copy archived at swh:1:rev:7f2b653a91f552d66ae2d9b70b720f8706b36da3, Aghasafari, 2021).
 
-## Simulated physiological noise currents
+### Simulated physiological noise currents
 
-Simulated noise current was added to the last 100 paced beats in the simulated AP models, and simulated APs were recorded at the 2000th paced beat in single cells. This noise current was modeled using the equation from Tanskanen and Alvarez, 2007(1)Vt+∆t=Vt-IVt∆tCm+ξn∆twhere n∈N(0,1) is a random number from a Gaussian distribution, and ∆t is the time step. ξ = 0.3 is the diffusion coefficient, which is the amplitude of noise. The noise current was generated and applied to membrane potential, Vt, throughout the last 100 beats of simulated time course.
+Simulated noise current was added to the last 100 paced beats in the simulated AP models, and simulated APs were recorded at the 2000th paced beat in single cells. This noise current was modeled using the equation from Tanskanen and Alvarez, 2007
 
-## Experimental iPSC-CMs
+$$
+V_{t+\Deltat}=V_{t}-\frac{IV_{t}\Deltat}{C_{m}}+ξn\sqrt{\Deltat}
+$$
+
+where n∈N(0,1) is a random number from a Gaussian distribution, and ∆t is the time step. ξ = 0.3 is the diffusion coefficient, which is the amplitude of noise. The noise current was generated and applied to membrane potential, Vt, throughout the last 100 beats of simulated time course.
+
+### Experimental iPSC-CMs
 
 Human iPSC-CMs (201B7, RIKEN BRC, Tsukuba, Japan) were cultured and subcultured on SNL76/7 feeder cells as described in detail previously (Li et al., 2017). Cardiomyocyte differentiation was performed as described (Li et al., 2017). Commercially available iCell-cardiomyocytes (FUJIFILM Cellular Dynamics, Inc, Tokyo, Japan) were cultured according to the manual provided from the company. APs were recorded with the perforated configuration of the patch-clamp technique as described in detail previously (Li et al., 2017). Measurements were performed at 36 ± 1°C with the external solution composed of (in mM) NaCl (135), NaH2PO4 (0.33), KCl (5.4), CaCl2 (1.8), MgCl2 (0.53), glucose (5.5), and HEPES, pH 7.4. To achieve patch perforation (10–20 MΩ; series resistances), amphotericin B (0.3–0.6 µg/mL) was added to the internal solution composed of (in mM) aspartic acid (110), KCl (30), CaCl2 (1), adenosine-5′-triphosphate magnesium salt (5), creatine phosphate disodium salt (5), HEPES (5), and EGTA (11), pH 7.25. In quiescent cardiomyocytes, APs were elicited by passing depolarizing current pulses (2 ms in duration) of suprathreshold intensity (120% of the minimum input to elicit APs) with a frequency at 1 Hz unless noted otherwise. The experimental data used for the model validation have been made publicly available at Clancy lab GitHub. (https://github.com/ClancyLabUCD/Multitask_network/blob/master/data/clean_data/experiments.csv).
 
-## The multitask network architecture
+### The multitask network architecture
 
 The multitask network comprised two stacked LSTM layers followed by independent fully connected layers (Figure 3A) for the classification and translation tasks. The LSTM layers memorized the important information the network needed to perform two discussed tasks and then transferred the extracted information (features) into the subsequent fully connected layers to translate iPSC-CM APs into adult-CM AP waveforms (Figure 3B) and classify iPSC-CM APs into drug-free and drugged categories (Figure 3C).
 
-## LSTM layers (Figure 3D)
+### LSTM layers (Figure 3D)
 
-We used LSTM layers as the first two layers of the multitask network to promote network temporal information learning which data in a sequence was important to keep or to throw away. At each time step, the LSTM cell took in three different pieces of information, the current input data (APiPSCt), incoming short-term memory (hidden state) (ht-1) and incoming long-term memory (cell state) (Ct-1). The LSTM layers were responsible for extracting the most important information while scanning the AP traces using the short- and long-term memory components. The short-term memory weighted the importance of AP values at subsequent time steps and long-term memory has been using the short-term memory to decide the overall importance of all AP values from the beginning (t = 0 ms) to the end (t = 701 ms) for performing classification and translation tasks. The LSTM cells contained internal mechanisms called gates. The gates were neural network with weights (w) and bias terms (b) that regulated the flow of information at each time step before passing on the long-term and short-term information to the next cell (Cheng et al., 2016). These gates are called input gate, forget gate, and output gate (Figure 3D).
+We used LSTM layers as the first two layers of the multitask network to promote network temporal information learning which data in a sequence was important to keep or to throw away. At each time step, the LSTM cell took in three different pieces of information, the current input data $(AP_{iPSC_{t}})$, incoming short-term memory (hidden state) $(h_{t-1})$ and incoming long-term memory (cell state) $(C_{t-1})$. The LSTM layers were responsible for extracting the most important information while scanning the AP traces using the short- and long-term memory components. The short-term memory weighted the importance of AP values at subsequent time steps and long-term memory has been using the short-term memory to decide the overall importance of all AP values from the beginning (t = 0 ms) to the end (t = 701 ms) for performing classification and translation tasks. The LSTM cells contained internal mechanisms called gates. The gates were neural network with weights (w) and bias terms (b) that regulated the flow of information at each time step before passing on the long-term and short-term information to the next cell (Cheng et al., 2016). These gates are called input gate, forget gate, and output gate (Figure 3D).
 
-The forget gate, as the name implies, determined which information from the long-term memory should be kept or discarded. This was done by multiplying the incoming long-term memory by a forget vector generated by the current input (APiPSCt) and incoming short-term memory (ht-1). To obtain the forget vector, the incoming short-term memory and current input were passed through a sigmoid function (σf) (Olah, 2017). The output vector of sigmoid function, Ft, (Equation 2) was a binary comprising 0s and 1s and was then multiplied by the incoming long-term memory (Ct-1) to choose which parts of the long-term memory were retained.(2)Ft=σfwfAPiPSCt+wfht-1+bft∈0,1,…,701
+The forget gate, as the name implies, determined which information from the long-term memory should be kept or discarded. This was done by multiplying the incoming long-term memory by a forget vector generated by the current input ($AP_{iPSC_{t}}$) and incoming short-term memory ($h_{t-1}$). To obtain the forget vector, the incoming short-term memory and current input were passed through a sigmoid function ($\sigma_{f}$) (Olah, 2017). The output vector of sigmoid function, Ft, (Equation 2) was a binary comprising 0s and 1s and was then multiplied by the incoming long-term memory ($C_{t-1}$) to choose which parts of the long-term memory were retained.
 
-The input gate decided what new information is being stored in current long-term memory (Ct). It considered the current input (APiPSCt) and the incoming short-term memory (ht-1) and transformed the values to be between 0 (unimportant) and 1 (important) using a sigmoid activation function (σi) (Equation 3). The second layer in input gate took the incoming short-term memory (ht-1) and current input (APiPSCt) and passed them through a hyperbolic tangent activation function (tanhi) to regulate the network computation (Equation 4).(3)It=σiWiAPiPSCt+Wiht-1+bit∈0,1,…,701(4)St=tanhiwsAPiPSCt+wsht-1+bs
+$$
+F_{t}=\sigma_{f}w_{f}AP_{iPSC_{t}}+w_{f}h_{t-1}+b_{f}t\in0,1,…,701
+$$
 
-The outputs from the forget and input gates then underwent a pointwise addition to find the current long-term memory (Ct) (Equation 5), which was then passed on to the next cell.(5)Ct=Ft*Ct-1+It*St
+The input gate decided what new information is being stored in current long-term memory ($C_{t}$). It considered the current input ($AP_{iPSC_{t}}$) and the incoming short-term memory ($h_{t-1}$) and transformed the values to be between 0 (unimportant) and 1 (important) using a sigmoid activation function ($\sigma_{i}$) (Equation 3). The second layer in input gate took the incoming short-term memory ($h_{t-1}$) and current input ($AP_{iPSC_{t}}$) and passed them through a hyperbolic tangent activation function ($tanh_{i}$) to regulate the network computation (Equation 4).
 
-Finally, the output gate utilized current input (APiPSCt) and the incoming short-term memory (ht-1) and passed them into a sigmoid function (σo) (Equation 6). Then the current long-term memory (Ct) passed through a tanh activation function (tanho) and the outputs from these two processes were multiplied to produce the current short-term memory ht (Equation 7).(6)Ot=σowoAPiPSCt+woht-1+bo(7)ht=Ot*tanhoCt
+$$
+I_{t}=\sigma_{i}W_{i}AP_{iPSC}_{t}+W_{i}h_{t-1}+b_{i}t\in0,1,…,701
+$$
 
-The short-term and long-term memory produced by these gates were carried over to the next cell for the process to be repeated. The output of LSTM layers for each time step (ht) was obtained from the short-term memory, also known as the hidden state, and was subsequently passed into fully connected layers to perform the translation and classification tasks as described below.
 
-## Fully connected layers (Figure 3E)
 
-The fully connected neural network layers contained input, hidden, and output layers (Figure 2E) with various numbers of neurons (lr). Every neuron in a layer was connected to neurons in the next layer (Krogh, 2008). Fully connected layers received the output of LSTM layers as input. The fully connected layers calculated a weighted sum of LSTM outputs and added a bias term to the outputs. These data were then passed to an activation function (f) to define the output for each neuron (Equations 8 and 9; Carugo and Eisenhaber, 2010).(8)ajk=fZjk(9)Zjk=Wi,jk*ajk-1+bkwhere k∈1,…,n and (i, j) represent the number of hidden layers and neurons in each pair of subsequent hidden layers (lr,lr+1). The optimized values for these parameters were found via hyperparameter tuning where ak is each neuron output. a0∈h1,…,hm is the LSTM layer output and the input to the fully connected layers, and an+1 is the network output: y^ϵyti,yci, where yti and yci are the outputs for translation and classification tasks, respectively. We first assigned random values to all network parameters θt; each neuron weight Wi,j (Figure 3E), bias term b, which is a constant added to calculate the neurons output and other network hyperparameters (the number of hidden layers, the number of neurons for each hidden layer and activation functions for each hidden layer) to start the optimization process for finding the best network infrastructure. Next, we estimated the network errors using MSE (Equation 10) and cross-entropy loss functions (Equation 11) to map the translation and classification tasks (Goodfellow et al., 2016; Murphy, 2012), respectively.(10)MSE=1m∑i=1nyti-y^ti2(11)CrossEntropy=-ycilog⁡y^ci+1-ycilog⁡1-y^ciwhere m is the total number of LSTM layer outputs (hm) and yti and y^ti are the simulated and translated adult-CM APs (the network output for translation task). The yci is binary indicator of class labels for iPSC-CM APs (0 for drug-free or 1 for drugged categories) and y^ci is predicted probability of APs being classified into the discussed classes. We used sum of both loss functions (Equation 12) to calculate the overall network error (J) for both translation and classification tasks during the network training process. We updated network parameters θt+1 using adaptive momentum estimation (ADAM) optimization algorithm (Kingma and Ba, 2014) based on the average gradient of overall loss function with respect to the network parameters for 64 randomly selected simulated AP traces (mini-batch = 64) at each training iteration (Equations 13–15).(12)Jθt=CrossEntropyClassification(θt)+MSETranslation(θt)(13)θt+1=θt−α.m^tν^t+ϵ,θtϵ{Wi,jn,bjn}(14)m^t=mt1−β1,wheremt=(1−β1)∇J(θt)+β1mt−1(15)ν^t=νt1−β2,whereνt=(1−β2)(∇J(θt))2+β2vt−1
+$$
+S_{t}=tanh_{i}w_{s}AP_{iPSC}_{t}+w_{s}h_{t-1}+b_{s}
+$$
 
-We used a rectified linear unit (ReLu) (Glorot et al., 2011) as activation function in Equation 8 to calculate the output for each hidden layer neuron at each training iteration. We used dropout regularization (Zaremba et al., 2014) to randomly drop neurons with 0.2 probability of elimination along with their connections from the LSTM and fully connected layers during training to reduce the overfitting. We kept updating the network parameters using ADAM optimization algorithm (Equation 13) to find global minimum of loss function (Equation 12). We computed the exponential average of the gradient (Equation 14) as well as the square of the gradient (Equation 15) for each parameter (θt), where α is the learning rate equal to 0.001, β1,β2 are first and second momentum coefficients equal to 0.9 and 0.999, and ϵ is a small term equal to 1e-8 preventing division by 0.
+The outputs from the forget and input gates then underwent a pointwise addition to find the current long-term memory ($C_{t}$) (Equation 5), which was then passed on to the next cell.
 
-## Computational workflow (Figure 4)
+$$
+C_{t}=F_{t}*C_{t-1}+I_{t}*S_{t}
+$$
+
+Finally, the output gate utilized current input ($AP_{iPSC_{t}}$) and the incoming short-term memory ($h_{t-1}$) and passed them into a sigmoid function ($\sigma_{o}$) (Equation 6). Then the current long-term memory ($C_{t}$) passed through a tanh activation function ($tanh_{o}$) and the outputs from these two processes were multiplied to produce the current short-term memory $h_{t}$ (Equation 7).
+
+$$
+O_{t}=\sigma_{o}w_{o}AP_{iPSC}_{t}+w_{o}h_{t-1}+b_{o}
+$$
+
+
+
+$$
+h_{t}=O_{t}*tanh_{o}C_{t}
+$$
+
+The short-term and long-term memory produced by these gates were carried over to the next cell for the process to be repeated. The output of LSTM layers for each time step ($h_{t}$) was obtained from the short-term memory, also known as the hidden state, and was subsequently passed into fully connected layers to perform the translation and classification tasks as described below.
+
+### Fully connected layers (Figure 3E)
+
+The fully connected neural network layers contained input, hidden, and output layers (Figure 2E) with various numbers of neurons ($l_{r}$). Every neuron in a layer was connected to neurons in the next layer (Krogh, 2008). Fully connected layers received the output of LSTM layers as input. The fully connected layers calculated a weighted sum of LSTM outputs and added a bias term to the outputs. These data were then passed to an activation function (f) to define the output for each neuron (Equations 8 and 9; Carugo and Eisenhaber, 2010).
+
+$$
+a_{j}^{k}=fZ_{j}^{k}
+$$
+
+
+
+$$
+Z_{j}^{k}=W_{i,j}^{k}*a_{j}^{k-1}+b^{k}
+$$
+
+where $k\in1,…,n$ and (i, j) represent the number of hidden layers and neurons in each pair of subsequent hidden layers ($l_{r},l_{r+1}$). The optimized values for these parameters were found via hyperparameter tuning where $a^{k}$ is each neuron output. $a^{0}\inh_{1},…,h_{m}$ is the LSTM layer output and the input to the fully connected layers, and $a^{n+1}$ is the network output: $y^ϵy_{t_{i}},y_{c_{i}}$, where $y_{t_{i}}$ and $y_{c_{i}}$ are the outputs for translation and classification tasks, respectively. We first assigned random values to all network parameters $\theta_{t}$; each neuron weight $W_{i,j}$ (Figure 3E), bias term $b$, which is a constant added to calculate the neurons output and other network hyperparameters (the number of hidden layers, the number of neurons for each hidden layer and activation functions for each hidden layer) to start the optimization process for finding the best network infrastructure. Next, we estimated the network errors using MSE (Equation 10) and cross-entropy loss functions (Equation 11) to map the translation and classification tasks (Goodfellow et al., 2016; Murphy, 2012), respectively.
+
+$$
+MSE=\frac{1}{m}\sumi=1ny_{t_{i}}-y^_{t_{i}}^{2}
+$$
+
+
+
+$$
+CrossEntropy=-y_{c_{i}}log⁡y^_{c_{i}}+1-y_{c_{i}}log⁡1-y^_{c_{i}}
+$$
+
+where m is the total number of LSTM layer outputs ($h_{m}$) and $y_{t_{i}}$ and $y^_{t_{i}}$ are the simulated and translated adult-CM APs (the network output for translation task). The $y_{c_{i}}$ is binary indicator of class labels for iPSC-CM APs (0 for drug-free or 1 for drugged categories) and $y^_{c_{i}}$ is predicted probability of APs being classified into the discussed classes. We used sum of both loss functions (Equation 12) to calculate the overall network error ($J$) for both translation and classification tasks during the network training process. We updated network parameters $\theta_{t+1}$ using adaptive momentum estimation (ADAM) optimization algorithm (Kingma and Ba, 2014) based on the average gradient of overall loss function with respect to the network parameters for 64 randomly selected simulated AP traces (mini-batch = 64) at each training iteration (Equations 13–15).
+
+$$
+J\theta_{t}=CrossEntropy_{Classification}(\theta_{t})+MSE_{Translation}(\theta_{t})
+$$
+
+
+
+$$
+\theta_{t+1}=\theta_{t}−\frac{\alpha.m^_{t}}{\sqrt{ν^_{t}}+ϵ},\theta_{t}ϵ{W_{i,j}^{n},b_{j}^{n}}
+$$
+
+
+
+$$
+m^_{t}=\frac{m_{t}}{1−\beta_{1}},wherem_{t}=(1−\beta_{1})∇J(\theta_{t})+\beta_{1}m_{t−1}
+$$
+
+
+
+$$
+ν^_{t}=\frac{ν_{t}}{1−\beta_{2}},whereν_{t}=(1−\beta_{2})(∇J(\theta_{t}))^{2}+\beta_{2}v_{t−1}
+$$
+
+We used a rectified linear unit (ReLu) (Glorot et al., 2011) as activation function in Equation 8 to calculate the output for each hidden layer neuron at each training iteration. We used dropout regularization (Zaremba et al., 2014) to randomly drop neurons with 0.2 probability of elimination along with their connections from the LSTM and fully connected layers during training to reduce the overfitting. We kept updating the network parameters using ADAM optimization algorithm (Equation 13) to find global minimum of loss function (Equation 12). We computed the exponential average of the gradient (Equation 14) as well as the square of the gradient (Equation 15) for each parameter ($\theta_{t}$), where $\alpha$ is the learning rate equal to 0.001, $\beta_{1},\beta_{2}$ are first and second momentum coefficients equal to 0.9 and 0.999, and $ϵ$ is a small term equal to 1e-8 preventing division by 0.
+
+### Computational workflow (Figure 4)
 
 We first preprocessed iPSC-CM and adult-CM APs by applying a digital forward and backward data filtering technique (Gustafsson, 1996) and calculated the mean values for iPSC-CM and adult-CM AP traces. We removed the calculated mean values from the corresponding AP traces to center values on zero. Next the iPSC-CM and adult-CM AP traces were divided by maximum AP values to normalize the AP values for more efficient training process. Next, we split the preprocessed data in 70:10:20 ratio into training, validation, and test datasets, respectively, and implemented the network architecture using Pytorch (Ketkar, 2017). During the training process, the multitask network received iPSC-CM AP time-course data as inputs and predicted adult-CM AP time courses. The network also received the category (drug-free and drugged) of the iPSC-CM AP data. The network next calculated the MSE (Equation 10) between predicted AP waveforms and the expected waveforms for adult-CM APs. It also calculated cross-entropy (Equation 11) between the predicted category for the iPSC-CM AP and the expected value. The cross-entropy was added to the calculated MSE to determine the total loss for training. The ADAM optimization algorithm was then used to update the network weights and bias terms.
 
 We performed updating the network parameters (Equation 13) and monitored the network performance for the training and validation datasets until the point at which the network performance on the training dataset began to degrade compared to the validation dataset. This process was used to identify the optimal number of iterations (epochs = 300) for the training process. The last trained network was designated as the best possible model to perform both translation and classification tasks. We then used a holdout test dataset and calculated MSE (Equation 10), R2 score (Equations 16 and 17), and the error in prediction for adult-CM APD90 as evaluation metrics to assess the performance of the network for translation task and the AUROC, accuracy, recall, and precision to measure capability of network for classification task as described below. The network codes have been made publicly available at Clancy lab GitHub. (https://github.com/ClancyLabUCD/Multitask_network).
 
-## Evaluation metrics for the translation and classification tasks
+### Evaluation metrics for the translation and classification tasks
 
-As we discussed, we used MSE and cross-entropy loss functions for performance evaluation of translation and classification tasks. In addition to MSE, we computed R2 score (Devore, 2011; Equations 16 and 17) to measure how close the translated adult-CM AP (y^ti) was to the expected simulated adult-CM AP (yti). We compared the histogram distribution of simulated and translated adult-CM APD90 values and the error in APD90 prediction to assess the accuracy of network prediction.(16)y^-ti=1m∑i=1my^ti(17)R2=∑i(y^ti-y^-ti)∑iyti-y-ti
+As we discussed, we used MSE and cross-entropy loss functions for performance evaluation of translation and classification tasks. In addition to MSE, we computed R2 score (Devore, 2011; Equations 16 and 17) to measure how close the translated adult-CM AP $(y^_{t_{i}})$ was to the expected simulated adult-CM AP $(y_{t_{i}})$. We compared the histogram distribution of simulated and translated adult-CM APD90 values and the error in APD90 prediction to assess the accuracy of network prediction.
+
+$$
+y^-_{t_{i}}=\frac{1}{m}\sumi=1my^_{t_{i}}
+$$
+
+
+
+$$
+R^{2}=\frac{\sumi(y^_{t_{i}}-y^-_{t_{i}})}{\sumiy_{t_{i}}-y-_{t_{i}}}
+$$
 
 We used AUROC to measure the capability of the model to distinguish between drug-free and drugged iPSC-CM APs (Fawcett, 2006). AUROC is the area under the receiver operating characteristic (ROC) curve that is a plot of the false-positive rate (FPR), the probability that the network classified drug-free iPSC-CM APs into drugged categories (FP) (Equation 18) versus the true-positive rate (TPR) or recall, the probability that the network correctly classified drugged iPSC-CM APs into drugged category (TP) (Equation 19). AUROC close to 1 indicated a model with a desirable measure of separability, while a poor model had AUROC near 0, which means that it had poor separability.
 
-In addition, we used recall, accuracy, and precision to describe the performance of the network for the classification task (Sube and Ertel, 2017), where the accuracy and precision indicated the proportion of all correct, TP + true negatives (TN), that is, predicted drug-free APs (Equation 20) and correct positive identifications (Equation 21). False negatives (FN) in Equations 19 and 20 were the total number of drugged iPSC-CM APs classified as drug-free.(18)FPR=FPFP+TN(19)Recall=TPTP+FN(20)Accuracy=100*TP+TNTP+TN+FP+FN(21)Precision=TPTP+FP
+In addition, we used recall, accuracy, and precision to describe the performance of the network for the classification task (Sube and Ertel, 2017), where the accuracy and precision indicated the proportion of all correct, TP + true negatives (TN), that is, predicted drug-free APs (Equation 20) and correct positive identifications (Equation 21). False negatives (FN) in Equations 19 and 20 were the total number of drugged iPSC-CM APs classified as drug-free.
+
+$$
+FPR=\frac{FP}{FP+TN}
+$$
+
+
+
+$$
+Recall=\frac{TP}{TP+FN}
+$$
+
+
+
+$$
+Accuracy=100*\frac{TP+TN}{TP+TN+FP+FN}
+$$
+
+
+
+$$
+Precision=\frac{TP}{TP+FP}
+$$

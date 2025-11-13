@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Biophysics Graduate Group, University of California, Berkeley Berkeley United States
-2. https://ror.org/04n1n3n22 Department of Molecular and Cell Biology, Helen Wills Neuroscience Institute, and California Institute for Quantitative Biosciences (QB3), University of California, Berkeley Berkeley United States
-3. https://ror.org/024mw5h28 Department of Chemistry, Chicago Center for Theoretical Chemistry, Institute for Biophysical Dynamics, and James Franck Institute, The University of Chicago Chicago United States
-4. https://ror.org/01139ec29 Materials and Structural Analysis Division, Thermo Fisher Scientific Eindhoven Netherlands
+1. Biophysics Graduate Group, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Department of Molecular and Cell Biology, Helen Wills Neuroscience Institute, and California Institute for Quantitative Biosciences (QB3), University of California, Berkeley Berkeley United States ([ROR:04n1n3n22](https://ror.org/04n1n3n22))
+3. Department of Chemistry, Chicago Center for Theoretical Chemistry, Institute for Biophysical Dynamics, and James Franck Institute, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+4. Materials and Structural Analysis Division, Thermo Fisher Scientific Eindhoven Netherlands ([ROR:01139ec29](https://ror.org/01139ec29))
 
 † Corresponding author
 
@@ -35,6 +35,26 @@ Despite its essential role in viral assembly and implication in pathogenesis, th
 ## Results
 
 We determined the structure of SARS-CoV-2 M in lipid nanodiscs (Figure 1). Full-length M was expressed in Spodoptera frugiperda (Sf9) cells with a cleavable C-terminal GFP tag. Gel filtration chromatography of protein extracted in DDM/CHS detergent shows M runs predominantly as a single species consistent with a 50 kDa homodimer. We do not observe evidence of specific higher-order oligomerization at low concentrations by fluorescence size exclusion chromatography or at higher concentrations in large-scale purifications (Figure 1—figure supplement 1). SARS-CoV-2 ORF3a, in contrast, assembles into stable homodimers and homotetramers under similar conditions (Kern et al., 2021).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-v2.jpg)
+
+**Figure 1.:** (a) A 3.5 Å resolution cryo-EM map of SARS-CoV-2 M in MSP1E3D1 nanodiscs viewed from the membrane. One subunit is colored pink, and the second subunit is colored blue. Density corresponding to the lipid nanodisc is shown transparent. (b,c) Model of M viewed (b) from the membrane in two rotations and (c) from the extracellular or lumenal side. (d) Cartoon schematic of an M monomer with secondary structure elements indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Fluorescence size exclusion chromatogram of M expressed in insect cells and extracted in DDM/CHS. (b) Size exclusion chromatogram of M expressed in insect cells and extracted and purified in DDM/CHS. (c) Size exclusion chromatogram of M reconstituted into MSP1E3D1 lipid nanodiscs. Samples were run on Superose 6 columns. Blue bars indicate pooled fractions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Representative micrograph, (b) selected 2D class averages, (c) angular distribution of particles used in final refinement, (d) Fourier shell correlation (FSC) relationships, and (e) local resolution estimated in cryoSPARC colored as indicated on the final map. Side, top, and bottom views are shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Overlay of the experimental and AlphaFold2 predicted M structures (Jumper et al., 2021). (b) Overlay of experimental and one RoseTTAfold predicted M structure (Heo and Feig, 2020). Major differences are observed in chain topology in the transmembrane region and relative orientation of transmembrane and cytosolic domains.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Alignment of 42 M protein sequences colored by conservation in a ramp from white (not conserved) to dark blue (highly conserved). Accession numbers are indicated. Sequences were selected from representative species from each Coronavirus subgenus. Secondary structure from SARS-CoV-2 M is drawn above the alignment.
 
 We reconstituted homodimeric SARS-CoV-2 M in nanodiscs made from the scaffold protein MSP1E3D1 and lipids (DOPE:POPC:POPS in a 2:1:1 ratio) and determined its structure by cryo-EM (Figure 1, Figure 1—figure supplement 2, Supplementary file 1). The majority of M (189 of 222 amino acids per subunit) was de novo modeled in the cryo-EM map (Figure 1, Figure 1—figure supplement 2). The N-terminus (amino acids 1–16) and C-terminus (amino acids 205–222) are not resolved in the map and were not modeled. Loops connecting transmembrane helices (amino acids 36–42 and 71–78) are the least well-resolved regions of the structure. The relatively weak density is consistent with a lack of stabilizing interactions between these and other M regions and likely indicates they adopt a range of conformations among particles used to generate the final map.
 
@@ -66,6 +86,14 @@ The large, complementary, and hydrophobic interface between transmembrane and cy
 
 We equilibrated M in a lipid environment and ran an all-atom MD simulation for 2 µs. Major conformational changes related to protein function typically take place on a timescale ranging from a microsecond to seconds (Xue et al., 2012; Klepeis et al., 2009; Don et al., 2018). Prior work has reported that microsecond simulations can capture large conformational changes of membrane proteins in a lipid bilayer (Monje-Galvan and Voth, 2021; Brandner et al., 2019; Nury et al., 2010; Monje-Galvan and Voth, 2020). We therefore expected to capture a subset of possible structural changes in our simulation that correspond to relatively frequently accessed states. Overall, we did not observe substantial conformational rearrangements in M during the simulation (Figure 5A and B). Superposition of the experimental and final M structure following the simulation shows minor deviations through most of the protein (overall RMSD of 2.5 Å) (Figure 5A). The largest difference is a shift in TM1 up toward the extracellular/lumenal side by approximately half a helical turn, enabled by rearrangement of the TM1-TM2 linker (Figure 5A). This relatively subtle movement is consistent with weaker density for the TM1-TM2 linker in the cryo-EM map and fewer packing interactions for TM1 than TM2 or TM3. Per residue deviations ranged from ~1 to 4 Å and, aside from the movement of TM1, were similar between subunits and largest in the TM2-TM3 linker, transmembrane to cytosolic region connection, and loops connecting strands in the cytosolic domain. Minimal structural deviation was observed during the simulation within or between subunits as judged by the number of close Cα contacts, the angle between transmembrane and cytosolic regions, the distance between transmembrane regions, or the distance between cytosolic domains (Figure 5D–H). Consistent with limited movement of the transmembrane region and a lack of evidence for lipid binding in the cryo-EM structure, no obvious enrichment of specific lipids around M was identified following simulation (Figure 5—figure supplement 1). Finally, the internal M pocket remained similar in size and sealed from the surrounding solution throughout the simulation (Figure 5I and J). Taken together, these data suggest that M adopts a stable structure with minimal dynamic rearrangements on the microsecond timescale, at physiological temperature, and in the absence of additional binding proteins. These results are consistent with the absence of other highly populated conformations in our cryo-EM data, though we cannot exclude the possibility that M undergoes rare large-scale conformational changes under these conditions not captured in the simulation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig5-v2.jpg)
+
+**Figure 5.:** (a) Overlay of M cryo-EM structure (colored in pink and blue) and final structure (in white) following 2.0 μs all-atom molecular dynamics simulation. (b) Overall RMSD between simulated and initial structure during simulation. (c) Root mean square fluctuation of protein residues in the simulation. Orange and yellow colors correspond to individual M protein chains. (d) Number of C-alpha contacts between two monomers. (e) Structural representation of distances and angles used for calculations in (f–h). (f) A188-R107-I73 angle plot for each monomer. One monomer has slightly higher values than the other. (g) Center of mass distance between I73 residues at the top of the TM2-TM3 linker. (h) Center of mass distance between A188 residues at the base of the cytosolic domains. (i) Mean radius of the enclosed pocket in M over the simulation trajectory versus distance along the symmetry axis. At its widest positions, the pocket is wide enough to accommodate two water molecules. (j) Minimum hole radius versus the frame number in the simulation. The lack of substantial changes in radius indicates a stable pocket size and shape that does not open to solution during the simulation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81702/elife-81702-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Equilibrated membrane (M) structure in lipid membrane consisting of DOPE:POPS:POPC in a 2:1:1 mass ratio. (b) Final M structure of the simulation shown with the pocket colored red where the radius is too small for a water molecule, green where it can accommodate a single water molecule, and blue where it can accommodate two water molecules. (c) Lipid sorting patterns. Darker regions indicate higher density of the lipids. Black color is the average location of the M dimer. No obvious pattern of enrichment is observed.
+
 ## Discussion
 
 The structure of the SARS-CoV-2 M protein that we have obtained by cryo-EM reveals a homodimeric fold that is structurally homologous to the nonselective Ca2+ permeable cation channel of SARS-CoV-2, ORF3a. As with 3a, each subunit of M contains three transmembrane helices and a C-terminal β-sandwich domain. However, the structure differs from ORF3a in several key ways that provide insight into how these structurally similar proteins can fill drastically different apparent roles in the coronavirus life cycle.
@@ -82,21 +110,21 @@ At present the World Health Organization puts the confirmed number of COVID-19 c
 
 ## Methods
 
-## Cloning and protein expression
+### Cloning and protein expression
 
 The coding sequence for SARS-Cov-2 M protein (Uniprot P0DTC5) was synthesized (IDT, Newark, NJ) and cloned into a vector based on the pACEBAC1 backbone (MultiBac; Geneva Biotech, Geneva, Switzerland) with an added C-terminal PreScission protease (PPX) cleavage site, linker sequence, superfolder GFP (sfGFP), and 7xHis tag, generating a construct for expression of M-SNS-LEVLFQGP-SRGGSGAAAGSGSGS-sfGFP-GSS-7xHis (Kern and Brohawn, 2021). MultiBac cells were used to generate a Bacmid according to the manufacturer’s instructions. Sf9 cells were cultured in ESF 921 medium (Expression Systems, Davis, CA) and P1 virus was generated from cells transfected with Escort IV reagent (MilliporeSigma, Burlington, MA) according to the manufacturer’s instructions. P2 virus was then generated by infecting cells at 2 million cells/mL with P1 virus at an MOI ~ 0.1, with infection monitored by fluorescence and harvested at 72 hr. P3 virus was generated in a similar manner to expand the viral stock. The P2 or P3 viral stock was then used to infect Sf9 cells at 4 million cells/mL at an MOI ~ 2–5. At 72 hr, infected cells containing expressed M-sfGFP protein were harvested by centrifugation at 2500 × g for 10 min and frozen at –80°C.
 
-## Protein purification
+### Protein purification
 
 Infected Sf9 cells from 1 L of culture (~15 mL of cell pellet) were thawed in 100 mL of Lysis Buffer containing 50 mM HEPES, 150 mM KCl, 1 mM EDTA pH 8. Protease inhibitors (final concentrations: E64 [1 µM], pepstatin A [1 µg/mL], soy trypsin inhibitor [10 µg/mL], benzamidine [1 mM], aprotinin [1 µg/mL], leupeptin [1 µg/mL], AEBSF [1 mM], and PMSF [1 mM]) were added to the lysis buffer immediately before use. Benzonase (4 µL) was added after the cell pellet thawed. Cells were then lysed by sonication and centrifuged at 150,000 × g for 45 min. The supernatant was discarded, and residual nucleic acid was removed from the top of the membrane pellet using DPBS. Membrane pellets were scooped into a dounce homogenizer containing extraction buffer (50 mM HEPES, 150 mM KCl, 1 mM EDTA, 1% n-dodecyl-β-D-maltopyranoside (DDM, Anatrace, Maumee, OH), 0.2% cholesteryl hemisuccinate Tris salt (CHS, Anatrace, Maumee, OH) pH 8). A stock solution of 10% DDM, 2% CHS was dissolved and clarified by bath sonication in 200 mM HEPES pH 8 prior to addition to buffer to the indicated final concentration. Membrane pellets were then homogenized in extraction buffer and this mixture (150 mL final volume) was gently stirred at 4°C for 1.5 hr. The extraction mixture was centrifuged at 33,000 × g for 45 min and the supernatant, containing solubilized membrane protein, was bound to 4 mL of Sepharose resin coupled to anti-GFP nanobody for 1.5 hr at 4°C. The resin was then collected in a column and washed with 10 mL of buffer 1 (20 mM HEPES, 150 mM KCl, 1 mM EDTA, 0.025% DDM, 0.005% CHS, pH 7.4), 40 mL of buffer 2 (20 mM HEPES, 500 mM KCl, 1 mM EDTA, 0.025% DDM, 0.005% CHS, pH 7.4), and 10 mL of buffer 1. The resin was then resuspended in 6 mL of buffer 1 with 0.5 mg of PPX protease and rocked gently in the capped column for 2 hr. Timing of this step was critical as longer incubations in detergent significantly reduced yield and sample quality. Cleaved M protein was then eluted with an additional 12 mL of wash buffer, spin concentrated to ~1 mL with Amicon Ultra spin concentrator 10 kDa cutoff (Millipore), and loaded onto a Superose 6 increase column (GE Healthcare, Chicago, IL) on an NGC system (Bio-Rad, Hercules, CA) equilibrated in buffer 1. Peak fractions containing M protein were then collected and spin concentrated prior to incorporation into nanodiscs.
 
-## Nanodisc formation
+### Nanodisc formation
 
 Freshly purified M protein in buffer 1 was reconstituted into MSP1E3D1 nanodiscs with a mixture of lipids (DOPE:POPS:POPC at a 2:1:1 mass ratio, Avanti, Alabaster, AL) at a final molar ratio of 1:4:400 (M:MSP1E3D1:lipid).
 
 Twenty mM solubilized lipid in lipid dilution buffer (20 mM HEPES, 150 mM KCl, pH 7.4) was mixed with additional DDM/CHS detergent and M protein at 4°C for 30 min before addition of purified MSP1E3D1. This addition brought the final concentrations to approximately 10 µM M protein, 40 µM MSP1E3D1, 4 mM lipid mix, 10 mM DDM, and 1.7 mM CHS. The solution with MSP1E3D1 was mixed at 4°C for 15 min before addition of 150 mg of Biobeads SM2. Biobeads (washed into methanol, water, and then Nanodisc Formation Buffer) were weighed after liquid was removed by pipetting (damp weight). This final mixture was then gently tumbled at 4°C overnight (~12 hr). Supernatant was cleared of beads by letting large beads settle and carefully removing liquid with a pipette. Sample was spun for 10 min at 21,000 × g before loading onto a Superose 6 increase column in 20 mM HEPES, 150 mM KCl, pH 7.4. Peak fractions corresponding to M protein in MSP1E3D1 were collected, 10 kDa cutoff spin concentrated, and used for grid preparation. MSP1E3D1 was prepared as previously described (Ritchie et al., 2009) without cleavage of the His-tag.
 
-## Cryo-EM sample preparation and data collection
+### Cryo-EM sample preparation and data collection
 
 M in MSP1E3D1 was prepared at a final concentration of 1.3 mg/mL. Concentrated sample was cleared by a 10 min 21,000 × g spin at 4°C prior to grid preparation; 3.4 µl of protein was applied to freshly glow discharged Holey Carbon, 300 mesh R 1.2/1.3 gold grids (Quantifoil, Großlöbichau, Germany) and plunge frozen in liquid ethane using an FEI Vitrobot Mark IV (Thermo Fisher Scientific) was used with 4°C, 100% humidity, 1 blot force, a wait time of ~5 s, and a 3 s blot time.
 
@@ -104,7 +132,7 @@ Grids were clipped and sent to Thermo Fisher Scientific RnD division in Eindhove
 
 See Supplementary file 1 for data collection statistics.
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 Motion correction and dose weighting were performed on all 7588 videos using RELION 4.0’s implementation of MotionCor2 at 0.727 Å per pixel. Contrast transfer function (CTF) parameters were fit with CTFFIND-4.1. Template-free auto-picking of particles was performed with RELION 4.0’s Laplacian-of-Gaussian filter on Video CTF fit to 5.0 Å or better, yielding an initial set of 2,379,507 particles. These particles were then extracted at a 288-pixel box size and transferred to cryoSPARC v.3.2 for 2D classification.
 
@@ -116,15 +144,15 @@ Good particles from the initial auto-picked particle set and both Topaz particle
 
 The resulting ‘shiny’ particles were imported back into cryoSPARC v3.2 for one additional round of 2D classification. The final 64,966 particles were used to generate a new ab initio and a subsequent non-uniform refinement (C2, 2 extra passes, 16 Å initial resolution, 1.5 adaptive window factor) yielded the final map at 3.5 Å nominal resolution.
 
-## Modeling, refinement, and analysis
+### Modeling, refinement, and analysis
 
 cryoSPARC sharpened cryo-EM maps were used to de novo model M using Coot (Emsley et al., 2010). The model was real space refined in Phenix (Afonine et al., 2018) and validated using Molprobity (Williams et al., 2018). Cavity and tunnel measurements were made with CASTp (Tian et al., 2018). Comparisons to the structure database were performed with DALI (Holm, 2020). Figures were prepared using ChimeraX (Goddard et al., 2018), Prism, Adobe Photoshop, and Adobe Illustrator software.
 
-## Fluorescence size exclusion chromatography
+### Fluorescence size exclusion chromatography
 
 Sf9 cells (~4 million) from the third day of infection were pelleted, frozen, and then thawed into extraction buffer (20 mM Tris pH 8, 150 mM KCl, all protease inhibitors used for protein purification, 1 mM EDTA, 1% DDM, 0.2% CHS). Extraction was performed at 4°C for 1 hr and lysate was then pelleted at 21,000 × g at 4°C for 1 hr to clear the supernatant. Supernatant was then run on a Superose 6 Increase column with fluorescence detection for GFP into 20 mM HEPES, pH 7.4, 150 mM KCl, 0.025% DDM, 0.005% CHS.
 
-## Molecular dynamics
+### Molecular dynamics
 
 The initial MD system of M protein and lipid bilayer was built using CHARMM-GUI Membrane Builder (Jo et al., 2008; Brooks et al., 2009; Lee et al., 2016; Jo et al., 2007). A 20×20 nm lipid bilayer membrane was taken with a mixture of DOPE, POPS, and POPC lipids in a 2:1:1 mass ratio. A fully hydrated bilayer was built around the M protein, centering the transmembrane region close to the lipid bilayer center. To neutralize the system, a 0.15 M KCl salt concentration was used. The simulations were performed on GROMACS MD simulation package (Abraham et al., 2015) with the CHARMM36m force field (Huang et al., 2017). An initial minimization of the system was carried out following six-step protocols provided on CHARMM-GUI (Jo et al., 2009). A time step of 2fs was used with periodic boundary conditions for the simulations. A simulation temperature of 310.15 K was maintained with a Nose-Hoover thermostat (Hoover, 1985; Nosé, 1984) and a coupling time constant of 1.0 ps in GROMACS. The pressure was set at 1 bar with a Berendsen barostat (Berendsen et al., 1984) during initial relaxation. For the production runs, the Parrinello-Rahman barostat was used semi-isotropically with the compressibility of 4.5×10–5 and a coupling time constant of 5.0 ps (Nosé and Klein, 1983; Parrinello and Rahman, 1981). For the non-bonded interactions a switching function between 1.0 and 1.2 nm was used. The long-range electrostatics were computed using particle Mesh Ewald (Darden et al., 1993). The LINCS algorithm was used to constrain hydrogen bonds (Hess et al., 1997). We performed 1.6 µs production run for the system and used Frontera (TACC), and Midway2 (Research Computing Center at the University of Chicago) to run these simulations.
 

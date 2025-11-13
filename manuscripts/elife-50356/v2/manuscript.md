@@ -26,51 +26,241 @@ Endometriosis is a chronic inflammatory disease that affects 1 in 10 women of ch
 
 ## Results and discussion
 
-## Ectopic endometrium leads to pain sensitivity in the caudal abdomen, anxiety-like behavior and memory impairment
+### Ectopic endometrium leads to pain sensitivity in the caudal abdomen, anxiety-like behavior and memory impairment
 
 Our first aim was to characterize a novel experimental procedure to evaluate at the same time nociceptive, cognitive and emotional manifestations of endometriosis pain in female mice. Mice were subjected to a surgical implantation of endometrial tissue in the peritoneal wall of the abdominal compartment or to a sham procedure. Mice receiving ectopic endometrial implants developed persistent mechanical hypersensitivity in the caudal abdominal area, whereas sham mice recovered their baseline sensitivity and showed significant differences in comparison to endometriosis mice since the second week of implantation (Figure 1a and Figure 1—figure supplement 1). To test whether mechanical hypersensitivity of endometriosis mice was specific to this abdominal region, nociceptive responses were also measured in the hind paw. In this distant area, mechanical sensitivity remained unaltered, indicating that pain sensitization did not generalize to other sites (Figure 1b and Figure 1—figure supplement 2). To discern whether increased nociception was accompanied by a component of negative affect, a measure of pain unpleasantness was taken on day 14 after the surgeries (Figure 1c). Endometriosis mice showed increased nocifensive behaviors to mechanical stimuli when compared with sham mice. Similarly, endometriosis mice exhibited enhanced anxiety-like behavior reflected in lower percentages of time and entries to the open arms of the elevated plus maze (Figure 1d). Total arm entries were similar in both groups (Figure 1d). In line with these findings, previous rodent models of endometriosis found increased mechanosensitivity in the lower abdomen (Arosh et al., 2015; Greaves et al., 2017) and affective-like disturbances (Filho et al., 2019; Li et al., 2018). Previous works associate nociceptive and emotional distress in chronic pain settings with cognitive decline (Bushnell et al., 2015; La Porta et al., 2015; You et al., 2018), although this cognitive impairment has not yet been revealed in rodent models of endometriosis. We found in our model a dramatic impairment of long-term memory in endometriosis mice (Figure 1e). While mnemonic effects of this pathology have not been thoroughly evaluated, a cognitive impairment may contribute to the loss of working ability consistently reported in women with endometriosis (Hansen et al., 2013; Sperschneider et al., 2019). Hence, mice with ectopic endometrium recapitulate in our model some of the symptomatology observed in the clinics, although manifestations of spontaneous pain could not be evaluated in this work.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig1-v2.jpg)
+
+**Figure 1.:** Endometriosis mice showed (a) persistent mechanical abdominal hypersensitivity that (b) was localized in the caudal abdominal area but not detectable in distant areas (hind paw). Mechanical sensitivity is represented by the area under the curve of frequency of response to von Frey filaments. Higher values mean higher mechanical pain. Mice receiving endometrial implants also showed (c) increased nocifensive behavior, (d) anxiety-like behavior in the elevated plus maze test and (e) cognitive impairment in the novel object recognition task. (f) From left to right: cysts were recovered from endometriosis mice, were filled with fluid (scale bar = 1 mm), contained endometrial epithelium and stroma (scale bar = 100 μm) and were innervated by beta-III tubulin-labeled fibers (scale bar = 100 μm, blue is DAPI and white is β-III tubulin). Error bars are mean ± SEM. One-way repeated measures ANOVA + Bonferroni (a and b) and Student t-test (c, d and e). *p<0.05, **p<0.01, ***p<0.001 vs sham. ##p<0.01, ###p<0.001 vs baseline. Endo, endometriosis, AUC, area under the curve.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Significantly higher frequency of responses and AUC was observed in endometriosis mice when compared to sham mice on days 14, 21 and 28 after the surgery. For each day, left panel is frequency of response to each von Frey filament and right panel is the corresponding mechanical sensitivity represented by the area under the curve of frequency of response to von Frey filaments. Higher values mean higher mechanical pain. (b) Site of application of the von Frey filaments (Test area). Error bars are mean ± SEM. For each day, one-way repeated measures ANOVA (left panels) and Student t-test (right panels). *p<0.05, **p<0.01 vs sham. Endo, endometriosis; AUC, area under the curve.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Frequency of responses to von Frey filaments applied against the caudal abdominal area and corresponding AUCs on day 14 after surgery were significantly higher in endometriosis mice when compared to sham mice. (b) Frequency of responses to von Frey filaments applied against the hind paw and corresponding AUCs were similar before and after surgery in endometriosis and sham mice. For each day, left panel is frequency of response to each von Frey filament and right panel is the corresponding mechanical sensitivity represented by the area under the curve of frequency of response to von Frey filaments. Higher values mean higher mechanical pain. Error bars are mean ± SEM. One-way repeated measures ANOVA (left panels) and Student t-test (right panels). ***p<0.001 vs sham. Endo, endometriosis; AUC, area under the curve.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) The percentage of immunoreactive area of the mesometrial aspect of the uterus was higher in endometriosis mice. (b) The percentage of immunoreactive area of myometrium did not differ between groups. Blue is DAPI and white is β-III tubulin. Scale bar = 100 μm. Error bars are mean ± SEM. Student t-test. **p<0.01 vs sham. Endo, endometriosis.
+
 Mice receiving endometrial implants developed 3 to 5 endometrial cysts in the peritoneal wall of the abdominal compartment. Cysts were of 2.59 ± 0.34 mm diameter, filled with fluid, with glandular epithelium and stroma and innervated by beta-III tubulin positive fibers (Figure 1f), as shown in women (Tokushige et al., 2006; Wang et al., 2009) and other rodent models (Arosh et al., 2015; Berkley et al., 2004). Interestingly, we also found increased expression of the neuronal marker beta-III tubulin in the uteri of endometriosis mice (Figure 1—figure supplement 3), mimicking not only some of the symptoms but also the histological phenotype observed in women with endometriosis (Miller and Fraser, 2015; Tokushige et al., 2006).
 
-## Δ9-tetrahydrocannabinol alleviates pain in the caudal abdomen, restores cognitive function and limits the growth of ectopic endometrium
+### Δ9-tetrahydrocannabinol alleviates pain in the caudal abdomen, restores cognitive function and limits the growth of ectopic endometrium
 
 Our second objective was to assess the effects of THC exposure on the endometriosis model to select an appropriate dose for a chronic treatment. Acute doses of THC were first tested in endometriosis and sham mice at a time point in which endometriotic lesions and hypersensitivity in the caudal abdomen were fully developed. Acute THC administration produced a dose-dependent reduction of abdominal mechanical hypersensitivity (Figure 2). The acute ED50 of THC 1.916 mg/kg (≈2 mg/kg) was chosen for the repeated administration.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig2-v2.jpg)
 
-**Figure 2.:** (a) Acute THC produced a dose-dependent reduction of mechanical hypersensitivity in the caudal abdominal area. Mechanical sensitivity is represented by the area under the curve of frequency of response to von Frey filaments. Higher values mean higher mechanical pain. (b) Administration of 2, 2.5 and 5 mg/kg of THC decreased the frequency of response to von Frey filaments in endometriosis mice. Error bars are mean ± SEM. One-way repeated measures ANOVA + Bonferroni. *p<0.05, **p<0.01 vs sham; +p<0.05, ++p<0.01, +++p<0.001 vs vehicle. Endo, endometriosis; THC, Δ9-tetrahydrocannabinol, AUC, area under the curve.Figure 2—source data 1.
+**Figure 2.:** (a) Acute THC produced a dose-dependent reduction of mechanical hypersensitivity in the caudal abdominal area. Mechanical sensitivity is represented by the area under the curve of frequency of response to von Frey filaments. Higher values mean higher mechanical pain. (b) Administration of 2, 2.5 and 5 mg/kg of THC decreased the frequency of response to von Frey filaments in endometriosis mice. Error bars are mean ± SEM. One-way repeated measures ANOVA + Bonferroni. *p<0.05, **p<0.01 vs sham; +p<0.05, ++p<0.01, +++p<0.001 vs vehicle. Endo, endometriosis; THC, Δ9-tetrahydrocannabinol, AUC, area under the curve.
 
 Repeated exposure to THC 2 mg/kg, once daily for 28 days, provided a sustained alleviation of mechanical hypersensitivity during the whole treatment period (Figure 3a and Figure 3—figure supplement 1). Repeated THC starting on day 1 could have exerted a preventive effect at endometriosis stages in which pain sensitivity may have not been fully developed. To discern whether the absence in loss of efficacy was due to an inhibition of endometriosis development or to an actual lack of tolerance, we assessed the persistence of THC efficacy once pain was already present. THC given for the first time on day 14 was as effective as THC given on the same day after a daily treatment starting on day 8 (7 days long, Figure 3b and Figure 3—figure supplement 2). Therefore, THC did not lose its efficacy when repeated administration started once painful symptomatology was established. The absence of tolerance to THC-induced antinociception is in contrast with the tolerance described at higher THC doses in other pain models (Greene et al., 2018; LaFleur et al., 2018; Wakley et al., 2014). As expected, no effects of endometriosis or THC treatments were found in mechanical sensitivity of distant areas (Hind paw, Figure 3—figure supplement 3). Endometriosis mice treated with vehicle showed an increase in nocifensive behaviors compared with sham mice (Figure 3c). Interestingly, the 7 day treatment with THC inhibited this component of negative affect, while the effects of an acute administration of THC were highly variable. This variable response could be associated to aversive effects associated with a first exposure to THC, an event described in humans (MacCallum and Russo, 2018) and mice (Kubilius et al., 2018).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig3-v2.jpg)
+
+**Figure 3.:** (a) Repeated THC (28 days) alleviated mechanical hypersensitivity in the caudal abdominal area of endometriosis mice in the von Frey test. (b) THC administered on day 14 after a 6 day treatment (Endo – 7daysTHC) was as effective as an acute dose given on day 14 (Endo – AcuteTHC). Mechanical sensitivity is represented by the area under the curve of frequency of response to von Frey filaments. Higher values mean higher mechanical pain. (c) Nocifensive behaviors were abolished in endometriosis mice after a 7 day treatment with THC (Endo – 7daysTHC). (d) Endometriosis-associated anxiety-like behavior was unaltered after THC in the elevated plus maze test. (e) THC impaired object recognition memory in sham mice and prevented memory deficits of endometriosis mice in the novel object recognition test. THC dose: 2 mg/kg/day. Error bars are mean ± SEM. Two-way repeated measures ANOVA + Bonferroni (a), Mixed model + Bonferroni (b), Kruskal-Wallis + Mann Whitney U (c) and Two-way ANOVA + Bonferroni (d and e). ###p<0.001 vs baseline. *p<0.05, **p<0.01, ***p<0.001 vs sham. ++p<0.01, +++p<0.001 vs vehicle,. Endo, endometriosis; THC, Δ9-tetrahydrocannabinol; AUC, area under the curve.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Endometriosis mice treated with vehicle showed higher frequency of response than endometriosis mice treated with THC and sham mice treated with vehicle. THC dose: 2 mg/kg/day. Error bars are mean ± SEM. Two-way repeated measures ANOVA + Bonferroni. *p<0.05, ***p<0.001 vs sham. +p<0.05, +++p<0.001 vs vehicle. Endo, endometriosis; THC, Δ9-tetrahydrocannabinol.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Endometriosis mice treated with THC for 7 days (Endo – 7daysTHC) and endometriosis mice treated acutely with THC (Endo – AcuteTHC) showed a reduction in the frequency of response to von Frey filaments on day 14. THC dose: 2 mg/kg/day. Error bars are mean ± SEM. Mixed model + Bonferroni. ***p<0.001 vs sham; +++p<0.001 vs vehicle. Endo, endometriosis; THC, Δ9-tetrahydrocannabinol.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Mechanical sensitivity in the hind paw remained stable after endometriosis surgery or THC treatment. Mechanical sensitivity is represented by the area under the curve of frequency of response to von Frey filaments. Higher values mean higher mechanical pain. (b) Similar frequency of responses was observed in all groups of mice before and after the surgery. THC dose: 2 mg/kg/day. Error bars are mean ± SEM. Mixed model + Bonferroni. Endo, endometriosis; THC, Δ9-tetrahydrocannabinol, AUC, area under the curve.
 
 Additional experiments were conducted to assess the effects of THC on the anxiety-like behavior induced by endometriosis pain (Figure 3d). As in previous experiments, endometriosis mice showed a lower percentage of time in the open arms of the elevated plus maze (Figure 3d), revealing increased anxiety-like behavior. However, the percentage of entries to open arms was similar in endometriosis and sham mice. Therefore, the anxiogenic-like effect of ectopic endometrium in these experimental conditions was mild and the present model was not optimal to reveal the emotional component of this painful situation. No significant effects of repeated THC 2 mg/kg were observed on the percentages of time and entries, although THC-treated mice showed a subtle increase in anxiety-like behavior (Figure 3d, percentage of time in open arms). Previous studies described anxiogenic-like effects of slightly higher doses (3 mg/kg) in naïve male mice (Viñals et al., 2015), and anxiolytic-like effects when using lower doses (0.3 mg/kg, Puighermanal et al., 2013; Viñals et al., 2015). Thus, possible effects of THC alleviating pain-related anxiety-like behavior in endometriosis mice could be hindered by intrinsic anxiogenic effects of this THC dose. Therefore, doses with less pain-relieving efficacy could potentially be effective promoting anxiolytic-like effects considering the intrinsic effects of THC on emotional-like behavior. Alternatively, the absence of clear effects of THC on anxiety-like behavior may be associated to the evaluation time point, which was 6 hr after administration to study the impact of pain relief on anxiety-like behavior, rather than to assess direct drug effects. Total arm entries were similar among groups (Figure 3d). Memory performance was also assessed the third week after starting the THC treatment. As expected, mice exposed to the chronic nociceptive manifestations of endometriosis showed a pronounced cognitive impairment, as well as sham mice exposed to THC, in accordance with previous reports in naïve males (Kasten et al., 2017; Puighermanal et al., 2013). Surprisingly, endometriosis mice repeatedly treated with natural THC showed intact discrimination indices (Figure 3e) suggesting protective effects of THC in this chronic inflammatory condition. In agreement, recent studies have shown cognitive improvements after THC exposure in old male and female mice (Bilkei-Gorzo et al., 2017; Sarne et al., 2018).
 
 Exogenous and endogenous cannabinoids have shown modulatory effects on the female reproductive system (Walker et al., 2019). Thus, we analyzed the effects of THC on the ectopic and eutopic endometrium and on ovarian follicle maturation. Interestingly, endometriosis mice receiving THC 2 mg/kg for 32 days showed an evident inhibition of the development of endometrial cysts (cyst diameter and area of endometrial tissue, Figure 4a) without significant effects on cyst innervation (Figure 4—figure supplement 1a). In agreement, a previous study showed antiproliferative effects of WIN 55212–2, a synthetic cannabinoid agonist, on endometrial cell cultures and in ectopic endometrium implanted in immunodepressed mice (Leconte et al., 2010). The assessment of the uterine diameter and the area of eutopic endometrium (Figure 4—figure supplement 1b) showed no effects of the THC treatment, suggesting that the antiproliferative activity of THC on endometrial cells is restricted to ectopic sites. However, possible effects of THC on established endometriosis lesions were not evaluated. Repeated THC increased the expression of neuronal markers in the uteri of sham mice, similar to the increase provoked by the ectopic endometrium (Figure 4b). Interestingly, THC prevented this increase in endometriosis mice (Figure 4b) indicating again that THC exposure may have different consequences under chronic inflammatory conditions. In agreement, recent studies showed differential effects of THC on the nervous system of rodents with and without chronic inflammation (Bilkei-Gorzo et al., 2017; Sarne et al., 2018). To investigate a possible estrogenic influence on these histological findings, we analyzed 17 β-estradiol plasma levels. As expected, 17 β-estradiol plasma levels depended on the phase of the estrous cycle: mice in proestrus had the highest concentration followed by mice in diestrus, and mice in estrus showed the lowest levels (Figure 4c, left graph). We found that 17 β-estradiol was similar in all experimental groups (Figure 4c, right graph), although the levels of this estrogen were positively correlated with cyst diameter (Figure 4d, left), proving the estrogenic influence on ectopic endometrial lesions. 17 β-estradiol levels were not correlated with endometrial area of the cysts (Figure 4d, middle), or uterine innervation (Figure 4d, right), suggesting independent THC effects on these histological changes.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig4-v2.jpg)
+
+**Figure 4.:** (a) Ectopic endometrial growths of mice treated with THC were smaller (left graph) and had less endometrial tissue (right graph) than those of mice receiving vehicle. Scale bar = 1 mm. (b) THC increased innervation in sham mice but prevented uterine hyperinnervation in endometriosis mice. Blue is DAPI and white is β-III tubulin. Scale bar = 100 μm. (c) As expected, 17-β estradiol levels were higher in mice in proestrus (left). Estrogen levels were similar in all experimental conditions (right). (d) There was a positive correlation between cyst diameter and plasma levels of 17-β estradiol (left, r = 0.450). Absence of correlation of estrogen levels with cyst endometrial area (middle, r = 0.263) and uterine innervation (right, r = 0.039). THC dose: 2 mg/kg/day. Error bars are mean ± SEM. Student t-test (a, left graph), Mann Whitney U (a, right graph), two-way ANOVA + Bonferroni (b), mixed model + Bonferroni (c, left); Two-way ANOVA (c, right) and Pearson correlation (d). *p<0.05, **p<0.01 vs sham. +p<0.05, ++p<0.01 vs vehicle. ^p<0.05, ^^p<0.01 vs proestrus. Endo, endometriosis; THC, Δ9-tetrahydrocannabinol.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50356/elife-50356-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Cyst innervation was unaffected by THC. Blue is DAPI and white is β-III tubulin. Scale bar = 100 μm. (b) Uterine diameter and area of endometrial tissue were similar among the groups. Scale bar = 1 mm. (c) Number of preantral follicles, antral follicles and corpora lutea were unchanged after endometriosis or THC treatment. Error bars are mean ± SEM. Student t-test (a) and two-way ANOVA (b and c). Endo, endometriosis; THC, Δ9-tetrahydrocannabinol.
+
 We also assessed possible effects of THC on ovarian functioning, since previous works have suggested inhibitory effects of THC on folliculogenesis and ovulation (Adashi et al., 1983; El-Talatini et al., 2009). Numbers of preantral follicles, antral follicles and corpora lutea were similar in all groups in our experimental conditions (Figure 4—figure supplement 1c). These data suggest that endometriosis and THC were void of overt effects on ovarian follicle maturation and luteinization, however, other effects of endometriosis or THC on fertility cannot be excluded in our model. Similarly, the presence of prominent symptoms of endometriosis such as dysmenorrhea or dyspareunia could not be evaluated.
 
-## Conclusions
+### Conclusions
 
 Here we show for the first time that chronic administration of a moderate dose of the phytocannabinoid THC relieves mechanical hypersensitivity of caudal abdominal area, pain unpleasantness and cognitive impairment associated with the presence of ectopic endometrial cysts. These behavioral manifestations correlate with a decrease in the size of ectopic endometrium in THC-exposed mice. However, the pain-relieving effects of this particular dose of THC were not accompanied by a modification of anxiety-like behavior associated with endometriosis and effects on spontaneous pain were not evaluated in this work. Interestingly, THC produced opposite cognitive effects in sham and endometriosis mice. THC also induced an increase in markers of uterine innervation in sham animals, but prevented such changes in endometriosis mice, suggesting again different effects of THC under chronic inflammatory conditions. Importantly, THC also inhibited the growth of ectopic endometrium without apparent consequences on the eutopic endometrium and ovarian tissues. Altogether, the present data obtained in a preclinical model of endometriosis underline the interest in conducting clinical research to assess the effects of moderate doses of THC on endometriosis patients. Based on our results, we (clinicaltrials.gov, #NCT03875261) and others (gynica.com) have planned the initiation of clinical trials to provide evidence on the translatability of these results to women with endometriosis. These novel clinical trials will evaluate this new possible endometriosis treatment under pathological human conditions. However, cannabis has a large number of potential side effects, as well as a high potential for abuse liability (Curran et al., 2016), that have to be considered by physicians and patients. Therefore, the use of cannabis in unregulated scenarios should be discouraged taking into account these serious side effects.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>C57Bl/6J</td>
+      <td>Charles Rivers, Lyon, France</td>
+      <td>C57Bl/6J</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>THC (Tetrahydrocannabinol)</td>
+      <td>THC-Pharm-GmbH</td>
+      <td></td>
+      <td>Natural THC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cremophor EL</td>
+      <td>Sigma-Aldrich</td>
+      <td>C5135; Kolliphor EL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.9%, NaCl physiological saline</td>
+      <td>Laboratorios Ern</td>
+      <td>Vitulia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanol</td>
+      <td>Scharlab</td>
+      <td>ET00051000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vaporised Isoflurane in oxygen</td>
+      <td>Virbac</td>
+      <td>Vetflurane</td>
+      <td>4% V/V for induction; 2.5% V/V for maintenance</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Optimal cutting temperature compound</td>
+      <td>Sakura finetek</td>
+      <td>25608–930</td>
+      <td>Item code 4583</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Equus asinus)</td>
+      <td>Normal donkey serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9663-10ML</td>
+      <td>3% in PBS with 0.3% Triton X-100</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Capra aegagrus hircus)</td>
+      <td>Normal goat serum</td>
+      <td>Vector lab</td>
+      <td>S-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-beta-III tubulin antibody</td>
+      <td>Abcam</td>
+      <td>ab18207</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyuclonal anti-rabbit Alexa Fluor A488 antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A21206</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit Alexa Fluor A555 antibody</td>
+      <td>Abcam</td>
+      <td>ab150078</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI Fluoromount-G mounting media</td>
+      <td>SouthernBiotech</td>
+      <td>0100–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcium EDTA (Sodium calcium edetate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sodium calcium edetate</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Enzyme-linked immunosorbent assay; ELISA</td>
+      <td>Calbiotech</td>
+      <td>ES180S-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIH Image J software</td>
+      <td>Wayne Rasband</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IBM SPSS 23 software</td>
+      <td>IBM Corporation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Smart 3.0 videotracking software</td>
+      <td>Panlab</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Female C57Bl/6J mice (Charles Rivers, Lyon, France) were used in all the experiments. Mice were 8 weeks old at the beginning of the experiments and were housed in cages of 4 to 5 mice with ad libitum access to water and food. The housing conditions were maintained at 21 ± 1°C and 55 ± 10% relative humidity in controlled light/dark cycle (light on between 8 AM and 8 PM). Animals were habituated to housing conditions and handled for 1 week before the start of the experiments. All animal procedures were conducted in accordance with standard ethical guidelines (European Communities Directive 2010/63/EU and NIH Guide for Care and Use of Laboratory Animals, 8th Edition) and approved by autonomic (Generalitat de Catalunya, Departament de Territori i Sostenibilitat) and local (Comitè Ètic d'Experimentació Animal, CEEA-PRBB) ethical committees. Mice were randomly assigned to treatment groups and all experiments were performed blinded for pharmacological and surgical conditions.
 
-## Drugs
+### Drugs
 
 THC was purchased from THC-Pharm-GmbH (Frankfurt, Germany) as natural THC with 98.8% purity. This source of natural THC has been widely used in multiple research studies (Busquets-Garcia et al., 2018; Busquets-Garcia et al., 2011; Cutando et al., 2013; Flores et al., 2014; Forsberg, 1970; Gunasekaran et al., 2009; Lopez-Rodriguez et al., 2014; Morrison et al., 2011; Puighermanal et al., 2013). To corroborate the purity of the THC samples, High Performance Liquid Cromatography – Ultraviolet (HPLC-UV) was used for cannabinoid analysis and Gas Chromatography and Flame Ionization Detection (GC-FID) for terpenes (Canna Foundation, Paterna, Spain). These analyses revealed no detectable amounts of other cannabinoids or terpenes (Source Data Files 2, 3 and 4). THC was diluted in a vehicle composed of 2.5% ethanol, 5% Cremophor EL (C5135, Sigma-Aldrich St. Louis, MO, USA), and 92.5% saline, and was administered subcutaneously in a volume of 5 ml/kg.
 
-## Estrous cycle determination
+### Estrous cycle determination
 
 The phase of the estrous cycle was assessed by histological examination of cells extracted by vaginal lavage (Byers et al., 2012) the day of the surgeries and the day of euthanasia. Briefly, mice were gently restrained and 20 μl of saline were flushed 5 times into the vagina. The resulting fluid was placed onto gelatinized slides, stained with methylene blue and observed at 40X magnification under a light microscope (DM6000 B, Leica Biosystems, Nussloch, Germany).
 
-## Surgical induction of endometriosis
+### Surgical induction of endometriosis
 
 Endometriotic lesions were surgically-induced as previously described (Somigliana et al., 1999), with some modifications. Briefly, uterine horns from donor mice at diestrus were excised, opened longitudinally and biopsied into four pieces (2 × 2 mm). Recipient mice were anesthetized with vaporized isoflurane in oxygen (4% V/V for induction; 2.5% V/V for maintenance) and a midline incision of 1 cm was made to expose the abdominal compartment. Endometriosis mice had four uterine fragments sutured to the parietal peritoneum, whereas sham-operated mice received four similar-sized fragments of abdominal fat. Transplanted tissues and abdominal muscle and skin were stitched using 6–0 black silk (8065195601, Alcon Cusi S.A., Barcelona, Spain).
 
-## Experimental protocols
+### Experimental protocols
 
 The nociceptive, affective and cognitive manifestations associated with the presence of ectopic endometrium were determined in a first experiment. After the measurement of baseline mechanical sensitivity (day −1), endometriosis or sham surgery was performed (day 0), and nociceptive responses were assessed again 7, 14, 21 and 28 days after surgery. Anxiety-like behavior and cognitive performance were evaluated on days 23 and 27, respectively. At the end of the experimental sequence (day 32), mice were euthanized by cervical dislocation for sample collection.
 
@@ -82,27 +272,27 @@ The effects of chronic THC or vehicle were evaluated in endometriosis and sham m
 
 A fifth experiment with 4 sets of mice was conducted to investigate THC tolerance development once the pain symptomatology was established. One of the groups underwent a sham surgery and the other three received endometrial implants. The sham group and one of the endometriosis groups received vehicle from day 1 to 16; one of the endometriosis groups received vehicle for 13 days and on day 15, and acute doses of THC (2 mg/kg) on days 14 and 16; the last endometriosis group received a repeated treatment with a daily administration of THC (2 mg/kg) from day 7 to 16. All mice were tested for mechanical sensitivity in the caudal abdominal area and the hind paw 45 min after drug or vehicle administration on days −2, 7 and 14 (caudal abdomen), and −4 and 16 (hind paw), respectively. The effects of THC on nocifensive behavior were measured on day 14.
 
-## Nociceptive behavior
+### Nociceptive behavior
 
 Mechanical sensitivity was quantified by measuring the responses to von Frey filament stimulation of the caudal abdominal area or the right hind paw. Von Frey filaments (1.65, 2.36, 2.44, 2.83, 3.22 and 3.61 corresponding to 0.008, 0.02, 0.04, 0.07, 0.16 and 0.4 g; Bioseb, Pinellas Park, FL, USA) were applied in increasing order of force, 10 times each, for 1–2 s, with an inter-stimulus interval of 5–10 s. Abrupt retraction of abdomen, immediate licking, jumping and scratching of the site of application were considered positive responses in the evaluation of abdominal mechanical sensitivity. Paw withdrawal, shaking or licking was considered a positive response in the evaluation of paw mechanical sensitivity. The area under the curve (AUC) was calculated by applying the linear trapezoidal rule to the plots representing the frequency of response versus the numbers of von Frey filaments, which represent the logarithm of the filament force expressed in mg x 10.
 
-## Nocifensive behavior
+### Nocifensive behavior
 
 Unpleasantness of pain in response to a mechanical stimulus was measured as previously described (Corder et al., 2019; Corder et al., 2017) with minor modifications. Briefly, this parameter was evaluated using a single application of the von Frey filament 4.08 (corresponding to 1 g) against the caudal abdominal area shown in Figure 1—figure supplement 1b. The time spent protecting the area by guarding or seeking escape during the following 30 s was considered nocifensive behavior.
 
-## Anxiety-like behavior
+### Anxiety-like behavior
 
 The elevated plus maze test was used to evaluate anxiety-like behavior in a black Plexiglas apparatus consisting of 4 arms (29 cm long x 5 cm wide), 2 open and 2 closed, set in cross from a neutral central square (5 × 5 cm) elevated 40 cm above the floor. Light intensity in the open and closed arms was 45 and 5 lux, respectively. Mice were placed in the central square facing one of the open arms and tested for 5 min. The percentages of time and entries to the open arms were determined as 100 x (time or entries to open arms) / (time or entries to open arms + time or entries to closed arms) as a measure of anxiety-like behavior.
 
-## Cognitive behavior
+### Cognitive behavior
 
 The novel object recognition task was assayed in a V-shaped maze to measure cognitive performance (Puighermanal et al., 2009). On the first day, mice were habituated for 9 min to the maze. On the second day, mice were placed again in the maze for 9 min and two identical objects were presented at the ends of the arms of the maze. Twenty-four h later, one of the familiar objects was replaced with a novel one and mice were placed back in the maze for 9 min. The time spent exploring each object (novel and familiar) was recorded and a discrimination index (DI) was calculated as the difference between the time spent exploring the novel and the familiar object, divided by the total time exploring the two objects. A threshold of 10 s of total interaction with the objects was set to discard low levels of general activity.
 
-## Sample harvesting and tissue preparation
+### Sample harvesting and tissue preparation
 
 Endometriotic lesions, uterine horns and ovaries were harvested from each mouse and fixed in 4% paraformaldehyde in phosphate buffered saline (PBS) for 4 hr and cryoprotected in 30% sucrose with 0.1% sodium azide for 6 days at 4°C. Samples were then embedded in molds filled with optimal cutting temperature compound (4583, Sakura Finetek Europe B.V., Alphen aan den Rijn, The Netherlands) and stored at −80°C until use.
 
-## Histology and immunostaining
+### Histology and immunostaining
 
 Endometriotic lesions and uteri were serially sectioned at 20 μm with a cryostat (CM3050, Leica Biosystems, Nussloch, Germany), mounted onto gelatinized slides and stored at −20°C until use. Sections of endometriotic lesions and uteri were stained with hematoxylin and eosin and observed under a Macro Zoom Fluorescence Microscope (MVX10, Olympus, Tokyo, Japan) for assessment of diameter and histological features.
 
@@ -110,18 +300,18 @@ Cyst sections were blocked and permeabilized with 3% normal donkey serum in PBS 
 
 Uterine sections were blocked and permeabilized with 5% normal goat serum in PBS with 0.3% Triton X-100 for 2 hr and incubated overnight with rabbit anti-beta-III tubulin antibody (ab18207, 1:2000, Abcam) in 5% normal goat serum in PBS with 0.3% Triton X-100 at 4°C. After washing with PBS, sections were incubated for 1 hr at room temperature with anti-rabbit Alexa Fluor A555 antibody (ab150078, 1:1000, Abcam, Cambridge, United Kingdom). Slides were washed with PBS and coverslipped with DAPI Fluoromount-G (0100–20, SouthernBiotech).
 
-## Image analysis
+### Image analysis
 
 Images of immunostained sections of cysts and uteri were captured with the X2 objective of a Macro Zoom Fluorescence Microscope (MVX10, Olympus, Shinjuku, Tokyo, Japan) and processed and quantified using the NIH Image J software. An observer who was blinded to treatment group assignment converted from 4 to 8 images per animal into negative black-and-white images and the threshold was manually adjusted. Images were then dilated, skeletonized and the mean percentage of immunoreactive area was obtained by running the ‘Analyze particles’ function.
 
-## Determination of 17 β-estradiol plasma levels
+### Determination of 17 β-estradiol plasma levels
 
 Plasma samples were collected the day of euthanasia in tubes containing calcium EDTA. 17β-estradiol levels were determined with an enzyme-linked immunosorbent assay - ELISA (ES180S-100, Calbiotech, El Cajon, CA, USA) according to manufacturer instructions.
 
-## Ovarian follicle counting
+### Ovarian follicle counting
 
 Sections of ovaries were stained with hematoxylin and eosin and observed under an upright microscope (DM6000 B, Leica Biosystems). The number of pre-antral and antral follicles was determined in every nine sections. Only follicles containing an oocyte were counted and the total number of follicles was estimated by multiplying the raw counts by nine according to published criteria (Myers et al., 2004). The number of corpora lutea was determined by direct counting of every 18 sections according to the average corpus luteum diameter (Numazawa and Kawashima, 1982).
 
-## Statistical analysis
+### Statistical analysis
 
 Data obtained with the nociception model were analyzed using one-way repeated measures ANOVA (surgery as between‐subject factor), two-way repeated measures ANOVA (surgery and treatment as between‐subject factors) or mixed models (surgery and treatment as between‐subject factors and time as within-subject factor) whenever appropriate. Dose-response curve was fitted and ED50 determined using GraphPad Prism 8 (San Diego, CA, USA). Data obtained with the elevated plus maze test, novel object recognition task, histology, immunostaining and ovarian follicle counting were analyzed using a Student t-test (surgery) or a two‐way ANOVA (surgery and treatment). Post hoc Bonferroni analysis was performed after ANOVA when appropriate. The nonparametric Kruskal-Wallis test was used whenever data did not have a normal distribution or equal variances, followed by Mann Whitney U when appropriate. Correlation between variables was determined using the Pearson correlation coefficient. Data are expressed as individual data points and mean ± SEM, and statistical analyses were performed using IBM SPSS 23 software (Chicago, IL, USA). The differences were considered statistically significant when the p value was below 0.05.

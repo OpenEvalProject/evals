@@ -38,7 +38,7 @@ Inspired by such imaging studies, we set up a longitudinal study in both male an
 
 ## Results
 
-## Longitudinal structural MRI changes in the brains of maturing male and female zebra finches
+### Longitudinal structural MRI changes in the brains of maturing male and female zebra finches
 
 We set up a longitudinal study where we repeatedly collected structural MRI data of the entire zebra finch brain (Figure 1A). These data consist of 3D anatomical scans and DTI scans. The 3D anatomical dataset enabled us to assess regional changes in brain volume that arise over time (brain development) or between male and female zebra finch brains (sex differences; these data have been published Hamaide et al., 2017). The DTI datasets allow to establish spatiotemporal maps that indicate when and where in the brain neuroplastic changes in tissue microstructure occur (Hamaide et al., 2016). In the current study, we focus on the Fractional Anisotropy (FA) outcome, a metric derived from DTI data. FA quantifies the directional dependence of water diffusion and hence indirectly reflects specific microstructural tissue characteristics (Beaulieu, 2002). Note that alterations in FA can be caused by a wide variety of microstructural tissue re-organisations including altered axonal integrity, myelination, axon diameter and density, change in cellular morphology, etc. (Beaulieu, 2002; Zatorre et al., 2012; Dyrby et al., 2018). Using non-invasive in vivo structural MRI, we have been able to detect sex differences in local volume in the maturing zebra finch brain (Hamaide et al., 2018a) and in intrinsic microstructural tissue properties in adult birds (Hamaide et al., 2017). The present data enables us to extend on the latter, as the present study includes DTI data obtained in juvenile zebra finches.
 
@@ -48,29 +48,153 @@ Since several brain areas displayed an interaction between age and sex over time
 
 In addition, several clusters identified by the (voxel-based) interaction between age and sex over time (Figure 1B) were only found to be significantly changing during ontogeny in males (indicated by the white dotted boxes in Figure 1E).
 
-## Song performance improves even after crystallisation
+### Song performance improves even after crystallisation
 
 We extracted the acoustical properties of individual song syllables at each age of the male zebra finches to evaluate how the spectral and temporal structure of the syllables evolve from (advanced) plastic to fully mature stereotyped and crystallised song. The duration of the inter-syllable intervals gradually shortens from sensorimotor to song crystallisation and even after song crystallisation towards 200 dph (p<0.0001 F(3, 38.2)=13.8789; Supplementary file 2). This indicates that birds gradually sing faster. Syllable Wiener entropy scores decrease during the sensorimotor phase (p=0.0032 F(3, 37.8)=5.48; Figure 2—figure supplement 1), meaning that the syllables gain in tonality. None of the pitch-related measures, or frequency and amplitude modulation changed over time (Supplementary file 2). Further, by quantifying the standard deviation of the spectro-temporal features, we observe that syllables are sung with lower acoustic variability when song crystallises between 90 and 120 dph (Figure 2—figure supplement 1). These analyses informed that the syllables gain tonality (lower acoustic noisiness), become more structured (less noisy) and less acoustically diverse along sensorimotor song maturation. Furthermore, while the spectral content of syllables mainly forms during the sensorimotor phase, the temporal properties of the songs continue to change beyond the crystallisation phase. This corroborates previous studies in zebra finches (Glaze and Troyer, 2013).
 
 To quantitatively assess fine-scale changes in song performance and to estimate song learning accuracy, we evaluated the progression of song learning from the advanced sensorimotor phase (65 days post hatching (dph)), over the crystallisation phase (90–120 dph), to fully crystallised song (200 dph; Figure 1A). We quantified how successful the juvenile birds (pupils) learned, that is copied, the tutor song, by computing the spectral similarity between the pupil and the tutor song (Tchernichovski et al., 2000). Song similarity to tutor song increased gradually from 65 to 200 dph (p=0.0251 F(3, 37.0)=3.4890; Figure 2A) reaching similar levels as described by others (Tchernichovski et al., 2000; Derégnaucourt and Gahr, 2013). Moreover, as song crystallisation results in a highly stereotyped, consistent order of syllables within a motif, sequence stereotypy also increased gradually from 65 to 200 dph (p=0.0052 F(3, 38.4)=4.7904, Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/49941/elife-49941-fig2-v1.jpg)
+
+**Figure 2.:** Graph A and B refer to respectively song similarity to tutor song and song stereotypy in function of age. Both increase from 65 to 200 dph (mixed-effect model main effect of age: song similarity: p=0.0251 F(3, 37.0)=3.4890; sequence stereotypy: p=0.0052 F(3, 38.4)=4.7904). Each thin coloured or grey line refers to the average performance of an individual bird over the different ages. The bold black line presents the average group performance (mean ± SEM; n = 14; 20 data points per time point per bird). The colour-code of the lines in A encodes tutor identity, that is birds raised by the same tutor share the same colour (see Supplementary file 12). The colour-code illustrates that song similarity is dependent on tutor identity (mixed-effect model main effect for tutor: p=0.0159 F(7, 6.1)=6.7597). Asterisks indicate significant differences over time identified by a mixed model analysis with post hoc Tukey’s HSD test. *: p<0.05; **p<0.01. Abbreviations: dph: days post-hatching.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49941/elife-49941-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Each thin grey line (all graphs except for C) refers to the average performance of an individual bird at different ages. The bold line presents the average group performance (mean ± s.e.m.; n = 14; 20 data points per time point per bird). Graph A and B contain the syllable feature scores, respectively. inter-syllable duration and syllable entropy. Both decrease significantly over the course of the study (mixed-effect model main effect of age: inter-syllable interval duration: p<0.0001 F(3, 38.2)=13.8789; Syllable Wiener entropy: p=0.0032 F(3, 37.8)=5.4803). C aims to visualise the change in standard deviation of specific syllables (each colour presents the data of one syllable (indicated by letters) of two representative birds. Each horizontal part of the graph presents data obtained at one time point (top to bottom: 200, 120, 90 and 65 dph). The size of the cluster of syllables a and d in bird 1 and syllables a-b-c-d-e of bird 2 decreases markedly between 65 and 200 dph, indicative of smaller variation between different syllable renditions towards older ages. Asterisks indicate significant differences over time indicated by a mixed model analysis with post hoc Tukey’s HSD test. *: p<0.05; **p<0.01; ***p<0.001. See supplementary file 2 for statistics.
+
 Notably, the overall variability in song similarity between birds was quite large indicating that not all birds copy the tutor song equally well. Prior studies have shown that successful song learning not only depends on the ability of the juveniles to hear the song model: social interactions between the juvenile and adult birds are crucial mediators in determining the overall quality of the song copy (Chen et al., 2016; Carouso-Peck and Goldstein, 2019). Consistent with this, we observed that song similarity depended on tutor identity, that is, juveniles will consistently sing a good or less good tutor song copy depending on their tutor (p=0.0159 F(7,6.1)=6.7597; Figure 2A – colours reflect tutor identity). This main effect of tutoring bird on song similarity outcome did not seem to depend on the length of the songs, as based on similarity scores obtained at 200 dph, no differences in the number of syllables for birds having a ‘high’ (>68%) or ‘low’ (<68%) similarity score could be observed (Supplementary file 3).
 
-## Song learning accuracy traces back to the CM, VP, tFA and NCM in the sensorimotor learning phase
+### Song learning accuracy traces back to the CM, VP, tFA and NCM in the sensorimotor learning phase
 
 Even though song performance improves from the sensorimotor to the crystallisation phase (and even beyond), not all birds learn to reproduce the tutor song equally well. Therefore, we set out to explore whether better song performance (i.e. more accurate tutor song copying), correlates with a specific structural signature in the brain. Inspired by ample in vivo imaging studies describing training- or learning-induced brain-behaviour relationships (Zatorre et al., 2012), we performed brain-wide voxel-based statistical analyses to highlight potential brain sites that present a correlation between song learning accuracy (% similarity between pupil and tutor song) and local volume (log-transformed modulated jacobian determinant (log mwj)) or intrinsic tissue properties derived from the DTI metrics, that is Fractional Anisotropy (FA) (Beaulieu, 2002; Zatorre et al., 2012). These brain-wide voxel-based analyses uncovered four clusters (Figures 3–4 and Supplementary file 4). Using various atlases of the zebra finch brain (http://www.zebrafinchatlas.org/; Nixdorf and Bischof, 2007; Poirier et al., 2008; Karten et al., 2013) and high-resolution tract tracings within the zebra finch brain (Hamaide et al., 2017), we identified that these clusters co-localise with two secondary auditory areas, that is the caudomedial nidopallium (NCM) and caudal mesopallium (CM), with a white matter tract that connects the basorostral nucleus to the arcopallium (frontoarcopallial tract (tFA) Wild and Farabaugh, 1996), and with an area at the base of the telencephalon termed the ventral pallidum (VP). The VP has a direct role in sensorimotor song learning (Chen et al., 2019) and it contains many fibres of passage that project from the midbrain dopaminergic nuclei to Area X of the anterior forebrain pathway and Area X-DLM projections that pertain to the song control system (Gale et al., 2008).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/49941/elife-49941-fig3-v1.jpg)
+
+**Figure 3.:** The statistical maps (A, C, E, G) present the outcome of the voxel-based multiple regression testing for a correlation between song similarity and FA (n = 14). The crosshairs point to the tFA in the left hemisphere (A), the VP (C), and NCM in the left (E) and right (G) hemisphere. Results are overlaid on the population-based MRI template and scaled according to the colour-code (T values) on the left of each statistical map. Only voxels that reached puncorrected <0.001 and take part of a cluster of at least 40 contiguous voxels are displayed. Graphs B, D, F and H visualise the nature of the correlation between song similarity and FA where individual data points are colour-coded according to bird-identity (i.e. one colour = one bird). The average within-bird correlation is presented by the coloured lines, while the black dashed line indicates the overall association between song similarity and FA, disregarding bird-identity or age. ‘r’ is the repeated-measures correlation (rmcorr) coefficient. The * indicates a significant rmcorr correlation between FA and % similarity in the VP (p=0.001) and right NCM (p=0.0121). Abbreviations: CA: anterior commissure; CP: posterior commissure; En: entopallium; MLd: dorsal part of the lateral mesencephalic nucleus; rot: nucleus rotundus; tFA: fronto-arcopallial tract; VP: ventral pallidum; Le: left; Ca: caudal; Ro: rostral; Ve ventral. See Supplementary file 4 for statistics.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49941/elife-49941-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The statistical maps present the outcome of the voxel-based multiple regression (n = 14) testing for a correlation between song similarity and FA. The crosshairs converge in the NCM of the left (A) and right (C) hemisphere. Results are overlaid on the population-based template or population-averaged FA maps of datasets obtained at 200 dph (A2), and are scaled according to the colour-code on the left (T values). Only voxels that reached puncorrected <0.001 and take part of a cluster of at least 40 contiguous voxels are displayed. Insets A1-2 visualise the spatial extent of the cluster in left NCM with reference to Field L. L2a is visible by a hypo-intense line-shaped area on A1 (black dashed circle). The peak of the cluster (crosshairs) is situated in (rostral) NCM. Inset A2 further corroborates that the NCM-cluster does not overlap with the highly myelinated, fibre-rich (hyper-intense FA) structure that can be identified as Field L. Inset B1 illustrates the cluster in left NCM that extends to the left CM (rostral to Field L (black dashed circle). Graphs B and D visualise the nature of the correlation between song similarity and FA, in NCM of the left and right hemisphere, respectively, where individual data points are colour-coded according to bird-identity (i.e. one colour = one bird). The average within-bird correlation is presented by the coloured lines, while the black dashed line indicates the overall association between song similarity and FA, disregarding bird-identity or age. ‘r’ is the repeated-measures correlation (rmcorr) coefficient. See Supplementary file 4 for statistics. Abbreviations: CA: anterior commissure; CP: posterior commissure; LaM: lamina mesopallialis; LMAN: lateral magnocellular nucleus of the anterior nidopallium; thal. zone: thalamic zone; Ro: rostral; Ve: ventral; Ri: right; Ca: caudal; Le: left.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/49941/elife-49941-fig4-v1.jpg)
 
-**Figure 4.:** A–B) and the CM (C–D).The statistical parametric maps present the outcome of the voxel-based multiple regression testing for a correlation between song similarity and local tissue volume (n = 14) and are visualised at p <0.05 and kFWEE ≥ 80 voxels, and overlaid on the population-based template. The crosshairs point to the VP (A) or the CM in the left hemisphere (C). T-values are colour-coded according to the scale immediately left to the SPMs. Graphs B and D inform on the nature of the association between song similarity (%) and log-transformed modulated jacobian determinant (log mwj; a metric reflecting local tissue volume). More specifically, the individual data points of the graphs are colour-coded according to bird-identity (i.e. one colour = one bird). The average within-bird correlation is presented by the coloured lines, while the dashed black line indicates the overall association between song similarity and log mwj, disregarding bird-identity or age. ‘r’ is the repeated-measures correlation (rmcorr) coefficient. The * indicates a significant rmcorr correlation between logmwj and % similarity in the VP (p=0.0057) and left CM (p=0.0126). Abbreviations: CA: anterior commissure; CM: caudal mesopallium; CN: caudal nidopallium; CP: posterior commissure; DLM: medial part of the dorsolateral nucleus of the anterior thalamus; En: entopallium; MLd: dorsal part of the lateral mesencephalic nucleus; tOM: occipitomesencephalic tract; TSM: septo-mesencephalic tract; VP: ventral pallidum; Le: left; Ca: caudal; Ve: ventral; Ro: rostral. See Supplementary file 5 for statistics.
+**Figure 4.:** The statistical parametric maps present the outcome of the voxel-based multiple regression testing for a correlation between song similarity and local tissue volume (n = 14) and are visualised at pFWE <0.05 and kE ≥ 80 voxels, and overlaid on the population-based template. The crosshairs point to the VP (A) or the CM in the left hemisphere (C). T-values are colour-coded according to the scale immediately left to the SPMs. Graphs B and D inform on the nature of the association between song similarity (%) and log-transformed modulated jacobian determinant (log mwj; a metric reflecting local tissue volume). More specifically, the individual data points of the graphs are colour-coded according to bird-identity (i.e. one colour = one bird). The average within-bird correlation is presented by the coloured lines, while the dashed black line indicates the overall association between song similarity and log mwj, disregarding bird-identity or age. ‘r’ is the repeated-measures correlation (rmcorr) coefficient. The * indicates a significant rmcorr correlation between logmwj and % similarity in the VP (p=0.0057) and left CM (p=0.0126). Abbreviations: CA: anterior commissure; CM: caudal mesopallium; CN: caudal nidopallium; CP: posterior commissure; DLM: medial part of the dorsolateral nucleus of the anterior thalamus; En: entopallium; MLd: dorsal part of the lateral mesencephalic nucleus; tOM: occipitomesencephalic tract; TSM: septo-mesencephalic tract; VP: ventral pallidum; Le: left; Ca: caudal; Ve: ventral; Ro: rostral. See Supplementary file 5 for statistics.
 
 Correlations between song similarity and FA were observed in the left tFA (peak: pFWE <0.001 T = 6.81; Figure 3A), and in left NCM (rostral NCM; peak: pFWE = 0.019 T = 5.69; Figure 3E and Figure 3—figure supplement 1). Furthermore, we found an additional cluster midsagittal near the striatum and mesopallium, extending laterally and caudo-ventrally adjacent to the septomesencephalic tract (TSM; sub-peak next to the TSM in the left hemisphere: pFWE = 0.002 T = 6.38; Figure 3C). Based on this spatial pattern and in accordance with the Karten-Mitra zebra finch brain atlas (http://www.zebrafinchatlas.org/; Karten et al., 2013), we identified this area as the VP. Interestingly, when inspecting the statistical maps at a less conservative threshold (puncorrected <0.001 kE ≥40 voxels), clusters could be also observed at the right tFA (peak: pFWE = 0.001 T = 6.42) and the right NCM (peak: pFWE = 0.032 T = 5.55; Figure 3G). Also at this less conservative threshold, we observe that the cluster covering the left NCM extends rostro-laterally towards the CM (sub-peak of NCM cluster: pFWE = 0.194 T = 5.01; Figure 3G and Figure 3—figure supplement 1).
 
 To test if learning accuracy correlates with the local volume of specific brain areas (log mwj), we performed voxel-based analysis and found a significant anticorrelation in two brain areas, that is the VP (peak: pFWE <0.001 T = 8.06; Figure 4A) and the medial and lateral portions of the CM rostral to field L (resp. CMM and CLM) potentially including nucleus avalanche (Av; left: peak: pFWE = 0.001 T = 7.10; right: peak: pFWE <0.001 T = 7.42; Figure 4C).
 
-## Learning-related relationships versus between-bird variance
+### Learning-related relationships versus between-bird variance
 
 The voxel-based correlation analysis detects an overall association between song performance (% similarity) and the structural properties of the brain without taking the repeated measures into account. As a result, these analyses cannot infer whether the brain-behaviour associations are mainly driven by between-subject variation in performance and structure, or whether individual improvements in song imitation relate to specific structural properties of the clusters at specific learning periods. To make this distinction, we first extracted for each bird and each time point separately the mean log mwj or mean FA from the voxel-based clusters. Next, we performed (i) Spearman’s correlation analysis (ρ) to characterise potential correlations between the structural properties of the cluster-based ROIs and song similarity at 65 or 200 dph, and (ii) a repeated-measures correlation analysis (rmcorr Bakdash and Marusich, 2017; Figure 3B,D,F,H; Figure 4B,D) which takes for each bird the repeated-measures into account and can provide inference on the common association between brain structure and song similarity across the group of birds. In summary, this analysis can provide inference on potential learning-related changes in local brain structure. The outcome of the Spearman’s correlation and rmcorr analyses, including Benjamini-Hochberg correction for multiple comparisons, are summarised in Table 1 and Supplementary file 6, 7.
+
+**Table 1.**
+ Summary of within- and between-subject correlations of the cluster-based ROIs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Correlation between</th>
+      <th rowspan="2">Cluster-based ROI</th>
+      <th rowspan="2">Hemisphere</th>
+      <th colspan="2">Rmcorr</th>
+      <th colspan="2">65 dph</th>
+      <th colspan="2">200 dph</th>
+    </tr>
+    <tr>
+      <th>R</th>
+      <th>P</th>
+      <th>Spearmans’ ρ</th>
+      <th>P</th>
+      <th>Spearmans’ ρ</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">% similarity and FA</td>
+      <td rowspan="2">tFA</td>
+      <td>Left</td>
+      <td>0.1290</td>
+      <td>0.4200</td>
+      <td>0.7846</td>
+      <td>0.0009</td>
+      <td>0.7714</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>Right</td>
+      <td>0.0215</td>
+      <td>0.8940</td>
+      <td>0.7099</td>
+      <td>0.0045</td>
+      <td>0.7143</td>
+      <td>0.0041</td>
+    </tr>
+    <tr>
+      <td rowspan="2">NCM</td>
+      <td>Left</td>
+      <td>0.2560</td>
+      <td>0.1060</td>
+      <td>0.6747</td>
+      <td>0.0081</td>
+      <td>0.6835</td>
+      <td>0.0070</td>
+    </tr>
+    <tr>
+      <td>Right</td>
+      <td>0.3880</td>
+      <td>0.0121</td>
+      <td>0.6396</td>
+      <td>0.0138</td>
+      <td>0.5692</td>
+      <td>0.0336</td>
+    </tr>
+    <tr>
+      <td>VP</td>
+      <td></td>
+      <td>0.4960</td>
+      <td>0.0010</td>
+      <td>0.8154</td>
+      <td>0.0004</td>
+      <td>0.7890</td>
+      <td>0.0008</td>
+    </tr>
+    <tr>
+      <td rowspan="3">% similarity and log mwj</td>
+      <td>VP</td>
+      <td></td>
+      <td>−0.4290</td>
+      <td>0.0057</td>
+      <td>−0.7978</td>
+      <td>0.0006</td>
+      <td>−0.4418</td>
+      <td>0.1138</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CM</td>
+      <td>Left</td>
+      <td>−0.3910</td>
+      <td>0.0126</td>
+      <td>−0.5297</td>
+      <td>0.0514</td>
+      <td>−0.3055</td>
+      <td>0.2882</td>
+    </tr>
+    <tr>
+      <td>Right</td>
+      <td>−0.4160</td>
+      <td>0.0075</td>
+      <td>−0.4769</td>
+      <td>0.0846</td>
+      <td>−0.1912</td>
+      <td>0.5126</td>
+    </tr>
+  </tbody>
+</table>
+
+_‘log mwj’ refers to the log-transformed, modulated and warped jacobian determinants; FA stands for Fractional Anisotropy, one of the DTI metrics. ‘r’ is the repeated-measures correlation coefficient of the within-subject correlation analyses. Spearmans’ ρ informs on potential correlations between the MRI parameters and song similarity at a specific time point between birds. Tests that survive Benjamini-Hochberg FDR correction for multiple comparisons are highlighted in bold (Supplementary file 6, 7) Abbreviations: dph: days post hatching._
 
 In two of the clusters identified above, that is the NCM and the tFA, the association between song similarity and FA appeared to be driven by between-subject variance (65 dph: NCM: left: p=0.0081; right: p=0.0138; tFA: left: p=0.0009; right: p=0.0045; 200 dph: NCM: left: p=0.0070; right: p=0.0336; tFA: left: p=0.0012; right: p=0.0041). Surprisingly, a small cluster in the right NCM displayed, in addition, a significant repeated-measures correlation. This indicates that when individual birds improved their performance, FA increased accordingly in the right NCM.
 
@@ -78,7 +202,7 @@ In contrast, the CM presented no between-subject correlations at any age. This s
 
 Together, these findings suggest that birds that sing a better copy of the tutor song have higher FA values in NCM, the VP and the tFA, both during the sensorimotor phase as well as after song crystallisation. Furthermore, learning-related individual advances in producing a more accurate acoustic copy of the tutor song correlate with local tissue structure in the caudal mesopallium and VP. Overall, higher song similarity is related to a smaller volume of the VP and CM or a higher FA (more ordered structure) in the VP, tFA and NCM. Higher FA might refer to a more accurate alignment of fibres or increased myelination in the VP and tFA (Beaulieu, 2002), while in grey matter-like structures such as NCM, higher FA values might allude to changes in cell morphology (spines and dendrite branching), alignment or density, etc. (Zatorre et al., 2012).
 
-## Song learning accuracy does not trace back to the song control system
+### Song learning accuracy does not trace back to the song control system
 
 The song control system is known to be crucial during the song learning process and its constituents are known to change in volume and in microstructural tissue properties during the first four months of post-hatch life (Figure 1E and Nixdorf-Bergweiler (1996) Journal of Comparative Neurology). Ample studies have shown that lesioning components of this circuitry during the song learning phase will prevent the pupils from copying the tutor song (Scharff and Nottebohm, 1991; Brainard and Doupe, 2001). Intriguingly, none of the clusters observed in the current study, when correlating between song performance and brain structure, overlapped with any component of the song control system. Previous studies of the authors, however, have shown that the MRI methods used in this study are sensitive enough to detect correlations between song performance and brain structure in the song control system nuclei for example HVC (Hamaide et al., 2018b; Orije et al., 2020). To better understand this lack of clusters co-localised with the song control system nuclei in this study, we delineated the song control nuclei based on DTI maps and extracted the structural properties (MRI parameters) of these regions-of-interest, that is HVC, Area X, LMAN and RA. Then, we tested for correlations between the structural readouts and song similarity. No correlations could be observed (Figure 5). Even when including the regions which changed significantly during ontogeny in male zebra finches, that is surrounding Area X and RA (Figure 1B,D) in the correlation analysis, no association between brain structure and song similarity could be identified (Figure 5C,F). This shows that although the song control system might than be responsible for enabling song learning, the ultimate song performance level (% similarity with tutor song) is determined by a complex sets of circuits that synapse onto the song control system.
 
@@ -86,11 +210,23 @@ The song control system is known to be crucial during the song learning process 
 
 **Figure 5.:** HVC (A), Area X (B), LMAN (D) and RA (E) and the surroundings of song control system nuclei Area X (C) and RA (F) as defined by the clusters derived from interaction age*sex shown in Figure 1B,D. The individual data points of the graphs are colour-coded according to bird-identity (i.e. one colour = one bird). The average within-bird correlation is presented by the coloured lines, while the dashed black line indicates the overall association between song similarity and FA, disregarding bird-identity or age. ‘r’ is the repeated-measures correlation (rmcorr) coefficient.
 
-## Microstructural characteristics of NCM as defined by FA can predict future good or bad learning outcome even before pupils engage in vocal practicing in the sensory learning phase
+### Microstructural characteristics of NCM as defined by FA can predict future good or bad learning outcome even before pupils engage in vocal practicing in the sensory learning phase
 
 The Spearman correlation analyses uncovered that FA values in the VP, NCM and tFA present a clear between-subject correlation with song learning accuracy. This suggests that in the sensorimotor phase good or bad learners are characterised by a distinct structural MRI parameter readout in these regions. Next, based on the scans of the same birds acquired during the sensory (20, 30 dph) and early sensorimotor (40 dph) phases, we evaluated whether similar signs of future good or bad song copying outcome would already be visible in the structural properties of these regions in the early sensorimotor phase, or even before sensorimotor practicing during the sensory learning phase when birds memorise the tutor song but are not yet fully engaged in trial-and-error vocal practicing (Brainard and Doupe, 2013).
 
 To this end, we divided the group of male birds into ‘good’ and ‘bad’ learners based on the overall song performance obtained at 65–200 dph. More specifically, good learners (n = 7) always sung acoustically accurate copies (>65–68% song similarity to tutor song), while bad learners (n = 5) never produced a copy better than 65–68% similarity to tutor song. Birds that traversed the 65–68% interval throughout the study (n = 2) were assigned to the ‘bad learners’ group as at the end of the song learning phase they reached similarity scores < 68% (Figure 6A). Next, we tested for an interaction between age (20-30-40 dph) and future learning accuracy (good, bad) in the cluster-based ROIs (Figure 6—figure supplement 1). None of cluster-based ROIs survived FDR correction for multiple comparisons when testing for an interaction between age and future learning accuracy. Interestingly, FA in the left NCM displayed a significant main effect of learning accuracy (good versus bad) already at the ages 20–40 dph (p<0.0001 F(1, 12.3)=39.2690; Figure 6B). Furthermore, FA in left NCM at 20 dph was positively correlated (p=0.01, ρ = 0.662) to the % song similarity at 200 dph (Figure 6—figure supplement 2). To our surprise, future good learners consistently demonstrated higher FA values in left NCM compared to bad learners already at the earliest stages of the sensory learning phase. Thus, this structural signature is already present much before the juvenile finches engage in vocal practicing, when the pupils have been exposed to their tutor for several days (Immelmann, 1969). This result was specific to the left NCM as none of the other regions identified in the voxel-based correlation analysis showed a similar predictive relationship (Figure 6C, Figure 6—figure supplements 1 and 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/49941/elife-49941-fig6-v1.jpg)
+
+**Figure 6.:** Graph A presents the learning curve of the good (green; n = 7) and bad (red; n = 7) learning birds from 65 to 200 dph. Details on the distinction between good and bad learners can be found in the Results section and in Supplementary file 2. Graphs B and C present the difference of FA in NCM between good (green) and bad (red) vocal learners during the sensory (20–30 dph) and early sensorimotor (40 dph) phase in, respectively, the left (B) and right (C) hemisphere. Each line represents repeated measures obtained from one bird. The * indicates a significant main effect of future learning accuracy (good versus bad learners) for FA in left NCM (mixed model: p<0.0001 F(1,12.3)=39.2690).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49941/elife-49941-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Graph A presents the learning curve of the good (green; n = 7) and bad (red; n = 7) learning birds from 65 to 200 dph. The two birds that traversed the 65–68% song similarity score were assigned to the ‘bad learning’ group. Details on the distinction between good and bad learners can be found in the Results section and in Supplementary file 12. Graphs (B-I) present the difference in Fractional Anisotropy (FA) or mwj (local tissue volume) during the sensory (20–30 dph) or early sensorimotor phase (40 dph) of the cluster detected by the voxel-based multiple regression between good (green) and bad (red) vocal learners. The black lines refer to the two birds of which we lost the tutor song recordings and as such have not been able to quantify song % similarity. The outcome of the statistical tests is summarised in Supplementary files 8, 9 and 10.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/49941/elife-49941-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Spearmans’ ρ correlation analysis between % song similarity at 200 dph and FA at 20 dph of NCM, tFA and VP to assess whether FA values at the start of the experiment (20 dph) have a predictive value for the song similarity seen in the end (200 dph). Only at the level of the left NCM, a significant positive correlation was found between FA values at 20 dph and % song similarity at 200 dph. See supplementary file 11 for statistics.
 
 ## Discussion
 
@@ -114,63 +250,122 @@ In conclusion, the present findings clearly illustrate that as pupils produce mo
 
 ## Materials and methods
 
-## Animals and ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Taeniopygia guttata, Male)</td>
+      <td></td>
+      <td>Other</td>
+      <td></td>
+      <td>Local breeding program</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>isoflurane</td>
+      <td>Abbott, Illinois, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statistical Parametric Mapping</td>
+      <td>SPM</td>
+      <td>RRID:SCR_007037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AMIRA</td>
+      <td>Amira</td>
+      <td>RRID:SCR_007353</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Matlab</td>
+      <td>Matlab</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sound Analysis Pro</td>
+      <td>SAP</td>
+      <td>RRID:SCR_016003</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and ethics statement
 
 Male (n = 16) and female (n = 19) zebra finches (Taeniopyiga guttata; only males sing), bred in the local animal facility and were housed in individual cages together with an adult male (tutor), an adult female and one or two other juvenile zebra finches. At around 10 dph the juvenile birds were randomly assigned to an adult couple. This way some birds were co-housed with their biological parents, while others were raised by foster parents (see Supplementary file 12). Each cage was shielded from its neighbouring cages so that the juvenile birds could hear all other birds of the room (6–12 other tutors and many other juveniles), but could interact (visual and auditory) with only one adult male bird. Research has shown that the juvenile birds will prefer to copy the song of the adult male bird with whom they can interact with (Eales, 1989). The ambient room temperature and humidity was controlled, the light-dark cycle was kept constant at 12 h-12h, and food and water was available ad libitum at all times. In addition, from the initiation of the breeding program until the juvenile birds reached the age of 30 days post hatching (dph) egg food was provided as well. The Committee on Animal Care and Use at the University of Antwerp (Belgium) approved all experimental procedures (permit number 2012–43 and 2016–05) and all efforts were made to minimise animal suffering.
 
-## Data statement
+### Data statement
 
 All data acquired and processed in this study are available online (DOI https://doi.org/10.5061/dryad.mkkwh70vj).
 
-## Study design
+### Study design
 
 We obtained MRI data of each bird during the sensory phase (20 and 30 dph), sensorimotor phase (40 and 65 dph), crystallisation phase (90 and 120 dph) and one last time point well beyond the critical period for song learning (200 dph; Figure 1A). Each imaging session, we collected a 3D anatomical scan and Diffusion Tensor Imaging (DTI) data to evaluate respectively gross neuro-anatomy (volumetric analyses) and alterations to white matter tracts or intrinsic tissue properties. Starting from the advanced sensorimotor phase (i.e. 65 dph), we recorded the songs sung by the juvenile males the first day after each imaging session.
 
-## Song recordings and analyses
+### Song recordings and analyses
 
 To quantitatively evaluate the progression of sensorimotor learning and song refinement in male birds, we analysed the first 20 (undirected) songs sung in the morning after ‘lights on’ in Sound Analysis Pro (SAP[Tchernichovski et al., 2000]; http://soundanalysispro.com/). The undirected songs sung by the juvenile and adult male zebra finches and tutors were recorded in custom-build sound attenuation chambers equipped with the automated song detection setup implemented in SAP. All song analyses were performed off-line and calls and introductory notes were omitted from all analyses. First, the motif length (ms) of the first 20 songs sung during the morning (starting from the initiation of the photophase) was measured after which each individual motif was manually segmented into its different syllables based on sharp changes in amplitude and frequency. The latter measure was chosen to avert inconsistent determination of the syllable ending caused by more silent singing towards the last part of the syllable. Second, several acoustic features that reflect the spectro-temporal structure of individual syllables were quantified, that is (1) pitch-related measures that inform on the perceived tone of sounds (including pitch, mean frequency, peak frequency and goodness of pitch), (2) Wiener entropy that quantifies the tonality of sounds and is expressed on a logarithmic scale where white noise approaches ‘0’ and pure tones are characterised by large, negative Wiener entropy values, (3) syllable and inter-syllable interval duration. Furthermore, to evaluate syllable feature variability over the different ages, the standard deviation, as an estimate for vocal variability (Scharff and Nottebohm, 1991), was defined for each acoustic property. Next, similarity to tutor song was measured between song motifs using an automated procedure in SAP that quantifies the acoustic similarity between two songs based on pitch, FM, AM, goodness of pitch and Wiener entropy (Tchernichovski et al., 2000). Song similarity was calculated using the default settings of SAP (asymmetric comparisons of mean values, minimum duration 10 ms, 10 × 10 comparisons), and % similarity was used for statistical testing. Further, according to the method conceptualised by Scharff and Nottebohm, motif sequence stereotypy was computed, based on visual assessment of sequence consistency and linearity (Scharff and Nottebohm, 1991). Sequence linearity reflects how consistent notes are ordered within the song motif by counting the different transition types of each syllable of the motif. Sequence consistency quantifies how often a particular syllable sequence occurs over different renditions of a specific motif. Song sequence stereotypy is defined as the average of sequence linearity and sequence consistency.
 
-## MRI data acquisition
+### MRI data acquisition
 
 All MRI data were acquired on 7 T horizontal MR system (PharmaScan, 70/16 US, Bruker BioSpin GmbH, Germany) and a gradient insert (maximal strength: 400 mT/m; Bruker BioSpin, Germany), combined with a quadrature transmit volume coil, linear array receive coil designed for mice, following a previously described protocol (Hamaide et al., 2017). First, the zebra finches were anaesthetised with isoflurane (IsoFlo, Abbott, IL; induction: 2.0–2.5%; maintenance: 1.4–1.6%). While anaesthetised, the physiological condition of the birds was monitored closely by means of a pressure sensitive pad placed under the chest of the bird to detect the breathing rate, and a cloacal thermistor probe connected to a warm air feedback system to maintain the birds’ body temperature within narrow physiological ranges (40.0 ± 0.2) °C (MR-compatible Small Animal Monitoring and Gating system, SA Instruments, Inc). Next, we collected DTI data using a four-shot spin echo (SE) echo planar imaging pulse sequence with the following parameters: TE 22 ms, TR 7000 ms, FOV (20 × 15) mm2, acquisition matrix (105 × 79), in-plane resolution (0.19 × 0.19) mm2, slice thickness 0.24 mm, b-value 670 s/mm², diffusion gradient duration (δ) 4 ms, diffusion gradient separation (Δ) 12 ms, 60 unique non-collinear diffusion gradient directions and 21 non-diffusion-weighted (b0) volumes. The entire DTI protocol was repeated twice to increase the SNR (total DTI scanning duration: 72 min). The field-of-view included the telencephalon and diencephalon, which contain the auditory system and brain areas implicated in song control, the cerebellum and parts of the mesencephalon. Last, we collected a T2-weigthed 3D Rapid Acquisition with Relaxation Enhancement (RARE) dataset with these settings: TE 55 ms, TR 2500 ms, RARE factor 8, FOV (18 × 16×10) mm3, matrix (256 × 92×64) zero-filled to (256 × 228×142), spatial resolution (0.07 × 0.17×0.16) mm3 zero-filled to (0.07 × 0.07×0.07) mm3, scan duration 29 min. The FOV of the 3D scan encapsulated the entire zebra finch brain. The entire scanning protocol took no longer than 2.5 hr. All animals recovered uneventfully after discontinuation of the anaesthesia.
 
-## MRI data processing
+### MRI data processing
 
 We processed both DTI and 3D RARE scans for voxel-based analyses following in house established protocols (Hamaide et al., 2017; Hamaide et al., 2018a; Hamaide et al., 2018b), and using the following software packages: Amira (v5.4.0, FEI; https://www.fei.com/software/amira-3d-for-life-sciences/), ANTs (Advanced Normalization tools; (Avants et al., 2011); http://stnava.github.io/ANTs/), FSL (FMRIB Software Library; (Jenkinson et al., 2012); https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL), and SPM12 (Statistical Parametric Mapping, version r 6225, Wellcome Trust Centre for Neuroimaging, London, UK, http://www.fil.ion.ucl.ac.uk/spm/) equipped with the Diffusion II toolbox (https://sourceforge.net/projects/diffusion.spmtools.p/) and DARTEL tools (Ashburner, 2007).
 
-## Deformation-based morphometry
+### Deformation-based morphometry
 
 First, we masked the individual 3D RARE scans (Amira 5.4.0) so that the datasets only include brain tissue. Second, we used the serial longitudinal registration (SLR) toolbox embedded in SPM12 to create one average ‘within-subject’ 3D dataset for each animal based on the individual masked 3D RARE scans acquired at the different ages (Ashburner and Ridgway, 2012). The SLR generated an average ‘within-subject’ 3D (‘midpoint average’) and jacobian determinant (j) maps. The latter maps are derived from the deformation field that contains the spatial transformation that characterises the warp between the midpoint average and each individual time point image, and encode for each voxel the relative volume at a specific age with respect to the midpoint average. Next, the midpoint averages of all animals were inputted in the ‘buildtemplateparallel’ function of the Advanced Normalization Tools (ANTs Avants et al., 2011) to create a between-subject population-based template. We used this initial ‘between-subject’ template to extract tissue probability maps reflecting mainly grey matter, white matter, or cerebrospinal fluid using the FMRIB Automated Segmentation Tool (FAST Zhang et al., 2001) embedded in FSL. The three probability maps created in this step were used as tissue class priors for segmenting all individual midpoint averages using the default settings of the (old)segment batch in SPM12. The resulting tissue segments of the midpoint averages were used to create a segment-based template in Diffeomorphic Anatomical Registration through Exponentiated Lie Algebra (DARTEL) (Ashburner, 2007). Next, the ANTs-based T2-weighted between-subject template was warped via the ‘DARTEL: existing template’ batch to spatially match with the segment template and this template was used as anatomical reference space for all voxel-based analyses (referred to as ‘population-based template’). The jacobian determinant maps were warped to the reference space using the flow fields produced by DARTEL (with modulation to preserve relative volume differences existing between different subjects). Lastly, the warped modulated jacobian determinant maps were log-transformed to convert exponential growth patterns to linear patterns (Ashburner and Ridgway, 2015) and smoothed using a Gaussian kernel with FWHM (0.14 × 0.14×0.14) mm2.
 
-## Diffusion tensor imaging
+### Diffusion tensor imaging
 
 The DTI data were pre-processed in the Diffusion II toolbox embedded in SPM12. First, we realigned the DTI volumes to correct for subject motion following a two-step procedure: an initial estimation based exclusively on the b0 images was followed by a linear registration including all (b0 and diffusion-weighted) volumes. Second, we co-registered the realigned DTI volumes to the individual 3D dataset acquired at the same age using normalised mutual information as objective function for inter-modal within-subject registration. In parallel, each individual masked 3D RARE dataset was bias corrected and spatially normalised to the population-based template using a 12-parameter affine global transformation followed by nonlinear deformations. These estimated spatial normalisation parameters were applied to the co-registered DTI volumes so that the DTI data spatially matched the population-based template space. During this writing step, the diffusion data were upsampled to an isotropic resolution of 0.19 µm. In parallel, the diffusion vectors were adapted to account for potential (linear) rotations incurred by the realignment, co-registration and normalisation procedures using the ‘copy and reorient diffusion information’ tool of the Diffusion II toolbox. Then, the diffusion tensor model was applied to the diffusion-weighted and b0-data to estimate the diffusion tensor and Eigenvalues (λ1, λ2, λ3). The Eigenvalues represent the principle axes of the radii of the 3D diffusion ellipsoid. Based on the Eigenvalues, the Fractional Anisotropy (FA) maps were computed. FA is scaled between 0 and 1; where 0 refers to isotropic and 1 anisotropic diffusion properties. Typically, one expects high FA values in white matter regions that contain many coherently organised myelinated fibre tracts. The FA maps of male zebra finches 200 dph were averaged together to create an average FA map using the image calculator of SPM (e.g. third and sixth panel in Figure 1E).
 
 Several quality controls were performed throughout the data acquisition and processing procedures. Those included a visual inspection for ghosting, excessive movement, and spatial correspondence of registered images to the reference space (after co-registration and spatial normalisation procedures). Last, the DTI parameter maps were smoothed using a Gaussian kernel with FWHM of (0.38 × 0.38×0.38) mm3.
 
-## Statistical analyses: song
+### Statistical analyses: song
 
 To analyse whether the song parameters change from 65 to 200 dph, we set up mixed-effect models including age as fixed effect, subject as random effect, subject*age as random slope and –only for the syllable level– syllable identity as random effect nested within subject. Furthermore, to determine whether song % similarity was dependent on the tutor by which the birds were raised, a mixed-effect model was performed with ‘tutor identity’ as fixed effect and ‘bird identity’ as random effect. We used the restricted maximum likelihood method to fit the data and assessed significance using F-tests with Kenward-Roger approximation. If a significant main effect could be observed for any of the song features examined, Tukey’s HSD (Honest Significant Difference) post hoc tests were performed to situate when in time actual changes occur.
 
-## Statistical analyses: MRI
+### Statistical analyses: MRI
 
 Even though the MRI data were thoroughly checked at several stages in the pre-processing, an additional quality control was performed based on outlier detection. This analysis identified four outliers which, upon visual inspection of the datasets, appeared in two out of four to be driven by excessively large ventricles at the 20 dph time points and appeared normal thereafter. The other two animals showed an abnormal cerebellar folding patterns (leading to suboptimal subsequent image registration) and were therefore excluded from all analyses. In addition, one animal had one missing DTI scan, leaving 30 zebra finches (14 males and 16 females) for voxel-based statistical testing of interactions and main effects of DTI parameter maps. Furthermore, technical issues with the recordings of one tutor caused that we were not able to quantify song similarity to tutor song of two juvenile birds (one being the MRI-based outlier). Other technical issues lead to the loss of song recordings of two juvenile birds at 90 dph. This leaves 54 data points for voxel-based statistical correlation analyses (12 juveniles with 4 time points and 2 juveniles with 3 time points).
 
 We have used a two-step approach to analyse the MRI datasets. First, instead of deciding where to look by manually drawing ROIs (of for example the song control and auditory nuclei), we used data-driven image analysis techniques that are capable of localising the specific brain sites where a brain-behaviour relationship exists. Therefore, we performed brain-wide voxel-based statistical analyses to identify (1) brain regions where sex differences in local tissue properties originate throughout the song learning process, (2) which brain sites mature between 20 and 200 dph and (3) which brain sites exhibit a significant relationship between performance (similarity) and the structural properties of the brain (DTI or local volume). Second, after establishing where in the brain these relationships exist, we aimed at better understanding the nature of the outcome of the voxel-based correlational analyses. Therefore, we extracted the average DTI or DBM parameter value for each cluster using ‘cluster-based ROIs’ and used those average parameter values to perform repeated-measures correlation analyses (rmcorr) and to create visual representations of the ‘nature’ of the correlation. The outcome of the DBM analysis was published in Hamaide et al. (2018a), while the male data were used in this study to correlate with the song outcome of the same birds.
 
-## Voxel-based repeated-measures ANOVA: analysis of interactions (age*sex) and main effects
+### Voxel-based repeated-measures ANOVA: analysis of interactions (age*sex) and main effects
 
 All voxel-wise statistical tests were executed in SPM12. A repeated-measures ANOVA was performed on smoothed DTI parameter maps, including ‘subject’ as random factor, and ‘sex’ and ‘age’ as fixed factors. This design allowed for testing within-subject effects including interactions (age*sex) and main effects (age). Unless explicitly stated, only clusters that survived a family-wise error (FWE) correction thresholded at pFWE <0.05 combined with a minimal cluster size (kE) of at least 5 voxels for DTI analyses, were considered significant. All statistical maps are displayed overlaid onto the population-based template.
 
 A similar analysis, performed on the smoothed modulated jacobian determinant maps, was published previously Hamaide et al. (2018a). For a comprehensive overview of the results, we refer the reader to that paper.
 
-## Voxel-based statistical correlation analyses between structural MRI and song parameters
+### Voxel-based statistical correlation analyses between structural MRI and song parameters
 
 To explore potential relationships between robust measures of song performance and the structural properties of the songbird brain, voxel-based multiple regressions were set up between the smoothed MRI parameter maps (log mwj and FA maps) and % similarity or sequence stereotypy. This protocol is based on Hamaide et al. (2018b); Orije et al. (2020). When searching for correlations between local tissue volume and the song features, total brain volume was added to the statistical design as additional covariate. All statistical analyses were performed on the entire brain (brain tissue within FOV) and no thresholds were applied on the smoothed MRI parameter maps. Unless explicitly stated, we used the following two criteria to assess the significance of a cluster: (1) clusters should contain at least 5 or 20 contiguous voxels for respectively DTI and 3D RARE analyses (number of contiguous voxels is represented by kE) and (2) the ‘peak voxel’ (based on T values) of the cluster should survive a family-wise error (FWE) correction for multiple comparisons thresholded at pFWE <0.05 (Roiser et al., 2016). Only clusters where both criteria were satisfied were considered significant. These cluster sizes correspond to the following volumes: DTI: volume of cluster of 5 voxels is 0.04332 mm³ and 3D RARE: volume of cluster of 20 voxels is 0.03808 mm³. Based on Nixdorf-Bergweiler (1996, Journal of Comparative Neurology), these cluster-size thresholds (5 voxels for DTI; 20 voxels for 3D RARE) are small enough to detect differences even the smallest areas of the song control system nuclei. Furthermore, using the same acquisition protocols (identical voxel sizes), we have been able to detect structural differences between groups or over time in these small areas (DTI: Hamaide et al., 2017; DTI and 3D RARE: Hamaide et al. (2018b); 3D RARE: Hamaide et al., 2018a). To overcome concerns that statistical correlation analyses was done on some of the measures coming from the same individuals, we reanalysed the data with a more stringent Sandwich Estimator (SwE) toolbox (http://www.nisox.org/Software/SwE/) approach and a classic ROI-based analysis as outlined in the ‘response to reviewers’ (p3-10). We could detect the same regions, but they would not be considered significant if we would apply the same selection criteria for assessing the significance of a cluster as outlined above (Roiser et al., 2016). As the purpose was exploratory and validated with subsequent cluster-based ROI correlation analysis, we preserved the initial outcome conform the analysis of our earlier studies (Hamaide et al., 2018b; Orije et al., 2020).
 
 In contrast with song similarity, no supra-threshold voxels could be observed between any combination of smoothed MRI parameter maps and song sequence stereotypy. Clusters detected by the voxel-based multiple regression analysis and voxel-based repeated measures ANOVA were converted to ROIs (termed ‘cluster-based ROIs’, conversion at puncorrected <0.001 kE ≥40 voxels) of which the mean DTI metrics or modulated log-transformed jacobian determinant were extracted for post hoc statistical testing. Extracting the previously identified clusters at a more liberal cluster makes them slightly larger, that is DTI: volume of cluster of 40 voxels is 0.34656 mm³; 3D RARE: volume of cluster of 40 voxels is 0.07616 mm³. This cluster-based ROI approach is identical to the methods used in our other studies for example (Hamaide et al., 2018a; Hamaide et al., 2018b; Anckaerts et al., 2019).
 
-## ROI-based analyses
+### ROI-based analyses
 
 The voxel-wise multiple regression in SPM does not allow including a random effect for bird identity. Consequently, by inserting repeated-measures data we violate the assumption of independency of measures. To correct for this potential confound, we performed two additional tests on the cluster-based ROI data derived from the voxel based multiple regression analysis and voxel based analysis of the interaction (FA: age*sex). Additionally, we delineated song control nuclei: HVC, LMAN, RA and Area X, from which we extracted the mean DTI metrics to examine whether there are correlations to song similarity within the song control system. Firstly, we employed a repeated-measures correlation analysis (Bakdash and Marusich, 2017) in Rstudio (version 1.1.383, Rstudio, Boston, MA; http://www.rstudio.com/). This latter test informs on the existence of consistent within-subject correlations between the two variables. Hence, this analysis informs on potential song learning-related structural changes in the brain. Secondly, Spearman’s ρ was calculated on data obtained at one specific age (65 dph, 200 dph) to test potential sources of between-bird variance in driving the correlations observed by the voxel-based analyses. An additional correlation analysis was run between the FA values at 20 dph and the song similarity at 200 dph, to determine whether the microstructural tissue properties early in life already relate to song learning proficiency later in life. Spearmans’ ρ was computed in JMP (Version 13, SAS Institute Inc, Cary, NC, 1989–2007).
 

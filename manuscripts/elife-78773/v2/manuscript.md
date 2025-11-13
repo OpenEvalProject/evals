@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/013sk6x84 Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
-2. https://ror.org/00rqy9422 Center for Advanced Imaging, The University of Queensland Queensland Australia
+1. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+2. Center for Advanced Imaging, The University of Queensland Queensland Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
 
 † Corresponding author
 
@@ -32,9 +32,25 @@ In this work, we developed an assay that facilitates visualization of the efflux
 
 ## Results
 
-## Visualizing active zone dopamine efflux from axons and dendrites
+### Visualizing active zone dopamine efflux from axons and dendrites
 
 To a first-order approximation, once released from a synaptic active zone, the temporal evolution of the released chemical should approximate that of diffusion from a point source, characterized by an isotropic expansion from the point of release but constrained by transporter activity and local three-dimensional ultrastructure. Such a signal can only be fully measured if the sensing platform sufficiently samples the underlying signal in both the spatial and temporal domains. However, the inability of current technologies to measure chemical efflux sufficiently in the spatial domain limits our ability to study chemical synapses. We addressed this challenge by using near-infrared (NIR) fluorescent dopamine nanosensors to image single dopamine release sites from rat primary midbrain neuronal cultures. The nanosensors are assembled from oligonucleotide-functionalized, single-wall carbon nanotubes in solution phase (Beyene et al., 2018; Kruss et al., 2014) and have previously been used to image dopamine release in striatal acute slices and cultured cells but were lacking in synaptic information (Beyene et al., 2019; Kruss et al., 2017). In this study, we drop-cast glass coverslips with dopamine nanosensors to produce a 2D layer of a turn-on fluorescent, dopamine-sensitive surface that can effectively image dopamine diffusion from a point source (Figure 1A). Temporally, the sensors exhibit subsecond turn-on responses, which enabled real-time imaging of dopamine’s temporal evolution. We named the engineered surface as DopaFilm, a 2D engineered film that affords video-rate filming of dopamine spatiotemporal dynamics with subcellular spatial and millisecond temporal resolution.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of DopaFilm. (B) Workflow for preparing dopamine neuron primary cultures from the rat midbrain regions highlighted in blue. Neurons are grown on dishes with an engineered, chemi-sensitive, and fluorescent surface (DopaFilm) between polylysine and glass surfaces. (C) Imaging DopaFilm fluorescence activity in cultured dopamine neurons. Immunocytochemistry and Airyscan super-resolution imaging are carried out following DopaFilm activity imaging.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Examples of TH+ dopamine neurons grown in co-culture with cortical neurons.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Example recordings of action potentials to determine rheobase from a 49 pF neuron on PDL and 66 pF neuron on DopaFilm. (B) Repetitive action potential firing from a 1 s, 200 pA current injection. Scatter plots of (C) resting membrane potential (p=0.89), (D) input resistance (p=0.35), (E) capacitance (p=0.19), (F) rheobase (p=0.78), (G) normalized rheobase (p=0.65), (H) voltage threshold (p=0.12), (I) firing rate (p=0.48), (J) action potential amplitude (p=0.12), (K) action potential half width (p=0.09), and (L) action potential half amplitude (p=0.07) from hippocampal neurons on PDL (n=17) and DopaFilm (n=14). Data are presented as mean ± SD. Statistical comparisons are via unpaired Mann-Whitney U test with the corresponding p-values noted on each plot. n.s. = not significant.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) A 10 µM of exogenous dopamine (DA) wash on DopaFilm shows diffuse ∆F/F response from DopaFilm substrate. (B) Dose-response curve of DopaFilm. Each experimental data point has an error bar depicting SD from different DopaFilm preparations (n=3). Experimental data points were fit to the Hill equation (least-squares regression, solid black trace) to estimate an apparent dissociation constant (Kd = 268 nM) and Hill coefficient (n=0.73). (C) DopaFilm response to 10 µM DA remains stable over 35 days. Each experimental data point has an error bar depicting SD from different DopaFilm preparations (n=3). X-axis: days postinitial preparation. (D) Solution-phase fluorescence emission spectra of dopamine nanosensors, prepared from a conjugation of multichiral single-wall carbon nanotubes functionalized with (GT)6 single-strand oligonucleotides, before (black trace) and after (red trace) application of 10 µM DA. Bands indicate SD from n=3 measurements. (E) Solution-phase absorption spectrum of nanosensors.
 
 DopaFilm was validated by co-culturing rat primary midbrain dopamine neurons with cortical and hippocampal neurons on the nanofilm surface for up to 6 weeks (typical period for an experiment) (Figure 1B and C). Dopamine neurons in culture exhibited stereotyped morphology, with thick major dendrites arising from the soma that go on to ramify into dendritic arbors, and axonal processes that branch and arborize on a scale of millimeters from a single neuron (Figure 1—figure supplement 1). The electrophysiological properties of hippocampal neurons grown on DopaFilm were similar to neurons that were grown on sensor-free substrates, which suggested that the electrophysiological phenotype of neurons grown DopaFilm was not altered (Figure 1—figure supplement 2). DopaFilm fluoresced in the NIR to short-wave infrared (SWIR) regions of the spectrum (850–1350 nm) when imaged with a 785 nm excitation laser, permitting its multiplexed deployment with existing optical technologies with no spectral overlap (Figure 1—figure supplement 3). The surface exhibited an isotropic turn-on response when exposed to exogenous dopamine wash, suggesting uniform sensor coverage and response (Figure 1—figure supplement 3A). Dopamine wash experiments revealed DopaFilm has the sensitivity to detect 1 nM concentrations, remained stable over the duration of a typical experiment, and has an apparent dissociation constant (Kd) of 268 nM (Figure 1—figure supplement 3B-C). This compares to half maximal effective concentrations(EC50 )values of ~ 1 µM for D1-like and ~ 10 nM for D2-like dopamine receptors, suggesting that DopaFilm is sensitive to chemical secretions that have physiological relevance (Rice and Cragg, 2008). In order to utilize DopaFilm’s advantageous photophysical properties, we developed a custom microscope that is optimized for broad spectrum imaging in the visible, NIR and SWIR regions of the spectrum (400–1400 nm), with integrated widefield and laser scanning confocal capabilities. The optimizations in the NIR and SWIR regions facilitated imaging and recording of activity with exceedingly high signal-to-noise (SNR) ratios, attaining SNRs in the range of 5–50 for most experiments. In this study, most imaging experiments were carried out in widefield epifluorescence mode using a 40×/0.8 NA objective (N40X-NIR, Nikon). This gave us a field of view (FOV) of 180 × 230 µm. In axonal arbors, the FOV contained several hundred dopaminergic varicosities, whereas in cell body regions, we could simultaneously image activity around the soma, major dendrites, and dendritic arbors. Post hoc immunofluorescence super-resolution images were collected on Zeiss LSM 880 with Airyscan mode.
 
@@ -42,31 +58,119 @@ We asked if dopamine neurons grown on DopaFilm can be evoked to release dopamine
 
 We first imaged in axonal arbors, where dopamine release is relatively better characterized through microdialysis and voltammetry measurements (Liu et al., 2018; Garris et al., 1994; Robinson et al., 2003; Robertson et al., 1991). Whenever targeted to TH+ neurons (further confirmed by retrospective immunofluorescence experiments), our stimulation protocol elicited robust fluorescence transients from DopaFilm (Figure 2A and B, Figure 2—animation 1), and the fluorescence hotspots co-localized with TH+ boutons in axonal arbors (Figure 2C). We observed diffusive broadening of the fluorescence hotspots in subsequent imaging frames (Figure 2A, +1 s), and fluorescence transients returned to baseline in the poststimulation epoch (Figure 2A post, Figure 2B). The observed spatiotemporal evolution of DopaFilm hotspots is consistent with that of release and diffusion from multiple point-like sources localized in a 2D plane, with estimated mass diffusivities of ≈ 1.1 ± 0.8 × 10–6 cm2 s–1 (mean ± SD), in reasonable agreement with estimated values of diffusion coefficient for dopamine (Cragg et al., 2001). Despite the high density of axonal varicosities in the FOV, fluorescence transients were observed to emanate from a subset of varicosities while another subset of varicosities produced no corresponding ∆F/F fluorescence hotspots (Figure 2C, red arrows). The percentage of release-competent boutons varied greatly in axonal arbors, ranging from 5% in some FOVs to 65% in others, with a mean of 32% of putative boutons participating in release. This sparse-release observation is in agreement with results from previous studies (Liu et al., 2018; Pereira et al., 2016). DopaFilm hotspot activities were also observed to co-localize with dendrites of dopamine neurons (Figure 2D and E) and were additionally noted to arise from dendritic processes that commingled with the soma (Figure 2F and G). The turn-on and clearance kinetics of the measured transients in axons were 0.46 ± 0.16 s (mean ± SD) for time to peak (τpeak) and 3.83 ± 0.8 s (mean ± SD) for first-order decay time constant (τoff) (Figure 2—figure supplement 1). The turn-on kinetics is slower than those reported for the genetically encoded dopamine sensors GRABDA (≈ 100 ms) and dLight (reported as τ1/2 of ≈10 ms followed by a plateau of ≈100 ms) (Patriarchi et al., 2018; Sun et al., 2018). On the other hand, decay kinetics appears to be slower than dLight (reported as τ1/2 ≈ 100 ms) and comparable to or faster than those reported for GRABDA (≈ 3–17 s for variants). For comparison, G-protein-gated inwardly rectifying K+ (GIRK) current-based dopamine dynamics measurements exhibited τpeak ≈ 250 ms, whereas carbon fiber recordings peaked in τpeak ≈ 300 ms (Marcott et al., 2014). This suggests that the kinetic properties of DopaFilm transients are comparable with the range of reported values from existing tools. The DopaFilm was responsive only to the activity of TH+ neurons. Stimulation of ChrimsonR+ in TH− neurons did not elicit fluorescence transients in DopaFilm, and neither evoked nor spontaneous activities were noted in neurons that lacked TH immunoreactivity despite being TH-GFP+ in the viral expression paradigm (Figure 2—figure supplement 2). Both evoked and spontaneous DopaFilm fluorescence transients were absent when imaging in extracellular ‘Ca2+-free’ media (Figure 2—figure supplement 3).
 
-## DopaFilm hotspots localize to defined varicosities
+![Figure 2.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig2-v2.jpg)
+
+**Figure 2.:** (A) ∆F/F images before stimulation (pre), at the time of stimulation (stim), 1 s after stimulation (+1 s) and after return to baseline (post). (B) Mean ± SD of ∆F/F traces from the imaging field of view in (A) averaged over n=5 repeat stimulation runs. (C) Tyrosine hydroxylase-GFP (TH-GFP) image of axonal arbor and near-infrared (NIR) ∆F/F image shown in (A) and overlay. The NIR ∆F/F frame corresponds to ‘stim’ and before diffusive broadening of the hotspots. (D, E) TH-GFP and ∆F/F activity from a dendrite of a dopamine neuron and overlay. Cell body not shown. Activity traces from dendrite are averaged over n=3 stimulations. (F, G) Spontaneous activity from dendrites around cell body of a dopamine neuron and maximum intensity projection of the ∆F/F stack and overlay. (F) Shows ∆F/F activity traces from regions of interest (ROI) numbered in (G). Red wedges in (B) and (D) = time of optical stimuli.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Time to peak (τpeak) of ∆F/F traces in axons and dendrites, defined as the time it takes to reach peak ∆F/F in the epoch immediately following stimulation. Notice the discrete nature of the data, reflecting the video frame rate of imaging (nominally 10 frames/s). The τpeak mean ± SD in axons (s): 0.46 ± 0.16 and in dendrites (s): 0.34 ± 0.11. Bars indicate mean ± SD. (B) Decay time constant (τoff) extracted from fitting a first-order decay process to representative traces in axons and dendrites. The τoff mean ± SD in axons (s): 3.83 ± 0.8 and in dendrites (s): 3.51 ± 1.34. Error bars indicate mean ± SD.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Optical stimulation of ChrimsonR+ and TH-GFP- axonal arbor elicits no evoked activity (n=25 cells). Immunofluorescence (TH-GFP-IF) indicated no dopaminergic processes in the field of view (FOV). (C, D) Optical stimulation of ChrimsonR+ and TH-GFP+ soma and dendritic arbor elicits no evoked activity (n=10 cells). Retrospective immunofluorescence (TH-GFP-IF) indicates that there are no dopaminergic processes in the FOV. Red wedge: time of application of optical stimulation. Data in (B) and (D) are averaged from triplicate stimulations for FOVs shown in (A) and (C), respectively and are not averages from the entire dataset.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) image of a dopamine neuron. (B) Maximum intensity projection from a 1000-frame ∆F/F movie of evoked and spontaneous activity imaging of neuron shown in (A), in normal ACSF. (C) Non-negative matrix factorization (NNMF) decomposition applied to the ∆F/F movie in normal ACSF shows local clusters of pixels with highly correlated activity, color coded for better visualization. Similar colors in a local cluster of pixels correspond to correlated activity. (D) NNMF decomposition of movie stack of imaging in Ca2+-free ACSF. (E, F) ∆F/F time traces for a subset of the NNMF clusters (i.e. decomposed elements) from (C) and (D), respectively, offset in y-axis for better visualization. (G, H) Heat-maps of activity for all the NNMF components in (C) and (D), respectively. Red wedge in (E–H) = time of optical stimulus application.
+
+### DopaFilm hotspots localize to defined varicosities
 
 We next explored the consistency of DopaFilm ∆F/F hotspot dynamics over multiple stimulation epochs and asked if repeat stimulations in the same FOV generated DopaFilm hotspots that localize to the same set of boutons. We carried out imaging in an FOV where we applied the same optical stimuli to drive hotspot activity over separate imaging sessions. In axon terminals, we observed that repeat stimulations can be carried out with rest periods of ~ 2–3 min between stimuli, giving rise to a consistent set of DopaFilm hotspot activities, and suggesting that release-competent dopamine neuron boutons likely have a high probability of release (Figure 3A, Figure 3—figure supplement 1A-B). To evaluate the spatial specificity of the observed hotspots, we computed the intensity-weighted centroid of each DopaFilm hotspot and compared the centroids across multiple stimulation repeats. We found that hotspot centroids were remarkably consistent across repeat stimulations (Figure 3C). To determine if the hotspots localized to the same set of varicosities, we compared DopaFilm hotspot centroids with the centroid of a TH+ varicosity that spatially overlapped with the DopaFilm hotspot from the overlay image (Figure 3B). We defined dopamine varicosities as puncta where TH-GFP intensity is at least 3 × the mean intensity of TH-GFP expression along the process and computed the centroids of these TH+ boutons (Figure 3B center, green puncta, Figure 3D). Using an arbitrarily chosen origin as a reference point (0,0), we compared centroids of DopaFilm hotspots and TH+ boutons. Our results showed that ∆F/F hotspot centroids and bouton centroids matched with remarkable consistency across stimuli (no offset in some regions of interest [ROIs], <5 camera pixels for all ROIs, equivalent to <1.7 µm; Figure 3E). These experiments demonstrate that DopaFilm activity hotspots can be faithfully localized to the same set of boutons across stimulation epochs and are therefore likely driven by the efflux of dopamine from putative active zones of these boutons. The ability to localize synaptic dopamine efflux to specific boutons is unique to this study and to the best of our knowledge has not been demonstrated before.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig3-v2.jpg)
+
+**Figure 3.:** (A) Repeat optical stimulation produced a consistent set of DopaFilm hotspots (n=5 of n=10 stimulations shown), thresholded for better visualization. (B) Hotspot colocalization with tyrosine hydroxylase-GFP (TH-GFP) varicosities (green) for stim #1. Green colors indicate GFP mean intensity >3 × the mean intensity along the process. (C) Centroid of hotpots (regions of interest [ROIs] 1–5). Each data point of an ROI corresponds to one evoked imaging run and there are five total per ROI. (D) Line profile for one of the varicosities is shown in (B). Line profile is calculated along the red curve shown in (B). (E) Parity plot for TH and DopaFilm hotspot centroids. Centroid of TH varicosities and averaged centroid of DopaFilm hotspots are plotted. Distance is calculated from the top left corner (=origin) of near-infrared (NIR) ∆F/F image shown in (B). (F, G) Spatiotemporal dynamics of imaging in artificial cerebrospinal fluid (ACSF) and ACSF + nomifensine (+10 µM NOM), respectively. (H) TH-GFP image of field of view in (F, G). Red arrows = no release. Scale bar = 10 µm. (I) ∆F/F traces of hotspots in ACSF (black) and ACSF + 10 µM NOM (red) and their mean traces in bold. (J) Box plots comparing the effect of NOM on peak ∆F/F (left) and full width at half maximum (FWHM; right) of traces shown in (I). Unpaired t-test, p<10–4 for both ∆F/F and FWHM data. See Methods for box plot definitions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Peak ∆F/F values at 10 regions of interest (ROIs) in an axonal field of view, normalized to the peak ∆F/F from the first stimulation at each ROI. Optical stimulation protocol per imaging session: 5 pulses, 25 Hz, and 5 ms pulse width. Imaging sessions are spaced ~ 2 min apart, which gives interstimulus interval of ~ 2–3 min. Bars represent mean ± SD. (B) Time course of normalized ∆F/F for each ROI presented in (A) shows stability of response across time. (C) Example traces from single hotspots of DopaFilm before (artificial cerebrospinal fluid [ACSF]) and after application of +NOM. Blue arrows indicate putative dopamine release events in the poststimulation epoch. (D) and (E) time to peak (τpeak) and decay time constant (τoff) of individual traces before (ACSF) and after application of +NOM. Mean ± SD of τpeak for ACSF (s): 0.42 ± 0.13 and for +NOM (s): 4.63 ± 1.81 (p-value<10–4, unpaired t-test). Mean ± SD of τoff for ACSF (s): 4.38 ± 0.84 and for +NOM (s): 5.70 ± 1.47 (p-value=3×10–4, unpaired t-test).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) DopaFilm activity detected without application of external stimulus when imaging in normal imaging buffer (artificial cerebrospinal fluid [ACSF]). Exemplary traces from an axonal field of view are shown. (B) Imaging in the same field of view after application of AMPAR-antagonist NBQX. (C) Evoked activity imaging in ACSF (black traces) and sequential application of NBQX and D-AP5 (red traces). Application of tetrodotoxin (TTX) (blue traces) abolished activity. The 10 exemplary traces are shown with a mean trace indicated in bold. (D) and (E) Area under the curve and peak ∆F/F of activities before and after drug application from 20 regions of interest (p<10–4 for both (D) and (E), unpaired t-test).
 
 It is notable that not all TH-GFP+ boutons produced a corresponding DopaFilm activity (Figure 2C, Figure 3B, red arrows indicate no activity) despite appearing to satisfy the morphological criteria for a varicosity. We considered the possibility that the failure to detect activity from some putatively silent boutons was the result of rapid dopamine clearance, before DopaFilm detection. To test if dopamine clearance was critical to ‘silent’ boutons, we applied saturating levels of nomifensine (NOM; 10 µM), a dopamine-specific reuptake inhibitor (Ki ≈ 100 nM). Application of NOM altered the clearance kinetics of DopaFilm transients, defined by a first-order decay time constant, τoff (mean ± SD of τoff for artificial cerebrospinal fluid [ACSF]: 4.38 ± 0.84 and for +NOM: 5.70 ± 1.47, p-value=3×10–4, Figure 3—figure supplement 1E) and dramatically affected the overall kinetic profile of ∆F/F traces, indicated by mean FWHM of 1.85 s before and 4.45 s after application of NOM (Figure 3F–J). Additionally, the measured peak amplitude of the ∆F/F trace was higher after application of NOM (mean peak ∆F/F = 15.7% before and 24.5% after application of NOM; Figure 3F–J). Intriguingly, NOM altered the turn-on profile of DopaFilm transients (Figure 3—figure supplement 1C-D). When imaging under normal ACSF, the clearance profile of dopamine followed an approximately monotonic decay that is punctuated by brief instances of upward deflection (blue arrows in Figure 3—figure supplement 1C). We posit that these are dopamine release events whose signal is arrested by dopamine transporters (DATs). Saturation of DATs by NOM permits these release events in the poststimulation epoch to be detected by DopaFilm. This suggests that DATs may therefore play a role in arresting spillover of dopamine during a train of release events. Importantly, application of NOM did not reveal any subthreshold activity at silent varicosities that could have gone undetected in pre-NOM imaging sessions (Figure 3F and G). Thus, we conclude that DopaFilm hotspot activity arises from dopamine release at varicosities, and that the absence of DopaFilm fluorescence transient is likely an indication of a lack of dopamine release at release-incompetent varicosities. When coupled with the fact that DopaFilm activity is not observed in TH− cells, and that activity is absent when imaging in Ca2+-free media, we conclude that DopaFilm ∆F/F activity is a consequence of release of endogenous dopamine from active release sites. The NOM manipulation of the temporal dynamics of dopamine release provides additional evidence that DopaFilm possesses the kinetics necessary to recapitulate the dynamic behavior of dopamine release, diffusion, and clearance.
 
 In our study, dopamine neurons are co-cultured with cortico-hippocampal neurons, and we explored if glutamatergic activity from neurons in co-culture could influence dopamine release. To investigate this, we carried out experiments in which α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA)-type glutamate receptor antagonist 2,3-dioxo-6-nitro-7-sulfamoyl-benzo[f]quinoxaline (NBQX) and N-methyl-D-aspartate (NMDA)-type glutamate receptor antagonist D-2-amino-5-phosphonovalerate (D-AP5) were bath-applied to the co-culture system while imaging release from dopamine neurons. We first examined neurons from which DopaFilm activity can be detected from spontaneous spiking events in which we applied no external stimulus to generate activity. We imaged from these neurons under ACSF (our normal imaging buffer) and then bath-applied NBQX (10 µM). DopaFilm activities that were detected before application of NBQX were absent in the postdrug imaging sessions (Figure 3—figure supplement 2A-B). Application of NBQX was sufficient to abolish these activities. Additionally, we examined the extent to which glutamatergic currents contributed to dopamine neuron depolarization during evoked activity imaging. To investigate this, we carried out imaging before and after glutamate receptor blockade with a combined application of NBQX and D-AP5. Here, such treatment resulted in reduced dopamine release as measured by the peak amplitude of ∆F/F traces and the area under the curve of ∆F/F traces (Figure 3—figure supplement 2C-E). In sum, these results indicate that DopaFilm offers an opportunity for direct measurement of dopamine release under pharmacological perturbations and suggests that our in vitro culture system may permit simplified explorations of local chemical circuitries that control dopamine release in the absence of complex circuit effects that may be encountered in vivo.
 
-## DopaFilm detects quantal release of dopamine
+### DopaFilm detects quantal release of dopamine
 
 We next sought to establish the limit of detection of DopaFilm. In in vitro experiments, we determined that DopaFilm exhibits high sensitivity to dopamine and can detect 1 nM concentrations in bath application experiments (Figure 1—figure supplement 3B). This suggested that DopaFilm may be sensitive enough to detect single events of quantized dopamine efflux from release sites. To determine the limit of detection from a practical sense, we carried out imaging experiments in a field of an axonal arbor of a dopamine neuron before and after bath application of tetrodotoxin (TTX), which inhibits action potential driven, synchronous neurotransmitter release while sparing stochastic and spontaneous release events. We first imaged activity in ACSF, our normal imaging buffer and then applied TTX. As expected, bath application of 10 µM TTX abolished synchronous, evoked release of dopamine but stochastic, temporally uncorrelated fluorescence transients, which we refer to as spontaneous release events, persisted (Figure 4A, Figure 4—figure supplement 1, Figure 4—animation 1 before TTX, Figure 4—animation 2 after TTX). The spatial extent of DopaFilm fluorescence hotspots was diminished after application of TTX (Figure 4A, B and D, Figure 4—figure supplement 1A, Figure 4—figure supplement 2), and the peak amplitude of transients was smaller compared to evoked release (Figure 4E). The TTX ∆F/F peaks were comparable to spontaneous activity peaks detected before TTX addition (peak ∆F/F (%) [mean ± SD]: 5.3 ± 1.6 for spontaneous activity vs 7.9 ± 4.6 for TTX) but exhibited different kinetic characteristics as measured by FWHM (s) (mean ± SD: 1.5 ± 1.0 for spontaneous activity vs 0.74 ± 0.70 for TTX, p<10–4 in unpaired t-test) (Figure 4E). The decay time constants (τoff) for TTX transients were smaller than those of evoked releases (mean ± SD (s): 3.83 ± 0.8 vs 1.52 ± 0.53, Figure 4—figure supplement 1E). To evaluate the statistical spread of the observed τoff values, we created a cumulative frequency distribution of τoff values with and without TTX (for evoked release) and defined a parameter, τ10/90, as the range of τoff for values that fall in the 0.1–0.9 quantile window in the cumulative distribution curve (Figure 4—figure supplement 1F). In axon terminals without TTX (for evoked release), we determined that τ10/90 ≈ 1.95 s, whereas τ10/90 for TTX data was ≈ 1.15 s, suggesting that TTX events have kinetic properties that are more similar to each other. Interestingly, we observed that TTX transients occurred with a frequency of (mean ± SD) 0.29 ± 0.24 s–1 per release site, which contrasted with a frequency of (mean ± SD) 0.16 ± 0.13 s–1 per release site for spontaneous activities before TTX addition (Figure 4—figure supplement 1H-I). Notably, DopaFilm fluorescence transients in TTX were still detected with a robust SNR of more than 5, where the SNR is defined as the ratio of ∆F to the SD of F0 (Figure 4C, Figure 4—figure supplement 3A). Incidentally, the SNR for most of our TTX-free, optical stimulus-evoked release in axons frequently exceeded 30 (Figure 4—figure supplement 1C-D). In dense axonal arbors, where DopaFilm fluorescence hotspots could not be assigned to specific varicosities, application of TTX allowed visualization of spatial evolution from putative single release sites by eliminating release from neighboring active zones (Figure 4A, Figure 4—figure supplement 1A, Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig4-v2.jpg)
+
+**Figure 4.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) image from an axonal arbor of a dopamine neuron (soma not shown). Peak ∆F/F of DopaFilm fluorescence transients with no tetrodotoxin (TTX) in imaging media (–TTX) and max ∆F/F projection of stack with 10 µM TTX in media (+TTX). Arrows provided to aid comparison across field of views. (B) ∆F/F profiles across the white lines depicted in (A). Line profiles correspond to the peak ∆F/F frames and are not averaged across stimuli. (C) Fluorescence transient traces for hotspots with (–TTX) and (+TTX), respectively. * indicates trace corresponding to magenta arrow in (A). Red wedges in (C) and (D) indicate times of optical stimuli. (D) Kymographs along the white lines shown in (A). Scale bar = 5 µm. (E) Box plots of full width at half maximum (FWHM) (s) and ∆F/F amplitude (%) for (–TTX, spontaneous and evoked) and (+TTX) cases. The term ‘spont’ refers to spontaneous activity before TTX addition, and ‘evoked’ refers to action potential driven synchronous release before TTX addition. FWHM (s) (mean ± SD): 1.5 ± 1.0 for ‘spont –TTX’, 2.6 ± 1.2 for ‘evoked –TTX’, and 0.74 ± 0.70 for ‘+TTX’. Peak ∆F/F (%) (mean ± SD): 5.3 ± 1.6 for ‘spont –TTX’, 23.7 ± 4.6 for ‘evoked –TTX’, and 7.9 ± 4.6 for ‘+TTX’. p<10–4 in unpaired t-test of the ‘evoked –TTX’ against non-evoked (‘spon –TTX’ and ‘+TTX’) datasets. See Methods for box plot definitions. (F) Frequency histogram of ∆F/F amplitudes for TTX data shown in (C) and Gaussian fits to the experimental data. Magenta = sum of three Gaussian components shown in orange, black, and red. Means: µ1=5.7%, µ2=9.6%, and µ3=15.1%.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) field of view from Figure 4A and hotspots of activity identified by non-negative matrix factorization decomposition of the near-infrared ∆F/F stacks. Color-coded pixels grouped into a cluster exhibit correlated temporal behavior and are defined as a region of interest (ROI). See data analysis for details. (B) ∆F/F activity of hotspots for ROIs numbered in (A). (C) and (D) A closer view of the blue and magenta windows depicted in (B) shows peak ∆F/F variability across release sites. (E) Violin plots of τoff values before and after application of TTX (mean ± SD (s)) for: 3.83 ± 0.8 vs 1.52 ± 0.53, p<10–4 in unpaired t-test. (F) Distribution of τoff values in hotspots before and after application of TTX. (G) An example trace showing a spontaneous activity event next to an evoked activity event in TTX-free (artificial cerebrospinal fluid [ACSF]) imaging (red wedge = time of optical stimulus application). (H) Raster plots of activity provide a visual representation of the frequency of spontaneous activities before and after application of TTX. Notice the action potential driven synchronous activities in –TTX case. (I) Per release site frequency distributions of spontaneous release events before (–TTX) and after (+TTX) application of TTX.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (C) DopaFilm activity is driven by four putative release sites when imaging in ACSF, but activity is only seen in region of interest (ROI) 1 when TTX is applied. (D) Centroid of hotspots in ACSF and ACSF +TTX. For ROI 1, centroids nearly overlap. For ROIs 2, 3, and 4, TTX centroids are missing. (E, F) ∆F/F activity traces for ROIs 1–4 in ACSF (E) and ACSF +TTX (F).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Examples traces of ∆F/F from two hotspots in the same field of view. Upward deflections are automatically identified and annotated, and peak ∆F/F values extracted. (B) Pooled peak ∆/F data from TTX traces across the field of view of imaging in one axonal arbor. (C) Akaike information criteria (AIC) scores for Gaussian mixture models (GMM) with one to four Gaussian components. A one-component model is a single Gaussian fit. The GMM-3 AIC score is a local minimum, indicating that it explains experimental variance the best with the least number of model parameters. (D) Model fits of a GMM-3 identified in (C) and a lognormal (Lognormal) model. (E) The AIC scores for the two models shown in (D). (F) Q-Q (quantile-quantile) plots for the two models shown in (D) show GMM-3 deviations from the y = x line are smaller (root mean square [RMS] GMM = 3.6E-6 vs RMS Lognormal = 1.88E-5). (G) Cumulative distribution functions (CDF) for experimental data, compared to the GMM-3 and Lognormal models show that GMM and experimental CDF are in better agreement than Lognormal and experimental CDF.
+
 We pooled peak ∆F/F values obtained from TTX hotspot traces across the FOV of imaging and generated a histogram distribution of the peak ∆F/F values (Figure 4—figure supplement 3A-B). Inspection of single traces and the pooled histogram data suggested that DopaFilm transients in TTX may represent quantal events of different sizes or integer multiples of the same quantal size. To rationalize our experimental observation, we explored the suitability of statistical model fits for our experimental data. We first considered the use of Gaussian mixture models (GMM), which are often employed in quantal analysis of synaptic transmission events. Using Akaike information criteria (AIC) as a discriminating score, we evaluated the relative qualities of GMMs composed of one to four components. We found that a three-component GMM whose mean parameters (µ) are µ1=5.7%, µ2=9.6%, and µ3=15.1% ∆F/F offered the best fit (Figure 4F, Figure 4—figure supplement 3C). The spacing of the mean parameters, µ, suggested that DopaFilm fluorescence transients in TTX are likely driven by a quantized biological process where each upward deflection in DopaFilm fluorescence represented some integer multiple of a unitary fusion event. A four-component GMM returned a higher AIC score than the three-component AIC, suggesting overfitting (Figure 4—figure supplement 3C). We considered the possibility that our experimental data may simply be better described by a positively skewed distribution function instead of a GMM. To evaluate this possibility, we compared our chosen three-component GMM with a lognormal distribution. Lognormal distributions are positively skewed and are frequently encountered in biological processes (Koch, 1966). A single lognormal distribution is a two-parameter statistical model (µ and σ) and would therefore be treated favorably in AIC scoring compared to an eight-parameter three-component GMM (three pairs of µ and σ and two mixing probability parameters, π). The AIC rewards a model’s predictive power, while penalizing the number of parameters used. In this way, multiple models fitting the same data can be compared. Here, we saw that the GMM’s AIC score was better than that of the lognormal model (Figure 4—figure supplement 3D-E), suggesting that GMM explained the observed experimental variance better than a simple skewed distribution. In addition to AIC, we employed a graphical model discrimination method called quantile-quantile plot, which also supported our conclusion that GMM is a better statistical model for the experimental data (Figure 4—figure supplement 3F-G). In summary, our experimental results and statistical analysis demonstrate that DopaFilm transients that are measured in TTX represent quantal release events of dopamine and, to our knowledge, offer the only experimental observation of putative single-vesicle fusion events in which the released neurochemical can be visualized in both spatial and temporal domains.
 
-## DopaFilm detects dopamine release from dendritic processes
+### DopaFilm detects dopamine release from dendritic processes
 
 To further demonstrate the utility of DopaFilm, we deployed it to study a poorly understood phenomena in dopamine neurobiology. Previous studies have demonstrated that dopamine is released from somatodendritic processes of dopamine neurons in the midbrain (Beckstead et al., 2004; Gantz et al., 2013; Björklund and Lindvall, 1975; Cheramy et al., 1981; Cragg et al., 1997; Ludwig et al., 2016). Despite decades of research, however, the release of dopamine at somata and dendrites of dopamine neurons remains incompletely understood (Rice and Patel, 2015). Because microdialysis and electrochemical assays, which have historically been employed to measure dopamine, do not have subcellular spatial resolution, it is still not clear if dopamine release detected in perikarya of dopamine neurons emanates from soma or dendrites. This has necessitated the use of the term ‘somatodendritic release’ (Ludwig et al., 2016). Absence of small synaptic vesicles and synaptic morphologies in ultrastructural studies of dopamine neuron dendritic arbors has made the functional role of dendritic projections in midbrain regions less obvious (Nirenberg et al., 1996; Wassef et al., 1981; Wilson et al., 1977). We reasoned that DopaFilm could unravel some of these mysteries owing to its subcellular spatial and millisecond temporal resolution, and quantal sensitivity.
 
 When deployed for imaging activity in somatodendritic compartments of dopamine neurons, DopaFilm detected both evoked and spontaneous transients that clearly emanated from MAP2+ and TH+ dendritic processes of dopamine neurons (Figure 5, Figure 5—figure supplement 1). MAP2 is enriched in dendrites and is absent in axons (Kosik and Finch, 1987); therefore, MAP2 immunoreactivity was used to distinguish between the dendritic and axonal nature of observed transients. DopaFilm transients were observed at dendritic varicosities (i.e. bouton-like structures on dendrites; Figure 5B) and dendritic processes that did not appear to have any varicose morphology (Figure 5—figure supplement 2, Figure 5—figure supplement 3). From a spatial perspective, release at dendrites often resembled the localized, hotspot-like activities seen when imaging in axonal arbors (Figure 5, Figure 5—figure supplement 2, Figure 6, Figure 5—animation 1 for evoked, Figure 5—animation 2 for spontaneous). In some dendritic processes, we observed activities that emanate from clustered active zones in contiguous segments of dendrites, producing hotspots that spread along the entire profile of the dendritic process (Figure 5—figure supplement 3A-B, Figure 5—animation 2). To rule out the possibility that what we perceived to be dendritic release could arise from commingling axonal processes in the same dendritic arbor, we amplified the TH-GFP signal with an anti-GFP antibody and performed post hoc Airyscan super-resolution imaging for all our images. We observed no axons that tracked with the dendrites and DopaFilm transients clearly localized to MAP2+ and TH-GFP+ processes, confirming their dendritic nature (Figure 5C and E, Figure 5—figure supplement 1, Figure 5—figure supplement 3B, Figure 6H). Activities from dendrites were detected reliably during repeat stimulation experiments across imaging sessions (Figure 5—figure supplement 4A-B). DopaFilm ∆F/F peak amplitudes and temporal FWHM were smaller in dendrites, but other kinetic properties such as turn-on (τpeak) and clearance (τoff) were similar when compared to transients in axonal release sites (Figure 5—figure supplement 4C-F). We observed a notable difference in the spatial propagation propensity of dopamine release in axonal arbors vs dendrites. In dendritic processes, DopaFilm hotspot activity remained confined to the vicinity of the release site, which contrasted with the more diffusive dynamics observed in axons (Figure 5—figure supplement 5). We computed the FWHM of each hotspot as a proxy to estimate the spatial spread of dopamine from a dendritic release site and obtained values of ≈ 3.2 µm ±3 µm (mean ± SD). In axons, we observed spatial spreads of ≈ 6.6 µm ± 3.6 µm (mean ± SD) (Figure 5—figure supplement 5C). Dendritic hotspots were encountered at a frequency of ≈ 7.5 µm ± 0.7 µm (mean ± SD) along the active dendrites which participated in release (Figure 5—figure supplement 6).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig5-v2.jpg)
+
+**Figure 5.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) image of a dopamine neuron and its spontaneous DopaFilm activity. Maximum intensity projection from a ∆F/F stack is shown, overlayed with TH-GFP. (B) Area bounded by magenta box in (A) and close-up of its spontaneous DopaFilm activity and overlay. Scale bar = 10 µm. (C) MAP2 signal corresponding to (B). Use * to compare field of views (FOVs) in (B) and (C). (D) Area bounded by white box in (A) and close-up of its spontaneous DopaFilm activity. Scale bar = 20 µm. See TH-GFP and near-infrared (NIR) ∆F/F overlay image in Figure 5—figure supplement 1. (E) MAP2 signal corresponding to (D). Use * to compare FOVs in (D) and (E). (F, G) DopaFilm activity arising from dendrites that commingle with the soma of dopamine neurons. Notice activity from fine dendritic processes that appear in proximity to the soma. Transient traces for activity in (F) are shown in Figure 2F.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Tyrosine hydroxylase-GFP (TH-GFP), near-infrared (NIR) ∆F/F and overlay image corresponding to data in Figure 5D. (B) Activity traces corresponding to regions of interest (ROIs) 1–6 noted in (A). (C) TH-GFP and MAP2 double-immunofluorescence and Airyscan images of field of view (FOV) in (A). (D) TH-GFP and MAP2 double stain of FOV in Figure 5B.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) image of a dopamine neuron, and maximum intensity projection from ∆F/F stack and overlay. (B) Segment of activity in (A), (white box) and its TH-GFP intensity profile along the dendritic process (along magenta line), show no putative boutons. (C) DopaFilm hotspot activity for a portion of the field of view in (A) and corresponding TH-GFP and Bassoon Airyscan images. Bassoon puncta can be assigned to DopaFilm hotspot activity. (D) ∆F/F traces for regions of interest (ROIs) 1–4 shown in (C). (E) Spatial dynamics of ROI #1 at the time depicted with * in the ROI 1 trace shown (D).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) image of a dopamine neuron, and maximum intensity projection from ∆F/F stack and overlay (B) TH-GFP for the white box depicted in (A) and its DopaFilm activity along the dendritic process, as well as MAP2 and Bassoon Airyscan images. (C) TH-GFP and Bassoon Airyscan images for the bigger field of view in (A). (D) ∆F/F time traces for regions of interest (ROIs) 1–5 depicted in near-infrared (NIR) ∆F/F panel in (A).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A-B) Robustness of hotspot activity during repeat stimulation in dendrites and (C–F) comparison of the kinetic properties of axonal and dendritic activities. (A) Peak ∆F/F values at eight regions of interest (ROIs) in a dendritic field of view, normalized to the peak ∆F/F from the first stimulation at each ROI. Optical stimulation protocol per imaging session: 5 pulses, 25 Hz, and 5 ms pulse width. Imaging sessions are spaced ~ 2 min apart, which gives interstimulus interval of ~ 2–3 min. Bars represent mean ± SD. (B) Time course of normalized ∆F/F for each ROI presented in (A) shows stability of response across time. (C, D) Box plots comparing pooled data of peak ∆F/F and temporal full width at half maximum (FWHM) (s) of transient traces in axons and dendrites. Here, FWHM is defined in the time domain as a measure of how long (in seconds) the transients persist before diffusive and dopamine transporter-mediated clearance. Mean ± SD: peak ∆F/F (%) in axons: 25.0 ± 8.3. In dendrites: 18.0 ± 9.3. Unpaired t-test: p<10–4. Temporal FWHM (s) in axons: 1.75 ± 1.20, in dendrites: 0.9 ± 0.7. Unpaired t-test: p<10–4. (E, F) Comparison of kinetics of transients in dendrites and axons shows dendritic activities have similar turn-on and clearance kinetics (τoff mean ± SD (s): 3.83 ± 0.8 for axons vs 3.51 ± 1.34 for dendrites, τpeak mean ± SD (s): 0.46 ± 0.16 vs 0.34 ± 0.11). Unpaired t-test: n.s.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Spatial spread of DopaFilm activity in an axonal arbor (left column) and dendritic arbor (right column). ∆F/F images are shown immediately following stimulation (stim, top row) and 0.5 s after stimulation (+ 0.5 s, bottom row). Notice the diffusive broadening of the signal in the axons, which occurs only to a limited extent in dendrites. (B) Line profiles along the white lines depicted on the images in (C). Dash lines represent profile immediately following stimulation (stim), and solid lines represent line profiles after 0.5 s has elapsed. ∆F/F is normalized to the peak ∆F/F observed in the axonal arbor. Notice the larger spatial extent of axonal release propagation over dendritic release. (C) Spatial full width at half maximum (FWHM) (µm) in axons vs dendrites. Mean ± SD; axons: 6.6 µm ± 3.6 µm; dendrites: 3.2 µm ± 3 µm. Unpaired t-test: p<10–4. Data is from n=32 dendritic processes pooled from n=12 dopamine neurons. For axons, we pooled data from n=6 axonal arbors. Boxplot definitions: red line = median, edges of box: 25th and 75th percentile, top and bottom hash lines: minimum and maximum values of non-outlier data, red points: outlier data.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** (A) Top and bottom rows: ∆F/F, tyrosine hydroxylase-GFP (TH-GFP), and overlay. Right-most panels: non-negative matrix factorization (NNMF) decomposition of ∆F/F stack identifies clusters of pixels with highly correlated activity, consistent with the ∆F/F hotspots. (B, C) Line profiles of ∆F/F computed along the profile of the dendrites corresponding to the top and bottom rows in (A), respectively. Custom code identifies peaks, distance between peaks (spacing, black line segment), and the spatial extent of each signal, approximated by the full width at half maximum (FWHM; magenta line segment). (D) Box plot of spacing between hotspots observed on dendritic process. Box plot distribution for FWHM (µm) is shown in Figure 5—figure supplement 5C. Data is pooled from n=32 dendritic processes pooled from n=12 dopamine neurons. Boxplot definitions: red line = median, edges of box: 25th and 75th percentile, top and bottom hash lines: minimum and maximum values of non-outlier data.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) image and its overlay with evoked ∆F/F DopaFilm activity image. (B) ∆F/F traces for the region of interest boxes numbered in (A) from n=5 imaging session (n=3 sessions shown here). Note that most activity is driven by autonomous spiking except where the red wedge indicates optical stimulus driven activity (in session #3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig6-v2.jpg)
+
+**Figure 6.:** (A) DopaFilm peak ∆F/F activity overlayed with tyrosine hydroxylase-GFP (TH-GFP) image around soma of dopamine neuron. Near-infrared (NIR) ∆F/F image contrast set at 0–10% ∆F/F. (B, C) Airyscan super-resolution images corresponding to field of view (FOV) in (A). (D) Dendrite of dopamine neuron and its ∆F/F activity. NIR ∆F/F image contrast set at 0–10% ∆F/F. (E) Airyscan super-resolution images corresponding to FOV in (D). (F) Close-up of boxed region depicted in (E). (G–I) Activity from a dendritic process and its corresponding TH-GFP, MAP2, and Bassoon images. The NIR ∆F/F image contrast was set at 0–30% ∆F/F.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) image and its overlay with evoked ∆F/F DopaFilm activity image. (B) and (C) Close-up of the region of interest 1 (ROI1) window depicted in (A). (C) Shows Airyscan image showing TH in green (TH-GFP) and Bassoon density in yellow (BSN). Red puncta indicate non-overlapping BSN densities from non-dopaminergic neurons in culture.(D) Close-up of the window depicted in (B) and (C) offers better visualization of overlap between BSN density and near-infrared (NIR) ∆F/F activity.(E) Plot of normalized ∆F/F activities recoded by DopaFilm vs normalized BSN densities for the field of view (FOV) shown in (B) and (C) (i.e. ROI1 in (A)). Each data point represents mean hotspot activity, and error bar represents SD from N=5 action potential driven release events. DopaFilm activities are normalized against the highest ∆F/F response and BSN densities are normalized against highest BSN density as measured by mean fluorescence units. Blue line represents fit from a simple linear regression against the mean values, with R2 and p-values of the fit indicated on chart. (F) and (G) Similar analysis applied to the ROI2 FOV depicted in (A).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/78773/elife-78773-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Tyrosine hydroxylase-GFP (TH-GFP) image and Bassoon puncta on the major dendrites of a dopamine neuron. (B) ∆F/F activity evoked by optical stimulation. Notice activity arising from major dendritic trunks and at the junction of soma and major dendrites. Also notice lack of activity in processes that lack Bassoon puncta (depicted by red arrows in A). (C) Autonomous spiking activity around the soma of a dopamine neuron. Max ∆F/F projection is shown on left. Notice activity at the major dendrite leaving the cell body (around area depicted as region of interest [ROI] 3) and commingling dendrites (around area depicted as ROIs 1 and 4), both enriched in Bassoon puncta. ROI 5 exhibits reduced activity relative to ROIs 1–4 and has lower levels of Bassoon expression. (D) Activity traces corresponding to ROIs depicted in (C).
+
 Despite the noted differences between axonal and dendritic release, our experiments showed that DopaFilm transients at dendritic processes shared many key features with those in axons. Fluorescence turn-on was fast for both evoked and spontaneous activities (Figure 5—figure supplements 1–3, Figure 5—figure supplement 7), suggesting availability of fusion-ready docked vesicles reminiscent of vesicular release at axonal terminals. Moreover, dendrites could sustain robust levels of activity in extended imaging experiments, suggesting an available pool of vesicles that can be quickly recruited, docked, and primed (Figure 5—figure supplement 4A-B, Figure 5—figure supplement 7). These data suggested that release of dopamine in dendrites may be mediated by molecular machinery comparable to those in axon terminals.
 
 Moreover, we explored to what extent, if any, somata of dopamine neurons contribute to somatodendritic release. As was often the case in most imaging sessions, we saw little direct activity arising from soma of dopamine neurons (Figure 5A). When DopaFilm activity was noted near soma, such activity often fell into one of two categories. First, we noticed that DopaFilm activity can often be observed on the major dendrites of dopamine neurons (i.e. the stereotypic thick dendritic trunks that depart from the soma), including at the junction between the soma and dendrite (Figure 5—figure supplement 2, Figure 6—figure supplement 2). Second, we visualized release from dendrites that commingled with the cell body, often in such proximity that it appears as if activity arose from the soma (Figure 5F–G, Figure 5—figure supplement 2, Figure 5—animation 3). However, the subcellular imaging capability of DopaFilm clarifies, even in such cases, that activity was likely driven by dendrites that appeared to innervate the soma.
 
-## DopaFilm enables interrogation of the molecular correlates of dopamine release
+### DopaFilm enables interrogation of the molecular correlates of dopamine release
 
 We next used DopaFilm to examine the protein machinery involved in organizing release in dendritic processes. In classical synapses, release of neurotransmitters from axon terminals occurs at a highly specialized structure called the synaptic active zone. The release site is enriched in large scaffolding proteins (Bassoon and Piccolo) and active zone protein complexes that dock and prime synaptic vesicles (RIM, RIM-BP, ELKS, and MUNC-13) as well as SNARE-complex proteins (VAMP, SNAP-25, and syntaxin) that carry out vesicle fusion in the final exocytotic step (Südhof, 2012). We wanted to know if DopaFilm dendritic activity was co-located with the expression of proteins that are classically involved in neurochemical release at axon terminals. To explore this question, we examined Bassoon, a large scaffolding protein that is classically used as a marker for presynaptic terminals in axons (Gundelfinger et al., 2015), and whose disruption leads to loss of synaptic transmission (Altrock et al., 2003). We first performed DopaFilm activity imaging in dendritic processes of dopamine neurons. We then immunostained for Bassoon and performed post hoc Airyscan imaging at dendritic locations that exhibited hotspots of DopaFilm activity. These experiments showed that Bassoon was enriched at dendritic locations where we observe DopaFilm ∆F/F hotspot activity (Figure 6, Figure 5—figure supplements 2–3). In some images, DopaFilm activity hotspots were localized directly to a Bassoon punctum (Figure 6B and C, Figure 5—figure supplement 2), while in others, we observed that DopaFilm activity co-localized with enriched clusters of Bassoon puncta (Figure 6E and F). Additionally, when DopaFilm activity was observed along a whole segment of a dendritic process (as opposed to a localized hotspot on the process), we noted that Bassoon is likewise enriched along the process (Figure 6G, H and I). Importantly, density of Bassoon expression at a location correlated positively with the magnitude of ∆F/F activity measured by DopaFilm at the same location (Figure 6—figure supplements 1–2). These results suggest that Bassoon likely plays a key role in organizing dendritic release of dopamine in a manner that is reminiscent of its function in nerve terminals.
 
@@ -90,40 +194,253 @@ Synthetic strategies such as DopaFilm can fill a gap in the suite of tools that 
 
 ## Materials and methods
 
-## Nanosensor synthesis and characterization
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Sprague Dawley</td>
+      <td>Charles River</td>
+      <td>Strain code: 001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>TYH 6767979</td>
+      <td>Dilution factor (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab112</td>
+      <td>Dilution factor (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T2928</td>
+      <td>Dilution factor (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Bassoon(mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab82958</td>
+      <td>Dilution factor (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAP2 (chicken polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NB300-213</td>
+      <td>Dilution factor (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Chromtek</td>
+      <td>PABG1</td>
+      <td>Dilution factor (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-synaptobrevin 2 (guinea pig monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>SySy 104 318</td>
+      <td>Dilution factor (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 421 AffiniPure (donkey anti-chicken polyclonal)</td>
+      <td>Jackson Immunoreseach Labs</td>
+      <td>703-675-155</td>
+      <td>Dilution factor (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Highly cross-adsorbed secondary antibody, Alexa Fluor 488 (goat anti-rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11034</td>
+      <td>Dilution factor (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Highly cross-adsorbed secondary antibody, Alexa Fluor 647 (goat anti-mouse polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A21236</td>
+      <td>Dilution factor (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Highly cross-adsorbed secondary antibody, Alexa Fluor 647 (goat anti-guinea pig polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A21450</td>
+      <td>Dilution factor (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Recombinant secondary antibody, Alexa Fluor Plus 647 (goat anti-rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A55055</td>
+      <td>Dilution factor (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pAAV2.5-TH-GFP</td>
+      <td>Addgene</td>
+      <td>#80,336</td>
+      <td>Adeno-associated virus (AAV)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pAAV-Syn-ChrimsonR-tdT</td>
+      <td>Addgene</td>
+      <td>#59,171</td>
+      <td>Adeno-associated virus (AAV)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>APTES</td>
+      <td>Sigma-Aldrich</td>
+      <td>440,140</td>
+      <td>CAS: 919-30-2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HiPco RAW single walled carbon nanotubes</td>
+      <td>Nanointegris</td>
+      <td>Batch #HR34-103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-GTG TGT GTG TGT-3' oligonucleotide</td>
+      <td>Integrated DNA technologies</td>
+      <td>Standard Desalted</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly(D-lysine)</td>
+      <td>Sigma-Aldrich</td>
+      <td>P6407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt</td>
+      <td>Tocris</td>
+      <td>1044</td>
+      <td>CAS:479347-86-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dopamine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>H8502</td>
+      <td>CAS:62-31-7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Tocris</td>
+      <td>0106</td>
+      <td>CAS: 79055-68-8</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTX</td>
+      <td>Tocris</td>
+      <td>1078</td>
+      <td>CAS: 4368-28-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nomifensine maleate salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>N1530</td>
+      <td>CAS: 32795-47-4</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Millipore Sigma</td>
+      <td>T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>R2020b</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>2.0.0-rc-59/1.51 k</td>
+      <td>See Ref 74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>µManager</td>
+      <td>Version 1.4</td>
+      <td>See Ref 73</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Nanosensor synthesis and characterization
 
 Single-stranded 5′-GTG TGT GTG TGT-3′ [(GT)6] DNA oligonucleotides were purchased from Integrated DNA technologies (standard desalting and lyophilized powder), and HiPco single wall carbon nanotubes were purchased from Nano Integris (batch #HR35-141). Solution-phase nanosensor synthesis was carried out by first mixing 1 mg of (GT)6 and 1 mg of HiPco SWNT in 1 mL of 1 × PBS. Then the solution was bath-sonicated (Branson 1800) at room temperature for 20 min followed by probe-tip sonication (Sonics Vibra Cell) for 15 min in an ice-bath. Resulting suspension was centrifuged at 20,000 rcf (Eppendorf 5430 R) at 4°C for 60 min, and supernatant was carefully transferred into a new Eppendorf tube and stored at 4°C until further use. For characterization, each sensor batch was diluted to a working concentration of 10 ppm in 1 × PBS. Fluorescence and absorbance measurements were carried out on NS Super NanoSpectralyzer (Applied Nanotechnologies). Solution-phase fluorescence measurements and dopamine response tests were carried out on a custom built near infrared plate reader using flat clear bottom black 96-well plates (Corning, #3904). Solution-phase ∆F/F values were calculated from integrals of fluorescence counts between 875 and 1300 nm for pre- and post-dopamine fluorescence spectra.
 
-## DopaFilm fabrication
+### DopaFilm fabrication
 
 Fabrication of DopaFilm on glass substrates was initiated by a silane-based surface modification reaction. First, 35 mm gridded dishes (MatTek P35G-1.5–14 C-GRID) were cleaned sequentially with 200-proof ethanol and copious amounts of molecular biology grade water. The cleaned dishes were incubated with 1 mL of 1% (3-aminopropyl) triethoxysilane (APTES; Sigma Aldrich) in ethanol for 1 hr at room temperature. After silane functionalization, dishes were rinsed three times with 2.5 mL of molecular biology grade water. Subsequently, 500 µL of 15 ppm nanosensor solution was added to the glass coverslip of the dish dropwise, allowing the nanosensor to spread evenly. After an overnight incubation at room temperature, excess nanosensor solution was aspirated and carefully rinsed with 2.5 mL of molecular biology grade water. To facilitate neuronal growth on DopaFilm, 1 mL of 0.05 mg/mL poly-D-lysine hydrobromide (PDL; Sigma Aldrich P6407) was applied on top and incubated at room temperature for 1 hr. Finally, dishes were thoroughly rinsed three times with 2.5 mL of molecular biology grade water and stored in sterile 1 × PBS until seeding neurons. Neurons were seeded directly on the engineered surface immediately after removing storage PBS solution followed by washing with sterile water to remove excess salts.
 
-## Neuron co-culture on DopaFilm and viral infections
+### Neuron co-culture on DopaFilm and viral infections
 
 Primary rat neuronal culture work was conducted according to the Institutional Animal Care and Use Committee (IACUC) guidelines of Janelia Research Campus of the Howard Hughes Medical Institute. Sprague Dawley (Charles River Laboratories) neonatal rat pups were euthanized, cortical and hippocampal hemisphere tissue and SNc tissue dissected, and dissociated in papain enzyme (Worthington Biochemicals) in neural dissection solution (10 mM HEPES pH 7.4 in Hanks’ balance salt solution) at 37°C water bath. After 30 min, enzyme solution was aspirated, and tissue pieces were subjected to trituration in 10% fetal bovine serum containing MEM media. Following trituration, cell suspension was filtered and resulting single-cell suspension was centrifuged to yield a cell pellet. Cell pellet was resuspended in Plating media (28 mM glucose, 2.4 mM NaHCO3, 100 µg/mL transferrin, 25 µg/mL insulin, 2 mM L-glutamine, and 10% fetal bovine serum in MEM), and cell counts were recorded prior to seeding on DopaFilm substrate. To obtain healthy dopaminergic cultures, midbrain cells were seeded as co-cultures between SNc cells and cortical/hippocampal hemisphere cells at a ratio of 10:1 (~ 300 k cells per 35 mm dish). Initially, cells were seeded in attachment media (1:1 [v/v] plating media to NbActiv4 [BrainBits-NB4]), and cultures were maintained in a 5% CO2 humid incubator at 37°C to facilitate cell adherence. After ~ 2 hr, attachment media was aspirated and growing media consisting of plating media: NbActiv4 at 1:20 ratio (v/v) was used. After the first week, cultures were fed twice a week by replacing old media 1:1 (v/v) with fresh NbActiv4 media. To express opsins and identify dopaminergic neurons, cultures were infected at 5 days in vitro (DIV) with titer-matched viruses using pAAV-Syn-ChrimsonR-tdT (Addgene #59171) and pAAV2.5-TH-GFP (Addgene #80336), respectively (105 combined infectious units per 1 mL of neuronal growth media). Plasmid DNA preparations and virus packaging were performed by Molecular Biology and Viral Tools facilities at Janelia Research Campus.
 
-## Microscopy and imaging
+### Microscopy and imaging
 
 For broad-spectrum (visible to SWIR, 400–1400 nm) imaging, we developed a custom microscope based on Thorlabs Bergamo microscope body. We modified the Bergamo to facilitate optimal imaging in 400–1400 nm with widefield epifluorescence and confocal laser scanning modalities, using commercially available or custom-ordered optical components that maximize photon collection, transmission, and detection in the 400–1400 nm range. We used the widefield epifluorescence modality of the microscope for all our imaging experiments in this study. The microscope is equipped with two fiber-coupled NIR lasers to excite far red, NIR and SWIR fluorophores: a 671 nm laser (GEM 671, Laser Quantum) and a 785 nm laser (Thorlabs S4FC785). Additionally, the microscope is equipped with the following 4-wavelength LED light source (Thorlabs LED4D067) to excite and/or actuate visible range fluorophores and opsins: 405, 470, 561, and 625 nm. The microscope is equipped with an InGaAs camera with optimized sensitivity in the SWIR range (Ninox 640 II, >85% QE in 1000–1500 nm, Raptor Photonics), and an sCMOS camera (CS2100M-USB, Thorlabs) for visible range imaging. SWIR images were acquired with µManager, an open source microscopy software (Edelstein et al., 2014).
 
 Primary midbrain neuronal cultures were imaged 35–40 DIV. At the beginning of a typical imaging experiment, we replaced the NbActiv4 media with ACSF composed of, in mM: 124 NaCl, 2.5 KCl, 1.25 NaH2PO4, 24 NaHCO3, 12.5 glucose, 5 HEPES, 2 CaCl2, 2 MgSO4, and spiked with 5 ppm of nanosensor solution for 1 hr. We then replaced the media with fresh ACSF and mounted the culture on the microscope for imaging. We used a 10× objective (Nikon N10XW-PF, 0.3 NA, and 3.5 mm WD) to identify a dopaminergic neuron from the co-culture system. We then switched to 40× objective (Nikon N40X-NIR, 0.8 NA, and 3.5 mm WD) to carry out activity imaging in the identified dopamine neuron. Before each imaging session, we record a GFP image of the TH signal in the green channel. We then switch to the NIR/SWIR channel for activity imaging. Imaging is carried out at frame rates of 10–20 frames per second depending on the brightness of the DopaFilm substrate (50–100 ms exposure time). If the neuron exhibits autonomous spiking activity, we do not apply any external stimuli. If the neuron does not exhibit spiking activity, we apply optical stimulus to evoke activity. Optical stimulation is driven through a custom-built MATLAB code that simultaneously controls and synchronizes the camera and optogenetic stimulation light source through external TTL pulses and time-locks stimulation times with specific camera frames. Optical stimuli applied to evoke activity are: 5 pulses, 25 Hz, 5 ms pulse width, and at power of 1 mW/mm2. We use ChrimsonR to evoke activity and use 561 nm LED (Thorlabs LED4D067 with DC4100 driver) of the four-wavelength LED light source for stimulation. For repeat stimulation experiments, we used a rest period of ~ 2 min in between sessions. All imaging sessions were carried out at room temperature in ACSF. When imaging in Ca2+-free media, we switched our imaging buffer to Ca2+-free ACSF. When imaging in NOM or TTX, we spike the imaging ACSF with a known volume and concentration of a NOM or TTX solution to attain the target concentration of NOM or TTX. We incubate the culture for 10 min at room temperature before carrying out postdrug activity imaging.
 
-## Electrophysiology
+### Electrophysiology
 
 For electrophysiological recordings from hippocampal neurons, cultures were prepared as described above but with tissue extracted from the hippocampus only. Recordings were performed 14–16 days after plating at room temperature in the whole-cell voltage clamp and current clamp configurations using an Axopatch 200B amplifier (Molecular Devices). Data were acquired using pCLAMP 10 software and a Digidata 1440 A (Molecular Devices), filtered at 5 kHz, and digitized at 20 kHz. Cells were bathed in external solution containing (mM): 140 NaCl, 10 HEPES, 5 glucose, 4 KCl, 2 CaCl2, 1 MgCl2, and pH 7.4 adjusted with NaOH; osmolality 300 mOsm. Pipette internal solution contained (mM): 130 K-gluconate, 10 HEPES, 10 KCl, 1 EGTA, 4 Mg-ATP, 10 phosphocreatine, 0.3 Na-GTP, and pH 7.3 adjusted with KOH; osmolality 280 mOsm. Whole-cell patch pipettes had tip resistances of 3–7 MΩ and data were collected from cells with access resistance <25 MΩ. Membrane potentials were offline corrected for a –12 mV liquid junction potential. The electrophysiological parameters of neurons including capacitance, input resistance, and access resistance were determined in voltage clamp configuration by a 5 ms pulse from –80 mV to –70 mV. In current clamp, the resting membrane potential was recorded prior to current injection with series resistance compensated up to 80%. Rheobase firing threshold was measured by injecting cells with sequentially increasing +10 pA current injections of 100 ms duration. The minimum current required to evoke an action potential was defined as the rheobase. The firing rate, voltage threshold, and action potential properties were determined from a 1 s injection of current at ~ 2× rheobase. The minimum time between current injections under each protocol was 5 s. Data are presented as mean ± SD, and statistical comparisons were performed by unpaired Mann-Whitney U tests.
 
-## Data analysis
+### Data analysis
 
 Each imaging stack was processed with a custom-built MATLAB code that converts the raw movie stack into a ∆F/F0 stack and generates correlated pixel components that we identify as hotspots of activity. To compute ΔF/F0, we first convolve the fluorescence time series movie (i.e. raw F values) with a 2D gaussian (σ = 0.5 pixels). To obtain F0, a leaky cumulative minimum is calculated for each pixel in F, followed by repeated lowpass filtering to converge on a smooth F0 that obeys the minima. ΔF is then calculated as F–F0. Next, we partition the image into correlated components by applying non-negative matrix factorization (NNMF) to ΔF with sparsity and contiguity constraints. This partitions the image into largescale correlated regions (i.e. into pixel clusters with correlated activity). See Figure 2—figure supplement 3, Figure 4—figure supplement 1, Figure 5—figure supplement 6, e.g., NNMF components. For each NNMF component, ΔF/F0 is then calculated using the component’s clustered pixels. Heatmaps and timeseries of ΔF/F0 traces are then generated for each movie file using native MATLAB capabilities. For simplicity, we refer to ∆F/F0 as ∆F/F in most of our figures and text. To calculate temporal FWHM and determine amplitude of ∆F/F traces, we used MATLAB’s peak finder program. To calculate τoff, we fit first-order decay curves to identified local maxima. To determine τpeak, we used temporal difference between the location of the peak and the maxima of the second derivative of the trace. Statistical model fits and model discrimination tests were carried out using code written in MATLAB. All data analyses were done in MATLAB 2020 using the code located at the following repository: https://github.com/davidackerman/nnmf; Ackerman, 2022 (copy archived at swh:1:rev:cff3d16a70b4fd4354e486347e38e7a9a1d167be). To compute centroids of hotspots and to generate overlay images, we used Fiji (Schindelin et al., 2012). To analyze Bassoon colocalization with ∆F/F, we used Fiji. First, we aligned TH-GFP images taken on the NIR camera and the Airyscan PMT using image registration plugins and exploited TH-GFP image features as landmark to achieve this. We then registered the NIR ∆F/F peak frame onto the TH-GFP image that was aligned to the Airyscan image and collected ∆F/F and Bassoon intensity data at matched ROIs.
 
-## Statistics
+### Statistics
 
 All statistical tests of significance (p-values) were computed and reported from Student’s unpaired two-tailed t-test unless noted otherwise. We used MATLAB’s built-in boxplot algorithm to display distributions for some of our data. The definitions for relevant features of the box plot are as follows: red line = median, edges of box: 25th and 75th percentile, top and bottom hash lines: minimum and maximum values of non-outlier data, and red points: outlier data.
 
-## Post hoc immunocytochemistry and Airyscan super-resolution imaging
+### Post hoc immunocytochemistry and Airyscan super-resolution imaging
 
 After activity imaging, cultures were fixed using 4% paraformaldehyde in 1 × PBS for 15 min at room temperature and washed twice with 1 × PBS. Next, cells were permeabilized/blocked in with 2% BSA in 1% Triton X-100 in 1 × PBS (PBST) for 1 hr at room temperature. All primary antibodies were incubated overnight at 4°C and secondary antibodies for 1 hr at room temperature in PBST containing 1% BSA. Primary antibodies used in this study include chicken anti-TH (1:1000; TYH 6767979, Aves labs), mouse anti-TH (1:2000; T2928, Millipore Sigma), rabbit anti-TH (1:2000; ab112, Abcam), mouse anti-Bassoon (1:2000; ab82958, Abcam), chicken anti-MAP2 (1:1000, NB300-213, Novus Biologicals), and guinea pig anti-synaptobrevin-2 (1:1000; SySy 104 318, Synaptic Systems). TH-GFP signal (after activity imaging) was amplified using a rabbit anti-GFP (1:2000; Chromotek PABG1) antibody. Anti-mouse and anti-guinea pig secondary antibodies conjugated to Alexa Fluor 488 and Alexa Fluor plus 647-(Invitrogen) were applied at 1:2000 dilutions, and. anti-chicken secondary antibody conjugated to Brilliant Violet 421 (Jackson Immunoresearch laboratories) was added at 1:1000 dilution. Super-resolution microscopy was performed at the Janelia Imaging Facility on a Zeiss LSM 880 inverted confocal microscope equipped with a Plan-Apochromat 63×/1.4 NA oil objective in Airyscan mode using a hexagonally packed 32-channel gallium arsenide phosphide photomultiplier tube (120 nm lateral resolutions). Dopaminergic neurons of interest from the activity images were located by using MatTek dish grid location in the reflection mode.
 
-## Materials availability
+### Materials availability
 
 There are no known availability issues currently noted. DopaFilm is fabricated from commercially available reagents as detailed above. All other reagents used in this study are commercially available.

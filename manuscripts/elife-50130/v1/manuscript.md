@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.50130.001 Centrosomes are formed when mother centrioles recruit pericentriolar material (PCM) around themselves. The PCM expands dramatically as cells prepare to enter mitosis (a process termed centrosome maturation), but it is unclear how this expansion is achieved. In flies, Spd-2 and Cnn are thought to form a scaffold around the mother centriole that recruits other components of the mitotic PCM, and the Polo-dependent phosphorylation of Cnn at the centrosome is crucial for scaffold assembly. Here, we show that, like Cnn, Spd-2 is specifically phosphorylated at centrosomes. This phosphorylation appears to create multiple phosphorylated S-S/T(p) motifs that allow Spd-2 to recruit Polo to the expanding scaffold. If the ability of Spd-2 to recruit Polo is impaired, the scaffold is initially assembled around the mother centriole, but it cannot expand outwards, and centrosome maturation fails. Our findings suggest that interactions between Spd-2, Polo and Cnn form a positive feedback loop that drives the dramatic expansion of the mitotic PCM in fly embryos.
+Centrosomes are formed when mother centrioles recruit pericentriolar material (PCM) around themselves. The PCM expands dramatically as cells prepare to enter mitosis (a process termed centrosome maturation), but it is unclear how this expansion is achieved. In flies, Spd-2 and Cnn are thought to form a scaffold around the mother centriole that recruits other components of the mitotic PCM, and the Polo-dependent phosphorylation of Cnn at the centrosome is crucial for scaffold assembly. Here, we show that, like Cnn, Spd-2 is specifically phosphorylated at centrosomes. This phosphorylation appears to create multiple phosphorylated S-S/T(p) motifs that allow Spd-2 to recruit Polo to the expanding scaffold. If the ability of Spd-2 to recruit Polo is impaired, the scaffold is initially assembled around the mother centriole, but it cannot expand outwards, and centrosome maturation fails. Our findings suggest that interactions between Spd-2, Polo and Cnn form a positive feedback loop that drives the dramatic expansion of the mitotic PCM in fly embryos.
 
 ## Introduction
 
@@ -40,69 +40,320 @@ Here, we examine the potential role of Spd-2 in recruiting Polo to centrosomes i
 
 ## Results
 
-## Spd-2 is phosphorylated specifically at centrosomes
+### Spd-2 is phosphorylated specifically at centrosomes
 
 We showed previously that Cnn is specifically phosphorylated at centrosomes (Conduit et al., 2014a), so we wondered if this was also the case for Spd-2. We partially purified centrosomes from embryo extracts by sucrose step-gradient centrifugation and compared the electrophoretic mobility of Spd-2 on western blots of the gradient fractions (Figure 1A). As was the case for Cnn, we observed a prominent slower migrating form of Spd-2 in the heavier centrosomal fractions that was largely absent in the lighter cytosolic fractions. However, unlike Cnn, a faster migrating form of Spd-2 was also present in the centrosomal fractions. Treatment of the centrosomal fractions with phosphatase revealed that the reduced mobility of Spd-2 in the centrosomal fractions could be attributed to phosphorylation (Figure 1B). Thus, like Cnn, Spd-2 is specifically phosphorylated at centrosomes, although not all the Spd-2 at the centrosome appears to be phosphorylated.
 
-## Mutating multiple centrosomal phosphorylation sites in Spd-2 only mildly perturbs Spd-2 function in vivo
+![Figure 1.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig1-v1.jpg)
+
+**Figure 1.:** (A) Western blot of a sucrose step-gradient purification of centrosomes from embryo extracts probed with anti-Cnn, Spd-2, γ-tubulin and Actin antibodies, as indicated. The gradient fractions are labelled 1 (heaviest) to 12 (lightest), and the cytosolic and centrosomal-peak fractions are indicated. (B) A western blot of centrosomal fractions from the step gradient treated with phosphatase (with or without phosphatase inhibitor), and probed with the indicated antibodies; the cytosolic fraction is also shown. The Cnn and Actin blots were presented previously (Conduit et al., 2014a) (reproduced here under a CC-BY 3.0 licence https://creativecommons.org/licences/by/3.0/), and were performed contemporaneously with the Spd-2 blot shown here. The blots shown are representative of two technical replicates for each of two biological repeats. (C) Western blot of an experiment in which recombinant WT MBP-Spd-2(aa352-758) or mutant MBP-Spd-2(aa352-758)−19T were bound to MBP-Antibody-beads then either phosphorylated or not phosphorylated by human recombinant Plk1 (+/-) before mixing with human recombinant GST-PBD (Input). The beads were washed and any proteins still bound to the beads were eluted (IP). The Input and IP fractions were probed with either anti-Spd-2 antibodies (top panels) or anti-GST antibodies (bottom panels). (D) Graph shows the quantification of the amount of GST-PBD bound to the indicated beads (normalised to the amount of Spd-2 in each fraction) in three independent repeats; + /- indicates treatment with Plk1. To facilitate comparisons between repeats, the data is shown normalised to the signal from each 19T(-) sample. Enhanced binding of GST-PBD to the phosphorylated WT protein was observed in all three experiments, but was somewhat variable. Due to the variation and the small sample size (n = 3), we were unable to determine whether the data was normally distributed, so we could not apply parametric tests for statistical significance. Non-parametric tests did not indicate a significant increase in binding to the phosphorylated protein (p<0.05), but these tests do not work well with such a low number of repeats.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot analysis of WT or Spd-2 mutant larval brain cells expressing either Spd-2-GFP or Spd-2-11A-GFP (as indicated). (B) Micrographs show stills of living Spd-2 mutant embryos expressing either Spd-2-GFP or Spd-2-11A-GFP, imaged on a spinning disk confocal microscope. Both constructs efficiently rescue the Spd2 mutant embryos (data not shown), which normally do not develop due to a failure in pronuclear fusion (Dix and Raff, 2007). (C) Micrographs show a magnified view of centrosomes, highlighting that although WT Spd-2-GFP and Spd-2-11A-GFP are both highly concentrated at centrosomes, a small number of ‘flares’ of Spd-2-11A-GFP can be detected that are constantly being ejected from the centrosomes (arrowheads); such Spd-2 flaring can occur when the PCM matrix has been weakened (Conduit et al., 2014b). (D) Graph quantifies the centrosomal fluorescent intensity of either Spd-2-GFP or Spd-2-11A-GFP at mid-late S-phase in Spd-2 mutant embryos (in arbitrary fluorescence units [a.u.], WT normalised to 1). 10 centrosomes per embryo were analysed; n = 5 embryos for each condition. Bars represent mean ± SEM. The Shapiro-Wilk normality test was used to check Gaussian distribution of the data. The difference between the two datasets was determined to be statistically significant using the unpaired t test with Welch’s correction (*, p<0.05).
+
+### Mutating multiple centrosomal phosphorylation sites in Spd-2 only mildly perturbs Spd-2 function in vivo
 
 Using Mass Spectroscopy, we identified seven Spd-2 peptides that were phosphorylated consistently and with high confidence in the centrosomal fractions, but not in the cytosolic fractions (Table 1). One of these peptides contained a phosphorylated S-S(p) motif which could potentially help recruit Polo to centrosomes via its PBD. We generated transgenic lines expressing WT Spd-2-GFP and a mutant form of Spd-2-GFP in which all seven of the centrosomally phosphorylated residues—together with an additional 4 Ser/Thr resides that could potentially be phosphorylated in these peptides (Table 1)—were mutated to Ala (Spd-2-11A-GFP). Interestingly, although Spd-2-11A-GFP was expressed at substantially lower levels than WT Spd-2-GFP (Figure 1—figure supplement 1A), both Spd-2-GFP and Spd-2-11A-GFP rescued the female sterility phenotype of Spd-2 mutant flies, and in Spd-2 mutant embryos the mutant protein localised to centrosomes nearly as well as the WT protein (Figure 1—figure supplement 1B–D). Thus, although present at lower levels, Spd-2-11A-GFP is recruited to centrosomes nearly as well as the WT protein and preventing the phosphorylation of at least seven sites in Spd-2 that are specifically phosphorylated at centrosomes appears to only mildly perturb Spd-2 function in vivo.
 
-## Generating a mutant form of Spd-2 with reduced binding to the Polo PBD
+**Table 1.**
+ Identification of Spd-2 sites phosphorylated at the centrosome.The Table lists amino acids in Spd-2 that were identified as being phosphorylated in the centrosomal fractions of embryo extracts, but not the cytosolic fractions, by Mass Spectroscopy. The Peptide score is the Mascot Ion Score (Koenig et al., 2008)—scores > 29 indicate identity or extensive homology (p<0.05). Phosphorylated amino acids are marked in red. These sites were mutated together with an additional 4 Ser/Thr resides that could potentially have been phosphorylated in these peptides (blue) to generate Spd-2-11A-GFP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide sequence</th>
+      <th>Peptide score</th>
+      <th>High-scoring phosphorylated site</th>
+      <th>Additional sites mutated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GTNISFEPAEITGR</td>
+      <td>53.03</td>
+      <td>S121</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>TNQPLLEPESNVTLDSVGEK</td>
+      <td>65.26</td>
+      <td>T329</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>RPPSSSEILSLSAIDK</td>
+      <td>38.85</td>
+      <td>S397</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>KPLSPLADHPQITISR</td>
+      <td>34.55</td>
+      <td>S484</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>RVSIATMGLIPR</td>
+      <td>29.93</td>
+      <td>S569</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>NLSPLSSPR</td>
+      <td>42.33</td>
+      <td>S614</td>
+      <td>S617, S618</td>
+    </tr>
+    <tr>
+      <td>GLGTSSVAVPR</td>
+      <td>64.8</td>
+      <td>S673</td>
+      <td>T671, S672</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generating a mutant form of Spd-2 with reduced binding to the Polo PBD
 
 The Spd-2 phosphorylation sites we identified here were also identified previously in at least one of several phospho-proteomic screens in D. melanogaster (Bodenmiller et al., 2007; Habermann et al., 2012; Hu et al., 2019; Zhai et al., 2008). These screens, however, also identified many additional phosphorylated peptides in Spd-2, including 16 peptides that contained at least one phosphorylated S-S/T(p) motif that could potentially bind the PBD (Table 2). We speculated, therefore, that Drosophila Spd-2 might utilise multiple phosphorylated S-S/T(p) motifs to help recruit Polo to centrosomes.
+
+**Table 2.**
+ The Table lists several previously identified Spd-2 peptides that include the potential PBD binding motif S-S/T(p).Definitively identified phosphorylated sites within PBD binding motifs are shown in red. Sites listed in brackets have been identified as phosphorylated but the scores were low (shown in blue); or have not been identified in Drosophila melanogaster, but have been definitively identified in other closely related species (shown in purple). Other phosphorylated sites which are on the same reported peptide, but are not part of a PBD binding motif, are shown in bold. The phospho-proteomic screens in which these peptides were identified are listed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide sequence</th>
+      <th>Phospho sites</th>
+      <th>Other phospho sites</th>
+      <th>Ref.</th>
+      <th>Also</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VFGDLSSFSKGRR</td>
+      <td>S34 S35</td>
+      <td>(S37)</td>
+      <td>Zhai et al., 2008</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ALETLEKPRPSRSSQAK</td>
+      <td>S76</td>
+      <td>S73</td>
+      <td>Bodenmiller et al., 2007</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>EKPSLSVAEILKSSFVEK</td>
+      <td>(S156)</td>
+      <td>S146 S148</td>
+      <td>Bodenmiller et al., 2007</td>
+      <td>Zhai et al., 2008</td>
+    </tr>
+    <tr>
+      <td>SSSS</td>
+      <td>(S185)</td>
+      <td></td>
+      <td>Hu et al., 2019</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>SENIWNIVSNSSPNRSR</td>
+      <td>S310 S311</td>
+      <td>(S308) S315</td>
+      <td>Bodenmiller et al., 2007</td>
+      <td>Zhai et al., 2008; Hu et al., 2019</td>
+    </tr>
+    <tr>
+      <td>RPPSSSEILSLSAIDK</td>
+      <td>(S389) (S390) S391</td>
+      <td>(S395) S397</td>
+      <td>Bodenmiller et al., 2007</td>
+      <td>Zhai et al., 2008</td>
+    </tr>
+    <tr>
+      <td>DIDLNSDTSTVEVVNHLWEHGR</td>
+      <td>(S413) (T414)</td>
+      <td>S410 (T412)</td>
+      <td rowspan="4">Zhai et al., 2008</td>
+      <td rowspan="4">-</td>
+    </tr>
+    <tr>
+      <td>ADTDPVETEAEADIDEWPSTPVKEPSRR</td>
+      <td>(S515) (T516)</td>
+      <td>T499 T504 S522</td>
+    </tr>
+    <tr>
+      <td>AASPSSSDGVRPLTCTEDENDEEDEDKTPVNKK</td>
+      <td>S538 S539 (S540)</td>
+      <td>S536 (T547) (T549) T561</td>
+    </tr>
+    <tr>
+      <td>KASSLSSTRLDGCDVAVASSTER</td>
+      <td>S581 S582</td>
+      <td>(S584)</td>
+    </tr>
+    <tr>
+      <td>NLSPLSSPR</td>
+      <td>S617 S618</td>
+      <td>S614</td>
+      <td>Bodenmiller et al., 2007</td>
+      <td>Zhai et al., 2008 Hu et al., 2019</td>
+    </tr>
+    <tr>
+      <td>SCLSSPLLDSTTSSDRR</td>
+      <td>S624 S625 (S630) (T631)</td>
+      <td></td>
+      <td>Zhai et al., 2008</td>
+      <td>Hu et al., 2019</td>
+    </tr>
+    <tr>
+      <td>SCLSSPLLDSTTSSDRR</td>
+      <td>S634</td>
+      <td></td>
+      <td>Habermann et al., 2012</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ANSSPAGSEASSTSGFTASGR</td>
+      <td>S650</td>
+      <td>S654</td>
+      <td>Bodenmiller et al., 2007</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>KANSSPAGSEASSTSGFTASGR</td>
+      <td>(S658)</td>
+      <td>S654</td>
+      <td>Zhai et al., 2008</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>RGLGTSSVAVPR</td>
+      <td>S673 S674</td>
+      <td>(T672)</td>
+      <td>Zhai et al., 2008</td>
+      <td>This study; Habermann et al., 2012</td>
+    </tr>
+  </tbody>
+</table>
 
 As a first test of this hypothesis, we examined whether phosphorylated S-S/T motifs in Spd-2 could bind the PBD in vitro. Full-length Spd-2 fusion proteins were unstable when expressed in E. coli, so we purified an MBP-fusion containing approximately the middle 1/3 of Spd-2 (aa352-758, MBP-Spd-2-WT), a fusion that we had previously purified and raised antibodies against (Dix and Raff, 2007). This fusion protein contained 19 S-S/T motifs and, when phosphorylated by recombinant human Plk1 in vitro, it exhibited an enhanced ability to co-immunoprecipitate (IP) with recombinant GST-PBD (Figure 1C). Importantly, this phosphorylation-enhanced binding to GST-PBD was abolished when these 19 S-S/T motifs were mutated to T-S/T (MBP-Spd-2–19T)—a conservative substitution that has nevertheless been shown to perturb PBD-binding to these motifs (Elia et al., 2003b). Thus, a fragment of Spd-2 can bind directly to the PBD in a manner that is enhanced when the fragment is phosphorylated by Plk1, and this enhanced binding is prevented when the S-S/T motifs are mutated to T-S/T. Interestingly, this suggests that, in vitro at least, Plk1 can phosphorylate Spd-2 to ‘prime’ its own binding to Spd-2.
 
 To test the potential role of Spd-2 in recruiting Polo to the mitotic PCM in vivo, we generated transgenic lines expressing a Spd-2-GFP fusion in which all 34 S-S/T motifs in D. melanogaster Spd-2 were mutated to T-S/T (Spd-2-ALL-GFP) (blue and red lines, Figure 2A). We reasoned that the conservative substitution of Thr for Ser might not disturb the overall folding of the protein, but that mutating all these sites should prevent them from binding the PBD efficiently (Elia et al., 2003b). In addition, 16 of the 34 S-S/T motifs were highly conserved in Drosophila species (Figure 2A, red lines), so we generated transgenic lines expressing a form of Spd-2-GFP in which only these 16 conserved motifs were mutated (Spd-2-CONS-GFP).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig2-v1.jpg)
+
+**Figure 2.:** (A) A schematic representation of Drosophila melanogaster Spd-2, indicating the position of S-S/T motifs that are either highly conserved (present in at least 11/12 Drosophila species analysed—red lines), or not highly conserved (blue lines). (B) Western blot of WT embryos, or Spd-2 mutant embryos expressing either WT Spd-2-GFP, Spd-2-CONS-GFP or Spd-2-ALL-GFP, as indicated, probed with either anti-Spd-2 antibodies or anti-GAGA transcription factor antibodies (Raff et al., 1994) (as a loading control). The blot shown is representative of three technical replicates. (C) Bar charts quantify the percentage of Spd-2 mutant embryos that had initiated development after expression of either WT Spd-2-GFP, Spd-2-CONS-GFP or Spd-2-ALL-GFP, as indicated. The chart shows the data from two independent biological repeats in which 3 lots of >50 embryos were collected and scored independently; error bars represent the standard deviation (SD).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Schematic representation of the amino acid sequences of D. melanogaster Spd-2 (1146aa) and H. sapiens Cep192 (isoform 1, 1941aa) (light grey), and D. melanogaster Cnn (1148aa) and H. sapiens Cep215/Cdk5Rap2 (1893aa) (dark grey). Because these proteins have different numbers of amino acids, the cartoons have been normalised to the same length for ease of comparison. The position of each S-S/T motif (potential PBD binding site) is indicated with lines underneath each cartoon: red lines indicate potential PBD-binding sites that are conserved in at least 11 of 12 Drosophila species or eight of nine mammalian species; light blue lines indicate sites that are less well conserved. Note that the fly and human homologues of Spd-2/Cep192 and Cnn/Cep215 share little sequence identity (~23% and ~24%, respectively), yet the number and overall distribution of potential PBD binding sites is quite similar. Note also that we use Isoform 1 of Cep192 in this comparison, but similar results are obtained with the longer isoform 3 (2537aa), and an analysis of both isoforms is included in the MSAs shown in the accompanying data files.
+
 Western blotting revealed that the mutant Spd-2-GFP-fusions were expressed at slightly lower levels than WT Spd-2-GFP in embryos (Figure 2B). Importantly, however, both mutant fusion proteins rescued the defect in pronuclear fusion in Spd-2 mutant embryos (although to a slightly lesser extent than the WT fusion protein), allowing these embryos to start to develop (Figure 2C). This demonstrates that the mutant proteins are not simply misfolded (see also below). Unlike Spd-2-11A-GFP, however, Spd-2 mutant embryos expressing either Spd-2-CONS-GFP (hereafter Spd-2-CONS-GFP embryos) or Spd-2-ALL-GFP (hereafter Spd-2-ALL-GFP embryos) died early in embryonic development and almost never hatched as larvae (<1/500 embryos hatching; n > 2000 embryos scored).
 
-## Spd-2-CONS-GFP and Spd-2-ALL-GFP embryos die early in development
+### Spd-2-CONS-GFP and Spd-2-ALL-GFP embryos die early in development
 
 To investigate why Spd-2-CONS-GFP and Spd-2-ALL-GFP embryos almost never hatched as larvae, we expressed a Jupiter-mCherry transgene in these embryos to follow the behaviour of centrosomes and MTs. Syncytial Drosophila embryos rapidly cycle between S- and M-phases without any Gap phases (Foe and Alberts, 1983). When the embryos exit mitosis they immediately enter S-phase and the centrosomes start to mature in preparation for the next round of mitosis; thus, the centrosomes in these syncytial embryos organise a relatively robust, mitotic-like, PCM at all stages. WT Spd-2-GFP localised strongly to centrosomes, and the centrosomes organised robust astral and spindle MT arrays (Figure 3A, left panels). The mutant proteins were less abundant at centrosomes (Figure 3A,B) and the astral MT arrays organised by the centrosomes were less robust (Figure 3A,C) (see ‘Analysis of centrosome and MT fluorescence intensities’ section in the Materials and methods for a full explanation of quantification methods); as a result, centrosomes were often detached from the spindle poles (arrowheads, Figure 3A). Note that the reduced centrosomal levels of the Spd-2 mutant proteins are unlikely to be due to their lower expression levels (Figure 2B), as the Spd-2-GFP-11A mutant protein was also present at reduced levels, but localised to centrosomes nearly normally (Figure 1—figure supplement 1). Embryos expressing the mutant proteins exhibited progressively more severe mitotic defects as they developed, and these defects were qualitatively, but reproducibly, more pronounced in Spd-2-ALL-GFP embryos. We conclude that the mutant Spd-2-GFP fusions allow the assembly of a centrosome that can support pronuclear fusion, but these centrosomes cannot properly support the rapid syncytial divisions—and so the embryos accumulate mitotic defects and die during early development.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig3-v1.jpg)
 
-**Figure 3.:** (A) Micrographs show stills of living Spd-2 mutant embryos expressing the MT-marker Jupiter-mCherry (red) and either WT Spd-2-GFP, Spd-2-CONS-GFP or Spd-2-ALL-GFP (green, as indicated). Time (in seconds) as the embryos progress from early S-phase (t = 0 s) to Anaphase (t = 720 s) is indicated. Embryos expressing the mutant proteins exhibited a range of mitotic defects, such as detached spindle poles (white arrowheads), that were more severe in Spd-2-ALL-GFP embryos. The Spd-2-CONS-GFP embryo shown here did not yet have any defects making it easier to compare to the WT-Spd-2-GFP embryo. (B,C) Graphs quantify the centrosomal intensity of the various Spd-2-GFP fusion proteins (B) or the centrosomal MT intensity (C) during late S-phase (t = 270 s). Each dot represents the average intensity of the five brightest centrosomes in a single embryo (n = 10, 9 and 8 embryos for WT, CONS and ALL embryos, respectively); error bars indicate the mean ± SD of each population of embryos scored. The D’Agostino–Pearson omnibus normality test was used to test for the Gaussian distribution of data. One-Way ANOVA with Tukey's multiple comparisons test was used when data passed the normality test (Jupiter-mCherry datasets); Kruskal-Wallis test with Dunn's multiple comparisons test was used otherwise (**, p<0.01; ***, p<0.001).10.7554/eLife.50130.017Figure 3—source data 1.Figure 3B,C source data; quantification of Spd-2-GFP and Jupiter-mCherry centrosomal intensity.
+**Figure 3.:** (A) Micrographs show stills of living Spd-2 mutant embryos expressing the MT-marker Jupiter-mCherry (red) and either WT Spd-2-GFP, Spd-2-CONS-GFP or Spd-2-ALL-GFP (green, as indicated). Time (in seconds) as the embryos progress from early S-phase (t = 0 s) to Anaphase (t = 720 s) is indicated. Embryos expressing the mutant proteins exhibited a range of mitotic defects, such as detached spindle poles (white arrowheads), that were more severe in Spd-2-ALL-GFP embryos. The Spd-2-CONS-GFP embryo shown here did not yet have any defects making it easier to compare to the WT-Spd-2-GFP embryo. (B,C) Graphs quantify the centrosomal intensity of the various Spd-2-GFP fusion proteins (B) or the centrosomal MT intensity (C) during late S-phase (t = 270 s). Each dot represents the average intensity of the five brightest centrosomes in a single embryo (n = 10, 9 and 8 embryos for WT, CONS and ALL embryos, respectively); error bars indicate the mean ± SD of each population of embryos scored. The D’Agostino–Pearson omnibus normality test was used to test for the Gaussian distribution of data. One-Way ANOVA with Tukey's multiple comparisons test was used when data passed the normality test (Jupiter-mCherry datasets); Kruskal-Wallis test with Dunn's multiple comparisons test was used otherwise (**, p<0.01; ***, p<0.001).
 
-## Spd-2-CONS-GFP and Spd-2-ALL-GFP are recruited to centrioles but cannot efficiently form a scaffold that spreads out from the centrioles
+### Spd-2-CONS-GFP and Spd-2-ALL-GFP are recruited to centrioles but cannot efficiently form a scaffold that spreads out from the centrioles
 
 Spd-2 is localised to centrioles and to the mitotic PCM, so we wondered whether the reduction in the centrosomal levels of Spd-2-CONS-GFP and Spd-2-ALL-GFP was a result of a failure to properly localise these proteins to centrioles, to the PCM, or to both. Live-cell 3D-structured illumination super-resolution microscopy (3D-SIM) revealed that, as shown previously (Conduit et al., 2014b), WT Spd-2-GFP localised to the mother centriole, and also to a fibrous scaffold-like structure that extended outwards around the mother centriole (Figure 4, left panels). Strikingly, both mutant proteins still localised strongly to the mother centriole, but the extended scaffold-like structure appeared to be greatly reduced (Figure 4)—suggesting either that the mutant proteins were unable to efficiently incorporate into the scaffold, or that very little scaffold was assembled in these embryos.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig4-v1.jpg)
 
-**Figure 4.:** Micrographs show 3D-SIM images of individual centrosomes from Spd-2 mutant embryos expressing WT Spd-2-GFP, Spd-2-CONS-GFP or Spd-2-ALL-GFP (as indicated). Pie charts quantify the percentage of centrosomes that were scored qualitatively as having a strong (dark green), weak (light green) or no (white) pericentriolar scaffold (n = 36, for each genotype, respectively). In this, and all other SIM experiments, images were only included in the analysis if the reconstruction was deemed of sufficient quality by SIM-Check (Ball et al., 2015) (see Materials and methods for a full explanation of image quality control). All centrosomes were imaged in mid-late S-phase when the centrosomal levels of Spd-2 are maximal (see Figure 8). All scorings were performed blind by researchers not involved in the data acquisition.10.7554/eLife.50130.019Figure 4—source data 1.Figure 4 source data, results from blind scoring.
+**Figure 4.:** Micrographs show 3D-SIM images of individual centrosomes from Spd-2 mutant embryos expressing WT Spd-2-GFP, Spd-2-CONS-GFP or Spd-2-ALL-GFP (as indicated). Pie charts quantify the percentage of centrosomes that were scored qualitatively as having a strong (dark green), weak (light green) or no (white) pericentriolar scaffold (n = 36, for each genotype, respectively). In this, and all other SIM experiments, images were only included in the analysis if the reconstruction was deemed of sufficient quality by SIM-Check (Ball et al., 2015) (see Materials and methods for a full explanation of image quality control). All centrosomes were imaged in mid-late S-phase when the centrosomal levels of Spd-2 are maximal (see Figure 8). All scorings were performed blind by researchers not involved in the data acquisition.
 
 To distinguish between these possibilities we tested whether the mutant Spd-2 proteins could co-assemble into a PCM scaffold formed by WT Spd-2. In Spd-2 mutant embryos, we expressed one copy of WT Spd-2-mCherry and one copy of either WT Spd-2-GFP, Spd-2-CONS-GFP or Spd-2-ALL-GFP. Both mutant GFP-fusions co-assembled into a scaffold with WT Spd-2-mCherry in a manner that was very similar to the WT Spd-2-GFP (Figure 5). Thus, the mutant proteins can assemble into a Spd-2 scaffold if it is present, suggesting that the failure to detect a scaffold in Spd-2-CONS-GFP and Spd-2-ALL-GFP embryos (Figure 4) is likely to be due to the absence of the scaffold. Importantly, these observations also indicate that the mutant Spd-2 proteins are not misfolded, as they can clearly interact with the proteins that normally recruit and maintain Spd-2 at centrioles and within the mitotic PCM. A potential caveat to this interpretation is that Spd-2 proteins could form homo-oligomers, potentially allowing a largely misfolded mutant protein to oligomerise with a WT partner that then localises the mutant protein correctly. However, it has recently been shown using Fluorescence Correlation Spectroscopy (FCS) that SPD-2 is monomeric in worm embryos (Wueseke et al., 2016), and we found that this was also the case for Spd-2 in fly embryos (Figure 5—figure supplement 1). Thus, the mutant Spd-2 proteins are likely to be recruited to centrioles and centrosomes as monomers.
 
-## A mitotic PCM scaffold is assembled in Spd-2-CONS-GFP and Spd-2-ALL-GFP embryos but it cannot expand efficiently around the centriole
+![Figure 5.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig5-v1.jpg)
+
+**Figure 5.:** (A-C) Micrographs show 3D-SIM images of individual centrosomes from Spd-2 mutant embryos expressing WT Spd-2-mCherry and one copy of either WT Spd-2-GFP (A), Spd-2-CONS-GFP (B) or Spd-2-ALL-GFP (C). Pie charts quantify the percentage of centrosomes that were scored qualitatively as having a strong (dark green), weak (light green) or no (white) pericentriolar scaffold (n = 16 individual centrosomes, two images (channels) per centrosome, for each genotype, respectively). All centrosomes were imaged in mid-late S-phase when the centrosomal levels of Spd-2 are maximal (see Figure 8). All scorings were performed blind by researchers not involved in the data acquisition.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Fluorescence Correlation Spectroscopy (FCS) allows one to calculate a fluorescent count-rate per molecule (CPM); graph shows the CPM of various fluorescent proteins, measured in living embryos, as indicated (mean ± SEM). Measurements from embryos expressing monomeric or dimeric NeonGreen illustrate how the CPM can clearly distinguish monomeric and dimeric proteins within living Drosophila embryos. As expected from their fluorescent properties, monomeric GFP (mGFP), here measured in vitro, exhibited a lower CPM than mNeonGreen, but Spd-2-GFP exhibited a nearly identical CPM to mGFP—indicating that Spd-2-GFP is monomeric in the embryo cytoplasm. To further confirm that Spd-2-GFP is monomeric in the cytoplasm, we compared the CPM of Spd-2-GFP in embryos expressing only Spd-2-GFP (Spd-2-GFP) and embryos expressing one copy of Spd-2-GFP and one copy of the endogenous unlabelled Spd-2 gene (Spd-2-GFP/+). No change in the CPM was observed, indicating that the Spd-2-GFP molecules cannot dimerise with the endogenous unlabelled Spd-2 to form a dimer with a reduced fluorescence. Every data point represents the average of the 6 × 10 s FCS recordings of an individual embryo. Statistical significance was assessed using unpaired t-test (****p<0.0001; ns = non significant).
+
+### A mitotic PCM scaffold is assembled in Spd-2-CONS-GFP and Spd-2-ALL-GFP embryos but it cannot expand efficiently around the centriole
 
 We have previously hypothesised that Spd-2 cooperates with Polo and Cnn to form the mitotic PCM scaffold in flies (Conduit et al., 2014b; Conduit et al., 2015). We therefore tested whether Polo or Cnn could form a scaffold even when the Spd-2-ALL and Spd-2-CONS proteins cannot. We first examined the distribution of Polo-GFP in living Spd-2 mutant embryos expressing either WT Spd-2-mCherry, Spd-2-CONS-mCherry or Spd-2-ALL-mCherry. The co-expression of Polo-GFP with the mutant Spd-2-mCherry proteins led to mitotic defects in embryos that were more severe than those observed when mutant GFP- or mCherry-fusions were expressed in the absence of Polo-GFP, suggesting that the GFP-tagged Polo sensitises the embryos to the expression of the mutant Spd-2-fusions (Figure 6—figure supplement 1). These defects were so severe in embryos expressing Spd-2-ALL-mCherry that we could not reliably stage them, so they were excluded from this analysis. WT Spd-2-mCherry and Polo-GFP extensively co-localised at the mother centriole and spread outwards together into the scaffold—supporting the idea that Spd-2 normally helps recruit Polo to the scaffold (Figure 6A). In contrast, although the Spd-2-CONS-mCherry and Polo-GFP proteins still co-localised around the mother centriole, neither protein formed a robust scaffold (Figure 6B). These observations suggest that phosphorylated S-S/T(p) motifs in Spd-2 are not required to recruit Polo to mother centrioles—and it is known that Polo can be recruited to centrioles by phosphorylated S-S/T motifs in at least one other centriole protein, Sas-4 (Novak et al., 2016)—but are required to recruit Polo to the PCM scaffold that expands around the mother centriole.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig6-v1.jpg)
+
+**Figure 6.:** (A,B) Micrographs show 3D-SIM images of individual centrosomes from Spd-2 mutant embryos expressing Polo-GFP (green in merged images) and either WT Spd-2-mCherry (A) or Spd-2-CONS-mCherry (B) (red in merged images). Pie charts quantify the percentage of centrosomes that were scored qualitatively as having a strong (dark green), weak (light green) or no (white) pericentriolar scaffold (n = 15 individual centrosomes, two images (channels) per centrosome, for each genotype, respectively). All centrosomes were imaged in mid-late S-phase when the centrosomal levels of Spd-2 are maximal (see Figure 8). All scorings were performed blind by researchers not involved in the data acquisition. The defect in scaffold assembly is stronger in the Spd-2 mutant embryos expressing Polo-GFP and Spd-2-CONS-mCherry when compared to Spd-2 mutant embryos expressing just Spd-2-CONS-GFP (Figure 4). This appears to be due to a genetic interaction between Polo-GFP and Spd-2-CONS-mCherry, as mutant embryos expressing just Spd-2-CONS-mCherry had a similar phenotype to embryos expressing just Spd-2-CONS-GFP (data not shown) (see main text).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Micrographs show stills of living Spd-2 mutant embryos expressing Polo-GFP (green) and either WT Spd-2-mCherry, Spd-2-CONS-mCherry or Spd-2-ALL-mCherry (red, as indicated). Images are maximum intensity projections of z-stacks acquired on a spinning disk confocal microscope. Most embryos rescued with Spd-2-ALL-mCherry did not develop to syncytial blastoderm stages and the few that did exhibited severe defects (as in the example shown here), making it difficult to accurately stage the embryos. The primary cause of these defects is hard to assess, as these embryos tend to keep cycling through repeated cycles of division even after abnormalities occur—so they quickly accumulate defects. Nevertheless, our data are consistent with the possibility that centrosome dysfunction is the major cause of these defects.
+
 We next used 3D-SIM to examine the distribution of RFP-Cnn in living Spd-2 mutant embryos expressing WT Spd-2-GFP or Spd-2-CONS-GFP. In WT Spd-2-GFP embryos, RFP-Cnn spread outwards along the centrosomal MTs forming a robust scaffold that extended beyond the Spd-2-GFP scaffold (Figure 7A), as reported previously (Conduit et al., 2014b). In contrast, in Spd-2-CONS-GFP embryos only an occasional protrusion of RFP-Cnn and Spd-2-CONS-GFP could be detected extending outwards from the centriole (arrowheads, Figure 7B). These relative distributions of RFP-Cnn were confirmed and quantified by ‘radial-profiling’ using data obtained on a standard spinning disk confocal system (Conduit et al., 2014b) (Figure 7C). Strikingly, radial-profiling also revealed how the RFP-Cnn scaffold (red lines, Figure 7D) normally extends beyond the Spd-2-GFP scaffold (green lines in Figure 7D) in WT embryos (Figure 7Di), but these distributions essentially overlap in Spd-2-CONS-GFP embryos (Figure 7Dii). Thus, if Spd-2 cannot efficiently recruit Polo via the PBD, the Cnn scaffold cannot efficiently expand outwards beyond the Spd-2 scaffold.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig7-v1.jpg)
+
+**Figure 7.:** (A,B) Micrographs show 3D-SIM images of individual centrosomes from living Spd-2 mutant embryos expressing RFP-Cnn (red in merged images) and either WT Spd-2-GFP (A) or Spd-2-CONS-GFP (B) (green in merged images). Arrowheads indicate examples of occasional protrusions of RFP-Cnn and Spd-2-CONS-GFP. (C,D) Graphs compare the radial distributions of RFP-Cnn around the mother centriole in WT Spd-2-GFP and Spd-2-CONS-GFP embryos (C), or the radial distribution of RFP-Cnn and Spd-2-GFP in either WT Spd-2-GFP (D[i]) or Spd-2-CONS-GFP embryos (D[ii]). Data for these graphs was obtained from living embryos examined on a spinning disk confocal system; five centrosomes per embryo were analysed: n = 8 and 7 embryos for WT and CONS embryos, respectively. (E,F) Micrographs show 3D-SIM images of individual centrosomes from Spd-2 mutant embryos expressing either WT Spd-2-GFP (E) or Spd-2-CONS-GFP (F) that were fixed and stained with antibodies against GFP, phospho-Cnn, or total-Cnn (green, red and cyan in merged images, respectively).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Graph compares the radial distribution of the PCM component Aurora-A-GFP around the mother centriole in living WT Spd-2-mCherry (blue) and Spd-2-CONS-mCherry embryos (red). Insets show examples of typical spinning disk-confocal images used for this analysis; five centrosomes per embryo were analysed, n = 4 and 8 embryos for WT and CONS embryos, respectively. (B) Graph shows the same data as shown in (A), but normalised so that the peak intensity of both genotypes = 1. This emphasises how even if the centrosomal Aurora A-GFP signal is normalised for fluorescence intensity, Aurora A-GFP spreads out around the mother centriole to a lesser extent in Spd-2-CONS-mCherry embryos than in WT Spd-2-mCherry embryos. (C,D) Micrographs show 3D-SIM images of individual centrosomes from Spd-2 mutant embryos expressing Aurora A-GFP (green in merged images) and either WT Spd-2-mCherry (C) or Spd-2-CONS-mCherry (D) (red in merged images). (E–F) Same analysis as presented in panels (A–B), but analysing the distribution of the PCM component ɣ-tubulin in fixed embryos. For radial profiles, we analysed 1 pair of centrosomes per embryo, five embryos per technical replicate (embryos collected and processed independently), and three technical replicates, total n = 15 embryos per condition. (G–H) Micrographs show Airyscan images of individual centrosomes from Spd-2 mutant embryos expressing WT Spd-2-GFP (G) or Spd-2-CONS-GFP (H) (green in merged images) stained with an anti-ɣ-tubulin antibody (red) and DAPI (blue in merged images.
 
 Cnn is normally phosphorylated at centrosomes in a Polo-dependent manner, and this allows Cnn to assemble into a scaffold (Conduit et al., 2014a; Feng et al., 2017). We tested whether Cnn could still be phosphorylated by Polo at centrosomes in Spd-2-CONS-GFP embryos using an antibody that specifically recognises a phospho-epitope in Cnn that is phosphorylated by Polo (Feng et al., 2017) (Figure 7E,F). Phosphorylated Cnn was still strongly detected around the mother centriole in Spd-2-CONS-GFP embryos. This phosphorylation is presumably dependent upon the Polo that is still recruited to the centrioles in Spd-2-CONS-GFP embryos (Figure 6B). We conclude that a Polo/Spd-2/Cnn ‘mini-scaffold’ assembles around the mother centriole even if Spd-2 cannot recruit Polo via the PBD; this scaffold, however, is unable to efficiently expand outwards around the mother centriole.
 
 As the Polo/Spd-2/Cnn scaffold is essential for mitotic centrosome assembly in flies (Conduit et al., 2014b; Dobbelaere et al., 2008; Feng et al., 2017), the inability of these proteins to form an expanded scaffold in Spd-2-CONS embryos should lead to a failure to recruit any other PCM proteins to an expanded mitotic PCM scaffold. This appeared to be the case, as the centrosomal recruitment of the PCM components Aurora A-GFP (Figure 7—figure supplement 1A–D) and γ-tubulin (Figure 7—figure supplement 1E–H) was greatly reduced in Spd-2-CONS-GFP embryos. Thus, the failure to form an expanded pericentriolar scaffold in these embryos appears to lead to a general failure in centrosome maturation.
 
-## Centrosome maturation fails in Spd-2-CONS-GFP embryos
+### Centrosome maturation fails in Spd-2-CONS-GFP embryos
 
 To directly examine the kinetics of centrosome maturation in Spd-2-CONS-GFP embryos we quantified the centrosomal levels of WT Spd-2-GFP and Spd-2-CONS-GFP through an entire embryonic cell-cycle. As described above, in these rapidly dividing syncytial embryos the two centrosomes separate at the start of S-phase and immediately start to mature in preparation for the next M-phase. WT Spd-2-GFP started to accumulate at the maturing centrosomes in early S-phase, reached maximal levels just before nuclear envelope breakdown, and then started to decline as the embryos entered mitosis (blue line, Figure 8; Figure 8—figure supplement 1). In contrast, centrosomal levels of Spd-2-CONS-GFP remained at a constant low level throughout the cycle (red line, Figure 8; Figure 8—figure supplement 2). These results suggest that centrosome maturation fails in Spd-2-CONS and Spd-2-ALL mutant embryos.
 
-## Multiple regions of Spd-2 appear to help recruit Polo to the mitotic PCM scaffold
+![Figure 8.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig8-v1.jpg)
+
+**Figure 8.:** Graph compares the mean (± SD) centrosomal Spd-2-GFP intensity (in arbitrary units [a.u.]) through an entire embryonic cell cycle (nuclear cycle 12) in Spd-2 mutant embryos expressing either WT Spd-2-GFP (blue) or Spd-2-CONS-GFP (red); n = 155 and 75 centrosomes analysed, respectively. Time in seconds is indicated, and the time when centrosomes first separate at the start of S-phase is set as t = 0; the time of mitotic entry—scored as the time of nuclear envelope breakdown (NEB)—is indicated by the dotted vertical lines. Because the length of S-phase varies in individual embryos—384s ± 46s or 369s ± 30s (mean ± SD) for WT Spd-2-GFP and Spd-2-GFP-CONS, respectively—we cannot simply average the data at each time point from multiple embryos, so representative embryos are shown here. The analysis of all 14 WT Spd-2-GFP (blue) or Spd-2-CONS-GFP (red) embryos that were monitored in this way is shown in Figure 8—figure supplement 1 and Figure 8—figure supplement 2, respectively.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Graphs show the mean ± SD centrosomal WT Spd-2-GFP intensity (in arbitrary units [a.u.]) through an entire embryonic cell cycle (nuclear cycle 12) for 14 different embryos. Number of centrosomes analysed per embryo = 52–171. Time (s) is indicated; t = 0 was set as the time that centrosomes first separated at the start of S-phase. Dashed lines indicate nuclear envelope breakdown (NEB).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Graphs show the mean ± SD centrosomal Spd-2-CONS-GFP intensity (in arbitrary units [a.u.]) through an entire embryonic cell cycle (nuclear cycle 12) for 14 different Spd-2-CONS-GFP embryos. Number of centrosomes analysed per embryo = 44–124. Time (s) is indicated; t = 0 was set as the time that centrosomes first separated at the start of S-phase. Dashed lines indicate nuclear envelope breakdown (NEB).
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** The Spd-2-GFP dynamic data for each individual embryo (Figure 8, and Figure 8—figure supplements 1 and 2) was assessed using the nonlinear regression (curve fit) analysis function in GraphPad Prism 7. The functions tested are illustrated schematically in the graphs. R2, adjusted R2, and absolute sum-of- square values are used as a measure for goodness-of-fit. (A) The data for WT Spd-2-GFP was fitted against four different functions to assess the most suitable model: (1) user-defined linear growth followed by linear decrease; (2) user-defined linear growth followed by plateau followed by linear decrease; (3) Gaussian function; (4) Lorentzian function. The preferred model was (2). (B) The data for Spd-2-CONS-GFP was fitted against the preferred model for the WT data (2), but the data seemed to be described better as a straight line, so it was also fitted against two additional models: (5) a standard straight line; (6) a user-defined linear constant line. The preferred model was (5), although the average slope value was nearly zero (−0.0005 ± 0.0054; mean ± SD), indicating that the appropriate model in practice would be (6), a constant line. *The data from two Spd-2-CONS embryos did not converge for the Increase - Plateau -Decrease model.
+
+### Multiple regions of Spd-2 appear to help recruit Polo to the mitotic PCM scaffold
 
 Studies in worms and frogs have concluded that a single S-S/T(p) motif in SPD-2/Cep192 is required to recruit PLK-1/Plk1 to centrosomes (Decker et al., 2011; Joukov et al., 2010; Joukov et al., 2014) while in human cells a second S-S/T(p) motif also plays a part (Meng et al., 2015). Our data, however, raise the possibility that multiple S-S/T(p) motifs in Drosophila Spd-2 may help recruit Polo to the mitotic PCM. To examine whether Polo recruitment by fly Spd-2 could be linked to any of the previous S-S/T(p) motifs identified, we used a previously established assay in which mRNAs encoding mKate2-tagged Spd-2-fusion proteins are injected into embryos expressing Polo-GFP; the mRNAs are gradually translated so the fusion proteins eventually out-compete the endogenous (unlabelled) WT Spd-2 and their effect on Polo-GFP recruitment can be assessed (Novak et al., 2016) (Figure 9A).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig9-v1.jpg)
+
+**Figure 9.:** (A) Schematic illustration of the mRNA injection assay used to analyse the effect of various Spd-2-mKate2 fusion proteins on Polo-GFP recruitment. (B) Graph compares the radial distribution of Polo-GFP around the mother centriole in living WT embryos expressing Polo-GFP and injected with mRNAs encoding either WT Spd-2-mKate2, Spd-2-CONS-mKate2 or Spd-2-ALL-mKate2, as indicated; five centrosomes per embryo were analysed: n = 7, 6 and 9 embryos, respectively. Insets show examples of typical spinning disk confocal images used for this analysis. (C) Graph shows the same data as shown in (B), but normalised so that the peak intensity of all genotypes = 1. This emphasises how even if the centrosomal Polo-GFP signal is normalised for fluorescence intensity, Polo-GFP spreads out around the mother centriole to a lesser extent in the embryos expressing Spd-2-CONS-mKate2 or Spd-2-ALL-mKate2 than WT Spd-2-mKate2. These observations recapitulate our findings from transgenic lines expressing these Spd-2-GFP-fusions in a Spd-2 mutant background. (D,E) Same analysis as presented in panels (B,C), but analysing the distribution of Polo-GFP in embryos expressing either Spd-2-ALL-mKate2, or one of two versions of Spd-2 in which the potential Polo binding sites in either the N-terminal or C-terminal region of Spd-2 have been mutated, as indicated; five centrosomes per embryo were analysed: n = 13, 6, 13 and 10 embryos, respectively.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** The MSA aligns 13 different Spd-2 homologues from various Drosophila species with C. elegans SPD-2 and two isoforms of human Cep192. The previously identified Polo-binding sites in human Cep192 and C. elegans SPD-2 are indicated in boxes (red and blue, respectively), and the potential corresponding Drosophila sequences, if any, are highlighted in the larger surrounding boxes. No obvious Drosophila motifs are found at equivalent positions for the human Cep192 sites (red boxes) (although these regions of the protein do not align well so equivalent positions are difficult to infer), while there is a similar potential motif at an equivalent position to the single C. elegans motif (blue box). This motif is potentially phosphorylated by Cdk1, so we also mutated a second nearby S-S/T sequence that is conserved in Drosophila that could be phosphorylated by Cdk1 (yellow box) to generate the Spd-2-AA-mKate2 construct.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** Graph compares the radial distribution of Polo-GFP around the mother centriole in living WT embryos expressing Polo-GFP and injected with mRNAs encoding either WT Spd-2-mKate2 or Spd-2-AA-mKate2, as indicated; five centrosomes per embryo were analysed: n = 5 and 6 embryos, respectively.Insets show examples of typical spinning disk-confocal images used for this analysis. Note that these datasets are not normalised to each other, and the AA mutation does not detectably perturb the localisation of Polo-GFP.
+
 We first confirmed that the centrosomal recruitment of Polo-GFP was severely compromised by the injection of mRNAs encoding Spd-2-CONS-mKate2 or Spd-2-ALL-mKate2 (Figure 9B,C), and then assessed the contribution of various S-S/T motifs to Polo recruitment. The single S-S(p) motif in SPD-2 that recruits PLK-1 to centrosomes in C. elegans is a potential CDK1 substrate that may be conserved in Drosophila (T516, blue box, Figure 9—figure supplement 1). We mutated this site, together with the only other conserved S-S/T motif that is a potential CDK1 substrate in Drosophila Spd-2 (S625, yellow box, Figure 9—figure supplement 1) to Ala. This construct (Spd-2-AA-mKate2) did not detectably perturb the centrosomal distribution of Polo-GFP, suggesting that Spd-2 can recruit Polo to the PCM without any requirement that it first be primed to do so by Cdk1 phosphorylation (Figure 9—figure supplement 2). Interestingly, all the Plk1-recruiting S-S/T motifs identified in worms and vertebrates are restricted to the N-terminal half of the protein (Figure 9—figure supplement 1). We therefore independently mutated the 17 S-S/T motifs in the N-terminal and C-terminal regions of Spd-2 to T-S/T (Spd-2-NT-mKate2 and Spd-2-CT-mKate2, respectively) (Figure 2A). Both constructs led to a reduction in Polo-GFP levels at the centrosome (Figure 9D,E). Spd-2-NT-mKate2 had the biggest effect, but this was still mild compared to Spd-2-ALL-mKate2 (Figure 9D,E). We conclude that there is no single S-S/T(p) motif in Spd-2 that is essential to recruit Polo to the mitotic PCM, and motifs in both the N- and C-terminal regions can contribute to this process.
 
-## Spd-2-ALL and Spd-2-CONS cannot efficiently recruit Polo to the PCM, even when a PCM scaffold is present
+### Spd-2-ALL and Spd-2-CONS cannot efficiently recruit Polo to the PCM, even when a PCM scaffold is present
 
 An important caveat in interpreting our data is that we cannot be certain that the mutants prevent efficient mitotic PCM expansion because they cannot recruit Polo efficiently. Perhaps these mutations prevent PCM expansion for some other reason, and so Polo cannot be recruited to the expanded mitotic PCM because it simply does not exist in these embryos. Our mRNA injection assay potentially allowed us to address this issue. We looked for embryos injected with mRNA encoding Spd-2-CONS-mKate2 where the loss of Polo-GFP from the centrosome was just becoming apparent. We then used 3D-SIM to compare the centrosomal recruitment of mutant Spd-2-mKate2 and Polo-GFP to similarly staged controls injected with WT Spd-2-mKate2 mRNA (Figure 10). We found that Spd-2-CONS-mKate2 could often still be detected in an expanded PCM even when the amount of Polo recruited to the scaffold was severely reduced. Thus, in these centrosomes at least, an expanded PCM is still present (presumably because some unlabelled endogenous Spd-2 is still present), but the recruitment of Polo is severely reduced (presumably because the Spd-2-CONS-mKate2 in the scaffold cannot recruit Polo efficiently). These data strongly support our conclusion that the mutant Spd-2 proteins cannot efficiently recruit Polo to the expanded PCM.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/50130/elife-50130-fig10-v1.jpg)
 
-**Figure 10.:** (A,B) Micrographs show 3D-SIM images of individual centrosomes from embryos expressing Polo-GFP (green in merged images) injected with mRNA encoding either WT Spd-2-mKate2 (A) or Spd-2-CONS-mKate2 (B) (red in merged images). Pie charts quantify the percentage of centrosomes that were scored qualitatively as having a strong (dark green), weak (light green) or no (white) pericentriolar scaffold (n = 10 and 11 individual centrosomes, two images (channels) per centrosome, for WT and CONS injections, respectively). All centrosomes were imaged in mid-late S-phase when the centrosomal levels of Spd-2 are maximal (see Figure 8). All scorings were performed blind by researchers not involved in the data acquisition. Note that mKate2 is relatively slow folding, and the fusion proteins are just expressed from the injected mRNA, so the signal-to-noise ratio is low and the 3D-SIM images reconstruct relatively poorly. Nevertheless the presence of a Spd-2-CONS-mKate2 scaffold is clear, even when the Polo-GFP signal in the scaffold is very weak (B).10.7554/eLife.50130.049Figure 10—source data 1.Figure 10 source data, results from blind scoring.
+**Figure 10.:** (A,B) Micrographs show 3D-SIM images of individual centrosomes from embryos expressing Polo-GFP (green in merged images) injected with mRNA encoding either WT Spd-2-mKate2 (A) or Spd-2-CONS-mKate2 (B) (red in merged images). Pie charts quantify the percentage of centrosomes that were scored qualitatively as having a strong (dark green), weak (light green) or no (white) pericentriolar scaffold (n = 10 and 11 individual centrosomes, two images (channels) per centrosome, for WT and CONS injections, respectively). All centrosomes were imaged in mid-late S-phase when the centrosomal levels of Spd-2 are maximal (see Figure 8). All scorings were performed blind by researchers not involved in the data acquisition. Note that mKate2 is relatively slow folding, and the fusion proteins are just expressed from the injected mRNA, so the signal-to-noise ratio is low and the 3D-SIM images reconstruct relatively poorly. Nevertheless the presence of a Spd-2-CONS-mKate2 scaffold is clear, even when the Polo-GFP signal in the scaffold is very weak (B).
 
 ## Discussion
 
@@ -130,108 +381,175 @@ Finally, there has been great interest recently in the idea that many non-membra
 
 ## Materials and methods
 
-## Key resources table
+### Key resources table
 
 See Supplementary file 1.
 
-## Fly husbandry, stocks and handling
+### Fly husbandry, stocks and handling
 
 Flies were kept at 25°C or 18°C on Drosophila culture medium (0.77% agar, 6.9% maize, 0.8% soya, 1.4% yeast, 6.9% malt, 1.9% molasses, 0.5% propionic acid, 0.03% ortho-phosphoric acid and 0.3% nipagin). Stocks were kept in 8 cm x 2.5 cm plastic vials or 0.25-pint plastic bottles. Embryos were collected on cranberry-raspberry juice plates (25% cranberry-raspberry juice, 2% sucrose and 1.8% agar) supplemented with fresh yeast. Standard fly handling techniques were employed (Roberts, 1998). In vivo studies were performed using 1.5–2 hr-old syncytial blastoderm stage embryos. After 0–1 hr collections at 25°C, embryos were aged at 25°C for 30–60 min. When injecting mRNA, embryos were collected for 20 min, injected, and imaged after 120–150 min at 21°C (but always within the syncytial blastoderm stage of development). Prior to injection or imaging, embryos were dechorionated on double-sided tape and mounted on a strip of glue onto a 35-mm glass-bottom petri dish with a 14 mm micro-well (MatTek). After desiccation for 1 min (non-injection experiments) or 3 min (pre-mRNA injection) at 25°C, embryos were covered in Voltalef oil (ARKEMA). Live imaging was performed using either the spinning disk confocal or the 3D-SIM systems described below.
 
-## Transgenic Drosophila lines
+### Transgenic Drosophila lines
 
 Potential Polo binding sites in the amino acid sequence of Drosophila melanogaster Spd-2 were identified by searching for the consensus Polo binding motif S-S/T. Site conservation was assessed using FlyBase BLAST (selecting the genus Drosophila) and Jalview for protein alignment. The ALL and CONS constructs were designed in silico and synthesised externally by GENEWIZ Co. Ltd. (Suzhou, China); the WT spd-2 cDNA was obtained from Geneservice Ltd (UK). The WT, ALL and CONS Spd-2 cDNAs were cloned into a pDONR-Zeo vector and then introduced in Ubq-GFPCT and Ubq-mCherryCT destination vectors via Gateway cloning as indicated (Key Resources Table). The Ubq-Spd-2-11A-GFP plasmid was derived via site-directed mutagenesis on pDONRSpd-2 vector using QuikChange Multi Site-Directed mutagenesis followed by Gateway cloning into the Ubq-GFPCT vector. The plasmids for monomeric and dimeric NeonGreen expressed from the Sas-6 or Plk4 promoter were generated using the NEBuilder HiFi DNA Assembly (New England Biolabs). The fluorophores of dimeric NeonGreen were linked with a five amino acid-long peptide to minimise energy transfer between them. The 2 kb upstream of the start codon and 1 kb downstream of the stop codon of Sas-6/Plk4 were amplified from Oregon-R genomic DNA. The amplified fragments were cloned into the pDONR-Zeo vector. The plasmids were sent to BestGene Inc (Chino Hills, California) or the University of Cambridge Genetics Fly Facility (UK) for generation of the transgenic lines via random P-element insertion in to a w1118 background. Other GFP, RFP, and mCherry lines have been described previously (see Key Resources Table).
 
 For the Spd-2 mutant embryo analyses we used embryos laid by spd-2Z35711/spd-2 Df(3L)st-j7 or spd-2Z35711/spd-2G20143 transheterozygotes expressing two copies of the Spd-2-GFP fusions, or one copy of a Spd-2 fusion and one copy of another fusion protein. Drosophila melanogaster Oregon-R and w67 were used as a WT stock where indicated. Balancer chromosomes and markers used were described previously (FlyBase, USA).
 
-## Centrosome purification
+### Centrosome purification
 
 Whole centrosomes were isolated from extracts of early Drosophila embryos (0–4 hr) using a modified version of a centrosome isolation protocol (Lehmann et al., 2006). Embryo extract containing 50% sucrose was layered on top of a sucrose cushion comprising 55% and 70% sucrose. The tubes were spun at 27,000 rpm, causing the centrosomes in the extract to move through the 55% layer and into the 70% sucrose layer. A ‘Cytosolic’ fraction was collected from the top of the tube, and fractions were then collected from the bottom of the tube. Western blotting was performed to identify the ‘Centrosome’ fractions that contained the greatest enrichment of centrosomal proteins. Phosphatase treatment was carried out on the centrosome fractions using alkaline phosphatase (Roche) for 4.5 hr at 37°C with or without phosphatase inhibitor cocktails 2 and 3 (Sigma).
 
-## Centrosome immunoprecipitation and mass spectrometry
+### Centrosome immunoprecipitation and mass spectrometry
 
 Centrosomes were immunoprecipitated from the centrosomal fractions using anti-Cnn antibodies coupled to protein A conjugated magnetic Dynabeads (Life Technologies). Cytoplasmic Spd-2 was immunoprecipitated from the cytoplasmic fractions using anti-Spd-2 antibodies coupled to Dynabeads. The dynabead/antibody suspensions were rotated at 4°C overnight. The antibodies were cross-linked to the beads using the BS3 crosslinker (Thermo Fisher). Centrosomal and cytoplasmic fractions were diluted 1:1, added to the antibody-crosslinked beads and rotated at 4°C for 2 hr. Beads were washed, boiled in sample buffer (SB) and separated on a polyacrylamide gel, and the band containing Spd-2 was cut out. Samples were prepared for mass spectrometry and enriched for phosphopeptides as described previously (Conduit et al., 2014a). Liquid chromatography-MS/MS analysis was performed using a LTQ Orbitrap Mass Spectrometer (Thermo Scientific) coupled to an UltiMate 3000 Nano LC system (Thermo Scientific). The mass spectrometry data were searched against the FlyBase sequence database (http://flybase.bio.indiana.edu/) using Mascot software (Matrix Science). The following settings were used for the searches: enzyme: trypsin; fixed modification: carbamidomethylation; variable modifications: methionine oxidation, glutamine/asparagine deamidation; serine/threonine/tyrosine phosphorylation; error tolerance for the precursor ions, 20 ppm; mass error tolerance for the fragment ions, 0.6 Da; number of missed cleavage sites, 3. The MS/MS spectra for identified phosphopeptides were manually inspected in Mascot.
 
-## Recombinant protein expression and purification
+### Recombinant protein expression and purification
 
 The cDNA sequences encoding Drosophila Spd-2352-758 (WT and ALL mutant) were subcloned into a pETM44 (EMBL) vector encoding an N-terminal His6-MBP tag. Proteins were expressed in Escherichia coli (E. coli) B21 strains in LB, and purified using a pre-poured amylose column containing 4 mL amylose resin (New England Biolabs) followed by size exclusion chromatography (protein buffer: 20 mM Tris pH 8.0, 150 mM NaCl, 0.5 mM TCEP) using an AKTA pure chromatography system with a HiLoad-Superdex 200 16/600 column attached (GE Healthcare).
 
-## In vitro interaction assays
+### In vitro interaction assays
 
 Anti-MBP antibody was coupled to magnetic beads (7.5 μg of antibody per 1 mg of beads) using the Dynabeads Antibody Coupling Kit (Thermo Fisher), following manufacturer’s instructions. Each sample (100 μL of resuspended beads) was incubated with 32.2 μg of the appropriate protein in protein buffer (see above) for 30 min rotating at RT. The beads were rinsed twice with kinase buffer (CST) and resuspended in 60 μL of kinase buffer containing 200 μM of ATP (CST) and either kinase storage buffer (50 mM HEPES pH 7.6, 100 mM NaCl, 5 mM DTT, 20% glycerol, 15 mM reduced glutathione), for non-phosphorylated ‘blank’ controls; or 8.8 ng/μL of commercial PLK1 kinase (ProQinase) for phosphorylated samples. The samples were rinsed 3X with binding buffer (50 mM Tris pH 8.0, 200 mM NaCl, 1 mM DTT, 0.1% Tween-20, 10 mg/mL BSA, 1X phosphatase inhibitor cocktails 2 and 3, 1X SIGMAFAST EDTA-free protease inhibitor cocktail (Sigma)). The beads were then resuspended in 0.3 mL of 0.2 µM GST-Plk1-PBD (Sigma) in binding buffer, and incubated rotating for 3 hr at 4 °C. The beads were then rinsed 3X with 500 µL of bead wash buffer B (50 mM Tris pH 8.0, 200 mM NaCl, 1 mM DTT, 0.1% Tween-20, 1 mg/mL BSA, 1X phosphatase inhibitor cocktails 2 and 3, 1X SIGMAFAST EDTA-free protease inhibitor cocktail), transferred to a clean tube, and rinsed once with bead wash buffer HA (same as wash buffer B, but without BSA) before protein elution with 1X SB.
 
-## Western blot analysis
+### Western blot analysis
 
 Western blotting to estimate embryonic protein levels was performed as described previously (Novak et al., 2014). The following primary antibodies were used for western blot analysis (see Key Resources Table): rabbit anti-Spd-2 (1:500), rabbit anti-Cnn (1:1000), mouse anti-γ-tubulin (1:500), mouse anti-Actin (1:2000), mouse anti-GST (1:500) and rabbit anti-GAGA factor (1:500). HRP conjugated secondary antibodies used (all at 1:3000): swine anti-rabbit (Dako), or ECL anti-mouse and ECL anti-rabbit (GE Healthcare).
 
-## RNA synthesis and microinjection
+### RNA synthesis and microinjection
 
 The mRNA injection assay and the modified pRNA destination vector with the C-terminal mKate2 tag used here have been described previously (Novak et al., 2014; Novak et al., 2016). Spd-2-ALL and Spd-2-CONS cDNA were introduced into the vector via Gateway cloning. Two point mutations were introduced into WT Spd-2-mKate2 using QuikChange mutagenesis (Agilent) to generate Spd-2-AA-mKate2. Spd-2-NT-mKate2 and Spd-2-CT-mKate2 partial mutants were derived from PCR-amplified fragments of WT Spd-2-mKate2 and Spd-2-ALL-mKate2 via NEBuilder HiFi assembly (New England Biolabs). The last potential binding site mutated in the N-terminus group was S538-S540, and the first potential binding site mutated in the C-terminus group was S581-S582, so that each group would include 17 potential sites. In vitro RNA synthesis was performed using a T3 mMESSAGE mMACHINE kit (Thermo Fisher) and RNA was purified using an RNeasy MinElute kit (Qiagen). All RNA constructs were injected at a concentration of 2 mg/mL.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Embryos were collected for 0–1 hr, aged for 45–60 min, and processed as described (Stevens et al., 2010). Samples were mounted onto microscopy slides with high-precision glass coverslips (CellPath). Specifics for each experiment as follows:
 
-## Quantification of successful completion of pronuclear fusion
+#### Quantification of successful completion of pronuclear fusion
 
 Embryos were stained using a mouse anti-α-tubulin (1:1000), followed by Alexa 594 nm anti-mouse and GFP-Booster Atto488 (1:500 dilution). Samples were mounted in Vectashield medium with DAPI. Embryos were counted using a Zeiss Axioskop two microscope (Zeiss International) with a 10x/0.30-NA and a 40x/0.75-NA objectives. Embryos were counted as developing beyond pronuclear fusion if they had clearly reached syncytial/gastrulation stages. For each of the four conditions (non-rescue, WT-rescue, CONS-rescue and ALL-rescue), we performed two biological replicates (embryos from separate sets of mothers), each with three technical replicates (embryos collected and processed independently);>50 embryos were counted per sample.
 
-## Phospho-Cnn staining
+#### Phospho-Cnn staining
 
 Embryos were stained using a guinea pig anti-Cnn antibody (1:1000) and a rabbit anti-Cnn pSer567 antibody (1:500); followed by Alexa 594 nm anti-rabbit, CF405S anti-guinea pig, and GFP-Booster Atto488 (1:500 dilution). Samples were mounted in Vectashield medium without DAPI.
 
-## γ-tubulin staining
+#### γ-tubulin staining
 
 Embryos were stained using a mouse anti-γ-tubulin antibody (1:500), followed by Alexa 594 nm anti-mouse and GFP-Booster Atto488 (1:500 dilution). Samples were mounted in Vectashield medium with DAPI.
 
-## Imaging
+### Imaging
 
-## Spinning disk confocal microscopy
+#### Spinning disk confocal microscopy
 
 Embryos were imaged at 21°C on a Perkin Elmer ERS spinning disk (Volocity software) mounted on a Zeiss Axiovert 200M microscope using a 63X/1.4-NA oil immersion objective and an Orca ER CCD camera (Hamamatsu Photonics, Japan). 488- and 561 nm lasers were used to excite GFP and RFP/mCherry, respectively. Confocal sections of 13 slices with 0.5-μm-thick intervals were collected every 30 s (17 slices for the analysis of protein dynamics throughout the cell cycle). Focus was occasionally manually readjusted in between intervals.
 
-## 3D-SIM
+#### 3D-SIM
 
 3D-SIM microscopy was performed and analysed as described (Conduit et al., 2014a) on an OMX V3 Blaze microscope (GE Healthcare, UK) with a 60x/1.42-NA oil UPlanSApo objective (Olympus); 405-, 488- and 593 nm diode lasers, and Edge 5.5 sCMOS cameras (PCO). The raw acquisition was reconstructed using softWoRx 6.1 (GE Healthcare) with a Wiener filter setting of 0.006 and channel- specific optical transfer function. Living embryos were imaged at 21°C, acquiring stacks of 6 z-slices (0.125 μm intervals). Stacks of 13 z-slices (0.125 μm intervals) were acquired from fixed samples (phospho-Cnn staining). The images shown are maximum intensity projections. For multi-colour 3D-SIM, images from the different colour channels were registered with alignment parameters obtained from calibration measurements using 1 μm to 0.2 μm TetraSpeck Microspheres (Thermo Fisher) using OMX Editor and Chromagnon alignment software. The SIM-Check plug-in in ImageJ (NIH) was used to assess the quality of the SIM reconstructions (Ball et al., 2015).
 
-## Airyscan
+#### Airyscan
 
 Fixed samples (γ-tubulin staining) were imaged using an inverted Zeiss 880 microscope fitted with an Airyscan detector. The system was equipped with Plan-Apochromat 63x/1.4-NA oil lens. The laser excitation lines used were 405 nm diode, 488 nm argon and 561 nm diode laser. Stacks of 25 slices with 0.14-μm-thick intervals were collected with pixel size (xy) of 0.035 μm, using a piezo-driven z-positioner stage. Images were Airy-processed in 3D with a strength value of ‘auto’ (∼6). The software used to acquire images and process the images taken in super-resolution Airyscan mode was ZEN (black edition, Zeiss).
 
-## Image and statistical analysis
+### Image and statistical analysis
 
-## Blind analysis of 3D-SIM images
+#### Blind analysis of 3D-SIM images
 
 Centrosome images were selected based on quality of the reconstruction as assessed by the SIM-Check plug-in and the presence of a visible, well-formed ring corresponding to the presence of protein at the mother centriole wall. Each individual centrosome image was saved as a separate file, renamed and randomised post acquisition. The entire dataset for each experiment were scored blind by researchers not involved in any aspect of the data acquisition. The Spd-2-GFP in mutant background dataset was scored by one person. It included three different conditions (WT, CONS and ALL) with 36 centrosomes per condition. The Spd-2-GFP in WT background and Spd-2-mCherry/Polo-GFP datasets included three and two conditions (WT, CONS and ALL; or WT and CONS), respectively. The former included 32 images per condition, and the latter included 30 images per condition (16 and 15 individual centrosomes, two different channels, respectively). They were scored independently by three different people, and an average score was calculated. The Spd-2-mKate2 injection into PoloGFP dataset included two conditions (WT and CONS) with 20 and 22 images each (10 and 11 individual centrosomes, two different channels) and it was scored by one person.
 
-## Analysis of centrosome and MT fluorescent intensities
+#### Analysis of centrosome and MT fluorescent intensities
 
 We used ImageJ to calculate the maximum intensity projection of z-stacks of movies taken from the PE spinning disk system. The time frame chosen for analysis corresponded to 1 min before nuclear envelope breakdown. The five brightest centrosomes per embryo were identified via manual thresholding and analysed; the number of embryos analysed is indicated in each Figure. For both the green and red channels we measured the mean intensity within a square of fixed size (5.04 μm x 5.04 μm) centred manually on each individual centrosome. Similarly, we measured the mean intensity of the background near each centrosome. We calculated the average centrosome intensity and subtracted the average background intensity per embryo. The values for all the embryos were plotted on Prism 7 (GraphPad Software). Prism was also used to check column statistics and Gaussian distribution of the data. For the Jupiter-mCherry/Spd-2-GFP data we used the D’Agostino–Pearson omnibus normality test. For the statistical analysis, we used ordinary one-way ANOVA with Tukey's multiple comparisons test if data passed the normality test, or the Kruskal-Wallis test with Dunn's multiple comparisons test otherwise. For the dataset comparing Spd-2-GFP and Spd-2-11A-GFP we used the Shapiro-Wilk normality test followed by the unpaired t test with Welch’s correction. Significance in statistical tests was defined by p<0.05.
 
-## Radial profiling of centrosomes
+#### Radial profiling of centrosomes
 
 We used ImageJ to calculate an average ‘radial profile’ of the distribution of the different PCM proteins around the mother centriole (Conduit et al., 2014b). For embryos imaged live, the five brightest centrosomes in each embryo were analysed (the number of embryos analysed for each genotype is indicated in the individual Figures). For the analysis of fixed embryos, we analysed 1 pair of centrosomes per embryo, five embryos per technical replicate (embryos collected and processed independently), and three technical replicates in total per condition (so total centrosomes analysed = 15).
 
 For each individual centrosome we found its center of mass by thresholding the image and running the ‘analyse particles’ (centre of mass) macro on the most central Z plane of the centrosome, as described (Conduit et al., 2014b). We then centred concentric rings spaced at 0.021 μm and spanning across 2.09 μm on this centre (0.007 μm and spanning across 1.41 μm for the fixed γ-tubulin images) and measured the average fluorescence in each ring, and subtracted the average cytosolic signal. Each individual centrosome profile was then normalised to the average peak intensity for all the centrosomes of the control condition (WT Spd-2-GFP embryos). Each profile was then mirrored to produce a full centrosome profile. The final radial profiles shown are an average of all the full centrosomal profiles per condition. In some graphs, we show a ‘normalised’ profile, where each individual centrosome profile was normalised to the average peak intensity of its corresponding condition (rather than to the WT Spd-2-GFP embryo control). The resulting radial profile peaks for all conditions were then normalised to 1; this allows the distribution of different proteins around the centriole to be compared, independently of differences in centrosomal protein levels.
 
-## Analysis and regression modelling for the dynamics of Spd-2-GFP
+#### Analysis and regression modelling for the dynamics of Spd-2-GFP
 
 Spd-2-GFP dynamics throughout the cell cycle were analysed as described (Aydogan et al., 2018). Briefly, we used ImageJ to calculate the maximum intensity projection of z-stacks of movies taken from the PE spinning disk system. The backgrounds were subtracted using the subtract background function with a rolling ball radius of 10 pixels. Spd-2-GFP foci (centrosomes) were tracked using TrackMate plug-in (Tinevez et al., 2017) with the following analysis settings: track spot diameter size of 2.1 μm, initial threshold of 0, and quality of >0.03. Regression analysis on the centrosome growth curves were carried out using Prism, and the mathematical modelling was done using the nonlinear regression (curve fit) analysis function, excluding the last three points (90 s) of the cell cycle (as the data was very variable towards the end of mitosis).
 
-The data for WT Spd-2-GFP (Figure 8, blue line) was fitted against four different functions to assess the most suitable model (Figure 8—figure supplement 3A): (1) linear growth followed by linear decrease; (2) linear growth followed by plateau followed by linear decrease; (3) Gaussian function; (4) Lorentzian function. Functions (1) and (2) are bespoke algorithms, with the following equations for X amount of time:(1)Y1 = intercept1 + slope1∗X YX0 = slope1∗X0 + intercept1Y2 = Yx0+ slope2∗(X−X0)Y = IF(X<X0,Y1,Y2)(2)Y1 = intercept1 + slope1∗X  YX0 = slope1∗X0 + intercept1Y2 = YX0+ slope2∗(X−X0)slope2=0YX1 = YX0+ slope2∗(X1−X0)Y3 = YX1+ slope3∗(X−X1)Y = IF(X<X0,Y1,IF (X<X1,Y2, Y3))
+The data for WT Spd-2-GFP (Figure 8, blue line) was fitted against four different functions to assess the most suitable model (Figure 8—figure supplement 3A): (1) linear growth followed by linear decrease; (2) linear growth followed by plateau followed by linear decrease; (3) Gaussian function; (4) Lorentzian function. Functions (1) and (2) are bespoke algorithms, with the following equations for X amount of time:
+
+$$
+Y_{1} = intercept_{1} + slope_{1}∗X Y_{X0} = slope_{1}∗X_{0} + intercept_{1}Y_{2} = Y_{x0}+ slope_{2}∗(X−X_{0})Y = IF(X<X_{0},Y_{1},Y_{2})
+$$
+
+
+
+$$
+Y_{1} = intercept_{1} + slope_{1}∗X  Y_{X0} = slope_{1}∗X_{0} + intercept_{1}Y_{2} = Y_{X0}+ slope_{2}∗(X−X_{0})slope_{2}=0Y_{X1} = Y_{X0}+ slope_{2}∗(X_{1}−X_{0})Y_{3} = Y_{X1}+ slope_{3}∗(X−X_{1})Y = IF(X<X_{0},Y_{1},IF (X<X_{1},Y_{2}, Y_{3}))
+$$
 
 The only constraints applied to these equations were the requirements for slope1 and inflection points (X0, X1) to be greater than 0, and slope3 to be less than 0. Centrosomes that come from a single embryo were treated as internal replicates, and thus the fitting used only the mean Y value of each time point. To judge and control the quality and precision of regression (goodness-of-fit), we used the R2, adjusted R2, and absolute sum-of- square values. To compare the fits, the extra sum-of-squares F test was applied, and the appropriate fit was chosen by selecting the simpler model unless p<0.05. The ‘linear growth followed by plateau followed by linear decrease’ model best fit the data (Figure 8—figure supplement 3A), but it is likely a simplification of a more complex model, so individual curves are shown for each embryo without any model fitted (average of >44 centrosomes per embryo) (Figure 8—figure supplement 1).
 
-The data for Spd-2-CONS-GFP (Figure 8, red line) was fitted against the ‘linear growth followed by plateau followed by linear decrease’ model, as this was the preferred model for the WT data. As this data seemed to better be described as a straight line, this model was also compared to a standard straight line model (with no slope constraints)—function (5); or a user-defined constant line function (6) (Figure 8—figure supplement 3B):Y = intercept1 + 0*X
+The data for Spd-2-CONS-GFP (Figure 8, red line) was fitted against the ‘linear growth followed by plateau followed by linear decrease’ model, as this was the preferred model for the WT data. As this data seemed to better be described as a straight line, this model was also compared to a standard straight line model (with no slope constraints)—function (5); or a user-defined constant line function (6) (Figure 8—figure supplement 3B):
+
+$$
+Y=intercept_{1}+0*X
+$$
 
 The preferred model was the straight line—function (5) (Figure 8—figure supplement 3B)—although the average slope value was nearly zero (−0.0005 ± 0.0054; mean ± SD), indicating that the appropriate model in practice would be a constant line.
 
-## FCS (fluorescence correlation spectroscopy)
+### FCS (fluorescence correlation spectroscopy)
 
 FCS measurements were obtained as previously described (Aydogan et al., 2019). For all measurements, the laser power was kept constant at 6.31 µW, and the heating unit of the microscope at 25 °C. All autocorrelation functions (ACFs) were fitted with the eight previously described models, and the best model was chosen based on the Bayesian information criterion. All fitting parameters and chosen diffusion models are stated in Table 3.
 
+**Table 3.**
+ Fitting parameters and chosen diffusion models for FCS experiments.α , Anomalous subdiffusion parameter; AR, Structural parameter; ds, Diffusing species; bs, Blinking state of the fluorophore; ts, Triplet state of the fluorophore.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Fitting boundaries (ms)</th>
+      <th>α</th>
+      <th>AR</th>
+      <th>Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mGFP</td>
+      <td>4 × 10−4 - 1 × 102</td>
+      <td>1.00</td>
+      <td rowspan="5">5</td>
+      <td>one ds one ts</td>
+    </tr>
+    <tr>
+      <td>Spd-2-GFP</td>
+      <td>4 × 10−4 - 1 × 103</td>
+      <td>0.65</td>
+      <td>one ds one ts</td>
+    </tr>
+    <tr>
+      <td>mNeonGreen (pPlk4)</td>
+      <td>4 × 10−4 - 2 × 102</td>
+      <td>0.70</td>
+      <td>one ds one ts</td>
+    </tr>
+    <tr>
+      <td>mNeonGreen (pSas-6)</td>
+      <td>4 × 10−4 - 2 × 102</td>
+      <td>0.75</td>
+      <td>one ds one ts</td>
+    </tr>
+    <tr>
+      <td>dNeonGreen</td>
+      <td>4 × 10−4 - 4 × 102</td>
+      <td>0.85</td>
+      <td>one ds one bs one ts</td>
+    </tr>
+  </tbody>
+</table>
+
 Purified monomeric Spycatcher-GFP (kind gift from A. van der Merwe and colleagues) was measured in vitro in 1x PBS + 0.05% Tween20 at a similar concentration as Spd2-GFP in vivo. Embryos from mothers expressing GFP-tagged Spd2 were measured at the centrosomal plane and in nuclear cycles 11–14 at the beginning of S-phase.
 
-The molecular brightness of the measured fluorophore (presented as photon count-rate per molecule (CPM)) was used to identify the oligomerization state of cytoplasmic, fluorescently-tagged Spd2 (in comparison to monomeric GFP). The CPM measurements were corrected for background fluorescence (with 10 control measurements of empty buffer for in vitro experiments, and ~20 recordings from WT embryos for in vivo experiments) using the following equation:CPM= (Photon count rateSAMPLE- Photon count rateCONTROL)Number of particles in observation spot
+The molecular brightness of the measured fluorophore (presented as photon count-rate per molecule (CPM)) was used to identify the oligomerization state of cytoplasmic, fluorescently-tagged Spd2 (in comparison to monomeric GFP). The CPM measurements were corrected for background fluorescence (with 10 control measurements of empty buffer for in vitro experiments, and ~20 recordings from WT embryos for in vivo experiments) using the following equation:
+
+$$
+CPM=\frac{(Photoncountrate^{SAMPLE}-Photoncountrate^{CONTROL})}{Numberofparticlesinobservationspot}
+$$
 
 In addition, control lines from mothers expressing monomeric or dimeric NeonGreen were measured to test the sensitivity of our CPM-based analysis. Identical to Spd2-GFP measurements, the recordings were taken within nuclear cycles 11–14 and at the beginning of S-phase. These flies also expressed Asl-mKate2 expressed from its endogenous promoter to identify the correct nuclear cycle stage and the centrosomal plane.

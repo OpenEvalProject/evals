@@ -15,15 +15,15 @@
 
 ### Affiliations
 
-1. https://ror.org/034m6ke32 Africa Health Research Institute Durban South Africa
-2. https://ror.org/02r109517 Weill Cornell Medical College New York United States
-3. https://ror.org/04qzfn040 University of KwaZulu-Natal Durban South Africa
-4. https://ror.org/02jx3x895 University College London London United Kingdom
-5. https://ror.org/00a0jsq62 London School of Hygiene and Tropical Medicine London United Kingdom
-6. https://ror.org/053r20n13 Ragon Institute of MGH, MIT and Harvard Cambridge United States
-7. https://ror.org/04qzfn040 HIV Pathogenesis Programme (HPP), The Doris Duke Medical Research Institute, University of KwaZulu-Natal Durban South Africa
-8. https://ror.org/03wevmz92 Harvard Medical School Boston United States
-9. https://ror.org/04b6nzv94 Brigham and Women's Hospital Boston United States
+1. Africa Health Research Institute Durban South Africa ([ROR:034m6ke32](https://ror.org/034m6ke32))
+2. Weill Cornell Medical College New York United States ([ROR:02r109517](https://ror.org/02r109517))
+3. University of KwaZulu-Natal Durban South Africa ([ROR:04qzfn040](https://ror.org/04qzfn040))
+4. University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+5. London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+6. Ragon Institute of MGH, MIT and Harvard Cambridge United States ([ROR:053r20n13](https://ror.org/053r20n13))
+7. HIV Pathogenesis Programme (HPP), The Doris Duke Medical Research Institute, University of KwaZulu-Natal Durban South Africa ([ROR:04qzfn040](https://ror.org/04qzfn040))
+8. Harvard Medical School Boston United States ([ROR:03wevmz92](https://ror.org/03wevmz92))
+9. Brigham and Women's Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
 
 † Corresponding author
 
@@ -47,35 +47,255 @@ In this study we performed an extensive longitudinal analysis of HIV-1 subtype C
 
 ## Results
 
-## Total proviral DNA load kinetics following early and late treatment
+### Total proviral DNA load kinetics following early and late treatment
 
 In this analysis we included 35 participants (Supplementary file 1), of whom 11 first initiated treatment during chronic infection at a median of 456 days (297–1203) post detection of viremia and 24 who were treated during acute infection at a median of 1 day (1–3) post detection of viremia. All participants were female and 31 (89%) were identified with acute infection at Fiebig stage I. Additional participant characteristics are shown in Table 1.
+
+**Table 1.**
+ Characteristics of study participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>Chronic treated (n=11)</th>
+      <th>Acute treated (n=24)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>21 (19–24)</td>
+      <td>21 (18–24)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female, n (%)</td>
+      <td>11 (100%)</td>
+      <td>24 (100%)</td>
+    </tr>
+    <tr>
+      <td>Male, n (%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+    </tr>
+    <tr>
+      <td>Race/ethnicity, n (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>11 (100%)</td>
+      <td>24 (100%)</td>
+    </tr>
+    <tr>
+      <td>Fiebig stage I at detection, n (%)</td>
+      <td>10 (91%)</td>
+      <td>21 (88%)</td>
+    </tr>
+    <tr>
+      <td>Treatment initiation (DPOV)</td>
+      <td>456 (297–1203)</td>
+      <td>1 (1-3)</td>
+    </tr>
+    <tr>
+      <td>Time to suppression (days)</td>
+      <td>104 (30–215)</td>
+      <td>16 (6–116)</td>
+    </tr>
+    <tr>
+      <td>CD4 nadir (cells/µl)</td>
+      <td>383 (204–502)</td>
+      <td>561 (258–859)</td>
+    </tr>
+    <tr>
+      <td>CD4 pre-infection (cells/µl)</td>
+      <td>991 (395–1377)</td>
+      <td>872 (573–1612)</td>
+    </tr>
+    <tr>
+      <td>CD4 at study enrollment (baseline) (cells/µl)</td>
+      <td>716 (204–1377)</td>
+      <td>863 (421–2075)</td>
+    </tr>
+    <tr>
+      <td>Peak plasma viral load (log copies/ml)</td>
+      <td>7.04 (5.89–7.80)</td>
+      <td>4.21 (2–7.30)</td>
+    </tr>
+    <tr>
+      <td>*Protective HLA allele, n (%)</td>
+      <td>6 (55%)</td>
+      <td>11 (46%)</td>
+    </tr>
+    <tr>
+      <td>Treatment regimen containing, n (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FDC</td>
+      <td>11 (100%)</td>
+      <td>24 (100%)</td>
+    </tr>
+    <tr>
+      <td>Raltegravir</td>
+      <td>0 (0%)</td>
+      <td>16 (67%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*HLA-B74:01, HLA-B57:02, HLA-B57:03, HLA-B58:01, HLA-B81:01._
 
 We first quantified total HIV-1 DNA which incorporates all forms of intracellular HIV-1 DNA, both intact and defective, including integrated and unintegrated forms, as well as linear and circularised 2-LTR and 1-LTR forms. Total HIV-1 DNA measurements were performed longitudinally, from baseline (1–3 days following detection of HIV), at the time of peak viral load and was also assessed at 6 and 12 months’ post infection for untreated participants and 6 and 12 months’ post-treatment initiation for late and early treated participants. As expected, treatment during acute infection resulted in a significantly reduced peak plasma viral load (median = 4.18 log copies/ml, IQR, 3.40–4.87) compared to untreated acute infection (median = 7.06 log copies/ml, IQR, 6.83–7.54) (p<0.0001, Figure 1A, top panel). However, at time of peak viremia, the untreated and the early treated groups did not differ in total proviral DNA load (Figure 1A, bottom panel). Longitudinal measurements showed that treatment initiated during chronic infection resulted in a significant decline in plasma viral load to undetectable levels after 1 year (p<0.0001, Figure 1B, top panel), however it did not reduce total proviral load (Figure 1B, bottom panel). In contrast, treatment initiated during acute infection resulted in both a rapid decrease of plasma viremia so that all participants had undetectable viremia at 1-year post ART (p<0.0001, Figure 1C, top panel) and steady decrease of total proviral load over the same time period (p=0.0004) (Figure 1C, bottom panel). Even though treatment initiation during both chronic and acute infection resulted in complete suppression of plasma viral load after 1 year (Figure 1D, top panel), total proviral load was still detectable with the early treated group having 1.3 times lower levels of total proviral HIV DNA compared to the chronic treated group (p=0.02, Figure 1D, bottom panel). These results indicate that early treatment leads to a measurable decline in proviral DNA during the first year of treatment that is not seen when therapy is initiated during chronic infection.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/96617/elife-96617-fig1-v1.jpg)
 
-**Figure 1.:** (A) Peak viral load (parametric t-test) and total HIV DNA (non-parametric t-test) measured at peak viral load in untreated (pre-therapy) and acute treated individuals. (B) Longitudinal viral load (Kruskal-Wallis ANOVA) (*1 viral load measurement was unavailable) and total HIV DNA (Kruskal-Wallis ANOVA) in untreated acute infection and after 6 and 12 months of treatment. (C) Longitudinal viral load (Kruskal-Wallis ANOVA) and total HIV DNA (non-parametric t-tests) in acute treated individuals. (D) Viral load and total HIV DNA (parametric t-test) after 1 year of treatment in chronic and acute treated individuals. Median and interquartile range (error bars) are represented.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Peak viral load (parametric t-test) and total HIV DNA (non-parametric t-test) measured at peak viral load in untreated (pre-therapy) and acute treated individuals. (B) Longitudinal viral load (Kruskal-Wallis ANOVA) (*1 viral load measurement was unavailable) and total HIV DNA (Kruskal-Wallis ANOVA) in untreated acute infection and after 6 and 12 months of treatment. (C) Longitudinal viral load (Kruskal-Wallis ANOVA) and total HIV DNA (non-parametric t-tests) in acute treated individuals. (D) Viral load and total HIV DNA (parametric t-test) after 1 year of treatment in chronic and acute treated individuals. Median and interquartile range (error bars) are represented.
 
-## Factors associated with total proviral DNA load after 1 year of suppressive ART
+### Factors associated with total proviral DNA load after 1 year of suppressive ART
 
 To further understand the impact of host, virological, and immunological factors, as well as timing of treatment on the establishment and maintenance of the HIV reservoir, we analysed the associations between virological and immunological markers of clinical disease progression and HIV-1 proviral DNA after 1 year of treatment (Table 2). Analyses for each treatment group were performed independently using multivariate regression models with HIV-1 DNA levels as the dependent variable and other factors, specifically nadir CD4, pre-infection CD4, baseline CD4 counts, and peak viral load, as the independent predictor variables. The analysis showed that when treatment was initiated during acute infection, only peak plasma viral load was significantly associated with levels of HIV-1 proviral DNA after 1 year of treatment (p=0.02). However, when treatment was initiated during chronic infection, both baseline CD4 count (measured 1–3 days after detection of HIV) (p=0.002) and peak plasma viral load (p=0.03) positively associated with HIV-1 proviral DNA levels, while there was a significant inverse association with nadir CD4 (p<0.0001). Other factors such as total viral burden (area under the viral load curves), CD4:CD8 ratio at enrolment, protective human leukocyte antigen (HLA) alleles, and type of treatment regimen were not associated with HIV-1 proviral DNA measured after 1 year of treatment (data not shown). These data indicate that both host and viral characteristics impact the establishment and maintenance of the viral reservoir.
 
-## Longitudinal genotypic characterisation of HIV-1 DNA
+**Table 2.**
+ Multivariate analysis of factors that predict total HIV-1 proviral DNA load after 1 year of treatment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stage at treatment initiation</th>
+      <th>Variables</th>
+      <th>Co-efficient</th>
+      <th>Standard error</th>
+      <th>t</th>
+      <th>p-Value</th>
+      <th>p-Value summary</th>
+      <th>95% confidence interval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acute infection</td>
+      <td>Nadir CD4</td>
+      <td>–0.0007424</td>
+      <td>0.00102</td>
+      <td>0.7277</td>
+      <td>0.4773</td>
+      <td>ns</td>
+      <td>–0.002905–0.001420</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pre-infection CD4</td>
+      <td>–0.0001861</td>
+      <td>0.0004233</td>
+      <td>0.4395</td>
+      <td>0.6661</td>
+      <td>ns</td>
+      <td>–0.001083–0.0007113</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Baseline* CD4</td>
+      <td>0.0002574</td>
+      <td>0.0003727</td>
+      <td>0.6906</td>
+      <td>0.4997</td>
+      <td>ns</td>
+      <td>–0.0005326–0.001047</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Peak VL</td>
+      <td>0.1972</td>
+      <td>0.07938</td>
+      <td>2.485</td>
+      <td>0.0244</td>
+      <td>*</td>
+      <td>0.02895–0.3655</td>
+    </tr>
+    <tr>
+      <td>Chronic infection</td>
+      <td>Nadir CD4</td>
+      <td>–0.006633</td>
+      <td>0.0007088</td>
+      <td>9.358</td>
+      <td>&lt;0.0001</td>
+      <td>****</td>
+      <td>–0.008367 to –0.004898</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pre-infection CD4</td>
+      <td>0.0002514</td>
+      <td>0.0003896</td>
+      <td>0.6454</td>
+      <td>0.5425</td>
+      <td>ns</td>
+      <td>–0.0007019–0.001205</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Baseline* CD4</td>
+      <td>0.001501</td>
+      <td>0.0002905</td>
+      <td>5.166</td>
+      <td>0.0021</td>
+      <td>**</td>
+      <td>0.0007899–0.002211</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Peak VL</td>
+      <td>0.2658</td>
+      <td>0.09698</td>
+      <td>2.741</td>
+      <td>0.0337</td>
+      <td>*</td>
+      <td>0.02848–0.5031</td>
+    </tr>
+  </tbody>
+</table>
+
+_*At study enrolment._
+
+### Longitudinal genotypic characterisation of HIV-1 DNA
 
 Quantification of total HIV-1 DNA by ddPCR as described above is based on the amplification of a short 127 base pair fragment of the HIV-1 genome, and thus detects defective viruses that are incapable of replication, thereby overestimating the size and functionality of the reservoir. To address this, we next performed single template near full-genome sequencing to determine potential replication competency by establishing the distribution of genome-intact and genome-defective latent viruses within cells. Viral genome intactness was determined by the HIVSeqinR v2.7.1 computational bioinformatics pipeline (Lee et al., 2019).
 
 For this analysis we studied 24 participants: The chronic infection (late treatment) group (n=11) consisted of individuals who remained untreated for over 1 year following infection and before treatment initiation. Longitudinal sampling at untreated time points was available for nine of these individuals whereas in two individuals, samples were only available post treatment initiation. The acutely treated group (n=13) received treatment 1–3 days post detection (Figure 2A). We generated a total of 697 sequences (GenBank accession numbers OR991333-OR991737 and MK643536-MK643827) after sampling a median of 1.4 million peripheral blood mononuclear cells (PBMCs) (0.02–4.3 million) per sampling time point. Genome-intact viruses (Figure 2B) accounted for 35% (247/697) of the total pool and were detected in 23 participants (12 from the early treatment group and 11 from the late treatment group), with a median of 8 genome-intact viruses (range = 1–60) per study participant. Phylogenetic analysis revealed a significant difference in the mean pairwise distances of intact viral sequences derived from early treated (median = 0.12%, IQR, 0.07–0.21) compared to late treated participants (median = 0.48%, IQR, 0.16–1.08) (p=0.04) (Figure 2C). Overall, 56% of the intact genomes collected in this study were obtained from the untreated study arm, while 11% were obtained from late treated chronic infection and 33% from acutely treated infections (Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/96617/elife-96617-fig2-v1.jpg)
+
+**Figure 2.:** (A) Peripheral blood mononuclear cell (PBMC) sequencing time points in untreated (red), chronic treated (green), and early treated (blue) study participants where each dot represents a sampling time point. Time of treatment initiation is shown by the vertical grey bar. (B) Approximately maximum-likelihood phylogenetic tree of intact HIV-1 DNA genomes constructed using FastTree2. This method was chosen to resolve full-viral-genome sequences with extreme homology; branch lengths were likely inflated. Viral genomes derived from acute treated participants are marked with (*). (C) Comparison of intraparticipant mean pairwise distances between early and late treated participants. (D) Spectrum of HIV genome sequences detected during untreated acute infection, late treated chronic infection, and acute treated infection.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96617/elife-96617-fig2-figsupp1-v1.jpg)
+
 Longitudinal studies revealed that defective proviruses accumulated rapidly during the course of HIV-1 infection with a relative contribution of 65% (450/697) to the total pool of proviral genomes detected. The majority of defective viral genomes collected in this study were detected during untreated infection (44% (199/450), left-most pie), while 39% (175/450) were detected during late treated chronic infection and 17% (76/450) during acute treated infection. Defective genomes contributed 59% to the proviral population in untreated infection, 87% in late (chronic) treated, and 48% in acutely treated infection (Figure 2D). Overall, defective genomes also accumulated quickly after onset of infection and were detectable at a proportion of 47% within the first month irrespective of treatment status (data not shown). Large internal deletions within viral genomes were the most common defect with relative frequencies of 77%, 60%, and 79% in untreated infection, chronic treated infection, and acute treated infection respectively among the pool of defective genomes. Overall, these gene deletions occurred significantly more frequently between integrase and envelope in the integrase to envelope gene segment compared to gag (p<0.0001–0.001), with nef being similar to gag (Figure 2—figure supplement 1). APOBEC-induced hypermutations were the second most common defect observed in untreated (16%) and late (chronic) treated (31%) infection. However, in acute treated infection, hypermutations were relatively infrequent, comprising only 7% of the genome-defective pool. Premature stop codons in one of gag, pol, or env occurred at a frequency of 5%, 4%, and 13% as a percentage of defective genomes in sequences from untreated, chronic, and acute treated infections respectively. Internal inversions (1%, 1%, 1%), and 5’ psi defects (2%, 4%, 0%) were other types of genome defects that were detected at minor frequencies in untreated, chronically treated, and acutely treated infections respectively.
 
 To further understand the impact of ART timing on the composition, evolution, and dynamics of the HIV-1 proviral landscape over time, we next performed a stratified analysis of the relative proportions of viral genome sequences in each study arm over 1 year of follow-up (Figure 3A–C). Genome-intact viruses were detectable throughout the course of untreated infection while genome-defective viruses also accumulated over this period (Figure 3A). Initiation of ART during chronic infection, at a median of 456 days after detection of plasma viremia, resulted in a decrease in the relative proportion of genome-intact viruses over 1 year of treatment (34–14%). However, genome-intact viruses were not completely eradicated and were easily detectable after 12 months of treatment (Figure 3B). Additionally, genomes with large deletions and hypermutations became more prominent in the chronic treated group over 1 year of treatment. In contrast, there was a more rapid decrease in the proportion of genome-intact viruses following ART initiation in acute infection such that these viruses were no longer detectable at our sampling depth after 1 year of treatment (57% to 0%) (Figure 3C). Hypermutated viruses were also less prominent before 12 months during early treated infection (Figure 3C). These data suggest that early treatment initiation facilitates faster clearance of genome-intact viruses in the blood compared to late treatment.
 
-## Contribution of clonal expansion to maintenance of proviral populations
+![Figure 3.](https://cdn.elifesciences.org/articles/96617/elife-96617-fig3-v1.jpg)
+
+**Figure 3.:** Relative proportions of intact and defective viral genomes measured longitudinally in (A) untreated acute infection for 2 years, (B) late (chronic) treated infection for 1 year, and (C) early (acute) treated infection for 1 year. The number of genomes sampled at each time point is indicated above each vertical bar.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96617/elife-96617-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** This analysis was performed with all sequences available for each participant at all time points.
+
+### Contribution of clonal expansion to maintenance of proviral populations
 
 Studies show that more than 50% of the latent HIV reservoir is maintained by clonal expansion (Liu et al., 2020). We assessed viral genome sequences to determine the extent of persistence of infected cell clones after primary infection. Viral genome sequences sharing 100% identity by FLIP-seq was used as a marker of clonal expansion of infected cells as previous studies have shown that proviral genomes that were 100% identical share the same viral integration site whereas proviruses with different integration sites do not share 100% sequence identity (Einkauf et al., 2019). At our sampling depth, we detected clonal expansion in 3/11 (27%) participants who were treated during chronic infection and 4/13 (30%) participants treated during acute infection, showing that in subtype C infection clonal expansion of infected cells occurred as early as 1 day post detectable viremia (Figure 3—figure supplement 1). Defective clones were detected in two late treated participants at proportions of 6% and 13% of total proviral population, while intact clones were identified in one late treated participant at a proportion of 6% of the total proviral pool. In contrast, a higher proportion of intact clones were detected in early treated participants at 33%, 30%, 37%, and 24% of the total proviral pool. Although the data is limited and needs to be interpreted with caution, this suggests that clonal expansion of intact proviral genomes is more likely to occur when treatment is initiated early, likely due to the early inhibition of viral replication that prevents the accumulation and seeding of defective viral genomes into the viral reservoir.
 
-## Decay kinetics of intact and defective proviruses
+### Decay kinetics of intact and defective proviruses
 
 Studies show that the biology and decay dynamics of genome-intact viruses within the viral reservoir likely differ from that of the genome-defective provirus pool (White et al., 2022b; Peluso et al., 2020). However, the effect of ART timing on the rate of decay of these different pools of viruses is not well known and has not been investigated in African populations where immune responses and viral genetic heterogeneity may well result in population-specific differences. Here, we observed that the absolute proportions of both genome-intact and -defective viruses per million PBMCs sampled decreased in both early treated and late treated participants over the 1-year follow-up period of this study (Figure 4A and B).
 
@@ -89,7 +309,7 @@ Among the acute treated, genome-intact proviruses decreased by 0.308 log copies 
 
 Genome-defective proviruses also decreased significantly in the acute treated group by 0.190 log copies per month in the first 6 months after starting ART, corresponding to a decline of 35% (p=0.01). However, in the chronic treated group the change in the number of log copies of defective provirus in the first 6 months was only 0.015 (p=0.88) corresponding to a decline of just 3.4% per month (Figure 4D and E). These results indicate that early treatment is associated with a faster decline of both genome-intact and -defective proviruses compared to late treatment.
 
-## CTL epitope diversity in the latent reservoir
+### CTL epitope diversity in the latent reservoir
 
 The emergence of escape mutations in viral epitopes as a mechanism to evade HLA class I-restricted immune responses, specifically of CD8+ cytotoxic T lymphocytes (CTL), drives viral diversification and is a significant challenge in developing effective therapies against HIV (Goonetilleke et al., 2009; Borrow et al., 1997; Goulder et al., 1997; Koup and Ho, 1994). We investigated the impact of late compared to early ART initiation on CTL epitope diversity and escape in the HIV proviral genomes by longitudinally analysing Gag, Nef, and Pol CTL epitopes, (Mamrosh et al., 2022) from single genome viral sequences (excluding only hypermutated sequences), that are restricted by HLA genotypes B*57:02, B*57:03, B*58:01, B*81:01, and A*74:01. These HLA genotypes have been associated with protection against disease progression in HIV-1 subtype C infection (Goulder and Walker, 2012). CTL epitope mutations were classified according to the Los Alamos HIV Molecular Immunology Database (Mamrosh et al., 2022). Protective HLA genotypes were present in 7/11 (64%) late treated participants and in 7/13 (54%) early treated participants. In the presence of relevant restricting HLA genotypes, mutations compared to the Clade C consensus were detected in 12% of participants with Gag, 23% with Pol, and 27% with Nef targeted epitopes after 1 year of follow-up when treatment was initiated late (Figure 5A–C) in contrast to 0%, 0%, and 8% respectively when treatment was initiated early (Figure 5G–I), suggesting that chronic treatment is associated with the retention of a wide spectrum of CTL escape mutations within proviral genomes compared to early treatment. Escape mutations detected at baseline (up to 1 month after infection) in the presence of restricting HLA genotypes were present in 3% of participants within Gag, 19% within Pol, and 23% (Figure 5A–C) within Nef targeted epitopes when treatment was initiated later compared to and 0%, 13%, and 11% respectively (Figure 5G–I) with early treatment. Escape mutations observed in early treated participants were present in the earliest sequences that were derived close to the time of infection and therefore likely represent transmitted escape variants. Similar proportions of transmitted escape mutations were present in participants who did not have a protective HLA genotype and remained unchanged after 1 year (Figure 5D–F and J–L).
 
@@ -119,7 +339,178 @@ To our knowledge this is the first study in an African population, dominated by 
 
 ## Materials and methods
 
-## Study design and participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens, human)</td>
+      <td>8E5 LAV cell line (CEM)</td>
+      <td>NIH HIV Reagent Program</td>
+      <td>CAT #95, RRID:CVCL_3484</td>
+      <td>Served as a positive control for viral genome sequencing</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens, human)</td>
+      <td>Human PBMCs</td>
+      <td>Dong et al., 2018</td>
+      <td>FRESH Cohort</td>
+      <td>Ethics Approval Reference Numbers:BF131/11 and 2012-P001812</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LTR-gag Forward primer</td>
+      <td>Lee et al., 2019</td>
+      <td>ddPCR Primer</td>
+      <td>TCTCGACGCAGGACTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LTR-gag Reverse primer</td>
+      <td>Lee et al., 2019</td>
+      <td>ddPCR Primer</td>
+      <td>TACTGA CGCTCTCGCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LTR-gag probe</td>
+      <td>Lee et al., 2019</td>
+      <td>ddPCR Probe</td>
+      <td>/56- FAM/CTCTCTCCT/ZEN/TCTAGCCTC/ 31ABkFQ/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPP30 forward primer</td>
+      <td>Lee et al., 2019</td>
+      <td>ddPCR Primer</td>
+      <td>GATTTGGACCTGC GAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPP30 reverse primer</td>
+      <td>Lee et al., 2019</td>
+      <td>ddPCR Primer</td>
+      <td>GCGGCTGTCTCCACAAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPP30 probe</td>
+      <td>Lee et al., 2019</td>
+      <td>ddPCR Probe</td>
+      <td>/56- FAM/ CTGACCTGA/ZEN/AGGCTCT/31ABkFQ/</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U5-623F1</td>
+      <td>Lee et al., 2019</td>
+      <td>PCR Primer</td>
+      <td>AAATCTCTAGCAGTGGCGCCCGAACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U5-638F2</td>
+      <td>Lee et al., 2019</td>
+      <td>PCR Primer</td>
+      <td>GCGCCCGAACAGGGACYTGAAARCGAAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U5-547R2</td>
+      <td>Lee et al., 2019</td>
+      <td>PCR Primer</td>
+      <td>GCACTCAAGGCAAGCTTTATTGAGGCTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U5-601R1</td>
+      <td>Lee et al., 2019</td>
+      <td>PCR Primer</td>
+      <td>TGAGGGATCTCTAGTTACCAGAGTC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ddPCR supermix No dTUPs</td>
+      <td>Bio-Rad</td>
+      <td>SCR_026079CAT #1863023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ddPCR droplet generator oil</td>
+      <td>Bio-Rad</td>
+      <td>SCR_026081CAT #BBRD1863004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ddPCR droplet reader oil</td>
+      <td>Bio-Rad</td>
+      <td>SCR_026084CAT #BBRD1864110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood and Tissue extraction kit</td>
+      <td>QIAGEN</td>
+      <td>SCR_026085 CAT #69506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Rad QX200 AutoDG Droplet Digital PCR System</td>
+      <td>Bio-Rad</td>
+      <td>RRID:SCR_019714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ddPCR supermix No dTUPs</td>
+      <td>Bio-Rad</td>
+      <td>SCR_026079CAT #1863023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Platinum Taq DNA Polymerase High Fidelity</td>
+      <td>Invitrogen</td>
+      <td>CAT # 11304102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QX Manager Standard edition version 1.2</td>
+      <td>Bio-Rad</td>
+      <td>SCR_026078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HIVSeqinR v2.7.1</td>
+      <td>Lee et al., 2019</td>
+      <td>Bioinformatics Pipeline</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v10</td>
+      <td>GraphPad Software Inc</td>
+      <td>Graphs and Statistics</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design and participants
 
 This was a longitudinal study of the Females Rising through Education, Support, and Health (FRESH) cohort, a prospective, observational study of 18- to 23-year-old HIV uninfected women at high risk for HIV acquisition, established in Umlazi, Durban, South Africa (Dong et al., 2018; Ndung’u et al., 2018). Finger prick blood draws were collected from FRESH study participants twice a week and subjected to HIV-1 RNA testing, with the aim of detecting acute HIV infection during Fiebig stage I. The study included a socioeconomic intervention program and HIV prevention interventions including PrEP that coincided with study visits to address challenges faced by the young women that likely contribute to the increased risk of HIV acquisition in this setting. If a participant acquired HIV-1 infection while on the study, blood samples were collected weekly for a month, then monthly until 3 months’ post infection, then monthly for 1 year and every 3 months thereafter. Days post onset of viremia (DPOV) was calculated as the interval between the first positive HIV test and the date of sample collection. Unique participant identifier numbers were assigned to the participants and are only known to the research group.
 
@@ -127,26 +518,26 @@ Study participants recruited during the first 19 months of the study did not rec
 
 For this study participants were categorised into three groups (untreated, late (chronic) treated, and early (acute) treated) where, 11 remained untreated during acute infection and later started ART during chronic infection at a median of 456 (297–1203) DPOV, while 24 started ART at a median of 1 (1–3) DPOV. Participants were studied at 0, 1, 3, 6, 9, 12, and 24 months post onset of viremia and up to 12 months post treatment. Peak viraemia refers to the highest recorded viral load in all participants.
 
-## Quantification of total HIV-1 DNA
+### Quantification of total HIV-1 DNA
 
 Measurement of total HIV-1 DNA was performed as previously described (Lee et al., 2017). Total DNA was extracted from total PBMC samples using DNeasy Blood & Tissue Kits (QIAGEN). ddPCR (Bio-Rad) was used to measure total HIV-1 DNA and host cell concentration with primers and probes covering HIV-1 5′ LTR-gag HXB2 coordinates 684–810 (forward primer 5′-TCTCGACGCAGGACTCG-3′, reverse primer 5′-TACTGACGCTCTCGCACC-3′ probe/56-FAM/CTCTCTCCT/ZEN/TCTAGCCTC/ 31ABkFQ/, and human RPP30 gene38 forward primer 5′-GATTTGGACCTGCGAGCG-3′, reverse primer 5′-GCGGCTGTCTCCACAAGT-3′, probe/56-FAM/CTGACCTGA/ZEN/AGGCTCT/31AbkFQ/). Thermocycling conditions for ddPCR were: 95°C for 10 min, 45 cycles of 94°C for 30 s and 60°C for 1 min, 72°C for 1 min. Thereafter droplets from each sample were analysed on the Bio-Rad QX200 Droplet Reader and data were analysed using QuantaSoft software (Bio-Rad).
 
-## Single genome amplification and deep sequencing of near-full-length HIV-1 DNA
+### Single genome amplification and deep sequencing of near-full-length HIV-1 DNA
 
 Near-full-length proviral sequences were generated as previously described (Lee et al., 2017). Total HIV-DNA copy number as determined by ddPCR was used to calculate the DNA sample dilution to achieve one PCR-positive reaction in every three reactions. This method of limiting dilution gives a Poisson probability of 85.7% that each PCR amplicon originated from a single HIV-DNA template (Lee, 2021). A nested PCR approach was used to amplify the near-full genome using one unit of Platinum Taq DNA Polymerase High Fidelity (Invitrogen) with the following primers: first round PCR: forward primer 5′-AAATCTCTAGCAGTGGCGCCCGAACAG-3′, reverse primer 5′-TGAGGGATCTCTAGTTACCAGAGTC-3′; second round PCR: forward primer 5′-GCGCCCGAACAGGGACYTGAAARCGAAAG-3′, reverse primer 5′-GCACTCAAGGCAAGCTT TATTGAGGCTTA-3′ (HXB2 coordinates 638–9632, 8994 bp). The 20 μl reaction mix contained 1× reaction buffer, 2 mM MgSO4, 0.2 mM dNTP, 0.4 μM each of forward and reverse primers. The thermal cycling conditions were 2 min at 92°C, 10 cycles (10 s at 92°C, 30 s at 60°C, 10 min at 68°C), 20 cycles (10 s at 92°C, 30 s at 55°C, 10 min at 68°C), 10 min at 68°C, 4°C infinite hold.
 
-## Illumina MiSeq and bioinformatics analysis
+### Illumina MiSeq and bioinformatics analysis
 
 All PCR amplicons detectable by gel electrophoresis were subjected to Illumina MiSeq sequencing and thereafter the resulting small reads were de novo assembled using in-house UltraCycler v1.0 (Brian Seed and Huajun Wang, unpublished) (Lee et al., 2017). Viral genome intactness was inferred by the computational bioinformatics pipeline HIVSeqinR v2.7.1 (Lee et al., 2019).
 
-## Cell line
+### Cell line
 
 DNA isolated from the 8E5/LAV (derivative of CEM), human-derived cell line (NIH AIDS Reagent Program, Catalogue #95), which has a single copy of integrated HIV-1 genome, served as a positive control for viral genome sequencing. The identity of the cell line was authenticated by sequencing the proviral genome using the single copy viral DNA genome amplification assay, FLIP-seq, which showed 100% sequence identity in all positive controls which were included on every sequencing plate. Since mycoplasma is not infectable by HIV, mycoplasma contamination was not controlled for in our experiment.
 
-## HLA typing
+### HLA typing
 
 HLA typing was performed using a targeted next-generation sequencing method as previously described (Lin et al., 2023).
 
-## Statistical methods
+### Statistical methods
 
 GraphPad Prism 10 was used to perform summary statistical analyses and comparisons among study groups using Fishers’ exact, Mann-Whitney and Kruskal-Wallis, and multiple linear regression analysis.

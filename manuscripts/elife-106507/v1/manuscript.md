@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04b8v1s79 Department of Cognitive Science and Artificial Intelligence, Tilburg School of Humanities and Digital Sciences, Tilburg University Tilburg Netherlands
-2. https://ror.org/016xsfp80 Donders Centre for Cognitive Neuroimaging, Donders Institute for Brain Cognition and Behaviour, Radboud University Nijmegen Netherlands
+1. Department of Cognitive Science and Artificial Intelligence, Tilburg School of Humanities and Digital Sciences, Tilburg University Tilburg Netherlands ([ROR:04b8v1s79](https://ror.org/04b8v1s79))
+2. Donders Centre for Cognitive Neuroimaging, Donders Institute for Brain Cognition and Behaviour, Radboud University Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 

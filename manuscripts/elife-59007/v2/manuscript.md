@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Animals mimicking other organisms or using camouflage to deceive predators are vital survival strategies. Modern and fossil insects can simulate diverse objects. Lichens are an ancient symbiosis between a fungus and an alga or a cyanobacterium that sometimes have a plant-like appearance and occasionally are mimicked by modern animals. Nevertheless, lichen models are almost absent in fossil record of mimicry. Here, we provide the earliest fossil evidence of a mimetic relationship between the moth lacewing mimic Lichenipolystoechotes gen. nov. and its co-occurring fossil lichen model Daohugouthallus ciliiferus . We corroborate the lichen affinity of D. ciliiferus and document this mimetic relationship by providing structural similarities and detailed measurements of the mimic’s wing and correspondingly the model’s thallus. Our discovery of lichen mimesis predates modern lichen-insect associations by 165 million years, indicating that during the mid-Mesozoic, the lichen-insect mimesis system was well established and provided lacewings with highly honed survival strategies.
+Animals mimicking other organisms or using camouflage to deceive predators are vital survival strategies. Modern and fossil insects can simulate diverse objects. Lichens are an ancient symbiosis between a fungus and an alga or a cyanobacterium that sometimes have a plant-like appearance and occasionally are mimicked by modern animals. Nevertheless, lichen models are almost absent in fossil record of mimicry. Here, we provide the earliest fossil evidence of a mimetic relationship between the moth lacewing mimic Lichenipolystoechotes gen. nov. and its co-occurring fossil lichen model Daohugouthallus ciliiferus. We corroborate the lichen affinity of D. ciliiferus and document this mimetic relationship by providing structural similarities and detailed measurements of the mimic’s wing and correspondingly the model’s thallus. Our discovery of lichen mimesis predates modern lichen-insect associations by 165 million years, indicating that during the mid-Mesozoic, the lichen-insect mimesis system was well established and provided lacewings with highly honed survival strategies.
 
 ## Introduction
 
@@ -32,17 +32,17 @@ In this report, we found an exceptional system of the first lichen mimesis by a 
 
 ## Results
 
-## Reanalysis of the previously suspected lichen fossil Daohugouthallus ciliiferus
+### Reanalysis of the previously suspected lichen fossil Daohugouthallus ciliiferus
 
 We have studied five fossil lichen specimens, PB23120, B0474, B0476P/C, CNU-LICHEN-NN2019001 and CNU-LICHEN-NN2019002P/C, all of which were collected from the Daohugou 1 locality of Inner Mongolia. The newly collected specimens were identified to be Daohugouthallus ciliiferus based on careful observations of its distinctive morphology.
 
-## Emended diagnosis
+#### Emended diagnosis
 
 The diagnosis is as follows and adds to the previous assessment (Wang et al., 2010a). Thallus foliose to subfruticose; lobes ca. 20–30 mm long, irregularly branched, margin sometimes revolute; lateral and terminal branches ca. 0.5–5.0 mm long, tips tapered; upper surface smooth, partly broken; aggregated black spots often present, punctiform; cilia sometimes present near the branch tips, forming filiform appendages; lobules occasionally present (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59007/elife-59007-fig1-v2.jpg)
 
-**Figure 1.:** Daohugouthallus ciliiferus Wang, Krings et Taylor, 2010.(A) Specimen B0476P, with arrows indicating the lobules. (B) Specimen CNU-LICHEN-NN2019001, with arrows indicating the lobules. (C) Specimen CNU-LICHEN-NN2019002P. Scale bars: 5 mm in A–C.
+**Figure 1.:** (A) Specimen B0476P, with arrows indicating the lobules. (B) Specimen CNU-LICHEN-NN2019001, with arrows indicating the lobules. (C) Specimen CNU-LICHEN-NN2019002P. Scale bars: 5 mm in A–C.
 
 Besides the external morphology, certain anatomic characters also were determined. Upper cortex conglutinate, comprising one cell layer, very thin, ca. 1 μm thick (Figure 2A); algal cells globose to near globose, one-celled, mostly 1.5–2.1 μm in diameter, some in framboidal form, interconnected (Figure 2A,B,F) by or adhered (Figure 2C–H) to the fungal hyphae with simple wall-to-wall mycobiont-photobiont interface; fungal hyphae filamentous, some shriveled, septate (Figure 2B,C,G,H), 1.2–1.5 μm wide. These additional features (Figure 2) support the above diagnoses that this specimen is a fossil lichen.
 
@@ -50,79 +50,87 @@ Besides the external morphology, certain anatomic characters also were determine
 
 **Figure 2.:** (A) Thallus longitudinal section containing the cortex, with white arrows pointing to the fungal hyphae, and black ones to the algal cells. The fungal hyphae are interweaved with algal cells. (B–D, F–H) Fungal hyphae indicated by white arrows; algal cells are indicated by black arrows showing entanglement and encirclement by fungal hyphae; septa shown in B, C, G, H. (E) One algal cell indicated by the black arrow, displaying adherence to other fungal hyphae indicated by the white arrow. Scale bars: 5 μm in A, C, D, G, H; 10 μm in B; 3 μm in E; 4 μm in F.
 
-## Remarks
+#### Remarks
 
 This adpression lichen fossil was reported by Wang et al., 2010a as a new genus and new species of lichen, that is Daohugouthallus ciliiferus. However, there were no anatomic characters including both fungal and algal components that was provided and consequently its lichen affinity was doubted and thought as ambiguous (Honegger et al., 2013; Lücking and Nelsen, 2018). Actually, the lichen fossil now has been well defined and should accord with three important criteria: presence of a mycobiont component, presence of a photobiont component, and presence of spatial connections between both components (Lücking and Nelsen, 2018). Accordingly, thallus sections were made in this study and relevant anatomic details can be observed. First, the upper cortex occasionally was present (Figure 2A), and the septa of fungal hyphae also is documented (Figure 2C,D). Second, the algal cells are globose and occasionally have a spherical assembly of microcrystals in framboidal form similar to Trebouxia of Chlorolichenomycites salopensis in morphology but much smaller (Honegger et al., 2013). Third, the spatial connections between fungal hyphae and algal cells have been observed, mostly consisting of fungal hyphae interweaved with algal cells (Figure 2A,C,D,F). The above-mentioned characters of Daohugouthallus ciliiferus accords well with the definition of lichen fossil and indicate a strong affinity to a lichen. From the external morphology, Daohugouthallus ciliiferus would be easily associated with extant Everniastrum cirrhatum, a conclusion that requires further study in the near future.
 
-## Systematic paleontology
+### Systematic paleontology
 
 The lichen-mimicking insects represent a new genus and two new species affiliated to Ithonidae of the order Neuroptera. The terminology of venation follows Breitkreuz et al., 2017.
 
-## Included species
+#### Included species
 
 Lichenipolystoechotes angustimaculatus Fang, Zheng et Wang, sp. nov. (type species), Lichenipolystoechotes ramimaculatus Fang, Ma et Wang, sp. nov.
 
-## Etymology
+#### Etymology
 
 The new genus name is a combination of lichen and Polystoechotes (a genus name of Ithonidae) in reference to the lichen-mimesis of the genus. The gender is masculine.
 
-## Diagnosis
+#### Diagnosis
 
 Forewing ellipsoidal shaped, medium length, slightly narrow with length-width ratio 3.25–3.5; membrane bearing coralliform pattern with unclosed diaphanous U-shaped fenestrae along the margin in forewing; costal space slightly broad basally, then narrowed towards wing apex; ScA and recurved humeral veinlet present; costal cross-veins simple in proximal half, and then distally forked; ScP and RA fused distally, ending close to the wing apex, no cross-veins present in this area; cross-veins in area between RA and RP scattered; RP with about 18 branches, RP1 a single branch, few cross-veins scattered at the radial sector; M forked beyond the separation point of RP1, MA and MP with the similar branched pattern, the number of MP branches slightly more than MA; CuA distinctly multi-forked, with 7–10 pectinate branches; CuP bifurcated.
 
-## Remarks
+#### Remarks
 
 The new genus can easily be assigned to Ithonidae by the following characters: medium body size, prolonged forewing, relatively narrow costal space, and presence of ScA and recurrent humeral veinlet. In addition, its forewing characters, including Sc and R1 fused distally, few cross-veins except for a row of well-defined outer gradate series in radial sector, MP forked beyond MA divergence, conforming to a polystoechotid affiliation (Zheng et al., 2016). It also is distinguished from other polystoechotid genera by the distinctive coralliform markings of the forewings.
 
-## Lichenipolystoechotes angustimaculatus Fang, Zheng et Wang, sp. nov. (Figures 3E–H and 4A,G)
+### Lichenipolystoechotes angustimaculatus Fang, Zheng et Wang, sp. nov. (Figures 3E–H and 4A,G)
 
-## Etymology
+#### Etymology
 
 The specific name comes from the Latin words ‘angusta’ and ‘macula’ referring, respectively, to the narrow, linear and pigmented swaths on the forewing, and the spot-like patterns present on those swaths.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59007/elife-59007-fig3-v2.jpg)
 
-**Figure 3.:** Lichenipolystoechotes angustimaculatus gen. et sp. nov., and L. ramimaculatus gen. et sp. nov.(A–C) Holotype CNU-NEU-NN2016040P/C of L. angustimaculatus, photo of part in (A). Accompanying overlay drawing in (B). Photo of counterpart in (C). (D) Photo of the paratype CNU-NEU-NN2016041 of L. angustimaculatus. (E–H) The holotype CNU-NEU-NN2019006P/C of L. ramimaculatus, with a lichen mimicking forewing pattern. Photo of part in (E); accompanying overlay drawing in (F); photo of counterpart in (G); and accompanying overlay drawing in (H). Scale bars: 5 mm in A–H.
+**Figure 3.:** (A–C) Holotype CNU-NEU-NN2016040P/C of L. angustimaculatus, photo of part in (A). Accompanying overlay drawing in (B). Photo of counterpart in (C). (D) Photo of the paratype CNU-NEU-NN2016041 of L. angustimaculatus. (E–H) The holotype CNU-NEU-NN2019006P/C of L. ramimaculatus, with a lichen mimicking forewing pattern. Photo of part in (E); accompanying overlay drawing in (F); photo of counterpart in (G); and accompanying overlay drawing in (H). Scale bars: 5 mm in A–H.
 
-## Material
+![Figure 4.](https://cdn.elifesciences.org/articles/59007/elife-59007-fig4-v2.jpg)
 
-## Holotype
+**Figure 4.:** (A) Photo of part of L. ramimaculatus, with a lichen mimicking forewing pattern, CNU-NEU-NN2019004P. (B–C) Photos of the lichen thallus D. ciliiferus, PB23120; thallus segment in (B); and entire thallus in (C). Photos A–C are at the same scale. (D) Photo of a nearly intact lichen thallus of D. ciliiferus, B0474. (E) Photo of L. angustimaculatus with a lichen mimicking wing pattern; CNU-NEU-NN2016040P. (F) Box scatter plots of measurement data displaying lower and upper extremes, lower and upper quartile, median and average (in the blue dotted line) of branch widths of L. ramimaculatus’s forewing pattern (CNU-NEU-NN2019004C) and thallus branch widths of lichen D. ciliiferus (PB23120, B0474) separately. (Black, red and green dots represent measurement results of branch pattern widths of lichen-mimicking lacewing and thallus widths of the two lichen specimens, respectively.) (G) Part of the wing pattern of L. ramimaculatus, with irregular wing spots. (H, I) Portion of the thallus of D. ciliiferus, with irregular spot-like punctiform pycnidia, B0474 (H), B0476P (I) The dark arrows indicate the spots on wing of L. ramimaculatus and thallus of D. ciliiferus. Scale bars: 5 mm in A–E, 1 mm in G–I.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59007/elife-59007-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Measuring lines on the forewing of lichen-mimicking L. ramimaculatus, CNU-NEU-NN2019004P. (B) Measuring lines on lichen specimen PB23120. (C) Measuring lines on lichen specimen B0474. Measuring lines are indicated by their red color. Scale bars: 5 mm in A–C.
+
+#### Material
+
+##### Holotype
 
 CNU-NEU-NN2016040P/C (Figures 3A–C and 4E), paratype. CNU-NEU-NN2016041 (Figure 3D).
 
-## Type locality and horizon
+#### Type locality and horizon
 
 Daohugou 1, near Daohugou Village, Shantou Township, Ningcheng County, Inner Mongolia, China. Jiulongshan Formation, Callovian–Oxfordian boundary interval, latest Middle Jurassic.
 
-## Diagnosis
+#### Diagnosis
 
 Forewing, humeral veinlet strongly recurved; ScA present; cross-veins in area between RA and RP scattered except for the middle gradate series; RP with about 18 branches; MA and MP with similarly distal pectinate branches; CuA pectinately branched in distal half; CuP deeply bifurcated at anterior half.
 
-## Description and comparison
+#### Description and comparison
 
 Only forewing present. Forewing elongate, oval shaped, about 21.3 mm long, 6.5 mm wide; membrane bearing irregular coralloid markings of pigmentation, forming many diaphanous marginal fenestrae; costal space slightly broad basally, then narrowed towards the wing apex; costal cross-veins scarcely branched in proximal half of wing, and then forming bifurcated branches in distal half; sc-ra cross-vein absent; space between RA and RP relatively narrow with seven cross-veins; RP with 18 pectinate branches, and each branch bifurcated near wing margin; cross-veins in radial sector relatively scarce except for the middle gradate series; M forked slightly beyond the separation of RP1; MA and MP forming seven pectinate branches each; CuA pectinate branched in distal half part, forming seven pectinate branches; CuP first bifurcated at the proximal half, then forming the distal simple forks; A1–A3 forming several pectinate branches; a few cross-veins present among MA and A3.
 
-## Lichenipolystoechotes ramimaculatus Fang, Ma et Wang, sp. nov. (Figures 3E–H and 4A,G)
+### Lichenipolystoechotes ramimaculatus Fang, Ma et Wang, sp. nov. (Figures 3E–H and 4A,G)
 
-## Etymology
+#### Etymology
 
 The specific name comes from the Latin word rami and macula, referring, respectively, to the narrow, branched and pigmented swaths traversing the forewing, and the spot-like patterns present on those branched swaths.
 
-## Material
+#### Material
 
-## Holotype
+##### Holotype
 
 CNU-NEU-NN2019006P/C (Figures 3E–H and 4A,G).
 
-## Type locality and horizon
+#### Type locality and horizon
 
 Daohugou 1, near Daohugou Village, Shantou Township, Ningcheng County, Inner Mongolia, China. Jiulongshan Formation, Callovian–Oxfordian boundary interval, latest Middle Jurassic.
 
-## Diagnosis
+#### Diagnosis
 
 The marginal diaphanous fenestrae significantly open, surrounded by pigmented zones; MA forming the distal dichotomizing fork, MP with six pectinate distal branches; CuA branched nearly at the middle, forming about 11 pectinate branches, CuP bifurcated beyond the middle portion of the vein.
 
-## Description and comparison
+#### Description and comparison
 
 Only forewing preserved. Forewing elongate, oval shaped, about 22.8 mm long, 6.5 mm wide; costal space slightly broadened, then narrowed towards wing apex; subcostal veinlets relatively widely spaced, scarcely branched medially, forming multiple bifurcated branches distally; areas between Sc and RA narrow, without crossveins; space between RA and RP relatively narrow with sparse crossveins; RP with about 22 pectinate branches; RP1 branched from RP near wing base, single until wing margin; M forked basally, MA forming two distal dichotomous branches, and MP forming six distal pectinate branches; CuA pectinate medially to distally, forming 11 pectinate branches; CuP bifurcated at middle; A1–A3 partly preserved.
 
@@ -136,7 +144,7 @@ Unlike the models of other, co-occurring, plant-mimicking insects, lichen-mimesi
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59007/elife-59007-fig5-v2.jpg)
 
-**Figure 5.:** Lichenipolystoechotes ramimaculatus gen. et sp. nov. on the lichen Daohugouthallus ciliiferus Wang, Krings et Taylor, 2010.The colors used in the drawing of D. ciliiferus is Taupe, referring to the color of extant lichen Everniastrum cirrhatum. The body of the L. ramimaculatus is reconstructed based on living ithonid species, and the wing is based on the fossil of holotype CNU-NEU-NN2019006P/C. The color of insect is yellowish-brown based on the general coloration of extant polystoechotids. Xiaoran Zuo did the reconstruction drawing.
+**Figure 5.:** The colors used in the drawing of D. ciliiferus is Taupe, referring to the color of extant lichen Everniastrum cirrhatum. The body of the L. ramimaculatus is reconstructed based on living ithonid species, and the wing is based on the fossil of holotype CNU-NEU-NN2019006P/C. The color of insect is yellowish-brown based on the general coloration of extant polystoechotids. Xiaoran Zuo did the reconstruction drawing.
 
 Was there possible benefit to D. ciliiferus from its mimetic association with Lichenipolystoechotes? This is an open question that could raise multiple alternative explanations. Some modern insects such as ants, dipterans and larva of green lacewings are considered to potentially contribute to dispersal of lichens by transporting lichen propagules to new sites of colonization (Gerson, 1973; Keller and Scheidegger, 2016; Ronnås et al., 2017). In a comparison with such relatively small, lichen-carrying insects, Lichenipolystoechotes possessed a considerably larger body size that likely was convenient for dispersal of lichen propagules. Notably, sexual reproductive organs such as apothecia have not been found on the D. ciliiferus thallus based on light-microscopic morphological and SEM anatomical observations; neither were vegetative propagules such as soredia or isidia seen except along marginal lobules that occasionally were present. This hypothesis of zoochory requires additional evidence for support. However, our alternative hypothesis of benefiting D. ciliiferus is based on trophic interactions. As predaceous insects, Lichenipolystoechotes inhabited a lichen-rich environment to evade their predators, but they also could have predated and consumed smaller lichen-feeding animals while simultaneously decreasing herbivore damage to the D. ciliiferus thallus. This latter hypothesis would require additional verification from evidence of a small ecological web of predator, shelter, defensive and mimetic interactions associated with Daohugouthallus and Lichenipolystoechotes in the same deposit.
 
@@ -148,14 +156,14 @@ The accepted oldest lichen fossil was reported from the Early Devonian and liche
 
 ## Materials and methods
 
-## Geological context
+### Geological context
 
 Specimens were collected from the Daohugou 1 locality of the Jiulongshan Formation, near Daohugou Village, Ningcheng County, approximately 80 km south of Chifeng City, in the Inner Mongolia Autonomous Region, China (119°14.318′E, 41°18.979′N). The age of this formation is 168–152 Ma based on 40Ar/39Ar and 206Pb/238U isotopic analyses (Hy et al., 2004; Liu, 2006; Ren, 2019).
 
-## Specimen repository
+### Specimen repository
 
 CNU-NEU-NN2016040P/C and CNU-NEU-NN2016041 of Lichenipolystoechotes angustimaculatus sp. nov., and CNU-NEU-NN2019004P/C of Lichenipolystoechotes ramimaculatus sp. nov. are housed in the College of Life Sciences and Academy for Multidisciplinary Studies, Capital Normal University (CNU), Beijing, China. Lichen specimens of Daohugouthallus ciliiferus Wang, Krings et Taylor, 2010: PB23120 is housed in the paleobotanical collection of the Nanjing Institute of Geology and Palaeontology, Chinese Academy of Sciences, in Nanjing, China; B0474 and B0476P/C are housed in the Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences, in Beijing, China; CNU-LICHEN-NN2019001 and CNU-LICHEN-NN2019002P/C are housed in the Key Lab of Insect Evolution and Environmental Changes, College of Life Sciences and Academy for Multidisciplinary Studies, Capital Normal University, in Beijing, China.
 
-## Experimental methods
+### Experimental methods
 
 The insect and lichen fossils were examined and photographed using a Nikon SMZ25 microscope attached to a Nikon DS-Ri2 digital camera system at the Key Lab of Insect Evolution and Environmental Changes at Capital Normal University in Beijing, China. Lichen compression specimens from the Daohugou one locality were soaked in water for several seconds, dried on filter paper, and then a fragment was lifted up by the edge of a razor blade. One isolated, dried slice was examined and photographed using a Zeiss Axioscope2 compound microscope attached to a Nikon D5100 digital camera system at the State Key Laboratory of Mycology, Institute of Microbiology, at the Chinese Academy of Sciences in Beijing. That piece of lichen fossil then was sputter-coated with gold particles using an Ion Sputter E-1045 (HITACHI), and SEM images were recorded using a scanning electron microscope (Hitachi SU8010) with a secondary electron detector operated at 5.0 kV. Overlay drawings were prepared by Corel DRAW. Box plots were made with Origin 2018 software, which is used to display the distribution of the data of branch width of L. ramimaculatus’s forewing pattern and lichen thallus of D. ciliiferus. The box plots are formed by two quartiles showing the high frequency of values, and the upper and lower points of the boxes are the maximum and minimum values. All figures were composited in Adobe Photoshop.

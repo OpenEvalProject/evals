@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.48675.001 Adiponectin is an adipocyte-derived atypically abundant circulating factor that protects various organs and tissues through its receptors, AdipoRs, calreticulin, and T-cadherin. To identify the major binding partner of circulating native adiponectin, we expressed these receptors on the surface of HEK293 cells. Adiponectin, either that in mouse or human serum, purified from serum, or produced by mammalian cells, bound to cells expressing T-cadherin, but not to those expressing AdipoR1 or calreticulin. The stable introduction of T-cadherin and AdipoR1 into CHO cells resulted in the cell surface localization of these receptors. Native adiponectin in serum bound to cells expressing T-cadherin, not to those expressing AdipoR1. The knockdown of T-cadherin, but not AdipoRs resulted in the significant attenuation of native adiponectin binding to C2C12 myotubes. Therefore, native adiponectin binding depended on the amount of T-cadherin expressed in HEK293 cells, CHO cells, and C2C12 myotubes. Collectively, our mammalian cell-based studies suggest that T-cadherin is the major binding partner of native adiponectin in serum.
+Adiponectin is an adipocyte-derived atypically abundant circulating factor that protects various organs and tissues through its receptors, AdipoRs, calreticulin, and T-cadherin. To identify the major binding partner of circulating native adiponectin, we expressed these receptors on the surface of HEK293 cells. Adiponectin, either that in mouse or human serum, purified from serum, or produced by mammalian cells, bound to cells expressing T-cadherin, but not to those expressing AdipoR1 or calreticulin. The stable introduction of T-cadherin and AdipoR1 into CHO cells resulted in the cell surface localization of these receptors. Native adiponectin in serum bound to cells expressing T-cadherin, not to those expressing AdipoR1. The knockdown of T-cadherin, but not AdipoRs resulted in the significant attenuation of native adiponectin binding to C2C12 myotubes. Therefore, native adiponectin binding depended on the amount of T-cadherin expressed in HEK293 cells, CHO cells, and C2C12 myotubes. Collectively, our mammalian cell-based studies suggest that T-cadherin is the major binding partner of native adiponectin in serum.
 
 ## Introduction
 
@@ -38,6 +38,18 @@ We herein demonstrated that native adiponectin in serum bound to cells expressin
 ## Results and discussion
 
 We investigated the binding of native adiponectin in serum to three adiponectin receptors by transiently overexpressing the cDNA of each receptor in HEK293 cells (Figure 1A). We directly examined mouse serum as the ligand solution, including the most native adiponectin, purified adiponectin from mouse serum (Fukuda et al., 2017), and full-length recombinant adiponectin produced in HEK293 cells. Native-PAGE showed differences in the distribution of molecular species between serum or purified adiponectin and recombinant adiponectin (Figure 1B). Recombinant adiponectin contained a lower amount of HMW multimer adiponectin than mouse serum and purified adiponectin from serum (Figure 1B). Transient transfection resulted in the successful overexpression of each receptor based on their expression levels quantified by RT-qPCR (Figure 1C). The treatment of cells with different preparations of adiponectin at 4°C for 1 hr resulted in the binding of prepared adiponectin only to cells expressing mouse T-cadherin (Figure 1D). Mouse serum and purified adiponectin showed similar binding, whereas recombinant adiponectin containing a lower amount of 6-mer and the HMW multimer exhibited markedly weaker binding (Figure 1D). The results of a native-PAGE analysis showed that more than 6-mer of multimeric adiponectin specifically bound to cells expressing mouse T-cadherin (Figure 1—figure supplement 1), which is consistent with previous findings (Fukuda et al., 2017; Hug et al., 2004). The dose-response study revealed the specific and saturable binding of native adiponectin in serum to cells expressing T-cadherin (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48675/elife-48675-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental outline. HEK293 cells were transfected with mammalian expression vectors coding mouse T-cadherin (mCdh13), Calreticulin (mCalr), or AdipoR1 (mAdipor1). (B) Native-page analysis of adiponectin preparations. Adiponectin concentrations were measured by ELISA and the equal amount (50 ng) of adiponectin was analyzed. (C) Absolute copy numbers of mRNA levels of mouse mCdh13, mCalr, mAdipor1, and mAdipor2 were quantified. (D) Binding of adiponectin to HEK293 cells expressing none (N), mock (M), T-cadherin (T), or AdipoR1 (R1) (E) Dose-response cell-based binding study. Mouse serum (20 μg adiponectin/mL) was diluted and applied to the cells expressing mock or T-cadherin (left). The bound adiponectin was evaluated by blot intensity (right). Cell lysate following binding was separated by SDS-page and native-page. Essentially same results were obtained from more than three independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48675/elife-48675-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Binding of mouse adiponectin in mouse serum to HEK293 cells. Multimer analysis of bound adiponectin by native page. Essentially same results were obtained from more than three independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48675/elife-48675-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Experimental outline. HEK293 cells were transfected with mammalian expression vectors coding human T-cadherin (hCDH13), Calreticulin (hCALR), or AdipoR1 (hADIPOR1). (B) Absolute copy numbers of mRNA levels of human T-cadherin (hCDH13), Calreticulin (hCALR), AdipoR1 (hADIPOR1), and AdipoR2 (hADIPOR2) were quantified. (C) Binding of human adiponectin in human serum to HEK293 cells. (D) Multimer analysis of bound adiponectin by native page. Essentially same results were obtained from more than three independent experiments.
 
 Similar results were obtained when human cDNAs were overexpressed and the binding of adiponectin in human serum was assessed (Figure 1—figure supplement 2A–D). We previously reported that purified recombinant T-cadherin bound purified adiponectin with an affinity of KD = 1.0 nM (Fukuda et al., 2017). The present results showed the saturable binding of native adiponectin in serum to cells expressing T-cadherin, which is consistent with previous findings (Fukuda et al., 2017). Regarding AdipoR1 and calreticulin, three possibilities have been proposed: they were not effectively translated, were not effectively presented on the cell surface, or did not support the binding of native adiponectin in serum to cells.
 
@@ -67,50 +79,354 @@ T-cadherin binds clinically important HMW multimer adiponectin with high affinit
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse adiponectin</td>
+      <td>R and D</td>
+      <td>AF1119</td>
+      <td>goat polyclonal WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human adiponectin</td>
+      <td>R and D</td>
+      <td>AF1065</td>
+      <td>goat polyclonal WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-T-cadherin</td>
+      <td>R and D</td>
+      <td>AF3264</td>
+      <td>goat polyclonal WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-tubulin</td>
+      <td>Cell Signaling</td>
+      <td>11H10</td>
+      <td>rabbit polyclonal WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PA-tag (NZ-1)</td>
+      <td>FUJIFILM</td>
+      <td>012–25863</td>
+      <td>rat monoclonal WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Cell Surface Biotinylation Kit</td>
+      <td>Thermo Fisher (Pierce)</td>
+      <td>89881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Serum</td>
+      <td>CLEA Japan</td>
+      <td>C57BL6J jcl</td>
+      <td>Freshly isolated from C57BL6J mice, male</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Serum</td>
+      <td></td>
+      <td></td>
+      <td>Freshly isolated from healthy volunteers, male</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Full-length mammalian recombinant mouse adiponectin</td>
+      <td>BioVendor</td>
+      <td>RD272023100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>high-molecular weight purified mouse adiponectin</td>
+      <td>Fukuda et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mRplp0_Fw</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>GGCCAATAAGGTGCCAGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mRplp0_Rv</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>TGATCAGCCCGAAGGAGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adipor1_Fw</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>AATGGGGCTCCTTCTGGTAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adipor1_Rv</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>GGATGACTCTCCAACGTCCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adipor2_Fw</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>GGAGTGTTCGTGGGCTTAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adipor2_Rv</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>GCAGCTCCGGTGATATAGAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCdh13_Fw</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>GCCCTCGTGAGCCTTCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCdh13_Rv</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>CACCCTGAGGTCCGTGATGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCalr_Fw</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>AAGATGCCCGATTTTACGCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCalr_Rv</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>CCCACAGTCGATATTCTGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hRPLP0_Fw</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>GGCGACCTGGAAGTCCAACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hRPLP0_Rv</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>CCATCAGCACCACAGCCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hCDH13_F</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>AGTGTTCCATATCAATCAGCCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hCDH13_R</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>CGAGACCTCATAGCGTAGCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hADIPOR1_F</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>TCCTGCCAGTAACAGGGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hADIPOR1_R</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>GGTTGGCGATTACCCGTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hADIPOR2_F</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>CTGGATGGTACACGAAGAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hADIPOR2_R</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>TGGGCTTGTAAGAGAGGGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hCALR_Fw</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>CTCTGTCGGCCAGTTTCGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hCALR_Rv</td>
+      <td>Gene Design</td>
+      <td></td>
+      <td>TGTATTCTGAGTCTCCGTGCAT</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293 cells</td>
+      <td>ATCC</td>
+      <td>CRL-1573 RRID:CVCL_0045</td>
+      <td>DMEM+10%FBS</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO cells</td>
+      <td>ATCC</td>
+      <td>CCL-61 RRID:CVCL_0214</td>
+      <td>Ham's F12+10%FBS</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Plat-E cells</td>
+      <td>Cosmobio</td>
+      <td>RV-101 RRID:CVCL_B488</td>
+      <td>Ecotropic retrovirus packaging DMEM+10%FBS</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>C2C12 cells</td>
+      <td>RIKEN cell bank</td>
+      <td>RCB0987 RRID:CVCL_0188</td>
+      <td>C2C12 sleletal myoblast DMEM+10%FBS</td>
+    </tr>
+    <tr>
+      <td>Recomninant DNA reagent</td>
+      <td>mCdh13</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: plasmids</td>
+    </tr>
+    <tr>
+      <td>Recomninant DNA reagent</td>
+      <td>mCalr</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: plasmids</td>
+    </tr>
+    <tr>
+      <td>Recomninant DNA reagent</td>
+      <td>mAdipor1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: plasmids</td>
+    </tr>
+    <tr>
+      <td>Recomninant DNA reagent</td>
+      <td>hCDH13</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: plasmids</td>
+    </tr>
+    <tr>
+      <td>Recomninant DNA reagent</td>
+      <td>hCALR</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: plasmids</td>
+    </tr>
+    <tr>
+      <td>Recomninant DNA reagent</td>
+      <td>hADIPOR1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: plasmids</td>
+    </tr>
+    <tr>
+      <td>Recomninant DNA reagent</td>
+      <td>mCat1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods: plasmids</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 General PCR techniques were used for the construction of plasmids. All primers were purchased from GeneDesign, Inc. The full-length cDNAs of human and mouse T-cadherin (mCdh13), AdipoR1 (mAdipor1), and calreticulin (mCalr) were cloned into pcDNA mammalian expression plasmid vectors. The PA tag sequence (GVAMPGAEDDVV) was attached to the N termini of mouse T-cadherin and calreticulin and the C terminus of AdipoR1. Mouse mCat1 cDNA was cloned into a pcDNA mammalian expression plasmid vector.
 
-## Cell lines
+### Cell lines
 
 Mammalian cell lines were obtained from the American Type Culture Collection or RIKEN BRC CELL BANK. All cell lines negative for mycoplasma contamination were maintained under conditions indicated in Key resources table.
 
-## Stably expressing CHO cells
+### Stably expressing CHO cells
 
 PA-tagged receptor cDNAs were subcloned into the retrovirus packaging vector pMXs-neo, and the resultant vectors were used to transfect Plat-E cells, thereby generating recombinant retroviruses. CHO cells were transfected with a mouse mCat plasmid, and after 48 hr, the resultant cells were infected with recombinant retroviruses. G418 at 800 μg/mL was used to select stably introduced cells.
 
-## Antibodies
+### Antibodies
 
 The following primary antibodies were used: goat polyclonal anti-mouse adiponectin (AF1119, R and D), goat polyclonal anti-human adiponectin (AF1065, R and D), goat polyclonal anti-T-cadherin (AF3264, R and D), rabbit monoclonal anti-α-tubulin (11H10, Cell Signaling), rat monoclonal anti-PA-tag (human podoplanin PLAG sequence) (012–25863, FUJIFILM), and rabbit monoclonal anti-GPADH (14C10, Cell Signaling Technology).
 
-## Animal
+### Animal
 
 Mouse serum was obtained from male and female C57BL6J jcl mice. Mice were maintained at 22°C under a 12:12 hr light-dark cycle (lights on from 8:00 AM to 8:00 PM). The experimental protocol was approved as No. 28-072-023 by the Ethics Review Committee for Animal Experimentation of Osaka University School of Medicine. This study also conformed to the Guide for the Care and Use of Laboratory Animals published by the US National Institutes of Health.
 
-## Binding study
+### Binding study
 
 Adiponectin binding studies were performed using serum as the source of adiponectin in situ without any processing. Cells were treated with the indicated concentrations of serum in serum-free DMEM at 4°C for 1 hr and then washed with serum-free DMEM three times. NZ-1 binding was performed by incubating cells with 1.0 μg/mL NZ-1 in DMEM containing 0.2%BSA at 4°C for 1 hr and washed with serum-free DMEM three times. Cell lysates were combined with Laemmli sample buffer for SDS-PAGE and heated at 98°C for 5 min or combined with native-page buffer (Suzuki et al., 2007).
 
-## Adiponectin concentration
+### Adiponectin concentration
 
 Adiponectin concentrations in sample preparations were measured by ELISA (Otsuka Pharmaceutical Co.).
 
-## Western blotting
+### Western blotting
 
 Whole cell lysates were loaded onto 4–20% gradient SDS-PAGE gels (Bio-Rad) and transferred to nitrocellulose membranes. Membranes were blocked with PVDF Blocking Reagent for the Can Get signal (TOYOBO), incubated with primary antibodies using Can Get signal solution 1 (TOYOBO) at 4°C overnight, and then incubated with secondary antibodies conjugated with HRP using Can Get signal solution 2 (TOYOBO) at room temperature (RT) for 60 min. Chemiluminescence signals developed with Chemi-Lumi One Super (Nacalai Tesque) were visualized by ChemiDoc Touch and quantitated using Image Lab software (Bio-Rad). A native-PAGE analysis of the multimer composition of adiponectin was performed according to the method described (Suzuki et al., 2007).
 
-## Cell surface protein biotinylation
+### Cell surface protein biotinylation
 
 Cell surface protein biotinylation and subsequent isolation were performed using the Cell Surface Biotinylation Kit (Pierce) according to the instructions provided by the manufacturer.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Cells on coverslips were fixed with periodate-lysine-paraformaldehyde (PLP) for 30 min and incubated with 3% w/v BSA and 0.3% w/v Triton X-100 in Dulbecco’s phosphate-buffered saline without calcium or magnesium (PBS) for 60 min. Cells were then incubated with 10 μg/mL NZ-1 at 4°C overnight and then incubated with an Alexa-Fluor 488 secondary antibody at RT for 60 min. Cell nuclei were counterstained with DAPI. A microscopy analysis was performed using an Olympus FV1000D confocal laser scanning microscope system (Olympus).
 
-## Statistical analysis
+### Statistical analysis
 
 Values were expressed as the mean ± SEM. Differences between variables were compared using the Student’s t-test. The probability (P) values of <0.05 were considered to be significant.
 
-## Data and software availability
+### Data and software availability
 
 All data were deposited in Dryad at https://doi.org/10.5061/dryad.82557c0.

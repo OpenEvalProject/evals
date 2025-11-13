@@ -63,9 +63,7 @@ Thanks for drawing our attention. Since the size of the lymph gland at 18h is re
 
 Following the suggestion of the reviewer, we have done a quantitative analysis of the cell size of Notch expressing cells over time and found that their size remains more or less unaltered.
 
-As evident from the graph shown in Author response image 1, we did not observe any significant change in the size of Notch expressing cells at 13h (p=0.842025521, n=14) or 18h (p=0.35903873, n=14) AEH with respect to those at 8h.10.7554/eLife.18295.025Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.18295.025
-
-DOI: http://dx.doi.org/10.7554/eLife.18295.025
+As evident from the graph shown in Author response image 1, we did not observe any significant change in the size of Notch expressing cells at 13h (p=0.842025521, n=14) or 18h (p=0.35903873, n=14) AEH with respect to those at 8h.10.7554/eLife.18295.025Author response image 1.
 
 5) Dome-meso-lacZ positive cells in Figure 1B" also have different level of lacZ, any explanation for that?
 

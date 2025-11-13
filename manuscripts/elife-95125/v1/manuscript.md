@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01aj84f44 Center of Functionally Integrative Neuroscience, Department of Clinical Medicine, Aarhus University Aarhus Denmark
-2. https://ror.org/052gg0110 Oxford Centre for Human Brain Activity, Department of Psychiatry, University of Oxford Oxford United Kingdom
-3. https://ror.org/052gg0110 Department of Psychiatry, University of Oxford Oxford United Kingdom
+1. Center of Functionally Integrative Neuroscience, Department of Clinical Medicine, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+2. Oxford Centre for Human Brain Activity, Department of Psychiatry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Department of Psychiatry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -40,9 +40,23 @@ Next, we used this (HMM-mediated) description of the individuals’ brain dynami
 
 Finally, we used these kernels to predict the behavioural variables using kernel ridge regression (Figure 1, step 5, described in detail in section ‘Predictive model: Kernel ridge regression’). The first three steps are identical for all kernels and therefore carried out only once. The fourth step (mapping the examples and constructing the kernels) is carried out once for each of the different kernels. The last step is repeated 3500 times for each kernel to predict a set of 35 different behavioural variables using 100 randomised iterations of 10-fold nested cross validation (CV). We evaluated 24,500 predictive models using different kernels constructed from the same model of brain dynamics in terms of their ability to predict phenotypes, as well as another 24,500 predictive models based on time-averaged features, described in detail in section ‘Models based on time-averaged FC features’.
 
-## The Fisher kernel predicts more accurately than Euclidean methods
+### The Fisher kernel predicts more accurately than Euclidean methods
 
 Using the resting-state fMRI timeseries from the HCP dataset, we found that among the kernels constructed from HMMs, the linear Fisher kernel had the highest prediction accuracy on average across the range of behavioural variables and CV folds and iterations, as shown in Figure 2a. Compared to the other linear kernels (which do not respect the geometry of the HMM parameters), the linear Fisher kernel (mean r κFl: 0.192) was significantly more accurate than the linear naïve kernel (mean r κNl: 0.05, trkCV=2.631, pBH=0.031). The comparison with the linear naïve normalised kernel was not significant (mean r κNNl: 0.153, trkCV=1.022, pBH=0.192). This indicates a positive effect of using a tangent space embedding rather than incorrectly treating the HMM parameters as Euclidean, but that this effect can be mitigated by normalising the parameters before constructing the kernel.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/95125/elife-95125-fig2-v1.jpg)
+
+**Figure 2.:** The best-performing methods are highlighted by black arrows in each plot. (a) Pearson’s correlation coefficients (r) between predicted and actual variable values in deconfounded space as a measure of prediction accuracy (x-axis) of each method (y-axis). Larger values indicate that the model predicts more accurately. The linear Fisher kernel has the highest average accuracy among the time-varying methods, while the Ridge regression model in Riemannian space had the highest average accuracy among the time-averaged methods. Note that we here show the distribution across target variables and CV iterations but averaged over folds for visualisation purposes, while the fold-wise accuracies were used for significance testing. Asterisks indicate significant Benjamini-Hochberg corrected p-values of repeated k-fold cross-validation corrected t-tests below 0.05 (*). (b) Coefficient of determination (R2) in deconfounded space (x-axis) for each of the methods (y-axis). The x-axis is cropped at –0.1 for visualisation purposes since individual runs can produce large negative outliers, see panel c. (c) Normalised maximum absolute errors (NMAXAE) in original (non-deconfounded) space as a measure of excessive errors (x-axis) by method (y-axis). Large maximum errors indicate that the model predicts very poorly in single cases. Differences between the methods mainly lie in the tails of the distributions, where the naïve normalised Gaussian kernel produces extreme maximum errors in some runs (NMAXAE >10,000), while the linear naïve normalised kernel and the linear Fisher kernel, along with several time-averaged methods have the smallest risk of excessive errors (NMAXAE below 1). The x-axis is plotted on the log-scale. (d) Robustness of prediction accuracies. The plot shows the distribution across variables of the standard deviation of correlation coefficients over folds and CV iterations on the x-axis for each method (on the y-axis). Smaller values indicate greater robustness. The linear Fisher kernel and the time-averaged Ridge regression model in Riemannian space are the most robust. Asterisks indicate significant Benjamini-Hochberg corrected p-values for repeated measures t-tests below 0.01 (**) and 0.001 (***). (a, b, c) Each violin plot shows the distribution over 3500 runs (100 iterations of 10-fold CV for all 35 variables) that were predicted from each method. (d) Each violin plot shows the distribution over 35 variables that were predicted from each method.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95125/elife-95125-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a, b) Distribution and robustness of average errors. (c, d) While a larger correlation coefficient indicates a stronger relationship between the predictor and the predicted variable (c), a smaller average error (d) can be achieved by predicting closely around the mean. This is the case for the Elastic Net models and the Selected Edges model.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95125/elife-95125-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/95125/elife-95125-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/95125/elife-95125-fig2-figsupp4-v1.jpg)
 
 Among the Gaussian kernels, the Gaussian Fisher kernel also had the highest average prediction accuracy (mean r κFg: 0.166), though the comparisons with the other kernels were not significant (mean r κNg: 0.107, trkCV=1.277, pBH=0.173; mean r κNNg: 0.094, trkCV=1.466, pBH=0.145; mean r κKL: 0.163, trkCV=0.069, pBH=0.482). Comparing prediction accuracies of the linear with the Gaussian Fisher kernel was not significant (trkCV=0.993, pBH=0.192).
 
@@ -58,13 +72,13 @@ As shown in Figure 3, there are differences in how well these demographic or beh
 
 In summary, the linear Fisher kernel has the highest prediction accuracy of the time-varying methods, significantly outperforming the linear naïve kernel which does not take the geometry of the HMM parameters into account. The linear Fisher kernel also has a higher prediction accuracy than several methods using time-averaged FC features, but it is outperformed by time-averaged methods that work in tangent space.
 
-## The linear Fisher kernel has a lower risk of excessive errors and is more robust than other methods
+### The linear Fisher kernel has a lower risk of excessive errors and is more robust than other methods
 
 We now show empirically that the linear Fisher kernel is more reliable than other kernels, both in terms of risk of large errors and in terms of robustness over CV iterations.
 
 The linear versions of the Fisher kernel and the naïve normalised kernel had the overall lowest risk of large errors among the time-varying methods, as shown in Figure 2c. We assessed the risk of large errors (NMAXAE >10), very large errors (NMAXAE >100), and extreme errors (NMAXAE >1,000), corresponding to one, two, and three orders of magnitude of the range of the actual variable. For the Fisher kernel, the risk of large errors is low: 0% in the linear version κFl and 0.029% in the Gaussian version κFg. That means that the linear Fisher kernel never makes large errors exceeding the range of the actual variable by orders of magnitude. In the naïve kernel, both the linear κNl and the Gaussian version κNg have a low risk of large errors at 0.057% for the linear version and 0.029% for the Gaussian version. While the linear naïve normalised kernel κNNl has a 0% risk of large errors, its Gaussian version κNNg has the overall highest risk of large errors at 1.229%, a risk of very large errors at 0.143%, and even a risk of extreme errors at 0.029%. The KL divergence model κKL has a 0.686% risk of large errors and a 0.029% risk of very large errors. The time-averaged KL divergence model performs slightly better than the time-varying KL divergence, but also has a risk of large errors at 0.600%. The other time-averaged models had no risk of excessive errors. The maximum error distributions are shown in Figure 2c.
 
-A reason for the higher risk of large errors in the Gaussian kernels is likely that the radius τ of the radial basis function needs to be selected (using cross-validation), introducing an additional factor of variability and leaving more room for error. Figure 2—figure supplement 4 shows the relation between the estimated hyperparameters (the regularisation parameter λ and the radius τ of the radial basis function) and how large errors in the predictions may be related to poor estimation of these parameters.
+A reason for the higher risk of large errors in the Gaussian kernels is likely that the radius $\tau$ of the radial basis function needs to be selected (using cross-validation), introducing an additional factor of variability and leaving more room for error. Figure 2—figure supplement 4 shows the relation between the estimated hyperparameters (the regularisation parameter $\lambda$ and the radius $\tau$ of the radial basis function) and how large errors in the predictions may be related to poor estimation of these parameters.
 
 With respect to robustness, we found that the linear Fisher kernel κFl had the most robust performance among the time-varying methods, and the Ridge regression model in Riemannian space among the time-averaged methods, on average across the range of variables tested, as shown in Figure 2d. Robustness was quantified as the standard deviation of the correlation between model-predicted and actual values over 100 iterations and 10 folds of CV. A low standard deviation indicates high robustness since the method’s performance does not differ greatly depending on the specific subjects it was trained and tested on.
 
@@ -72,7 +86,7 @@ Among the time-varying methods, the linear Fisher kernel was the most robust met
 
 Overall, the linear Fisher kernel was the most reliable method among the time-varying methods, and the Ridge regression model in Riemannian space was the most reliable among the time-averaged methods. For both methods, there was no risk of large errors and the variability over CV iterations was the smallest. The Gaussian kernels had higher risks of large errors, and both the time-varying and the time-averaged KL divergence model risked producing large errors, indicating that their performance was less reliable. The Gaussian naïve normalised kernel was the most problematic in terms of reliability with a risk of extreme errors ranging up to four orders of magnitude of the actual variable’s range. Two of the time-averaged methods, the time-averaged KL divergence model and the Selected Edges method, showed problems with robustness, indicating considerable susceptibility to changes in CV folds.
 
-## State features drive predictions of individual differences for Fisher kernel
+### State features drive predictions of individual differences for Fisher kernel
 
 To understand which features drive the prediction, we next simulated timeseries of two groups of subjects that were different either in the mean amplitude of one state or in the transition probabilities. As shown in Figure 4a, when we simulated two groups of subjects that are different in terms of the mean amplitude, the Fisher kernel was able to recover this difference in all runs with 0% error, meaning that it identified all subjects correctly in all runs. The Fisher kernel significantly outperformed the other two kernels (Fisher kernel κFl vs. naïve kernel κNl: p=0.0003, vs. naïve normalised kernel κNNl: p=0.0001). There was no significant difference between the naïve and the naïve normalised kernel (p=1). However, when we simulated differences in transition probabilities between two groups, neither of the kernels were able to reliably recover this difference. In this simulation, the Fisher kernel performed significantly worse than the other two kernels on average (compared to naïve kernel: p=0.006, compared to naïve normalised kernel: p=0.004), as shown in Figure 4b. As in the previous simulation, the naïve kernel and the naïve normalised kernel did not significantly differ from each other (p=1).
 
@@ -94,7 +108,7 @@ When looking at the performance separately for each variable (Figure 5b), we fou
 
 Empirically, we thus found that the Fisher kernel is most sensitive to individual differences in state parameters, both in simulated timeseries and in the real data. This means that predictions are driven more by what an individual’s states look like, rather than by how they transition between states. However, the Fisher kernel can be modified to recover differences in transition probabilities if these are relevant for specific traits.
 
-## Separation between training and test set in HMM training
+### Separation between training and test set in HMM training
 
 In the results above, we have constructed kernels from HMMs fit to all subjects in the dataset and only separated them into training and test set at the regression (and deconfounding) step. In machine learning, the gold standard is considered to be a full separation between training and test set at all stages of (pre-)processing to avoid data leakage from the test set into the training set (Kapoor and Narayanan, 2023; Poldrack et al., 2020). However, a recent study in neuroimaging has found minimal effects of data leakage for breaches of separation between training and test set not involving the target variable or feature selection (Rosenblatt et al., 2024). To test whether training the HMM on all subjects may have inflated prediction accuracies, we repeated the HMM-based predictions for kernels that were constructed from HMMs trained only on training subjects. Consistent with the results in Vidaurre et al., 2021, for all kernels, both linear and Gaussian versions, the separation of training and test subjects before vs. after fitting the HMM had no significant effects on prediction accuracies (training together vs. separate: linear Fisher kernel: tkCV = 0, pBH = 1; Gaussian Fisher kernel: tkCV = 0, pBH = 1; linear naïve kernel: tkCV = −0.139, pBH = 1; Gaussian naïve kernel: tkCV = −0.018, pBH = 1; linear naïve normalised kernel: tkCV = −0.030, pBH = 1; Gaussian naïve normalised kernel: tkCV = 0.040, pBH = 1). Figure 6a shows the distribution of accuracies across target variables and CV folds for all kernels and training schemes, confirming that at this sample size (N=1001), the effect is negligible.
 
@@ -122,7 +136,7 @@ In a clinical context, while there are nowadays highly accurate biomarkers and p
 
 ## Methods
 
-## HCP imaging and behavioural data
+### HCP imaging and behavioural data
 
 We used data from the open-access Human Connectome Project (HCP) S1200 release (Smith et al., 2013a; Van Essen et al., 2013), which contains MR imaging data and various demographic and behavioural data from 1200 healthy, young adults (age 22–35). All data described below, that is timecourses of the resting-state fMRI data and demographic and behavioural variables, are publicly available at https://db.humanconnectome.org.
 
@@ -132,166 +146,352 @@ The parcellation was estimated from the data using multi-session spatial ICA on 
 
 Subjects in the HCP study completed a range of demographic and behavioural questionnaires. Following Vidaurre et al., 2021, we here focus on a subset of those items, including age and various cognitive variables. The cognitive variables span items assessing memory, executive function, fluid intelligence, language, processing speed, spatial orientation, and attention. The full list of the 35 behavioural variables used here, as well as their categorisation within the HCP dataset can be found in Supplementary file 1a.
 
-## The Hidden Markov model
+### The Hidden Markov model
 
 To estimate patterns of time-varying amplitude and FC, we here use the Hidden Markov Model (Vidaurre et al., 2016; Vidaurre et al., 2017). However, the kernels, which are explained in detail in the following section, can be constructed from any generative probabilistic model.
 
 The Hidden Markov model (HMM) is a generative probabilistic model, which assumes that an observed time-series, such as BOLD signal in a given parcellation, was generated by a sequence of ‘hidden states’ (Baum and Eagon, 1967; Baum and Petrie, 1966). We here model the states as multivariate Gaussian distributions, defined both in terms of mean and covariance —which can be interpreted as distinct patterns of amplitude and FC (Vidaurre et al., 2017). For comparison, we also considered a second variety of the HMM where state means were pinned to zero (given that the data was demeaned and the global average is zero) and only the covariance was allowed to vary across states (Vidaurre et al., 2017), which is shown in Figure 2—figure supplement 3. This is equivalent to using a Wishart state model, and therefore focuses more specifically on time-varying FC.
 
-The HMM is described by a set of parameters θ, containing the state probabilities π, the transition probabilities A, the mean vectors μ of all states (if modelled), and the covariance matrices Σ of all states:θ=[π,A,μ,Σ]π∈R1xK, A∈RKxK, μ∈RKxM,Σ∈RKxMxM
+The HMM is described by a set of parameters $\theta$, containing the state probabilities $\pi$, the transition probabilities $A$, the mean vectors μ of all states (if modelled), and the covariance matrices $Σ$ of all states:
 
-where K is the number of states and M is the number of parcels in the parcellation. The entire set of parameters θ is estimated from the data. The number of states can be understood as the level of detail or granularity with which we describe the spatiotemporal patterns in the data, akin to a dimensionality reduction, where a small number of states will lead to a very general, coarse description and a large number of states will lead to a very detailed, fine-grained description. Here, we chose a small number of states, K=6, to ensure that the group-level HMM states are general enough to be found in all subjects, since a larger number of states increases the chances of certain states being present only in a subset of subjects. The exact number of states is less relevant in this context, since the same HMM estimation is used for all kernels.
+$$
+\theta=[\pi,A,\mu,Σ]\pi\inR^{1xK}, A\inR^{KxK}, \mu\inR^{KxM},Σ\inR^{KxMxM}
+$$
 
-The HMM is a probabilistic generative model, as the generative process works by sampling probabilistically in this case from a Gaussian distribution with mean μk and covariance Σk when state k is active:Xt|qt=k∼N(μk,Σk)
+where $K$ is the number of states and $M$ is the number of parcels in the parcellation. The entire set of parameters $\theta$ is estimated from the data. The number of states can be understood as the level of detail or granularity with which we describe the spatiotemporal patterns in the data, akin to a dimensionality reduction, where a small number of states will lead to a very general, coarse description and a large number of states will lead to a very detailed, fine-grained description. Here, we chose a small number of states, $K=6$, to ensure that the group-level HMM states are general enough to be found in all subjects, since a larger number of states increases the chances of certain states being present only in a subset of subjects. The exact number of states is less relevant in this context, since the same HMM estimation is used for all kernels.
 
-where Xt is the timeseries at timepoint t and qt is the currently active state. Which state is active depends on the previous state qt-1 and is determined by the transition probabilities A, so that the generated state sequence is sampled from a categorical distribution with parameters:qt|qt-1=k~Cat(Ak)
+The HMM is a probabilistic generative model, as the generative process works by sampling probabilistically in this case from a Gaussian distribution with mean μk and covariance Σk when state $k$ is active:
+
+$$
+X_{t}|q_{t}=k∼N(\mu_{k},Σ_{k})
+$$
+
+where Xt is the timeseries at timepoint $t$ and qt is the currently active state. Which state is active depends on the previous state qt-1 and is determined by the transition probabilities $A$, so that the generated state sequence is sampled from a categorical distribution with parameters:
+
+$$
+q_{t}|q_{t-1}=k~Cat(A_{k})
+$$
 
 where Ak indicates the k-th row of the transition probability matrix.
 
-The space of parameters θ forms a Riemannian manifold Rθ, where the relationships between the different parameters of the HMM are acknowledged by construction. The Fisher kernel, as described below, is built upon a projection on this manifold, so predictions based on this kernel account for the mathematical structure of the HMM.
+The space of parameters $\theta$ forms a Riemannian manifold Rθ, where the relationships between the different parameters of the HMM are acknowledged by construction. The Fisher kernel, as described below, is built upon a projection on this manifold, so predictions based on this kernel account for the mathematical structure of the HMM.
 
-Here, we fit the HMM to the concatenated timeseries of all N subjects (see Figure 1, step 1). We refer to the group-level estimate as HMM0, which is defined by the parameters θ0 (see Figure 1, step 2):θ0=[π0,A0,μ0,Σ0]
+Here, we fit the HMM to the concatenated timeseries of all $N$ subjects (see Figure 1, step 1). We refer to the group-level estimate as HMM0, which is defined by the parameters $\theta^{0}$ (see Figure 1, step 2):
 
-To use the information from the HMM to predict subjects’ phenotypes, we estimate subject-specific versions of the group-level HMM (see Figure 1, step 3) through dual estimation (Vidaurre et al., 2017). Dual estimation refers to the process of fitting the previously estimated group-level model again to a single subject’s timeseries, so that the parameters from the group-level model HMM0 are adapted to fit the individual. We will refer to the subject-specific estimate for subject n as HMMn, with parameters θn.
+$$
+\theta^{0}=[\pi^{0},A^{0},\mu^{0},Σ^{0}]
+$$
 
-These subject-specific HMM parameters are the features from which we construct the kernels. To understand which features are most important for the predictions, we also construct versions of the kernels that include only subsets of the features. Specifically, we can group the features into two subsets: 1. the state features, describing what states look like, containing the mean vectors μ, and the covariance matrices Σ of all states, and 2. the transition features, describing how individuals transition between these states, containing the initial state probabilities π and the transition probabilities A. By removing one or the other set of features and evaluating how model performance changes compared to the full kernels, we can draw conclusions about the importance of these two different types of changes for the predictions. Since the state features are considerably more numerous than the transition features (15,300 state features compared to 42 transition features in this case), we also construct a version of the kernels where state features have been reduced to the same number as the transition features using PCA, that is we use all 42 transition features and the first 42 PCs of the state features. This allowed us to perform a fairer comparison of what elements in the model are more predictive of the subject traits.
+To use the information from the HMM to predict subjects’ phenotypes, we estimate subject-specific versions of the group-level HMM (see Figure 1, step 3) through dual estimation (Vidaurre et al., 2017). Dual estimation refers to the process of fitting the previously estimated group-level model again to a single subject’s timeseries, so that the parameters from the group-level model HMM0 are adapted to fit the individual. We will refer to the subject-specific estimate for subject n as HMMn, with parameters $\theta^{n}$.
 
-## Kernels from Hidden Markov models
+These subject-specific HMM parameters are the features from which we construct the kernels. To understand which features are most important for the predictions, we also construct versions of the kernels that include only subsets of the features. Specifically, we can group the features into two subsets: 1. the state features, describing what states look like, containing the mean vectors μ, and the covariance matrices $Σ$ of all states, and 2. the transition features, describing how individuals transition between these states, containing the initial state probabilities $\pi$ and the transition probabilities $A$. By removing one or the other set of features and evaluating how model performance changes compared to the full kernels, we can draw conclusions about the importance of these two different types of changes for the predictions. Since the state features are considerably more numerous than the transition features (15,300 state features compared to 42 transition features in this case), we also construct a version of the kernels where state features have been reduced to the same number as the transition features using PCA, that is we use all 42 transition features and the first 42 PCs of the state features. This allowed us to perform a fairer comparison of what elements in the model are more predictive of the subject traits.
 
-Kernels (Shawe-Taylor and Cristianini, 2004) are a convenient approach to accommodate nonlinearity and to work with high-dimensional, complex features, such as parameters from a model of brain dynamics. In general, kernels are similarity functions, and they can be used straightforwardly in a prediction algorithm. While feature matrices can be very high dimensional, a kernel is represented by a (no. of subjects by no. of subjects) matrix. Kernel methods can readily be adapted to deal with nonlinear decision boundaries in prediction, by projecting the data into a high-dimensional (possibly infinite-dimensional) space through an embedding x→ϕx; then, by estimating a linear separating hyperplane on this space, we can effectively have a nonlinear estimator on the original space (Shawe-Taylor and Cristianini, 2004). In practice, instead of working explicitly in a higher-dimensional embedding space, the so-called kernel trick uses a kernel function κ(n,m) containing the similarity between data points n and m (here, subjects) in the higher-dimensional embedding space (Schölkopf et al., 2002; Shawe-Taylor and Cristianini, 2004), which can be simpler to calculate. Once κ(⋅,⋅) is computed for each pair of subjects, this is all that is needed for the prediction. This makes kernels computationally very efficient, since in most cases the number of subjects will be smaller than the number of features —which, in the case of HMMs, can be very large (potentially, in the order of millions). However, finding the right kernel can be a challenge because there are many available alternatives for the embedding.
+### Kernels from Hidden Markov models
+
+Kernels (Shawe-Taylor and Cristianini, 2004) are a convenient approach to accommodate nonlinearity and to work with high-dimensional, complex features, such as parameters from a model of brain dynamics. In general, kernels are similarity functions, and they can be used straightforwardly in a prediction algorithm. While feature matrices can be very high dimensional, a kernel is represented by a (no. of subjects by no. of subjects) matrix. Kernel methods can readily be adapted to deal with nonlinear decision boundaries in prediction, by projecting the data into a high-dimensional (possibly infinite-dimensional) space through an embedding $x→ϕ_{x}$; then, by estimating a linear separating hyperplane on this space, we can effectively have a nonlinear estimator on the original space (Shawe-Taylor and Cristianini, 2004). In practice, instead of working explicitly in a higher-dimensional embedding space, the so-called kernel trick uses a kernel function $κ(n,m)$ containing the similarity between data points $n$ and $m$ (here, subjects) in the higher-dimensional embedding space (Schölkopf et al., 2002; Shawe-Taylor and Cristianini, 2004), which can be simpler to calculate. Once $κ(⋅,⋅)$ is computed for each pair of subjects, this is all that is needed for the prediction. This makes kernels computationally very efficient, since in most cases the number of subjects will be smaller than the number of features —which, in the case of HMMs, can be very large (potentially, in the order of millions). However, finding the right kernel can be a challenge because there are many available alternatives for the embedding.
 
 Here, in combination with a linear predictive model, we apply a kernel that is specifically conceived to be used to compare instances of generative models such as the HMM. We expected this to result in better predictions than existing methods. Using the same HMM estimate, we compare three different kernels, which map the HMM parameters into three distinct spaces, corresponding to different embeddings (see Figure 1, step 4): the naïve kernel, the naïve normalised kernel, and the Fisher kernel.
 
 While the first two kernels (naïve and naïve normalised kernel) do not take into account constraints imposed by the HMM on how the model parameters can change with respect to each other, the Fisher kernel does. The Fisher kernel achieves this by calculating how, and by how much, one should change the group level HMM parameters to make the model generate data that is more like the data from a particular subject.
 
-We then construct linear and Gaussian versions of the different kernels (see Figure 1, step 4), which take the general form κl(n,m)=ϕxnTϕxm for the linear kernel and κg(n,m)=exp(−‖ϕxn−ϕxm‖22τ2) for the Gaussian kernel. We compare these to a kernel constructed using Kullback-Leibler divergence, previously used for predicting behavioural phenotypes (Vidaurre et al., 2021).
+We then construct linear and Gaussian versions of the different kernels (see Figure 1, step 4), which take the general form $κ_{l}(n,m)=ϕ_{x^{n}}^{T}ϕ_{x^{m}}$ for the linear kernel and $κ_{g}(n,m)=exp(−\frac{‖ϕ_{x^{n}}−ϕ_{x^{m}}‖^{2}}{2\tau^{2}})$ for the Gaussian kernel. We compare these to a kernel constructed using Kullback-Leibler divergence, previously used for predicting behavioural phenotypes (Vidaurre et al., 2021).
 
-## Naïve kernel
+#### Naïve kernel
 
-The naïve kernel is based on a simple vectorisation of the subject-specific version of the HMM’s parameters, each on their own scale. This means that the kernel does not take relationships between the parameters into account and the parameters are here on different scales. This procedure can be thought of as computing Euclidean distances between two sets of HMM parameters, ignoring the actual geometry of the space of parameters. For each subject n, we vectorise parameters θn obtained through dual estimation of the group-level parameters θ0 to map the example xn→ϕxn to:θn=(πn,An,μn,Σn)θn∈R1x(K+K∗K+K∗M+K∗M∗M)
+The naïve kernel is based on a simple vectorisation of the subject-specific version of the HMM’s parameters, each on their own scale. This means that the kernel does not take relationships between the parameters into account and the parameters are here on different scales. This procedure can be thought of as computing Euclidean distances between two sets of HMM parameters, ignoring the actual geometry of the space of parameters. For each subject $n$, we vectorise parameters $\theta^{n}$ obtained through dual estimation of the group-level parameters $\theta^{0}$ to map the example $x^{n}→ϕ_{x^{n}}$ to:
 
-We will refer to this vectorised version of the subject-specific HMM parameters as “naïve θ”. The naïve θ are the features used in the naïve kernel κN. We first construct a linear kernel from the naïve θ features using the inner product of the feature vectors. The linear naïve kernel κNl between subjects n and m is thus defined as:κNl(n,m)=⟨θn,θm⟩κNl∈RNxN
+$$
+\theta^{n}=(\pi^{n},A^{n},\mu^{n},Σ^{n})\theta^{n}\inR^{1x(K+K∗K+K∗M+K∗M∗M)}
+$$
 
-where ⟨θn,θm⟩ denotes the inner product between θn and θm. Using the same feature vectors, we can also construct a Gaussian kernel from the naïve θ. The Gaussian naïve kernel κNg for subjects n and m is defined as:κNg(n,m)=exp⁡(−‖θn−θm‖22τ2)κNg∈RNxN
+We will refer to this vectorised version of the subject-specific HMM parameters as “naïve $\theta$”. The naïve $\theta$ are the features used in the naïve kernel $κ_{N}$. We first construct a linear kernel from the naïve $\theta$ features using the inner product of the feature vectors. The linear naïve kernel $κ_{Nl}$ between subjects $n$ and $m$ is thus defined as:
 
-where τ is the radius of the radial basis function, and ‖θn−θm‖ is the L2-norm of the difference of the feature vectors (naïve θ for subjects n and m). Compared to a linear kernel, a Gaussian kernel embeds the features into a more complex space, which can potentially improve the accuracy. However, this kernel has an additional parameter τ that needs to be chosen, typically through cross-validation. This makes a Gaussian kernel computationally more expensive and, if the additional parameter τ is poorly estimated, more error-prone. The effect of the hyperparameters on errors is shown in Figure 2—figure supplement 4.
+$$
+κ_{Nl}(n,m)=⟨\theta^{n},\theta^{m}⟩κ_{Nl}\inR^{NxN}
+$$
+
+where $⟨\theta^{n},\theta^{m}⟩$ denotes the inner product between $\theta^{n}$ and $\theta^{m}$. Using the same feature vectors, we can also construct a Gaussian kernel from the naïve $\theta$. The Gaussian naïve kernel $κ_{Ng}$ for subjects $n$ and $m$ is defined as:
+
+$$
+κ_{Ng}(n,m)=exp⁡(−\frac{‖\theta^{n}−\theta^{m}‖^{2}}{2\tau^{2}})κ_{Ng}\inR^{NxN}
+$$
+
+where $\tau$ is the radius of the radial basis function, and $‖\theta^{n}−\theta^{m}‖$ is the L2-norm of the difference of the feature vectors (naïve $\theta$ for subjects $n$ and $m$). Compared to a linear kernel, a Gaussian kernel embeds the features into a more complex space, which can potentially improve the accuracy. However, this kernel has an additional parameter $\tau$ that needs to be chosen, typically through cross-validation. This makes a Gaussian kernel computationally more expensive and, if the additional parameter $\tau$ is poorly estimated, more error-prone. The effect of the hyperparameters on errors is shown in Figure 2—figure supplement 4.
 
 While the naïve kernel takes all the information from the HMM into account by using all parameters from a subject-specific version of the model, it uses these parameters in a way that ignores the structure of the model that these parameters come from. In this way, the different parameters in the feature vector are difficult to compare, since for example a change of 0.1 in the transition probabilities between two states is not of the same magnitude as a change of 0.1 in one entry of the covariance matrix of a specific state. In the naïve kernel, these two very different types of changes would be treated indistinctly.
 
-## Naïve normalised kernel
+#### Naïve normalised kernel
 
-To address the problem of parameters being on different scales, the naïve normalised kernel makes the scale of the subject-specific vectorised parameters (i.e. the naïve θ) comparable across parameters. Here, the mapping x→ϕx consists of a vectorisation and normalisation across subjects of the subject-specific HMM parameters, by subtracting the mean over subjects from each parameter and dividing by the standard deviation. This kernel does not respect the geometry of the space of parameters either.
+To address the problem of parameters being on different scales, the naïve normalised kernel makes the scale of the subject-specific vectorised parameters (i.e. the naïve $\theta$) comparable across parameters. Here, the mapping $x→ϕ_{x}$ consists of a vectorisation and normalisation across subjects of the subject-specific HMM parameters, by subtracting the mean over subjects from each parameter and dividing by the standard deviation. This kernel does not respect the geometry of the space of parameters either.
 
-As for the naïve kernel, we can then construct a linear kernel from these vectorised, normalised parameters θ~ by computing the inner product for all pairs of subjects n and m to obtain the linear naïve normalised kernel κNNl:κNNl(n,m)=⟨θ~n,θ~m⟩κNNl∈RNxN
+As for the naïve kernel, we can then construct a linear kernel from these vectorised, normalised parameters $\theta~$ by computing the inner product for all pairs of subjects $n$ and $m$ to obtain the linear naïve normalised kernel $κ_{NNl}$:
 
-We can also compute a Gaussian kernel from the naïve normalised feature vectors to obtain the Gaussian version of the naïve normalised kernel κNNg:κNNg(n,m)=exp⁡(−‖θ~n−θ~m‖22τ2)κNNg∈RNxN
+$$
+κ_{NNl}(n,m)=⟨\theta~^{n},\theta~^{m}⟩κ_{NNl}\inR^{NxN}
+$$
+
+We can also compute a Gaussian kernel from the naïve normalised feature vectors to obtain the Gaussian version of the naïve normalised kernel $κ_{NNg}$:
+
+$$
+κ_{NNg}(n,m)=exp⁡(−\frac{‖\theta~^{n}−\theta~^{m}‖^{2}}{2\tau^{2}})κ_{NNg}\inR^{NxN}
+$$
 
 In this way, we have constructed a kernel in which parameters are all on the same scale, but which still ignores the complex relationships between parameters originally encoded by the underlying model of brain dynamics.
 
-## Fisher kernel
+### Fisher kernel
 
-The Fisher kernel (Jaakkola et al., 1999; Jaakkola and Haussler, 1998) is specifically designed to preserve the structure of a generative probabilistic model (here, the HMM). This can be thought of as a ‘proper’ projection on the manifold, as illustrated in Figure 1, step 4b. Similarity between subjects is here defined in reference to a group-level model of brain dynamics. The mapping x→ϕx is given by the ‘Fisher score’, which indicates how (i.e., in which direction in the Riemannian parameter space) we would have to change the group-level model to better explain a particular subject’s timeseries. The similarity between subjects can then be described based on this score, so that two subjects are defined as similar if the group-level model would have to be changed in a similar direction for both, and dissimilar otherwise.
+The Fisher kernel (Jaakkola et al., 1999; Jaakkola and Haussler, 1998) is specifically designed to preserve the structure of a generative probabilistic model (here, the HMM). This can be thought of as a ‘proper’ projection on the manifold, as illustrated in Figure 1, step 4b. Similarity between subjects is here defined in reference to a group-level model of brain dynamics. The mapping $x→ϕ_{x}$ is given by the ‘Fisher score’, which indicates how (i.e., in which direction in the Riemannian parameter space) we would have to change the group-level model to better explain a particular subject’s timeseries. The similarity between subjects can then be described based on this score, so that two subjects are defined as similar if the group-level model would have to be changed in a similar direction for both, and dissimilar otherwise.
 
-More precisely, the Fisher score is given by the gradient of the log-likelihood with respect to each model parameter:g(θ0,xn)=(∂logLθ0(xn)∂θ0)g∈R1x(K+K∗K+K∗M+K∗M∗M)
+More precisely, the Fisher score is given by the gradient of the log-likelihood with respect to each model parameter:
 
-where xn is the timeseries of subject n, and Lθ(x)=P(x|θ) represents the likelihood of the timeseries x given the model parameters θ. This way, the Fisher score maps an example (i.e. a subject’s timeseries) xn into a point in the gradient space of the Riemannian manifold Rθ defined by the HMM parameters.
+$$
+g(\theta^{0},x^{n})=(\frac{∂logL_{\theta^{0}}(x^{n})}{∂\theta^{0}})g\inR^{1x(K+K∗K+K∗M+K∗M∗M)}
+$$
 
-The invariant Fisher kernel κF- is the inner product of the Fisher score g, scaled by the Fisher information matrix F, which gives a local metric on the Riemannian manifold Rθ:κF−(n,m)=g(θ0,xn)TFRθ−1g(θ0,xm)κF−∈RNxN
+where $x^{n}$ is the timeseries of subject $n$, and $L_{\theta}(x)=P(x|\theta)$ represents the likelihood of the timeseries $x$ given the model parameters $\theta$. This way, the Fisher score maps an example (i.e. a subject’s timeseries) $x^{n}$ into a point in the gradient space of the Riemannian manifold $R_{\theta}$ defined by the HMM parameters.
 
-for subjects n and m. FRθ is the Fisher information matrix, defined asFRθ=Ex[g(θ0,x)g(θ0,x)T]
+The invariant Fisher kernel $κ_{F-}$ is the inner product of the Fisher score $g$, scaled by the Fisher information matrix $F$, which gives a local metric on the Riemannian manifold $R_{\theta}$:
 
-where the expectation is with respect to x under the distribution P(x|θ). The Fisher information matrix FRθ can be approximated empirically:F^Rθ=1N∑i=1Ng(θ0,xi)g(θ0,xi)T
+$$
+κ_{F}−(n,m)=g(\theta^{0},x^{n})^{T}F_{R_{\theta}}^{−1}g(\theta^{0},x^{m})κ_{F−}\inR^{NxN}
+$$
 
-which is simply the covariance matrix of the gradients g. Using F^Rθ essentially serves to whiten the gradients; therefore, given the large computational cost associated with F^Rθ, we here disregard the Fisher information matrix and reduce the invariant Fisher kernel to the so-called practical Fisher kernel (Jaakkola et al., 1999; Jaakkola and Haussler, 1998; van der Maaten, 2011), for which the linear version κFl takes the form:κFl(n,m)=⟨g(θ0,xn),g(θ0,xm)⟩κFl∈RNxN
+for subjects $n$ and $m$. $F_{R_{\theta}}$ is the Fisher information matrix, defined as
+
+$$
+F_{R_{\theta}}=E_{x}[g(\theta^{0},x)g(\theta^{0},x)^{T}]
+$$
+
+where the expectation is with respect to $x$ under the distribution $P(x|\theta)$. The Fisher information matrix $F_{R_{\theta}}$ can be approximated empirically:
+
+$$
+F^_{R_{\theta}}=\frac{1}{N}\sumi=1Ng(\theta^{0},x^{i})g(\theta^{0},x^{i})^{T}
+$$
+
+which is simply the covariance matrix of the gradients $g$. Using $F^_{R_{\theta}}$ essentially serves to whiten the gradients; therefore, given the large computational cost associated with $F^_{R_{\theta}}$, we here disregard the Fisher information matrix and reduce the invariant Fisher kernel to the so-called practical Fisher kernel (Jaakkola et al., 1999; Jaakkola and Haussler, 1998; van der Maaten, 2011), for which the linear version $κ_{Fl}$ takes the form:
+
+$$
+κ_{Fl}(n,m)=⟨g(\theta^{0},x^{n}),g(\theta^{0},x^{m})⟩κ_{Fl}\inR^{NxN}
+$$
 
 In this study, we will use the practical Fisher kernel for all computations.
 
-One issue when working with the linear Fisher kernel is that the gradients of typical examples (i.e. subjects whose timeseries can be described by similar parameters as the group-level model) are close to zero, while gradients of atypical examples (i.e. subjects who are very different from the group-level model) can be very large. This may lead to an underestimation of the similarity between two typical examples because their inner product is very small even though they are very similar. To mitigate this, we can plug the gradient features (i.e. the Fisher scores g) into a Gaussian kernel, which essentially normalises the kernel. For subjects n and m, where xn is the timeseries of subject n and xm is the timeseries of subject m, the Gaussian Fisher kernel κFg is defined asκFg(n,m)=exp⁡(−‖g(θ0,xn)−g(θ0,xm)‖22τ2)κFg∈RNxN
+One issue when working with the linear Fisher kernel is that the gradients of typical examples (i.e. subjects whose timeseries can be described by similar parameters as the group-level model) are close to zero, while gradients of atypical examples (i.e. subjects who are very different from the group-level model) can be very large. This may lead to an underestimation of the similarity between two typical examples because their inner product is very small even though they are very similar. To mitigate this, we can plug the gradient features (i.e. the Fisher scores $g$) into a Gaussian kernel, which essentially normalises the kernel. For subjects $n$ and $m$, where $x^{n}$ is the timeseries of subject $n$ and $x^{m}$ is the timeseries of subject $m$, the Gaussian Fisher kernel $κ_{Fg}$ is defined as
 
-where ‖g(θ0,xn)−g(θ0,xm)‖ is the distance between examples n and m in the gradient space, and τ is the width of the Gaussian kernel.
+$$
+κ_{Fg}(n,m)=exp⁡(−\frac{‖g(\theta^{0},x^{n})−g(\theta^{0},x^{m})‖^{2}}{2\tau^{2}})κ_{Fg}\inR^{NxN}
+$$
 
-## Kullback-Leibler divergence
+where $‖g(\theta^{0},x^{n})−g(\theta^{0},x^{m})‖$ is the distance between examples $n$ and $m$ in the gradient space, and $\tau$ is the width of the Gaussian kernel.
 
-The Kullback-Leibler (KL) divergence is an information-theoretic distance measure which estimates divergence between probability distributions —in this case between subject-specific versions of the HMM. Here, KL divergence of subject n from subject m, KL(HMMn||HMMm) can be interpreted as how much new information the HMM of subject n contains if the true distribution was the HMM of subject m. KL divergence is not symmetric, that is KL(HMMn||HMMm) is different than KL(HMMn||HMMm). We here use an approximation of KL divergence as in Do, 2003 and Vidaurre et al., 2021. That is, given two models HMMn from HMMm for subject n and subject m, we haveKL(HMMn||HMMm)=∑kvkKL(Akn, Akm)+vkKL(Gkn, Gkm)
+### Kullback-Leibler divergence
 
-where Akn are the transition probabilities from state k into any other state according to HMMn and Gkn are the state Gaussian distributions for state k and HMMn (respectively Akm and Gkm for HMMm); see MacKay et al., 2003. Since the transition probabilities are Dirichlet-distributed and the state distributions are Gaussian distributed, KL divergence for those has a closed-form solution. Variables vk can be computed numerically such that,vAn=vlimx→∞πnAnx=ν
+The Kullback-Leibler (KL) divergence is an information-theoretic distance measure which estimates divergence between probability distributions —in this case between subject-specific versions of the HMM. Here, KL divergence of subject $n$ from subject $m$, $KL(HMM^{n}||HMM^{m})$ can be interpreted as how much new information the HMM of subject $n$ contains if the true distribution was the HMM of subject $m$. KL divergence is not symmetric, that is $KL(HMM^{n}||HMM^{m})$ is different than $KL(HMM^{n}||HMM^{m})$. We here use an approximation of KL divergence as in Do, 2003 and Vidaurre et al., 2021. That is, given two models $HMM^{n}$ from $HMM^{m}$ for subject $n$ and subject $m$, we have
 
-To be able to use KL divergence as a kernel, we symmetrise the KL divergence matrix asDKL(n,m)=0.5KL(HMMn||HMMm)+0.5KL(HMMn||HMMm)DKL∈RNxN
+$$
+KL(HMM^{n}||HMM^{m})=\sumkv_{k}KL(A_{k}^{n}, A_{k}^{m})+v_{k}KL(G_{k}^{n}, G_{k}^{m})
+$$
 
-This symmetrised KL divergence can be plugged into a radial basis function, analogous to the Gaussian kernels to obtain a similarity matrix κKLκKL(n,m)=exp⁡(−(DKL(n,m))22τ2)κKL∈RNxN
+where $A_{k}^{n}$ are the transition probabilities from state $k$ into any other state according to $HMM^{n}$ and $G_{k}^{n}$ are the state Gaussian distributions for state $k$ and $HMM^{n}$ (respectively $A_{k}^{m}$ and $G_{k}^{m}$ for $HMM^{m}$); see MacKay et al., 2003. Since the transition probabilities are Dirichlet-distributed and the state distributions are Gaussian distributed, KL divergence for those has a closed-form solution. Variables $v_{k}$ can be computed numerically such that
+
+$$
+vA^{n}=v
+$$
+
+
+
+$$
+limx→∞\pi^{n}A^{nx}=ν
+$$
+
+To be able to use KL divergence as a kernel, we symmetrise the KL divergence matrix as
+
+$$
+D_{KL}(n,m)=0.5KL(HMM^{n}||HMM^{m})+0.5KL(HMM^{n}||HMM^{m})D_{KL}\inR^{NxN}
+$$
+
+This symmetrised KL divergence can be plugged into a radial basis function, analogous to the Gaussian kernels to obtain a similarity matrix $κ_{KL}$
+
+$$
+κ_{KL}(n,m)=exp⁡(−\frac{(D_{KL}(n,m))^{2}}{2\tau^{2}})κ_{KL}\inR^{NxN}
+$$
 
 The resulting KL similarity matrix can be used in the predictive model in a similar way as the kernels described above.
 
-## Predictive model: Kernel ridge regression
+### Predictive model: Kernel ridge regression
 
-Similarly to Vidaurre et al., 2021, we use kernel ridge regression (KRR) to predict demographic and behavioural variables from the different kernels (other kernel-based prediction models or classifiers such as a support vector machine are also possible). KRR is the kernelised version of ridge regression (Saunders et al., 1998):y^=hαα∈RStrainx1, h∈RStestxStrain
+Similarly to Vidaurre et al., 2021, we use kernel ridge regression (KRR) to predict demographic and behavioural variables from the different kernels (other kernel-based prediction models or classifiers such as a support vector machine are also possible). KRR is the kernelised version of ridge regression (Saunders et al., 1998):
 
-where α are the regression weights; h is the (number of subjects in test set by number of subjects in training set) kernel matrix between the subjects in the training set and the subjects in the test set; y^ are the predictions in the (out-of-sample) test set; Strain are the number of subjects in the training set; and Stest are the number of subjects in the test set. The regression weights α can be estimated using the kernels specified above asα=(κ+λI)−1∗yκ∈RStrainxStrain
+$$
+y^=h\alpha\alpha\inR^{S_{train}x1}, h\inR^{S_{test}xS_{train}}
+$$
 
-where λ is a regularisation parameter that we can choose through cross-validation; I is the identity matrix; κ is the (Strain by Strain) kernel matrix of the subjects in the training set; and y are the training examples.
+where $\alpha$ are the regression weights; $h$ is the (number of subjects in test set by number of subjects in training set) kernel matrix between the subjects in the training set and the subjects in the test set; $y^$ are the predictions in the (out-of-sample) test set; $S_{train}$ are the number of subjects in the training set; and $S_{test}$ are the number of subjects in the test set. The regression weights α can be estimated using the kernels specified above as
 
-We use KRR to separately predict each of the 35 demographic and behavioural variables from each of the different methods, removing subjects with missing entries from the prediction. We used k-fold nested cross-validation (CV) to select and evaluate the models. We used 10 folds for both the outer loop (used to train and test the model) and the inner loop (used to select the optimal hyperparameters) such that 90% were used for training and 10% for testing. The optimal hyperparameters λ (and τ in the case of the Gaussian kernels) were selected using grid-search from the vectors λ=[0.0001, 0.001, 0.01, 0.1, 0.3, 0.5, 0.7, 0.9, 1] and τ=[1/5, 1/3, 1/2, 1, 2, 3, 5]. In both the outer and the inner loop, we accounted for family structure in the HCP dataset so that subjects from the same family were never split across folds (Winkler et al., 2015). Within the CV, we regressed out sex and head motion confounds, that is we estimated the regression coefficients for the confounds on the training set and applied them to the test set (Snoek et al., 2019). We repeated the nested 10-fold CV 100 times, so that different combinations of subjects were randomly assigned to the folds at each new CV iteration to obtain a distribution of model performance values for each variable. This is to explicitly show how susceptible each model was to changes in the training folds, which we can take as a measure of the robustness of the estimators, as described below. We generated the 100 random repetitions of the 10 outer CV folds once, and then used them for training and prediction of all methods, so that all methods were fit to the same partitions.
+$$
+\alpha=(κ+\lambdaI)^{−1}∗yκ\inR^{S_{train}xS_{train}}
+$$
 
-## Evaluation criteria
+where $\lambda$ is a regularisation parameter that we can choose through cross-validation; $I$ is the identity matrix; $κ$ is the ($S_{train}$ by $S_{train}$) kernel matrix of the subjects in the training set; and $y$ are the training examples.
 
-We evaluate the models in terms of two outcome criteria: prediction accuracy and reliability. For prediction accuracy, we used Pearson’s correlation coefficient r(y^,y) between the model-predicted values y^ and the actual values y of each variable and the coefficient of determination R2. The second criterion, reliability, concerns two aspects: (i) that the model will never show excessively large errors for single subjects that could harm interpretation; and (ii) that the model’s accuracy will be consistent across random variations of the training set —in this case by using different (random) iterations for the CV folds. This is important if we want to interpret prediction errors for example in clinical contexts, which assumes that the error size of a model in a specific subject reflects something biologically meaningful, for example whether a certain disease causes the brain to ‘look’ older to a model than the actual age of the subject (Denissen et al., 2022). Maximum errors inform us about single cases where a model (that may typically perform well) fails. The maximum absolute error (MAXAE) is the single largest error made by the regression model in each iteration, that isMAXAE=maxi∈N(|yi−y^i|)
+We use KRR to separately predict each of the 35 demographic and behavioural variables from each of the different methods, removing subjects with missing entries from the prediction. We used k-fold nested cross-validation (CV) to select and evaluate the models. We used 10 folds for both the outer loop (used to train and test the model) and the inner loop (used to select the optimal hyperparameters) such that 90% were used for training and 10% for testing. The optimal hyperparameters $\lambda$ (and $\tau$ in the case of the Gaussian kernels) were selected using grid-search from the vectors λ=[0.0001, 0.001, 0.01, 0.1, 0.3, 0.5, 0.7, 0.9, 1] and τ=[1/5, 1/3, 1/2, 1, 2, 3, 5]. In both the outer and the inner loop, we accounted for family structure in the HCP dataset so that subjects from the same family were never split across folds (Winkler et al., 2015). Within the CV, we regressed out sex and head motion confounds, that is we estimated the regression coefficients for the confounds on the training set and applied them to the test set (Snoek et al., 2019). We repeated the nested 10-fold CV 100 times, so that different combinations of subjects were randomly assigned to the folds at each new CV iteration to obtain a distribution of model performance values for each variable. This is to explicitly show how susceptible each model was to changes in the training folds, which we can take as a measure of the robustness of the estimators, as described below. We generated the 100 random repetitions of the 10 outer CV folds once, and then used them for training and prediction of all methods, so that all methods were fit to the same partitions.
 
-Since the traits we predict are on different scales, the MAXAE is difficult to interpret, for example a MAXAE of 10 would be considered small if the true range of the variable we are predicting was 1,000, while it would be considered large if the true range of the variable was 1. To make the results comparable across the different traits, we therefore normalise the MAXAE by dividing it by the range of the respective variable. In this way, we obtain the NMAXAE:NMAXAE=MAXAEymax−ymin
+#### Evaluation criteria
+
+We evaluate the models in terms of two outcome criteria: prediction accuracy and reliability. For prediction accuracy, we used Pearson’s correlation coefficient $r(y^,y)$ between the model-predicted values $y^$ and the actual values $y$ of each variable and the coefficient of determination $R^{2}$. The second criterion, reliability, concerns two aspects: (i) that the model will never show excessively large errors for single subjects that could harm interpretation; and (ii) that the model’s accuracy will be consistent across random variations of the training set —in this case by using different (random) iterations for the CV folds. This is important if we want to interpret prediction errors for example in clinical contexts, which assumes that the error size of a model in a specific subject reflects something biologically meaningful, for example whether a certain disease causes the brain to ‘look’ older to a model than the actual age of the subject (Denissen et al., 2022). Maximum errors inform us about single cases where a model (that may typically perform well) fails. The maximum absolute error (MAXAE) is the single largest error made by the regression model in each iteration, that is
+
+$$
+MAXAE=maxi\inN(|y_{i}−y^_{i}|)
+$$
+
+Since the traits we predict are on different scales, the MAXAE is difficult to interpret, for example a MAXAE of 10 would be considered small if the true range of the variable we are predicting was 1,000, while it would be considered large if the true range of the variable was 1. To make the results comparable across the different traits, we therefore normalise the MAXAE by dividing it by the range of the respective variable. In this way, we obtain the NMAXAE:
+
+$$
+NMAXAE=\frac{MAXAE}{y_{max}−y_{min}}
+$$
 
 Since the NMAXAEs follow extreme value distributions, it is more meaningful to consider the proportion of the values exceeding relevant thresholds than testing for differences in the means of these distributions (Gumbel, 1958). We here consider the risk of large errors (NMAXAE >10), very large errors (NMAXAE >100), and extreme errors (NMAXAE >1000) as the percentage of runs (across variables and CV iterations) where the model’s NMAXAE exceeds the given threshold. Since NMAXAE is normalised by the range of the actual variable, these thresholds correspond to one, two, and three orders of magnitude of the actual variable’s range. If we are predicting age, for instance, and the true ages of the subjects range from 25 years to 35 years, an NMAXAE of 1 would mean that the model’s least accurate prediction is off by 10 years, an NMAXAE of 10 would mean that the least accurate prediction is off by 100 years, an NMAXAE of 100 would be off by 1000 years, and an NMAXAE of 1,000 would be off by 10,000 years. A model that makes such large errors, even in single cases, would be unusable for interpretation. Our reliability criterion in terms of maximum errors is therefore that the risk of large errors (NMAXAE >10) should be 0%.
 
 For a model to be reliable, it should also be robust in the sense of susceptibility to changes in the training examples. Robustness is an important consideration in prediction studies, as it determines how reproducible a study or method is — which is often a shortcoming in neuroimaging-based prediction studies (Varoquaux et al., 2017). We evaluated the robustness by iterating nested 10-fold CV 100 times for each variable, randomising the subjects in the folds at each iteration, so that the models would encounter a different combination of subjects in the training and test sets each time they are run. Looking at this range of 1000 accuracies (10 folds * 100 repetitions) for each variable, we can assess whether the model’s performance changes drastically depending on which combinations of subjects it encountered in the training phase, or whether the performance is the same regardless of the subjects encountered in the training phase. The former would be an example of a model that is susceptible to changes in training examples and the latter an example of a model that is robust. We here quantify robustness as the standard deviation (S.D.) of the prediction accuracy r across the 10 folds and 100 CV iterations of each variable, where a small mean S.D. over variables indicates higher robustness.
 
-We test for significant differences in mean prediction accuracy between the methods using repeated k-fold cross-validation corrected t-tests (Bouckaert and Frank, 2004). For results obtained through cross-validation with k folds and r repetitions, the corrected t-statistic is calculated as:trkCV=1k⋅r∑i=1k∑j=1rxij(1k⋅r+n2n1)σ2
+We test for significant differences in mean prediction accuracy between the methods using repeated k-fold cross-validation corrected t-tests (Bouckaert and Frank, 2004). For results obtained through cross-validation with $k$ folds and $r$ repetitions, the corrected t-statistic is calculated as:
 
-where x is the difference in prediction accuracy, n1 is the number of samples in the training data, n2 the number of samples in the test data, and σ2 the variance estimate. To test for significant differences in mean robustness (S.D. across CV repetitions), we use paired t-tests. All p-values are corrected across multiple comparisons using Benjamini-Hochberg correction to control the false discovery rate (FDR). For the main results, we separately compare the linear Fisher kernel to the other linear kernels, and the Gaussian Fisher kernel to the other Gaussian kernels, as well as to each other. We also compare the linear Fisher kernel to all time-averaged methods. Finally, to test for the effect of tangent space projection for the time-averaged FC prediction, we also compare the Ridge regression model to the Ridge Regression in Riemannian space. To test for effects of removing sets of features, we use the approach described above to compare the kernels constructed from the full feature sets to their versions where features were removed or reduced. Finally, to test for effects of training the HMM either on all subjects or only on the subjects that were later used as training set, we compare each kernel to the corresponding kernel constructed from HMM parameters, where training and test set were kept separate.
+$$
+t_{rkCV}=\frac{\frac{1}{k⋅r}\sumi=1k\sumj=1rx_{ij}}{\sqrt{(\frac{1}{k⋅r}+\frac{n_{2}}{n_{1}})\sigma^{2}}}
+$$
 
-## Models based on time-averaged FC features
+where $x$ is the difference in prediction accuracy, $n_{1}$ is the number of samples in the training data, $n_{2}$ the number of samples in the test data, and $\sigma^{2}$ the variance estimate. To test for significant differences in mean robustness (S.D. across CV repetitions), we use paired t-tests. All p-values are corrected across multiple comparisons using Benjamini-Hochberg correction to control the false discovery rate (FDR). For the main results, we separately compare the linear Fisher kernel to the other linear kernels, and the Gaussian Fisher kernel to the other Gaussian kernels, as well as to each other. We also compare the linear Fisher kernel to all time-averaged methods. Finally, to test for the effect of tangent space projection for the time-averaged FC prediction, we also compare the Ridge regression model to the Ridge Regression in Riemannian space. To test for effects of removing sets of features, we use the approach described above to compare the kernels constructed from the full feature sets to their versions where features were removed or reduced. Finally, to test for effects of training the HMM either on all subjects or only on the subjects that were later used as training set, we compare each kernel to the corresponding kernel constructed from HMM parameters, where training and test set were kept separate.
+
+### Models based on time-averaged FC features
 
 To compare our approach’s performance to simpler methods that do not take dynamics into account, we compared them to seven different regression models based on time-averaged FC features. For each subject, time-averaged FC was computed as covariance between each pair of regions. The first time-averaged model is, analogous to the HMM-derived KL divergence model, a time-averaged KL divergence model. The model is described in detail in Vidaurre et al., 2021. Briefly, we construct symmetrised KL divergence matrices of each subject’s time-averaged FC and predict from these matrices using the KRR pipeline described above. We refer to this model as time-averaged KL divergence. We next used a kernel constructed from a geodesic distance (i.e. a metric defined on the Riemannian manifold) of time-averaged covariance matrices. Specifically, we used a Gaussian kernel on the log-Euclidean distance, which is the Frobenius norm of the logarithm map of the time-averaged covariance matrices (Jayasumana et al., 2013). We refer to this model as log-Euclidean. The other five time-averaged FC benchmark models do not involve kernels but predict directly from the features instead. Namely, we use two variants of a Ridge Regression and an Elastic Net model (Zou and Hastie, 2005), one using the unwrapped time-averaged FC matrices as input (i.e. in Euclidean space), and one using the time-averaged FC matrices in Riemannian space, where covariance matrices are projected into tangent space (Barachant et al., 2013; Smith et al., 2013b), which we refer to as Ridge Reg. and Ridge Reg. (Riem), and Elastic Net and Elastic Net (Riem.), respectively. Finally, we compare our models to the approach taken in Rosenberg et al., 2016, where relevant edges of the time-averaged FC matrices are first selected, and then used as predictors in a regression model. We refer to this model as Selected Edges. All time-averaged FC models are fitted using the same (nested) cross-validation strategy as described above (10-fold CV using the outer loop for model evaluation and the inner loop for model selection using grid-search for hyperparameter tuning, accounting for family structure in the dataset, and repeated 100 times with randomised folds).
 
-## Simulations
+### Simulations
 
-## Feature importance
+#### Feature importance
 
-To further understand the behaviour of the different kernels, we simulate data and compare the kernels’ ability to recover the ground truth. Specifically, we aim to understand which type of parameter change the kernels are most sensitive to. We generate timeseries for two groups of subjects, timeseries X1 for group 1 and timeseries X2 for group 2, from two separate HMMs with respective sets of parameters θ1 and θ2:X1∼HMM(θ1)X2∼HMM(θ2)X1,X2∈RMx((N2)∗T)
+To further understand the behaviour of the different kernels, we simulate data and compare the kernels’ ability to recover the ground truth. Specifically, we aim to understand which type of parameter change the kernels are most sensitive to. We generate timeseries for two groups of subjects, timeseries $X^{1}$ for group 1 and timeseries $X^{2}$ for group 2, from two separate HMMs with respective sets of parameters $\theta^{1}$ and $\theta^{2}$:
+
+$$
+X^{1}∼HMM(\theta^{1})
+$$
+
+
+
+$$
+X^{2}∼HMM(\theta^{2})X^{1},X^{2}\inR^{Mx((\frac{N}{2})∗T)}
+$$
 
 We simulate timeseries from HMMs with these parameters through the generative process described in 4.2.
 
-For the simulations, we use the group-level HMM of the real dataset with K=6 states used in the main text as basis for group 1, that is HMM(θ1)=HMM(θ0). We then manipulate two different types of parameters, the state means μ and the transition probabilities A, while keeping all remaining parameters the same between the groups. In the first case, we manipulate one state’s mean between the groups, that is:θ1=[π1,A1,μ1,Σ1]θ2=[π1,A1,μ2,Σ1]
+For the simulations, we use the group-level HMM of the real dataset with $K=6$ states used in the main text as basis for group 1, that is $HMM(\theta^{1})=HMM(\theta^{0})$. We then manipulate two different types of parameters, the state means μ and the transition probabilities $A$, while keeping all remaining parameters the same between the groups. In the first case, we manipulate one state’s mean between the groups, that is:
 
-where μ2 is obtained by simply adding a Gaussian noise vector to the state mean vector of one state:μ12=μ11+φ
+$$
+\theta^{1}=[\pi^{1},A^{1},\mu^{1},Σ^{1}]
+$$
 
-Here, φ is the Gaussian noise vector of size 1 x M, M is the number of parcels, here 50, and μ11 and μ12 are the first rows (corresponding to the first state) of the state mean matrices for groups 1 and 2, respectively. We control the amplitude of φ so that the difference between μ12 and μ11 is smaller than the minimum distance between any pair of states within one HMM. This is to ensure that the HMM recovers the difference between groups as difference in one state’s mean vector, rather than detecting a new state for group 2 that does not occur in group 1 and consequently collapsing two other states. Since the state means μ and the state covariances Σ are the first- and second-order parameters of the same respective distributions, it is to be expected that, although we only directly manipulate μ, Σ changes as well.
 
-In the second case, we manipulate the transition probabilities for one state between the groups, while keeping all other parameters the same, i.e.:θ1=[π1,A1,μ1,Σ1]θ2=[π1,A2,μ1,Σ1]
 
-where A2 is obtained by randomly permuting the probabilities of one state to transition into any of the other states, excluding self-transition probability:A1,12=A1,11A1,2:K2=pA1,2:K1
+$$
+\theta^{2}=[\pi^{1},A^{1},\mu^{2},Σ^{1}]
+$$
 
-Here, p is a random permutation vector of size (K–1) x 1, A1,11 and A1,12 are the self-transition probabilities of state 1, and A1,2:K1 and A1,2:K2 are the probabilities of state 1 to transition into each of the other states.
+where μ2 is obtained by simply adding a Gaussian noise vector to the state mean vector of one state:
 
-We then concatenate the generated timeseriesX=[X1,X2]X∈RMx(N∗T)
+$$
+\mu_{1}^{2}=\mu_{1}^{1}+\phi
+$$
 
-containing 100 subjects for group 1 and 100 subjects for group 2, with 1200 timepoints and 50 parcels per subject. Note that we do not introduce any differences between subjects within a group, so that the between-group difference in HMM parameters should be the most dominant distinction and easily recoverable by the classifiers. We then apply the pipelines described above, running a new group-level HMM and constructing the linear versions of the naïve kernel, the naïve normalised kernel, and the Fisher kernel on these synthetic time series. The second case of simulations, manipulating the transition probabilities, only introduces a difference in few (K - 1) features and keeps the majority of the features the same between the groups, while the first case introduces a difference in a large number of features (M features directly, by changing one state’s mean vector, and an additional M x M features indirectly, as this state’s covariance matrix will also be affected). To account for this difference, we additionally construct a version of the kernels for the second case of simulations that includes only 𝜋 and A, removing the state parameters μ and Σ.
+Here, $\phi$ is the Gaussian noise vector of size 1 x $M$, $M$ is the number of parcels, here 50, and $\mu_{1}^{1}$ and $\mu_{1}^{2}$ are the first rows (corresponding to the first state) of the state mean matrices for groups 1 and 2, respectively. We control the amplitude of $\phi$ so that the difference between $\mu_{1}^{2}$ and $\mu_{1}^{1}$ is smaller than the minimum distance between any pair of states within one HMM. This is to ensure that the HMM recovers the difference between groups as difference in one state’s mean vector, rather than detecting a new state for group 2 that does not occur in group 1 and consequently collapsing two other states. Since the state means μ and the state covariances $Σ$ are the first- and second-order parameters of the same respective distributions, it is to be expected that, although we only directly manipulate μ, $Σ$ changes as well.
+
+In the second case, we manipulate the transition probabilities for one state between the groups, while keeping all other parameters the same, i.e.:
+
+$$
+\theta^{1}=[\pi^{1},A^{1},\mu^{1},Σ^{1}]
+$$
+
+
+
+$$
+\theta^{2}=[\pi^{1},A^{2},\mu^{1},Σ^{1}]
+$$
+
+where $A^{2}$ is obtained by randomly permuting the probabilities of one state to transition into any of the other states, excluding self-transition probability:
+
+$$
+A_{1,1}^{2}=A_{1,1}^{1}
+$$
+
+
+
+$$
+A_{1,2:K}^{2}=pA_{1,2:K}^{1}
+$$
+
+Here, $p$ is a random permutation vector of size ($K$–1) x 1, $A_{1,1}^{1}$ and $A_{1,1}^{2}$ are the self-transition probabilities of state 1, and $A_{1,2:K}^{1}$ and $A_{1,2:K}^{2}$ are the probabilities of state 1 to transition into each of the other states.
+
+We then concatenate the generated timeseries
+
+$$
+X=[X^{1},X^{2}]X\inR^{Mx(N∗T)}
+$$
+
+containing 100 subjects for group 1 and 100 subjects for group 2, with 1200 timepoints and 50 parcels per subject. Note that we do not introduce any differences between subjects within a group, so that the between-group difference in HMM parameters should be the most dominant distinction and easily recoverable by the classifiers. We then apply the pipelines described above, running a new group-level HMM and constructing the linear versions of the naïve kernel, the naïve normalised kernel, and the Fisher kernel on these synthetic time series. The second case of simulations, manipulating the transition probabilities, only introduces a difference in few ($K$ - 1) features and keeps the majority of the features the same between the groups, while the first case introduces a difference in a large number of features ($M$ features directly, by changing one state’s mean vector, and an additional M x M features indirectly, as this state’s covariance matrix will also be affected). To account for this difference, we additionally construct a version of the kernels for the second case of simulations that includes only 𝜋 and $A$, removing the state parameters μ and $Σ$.
 
 Finally, we use a support vector machine (SVM) in combination with the different kernels to recover the group labels and measure the error produced by each kernel. We repeat the whole process (generating timeseries, constructing kernels, and running the SVM) 10 times, in each iteration randomising on three levels: generating new random noise/permutation vectors to simulate the timeseries, randomly initialising the HMM parameters when fitting the group-level HMM to the simulated timeseries, and randomly assigning subjects to 10 CV folds in the SVM.
 
-## Separating training and test set
+#### Separating training and test set
 
 We also simulate data to understand the sensitivity of the different kernels to separating training and test set before or after running the HMM. While separating training and test set is generally considered to be the gold standard to avoid leakage of information, this strategy may cause issues when the training and test set are very different from each other. In the simplest case, this would cause models to poorly generalise, which we aim to assess with the train-test split. However, in the case of the Fisher kernel, features are not independent but defined in reference to a group set of parameters. That means that, if we train the HMM only on the training set and then construct the Fisher kernel of a group of test subjects that are very different from the training set, this difference will be overrepresented in the kernel and likely overshadow other, more subtle differences between individuals.
 
-Similar to the feature importance simulations, we generate time courses for two groups of subjects from two HMMs: timeseries Xtrain for the training set and timeseries Xtest for the test set, from HMMs with parameters θtrain and θtest:Xtrain∼HMM(θtrain)Xtest∼HMM(θtest)Xtrain,Xtest∈RMx((N2)∗T)
+Similar to the feature importance simulations, we generate time courses for two groups of subjects from two HMMs: timeseries $X^{train}$ for the training set and timeseries $X^{test}$ for the test set, from HMMs with parameters $\theta^{train}$ and $\theta^{test}$:
 
-We use the group-level HMM fit to real data as the basis for the simulations, so that HMM(θtrain)=HMM(θ0). For the test set, we then add different levels of noise to one of the state’s mean vector to simulate varying degrees of between-group difference:θtrain=[πtrain,Atrain,μtrain,Σtrain]θtest=[πtrain,Atrain,μtest,Σtrain]μtest=[μ1train+bϵμ2train...μktrain]
+$$
+X^{train}∼HMM(\theta^{train})
+$$
 
-where ϵ is the 1 x M Gaussian noise vector representing the heterogeneity between the training and the test set and b is a scalar controlling the noise level.
 
-We randomly generate a continuous target variable, Y, which the models will aim to predict. We will simulate a single state’s mean to be correlated with this target variable, but we will add varying degrees of noise, which will make it gradually more difficult to predict the target. We do this by adding a fraction of the target variable and the noise to a second state mean vector for each subject in the training and the test set:θs=[πs,As,μs,Σs]μs=[μ1μ2+Ys10+cφs...μk]
 
-where μk is the 1 x M state mean vector for state k, Ys is the simulated target variable and φs is the 1 x M Gaussian noise vector, controlled by the scaler c. That means that the two effects (the target variable and the difference between training and test set) are represented in two separate states’ parameters. The models should be able to retrieve the variable of interest in one state while ignoring the between-group noise affecting another state.
+$$
+X^{test}∼HMM(\theta^{test})X^{train},X^{test}\inR^{Mx((\frac{N}{2})∗T)}
+$$
 
-We then simulate individual subjects’ timeseries for 50 training subjects and 50 test subjects, varying the values for b (controlling the level of between-group difference) in the range b=[0.1,0.3,0.5,0.7,0.9] and c (controlling the level of noise on the target variable Y) in the range c=[0.5,0.7,0.9,1.1,1.3,1.5,1.7,1.9]. We then use two different training schemes: the first one where we train the HMM on all subjects (training and test set) before constructing the features (training: together) and the second one where we train the HMM only on the training subjects (training: separate). For the Fisher kernel, that means that the features for the subjects in the test set will be computed in reference to a group-level HMM which they are either part of (training: together) or not a part of (training: separate). We then use the same pipeline described above to predict the simulated target variables from the linear naïve kernel, the linear naïve normalised kernel, and the linear Fisher kernel.
+We use the group-level HMM fit to real data as the basis for the simulations, so that $HMM(\theta^{train})=HMM(\theta^{0})$. For the test set, we then add different levels of noise to one of the state’s mean vector to simulate varying degrees of between-group difference:
 
-## Implementation
+$$
+\theta^{train}=[\pi^{train},A^{train},\mu^{train},Σ^{train}]
+$$
+
+
+
+$$
+\theta^{test}=[\pi^{train},A^{train},\mu^{test},Σ^{train}]
+$$
+
+
+
+$$
+\mu^{test}=[\mu_{1}^{train}+bϵ\mu_{2}^{train}...\mu_{k}^{train}]
+$$
+
+where $ϵ$ is the 1 x $M$ Gaussian noise vector representing the heterogeneity between the training and the test set and $b$ is a scalar controlling the noise level.
+
+We randomly generate a continuous target variable, $Y$, which the models will aim to predict. We will simulate a single state’s mean to be correlated with this target variable, but we will add varying degrees of noise, which will make it gradually more difficult to predict the target. We do this by adding a fraction of the target variable and the noise to a second state mean vector for each subject in the training and the test set:
+
+$$
+\theta^{s}=[\pi^{s},A^{s},\mu^{s},Σ^{s}]
+$$
+
+
+
+$$
+\mu^{s}=[\mu_{1}\mu_{2}+\frac{Y^{s}}{10}+c\phi^{s}...\mu_{k}]
+$$
+
+where $\mu_{k}$ is the 1 x $M$ state mean vector for state $k$, $Y^{s}$ is the simulated target variable and $\phi^{s}$ is the 1 x $M$ Gaussian noise vector, controlled by the scaler $c$. That means that the two effects (the target variable and the difference between training and test set) are represented in two separate states’ parameters. The models should be able to retrieve the variable of interest in one state while ignoring the between-group noise affecting another state.
+
+We then simulate individual subjects’ timeseries for 50 training subjects and 50 test subjects, varying the values for $b$ (controlling the level of between-group difference) in the range $b=[0.1,0.3,0.5,0.7,0.9]$ and $c$ (controlling the level of noise on the target variable $Y$) in the range $c=[0.5,0.7,0.9,1.1,1.3,1.5,1.7,1.9]$. We then use two different training schemes: the first one where we train the HMM on all subjects (training and test set) before constructing the features (training: together) and the second one where we train the HMM only on the training subjects (training: separate). For the Fisher kernel, that means that the features for the subjects in the test set will be computed in reference to a group-level HMM which they are either part of (training: together) or not a part of (training: separate). We then use the same pipeline described above to predict the simulated target variables from the linear naïve kernel, the linear naïve normalised kernel, and the linear Fisher kernel.
+
+### Implementation
 
 All code used in this paper, including scripts to reproduce the figures and additional application examples of the Fisher Kernel can be found in the repository https://github.com/ahrends/FisherKernel (copy archived at Ahrends, 2025). The HMM-Fisher kernel pipeline in Matlab is also publicly available within the repository of the HMM-MAR toolbox at https://github.com/OHBA-analysis/HMM-MAR, (copy archived at OHBA Analysis Group, 2025). A Python-version of the Fisher kernel is also available at https://github.com/vidaurre/glhmm (copy archived at Vidaurre, 2025a). Code for Ridge Regression and Elastic Net prediction from time-averaged FC features is available at https://github.com/vidaurre/NetsPredict/blob/master/nets_predict5.m (copy archived at Vidaurre, 2025b). The procedure for Selected Edges time-averaged FC prediction is described in detail in Shen et al., 2017 and code is provided at https://www.nitrc.org/projects/bioimagesuite/behavioralprediction.m.

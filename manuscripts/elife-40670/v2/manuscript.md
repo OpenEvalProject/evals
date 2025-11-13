@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.40670.001 The Ccr4-Not complex removes mRNA poly(A) tails to regulate eukaryotic mRNA stability and translation. RNA-binding proteins contribute to specificity by interacting with both Ccr4-Not and target mRNAs, but this is not fully understood. Here, we reconstitute accelerated and selective deadenylation of RNAs containing AU-rich elements (AREs) and Pumilio-response elements (PREs). We find that the fission yeast homologues of Tristetraprolin/TTP and Pumilio/Puf (Zfs1 and Puf3) interact with Ccr4-Not via multiple regions within low-complexity sequences, suggestive of a multipartite interface that extends beyond previously defined interactions. Using a two-color assay to simultaneously monitor poly(A) tail removal from different RNAs, we demonstrate that Puf3 can distinguish between RNAs of very similar sequence. Analysis of binding kinetics reveals that this is primarily due to differences in dissociation rate constants. Consequently, motif quality is a major determinant of mRNA stability for Puf3 targets in vivo and can be used for the prediction of mRNA targets.
+The Ccr4-Not complex removes mRNA poly(A) tails to regulate eukaryotic mRNA stability and translation. RNA-binding proteins contribute to specificity by interacting with both Ccr4-Not and target mRNAs, but this is not fully understood. Here, we reconstitute accelerated and selective deadenylation of RNAs containing AU-rich elements (AREs) and Pumilio-response elements (PREs). We find that the fission yeast homologues of Tristetraprolin/TTP and Pumilio/Puf (Zfs1 and Puf3) interact with Ccr4-Not via multiple regions within low-complexity sequences, suggestive of a multipartite interface that extends beyond previously defined interactions. Using a two-color assay to simultaneously monitor poly(A) tail removal from different RNAs, we demonstrate that Puf3 can distinguish between RNAs of very similar sequence. Analysis of binding kinetics reveals that this is primarily due to differences in dissociation rate constants. Consequently, motif quality is a major determinant of mRNA stability for Puf3 targets in vivo and can be used for the prediction of mRNA targets.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Here, we reconstitute accelerated and selective deadenylation of PRE- and ARE-co
 
 ## Results
 
-## Deadenylation is stimulated by Puf3 and Zfs1 in vitro
+### Deadenylation is stimulated by Puf3 and Zfs1 in vitro
 
 To characterize substrate-selective deadenylation in the presence of RNA-binding proteins, we reconstituted this process using purified proteins. Full-length Zfs1 and Puf3 were expressed recombinantly as N-terminal maltose-binding protein (MBP) fusion proteins, and intact recombinant seven-subunit S. pombe Ccr4-Not was purified as described previously (Stowell et al., 2016). Pull-down assays revealed that Puf3 and Zfs1 interact with isolated Ccr4-Not (Figure 1—figure supplement 1A). Therefore, like metazoan homologs, S. pombe Puf3 and Zfs1 bind directly to Ccr4-Not.
 
@@ -44,27 +44,47 @@ By using a short model RNA substrate, deadenylation can be visualized at single-
 
 Ccr4-Not removed the poly(A) tails of both Puf3 and Zfs1 substrate RNAs in vitro. Puf3 and Zfs1 each stimulated deadenylation of their target RNAs: In the absence of Puf3, complete removal of the poly(A) tail from PRE-containing RNA occurred in approximately 32 min, whereas in the presence of Puf3 the reaction was complete in less than 2 min (Figure 1A and Figure 1—figure supplement 1D–E). Therefore, addition of Puf3 increased the rate of deadenylation more than 20-fold. Zfs1 similarly increased the rate of deadenylation of its target RNA to less than 2 min (Figure 1B and Figure 1—figure supplement 1D–E). Thus, both Puf3 and Zfs1 have striking effects on the rate of deadenylation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig1-v2.jpg)
+
+**Figure 1.:** Deadenylation by purified Ccr4-Not in the absence and presence of (A) Puf3 and (B) Zfs1. Synthetic RNA substrates were designed to contain a 30-adenosine poly(A) tail downstream of 23 non-poly(A) ribonucleotides including the recognition elements of Puf3 (PRE) or Zfs1 (ARE). RBP-RNA complexes were prepared at a 1:1 molar ratio before the addition of Ccr4-Not. Reactions were stopped at the indicated times and analyzed by denaturing PAGE. The sizes of the RNA substrate with and without the poly(A) tail are indicated by dashed lines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Coomassie-stained SDS-PAGE of pull-down assay showing binding of Ccr4-Not (subunits labelled in red) to immobilized MBP-Puf3 and MBP-Zfs1. (B) Schematic diagram of RNA substrates showing 5ʹ 6-FAM fluorescent label, position of Pumilio-response element (PRE; blue), AU-rich element (ARE; red), and 30-adenosine poly(A) tail. (C) Electrophoretic mobility shift assay (EMSA) showing the protein-RNA complexes used as substrates for deadenylation assays. Puf3 or Zfs1 (250 nM) was incubated with labelled RNA (200 nM) for 15 min at room temperature before resolving on a native polyacrylamide gel. (D) Control deadenylation assay with Puf3-target RNA showing that MBP alone does not have an effect on the deadenylation activity of Ccr4-Not. M is marker for RNA with and without a poly(A)30 tail. (E) Average rates of Ccr4-Not-mediated deadenylation in the presence of Puf3 or Zfs1. Reaction rates were calculated by densitometric analysis of denaturing polyacrylamide gels. The most abundant RNA size decreased linearly with time, and average reaction rates in number of adenosines removed/min were determined by linear regression on triplicate measurements. Each experiment is presented as a single data point, and the mean of each triplicate experiment is plotted as a horizontal line. Statistical significance was calculated by one-way ANOVA in GraphPad Prism. *p=0.04; ***p=0.001. (F) Fully-deadenylated and non-deadenylated RNA exist simultaneously in reactions with Ccr4-Not and Puf3 or Zfs1. Experiments were performed as in Figure 1 with shorter time increments.
+
 Non-adenosine residues upstream of the poly(A) tail were also rapidly removed by Ccr4-Not when Puf3 or Zfs1 were present. The exonucleases stop when they reach nucleotides that correspond to the binding site of the protein, suggesting that either the RNA-binding proteins cannot be released by Ccr4-Not, or that deadenylation becomes very slow after release of the RNA binding protein. This is consistent with a model in which the specificity of Ccr4-Not for adenosine is substantially less evident when it is tethered to the RNA substrate for a prolonged period of time (Finoux and Séraphin, 2006). In addition, the deadenylation reaction appeared to be more processive in the presence of Puf3 or Zfs1 because RNA lacking a poly(A) tail was visible when RNA with an intact tail was still present in the reaction (Figure 1—figure supplement 1F). This indicates that the RNA-binding protein increases the stability of the interaction of Ccr4-Not with the target RNA substrate during the course of the reaction.
 
-## Ccr4-Not has an intrinsic RNA preference
+### Ccr4-Not has an intrinsic RNA preference
 
 In the absence of additional protein, Ccr4-Not is approximately 3-fold more active on the ARE-containing substrate than on the PRE-containing substrate (Figure 1 and Figure 1—figure supplement 1E). It is generally believed that additional protein factors confer mRNA-selectivity to Ccr4-Not, but this finding indicates Ccr4-Not may possess a moderate degree of intrinsic mRNA selectivity. We previously observed that Ccr4-Not was less active on RNA substrates with secondary structure in the upstream 3ʹ-UTR (Stowell et al., 2016). The free energies of the predicted most stable structures calculated with RNAfold software are −1.2 kcal/mol (Puf3-target RNA) and −0.2 kcal/mol (Zfs1-target RNA). Thus, neither of the substrates tested here is predicted to form stable RNA secondary structure. Our data suggest that the rate at which different mRNAs are deadenylated in vivo may be modulated by sequence-selectivity intrinsic to the Ccr4-Not complex.
 
-## Puf3 and Zfs1 recruit Ccr4-Not via extended low-complexity sequences
+### Puf3 and Zfs1 recruit Ccr4-Not via extended low-complexity sequences
 
 As mentioned above, specific interactions between Ccr4-Not and Pumilio/TTP proteins had been previously described (Fabian et al., 2013; Goldstrohm et al., 2006; Van Etten et al., 2012). To dissect the mechanism of accelerated deadenylation and to determine the contributions of different parts of Puf3 and Zfs1, we made a series of mutations and truncations in these proteins, and tested their abilities to stimulate deadenylation. First, we tested whether the RNA-binding domains alone (Puf3PUM and Zfs1TZF, Figure 2—figure supplement 1A–B) affected deadenylation. Addition of Puf3PUM caused a modest acceleration (complete deadenylation in ~20 min compared to ~32 min; Figure 2A and Figure 2—figure supplement 1C,D). This is consistent with a reported interaction between the Pumilio domain and the Caf1/CNOT7 subunit of Ccr4-Not, that tethers RNA directly to the nuclease subunit to accelerate deadenylation (Goldstrohm et al., 2006; Van Etten et al., 2012). Since stimulation by Puf3PUM was much less than with full-length Puf3, regions outside the Pumilio domain likely play an important role in the recruitment of Ccr4-Not. Interestingly, Zfs1TZF was inhibitory to deadenylation (Figure 2A and Figure 2—figure supplement 1C). This may be because this domain conceals sequence elements that confer the higher level of intrinsic activity on the ARE-containing RNA.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig2-v2.jpg)
+
+**Figure 2.:** Accelerated deadenylation by RNA binding proteins requires both a low-complexity region and RNA-binding activity. (A) Deadenylation by purified Ccr4-Not in the presence of the indicated RNA-binding protein variants was analyzed by denaturing PAGE. Puf3PUM and Zfs1TZF each comprise the RNA-binding domain alone; Puf3Mut, Zfs1Mut are full-length proteins with point mutations that abolish RNA binding. Panels for no Puf3, no Zfs1, and wild-type proteins are reproduced from Figure 1. (B) The low-complexity domains of Puf3 and Zfs1 contain multiple regions that contribute to deadenylation by Ccr4-Not. The upper panel shows diagrams of Puf3 and Zfs1 with regions of predicted disorder and truncated construct lengths. The bottom panel shows deadenylation by purified Ccr4-Not in the presence of the indicated protein variants, analyzed by denaturing PAGE. The most abundant RNA size decreased linearly with time, and average reaction rates in number of adenosines removed/min were determined by linear regression on triplicate measurements. Each experiment is plotted as a point and the mean is shown as a horizontal line. Statistical significance is shown in Figure 2—figure supplement 1G. (C) Deadenylation by the Caf1-Ccr4 nuclease subcomplex in the absence (No RBP) and presence of Puf3 and Zfs1. (D) Puf3-stimulated deadenylation by Ccr4-Not in the absence or presence of Pab1 (1:1 molar ratio to RNA).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Coomassie-stained SDS-PAGE of purified RNA-binding domains: Puf3 residues 378–714 (Puf3PUM) and Zfs1 residues 322–392 (Zfs1TZF). (B) Electrophoretic mobility shift assay (EMSA) showing binding of the indicated RNA-binding proteins to poly(A)-containing RNAs used as substrates in deadenylation assays. (C) Average rates of Ccr4-Not-mediated deadenylation in the presence of the indicated Puf3 or Zfs1 variants. Reaction rates were calculated by densitometric analysis of denaturing polyacrylamide gels. The most abundant RNA size decreased linearly with time, and average reaction rates in number of adenosines removed/min were determined by linear regression on triplicate measurements. Each experiment is presented as a single data point, with the mean (n = 3) shown as a horizontal line. Statistical significance was calculated by one-way ANOVA in GraphPad Prism. *, p=0.05; ***, p=0.001, n.s., not significant. (D, E) Full deadenylation reactions performed in the presence of the indicated Puf3 or Zfs1 variants as in Figure 2A. (F) Coomassie-stained SDS-PAGE of purified Puf3 and Zfs1 N-terminal truncation variants. (G) Average rates of Ccr4-Not-mediated deadenylation in the presence of the indicated Puf3 or Zfs1 variants. The p-values are as in panel (C).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Electrophoretic mobility shift assay showing the binding of MBP-Puf3 and Pab1 to the deadenylation substrate containing a Puf3 motif upstream of a 30-adenosine poly(A) tail. (B) Puf3 accelerates release of Pab1 during deadenylation by Ccr4-Not. Densitometric analysis of previously published data (Webster et al., 2018) and the reactions shown in Figure 2D to calculate the amount of fully deadenylated RNA. A quadratic fit of the data was used to determine the time taken for half of the RNA to be completely deadenylated. Reactions were performed in triplicate and the standard error is given. (C) Deadenylation by Ccr4-Not and variants with mutations in the active site of either Ccr4 (Ccr4-inactive) or Caf1 (Caf1-inactive) with Pab1 and Puf3. Reactions with wild-type Ccr4-Not are reproduced from Figure 2D. In the presence of Pab1, Ccr4-inactive Ccr4-Not stalls when ~ 20 As remain, as indicated.
 
 To confirm that RNA binding is essential to the function of Puf3 and Zfs1, we generated full-length proteins with mutations in the RNA-binding interface (Puf3Mut: Y449A/Y671A and Zfs1Mut: F349A/F387A). Compared to the wild-type proteins, these mutants had a substantially reduced ability to bind their substrate RNAs, and to accelerate deadenylation (Figure 2A and Figure 2—figure supplement 1B–E). Together, these data show that the strong stimulatory effect of Puf3 and Zfs1 depends on RNA binding, but the RNA-binding domains alone are not sufficient.
 
 In addition to a C-terminal RNA-binding domain, both Puf3 and Zfs1 contain an extended N-terminal region of low amino acid sequence complexity that is predicted to be predominantly disordered (Figure 2B). We hypothesized that short sequence motifs within the low-complexity regions of Puf3 and Zfs1 interact with Ccr4-Not, as has been demonstrated for other interaction partners (Bhandari et al., 2014; Fabian et al., 2013; Raisch et al., 2016). Thus, we generated a series of N-terminal truncations and measured their effects on the deadenylation activity of Ccr4-Not (Figure 2B and Figure 2—figure supplement 1F–G). For both proteins, no single truncation accounted for the stimulatory effect on deadenylation. Instead, as the length of low-complexity sequence was reduced, the stimulatory effect on the deadenylation rate was also reduced. It is therefore likely that multiple sequence elements, distributed throughout the low-complexity regions, interact with Ccr4-Not.
 
-## Non-enzymatic subunits of Ccr4-Not contribute to the interaction with Puf3 and Zfs1
+### Non-enzymatic subunits of Ccr4-Not contribute to the interaction with Puf3 and Zfs1
 
 Two of the seven core subunits of Ccr4-Not are poly(A)-selective exonucleases, Caf1 and Ccr4. To determine whether Puf3 and Zfs1 can stimulate deadenylation in the absence of the non-enzymatic subunits, we performed reactions with a purified dimeric subcomplex comprised of Caf1 and Ccr4 (Stowell et al., 2016). Puf3 accelerated the rate of deadenylation by Caf1-Ccr4 substantially less than it accelerated intact Ccr4-Not (2-fold and >20 fold respectively, Figure 2C left compared to 1A). Fully-deadenylated and non-deadenylated RNA was observed simultaneously during both reactions, suggestive of a processive reaction. Furthermore, non-adenosine nucleotides were also readily removed by the Caf1-Ccr4 complex. This suggests that Puf3 interacts with Caf1-Ccr4, but association occurs more slowly when these subunits are not incorporated into the intact Ccr4-Not complex.
 
 Zfs1 did not substantially affect the deadenylation activity of the Caf1-Ccr4 dimeric complex (Figure 2C, right). Thus, our data are consistent with Puf3 and Zfs1 recruiting the Ccr4-Not complex primarily through an interaction between their low-complexity regions and the non-enzymatic subunits of Ccr4-Not.
 
-## Puf3 accelerates the release of Pab1
+### Puf3 accelerates the release of Pab1
 
 Poly(A)-binding protein (Pab1) contributes to translation initiation, and its release from mRNAs can repress translation (Parker, 2012). Ccr4-Not efficiently releases Pab1 from the poly(A) tail through removal of the nucleotides to which it is bound (Webster et al., 2018). It is not known, however, how Pab1 influences accelerated deadenylation. We therefore examined deadenylation of Pab1-bound RNA in the presence of Puf3.
 
@@ -74,9 +94,17 @@ We previously reported that Caf1 and Ccr4 have similar activities within the pur
 
 Using our in vitro assays, Puf3 accelerated deadenylation by both Ccr4-inactive and Caf1-inactive complexes (Figure 2—figure supplement 2C). This indicates that deadenylation in the presence of Puf3 is mediated by either nuclease. In the presence of Puf3 and Pab1, Ccr4-inactive Ccr4-Not did not proceed beyond ~20 adenosines (Figure 2—figure supplement 2C). This is similar to when Puf3 was not present (Webster et al., 2018). Thus, Pab1, and not Puf3, differentiates the two nucleases of Ccr4-Not.
 
-## Puf3 and Zfs1 induce substrate-selective deadenylation by Ccr4-Not
+### Puf3 and Zfs1 induce substrate-selective deadenylation by Ccr4-Not
 
 Having established that Puf3 and Zfs1 are capable of accelerating Ccr4-Not activity, we sought to test whether they are also sufficient for substrate-selectivity. We began by examining whether the presence of the target motif recognized by each protein was essential for accelerated deadenylation. The effect of Puf3 and Zfs1 on its own target RNA was compared with its effect on a non-target RNA. For the latter, we used the RNA target of the other protein (Puf3 with Zfs1-target RNA, and Zfs1 with Puf3-target RNA). We were surprised to find that each protein stimulated deadenylation of an RNA that did not contain its target motif (Figure 3A). Quantification of deadenylation rates showed that on-target deadenylation was approximately 3–4 fold faster than off-target deadenylation, which was in turn 2–5 fold faster than when no additional protein was present (Figure 3—figure supplement 1A). Hence, the correct target RNA motif contributes to the ability of an RNA-binding protein to accelerate deadenylation in vitro, but is not absolutely required.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig3-v2.jpg)
+
+**Figure 3.:** (A) Puf3 and Zfs1 accelerate deadenylation of RNAs with or without a target recognition motif. Puf3 or Zfs1 was added to PRE-containing RNA (Puf3-target) or ARE-containing RNA (Zfs1-target) before addition of Ccr4-Not. Deadenylation was analyzed by denaturing PAGE. Top right and bottom right panels are reproduced from Figure 1B. (B) Fluorescence polarization experiments assaying the binding of full-length Puf3 (top) or Zfs1 (bottom) to 5ʹ−6FAM labelled RNAs. Error bars represent the standard error in triplicate measurements. (C) Deadenylation of a mixture of 100 nM fluorescein-labelled Puf3-target RNA (blue) and 100 nM Alexa647-labelled Zfs1-target RNA (red) analyzed by denaturing PAGE. Gels were scanned to detect each fluorophore before signals were overlaid. (D) Puf3 and Zfs1 promote selective deadenylation. Reactions were performed as in (C) but with the addition of Puf3 (left) or Zfs1 (right) at the indicated concentrations.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of on-target and off-target deadenylation rates. Densitometric analysis of the amount of fully deadenylated RNA was performed on gels shown in Figure 3A. Each experiment is presented as a single data point, and the mean of triplicate experiments is plotted as a horizontal line. Time for complete deadenylation, rather than change in modal poly(A) tail length, was calculated because these reactions contained low levels of intermediates between non-deadenylated and fully-deadenylated RNA. ns, not significant; *p=0.05; ***p=0.001. (B) Electrophoretic mobility shift assays showing selective RNA binding of Puf3 and Zfs1. A mixture of 100 nM fluorescein-labelled Puf3-target-A30 RNA (red) and 100 nM Alexa647-labelled Zfs1-target-A30 RNA (blue) was incubated with the indicated concentration of Puf3 or Zfs1. Gels were scanned with a Typhoon FLA-7000 with excitation at 478 nm (fluorescein detection) and 633 nm (Alexa647 detection), and images were superimposed with color overlay.
 
 Since Puf3 with a mutated RNA-binding domain still stimulates deadenylation, allosteric activation of Ccr4-Not by the Puf3 low complexity region may contribute to this accelerated deadenylation of off-target RNAs (Figure 2—figure supplement 1D). However, mutant Zfs1 that does not bind RNA doesn’t accelerate deadenylation. Thus, allosteric activation is not likely to be a general mechanism. Instead, we hypothesized that off-target stimulation of deadenylation in our in vitro experiments is due to off-target RNA binding.
 
@@ -88,7 +116,7 @@ We then performed a series of reactions using three different concentrations of 
 
 To examine RNA binding by Puf3 and Zfs1 under the same conditions, we performed electrophoretic mobility shift assays. Consistent with deadenylation assays, target RNA binding is complete and selective at 250 nM, but is non-selective at 1000 nM (Figure 3—figure supplement 1B). In conclusion, Puf3 and Zfs1 are sufficient for substrate-selective deadenylation by Ccr4-Not, within a given concentration window. At higher concentrations, they also bound to and accelerated deadenylation on RNAs that do not contain their target motif.
 
-## Puf3 distinguishes between very similar motifs
+### Puf3 distinguishes between very similar motifs
 
 In the cell, RNAs with very similar sequences are present but RNA-binding proteins distinguish between these to act preferentially on specific targets. Yeasts possess multiple Pumilio proteins, and these recognize RNA motifs similar in sequence (Wickens et al., 2002). For example, an RNA target of S. cerevisiae (Sc) Puf3 differs from a target of ScPuf5/Mpt5 in two nucleotide positions within a core 8-nt motif (Goldstrohm et al., 2006) (Figure 4A, top). Given that Puf3 binds off-target RNAs at higher concentrations (Figure 3—figure supplement 1B), we investigated whether the fission yeast Puf3 distinguishes between the very similar motifs of ScPuf3 and ScPuf5 in vitro.
 
@@ -102,7 +130,7 @@ Selective deadenylation only occurred within a narrow range of Puf3 concentratio
 
 We next examined whether Puf3 can distinguish between sequences that are even more similar. Within the 8-nucleotide motif recognized by ScPuf3, the fifth position is the most variable, and A or U are thought to be tolerated (Kershaw et al., 2015). This is a property shared by the human homologs PUM1 and PUM2 (Galgano et al., 2008; Morris et al., 2008). In the previous experiments, the RNA motif contained A at position 5 (now called ScPuf3-target(5A)). We tested whether there is a preference for A or U at position five using the two-color deadenylation assay and found that the ScPuf3-target(5A) RNA was deadenylated in preference to ScPuf3-target(5U) RNA (Figure 4E). Thus, Puf3 has a remarkable capacity to distinguish between sequences within the current definition of its target motif. The identity of the nucleotide in position five likely affects ‘motif quality’, and Puf3 interacts with sequences of different quality in a priority-based manner.
 
-## Kinetic basis of selective RNA binding by Puf3
+### Kinetic basis of selective RNA binding by Puf3
 
 To gain insight into the selective RNA binding by Puf3 that allows it to distinguish between RNAs of very similar sequences, we analyzed the binding kinetics using SwitchSENSE (Knezevic et al., 2012). Switchable nanolevers were functionalized with RNAs containing each of the three RNA motifs tested in the deadenylation reactions: ScPuf3-target(5A), ScPuf3-target(5U), and ScPuf5-target. We measured the rates of association (kon) and dissociation (koff) of fission yeast Puf3PUM binding to each of these, as well as to polyadenosine as a negative control.
 
@@ -110,15 +138,23 @@ Rates of association followed the same pattern of priority binding that we had i
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig5-v2.jpg)
 
-**Figure 5.:** (A) The kinetic rates of association (k) of purified Puf3onPUM with RNA containing the indicated S.cerevisiae sequence motifs were determined by SwitchSENSE. Error bars are the standard error. (B) Representative SwitchSENSE sensograms showing the dissociation of Puf3PUM from the indicated S. cerevisiae RNA sequences. dru, dynamic response units. In (A) and (B), rate constants and half-lives are shown with standard error for measurements performed in triplicate.
+**Figure 5.:** (A) The kinetic rates of association (kon) of purified Puf3PUM with RNA containing the indicated S.cerevisiae sequence motifs were determined by SwitchSENSE. Error bars are the standard error. (B) Representative SwitchSENSE sensograms showing the dissociation of Puf3PUM from the indicated S. cerevisiae RNA sequences. dru, dynamic response units. In (A) and (B), rate constants and half-lives are shown with standard error for measurements performed in triplicate.
 
 When we examined rates of dissociation, we found that Puf3 remained bound to the ScPuf3-target with A at position five for twice as long as it remained bound to the RNA with U at position 5, and ~three times as long as it was bound to the ScPuf5-target RNA (Figure 5B). Dissociation from polyadenosine occurred more than 100-fold faster. Thus, rates of Puf3 dissociation also reflected the preference order that we had observed in deadenylation experiments. Combining our association and dissociation measurements, sequence-selective binding by Puf3 is expected to occur by the combination of rapid sampling of all RNAs with slower dissociation from sequences with higher motif quality.
 
-## Motif quality affects ScPuf3-bound transcripts in vivo
+### Motif quality affects ScPuf3-bound transcripts in vivo
 
 The ability of Puf3 to discriminate between similar sequences is likely to play a role in defining the mRNAs within its regulatory network. To examine the contribution of RNA motif quality to Puf3 binding in vivo, we analyzed several published studies of S. cerevisiae Puf3. The mRNAs that contain Puf3 motifs are different between species, but we expected motif quality to be similarly important in all organisms (Hogan et al., 2015). Thus, we applied our in vitro findings using S. pombe proteins to a computational analysis of S. cerevisiae Puf3.
 
 We compiled a list of 1331 putative ScPuf3 mRNA targets from three published sources. The first study of transcriptome-wide ScPuf3 binding identified 220 targets by RNA immunoprecipitation followed by microarray analysis (RIP-chip) (Gerber et al., 2004). A more recent study using RNA immunoprecipitation followed by sequencing (RIP-seq) identified 1132 significantly enriched transcripts (Kershaw et al., 2015): the larger number of targets identified was attributed to the improved sensitivity of deep sequencing. A third study detected in vivo binding of ScPuf3 to 476 mRNAs using an RNA-tagging method (Lapointe et al., 2015). While there is substantial overlap between the binding targets from each list, 74% of mRNAs were identified in only one of the three studies (Figure 6A). The set of mRNAs that are direct targets of ScPuf3 regulation therefore remains unclear.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig6-v2.jpg)
+
+**Figure 6.:** (A) Overlap between the putative mRNAs bound by S.cerevisiae Puf3 determined by RIP-seq (Kershaw et al., 2015), RIP-chip (Gerber et al., 2004) and RNA-tagging (Lapointe et al., 2015). The numbers of mRNAs identified in each study is given. (B) Consensus motif identified from the complete set of putative ScPuf3 mRNA targets. Definition of categories of Puf3 motif quality is shown below. (C) Diagram showing RNA motif quality and location in mRNAs that increase in abundance upon PUF3 deletion (Kershaw et al., 2015). (D) ScPuf3 binding versus RNA motif quality and location. Median enrichment rank is indicated with horizontal line. Statistical significance was evaluated with a Mann-Whitney rank comparison test. **, p=0.01; ***, p=0.001. (E) mRNAs with high quality ScPuf3-target motifs encode proteins related to mitochondrial biogenesis.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40670/elife-40670-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Comparison of the encoded functions of mRNAs identified as targets of ScPuf3 by different methods. (B) Within a single motif category, mRNAs encoding proteins related to mitochondrial biogenesis are more enriched in ScPuf3 binding. Statistical significance was evaluated with a Mann-Whitney rank comparison test. **p=0.01; ***p=0.001. (C) Comparison of RNA sequence context of motifs in category 4 between mRNAs that encode mitochondrial biogenesis proteins and those that do not.
 
 We began by computationally identifying the most enriched sequence motif in the complete set of 1331 mRNAs using MEME (Bailey et al., 2015). This had seven conserved nucleotides within an 8-nt motif (UGUANAUA), and was present in 627 mRNAs (41% of total) (Figure 6B, top). The nucleotide at position five is variable, consistent with previous analyses of transcriptome-wide data (Gerber et al., 2004; Kershaw et al., 2015).
 
@@ -128,7 +164,7 @@ mRNAs that increase in steady-state abundance upon deletion of PUF3 represent hi
 
 We examined whether motif quality is correlated with the amount of ScPuf3 bound to mRNAs in vivo and found that transcripts that were most enriched in ScPuf3 immunoprecipitation experiments (Kershaw et al., 2015) had motif 1, 2 or 3 located in their 3ʹ-UTR (Figure 6D and Supplementary file 1). In contrast, transcripts containing a group 4 motif, or a mismatch within the core seven nucleotides, generally had less ScPuf3 bound. Interestingly, mRNAs with high quality motifs located within the coding sequence were detected but were consistently bound by less ScPuf3. Whether this reflects a lower occupancy of ScPuf3, or a reduced stability of the interaction, is unknown. In summary, RNA sequence is an excellent predictor of ScPuf3 binding in vivo.
 
-## Motif quality defines a functionally homogeneous regulatory network
+### Motif quality defines a functionally homogeneous regulatory network
 
 In S. cerevisiae, Puf3 is a regulator of mitochondrial function (Lee and Tu, 2015; Saint-Georges et al., 2008). Consistent with this, targets of ScPuf3 include mRNAs that encode proteins localized to the mitochondria and factors involved in the oxidative phosphorylation pathway (Gerber et al., 2004; Kershaw et al., 2015; Lapointe et al., 2015; Lapointe et al., 2018). Many transcripts identified as targets, however, show no clear link to this role (Kershaw et al., 2015). An important question therefore remains whether the role of ScPuf3 is limited to mitochondrial regulation.
 
@@ -144,7 +180,7 @@ The recruitment of enzymatic multi-protein complexes by RNA-binding adaptor prot
 
 **Figure 7.:** (A) RNA-binding proteins (RBPs) promote targeted deadenylation by simultaneously binding to RNA via an RNA-binding domain (RBD) and to Ccr4-Not via a low-complexity region. These interactions can be regulated by post-translational modifications. (B) Model for priority-based binding of Puf3 to RNA. (C) Scheme for defining target sequences of RNA-binding proteins.
 
-## Ccr4-Not recruitment by RNA-binding proteins
+### Ccr4-Not recruitment by RNA-binding proteins
 
 RNA-binding proteins that interact with the mRNA decay machinery typically contain a canonical RNA-binding domain, and regions of low sequence complexity that are predicted to be structurally disordered (Jonas and Izaurralde, 2013). Short linear motifs within these regions can adopt secondary structure, and this may facilitate interaction with other proteins, including Ccr4-Not (Bhandari et al., 2014; Fabian et al., 2013; Raisch et al., 2016; Sgromo et al., 2017; Stowell et al., 2016). Recent work showed that Drosophila Nanos utilizes two short linear motifs to contact the NOT1 and NOT3 subunits of Ccr4-Not (Raisch et al., 2016). Likewise, the N- and C-terminal regions of human TTP interact with the CNOT1 and the CNOT9 subunits respectively (Bulbrook et al., 2018; Fabian et al., 2013; Lykke-Andersen and Wagner, 2005). We show that multiple regions within fission yeast Puf3 and Zfs1 contribute to Ccr4-Not recruitment, and these are distributed throughout the 300–400 amino acid region that is predicted to be predominantly disordered. Thus, the multi-partite mode of interaction for Puf3 and Zfs1 may be a general feature of RNA-binding proteins that interact with Ccr4-Not. The in vitro deadenylation assays described here represent a powerful tool for testing the importance of particular sequence regions in interaction partners and evaluating their redundancy.
 
@@ -152,7 +188,7 @@ The Pumilio family of RNA-binding proteins appeared to represent an exception to
 
 Intrinsically disordered regions are common sites of post-translational modification such as phosphorylation. TTP is a phosphorylation target in the p38 MAPK pathway, and this disrupts the recruitment of Ccr4-Not (Marchese et al., 2010). Similarly, phosphorylation occurs throughout the low-complexity region of S. cerevisiae Puf3, and this stops the rapid decay of transcripts to which it is bound (Lee and Tu, 2015). Given that the low-complexity region is involved in the recruitment of Ccr4-Not, it is likely that phosphorylation regulates this interaction. Rates of mRNA decay may be tuned by the extent of phosphorylation within the extended interface that contacts Ccr4-Not.
 
-## A priority model of selective RNA binding
+### A priority model of selective RNA binding
 
 The correct recognition of mRNA targets by RNA-binding proteins is critical for recruitment of effector complexes, such as Ccr4-Not. We found that Puf3 and Zfs1 stimulate deadenylation of off-target RNAs, but they can discriminate between mixtures of RNA substrates to select their target. Titration of Puf3 under conditions where two similar RNA sequences were present showed that binding of RNA occurs by a model of priority: Puf3 binds to an optimal target when it is available, but after saturation of all available sites, it will readily associate with a sub-optimal target (Figure 7B). This model of RNA target selection, where an RNA-binding protein has a distribution of affinities for different RNA sequences, challenges the model where there is a sharp distinction between affinities for specific and non-specific RNAs (Jankowsky and Harris, 2015). The relative abundance of RNA-binding proteins and RNA therefore determines occupancy, and is integral to the definition of the target motif.
 
@@ -160,7 +196,7 @@ We propose that tight control of RNA-binding protein abundance in the cell is es
 
 Increasing the level of human PUM1 by overexpression causes a number of mRNAs to be repressed, indicative of off-target RNA binding, and PUM1 availability may be regulated by a long noncoding RNA (Lee et al., 2016; Tichon et al., 2018). In mice, PUM1 is expressed constitutively, but heterozygotes that contain only a single gene copy display reduced PUM1 protein levels (Gennarino et al., 2015). This haploinsufficiency produces severely impaired neuronal function that is due, at least in part, to impaired destabilization of the ATAXIN1 mRNA. Thus, consistent with our model of RNA binding, the dosage of RNA-binding proteins is also important to maintain on-target mRNA expression.
 
-## Identification of mRNA targets of RNA-binding proteins
+### Identification of mRNA targets of RNA-binding proteins
 
 Even when the consensus motif recognized by an RNA-binding protein is known, it is often difficult to predict which transcripts are targeted by that protein in vivo: A high affinity interaction is not sufficient for the sequence to be a preferred target, as is exemplified by the tight binding of fission yeast Puf3 to the RNA motif recognized by ScPuf5 (Figure 4A). Our kinetic analysis of Puf3 binding to RNA revealed a fast rate of association with RNA that does not contain the optimal sequence motif. We conclude that Puf3-RNA dissociation rates are likely major contributors to the rates of deadenylation.
 
@@ -172,7 +208,479 @@ How specific mRNAs can be rapidly and specifically targeted for degradation in r
 
 ## Materials and methods
 
-## Protein purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BL21 star (DE3)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C601003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli DH5α (DE3)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>18258012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11496015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ccr4-Not</td>
+      <td>PMID: 27851962</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in Sf9 cells following infection with viruse produced from LP_Ccr4Not</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ccr4-Not (Ccr4-inactive)</td>
+      <td>PMID: 27851962</td>
+      <td></td>
+      <td>Purified recombinant protein with Ccr4(E387) expressed in Sf9 cells following infection with virus produced from LP_P22-60</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ccr4-Not (Caf1-inactive)</td>
+      <td>PMID: 27851962</td>
+      <td></td>
+      <td>Purified recombinant protein with Caf1(D53A) expressed in Sf9 cells followinginfection with virus produced from LP_P22-61</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Puf3</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed inE. coli BL21star (DE3) following transformation with LP_P22-27</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Puf3(Δ63)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed inE. coli BL21star (DE3) followingtransformation with LP_P22-28</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Puf3(Δ125)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed inE. coli BL21 star (DE3) following transformation with LP_P22-29</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Puf3(Δ181)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coli BL2 1 star (DE3) following transformation with LP_P22-30</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Puf3(Δ240)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coli BL21 star (DE3) following transformation with LP_P22-31</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Puf3(Δ300)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coli BL21star (DE3) following transformation with LP_P22-32</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Puf3(Δ378)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant proteinexpressed inE. coli BL21 star (DE3) following transformation with LP_P22-33</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Puf3(Mut)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed inE. coli BL21star (DE3) following transformation with LP_P22-34</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Puf3(PUM)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coli BL21 star (DE3) following transformation with LP_P22-35</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Zfs1(FL)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant proteinexpressed in E. coli BL21 star (DE3) following transformation with LP_P22-36</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Zfs1(Δ34)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coli BL21star (DE3) followingtransformation with LP_P22-37</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Zfs1(Δ71)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coliBL21 star (DE3) following transformation with LP_P22-38</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Zfs1(Δ182)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed inE. coli BL21 star (DE3) followingtransformation with LP_P22-39</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Zfs1(Δ248)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coli BL21 star (DE3) following transformation with LP_P22-40</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Zfs1(Δ322)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant proteinexpressed in E. coli BL21 star (DE3) following transformation with LP_P22-41</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MBP-Zfs1(Mut)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coli BL21 star (DE3) following transformation with LP_P22-42</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Zfs1(TZF)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Purified recombinant protein expressed in E. coli BL21star (DE3) following transformation with LP_P22-43</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pab1</td>
+      <td>PMID: 29932902</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quikchange Lightning Multi Site-Directed Mutagenesis Kit</td>
+      <td>Agilent Technologies</td>
+      <td>210513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning Kit</td>
+      <td>Takara Bio</td>
+      <td>121416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion High-Fidelity DNA Polymerase</td>
+      <td>New England BioLabs</td>
+      <td>M0530S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MultiBac-Ccr4Not</td>
+      <td>PMID: 27851962</td>
+      <td>LP_Ccr4Not</td>
+      <td>MultiBac expression vectorfor S. pombe Ccr4-Not</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MultiBac-Ccr4Not(Ccr4 E387A)</td>
+      <td>PMID: 27851962</td>
+      <td>LP_P22-60</td>
+      <td>MultiBac expression vector forS. pombe Ccr4-Not (Ccr4 E387A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MultiBac-Ccr4Not(Caf1 D53A)</td>
+      <td>PMID: 27851962</td>
+      <td>LP_P22-61</td>
+      <td>MultiBac expression vector forS. pombe Ccr4-Not (Caf1 D53A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Puf3(FL)</td>
+      <td>this paper</td>
+      <td>LP_P22-27</td>
+      <td>pMAL-c2x expression vector forS. pombe Puf3(FL) (res1-734)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Puf3(Δ63)</td>
+      <td>this paper</td>
+      <td>LP_P22-28</td>
+      <td>pMAL-c2x expression vector for S. pombe Puf3(Δ63) (res63-734)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Puf3(Δ125)</td>
+      <td>this paper</td>
+      <td>LP_P22-29</td>
+      <td>pMAL-c2x expression vector forS. pombe Puf3(Δ125) (res125-734)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Puf3(Δ181)</td>
+      <td>this paper</td>
+      <td>LP_P22-30</td>
+      <td>pMAL-c2x expression vector forS. pombe Puf3(Δ181) (res181-734)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Puf3(Δ240)</td>
+      <td>this paper</td>
+      <td>LP_P22-31</td>
+      <td>pMAL-c2x expression vector for S. pombe Puf3(Δ240) (res240-734)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Puf3(Δ300)</td>
+      <td>this paper</td>
+      <td>LP_P22-32</td>
+      <td>pMAL-c2x expression vector for S. pombe Puf3(Δ300) (res300-734)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Puf3(Δ378)</td>
+      <td>this paper</td>
+      <td>LP_P22-33</td>
+      <td>pMAL-c2x expression vector for S. pombe Puf3(Δ378) (res378-734)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Puf3(Mut)</td>
+      <td>this paper</td>
+      <td>LP_P22-34</td>
+      <td>pMAL-c2x expression vector for S. pombe Puf3(Mut) (res1-734; Y449A, Y671A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX6P-2-Puf3(PUM)</td>
+      <td>this paper</td>
+      <td>LP_P22-35</td>
+      <td>pGEX6P-2 expression vector for S. pombe Puf3(PUM) (res378-714)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Zfs1(FL)</td>
+      <td>this paper</td>
+      <td>LP_P22-36</td>
+      <td>pMAL-c2x expression vector forS. pombe Zfs1(FL) (res1-404)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Zfs1(Δ34)</td>
+      <td>this paper</td>
+      <td>LP_P22-37</td>
+      <td>pMAL-c2x expression vector forS. pombe Zfs1(Δ34) (res34-404)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Zfs1(Δ71)</td>
+      <td>this paper</td>
+      <td>LP_P22-38</td>
+      <td>pMAL-c2x expression vector forS. pombe Zfs1(Δ71) (res71-404)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Zfs1(Δ182)</td>
+      <td>this paper</td>
+      <td>LP_P22-39</td>
+      <td>pMAL-c2x expression vector for S. pombe Zfs1(Δ182) (res182-404)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x- Zfs1(Δ248)</td>
+      <td>this paper</td>
+      <td>LP_P22-40</td>
+      <td>pMAL-c2x expression vector for S. pombe Zfs1(Δ248) (res248-404)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x- Zfs1(Δ322)</td>
+      <td>this paper</td>
+      <td>LP_P22-41</td>
+      <td>pMAL-c2x expression vector for S. pombe Zfs1(Δ322) (res322-404)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c2x-Zfs1(Mut)</td>
+      <td>this paper</td>
+      <td>LP_P22-42</td>
+      <td>pMAL-c2x expression vector for S. pombe Zfs1(Mut) (res1-404; F349A, F387A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX6P-2-Zfs1(TZF)</td>
+      <td>this paper</td>
+      <td>LP_P22-43</td>
+      <td>pGEX6P-2 expression vector forS. pombe Zfs1(TZF) (res699-769)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX6P-2 -Pab1</td>
+      <td>PMID: 29932902</td>
+      <td>LP_P22-11</td>
+      <td>pGEX6P-2 expression vector forS. pombe Pab1 (res80-653)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 6</td>
+      <td>GraphPad</td>
+      <td>https://www.graph pad.com/scientific- software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>switchANALYSIS</td>
+      <td>Dynamic Biosensors</td>
+      <td>https://www.dynamic- biosensors. com/software/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuant</td>
+      <td>GE Healthcare</td>
+      <td>TL 5.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Insect-XPRESS protein-free insect cell medium withL-glutamine</td>
+      <td>Lonza</td>
+      <td>12-730Q</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>11836170001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Desthiobiotin</td>
+      <td>IBA</td>
+      <td>2-1000-001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Imidazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>I5513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Formamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>11814320001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TEMED</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ammonium persulfate (APS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A3678</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYBR Safe DNA Gel Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>S33102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYBR Green II RNA Gel Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>S7586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni-NTA Agarose</td>
+      <td>QIAGEN</td>
+      <td>30210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutathione Sepharose 4B</td>
+      <td>GE Healthcare</td>
+      <td>17075601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amicon Ultra Centrifugal Filter Units</td>
+      <td>Millipore</td>
+      <td>UFC901096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TWEEN 20</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9416</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification
 
 Intact Ccr4-Not complex was purified as described previously after overexpression of the seven core subunits of the Schizosaccharomyces pombe complex (Ccr4, Caf1, Not1, Not2, Not3, Not4/Mot2 and Rcd1/Caf40) in Sf9 cells (Stowell et al., 2016). The Caf1-Ccr4 heterodimeric complex was prepared as described previously from the Sf9 lysate used for Ccr4-Not expression (Webster et al., 2018). S. pombe Pab1 (amino acids 80–653) was prepared as described previously (Webster et al., 2018).
 
@@ -182,7 +690,7 @@ Puf3 and Zfs1 were expressed as N-terminal MBP fusions in BL21 Star (DE3) E. col
 
 The RNA-binding PUM domain of S. pombe Puf3 was defined as residues 378–714, while the RNA-binding TZF domain of S. pombe Zfs1 was defined as residues 699–769. DNA sequences encoding the RNA-binding domains of Puf3 (Puf3PUM) and Zfs1 (Zfs1TZF) were amplified from vectors encoding full-length proteins using primers Puf3_PUM_Fwd and Puf3_PUM_Rev or Zfs1_TZF_Fwd and Zfs1_TZF_Rev (Supplementary file 3). These were inserted into pGEX-6P-2 expression vector using an In-Fusion HD Cloning Kit (Clontech). Puf3PUM and Zfs1TZF were expressed as N-terminal GST fusions in BL21 Star (DE3) E. coli (Thermo Fisher Scientific). Expression and cell lysis were performed as described for full-length MBP-Puf3 and MBP-Zfs1. Clarified lysate was applied to glutathione sepharose 4B affinity resin (1 ml bed volume per 2 l culture; New England Biolabs), and incubated with rotation for 1 hr at 4°C. Resin was separated from lysate with an Econo-Column (Bio-Rad) and washed three times with 50 ml of RBP buffer. Protein was eluted from the resin in 20 ml of glutathione elution buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 0.1 mM TCEP, 50 mM glutathione). The GST tag was cleaved by incubation with 1 mg of 3C protease for 16 hr at 4°C. Cleaved protein was buffer-exchanged into 20 mM Bis-Tris pH 6.5, 50 mM NaCl, 0.1 mM TCEP with a HiPrep 26/10 desalting column (GE Healthcare). The sample was applied to a Mono S 5/50 GL cation-exchange column (GE Healthcare) and eluted over 20 column volumes into buffer supplemented to 1 M NaCl. Pure protein eluted at ~200 mM NaCl, and samples were pooled and stored at −80°C.
 
-## Deadenylation assays
+### Deadenylation assays
 
 Deadenylation activity was measured as previously described (Webster et al., 2017). Puf3 and Zfs1 were prepared in 20 mM HEPES pH 7.4, 50 mM NaCl, 0.1 mM TCEP and added to a final concentration of 250 nM in the reaction, unless otherwise indicated. RBPs were incubated with RNA for 10 min at 22°C prior to the addition of enzyme to allow protein-RNA binding to reach equilibrium. Puf3-target-A30 and Zfs1-target-A30 RNA were synthesized with a 5ʹ 6-FAM fluorophore label (Integrated DNA Technologies). The RNAs were designed with a consensus Puf3 or Zfs1 binding site ending six nucleotides upstream of a poly(A) tail, within a 23 nt non-poly(A) sequence. 200 nM RNA was used in each reaction. Ccr4-Not and Caf1-Ccr4 were prepared at 1 μM (10×) in 20 mM HEPES pH 7.4, 400 mM NaCl, 2 mM Mg(OAc)2, 0.1 mM TCEP and added to a final concentration of 100 nM in the reaction. Reactions were performed in 20 mM PIPES pH 6.8, 10 mM KCl, 45 mM NaCl, 2 mM Mg(OAc)2, 0.1 mM TCEP (includes components added with protein factors) at 22°C.
 
@@ -190,23 +698,106 @@ Reactions were stopped at the indicated time points by addition of 2 × denatu
 
 For RNA competition experiments, Zfs1-target-A30 and ScPuf3(5U)-target-A30 RNAs were synthesized with a 5ʹ-Alexa647 fluorophore label, and Puf5-target-A30 with a 5ʹ-Cy3 fluorophore label (Integrated DNA Technologies). Reactions contained 100 nM of each RNA, mixed prior to addition of protein factors. Gels were scanned twice with a Typhoon FLA-7000 with excitation at 478 nm (fluorescein detection) and either 633 nm (Alexa647 detection) or 573 nm (Cy3 detection). Images were superimposed with color overlay.
 
-## Electrophoretic mobility shift assays
+### Electrophoretic mobility shift assays
 
 Binding reactions (10 μl) were prepared by adding protein at the indicated concentration to RNA (200 nM) in 20 mM PIPES pH 6.8, 10 mM KCl, 90 mM NaCl, 2 mM Mg(OAc)2, 0.1 mM TCEP. For RNA competition experiments, 100 nM of each RNA was mixed prior to addition of protein. The sample was incubated for 15 min at 22°C before the addition of 6 × loading dye (30% glycerol and 0.2% w/v orange G). Samples were loaded onto 6% TBE-polyacrylamide non-denaturing gels and electrophoresis was performed at 100 V in 1 × TBE running buffer. Gels were scanned with a Typhoon FLA-7000 with excitation at 478 nm (fluorescein detection) and 633 nm (Alexa647 detection).
 
-## Fluorescence polarization assays
+### Fluorescence polarization assays
 
 A two-fold protein dilution series was prepared in 20 mM HEPES pH 7.4, 150 mM NaCl. Proteins were incubated for 2 hr at 22°C with 0.2 nM 5ʹ 6-FAM RNA (synthesized by IDT). Fluorescence polarization was measured with a PHERAstar Plus microplate reader (BMG Labtech). Dissociation constants were estimated by non-linear regression in GraphPad Prism 6. Error bars indicate the standard deviation in three replicate measurements.
 
-## SwitchSENSE kinetic analysis
+### SwitchSENSE kinetic analysis
 
 Kinetic measurements were performed using a DRX series instrument with a MPC-48–2-Y1 chip (Dynamic Biosensors). Hybrid oligonucleotides were synthesized (IDT) with the RNA of interest (Table 1) at the 5ʹ end followed by single-stranded DNA complementary in sequence to the fluorescently labelled oligonucleotide on the chip. Annealing was performed by flowing 500 nM oligonucleotide over the chip for 4 min in a buffer of 20 mM HEPES pH 7.4, 40 mM NaCl and 0.001% Tween-20.
+
+**Table 1.**
+ Sequences of RNAs used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence</th>
+      <th>Experiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Zfs1 target A30</td>
+      <td>AAUCAUCCUUAUUUAUUACCAUU[A]30</td>
+      <td>Deadenylation</td>
+    </tr>
+    <tr>
+      <td>Puf3 target A30 / Puf3 target (5A) A30</td>
+      <td>AACUGUUCCUGUAAAUACGCCAG[A]30</td>
+      <td>Deadenylation</td>
+    </tr>
+    <tr>
+      <td>Puf3 target (5U) A30</td>
+      <td>AACUGUUCCUGUAUAUACGCCAG[A]30</td>
+      <td>Deadenylation</td>
+    </tr>
+    <tr>
+      <td>Puf5 target</td>
+      <td>AACUGUUGUUGUAUGUACGCCAG[A]30</td>
+      <td>Deadenylation</td>
+    </tr>
+    <tr>
+      <td>ARE/Zfs1 target</td>
+      <td>AUUAUUUAUU</td>
+      <td>Fluorescence polarization</td>
+    </tr>
+    <tr>
+      <td>PRE/Puf3 target (5A)</td>
+      <td>ACCUGUAAAUA</td>
+      <td>Fluorescence polarization</td>
+    </tr>
+    <tr>
+      <td>Puf3 target (5U)</td>
+      <td>ACCUGUAUAUA</td>
+      <td>Fluorescence polarization</td>
+    </tr>
+    <tr>
+      <td>Puf5 target</td>
+      <td>AGUUGUAUGUA</td>
+      <td>Fluorescence polarization</td>
+    </tr>
+    <tr>
+      <td>A30</td>
+      <td>[A]30</td>
+      <td>Fluorescence polarization</td>
+    </tr>
+    <tr>
+      <td>Puf3 target (5A)</td>
+      <td>ACCUGUAAAUAGGCG-[*DNA]</td>
+      <td>SwitchSENSE</td>
+    </tr>
+    <tr>
+      <td>Puf3 target (5U)</td>
+      <td>ACCUGUAUAUAGGCG-[*DNA]</td>
+      <td>SwitchSENSE</td>
+    </tr>
+    <tr>
+      <td>Puf5 target</td>
+      <td>AGUUGUAUGUAGGCG-[*DNA]</td>
+      <td>SwitchSENSE</td>
+    </tr>
+    <tr>
+      <td>Poly(A)</td>
+      <td>[A]15-[*DNA]</td>
+      <td>SwitchSENSE</td>
+    </tr>
+  </tbody>
+</table>
+
+_*DNA for hybridization to nanolever:ATCAGCGTTCGATGCTTCCGACTAATCAGCCATATCAGCTTACGACTA_
 
 Purified Puf3PUM (residues 378–714) was applied to the chip in binding buffer (20 mM HEPES pH 7.4, 150 mM NaCl and 0.001% Tween-20) at 20°C with a flow rate of 30 μl/min. For association measurements, a series of protein concentrations was tested: 5, 10, 15, 20, 25, 30, 50, 70 nM for ScPuf3- and ScPuf5-target RNA; 50, 100, 150, 200 nM for poly(A). The dynamic response represents the change in nanolever switch speed on the timescale 0–4 μsec as described previously (Langer et al., 2013). The observed association rate (Kobs) was estimated by fit of an exponential curve to data points collected with a sampling rate of 1 s with GraphPad Prism 6. Error bars indicate the standard error in three replicate measurements. Association rate (kon) was calculated by linear regression analysis of the protein concentration series.
 
 For analysis of dissociation rate, 20 nM Puf3PUM was loaded onto RNA as described above. Binding buffer was then flowed across the chip at 20°C with a flow rate of 30 μl/min. Data points from dissociation experiments with ScPuf3-target and ScPuf5-target RNAs were averaged in 10 s intervals to improve the signal-to-noise. Dissociation rates (koff) were estimated by fitting of an exponential function with GraphPad Prism 6.
 
-## Bioinformatic analysis of ScPuf3 mRNA targets
+### Bioinformatic analysis of ScPuf3 mRNA targets
 
 Saccharomyces cerevisiae mRNAs that are candidates for Puf3 regulation were collated from published sources (Gerber et al., 2004; Kershaw et al., 2015; Lapointe et al., 2015). Proportional Venn diagram of gene overlap was generated with Biovenn (Hulsen et al., 2008) and redrawn for publication. 3ʹ-UTR sequences were defined using poly(A) sites previously identified (Ozsolak et al., 2010). The most statistically enriched RNA motif from the combined set of 1331 mRNAs was identified with MEME (Bailey et al., 2015). Analysis of sequence context around the target motifs (10 nucleotides in each direction) was performed with WebLogo 3 (Crooks et al., 2004).
 

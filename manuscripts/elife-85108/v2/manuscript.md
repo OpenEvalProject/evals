@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Ear Institute, University College London London United Kingdom
+1. Ear Institute, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 2. Perceptual Technologies London United Kingdom
 
 † Corresponding author
@@ -43,7 +43,7 @@ We recorded neural activity from the IC of anesthetized gerbils using electrode 
 
 **Figure 1.:** (a) Schematic diagram showing the geometry of custom-designed electrode arrays for large-scale recordings in relation to the gerbil IC (center), along with the speech syllable ‘sa’ (left) and the neural activity that it elicited during an example recording (right). Each image of the neural activity corresponds to one hemisphere, with each row showing the average multi-unit activity recorded on one electrode over repeated presentations of the syllable, with the units arranged according to their location within the IC. The activity for three units with different center frequencies (CF; frequency for which sensitivity to pure tones is maximal) are shown in detail. (b) Schematic diagram showing the method for separating signal and noise in neural activity. The signal is obtained by averaging responses across repeated presentations of identical sounds. The noise is the residual activity that remains after subtracting the signal from the response to each individual presentation. (c) Signal and noise in neural activity. Left: total, signal, and noise variance in neural activity for units recorded from normal hearing animals (horizontal line indicates median, thick vertical line indicates 25th through 75th percentile, thin vertical line indicates 5th through 95th percentile; n = 2556). Right: total, signal, and noise correlation in neural activity for pairs of units recorded from normal hearing animals (n = 544,362).
 
-## The neural signal manifold is low dimensional
+### The neural signal manifold is low dimensional
 
 We began by analyzing activity from animals with normal hearing. As a first step toward characterizing the neural code for speech at the network level, we determined whether there was shared variance across units that would allow us to reduce the dimensionality of the activity patterns. Previous work has shown that the correlations in IC activity are dominated by ‘signal’ (features of activity that are reproducible across repeated trials and, thus, convey acoustic information) rather than ‘noise’ (features of activity that vary from trial-to-trial and reflect intrinsic noise or fluctuations in brain state) (Figure 1b; Garcia-Lazaro et al., 2013).
 
@@ -51,19 +51,560 @@ Signal correlations were also dominant in our recordings: although signal varian
 
 We partitioned the recordings from each animal into two sets: a training set that was used to identify the principal components (PCs) of the activity (Figure 2a, step 1) and a test set with two repeated trials that was used to measure the variance that could be explained by each PC. To measure the total variance explained (Figure 2a, steps 2a–c), we projected the activity from test trial 1 onto the PCs, then reconstructed the original activity from the same trial using the PC projection and compared the reconstruction to the original activity. The overall dimensionality of the neural activity was high, as expected, with a large number of PCs required for the reconstruction to explain 95% of the total variance in the original activity (Figure 2b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85108/elife-85108-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic diagram showing the method for identifying the neural signal manifold from recordings of neural activity. Step 1: principal component analysis (PCA) is performed on a subset of the recordings allocated for training. Step 2a: a subset of recordings allocated for testing are projected onto the principal components (PCs) from step 1. Step 2b: The projections from step 2a are used to reconstruct the test recordings. Step 2c: the reconstructions from step 2b are compared to the test recordings from step 2a to determine the total variance explained. Step 3: the reconstructions from step 2b are compared to another set of test recordings (made during a second presentation of the same sounds) to determine the signal variance explained. Step 4: the projections from step 2a for one animal are compared to the projections for another animal to determine the similarity of the signal dynamics between animals. (b) Total variance explained in step 2c as a function of the number of PCs used for the reconstruction. Each thick line shows the results for one normal hearing animal (n = 6). The thin line denotes 95% variance explained. (c) Signal variance explained in step 3 as a function of the number of PCs used for the reconstruction. (d) Percent of variance explained by each PC that corresponds to neural signal (rather than neural noise) for an example animal. (e) Variance explained in step 4 for each pair of normal hearing animals. (f, g) Total variance explained in step 2c and signal variance explained in step 3 for animals with hearing loss (n = 6). (h) Variance explained in step 4 for each pair of animals with hearing loss and each pair of animals with different hearing status. (i) Distributions of variance explained in step 4 for each pair of normal hearing animals (n = 15), each pair of animals with hearing loss (n = 15), and each pair of animals with different hearing status (n = 36). Median values were compared via Kruskal–Wallis one-way ANOVA and Tukey–Kramer post hoc tests, ***p<0.001, **p<0.01, *p<0.05, ns indicates not significant. For full details of statistical tests, see Table 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85108/elife-85108-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) ABR traces for two example ears. Each small box shows the average response to a tone at the specified frequency and intensity. The time points (30 ms) in each response that were used for threshold estimation are colored black. The boxes corresponding to intensities below the threshold for each frequency are colored gray. (b) ABR thresholds as a function of frequency in normal-hearing (dark blue) and noise-exposed (light blue) animals (each line shows one ear from one animal). The thick red line shows the average ABR threshold shift for noise-exposed animals relative to the mean of all animals with normal hearing. (c) Hearing aid gain as a function of frequency for speech at 60 dB SPL with gain and compression parameters fit to the average hearing loss after noise exposure. The values shown are the average across 5 min of continuous speech.
+
+**Table 1.**
+ Details of statistical analyses.This table provides the details for the statistical analyses in this study, including sampling unit, sample sizes, and p-values. All comparisons were made using Kruskal–Wallis one-way ANOVA with post hoc Tukey–Kramer tests to compute pairwise p-values.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure 2</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Figure 6</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Figure 2i</th>
+      <th colspan="3">Sampling unit: pairs of animals</th>
+      <th>Figure 6e</th>
+      <th colspan="3">Sampling unit: pairs of animals</th>
+    </tr>
+    <tr>
+      <th>Groups:</th>
+      <th></th>
+      <th colspan="2">Comparisons:</th>
+      <th>Groups:</th>
+      <th></th>
+      <th colspan="2">Comparisons:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p=0.08</td>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td colspan="2">2. HL\HL (n = 15)</td>
+      <td>1 vs. 3</td>
+      <td>p&lt;1e-7</td>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p=0.007</td>
+    </tr>
+    <tr>
+      <td colspan="2">3. NH\HL (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>1 vs. 4</td>
+      <td>p=0.23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">4. NH\HA (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2 vs. 4</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3 vs. 4</td>
+      <td>p=0.29</td>
+    </tr>
+    <tr>
+      <td>Figure 3e</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Figure 6f</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+    </tr>
+    <tr>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p=0.71</td>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+    </tr>
+    <tr>
+      <td colspan="2">2. HL\HL (n = 15)</td>
+      <td>1 vs. 3</td>
+      <td>p&lt;1e-10</td>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td colspan="2">3. NH\HL (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-10</td>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>1 vs. 4</td>
+      <td>p=0.002</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">4. NH\HA (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2 vs. 4</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td>Figure 4f</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+      <td></td>
+      <td></td>
+      <td>3 vs. 4</td>
+      <td>p&lt;1e-4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+      <td>Figure 6g</td>
+      <td colspan="3">Sampling unit: animals</td>
+    </tr>
+    <tr>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p&lt;1e-3</td>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+    </tr>
+    <tr>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+      <td colspan="2">1. NH (n = 6)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">2. HL (n = 6)</td>
+      <td>1 vs. 3</td>
+      <td>p=0.011</td>
+    </tr>
+    <tr>
+      <td>Figure 4f</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+      <td colspan="2">3. HL* (n = 6)</td>
+      <td>1 vs. 4</td>
+      <td>p=0.057</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">4. HA (n = 6)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-3</td>
+    </tr>
+    <tr>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+      <td></td>
+      <td></td>
+      <td>2 vs. 4</td>
+      <td>p&lt;1e-4</td>
+    </tr>
+    <tr>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+      <td></td>
+      <td></td>
+      <td>3 vs. 4</td>
+      <td>p=0.86</td>
+    </tr>
+    <tr>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p&lt;1e-4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+      <td>Figure 7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Figure 7e</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 5f</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p&lt;1e-4</td>
+    </tr>
+    <tr>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>1 vs. 4</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p=0.99</td>
+      <td colspan="2">4. NH\HA (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+      <td></td>
+      <td></td>
+      <td>2 vs. 4</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3 vs. 4</td>
+      <td>p=0.056</td>
+    </tr>
+    <tr>
+      <td>Figure 5g</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Figure 7f</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+    </tr>
+    <tr>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+    </tr>
+    <tr>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p=0.64</td>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>1 vs. 4</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td>Figure 5j</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+      <td colspan="2">4. NH\HA (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2 vs. 4</td>
+      <td>p&lt;1e-7</td>
+    </tr>
+    <tr>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+      <td></td>
+      <td></td>
+      <td>3 vs. 4</td>
+      <td>p=0.99</td>
+    </tr>
+    <tr>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p=0.89</td>
+      <td>Figure 7g</td>
+      <td colspan="3">Sampling unit: animals</td>
+    </tr>
+    <tr>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+    </tr>
+    <tr>
+      <td>Figure 5k</td>
+      <td colspan="3">Sampling unit: pairs of animals</td>
+      <td colspan="2">1. NH (n = 6)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">2. HL (n = 6)</td>
+      <td>1 vs. 3</td>
+      <td>p&lt;1e-5</td>
+    </tr>
+    <tr>
+      <td>Groups:</td>
+      <td></td>
+      <td colspan="2">Comparisons:</td>
+      <td colspan="2">3. HL* (n = 6)</td>
+      <td>1 vs. 4</td>
+      <td>p&lt;1e-6</td>
+    </tr>
+    <tr>
+      <td colspan="2">1. NH\NH (n = 15)</td>
+      <td>1 vs. 2</td>
+      <td>p&lt;1e-7</td>
+      <td colspan="2">4. HA (n = 6)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-4</td>
+    </tr>
+    <tr>
+      <td colspan="2">2. NH\HL (n = 36)</td>
+      <td>1 vs. 3</td>
+      <td>p=0.97</td>
+      <td></td>
+      <td></td>
+      <td>2 vs. 4</td>
+      <td>p&lt;1e-3</td>
+    </tr>
+    <tr>
+      <td colspan="2">3. NH\HL* (n = 36)</td>
+      <td>2 vs. 3</td>
+      <td>p&lt;1e-7</td>
+      <td></td>
+      <td></td>
+      <td>3 vs. 4</td>
+      <td>p=0.59</td>
+    </tr>
+  </tbody>
+</table>
+
+_NH: normal hearing; HL: hearing loss; HL*: hearing loss at best intensity; HA: hearing aid._
+
 To measure the signal variance explained (Figure 2a, step 3), we compared the same reconstructed activity to the original activity from test trial 2 (when using activity from one trial to reconstruct activity on another, only those features that reliably encode acoustic information across trials can be successfully reconstructed and, thus, only signal variance can be explained). The signal variance explained saturated quickly, indicating that the signal dimensionality was much lower than the overall dimensionality, with only a small number of PCs (between 5 and 10) required to explain 95% of the signal variance in the original activity (Figure 2c).
 
 These results suggest that the acoustic information in IC activity is restricted to a low-dimensional subspace, which we term the neural signal manifold, and that PCA is able to identify the dimensions that define this manifold. To confirm that PCA preferentially identified the signal manifold, we computed the fraction of the variance explained by each PC that was signal rather than noise (measured as the covariance between the activity on the two test trials when projected onto each PC relative to the overall variance after the same projection) and verified that it decreased with each successive PC (Figure 2d).
 
 If the signal manifold reflects something fundamental about auditory processing, then we should expect the activity within it, which we term the signal dynamics, to be similar across animals with the same hearing status. To measure the similarity of the signal dynamics across animals (Figure 2a, step 4), we projected the original activity for each animal onto its respective signal manifold and then determined how much of the variance in the activity from one animal could be explained by the activity from another (allowing for additional linear transformation). We found that the signal dynamics for different animals were remarkably similar, with the signal dynamics from one animal accounting for, on average, 96% of the variance in the signal dynamics from other animals (Figure 2e). This result gives us confidence that the signal manifold is indeed fundamental, and that our methods are sufficient to identify it robustly in individual animals.
 
-## Hearing loss distorts neural signal dynamics
+### Hearing loss distorts neural signal dynamics
 
 We next sought to use analysis of the signal manifold to better understand the impact of hearing loss on the neural code for speech at the network level. We induced sloping mild-to-moderate sensorineural hearing loss (Figure 2—figure supplement 1) by exposing gerbils (n = 6) to broadband noise using established protocols (Armstrong et al., 2022; Suberman et al., 2011). After waiting at least 1 mo for the effects of the hearing loss to stabilize, we made neural recordings while presenting the same speech and noise sounds and then performed the same manifold learning.
 
 The results for animals with hearing loss were similar to those for animals with normal hearing: the overall dimensionality of the neural activity was high (Figure 2f); the dimensionality of the signal manifold was low (Figure 2g; between 4 and 7 PCs required to explain 95% of the signal variance); and the signal dynamics were similar across animals (Figure 2h; 95% average variance explained), demonstrating again that the signal manifold is fundamental and robust. But the similarity between the signal dynamics of normal hearing animals and animals with hearing loss was much lower than that between animals with the same hearing status (Figure 2h and i; 78% average variance explained). This result indicates that the activity within the signal manifold of an animal with hearing loss is not linearly predictable from the activity within the signal manifold of a normal hearing animal and, thus, that the impact of hearing loss at the network level is a true nonlinear distortion that reshapes the neural code in a complex way.
 
-## DNNs enable accurate simulation of neural signal dynamics
+### DNNs enable accurate simulation of neural signal dynamics
 
 To develop an understanding of exactly how hearing loss impacts signal dynamics, further investigation is required. However, traditional approaches to manifold learning such as PCA are limited by the fact that they can only be applied to existing recordings. To overcome this limitation, we designed a DNN that allowed us to identify the signal manifold within the framework of an encoding model that maps sound to neural activity (Figure 3a). If the DNN can be trained to replicate neural activity with high accuracy for a wide range of sounds, it can then be used to probe the effects of hearing loss on signal dynamics using new sounds as needed.
 
@@ -81,9 +622,17 @@ We also assessed the similarity of the DNN-derived signal dynamics across animal
 
 To examine the degree to which the DNNs trained on speech were capable of predicting responses to other sounds, we compared recorded and DNN-generated responses to pure tones with different frequencies and intensities (Figure 3f). The DNNs performed well, explaining an average of 83% of the explainable variance in the recorded activity across animals. To further test the generality of the DNN models, we used transfer learning to test their ability to predict responses to new sounds for a new set of animals. If the DNN encoder really does capture transformations that are common to all animals with the same hearing status, then it should be possible to use a trained encoder from one animal to predict responses for a new animal after learning only a new linear readout (Figure 3g). For each of the DNN models trained on activity from one of the six normal hearing animals in our original dataset, we froze the encoder and retrained the linear readout for each of four new normal hearing animals. We initialized the readout weights for each unit in a new animal using the readout weights for a random unit from the original animal, and then optimized the weights using a relatively small sample (between 2 and 3.5 hr) of activity recorded from the new animal during the presentation of speech and moving ripples. We then used the new DNN model (the frozen encoder and the optimized readout) to predict responses from the new animal to sinusoidally amplitude modulated (SAM) broadband noise sounds with different modulation frequencies, modulation depths, and intensities. The new DNN models performed well, explaining an average of 85% of the explainable variance in the recorded activity across animals. While pure tones and SAM noise are only two of many possible sounds, these results provide encouraging evidence of the generality of the DNN models.
 
-## Hearing loss distorts spectral processing
+### Hearing loss distorts spectral processing
 
 Before continuing our investigation of the neural coding of speech, we first used the DNN to examine the impact of hearing loss on the processing of basic acoustic features. To assess spectral processing, we presented the DNN for each animal with a stream of pure tones with different frequencies and intensities and extracted the activations from the bottleneck layer (Figure 4a; we set the dimensionality of the bottleneck layer to 8 for this and all subsequent analyses). The frequency response areas (FRAs) for individual bottleneck channels resembled those that are typically observed for individual neurons in the IC: some exhibited a clear preferred frequency at low intensities and broader tuning at high intensities, while others had more complex shapes (Figure 4b). For animals with hearing loss, elevated intensity thresholds were also evident.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85108/elife-85108-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic diagram showing pure tone sounds with different frequencies and intensities and corresponding bottleneck activations. (b) Frequency response areas (FRAs) for the eight bottleneck channels from a normal hearing animal (top) and an animal with hearing loss (bottom). Each subplot shows the average activity for one channel in response to tones with different frequencies and intensities. The colormap for each plot is normalized to the minimum and maximum activity level across all frequencies and intensities. (c) Dimensionality reduction of bottleneck activations via principal component analysis (PCA). Each line shows the variance explained by the top two principal components (PCs) for one animal as a function of the intensity of the tones. (d) Signal dynamics for pure tones for a normal hearing animal (left) and an animal with hearing loss (right). The top two rows show the projection of the bottleneck activations onto each of the top two PCs as a function of time. The inset value indicates the percent of the variance in the bottleneck activations explained by each PC. The bottom row shows the projections from the top two rows plotted against one another. Each line shows the dynamics for a different tone frequency. Each column shows the dynamics for a different tone intensity. (e) Representational dissimilarity matrices (RDMs) computed from bottleneck activations. The left image shows the average RDM for normal hearing animals for tones at 55 dB SPL. The value of each pixel is proportional to the point-by-point correlation between the activations for a pair of tones with different frequencies. The center image shows the same lower half of the RDM for normal hearing animals along with the upper half of the RDM for animals with hearing loss at the same intensity. The right image shows the same lower half of the RDM for normal hearing animals along with the upper half of the RDM for animals with hearing loss at the best intensity (that which produced the highest point-by-point correlation between the normal hearing and hearing loss RDMs). (f) The point-by-point correlation between RDMs for each pair of normal hearing animals (n = 15), and each pair of animals with different hearing status compared at either the same intensity or the best intensity (n = 36). Median values were compared via Kruskal–Wallis one-way ANOVA and Tukey–Kramer post hoc tests, ***p<0.001, **p<0.01, * p<0.05, ns indicates not significant. For full details of statistical tests, see Table 1. (g) Average signal dynamics for pure tones for normal hearing animals (left) and animals with hearing loss (right) after alignment via multiway canonical correlation analysis (MCCA). (h) The similarity between dynamics after alignment via pairwise canonical correlation analysis (CCA) (see ‘Methods’) for each pair of normal hearing animals, and each pair of animals with different hearing status compared at either the same intensity or the best intensity (that which produced the highest similarity between the dynamics).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85108/elife-85108-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representational dissimilarity matrices (RDMs) for simulated and recorded IC responses to tones display a simple block-like structure after hearing loss, indicating a clustering of response trajectories for different tones within the signal manifold. The effects of hearing loss on tone responses at the level of the AN appear to be much more complex and differ between full responses and response envelopes (i.e., with and without phase locking to tone fine structure). Methodological details are provided below. (a) RDMs computed from bottleneck activations. The left image shows the average RDM for normal hearing animals for tones at 55 dB SPL. The value of each pixel is proportional to the point-by-point correlation between the activations for a pair of tones with different frequencies. The center image shows the same lower half of the RDM for normal hearing animals along with the upper half of the RDM for animals with hearing loss at the same intensity. The right image shows the same lower half of the RDM for normal hearing animals along with the upper half of the RDM for animals with hearing loss at the best intensity (that which produced the highest point-by-point correlation between the normal hearing and hearing loss RDMs). Reproduced from Figure 4 for reference. (b) RDMs computed from original IC activity. The left image shows the average RDM for normal hearing animals for tones at 60 dB SPL. The center image shows the same lower half of the RDM for normal hearing animals along with the upper half of the RDM for animals with hearing loss at the same intensity. The right image shows the same lower half of the RDM for normal hearing animals along with the upper half of the RDM for animals with hearing loss at 85 dB SPL. The tones were 50 ms in duration with frequencies ranging from 500 Hz to 8000 Hz in 0.5 octave steps with 5 ms cosine on and off ramps. Tones were presented 128 times each in random order with 175 ms between presentations. IC multi-unit activity (MUA) was averaged across presentations of each tone. Principal component analysis (PCA) was performed and RDMs were computed using the top 3 principal components (PCs), which explained more than 90% of the variance in all cases. (c, d) RDMs computed from simulated AN activity. The left image shows the average RDM for normal hearing animals for tones at 60 dB SPL. The center image shows the same lower half of the RDM for normal hearing animals along with the upper half of the RDM for animals with hearing loss at the same intensity. The right image shows the same lower half of the RDM for normal hearing animals along with the upper half of the RDM for animals with hearing loss at the best intensity (that which produced the highest point-by-point correlation between the normal hearing and hearing loss RDMs). The tones were the same as those presented to the IC deep neural network (DNN) models: 100 ms in duration with frequencies ranging from 500 Hz to 8000 Hz in 0.2 octave steps; intensities ranging from 25 dB SPL to 100 dB SPL in 5 dB steps; 10 ms cosine on and off ramps; and a 100 ms pause between tones. AN responses were simulated using the model of Bruce et al. (2018) with default parameters at 48 CFs ranging from 200 Hz to 10 kHz. To simulate mild-to-moderate sloping sensorineural hearing loss, we modified the parameter controlling outer hair cell function ($C_{OHC}$) as needed to create a threshold shift ranging from 20 dB at 1 kHz to 40 dB at 8 kHz. Responses to low-, medium-, and high-threshold fibers were simulated and summed together to create MUA in each CF channel. PCA was performed and RDMs were computed using the top 8 PCs, which explained more than 90% of the variance in all cases. The envelope of the AN responses was extracted using a Hilbert transform (MATLAB envelope).
 
 To visualize the signal dynamics, we applied PCA to the bottleneck activations (for each intensity separately) and projected the full dynamics onto the top two PCs, which explained more than 90% of the variance for these simple sounds (Figure 4c). For normal hearing animals, the paths traced by the dynamics within the signal manifold for different sounds, which we term trajectories, were distinct and formed an orderly arrangement, but with a clear change in geometry across intensities (Figure 4d). At low intensities, the trajectories for different frequencies were distinct across both PCs, each of which accounted for substantial variance (the percent of the variance in the signal dynamics explained by each PC at each intensity is indicated on each panel). But at high intensities, the trajectories for all frequencies were similar along the first PC, which accounted for the vast majority of the variance, and varied only along the second PC. These intensity-dependent changes in the geometry of the signal dynamics are consistent with the known effects of intensity on spectral tuning in IC neurons. At low intensities, tuning is narrow and, thus, different tone frequencies elicit distinct population activity patterns. But at high intensities, because tuning is broader, the population activity patterns elicited by different frequencies are less distinct.
 
@@ -101,7 +650,7 @@ The average dynamics after alignment via CCA exhibited phenomena that were simil
 
 To measure the similarity between the dynamics for different animals after alignment via CCA, we used a weighted sum of the point-by-point correlations between the two sets of dynamics after projection onto each pair of CCs, with the weight for the correlation associated with each pair of CCs given by the average variance in the original dynamics that those CCs explained (see ‘Methods’ for equation). Overall, the similarity between the dynamics for different normal hearing animals at moderate intensity after alignment via CCA was extremely high (0.98 ± 0.01; n = 15; Figure 4h). The similarity between the aligned dynamics for normal hearing and hearing loss animals at the same moderate intensity was much lower (0.37 ± 0.02; n = 36) and remained below normal even when compared at the best intensity (0.88 ± 0.01; n = 36). Taken together, the RSA and CCA results suggest that hearing loss results in a fundamental disruption of spectral processing at the network level.
 
-## Hearing loss does not distort temporal processing
+### Hearing loss does not distort temporal processing
 
 We next assessed temporal processing by performing a similar analysis on the bottleneck activations elicited by a stream of SAM broadband noise sounds with different modulation frequencies and intensities (Figure 5a). For these sounds, two dimensions were again enough to capture almost all of the variance in the full signal dynamics across all intensities (Figure 5b). For both normal hearing animals and those with hearing loss, the explicit tracking of envelope modulations in the signal dynamics decreased with increasing modulation frequency and increasing intensity (Figure 5c). But when compared at the same intensity, the dynamics for animals with hearing loss clearly differed from those for animals with normal hearing (Figure 5d and e).
 
@@ -115,7 +664,7 @@ Comparing the similarity of the dynamics after alignment via CCA yielded similar
 
 We verified that this was also true for the processing of sounds with different modulation depths. We performed the same analysis on the bottleneck activations elicited by a stream of SAM noise sounds with different modulation depths and intensities (and a fixed modulation frequency of 30 Hz; Figure 5h). When compared at the best intensity, the signal dynamics for normal hearing animals and animals with hearing loss were nearly identical (Figure 5i), with the explicit tracking of envelope modulations decreasing with decreasing modulation depth. The overall similarity measured at the best intensity both by RSA (0.99 ± 0.01; n = 36; Figure 5j) and after alignment via CCA (0.96 ± 0.01; n = 36; Figure 5k) confirmed that the impact of hearing loss on temporal processing beyond that which results from decreased audibility was negligible.
 
-## Distortions in the neural code for speech in quiet are largely corrected by amplification
+### Distortions in the neural code for speech in quiet are largely corrected by amplification
 
 Having established that the distortions in neural signal dynamics caused by hearing loss affect primarily spectral, rather than temporal, processing for simple sounds, we next returned to speech. We focused on consonants, which vary widely in their spectral properties and are the primary contributor to the perceptual deficits exhibited by people with hearing loss when listening to ongoing speech (Fogerty et al., 2012). We presented the DNN with a stream of isolated consonants (diphone syllables with the vowel removed), each uttered multiple times by multiple talkers (Figure 6a). The consonants can be divided into three broad groups: the vowel-like consonants (nasals and approximants), which are dominated by low frequencies; the plosives, which are broadband; and the fricatives, which are dominated by high frequencies (Figure 6b).
 
@@ -133,7 +682,7 @@ Given that hearing loss seems to impact primarily spectral processing, we invest
 
 To evaluate the functional consequences of the remaining distortion, we turned to decoding. We trained a support vector machine to classify consonants based on the signal dynamics for each animal. For normal hearing animals, the decoder identified 55% of consonants correctly (±1%; n = 6; chance = 4.5%) when the consonants were presented at conversational intensity (Figure 6g). For animals with hearing loss, performance at the same intensity was lower (41 ± 1%; n = 6) but increased substantially at best intensity (47 ± 1%; n = 6), and increased further still with frequency-dependent amplification by the hearing aid (49 ± 1%; n = 6). Taken together, these results suggest that while amplification cannot completely restore the neural code for speech in quiet to normal, the residual distortions are relatively minor.
 
-## Distortions in the neural code for speech in noise persist even after frequency-weighted amplification
+### Distortions in the neural code for speech in noise persist even after frequency-weighted amplification
 
 Given that the perceptual difficulties experienced by listeners with hearing loss are most pronounced in noisy environments, we expected that the addition of background noise to the speech would create larger distortions in the neural code. We presented the same consonant stream with added speech babble (background noise formed by adding together the voices of many different talkers; Figure 7a and b) at a speech-to-noise ratio of 3 dB, which is typical of real-world settings experienced by hearing aid users (Christensen et al., 2021). The addition of background noise increased the dimensionality of the signal dynamics relative to simple sounds or speech in quiet, especially at high overall intensities; three PCs were often required to capture more than 90% of the variance (Figure 7c). (Note that both the speech and the background noise contribute to the signal dynamics, which encode all incoming sounds without distinction.)
 
@@ -147,7 +696,7 @@ When compared at the same high intensity (70 dB SPL), typical of a social settin
 
 Decoding the signal dynamics for each animal suggested that the distortions in the signal dynamics for speech in noise had functional consequences (Figure 7g). For normal hearing animals, the decoder identified 32% of consonants correctly (±1%; n = 6). For animals with hearing loss, performance at the same intensity was lower (15 ± 1%; n = 6) and remained well below normal levels both at the best intensity (23 ± 1%; n = 6) or after processing with the hearing aid (22 ± 1%; n = 6).
 
-## Hearing loss causes hypersensitivity to background noise
+### Hearing loss causes hypersensitivity to background noise
 
 To gain a better understanding of the differential impact of the background noise with and without hearing loss, we used MCCA to jointly align the signal dynamics for all animals with normal hearing and hearing loss so that we could make direct comparisons. We first analyzed the results for speech in quiet. When compared at best intensity (Figure 8a), there was good alignment between the dynamics for animals with normal hearing and hearing loss. The correlation for pairs of animals after projection onto the first CC, which accounted for 88 ± 2% and 71 ± 7% of the variance in animals with normal hearing (n = 6) and hearing loss (n = 6), respectively, was 0.94 ± 0.01 (n = 36). The correlation after projection onto the second CC, which accounted for the remaining variance, was lower (0.44 ± 0.03; n = 36).
 
@@ -171,7 +720,7 @@ When the correlation for animals with normal hearing and hearing loss was compar
 
 In this study, we took advantage of recently developed tools for large-scale neural recordings and nonlinear modeling that allowed us to gain new insights into the impact of hearing loss on auditory processing at the network level. We first used a traditional approach to manifold learning to establish that the neural code for speech in the IC can be well described by low-dimensional latent signal dynamics that are common across animals with similar hearing status but fundamentally altered by hearing loss. We then trained a DNN to replicate neural coding in the IC with high accuracy using a framework that also facilitated manifold learning. The DNN exhibited dynamics in response to speech that were similar to those identified directly from IC recordings, and further probing of the DNN dynamics with novel sounds allowed us to identify changes in cross-frequency interactions as a key contributor to the distorted neural coding of speech-in-noise with hearing loss.
 
-## Suprathreshold effects of hearing loss
+### Suprathreshold effects of hearing loss
 
 The effects of hearing loss beyond increased detection thresholds are often ignored in clinical assessment and treatment. But these suprathreshold effects are, in fact, the main problem for many people in real-world settings, such as busy workplaces or social gatherings, where sound intensities are high and amplification via a hearing aid provides little benefit. The clinical neglect of suprathreshold effects is not due to a lack of awareness, but rather to a lack of effective treatments. And the lack of effective treatments stems from a lack of understanding of how the many physiological changes that accompany hearing loss contribute to complex perceptual deficits.
 
@@ -179,7 +728,7 @@ Many specific suprathreshold impairments with plausible links to speech-in-noise
 
 These results are consistent with a recent study that found that hearing loss caused the IC activity patterns elicited by different phonemes to become less distinct, and that a hearing aid failed to correct this problem for speech in noise (Armstrong et al., 2022). They are also consistent with a body of work demonstrating that listeners with hearing loss struggle to combine temporal envelope cues across frequency channels (Healy and Bacon, 2002; Healy and Carson, 2010; Souza and Boike, 2006; Grant et al., 2007). When speech is reduced to a single amplitude-modulated band, speech recognition performance is similar for all listeners, independent of their hearing status, suggesting that temporal processing of the speech envelope per se is unaffected by hearing loss. But as additional amplitude-modulated bands are added, performance increases more for normal hearing listeners than for those with hearing loss, suggesting that the latter group are less able to make use of complementary temporal information across multiple frequency channels. This difference is most pronounced when comparing the ability to make use of temporal modulations in high-frequency channels (4–6 kHz) in the presence of temporal modulations in lower frequency channels (1–2 kHz) (Grant et al., 2007), and it does not appear to be a simple consequence of broadened frequency tuning but rather a specific deficit in cross-frequency interactions (Healy and Carson, 2010).
 
-## Distorted spectral processing from cochlea to cortex
+### Distorted spectral processing from cochlea to cortex
 
 Understanding exactly what is going wrong with spectral processing after hearing loss at a mechanistic level remains a challenge. The effects of hearing loss on spectral processing in the cochlea have been well described in terms of the observed changes in the frequency tuning curves of individual AN fibers. After hearing loss, the tuning curve ‘tip’ (corresponding to the characteristic frequency [CF] to which the fiber is most sensitive) becomes less sensitive and may shift toward lower frequencies while the ‘tail’ (corresponding to frequencies below CF) may become more sensitive (Young, 2012). It is difficult to know the degree to which these changes distort the basic tonotopic map in the cochlea (i.e., the relationship between CF and cochlear position) because few studies have identified the cochlear position from which recorded fibers originate. The limited data that exist suggest that the effect of hearing loss on CF tonotopy is modest (Liberman and Kiang, 1984), but the effect on the tonotopic map of best frequency (BF; the frequency that elicits the strongest response from a fiber at higher intensities) can be much larger (Henry et al., 2016), and can be accompanied by more complex changes in spectral processing such as decreased synchrony capture (Young, 2012).
 
@@ -187,7 +736,7 @@ One recent study has provided insight into how the complex spectral distortions 
 
 Distorted spectral processing has also recently been observed in the auditory cortex after mild-to-moderate sloping sensorineural hearing loss (McGill et al., 2022). Animals displayed behavioral hypersensitivity for detection of tones at the edge frequencies around which the hearing loss increased from mild to moderate as well as an overrepresentation of these frequencies in the cortical tonotopic map of BF. The mechanisms underlying these phenomena are not entirely clear. Some cortical neurons tuned to these edge frequencies exhibited increased neural gain and synchrony, and direct stimulation of thalamocortical afferents demonstrated that hearing loss caused an increase in gain within the local cortical circuit. But the frequency tuning of the stimulated afferents was unknown and, thus, it is difficult to separate the effects that were cortical in origin from those that were inherited from lower levels. It is possible that the altered neural representation of spectral features that we observed in the IC results in changes in the coactivation patterns across the cortical network, prompting the plastic reorganization in the cortex. Future research should be focused on developing a coherent model of how peripheral and central changes combine to create auditory processing deficits, perhaps through coordinated experiments across many brain areas in a single species.
 
-## A new focus for hearing aid design
+### A new focus for hearing aid design
 
 The complex suprathreshold effects of hearing loss that are evident in the distorted neural signal dynamics observed in this study present a difficult challenge for hearing aid designers. Current hearing aids compensate for changes in the threshold and dynamic range of auditory processing using a framework built around a bank of bandpass filters with automatic gain control. The signal processing that can be performed by such a framework is highly constrained, and it is difficult to imagine how it could be used to compensate for problems such as hypersensitivity to background noise that involve highly nonlinear interactions across frequency bands. It is possible that with a better understanding of exactly how different frequencies are interacting, new signal processing frameworks can be designed to offset the more complex effects of hearing loss. But engineering such a framework that is flexible enough to provide benefit in a wide range of real-world settings will require conceptual advances that may not be forthcoming in the near term.
 
@@ -195,7 +744,7 @@ One alternative approach to improving the perception of speech in noise that is 
 
 A more flexible alternative is to identify optimal processing algorithms for hearing aids empirically by providing DNNs with the data they need to learn how best to transform sounds in order to elicit normal neural activity from an impaired auditory system (Lesica, 2018; Drakopoulos and Verhulst, 2022). By taking advantage of the nonlinear capacity of DNNs with minimal assumptions, it should be possible to identify novel general-purpose algorithms that go well beyond the hand-designed processing in current devices. Such algorithms would be especially valuable in important contexts such as listening to music – a major problem for hearing aid users (Madsen and Moore, 2014) – in which denoising cannot help. There are, of course, limits to the degree of hearing restoration that any hearing aid can provide in cases of severe hearing loss. But the vast majority of people with hearing loss have only mild-to-moderate cochlear damage (Wilson et al., 2017), and there should be sufficient functionality remaining within the auditory system for a hearing aid to leverage when attempting elicit the necessary patterns of neural activity.
 
-## Modeling biological neural networks with DNNs
+### Modeling biological neural networks with DNNs
 
 Building computational models of sensory processing has been a long-standing goal in systems neuroscience. Current models of the sensory periphery can be highly accurate. For example, there are numerous models of the cochlea that faithfully capture the transformation of incoming sound into basilar membrane motion and AN activity (Saremi et al., 2016; Verhulst et al., 2018). Models of sensory processing in the brain, however, have generally been much less accurate, with even the best models missing out on a significant fraction of the explainable variance in subcortical and cortical neural activity (Williamson et al., 2016; Rahman et al., 2020; McFarland et al., 2013; Vintch et al., 2015).
 
@@ -209,106 +758,106 @@ With these advances, it should now be possible to use computational models of th
 
 ## Methods
 
-## Experimental protocol
+### Experimental protocol
 
 Experiments were performed on 12 young-adult gerbils of both sexes that were born and raised in standard laboratory conditions. Six of the animals were exposed to noise when they were 16–18 weeks old. (These six were chosen from among many that were noise exposed based on the pattern of hearing loss that they exhibited: sloping mild-to-moderate in both ears.) The number of animals used was not predetermined. Because of the investigative nature of the study, the key outcome measures were not known in advance and, thus, a pre-study power analysis based on anticipated effect sizes was not possible. The duration of the data collection from each animal was predetermined based on the results of preliminary experiments in which the amount of neural activity required for manifold analysis and deep learning to yield stable results was assessed. Assignment to the control and hearing loss groups was random on a per-animal basis (i.e., animals from the same litter were often assigned to different groups). Investigators were not blinded during data collection or analysis (since the difference between animals with normal hearing and hearing loss is immediately apparent upon the observation of sound-evoked neural activity), but all analyses were fully automated and objective. ABR recordings and large-scale IC recordings were made from all animals when they were 20–24 weeks old. All experimental protocols were approved by the UK Home Office (PPL P56840C21).
 
-## Noise exposure
+### Noise exposure
 
 Mild-to-moderate sensorineural hearing loss was induced by exposing anesthetized gerbils to high-pass filtered noise with a 3 dB/octave roll-off below 2 kHz at 118 dB SPL for 3 hr (Armstrong et al., 2022; Suberman et al., 2011). For anesthesia, an initial injection of 0.2 ml per 100 g body weight was given with fentanyl (0.05 mg per ml), medetomidine (1 mg per ml), and midazolam (5 mg per ml) in a ratio of 4:1:10. A supplemental injection of approximately 1/3 of the initial dose was given after 90 min. Internal temperature was monitored and maintained at 38.7°C.
 
-## Preparation for large-scale IC recordings
+### Preparation for large-scale IC recordings
 
 Animals were placed in a sound-attenuated chamber and anesthetized for surgery with an initial injection of 1 ml per 100 g body weight of ketamine (100 mg per ml), xylazine (20 mg per ml), and saline in a ratio of 5:1:19. The same solution was infused continuously during recording at a rate of approximately 2.2 μl per min. Internal temperature was monitored and maintained at 38.7°C. A small metal rod was mounted on the skull and used to secure the head of the animal in a stereotaxic device. The pinnae were removed and speakers (Etymotic ER-2) coupled to tubes were inserted into both ear canals along with microphones (Etymotic ER-10B+) for calibration. The frequency response of these speakers measured at the entrance of the ear canal was flat (±5 dB) between 0.2 and 8 kHz. Two craniotomies were made along with incisions in the dura mater, and a 256-channel multi-electrode array was inserted into the central nucleus of the IC in each hemisphere (Armstrong et al., 2022). The arrays were custom-designed to maximize coverage of the portion of the gerbil IC that is sensitive to the frequencies that are present in speech.
 
-## Auditory brainstem responses
+### Auditory brainstem responses
 
 Before beginning the IC recordings, ABRs were measured. Subdermal needles were used as electrodes with the active electrodes placed behind the ear over the bulla (one on each side), the reference placed over the nose, and the ground placed in a rear leg. Recordings were bandpass-filtered between 300 and 3000 Hz. The parallel ABR method (Polonenko and Maddox, 2019) was used, with randomly timed tones at multiple frequencies presented simultaneously and independently to each ear. The tone frequencies were 500, 1000, 2000, 4000, and 8000 Hz. Each tone was five cycles long and multiplied by a Blackman window of the same duration. Tones were presented at a rate of 40 per s per frequency with alternating polarity for 100 s at each intensity. The activity recorded in the 30 ms following each tone was extracted and thresholds for each frequency were defined as the lowest intensity at which the root mean square (RMS) of the median response across presentations was more than twice the RMS of the median activity recorded in the absence of sound.
 
-## Sounds presented during IC recordings
+### Sounds presented during IC recordings
 
-## Speech
+#### Speech
 
 Sentences were taken from the TIMIT corpus (Garofolo, 1993) that contains speech read by a wide range of American English speakers. The entire corpus excluding ‘SA’ sentences was used (approximately 4.5 hr) and split into training and test sets (4.25 hr and 0.25 hr, respectively; not to be confused with the suggested training/test subdivisions in the TIMIT documentation). The training set was presented twice, once on its own and once with background noise. The test set was presented four times, twice in quiet and twice with the same background noise. The intensity for each sentence was chosen at random from 55, 65, 75, or 85 dB SPL. The speech-to-noise ratio (SNR) was chosen at random from either 0 or 10 when the speech intensity was 55 or 65 dB SPL (as is typical of a quiet setting such as a home or an office) or –10 or 0 when the speech intensity was 75 or 85 dB SPL (as is typical of a noisy setting such as a pub). The intensity of the sentences for the two presentations of the test set in quiet were identical, as were the intensity, SNR, and specific noise used for the two presentations of the test set with background noise.
 
-## Noise
+#### Noise
 
 Background noise sounds were taken from the Microsoft Scalable Noisy Speech Dataset (Reddy et al., 2019), which includes recordings of environmental sounds from a large number of different settings (e.g., café, office, roadside) and specific noises (e.g., washer-dryer, copy machine, public address announcements). A total of 4.5 hr of unique noises were used to match the duration of the presented speech. The intensity of the noise presented with each sentence was determined by the intensity of the speech and the SNR as described above.
 
-## Multi-unit activity
+### Multi-unit activity
 
 MUA was measured from recordings on each channel of the electrode array as follows: (1) a bandpass filter was applied with cutoff frequencies of 700 and 5000 Hz; (2) the standard deviation of the background noise in the bandpass-filtered signal was estimated as the median absolute deviation/0.6745 (this estimate is more robust to outlier values, e.g., neural spikes, than direct calculation); (3) times at which the bandpass-filtered signal made a positive crossing of a threshold of 3.5 standard deviations were identified and grouped into bins with a width of 1.3 ms. Only units with a signal correlation (across repeated trials of the speech in the test set) of 0.2 or higher were used for manifold learning and DNN training (420 ± 24 [mean ± SD] units from each animal out of 512 total channels).
 
-## Analysis of recorded neural activity
+### Analysis of recorded neural activity
 
-For each animal, the MUA was represented as an M x T matrix, where M is the number of units and T is the number of time bins. Separate matrices Rtrain  , Rtest1  , and Rtest2  were formed for the training set and each repetition of the test set (see ‘Speech’ above).
+For each animal, the MUA was represented as an $M x T$ matrix, where $M$ is the number of units and $T$ is the number of time bins. Separate matrices $R_{train }$ , $R_{test1 }$ , and $R_{test2 }$ were formed for the training set and each repetition of the test set (see ‘Speech’ above).
 
-## Dimensionality of signal manifold
+### Dimensionality of signal manifold
 
-We applied PCA to Rtrain  (after subtracting the mean from each row) to obtain the PCs, ranked in order of the amount of neural variance they explain. We projected the activity in Rtest1  onto a chosen number of PCs to obtain the latent dynamics within the manifold spanned by those PCs, yielding a new D x T matrix Xtest1 = ZRtest1 , where Z is the D x M matrix containing the first D PCs. We reconstructed the activity in Rtest1  from the latent dynamics as R^test1 = ZTXtest1 (plus the originally subtracted means) and measured the total variance explained as the ratio of the covariance between Rtest1 and R^test1 and the square root of the product of their variances. We reconstructed the activity in Rtest2  from the same latent dynamics as R^test2 = ZTXtest1 (plus the means of the rows of Rtest2 ) and measured the signal variance explained as the ratio of the covariance between Rtest2 and R^test2 and the square root of the product of their variances. We defined the dimensionality of the signal manifold for each animal based on the number PCs required to explain 95% of the signal variance.
+We applied PCA to $R_{train }$ (after subtracting the mean from each row) to obtain the PCs, ranked in order of the amount of neural variance they explain. We projected the activity in $R_{test1 }$ onto a chosen number of PCs to obtain the latent dynamics within the manifold spanned by those PCs, yielding a new $D x T$ matrix $X_{test1} = ZR_{test1}$ , where $Z$ is the $D x M$ matrix containing the first $D$ PCs. We reconstructed the activity in $R_{test1 }$ from the latent dynamics as $R^_{test1} = Z^{T}X_{test1}$ (plus the originally subtracted means) and measured the total variance explained as the ratio of the covariance between $R_{test1}$ and $R^_{test1}$ and the square root of the product of their variances. We reconstructed the activity in $R_{test2 }$ from the same latent dynamics as $R^_{test2} = Z^{T}X_{test1}$ (plus the means of the rows of $R_{test2 }$) and measured the signal variance explained as the ratio of the covariance between $R_{test2}$ and $R^_{test2}$ and the square root of the product of their variances. We defined the dimensionality of the signal manifold for each animal based on the number PCs required to explain 95% of the signal variance.
 
-## Similarity of signal dynamics
+### Similarity of signal dynamics
 
-We measured the similarity between the signal dynamics for different animals as the variance explained after linear regression of one set of dynamics Xtest1 onto another Ytest1 = Xtest1β+ ε, where β is a matrix of regression coefficients and ε is a vector of error terms.
+We measured the similarity between the signal dynamics for different animals as the variance explained after linear regression of one set of dynamics $X_{test1}$ onto another $Y_{test1} = X_{test1}\beta+ \epsilon$, where $\beta$ is a matrix of regression coefficients and $\epsilon$ is a vector of error terms.
 
-## Deep neural network models
+### Deep neural network models
 
-DNNs were used to transform sound input into neural activity across four stages: (1) a SincNet layer (Ravanelli and Bengio, 2018) with 48 bandpass filters of length 32 samples, each with two learnable parameters (center frequency, bandwidth), followed by symmetric log activations Y=sgn x log⁡(x+1); (2) a stack of five 1-D convolutional layers, each with 128 filters of length 32 samples and stride 2, followed by PReLU activations; (3) a 1-D bottleneck convolutional layer with a specified number of filters of length 32 and stride 1, followed by PReLU activations; and (4) a linear readout layer followed by exponential activations. The only hyperparameter that was varied was the number of filters in the bottleneck layer. For comparison with a linear–nonlinear (LN) model, we used a network with the same stages 1 and 4 and a single convolutional layer between them with 128 filters of length 256 samples and stride 1, followed by PReLU activations.
+DNNs were used to transform sound input into neural activity across four stages: (1) a SincNet layer (Ravanelli and Bengio, 2018) with 48 bandpass filters of length 32 samples, each with two learnable parameters (center frequency, bandwidth), followed by symmetric log activations $Y=sgn x log⁡(x+1)$; (2) a stack of five 1-D convolutional layers, each with 128 filters of length 32 samples and stride 2, followed by PReLU activations; (3) a 1-D bottleneck convolutional layer with a specified number of filters of length 32 and stride 1, followed by PReLU activations; and (4) a linear readout layer followed by exponential activations. The only hyperparameter that was varied was the number of filters in the bottleneck layer. For comparison with a linear–nonlinear (LN) model, we used a network with the same stages 1 and 4 and a single convolutional layer between them with 128 filters of length 256 samples and stride 1, followed by PReLU activations.
 
-## Training
+### Training
 
-Models were trained to transform 24,414.0625 kHz sound input frames of length 8192 samples into 762.9395 Hz neural activity frames of length 192 samples (corresponding to temporal decimation by a factor of 5 via the strided convolutions in the encoder block plus a final cropping layer that removed 32 samples at the start and end of each frame to eliminate convolutional edge effects). Sound inputs were scaled such that an RMS of 1 corresponded to a level of 94 dB SPL. Training was performed in MATLAB on a local PC with GPUs (2x NVIDIA RTX 3080) with a batch size of 64 for 10 epochs and took about 8 hr for a typical model. The Adam optimizer was used with a learning rate of 0.0001. The optimization was framed as Poisson regression with loss function ∑M,T(R^−R log(R^)) , where R is the recorded neural activity, R^ is the network output, M is the number of units, and T is the number of time bins.
+Models were trained to transform 24,414.0625 kHz sound input frames of length 8192 samples into 762.9395 Hz neural activity frames of length 192 samples (corresponding to temporal decimation by a factor of 5 via the strided convolutions in the encoder block plus a final cropping layer that removed 32 samples at the start and end of each frame to eliminate convolutional edge effects). Sound inputs were scaled such that an RMS of 1 corresponded to a level of 94 dB SPL. Training was performed in MATLAB on a local PC with GPUs (2x NVIDIA RTX 3080) with a batch size of 64 for 10 epochs and took about 8 hr for a typical model. The Adam optimizer was used with a learning rate of 0.0001. The optimization was framed as Poisson regression with loss function $\sumM,T(R^−R log(R^))$ , where $R$ is the recorded neural activity, $R^$ is the network output, $M$ is the number of units, and $T$ is the number of time bins.
 
-## Validation
+### Validation
 
-For each animal, data were split into training and test sets (see ‘Speech’ above). The training set was used to learn the optimal values of the DNN parameters. The final performance of the optimized network was measured on the test set by calculating the percent of the explainable variance in the recorded responses that was explained by the network outputs based on the ratio of the covariance between Rtest1 and R^ and the covariance between Rtest1 and Rtest2 , where R^ is the network output and Rtest1 and Rtest2 are the recorded responses to the two presentations of the test speech.
+For each animal, data were split into training and test sets (see ‘Speech’ above). The training set was used to learn the optimal values of the DNN parameters. The final performance of the optimized network was measured on the test set by calculating the percent of the explainable variance in the recorded responses that was explained by the network outputs based on the ratio of the covariance between $R_{test1}$ and $R^$ and the covariance between $R_{test1}$ and $R_{test2}$ , where $R^$ is the network output and $R_{test1}$ and $R_{test2}$ are the recorded responses to the two presentations of the test speech.
 
-## Analysis of bottleneck activations
+### Analysis of bottleneck activations
 
-For each animal, the activations in the bottleneck layer for all sounds from a given class (e.g., all pure tones or all consonants in noise) were extracted to form the Db x T signal dynamics matrix X, where Db is the number of bottleneck channels and T is the number of time bins. For visualization, we applied PCA to the dynamics in X and projected them onto a chosen number of PCs.
+For each animal, the activations in the bottleneck layer for all sounds from a given class (e.g., all pure tones or all consonants in noise) were extracted to form the $D_{b} x T$ signal dynamics matrix $X$, where $D_{b}$ is the number of bottleneck channels and $T$ is the number of time bins. For visualization, we applied PCA to the dynamics in $X$ and projected them onto a chosen number of PCs.
 
-## Sounds presented to trained DNNs
+### Sounds presented to trained DNNs
 
-## Pure tones
+#### Pure tones
 
 100 ms tones with frequencies ranging from 500 Hz to 8000 Hz in 0.2 octave steps; intensities ranging from 25 dB SPL to 100 dB SPL in 5 dB steps; 10 ms cosine on and off ramps; and a 100 ms pause between tones.
 
-## SAM noise, fixed modulation depth
+#### SAM noise, fixed modulation depth
 
 100 ms bursts of bandpass noise with cutoff frequencies of 500 and 8000 Hz; a sinusoidal envelope with frequencies ranging from 10 Hz to 240 Hz in 10 Hz steps and a modulation depth of 1; intensities ranging from 25 dB SPL to 100 dB SPL in 5 dB steps; 10 ms cosine on and off ramps; and a 100 ms pause between tones.
 
-## SAM noise, fixed modulation frequency
+#### SAM noise, fixed modulation frequency
 
 100 ms bursts of bandpass noise with cutoff frequencies of 500 and 8000 Hz; a sinusoidal envelope with a modulation depth ranging from 0.1 to 1 in 20 logarithmic steps and a frequency of 30 Hz; intensities ranging from 25 dB SPL to 100 dB SPL in 5 dB steps; 10 ms cosine on and off ramps; and a 100 ms pause between tones.
 
-## Isolated consonants
+#### Isolated consonants
 
 Speech utterances were taken from the Articulation Index LSCP (LDC Cat# LDC2015S12). Utterances were from 10 American English speakers (five males, five females). Each speaker pronounced consonant-vowel syllables made from all possible combinations of 22 consonants and 13 vowels. For each utterance, the border between the consonant and vowel was identified in a semi-automated manner (a clustering algorithm [MATLAB linkage] was applied to the spectrogram time bins to identify two clusters based on a correlation metric and the border between them was inspected and corrected if needed), values after the end of the consonant were set to zero (with a 2 ms linear ramp), and the utterance was truncated to 200 ms. Utterances were presented in random order with a 175 ms pause between sounds at intensities ranging from 25 dB SPL to 100 dB SPL in 5 dB steps.
 
-## Multi-talker speech babble noise
+#### Multi-talker speech babble noise
 
 Continuous speech from 16 different British English speakers from the UCL Scribe database (https://www.phon.ucl.ac.uk/resource/scribe) was summed to create speech babble. The intensity of the babble was set based on the intensity of the isolated consonants to achieve a speech-to-noise ratio of 3 dB.
 
-## Narrowband target
+#### Narrowband target
 
 100 ms bursts of bandpass noise with center frequencies ranging from 500 Hz to 8000 Hz in 0.5 octave steps and a bandwidth of 0.5 octaves; a sinusoidal envelope with a modulation depth of 1 and a frequency of 20 Hz; intensities ranging from 25 dB SPL to 100 dB SPL in 5 dB steps; 10 ms cosine on and off ramps; and a 100 ms pause between tones.
 
-## Narrowband noise
+#### Narrowband noise
 
 100 ms bursts of bandpass noise with center frequencies ranging from 500 Hz to 8000 Hz in 0.5 octave steps and a bandwidth of 0.5 octaves; a pink noise envelope (power scaled as inverse of frequency) with a modulation depth ((peak – trough)/peak) of 1; an intensity matched to that of the narrowband target; 10 ms cosine on and off ramps; and a 100 ms pause between tones.
 
-## Hearing aid simulation
+### Hearing aid simulation
 
 A 10-channel wide-dynamic range compression hearing aid was simulated using a program provided by Prof. Johsua Alexander (Purdue University) (Alexander and Masterson, 2015). The crossover frequencies between channels were 200, 500, 1000, 1750, 2750, 4000, 5500, 7000, and 8500 Hz. The intensity thresholds below which amplification was linear for each channel were 45, 43, 40, 38, 35, 33, 28, 30, 36, and 44 dB SPL. The attack and release times (the time constants of the changes in gain following an increase or decrease in the intensity of the incoming sound, respectively) for all channels were 5 and 40 ms, respectively. The gain and compression ratio for each channel were fit individually for each ear of each gerbil using the Cam2B.v2 software provided by Prof. Brian Moore (Cambridge University) (Moore et al., 2010). The gain before compression typically ranged from 10 dB at low frequencies to 30 dB at high frequencies. The compression ratios typically ranged from 1 to 2.5, that is, the increase in sound intensity required to elicit a 1 dB increase in the hearing output ranged from 1 dB to 2.5 dB when compression was engaged.
 
-## Representational similarity analysis
+### Representational similarity analysis
 
-For each animal, the signal dynamics matrix X was reshaped to yield X~ , an S x (Db x TS) matrix, where S is the number of sounds from a given class and TS is the number of times bins associated with an individual sound. An S x S representational dissimilarity matrix (RDM) was formed, with each entry equal to one minus the correlation between a pair of rows in X~ . To compute overall representational similarity, the upper triangular values (excluding the diagonal) from two X~ matrices were reshaped into vectors and the correlation between them was computed. For speech, dynamics were averaged across all instances of each consonant before RDMs were computed.
+For each animal, the signal dynamics matrix $X$ was reshaped to yield $X~$ , an $S x (D_{b} x T_{S})$ matrix, where $S$ is the number of sounds from a given class and $T_{S}$ is the number of times bins associated with an individual sound. An $S x S$ representational dissimilarity matrix (RDM) was formed, with each entry equal to one minus the correlation between a pair of rows in $X~$ . To compute overall representational similarity, the upper triangular values (excluding the diagonal) from two $X~$ matrices were reshaped into vectors and the correlation between them was computed. For speech, dynamics were averaged across all instances of each consonant before RDMs were computed.
 
-## Canonical correlation analysis
+### Canonical correlation analysis
 
-To align two sets of signal dynamics, U=XA and V=YB were computed using QR factorization and singular value decomposition (MATLAB cannoncorr), where X and Y are the matrices containing the original dynamics, A and B are the matrices containing the canonical components, and U and V are the aligned dynamics. Overall similarity after alignment was computed as ∑d=1Db ρ(Ud,Vd)∗(ρ(X^d,X)2+ρ(Y^d,Y)2)/2, with the second term in the product acting as the ‘weight for the correlation associated with each pair of CCs’ that is referred to in the ‘Results.’ Ud and Vd are the projections of X and Y onto the dth pair of canonical components, X^d=X∗(ad∗(adTad)−1∗ad) and Y^d=Y∗(bd∗(bdTbd)−1∗bd) are the reconstructions of X and Y from the dth pair of canonical components and ρ denotes point-by-point correlation. To jointly align more than two sets of dynamics, multiway CCA was used (de Cheveigné et al., 2019) (MATLAB NoiseTools nt_mcca).
+To align two sets of signal dynamics, $U=XA$ and $V=YB$ were computed using QR factorization and singular value decomposition (MATLAB cannoncorr), where $X$ and $Y$ are the matrices containing the original dynamics, $A$ and $B$ are the matrices containing the canonical components, and $U$ and $V$ are the aligned dynamics. Overall similarity after alignment was computed as $\sumd=1D_{b} ρ(U_{d},V_{d})∗(ρ(X^_{d},X)^{2}+ρ(Y^_{d},Y)^{2})/2$, with the second term in the product acting as the ‘weight for the correlation associated with each pair of CCs’ that is referred to in the ‘Results.’ $U_{d}$ and $V_{d}$ are the projections of $X$ and $Y$ onto the $d^{th}$ pair of canonical components, $X^_{d}=X∗(a_{d}∗(a_{d}^{T}a_{d})^{−1}∗a_{d})$ and $Y^_{d}=Y∗(b_{d}∗(b_{d}^{T}b_{d})^{−1}∗b_{d})$ are the reconstructions of $X$ and $Y$ from the $d^{th}$ pair of canonical components and $ρ$ denotes point-by-point correlation. To jointly align more than two sets of dynamics, multiway CCA was used (de Cheveigné et al., 2019) (MATLAB NoiseTools nt_mcca).
 
-## Decoding signal dynamics
+### Decoding signal dynamics
 
-For each animal, the signal dynamics matrix X was reshaped such that each row contained the dynamics for one consonant instance. A support vector machine was trained (MATLAB fitcecoc) to identify consonants from signal dynamics with a max-wins voting strategy based on all possible combinations of binary classifiers and tenfold cross-validation.
+For each animal, the signal dynamics matrix $X$ was reshaped such that each row contained the dynamics for one consonant instance. A support vector machine was trained (MATLAB fitcecoc) to identify consonants from signal dynamics with a max-wins voting strategy based on all possible combinations of binary classifiers and tenfold cross-validation.

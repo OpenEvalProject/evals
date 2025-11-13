@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Previous studies have related pair-bonding in Microtus ochrogaster , the prairie vole, with plastic changes in several brain regions. However, the interactions between these socially relevant regions have yet to be described. In this study, we used resting-state magnetic resonance imaging to explore bonding behaviors and functional connectivity of brain regions previously associated with pair-bonding. Thirty-two male and female prairie voles were scanned at baseline, 24 hr, and 2 weeks after the onset of cohabitation. By using network-based statistics, we identified that the functional connectivity of a corticostriatal network predicted the onset of affiliative behavior, while another predicted the amount of social interaction during a partner preference test. Furthermore, a network with significant changes in time was revealed, also showing associations with the level of partner preference. Overall, our findings revealed the association between network-level functional connectivity changes and social bonding.
+Previous studies have related pair-bonding in Microtus ochrogaster, the prairie vole, with plastic changes in several brain regions. However, the interactions between these socially relevant regions have yet to be described. In this study, we used resting-state magnetic resonance imaging to explore bonding behaviors and functional connectivity of brain regions previously associated with pair-bonding. Thirty-two male and female prairie voles were scanned at baseline, 24 hr, and 2 weeks after the onset of cohabitation. By using network-based statistics, we identified that the functional connectivity of a corticostriatal network predicted the onset of affiliative behavior, while another predicted the amount of social interaction during a partner preference test. Furthermore, a network with significant changes in time was revealed, also showing associations with the level of partner preference. Overall, our findings revealed the association between network-level functional connectivity changes and social bonding.
 
 ## Introduction
 
@@ -37,9 +37,33 @@ Recently, novel electrophysiologic and optogenetic techniques have been employed
 
 ## Results
 
-## Baseline functional connectivity predicts the display of affiliative behavior
+### Baseline functional connectivity predicts the display of affiliative behavior
 
 Thirty-two 3-month-old sexually naïve female (N = 16) and male (N = 16) prairie voles (M. ochrogaster) were used in the study. Prairie voles underwent three magnetic resonance imaging (MRI) acquisition sessions: a baseline scan before cohabitation, a second scan 24 hr after the onset of cohabitation, and a third scan 2 weeks after the onset of cohabitation (Figure 1A). The final imaging sample consisted of 90 datasets, with only six subjects missing one session (see Materials and methods). The day after the baseline scanning session, female and male voles unrelated to each other were randomly assigned as couples and placed for cohabitation in a new home to promote ad libitum mating and social interaction. Four days before cohabitation, silastic capsules (Dow Corning Silastic Laboratory Tubing; ThermoFisher Scientific, Pittsburg, PA) containing estradiol benzoate (E2B; Sigma–Aldrich, St. Louis, MO) were implanted in previously ovariectomized female voles to enable sexual receptivity and promote mating (see Materials and methods). The first 6 hr of cohabitation was video recorded for analysis of social and mating behavior. Mount (M ± SEM: 65.4 ± 31.7 min), intromission (116 ± 35.3 min), and ejaculation (125 ± 34.4 min) latencies were obtained for male voles (N = 16). Lordosis latency (22.3 ± 13.3 min) was also measured on females (N = 16), and huddling latencies (69.5 ± 15.8 min) were obtained for each male and female pair. Three of the 16 couples did not mate during the recorded period, but all voles displayed huddling and licking/grooming behavior with their sexual partner. Once joined, voles remained housed in couples for the rest of the experiment and were only separated for MRI scanning sessions and behavioral tests.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sequence of experiments during a 30 day period: Female voles were bilaterally ovariectomized before MR and behavioral protocols. After being allowed to recover from surgery for 10 days, silastic capsules containing E2B (estradiol benzoate) were implanted via s.c. 4 days before cohabitation for sexual receptivity induction. Once couples went under cohabitation, they were housed together for the rest of the experiment and were only separated for PPT and MR scanning sessions. OVX: ovariectomy surgery. MR: magnetic resonance imaging scanning session. PPT: partner preference test. (B) Regions of interest (ROIs) for network functional connectivity analyses. Antero-posterior coronal slices of the prairie vole template overlayed with ROI masks with the resolution used in the analysis. Each color represents a different ROI. ACC: anterior cingulate cortex. AON: anterior olfactory nucleus. BLA: basolateral amygdala. BNST: bed nucleus of the stria terminalis. DG: dentate gyrus. dHIP: dorsal hippocampus. MeA: medial amygdala. MOB: main olfactory bulb. LS: lateral septum. mPFC: medial prefrontal cortex. NAcc: nucleus accumbens. PVN: paraventricular nucleus. RSC: retrosplenial cortex; VP: ventral pallidum. vHIP: ventral hippocampus. VTA: ventral tegmental area. (C) 3D views of ROI masks embedded within the prairie vole template.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a–p) Representative rsfMRI time series of regions of interest (ROIs). For each ROI, the time series are shown before (Raw) and after pre-processing (Pre-processed). ACC: anterior cingulate cortex. AON: anterior olfactory nucleus. BLA: basolateral amygdala. BNST: bed nucleus of the stria terminalis. LS: lateral septum. MeA: medial amygdala. MOB: main olfactory bulb. mPFC: medial prefrontal cortex. NAcc: nucleus accumbens. PVN: paraventricular nucleus. RSC: retrosplenial cortex. VP: ventral pallidum. VTA: ventral tegmental area. DG: dentate gyrus. dHIP: dorsal hippocampus. vHIP: ventral hippocampus.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Pearson’s correlation values of rsfMRI time-series connectivity matrices. (B) Partial-correlation values of rsfMRI time-series connectivity matrices. (C) Fisher z-transformed, rsfMRI time-series connectivity matrices used for functional connectivity analysis. ACC: anterior cingulate cortex. AON: anterior olfactory nucleus. BLA: basolateral amygdala. BNST: bed nucleus of the stria terminalis. LS: lateral septum. MeA: medial amygdala. MOB: main olfactory bulb. mPFC: medial prefrontal cortex. NAcc: nucleus accumbens. PVN: paraventricular nucleus. RSC: retrosplenial cortex. VP: ventral pallidum. VTA: ventral tegmental area. DG: dentate gyrus. dHIP: dorsal hippocampus. vHIP: ventral hippocampus.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Raw SE-EPI rsfMRI image; (b) raw anatomic image; (c) brain extraction and bias field correction of the anatomic image; (d) registration of the anatomic data (grayscale) to the prairie vole brain template (outlined in red); (e) final registration of a representative volume of the SE-EPI acquisition (grayscale) to the prairie vole brain template (outlined in red).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** For every subject, session, and ROI, the average time series from the ROI is extracted and the functional connectivity with every voxel of the brain is estimated as the Pearson’s correlation. Then connectivity maps are Fisher z-transformed, and a single-group t-test is performed, family-wise error rates are controlled with a false discovery rate lower than 0.05. Connectivity maps represent Pearson’s correlation values. ACC: anterior cingulate cortex. AON: anterior olfactory nucleus. BLA: basolateral amygdala. BNST: bed nucleus of the stria terminalis. LS: lateral septum. MeA: medial amygdala. MOB: main olfactory bulb. mPFC: medial prefrontal cortex. NAcc: nucleus accumbens. PVN: paraventricular nucleus. RSC: retrosplenial cortex. VP: ventral pallidum. VTA: ventral tegmental area. DG: dentate gyrus. dHIP: dorsal hippocampus. vHIP: ventral hippocampus.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Prairie vole temperatures during MR acquisition sessions. A separate sub-sample was used to evaluate the design of the anesthesia protocol on physiological data in both male (n = 3) and female (n = 2) voles. Temperature mean was 34.93 ± 0.01°C. MRI data acquisition began when physiological measurements stabilized (approximately after ~15 min from bolus injection). (B) Two datasets from session 1 (baseline) showed signal loss in the posterior cortex and were discarded from the study. (C) Boxplots of the mean signal-to-noise ratio (SNR) values (n = 78) for each region of interest (16) used in the rsfMRI analyses. Top and bottom of the box are 25th and 75th percentiles, respectively, and the centerline shows data median. SNR estimates (n = 78) were calculated by dividing ROI mean signals by the standard deviation of the noise signal, as described elsewhere (Grandjean et al., 2020). ACC: anterior cingulate cortex. AON: anterior olfactory nucleus. BLA: basolateral amygdala. BNST: bed nucleus of the stria terminalis. LS: lateral septum; MeA: medial amygdala. MOB: main olfactory bulb. mPFC: medial prefrontal cortex. NAcc: nucleus accumbens. PVN: paraventricular nucleus. RSC: retrosplenial cortex. VP: ventral pallidum. VTA: ventral tegmental area. DG: dentate gyrus. dHIP: dorsal hippocampus. vHIP: ventral hippocampus.
 
 To explore relationships between socio-sexual behavior and functional connectivity, 16 regions of interest (ROIs) were defined according to their previously reported relevance in the process of pair-bond formation and maintenance (Johnson and Young, 2017; Lieberwirth and Wang, 2016; Walum and Young, 2018), which were the following: anterior cingulate cortex (ACC), anterior olfactory nucleus (AON), basolateral amygdala (BLA), bed nucleus of the stria terminalis (BNST), lateral septum (LS), medial amygdala (MeA), main olfactory bulb (MOB), medial prefrontal cortex (mPFC), nucleus accumbens (NAcc), retrosplenial cortex (RSC), paraventricular nucleus of the hypothalamus (PVN), ventral pallidum (VP), ventral tegmental area (VTA), dentate gyrus (DG), dorsal hippocampus (dHIP), and ventral hippocampus (vHIP) (Figure 1B,C). For each subject and session, average time series for each region were extracted from the pre-processed fMRI datasets (Figure 1—figure supplement 1). The latter were used to obtain connectivity matrices, based on the partial-correlation estimates for all possible pairs of ROIs (Figure 1—figure supplement 2).
 
@@ -51,19 +75,47 @@ NBS analysis found significant negative linear relationship (p≤0.001) with a l
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig2-v2.jpg)
 
-**Figure 2.:** (A) Representation of a prairie vole brain with regions (nodes) that constitute the network with a significant negative association with huddling latency. Scatter-plot graphs (B–J) of the connections in a with best line fit between baseline functional connectivity (Fisher z-transformed partial-correlation values) and huddling latencies (minutes) during cohabitation. The higher the connectivity between these regions before cohabitation, the shorter the huddling latencies during cohabitation in voles of both sexes. ACC: anterior cingulate cortex. BLA: basolateral amygdala. DG: dentate gyrus. LS: lateral septum. MeA: medial amygdala. NAcc: nucleus accumbens. PVN: paraventricular nucleus. RSC: retrosplenial cortex. VP: ventral pallidum. VTA: ventral tegmental area.Figure 2—source data 1.
+**Figure 2.:** (A) Representation of a prairie vole brain with regions (nodes) that constitute the network with a significant negative association with huddling latency. Scatter-plot graphs (B–J) of the connections in a with best line fit between baseline functional connectivity (Fisher z-transformed partial-correlation values) and huddling latencies (minutes) during cohabitation. The higher the connectivity between these regions before cohabitation, the shorter the huddling latencies during cohabitation in voles of both sexes. ACC: anterior cingulate cortex. BLA: basolateral amygdala. DG: dentate gyrus. LS: lateral septum. MeA: medial amygdala. NAcc: nucleus accumbens. PVN: paraventricular nucleus. RSC: retrosplenial cortex. VP: ventral pallidum. VTA: ventral tegmental area.
 
-## Prairie voles of both sexes show partner preference after cohabitation
+### Prairie voles of both sexes show partner preference after cohabitation
 
 Between 48 and 72 hr of cohabitation, partner preference was evaluated on each subject (N = 32) to assess pair-bonding behavior. This protocol was based on a previously described test (Williams et al., 1992; Figure 3B, see Materials and methods). The partner preference index revealed a significant difference between the proportion of time spent on the incentive area related to the partner (median = 0.63) with the area related to the stranger vole (median = 0.37) for all subjects (U = 378, p=0.0365, effect size r = 0.32) (Figure 3B). No significant differences were found between males and females in their preference for the partner (U = 121, p=0.81, effect size r = 0.05) or the stranger voles (U = 118, p=0.72, effect size r = 0.07), and there were also no significant differences in partner preference between the time periods when PPT tests were performed (48 and 72 hr) (U = 119, p=0.75, effect size r = 0.06) (Figure 3—figure supplement 1).
 
-## Functional connectivity at 24 hr of cohabitation predicted social interaction during the partner preference test
+![Figure 3.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative figure showing the design of the arena in which voles were tested for partner preference test. (B) Between 48 and 72 hr of cohabitation, partner preference was evaluated on each subject (N = 32). Partner preference index revealed a significant difference between the time spent on the incentive area related to the partner, with the incentive area related to the stranger vole. Boxplot graphs show whiskers with 10–90 percentiles; horizontal line inside the box shows data median, and ‘+’ represents data mean. (*) denotes significance at p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** No significant differences were found between Partner preference indexes obtained 48 hr after the onset of cohabitation (N = 16) in male (n = 7) and female (n = 9) prairie voles, with Partner preference Indexes obtained 72 hr after the onset of cohabitation in male (n = 9) and female (n = 7) voles.
+
+### Functional connectivity at 24 hr of cohabitation predicted social interaction during the partner preference test
 
 During the partner preference test (PPT), the proportion of time spent on social incentive areas over the total recorded time was calculated for analysis in all subjects (see Materials and methods). The percentage of time spent on social incentive areas over the total time of the test had a mean of 79.70 ± 2.65%. Spearman correlation analyses showed that the amount of time spent on social incentive areas had no relationship with the partner preference index (rs(30) = 0.08912 p=0.6277) (Figure 4—figure supplement 1). However, we tested if functional connectivity 24 hr after the start of cohabitation had a relationship with the total time spent on social incentive areas during the test, regardless if the subject interacted with the partner or stranger stimulus vole (N = 32). Through NBS analysis, a significant positive linear relationship (p=0.013) was found with the following network: LS–NAcc–mPFC–MeA–VP–MOB–DG (Figure 4A). These findings suggest that the lower the connectivity between these regions 24 hr after the onset of cohabitation, the longer the subject would interact with a conspecific of the opposite sex during the PPT, which was evaluated between 48 and 72 hr after the onset of cohabitation. The correlation strength between each connection of such network and the percentage of time on social incentive areas was obtained with a posteriori Pearson’s correlations: LS–NAcc (r(30) = −0.369, p=0.037), NAcc–mPFC (r(30) = −0.312, p=0.081), mPFC–MeA (r(30) = −0.373, p=0.034), MeA–VP (r(30) = −0.376, p=0.033), VP–MOB (r(30) = −0.531, p=0.001), and MOB–DG (r(30) = −0.404, p=0.021) (Figure 4B–G).
 
-## Male and female voles share network-level changes related to social bonding in different time points
+![Figure 4.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representation of a prairie vole brain with regions (nodes) that constitute the network with a significant negative association with the amount of social interaction during the PPT. Scatter-plot graphs (B–G) of the connections in a with best line fit between baseline functional connectivity (Fisher z-transformed partial-correlation values) and time on social incentive areas during cohabitation (percentage). The lower the connectivity between these regions at 24 hr of cohabitation, the longer the time spent on social incentive areas during the PPT. DG: dentate gyrus. LS: lateral septum. MeA: medial amygdala. MOB: main olfactory bulb. mPFC: medial prefrontal cortex. NAcc: nucleus accumbens. VP: ventral pallidum.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Huddling latency was measured during the first hours of cohabitation, while percentage of time on social incentive areas and partner preference index were calculated from the partner preference test (PPT) evaluated between 48 hr or 72 hr after the onset of cohabitation. (A) No significant relationship was found between huddling latency and percentage of time on social incentive areas (rs(30) = −0.107; p=0.556), (B) between partner preference index and percentage of time on social incentive areas (rs(30)=0.89; p=0.627), (C) or between huddling latency and partner preference index (rs(30)=0.003; p=0.984) (N = 30). (D) Partner preference was neither reciprocated between male and female partners (rs(14) = −0.203; p=0.450) (N = 16). Sex = F: females; M: males.
+
+### Male and female voles share network-level changes related to social bonding in different time points
 
 To determine whether cohabitation with mating induced changes in brain functional connectivity between sessions, longitudinal data was analyzed with linear mixed models (LMM), implemented via the Network-Based R-statistics package (NBR; Gracia-Tabuenca and Alcauter, 2020), which allows to implement LMM in an NBS framework (see Materials and methods). NBR analysis yielded significant session effects, that is changes between baseline, 24 hr, and 2 weeks of cohabitation (pFWE = 0.0482), in a network consisting of 10 regions: ACC, BLA, dHIP, LS, mPFC, NAcc, RSC, vHIP, VP, and VTA. No significant differences were found between male and female voles, a result that led us to run the analysis without the sex variable. The same network component was obtained (pFWE = 0.042) (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig5-v2.jpg)
+
+**Figure 5.:** (A) NBR analysis via Linear mixed models (LMM) analysis results represented in a prairie vole brain with regions (nodes) comprising the brain network that undergoes significant changes in functional connectivity (Fisher z-transformed correlation values) after cohabitation with mating. Interregional connectivity (edges) is shown by color code. Red: increase of functional connectivity; blue: decrease of functional connectivity. ACC: anterior cingulate cortex. BLA: basolateral amygdala. dHIP: dorsal hippocampus. LS: lateral septum. mPFC: medial prefrontal cortex. NAcc: nucleus accumbens. RSC: retrosplenial cortex. vHIP: ventral hippocampus. VP: ventral pallidum. VTA: ventral tegmental area. (B–K) Functional connectivity values in violin plots showing full distribution of data and median. Connecting lines track longitudinal data of each subject between regions through specific MR acquisition time points (Session): Baseline, 24 hr, and 2 weeks of cohabitation. Color codes for data points and connecting lines distinguish male (cyan) from female subjects (pink). False discovery rate (FDR) post hoc significant differences are shown: *<0.05, **<0.01, ***<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** 3D views of the nine control region masks embedded within the prairie vole template: primary auditory area (AUDp), the cerebellar cortex (CBX), forceps minor of the corpus callosum (fmi), laterodorsal thalamic nucleus (LD), primary motor area (MOp), motor-related medulla (MY), supplemental somatosensory a rea (SSs), primary visual area (VISp), and ventricle areas (Vent).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Sensory/motor components, including motor cortex (IC01, IC07), somatosensory cortex (IC06), parietal cortex (IC01), colliculi (IC08), and olfactory bulb (IC09). (b) Default-mode network (IC04). (c) Salience network (IC02). (d) Striatum (IC03), (e) Hippocampus and entorhinal cortex (IC05, IC10).
 
 Post hoc analyses (false discovery rate [FDR] corrected) identified differential longitudinal changes among rsfMRI sessions. Specifically, four connections had significant changes 24 hr after the onset of cohabitation: ACC–vHIP (t(56) = −2.766; p=0.0077), LS–RSC (t(56) = −3.270; p=0.0018), and LS–VP (t(56) = −2.540; p=0.0138) showed increased functional connectivity, while LS–dHIP (t(56) = 3.004; p=0.0039) had decreased connectivity in the same period of time. The edges LS–VP, LS–dHIP, and LS–RSC had no differences between baseline (before cohabitation) and the third session (2 weeks after the onset of cohabitation), suggesting acute plastic changes related to 24 hr of cohabitation; however, LS–mPFC (t(56) = −2.856; p=0.0060) and VP–VTA (t(56) = −2.752; p=0.0079) have increased connectivity, while ACC–LS (t(56) = 3.227; p=0.0020) and NAcc–VTA (t(56) = 2.970; p=0.0043) had decreased connectivity between the first and third scanning sessions (baseline vs 2 weeks of cohabitation). In addition, four connections reflected differences between 24 hr and 2 weeks after the onset of cohabitation (sessions 2 and 3): ACC–LS (t(56) = 3.675; p=0.0005) and BLA–NAcc (t(56) = 2.593; p=0.0121) had decreased connectivity, but LS–mPFC (t(56) = −4.013; p=0.0001) and mPFC–dHIP (t(56) = −2.605; p=0.0117) exhibit increased connectivity after 2 weeks of cohabitation (third session), suggesting long-term functional changes related to cohabitation (Figure 5B–K). Overall, the node with the most changes in functional connectivity was the LS.
 
@@ -71,25 +123,25 @@ To control for potential confounders, we selected an independent set of brain st
 
 Group-independent component analysis (gICA) was also performed to address the exploration of large-scale functional brain networks and potential differences between sessions. The gICA revealed five components associated with sensory and motor cortices, putative default-mode, and salience networks, a striatum-centered component, and two components with relevant connectivity of the ventral hippocampi, with a degree of lateralization found in some of the latter (Figure 5—figure supplement 2). These results are strikingly similar to other networks reported previously in the male prairie vole (Ortiz et al., 2018), although this is a larger sample also including female voles and an optimized anesthesia protocol for the detection of rsfMRI networks in rodents (Grandjean et al., 2020). In order to evaluate whether networks found through gICA maps had significant changes between sessions, dual regression was applied and group differences across sessions were assessed using two-sample paired t-tests (see Materials and methods). However, the obtained FWE-corrected p statistics found no significant differences between sessions. Being a voxel-wise method, it may not be sensitive enough to detect punctual, region-specific changes in brain functional connectivity.
 
-## Specific network connections that undergo changes during cohabitation with mating correlate with partner preference in male and female voles
+### Specific network connections that undergo changes during cohabitation with mating correlate with partner preference in male and female voles
 
 Although several regions were found to change significantly after cohabitation and social bonding, we tested if any specific connection of the detected network component (Figure 5A) could have a relationship with the partner preference index obtained between 48 and 72 hr after the onset of cohabitation, which was used to evaluate the level of pair-bonding in each subject. Two-tailed Pearson’s correlation tests revealed a significant positive relationship in LS–VP baseline functional connectivity (r(26) = 0.435, p=0.020) with the partner preference index, suggesting that the higher the baseline functional connectivity between these regions, the higher the partner preference index would be (Figure 6A). Also, significant negative relationships were found between the partner preference index and BLA–NAcc functional connectivity at 24 hr of cohabitation (session 2) (r(30) = −0.464, p=0.0074), and in LS–RSC functional connectivity at 2 weeks of cohabitation (session 3) (r(28) = −0.437, p=0.015), which may suggest that the lower the connectivity between these regions at the specified time points, the higher the partner preference index (Figure 6B,C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/55081/elife-55081-fig6-v2.jpg)
 
-**Figure 6.:** Scatterplots (A–C) that show significant correlations (with best line fit) between functional connectivity (Fisher z-transformed partial-correlation values) and partner preference index in network connections that undergo longitudinal changes. BLA: basolateral amygdala. LS: lateral septum. NAcc: nucleus accumbens. RSC: retrosplenial cortex. VP: ventral pallidum.Figure 6—source data 1.
+**Figure 6.:** Scatterplots (A–C) that show significant correlations (with best line fit) between functional connectivity (Fisher z-transformed partial-correlation values) and partner preference index in network connections that undergo longitudinal changes. BLA: basolateral amygdala. LS: lateral septum. NAcc: nucleus accumbens. RSC: retrosplenial cortex. VP: ventral pallidum.
 
 ## Discussion
 
 Several studies have described the relevance of different brain regions involved in pair-bond induction and maintenance in prairie voles (Johnson and Young, 2017; Walum and Young, 2018). However, longitudinal explorations of the brain before and after pair-bonding are scarce (Bales et al., 2007), especially from a network perspective. Here, by using rsfMRI, we were able to detect a brain network in which baseline functional connectivity (before cohabitation) predicted the latency for huddling behavior during the first hours of cohabitation, providing the potential neurofunctional substrate for the variability in affiliative behavior and further extending the recent findings that the corticostriatal electric activity modulates social bonding in prairie voles (Amadei et al., 2017). A relationship between functional connectivity and social interaction was also found, in which a network detected from data obtained 24 hr after the onset of cohabitation predicted the amount of social interaction during the PPT. Finally, our results reflected significant longitudinal changes in functional connectivity of prairie voles after pair-bonding. Post hoc analyses revealed differential short- and long-term connectivity changes mainly involving the lateral septum (LS), with three network connections correlating with the level of partner preference in different sessions. We further discuss the potential neurophysiological basis and implications of our findings.
 
-## Correlations between network functional connectivity and social behavior
+### Correlations between network functional connectivity and social behavior
 
 Although each of the identified networks would likely act as a whole or possess emergent properties, in the following text, we mention previous evidence in rodents that may aid in their functional interpretation, and each component will be dissected in segments to better understand node relationships and their putative role in social bonding and related behavior.
 
 Even though it has been reported that in prairie voles, 24 hr of cohabitation or 6 hr of ad libitum mating is sufficient for a pair-bond to be developed (Williams et al., 1992), a considerable amount of evidence has shown that other factors influence its development and maintenance. Specifically, AVP (Ophir et al., 2008) and OXT receptor gene expression and density (King et al., 2016), paternal nurturing (Ahern and Young, 2009), and neonatal isolation (Barrett et al., 2015) have shown to produce variability in the exhibition of prairie vole social behavior. Though they were under the same experimental conditions, subjects from both sexes in this study showed a wide behavioral variability not only during their sexual encounters in the first hours of cohabitation, but also in their bonding behavior evaluated between 48 and 72 hr after the onset of cohabitation. It is likely that the sum of previously mentioned factors gives each subject a distinctive brain network configuration that ultimately relates to bonding behavior. Hence, we hypothesized that there may be individual differences in functional connectivity that could explain the variability in socio-sexual behavior.
 
-## Correlation with huddling latencies
+### Correlation with huddling latencies
 
 Indeed, we identified a network for which the functional connectivity at baseline was negatively related to huddling latencies during the first hours of cohabitation. In other words, baseline functional connectivity predicted how quickly subjects would begin affiliative huddling with an opposite-sex conspecific. Huddling is a measurable affiliative behavior in prairie voles and a useful indicator of social receptiveness (Salo et al., 1993). The network included the following connections: VP–MeA–LS–VTA–RSC–PVN, PVN–RSC–BLA–NAcc–ACC–NAcc, and BLA–DG (Figure 3A). This network has regions reported to be involved in social salience, social memory and recognition, spatial memory, and reward-seeking mechanisms. Therefore, it is possible that subjects that exhibited huddling at an earlier time found it more rewarding than those who did not.
 
@@ -99,7 +151,7 @@ Connectivity between PVN–RSC–BLA may be related to an association of a spati
 
 In a previous report, the BLA and the ACC were found relevant in coordinating brain activity when social interaction is initiated and in the formation of social recognition memory through gene expression (Tanimizu et al., 2017). The NAcc is known to translate reward-predictive information from the amygdala (BLA–NAcc) to promote cue-evoked, reward-seeking behavioral responses in rodents (Ambroggi et al., 2008), while the ACC has been considered an important region in the decision-making process between sensory perception, motivation, and final motor performance (Assadi et al., 2009). Thus, input from the ACC (NAcc–ACC) may be necessary for a social decision-making process. It is important to note that a recent study demonstrated this particular circuit may be unique in prairie voles (Horie et al., 2020), and in female prairie voles, the functional connectivity of the prefrontal cortex and NAcc after the first encounter predicts affiliative huddling toward a partner, and the activation of such circuit biases later preference toward a partner (Amadei et al., 2017). Our results extend such findings, showing that a larger network including similar corticostriatal connectivity, measured even before the exposure to a potential partner, predicts affiliative behavior. Moreover, such relation is consistent for both males and females, and the circuit includes the amygdala and hippocampus, as predicted by Amadei et al., 2017. Overall, the functional connectivity of this network may indicate the predisposition of a prairie vole to engage in prosocial behavior, which might be influenced by previous experience and other factors mentioned beforehand.
 
-## Correlation with amount of social interaction
+### Correlation with amount of social interaction
 
 A network component detected at 24 hr after the onset of cohabitation, LS–NAcc–mPFC–MeA–VP–MOB–DG, was negatively correlated with the amount of social incentive a subject would have during the partner preference test, a test in which it interacted with two conspecifics of the opposite sex, one being the partner and the other a stranger vole. Interestingly, this component includes five regions from the huddling network previously described, and all but two nodes (MeA–VP) are related differently when comparing it with the former network.
 
@@ -107,7 +159,7 @@ Regardless of the level of preference for the partner, prairie voles of both sex
 
 Our data suggests that functional connectivity 24 hr after the onset of cohabitation has a relationship to the level of sociability, reflecting a phenotype independent of pre-bonding behavior and partner preference (Figure 4—figure supplement 1). Further investigation of this network would be necessary to understand the impact of sociability in other behaviors, such as mate-territory guarding and parental nurturing. Apparently, its change in modulation is on a short term, since a correlation at 2 weeks of cohabitation was not found and other regions or networks may play this role on a long-term basis.
 
-## Longitudinal changes in functional connectivity after pair-bonding
+### Longitudinal changes in functional connectivity after pair-bonding
 
 It has been proposed that pair-bonding results from the convergence of the mesolimbic DA reward circuit and social discrimination circuits (Walum and Young, 2018). The results here presented are consistent with this model, by demonstrating both short- and long-term changes in a brain network including regions largely associated with reward/motivation (ACC, VTA, NAcc, VP) and the social decision-making network, specifically related to sensory contextualization (BLA, LS, RSC, dHIP), saliency processing (LS, ACC, VTA), and memory formation and retrieval (vHIP, dHIP, mPFC, RSC).
 
@@ -131,7 +183,7 @@ Even though our results show ample individual variability in display of behavior
 
 Concerning gICA, the obtained FWE-corrected P statistics found no significant differences between sessions. This being a voxel-wise type of analysis that implies multiple comparisons with its respective correction, gICA maps may not be sensitive enough to detect punctual, region-specific changes in brain functional connectivity. While ICA in rsfMRI is a valuable method with advantageous properties for identifying spatio-temporal signal sources that are not well-characterized or well-understood, different methods of analyses such as NBS seem more suitable for the aim of our study, which was to investigate the relationship between social behavior and functional connectivity, as well as the exploration of changes of connectivity in specific regions as a consequence of social bonding.
 
-## Correlation of brain functional connectivity with partner preference
+### Correlation of brain functional connectivity with partner preference
 
 While consistent longitudinal changes in connectivity were present in our data, we wanted to explore whether some of these nodes had a relationship with the level of partner preference, which captures the strength of the pair-bond (Williams et al., 1992), which was evaluated between 48 and 72 hr after the onset of cohabitation.
 
@@ -149,35 +201,136 @@ In conclusion, our findings suggest the existence of several functional brain ne
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Network-Based Statistic Toolbox</td>
+      <td>PMID:20600983</td>
+      <td>RRID:SCR_002454</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Network-Based R-Statistics</td>
+      <td>doi: 10.1101/2020.11.07.373019</td>
+      <td>RRID:SCR_019114</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>nlme</td>
+      <td>CRAN</td>
+      <td>RRID:SCR_015655</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FSL</td>
+      <td>PMID:21979382</td>
+      <td>RRID:SCR_002823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ANTS – Advanced Normalization ToolS</td>
+      <td>PMID:20851191</td>
+      <td>RRID:SCR_004757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2</td>
+      <td>CRAN</td>
+      <td>RRID:SCR_014601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexmedetomidine</td>
+      <td>Zoetis</td>
+      <td>PubChem CID: 5311068</td>
+      <td>s.c. bolus dose:0.05 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>PiSA</td>
+      <td>PubChem CID: 3763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-Estradiol 3-benzoate</td>
+      <td>Sigma</td>
+      <td>PubChem CID: 222757</td>
+      <td>Dose: 0.5 mg/mL dissolved in corn oil</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dow Corning Silastic Laboratory Tubing</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td>Length of tubing for capsule: 1.7 cm</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Thirty-two 3-month-old sexually naïve female (N = 16) and male (N = 16) prairie voles (M. ochrogaster) were used in the study. The animals were housed in a temperature (23°C) and light (14:10 light–dark cycle) controlled room and provided with rabbit diet HF-5326 (LabDiet, St. Louis, MO) oat, sunflower seeds, and water ad libitum. These voles were previously weaned at 21 days, housed in same-sex cages, and were descendants of voles generously donated by Dr. Larry J. Young from his colony at Emory University. The number of subjects per group is comparable to the largest sample sizes using rsfMRI in rodents (Bajic et al., 2016; Christiaen et al., 2019; Grandjean et al., 2014). All surgical, experimental, and maintenance procedures were carried out in accordance with the ‘Reglamento de la Ley General de Salud en Materia de Investigación para la Salud’ (Health General Law on Health Research Regulation) of the Mexican Health Ministry that follows the National Institutes of Health’s ‘Guide for the Care and Use of Laboratory Animals’ (NIH Publications No. 8023, revised 1978). The animal research protocols were approved by the bioethics committee of the Instituto de Neurobiología, UNAM.
 
-## Surgical procedures
+### Surgical procedures
 
 Fourteen days before the experimental protocol, female voles were bilaterally ovariectomized. After recovery, silastic capsules (Dow Corning Silastic Laboratory Tubing; ThermoFisher Scientific, Pittsburg, PA) containing estradiol benzoate (E2B; Sigma–Aldrich, St. Louis, MO) dissolved in corn oil (0.5 mg/mL of E2B) were implanted via s.c. to induce sexual receptivity 4 days before cohabitation protocol and remained implanted during the entire experimental protocol. Females in Microtus species are induced ovulators and do not show cyclic changes (Taylor et al., 1992), and for the purpose of this experiment, estrogen-in-oil capsule implantation allowed a stable and equal hormonal dose in all female subjects. The corresponding dose and procedure reliably induced sexual receptivity (Ingberg et al., 2012).
 
-## Anesthesia for image acquisition
+### Anesthesia for image acquisition
 
 Animals were anesthetized to avoid stress and excessive movement during scanning sessions. Isoflurane at 3% concentration in an oxygen mixture was used for induction and positioning in the scanner bed, in which the head was immobilized with a bite bar and the coil head holder. Once voles were securely placed in the scanner bed, isoflurane anesthesia (Sofloran; PiSA, Mexico) was adjusted at a 2% concentration and a single bolus of 0.05 mg/kg of dexmedetomidine (Dexdomitor; Zoetis, Mexico) was administered subcutaneously. Five minutes after the bolus injection, isoflurane anesthesia was lowered and maintained at 0.5%. MRI acquisition started when physiological readings were stabilized (~15 min after bolus injection). The use of both anesthetics has been reported as optimal for rsfMRI acquisition in rodents and closely resemble an awake condition (Grandjean et al., 2014; Paasonen et al., 2018), yet the mentioned combination of dose and administration route were previously standardized for this specific protocol in prairie voles (unpublished data). Body temperature was maintained with a circulating water heating pad within the scanner bed, respiration rate was monitored with an MR-compatible pneumatic pillow sensor, and blood oxygen saturation was measured with an MR-compatible infrared pulse-oximeter (SA Instruments Inc, Stony Brook, NY). After the scanning sessions, animals were monitored until fully recovered and transferred back to their housing.
 
-## Image acquisition
+### Image acquisition
 
 MRI acquisition was conducted with a Bruker Pharmascan 70/16US, 7 Tesla magnetic resonance scanner (Bruker, Ettlingen, Germany), using an MRI CryoProbe transmit/receive surface coil (Bruker, Ettlingen, Germany). Paravision-6 (Bruker, Ettlingen, Germany) was used to perform all imaging protocols. Before running the fMRI sequence, local field homogeneity was optimized within an ellipsoid covering the whole brain and skull using previously acquired field maps. rsfMRI was acquired using a spin-echo echo-planar imaging (SE-EPI) sequence: repetition time (TR) = 2000 ms, echo time (TE) = 19 ms, flip angle (FA) = 90°, field of view (FOV) = 18 × 16 mm2, matrix dimensions = 108 × 96, yielding an in-plane voxel dimensions of 0.167 × 0.167 mm2, and slice thickness of 0.7 mm, total volumes acquired = 305 (10 min and 10 s). EPI bandwidth was 288,461.5 Hz, the number of slices was 25, pi pulse (refocusing pulse) duration was 1.5455 ms with 2200.0 Hz bandwidth, and pi/2 (excitation pulse) was 1.9091 ms and 2200.0 Hz, respectively. After the rsfMRI sequence, an anatomical scan was obtained using a spin-echo rapid acquisition with refocused echoes (Turbo-RARE) sequence with the following parameters: TR = 1800 ms, TE = 38 ms, RARE factor = 16, number of averages (NA) = 2, FOV = 18 × 20 mm2, matrix dimensions = 144 × 160, slice thickness = 0.125 mm, resulting in isometric voxels of size 0.125 × 0.125 × 0.125 mm3.
 
-## Cohabitation and behavior analysis
+### Cohabitation and behavior analysis
 
 Female and male voles unrelated to each other were randomly assigned as couples and placed for cohabitation in a new home cage with fresh bedding to promote ad libitum mating and social interaction. The first 6 hr of cohabitation was video recorded for subsequent analysis of social and mating behavior: mount, intromission, and ejaculation latencies from male voles; lordosis latency from females; and huddling latencies for each male and female pair. In male voles, mount latency was scored if it straddled the female from behind with pelvic thrusting, a continued mount behavior with repetitive thrusting was scored as intromission latency, and ejaculation latency was scored if after intromission and deeper thrusting an evident period of male inactivity was followed. Lordosis latency was scored if the female vole adopted an immobile posture with concave back flexion, neck extension, elevation of the hindquarters, and tail deviation to facilitate male mounting and intromission. Some females displayed lordosis reflex as pre-mounting behavior and were scored for lordosis latency. Since the onset of behaviors such as grooming or licking involve social contact and may overlap with huddling (Burkett et al., 2016), in this study huddling latency was only scored if there was continuous, side-to-side bodily contact for at least 10 s. Once joined, voles were housed in couples for the remaining of the experiment and were only separated for MRI scanning sessions and behavioral tests.
 
-## Partner preference test
+### Partner preference test
 
 Subjects underwent a 3 hr PPT to evaluate pair-bond formation. This protocol was based on a previously described test (Williams et al., 1992) and was performed in custom-built, three-chambered clear plastic arenas divided by perforated clear plastic barriers that allowed visual, auditory, and olfactory contact, but not physical interaction or mating behavior between subjects. In the central chamber, the vole being tested could roam freely, and time spent in the incentive areas at opposite sides of the chamber was recorded. The incentive areas were defined as the proximal space next to the chambers with its ‘partner’ or with an opposite-sex, novel ‘stranger’ vole. All stranger voles were unrelated to subjects in the test and had the same age and hormonal condition than the sexual partner. On each test, partner or stranger voles were randomly and alternately positioned on the opposite chambers of the arena. Each subject was tested only once in the PPT, either at 48 hr or at 72 hr after the onset of cohabitation. If a vole had PPT (assigned randomly and alternately) at the 48 hr period, its partner was tested at the 72 hr period to enable rest between tests and avoid excessive stress. PPT data analysis was performed with UMATracker software (Yamanaka and Takeuchi, 2018), which allowed quantification of the proportion of time spent with each of the stimulus voles. The percentage of time spent on the area related to the partner and of the area of the stranger were obtained. From this data, a partner preference index was calculated for each subject, consisting of the proportion of time spent on the area related to the partner divided by the proportion of time spent on both social incentive areas (time with partner plus time with stranger vole).
 
-## Imaging data pre-processing
+### Imaging data pre-processing
 
 Imaging data pre-processing was performed with FMRIB’s Software Libraries (FSL; Jenkinson et al., 2012) and Advanced Normalization Tools (ANTs; Avants et al., 2011) for spatial registration. To avoid initial signal instability, the first five volumes of each functional series were discarded. The slice-timing correction and motion correction were applied, using the first non-discarded volume as reference. The reference volume was also taken to determine the deformable transformation to the corresponding anatomical image. The resulting transformation was combined with a non-linear transformation to a prairie vole brain template obtained from previously published work (Ortiz et al., 2018; Figure 1—figure supplement 3). Functional images were later warped to the brain template and resampled to a resolution of 0.16 × 0.16 × 0.7 mm3. To minimize physiological confounds, the first five eigenvectors (time series) within the combined non-gray matter mask were obtained (Behzadi et al., 2007), since recent findings have shown that vascular, ventricle, and white matter signal regression enhances functional connectivity specificity from rsfMRI data (Grandjean et al., 2020). These eigenvectors and the six motion parameters (three rotations, three displacements) were regressed out from each subject’s functional series. Datasets were band-pass filtered to retain frequencies between 0.01 and 0.1 Hz (Gorges et al., 2017). Finally, smoothing was applied with a box kernel with size of three voxels, using FSL.
 
-## Functional connectivity analysis
+### Functional connectivity analysis
 
 Regions of interest (ROIs) were manually defined on the anatomical prairie vole brain template, visually guided with the Allen Mouse Brain Atlas (Lein et al., 2007), to select the minimum possible number of voxels that included/covered the respective region. Connectivity matrices were calculated using MATLAB (Mathworks, Natick, MA) as follows: first, the average time series for each region were extracted from the pre-processed fMRI datasets and then, partial-correlation estimates were obtained for all possible pairs of ROIs, partialing out the remaining time series. Before analysis, correlation values were Fisher z-transformed. For each region, seed-based functional connectivity maps (Figure 1—figure supplement 4), as well as signal-to-noise ratio values, were generated for the assessment of data quality (Figure 1—figure supplement 5C).
 
@@ -185,11 +338,11 @@ Due to technical problems, two subjects missed the baseline MRI acquisition (ses
 
 Correlations between behavioral data and functional connectivity were assessed with the NBS framework, using the NBS Toolbox (Zalesky et al., 2010), which estimates the statistical significance of clusters of connections (networks) by comparing their strength with a null distribution of such property obtained with 5000 permutations of the original data. Since the NBS Toolbox is restricted to general linear hypothesis testing, the longitudinal data was analyzed with linear mixed models (LMM), implemented via the Network-Based R-statistics package (NBR; Gracia-Tabuenca and Alcauter, 2020), which allows to implement LMM in an NBS framework. Also, NBR restricts the permutation of within-subject data based on the random variables. Specifically for functional connectivity longitudinal analysis, LMM were fitted for each connection (edge) considering sex (male, female) as a fixed variable, and session (baseline, 24 hr, and 2 weeks of cohabitation) and intercept as random variables. Those edges with significant (p<0.05) sex, session, or interaction effects at this level were used to identify sets of connected nodes, that is components or networks, and their statistical strength (sum of their statistical estimates, Z-values) were compared with a null distribution of the largest clusters from the statistical tests of the permutated data (5000 permutations), this being the NBS framework (Zalesky et al., 2010).
 
-## Group-independent component analysis
+### Group-independent component analysis
 
 gICA was applied using FSL’s melodic (FSL; Jenkinson et al., 2012) on the same pre-processed images previously used in this study, only the female and male prairie voles that underwent all three MR scanning sessions were included on the analysis (n = 26), each subject having three different pre-processed images (n = 78). The number of components was set to 10, as described in previous work in prairie voles by our own group (Ortiz et al., 2018). To identify connected voxels over background, gICA maps were scaled to Z-scores and thresholded voxel-wise at Z ≥ 2.3 based on a Gaussian/Gamma mixture model and an alternative hypothesis testing approach. These gICA maps were visually inspected and labeled according to their anatomical distribution and location of their maximal regions, with additional visual guidance from the Allen Mouse Brain Atlas (Lein et al., 2007).
 
-## Statistical analysis
+### Statistical analysis
 
 Data in the study is presented as mean ± standard error of the mean unless otherwise noted. Partner preference was explored with one-tailed Mann–Whitney U tests given that Shapiro–Wilk normality tests revealed that such data was not normally distributed. Behavioral data was analyzed with GraphPad Prism 5 (GraphPad Software, La Jolla, CA).
 

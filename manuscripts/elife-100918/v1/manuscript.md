@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0056pyw12 School of Psychology, Shanghai University of Sport Shanghai China
-2. https://ror.org/02n96ep67 School of Psychology and Cognitive Science, East China Normal University Shanghai China
-3. https://ror.org/01kj4z117 Faculty of Psychology, Southwest University Chongqing China
-4. https://ror.org/0220qvk04 Brain Health Institute, National Center for Mental Disorders, Shanghai Mental Health Center, Shanghai Jiao Tong University School of Medicine and School of Psychology Shanghai China
+1. School of Psychology, Shanghai University of Sport Shanghai China ([ROR:0056pyw12](https://ror.org/0056pyw12))
+2. School of Psychology and Cognitive Science, East China Normal University Shanghai China ([ROR:02n96ep67](https://ror.org/02n96ep67))
+3. Faculty of Psychology, Southwest University Chongqing China ([ROR:01kj4z117](https://ror.org/01kj4z117))
+4. Brain Health Institute, National Center for Mental Disorders, Shanghai Mental Health Center, Shanghai Jiao Tong University School of Medicine and School of Psychology Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
 
 † Corresponding author
 
@@ -38,17 +38,17 @@ Notably, even if differences are found in ERPs or neural oscillations, the exten
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 For behavioral analysis, a two-way repeated measures analysis of variance (ANOVA) (task type: single task vs. dual task×congruency: congruent vs. incongruent) was performed on RTs. The results showed that the RTs of the single-task condition were faster than the dual-task condition (main effect of task type: F(1, 31)=113.28, p<0.001, η2p=0.79) and a reliable Stroop interference effect (main effect of congruency: F(1, 31)=32.53, p<0.001, η2p=0.51). Notably, the interaction between task type and congruency was significant (F(1, 31)=8.62, p=0.006, η2p=0.22). Simple effect analysis revealed that, in the single-task condition, the RTs of incongruent trials were significantly slower (M=851.15, SE = 32.16) than congruent trials (M=736.10, SE = 26.29) (p<0.001). However, in the dual-task condition, the RTs did not differ between incongruent trials (M=1073.04, SE = 39.73) and congruent trials (M=1033.68, SE = 49.43) (p=0.089), indicating that the Stroop effect of RTs only occurred in the single-task condition (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/100918/elife-100918-fig1-v1.jpg)
 
-**Figure 1.:** Allen et al., 2019) of behavioral data.The plot consists of a probability density plot, a line graph, and raw data points. **p<0.01, ***p<0.001.
+**Figure 1.:** The plot consists of a probability density plot, a line graph, and raw data points. **p<0.01, ***p<0.001.
 
-## ERP results
+### ERP results
 
-## P1
+#### P1
 
 Two-way repeated-measures ANOVA was conducted on the P1 component, revealing a significant main effect of task type (F(1, 31)=29.92, p<0.001, η2p=0.49). Specifically, the P1 amplitude of the dual task (M=1.63, SE = 0.30) was significantly greater than the single task (M=0.39, SE = 0.28). However, neither the main effect of congruency (F(1, 31)=0.00, p=0.99, η2p=0.00) nor the two-way interaction (F(1, 31)=0.23, p=0.63, η2p=0.007) was significant (Figure 2).
 
@@ -56,7 +56,7 @@ Two-way repeated-measures ANOVA was conducted on the P1 component, revealing a s
 
 **Figure 2.:** (A) The event-related potential (ERP) waveforms for the P1 component. The shaded rectangle represents the defined time windows, and the shading above and below the ERP waveform represents the 95% confidence intervals. (B) Topographic distributions of average amplitude for each condition within the time window (110–150 ms) and the amplitude differences between congruent and incongruent trials in single and dual tasks. (C) Raincloud plots of amplitude for P1 across conditions. n.s., not significant.
 
-## N450
+#### N450
 
 Analysis of the N450 component showed the main effect of task type (F(1, 31)=14.71, p=0.001, η2p=0.32) and the main effect of congruency (F(1, 31)=4.36, p<0.05, η2p=0.12) were both significant. However, the two-way interaction (F(1, 31)=0.63, p=0.43, η2p=0.02) was not significant (Figure 3).
 
@@ -64,7 +64,7 @@ Analysis of the N450 component showed the main effect of task type (F(1, 31)=14.
 
 **Figure 3.:** (A) The event-related potential (ERP) waveforms for N450 components. The shaded rectangle represents the defined time windows, and the shading above and below the ERP waveform represents the 95% confidence intervals. (B) Topographic distributions of average amplitude for each condition within the time window (350–500 ms) and the amplitude differences between congruent and incongruent trials in single and dual tasks. (C) Raincloud plots of amplitude for N450 across conditions. n.s., not significant.
 
-## SP
+#### SP
 
 For the SP component, two-way repeated-measures ANOVA showed the main effect of task type was significant (F(1, 31)=14.54, p=0.001, η2p=0.32), but the main effect of congruency was not (F(1, 31)=2.89, p=0.10, η2p=0.09). Importantly, the interaction between congruency and task type was significant (F(1, 31)=5.68, p<0.05, η2p=0.16). Simple effect analysis showed that, in the single task, the SP amplitude in incongruent trials (M=1.29, SE = 0.39) was significantly greater than in congruent trials (M=0.70, SE = 0.30) (p=0.009). On the contrary, in the dual task, the SP amplitude did not differ between congruent trials (M=0.27, SE = 0.34) and incongruent trials (M=0.22, SE = 0.37) (p=0.98) (Figure 4).
 
@@ -72,13 +72,21 @@ For the SP component, two-way repeated-measures ANOVA showed the main effect of 
 
 **Figure 4.:** (A) The event-related potential (ERP) waveforms for SP components. The shaded rectangle represents the defined time windows, and the shading above and below the ERP waveform represents the 95% confidence intervals. (B) Topographic distributions of average amplitude for each condition within the time window (650–950 ms) and the amplitude differences between congruent and incongruent trials in single and dual tasks. (C) Raincloud plots of amplitude for SP across conditions. n.s., not significant, *p<0.05, **p<0.01.
 
-## MVPA results
+### MVPA results
 
 Cluster-level permutation tests of the theta band indicated that only one cluster in 740–820 ms could significantly classify the Stroop effect of the single and dual tasks (Figure 5A). Regarding the beta band, tests showed a significant above-chance difference between the two task types from 920 to 1040 ms (Figure 5C). However, no reliable decoding was observed between the two task types in the alpha band (Figure 5B).
 
-## Time-frequency results
+![Figure 5.](https://cdn.elifesciences.org/articles/100918/elife-100918-fig5-v1.jpg)
 
-## Theta band
+**Figure 5.:** Dots denote significant differences from chance (p<0.01). Shading represents clusters of significant time points (cluster-corrected).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100918/elife-100918-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Grand-average time-frequency representations for the alpha band over the occipital-parietal area (POz, Oz, PO3, PO4, PO7, PO8, O1, O2) for each condition, and the difference activity between congruent and incongruent trials in single and dual tasks. (B) Topographic distributions of average amplitude for each condition within the defined time-frequency region of interest (8–13 Hz, 0–1000 ms) and the magnitude differences between congruent and incongruent trials in single and dual tasks. (C) Raincloud plots of event-related spectral perturbation (ERSP) magnitudes for the alpha band across conditions. n.s., not significant.
+
+### Time-frequency results
+
+#### Theta band
 
 The two-way repeated-measures ANOVA on theta power revealed that the main effect of congruency was significant (F(1, 31)=14.68, p=0.001, η2p=0.32), but the main effect of task type was not (F(1, 31)=0.30, p=0.59, η2p=0.01). Notably, the interaction was significant (F(1, 31)=7.71, p=0.009, η2p=0.20). Simple effect analysis showed that, in the dual task, the theta power did not differ between congruent trials (M=3.12, SE = 0.24) and incongruent trials (M=3.27, SE = 0.24) (p=0.63). However, in the single task, the theta power was significantly higher in incongruent trials (M=4.00, SE = 0.32) than in congruent trials (M=2.68, SE = 0.20) (p<0.001) (Figure 6).
 
@@ -86,17 +94,17 @@ The two-way repeated-measures ANOVA on theta power revealed that the main effect
 
 **Figure 6.:** (A) Grand-average time-frequency representations for the theta band over fronto-central area (Fz, FCz, Cz) for each condition, and the difference activity between congruent and incongruent trials in single and dual tasks. (B) Topographic distributions of average amplitude for each condition within the defined time-frequency region of interest (4–7 Hz, 740–820 ms) and the magnitude differences between congruent and incongruent trials in single and dual tasks. (C) Raincloud plots of event-related spectral perturbation (ERSP) magnitudes for theta band across conditions. n.s., not significant. **p<0.01, ***p<0.001.
 
-## Beta band
+#### Beta band
 
 Analysis of the beta power showed the main effect of task type (F(1, 31)=34.55, p<0.001, η2p=0.53) and the main effect of congruency (F(1, 31)=11.61, p=0.002, η2p=0.27) were both significant. Importantly, the interaction between task type and congruency reached a significant level (F(1, 31)=15.64, p<0.001, η2p=0.34). Simple effect analysis revealed that, in the single-task condition, the beta power was significantly lower in the incongruent trials (M=0.53, SE = 0.06) than in the congruent trials (M=0.80, SE = 0.08) (p<0.001), while no significant difference was found between them in the dual-task condition (p=0.40) (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/100918/elife-100918-fig7-v1.jpg)
 
-## RSA results
+### RSA results
 
 The RSA results showed that the interaction pattern in the theta band significantly contributes to variation in the interaction pattern of response time (estimate = 0.17, SE = 0.05, t=3.22, pcorrected = 0.004). However, the correlation between the dissimilarity matrix of the SP (estimate = 0.02, SE = 0.05, t=0.48, pcorrected = 0.63) and beta (estimate = 0.10, SE = 0.05, t=2.03, pcorrected = 0.06) representation and the interaction pattern of response time was not significant (Figure 8).
 
-## Supplementary results
+### Supplementary results
 
 Analysis of the alpha power showed the main effect of task type (F(1, 31)=57.90, p<0.001, η2p=0.65) and the main effect of congruency (F(1, 31)=7.38, p=0.01, η2p=0.19) were both significant. However, the two-way interaction (F(1, 31)=0.53, p=0.47, η2p=0.02) was not significant (Figure 5—figure supplement 1).
 
@@ -122,17 +130,17 @@ In summary, this study demonstrated that the concurrent working memory task can 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Using G*Power software (Faul et al., 2007), we calculated the sample size for the experiment. The power analysis (power≥0.9) on within-factors designs, assuming a moderate effect size of 0.25, indicated a sample size of 30. We recruited 34 healthy subjects (17 females; age: 21.38±1.92 years) through advertisements. Two subjects were excluded from further analyses due to excessive EEG artifacts. Finally, a total of 32 subjects (16 females; age: 21.44±1.97 years) remained for behavioral and EEG analyses. All participants were right-handed, had normal or corrected-to-normal vision, and normal color perception assessed by the Ishihara Color Test, and reported no history of neurologic or psychiatric disease. They all signed written informed consent before the experiment. All procedures were conducted in accordance with the principles of the Declaration of Helsinki and its later amendments and were approved by the Human Research Human Ethics Committee of the Shanghai University of Sport (102772024RT005).
 
-## Apparatus and stimuli
+### Apparatus and stimuli
 
 Participants were instructed to perform experiments in a soundproof room. The experimental stimuli were presented on a 19-inch color monitor (resolution 1920×1080, refresh rate 60 Hz) with a viewing distance of approximately 65 cm. Stimulus presentation and response recording were controlled by a Microsoft PC running MATLAB (Mathworks, Inc) with Psychophysics Toolbox extensions (Brainard, 1997; Pelli, 1997).
 
 The experiment employed the single task (the classical manual Stroop task) and the dual task (the Sternberg working memory task combined with the Stroop task). The Stroop task stimuli consisted of four Chinese words: ‘红’ (red, RGB: 255, 0, 0), ‘绿’ (green, RGB: 0, 255, 0), ‘蓝’ (blue, RGB: 0, 0, 255), and ‘黄’ (yellow, RGB: 255, 255, 0). They were presented in the semantically corresponding font color (congruent trials) or a different font color (incongruent trials) in the center of a black background (visual angle, ~1.15 × 1.15°). The Sternberg working memory task involved seven Chinese characters chosen randomly among 14 familiar Chinese characters: ‘人’ (human), ‘刀’ (knife), ‘大’ (big), ‘水’ (water), ‘天’ (heaven), ‘口’ (mouth), ‘月’ (moon), ‘立’ (stand), ‘山’ (mountain), ‘上’ (up), ‘手’ (hand), ‘石’ (stone), ‘女’ (woman), and ‘火’ (fire) (Zhao et al., 2010). They were equally spaced on a horizontal row at the center of the display (visual angle for each character, ~1.15 × 1.15°).
 
-## Procedure
+### Procedure
 
 For the dual task (Figure 9A), the subjects were required to memorize seven Chinese characters in anticipation of a recognition test at the end of the trial. Each trial began with a white fixation point for a random duration from 400 to 600 ms, followed by seven white Chinese characters that required memorization for 2000 ms. After a jittered 800–1200 ms fixation point, participants performed a Stroop task in which the color of the words was identified as quickly as possible by pressing the corresponding button (‘F’ with the left index finger, ‘D’ with the left middle finger, ‘J’ with the right index finger, and ‘K’ with the right middle finger), while attempting to ignore the task-irrelevant semantic meaning. The display for the words remained on the screen until a response was made. After the Stroop task, a fixation point was randomly presented for 400–600 ms and terminated by the appearance of a probe character, to which the subject had to determine if the character was part of their memorized list of items. During 50% of the trials, the probe letter was included as part of the memorized set. Participants were asked to answer by pressing one of two response buttons (‘S’ with the left ring finger and ‘L’ with the right ring finger). All response buttons in this experiment were counterbalanced across subjects. After a response was given, the intertrial interval was randomized between 600 and 1000 ms until the onset of the next trial. For the single task (Figure 9B), subjects were only required to complete the individual Stroop task. Each block alternated between single and dual tasks in an ABAB fashion, and the task type in the first block was counterbalanced across participants. The subjects first performed practice blocks of 144 trials. Participants were permitted to participate in the formal experiment when their average error rate was below 15%. The formal experiment included six blocks, totaling 144 trials, with an equal distribution of 50% congruent and 50% incongruent trials presented randomly in each block. The entire experiment lasted for around 30 min.
 
@@ -140,36 +148,46 @@ For the dual task (Figure 9A), the subjects were required to memorize seven Chin
 
 **Figure 9.:** (A) Dual-task structure. (B) Single-task structure. (C) Representative stimuli for congruent and incongruent conditions.
 
-## EEG recording and preprocessing
+### EEG recording and preprocessing
 
 EEG data were recorded using standard 64 in-cap Ag/AgCl electrodes, following the extended international 10–20 system (Brain Products GmbH, Germany; pass band, 0.01–100 Hz; sampling rate, 1000 Hz). Vertical and horizontal electrooculograms were recorded from below the left eye and outer canthus of the right eye, respectively. The FCz served as an online reference. The impedance of all electrodes was maintained below 5 kΩ during the entire recording process.
 
 The offline EEG data were preprocessed by EEGLAB V2023.0 (Delorme and Makeig, 2004) and custom scripts in MATLAB 2021a. First, the continuous data was down-sampled from the original sampling rate of 1000 to 500 Hz. Then, the data were filtered with a 30 Hz low-pass filter and a 0.1 Hz high-pass filter. After that, we re-referenced the data to the average activity of all scalp channels and manually inspected the data to remove obvious artifacts. Subsequently, we carried out an independent component analysis (Infomax algorithm) and thereby identified and manually removed artifacts such as eyeblinks, horizontal eye movements, heart, muscle, and line noise. As a next step, the data was segmented based on the trial type (single-task congruent vs. single-task incongruent vs. dual-task congruent vs. dual-task incongruent) and was time-locked to the Stroop stimulus onset. Continuous EEG data were epoched from −200 to 1000 ms relative to word onset, with a baseline correction applied using the 200 ms pre-stimulus interval. Finally, trials with amplitude values exceeding ±100 μV at any electrode were rejected. Overall, a mean of 12.59% (SD, 4.82%) of all trials were excluded.
 
-## Data analysis
+### Data analysis
 
-## Behavioral analysis
+#### Behavioral analysis
 
 Only trials that were correct in both the memory task and the Stroop task were included in all subsequent analyses. In addition, trials in which response times deviated by more than three standard deviations from the condition mean were excluded from behavioral analyses. Overall, a mean of 4.8% (SD, 3.31%) of all trials were excluded. We performed repeated-measures ANOVA with Greenhouse-Geisser correction if needed, in which the within-subject factors were congruency (congruent, incongruent) and task type (single task, dual task). Adjustments for multiple comparisons were realized using Bonferroni correction.
 
-## ERP analysis
+#### ERP analysis
 
 Considering previous studies (Coderre et al., 2011; Xu et al., 2024; Zivony and Lamy, 2022), P1 was calculated using a time window of 40 ms (110–150 ms) at bilateral occipito-parietal electrodes (PO3, PO4, PO7, PO8, P7, P8). N450 was computed using a time window of 150 ms (350–500 ms) at centro-parietal electrodes (CP3, CP4, P5, P6). SP was scored as the mean amplitude at centro-parietal electrodes (Cz, CPz, Pz) during a time window of 300 ms (650–950 ms).
 
-## Multivariate pattern analysis
+#### Multivariate pattern analysis
 
 MVPA was based on support vector machine (SVM), a supervised machine learning method that operated on labeled samples. A binary label with 1 for the single task and –1 for the dual task was used in this study. The classification process at a given time point included a training phase and a testing phase. During the training step, the SVM would find a decision boundary that separated the samples in the input features using class labels. Next, the trained classifier is used to predict the class labels of new examples. For the spectral MVPA, we defined three frequency regions of interest (F-ROIs): theta (4–7 Hz), alpha (8–13 Hz), and beta (14–25 Hz). Then, three spatial regions of interest (S-ROIs) were chosen: fronto-central (Fz, FCz, Cz), occipital-parietal (POz, Oz, PO3, PO4, PO7, PO8, O1, O2), and central (C3, CP3, Cz, CP4, C4) to measure theta, alpha, and beta power, respectively (Zhao et al., 2015; Li et al., 2021). For each frequency band, the selected features were the power difference between congruent and incongruent trials in the single task and dual task in every 20 ms of each ROI (see ‘Time-frequency analysis’ section for the power transformation method). All data were normalized and mapped to the range [–1, 1] within each class to mitigate scale effects.
 
-A linear kernel SVM was chosen and trained through the LIBSVM toolbox (Chang and Lin, 2011). The linear SVM has only one parameter C that determines the trade-off between allowing misclassifications and training error minimization. The functions were as follows:K(Xi,Xj)=XiTXjmin12‖ω‖2+C∑i=1mξ(i)
+A linear kernel SVM was chosen and trained through the LIBSVM toolbox (Chang and Lin, 2011). The linear SVM has only one parameter C that determines the trade-off between allowing misclassifications and training error minimization. The functions were as follows:
+
+$$
+K(X_{i},X_{j})=X_{i}^{T}X_{j}
+$$
+
+
+
+$$
+min\frac{1}{2}‖\omega‖^{2}+C\sumi=1mξ(i)
+$$
 
 A classifier was trained and tested at each time point by using a fivefold cross-validation procedure. Trials were randomly divided into five equal-sized folds. Then, a leave-one-out procedure was run in which the classifier was trained on four folds and tested on the remaining fold. In this case, different C values were tried within a certain range to find the best cross-validation accuracy (or the smallest value if there were more than one). We set the range of C values to base 2, and the exponent range to [–10, 10] with a step size of 0.2. Here, accuracy was used to quantify the performance of the classifier based on the results of cross-validation.
 
 For statistical analyses, a nonparametric statistical test based on the cluster-level permutation was implemented to deal with multiple comparisons while maintaining strict control of the false alarm rate (Maris and Oostenveld, 2007). In detail, t-tests against chance level (acc = 0.5) were carried out at each data point to obtain the statistic values. Statistical values with p-values<0.01 were clustered together by summing their statistic values. The cluster alpha was set to 0.01 to reduce the likelihood of large clusters spanning the entire dataset (Mensen and Khatami, 2013). Additionally, to avoid using extremely transient intervals that may not capture meaningful psychological phenomena, we specified that at least two significant time points formed a cluster. Then, we permuted the data for 1000 times by randomly swapping condition labels to obtain a permutation distribution of the maximum cluster-level statistic under the null hypothesis of no condition difference. If there was any cluster with its real statistic larger than the threshold, we rejected the null hypothesis and concluded that there was a significant difference.
 
-## Time-frequency analysis
+#### Time-frequency analysis
 
 To avoid edge artifacts, EEG data were re-epoched from –1000 to 2000 ms relative to stimulus onset. EEG data were converted into time-frequency domain data using continuous wavelet transform in Letswave software (https://www.letswave.org/; Mouraux and Iannetti, 2008). The cmor1-1.5 was chosen as the mother wavelet function for the time-frequency representations ranging from 1 to 30 Hz with a step size of 0.29 Hz. The single-trial time-frequency representation was obtained after wavelet transform, and they were then averaged throughout all trials per condition. The baseline normalizations were performed at each time point for each frequency using an event-related spectral perturbation transformation [ERt,f% = [At,f – Rf]/Rf] (Pfurtscheller and Lopes da Silva, 1999). Considering edge effects, duration requirements, and the need to exclude other influences (Cohen, 2014), a 400–200 ms pre-stimulus time window was selected as the baseline time window. For the statistical test, we only analyzed the frequency bands and corresponding time windows that could successfully classify different tasks in MVPA, namely theta (740–820 ms) and beta (920–1040 ms).
 
-## Representational similarity analysis
+#### Representational similarity analysis
 
 Our RSA aimed to explore the correlation between neural interaction patterns and behavioral interaction patterns. First, we extracted data that could reflect interaction patterns, namely Stroop effect differences between single-task and dual-task conditions based on the subject level in RT, SP, theta, and beta. Prior to analysis, data were normalized by z-scoring the values across all subjects. We then constructed representational dissimilarity matrices (RDMs) measuring the geometrical distances between all subjects, yielding 32×32 symmetrical matrices. Here, Euclidean distance was employed to measure the distance between subjects (Edelman, 1998). Finally, we fitted a linear regression with the neural RDMs as regressors and the behavioral RDM as the dependent variable to test which neural RDMs could predict behavioral RDMs. p-Values were corrected by the false discovery rate.

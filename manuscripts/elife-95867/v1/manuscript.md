@@ -16,16 +16,16 @@
 
 ### Affiliations
 
-1. https://ror.org/000e0be47 Feinberg Cardiovascular and Renal Research Institute, Northwestern University Chicago United States
-2. https://ror.org/000e0be47 Department of Pharmacology, Northwestern University Chicago United States
-3. https://ror.org/000e0be47 Department of Medicine, Northwestern University Chicago United States
-4. https://ror.org/043mz5j54 Department of Medicine, University of California, San Francisco San Francisco United States
+1. Feinberg Cardiovascular and Renal Research Institute, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+2. Department of Pharmacology, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+3. Department of Medicine, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+4. Department of Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-Heart failure with preserved ejection fraction (HFpEF) is commonly found in persons living with HIV (PLWH) even when antiretroviral therapy suppresses HIV viremia. However, studying this condition has been challenging because an appropriate animal model is not available. In this article, we studied calcium transient in human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs) in culture to simulate the cardiomyocyte relaxation defect noted in PLWH and HFpEF and assess whether various drugs have an effect. We show that treatment of hiPSC-CMs with inflammatory cytokines (such as interferon-γ or TNF-α) impairs their Ca 2+ uptake into sarcoplasmic reticulum and that SGLT2 inhibitors, clinically proven as effective for HFpEF, reverse this effect. Additionally, treatment with mitochondrial antioxidants (like mito-Tempo) and certain antiretrovirals resulted in the reversal of the effects of these cytokines on calcium transient. Finally, incubation of hiPSC-CMs with serum from HIV patients with and without diastolic dysfunction did not alter their Ca 2+ -decay time, indicating that the exposure to the serum of these patients is not sufficient to induce the decrease in Ca 2+ uptake in vitro. Together, our results indicate that hiPSC-CMs can be used as a model to study molecular mechanisms of inflammation-mediated abnormal cardiomyocyte relaxation and screen for potential new interventions.
+Heart failure with preserved ejection fraction (HFpEF) is commonly found in persons living with HIV (PLWH) even when antiretroviral therapy suppresses HIV viremia. However, studying this condition has been challenging because an appropriate animal model is not available. In this article, we studied calcium transient in human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs) in culture to simulate the cardiomyocyte relaxation defect noted in PLWH and HFpEF and assess whether various drugs have an effect. We show that treatment of hiPSC-CMs with inflammatory cytokines (such as interferon-γ or TNF-α) impairs their Ca2+ uptake into sarcoplasmic reticulum and that SGLT2 inhibitors, clinically proven as effective for HFpEF, reverse this effect. Additionally, treatment with mitochondrial antioxidants (like mito-Tempo) and certain antiretrovirals resulted in the reversal of the effects of these cytokines on calcium transient. Finally, incubation of hiPSC-CMs with serum from HIV patients with and without diastolic dysfunction did not alter their Ca2+-decay time, indicating that the exposure to the serum of these patients is not sufficient to induce the decrease in Ca2+ uptake in vitro. Together, our results indicate that hiPSC-CMs can be used as a model to study molecular mechanisms of inflammation-mediated abnormal cardiomyocyte relaxation and screen for potential new interventions.
 
 ## Introduction
 
@@ -41,35 +41,173 @@ There are limited studies to address the molecular basis of cardiomyocyte dysfun
 
 ## Results
 
-## TNF-α and IFN-γ impair relaxation in hiPSC-CMs without causing cellular damage
+### TNF-α and IFN-γ impair relaxation in hiPSC-CMs without causing cellular damage
 
 We first generated hiPSCs and differentiated into cardiomyocytes using the protocols previously published by our groups (Burridge et al., 2015). Successful production of hiPSC-CMs was confirmed by the assessment of their morphology and calcium transient property (Figure 1—figure supplement 1A and B, Figure 1—video 1). We then assessed whether treatment with cytokines would have detrimental effects on these cells. Because DD has been associated with mitochondrial dysfunction (Kumar et al., 2019), we first measure whether cytokine treatment results in changes in mitochondrial membrane potential (MMP) at baseline. For these experiments, cells were treated with cytokines at indicated concentrations for 48 hr. These studies revealed that each of the cytokines studied in our system did not alter MMP in hiPSC-CMs (Figure 1—figure supplement 1C). For the remaining studies, we focused our experiments on two of these cytokines that often are chronically increased in PLWH, TNF-α, and IFN-γ.
 
 We next assessed whether treatment with TNF-α or IFN-γ alters diastolic function in hiPSC-CMs by measuring calcium transient and assessing the decay time and downstroke time in these cells using Single Cell Kinetic Image Cytometry (Vala Sciences). Treatment with both TNF-α and IFN-γ resulted in a significant increase in decay time and downstroke time, which are markers of cardiomyocyte relaxation, while beats per minute (indirect measurement of heart rate and not diastolic function) was essentially unchanged (Figure 1A–C). Additionally, treatment with mito-Tempo (an agent with mitochondrial antioxidant activity) reversed the changes that occurred with TNF-α (Figure 1A and B), indicating that a reduction in mitochondrial reactive oxygen species (ROS) may, at least partially, reverse the cardiomyocyte relaxation defect induced by TNF-α.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig1-v1.jpg)
+
+**Figure 1.:** Normalized downstroke time (A), decay time (B), and beating rate as assessed by beats per minute (C) in human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CM) treated with bovine serum albumin (BSA), (control), TNF-α, IFN-γ, TNF-α plus mito-Tempo, and IFN-γ plus mito-Tempo. N = 5–14. Data were analyzed by ordinary one-way ANOVA and post hoc Tukey’s multiple-comparison test. Bars represent group mean, and error bars indicate standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative image of human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CM). Scale bar represents 100 μm. (B) Representative curves of calcium transient and its derivative in hiPSC-CM. (C) Mitochondrial membrane potential (MMP) as assessed by tetramethylrhodamine ethyl ester (TMRE) in hiPSC-CM treated with various cytokines. Concentration of cytokines used is as follows: CCL3 1 nM, TNF-α 300 pg/ml, IL-6 1 ng/ml, IL-1β 200 pg/ml, IP-10 (or CXCL10) 500 pg/ml, IFN-γ 1 ng/ml. N = 4, Data were analyzed by ordinary one-way ANOVA and post hoc Tukey’s multiple-comparison test. Bars represent group mean , and error bars indicate standard error of the mean.
+
 Since mito-Tempo partially reversed the effects of TNF-α on calcium transient of hiPSC-CMs, we next assessed whether TNF-α and IFN-γ have any effects on mitochondrial respiration and whether these potential defects would be reversed with antioxidants. For these experiments, we used Seahorse XF96 Analyzer to measure the oxygen consumption rate (OCR) after treatment with TNF-α or IFN-γ in the presence and absence of the general antioxidant, N-acetylcysteine (NAC). While both TNF-α and IFN-γ did not induce significant changes in OCR, administration of NAC to hiPSC-CMs supplemented with TNF-α significantly reduced OCR at baseline (Figure 2). These data indicate that the beneficial effects of antioxidant reagents on calcium transient might be associated with the alleviation of aberrantly regulated OCR in TNF-α-treated cells. We next used this platform to study the effects of various drugs on in vitro measures of DD.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig2-v1.jpg)
 
-**Figure 2.:** (A) OCR trace of hiPSC-CM treated with bovine serum albumin (BSA), TNF-α, IFN-γ, TNF-α + IFN-γ, TNF-α + NAC, IFN-γ + NAC, and TNF-α + IFN-γ + NAC. (B–D) Bar graph summary of data in (A) with OCR at baseline (B), after adding carbonyl cyanide m-chlorophenyl hydrazone (CCCP) (C), and after adding antimycin A and rotenone (D). N = 5–6. Data were analyzed by ordinary one-way ANOVA and post hoc Tukey’s multiple-comparison test. Bars represent group mean, and error bars indicate standard error of the mean.Figure 2—source data 1.Figure 2—source data 2.
+**Figure 2.:** (A) OCR trace of hiPSC-CM treated with bovine serum albumin (BSA), TNF-α, IFN-γ, TNF-α + IFN-γ, TNF-α + NAC, IFN-γ + NAC, and TNF-α + IFN-γ + NAC. (B–D) Bar graph summary of data in (A) with OCR at baseline (B), after adding carbonyl cyanide m-chlorophenyl hydrazone (CCCP) (C), and after adding antimycin A and rotenone (D). N = 5–6. Data were analyzed by ordinary one-way ANOVA and post hoc Tukey’s multiple-comparison test. Bars represent group mean, and error bars indicate standard error of the mean.
 
-## Certain antiviral drugs and SGLT2 inhibitors reverse impaired relaxation in hiPSC-CMs
+### Certain antiviral drugs and SGLT2 inhibitors reverse impaired relaxation in hiPSC-CMs
 
 Given that we were able to induce impaired relaxation indicated by aberrant Ca2+ uptake in hiPSC-CMs after treatment with inflammatory cytokines, we assessed whether various antiretrovirals and other drugs that potentially target the pathogenesis of HFpEF can reverse the dysregulation of calcium transient in vitro. We first assessed whether ART drugs at various concentrations cause cell death or increased ROS production in hiPSC-CMs. We treated hiPSC-CMs with tenofovir (a nucleotide-analog reverse transcriptase inhibitor), darunavir (a protease inhibitor), raltegravir, and elvitegravir (integrase inhibitors) at concentrations between 3 µM and 10 mM. The dose range was chosen to extend to tenfold above the IC50 concentrations and reflects the upper range of circulating drug concentration in patients receiving these medications (Droste et al., 2005; Kakuda et al., 2014; Shiomi et al., 2015; Wang et al., 2011). In this dose range, we did not observe apparent changes in cell viability and cellular ROS levels (Figure 3—figure supplement 1A and B), indicating that exposure to these single drugs alone has minimal effects on cell survival.
 
 We then assessed whether ART can reverse the impaired relaxation induced by TNF-α. For these studies, we used the following single drug concentrations: 5 µM tenofovir, 10 µM darunavir, 3 µM raltegravir, and 10 µM emtricitabine (an HIV nucleoside analog reverse transcriptase inhibitor). As shown in Figure 3, while TNF-α increased the decay time in hiPSC-CMs, treatment with tenofovir, darunavir, raltegravir, and emtricitabine reversed these effects. These results indicate that ART may have beneficial effects on the inflammation-mediated deterioration of calcium transient that occurs in HIV patients, raising the possibility that its potential benefits may go beyond their inhibitory effects on the virus itself.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig3-v1.jpg)
+
+**Figure 3.:** (A) Decay time after treatment with TNF-α, tenofovir, and TNF-α+tenofovir. (B) Decay time after treatment with TNF-α, darunavir, and TNF-α+darunavir. (C) Decay time after treatment with TNF-α, raltegravir, and TNF-α + raltegravir. (D) Decay time after treatment with TNF-α, emtricitabine, and TNF-α + emtricitabine. N = 5–21. Data were analyzed by ordinary one-way ANOVA and post hoc Tukey’s multiple-comparison test. Bars represent group mean, and error bars indicate standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Cell viability (A) and cellular reactive oxygen species (ROS) levels (B) in human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CM) exposed to concentrations ranging from between 3 nM and 10 μM of tenofovir (a nucleotide-analog reverse transcriptase inhibitor), darunavir (a protease inhibitor), raltegravir, and elvitegravir (integrase inhibitors). N=1-6.
+
 A number of other drugs have also been proposed to potentially exert beneficial effects in HFpEF. Among these, we focused on an oral soluble guanylate cyclase stimulator (riociguat,1 µM), a phosphodiesterase (PDE)-5 inhibitor (sildenafil, 1 µM), a PDE9 inhibitors (PF-04447943, 5 µM), and an SGLT2 inhibitor (dapagliflozin, 10 µM). The dosages are based on previous functional studies in isolated cardiomyocytes (Castro et al., 2006; Kiso et al., 2013; Lee et al., 2015; Reinke et al., 2015; Zhang et al., 2006). Specifically, we also tested 1 µM of dapagliflozin and found no effects on decay and downstroke times (Figure 4—figure supplement 1A and B). While TNF-α caused a significant increase in decay time in hiPSC-CMs, riociguat, sildenafil, and PF-04447943 failed to reverse this effect (Figure 4A–C), indicating that they do not have the properties to reverse the inflammation-mediated impaired relaxation. However, SGLT2 inhibitor dapagliflozin significantly reversed the prolonged decay and downstroke times induced by TNF-α in hiPSC-CMs (Figure 4D–G). Additionally, we repeated the experiments with IFN-γ and dapagliflozin and showed that the drug was able to reverse the increased decay and downstroke time associated with IFN-γ as well (Figure 4H–K). These studies are in accordance with the clinical studies that have shown beneficial effects of SGLT2 inhibitors in HFpEF and suggest that they may also benefit patients with inflammation-induced aberrant calcium transient, like HIV+ patients.
 
-## Treatment with serum from patients with HIV does not induce impaired relaxation in hiPSC-CMs
+![Figure 4.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig4-v1.jpg)
+
+**Figure 4.:** (A) Decay time after treatment with TNF-α, sGS agonist riociguat, and TNF-α + riociguat (N = 8–21). (B) Decay time after treatment with TNF-α, sildenafil citrate, and TNF-α + sildenafil citrate (N = 5–21). (C) Decay time after treatment with TNF-α, PF-04447943, and TNF-α+PF-04447943 (N = 7–21). (D) Representative curve of calcium transient in hiPSC-CM treated with TNF-α, dapagliflozin, and TNF-α + dapagliflozin. (E) Curve of derivative calculated with data in (D). (F) Decay time after treatment with TNF-α, dapagliflozin, and TNF-α+dapagliflozin (N = 5–21). (G) Downstroke time after treatment with TNF-α, dapagliflozin, and TNF-α + dapagliflozin(N = 5–21). (H) Representative curve of calcium transient in hiPSC-CM treated with IFN-γ, dapagliflozin, and IFN-γ + dapagliflozin. (I) Curve of derivative calculated with data in (H). (J) Decay time after treatment with INF-γ, dapagliflozin, and IFN-γ + dapagliflozin (N = 5–21). (K) Downstroke time after treatment with INF-γ, dapagliflozin, and IFN-γ + dapagliflozin (N = 5–21). Data were analyzed by ordinary one-way ANOVA and post hoc Tukey’s multiple-comparison test. Bars represent group mean, and error bars indicate standard error of the mean.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Decay time (A) and downstroke time (B) in human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CM) after treatment with TNF-α and 1 μM of dapagliflozin.N = 5–21, Data were analyzed by ordinary one-way ANOVA and post hoc Tukey’s multiple-comparison test. Bars represent group mean, and error bars indicate standard error of the mean.
+
+### Treatment with serum from patients with HIV does not induce impaired relaxation in hiPSC-CMs
 
 Given that we could simulate impaired calcium transient in hiPSC-CMs using inflammatory cytokines, we next assessed whether short-term treatment of these cells with serum from HIV+ patients with evidence of DD would also induce impaired Ca2+ uptake in the cells. We used two sources of serum in our studies. For the first group, we recruited six men with chronic HIV on ART with undetectable viral loads who underwent cardiac magnetic resonance imaging (CMRI) at the Northwestern Memorial Hospital (NMH) for the assessment of myocardial perfusion reserve (MPR). Clinical and MRI-based characteristics of these patients are included in Table 1. Lower values of MPR indicate impaired global myocardial blood flow in response to vasodilator stress and are associated with higher incidence of HFpEF and poor prognosis (Arnold et al., 2022; Markley et al., 2023). The second group included well-controlled patients with HIV at University of California San Francisco (UCSF) with echocardiographic evidence of normal cardiac function or DD.
 
+**Table 1.**
+ Clinical characteristics of study population for group 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Participant</th>
+      <th>Age</th>
+      <th>High or low myocardial perfusion reserve group</th>
+      <th>Sex</th>
+      <th>CD4 count</th>
+      <th>Diabetes mellitus?</th>
+      <th>Active cigarette smoking?</th>
+      <th>Hypertension?</th>
+      <th>Coronary artery disease diagnosis?</th>
+      <th>Left ventricular ejection fraction</th>
+      <th>Myocardial perfusion reserve</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>50</td>
+      <td>High</td>
+      <td>Male</td>
+      <td>487</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>64</td>
+      <td>2.74</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>62</td>
+      <td>Low</td>
+      <td>Male</td>
+      <td>703</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>59</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>64</td>
+      <td>High</td>
+      <td>Male</td>
+      <td>321</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>65</td>
+      <td>3.43</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>55</td>
+      <td>High</td>
+      <td>Male</td>
+      <td>749</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>59</td>
+      <td>1.90</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>71</td>
+      <td>Low</td>
+      <td>Male</td>
+      <td>1743</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>55</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>59</td>
+      <td>Low</td>
+      <td>Male</td>
+      <td>678</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>52</td>
+      <td>1.13</td>
+    </tr>
+  </tbody>
+</table>
+
 For both groups, we treated hiPSC-CMs with 10% serum from these patients for 48 hr, followed by the measurement of calcium transients. Additionally, we treated human umbilical vein endothelial cells (HUVEC) with the serum of these patients for 20 hr and assessed their angiogenic potential given the critical relationship between endothelial dysfunction and the development of HFpEF (Cornuault et al., 2022; Paulus and Tschöpe, 2013). For the first group of patients, we stratify into higher (1.9–3.4; N = 3) versus lower (1.0–1.1; N = 3) MPR values, which correspond to control and DD, respectively. As shown in Figure 5A–C, serum from HIV+ patients with DD from group 1 did not result in a significant change in decay and downstroke time in hiPSC-CMs. Similar results were obtained after 24 hr incubation. Additionally, serum from these patients did not alter the tube network formation of HUVECs (Figure 5D–G, Figure 5—figure supplements 1 and 2). We also assessed the effects of serum from HIV+ patients from group 2. The control group for experiments included serum from HIV patients without evidence of DD. Our data indicate that the treatment of hiPSC-CMs and HUVECs with 2% serum of these patients for 3 or 24 hr does not alter decay time (Figure 6A–D) and tube formation capacity (Figure 6E–I), respectively. For hiPSC-CMs studies, we exposed the cells to serum for 3 hr and 24 hr and did not observe a difference in decay time with either time point. These results suggest that short treatment of hiPSC-CMs or HUVECs with serum from patients with DD does not induce changes in calcium transient or their angiogenic potential, respectively.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Pooled normalized decay time (A), downstroke time (B), and beating rate (C) in hiPSC treated with 10% serum for 48 hr from group 1 HIV+ patients with DD (3 values from cells treated with each serum). (D–G) Angiogenic parameters, including total length of branching (D) (N = 3), number of junctions (E) (N = 3), total length (F) (N = 3), and number of meshes (G) (N = 3) in human umbilical vein endothelial cells (HUVEC) after treatment with 2% serum from group 1 patients for 20 hr. Data were analyzed by unpaired Student’s t-test. Bars represent group mean, and error bars indicate standard error of the mean.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Scale bars represent 500 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Scale bars indicate 250 μm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/95867/elife-95867-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) Individual normalized decay time 3 hr (N = 3–9) (A) or 24 hr (N = 3–13) (B) after treatment of hiPSC-CM with 2% serum from patients. (C, D) Pooled decay time data from patients in (A) and (B) with 3 hr (C) and 24 hr (D) after treatment with serum (N = 21–22 for (C) and N = 31-38 for (D)). (E) Representative image of formed tube structure with cultured human umbilical vein endothelial cells (HUVEC) treated with serum from HIV+ patients with DD. Scale bars indicate 250 μm. (F–I) Assessment of tube formation of HUVECs 20 hr after treatment with serum of patients, including number of meshes (F) (N = 8), number of junctions (G) (N = 8), number of segments (H) (N = 8), and total length of branching (I) (N = 8). Data were analyzed by unpaired Student’s t-test for (C, D, F, G, H, I). Bars represent group mean, and error bars indicate standard error of the mean.Figure 6—source data 1.Figure 6—source data 2.
+**Figure 6.:** (A, B) Individual normalized decay time 3 hr (N = 3–9) (A) or 24 hr (N = 3–13) (B) after treatment of hiPSC-CM with 2% serum from patients. (C, D) Pooled decay time data from patients in (A) and (B) with 3 hr (C) and 24 hr (D) after treatment with serum (N = 21–22 for (C) and N = 31-38 for (D)). (E) Representative image of formed tube structure with cultured human umbilical vein endothelial cells (HUVEC) treated with serum from HIV+ patients with DD. Scale bars indicate 250 μm. (F–I) Assessment of tube formation of HUVECs 20 hr after treatment with serum of patients, including number of meshes (F) (N = 8), number of junctions (G) (N = 8), number of segments (H) (N = 8), and total length of branching (I) (N = 8). Data were analyzed by unpaired Student’s t-test for (C, D, F, G, H, I). Bars represent group mean, and error bars indicate standard error of the mean.
 
 ## Discussion
 
@@ -87,39 +225,39 @@ In summary, we provide a novel approach to study inflammation-induced calcium tr
 
 ## Materials and methods
 
-## Human induced pluripotent cell derivation and cardiac differentiation
+### Human induced pluripotent cell derivation and cardiac differentiation
 
 Protocols and consents were approved by the institutional review board of Northwestern University (STU00204341). The hiPSC from healthy individuals was generated following the protocol published before (Churko et al., 2013). Identity of hiPSC was authenticated by the confirmation of karyotype, gene expression, and undifferentiated cell marker expression (Lyra-Leite et al., 2023). All cultures were routinely tested for mycoplasma using a MycoAlert PLUS Kit (Lonza, LT07-710) and a Varioskan LUX (Thermo) plate reader. The hiPSC were maintained and differentiated into beating cardiomyocytes, according to the previously published protocol (Burridge et al., 2015).
 
-## Cell line
+### Cell line
 
 HUVECs were purchased from Lonza (#C2519A) and subsequently used in our experiments. The cell identity was authenticated by the vender, confirming double-positive expression for CD31 and CD105. According to the certificate of analyses provided by the vender, the cells tested negative for mycoplasma, and all cultures were routinely tested for mycoplasma as well.
 
-## MMP measurement
+### MMP measurement
 
 Media was removed from hiPSC-CM and were washed with phosphate-buffered saline (PBS) and FluoroBrite DMEM (no glutamine, no HEPES, no phenol red, no sodium pyruvate, Thermo A1896702) was added. Cells were stained with 5 nM TMRE (for mitochondrial stain) for 20 min and then washed with PBS before immunofluorescence. TMRE (red channel) signal was analyzed as MMP using ImageJ (Fiji).
 
-## Seahorse assay
+### Seahorse assay
 
 7 days before assay, hiPSC-CMs were plated at 100,000 cells per well in Matrigel-coated Seahorse XF cell culture 96-well plate. The day before the assay, the Seahorse cartridge was placed in the XF calibrant and incubated overnight at 37°C. On the day of the assay, the plates were incubated at room temperature for 1 hr in glucose-free complete DMEM or RPMI without bicarbonate or phenol red to allow even distribution of cells across the well floor. Before placing the sample plates in the Seahorse XF96 Analyzer, media volume was adjusted to 150 µl in each well. 25 mM glucose, 1.5 mM oligomycin, 1 µM CCCP, and 20 µM rotenone (Rot)/antimycin A (AA) were diluted in DMEM and injected sequentially into each well, following the standard Seahorse protocol. Cytokine treatment was started 48 hr before Seahorse assay.
 
-## Treatment of hiPSC with IFN-γ and TNF-α
+### Treatment of hiPSC with IFN-γ and TNF-α
 
 hiPSC-CMs after 21–24 days culturing were seeded into 6-well or 96-well cell culture plates. After 5 days, IFN-γ at 1 ng/ml and TNF-α at 300 pg/ml were added to the cells for 48 hr.
 
-## Drug concentrations
+### Drug concentrations
 
 We used the following drug concentrations for our studies: riociguat 1 µM, sildenafil citrate 1 µM, PF-04447943 5 µM, dapagliflozin 1 or 10 µM, tenofovir 5 µM, emtricitabine 10 µM, darunavir 10 µM, and raltegravir 3 µM.
 
-## Calcium transient studies in hiPSC-CM
+### Calcium transient studies in hiPSC-CM
 
 For Ca2+ transient analysis, day 21–24 hiPSC-CMs were plated on the Matrigel-coated 96-well black cell culture plate at a density of 75,000 cells/well. Calcium imaging was performed as described previously (Romero-Tejeda et al., 2023). On the day of imaging (days 28–32), cells were stained with a buffer containing 5 µM Fluo-4AM, NucBlue (2 drops/10 ml), 2.5 mM probenecid, 0.02% Pluronic F-127 in FluoroBrite DMEM for 1 hr at 37°C, 5% CO2. After 1 hr incubation, aspirate dye loading solution and add 200 µl FluoroBrite DMEM to each well for imaging. Single Cell Kinetic Image Cytometry (Vala Sciences) was used to scan the plate and CyteSeer Automated Video Analysis Software (Vala Sciences) was used to analyze the Ca2+ transient.
 
-## Tube formation assay
+### Tube formation assay
 
 The formation of tube networks was assessed as described before (Das et al., 2018). HUVECs were seeded at 20,000 per well in a 96-well plate coated with 75 ml Matrigel (Fisher Scientific) or Cultrex (R&D Systems) reduced growth factor basement membrane matrix. The cells were treated with EBM-2 medium containing 2% serum from HIV+ patients obtained from NMH and UCSF wherever mentioned. Following a 20 hr incubation, tube networks from each biological replicate were analyzed in at least three random fields by light microscopy. The number of branch points (junctions), segments and meshes, and total length of tubule networks (total length of branching) was quantified by Fiji software (Angiogenesis Analyzer).
 
-## Participant samples
+### Participant samples
 
 Blood samples from six men with chronic HIV on ART with undetectable viral loads who underwent CMRI for the assessment of MPR were used. For CMRI, all scanning was performed on 1.5 T MRI scanners (Siemens Medical Systems), with participants receiving FDA-approved intravenous double-dosing of gadolinium contrast followed by adenosine as the vasodilator agent. Images were performed at maximal hyperemia (vasodilation) and compared with rest: MPR was calculated as the ratio of stress myocardial blood flow to rest myocardial blood flow as described previously (Lee and Johnson, 2009). Comparisons in hiPSC-CM performance characteristics were made between those with higher (1.9–3.4; N = 3) versus lower (1.0–1.1; N = 3) MPR values; additional clinical and MRI-based characteristics are included in Table 1. The study was approved by the Institutional Review Board of Northwestern University (STU00204874).
 
@@ -131,6 +269,6 @@ Baseline echocardiogram characteristics included everyone with preserved LV syst
 
 Twelve participants (six from each group) underwent right heart catheterization with two in the DD group having elevated mean pulmonary arterial pressure (≥25 mmHg). Three participants in the DD group and two in the control group had right atrial pressure >5 mmHg.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± SEM. Unpaired Student’s t-test and one-way ANOVA, with post hoc Tukey’s test were conducted to assess statistical significant difference among experimental groups. A p-value <0.05 was considered statistically significant.

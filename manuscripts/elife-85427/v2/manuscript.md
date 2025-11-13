@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/012p63287 Groningen Institute for Evolutionary Life Sciences, University of Groningen Groningen Netherlands
-2. https://ror.org/05krs5044 Department of Animal and Plant Sciences, University of Sheffield Sheffield United Kingdom
-3. https://ror.org/03zga2b32 Department of Biological Sciences, University of Bergen Bergen Norway
-4. https://ror.org/02a33b393 Department of Human Behavior, Ecology and Culture, Max Planck Institute for Evolutionary Anthropology Leipzig Germany
-5. https://ror.org/012p63287 Groningen Institute for Evolutionary Life Sciences, University of Groningen Groningen Netherlands
-6. https://ror.org/02mw21745 Rudjer Boskovic Institute Zagreb Croatia
-7. https://ror.org/01g25jp36 Netherlands Institute of Ecology, NIOO-KNAW Wageningen Netherlands
+1. Groningen Institute for Evolutionary Life Sciences, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+2. Department of Animal and Plant Sciences, University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))
+3. Department of Biological Sciences, University of Bergen Bergen Norway ([ROR:03zga2b32](https://ror.org/03zga2b32))
+4. Department of Human Behavior, Ecology and Culture, Max Planck Institute for Evolutionary Anthropology Leipzig Germany ([ROR:02a33b393](https://ror.org/02a33b393))
+5. Groningen Institute for Evolutionary Life Sciences, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+6. Rudjer Boskovic Institute Zagreb Croatia ([ROR:02mw21745](https://ror.org/02mw21745))
+7. Netherlands Institute of Ecology, NIOO-KNAW Wageningen Netherlands ([ROR:01g25jp36](https://ror.org/01g25jp36))
 
 † Corresponding author
 
@@ -48,7 +48,7 @@ Third, we explored whether the disparity in favourable authorship positions has 
 
 Our systematic literature review identified 55 studies that met the inclusion criteria (for details on the procedure please see the Methods section). All of the identified studies only compared women to men (see Limitations). We extracted and calculated 130 effect sizes from these studies and performed a meta-analysis and meta-regression to test our three hypotheses and related predictions. Out of 130 effect sizes, 23 are based on survey responses (survey studies), and 107 are studies that measure the number of submitted or published articles (article studies).
 
-## Has the pandemic increased the gender gap in research productivity?
+### Has the pandemic increased the gender gap in research productivity?
 
 Across the full dataset (N=130), after controlling for multiple effect sizes from the same study, we found the relative productivity of women to men decreased during the pandemic by –0.071 compared to before the pandemic (95% CI=−0.099 to −0.043, SE = 0.0144, p <0.001; Figure 1). This indicates that the relative productivity of women compared to men is 7% lower than what it was prior to the pandemic, meaning that in cases where men and women were estimated to be equally productive, the productivity of women now is only 93% that of men.
 
@@ -58,7 +58,7 @@ Across the full dataset (N=130), after controlling for multiple effect sizes fro
 
 There is large variation in the 130 effect sizes, with 38 indicating a clear increase in the gender gap (95% confidence intervals within negative ranges) and 56 a trend of an increase (effect size is negative but 95% confidence intervals are not within negative ranges), while 11 indicate a clear decrease in the gender gap (95% confidence intervals within positive ranges) and 25 a trend of a decrease (effect size is positive but 95% confidence intervals are not within positive ranges). Total heterogeneity was high (I2= 97.9%), with 46.6% of it explained by whether research productivity was measured by survey responses or submission/publication numbers and 52.1% explained by the individual effect sizes.
 
-## Does the gender gap change depending on how it was measured?
+### Does the gender gap change depending on how it was measured?
 
 The change in research productivity can be measured from survey responses (survey studies, N=23 effect sizes) or from the number of articles submitted or published (article studies, N=107). The degree of increase in the gender gap caused by the pandemic differed according to the type of research productivity measured (QM (df = 3)=37.130, P<0.001; Figure 2). Studies measuring changes to research productivity during the pandemic based on surveys detected a larger overall effect (–0.192, 95% CI=−0.272 to −0.113, SE = 0.041, P<0.001) than studies that compared the number of articles published (–0.047, 95% CI=−0.085 to −0.008, P=0.017, SE = 0.020) or submitted (–0.053, 95% CI=−0.087 to −0.018, P=0.003, SE = 0.017) by authors of each gender before and during the pandemic.
 
@@ -66,7 +66,7 @@ The change in research productivity can be measured from survey responses (surve
 
 **Figure 2.:** Orchard plots comparing the distribution of effect sizes (points) and the precision with which they were measured (point size) when the measure of research productivity is based on responses to surveys (top), number of publications (middle), and number of submissions (bottom). Each plot shows the mean effect size (darker coloured point outlined in black and vertically centred), the 95% confidence interval (horizontal thick black bar), the 95% prediction interval of the expected spread of effect sizes based on between-study variance (horizontal thin black bar) and is centred at 0 (vertical dashed line). Within each category, points are spread vertically for presentation reasons to reduce overlap. For each subgroup, k is the total number of effect sizes, and the number of studies from which these effect sizes were calculated is given inside the brackets.
 
-## Has the pandemic affected women differently across research fields?
+### Has the pandemic affected women differently across research fields?
 
 For effect sizes from article studies grouped by research field (N=107), we found little evidence of a significant differential impact of research fields on the reported effect sizes (QM (df = 5)=21.967, P=0.001; Figure 3). When considering research fields individually, social sciences showed the greatest increases in the academic productivity gender gap during the pandemic (–0.084, 95% CI=−0.143 to –0.024, SE = 0.030, P=0.006), followed by medicine (–0.066, 95% CI=−0.102 to –0.029, SE = 0.019, P<0.001).
 
@@ -76,7 +76,7 @@ For effect sizes from article studies grouped by research field (N=107), we foun
 
 The pandemic showed little effect in multidisciplinary fields (–0.050, 95% CI=−0.125 to 0.024, SE = 0.038, P=0.188), biological sciences (–0.003, 95% CI=−0.057 to 0.050, SE = 0.027, P=0.902), or technology, engineering, mathematics, chemistry and physics (–0.003, 95% CI=−0.053 to 0.048, SE = 0.026, P=0.916).
 
-## Has the pandemic exacerbated existing differences in gender disparity?
+### Has the pandemic exacerbated existing differences in gender disparity?
 
 For the article studies with available data (N=99), we recorded the number of female and male authors before the pandemic, as defined by the time-period sampled in the respective study and used this ratio as a proxy for the size of the previous gender disparity in that population sampled. Based on this subset of data, we found that the pandemic has increased the gender gap in article output more in journals/repositories/pre-print servers that were previously less gender-disparate (QM(df = 1)=10.285, P=0.001).
 
@@ -86,7 +86,7 @@ When grouping studies by research fields (Figure 4), those with a smaller gender
 
 **Figure 4.:** Each point shows the proportion of female authors before (left) or during (right) the pandemic. The solid lines connect the mean value for each research field before and during the pandemic. The largest decreases are observed for the three fields that had the highest proportions of female authors (social sciences, medicine and multidisciplinary). TEMCP reflects the technology, engineering, mathematics, chemistry and physics fields, and multidisciplinary includes studies that span fields.
 
-## Does the gender gap differ across authorship roles?
+### Does the gender gap differ across authorship roles?
 
 For article studies (N=107), we recorded whether first (N=54), middle (N=3), last (N=21), corresponding (N=15), or the total number of (N=14) authors were studied. Based on these data, we found no evidence of a significant differential impact of authorship position on effect sizes (QM(df = 5)=13.190, P=0.022; Figure 5).
 
@@ -96,13 +96,21 @@ For article studies (N=107), we recorded whether first (N=54), middle (N=3), las
 
 The pandemic had a significant effect on first authorship roles (–0.040, 95% CI=−0.073 to –0.007, SE = 0.017, P=0.019) but not for all authorship roles (–0.045, 95% CI=−0.107 to 0.017, SE = 0.320, P=0.154), corresponding authorship roles (–0.058, 95% CI=−0.123 to 0.007, SE = 0.033, P=0.080), middle authorship roles (–0.045, 95% CI=−0.173 to 0.820, SE = 0.065, P=0.485) or last authorship roles (–0.040, 95% CI=−0.094 to 0.015, SE = 0.028, P=0.152).
 
-## Is there evidence of publication bias?
+### Is there evidence of publication bias?
 
 The multilevel meta-regression, including article studies and survey studies as a moderator because of their differences in sample size, showed no evidence of publication bias (article studies: slope = –0.025, 95% CI=−0.059 to −0.009, SE = 0.017, P=0.148; survey studies: slope = –0.157, 95% CI=−0.244 to −0.071, SE = 0.044, P<0.001). This model correlates standard error with effect size and a negative slope suggests small studies do not have large effect sizes, with the negative slope among survey studies indicating the large heterogeneity that exists among these kinds of studies (see Discussion).
 
 A visual inspection of the funnel plots similarly did not indicate any suggestion of publication bias (Figure 6).
 
-## Are our results robust?
+![Figure 6.](https://cdn.elifesciences.org/articles/85427/elife-85427-fig6-v2.jpg)
+
+**Figure 6.:** Funnel plots of effect sizes and their precision, as a function of standard error, for studies that measure research productivity by responses to a survey (A), and by number of articles published (B). The vertical dashed line is the summary effect size; the legend outlines levels of statistical significance for effect sizes based on their precision. Neither plot shows evidence for publication bias.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85427/elife-85427-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** For each survey-study left out, the corresponding model estimate and 95% confidence interval is given. While there is large variation in the individual estimates, there is no single study that predominantly affects the average estimate.
+
+### Are our results robust?
 
 Our results changed little when we conducted a sensitivity analysis that excluded seven effect sizes using four measures of productivity from survey studies that are less directly comparable: research time (N=4), job loss (N=1), burnout (N=1) and the number of projects (N=1). When excluding these effect sizes, the overall estimate was –0.063 (95% CI=−0.0892 to −0.0372, SE = 0.0133, P<0.001), and the estimate for survey studies only was –0.239 (95% CI=−0.3419 to −0.1352, SE = 0.0527, P<0.001).
 
@@ -132,7 +140,7 @@ Our study cannot speak to the potential mechanisms that might have led to change
 
 ## Methods
 
-## Search process
+### Search process
 
 We carried out a systematic review to identify, select and critically evaluate relevant research through data collection and analysis. We reported it following PRISMA guidelines (Moher et al., 2009). We carried out the literature search process in three steps: (1) a scoping search, (2) an initial search with pre-selected author terms, and (3) a refined search using terms as recommended by the litsearchR 1.0.0 (Grames et al., 2019). All searches were filtered for texts from 2020 onwards. We initially performed a scoping search to determine if there were over ten texts with primary research investigating differences by gender in academic productivity before and during the pandemic. The scoping search was conducted on 30/06/2021 by Google searching combinations of synonyms for: (1) the COVID-19 pandemic, (2) gender, (3) academia, (4) inequality and (5) productivity. The scoping search identified 21 original research publications with quantitative metrics investigating differences in academic productivity by gender before and during the pandemic (Supplementary file 1, “Scoping search” sheet). Of these 21 studies (scoped texts), 14 were indexed by Web of Science, and 17 (including the same 14 from Web of Science) were indexed by Scopus.
 
@@ -140,54 +148,100 @@ Terms for the initial search were selected by scanning the title, abstract and k
 
 To improve the 13/722 (1.8%) efficiency of finding scoped texts from our initial search, we imported all 722 texts into R and used litsearchR. Using litsearchR, potential key terms were extracted from the title, abstract and keywords of texts using the Rapid Automatic Keyword Extraction algorithm. A ranked list of important terms was then created from building a key term co-occurrence network (see Table S2 in Supplementary file 2). Six high-strength terms within the key term co-occurrence matrix, describing research not relevant to our study, such as those of an epidemiological or experimental nature, were added to the AND NOT operator concept group to exclude texts mentioning these terms. Table 1 describes terms of the refined Boolean search string and their respective concept groups. We performed the refined search on 27/07/2021 and generated 700 total texts combined from Scopus (126 texts, including 13/17 studies found in the scoping search), the Web of Science core collection (199 texts), EBSCO (276 texts and Proquest (99 texts)) from 2020 onwards. The final search hit rate had an efficiency of 10.3% (13/126) on Scopus. After removing duplicates, 580 texts remained to enter the study screening stage. We did not perform the search in any grey literature databases.
 
-## Study screening
+**Table 1.**
+ Final Boolean search string used in full literature search for texts since 2020.Terms in italics were added using litsearchR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept group</th>
+      <th>PICO group</th>
+      <th>Terms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Academia</td>
+      <td>Population</td>
+      <td>(academi* OR author* OR database* OR journal* OR research OR scien*)</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Population</td>
+      <td>AND(female* OR gender OR male* OR men OR women)</td>
+    </tr>
+    <tr>
+      <td>Pandemic</td>
+      <td>Intervention</td>
+      <td>AND(coronavirus OR covid OR pandemic)</td>
+    </tr>
+    <tr>
+      <td>Inequality</td>
+      <td>Comparator</td>
+      <td>AND(bias* OR disparit* OR disproportion* OR fewer OR gap OR "gender difference*" OR imbalance* OR inequalit* OR inequit* OR parity OR "sex difference*" OR skew* OR unequal)</td>
+    </tr>
+    <tr>
+      <td>Productivity</td>
+      <td>Outcome</td>
+      <td>AND(performan* OR publication* OR publish* OR productiv*)</td>
+    </tr>
+    <tr>
+      <td>Exclusion of biomedical studies</td>
+      <td>Population</td>
+      <td>AND NOT(experiment OR laboratory OR mortality OR surviv* OR "acute respiratory" OR gis OR icu OR risk OR rna OR symptoms)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study screening
 
 To be included in our meta-analysis, studies had to quantitatively investigate gender differences in productivity within academia before and during the pandemic. In our initial screen of titles, abstracts and keywords of studies we kept only those suggesting the study investigated: (1) academia, (2) gender, (3) the COVID-19 pandemic and (4) some measure of productivity (see Table S3 in Supplementary file 2). We included any text returned by the database, of any publication status, including grey literature in any language, though all texts had abstracts with an English version. To ensure repeatability of the screening process, we used Rayyan.ai (Ouzzani et al., 2016) to blind the inclusion or exclusion of 420 randomly selected studies by two reviewers (KGLL and DL). The agreement rate between reviewers was 97%, with 49 studies that both authors agreed to include, 357 studies which both excluded, ten studies one reviewer included but the other excluded, and four studies only included by the other reviewer. This agreement rate resulted in a, “strong” (McHugh, 2012) to “near perfect” (Landis and Koch, 1977) Cohen’s kappa of 0.86. Of the 14 studies which were included by one but excluded the other, three were included after joint review. To reduce workload, we did not double-initial-screen 160 remaining texts because of 97% agreement rates achieved during the sample of double-screened texts. Overall, out of the 580 texts, 70 were retained for the full text screening (Supplementary file 3).
 
 Full texts were then screened to identify articles that had included four qualifiers: (1) both genders, (2) some quantifiable metric of academic productivity measured, and (3) compared a time period before the pandemic with a time period during the pandemic (time periods chosen according to the authors’ discretion), (4) primary data. Full-text screening was conducted by recording which, if any of the four qualifiers were missing for each text in an excel spreadsheet and only performed by KGLL. Studies were not assigned quality weightings as there is no common standard to do this. Thus, 25 studies that all contained necessary metrics to calculate effect sizes were retained for data extraction, excluding 45 studies (Supplementary file 3).
 
-## Iterating the search
+### Iterating the search
 
 To find studies that had been published since the 27/07/21 search (Table 1), we iterated the search and screen process. The second search was repeated on 28/02/2022, generating 1646 total texts combined from Scopus (258 texts, including 14/17 studies found in the scoping search), the Web of Science core collection (413 texts), EBSCO (542 texts) and Proquest (433 texts) from 2020 onwards. We removed 438 duplicates using Rayyan.ai, leaving 1208 de-duplicated studies. To ensure our methods are repeatable, we checked and found all 580 de-duplicated studies from the previous search were also found again. Out of the 1208 texts from the final search, we included 170 after screening titles, abstracts and keywords. For these 169, we screened the full texts, excluding 120 studies (53 studies missed one qualifier, 38 studies missed two qualifiers, 27 studies miss three qualifiers, 1 study missed four qualifiers) and keeping 50 (including the 25 identified in the original search) that all contained the necessary information to calculate the effect sizes (Supplementary file 3). Two studies with full texts in Spanish were translated to English by Google translate, of which one was included. Five studies found in the scoping search but not returned in database searches were also included, resulting in 55 total studies used to extract variables for analysis. The full PRISMA flow diagram outlining the number of texts included at each stage in first and iterated search is found in Figure S1 in Supplementary file 2.
 
-## Our sample
+### Our sample
 
 Our sample consists of 130 effect sizes obtained from 55 studies including surveys of potentially affected people (Myers et al., 2020; Rodríguez-Rivero et al., 2020; Barber et al., 2021; Breuning et al., 2021; Camerlink et al., 2021; Candido, 2021; Deryugina et al., 2021; Ovalle Diaz et al., 2021; Ellinas et al., 2022; Gao et al., 2021; Ghaffarizadeh et al., 2021; Guintivano et al., 2021; Hoggarth et al., 2021; Krukowski et al., 2021; Maguire et al., 2021; Plaunova et al., 2021; Shalaby et al., 2021; Staniscuaski et al., 2021; Yildirim and Eslen-Ziya, 2021; Davis et al., 2022; Stenson et al., 2022), and comparisons of numbers of articles submitted or published by gender before and during the pandemic (Amano-Patiño, 2020; Andersen et al., 2020; Bell and Green, 2020; Cushman, 2020; Inno et al., 2020; Kibbe, 2020; Vincent-Lamarre et al., 2020; Wehner et al., 2020; Bell and Fong, 2021; Biondi et al., 2021; Cook et al., 2021; DeFilippis et al., 2021; Forti et al., 2021; Fox and Meyer, 2021; Gayet-Ageron et al., 2021; Gerding et al., 2021; Ipe et al., 2021; Jemielniak et al., 2021; Jordan and Carlezon, 2021; King and Frederickson, 2021; Lerchenmüller et al., 2021; Mogensen et al., 2021; Muric et al., 2021; Nguyen et al., 2021; Quak et al., 2021; Ribarovska et al., 2021; Squazzoni et al., 2021; Williams et al., 2021; Anabaraonye et al., 2022; Ayyala and Trout, 2022; Chen and Seto, 2022; Cui et al., 2022; Harris et al., 2022; Wooden and Hanson, 2022).
 
-## Extracting variables
+### Extracting variables
 
-## Effect size
+#### Effect size
 
 We extracted values needed to calculate 130 effect sizes from 55 articles investigating the effect of the pandemic on academic research productivity of both genders, comparing the productivity before and during the pandemic, using time periods chosen according to authors’ discretion. We calculated our own effect sizes wherever possible using the available summary statistics and/or statistical inferences. For 10 effect sizes which did not have data available to calculate our own effect sizes, we used already calculated percentage changes in the gender gap in academic productivity as predicted from lasso regression (N=2), Somers’ delta (N=2), ordered logistic regression (N=1) and mixed-effect models (N=5). For 120 effect sizes, we entered summary data (N=117) or simple statistical tests (N=3) into Campbell collaboration’s effect size calculator (Wilson, 2019) to calculate a standardised mean difference (d) effect size. For effect sizes calculated using summary data, 99 relied on the proportion of raw numbers of female and male authors before and after the pandemic, and 18 on the mean changes and standard deviations or standard errors in research productivity changes during the pandemic for female and male researchers. For effect sizes calculated from reported simple statistical tests, one converted the f-test statistic and sample size from a general linear model investigating the effect of gender on perceived work production, one converted the chi-square comparing proportions of female and male academics that experienced productivity changes due to the pandemic, and one converted the p-values from a t-test comparing mean changes in research time due to the pandemic. 10 effect sizes were calculated by obtaining raw numbers from graphs, estimated using Adobe Acrobat’s measure tool (Supplementary file 1, “Calculations” sheet). Two effect sizes (Jemielniak et al., 2021; Stenson et al., 2022) were calculated using sample sizes obtained by personal correspondence with the article authors. Six studies investigated numbers of articles at different time points during the course of the pandemic. From these studies, we calculated 30 effect sizes using numbers of articles across the entire pandemic period. We calculated multiple effect sizes from one study if they were referring to different research fields or authorship positions. We set the sign for effect sizes as negative if the pandemic had reduced relative research productivity of women (increased gender gap) and positive if the pandemic had increased the relative research productivity of women (reduced gender gap). A subset of 59 effect sizes were double-checked by A.C., A.M. and D.L and inconsistencies were discussed to ensure repeatability. K.L. then extracted the remaining 71 effect sizes.
 
-## Variance
+#### Variance
 
 Of 10 effect sizes already calculated in the original studies, 7 provided variance as the standard error, which we squared to obtain the variance; and 3 provided the variance as 95% confidence intervals, which we divided by 1.96 and then squared (Nakagawa et al., 2022). For the other 120 effect sizes, variance was estimated in the Campbell collaboration calculator (Wilson, 2019) when calculating effect sizes.
 
-## Research productivity measure
+#### Research productivity measure
 
 We first recorded whether the change in research productivity was measured from survey responses (survey studies, N=23 effect sizes) or from the number of articles submitted or published (article studies, N=107 effect sizes). Survey studies measured change in research productivity during the pandemic for each gender based on academics self-reporting their gender and change in general productivity (N=11 effect sizes), number of submissions (N=5 effect sizes), research time (N=4 effect sizes), number of projects (N=1 effect sizes), burn-out (N=1 effect sizes), or job loss (N=1 effect sizes). As 5 survey studies measured research productivity in the number of submissions, we included these studies in the articles submitted and published category. This resulted in 18 effect sizes from surveys measuring some aspect of research productivity, 64 effect sizes measuring numbers of article submissions, and 48 effect sizes measuring numbers of publications.
 
-## Research field
+#### Research field
 
 For the article studies (N=107 effect sizes), we recorded the research field sampled based on the description in the original studies as either Medicine (N=44 effect sizes), Technology, Engineering, Mathematics, Chemistry and Physics (N=20 effect sizes), Social sciences (N=16 effect sizes), Biological sciences (N=17 effect sizes), or Multidisciplinary (N=10 effect sizes), following the classification scheme of Astegiano et al., 2019.
 
-## Previous gender disparity
+#### Previous gender disparity
 
 For the article studies with available data (N=99 effect sizes), we recorded the number of female and male authors before the pandemic, as defined by the time-period sampled in the respective study and use this ratio as a proxy for size of the previous gender disparity in that population sampled.
 
-## Authorship position
+#### Authorship position
 
 For the article studies (N=107 effect sizes), we recorded whether first (N=54 effect sizes), middle (N=3 effect sizes), last (N=21 effect sizes), corresponding (N=15 effect sizes), or any (N=14 effect sizes) authorship positions were studied. We classified one effect size studying submitting authors, as studying corresponding authors (Fox et al., 2016) and two effect sizes studying sole authors as studying last authors (Moore and Griffin, 2006).
 
 We also extracted data for the following variables to enable description of the datasets: timeframe before the pandemic; timeframe during the pandemic; geographic region; data availability for gender and geographic region interaction effect; data availability for gender and career stage/age interaction effect; data availability for gender and parent status interaction effect; gender assignment accuracy threshold for article studies and gender inference method used. Please see Supplementary file 1, “Variables” sheet, for descriptions of all the variables.
 
-## Analyses
+### Analyses
 
 We conducted all analyses in R 3.6.2 (R Development Core Team, 2022). We used the ‘metafor’ package 3.0.2 to fit models, and build funnel and forest plots (Viechtbauer, 2010). We used ‘orchaRd’ 0.0.0.9000 to build orchard plots to visualise distribution of effect sizes (points) and their precision (point size), calculated as a function of standard error (Nakagawa et al., 2021).
 
 We fitted separate models for each prediction. All models included the identity of the article the effect size was extracted from as a random effect to control for dependency in effect sizes obtained from the same study. Models that include moderators use an omnibus test of parameters reported as a QM metric, which tests the null hypothesis that all moderator effect sizes are equal and is significant when at least two moderators are different. We tested prediction 1 a in a model investigating the overall effect size and we displayed this as an orchard plot. We then tested prediction 1b in a model investigating the method of measuring research productivity (survey responses, number of submissions and number of publications) as a moderator of effect size and displayed this as an orchard plot. We included the outlier (Jemielniak et al., 2021) in the funnel plot of article studies because this effect size was obtained by personal correspondence clarifying the sample sizes used in the study, which we assume was verified. We tested prediction 2 a in a model investigating research field as a moderator of effect size for article studies in a model and displayed this as an orchard plot. We tested prediction 2b in a model investigating how previous gender disparity in research productivity before the pandemic, as measured by the proportion of female authors, influenced effect size and displayed this as a line graph, grouped by research field. To test prediction 3 a, we tested in a model authorship position as a moderator on effect size for publication studies. We tested for publication bias by performing a multilevel regression model (Nakagawa et al., 2022) which investigates whether small studies have large effect sizes, including research productivity measure as a moderator because of differences in sample size between article studies and survey studies. We display this relationship in funnel plots. We tested for total heterogeneity (I2) using the ‘i2_ml’ function in ‘orchaRd’. We applied a sensitivity analysis testing prediction 1 a (overall pandemic effect on gender gap) and prediction 1b (method of research productivity effect on pandemic gender gap) excluding seven effect sizes using four measures of productivity from survey-based studies that are less directly comparable: research time (N=4), job-loss (N=1), burnout (N=1) and the number of projects (N=1). We also performed a leave-one-out analysis using the ‘leave1out’ function in ‘metafor’. This performed a meta-analysis on survey studies, leaving out exactly one study at a time to see the effect of individual studies on the overall estimate for survey studies. A full PRISMA checklist is found in Table S4 in Supplementary file 2.
 
-## Limitations
+### Limitations
 
 Our focus is on comparing the effect of the pandemic on women relative to men. We recognize that gender extends beyond this comparison, and that biases are even more likely to target individuals whose identities are less represented and often ignored. These biases also reflect in a lack of studies of the full diversity of gender. While several of the surveys we include had the option for respondents to identify beyond the binary women/men, none of these studies report on these individuals, presumably because of the respective small samples. In addition, studies using numbers of submissions or publications (38 out of 55) to measure research productivity used automatic approaches that are more likely to mis-gender individuals as they inferred binary gender based on first names. While these approaches seemingly offer the potential to identify trends in larger samples, they themselves introduce and reinforce biases in relation to gender that are hard to assess, intersecting with biases in ethnicity as these approaches are often restricted to names common in English speaking countries (Mihaljević et al., 2019). For survey studies, only 18 effect sizes were used. These had a large heterogeneity in effect sizes, possibly reflecting subtle differences in the measure of research productivity asked in the survey. Surveys sample limited numbers of respondents, potentially biased towards sampling those holding extreme opinions of the pandemic. Subjectivity in survey responses could skew the estimate because of recall limitations and self-serving bias. We do not include grey literature databases in our searches, which may bias our samples to studies with positive effects. We did not perform forwards or backwards searches, meaning we may have missed some relevant studies. However, we expect the literature on the topic to grow, and hope that further work will build on our study and add these new effect sizes to our dataset. Most studies explored academic populations worldwide (N=99 effect sizes), or from Western (N=28 effect sizes) regions, but not the Global South (N=3 effect sizes) limiting investigation of interaction effects between geographic regions. Although 22/130 effect sizes from 8/55 studies held data subdivided between geographic regions, we did not extract separate effect sizes as they differed in the scale of geographic region sampled, which limited our ability to make geographic comparisons. Conclusions from survey studies are also limited to North American and Western European, since 18/23 studies are exclusive to or have the majority of respondents from these regions. We recognise there are differences between article- studies in the length of time considered as before the pandemic (mean = 11 months, standard deviation = 10 months, range = 1–50 months) and during the pandemic (mean = 7 months, standard deviation = 5 months, range = 1–17 months). Survey studies were fielded at different times, (mean = 21/08/2020, standard deviation = 99 days, range = 20/04/2020 – 28/02/21) which potentially affects participants’ beliefs of productivity changes. Investigating research field and authorship position effects is limited by the unequal and sometimes small sample sizes of variables that are compared. We used raw data to calculate effect sizes using the same modelling techniques wherever possible. This was not possible in 10 studies, where we consequently used effect size as provided in the study. We recognize that their different modelling techniques may have contributed to the estimated effect sizes. The patterns we describe should be seen as a potential indication that biases exist, but alternative approaches are needed to speculate about potential underlying causes and remedies.

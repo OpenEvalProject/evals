@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.34115.001 Recent theories propose that schizophrenia/schizotypy and autistic spectrum disorder are related to impairments in Bayesian inference that is, how the brain integrates sensory information (likelihoods) with prior knowledge. However existing accounts fail to clarify: (i) how proposed theories differ in accounts of ASD vs. schizophrenia and (ii) whether the impairments result from weaker priors or enhanced likelihoods. Here, we directly address these issues by characterizing how 91 healthy participants, scored for autistic and schizotypal traits, implicitly learned and combined priors with sensory information. This was accomplished through a visual statistical learning paradigm designed to quantitatively assess variations in individuals’ likelihoods and priors. The acquisition of the priors was found to be intact along both traits spectra. However, autistic traits were associated with more veridical perception and weaker influence of expectations. Bayesian modeling revealed that this was due, not to weaker prior expectations, but to more precise sensory representations.
+Recent theories propose that schizophrenia/schizotypy and autistic spectrum disorder are related to impairments in Bayesian inference that is, how the brain integrates sensory information (likelihoods) with prior knowledge. However existing accounts fail to clarify: (i) how proposed theories differ in accounts of ASD vs. schizophrenia and (ii) whether the impairments result from weaker priors or enhanced likelihoods. Here, we directly address these issues by characterizing how 91 healthy participants, scored for autistic and schizotypal traits, implicitly learned and combined priors with sensory information. This was accomplished through a visual statistical learning paradigm designed to quantitatively assess variations in individuals’ likelihoods and priors. The acquisition of the priors was found to be intact along both traits spectra. However, autistic traits were associated with more veridical perception and weaker influence of expectations. Bayesian modeling revealed that this was due, not to weaker prior expectations, but to more precise sensory representations.
 
 ## Introduction
 
@@ -50,19 +50,25 @@ We here address these questions empirically in a context of visual motion percep
 
 Here, we investigated individual differences in statistical learning in relation to autistic and schizotypal traits in a sample of 91 healthy participants. Eight participants failed to perform the task satisfactorily and were excluded from the analysis (see Materials and methods), leaving 83 participants in the study (41 women and 42 men, age range: 18–69; mean: 25.7).
 
-## Task behavior at low contrast
+### Task behavior at low contrast
 
 First, we investigated whether participants acquired priors on the group level. We discarded the first 170 trials as that is how long it took for the 2/1 and 4/1 staircases contrast levels to converge (Appendix 1—figure 2) and for prior effects to become significant (Appendix 1—figures 3, 4 and 5). We analyzed task performance at low contrast levels (converged 2/1 and 4/1 staircases contrast levels) where sensory uncertainty is high. Replicating findings of Chalk et al. (2010), we found that on the group level people acquired priors that approximated the statistics of the task. Such priors were indicated by: attractive biases towards ±32° (Figure 3a), less variability in estimations at ±32° (Figure 3b; standard deviation of estimations 11.9 ± 0.30° at ±32° versus 13.84 ± 2.38° over all other motion directions; signed rank test: p<0.001), shorter estimation reaction times at ±32° as compared to all other motion directions (Figure 3c; average reaction time was 201.87 ± 2.47 ms at ±32° versus 207.75 ± 2.60 ms over all other motion directions; signed rank test: p<0.001) and better detection at ±32° as compared to all other motion directions (Figure 3d; detected 75.57 ± 0.65% at±32° versus 66.70 ± 0.83% over all other motion directions; signed rank test: p<0.001).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34115/elife-34115-fig3-v2.jpg)
 
-**Figure 3.:** a–d) and on trials with no stimulus (e).(a) Mean estimation bias, (b) standard deviation of estimations, (c) estimation reaction time and (d) fraction of trials in which the stimulus was detected. (f) Probability distribution of estimation responses on trials without stimulus. The solid line denotes the estimation responses when participants reported detecting a stimulus (hallucinations). The dash-dot line denotes estimation distributions when participants correctly reported not detecting a stimulus. (e) Distribution of hallucinations for high and low AQ groups (median split). The vertical dashed lines correspond to the two most frequently presented motion directions (±32°). Error bars and shaded areas represent within-subject standard error.10.7554/eLife.34115.005Figure 3—source data 1.Figure 3.EstimationBias.csv contains estimation biases at each of the nine presented angles. EstimationVariability.csv contains standard deviation of estimations at each of the nine presented angles. NostimDetected.csv and NostimUndetected.csv contain estimation responses when stimulus was detected and not detected, respectively, on no-stimulus trials. Traits.csv contains AQ scores of each individual (column 3) as well as all other traits. SourceData_Readme.txt contains more detailed description of each data file. The plots can be reproduced from MATLAB script master.m which is available in the provided Source code 1. SourceCode_Readme.txt contains more detailed description of the source code.
+**Figure 3.:** (a) Mean estimation bias, (b) standard deviation of estimations, (c) estimation reaction time and (d) fraction of trials in which the stimulus was detected. (f) Probability distribution of estimation responses on trials without stimulus. The solid line denotes the estimation responses when participants reported detecting a stimulus (hallucinations). The dash-dot line denotes estimation distributions when participants correctly reported not detecting a stimulus. (e) Distribution of hallucinations for high and low AQ groups (median split). The vertical dashed lines correspond to the two most frequently presented motion directions (±32°). Error bars and shaded areas represent within-subject standard error.
 
-## No-stimulus performance
+### No-stimulus performance
 
-Another indicator of acquired priors is the distribution of estimation responses on trials when no actual stimulus was presented. We found that participants sometimes still reported seeing dots (experienced hallucinations) but mostly so around ±32° (Figure 3f, solid line). To quantify the statistical significance of hallucinations around ±32°, the space of possible motion directions was divided into 45 bins of 16° and the probability of estimation within 8° of ±32° was multiplied by the total number of bins:(1)prel=p(θest=±32(±8)∘)⋅Nbins,where Nbins is the number of bins (45), each of size 16°. This probability ratio would be equal to one if participants were equally likely to estimate within 8° of ±32°, as they were to estimate within other bins. We found that the median of prel was significantly greater than 1 (median(prel)=1.6, p<0.001, signed rank test). Furthermore, the estimation distribution when no dots where detected (Figure 3f, dash-dot line) was found to be significantly flatter (median(prel)=0, p<0.001, signed rank test comparing with the median of prel for hallucinations), suggesting that the hallucinations were indeed of perceptual nature (rather than related to a response bias).
+Another indicator of acquired priors is the distribution of estimation responses on trials when no actual stimulus was presented. We found that participants sometimes still reported seeing dots (experienced hallucinations) but mostly so around ±32° (Figure 3f, solid line). To quantify the statistical significance of hallucinations around ±32°, the space of possible motion directions was divided into 45 bins of 16° and the probability of estimation within 8° of ±32° was multiplied by the total number of bins:
 
-## Task performance and autistic/schizotypy traits
+$$
+p_{rel}=p(\theta_{est}=\pm32(\pm8)^{∘})⋅N_{bins},
+$$
+
+where Nbins is the number of bins (45), each of size 16°. This probability ratio would be equal to one if participants were equally likely to estimate within 8° of ±32°, as they were to estimate within other bins. We found that the median of prel was significantly greater than 1 (median(prel)=1.6, p<0.001, signed rank test). Furthermore, the estimation distribution when no dots where detected (Figure 3f, dash-dot line) was found to be significantly flatter (median(prel)=0, p<0.001, signed rank test comparing with the median of prel for hallucinations), suggesting that the hallucinations were indeed of perceptual nature (rather than related to a response bias).
+
+### Task performance and autistic/schizotypy traits
 
 Participants were prescreened to make sure they covered a wide range of autistic and schizotypy scores. The AQ scores in our sample ranged from 6 to 41 with a mean (±SD) of 20.3 (±8.3). The RISC scores ranged from 8 to 55 with a mean of 31.7 (±11.9), and the SPQ scores ranged from 4 to 59 with a mean of 26.4 (±13.8).
 
@@ -70,23 +76,23 @@ We found that on low contrast trials autistic traits lead to less variability in
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/34115/elife-34115-fig4-v2.jpg)
 
-**Figure 4.:** a, b) and when no stimulus is presented (c).(a) Mean absolute bias (r = −0.175, p=0.053), (b) mean standard deviation (i.e. variability) of estimations (r = −0.327, p<0.001), and (c) the total number of hallucinations (r = −0.238, p=0.010). The blue lines are robust regression slopes.10.7554/eLife.34115.007Figure 4—source data 1.Figure 4.EstimationBias.csv contains estimation biases at each of the nine presented angles. EstimationVariability.csv contains standard deviation of estimations at each of the nine presented angles. NostimDetected.csv contains the number of hallucinations at different directions. Traits.csv contains AQ scores of each individual (column 3) as well as all other traits. SourceData_Readme.txt contains more detailed description of each data file. The plots were produced with MATLAB script analyze_data.m which is available in the provided Source code 1. SourceCode_Readme.txt contains more detailed description of the source code.
+**Figure 4.:** (a) Mean absolute bias (r = −0.175, p=0.053), (b) mean standard deviation (i.e. variability) of estimations (r = −0.327, p<0.001), and (c) the total number of hallucinations (r = −0.238, p=0.010). The blue lines are robust regression slopes.
 
 Schizotypy traits (RISC and SPQ scores) did not show any effect on task performance at low contrast as indicated by the absence of correlations with mean absolute estimation bias (RISC: r = 0.140, p=0.197; SPQ (N = 39): r = −0.160, p=0.204) and with mean estimation variability (RISC: r = 0.197, p=0.092; SPQ (N = 39): r = −0.229, p=0.171); see Appendix 1—figures 6, 7 and 8.
 
-## No-stimulus trials and autistic/schizotypal traits
+### No-stimulus trials and autistic/schizotypal traits
 
 We also investigated how the traits affected performance on trials when no actual stimulus was presented. First, we looked at the total number of estimations. We found that autistic traits were associated with less hallucinations (Figure 4c; r = −0.238, p=0.010), while schizotypal traits were found to have no effect on the number of hallucinations (RISC: r = 0.126, p=0.163; SPQ (N = 39): r = −0.010, p=0.959). Secondly, we looked for relationships between the traits and how the estimations on no-stimulus trials were distributed. Specifically, we were interested in whether the traits predicted how densely hallucinations were distributed around ±32°, as this could be considered to reflect the differences in the width of the underlying acquired prior distribution. For weaker priors we would expect a more spread out distribution of hallucinations. To test this hypothesis, we looked at the fraction of total hallucinations in the region around ±32° for three different-sized windows: Within 8°, within 16° and within 24° of ±32°. Bayesian Kendall correlation analysis on these measures provided positive evidence that none of the traits had any effect on how hallucinations were distributed, suggesting no differences in the acquired prior distributions (fraction of hallucinations within 8° of ±32°: AQ - τb = 0.003, BF01 = 7.24; RISC - τb = -0.050, BF01 = 3.73; SPQ - τb = 0.101, BF01 = 8.72; within 16° of ±32°: AQ - τb = -0.068, BF01 = 2.86; RISC - τb = -0.129, BF01 = 0.84; SPQ - τb = 0.018, BF01 = 5.45; within 24° of ±32°: AQ - τb = 0.057, BF01 = 11.67; RISC - τb = -0.078, BF01 = 2.40; SPQ - τb = 0.006, BF01 = 5.02).
 
-## Modeling results
+### Modeling results
 
-## Group level results
+#### Group level results
 
 To quantitatively evaluate the relationships between underlying perceptual mechanisms and task performance we fitted a range of generative models. One class of models was Bayesian - it was based on the assumption that participants combine prior expectations with uncertain sensory information on a single trial basis (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/34115/elife-34115-fig5-v2.jpg)
 
-**Figure 5.:** The actual motion direction (θact) is corrupted by sensory uncertainty (σsen), and then combined with prior expectations (mean θsexp and uncertainty σexp) to form a posterior distribution. The perceptual estimate (θperc) is defined as the mean of the posterior distribution. Finally, motor precision ( ) and a probability of random response (α) are incorporated to generate the response (θ1/σm2est). This results in four free model parameters: σsens, σexp, θexp and α. The motor precision is estimated from high contrast trials and is used as a fixed parameter.
+**Figure 5.:** The actual motion direction (θact) is corrupted by sensory uncertainty (σsens), and then combined with prior expectations (mean θexp and uncertainty σexp) to form a posterior distribution. The perceptual estimate (θperc) is defined as the mean of the posterior distribution. Finally, motor precision ( $1/\sigma_{m}^{2}$) and a probability of random response (α) are incorporated to generate the response (θest). This results in four free model parameters: σsens, σexp, θexp and α. The motor precision is estimated from high contrast trials and is used as a fixed parameter.
 
 To account for the possibility that the bimodal probability distribution of the stimuli, in addition to inducing prior expectations, has also affected the sensory likelihood, we constructed three variations of the Bayesian model: BAYES, where the sensory precision was constrained to be the same across all presented motion directions, 'BAYES_varmin, where the sensory precision was allowed to be different for the most frequently presented motion directions, but was the same across all other directions, and BAYES_var where sensory precision was allowed to be different across all motion directions. Another class of models was based on the assumption that task performance can be explained by response strategies that do not involve Bayesian inference. That is, on any given trial participants responded based on the prior expectations or sensory information alone. We considered four variations of response strategy models: ADD1, ADD2, ADD1_m, and ADD2_m (see Methods for details).
 
@@ -98,17 +104,17 @@ To compare the models, we computed BIC values for each individual for each model
 
 To determine how the best fitting model compared to the actual data, we analyzed the estimation biases and variation in estimation responses as predicted by BAYES (Figure 6b,c). As in the experimental data analysis, we computed estimation distributions predicted by the model by assuming occasional random estimations (see Equation 2). Finally, using the BAYES model, we reconstructed the priors acquired by participants. While on the individual level there was a considerable variation in the shape of acquired priors (see Appendix 1—figure 10), on the group level, it approximated the statistics of the task (Figure 6d).
 
-## Model parameters and autistic/schizotypal traits
+### Model parameters and autistic/schizotypal traits
 
 Correlational analysis of BAYES model parameters showed that there was no correlation between AQ and the precision of the prior σexp (Figure 7b; r = 0.018, p=0.962). That autistic traits had no effect on the precision of the prior was confirmed by Bayesian Kendall correlation, which provided positive evidence (τb = 0.001, BF01 = 6.99).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/34115/elife-34115-fig7-v2.jpg)
 
-**Figure 7.:** (a) θexp - mean of the prior expectations (r = 0.031, p=0.820), (b) σexp - uncertainty of the prior distribution (r = 0.018, p=0.962), (c) σsens - uncertainty in the sensory likelihood (r = −0.185, p=0.011) and (d) α - fraction of random estimations (r = −0.135, p=0.238). The blue lines are robust regression slopes.10.7554/eLife.34115.011Figure 7—source data 1.Figure 7.BayesEstimatedParams.csv contains BAYES model parameter estimates. Traits.csv contains AQ scores of each individual (column 3) as well as all other traits. SourceData_Readme.txt contains more detailed description of each data file. The plots were produced with MATLAB script analyze_params.m which is available in the provided Source code 1. The SourceCode_Readme.txt contains more detailed description of the source code.
+**Figure 7.:** (a) θexp - mean of the prior expectations (r = 0.031, p=0.820), (b) σexp - uncertainty of the prior distribution (r = 0.018, p=0.962), (c) σsens - uncertainty in the sensory likelihood (r = −0.185, p=0.011) and (d) α - fraction of random estimations (r = −0.135, p=0.238). The blue lines are robust regression slopes.
 
 Importantly, autistic traits were found to be strongly associated with less uncertainty in the sensory likelihood, σsens (Figure 7c; r = −0.185, p=0.011), which also remained significant after Bonferroni correction (p=0.044). Finally, there was no correlation with the amount of random estimations (Figure 7d; r = −0.135, p=0.238). Motor precision, which was estimated from high contrast trials, separately from all other parameters (see Methods), was also correlated with autistic traits (r = 0.245, p=0.012). On the other hand, consistent with the absence of differences in the behavioral findings, schizotypal traits were not associated with any difference in the BAYES model parameter values (Appendix 1—figure 9), and in particular, were found to have no effect on prior precision (RISC: τb = -0.012, BF01 = 6.90; SPQ: τb = 0.071, BF01 = 3.97).
 
-## Parameter recovery for BAYES
+### Parameter recovery for BAYES
 
 Finally, to further investigate that in our experimental paradigm the influence of stronger likelihoods can be distinguished from that of weaker priors (Brock, 2012; Pellicano and Burr, 2012b) we performed parameter recovery for the winning BAYES model. Parameter recovery involves generating synthetic data with different sets of parameters ('actual parameters') and then fitting the same model to estimate the parameters ('recovered parameters') that are most likely to have produced the data. If actual and recovered parameters are in a good agreement, it means that the effects of different parameters can be reliably distinguished. At the same time, parameter recovery is also affected by the parameter estimation methods and even more so by the amount of data used for model fitting. Therefore, parameter recovery provides an overall check for the reliability of modelling results and is recommended as an essential step in computational modelling approaches (Palminteri et al., 2017).
 
@@ -138,25 +144,25 @@ In our paradigm people acquire prior expectations very quickly, within 200 trial
 
 Another aspect that our paradigm could not test is the specificity of the acquired priors (Seriès and Seitz, 2013). Some Bayesian accounts (Van de Cruys et al., 2014) predict that priors may be overly context-sensitive in autism. This is in line with the view that generalization is impaired in autism (Plaisted, 2015). Furthermore, such over-specificity is thought to be stronger with more repetitive stimuli (Harris et al., 2015). Future research could address this using statistical learning paradigms that incorporate increasingly distinct contexts or stimuli.
 
-## Conclusion
+### Conclusion
 
 We investigated statistical learning and Bayesian inference in a visual motion perception task along autistic and schizotypal traits. To our knowledge, this study is the first to investigate differences in Bayesian inference along both trait spectra in a single task. Furthermore, this study is the first visual study to computationally disentangle and quantitatively assess the variations in individuals’ likelihoods and priors. Surprisingly, schizotypal traits were found to have no effect on task performance and thus were not associated with any differences in the underlying statistical learning and Bayesian inference. For autistic traits, however, significant behavioral differences in prior integration were found, which were due to an increase in the precision of internal sensory representations in participants with higher AQ. Whether the current results extend to clinical populations will have to be examined in the future.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 91 (47 females, 44 males, age range: 18–69) naïve participants with no motor disabilities and with normal (or corrected to normal) vision were recruited from the general population. We advertised for participants using posters and the internet across University of Edinburgh locations and other sites across Edinburgh. All participants gave informed written consent and received monetary compensation for participation. The study was approved by the University of Edinburgh School of Informatics Ethics Panel.
 
-## Questionnaires
+### Questionnaires
 
 ASD was assessed using 50-item version Autism Spectrum Quotient (AQ) (Baron-Cohen et al., 2001), which is commonly used for assessing milder variants of autistic-like traits within the general population. Schizotypal traits were assessed using The Rust Inventory of Schizotypal Cognitions (RISC) (Rust, 1988). RISC is specifically developed to measure schizotypal traits in the general population. In addition, a sub-group of 41 participants also completed Schizotypal Personality Questionnaire (SPQ) (Raine, 1991). Finally, all participants were also asked to complete the Warwick-Edinburgh Mental Well-being Scale (WEMWBS) (Tennant et al., 2007) in order to control for potential depression-induced differences in performance (Austin et al., 2001).
 
-## Apparatus
+### Apparatus
 
 The visual stimuli were generated using Matlab Psychophysics Toolbox (Brainard, 1997). Participants viewed the display in a dark room at a distance of 80–100 cm. The stimuli consisted of a cloud of dots with a density of 2 dots/deg2 moving coherently (100%) at a speed of 9°/sec. Dots appeared within a circular annulus with minimum diameter of 2.2° and maximum diameter of 7°. The stimuli were displayed on a Dell P790 monitor running at 1024 × 768 at 100 Hz. The display luminance was calibrated using a Cambridge Research Systems Colorimeter (ColorCal MKII).
 
-## The task
+### The task
 
 The task was developed previously in our laboratory (Chalk et al., 2010). Participants have to: (i) estimate the direction of coherently moving simple stimuli (dots) that are presented at low contrast levels (estimation task) and then (ii) indicate whether they have actually perceived the stimulus or not (detection task). Since Chalk et al. (2010) had shown that the effects of acquired priors become significant within the first 200 trials, instead of two experimental sessions of 850 trials each as in the original study, we used a single session of 567 trials (lasting around 40 min).
 
@@ -164,13 +170,13 @@ Each trial started by first displaying a fixation point (0.5°, 12.2 cd/m2) for 
 
 After a 200 ms delay, the participants had to indicate whether they had actually detected the presence of dots in the estimation period (detection task). The display was divided into two parts by a vertical white line across the center of the screen, the left hand side area reading ‘NO DOTS’ and the right hand side area reading ‘DOTS’ (Figure 2a). The cursor appeared in the center of the screen, and participants had to move it to the left or right and click to indicate their response. Immediate feedback for correct or incorrect detection responses was given by a cursor flashing green or red, respectively. The screen was cleared for 400 ms before the start of a new trial. Every 20 trials, participants were presented with feedback on their estimation performance in terms of average estimation error in degrees (e.g., ‘In the last 20 trials, your average estimation error was 23°'). Every 170 trials (i.e. on three occasions) participants were given a chance to ‘have a short break to rest their eyes’, in order to prevent fatigue. Participants clicked when they were ready to continue.
 
-## Design
+### Design
 
 The stimuli were presented at four different levels of contrast: 0 contrast (no-stimulus trials), two low levels contrasts and high contrast, randomly mixed across trials. There were 167 trials with no stimulus. The two low levels of contrast were determined using 4/1 and 2/1 staircases on detection performance (García-Pérez, 1998). There were 243 trials following the 4/1 staircase and 90 trials following the 2/1 staircase. The remaining 67 trials were at high contrast, which was set to 3.51 cd/m2 above the background luminance.
 
 For the two low contrast levels, there was a predetermined number of possible directions: 0°, ±16°, ±32°, ±48°, and ±64° with respect to a reference direction. The reference direction was randomized for each participant. For the 2/1 staircased contrasts, each predetermined motion direction was presented equally frequently. Unbeknownst to participants, stimuli at high and 4/1 staircase contrasts were presented more frequently at −32° and +32° motion directions, resulting in a bimodal probability distribution (Figure 1b). For the 4/1 staircase contrast level, the dots were moving at ±32° in 173 (∼70%) trials and in all the other predetermined motion directions in the remaining 70 (∼30%) trials equally frequently. At the highest contrast level, 34 (∼50%) trials had the dots moving at ±32° and the remaining 33 (∼50%) trials were at random directions (i.e. not just the predetermined directions).
 
-## Data analysis
+### Data analysis
 
 Responses on high contrast trials were used as a performance benchmark to ensure that participants were performing the task adequately. The predefined inclusion criteria were: (1) at least 80% detection and (2) less than 30° root mean squared error of estimations. 8 out of 91 participants failed to satisfy at least one of the criteria and were excluded from further analysis (Appendix 1—figure 1).
 
@@ -178,47 +184,75 @@ Data analysis on the estimation of motion directions was performed on 4/1 and 2/
 
 After removing these trials, the luminance levels achieved by the 2/1 and 4/1 staircases were found to be considerably overlapping (Appendix 1—figure 2). Therefore, the data for both of these contrast levels was combined for all further analysis.
 
-To account for random estimations (either accidental or intentional) that participants made on some trials, we fitted each participant’s estimation responses to the probability distribution:(2)(1−α)⋅V(θ|μ,κ)+α,
+To account for random estimations (either accidental or intentional) that participants made on some trials, we fitted each participant’s estimation responses to the probability distribution:
+
+$$
+(1−\alpha)⋅V(\theta|\mu,κ)+\alpha,
+$$
 
 Where α is the proportion of trials in which participant makes random estimates, and V(θ|µ,κ) is the probability density function for the estimated angle θ for von Mises (circular normal) distribution with the mean µ and precision κ. The parameters µ and κ of the von Mises distribution were determined by maximizing the likelihood of the distribution in Equation (2) for each presented angle.
 
 To analyze the distribution of estimations in no-stimulus trials, we constructed histograms of 16° size bins. These histograms were converted into probability distributions by normalizing over all motion directions. We analyzed the estimation distribution when participants reported seeing dots (clicked ‘DOTS’) within no-stimulus trials. We interpreted these false alarms as a simple form of perceptual hallucination.
 
-## Modelling
+### Modelling
 
-## Bayesian models
+#### Bayesian models
 
-Bayesian models assume that participants combined a learned prior of the stimulus directions with their sensory evidence in a probabilistic manner. We first assume that participants make noisy sensory observations of the actual stimulus motion direction (θact), with a probability (3)psens(θsens|θact)=V(θt,κsens).
+Bayesian models assume that participants combined a learned prior of the stimulus directions with their sensory evidence in a probabilistic manner. We first assume that participants make noisy sensory observations of the actual stimulus motion direction (θact), with a probability 
+
+$$
+p_{sens}(\theta_{sens}|\theta_{act})=V(\theta_{t},κ_{sens}).
+$$
 
 where θt itself varies from trial to trial around θact according to p(θt|θact)=V(θact, κsens).
 
-While participants cannot access the ‘true’ prior, p(θ), directly, we hypothesized that they learned an approximation of this distribution, denoted pexp(θ). This distribution was parameterized as the sum of two von Mises distributions, centered on motion directions θexp and -θexp, and each with precision κexp: (4)pexp(θ)=0.5[V(−θexp,κexp)+V(θexp,κexp)]
+While participants cannot access the ‘true’ prior, p(θ), directly, we hypothesized that they learned an approximation of this distribution, denoted pexp(θ). This distribution was parameterized as the sum of two von Mises distributions, centered on motion directions θexp and -θexp, and each with precision κexp: 
 
-Combining these via Bayes’ rule gives a posterior probability that the stimulus is moving in a direction θ: (5)ppost(θ|θsens)∝pexp(θ)⋅psens(θsens|θ)
+$$
+p_{exp}(\theta)=0.5[V(−\theta_{exp},κ_{exp})+V(\theta_{exp},κ_{exp})]
+$$
 
-The perceived direction, θperc, was taken to be the mean of the posterior distribution (almost identical results would be obtained by using the maximum instead). Finally, we accounted for motor precision and a possibility of random estimates on some trials via: (6)p(θest|θperc)=(1−α)⋅V(θperc,κm)+α,where α is the proportion of trials in which participants make random estimates and κm is the motor precision.
+Combining these via Bayes’ rule gives a posterior probability that the stimulus is moving in a direction θ: 
+
+$$
+p_{post}(\theta|\theta_{sens})∝p_{exp}(\theta)⋅p_{sens}(\theta_{sens}|\theta)
+$$
+
+The perceived direction, θperc, was taken to be the mean of the posterior distribution (almost identical results would be obtained by using the maximum instead). Finally, we accounted for motor precision and a possibility of random estimates on some trials via: 
+
+$$
+p(\theta_{est}|\theta_{perc})=(1−\alpha)⋅V(\theta_{perc},κ_{m})+\alpha,
+$$
+
+where α is the proportion of trials in which participants make random estimates and κm is the motor precision.
 
 Increased exposure to some motion directions might not only give rise to prior expectations, but also induce learning in the sensory likelihood function itself (Stocker and Simoncelli, 2006; Sato and Kording, 2014). Therefore, we fitted two more model variants: 'BAYES_var’ where κsens varied with the stimulus direction (i.e. it took five different values for each of the angles: 0°, ±16°, ±32°, ±48°, ±64°) and 'BAYES_varmin’ where κsens was allowed to be different for ±32° but was the same for all other directions.
 
-## Response strategy models
+### Response strategy models
 
 We wanted to test whether task behavior might be better explained by simple behavioral strategies. This class of models assumed that on trials when participants were unsure about the presented motion direction, they made an estimation based solely on prior expectations, while on the remaining fraction of trials they made unbiased estimates based solely on sensory inputs. The first model, 'ADD1’, assumed that estimations derived from prior expectations were simply sampled from a learnt expected distribution, pexp(θ) (see Chalk et al., 2010 and Appendix 2). The second model, 'ADD2’, was just as 'ADD1’ except when participants were unsure about the stimulus motion direction, instead of sampling from the complete learned probability distribution ranging from −180° to +180°, they effectively truncated this distribution on a trial by trial basis and sampled from only one part of it, negative (−180° to 0°) or positive (0° to +180°), depending on which side of the distribution the actual stimulus occurred (see Chalk et al., 2010) and Appendix 2). We also considered slight variations of the ‘ADD1’ and ‘ADD2’ models, denoted ‘ADD1_m’ and ‘ADD2_m’ respectively. These were identical to ‘ADD1’ and ‘ADD2’ except from setting 1/κexp to zero; that is, on trials when perceptual estimates were derived only from expectations, they were equal to the mode of the learnt distribution (i.e. no uncertainty).
 
-## Parameter estimation
+### Parameter estimation
 
 We used performance in high contrast trials to estimate motor precision, κm, for each individual. We assumed that, for those trials, sensory uncertainty was close to zero. Motor precision was then determined by fitting estimation responses to the distribution in Equation (2) by replacing µ with the actual motion direction, θact. The estimated motor precision was used in all subsequent model fitting as a fixed parameter. The rest of the free parameters were estimated by fitting the response data at the two low (staircased) contrast levels. For each model with a set of free parameters M, we computed the probability distribution p(θest|θact; M) of making an estimate θest given the actual stimulus direction θact. For the response strategy models, by definition, the p(θest|θact; M) corresponds to average behavior in the task.
 
 The parameters were estimated by maximizing the fit of the log likelihood function for the experimental data for each participant individually. The maximum likelihood was found using a simplex algorithm, using fminsearchbnd Matlab function. To avoid convergence at a local maximum we constructed a grid of initial κexp and κsens parameter values covering the range found in previous studies. We selected the resulting set of parameters that corresponded to the largest log-likelihood.
 
-## Model comparison
+### Model comparison
 
-To compare the model fits we used Bayesian Information Criterion (BIC), which approximates the log of model evidence (Burnham and Anderson, 2004):(7)−2⋅log(P(D|M))≈BIC=−2⋅log(P(D|M,Θ^))+k⋅log(n),where M is model, D is observed data and P (D|M, Θ^) is the likelihood of generating the experimental data given the most likely set of parameters, Θ^; k is the number of model parameters and n is the number of data points (or equivalently, the number of trials). BIC evaluates the model by how it fits the data by also penalizing for model complexity (number of parameters); lower BIC score indicates a better model.
+To compare the model fits we used Bayesian Information Criterion (BIC), which approximates the log of model evidence (Burnham and Anderson, 2004):
 
-## Parameter recovery
+$$
+−2⋅log(P(D|M))≈BIC=−2⋅log(P(D|M,Θ^))+k⋅log(n),
+$$
+
+where M is model, D is observed data and P (D|M, $Θ^$) is the likelihood of generating the experimental data given the most likely set of parameters, $Θ^$; k is the number of model parameters and n is the number of data points (or equivalently, the number of trials). BIC evaluates the model by how it fits the data by also penalizing for model complexity (number of parameters); lower BIC score indicates a better model.
+
+### Parameter recovery
 
 To determine whether the BAYES model can distinguish the effects of strong likelihoods from those of weak priors (Brock, 2012; Pellicano and Burr, 2012b) and to evaluate the robustness of our methods, we performed parameter recovery. First, we generated 80 sets of parameters (i.e. 80 synthetic individuals) by randomly sampling each parameter from a Gaussian distribution centered on the mean value of each parameter found in our sample (40° for θexp, 15° for σexp, 10° for σsens, 0.06 for α and 10° for σmotor). Second, for each set of parameters, we simulated data for 200 trials with the Bayesian model by randomly sampling from the estimation probability distribution. We used 200 simulated trials only, to match the empirical data (200 corresponds to the amount of experimental trials used for fitting, after excluding high contrast and zero contrast trials; Simulating more trials would result in a better parameter recovery but the results would no longer be informative about the reliability of parameters estimated from empirical data). Finally, we fitted the BAYES model to the simulated data. To evaluate the goodness of recovered parameters, we computed Pearson’s correlation between the actual parameters and the recovered parameters.
 
-## Statistical tests
+### Statistical tests
 
 Due to the presence of outliers in many of the measures, we used robust regression techniques for measuring the presence and strength of the effects in our data. This was done using robustfit function in Matlab, which downweighs the influence of outliers in proportion to their distance from the regression line, which is computed via iteratively reweighted least squares (IRLS) (Holland and Welsch, 1977). For the loss function we used Huber function (Huber, 1964) with a tuning constant of 1.345, which corresponds to 95% estimator efficiency as compared to ordinary least squares.
 
@@ -226,6 +260,6 @@ Furthermore, we applied Bonferroni correction for multiple testing based on the 
 
 Finally, due to the limitations of frequentist statistics for accepting the null hypothesis, we performed Bayesian correlation analysis and computed Bayesian Factors (Kass and Raftery, 1995) for the null hypothesis (BF01). This was done using JASP (Team, 2017) (Version 0.8.6). Due to the presence of outliers, this analysis was carried out using the non-parametric Kendall’s Tau-b correlation coefficient.
 
-## Source code and data
+### Source code and data
 
 The source data of the main figures is provided. These include, Figure 3—source data 1, Figure 4—source data 1 and Figure 7—source data 1. Source code 1 contains all the source code necessary to reproduce the figures. More detailed information about the source code is in SourceCode_Readme.txt, while SourceData_Readme.txt contains more details about the source data files.
